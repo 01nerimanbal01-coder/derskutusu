@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gizlilik ve çerezler · Ders Kutusu</title>
-<meta name="description" content="Ders Kutusu gizlilik ve çerez bilgilendirmesi.">
-<link rel="canonical" href="https://derskutusu.com/gizlilik.html">
+<title>Sınıf · Ders Kutusu</title>
+<meta name="description" content="5-12. sınıf dersleri için konu anlatımları, soru çözümleri ve öğretmen dosyaları.">
+<link rel="canonical" href="https://derskutusu.com/sinif.html">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#2451d6">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:site_name" content="Ders Kutusu">
-<meta property="og:title" content="Gizlilik ve çerezler · Ders Kutusu">
-<meta property="og:description" content="Ders Kutusu gizlilik ve çerez bilgilendirmesi.">
+<meta property="og:title" content="Sınıf · Ders Kutusu">
+<meta property="og:description" content="5-12. sınıf dersleri için konu anlatımları, soru çözümleri ve öğretmen dosyaları.">
 <meta property="og:image" content="https://derskutusu.com/paylasim.png">
 <link rel="stylesheet" href="/stil.css?v=2">
 </head>
@@ -55,37 +55,23 @@
 </header>
 
 <main id="icerik">
-<div class="metin-sayfa">
-  <div class="kap">
-    <h1>Gizlilik ve çerezler</h1>
-    <p>Son güncelleme: 28 Eylül 2026</p>
-    <p>Ders Kutusu (derskutusu.com) ziyaretçilerinden kişisel bilgi istemez. Sitede üyelik, form ve reklam yoktur.</p>
-
-    <h2>Çerezler</h2>
-    <p>Site kendi çerezini kullanmaz ve ziyaretçi sayan bir araç çalıştırmaz. Facebook sayfasını ya da Instagram gönderilerini göstermek için düğmeye basarsanız bu seçiminiz yalnız sizin tarayıcınızda saklanır. Böylece sonraki ziyaretinizde yeniden sorulmaz.</p>
-
-    <h2>YouTube, Instagram ve Facebook</h2>
-    <p>Sayfa açıldığında tarayıcınız bu şirketlere bağlanmaz. Video ve gönderi görselleri sitenin kendisinden gelir.</p>
-    <ul>
-      <li>Bir videoyu oynattığınızda video, YouTube’un gelişmiş gizlilik modundan (youtube-nocookie.com) yüklenir.</li>
-      <li>Instagram gönderilerini ya da Facebook sayfasını göstermeyi seçtiğinizde içerik o şirketten yüklenir. Bu şirketler kendi çerezlerini kullanabilir ve kendi gizlilik politikalarına bağlıdır.</li>
-    </ul>
-
-    <h2>Barındırma</h2>
-    <p>Site, GitHub Pages hizmetinde yayımlanır. GitHub, güvenlik ve hizmetin çalışması için ziyaretçilerin IP adresini kayda alabilir.</p>
-
-    <h2>E-posta</h2>
-    <p>info@derskutusu.com adresine gönderdiğiniz e-postalar yalnız size yanıt vermek için kullanılır ve kimseyle paylaşılmaz.</p>
-
-    <h2>Seçimlerinizi sıfırlayın</h2>
-    <p>Facebook ve Instagram içeriklerini göstermek için verdiğiniz izni bu düğmeyle geri alabilirsiniz.</p>
-    <button class="dugme ana" type="button" id="sifirla">İzinleri sıfırla</button>
-    <p class="durum" id="durum" role="status"></p>
-
-    <h2>İletişim</h2>
-    <p>Sorularınız için <a href="mailto:info@derskutusu.com">info@derskutusu.com</a> adresine yazabilirsiniz.</p>
-  </div>
-</div>
+  <section class="sayfa-bas">
+    <div class="kap">
+      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/#siniflar">Sınıflar</a><span aria-hidden="true">/</span><span id="yol-sinif"></span></nav>
+      <h1 id="baslik">Sınıf</h1>
+      <p id="aciklama"></p>
+      <nav class="sinif-gecis" id="sinif-gecis" aria-label="Sınıflar"></nav>
+    </div>
+  </section>
+  <section class="bolum">
+    <div class="kap">
+      <div class="bolum-bas">
+        <div><p class="ust-baslik">Dersler</p><h2>Dersini seç</h2></div>
+        <a class="tumu" id="tum-icerik" href="/icerikler.html">Bu sınıfın bütün içerikleri<svg><use href="#s-ok"/></svg></a>
+      </div>
+      <div class="ders-izgara" id="ders-listesi"></div>
+    </div>
+  </section>
 </main>
 
 <footer class="alt">
@@ -120,5 +106,6 @@
 </footer>
 
 <script src="/ortak.js?v=2"></script>
+<script src="/kutuphane.js?v=2"></script>
 </body>
 </html>

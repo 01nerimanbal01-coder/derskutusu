@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ders Kutusu · Konu anlatımları, soru çözümleri ve kısa videolar</title>
-<meta name="description" content="Ders Kutusu: konu anlatımları, soru çözümleri ve kısa videolar. YouTube, Instagram ve Facebook paylaşımlarımız da burada.">
+<meta name="description" content="Ders Kutusu: 5-12. sınıf bütün dersler için konu anlatımları, soru çözümleri, videolar ve öğretmenler için yıllık planlar, yazılı soruları, çalışma kâğıtları.">
 <link rel="canonical" href="https://derskutusu.com/">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#2451d6">
@@ -38,93 +38,232 @@
   ]
 }
 </script>
-<link rel="stylesheet" href="stil.css">
+<link rel="stylesheet" href="stil.css?v=2">
 </head>
 <body>
-<a class="atla" href="#icerikler">İçeriğe geç</a>
+<a class="atla" href="#icerik">İçeriğe geç</a>
+
+<!-- Simge takımı (yerel SVG; dışarıdan yükleme yok) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="s-youtube" viewBox="0 0 24 24"><path fill="currentColor" d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8ZM9.8 15.1V8.9l5.4 3.1Z"/></symbol>
+  <symbol id="s-instagram" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3c1.2-.1 1.6-.1 4.8-.1ZM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0Zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9Z"/></symbol>
+  <symbol id="s-facebook" viewBox="0 0 24 24"><path fill="currentColor" d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.3l-.5 3.5h-2.8v8.4A12 12 0 0 0 24 12Z"/></symbol>
+  <symbol id="s-eposta" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 6.5h18v11H3zM3.5 7l8.5 6.5L20.5 7"/></symbol>
+  <symbol id="s-kitap" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5zM4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5M8 7.5h8M8 11h6"/></symbol>
+  <symbol id="s-kalem" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 20h4L19.5 8.5a2.1 2.1 0 0 0-3-3L5 17v3zM14.5 7.5l3 3M4 20l5-1"/></symbol>
+  <symbol id="s-oynat" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="currentColor" d="M10 9.2v5.6l4.8-2.8z"/></symbol>
+  <symbol id="s-yenile" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M20 11a8 8 0 0 0-14.3-4.9L4 8M4 4v4h4M4 13a8 8 0 0 0 14.3 4.9L20 16m0 4v-4h-4"/></symbol>
+  <symbol id="s-onay" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="s-takvim" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 6.5h16V20H4zM4 10.5h16M8.5 4v4M15.5 4v4M8 14h2m3 0h3m-8 3h2"/></symbol>
+  <symbol id="s-ok" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+</svg>
 
 <header class="ust">
   <div class="kap ust-ic">
-    <a class="logo" href="#"><span class="logo-simge" aria-hidden="true">√</span><span data-ayar="site_adi">Ders Kutusu</span></a>
-    <nav class="menu" aria-label="Ana menü">
-      <a href="#icerikler">İçerikler</a>
-      <a href="#videolar">Videolar</a>
-      <a href="#instagram">Instagram</a>
-      <a href="#facebook">Facebook</a>
+    <a class="logo" href="/" aria-label="Ders Kutusu ana sayfa"><span class="logo-simge" aria-hidden="true">√</span><span data-ayar="site_adi">Ders Kutusu</span></a>
+    <button class="menu-dugme" type="button" aria-expanded="false" aria-controls="ana-menu" aria-label="Menüyü aç"><span></span></button>
+    <nav class="menu" id="ana-menu" aria-label="Ana menü">
+      <a href="#siniflar">Sınıflar</a>
+      <a href="icerikler.html">İçerikler</a>
+      <a href="#ogretmen">Öğretmen</a>
+      <a href="#sosyal">Sosyal medya</a>
+      <a href="#iletisim">İletişim</a>
+      <span class="menu-sosyal">
+        <a data-sosyal="youtube" aria-label="YouTube" target="_blank" rel="noopener" hidden><svg><use href="#s-youtube"/></svg></a>
+        <a data-sosyal="instagram" aria-label="Instagram" target="_blank" rel="noopener" hidden><svg><use href="#s-instagram"/></svg></a>
+        <a data-sosyal="facebook" aria-label="Facebook" target="_blank" rel="noopener" hidden><svg><use href="#s-facebook"/></svg></a>
+      </span>
     </nav>
   </div>
 </header>
 
-<main>
-  <section class="giris">
-    <div class="kap giris-ic">
-      <div>
-        <h1 data-ayar="slogan">Konu anlatımları, soru çözümleri ve kısa videolar</h1>
-        <p class="giris-metin" data-ayar="aciklama"></p>
-        <div class="hesaplar" id="hesaplar"></div>
+<main id="icerik">
+  <section class="kahraman">
+    <div class="kap kahraman-ic">
+      <div class="kahraman-metin">
+        <p class="ust-baslik">Öğrenciler ve öğretmenler için</p>
+        <h1>5'ten 12. sınıfa <span class="vurgulu">bütün dersler</span> tek yerde.</h1>
+        <p class="giris-metin" data-ayar="aciklama">Konu anlatımları, soru çözümleri ve kısa videolar; öğretmenler için yıllık planlar, yazılı soruları ve çalışma kâğıtları.</p>
+        <div class="dugmeler">
+          <a class="dugme ana" href="#siniflar">Sınıfını seç<svg><use href="#s-ok"/></svg></a>
+          <a class="dugme" href="#ogretmen"><svg><use href="#s-kalem"/></svg>Öğretmen köşesi</a>
+        </div>
+        <ul class="kahraman-ozet">
+          <li><strong>8</strong> sınıf</li>
+          <li><strong data-sayi="ders">14</strong> ders</li>
+          <li><strong>Öğretmen</strong> dosyaları</li>
+        </ul>
       </div>
-      <dl class="sayilar" id="sayilar" aria-label="Özet" hidden>
-        <div><dt>İçerik</dt><dd id="sayi-icerik">–</dd></div>
-        <div><dt>Video</dt><dd id="sayi-video">–</dd></div>
-        <div><dt>Paylaşım</dt><dd id="sayi-paylasim">–</dd></div>
-      </dl>
+      <div class="sahne" aria-hidden="true">
+        <div class="defter">
+          <div class="defter-ust"><i></i><i></i><i></i><b>Soru 1</b></div>
+          <p class="formul">a² + b² = c²</p>
+          <svg class="ucgen" viewBox="0 0 250 132">
+            <path d="M20 115 H190 V20 Z" fill="var(--vurgu-acik)" stroke="var(--vurgu)" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="M176 115 V101 H190" fill="none" stroke="var(--vurgu)" stroke-width="2"/>
+            <text x="100" y="128" text-anchor="middle">a = 8</text>
+            <text x="200" y="72">b = 6</text>
+            <text x="92" y="60" text-anchor="end" class="sicak">c = ?</text>
+          </svg>
+          <div class="cubuklar"><i style="--b:38%"></i><i style="--b:62%"></i><i style="--b:48%"></i><i style="--b:84%"></i><i style="--b:70%"></i></div>
+        </div>
+        <span class="rozet-kart r1"><svg><use href="#s-kitap"/></svg>Konu anlatımı</span>
+        <span class="rozet-kart r2"><svg><use href="#s-onay"/></svg>Soru çözümü</span>
+        <span class="rozet-kart r3"><svg><use href="#s-oynat"/></svg>Kısa video</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="siniflar" class="bolum">
+    <div class="kap">
+      <div class="bolum-bas">
+        <div><p class="ust-baslik">Sınıflar</p><h2>Sınıfını seç</h2></div>
+        <a class="tumu" href="icerikler.html">Bütün içerikler<svg><use href="#s-ok"/></svg></a>
+      </div>
+      <div id="sinif-listesi" class="kademeler"></div>
+    </div>
+  </section>
+
+  <section id="ogretmen" class="bolum koyu-zemin">
+    <div class="kap">
+      <div class="bolum-bas">
+        <div><p class="ust-baslik">Öğretmen köşesi</p><h2>Derse hazırlık dosyaları</h2></div>
+        <a class="tumu" href="icerikler.html?kitle=ogretmen">Öğretmen içerikleri<svg><use href="#s-ok"/></svg></a>
+      </div>
+      <div class="ozellik-izgara">
+        <a class="ozellik" href="icerikler.html?kitle=ogretmen&amp;tur=Y%C4%B1ll%C4%B1k%20plan"><span class="ozellik-simge mavi"><svg><use href="#s-takvim"/></svg></span><h3>Yıllık planlar</h3><p>Güncel öğretim programına göre haftalık dağılımlı yıllık planlar.</p><span class="kart-sayi" data-tur-sayi="Yıllık plan"></span></a>
+        <a class="ozellik" href="icerikler.html?kitle=ogretmen&amp;tur=Yaz%C4%B1l%C4%B1%20sorular%C4%B1"><span class="ozellik-simge kirmizi"><svg><use href="#s-kalem"/></svg></span><h3>Yazılı soruları</h3><p>Konu-soru dağılım tablolarına uygun, cevap anahtarlı yazılı örnekleri.</p><span class="kart-sayi" data-tur-sayi="Yazılı soruları"></span></a>
+        <a class="ozellik" href="icerikler.html?kitle=ogretmen&amp;tur=%C3%87al%C4%B1%C5%9Fma%20k%C3%A2%C4%9Fd%C4%B1"><span class="ozellik-simge yesil"><svg><use href="#s-kitap"/></svg></span><h3>Çalışma kâğıtları</h3><p>Derste ve evde kullanılabilecek yazdırılabilir etkinlikler.</p><span class="kart-sayi" data-tur-sayi="Çalışma kâğıdı"></span></a>
+        <a class="ozellik" href="icerikler.html?kitle=ogretmen&amp;tur=Ders%20plan%C4%B1"><span class="ozellik-simge sari"><svg><use href="#s-onay"/></svg></span><h3>Ders planları</h3><p>Öğrenme çıktılarına göre hazırlanmış ders akışları.</p><span class="kart-sayi" data-tur-sayi="Ders planı"></span></a>
+      </div>
     </div>
   </section>
 
   <section id="icerikler" class="bolum">
     <div class="kap">
       <div class="bolum-bas">
-        <h2>İçerikler</h2>
-        <span class="rozet" id="rozet-icerik" hidden>Örnek içerik</span>
+        <div><p class="ust-baslik">Kütüphane</p><h2>Son eklenenler</h2></div>
+        <a class="tumu" href="icerikler.html">Tümünü gör<svg><use href="#s-ok"/></svg></a>
       </div>
-      <div class="suzgec" id="suzgec" role="group" aria-label="Derse göre süz"></div>
       <div class="kartlar" id="kartlar"></div>
+      <div class="yakinda" id="icerik-yakinda" hidden>
+        <div class="yakinda-simge" aria-hidden="true"><svg><use href="#s-kitap"/></svg></div>
+        <div>
+          <h3>İlk içerikler hazırlanıyor</h3>
+          <p>Konu anlatımları, soru çözümleri ve öğretmen dosyaları eklendikçe burada ve sınıf sayfalarında listelenecek. Yeni içeriklerden haberdar olmak için bizi takip edin.</p>
+        </div>
+        <a class="dugme ana" data-sosyal="youtube" target="_blank" rel="noopener" hidden><svg><use href="#s-youtube"/></svg>Abone ol</a>
+      </div>
     </div>
   </section>
 
-  <section id="videolar" class="bolum">
+  <section id="sosyal" class="bolum koyu-zemin">
     <div class="kap">
       <div class="bolum-bas">
-        <h2><span class="platform yt" aria-hidden="true"></span>Son videolar</h2>
-        <span class="rozet" id="rozet-video" hidden>Örnek içerik</span>
-        <a class="tumu" id="tumu-video" target="_blank" rel="noopener" hidden>Kanala git →</a>
+        <div><p class="ust-baslik">Bizi takip edin</p><h2>Sosyal medya</h2></div>
       </div>
-      <div class="videolar" id="video-listesi"></div>
-      <p class="not">Oynat düğmesine basınca video YouTube'dan yüklenir.</p>
+      <div class="takip-izgara">
+        <a class="takip yt" data-sosyal="youtube" target="_blank" rel="noopener" hidden>
+          <span class="takip-simge"><svg><use href="#s-youtube"/></svg></span>
+          <span class="takip-ad">YouTube</span><span class="takip-kullanici" data-kullanici="youtube"></span>
+          <span class="takip-metin">Konu anlatımı ve soru çözümü videoları</span>
+          <span class="takip-eylem">Abone ol<svg><use href="#s-ok"/></svg></span>
+        </a>
+        <a class="takip ig" data-sosyal="instagram" target="_blank" rel="noopener" hidden>
+          <span class="takip-simge"><svg><use href="#s-instagram"/></svg></span>
+          <span class="takip-ad">Instagram</span><span class="takip-kullanici" data-kullanici="instagram"></span>
+          <span class="takip-metin">Kısa videolar ve günlük sorular</span>
+          <span class="takip-eylem">Takip et<svg><use href="#s-ok"/></svg></span>
+        </a>
+        <a class="takip fb" data-sosyal="facebook" target="_blank" rel="noopener" hidden>
+          <span class="takip-simge"><svg><use href="#s-facebook"/></svg></span>
+          <span class="takip-ad">Facebook</span><span class="takip-kullanici" data-kullanici="facebook"></span>
+          <span class="takip-metin">Duyurular ve paylaşımlar</span>
+          <span class="takip-eylem">Beğen<svg><use href="#s-ok"/></svg></span>
+        </a>
+      </div>
+
+      <div class="akis-blok" id="video-blok" hidden>
+        <h3 class="akis-baslik"><svg class="yt-renk"><use href="#s-youtube"/></svg>Son videolar</h3>
+        <div class="videolar" id="video-listesi"></div>
+        <p class="not">Oynat düğmesine basınca video YouTube'dan yüklenir.</p>
+      </div>
+
+      <div class="akis-blok" id="ig-blok" hidden>
+        <h3 class="akis-baslik"><svg class="ig-renk"><use href="#s-instagram"/></svg>Instagram paylaşımları</h3>
+        <div class="gonderiler" id="ig-listesi"></div>
+      </div>
+
+      <div class="akis-blok" id="fb-blok" hidden>
+        <h3 class="akis-baslik"><svg class="fb-renk"><use href="#s-facebook"/></svg>Facebook paylaşımları</h3>
+        <div class="fb-alan" id="fb-alan"></div>
+      </div>
     </div>
   </section>
 
-  <section id="instagram" class="bolum">
-    <div class="kap">
-      <div class="bolum-bas">
-        <h2><span class="platform ig" aria-hidden="true"></span>Instagram paylaşımları</h2>
-        <span class="rozet" id="rozet-ig" hidden>Örnek içerik</span>
-        <a class="tumu" id="tumu-ig" target="_blank" rel="noopener" hidden>Profile git →</a>
+  <section id="hakkimizda" class="bolum">
+    <div class="kap hakkimizda-ic">
+      <div>
+        <p class="ust-baslik">Hakkımızda</p>
+        <h2>Ders Kutusu nedir?</h2>
+        <p class="giris-metin">Ders Kutusu; 5'ten 12. sınıfa kadar bütün dersler için konu anlatımlarını, soru çözümlerini ve kısa videoları, öğretmenler için de yıllık planları, yazılı sorularını ve çalışma kâğıtlarını tek bir yerde toplar. Amacımız dersleri sade bir dille, adım adım ve günlük yaşamdan örneklerle anlatmak.</p>
       </div>
-      <div class="gonderiler" id="ig-listesi"></div>
+      <ul class="degerler">
+        <li><svg><use href="#s-onay"/></svg><div><strong>Sade anlatım</strong><span>Kısa cümleler, açık adımlar.</span></div></li>
+        <li><svg><use href="#s-onay"/></svg><div><strong>Günlük yaşamdan örnekler</strong><span>Konular tanıdık durumlarla bağlantılı.</span></div></li>
+        <li><svg><use href="#s-onay"/></svg><div><strong>Öğretmenlere hazır dosyalar</strong><span>Yıllık plan, yazılı ve çalışma kâğıdı.</span></div></li>
+        <li><svg><use href="#s-onay"/></svg><div><strong>Her yerden erişim</strong><span>Telefonda, tablette ve bilgisayarda.</span></div></li>
+      </ul>
     </div>
   </section>
 
-  <section id="facebook" class="bolum">
+  <section id="iletisim" class="bolum">
     <div class="kap">
-      <div class="bolum-bas">
-        <h2><span class="platform fb" aria-hidden="true"></span>Facebook sayfası</h2>
-        <a class="tumu" id="tumu-fb" target="_blank" rel="noopener" hidden>Sayfaya git →</a>
+      <div class="iletisim-kart">
+        <div>
+          <p class="ust-baslik">İletişim</p>
+          <h2>Soru ve önerileriniz için yazın</h2>
+          <p>Görüşlerinizi, içerik önerilerinizi ve iş birliği tekliflerinizi e-postayla bize iletebilirsiniz.</p>
+        </div>
+        <a class="dugme ana buyuk" data-eposta><svg><use href="#s-eposta"/></svg><span>info@derskutusu.com</span></a>
       </div>
-      <div class="fb-alan" id="fb-alan"></div>
     </div>
   </section>
 </main>
 
 <footer class="alt">
-  <div class="kap alt-ic">
-    <p><strong data-ayar="site_adi">Ders Kutusu</strong> · <span id="eposta"></span></p>
-    <nav class="alt-menu" aria-label="Alt menü"><a href="gizlilik.html">Gizlilik ve çerezler</a></nav>
-    <p class="soluk alt-guncelleme" id="guncelleme"></p>
+  <div class="kap alt-izgara">
+    <div class="alt-marka">
+      <a class="logo" href="/"><span class="logo-simge" aria-hidden="true">√</span><span>Ders Kutusu</span></a>
+      <p>5-12. sınıf bütün dersler için öğrenci ve öğretmen içerikleri.</p>
+      <div class="alt-sosyal">
+        <a data-sosyal="youtube" aria-label="YouTube" target="_blank" rel="noopener" hidden><svg><use href="#s-youtube"/></svg></a>
+        <a data-sosyal="instagram" aria-label="Instagram" target="_blank" rel="noopener" hidden><svg><use href="#s-instagram"/></svg></a>
+        <a data-sosyal="facebook" aria-label="Facebook" target="_blank" rel="noopener" hidden><svg><use href="#s-facebook"/></svg></a>
+      </div>
+    </div>
+    <nav aria-label="Site">
+      <h2>Site</h2>
+      <a href="#siniflar">Sınıflar</a>
+      <a href="icerikler.html">İçerikler</a>
+      <a href="#ogretmen">Öğretmen köşesi</a>
+      <a href="#hakkimizda">Hakkımızda</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+    <nav aria-label="Bilgi">
+      <h2>Bilgi</h2>
+      <a href="gizlilik.html">Gizlilik ve çerezler</a>
+      <a data-eposta>info@derskutusu.com</a>
+    </nav>
+  </div>
+  <div class="kap alt-son">
+    <p>© <span data-yil>2026</span> Ders Kutusu</p>
+    <p id="guncelleme"></p>
   </div>
 </footer>
 
-<noscript><p class="kap">Bu sayfadaki içerikler JavaScript ile yüklenir.</p></noscript>
-<script src="akis.js"></script>
+<noscript><p class="kap">Bu sayfadaki bazı içerikler JavaScript ile yüklenir.</p></noscript>
+<script src="ortak.js?v=2"></script>
+<script src="akis.js?v=2"></script>
 </body>
 </html>
