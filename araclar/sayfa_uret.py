@@ -171,6 +171,25 @@ GOVDE = {
     </div>
   </section>
   <div class="g-alan" id="g-alan"></div>''', ('goruntule.js',)),
+    'yazili.html': ('Ortak yazılı senaryoları', 'ÖDSGM 1. dönem ortak yazılı konu-soru dağılım senaryoları: hangi öğrenme çıktısından kaç soru çıkacak.', '''  <section class="sayfa-bas">
+    <div class="kap">
+      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a id="y-yol-sinif" href="/#siniflar">Sınıf</a><span aria-hidden="true">/</span><span>Ortak yazılı</span></nav>
+      <h1 id="y-baslik">Ortak yazılı senaryoları</h1>
+      <p>1. dönem, 2026-2027. Okulun zümresi senaryolardan birini seçer; tabloda her öğrenme çıktısından kaç soru çıkacağı yazar.</p>
+      <div class="g-dugmeler y-ust" id="y-dugmeler"></div>
+      <nav class="sinif-gecis" id="y-siniflar" aria-label="Sınıflar"></nav>
+    </div>
+  </section>
+  <section class="bolum y-bolum">
+    <div class="kap">
+      <div class="y-secim">
+        <div class="sekmeler" id="y-yazililar" role="group" aria-label="Yazılı"></div>
+        <div class="cipler" id="y-senaryolar" role="group" aria-label="Senaryo"></div>
+        <label class="y-yalniz"><input type="checkbox" id="y-yalniz" checked> Yalnız soru çıkan öğrenme çıktıları</label>
+      </div>
+      <div class="y-kaydir" id="y-tablo"></div>
+    </div>
+  </section>''', ('yazili.js',)),
 }
 
 for ad, (baslik, aciklama, govde, betikler) in GOVDE.items():

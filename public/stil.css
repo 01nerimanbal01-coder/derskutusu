@@ -407,4 +407,23 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
 .g-uyari h2 { font-size: 22px; margin-bottom: 10px; }
 .g-uyari p { color: var(--soluk); margin-bottom: 20px; }
 .kart .eylemler { display: flex; gap: 14px; flex-wrap: wrap; margin-top: auto; }
+/* Ortak yazılı senaryoları */
+.y-ust { margin: 14px 0 6px; }
+.y-bolum { padding-top: 32px; }
+.y-secim { display: flex; flex-direction: column; gap: 12px; margin-bottom: 18px; }
+.sekmeler, .cipler { display: flex; flex-wrap: wrap; gap: 8px; }
+.sekme { padding: 9px 16px; border: 1px solid var(--cizgi); border-radius: 10px; background: var(--yuzey); color: var(--metin); font: inherit; font-weight: 600; cursor: pointer; }
+.sekme[aria-pressed="true"] { background: var(--vurgu); border-color: var(--vurgu); color: #fff; }
+.cip-dugme { padding: 6px 12px; border: 1px solid var(--cizgi); border-radius: 999px; background: var(--yuzey); color: var(--metin); font: inherit; font-size: 14px; cursor: pointer; }
+.cip-dugme[aria-pressed="true"] { background: var(--vurgu-acik); border-color: var(--vurgu); color: var(--vurgu); font-weight: 600; }
+.y-yalniz { display: inline-flex; gap: 8px; align-items: center; font-size: 14px; color: var(--soluk); }
+.y-kaydir { overflow-x: auto; border: 1px solid var(--cizgi); border-radius: var(--kose); background: var(--yuzey); box-shadow: var(--golge); }
+.y-tablo { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+.y-tablo th { position: sticky; top: 0; background: var(--zemin-2); text-align: left; font-size: 13px; font-weight: 700; color: var(--soluk); padding: 10px 12px; border-bottom: 1px solid var(--cizgi); }
+.y-tablo td { padding: 10px 12px; border-top: 1px solid var(--cizgi); vertical-align: top; }
+.y-grup { font-weight: 600; min-width: 130px; }
+.y-cikti { min-width: 280px; }
+.y-sayi { text-align: center !important; width: 64px; font-variant-numeric: tabular-nums; font-weight: 700; }
+.y-sayi.sifir { color: var(--soluk); font-weight: 400; }
+.y-toplam td { background: var(--zemin-2); font-weight: 700; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
