@@ -50,6 +50,12 @@ function ayarlariUygula(a) {
   if (a.eposta) $('#eposta').append(el('a', { href: `mailto:${a.eposta}` }, a.eposta));
 }
 
+const TANITIM = [
+  ['Konu anlatımları', 'Her konu kısa, açık ve adım adım anlatılır.'],
+  ['Soru çözümleri', 'Günlük yaşamdan sorular, çözüm yollarıyla birlikte.'],
+  ['Kısa videolar', 'YouTube ve Instagram’daki videolarımız bu sayfada da toplanır.'],
+];
+
 function icerikleriGoster(v) {
   const liste = v?.icerikler || [];
   $('#rozet-icerik').hidden = v?.kaynak !== 'ornek';
@@ -66,8 +72,16 @@ function icerikleriGoster(v) {
         el('h3', {}, i.baslik),
         i.aciklama && el('p', {}, i.aciklama),
         i.baglanti && el('a', { sinif: 'ac', href: i.baglanti, target: '_blank', rel: 'noopener' }, 'Aç →'))));
-    if (!kartlar.children.length) kartlar.append(bosKutu('Henüz içerik eklenmedi.'));
+    if (!kartlar.children.length) kartlar.append(bosKutu('Bu derste henüz içerik yok.'));
   };
+  if (!liste.length) {
+    // İlk içerikler eklenene kadar sitenin ne sunacağını anlatan kartlar (örnek içerik gösterilmez)
+    kartlar.classList.add('tanitim');
+    kartlar.replaceChildren(...TANITIM.map(([baslik, metin]) =>
+      el('article', { sinif: 'kart' }, el('h3', {}, baslik), el('p', {}, metin))));
+    kartlar.after(el('p', { sinif: 'not' }, 'İlk içerikler hazırlanıyor. Eklendikçe burada ders ders listelenecek.'));
+    return;
+  }
   const suzgec = $('#suzgec');
   if (dersler.length > 2) {
     suzgec.replaceChildren(...dersler.map((d, s) => el('button', {
@@ -86,7 +100,7 @@ function videolariGoster(v) {
   $('#rozet-video').hidden = v?.kaynak !== 'ornek';
   $('#sayi-video').textContent = liste.length;
   const kutu = $('#video-listesi');
-  if (!liste.length) { kutu.append(bosKutu('YouTube kanalı bağlanınca son videolar burada görünür.')); return; }
+  if (!liste.length) { kutu.append(bosKutu('Henüz video yayımlanmadı. Kanala eklenen videolar her gün buraya kendiliğinden gelir.')); $('#videolar .not').hidden = true; return; }
   const ornek = v.kaynak === 'ornek';
   kutu.replaceChildren(...liste.map((i) => {
     const kapak = el('button', {
@@ -109,7 +123,7 @@ function instagramGoster(v, ayar) {
   $('#rozet-ig').hidden = v?.kaynak !== 'ornek';
   $('#sayi-paylasim').textContent = liste.length;
   const kutu = $('#ig-listesi');
-  if (!liste.length) { kutu.append(bosKutu('Instagram hesabı bağlanınca paylaşımlar burada görünür.')); return; }
+  if (!liste.length) { kutu.append(bosKutu(ayar.instagram?.adres ? 'Henüz paylaşım yok. Instagram’daki gönderilerimiz burada görünecek.' : 'Instagram paylaşımları burada görünecek.')); return; }
   const profil = ayar.instagram?.adres || null;
   // Görseli olan gönderi (API ya da örnek) yerel görselle gösterilir; yalnız bağlantısı olan (elle eklenen)
   // gönderi Instagram'ın resmî gömme koduyla, ziyaretçi izin verince yüklenir.
@@ -161,6 +175,8 @@ function facebookGoster(ayar) {
   videolariGoster(yt);
   instagramGoster(ig, a);
   facebookGoster(a);
+  const sayilar = ['#sayi-icerik', '#sayi-video', '#sayi-paylasim'].map((k) => Number($(k).textContent) || 0);
+  $('#sayilar').hidden = !sayilar.some(Boolean);
   const son = [yt?.guncelleme, ig?.guncelleme].filter(Boolean).sort().pop();
   if (son) $('#guncelleme').textContent = `Sosyal medya akışı son güncelleme: ${tarihBicim.format(new Date(son))}`;
 })();

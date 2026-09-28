@@ -3,10 +3,41 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ders Kutusu</title>
-<meta name="description" content="Konu anlatımları, soru çözümleri ve kısa videolar.">
+<title>Ders Kutusu · Konu anlatımları, soru çözümleri ve kısa videolar</title>
+<meta name="description" content="Ders Kutusu: konu anlatımları, soru çözümleri ve kısa videolar. YouTube, Instagram ve Facebook paylaşımlarımız da burada.">
+<link rel="canonical" href="https://derskutusu.com/">
 <meta name="color-scheme" content="light dark">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232451d6'/%3E%3Ctext x='16' y='22' font-size='18' text-anchor='middle' fill='white' font-family='Georgia'%3E%E2%88%9A%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#2451d6">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ders Kutusu">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:url" content="https://derskutusu.com/">
+<meta property="og:title" content="Ders Kutusu">
+<meta property="og:description" content="Konu anlatımları, soru çözümleri ve kısa videolar.">
+<meta property="og:image" content="https://derskutusu.com/paylasim.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ders Kutusu: konu anlatımları, soru çözümleri ve kısa videolar">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Ders Kutusu",
+  "url": "https://derskutusu.com/",
+  "logo": "https://derskutusu.com/simge-512.png",
+  "email": "info@derskutusu.com",
+  "sameAs": [
+    "https://www.youtube.com/@derskutusuinfo",
+    "https://www.instagram.com/derskutusuinfo/",
+    "https://www.facebook.com/derskutusuinfo"
+  ]
+}
+</script>
 <link rel="stylesheet" href="stil.css">
 </head>
 <body>
@@ -32,7 +63,7 @@
         <p class="giris-metin" data-ayar="aciklama"></p>
         <div class="hesaplar" id="hesaplar"></div>
       </div>
-      <dl class="sayilar" id="sayilar" aria-label="Özet">
+      <dl class="sayilar" id="sayilar" aria-label="Özet" hidden>
         <div><dt>İçerik</dt><dd id="sayi-icerik">–</dd></div>
         <div><dt>Video</dt><dd id="sayi-video">–</dd></div>
         <div><dt>Paylaşım</dt><dd id="sayi-paylasim">–</dd></div>
@@ -88,7 +119,8 @@
 <footer class="alt">
   <div class="kap alt-ic">
     <p><strong data-ayar="site_adi">Ders Kutusu</strong> · <span id="eposta"></span></p>
-    <p class="soluk" id="guncelleme"></p>
+    <nav class="alt-menu" aria-label="Alt menü"><a href="gizlilik.html">Gizlilik ve çerezler</a></nav>
+    <p class="soluk alt-guncelleme" id="guncelleme"></p>
   </div>
 </footer>
 

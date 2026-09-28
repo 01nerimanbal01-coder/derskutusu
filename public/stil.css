@@ -146,6 +146,23 @@ h1, h2, h3 { line-height: 1.2; margin: 0; }
 .alt { border-top: 1px solid var(--cizgi); padding: 28px 0 40px; margin-top: 24px; }
 .alt-ic { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
 .alt p { margin: 0; }
+.alt-menu a { color: var(--soluk); font-size: 15px; }
+.alt-guncelleme { flex-basis: 100%; font-size: 14px; }
+.sayilar[hidden] { display: none; }
+.giris-ic:has(> .sayilar[hidden]) { grid-template-columns: 1fr; }
+.kartlar > .bos, .videolar > .bos, .gonderiler > .bos { grid-column: 1 / -1; }
+.tanitim .kart h3 { display: flex; align-items: center; gap: 8px; }
+
+/* Metin sayfaları (gizlilik, 404) */
+.metin-sayfa { padding: 48px 0 24px; }
+.metin-sayfa .kap { max-width: 760px; }
+.metin-sayfa h1 { font-size: clamp(26px, 3.6vw, 36px); letter-spacing: -.01em; margin-bottom: 8px; }
+.metin-sayfa h2 { font-size: 20px; margin: 28px 0 8px; }
+.metin-sayfa p, .metin-sayfa li { color: var(--soluk); }
+.metin-sayfa p { margin: 0 0 12px; }
+.metin-sayfa ul { padding-left: 20px; margin: 0 0 12px; }
+.metin-sayfa .dugme { margin-top: 8px; }
+.durum { font-size: 14px; color: var(--soluk); margin-top: 10px; min-height: 1.4em; }
 
 @media (max-width: 760px) {
   .giris { padding: 36px 0 24px; }
