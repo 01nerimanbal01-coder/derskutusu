@@ -16,8 +16,8 @@ simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') +
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
 alt = ana[ana.index('<footer class="alt">'):ana.index('</footer>') + len('</footer>')]
 # İç sayfalarda bölüm bağlantıları ana sayfaya gider
-ust = re.sub(r'href="#', 'href="/#', ust).replace('href="icerikler.html"', 'href="/icerikler.html"')
-alt = re.sub(r'href="#', 'href="/#', alt).replace('href="icerikler.html"', 'href="/icerikler.html"').replace('href="gizlilik.html"', 'href="/gizlilik.html"')
+ust = re.sub(r'href="([a-z0-9-]+\.html)', r'href="/\1', re.sub(r'href="#', 'href="/#', ust))
+alt = re.sub(r'href="([a-z0-9-]+\.html)', r'href="/\1', re.sub(r'href="#', 'href="/#', alt))
 
 
 def sayfa(ad, baslik, aciklama, govde, betikler=(), kanonik=True):
@@ -115,6 +115,15 @@ GOVDE = {
 {YAKINDA}
     </div>
   </section>''', ('kutuphane.js',)),
+    'belgeler.html': ('Resmî belgeler', 'MEB, ÖDSGM, DÖGM ve ÖSYM resmî belgeleri: öğretim programları, kılavuzlar, ortak yazılı tabloları, LGS ve YKS.', '''  <section class="sayfa-bas">
+    <div class="kap">
+      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><span>Resmî belgeler</span></nav>
+      <h1>Resmî belgeler</h1>
+      <p>MEB, ÖDSGM, DÖGM ve ÖSYM’nin yayımladığı belgeler tek yerde. Bağlantılar doğrudan resmî kaynaklara gider; dosyalar her zaman güncel sürümüyle açılır.</p>
+      <nav class="sinif-gecis" id="grup-gecis" aria-label="Belge grupları"></nav>
+    </div>
+  </section>
+  <div id="belge-gruplari"></div>''', ('belgeler.js',)),
 }
 
 for ad, (baslik, aciklama, govde, betikler) in GOVDE.items():

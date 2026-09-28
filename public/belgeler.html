@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sınıf · Ders Kutusu</title>
-<meta name="description" content="5-12. sınıf dersleri için konu anlatımları, soru çözümleri ve öğretmen dosyaları.">
-<link rel="canonical" href="https://derskutusu.com/sinif.html">
+<title>Resmî belgeler · Ders Kutusu</title>
+<meta name="description" content="MEB, ÖDSGM, DÖGM ve ÖSYM resmî belgeleri: öğretim programları, kılavuzlar, ortak yazılı tabloları, LGS ve YKS.">
+<link rel="canonical" href="https://derskutusu.com/belgeler.html">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#2451d6">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:site_name" content="Ders Kutusu">
-<meta property="og:title" content="Sınıf · Ders Kutusu">
-<meta property="og:description" content="5-12. sınıf dersleri için konu anlatımları, soru çözümleri ve öğretmen dosyaları.">
+<meta property="og:title" content="Resmî belgeler · Ders Kutusu">
+<meta property="og:description" content="MEB, ÖDSGM, DÖGM ve ÖSYM resmî belgeleri: öğretim programları, kılavuzlar, ortak yazılı tabloları, LGS ve YKS.">
 <meta property="og:image" content="https://derskutusu.com/paylasim.png">
 <link rel="stylesheet" href="/stil.css?v=4">
 </head>
@@ -58,29 +58,13 @@
 <main id="icerik">
   <section class="sayfa-bas">
     <div class="kap">
-      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/#siniflar">Sınıflar</a><span aria-hidden="true">/</span><span id="yol-sinif"></span></nav>
-      <h1 id="baslik">Sınıf</h1>
-      <p id="aciklama"></p>
-      <nav class="sinif-gecis" id="sinif-gecis" aria-label="Sınıflar"></nav>
+      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><span>Resmî belgeler</span></nav>
+      <h1>Resmî belgeler</h1>
+      <p>MEB, ÖDSGM, DÖGM ve ÖSYM’nin yayımladığı belgeler tek yerde. Bağlantılar doğrudan resmî kaynaklara gider; dosyalar her zaman güncel sürümüyle açılır.</p>
+      <nav class="sinif-gecis" id="grup-gecis" aria-label="Belge grupları"></nav>
     </div>
   </section>
-  <section class="bolum">
-    <div class="kap">
-      <div class="bolum-bas">
-        <div><p class="ust-baslik">Dersler</p><h2>Dersini seç</h2></div>
-        <a class="tumu" id="tum-icerik" href="/icerikler.html">Bu sınıfın bütün içerikleri<svg><use href="#s-ok"/></svg></a>
-      </div>
-      <div class="ders-izgara" id="ders-listesi"></div>
-    </div>
-  </section>
-  <section class="bolum koyu-zemin" id="secmeli-bolum" hidden>
-    <div class="kap">
-      <div class="bolum-bas">
-        <div><p class="ust-baslik">Seçmeli dersler</p><h2>Seçmeli ve imam hatip dersleri</h2></div>
-      </div>
-      <div class="ders-izgara" id="secmeli-listesi"></div>
-    </div>
-  </section>
+  <div id="belge-gruplari"></div>
 </main>
 
 <footer class="alt">
@@ -116,6 +100,6 @@
 </footer>
 
 <script src="/ortak.js?v=4"></script>
-<script src="/kutuphane.js?v=4"></script>
+<script src="/belgeler.js?v=4"></script>
 </body>
 </html>
