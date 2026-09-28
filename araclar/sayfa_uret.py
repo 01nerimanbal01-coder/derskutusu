@@ -130,7 +130,7 @@ GOVDE = {
       <h1>Arama</h1>
       <p>Yazdığınızı anlar: sınıfı, dersi ve aradığınız türü kendisi bulur; yazım hatalarını düzeltir.</p>
       <form class="arama-buyuk" id="arama-form" role="search">
-        <svg aria-hidden="true"><use href="#s-ara"/></svg>
+        <svg aria-hidden="true"><use href="#s-mercek"/></svg>
         <input id="arama-kutu" type="search" name="q" placeholder="Ör. 8. sınıf matematik yıllık plan" aria-label="Sitede ara" autocomplete="off" spellcheck="false" enterkeyhint="search">
         <button class="dugme ana" type="submit">Ara</button>
       </form>
@@ -144,7 +144,7 @@ GOVDE = {
       <div class="kartlar" id="arama-sonuclari"></div>
       <p class="orta"><button class="dugme" id="daha-fazla" type="button" hidden>Daha fazla göster</button></p>
       <div class="yakinda" id="arama-bos" hidden>
-        <div class="yakinda-simge" aria-hidden="true"><svg><use href="#s-ara"/></svg></div>
+        <div class="yakinda-simge" aria-hidden="true"><svg><use href="#s-mercek"/></svg></div>
         <div>
           <h3>Ne aramak istersiniz?</h3>
           <p>Sınıf, ders ve tür yazmanız yeterli. Örnekler:</p>
