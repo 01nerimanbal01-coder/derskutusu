@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Belge · Ders Kutusu</title>
-<meta name="description" content="Resmî belgeyi Ders Kutusu içinde görüntüleyin.">
-<link rel="canonical" href="https://derskutusu.com/goruntule.html">
+<title>Akıllı tahta · Ders Kutusu</title>
+<meta name="description" content="Tarayıcıda çalışan akıllı tahta: kalem, fosforlu kalem, silgi, renkler, kareli ve çizgili zemin, sayfalar.">
+<link rel="canonical" href="https://derskutusu.com/tahta.html">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#2451d6">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:site_name" content="Ders Kutusu">
-<meta property="og:title" content="Belge · Ders Kutusu">
-<meta property="og:description" content="Resmî belgeyi Ders Kutusu içinde görüntüleyin.">
+<meta property="og:title" content="Akıllı tahta · Ders Kutusu">
+<meta property="og:description" content="Tarayıcıda çalışan akıllı tahta: kalem, fosforlu kalem, silgi, renkler, kareli ve çizgili zemin, sayfalar.">
 <meta property="og:image" content="https://derskutusu.com/paylasim.png">
 <link rel="stylesheet" href="/stil.css?v=13">
 </head>
@@ -66,17 +66,19 @@
 </header>
 
 <main id="icerik">
-  <section class="g-bas">
-    <div class="kap g-bas-ic">
-      <div>
-        <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/belgeler.html">Resmî belgeler</a></nav>
-        <h1 id="g-baslik">Belge yükleniyor…</h1>
-        <p id="g-bilgi"></p>
-      </div>
-      <div class="g-dugmeler" id="g-dugmeler"></div>
+  <section class="tahta-sayfa">
+    <div class="kap tahta-ustbar">
+      <h1>Akıllı tahta</h1>
+      <label class="gizli" for="t-zemin">Zemin</label>
+      <select id="t-zemin" aria-label="Zemin"><option value="kareli">Kareli</option><option value="cizgili">Çizgili</option><option value="noktali">Noktalı</option><option value="">Düz</option></select>
+      <button class="dugme" type="button" id="t-onceki" aria-label="Önceki sayfa">‹</button>
+      <span id="t-sayfa" aria-live="polite">1 / 1</span>
+      <button class="dugme" type="button" id="t-sonraki" aria-label="Sonraki ya da yeni sayfa">›</button>
+      <button class="dugme" type="button" id="t-kaydet"><svg><use href="#s-indir"/></svg>PNG</button>
+      <button class="dugme ana" type="button" id="t-tam"><svg><use href="#s-buyut"/></svg>Tam ekran</button>
     </div>
+    <div class="tahta-alan" id="tahta-alan"><div id="tahta"></div></div>
   </section>
-  <div class="g-alan" id="g-alan"></div>
 </main>
 
 <footer class="alt">
@@ -112,7 +114,6 @@
 </footer>
 
 <script src="/ortak.js?v=13"></script>
-<script src="/goruntule.js?v=13"></script>
 <script src="/arama.js?v=13"></script>
 <script src="/tahta.js?v=13"></script>
 </body>
