@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ders Kutusu</title>
+<meta name="description" content="Konu anlatımları, soru çözümleri ve kısa videolar.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232451d6'/%3E%3Ctext x='16' y='22' font-size='18' text-anchor='middle' fill='white' font-family='Georgia'%3E%E2%88%9A%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<a class="atla" href="#icerikler">İçeriğe geç</a>
+
+<header class="ust">
+  <div class="kap ust-ic">
+    <a class="logo" href="#"><span class="logo-simge" aria-hidden="true">√</span><span data-ayar="site_adi">Ders Kutusu</span></a>
+    <nav class="menu" aria-label="Ana menü">
+      <a href="#icerikler">İçerikler</a>
+      <a href="#videolar">Videolar</a>
+      <a href="#instagram">Instagram</a>
+      <a href="#facebook">Facebook</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="giris">
+    <div class="kap giris-ic">
+      <div>
+        <h1 data-ayar="slogan">Konu anlatımları, soru çözümleri ve kısa videolar</h1>
+        <p class="giris-metin" data-ayar="aciklama"></p>
+        <div class="hesaplar" id="hesaplar"></div>
+      </div>
+      <dl class="sayilar" id="sayilar" aria-label="Özet">
+        <div><dt>İçerik</dt><dd id="sayi-icerik">–</dd></div>
+        <div><dt>Video</dt><dd id="sayi-video">–</dd></div>
+        <div><dt>Paylaşım</dt><dd id="sayi-paylasim">–</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="icerikler" class="bolum">
+    <div class="kap">
+      <div class="bolum-bas">
+        <h2>İçerikler</h2>
+        <span class="rozet" id="rozet-icerik" hidden>Örnek içerik</span>
+      </div>
+      <div class="suzgec" id="suzgec" role="group" aria-label="Derse göre süz"></div>
+      <div class="kartlar" id="kartlar"></div>
+    </div>
+  </section>
+
+  <section id="videolar" class="bolum">
+    <div class="kap">
+      <div class="bolum-bas">
+        <h2><span class="platform yt" aria-hidden="true"></span>Son videolar</h2>
+        <span class="rozet" id="rozet-video" hidden>Örnek içerik</span>
+        <a class="tumu" id="tumu-video" target="_blank" rel="noopener" hidden>Kanala git →</a>
+      </div>
+      <div class="videolar" id="video-listesi"></div>
+      <p class="not">Oynat düğmesine basınca video YouTube'dan yüklenir.</p>
+    </div>
+  </section>
+
+  <section id="instagram" class="bolum">
+    <div class="kap">
+      <div class="bolum-bas">
+        <h2><span class="platform ig" aria-hidden="true"></span>Instagram paylaşımları</h2>
+        <span class="rozet" id="rozet-ig" hidden>Örnek içerik</span>
+        <a class="tumu" id="tumu-ig" target="_blank" rel="noopener" hidden>Profile git →</a>
+      </div>
+      <div class="gonderiler" id="ig-listesi"></div>
+    </div>
+  </section>
+
+  <section id="facebook" class="bolum">
+    <div class="kap">
+      <div class="bolum-bas">
+        <h2><span class="platform fb" aria-hidden="true"></span>Facebook sayfası</h2>
+        <a class="tumu" id="tumu-fb" target="_blank" rel="noopener" hidden>Sayfaya git →</a>
+      </div>
+      <div class="fb-alan" id="fb-alan"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="alt">
+  <div class="kap alt-ic">
+    <p><strong data-ayar="site_adi">Ders Kutusu</strong> · <span id="eposta"></span></p>
+    <p class="soluk" id="guncelleme"></p>
+  </div>
+</footer>
+
+<noscript><p class="kap">Bu sayfadaki içerikler JavaScript ile yüklenir.</p></noscript>
+<script src="akis.js"></script>
+</body>
+</html>
