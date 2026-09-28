@@ -16,7 +16,7 @@ function icerikKarti(i, dersler) {
     i.aciklama && el('p', {}, i.aciklama),
     el('div', { sinif: 'eylemler' },
       i.goruntule && el('a', { sinif: 'ac', href: `/${i.goruntule}` }, 'Aç', simge('ok')),
-      adres && el('a', { sinif: 'ac', href: i.dosya ? `/${i.dosya}` : adres, target: i.dosya ? null : '_blank', rel: 'noopener', download: i.dosya ? '' : null },
+      adres && (i.dosya || !i.goruntule) && el('a', { sinif: 'ac', href: i.dosya ? `/${i.dosya}` : adres, target: i.dosya ? null : '_blank', rel: 'noopener', download: i.dosya ? '' : null },
         i.dosya ? 'İndir' : 'Aç', simge(i.dosya ? 'indir' : 'ok'))));
 }
 
