@@ -152,7 +152,50 @@ def mat8(o):
             b['gorsel'] = carpan_agaci_72()
 
 
+def dikdortgen_modeli_12():
+    """Alanı 12 birimkare olan dikdörtgenler: 1 × 12, 2 × 6, 3 × 4 (kareli)."""
+    birim, ic, y = 16, '', 14
+    renk = [('g-ma', 'g-ms', 'g-mf'), ('g-ya', 'g-ys', 'g-yf'), ('g-ta', 'g-ts', 'g-tf')]
+    for (en, boy), (a, st, f) in zip([(12, 1), (6, 2), (4, 3)], renk):
+        x0 = 20
+        for i in range(boy):
+            for j in range(en):
+                ic += f'<rect x="{x0 + j * birim + 1}" y="{y + i * birim + 1}" width="{birim - 2}" height="{birim - 2}" rx="3" class="{a}"/>'
+        ic += f'<rect x="{x0}" y="{y}" width="{en * birim}" height="{boy * birim}" rx="4" class="{st}" stroke-width="2.2"/>'
+        ic += f'<text x="{x0 + en * birim + 16}" y="{y + boy * birim / 2 + 6}" font-size="16" font-weight="800" class="{f}">{en} · {boy} = 12</text>'
+        y += boy * birim + 22
+    ic += '<text x="20" y="' + str(y + 8) + '" font-size="13.5" class="g-s">Kenar uzunlukları 12’nin çarpanlarıdır: 1, 2, 3, 4, 6, 12</text>'
+    return svg(330, y + 18, ic, 'Alanı 12 birimkare olan üç dikdörtgen: 12’ye 1, 6’ya 2, 4’e 3; kenarlar 12’nin çarpanları')
+
+
+def kat_sayi_dogrusu_3():
+    """Sayı doğrusunda 3'er atlama: 3'ün katları."""
+    x0, adim, y = 24, 22, 70
+    ic = '<defs>' + ok_isareti('okS', 'g-mf') + '</defs>'
+    ic += f'<line x1="{x0 - 6}" y1="{y}" x2="{x0 + 13 * adim + 14}" y2="{y}" class="g-ms" stroke-width="2.5" marker-end="url(#okS)"/>'
+    for n in range(0, 14):
+        x = x0 + n * adim
+        kat = n % 3 == 0 and n > 0
+        ic += f'<line x1="{x}" y1="{y - 6}" x2="{x}" y2="{y + 6}" class="g-c" stroke-width="2"/>'
+        ic += f'<text x="{x}" y="{y + 24}" text-anchor="middle" font-size="{14 if kat else 12}" font-weight="{800 if kat else 400}" class="{"g-tf" if kat else "g-s"}">{n}</text>'
+        if kat:
+            ic += f'<circle cx="{x}" cy="{y}" r="6" class="g-tf"/>'
+            ic += f'<path d="M{x - 3 * adim + 4} {y - 8} Q{x - 1.5 * adim} {y - 46} {x - 4} {y - 8}" class="g-ts" stroke-width="2.2"/>'
+            ic += f'<text x="{x - 1.5 * adim}" y="{y - 32}" text-anchor="middle" font-size="12" font-weight="700" class="g-tf">+3</text>'
+    ic += f'<text x="{x0}" y="{y + 50}" font-size="13.5" class="g-s">3’ün katları: 3, 6, 9, 12, … (sayı doğrusunda 3’er atlama; sonu yok)</text>'
+    return svg(350, y + 60, ic, 'Sayı doğrusunda 0’dan başlayarak 3’er atlama: 3, 6, 9, 12; bunlar 3’ün katlarıdır')
+
+
+def mat6(o):
+    g = {'Çarpan: bir sayıyı oluşturan çarpımlar': dikdortgen_modeli_12(), 'Kat: bir sayının tekrarlanan toplamı': kat_sayi_dogrusu_3()}
+    for b in o['bolumler']:
+        if b['baslik'] in g:
+            b['gorsel'] = g[b['baslik']]
+
+
 if __name__ == '__main__':
     yaz('5-matematik-1.json', mat5)
     yaz('8-matematik-1.json', mat8)
+    if (OZET / '6-matematik-1.json').exists():
+        yaz('6-matematik-1.json', mat6)
     print('görseller yazıldı')
