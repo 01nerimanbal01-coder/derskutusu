@@ -28,7 +28,7 @@ const tercih = {
   al: (a) => { try { return localStorage.getItem(a) === '1'; } catch { return false; } },
   koy: (a) => { try { localStorage.setItem(a, '1'); } catch {} },
 };
-const kok = document.querySelector('link[rel="canonical"]') ? '' : '/';
+const kok = '/';   // veri dosyaları her zaman site kökünden (alt klasördeki sayfalar da, ör. /ozet/)
 
 async function veri(ad) {
   try {
