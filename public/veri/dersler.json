@@ -1,5 +1,5 @@
 {
- "aciklama": "Sınıflar ve dersler. İçerikler icerikler.json'da 'sinif' (sayı) ve 'ders' (buradaki kısa ad) alanlarıyla bu listeye bağlanır.",
+ "aciklama": "Sınıflar ve dersler. 'siniflar' ortak dersler, 'secmeli' seçmeli ve imam hatip dersleri. İçerikler icerikler.json'da 'sinif' (sayı) ve 'ders' (buradaki kısa ad) alanlarıyla bu listeye bağlanır.",
  "kademeler": [
   {
    "ad": "Ortaokul",
@@ -25,16 +25,30 @@
   "matematik": "Matematik",
   "fen-bilimleri": "Fen Bilimleri",
   "sosyal-bilgiler": "Sosyal Bilgiler",
-  "i-ngilizce": "İngilizce",
+  "ingilizce": "İngilizce",
   "din-kulturu-ve-ahlak-bilgisi": "Din Kültürü ve Ahlak Bilgisi",
-  "tc-i-nkilap-tarihi-ve-ataturkculuk": "T.C. İnkılap Tarihi ve Atatürkçülük",
+  "tc-inkilap-tarihi-ve-ataturkculuk": "T.C. İnkılap Tarihi ve Atatürkçülük",
   "turk-dili-ve-edebiyati": "Türk Dili ve Edebiyatı",
   "fizik": "Fizik",
   "kimya": "Kimya",
   "biyoloji": "Biyoloji",
   "tarih": "Tarih",
   "cografya": "Coğrafya",
-  "felsefe": "Felsefe"
+  "felsefe": "Felsefe",
+  "kuran-i-kerim": "Kur'an-ı Kerim",
+  "peygamberimizin-hayati": "Peygamberimizin Hayatı",
+  "temel-dini-bilgiler": "Temel Dinî Bilgiler",
+  "arapca": "Arapça",
+  "mesleki-arapca": "Mesleki Arapça",
+  "fikih": "Fıkıh",
+  "hadis": "Hadis",
+  "siyer": "Siyer",
+  "akaid": "Akaid",
+  "tefsir": "Tefsir",
+  "dinler-tarihi": "Dinler Tarihi",
+  "hitabet-ve-mesleki-uygulama": "Hitabet ve Mesleki Uygulama",
+  "kelam": "Kelam",
+  "islam-kultur-ve-medeniyeti": "İslam Kültür ve Medeniyeti"
  },
  "siniflar": {
   "5": [
@@ -42,7 +56,7 @@
    "matematik",
    "fen-bilimleri",
    "sosyal-bilgiler",
-   "i-ngilizce",
+   "ingilizce",
    "din-kulturu-ve-ahlak-bilgisi"
   ],
   "6": [
@@ -50,7 +64,7 @@
    "matematik",
    "fen-bilimleri",
    "sosyal-bilgiler",
-   "i-ngilizce",
+   "ingilizce",
    "din-kulturu-ve-ahlak-bilgisi"
   ],
   "7": [
@@ -58,15 +72,15 @@
    "matematik",
    "fen-bilimleri",
    "sosyal-bilgiler",
-   "i-ngilizce",
+   "ingilizce",
    "din-kulturu-ve-ahlak-bilgisi"
   ],
   "8": [
    "turkce",
    "matematik",
    "fen-bilimleri",
-   "tc-i-nkilap-tarihi-ve-ataturkculuk",
-   "i-ngilizce",
+   "tc-inkilap-tarihi-ve-ataturkculuk",
+   "ingilizce",
    "din-kulturu-ve-ahlak-bilgisi"
   ],
   "9": [
@@ -77,7 +91,7 @@
    "biyoloji",
    "tarih",
    "cografya",
-   "i-ngilizce",
+   "ingilizce",
    "din-kulturu-ve-ahlak-bilgisi"
   ],
   "10": [
@@ -89,7 +103,7 @@
    "tarih",
    "cografya",
    "felsefe",
-   "i-ngilizce",
+   "ingilizce",
    "din-kulturu-ve-ahlak-bilgisi"
   ],
   "11": [
@@ -101,7 +115,7 @@
    "tarih",
    "cografya",
    "felsefe",
-   "i-ngilizce",
+   "ingilizce",
    "din-kulturu-ve-ahlak-bilgisi"
   ],
   "12": [
@@ -110,9 +124,9 @@
    "fizik",
    "kimya",
    "biyoloji",
-   "tc-i-nkilap-tarihi-ve-ataturkculuk",
+   "tc-inkilap-tarihi-ve-ataturkculuk",
    "cografya",
-   "i-ngilizce",
+   "ingilizce",
    "din-kulturu-ve-ahlak-bilgisi"
   ]
  },
@@ -149,5 +163,64 @@
    "ad": "Ders planı",
    "kitle": "ogretmen"
   }
- ]
+ ],
+ "secmeli": {
+  "5": [
+   "kuran-i-kerim",
+   "peygamberimizin-hayati",
+   "temel-dini-bilgiler",
+   "arapca"
+  ],
+  "6": [
+   "kuran-i-kerim",
+   "peygamberimizin-hayati",
+   "temel-dini-bilgiler",
+   "arapca"
+  ],
+  "7": [
+   "kuran-i-kerim",
+   "peygamberimizin-hayati",
+   "temel-dini-bilgiler",
+   "arapca"
+  ],
+  "8": [
+   "kuran-i-kerim",
+   "peygamberimizin-hayati",
+   "temel-dini-bilgiler",
+   "arapca"
+  ],
+  "9": [
+   "kuran-i-kerim",
+   "peygamberimizin-hayati",
+   "temel-dini-bilgiler",
+   "arapca"
+  ],
+  "10": [
+   "kuran-i-kerim",
+   "peygamberimizin-hayati",
+   "temel-dini-bilgiler",
+   "arapca",
+   "fikih",
+   "hadis",
+   "siyer"
+  ],
+  "11": [
+   "kuran-i-kerim",
+   "peygamberimizin-hayati",
+   "temel-dini-bilgiler",
+   "mesleki-arapca",
+   "akaid",
+   "tefsir",
+   "dinler-tarihi",
+   "hitabet-ve-mesleki-uygulama"
+  ],
+  "12": [
+   "kuran-i-kerim",
+   "peygamberimizin-hayati",
+   "temel-dini-bilgiler",
+   "mesleki-arapca",
+   "kelam",
+   "islam-kultur-ve-medeniyeti"
+  ]
+ }
 }

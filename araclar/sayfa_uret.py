@@ -85,6 +85,14 @@ GOVDE = {
       </div>
       <div class="ders-izgara" id="ders-listesi"></div>
     </div>
+  </section>
+  <section class="bolum koyu-zemin" id="secmeli-bolum" hidden>
+    <div class="kap">
+      <div class="bolum-bas">
+        <div><p class="ust-baslik">Seçmeli dersler</p><h2>Seçmeli ve imam hatip dersleri</h2></div>
+      </div>
+      <div class="ders-izgara" id="secmeli-listesi"></div>
+    </div>
   </section>''', ('kutuphane.js',)),
     'icerikler.html': ('İçerikler', 'Sınıfa, derse ve türe göre konu anlatımları, soru çözümleri, videolar, yıllık planlar ve yazılı soruları.', f'''  <section class="sayfa-bas">
     <div class="kap">

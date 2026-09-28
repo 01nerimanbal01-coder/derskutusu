@@ -30,7 +30,7 @@ function sinifSayfasi({ dersler, icerikler }) {
   $('#sinif-gecis').replaceChildren(...Object.keys(dersler.siniflar).map((n) =>
     el('a', { href: `sinif.html?no=${n}`, 'aria-current': Number(n) === no ? 'page' : null }, `${n}. sınıf`)));
   const buSinif = icerikler.filter((i) => Number(i.sinif) === no);
-  $('#ders-listesi').replaceChildren(...liste.map((d, s) => {
+  const dersKarti = (d, s) => {
     const ad = dersler.dersler[d];
     const ogrenci = buSinif.filter((i) => i.ders === d && i.kitle !== 'ogretmen').length;
     const ogretmen = buSinif.filter((i) => i.ders === d && i.kitle === 'ogretmen').length;
@@ -41,7 +41,13 @@ function sinifSayfasi({ dersler, icerikler }) {
       el('div', { sinif: 'sayilar' },
         el('span', {}, ogrenci ? `${ogrenci} öğrenci içeriği` : 'Öğrenci içerikleri yakında'),
         el('span', { sinif: 'ogretmen' }, ogretmen ? `${ogretmen} öğretmen dosyası` : 'Öğretmen dosyaları yakında')));
-  }));
+  };
+  $('#ders-listesi').replaceChildren(...liste.map(dersKarti));
+  const secmeli = dersler.secmeli?.[no] || [];
+  if (secmeli.length && $('#secmeli-listesi')) {
+    $('#secmeli-listesi').replaceChildren(...secmeli.map((d, s) => dersKarti(d, s + liste.length)));
+    $('#secmeli-bolum').hidden = false;
+  }
   $('#tum-icerik').href = `icerikler.html?sinif=${no}`;
 }
 
@@ -50,7 +56,7 @@ function icerikSayfasi({ dersler, icerikler }) {
   alan.sinif.append(...Object.keys(dersler.siniflar).map((n) => el('option', { value: n }, `${n}. sınıf`)));
   const dersSecenekleri = () => {
     const n = alan.sinif.value;
-    const kisa = n ? dersler.siniflar[n] : Object.keys(dersler.dersler).sort((a, b) => dersler.dersler[a].localeCompare(dersler.dersler[b], 'tr'));
+    const kisa = n ? [...dersler.siniflar[n], ...(dersler.secmeli?.[n] || [])] : Object.keys(dersler.dersler).sort((a, b) => dersler.dersler[a].localeCompare(dersler.dersler[b], 'tr'));
     const onceki = alan.ders.value;
     alan.ders.replaceChildren(el('option', { value: '' }, 'Bütün dersler'), ...kisa.map((d) => el('option', { value: d }, dersler.dersler[d])));
     if (kisa.includes(onceki)) alan.ders.value = onceki;
