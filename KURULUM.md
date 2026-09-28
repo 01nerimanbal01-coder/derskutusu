@@ -7,10 +7,12 @@ Hesap açma, giriş ve anahtar/şifre girme işlerini siz yaparsınız. Anahtarl
 ## Kurulu olanlar
 | Parça | Durum |
 |---|---|
-| Barındırma | GitHub deposu `derskutusu`, Settings → Pages → Source: GitHub Actions, özel alan adı `derskutusu.com` |
-| Alan adları | derskutusu.com (asıl), .net, .info, .online, .com.tr; hepsi 28.09.2027'ye kadar kayıtlı, otomatik yenileme kapalı |
-| DNS (derskutusu.com) | A @ → 185.199.108.153, .109, .110, .111; CNAME www → GitHub Pages; MX → mx/mx2/mx3.zoho.eu; TXT SPF, DKIM (zmail._domainkey), Zoho doğrulama |
-| E-posta | info@derskutusu.com, Zoho Mail ücretsiz plan (mail.zoho.eu) |
+| Barındırma | GitHub deposu `derskutusu`, Settings → Pages → Source: GitHub Actions, özel alan adı `derskutusu.com`, HTTPS zorunlu (Let's Encrypt sertifikasını GitHub kendisi yeniler) |
+| Alan adları | derskutusu.com (asıl), .net, .info, .online, .com.tr; hepsi 28.09.2027'ye kadar kayıtlı (.com.tr 27.09.2027), otomatik yenileme kapalı |
+| Yönlendirmeler | Turkticaret → Domain Yönlendirme: .net, .info, .online, .com.tr (ana ad + www) → https://derskutusu.com, 301 kalıcı, sayfa yolu korunur, SSL etkin |
+| DNS (derskutusu.com) | A @ → 185.199.108.153, .109, .110, .111; CNAME www → GitHub Pages; MX → mx/mx2/mx3.zoho.eu; TXT SPF, DKIM (zmail._domainkey), DMARC (_dmarc, p=none), Zoho ve Google doğrulama |
+| E-posta | info@derskutusu.com, Zoho Mail ücretsiz plan (mail.zoho.eu). Sitelerin gönderdiği bildirim ve kod e-postaları Zoho'da **Notification** klasörüne düşer. |
+| Google arama | Search Console'da alan mülkü `derskutusu.com` (Google hesabıyla), site haritası `https://derskutusu.com/sitemap.xml` |
 | YouTube | https://www.youtube.com/@derskutusuinfo |
 | Instagram | https://www.instagram.com/derskutusuinfo/ (profesyonel hesap) |
 | Facebook | https://www.facebook.com/derskutusuinfo (sayfa) |
