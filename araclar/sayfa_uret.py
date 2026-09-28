@@ -160,6 +160,17 @@ GOVDE = {
       </div>
     </div>
   </section>''', ()),
+    'goruntule.html': ('Belge', 'Resmî belgeyi Ders Kutusu içinde görüntüleyin.', '''  <section class="g-bas">
+    <div class="kap g-bas-ic">
+      <div>
+        <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/belgeler.html">Resmî belgeler</a></nav>
+        <h1 id="g-baslik">Belge yükleniyor…</h1>
+        <p id="g-bilgi"></p>
+      </div>
+      <div class="g-dugmeler" id="g-dugmeler"></div>
+    </div>
+  </section>
+  <div class="g-alan" id="g-alan"></div>''', ('goruntule.js',)),
 }
 
 for ad, (baslik, aciklama, govde, betikler) in GOVDE.items():

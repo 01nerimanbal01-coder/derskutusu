@@ -11,7 +11,10 @@ function belgeKarti(b, dersler) {
     el('h3', {}, b.baslik),
     b.aciklama && el('p', {}, b.aciklama),
     dersAd && !b.baslik.startsWith(dersAd) && el('p', { sinif: 'kucuk' }, dersAd),
-    el('a', { sinif: 'ac', href: b.baglanti, target: '_blank', rel: 'noopener' }, 'Resmî kaynakta aç', simge('ok')));
+    el('div', { sinif: 'eylemler' },
+      b.goruntule && el('a', { sinif: 'ac', href: `/${b.goruntule}` }, 'Aç', simge('ok')),
+      b.dosya && el('a', { sinif: 'ac', href: `/${b.dosya}`, download: '' }, 'İndir', simge('indir')),
+      !b.goruntule && !b.dosya && el('a', { sinif: 'ac', href: b.baglanti, target: '_blank', rel: 'noopener' }, 'Aç', simge('ok'))));
 }
 
 Promise.all([veri('belgeler.json'), ortakVeri]).then(([belgeler, { dersler }]) => {

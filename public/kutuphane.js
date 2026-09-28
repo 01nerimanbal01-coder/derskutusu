@@ -14,8 +14,10 @@ function icerikKarti(i, dersler) {
       i.tur && el('span', { sinif: `etiket ${i.kitle === 'ogretmen' ? 'ogretmen' : 'tur'}` }, i.tur)),
     el('h3', {}, i.baslik),
     i.aciklama && el('p', {}, i.aciklama),
-    adres && el('a', { sinif: 'ac', href: adres, target: i.dosya ? null : '_blank', rel: 'noopener', download: i.dosya ? '' : null },
-      i.dosya ? 'İndir' : 'Aç', simge('ok')));
+    el('div', { sinif: 'eylemler' },
+      i.goruntule && el('a', { sinif: 'ac', href: `/${i.goruntule}` }, 'Aç', simge('ok')),
+      adres && el('a', { sinif: 'ac', href: i.dosya ? `/${i.dosya}` : adres, target: i.dosya ? null : '_blank', rel: 'noopener', download: i.dosya ? '' : null },
+        i.dosya ? 'İndir' : 'Aç', simge(i.dosya ? 'indir' : 'ok'))));
 }
 
 function sinifSayfasi({ dersler, icerikler }) {

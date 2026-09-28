@@ -192,14 +192,14 @@ const Arama = (() => {
     for (const i of icerikler) {
       ekle({ tip: 'icerik', baslik: i.baslik, aciklama: i.aciklama, adres: i.dosya ? `/${i.dosya}` : i.baglanti, dosya: !!i.dosya,
         dis: !i.dosya && /^https?:/.test(i.baglanti || ''), sinif: i.sinif ? Number(i.sinif) : null, ders: i.ders, dersAd: dAd[i.ders],
-        tur: i.tur, kitle: i.kitle, kaynak: i.kaynak, tarih: i.tarih });
+        goruntule: i.goruntule ? `/${i.goruntule}` : null, tur: i.tur, kitle: i.kitle, kaynak: i.kaynak, tarih: i.tarih });
     }
     // Resmî belgeler
     for (const g of belgeler?.gruplar || []) {
       for (const b of g.belgeler) {
         const kademe = b.kademe ? kademedenSinif(b.kademe) : g.kimlik === 'kilavuz' ? kademedenSinif(b.baslik) : null;
         ekle({ tip: 'belge', baslik: b.baslik, aciklama: b.aciklama, adres: b.dosya ? `/${b.dosya}` : b.baglanti, dosya: !!b.dosya,
-          dis: !b.dosya, goruntule: b.goruntule, grup: g.kimlik, grupAd: g.ad, ders: b.ders || null, dersAd: dAd[b.ders],
+          dis: !b.dosya, goruntule: b.goruntule ? `/${b.goruntule}` : null, grup: g.kimlik, grupAd: g.ad, ders: b.ders || null, dersAd: dAd[b.ders],
           sinif: b.sinif || null, siniflar: b.sinif ? [b.sinif] : g.kimlik === 'yks' ? [11, 12] : kademe,
           tur: g.kimlik === 'program' ? 'Öğretim programı' : 'Resmî belge', kitle: b.kitle, kaynak: b.kaynak, kademe: b.kademe });
       }

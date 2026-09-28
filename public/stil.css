@@ -393,4 +393,18 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
   .arama-buyuk { flex-wrap: wrap; }
   .arama-buyuk .dugme { display: none; }
 }
+/* Belge görüntüleyici */
+.g-bas { padding: 22px 0 14px; border-bottom: 1px solid var(--cizgi); background: var(--zemin-2); }
+.g-bas-ic { display: flex; gap: 16px; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; }
+.g-bas h1 { font-size: clamp(20px, 2.6vw, 28px); line-height: 1.25; margin: 6px 0 4px; }
+.g-bas p { color: var(--soluk); font-size: 14px; max-width: 760px; }
+.g-dugmeler { display: flex; gap: 8px; flex-wrap: wrap; }
+.g-dugmeler .dugme svg { width: 18px; height: 18px; }
+.g-alan { height: calc(100vh - 68px - 24px); min-height: 480px; background: var(--zemin-2); }
+.g-alan:fullscreen { height: 100vh; }
+.g-alan iframe { display: block; width: 100%; height: 100%; border: 0; background: #fff; }
+.g-uyari { max-width: 620px; margin: 0 auto; padding: 64px 20px; text-align: center; }
+.g-uyari h2 { font-size: 22px; margin-bottom: 10px; }
+.g-uyari p { color: var(--soluk); margin-bottom: 20px; }
+.kart .eylemler { display: flex; gap: 14px; flex-wrap: wrap; margin-top: auto; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
