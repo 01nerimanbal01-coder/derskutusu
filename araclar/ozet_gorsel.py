@@ -193,9 +193,176 @@ def mat6(o):
             b['gorsel'] = g[b['baslik']]
 
 
+# ---------- 7. sınıf Matematik 1. hafta: tam sayılar ve rasyonel sayılar ----------
+EKSI = '−'
+
+
+def isaretli(n):
+    return f'{EKSI}{-n}' if n < 0 else str(n)
+
+
+def kesir_svg(x, y, pay, payda, sinif='g-y', boy=14, isaret=''):
+    """Pay üstte, payda altta; çizgi yazı rengiyle. (x, y) kesir çizgisinin ortası."""
+    g = max(len(pay), len(payda)) * boy * 0.62 + 6
+    ic = ''
+    if isaret:
+        ic += f'<text x="{x - g / 2 - 3:.1f}" y="{y + boy * 0.35:.1f}" text-anchor="end" font-size="{boy}" font-weight="700" class="{sinif}">{isaret}</text>'
+    ic += (f'<text x="{x}" y="{y - 3:.1f}" text-anchor="middle" font-size="{boy}" font-weight="700" class="{sinif}">{pay}</text>'
+           f'<line x1="{x - g / 2:.1f}" y1="{y}" x2="{x + g / 2:.1f}" y2="{y}" class="{sinif.replace("f", "s") if sinif.endswith("f") else "g-c"}" stroke-width="1.6"/>'
+           f'<text x="{x}" y="{y + boy + 1:.1f}" text-anchor="middle" font-size="{boy}" font-weight="700" class="{sinif}">{payda}</text>')
+    return ic
+
+
+def dikey_tam_sayi():
+    """Deniz seviyesi 0; yukarısı pozitif (mavi), aşağısı negatif (turuncu)."""
+    x, y0, adim = 70, 150, 30
+    ic = '<defs>' + ok_isareti('okD', 'g-mf') + '</defs>'
+    ic += f'<line x1="{x}" y1="{y0 + 3 * adim + 22}" x2="{x}" y2="{y0 - 3 * adim - 26}" class="g-ms" stroke-width="2.5" marker-end="url(#okD)"/>'
+    for n in range(-3, 4):
+        y = y0 - n * adim
+        s = 'g-mf' if n > 0 else ('g-tf' if n < 0 else 'g-yf')
+        ic += f'<line x1="{x - 7}" y1="{y}" x2="{x + 7}" y2="{y}" class="g-c" stroke-width="2"/>'
+        ic += f'<text x="{x - 16}" y="{y + 5}" text-anchor="end" font-size="15" font-weight="800" class="{s}">{("+" + str(n)) if n > 0 else isaretli(n)}</text>'
+    ic += f'<rect x="{x + 22}" y="{y0 - 3 * adim - 8}" width="8" height="{3 * adim}" rx="4" class="g-mf"/>'
+    ic += f'<text x="{x + 40}" y="{y0 - 1.5 * adim}" font-size="14" font-weight="700" class="g-mf">pozitif tam sayılar</text>'
+    ic += f'<text x="{x + 40}" y="{y0 - 1.5 * adim + 18}" font-size="12.5" class="g-s">deniz seviyesinin üstü</text>'
+    ic += f'<circle cx="{x}" cy="{y0}" r="6" class="g-yf"/>'
+    ic += f'<text x="{x + 40}" y="{y0 + 5}" font-size="14" font-weight="700" class="g-yf">0: deniz seviyesi</text>'
+    ic += f'<rect x="{x + 22}" y="{y0 + 8}" width="8" height="{3 * adim}" rx="4" class="g-tf"/>'
+    ic += f'<text x="{x + 40}" y="{y0 + 1.5 * adim + 8}" font-size="14" font-weight="700" class="g-tf">negatif tam sayılar</text>'
+    ic += f'<text x="{x + 40}" y="{y0 + 1.5 * adim + 26}" font-size="12.5" class="g-s">deniz seviyesinin altı</text>'
+    return svg(300, 300, ic, 'Dikey sayı doğrusu: 0 deniz seviyesi; +1, +2, +3 yukarıda pozitif, −1, −2, −3 aşağıda negatif tam sayılar')
+
+
+def yatay_tam_sayi():
+    x0, adim, y = 30, 28, 60
+    ic = '<defs>' + ok_isareti('okY', 'g-mf') + '</defs>'
+    ic += f'<line x1="{x0 - 20}" y1="{y}" x2="{x0 + 10 * adim + 22}" y2="{y}" class="g-ms" stroke-width="2.5" marker-end="url(#okY)" marker-start="url(#okY)"/>'
+    for i, n in enumerate(range(-5, 6)):
+        x = x0 + i * adim
+        s = 'g-mf' if n > 0 else ('g-tf' if n < 0 else 'g-yf')
+        ic += f'<line x1="{x}" y1="{y - 7}" x2="{x}" y2="{y + 7}" class="g-c" stroke-width="2"/>'
+        ic += f'<text x="{x}" y="{y + 26}" text-anchor="middle" font-size="14" font-weight="700" class="{s}">{isaretli(n)}</text>'
+    ic += f'<circle cx="{x0 + 5 * adim}" cy="{y}" r="6" class="g-yf"/>'
+    ic += f'<rect x="{x0 - 4}" y="{y - 38}" width="{4 * adim + 8}" height="8" rx="4" class="g-tf"/>'
+    ic += f'<text x="{x0 + 2 * adim}" y="{y - 46}" text-anchor="middle" font-size="13" font-weight="700" class="g-tf">negatif</text>'
+    ic += f'<rect x="{x0 + 6 * adim - 4}" y="{y - 38}" width="{4 * adim + 8}" height="8" rx="4" class="g-mf"/>'
+    ic += f'<text x="{x0 + 8 * adim}" y="{y - 46}" text-anchor="middle" font-size="13" font-weight="700" class="g-mf">pozitif</text>'
+    ic += f'<text x="{x0 + 5 * adim}" y="{y + 56}" text-anchor="middle" font-size="13" class="g-s">Ardışık iki tam sayı arasında başka tam sayı yoktur.</text>'
+    return svg(344, 128, ic, 'Yatay sayı doğrusu −5’ten 5’e: 0’ın solunda negatif, sağında pozitif tam sayılar')
+
+
+def denk_kesir_2_3():
+    """0–1 aralığı 3, 6 ve 9 eş parçaya bölünmüş; 2/3, 4/6, 6/9 aynı noktada."""
+    x0, x1 = 60, 300
+    satir = [(3, 2, 'g-mf', 'g-ms'), (6, 4, 'g-yf', 'g-ys'), (9, 6, 'g-of', 'g-os')]
+    ic, hx = '', x0 + (x1 - x0) * 2 / 3
+    for k, (payda, pay, f, s) in enumerate(satir):
+        y = 52 + k * 62
+        ic += f'<line x1="{x0}" y1="{y}" x2="{x1}" y2="{y}" class="{s}" stroke-width="2.5"/>'
+        for i in range(payda + 1):
+            x = x0 + (x1 - x0) * i / payda
+            ic += f'<line x1="{x:.1f}" y1="{y - 6}" x2="{x:.1f}" y2="{y + 6}" class="g-c" stroke-width="{2 if i in (0, payda) else 1.4}"/>'
+        ic += f'<line x1="{x0}" y1="{y}" x2="{hx:.1f}" y2="{y}" class="{s}" stroke-width="6" stroke-linecap="round" opacity=".55"/>'
+        ic += f'<circle cx="{hx:.1f}" cy="{y}" r="6" class="{f}"/>'
+        ic += kesir_svg(hx + 24, y - 26, str(pay), str(payda), f, 14)   # kesir tamamen çizginin üstünde
+        ic += f'<text x="{x0 - 14}" y="{y + 5}" text-anchor="end" font-size="13" class="g-s">0</text>'
+        ic += f'<text x="{x1 + 14}" y="{y + 5}" font-size="13" class="g-s">1</text>'
+    ic += f'<line x1="{hx:.1f}" y1="14" x2="{hx:.1f}" y2="{52 + 2 * 62 + 18}" class="g-c" stroke-width="1.5" stroke-dasharray="4 4"/>'
+    ic += f'<text x="180" y="{52 + 2 * 62 + 44}" text-anchor="middle" font-size="13" class="g-s">Denk kesirler sayı doğrusunda aynı noktaya karşılık gelir.</text>'
+    return svg(360, 52 + 2 * 62 + 56, ic, '0 ile 1 arası 3, 6 ve 9 eş parçaya bölünmüş üç sayı doğrusu; 2 bölü 3, 4 bölü 6 ve 6 bölü 9 aynı noktada')
+
+
+def sayi_kumeleri():
+    """Doğal ⊂ tam ⊂ rasyonel (iç içe alanlar; sembol kullanılmaz)."""
+    ic = ('<rect x="10" y="10" width="340" height="190" rx="22" class="g-oa"/><rect x="10" y="10" width="340" height="190" rx="22" class="g-os" stroke-width="2"/>'
+          '<text x="26" y="36" font-size="14" font-weight="800" class="g-of">Rasyonel sayılar</text>'
+          '<rect x="30" y="50" width="220" height="136" rx="18" class="g-ya"/><rect x="30" y="50" width="220" height="136" rx="18" class="g-ys" stroke-width="2"/>'
+          '<text x="44" y="74" font-size="14" font-weight="800" class="g-yf">Tam sayılar</text>'
+          '<rect x="50" y="88" width="120" height="84" rx="14" class="g-ma"/><rect x="50" y="88" width="120" height="84" rx="14" class="g-ms" stroke-width="2"/>'
+          '<text x="62" y="110" font-size="13.5" font-weight="800" class="g-mf">Doğal sayılar</text>'
+          '<text x="110" y="148" text-anchor="middle" font-size="15" font-weight="700" class="g-mf">0   5   12</text>'
+          f'<text x="210" y="118" text-anchor="middle" font-size="15" font-weight="700" class="g-yf">{EKSI}1</text>'
+          f'<text x="210" y="156" text-anchor="middle" font-size="15" font-weight="700" class="g-yf">{EKSI}7</text>')
+    ic += kesir_svg(298, 92, '3', '4', 'g-of', 15)
+    ic += kesir_svg(298, 152, '2', '5', 'g-of', 15, isaret=EKSI)
+    return svg(360, 210, ic, 'İç içe üç alan: doğal sayılar tam sayıların içinde, tam sayılar rasyonel sayıların içinde; örnekler 0, 5, 12; −1, −7; 3 bölü 4, eksi 2 bölü 5')
+
+
+def rasyonel_dogru():
+    """−2 ile 2 arası çeyreklere bölünmüş; −3/2, −1/4 ve 5/4 işaretli."""
+    x0, y = 26, 96
+    birim = 76
+    ic = '<defs>' + ok_isareti('okR', 'g-mf') + '</defs>'
+    ic += f'<line x1="{x0 - 14}" y1="{y}" x2="{x0 + 4 * birim + 18}" y2="{y}" class="g-ms" stroke-width="2.5" marker-end="url(#okR)" marker-start="url(#okR)"/>'
+    for i in range(17):
+        x = x0 + i * birim / 4
+        tam = i % 4 == 0
+        ic += f'<line x1="{x:.1f}" y1="{y - (8 if tam else 5)}" x2="{x:.1f}" y2="{y + (8 if tam else 5)}" class="g-c" stroke-width="{2 if tam else 1.3}"/>'
+        if tam:
+            n = i // 4 - 2
+            ic += f'<text x="{x:.1f}" y="{y + 28}" text-anchor="middle" font-size="14" font-weight="700" class="{"g-yf" if n == 0 else "g-s"}">{isaretli(n)}</text>'
+    for deger, pay, payda, f in ((-1.5, '3', '2', 'g-tf'), (-0.25, '1', '4', 'g-tf'), (1.25, '5', '4', 'g-mf')):
+        x = x0 + (deger + 2) * birim
+        ic += f'<circle cx="{x:.1f}" cy="{y}" r="6.5" class="{f}"/>'
+        ic += kesir_svg(x + (6 if deger < 0 else 0), y - 44, pay, payda, f, 14, isaret=EKSI if deger < 0 else '')
+    return svg(360, 140, ic, 'Sayı doğrusu −2’den 2’ye çeyreklere bölünmüş; eksi 3 bölü 2, eksi 1 bölü 4 ve 5 bölü 4 noktaları')
+
+
+def mutlak_deger_4():
+    x0, adim, y = 30, 28, 84
+    ic = '<defs>' + ok_isareti('okM', 'g-mf') + ok_isareti('okMt', 'g-tf') + ok_isareti('okMm', 'g-mf') + '</defs>'
+    ic += f'<line x1="{x0 - 20}" y1="{y}" x2="{x0 + 10 * adim + 22}" y2="{y}" class="g-ms" stroke-width="2.5" marker-end="url(#okM)" marker-start="url(#okM)"/>'
+    for i, n in enumerate(range(-5, 6)):
+        x = x0 + i * adim
+        ic += f'<line x1="{x}" y1="{y - 7}" x2="{x}" y2="{y + 7}" class="g-c" stroke-width="2"/>'
+        vurgu = n in (-4, 0, 4)
+        s = 'g-tf' if n == -4 else ('g-mf' if n == 4 else ('g-yf' if n == 0 else 'g-s'))
+        ic += f'<text x="{x}" y="{y + 26}" text-anchor="middle" font-size="{14 if vurgu else 12.5}" font-weight="{800 if vurgu else 400}" class="{s}">{isaretli(n)}</text>'
+    xs = x0 + 5 * adim
+    ic += f'<path d="M{xs - 4} {y - 10} Q{xs - 2 * adim} {y - 58} {xs - 4 * adim + 6} {y - 12}" class="g-ts" stroke-width="2.4" marker-end="url(#okMt)"/>'
+    ic += f'<path d="M{xs + 4} {y - 10} Q{xs + 2 * adim} {y - 58} {xs + 4 * adim - 6} {y - 12}" class="g-ms" stroke-width="2.4" marker-end="url(#okMm)"/>'
+    ic += f'<text x="{xs - 2 * adim}" y="{y - 50}" text-anchor="middle" font-size="13" font-weight="700" class="g-tf">4 birim</text>'
+    ic += f'<text x="{xs + 2 * adim}" y="{y - 50}" text-anchor="middle" font-size="13" font-weight="700" class="g-mf">4 birim</text>'
+    ic += f'<circle cx="{xs}" cy="{y}" r="6" class="g-yf"/><circle cx="{xs - 4 * adim}" cy="{y}" r="6" class="g-tf"/><circle cx="{xs + 4 * adim}" cy="{y}" r="6" class="g-mf"/>'
+    ic += (f'<text x="{xs - 2 * adim}" y="{y + 58}" text-anchor="middle" font-size="16" font-weight="800" class="g-tf">|{EKSI}4| = 4</text>'
+           f'<text x="{xs + 2 * adim}" y="{y + 58}" text-anchor="middle" font-size="16" font-weight="800" class="g-mf">|4| = 4</text>')
+    return svg(344, 158, ic, '−4 ve 4 sayı doğrusunda 0’a 4’er birim uzaklıkta; mutlak değer −4 = 4, mutlak değer 4 = 4')
+
+
+def ornek_a_noktasi():
+    """−1 ile 1 arası beşte birlere bölünmüş; A noktası 0'ın solunda 3. çizgide."""
+    x0, birim, y = 50, 130, 60
+    ic = '<defs>' + ok_isareti('okA', 'g-mf') + '</defs>'
+    ic += f'<line x1="{x0 - 26}" y1="{y}" x2="{x0 + 2 * birim + 28}" y2="{y}" class="g-ms" stroke-width="2.5" marker-end="url(#okA)" marker-start="url(#okA)"/>'
+    for i in range(11):
+        x = x0 + i * birim / 5
+        tam = i % 5 == 0
+        ic += f'<line x1="{x:.1f}" y1="{y - (8 if tam else 5)}" x2="{x:.1f}" y2="{y + (8 if tam else 5)}" class="g-c" stroke-width="{2 if tam else 1.3}"/>'
+        if tam:
+            ic += f'<text x="{x:.1f}" y="{y + 28}" text-anchor="middle" font-size="14" font-weight="700" class="g-s">{isaretli(i // 5 - 1)}</text>'
+    xa = x0 + 2 * birim / 5
+    ic += f'<circle cx="{xa:.1f}" cy="{y}" r="6.5" class="g-tf"/><text x="{xa:.1f}" y="{y - 18}" text-anchor="middle" font-size="16" font-weight="800" class="g-tf">A</text>'
+    return svg(360, 104, ic, 'Sayı doğrusu −1’den 1’e; her birim 5 eş parçaya bölünmüş; A noktası 0’ın solunda')
+
+
+def mat7(o):
+    g = {'Tam sayılar: yönü olan sayılar': dikey_tam_sayi(), 'Tam sayılar sayı doğrusunda': yatay_tam_sayi(),
+         'Tam sayılar yetmediğinde: rasyonel sayılar': denk_kesir_2_3(), 'Sayı kümeleri iç içe': sayi_kumeleri(),
+         'Rasyonel sayılar sayı doğrusunda': rasyonel_dogru(), 'Mutlak değer: sıfıra uzaklık': mutlak_deger_4()}
+    for b in o['bolumler']:
+        if b['baslik'] in g:
+            b['gorsel'] = g[b['baslik']]
+    for x in o['ornekler']:
+        if x.get('gorsel'):
+            x['gorsel'] = ornek_a_noktasi()
+
+
 if __name__ == '__main__':
     yaz('5-matematik-1.json', mat5)
     yaz('8-matematik-1.json', mat8)
     if (OZET / '6-matematik-1.json').exists():
         yaz('6-matematik-1.json', mat6)
+    if (OZET / '7-matematik-1.json').exists():
+        yaz('7-matematik-1.json', mat7)
     print('görseller yazıldı')

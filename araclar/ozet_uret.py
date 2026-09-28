@@ -19,7 +19,7 @@ _spec = importlib.util.spec_from_file_location('sayfa_uret', ARACLAR / 'sayfa_ur
 _sayfa = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(_sayfa)          # iç sayfaları da yeniler (idempotent)
 
-KAR = re.compile(r'\{(aci|olcu|dogru|isin|parca|uzunluk|us):([^}]+)\}')
+KAR = re.compile(r'\{(aci|olcu|dogru|isin|parca|uzunluk|us|kesir):([^}]+)\}')
 SEMBOL = {  # MEB 5. sınıf matematik programındaki gösterimler (⊥, //, AB doğrusu, [AB], |AB|, [AB, m(ABC), şapkalı ABC)
     'aci': '<span class="s-aci" role="img" aria-label="{0} açısı">{0}</span>',
     'olcu': 'm(<span class="s-aci" role="img" aria-label="{0} açısı">{0}</span>)',
@@ -33,10 +33,17 @@ def _us(ic):
     return f'{taban}<sup>{us}</sup>'
 
 
+def _kesir(ic):
+    pay, _, payda = ic.partition('|')   # {kesir:3|4} → pay üstte, payda altta (MEB gösterimi)
+    return (f'<span class="s-kesir" role="math" aria-label="{pay} bölü {payda}">'
+            f'<span>{pay}</span><span>{payda}</span></span>')
+
+
 def e(metin):
     # Önce kaçış, sonra {aci:ABC} gibi sembol işaretleri MEB gösterimine çevrilir.
     metin = html.escape(str(metin)).replace(' · ', '\u00a0·\u00a0')   # çarpımlar satır sonunda bölünmez
-    return KAR.sub(lambda m: _us(m.group(2)) if m.group(1) == 'us' else SEMBOL[m.group(1)].format(m.group(2)), metin)
+    ozel = {'us': _us, 'kesir': _kesir}
+    return KAR.sub(lambda m: ozel[m.group(1)](m.group(2)) if m.group(1) in ozel else SEMBOL[m.group(1)].format(m.group(2)), metin)
 KUTU = {'dikkat': 'Dikkat', 'bilgi': 'Bilgi', 'kural': 'Kural', 'tanim': 'Tanım'}
 
 
