@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>İçerikler · Ders Kutusu</title>
-<meta name="description" content="Sınıfa, derse ve türe göre konu anlatımları, soru çözümleri, videolar, yıllık planlar ve yazılı soruları.">
-<link rel="canonical" href="https://derskutusu.com/icerikler.html">
+<title>Katkıda bulun · Ders Kutusu</title>
+<meta name="description" content="Ders Kutusu’na katkıda bulunun: hata bildirin, içerik önerin, paylaşın.">
+<link rel="canonical" href="https://derskutusu.com/katki.html">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#2451d6">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:site_name" content="Ders Kutusu">
-<meta property="og:title" content="İçerikler · Ders Kutusu">
-<meta property="og:description" content="Sınıfa, derse ve türe göre konu anlatımları, soru çözümleri, videolar, yıllık planlar ve yazılı soruları.">
+<meta property="og:title" content="Katkıda bulun · Ders Kutusu">
+<meta property="og:description" content="Ders Kutusu’na katkıda bulunun: hata bildirin, içerik önerin, paylaşın.">
 <meta property="og:image" content="https://derskutusu.com/paylasim.png">
 <link rel="stylesheet" href="/stil.css?v=15">
 </head>
@@ -68,32 +68,55 @@
 <main id="icerik">
   <section class="sayfa-bas">
     <div class="kap">
-      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><span>İçerikler</span></nav>
-      <h1>İçerikler</h1>
-      <p>Sınıfa, derse ve türe göre arayın: konu anlatımları, soru çözümleri, videolar; öğretmenler için yıllık planlar, yazılı soruları ve çalışma kâğıtları.</p>
+      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><span>Katkıda bulun</span></nav>
+      <h1>Katkıda bulun</h1>
+      <p>Ders Kutusu ücretsizdir. Siteyi daha doğru, daha güncel ve daha kullanışlı yapmak için birkaç dakikanızı ayırmanız bile büyük destek olur.</p>
     </div>
   </section>
   <section class="bolum">
-    <div class="kap">
-      <form class="suzgec-cubugu" role="search" onsubmit="return false">
-        <label>Sınıf<select id="s-sinif"><option value="">Bütün sınıflar</option></select></label>
-        <label>Ders<select id="s-ders"></select></label>
-        <label>Kimin için<select id="s-kitle"><option value="">Herkes</option><option value="ogrenci">Öğrenci</option><option value="ogretmen">Öğretmen</option></select></label>
-        <label>Tür<select id="s-tur"></select></label>
-        <label class="arama">Ara<input id="s-ara" type="search" placeholder="Konu, başlık…" autocomplete="off"></label>
-      </form>
-      <p class="sonuc-bilgi"><span id="sonuc-sayi"></span><button type="button" id="temizle" hidden>Seçimleri temizle</button></p>
-      <div class="kartlar" id="kartlar"></div>
-      <div class="yakinda" id="icerik-yakinda" hidden>
-        <div class="yakinda-simge" aria-hidden="true"><svg><use href="#s-kitap"/></svg></div>
-        <div>
-          <h3>Bu seçimde henüz içerik yok</h3>
-          <p>İçerikler eklendikçe burada listelenecek. Yeni içeriklerden haberdar olmak için bizi takip edin.</p>
+    <div class="kap katki-izgara">
+      <article class="kart katki-kart">
+        <h2>Hata bildirin</h2>
+        <p>Bir plan dosyasında, özette ya da cevapta yanlış mı gördünüz? Sayfanın adresini ve hatayı yazmanız yeterli; en kısa sürede düzeltiriz.</p>
+        <a class="dugme ana" data-katki="hata" href="mailto:info@derskutusu.com?subject=Hata%20bildirimi">Hata bildir</a>
+      </article>
+      <article class="kart katki-kart">
+        <h2>İçerik önerin</h2>
+        <p>Hangi sınıf ve ders için hangi konu özetini, çalışma kâğıdını ya da planı görmek istersiniz? Önerileriniz sıramızı belirler.</p>
+        <a class="dugme" data-katki="oneri" href="mailto:info@derskutusu.com?subject=%C4%B0%C3%A7erik%20%C3%B6nerisi">Öneri gönder</a>
+      </article>
+      <article class="kart katki-kart">
+        <h2>Paylaşın</h2>
+        <p>Siteyi zümrenizle, öğrencilerinizle ve velilerle paylaşın. Ne kadar çok kişi kullanırsa o kadar çok içerik hazırlayabiliriz.</p>
+        <button class="dugme" type="button" id="katki-paylas">Bağlantıyı paylaş</button>
+        <p class="katki-not" id="katki-durum" aria-live="polite"></p>
+      </article>
+      <article class="kart katki-kart">
+        <h2>Takip edin</h2>
+        <p>Yeni içerikleri ilk siz görün. Takip etmek ve videolara yorum bırakmak da bize destek olur.</p>
+        <div class="katki-sosyal">
+          <a class="dugme" data-sosyal="youtube" target="_blank" rel="noopener" hidden><svg><use href="#s-youtube"/></svg>YouTube</a>
+          <a class="dugme" data-sosyal="instagram" target="_blank" rel="noopener" hidden><svg><use href="#s-instagram"/></svg>Instagram</a>
+          <a class="dugme" data-sosyal="facebook" target="_blank" rel="noopener" hidden><svg><use href="#s-facebook"/></svg>Facebook</a>
         </div>
-        <a class="dugme ana" data-sosyal="youtube" target="_blank" rel="noopener" hidden><svg><use href="#s-youtube"/></svg>Abone ol</a>
-      </div>
+      </article>
+      <article class="kart katki-kart genis">
+        <h2>Öğretmenler: kendi materyalinizi gönderin</h2>
+        <p>Kendi hazırladığınız çalışma kâğıdı, yazılı sorusu ya da etkinliği sitede adınızla yayımlayabiliriz. Yalnız size ait olan, başka bir kitaptan ya da siteden alınmamış içerikleri kabul ediyoruz; gönderdiğiniz dosyada adınızı ve yayımlanmasına izin verdiğinizi belirtmeniz yeterli.</p>
+        <a class="dugme" href="mailto:info@derskutusu.com?subject=Materyal%20g%C3%B6nderimi">Materyal gönder</a>
+      </article>
     </div>
   </section>
+  <script>
+    (function () {
+      var d = document.getElementById('katki-paylas'), durum = document.getElementById('katki-durum');
+      d.addEventListener('click', function () {
+        var veri = { title: 'Ders Kutusu', text: '5–12. sınıf planlar, konu özetleri, resmî belgeler ve akıllı tahta', url: 'https://derskutusu.com/' };
+        if (navigator.share) { navigator.share(veri).catch(function () {}); return; }
+        (navigator.clipboard ? navigator.clipboard.writeText(veri.url) : Promise.reject()).then(function () { durum.textContent = 'Bağlantı kopyalandı.'; }, function () { durum.textContent = veri.url; });
+      });
+    })();
+  </script>
 </main>
 
 <footer class="alt">
@@ -130,7 +153,6 @@
 </footer>
 
 <script src="/ortak.js?v=15"></script>
-<script src="/kutuphane.js?v=15"></script>
 <script src="/arama.js?v=15"></script>
 <script src="/tahta.js?v=15"></script>
 </body>

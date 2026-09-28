@@ -203,6 +203,57 @@ GOVDE = {
     </div>
     <div class="tahta-alan" id="tahta-alan"><div id="tahta"></div></div>
   </section>''', ()),
+    'katki.html': ('Katkıda bulun', 'Ders Kutusu’na katkıda bulunun: hata bildirin, içerik önerin, paylaşın.', '''  <section class="sayfa-bas">
+    <div class="kap">
+      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><span>Katkıda bulun</span></nav>
+      <h1>Katkıda bulun</h1>
+      <p>Ders Kutusu ücretsizdir. Siteyi daha doğru, daha güncel ve daha kullanışlı yapmak için birkaç dakikanızı ayırmanız bile büyük destek olur.</p>
+    </div>
+  </section>
+  <section class="bolum">
+    <div class="kap katki-izgara">
+      <article class="kart katki-kart">
+        <h2>Hata bildirin</h2>
+        <p>Bir plan dosyasında, özette ya da cevapta yanlış mı gördünüz? Sayfanın adresini ve hatayı yazmanız yeterli; en kısa sürede düzeltiriz.</p>
+        <a class="dugme ana" data-katki="hata" href="mailto:info@derskutusu.com?subject=Hata%20bildirimi">Hata bildir</a>
+      </article>
+      <article class="kart katki-kart">
+        <h2>İçerik önerin</h2>
+        <p>Hangi sınıf ve ders için hangi konu özetini, çalışma kâğıdını ya da planı görmek istersiniz? Önerileriniz sıramızı belirler.</p>
+        <a class="dugme" data-katki="oneri" href="mailto:info@derskutusu.com?subject=%C4%B0%C3%A7erik%20%C3%B6nerisi">Öneri gönder</a>
+      </article>
+      <article class="kart katki-kart">
+        <h2>Paylaşın</h2>
+        <p>Siteyi zümrenizle, öğrencilerinizle ve velilerle paylaşın. Ne kadar çok kişi kullanırsa o kadar çok içerik hazırlayabiliriz.</p>
+        <button class="dugme" type="button" id="katki-paylas">Bağlantıyı paylaş</button>
+        <p class="katki-not" id="katki-durum" aria-live="polite"></p>
+      </article>
+      <article class="kart katki-kart">
+        <h2>Takip edin</h2>
+        <p>Yeni içerikleri ilk siz görün. Takip etmek ve videolara yorum bırakmak da bize destek olur.</p>
+        <div class="katki-sosyal">
+          <a class="dugme" data-sosyal="youtube" target="_blank" rel="noopener" hidden><svg><use href="#s-youtube"/></svg>YouTube</a>
+          <a class="dugme" data-sosyal="instagram" target="_blank" rel="noopener" hidden><svg><use href="#s-instagram"/></svg>Instagram</a>
+          <a class="dugme" data-sosyal="facebook" target="_blank" rel="noopener" hidden><svg><use href="#s-facebook"/></svg>Facebook</a>
+        </div>
+      </article>
+      <article class="kart katki-kart genis">
+        <h2>Öğretmenler: kendi materyalinizi gönderin</h2>
+        <p>Kendi hazırladığınız çalışma kâğıdı, yazılı sorusu ya da etkinliği sitede adınızla yayımlayabiliriz. Yalnız size ait olan, başka bir kitaptan ya da siteden alınmamış içerikleri kabul ediyoruz; gönderdiğiniz dosyada adınızı ve yayımlanmasına izin verdiğinizi belirtmeniz yeterli.</p>
+        <a class="dugme" href="mailto:info@derskutusu.com?subject=Materyal%20g%C3%B6nderimi">Materyal gönder</a>
+      </article>
+    </div>
+  </section>
+  <script>
+    (function () {
+      var d = document.getElementById('katki-paylas'), durum = document.getElementById('katki-durum');
+      d.addEventListener('click', function () {
+        var veri = { title: 'Ders Kutusu', text: '5–12. sınıf planlar, konu özetleri, resmî belgeler ve akıllı tahta', url: 'https://derskutusu.com/' };
+        if (navigator.share) { navigator.share(veri).catch(function () {}); return; }
+        (navigator.clipboard ? navigator.clipboard.writeText(veri.url) : Promise.reject()).then(function () { durum.textContent = 'Bağlantı kopyalandı.'; }, function () { durum.textContent = veri.url; });
+      });
+    })();
+  </script>''', ()),
 }
 
 for ad, (baslik, aciklama, govde, betikler) in GOVDE.items():

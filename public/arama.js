@@ -177,6 +177,8 @@ const Arama = (() => {
     ekle({ tip: 'sayfa', baslik: 'Öğretmen köşesi', aciklama: 'Yıllık planlar, günlük planlar, yazılı soruları ve çalışma kâğıtları.', adres: '/icerikler.html?kitle=ogretmen', kitle: 'ogretmen', ek: 'ogretmen' });
     ekle({ tip: 'sayfa', baslik: 'İletişim', aciklama: 'Bize e-posta ve sosyal medyadan ulaşın.', adres: '/#iletisim', ek: 'iletisim eposta mail adres' });
     ekle({ tip: 'sayfa', baslik: 'Gizlilik ve çerezler', aciklama: 'Kişisel veriler ve çerez tercihleri.', adres: '/gizlilik.html', ek: 'kvkk cerez gizlilik' });
+    ekle({ tip: 'sayfa', baslik: 'Akıllı tahta', aciklama: 'Kalem, fosforlu kalem, silgi; kareli, çizgili zemin. Sayfaların ve PDF’lerin üzerine de yazılabilir.', adres: '/tahta.html', ek: 'tahta kalem cizim yazi beyaz tahta akilli tahta' });
+    ekle({ tip: 'sayfa', baslik: 'Katkıda bulun', aciklama: 'Hata bildirin, içerik önerin, paylaşın, materyal gönderin.', adres: '/katki.html', ek: 'katki destek yardim hata oneri materyal gonder' });
     ekle({ tip: 'sayfa', baslik: 'Sosyal medya', aciklama: 'YouTube, Instagram ve Facebook hesaplarımız.', adres: '/#sosyal', ek: 'youtube instagram facebook takip' });
     for (const n of Object.keys(siniflar)) {
       const no = Number(n);

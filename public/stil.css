@@ -508,4 +508,13 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
 .ozet-son li { font-size: 16.5px; margin-bottom: 6px; }
 .ozet-ilgili li span { color: var(--soluk); font-size: 13px; }
 @media print { .ornek details { display: block; } .ornek details p { display: block; } .g-dugmeler { display: none; } }
+/* Katkıda bulun */
+.katki-izgara { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.katki-kart { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
+.katki-kart h2 { font-size: 21px; }
+.katki-kart.genis { grid-column: 1 / -1; }
+.katki-sosyal { display: flex; flex-wrap: wrap; gap: 8px; }
+.katki-sosyal svg { width: 18px; height: 18px; }
+.katki-not { font-size: 14px; color: var(--soluk); min-height: 1em; }
+@media (max-width: 760px) { .katki-izgara { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
