@@ -22,7 +22,7 @@ alt = re.sub(r'href="([a-z0-9-]+\.html)', r'href="/\1', re.sub(r'href="#', 'href
 
 def sayfa(ad, baslik, aciklama, govde, betikler=(), kanonik=True):
     kan = f'<link rel="canonical" href="https://derskutusu.com/{ad}">\n' if kanonik else '<meta name="robots" content="noindex">\n'
-    js = ''.join(f'<script src="/{b}?v={SURUM}"></script>\n' for b in ('ortak.js', *betikler))
+    js = ''.join(f'<script src="/{b}?v={SURUM}"></script>\n' for b in ('ortak.js', *betikler, 'arama.js'))
     return f'''<!doctype html>
 <html lang="tr">
 <head>
@@ -124,6 +124,42 @@ GOVDE = {
     </div>
   </section>
   <div id="belge-gruplari"></div>''', ('belgeler.js',)),
+    'ara.html': ('Arama', 'Ders Kutusu içinde akıllı arama: sınıf, ders, plan, öğretim programı ve resmî belgeler.', '''  <section class="sayfa-bas">
+    <div class="kap">
+      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><span>Arama</span></nav>
+      <h1>Arama</h1>
+      <p>Yazdığınızı anlar: sınıfı, dersi ve aradığınız türü kendisi bulur; yazım hatalarını düzeltir.</p>
+      <form class="arama-buyuk" id="arama-form" role="search">
+        <svg aria-hidden="true"><use href="#s-ara"/></svg>
+        <input id="arama-kutu" type="search" name="q" placeholder="Ör. 8. sınıf matematik yıllık plan" aria-label="Sitede ara" autocomplete="off" spellcheck="false" enterkeyhint="search">
+        <button class="dugme ana" type="submit">Ara</button>
+      </form>
+      <div class="anlasilan" id="anlasilan"></div>
+      <div class="arama-not" id="arama-not" aria-live="polite"></div>
+    </div>
+  </section>
+  <section class="bolum">
+    <div class="kap">
+      <p class="sonuc-bilgi"><span id="arama-sayi" aria-live="polite"></span></p>
+      <div class="kartlar" id="arama-sonuclari"></div>
+      <p class="orta"><button class="dugme" id="daha-fazla" type="button" hidden>Daha fazla göster</button></p>
+      <div class="yakinda" id="arama-bos" hidden>
+        <div class="yakinda-simge" aria-hidden="true"><svg><use href="#s-ara"/></svg></div>
+        <div>
+          <h3>Ne aramak istersiniz?</h3>
+          <p>Sınıf, ders ve tür yazmanız yeterli. Örnekler:</p>
+          <div class="ornekler">
+            <a href="?q=8.+sınıf+matematik+yıllık+plan" data-ornek="8. sınıf matematik yıllık plan">8. sınıf matematik yıllık plan</a>
+            <a href="?q=5+fen+günlük+plan" data-ornek="5 fen günlük plan">5 fen günlük plan</a>
+            <a href="?q=tde+öğretim+programı" data-ornek="tde öğretim programı">tde öğretim programı</a>
+            <a href="?q=ortak+yazılı+matematik" data-ornek="ortak yazılı matematik">ortak yazılı matematik</a>
+            <a href="?q=lgs" data-ornek="lgs">lgs</a>
+            <a href="?q=ara+tatil" data-ornek="ara tatil">ara tatil</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>''', ()),
 }
 
 for ad, (baslik, aciklama, govde, betikler) in GOVDE.items():

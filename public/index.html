@@ -35,10 +35,15 @@
     "https://www.youtube.com/@derskutusuinfo",
     "https://www.instagram.com/derskutusuinfo/",
     "https://www.facebook.com/derskutusuinfo"
-  ]
+  ],
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://derskutusu.com/ara.html?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
 }
 </script>
-<link rel="stylesheet" href="stil.css?v=4">
+<link rel="stylesheet" href="stil.css?v=6">
 </head>
 <body>
 <a class="atla" href="#icerik">İçeriğe geç</a>
@@ -55,12 +60,19 @@
   <symbol id="s-yenile" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M20 11a8 8 0 0 0-14.3-4.9L4 8M4 4v4h4M4 13a8 8 0 0 0 14.3 4.9L20 16m0 4v-4h-4"/></symbol>
   <symbol id="s-onay" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
   <symbol id="s-takvim" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 6.5h16V20H4zM4 10.5h16M8.5 4v4M15.5 4v4M8 14h2m3 0h3m-8 3h2"/></symbol>
+  <symbol id="s-ara" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4.2-4.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
   <symbol id="s-ok" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-5-5 5 5-5 5"/></symbol>
 </svg>
 
 <header class="ust">
   <div class="kap ust-ic">
     <a class="logo" href="/" aria-label="Ders Kutusu ana sayfa"><span class="logo-simge" aria-hidden="true">√</span><span data-ayar="site_adi">Ders Kutusu</span></a>
+    <form class="ust-arama" action="/ara.html" role="search">
+      <svg aria-hidden="true"><use href="#s-ara"/></svg>
+      <input type="search" name="q" placeholder="Ara: 8. sınıf matematik yıllık plan" aria-label="Sitede ara" autocomplete="off" spellcheck="false" enterkeyhint="search" role="combobox" aria-autocomplete="list" aria-controls="ust-oneri" aria-expanded="false">
+      <kbd aria-hidden="true">/</kbd>
+      <ul class="oneri" id="ust-oneri" role="listbox" aria-label="Arama önerileri" hidden></ul>
+    </form>
     <button class="menu-dugme" type="button" aria-expanded="false" aria-controls="ana-menu" aria-label="Menüyü aç"><span></span></button>
     <nav class="menu" id="ana-menu" aria-label="Ana menü">
       <a href="#siniflar">Sınıflar</a>
@@ -265,7 +277,8 @@
 </footer>
 
 <noscript><p class="kap">Bu sayfadaki bazı içerikler JavaScript ile yüklenir.</p></noscript>
-<script src="ortak.js?v=4"></script>
-<script src="akis.js?v=4"></script>
+<script src="ortak.js?v=6"></script>
+<script src="akis.js?v=6"></script>
+<script src="arama.js?v=6"></script>
 </body>
 </html>

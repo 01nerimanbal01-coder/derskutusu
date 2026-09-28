@@ -51,6 +51,9 @@ function sinifSayfasi({ dersler, icerikler }) {
   $('#tum-icerik').href = `icerikler.html?sinif=${no}`;
 }
 
+// Akıllı arama yüklüyse yazım hatasına dayanıklı eşleşme, değilse düz içerme.
+const aramaEslesir = (metin, q) => (typeof Arama !== 'undefined' ? Arama.metinEslesir(metin, q) : metin.toLocaleLowerCase('tr').includes(q.toLocaleLowerCase('tr')));
+
 function icerikSayfasi({ dersler, icerikler }) {
   const alan = { sinif: $('#s-sinif'), ders: $('#s-ders'), tur: $('#s-tur'), kitle: $('#s-kitle'), ara: $('#s-ara') };
   alan.sinif.append(...Object.keys(dersler.siniflar).map((n) => el('option', { value: n }, `${n}. sınıf`)));
@@ -78,7 +81,7 @@ function icerikSayfasi({ dersler, icerikler }) {
     const f = Object.fromEntries(Object.entries(alan).map(([a, e]) => [a, e.value.trim()]));
     const sonuc = icerikler.filter((i) => (!f.sinif || String(i.sinif) === f.sinif) && (!f.ders || i.ders === f.ders)
       && (!f.tur || i.tur === f.tur) && (!f.kitle || (i.kitle || 'ogrenci') === f.kitle)
-      && (!f.ara || kucuk(`${i.baslik} ${i.aciklama} ${dersler.dersler[i.ders] || ''}`).includes(kucuk(f.ara))))
+      && (!f.ara || aramaEslesir(`${i.baslik} ${i.aciklama} ${dersler.dersler[i.ders] || ''} ${i.tur}`, f.ara)))
       .sort((a, b) => String(b.tarih || '').localeCompare(String(a.tarih || '')));
     const url = new URLSearchParams(Object.entries(f).filter(([, d]) => d));
     history.replaceState(null, '', url.toString() ? `?${url}` : location.pathname);

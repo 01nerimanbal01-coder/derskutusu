@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sınıf · Ders Kutusu</title>
-<meta name="description" content="5-12. sınıf dersleri için konu anlatımları, soru çözümleri ve öğretmen dosyaları.">
-<link rel="canonical" href="https://derskutusu.com/sinif.html">
+<title>Arama · Ders Kutusu</title>
+<meta name="description" content="Ders Kutusu içinde akıllı arama: sınıf, ders, plan, öğretim programı ve resmî belgeler.">
+<link rel="canonical" href="https://derskutusu.com/ara.html">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#2451d6">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:site_name" content="Ders Kutusu">
-<meta property="og:title" content="Sınıf · Ders Kutusu">
-<meta property="og:description" content="5-12. sınıf dersleri için konu anlatımları, soru çözümleri ve öğretmen dosyaları.">
+<meta property="og:title" content="Arama · Ders Kutusu">
+<meta property="og:description" content="Ders Kutusu içinde akıllı arama: sınıf, ders, plan, öğretim programı ve resmî belgeler.">
 <meta property="og:image" content="https://derskutusu.com/paylasim.png">
 <link rel="stylesheet" href="/stil.css?v=6">
 </head>
@@ -65,27 +65,38 @@
 <main id="icerik">
   <section class="sayfa-bas">
     <div class="kap">
-      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/#siniflar">Sınıflar</a><span aria-hidden="true">/</span><span id="yol-sinif"></span></nav>
-      <h1 id="baslik">Sınıf</h1>
-      <p id="aciklama"></p>
-      <nav class="sinif-gecis" id="sinif-gecis" aria-label="Sınıflar"></nav>
+      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><span>Arama</span></nav>
+      <h1>Arama</h1>
+      <p>Yazdığınızı anlar: sınıfı, dersi ve aradığınız türü kendisi bulur; yazım hatalarını düzeltir.</p>
+      <form class="arama-buyuk" id="arama-form" role="search">
+        <svg aria-hidden="true"><use href="#s-ara"/></svg>
+        <input id="arama-kutu" type="search" name="q" placeholder="Ör. 8. sınıf matematik yıllık plan" aria-label="Sitede ara" autocomplete="off" spellcheck="false" enterkeyhint="search">
+        <button class="dugme ana" type="submit">Ara</button>
+      </form>
+      <div class="anlasilan" id="anlasilan"></div>
+      <div class="arama-not" id="arama-not" aria-live="polite"></div>
     </div>
   </section>
   <section class="bolum">
     <div class="kap">
-      <div class="bolum-bas">
-        <div><p class="ust-baslik">Dersler</p><h2>Dersini seç</h2></div>
-        <a class="tumu" id="tum-icerik" href="/icerikler.html">Bu sınıfın bütün içerikleri<svg><use href="#s-ok"/></svg></a>
+      <p class="sonuc-bilgi"><span id="arama-sayi" aria-live="polite"></span></p>
+      <div class="kartlar" id="arama-sonuclari"></div>
+      <p class="orta"><button class="dugme" id="daha-fazla" type="button" hidden>Daha fazla göster</button></p>
+      <div class="yakinda" id="arama-bos" hidden>
+        <div class="yakinda-simge" aria-hidden="true"><svg><use href="#s-ara"/></svg></div>
+        <div>
+          <h3>Ne aramak istersiniz?</h3>
+          <p>Sınıf, ders ve tür yazmanız yeterli. Örnekler:</p>
+          <div class="ornekler">
+            <a href="?q=8.+sınıf+matematik+yıllık+plan" data-ornek="8. sınıf matematik yıllık plan">8. sınıf matematik yıllık plan</a>
+            <a href="?q=5+fen+günlük+plan" data-ornek="5 fen günlük plan">5 fen günlük plan</a>
+            <a href="?q=tde+öğretim+programı" data-ornek="tde öğretim programı">tde öğretim programı</a>
+            <a href="?q=ortak+yazılı+matematik" data-ornek="ortak yazılı matematik">ortak yazılı matematik</a>
+            <a href="?q=lgs" data-ornek="lgs">lgs</a>
+            <a href="?q=ara+tatil" data-ornek="ara tatil">ara tatil</a>
+          </div>
+        </div>
       </div>
-      <div class="ders-izgara" id="ders-listesi"></div>
-    </div>
-  </section>
-  <section class="bolum koyu-zemin" id="secmeli-bolum" hidden>
-    <div class="kap">
-      <div class="bolum-bas">
-        <div><p class="ust-baslik">Seçmeli dersler</p><h2>Seçmeli ve imam hatip dersleri</h2></div>
-      </div>
-      <div class="ders-izgara" id="secmeli-listesi"></div>
     </div>
   </section>
 </main>
@@ -123,7 +134,6 @@
 </footer>
 
 <script src="/ortak.js?v=6"></script>
-<script src="/kutuphane.js?v=6"></script>
 <script src="/arama.js?v=6"></script>
 </body>
 </html>
