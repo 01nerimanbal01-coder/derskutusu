@@ -137,5 +137,121 @@
   "Her tam sayı paydası 1 olan bir rasyonel sayıdır: doğal sayılar tam sayıların, tam sayılar rasyonel sayıların içindedir.",
   "Her rasyonel sayı sayı doğrusunda bir noktaya karşılık gelir.",
   "Bir sayının mutlak değeri 0'a uzaklığıdır ve negatif olamaz: |−4| = |4| = 4."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Deniz seviyesinin 12 m altındaki bir noktayı gösteren tam sayı hangisidir?",
+   "secenekler": [
+    "+12",
+    "−12",
+    "0",
+    "−1"
+   ],
+   "dogru": 1,
+   "aciklama": "Deniz seviyesi 0 kabul edilir; altı negatif sayılarla gösterilir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Aşağıdakilerden hangisi rasyonel sayı değildir?",
+   "secenekler": [
+    "{kesir:3|4}",
+    "−5",
+    "{kesir:7|0}",
+    "0"
+   ],
+   "dogru": 2,
+   "aciklama": "Rasyonel sayılarda payda sıfır olamaz; sıfıra bölme tanımsızdır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "|−9| ifadesinin değeri kaçtır?",
+   "secenekler": [
+    "−9",
+    "0",
+    "9",
+    "{kesir:1|9}"
+   ],
+   "dogru": 2,
+   "aciklama": "−9 sayısı 0'a 9 birim uzaklıktadır; mutlak değer negatif olamaz."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadeler doğru mu, yanlış mı?",
+   "ifadeler": [
+    {
+     "metin": "Sıfır pozitif bir tam sayıdır.",
+     "dogru": false,
+     "aciklama": "Sıfır ne pozitif ne negatiftir; işareti yoktur."
+    },
+    {
+     "metin": "Her tam sayı paydası 1 olan bir rasyonel sayıdır.",
+     "dogru": true,
+     "aciklama": "Örneğin 5 = {kesir:5|1}."
+    },
+    {
+     "metin": "Mutlak değer negatif olabilir.",
+     "dogru": false,
+     "aciklama": "Mutlak değer bir uzaklık olduğu için negatif olamaz."
+    },
+    {
+     "metin": "{kesir:2|3} ile {kesir:4|6} sayı doğrusunda aynı noktayı gösterir.",
+     "dogru": true,
+     "aciklama": "Denk kesirler aynı noktaya karşılık gelir."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Durumları uygun tam sayılarla eşleştiriniz.",
+   "ciftler": [
+    [
+     "Zemin katın 2 kat altı",
+     "−2"
+    ],
+    [
+     "0 °C'nin 5 derece üstü",
+     "+5"
+    ],
+    [
+     "Deniz seviyesi",
+     "0"
+    ],
+    [
+     "40 TL borç",
+     "−40"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Tam sayılar doğal sayıları, rasyonel sayılar da tam sayıları ___.",
+     "cevap": "kapsar"
+    },
+    {
+     "metin": "Bir sayının 0'a olan uzaklığına o sayının ___ değeri denir.",
+     "cevap": "mutlak"
+    },
+    {
+     "metin": "Rasyonel sayılarda payda ___ olamaz.",
+     "cevap": "sıfır"
+    }
+   ],
+   "fazla": [
+    "pozitif"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Mutlak değeri 5 olan tam sayıları bulunuz.",
+   "ipuclari": [
+    "Mutlak değer, sayının 0'a olan uzaklığıdır.",
+    "Sayı doğrusunda 0'ın sağında ve solunda 5 birim uzaklıktaki noktalara bakın."
+   ],
+   "cevap": "5 ve −5. İkisi de 0'a 5 birim uzaklıktadır."
+  }
  ]
 }

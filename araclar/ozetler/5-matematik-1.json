@@ -150,5 +150,133 @@
   "Doğru parçasının iki ucu vardır; ışın bir noktadan başlayıp sonsuza gider; doğru iki yönde sonsuza uzanır.",
   "Açı, başlangıç noktası aynı iki ışından oluşur; köşe harfi adın ortasına yazılır; ölçüsü açıölçerle bulunur.",
   "Çember pergelle, dikme gönyeyle çizilir; dikme bir noktadan doğruya çizilen en kısa doğru parçasıdır."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Eni, boyu ve derinliği olmayan; kalemin kâğıda bir kez değmesiyle modellenen geometrik öğe hangisidir?",
+   "secenekler": [
+    "Doğru parçası",
+    "Nokta",
+    "Işın",
+    "Açı"
+   ],
+   "dogru": 1,
+   "aciklama": "Noktanın eni, boyu ve derinliği yoktur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir noktadan başlayıp aynı hizada sonsuza kadar giden noktaların oluşturduğu şekil hangisidir?",
+   "secenekler": [
+    "Doğru parçası",
+    "Işın",
+    "Çember",
+    "Nokta"
+   ],
+   "dogru": 1,
+   "aciklama": "Işının bir başlangıç noktası vardır ve tek yönde sonsuza uzanır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir doğruya dışındaki bir noktadan dikme çizmek için hangi araç kullanılır?",
+   "secenekler": [
+    "Pergel",
+    "Açıölçer",
+    "Gönye",
+    "Çizgeç"
+   ],
+   "dogru": 2,
+   "aciklama": "Dikme gönyeyle çizilir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Köşesi B olan açı aşağıdakilerden hangisiyle adlandırılabilir?",
+   "secenekler": [
+    "{aci:BAC}",
+    "{aci:ABC}",
+    "{aci:ACB}",
+    "{aci:CAB}"
+   ],
+   "dogru": 1,
+   "aciklama": "Açı adlandırılırken köşe harfi ortaya yazılır."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadeler doğru mu, yanlış mı?",
+   "ifadeler": [
+    {
+     "metin": "[AB] ile [BA] aynı doğru parçasıdır.",
+     "dogru": true,
+     "aciklama": "Uç noktaları aynı olduğu için aynı doğru parçasıdır."
+    },
+    {
+     "metin": "[AB ışını ile [BA ışını aynı ışındır.",
+     "dogru": false,
+     "aciklama": "Biri A'dan, öbürü B'den başlar ve ters yönlere uzanır."
+    },
+    {
+     "metin": "Noktalar küçük harfle adlandırılır.",
+     "dogru": false,
+     "aciklama": "Noktalar her zaman büyük harfle adlandırılır."
+    },
+    {
+     "metin": "Çemberin iki noktasını merkezden geçerek birleştiren doğru parçasına çap denir.",
+     "dogru": true,
+     "aciklama": "Çap R ile gösterilir."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Araçları kullanım amaçlarıyla eşleştiriniz.",
+   "ciftler": [
+    [
+     "Pergel",
+     "Çember çizmek"
+    ],
+    [
+     "Gönye",
+     "Dikme çizmek"
+    ],
+    [
+     "Açıölçer",
+     "Açının ölçüsünü bulmak"
+    ],
+    [
+     "Çizgeç",
+     "Uzunluğu önemsiz düz çizgi çizmek"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Merkez ile çember üzerindeki bir noktayı birleştiren doğru parçasına ___ denir.",
+     "cevap": "yarıçap"
+    },
+    {
+     "metin": "Açıyı oluşturan ışınların başlangıç noktasına açının ___ denir.",
+     "cevap": "köşesi"
+    },
+    {
+     "metin": "Bir çember ile iç kısmındaki bütün noktaların oluşturduğu şekle ___ denir.",
+     "cevap": "daire"
+    }
+   ],
+   "fazla": [
+    "çap"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Yarıçapı 3 cm olan bir çemberi pergelle nasıl çizersiniz?",
+   "ipuclari": [
+    "Pergelin kolları arasındaki açıklığı cetvelle ayarlayın.",
+    "Sivri ucu merkez olacak noktaya koyup sabitleyin; kalemli ucu bu noktanın çevresinde döndürün."
+   ],
+   "cevap": "Pergelin iki ucu arasındaki açıklık cetvelle 3 cm yapılır. Sivri uç merkez olacak noktaya konup sabitlenir ve kalemli uç bir tur döndürülür."
+  }
  ]
 }

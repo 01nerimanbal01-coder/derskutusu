@@ -94,5 +94,121 @@
   "Bir sayının asal sayı olan çarpanlarına asal çarpanları denir.",
   "Asal çarpanlar bölen listesi yöntemiyle bulunur: en küçük asal bölenle başlanır, bölüm 1 olunca durulur.",
   "Tekrar eden asal çarpanlar üslü yazılır: 72 = {us:2|3} · {us:3|2}."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "36'nın kaç tane pozitif tam sayı çarpanı vardır?",
+   "secenekler": [
+    "6",
+    "8",
+    "9",
+    "12"
+   ],
+   "dogru": 2,
+   "aciklama": "36'nın çarpanları 1, 2, 3, 4, 6, 9, 12, 18 ve 36'dır; 9 tanedir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "30'un asal çarpanları hangi seçenekte verilmiştir?",
+   "secenekler": [
+    "2, 3, 5",
+    "2, 3, 5, 6",
+    "1, 2, 3, 5",
+    "3, 5, 10"
+   ],
+   "dogru": 0,
+   "aciklama": "30 | 2 → 15 | 3 → 5 | 5 → 1. Asal çarpanlar 2, 3 ve 5'tir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "{us:2|3} · {us:3|2} çarpımı kaçtır?",
+   "secenekler": [
+    "36",
+    "54",
+    "72",
+    "108"
+   ],
+   "dogru": 2,
+   "aciklama": "{us:2|3} = 8 ve {us:3|2} = 9; 8 · 9 = 72."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadeler doğru mu, yanlış mı?",
+   "ifadeler": [
+    {
+     "metin": "Bir doğal sayının çarpanları aynı zamanda o sayının bölenleridir.",
+     "dogru": true,
+     "aciklama": "Örneğin 24'ün çarpanları 24'ü kalansız böler."
+    },
+    {
+     "metin": "Bölen listesi yönteminde bölmeye bölüm 1 oluncaya kadar devam edilir.",
+     "dogru": true,
+     "aciklama": "Bölüm 1 olunca asal çarpanların tamamı bulunmuş olur."
+    },
+    {
+     "metin": "Bölen listesi yönteminde sayı her adımda onu bölen en büyük asal sayıya bölünür.",
+     "dogru": false,
+     "aciklama": "Her adımda sayıyı kalansız bölen en küçük asal sayı yazılır."
+    },
+    {
+     "metin": "50 = 2 · {us:5|2} biçiminde yazılır.",
+     "dogru": true,
+     "aciklama": "50 | 2 → 25 | 5 → 5 | 5 → 1."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Sayıları asal çarpanlarının çarpımı biçimleriyle eşleştiriniz.",
+   "ciftler": [
+    [
+     "12",
+     "{us:2|2} · 3"
+    ],
+    [
+     "18",
+     "2 · {us:3|2}"
+    ],
+    [
+     "40",
+     "{us:2|3} · 5"
+    ],
+    [
+     "45",
+     "{us:3|2} · 5"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Bir sayının asal sayı olan çarpanlarına o sayının ___ çarpanları denir.",
+     "cevap": "asal"
+    },
+    {
+     "metin": "Bölen listesi yönteminde sayıyı kalansız bölen en ___ asal sayıyla başlanır.",
+     "cevap": "küçük"
+    },
+    {
+     "metin": "Asal çarpanların çarpımı biçiminde verilen sayıyı bulmak için önce üslü ifadelerin ___ hesaplanır.",
+     "cevap": "değeri"
+    }
+   ],
+   "fazla": [
+    "büyük"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "60 sayısını bölen listesi yöntemiyle asal çarpanlarına ayırıp tabanı asal sayı olan üslü ifadelerin çarpımı biçiminde yazınız.",
+   "ipuclari": [
+    "60 çift olduğu için 2 ile başlayın: 60 : 2 = 30.",
+    "30 : 2 = 15. 15'i kalansız bölen en küçük asal sayı 3'tür."
+   ],
+   "cevap": "60 | 2, 30 | 2, 15 | 3, 5 | 5, 1. Asal çarpanlar 2, 3 ve 5'tir; 60 = {us:2|2} · 3 · 5."
+  }
  ]
 }

@@ -127,5 +127,121 @@
   "Sonda, uydu ve istasyon güneş panelleriyle çalışır; roket yakıtla çalışır. Mekik yeniden kullanılabilir, istasyon kullanılamaz.",
   "Uzay teleskopları atmosferin engellemesi olmadan daha net görüntü alır; yer tabanlı teleskoplar daha ucuz ve bakımı kolaydır. Gözlemevleri ışık kirliliğinden uzak, yüksek yerlere kurulur.",
   "TÜRKSAT 6A ilk yerli ve millî haberleşme uydumuzdur; Alper Gezeravcı ilk Türk astronottur; ülkemizin uzay çalışmalarını TUA yürütür."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Astronotların yaşayıp düşük yer çekimli ortamda deney yaptığı uzay aracı hangisidir?",
+   "secenekler": [
+    "Uzay sondası",
+    "Uzay istasyonu",
+    "Yapay uydu",
+    "Uzay roketi"
+   ],
+   "dogru": 1,
+   "aciklama": "Uzay istasyonunda astronotların araştırma yapabileceği donanım ve yaşam alanı vardır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Türkiye'nin ilk yerli ve millî haberleşme uydusu hangisidir?",
+   "secenekler": [
+    "TÜRKSAT 3A",
+    "TÜRKSAT 6A",
+    "GÖKTÜRK 2",
+    "İMECE"
+   ],
+   "dogru": 1,
+   "aciklama": "TÜRKSAT 6A 2024'te uzaya gönderilmiştir; ilk yerli ve millî haberleşme uydumuzdur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir gözlemevi kurulacak yerde aşağıdakilerden hangisi istenmez?",
+   "secenekler": [
+    "Yerleşim merkezlerinden uzak olması",
+    "Yüksek rakımlı olması",
+    "Deprem kuşağında olması",
+    "Hava koşullarının gözleme uygun olması"
+   ],
+   "dogru": 2,
+   "aciklama": "Gözlemevleri deprem kuşaklarından uzak yerlere kurulmalıdır."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadeler doğru mu, yanlış mı?",
+   "ifadeler": [
+    {
+     "metin": "Uzay tamamen boş bir ortamdır.",
+     "dogru": false,
+     "aciklama": "Uzayda çok az miktarda gaz, toz ve çeşitli parçacıklar bulunur."
+    },
+    {
+     "metin": "Uzay sondası Dünya'dan kontrol edilen robotik bir araçtır.",
+     "dogru": true,
+     "aciklama": "Sonda enerjisini güneş panellerinden sağlar."
+    },
+    {
+     "metin": "Uzay istasyonu yeniden kullanılabilir.",
+     "dogru": false,
+     "aciklama": "Uzay istasyonu yeniden kullanılamaz; bakım ve onarımla ömrü uzatılır."
+    },
+    {
+     "metin": "Yer tabanlı teleskopların maliyeti düşüktür, bakımları kolaydır.",
+     "dogru": true,
+     "aciklama": "Bu yüzden yer tabanlı teleskoplar da tercih edilir."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Uzay teknolojilerini görevleriyle eşleştiriniz.",
+   "ciftler": [
+    [
+     "Uzay roketi",
+     "Uzay araçlarını yörüngeye taşır"
+    ],
+    [
+     "Uzay sondası",
+     "Bir gök cismini incelemek için gönderilir"
+    ],
+    [
+     "Yapay uydu",
+     "Belirli bir yörüngede dolanır"
+    ],
+    [
+     "Teleskop",
+     "Gök cisimlerini gözlemler"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Gök cisimlerinin konumlarını, hareketlerini ve yapılarını inceleyen bilim dalına ___ denir.",
+     "cevap": "astronomi"
+    },
+    {
+     "metin": "Teleskopların yerleştirildiği kubbe benzeri yapılara ___ denir.",
+     "cevap": "gözlemevi"
+    },
+    {
+     "metin": "Türkiye'nin ilk astronotu ___ Gezeravcı'dır.",
+     "cevap": "Alper"
+    }
+   ],
+   "fazla": [
+    "astronom"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Uzay teleskopları neden yer tabanlı teleskoplardan daha net görüntü alır?",
+   "ipuclari": [
+    "Atmosferin uzaydan gelen ışınlara etkisini düşünün.",
+    "Yerden gözlemi zorlaştıran başka hangi etkenler vardır?"
+   ],
+   "cevap": "Atmosfer uzaydan gelen ışınların büyük bölümünü engeller. Atmosfer kirliliği ve yapay uyduların gökyüzünde bıraktığı ışık izleri de yerden gözlemi zorlaştırır. Uzay teleskopları bu sorunlarla karşılaşmaz."
+  }
  ]
 }

@@ -93,5 +93,121 @@
   "Bir sayıyı iki sayının çarpımı olarak yazdığımızda çarpılan sayılar o sayının çarpanlarıdır; çarpanlar sayıyı kalansız böler.",
   "Bir sayının 1, 2, 3, … ile çarpımları o sayının katlarıdır; katlar sınırsızdır.",
   "Çarpanların en küçüğü 1, en büyüğü sayının kendisidir; katların en küçüğü sayının kendisidir."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "18'in bütün çarpanları hangi seçenekte verilmiştir?",
+   "secenekler": [
+    "1, 2, 3, 6, 9, 18",
+    "1, 2, 3, 9, 18",
+    "2, 3, 6, 9",
+    "18, 36, 54"
+   ],
+   "dogru": 0,
+   "aciklama": "1 × 18, 2 × 9 ve 3 × 6 çarpımlarından 18'in çarpanları 1, 2, 3, 6, 9 ve 18'dir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Aşağıdakilerden hangisi 7'nin bir katıdır?",
+   "secenekler": [
+    "17",
+    "27",
+    "35",
+    "47"
+   ],
+   "dogru": 2,
+   "aciklama": "7 × 5 = 35 olduğundan 35, 7'nin katıdır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Sıfır dışındaki her doğal sayının en küçük çarpanı kaçtır?",
+   "secenekler": [
+    "0",
+    "1",
+    "2",
+    "Sayının kendisi"
+   ],
+   "dogru": 1,
+   "aciklama": "Sıfır hariç doğal sayıların en küçük çarpanı 1, en büyük çarpanı sayının kendisidir."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadeler doğru mu, yanlış mı?",
+   "ifadeler": [
+    {
+     "metin": "Bir doğal sayının çarpanları aynı zamanda o sayının bölenleridir.",
+     "dogru": true,
+     "aciklama": "Çarpanlar sayıyı kalansız böler."
+    },
+    {
+     "metin": "Bir doğal sayının katları sınırlı sayıdadır.",
+     "dogru": false,
+     "aciklama": "Doğal sayıların sonu olmadığı için katların da sonu yoktur."
+    },
+    {
+     "metin": "Sıfır dışındaki bir doğal sayının çarpanları sınırlı sayıdadır.",
+     "dogru": true,
+     "aciklama": "Örneğin 12'nin yalnız 6 çarpanı vardır."
+    },
+    {
+     "metin": "15'in çarpanları 1, 3, 5 ve 15'tir.",
+     "dogru": true,
+     "aciklama": "15 = 1 × 15 ve 15 = 3 × 5."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "İfadeleri doğru sayılarla eşleştiriniz.",
+   "ciftler": [
+    [
+     "12'nin çarpanları",
+     "1, 2, 3, 4, 6, 12"
+    ],
+    [
+     "9'un çarpanları",
+     "1, 3, 9"
+    ],
+    [
+     "5'in ilk üç katı",
+     "5, 10, 15"
+    ],
+    [
+     "4'ün ilk üç katı",
+     "4, 8, 12"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Bir doğal sayı 1, 2, 3, … ile sırayla çarpılınca o sayının ___ elde edilir.",
+     "cevap": "katları"
+    },
+    {
+     "metin": "Bir doğal sayıyı kalansız bölen sayılara o sayının ___ denir.",
+     "cevap": "bölenleri"
+    },
+    {
+     "metin": "Alanı 12 birimkare olan dikdörtgenlerin kenar uzunlukları 12'nin ___ olur.",
+     "cevap": "çarpanları"
+    }
+   ],
+   "fazla": [
+    "asalları"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Her birinde 8 soru bulunan çalışma kâğıtları hazırlanıyor. Toplam soru sayısı 60'tan az olacaksa en fazla kaç kâğıt hazırlanabilir?",
+   "ipuclari": [
+    "Toplam soru sayısı 8'in katlarından biridir: 8, 16, 24, …",
+    "60'tan küçük olan en büyük 8 katını bulun."
+   ],
+   "cevap": "8'in katları 8, 16, 24, 32, 40, 48, 56, 64, … 60'tan küçük en büyüğü 56'dır. 56 = 8 × 7 olduğundan en fazla 7 kâğıt hazırlanabilir."
+  }
  ]
 }
