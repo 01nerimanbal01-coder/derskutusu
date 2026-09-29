@@ -1,0 +1,302 @@
+{
+ "sinif": 5,
+ "ders": "matematik",
+ "hafta": 1,
+ "tarih": "14-18 Eylül 2026",
+ "konu": "Temel Geometrik Çizimler ve Araçları",
+ "ciktilar": [
+  "MAT.5.3.1. Temel geometrik çizimler için matematiksel araç ve teknolojiden yararlanabilme"
+ ],
+ "hatirla": [
+  "Noktanın eni, boyu ve derinliği yoktur. Noktalar büyük harfle adlandırılır.",
+  "Doğru iki yönde sınırsız uzanır. Işının bir başlangıç noktası vardır, tek yönde sınırsız uzanır. Doğru parçasının iki uç noktası vardır ve uzunluğu cetvelle ölçülür.",
+  "Açı, başlangıç noktası aynı olan iki ışından oluşur. Köşe harfi adın ortasına yazılır: {aci:ABC}. Ölçüsü m({aci:ABC}) biçiminde gösterilir ve açıölçerle ölçülür.",
+  "Çember pergelle, dikme gönyeyle çizilir. Dikme, bir noktadan doğruya çizilebilecek en kısa doğru parçasıdır."
+ ],
+ "sorular": [
+  {
+   "tur": "eslestir",
+   "duzey": "hatirla",
+   "soru": "Her öğeyi tanımıyla eşleştiriniz. Harfleri kutulara yazınız.",
+   "ciftler": [
+    [
+     "Nokta",
+     "Eni, boyu ve derinliği yoktur."
+    ],
+    [
+     "Doğru",
+     "İki yönde sınırsız uzanır."
+    ],
+    [
+     "Işın",
+     "Bir başlangıç noktasından tek yönde uzanır."
+    ],
+    [
+     "Doğru parçası",
+     "İki uç noktası vardır."
+    ],
+    [
+     "Açı",
+     "Başlangıç noktası aynı olan iki ışından oluşur."
+    ]
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "hatirla",
+   "soru": "Şekildeki ışın aşağıdakilerden hangisiyle gösterilir?",
+   "secenekler": [
+    "[AB ışını",
+    "[BA ışını",
+    "[AB]",
+    "{dogru:AB}"
+   ],
+   "dogru": 0
+  },
+  {
+   "tur": "dy",
+   "duzey": "hatirla",
+   "soru": "Doğru olan ifadelerin yanındaki D kutusunu, yanlış olanların yanındaki Y kutusunu işaretleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "Noktalar küçük harfle adlandırılır.",
+     "dogru": false
+    },
+    {
+     "metin": "[AB] ile [BA] aynı doğru parçasıdır.",
+     "dogru": true
+    },
+    {
+     "metin": "[AB ışını ile [BA ışını aynıdır.",
+     "dogru": false
+    },
+    {
+     "metin": "Bir ışının uzunluğu cetvelle ölçülür.",
+     "dogru": false
+    },
+    {
+     "metin": "Açı, bir ışının dönme miktarı olarak da tanımlanır.",
+     "dogru": true
+    }
+   ]
+  },
+  {
+   "tur": "tablo",
+   "duzey": "uygula",
+   "soru": "Görseldeki araçlardan hangisi hangi çizim için kullanılır? Tabloyu tamamlayınız.",
+   "basliklar": [
+    "Yapılacak iş",
+    "Kullanılacak araç"
+   ],
+   "satirlar": [
+    [
+     "6 cm uzunluğunda bir doğru parçası çizmek",
+     {
+      "b": "Cetvel"
+     }
+    ],
+    [
+     "Bir açının ölçüsünü bulmak",
+     {
+      "b": "Açıölçer"
+     }
+    ],
+    [
+     "Bir doğruya, dışındaki bir noktadan dikme çizmek",
+     {
+      "b": "Gönye"
+     }
+    ],
+    [
+     "Bir çember çizmek",
+     {
+      "b": "Pergel"
+     }
+    ],
+    [
+     "Uzunluğu önemli olmayan düz bir çizgi çizmek",
+     {
+      "b": "Çizgeç"
+     }
+    ]
+   ]
+  },
+  {
+   "tur": "kavram",
+   "duzey": "hatirla",
+   "soru": "Kavram haritasındaki boş kutuları, yanlarındaki açıklamalara göre doldurunuz.",
+   "merkez": "ÇEMBER",
+   "dallar": [
+    "Pergelle çizilir",
+    {
+     "b": "Yarıçap (r)",
+     "ipucu": "merkezden çembere"
+    },
+    {
+     "b": "Çap (R)",
+     "ipucu": "merkezden geçer"
+    },
+    {
+     "b": "Daire",
+     "ipucu": "çember ve iç bölgesi"
+    },
+    "Merkezi vardır"
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Şekildeki açının adı aşağıdakilerden hangisi {koyu:olamaz}?",
+   "secenekler": [
+    "{aci:ABC}",
+    "{aci:CBA}",
+    "B açısı",
+    "{aci:BAC}"
+   ],
+   "dogru": 3
+  },
+  {
+   "tur": "sifre",
+   "duzey": "hatirla",
+   "genislik": "tam",
+   "soru": "İpuçlarındaki kavramları kutulara yazınız. Turuncu kutulardaki harfler yukarıdan aşağıya bir kavram oluşturur.",
+   "satirlar": [
+    {
+     "ipucu": "İki yönde sınırsız uzanır.",
+     "cevap": "Doğru",
+     "anahtar": 0
+    },
+    {
+     "ipucu": "Uzunluğu önemli olmayan düz çizgiler çizmeye yarayan ölçüsüz cetvel",
+     "cevap": "Çizgeç",
+     "anahtar": 1
+    },
+    {
+     "ipucu": "Eni, boyu ve derinliği olmayan, büyük harfle adlandırılan öğe",
+     "cevap": "Nokta",
+     "anahtar": 2
+    },
+    {
+     "ipucu": "Merkeze eşit uzaklıktaki noktaların oluşturduğu şekil",
+     "cevap": "Çember",
+     "anahtar": 2
+    },
+    {
+     "ipucu": "Çember çizmeye yarayan araç",
+     "cevap": "Pergel",
+     "anahtar": 1
+    }
+   ],
+   "sonuc": "dikme"
+  },
+  {
+   "tur": "bosluk",
+   "duzey": "hatirla",
+   "soru": "Cümlelerdeki boşlukları kutudaki sözcüklerle doldurunuz. Bir sözcük artacaktır.",
+   "cumleler": [
+    {
+     "metin": "Açıyı oluşturan ışınlara açının ___ denir.",
+     "cevap": "kolları"
+    },
+    {
+     "metin": "Işınların başlangıç noktasına açının ___ denir.",
+     "cevap": "köşesi"
+    },
+    {
+     "metin": "Diklik ___ sembolüyle gösterilir.",
+     "cevap": "⊥"
+    },
+    {
+     "metin": "Bir çember ile iç kısmındaki bütün noktaların oluşturduğu şekle ___ denir.",
+     "cevap": "daire"
+    }
+   ],
+   "fazla": [
+    "çap"
+   ]
+  },
+  {
+   "tur": "siralama",
+   "duzey": "uygula",
+   "soru": "Pergelle çember çizmenin adımlarını sıralayınız. Sıra numaralarını kutulara yazınız.",
+   "ogeler": [
+    "Pergelin kolları arasında bir açıklık oluşturulur.",
+    "Sivri uç, merkez olacak noktaya konup sabitlenir.",
+    "Kalemli uç, bu noktanın çevresinde döndürülür."
+   ]
+  },
+  {
+   "tur": "kisa",
+   "duzey": "uygula",
+   "soru": "Şekildeki çemberin merkezi M noktasıdır. [MA] ve [BC] doğru parçalarının adlarını yazınız.",
+   "cevap": "[MA] yarıçaptır (r), [BC] çaptır (R).",
+   "satir": 2
+  },
+  {
+   "tur": "kisa",
+   "duzey": "ust",
+   "soru": "Bir çiftçi, P noktasındaki kuyudan düz su kanalına (d doğrusu) en kısa boruyu döşemek istiyor. Şekildeki borulardan hangisi en kısadır? Nedenini yazınız.",
+   "cevap": "2 numaralı boru. Çünkü o boru d doğrusuna diktir; dikme, bir noktadan doğruya çizilebilecek en kısa doğru parçasıdır.",
+   "satir": 3
+  },
+  {
+   "tur": "acik",
+   "duzey": "ust",
+   "soru": "Şekilde D noktası [BC] üzerindedir. Şekilde kaç doğru parçası vardır? Hepsini gösterimleriyle yazınız.",
+   "cevap": "6 doğru parçası: [AB], [AC], [AD], [BD], [DC], [BC].",
+   "satir": 3,
+   "sutun": "sol"
+  },
+  {
+   "tur": "tablo",
+   "duzey": "uygula",
+   "soru": "Numaralı nesnelerden hangileri çember modeli, hangileri daire modelidir? Tabloyu tamamlayınız.",
+   "basliklar": [
+    "Nesne",
+    "Çember modeli mi, daire modeli mi?"
+   ],
+   "satirlar": [
+    [
+     "1. Hulahop",
+     {
+      "b": "Çember modeli"
+     }
+    ],
+    [
+     "2. Bozuk para",
+     {
+      "b": "Daire modeli"
+     }
+    ],
+    [
+     "3. Yüzük",
+     {
+      "b": "Çember modeli"
+     }
+    ],
+    [
+     "4. Yuvarlak masanın üst yüzeyi",
+     {
+      "b": "Daire modeli"
+     }
+    ]
+   ],
+   "sutun": "sag"
+  }
+ ],
+ "yedek": [
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Aşağıdakilerden hangisinin uzunluğu cetvelle ölçülebilir?",
+   "secenekler": [
+    "{dogru:AB}",
+    "[AB ışını",
+    "[AB]",
+    "[BA ışını"
+   ],
+   "dogru": 2,
+   "not_": "29.09: 2 sayfaya sığdırmak için çıkarıldı (3. sorunun 4. maddesiyle örtüşüyor)"
+  }
+ ]
+}
