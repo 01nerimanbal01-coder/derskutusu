@@ -544,6 +544,31 @@ def fen7(o):
             b['gorsel'] = g[b['baslik']]
 
 
+# ---------- 5. sınıf Sosyal Bilgiler: gruplar ve roller (yalnız MEB kitabındaki roller) ----------
+def gruplar_roller():
+    cx, cy, r = 230, 152, 34
+    ic = f'<circle cx="{cx}" cy="{cy}" r="{r}" class="g-mf"/><text x="{cx}" y="{cy + 6}" text-anchor="middle" font-size="18" font-weight="800" class="g-b">Ben</text>'
+    kutu = [(20, 22, 'Aile', ('çocuk, kardeş,', 'abla ya da ağabey'), ('g-ta', 'g-ts', 'g-tf'), (180, 92)),
+            (280, 22, 'Okul', ('öğrenci, sınıf başkanı,', 'nöbetçi'), ('g-ma', 'g-ms', 'g-mf'), (280, 92)),
+            (20, 212, 'Arkadaş grubu', ('oyun arkadaşı, lider,', 'arabulucu'), ('g-ya', 'g-ys', 'g-yf'), (180, 212)),
+            (280, 212, 'Sosyal sorumluluk', ('gönüllü, yönetici,', 'kampanya sorumlusu'), ('g-oa', 'g-os', 'g-of'), (280, 212))]
+    import math as _m
+    for x, y, ad, roller, (a, s, f), (kx, ky) in kutu:
+        ic += f'<rect x="{x}" y="{y}" width="160" height="70" rx="12" class="{a}"/><rect x="{x}" y="{y}" width="160" height="70" rx="12" class="{s}" stroke-width="2"/>'
+        ic += f'<text x="{x + 12}" y="{y + 24}" font-size="14.5" font-weight="800" class="{f}">{ad}</text>'
+        ic += f'<text x="{x + 12}" y="{y + 44}" font-size="12.5" class="g-y">{roller[0]}</text><text x="{x + 12}" y="{y + 60}" font-size="12.5" class="g-y">{roller[1]}</text>'
+        dx, dy = kx - cx, ky - cy; L = _m.hypot(dx, dy); ux, uy = dx / L, dy / L
+        ic += f'<line x1="{cx + ux * (r + 5):.1f}" y1="{cy + uy * (r + 5):.1f}" x2="{kx - ux * 6:.1f}" y2="{ky - uy * 6:.1f}" class="g-c" stroke-width="2" stroke-linecap="round"/>'
+    ic += '<text x="230" y="306" text-anchor="middle" font-size="12.5" class="g-s">Birden çok grupta yer aldığımız için aynı anda birden fazla role sahip oluruz.</text>'
+    return svg(460, 316, ic, 'Ortada Ben; çevresinde dört grup ve roller: Aile (çocuk, kardeş, abla ya da ağabey), Okul (öğrenci, sınıf başkanı, nöbetçi), Arkadaş grubu (oyun arkadaşı, lider, arabulucu), Sosyal sorumluluk (gönüllü, yönetici, kampanya sorumlusu)')
+
+
+def sosyal5(o):
+    for b in o['bolumler']:
+        if b['baslik'] == 'Dâhil olduğumuz gruplar ve rollerimiz':
+            b['gorsel'] = gruplar_roller()
+
+
 if __name__ == '__main__':
     yaz('5-matematik-1.json', mat5)
     yaz('8-matematik-1.json', mat8)
@@ -557,4 +582,6 @@ if __name__ == '__main__':
         yaz('6-fen-bilimleri-1.json', fen6)
     if (OZET / '7-fen-bilimleri-1.json').exists():
         yaz('7-fen-bilimleri-1.json', fen7)
+    if (OZET / '5-sosyal-bilgiler-1.json').exists():
+        yaz('5-sosyal-bilgiler-1.json', sosyal5)
     print('görseller yazıldı')
