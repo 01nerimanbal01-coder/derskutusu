@@ -546,4 +546,66 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
   font-size: .9em; line-height: 1.15; margin: 0 .12em; }
 .s-kesir > span { padding: 0 .18em; }
 .s-kesir > span:last-child { border-top: .09em solid currentColor; }
+/* Etkinlikler */
+.etk-bas { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.etk-bas h2 { margin-right: auto; }
+.etk-puan { margin: 0; font-weight: 600; color: var(--soluk); }
+.etk-puan b { color: var(--vurgu); font-size: 22px; }
+.etk-puan span { color: var(--yesil); }
+.etk-aciklama { color: var(--soluk); }
+.etk-liste { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 16px; }
+.etk { background: var(--yuzey); border: 1px solid var(--cizgi); border-radius: 18px; padding: 18px 20px; box-shadow: var(--golge); }
+.etk-soru { display: flex; gap: 12px; align-items: flex-start; margin: 0; font-weight: 600; font-size: 17px; line-height: 1.5; }
+.etk-no { flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--vurgu); color: #fff; display: grid; place-items: center; font-size: 14px; font-weight: 800; margin-top: 1px; }
+.etk-secenekler { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
+.etk-sec { display: flex; gap: 12px; align-items: center; text-align: left; min-height: 54px; padding: 10px 14px; border: 2px solid var(--cizgi);
+  border-radius: 14px; background: var(--zemin); color: var(--metin); font: inherit; font-size: 16px; cursor: pointer; transition: border-color .15s, background .15s, transform .1s; }
+.etk-sec:hover:not([aria-disabled="true"]) { border-color: var(--vurgu); }
+.etk-sec:active:not([aria-disabled="true"]) { transform: scale(.98); }
+.etk-harf { flex: none; width: 32px; height: 32px; border-radius: 10px; background: var(--vurgu-acik); color: var(--vurgu); display: grid; place-items: center; font-weight: 800; }
+.etk .dogru { border-color: var(--yesil); background: var(--yesil-acik); }
+.etk .yanlis { border-color: var(--kirmizi); background: var(--kirmizi-acik); }
+.etk .dogru .etk-harf { background: var(--yesil); color: #fff; }
+.etk .yanlis .etk-harf { background: var(--kirmizi); color: #fff; }
+.etk-coktan.bitti .etk-sec:not(.dogru):not(.yanlis) { opacity: .5; }
+.etk-geri { margin: 12px 0 0; padding: 10px 14px; border-radius: 12px; font-size: 15px; }
+.etk-geri b { margin-right: 6px; }
+.etk-geri.dogru { background: var(--yesil-acik); color: var(--yesil); }
+.etk-geri.yanlis { background: var(--kirmizi-acik); color: var(--kirmizi); }
+.etk-geri span { color: var(--metin); }
+.etk-dy ul { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 10px; }
+.etk-dy-satir { display: grid; grid-template-columns: 1fr auto; gap: 8px 14px; align-items: center; padding: 10px 12px; border: 1px solid var(--cizgi); border-radius: 14px; background: var(--zemin); }
+.etk-dy-satir .etk-geri { grid-column: 1 / -1; margin: 0; }
+.etk-dy-dugmeler { display: flex; gap: 8px; }
+.etk-dy-dugmeler button { min-width: 86px; min-height: 46px; border: 2px solid var(--cizgi); border-radius: 12px; background: var(--yuzey); color: var(--metin); font: inherit; font-weight: 700; cursor: pointer; }
+.etk-dy-dugmeler button:hover { border-color: var(--vurgu); }
+.etk-dy-satir.bitti button:not(.dogru):not(.yanlis) { opacity: .45; }
+.etk-ipucu-kucuk { margin: 8px 0 0 42px; color: var(--soluk); font-size: 14px; }
+.etk-sutunlar { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 12px; }
+.etk-sutun { display: grid; gap: 10px; align-content: start; }
+.etk-eslestir .etk-sec { justify-content: center; text-align: center; }
+.etk-sec.secili { border-color: var(--vurgu); background: var(--vurgu-acik); box-shadow: 0 0 0 3px var(--vurgu-acik); }
+.etk-sec.esli { cursor: default; font-weight: 600; }
+.etk-sec.r1 { border-color: #0e9f9f; background: rgb(14 159 159 / .13); } .etk-sec.r2 { border-color: #12a150; background: rgb(18 161 80 / .12); }
+.etk-sec.r3 { border-color: #f29f05; background: rgb(242 159 5 / .14); } .etk-sec.r4 { border-color: #8b3fd6; background: rgb(139 63 214 / .12); }
+.etk-sec.r5 { border-color: #e0457b; background: rgb(224 69 123 / .12); }
+.etk-sec.titre { border-color: var(--kirmizi); animation: etk-titre .4s; }
+@keyframes etk-titre { 25% { transform: translateX(-5px); } 50% { transform: translateX(5px); } 75% { transform: translateX(-3px); } }
+.etk-kelimeler { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 6px; }
+.etk-kelime { min-height: 42px; padding: 6px 16px; border-radius: 999px; border: 2px solid var(--vurgu); background: var(--vurgu-acik); color: var(--metin); font: inherit; font-weight: 700; cursor: pointer; }
+.etk-kelime:hover { transform: translateY(-1px); }
+.etk-cumleler { margin: 10px 0 12px; padding-left: 22px; display: grid; gap: 12px; line-height: 2.1; font-size: 16px; }
+.etk-bosluk-yer { min-width: 120px; min-height: 38px; padding: 0 12px; margin: 0 4px; vertical-align: middle; border: 0; border-bottom: 2px dashed var(--soluk);
+  border-radius: 10px 10px 0 0; background: var(--zemin-2); color: var(--vurgu); font: inherit; font-weight: 700; cursor: pointer; }
+.etk-bosluk-yer.secili { border-bottom: 2px solid var(--vurgu); background: var(--vurgu-acik); }
+.etk-bosluk-yer.dogru { border-bottom: 2px solid var(--yesil); color: var(--yesil); background: var(--yesil-acik); }
+.etk-bosluk-yer.yanlis { border-bottom: 2px solid var(--kirmizi); color: var(--kirmizi); background: var(--kirmizi-acik); text-decoration: line-through; }
+.etk-duzelt { color: var(--yesil); font-weight: 800; font-size: 15px; }
+.etk-uyari { margin: 0 0 10px; color: var(--kirmizi); font-weight: 600; }
+.etk-ipucu { margin: 12px 0 0; padding: 10px 14px; border-left: 4px solid var(--vurgu); background: var(--zemin-2); border-radius: 0 12px 12px 0; }
+.etk-ipucu-dugme, .etk-kontrol { margin-top: 12px; }
+.etk-cevap { margin: 12px 0 0; padding: 10px 14px; border-radius: 12px; background: var(--yesil-acik); }
+.etk-cevap b { color: var(--yesil); }
+@media (max-width: 560px) { .etk-secenekler { grid-template-columns: 1fr; } .etk { padding: 14px; } .etk-sutunlar { gap: 8px; } .etk-sec { font-size: 15px; padding: 8px 10px; } .etk-dy-satir { grid-template-columns: 1fr; } }
+@media print { .etk-sifirla, .etk-ipucu-dugme, .etk-kontrol { display: none; } .etk-ipucu, .etk-cevap { display: block !important; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }

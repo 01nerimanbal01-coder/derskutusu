@@ -59,6 +59,59 @@ def tablo(t):
     return f'<div class="ozet-tablo"><table><thead><tr>{bas}</tr></thead><tbody>{gov}</tbody></table></div>'
 
 
+HARF = 'ABCDE'
+
+
+def _geri(metin=''):
+    return f'<p class="etk-geri" hidden><b></b><span>{e(metin) if metin else ""}</span></p>'
+
+
+def etkinlik_html(liste):
+    """Etkinlikler (MEB kitabındaki bilgilerle): coktan | dy | eslestir | bosluk | ogretici. Davranış public/etkinlik.js'te."""
+    import random
+    parca = []
+    for no, x in enumerate(liste, 1):
+        tur, rnd = x['tur'], random.Random(no * 7919 + len(str(x)))
+        bas = f'<p class="etk-soru"><span class="etk-no">{no}</span><span>{e(x.get("soru") or x.get("yonerge", ""))}</span></p>'
+        if tur == 'coktan':
+            sec = ''.join(f'<button type="button" class="etk-sec" data-i="{i}"><span class="etk-harf">{HARF[i]}</span><span>{e(s)}</span></button>'
+                          for i, s in enumerate(x['secenekler']))
+            parca.append(f'<li class="etk etk-coktan" data-dogru="{x["dogru"]}">{bas}<div class="etk-secenekler">{sec}</div>{_geri(x.get("aciklama"))}</li>')
+        elif tur == 'dy':
+            satir = ''.join(f'<li class="etk-dy-satir" data-dogru="{"D" if i["dogru"] else "Y"}"><span class="etk-dy-metin">{e(i["metin"])}</span>'
+                            '<span class="etk-dy-dugmeler"><button type="button" data-c="D">Doğru</button><button type="button" data-c="Y">Yanlış</button></span>'
+                            f'{_geri(i.get("aciklama"))}</li>' for i in x['ifadeler'])
+            parca.append(f'<li class="etk etk-dy">{bas}<ul>{satir}</ul></li>')
+        elif tur == 'eslestir':
+            sira = list(range(len(x['ciftler'])))
+            while sira == sorted(sira) and len(sira) > 1:
+                rnd.shuffle(sira)
+            sol = ''.join(f'<button type="button" class="etk-sec" data-sol="{i}">{e(a)}</button>' for i, (a, _) in enumerate(x['ciftler']))
+            sag = ''.join(f'<button type="button" class="etk-sec" data-sag="{i}">{e(x["ciftler"][i][1])}</button>' for i in sira)
+            parca.append(f'<li class="etk etk-eslestir">{bas}<p class="etk-ipucu-kucuk">Soldan bir öğeye, sonra sağdaki eşine dokunun.</p>'
+                         f'<div class="etk-sutunlar"><div class="etk-sutun">{sol}</div><div class="etk-sutun">{sag}</div></div>{_geri()}</li>')
+        elif tur == 'bosluk':
+            kelimeler = [c['cevap'] for c in x['cumleler']] + x.get('fazla', [])
+            sira = list(range(len(kelimeler))); rnd.shuffle(sira)
+            cip = ''.join(f'<button type="button" class="etk-kelime" data-k="{i}">{e(kelimeler[i])}</button>' for i in sira)
+            cumle = ''
+            for c in x['cumleler']:
+                on, _, arka = c['metin'].partition('___')
+                cumle += f'<li>{e(on)}<button type="button" class="etk-bosluk-yer" data-cevap="{e(c["cevap"])}" aria-label="Boşluk"></button>{e(arka)}</li>'
+            parca.append(f'<li class="etk etk-bosluk">{bas}<div class="etk-kelimeler">{cip}</div><ol class="etk-cumleler">{cumle}</ol>'
+                         '<p class="etk-uyari" hidden>Önce bütün boşlukları doldurun.</p><button type="button" class="dugme etk-kontrol">Kontrol et</button>'
+                         f'{_geri()}</li>')
+        elif tur == 'ogretici':
+            ip = ''.join(f'<p class="etk-ipucu" hidden><b>{k}. ipucu:</b> {e(s)}</p>' for k, s in enumerate(x.get('ipuclari', []), 1))
+            ilk = '1. ipucunu göster' if x.get('ipuclari') else 'Cevabı göster'
+            parca.append(f'<li class="etk etk-ogretici">{bas}{ip}<button type="button" class="dugme etk-ipucu-dugme">{ilk}</button>'
+                         f'<p class="etk-cevap" hidden><b>Cevap:</b> {e(x["cevap"])}</p></li>')
+    return ('<section class="ozet-bolum" id="etkinlikler"><div class="etk-bas"><h2>Etkinlikler</h2><p class="etk-puan"></p>'
+            '<button type="button" class="dugme etk-sifirla">Baştan başla</button></div>'
+            '<p class="etk-aciklama">Soruları çözün; her cevaptan sonra doğru mu yanlış mı olduğunu hemen göreceksiniz.</p>'
+            f'<ol class="etk-liste">{"".join(parca)}</ol></section>')
+
+
 def sayfa_uret(o, dersler, icerikler):
     ad = dersler['dersler'][o['ders']]
     dosya = f'{o["sinif"]}-{o["ders"]}-hafta-{o["hafta"]}.html'
@@ -87,7 +140,7 @@ def sayfa_uret(o, dersler, icerikler):
       <p class="ust-baslik">{o["sinif"]}. sınıf · {e(ad)} · {o["hafta"]}. hafta ({e(o["tarih"])})</p>
       <h1>{e(o["konu"])}</h1>
       <p>{e(o["unite"])} teması · Konu özeti</p>
-      <div class="g-dugmeler y-ust"><button class="dugme ana" type="button" onclick="window.kalemAc &amp;&amp; window.kalemAc()"><span aria-hidden="true">✎</span>Kalemle yaz</button><button class="dugme" type="button" onclick="document.querySelectorAll('.ornek details').forEach(d=&gt;d.open=!d.open)">Bütün cevapları aç/kapat</button></div>
+      <div class="g-dugmeler y-ust"><button class="dugme ana" type="button" onclick="window.kalemAc &amp;&amp; window.kalemAc()"><span aria-hidden="true">✎</span>Kalemle yaz</button><button class="dugme" type="button" onclick="document.querySelectorAll('.ornek details').forEach(d=&gt;d.open=!d.open)">Bütün cevapları aç/kapat</button>{'<a class="dugme" href="#etkinlikler">Etkinlikler</a>' if o.get('etkinlikler') else ''}</div>
     </div>
   </section>
   <article class="bolum ozet">
@@ -96,6 +149,7 @@ def sayfa_uret(o, dersler, icerikler):
       <p class="ozet-giris">{e(o["giris"])}</p>
       {bolumler}
       <section class="ozet-bolum"><h2>Örnekler</h2><ol class="ornekler">{ornekler}</ol></section>
+      {etkinlik_html(o['etkinlikler']) if o.get('etkinlikler') else ''}
       <section class="ozet-bolum ozet-son"><h2>Kısaca</h2><ul>{ozet}</ul></section>
       {f'<section class="ozet-bolum ozet-ilgili"><h2>Bu dersin öteki kaynakları</h2><ul>{ilgili}</ul></section>' if ilgili else ''}
     </div>
@@ -103,9 +157,10 @@ def sayfa_uret(o, dersler, icerikler):
     baslik = f'{o["sinif"]}. Sınıf {ad} {o["hafta"]}. Hafta: {o["konu"]}'
     aciklama = f'{o["sinif"]}. sınıf {ad} {o["hafta"]}. hafta konu özeti: {o["konu"]}. Çözümlü örnekler ve cevaplar.'
     (PUBLIC / 'ozet').mkdir(exist_ok=True)
-    (PUBLIC / 'ozet' / dosya).write_text(_sayfa.sayfa(f'ozet/{dosya}', baslik, aciklama, govde), encoding='utf-8')
+    betik = ('etkinlik.js',) if o.get('etkinlikler') else ()
+    (PUBLIC / 'ozet' / dosya).write_text(_sayfa.sayfa(f'ozet/{dosya}', baslik, aciklama, govde, betik), encoding='utf-8')
     return {'sinif': o['sinif'], 'ders': o['ders'], 'tur': 'Konu anlatımı', 'kitle': 'ogrenci', 'baslik': baslik,
-            'aciklama': f'{o["unite"]}: {o["konu"]}. Konu özeti, {len(o["ornekler"])} örnek ve cevapları; akıllı tahtada kalemle yazılabilir.',
+            'aciklama': f'{o["unite"]}: {o["konu"]}. Konu özeti, {len(o["ornekler"])} örnek ve cevapları' + (f', {len(o["etkinlikler"])} etkileşimli etkinlik' if o.get('etkinlikler') else '') + '; akıllı tahtada kalemle yazılabilir.',
             'goruntule': f'ozet/{dosya}', 'kaynak': 'Ders Kutusu', 'hafta': o['hafta'], 'tarih': '2026-09-29'}
 
 
