@@ -412,6 +412,62 @@ def fen5(o):
             b['gorsel'] = g[b['baslik']]
 
 
+# ---------- 6. sınıf Fen Bilimleri: Güneş sistemi ----------
+def gunes_sistemi():
+    """Gezegenler Güneş'e yakınlık sırasıyla; boyutlar yaklaşık gerçek oranda, uzaklıklar ölçeksiz.
+    Karasal = turuncu, gazsal = mor; halkalar gazsal gezegenlerde. Halkalar ve yazılar birbirine değmez."""
+    ic = ('<defs><clipPath id="kesGS"><rect x="0" y="0" width="640" height="236"/></clipPath></defs>'
+          '<g clip-path="url(#kesGS)"><circle cx="-40" cy="110" r="100" class="g-tf" opacity=".9"/></g>'
+          '<text x="8" y="115" font-size="13" font-weight="800" class="g-b">Güneş</text>')
+    gez = [('Merkür', 82, 2.2, 'k', 184), ('Venüs', 108, 4.3, 'k', 204), ('Dünya', 136, 4.5, 'k', 184), ('Mars', 162, 2.6, 'k', 204),
+           ('Jüpiter', 272, 50, 'g', 184), ('Satürn', 412, 42, 'g', 184), ('Uranüs', 518, 18, 'g', 184), ('Neptün', 590, 17.5, 'g', 184)]
+    y = 110
+    for ad, x, r, grup, ly in gez:
+        a, s, f = ('g-ta', 'g-ts', 'g-tf') if grup == 'k' else ('g-oa', 'g-os', 'g-of')
+        if grup == 'g':
+            rx, ry, kal = (r * 1.75, r * 0.34, 5) if ad == 'Satürn' else (r * 1.3, r * 0.24, 1.6)
+            ic += f'<ellipse cx="{x}" cy="{y}" rx="{rx:.1f}" ry="{ry:.1f}" class="{s}" stroke-width="{kal}" opacity=".75" transform="rotate(-14 {x} {y})"/>'
+        ic += f'<circle cx="{x}" cy="{y}" r="{r}" class="{a}"/><circle cx="{x}" cy="{y}" r="{r}" class="{s}" stroke-width="1.6"/>'
+        if grup == 'k':
+            ic += f'<line x1="{x}" y1="{y + r + 5:.1f}" x2="{x}" y2="{ly - 14}" class="g-c" stroke-width="1.2"/>'
+        ic += f'<text x="{x}" y="{ly}" text-anchor="middle" font-size="13" font-weight="700" class="{f}">{ad}</text>'
+    import random as _r
+    _r.seed(7)
+    for i in range(34):   # asteroit kuşağı: Mars ile Jüpiter arası
+        ic += f'<circle cx="{184 + _r.random() * 20:.1f}" cy="{y - 42 + _r.random() * 84:.1f}" r="{0.8 + _r.random() * 1.2:.1f}" class="g-y" opacity=".55"/>'
+    ic += '<text x="194" y="54" text-anchor="middle" font-size="12" font-weight="700" class="g-y">asteroit kuşağı</text>'
+    ic += ('<rect x="70" y="8" width="104" height="6" rx="3" class="g-tf"/><text x="122" y="30" text-anchor="middle" font-size="12.5" font-weight="700" class="g-tf">karasal</text>'
+           '<rect x="222" y="8" width="390" height="6" rx="3" class="g-of"/><text x="417" y="30" text-anchor="middle" font-size="12.5" font-weight="700" class="g-of">gazsal</text>')
+    ic += '<text x="320" y="228" text-anchor="middle" font-size="12.5" class="g-s">Boyutlar yaklaşık gerçek orandadır; gezegenler arasındaki uzaklıklar ölçekli değildir.</text>'
+    return svg(640, 236, ic, 'Güneş ve Güneş’e yakınlık sırasıyla Merkür, Venüs, Dünya, Mars (karasal, küçük), asteroit kuşağı, Jüpiter, Satürn, Uranüs, Neptün (gazsal, büyük, halkalı)')
+
+
+def meteor_yolu():
+    """Gök taşı → atmosferde parlayan meteor → yere ulaşan meteorit ve meteor çukuru."""
+    ic = '<defs>' + ok_isareti('okMY', 'g-tf') + '</defs>'
+    ic += '<text x="12" y="20" font-size="12.5" class="g-s">uzay</text>'
+    ic += '<rect x="0" y="74" width="380" height="72" class="g-ma" opacity=".45"/><text x="372" y="92" text-anchor="end" font-size="12.5" font-weight="700" class="g-mf">atmosfer</text>'
+    ic += '<path d="M0 190 H262 Q300 216 338 190 H380 V232 H0 Z" class="g-ya"/><path d="M0 190 H262 Q300 216 338 190 H380" class="g-ys" stroke-width="2"/>'
+    ic += '<path d="M44 30 l10 -6 l10 3 l3 9 l-7 8 l-11 0 l-6 -7 z" class="g-y" opacity=".75"/>'
+    ic += '<text x="76" y="30" font-size="13.5" font-weight="700" class="g-y">gök taşı</text>'
+    ic += '<line x1="66" y1="48" x2="150" y2="84" class="g-c" stroke-width="2" stroke-dasharray="5 5"/>'
+    ic += '<line x1="152" y1="85" x2="258" y2="138" class="g-ts" stroke-width="8" stroke-linecap="round" opacity=".3"/>'
+    ic += '<line x1="152" y1="85" x2="258" y2="138" class="g-ts" stroke-width="3" stroke-linecap="round" marker-end="url(#okMY)"/>'
+    ic += '<text x="150" y="124" font-size="13.5" font-weight="700" class="g-tf">meteor</text><text x="150" y="140" font-size="12" class="g-s">ısınıp parlar</text>'
+    ic += '<line x1="264" y1="150" x2="296" y2="194" class="g-c" stroke-width="2" stroke-dasharray="5 5"/>'
+    ic += '<path d="M292 200 l6 -5 l8 2 l2 6 l-6 5 l-8 -1 z" class="g-y" opacity=".85"/>'
+    ic += '<line x1="312" y1="196" x2="336" y2="166" class="g-c" stroke-width="1.2"/><text x="340" y="164" font-size="13.5" font-weight="700" class="g-y">meteorit</text>'
+    ic += '<text x="300" y="226" text-anchor="middle" font-size="12.5" font-weight="700" class="g-yf">meteor çukuru</text>'
+    return svg(380, 234, ic, 'Uzaydaki gök taşı atmosfere girince ısınıp parlar (meteor); yere ulaşan parça meteorit, açtığı çukur meteor çukurudur')
+
+
+def fen6(o):
+    g = {'Güneş sistemi': gunes_sistemi(), 'Asteroit kuşağı, gök taşı, meteor ve meteorit': meteor_yolu()}
+    for b in o['bolumler']:
+        if b['baslik'] in g:
+            b['gorsel'] = g[b['baslik']]
+
+
 if __name__ == '__main__':
     yaz('5-matematik-1.json', mat5)
     yaz('8-matematik-1.json', mat8)
@@ -421,4 +477,6 @@ if __name__ == '__main__':
         yaz('7-matematik-1.json', mat7)
     if (OZET / '5-fen-bilimleri-2.json').exists():
         yaz('5-fen-bilimleri-2.json', fen5)
+    if (OZET / '6-fen-bilimleri-1.json').exists():
+        yaz('6-fen-bilimleri-1.json', fen6)
     print('görseller yazıldı')
