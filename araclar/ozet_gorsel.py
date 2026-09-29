@@ -867,6 +867,29 @@ def ingilizce5(o):
             b['gorsel'] = okul_kurallari()
 
 
+# ---------- 6. sınıf İngilizce: sıklık zarfları ----------
+def siklik_zarflari():
+    ic = ''
+    zarf = [('always', 'her zaman', 5), ('usually', 'genellikle', 4), ('often', 'sık sık', 3), ('sometimes', 'bazen', 2), ('never', 'asla', 0)]
+    for i, (en, tr, n) in enumerate(zarf):
+        x = 16 + i * 90
+        ic += f'<rect x="{x}" y="12" width="80" height="116" rx="12" class="g-ma"/><rect x="{x}" y="12" width="80" height="116" rx="12" class="g-ms" stroke-width="2"/>'
+        ic += f'<text x="{x + 40}" y="38" text-anchor="middle" font-size="12.5" font-weight="800" class="g-mf">{en}</text>'
+        ic += f'<text x="{x + 40}" y="56" text-anchor="middle" font-size="11.5" class="g-s">{tr}</text>'
+        for k in range(5):
+            cy = 110 - k * 11
+            ic += f'<rect x="{x + 28}" y="{cy - 8}" width="24" height="8" rx="3" class="{"g-tf" if k < n else "g-z"}"/>'
+    ic += '<text x="236" y="152" text-anchor="middle" font-size="12.5" class="g-y">I <tspan class="g-tf" font-weight="800">always</tspan> walk to school. She <tspan class="g-tf" font-weight="800">never</tspan> takes the bus.</text>'
+    ic += '<text x="236" y="172" text-anchor="middle" font-size="12" class="g-s">Sıklık zarfı fiilden önce gelir.</text>'
+    return svg(472, 182, ic, 'Sıklık zarfları çoktan aza: always, usually, often, sometimes, never. Örnek: I always walk to school. She never takes the bus.')
+
+
+def ingilizce6(o):
+    for b in o['bolumler']:
+        if b['baslik'] == 'Routines and frequency':
+            b['gorsel'] = siklik_zarflari()
+
+
 if __name__ == '__main__':
     yaz('5-matematik-1.json', mat5)
     yaz('8-matematik-1.json', mat8)
@@ -896,4 +919,6 @@ if __name__ == '__main__':
         yaz('5-din-kulturu-ve-ahlak-bilgisi-1.json', din5)
     if (OZET / '5-ingilizce-4.json').exists():
         yaz('5-ingilizce-4.json', ingilizce5)
+    if (OZET / '6-ingilizce-4.json').exists():
+        yaz('6-ingilizce-4.json', ingilizce6)
     print('görseller yazıldı')
