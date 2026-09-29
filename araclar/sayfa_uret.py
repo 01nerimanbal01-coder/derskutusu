@@ -267,6 +267,7 @@ for ad, (baslik, aciklama, govde, betikler) in GOVDE.items():
 
 # Gizlilik ve 404: mevcut gövdeleri korunur, üst/alt yenilenir
 for ad, baslik, aciklama, kanonik in [('gizlilik.html', 'Gizlilik ve çerezler', 'Ders Kutusu gizlilik ve çerez bilgilendirmesi.', True),
+                                      ('telif.html', 'Telif hakları ve kullanım koşulları', 'Ders Kutusu içeriklerinin telif hakları ve kullanım koşulları.', True),
                                       ('404.html', 'Sayfa bulunamadı', 'Aradığınız sayfa bulunamadı.', False)]:
     eski = (PUBLIC / ad).read_text(encoding='utf-8')
     govde = eski[eski.index('<main'):eski.index('</main>')]
@@ -279,4 +280,4 @@ for ad, baslik, aciklama, kanonik in [('gizlilik.html', 'Gizlilik ve çerezler',
     html = sayfa(ad, baslik, aciklama, govde, kanonik=kanonik).replace('</body>', (betik + '\n' if betik else '') + '</body>')
     (PUBLIC / ad).write_text(html, encoding='utf-8')
 
-print('üretildi:', ', '.join([*GOVDE, 'gizlilik.html', '404.html']))
+print('üretildi:', ', '.join([*GOVDE, 'gizlilik.html', 'telif.html', '404.html']))

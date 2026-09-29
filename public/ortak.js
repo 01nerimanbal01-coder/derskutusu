@@ -55,6 +55,14 @@ if (menuDugme) {
 
 $$('[data-yil]').forEach((e) => { e.textContent = new Date().getFullYear(); });
 
+// Toplam ziyaret (Cloudflare Web Analytics toplu verisinden günde bir kez üretilir: araclar/ziyaret_guncelle.py)
+veri('ziyaret.json').then((z) => {
+  const yer = $('#ziyaret');
+  if (!yer || !z || !(z.toplam > 0)) return;
+  yer.textContent = `Toplam ziyaret: ${z.toplam.toLocaleString('tr-TR')}`;
+  yer.hidden = false;
+});
+
 ortakVeri.then(({ ayar }) => {
   for (const ag of ['youtube', 'instagram', 'facebook']) {
     const adres = ayar[ag]?.adres;
