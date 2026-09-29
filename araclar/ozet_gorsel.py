@@ -106,13 +106,19 @@ def cember():
 
 
 def dikme():
-    ic = '<line x1="30" y1="140" x2="290" y2="140" class="g-ms" stroke-width="3" stroke-linecap="round"/>'
-    ic += '<line x1="160" y1="140" x2="160" y2="24" class="g-ts" stroke-width="3" stroke-linecap="round"/>'
-    ic += '<rect x="160" y="122" width="18" height="18" class="g-ta"/><path d="M160 122 H178 V140" class="g-ts" stroke-width="2"/>'
-    ic += '<circle cx="160" cy="140" r="5.5" class="g-tf"/>'
-    ic += '<text x="166" y="162" font-size="16" font-weight="800" class="g-tf">P</text><text x="276" y="132" font-size="16" font-weight="700" class="g-mf">d</text>'
-    ic += '<text x="186" y="118" font-size="13" class="g-s">90 derece</text>'
-    return svg(320, 170, ic, 'd doğrusuna P noktasından çizilen dikme; dik açı 90 derece')
+    """Doğrunun dışındaki P noktasından çizilen dikme (en kısa doğru parçası); diklik ⊥ ile gösterilir."""
+    ic = '<line x1="30" y1="140" x2="300" y2="140" class="g-ms" stroke-width="3" stroke-linecap="round"/>'
+    ic += '<line x1="160" y1="34" x2="74" y2="140" class="g-c" stroke-width="1.6" stroke-dasharray="5 5"/>'
+    ic += '<line x1="160" y1="34" x2="248" y2="140" class="g-c" stroke-width="1.6" stroke-dasharray="5 5"/>'
+    ic += '<line x1="160" y1="34" x2="160" y2="140" class="g-ts" stroke-width="3" stroke-linecap="round"/>'
+    ic += '<rect x="160" y="124" width="16" height="16" class="g-ta"/><path d="M160 124 H176 V140" class="g-ts" stroke-width="2"/>'
+    ic += '<circle cx="160" cy="34" r="5.5" class="g-tf"/><circle cx="160" cy="140" r="4.5" class="g-tf"/>'
+    ic += '<text x="160" y="20" text-anchor="middle" font-size="16" font-weight="800" class="g-tf">P</text>'
+    ic += '<text x="160" y="164" text-anchor="middle" font-size="16" font-weight="800" class="g-tf">H</text>'
+    ic += '<text x="292" y="132" font-size="16" font-weight="700" class="g-mf">d</text>'
+    ic += '<text x="196" y="174" font-size="14" font-weight="700" class="g-tf">[PH] ⊥ d</text>'
+    ic += '<text x="165" y="200" text-anchor="middle" font-size="12.5" class="g-s">Kesikli çizgiler daha uzundur; dikme en kısa doğru parçasıdır.</text>'
+    return svg(330, 210, ic, 'd doğrusunun dışındaki P noktasından d doğrusuna çizilen dikme PH; diklik sembolü; öteki doğru parçaları daha uzun')
 
 
 def ornek_sekiller():
