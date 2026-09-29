@@ -78,3 +78,30 @@ ortakVeri.then(({ ayar }) => {
     });
   }
 });
+
+// Konu özeti: sağda "Bu sayfada" paneli (geniş ekranda). Başlıklar sayfadaki h2'lerden kurulur.
+(() => {
+  const ic = $('.ozet-ic');
+  if (!ic) return;
+  const basliklar = $$('h2', ic).filter((h) => h.textContent.trim() && !h.closest('.ozet-yan'));
+  if (basliklar.length < 2) return;
+  const kisa = (t) => t.toLocaleLowerCase('tr').replace(/[^a-z0-9çğıöşü]+/g, '-').replace(/^-|-$/g, '');
+  const baglar = basliklar.map((h, i) => {
+    if (!h.id) h.id = kisa(h.textContent) || `bolum-${i + 1}`;
+    return el('li', {}, el('a', { href: `#${h.id}` }, h.textContent.trim()));
+  });
+  const yan = el('aside', { sinif: 'ozet-yan', 'aria-label': 'Bu sayfada' },
+    el('nav', {}, el('h2', {}, 'Bu sayfada'), el('ol', {}, baglar),
+      $('.etk') ? el('a', { sinif: 'dugme ana yan-dugme', href: `#${($('.etk').closest('section') || $('.etk')).id || basliklar[basliklar.length - 1].id}` }, 'Etkinliklere geç') : null));
+  ic.classList.add('yanli');
+  ic.prepend(yan);
+  if ('IntersectionObserver' in window) {
+    const gozcu = new IntersectionObserver((kayit) => {
+      const gorunen = kayit.find((k) => k.isIntersecting);
+      if (!gorunen) return;
+      $$('.ozet-yan a.etkin').forEach((a) => a.classList.remove('etkin'));
+      $(`.ozet-yan a[href="#${CSS.escape(gorunen.target.id)}"]`)?.classList.add('etkin');
+    }, { rootMargin: '-90px 0px -65% 0px' });
+    basliklar.forEach((h) => gozcu.observe(h));
+  }
+})();

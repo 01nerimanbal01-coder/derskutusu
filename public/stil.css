@@ -479,8 +479,25 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
 .kalem-katman.yerel { position: absolute; inset: 0; z-index: 3; }
 .kalem-katman.yerel .tahta-cubuk { position: fixed; }
 /* Konu özetleri */
-.ozet-bas h1 { max-width: 860px; }
-.ozet-ic { max-width: 860px; }
+.ozet-bas h1 { max-width: 900px; }
+/* Özet gövdesi menüyle aynı genişlikte: solda metin, sağda sabit "Bu sayfada" paneli (kullanıcı 29.09: "neden dar kullanılıyor") */
+.ozet-ic { max-width: none; }
+@media (min-width: 1100px) {
+  .ozet-ic.yanli { display: grid; grid-template-columns: minmax(0, 1fr) 270px; column-gap: 48px; align-items: start; }
+  .ozet-ic.yanli > * { grid-column: 1; }
+  .ozet-ic.yanli > .ozet-yan { grid-column: 2; grid-row: 1 / span 200; position: sticky; top: 92px; }
+}
+.ozet-yan { display: none; }
+@media (min-width: 1100px) { .ozet-yan { display: block; } }
+.ozet-yan nav { padding: 18px 18px 14px; border: 1px solid var(--cizgi); border-radius: var(--kose); background: var(--yuzey); box-shadow: var(--golge); }
+.ozet-yan h2 { font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--soluk); margin: 0 0 10px; }
+.ozet-yan ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; counter-reset: yan; }
+.ozet-yan li a { display: flex; gap: 10px; padding: 7px 10px; border-radius: 10px; color: var(--metin); font-size: 14.5px; line-height: 1.35; }
+.ozet-yan li a::before { counter-increment: yan; content: counter(yan); flex: none; width: 22px; height: 22px; display: grid; place-items: center;
+  border-radius: 7px; background: var(--vurgu-acik); color: var(--vurgu); font-size: 12px; font-weight: 800; }
+.ozet-yan li a:hover, .ozet-yan li a.etkin { background: var(--yuzey-2); text-decoration: none; }
+.ozet-yan li a.etkin { color: var(--vurgu); font-weight: 700; }
+.ozet-yan .yan-dugme { display: flex; margin-top: 12px; width: 100%; justify-content: center; }
 .ozet-giris { font-size: 18px; line-height: 1.7; margin: 8px 0 8px; }
 .ozet-cikti { padding: 14px 18px; border-left: 4px solid var(--vurgu); background: var(--vurgu-acik); border-radius: 0 12px 12px 0; font-size: 14.5px; margin-bottom: 20px; }
 .ozet-cikti ul { margin: 6px 0 0 18px; }
