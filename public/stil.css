@@ -431,11 +431,13 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
 .tahta-ust { touch-action: none; }
 .kalem-katman { position: fixed; inset: 0; z-index: 60; }
 .kalem-acik .kalem-katman .tahta-ust { cursor: crosshair; }
-.kalem-dugme { position: fixed; right: 18px; bottom: 18px; z-index: 55; width: 52px; height: 52px; border-radius: 16px; border: 0;
-  background: var(--vurgu); color: #fff; box-shadow: var(--golge-buyuk); cursor: pointer; display: grid; place-items: center; }
+.kalem-dugme { position: fixed; right: 18px; bottom: 18px; z-index: 55; height: 50px; padding: 0 18px 0 15px; border-radius: 16px; border: 0;
+  background: var(--vurgu); color: #fff; box-shadow: var(--golge-buyuk); cursor: pointer; display: inline-flex; align-items: center; gap: 8px;
+  font: inherit; font-size: 15px; font-weight: 700; }
+.kalem-dugme[hidden] { display: none; }
 .kalem-dugme svg { width: 24px; height: 24px; }
 .kalem-dugme:hover { transform: translateY(-1px); }
-.tahta-cubuk { position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%); z-index: 2; display: flex; gap: 6px; flex-wrap: wrap; justify-content: center;
+.tahta-cubuk { position: absolute; left: 0; right: 0; margin-inline: auto; width: max-content; bottom: 16px; z-index: 2; display: flex; gap: 6px; flex-wrap: wrap; justify-content: center;
   max-width: calc(100% - 24px); padding: 6px; border-radius: 16px; background: rgb(17 26 46 / .92); box-shadow: 0 10px 30px rgb(0 0 0 / .3); backdrop-filter: blur(6px); }
 .kalem-katman .tahta-cubuk { position: fixed; }
 .tahta-grup { display: flex; gap: 2px; padding: 0 4px; border-right: 1px solid rgb(255 255 255 / .14); }
@@ -448,6 +450,9 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
 .tahta-cubuk .renk[aria-pressed="true"] span { border-color: #fff; box-shadow: 0 0 0 2px rgb(255 255 255 / .35); }
 .tahta-cubuk .kalin i { display: block; border-radius: 50%; background: #e9eef6; }
 .tahta-cubuk .kapat { color: #ffb4ad; }
+.tahta-cubuk button:disabled { opacity: .3; cursor: default; background: transparent; }
+.kalem-ipucu { position: fixed; left: 0; right: 0; top: 84px; margin-inline: auto; width: max-content; max-width: calc(100% - 32px); z-index: 3;
+  padding: 10px 16px; border-radius: 12px; background: rgb(17 26 46 / .92); color: #fff; font-size: 14px; pointer-events: none; box-shadow: 0 10px 30px rgb(0 0 0 / .3); }
 .tahta-sayfa { padding: 0; }
 .tahta-ustbar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; padding: 10px 0; }
 .tahta-ustbar h1 { font-size: 20px; margin-right: auto; }
@@ -457,7 +462,7 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
 .tahta-alan { position: relative; height: calc(100vh - 68px - 62px); min-height: 420px; border-top: 1px solid var(--cizgi); background: #fdfdfb; overflow: hidden; }
 .tahta-alan:fullscreen { height: 100vh; }
 #tahta { position: absolute; inset: 0; }
-@media (max-width: 560px) { .tahta-cubuk button { width: 34px; height: 34px; } .kalem-dugme { width: 46px; height: 46px; right: 12px; bottom: 12px; } }
+@media (max-width: 560px) { .tahta-cubuk button { width: 34px; height: 34px; } .kalem-dugme { height: 46px; padding: 0 14px 0 12px; font-size: 14px; right: 12px; bottom: 12px; } }
 @media print { .kalem-dugme, .kalem-katman { display: none; } }
 /* PDF görüntüleyici (PDF.js) + kalem */
 .g-alan { position: relative; }
