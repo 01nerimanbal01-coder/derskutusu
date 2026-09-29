@@ -20,6 +20,10 @@ ust = re.sub(r'href="([a-z0-9-]+\.html)', r'href="/\1', re.sub(r'href="#', 'href
 alt = re.sub(r'href="([a-z0-9-]+\.html)', r'href="/\1', re.sub(r'href="#', 'href="/#', alt))
 
 
+# Çerezsiz ziyaret sayacı (Cloudflare Web Analytics; kişisel veri toplamaz, gizlilik.html'de açıklanır)
+SAYAC = '''<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fffb5e8a709947ee9ba14ea753d96275"}'></script><!-- End Cloudflare Web Analytics -->'''
+
+
 def sayfa(ad, baslik, aciklama, govde, betikler=(), kanonik=True):
     kan = f'<link rel="canonical" href="https://derskutusu.com/{ad}">\n' if kanonik else '<meta name="robots" content="noindex">\n'
     js = ''.join(f'<script src="/{b}?v={SURUM}"></script>\n' for b in ('ortak.js', *betikler, 'arama.js', 'tahta.js'))
@@ -54,7 +58,8 @@ def sayfa(ad, baslik, aciklama, govde, betikler=(), kanonik=True):
 
 {alt}
 
-{js}</body>
+{js}{SAYAC}
+</body>
 </html>
 '''
 
