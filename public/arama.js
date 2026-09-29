@@ -177,6 +177,7 @@ const Arama = (() => {
     ekle({ tip: 'sayfa', baslik: 'Öğretmen köşesi', aciklama: 'Yıllık planlar, günlük planlar, yazılı soruları ve çalışma kâğıtları.', adres: '/icerikler.html?kitle=ogretmen', kitle: 'ogretmen', ek: 'ogretmen' });
     ekle({ tip: 'sayfa', baslik: 'İletişim', aciklama: 'Bize e-posta ve sosyal medyadan ulaşın.', adres: '/#iletisim', ek: 'iletisim eposta mail adres' });
     ekle({ tip: 'sayfa', baslik: 'Gizlilik ve çerezler', aciklama: 'Kişisel veriler ve çerez tercihleri.', adres: '/gizlilik.html', ek: 'kvkk cerez gizlilik' });
+    ekle({ tip: 'sayfa', alt: 'sinav', baslik: 'Sınavlar: LGS ve YKS', aciklama: 'LGS ve YKS oturumları, testler, soru sayıları ve süreler; çıkmış sorular ve kılavuzlar.', adres: '/sinav.html', ek: 'lgs yks tyt ayt ydt sinav' });
     ekle({ tip: 'sayfa', baslik: 'Akıllı tahta', aciklama: 'Kalem, fosforlu kalem, silgi; kareli, çizgili zemin. Sayfaların ve PDF’lerin üzerine de yazılabilir.', adres: '/tahta.html', ek: 'tahta kalem cizim yazi beyaz tahta akilli tahta' });
     ekle({ tip: 'sayfa', baslik: 'Katkıda bulun', aciklama: 'Hata bildirin, içerik önerin, paylaşın, materyal gönderin.', adres: '/katki.html', ek: 'katki destek yardim hata oneri materyal gonder' });
     ekle({ tip: 'sayfa', baslik: 'Sosyal medya', aciklama: 'YouTube, Instagram ve Facebook hesaplarımız.', adres: '/#sosyal', ek: 'youtube instagram facebook takip' });
@@ -354,6 +355,7 @@ const Arama = (() => {
         if (b.alt === 'sinif' && !(s.sinif && !s.dersler.length && b.sinif === s.sinif)) continue;
         if (b.alt === 'ders' && !(s.dersler.includes(b.ders) && s.sinif === b.sinif)) continue;
         if (b.alt === 'ders-tum' && !(s.dersler.includes(b.ders) && !s.sinif)) continue;
+        if (b.alt === 'sinav') { if (!s.niyetler.some((n) => n.grup === 'lgs' || n.grup === 'yks' || n.ad === 'Sınav')) continue; p += 45; sonuc.push({ b, p }); continue; }
         p += grupVar ? 15 : s.niyetler.length ? 35 : 60;
       } else if (b.tip === 'sayfa') {
         const { toplam, bulunan } = terimPuani(b, [...s.serbest, ...s.ipucu], yaziyor);

@@ -263,6 +263,61 @@ GOVDE = {
   </script>''', ()),
 }
 
+
+def _sinav_govde():
+    """Sınavlar sayfası (LGS, YKS): veri/sinavlar.json + veri/belgeler.json'dan durağan HTML."""
+    import html as _h
+    import json as _j
+    sv = _j.loads((PUBLIC / 'veri' / 'sinavlar.json').read_text(encoding='utf-8'))
+    bl = {b['kimlik']: b for g in _j.loads((PUBLIC / 'veri' / 'belgeler.json').read_text(encoding='utf-8'))['gruplar'] for b in g['belgeler']}
+    e = _h.escape
+    gecis = ''.join(f'<a href="#{x["kimlik"]}">{e(x["ad"])}</a>' for x in sv['sinavlar'])
+    bolumler = ''
+    for n, x in enumerate(sv['sinavlar']):
+        lgs = x['kimlik'] == 'lgs'
+        kartlar = ''
+        for o in x['oturumlar']:
+            satir = ''.join(
+                f'<tr><td><a href="/icerikler.html?{"sinif=8&amp;" if lgs else ""}ders={t[2]}">{e(t[0])}</a></td><td class="sayi">{t[1]}</td></tr>'
+                for t in o['testler'])
+            kartlar += (f'<article class="kart sinav-oturum"><h3>{e(o["ad"])}</h3>'
+                        f'<p class="sinav-ozet"><b>{o["toplam"]}</b> soru · <b>{o["sure"]}</b> dakika</p>'
+                        f'<table class="sinav-tablo"><thead><tr><th>Test</th><th class="sayi">Soru</th></tr></thead><tbody>{satir}</tbody></table></article>')
+        belge = ''.join(
+            f'<li><a href="/goruntule.html?b={k}">{e(bl[k]["baslik"])}</a><span>{e(bl[k].get("kaynak", ""))}</span></li>'
+            for k in x['belgeler'] if k in bl)
+        if lgs:
+            hazirlik = ('<li><a href="/sinif.html?no=8">8. sınıfın bütün dersleri</a></li>'
+                        '<li><a href="/icerikler.html?sinif=8&amp;tur=Konu%20anlat%C4%B1m%C4%B1">8. sınıf konu özetleri</a></li>'
+                        '<li><a href="/icerikler.html?sinif=8&amp;tur=Yaz%C4%B1l%C4%B1%20senaryosu">8. sınıf ortak yazılı senaryoları</a></li>'
+                        '<li><a href="/icerikler.html?sinif=8&amp;tur=Ders%20kitab%C4%B1">8. sınıf ders kitapları</a></li>')
+        else:
+            hazirlik = ''.join(f'<li><a href="/sinif.html?no={k}">{k}. sınıfın bütün dersleri</a></li>' for k in x['siniflar'])
+            hazirlik += '<li><a href="/icerikler.html?tur=Ders%20kitab%C4%B1">Lise ders kitapları</a></li>'
+        bolumler += f'''  <section class="bolum{' koyu-zemin' if n % 2 else ''}" id="{x['kimlik']}">
+    <div class="kap">
+      <div class="bolum-bas"><div><p class="ust-baslik">{e(x['kurum'])} · {e(x['kim'])}</p><h2>{e(x['ad'])}: {e(x['uzun_ad'])}</h2><p>{e(x['not'])}</p></div></div>
+      <div class="sinav-oturumlar">{kartlar}</div>
+      <div class="sinav-alt">
+        <div><h3>Resmî belgeler ve çıkmış sorular</h3><ul class="sinav-liste">{belge}</ul></div>
+        <div><h3>Sitede hazırlık</h3><ul class="sinav-liste">{hazirlik}</ul></div>
+      </div>
+    </div>
+  </section>
+'''
+    return f'''  <section class="sayfa-bas">
+    <div class="kap">
+      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><span>Sınavlar</span></nav>
+      <h1>Sınavlar</h1>
+      <p>LGS ve YKS'nin oturumları, testleri ve soru sayıları; çıkmış sorular, kılavuzlar ve sitedeki hazırlık kaynakları. Bilgiler resmî belgelerden alınmıştır; yeni yılın belgeleri yayımlanınca güncellenir.</p>
+      <nav class="sinif-gecis" aria-label="Sınavlar">{gecis}</nav>
+    </div>
+  </section>
+{bolumler}'''
+
+
+GOVDE['sinav.html'] = ('Sınavlar: LGS ve YKS', 'LGS ve YKS: oturumlar, testler, soru sayıları ve süreler; çıkmış sorular, kılavuzlar ve hazırlık kaynakları.', _sinav_govde(), ())
+
 for ad, (baslik, aciklama, govde, betikler) in GOVDE.items():
     (PUBLIC / ad).write_text(sayfa(ad, baslik, aciklama, govde, betikler), encoding='utf-8')
 

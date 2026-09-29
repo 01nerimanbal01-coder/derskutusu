@@ -619,10 +619,10 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
 .logo-alt .logo-yazi { height: 38px; }
 #ana-menu > a { white-space: nowrap; }
 @media (max-width: 1360px) { .menu > a[href$="#sosyal"] { display: none; } }
-@media (max-width: 1180px) and (min-width: 1101px) { .ust .logo-yazi { height: 30px; } .ust .logo-muhur { width: 42px; height: 42px; } .menu > a { padding: 8px 9px; } }
+@media (max-width: 1300px) and (min-width: 1181px) { .ust .logo-yazi { height: 30px; } .ust .logo-muhur { width: 42px; height: 42px; } .menu > a { padding: 8px 9px; } }
 @media (max-width: 560px) { .ust .logo-yazi { display: none; } .ust .logo-muhur { width: 40px; height: 40px; } }
-/* Logo genişledi (29.09): menü 1100 px'e kadar açılır menü olur */
-@media (max-width: 1100px) {
+/* Logo genişledi (29.09): menü 1180 px'e kadar açılır menü olur */
+@media (max-width: 1180px) {
   .menu-dugme { display: block; }
   .menu { position: fixed; inset: 68px 0 auto; flex-direction: column; align-items: stretch; gap: 2px; margin: 0; padding: 12px 20px 20px;
     background: var(--zemin); border-bottom: 1px solid var(--cizgi); box-shadow: var(--golge-buyuk);
@@ -633,4 +633,19 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
   .ust-arama { max-width: none; margin-left: 4px; }
   .menu > a[href$="#sosyal"] { display: block; }
 }
+/* Sınavlar sayfası */
+.sinav-oturumlar { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 18px; }
+.sinav-oturum h3 { font-size: 18px; margin-bottom: 4px; }
+.sinav-ozet { color: var(--soluk); margin: 0 0 12px; }
+.sinav-ozet b { color: var(--vurgu); font-size: 18px; }
+.sinav-tablo { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+.sinav-tablo th { text-align: left; font-size: 12.5px; color: var(--soluk); padding: 6px 0; border-bottom: 1px solid var(--cizgi); }
+.sinav-tablo td { padding: 8px 0; border-bottom: 1px solid var(--cizgi); vertical-align: top; }
+.sinav-tablo .sayi { text-align: right; width: 56px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.sinav-alt { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 28px; }
+.sinav-alt h3 { font-size: 17px; margin-bottom: 10px; }
+.sinav-liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.sinav-liste li { display: flex; justify-content: space-between; gap: 12px; padding: 10px 14px; border: 1px solid var(--cizgi); border-radius: 12px; background: var(--yuzey); }
+.sinav-liste span { color: var(--soluk); font-size: 13px; white-space: nowrap; }
+@media (max-width: 760px) { .sinav-alt { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }

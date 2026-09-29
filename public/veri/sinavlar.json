@@ -1,0 +1,35 @@
+{
+ "aciklama": "Sınav bölümü verileri. Kaynaklar: 2026 LGS sözel ve sayısal soru kitapçıklarının kapakları (MEB ÖDSGM); 2026-YKS Kılavuzu Tablo 1A-1B ve 3.4 (ÖSYM). Yeni yılın resmî belgeleri yayımlanınca güncellenir.",
+ "guncelleme": "2026-09-29",
+ "sinavlar": [
+  {
+   "kimlik": "lgs",
+   "ad": "LGS",
+   "uzun_ad": "Liselere Geçiş Sistemi merkezî sınavı",
+   "kim": "8. sınıf öğrencileri",
+   "kurum": "MEB · ÖDSGM",
+   "not": "Sınav tek gün, iki oturumda yapılır. Aşağıdaki dağılım 2026 LGS soru kitapçıklarının kapağındaki bilgidir.",
+   "oturumlar": [
+    {"ad": "Sözel bölüm", "sure": 75, "toplam": 50, "testler": [["Türkçe", 20, "turkce"], ["T.C. İnkılap Tarihi ve Atatürkçülük", 10, "tc-inkilap-tarihi-ve-ataturkculuk"], ["Din Kültürü ve Ahlak Bilgisi", 10, "din-kulturu-ve-ahlak-bilgisi"], ["Yabancı Dil (İngilizce)", 10, "ingilizce"]]},
+    {"ad": "Sayısal bölüm", "sure": 80, "toplam": 40, "testler": [["Matematik", 20, "matematik"], ["Fen Bilimleri", 20, "fen-bilimleri"]]}
+   ],
+   "siniflar": [8],
+   "belgeler": ["lgs-ornek-sorulari", "2026-lgs-soru-kitapciklari-ve-cevap-anahtarlari", "2026-lgs-sayisal-bolum-a-kitapcigi", "2026-lgs-sozel-bolum-a-kitapcigi"]
+  },
+  {
+   "kimlik": "yks",
+   "ad": "YKS",
+   "uzun_ad": "Yükseköğretim Kurumları Sınavı",
+   "kim": "Lise son sınıf öğrencileri ve mezunlar",
+   "kurum": "ÖSYM",
+   "not": "YKS üç oturumludur. TYT bütün adaylar için zorunludur; SAY, SÖZ ve EA puanıyla lisans programına yerleşmek isteyenler AYT'ye, DİL puanı için YDT'ye girer. Dağılım 2026-YKS Kılavuzu'ndaki bilgidir.",
+   "oturumlar": [
+    {"ad": "1. oturum: Temel Yeterlilik Testi (TYT)", "sure": 165, "toplam": 120, "testler": [["Türkçe", 40, "turk-dili-ve-edebiyati"], ["Sosyal Bilimler (Tarih 5, Coğrafya 5, Felsefe 5, Din Kültürü ve Ahlak Bilgisi 5)", 20, "tarih"], ["Temel Matematik", 40, "matematik"], ["Fen Bilimleri (Fizik 7, Kimya 7, Biyoloji 6)", 20, "fizik"]]},
+    {"ad": "2. oturum: Alan Yeterlilik Testleri (AYT)", "sure": 180, "toplam": 160, "testler": [["Türk Dili ve Edebiyatı-Sosyal Bilimler-1 (Türk Dili ve Edebiyatı 24, Tarih-1 10, Coğrafya-1 6)", 40, "turk-dili-ve-edebiyati"], ["Sosyal Bilimler-2 (Tarih-2 11, Coğrafya-2 11, Felsefe grubu 12, Din Kültürü ve Ahlak Bilgisi 6)", 40, "cografya"], ["Matematik", 40, "matematik"], ["Fen Bilimleri (Fizik 14, Kimya 13, Biyoloji 13)", 40, "kimya"]]},
+    {"ad": "3. oturum: Yabancı Dil Testi (YDT)", "sure": 120, "toplam": 80, "testler": [["Yabancı Dil (Almanca, Arapça, Fransızca, İngilizce ya da Rusça)", 80, "ingilizce"]]}
+   ],
+   "siniflar": [9, 10, 11, 12],
+   "belgeler": ["2026-yks-kilavuzu", "2026-yks-temel-soru-kitapciklari-ve-cevap-anahtarlari", "yks-sinav-sorulari-ve-cevaplari-arsiv", "yks-kilavuzlari-arsiv", "osym-sinav-takvimi"]
+  }
+ ]
+}
