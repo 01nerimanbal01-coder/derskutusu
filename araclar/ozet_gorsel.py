@@ -834,6 +834,39 @@ def din5(o):
             b['gorsel'] = insan_evren_donguleri()
 
 
+# ---------- 5. sınıf İngilizce: okul kuralları levhaları ----------
+def okul_kurallari():
+    ic = ''
+    levha = [(16, 'Don’t run', 'in the classroom.', 'kosu'), (130, 'Don’t shout', 'in the library.', 'ses'),
+             (244, 'You mustn’t', 'chew gum.', 'sakiz'), (358, 'Line up,', 'nice and straight!', 'sira')]
+    for x, s1, s2, tur in levha:
+        cx, cy = x + 49, 62
+        yasak = tur != 'sira'
+        ic += f'<rect x="{x}" y="12" width="98" height="150" rx="12" class="{"g-ta" if yasak else "g-ya"}"/><rect x="{x}" y="12" width="98" height="150" rx="12" class="{"g-ts" if yasak else "g-ys"}" stroke-width="2"/>'
+        ic += f'<circle cx="{cx}" cy="{cy}" r="34" class="g-z"/><circle cx="{cx}" cy="{cy}" r="34" class="{"g-ts" if yasak else "g-ys"}" stroke-width="5"/>'
+        if tur == 'kosu':
+            ic += f'<circle cx="{cx + 6}" cy="{cy - 18}" r="5" class="g-mf"/><path d="M{cx + 4} {cy - 11}L{cx - 2} {cy + 6}M{cx - 2} {cy + 6}L{cx - 12} {cy + 18}M{cx - 2} {cy + 6}L{cx + 10} {cy + 16}M{cx + 2} {cy - 4}L{cx - 12} {cy - 6}M{cx + 2} {cy - 4}L{cx + 14} {cy + 2}" class="g-ms" stroke-width="4" stroke-linecap="round" fill="none"/>'
+        elif tur == 'ses':
+            ic += f'<path d="M{cx - 16} {cy - 6}h8l10 -9v30l-10 -9h-8z" class="g-mf"/><path d="M{cx + 8} {cy - 8}q6 8 0 16M{cx + 13} {cy - 13}q10 13 0 26" class="g-ms" stroke-width="2.5" fill="none" stroke-linecap="round"/>'
+        elif tur == 'sakiz':
+            ic += f'<circle cx="{cx}" cy="{cy}" r="14" class="g-of"/><circle cx="{cx - 5}" cy="{cy - 5}" r="4" class="g-z"/>'
+        else:
+            for i in range(3):
+                ic += f'<circle cx="{cx - 16 + i * 16}" cy="{cy - 8}" r="5" class="g-mf"/><rect x="{cx - 21 + i * 16}" y="{cy - 1}" width="10" height="18" rx="4" class="g-mf"/>'
+        if yasak:
+            ic += f'<line x1="{cx - 24}" y1="{cy + 24}" x2="{cx + 24}" y2="{cy - 24}" class="g-ts" stroke-width="5" stroke-linecap="round"/>'
+        f = 'g-tf' if yasak else 'g-yf'
+        ic += f'<text x="{cx}" y="124" text-anchor="middle" font-size="12" font-weight="800" class="{f}">{s1}</text><text x="{cx}" y="141" text-anchor="middle" font-size="11.5" class="g-y">{s2}</text>'
+    ic += '<text x="236" y="186" text-anchor="middle" font-size="12.5" class="g-s">Don’t run = You mustn’t run = You can’t run</text>'
+    return svg(472, 196, ic, 'Okul kuralları levhaları: Don’t run in the classroom, Don’t shout in the library, You mustn’t chew gum, Line up nice and straight')
+
+
+def ingilizce5(o):
+    for b in o['bolumler']:
+        if b['baslik'] == 'Rules at school':
+            b['gorsel'] = okul_kurallari()
+
+
 if __name__ == '__main__':
     yaz('5-matematik-1.json', mat5)
     yaz('8-matematik-1.json', mat8)
@@ -861,4 +894,6 @@ if __name__ == '__main__':
         yaz('7-turkce-1.json', turkce7)
     if (OZET / '5-din-kulturu-ve-ahlak-bilgisi-1.json').exists():
         yaz('5-din-kulturu-ve-ahlak-bilgisi-1.json', din5)
+    if (OZET / '5-ingilizce-4.json').exists():
+        yaz('5-ingilizce-4.json', ingilizce5)
     print('görseller yazıldı')
