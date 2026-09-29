@@ -340,6 +340,22 @@ const Tahta = (() => {
       zemin: (z) => { d.zemin = z; hepsiniCiz(); },
       yukle: (cizgiler) => { d.cizgiler = cizgiler; d.gecmis = []; d.ileri = []; hepsiniCiz(); guncelle(); },
       png: () => alt.toDataURL('image/png'),
+      // İndirilen görüntüde sağ alt köşede Ders Kutusu mührü ve adresi (kullanıcı 29.09: "indirilebilen her şeyin üzerinde logo olmalı")
+      pngLogolu: () => new Promise((coz) => {
+        const c = document.createElement('canvas'); c.width = alt.width; c.height = alt.height;
+        const x = c.getContext('2d');
+        x.fillStyle = '#fff'; x.fillRect(0, 0, c.width, c.height); x.drawImage(alt, 0, 0);
+        const img = new Image();
+        const bitir = () => {
+          const b = 52 * oran, p = 14 * oran;
+          try { x.drawImage(img, c.width - b - p, c.height - b - p, b, b); } catch { /* mühür yüklenemedi: yalnız adres */ }
+          x.font = `700 ${13 * oran}px -apple-system, "Segoe UI", Roboto, Arial, sans-serif`;
+          x.fillStyle = '#0b2257'; x.textAlign = 'right'; x.textBaseline = 'middle';
+          x.fillText('derskutusu.com', c.width - b - p - 8 * oran, c.height - p - b / 2);
+          coz(c.toDataURL('image/png'));
+        };
+        img.onload = bitir; img.onerror = bitir; img.src = '/simge-192.png';
+      }),
       // Yakınlaştırmada çizgiler içerikle birlikte ölçeklenir.
       olcekle: (k) => {
         const hepsi = new Set([...d.cizgiler, ...[...d.gecmis, ...d.ileri].flatMap((g) => g.cizgiler || (g.cizgi ? [g.cizgi] : [...g.eski, ...g.yeni]))]);
@@ -365,7 +381,7 @@ if (typeof document !== 'undefined') {
     document.getElementById('t-sonraki').addEventListener('click', () => { if (no === sayfalar.length - 1) sayfalar.push([]); git(no + 1); });
     document.getElementById('t-zemin').addEventListener('change', (o) => t.zemin(o.target.value || null));
     document.getElementById('t-kaydet').addEventListener('click', () => {
-      const a = document.createElement('a'); a.href = t.png(); a.download = `tahta-${no + 1}.png`; a.click();
+      t.pngLogolu().then((adres) => { const a = document.createElement('a'); a.href = adres; a.download = `derskutusu-tahta-${no + 1}.png`; a.click(); });
     });
     document.getElementById('t-tam').addEventListener('click', () => (document.fullscreenElement ? document.exitFullscreen() : document.getElementById('tahta-alan').requestFullscreen?.()));
     sayfaYaz();
