@@ -716,6 +716,57 @@ def turkce5(o):
             b['gorsel'] = cumle_merdiveni()
 
 
+# ---------- 6. sınıf Türkçe: Kaşgarlı Mahmut, göz uygulamaları ----------
+def kelime_seyyahi():
+    ic = '<defs>' + ok_isareti('okKS', 'g-c') + '</defs>'
+    adim = [(16, 'Merak', ('Her şeyin nedenini', 'araştırır: “Neden', 'tepük denmiş?”'), ('g-ma', 'g-ms', 'g-mf')),
+            (170, 'Yolculuk', ('Türk boylarını bir', 'uçtan bir uca', 'gezer.'), ('g-ya', 'g-ys', 'g-yf')),
+            (324, 'Sözlük', ('Dîvânu Lugâti’t-Türk:', 'Türkçenin ilk', 'sözlüğü'), ('g-ta', 'g-ts', 'g-tf'))]
+    for x, bas, satir, (a, s, f) in adim:
+        ic += f'<rect x="{x}" y="12" width="132" height="112" rx="12" class="{a}"/><rect x="{x}" y="12" width="132" height="112" rx="12" class="{s}" stroke-width="2"/>'
+        ic += f'<text x="{x + 66}" y="38" text-anchor="middle" font-size="15" font-weight="800" class="{f}">{bas}</text>'
+        for i, y in enumerate(satir):
+            ic += f'<text x="{x + 66}" y="{62 + i * 18}" text-anchor="middle" font-size="12" class="g-y">{y}</text>'
+    ic += '<line x1="150" y1="68" x2="166" y2="68" class="g-c" stroke-width="2.5" marker-end="url(#okKS)"/>'
+    ic += '<line x1="304" y1="68" x2="320" y2="68" class="g-c" stroke-width="2.5" marker-end="url(#okKS)"/>'
+    ic += '<rect x="170" y="146" width="286" height="92" rx="12" class="g-oa"/><rect x="170" y="146" width="286" height="92" rx="12" class="g-os" stroke-width="2"/>'
+    ic += '<line x1="390" y1="126" x2="390" y2="142" class="g-c" stroke-width="2.5" marker-end="url(#okKS)"/>'
+    ic += '<text x="184" y="170" font-size="13.5" font-weight="800" class="g-of">Sözlükte neler var?</text>'
+    for i, y in enumerate(['7500 kelime', 'Atasözü ve deyim örnekleri', 'Türk boyları ve damgaları (Kayı, Bayat…)']):
+        ic += f'<circle cx="190" cy="{188 + i * 18}" r="3.5" class="g-of"/><text x="200" y="{192 + i * 18}" font-size="12" class="g-y">{y}</text>'
+    ic += '<text x="16" y="170" font-size="13.5" font-weight="800" class="g-mf">Kaşgarlı Mahmut</text>'
+    ic += '<text x="16" y="190" font-size="12" class="g-s">Kelimelere meraklı</text><text x="16" y="207" font-size="12" class="g-s">bir “kelime seyyahı”</text>'
+    return svg(472, 248, ic, 'Kaşgarlı Mahmut: merak, Türk boylarını gezme, Türkçenin ilk sözlüğü Dîvânu Lugâti’t-Türk. Sözlükte 7500 kelime, atasözü ve deyim örnekleri, Türk boyları ve damgaları var')
+
+
+def goz_uygulamalari():
+    ic = '<defs>' + ok_isareti('okGU', 'g-mf') + '</defs>'
+    kart = [(16, ('Sola,', 'sonra sağa')), (130, ('Yukarı,', 'sonra aşağı')), (244, ('Gözle', '“0” çiz')), (358, ('Gözle yatay', '“8” çiz'))]
+    for i, (x, ad) in enumerate(kart):
+        ic += f'<rect x="{x}" y="12" width="98" height="132" rx="12" class="g-ma"/><rect x="{x}" y="12" width="98" height="132" rx="12" class="g-ms" stroke-width="2"/>'
+        cx, cy = x + 49, 70
+        ic += f'<ellipse cx="{cx}" cy="{cy}" rx="20" ry="12" class="g-z"/><ellipse cx="{cx}" cy="{cy}" rx="20" ry="12" class="g-ms" stroke-width="2"/><circle cx="{cx}" cy="{cy}" r="6" class="g-mf"/>'
+        if i == 0:
+            ic += f'<line x1="{cx - 26}" y1="{cy}" x2="{cx - 42}" y2="{cy}" class="g-ms" stroke-width="2.5" marker-end="url(#okGU)"/><line x1="{cx + 26}" y1="{cy}" x2="{cx + 42}" y2="{cy}" class="g-ms" stroke-width="2.5" marker-end="url(#okGU)"/>'
+        elif i == 1:
+            ic += f'<line x1="{cx}" y1="{cy - 16}" x2="{cx}" y2="{cy - 34}" class="g-ms" stroke-width="2.5" marker-end="url(#okGU)"/><line x1="{cx}" y1="{cy + 16}" x2="{cx}" y2="{cy + 34}" class="g-ms" stroke-width="2.5" marker-end="url(#okGU)"/>'
+        elif i == 2:
+            ic += f'<ellipse cx="{cx}" cy="{cy}" rx="34" ry="30" class="g-ts" stroke-width="2" stroke-dasharray="5 4"/>'
+        else:
+            ic += f'<path d="M{cx} {cy} C{cx + 12} {cy - 26} {cx + 44} {cy - 26} {cx + 44} {cy} C{cx + 44} {cy + 26} {cx + 12} {cy + 26} {cx} {cy} C{cx - 12} {cy - 26} {cx - 44} {cy - 26} {cx - 44} {cy} C{cx - 44} {cy + 26} {cx - 12} {cy + 26} {cx} {cy}Z" class="g-ts" stroke-width="2" stroke-dasharray="5 4"/>'
+        ic += f'<text x="{cx}" y="120" text-anchor="middle" font-size="12" font-weight="800" class="g-mf">{ad[0]}</text><text x="{cx}" y="135" text-anchor="middle" font-size="12" font-weight="800" class="g-mf">{ad[1]}</text>'
+    ic += '<text x="236" y="170" text-anchor="middle" font-size="12.5" class="g-s">Başını oynatmadan yalnız gözlerini hareket ettir; her hareketi 15 saniye sürdür.</text>'
+    return svg(472, 180, ic, 'Göz uygulamaları: sola sonra sağa bakma, yukarı sonra aşağı bakma, gözle 0 çizme, gözle yatay 8 çizme; her biri 15 saniye, baş oynatılmadan')
+
+
+def turkce6(o):
+    for b in o['bolumler']:
+        if b['baslik'] == 'Kaşgarlı Mahmut ve ilk Türkçe sözlük':
+            b['gorsel'] = kelime_seyyahi()
+        elif b['baslik'] == 'Tahmin ederek ve akıcı okuma':
+            b['gorsel'] = goz_uygulamalari()
+
+
 if __name__ == '__main__':
     yaz('5-matematik-1.json', mat5)
     yaz('8-matematik-1.json', mat8)
@@ -737,4 +788,6 @@ if __name__ == '__main__':
         yaz('7-sosyal-bilgiler-1.json', sosyal7)
     if (OZET / '5-turkce-1.json').exists():
         yaz('5-turkce-1.json', turkce5)
+    if (OZET / '6-turkce-1.json').exists():
+        yaz('6-turkce-1.json', turkce6)
     print('görseller yazıldı')
