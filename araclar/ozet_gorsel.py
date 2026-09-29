@@ -810,6 +810,30 @@ def turkce7(o):
             b['gorsel'] = eposta_sablonu()
 
 
+# ---------- 5. sınıf Din Kültürü: evrendeki düzen ----------
+def insan_evren_donguleri():
+    ic = ''
+    sutun = [(16, 'İnsan vücudunda', ('Solunum', 'Sindirim', 'Dolaşım'), 'Susayınca su içme ihtiyacı', ('g-ma', 'g-ms', 'g-mf')),
+             (256, 'Evrende', ('Suyun döngüsü', 'Mevsimlerin oluşumu', 'Gece ile gündüzün değişimi'), 'Su ihtiyacını karşılayan su döngüsü', ('g-ya', 'g-ys', 'g-yf'))]
+    for x, bas, madde, ornek, (a, s, f) in sutun:
+        ic += f'<rect x="{x}" y="12" width="200" height="196" rx="12" class="{a}"/><rect x="{x}" y="12" width="200" height="196" rx="12" class="{s}" stroke-width="2"/>'
+        ic += f'<text x="{x + 100}" y="38" text-anchor="middle" font-size="15" font-weight="800" class="{f}">{bas}</text>'
+        for i, m in enumerate(madde):
+            ic += f'<circle cx="{x + 20}" cy="{62 + i * 24}" r="4" class="{f}"/><text x="{x + 32}" y="{66 + i * 24}" font-size="12.5" class="g-y">{m}</text>'
+        ic += f'<rect x="{x + 10}" y="140" width="180" height="56" rx="9" class="g-z"/>'
+        k = ornek.split(' ')
+        ic += f'<text x="{x + 100}" y="163" text-anchor="middle" font-size="12" class="g-y">{" ".join(k[:3])}</text><text x="{x + 100}" y="181" text-anchor="middle" font-size="12" class="g-y">{" ".join(k[3:])}</text>'
+    ic += '<circle cx="236" cy="110" r="16" class="g-tf"/><text x="236" y="115" text-anchor="middle" font-size="15" font-weight="800" class="g-b">=</text>'
+    ic += '<text x="236" y="236" text-anchor="middle" font-size="12.5" class="g-s">İkisinde de her şey bir düzen içinde işler ve denge korunur.</text>'
+    return svg(472, 246, ic, 'İnsan vücudunda solunum, sindirim, dolaşım; evrende suyun döngüsü, mevsimlerin oluşumu, gece ile gündüzün değişimi. Susayınca su içme ihtiyacı ile su döngüsü benzer; ikisinde de denge korunur')
+
+
+def din5(o):
+    for b in o['bolumler']:
+        if b['baslik'] == 'İnsan vücudu ve evrendeki düzen':
+            b['gorsel'] = insan_evren_donguleri()
+
+
 if __name__ == '__main__':
     yaz('5-matematik-1.json', mat5)
     yaz('8-matematik-1.json', mat8)
@@ -835,4 +859,6 @@ if __name__ == '__main__':
         yaz('6-turkce-1.json', turkce6)
     if (OZET / '7-turkce-1.json').exists():
         yaz('7-turkce-1.json', turkce7)
+    if (OZET / '5-din-kulturu-ve-ahlak-bilgisi-1.json').exists():
+        yaz('5-din-kulturu-ve-ahlak-bilgisi-1.json', din5)
     print('görseller yazıldı')
