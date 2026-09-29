@@ -569,6 +569,34 @@ def sosyal5(o):
             b['gorsel'] = gruplar_roller()
 
 
+# ---------- 6. sınıf Sosyal Bilgiler: zaman içinde değişen gruplar ve roller ----------
+def zaman_seridi_roller():
+    ic = '<defs>' + ok_isareti('okZS', 'g-mf') + '</defs>'
+    ic += '<line x1="20" y1="40" x2="452" y2="40" class="g-ms" stroke-width="3" marker-end="url(#okZS)"/>'
+    evre = [(20, 'Çocukluk', ('g-ta', 'g-ts', 'g-tf'), [('Aile', 'çocuk, kardeş'), ('Akraba grubu', 'torun, kuzen, yeğen'), ('Arkadaş grubu', 'planlayıcı, arabulucu')]),
+            (172, 'Okul yılları', ('g-ya', 'g-ys', 'g-yf'), [('Okul ve sınıf', 'öğrenci, nöbetçi,'), ('', 'sınıf başkanı'), ('Müzik grubu', 'solist, gitarist')]),
+            (324, 'Yetişkinlik', ('g-oa', 'g-os', 'g-of'), [('Meslek grubu', 'çalışan, idareci'), ('Odak grubu', 'araştırmacı, lider'), ('Sivil toplum kur.', 'gönüllü')])]
+    for x, ad, (a, s, f), satir in evre:
+        ic += f'<circle cx="{x + 64}" cy="40" r="8" class="{f}"/>'
+        ic += f'<text x="{x + 64}" y="24" text-anchor="middle" font-size="14.5" font-weight="800" class="{f}">{ad}</text>'
+        ic += f'<rect x="{x}" y="60" width="128" height="176" rx="12" class="{a}"/><rect x="{x}" y="60" width="128" height="176" rx="12" class="{s}" stroke-width="2"/>'
+        y = 84
+        for grup, rol in satir:
+            if grup:
+                ic += f'<text x="{x + 10}" y="{y}" font-size="12.5" font-weight="800" class="{f}">{grup}</text>'
+                y += 17
+            ic += f'<text x="{x + 10}" y="{y}" font-size="12" class="g-y">{rol}</text>'
+            y += 22
+    ic += '<text x="236" y="262" text-anchor="middle" font-size="12.5" class="g-s">Zaman ilerledikçe dâhil olduğumuz gruplar ve bu gruplardaki rollerimiz değişir.</text>'
+    return svg(472, 272, ic, 'Zaman şeridi: çocuklukta aile, akraba ve arkadaş grupları; okul yıllarında okul, sınıf ve müzik grubu; yetişkinlikte meslek grubu, odak grubu ve sivil toplum kuruluşu, her birinde roller')
+
+
+def sosyal6(o):
+    for b in o['bolumler']:
+        if b['baslik'] == 'Hayat boyunca değişen gruplarımız':
+            b['gorsel'] = zaman_seridi_roller()
+
+
 if __name__ == '__main__':
     yaz('5-matematik-1.json', mat5)
     yaz('8-matematik-1.json', mat8)
@@ -584,4 +612,6 @@ if __name__ == '__main__':
         yaz('7-fen-bilimleri-1.json', fen7)
     if (OZET / '5-sosyal-bilgiler-1.json').exists():
         yaz('5-sosyal-bilgiler-1.json', sosyal5)
+    if (OZET / '6-sosyal-bilgiler-1.json').exists():
+        yaz('6-sosyal-bilgiler-1.json', sosyal6)
     print('görseller yazıldı')
