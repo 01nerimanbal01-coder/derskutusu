@@ -890,6 +890,37 @@ def ingilizce6(o):
             b['gorsel'] = siklik_zarflari()
 
 
+# ---------- 9. sınıf Biyoloji: biyolojinin dönüm noktaları ----------
+def donum_noktalari():
+    sira = [
+        [('1389–1459', ('Bulaşma', 'yolları')), ('1665', ('Mikroskop',)), ('1838', ('Hücre', 'teorisi')),
+         ('1865', ('Kalıtım', 'kuralları')), ('1928', ('Penisilin',)), ('1953', ('DNA çift', 'sarmal'))],
+        [('1973', ('Rekombinant', 'DNA')), ('1985', ('Polimeraz', 'zincir', 'reaksiyonu')), ('1990–2003', ('İnsan genom', 'projesi')),
+         ('1996', ('Canlı', 'klonlama')), ('2012', ('CRISPR-Cas',)), ('2021', ('mRNA', 'aşıları'))],
+    ]
+    renk = [('g-ms', 'g-mf'), ('g-ys', 'g-yf')]
+    ic = ''
+    for r, satir in enumerate(sira):
+        y0 = 40 + r * 124
+        s, f = renk[r]
+        ic += f'<line x1="18" y1="{y0}" x2="454" y2="{y0}" class="{s}" stroke-width="3" stroke-linecap="round"/>'
+        for i, (yil, ad) in enumerate(satir):
+            x = 46 + i * 76
+            ic += f'<text x="{x}" y="{y0 - 14}" text-anchor="middle" font-size="11.5" font-weight="800" class="{f}">{yil}</text>'
+            ic += f'<circle cx="{x}" cy="{y0}" r="7" class="{f}"/>'
+            for k, satir_ad in enumerate(ad):
+                ic += f'<text x="{x}" y="{y0 + 24 + k * 15}" text-anchor="middle" font-size="11.5" class="g-y">{satir_ad}</text>'
+    ic += '<circle cx="120" cy="262" r="6" class="g-mf"/><text x="132" y="266" font-size="12" class="g-y">1953’e kadar</text>'
+    ic += '<circle cx="262" cy="262" r="6" class="g-yf"/><text x="274" y="266" font-size="12" class="g-y">1973 ve sonrası</text>'
+    return svg(472, 280, ic, 'Biyolojinin dönüm noktaları zaman şeridi: hastalıkların bulaşma yolları (1389–1459), mikroskop (1665), hücre teorisi (1838), kalıtım kuralları (1865), penisilin (1928), DNA çift sarmal (1953); rekombinant DNA (1973), polimeraz zincir reaksiyonu (1985), insan genom projesi (1990–2003), canlı klonlama (1996), CRISPR-Cas (2012), mRNA aşıları (2021)')
+
+
+def biyoloji9(o):
+    for b in o['bolumler']:
+        if b['baslik'] == 'Biyolojinin dönüm noktaları':
+            b['gorsel'] = donum_noktalari()
+
+
 if __name__ == '__main__':
     yaz('5-matematik-1.json', mat5)
     yaz('8-matematik-1.json', mat8)
@@ -921,4 +952,6 @@ if __name__ == '__main__':
         yaz('5-ingilizce-4.json', ingilizce5)
     if (OZET / '6-ingilizce-4.json').exists():
         yaz('6-ingilizce-4.json', ingilizce6)
+    if (OZET / '9-biyoloji-1.json').exists():
+        yaz('9-biyoloji-1.json', biyoloji9)
     print('görseller yazıldı')
