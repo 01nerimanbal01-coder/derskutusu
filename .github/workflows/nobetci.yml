@@ -1,0 +1,75 @@
+name: Site nöbetçisi
+
+# derskutusu.com'u 30 dakikada bir denetler. Sorun çıkınca "nobetci" etiketli
+# bir issue açar (depo sahibine e-posta gider), düzelince kapatır. Ana sayfa
+# açılmıyorsa siteyi yeniden yayımlar. Pazartesi derin denetim yapar ve
+# zamanlanmış işleri canlı tutar (GitHub 60 gün hareketsiz depoda kapatır).
+
+on:
+  schedule:
+    - cron: '7,37 * * * *'   # 30 dakikada bir
+    - cron: '43 5 * * 1'     # pazartesi 08.43: derin denetim
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+  actions: write
+
+concurrency:
+  group: nobetci
+  cancel-in-progress: true
+
+jobs:
+  nobet:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Siteyi denetle
+        id: denetim
+        run: |
+          if [ "${{ github.event.schedule }}" = "43 5 * * 1" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            python3 araclar/nobetci.py --derin
+          else
+            python3 araclar/nobetci.py
+          fi
+
+      - name: Ana sayfa açılmıyorsa yeniden yayımla
+        if: steps.denetim.outputs.ana_sayfa == 'yok'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run guncelle.yml --ref main
+
+      - name: Issue aç, güncelle ya da kapat
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DURUM: ${{ steps.denetim.outputs.durum }}
+          UYARI: ${{ steps.denetim.outputs.uyari }}
+          DERIN: ${{ steps.denetim.outputs.derin }}
+        run: |
+          # $1 etiket, $2 başlık, $3 rapor dosyası, $4 sorun var mı (evet/hayir)
+          bildir() {
+            gh label create "$1" --color B60205 --description "Site nöbetçisi" --force >/dev/null
+            acik=$(gh issue list --label "$1" --state open --json number --jq '.[0].number')
+            if [ "$4" = "evet" ]; then
+              if [ -z "$acik" ]; then gh issue create --label "$1" --title "$2" --body-file "$3"
+              else gh issue edit "$acik" --body-file "$3"; fi
+            elif [ -n "$acik" ]; then
+              gh issue close "$acik" --comment "Giderildi; son denetimde sorun yok."
+            fi
+          }
+          bildir nobetci "Site nöbetçisi: site sorunu" nobetci-rapor.md "$([ "$DURUM" = sorun ] && echo evet || echo hayir)"
+          if [ "$DERIN" = "evet" ]; then
+            bildir nobetci-baglanti "Site nöbetçisi: açılmayan resmî bağlantılar" nobetci-uyari.md "$([ "$UYARI" = var ] && echo evet || echo hayir)"
+          fi
+
+      - name: Zamanlanmış işleri canlı tut
+        if: github.event.schedule == '43 5 * * 1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for is in guncelle.yml nobetci.yml; do
+            gh api -X PUT "repos/${{ github.repository }}/actions/workflows/$is/enable" || true
+          done
