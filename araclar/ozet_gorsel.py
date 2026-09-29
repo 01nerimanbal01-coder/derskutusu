@@ -597,6 +597,59 @@ def sosyal6(o):
             b['gorsel'] = zaman_seridi_roller()
 
 
+# ---------- 7. sınıf Sosyal Bilgiler: gruplarda ve sosyal hayatta iletişim ----------
+def iletisim_turleri():
+    ic = '<defs>' + ok_isareti('okIT', 'g-c') + '</defs>'
+    ic += '<rect x="146" y="10" width="180" height="54" rx="12" class="g-oa"/><rect x="146" y="10" width="180" height="54" rx="12" class="g-os" stroke-width="2"/>'
+    ic += '<text x="236" y="34" text-anchor="middle" font-size="16" font-weight="800" class="g-of">İletişim</text>'
+    ic += '<text x="236" y="53" text-anchor="middle" font-size="11.5" class="g-y">duygu · düşünce · bilgi · deneyim</text>'
+    tur = [(20, 'Sözlü', ('g-ma', 'g-ms', 'g-mf'), ('Ses ve sözcüklerle,', 'konuşma yoluyla', 'aktarılır.'), ('Komşuya', '“Günaydın!” demek')),
+           (172, 'Yazılı', ('g-ya', 'g-ys', 'g-yf'), ('Yazı aracılığıyla', 'aktarılır.', ''), ('Arkadaşa telefonla', 'mesaj göndermek')),
+           (324, 'Sözsüz', ('g-ta', 'g-ts', 'g-tf'), ('Jest, mimik, beden', 'hareketi, kıyafet', 'gibi unsurlarla.'), ('Gülümsemek, başını', 'sallamak'))]
+    for x, ad, (a, s, f), tanim, ornek in tur:
+        ic += f'<line x1="236" y1="68" x2="{x + 64}" y2="96" class="g-c" stroke-width="2" marker-end="url(#okIT)"/>'
+        ic += f'<rect x="{x}" y="102" width="128" height="160" rx="12" class="{a}"/><rect x="{x}" y="102" width="128" height="160" rx="12" class="{s}" stroke-width="2"/>'
+        ic += f'<text x="{x + 64}" y="127" text-anchor="middle" font-size="15" font-weight="800" class="{f}">{ad}</text>'
+        for i, satir in enumerate(tanim):
+            if satir:
+                ic += f'<text x="{x + 10}" y="{150 + i * 16}" font-size="11.5" class="g-y">{satir}</text>'
+        ic += f'<text x="{x + 10}" y="{211}" font-size="11" font-weight="800" class="{f}">Örnek</text>'
+        for i, satir in enumerate(ornek):
+            ic += f'<text x="{x + 10}" y="{228 + i * 16}" font-size="11.5" class="g-y">{satir}</text>'
+    ic += '<text x="236" y="288" text-anchor="middle" font-size="12.5" class="g-s">İletişim bazen yüz yüze, bazen teknolojik araçlarla kurulur.</text>'
+    return svg(472, 298, ic, 'İletişim üç grupta incelenir: sözlü iletişim (ses ve sözcüklerle konuşarak), yazılı iletişim (yazı aracılığıyla), sözsüz iletişim (jest, mimik, beden hareketi, kıyafet); her biri için bir örnek')
+
+
+def ben_sen_dili():
+    ic = ''
+    sutun = [(16, 'Ben dili', ('g-ya', 'g-ys', 'g-yf'), '✓', ('Olumlu ve yapıcıdır.', 'Davranışı merkeze alır.', ('Kişi iletişim kurmaya', 'açık olur.'), 'Benlik saygısını destekler.'), ('“Sözüm kesildiğinde', 'anlatacaklarımı unutuyorum.”')),
+             (244, 'Sen dili', ('g-ta', 'g-ts', 'g-tf'), '✗', ('Olumsuz ve suçlayıcıdır.', 'Kişiyi hedef alır.', ('Karşıdakinin iletişimden', 'kaçınmasına yol açar.'), 'Benlik saygısını zedeler.'), ('“Sen hep sözümü', 'kesiyorsun!”'))]
+    for x, ad, (a, s, f), isaret, madde, ornek in sutun:
+        ic += f'<rect x="{x}" y="10" width="212" height="226" rx="12" class="{a}"/><rect x="{x}" y="10" width="212" height="226" rx="12" class="{s}" stroke-width="2"/>'
+        ic += f'<text x="{x + 106}" y="36" text-anchor="middle" font-size="16" font-weight="800" class="{f}">{ad}</text>'
+        y = 62
+        for m in madde:
+            satirlar = m if isinstance(m, tuple) else (m,)
+            ic += f'<text x="{x + 12}" y="{y}" font-size="13" font-weight="800" class="{f}">{isaret}</text>'
+            for satir in satirlar:
+                ic += f'<text x="{x + 30}" y="{y}" font-size="12" class="g-y">{satir}</text>'
+                y += 17
+            y += 5
+        ic += f'<rect x="{x + 10}" y="170" width="192" height="54" rx="9" class="g-z"/>'
+        ic += f'<text x="{x + 106}" y="193" text-anchor="middle" font-size="12" font-style="italic" class="g-y">{ornek[0]}</text>'
+        ic += f'<text x="{x + 106}" y="211" text-anchor="middle" font-size="12" font-style="italic" class="g-y">{ornek[1]}</text>'
+    ic += '<text x="236" y="262" text-anchor="middle" font-size="12.5" class="g-s">Ben dili duyguyu anlatır; sen dili kişiyi suçlar.</text>'
+    return svg(472, 272, ic, 'Ben dili ile sen dili karşılaştırması. Ben dili: olumlu ve yapıcı, davranışı merkeze alır, kişi iletişime açık olur, benlik saygısını destekler. Sen dili: olumsuz ve suçlayıcı, kişiyi hedef alır, iletişimden kaçınmaya yol açar, benlik saygısını zedeler')
+
+
+def sosyal7(o):
+    for b in o['bolumler']:
+        if b['baslik'] == 'İletişim ve iletişimin yolları':
+            b['gorsel'] = iletisim_turleri()
+        elif b['baslik'] == 'Ben dili ve sen dili':
+            b['gorsel'] = ben_sen_dili()
+
+
 if __name__ == '__main__':
     yaz('5-matematik-1.json', mat5)
     yaz('8-matematik-1.json', mat8)
@@ -614,4 +667,6 @@ if __name__ == '__main__':
         yaz('5-sosyal-bilgiler-1.json', sosyal5)
     if (OZET / '6-sosyal-bilgiler-1.json').exists():
         yaz('6-sosyal-bilgiler-1.json', sosyal6)
+    if (OZET / '7-sosyal-bilgiler-1.json').exists():
+        yaz('7-sosyal-bilgiler-1.json', sosyal7)
     print('görseller yazıldı')

@@ -192,6 +192,15 @@ const Tahta = (() => {
     const orta = () => { const v = [...dokunma.values()]; return [(v[0][0] + v[1][0]) / 2, (v[0][1] + v[1][1]) / 2]; };
     const kaydirBy = (dx, dy) => { const s = { left: dx, top: dy, behavior: 'instant' }; if (kaydir === true) window.scrollBy(s); else if (kaydir) kaydir.scrollBy(s); };
 
+    // Kalem açıkken kısa ve kıpırtısız dokunuş alttaki düğmeye, bağlantıya, etkinliğe geçer (çizgi bırakmaz);
+    // sürükleyince çizilir. Fare tıklanabilir öğenin üstündeyken imleç el olur.
+    const TIKLANIR = 'button, a[href], input, select, textarea, label, summary, [role="button"], .etk-kelime, .etk-bosluk-yer, [data-sol], [data-sag]';
+    const alttaki = (x, y) => {
+      const e = document.elementsFromPoint(x, y).find((e) => e !== ust && e !== alt && e !== kap);
+      return e?.closest(TIKLANIR) || null;
+    };
+    let bas = null;
+
     let aktif = null;
     ust.addEventListener('pointerdown', (o) => {
       if (d.arac === 'el' || o.button > 0) return;
@@ -206,6 +215,7 @@ const Tahta = (() => {
         }
       }
       aktif = o.pointerId;
+      bas = { x: o.clientX, y: o.clientY, t: performance.now(), uzak: 0 };
       const p = nokta(o);
       if (d.arac === 'silgi' || d.arac === 'cizgisil') { oturumAc(); sonSilgi = null; d.imlec = p; silgiUygula(p); iste(); return; }
       d.canli = { arac: d.arac, renk: d.renk, g: KALINLIK[d.kalinlik] * (d.arac === 'fosforlu' ? 3.2 : 1), n: [p] };
@@ -217,7 +227,9 @@ const Tahta = (() => {
         if (pan && dokunma.size >= 2) { const m = orta(); kaydirBy(pan[0] - m[0], pan[1] - m[1]); pan = m; return; }
       }
       if (d.arac === 'silgi') { d.imlec = nokta(o); iste(); }
+      if (aktif === null && o.pointerType === 'mouse' && (d.arac === 'kalem' || d.arac === 'fosforlu')) ust.style.cursor = alttaki(o.clientX, o.clientY) ? 'pointer' : 'crosshair';
       if (o.pointerId !== aktif) return;
+      if (bas) bas.uzak = Math.max(bas.uzak, Math.hypot(o.clientX - bas.x, o.clientY - bas.y));
       const birlesik = o.getCoalescedEvents?.() || [];
       const olaylar = birlesik.length ? birlesik : [o];
       if (d.arac === 'silgi' || d.arac === 'cizgisil') { for (const e of olaylar) silgiUygula(nokta(e)); return; }
@@ -233,12 +245,16 @@ const Tahta = (() => {
       if (dokunma.size < 2) pan = null;
       if (o.pointerId !== aktif) return;
       aktif = null;
+      const hedef = o.type === 'pointerup' && bas && bas.uzak < 6 && performance.now() - bas.t < 500 ? alttaki(o.clientX, o.clientY) : null;
+      bas = null;
+      if (hedef && d.canli) { d.canli = null; iste(); }
       if (oturum) { oturumKapat(); sonSilgi = null; }
       if (d.canli) {
         d.cizgiler.push(d.canli); d.gecmis.push({ tur: 'ekle', cizgi: d.canli }); d.ileri = [];
         cizgiCiz(d.canli, a, kay());
         d.canli = null; iste(); guncelle();
       }
+      if (hedef) { if (hedef.matches('input, select, textarea')) hedef.focus(); hedef.click(); }
     };
     ust.addEventListener('pointerup', bitir);
     ust.addEventListener('pointercancel', bitir);
