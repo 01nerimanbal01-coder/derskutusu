@@ -152,10 +152,30 @@ def mat5(o):
             x['gorsel'] = ornek_sekiller()
 
 
+def bolen_listesi_72():
+    """Bölen listesi yöntemi (MEB 8. sınıf kitabı): 72 | 2, 36 | 2, 18 | 2, 9 | 3, 3 | 3, 1; asal bölenler turuncu."""
+    satir = [(72, 2), (36, 2), (18, 2), (9, 3), (3, 3), (1, None)]
+    x_sayi, x_cizgi, x_bolen, y0, ad = 118, 140, 162, 34, 30
+    ic = f'<line x1="{x_cizgi}" y1="{y0 - 20}" x2="{x_cizgi}" y2="{y0 + (len(satir) - 1) * ad + 10}" class="g-c" stroke-width="2.5" stroke-linecap="round"/>'
+    for i, (n, b) in enumerate(satir):
+        y = y0 + i * ad
+        ic += f'<text x="{x_sayi}" y="{y}" text-anchor="end" font-size="18" font-weight="{800 if i == 0 else 600}" class="{"g-mf" if i == 0 else "g-y"}">{n}</text>'
+        if b:
+            ic += f'<circle cx="{x_bolen + 12}" cy="{y - 6}" r="13" class="g-tf"/><text x="{x_bolen + 12}" y="{y}" text-anchor="middle" font-size="16" font-weight="800" class="g-b">{b}</text>'
+    y = y0 + len(satir) * ad + 22
+    ic += (f'<text x="140" y="{y}" text-anchor="middle" font-size="19" font-weight="700" class="g-y">72 = '
+           '<tspan class="g-tf">2</tspan><tspan dy="-8" font-size="13" class="g-tf">3</tspan><tspan dy="8"> · </tspan>'
+           '<tspan class="g-tf">3</tspan><tspan dy="-8" font-size="13" class="g-tf">2</tspan></text>')
+    ic += (f'<text x="210" y="{y0 + 4}" font-size="12.5" class="g-s">Her satırda sayıyı kalansız</text><text x="210" y="{y0 + 20}" font-size="12.5" class="g-s">bölen en küçük asal sayı</text>'
+           f'<text x="210" y="{y0 + 36}" font-size="12.5" class="g-s">sağa yazılır; bölüm alta.</text>'
+           f'<text x="210" y="{y0 + 4 * ad + 4}" font-size="12.5" class="g-s">Bölüm 1 olunca durulur.</text>')
+    return svg(380, y + 16, ic, 'Bölen listesi yöntemiyle 72: 72, 36, 18, 9, 3, 1 ve sağda asal bölenler 2, 2, 2, 3, 3; sonuç 72 = 2 üssü 3 çarpı 3 üssü 2')
+
+
 def mat8(o):
     for b in o['bolumler']:
-        if b['baslik'] == 'Asal çarpanlara ayırma':
-            b['gorsel'] = carpan_agaci_72()
+        if b['baslik'] == 'Bölen listesi yöntemi':
+            b['gorsel'] = bolen_listesi_72()
 
 
 def dikdortgen_modeli_12():

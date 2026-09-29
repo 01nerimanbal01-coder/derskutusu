@@ -8,119 +8,77 @@
  "ciktilar": [
   "M.8.1.1.1. Verilen pozitif tam sayıların pozitif tam sayı çarpanlarını bulur, pozitif tam sayıların pozitif tam sayı çarpanlarını üslü ifadelerin çarpımı şeklinde yazar."
  ],
- "giris": "Bir sayıyı daha küçük sayıların çarpımı olarak yazabilmek, 8. sınıf matematiğinin temelidir: EBOB, EKOK, üslü ve kareköklü ifadeler hep bu beceriye dayanır. Bu hafta bir sayının çarpanlarını bulmayı ve sayıyı asal çarpanlarının çarpımı biçiminde yazmayı öğreneceğiz.",
+ "giris": "Bir sayıyı daha küçük sayıların çarpımı olarak yazabilmek; ortak bölen, ortak kat ve üslü ifadelerle yapılan işlemlerde işimizi kolaylaştırır. Bu hafta bir sayının pozitif tam sayı çarpanlarını bulmayı, asal çarpanlarını belirlemeyi ve sayıyı tabanı asal sayı olan üslü ifadelerin çarpımı biçiminde yazmayı öğreneceğiz.",
  "bolumler": [
   {
-   "baslik": "Çarpan nedir?",
+   "baslik": "Pozitif tam sayı çarpanları",
    "metin": [
-    "Bir pozitif tam sayıyı kalansız bölen pozitif tam sayılara o sayının çarpanları (bölenleri) denir. Örneğin 12; 1, 2, 3, 4, 6 ve 12 sayılarına kalansız bölünür. Bu altı sayı 12'nin çarpanlarıdır.",
-    "Çarpanları eksiksiz bulmanın kolay yolu, sayıyı iki sayının çarpımı olarak yazmaktır. 1'den başlanır, sırayla denenir; çarpım çiftleri tekrar etmeye başlayınca durulur."
+    "Her doğal sayı iki doğal sayının çarpımı olarak yazılabilir. Çarpılan bu iki sayıya o sayının çarpanları denir. Örneğin 1 · 12, 2 · 6 ve 3 · 4 çarpımlarının sonucu 12 olduğundan 12'nin pozitif tam sayı çarpanları 1, 2, 3, 4, 6 ve 12'dir.",
+    "Çarpanları eksiksiz bulmak için sayıyı çarpımı o sayıyı veren iki sayı biçiminde, 1'den başlayarak sırayla yazarız."
    ],
+   "kutu": {
+    "tur": "bilgi",
+    "metin": "Bir doğal sayının çarpanları aynı zamanda o sayının bölenleridir: 12'nin çarpanları olan 1, 2, 3, 4, 6 ve 12 sayılarının her biri 12'yi kalansız böler."
+   },
    "tablo": {
     "basliklar": [
-     "Çarpım çifti",
+     "Çarpım",
      "Bulunan çarpanlar"
     ],
     "satirlar": [
      [
-      "1 · 12",
+      "1 · 12 = 12",
       "1 ve 12"
      ],
      [
-      "2 · 6",
+      "2 · 6 = 12",
       "2 ve 6"
      ],
      [
-      "3 · 4",
+      "3 · 4 = 12",
       "3 ve 4"
      ]
     ]
-   },
-   "kutu": {
-    "tur": "bilgi",
-    "metin": "Her pozitif tam sayının en küçük çarpanı 1, en büyük çarpanı kendisidir. Bir sayı, bir tam sayının karesiyse (ör. 36 = 6 · 6) ortadaki çift iki kez yazılmaz; bu yüzden karesel sayıların çarpan sayısı tektir."
    }
   },
   {
-   "baslik": "Asal sayılar",
+   "baslik": "Asal çarpanlar",
    "metin": [
-    "1'den ve kendisinden başka çarpanı olmayan, 1'den büyük doğal sayılara asal sayı denir. İlk asal sayılar şunlardır: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29.",
-    "Bir sayının asal olup olmadığını anlamak için sayı sırayla 2, 3, 5, 7… asal sayılarına bölünür. Böleni bulunmazsa sayı asaldır."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "metin": "1 asal sayı değildir, çünkü yalnız bir çarpanı vardır. 2 ise hem çift hem asal olan tek sayıdır."
-   }
+    "Bir sayının pozitif tam sayı çarpanlarından asal sayı olanlarına o sayının asal çarpanları denir. Örneğin 12'nin çarpanları 1, 2, 3, 4, 6 ve 12'dir; bunlardan asal olan 2 ve 3, 12'nin asal çarpanlarıdır."
+   ]
   },
   {
-   "baslik": "Asal çarpanlara ayırma",
+   "baslik": "Bölen listesi yöntemi",
    "metin": [
-    "Bir sayıyı yalnız asal sayıların çarpımı olarak yazmaya asal çarpanlara ayırma denir. İki yöntem kullanılır:",
-    "Çarpan ağacı: Sayı, iki çarpanın çarpımı olarak yazılır. Asal olmayan her dal yeniden ikiye ayrılır; bütün dallar asal sayılarda bitince yapraklardaki sayılar çarpılır.",
-    "Bölme yöntemi: Sayı, en küçük asal sayıdan başlanarak sırayla bölünür; bölüm 1 olunca durulur. Sağ sütundaki bölenler sayının asal çarpanlarıdır."
+    "Bir sayının asal çarpanlarını bulmak için bölen listesi yöntemi kullanılır. Sayı yazılır ve yanına dik bir çizgi çekilir. Sayıyı kalansız bölen en küçük asal sayı çizginin sağına yazılır, bölüm sayının altına yazılır.",
+    "Bölüm 1 oluncaya kadar asal sayılarla bölmeye devam edilir. Çizginin sağına yazılan farklı asal sayılar, sayının asal çarpanlarıdır."
    ],
-   "gorsel": "<svg viewBox=\"0 0 360 346\" role=\"img\" aria-label=\"72 için çarpan ağacı: 72 = 8 · 9, 8 = 2 · 4, 4 = 2 · 2, 9 = 3 · 3; sonuç 72 = 2 üssü 3 çarpı 3 üssü 2\"><line x1=\"160.1\" y1=\"55.1\" x2=\"128.6\" y2=\"88.4\" class=\"g-c\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"199.9\" y1=\"55.1\" x2=\"231.4\" y2=\"88.4\" class=\"g-c\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"96.2\" y1=\"131.2\" x2=\"78.8\" y2=\"160.5\" class=\"g-c\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"122.8\" y1=\"131.8\" x2=\"137.2\" y2=\"158.2\" class=\"g-c\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"207.1\" x2=\"131.3\" y2=\"228.8\" class=\"g-c\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"160.0\" y1=\"207.1\" x2=\"168.7\" y2=\"228.8\" class=\"g-c\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"240.4\" y1=\"133.3\" x2=\"230.8\" y2=\"158.6\" class=\"g-c\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"260.1\" y1=\"133.0\" x2=\"270.6\" y2=\"158.8\" class=\"g-c\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><rect x=\"146\" y=\"13\" width=\"68\" height=\"42\" rx=\"21\" class=\"g-mf\"/><text x=\"180\" y=\"41\" text-anchor=\"middle\" font-size=\"20\" font-weight=\"800\" class=\"g-b\">72</text><circle cx=\"110\" cy=\"108\" r=\"22\" class=\"g-ma\"/><circle cx=\"110\" cy=\"108\" r=\"22\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"110\" y=\"114\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"700\" class=\"g-mf\">8</text><circle cx=\"250\" cy=\"108\" r=\"22\" class=\"g-ma\"/><circle cx=\"250\" cy=\"108\" r=\"22\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"250\" y=\"114\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"700\" class=\"g-mf\">9</text><circle cx=\"66\" cy=\"182\" r=\"20\" class=\"g-tf\"/><text x=\"66\" y=\"188\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"800\" class=\"g-b\">2</text><circle cx=\"150\" cy=\"182\" r=\"22\" class=\"g-ma\"/><circle cx=\"150\" cy=\"182\" r=\"22\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"150\" y=\"188\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"700\" class=\"g-mf\">4</text><circle cx=\"222\" cy=\"182\" r=\"20\" class=\"g-tf\"/><text x=\"222\" y=\"188\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"800\" class=\"g-b\">3</text><circle cx=\"280\" cy=\"182\" r=\"20\" class=\"g-tf\"/><text x=\"280\" y=\"188\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"800\" class=\"g-b\">3</text><circle cx=\"122\" cy=\"252\" r=\"20\" class=\"g-tf\"/><text x=\"122\" y=\"258\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"800\" class=\"g-b\">2</text><circle cx=\"178\" cy=\"252\" r=\"20\" class=\"g-tf\"/><text x=\"178\" y=\"258\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"800\" class=\"g-b\">2</text><text x=\"180\" y=\"306\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"700\" class=\"g-y\">72 = <tspan class=\"g-tf\">2</tspan><tspan dy=\"-8\" font-size=\"13\" class=\"g-tf\">3</tspan><tspan dy=\"8\"> · </tspan><tspan class=\"g-tf\">3</tspan><tspan dy=\"-8\" font-size=\"13\" class=\"g-tf\">2</tspan></text><circle cx=\"104\" cy=\"332\" r=\"7\" class=\"g-tf\"/><text x=\"116\" y=\"337\" font-size=\"13\" class=\"g-s\">asal çarpan</text><circle cx=\"214\" cy=\"332\" r=\"7\" class=\"g-ma\"/><circle cx=\"214\" cy=\"332\" r=\"7\" class=\"g-ms\" stroke-width=\"1.5\"/><text x=\"226\" y=\"337\" font-size=\"13\" class=\"g-s\">asal değil</text></svg>",
-   "tablo": {
-    "basliklar": [
-     "Sayı",
-     "Asal bölen"
-    ],
-    "satirlar": [
-     [
-      "72",
-      "2"
-     ],
-     [
-      "36",
-      "2"
-     ],
-     [
-      "18",
-      "2"
-     ],
-     [
-      "9",
-      "3"
-     ],
-     [
-      "3",
-      "3"
-     ],
-     [
-      "1",
-      ""
-     ]
-    ]
-   }
+   "gorsel": "<svg viewBox=\"0 0 380 252\" role=\"img\" aria-label=\"Bölen listesi yöntemiyle 72: 72, 36, 18, 9, 3, 1 ve sağda asal bölenler 2, 2, 2, 3, 3; sonuç 72 = 2 üssü 3 çarpı 3 üssü 2\"><line x1=\"140\" y1=\"14\" x2=\"140\" y2=\"194\" class=\"g-c\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><text x=\"118\" y=\"34\" text-anchor=\"end\" font-size=\"18\" font-weight=\"800\" class=\"g-mf\">72</text><circle cx=\"174\" cy=\"28\" r=\"13\" class=\"g-tf\"/><text x=\"174\" y=\"34\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" class=\"g-b\">2</text><text x=\"118\" y=\"64\" text-anchor=\"end\" font-size=\"18\" font-weight=\"600\" class=\"g-y\">36</text><circle cx=\"174\" cy=\"58\" r=\"13\" class=\"g-tf\"/><text x=\"174\" y=\"64\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" class=\"g-b\">2</text><text x=\"118\" y=\"94\" text-anchor=\"end\" font-size=\"18\" font-weight=\"600\" class=\"g-y\">18</text><circle cx=\"174\" cy=\"88\" r=\"13\" class=\"g-tf\"/><text x=\"174\" y=\"94\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" class=\"g-b\">2</text><text x=\"118\" y=\"124\" text-anchor=\"end\" font-size=\"18\" font-weight=\"600\" class=\"g-y\">9</text><circle cx=\"174\" cy=\"118\" r=\"13\" class=\"g-tf\"/><text x=\"174\" y=\"124\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" class=\"g-b\">3</text><text x=\"118\" y=\"154\" text-anchor=\"end\" font-size=\"18\" font-weight=\"600\" class=\"g-y\">3</text><circle cx=\"174\" cy=\"148\" r=\"13\" class=\"g-tf\"/><text x=\"174\" y=\"154\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" class=\"g-b\">3</text><text x=\"118\" y=\"184\" text-anchor=\"end\" font-size=\"18\" font-weight=\"600\" class=\"g-y\">1</text><text x=\"140\" y=\"236\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"700\" class=\"g-y\">72 = <tspan class=\"g-tf\">2</tspan><tspan dy=\"-8\" font-size=\"13\" class=\"g-tf\">3</tspan><tspan dy=\"8\"> · </tspan><tspan class=\"g-tf\">3</tspan><tspan dy=\"-8\" font-size=\"13\" class=\"g-tf\">2</tspan></text><text x=\"210\" y=\"38\" font-size=\"12.5\" class=\"g-s\">Her satırda sayıyı kalansız</text><text x=\"210\" y=\"54\" font-size=\"12.5\" class=\"g-s\">bölen en küçük asal sayı</text><text x=\"210\" y=\"70\" font-size=\"12.5\" class=\"g-s\">sağa yazılır; bölüm alta.</text><text x=\"210\" y=\"158\" font-size=\"12.5\" class=\"g-s\">Bölüm 1 olunca durulur.</text></svg>"
   },
   {
    "baslik": "Üslü ifadelerin çarpımı olarak yazma",
    "metin": [
-    "Asal çarpanlara ayırmada aynı asal sayı birden çok kez çıkabilir. Bu tekrarlar üslü ifadeyle kısaca yazılır: 2 · 2 · 2 yerine {us:2|3}, 3 · 3 yerine {us:3|2} yazılır.",
-    "Böylece 72 = 2 · 2 · 2 · 3 · 3 = {us:2|3} · {us:3|2} olur. Asal çarpanlar genellikle küçükten büyüğe sıralanarak yazılır."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "metin": "Bir sayının asal çarpanlarına ayrılışı tektir: Hangi yöntemle ya da hangi çarpım çiftiyle başlanırsa başlansın aynı sonuca ulaşılır. 72'yi 6 · 12 diye ayırmaya başlasaydık da sonuç {us:2|3} · {us:3|2} olurdu."
-   }
+    "Bölen listesinde aynı asal sayı birden çok kez çıkabilir. Bu tekrarlar üslü ifadeyle kısaca yazılır: 72 = 2 · 2 · 2 · 3 · 3 = {us:2|3} · {us:3|2}. Böylece sayı, tabanı asal sayı olan üslü ifadelerin çarpımı biçiminde yazılmış olur.",
+    "Asal çarpanlarının çarpımı biçiminde verilen bir sayıyı bulmak için önce üslü ifadelerin değeri hesaplanır, sonra çarpma yapılır: {us:2|2} · 3 = 4 · 3 = 12."
+   ]
   }
  ],
  "ornekler": [
   {
-   "soru": "36'nın bütün pozitif çarpanlarını yazınız.",
-   "cevap": "Çarpım çiftleri: 1 · 36, 2 · 18, 3 · 12, 4 · 9, 6 · 6. Çarpanlar: 1, 2, 3, 4, 6, 9, 12, 18, 36 (9 tane)."
+   "soru": "36'nın bütün pozitif tam sayı çarpanlarını yazınız.",
+   "cevap": "1 · 36, 2 · 18, 3 · 12, 4 · 9, 6 · 6 çarpımlarından 36'nın çarpanları 1, 2, 3, 4, 6, 9, 12, 18 ve 36'dır."
   },
   {
-   "soru": "90 sayısını asal çarpanlarına ayırıp üslü ifadelerin çarpımı biçiminde yazınız.",
-   "cevap": "90 = 2 · 45 = 2 · 3 · 15 = 2 · 3 · 3 · 5. Üslü biçimde: 90 = 2 · {us:3|2} · 5."
+   "soru": "90 sayısını bölen listesi yöntemiyle asal çarpanlarına ayırıp tabanı asal sayı olan üslü ifadelerin çarpımı biçiminde yazınız.",
+   "cevap": "90 | 2 → 45 | 3 → 15 | 3 → 5 | 5 → 1. Asal çarpanlar 2, 3 ve 5'tir. 90 = 2 · 3 · 3 · 5 = 2 · {us:3|2} · 5."
   },
   {
    "soru": "{us:2|2} · 3 · 7 çarpımı hangi sayıyı gösterir?",
-   "cevap": "{us:2|2} = 4 olduğundan 4 · 3 · 7 = 84."
+   "cevap": "Önce üslü ifadenin değeri bulunur: {us:2|2} = 4. Sonra çarpılır: 4 · 3 · 7 = 84."
   },
   {
-   "soru": "21, 29, 39 ve 51 sayılarından hangisi asaldır?",
-   "cevap": "29 asaldır. Öbürleri asal değildir: 21 = 3 · 7, 39 = 3 · 13, 51 = 3 · 17."
+   "soru": "84 sayısının asal çarpanlarını bulunuz.",
+   "cevap": "84 | 2 → 42 | 2 → 21 | 3 → 7 | 7 → 1. 84'ün asal çarpanları 2, 3 ve 7'dir; 84 = {us:2|2} · 3 · 7."
   },
   {
    "soru": "Bir bahçıvan 48 fidanı her sırada eşit sayıda fidan olacak biçimde sıralara dikecek. Her sırada en az 2, en fazla 10 fidan olacaksa bahçıvan fidanları kaç farklı biçimde dizebilir?",
@@ -128,13 +86,13 @@
   },
   {
    "soru": "{us:2|a} · {us:3|b} = 108 olduğuna göre a ve b kaçtır?",
-   "cevap": "108 = 2 · 54 = 2 · 2 · 27 = 2 · 2 · 3 · 3 · 3 = {us:2|2} · {us:3|3}. Buna göre a = 2, b = 3."
+   "cevap": "108 | 2 → 54 | 2 → 27 | 3 → 9 | 3 → 3 | 3 → 1. 108 = {us:2|2} · {us:3|3}. Buna göre a = 2, b = 3."
   }
  ],
  "ozet": [
-  "Bir sayıyı kalansız bölen pozitif tam sayılar o sayının çarpanlarıdır; çarpım çiftleriyle eksiksiz bulunur.",
-  "Asal sayıların yalnız iki çarpanı vardır: 1 ve kendisi. 1 asal değildir, 2 tek çift asaldır.",
-  "Asal çarpanlara ayırma çarpan ağacı ya da bölme yöntemiyle yapılır; sonuç her zaman aynıdır.",
+  "Her doğal sayı iki doğal sayının çarpımı olarak yazılabilir; çarpılan sayılar o sayının çarpanlarıdır ve aynı zamanda bölenleridir.",
+  "Bir sayının asal sayı olan çarpanlarına asal çarpanları denir.",
+  "Asal çarpanlar bölen listesi yöntemiyle bulunur: en küçük asal bölenle başlanır, bölüm 1 olunca durulur.",
   "Tekrar eden asal çarpanlar üslü yazılır: 72 = {us:2|3} · {us:3|2}."
  ]
 }
