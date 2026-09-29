@@ -448,12 +448,12 @@ def meteor_yolu():
     ic += '<line x1="66" y1="48" x2="150" y2="84" class="g-c" stroke-width="2" stroke-dasharray="5 5"/>'
     ic += '<line x1="152" y1="85" x2="258" y2="138" class="g-ts" stroke-width="8" stroke-linecap="round" opacity=".3"/>'
     ic += '<line x1="152" y1="85" x2="258" y2="138" class="g-ts" stroke-width="3" stroke-linecap="round" marker-end="url(#okMY)"/>'
-    ic += '<text x="150" y="124" font-size="13.5" font-weight="700" class="g-tf">meteor</text><text x="150" y="140" font-size="12" class="g-s">ısınıp parlar</text>'
+    ic += '<text x="150" y="124" font-size="13.5" font-weight="700" class="g-tf">meteor</text><text x="150" y="140" font-size="12" class="g-s">atmosfere giren gök taşı</text>'
     ic += '<line x1="264" y1="150" x2="296" y2="194" class="g-c" stroke-width="2" stroke-dasharray="5 5"/>'
     ic += '<path d="M292 200 l6 -5 l8 2 l2 6 l-6 5 l-8 -1 z" class="g-y" opacity=".85"/>'
     ic += '<line x1="312" y1="196" x2="336" y2="166" class="g-c" stroke-width="1.2"/><text x="340" y="164" font-size="13.5" font-weight="700" class="g-y">meteorit</text>'
     ic += '<text x="300" y="226" text-anchor="middle" font-size="12.5" font-weight="700" class="g-yf">meteor çukuru</text>'
-    return svg(380, 234, ic, 'Uzaydaki gök taşı atmosfere girince ısınıp parlar (meteor); yere ulaşan parça meteorit, açtığı çukur meteor çukurudur')
+    return svg(380, 234, ic, 'Atmosfere giren gök taşı meteor; yeryüzüne ulaşan gök taşı meteorit; açtığı çukur meteor çukurudur')
 
 
 def fen6(o):
