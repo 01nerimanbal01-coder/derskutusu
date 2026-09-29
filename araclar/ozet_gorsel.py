@@ -650,6 +650,72 @@ def sosyal7(o):
             b['gorsel'] = ben_sen_dili()
 
 
+# ---------- 5. sınıf Türkçe: tahmin etme, görsel unsurlar, cümleyi genişletme ----------
+def tahmin_dongusu():
+    ic = '<defs>' + ok_isareti('okTD', 'g-c') + '</defs>'
+    kutu = [(16, 12, '1. Başlamadan önce', ('Başlığa ve görsellere bak,', 'içeriği tahmin et.'), ('g-ma', 'g-ms', 'g-mf')),
+            (256, 12, '2. Gerekçeni söyle', ('Tahminini hangi ipucuna', 'dayandırdığını açıkla.'), ('g-ya', 'g-ys', 'g-yf')),
+            (256, 130, '3. Okurken, dinlerken', ('Durduğun yerlerde sonraki', 'bölümleri tahmin et.'), ('g-ta', 'g-ts', 'g-tf')),
+            (16, 130, '4. Kontrol et', ('Tahminin doğru çıktı mı?', 'Nedenini düşün.'), ('g-oa', 'g-os', 'g-of'))]
+    for x, y, bas, satir, (a, s, f) in kutu:
+        ic += f'<rect x="{x}" y="{y}" width="200" height="84" rx="12" class="{a}"/><rect x="{x}" y="{y}" width="200" height="84" rx="12" class="{s}" stroke-width="2"/>'
+        ic += f'<text x="{x + 14}" y="{y + 28}" font-size="14.5" font-weight="800" class="{f}">{bas}</text>'
+        ic += f'<text x="{x + 14}" y="{y + 52}" font-size="12.5" class="g-y">{satir[0]}</text><text x="{x + 14}" y="{y + 70}" font-size="12.5" class="g-y">{satir[1]}</text>'
+    ic += '<line x1="222" y1="54" x2="248" y2="54" class="g-c" stroke-width="2.5" marker-end="url(#okTD)"/>'
+    ic += '<line x1="356" y1="100" x2="356" y2="124" class="g-c" stroke-width="2.5" marker-end="url(#okTD)"/>'
+    ic += '<line x1="250" y1="172" x2="224" y2="172" class="g-c" stroke-width="2.5" marker-end="url(#okTD)"/>'
+    ic += '<text x="236" y="244" text-anchor="middle" font-size="12.5" class="g-s">Tahmin yaparken metindeki bilgilerle birlikte kendi bildiklerinden de yararlan.</text>'
+    return svg(472, 254, ic, 'Tahmin etme stratejisinin dört adımı: 1. başlamadan önce başlığa ve görsellere bakıp tahmin et, 2. gerekçeni söyle, 3. okurken ve dinlerken sonraki bölümleri tahmin et, 4. tahminini kontrol et')
+
+
+def sokak_oyunlari_grafigi():
+    ic = '<text x="236" y="22" text-anchor="middle" font-size="14.5" font-weight="800" class="g-y">5/A Sınıfının En Sevdiği Sokak Oyunları</text>'
+    x0, olcek = 120, 32
+    for n in range(0, 11):
+        x = x0 + n * olcek
+        ic += f'<line x1="{x}" y1="38" x2="{x}" y2="200" class="g-c" stroke-width="{1.4 if n == 0 else 0.6}"/>'
+        if n % 2 == 0:
+            ic += f'<text x="{x}" y="218" text-anchor="middle" font-size="12" class="g-s">{n}</text>'
+    veri = [('Seksek', 6, 'g-mf'), ('Saklambaç', 9, 'g-tf'), ('Körebe', 4, 'g-yf'), ('Yakalamaca', 7, 'g-of')]
+    for i, (ad, v, f) in enumerate(veri):
+        y = 48 + i * 38
+        ic += f'<text x="{x0 - 10}" y="{y + 18}" text-anchor="end" font-size="13" class="g-y">{ad}</text>'
+        ic += f'<rect x="{x0}" y="{y}" width="{v * olcek}" height="26" rx="5" class="{f}"/>'
+        ic += f'<text x="{x0 + v * olcek + 8}" y="{y + 18}" font-size="13" font-weight="800" class="{f}">{v}</text>'
+    ic += '<text x="280" y="240" text-anchor="middle" font-size="12.5" class="g-s">Öğrenci sayısı</text>'
+    return svg(472, 250, ic, 'Çubuk grafik: 5/A sınıfının en sevdiği sokak oyunları. Seksek 6, saklambaç 9, körebe 4, yakalamaca 7 öğrenci')
+
+
+def cumle_merdiveni():
+    satirlar = [([('Ece koşuyor.', 0)], ''),
+                ([('Ece ', 0), ('parkta', 1), (' koşuyor.', 0)], 'nerede?'),
+                ([('Ece ', 0), ('sabah', 1), (' parkta koşuyor.', 0)], 'ne zaman?'),
+                ([('Ece sabah parkta ', 0), ('köpeğiyle', 1), (' koşuyor.', 0)], 'kiminle?'),
+                ([('Ece sabah parkta köpeğiyle ', 0), ('yarışmak için', 1), (' koşuyor.', 0)], 'ne için?')]
+    ic = ''
+    for i, (parca, soru) in enumerate(satirlar):
+        y = 10 + i * 42
+        ic += f'<rect x="{16 + i * 10}" y="{y}" width="{440 - i * 10}" height="32" rx="9" class="g-ma"/><rect x="{16 + i * 10}" y="{y}" width="{440 - i * 10}" height="32" rx="9" class="g-ms" stroke-width="1.5"/>'
+        ic += f'<text x="{28 + i * 10}" y="{y + 21}" font-size="13.5" class="g-y">'
+        for yazi, yeni in parca:
+            ic += f'<tspan class="g-tf" font-weight="800">{yazi}</tspan>' if yeni else f'<tspan>{yazi}</tspan>'
+        ic += '</text>'
+        if soru:
+            ic += f'<text x="446" y="{y + 21}" text-anchor="end" font-size="12" font-style="italic" class="g-s">{soru}</text>'
+    ic += '<text x="236" y="236" text-anchor="middle" font-size="12.5" class="g-s">Turuncu kelimeler her adımda eklenen yeni ayrıntıdır.</text>'
+    return svg(472, 246, ic, 'Cümleyi genişletme: Ece koşuyor. Ece parkta koşuyor. Ece sabah parkta koşuyor. Ece sabah parkta köpeğiyle koşuyor. Ece sabah parkta köpeğiyle yarışmak için koşuyor.')
+
+
+def turkce5(o):
+    for b in o['bolumler']:
+        if b['baslik'] == 'Tahmin etme stratejisi':
+            b['gorsel'] = tahmin_dongusu()
+        elif b['baslik'] == 'Görsel unsurlar':
+            b['gorsel'] = sokak_oyunlari_grafigi()
+        elif b['baslik'] == 'Hazırlıksız konuşma ve cümleyi genişletme':
+            b['gorsel'] = cumle_merdiveni()
+
+
 if __name__ == '__main__':
     yaz('5-matematik-1.json', mat5)
     yaz('8-matematik-1.json', mat8)
@@ -669,4 +735,6 @@ if __name__ == '__main__':
         yaz('6-sosyal-bilgiler-1.json', sosyal6)
     if (OZET / '7-sosyal-bilgiler-1.json').exists():
         yaz('7-sosyal-bilgiler-1.json', sosyal7)
+    if (OZET / '5-turkce-1.json').exists():
+        yaz('5-turkce-1.json', turkce5)
     print('görseller yazıldı')
