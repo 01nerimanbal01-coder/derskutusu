@@ -1035,4 +1035,17 @@ if __name__ == '__main__':
         yaz('9-cografya-1.json', cografya9)
     if (OZET / '9-din-kulturu-ve-ahlak-bilgisi-1.json').exists():
         yaz('9-din-kulturu-ve-ahlak-bilgisi-1.json', din9)
+    # Ders başına görsel modülleri: araclar/gorseller/<özet dosya adı>.py → def uygula(o): ...
+    # (paralel yazımda tek dosyada çakışma olmasın diye; modül bu dosyadaki svg, ok_isareti, dugum, dal … yardımcılarını kullanır)
+    import importlib.util
+    import sys as _sys
+    _sys.modules.setdefault('ozet_gorsel', _sys.modules[__name__])
+    for modul in sorted((Path(__file__).resolve().parent / 'gorseller').glob('*.py')):
+        hedef = modul.stem + '.json'
+        if not (OZET / hedef).exists():
+            continue
+        spec = importlib.util.spec_from_file_location(f'gorsel_{modul.stem.replace("-", "_")}', modul)
+        m = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(m)
+        yaz(hedef, m.uygula)
     print('görseller yazıldı')
