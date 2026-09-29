@@ -105,3 +105,20 @@ ortakVeri.then(({ ayar }) => {
     basliklar.forEach((h) => gozcu.observe(h));
   }
 })();
+
+// Özet görselleri: SVG içindeki yazı viewBox dışına taşıyorsa viewBox yazıyı kapsayacak kadar genişletilir
+// (görsel dar yan sütunda da kesilmeden ve kutudan taşmadan görünür).
+(() => {
+  const svgler = $$('.ozet-gorsel svg[viewBox]');
+  if (!svgler.length) return;
+  const sigdir = () => svgler.forEach((s) => {
+    try {
+      const b = s.getBBox(), v = s.viewBox.baseVal, p = 4;
+      if (!b.width) return;
+      const x0 = Math.min(v.x, b.x - p), y0 = Math.min(v.y, b.y - p);
+      const x1 = Math.max(v.x + v.width, b.x + b.width + p), y1 = Math.max(v.y + v.height, b.y + b.height + p);
+      if (x0 < v.x || y0 < v.y || x1 > v.x + v.width || y1 > v.y + v.height) s.setAttribute('viewBox', `${x0} ${y0} ${x1 - x0} ${y1 - y0}`);
+    } catch { /* görünmeyen SVG */ }
+  });
+  (document.fonts?.ready || Promise.resolve()).then(sigdir);
+})();

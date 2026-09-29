@@ -5,6 +5,8 @@
         public/veri/icerikler.json → tür "Konu anlatımı" kaydı (sınıf ve ders sayfalarında görünür)
         public/sitemap.xml → özet adresleri
 Özet metinleri özgündür (MEB kitabından cümle alınmaz); örneklerde "Cevabı göster" düğmesi <details> ile çalışır.
+Bölüm kutuları: "kutu" {tur, metin, baslik?} ya da "kutular" [..]; tur bilgi | dikkat | kural | tanim | ipucu | hatirla.
+Görsel ve kutular geniş ekranda metnin yanında durur; renkler ders rengiyle (stil.css "Konu özetleri", ders-<ad>).
 Çalıştırma: LC_ALL=en_US.UTF-8 python3 araclar/ozet_uret.py
 """
 import html
@@ -45,7 +47,23 @@ def e(metin):
     metin = html.escape(str(metin)).replace(' · ', '\u00a0·\u00a0').replace(' × ', '\u00a0×\u00a0')   # çarpımlar satır sonunda bölünmez
     ozel = {'us': _us, 'kesir': _kesir}
     return KAR.sub(lambda m: ozel[m.group(1)](m.group(2)) if m.group(1) in ozel else SEMBOL[m.group(1)].format(m.group(2)), metin)
-KUTU = {'dikkat': 'Dikkat', 'bilgi': 'Bilgi', 'kural': 'Kural', 'tanim': 'Tanım'}
+KUTU = {'dikkat': 'Dikkat', 'bilgi': 'Bilgi', 'kural': 'Kural', 'tanim': 'Tanım', 'ipucu': 'İpucu', 'hatirla': 'Hatırla'}
+SIMGE = {  # 24×24 çizgi simgeleri (renk: currentColor)
+    'bilgi': '<circle cx="12" cy="12" r="9.5"/><path d="M12 11v6"/><circle cx="12" cy="7.6" r=".6" fill="currentColor"/>',
+    'dikkat': '<path d="M12 3.5 21.5 20h-19z"/><path d="M12 10v4.5"/><circle cx="12" cy="17.2" r=".6" fill="currentColor"/>',
+    'kural': '<path d="M12 3l8 3v6c0 4.6-3.4 8-8 9-4.6-1-8-4.4-8-9V6z"/><path d="m8.6 12 2.4 2.4 4.4-4.8"/>',
+    'tanim': '<path d="M3 5h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H3z"/><path d="M21 5h-6a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h7z"/>',
+    'ipucu': '<path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9V16h7v-2.1A6 6 0 0 0 12 3z"/>',
+    'hatirla': '<path d="M12 21s-6.5-5.6-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 15.4 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.2"/>',
+}
+
+
+def kutu_html(k):
+    """Yan kutu: bilgi | dikkat | kural | tanim | ipucu | hatirla (simgeli, renkli; stil.css "Özet kutuları")."""
+    tur = k.get('tur') if k.get('tur') in KUTU else 'bilgi'
+    simge = f'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">{SIMGE[tur]}</svg>'
+    return (f'<aside class="ozet-kutu {tur}"><div class="kutu-bas"><span class="kutu-simge" aria-hidden="true">{simge}</span>'
+            f'<strong>{k.get("baslik") or KUTU[tur]}</strong></div><p>{e(k["metin"])}</p></aside>')
 
 
 def paragraflar(liste):
@@ -121,13 +139,14 @@ def sayfa_uret(o, dersler, icerikler):
         f'<li><a href="/{i.get("goruntule") or i.get("dosya") or ""}">{e(i["baslik"])}</a> <span>{e(i["tur"])}</span></li>'
         for i in baglar if i.get('goruntule') or i.get('dosya'))
     bolumler = ''
-    for b in o['bolumler']:
-        kutu = b.get('kutu')
-        bolumler += (f'<section class="ozet-bolum"><h2>{e(b["baslik"])}</h2>{paragraflar(b.get("metin"))}'
-                     + (f'<figure class="ozet-gorsel">{b["gorsel"]}</figure>' if b.get('gorsel') else '')
-                     + tablo(b.get('tablo'))
-                     + (f'<aside class="ozet-kutu {kutu["tur"]}"><strong>{KUTU.get(kutu["tur"], "Not")}</strong><p>{e(kutu["metin"])}</p></aside>' if kutu else '')
-                     + '</section>')
+    for no, b in enumerate(o['bolumler'], 1):
+        # Metin ve tablo solda; görsel ve kutular yanda (geniş ekranda; dar ekranda alt alta)
+        kutular = ([b['kutu']] if b.get('kutu') else []) + b.get('kutular', [])
+        yan = (f'<figure class="ozet-gorsel">{b["gorsel"]}</figure>' if b.get('gorsel') else '') + ''.join(kutu_html(k) for k in kutular)
+        metin = paragraflar(b.get('metin')) + tablo(b.get('tablo'))
+        bolumler += (f'<section class="ozet-bolum konu{" yanli-bolum" if yan and metin else ""}"><h2 data-no="{no}">{e(b["baslik"])}</h2>'
+                     f'<div class="bolum-govde"><div class="bolum-metin">{metin}</div>'
+                     + (f'<div class="bolum-yan">{yan}</div>' if yan else '') + '</div></section>')
     ornekler = ''.join(
         f'<li class="ornek"><p class="ornek-soru"><span class="ornek-no">Örnek {n}</span>{e(x["soru"])}</p>'
         + (f'<figure class="ozet-gorsel">{x["gorsel"]}</figure>' if x.get('gorsel') else '')
@@ -135,23 +154,26 @@ def sayfa_uret(o, dersler, icerikler):
         for n, x in enumerate(o['ornekler'], 1))
     ozet = ''.join(f'<li>{e(x)}</li>' for x in o.get('ozet', []))
     ciktilar = ''.join(f'<li>{e(c)}</li>' for c in o['ciktilar'])
-    govde = f'''  <section class="sayfa-bas ozet-bas">
+    ck = next((i for i in icerikler if i.get('tur') == 'Çalışma kâğıdı' and i.get('sinif') == o['sinif']
+               and i.get('ders') == o['ders'] and i.get('hafta') == o['hafta']), None)
+    ck_dugme = f'<a class="dugme" href="/{ck["goruntule"]}">Çalışma kâğıdı</a>' if ck else ''
+    govde = f'''  <section class="sayfa-bas ozet-bas ders-{o["ders"]}">
     <div class="kap">
       <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/sinif.html?no={o["sinif"]}">{o["sinif"]}. sınıf</a><span aria-hidden="true">/</span><a href="/icerikler.html?sinif={o["sinif"]}&amp;ders={o["ders"]}">{e(ad)}</a><span aria-hidden="true">/</span><span>{o["hafta"]}. hafta</span></nav>
       <p class="ust-baslik">{o["sinif"]}. sınıf · {e(ad)} · {o["hafta"]}. hafta ({e(o["tarih"])})</p>
       <h1>{e(o["konu"])}</h1>
       <p>{e(o["unite"])} teması · Konu özeti</p>
-      <div class="g-dugmeler y-ust"><button class="dugme ana" type="button" onclick="window.kalemAc &amp;&amp; window.kalemAc()"><span aria-hidden="true">✎</span>Kalemle yaz</button><button class="dugme" type="button" onclick="document.querySelectorAll('.ornek details').forEach(d=&gt;d.open=!d.open)">Bütün cevapları aç/kapat</button>{'<a class="dugme" href="#etkinlikler">Etkinlikler</a>' if o.get('etkinlikler') else ''}</div>
+      <div class="g-dugmeler y-ust"><button class="dugme ana" type="button" onclick="window.kalemAc &amp;&amp; window.kalemAc()"><span aria-hidden="true">✎</span>Kalemle yaz</button><button class="dugme" type="button" onclick="document.querySelectorAll('.ornek details').forEach(d=&gt;d.open=!d.open)">Bütün cevapları aç/kapat</button>{'<a class="dugme" href="#etkinlikler">Etkinlikler</a>' if o.get('etkinlikler') else ''}{ck_dugme}</div>
     </div>
   </section>
-  <article class="bolum ozet">
+  <article class="bolum ozet ders-{o["ders"]}">
     <div class="kap ozet-ic">
-      <aside class="ozet-cikti"><strong>Öğrenme çıktısı</strong><ul>{ciktilar}</ul></aside>
-      <p class="ozet-giris">{e(o["giris"])}</p>
+      <div class="ozet-ust"><aside class="ozet-cikti"><strong>Öğrenme çıktısı</strong><ul>{ciktilar}</ul></aside>
+      <div class="ozet-giris-kart"><span class="giris-etiket">Bu hafta</span><p class="ozet-giris">{e(o["giris"])}</p></div></div>
       {bolumler}
       <section class="ozet-bolum"><h2>Örnekler</h2><ol class="ornekler">{ornekler}</ol></section>
       {etkinlik_html(o['etkinlikler']) if o.get('etkinlikler') else ''}
-      <section class="ozet-bolum ozet-son"><h2>Kısaca</h2><ul>{ozet}</ul></section>
+      <section class="ozet-bolum ozet-son"><h2>Kısaca</h2><ul class="kisaca">{ozet}</ul></section>
       {f'<section class="ozet-bolum ozet-ilgili"><h2>Bu dersin öteki kaynakları</h2><ul>{ilgili}</ul></section>' if ilgili else ''}
     </div>
   </article>'''
