@@ -468,6 +468,61 @@ def fen6(o):
             b['gorsel'] = g[b['baslik']]
 
 
+# ---------- 7. sınıf Fen Bilimleri: uzay araştırmaları teknolojileri ----------
+def uydu_simge(x, y, a, s, f):
+    return (f'<rect x="{x - 19}" y="{y - 3.5}" width="12" height="7" rx="1.5" class="{a}"/><rect x="{x - 19}" y="{y - 3.5}" width="12" height="7" rx="1.5" class="{s}" stroke-width="1.3"/>'
+            f'<rect x="{x + 7}" y="{y - 3.5}" width="12" height="7" rx="1.5" class="{a}"/><rect x="{x + 7}" y="{y - 3.5}" width="12" height="7" rx="1.5" class="{s}" stroke-width="1.3"/>'
+            f'<rect x="{x - 6}" y="{y - 6}" width="12" height="12" rx="2.5" class="{f}"/>')
+
+
+def yapay_uydular():
+    cx, cy, R = 230, 136, 96
+    ic = f'<circle cx="{cx}" cy="{cy}" r="{R}" class="g-c" stroke-width="1.5" stroke-dasharray="5 6"/>'
+    ic += f'<circle cx="{cx}" cy="{cy}" r="46" class="g-ma"/><circle cx="{cx}" cy="{cy}" r="46" class="g-ms" stroke-width="2"/>'
+    ic += f'<text x="{cx}" y="{cy + 5}" text-anchor="middle" font-size="15" font-weight="800" class="g-mf">Dünya</text>'
+    uydu = [(cx, cy - R, ('g-ya', 'g-ys', 'g-yf'), ('Gözlem', 'İMECE, GÖKTÜRK'), 'ust'),
+            (cx + R, cy, ('g-ta', 'g-ts', 'g-tf'), ('Meteoroloji', 'hava tahmini'), 'sag'),
+            (cx, cy + R, ('g-oa', 'g-os', 'g-of'), ('Konum', 'yer-yön bulma'), 'alt'),
+            (cx - R, cy, ('g-ma', 'g-ms', 'g-mf'), ('Haberleşme', 'TÜRKSAT'), 'sol')]
+    for x, y, (a, s, f), (ad, ornek), yer in uydu:
+        ic += uydu_simge(x, y, a, s, f)
+        if yer == 'ust':
+            ic += f'<text x="{x}" y="{y - 26}" text-anchor="middle" font-size="14" font-weight="800" class="{f}">{ad}</text><text x="{x}" y="{y - 12}" text-anchor="middle" font-size="12" class="g-s">{ornek}</text>'
+        elif yer == 'alt':
+            ic += f'<text x="{x}" y="{y + 26}" text-anchor="middle" font-size="14" font-weight="800" class="{f}">{ad}</text><text x="{x}" y="{y + 41}" text-anchor="middle" font-size="12" class="g-s">{ornek}</text>'
+        elif yer == 'sag':
+            ic += f'<text x="{x + 26}" y="{y - 2}" font-size="14" font-weight="800" class="{f}">{ad}</text><text x="{x + 26}" y="{y + 14}" font-size="12" class="g-s">{ornek}</text>'
+        else:
+            ic += f'<text x="{x - 26}" y="{y - 2}" text-anchor="end" font-size="14" font-weight="800" class="{f}">{ad}</text><text x="{x - 26}" y="{y + 14}" text-anchor="end" font-size="12" class="g-s">{ornek}</text>'
+    return svg(460, 284, ic, 'Dünya çevresinde dolanan yapay uydular ve kullanım alanları: gözlem, meteoroloji, konum, haberleşme')
+
+
+def teleskoplar():
+    """Yıldız ışığı: uzay teleskobuna dümdüz ulaşır; atmosferden geçerek yer tabanlı teleskoba titreşerek ulaşır."""
+    ic = '<rect x="0" y="92" width="460" height="148" class="g-ma" opacity=".4"/>'
+    ic += '<text x="452" y="110" text-anchor="end" font-size="12.5" font-weight="700" class="g-mf">atmosfer</text>'
+    ic += '<path d="M0 240 L60 196 L118 150 L178 196 L240 240 Z" class="g-ya"/><path d="M0 240 L60 196 L118 150 L178 196 L240 240" class="g-ys" stroke-width="2"/>'
+    ic += '<path d="M104 150 A14 14 0 0 1 132 150 Z" class="g-y" opacity=".8"/><rect x="104" y="150" width="28" height="10" class="g-y" opacity=".8"/>'
+    ic += '<text x="118" y="206" text-anchor="middle" font-size="13" font-weight="800" class="g-yf">Gözlemevi</text><text x="118" y="222" text-anchor="middle" font-size="11.5" class="g-yf">yer tabanlı teleskop</text>'
+    ic += '<path d="M56 8 l4 9 10 1 -8 6 3 10 -9 -6 -9 6 3 -10 -8 -6 10 -1 z" class="g-tf"/>'
+    ic += '<text x="78" y="22" font-size="12" class="g-s">yıldız</text>'
+    ic += '<line x1="70" y1="30" x2="238" y2="58" class="g-ts" stroke-width="2" stroke-dasharray="6 4"/>'
+    ic += ('<g transform="rotate(-12 262 62)"><rect x="244" y="54" width="38" height="16" rx="3" class="g-oa"/><rect x="244" y="54" width="38" height="16" rx="3" class="g-os" stroke-width="1.8"/>'
+           '<rect x="250" y="36" width="10" height="16" rx="1.5" class="g-os" stroke-width="1.5"/><rect x="250" y="72" width="10" height="16" rx="1.5" class="g-os" stroke-width="1.5"/></g>')
+    ic += '<text x="300" y="54" font-size="13" font-weight="800" class="g-of">Uzay teleskobu</text><text x="300" y="70" font-size="11.5" class="g-s">Hubble, James Webb</text>'
+    ic += '<line x1="58" y1="36" x2="94" y2="92" class="g-ts" stroke-width="2" stroke-dasharray="6 4"/>'
+    ic += '<path d="M94 92 q8 6 3 12 t6 12 t3 12 t6 12" class="g-ts" stroke-width="2"/>'
+    ic += '<text x="160" y="124" font-size="11.5" class="g-s">ışık titreşir;</text><text x="160" y="138" font-size="11.5" class="g-s">bulutlar ve şehir</text><text x="160" y="152" font-size="11.5" class="g-s">ışıkları gözlemi zorlaştırır</text>'
+    return svg(460, 242, ic, 'Bir yıldızın ışığı uzaydaki teleskoba doğrudan ulaşır; dağdaki gözlemevine atmosferden geçerek, titreşerek ulaşır')
+
+
+def fen7(o):
+    g = {'Yapay uydular': yapay_uydular(), 'Teleskoplar: yerde ve uzayda': teleskoplar()}
+    for b in o['bolumler']:
+        if b['baslik'] in g:
+            b['gorsel'] = g[b['baslik']]
+
+
 if __name__ == '__main__':
     yaz('5-matematik-1.json', mat5)
     yaz('8-matematik-1.json', mat8)
@@ -479,4 +534,6 @@ if __name__ == '__main__':
         yaz('5-fen-bilimleri-2.json', fen5)
     if (OZET / '6-fen-bilimleri-1.json').exists():
         yaz('6-fen-bilimleri-1.json', fen6)
+    if (OZET / '7-fen-bilimleri-1.json').exists():
+        yaz('7-fen-bilimleri-1.json', fen7)
     print('görseller yazıldı')
