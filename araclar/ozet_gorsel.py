@@ -921,6 +921,49 @@ def biyoloji9(o):
             b['gorsel'] = donum_noktalari()
 
 
+# ---------- 9. sınıf Coğrafya: doğal ortamın küreleri, coğrafyanın bölümleri ----------
+def dogal_ortam_kureleri():
+    kure = [('Taş küre', 'litosfer', ('kayaç', 'yer şekli', 'toprak'), ('g-ta', 'g-ts', 'g-tf')),
+            ('Hava küre', 'atmosfer', ('Dünya’yı', 'saran gazlar'), ('g-ma', 'g-ms', 'g-mf')),
+            ('Su küre', 'hidrosfer', ('deniz, göl,', 'akarsu'), ('g-ma', 'g-ms', 'g-mf')),
+            ('Buz küre', 'kriyosfer', ('buzul,', 'donmuş', 'toprak'), ('g-oa', 'g-os', 'g-of')),
+            ('Yaşam küre', 'biyosfer', ('canlıların', 'yaşadığı alan'), ('g-ya', 'g-ys', 'g-yf'))]
+    ic = ''
+    for i, (ad, bilim, ornek, (a, st, f)) in enumerate(kure):
+        x = 10 + i * 91
+        ic += f'<rect x="{x}" y="12" width="88" height="118" rx="12" class="{a}"/><rect x="{x}" y="12" width="88" height="118" rx="12" class="{st}" stroke-width="2"/>'
+        ic += f'<text x="{x + 44}" y="40" text-anchor="middle" font-size="12.5" font-weight="800" class="{f}">{ad}</text>'
+        ic += f'<text x="{x + 44}" y="58" text-anchor="middle" font-size="11.5" class="{f}">({bilim})</text>'
+        for k, t in enumerate(ornek):
+            ic += f'<text x="{x + 44}" y="{84 + k * 16}" text-anchor="middle" font-size="11" class="g-y">{t}</text>'
+    ic += '<text x="236" y="156" text-anchor="middle" font-size="12.5" class="g-y">Bu beş ortam birlikte <tspan font-weight="800">doğal ortamı</tspan> oluşturur ve sürekli etkileşim hâlindedir.</text>'
+    return svg(472, 170, ic, 'Doğal ortamın beş küresi: taş küre (litosfer), hava küre (atmosfer), su küre (hidrosfer), buz küre (kriyosfer), yaşam küre (biyosfer)')
+
+
+def cografya_bolumleri():
+    ic = '<rect x="176" y="8" width="120" height="36" rx="18" class="g-oa"/><rect x="176" y="8" width="120" height="36" rx="18" class="g-os" stroke-width="2"/>'
+    ic += '<text x="236" y="31" text-anchor="middle" font-size="15" font-weight="800" class="g-of">COĞRAFYA</text>'
+    kol = [(16, 'Fiziki coğrafya', 'doğal olay ve süreçler', ('g-ta', 'g-ts', 'g-tf'),
+            ['Jeomorfoloji (yer şekilleri)', 'Klimatoloji (iklim)', 'Hidrografya (sular)', 'Biyocoğrafya (canlılar)', 'Toprak coğrafyası']),
+           (244, 'Beşerî coğrafya', 'insan faaliyetleri ve mekân', ('g-ma', 'g-ms', 'g-mf'),
+            ['Kültürel coğrafya', 'Sosyal coğrafya', 'Ekonomik coğrafya', 'Yerleşme coğrafyası', 'Siyasi coğrafya', 'Nüfus coğrafyası'])]
+    for x, ad, alt, (a, st, f), dal in kol:
+        ic += f'<line x1="236" y1="44" x2="{x + 106}" y2="64" class="g-c" stroke-width="2"/>'
+        ic += f'<rect x="{x}" y="64" width="212" height="{58 + len(dal) * 20}" rx="12" class="{a}"/><rect x="{x}" y="64" width="212" height="{58 + len(dal) * 20}" rx="12" class="{st}" stroke-width="2"/>'
+        ic += f'<text x="{x + 106}" y="88" text-anchor="middle" font-size="14" font-weight="800" class="{f}">{ad}</text>'
+        ic += f'<text x="{x + 106}" y="106" text-anchor="middle" font-size="11.5" class="g-s">{alt}</text>'
+        for k, d in enumerate(dal):
+            ic += f'<circle cx="{x + 18}" cy="{127 + k * 20}" r="3.5" class="{f}"/><text x="{x + 28}" y="{131 + k * 20}" font-size="12" class="g-y">{d}</text>'
+    return svg(472, 250, ic, 'Coğrafyanın bölümleri: fiziki coğrafya (jeomorfoloji, klimatoloji, hidrografya, biyocoğrafya, toprak coğrafyası) ve beşerî coğrafya (kültürel, sosyal, ekonomik, yerleşme, siyasi, nüfus coğrafyası)')
+
+
+def cografya9(o):
+    g = {'Doğal ortam ve küreler': dogal_ortam_kureleri(), 'Coğrafyanın bölümleri': cografya_bolumleri()}
+    for b in o['bolumler']:
+        if b['baslik'] in g:
+            b['gorsel'] = g[b['baslik']]
+
+
 if __name__ == '__main__':
     yaz('5-matematik-1.json', mat5)
     yaz('8-matematik-1.json', mat8)
@@ -954,4 +997,6 @@ if __name__ == '__main__':
         yaz('6-ingilizce-4.json', ingilizce6)
     if (OZET / '9-biyoloji-1.json').exists():
         yaz('9-biyoloji-1.json', biyoloji9)
+    if (OZET / '9-cografya-1.json').exists():
+        yaz('9-cografya-1.json', cografya9)
     print('görseller yazıldı')
