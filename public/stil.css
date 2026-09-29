@@ -52,7 +52,8 @@ a:hover { text-decoration: underline; }
 h1, h2, h3, h4 { line-height: 1.2; margin: 0; letter-spacing: -.015em; }
 p { margin: 0; }
 [hidden] { display: none !important; }
-.kap { width: min(1180px, 100% - 40px); margin-inline: auto; }
+/* Kap ekranın tamamını kullanır (kullanıcı 29.09: "neden sayfanın tamamı kullanılmıyor"); kenar payı ekranla büyür */
+.kap { width: min(1760px, 100% - 2 * clamp(20px, 4vw, 72px)); margin-inline: auto; }
 .gizli { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 .atla { position: absolute; left: -9999px; }
 .atla:focus { left: 16px; top: 12px; z-index: 50; background: var(--yuzey); padding: 8px 12px; border-radius: 8px; }
@@ -483,7 +484,7 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
 /* Özet gövdesi menüyle aynı genişlikte: solda metin, sağda sabit "Bu sayfada" paneli (kullanıcı 29.09: "neden dar kullanılıyor") */
 .ozet-ic { max-width: none; }
 @media (min-width: 1100px) {
-  .ozet-ic.yanli { display: grid; grid-template-columns: minmax(0, 1fr) 270px; column-gap: 48px; align-items: start; }
+  .ozet-ic.yanli { display: grid; grid-template-columns: minmax(0, 1fr) 300px; column-gap: 56px; align-items: start; }
   .ozet-ic.yanli > * { grid-column: 1; }
   .ozet-ic.yanli > .ozet-yan { grid-column: 2; grid-row: 1 / span 200; position: sticky; top: 92px; }
 }
