@@ -1,0 +1,139 @@
+{
+ "sinif": 6,
+ "ders": "matematik",
+ "hafta": 1,
+ "tarih": "14-18 Eylül 2026",
+ "konu": "Bir Doğal Sayının Çarpanları ve Katları",
+ "ciktilar": [
+  "MAT.6.1.1. Karşılaştığı problem durumlarında bir doğal sayının çarpan ve katlarına yönelik muhakeme yapabilme"
+ ],
+ "hatirla": [
+  "Bir doğal sayıyı iki doğal sayının çarpımı olarak yazdığımızda çarpılan sayılar o sayının çarpanlarıdır: 12 = 3 × 4 olduğundan 3 ve 4, 12'nin çarpanlarıdır.",
+  "Bir sayının çarpanları o sayıyı kalansız böler. Bu yüzden çarpanlar aynı zamanda o sayının bölenleridir.",
+  "Bir sayının 1, 2, 3, … ile çarpılmasıyla o sayının katları bulunur. Katlar sınırsızdır; sıfırdan farklı bir sayının çarpanları ise sınırlıdır.",
+  "Çarpanların en küçüğü 1, en büyüğü sayının kendisidir. Katların en küçüğü de sayının kendisidir."
+ ],
+ "sorular": [
+  {
+   "tur": "kisa",
+   "duzey": "hatirla",
+   "soru": "Kareli zemindeki üç dikdörtgenin her birinin alanı 20 birimkaredir. Dikdörtgenlerin kenar uzunluklarından yararlanarak 20'nin bütün çarpanlarını yazınız.",
+   "cevap": "20 = 1 × 20 = 2 × 10 = 4 × 5. Çarpanlar: 1, 2, 4, 5, 10, 20.",
+   "satir": 2
+  },
+  {
+   "tur": "eslestir",
+   "duzey": "hatirla",
+   "soru": "Her sayıyı bütün çarpanlarının listesiyle eşleştiriniz. Harfleri kutulara yazınız.",
+   "ciftler": [
+    ["13", "1, 13"],
+    ["10", "1, 2, 5, 10"],
+    ["27", "1, 3, 9, 27"],
+    ["16", "1, 2, 4, 8, 16"],
+    ["21", "1, 3, 7, 21"]
+   ]
+  },
+  {
+   "tur": "kavram",
+   "duzey": "hatirla",
+   "soru": "Kavram haritasında 30, iki doğal sayının çarpımı olarak bütün yollarla yazılacaktır. Boş kutuları doldurunuz.",
+   "merkez": "30",
+   "dallar": [
+    "1 × 30",
+    {"b": "2 × 15", "ipucu": "2 ile başlar"},
+    {"b": "3 × 10", "ipucu": "3 ile başlar"},
+    {"b": "5 × 6", "ipucu": "5 ile başlar"}
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Sayı doğrusunda 0'dan başlayan eşit atlamalar gösterilmiştir. Beşinci atlamanın sonunda hangi sayıya ulaşılır?",
+   "secenekler": ["25", "30", "35", "36"],
+   "dogru": 1
+  },
+  {
+   "tur": "tablo",
+   "duzey": "uygula",
+   "soru": "Tablodaki sayıların 50'den küçük bütün katlarını yazınız.",
+   "basliklar": ["Sayı", "50'den küçük katları"],
+   "satirlar": [
+    ["9", {"b": "9, 18, 27, 36, 45"}],
+    ["12", {"b": "12, 24, 36, 48"}],
+    ["17", {"b": "17, 34"}],
+    ["25", {"b": "25"}]
+   ]
+  },
+  {
+   "tur": "dy",
+   "duzey": "hatirla",
+   "soru": "Doğru olan ifadelerin yanındaki D kutusunu, yanlış olanların yanındaki Y kutusunu işaretleyiniz.",
+   "ifadeler": [
+    {"metin": "Bir doğal sayının çarpanları o sayıyı kalansız böler.", "dogru": true},
+    {"metin": "Sıfırdan farklı bir doğal sayının çarpanları sınırsızdır.", "dogru": false},
+    {"metin": "Bir doğal sayının en küçük katı, sayının kendisidir.", "dogru": true},
+    {"metin": "1, sıfırdan farklı her doğal sayının çarpanıdır.", "dogru": true},
+    {"metin": "Bir sayının katlarından bazıları o sayıdan küçüktür.", "dogru": false}
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "duzey": "hatirla",
+   "soru": "Cümlelerdeki boşlukları kutudaki sözcüklerle doldurunuz. Bir sözcük artacaktır.",
+   "cumleler": [
+    {"metin": "Bir doğal sayıyı kalansız bölen sayılara o sayının ___ denir.", "cevap": "bölenleri"},
+    {"metin": "Sıfırdan farklı her doğal sayının en küçük çarpanı ___ sayısıdır.", "cevap": "1"},
+    {"metin": "Sıfırdan farklı bir doğal sayının katları ___ sayıdadır.", "cevap": "sonsuz"},
+    {"metin": "Bir sayının çarpanlarının en büyüğü ile katlarının en küçüğü o sayının ___ eşittir.", "cevap": "kendisine"}
+   ],
+   "fazla": ["sınırlı"]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Kartlara bir doğal sayının bütün çarpanları küçükten büyüğe yazılmıştır. Ters çevrilmiş kartta hangi sayı yazar?",
+   "secenekler": ["5", "6", "7", "10"],
+   "dogru": 1
+  },
+  {
+   "tur": "kisa",
+   "duzey": "uygula",
+   "soru": "Bir kırtasiyeci 24 kalemi, her pakette eşit sayıda kalem olacak ve hiç kalem artmayacak biçimde paketleyecek. Görselde bunun bir yolu gösterilmiştir. Paket sayısı kaç olabilir? Bütün olasılıkları yazınız (tek paket de olabilir).",
+   "cevap": "Paket sayısı 24'ün çarpanlarından biridir: 1, 2, 3, 4, 6, 8, 12 ya da 24.",
+   "satir": 2
+  },
+  {
+   "tur": "tablo",
+   "duzey": "uygula",
+   "soru": "Aşağıdaki durumlarda çarpan bilgisini mi, kat bilgisini mi kullanırız? Tabloyu tamamlayınız.",
+   "basliklar": ["Durum", "Çarpan mı, kat mı?"],
+   "satirlar": [
+    ["28 kişilik sınıfı, eşit sayıda kişiden oluşan gruplara ayırmak", {"b": "Çarpan"}],
+    ["3 günde bir gelen nöbetin hangi günlere düştüğünü bulmak", {"b": "Kat"}],
+    ["Yol kenarına 50 metrede bir dikilen ağaçların yerini bulmak", {"b": "Kat"}],
+    ["30 cevizi tabaklara eşit ve artansız dağıtmak", {"b": "Çarpan"}]
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Bir kütüphanede raflar 1'den 30'a kadar numaralıdır. Görevli her 4. rafa kırmızı, her 6. rafa mavi etiket yapıştırıyor. Görselde ilk raflar gösterilmiştir. Kaç rafta iki renk etiket de bulunur?",
+   "secenekler": ["2", "3", "5", "12"],
+   "dogru": 0
+  },
+  {
+   "tur": "kisa",
+   "duzey": "ust",
+   "soru": "Kilidin şifresi bir doğal sayıdır. Görseldeki ipuçlarını kullanarak şifreyi bulunuz. Nasıl bulduğunuzu yazınız.",
+   "cevap": "36. İki basamaklı ve 50'den küçük olan 9'un katları 18, 27, 36, 45'tir. Bunlardan 4'e kalansız bölünen yalnız 36'dır.",
+   "satir": 3
+  },
+  {
+   "tur": "acik",
+   "duzey": "ust",
+   "soru": "Görselde bir parktaki fıskiye ve ışık gösterisinin başlama zamanları gösterilmiştir. İkisi 18.00'de birlikte başladı. Gösteriler aynı aralıklarla sürerse 19.00'a kadar (19.00 dahil) hangi saatlerde yine birlikte başlar?",
+   "cevap": "Fıskiye 12 dakikada bir (0, 12, 24, 36, 48, 60. dakika), ışık 8 dakikada bir (0, 8, 16, 24, 32, 40, 48, 56. dakika) başlar. Birlikte başladıkları saatler: 18.24 ve 18.48.",
+   "satir": 3
+  }
+ ]
+}
