@@ -964,6 +964,40 @@ def cografya9(o):
             b['gorsel'] = g[b['baslik']]
 
 
+# ---------- 9. sınıf Din Kültürü: insanın yaratılış aşamaları (Müminun 23/12-14) ----------
+def yaratilis_asamalari():
+    ic = '<defs>' + ok_isareti('okYA', 'g-c') + '</defs>'
+    adim = [('Çamurdan', 'süzülmüş öz'), ('Nutfe', ''), ('Alaka', '(aşılanmış yumurta)'), ('Bir parçacık', 'et'),
+            ('Kemikler', '(iskelet)'), ('Kemiklerin etle', 'kaplanması'), ('Başka bir', 'yaratışla insan')]
+    konum = [(10, 14), (128, 14), (246, 14), (364, 14), (364, 104), (246, 104), (128, 104)]
+    for i, ((a, b), (x, y)) in enumerate(zip(adim, konum)):
+        son = i == len(adim) - 1
+        dol, cer, yaz_ = ('g-ta', 'g-ts', 'g-tf') if son else ('g-ma', 'g-ms', 'g-mf')
+        ic += f'<rect x="{x}" y="{y}" width="104" height="56" rx="12" class="{dol}"/><rect x="{x}" y="{y}" width="104" height="56" rx="12" class="{cer}" stroke-width="2"/>'
+        ic += f'<circle cx="{x + 12}" cy="{y + 12}" r="9" class="{yaz_}"/><text x="{x + 12}" y="{y + 16}" text-anchor="middle" font-size="11" font-weight="800" class="g-z">{i + 1}</text>'
+        if b:
+            ic += f'<text x="{x + 54}" y="{y + 34}" text-anchor="middle" font-size="11.5" font-weight="800" class="{yaz_}">{a}</text>'
+            ic += f'<text x="{x + 54}" y="{y + 49}" text-anchor="middle" font-size="{9.5 if b.startswith("(") else 11.5}" class="g-y">{b}</text>'
+        else:
+            ic += f'<text x="{x + 54}" y="{y + 39}" text-anchor="middle" font-size="12.5" font-weight="800" class="{yaz_}">{a}</text>'
+    for (x1, y1), (x2, y2) in zip(konum, konum[1:]):
+        if y1 == y2:
+            if x2 > x1:
+                ic += f'<line x1="{x1 + 106}" y1="{y1 + 28}" x2="{x2 - 4}" y2="{y2 + 28}" class="g-c" stroke-width="2" marker-end="url(#okYA)"/>'
+            else:
+                ic += f'<line x1="{x1 - 2}" y1="{y1 + 28}" x2="{x2 + 108}" y2="{y2 + 28}" class="g-c" stroke-width="2" marker-end="url(#okYA)"/>'
+        else:
+            ic += f'<line x1="{x1 + 52}" y1="{y1 + 58}" x2="{x2 + 52}" y2="{y2 - 4}" class="g-c" stroke-width="2" marker-end="url(#okYA)"/>'
+    ic += '<text x="236" y="190" text-anchor="middle" font-size="12" class="g-s">Kur’an-ı Kerim’de bildirilen aşamalar (Müminun 23/12-14)</text>'
+    return svg(472, 202, ic, 'Kur’an-ı Kerim’e göre insanın yaratılış aşamaları: çamurdan süzülmüş öz, nutfe, alaka, bir parçacık et, kemikler, kemiklerin etle kaplanması, başka bir yaratışla insan (Müminun 23/12-14)')
+
+
+def din9(o):
+    for b in o['bolumler']:
+        if b['baslik'] == 'İnsanın yaratılışı':
+            b['gorsel'] = yaratilis_asamalari()
+
+
 if __name__ == '__main__':
     yaz('5-matematik-1.json', mat5)
     yaz('8-matematik-1.json', mat8)
@@ -999,4 +1033,6 @@ if __name__ == '__main__':
         yaz('9-biyoloji-1.json', biyoloji9)
     if (OZET / '9-cografya-1.json').exists():
         yaz('9-cografya-1.json', cografya9)
+    if (OZET / '9-din-kulturu-ve-ahlak-bilgisi-1.json').exists():
+        yaz('9-din-kulturu-ve-ahlak-bilgisi-1.json', din9)
     print('görseller yazıldı')
