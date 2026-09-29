@@ -767,6 +767,49 @@ def turkce6(o):
             b['gorsel'] = goz_uygulamalari()
 
 
+# ---------- 7. sınıf Türkçe: noktalı virgül, e-posta ----------
+def noktali_virgul():
+    satir = [('Virgüllü sıralı cümleleri ayırır', [('Erken kalktı, kahvaltısını yaptı', 0), (';', 1), (' okula koştu.', 0)], ('g-ma', 'g-ms', 'g-mf')),
+             ('Virgülle ayrılmış takımları ayırır', [('Bahçede elma, armut', 0), (';', 1), (' bostanda biber, fasulye var.', 0)], ('g-ya', 'g-ys', 'g-yf')),
+             ('Özneyi sıralı ögelerden ayırır', [('Başarı', 0), (';', 1), (' sabır, emek ve düzenli çalışmayla gelir.', 0)], ('g-oa', 'g-os', 'g-of'))]
+    ic = ''
+    for i, (bas, parca, (a, s, f)) in enumerate(satir):
+        y = 12 + i * 76
+        ic += f'<rect x="16" y="{y}" width="440" height="64" rx="12" class="{a}"/><rect x="16" y="{y}" width="440" height="64" rx="12" class="{s}" stroke-width="2"/>'
+        ic += f'<circle cx="38" cy="{y + 22}" r="11" class="{f}"/><text x="38" y="{y + 27}" text-anchor="middle" font-size="13" font-weight="800" class="g-b">{i + 1}</text>'
+        ic += f'<text x="58" y="{y + 27}" font-size="13.5" font-weight="800" class="{f}">{bas}</text>'
+        ic += f'<text x="30" y="{y + 51}" font-size="13" class="g-y">'
+        for yazi, vurgu in parca:
+            ic += f'<tspan class="g-tf" font-weight="800" font-size="16">{yazi}</tspan>' if vurgu else f'<tspan>{yazi}</tspan>'
+        ic += '</text>'
+    return svg(472, 242, ic, 'Noktalı virgülün üç görevi: 1. virgüllü sıralı cümleleri ayırır, 2. virgülle ayrılmış takımları ayırır, 3. özneyi sıralı ögelerden ayırır; her biri için örnek cümle')
+
+
+def eposta_sablonu():
+    ic = '<rect x="16" y="10" width="300" height="262" rx="12" class="g-z"/><rect x="16" y="10" width="300" height="262" rx="12" class="g-ms" stroke-width="2"/>'
+    ic += '<rect x="16" y="10" width="300" height="30" rx="12" class="g-ma"/><text x="30" y="30" font-size="12.5" font-weight="800" class="g-mf">Yeni ileti</text>'
+    satir = [(58, 'Alıcı: iletisim@belediye.bel.tr', 'g-s'), (78, 'Konu: Okul önündeki yaya geçidi', 'g-y'), (98, 'Ek: yaya-gecidi.jpg', 'g-s'),
+             (126, 'Merhaba,', 'g-y'), (148, 'Ben Ada Er, 7. sınıf öğrencisiyim.', 'g-y'), (170, 'Okulumuzun önündeki yaya geçidinin', 'g-y'),
+             (186, 'çizgileri silinmiş, sürücüler fark etmiyor.', 'g-y'), (208, 'Çizgilerin yenilenmesini öneriyorum;', 'g-y'),
+             (224, 'böylece öğrenciler güvenle geçebilir.', 'g-y'), (246, 'Bilgilerinize sunarım. Saygılarımla, Ada Er', 'g-y')]
+    for y, s, c in satir:
+        ic += f'<text x="28" y="{y}" font-size="11.5" class="{c}">{s}</text>'
+    ic += '<line x1="24" y1="108" x2="308" y2="108" class="g-c" stroke-width="1"/>'
+    etiket = [(78, 'Konu ve ek', 'g-mf'), (126, 'Selam', 'g-yf'), (148, 'Kendini tanıtma', 'g-yf'), (178, 'Sorun', 'g-tf'), (216, 'Öneri ve gerekçe', 'g-of'), (246, 'Kapanış ve ad', 'g-yf')]
+    for y, ad, c in etiket:
+        ic += f'<line x1="318" y1="{y - 4}" x2="334" y2="{y - 4}" class="g-c" stroke-width="1.5"/><circle cx="338" cy="{y - 4}" r="3" class="{c}"/>'
+        ic += f'<text x="346" y="{y}" font-size="12" font-weight="800" class="{c}">{ad}</text>'
+    return svg(472, 282, ic, 'Bir sorunu bildiren e-posta örneği ve bölümleri: konu ve ek, selam, kendini tanıtma, sorun, öneri ve gerekçe, kapanış ve ad')
+
+
+def turkce7(o):
+    for b in o['bolumler']:
+        if b['baslik'] == 'Noktalı virgülün görevleri':
+            b['gorsel'] = noktali_virgul()
+        elif b['baslik'] == 'Bir sorun için e-posta yazmak':
+            b['gorsel'] = eposta_sablonu()
+
+
 if __name__ == '__main__':
     yaz('5-matematik-1.json', mat5)
     yaz('8-matematik-1.json', mat8)
@@ -790,4 +833,6 @@ if __name__ == '__main__':
         yaz('5-turkce-1.json', turkce5)
     if (OZET / '6-turkce-1.json').exists():
         yaz('6-turkce-1.json', turkce6)
+    if (OZET / '7-turkce-1.json').exists():
+        yaz('7-turkce-1.json', turkce7)
     print('görseller yazıldı')
