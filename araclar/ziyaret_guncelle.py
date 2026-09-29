@@ -3,7 +3,7 @@
 
 GitHub Actions günde bir çalıştırır. Gerekli gizli değişkenler (GitHub → Settings → Secrets → Actions):
     CF_API_TOKEN   Cloudflare API anahtarı (izin: Account → Account Analytics → Read)
-    CF_ACCOUNT_ID  Cloudflare hesap kimliği
+    CF_ACCOUNT_ID  Cloudflare hesap kimliği (gizli değil; guncelle.yml içinde yazılı)
 Anahtar yoksa hiçbir şey yapmaz. Günlük değerler dosyada saklanır; Cloudflare eski günleri silse de toplam korunur.
 Yalnız toplu sayılar alınır; kişisel veri yoktur.
 """

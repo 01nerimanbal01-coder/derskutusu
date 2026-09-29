@@ -45,7 +45,7 @@ jobs:
       - name: Toplam ziyaret sayısını al
         env:
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_ACCOUNT_ID: 6aa67a3c005bba9f3597a16e0140dfde   # hesap kimliği (gizli değil)
         run: python araclar/ziyaret_guncelle.py
 
       - name: Değişen veriyi kaydet
