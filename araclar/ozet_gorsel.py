@@ -360,23 +360,18 @@ def mat7(o):
 
 # ---------- 5. sınıf Fen Bilimleri: Güneş'in yapısı ve dönme hareketi ----------
 def gunes_katmanlari():
-    """Kesit: içten dışa çekirdek, ışınım, konveksiyon, ışık küre, renk küre, taç; etiketler sağda, çizgiler yazıya değmez."""
-    cx, cy = 120, 160
-    katman = [(150, 'g-ta', '.35'), (116, 'g-ta', '.7'), (108, 'g-tf', '.45'), (100, 'g-tf', '.6'), (66, 'g-tf', '.8'), (30, 'g-tf', '1')]
-    ic = ''.join(f'<circle cx="{cx}" cy="{cy}" r="{r}" class="{s}" opacity="{o}"/>' for r, s, o in katman)
-    etiket = [('Taç (korona)', 'en dış katman', 133), ('Renk küre (kromosfer)', '', 112), ('Işık küre (fotosfer)', 'görünen yüzey', 104),
-              ('Konveksiyon katmanı', 'enerji akıntılarla taşınır', 83), ('Işınım katmanı', 'enerji ışıkla taşınır', 48), ('Çekirdek', 'enerji üretilir', 12)]
-    import math as _m
-    for k, (ad, alt, r) in enumerate(etiket):
-        aci = _m.radians(-58 + k * 23)
-        px, py = cx + r * _m.cos(aci), cy + r * _m.sin(aci)
-        ty = 30 + k * 50
-        ic += f'<circle cx="{px:.1f}" cy="{py:.1f}" r="3.2" class="g-y"/>'
-        ic += f'<line x1="{px:.1f}" y1="{py:.1f}" x2="292" y2="{ty - 5}" class="g-c" stroke-width="1.4"/>'
-        ic += f'<text x="298" y="{ty}" font-size="14" font-weight="700" class="g-tf">{ad}</text>'
-        if alt:
-            ic += f'<text x="298" y="{ty + 17}" font-size="12.5" class="g-s">{alt}</text>'
-    return svg(470, 320, ic, 'Güneş’in kesiti: içten dışa çekirdek, ışınım katmanı, konveksiyon katmanı, ışık küre, renk küre ve taç')
+    """Güneş katmanlıdır: içte çekirdek (en sıcak), dışta yüzey (lekeler burada görülür). Yalnız kitaptaki bilgiler."""
+    cx, cy = 120, 130
+    ic = ''.join(f'<circle cx="{cx}" cy="{cy}" r="{r}" class="{s}" opacity="{o}"/>' for r, s, o in ((104, 'g-ta', '.75'), (80, 'g-tf', '.45'), (56, 'g-tf', '.65'), (30, 'g-tf', '1')))
+    ic += f'<circle cx="{cx}" cy="{cy}" r="104" class="g-ts" stroke-width="2"/>'
+    ic += f'<ellipse cx="{cx - 40}" cy="{cy - 70}" rx="7" ry="5.5" class="g-y" opacity=".8"/>'
+    ic += f'<circle cx="{cx}" cy="{cy}" r="3" class="g-b"/><line x1="{cx + 3}" y1="{cy}" x2="262" y2="{cy + 40}" class="g-c" stroke-width="1.4"/>'
+    ic += f'<text x="268" y="{cy + 44}" font-size="14" font-weight="800" class="g-tf">Çekirdek</text><text x="268" y="{cy + 61}" font-size="12.5" class="g-s">en sıcak bölge</text>'
+    ic += f'<line x1="{cx + 74}" y1="{cy - 74}" x2="262" y2="{cy - 86}" class="g-c" stroke-width="1.4"/>'
+    ic += f'<text x="268" y="{cy - 88}" font-size="14" font-weight="800" class="g-tf">Yüzey</text><text x="268" y="{cy - 71}" font-size="12.5" class="g-s">Güneş lekeleri burada görülür</text>'
+    ic += f'<line x1="{cx + 70}" y1="{cy + 10}" x2="262" y2="{cy - 16}" class="g-c" stroke-width="1.4"/>'
+    ic += f'<text x="268" y="{cy - 14}" font-size="14" font-weight="800" class="g-tf">Katmanlar</text><text x="268" y="{cy + 3}" font-size="12.5" class="g-s">Dünya gibi iç içe katmanlar</text>'
+    return svg(470, 260, ic, 'Güneş’in kesiti: iç içe katmanlar; merkezde en sıcak bölge olan çekirdek, dışta lekelerin görüldüğü yüzey')
 
 
 def gunes_leke():
@@ -388,20 +383,20 @@ def gunes_leke():
         ic += f'<ellipse cx="{cx + dx}" cy="70" rx="{7 if k == 1 else 5.5}" ry="6" class="g-y" opacity=".85"/>'
         ic += f'<text x="{cx}" y="152" text-anchor="middle" font-size="14" font-weight="700" class="g-y">{gun}. gün</text>'
     ic += '<path d="M40 22 Q190 -6 340 22" class="g-ts" stroke-width="2.2" marker-end="url(#okG)"/>'
-    ic += '<text x="190" y="176" text-anchor="middle" font-size="13" class="g-s">Koyu leke her gün biraz daha sağda görülür: Güneş kendi ekseni etrafında döner.</text>'
+    ic += '<text x="190" y="176" text-anchor="middle" font-size="13" class="g-s">Lekeler hep aynı yöne kayar: Güneş kendi ekseni etrafında döner.</text>'
     return svg(380, 186, ic, 'Üç Güneş diski: aynı leke 1. gün solda, 4. gün ortaya yakın, 7. gün ortanın sağında; Güneş dönüyor')
 
 
 def gunes_dunya_boyut():
-    """Güneş'in bir parçası ve Dünya aynı ölçekte (çap oranı yaklaşık 109)."""
-    R = 327                       # Güneş yarıçapı (px); Dünya yarıçapı 3 px → oran 109
+    """Güneş’in bir parçası ve Dünya: Güneş Dünya’dan çok daha büyüktür."""
+    R = 327
     ic = ('<defs><clipPath id="kesGD"><rect x="0" y="0" width="380" height="180" rx="10"/></clipPath></defs>'   # dev daire görselin dışına taşmasın
           f'<g clip-path="url(#kesGD)"><circle cx="{-R + 150}" cy="90" r="{R}" class="g-ta"/><circle cx="{-R + 150}" cy="90" r="{R}" class="g-ts" stroke-width="2"/></g>')
     ic += '<text x="40" y="96" font-size="15" font-weight="800" class="g-tf">Güneş</text>'
     ic += '<circle cx="250" cy="90" r="3" class="g-mf"/>'
     ic += '<line x1="258" y1="84" x2="286" y2="60" class="g-c" stroke-width="1.4"/><text x="290" y="58" font-size="14" font-weight="700" class="g-mf">Dünya</text>'
-    ic += '<text x="190" y="200" text-anchor="middle" font-size="13" class="g-s">Aynı ölçek: Güneş’in çapı Dünya’nın çapının yaklaşık 109 katıdır.</text>'
-    return svg(380, 210, ic, 'Aynı ölçekte Güneş’in bir parçası ve yanında küçük bir nokta olarak Dünya; çap oranı yaklaşık 109')
+    ic += '<text x="190" y="200" text-anchor="middle" font-size="13" class="g-s">Güneş Dünya’dan çok daha büyüktür; çok uzakta olduğu için küçük görünür.</text>'
+    return svg(380, 210, ic, 'Güneş’in bir parçası ve yanında küçük bir nokta olarak Dünya: Güneş Dünya’dan çok daha büyüktür')
 
 
 def fen5(o):
