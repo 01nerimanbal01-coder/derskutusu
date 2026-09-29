@@ -41,7 +41,7 @@ def _kesir(ic):
 
 def e(metin):
     # Önce kaçış, sonra {aci:ABC} gibi sembol işaretleri MEB gösterimine çevrilir.
-    metin = html.escape(str(metin)).replace(' · ', '\u00a0·\u00a0')   # çarpımlar satır sonunda bölünmez
+    metin = html.escape(str(metin)).replace(' · ', '\u00a0·\u00a0').replace(' × ', '\u00a0×\u00a0')   # çarpımlar satır sonunda bölünmez
     ozel = {'us': _us, 'kesir': _kesir}
     return KAR.sub(lambda m: ozel[m.group(1)](m.group(2)) if m.group(1) in ozel else SEMBOL[m.group(1)].format(m.group(2)), metin)
 KUTU = {'dikkat': 'Dikkat', 'bilgi': 'Bilgi', 'kural': 'Kural', 'tanim': 'Tanım'}

@@ -162,7 +162,7 @@ def dikdortgen_modeli_12():
             for j in range(en):
                 ic += f'<rect x="{x0 + j * birim + 1}" y="{y + i * birim + 1}" width="{birim - 2}" height="{birim - 2}" rx="3" class="{a}"/>'
         ic += f'<rect x="{x0}" y="{y}" width="{en * birim}" height="{boy * birim}" rx="4" class="{st}" stroke-width="2.2"/>'
-        ic += f'<text x="{x0 + en * birim + 16}" y="{y + boy * birim / 2 + 6}" font-size="16" font-weight="800" class="{f}">{en} · {boy} = 12</text>'
+        ic += f'<text x="{x0 + en * birim + 16}" y="{y + boy * birim / 2 + 6}" font-size="16" font-weight="800" class="{f}">{en} × {boy} = 12</text>'
         y += boy * birim + 22
     ic += '<text x="20" y="' + str(y + 8) + '" font-size="13.5" class="g-s">Kenar uzunlukları 12’nin çarpanlarıdır: 1, 2, 3, 4, 6, 12</text>'
     return svg(330, y + 18, ic, 'Alanı 12 birimkare olan üç dikdörtgen: 12’ye 1, 6’ya 2, 4’e 3; kenarlar 12’nin çarpanları')
@@ -511,9 +511,9 @@ def teleskoplar():
            '<rect x="250" y="36" width="10" height="16" rx="1.5" class="g-os" stroke-width="1.5"/><rect x="250" y="72" width="10" height="16" rx="1.5" class="g-os" stroke-width="1.5"/></g>')
     ic += '<text x="300" y="54" font-size="13" font-weight="800" class="g-of">Uzay teleskobu</text><text x="300" y="70" font-size="11.5" class="g-s">Hubble, James Webb</text>'
     ic += '<line x1="58" y1="36" x2="94" y2="92" class="g-ts" stroke-width="2" stroke-dasharray="6 4"/>'
-    ic += '<path d="M94 92 q8 6 3 12 t6 12 t3 12 t6 12" class="g-ts" stroke-width="2"/>'
-    ic += '<text x="160" y="124" font-size="11.5" class="g-s">ışık titreşir;</text><text x="160" y="138" font-size="11.5" class="g-s">bulutlar ve şehir</text><text x="160" y="152" font-size="11.5" class="g-s">ışıkları gözlemi zorlaştırır</text>'
-    return svg(460, 242, ic, 'Bir yıldızın ışığı uzaydaki teleskoba doğrudan ulaşır; dağdaki gözlemevine atmosferden geçerek, titreşerek ulaşır')
+    ic += '<line x1="94" y1="92" x2="114" y2="136" class="g-ts" stroke-width="1.4" stroke-dasharray="2 5" opacity=".6"/>'
+    ic += '<text x="160" y="124" font-size="11.5" class="g-s">atmosfer ışınların bir</text><text x="160" y="138" font-size="11.5" class="g-s">bölümünü engeller; ışık</text><text x="160" y="152" font-size="11.5" class="g-s">kirliliği gözlemi zorlaştırır</text>'
+    return svg(460, 242, ic, 'Bir yıldızın ışığı uzaydaki teleskoba engelsiz ulaşır; dağdaki gözlemevine atmosferden geçerken bir bölümü engellenir')
 
 
 def fen7(o):
