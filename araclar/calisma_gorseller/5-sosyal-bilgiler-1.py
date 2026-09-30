@@ -113,6 +113,32 @@ def gazete():
     return svg(360, 106, ic, 'Sınıf gazetesi ekibi: Ada resimleri çiziyor, Can haberleri yazıyor, Efe sayfaları bilgisayarda düzenliyor', 24)
 
 
+def kermes():
+    """Kermes akışı: üç aşama (simge + düz yazı, kutusuz), aralarında oklar; grup adları yazılmaz."""
+    ic = ''
+    # 1 ev yapımı kek ve kurabiye (tabak)
+    x = 60
+    ic += (f'<ellipse cx="{x}" cy="40" rx="30" ry="7" fill="{GRI_A}" stroke="{GRI}" stroke-width="1.2"/>'
+           f'<path d="M{x - 22} 36 v-14 q22 -12 44 0 v14 z" fill="#e9b872" stroke="#a8702e" stroke-width="1.2"/><path d="M{x - 22} 24 q22 -8 44 0" fill="none" stroke="#fff" stroke-width="3"/>'
+           f'<circle cx="{x - 8}" cy="14" r="3" fill="{KIR}"/>')
+    # 2 kermes tezgâhı (tente)
+    x = 180
+    ic += (f'<rect x="{x - 30}" y="22" width="60" height="22" fill="#fff" stroke="{LAC}" stroke-width="1.2"/>'
+           + ''.join(f'<path d="M{x - 34 + k * 17} 8 h17 v10 a8.5 6 0 0 1 -17 0 z" fill="{[TUR, "#fff"][k % 2]}" stroke="{TUR}" stroke-width="1"/>' for k in range(4))
+           + f'<circle cx="{x - 12}" cy="33" r="5" fill="#e9b872"/><circle cx="{x + 2}" cy="33" r="5" fill="{KIR}"/><rect x="{x + 12}" y="28" width="10" height="10" fill="{YES}"/>')
+    # 3 kitap yığını
+    x = 300
+    ic += ''.join(f'<rect x="{x - 26 + k * 2}" y="{36 - k * 9}" width="{52 - k * 4}" height="8" rx="1.5" fill="{r}" stroke="{LAC}" stroke-width=".8"/>' for k, r in enumerate([MAVI, YES, TUR, MOR]))
+    for x in (122, 242):
+        ic += f'<path d="M{x - 14} 28 h24" stroke="{SOLUK}" stroke-width="2"/><path d="M{x + 10} 23 l7 5 l-7 5 z" fill="{SOLUK}"/>'
+    yazilar = [(60, ['Aileler evde kek', 've kurabiye hazırlar.']), (180, ['Okul, bahçede', 'kermes düzenler.']), (300, ['Gönüllüler, gelirle', 'aldıkları kitapları', 'köy okuluna ulaştırır.'])]
+    for x, satirlar in yazilar:
+        ic += ''.join(f'<text x="{x}" y="{66 + k * 14}" text-anchor="middle" font-size="11.5" font-family="Noto Sans, sans-serif" font-weight="400" fill="{LAC}">{m}</text>' for k, m in enumerate(satirlar))
+    for i, x in enumerate((60, 180, 300)):
+        ic += harf(x - 44, 10, str(i + 1), [TUR, MAVI, YES][i])
+    return svg(360, 100, ic, 'Kermes aşamaları: 1 Aileler evde kek ve kurabiye hazırlar. 2 Okul, bahçede kermes düzenler. 3 Gönüllüler, gelirle aldıkları kitapları köy okuluna ulaştırır.', 23)
+
+
 def uygula(o):
     s = o['sorular']
     s[1]['gorsel'] = gruplar()
@@ -121,3 +147,4 @@ def uygula(o):
     s[7]['gorsel'] = topluluklar()
     s[9]['gorsel'] = afis()
     s[10]['gorsel'] = gazete()
+    s[13]['gorsel'] = kermes()
