@@ -121,6 +121,14 @@ def hucreler():
     return svg(360, 94, ic, 'İki komşu hücre: 1. hücrede üç ATP, 2. hücrede bir ATP; aradaki okun üstünde soru işareti', 21)
 
 
+def fosfat_hesap():
+    ic = ''
+    for i, (n, f) in enumerate([(2, 0), (3, 1), (1, 2)]):
+        x = 4 + i * 118
+        ic += kutu(x, 4, 112, 58, '#fff', GRI, 8, 1.2) + yazi(x + 16, 38, f'{n} ×', 13, LAC) + molekul(x + 42, 22, f, 0.62)
+    return svg(360, 66, ic, 'Üç kart: 2 tane baz ve şekerden oluşan molekül; 3 tane baz, şeker ve bir daireli molekül; 1 tane baz, şeker ve iki daireli molekül', 16)
+
+
 def uygula(o):
     s = o['sorular']
     s[0]['gorsel'] = atp()
@@ -129,3 +137,4 @@ def uygula(o):
     s[7]['gorsel'] = dongu()
     s[9]['gorsel'] = mevsimler()
     s[11]['gorsel'] = hucreler()
+    s[14]['gorsel'] = fosfat_hesap()
