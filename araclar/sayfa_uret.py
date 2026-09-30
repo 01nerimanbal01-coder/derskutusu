@@ -82,6 +82,7 @@ GOVDE = {
       <h1 id="baslik">Sınıf</h1>
       <p id="aciklama"></p>
       <nav class="sinif-gecis" id="sinif-gecis" aria-label="Sınıflar"></nav>
+      <nav class="hizli-baglanti" id="ogretmen-hizli" aria-label="Öğretmen dosyaları" hidden></nav>
     </div>
   </section>
   <section class="bolum">
@@ -315,6 +316,71 @@ def _sinav_govde():
   </section>
 {bolumler}'''
 
+
+GOVDE['planlar.html'] = ('Günlük planlar', 'Günlük ders planları: Okul, öğretmen, müdür yardımcısı ve müdür adları her sayfaya yazılır. Plan tüm yıl ya da ay ay, Word veya PDF olarak indirilir.', '''  <section class="sayfa-bas plan-bas">
+    <div class="kap">
+      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/#ogretmen">Öğretmen</a><span aria-hidden="true">/</span><span>Günlük planlar</span></nav>
+      <h1>Günlük ders planları</h1>
+      <p>Okulun adını, kendi adınızı, müdür yardımcısının ve müdürün adını bir kez yazın. İndirdiğiniz planın her sayfasına bu bilgiler kendiliğinden yerleşir. Planı tüm yıl ya da ay ay, Word veya PDF olarak alın.</p>
+      <ol class="plan-adimlar" aria-label="Adımlar">
+        <li><span>1</span>Bilgileri yazın</li>
+        <li><span>2</span>Sınıfı ve dersi seçin</li>
+        <li><span>3</span>Ayı ve biçimi seçip indirin</li>
+      </ol>
+    </div>
+  </section>
+  <section class="bolum plan-bolum">
+    <div class="kap plan-duzen">
+      <aside class="plan-yan">
+        <form class="plan-bilgi" id="p-bilgi" onsubmit="return false" aria-labelledby="p-bilgi-baslik">
+          <h2 id="p-bilgi-baslik"><span class="adim-no">1</span>Plan bilgileri</h2>
+          <label>Okulun adı<input id="p-okul" maxlength="90" placeholder="Örnek: Atatürk Ortaokulu" autocomplete="organization" spellcheck="false"></label>
+          <label>Ders öğretmeni<input id="p-ogretmen" maxlength="60" placeholder="Adınız ve soyadınız" autocomplete="name" spellcheck="false"></label>
+          <label>Müdür yardımcısı<input id="p-mudur-yrd" maxlength="60" placeholder="Adı ve soyadı" autocomplete="off" spellcheck="false"></label>
+          <label>Okul müdürü<input id="p-mudur" maxlength="60" placeholder="Adı ve soyadı" autocomplete="off" spellcheck="false"></label>
+          <label class="plan-secenek"><input type="checkbox" id="p-tarih" checked> Onay tarihine haftanın ilk iş gününü yaz</label>
+          <label class="plan-secenek"><input type="checkbox" id="p-hatirla" checked> Bilgileri bu cihazda hatırla</label>
+          <p class="plan-not">Bilgiler yalnız sizin tarayıcınızda kalır, hiçbir yere gönderilmez. Boş bıraktığınız alan belgede noktalı kalır.</p>
+        </form>
+        <figure class="plan-onizleme" aria-label="Sayfa önizlemesi">
+          <div class="kagit" id="p-kagit" aria-hidden="true">
+            <div class="k-ust"><img src="/simge-192.png" alt="" width="18" height="18"><b>DERS KUTUSU</b><span id="k-ust-sag">Günlük plan · 2026-2027</span></div>
+            <p class="k-okul" id="k-okul"></p>
+            <p class="k-baslik" id="k-baslik">5. SINIF MATEMATİK DERSİ GÜNLÜK PLANI</p>
+            <p class="k-hafta" id="k-hafta">2026-2027 Eğitim Öğretim Yılı · 1. Hafta: 14-18 Eylül</p>
+            <div class="k-tablo"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="k-imza">
+              <div><b>Ders Öğretmeni</b><span class="k-bos"></span><span id="k-ogretmen"></span></div>
+              <div><b>Müdür Yardımcısı</b><span class="k-bos"></span><span id="k-mudur-yrd"></span></div>
+              <div><b>Uygundur</b><span id="k-tarih">14.09.2026</span><span id="k-mudur"></span><span>Okul Müdürü</span></div>
+            </div>
+          </div>
+          <figcaption>Bilgiler planın her sayfasında bu yerlere yazılır.</figcaption>
+        </figure>
+      </aside>
+      <div class="plan-ana">
+        <div class="plan-kutu">
+          <h2><span class="adim-no">2</span>Sınıf ve ders</h2>
+          <div class="sekmeler plan-siniflar" id="p-siniflar" role="group" aria-label="Sınıf"></div>
+          <label class="plan-ara"><svg aria-hidden="true"><use href="#s-mercek"/></svg><span class="gizli">Ders ara</span><input id="p-ara" type="search" placeholder="Ders ara (ör. matematik)" autocomplete="off"></label>
+          <div id="p-dersler" class="plan-gruplar"></div>
+          <p id="p-sonuc" class="gizli" role="status" aria-live="polite"></p>
+        </div>
+        <div class="plan-kutu plan-indir" id="p-indir" hidden tabindex="-1">
+          <h2><span class="adim-no">3</span><span id="p-secili-ad">İndir</span></h2>
+          <p class="plan-ozet" id="p-secili-bilgi"></p>
+          <div class="plan-bicim" role="radiogroup" aria-label="Dosya biçimi">
+            <label><input type="radio" name="p-bicim" value="docx" checked><span><b>Word</b><small>Düzenlenebilir .docx</small></span></label>
+            <label><input type="radio" name="p-bicim" value="pdf"><span><b>PDF</b><small>Yazdırmaya hazır</small></span></label>
+          </div>
+          <h3 class="plan-alt-baslik">Hangi dönem?</h3>
+          <div class="plan-aylar" id="p-aylar"></div>
+          <button type="button" class="dugme plan-zip" id="p-zip"><svg aria-hidden="true"><use href="#s-indir"/></svg><span>Bütün ayları ayrı dosyalar hâlinde indir (ZIP)</span></button>
+          <p class="plan-durum" id="p-durum" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </section>''', ('planlar.js',))
 
 GOVDE['sinav.html'] = ('Sınavlar: LGS ve YKS', 'LGS ve YKS: oturumlar, testler, soru sayıları ve süreler; çıkmış sorular, kılavuzlar ve hazırlık kaynakları.', _sinav_govde(), ())
 

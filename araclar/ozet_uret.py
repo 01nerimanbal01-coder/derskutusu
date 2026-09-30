@@ -136,8 +136,8 @@ def sayfa_uret(o, dersler, icerikler):
     dosya = f'{o["sinif"]}-{o["ders"]}-hafta-{o["hafta"]}.html'
     baglar = [i for i in icerikler if i.get('sinif') == o['sinif'] and i.get('ders') == o['ders'] and i.get('tur') != 'Konu anlatımı']
     ilgili = ''.join(
-        f'<li><a href="/{i.get("goruntule") or i.get("dosya") or ""}">{e(i["baslik"])}</a> <span>{e(i["tur"])}</span></li>'
-        for i in baglar if i.get('goruntule') or i.get('dosya'))
+        f'<li><a href="/{i.get("hazirla") or i.get("goruntule") or i.get("dosya") or ""}">{e(i["baslik"])}</a> <span>{e(i["tur"])}</span></li>'
+        for i in baglar if i.get('hazirla') or i.get('goruntule') or i.get('dosya'))   # günlük plan: adların yazıldığı hazırlama sayfası
     bolumler = ''
     for no, b in enumerate(o['bolumler'], 1):
         # Metin ve tablo solda; görsel ve kutular yanda (geniş ekranda; dar ekranda alt alta)

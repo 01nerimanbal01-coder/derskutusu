@@ -47,8 +47,9 @@ function icerikKarti(i, dersler) {
       i.tur && el('span', { sinif: `etiket ${i.kitle === 'ogretmen' ? 'ogretmen' : 'tur'}` }, i.tur)),
     el('h3', {}, i.baslik),
     i.aciklama && el('p', {}, i.aciklama),
-    adres && el('a', { sinif: 'ac', href: adres, target: i.dosya ? null : '_blank', rel: 'noopener', download: i.dosya ? '' : null },
-      i.dosya ? 'İndir' : 'Aç', simge('ok')));
+    i.hazirla ? el('a', { sinif: 'ac', href: `/${i.hazirla}` }, 'Hazırla ve indir', simge('ok'))
+      : adres && el('a', { sinif: 'ac', href: adres, target: i.dosya ? null : '_blank', rel: 'noopener', download: i.dosya ? '' : null },
+        i.dosya ? 'İndir' : 'Aç', simge('ok')));
 }
 
 function videolariGoster(v) {

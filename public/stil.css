@@ -743,4 +743,127 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
 .sinav-liste li { display: flex; justify-content: space-between; gap: 12px; padding: 10px 14px; border: 1px solid var(--cizgi); border-radius: 12px; background: var(--yuzey); }
 .sinav-liste span { color: var(--soluk); font-size: 13px; white-space: nowrap; }
 @media (max-width: 760px) { .sinav-alt { grid-template-columns: 1fr; } }
+/* Sınıf sayfası: öğretmen kısayolları */
+.hizli-baglanti { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 16px; }
+.hizli-baglanti > span { font-size: 13px; font-weight: 700; color: var(--soluk); margin-right: 2px; }
+.hizli-baglanti a { display: inline-flex; align-items: center; gap: 7px; padding: 8px 14px; border-radius: 999px; font-weight: 600; font-size: 14px;
+  background: var(--sicak-acik); color: var(--metin); border: 1px solid color-mix(in srgb, var(--sicak) 40%, transparent); }
+.hizli-baglanti a:hover { text-decoration: none; border-color: var(--sicak); box-shadow: var(--golge); }
+.hizli-baglanti svg { width: 17px; height: 17px; color: #b86e00; }
+.hizli-baglanti small { font-size: 12px; color: var(--soluk); font-weight: 600; }
+/* Günlük planlar sayfası (planlar.html): bilgi formu, sayfa önizlemesi, sınıf/ders kartları, aylık indirme */
+.ders-kuran-i-kerim { --ders: #0e7c66; }
+.ders-peygamberimizin-hayati { --ders: #2f8f4e; }
+.ders-temel-dini-bilgiler { --ders: #0d6e8a; }
+.ders-arapca, .ders-mesleki-arapca { --ders: #b8660b; }
+.ders-fikih, .ders-hadis, .ders-siyer { --ders: #6b4fbb; }
+.ders-akaid, .ders-tefsir, .ders-kelam { --ders: #1f6fb2; }
+.ders-dinler-tarihi, .ders-islam-kultur-ve-medeniyeti { --ders: #a3531f; }
+.ders-hitabet-ve-mesleki-uygulama { --ders: #c2366b; }
+.plan-bas { background: radial-gradient(700px 280px at 92% 0%, color-mix(in srgb, var(--sicak) 22%, transparent), transparent 70%),
+  radial-gradient(600px 260px at 0% 120%, var(--vurgu-acik), transparent 70%), var(--zemin-2); }
+.plan-adimlar { list-style: none; margin: 22px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.plan-adimlar li { display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px 8px 8px; border-radius: 999px; background: var(--yuzey);
+  border: 1px solid var(--cizgi); font-weight: 600; font-size: 14.5px; box-shadow: var(--golge); }
+.plan-adimlar span, .adim-no { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--vurgu); color: #fff;
+  font-weight: 800; font-size: 14px; flex: none; }
+.plan-adimlar li:nth-child(2) span { background: var(--yesil); }
+.plan-adimlar li:nth-child(3) span { background: var(--sicak); }
+.plan-bolum { padding-top: 40px; }
+.plan-duzen { display: grid; grid-template-columns: minmax(300px, 400px) minmax(0, 1fr); gap: 28px; align-items: start; }
+.plan-yan { display: grid; gap: 18px; }
+@media (min-width: 1025px) and (min-height: 1040px) { .plan-yan { position: sticky; top: 88px; } }
+.plan-bilgi, .plan-kutu { background: var(--yuzey); border: 1px solid var(--cizgi); border-radius: 20px; padding: 22px; box-shadow: var(--golge); }
+.plan-bilgi { display: grid; gap: 12px; border-top: 5px solid var(--vurgu); }
+.plan-bilgi h2, .plan-kutu h2 { display: flex; align-items: center; gap: 10px; font-size: 19px; margin: 0 0 4px; }
+.plan-kutu h2 .adim-no { background: var(--yesil); }
+.plan-indir h2 .adim-no { background: var(--sicak); }
+.plan-bilgi label:not(.plan-secenek) { display: grid; gap: 6px; font-size: 13px; font-weight: 700; color: var(--soluk); }
+.plan-bilgi input:not([type]) { font: inherit; font-size: 15.5px; color: var(--metin); background: var(--zemin-2); border: 1px solid var(--cizgi);
+  border-radius: 12px; padding: 11px 13px; width: 100%; transition: border-color .15s, background .15s; }
+.plan-bilgi input:not([type]):focus { outline: 2px solid var(--vurgu); outline-offset: 0; border-color: transparent; background: var(--yuzey); }
+.plan-secenek { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; color: var(--metin); cursor: pointer; }
+.plan-secenek input { width: 18px; height: 18px; margin: 1px 0 0; accent-color: var(--vurgu); flex: none; }
+.plan-not { font-size: 12.5px; color: var(--soluk); margin: 2px 0 0; }
+.plan-onizleme { margin: 0; }
+.plan-onizleme figcaption { font-size: 12.5px; color: var(--soluk); text-align: center; margin-top: 8px; }
+.kagit { background: #fff; color: #111a2e; border-radius: 6px; padding: 12px 14px 14px; box-shadow: 0 1px 2px rgb(16 24 40 / .08), 0 12px 30px rgb(16 24 40 / .12);
+  font-size: 9px; line-height: 1.35; aspect-ratio: 210 / 190; display: flex; flex-direction: column; gap: 5px; border: 1px solid #e3e8f2; }
+.k-ust { display: flex; align-items: center; gap: 5px; padding-bottom: 5px; border-bottom: 1.5px solid #0b2257; color: #5b6479; font-size: 7.5px; }
+.k-ust b { color: #0b2257; font-size: 8.5px; }
+.k-ust span { margin-left: auto; text-align: right; }
+.k-ust img { width: 16px; height: 16px; }
+.kagit p { margin: 0; text-align: center; }
+.k-okul { font-weight: 800; color: #0b2257; font-size: 9.5px; min-height: 1.2em; word-break: break-word; }
+.k-baslik { font-weight: 800; color: #1f3a8a; font-size: 9.5px; }
+.k-hafta { font-size: 8px; color: #333; }
+.k-tablo { display: grid; grid-template-columns: 30% 1fr; gap: 3px; margin-top: 3px; flex: 1; align-content: start; }
+.k-tablo i { height: 8px; border-radius: 2px; background: #eef2fa; }
+.k-tablo i:nth-child(odd) { background: #dfe7fb; }
+.k-imza { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; text-align: center; font-size: 8px; }
+.k-imza div { display: grid; gap: 2px; align-content: start; }
+.k-imza b { font-size: 8.5px; }
+.k-imza span { min-height: 1.1em; color: #5b6479; word-break: break-word; }
+.k-imza span.k-bos { min-height: 1.1em; }
+.kagit .dolu { color: var(--vurgu); font-weight: 700; background: color-mix(in srgb, #2451d6 10%, #fff); border-radius: 3px; }
+.plan-ana { display: grid; gap: 22px; min-width: 0; }
+.plan-siniflar { margin: 12px 0 14px; }
+.plan-ara { position: relative; display: block; max-width: 420px; margin-bottom: 18px; }
+.plan-ara svg { position: absolute; left: 13px; top: 50%; translate: 0 -50%; width: 18px; height: 18px; color: var(--soluk); }
+.plan-ara input { font: inherit; font-size: 15px; width: 100%; padding: 11px 12px 11px 40px; border-radius: 12px; border: 1px solid var(--cizgi);
+  background: var(--zemin-2); color: var(--metin); }
+.plan-ara input:focus { outline: 2px solid var(--vurgu); outline-offset: 0; border-color: transparent; }
+.plan-gruplar { display: grid; gap: 22px; }
+.plan-grup h3 { display: flex; align-items: center; gap: 8px; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--soluk); margin: 0 0 10px; }
+.plan-grup h3 span { font-size: 12px; letter-spacing: 0; padding: 1px 8px; border-radius: 999px; background: var(--yuzey-2); }
+.plan-izgara { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; }
+.plan-ders { --d: var(--ders, #2451d6); display: flex; align-items: center; gap: 12px; text-align: left; padding: 12px 14px; border-radius: 14px; cursor: pointer; font: inherit;
+  color: var(--metin); background: color-mix(in srgb, var(--d) 7%, var(--yuzey)); border: 1px solid color-mix(in srgb, var(--d) 26%, var(--yuzey));
+  border-left: 5px solid var(--d); transition: transform .15s, box-shadow .15s, background .15s; }
+.plan-ders:hover { transform: translateY(-2px); box-shadow: var(--golge); background: color-mix(in srgb, var(--d) 12%, var(--yuzey)); }
+.plan-ders[aria-pressed="true"] { --secili: color-mix(in srgb, var(--d) 70%, #000); background: var(--secili); border-color: var(--secili); color: #fff; box-shadow: var(--golge-buyuk); }
+.plan-harf { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 12px; background: var(--d); color: #fff; font-weight: 800; font-size: 17px; flex: none; }
+.plan-ders[aria-pressed="true"] .plan-harf { background: rgb(255 255 255 / .22); }
+.plan-ders-ad { display: grid; gap: 1px; min-width: 0; }
+.plan-ders-ad b { font-size: 15px; line-height: 1.25; }
+.plan-ders-ad small { font-size: 12.5px; color: var(--soluk); }
+.plan-ders[aria-pressed="true"] small { color: #fff; }
+.plan-ders-sayi { font-weight: 600; }
+.plan-bos { color: var(--soluk); padding: 18px; border: 1px dashed var(--cizgi); border-radius: 14px; margin: 0; }
+.plan-indir { border-top: 5px solid var(--sicak); scroll-margin-top: 90px; }
+.plan-indir:focus { outline: none; }
+.plan-ozet { color: var(--soluk); margin: 0 0 16px; font-size: 14.5px; }
+.plan-bicim { display: grid; grid-template-columns: repeat(2, minmax(0, 220px)); gap: 10px; margin-bottom: 18px; }
+.plan-bicim label { position: relative; cursor: pointer; }
+.plan-bicim input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.plan-bicim span { display: grid; gap: 2px; padding: 12px 14px; border-radius: 14px; border: 2px solid var(--cizgi); background: var(--zemin-2); transition: border-color .15s, background .15s; }
+.plan-bicim b { font-size: 16px; }
+.plan-bicim small { font-size: 12.5px; color: var(--soluk); }
+.plan-bicim input:checked + span { border-color: var(--vurgu); background: var(--vurgu-acik); }
+.plan-bicim input:focus-visible + span { outline: 2px solid var(--vurgu); outline-offset: 3px; }
+.plan-alt-baslik { font-size: 14px; color: var(--soluk); margin: 0 0 10px; font-weight: 700; }
+.plan-aylar { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 10px; }
+.plan-ay { display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto auto; column-gap: 8px; align-items: center; text-align: left; padding: 10px 12px;
+  border-radius: 12px; border: 1px solid var(--cizgi); background: var(--yuzey); color: var(--metin); font: inherit; cursor: pointer; transition: transform .15s, border-color .15s, box-shadow .15s; }
+.plan-ay svg { grid-row: span 2; width: 18px; height: 18px; color: var(--vurgu); }
+.plan-ay b { font-size: 15px; }
+.plan-ay small { font-size: 12px; color: var(--soluk); }
+.plan-ay:hover:not(:disabled) { transform: translateY(-1px); border-color: var(--vurgu); box-shadow: var(--golge); }
+.plan-ay.tum { grid-column: span 2; background: var(--vurgu); border-color: var(--vurgu); color: #fff; }
+.plan-ay.tum svg, .plan-ay.tum small { color: #fff; }
+.plan-ay:disabled, .plan-zip:disabled { opacity: .55; cursor: progress; transform: none; }
+.plan-zip { margin-top: 14px; width: 100%; }
+.plan-durum { margin: 12px 0 0; min-height: 1.4em; font-size: 14.5px; color: var(--soluk); }
+.plan-durum.tamam { color: var(--yesil); font-weight: 600; }
+.plan-durum.hata { color: var(--kirmizi); font-weight: 600; }
+/* sarı ve yeşil rozetlerde beyaz yazı yetersiz karşıtlık verir (2,2:1 ve 3,4:1): koyu yazı */
+.plan-adimlar li:nth-child(2) span, .plan-adimlar li:nth-child(3) span, .plan-kutu h2 .adim-no, .plan-indir h2 .adim-no { color: #111a2e; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .plan-ders[aria-pressed="true"] { color: #fff; }
+  :root:not([data-theme="light"]) .kagit .dolu { color: #1a3da8; }
+  :root:not([data-theme="light"]) :is(.plan-ay.tum, .plan-ay.tum svg, .plan-ay.tum small, .adim-no, .plan-adimlar span, .sekme[aria-pressed="true"]) { color: #0c111a; } }
+:root[data-theme="dark"] .kagit .dolu { color: #1a3da8; }
+:root[data-theme="dark"] :is(.plan-ay.tum, .plan-ay.tum svg, .plan-ay.tum small, .adim-no, .plan-adimlar span, .sekme[aria-pressed="true"]) { color: #0c111a; }
+@media (max-width: 1024px) { .plan-duzen { grid-template-columns: 1fr; } .plan-yan { position: static; grid-template-columns: minmax(0, 1fr) minmax(0, 300px); align-items: start; } }
+@media (max-width: 760px) { .plan-yan { grid-template-columns: 1fr; } .plan-onizleme { max-width: 360px; justify-self: center; width: 100%; } .plan-bicim { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .plan-bilgi, .plan-kutu { padding: 18px 16px; border-radius: 16px; } .plan-izgara { grid-template-columns: 1fr; } .plan-aylar { grid-template-columns: repeat(2, minmax(0, 1fr)); } .plan-adimlar li { font-size: 13.5px; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }

@@ -174,6 +174,7 @@ const Arama = (() => {
     // Sayfalar
     ekle({ tip: 'sayfa', baslik: 'İçerikler', aciklama: 'Bütün içerikler: sınıf, ders ve türe göre süzün.', adres: '/icerikler.html', ek: 'kutuphane liste' });
     ekle({ tip: 'sayfa', baslik: 'Resmî belgeler', aciklama: 'Öğretim programları, kılavuzlar, ortak yazılı tabloları, LGS ve YKS belgeleri.', adres: '/belgeler.html', ek: 'meb odsgm dogm osym resmi' });
+    ekle({ tip: 'sayfa', baslik: 'Günlük planlar', aciklama: 'Okul, öğretmen ve yönetici adları her sayfaya yazılı günlük ders planları; tüm yıl ya da aylık, Word veya PDF.', adres: '/planlar.html', kitle: 'ogretmen', ek: 'ogretmen', tur: 'Ders planı' });
     ekle({ tip: 'sayfa', baslik: 'Öğretmen köşesi', aciklama: 'Yıllık planlar, günlük planlar, yazılı soruları ve çalışma kâğıtları.', adres: '/icerikler.html?kitle=ogretmen', kitle: 'ogretmen', ek: 'ogretmen' });
     ekle({ tip: 'sayfa', baslik: 'İletişim', aciklama: 'Bize e-posta ve sosyal medyadan ulaşın.', adres: '/#iletisim', ek: 'iletisim eposta mail adres' });
     ekle({ tip: 'sayfa', baslik: 'Gizlilik ve çerezler', aciklama: 'Kişisel veriler ve çerez tercihleri.', adres: '/gizlilik.html', ek: 'kvkk cerez gizlilik' });
@@ -193,7 +194,7 @@ const Arama = (() => {
     }
     // İçerikler
     for (const i of icerikler) {
-      ekle({ tip: 'icerik', baslik: i.baslik, aciklama: i.aciklama, adres: i.dosya ? `/${i.dosya}` : i.baglanti, dosya: !!i.dosya,
+      ekle({ tip: 'icerik', baslik: i.baslik, aciklama: i.aciklama, adres: i.hazirla ? `/${i.hazirla}` : i.dosya ? `/${i.dosya}` : i.baglanti, dosya: !!i.dosya && !i.hazirla,
         dis: !i.dosya && /^https?:/.test(i.baglanti || ''), sinif: i.sinif ? Number(i.sinif) : null, ders: i.ders, dersAd: dAd[i.ders],
         goruntule: i.goruntule ? `/${i.goruntule}` : null, tur: i.tur, kitle: i.kitle, kaynak: i.kaynak, tarih: i.tarih });
     }

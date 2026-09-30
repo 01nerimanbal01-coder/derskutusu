@@ -16,7 +16,8 @@ function icerikKarti(i, dersler) {
     i.aciklama && el('p', {}, i.aciklama),
     el('div', { sinif: 'eylemler' },
       i.goruntule && el('a', { sinif: 'ac', href: `/${i.goruntule}` }, 'Aç', simge('ok')),
-      adres && (i.dosya || !i.goruntule) && el('a', { sinif: 'ac', href: i.dosya ? `/${i.dosya}` : adres, target: i.dosya ? null : '_blank', rel: 'noopener', download: i.dosya ? '' : null },
+      i.hazirla && el('a', { sinif: 'ac', href: `/${i.hazirla}` }, 'Hazırla ve indir', simge('indir')),
+      !i.hazirla && adres && (i.dosya || !i.goruntule) && el('a', { sinif: 'ac', href: i.dosya ? `/${i.dosya}` : adres, target: i.dosya ? null : '_blank', rel: 'noopener', download: i.dosya ? '' : null },
         i.dosya ? 'İndir' : 'Aç', simge(i.dosya ? 'indir' : 'ok'))));
 }
 
@@ -51,6 +52,13 @@ function sinifSayfasi({ dersler, icerikler }) {
     $('#secmeli-bolum').hidden = false;
   }
   $('#tum-icerik').href = `icerikler.html?sinif=${no}`;
+  const hizli = $('#ogretmen-hizli');   // öğretmen kısayolları: bu sınıfın günlük ve yıllık planları
+  if (hizli) {
+    hizli.replaceChildren(el('span', {}, 'Öğretmen:'),
+      el('a', { href: `/planlar.html?sinif=${no}` }, simge('takvim'), 'Günlük planlar', el('small', {}, 'Word · PDF · aylık')),
+      el('a', { href: `/icerikler.html?sinif=${no}&kitle=ogretmen&tur=${encodeURIComponent('Yıllık plan')}` }, simge('kitap'), 'Yıllık planlar'));
+    hizli.hidden = false;
+  }
 }
 
 // Akıllı arama yüklüyse yazım hatasına dayanıklı eşleşme, değilse düz içerme.
