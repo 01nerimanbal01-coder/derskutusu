@@ -132,6 +132,23 @@ def afis():
     return svg(360, 106, ic, 'Tören afişi: Republic Day Ceremony, volunteers wanted: reading a poem, carrying the flag, singing in the choir, guiding the programme', 22)
 
 
+def kelime_kartlari():
+    """İki satır karışık kelime kartı (A, B); öğrenci sıralayıp cümle kurar."""
+    satirlar = [('A', ['them', 'helps', 'usually', 'Mr Aksoy'], MAVI, MAVI_A),
+                ('B', ['the flag', 'Emre', 'carries', 'sometimes'], TUR, TUR_A)]
+    ic = ''
+    for r, (h, kartlar, renk, dolgu) in enumerate(satirlar):
+        y = 6 + r * 42
+        ic += rozet(14, y + 16, h, renk)
+        x = 30
+        for k in kartlar:
+            w = 14 + len(k) * 7.4
+            ic += kutu(x, y, w, 32, dolgu, renk, 6, 1.3) + yazi(x + w / 2, y + 20.5, k, 12.5, LAC, 'middle', True)
+            x += w + 6
+        assert x <= 356, f'kart satırı {h} taşıyor: {x}'
+    return svg(360, 84, ic, 'Kelime kartları: A them, helps, usually, Mr Aksoy. B the flag, Emre, carries, sometimes', 20)
+
+
 def uygula(o):
     s = o['sorular']
     s[1]['gorsel'] = gorev_cizelgesi()
@@ -141,3 +158,4 @@ def uygula(o):
     s[7]['gorsel'] = rutinler()
     s[9]['gorsel'] = konusma()
     s[10]['gorsel'] = afis()
+    s[12]['gorsel'] = kelime_kartlari()
