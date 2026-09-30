@@ -93,7 +93,7 @@ def kavram_svg(merkez, dallar):
         yazi = html.escape(metin)
         sinif = ' class="cvp"' if bos else ''
         renk = '' if bos else ' fill="#0b2257"'
-        ic += f'<text x="{x}" y="{y + 4.5}" text-anchor="middle" font-size="12" font-weight="700"{renk}{sinif} font-family="Noto Sans, sans-serif">{yazi}</text>'
+        ic += f'<text x="{x}" y="{y + 4.5}" text-anchor="middle" font-size="{10.5 if len(metin) > 14 else 12}" font-weight="700"{renk}{sinif} font-family="Noto Sans, sans-serif">{yazi}</text>'
         if bos and d.get('ipucu'):
             iy = y - 19 if math.sin(aci) < -0.05 else y + 25
             ic += f'<text x="{x}" y="{iy:.1f}" text-anchor="middle" font-size="10.5" font-style="italic" fill="#5b6479" font-family="Noto Sans, sans-serif">{html.escape(d["ipucu"])}</text>'
