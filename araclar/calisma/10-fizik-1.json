@@ -1,0 +1,185 @@
+{
+ "sinif": 10,
+ "ders": "fizik",
+ "hafta": 1,
+ "tarih": "14-18 Eylül 2026",
+ "konu": "Sabit Hızlı Hareket",
+ "ciktilar": [
+  "FİZ.10.1.1. Yatay doğrultuda sabit hızlı hareket ile ilgili tümevarımsal akıl yürütebilme"
+ ],
+ "hatirla": [
+  "Sabit hızlı hareket: Doğrusal bir yolda eşit zaman aralıklarında eşit yer değiştirmelerin yapıldığı harekettir.",
+  "Yer değiştirme: Δx = son konum − ilk konum. Hızın işareti (+ ya da −) hareketin yönünü gösterir."
+ ],
+ "sorular": [
+  {
+   "tur": "tablo",
+   "duzey": "uygula",
+   "sutun": "sol",
+   "soru": "Görseldeki tabloda x = 0 noktasından aynı anda harekete başlayan C ve D araçlarının konumları verilmiştir. Araçların hızlarını bulup tabloya yazınız.",
+   "basliklar": [
+    "Araç",
+    "Hız (m/s)"
+   ],
+   "satirlar": [
+    [
+     "C",
+     {
+      "b": "4"
+     }
+    ],
+    [
+     "D",
+     {
+      "b": "6"
+     }
+    ]
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "duzey": "hatirla",
+   "sutun": "sag",
+   "soru": "Kavramları açıklamalarıyla eşleştiriniz. Harfleri kutulara yazınız.",
+   "ciftler": [
+    [
+     "Yer değiştirme",
+     "Son konum ile ilk konum arasındaki fark"
+    ],
+    [
+     "Alınan yol",
+     "İzlenen yolun toplam uzunluğu"
+    ],
+    [
+     "Sürat",
+     "Yalnız büyüklük bildiren skaler nicelik"
+    ],
+    [
+     "Hız",
+     "Büyüklüğü ve yönü olan vektörel nicelik"
+    ]
+   ]
+  },
+  {
+   "tur": "kisa",
+   "duzey": "uygula",
+   "sutun": "sol",
+   "soru": "Görseldeki konum-zaman grafiği sabit hızla giden bir araca aittir. Aracın hızı kaç m/s'dir?",
+   "cevap": "ϑ = 20 : 4 = 5 m/s",
+   "satir": 1
+  },
+  {
+   "tur": "kisa",
+   "duzey": "uygula",
+   "sutun": "sag",
+   "soru": "Görseldeki hız-zaman grafiği bir araca aittir. Aracın 5 saniyedeki yer değiştirmesi kaç metredir?",
+   "cevap": "Δx = 8 · 5 = 40 m",
+   "satir": 1
+  },
+  {
+   "tur": "dy",
+   "duzey": "hatirla",
+   "sutun": "sol",
+   "soru": "Doğru olan ifadelerin yanındaki D kutusunu, yanlış olanların yanındaki Y kutusunu işaretleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "Sabit hızlı harekette ivme sıfırdır.",
+     "dogru": true
+    },
+    {
+     "metin": "Sabit süratle giden her cisim sabit hızlıdır.",
+     "dogru": false
+    },
+    {
+     "metin": "Başladığı noktaya dönen cismin yer değiştirmesi sıfırdır.",
+     "dogru": true
+    },
+    {
+     "metin": "Hız-zaman grafiğinde sabit hız eğik bir doğruyla gösterilir.",
+     "dogru": false
+    }
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "sutun": "sag",
+   "soru": "Görseldeki taşıyıcı bant bir valizi sabit süratle taşımaktadır. 1 ve 2 numaralı bölümlerde valizin hızı için hangisi doğrudur?",
+   "secenekler": [
+    "1'de sabittir, 2'de değişir.",
+    "1'de değişir, 2'de sabittir.",
+    "İki bölümde de sabittir.",
+    "İki bölümde de değişir."
+   ],
+   "dogru": 0
+  },
+  {
+   "tur": "bosluk",
+   "duzey": "hatirla",
+   "sutun": "sol",
+   "soru": "Cümlelerdeki boşlukları kutudaki sözcüklerle doldurunuz. Bir sözcük artacaktır.",
+   "cumleler": [
+    {
+     "metin": "Hız, yer değiştirmenin geçen ___ bölünmesiyle bulunur.",
+     "cevap": "süreye"
+    },
+    {
+     "metin": "Konum-zaman grafiğinin ___ hızı verir.",
+     "cevap": "eğimi"
+    },
+    {
+     "metin": "Hız-zaman grafiği ile zaman ekseni arasındaki ___ yer değiştirmeyi verir.",
+     "cevap": "alan"
+    }
+   ],
+   "fazla": [
+    "kütle"
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "sutun": "sag",
+   "soru": "Görseldeki konum-zaman grafiğine göre K ve L araçlarının hareket yönleri için hangisi doğrudur?",
+   "secenekler": [
+    "K pozitif, L negatif yönde gider.",
+    "K negatif, L pozitif yönde gider.",
+    "İkisi de pozitif yönde gider.",
+    "İkisi de negatif yönde gider."
+   ],
+   "dogru": 0
+  },
+  {
+   "tur": "kisa",
+   "duzey": "uygula",
+   "sutun": "sol",
+   "soru": "Bir robot süpürge evde 12 m yol alıp başladığı noktaya dönüyor. Süpürgenin aldığı yolu ve yer değiştirmesini yazınız.",
+   "cevap": "Alınan yol 12 m, yer değiştirme 0 (sıfır).",
+   "satir": 1
+  },
+  {
+   "tur": "kisa",
+   "duzey": "uygula",
+   "sutun": "sag",
+   "soru": "Görselde sabit hızla giden bir oyuncak arabanın iki andaki konumu verilmiştir. Arabanın yer değiştirmesini ve hızını bulunuz.",
+   "cevap": "Δx = 14 − 2 = 12 m; ϑ = 12 : 4 = 3 m/s",
+   "satir": 2
+  },
+  {
+   "tur": "kisa",
+   "duzey": "hatirla",
+   "sutun": "sol",
+   "soru": "Platform tipi bir asansör kata ulaşırken yavaşlayıp durur. Bu son bölüm neden sabit hızlı hareket değildir?",
+   "cevap": "Bu bölümde hızın büyüklüğü değiştiği için.",
+   "satir": 1
+  },
+  {
+   "tur": "acik",
+   "duzey": "ust",
+   "sutun": "sag",
+   "soru": "Bir araç x = 0 noktasından başlayıp her saniye 7 m yer değiştirerek sabit hızla gidiyor. Aracın 8. saniyedeki konumunu bulunuz ve kullandığınız genellemeyi yazınız.",
+   "cevap": "Sabit hızlı harekette Δx = ϑ · Δt. Δx = 7 · 8 = 56 m; araç x = 56 m konumundadır.",
+   "satir": 3
+  }
+ ]
+}
