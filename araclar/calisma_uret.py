@@ -282,6 +282,34 @@ def sayfa_doldur(boy, tam, i0, H, g, hepsi):
     return None
 
 
+def sayfa1_onek(boy, H, g, geri=3):
+    """1. sayfa (tam genişlikli soru yokken): sığan en uzun önek (ya da en çok `geri` soru kısası) dengeli sütunlara bölünür, sonra
+    sütun altındaki boşluklara sonraki sorulardan sığanlar en iyi sığdıkları sütuna eklenir. Böylece 2. sayfaya kalan hiçbir soru
+    1. sayfadaki boşluğa sığmaz (kullanıcı 30.09.2026: "soru sığabilecekken mizanpaj ve soru yeri değiştirerek boş bırakma").
+    Önek seçimi: yayılamayan boşluk, taşınan soru sayısı, en büyük boşluk en az olan. Döner: (2. sayfaya kalanlar, bölümler) ya da None."""
+    s = sayfa_doldur(boy, set(), 0, H, g, False)
+    if not s:
+        return None
+    en = None
+    for p in range(s[0], max(1, s[0] - geri) - 1, -1):
+        sol, sag, L, R = blok_bol(list(range(p)), boy, g)
+        sut, dolu, kalan, tasinan = [list(sol), list(sag)], [L, R], [], 0
+        for i in range(p, len(boy)):
+            yer = [j for j in (0, 1) if dolu[j] + boy[i] + (g if sut[j] else 0) <= H]
+            if yer:
+                j = min(yer, key=lambda j: H - dolu[j])
+                dolu[j] += boy[i] + (g if sut[j] else 0)
+                sut[j].append(i)
+                tasinan += 1
+            else:
+                kalan.append(i)
+        artik = [max(0.0, H - dolu[j] - max(0, len(sut[j]) - 1) * YAYMA_SINIRI) for j in (0, 1)]
+        puan = (round(max(artik) / MM), tasinan, round(max(H - d for d in dolu) / (4 * MM)), -p)
+        if en is None or puan < en[0]:
+            en = (puan, kalan, [('iki', sut[0], sut[1], 0.0, dolu[0], dolu[1])])
+    return en[1], en[2]
+
+
 def sirala(o, plan):
     """Sayfa planındaki okuma sırasına göre (sayfa sayfa; bölümde önce sol sütun, sonra sağ) soruları yeniden dizer ve planı yeni sıraya çevirir.
     Seçenek/eşleştirme karıştırma tohumu özgün numarada kalır (_tohum): ölçülen boylar değişmez."""
@@ -305,13 +333,25 @@ def yerlesim(o, olcum):
     for k in OLCEKLER:
         boy, g = olcum[k]['boy'], 7 * k
         H1, H2 = SAYFA_BOY - PAY - olcum[k]['ust'], SAYFA_BOY - PAY
-        s1 = sayfa_doldur(boy, tam, 0, H1, g, False)
-        sayfalar = [(s1[1], H1)]
-        if s1[0] < len(boy):
-            s2 = sayfa_doldur(boy, tam, s1[0], H2, g, True)
-            if not s2:
+        if not tam:
+            r = sayfa1_onek(boy, H1, g)
+            if not r:
                 continue
-            sayfalar.append((s2[1], H2))
+            kalan, b1 = r
+            sayfalar = [(b1, H1)]
+            if kalan:
+                sol, sag, L, R = blok_bol(kalan, boy, g)
+                if max(L, R) > H2:
+                    continue
+                sayfalar.append(([('iki', sol, sag, 0.0, L, R)], H2))
+        else:
+            s1 = sayfa_doldur(boy, tam, 0, H1, g, False)
+            sayfalar = [(s1[1], H1)]
+            if s1[0] < len(boy):
+                s2 = sayfa_doldur(boy, tam, s1[0], H2, g, True)
+                if not s2:
+                    continue
+                sayfalar.append((s2[1], H2))
         plan, bosluk, daginik = [], [], []
         for bolumler, H in sayfalar:
             son = bolumler[-1]
