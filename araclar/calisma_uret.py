@@ -37,7 +37,11 @@ sys.path.insert(0, str(KOK / '03-ARACLAR' / '_pylib'))
 
 import ozet_uret  # noqa: E402  (sembol dönüşümü e(), sayfa şablonu)
 
-sembol = ozet_uret.e
+def sembol(metin):
+    # Mutlak değerin açılış çizgisinden sonra satır bölünmesin (|−3| tek parça kalsın).
+    return re.sub(r'\|(?=[−+\d])', '|\u2060', ozet_uret.e(metin))
+
+
 sayfa = ozet_uret._sayfa.sayfa
 DERSLER = json.loads((PUBLIC / 'veri' / 'dersler.json').read_text(encoding='utf-8'))['dersler']
 TUR_AD = {'coktan': 'Çoktan seçmeli', 'dy': 'Doğru mu, yanlış mı?', 'bosluk': 'Boşluk doldurma', 'eslestir': 'Eşleştirme',
