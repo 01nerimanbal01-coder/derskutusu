@@ -124,6 +124,20 @@ def kanal():
     return svg(360, 108, ic, 'Kroki: Mısır’da Akdeniz’i Kızıldeniz’e bağlayan dar kanal ve kanalda sıkışan gemi', 25)
 
 
+def bilesenler():
+    # Solda merkez kutu, sağda beş bileşen; numaralı kutular boş (cevap tabloda)
+    ic = kutu(4, 50, 118, 40, LAC, LAC, 20, 1) + yazi(63, 67, 'Coğrafi bakışın', 11, '#fff') + yazi(63, 81, 'bileşenleri', 11, '#fff')
+    ogeler = ['Ölçek bilinci', '1', '2', 'Yer ve mekân algısı', '3']
+    for i, m in enumerate(ogeler):
+        y = 4 + i * 27
+        ic += f'<path d="M122 70 C146 70 146 {y + 11} 170 {y + 11}" fill="none" stroke="{GRI}" stroke-width="1.5"/>'
+        if m.isdigit():
+            ic += kutu(170, y, 186, 22, '#fff', TUR, 6, 1.4, ' stroke-dasharray="4 3"') + rozet(263, y + 11, m, TUR, 8)
+        else:
+            ic += kutu(170, y, 186, 22, MAVI_A, MAVI, 6, 1.3) + yazi(263, y + 15.5, m, 11, LAC)
+    return svg(360, 140, ic, 'Coğrafi bakışın bileşenleri: ölçek bilinci, 1, 2, yer ve mekân algısı, 3 numaralı boş kutular', 30)
+
+
 def uygula(o):
     s = o['sorular']
     s[0]['gorsel'] = yerler()
@@ -132,3 +146,4 @@ def uygula(o):
     s[5]['gorsel'] = butce_tablosu()
     s[7]['gorsel'] = mahalle()
     s[9]['gorsel'] = kanal()
+    s[12]['gorsel'] = bilesenler()
