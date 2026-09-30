@@ -1,0 +1,239 @@
+{
+ "sinif": 8,
+ "ders": "matematik",
+ "hafta": 1,
+ "tarih": "14-18 Eylül 2026",
+ "konu": "Çarpanlar ve Asal Çarpanlara Ayırma",
+ "ciktilar": [
+  "M.8.1.1.1. Verilen pozitif tam sayıların pozitif tam sayı çarpanlarını bulur, pozitif tam sayıların pozitif tam sayı çarpanlarını üslü ifadelerin çarpımı şeklinde yazar."
+ ],
+ "hatirla": [
+  "Her doğal sayı iki doğal sayının çarpımı olarak yazılabilir; çarpılan sayılar o sayının çarpanlarıdır. Çarpanlar aynı zamanda sayının bölenleridir.",
+  "Bir sayının pozitif tam sayı çarpanlarından asal sayı olanlarına o sayının asal çarpanları denir.",
+  "Bölen listesi yönteminde sayı, onu kalansız bölen en küçük asal sayıya bölünür. Bölüm 1 oluncaya kadar asal sayılarla bölmeye devam edilir.",
+  "Tekrar eden asal çarpanlar üslü yazılır: 72 = 2 · 2 · 2 · 3 · 3 = {us:2|3} · {us:3|2}."
+ ],
+ "sorular": [
+  {
+   "tur": "kisa",
+   "duzey": "hatirla",
+   "soru": "Her domino taşının iki yarısındaki sayıların çarpımı 60'tır. Boş yarılara gelecek sayıları bulunuz. 60'ın bütün pozitif tam sayı çarpanlarını yazınız.",
+   "cevap": "Boş yarılar: 20, 4, 12 ve 10. 60'ın çarpanları: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60.",
+   "satir": 2
+  },
+  {
+   "tur": "eslestir",
+   "duzey": "hatirla",
+   "soru": "Her sayıyı asal çarpanlarının çarpımı biçimiyle eşleştiriniz. Harfleri kutulara yazınız.",
+   "ciftler": [
+    [
+     "98",
+     "2 · {us:7|2}"
+    ],
+    [
+     "81",
+     "{us:3|4}"
+    ],
+    [
+     "200",
+     "{us:2|3} · {us:5|2}"
+    ],
+    [
+     "66",
+     "2 · 3 · 11"
+    ],
+    [
+     "63",
+     "{us:3|2} · 7"
+    ]
+   ]
+  },
+  {
+   "tur": "tablo",
+   "duzey": "hatirla",
+   "soru": "180 sayısı bölen listesi yöntemiyle asal çarpanlarına ayrılıyor. Boşlukları doldurunuz.",
+   "basliklar": [
+    "Bölünen",
+    "Asal bölen"
+   ],
+   "satirlar": [
+    [
+     "180",
+     "2"
+    ],
+    [
+     {
+      "b": "90"
+     },
+     "2"
+    ],
+    [
+     "45",
+     {
+      "b": "3"
+     }
+    ],
+    [
+     {
+      "b": "15"
+     },
+     "3"
+    ],
+    [
+     "5",
+     {
+      "b": "5"
+     }
+    ],
+    [
+     "1",
+     ""
+    ],
+    [
+     "180 =",
+     {
+      "b": "{us:2|2} · {us:3|2} · 5"
+     }
+    ]
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "hatirla",
+   "soru": "Görseldeki makine, içine giren asal sayıların hepsini çarparak bir sayı üretir. Makineden hangi sayı çıkar?",
+   "secenekler": [
+    "42",
+    "84",
+    "126",
+    "252"
+   ],
+   "dogru": 2
+  },
+  {
+   "tur": "dy",
+   "duzey": "hatirla",
+   "soru": "Doğru olan ifadelerin yanındaki D kutusunu, yanlış olanların yanındaki Y kutusunu işaretleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "Bir sayının pozitif tam sayı çarpanları o sayının bölenleridir.",
+     "dogru": true
+    },
+    {
+     "metin": "1, her sayının asal çarpanıdır.",
+     "dogru": false
+    },
+    {
+     "metin": "Bölen listesi yönteminde bölüm 1 olunca bölmeye son verilir.",
+     "dogru": true
+    },
+    {
+     "metin": "12'nin asal çarpanları 2, 3 ve 4'tür.",
+     "dogru": false
+    },
+    {
+     "metin": "{us:5|2} · 2 çarpımı 50'ye eşittir.",
+     "dogru": true
+    }
+   ]
+  },
+  {
+   "tur": "kisa",
+   "duzey": "uygula",
+   "soru": "Ece, 132 sayısını bölen listesi yöntemiyle asal çarpanlarına ayırırken görseldeki listeyi yazmıştır. Ece'nin hatası nedir? 132'yi asal çarpanlarının çarpımı biçiminde doğru olarak yazınız.",
+   "cevap": "4 asal sayı değildir; listede yalnız asal sayılarla bölünür. Doğrusu: 132, 66, 33, 11, 1 (bölenler 2, 2, 3, 11). 132 = {us:2|2} · 3 · 11.",
+   "satir": 3
+  },
+  {
+   "tur": "bosluk",
+   "duzey": "hatirla",
+   "soru": "Cümlelerdeki boşlukları kutudaki sözcüklerle doldurunuz. Bir sözcük artacaktır.",
+   "cumleler": [
+    {
+     "metin": "Bir sayının çarpanları aynı zamanda o sayının ___.",
+     "cevap": "bölenleridir"
+    },
+    {
+     "metin": "Bir sayının asal sayı olan çarpanlarına o sayının ___ denir.",
+     "cevap": "asal çarpanları"
+    },
+    {
+     "metin": "Bölen listesinde sayı, onu kalansız bölen en ___ asal sayıya bölünür.",
+     "cevap": "küçük"
+    },
+    {
+     "metin": "Bölen listesinde bölmeye, bölüm ___ oluncaya kadar devam edilir.",
+     "cevap": "1"
+    }
+   ],
+   "fazla": [
+    "büyük"
+   ],
+   "sutun": "sol"
+  },
+  {
+   "tur": "kisa",
+   "duzey": "uygula",
+   "soru": "Bir okulun gösteri salonuna 96 sandalye, her sırada eşit sayıda sandalye olacak biçimde dizilecektir. Görseldeki koşullara göre sandalyeler kaç farklı biçimde dizilebilir? Her birini yazınız.",
+   "cevap": "96 = 6 · 16 = 8 · 12. Koşullara uyan düzenler: 6 sıra, her sırada 16 sandalye; 8 sıra, her sırada 12 sandalye. 2 farklı biçimde dizilebilir.",
+   "satir": 3,
+   "sutun": "sag"
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Aşağıdaki sayılardan hangisinin asal çarpanları ötekilerinkinden farklıdır?",
+   "secenekler": [
+    "12",
+    "18",
+    "24",
+    "30"
+   ],
+   "dogru": 3
+  },
+  {
+   "tur": "kisa",
+   "duzey": "uygula",
+   "soru": "Bir oyunda her harfe görseldeki asal sayı karşılık gelir. Bir kelimenin kodu, harflerine karşılık gelen sayıların çarpımıdır. Kodu 150 olan dört harfli bir kelimede hangi harfler vardır?",
+   "cevap": "150 = 2 · 3 · {us:5|2}. Kelimede bir A, bir B ve iki C vardır.",
+   "satir": 2
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Dört öğrenci 48 sayısını üslü ifadelerin çarpımı biçiminde görseldeki gibi yazmıştır. Hangi öğrenci 48'i tabanı asal sayı olan üslü ifadelerin çarpımı biçiminde doğru yazmıştır?",
+   "secenekler": [
+    "Ali",
+    "Can",
+    "Efe",
+    "Naz"
+   ],
+   "dogru": 0
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Asal çarpanları 3, 5 ve 7 olan en küçük üç basamaklı sayı kaçtır?",
+   "secenekler": [
+    "105",
+    "210",
+    "315",
+    "525"
+   ],
+   "dogru": 0
+  },
+  {
+   "tur": "kisa",
+   "duzey": "ust",
+   "soru": "Tablonun her satırındaki ve her sütunundaki sayıların çarpımı, satırın sağına ve sütunun altına asal çarpanlarıyla yazılmıştır. Boş kutulara gelecek sayıları bulunuz.",
+   "cevap": "{us:2|3} · 3 = 24 ve 24 = 4 · 6 → üstteki boş kutu 6. 5 · 7 = 35 → alttaki boş kutu 5. Denetim: 4 · 5 = 20, 6 · 7 = 42.",
+   "satir": 3
+  },
+  {
+   "tur": "acik",
+   "duzey": "ust",
+   "soru": "Görseldeki üç kutuda bulunan bilye sayıları ardışık üç doğal sayıdır. Etikette bilye sayılarının çarpımı asal çarpanlarıyla yazılmıştır. Kutularda kaçar bilye vardır?",
+   "cevap": "{us:2|3} · {us:3|2} · 7 = 8 · 9 · 7 = 504. 504 = 7 · 8 · 9 olduğundan kutularda 7, 8 ve 9 bilye vardır.",
+   "satir": 3
+  }
+ ]
+}
