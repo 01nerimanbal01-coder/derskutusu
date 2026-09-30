@@ -175,7 +175,7 @@ const Arama = (() => {
     ekle({ tip: 'sayfa', baslik: 'İçerikler', aciklama: 'Bütün içerikler: sınıf, ders ve türe göre süzün.', adres: '/icerikler.html', ek: 'kutuphane liste' });
     ekle({ tip: 'sayfa', baslik: 'Resmî belgeler', aciklama: 'Öğretim programları, kılavuzlar, ortak yazılı tabloları, LGS ve YKS belgeleri.', adres: '/belgeler.html', ek: 'meb odsgm dogm osym resmi' });
     ekle({ tip: 'sayfa', baslik: 'Günlük planlar', aciklama: 'Okul, öğretmen ve yönetici adları her sayfaya yazılı günlük ders planları; tüm yıl ya da aylık, Word veya PDF.', adres: '/planlar.html', kitle: 'ogretmen', ek: 'ogretmen', tur: 'Ders planı' });
-    ekle({ tip: 'sayfa', baslik: 'Öğretmen köşesi', aciklama: 'Yıllık planlar, günlük planlar, yazılı soruları ve çalışma kâğıtları.', adres: '/icerikler.html?kitle=ogretmen', kitle: 'ogretmen', ek: 'ogretmen' });
+    ekle({ tip: 'sayfa', baslik: 'Öğretmen köşesi', aciklama: 'Yıllık planlar, günlük planlar, ortak yazılı tabloları ve çalışma kâğıtları.', adres: '/icerikler.html?kitle=ogretmen', kitle: 'ogretmen', ek: 'ogretmen' });
     ekle({ tip: 'sayfa', baslik: 'İletişim', aciklama: 'Bize e-posta ve sosyal medyadan ulaşın.', adres: '/#iletisim', ek: 'iletisim eposta mail adres' });
     ekle({ tip: 'sayfa', baslik: 'Gizlilik ve çerezler', aciklama: 'Kişisel veriler ve çerez tercihleri.', adres: '/gizlilik.html', ek: 'kvkk cerez gizlilik' });
     ekle({ tip: 'sayfa', alt: 'sinav', baslik: 'Sınavlar: LGS ve YKS', aciklama: 'LGS ve YKS oturumları, testler, soru sayıları ve süreler; çıkmış sorular ve kılavuzlar.', adres: '/sinav.html', ek: 'lgs yks tyt ayt ydt sinav' });

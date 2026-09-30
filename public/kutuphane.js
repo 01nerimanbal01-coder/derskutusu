@@ -74,10 +74,13 @@ function icerikSayfasi({ dersler, icerikler }) {
     alan.ders.replaceChildren(el('option', { value: '' }, 'Bütün dersler'), ...kisa.map((d) => el('option', { value: d }, dersler.dersler[d])));
     if (kisa.includes(onceki)) alan.ders.value = onceki;
   };
+  // İçerik hem kendi kitlesinde hem türünün kitlesinde görünür (çalışma kâğıdı öğrenciye de öğretmene de).
+  const turKitle = Object.fromEntries(dersler.turler.map((t) => [t.ad, t.kitle]));
+  const kitleUyar = (i, k) => (i.kitle || 'ogrenci') === k || turKitle[i.tur] === k;
   const turSecenekleri = () => {
     const k = alan.kitle.value;
     const onceki = alan.tur.value;
-    const turler = dersler.turler.filter((t) => !k || t.kitle === k);
+    const turler = dersler.turler.filter((t) => !k || t.kitle === k || icerikler.some((i) => i.tur === t.ad && kitleUyar(i, k)));
     alan.tur.replaceChildren(el('option', { value: '' }, 'Bütün türler'), ...turler.map((t) => el('option', { value: t.ad }, t.ad)));
     if (turler.some((t) => t.ad === onceki)) alan.tur.value = onceki;
   };
@@ -90,7 +93,7 @@ function icerikSayfasi({ dersler, icerikler }) {
   const ciz = () => {
     const f = Object.fromEntries(Object.entries(alan).map(([a, e]) => [a, e.value.trim()]));
     const sonuc = icerikler.filter((i) => (!f.sinif || String(i.sinif) === f.sinif) && (!f.ders || i.ders === f.ders)
-      && (!f.tur || i.tur === f.tur) && (!f.kitle || (i.kitle || 'ogrenci') === f.kitle)
+      && (!f.tur || i.tur === f.tur) && (!f.kitle || kitleUyar(i, f.kitle))
       && (!f.ara || aramaEslesir(`${i.baslik} ${i.aciklama} ${dersler.dersler[i.ders] || ''} ${i.tur}`, f.ara)))
       .sort((a, b) => String(b.tarih || '').localeCompare(String(a.tarih || '')));
     const url = new URLSearchParams(Object.entries(f).filter(([, d]) => d));

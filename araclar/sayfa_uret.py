@@ -290,8 +290,7 @@ def _sinav_govde():
         if lgs:
             hazirlik = ('<li><a href="/sinif.html?no=8">8. sınıfın bütün dersleri</a></li>'
                         '<li><a href="/icerikler.html?sinif=8&amp;tur=Konu%20anlat%C4%B1m%C4%B1">8. sınıf konu özetleri</a></li>'
-                        '<li><a href="/icerikler.html?sinif=8&amp;tur=Yaz%C4%B1l%C4%B1%20senaryosu">8. sınıf ortak yazılı senaryoları</a></li>'
-                        '<li><a href="/icerikler.html?sinif=8&amp;tur=Ders%20kitab%C4%B1">8. sınıf ders kitapları</a></li>')
+                        '<li><a href="/icerikler.html?sinif=8&amp;tur=Yaz%C4%B1l%C4%B1%20senaryosu">8. sınıf ortak yazılı senaryoları</a></li>')
         else:
             hazirlik = ''.join(f'<li><a href="/sinif.html?no={k}">{k}. sınıfın bütün dersleri</a></li>' for k in x['siniflar'])
             hazirlik += '<li><a href="/icerikler.html?tur=Ders%20kitab%C4%B1">Lise ders kitapları</a></li>'
