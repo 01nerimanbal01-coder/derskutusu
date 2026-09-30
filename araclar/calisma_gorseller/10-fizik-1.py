@@ -124,6 +124,24 @@ def sayi_dogrusu():
     return svg(380, 74, ic, 'Sayı doğrusu (metre): araba t = 0 anında 2 m konumunda, t = 4 s anında 14 m konumunda', 17)
 
 
+def vt_basamak():
+    X, S = 60, 62  # S: sıfır hız çizgisi
+    ic = f'<line x1="{X}" y1="{S}" x2="{X + 5 * 42 + 14}" y2="{S}" stroke="{LAC}" stroke-width="1.3"/><line x1="{X}" y1="96" x2="{X}" y2="16" stroke="{LAC}" stroke-width="1.3"/>'
+    for n in range(1, 6):
+        ic += f'<line x1="{X + n * 42}" y1="24" x2="{X + n * 42}" y2="90" stroke="{GRI}" stroke-width="0.5" stroke-dasharray="3 3"/>' + yazi(X + n * 42 - 6, S - 4, str(n), 10, LAC, 'middle', True)
+    for v, y in (('4', 34), ('2', 48), ('−2', 76), ('−4', 90)):
+        ic += f'<line x1="{X}" y1="{y}" x2="{X + 210}" y2="{y}" stroke="{GRI}" stroke-width="0.5" stroke-dasharray="3 3"/>' + yazi(X - 5, y + 3.5, v, 10, LAC, 'end', True)
+    ic += yazi(X - 5, S + 3.5, '0', 10, LAC, 'end', True) + yazi(X + 228, S + 4, 'Zaman (s)', 10, LAC, 'start') + yazi(X, 10, 'Hız (m/s)', 10, LAC)
+    ic += f'<line x1="{X}" y1="34" x2="{X + 126}" y2="34" stroke="{KIR}" stroke-width="2.2"/><line x1="{X + 126}" y1="76" x2="{X + 210}" y2="76" stroke="{KIR}" stroke-width="2.2"/>'
+    return svg(360, 100, ic, 'Hız-zaman grafiği: 0 ile 3 s arasında hız 4 m/s, 3 ile 5 s arasında hız −2 m/s', 28)
+
+
+def xt3():
+    ic = eksen('Zaman (s)', 'Konum (m)', ['1', '2', '3', '4', '5', '6'], ['10', '20', '30'], 34, 20)
+    ic += f'<line x1="60" y1="36" x2="264" y2="96" stroke="{MAVI}" stroke-width="2.2"/><circle cx="60" cy="36" r="2.6" fill="{MAVI}"/><circle cx="264" cy="96" r="2.6" fill="{MAVI}"/>' + yazi(150, 52, 'M', 12, MAVI)
+    return svg(360, 114, ic, 'Konum-zaman grafiği: M aracı 0 s anında 30 m konumunda, 6. saniyede 0 konumunda; doğru aşağı iner', 28)
+
+
 def uygula(o):
     s = o['sorular']
     s[0]['gorsel'] = konum_tablosu()
@@ -132,3 +150,5 @@ def uygula(o):
     s[5]['gorsel'] = bant()
     s[7]['gorsel'] = xt2()
     s[9]['gorsel'] = sayi_dogrusu()
+    s[12]['gorsel'] = vt_basamak()
+    s[13]['gorsel'] = xt3()
