@@ -171,6 +171,21 @@ def bayraklar():
     return svg(360, 74, ic, 'Bayraklar: A kırmızı zemin üzerinde beyaz ay yıldız, B beyaz zemin ortasında kırmızı daire, C dikey mavi, beyaz, kırmızı şeritler, D yatay siyah, kırmızı, sarı şeritler', 17)
 
 
+def pano():
+    """Kulüp panosu: dört öğrencinin notu (ad, ülke, sevdiği etkinlik); kulüp adı yazılmaz."""
+    ic = f'<rect x="4" y="4" width="352" height="128" rx="8" fill="#ecd3ad" stroke="{KAHVE}" stroke-width="1.4"/>'
+    notlar = [("I'm Defne from Türkiye.", 'I like solving problems.', TUR_A, TUR),
+              ("I'm Ivan from Russia.", 'I like doing experiments.', MAVI_A, MAVI),
+              ("I'm Emma from Canada.", 'I like acting.', YES_A, YES),
+              ("I'm Sofia from Mexico.", 'I like dancing.', MOR_A, MOR)]
+    for i, (a, b, dolgu, renk) in enumerate(notlar):
+        x0, y0 = 10 + (i % 2) * 174, 12 + (i // 2) * 60
+        ic += kutu(x0, y0, 166, 52, dolgu, renk, 4, 1.2) + f'<circle cx="{x0 + 83}" cy="{y0 + 1}" r="3.5" fill="{KIR}" stroke="#fff" stroke-width="1"/>'
+        ic += rozet(x0 + 13, y0 + 15, 'ABCD'[i], renk) + yazi(x0 + 28, y0 + 19, a, 11, LAC, 'start', True) + yazi(x0 + 10, y0 + 40, b, 11, LAC, 'start', True)
+    return svg(360, 136, ic, "Kulüp panosundaki notlar: A I'm Defne from Türkiye. I like solving problems. B I'm Ivan from Russia. I like doing experiments. "
+               "C I'm Emma from Canada. I like acting. D I'm Sofia from Mexico. I like dancing.", 30)
+
+
 def uygula(o):
     s = o['sorular']
     s[1]['gorsel'] = esyalar()
@@ -180,3 +195,4 @@ def uygula(o):
     s[6]['gorsel'] = levhalar()
     s[8]['gorsel'] = blog()
     s[9]['gorsel'] = bayraklar()
+    s[12]['gorsel'] = pano()
