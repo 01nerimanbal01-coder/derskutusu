@@ -13,7 +13,10 @@
     kavram   {merkez, dallar[metin | {"b": cevap, "ipucu"?: kısa açıklama (boş kutunun üstüne/altına)}]}
 Görseller: araclar/calisma_gorseller/<ad>.py → def uygula(o) (ozet_gorsel.py yardımcıları).
 Çıktı: public/calisma/<ad>.html, public/calisma/pdf/<ad>.pdf ve <ad>-cevapli.pdf; icerikler.json "Çalışma kâğıdı"; sitemap.
-PDF: başsız Chrome (yazı tipleri Montserrat ve Noto Sans, OFL; 03-ARACLAR/_calisma/font). 2 sayfayı aşarsa ölçek küçültülür.
+PDF: başsız Chrome (yazı tipleri Montserrat ve Noto Sans, OFL; 03-ARACLAR/_calisma/font).
+Sayfa düzeni ölçümle kurulur (olc + yerlesim): her sorunun gerçek boyu başsız Chrome'da ölçülür; 2 sayfaya sığan en büyük ölçek
+(1.10 … 0.78) seçilir, sorular sırayı bozmadan iki sayfanın sütunlarına dağıtılır, sütunlar sayfa altına yayılır. "sutun" alanı
+yalnız ölçüm yapılamazsa kullanılır. Sayfa doluluğu: 03-ARACLAR/_calisma/doluluk.py.
 Çalıştırma: cd SITE && PYTHONPATH=../03-ARACLAR/_pylib LC_ALL=en_US.UTF-8 python3 araclar/calisma_uret.py [ad …]
 """
 import html
@@ -119,7 +122,7 @@ def soru_html(s, no, ad):
         kel = ''
         if s.get('kelimeler', True):
             k = [c['cevap'] for c in s['cumleler']] + s.get('fazla', [])
-            k = [k[i] for i in karistir(len(k), ad + str(no))]
+            k = [k[i] for i in karistir(len(k), ad + str(s.get('_tohum', no)))]
             kel = '<div class="ck-kelimeler">' + ''.join(f'<span>{sembol(x)}</span>' for x in k) + '</div>'
         cum = ''
         for c in s['cumleler']:
@@ -128,7 +131,7 @@ def soru_html(s, no, ad):
         govde = kel + f'<ol class="ck-bosluk-liste">{cum}</ol>'
     elif t == 'eslestir':
         c = s['ciftler']
-        sira = karistir(len(c), ad + str(no))
+        sira = karistir(len(c), ad + str(s.get('_tohum', no)))
         harf = {j: 'abcdefgh'[k] for k, j in enumerate(sira)}
         sol = ''.join(f'<div><span class="ck-kutu">{cvp(harf[i])}</span><span>{i + 1}. {sembol(a)}</span></div>' for i, (a, _) in enumerate(c))
         sag = ''.join(f'<div><span class="harf">{"abcdefgh"[k]})</span><span>{sembol(c[j][1])}</span></div>' for k, j in enumerate(sira))
@@ -142,7 +145,7 @@ def soru_html(s, no, ad):
         govde = f'<table class="ck-tablo"><thead><tr>{bas_}</tr></thead><tbody>{gov}</tbody></table>'
     elif t == 'siralama':
         o = s['ogeler']
-        sira = karistir(len(o), ad + str(no))
+        sira = karistir(len(o), ad + str(s.get('_tohum', no)))
         govde = '<ol class="ck-sira">' + ''.join(
             f'<li><span class="ck-kutu">{cvp(str(j + 1))}</span><span>{sembol(o[j])}</span></li>' for j in sira) + '</ol>'
     elif t == 'sifre':
@@ -201,9 +204,168 @@ def dizilim(liste):
     return cikti
 
 
-def kagit_html(o, ad, cevapli=False):
+MM = 96 / 25.4
+SAYFA_BOY = (297 - 9 - 11) * MM  # baskı alanının yüksekliği (px); calisma.css @page kenar boşluklarıyla aynı olmalı
+SAYFA_EN = '191mm'               # 210 − 2 × 9.5
+PAY = 2 * MM                     # ölçüm ile baskı arasındaki küçük farklar için güvenlik payı
+OLCEKLER = [round(1.10 - 0.02 * i, 2) for i in range(17)]
+
+
+def olc(o, ad, font_css):
+    """Her ölçek için {'ust': soruların başladığı yükseklik, 'boy': [soru boyları]} (px; baskı genişliğinde, cevaplı)."""
+    stil = (PUBLIC / 'calisma.css').read_text(encoding='utf-8')
+    logo = (PUBLIC / 'logo.svg').as_uri()
+    govde = ''.join(kagit_html(o, ad, True, olcum=True).replace('<article class="ck', f'<article style="--ck-olcek: {k}" class="ck', 1)
+                    for k in OLCEKLER).replace('src="/logo.svg"', f'src="{logo}"')
+    betik = """<pre id="ck-olcum"></pre><script>
+Promise.all([...document.fonts].map(f => f.load())).then(() => document.fonts.ready).then(() => {
+  document.getElementById('ck-olcum').textContent = JSON.stringify([...document.querySelectorAll('article.ck')].map(a => {
+    const boy = {};
+    a.querySelectorAll('.ck-soru').forEach(e => { boy[e.querySelector('.ck-no').textContent] = e.getBoundingClientRect().height; });
+    return {ust: a.querySelector('.ck-sorular').getBoundingClientRect().top - a.getBoundingClientRect().top, boy};
+  }));
+});</script>"""
+    belge = (f'<!doctype html><html lang="tr"><head><meta charset="utf-8"><style>{font_css}{stil}\n'
+             f'body {{ margin: 0; }} .ck {{ width: {SAYFA_EN} !important; padding: 0 !important; margin: 0 0 40px !important; box-shadow: none !important; }}'
+             f'</style></head><body>{govde}{betik}</body></html>')
+    IS.mkdir(parents=True, exist_ok=True)
+    gecici = IS / f'{ad}-olcum.html'
+    gecici.write_text(belge, encoding='utf-8')
+    r = subprocess.run([CHROME, '--headless=new', '--disable-gpu', '--allow-file-access-from-files', '--window-size=1200,1600',
+                        '--virtual-time-budget=8000', '--dump-dom', gecici.as_uri()], capture_output=True, text=True, timeout=180)
+    gecici.unlink()
+    m = re.search(r'<pre id="ck-olcum">(\[.*?\])</pre>', r.stdout, re.S)
+    if not m:
+        return None
+    n = len(o['sorular'])
+    return {k: {'ust': v['ust'], 'boy': [v['boy'][str(i)] for i in range(1, n + 1)]}
+            for k, v in zip(OLCEKLER, json.loads(html.unescape(m.group(1))))}
+
+
+def blok_bol(idx, boy, g):
+    """İki sütunlu bir bölümün sorularını (idx, özgün sıra) sütunlara en dengeli biçimde dağıtır: (sol, sag, L, R).
+    İlk soru solda kalır; sütun içinde özgün sıra korunur; eşit dengede özgün sıraya en yakın dağılım seçilir.
+    Sonra sorular sütun sütun (önce sol, sonra sağ) yeniden numaralanır (sirala)."""
+    m, en = len(idx), None
+    for maske in range(1, 1 << m, 2):
+        sol = [idx[j] for j in range(m) if maske >> j & 1]
+        sag = [idx[j] for j in range(m) if not maske >> j & 1]
+        L = sum(boy[i] for i in sol) + g * (len(sol) - 1)
+        R = sum(boy[i] for i in sag) + g * max(0, len(sag) - 1)
+        kayma = sum(abs(k - idx.index(i)) for k, i in enumerate(sol + sag))
+        puan = (round(abs(L - R) / 12), kayma)
+        if en is None or puan < en[0]:
+            en = (puan, sol, sag, L, R)
+    return en[1:]
+
+
+def sayfa_doldur(boy, tam, i0, H, g, hepsi):
+    """i0'dan başlayan soruları bir sayfaya (yükseklik H) yerleştirir. hepsi=True: kalan soruların tamamı sığmalı (yoksa None);
+    False: sığan en çok soru. Döner: (son soru + 1, bölümler, en alttaki sütun boyları).
+    Bölüm: ('tam', i, y) | ('iki', [sol], [sag], y, sol boy, sag boy); iki sütunlu bölümde sorular blok_bol ile dengelenir."""
+    n = len(boy)
+    for i1 in ([n] if hepsi else range(n, i0, -1)):
+        bolumler, y, j, sigar, dolu = [], 0.0, i0, True, (H, H)
+        while j < i1 and sigar:
+            if j in tam:
+                sigar = y + boy[j] <= H
+                bolumler.append(('tam', j, y)); y += boy[j] + g; dolu = (H, H); j += 1
+            else:
+                k = j
+                while k < i1 and k not in tam:
+                    k += 1
+                sol, sag, L, R = blok_bol(list(range(j, k)), boy, g)
+                sigar = y + max(L, R) <= H
+                bolumler.append(('iki', sol, sag, y, L, R)); dolu = (y + L, y + R); y += max(L, R) + g; j = k
+        if sigar:
+            return i1, bolumler, dolu
+    return None
+
+
+def sirala(o, plan):
+    """Sayfa planındaki okuma sırasına göre (sayfa sayfa; bölümde önce sol sütun, sonra sağ) soruları yeniden dizer ve planı yeni sıraya çevirir.
+    Seçenek/eşleştirme karıştırma tohumu özgün numarada kalır (_tohum): ölçülen boylar değişmez."""
+    sira = [i for sayfa in plan for b in sayfa for i in ([b[1]] if b[0] == 'tam' else b[1] + b[2])]
+    for no, s in enumerate(o['sorular'], 1):
+        s.setdefault('_tohum', no)
+    o['sorular'] = [o['sorular'][i] for i in sira]
+    yeni = {eski: k for k, eski in enumerate(sira)}
+    return [[('tam', yeni[b[1]]) if b[0] == 'tam' else ('iki', [yeni[i] for i in b[1]], [yeni[i] for i in b[2]], b[3]) for b in sayfa] for sayfa in plan]
+
+
+YAYMA_SINIRI = 12 * MM  # sütunu sayfa altına yayarken sorular arasına eklenebilecek en büyük boşluk
+
+
+def yerlesim(o, olcum):
+    """Sayfa planı adayları [(ölçek, plan, sütun altı boşlukları mm)], önce seçilen.
+    Seçim: 1. sayfası derli toplu olan (sütunlar, sorular arasına en çok YAYMA_SINIRI eklenerek sayfa altına varıyor) en büyük ölçek;
+    yoksa 1. sayfada en az boşluk bırakan ölçek. 2. sayfa da derli toplu ise yayılır, değilse üstten dizilir (altı boş kalır: soru eklenmeli)."""
+    tam = {i for i, s in enumerate(o['sorular']) if s.get('genislik') == 'tam'}
+    adaylar = []
+    for k in OLCEKLER:
+        boy, g = olcum[k]['boy'], 7 * k
+        H1, H2 = SAYFA_BOY - PAY - olcum[k]['ust'], SAYFA_BOY - PAY
+        s1 = sayfa_doldur(boy, tam, 0, H1, g, False)
+        sayfalar = [(s1[1], H1)]
+        if s1[0] < len(boy):
+            s2 = sayfa_doldur(boy, tam, s1[0], H2, g, True)
+            if not s2:
+                continue
+            sayfalar.append((s2[1], H2))
+        plan, bosluk, daginik = [], [], []
+        for bolumler, H in sayfalar:
+            son = bolumler[-1]
+            if son[0] == 'iki':
+                _, sol, sag, y, L, R = son
+                kalan = [H - y - L, H - y - R]
+                ek = [kalan[j] / (len(liste) - 1) if len(liste) > 1 else (kalan[j] if liste else 0) for j, liste in enumerate((sol, sag))]
+            else:
+                kalan = [H - son[2] - boy[son[1]]] * 2
+                ek = kalan
+            bosluk += [round(x / MM) for x in kalan]
+            daginik.append(max(ek))
+            cikti = []
+            for b in bolumler:
+                if b[0] == 'tam':
+                    cikti.append(('tam', b[1]))
+                else:
+                    yay = b is son and (len(plan) == 0 or max(ek) <= YAYMA_SINIRI)
+                    ara = [g + min(YAYMA_SINIRI, ek[j]) if yay and len(b[1 + j]) > 1 else g for j in (0, 1)]
+                    cikti.append(('iki', b[1], b[2], ara))
+            plan.append(cikti)
+        adaylar.append((k, plan, bosluk, daginik[0]))
+    derli = [a for a in adaylar if a[3] <= YAYMA_SINIRI]
+    ilk = derli[0] if derli else min(adaylar, key=lambda a: a[3], default=None)
+    return [a[:3] for a in ([ilk] + [a for a in adaylar if a[0] < ilk[0]] if ilk else [])]
+
+
+def plan_html(plan, sorular_html, baski):
+    """Sayfa planını HTML'e çevirir. Baskıda (PDF) 2. sayfa zorunlu sayfa sonuyla başlar ve sütun aralıkları plana göre açılır."""
+    cikti = ''
+    for sira, sayfa_ in enumerate(plan):
+        ic = ''
+        for b in sayfa_:
+            if b[0] == 'tam':
+                ic += sorular_html[b[1]]
+            else:
+                _, sol, sag, ara = b
+                stil = [f' style="--ck-ara: {a:.1f}px"' if baski else '' for a in ara]
+                ic += (f'<div class="ck-iki"><div class="ck-sutun"{stil[0]}>{"".join(sorular_html[i] for i in sol)}</div>'
+                       f'<div class="ck-sutun"{stil[1]}>{"".join(sorular_html[i] for i in sag)}</div></div>')
+        cikti += f'<div class="ck-sorular{" ck-sayfa-sonu" if baski and sira else ""}">{ic}</div>'
+    return cikti
+
+
+def kagit_html(o, ad, cevapli=False, plan=None, baski=False, olcum=False):
     ders = DERSLER.get(o['ders'], o['ders'])
-    sorular = dizilim([(i, s, soru_html(s, i, ad)) for i, s in enumerate(o['sorular'], 1)])
+    parcalar = [(i, s, soru_html(s, i, ad)) for i, s in enumerate(o['sorular'], 1)]
+    if olcum:  # ölçüm belgesi: yarım sorular tek sütunda alt alta, tam genişlikliler ayrı
+        sorular = ('<div class="ck-sorular"><div class="ck-iki"><div class="ck-sutun">' + ''.join(h for _, s, h in parcalar if s.get('genislik') != 'tam')
+                   + '</div><div class="ck-sutun"></div></div>' + ''.join(h for _, s, h in parcalar if s.get('genislik') == 'tam') + '</div>')
+    elif plan:
+        sorular = plan_html(plan, [h for _, _, h in parcalar], baski)
+    else:
+        sorular = f'<div class="ck-sorular">{dizilim(parcalar)}</div>'
     hatirla = ''.join(f'<li>{sembol(x)}</li>' for x in o.get('hatirla', []))
     return f'''<article class="ck{' cevapli' if cevapli else ''}">
   <header class="ck-bant">
@@ -214,7 +376,7 @@ def kagit_html(o, ad, cevapli=False):
   </header>
   <div class="ck-konu"><h1>{sembol(o["konu"])}</h1><p>{" · ".join(html.escape(c) for c in o["ciktilar"])}</p></div>
   {f'<div class="ck-hatirla"><div class="ck-hatirla-bas">HATIRLAYALIM</div><ul>{hatirla}</ul></div>' if hatirla else ''}
-  <div class="ck-sorular">{sorular}</div>
+  {sorular}
   <footer class="ck-alt"><span>derskutusu.com · © Ders Kutusu · Tüm hakları saklıdır.</span><span>{o["sinif"]}. Sınıf {html.escape(ders)} · {o["hafta"]}. Hafta</span></footer>
 </article>'''
 
@@ -238,14 +400,14 @@ def yazi_tipleri():
     return css
 
 
-def pdf_yap(o, ad, cevapli, font_css):
+def pdf_yap(o, ad, cevapli, font_css, plan=None, olcek=None):
     from pypdf import PdfReader
     cikti = PUBLIC / 'calisma' / 'pdf' / f'{ad}{"-cevapli" if cevapli else ""}.pdf'
     cikti.parent.mkdir(parents=True, exist_ok=True)
     stil = (PUBLIC / 'calisma.css').read_text(encoding='utf-8')
     logo = (PUBLIC / 'logo.svg').as_uri()
-    for olcek in (1.0, 0.95, 0.9, 0.86, 0.82, 0.78):
-        govde = kagit_html(o, ad, cevapli).replace('src="/logo.svg"', f'src="{logo}"')
+    for olcek in ([olcek] if plan else (1.0, 0.95, 0.9, 0.86, 0.82, 0.78)):
+        govde = kagit_html(o, ad, cevapli, plan, baski=True).replace('src="/logo.svg"', f'src="{logo}"')
         belge = (f'<!doctype html><html lang="tr"><head><meta charset="utf-8"><style>{font_css}{stil}\n.ck {{ --ck-olcek: {olcek}; }}</style></head>'
                  f'<body>{govde}</body></html>')
         gecici = IS / f'{ad}{"-cevapli" if cevapli else ""}.html'
@@ -259,7 +421,7 @@ def pdf_yap(o, ad, cevapli, font_css):
     return sayfa_sayisi, olcek
 
 
-def web_sayfasi(o, ad):
+def web_sayfasi(o, ad, plan=None):
     ders = DERSLER.get(o['ders'], o['ders'])
     baslik = f'{o["sinif"]}. Sınıf {ders} {o["hafta"]}. Hafta Çalışma Kâğıdı: {o["konu"]}'
     ozet = f'ozet/{o["sinif"]}-{o["ders"]}-hafta-{o["hafta"]}.html'
@@ -279,7 +441,7 @@ def web_sayfasi(o, ad):
       </div>
     </div>
   </section>
-  <section class="bolum"><div class="kap ck-sayfalar">{kagit_html(o, ad)}</div></section>'''
+  <section class="bolum"><div class="kap ck-sayfalar">{kagit_html(o, ad, plan=plan)}</div></section>'''
     aciklama = f'{o["sinif"]}. sınıf {ders} {o["hafta"]}. hafta çalışma kâğıdı: {o["konu"]}. Görselli, çeşitli sorular; cevaplı ve cevapsız PDF.'
     (PUBLIC / 'calisma').mkdir(exist_ok=True)
     (PUBLIC / 'calisma' / f'{ad}.html').write_text(sayfa(f'calisma/{ad}.html', baslik, aciklama, govde), encoding='utf-8')
@@ -303,10 +465,23 @@ def main():
             spec.loader.exec_module(m)
             m.uygula(o)
         gorselli = sum(1 for s in o['sorular'] if s.get('gorsel') or s['tur'] in ('kavram', 'sifre', 'tablo'))
-        kayitlar.append(web_sayfasi(o, ad))
-        s1, k1 = pdf_yap(o, ad, False, font_css)
-        s2, k2 = pdf_yap(o, ad, True, font_css)
-        print(f'{ad}: {len(o["sorular"])} soru, görselli {gorselli} (%{100 * gorselli // len(o["sorular"])}); PDF {s1} sayfa (ölçek {k1}), cevaplı {s2} sayfa (ölçek {k2})')
+        olcum = olc(o, ad, font_css)
+        adaylar = yerlesim(o, olcum) if olcum else []
+        if not adaylar:
+            print(f'{ad}: ÖLÇÜMLÜ YERLEŞİM YOK ({"ölçüm alınamadı" if not olcum else "2 sayfaya sığmıyor"}); eski yöntemle üretiliyor')
+            adaylar = [(None, None, [])]
+        asil = list(o['sorular'])
+        for olcek, plan, bosluk in adaylar:  # ölçüm baskıyla uyuşmazsa (3. sayfa) bir küçük ölçeğe inilir
+            o['sorular'] = list(asil)
+            if plan:
+                plan = sirala(o, plan)
+            s1, k1 = pdf_yap(o, ad, False, font_css, plan, olcek)
+            s2, k2 = pdf_yap(o, ad, True, font_css, plan, olcek)
+            if max(s1, s2) <= 2:
+                break
+        kayitlar.append(web_sayfasi(o, ad, plan))
+        print(f'{ad}: {len(o["sorular"])} soru, görselli {gorselli} (%{100 * gorselli // len(o["sorular"])}); PDF {s1} sayfa (ölçek {k1}), cevaplı {s2} sayfa (ölçek {k2})'
+              + (f'; sütun altı boşluk (mm, yayılmadan önce) {bosluk}' + ('  ← KISA: soru eklenmeli' if max(bosluk[2:] or [0]) > 45 else '') if plan else ''))
     # içerik listesi ve site haritası (bütün çalışma kâğıtları yeniden taranır)
     veri = json.loads((PUBLIC / 'veri' / 'icerikler.json').read_text(encoding='utf-8'))
     hepsi = {k['goruntule']: k for k in veri['icerikler'] if k.get('tur') == 'Çalışma kâğıdı'}
