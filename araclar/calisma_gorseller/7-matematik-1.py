@@ -168,6 +168,23 @@ def hazine():
     return svg(x0 + 12 * a + 30, y + 32, ic, 'Patika sayı doğrusu −6 ile 6 arası; ağaç 0 noktasında, kuyu −1 noktasında', 24)
 
 
+def turtalar():
+    """3 eş turta ve 4 boş tabak (paylaşım yapılmadan); dilim çizilmez, pay öğrenciye kalır."""
+    ic = ''
+    for i in range(3):
+        x = 38 + i * 58
+        ic += (f'<circle cx="{x}" cy="42" r="25" fill="#e9b872" stroke="#a8702e" stroke-width="1.6"/>'
+               f'<circle cx="{x}" cy="42" r="19" fill="{KIR}" opacity=".85"/>'
+               + ''.join(f'<circle cx="{x + dx}" cy="{42 + dy}" r="2.6" fill="#fff" opacity=".8"/>' for dx, dy in ((-7, -6), (6, -8), (8, 5), (-5, 8), (0, 0))))
+    ic += f'<path d="M190 42 h22" stroke="{GRI}" stroke-width="2.2"/><path d="M211 36 l8 6 l-8 6 z" fill="{GRI}"/>'
+    for i, ad in enumerate(['Ece', 'Can', 'Umut', 'Ada']):
+        x = 240 + (i % 2) * 64
+        y = 22 + (i // 2) * 46
+        ic += f'<ellipse cx="{x}" cy="{y}" rx="24" ry="10" fill="#fff" stroke="{MAVI}" stroke-width="1.4"/><ellipse cx="{x}" cy="{y}" rx="15" ry="5.5" fill="{MAVI_A}"/>'
+        ic += yazi(x, y + 24, ad, 11.5, LAC)
+    return svg(360, 92, ic, '3 eş turta ve Ece, Can, Umut, Ada için 4 boş tabak', 21)
+
+
 def uygula(o):
     s = o['sorular']
     s[1]['gorsel'] = termometre()
@@ -179,3 +196,4 @@ def uygula(o):
     s[10]['gorsel'] = ekmekler()
     s[11]['gorsel'] = kumeler()
     s[12]['gorsel'] = hazine()
+    s[13]['gorsel'] = turtalar()
