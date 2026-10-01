@@ -123,6 +123,31 @@ def etkilesim():
     return svg(360, 80, ic, 'Etkileşim: 1 numaralı ok doğadan insana, 2 numaralı ok insandan doğaya', 18)
 
 
+def kent_krokisi():
+    """Kıyı kenti krokisi: 1 liman, 2 seralar, 3 bakır madeni, 4 taş evler (yalnız 4 yerleşme coğrafyası)."""
+    ic = f'<rect x="4" y="4" width="352" height="132" rx="8" fill="#eef6e4" stroke="{GRI}" stroke-width="1.2"/>'
+    ic += f'<path d="M12 4 H96 Q78 40 92 70 T84 136 H12 a8 8 0 0 1 -8 -8 V12 a8 8 0 0 1 8 -8 Z" fill="{SU}" opacity=".55"/>'
+    ic += yazi(40, 74, 'Deniz', 11, '#155a8a', 'middle', True)
+    ic += f'<path d="M150 136 C170 100 230 92 260 60 S330 30 356 26" fill="none" stroke="#d6c7a1" stroke-width="7" stroke-linecap="round"/>'
+    # 1 liman: iskele, gemi, vinç
+    ic += f'<rect x="86" y="30" width="40" height="8" fill="{KAHVE}"/><path d="M58 40 H92 L86 50 H64 Z" fill="{KIR}"/><rect x="70" y="33" width="10" height="7" fill="#fff" stroke="{KIR}"/>'
+    ic += f'<path d="M112 30 V10 H132 M112 12 L128 30" fill="none" stroke="{LAC}" stroke-width="2"/><line x1="130" y1="10" x2="130" y2="20" stroke="{LAC}" stroke-width="1.2"/>'
+    # 2 seralar
+    for k in range(3):
+        x = 150 + k * 26
+        ic += f'<path d="M{x} 112 V100 Q{x + 11} 86 {x + 22} 100 V112 Z" fill="#e6f5ff" stroke="{CAM}" stroke-width="1.4"/><line x1="{x + 11}" y1="93" x2="{x + 11}" y2="112" stroke="{CAM}" stroke-width="1"/>'
+    # 3 bakır madeni: tepe ve ocak ağzı
+    ic += f'<path d="M266 70 L298 34 L332 70 Z" fill="#b9a68a"/><path d="M290 70 V58 a8 8 0 0 1 16 0 V70 Z" fill="{LAC}"/><path d="M314 48 l10 -10 M318 38 l8 8" stroke="{TUR}" stroke-width="2.2" stroke-linecap="round"/>'
+    # 4 taş evler
+    for k, (x, y) in enumerate([(196, 40), (218, 36), (206, 58)]):
+        ic += f'<rect x="{x}" y="{y}" width="18" height="14" fill="#d9d2c4" stroke="{SOLUK}" stroke-width="1"/><path d="M{x - 2} {y} L{x + 9} {y - 9} L{x + 20} {y} Z" fill="{KIR}"/><rect x="{x + 6}" y="{y + 6}" width="6" height="8" fill="{SOLUK}"/>'
+    for no, x, y, ad, hx, hiza in [(1, 100, 58, 'Liman', 112, 'start'), (2, 136, 104, 'Seralar', 189, 'middle'), (3, 299, 86, 'Bakır madeni', 299, 'middle'), (4, 182, 52, 'Taş evler', 214, 'middle')]:
+        ic += rozet(x, y, str(no), LAC)
+        ty = {1: 62, 2: 126, 3: 86 + 18, 4: 86}[no]
+        ic += yazi(hx if no != 3 else 299, ty, ad, 11, LAC, hiza)
+    return svg(360, 140, ic, 'Kıyı kenti krokisi: 1 liman, 2 seralar, 3 bakır madeni, 4 taş evler mahallesi', 32)
+
+
 def uygula(o):
     s = o['sorular']
     s[0]['gorsel'] = manzara()
@@ -132,3 +157,4 @@ def uygula(o):
     s[7]['gorsel'] = soru_kartlari()
     s[9]['gorsel'] = teras()
     s[11]['gorsel'] = etkilesim()
+    s[13]['gorsel'] = kent_krokisi()
