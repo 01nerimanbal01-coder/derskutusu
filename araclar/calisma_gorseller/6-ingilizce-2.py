@@ -67,7 +67,7 @@ def piknik_kartlari():
         elif i == 1:  # sandviç
             ic += f'<path d="M{cx - 16} 40 h32 v-4 a16 8 0 0 0 -32 0 z" fill="#e0a860"/><rect x="{cx - 16}" y="40" width="32" height="5" fill="{YES}"/><rect x="{cx - 16}" y="45" width="32" height="4" fill="{KIR}"/><rect x="{cx - 16}" y="49" width="32" height="7" rx="2" fill="#e0a860"/>'
         elif i == 2:  # uçurtma
-            ic += f'<path d="M{cx} 26 L{cx + 12} 40 L{cx} 56 L{cx - 12} 40 Z" fill="{MAVI}"/><path d="M{cx} 26 V56 M{cx - 12} 40 H{cx + 12}" stroke="#fff" stroke-width="1"/><path d="M{cx} 56 q-6 4 -2 8 q4 3 -3 6" fill="none" stroke="{LAC}" stroke-width="1.2"/>'
+            ic += f'<path d="M{cx} 24 L{cx + 11} 37 L{cx} 50 L{cx - 11} 37 Z" fill="{MAVI}"/><path d="M{cx} 24 V50 M{cx - 11} 37 H{cx + 11}" stroke="#fff" stroke-width="1"/><path d="M{cx} 50 q-5 3 -2 5 q3 2 -2 3" fill="none" stroke="{LAC}" stroke-width="1.2"/>'
         else:  # kitap
             ic += f'<path d="M{cx - 18} 32 h16 v26 h-16 z M{cx + 2} 32 h16 v26 h-16 z" fill="#fff" stroke="{MOR}" stroke-width="1.6"/><path d="M{cx - 2} 32 v26" stroke="{MOR}" stroke-width="2"/>' + ''.join(f'<line x1="{cx - 14}" y1="{y}" x2="{cx - 6}" y2="{y}" stroke="{GRI}" stroke-width="1"/><line x1="{cx + 6}" y1="{y}" x2="{cx + 14}" y2="{y}" stroke="{GRI}" stroke-width="1"/>' for y in (39, 45, 51))
     return svg(360, 78, ic, 'Piknik kartları (şu an): Dad mangal, Mum sandviç, Sister uçurtma, Grandma kitap', 18)
@@ -86,11 +86,11 @@ def canta():
     """Piknik çantası: şapka, güneş gözlüğü, yağmurluk, spor ayakkabı (ad yok)."""
     ic = f'<path d="M20 30 h320 l-12 62 h-296 z" fill="{TUR_A}" stroke="{TUR}" stroke-width="1.6"/><path d="M150 30 v-10 a30 10 0 0 1 60 0 v10" fill="none" stroke="{TUR}" stroke-width="3"/>'
     # şapka
-    ic += f'<path d="M50 60 a18 14 0 0 1 36 0 z" fill="{KIR}"/><path d="M44 60 h56 l4 6 h-64 z" fill="{KIR}"/>'
+    ic += f'<path d="M50 60 a18 14 0 0 1 36 0 z" fill="{KIR}"/><path d="M50 60 h54 l4 6 h-58 z" fill="{KIR}"/>'
     # güneş gözlüğü
     ic += f'<circle cx="138" cy="60" r="11" fill="{LAC}"/><circle cx="168" cy="60" r="11" fill="{LAC}"/><path d="M149 58 h8 M127 56 l-8 -6 M179 56 l8 -6" stroke="{LAC}" stroke-width="2.4"/>'
     # yağmurluk
-    ic += f'<path d="M222 42 h28 l10 8 v30 h-48 v-30 z" fill="{ALTIN}" stroke="#c9960a" stroke-width="1.2"/><path d="M236 42 v38 M228 36 a8 6 0 0 1 16 0" fill="none" stroke="#c9960a" stroke-width="1.4"/>'
+    ic += f'<path d="M212 50 l-8 26 h7 l3 -14 z M260 50 l8 26 h-7 l-3 -14 z" fill="{ALTIN}" stroke="#c9960a" stroke-width="1.2"/><path d="M222 42 h28 l10 8 v30 h-48 v-30 z" fill="{ALTIN}" stroke="#c9960a" stroke-width="1.2"/><path d="M236 42 v38 M226 42 a10 9 0 0 1 20 0" fill="none" stroke="#c9960a" stroke-width="1.4"/>'
     # spor ayakkabı
     ic += f'<path d="M286 72 h48 v6 h-48 z" fill="{LAC}"/><path d="M286 72 v-14 q0 -6 6 -6 h10 l12 12 h20 v8 z" fill="{MAVI}"/><path d="M296 56 l6 6 M302 54 l6 6" stroke="#fff" stroke-width="1.4"/>'
     return svg(360, 100, ic, 'Piknik çantası: şapka, güneş gözlüğü, yağmurluk, spor ayakkabı', 20)
@@ -109,11 +109,11 @@ def uye_karti():
     """Kulüp üye kartı: Ada; tall and slim, long wavy hair, hazel eyes; home: a house with a big garden (fotoğraf yeri boş)."""
     ic = kutu(30, 4, 300, 92, '#fff', CAM, 8, 1.6) + f'<rect x="30" y="4" width="300" height="20" rx="8" fill="{CAM}"/><rect x="30" y="14" width="300" height="10" fill="{CAM}"/>' + yazi(180, 18, 'NATURE CLUB · MEMBER CARD', 11, '#fff')
     ic += kutu(40, 32, 54, 54, GRI_A, GRI, 4, 1.2) + f'<rect x="55" y="52" width="24" height="16" rx="3" fill="none" stroke="{SOLUK}" stroke-width="1.6"/><circle cx="67" cy="60" r="4" fill="none" stroke="{SOLUK}" stroke-width="1.6"/>'
-    satirlar = [('Name:', 'Ada (my cousin)'), ('Looks:', 'tall and slim, long wavy hair'), ('Eyes:', 'hazel'), ('Home:', 'a house with a big garden')]
+    satirlar = [('Name:', 'Ada Demir'), ('Looks:', 'tall and slim, long wavy hair'), ('Eyes:', 'hazel'), ('Home:', 'a house with a big garden')]
     for k, (a, b) in enumerate(satirlar):
         y = 44 + k * 14
         ic += yazi(104, y, a, 10.5, CAM, 'start') + yazi(150, y, b, 10.5, LAC, 'start', True)
-    return svg(360, 100, ic, 'Kulüp üye kartı: Ada (kuzen); tall and slim, long wavy hair, hazel eyes; evinde büyük bahçe', 21)
+    return svg(360, 100, ic, 'Kulüp üye kartı: Ada Demir; tall and slim, long wavy hair, hazel eyes; evinde büyük bahçe', 21)
 
 
 def uygula(o):

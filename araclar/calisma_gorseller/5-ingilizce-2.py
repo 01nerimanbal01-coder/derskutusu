@@ -157,13 +157,13 @@ def agac(x, y, tur):
         ic += f'<circle cx="{x}" cy="{y - 4}" r="15" fill="{dolgu}"/><circle cx="{x - 9}" cy="{y + 2}" r="10" fill="{dolgu}"/><circle cx="{x + 9}" cy="{y + 2}" r="10" fill="{dolgu}"/>'
     if tur == 1:
         ic += ''.join(f'<circle cx="{x + dx}" cy="{y + dy}" r="2.2" fill="#f28ab2"/>' for dx, dy in ((-8, -8), (4, -12), (10, 0), (-12, 4), (0, 2)))
-        ic += ''.join(f'<line x1="{x + dx}" y1="{y - 22}" x2="{x + dx - 3}" y2="{y - 14}" stroke="{MAVI}" stroke-width="1.8" stroke-linecap="round"/>' for dx in (-26, -20, 22, 28))
+        ic += ''.join(f'<line x1="{x + dx}" y1="{y - 22}" x2="{x + dx - 3}" y2="{y - 14}" stroke="{MAVI}" stroke-width="1.8" stroke-linecap="round"/>' for dx in (-20, -14, 22, 28))
     elif tur == 2:
-        ic += f'<circle cx="{x + 28}" cy="{y - 18}" r="7" fill="{ALTIN}"/>' + ''.join(
-            f'<line x1="{x + 28 + 10 * math.cos(k * math.pi / 4):.1f}" y1="{y - 18 + 10 * math.sin(k * math.pi / 4):.1f}" x2="{x + 28 + 13 * math.cos(k * math.pi / 4):.1f}" y2="{y - 18 + 13 * math.sin(k * math.pi / 4):.1f}" stroke="{ALTIN}" stroke-width="1.6"/>' for k in range(8))
+        ic += f'<circle cx="{x + 23}" cy="{y - 23}" r="7" fill="{ALTIN}"/>' + ''.join(
+            f'<line x1="{x + 23 + 10 * math.cos(k * math.pi / 4):.1f}" y1="{y - 23 + 10 * math.sin(k * math.pi / 4):.1f}" x2="{x + 23 + 13 * math.cos(k * math.pi / 4):.1f}" y2="{y - 23 + 13 * math.sin(k * math.pi / 4):.1f}" stroke="{ALTIN}" stroke-width="1.6"/>' for k in range(8))
     elif tur == 3:
         ic += ''.join(f'<ellipse cx="{x + dx}" cy="{y + dy}" rx="3.2" ry="2" transform="rotate(-30 {x + dx} {y + dy})" fill="{KIR}"/>' for dx, dy in ((-24, 6), (-30, 16), (22, 12), (28, 22)))
-        ic += f'<path d="M{x - 34} {y - 16} h14 M{x - 30} {y - 10} h10 M{x + 20} {y - 20} h14" fill="none" stroke="{GRI}" stroke-width="1.8" stroke-linecap="round"/>'
+        ic += f'<path d="M{x - 26} {y - 16} h14 M{x - 30} {y - 10} h10 M{x + 20} {y - 20} h14" fill="none" stroke="{GRI}" stroke-width="1.8" stroke-linecap="round"/>'
     return ic
 
 

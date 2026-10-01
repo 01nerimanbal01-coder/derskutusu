@@ -115,9 +115,9 @@ def deniz_afisi():
 
 
 def plaj_tabelasi():
-    """Plaj tabelası: 1 kırmızı bayrak (yasak), 2 çöp kutusu (temiz tut), 3 su şişesi ve güneş, 4 kumda çöp (yasak)."""
-    ic = kutu(4, 4, 352, 62, '#fff', LAC, 6, 1.6) + f'<rect x="4" y="4" width="352" height="14" rx="6" fill="{LAC}"/><rect x="4" y="12" width="352" height="6" fill="{LAC}"/>' + yazi(180, 14.5, 'BEACH RULES', 9.5, '#fff')
-    renk = [KIR, YES, TUR, KIR]
+    """Plaj tabelası: 1 kırmızı bayrak (yasak), 2 çöp kutusu (temiz tut), 3 su şişesi ve güneş, 4 güneş ve 12:00 gösteren saat."""
+    ic = kutu(4, 4, 352, 62, '#fff', LAC, 6, 1.6) + f'<rect x="4" y="4" width="352" height="14" rx="6" fill="{LAC}"/><rect x="4" y="12" width="352" height="6" fill="{LAC}"/>' + yazi(180, 14.5, 'AT THE BEACH', 9.5, '#fff')
+    renk = [KIR, YES, TUR, TUR]
     for i in range(4):
         cx = 48 + i * 88
         ic += rozet(cx - 30, 40, str(i + 1), renk[i], 7)
@@ -129,10 +129,10 @@ def plaj_tabelasi():
         elif i == 2:  # su şişesi + güneş
             ic += (f'<rect x="{cx - 6}" y="30" width="12" height="28" rx="3" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.5"/><rect x="{cx - 3}" y="24" width="6" height="6" fill="{MAVI}"/>'
                    f'<circle cx="{cx + 20}" cy="30" r="6" fill="{ALTIN}"/>' + ''.join(f'<line x1="{cx + 20 + 8 * math.cos(k * math.pi / 4):.1f}" y1="{30 + 8 * math.sin(k * math.pi / 4):.1f}" x2="{cx + 20 + 11 * math.cos(k * math.pi / 4):.1f}" y2="{30 + 11 * math.sin(k * math.pi / 4):.1f}" stroke="{ALTIN}" stroke-width="1.4"/>' for k in range(8)))
-        else:  # kumda çöp, yasak dairesi
-            ic += (f'<rect x="{cx - 16}" y="50" width="34" height="8" fill="{KUM}"/><path d="M{cx - 6} 50 l3 -8 l6 3 l4 -5 l3 10 z" fill="{GRI}"/>'
-                   f'<circle cx="{cx}" cy="42" r="15" fill="none" stroke="{KIR}" stroke-width="2.4"/><line x1="{cx - 10.5}" y1="31.5" x2="{cx + 10.5}" y2="52.5" stroke="{KIR}" stroke-width="2.4"/>')
-    return svg(360, 70, ic, 'Plaj tabelası: 1 kırmızı bayrak, 2 çöp kutusu ve ok, 3 su şişesi ve güneş, 4 kumdaki çöp yasak işaretiyle', 16)
+        else:  # öğle güneşi ve 12:00 gösteren saat
+            ic += (f'<circle cx="{cx - 8}" cy="33" r="6" fill="{ALTIN}"/>' + ''.join(f'<line x1="{cx - 8 + 8 * math.cos(k * math.pi / 4):.1f}" y1="{33 + 8 * math.sin(k * math.pi / 4):.1f}" x2="{cx - 8 + 11 * math.cos(k * math.pi / 4):.1f}" y2="{33 + 11 * math.sin(k * math.pi / 4):.1f}" stroke="{ALTIN}" stroke-width="1.4"/>' for k in range(8))
+                   + kutu(cx + 4, 42, 30, 14, '#fff', LAC, 2, 1.2) + yazi(cx + 19, 52.5, '12:00', 9.5, LAC))
+    return svg(360, 70, ic, 'Plaj tabelası: 1 kırmızı bayrak, 2 çöp kutusu ve ok, 3 su şişesi ve güneş, 4 güneş ve 12:00 gösteren saat', 16)
 
 
 def boy_grafigi():
