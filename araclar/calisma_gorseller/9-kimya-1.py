@@ -120,6 +120,38 @@ def yemekler():
     return svg(360, 76, ic, '1. yemek: sosun pH değeri 5,2, pişirme sıcaklığı 250 °C. 2. yemek: sosun pH değeri 6,1, pişirme sıcaklığı 150 °C.', 19)
 
 
+def deney():
+    """Folyo deneyi: 1 parlak yüz dışta, 2 mat yüz dışta; aynı ısıtıcı, termometre, kronometre."""
+    ic = ''
+    for i, (x, dolgu, ad) in enumerate([(95, '#eef2f7', 'Parlak yüz dışta'), (265, '#aeb6c2', 'Mat yüz dışta')]):
+        ic += f'<rect x="{x - 34}" y="100" width="68" height="14" rx="3" fill="{SOLUK}"/>' + ''.join(f'<line x1="{x - 24 + 12 * k}" y1="104" x2="{x - 18 + 12 * k}" y2="110" stroke="{KIR}" stroke-width="1.6"/>' for k in range(4))
+        ic += f'<rect x="{x - 26}" y="46" width="52" height="54" rx="3" fill="{dolgu}" stroke="{GRI}" stroke-width="1.3"/>'
+        if i == 0:
+            ic += ''.join(f'<line x1="{x - 20 + 14 * k}" y1="96" x2="{x - 8 + 14 * k}" y2="52" stroke="#fff" stroke-width="2.4"/>' for k in range(3))
+        else:
+            ic += ''.join(f'<circle cx="{x - 18 + 9 * (k % 5)}" cy="{56 + 10 * (k // 5)}" r="1.1" fill="#8b94a3"/>' for k in range(20))
+        ic += f'<rect x="{x - 2}" y="18" width="5" height="70" rx="2.5" fill="#fff" stroke="{LAC}" stroke-width="1.1"/><rect x="{x - 0.5}" y="52" width="2" height="34" fill="{KIR}"/><circle cx="{x + 0.5}" cy="88" r="5" fill="{KIR}"/>'
+        ic += rozet(x - 52, 132, str(i + 1), MAVI) + yazi(x - 38, 136, ad, 11.5, LAC, 'start', True)
+    ic += f'<circle cx="180" cy="66" r="15" fill="#fff" stroke="{LAC}" stroke-width="1.6"/><rect x="176" y="45" width="8" height="5" rx="1" fill="{LAC}"/><line x1="180" y1="66" x2="180" y2="56" stroke="{TUR}" stroke-width="1.8"/><line x1="180" y1="66" x2="187" y2="70" stroke="{LAC}" stroke-width="1.4"/>'
+    ic += yazi(180, 96, 'Kronometre', 11, SOLUK, 'middle', True)
+    return svg(360, 142, ic, 'Folyo deneyi: 1. düzenekte beherglası saran folyonun parlak yüzü, 2. düzenekte mat yüzü dışta; ikisinde de ısıtıcı ve termometre var; ortada kronometre.', 30)
+
+
+def filtre():
+    """Pet şişeden su filtresi: yukarıdan aşağı çakıl, kum, odun kömürü, kumaş."""
+    ic = f'<path d="M120 22 h80 v88 l-28 16 h-24 l-28 -16 Z" fill="#fff" stroke="{GRI}" stroke-width="1.4"/>'
+    ic += ''.join(f'<circle cx="{128 + 11 * (k % 7)}" cy="{32 + 9 * (k // 7)}" r="4.2" fill="#c9cfd8" stroke="{GRI}" stroke-width=".7"/>' for k in range(14))
+    ic += '<rect x="121" y="50" width="78" height="24" fill="#f6dd9a"/>' + ''.join(f'<circle cx="{126 + 7 * (k % 11)}" cy="{55 + 7 * (k // 11)}" r="1" fill="#b98a2a"/>' for k in range(33))
+    ic += '<rect x="121" y="74" width="78" height="22" fill="#3b3f47"/>'
+    ic += f'<path d="M121 96 h78 v13 l-28 16 h-22 l-28 -16 Z" fill="{MOR_A}" stroke="{MOR}" stroke-width="1"/>'
+    for y, ad in [(39, 'Çakıl'), (65, 'Kum'), (88, 'Odun kömürü'), (108, 'Kumaş')]:
+        ic += f'<line x1="203" y1="{y - 4}" x2="222" y2="{y - 4}" stroke="{GRI}" stroke-width="1"/>' + yazi(228, y, ad, 11.5, LAC, 'start', True)
+    ic += yazi(96, 14, 'Bulanık su', 11.5, SOLUK, 'end', True) + ok(100, 10, 140, 18, CAM, 1.6)
+    ic += f'<path d="M160 128 q-3 5 0 7 q3 -2 0 -7 Z" fill="{CAM}"/><path d="M144 140 h32 l-4 20 h-24 Z" fill="{CAM_A}" stroke="{CAM}" stroke-width="1.2"/>'
+    ic += yazi(138, 156, 'Süzülen su', 11.5, SOLUK, 'end', True)
+    return svg(360, 164, ic, 'Pet şişeden su filtresi: yukarıdan aşağı çakıl, kum, odun kömürü ve kumaş katmanları; bulanık su yukarıdan dökülür, süzülen su bardakta toplanır.', 32)
+
+
 def uygula(o):
     s = o['sorular']
     s[0]['gorsel'] = maddeler()
@@ -128,3 +160,5 @@ def uygula(o):
     s[5]['gorsel'] = calisma_kartlari()
     s[9]['gorsel'] = cevre()
     s[11]['gorsel'] = yemekler()
+    s[12]['gorsel'] = deney()
+    s[13]['gorsel'] = filtre()
