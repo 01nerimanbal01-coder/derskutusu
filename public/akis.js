@@ -48,6 +48,7 @@ function icerikKarti(i, dersler) {
     el('h3', {}, i.baslik),
     i.aciklama && el('p', {}, i.aciklama),
     i.hazirla ? el('a', { sinif: 'ac', href: `/${i.hazirla}` }, 'Hazırla ve indir', simge('ok'))
+      : i.goruntule ? el('a', { sinif: 'ac', href: `/${i.goruntule}` }, 'Aç', simge('ok'))
       : adres && el('a', { sinif: 'ac', href: adres, target: i.dosya ? null : '_blank', rel: 'noopener', download: i.dosya ? '' : null },
         i.dosya ? 'İndir' : 'Aç', simge('ok')));
 }

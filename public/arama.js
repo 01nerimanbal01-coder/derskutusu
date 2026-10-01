@@ -132,6 +132,7 @@ const Arama = (() => {
     { ad: 'Video', ob: ['video', 'youtube'], tur: 'Video' },
     { ad: 'Test', ob: ['test', 'deneme'], tur: 'Test' },
     { ad: 'Çalışma kâğıdı', ob: ['calisma kagidi', 'etkinlik kagidi'], tur: 'Çalışma kâğıdı' },
+    { ad: 'Kelime çalışması', ob: ['kelime', 'kelimeler', 'kelime calismasi', 'kelime kartlari', 'sozcuk', 'vocabulary', 'words'], tur: 'Kelime çalışması' },
     { ad: 'Ortak yazılı', ob: ['ortak yazili', 'yazili', 'konu soru dagilim', 'soru dagilim', 'konu soru dagilimi', 'dagilim tablosu', 'senaryo'], grup: 'yazili', turler: ['Yazılı soruları', 'Yazılı senaryosu'] },
     { ad: 'LGS', ob: ['lgs', 'liselere gecis', 'liseye gecis', 'lise sinavi', 'merkezi sinav'], grup: 'lgs', sinif: 8 },
     { ad: 'YKS', ob: ['yks', 'tyt', 'ayt', 'ydt', 'universite sinavi', 'osym'], grup: 'yks', siniflar: [11, 12] },

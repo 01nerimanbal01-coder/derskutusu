@@ -466,6 +466,8 @@ def web_sayfasi(o, ad, plan=None):
     baslik = f'{o["sinif"]}. Sınıf {ders} {o["hafta"]}. Hafta Çalışma Kâğıdı: {o["konu"]}'
     ozet = f'ozet/{o["sinif"]}-{o["ders"]}-hafta-{o["hafta"]}.html'
     ozet_bag = f'<a class="dugme" href="/{ozet}">Konu özeti</a>' if (PUBLIC / ozet).exists() else ''
+    if o['ders'] == 'ingilizce' and o['sinif'] in (5, 6):   # kelime.html (veri/kelimeler.json yalnız 5 ve 6)
+        ozet_bag += f'\n        <a class="dugme" href="/kelime.html?s={o["sinif"]}"><svg><use href="#s-ses"/></svg>Kelime çalış</a>'
     govde = f'''  <link rel="stylesheet" href="/calisma.css?v={ozet_uret._sayfa.SURUM}">
   <section class="sayfa-bas ck-web-bas">
     <div class="kap">

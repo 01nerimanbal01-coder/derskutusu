@@ -381,6 +381,31 @@ GOVDE['planlar.html'] = ('Günlük planlar', 'Günlük ders planları: Okul, ö�
     </div>
   </section>''', ('planlar.js',))
 
+GOVDE['kelime.html'] = ('İngilizce kelime çalışması', '5 ve 6. sınıf İngilizce kelimeleri: kartlar, sesli dinleme, test, yazma ve eşleştirme. Kelimeler MEB ders kitaplarının sözlük bölümünden.', '''  <section class="sayfa-bas kelime-bas">
+    <div class="kap">
+      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/#icerikler">İçerikler</a><span aria-hidden="true">/</span><span>İngilizce kelimeler</span></nav>
+      <h1>İngilizce kelime çalışması</h1>
+      <p>Ders kitabındaki kelimeleri kartlarla öğren, sesli dinle, test çöz, yazarak pekiştir ve eşleştir. Kelimeler MEB İngilizce ders kitaplarının sözlük bölümünden alınmıştır.</p>
+      <nav class="sekmeler" id="k-sinif" aria-label="Sınıf"></nav>
+    </div>
+  </section>
+  <section class="bolum kelime-bolum">
+    <div class="kap">
+      <div class="kelime-ust">
+        <label class="kelime-tema">Tema<select id="k-tema"></select></label>
+        <div class="kelime-ilerleme" aria-label="Bu temada öğrendiğin kelimeler">
+          <span>Öğrendiğin: <b id="k-ilerleme-sayi">0 / 0</b></span>
+          <span class="kelime-cubuk" aria-hidden="true"><i id="k-ilerleme-cubuk"></i></span>
+          <button type="button" class="cip-dugme" id="k-sifirla">Sıfırla</button>
+        </div>
+      </div>
+      <nav class="sekmeler kelime-kipler" id="k-kipler" aria-label="Çalışma biçimi"></nav>
+      <h2 class="kelime-baslik" id="k-tema-baslik"></h2>
+      <div id="k-alan" class="kelime-alan" aria-live="polite"></div>
+      <p class="kelime-not">İlerlemen yalnız bu tarayıcıda tutulur, hiçbir yere gönderilmez. Sesler tarayıcının kendi okuma özelliğiyle çıkar.</p>
+    </div>
+  </section>''', ('kelime.js',))
+
 GOVDE['sinav.html'] = ('Sınavlar: LGS ve YKS', 'LGS ve YKS: oturumlar, testler, soru sayıları ve süreler; çıkmış sorular, kılavuzlar ve hazırlık kaynakları.', _sinav_govde(), ())
 
 for ad, (baslik, aciklama, govde, betikler) in GOVDE.items():
