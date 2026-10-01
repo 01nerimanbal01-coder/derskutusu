@@ -489,7 +489,7 @@ def web_sayfasi(o, ad, plan=None):
     (PUBLIC / 'calisma' / f'{ad}.html').write_text(sayfa(f'calisma/{ad}.html', baslik, aciklama, govde), encoding='utf-8')
     return {'sinif': o['sinif'], 'ders': o['ders'], 'tur': 'Çalışma kâğıdı', 'kitle': 'ogrenci', 'baslik': baslik,
             'aciklama': f'{len(o["sorular"])} soruluk, görselli çalışma kâğıdı; cevapsız ve cevaplı PDF.', 'goruntule': f'calisma/{ad}.html',
-            'dosya': f'calisma/pdf/{ad}.pdf', 'kaynak': 'Ders Kutusu', 'hafta': o['hafta'], 'tarih': '2026-09-29'}
+            'dosya': f'calisma/pdf/{ad}.pdf', 'kaynak': 'Ders Kutusu', 'hafta': o['hafta'], 'tarih': o.get('yayin_tarihi', '2026-09-29')}
 
 
 def main():

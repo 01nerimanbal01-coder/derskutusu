@@ -1,0 +1,222 @@
+{
+ "sinif": 7,
+ "ders": "matematik",
+ "hafta": 2,
+ "tarih": "21-25 Eylül 2026",
+ "unite": "Sayılar ve Nicelikler (1)",
+ "konu": "Rasyonel Sayıları Farklı Biçimlerde Gösterme ve Yorumlama",
+ "ciktilar": [
+  "MAT.7.1.1. Gerçek yaşam ya da matematiksel durumlarda doğal sayı, tam sayı ve rasyonel sayıları yorumlayabilme"
+ ],
+ "giris": "Bir sayı, görünüşleri farklı kesirlerle aynı değeri gösterebilir. Bu hafta rasyonel sayıların işaretini, sayı doğrusundaki yerini ve farklı gösterimler arasındaki ilişkiyi açıklayacağız. İlk haftadaki sayı kümeleri bilgisini yeni örneklerle pekiştireceğiz.",
+ "bolumler": [
+  {
+   "baslik": "Rasyonel sayı olmanın koşulu",
+   "metin": [
+    "a ve b tam sayı, b sıfırdan farklı olmak üzere {kesir:a|b} biçiminde yazılabilen sayılar rasyoneldir. Pay sıfır olabilir; payda sıfır olamaz.",
+    "{kesir:0|7} = 0’dır. Buna karşılık {kesir:7|0} tanımsızdır. Sıfırla hangi sayı çarpılırsa çarpılsın 7 elde edilemeyeceği için ikinci bölmeye bir sonuç verilemez.",
+    "Her tam sayı paydası 1 olacak biçimde yazılabilir. −6 = {kesir:−6|1} olduğundan −6 hem tam sayı hem rasyoneldir. Tam sayı olmayan rasyonel sayılar da vardır; {kesir:3|4} buna örnektir."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "metin": "Rasyonel sayıyı tanımlarken paydanın sıfırdan farklı olması koşulu atlanmaz."
+   }
+  },
+  {
+   "baslik": "Denk gösterimler aynı noktayı anlatır",
+   "metin": [
+    "{kesir:2|3}, {kesir:4|6} ve {kesir:10|15} aynı büyüklüğü gösterir. Sayı doğrusunda farklı yerlere değil, aynı noktaya karşılık gelirler.",
+    "Pay ile payda aynı sıfırdan farklı sayıyla çarpıldığında ya da ortak bölenleriyle bölündüğünde değer korunur. Pay ve paydanın 1 dışında ortak böleni kalmadığında en sade biçime ulaşılır.",
+    "Kesrin görünüşü, sayının mutlaka tam sayı olmadığını göstermez. {kesir:18|6} = 3 olduğu için bu gösterim bir doğal sayıyı, tam sayıyı ve rasyonel sayıyı aynı anda ifade eder."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "metin": "Sayı kümelerini belirlemeden önce gösterimin değerini düşününüz."
+   },
+   "gorsel": "<svg viewBox=\"0 0 470 219\" role=\"img\" aria-label=\"Farklı gösterim, aynı değer\"><text x=\"235\" y=\"22\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">Farklı gösterim, aynı değer</text><rect x=\"18\" y=\"34\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"53\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Dört bölü altı</text><text x=\"32\" y=\"71\" font-size=\"12\" class=\"g-y\">Pay ve paydayı 2’ye böl.</text><path d=\"M235 82v9m-4-4 4 4 4-4\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><rect x=\"18\" y=\"93\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"112\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">İki bölü üç</text><text x=\"32\" y=\"130\" font-size=\"12\" class=\"g-y\">En sade gösterim.</text><path d=\"M235 141v9m-4-4 4 4 4-4\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><rect x=\"18\" y=\"152\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"171\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">On bölü on beş</text><text x=\"32\" y=\"189\" font-size=\"12\" class=\"g-y\">Pay ve paydayı 5’e böl; yine İki bölü üç.</text></svg>"
+  },
+  {
+   "baslik": "Eksi işareti ve sıfıra uzaklık",
+   "metin": [
+    "Negatif bir rasyonel sayıda eksi işareti kesrin önünde, payında veya paydasında bulunabilir: −{kesir:3|5} = {kesir:−3|5} = {kesir:3|−5}.",
+    "Sayı doğrusunda negatif sayılar sıfırın solunda, pozitif sayılar sağındadır. Bir sayının mutlak değeri, sayı doğrusundaki noktasının sıfıra uzaklığıdır; uzaklık negatif olmaz.",
+    "−{kesir:3|2} ile {kesir:3|2} sıfırın iki yanında eşit uzaklıkta bulunur. Bu sayıların mutlak değerleri eşittir, sayılar ise birbirinden farklıdır."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "metin": "Eşit mutlak değer, sayıların mutlaka eşit olması demek değildir."
+   },
+   "gorsel": "<svg viewBox=\"0 0 470 150\" role=\"img\" aria-label=\"Eş aralıklı sayı doğrusunda eksi üç bölü iki, sıfır ve üç bölü iki\"><path d=\"M25 65H445m-7-5 7 5-7 5m-406-10-7 5 7 5\" class=\"g-ms\" fill=\"none\" stroke-width=\"2\"/><line x1=\"45.0\" y1=\"58\" x2=\"45.0\" y2=\"72\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"45.0\" y=\"96\" text-anchor=\"middle\" font-size=\"14\" class=\"g-y\">-2</text><line x1=\"92.5\" y1=\"58\" x2=\"92.5\" y2=\"72\" class=\"g-ms\" stroke-width=\"2\"/><line x1=\"140.0\" y1=\"58\" x2=\"140.0\" y2=\"72\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"140.0\" y=\"96\" text-anchor=\"middle\" font-size=\"14\" class=\"g-y\">-1</text><line x1=\"187.5\" y1=\"58\" x2=\"187.5\" y2=\"72\" class=\"g-ms\" stroke-width=\"2\"/><line x1=\"235.0\" y1=\"58\" x2=\"235.0\" y2=\"72\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"235.0\" y=\"96\" text-anchor=\"middle\" font-size=\"14\" class=\"g-y\">0</text><line x1=\"282.5\" y1=\"58\" x2=\"282.5\" y2=\"72\" class=\"g-ms\" stroke-width=\"2\"/><line x1=\"330.0\" y1=\"58\" x2=\"330.0\" y2=\"72\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"330.0\" y=\"96\" text-anchor=\"middle\" font-size=\"14\" class=\"g-y\">1</text><line x1=\"377.5\" y1=\"58\" x2=\"377.5\" y2=\"72\" class=\"g-ms\" stroke-width=\"2\"/><line x1=\"425.0\" y1=\"58\" x2=\"425.0\" y2=\"72\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"425.0\" y=\"96\" text-anchor=\"middle\" font-size=\"14\" class=\"g-y\">2</text><circle cx=\"92.5\" cy=\"65\" r=\"6\" class=\"g-tf\"/><text x=\"92.5\" y=\"42\" text-anchor=\"middle\" font-size=\"15\" class=\"g-y\">−1,5</text><circle cx=\"377.5\" cy=\"65\" r=\"6\" class=\"g-tf\"/><text x=\"377.5\" y=\"42\" text-anchor=\"middle\" font-size=\"15\" class=\"g-y\">1,5</text><text x=\"235\" y=\"132\" text-anchor=\"middle\" font-size=\"13\" class=\"g-y\">İki noktanın da sıfıra uzaklığı 1,5 birimdir.</text></svg>"
+  },
+  {
+   "baslik": "Sayı doğrusuna yerleştirmek",
+   "metin": [
+    "Önce sayının işaretine ve hangi iki tam sayı arasında olduğuna bakılır. Örneğin {kesir:7|4}, 1 ile 2 arasındadır. Birim aralık dört eş parçaya ayrılır; 1’den sonra üç parça ilerlenir.",
+    "−{kesir:7|4}, −2 ile −1 arasındadır. Sıfırdan sola doğru çeyrek birimlik yedi adım ilerlenerek bulunabilir. Her rasyonel sayı, sayı doğrusunda belirli bir noktaya karşılık gelir.",
+    "Bölmeler eşit olmalıdır. Birim aralık düzgün paylaşılmazsa noktaya yazılan kesir o konumu doğru ifade etmez."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "metin": "Payda birimin kaç eş parçaya ayrıldığını, pay ise bu parçalardan kaçının alındığını gösterir."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "{kesir:−24|8} hangi sayı kümelerinde yer alır?",
+   "cevap": "Değeri −3’tür. Tam sayıdır ve rasyoneldir; doğal sayı değildir."
+  },
+  {
+   "soru": "{kesir:0|−9} ile {kesir:−9|0} aynı mıdır?",
+   "cevap": "Hayır. İlk ifade 0’dır; ikinci ifade paydası 0 olduğu için tanımsızdır."
+  },
+  {
+   "soru": "{kesir:15|25} ve {kesir:6|10} sayı doğrusunda aynı noktada mıdır?",
+   "cevap": "Evet. İkisi de sadeleştirilince {kesir:3|5} olur."
+  },
+  {
+   "soru": "−{kesir:9|4} hangi ardışık tam sayılar arasındadır?",
+   "cevap": "−{kesir:9|4} = −2,25 olduğundan −3 ile −2 arasındadır."
+  },
+  {
+   "soru": "Sıfırın solunda {kesir:5|2} birim uzaklıktaki sayı ve bu sayının mutlak değeri nedir?",
+   "cevap": "Sayı −{kesir:5|2}; mutlak değeri {kesir:5|2}’dir."
+  },
+  {
+   "soru": "{kesir:3|5} sayısını sayı doğrusunda göstermek için 0 ile 1 arası nasıl bölünür?",
+   "cevap": "Aralık beş eş parçaya bölünür. Sıfırdan sağa doğru üçüncü bölme noktası seçilir."
+  }
+ ],
+ "ozet": [
+  "Rasyonel sayıda pay ve payda tam sayı, payda sıfırdan farklıdır.",
+  "Denk kesirler sayı doğrusunda aynı noktayı gösterir.",
+  "Her tam sayı rasyoneldir; her rasyonel sayı tam sayı değildir.",
+  "Mutlak değer sıfıra uzaklıktır; sayı doğrusunda eş bölmeler kullanılır."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Bir ölçüm kartında {kesir:−18|6} yazıyor. Kartın değeri hangi açıklamaya uyar?",
+   "secenekler": [
+    "Doğal sayıdır.",
+    "Negatif tam sayıdır.",
+    "Tanımsızdır.",
+    "Pozitif rasyonel sayıdır."
+   ],
+   "dogru": 1,
+   "aciklama": "{kesir:−18|6} = −3’tür."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Hangi iki kart sayı doğrusunda aynı noktayı gösterir?",
+   "secenekler": [
+    "{kesir:2|5} ve {kesir:4|5}",
+    "{kesir:3|4} ve {kesir:9|12}",
+    "{kesir:−1|2} ve {kesir:1|2}",
+    "{kesir:5|0} ve {kesir:0|5}"
+   ],
+   "dogru": 1,
+   "aciklama": "{kesir:9|12} sadeleşince {kesir:3|4} olur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir nokta sıfırdan sola doğru beş yarım birim uzaklıktadır. Hangi sayı gösterilir?",
+   "secenekler": [
+    "{kesir:5|2}",
+    "{kesir:−5|2}",
+    "{kesir:−2|5}",
+    "{kesir:2|5}"
+   ],
+   "dogru": 1,
+   "aciklama": "Sola ilerleme negatiftir; beş yarım birim {kesir:5|2}’dir."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Her yargıyı değerlendiriniz. Yanlış yargının açıklamasını okuyunuz.",
+   "ifadeler": [
+    {
+     "metin": "{kesir:0|11} bir rasyonel sayıdır.",
+     "dogru": true,
+     "aciklama": "Değeri 0’dır ve payda sıfır değildir."
+    },
+    {
+     "metin": "{kesir:11|0} bir rasyonel sayıdır.",
+     "dogru": false,
+     "aciklama": "Payda sıfır olamaz."
+    },
+    {
+     "metin": "−4 sayısı {kesir:−4|1} biçiminde yazılabilir.",
+     "dogru": true,
+     "aciklama": "Her tam sayı paydası 1 olan kesirle gösterilebilir."
+    },
+    {
+     "metin": "{kesir:−3|2} ile {kesir:3|2}’nin mutlak değerleri eşittir.",
+     "dogru": true,
+     "aciklama": "İkisi de sıfıra {kesir:3|2} birim uzaklıktadır."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Birbiriyle ilişkili kavram ve açıklamaları eşleştiriniz.",
+   "ciftler": [
+    [
+     "{kesir:12|4}",
+     "3"
+    ],
+    [
+     "{kesir:−12|4}",
+     "−3"
+    ],
+    [
+     "{kesir:0|4}",
+     "0"
+    ],
+    [
+     "{kesir:4|0}",
+     "Tanımsız"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Denk kesirler sayı doğrusunda ___ noktayı gösterir.",
+     "cevap": "aynı"
+    },
+    {
+     "metin": "Bir sayının sıfıra uzaklığına ___ değer denir.",
+     "cevap": "mutlak"
+    },
+    {
+     "metin": "Rasyonel sayılarda payda ___ olamaz.",
+     "cevap": "sıfır"
+    }
+   ],
+   "fazla": [
+    "farklı"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "{kesir:−8|12} ile {kesir:−2|3}’ün aynı sayıyı gösterdiğini açıklayınız.",
+   "ipuclari": [
+    "Pay ile paydanın ortak bölenini bulunuz.",
+    "İşaretin korunduğuna dikkat ediniz."
+   ],
+   "cevap": "{kesir:−8|12}’nin payı ve paydası 4’e bölünürse {kesir:−2|3} elde edilir. Bu nedenle iki gösterim aynı değeri ve sayı doğrusunda aynı noktayı ifade eder."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "“Mutlak değeri {kesir:3|4} olan yalnız bir sayı vardır.” yargısını değerlendiriniz.",
+   "ipuclari": [
+    "Sıfırın her iki yanını düşününüz.",
+    "Aynı uzaklıktaki iki noktayı yazınız."
+   ],
+   "cevap": "Yargı yanlıştır. {kesir:−3|4} ve {kesir:3|4} sayılarının ikisi de sıfıra {kesir:3|4} birim uzaktadır."
+  }
+ ],
+ "yayin_tarihi": "2026-10-01"
+}

@@ -1,0 +1,222 @@
+{
+ "sinif": 5,
+ "ders": "matematik",
+ "hafta": 2,
+ "tarih": "21-25 Eylül 2026",
+ "unite": "Geometrik Şekiller",
+ "konu": "Geometrik Çizimlerden Özelliklere: Dikme, Paralellik ve Eş Uzunluk",
+ "ciktilar": [
+  "MAT.5.3.2. Temel geometrik çizimlere dayalı deneyimlerini yansıtabilme"
+ ],
+ "giris": "Bir çizimin doğru görünmesi yeterli değildir; hangi özelliği taşıdığını da açıklayabilmeliyiz. Bu hafta doğru, dikme ve çember çizimlerinden yararlanarak geometrik ilişkileri inceleyeceğiz.",
+ "bolumler": [
+  {
+   "baslik": "Bir noktadan ve iki noktadan geçen doğrular",
+   "metin": [
+    "Bir noktadan farklı yönlerde doğrular geçirilebilir. Yönü değiştirerek çizime devam edebildiğimiz için tek bir noktadan geçen doğru sayısı sınırlı değildir.",
+    "Birbirinden farklı iki nokta verildiğinde bu iki noktadan geçen yalnız bir doğru vardır. Doğrunun üzerindeki noktaların adları ters sırayla yazılsa da aynı doğru anlatılır.",
+    "Çizim yaparken ölçüsüz cetvel, doğrusal çizgiyi oluşturmaya yardımcı olur. Uzunluk ölçmek gerektiğinde ise ölçekli bir araç kullanılır."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "metin": "Tek nokta doğrunun yönünü belirlemez; farklı iki nokta birlikte belirler."
+   }
+  },
+  {
+   "baslik": "Dikme neden özel bir doğru parçasıdır?",
+   "metin": [
+    "Bir doğrunun dışındaki bir noktadan o doğruya dik çizilen doğru parçasına dikme denir. Gönye dikliği denetlemeye ve dikme çizmeye yardımcı olur.",
+    "Aynı dış noktadan aynı doğruya yalnız bir dikme çizilebilir. Dış noktayı doğrunun başka noktalarına birleştiren eğik parçalar, dikmeden daha uzundur. Dikme, noktadan doğruya en kısa uzaklığı verir.",
+    "Farklı dış noktalardan çizilen dikmelerin uzunlukları eşit de olabilir, farklı da olabilir. Bu nedenle her dikmenin uzunluğunun aynı olduğu söylenemez."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "metin": "Diklik çizginin sayfada dikey görünmesine göre değil, doğruyla yaptığı açıya göre belirlenir."
+   }
+  },
+  {
+   "baslik": "Paralel doğruları tanımak",
+   "metin": [
+    "Aynı düzlemde aynı doğrultuda uzanan ve aralarındaki uzaklık değişmeyen farklı doğrular paraleldir. Paralellik // işaretiyle gösterilir. {dogru:AB} // {dogru:CD}, “AB doğrusu CD doğrusuna paraleldir.” diye okunur.",
+    "Kâğıtta görünen kısa parçaların kesişmemesi tek başına yeterli değildir. Doğrular iki yönde uzatıldığında da ortak nokta oluşturmamalıdır.",
+    "Paralel iki doğru arasındaki uzaklık, dik doğrultuda ölçülür. Doğruların yönü sayfada döndürülse de paralellik ilişkisi korunur."
+   ],
+   "kutu": {
+    "tur": "bilgi",
+    "metin": "Dik ve paralel ilişkilerini belirlerken cetvel ve gönye çizimi destekler."
+   },
+   "gorsel": "<svg viewBox=\"0 0 470 205\" role=\"img\" aria-label=\"AB ve CD paralel doğruları ile onlara dik EF doğrusu\"><path d=\"M24 64H446m-8-5 8 5-8 5m-406-10-8 5 8 5M24 137H446m-8-5 8 5-8 5m-406-10-8 5 8 5M235 24V178m-5-8 5 8 5-8m-10-138 5-8 5 8\" fill=\"none\" class=\"g-ms\" stroke-width=\"2.5\"/><path d=\"M235 64h14v14h-14M235 137h14v14h-14\" class=\"g-ts\" fill=\"none\" stroke-width=\"2\"/><g class=\"g-y\" font-size=\"15\" font-weight=\"700\"><text x=\"48\" y=\"51\">A</text><text x=\"407\" y=\"51\">B</text><text x=\"48\" y=\"124\">C</text><text x=\"407\" y=\"124\">D</text><text x=\"215\" y=\"40\">E</text><text x=\"215\" y=\"174\">F</text></g><text x=\"235\" y=\"200\" text-anchor=\"middle\" font-size=\"13\" class=\"g-y\">AB // CD · EF her iki doğruya diktir.</text></svg>"
+  },
+  {
+   "baslik": "Pergel açıklığını korumak",
+   "metin": [
+    "Pergelin sivri ucunun bulunduğu nokta çemberin merkezidir. Pergelin açıklığı ise çemberin yarıçapını belirler. Merkezdeki nokta ile çember üzerindeki bütün noktalar aynı uzaklıktadır.",
+    "Pergelin açıklığı değiştirilmeden farklı merkezlerle çizilen çemberlerin yarıçapları eşit olur. Çemberlerin sayfadaki yerlerinin farklı olması bu eşitliği değiştirmez.",
+    "Bir ışın üzerinde aynı pergel açıklığı art arda taşınırsa yan yana eş uzunlukta doğru parçaları elde edilir. Eşitliği sağlayan, her adımda aynı uzaklığın korunmasıdır."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "metin": "Çizimi açıklarken “eşit görünüyor” yerine eşitliği sağlayan aracı ve özelliği belirtiniz."
+   },
+   "gorsel": "<svg viewBox=\"0 0 470 170\" role=\"img\" aria-label=\"Merkezleri O ve K olan, yarıçapları eşit iki çember\"><circle cx=\"125\" cy=\"77\" r=\"55\" class=\"g-ma\"/><circle cx=\"125\" cy=\"77\" r=\"55\" class=\"g-ms\" fill=\"none\" stroke-width=\"2\"/><circle cx=\"345\" cy=\"77\" r=\"55\" class=\"g-ya\"/><circle cx=\"345\" cy=\"77\" r=\"55\" class=\"g-ys\" fill=\"none\" stroke-width=\"2\"/><path d=\"M125 77H180M345 77H400\" class=\"g-ts\" stroke-width=\"2\"/><g class=\"g-y\" font-size=\"15\"><text x=\"110\" y=\"98\">O</text><text x=\"180\" y=\"69\">A</text><text x=\"330\" y=\"98\">K</text><text x=\"400\" y=\"69\">B</text><text x=\"145\" y=\"67\">r</text><text x=\"365\" y=\"67\">r</text></g><text x=\"235\" y=\"157\" text-anchor=\"middle\" font-size=\"13\" class=\"g-y\">Merkez değişse de pergel açıklığı korunursa yarıçap eşittir.</text></svg>"
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "A ve B farklı iki noktadır. Bir çizimde {dogru:AB}, diğerinde {dogru:BA} yazıyor. İki farklı doğru mu adlandırılmıştır?",
+   "cevap": "Hayır. Her ikisi de aynı iki noktadan geçen tek doğruyu adlandırır."
+  },
+  {
+   "soru": "P noktası bir doğrunun dışındadır. P’den doğruya çizilen üç parçadan biri diktir. En kısa parça hangisidir?",
+   "cevap": "Dik olan parçadır. P noktasından doğruya en kısa uzaklık dikmeyle elde edilir."
+  },
+  {
+   "soru": "Paralel doğrular sayfayla birlikte döndürüldüğünde kesişen doğrulara dönüşür mü?",
+   "cevap": "Hayır. Sayfanın yönünün değişmesi, doğrular arasındaki uzaklığı ve paralellik ilişkisini değiştirmez."
+  },
+  {
+   "soru": "Bir çember çizildikten sonra pergel açıklığı korunup merkezi değiştiriliyor. İki çemberin hangi özelliği eşittir?",
+   "cevap": "Yarıçap uzunlukları eşittir. Her iki çizimde aynı pergel açıklığı kullanılmıştır."
+  },
+  {
+   "soru": "Bir ışın üzerinde [AB], [BC] ve [CD] aynı pergel açıklığıyla oluşturuluyor. |AB| = 4 cm ise |AD| kaç santimetredir?",
+   "cevap": "Üç parça da 4 cm’dir. |AD| = 4 + 4 + 4 = 12 cm olur."
+  },
+  {
+   "soru": "Bir öğrenci iki kısa çizginin görünür kısımları kesişmediği için paralel olduklarını söylüyor. Neyi daha kontrol etmelidir?",
+   "cevap": "Çizgilerin doğruları temsil ettiği düşünülerek uzatıldığında kesişip kesişmediği ve aralarındaki uzaklığın değişip değişmediği kontrol edilmelidir."
+  }
+ ],
+ "ozet": [
+  "Farklı iki noktadan yalnız bir doğru geçer.",
+  "Bir dış noktadan doğruya çizilen dikme tektir ve en kısa uzaklığı verir.",
+  "Paralel doğrular aynı düzlemde kesişmez; dik uzaklıkları değişmez.",
+  "Aynı pergel açıklığı, eş yarıçaplı çemberler ve eş uzunlukta parçalar oluşturur."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Bir çizim masasında iki sabit noktanın ikisinden de geçecek bir doğru isteniyor. Kaç farklı doğru çizilebilir?",
+   "secenekler": [
+    "0",
+    "1",
+    "2",
+    "Sonsuz"
+   ],
+   "dogru": 1,
+   "aciklama": "Farklı iki noktadan geçen doğru tektir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir tasarımda farklı merkezli iki çemberin yarıçapları eşit tutulacak. Hangi işlem bunu sağlar?",
+   "secenekler": [
+    "Cetveli döndürmek",
+    "Pergel açıklığını korumak",
+    "Merkezleri uzaklaştırmak",
+    "Kalemin rengini değiştirmek"
+   ],
+   "dogru": 1,
+   "aciklama": "Yarıçapı belirleyen pergel açıklığıdır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "P noktasından d doğrusuna en kısa bağlantıyı çizmek için hangi özellik aranmalıdır?",
+   "secenekler": [
+    "Bağlantının d’ye paralel olması",
+    "Bağlantının eğik olması",
+    "Bağlantının d’ye dik olması",
+    "Bağlantının uzun olması"
+   ],
+   "dogru": 2,
+   "aciklama": "Noktadan doğruya en kısa parça dikmedir."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Her yargıyı değerlendiriniz. Yanlış yargının açıklamasını okuyunuz.",
+   "ifadeler": [
+    {
+     "metin": "Aynı noktadan farklı yönlerde doğrular geçebilir.",
+     "dogru": true,
+     "aciklama": "Bir nokta tek başına doğruyu belirlemez."
+    },
+    {
+     "metin": "Bir doğruya farklı noktalardan çizilen bütün dikmeler eşittir.",
+     "dogru": false,
+     "aciklama": "Uzunluklar noktaların doğruya uzaklığına bağlıdır."
+    },
+    {
+     "metin": "Paralellik // sembolüyle gösterilir.",
+     "dogru": true,
+     "aciklama": "Bu sembol doğrular arasındaki paralellik ilişkisini belirtir."
+    },
+    {
+     "metin": "Pergel açıklığı yarıçapla ilişkilidir.",
+     "dogru": true,
+     "aciklama": "Açıklık merkezden çembere olan uzaklığı belirler."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Birbiriyle ilişkili kavram ve açıklamaları eşleştiriniz.",
+   "ciftler": [
+    [
+     "Gönye",
+     "Dikliği denetleme"
+    ],
+    [
+     "Pergel",
+     "Eş yarıçaplı çember çizme"
+    ],
+    [
+     "Ölçülü cetvel",
+     "Uzunluk ölçme"
+    ],
+    [
+     "//",
+     "Paralellik"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Bir doğruya dışındaki noktadan çizilen en kısa parça ___ olarak adlandırılır.",
+     "cevap": "dikme"
+    },
+    {
+     "metin": "Pergelin sivri ucu çemberin ___ noktasındadır.",
+     "cevap": "merkez"
+    },
+    {
+     "metin": "Çember üzerindeki bir noktanın merkeze uzaklığına ___ denir.",
+     "cevap": "yarıçap"
+    }
+   ],
+   "fazla": [
+    "çap"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Aynı doğruya iki farklı noktadan eşit uzunlukta dikmeler çizildi. Bu durum mümkün müdür?",
+   "ipuclari": [
+    "Noktaların doğruya uzaklıklarının eşit olabileceğini düşününüz.",
+    "Dikmelerin başlangıçlarının aynı nokta olması gerekir mi?"
+   ],
+   "cevap": "Mümkündür. Doğruya eşit uzaklıkta bulunan iki farklı noktadan eşit uzunlukta dikmeler çizilebilir."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir ışın boyunca pergel açıklığı değiştirilerek art arda parçalar işaretlendi. Bütün parçaların eşit olduğu söylenebilir mi?",
+   "ipuclari": [
+    "Her adımda taşınan uzaklık aynı mı?",
+    "Eşitliği hangi koşul güvenceye alır?"
+   ],
+   "cevap": "Söylenemez. Eşit uzunluk elde etmek için pergel açıklığı korunmalıdır. Açıklık değiştirilince farklı uzunluklar oluşabilir."
+  }
+ ],
+ "yayin_tarihi": "2026-10-01"
+}

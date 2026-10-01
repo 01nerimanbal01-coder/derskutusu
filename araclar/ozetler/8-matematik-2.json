@@ -1,0 +1,223 @@
+{
+ "sinif": 8,
+ "ders": "matematik",
+ "hafta": 2,
+ "tarih": "21-25 Eylül 2026",
+ "unite": "Çarpanlar ve Katlar",
+ "konu": "EBOB, EKOK ve Aralarında Asal Sayılar",
+ "ciktilar": [
+  "M.8.1.1.2. İki doğal sayının EBOB ve EKOK’unu hesaplar, ilgili problemleri çözer.",
+  "M.8.1.1.3. Verilen iki doğal sayının aralarında asal olup olmadığını belirler."
+ ],
+ "giris": "Eşit büyüklükte gruplar oluşturmak ile tekrar eden olayların ilk ortak zamanını bulmak farklı düşünmeler gerektirir. Bu hafta ortak bölen, ortak kat ve aralarında asallık ilişkilerini açıklayacağız.",
+ "bolumler": [
+  {
+   "baslik": "En büyük ortak bölen: EBOB",
+   "metin": [
+    "İki pozitif doğal sayıyı da kalansız bölen sayılar ortak bölenlerdir. Bunların en büyüğüne EBOB denir. EBOB(18, 30) yazımı, 18 ve 30’un en büyük ortak bölenini anlatır.",
+    "18’in bölenleri 1, 2, 3, 6, 9, 18; 30’un bölenleri 1, 2, 3, 5, 6, 10, 15, 30’dur. Ortak bölenler 1, 2, 3 ve 6 olduğundan EBOB(18, 30) = 6 olur.",
+    "Asal çarpanlarla hesaplamada yalnız ortak asal çarpanlar alınır ve her birinin küçük üssü seçilir. Bu seçim, sonucun iki sayıyı da bölmesini sağlar."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "metin": "Parça veya grup büyüklüğü iki miktarı da tam bölüyorsa ortak bölen düşünülür."
+   },
+   "gorsel": "<svg viewBox=\"0 0 470 219\" role=\"img\" aria-label=\"18 ve 30 için ortak bölen\"><text x=\"235\" y=\"22\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">18 ve 30 için ortak bölen</text><rect x=\"18\" y=\"34\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"53\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">18’in bölenleri</text><text x=\"32\" y=\"71\" font-size=\"12\" class=\"g-y\">1, 2, 3, 6, 9, 18</text><path d=\"M235 82v9m-4-4 4 4 4-4\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><rect x=\"18\" y=\"93\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"112\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">30’un bölenleri</text><text x=\"32\" y=\"130\" font-size=\"12\" class=\"g-y\">1, 2, 3, 5, 6, 10, 15, 30</text><path d=\"M235 141v9m-4-4 4 4 4-4\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><rect x=\"18\" y=\"152\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"171\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Ortak olanların en büyüğü</text><text x=\"32\" y=\"189\" font-size=\"12\" class=\"g-y\">EBOB(18, 30) = 6</text></svg>"
+  },
+  {
+   "baslik": "En küçük ortak kat: EKOK",
+   "metin": [
+    "İki pozitif doğal sayının pozitif katları arasında ortak olanlar bulunur. Bunların en küçüğüne EKOK denir. Burada sıfır dışındaki ortak katlar araştırılır.",
+    "6’nın pozitif katları 6, 12, 18, 24, 30…; 8’in pozitif katları 8, 16, 24, 32… biçimindedir. İlk ortak değer 24 olduğundan EKOK(6, 8) = 24’tür.",
+    "Asal çarpanlarla hesaplamada her iki sayıda bulunan asal çarpanların tamamı dikkate alınır. Ortak olanlarda büyük üs seçilir. Böylece iki sayının da katı olan en küçük pozitif değer elde edilir."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "metin": "Tekrarlanan iki olayın başlangıçtan sonraki ilk ortak zamanı için ortak katlar incelenir."
+   },
+   "gorsel": "<svg viewBox=\"0 0 470 219\" role=\"img\" aria-label=\"6 ve 8 için ortak kat\"><text x=\"235\" y=\"22\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">6 ve 8 için ortak kat</text><rect x=\"18\" y=\"34\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"53\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">6’nın katları</text><text x=\"32\" y=\"71\" font-size=\"12\" class=\"g-y\">6, 12, 18, 24, 30, …</text><path d=\"M235 82v9m-4-4 4 4 4-4\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><rect x=\"18\" y=\"93\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"112\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">8’in katları</text><text x=\"32\" y=\"130\" font-size=\"12\" class=\"g-y\">8, 16, 24, 32, 40, …</text><path d=\"M235 141v9m-4-4 4 4 4-4\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><rect x=\"18\" y=\"152\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"171\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">İlk pozitif ortak değer</text><text x=\"32\" y=\"189\" font-size=\"12\" class=\"g-y\">EKOK(6, 8) = 24</text></svg>"
+  },
+  {
+   "baslik": "Aralarında asal olmak",
+   "metin": [
+    "İki pozitif doğal sayının 1 dışında ortak böleni yoksa bu sayılar aralarında asaldır. Sayıların her birinin tek başına asal olması gerekmez.",
+    "Örneğin 9 ve 16 asal sayı değildir; fakat ortak bölenleri yalnız 1 olduğu için aralarında asaldır. Buna karşılık 9 ve 15’in ortak böleni 3 de bulunduğundan aralarında asal değillerdir.",
+    "Aralarında asal sayıların EBOB’u 1, EKOK’u sayıların çarpımıdır. Ardışık pozitif doğal sayılar aralarında asaldır; 1 de bütün pozitif doğal sayılarla aralarında asaldır."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "metin": "“Asal sayı” bir sayının, “aralarında asal” ise sayı çiftinin özelliğidir."
+   }
+  },
+  {
+   "baslik": "Problemde hangi ilişki kullanılmalı?",
+   "metin": [
+    "Miktarlar hiç artmadan eş büyüklükte gruplara ayrılacaksa grup büyüklüğü ortak bölen olmalıdır. En büyük grup istendiğinde EBOB kullanılır. Ancak grup sayısı soruluyorsa bulunan büyüklükle ayrıca bölme yapılır.",
+    "Belirli aralıklarla yinelenen olayların tekrar birlikte oluşması isteniyorsa geçen süre ortak kat olmalıdır. İlk ortak zaman için EKOK bulunur.",
+    "İki pozitif doğal sayı için sayıların çarpımı, EBOB ile EKOK’un çarpımına eşittir. Bu ilişki sonuç denetiminde kullanılabilir: a · b = EBOB(a, b) · EKOK(a, b)."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "metin": "Sorudaki “en az” veya “en çok” sözü tek başına karar verdirmez; bölme mi, ortak kat mı arandığına bakılır."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "EBOB(28, 42) kaçtır?",
+   "cevap": "28 = 2² · 7, 42 = 2 · 3 · 7. Ortak çarpanların küçük üsleri alınır: 2 · 7 = 14."
+  },
+  {
+   "soru": "EKOK(12, 20) kaçtır?",
+   "cevap": "12 = 2² · 3, 20 = 2² · 5. Tüm asal çarpanlar büyük üsleriyle alınır: 2² · 3 · 5 = 60."
+  },
+  {
+   "soru": "14 ve 25 aralarında asal mıdır?",
+   "cevap": "14’ün asal çarpanları 2 ve 7; 25’in asal çarpanı 5’tir. Ortak asal çarpan yoktur; EBOB 1’dir ve aralarında asaldırlar."
+  },
+  {
+   "soru": "Bir etkinlikte 30 üçgen ve 42 kare kart, şekilleri karıştırılmadan eşit sayıda kart içeren zarflara konulacak. Her zarfta en fazla kaç kart olur, kaç zarf gerekir?",
+   "cevap": "EBOB(30, 42) = 6 olduğundan her zarfta 6 kart olur. {kesir:30|6} + {kesir:42|6} = 5 + 7 = 12 zarf gerekir."
+  },
+  {
+   "soru": "Bir ışık 9 saniyede, diğeri 12 saniyede bir yanıyor. Aynı anda yandıktan kaç saniye sonra ilk kez yeniden birlikte yanarlar?",
+   "cevap": "Geçen süre hem 9’un hem 12’nin katıdır. EKOK(9, 12) = 36 olduğundan 36 saniye sonra birlikte yanarlar."
+  },
+  {
+   "soru": "EBOB’u 5 ve EKOK’u 210 olan iki pozitif doğal sayının çarpımı kaçtır?",
+   "cevap": "Çarpım EBOB · EKOK = 5 · 210 = 1 050’dir."
+  }
+ ],
+ "ozet": [
+  "EBOB ortak bölenlerin en büyüğüdür.",
+  "EKOK pozitif ortak katların en küçüğüdür.",
+  "Aralarında asal sayıların EBOB’u 1’dir; sayıların kendileri asal olmak zorunda değildir.",
+  "Problemde istenen büyüklüğün birimini ve grup sayısı gibi son işlemleri kontrol ediniz."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "İki kart makinesi 10 ve 15 dakikalık aralıklarla çıktı veriyor. Aynı anda çıktı verdikten sonraki ilk ortak çıktı kaç dakika sonradır?",
+   "secenekler": [
+    "5",
+    "15",
+    "25",
+    "30"
+   ],
+   "dogru": 3,
+   "aciklama": "EKOK(10, 15) = 30’dur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Hangi sayı çifti, ikisi de asal olmadığı hâlde aralarında asaldır?",
+   "secenekler": [
+    "8 ve 12",
+    "15 ve 25",
+    "16 ve 21",
+    "18 ve 27"
+   ],
+   "dogru": 2,
+   "aciklama": "16’nın asal çarpanı 2; 21’in asal çarpanları 3 ve 7’dir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "24 ve 36 kartı hiç artırmadan, eş sayıda kart içeren ve türleri karışmayan paketlere koyarken bir pakette en fazla kaç kart olabilir?",
+   "secenekler": [
+    "6",
+    "12",
+    "24",
+    "72"
+   ],
+   "dogru": 1,
+   "aciklama": "En büyük ortak grup büyüklüğü EBOB(24, 36) = 12’dir."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Her yargıyı değerlendiriniz. Yanlış yargının açıklamasını okuyunuz.",
+   "ifadeler": [
+    {
+     "metin": "EBOB(7, 20) = 1 olur.",
+     "dogru": true,
+     "aciklama": "1 dışında ortak bölen yoktur."
+    },
+    {
+     "metin": "Aralarında asal sayıların ikisi de asal olmak zorundadır.",
+     "dogru": false,
+     "aciklama": "Örneğin 9 ve 16 aralarında asaldır ama asal değildir."
+    },
+    {
+     "metin": "EKOK, sıfır dışındaki ortak katların en küçüğüdür.",
+     "dogru": true,
+     "aciklama": "Pozitif sayılarda ilk pozitif ortak kat aranır."
+    },
+    {
+     "metin": "EBOB bulunurken ortak asal çarpanların büyük üsleri alınır.",
+     "dogru": false,
+     "aciklama": "EBOB için küçük üsler alınır."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Birbiriyle ilişkili kavram ve açıklamaları eşleştiriniz.",
+   "ciftler": [
+    [
+     "EBOB(12, 18)",
+     "6"
+    ],
+    [
+     "EKOK(12, 18)",
+     "36"
+    ],
+    [
+     "EBOB(5, 8)",
+     "1"
+    ],
+    [
+     "EKOK(5, 8)",
+     "40"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "1 dışında ortak böleni olmayan sayılar aralarında ___ olur.",
+     "cevap": "asal"
+    },
+    {
+     "metin": "EBOB için ortak asal çarpanların ___ üsleri seçilir.",
+     "cevap": "küçük"
+    },
+    {
+     "metin": "EKOK için ortak asal çarpanların ___ üsleri seçilir.",
+     "cevap": "büyük"
+    }
+   ],
+   "fazla": [
+    "eşit"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "“Soruda en az deniyorsa her zaman EKOK alınır.” iddiasını eşit gruplama örneğiyle açıklayınız.",
+   "ipuclari": [
+    "Az sayıda grup için her grubun büyüklüğü nasıl olmalı?",
+    "Grup büyüklüğü miktarları tam bölmeli mi?"
+   ],
+   "cevap": "İddia yanlıştır. Miktarlar eşit büyüklükte gruplara ayrılırken grup sayısının en az olması için grup büyüklüğü en fazla olmalıdır. Bu büyüklük EBOB ile bulunur."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "EBOB(18, 24) = 6 ve EKOK(18, 24) = 72 sonuçlarını çarpım ilişkisiyle denetleyiniz.",
+   "ipuclari": [
+    "18 · 24 çarpımını bulunuz.",
+    "6 · 72 ile karşılaştırınız."
+   ],
+   "cevap": "18 · 24 = 432 ve 6 · 72 = 432’dir. İki çarpım eşit olduğundan sonuçlar çarpım ilişkisini sağlar."
+  }
+ ],
+ "yayin_tarihi": "2026-10-01"
+}

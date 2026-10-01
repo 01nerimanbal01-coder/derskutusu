@@ -1,0 +1,238 @@
+{
+ "sinif": 9,
+ "ders": "matematik",
+ "hafta": 1,
+ "tarih": "14-18 Eylül 2026",
+ "unite": "Sayılar",
+ "konu": "Gerçek Sayıların Üslü ve Köklü Gösterimleriyle İşlemler",
+ "ciktilar": [
+  "MAT.9.1.1. Gerçek sayıların üslü ve köklü gösterimleriyle yapılan işlemlere dair muhakeme yapabilme"
+ ],
+ "giris": "Bir çarpımı üslü biçimde yazmak, aynı işlemi tekrar tekrar yazma ihtiyacını azaltır. Köklü gösterim ise bir sayının hangi kuvvetten elde edildiğini düşünmemizi sağlar. Bu hafta işlem kurallarını, kuralların kullanılabildiği koşullarla birlikte ele alacağız.",
+ "bolumler": [
+  {
+   "baslik": "Taban, üs ve işaret",
+   "metin": [
+    "Pozitif tam sayı üs, tabanın kendisiyle kaç kez çarpıldığını belirtir. Örneğin {us:3|4} = 3 · 3 · 3 · 3 = 81 olur. Taban 3, üs 4’tür.",
+    "Sıfırdan farklı bir sayının sıfırıncı kuvveti 1’dir. Negatif üs, sayının çarpmaya göre tersinin ilgili pozitif kuvvetini ifade eder: {us:2|−3} = {kesir:1|8}. Negatif üs, sonucun mutlaka negatif olduğu anlamına gelmez.",
+    "Negatif bir tabanın çift tam sayı kuvveti pozitif, tek tam sayı kuvveti negatiftir. Parantez tabanı belirler: {us:(−4)|2} = 16 iken −{us:4|2} = −16 olur. İkinci ifadede üs yalnız 4’e aittir."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "metin": "Sıfırıncı kuvvet ve negatif tam sayı üs kurallarında taban sıfır olamaz."
+   }
+  },
+  {
+   "baslik": "Çarpma, bölme ve bir kuvvetin kuvveti",
+   "metin": [
+    "Tabanları aynı üslü ifadeler çarpılırken üsler toplanır: {us:a|m} · {us:a|n} = {us:a|m+n}. Bölmede üsler çıkarılır: {us:a|m} / {us:a|n} = {us:a|m−n}. Bölme kuralında a ≠ 0 olmalıdır.",
+    "Bir kuvvetin kuvveti alınırken üsler çarpılır: ({us:a|m})ⁿ = {us:a|m·n}. Üsleri aynı olan çarpanlar ise ortak üste alınabilir: {us:a|n} · {us:b|n} = {us:(a·b)|n}. Bölme için de payda sıfır olmamak üzere benzer kural geçerlidir.",
+    "Bu kurallar tam sayı üsler için, ifadelerin tanımlı olduğu değerlerde uygulanır. Örneğin {us:5|2} · {us:5|3} = {us:5|5}; ({us:5|2})³ = {us:5|6} olur. Çarpım ile kuvvetin kuvvetini aynı işlem sanmamak gerekir."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "metin": "İşleme başlamadan önce tabanların mı, üslerin mi eşit olduğuna bakınız."
+   },
+   "gorsel": "<svg viewBox=\"0 0 470 219\" role=\"img\" aria-label=\"İşlem türünü ayırt et\"><text x=\"235\" y=\"22\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">İşlem türünü ayırt et</text><rect x=\"18\" y=\"34\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"53\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Aynı tabanlı çarpım</text><text x=\"32\" y=\"71\" font-size=\"12\" class=\"g-y\">2³ · 2⁴ = 2⁷</text><path d=\"M235 82v9m-4-4 4 4 4-4\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><rect x=\"18\" y=\"93\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"112\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Bir kuvvetin kuvveti</text><text x=\"32\" y=\"130\" font-size=\"12\" class=\"g-y\">(2³)⁴ = 2¹²</text><path d=\"M235 141v9m-4-4 4 4 4-4\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><rect x=\"18\" y=\"152\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"171\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Aynı terimlerin toplamı</text><text x=\"32\" y=\"189\" font-size=\"12\" class=\"g-y\">3 · 2⁴ + 5 · 2⁴ = 8 · 2⁴</text></svg>"
+  },
+  {
+   "baslik": "Toplama ve çıkarmada ortak çarpan",
+   "metin": [
+    "Toplamada veya çıkarmada üsler toplanmaz. Aynı üslü ifadeyi içeren terimlerin katsayıları işleme girer: 3 · {us:2|4} + 5 · {us:2|4} = 8 · {us:2|4}.",
+    "Terimler önce ortak bir üslü çarpan içerecek biçimde yazılabilir. {us:3|4} + {us:3|3} = 3 · {us:3|3} + 1 · {us:3|3} = 4 · {us:3|3} olur.",
+    "Ortak çarpan bulunmadığında kuvvetlerin değerleri hesaplanabilir. {us:2|3} + {us:2|4} = 8 + 16 = 24’tür; sonuç {us:2|7} değildir."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "metin": "Üs toplama kuralı, aynı tabanlı ifadelerin çarpımına aittir."
+   }
+  },
+  {
+   "baslik": "Köklü gösterimi anlamak",
+   "metin": [
+    "√a, karesi a olan negatif olmayan sayıyı belirtir; gerçek sayılarda a ≥ 0 olmalıdır. Bu nedenle √49 = 7’dir. x² = 49 denkleminin çözümleri 7 ve −7 olsa da √49 ifadesinin değeri yalnız 7’dir.",
+    "Çift dereceli bir kökün içi gerçek sayılarda negatif olamaz. Tek dereceli köklerde negatif sayılar da kullanılabilir: ∛(−27) = −3, çünkü (−3) · (−3) · (−3) = −27’dir.",
+    "Pozitif tabanlarda rasyonel üslerle kökler birbirine dönüştürülebilir. Örneğin {us:16|1/2} = √16 = 4; {us:8|1/3} = ∛8 = 2 olur. Genel olarak n’inci kök, 1/n üssüyle ilişkilidir."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "metin": "√(a²) = |a| olur. a negatifken karekökün sonucu a değil, −a’dır."
+   },
+   "gorsel": "<svg viewBox=\"0 0 470 219\" role=\"img\" aria-label=\"İfade ile denklemin farkı\"><text x=\"235\" y=\"22\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">İfade ile denklemin farkı</text><rect x=\"18\" y=\"34\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"53\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Karekök ifadesi</text><text x=\"32\" y=\"71\" font-size=\"12\" class=\"g-y\">√36 = 6</text><path d=\"M235 82v9m-4-4 4 4 4-4\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><rect x=\"18\" y=\"93\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"112\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Denklem</text><text x=\"32\" y=\"130\" font-size=\"12\" class=\"g-y\">x² = 36 → x = 6 veya x = −6</text><path d=\"M235 141v9m-4-4 4 4 4-4\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><rect x=\"18\" y=\"152\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"171\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Negatif tabanın karesinin kökü</text><text x=\"32\" y=\"189\" font-size=\"12\" class=\"g-y\">√((−6)²) = |−6| = 6</text></svg>"
+  },
+  {
+   "baslik": "Köklü ifadelerle dört işlem",
+   "metin": [
+    "Karekök içindeki çarpanlardan tam kare olanlar dışarı çıkarılabilir: √72 = √(36 · 2) = 6√2. Toplama ve çıkarmada önce kökler sadeleştirilir.",
+    "Kök derecesi ve kök içi aynı olan terimlerin katsayıları toplanır veya çıkarılır. 4√3 + 2√3 = 6√3 olur. √2 + √3 ise √5 biçiminde birleştirilemez.",
+    "Negatif olmayan a ve b sayıları için √a · √b = √(a · b) olur. b > 0 koşuluyla √a / √b = √(a / b) yazılabilir. Örneğin √6 · √24 = √144 = 12; √75 / √3 = √25 = 5’tir."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "metin": "İşlem kuralını seçmeden önce kök derecesini, kök içini ve işlemin türünü kontrol ediniz."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "({us:3|5} · {us:3|−2}) / {us:3|2} işleminin sonucu kaçtır?",
+   "cevap": "Üs 5 + (−2) − 2 = 1 olur. Sonuç {us:3|1} = 3’tür."
+  },
+  {
+   "soru": "{us:(−2)|4} ile −{us:2|4} ifadelerinin farkı nedir?",
+   "cevap": "İlkinde taban −2’dir ve çift kuvvet 16 verir. İkincisinde 2’nin dördüncü kuvvetinin önünde eksi vardır; değer −16’dır. Birinci değerden ikinci çıkarılırsa 16 − (−16) = 32 olur."
+  },
+  {
+   "soru": "({us:4|2})³ / {us:4|4} ifadesini tek kuvvet olarak yazınız.",
+   "cevap": "Üssün üssünde 2 · 3 = 6 bulunur. Bölmede 6 − 4 = 2 olduğundan sonuç {us:4|2} = 16’dır."
+  },
+  {
+   "soru": "7 · {us:3|2} − 2 · {us:3|2} işlemini hesaplayınız.",
+   "cevap": "Ortak çarpan {us:3|2}’dir. (7 − 2) · {us:3|2} = 5 · 9 = 45."
+  },
+  {
+   "soru": "√98 − √8 ifadesini sadeleştiriniz.",
+   "cevap": "√98 = 7√2 ve √8 = 2√2 olur. Fark (7 − 2)√2 = 5√2’dir."
+  },
+  {
+   "soru": "√12 · √27 / √9 işleminin sonucunu bulunuz.",
+   "cevap": "Pay √324 = 18, payda √9 = 3’tür. Sonuç 18 / 3 = 6 olur."
+  }
+ ],
+ "ozet": [
+  "Sıfırdan farklı taban için sıfırıncı kuvvet 1’dir; negatif üs çarpmaya göre tersle ilgilidir.",
+  "Aynı tabanlı çarpımda üsler toplanır, bölmede çıkarılır; bir kuvvetin kuvvetinde çarpılır.",
+  "Toplama ve çıkarmada ortak üslü ya da köklü terimlerin katsayıları işleme girer.",
+  "Gerçek sayılarda çift dereceli kökün içi negatif olamaz; karekökün değeri negatif değildir.",
+  "Köklü ifadelerde sadeleştirme, hangi terimlerin birleştirilebileceğini gösterir."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Bir işlem kartında ({us:2|3})² yazıyor. Aynı değeri gösteren kart hangisidir?",
+   "secenekler": [
+    "{us:2|5}",
+    "{us:2|6}",
+    "{us:4|3} + 1",
+    "{us:2|9}",
+    "{us:2|1}"
+   ],
+   "dogru": 1,
+   "aciklama": "Bir kuvvetin kuvvetinde üsler çarpılır: 3 · 2 = 6."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir öğrenci √50 + √8 işlemini √58 olarak yazıyor. Doğru sonuç hangisidir?",
+   "secenekler": [
+    "√58",
+    "7√2",
+    "13√2",
+    "2√29",
+    "√42"
+   ],
+   "dogru": 1,
+   "aciklama": "√50 = 5√2 ve √8 = 2√2 olduğundan sonuç 7√2’dir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir hesapta a = −5 seçiliyor. √(a²) kaçtır?",
+   "secenekler": [
+    "−25",
+    "−5",
+    "0",
+    "5",
+    "25"
+   ],
+   "dogru": 3,
+   "aciklama": "Karekök negatif olamaz. √25 = 5 = |−5|."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Her yargıyı değerlendiriniz. Yanlış yargının açıklamasını okuyunuz.",
+   "ifadeler": [
+    {
+     "metin": "3² · 3⁴ ile (3²)⁴ aynı değerdedir.",
+     "dogru": false,
+     "aciklama": "İlki 3⁶, ikincisi 3⁸ olur."
+    },
+    {
+     "metin": "2⁻³ ifadesinin değeri pozitiftir.",
+     "dogru": true,
+     "aciklama": "Değer 1/8’dir."
+    },
+    {
+     "metin": "∛(−8) gerçek bir sayıdır.",
+     "dogru": true,
+     "aciklama": "−2’nin küpü −8’dir."
+    },
+    {
+     "metin": "√3 + √3 = 2√3 olur.",
+     "dogru": true,
+     "aciklama": "Aynı köklü terimin katsayıları toplanır."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Birbiriyle ilişkili kavram ve açıklamaları eşleştiriniz.",
+   "ciftler": [
+    [
+     "5⁰",
+     "1"
+    ],
+    [
+     "5⁻¹",
+     "1/5"
+    ],
+    [
+     "√25",
+     "5"
+    ],
+    [
+     "∛(−125)",
+     "−5"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Aynı tabanlı kuvvetler çarpılırken üsler ___.",
+     "cevap": "toplanır"
+    },
+    {
+     "metin": "Bir kuvvetin kuvveti alınırken üsler ___.",
+     "cevap": "çarpılır"
+    },
+    {
+     "metin": "Aynı köklü terimler toplanırken ___ işleme girer.",
+     "cevap": "katsayılar"
+    }
+   ],
+   "fazla": [
+    "tabanlar"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "3⁴ + 3⁴ işlemini 3⁸ bulan bir öğrencinin hangi kuralı yanlış yerde kullandığını açıklayınız.",
+   "ipuclari": [
+    "İşlem toplama mı, çarpma mı?",
+    "İki tane 3⁴ terimini ortak çarpanla yazınız."
+   ],
+   "cevap": "Aynı tabanlı çarpımın kuralını toplamaya uygulamıştır. 3⁴ + 3⁴ = 2 · 3⁴ = 162 olur."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "√48 / √3 işlemini iki farklı yolla bulunuz.",
+   "ipuclari": [
+    "Köklerin içini önce bölebilirsiniz.",
+    "√48 ifadesinden bir tam kare çarpanı dışarı çıkarabilirsiniz."
+   ],
+   "cevap": "Birinci yol: √(48/3) = √16 = 4. İkinci yol: √48 = 4√3; 4√3 / √3 = 4."
+  }
+ ],
+ "yayin_tarihi": "2026-10-01"
+}

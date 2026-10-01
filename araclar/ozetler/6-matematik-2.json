@@ -1,0 +1,222 @@
+{
+ "sinif": 6,
+ "ders": "matematik",
+ "hafta": 2,
+ "tarih": "21-25 Eylül 2026",
+ "unite": "Sayılar ve Nicelikler (1)",
+ "konu": "2, 3, 4, 5, 6, 9 ve 10 ile Bölünebilme",
+ "ciktilar": [
+  "MAT.6.1.2. Bir doğal sayının 2, 3, 4, 5, 6, 9 ve 10 ile tam bölünebilme kriterlerine ilişkin çıkarım yapabilme"
+ ],
+ "giris": "Bir sayının başka bir sayıya kalansız bölünüp bölünmediğini her zaman uzun bölme yaparak araştırmak gerekmez. Basamaklar ve rakamlar toplamı, bazı bölenler için hızlı ve gerekçeli karar vermemizi sağlar.",
+ "bolumler": [
+  {
+   "baslik": "Son rakamla verilen kararlar",
+   "metin": [
+    "Birler basamağı 0, 2, 4, 6 veya 8 olan doğal sayılar 2’ye tam bölünür. Bunlar çift sayılardır.",
+    "Bir sayının 5’e tam bölünmesi için son rakamı 0 veya 5 olmalıdır. 10’a tam bölünmesi içinse son rakam yalnız 0 olabilir.",
+    "10’a bölünen sayı hem 2’ye hem 5’e de bölünür. Fakat yalnız 5’e bölünmek 10’a bölünmeyi garanti etmez; 75 bunun bir örneğidir."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "metin": "2, 5 ve 10 için sayının son rakamına bakılır."
+   },
+   "gorsel": "<svg viewBox=\"0 0 470 278\" role=\"img\" aria-label=\"Hangi bilgiye bakmalıyım?\"><text x=\"235\" y=\"22\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">Hangi bilgiye bakmalıyım?</text><rect x=\"18\" y=\"34\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"53\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">2, 5, 10</text><text x=\"32\" y=\"71\" font-size=\"12\" class=\"g-y\">Son rakam</text><path d=\"M235 82v9m-4-4 4 4 4-4\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><rect x=\"18\" y=\"93\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"112\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">4</text><text x=\"32\" y=\"130\" font-size=\"12\" class=\"g-y\">Son iki basamak</text><path d=\"M235 141v9m-4-4 4 4 4-4\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><rect x=\"18\" y=\"152\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"171\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">3, 9</text><text x=\"32\" y=\"189\" font-size=\"12\" class=\"g-y\">Rakamlar toplamı</text><path d=\"M235 200v9m-4-4 4 4 4-4\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><rect x=\"18\" y=\"211\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"230\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">6</text><text x=\"32\" y=\"248\" font-size=\"12\" class=\"g-y\">2 ve 3 koşulları birlikte</text></svg>"
+  },
+  {
+   "baslik": "Rakamlar toplamıyla 3 ve 9",
+   "metin": [
+    "Rakamlarının toplamı 3’ün katı olan doğal sayı 3’e tam bölünür. Örneğin 246’nın rakamları toplamı 12’dir; bu nedenle 246, 3’e bölünür.",
+    "Rakamlarının toplamı 9’un katı olan sayı 9’a tam bölünür. 729 için toplam 18 olduğundan 9’a bölünebilme koşulu sağlanır.",
+    "9’a bölünen her sayı 3’e de bölünür. Bunun tersi her zaman doğru değildir: 123’ün rakamları toplamı 6’dır; 3’e bölünür, 9’a bölünmez."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "metin": "Rakamları toplamak, basamak değerlerini toplamak değildir. 246 için 2 + 4 + 6 kullanılır."
+   }
+  },
+  {
+   "baslik": "Son iki basamakla 4",
+   "metin": [
+    "Bir doğal sayının son iki basamağının oluşturduğu sayı 4’e bölünüyorsa sayı da 4’e bölünür. Son iki basamağı 00 olan sayılar da bu koşulu sağlar.",
+    "Örneğin 1 324 sayısında son iki basamak 24’tür. 24, 4’e bölündüğü için 1 324 de 4’e bölünür. 1 326 için 26, 4’e bölünmediğinden aynı sonuç çıkmaz.",
+    "Son rakamın çift olması tek başına 4’e bölünebilme anlamına gelmez. Çift olmak yalnız 2’ye bölünebilme için yeterlidir."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "metin": "4 için son iki basamağa; 2 için yalnız son basamağa bakılır."
+   }
+  },
+  {
+   "baslik": "İki koşulu birlikte kullanarak 6",
+   "metin": [
+    "6’ya tam bölünebilmek için sayı hem 2’ye hem de 3’e tam bölünmelidir. Yani son rakam çift ve rakamlar toplamı 3’ün katı olmalıdır.",
+    "342 sayısının son rakamı çifttir; rakamları toplamı 9’dur. İki koşul da sağlandığından 342, 6’ya bölünür. 345 sayısı 3’e bölünür ama tek olduğu için 6’ya bölünmez.",
+    "Eksik rakam sorularında önce ilgili kural yazılır, sonra rakamın 0 ile 9 arasında olduğu kontrol edilir. İki bölünebilme koşulu isteniyorsa bulunan rakam ikisini de sağlamalıdır."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "metin": "6 için “2 veya 3” değil, “hem 2 hem 3” koşulu gerekir."
+   },
+   "gorsel": "<svg viewBox=\"0 0 470 219\" role=\"img\" aria-label=\"342 sayısını 6 için incele\"><text x=\"235\" y=\"22\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">342 sayısını 6 için incele</text><rect x=\"18\" y=\"34\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"53\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Son rakam 2</text><text x=\"32\" y=\"71\" font-size=\"12\" class=\"g-y\">2’ye tam bölünür.</text><path d=\"M235 82v9m-4-4 4 4 4-4\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><rect x=\"18\" y=\"93\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"112\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">3 + 4 + 2 = 9</text><text x=\"32\" y=\"130\" font-size=\"12\" class=\"g-y\">3’e tam bölünür.</text><path d=\"M235 141v9m-4-4 4 4 4-4\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><rect x=\"18\" y=\"152\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"171\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">İki koşul da sağlandı</text><text x=\"32\" y=\"189\" font-size=\"12\" class=\"g-y\">6’ya tam bölünür.</text></svg>"
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "1 250 sayısı 2, 5 ve 10’dan hangilerine tam bölünür?",
+   "cevap": "Son rakamı 0 olduğundan üçünün de koşulunu sağlar."
+  },
+  {
+   "soru": "4 536 sayısı 3’e ve 9’a tam bölünür mü?",
+   "cevap": "Rakamlar toplamı 4 + 5 + 3 + 6 = 18’dir. 18 hem 3’ün hem 9’un katı olduğundan ikisine de bölünür."
+  },
+  {
+   "soru": "2 718 sayısı 4’e tam bölünür mü?",
+   "cevap": "Son iki basamak 18’dir. 18, 4’e tam bölünmediği için 2 718 de bölünmez."
+  },
+  {
+   "soru": "432 sayısının 6’ya bölünebilmesini açıklayınız.",
+   "cevap": "Son rakamı 2 olduğu için çifttir. Rakamlar toplamı 9, 3’ün katıdır. Her iki koşul sağlandığı için 6’ya bölünür."
+  },
+  {
+   "soru": "5a2 üç basamaklı sayısı 9’a bölünüyor. a hangi rakamdır?",
+   "cevap": "5 + a + 2 = 7 + a, 9’un katı olmalıdır. 0 ≤ a ≤ 9 olduğundan tek uygun toplam 9’dur; a = 2."
+  },
+  {
+   "soru": "Bir kod 4b0 biçimindedir. Hem 5’e hem 3’e bölünüyorsa b hangi rakamlar olabilir?",
+   "cevap": "Son rakam 0 olduğu için 5 koşulu zaten sağlanır. 4 + b’nin 3’ün katı olması için b = 2, 5 veya 8 olabilir."
+  }
+ ],
+ "ozet": [
+  "2, 5 ve 10 kuralları birler basamağına dayanır.",
+  "3 ve 9 için rakamlar toplamı incelenir.",
+  "4 için son iki basamağın oluşturduğu sayı incelenir.",
+  "6 için 2 ve 3 koşulları birlikte sağlanmalıdır."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Bir dolap kodunun rakamları toplamı 18, son rakamı 5’tir. Kodun gösterdiği sayı hangi sayıya kesinlikle bölünür?",
+   "secenekler": [
+    "2",
+    "4",
+    "6",
+    "9"
+   ],
+   "dogru": 3,
+   "aciklama": "Rakamlar toplamı 9’un katıdır; son rakam tek olduğundan 2 ve 6 koşulları sağlanmaz."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Hangi karttaki sayı 4’e tam bölünür?",
+   "secenekler": [
+    "1 218",
+    "2 326",
+    "4 112",
+    "3 514"
+   ],
+   "dogru": 2,
+   "aciklama": "12, 4’ün katıdır; diğer son iki basamaklar değildir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "36a sayısı hem 5’e hem 9’a tam bölünüyor. a kaçtır?",
+   "secenekler": [
+    "0",
+    "3",
+    "5",
+    "9"
+   ],
+   "dogru": 0,
+   "aciklama": "5 için a, 0 veya 5 olur. Rakamlar toplamını 9’un katı yapan seçenek 0’dır."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Her yargıyı değerlendiriniz. Yanlış yargının açıklamasını okuyunuz.",
+   "ifadeler": [
+    {
+     "metin": "9’a bölünen her doğal sayı 3’e de bölünür.",
+     "dogru": true,
+     "aciklama": "9’un katları 3’ün de katıdır."
+    },
+    {
+     "metin": "3’e bölünen her sayı 6’ya bölünür.",
+     "dogru": false,
+     "aciklama": "Sayının ayrıca çift olması gerekir."
+    },
+    {
+     "metin": "Son iki basamağı 00 olan doğal sayı 4’e bölünür.",
+     "dogru": true,
+     "aciklama": "4 kuralını sağlar."
+    },
+    {
+     "metin": "Son rakamı 5 olan her sayı 10’a bölünür.",
+     "dogru": false,
+     "aciklama": "10 için son rakam 0 olmalıdır."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Birbiriyle ilişkili kavram ve açıklamaları eşleştiriniz.",
+   "ciftler": [
+    [
+     "Birler basamağı 0 veya 5",
+     "5 kuralı"
+    ],
+    [
+     "Rakamlar toplamı 9’un katı",
+     "9 kuralı"
+    ],
+    [
+     "Hem çift hem 3’ün katı",
+     "6 kuralı"
+    ],
+    [
+     "Son iki basamak 4’ün katı",
+     "4 kuralı"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "3 ve 9 kurallarında rakamlar ___ incelenir.",
+     "cevap": "toplamı"
+    },
+    {
+     "metin": "4 kuralında son ___ basamak kullanılır.",
+     "cevap": "iki"
+    },
+    {
+     "metin": "6’ya bölünebilmek için sayı ___ olmalıdır.",
+     "cevap": "çift"
+    }
+   ],
+   "fazla": [
+    "tek"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "“Son rakamı çift olan her sayı 4’e bölünür.” iddiasını bir karşı örnekle değerlendiriniz.",
+   "ipuclari": [
+    "Çift bir sayı seçiniz.",
+    "Seçtiğiniz sayının 4 ile bölümündeki kalana bakınız."
+   ],
+   "cevap": "Örneğin 14 çifttir ama 4’e tam bölünmez. İddia yanlıştır; 4 için son iki basamağın oluşturduğu sayı incelenmelidir."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "72c sayısı 6’ya bölünüyor. c’nin bütün değerlerini bulunuz.",
+   "ipuclari": [
+    "Son rakam çift olmalı.",
+    "7 + 2 + c = 9 + c, 3’ün katı olmalı."
+   ],
+   "cevap": "Çift rakamlar 0, 2, 4, 6, 8’dir. Bunlardan 9 + c toplamını 3’ün katı yapanlar 0 ve 6’dır."
+  }
+ ],
+ "yayin_tarihi": "2026-10-01"
+}
