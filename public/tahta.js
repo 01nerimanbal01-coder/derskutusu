@@ -294,6 +294,7 @@ const Tahta = (() => {
       dugme('is', { baslik: 'Hepsini temizle', html: svg('M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3') }, 'temizle') +
       (kapat ? dugme('is', { baslik: 'Kalemi kapat (Esc)', html: svg('M6 6l12 12M18 6L6 18') }, 'kapat', 'kapat') : '') + `</div>`;
     kap.append(cubuk);
+    sabitBoy(cubuk);
     const guncelle = () => {
       cubuk.querySelectorAll('[data-arac]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.arac === d.arac)));
       cubuk.querySelectorAll('[data-renk]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.renk === d.renk)));
@@ -368,6 +369,42 @@ const Tahta = (() => {
   return { olustur };
 })();
 
+
+// Kalem bandı ve kalem düğmesi sayfa büyütülünce büyümez (kullanıcı 01.10: "sayfayı büyüttüğümde kalem bandı çok büyüyor, sabit ve küçük kalsın").
+// Tarayıcı yakınlaştırması (outerWidth / innerWidth) ve iki parmakla büyütme (visualViewport.scale) ters ölçeklenir;
+// sabit konumlu öğe görünen alanın altına (bant ortada, düğme sağda) yerleştirilir, ekrandaki boyu ve kenar boşluğu değişmez.
+const sabitBoy = typeof window === 'undefined' ? () => {} : (() => {
+  const ogeler = new Map();
+  const vv = window.visualViewport;
+  const yakinlik = () => {
+    const z = window.outerWidth && window.innerWidth ? window.outerWidth / window.innerWidth : 1;
+    return !isFinite(z) || Math.abs(z - 1) < 0.07 ? 1 : z;   // pencere kenarı, kaydırma çubuğu ve kenar paneli küçük farkı yok sayılır
+  };
+  function uygula() {
+    const g = 1 / (yakinlik() * (vv ? vv.scale : 1));
+    const cw = document.documentElement.clientWidth, ch = document.documentElement.clientHeight;
+    for (const [el, yatay] of ogeler) {
+      if (!el.isConnected) { ogeler.delete(el); continue; }
+      if (Math.abs(g - 1) < 0.01) { el.style.transform = el.style.transformOrigin = el.style.maxWidth = ''; continue; }
+      const cs = getComputedStyle(el);
+      const sabit = cs.position === 'fixed';
+      const kenar = parseFloat(cs.bottom) || 16;
+      let dx = 0, dy = 0;
+      if (sabit && vv) {
+        dx = yatay === 'sag' ? (vv.offsetLeft + vv.width - kenar * g) - (cw - kenar) : (vv.offsetLeft + vv.width / 2) - cw / 2;
+        dy = (vv.offsetTop + vv.height - kenar * g) - (ch - kenar);
+      }
+      el.style.transformOrigin = yatay === 'sag' ? '100% 100%' : '50% 100%';
+      el.style.transform = `translate(${dx.toFixed(1)}px, ${dy.toFixed(1)}px) scale(${g.toFixed(4)})`;
+      if (yatay === 'orta') el.style.maxWidth = sabit && vv ? `${((vv.width - 24 * g) / g).toFixed(0)}px` : `calc((100% - 24px) / ${g.toFixed(4)})`;
+    }
+  }
+  addEventListener('resize', uygula);         // resize ve visualViewport olayları zaten kare başına bir kez gelir
+  vv?.addEventListener('resize', uygula);
+  vv?.addEventListener('scroll', uygula);
+  return (el, yatay = 'orta') => { ogeler.set(el, yatay); uygula(); };
+})();
+
 if (typeof document !== 'undefined') {
   // tahta.html: boş tahta, sayfalar, zemin, kaydet
   const tahtaKap = document.getElementById('tahta');
@@ -391,6 +428,7 @@ if (typeof document !== 'undefined') {
     ac.type = 'button'; ac.className = 'kalem-dugme'; ac.title = 'Kalemle sayfaya yaz (akıllı tahta)'; ac.setAttribute('aria-label', 'Kalemle sayfaya yaz');
     ac.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l4-1 10-10-3-3L5 16l-1 4zM14 5l3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Kalemle yaz</span>';
     document.body.append(ac);
+    sabitBoy(ac, 'sag');
     let t = null, kap = null;
     const kapat = () => { kap.hidden = true; ac.hidden = false; document.body.classList.remove('kalem-acik'); };
     ac.addEventListener('click', () => {
