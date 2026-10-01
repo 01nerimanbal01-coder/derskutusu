@@ -145,6 +145,30 @@ def afis():
     return svg(360, 142, ic, 'Afiş: Kültür günü. Farklı ülkelerden gelen arkadaşlarımız yemeklerini, oyunlarını ve dillerini tanıtıyor. Cuma 13.30, okul bahçesi.', 27)
 
 
+def gunluk():
+    """Öğrencinin günlük sayfası (empati sorusunun durumu)."""
+    satir = ['Okul korosunun seçmeleri bugündü.', 'Heyecandan sesim titredi, seçilemedim.', 'Eve gelince kimseyle konuşmadan odama', 'kapandım. Az önce ablam kapıyı çaldı.']
+    ic = f'<rect x="10" y="4" width="340" height="128" rx="4" fill="#f4f8ff" stroke="{MAVI}" stroke-width="1.4"/>'
+    ic += f'<line x1="44" y1="4" x2="44" y2="132" stroke="{KIR}" stroke-width="1"/>'
+    ic += ''.join(f'<circle cx="26" cy="{24 + k * 32}" r="4" fill="#fff" stroke="{GRI}" stroke-width="1.2"/>' for k in range(4))
+    ic += yazi(56, 27, 'Günlüğüm', 14, MAVI, 'start') + yazi(338, 27, 'Salı', 11.5, SOLUK, 'end', True)
+    for i, s in enumerate(satir):
+        y = 52 + i * 21
+        ic += f'<line x1="52" y1="{y + 6}" x2="340" y2="{y + 6}" stroke="#d6e0f5" stroke-width="1"/>' + yazi(56, y, s, 13, LAC, 'start', True)
+    return svg(360, 136, ic, 'Günlük, salı: Okul korosunun seçmeleri bugündü. Heyecandan sesim titredi, seçilemedim. Eve gelince kimseyle konuşmadan odama kapandım. Az önce ablam kapıyı çaldı.', 28)
+
+
+def tepkiler():
+    """Kırılan ortak maket ve iki öğrencinin tepkisi."""
+    ic = kutu(4, 4, 352, 30, GRI_A, GRI, 8, 1.2) + yazi(180, 23.5, 'Ortak maket taşınırken düştü, çatısı kırıldı.', 12.5, LAC, 'middle', True)
+    kart = [('A', ['Sen zaten hiçbir işi', 'düzgün yapamıyorsun!'], KIR, KIR_A), ('B', ['Üzülme, bu herkesin', 'başına gelebilir. Çatıyı', 'birlikte onaralım.'], YES, YES_A)]
+    for i, (h, satirlar, c, d) in enumerate(kart):
+        x = 4 + i * 180
+        ic += kutu(x, 44, 172, 78, d, c, 10, 1.5) + harf(x + 18, 62, h, c) + yazi(x + 34, 66.5, f'{h} tepkisi', 11.5, c, 'start')
+        ic += ''.join(yazi(x + 12, 88 + j * 15, s, 11.5, LAC, 'start', True) for j, s in enumerate(satirlar))
+    return svg(360, 126, ic, 'Ortak maket taşınırken düştü, çatısı kırıldı. A tepkisi: Sen zaten hiçbir işi düzgün yapamıyorsun! B tepkisi: Üzülme, bu herkesin başına gelebilir. Çatıyı birlikte onaralım.', 27)
+
+
 def uygula(o):
     s = o['sorular']
     s[2]['gorsel'] = turler()
@@ -153,3 +177,4 @@ def uygula(o):
     s[8]['gorsel'] = sohbet()
     s[9]['gorsel'] = notlar()
     s[11]['gorsel'] = afis()
+    s[13]['gorsel'] = gunluk()
