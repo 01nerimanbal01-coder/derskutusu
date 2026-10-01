@@ -115,6 +115,30 @@ def abide():
     return svg(360, 112, ic, 'Çanakkale Şehitler Abidesi çizimi: bir kaide üzerinde dört sütun ve üstünde düz bir tavan', 24)
 
 
+def notlar():
+    """İki öğrencinin kervansaray notu: tek nedenli ve çok yönlü değerlendirme."""
+    ic = yazi(180, 16, 'Konu: Anadolu Selçuklu kervansaraylarının yapılması', 11.5, LAC)
+    kart = [(4, 'Ece’nin notu', TUR, TUR_A, ['Sultan çok zengindi.', 'Bu yüzden yollara', 'kervansaray yaptırdı.']),
+            (184, 'Kaan’ın notu', MAVI, MAVI_A, ['Yollar güvenli değildi.', 'Tüccarlar konaklayacak', 'yer arıyordu. Han da', 'yolcuları buluşturuyordu.'])]
+    for x, bas, c, d, satir in kart:
+        ic += kutu(x, 26, 172, 90, d, c, 6, 1.3) + yazi(x + 86, 44, bas, 11.5, c)
+        ic += ''.join(yazi(x + 12, 64 + k * 15, t, 11, LAC, 'start', True) for k, t in enumerate(satir))
+    return svg(360, 120, ic, 'Konu: Anadolu Selçuklu kervansaraylarının yapılması. Ece’nin notu: Sultan çok zengindi. Bu yüzden yollara kervansaray yaptırdı. Kaan’ın notu: Yollar güvenli değildi. Tüccarlar konaklayacak yer arıyordu. Han da yolcuları buluşturuyordu.', 28)
+
+
+def baris():
+    """Hiroşima: 1945 yıkım, yalnız bir yapı ayakta; bugün barış anıtı. Zaman şeridi + kubbe iskeleti."""
+    ic = f'<line x1="20" y1="104" x2="340" y2="104" stroke="{GRI}" stroke-width="2"/>'
+    for x, yil, ust, alt in [(70, '1945', 'Kente atom bombası atılır.', 'Yalnız bu yapı ayakta kalır.'), (290, 'Bugün', 'Yapı onarılmadan', 'barış anıtı olarak korunur.')]:
+        ic += f'<circle cx="{x}" cy="104" r="6" fill="{KIR if yil == "1945" else YES}"/>' + yazi(x, 122, yil, 12, LAC)
+        ic += yazi(x, 138, ust, 10.5, SOLUK, 'middle', True) + yazi(x, 152, alt, 10.5, SOLUK, 'middle', True)
+    ic += f'<rect x="150" y="56" width="60" height="38" fill="#e9e3d6" stroke="{SOLUK}" stroke-width="1.2"/>'
+    ic += ''.join(f'<rect x="{156 + 13 * k}" y="66" width="7" height="12" fill="{GRI}"/>' for k in range(4))
+    ic += f'<path d="M160 56 Q180 20 200 56" fill="none" stroke="{SOLUK}" stroke-width="2"/><line x1="180" y1="30" x2="180" y2="56" stroke="{SOLUK}" stroke-width="1.6"/><path d="M168 56 Q180 34 192 56" fill="none" stroke="{SOLUK}" stroke-width="1.4"/>'
+    ic += f'<path d="M150 94 l6 -8 l8 6 l6 -6" fill="none" stroke="{KAHVE}" stroke-width="1.2"/>'
+    return svg(360, 158, ic, 'Zaman şeridi: 1945, kente atom bombası atılır, yalnız bu yapı ayakta kalır. Bugün, yapı onarılmadan barış anıtı olarak korunur. Ortada kubbesinin yalnız iskeleti kalmış yapı çizimi.', 34)
+
+
 def uygula(o):
     s = o['sorular']
     s[0]['gorsel'] = eser_kartlari()
@@ -124,3 +148,5 @@ def uygula(o):
     s[7]['gorsel'] = soru_listesi()
     s[8]['gorsel'] = hizmet()
     s[9]['gorsel'] = abide()
+    s[12]['gorsel'] = notlar()
+    s[13]['gorsel'] = baris()
