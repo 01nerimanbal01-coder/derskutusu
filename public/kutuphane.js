@@ -4,6 +4,12 @@
 const RENKLER = ['#2451d6', '#12a150', '#e0662b', '#8b3fd6', '#0e8fa8', '#c2366b', '#b86e00', '#3a5a8c', '#1f9d8b', '#d6453d', '#5b6ee1'];
 const parametre = new URLSearchParams(location.search);
 
+// Ortak içerikler (ör. çalışma kâğıtları) iki kitlede de sayılır ve listelenir.
+function kitleDenetleyici(dersler) {
+  const turKitle = Object.fromEntries(dersler.turler.map((t) => [t.ad, t.kitle]));
+  return (i, k) => (i.kitle || 'ogrenci') === k || turKitle[i.tur] === k;
+}
+
 function icerikKarti(i, dersler) {
   const dersAd = dersler.dersler[i.ders] || i.ders;
   const adres = i.dosya || i.baglanti;
@@ -33,10 +39,11 @@ function sinifSayfasi({ dersler, icerikler }) {
   $('#sinif-gecis').replaceChildren(...Object.keys(dersler.siniflar).map((n) =>
     el('a', { href: `sinif.html?no=${n}`, 'aria-current': Number(n) === no ? 'page' : null }, `${n}. sınıf`)));
   const buSinif = icerikler.filter((i) => Number(i.sinif) === no);
+  const kitleUyar = kitleDenetleyici(dersler);
   const dersKarti = (d, s) => {
     const ad = dersler.dersler[d];
-    const ogrenci = buSinif.filter((i) => i.ders === d && i.kitle !== 'ogretmen').length;
-    const ogretmen = buSinif.filter((i) => i.ders === d && i.kitle === 'ogretmen').length;
+    const ogrenci = buSinif.filter((i) => i.ders === d && kitleUyar(i, 'ogrenci')).length;
+    const ogretmen = buSinif.filter((i) => i.ders === d && kitleUyar(i, 'ogretmen')).length;
     return el('a', { sinif: 'ders-kart', href: `icerikler.html?sinif=${no}&ders=${d}` },
       el('div', { sinif: 'ders-kart-ust' },
         el('span', { sinif: 'ders-harf', style: `background:${RENKLER[s % RENKLER.length]}` }, ad.replace(/^T\.C\. /, '').charAt(0)),
@@ -74,9 +81,7 @@ function icerikSayfasi({ dersler, icerikler }) {
     alan.ders.replaceChildren(el('option', { value: '' }, 'Bütün dersler'), ...kisa.map((d) => el('option', { value: d }, dersler.dersler[d])));
     if (kisa.includes(onceki)) alan.ders.value = onceki;
   };
-  // İçerik hem kendi kitlesinde hem türünün kitlesinde görünür (çalışma kâğıdı öğrenciye de öğretmene de).
-  const turKitle = Object.fromEntries(dersler.turler.map((t) => [t.ad, t.kitle]));
-  const kitleUyar = (i, k) => (i.kitle || 'ogrenci') === k || turKitle[i.tur] === k;
+  const kitleUyar = kitleDenetleyici(dersler);
   const turSecenekleri = () => {
     const k = alan.kitle.value;
     const onceki = alan.tur.value;
