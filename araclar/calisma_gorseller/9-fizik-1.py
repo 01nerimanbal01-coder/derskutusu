@@ -128,6 +128,33 @@ def ornek_kartlari():
     return svg(360, 91, ic, 'Örnekler: 1 Gezegenlerin yörüngeleri hesaplanır. 2 Bitki dokusu mikroskopla görüntülenir. 3 Atom altı parçacıkların davranışı incelenir.', 25)
 
 
+def atislar():
+    """Aynı noktadan aynı hızla iki atış: 50° potaya girer, 30° potadan önce yere düşer."""
+    ic = f'<line x1="10" y1="150" x2="350" y2="150" stroke="{GRI}" stroke-width="1.6"/>'
+    ic += f'<rect x="327" y="30" width="5" height="120" fill="{SOLUK}"/><rect x="318" y="30" width="6" height="44" rx="1" fill="#fff" stroke="{LAC}" stroke-width="1.4"/>'
+    ic += f'<line x1="288" y1="66" x2="318" y2="66" stroke="{TUR}" stroke-width="2.6"/>' + ''.join(f'<line x1="{290 + 6 * k}" y1="67" x2="{292 + 5 * k}" y2="80" stroke="{GRI}" stroke-width=".9"/>' for k in range(5))
+    ic += f'<path d="M40 150 Q160 7 300 64" fill="none" stroke="{MAVI}" stroke-width="1.8" stroke-dasharray="5 4"/>'
+    ic += f'<path d="M40 150 Q150 86.5 262 150" fill="none" stroke="{KIR}" stroke-width="1.8" stroke-dasharray="5 4"/>'
+    ic += f'<path d="M80 150 A40 40 0 0 0 65.7 119.4" fill="none" stroke="{MAVI}" stroke-width="1.3"/>' + yazi(168, 50, '50°', 12, MAVI)
+    ic += f'<path d="M100 150 A60 60 0 0 0 92 120" fill="none" stroke="{KIR}" stroke-width="1.3"/>' + yazi(150, 100, '30°', 12, KIR)
+    ic += f'<circle cx="40" cy="143" r="7" fill="{TUR}"/>' + yazi(40, 166, 'Atış noktası', 11, SOLUK, 'middle', True)
+    ic += f'<circle cx="262" cy="143" r="7" fill="{TUR}" opacity=".45"/>'
+    return svg(360, 172, ic, 'Aynı noktadan aynı hızla iki atış: 50 derecelik atış potaya girer, 30 derecelik atış potaya ulaşmadan yere düşer.', 38)
+
+
+def fotosentez():
+    """Fotosentezde üç süreç: ışığın soğurulması, CO2 ve suyun besine dönüşmesi, büyüme ve oksijen."""
+    ic = f'<circle cx="34" cy="34" r="16" fill="{ALTIN}"/>' + ''.join(f'<line x1="{34 + 21 * math.cos(a):.1f}" y1="{34 + 21 * math.sin(a):.1f}" x2="{34 + 27 * math.cos(a):.1f}" y2="{34 + 27 * math.sin(a):.1f}" stroke="{TUR}" stroke-width="1.6" stroke-linecap="round"/>' for a in [k * math.pi / 4 for k in range(8)])
+    ic += ok(56, 50, 150, 82, TUR, 1.6)
+    ic += f'<path d="M180 140 C178 110 180 80 182 50" fill="none" stroke="{YES}" stroke-width="3"/>'
+    ic += f'<path d="M181 100 C160 80 140 84 148 92 C156 102 172 104 181 100 Z" fill="{YES}"/><path d="M182 78 C204 58 222 64 214 72 C206 82 192 84 182 78 Z" fill="{YES}"/><path d="M182 52 C170 36 176 28 184 34 C190 40 188 48 182 52 Z" fill="{YES}"/>'
+    ic += f'<path d="M156 140 h50 l-6 26 h-38 Z" fill="{KAHVE}"/>'
+    ic += rozet(30, 114, '1', TUR) + yazi(44, 118, 'Işığın soğurulması', 11.5, LAC, 'start', True)
+    ic += rozet(232, 96, '2', MAVI) + yazi(244, 100, 'CO₂ ve suyun', 11.5, LAC, 'start', True) + yazi(244, 115, 'besine dönüşmesi', 11.5, LAC, 'start', True)
+    ic += rozet(232, 40, '3', YES) + yazi(244, 37, 'Büyüme ve', 11.5, LAC, 'start', True) + yazi(244, 52, 'oksijen salınması', 11.5, LAC, 'start', True)
+    return svg(360, 170, ic, 'Fotosentez: 1 ışığın soğurulması, 2 karbondioksit ve suyun besine dönüşmesi, 3 büyüme ve oksijen salınması.', 36)
+
+
 def uygula(o):
     s = o['sorular']
     s[0]['gorsel'] = olaylar()
@@ -137,3 +164,5 @@ def uygula(o):
     s[8]['gorsel'] = tiyatro()
     s[9]['gorsel'] = araclar()
     s[11]['gorsel'] = ornek_kartlari()
+    s[12]['gorsel'] = atislar()
+    s[13]['gorsel'] = fotosentez()
