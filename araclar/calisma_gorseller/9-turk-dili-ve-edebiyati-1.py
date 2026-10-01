@@ -102,6 +102,28 @@ def metinler():
     return svg(360, 86, ic, '1. metin: Çay, ılıman ve yağışlı iklimde yetişir. Yaprakları yılda birkaç kez toplanır. 2. metin: Çay bahçeleri sabah sisinde yeşil bir denize dönmüş, yapraklar yeni uyanıyordu.', 21)
 
 
+def koro():
+    """Söz korosu planı: dizeler A-B-A-B dağıtılmış (yönerge: ilk iki dize bir takım, son iki dize öbür takım)."""
+    ic = kutu(4, 4, 352, 120, '#fff', SOLUK, 8, 1.3) + yazi(180, 24, 'Söz korosu planı (1. dörtlük)', 12, LAC)
+    for i, t in enumerate('ABAB'):
+        y = 36 + i * 21
+        c, d = (MAVI, MAVI_A) if t == 'A' else (TUR, TUR_A)
+        ic += f'<line x1="20" y1="{y + 19}" x2="340" y2="{y + 19}" stroke="{GRI_A}" stroke-width="1"/>' + yazi(40, y + 14, f'{i + 1}. dize', 11.5, LAC, 'start', True)
+        ic += kutu(220, y + 1, 96, 16, d, c, 8, 1.1) + yazi(268, y + 13, f'{t} takımı', 11, c)
+    return svg(360, 128, ic, 'Söz korosu planı, 1. dörtlük: 1. dize A takımı, 2. dize B takımı, 3. dize A takımı, 4. dize B takımı.', 27)
+
+
+def kaynaklar():
+    """Romancının üç kaynağı: arşiv (tarih), duygular (psikoloji), göçün aileye etkisi (sosyoloji)."""
+    kart = [('1', '1920’lerin gazete arşivi ve anı kitapları', MOR, MOR_A), ('2', 'Kaygı ve korku duygularını açıklayan kitaplar', YES, YES_A),
+            ('3', 'Köyden kente göçün aile ilişkilerine etkisi', CAM, CAM_A)]
+    ic = ''
+    for i, (h, t, c, d) in enumerate(kart):
+        y = 4 + i * 29
+        ic += kutu(4, y, 352, 25, d, c, 8, 1.3) + rozet(21, y + 12.5, h, c) + yazi(38, y + 17, t, 11.5, LAC, 'start', True)
+    return svg(360, 91, ic, 'Romancının kaynakları: 1 1920’lerin gazete arşivi ve anı kitapları. 2 Kaygı ve korku duygularını açıklayan kitaplar. 3 Köyden kente göçün aile ilişkilerine etkisi.', 22)
+
+
 def uygula(o):
     s = o['sorular']
     s[0]['gorsel'] = sanat_simgeleri()
@@ -110,3 +132,5 @@ def uygula(o):
     s[5]['gorsel'] = dize()
     s[7]['gorsel'] = okuma_kartlari()
     s[9]['gorsel'] = metinler()
+    s[12]['gorsel'] = koro()
+    s[13]['gorsel'] = kaynaklar()
