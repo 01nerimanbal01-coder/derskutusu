@@ -142,6 +142,30 @@ def sorumluluk():
     return svg(360, 110, ic, 'Sorumluluk bilinci: kendisine, ailesine, topluma ve Allah’a (cc) karşı', 23)
 
 
+def pano():
+    """Apartman panosundaki notlar (sosyal ilişkiler: akrabalık, komşuluk, yardımlaşma)."""
+    ic = f'<rect x="4" y="4" width="352" height="134" rx="6" fill="#d9b98f" stroke="{KAHVE}" stroke-width="2"/>'
+    ic += yazi(180, 22, 'APARTMAN PANOSU', 12, '#5a3a17')
+    notlar = [(14, ['Kuzenimiz Elif', 'evleniyor.', 'Düğüne hepimiz', 'davetliyiz.'], '#fff7c2'),
+              (126, ['Nuri Amca hasta.', 'Alışverişini', 'sırayla', 'yapalım.'], '#dff3e6'),
+              (238, ['Bayramda bütün', 'komşularla', 'bahçede', 'buluşalım.'], '#e3ecff')]
+    for x, satir, d in notlar:
+        ic += f'<rect x="{x}" y="32" width="108" height="96" fill="{d}" stroke="{GRI}" stroke-width=".8"/><circle cx="{x + 54}" cy="39" r="3.5" fill="{KIR}"/>'
+        ic += ''.join(yazi(x + 54, 62 + k * 17, s, 11, LAC, 'middle', True) for k, s in enumerate(satir))
+    return svg(360, 142, ic, 'Apartman panosu: Kuzenimiz Elif evleniyor. Düğüne hepimiz davetliyiz. Nuri Amca hasta. Alışverişini sırayla yapalım. Bayramda bütün komşularla bahçede buluşalım.', 30)
+
+def cizelge():
+    """Güneş'in beş gün boyunca doğuş saatleri: her gün bir dakika sonra."""
+    gun = [('1 Ekim', '06.59'), ('2 Ekim', '07.00'), ('3 Ekim', '07.01'), ('4 Ekim', '07.02'), ('5 Ekim', '07.03')]
+    ic = kutu(4, 4, 352, 26, TUR_A, TUR, 6, 1.3) + yazi(180, 22, 'Güneş’in doğuş saatleri', 12.5, '#9a4a00')
+    for i, (g, s) in enumerate(gun):
+        x = 4 + i * 70.4
+        ic += kutu(x + 2, 36, 66, 58, '#fff', TUR, 6, 1.2) + yazi(x + 35, 54, g, 11, SOLUK, 'middle', True)
+        ic += f'<circle cx="{x + 18}" cy="{74}" r="6" fill="{ALTIN}"/><line x1="{x + 8}" y1="{80}" x2="{x + 28}" y2="{80}" stroke="{TUR}" stroke-width="1.4"/>'
+        ic += yazi(x + 47, 79, s, 12.5, LAC)
+    return svg(360, 98, ic, 'Güneş’in doğuş saatleri: 1 Ekim 06.59, 2 Ekim 07.00, 3 Ekim 07.01, 4 Ekim 07.02, 5 Ekim 07.03', 24)
+
+
 def uygula(o):
     s = o['sorular']
     s[1]['gorsel'] = ayet_karti()
@@ -151,3 +175,5 @@ def uygula(o):
     s[7]['gorsel'] = isim_kartlari()
     s[8]['gorsel'] = emanet()
     s[10]['gorsel'] = sorumluluk()
+    s[12]['gorsel'] = pano()
+    s[13]['gorsel'] = cizelge()
