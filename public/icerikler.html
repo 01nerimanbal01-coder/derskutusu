@@ -17,7 +17,7 @@
 <meta property="og:title" content="İçerikler · Ders Kutusu">
 <meta property="og:description" content="Sınıfa, derse ve türe göre konu anlatımları, soru çözümleri, videolar, yıllık planlar ve yazılı soruları.">
 <meta property="og:image" content="https://derskutusu.com/paylasim.png">
-<link rel="stylesheet" href="/stil.css?v=30">
+<link rel="stylesheet" href="/stil.css?v=31">
 </head>
 <body>
 <a class="atla" href="#icerik">İçeriğe geç</a>
@@ -85,15 +85,19 @@
         <label>Tür<select id="s-tur"></select></label>
         <label class="arama">Ara<input id="s-ara" type="search" placeholder="Konu, başlık…" autocomplete="off"></label>
       </form>
-      <p class="sonuc-bilgi"><span id="sonuc-sayi"></span><button type="button" id="temizle" hidden>Seçimleri temizle</button></p>
+      <div class="secili-suzgecler" id="secili-suzgecler" role="group" aria-label="Seçili süzgeçler" hidden></div>
+      <p class="sonuc-bilgi"><span id="sonuc-sayi" role="status" aria-live="polite" aria-atomic="true"></span><button type="button" id="temizle" hidden>Seçimleri temizle</button></p>
       <div class="kartlar" id="kartlar"></div>
       <div class="yakinda" id="icerik-yakinda" hidden>
         <div class="yakinda-simge" aria-hidden="true"><svg><use href="#s-kitap"/></svg></div>
         <div>
-          <h3>Bu seçimde henüz içerik yok</h3>
-          <p>İçerikler eklendikçe burada listelenecek. Yeni içeriklerden haberdar olmak için bizi takip edin.</p>
+          <h3 id="sonucsuz-baslik">Bu seçimde henüz içerik yok</h3>
+          <p id="sonucsuz-aciklama">Başka bir sınıf, ders veya tür seçebilirsiniz.</p>
+          <div class="sonucsuz-eylemler">
+            <button class="dugme ana" type="button" id="aramayi-temizle" hidden>Yalnız aramayı temizle</button>
+            <button class="dugme" type="button" id="sonucsuz-temizle" hidden>Tüm içerikleri göster</button>
+          </div>
         </div>
-        <a class="dugme ana" data-sosyal="youtube" target="_blank" rel="noopener" hidden><svg><use href="#s-youtube"/></svg>Abone ol</a>
       </div>
     </div>
   </section>
@@ -135,10 +139,10 @@
   </div>
 </footer>
 
-<script src="/ortak.js?v=30"></script>
-<script src="/kutuphane.js?v=30"></script>
-<script src="/arama.js?v=30"></script>
-<script src="/tahta.js?v=30"></script>
+<script src="/ortak.js?v=31"></script>
+<script src="/kutuphane.js?v=31"></script>
+<script src="/arama.js?v=31"></script>
+<script src="/tahta.js?v=31"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fffb5e8a709947ee9ba14ea753d96275"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

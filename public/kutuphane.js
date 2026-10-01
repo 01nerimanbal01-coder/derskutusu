@@ -89,7 +89,18 @@ function icerikSayfasi({ dersler, icerikler }) {
   for (const a of ['ders', 'tur']) if (parametre.get(a)) alan[a].value = parametre.get(a);
   if (parametre.get('ara')) alan.ara.value = parametre.get('ara');
 
-  const kucuk = (s) => (s || '').toLocaleLowerCase('tr');
+  const secimiKaldir = (ad) => {
+    alan[ad].value = '';
+    if (ad === 'sinif') dersSecenekleri();
+    if (ad === 'kitle') turSecenekleri();
+    ciz();
+    alan[ad].focus();
+  };
+  const hepsiniTemizle = () => {
+    Object.values(alan).forEach((e) => { e.value = ''; });
+    dersSecenekleri(); turSecenekleri(); ciz();
+    alan.sinif.focus();
+  };
   const ciz = () => {
     const f = Object.fromEntries(Object.entries(alan).map(([a, e]) => [a, e.value.trim()]));
     const sonuc = icerikler.filter((i) => (!f.sinif || String(i.sinif) === f.sinif) && (!f.ders || i.ders === f.ders)
@@ -101,9 +112,28 @@ function icerikSayfasi({ dersler, icerikler }) {
     const secili = Object.values(f).some(Boolean);
     $('#sonuc-sayi').textContent = `${sonuc.length} içerik`;
     $('#temizle').hidden = !secili;
+    const secimler = $('#secili-suzgecler');
+    if (secimler) {
+      const adlar = { sinif: 'Sınıf', ders: 'Ders', kitle: 'Kimin için', tur: 'Tür', ara: 'Arama' };
+      secimler.replaceChildren(...Object.entries(f).filter(([, deger]) => deger).map(([ad, deger]) => {
+        const metin = ad === 'ara' ? deger : alan[ad].selectedOptions[0].textContent;
+        return el('button', { type: 'button', sinif: 'secili-suzgec',
+          'aria-label': `${adlar[ad]} seçimini kaldır: ${metin}`, onclick: () => secimiKaldir(ad) },
+          el('span', {}, `${adlar[ad]}: ${metin}`), el('span', { 'aria-hidden': 'true' }, '×'));
+      }));
+      secimler.hidden = !secili;
+    }
     const kartlar = $('#kartlar');
     kartlar.replaceChildren(...sonuc.map((i) => icerikKarti(i, dersler)));
     $('#icerik-yakinda').hidden = sonuc.length > 0;
+    if ($('#sonucsuz-baslik')) {
+      $('#sonucsuz-baslik').textContent = f.ara ? 'Aramanızla eşleşen içerik bulunamadı' : 'Bu seçimde henüz içerik yok';
+      $('#sonucsuz-aciklama').textContent = f.ara
+        ? 'Daha kısa bir sözcükle arayın veya yalnız aramayı temizleyerek seçtiğiniz dersin içeriklerine dönün.'
+        : 'Başka bir sınıf, ders veya tür seçebilir; tüm seçimleri temizleyerek içeriklere göz atabilirsiniz.';
+      $('#aramayi-temizle').hidden = !f.ara;
+      $('#sonucsuz-temizle').hidden = !secili;
+    }
     kartlar.hidden = !sonuc.length;
   };
   alan.sinif.addEventListener('change', () => { dersSecenekleri(); ciz(); });
@@ -111,7 +141,9 @@ function icerikSayfasi({ dersler, icerikler }) {
   alan.ders.addEventListener('change', ciz);
   alan.tur.addEventListener('change', ciz);
   alan.ara.addEventListener('input', ciz);
-  $('#temizle').addEventListener('click', () => { Object.values(alan).forEach((e) => { e.value = ''; }); dersSecenekleri(); turSecenekleri(); ciz(); });
+  $('#temizle').addEventListener('click', hepsiniTemizle);
+  $('#sonucsuz-temizle')?.addEventListener('click', hepsiniTemizle);
+  $('#aramayi-temizle')?.addEventListener('click', () => secimiKaldir('ara'));
   ciz();
 }
 

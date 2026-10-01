@@ -118,9 +118,20 @@ GOVDE = {
         <label>Tür<select id="s-tur"></select></label>
         <label class="arama">Ara<input id="s-ara" type="search" placeholder="Konu, başlık…" autocomplete="off"></label>
       </form>
-      <p class="sonuc-bilgi"><span id="sonuc-sayi"></span><button type="button" id="temizle" hidden>Seçimleri temizle</button></p>
+      <div class="secili-suzgecler" id="secili-suzgecler" role="group" aria-label="Seçili süzgeçler" hidden></div>
+      <p class="sonuc-bilgi"><span id="sonuc-sayi" role="status" aria-live="polite" aria-atomic="true"></span><button type="button" id="temizle" hidden>Seçimleri temizle</button></p>
       <div class="kartlar" id="kartlar"></div>
-{YAKINDA}
+      <div class="yakinda" id="icerik-yakinda" hidden>
+        <div class="yakinda-simge" aria-hidden="true"><svg><use href="#s-kitap"/></svg></div>
+        <div>
+          <h3 id="sonucsuz-baslik">Bu seçimde henüz içerik yok</h3>
+          <p id="sonucsuz-aciklama">Başka bir sınıf, ders veya tür seçebilirsiniz.</p>
+          <div class="sonucsuz-eylemler">
+            <button class="dugme ana" type="button" id="aramayi-temizle" hidden>Yalnız aramayı temizle</button>
+            <button class="dugme" type="button" id="sonucsuz-temizle" hidden>Tüm içerikleri göster</button>
+          </div>
+        </div>
+      </div>
     </div>
   </section>''', ('kutuphane.js',)),
     'belgeler.html': ('Resmî belgeler', 'MEB, ÖDSGM, DÖGM ve ÖSYM resmî belgeleri: öğretim programları, kılavuzlar, ortak yazılı tabloları, LGS ve YKS.', '''  <section class="sayfa-bas">

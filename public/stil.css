@@ -198,6 +198,15 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
 .suzgec-cubugu select:focus, .suzgec-cubugu input:focus { outline: 2px solid var(--vurgu); outline-offset: 0; border-color: transparent; }
 .sonuc-bilgi { color: var(--soluk); font-size: 14px; margin-bottom: 16px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
 .sonuc-bilgi button { font: inherit; font-size: 14px; color: var(--vurgu); background: none; border: 0; cursor: pointer; padding: 0; }
+.secili-suzgecler { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.secili-suzgec { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; max-width: 100%;
+  padding: 8px 12px; border: 1px solid var(--cizgi); border-radius: 24px; background: var(--vurgu-acik);
+  color: var(--vurgu); font: inherit; font-size: 14px; text-align: left; cursor: pointer; }
+.secili-suzgec span:first-child { min-width: 0; overflow-wrap: anywhere; }
+.secili-suzgec span:last-child { flex: none; font-size: 20px; line-height: 1; }
+.secili-suzgec:hover { border-color: var(--vurgu); }
+.sonucsuz-eylemler { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.sonucsuz-eylemler .dugme { white-space: normal; text-align: center; }
 
 /* Sayfa başlığı (iç sayfalar) */
 .sayfa-bas { padding: 56px 0 40px; background: radial-gradient(800px 300px at 90% 0%, var(--vurgu-acik), transparent 70%), var(--zemin-2);
