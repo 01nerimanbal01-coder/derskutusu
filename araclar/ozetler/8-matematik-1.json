@@ -209,6 +209,15 @@
     "30 : 2 = 15. 15'i kalansız bölen en küçük asal sayı 3'tür."
    ],
    "cevap": "60 | 2, 30 | 2, 15 | 3, 5 | 5, 1. Asal çarpanlar 2, 3 ve 5'tir; 60 = {us:2|2} · 3 · 5."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bölen listesinin sağında 2, 2 ve 3 bulunan bir sayının asal çarpanları “2 ve 3” olarak yazılıyor. Bu iki sayının çarpımı neden başlangıçtaki sayıyı vermiyor?",
+   "ipuclari": [
+    "Farklı asal çarpanları listelemekle bütün çarpanları çarpmayı ayır.",
+    "Bölen listesindeki tekrarları koru."
+   ],
+   "cevap": "Farklı asal çarpanlar 2 ve 3’tür; ancak sayıyı yeniden oluştururken iki tane 2 kullanılmalıdır. Sayı 2 · 2 · 3 = 12, üslü gösterimi {us:2|2} · 3’tür. Yalnız 2 · 3 yazmak bir 2 çarpanını eksik bırakır."
   }
  ]
 }

@@ -193,6 +193,7 @@ def sayfa_uret(o, dersler, icerikler):
         + f'<details><summary>Cevabı göster</summary><p>{e(x["cevap"])}</p></details></li>'
         for n, x in enumerate(o['ornekler'], 1))
     ozet = ''.join(f'<li>{e(x)}</li>' for x in o.get('ozet', []))
+    ozet_son = f'      <section class="ozet-bolum ozet-son"><h2>Kısaca</h2><ul class="kisaca">{ozet}</ul></section>' if ozet else ''
     ciktilar = ''.join(f'<li>{e(c)}</li>' for c in o['ciktilar'])
     ck = next((i for i in icerikler if i.get('tur') == 'Çalışma kâğıdı' and i.get('sinif') == o['sinif']
                and i.get('ders') == o['ders'] and i.get('hafta') == o['hafta']), None)
@@ -213,7 +214,7 @@ def sayfa_uret(o, dersler, icerikler):
       {bolumler}
       <section class="ozet-bolum"><h2>Örnekler</h2><ol class="ornekler">{ornekler}</ol></section>
       {etkinlik_html(o['etkinlikler']) if o.get('etkinlikler') else ''}
-      <section class="ozet-bolum ozet-son"><h2>Kısaca</h2><ul class="kisaca">{ozet}</ul></section>
+{ozet_son}
       {f'<section class="ozet-bolum ozet-ilgili"><h2>Bu dersin öteki kaynakları</h2><ul>{ilgili}</ul></section>' if ilgili else ''}
     </div>
   </article>'''
