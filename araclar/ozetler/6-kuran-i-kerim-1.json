@@ -133,15 +133,15 @@
     },
     {
       "tur": "coktan",
-      "soru": "“Ayetlerden oluşan bölüm” başlıklı karta hangi kavram yazılmalıdır?",
+      "soru": "Bir sayfada Mülk suresinin adı, 30 ayet bilgisi ve kenarda 29 cüz numarası yer alıyor. Bu bilgileri doğru ayıran kayıt hangisidir?",
       "secenekler": [
-        "Sayfa",
-        "Hizip",
-        "Cüz",
-        "Sure"
+        "29: sure sayısı / 30: cüz numarası",
+        "29: ayet numarası / 30: sayfa numarası",
+        "29: sayfa numarası / 30: sure numarası",
+        "29: cüz numarası / 30: surenin ayet sayısı"
       ],
       "dogru": 3,
-      "aciklama": "Sure, ayetlerin bir araya gelmesiyle oluşur."
+      "aciklama": "Kenar işareti 29. cüzü, başlıktaki 30 ise Mülk suresindeki toplam ayet sayısını gösterir."
     },
     {
       "tur": "dy",
@@ -230,5 +230,15 @@
       ],
       "cevap": "Çelişki değildir. Sure, ayetlerden oluşan bölümü; cüz ise okuma düzenindeki bölümü belirtir. Aynı sayfa bu iki bilgiyle birlikte tanıtılabilir."
     }
-  ]
+  ],
+  "yazan": "Codex",
+  "yazan_hesap": "E",
+  "yazan_oturum": "01a0f905-3dfa-7243-b40e-4220ac117f64",
+  "kalite_denetim": {
+    "tarih": "2026-10-02",
+    "denetleyen": "Codex",
+    "okunan_ornek": 6,
+    "okunan_etkinlik": 8,
+    "claude_incelemesi": "Yapılmadı"
+  }
 }

@@ -26,6 +26,7 @@ import random
 import re
 import subprocess
 import sys
+import uuid
 from pathlib import Path
 
 ARACLAR = Path(__file__).resolve().parent
@@ -35,10 +36,14 @@ KOK = SITE.parent
 IS = KOK / '03-ARACLAR' / '_calisma'
 FONT_KAYNAK = KOK / '02-KAYNAKLAR' / 'FONT'
 CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+CHROME_ARGS = [CHROME, '--headless=new', '--disable-gpu',
+               f'--user-data-dir={IS / ".chrome-pdf-profil"}',
+               '--no-first-run', '--no-default-browser-check', '--disable-background-networking']
 sys.path.insert(0, str(ARACLAR))
 sys.path.insert(0, str(KOK / '03-ARACLAR' / '_pylib'))
 
 import ozet_uret  # noqa: E402  (sembol dönüşümü e(), sayfa şablonu)
+from chrome_pdf_cli import calistir as chrome_calistir, dom_tamam
 
 def sembol(metin):
     # Mutlak değerin açılış çizgisinden sonra satır bölünmesin (|−3| tek parça kalsın).
@@ -231,10 +236,13 @@ Promise.all([...document.fonts].map(f => f.load())).then(() => document.fonts.re
     IS.mkdir(parents=True, exist_ok=True)
     gecici = IS / f'{ad}-olcum.html'
     gecici.write_text(belge, encoding='utf-8')
-    r = subprocess.run([CHROME, '--headless=new', '--disable-gpu', '--allow-file-access-from-files', '--window-size=1200,1600',
-                        '--virtual-time-budget=8000', '--dump-dom', gecici.as_uri()], capture_output=True, text=True, timeout=180)
+    dom_path = IS / f'{ad}-olcum-dom.html'
+    log_path = IS / f'{ad}-olcum-chrome.log'
+    chrome_calistir(CHROME_ARGS + ['--allow-file-access-from-files', '--window-size=1200,1600',
+                    '--virtual-time-budget=8000', '--dump-dom', gecici.as_uri()], dom_path, log_path,
+                    lambda: dom_tamam(dom_path, 'ck-olcum'))
     gecici.unlink()
-    m = re.search(r'<pre id="ck-olcum">(\[.*?\])</pre>', r.stdout, re.S)
+    m = re.search(r'<pre id="ck-olcum">(\[.*?\])</pre>', dom_path.read_text(encoding='utf-8'), re.S)
     if not m:
         return None
     n = len(o['sorular'])
@@ -453,8 +461,19 @@ def pdf_yap(o, ad, cevapli, font_css, plan=None, olcek=None):
         gecici = IS / f'{ad}{"-cevapli" if cevapli else ""}.html'
         IS.mkdir(parents=True, exist_ok=True)
         gecici.write_text(belge, encoding='utf-8')
-        subprocess.run([CHROME, '--headless=new', '--disable-gpu', '--no-pdf-header-footer', '--allow-file-access-from-files',
-                        f'--print-to-pdf={cikti}', gecici.as_uri()], capture_output=True, timeout=180)
+        log_path = IS / f'{gecici.stem}-chrome.log'
+        yeni_pdf = IS / f'{gecici.stem}-{uuid.uuid4().hex}.pdf'
+        def pdf_tamam():
+            if not yeni_pdf.exists() or b'%%EOF' not in yeni_pdf.read_bytes()[-1024:]:
+                return False
+            try:
+                return len(PdfReader(str(yeni_pdf)).pages) > 0
+            except Exception:
+                return False
+        chrome_calistir(CHROME_ARGS + ['--no-pdf-header-footer', '--allow-file-access-from-files',
+                        f'--print-to-pdf={yeni_pdf}', gecici.as_uri()],
+                        IS / f'{gecici.stem}-stdout.log', log_path, pdf_tamam)
+        yeni_pdf.replace(cikti)
         sayfa_sayisi = len(PdfReader(str(cikti)).pages)
         if sayfa_sayisi <= 2:
             return sayfa_sayisi, olcek

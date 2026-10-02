@@ -198,6 +198,8 @@ def sayfa_uret(o, dersler, icerikler):
     ck = next((i for i in icerikler if i.get('tur') == 'Çalışma kâğıdı' and i.get('sinif') == o['sinif']
                and i.get('ders') == o['ders'] and i.get('hafta') == o['hafta']), None)
     ck_dugme = f'<a class="dugme" href="/{ck["goruntule"]}">Çalışma kâğıdı</a>' if ck else ''
+    if o['ders'] == 'arapca' and o['sinif'] in (5, 6):
+        ck_dugme += f'<a class="dugme" href="/arapca.html?s={o["sinif"]}">Harf ve kelime çalış</a>'
     govde = f'''  <section class="sayfa-bas ozet-bas ders-{o["ders"]}">
     <div class="kap">
       <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/sinif.html?no={o["sinif"]}">{o["sinif"]}. sınıf</a><span aria-hidden="true">/</span><a href="/icerikler.html?sinif={o["sinif"]}&amp;ders={o["ders"]}">{e(ad)}</a><span aria-hidden="true">/</span><span>{o["hafta"]}. hafta</span></nav>

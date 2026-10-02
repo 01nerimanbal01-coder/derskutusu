@@ -11,7 +11,7 @@ from pathlib import Path
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'arama.js': '202610021530', 'kutuphane.js': '202610021610'}
+BETIK_SURUMLERI = {'arama.js': '202610021530', 'kutuphane.js': '202610021610', 'arapca.js': '202610022030'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
@@ -399,6 +399,7 @@ GOVDE['kelime.html'] = ('İngilizce kelime çalışması', '5 ve 6. sınıf İng
       <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/#icerikler">İçerikler</a><span aria-hidden="true">/</span><span>İngilizce kelimeler</span></nav>
       <h1>İngilizce kelime çalışması</h1>
       <p>Ders kitabındaki kelimeleri kartlarla öğren, sesli dinle, test çöz, yazarak pekiştir ve eşleştir. Kelimeler MEB İngilizce ders kitaplarının sözlük bölümünden alınmıştır.</p>
+      <p><a class="dugme" href="/arapca.html">Arapça harf ve kelime çalışması</a></p>
       <nav class="sekmeler" id="k-sinif" aria-label="Sınıf"></nav>
     </div>
   </section>
@@ -418,6 +419,24 @@ GOVDE['kelime.html'] = ('İngilizce kelime çalışması', '5 ve 6. sınıf İng
       <p class="kelime-not">İlerlemen yalnız bu tarayıcıda tutulur, hiçbir yere gönderilmez. Sesler tarayıcının kendi okuma özelliğiyle çıkar.</p>
     </div>
   </section>''', ('kelime.js',))
+
+GOVDE['arapca.html'] = ('Arapça harf ve kelime çalışması', '28 harf ve 48 kelime/ifade: harf biçimleri, harekeler, kartlar, test, Arapça klavyeyle yazma ve eşleştirme.', '''<link rel="stylesheet" href="/arapca.css?v=202610022030">
+<section class="sayfa-bas kelime-bas"><div class="kap">
+<nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span>/</span><a href="/icerikler.html?ders=arapca">Arapça</a><span>/</span><span>Harf ve kelime çalışması</span></nav>
+<p class="ust-baslik">Gör · Oku · Yaz · Eşleştir</p><h1>Arapça harf ve kelime çalışması</h1>
+<p>Harfleri ve harekeleri tanı; kelimeleri kartlarla öğren, test çöz ve Arapça klavyeyle yaz. İlk içerikler: 5. sınıf Merhaba, 6. sınıf Akrabalarım.</p>
+<nav class="sekmeler" id="a-sinif" aria-label="Sınıf"></nav></div></section>
+<section class="bolum kelime-bolum"><div class="kap">
+<div class="kelime-ust"><label class="kelime-tema">Kelime grubu<select id="a-konu"></select></label>
+<div class="kelime-ilerleme"><span>Öğrendiğin: <b id="a-ilerleme">0 / 0</b></span><span class="kelime-cubuk" aria-hidden="true"><i id="a-cubuk"></i></span><button type="button" class="cip-dugme" id="a-sifirla">Sıfırla</button></div></div>
+<nav class="sekmeler kelime-kipler" id="a-modlar" aria-label="Çalışma biçimi"></nav>
+<h2 id="a-baslik" class="kelime-baslik">Alfabe ve yazıya hazırlık</h2>
+<div id="a-alan" class="kelime-alan"><p>Harf ve kelimeler yükleniyor…</p></div>
+<p id="a-ses-durum" class="kelime-not" role="status"></p>
+<p class="kelime-not">İlerlemen yalnız bu tarayıcıda tutulur. Kelime ve ifade kapsamı MEB 5–6. sınıf Arapça kitapları ve yıllık planlarına göre hazırlanmıştır. Alfabe bölümü genel tekrar içindir.</p>
+<div class="k-dugmeler sol"><a class="dugme" href="/ozet/5-arapca-hafta-1.html">5. sınıf konu anlatımı</a><a class="dugme" href="/ozet/6-arapca-hafta-1.html">6. sınıf konu anlatımı</a><a class="dugme" href="/kelime.html">İngilizce kelime çalışması</a></div>
+<noscript>Alıştırmalar için JavaScript’i etkinleştirin. Konu anlatımlarını yukarıdaki bağlantılardan okuyabilirsiniz.</noscript>
+</div></section>''', ('arapca.js',))
 
 GOVDE['sinav.html'] = ('Sınavlar: LGS ve YKS', 'LGS ve YKS: oturumlar, testler, soru sayıları ve süreler; çıkmış sorular, kılavuzlar ve hazırlık kaynakları.', _sinav_govde(), ())
 
