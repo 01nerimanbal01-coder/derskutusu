@@ -1,0 +1,237 @@
+{
+  "sinif": 10,
+  "ders": "matematik",
+  "hafta": 1,
+  "tarih": "14-18 Eylül 2026",
+  "yayin_tarihi": "2026-10-02",
+  "unite": "Geometrik Şekiller",
+  "konu": "Dik Üçgende Trigonometrik Oranlar ve Temel Özdeşlikler",
+  "ciktilar": [
+    "MAT.10.1.1. Dik üçgende trigonometrik oranlara ve trigonometrik özdeşliklere ilişkin çıkarım yapabilme"
+  ],
+  "giris": "Aynı dar açıya sahip dik üçgenlerde kenar uzunlukları değişse de uygun kenar oranları değişmez. Trigonometri bu ilişkileri kullanır. Önce açıyı ve kenarları belirleyecek, sonra oranlardan ve Pisagor bağıntısından sonuç çıkaracağız.",
+  "bolumler": [
+    {
+      "baslik": "Önce açıyı ve kenarları belirle",
+      "metin": [
+        "Hipotenüs, dik açının karşısındaki ve dik üçgenin en uzun kenarıdır. Seçilen dar açının karşısında bulunan dik kenar karşı kenar; açıya değen öteki dik kenar komşu kenardır.",
+        "Öteki dar açı seçildiğinde karşı ve komşu dik kenarlar yer değiştirir. Hipotenüs ise değişmez. Bu nedenle bir oran yazmadan önce hangi açının kullanıldığını işaretlemek gerekir."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "metin": "Komşu kenar, açıya değen iki kenardan hipotenüs olmayanıdır."
+      },
+      "gorsel": "<svg viewBox=\"0 0 470 240\" role=\"img\" aria-label=\"Alfa açısına göre karşı, komşu ve hipotenüs\"><path d=\"M75 195H385V40Z\" fill=\"none\" class=\"g-ms\" stroke-width=\"2.5\"/><path d=\"M365 195v-20h20\" fill=\"none\" class=\"g-ms\" stroke-width=\"1.5\"/><path d=\"M115 195A40 40 0 0 0 111 177\" fill=\"none\" class=\"g-ms\" stroke-width=\"1.5\"/><g font-size=\"15\" class=\"g-y\"><text x=\"123\" y=\"183\">α</text><text x=\"230\" y=\"220\" text-anchor=\"middle\">Komşu dik kenar</text><text x=\"402\" y=\"105\">Karşı</text><text x=\"402\" y=\"124\">dik</text><text x=\"402\" y=\"143\">kenar</text><text x=\"210\" y=\"101\" transform=\"rotate(-27 210 101)\">Hipotenüs</text></g></svg>"
+    },
+    {
+      "baslik": "Dört trigonometrik oran",
+      "metin": [
+        "0° < α < 90° için sin α = {kesir:karşı dik kenar|hipotenüs}, cos α = {kesir:komşu dik kenar|hipotenüs}, tan α = {kesir:karşı dik kenar|komşu dik kenar}, cot α = {kesir:komşu dik kenar|karşı dik kenar}. Oranlar aynı birimle ölçülen uzunluklardan oluşturulduğu için birimsizdir.",
+        "Bir dar açısı eş olan dik üçgenler benzerdir. Kenarların hepsi aynı katsayıyla büyütülürse bu katsayı pay ve paydada sadeleşir. Böylece açı değişmediği sürece sinüs, kosinüs, tanjant ve kotanjant değişmez.",
+        "Dar açı için dört oran da pozitiftir. Hipotenüs her dik kenardan büyük olduğu için sinüs ve kosinüs 1’den küçüktür. Tanjant ve kotanjant ise 1’den büyük olabilir."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "metin": "Üçgenin büyüklüğü değil, seçilen dar açının ölçüsü oranı belirler."
+      }
+    },
+    {
+      "baslik": "Pisagor bağıntısından özdeşliğe",
+      "metin": [
+        "Karşı dik kenar a, komşu dik kenar b ve hipotenüs c olsun. a² + b² = c² eşitliği c²’ye bölünürse {us:sin α|2} + {us:cos α|2} = 1 elde edilir. Burada sin²α, sinüs değerinin karesi anlamındadır.",
+        "Tanjant ile kotanjantın pay ve paydaları yer değiştirmiştir. Bu yüzden tan α · cot α = 1 olur. Ayrıca tan α = {kesir:sin α|cos α} ve cot α = {kesir:cos α|sin α} yazılabilir.",
+        "Bir dar açının sinüsü biliniyorsa cos²α = 1 − sin²α bulunur. Dar açı koşulu kosinüsün pozitif olmasını gerektirir; karekök alınırken bu koşul kullanılır."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "metin": "sin²α + cos²α = 1; sin α + cos α = 1 şeklinde yazılamaz."
+      },
+      "gorsel": "<svg viewBox=\"0 0 470 214\" role=\"img\" aria-label=\"Özdeşliklerin kaynağı\"><text x=\"235\" y=\"21\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">Özdeşliklerin kaynağı</text><rect x=\"12\" y=\"32\" width=\"446\" height=\"49\" rx=\"10\" class=\"g-ma\"/><text x=\"25\" y=\"52\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Pisagor bağıntısı</text><text x=\"25\" y=\"71\" font-size=\"12\" class=\"g-y\">a² + b² = c²</text><rect x=\"12\" y=\"90\" width=\"446\" height=\"49\" rx=\"10\" class=\"g-ma\"/><text x=\"25\" y=\"110\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">c²’ye bölme</text><text x=\"25\" y=\"129\" font-size=\"12\" class=\"g-y\">sin²α + cos²α = 1</text><rect x=\"12\" y=\"148\" width=\"446\" height=\"49\" rx=\"10\" class=\"g-ma\"/><text x=\"25\" y=\"168\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Ters oranların çarpımı</text><text x=\"25\" y=\"187\" font-size=\"12\" class=\"g-y\">tan α · cot α = 1</text></svg>"
+    },
+    {
+      "baslik": "Tümler açılar ve özel açılar",
+      "metin": [
+        "Dik üçgenin dar açıları toplamı 90°dir. Bir dar açı α, diğeri β ise karşı ve komşu kenarlar yer değiştirdiğinden sin α = cos β ve tan α = cot β olur.",
+        "İkizkenar dik üçgende açılar 45°dir. Dik kenarlar 1 birim seçildiğinde hipotenüs √2 birim olur. Buradan sin45° = cos45° = {kesir:√2|2} ve tan45° = cot45° = 1 bulunur.",
+        "Bir kenarı 2 birim olan eşkenar üçgenin yüksekliği onu iki dik üçgene ayırır. Oluşan üçgende 30°nin karşısı 1, 60°nin karşısı √3, hipotenüs 2 birimdir. Böylece sin30° = cos60° = {kesir:1|2}; cos30° = sin60° = {kesir:√3|2}; tan30° = cot60° = {kesir:√3|3}; tan60° = cot30° = √3 olur."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "metin": "Özel açı değerlerini üçgen çizerek yeniden elde edebilirsiniz."
+      }
+    },
+    {
+      "baslik": "Bir problemi oranla çözmek",
+      "metin": [
+        "Önce durumu bir dik üçgenle modelleyiniz. Bilinen uzunlukları ve aranan uzunluğu seçilen açıya göre adlandırınız. Yalnız gerekli iki kenarı içeren oranı seçip eşitlik kurunuz.",
+        "Bir rampanın dikey yükselmesi h, yatay ilerlemesi x ve zeminle yaptığı açı α ise tan α = h/x olur. Rampa boyunca ölçülen uzunluk hipotenüstür; yatay uzaklıkla karıştırılmaz. Eğim yüzdesi 100·h/x biçiminde bulunur.",
+        "Sonucu uzunluk birimiyle yazınız. Bulunan hipotenüsün dik kenarlardan büyük olması ve tüm uzunlukların pozitif olması gibi temel kontrolleri yapınız."
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "metin": "Çizim → kenarları adlandırma → oran seçme → hesap → kontrol."
+      }
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir dik üçgende α açısının karşısı 7 cm, komşusu 24 cm, hipotenüs 25 cm. Dört oranı bulunuz.",
+      "cevap": "sin α = {kesir:7|25}, cos α = {kesir:24|25}, tan α = {kesir:7|24}, cot α = {kesir:24|7}. Pay ve payda seçilen açıya göre belirlenir."
+    },
+    {
+      "soru": "Aynı üçgenin bütün kenarları üç katına çıkarılıyor. Sinüs oranı nasıl değişir?",
+      "cevap": "Değişmez: {kesir:21|75} = {kesir:7|25}. Büyütme katsayısı sadeleşir; dar açı aynı kalır."
+    },
+    {
+      "soru": "α dar açı ve sin α = {kesir:8|17}. cos α ile tan α değerlerini bulunuz.",
+      "cevap": "cos²α = 1 − {kesir:64|289} = {kesir:225|289}. Dar açıdan cos α = {kesir:15|17}; tan α = {kesir:8|15} olur."
+    },
+    {
+      "soru": "Bir model rampanın zeminle açısı 30°, rampanın uzunluğu 3,6 m. Dikey yükselmesi kaç metredir?",
+      "cevap": "sin30° = h/3,6 = 1/2 olduğundan h = 1,8 m. Verilen rampa uzunluğu hipotenüstür."
+    },
+    {
+      "soru": "α ve β bir dik üçgenin dar açıları. tan α = {kesir:9|40} ise cot β kaçtır?",
+      "cevap": "Tümler açılarda tan α = cot β olduğundan sonuç {kesir:9|40} olur. cot α sorulsaydı {kesir:40|9} bulunurdu."
+    },
+    {
+      "soru": "Yatayda 25 m ilerleyen bir yol 3 m yükseliyor. Eğim yüzdesi kaçtır?",
+      "cevap": "Eğim oranı 3/25; yüzde olarak 100·3/25 = 12’dir. Sonuç %12 olur. 25 m, yolun yatay uzaklığıdır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir dik üçgende θ açısının karşı dik kenarı 20 birim, komşu dik kenarı 21 birim, hipotenüsü 29 birimdir. cos θ kaçtır?",
+      "secenekler": [
+        "{kesir:20|29}",
+        "{kesir:21|29}",
+        "{kesir:20|21}",
+        "{kesir:21|20}",
+        "{kesir:29|21}"
+      ],
+      "dogru": 1,
+      "aciklama": "Kosinüs, komşu dik kenarın hipotenüse oranıdır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir öğrenci dar açı için sin α = 0,6 buluyor. cos α değerini hesaplamak için sin²α + cos²α = 1 kullanıyor. Hangi sonuca ulaşır?",
+      "secenekler": [
+        "0,2",
+        "0,4",
+        "0,6",
+        "0,8",
+        "1,0"
+      ],
+      "dogru": 3,
+      "aciklama": "cos²α = 1 − 0,36 = 0,64. Dar açı için pozitif kök 0,8’dir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir çizimde rampanın yatay ilerlemesi 14 m, dikey yükselmesi 4 m. Zeminle yaptığı açı β için tan β hangi değerdir?",
+      "secenekler": [
+        "{kesir:2|7}",
+        "{kesir:7|2}",
+        "{kesir:2|9}",
+        "{kesir:7|9}",
+        "{kesir:9|7}"
+      ],
+      "dogru": 0,
+      "aciklama": "Tanjant, dikey yükselmenin yatay ilerlemeye oranıdır: 4/14 = 2/7."
+    },
+    {
+      "tur": "dy",
+      "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+      "ifadeler": [
+        {
+          "metin": "Dar açı değişmeden üçgen büyütülürse sinüs değeri artar.",
+          "dogru": false,
+          "aciklama": "Benzer üçgenlerde ilgili kenar oranı değişmez."
+        },
+        {
+          "metin": "Dar açı için sinüs ve kosinüs değerleri pozitiftir.",
+          "dogru": true,
+          "aciklama": "Uzunluk oranları pozitiftir."
+        },
+        {
+          "metin": "sin²α ifadesi sinüs değerinin karesidir.",
+          "dogru": true,
+          "aciklama": "Sinüs ile açının çarpımı anlamına gelmez."
+        },
+        {
+          "metin": "Dik üçgende açı değiştiğinde hipotenüs değişir.",
+          "dogru": false,
+          "aciklama": "Hipotenüs her zaman dik açının karşısındadır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "yonerge": "İlişkili kavram ve açıklamaları eşleştiriniz.",
+      "ciftler": [
+        [
+          "sin α",
+          "Karşı / hipotenüs"
+        ],
+        [
+          "cos α",
+          "Komşu / hipotenüs"
+        ],
+        [
+          "tan α",
+          "Karşı / komşu"
+        ],
+        [
+          "cot α",
+          "Komşu / karşı"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+      "cumleler": [
+        {
+          "metin": "Bir dar açı için sin²α + cos²α = ___ olur.",
+          "cevap": "1"
+        },
+        {
+          "metin": "İkizkenar dik üçgendeki dar açılar ___ derecedir.",
+          "cevap": "45"
+        },
+        {
+          "metin": "sin30° değeri ondalık olarak ___ biçiminde yazılır.",
+          "cevap": "0,5"
+        }
+      ],
+      "fazla": [
+        "2"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir öğrenci, iki dik kenarı eşit bir dik üçgende sin45° = 1 yazıyor. Hangi iki uzunluğu karıştırmış olabilir?",
+      "ipuclari": [
+        "Eşit olanlar iki dik kenardır.",
+        "Hipotenüsü Pisagor bağıntısıyla bulunuz."
+      ],
+      "cevap": "Karşı dik kenarı komşu dik kenara bölerek tan45°yi hesaplamıştır. Dik kenarlar 1 ise hipotenüs √2’dir; sin45° = 1/√2 = √2/2 olur."
+    },
+    {
+      "tur": "ogretici",
+      "soru": "α dar açı ve tan α = 5/12. sin α nasıl bulunur?",
+      "ipuclari": [
+        "Karşı ve komşu dik kenarları 5k ve 12k alınız.",
+        "Hipotenüsü hesaplayıp sinüs oranını kurunuz."
+      ],
+      "cevap": "Hipotenüs √(25k²+144k²) = 13k olur. Sinüs karşı/hipotenüs olduğundan sin α = 5/13’tür."
+    }
+  ],
+  "ozet": [
+    "Oran yazmadan önce dar açıyı ve üç kenarı belirleyiniz.",
+    "Benzer dik üçgenlerde aynı açıya ait oranlar eşittir.",
+    "sin²α + cos²α = 1 ve tan α · cot α = 1 olur.",
+    "Tümler açılarda sinüs-kosinüs ve tanjant-kotanjant eşleşir.",
+    "Problemlerde yatay uzaklık ile hipotenüsü ayırınız."
+  ]
+}
