@@ -1,0 +1,247 @@
+{
+  "duzeyler": [
+    "ortaogretim",
+    "on-lisans",
+    "lisans"
+  ],
+  "seviye": "Ortak temel",
+  "guncelleme": "2026-10-02",
+  "surum": 1,
+  "id": "matematik-temel-kavramlar",
+  "ders": "Matematik",
+  "konu": "Temel kavramlar",
+  "aciklama": "Tam sayılar, işlem önceliği, tek–çift sayılar, ardışık sayılar ve basamak değeriyle sağlam bir başlangıç yap.",
+  "dakika": 15,
+  "bolumler": [
+    {
+      "baslik": "Rakam, sayı ve tam sayı",
+      "metin": [
+        "Rakamlar 0, 1, 2, 3, 4, 5, 6, 7, 8 ve 9’dur. Sayılar bu rakamlarla yazılır. Örneğin 47 bir sayıdır; yazımında 4 ve 7 rakamları kullanılır.",
+        "Doğal sayılar 0’dan başlar. Tam sayılar negatif tam sayıları, sıfırı ve pozitif tam sayıları kapsar. Sıfır ne pozitif ne negatiftir. Sıfırdan büyük tam sayılar pozitif, küçük olanlar negatiftir."
+      ]
+    },
+    {
+      "baslik": "İşareti ve değişimi birlikte oku",
+      "metin": [
+        "Pozitif ve negatif sayılar, seçilen başlangıca göre iki farklı yönü gösterebilir. Bir miktardaki artış toplama, azalış çıkarma ile modellenebilir.",
+        "Örneğin bir oyunda 9 puanı olan oyuncu 14 puan kaybederse puanı 9 − 14 = −5 olur. Sonra 6 puan kazanırsa −5 + 6 = 1 puana ulaşır. Negatif sonuç, işlemin yanlış olduğu anlamına gelmez."
+      ]
+    },
+    {
+      "baslik": "İşlem önceliğini koru",
+      "metin": [
+        "Önce parantez içi, sonra üslü işlemler yapılır. Ardından çarpma ve bölme, en son toplama ve çıkarma gelir. Aynı öncelikteki işlemler soldan sağa uygulanır.",
+        "24 ÷ 6 × 2 = 4 × 2 = 8’dir. Çarpma bölmeden önce yapılmaz; ikisi aynı önceliktedir. Negatif tabanın üssünü yazarken paranteze dikkat et: (−3)² = 9, −3² = −9."
+      ]
+    },
+    {
+      "baslik": "Tek–çift için genel gösterimi kullan",
+      "metin": [
+        "n bir tam sayı olmak üzere çift sayılar 2n, tek sayılar 2n + 1 biçiminde gösterilebilir. Sıfır da çifttir; çünkü 0 = 2 × 0’dır.",
+        "İki çiftin ve iki tekin toplamı çifttir; bir tekle bir çiftin toplamı tektir. Çarpanlardan biri çiftse çarpım çift olur. İki tek sayının çarpımı tektir. Bu kurallar negatif tam sayılar için de geçerlidir."
+      ]
+    },
+    {
+      "baslik": "Ardışık sayıları tek değişkenle yaz",
+      "metin": [
+        "Ardışık tam sayılar n, n + 1, n + 2; ardışık çift veya ardışık tek sayılar n, n + 2, n + 4 biçiminde yazılabilir. İkinci gösterimde n’nin çift mi tek mi olduğu koşula göre seçilir.",
+        "Üç ardışık tam sayıyı ortadaki x olacak biçimde x − 1, x, x + 1 diye yazarsan toplam 3x olur. Ardışık tek sayılarda aynı yöntem x − 2, x, x + 2 biçimindedir."
+      ]
+    },
+    {
+      "baslik": "Basamak değerini açık yaz",
+      "metin": [
+        "İki basamaklı AB sayısının değeri 10A + B’dir. Burada A, 1’den 9’a; B, 0’dan 9’a kadar bir rakamdır. AB gösterimi A × B çarpımı değildir.",
+        "Rakamları farklı iki basamaklı bir sayıda rakamların yerlerini değiştirmek sayıyı değiştirir. AB − BA = (10A + B) − (10B + A) = 9(A − B) olur. BA da iki basamaklıysa B’nin sıfır olamayacağını ayrıca kontrol et."
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "−7, −2, 0, 4 ve 11 sayılarından kaç tanesi negatif olmayan tam sayıdır?",
+      "cevap": "0, 4 ve 11 negatif değildir; toplam 3 sayı vardır. “Pozitif” denilseydi sıfır sayılmaz ve cevap 2 olurdu."
+    },
+    {
+      "soru": "Bir puan çizelgesinde başlangıç değeri −6’dır. Önce 10 eklenip sonra 7 çıkarılıyor. Son değer nedir?",
+      "cevap": "−6 + 10 = 4; ardından 4 − 7 = −3 bulunur. Artış ve azalışlar gerçekleşme sırasıyla uygulanır."
+    },
+    {
+      "soru": "18 − 2 × (7 − 3) işleminin sonucu nedir?",
+      "cevap": "Önce 7 − 3 = 4, sonra 2 × 4 = 8 hesaplanır. Sonuç 18 − 8 = 10’dur. 18 − 2 işlemini önce yapmak işlem önceliğini bozar."
+    },
+    {
+      "soru": "a ve b tek tam sayılardır. a + b ile a × b’nin tek–çift durumları nedir?",
+      "cevap": "a = 2m + 1, b = 2n + 1 yazılır. Toplam 2(m + n + 1) olduğu için çifttir. Çarpım 2(2mn + m + n) + 1 biçiminde olduğundan tektir."
+    },
+    {
+      "soru": "Üç ardışık çift tam sayının toplamı 54’tür. En küçük sayı nedir?",
+      "cevap": "Sayılar x − 2, x ve x + 2 olsun. Toplam 3x = 54 olduğundan x = 18’dir. Sayılar 16, 18 ve 20; en küçük sayı 16’dır."
+    },
+    {
+      "soru": "İki basamaklı AB sayısında A + B = 10 ve A − B = 4’tür. AB kaçtır?",
+      "cevap": "İki eşitlik toplanınca 2A = 14, buradan A = 7 bulunur. B = 3’tür. Sayı 10 × 7 + 3 = 73 olur; rakamların çarpımı olan 21 cevap değildir."
+    }
+  ],
+  "sorular": [
+    {
+      "tur": "coktan",
+      "soru": "Bir sayı kartı takımında −4, −1, 0, 3 ve 8 yazılı beş kart var. Yalnız pozitif tam sayı yazan kartlar seçiliyor. Kaç kart seçilir?",
+      "secenekler": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "dogru": 1,
+      "aciklama": "Pozitif sayılar 3 ve 8’dir. Sıfır pozitif olmadığı için seçilmez.",
+      "alt_konu": "Sayı türleri",
+      "seviye": "Temel",
+      "id": "matematik-temel-kavramlar-01"
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir oyunda 14 puanı bulunan oyuncu bir turda 19 puan kaybediyor, sonraki turda 8 puan kazanıyor. Son puanı kaçtır?",
+      "secenekler": [
+        "−13",
+        "−3",
+        "1",
+        "3",
+        "13"
+      ],
+      "dogru": 3,
+      "aciklama": "14 − 19 + 8 = −5 + 8 = 3 bulunur.",
+      "alt_konu": "İşaret ve işlem",
+      "seviye": "Temel",
+      "id": "matematik-temel-kavramlar-02"
+    },
+    {
+      "tur": "coktan",
+      "soru": "−3 × (4 − 7) + 2 × 5 işleminin sonucu kaçtır?",
+      "secenekler": [
+        "19",
+        "1",
+        "−1",
+        "9",
+        "−19"
+      ],
+      "dogru": 0,
+      "aciklama": "Parantez içi −3’tür. (−3) × (−3) = 9 ve 2 × 5 = 10 olduğundan sonuç 19’dur.",
+      "alt_konu": "İşlem önceliği",
+      "seviye": "Temel",
+      "id": "matematik-temel-kavramlar-03"
+    },
+    {
+      "tur": "coktan",
+      "soru": "n bir tam sayıdır. Aşağıdaki ifadelerden hangisinin değeri n’nin bütün tam sayı değerleri için tektir?",
+      "secenekler": [
+        "n + 1",
+        "2n",
+        "2n + 1",
+        "n²",
+        "3n"
+      ],
+      "dogru": 2,
+      "aciklama": "2n çift, bir fazlası olan 2n + 1 tektir. Diğer değişkenli seçenekler n’ye göre çift olabilir; 2n ise her zaman çifttir.",
+      "alt_konu": "Tek–çift",
+      "seviye": "Pekiştirme",
+      "id": "matematik-temel-kavramlar-04"
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir etkinlikte art arda gelen üç tek sıra numarasının toplamı 81’dir. Bu numaraların en büyüğü kaçtır?",
+      "secenekler": [
+        "25",
+        "26",
+        "27",
+        "28",
+        "29"
+      ],
+      "dogru": 4,
+      "aciklama": "Numaralar x − 2, x, x + 2 olsun. 3x = 81, x = 27 bulunur. En büyük numara 29’dur.",
+      "alt_konu": "Ardışık sayılar",
+      "seviye": "Pekiştirme",
+      "id": "matematik-temel-kavramlar-05"
+    },
+    {
+      "tur": "coktan",
+      "soru": "AB iki basamaklı bir sayıdır. A = B + 3 ve A + B = 11 olduğuna göre AB kaçtır?",
+      "secenekler": [
+        "47",
+        "74",
+        "83",
+        "38",
+        "77"
+      ],
+      "dogru": 1,
+      "aciklama": "B + 3 + B = 11 eşitliğinden B = 4, A = 7 bulunur. Onlar basamağı A olduğundan sayı 74’tür.",
+      "alt_konu": "Basamak değeri",
+      "seviye": "Pekiştirme",
+      "id": "matematik-temel-kavramlar-06"
+    },
+    {
+      "tur": "coktan",
+      "soru": "48 ÷ 4 × 2 − 5 işleminin sonucu kaçtır?",
+      "secenekler": [
+        "1",
+        "7",
+        "12",
+        "19",
+        "21"
+      ],
+      "dogru": 3,
+      "aciklama": "Bölme ve çarpma soldan sağa yapılır: 48 ÷ 4 = 12, 12 × 2 = 24. Son olarak 24 − 5 = 19 bulunur.",
+      "alt_konu": "İşlem önceliği",
+      "seviye": "Pekiştirme",
+      "id": "matematik-temel-kavramlar-07"
+    },
+    {
+      "tur": "coktan",
+      "soru": "a ve b tam sayıları için a + b tek, a × b çift olduğuna göre hangi yargı kesinlikle doğrudur?",
+      "secenekler": [
+        "Biri tek, diğeri çifttir.",
+        "a ile b’nin ikisi de tektir.",
+        "a ile b’nin ikisi de çifttir.",
+        "a pozitiftir, b negatiftir.",
+        "a ile b’nin toplamı pozitiftir."
+      ],
+      "dogru": 0,
+      "aciklama": "Toplamın tek olması bir sayının tek, diğerinin çift olmasını gerektirir. Bu durumda çarpım da çifttir. İşaretler hakkında kesin bilgi yoktur.",
+      "alt_konu": "Tek–çift",
+      "seviye": "İleri",
+      "id": "matematik-temel-kavramlar-08"
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir depoda art arda gelen dört tam sayı ile numaralanmış rafların numaraları toplamı 62’dir. Son iki rafın numaraları toplamı kaçtır?",
+      "secenekler": [
+        "29",
+        "31",
+        "33",
+        "35",
+        "37"
+      ],
+      "dogru": 2,
+      "aciklama": "Raflar n, n + 1, n + 2, n + 3 olsun. 4n + 6 = 62, n = 14 bulunur. Son iki raf 16 ve 17; toplamları 33’tür.",
+      "alt_konu": "Ardışık sayılar",
+      "seviye": "İleri",
+      "id": "matematik-temel-kavramlar-09"
+    },
+    {
+      "tur": "coktan",
+      "soru": "AB ve BA iki basamaklı sayılardır. AB − BA = 36 olduğuna göre AB’nin alabileceği en küçük değer kaçtır?",
+      "secenekler": [
+        "40",
+        "41",
+        "45",
+        "50",
+        "51"
+      ],
+      "dogru": 4,
+      "aciklama": "9(A − B) = 36 eşitliğinden A − B = 4 bulunur. BA iki basamaklı olduğundan B en az 1’dir. B = 1, A = 5 seçilince en küçük AB = 51 olur.",
+      "alt_konu": "Basamak değeri",
+      "seviye": "İleri",
+      "id": "matematik-temel-kavramlar-10"
+    }
+  ]
+}

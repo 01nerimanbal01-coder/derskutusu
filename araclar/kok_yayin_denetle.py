@@ -3,7 +3,7 @@ from pathlib import Path
 import re,json,html,zipfile,sys
 from xml.etree import ElementTree as ET
 R=Path(__file__).resolve().parents[1];bad=[];count=0
-for folder,ext in [('araclar/ozetler','json'),('araclar/calisma','json'),('public','html'),('public','svg')]:
+for folder,ext in [('araclar/kpss','json'),('araclar/ozetler','json'),('araclar/calisma','json'),('public','html'),('public','svg')]:
  for p in (R/folder).rglob('*.'+ext):
   count+=1
   if re.search('[√∛∜]',html.unescape(p.read_text())):bad.append(str(p.relative_to(R))+': düz kök işareti')

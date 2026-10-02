@@ -157,7 +157,7 @@ const Arama = (() => {
   }
   const kademedenSinif = (metin) => (/temel egitim|ortaokul/.test(duz(metin)) ? [5, 6, 7, 8] : /ortaogretim|lise/.test(duz(metin)) ? [9, 10, 11, 12] : null);
 
-  function kur({ dersler, icerikler = [], belgeler = null }) {
+  function kur({ dersler, icerikler = [], belgeler = null, kpss = null }) {
     KOK.clear();
     const dAd = dersler?.dersler || {};
     const siniflar = dersler?.siniflar || {};
@@ -192,6 +192,13 @@ const Arama = (() => {
     }
     for (const [d, ad] of Object.entries(dAd)) {
       ekle({ tip: 'sayfa', alt: 'ders-tum', baslik: `${ad} (bütün sınıflar)`, aciklama: `${ad} dersinin bütün sınıflardaki içerikleri.`, adres: `/icerikler.html?ders=${d}`, ders: d });
+    }
+    // KPSS bağımsız sınav içeriğidir; okul sınıfı atanmaz.
+    ekle({ tip: 'sayfa', baslik: 'KPSS Hazırlık', aciklama: 'Türkçe ve matematik konu anlatımları, çözümlü örnekler, testler ve PDF.', adres: '/kpss.html', ek: 'kpss kamu personel secme genel yetenek' });
+    for (const m of kpss?.moduller || []) {
+      ekle({ tip: 'icerik', baslik: `KPSS ${m.ders}: ${m.konu}`, aciklama: m.aciklama,
+        adres: `/kpss/${m.id}.html`, ders: m.ders === 'Türkçe' ? 'turkce' : 'matematik', dersAd: m.ders,
+        tur: 'Konu anlatımı', ek: 'kpss genel yetenek test pdf cozumlu sorular' });
     }
     // İçerikler
     for (const i of icerikler) {
@@ -351,6 +358,7 @@ const Arama = (() => {
     const grupVar = s.niyetler.some((n) => n.grup && n.grup !== 'plan' || n.gruplar || n.ozel);
     const sonuc = [];
     for (const b of DIZIN.kayitlar) {
+      if (s.serbest.includes('kpss') && !b.a.baslik.includes('kpss')) continue;
       let p = 0;
       if (b.tip === 'sayfa' && b.alt) {
         // Sayfa kısayolları yalnız sınıf/ders sorulunca.
@@ -487,7 +495,7 @@ if (typeof module !== 'undefined') module.exports = Arama;
 if (typeof document !== 'undefined') {
   const TUR_ETIKET = { sayfa: 'Sayfa', icerik: 'İçerik', belge: 'Resmî belge' };
   let hazir = null;
-  const dizinHazirla = () => (hazir ||= Promise.all([ortakVeri, veri('belgeler.json')]).then(([v, belgeler]) => Arama.kur({ ...v, belgeler })));
+  const dizinHazirla = () => (hazir ||= Promise.all([ortakVeri, veri('belgeler.json'), veri('kpss.json')]).then(([v, belgeler, kpss]) => Arama.kur({ ...v, belgeler, kpss })));
 
   const vurgula = (metin, sorgu) => {
     const parca = [];
