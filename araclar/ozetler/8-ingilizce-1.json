@@ -99,15 +99,15 @@
   "etkinlikler": [
     {
       "tur": "coktan",
-      "soru": "Bir mesajdaki cevap “Yeah, why not?” şeklindedir. Davete verilen tepki nedir?",
+      "soru": "Deniz: “Would you like to play tennis at four?” Alex: “Yeah, why not? I will finish my homework at three.” Alex’in cevabına göre hangi plan uygundur?",
       "secenekler": [
-        "Zamanı sorma",
-        "Yeri değiştirme",
-        "Davetin nedenini sorma",
-        "Daveti kabul etme"
+        "Saat üçte tenis oynamak.",
+        "Saat dörtte ödevini bitirmek.",
+        "Ödev nedeniyle tenise gitmemek.",
+        "Saat dörtte tenis oynamak."
       ],
       "dogru": 3,
-      "aciklama": "Bu ifade öneriyi kabul etmek için kullanılır."
+      "aciklama": "“Yeah, why not?” daveti kabul eder. Alex ödevini üçte bitireceğini söylüyor; tenis daveti ise saat dört içindir."
     },
     {
       "tur": "coktan",
@@ -125,13 +125,13 @@
       "tur": "coktan",
       "soru": "Bir öğrenci “My friend backs me up when I have a problem.” diyor. Hangi özellik desteklenir?",
       "secenekler": [
-        "Stingy",
-        "Jealous",
+        "Cheerful",
+        "Honest",
         "Supportive",
-        "Rude"
+        "Generous"
       ],
       "dogru": 2,
-      "aciklama": "Back up destek olmak demektir."
+      "aciklama": "Back up destek olmak demektir; bu davranış supportive özelliğini gösterir. Cümle, arkadaşın neşeli, dürüst veya cömert olup olmadığını belirtmez."
     },
     {
       "tur": "dy",
@@ -199,7 +199,7 @@
         }
       ],
       "fazla": [
-        "than"
+        "so"
       ]
     },
     {
@@ -225,5 +225,6 @@
     "Davet kalıbı, ardından gelecek fiilin biçimini belirler.",
     "Kabul veya ret kararı cevabın tamamından anlaşılır.",
     "Kısa davet cevapları uygun bir gerekçe ve nazik ifadelerle açıklanabilir."
-  ]
+  ],
+  "yazan": "Codex · kaynak, soru ve cevap denetimi · 03.10.2026"
 }
