@@ -1,0 +1,239 @@
+{
+  "sinif": 12,
+  "ders": "fizik",
+  "hafta": 1,
+  "tarih": "14-18 Eylül 2026",
+  "yayin_tarihi": "2026-10-02",
+  "unite": "Çembersel Hareket",
+  "konu": "Düzgün Çembersel Hareket ve Merkezcil Kuvvet",
+  "ciktilar": [
+    "12.1.1.1. Düzgün çembersel hareketi açıklar.",
+    "12.1.1.2. Düzgün çembersel harekette merkezcil kuvvetin bağlı olduğu değişkenleri analiz eder."
+  ],
+  "giris": "Sabit süratle çembersel yörüngede hareket eden cismin hızının neden değiştiğini açıklayacaksınız. Periyot, frekans, çizgisel ve açısal hız ile merkezcil ivme ve kuvvet arasındaki bağı kullanacaksınız.",
+  "bolumler": [
+    {
+      "baslik": "Sürat sabit, hızın yönü değişken",
+      "metin": [
+        "Bir cisim çembersel yörüngede eşit sürelerde eşit yollar alıyorsa düzgün çembersel hareket yapar. Hızının büyüklüğü, yani sürati sabittir; fakat hareket boyunca hızının yönü değişir.",
+        "Hız bir vektör olduğundan yalnız büyüklüğünün sabit olması, hız vektörünün sabit olması anlamına gelmez. Bu nedenle düzgün çembersel harekette ivme vardır."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "metin": "Sabit sürat, her zaman sıfır ivme demek değildir."
+      }
+    },
+    {
+      "baslik": "Periyot ve frekans",
+      "metin": [
+        "Periyot T, bir tam tur için geçen süredir; birimi saniyedir. Frekans f, bir saniyedeki tur sayısıdır; birimi hertzdir (Hz). İkisi de skaler büyüklüktür.",
+        "t sürede N tur tamamlanırsa T = {kesir:t|N} ve f = {kesir:N|t}. Bu yüzden T · f = 1 ve T = {kesir:1|f}. Süreyi saniyeye çevirmeden hertz hesabı yapılmaz."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "metin": "Aynı sürede daha çok tur: daha büyük frekans, daha küçük periyot."
+      }
+    },
+    {
+      "baslik": "Çizgisel hız ve açısal hız",
+      "metin": [
+        "Çizgisel hız vektörü yörüngeye teğettir. Bir turda alınan yol 2πr olduğundan büyüklüğü v = {kesir:2πr|T} = 2πrf ile bulunur; birimi m/s’dir.",
+        "Bir tam tur 2π radyandır. Açısal hızın büyüklüğü ω = {kesir:2π|T} = 2πf ile bulunur; birimi rad/s’dir. İki büyüklük arasındaki ilişki v = ωr’dir. Aynı eksen çevresinde birlikte dönen noktaların açısal hızları eşittir.",
+        "Açısal hız vektörü dönme düzlemine diktir. Yönü sağ el kuralıyla belirlenir: sağ elin dört parmağı dönme yönünde kıvrıldığında başparmak açısal hızın yönünü gösterir. Çizgisel hız, merkezcil ivme ve açısal hız vektörleri birbirine diktir."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "metin": "Aynı açısal hızda eksenden uzak olan noktanın çizgisel sürati daha büyüktür."
+      }
+    },
+    {
+      "baslik": "Merkezcil ivme",
+      "metin": [
+        "Hızın yönündeki değişimden kaynaklanan ivme merkeze yönelir. Büyüklüğü a = {kesir:v²|r} = {us:ω|2}r; birimi m/s²’dir.",
+        "Merkezcil ivme ile çizgisel hız birbirine diktir. Yarıçap vektörü merkezden cisme doğru çizildiğinde ivme bu vektöre zıt yöndedir. İvmenin büyüklüğü sabit kalsa da cisim hareket ettikçe yönü değişir."
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "metin": "Hız teğet, merkezcil ivme merkeze doğrudur."
+      },
+      "gorsel": "<svg viewBox=\"0 0 470 295\" role=\"img\" aria-label=\"Çemberde iki noktadaki hız ve merkezcil ivme\"><defs><marker id=\"vok12\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" class=\"g-mf\"/></marker><marker id=\"aok12\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" class=\"g-tf\"/></marker></defs><text x=\"235\" y=\"22\" text-anchor=\"middle\" font-size=\"15\" class=\"g-y\">Saat yönünün tersine hareket</text><circle cx=\"220\" cy=\"152\" r=\"80\" class=\"g-c\" stroke-width=\"2\"/><circle cx=\"220\" cy=\"152\" r=\"3\" class=\"g-yf\"/><text x=\"204\" y=\"169\" class=\"g-y\">O</text><circle cx=\"300\" cy=\"152\" r=\"5\" class=\"g-mf\"/><text x=\"312\" y=\"165\" class=\"g-y\">A</text><path d=\"M300 146V82\" class=\"g-ms\" stroke-width=\"3\" marker-end=\"url(#vok12)\"/><text x=\"312\" y=\"103\" class=\"g-mf\">v</text><path d=\"M292 152H237\" class=\"g-ts\" stroke-width=\"3\" marker-end=\"url(#aok12)\"/><text x=\"258\" y=\"173\" class=\"g-tf\">a</text><circle cx=\"220\" cy=\"72\" r=\"5\" class=\"g-mf\"/><text x=\"228\" y=\"60\" class=\"g-y\">B</text><path d=\"M212 72H150\" class=\"g-ms\" stroke-width=\"3\" marker-end=\"url(#vok12)\"/><text x=\"170\" y=\"60\" class=\"g-mf\">v</text><path d=\"M220 80V135\" class=\"g-ts\" stroke-width=\"3\" marker-end=\"url(#aok12)\"/><text x=\"233\" y=\"115\" class=\"g-tf\">a</text><text x=\"235\" y=\"257\" text-anchor=\"middle\" font-size=\"13\" class=\"g-mf\">Mavi: hız, yörüngeye teğet</text><text x=\"235\" y=\"281\" text-anchor=\"middle\" font-size=\"13\" class=\"g-tf\">Turuncu: merkezcil ivme, merkeze doğru</text></svg>"
+    },
+    {
+      "baslik": "Merkezcil kuvvet",
+      "metin": [
+        "Newton’ın ikinci yasası F = ma kullanılırsa merkeze yönelen net kuvvetin büyüklüğü F = {kesir:mv²|r} = m{us:ω|2}r olur. Birimi newtondur (N).",
+        "Merkezcil kuvvet, çembersel hareket için gereken net kuvvetin yönünü ve işlevini anlatır. Yönü merkezcil ivmeyle aynı, çizgisel hızla diktir.",
+        "Merkezcil etkiyi duruma göre ip gerilmesi, sürtünme ya da kütle çekimi gibi gerçek kuvvetler sağlayabilir. “Merkezcil kuvvet” bunlara eklenen ayrı bir kuvvet değildir. Merkezcil etki ortadan kalkar ve başka net kuvvet kalmazsa cisim o andaki teğet doğrultusunda yol alır."
+      ],
+      "kutu": {
+        "tur": "tanim",
+        "metin": "Net kuvvet, cismin çembersel yörüngede yön değiştirmesini sağlar."
+      }
+    },
+    {
+      "baslik": "Değişkenleri karşılaştırma",
+      "metin": [
+        "v ve r sabitse F kütleyle doğru orantılıdır. m ve r sabitse F süratin karesiyle doğru orantılıdır. m ve v sabitse yarıçap büyüdükçe F küçülür.",
+        "Buna karşılık m ve ω sabit tutulursa F = mω²r gereği yarıçapla doğru orantı vardır. Yarıçapın etkisini yorumlarken çizgisel süratin mi, açısal hızın mı sabit olduğunu mutlaka belirtmek gerekir."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "metin": "“Yarıçap artarsa kuvvet…” cümlesi sabit tutulan değişkenler belirtilmeden tamamlanamaz."
+      }
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir disk 24 saniyede 96 tur atıyor. Periyodu ve frekansı kaçtır?",
+      "cevap": "f = {kesir:96|24} = 4 Hz. T = {kesir:24|96} = {kesir:1|4} s = 0,25 s. Kontrol: T · f = 0,25 · 4 = 1."
+    },
+    {
+      "soru": "Yarıçapı 0,5 m olan yörüngede periyot 2 s’dir. π = 3 alarak v ve ω büyüklüklerini bulunuz.",
+      "cevap": "v = {kesir:2 · 3 · 0,5|2} = 1,5 m/s. ω = {kesir:2 · 3|2} = 3 rad/s. Kontrol: ωr = 3 · 0,5 = 1,5 m/s."
+    },
+    {
+      "soru": "Birlikte dönen bir diskte K noktası eksenden 0,2 m, L noktası 0,6 m uzaktadır. Çizgisel süratlerin {kesir:vL|vK} oranı kaçtır?",
+      "cevap": "Açısal hızlar eşittir. v = ωr olduğundan oran {kesir:0,6|0,2} = 3 olur. İki noktanın tur süreleri aynı, aldıkları yollar farklıdır."
+    },
+    {
+      "soru": "Bir cisim 3 m yarıçaplı çemberde 6 m/s süratle hareket ediyor. Merkezcil ivmesi ve yönü nedir?",
+      "cevap": "a = {kesir:v²|r} = {kesir:36|3} = 12 m/s². Yönü her noktada merkeze doğrudur; hız vektörüne diktir."
+    },
+    {
+      "soru": "Kütlesi 0,4 kg olan cisim 2 m yarıçaplı çemberde 5 m/s süratle ilerliyor. Gereken merkezcil net kuvvet kaç newtondur?",
+      "cevap": "F = {kesir:mv²|r} = {kesir:0,4 · 25|2} = 5 N. Net kuvvet, hareketin merkezine yönelir."
+    },
+    {
+      "soru": "Aynı kütle için yarıçap iki katına çıkarılıyor. Önce çizgisel sürat, sonra açısal hız sabit tutularak iki ayrı deney yapılıyor. Kuvvet nasıl değişir?",
+      "cevap": "Çizgisel sürat sabitse F = {kesir:mv²|r} gereği yarıya iner. Açısal hız sabitse F = mω²r gereği iki katına çıkar. Sabit tutulan büyüklükler farklıdır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir düzenek 15 saniyede 45 tur tamamlıyor. Frekansı kaç hertzdir?",
+      "secenekler": [
+        "{kesir:1|3}",
+        "3",
+        "15",
+        "30",
+        "45"
+      ],
+      "dogru": 1,
+      "aciklama": "Frekans tur sayısının saniye cinsinden süreye oranıdır: {kesir:45|15} = 3 Hz."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aynı çemberde aynı kütleli cismin sürati iki katına çıkarılıyor. Merkezcil kuvvet ilk değerin kaç katı olur?",
+      "secenekler": [
+        "{kesir:1|4}",
+        "{kesir:1|2}",
+        "2",
+        "4",
+        "8"
+      ],
+      "dogru": 3,
+      "aciklama": "m ve r sabitken F, v² ile orantılıdır: 2² = 4."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Düzgün çembersel harekette hız vektörü sağa yönelirken merkez cismin altında bulunuyor. İvme hangi yöndedir?",
+      "secenekler": [
+        "Sağa",
+        "Sola",
+        "Yukarı",
+        "Sıfır olduğu için yönsüz",
+        "Aşağı"
+      ],
+      "dogru": 4,
+      "aciklama": "Merkezcil ivme cismin altındaki merkeze, yani aşağıya yönelir."
+    },
+    {
+      "tur": "dy",
+      "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+      "ifadeler": [
+        {
+          "metin": "Bir tam turun süresi periyottur.",
+          "dogru": true,
+          "aciklama": "T saniye ile ifade edilir."
+        },
+        {
+          "metin": "Sürat sabit olduğu için hız vektörü de sabittir.",
+          "dogru": false,
+          "aciklama": "Hızın yönü sürekli değişir."
+        },
+        {
+          "metin": "Merkezcil ivme ile çizgisel hız diktir.",
+          "dogru": true,
+          "aciklama": "Biri merkeze yönelir, diğeri teğettir."
+        },
+        {
+          "metin": "Yarıçap artınca merkezcil kuvvet her koşulda azalır.",
+          "dogru": false,
+          "aciklama": "Bu sonuç çizgisel sürat sabitken geçerlidir; sabit açısal hızda kuvvet artar."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "yonerge": "İlişkili kavram ve açıklamaları eşleştiriniz.",
+      "ciftler": [
+        [
+          "Periyot",
+          "s"
+        ],
+        [
+          "Frekans",
+          "Hz"
+        ],
+        [
+          "Açısal hız büyüklüğü",
+          "rad/s"
+        ],
+        [
+          "Merkezcil ivme büyüklüğü",
+          "m/s²"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+      "cumleler": [
+        {
+          "metin": "Çizgisel hız vektörü yörüngeye ___ doğrultusundadır.",
+          "cevap": "teğet"
+        },
+        {
+          "metin": "Merkezcil ivme hareketin ___ yönelir.",
+          "cevap": "merkezine"
+        },
+        {
+          "metin": "T ve f büyüklüklerinin çarpımı ___ olur.",
+          "cevap": "1"
+        }
+      ],
+      "fazla": [
+        "yarıçapa paralel"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir hesapta T = 5 s ve f = 5 Hz bulunmuş. Sonuçlar birbirini doğruluyor mu?",
+      "ipuclari": [
+        "T · f ilişkisini kullan.",
+        "Bir tur beş saniyeyse bir saniyede kaç tur olur?"
+      ],
+      "cevap": "Doğrulamıyor. T · f = 1 olmalıdır. T = 5 s ise f = {kesir:1|5} Hz’dir; 5 Hz değildir."
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir cisim çemberin karşılıklı iki noktasında aynı sürate sahip. Hız vektörleri aynı olabilir mi?",
+      "ipuclari": [
+        "Hızın büyüklüğünü ve yönünü ayrı incele.",
+        "Her noktadaki teğeti aynı dolanım yönünde çiz."
+      ],
+      "cevap": "Olamaz. Karşılıklı noktalardaki teğet hızlar eşit büyüklükte fakat zıt yönlüdür. Süratlerin eşitliği hız vektörlerinin eşitliği değildir."
+    }
+  ]
+}
