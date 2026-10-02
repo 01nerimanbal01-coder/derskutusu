@@ -14,7 +14,7 @@
    "baslik": "Sabit hızlı hareket nedir?",
    "metin": [
     "Bir cisim doğrusal bir yolda her eşit zaman aralığında aynı yer değiştirmeyi yapıyorsa sabit hızlı hareket yapıyor demektir. Bu hareketteki hıza sabit hız denir.",
-    "Yatay doğrultuda sabit hızla giden bir cismin hızının hem büyüklüğü hem de doğrultusu hareket boyunca aynı kalır. Hızın büyüklüğü değişmediği için cismin ivmesi sıfırdır.",
+    "Yatay doğrultuda sabit hızla giden bir cismin hızının hem büyüklüğü hem de yönü hareket boyunca aynı kalır. Hız vektörü değişmediği için cismin ivmesi sıfırdır.",
     "Platform tipi asansörler günlük hayattan bir örnektir. Kullanıcı gitmek istediği katın düğmesine basınca platform, bir doğru boyunca sabit hızla o kata ilerler. Kata ulaştığında ise kendiliğinden yavaşlar ve durur. Yavaşlayıp durduğu son bölümde hızı değiştiği için bu bölüm sabit hızlı hareket değildir.",
     "Aşağıdaki şekilde sabit hızla ilerleyen bir aracın eşit zaman aralıklarındaki konumları görülüyor. Her anda hız okları aynı uzunluktadır ve ardışık konumlar arasındaki yer değiştirmeler birbirine eşittir."
    ],
@@ -125,11 +125,11 @@
   {
    "baslik": "Konum-zaman ve hız-zaman grafikleri",
    "metin": [
-    "Ölçülen konumlar zamana karşı işaretlenince konum-zaman (x-t) grafiği elde edilir. Sabit hızla giden bir cismin konumu her eşit zaman aralığında aynı miktarda değiştiği için x-t grafiği eğik bir doğrudur.",
+    "Ölçülen konumlar zamana karşı işaretlenince konum-zaman (x-t) grafiği elde edilir. Sıfırdan farklı sabit hızla hareket eden bir cismin x-t grafiği eğik bir doğrudur. Konumu değişmeyen bir cismin hızı sıfırdır; x-t grafiği yataydır.",
     "Konum-zaman grafiğinin eğimi {kesir:Δx|Δt} oranıdır ve cismin hızını verir. Aşağıdaki şekilde K aracı pozitif yönde gider; grafiğinin eğimi de hızı da pozitiftir. L aracı negatif yönde gider; grafiğinin eğimi de hızı da negatiftir. Eğimin büyüklüğü arttıkça hızın büyüklüğü de artar. Önceki tablodaki B aracı A aracından hızlı olduğu için B'nin x-t doğrusu daha diktir.",
     "Hız-zaman (ϑ-t) grafiğinde sabit hız zamanla değişmediği için grafik çizgisi yataydır. Çizgi zaman ekseninin üstündeyse cisim pozitif yönde, altındaysa negatif yönde hareket eder.",
     "Sabit hızlı harekette hız-zaman grafiği ile zaman ekseni arasında kalan alan bir dikdörtgendir. Bu alan cismin yer değiştirmesini verir: Δx = ϑ · t. Eksenin altında kalan alan, negatif yöndeki yer değiştirmeyi gösterir.",
-    "Bir cismin hızı hareketin bir anında değişirse x-t grafiğinde doğrunun eğimi o anda değişir. ϑ-t grafiğinde ise çizgi o anda bir basamak yapar. Böyle bir hareketin toplam yer değiştirmesi, her bölümdeki yer değiştirmelerin toplamıdır."
+    "Parçalar hâlinde sabit hızla yapılan hareketleri basitleştirilmiş grafiklerle gösterebiliriz. Hız değişimine ayrılan kısa süre ihmal edildiğinde x-t grafiğinde köşe, ϑ-t grafiğinde basamak oluşur. Gerçek harekette hız değişimi bir süre alır. Toplam yer değiştirme, her bölümdeki yer değiştirmelerin toplamıdır."
    ],
    "kutu": {
     "tur": "kural",
@@ -144,7 +144,7 @@
    "cevap": "a) Süpürge her saniye 30 cm yer değiştiriyor. Eşit zaman aralıklarında eşit yer değiştirmeler yaptığı için sabit hızla hareket ediyor. b) ϑ = {kesir:140 − 20|4 − 0} = {kesir:120|4} = 30 cm/s. c) Süpürge ilk 7 saniyede 30 · 7 = 210 cm yer değiştirir. İlk konumu 20 cm olduğundan 7. saniyedeki konumu 20 + 210 = 230 cm olur."
   },
   {
-   "soru": "Yatay bir doğru boyunca uçan bir dronun ϑ-t grafiği görseldeki gibidir. a) Dronun (0-6) s ve (6-10) s aralıklarındaki yer değiştirmelerini bulunuz. b) Dronun (0-10) s aralığındaki toplam yer değiştirmesi kaç m'dir? c) Dron bu 10 saniyede kaç m yol almıştır?",
+   "soru": "Yatay bir doğru boyunca uçan bir dronun ϑ-t grafiği görseldeki gibidir. Yön değişimine ayrılan kısa süre modelde ihmal edilmiştir. a) Dronun (0-6) s ve (6-10) s aralıklarındaki yer değiştirmelerini bulunuz. b) Dronun (0-10) s aralığındaki toplam yer değiştirmesi kaç m'dir? c) Dron bu 10 saniyede kaç m yol almıştır?",
    "cevap": "a) Yer değiştirme, grafik ile zaman ekseni arasındaki alana eşittir. Birinci bölümde, (0-6) s aralığında Δx = 5 · 6 = 30 m'dir (pozitif yönde). İkinci bölümde, (6-10) s aralığında Δx = −3 · 4 = −12 m'dir (negatif yönde). b) Toplam yer değiştirme 30 + (−12) = 18 m'dir. Dron, başladığı noktanın 18 m ötesinde, pozitif yöndedir. c) Alınan yolda yön dikkate alınmaz: 30 + 12 = 42 m.",
    "gorsel": "<svg viewBox=\"0 0 440 184\" role=\"img\" aria-label=\"Dronun hız-zaman grafiği: 0 ile 6. saniye arasında hız +5 m/s (I. bölge, eksenin üstünde), 6. ile 10. saniye arasında hız −3 m/s (II. bölge, eksenin altında).\"><defs><marker id=\"fz10okD\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--g-cizgi)\"/></marker></defs><rect x=\"62\" y=\"44\" width=\"180\" height=\"60\" class=\"g-ma\"/><rect x=\"242\" y=\"104\" width=\"120\" height=\"36\" class=\"g-ta\"/><line x1=\"62\" y1=\"170\" x2=\"62\" y2=\"20\" class=\"g-c\" stroke-width=\"2\" marker-start=\"url(#fz10okD)\" marker-end=\"url(#fz10okD)\"/><line x1=\"62\" y1=\"104\" x2=\"394\" y2=\"104\" class=\"g-c\" stroke-width=\"2\" marker-end=\"url(#fz10okD)\"/><text x=\"70\" y=\"24\" font-size=\"12\" class=\"g-y\">ϑ (m/s)</text><text x=\"404\" y=\"108\" font-size=\"12\" class=\"g-y\">t (s)</text><line x1=\"242\" y1=\"44\" x2=\"242\" y2=\"154\" class=\"g-c\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\"/><line x1=\"362\" y1=\"104\" x2=\"362\" y2=\"154\" class=\"g-c\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\"/><line x1=\"62\" y1=\"44\" x2=\"242\" y2=\"44\" class=\"g-ms\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"242\" y1=\"140\" x2=\"362\" y2=\"140\" class=\"g-ts\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"55\" y=\"48\" text-anchor=\"end\" font-size=\"12\" class=\"g-y\">5</text><text x=\"55\" y=\"108\" text-anchor=\"end\" font-size=\"12\" class=\"g-y\">0</text><text x=\"55\" y=\"144\" text-anchor=\"end\" font-size=\"12\" class=\"g-y\">−3</text><text x=\"242\" y=\"170\" text-anchor=\"middle\" font-size=\"12\" class=\"g-y\">6</text><text x=\"362\" y=\"170\" text-anchor=\"middle\" font-size=\"12\" class=\"g-y\">10</text><text x=\"152\" y=\"80\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-mf\">I</text><text x=\"302\" y=\"127\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">II</text></svg>"
   },
@@ -170,21 +170,22 @@
   "Yer değiştirme, son konum ile ilk konum arasındaki farktır (Δx). Hız ϑ = {kesir:Δx|Δt} ile bulunur. Hızın işareti hareketin yönünü gösterir.",
   "Sürat skaler, hız vektörel bir niceliktir. Sabit süratle giden cismin yönü değişirse hızı da değişir.",
   "Bir doğru boyunca yön değiştirmeden ilerleyen cismin hız büyüklüğü ile sürati eşittir.",
-  "Sabit hızlı hareketin x-t grafiği eğik bir doğrudur ve eğimi hızı verir. Pozitif eğim pozitif yönde, negatif eğim negatif yönde hareketi gösterir.",
+  "Sıfırdan farklı sabit hızla hareket eden cismin x-t grafiği eğik bir doğrudur ve eğimi hızı verir. Pozitif eğim pozitif yönde, negatif eğim negatif yönde hareketi gösterir. Duran cismin x-t grafiği yataydır.",
   "Sabit hızlı hareketin ϑ-t grafiği yataydır. Grafik ile zaman ekseni arasındaki alan yer değiştirmeyi verir: Δx = ϑ · t."
  ],
  "etkinlikler": [
   {
    "tur": "coktan",
-   "soru": "Doğrusal bir yolda ilerleyen bir cismin sabit hızla hareket ettiğini hangisi gösterir?",
+   "soru": "Yatay doğrusal raydaki bir aracın konumu t = 0, 2, 4 ve 6 s anlarında ölçülüyor. Seçeneklerde bu anlara ait konumlar metre cinsinden sırasıyla verilmiştir. Hangi ölçüm dizisi sabit hızlı hareketle uyumludur?",
    "secenekler": [
-    "Hızının büyüklüğünün her saniye artması",
-    "Hareket yönünü düzenli aralıklarla değiştirmesi",
-    "Eşit zaman aralıklarında eşit yer değiştirmeler yapması",
-    "Eşit zaman aralıklarında farklı yollar alması"
+    "0, 2, 6, 12",
+    "0, 4, 0, −4",
+    "5, 11, 17, 23",
+    "0, 4, 8, 8",
+    "0, 6, 11, 15"
    ],
    "dogru": 2,
-   "aciklama": "Sabit hızlı harekette her eşit zaman aralığında yapılan yer değiştirme aynıdır."
+   "aciklama": "5, 11, 17, 23 dizisinde araç her 2 s’de +6 m yer değiştirir. Her aralıktaki ortalama hız +3 m/s’dir; ölçümler sabit hızla uyumludur. Diğer dizilerde eşit sürelerdeki yer değiştirmeler farklıdır."
   },
   {
    "tur": "coktan",
@@ -193,7 +194,8 @@
     "Hızı",
     "Alınan yolu",
     "İvmeyi",
-    "Geçen süreyi"
+    "Geçen süreyi",
+    "Konumu"
    ],
    "dogru": 0,
    "aciklama": "Eğim {kesir:Δx|Δt} oranıdır ve cismin hızına eşittir."
@@ -203,21 +205,23 @@
    "soru": "Bir aracın ϑ-t grafiğindeki çizgi yataydır ve zaman ekseninin altında kalır. Araç için hangisi doğrudur?",
    "secenekler": [
     "Pozitif yönde sabit hızla gidiyor.",
-    "Duruyor.",
-    "Negatif yönde hızlanıyor.",
+    "Pozitif yönde sürati artarak gidiyor.",
+    "Negatif yönde sürati artarak gidiyor.",
+    "Negatif yönde sürati azalarak gidiyor.",
     "Negatif yönde sabit hızla gidiyor."
    ],
-   "dogru": 3,
+   "dogru": 4,
    "aciklama": "Yatay çizgi hızın değişmediğini, çizginin eksenin altında olması da hareketin negatif yönde olduğunu gösterir."
   },
   {
    "tur": "coktan",
-   "soru": "Platform tipi bir asansör bir doğru boyunca 0,2 m/s sabit hızla 30 s ilerliyor. Asansörün bu sürede yaptığı yer değiştirmenin büyüklüğü kaç m'dir?",
+   "soru": "Yatay doğrusal bir rayda giden taşıma arabası 0,2 m/s sabit süratle 30 s ilerliyor. Arabanın bu süredeki yer değiştirmesinin büyüklüğü kaç metredir?",
    "secenekler": [
-    "0,6 m",
-    "6 m",
-    "60 m",
-    "150 m"
+    "0,6",
+    "6",
+    "30,2",
+    "60",
+    "150"
    ],
    "dogru": 1,
    "aciklama": "Δx = ϑ · t = 0,2 · 30 = 6 m."
@@ -229,7 +233,7 @@
     {
      "metin": "Sabit hızla hareket eden bir cismin ivmesi sıfırdır.",
      "dogru": true,
-     "aciklama": "Hızın büyüklüğü değişmediği için ivme sıfırdır."
+     "aciklama": "Hızın hem büyüklüğü hem de yönü değişmediğinden hız vektörü sabittir; ivme sıfırdır."
     },
     {
      "metin": "Sabit süratle giden bir cismin hızı her zaman sabittir.",
@@ -255,27 +259,27 @@
   },
   {
    "tur": "eslestir",
-   "yonerge": "Kavramları açıklamalarıyla eşleştiriniz.",
+   "yonerge": "Bir ray arabasının hareketi doğu pozitif yön kabul edilerek inceleniyor. Hareket kaydındaki bilgileri fiziksel niceliklerle eşleştiriniz.",
    "ciftler": [
     [
-     "Sabit hızlı hareket",
-     "Eşit zaman aralıklarında eşit yer değiştirme"
+     "Başlangıçta referans noktasının 6 m doğusunda bulunması",
+     "İlk konum: +6 m"
     ],
     [
-     "Sabit sürat",
-     "Eşit zaman aralıklarında eşit yollar alma"
+     "Sonunda referans noktasının 4 m batısında bulunması",
+     "Son konum: −4 m"
     ],
     [
-     "x-t grafiğinin eğimi",
-     "Hız"
+     "Başlangıç ve bitiş saatleri arasında 5 s olması",
+     "Geçen süre: 5 s"
     ],
     [
-     "ϑ-t grafiği ile zaman ekseni arasındaki alan",
-     "Yer değiştirme"
+     "Batıya doğru, yön değiştirmeden 10 m ilerlemesi",
+     "Yer değiştirme: −10 m"
     ],
     [
-     "Sabit hızlı harekette ivme",
-     "Sıfır"
+     "Her saniye batıya doğru 2 m ilerlemesi",
+     "Hız: −2 m/s"
     ]
    ]
   },
@@ -296,7 +300,7 @@
      "cevap": "yatay"
     },
     {
-     "metin": "Sabit hızla giden bir cismin x-t grafiği ___ bir doğrudur.",
+     "metin": "Sıfırdan farklı sabit hızla hareket eden bir cismin x-t grafiği ___ bir doğrudur.",
      "cevap": "eğik"
     }
    ],
@@ -313,5 +317,8 @@
    ],
    "cevap": "İlk aralıkta ϑ = {kesir:20|5} = 4 m/s, ikinci aralıkta ϑ = {kesir:40|5} = 8 m/s'dir. Koşucu ikinci aralıkta daha hızlıdır ve x-t grafiğinde bu bölüm daha diktir. Grafik her aralıkta bir doğru olduğu için koşucu iki aralıkta da sabit hızla gitmiştir."
   }
- ]
+ ],
+ "yazan": "Codex · kaynak ve soru kalite düzeltmesi · 02.10.2026",
+ "duzenleyen_oturum": "01a0f905-3dfa-7243-b40e-4220ac117f64",
+ "duzenleyen_hesap": "E"
 }
