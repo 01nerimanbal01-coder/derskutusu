@@ -15,6 +15,7 @@ function icerikKarti(i, dersler) {
   const adres = i.dosya || i.baglanti;
   return el('article', { sinif: 'kart' },
     el('div', { sinif: 'ust-bilgi' },
+      i.hafta && el('span', { sinif: 'etiket' }, `${i.hafta}. hafta`),
       i.sinif && el('span', { sinif: 'etiket' }, `${i.sinif}. sınıf`),
       dersAd && el('span', { sinif: 'etiket tur' }, dersAd),
       i.tur && el('span', { sinif: `etiket ${i.kitle === 'ogretmen' ? 'ogretmen' : 'tur'}` }, i.tur)),
@@ -72,8 +73,10 @@ function sinifSayfasi({ dersler, icerikler }) {
 const aramaEslesir = (metin, q) => (typeof Arama !== 'undefined' ? Arama.metinEslesir(metin, q) : metin.toLocaleLowerCase('tr').includes(q.toLocaleLowerCase('tr')));
 
 function icerikSayfasi({ dersler, icerikler }) {
-  const alan = { sinif: $('#s-sinif'), ders: $('#s-ders'), tur: $('#s-tur'), kitle: $('#s-kitle'), ara: $('#s-ara') };
+  const alan = { sinif: $('#s-sinif'), ders: $('#s-ders'), tur: $('#s-tur'), hafta: $('#s-hafta'), kitle: $('#s-kitle'), ara: $('#s-ara') };
   alan.sinif.append(...Object.keys(dersler.siniflar).map((n) => el('option', { value: n }, `${n}. sınıf`)));
+  const haftalar = [...new Set(icerikler.map((i) => Number(i.hafta)).filter((n) => Number.isInteger(n) && n > 0))].sort((a, b) => a - b);
+  alan.hafta.append(...haftalar.map((n) => el('option', { value: String(n) }, `${n}. hafta`)));
   const dersSecenekleri = () => {
     const n = alan.sinif.value;
     const kisa = n ? [...dersler.siniflar[n], ...(dersler.secmeli?.[n] || [])] : Object.keys(dersler.dersler).sort((a, b) => dersler.dersler[a].localeCompare(dersler.dersler[b], 'tr'));
@@ -91,7 +94,7 @@ function icerikSayfasi({ dersler, icerikler }) {
   };
   for (const a of ['sinif', 'kitle']) if (parametre.get(a)) alan[a].value = parametre.get(a);
   dersSecenekleri(); turSecenekleri();
-  for (const a of ['ders', 'tur']) if (parametre.get(a)) alan[a].value = parametre.get(a);
+  for (const a of ['ders', 'tur', 'hafta']) if (parametre.get(a)) alan[a].value = parametre.get(a);
   if (parametre.get('ara')) alan.ara.value = parametre.get('ara');
 
   const secimiKaldir = (ad) => {
@@ -109,7 +112,7 @@ function icerikSayfasi({ dersler, icerikler }) {
   const ciz = () => {
     const f = Object.fromEntries(Object.entries(alan).map(([a, e]) => [a, e.value.trim()]));
     const sonuc = icerikler.filter((i) => (!f.sinif || String(i.sinif) === f.sinif) && (!f.ders || i.ders === f.ders)
-      && (!f.tur || i.tur === f.tur) && (!f.kitle || kitleUyar(i, f.kitle))
+      && (!f.hafta || String(i.hafta) === f.hafta) && (!f.tur || i.tur === f.tur) && (!f.kitle || kitleUyar(i, f.kitle))
       && (!f.ara || aramaEslesir(`${i.baslik} ${i.aciklama} ${dersler.dersler[i.ders] || ''} ${i.tur}`, f.ara)))
       .sort((a, b) => String(b.tarih || '').localeCompare(String(a.tarih || '')));
     const url = new URLSearchParams(Object.entries(f).filter(([, d]) => d));
@@ -119,7 +122,7 @@ function icerikSayfasi({ dersler, icerikler }) {
     $('#temizle').hidden = !secili;
     const secimler = $('#secili-suzgecler');
     if (secimler) {
-      const adlar = { sinif: 'Sınıf', ders: 'Ders', kitle: 'Kimin için', tur: 'Tür', ara: 'Arama' };
+      const adlar = { sinif: 'Sınıf', ders: 'Ders', kitle: 'Kimin için', tur: 'Tür', hafta: 'Hafta', ara: 'Arama' };
       secimler.replaceChildren(...Object.entries(f).filter(([, deger]) => deger).map(([ad, deger]) => {
         const metin = ad === 'ara' ? deger : alan[ad].selectedOptions[0].textContent;
         return el('button', { type: 'button', sinif: 'secili-suzgec',
@@ -135,7 +138,7 @@ function icerikSayfasi({ dersler, icerikler }) {
       $('#sonucsuz-baslik').textContent = f.ara ? 'Aramanızla eşleşen içerik bulunamadı' : 'Bu seçimde henüz içerik yok';
       $('#sonucsuz-aciklama').textContent = f.ara
         ? 'Daha kısa bir sözcükle arayın veya yalnız aramayı temizleyerek seçtiğiniz dersin içeriklerine dönün.'
-        : 'Başka bir sınıf, ders veya tür seçebilir; tüm seçimleri temizleyerek içeriklere göz atabilirsiniz.';
+        : 'Başka bir sınıf, ders, hafta veya tür seçebilir; tüm seçimleri temizleyerek içeriklere göz atabilirsiniz.';
       $('#aramayi-temizle').hidden = !f.ara;
       $('#sonucsuz-temizle').hidden = !secili;
     }
@@ -145,6 +148,7 @@ function icerikSayfasi({ dersler, icerikler }) {
   alan.kitle.addEventListener('change', () => { turSecenekleri(); ciz(); });
   alan.ders.addEventListener('change', ciz);
   alan.tur.addEventListener('change', ciz);
+  alan.hafta.addEventListener('change', ciz);
   alan.ara.addEventListener('input', ciz);
   $('#temizle').addEventListener('click', hepsiniTemizle);
   $('#sonucsuz-temizle')?.addEventListener('click', hepsiniTemizle);

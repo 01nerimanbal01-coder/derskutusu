@@ -1,0 +1,240 @@
+{
+  "sinif": 5,
+  "ders": "matematik",
+  "hafta": 2,
+  "tarih": "21-25 Eylül 2026",
+  "ciktilar": [
+    "MAT.5.3.2. Temel geometrik çizimlere dayalı deneyimlerini yansıtabilme"
+  ],
+  "konu": "Çizerek Keşfedelim: Dikme, Paralellik ve Eş Uzunluk",
+  "hatirla": [
+    "Farklı iki noktadan bir doğru geçer. Bir dış noktadan doğruya çizilen dikme en kısa uzaklığı verir.",
+    "Paralel doğrular kesişmez. Sabit pergel açıklığı eş uzunlukları taşımaya yarar."
+  ],
+  "sorular": [
+    {
+      "tur": "kisa",
+      "soru": "Şekildeki A ve B noktalarından geçen doğruyu cetvelle çiziniz. Kaç farklı doğru elde edebilirsiniz?",
+      "duzey": "uygula",
+      "cevap": "A ve B’den geçen tek bir doğru çizilebilir.",
+      "satir": 3,
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 100\" role=\"img\" aria-label=\"İki farklı nokta A ve B\"><g font-family=\"Noto Sans, sans-serif\" font-size=\"13\" fill=\"#172849\"><circle cx=\"55\" cy=\"70\" r=\"3.5\" fill=\"#172849\"/><text x=\"62\" y=\"63\" font-size=\"14\" fill=\"#172849\" text-anchor=\"start\">A</text><circle cx=\"280\" cy=\"35\" r=\"3.5\" fill=\"#172849\"/><text x=\"287\" y=\"28\" font-size=\"14\" fill=\"#172849\" text-anchor=\"start\">B</text></g></svg>"
+    },
+    {
+      "tur": "coktan",
+      "soru": "Şekilde P noktasının d doğrusuna uzaklığını hangi parça gösterir?",
+      "duzey": "uygula",
+      "secenekler": [
+        "[PK]",
+        "[KL]",
+        "[PH]",
+        "[PL]"
+      ],
+      "dogru": 2,
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 140\" role=\"img\" aria-label=\"P noktasından d doğrusuna PH dikmesi ile PK ve PL eğik parçaları\"><g font-family=\"Noto Sans, sans-serif\" font-size=\"13\" fill=\"#172849\"><path d=\"M15 110L345 110\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2.5\" /><path d=\"M22 105L15 110L22 115 M338 105L345 110L338 115\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2\"/><path d=\"M145 23L145 110\" fill=\"none\" stroke=\"#dd752c\" stroke-width=\"2.5\" /><path d=\"M145 23L45 110\" fill=\"none\" stroke=\"#7693bf\" stroke-width=\"2.5\" /><path d=\"M145 23L285 110\" fill=\"none\" stroke=\"#7693bf\" stroke-width=\"2.5\" /><path d=\"M145 98L157 98\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2.5\" /><path d=\"M157 98L157 110\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2.5\" /><circle cx=\"145\" cy=\"23\" r=\"3.5\" fill=\"#172849\"/><text x=\"152\" y=\"16\" font-size=\"14\" fill=\"#172849\" text-anchor=\"start\">P</text><circle cx=\"145\" cy=\"110\" r=\"3.5\" fill=\"#172849\"/><text x=\"134\" y=\"133\" font-size=\"14\" fill=\"#172849\" text-anchor=\"start\">H</text><circle cx=\"45\" cy=\"110\" r=\"3.5\" fill=\"#172849\"/><text x=\"52\" y=\"103\" font-size=\"14\" fill=\"#172849\" text-anchor=\"start\">K</text><circle cx=\"285\" cy=\"110\" r=\"3.5\" fill=\"#172849\"/><text x=\"292\" y=\"103\" font-size=\"14\" fill=\"#172849\" text-anchor=\"start\">L</text><text x=\"327\" y=\"96\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">d</text></g></svg>"
+    },
+    {
+      "tur": "tablo",
+      "soru": "Çizim kayıtlarında aynı pergel açıklığıyla çizilen çemberleri belirleyiniz.",
+      "duzey": "uygula",
+      "basliklar": [
+        "Soru",
+        "Cevap"
+      ],
+      "satirlar": [
+        [
+          "Eş yarıçaplı çemberler",
+          {
+            "b": "K ve M"
+          }
+        ],
+        [
+          "En küçük yarıçap",
+          {
+            "b": "2 cm"
+          }
+        ]
+      ],
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 120\" role=\"img\" aria-label=\"Veri tablosu\"><g font-family=\"Noto Sans, sans-serif\" font-size=\"13\" fill=\"#172849\"><rect x=\"1\" y=\"1\" width=\"178.0\" height=\"28\" rx=\"4\" fill=\"#dce9ff\"/><text x=\"90.0\" y=\"20\" font-size=\"12\" fill=\"#172849\" text-anchor=\"middle\">Çember</text><rect x=\"181.0\" y=\"1\" width=\"178.0\" height=\"28\" rx=\"4\" fill=\"#dce9ff\"/><text x=\"270.0\" y=\"20\" font-size=\"12\" fill=\"#172849\" text-anchor=\"middle\">Pergel açıklığı</text><rect x=\"1\" y=\"31\" width=\"178.0\" height=\"28\" rx=\"4\" fill=\"#f0f5fc\"/><text x=\"90.0\" y=\"50\" font-size=\"12\" fill=\"#172849\" text-anchor=\"middle\">K</text><rect x=\"181.0\" y=\"31\" width=\"178.0\" height=\"28\" rx=\"4\" fill=\"#f0f5fc\"/><text x=\"270.0\" y=\"50\" font-size=\"12\" fill=\"#172849\" text-anchor=\"middle\">4 cm</text><rect x=\"1\" y=\"61\" width=\"178.0\" height=\"28\" rx=\"4\" fill=\"#f0f5fc\"/><text x=\"90.0\" y=\"80\" font-size=\"12\" fill=\"#172849\" text-anchor=\"middle\">L</text><rect x=\"181.0\" y=\"61\" width=\"178.0\" height=\"28\" rx=\"4\" fill=\"#f0f5fc\"/><text x=\"270.0\" y=\"80\" font-size=\"12\" fill=\"#172849\" text-anchor=\"middle\">2 cm</text><rect x=\"1\" y=\"91\" width=\"178.0\" height=\"28\" rx=\"4\" fill=\"#f0f5fc\"/><text x=\"90.0\" y=\"110\" font-size=\"12\" fill=\"#172849\" text-anchor=\"middle\">M</text><rect x=\"181.0\" y=\"91\" width=\"178.0\" height=\"28\" rx=\"4\" fill=\"#f0f5fc\"/><text x=\"270.0\" y=\"110\" font-size=\"12\" fill=\"#172849\" text-anchor=\"middle\">4 cm</text></g></svg>"
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Geometrik araçların görevlerini tamamlayınız.",
+      "duzey": "hatirla",
+      "cumleler": [
+        {
+          "metin": "Dikliği kontrol etmek için ___ kullanılır.",
+          "cevap": "gönye"
+        },
+        {
+          "metin": "Eş uzaklığı taşımak için açıklığı sabit ___ kullanılır.",
+          "cevap": "pergel"
+        },
+        {
+          "metin": "Uzunluğu ölçmek için ölçülü ___ kullanılır.",
+          "cevap": "cetvel"
+        }
+      ],
+      "fazla": [
+        "silgi"
+      ]
+    },
+    {
+      "tur": "acik",
+      "soru": "a ve b paraleldir. Soru işaretiyle gösterilen dik parçanın uzunluğu kaç santimetredir? Nedenini yazınız.",
+      "duzey": "uygula",
+      "cevap": "3 cm’dir. Paralel doğrular arasındaki dik uzaklık değişmez.",
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 120\" role=\"img\" aria-label=\"Paralel a ve b doğruları arasında iki dikme, biri 3 cm\"><g font-family=\"Noto Sans, sans-serif\" font-size=\"13\" fill=\"#172849\"><path d=\"M15 35L340 35\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2.5\" /><path d=\"M22 30L15 35L22 40 M333 30L340 35L333 40\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2\"/><path d=\"M15 95L340 95\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2.5\" /><path d=\"M22 90L15 95L22 100 M333 90L340 95L333 100\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2\"/><text x=\"325\" y=\"25\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">a</text><text x=\"325\" y=\"85\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">b</text><path d=\"M95 35L95 95\" fill=\"none\" stroke=\"#dd752c\" stroke-width=\"2.5\" /><path d=\"M225 35L225 95\" fill=\"none\" stroke=\"#dd752c\" stroke-width=\"2.5\" /><text x=\"100\" y=\"70\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">3 cm</text><text x=\"230\" y=\"70\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">?</text><path d=\"M95 45L105 45\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2.5\" /><path d=\"M105 45L105 35\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2.5\" /><path d=\"M225 45L235 45\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2.5\" /><path d=\"M235 45L235 35\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2.5\" /></g></svg>",
+      "satir": 3
+    },
+    {
+      "tur": "dy",
+      "soru": "Kare işaretlerinin dikliği gösterdiği çizime göre ifadeleri değerlendiriniz.",
+      "duzey": "uygula",
+      "ifadeler": [
+        {
+          "metin": "k doğrusu d doğrusuna diktir.",
+          "dogru": true
+        },
+        {
+          "metin": "k ile m birbirine paraleldir.",
+          "dogru": true
+        },
+        {
+          "metin": "m doğrusu d doğrusuna paraleldir.",
+          "dogru": false
+        }
+      ],
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 130\" role=\"img\" aria-label=\"d doğrusuna dik k ve m doğruları\"><g font-family=\"Noto Sans, sans-serif\" font-size=\"13\" fill=\"#172849\"><path d=\"M15 70L340 70\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2.5\" /><path d=\"M22 65L15 70L22 75 M333 65L340 70L333 75\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2\"/><path d=\"M90 15L90 120\" fill=\"none\" stroke=\"#dd752c\" stroke-width=\"2.5\" /><path d=\"M250 15L250 120\" fill=\"none\" stroke=\"#dd752c\" stroke-width=\"2.5\" /><path d=\"M90 60L100 60\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2.5\" /><path d=\"M100 60L100 70\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2.5\" /><path d=\"M250 60L260 60\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2.5\" /><path d=\"M260 60L260 70\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2.5\" /><text x=\"70\" y=\"18\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">k</text><text x=\"232\" y=\"18\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">m</text><text x=\"321\" y=\"58\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">d</text><path d=\"M84 23L90 15L96 23 M84 112L90 120L96 112 M244 23L250 15L256 23 M244 112L250 120L256 112\" fill=\"none\" stroke=\"#dd752c\" stroke-width=\"2\"/></g></svg>"
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Gösterimleri anlamlarıyla eşleştiriniz.",
+      "duzey": "hatirla",
+      "ciftler": [
+        [
+          "a // b",
+          "a doğrusu b doğrusuna paraleldir."
+        ],
+        [
+          "[AB]",
+          "AB doğru parçası"
+        ],
+        [
+          "|AB|",
+          "AB doğru parçasının uzunluğu"
+        ],
+        [
+          "r",
+          "Yarıçap"
+        ]
+      ]
+    },
+    {
+      "tur": "tablo",
+      "soru": "Bir ışında art arda eş uzunluklar işaretlenmiştir. Şekle göre tabloyu tamamlayınız.",
+      "duzey": "uygula",
+      "basliklar": [
+        "Uzunluk",
+        "Değer"
+      ],
+      "satirlar": [
+        [
+          "|AC|",
+          {
+            "b": "4 cm"
+          }
+        ],
+        [
+          "|BD|",
+          {
+            "b": "4 cm"
+          }
+        ],
+        [
+          "|AD|",
+          {
+            "b": "6 cm"
+          }
+        ]
+      ],
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 100\" role=\"img\" aria-label=\"A, B, C, D sıralı noktaları; AB, BC ve CD uzunlukları ikişer santimetre\"><g font-family=\"Noto Sans, sans-serif\" font-size=\"13\" fill=\"#172849\"><path d=\"M20 50L337 50\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2.5\" /><path d=\"M327 43L337 50L327 57\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2\"/><circle cx=\"30\" cy=\"50\" r=\"3.5\" fill=\"#172849\"/><text x=\"37\" y=\"43\" font-size=\"14\" fill=\"#172849\" text-anchor=\"start\">A</text><circle cx=\"120\" cy=\"50\" r=\"3.5\" fill=\"#172849\"/><text x=\"127\" y=\"43\" font-size=\"14\" fill=\"#172849\" text-anchor=\"start\">B</text><circle cx=\"210\" cy=\"50\" r=\"3.5\" fill=\"#172849\"/><text x=\"217\" y=\"43\" font-size=\"14\" fill=\"#172849\" text-anchor=\"start\">C</text><circle cx=\"300\" cy=\"50\" r=\"3.5\" fill=\"#172849\"/><text x=\"307\" y=\"43\" font-size=\"14\" fill=\"#172849\" text-anchor=\"start\">D</text><text x=\"65\" y=\"83\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">2 cm</text><text x=\"157\" y=\"83\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">2 cm</text><text x=\"247\" y=\"83\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">2 cm</text></g></svg>"
+    },
+    {
+      "tur": "siralama",
+      "soru": "Bir doğruya dışındaki P noktasından gönye yardımıyla dikme çizme adımlarını sıralayınız.",
+      "duzey": "uygula",
+      "ogeler": [
+        "Gönyenin bir dik kenarını doğruya yerleştir.",
+        "Gönyeyi kaydırıp diğer dik kenarı P noktasından geçir.",
+        "P ile doğru arasındaki parçayı çiz.",
+        "Kesişimdeki dikliği kontrol et."
+      ]
+    },
+    {
+      "tur": "coktan",
+      "soru": "Çizim kartlarına göre hangi işlem yarıçapı korur?",
+      "duzey": "uygula",
+      "secenekler": [
+        "Merkezi değiştirip açıklığı korumak",
+        "Merkezi koruyup açıklığı büyütmek",
+        "Merkezi koruyup açıklığı küçültmek",
+        "İki işlemde de açıklığı değiştirmek"
+      ],
+      "dogru": 0,
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 132\" role=\"img\" aria-label=\"Bilgi kartları\"><g font-family=\"Noto Sans, sans-serif\" font-size=\"13\" fill=\"#172849\"><rect x=\"4\" y=\"6\" width=\"352\" height=\"66\" rx=\"10\" fill=\"#edf3ff\"/><text x=\"14\" y=\"26\" font-size=\"13\" fill=\"#234a96\" text-anchor=\"start\">I</text><text x=\"14\" y=\"46\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">Merkez değiştirildi; pergel açıklığı</text><text x=\"14\" y=\"64\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">korundu.</text><rect x=\"4\" y=\"78\" width=\"352\" height=\"48\" rx=\"10\" fill=\"#ecf8f0\"/><text x=\"14\" y=\"98\" font-size=\"13\" fill=\"#234a96\" text-anchor=\"start\">II</text><text x=\"14\" y=\"118\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">Merkez korundu; pergel açıklığı büyütüldü.</text></g></svg>"
+    },
+    {
+      "tur": "acik",
+      "soru": "P noktasından d doğrusuna çizilen üç parçadan yalnız biri dik. Bir öğrenci “Üç parça da en kısa uzaklıktır.” diyor. Şekle göre açıklayınız.",
+      "duzey": "ust",
+      "cevap": "Yalnız [PH] dikmedir ve en kısa uzaklığı verir. Eğik [PK] veya [PL], bu uzaklıktan daha uzundur.",
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 140\" role=\"img\" aria-label=\"P noktasından d doğrusuna PH dikmesi ile PK ve PL eğik parçaları\"><g font-family=\"Noto Sans, sans-serif\" font-size=\"13\" fill=\"#172849\"><path d=\"M15 110L345 110\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2.5\" /><path d=\"M22 105L15 110L22 115 M338 105L345 110L338 115\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2\"/><path d=\"M145 23L145 110\" fill=\"none\" stroke=\"#dd752c\" stroke-width=\"2.5\" /><path d=\"M145 23L45 110\" fill=\"none\" stroke=\"#7693bf\" stroke-width=\"2.5\" /><path d=\"M145 23L285 110\" fill=\"none\" stroke=\"#7693bf\" stroke-width=\"2.5\" /><path d=\"M145 98L157 98\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2.5\" /><path d=\"M157 98L157 110\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2.5\" /><circle cx=\"145\" cy=\"23\" r=\"3.5\" fill=\"#172849\"/><text x=\"152\" y=\"16\" font-size=\"14\" fill=\"#172849\" text-anchor=\"start\">P</text><circle cx=\"145\" cy=\"110\" r=\"3.5\" fill=\"#172849\"/><text x=\"134\" y=\"133\" font-size=\"14\" fill=\"#172849\" text-anchor=\"start\">H</text><circle cx=\"45\" cy=\"110\" r=\"3.5\" fill=\"#172849\"/><text x=\"52\" y=\"103\" font-size=\"14\" fill=\"#172849\" text-anchor=\"start\">K</text><circle cx=\"285\" cy=\"110\" r=\"3.5\" fill=\"#172849\"/><text x=\"292\" y=\"103\" font-size=\"14\" fill=\"#172849\" text-anchor=\"start\">L</text><text x=\"327\" y=\"96\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">d</text></g></svg>",
+      "satir": 3
+    },
+    {
+      "tur": "kisa",
+      "soru": "Düz bir kâğıtta tek bir nokta işaretleyiniz. Bu noktadan farklı yönlerde üç doğru çizilebilir mi? İki farklı noktanın ikisinden geçen doğrularla karşılaştırınız.",
+      "duzey": "uygula",
+      "cevap": "Tek noktadan farklı yönlerde üç doğru çizilebilir. İki farklı noktanın ikisinden geçen doğru ise tektir.",
+      "satir": 3
+    },
+    {
+      "tur": "tablo",
+      "soru": "Çizim amacına uygun korunacak özelliği yazınız.",
+      "duzey": "uygula",
+      "basliklar": [
+        "Amaç",
+        "Korunacak özellik"
+      ],
+      "satirlar": [
+        [
+          "Eş yarıçaplı iki çember",
+          {
+            "b": "Pergel açıklığı"
+          }
+        ],
+        [
+          "Doğruya en kısa bağlantı",
+          {
+            "b": "Diklik"
+          }
+        ],
+        [
+          "İki noktanın ikisinden geçme",
+          {
+            "b": "Her iki noktayı aynı doğruda tutma"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "acik",
+      "soru": "Bir pergelin açıklığı her işaretlemede büyütülürse aynı ışında oluşan parçaların eşit olduğu söylenebilir mi? Eş parça elde etme yöntemini açıklayınız.",
+      "duzey": "ust",
+      "cevap": "Söylenemez. Açıklık büyüdükçe taşınan uzunluk değişir. Eş parçalar için aynı pergel açıklığı korunmalıdır.",
+      "satir": 3
+    }
+  ],
+  "yayin_tarihi": "2026-10-02"
+}

@@ -11,6 +11,7 @@ from pathlib import Path
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
+BETIK_SURUMLERI = {'arama.js': '202610021530', 'kutuphane.js': '202610021610'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
@@ -26,7 +27,7 @@ SAYAC = '''<!-- Cloudflare Web Analytics --><script type='module' src='https://s
 
 def sayfa(ad, baslik, aciklama, govde, betikler=(), kanonik=True):
     kan = f'<link rel="canonical" href="https://derskutusu.com/{ad}">\n' if kanonik else '<meta name="robots" content="noindex">\n'
-    js = ''.join(f'<script src="/{b}?v={SURUM}"></script>\n' for b in ('ortak.js', *betikler, 'arama.js', 'tahta.js'))
+    js = ''.join(f'<script src="/{b}?v={BETIK_SURUMLERI.get(b, SURUM)}"></script>\n' for b in ('ortak.js', *betikler, 'arama.js', 'tahta.js'))
     return f'''<!doctype html>
 <html lang="tr">
 <head>
@@ -106,7 +107,7 @@ GOVDE = {
     <div class="kap">
       <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><span>İçerikler</span></nav>
       <h1>İçerikler</h1>
-      <p>Sınıfa, derse ve türe göre arayın: konu anlatımları, soru çözümleri, videolar; öğretmenler için yıllık planlar, yazılı soruları ve çalışma kâğıtları.</p>
+      <p>Sınıfa, derse, haftaya ve türe göre arayın: konu anlatımları, soru çözümleri, videolar; öğretmenler için yıllık planlar, yazılı soruları ve çalışma kâğıtları.</p>
     </div>
   </section>
   <section class="bolum">
@@ -115,6 +116,7 @@ GOVDE = {
         <label>Sınıf<select id="s-sinif"><option value="">Bütün sınıflar</option></select></label>
         <label>Ders<select id="s-ders"></select></label>
         <label>Kimin için<select id="s-kitle"><option value="">Herkes</option><option value="ogrenci">Öğrenci</option><option value="ogretmen">Öğretmen</option></select></label>
+        <label>Hafta<select id="s-hafta"><option value="">Bütün haftalar</option></select></label>
         <label>Tür<select id="s-tur"></select></label>
         <label class="arama">Ara<input id="s-ara" type="search" placeholder="Konu, başlık…" autocomplete="off"></label>
       </form>
