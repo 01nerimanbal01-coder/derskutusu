@@ -161,12 +161,36 @@ const Plan = (() => {
       doc.text(m, x, y, { align: hiza });
     };
     const tablo = (satirlar, y) => {
+      const kokluHucreler = new WeakMap();
       doc.autoTable({
         startY: y, body: satirlar.map((r) => r.map(arapca)), theme: 'grid',
         margin: { left: SAYFA.sol, right: 210 - SAYFA.sag, top: SAYFA.ust, bottom: 297 - SAYFA.alt },
         styles: { font: 'DKPlan', fontSize: 9, textColor: RENK.metin, lineColor: RENK.cizgi, lineWidth: 0.2, cellPadding: { top: 1.2, bottom: 1.2, left: 1.8, right: 1.8 }, valign: 'top', overflow: 'linebreak' },
         columnStyles: { 0: { cellWidth: 46, fontStyle: 'bold', fillColor: RENK.golge }, 1: { cellWidth: 'auto' } },
         didParseCell: (v) => { if (v.column.index === 1 && /^\n+$/.test(v.cell.raw || '')) v.cell.styles.minCellHeight = 16; },
+        willDrawCell: ({ cell }) => {
+          if (cell.text.some((s) => /[√∛∜]/.test(s))) {
+            kokluHucreler.set(cell, cell.text); cell.text = [];
+          }
+        },
+        didDrawCell: ({ cell }) => {
+          const satirlar = kokluHucreler.get(cell); if (!satirlar) return;
+          cell.text = satirlar;
+          const em = cell.styles.fontSize / doc.internal.scaleFactor, pos = cell.getTextPos();
+          doc.saveGraphicsState(); doc.setDrawColor(...RENK.metin); doc.setLineWidth(em * .075);
+          satirlar.forEach((satir, i) => {
+            let x = pos.x; const taban = pos.y + em * .85 + i * em * doc.getLineHeightFactor();
+            for (const p of kokParcalari(satir)) {
+              if (p.metin != null) { doc.text(p.metin, x, taban); x += doc.getTextWidth(p.metin); continue; }
+              const isaret = doc.getTextWidth('√');
+              const en = doc.getTextWidth(p.kok), ust = taban - em * .85;
+              doc.lines([[isaret * .22, -em * .1], [isaret * .25, em * .45], [isaret * .43, -em * .85], [isaret * .1 + en, 0]], x, taban - em * .35, [1, 1], 'S');
+              if (p.derece) { doc.setFontSize(cell.styles.fontSize * .6); doc.text(p.derece, x, ust + em * .2); doc.setFontSize(cell.styles.fontSize); }
+              doc.text(p.kok, x + isaret, taban); x += isaret + en;
+            }
+          });
+          doc.restoreGraphicsState();
+        },
       });
       return doc.lastAutoTable.finalY;
     };

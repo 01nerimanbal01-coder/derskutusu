@@ -3,6 +3,45 @@
 
 const $ = (s, k = document) => k.querySelector(s);
 const $$ = (s, k = document) => [...k.querySelectorAll(s)];
+// Resmî veri alıntılarındaki düz kökleri de kapsamı belli, üst çizgili gösterime çevirir.
+const kokParcalari = (metin) => {
+  const s = String(metin), parcalar = []; let pos = 0;
+  const re = /[√∛∜]/g; let m;
+  while ((m = re.exec(s))) {
+    const bas = m.index + 1; let son = bas, ic;
+    if (s[bas] === '(') {
+      let derinlik = 0;
+      for (; son < s.length; son++) {
+        if (s[son] === '(') derinlik++;
+        if (s[son] === ')' && --derinlik === 0) break;
+      }
+      if (son === s.length) throw new Error('Kökün kapanış parantezi eksik');
+      ic = s.slice(bas + 1, son++);
+    } else {
+      const sayi = /^(?:\d+(?:[.,]\d+)?|[a-zA-Z])(?:[²³⁴⁵⁶⁷⁸⁹⁰¹]+)?/.exec(s.slice(bas));
+      if (!sayi) throw new Error('Kök kapsamı açıkça belirtilmeli');
+      ic = sayi[0]; son += ic.length;
+    }
+    parcalar.push({ metin: s.slice(pos, m.index) }, { kok: ic, derece: { '√': '', '∛': '3', '∜': '4' }[m[0]] });
+    pos = son; re.lastIndex = son;
+  }
+  parcalar.push({ metin: s.slice(pos) }); return parcalar;
+};
+const kokDugumu = (metin) => {
+  const sonuc = document.createDocumentFragment();
+  for (const p of kokParcalari(metin)) {
+    if (p.metin != null) { sonuc.append(p.metin); continue; }
+    const kok = document.createElement('span'); kok.className = 's-kok'; kok.setAttribute('role', 'math');
+    kok.setAttribute('aria-label', `${p.derece ? p.derece + '. dereceden kök' : 'karekök'}: ${p.kok}`);
+    if (p.derece) { const d = document.createElement('span'); d.className = 's-kok-derece'; d.setAttribute('aria-hidden', 'true'); d.textContent = p.derece; kok.append(d); }
+    const isaret = document.createElement('span'); isaret.className = 's-kok-isaret'; isaret.setAttribute('aria-hidden', 'true');
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg'); svg.setAttribute('viewBox', '0 0 16 24'); svg.setAttribute('preserveAspectRatio', 'none');
+    const yol = document.createElementNS(svg.namespaceURI, 'path'); yol.setAttribute('d', 'M0 14 L4 12 L8 21 L14 0 H16 V1.5 H15 L8.5 24 L3.5 14 L1 15 Z'); yol.setAttribute('fill', 'currentColor'); svg.append(yol); isaret.append(svg);
+    const ic = document.createElement('span'); ic.className = 's-kok-ic'; ic.setAttribute('aria-hidden', 'true'); ic.append(kokDugumu(p.kok));
+    kok.append(isaret, ic); sonuc.append(kok);
+  }
+  return sonuc;
+};
 const el = (etiket, ozellik = {}, ...cocuk) => {
   const e = document.createElement(etiket);
   for (const [a, d] of Object.entries(ozellik)) {
@@ -11,7 +50,7 @@ const el = (etiket, ozellik = {}, ...cocuk) => {
     else if (a.startsWith('on')) e.addEventListener(a.slice(2), d);
     else e.setAttribute(a, d === true ? '' : d);
   }
-  for (const c of cocuk.flat()) if (c != null && c !== false && c !== '') e.append(c);
+  for (const c of cocuk.flat()) if (c != null && c !== false && c !== '') e.append(typeof c === 'string' && /[√∛∜]/.test(c) ? kokDugumu(c) : c);
   return e;
 };
 const simge = (ad, sinif) => {

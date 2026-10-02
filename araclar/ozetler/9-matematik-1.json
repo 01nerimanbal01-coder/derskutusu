@@ -50,22 +50,22 @@
   {
    "baslik": "Köklü gösterimi anlamak",
    "metin": [
-    "√a, karesi a olan negatif olmayan sayıyı belirtir; gerçek sayılarda a ≥ 0 olmalıdır. Bu nedenle √49 = 7’dir. x² = 49 denkleminin çözümleri 7 ve −7 olsa da √49 ifadesinin değeri yalnız 7’dir.",
-    "Çift dereceli bir kökün içi gerçek sayılarda negatif olamaz. Tek dereceli köklerde negatif sayılar da kullanılabilir: ∛(−27) = −3, çünkü (−3) · (−3) · (−3) = −27’dir.",
-    "Pozitif tabanlarda rasyonel üslerle kökler birbirine dönüştürülebilir. Örneğin {us:16|1/2} = √16 = 4; {us:8|1/3} = ∛8 = 2 olur. Genel olarak n’inci kök, 1/n üssüyle ilişkilidir."
+    "{kok:a}, karesi a olan negatif olmayan sayıyı belirtir; gerçek sayılarda a ≥ 0 olmalıdır. Bu nedenle {kok:49} = 7’dir. x² = 49 denkleminin çözümleri 7 ve −7 olsa da {kok:49} ifadesinin değeri yalnız 7’dir.",
+    "Çift dereceli bir kökün içi gerçek sayılarda negatif olamaz. Tek dereceli köklerde negatif sayılar da kullanılabilir: {kok:−27|3} = −3, çünkü (−3) · (−3) · (−3) = −27’dir.",
+    "Pozitif tabanlarda rasyonel üslerle kökler birbirine dönüştürülebilir. Örneğin {us:16|1/2} = {kok:16} = 4; {us:8|1/3} = {kok:8|3} = 2 olur. Genel olarak n’inci kök, 1/n üssüyle ilişkilidir."
    ],
    "kutu": {
     "tur": "kural",
-    "metin": "√(a²) = |a| olur. a negatifken karekökün sonucu a değil, −a’dır."
+    "metin": "{kok:a²} = |a| olur. a negatifken karekökün sonucu a değil, −a’dır."
    },
-   "gorsel": "<svg viewBox=\"0 0 470 219\" role=\"img\" aria-label=\"İfade ile denklemin farkı\"><text x=\"235\" y=\"22\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">İfade ile denklemin farkı</text><rect x=\"18\" y=\"34\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"53\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Karekök ifadesi</text><text x=\"32\" y=\"71\" font-size=\"12\" class=\"g-y\">√36 = 6</text><path d=\"M235 82v9m-4-4 4 4 4-4\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><rect x=\"18\" y=\"93\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"112\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Denklem</text><text x=\"32\" y=\"130\" font-size=\"12\" class=\"g-y\">x² = 36 → x = 6 veya x = −6</text><path d=\"M235 141v9m-4-4 4 4 4-4\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><rect x=\"18\" y=\"152\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"171\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Negatif tabanın karesinin kökü</text><text x=\"32\" y=\"189\" font-size=\"12\" class=\"g-y\">√((−6)²) = |−6| = 6</text></svg>"
+   "gorsel": "<svg viewBox=\"0 0 470 219\" role=\"img\" aria-label=\"İfade ile denklemin farkı\"><text x=\"235\" y=\"22\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">İfade ile denklemin farkı</text><rect x=\"18\" y=\"34\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"53\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Karekök ifadesi</text><path d=\"M32.60 66.80 l2.04 -1.20 l2.40 5.40 L40.64 59.60 H56.29\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.90\"/><text x=\"41.24\" y=\"71.00\" font-size=\"12\" class=\"g-y\">36</text><text x=\"57.01\" y=\"71.00\" font-size=\"12\" class=\"g-y\"> = 6</text><path d=\"M235 82v9m-4-4 4 4 4-4\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><rect x=\"18\" y=\"93\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"112\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Denklem</text><text x=\"32\" y=\"130\" font-size=\"12\" class=\"g-y\">x² = 36 → x = 6 veya x = −6</text><path d=\"M235 141v9m-4-4 4 4 4-4\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><rect x=\"18\" y=\"152\" width=\"434\" height=\"47\" rx=\"10\" class=\"g-ma\"/><text x=\"32\" y=\"171\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Negatif tabanın karesinin kökü</text><path d=\"M32.60 184.80 l2.04 -1.20 l2.40 5.40 L40.64 177.60 H68.54\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.90\"/><text x=\"41.24\" y=\"189.00\" font-size=\"12\" class=\"g-y\">(−6)²</text><text x=\"69.26\" y=\"189.00\" font-size=\"12\" class=\"g-y\"> = |−6| = 6</text></svg>"
   },
   {
    "baslik": "Köklü ifadelerle dört işlem",
    "metin": [
-    "Karekök içindeki çarpanlardan tam kare olanlar dışarı çıkarılabilir: √72 = √(36 · 2) = 6√2. Toplama ve çıkarmada önce kökler sadeleştirilir.",
-    "Kök derecesi ve kök içi aynı olan terimlerin katsayıları toplanır veya çıkarılır. 4√3 + 2√3 = 6√3 olur. √2 + √3 ise √5 biçiminde birleştirilemez.",
-    "Negatif olmayan a ve b sayıları için √a · √b = √(a · b) olur. b > 0 koşuluyla √a / √b = √(a / b) yazılabilir. Örneğin √6 · √24 = √144 = 12; √75 / √3 = √25 = 5’tir."
+    "Karekök içindeki çarpanlardan tam kare olanlar dışarı çıkarılabilir: {kok:72} = {kok:36 · 2} = 6{kok:2}. Toplama ve çıkarmada önce kökler sadeleştirilir.",
+    "Kök derecesi ve kök içi aynı olan terimlerin katsayıları toplanır veya çıkarılır. 4{kok:3} + 2{kok:3} = 6{kok:3} olur. {kok:2} + {kok:3} ise {kok:5} biçiminde birleştirilemez.",
+    "Negatif olmayan a ve b sayıları için {kok:a} · {kok:b} = {kok:a · b} olur. b > 0 koşuluyla {kok:a} / {kok:b} = {kok:a / b} yazılabilir. Örneğin {kok:6} · {kok:24} = {kok:144} = 12; {kok:75} / {kok:3} = {kok:25} = 5’tir."
    ],
    "kutu": {
     "tur": "ipucu",
@@ -91,12 +91,12 @@
    "cevap": "Ortak çarpan {us:3|2}’dir. (7 − 2) · {us:3|2} = 5 · 9 = 45."
   },
   {
-   "soru": "√98 − √8 ifadesini sadeleştiriniz.",
-   "cevap": "√98 = 7√2 ve √8 = 2√2 olur. Fark (7 − 2)√2 = 5√2’dir."
+   "soru": "{kok:98} − {kok:8} ifadesini sadeleştiriniz.",
+   "cevap": "{kok:98} = 7{kok:2} ve {kok:8} = 2{kok:2} olur. Fark (7 − 2){kok:2} = 5{kok:2}’dir."
   },
   {
-   "soru": "√12 · √27 / √9 işleminin sonucunu bulunuz.",
-   "cevap": "Pay √324 = 18, payda √9 = 3’tür. Sonuç 18 / 3 = 6 olur."
+   "soru": "{kok:12} · {kok:27} / {kok:9} işleminin sonucunu bulunuz.",
+   "cevap": "Pay {kok:324} = 18, payda {kok:9} = 3’tür. Sonuç 18 / 3 = 6 olur."
   }
  ],
  "ozet": [
@@ -122,20 +122,20 @@
   },
   {
    "tur": "coktan",
-   "soru": "Bir öğrenci √50 + √8 işlemini √58 olarak yazıyor. Doğru sonuç hangisidir?",
+   "soru": "Bir öğrenci {kok:50} + {kok:8} işlemini {kok:58} olarak yazıyor. Doğru sonuç hangisidir?",
    "secenekler": [
-    "√58",
-    "7√2",
-    "13√2",
-    "2√29",
-    "√42"
+    "{kok:58}",
+    "7{kok:2}",
+    "13{kok:2}",
+    "2{kok:29}",
+    "{kok:42}"
    ],
    "dogru": 1,
-   "aciklama": "√50 = 5√2 ve √8 = 2√2 olduğundan sonuç 7√2’dir."
+   "aciklama": "{kok:50} = 5{kok:2} ve {kok:8} = 2{kok:2} olduğundan sonuç 7{kok:2}’dir."
   },
   {
    "tur": "coktan",
-   "soru": "Bir hesapta a = −5 seçiliyor. √(a²) kaçtır?",
+   "soru": "Bir hesapta a = −5 seçiliyor. {kok:a²} kaçtır?",
    "secenekler": [
     "−25",
     "−5",
@@ -144,7 +144,7 @@
     "25"
    ],
    "dogru": 3,
-   "aciklama": "Karekök negatif olamaz. √25 = 5 = |−5|."
+   "aciklama": "Karekök negatif olamaz. {kok:25} = 5 = |−5|."
   },
   {
    "tur": "dy",
@@ -161,12 +161,12 @@
      "aciklama": "Değer 1/8’dir."
     },
     {
-     "metin": "∛(−8) gerçek bir sayıdır.",
+     "metin": "{kok:−8|3} gerçek bir sayıdır.",
      "dogru": true,
      "aciklama": "−2’nin küpü −8’dir."
     },
     {
-     "metin": "√3 + √3 = 2√3 olur.",
+     "metin": "{kok:3} + {kok:3} = 2{kok:3} olur.",
      "dogru": true,
      "aciklama": "Aynı köklü terimin katsayıları toplanır."
     }
@@ -185,11 +185,11 @@
      "1/5"
     ],
     [
-     "√25",
+     "{kok:25}",
      "5"
     ],
     [
-     "∛(−125)",
+     "{kok:−125|3}",
      "−5"
     ]
    ]
@@ -226,12 +226,12 @@
   },
   {
    "tur": "ogretici",
-   "soru": "√48 / √3 işlemini iki farklı yolla bulunuz.",
+   "soru": "{kok:48} / {kok:3} işlemini iki farklı yolla bulunuz.",
    "ipuclari": [
     "Köklerin içini önce bölebilirsiniz.",
-    "√48 ifadesinden bir tam kare çarpanı dışarı çıkarabilirsiniz."
+    "{kok:48} ifadesinden bir tam kare çarpanı dışarı çıkarabilirsiniz."
    ],
-   "cevap": "Birinci yol: √(48/3) = √16 = 4. İkinci yol: √48 = 4√3; 4√3 / √3 = 4."
+   "cevap": "Birinci yol: {kok:48/3} = {kok:16} = 4. İkinci yol: {kok:48} = 4{kok:3}; 4{kok:3} / {kok:3} = 4."
   }
  ],
  "yayin_tarihi": "2026-10-01"

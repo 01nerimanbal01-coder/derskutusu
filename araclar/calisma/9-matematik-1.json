@@ -64,11 +64,11 @@
      "dogru": true
     },
     {
-     "metin": "√81 ifadesinin iki değeri vardır.",
+     "metin": "{kok:81} ifadesinin iki değeri vardır.",
      "dogru": false
     },
     {
-     "metin": "∛(−64) = −4 olur.",
+     "metin": "{kok:−64|3} = −4 olur.",
      "dogru": true
     }
    ]
@@ -123,19 +123,19 @@
    "duzey": "uygula",
    "ciftler": [
     [
-     "√32",
-     "4√2"
+     "{kok:32}",
+     "4{kok:2}"
     ],
     [
-     "√27",
-     "3√3"
+     "{kok:27}",
+     "3{kok:3}"
     ],
     [
-     "∛125",
+     "{kok:125|3}",
      "5"
     ],
     [
-     "√((−7)²)",
+     "{kok:(−7)²}",
      "7"
     ]
    ]
@@ -144,9 +144,9 @@
    "tur": "acik",
    "soru": "K ve L ifadelerinin farkını en sade biçimde yazınız.",
    "duzey": "uygula",
-   "cevap": "K = 6√3; L = 2√3; K − L = 4√3.",
+   "cevap": "K = 6{kok:3}; L = 2{kok:3}; K − L = 4{kok:3}.",
    "satir": 3,
-   "gorsel": "<svg viewBox=\"0 0 360 79\" role=\"img\" aria-label=\"Kök kartları\"><text x=\"180\" y=\"16\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#16365b\">Kök kartları</text><rect x=\"3\" y=\"25\" width=\"354\" height=\"23\" rx=\"6\" fill=\"#e8eefe\"/><text x=\"13\" y=\"41\" font-size=\"11.5\" font-weight=\"600\" fill=\"#16365b\">K · √108</text><rect x=\"3\" y=\"51\" width=\"354\" height=\"23\" rx=\"6\" fill=\"#e3f6ea\"/><text x=\"13\" y=\"67\" font-size=\"11.5\" font-weight=\"600\" fill=\"#16365b\">L · √12</text></svg>"
+   "gorsel": "<svg viewBox=\"0 0 360 79\" role=\"img\" aria-label=\"Kök kartları\"><text x=\"180\" y=\"16\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#16365b\">Kök kartları</text><rect x=\"3\" y=\"25\" width=\"354\" height=\"23\" rx=\"6\" fill=\"#e8eefe\"/><text x=\"13.00\" y=\"41.00\" font-size=\"11.5\" font-weight=\"600\" fill=\"#16365b\">K · </text><path d=\"M30.17 36.98 l1.96 -1.15 l2.30 5.17 L37.87 30.08 H59.45\" fill=\"none\" stroke=\"#16365b\" stroke-width=\"0.86\"/><text x=\"38.45\" y=\"41.00\" font-size=\"11.5\" font-weight=\"600\" fill=\"#16365b\">108</text><rect x=\"3\" y=\"51\" width=\"354\" height=\"23\" rx=\"6\" fill=\"#e3f6ea\"/><text x=\"13.00\" y=\"67.00\" font-size=\"11.5\" font-weight=\"600\" fill=\"#16365b\">L · </text><path d=\"M29.01 62.98 l1.96 -1.15 l2.30 5.17 L36.71 56.08 H51.71\" fill=\"none\" stroke=\"#16365b\" stroke-width=\"0.86\"/><text x=\"37.29\" y=\"67.00\" font-size=\"11.5\" font-weight=\"600\" fill=\"#16365b\">12</text></svg>"
   },
   {
    "tur": "tablo",
@@ -158,21 +158,21 @@
    ],
    "satirlar": [
     [
-     "√15 · √60",
+     "{kok:15} · {kok:60}",
      {
       "b": "30"
      }
     ],
     [
-     "√147 / √3",
+     "{kok:147} / {kok:3}",
      {
       "b": "7"
      }
     ],
     [
-     "3√5 + 4√5",
+     "3{kok:5} + 4{kok:5}",
      {
-      "b": "7√5"
+      "b": "7{kok:5}"
      }
     ]
    ]
@@ -191,7 +191,7 @@
      "cevap": "çarpılır"
     },
     {
-     "metin": "√(a²) ifadesi a’nın ___ değeridir.",
+     "metin": "{kok:a²} ifadesi a’nın ___ değeridir.",
      "cevap": "mutlak"
     }
    ],
@@ -203,15 +203,15 @@
    "tur": "acik",
    "soru": "Sonucun sıfır olması için boş karta hangi katsayı gelmelidir?",
    "duzey": "uygula",
-   "cevap": "√75 = 5√3 olduğundan boş katsayı 5 olmalıdır.",
+   "cevap": "{kok:75} = 5{kok:3} olduğundan boş katsayı 5 olmalıdır.",
    "satir": 3,
-   "gorsel": "<svg viewBox=\"0 0 360 105\" role=\"img\" aria-label=\"Denge koşulu\"><text x=\"180\" y=\"16\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#16365b\">Denge koşulu</text><rect x=\"3\" y=\"25\" width=\"354\" height=\"23\" rx=\"6\" fill=\"#e8eefe\"/><text x=\"13\" y=\"41\" font-size=\"11.5\" font-weight=\"600\" fill=\"#16365b\">Sol terim · √75</text><rect x=\"3\" y=\"51\" width=\"354\" height=\"23\" rx=\"6\" fill=\"#e3f6ea\"/><text x=\"13\" y=\"67\" font-size=\"11.5\" font-weight=\"600\" fill=\"#16365b\">Sağ terim · □ · √3</text><rect x=\"3\" y=\"77\" width=\"354\" height=\"23\" rx=\"6\" fill=\"#fff1df\"/><text x=\"13\" y=\"93\" font-size=\"11.5\" font-weight=\"600\" fill=\"#16365b\">Koşul · Sol terim − sağ terim = 0</text></svg>"
+   "gorsel": "<svg viewBox=\"0 0 360 105\" role=\"img\" aria-label=\"Denge koşulu\"><text x=\"180\" y=\"16\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#16365b\">Denge koşulu</text><rect x=\"3\" y=\"25\" width=\"354\" height=\"23\" rx=\"6\" fill=\"#e8eefe\"/><text x=\"13.00\" y=\"41.00\" font-size=\"11.5\" font-weight=\"600\" fill=\"#16365b\">Sol terim · </text><path d=\"M73.08 36.98 l1.96 -1.15 l2.30 5.17 L80.78 30.08 H95.78\" fill=\"none\" stroke=\"#16365b\" stroke-width=\"0.86\"/><text x=\"81.36\" y=\"41.00\" font-size=\"11.5\" font-weight=\"600\" fill=\"#16365b\">75</text><rect x=\"3\" y=\"51\" width=\"354\" height=\"23\" rx=\"6\" fill=\"#e3f6ea\"/><text x=\"13.00\" y=\"67.00\" font-size=\"11.5\" font-weight=\"600\" fill=\"#16365b\">Sağ terim · □ · </text><path d=\"M88.80 62.98 l1.96 -1.15 l2.30 5.17 L96.50 56.08 H104.92\" fill=\"none\" stroke=\"#16365b\" stroke-width=\"0.86\"/><text x=\"97.08\" y=\"67.00\" font-size=\"11.5\" font-weight=\"600\" fill=\"#16365b\">3</text><rect x=\"3\" y=\"77\" width=\"354\" height=\"23\" rx=\"6\" fill=\"#fff1df\"/><text x=\"13\" y=\"93\" font-size=\"11.5\" font-weight=\"600\" fill=\"#16365b\">Koşul · Sol terim − sağ terim = 0</text></svg>"
   },
   {
    "tur": "acik",
-   "soru": "√16 + √9 ile √(16 + 9) değerlerini karşılaştırınız. Bu karşılaştırma hangi yanlış kuralı çürütür?",
+   "soru": "{kok:16} + {kok:9} ile {kok:16 + 9} değerlerini karşılaştırınız. Bu karşılaştırma hangi yanlış kuralı çürütür?",
    "duzey": "ust",
-   "cevap": "İlk değer 4 + 3 = 7, ikinci değer √25 = 5’tir. Karekök, toplama işlemine bu biçimde dağıtılamaz.",
+   "cevap": "İlk değer 4 + 3 = 7, ikinci değer {kok:25} = 5’tir. Karekök, toplama işlemine bu biçimde dağıtılamaz.",
    "satir": 3
   },
   {
@@ -224,19 +224,19 @@
    ],
    "satirlar": [
     [
-     "√(−36)",
+     "{kok:−36}",
      {
       "b": "Yok"
      }
     ],
     [
-     "∛(−216)",
+     "{kok:−216|3}",
      {
       "b": "−6"
      }
     ],
     [
-     "√((−6)²)",
+     "{kok:(−6)²}",
      {
       "b": "6"
      }
@@ -260,9 +260,9 @@
   },
   {
    "tur": "acik",
-   "soru": "√200 − 2√18 + √8 ifadesini sadeleştiriniz.",
+   "soru": "{kok:200} − 2{kok:18} + {kok:8} ifadesini sadeleştiriniz.",
    "duzey": "ust",
-   "cevap": "10√2 − 6√2 + 2√2 = 6√2.",
+   "cevap": "10{kok:2} − 6{kok:2} + 2{kok:2} = 6{kok:2}.",
    "satir": 3
   }
  ],

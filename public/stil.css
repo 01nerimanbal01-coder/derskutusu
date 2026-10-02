@@ -649,6 +649,12 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
   font-size: .9em; line-height: 1.15; margin: 0 .12em; }
 .s-kesir > span { padding: 0 .18em; }
 .s-kesir > span:last-child { border-top: .09em solid currentColor; }
+/* Kökün üst çizgisi, kök içindeki bütün ifadeyi kapsar; web ve PDF aynı biçimi kullanır. */
+.s-kok { display: inline-block; position: relative; padding-left: .67em; vertical-align: baseline; white-space: nowrap; line-height: 1.15; margin: 0 .04em; }
+.s-kok-isaret { position: absolute; left: 0; top: 0; bottom: 0; width: .67em; }
+.s-kok-isaret svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.s-kok-ic { display: inline-block; border-top: .075em solid currentColor; padding: .05em .12em .02em .06em; }
+.s-kok-derece { position: absolute; left: -.08em; top: -.12em; font-size: .6em; line-height: 1; }
 /* Etkinlikler */
 .etk-bas { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .etk-bas h2 { margin-right: auto; }

@@ -29,6 +29,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Kök gösterimlerini doğrula
+        run: python araclar/kok_yayin_denetle.py
+
       - name: YouTube ve Instagram akışlarını al
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}

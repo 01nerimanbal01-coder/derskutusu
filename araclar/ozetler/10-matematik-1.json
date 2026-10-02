@@ -52,8 +52,8 @@
       "baslik": "Tümler açılar ve özel açılar",
       "metin": [
         "Dik üçgenin dar açıları toplamı 90°dir. Bir dar açı α, diğeri β ise karşı ve komşu kenarlar yer değiştirdiğinden sin α = cos β ve tan α = cot β olur.",
-        "İkizkenar dik üçgende açılar 45°dir. Dik kenarlar 1 birim seçildiğinde hipotenüs √2 birim olur. Buradan sin45° = cos45° = {kesir:√2|2} ve tan45° = cot45° = 1 bulunur.",
-        "Bir kenarı 2 birim olan eşkenar üçgenin yüksekliği onu iki dik üçgene ayırır. Oluşan üçgende 30°nin karşısı 1, 60°nin karşısı √3, hipotenüs 2 birimdir. Böylece sin30° = cos60° = {kesir:1|2}; cos30° = sin60° = {kesir:√3|2}; tan30° = cot60° = {kesir:√3|3}; tan60° = cot30° = √3 olur."
+        "İkizkenar dik üçgende açılar 45°dir. Dik kenarlar 1 birim seçildiğinde hipotenüs {kok:2} birim olur. Buradan sin45° = cos45° = {kesir:{kok:2}|2} ve tan45° = cot45° = 1 bulunur.",
+        "Bir kenarı 2 birim olan eşkenar üçgenin yüksekliği onu iki dik üçgene ayırır. Oluşan üçgende 30°nin karşısı 1, 60°nin karşısı {kok:3}, hipotenüs 2 birimdir. Böylece sin30° = cos60° = {kesir:1|2}; cos30° = sin60° = {kesir:{kok:3}|2}; tan30° = cot60° = {kesir:{kok:3}|3}; tan60° = cot30° = {kok:3} olur."
       ],
       "kutu": {
         "tur": "ipucu",
@@ -215,7 +215,7 @@
         "Eşit olanlar iki dik kenardır.",
         "Hipotenüsü Pisagor bağıntısıyla bulunuz."
       ],
-      "cevap": "Karşı dik kenarı komşu dik kenara bölerek tan45°yi hesaplamıştır. Dik kenarlar 1 ise hipotenüs √2’dir; sin45° = 1/√2 = √2/2 olur."
+      "cevap": "Karşı dik kenarı komşu dik kenara bölerek tan45°yi hesaplamıştır. Dik kenarlar 1 ise hipotenüs {kok:2}’dir; sin45° = 1/{kok:2} = {kok:2}/2 olur."
     },
     {
       "tur": "ogretici",
@@ -224,7 +224,7 @@
         "Karşı ve komşu dik kenarları 5k ve 12k alınız.",
         "Hipotenüsü hesaplayıp sinüs oranını kurunuz."
       ],
-      "cevap": "Hipotenüs √(25k²+144k²) = 13k olur. Sinüs karşı/hipotenüs olduğundan sin α = 5/13’tür."
+      "cevap": "Hipotenüs {kok:25k²+144k²} = 13k olur. Sinüs karşı/hipotenüs olduğundan sin α = 5/13’tür."
     }
   ],
   "ozet": [

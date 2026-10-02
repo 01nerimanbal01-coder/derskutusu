@@ -10,6 +10,7 @@ Görsel ve kutular geniş ekranda metnin yanında durur; renkler ders rengiyle (
 Çalıştırma: LC_ALL=en_US.UTF-8 python3 araclar/ozet_uret.py
 """
 import html
+from html.parser import HTMLParser
 import importlib.util
 import json
 import re
@@ -21,7 +22,7 @@ _spec = importlib.util.spec_from_file_location('sayfa_uret', ARACLAR / 'sayfa_ur
 _sayfa = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(_sayfa)          # iç sayfaları da yeniler (idempotent)
 
-KAR = re.compile(r'\{(aci|olcu|dogru|isin|parca|uzunluk|us|kesir|koyu):([^}]+)\}')
+KAR = re.compile(r'\{(aci|olcu|dogru|isin|parca|uzunluk|us|kesir|kok|koyu):([^{}]+)\}')
 SEMBOL = {  # MEB 5. sınıf matematik programındaki gösterimler (⊥, //, AB doğrusu, [AB], |AB|, [AB, m(ABC), şapkalı ABC)
     'aci': '<span class="s-aci" role="img" aria-label="{0} açısı">{0}</span>',
     'olcu': 'm(<span class="s-aci" role="img" aria-label="{0} açısı">{0}</span>)',
@@ -38,15 +39,53 @@ def _us(ic):
 
 def _kesir(ic):
     pay, _, payda = ic.partition('|')   # {kesir:3|4} → pay üstte, payda altta (MEB gösterimi)
-    return (f'<span class="s-kesir" role="math" aria-label="{pay} bölü {payda}">'
+    return (f'<span class="s-kesir" role="math" aria-label="{_etiket(pay)} bölü {_etiket(payda)}">'
             f'<span>{pay}</span><span>{payda}</span></span>')
+
+
+def _etiket(ic):
+    class Etiket(HTMLParser):
+        def __init__(self):
+            super().__init__(); self.parcalar = []; self.atla = 0
+        def handle_starttag(self, tag, attrs):
+            if self.atla:
+                self.atla += 1
+            elif (ad := dict(attrs).get('aria-label')):
+                self.parcalar.append(ad); self.atla = 1
+        def handle_endtag(self, tag):
+            if self.atla: self.atla -= 1
+        def handle_startendtag(self, tag, attrs):
+            pass
+        def handle_data(self, data):
+            if not self.atla: self.parcalar.append(data)
+    etiket = Etiket(); etiket.feed(ic)
+    return html.escape(''.join(etiket.parcalar), quote=True)
+
+
+def _kok(ic):
+    # {kok:16 + 9}; isteğe bağlı derece: {kok:−27|3}.
+    govde, _, derece = ic.partition('|')
+    if derece and not derece.isdigit():
+        raise ValueError('Kök derecesi pozitif tam sayı olmalı: ' + derece)
+    ad = f'{derece}. dereceden kök' if derece else 'karekök'
+    indis = f'<span class="s-kok-derece" aria-hidden="true">{derece}</span>' if derece else ''
+    return (f'<span class="s-kok" role="math" aria-label="{ad}: {_etiket(govde)}">{indis}'
+            '<span class="s-kok-isaret" aria-hidden="true"><svg viewBox="0 0 16 24" preserveAspectRatio="none">'
+            '<path d="M0 14 L4 12 L8 21 L14 0 H16 V1.5 H15 L8.5 24 L3.5 14 L1 15 Z" fill="currentColor"/>'
+            '</svg></span>'
+            f'<span class="s-kok-ic" aria-hidden="true">{govde}</span></span>')
 
 
 def e(metin):
     # Önce kaçış, sonra {aci:ABC} gibi sembol işaretleri MEB gösterimine çevrilir.
+    if any(isaret in str(metin) for isaret in '√∛∜'):
+        raise ValueError('Kök kapsamını {kok:ifade} / {kok:ifade|derece} ile belirtin: ' + str(metin))
     metin = html.escape(str(metin)).replace(' · ', '\u00a0·\u00a0').replace(' × ', '\u00a0×\u00a0')   # çarpımlar satır sonunda bölünmez
-    ozel = {'us': _us, 'kesir': _kesir}
-    return KAR.sub(lambda m: ozel[m.group(1)](m.group(2)) if m.group(1) in ozel else SEMBOL[m.group(1)].format(m.group(2)), metin)
+    ozel = {'us': _us, 'kesir': _kesir, 'kok': _kok}
+    # İçteki gösterim önce çözülür: kesir içindeki kök ve kök içindeki üs korunur.
+    while KAR.search(metin):
+        metin = KAR.sub(lambda m: ozel[m.group(1)](m.group(2)) if m.group(1) in ozel else SEMBOL[m.group(1)].format(m.group(2)), metin)
+    return metin
 KUTU = {'dikkat': 'Dikkat', 'bilgi': 'Bilgi', 'kural': 'Kural', 'tanim': 'Tanım', 'ipucu': 'İpucu', 'hatirla': 'Hatırla'}
 SIMGE = {  # 24×24 çizgi simgeleri (renk: currentColor)
     'bilgi': '<circle cx="12" cy="12" r="9.5"/><path d="M12 11v6"/><circle cx="12" cy="7.6" r=".6" fill="currentColor"/>',
