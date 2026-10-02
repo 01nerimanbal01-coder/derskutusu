@@ -22,13 +22,14 @@ _spec = importlib.util.spec_from_file_location('sayfa_uret', ARACLAR / 'sayfa_ur
 _sayfa = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(_sayfa)          # iç sayfaları da yeniler (idempotent)
 
-KAR = re.compile(r'\{(aci|olcu|dogru|isin|parca|uzunluk|us|kesir|kok|koyu):([^{}]+)\}')
+KAR = re.compile(r'\{(aci|olcu|dogru|isin|parca|uzunluk|us|kesir|kok|koyu|ar):([^{}]+)\}')
 SEMBOL = {  # MEB 5. sınıf matematik programındaki gösterimler (⊥, //, AB doğrusu, [AB], |AB|, [AB, m(ABC), şapkalı ABC)
     'aci': '<span class="s-aci" role="img" aria-label="{0} açısı">{0}</span>',
     'olcu': 'm(<span class="s-aci" role="img" aria-label="{0} açısı">{0}</span>)',
     'dogru': '<span class="s-dogru" role="img" aria-label="{0} doğrusu">{0}</span>',
     'isin': '[{0}', 'parca': '[{0}]', 'uzunluk': '|{0}|',
     'koyu': '<b>{0}</b>',   # olumsuz kökteki vurgu: {koyu:değildir}
+    'ar': '<bdi lang="ar" dir="rtl" style="font-size:1.3em;line-height:1.8">{0}</bdi>',
 }
 
 
