@@ -1,0 +1,243 @@
+{
+  "sinif": 11,
+  "ders": "fizik",
+  "hafta": 1,
+  "tarih": "14-18 Eylül 2026",
+  "yayin_tarihi": "2026-10-02",
+  "unite": "Kuvvet ve Hareket",
+  "konu": "Serbest Düşmede Hız Değişimi ve İvme",
+  "ciktilar": [
+    "FİZ.11.1.1. Serbest düşme hareketi yapan cisimlerin ivmesine yönelik tümevarımsal akıl yürütebilme."
+  ],
+  "giris": "Aynı yerden bırakılan iki cismin kütlesi farklı olduğunda düşme ivmeleri de farklı mı olur? Önce hava direncinin ihmal edildiği modeli kuracak, sonra hız değişimlerinden ivmeye ulaşacağız.",
+  "bolumler": [
+    {
+      "baslik": "Serbest düşme modelinin koşulları",
+      "metin": [
+        "Yalnız yer çekiminin etkisiyle hareket eden cisim serbest düşme hareketi yapar. Hava direncinin ihmal edilmesi, hareketi bu modelle incelememizi sağlar.",
+        "Günlük dilde “serbest bırakma” genellikle cismin ilk hızının sıfır olduğunu anlatır. Fizikte serbest düşme daha geniştir: Yukarı veya aşağı atılan bir cisim de elden ayrıldıktan sonra yalnız yer çekiminin etkisindeyse bu model içinde incelenir.",
+        "İlk hızsız bırakılan cismin aşağı yöndeki sürati zamanla artar. Dünya yüzeyine yakın ve küçük yükseklik değişimlerinde ivmesi sabit kabul edilir."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "metin": "Cismin hareket yönü ile üzerine etki eden ivmenin yönü aynı kavram değildir."
+      }
+    },
+    {
+      "baslik": "Yer çekimi ivmesi",
+      "metin": [
+        "Yer çekiminin oluşturduğu ivme g ile gösterilir. Yönü Dünya’nın merkezine doğrudur; bulunduğumuz yerde aşağı yön olarak ifade edilir.",
+        "Dünya yüzeyinde g yaklaşık 9,8 m/s² değerindedir. Sorularda hesaplamayı kolaylaştırmak için başka bir yaklaşık değer verilebilir; her soruda belirtilen değer kullanılır.",
+        "Yer çekimi ivmesi konuma ve gezegenin özelliklerine göre değişebilir. Aynı yerdeki farklı cisimleri karşılaştırırken bu değişimi ihmal eder ve aynı g değerini kullanırız."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "metin": "“İvme sabit” ifadesi, hızın sabit olduğu anlamına gelmez."
+      }
+    },
+    {
+      "baslik": "Hız değişiminden ivmeye ulaşma",
+      "metin": [
+        "İvme, hızdaki değişimin geçen süreye oranıdır. Hareket aynı doğrultuda incelenirken yön seçimi tutarlı tutulmalıdır.",
+        "Aşağı yönü pozitif seçilen bir modelde, ilk hızsız bırakılan cismin hızı her saniye aynı miktarda artıyorsa ivmesi sabittir. Örneğin g = 10 m/s² alınmışsa hız ilk saniye sonunda 10 m/s, ikinci saniye sonunda 20 m/s olur.",
+        "Bu örnekte hız artar fakat bir saniyedeki hız değişimi 10 m/s olarak kalır. Dolayısıyla ivme artmaz; 10 m/s² değerinde sabittir."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "metin": "Hızı karşılaştırmak için v değerlerine, ivmeyi karşılaştırmak için eşit sürelerdeki hız değişimlerine bakınız."
+      },
+      "gorsel": "<svg viewBox=\"0 0 470 214\" role=\"img\" aria-label=\"Aşağı yön pozitif; g = 10 m/s²\"><text x=\"235\" y=\"21\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">Aşağı yön pozitif; g = 10 m/s²</text><rect x=\"12\" y=\"32\" width=\"446\" height=\"49\" rx=\"10\" class=\"g-ma\"/><text x=\"25\" y=\"52\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">0 s → 0 m/s</text><text x=\"25\" y=\"71\" font-size=\"12\" class=\"g-y\">Cisim ilk hızsız bırakılıyor.</text><rect x=\"12\" y=\"90\" width=\"446\" height=\"49\" rx=\"10\" class=\"g-ma\"/><text x=\"25\" y=\"110\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">1 s → 10 m/s</text><text x=\"25\" y=\"129\" font-size=\"12\" class=\"g-y\">İlk bir saniyede hız değişimi: +10 m/s</text><rect x=\"12\" y=\"148\" width=\"446\" height=\"49\" rx=\"10\" class=\"g-ma\"/><text x=\"25\" y=\"168\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">2 s → 20 m/s</text><text x=\"25\" y=\"187\" font-size=\"12\" class=\"g-y\">Sonraki bir saniyede hız değişimi: +10 m/s</text></svg>"
+    },
+    {
+      "baslik": "Kütleleri farklı cisimler",
+      "metin": [
+        "Hava direncinin olmadığı aynı ortamda, aynı yükseklikten aynı anda ve ilk hızsız bırakılan cisimler aynı ivmeyle düşer. Kütlelerinin farklı olması tek başına düşme sürelerini değiştirmez.",
+        "Kütlesi büyük cismin ağırlığı daha büyük olabilir; buna rağmen serbest düşme ivmesi aynı yerde g olur. Kuvvet büyüklüğü ile ivme büyüklüğünü birbirine karıştırmamak gerekir.",
+        "Havadaki bir kâğıtla başka bir cismin farklı sürelerde düşmesi, havasız ortam için kurulan bu sonucu çürütmez. Önce hava direncinin etkisi değerlendirilmelidir."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "metin": "Kütleleri karşılaştırmadan önce ortam, bırakılma yüksekliği ve ilk hız koşullarını kontrol ediniz."
+      }
+    },
+    {
+      "baslik": "Aynı ivme, her zaman aynı hız demek değildir",
+      "metin": [
+        "Aynı yerde hareket eden iki cismin ivmesi eşit olabilir; fakat cisimler farklı anlarda bırakılmışsa hızları aynı anda eşit olmak zorunda değildir.",
+        "İlk bırakılan cisim, daha uzun süre hızlandığı için daha büyük sürate ulaşabilir. İki cisim de düşerken eşit zaman aralıklarında hızları aynı miktarda değişir.",
+        "Yukarı atılan bir cisim yükselirken hızı yukarı, ivmesi aşağı yönlüdür. En üst noktada anlık hızı sıfır olsa da yer çekimi etkisi ve aşağı yönlü ivmesi sürer."
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "metin": "Bir cismin bir andaki hızının sıfır olması, ivmesinin de sıfır olduğunu göstermez."
+      },
+      "gorsel": "<svg viewBox=\"0 0 470 214\" role=\"img\" aria-label=\"Yukarı atılan cisim: hava direnci yok\"><text x=\"235\" y=\"21\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">Yukarı atılan cisim: hava direnci yok</text><rect x=\"12\" y=\"32\" width=\"446\" height=\"49\" rx=\"10\" class=\"g-ma\"/><text x=\"25\" y=\"52\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Yükselirken</text><text x=\"25\" y=\"71\" font-size=\"12\" class=\"g-y\">Hız yukarı, ivme aşağı yönlüdür.</text><rect x=\"12\" y=\"90\" width=\"446\" height=\"49\" rx=\"10\" class=\"g-ma\"/><text x=\"25\" y=\"110\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">En üst noktada</text><text x=\"25\" y=\"129\" font-size=\"12\" class=\"g-y\">Anlık hız sıfır; ivme aşağı yönlüdür.</text><rect x=\"12\" y=\"148\" width=\"446\" height=\"49\" rx=\"10\" class=\"g-ma\"/><text x=\"25\" y=\"168\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Alçalırken</text><text x=\"25\" y=\"187\" font-size=\"12\" class=\"g-y\">Hız ve ivme aşağı yönlüdür.</text></svg>"
+    },
+    {
+      "baslik": "Gözlemden genellemeye",
+      "metin": [
+        "Serbest düşme ivmesinin kütleye bağlı olup olmadığını incelemek için farklı kütlelerdeki cisimler aynı koşullarda karşılaştırılır. Başlangıç yüksekliği, ilk hız ve ortam koşulları aynı tutulur.",
+        "Eşit sürelerdeki hız değişimleri incelenir. Farklı kütleler için aynı değişim görülmesi, bu koşullarda ivmenin kütleden bağımsız olduğu sonucunu destekler.",
+        "Bir gözlemi yorumlarken modelin sınırlarını belirtmek gerekir. Hava direncinin etkili olduğu bir gözlemi, hava direnci yokmuş gibi yorumlamak hatalı sonuca götürebilir."
+      ],
+      "kutu": {
+        "tur": "bilgi",
+        "metin": "Genellemenin hangi koşullarda geçerli olduğunu mutlaka belirtiniz."
+      }
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Havasız bir ortamda 200 g ve 600 g kütleli iki cisim aynı yükseklikten, aynı anda ve ilk hızsız bırakılıyor. İvmeleri ve yere ulaşma zamanları nasıl karşılaştırılır?",
+      "cevap": "İvmeleri aynı yerde g kadardır. Başlangıç koşulları da aynı olduğundan aynı anda yere ulaşırlar. Kütlenin üç kat olması düşme ivmesini üç kat yapmaz."
+    },
+    {
+      "soru": "Aşağı yönün pozitif seçildiği bir ölçümde cismin hızı 1 s içinde 8 m/s değerinden 18 m/s değerine çıkıyor. Bu sürede ortalama ivmesi kaçtır?",
+      "cevap": "Hız değişimi 18 − 8 = 10 m/s olur. Bu değişim 1 s içinde gerçekleştiği için ivme 10 m/s² ve aşağı yönlüdür."
+    },
+    {
+      "soru": "Bir modelde art arda gelen birer saniyelik aralıkların sonunda hızlar 10, 20 ve 30 m/s olarak ölçülüyor. “İvme giderek artıyor.” yorumu doğru mudur?",
+      "cevap": "Hayır. Eşit zaman aralıklarında hız artışı 10 m/s olarak aynıdır. Hız artmasına rağmen ivme sabit, 10 m/s² değerindedir."
+    },
+    {
+      "soru": "Bir kâğıt yaprağı havada metal bir parçadan daha geç yere ulaşıyor. Yalnız bu gözlemden serbest düşme ivmesinin kütleye bağlı olduğu çıkarılabilir mi?",
+      "cevap": "Çıkarılamaz. Hava direncinin etkisi kontrol edilmemiştir. Kütle etkisini incelemek için başlangıç koşulları aynı tutulmalı ve hava direncinin olmadığı modelde karşılaştırma yapılmalıdır."
+    },
+    {
+      "soru": "Bir cisim yukarı atıldıktan sonra en yüksek noktaya ulaşıyor. Hava direnci ihmal edildiğinde bu andaki hız ve ivmesi nedir?",
+      "cevap": "Hızı o anda sıfırdır. İvmesi ise aşağı yönlü g olmaya devam eder; yer çekimi etkisi ortadan kalkmaz."
+    },
+    {
+      "soru": "Aynı yerde ilk hızsız bırakılan iki cisimden biri diğerinden daha önce bırakılıyor. Her ikisi de düşerken ivmelerinin eşit olması hızlarının da eşit olmasını gerektirir mi?",
+      "cevap": "Gerektirmez. Önce bırakılan cisim daha uzun süre hızlanmıştır. İvmeleri aynı olsa da aynı andaki hızları farklı olabilir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Hava direncinin olmadığı bir ortamda kütleleri farklı iki cisim aynı yükseklikten ilk hızsız bırakılıyor. Kütleler değiştirilip diğer koşullar korunursa hangi büyüklük aynı kalır?",
+      "secenekler": [
+        "Cisimlerin kütlesi",
+        "Cisimlerin ağırlığı",
+        "Cisimlerin düşme ivmesi",
+        "Cisimlerin hacmi",
+        "Cisimlerin yoğunluğu"
+      ],
+      "dogru": 2,
+      "aciklama": "Aynı yerde hava direnci yoksa serbest düşme ivmesi kütleden bağımsızdır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağı yön pozitifken bir cismin hızı 2 saniyede 6 m/s değerinden 26 m/s değerine çıkıyor. Ortalama ivmesi kaç m/s² olur?",
+      "secenekler": [
+        "3",
+        "6",
+        "8",
+        "10",
+        "20"
+      ],
+      "dogru": 3,
+      "aciklama": "Hız değişimi 20 m/s, süre 2 s olduğundan ivme {kesir:20|2} = 10 m/s² olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Yukarı atılan bir cisim en üst noktada anlık olarak duruyor. Hava direnci ihmal edildiğinde hangi açıklama doğrudur?",
+      "secenekler": [
+        "Hızı ve ivmesi birlikte sıfır olur.",
+        "Hızı sıfır, ivmesi aşağı yönlü olur.",
+        "Hızı sıfır, ivmesi yukarı yönlü olur.",
+        "Hızı aşağı, ivmesi sıfır olur.",
+        "Hızı ve ivmesi yukarı yönlü olur."
+      ],
+      "dogru": 1,
+      "aciklama": "Anlık hız sıfır olsa da yer çekimi aşağı yönlü ivme oluşturmayı sürdürür."
+    },
+    {
+      "tur": "dy",
+      "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+      "ifadeler": [
+        {
+          "metin": "Sabit ivmeli düşmede hız büyüklüğü değişebilir.",
+          "dogru": true,
+          "aciklama": "İvme, hız değişimini anlatır; sabit ivme sabit hız demek değildir."
+        },
+        {
+          "metin": "Kütlesi büyük olan cisim havasız ortamda mutlaka daha önce yere ulaşır.",
+          "dogru": false,
+          "aciklama": "Aynı başlangıç koşullarında düşme süresi kütleden bağımsızdır."
+        },
+        {
+          "metin": "Hava direnci, serbest düşme modeliyle gerçek gözlem arasındaki farkta etkili olabilir.",
+          "dogru": true,
+          "aciklama": "Modelde ihmal edilen etki gerçek harekette bulunabilir."
+        },
+        {
+          "metin": "Aynı ivmeye sahip iki cismin her andaki hızları eşittir.",
+          "dogru": false,
+          "aciklama": "Başlangıç hızları veya hareket süreleri farklı olabilir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "yonerge": "İlişkili kavram ve açıklamaları eşleştiriniz.",
+      "ciftler": [
+        [
+          "g",
+          "Yer çekimi ivmesinin sembolü"
+        ],
+        [
+          "m/s",
+          "Hızın birimi"
+        ],
+        [
+          "m/s²",
+          "İvmenin birimi"
+        ],
+        [
+          "Hızdaki değişim / geçen süre",
+          "Ortalama ivme"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+      "cumleler": [
+        {
+          "metin": "Dünya yüzeyine yakın serbest düşmede ivme ___ yönlüdür.",
+          "cevap": "aşağı"
+        },
+        {
+          "metin": "Eşit sürelerde eşit hız değişimi, ivmenin ___ olduğunu gösterir.",
+          "cevap": "sabit"
+        },
+        {
+          "metin": "Havasız ortamda aynı başlangıç koşullarında düşme süresi cismin ___ bağımsızdır.",
+          "cevap": "kütlesinden"
+        }
+      ],
+      "fazla": [
+        "yukarı"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Kütlenin düşme ivmesine etkisini araştırırken bırakılma yüksekliğini de değiştirirseniz sonuç neden belirsizleşir?",
+      "ipuclari": [
+        "Bir karşılaştırmada hangi etkeni değiştirmek istediğinizi belirleyiniz.",
+        "Birden fazla koşul değişirse gözlenen farkın kaynağını ayırabilir misiniz?"
+      ],
+      "cevap": "Kütleyle birlikte yükseklik de değişmiş olur. Gözlenen hareket farkının hangi değişimle ilişkili olduğunu ayırmak zorlaşır. Kütle dışında başlangıç ve ortam koşulları aynı tutulmalıdır."
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir cismin sürati 10 m/s, diğerinin 20 m/s iken ivmeleri aynı olabilir mi?",
+      "ipuclari": [
+        "İvme tek bir hız değerinden mi, hız değişiminden mi bulunur?",
+        "Cisimlerin farklı süreler boyunca düşmesini düşününüz."
+      ],
+      "cevap": "Olabilir. Aynı yerde farklı anlarda bırakılan cisimler farklı süratlere sahipken aynı g ivmesiyle hareket edebilir. İvme, hızın değerinden değil değişiminden belirlenir."
+    }
+  ]
+}

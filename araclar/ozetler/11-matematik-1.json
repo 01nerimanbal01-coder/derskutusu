@@ -1,0 +1,234 @@
+{
+  "sinif": 11,
+  "ders": "matematik",
+  "hafta": 1,
+  "tarih": "14-18 Eylül 2026",
+  "yayin_tarihi": "2026-10-02",
+  "unite": "İstatistiksel Araştırma Süreci",
+  "konu": "İki Nicel Değişken: Araştırma Sorusu ve Veri Toplama Planı",
+  "ciktilar": [
+    "MAT.11.1.1. İki nicel değişkenli veri ile çalışabilme ve iki nicel değişken arasındaki ilişkililiğe dayalı karar verebilme."
+  ],
+  "giris": "İki nicel değişken arasındaki ilişkiyi araştırmak için önce doğru soruyu sormak gerekir. İlk hafta, üç haftaya yayılan konunun araştırma sorusu oluşturma, veri toplama planı ve veriyi düzenleme adımlarına odaklanıyoruz.",
+  "bolumler": [
+    {
+      "baslik": "İki nicel değişken ne demektir?",
+      "metin": [
+        "Nicel değişken, sayma veya ölçme sonucunda sayısal değer alır. Okunan kitap sayısı, yağış miktarı, yakıt tüketimi ve sulama miktarı nicel değişkenlere örnektir.",
+        "İki nicel değişkenli araştırmada, iki sayısal özellik arasındaki ilişki incelenir. Her gözlem birimi için iki değer birlikte kaydedilir. Örneğin aynı tarım alanının sulama miktarıyla elde edilen ürün miktarı eşleştirilir.",
+        "Bir değişkenin kodunun sayı olması onu kendiliğinden nicel yapmaz. Bir kategoriye verilen numara, ölçülen miktar anlamına gelmeyebilir."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "metin": "İki sütundaki sayılar aynı gözlem birimine ait olmalıdır. Eşleşme araştırmanın temelidir."
+      }
+    },
+    {
+      "baslik": "Bağlamı ve araştırma amacını belirleme",
+      "metin": [
+        "Bağlam, verilerin hangi durumdan ve hangi amaçla toplandığını açıklar. Aynı sayısal değerler farklı bağlamlarda farklı anlamlar taşıyabilir.",
+        "Yağış miktarı ile baraj doluluk oranı arasındaki ilişkiyi inceleyen bir araştırmada yer, zaman aralığı ve ölçüm birimleri belirlenmelidir. Bu bilgiler hangi kayıtların karşılaştırılabileceğini gösterir.",
+        "Araştırma, sonucu baştan kabul etmek için yapılmaz. Değişkenler arasında ilişki olup olmadığı veriler toplanıp incelendikten sonra değerlendirilir."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "metin": "Araştırma sorusunda ilişkiyi araştırınız; sonucu kanıtlanmış gibi sunmayınız."
+      }
+    },
+    {
+      "baslik": "Araştırma sorusunun ölçütleri",
+      "metin": [
+        "Uygun bir soru açık bir amaç taşır, araştırmaya değerdir ve verilerle yanıtlanabilir. İncelenen grup ile iki değişken anlaşılır biçimde belirtilir.",
+        "Soru nicel veri toplamayı gerektirmeli ve değişebilirliği yansıtmalıdır. Yalnız tek kişinin tek bir özelliğini öğrenmek, iki değişkenin bir grup içindeki ilişkililiğini araştırmakla aynı değildir.",
+        "İlgilenilen gruba veya güvenilir veri kaynaklarına ulaşılabilmelidir. Araştırma yapılamayacak kadar belirsiz bir grup ya da ölçülemeyen değişkenler sorunun uygulanabilirliğini azaltır.",
+        "“Bu ilçedeki tarım alanlarında aynı üretim döneminde kullanılan sulama suyu miktarı ile elde edilen ürün miktarı arasında ilişki var mıdır?” sorusunda grup, dönem ve iki nicel değişken belirtilmiştir."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "metin": "Kontrol ediniz: amaç, grup, iki değişken, veriyle cevaplanabilirlik, değişebilirlik ve uygulanabilirlik."
+      },
+      "gorsel": "<svg viewBox=\"0 0 470 214\" role=\"img\" aria-label=\"Araştırma sorusunu kur\"><text x=\"235\" y=\"21\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">Araştırma sorusunu kur</text><rect x=\"12\" y=\"32\" width=\"446\" height=\"49\" rx=\"10\" class=\"g-ma\"/><text x=\"25\" y=\"52\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Kim / ne?</text><text x=\"25\" y=\"71\" font-size=\"12\" class=\"g-y\">İlgilenilen grup ve zaman aralığı</text><rect x=\"12\" y=\"90\" width=\"446\" height=\"49\" rx=\"10\" class=\"g-ma\"/><text x=\"25\" y=\"110\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Hangi iki özellik?</text><text x=\"25\" y=\"129\" font-size=\"12\" class=\"g-y\">Sayılabilen veya ölçülebilen iki değişken</text><rect x=\"12\" y=\"148\" width=\"446\" height=\"49\" rx=\"10\" class=\"g-ma\"/><text x=\"25\" y=\"168\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Nasıl cevaplanacak?</text><text x=\"25\" y=\"187\" font-size=\"12\" class=\"g-y\">Eşleşmiş veriler toplanarak ilişki incelenecek.</text></svg>"
+    },
+    {
+      "baslik": "Evren, örneklem ve veri toplama planı",
+      "metin": [
+        "Araştırmada hakkında sonuç çıkarılmak istenen bütün gruba evren denir. Bu gruptan veri toplamak için seçilen bölüm örneklemdir. Örneklemin seçim biçimi, sonuçların kimler için yorumlanabileceğini etkiler.",
+        "Veri toplama planında ölçüm aracı, evren ve örneklem, seçim yöntemi, değişkenler ve ölçüm birimleri belirlenir. Verilerin nerede, ne zaman, nasıl ve kim tarafından toplanacağı da yazılır.",
+        "Yalnız kolay ulaşılabilen ya da beklenen sonucu destekleyecek gözlemleri seçmek taraflılığa yol açabilir. Araştırmaya uygun rastgele seçim ve tutarlı ölçüm koşulları önemlidir.",
+        "Kişisel veriler gerektiğinde gizlilik korunur. Veri kayıtları dürüst ve nesnel tutulur; istenen sonuca uymayan değerler gerekçesiz çıkarılmaz."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "metin": "Evren ile örneklemi açıkça ayırınız; küçük bir grubun sonucunu kendiliğinden herkese genellemeyiniz."
+      }
+    },
+    {
+      "baslik": "Eşleşmiş verileri analize hazırlama",
+      "metin": [
+        "Veri tablosunda her satır aynı gözlem biriminin iki ölçümünü göstermelidir. Sütun başlıklarında değişken adı ve birimi bulunmalıdır.",
+        "Bir sütunu tek başına küçükten büyüğe sıralamak, iki değerin eşleşmesini bozabilir. Satırlar sıralanacaksa aynı gözleme ait değerler birlikte taşınır.",
+        "Eksik, yinelenmiş veya tutarsız kayıtlar kontrol edilir. Eksik ölçümün yerine gelişigüzel sıfır yazılmaz; sıfır gerçek bir ölçüm değeri olabileceğinden eksik bilgiyi yanlış temsil eder.",
+        "Birimler ortaklaştırılır ve veri kaynağı kaydedilir. Düzenlenmiş veri, sonraki adımda uygun araçlarla ilişkililiği incelemeye hazır hâle gelir."
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "metin": "Düzenleme, veriyi beklenen sonuca uydurmak değil; doğru ve kullanılabilir biçime getirmektir."
+      },
+      "gorsel": "<svg viewBox=\"0 0 470 214\" role=\"img\" aria-label=\"Her satırda eşleşmeyi koru\"><text x=\"235\" y=\"21\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">Her satırda eşleşmeyi koru</text><rect x=\"12\" y=\"32\" width=\"446\" height=\"49\" rx=\"10\" class=\"g-ma\"/><text x=\"25\" y=\"52\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Alan A</text><text x=\"25\" y=\"71\" font-size=\"12\" class=\"g-y\">Sulama miktarı A ↔ Ürün miktarı A</text><rect x=\"12\" y=\"90\" width=\"446\" height=\"49\" rx=\"10\" class=\"g-ma\"/><text x=\"25\" y=\"110\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Alan B</text><text x=\"25\" y=\"129\" font-size=\"12\" class=\"g-y\">Sulama miktarı B ↔ Ürün miktarı B</text><rect x=\"12\" y=\"148\" width=\"446\" height=\"49\" rx=\"10\" class=\"g-ma\"/><text x=\"25\" y=\"168\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Alan C</text><text x=\"25\" y=\"187\" font-size=\"12\" class=\"g-y\">Sulama miktarı C ↔ Ürün miktarı C</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir tabloda tarım alanının kodu, kullanılan sulama suyu miktarı ve ürün miktarı yer alıyor. İlişki araştırması için hangi iki sütun nicel değişken olarak kullanılabilir?",
+      "cevap": "Sulama suyu miktarı ve ürün miktarı nicel değişkenlerdir. Alan kodu ise alanı tanıtan etikettir; sayı ile yazılsa bile ölçülen miktar değildir."
+    },
+    {
+      "soru": "“Yağış ile barajlar ilişkili midir?” sorusunu veri toplamaya daha uygun hâle getiriniz.",
+      "cevap": "“Belirlenen bölgedeki barajlarda aynı döneme ait yağış miktarı ile doluluk oranı arasında ilişki var mıdır?” biçiminde düzenlenebilir. Yer ve dönem ayrıca netleştirilir; yağış miktarı ile doluluk oranı ölçülecek değişkenler olarak adlandırılır."
+    },
+    {
+      "soru": "Bir ilçedeki bütün tarım alanları hakkında araştırma yapılırken rastgele seçilen 30 alandan veri toplanıyor. Evren ve örneklem nedir?",
+      "cevap": "Evren, ilçedeki araştırma kapsamına giren bütün tarım alanlarıdır. Örneklem, veri toplanan 30 alandır. Örneklemin özellikleri sonuçların evrene genellenmesi açısından değerlendirilir."
+    },
+    {
+      "soru": "Üç gözlem için iki ölçüm çifti (12, 40), (8, 31), (15, 46) olarak kaydedilmiş. Bir öğrenci yalnız ilk sütunu sıralayıp (8, 40), (12, 31), (15, 46) yazıyor. Hata nedir?",
+      "cevap": "İlk iki gözlemin eşleşmesi bozulmuştur. Doğru sıralamada satırlar birlikte taşınır: (8, 31), (12, 40), (15, 46). İki değişken arasındaki ilişkiyi incelemek için doğru çiftler korunmalıdır."
+    },
+    {
+      "soru": "Bir araştırmacı yakıt tüketimi kayıtlarının bazılarında litre, bazılarında mililitre kullanıldığını görüyor. Analizden önce ne yapmalıdır?",
+      "cevap": "Birimleri kontrol edip ortak birime dönüştürmelidir. Farklı birimlerdeki sayıları aynı miktarı gösteriyormuş gibi doğrudan karşılaştırmak hatalı olur."
+    },
+    {
+      "soru": "Bir kayıtta ikinci değişkenin değeri eksik. “Tablo dolu görünsün.” diye sıfır yazılması neden doğru değildir?",
+      "cevap": "Sıfır, ölçülmüş bir miktar anlamına gelebilir. Eksik veriyle aynı değildir. Kayıt kaynağı kontrol edilmeli, eksiklik uygun biçimde belirtilmeli ve nasıl ele alındığı açıklanmalıdır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir araştırma, araçların yakıt tüketimiyle başka bir nicel özellik arasındaki ilişkiyi inceleyecek. İkinci değişken için hangi seçenek uygundur?",
+      "secenekler": [
+        "Aracın rengi",
+        "Aracın marka adı",
+        "Aracın plaka kodu",
+        "Aracın aldığı yolun uzunluğu",
+        "Aracın yakıt türü"
+      ],
+      "dogru": 3,
+      "aciklama": "Yol uzunluğu ölçüm sonucu nicel değer alır; diğer seçenekler kategori veya tanıtıcı kod niteliğindedir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aynı üretim döneminde bir ilçenin tarım alanlarındaki sulama ve ürün miktarları incelenecek. Hangi soru bu araştırmayı en açık biçimde ifade eder?",
+      "secenekler": [
+        "Sulama suyu her zaman yararlı mıdır?",
+        "İlçedeki alanlarda sulama ve ürün miktarları ilişkili midir?",
+        "Bu ilçedeki en güzel tarım alanı hangisidir?",
+        "Ürün miktarı neden kesinlikle sulamaya bağlıdır?",
+        "İlçedeki bütün alanlar aynı büyüklükte midir?"
+      ],
+      "dogru": 1,
+      "aciklama": "Soru, belirtilen bağlamda iki nicel değişkenin ilişkililiğine odaklanır ve sonucu baştan kabul etmez."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir tabloda her satır aynı gözlemin iki ölçümünü içeriyor. İlk değişkene göre sıralama yapılacaksa hangi işlem eşleşmeyi korur?",
+      "secenekler": [
+        "Yalnız ilk sütunu küçükten büyüğe sıralamak",
+        "İki sütunu birbirinden bağımsız sıralamak",
+        "İlk sütunu sıralayıp ikinciyi ters çevirmek",
+        "Eksik değerlerin hepsini sıfıra dönüştürmek",
+        "Aynı gözlemin iki değerini birlikte taşımak"
+      ],
+      "dogru": 4,
+      "aciklama": "Satırdaki iki değer aynı gözleme aittir; birlikte taşınmalıdır."
+    },
+    {
+      "tur": "dy",
+      "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+      "ifadeler": [
+        {
+          "metin": "İki nicel değişkenli araştırmada her gözlem için iki sayısal özellik birlikte kaydedilir.",
+          "dogru": true,
+          "aciklama": "Değişkenler arasındaki ilişki doğru eşleştirilmiş verilerle incelenir."
+        },
+        {
+          "metin": "Araştırma sorusunun sonucu veri toplanmadan kesinleşmiş olmalıdır.",
+          "dogru": false,
+          "aciklama": "Soru araştırmayı yönlendirir; sonuç verilerin incelenmesiyle değerlendirilir."
+        },
+        {
+          "metin": "Örneklemin nasıl seçildiği sonuçların yorumlanmasını etkiler.",
+          "dogru": true,
+          "aciklama": "Taraflı seçim araştırmanın geçerliliğini zayıflatabilir."
+        },
+        {
+          "metin": "Eksik ölçümün yerine her zaman sıfır yazılabilir.",
+          "dogru": false,
+          "aciklama": "Eksik veri ile gerçek sıfır değeri aynı değildir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "yonerge": "İlişkili kavram ve açıklamaları eşleştiriniz.",
+      "ciftler": [
+        [
+          "Hakkında sonuç çıkarılacak bütün grup",
+          "Evren"
+        ],
+        [
+          "Veri toplanan seçilmiş bölüm",
+          "Örneklem"
+        ],
+        [
+          "Sayma veya ölçmeyle elde edilen özellik",
+          "Nicel değişken"
+        ],
+        [
+          "Aynı gözleme ait iki ölçüm",
+          "Eşleşmiş veri çifti"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+      "cumleler": [
+        {
+          "metin": "Sütun başlığında değişken adıyla birlikte ölçüm ___ de belirtilir.",
+          "cevap": "birimi"
+        },
+        {
+          "metin": "Her satırdaki iki değer aynı ___ ait olmalıdır.",
+          "cevap": "gözleme"
+        },
+        {
+          "metin": "Veri toplama planı yapılırken evren ve ___ belirlenir.",
+          "cevap": "örneklem"
+        }
+      ],
+      "fazla": [
+        "sonuç"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Araştırmacı yalnız beklediği ilişkiyi gösteren kayıtları seçerse sonuç neden güvenilir olmaz?",
+      "ipuclari": [
+        "Seçilen veriler bütün grubu temsil ediyor mu?",
+        "Araştırmacının beklentisi veri seçimini etkiliyor mu?"
+      ],
+      "cevap": "Seçim taraflı hâle gelir ve verinin gerçek değişebilirliği gizlenir. Kayıtlar istenen sonuca göre seçilmemeli; seçim yöntemi ve veri düzenleme kararları nesnel olmalıdır."
+    },
+    {
+      "tur": "ogretici",
+      "soru": "İki sayısal sütun bulunan her tablo, iki nicel değişkenli bir ilişki araştırması için yeterli midir?",
+      "ipuclari": [
+        "Sütunlardan biri yalnız kimlik kodu olabilir mi?",
+        "İki ölçüm aynı gözleme mi ait?"
+      ],
+      "cevap": "Hayır. Sütunların gerçekten nicel değişken olması, aynı gözlemlerle eşleşmesi ve araştırma sorusunu yanıtlayacak veri içermesi gerekir. Yalnız sayılar bulunması yeterli değildir."
+    }
+  ]
+}
