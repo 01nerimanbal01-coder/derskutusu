@@ -12,14 +12,14 @@ from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'tahta.js': '20261003-preview2', 'etkinlik.js': '20261003-1', 'arama.js': '202610021530', 'kutuphane.js': '20261003-preview2', 'arapca.js': '202610022030'}
+BETIK_SURUMLERI = {'ortak.js': '20261003-preview2', 'tahta.js': '20261003-preview2', 'etkinlik.js': '20261003-1', 'arama.js': '202610021530', 'kutuphane.js': '20261003-preview2', 'arapca.js': '202610022030'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
 alt = ana[ana.index('<footer class="alt">'):ana.index('</footer>') + len('</footer>')]
 # İç sayfalarda bölüm bağlantıları ana sayfaya gider
-ust = re.sub(r'href="([a-z0-9-]+\.html)', r'href="/\1', re.sub(r'href="#', 'href="/#', ust))
-alt = re.sub(r'href="([a-z0-9-]+\.html)', r'href="/\1', re.sub(r'href="#', 'href="/#', alt))
+ust = re.sub(r'href="([a-z0-9-]+\.html)', r'href="/\1', re.sub(r'(<a\b[^>]*\bhref=")#', r'\1/#', ust))
+alt = re.sub(r'href="([a-z0-9-]+\.html)', r'href="/\1', re.sub(r'(<a\b[^>]*\bhref=")#', r'\1/#', alt))
 
 
 # Çerezsiz ziyaret sayacı (Cloudflare Web Analytics; kişisel veri toplamaz, gizlilik.html'de açıklanır)

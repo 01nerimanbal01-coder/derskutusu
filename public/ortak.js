@@ -126,7 +126,12 @@ ortakVeri.then(({ ayar }) => {
   if (basliklar.length < 2) return;
   const kisa = (t) => t.toLocaleLowerCase('tr').replace(/[^a-z0-9çğıöşü]+/g, '-').replace(/^-|-$/g, '');
   const baglar = basliklar.map((h, i) => {
-    if (!h.id) h.id = kisa(h.textContent) || `bolum-${i + 1}`;
+    if (!h.id) {
+      const kokId = kisa(h.textContent) || `bolum-${i + 1}`;
+      let id = kokId, sira = 2;
+      while (document.getElementById(id)) id = `${kokId}-${sira++}`;
+      h.id = id;
+    }
     return el('li', {}, el('a', { href: `#${h.id}` }, h.textContent.trim()));
   });
   const yan = el('aside', { sinif: 'ozet-yan', 'aria-label': 'Bu sayfada' },

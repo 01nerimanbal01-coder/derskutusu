@@ -109,6 +109,7 @@ async function interfaces(page, base, name) {
     assert.equal(parseInt(item.count),data.filter(i=>i.tur===type).length);
   }
   await page.screenshot({ path:path.join(output,name+'-ana-sayfa.png'), fullPage:true });
+  await page.screenshot({ path:path.join(output,name+'-home-viewport.png') });
   await page.locator('#hizli-bul [name="sinif"]').selectOption('5');
   await page.locator('#hizli-bul [name="ders"]').selectOption('matematik');
   await page.locator('#hizli-bul [name="tur"]').selectOption('Konu anlatımı');
@@ -143,7 +144,9 @@ async function interfaces(page, base, name) {
   await page.reload();
   await expect(page.locator('#s-ders')).toHaveValue('matematik');
   await page.locator('#temizle').click();
+  await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));
   await page.screenshot({ path:path.join(output,name+'-kutuphane.png'), fullPage:true });
+  await page.screenshot({ path:path.join(output,name+'-library-viewport.png') });
   for (let grade=5;grade<=12;grade++) {
     await page.goto(base + '/sinif.html?no='+grade);
     await expect(page.locator('#baslik')).toContainText(grade+'. sınıf');
