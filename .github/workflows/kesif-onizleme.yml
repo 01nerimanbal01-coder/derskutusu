@@ -21,6 +21,15 @@ jobs:
         env:
           NODE_PATH: ${{ runner.temp }}/kesif-qa/node_modules
         run: node tests/kesif-kapsam.cjs
+      - name: Ana sayfa, arama ve katalog davranışları
+        run: |
+          node tests/ana-sayfa.cjs
+          node tests/arama-oneri.cjs
+          node tests/katalog-yukleme.cjs
+      - name: Site genelinde renk, gezinme ve ekran boyutları
+        env:
+          NODE_PATH: ${{ runner.temp }}/kesif-qa/node_modules
+        run: node tests/site-renkleri.cjs
       - name: Etkinlik, kalem, devam etme ve tam ekran regresyonu
         if: always()
         env:
@@ -33,4 +42,5 @@ jobs:
           path: |
             kesif-test-results/
             slayt-test-results/
+            site-test-results/
           retention-days: 14

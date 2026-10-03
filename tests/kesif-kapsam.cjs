@@ -183,7 +183,10 @@ async function interfaces(page, base, name) {
   await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
   const base='http://127.0.0.1:'+server.address().port;
   const lessons=(await fs.readdir(path.join(root,'ozet'))).filter(f=>f.endsWith('.html')).sort();
-  assert(lessons.length>=116,'Ders sayfaları eksik');
+  const catalog=JSON.parse(await fs.readFile(path.join(root,'veri/icerikler.json'),'utf8')).icerikler;
+  const expectedLessons=[...new Set(catalog.filter(i=>i.tur==='Konu anlatımı'&&i.goruntule?.startsWith('ozet/')).map(i=>i.goruntule.slice(5)))].sort();
+  assert(expectedLessons.length>0,'Katalogda konu anlatımı bulunamadı');
+  assert(expectedLessons.every(file=>lessons.includes(file)),'Katalogdaki ders sayfaları eksik');
   try {
     for(const [name,engine] of [['chromium',chromium],['webkit',webkit]]) {
       const browser=await engine.launch();
