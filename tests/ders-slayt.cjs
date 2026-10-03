@@ -38,6 +38,7 @@ async function run(engine, name, base) {
     await expect(page.locator('.ds')).toBeVisible();
     await expect(page.locator('.ds-progress')).toHaveText('1 / 11 slayt');
     await expect(current().locator('h2')).toContainText('Nokta');
+    assert(await current().locator('.bolum-metin p').first().evaluate(p => parseFloat(getComputedStyle(p).fontSize) >= 24), 'Konu metni tahta için küçük kaldı');
     const hidden = await current().locator('[hidden]').count();
     await action('reveal').click();
     assert((await current().locator('[hidden]').count()) < hidden);
@@ -138,6 +139,10 @@ async function run(engine, name, base) {
       await page.locator('.ds select').selectOption('questions');
       assert.deepEqual((await session()).ids, ids);
       if (answeredId && ids.includes(answeredId)) await expect(page.locator('.ds-slide[data-slide="' + answeredId + '"] .etk-puan')).toContainText('1 / 1 doğru');
+      await action('restart').click();
+      assert.deepEqual((await session()).ids, ids);
+      assert.equal(await page.locator('.ds-slide .bitti, .ds-slide .esli, .ds-slide details[open]').count(), 0);
+      for (const score of await page.locator('.ds-slide .etk-puan b').all()) await expect(score).toHaveText('0');
       if (round < 3) await action('new').click();
     }
     assert.equal(seen.size, 14);
