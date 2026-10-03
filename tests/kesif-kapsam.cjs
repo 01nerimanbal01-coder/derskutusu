@@ -18,6 +18,7 @@ const server = http.createServer(async (req, res) => {
 });
 async function coverage(page, base, browserName, filenames) {
   for (const filename of filenames) {
+    try {
     await page.goto(base + '/ozet/' + filename);
     await page.locator('#ders-slayt-ac').click();
     const result = await page.evaluate(() => {
@@ -90,6 +91,11 @@ async function coverage(page, base, browserName, filenames) {
       await page.screenshot({ path:path.join(output,browserName+'-slayt-konu.png') });
     }
     if (report.lessons.length % 20 === 0) console.log('Kapsam doğrulandı: ' + report.lessons.length);
+    } catch (error) {
+      report.lessons.push({browser:browserName,file:filename,status:'failed',error:error.message});
+      console.error(browserName + ' / ' + filename + ': ' + error.message.slice(0,700));
+      if (report.lessons.filter(r=>r.status==='failed').length<=3) await page.screenshot({path:path.join(output,browserName+'-'+filename+'.png')}).catch(()=>{});
+    }
   }
 }
 async function interfaces(page, base, name) {
@@ -151,7 +157,10 @@ async function interfaces(page, base, name) {
     await page.setViewportSize({width,height:900});
     for (const route of ['/', '/icerikler.html', '/sinif.html?no=5']) {
       await page.goto(base+route); await page.locator(route==='/'?'.kesif-kategori':route.includes('icerikler')?'#kartlar .kart':'.ders-kart').first().waitFor();
-      assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1), 'Yatay taşma: '+route+' '+width);
+      const overflow = await page.evaluate(() => [...document.body.querySelectorAll('*')].filter(n => {
+        const box = n.getBoundingClientRect(); return box.width && (box.right > innerWidth + 1 || box.left < -1) && getComputedStyle(n).position !== 'absolute';
+      }).slice(0,12).map(n=>({tag:n.tagName,class:n.className,width:n.getBoundingClientRect().width,right:n.getBoundingClientRect().right})));
+      assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1), 'Yatay taşma: '+route+' '+width+' '+JSON.stringify(overflow));
       await page.screenshot({path:path.join(output,name+'-'+(route==='/'?'home':route.includes('icerikler')?'library':'class')+'-'+width+'.png'),fullPage:true});
     }
   }
@@ -179,11 +188,12 @@ async function interfaces(page, base, name) {
       await context.route('**/*',route=>route.request().url().startsWith(base)?route.continue():route.abort());
       const page=await context.newPage(); page.setDefaultTimeout(10000);
       page.on('pageerror',e=>report.errors.push({browser:name,url:page.url(),message:e.message}));
-      try { await interfaces(page,base,name); await coverage(page,base,name,lessons); }
+      try { await coverage(page,base,name,lessons); await interfaces(page,base,name); }
       catch(error) { await page.screenshot({path:path.join(output,name+'-failure.png')}).catch(()=>{}); throw error; }
       finally { await fs.writeFile(path.join(output,'report.json'),JSON.stringify(report,null,2)); await browser.close(); }
     }
     assert.deepEqual(report.errors,[]);
+    assert.equal(report.lessons.filter(r=>r.status==='failed').length,0,'Kaynak-sunum karşılaştırmasında başarısız dersler var; report.json dosyasına bakın');
     console.log(JSON.stringify({status:'passed',lessons:lessons.length,browsers:2,slideChecks:report.lessons.reduce((n,r)=>n+r.slides,0)}));
   } finally { server.close(); }
 })().catch(error=>{console.error(error);process.exitCode=1;});

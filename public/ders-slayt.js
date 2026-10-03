@@ -197,6 +197,7 @@
     const target = revealTarget(), control = button('reveal');
     control.disabled = !target;
     button('next').textContent = target ? 'Devam et →' : 'Sonraki slayt →';
+    button('next').setAttribute('aria-label', target ? 'Sonraki adımı göster' : 'Sonraki slayt');
     button('next').disabled = !target && state.index >= slides.length - 1;
     control.textContent = target?.matches('details') ? 'Çözümü göster' : target?.matches('.etk-ipucu-dugme') ? target.textContent : target ? 'Sonraki adımı göster' : slides[state.index]?.kind === 'activity' ? 'Soruyu slaytta yanıtlayın' : 'Tüm adımlar açık';
   }
