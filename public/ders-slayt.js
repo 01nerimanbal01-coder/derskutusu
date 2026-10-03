@@ -21,11 +21,11 @@
     return { ids, seen: [...(recycled ? [] : known), ...ids], recycled };
   }
   function restore(value, pool) {
-    if (!value || value.version !== 1 || !Array.isArray(value.ids) || !Array.isArray(value.seen)) return null;
+    if (!value || value.version !== 2 || !Array.isArray(value.ids) || !Array.isArray(value.seen)) return null;
     const ids = [...new Set(value.ids)].filter(id => pool.includes(id));
     // Değişen/kaldırılan bir soruyla eski seti sessizce karıştırma.
     if (ids.length !== value.ids.length || (pool.length && !ids.length)) return null;
-    return { version: 1, ids, seen: [...new Set(value.seen)].filter(id => pool.includes(id)),
+    return { version: 2, ids, seen: [...new Set(value.seen)].filter(id => pool.includes(id)),
       index: Number.isSafeInteger(value.index) && value.index >= 0 ? value.index : 0,
       mode: value.mode === 'questions' ? 'questions' : 'lesson' };
   }
@@ -52,7 +52,7 @@
   const source = document.querySelector('article.ozet');
   const actions = document.querySelector('.ozet-bas .g-dugmeler');
   if (!source || !actions || document.getElementById('ders-slayt-ac')) return;
-  const templates = new Map(), topics = [], questions = [], ending = [];
+  const templates = new Map(), intro = [], topics = [], questions = [], ending = [], resources = [];
   function collect(selector, kind, target) {
     source.querySelectorAll(selector).forEach(node => {
       const id = kind + '-' + hash(node.outerHTML);
@@ -61,25 +61,28 @@
       target.push(id);
     });
   }
+  collect('.ozet-ust', 'intro', intro);
   collect('.ozet-bolum.konu', 'topic', topics);
   collect('.ornekler > .ornek', 'example', questions);
   collect('.etk-liste > .etk', 'activity', questions);
   collect('.ozet-son', 'ending', ending);
+  collect('.ozet-ilgili', 'resources', resources);
   if (!topics.length && !questions.length) return;
 
   const trigger = document.createElement('button');
   trigger.type = 'button'; trigger.id = 'ders-slayt-ac'; trigger.className = 'dugme ana';
   trigger.textContent = 'Slaytla ders işle'; trigger.setAttribute('aria-haspopup', 'dialog');
   actions.prepend(trigger);
-  const css = document.createElement('link'); css.rel = 'stylesheet'; css.href = '/ders-slayt.css?v=20261003-1';
+  const css = document.createElement('link'); css.rel = 'stylesheet'; css.href = '/ders-slayt.css?v=20261003-preview2';
   document.head.append(css);
 
   const dialog = document.createElement('dialog');
   dialog.className = 'ds'; dialog.setAttribute('aria-labelledby', 'ds-title');
   dialog.innerHTML = `<div class="ds-shell"><header class="ds-header"><div><p class="ds-eyebrow">DERS KUTUSU · SINIFTA BİRLİKTE</p><h2 id="ds-title"></h2></div><button type="button" data-action="close">Derse dön</button></header>
-    <div class="ds-tools"><label>Sunum <select data-control="mode"><option value="lesson">Konu ve sorular</option><option value="questions">Yalnız sorular</option></select></label>
+    <div class="ds-tools"><label>Sunum <select data-control="mode"><option value="lesson">Dersin tamamı</option><option value="questions">Kısa soru seti</option></select></label>
     <button type="button" data-action="restart">Aynı seti baştan</button><button type="button" data-action="new">Yeni soru seti</button>
     <button type="button" data-action="ink" aria-pressed="false">Kalem</button><button type="button" data-action="fullscreen" aria-pressed="false">Tam ekran</button></div>
+    <div class="ds-outline"><label>Bölüme git <select data-control="slide" aria-label="Ders bölümleri"></select></label></div>
     <p class="ds-notice" role="status"></p>
     <div class="ds-stage-wrap"><div class="ds-stage ozet" tabindex="0" aria-label="Ders slaytı"></div><div class="ds-ink" hidden></div></div>
     <footer class="ds-footer"><button type="button" data-action="previous" aria-label="Önceki slayt">← Önceki</button><div><p class="ds-progress" role="status" aria-live="polite"></p><progress aria-label="Sunum ilerlemesi"></progress></div><button type="button" class="ds-primary" data-action="reveal">Sonraki adımı göster</button><button type="button" data-action="next" aria-label="Sonraki slayt">Sonraki →</button></footer></div>`;
@@ -91,20 +94,22 @@
   for (const name of source.classList) if (name.startsWith('ders-')) stage.classList.add(name);
   const notice = dialog.querySelector('.ds-notice'), mode = dialog.querySelector('[data-control="mode"]');
   const button = action => dialog.querySelector(`[data-action="${action}"]`);
-  const key = 'derskutusu:slayt:v1:' + location.pathname;
+  const key = 'derskutusu:slayt:v2:' + location.pathname;
   let state = null, storageOK = true, slides = [], pen = null, drawing = false;
   const drawings = new Map(), slideCache = new Map();
   try { state = restore(JSON.parse(sessionStorage.getItem(key)), questions); } catch { storageOK = false; }
-  if (!state) state = { version: 1, ...pick(questions), index: 0, mode: 'lesson' };
+  if (!state) state = { version: 2, ...pick(questions), index: 0, mode: 'lesson' };
   else trigger.textContent = 'Sunuma devam et';
   if (!questions.length) { mode.querySelector('[value="questions"]').disabled = true; state.mode = 'lesson'; }
   mode.value = state.mode;
   button('new').disabled = !questions.length;
   button('ink').disabled = typeof Tahta === 'undefined';
-  const baseNotice = () => `${questions.length} yayımlanmış soru/etkinlikten ${state.ids.length} seçim. Yeni set, bu dersteki sıradaki soruları seçer. Cevaplar ve çizimler sayfa açıkken korunur.`;
+  const baseNotice = () => state.mode === 'lesson'
+    ? `Bu sayfanın tamamı: giriş, ${topics.length} konu bölümü ve ${questions.length} örnek/etkinlik. Devam et ile adımlar sırayla açılır; uzun slaytlarda aşağı kaydırabilirsiniz.`
+    : `Kısa soru seti: ${questions.length} örnek/etkinlikten ${state.ids.length} seçim. Dersin tamamına Sunum menüsünden dönebilirsiniz.`;
   const explain = message => { notice.textContent = (message || baseNotice()) + (storageOK ? '' : ' Sekme belleği kapalı; yenilemede konum korunamaz.'); };
   function save() {
-    try { sessionStorage.setItem(key, JSON.stringify({ version: 1, ids: state.ids, seen: state.seen, index: state.index, mode: state.mode })); }
+    try { sessionStorage.setItem(key, JSON.stringify({ version: 2, ids: state.ids, seen: state.seen, index: state.index, mode: state.mode })); }
     catch { storageOK = false; }
   }
   // Kopyalardaki SVG tanımları ve yerel başvurular asıl sayfayla çakışmaz.
@@ -132,7 +137,7 @@
     uniqueIds(node, 'ds-' + id + '-');
     const frame = document.createElement('section'); frame.className = 'ds-slide'; frame.dataset.slide = id;
     const tag = document.createElement('p'); tag.className = 'ds-slide-tag';
-    tag.textContent = { topic: 'Konu · adım adım', example: 'Birlikte çözelim', activity: 'Sıra sizde', ending: 'Dersi toparlayalım' }[template.kind];
+    tag.textContent = { intro: 'Derse hazırlık', resources: 'Ders kaynakları', topic: 'Konu · adım adım', example: 'Birlikte çözelim', activity: 'Sıra sizde', ending: 'Dersi toparlayalım' }[template.kind];
     frame.append(tag);
     const steps = [];
     if (template.kind === 'activity') {
@@ -167,8 +172,18 @@
   }
   function build() {
     penOff(); stage.replaceChildren();
-    const ids = state.mode === 'lesson' ? [...topics, ...state.ids, ...ending] : state.ids;
+    const ids = state.mode === 'lesson' ? [...intro, ...topics, ...questions, ...ending, ...resources] : state.ids;
     slides = ids.map(makeSlide);
+    const outline = dialog.querySelector('[data-control="slide"]');
+    outline.replaceChildren(...ids.map((id, i) => {
+      const { kind, node } = templates.get(id), option = document.createElement('option');
+      const labels = { intro: 'Giriş ve öğrenme çıktıları', example: 'Örnek', activity: 'Etkinlik', ending: 'Dersi toparlayalım', resources: 'Kaynaklar' };
+      const title = node.querySelector('h2')?.textContent || labels[kind] || 'Konu';
+      option.value = String(i); option.textContent = `${i + 1}. ${title}`;
+      return option;
+    }));
+    button('restart').textContent = state.mode === 'lesson' ? 'Dersi baştan' : 'Aynı seti baştan';
+    button('new').textContent = state.mode === 'lesson' ? 'Kısa soru seti oluştur' : 'Yeni soru seti';
     state.index = Math.min(state.index, Math.max(0, slides.length - 1));
   }
   function revealTarget() {
@@ -181,8 +196,19 @@
   function updateReveal() {
     const target = revealTarget(), control = button('reveal');
     control.disabled = !target;
+    button('next').textContent = target ? 'Devam et →' : 'Sonraki slayt →';
+    button('next').disabled = !target && state.index >= slides.length - 1;
     control.textContent = target?.matches('details') ? 'Çözümü göster' : target?.matches('.etk-ipucu-dugme') ? target.textContent : target ? 'Sonraki adımı göster' : slides[state.index]?.kind === 'activity' ? 'Soruyu slaytta yanıtlayın' : 'Tüm adımlar açık';
   }
+  function reveal() {
+    const target = revealTarget();
+    if (target?.matches('details')) target.open = true;
+    else if (target?.matches('button')) target.click();
+    else if (target) target.hidden = false;
+    if (target) target.scrollIntoView({ block: 'nearest', behavior: 'instant' });
+    updateReveal();
+  }
+  function nextStep() { if (revealTarget()) reveal(); else show(state.index + 1); }
   function show(index, focus = true) {
     rememberInk(); state.index = Math.max(0, Math.min(index, slides.length - 1));
     slides.forEach((slide, i) => { slide.frame.hidden = i !== state.index; });
@@ -194,6 +220,7 @@
     button('previous').disabled = state.index <= 0;
     button('next').disabled = state.index >= slides.length - 1;
     updateReveal(); save();
+    dialog.querySelector('[data-control="slide"]').value = String(state.index);
     if (focus) stage.focus({ preventScroll: true });
   }
   function fullscreenLabel() {
@@ -218,20 +245,14 @@
     switch (control.dataset.action) {
       case 'close': close(); break;
       case 'previous': show(state.index - 1); break;
-      case 'next': show(state.index + 1); break;
-      case 'reveal': {
-        const target = revealTarget();
-        if (target?.matches('details')) target.open = true;
-        else if (target?.matches('button')) target.click();
-        else if (target) target.hidden = false;
-        updateReveal(); break;
-      }
+      case 'next': nextStep(); break;
+      case 'reveal': reveal(); break;
       case 'restart':
         penOff(); drawings.clear(); slideCache.clear(); state.index = 0; build(); show(0);
-        explain('Aynı soru seti yeni ders için baştan başladı. Cevaplar ve çizimler sıfırlandı.'); break;
+        explain((state.mode === 'lesson' ? 'Dersin tamamı' : 'Aynı soru seti') + ' baştan başladı. Cevaplar ve çizimler sıfırlandı.'); break;
       case 'new': {
         const next = pick(questions, state.seen);
-        penOff(); drawings.clear(); slideCache.clear(); state = { ...state, ...next, index: 0 }; build(); show(0);
+        penOff(); drawings.clear(); slideCache.clear(); state = { ...state, ...next, index: 0, mode: 'questions' }; mode.value = state.mode; build(); show(0);
         explain(next.recycled ? 'Bu dersteki soru havuzu tamamlandı; önceki sorular yeniden kullanılabilir. Yeni soru üretilmedi.' : `${next.ids.length} soru/etkinlik seçildi. Bu sekmede daha önce seçilmemiş sorular kullanıldı.`); break;
       }
       case 'ink':
@@ -254,11 +275,13 @@
   mode.addEventListener('change', () => {
     penOff(); state.mode = mode.value; state.index = 0; build(); show(0); explain();
   });
+  dialog.querySelector('[data-control="slide"]').addEventListener('change', event => show(Number(event.target.value)));
   dialog.addEventListener('keydown', event => {
     if (event.key === 'Escape' && drawing) { event.preventDefault(); event.stopPropagation(); rememberInk(); penOff(); return; }
     if (event.ctrlKey || event.metaKey || event.altKey || event.target.closest('button, input, textarea, select, a, summary, [contenteditable]')) return;
     if (['ArrowRight', 'PageDown', 'ArrowLeft', 'PageUp', 'Home', 'End'].includes(event.key)) {
       event.preventDefault();
+      if (['ArrowRight', 'PageDown'].includes(event.key)) { nextStep(); return; }
       show(event.key === 'Home' ? 0 : event.key === 'End' ? slides.length - 1 : state.index + (['ArrowRight', 'PageDown'].includes(event.key) ? 1 : -1));
     }
   });

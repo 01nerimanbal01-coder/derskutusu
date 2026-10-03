@@ -7,11 +7,12 @@ Sayfaların kendi gövdeleri aşağıdaki GOVDE sözlüğündedir.
 """
 import re
 from pathlib import Path
+from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'tahta.js': '20261003-1', 'etkinlik.js': '20261003-1', 'arama.js': '202610021530', 'kutuphane.js': '202610021610', 'arapca.js': '202610022030'}
+BETIK_SURUMLERI = {'tahta.js': '20261003-preview2', 'etkinlik.js': '20261003-1', 'arama.js': '202610021530', 'kutuphane.js': '20261003-preview2', 'arapca.js': '202610022030'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
@@ -28,7 +29,9 @@ SAYAC = '''<!-- Cloudflare Web Analytics --><script type='module' src='https://s
 def sayfa(ad, baslik, aciklama, govde, betikler=(), kanonik=True):
     kan = f'<link rel="canonical" href="https://derskutusu.com/{ad}">\n' if kanonik else '<meta name="robots" content="noindex">\n'
     js = ''.join(f'<script src="/{b}?v={BETIK_SURUMLERI.get(b, SURUM)}"></script>\n' for b in ('ortak.js', *betikler, 'arama.js', 'tahta.js'))
-    return f'''<!doctype html>
+    if ad == 'icerikler.html':
+        govde = kutuphane_govde(govde)
+    html = f'''<!doctype html>
 <html lang="tr">
 <head>
 <meta charset="utf-8">
@@ -65,6 +68,7 @@ def sayfa(ad, baslik, aciklama, govde, betikler=(), kanonik=True):
 </body>
 </html>
 '''
+    return kesif_sayfa(html, ad)
 
 
 YAKINDA = '''      <div class="yakinda" id="icerik-yakinda" hidden>

@@ -64,3 +64,13 @@
 }
 @media (prefers-reduced-motion: reduce) { .ds *, .ds *::before, .ds *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
 @media print { .ds { display: none !important; } }
+
+/* Tam dersteki giriş, öğrenme çıktıları ve kaynaklar. */
+.ds .ozet-ust { display: block; margin: 0; }
+.ds .ozet-cikti, .ds .ozet-giris-kart { width: auto; margin-bottom: 24px; }
+.ds .ozet-cikti li, .ds .ozet-giris { font-size: inherit; line-height: inherit; }
+.ds .ozet-ilgili li { margin-block: 12px; }
+.ds-outline { padding: 8px 24px 0; }
+.ds-outline label { display: flex; align-items: center; gap: 8px; font-size: 14px; }
+.ds-outline select { max-width: min(680px, 100%); flex: 1; min-height: 40px; }
+@media (max-width: 650px) { .ds-outline { padding: 8px 12px 0; } .ds-outline select { min-width: 0; } }

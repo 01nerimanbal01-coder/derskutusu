@@ -13,7 +13,7 @@ function kitleDenetleyici(dersler) {
 function icerikKarti(i, dersler) {
   const dersAd = dersler.dersler[i.ders] || i.ders;
   const adres = i.dosya || i.baglanti;
-  return el('article', { sinif: 'kart' },
+  return el('article', { sinif: 'kart', 'data-renk': window.Kesif?.category(i.tur).color || 'mavi' },
     el('div', { sinif: 'ust-bilgi' },
       i.hafta && el('span', { sinif: 'etiket' }, `${i.hafta}. hafta`),
       i.sinif && el('span', { sinif: 'etiket' }, `${i.sinif}. sınıf`),
@@ -45,9 +45,10 @@ function sinifSayfasi({ dersler, icerikler }) {
     const ad = dersler.dersler[d];
     const ogrenci = buSinif.filter((i) => i.ders === d && kitleUyar(i, 'ogrenci')).length;
     const ogretmen = buSinif.filter((i) => i.ders === d && kitleUyar(i, 'ogretmen')).length;
-    return el('a', { sinif: 'ders-kart', href: `icerikler.html?sinif=${no}&ders=${d}` },
+    const renkNo = [...d].reduce((sum, c) => sum + c.codePointAt(0), 0);
+    return el('a', { sinif: 'ders-kart', 'data-renk': ['mor', 'yesil', 'turuncu', 'mavi', 'pembe', 'sari'][renkNo % 6], href: `icerikler.html?sinif=${no}&ders=${d}` },
       el('div', { sinif: 'ders-kart-ust' },
-        el('span', { sinif: 'ders-harf', style: `background:${RENKLER[s % RENKLER.length]}` }, ad.replace(/^T\.C\. /, '').charAt(0)),
+        el('span', { sinif: 'ders-harf', style: `background:${RENKLER[renkNo % RENKLER.length]}` }, ad.replace(/^T\.C\. /, '').charAt(0)),
         el('h3', {}, ad)),
       el('div', { sinif: 'sayilar' },
         el('span', {}, ogrenci ? `${ogrenci} öğrenci içeriği` : 'Öğrenci içerikleri yakında'),
@@ -74,6 +75,11 @@ const aramaEslesir = (metin, q) => (typeof Arama !== 'undefined' ? Arama.metinEs
 
 function icerikSayfasi({ dersler, icerikler }) {
   const alan = { sinif: $('#s-sinif'), ders: $('#s-ders'), tur: $('#s-tur'), hafta: $('#s-hafta'), kitle: $('#s-kitle'), ara: $('#s-ara') };
+  const sirala = $('#s-sirala');
+  if (sirala && ['yeni', 'baslik', 'sinif'].includes(parametre.get('sirala'))) sirala.value = parametre.get('sirala');
+  let gorunen = 12;
+  const kategoriAlan = $('#kategori-secimleri');
+  const kategoriler = window.Kesif?.categories || [];
   alan.sinif.append(...Object.keys(dersler.siniflar).map((n) => el('option', { value: n }, `${n}. sınıf`)));
   const haftalar = [...new Set(icerikler.map((i) => Number(i.hafta)).filter((n) => Number.isInteger(n) && n > 0))].sort((a, b) => a - b);
   alan.hafta.append(...haftalar.map((n) => el('option', { value: String(n) }, `${n}. hafta`)));
@@ -109,13 +115,17 @@ function icerikSayfasi({ dersler, icerikler }) {
     dersSecenekleri(); turSecenekleri(); ciz();
     alan.sinif.focus();
   };
-  const ciz = () => {
+  const ciz = (daha = false) => {
+    if (daha !== true) gorunen = 12;
     const f = Object.fromEntries(Object.entries(alan).map(([a, e]) => [a, e.value.trim()]));
     const sonuc = icerikler.filter((i) => (!f.sinif || String(i.sinif) === f.sinif) && (!f.ders || i.ders === f.ders)
       && (!f.hafta || String(i.hafta) === f.hafta) && (!f.tur || i.tur === f.tur) && (!f.kitle || kitleUyar(i, f.kitle))
       && (!f.ara || aramaEslesir(`${i.baslik} ${i.aciklama} ${dersler.dersler[i.ders] || ''} ${i.tur}`, f.ara)))
-      .sort((a, b) => String(b.tarih || '').localeCompare(String(a.tarih || '')));
+      .sort((a, b) => sirala?.value === 'baslik' ? a.baslik.localeCompare(b.baslik, 'tr')
+        : sirala?.value === 'sinif' ? Number(a.sinif || 0) - Number(b.sinif || 0) || a.baslik.localeCompare(b.baslik, 'tr')
+        : String(b.tarih || '').localeCompare(String(a.tarih || '')));
     const url = new URLSearchParams(Object.entries(f).filter(([, d]) => d));
+    if (sirala && sirala.value !== 'yeni') url.set('sirala', sirala.value);
     history.replaceState(null, '', url.toString() ? `?${url}` : location.pathname);
     const secili = Object.values(f).some(Boolean);
     $('#sonuc-sayi').textContent = `${sonuc.length} içerik`;
@@ -132,7 +142,24 @@ function icerikSayfasi({ dersler, icerikler }) {
       secimler.hidden = !secili;
     }
     const kartlar = $('#kartlar');
-    kartlar.replaceChildren(...sonuc.map((i) => icerikKarti(i, dersler)));
+    // Uzun listelerde yüzlerce kartı aynı anda oluşturma; filtre değişince ilk sayfaya dön.
+    const parcali = Boolean($('#daha-goster'));
+    kartlar.replaceChildren(...(parcali ? sonuc.slice(0, gorunen) : sonuc).map((i) => icerikKarti(i, dersler)));
+    if (parcali) {
+      $('#daha-alani').hidden = !sonuc.length;
+      $('#gosterilen-sayi').textContent = `${sonuc.length} kaynaktan ${Math.min(gorunen, sonuc.length)} tanesi gösteriliyor`;
+      $('#daha-goster').hidden = gorunen >= sonuc.length;
+    }
+    if (kategoriAlan) {
+      // Kategori sayıları, tür dışındaki seçimlerle eşleşen gerçek kayıt sayılarıdır.
+      const kapsam = icerikler.filter(i => (!f.sinif || String(i.sinif) === f.sinif) && (!f.ders || i.ders === f.ders)
+        && (!f.hafta || String(i.hafta) === f.hafta) && (!f.kitle || kitleUyar(i, f.kitle))
+        && (!f.ara || aramaEslesir(`${i.baslik} ${i.aciklama} ${dersler.dersler[i.ders] || ''} ${i.tur}`, f.ara)));
+      for (const b of kategoriAlan.querySelectorAll('button')) {
+        b.setAttribute('aria-pressed', String(b.dataset.tur === f.tur));
+        b.querySelector('small').textContent = kapsam.filter(i => !b.dataset.tur || i.tur === b.dataset.tur).length;
+      }
+    }
     $('#icerik-yakinda').hidden = sonuc.length > 0;
     if ($('#sonucsuz-baslik')) {
       $('#sonucsuz-baslik').textContent = f.ara ? 'Aramanızla eşleşen içerik bulunamadı' : 'Bu seçimde henüz içerik yok';
@@ -153,11 +180,28 @@ function icerikSayfasi({ dersler, icerikler }) {
   $('#temizle').addEventListener('click', hepsiniTemizle);
   $('#sonucsuz-temizle')?.addEventListener('click', hepsiniTemizle);
   $('#aramayi-temizle')?.addEventListener('click', () => secimiKaldir('ara'));
+  sirala?.addEventListener('change', ciz);
+  $('#daha-goster')?.addEventListener('click', () => {
+    const onceki = gorunen; gorunen += 12; ciz(true);
+    const ilkYeni = $('#kartlar').children[onceki];
+    ilkYeni?.querySelector('a')?.focus({ preventScroll: true });
+    ilkYeni?.scrollIntoView({ block: 'start', behavior: 'instant' });
+  });
+  if (kategoriAlan) kategoriAlan.replaceChildren(...[{ type: '', title: 'Bütün kaynaklar', icon: 'kitap', color: 'yesil' }, ...kategoriler].map(k =>
+    el('button', { type: 'button', 'data-tur': k.type, 'data-renk': k.color, 'aria-pressed': 'false', onclick: () => {
+      // Öğrenci/öğretmen filtresi seçilen türü dışlıyorsa herkes görünümüne dön.
+      if (![...alan.tur.options].some(o => o.value === k.type)) { alan.kitle.value = ''; turSecenekleri(); }
+      alan.tur.value = k.type; ciz();
+    } }, simge(k.icon), el('span', {}, k.title), el('small', {}, ''))));
   ciz();
 }
 
 ortakVeri.then((v) => {
-  if (!v.dersler) return;
+  if (!v.dersler) {
+    const yer = $('#kartlar') || $('#ders-listesi');
+    yer?.replaceChildren(el('p', { role: 'alert' }, 'Kaynak listesi yüklenemedi. ', el('button', { type: 'button', sinif: 'dugme', onclick: () => location.reload() }, 'Yeniden dene')));
+    return;
+  }
   if ($('#ders-listesi')) sinifSayfasi(v);
   if ($('#s-sinif')) icerikSayfasi(v);
 });
