@@ -41,7 +41,8 @@
       "metin": [
         "Tek erkek öğretmen için {ar:هَذَا مُعَلِّم}, iki erkek öğretmen için {ar:هَذَانِ مُعَلِّمَانِ}, erkek öğretmenler için {ar:هَؤُلَاءِ مُعَلِّمُونَ} kullanılır.",
         "Kadın öğretmen için {ar:هَذِهِ مُعَلِّمَة}, iki kadın öğretmen için {ar:هَاتَانِ مُعَلِّمَتَانِ}, kadın öğretmenler için {ar:هَؤُلَاءِ مُعَلِّمَات} biçimleri vardır.",
-        "İki kişi için {ar:هُمَا}, erkek topluluğu için {ar:هُمْ}, kadın topluluğu için {ar:هُنَّ} kullanılır. {ar:مَا مِهْنَتُهُمَا؟} “İkisinin mesleği nedir?” sorusudur."
+        "İki kişi için {ar:هُمَا}, erkek topluluğu için {ar:هُمْ}, kadın topluluğu için {ar:هُنَّ} kullanılır. {ar:مَا مِهْنَتُهُمَا؟} “İkisinin mesleği nedir?” sorusudur.",
+        "Konuşan kişi kendisi için {ar:أَنَا}, kendisinin de bulunduğu birden çok kişi için {ar:نَحْنُ} kullanır. İki kişiye doğrudan seslenirken {ar:أَنْتُمَا}, erkeklerden oluşan bir topluluğa seslenirken {ar:أَنْتُمْ} seçilir."
       ],
       "kutu": {
         "tur": "kural",
@@ -52,18 +53,20 @@
       "baslik": "İki kişinin yaptığı işi söyleme",
       "metin": [
         "{ar:هُمَا يَعْمَلَانِ} “İkisi çalışır.” anlamındadır. İki kadın için {ar:هُمَا تَعْمَلَانِ} kullanılır. Çalışma yeri {ar:فِي} ile eklenebilir.",
-        "{ar:هُمَا مُدَرِّسَانِ، يَعْمَلَانِ فِي الْمَدْرَسَةِ} ifadesi iki erkek öğretmeni ve çalıştıkları yeri belirtir. {ar:هُمَا مُتَقَاعِدَانِ، لَا يَعْمَلَانِ} ise iki kişinin emekli olduğunu ve çalışmadığını söyler."
+        "{ar:هُمَا مُدَرِّسَانِ، يَعْمَلَانِ فِي الْمَدْرَسَةِ} ifadesi iki erkek öğretmeni ve çalıştıkları yeri belirtir. {ar:هُمَا مُتَقَاعِدَانِ، لَا يَعْمَلَانِ} ise iki kişinin emekli olduğunu ve çalışmadığını söyler.",
+        "Bir mesleği veya durumu doğrulamak için {ar:هَلْ} ile soru sorulur. Örneğin {ar:هَلْ هُمَا مُهَنْدِسَانِ؟} sorusu iki kişinin mühendis olup olmadığını öğrenmeye yöneliktir; cevaba göre {ar:نَعَمْ} ya da {ar:لَا} kullanılır."
       ],
       "kutu": {
         "tur": "dikkat",
-        "metin": "İki kişiyi tekil bir fiille anlatmamaya dikkat et."
+        "metin": "{ar:هُمَا} ile başlayan bu örnek cümlelerde fiili ikil biçimde kullan."
       }
     },
     {
       "baslik": "Aileyle ilgili güzel davranışlar",
       "metin": [
         "{ar:أُحِبُّ أُسْرَتِي} “Ailemi severim.”, {ar:أَحْتَرِمُهَا} “Ona saygı duyarım.”, {ar:أَزُورُ أَقَارِبِي} “Akrabalarımı ziyaret ederim.” anlamındadır.",
-        "{ar:وَ} ile ilişkili bilgiler bağlanır. Bir kişiyi tanıtan kısa yazıda önce yakınlığı, sonra mesleği, yaptığı işi ve çalışma yeri belirtilebilir. Yalnız verilen bilgileri kullan; metinde söylenmeyen bir mesleği kişiye yakıştırma."
+        "{ar:وَ} ile ilişkili bilgiler bağlanır. Bir kişiyi tanıtan kısa yazıda önce yakınlığı, sonra mesleği, yaptığı işi ve çalışma yeri belirtilebilir. Yalnız verilen bilgileri kullan; metinde söylenmeyen bir mesleği kişiye yakıştırma.",
+        "Bir erkek, arkadaşına {ar:أَنَا مُشْتَاق إِلَيْكَ} diyerek onu özlediğini belirtir. Aynı duyguyu paylaşan arkadaşı {ar:وَأَنَا أَيْضًا} yani “Ben de.” diyebilir."
       ],
       "kutu": {
         "tur": "bilgi",
@@ -113,53 +116,43 @@
     },
     {
       "tur": "coktan",
-      "soru": "Cevapta {ar:هِيَ تَعْمَلُ فِي الْمَدْرَسَةِ} deniyor. Hangi sorunun cevabıdır?",
+      "soru": "Röportajın soru sırası: 1. {ar:مَا مِهْنَتُهَا؟} 2. {ar:أَيْنَ تَعْمَلُ؟} 3. {ar:مَاذَا تَفْعَلُ؟} Cevap kartları: K—{ar:هِيَ تَعْمَلُ فِي الْمُسْتَشْفَى.} L—{ar:هِيَ طَبِيبَة.} M—{ar:هِيَ تَفْحَصُ الْمَرْضَى.} Her kart bir kez kullanılacaktır. Her soruyla aynı türde bilgiyi veren cevap kartları hangi sırayla yerleştirilmelidir?",
       "secenekler": [
-        "{ar:مَا مِهْنَتُهُمَا؟}",
-        "{ar:مَا مِهْنَتُهُ؟}",
-        "{ar:أَيْنَ تَعْمَلُ؟}",
-        "{ar:مَنْ هَذَا؟}",
-        "{ar:مَاذَا يَفْعَلُ؟}"
+        "K – L – M",
+        "L – M – K",
+        "L – K – M",
+        "M – K – L",
+        "K – M – L"
       ],
       "dogru": 2,
-      "aciklama": "Cevap kadın kişinin çalıştığı yeri belirtir."
+      "aciklama": "C. İlk soru mesleği, ikinci soru çalışma yerini, üçüncü soru yapılan işi sorar. Bu bilgiler sırasıyla L, K ve M kartlarındadır. Diğer sıralarda en az iki kart farklı türde bir sorunun karşısına gelir."
     },
     {
       "tur": "coktan",
-      "soru": "Kadın öğretmenlerden oluşan bir topluluk için hangi tanıtım uygundur?",
+      "soru": "Tanıtım çizelgesinde K grubu iki kadın mühendis, L grubu üç erkek öğretmen olarak kayıtlıdır. K ve L için sırasıyla hangi tanıtımlar kullanılmalıdır?",
       "secenekler": [
-        "{ar:هَذَا مُعَلِّم}",
-        "{ar:هَذَانِ مُعَلِّمَانِ}",
-        "{ar:هَذِهِ مُعَلِّمَة}",
-        "{ar:هَؤُلَاءِ مُعَلِّمَات}",
-        "{ar:هَاتَانِ مُعَلِّمَتَانِ}"
+        "{ar:هَاتَانِ مُهَنْدِسَتَانِ} / {ar:هَؤُلَاءِ مُعَلِّمُونَ}",
+        "{ar:هَذِهِ مُهَنْدِسَة} / {ar:هَؤُلَاءِ مُعَلِّمُونَ}",
+        "{ar:هَذَانِ مُهَنْدِسَانِ} / {ar:هَؤُلَاءِ مُعَلِّمُونَ}",
+        "{ar:هَاتَانِ مُهَنْدِسَتَانِ} / {ar:هَؤُلَاءِ مُعَلِّمَات}",
+        "{ar:هَاتَانِ مُهَنْدِسَتَانِ} / {ar:هَذَانِ مُعَلِّمَانِ}"
       ],
-      "dogru": 3,
-      "aciklama": "{ar:هَؤُلَاءِ} ve {ar:مُعَلِّمَات} çoğul kadın öğretmenleri belirtir."
+      "dogru": 0,
+      "aciklama": "A. K için ikil dişil, L için çoğul eril biçim gerekir. B, K grubunu tek kişiye indirir; C, K grubunun cinsiyetini değiştirir; D, L grubunu kadın olarak tanıtır; E, L grubunu iki kişiyle sınırlar."
     },
     {
       "tur": "dy",
-      "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+      "yonerge": "Okuma kartına göre yargıları değerlendiriniz: {ar:خَالِي مُدَرِّس. هُوَ يُدَرِّسُ فِي الْمَدْرَسَةِ. جَدَّتِي مُتَقَاعِدَة.}",
       "ifadeler": [
         {
-          "metin": "{ar:مَا مِهْنَتُهُمَا؟} iki kişinin mesleğini sorar.",
+          "metin": "Dayının hem mesleği hem de çalıştığı yer kartta belirtilmiştir.",
           "dogru": true,
-          "aciklama": "{ar:هُمَا} iki kişiyle ilişkilidir."
+          "aciklama": "{ar:مُدَرِّس} mesleği, {ar:فِي الْمَدْرَسَةِ} çalışma yerini verir."
         },
         {
-          "metin": "{ar:مَاذَا يَفْعَلُ؟} yalnız çalışma yerini sorar.",
+          "metin": "Kart, dedenin emekli olduğunu bildirir.",
           "dogru": false,
-          "aciklama": "Yapılan işi sorar; yer için {ar:أَيْنَ} kullanılır."
-        },
-        {
-          "metin": "{ar:هَاتَانِ} iki kadın için kullanılabilir.",
-          "dogru": true,
-          "aciklama": "İkil dişil işaret sözcüğüdür."
-        },
-        {
-          "metin": "{ar:أَحْتَرِمُ} ziyaret ederim anlamındadır.",
-          "dogru": false,
-          "aciklama": "Saygı duyarım anlamındadır; ziyaret etmek için {ar:أَزُورُ} kullanılır."
+          "aciklama": "{ar:جَدَّتِي} ninem demektir. Kartta dedeyle ilgili bilgi verilmemiştir."
         }
       ]
     },
@@ -187,47 +180,48 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+      "yonerge": "Konuşan ve dinleyen kişilere göre uygun kişi sözcüğünü seçiniz. Bir sözcük artacak.",
       "cumleler": [
         {
-          "metin": "{ar:هُوَ} ile tek ___ kişi anlatılır.",
-          "cevap": "erkek"
+          "metin": "İki kadın kendilerini tanıtıyor: ___ {ar:مُهَنْدِسَتَانِ.}",
+          "cevap": "نَحْنُ"
         },
         {
-          "metin": "{ar:هِيَ} ile tek ___ kişi anlatılır.",
-          "cevap": "kadın"
+          "metin": "Erkek öğretmenlerden oluşan bir topluluğa sesleniliyor: ___ {ar:مُدَرِّسُونَ.}",
+          "cevap": "أَنْتُمْ"
         },
         {
-          "metin": "{ar:هُمَا} sözcüğü ___ kişiyi belirtir.",
-          "cevap": "iki"
+          "metin": "İki kadın hemşireye doğrudan sesleniliyor: ___ {ar:مُمَرِّضَتَانِ.}",
+          "cevap": "أَنْتُمَا"
         }
       ],
       "fazla": [
-        "üç"
+        "هُمْ"
       ]
     },
     {
       "tur": "ogretici",
-      "soru": "“İkisi mühendistir.” bilgisini “İkisi öğretmendir.” olarak değiştireceksin. Arapça meslek adında hangi sayı özelliğini korumalısın?",
+      "soru": "Görevli bir kadına {ar:أَنْتِ تَعْمَلِينَ فِي الْمَصْنَعِ} diyor. Kadın hakkında başka birine bilgi verirken aynı cümle {ar:هِيَ} ile başlayacak. Cümleyi yeniden yazınız; hangi iki sözcük değişir?",
       "ipuclari": [
-        "Kişi sayısı değişmiyor.",
-        "Meslek adı değişse de iki kişiyi anlatıyorsun."
+        "İlk cümlede kadın dinleyendir; ikinci cümlede onun hakkında konuşuluyor.",
+        "Çalışılan yer değişmiyor. Kişi sözcüğü ile fiili birlikte düzenle."
       ],
-      "cevap": "İkil biçim korunmalıdır: {ar:هُمَا مُهَنْدِسَانِ} yerine {ar:هُمَا مُدَرِّسَانِ} denebilir."
+      "cevap": "{ar:هِيَ تَعْمَلُ فِي الْمَصْنَعِ} yazılır. {ar:أَنْتِ} yerine {ar:هِيَ}, {ar:تَعْمَلِينَ} yerine {ar:تَعْمَلُ} kullanılır. Çalışma yeri aynı kalır."
     },
     {
       "tur": "ogretici",
-      "soru": "Bir akraba tanıtımında meslek ve çalışma yeri biliniyor, yaptığı iş belirtilmiyor. Bu bilgiyi öğrenmek için hangi tür soru gerekir?",
+      "soru": "Bir erkek, arkadaşına {ar:أَنَا مُشْتَاق إِلَيْكَ} diyor. Arkadaşı da onu özlediğini kısa bir karşılıkla söylemek istiyor. Hangi ifade uygundur?",
       "ipuclari": [
-        "Nerede sorusu zaten cevaplanmış.",
-        "Kişinin yaptığı eylemi sor."
+        "Arkadaşı önceki sözde dile getirilen duyguyu paylaşıyor.",
+        "“Ben de.” anlamındaki sosyal ifadeyi kullan."
       ],
-      "cevap": "Erkek için {ar:مَاذَا يَفْعَلُ؟}, kadın için {ar:مَاذَا تَفْعَلُ؟} sorusu yöneltilebilir."
+      "cevap": "{ar:وَأَنَا أَيْضًا} denebilir. Bu karşılık, önceki konuşmacının özlem duygusunu paylaştığını bildirir."
     }
   ],
   "ozet": [
     "Meslek, yapılan iş ve çalışma yeri birbirinden ayrı bilgilerdir.",
     "Tekil, ikil ve çoğul biçimler kişi sayısına göre seçilir.",
     "Akrabaları tanıtan cümlelerde kişi, meslek ve fiil uyumu korunur."
-  ]
+  ],
+  "yazan": "Codex · Hesap E · 01a0f905-3dfa-7243-b40e-4220ac117f64"
 }
