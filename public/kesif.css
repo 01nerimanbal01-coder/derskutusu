@@ -12,7 +12,8 @@ body.kesif-page { --zemin:#faf9f6; --zemin-2:#f0f2f4; --yuzey:#fff; --yuzey-2:#f
 .kesif-page .dugme { min-height:46px; border-radius:10px; }
 .kesif-page .dugme.ana { color:#fff; background:#276458; border-color:#276458; }
 .kesif-page .kesif-hero { padding:58px 0 48px; border-bottom:1px solid var(--cizgi); background:radial-gradient(ellipse at 80% 20%,#e8eee4 0,transparent 55%),var(--zemin); }
-.kesif-hero-grid { display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(32px,6vw,100px); align-items:center; }
+.kesif-hero-grid { display:grid; grid-template-columns:minmax(0,1.3fr) minmax(0,1fr); gap:clamp(32px,6vw,100px); align-items:center; }
+.kesif-hero-grid > *, .kesif-library > * { min-width:0; }
 .kesif-kicker { display:inline-flex; gap:9px; align-items:center; color:#276458; border:1px solid #c7dcd1; background:#edf5eb; padding:6px 12px; border-radius:24px; font-size:12px; font-weight:750; }
 .kesif-kicker::before { content:''; width:6px; height:6px; background:#276458; border-radius:50%; }
 .kesif-hero h1 { font-size:clamp(38px,4.4vw,68px); line-height:1.08; letter-spacing:-.055em; margin:22px 0; max-width:740px; font-weight:780; }
@@ -50,7 +51,7 @@ body.kesif-page { --zemin:#faf9f6; --zemin-2:#f0f2f4; --yuzey:#fff; --yuzey-2:#f
 .kesif-page .kademe { padding:24px; background:var(--yuzey); border:1px solid var(--cizgi); border-radius:18px; }
 .kesif-page .kademe-ad { font-size:15px; margin-bottom:20px; }
 .kesif-page .sinif-izgara { grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; }
-.kesif-page .sinif-kart { padding:18px 12px; min-height:150px; border-radius:12px; background:#edf3ee; border-color:#d4e2d7; }
+.kesif-page .sinif-kart { display:flex; flex-direction:column; align-items:flex-start; gap:6px; padding:18px 14px; min-height:150px; border-radius:12px; background:#edf3ee; border-color:#d4e2d7; }
 .kesif-page .kademe:nth-child(2) .sinif-kart { background:#f1eef8; border-color:#ddd6ed; }
 .kesif-page .sinif-no { font-size:32px; color:#32674e; }
 .kesif-page .kademe:nth-child(2) .sinif-no { color:#69579a; }
@@ -109,14 +110,14 @@ body.kesif-page { --zemin:#faf9f6; --zemin-2:#f0f2f4; --yuzey:#fff; --yuzey-2:#f
  .kesif-page .ust-ic { gap:14px; }
 }
 @media (max-width:760px) {
- .kesif-page .bolum { padding-block:36px; } .kesif-hero-grid { grid-template-columns:1fr; gap:30px; }
+ .kesif-page .bolum { padding-block:36px; } .kesif-hero-grid { grid-template-columns:minmax(0,1fr); gap:30px; }
  .kesif-page .kesif-hero { padding-top:32px; } .kesif-hero h1 { font-size:44px; }
  .kesif-hero-text { font-size:15px; } .kesif-bul { padding:24px; }
  .kesif-istatistik { gap:16px; } .kesif-istatistik div { display:block; } .kesif-istatistik strong { display:block; }
  .kesif-kategori { padding:18px; min-height:215px; } .kesif-adet { float:none; display:block; padding-top:8px; }
  .kesif-kategori h3 { margin-top:12px; font-size:17px; } .kesif-kategori p { font-size:12px; }
  .kesif-araclar { grid-template-columns:1fr; padding:24px; gap:22px; }
- .kesif-library { grid-template-columns:1fr; }
+ .kesif-library { grid-template-columns:minmax(0,1fr); }
  .kesif-sidebar { position:static; padding:12px; }
  #kategori-secimleri { display:flex; flex-wrap:nowrap; overflow:auto; gap:8px; padding-bottom:4px; }
  .kesif-sidebar button { width:auto; flex:none; border:1px solid var(--cizgi); white-space:nowrap; }
