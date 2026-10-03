@@ -77,7 +77,12 @@ async function veri(ad) {
 }
 
 const ortakVeri = Promise.all(['ayarlar.json', 'dersler.json', 'icerikler.json'].map(veri))
-  .then(([ayar, dersler, icerik]) => ({ ayar: ayar || {}, dersler, icerikler: icerik?.icerikler || [] }));
+  .then(([ayar, dersler, icerik]) => ({
+    ayar: ayar || {}, dersler,
+    // Yükleme hatası ile geçerli, boş bir içerik listesini ayır.
+    iceriklerYuklendi: Array.isArray(icerik?.icerikler),
+    icerikler: Array.isArray(icerik?.icerikler) ? icerik.icerikler : []
+  }));
 
 // Mobil menü
 const menuDugme = $('.menu-dugme');

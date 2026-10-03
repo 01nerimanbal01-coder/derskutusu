@@ -12,9 +12,9 @@ function siniflariGoster(dersler, icerikler) {
   alan.replaceChildren(...dersler.kademeler.map((k) => el('div', { sinif: 'kademe' },
     el('h3', { sinif: 'kademe-ad' }, k.ad),
     el('div', { sinif: 'sinif-izgara' }, k.siniflar.map((n) => {
-      const dersSay = dersler.siniflar[n]?.length || 0;
+      const dersSay = new Set([...(dersler.siniflar[n] || []), ...(dersler.secmeli?.[n] || [])]).size;
       const icerikSay = icerikler.filter((i) => Number(i.sinif) === n).length;
-      return el('a', { sinif: 'sinif-kart', href: `sinif.html?no=${n}` },
+      return el('a', { sinif: 'sinif-kart', 'data-renk': window.Kesif?.gradeColor(n) || 'mavi', href: `sinif.html?no=${n}` },
         el('span', { sinif: 'sinif-no' }, String(n)),
         el('span', { sinif: 'sinif-ad' }, `${n}. sınıf`),
         el('span', { sinif: 'sinif-bilgi' }, `${dersSay} ders${icerikSay ? ` · ${icerikSay} içerik` : ''}`),

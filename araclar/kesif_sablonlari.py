@@ -1,6 +1,25 @@
 """Keşif sayfalarının ortak görünümü; içerik kaynaklarını değiştirmez."""
-CSS = '<link rel="stylesheet" href="/kesif.css?v=20261003-preview2">'
-JS = '<script src="/kesif.js?v=20261003-preview2"></script>'
+import re
+
+CSS = '<link rel="stylesheet" href="/kesif.css?v=20261004-duzen1">'
+JS = '<script src="/kesif.js?v=20261004-duzen1"></script>'
+RENK_CSS = '<link rel="stylesheet" href="/renkler.css?v=20261004-duzen1" media="screen">'
+
+
+def renkli_sayfa(html, ad):
+    """Yalnız site çerçevesi: ders içeriği, şekiller ve baskı stilleri korunur."""
+    renk = {
+        'icerikler.html': 'mor', 'planlar.html': 'turuncu',
+        'yazili.html': 'pembe', 'sinav.html': 'pembe',
+        'belgeler.html': 'turkuaz', 'kelime.html': 'lacivert',
+        'arapca.html': 'lacivert', 'kpss.html': 'sari',
+        'tahta.html': 'yesil', 'goruntule.html': 'yesil',
+    }.get(ad, 'mor' if ad.startswith('ozet/') else 'yesil' if ad.startswith('calisma/') else 'mavi')
+    html = re.sub(r'(<body\b[^>]*?)\sdata-site-renk="[^"]*"', r'\1', html, count=1)
+    html = re.sub(r'<body\b', f'<body data-site-renk="{renk}"', html, count=1)
+    if 'href="/renkler.css?' not in html:
+        html = html.replace('</head>', RENK_CSS + '\n</head>')
+    return html
 
 
 def kutuphane_govde(govde):
@@ -25,11 +44,11 @@ def kutuphane_govde(govde):
 
 def kesif_sayfa(html, ad):
     if ad not in ('index.html', 'sinif.html', 'icerikler.html'):
-        return html
+        return renkli_sayfa(html, ad)
     if 'kesif.css?' not in html:
         html = html.replace('</head>', CSS + '\n</head>')
     html = html.replace('<body>', '<body class="kesif-page">')
     if 'src="/kesif.js?' not in html:
         import re
         html = re.sub(r'(<script src="/?ortak\.js[^>]*></script>)', r'\1\n' + JS, html, count=1)
-    return html
+    return renkli_sayfa(html, ad)

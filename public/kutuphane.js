@@ -1,7 +1,6 @@
 // İçerik kütüphanesi: sinif.html (bir sınıfın dersleri) ve icerikler.html (süzgeçli liste).
 // Veriler: veri/dersler.json (sınıf, ders, tür) ve veri/icerikler.json (içerikler).
 
-const RENKLER = ['#2451d6', '#12a150', '#e0662b', '#8b3fd6', '#0e8fa8', '#c2366b', '#b86e00', '#3a5a8c', '#1f9d8b', '#d6453d', '#5b6ee1'];
 const parametre = new URLSearchParams(location.search);
 
 // Ortak içerikler (ör. çalışma kâğıtları) iki kitlede de sayılır ve listelenir.
@@ -38,17 +37,16 @@ function sinifSayfasi({ dersler, icerikler }) {
   $('#yol-sinif').textContent = `${no}. sınıf`;
   $('#aciklama').textContent = `${kademe} ${no}. sınıf: ${liste.length} ders için konu anlatımları, soru çözümleri, videolar ve öğretmen dosyaları.`;
   $('#sinif-gecis').replaceChildren(...Object.keys(dersler.siniflar).map((n) =>
-    el('a', { href: `sinif.html?no=${n}`, 'aria-current': Number(n) === no ? 'page' : null }, `${n}. sınıf`)));
+    el('a', { href: `sinif.html?no=${n}`, 'data-renk': window.Kesif?.gradeColor(n) || 'mavi', 'aria-current': Number(n) === no ? 'page' : null }, `${n}. sınıf`)));
   const buSinif = icerikler.filter((i) => Number(i.sinif) === no);
   const kitleUyar = kitleDenetleyici(dersler);
   const dersKarti = (d, s) => {
     const ad = dersler.dersler[d];
     const ogrenci = buSinif.filter((i) => i.ders === d && kitleUyar(i, 'ogrenci')).length;
     const ogretmen = buSinif.filter((i) => i.ders === d && kitleUyar(i, 'ogretmen')).length;
-    const renkNo = [...d].reduce((sum, c) => sum + c.codePointAt(0), 0);
-    return el('a', { sinif: 'ders-kart', 'data-renk': ['mor', 'yesil', 'turuncu', 'mavi', 'pembe', 'sari'][renkNo % 6], href: `icerikler.html?sinif=${no}&ders=${d}` },
+    return el('a', { sinif: 'ders-kart', 'data-renk': window.Kesif?.subjectColor(d) || 'mavi', href: `icerikler.html?sinif=${no}&ders=${d}` },
       el('div', { sinif: 'ders-kart-ust' },
-        el('span', { sinif: 'ders-harf', style: `background:${RENKLER[renkNo % RENKLER.length]}` }, ad.replace(/^T\.C\. /, '').charAt(0)),
+        el('span', { sinif: 'ders-harf' }, ad.replace(/^T\.C\. /, '').charAt(0)),
         el('h3', {}, ad)),
       el('div', { sinif: 'sayilar' },
         el('span', {}, ogrenci ? `${ogrenci} öğrenci içeriği` : 'Öğrenci içerikleri yakında'),
@@ -197,9 +195,24 @@ function icerikSayfasi({ dersler, icerikler }) {
 }
 
 ortakVeri.then((v) => {
-  if (!v.dersler) {
+  if (!v.dersler || v.iceriklerYuklendi === false) {
     const yer = $('#kartlar') || $('#ders-listesi');
-    yer?.replaceChildren(el('p', { role: 'alert' }, 'Kaynak listesi yüklenemedi. ', el('button', { type: 'button', sinif: 'dugme', onclick: () => location.reload() }, 'Yeniden dene')));
+    if (yer) {
+      yer.hidden = false;
+      yer.replaceChildren(el('div', { role: 'alert', style: 'grid-column: 1 / -1' },
+        el('p', {}, 'Kaynak listesi yüklenemedi. Bağlantınızı kontrol edip yeniden deneyin.'),
+        el('button', { type: 'button', sinif: 'dugme', onclick: () => location.reload() }, 'Yeniden dene')));
+    }
+    for (const secici of ['#s-sinif', '#s-ders', '#s-kitle', '#s-hafta', '#s-tur', '#s-ara', '#s-sirala']) {
+      const alan = $(secici);
+      if (alan) alan.disabled = true;
+    }
+    for (const secici of ['#icerik-yakinda', '#daha-alani', '#secili-suzgecler', '#temizle']) {
+      const alan = $(secici);
+      if (alan) alan.hidden = true;
+    }
+    const sayi = $('#sonuc-sayi');
+    if (sayi) sayi.textContent = '';
     return;
   }
   if ($('#ders-listesi')) sinifSayfasi(v);

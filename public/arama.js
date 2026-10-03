@@ -518,16 +518,20 @@ if (typeof document !== 'undefined') {
     const kutu = $('input', form);
     if (matchMedia('(max-width: 560px)').matches) kutu.placeholder = 'Ara';
     const liste = $('.oneri', form);
-    let secili = -1;
-    const kapat = () => { liste.hidden = true; kutu.setAttribute('aria-expanded', 'false'); secili = -1; kutu.removeAttribute('aria-activedescendant'); };
+    let secili = -1, sira = 0, zaman;
+    const kapat = () => {
+      // Kapatılan veya değişen arama için bekleyen önerileri de iptal et.
+      ++sira; clearTimeout(zaman);
+      liste.hidden = true; kutu.setAttribute('aria-expanded', 'false');
+      secili = -1; kutu.removeAttribute('aria-activedescendant');
+    };
     const isaretle = () => $$('li', liste).forEach((li, i) => { li.setAttribute('aria-selected', String(i === secili)); if (i === secili) li.scrollIntoView({ block: 'nearest' }); });
-    let sira = 0;
     const goster = async () => {
       const q = kutu.value.trim();
       const benim = ++sira;
       if (q.length < 2) { kapat(); return; }
       await dizinHazirla();
-      if (benim !== sira) return;   // eski yazım için gelen sonucu at
+      if (benim !== sira || q !== kutu.value.trim()) return;   // eski veya kapatılmış aramayı gösterme
       const r = Arama.ara(q, { yaziyor: true });
       const ilk = r.sonuclar.slice(0, 7);
       const satirlar = ilk.map(({ b }, i) => el('li', { role: 'option', id: `oneri-${i}`, 'aria-selected': 'false' },
@@ -540,20 +544,23 @@ if (typeof document !== 'undefined') {
       liste.replaceChildren(...satirlar);
       liste.hidden = false;
       kutu.setAttribute('aria-expanded', 'true');
-      secili = -1;
+      secili = -1; kutu.removeAttribute('aria-activedescendant');
     };
-    let zaman;
-    kutu.addEventListener('input', () => { clearTimeout(zaman); zaman = setTimeout(goster, 90); });
+    kutu.addEventListener('input', () => {
+      kapat();
+      if (kutu.value.trim().length >= 2) zaman = setTimeout(goster, 90);
+    });
     kutu.addEventListener('focus', () => { dizinHazirla(); if (kutu.value.trim().length >= 2) goster(); });
     kutu.addEventListener('keydown', (o) => {
       const n = $$('li', liste).length;
       if (o.key === 'ArrowDown' && n && !liste.hidden) { o.preventDefault(); secili = (secili + 1) % n; isaretle(); }
-      else if (o.key === 'ArrowUp' && n && !liste.hidden) { o.preventDefault(); secili = (secili - 1 + n) % n; isaretle(); }
+      else if (o.key === 'ArrowUp' && n && !liste.hidden) { o.preventDefault(); secili = secili <= 0 ? n - 1 : secili - 1; isaretle(); }
       else if (o.key === 'Escape') { kapat(); kutu.blur(); }
       else if (o.key === 'Enter' && secili >= 0 && !liste.hidden) { o.preventDefault(); $$('li a', liste)[secili]?.click(); }
       if (secili >= 0) kutu.setAttribute('aria-activedescendant', `oneri-${secili}`); else kutu.removeAttribute('aria-activedescendant');
     });
     document.addEventListener('click', (o) => { if (!form.contains(o.target)) kapat(); });
+    form.addEventListener('focusout', (o) => { if (!form.contains(o.relatedTarget)) kapat(); });
     form.addEventListener('submit', (o) => { if (!kutu.value.trim()) o.preventDefault(); });
     document.addEventListener('keydown', (o) => {
       if (o.key === '/' && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName) && !o.metaKey && !o.ctrlKey) { o.preventDefault(); kutu.focus(); }

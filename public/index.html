@@ -46,9 +46,10 @@
 }
 </script>
 <link rel="stylesheet" href="stil.css?v=202610021610">
-<link rel="stylesheet" href="/kesif.css?v=20261003-preview2">
+<link rel="stylesheet" href="/kesif.css?v=20261004-duzen1">
+<link rel="stylesheet" href="/renkler.css?v=20261004-duzen1" media="screen">
 </head>
-<body class="kesif-page">
+<body data-site-renk="mavi" class="kesif-page">
 <a class="atla" href="#icerik">İçeriğe geç</a>
 
 <!-- Simge takımı (yerel SVG; dışarıdan yükleme yok) -->
@@ -80,7 +81,7 @@
     </form>
     <button class="menu-dugme" type="button" aria-expanded="false" aria-controls="ana-menu" aria-label="Menüyü aç"><span></span></button>
     <nav class="menu" id="ana-menu" aria-label="Ana menü">
-      <a href="/#kategoriler">Keşfet</a><a href="/#siniflar">Sınıflar</a><a href="/icerikler.html">Kütüphane</a><a href="/#ogretmen">Öğretmen</a><a href="/sinav.html">Sınavlar</a>
+      <a href="/#kategoriler" data-renk="mor">Kaynaklar</a><a href="/#dersler" data-renk="turkuaz">Dersler</a><a href="/#siniflar" data-renk="turuncu">Sınıflar</a><a href="/icerikler.html" data-renk="mavi">Kütüphane</a><a href="/#ogretmen" data-renk="yesil">Öğretmen</a><a href="/sinav.html" data-renk="pembe">Sınavlar</a>
     </nav>
   </div>
 </header>
@@ -90,25 +91,35 @@
     <div class="kap kesif-hero-grid">
       <div>
         <p class="kesif-kicker">5–12. SINIF · ÖĞRENCİ & ÖĞRETMEN</p>
-        <h1>Öğrenmeye bir yer aç.<br><em>Dersin burada.</em></h1>
-        <p class="kesif-hero-text">Konu anlatımları, çalışma kâğıtları ve öğretmen dosyaları. Sınıfını seç, ihtiyacın olan kaynağı bul, dersine odaklan.</p>
+        <h1>Bir konudan başla.<br><em>Bütünü keşfet.</em></h1>
+        <p class="kesif-hero-text">Önce ihtiyacın olan kaynağı seç. İlgili derslere, ardından sınıfının bütün kaynaklarına ulaş.</p>
         <form class="kesif-arama" action="/ara.html" role="search"><label class="gizli" for="kesif-q">Ders veya konu ara</label><input id="kesif-q" name="q" type="search" placeholder="Hangi konuyu arıyorsun?" autocomplete="off"><button class="dugme ana" type="submit">Ara <svg aria-hidden="true"><use href="#s-mercek"/></svg></button></form>
         <div class="kesif-populer"><span>Hızlı erişim:</span><a href="/icerikler.html?sinif=5&amp;ders=matematik">5. sınıf matematik</a><a href="/planlar.html">Günlük planlar</a><a href="/sinav.html">Sınavlar</a></div>
-        <div class="kesif-istatistik"><div><strong>8</strong> sınıf düzeyi</div><div><strong data-kesif-sayi="kaynak">…</strong> kaynak</div><div><strong data-kesif-sayi="konu">…</strong> konu anlatımı</div></div>
+        <nav aria-label="Keşif adımları"><ol class="kesif-rota">
+          <li><a href="#kategoriler" data-renk="mor"><b>1</b> Kaynağını seç</a></li>
+          <li><a href="#dersler" data-renk="turkuaz"><b>2</b> Dersini bul</a></li>
+          <li><a href="#siniflar" data-renk="turuncu"><b>3</b> Bütünü gör</a></li>
+        </ol></nav>
+        <div class="kesif-istatistik"><div><strong data-kesif-sayi="sinif">…</strong> sınıf düzeyi</div><div><strong data-kesif-sayi="kaynak">…</strong> kaynak</div><div><strong data-kesif-sayi="konu">…</strong> konu anlatımı</div></div>
       </div>
-      <form class="kesif-bul" id="hizli-bul" action="/icerikler.html"><p class="ust-baslik">Nereden başlayalım?</p><h2>Ders kutunu aç</h2><p>Üç seçimle aradığın kaynağa ulaş.</p>
+      <form data-renk="mor" class="kesif-bul" id="hizli-bul" action="/icerikler.html"><p class="ust-baslik">Nereden başlayalım?</p><h2>Ders kutunu aç</h2><p>Üç seçimle aradığın kaynağa ulaş.</p>
+        <label>Kaynak türü<select name="tur"><option value="">Bütün kaynaklar</option></select></label>
         <label>Sınıfın<select name="sinif"><option value="">Bütün sınıflar</option></select></label>
         <label>Dersin<select name="ders"><option value="">Bütün dersler</option></select></label>
-        <label>İhtiyacın<select name="tur"><option value="">Bütün kaynaklar</option></select></label>
+
         <button class="dugme ana" type="submit">Kaynakları keşfet <span aria-hidden="true">→</span></button>
       </form>
     </div>
   </section>
-  <section class="bolum" id="kategoriler"><div class="kap"><div class="bolum-bas"><div><p class="ust-baslik">HER DERS İÇİN BİR KUTU</p><h2>Bugün neye ihtiyacın var?</h2></div><a class="tumu" href="/icerikler.html">Tüm kaynaklar ↗</a></div><div class="kesif-kategoriler" id="kesif-kategoriler" aria-label="Kaynak kategorileri"><p role="status">Kaynaklar yükleniyor…</p></div></div></section>
+  <section class="bolum" id="kategoriler"><div class="kap"><div class="bolum-bas"><div><p class="ust-baslik">01 · KAYNAKTAN BAŞLA</p><h2>Bugün neye ihtiyacın var?</h2><p class="kesif-bolum-not">Öğrenmek, pekiştirmek veya derse hazırlanmak için bir kutu aç.</p></div><a class="tumu" href="/icerikler.html">Tüm kaynaklar ↗</a></div><div class="kesif-kategoriler" id="kesif-kategoriler" aria-label="Kaynak kategorileri"><p role="status">Kaynaklar yükleniyor…</p></div></div></section>
+  <section class="bolum koyu-zemin" id="dersler"><div class="kap">
+    <div class="bolum-bas"><div><p class="ust-baslik">02 · DERSLERİ BİR ARADA GÖR</p><h2>Her konu bir dersin parçası</h2><p class="kesif-bolum-not">Dersler alanlarına göre bir arada. Dersini seç, bütün sınıflardaki kaynaklarını gör.</p></div><a class="tumu" href="/icerikler.html">Kütüphaneye git ↗</a></div>
+    <div class="kesif-dersler" id="kesif-dersler"><p role="status">Dersler yükleniyor…</p></div>
+  </div></section>
   <section id="siniflar" class="bolum">
     <div class="kap">
       <div class="bolum-bas">
-        <div><p class="ust-baslik">Sınıflar</p><h2>Sınıfını seç</h2></div>
+        <div><p class="ust-baslik">03 · BÜTÜNE ULAŞ</p><h2>Sınıfının bütün dersleri</h2><p class="kesif-bolum-not">Ortaokuldan liseye; ana dersler, seçmeli dersler ve öğretmen dosyaları.</p></div>
         <a class="tumu" href="icerikler.html">Bütün içerikler<svg><use href="#s-ok"/></svg></a>
       </div>
       <div id="sinif-listesi" class="kademeler"></div>
@@ -122,10 +133,10 @@
         <a class="tumu" href="icerikler.html?kitle=ogretmen">Öğretmen içerikleri<svg><use href="#s-ok"/></svg></a>
       </div>
       <div class="ozellik-izgara">
-        <a class="ozellik" href="icerikler.html?kitle=ogretmen&amp;tur=Y%C4%B1ll%C4%B1k%20plan"><span class="ozellik-simge mavi"><svg><use href="#s-takvim"/></svg></span><h3>Yıllık planlar</h3><p>Güncel öğretim programına göre haftalık dağılımlı yıllık planlar.</p><span class="kart-sayi" data-tur-sayi="Yıllık plan"></span></a>
-        <a class="ozellik" href="icerikler.html?kitle=ogretmen&amp;tur=Yaz%C4%B1l%C4%B1%20senaryosu"><span class="ozellik-simge kirmizi"><svg><use href="#s-kalem"/></svg></span><h3>Ortak yazılılar</h3><p>1. dönem konu-soru dağılım tabloları: hangi öğrenme çıktısından kaç soru çıkacağı.</p><span class="kart-sayi" data-tur-sayi="Yazılı senaryosu"></span></a>
-        <a class="ozellik" href="icerikler.html?kitle=ogretmen&amp;tur=%C3%87al%C4%B1%C5%9Fma%20k%C3%A2%C4%9F%C4%B1d%C4%B1"><span class="ozellik-simge yesil"><svg><use href="#s-kitap"/></svg></span><h3>Çalışma kâğıtları</h3><p>Derste ve evde kullanılabilecek yazdırılabilir etkinlikler.</p><span class="kart-sayi" data-tur-sayi="Çalışma kâğıdı"></span></a>
-        <a class="ozellik" href="planlar.html"><span class="ozellik-simge sari"><svg><use href="#s-onay"/></svg></span><h3>Günlük planlar</h3><p>Okul ve yönetici adları her sayfaya yazılır; tüm yıl ya da ay ay, Word veya PDF.</p><span class="kart-sayi" data-tur-sayi="Ders planı"></span></a>
+        <a class="ozellik" data-renk="mavi" href="icerikler.html?kitle=ogretmen&amp;tur=Y%C4%B1ll%C4%B1k%20plan"><span class="ozellik-simge mavi"><svg><use href="#s-takvim"/></svg></span><h3>Yıllık planlar</h3><p>Güncel öğretim programına göre haftalık dağılımlı yıllık planlar.</p><span class="kart-sayi" data-tur-sayi="Yıllık plan"></span></a>
+        <a class="ozellik" data-renk="pembe" href="icerikler.html?kitle=ogretmen&amp;tur=Yaz%C4%B1l%C4%B1%20senaryosu"><span class="ozellik-simge kirmizi"><svg><use href="#s-kalem"/></svg></span><h3>Ortak yazılılar</h3><p>1. dönem konu-soru dağılım tabloları: hangi öğrenme çıktısından kaç soru çıkacağı.</p><span class="kart-sayi" data-tur-sayi="Yazılı senaryosu"></span></a>
+        <a class="ozellik" data-renk="yesil" href="icerikler.html?kitle=ogretmen&amp;tur=%C3%87al%C4%B1%C5%9Fma%20k%C3%A2%C4%9F%C4%B1d%C4%B1"><span class="ozellik-simge yesil"><svg><use href="#s-kitap"/></svg></span><h3>Çalışma kâğıtları</h3><p>Derste ve evde kullanılabilecek yazdırılabilir etkinlikler.</p><span class="kart-sayi" data-tur-sayi="Çalışma kâğıdı"></span></a>
+        <a class="ozellik" data-renk="turuncu" href="planlar.html"><span class="ozellik-simge sari"><svg><use href="#s-onay"/></svg></span><h3>Günlük planlar</h3><p>Okul ve yönetici adları her sayfaya yazılır; tüm yıl ya da ay ay, Word veya PDF.</p><span class="kart-sayi" data-tur-sayi="Ders planı"></span></a>
       </div>
     </div>
   </section>
@@ -148,7 +159,7 @@
     </div>
   </section>
 
-  <section class="bolum"><div class="kap"><div class="kesif-araclar"><div><p>SINIFTA VE EVDE</p><h2>Derse küçük yardımcılar</h2><p>Anlat, dinle, tekrar et. Dersin akışına uygun aracı aç.</p></div><div class="kesif-arac-links"><a href="/tahta.html">Dijital tahta <span aria-hidden="true">↗</span></a><a href="/belgeler.html">Resmî belgeler <span aria-hidden="true">↗</span></a><a href="/arapca.html">Arapça çalışmaları <span aria-hidden="true">↗</span></a><a href="/kpss.html">KPSS hazırlık <span aria-hidden="true">↗</span></a></div></div></div></section>
+  <section class="bolum" id="araclar"><div class="kap"><div class="kesif-araclar"><div><p>SINIFTA VE EVDE</p><h2>Derse küçük yardımcılar</h2><p>Anlat, dinle, tekrar et. Dersin akışına uygun aracı aç.</p></div><div class="kesif-arac-links"><a data-renk="yesil" href="/tahta.html">Dijital tahta <span aria-hidden="true">↗</span></a><a data-renk="turkuaz" href="/belgeler.html">Resmî belgeler <span aria-hidden="true">↗</span></a><a data-renk="lacivert" href="/arapca.html">Arapça çalışmaları <span aria-hidden="true">↗</span></a><a data-renk="sari" href="/kpss.html">KPSS hazırlık <span aria-hidden="true">↗</span></a></div></div></div></section>
   <section id="sosyal" class="bolum koyu-zemin">
     <div class="kap">
       <div class="bolum-bas">
@@ -211,7 +222,7 @@
 
   <section id="iletisim" class="bolum">
     <div class="kap">
-      <div class="iletisim-kart">
+      <div class="iletisim-kart" data-renk="pembe">
         <div>
           <p class="ust-baslik">İletişim</p>
           <h2>Soru ve önerileriniz için yazın</h2>
@@ -261,9 +272,9 @@
 
 <noscript><p class="kap">Bu sayfadaki bazı içerikler JavaScript ile yüklenir.</p></noscript>
 <script src="ortak.js?v=20261003-preview2"></script>
-<script src="/kesif.js?v=20261003-preview2"></script>
-<script src="akis.js?v=20261003-preview2"></script>
-<script src="arama.js?v=202610021530"></script>
+<script src="/kesif.js?v=20261004-duzen1"></script>
+<script src="akis.js?v=20261004-duzen1"></script>
+<script src="arama.js?v=20261004-duzen1"></script>
 <script src="tahta.js?v=20261003-preview2"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fffb5e8a709947ee9ba14ea753d96275"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
