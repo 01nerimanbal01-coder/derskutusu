@@ -38,6 +38,7 @@ async function run(engine, name, base) {
     await expect(page.locator('.ds')).toBeVisible();
     await expect(page.locator('.ds-progress')).toHaveText('1 / 23 slayt');
     await expect(current().locator('.ozet-ust')).toBeVisible();
+    assert(await current().locator('.ozet-cikti li').first().evaluate(p => parseFloat(getComputedStyle(p).fontSize) >= 24), 'Öğrenme çıktısı tahta için küçük kaldı');
     await action('next').click();
     await expect(page.locator('.ds-progress')).toHaveText('2 / 23 slayt');
     await expect(current().locator('h2')).toContainText('Nokta');
