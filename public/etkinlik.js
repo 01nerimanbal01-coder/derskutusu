@@ -1,8 +1,9 @@
 // Etkileşimli etkinlikler: çoktan seçmeli, doğru-yanlış, eşleştirme, boşluk doldurma, öğretici soru.
 // İşaretlemeyi ozet_uret.py üretir; bu betik yalnız davranışı ekler. Puan yalnız bu sayfada tutulur, hiçbir yere gönderilmez.
 (() => {
-  const kok = document.getElementById('etkinlikler');
-  if (!kok) return;
+  function etkinlikKur(kok) {
+  if (!kok || kok.dataset.etkinlikKuruldu === '1') return;
+  kok.dataset.etkinlikKuruldu = '1';
   const ilkHal = kok.querySelector('.etk-liste').innerHTML;
 
   function kur() {
@@ -127,4 +128,7 @@
 
   kok.querySelector('.etk-sifirla').addEventListener('click', () => { kok.querySelector('.etk-liste').innerHTML = ilkHal; kur(); });
   kur();
+  }
+  window.etkinlikKur = etkinlikKur;
+  etkinlikKur(document.getElementById('etkinlikler'));
 })();

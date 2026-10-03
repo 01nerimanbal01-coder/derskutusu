@@ -11,7 +11,7 @@ from pathlib import Path
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'arama.js': '202610021530', 'kutuphane.js': '202610021610', 'arapca.js': '202610022030'}
+BETIK_SURUMLERI = {'tahta.js': '20261003-1', 'etkinlik.js': '20261003-1', 'arama.js': '202610021530', 'kutuphane.js': '202610021610', 'arapca.js': '202610022030'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]

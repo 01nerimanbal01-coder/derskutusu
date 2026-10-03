@@ -1,0 +1,39 @@
+name: Ders slaytı tarayıcı kontrolü
+
+on:
+  push:
+    branches: [main, 'codex/ders-slayt-*']
+    paths:
+      - 'public/ders-slayt.*'
+      - 'public/tahta.js'
+      - 'public/etkinlik.js'
+      - 'tests/ders-slayt.cjs'
+      - '.github/workflows/slayt-kontrol.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tarayici:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Yalnız test ortamına tarayıcı araçlarını kur
+        run: |
+          npm install --prefix "$RUNNER_TEMP/slayt-qa" --no-save --package-lock=false --ignore-scripts @playwright/test@1.56.1
+          "$RUNNER_TEMP/slayt-qa/node_modules/.bin/playwright" install --with-deps chromium webkit
+      - name: Slayt, etkinlik, kalem, tam ekran ve dar ekranları denetle
+        env:
+          NODE_PATH: ${{ runner.temp }}/slayt-qa/node_modules
+        run: node tests/ders-slayt.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ders-slayt-tarayici-sonuclari
+          path: slayt-test-results/
+          retention-days: 7

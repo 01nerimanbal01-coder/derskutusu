@@ -318,6 +318,9 @@ const Tahta = (() => {
       guncelle();
     });
     const tus = (o) => {
+      // Gizli kalem ve sunumun arkasındaki sayfa kısayollara yanıt vermez.
+      const modal = document.querySelector('dialog[open]');
+      if (!kap.isConnected || kap.closest('[hidden]') || (modal && !modal.contains(kap))) return;
       if (/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName)) return;
       const k = o.key.toLowerCase();
       if ((o.ctrlKey || o.metaKey) && k === 'z') { o.preventDefault(); o.shiftKey ? yinele() : geriAl(); return; }
@@ -455,4 +458,11 @@ if (typeof document !== 'undefined') {
     });
     window.kalemAc = () => ac.click();
   }
+}
+
+// Konu sayfalarındaki sunum, mevcut tahta ve etkinlik davranışlarını yeniden kullanır.
+if (typeof document !== 'undefined' && document.querySelector('article.ozet')) {
+  const ders = document.createElement('script');
+  ders.src = '/ders-slayt.js?v=20261003-1';
+  document.head.append(ders);
 }
