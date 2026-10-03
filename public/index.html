@@ -46,8 +46,9 @@
 }
 </script>
 <link rel="stylesheet" href="stil.css?v=202610021610">
+<link rel="stylesheet" href="/kesif.css?v=20261003-preview2">
 </head>
-<body>
+<body class="kesif-page">
 <a class="atla" href="#icerik">İçeriğe geç</a>
 
 <!-- Simge takımı (yerel SVG; dışarıdan yükleme yok) -->
@@ -79,61 +80,31 @@
     </form>
     <button class="menu-dugme" type="button" aria-expanded="false" aria-controls="ana-menu" aria-label="Menüyü aç"><span></span></button>
     <nav class="menu" id="ana-menu" aria-label="Ana menü">
-      <a href="#siniflar">Sınıflar</a>
-      <a href="icerikler.html">İçerikler</a>
-      <a href="#ogretmen">Öğretmen</a>
-      <a href="belgeler.html">Resmî belgeler</a>
-      <a href="sinav.html">Sınavlar</a>
-      <a href="/kpss.html">KPSS</a>
-      <a href="tahta.html">Tahta</a>
-      <a href="#sosyal">Sosyal medya</a>
-      <a href="#iletisim">İletişim</a>
-      <span class="menu-sosyal">
-        <a data-sosyal="youtube" aria-label="YouTube" target="_blank" rel="noopener" hidden><svg><use href="#s-youtube"/></svg></a>
-        <a data-sosyal="instagram" aria-label="Instagram" target="_blank" rel="noopener" hidden><svg><use href="#s-instagram"/></svg></a>
-        <a data-sosyal="facebook" aria-label="Facebook" target="_blank" rel="noopener" hidden><svg><use href="#s-facebook"/></svg></a>
-      </span>
+      <a href="/#kategoriler">Keşfet</a><a href="/#siniflar">Sınıflar</a><a href="/icerikler.html">Kütüphane</a><a href="/#ogretmen">Öğretmen</a><a href="/sinav.html">Sınavlar</a>
     </nav>
   </div>
 </header>
 
 <main id="icerik">
-  <section class="kahraman">
-    <div class="kap kahraman-ic">
-      <div class="kahraman-metin">
-        <p class="ust-baslik">Öğrenciler ve öğretmenler için</p>
-        <h1>5'ten 12. sınıfa <span class="vurgulu">bütün dersler</span> tek yerde.</h1>
-        <p class="giris-metin" data-ayar="aciklama">Konu anlatımları, soru çözümleri ve kısa videolar; öğretmenler için yıllık planlar, yazılı soruları ve çalışma kâğıtları.</p>
-        <div class="dugmeler">
-          <a class="dugme ana" href="#siniflar">Sınıfını seç<svg><use href="#s-ok"/></svg></a>
-          <a class="dugme" href="#ogretmen"><svg><use href="#s-kalem"/></svg>Öğretmen köşesi</a>
-        </div>
-        <ul class="kahraman-ozet">
-          <li><strong>8</strong> sınıf</li>
-          <li><strong data-sayi="ders">14</strong> ders</li>
-          <li><strong>Öğretmen</strong> dosyaları</li>
-        </ul>
+  <section class="kesif-hero">
+    <div class="kap kesif-hero-grid">
+      <div>
+        <p class="kesif-kicker">5–12. SINIF · ÖĞRENCİ & ÖĞRETMEN</p>
+        <h1>Öğrenmeye bir yer aç.<br><em>Dersin burada.</em></h1>
+        <p class="kesif-hero-text">Konu anlatımları, çalışma kâğıtları ve öğretmen dosyaları. Sınıfını seç, ihtiyacın olan kaynağı bul, dersine odaklan.</p>
+        <form class="kesif-arama" action="/ara.html" role="search"><label class="gizli" for="kesif-q">Ders veya konu ara</label><input id="kesif-q" name="q" type="search" placeholder="Hangi konuyu arıyorsun?" autocomplete="off"><button class="dugme ana" type="submit">Ara <svg aria-hidden="true"><use href="#s-mercek"/></svg></button></form>
+        <div class="kesif-populer"><span>Hızlı erişim:</span><a href="/icerikler.html?sinif=5&amp;ders=matematik">5. sınıf matematik</a><a href="/planlar.html">Günlük planlar</a><a href="/sinav.html">Sınavlar</a></div>
+        <div class="kesif-istatistik"><div><strong>8</strong> sınıf düzeyi</div><div><strong data-kesif-sayi="kaynak">…</strong> kaynak</div><div><strong data-kesif-sayi="konu">…</strong> konu anlatımı</div></div>
       </div>
-      <div class="sahne" aria-hidden="true">
-        <div class="defter">
-          <div class="defter-ust"><i></i><i></i><i></i><b>Soru 1</b></div>
-          <p class="formul">a² + b² = c²</p>
-          <svg class="ucgen" viewBox="0 0 250 132">
-            <path d="M20 115 H190 V20 Z" fill="var(--vurgu-acik)" stroke="var(--vurgu)" stroke-width="2.5" stroke-linejoin="round"/>
-            <path d="M176 115 V101 H190" fill="none" stroke="var(--vurgu)" stroke-width="2"/>
-            <text x="100" y="128" text-anchor="middle">a = 8</text>
-            <text x="200" y="72">b = 6</text>
-            <text x="92" y="60" text-anchor="end" class="sicak">c = ?</text>
-          </svg>
-          <div class="cubuklar"><i style="--b:38%"></i><i style="--b:62%"></i><i style="--b:48%"></i><i style="--b:84%"></i><i style="--b:70%"></i></div>
-        </div>
-        <span class="rozet-kart r1"><svg><use href="#s-kitap"/></svg>Konu anlatımı</span>
-        <span class="rozet-kart r2"><svg><use href="#s-onay"/></svg>Soru çözümü</span>
-        <span class="rozet-kart r3"><svg><use href="#s-oynat"/></svg>Kısa video</span>
-      </div>
+      <form class="kesif-bul" id="hizli-bul" action="/icerikler.html"><p class="ust-baslik">Nereden başlayalım?</p><h2>Ders kutunu aç</h2><p>Üç seçimle aradığın kaynağa ulaş.</p>
+        <label>Sınıfın<select name="sinif"><option value="">Bütün sınıflar</option></select></label>
+        <label>Dersin<select name="ders"><option value="">Bütün dersler</option></select></label>
+        <label>İhtiyacın<select name="tur"><option value="">Bütün kaynaklar</option></select></label>
+        <button class="dugme ana" type="submit">Kaynakları keşfet <span aria-hidden="true">→</span></button>
+      </form>
     </div>
   </section>
-
+  <section class="bolum" id="kategoriler"><div class="kap"><div class="bolum-bas"><div><p class="ust-baslik">HER DERS İÇİN BİR KUTU</p><h2>Bugün neye ihtiyacın var?</h2></div><a class="tumu" href="/icerikler.html">Tüm kaynaklar ↗</a></div><div class="kesif-kategoriler" id="kesif-kategoriler" aria-label="Kaynak kategorileri"><p role="status">Kaynaklar yükleniyor…</p></div></div></section>
   <section id="siniflar" class="bolum">
     <div class="kap">
       <div class="bolum-bas">
@@ -177,6 +148,7 @@
     </div>
   </section>
 
+  <section class="bolum"><div class="kap"><div class="kesif-araclar"><div><p>SINIFTA VE EVDE</p><h2>Derse küçük yardımcılar</h2><p>Anlat, dinle, tekrar et. Dersin akışına uygun aracı aç.</p></div><div class="kesif-arac-links"><a href="/tahta.html">Dijital tahta <span aria-hidden="true">↗</span></a><a href="/belgeler.html">Resmî belgeler <span aria-hidden="true">↗</span></a><a href="/arapca.html">Arapça çalışmaları <span aria-hidden="true">↗</span></a><a href="/kpss.html">KPSS hazırlık <span aria-hidden="true">↗</span></a></div></div></div></section>
   <section id="sosyal" class="bolum koyu-zemin">
     <div class="kap">
       <div class="bolum-bas">
@@ -289,9 +261,10 @@
 
 <noscript><p class="kap">Bu sayfadaki bazı içerikler JavaScript ile yüklenir.</p></noscript>
 <script src="ortak.js?v=202610020942"></script>
-<script src="akis.js?v=202610020942"></script>
+<script src="/kesif.js?v=20261003-preview2"></script>
+<script src="akis.js?v=20261003-preview2"></script>
 <script src="arama.js?v=202610021530"></script>
-<script src="tahta.js?v=20261003-1"></script>
+<script src="tahta.js?v=20261003-preview2"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fffb5e8a709947ee9ba14ea753d96275"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

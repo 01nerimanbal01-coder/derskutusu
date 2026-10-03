@@ -1,0 +1,36 @@
+name: Kategori önizlemesi ve bütün derslerin kapsam kontrolü
+on:
+  push:
+    branches: ['codex/kategori-onizleme-*']
+permissions:
+  contents: read
+jobs:
+  onizleme:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test tarayıcılarını kur
+        run: |
+          npm install --prefix "$RUNNER_TEMP/kesif-qa" --no-save --package-lock=false --ignore-scripts @playwright/test@1.56.1
+          "$RUNNER_TEMP/kesif-qa/node_modules/.bin/playwright" install --with-deps chromium webkit
+      - name: Her dersin içeriğini ve kategori sayfalarını denetle
+        env:
+          NODE_PATH: ${{ runner.temp }}/kesif-qa/node_modules
+        run: node tests/kesif-kapsam.cjs
+      - name: Etkinlik, kalem, devam etme ve tam ekran regresyonu
+        if: always()
+        env:
+          NODE_PATH: ${{ runner.temp }}/kesif-qa/node_modules
+        run: node tests/ders-slayt.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: kategori-ve-tam-ders-kontrolu
+          path: |
+            kesif-test-results/
+            slayt-test-results/
+          retention-days: 14

@@ -40,7 +40,7 @@ function sonEklenenler(icerikler, dersler) {
 function icerikKarti(i, dersler) {
   const dersAd = dersler?.dersler?.[i.ders] || i.ders;
   const adres = i.dosya || i.baglanti;
-  return el('article', { sinif: 'kart' },
+  return el('article', { sinif: 'kart', 'data-renk': window.Kesif?.category(i.tur).color || 'mavi' },
     el('div', { sinif: 'ust-bilgi' },
       i.sinif && el('span', { sinif: 'etiket' }, `${i.sinif}. sınıf`),
       dersAd && el('span', { sinif: 'etiket tur' }, dersAd),

@@ -27,7 +27,7 @@ async function run(engine, name, base) {
   const ok = text => { record.checks.push(text); console.log(name + ': ' + text); };
   const action = name => page.locator('.ds [data-action="' + name + '"]');
   const current = () => page.locator('.ds-slide:not([hidden])');
-  const session = () => page.evaluate(() => JSON.parse(sessionStorage.getItem('derskutusu:slayt:v1:' + location.pathname)));
+  const session = () => page.evaluate(() => JSON.parse(sessionStorage.getItem('derskutusu:slayt:v2:' + location.pathname)));
   const inkPixels = () => page.locator('.ds-ink canvas').first().evaluate(c => {
     const data = c.getContext('2d').getImageData(0, 0, c.width, c.height).data;
     let n = 0; for (let i = 3; i < data.length; i += 4) if (data[i]) n++; return n;
@@ -36,7 +36,10 @@ async function run(engine, name, base) {
     await page.goto(base + '/ozet/5-matematik-hafta-1.html');
     await page.locator('#ders-slayt-ac').click();
     await expect(page.locator('.ds')).toBeVisible();
-    await expect(page.locator('.ds-progress')).toHaveText('1 / 11 slayt');
+    await expect(page.locator('.ds-progress')).toHaveText('1 / 23 slayt');
+    await expect(current().locator('.ozet-ust')).toBeVisible();
+    await action('next').click();
+    await expect(page.locator('.ds-progress')).toHaveText('2 / 23 slayt');
     await expect(current().locator('h2')).toContainText('Nokta');
     assert(await current().locator('.bolum-metin p').first().evaluate(p => parseFloat(getComputedStyle(p).fontSize) >= 24), 'Konu metni tahta için küçük kaldı');
     const hidden = await current().locator('[hidden]').count();
@@ -44,7 +47,8 @@ async function run(engine, name, base) {
     assert((await current().locator('[hidden]').count()) < hidden);
     const firstSet = (await session()).ids;
     await page.screenshot({ path: path.join(results, name + '-desktop.png') });
-    ok('Konu açılışı ve adım adım gösterim');
+    ok('Giriş, kazanımlar, konu açılışı ve adım adım gösterim');
+    while (await action('reveal').isEnabled()) await action('next').click();
 
     await action('ink').click();
     await expect(page.locator('.ds-ink')).toBeVisible();
@@ -66,7 +70,7 @@ async function run(engine, name, base) {
 
     await action('restart').click(); assert.deepEqual((await session()).ids, firstSet);
     await action('ink').click(); assert.equal(await inkPixels(), 0); await action('ink').click();
-    await expect(page.locator('.ds-progress')).toHaveText('1 / 11 slayt');
+    await expect(page.locator('.ds-progress')).toHaveText('1 / 23 slayt');
     ok('Aynı sette yeniden başlatma çizimleri sıfırlar');
 
     await action('fullscreen').click();
@@ -87,7 +91,7 @@ async function run(engine, name, base) {
     }
     ok('Tam ekran ve güvenli çıkış: ' + record.fullscreen);
 
-    await page.locator('.ds select').selectOption('questions');
+    await page.locator('.ds [data-control="mode"]').selectOption('questions');
     const seen = new Set(), types = new Set();
     let answeredId = null;
     for (let round = 0; round < 4; round++) {
@@ -135,8 +139,8 @@ async function run(engine, name, base) {
         if (i + 1 < ids.length) await action('next').click();
       }
       // Mode switches keep answers and the selected question set.
-      await page.locator('.ds select').selectOption('lesson');
-      await page.locator('.ds select').selectOption('questions');
+      await page.locator('.ds [data-control="mode"]').selectOption('lesson');
+      await page.locator('.ds [data-control="mode"]').selectOption('questions');
       assert.deepEqual((await session()).ids, ids);
       if (answeredId && ids.includes(answeredId)) await expect(page.locator('.ds-slide[data-slide="' + answeredId + '"] .etk-puan')).toContainText('1 / 1 doğru');
       await action('restart').click();
@@ -165,7 +169,8 @@ async function run(engine, name, base) {
       await action('restart').tap();
       const stage = await page.locator('.ds-stage').boundingBox(); assert(stage.height > 100);
       assert(await page.locator('.ds-shell').evaluate(el => el.scrollWidth <= el.clientWidth + 1));
-      await action('next').tap(); await expect(page.locator('.ds-progress')).toHaveText('2 / 4 slayt');
+      for (let n = 0; n < 20 && (await session()).index === 0; n++) await action('next').tap();
+      await expect(page.locator('.ds-progress')).toHaveText('2 / 4 slayt');
       await page.screenshot({ path: path.join(results, name + '-' + width + '.png') });
     }
     ok('768/360 piksel ekran ve dokunma ile gezinme');
