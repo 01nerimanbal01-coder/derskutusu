@@ -4,7 +4,7 @@
 İçerik JSON'u (DKOZET yazar; yalnız MEB kitabındaki bilgiler, özgün):
   sinif, ders, hafta, tarih, konu, ciktilar[], hatirla[] (kısa bilgi maddeleri),
   sorular[]: ortak alanlar {tur, duzey: hatirla|uygula|ust, genislik: yarim|tam, soru, gorsel?(SVG)}
-    coktan   {secenekler[4], dogru}             dy       {ifadeler[{metin, dogru}]}
+    coktan   {secenekler[4 veya 5], dogru}             dy       {ifadeler[{metin, dogru}]}
     bosluk   {cumleler[{metin "___", cevap}], kelimeler?: true, fazla?[]}
     eslestir {ciftler[[sol, sag]]}               kisa/acik {cevap, satir}
     tablo    {basliklar[], satirlar[[hücre | {"b": cevap}]]}
@@ -117,8 +117,9 @@ def soru_html(s, no, ad):
     gorsel = f'<div class="ck-gorsel">{s["gorsel"]}</div>' if s.get('gorsel') else ''
     govde = ''
     if t == 'coktan':
+        # Codex: ortaöğretimin beş seçeneği E harfiyle de üretilebilir.
         govde = '<ol class="ck-sec">' + ''.join(
-            f'<li class="{"dogru" if i == s["dogru"] else ""}"><b>{"ABCD"[i]}</b><span>{sembol(x)}</span></li>' for i, x in enumerate(s['secenekler'])) + '</ol>'
+            f'<li class="{"dogru" if i == s["dogru"] else ""}"><b>{"ABCDE"[i]}</b><span>{sembol(x)}</span></li>' for i, x in enumerate(s['secenekler'])) + '</ol>'
     elif t == 'dy':
         govde = '<table class="ck-dy"><tr class="ck-dy-bas"><td></td><td class="k">D</td><td class="k">Y</td></tr>' + ''.join(
             f'<tr><td>{sembol(i["metin"])}</td><td class="k"><span class="ck-kutu">{cvp("✓") if i["dogru"] else ""}</span></td>'
