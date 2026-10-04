@@ -58,8 +58,14 @@ let base;
         await page.locator('#ana-menu a[href="/#dersler"]').tap();
         await expect(page.locator('.menu-dugme')).toHaveAttribute('aria-expanded','false');
         assert(new URL(page.url()).hash==='#dersler');
-        await page.locator('.kesif-ders-baglari a').first().focus();
-        assert(await page.locator('.kesif-ders-baglari a').first().evaluate(n=>getComputedStyle(n).outlineStyle!=='none'),'Keyboard focus missing');
+        const firstSubject=page.locator('.kesif-ders-baglari a').first();
+        await firstSubject.focus();
+        // A touch followed by focus() retains pointer modality. Exercise real keyboard navigation.
+        await page.keyboard.press('Tab');
+        await expect(page.locator('.kesif-ders-baglari a').nth(1)).toBeFocused();
+        await page.keyboard.press('Shift+Tab');
+        await expect(firstSubject).toBeFocused();
+        assert(await firstSubject.evaluate(n=>n.matches(':focus-visible')&&getComputedStyle(n).outlineStyle!=='none'),'Keyboard focus missing');
         await page.keyboard.press('Enter');
         await expect(page.locator('#s-ders')).toHaveValue('matematik');
         report.checks.push({browser:name,check:'touch menu, keyboard subject navigation',status:'passed'});
