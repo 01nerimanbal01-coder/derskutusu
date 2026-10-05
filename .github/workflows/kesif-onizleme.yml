@@ -26,6 +26,7 @@ jobs:
           node tests/ana-sayfa.cjs
           node tests/arama-oneri.cjs
           node tests/katalog-yukleme.cjs
+          node tests/sosyal-kuyruk.cjs
       - name: Site genelinde renk, gezinme ve ekran boyutları
         env:
           NODE_PATH: ${{ runner.temp }}/kesif-qa/node_modules

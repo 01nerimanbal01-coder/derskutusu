@@ -23,6 +23,13 @@ Hesap açma, giriş ve anahtar/şifre girme işlerini siz yaparsınız. Anahtarl
 - `public/veri/youtube.json`, `instagram.json`: `araclar/akis_guncelle.py` üretir; elle değiştirilmez.
 - `public/gizlilik.html` (gizlilik ve çerezler), `404.html`, `robots.txt`, `sitemap.xml`, simgeler ve paylaşım görseli (`paylasim.png`).
 
+## Sosyal medya afişleri ve paylaşım kuyruğu
+- `sosyal/bilgiler.json`: "Bunu biliyor muydunuz?" kartları (kimlik, özet dosyası, başlık, iki paragraf, altyazı cümlesi). Her kart `araclar/ozetler/` içindeki bir haftalık özetten alınır; uydurma bilgi girilmez.
+- `python3 araclar/sosyal_uret.py`: görseli olmayan kartları 1080×1350 PNG olarak `public/sosyal/` altına çizer (Node Playwright + Chromium; Montserrat yazı tipi ilk çalışmada `araclar/sosyal_font/` içine iner). `--hepsi` bütün kartları yeniden çizer, `--sadece bilgi-10-kimya-1` tek kartı çizer.
+- `python3 araclar/sosyal_uret.py --kuyruk 2026-10-06T12:30`: kuyrukta olmayan kartları verilen andan başlayarak günde iki paylaşım (12.30 ve 18.30 TSİ) olacak biçimde `sosyal/kuyruk.json` dosyasına ekler; altyazı ve etiketler kendiliğinden üretilir.
+- `sosyal/kuyruk.json`: paylaşım kuyruğu. GitHub 15 dakikada bir (`.github/workflows/sosyal.yml`) zamanı gelen ilk gönderiyi `FB_PAGE_TOKEN` anahtarıyla Facebook sayfasına ve Instagram'a gönderir; anahtar girilmemişse hiçbir şey göndermez. Elle paylaşılan gönderinin `durum` alanına kısa not yazılır, böylece bir daha gönderilmez.
+- `node tests/sosyal-kuyruk.cjs`: kuyruk, kartlar, görseller ve özet dosyalarının birbirini tuttuğunu denetler.
+
 ## Instagram paylaşımlarının kendiliğinden gelmesi (isteğe bağlı)
 Bu adım yapılmazsa Instagram gönderileri siteye bağlantılarıyla tek tek eklenir.
 1. developers.facebook.com'da ücretsiz bir uygulama oluşturun. Uygulamaya **Instagram** ürününü ekleyin, "Instagram girişiyle API kurulumu" bölümünden @derskutusuinfo hesabını bağlayın ve **erişim anahtarı** oluşturun.
