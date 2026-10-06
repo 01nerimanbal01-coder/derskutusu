@@ -12,7 +12,7 @@ from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'ortak.js': '20261006-1', 'tahta.js': '20261006-1', 'etkinlik.js': '20261003-1', 'arama.js': '20261004-duzen1', 'kutuphane.js': '20261004-duzen1', 'arapca.js': '202610060640'}
+BETIK_SURUMLERI = {'ortak.js': '20261006-1', 'tahta.js': '20261006-1', 'etkinlik.js': '20261003-1', 'arama.js': '20261004-duzen1', 'kutuphane.js': '20261006-1', 'arapca.js': '202610061430'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]

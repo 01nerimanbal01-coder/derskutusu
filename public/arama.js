@@ -356,9 +356,10 @@ const Arama = (() => {
     const ipucuSiniflar = ipucuSinif ? [ipucuSinif] : s.niyetler.find((n) => n.siniflar)?.siniflar;
     const turN = turNiyetleri(s);
     const grupVar = s.niyetler.some((n) => n.grup && n.grup !== 'plan' || n.gruplar || n.ozel);
+    const kpssSorgusu = s.serbest.some((q) => q.startsWith('kpss'));
     const sonuc = [];
     for (const b of DIZIN.kayitlar) {
-      if (s.serbest.includes('kpss') && !b.a.baslik.includes('kpss')) continue;
+      if (kpssSorgusu && !b.a.baslik.includes('kpss')) continue;
       let p = 0;
       if (b.tip === 'sayfa' && b.alt) {
         // Sayfa kısayolları yalnız sınıf/ders sorulunca.

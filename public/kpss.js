@@ -25,10 +25,10 @@
     const cards = $$('[data-module]'); let completed = 0;
     cards.forEach(card => {
       const r = state.modules[card.dataset.module];
-      if (!r || r.version !== 1) return;
+      if (!r || r.version !== Number(card.dataset.version || 1)) return;
       const parts = [];
       if (r.learned) parts.push('Konu çalışıldı');
-      if (r.full && r.full.total === 10 && Number.isInteger(r.full.correct)) {
+      if (r.full && r.full.total === Number(card.dataset.total || 10) && [r.full.correct, r.full.wrong, r.full.blank].every(Number.isInteger)) {
         completed++;
         parts.push(`Son tam test: ${r.full.correct} doğru · ${r.full.wrong} yanlış · ${r.full.blank} boş`);
       }

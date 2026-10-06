@@ -134,7 +134,7 @@ function icerikSayfasi({ dersler, icerikler }) {
       secimler.replaceChildren(...Object.entries(f).filter(([, deger]) => deger).map(([ad, deger]) => {
         const metin = ad === 'ara' ? deger : alan[ad].selectedOptions[0].textContent;
         return el('button', { type: 'button', sinif: 'secili-suzgec',
-          'aria-label': `${adlar[ad]} seçimini kaldır: ${metin}`, onclick: () => secimiKaldir(ad) },
+          'aria-label': `${adlar[ad]}: ${metin}, seçimi kaldır`, onclick: () => secimiKaldir(ad) },
           el('span', {}, `${adlar[ad]}: ${metin}`), el('span', { 'aria-hidden': 'true' }, '×'));
       }));
       secimler.hidden = !secili;
