@@ -181,7 +181,8 @@ def tahmini_boy(s):
         m = re.search(r'viewBox="0 0 ([\d.]+) ([\d.]+)"', s['gorsel'])
         g, y = (float(m.group(1)), float(m.group(2))) if m else (4, 3)
         boy += min(40, 88 * y / g) + 3
-    boy += {'coktan': 11 if max(len(x) for x in s.get('secenekler', ['']) ) < 22 else 20,
+    # İki sütunlu şık ızgarası: 4 şık 2 satır, 5 şık 3 satır.
+    boy += {'coktan': (5.5 if max(len(x) for x in s.get('secenekler', [''])) < 22 else 10) * ((len(s.get('secenekler', [''])) + 1) // 2),
             'dy': 7 + 6.2 * len(s.get('ifadeler', [])), 'bosluk': 9 + 6.4 * len(s.get('cumleler', [])),
             'eslestir': 7.5 * len(s.get('ciftler', [])), 'kisa': 6 * s.get('satir', 2), 'acik': 6 * s.get('satir', 3),
             'tablo': 7.5 * (len(s.get('satirlar', [])) + 1), 'siralama': 6.2 * len(s.get('ogeler', [])),

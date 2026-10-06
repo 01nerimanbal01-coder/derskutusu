@@ -20,14 +20,14 @@ ARACLAR = Path(__file__).resolve().parent
 PUBLIC = ARACLAR.parent / 'public'
 _spec = importlib.util.spec_from_file_location('sayfa_uret', ARACLAR / 'sayfa_uret.py')
 _sayfa = importlib.util.module_from_spec(_spec)
-_spec.loader.exec_module(_sayfa)          # iç sayfaları da yeniler (idempotent)
+_spec.loader.exec_module(_sayfa)          # yalnız işlevler; iç sayfaları main() yeniler
 
 KAR = re.compile(r'\{(aci|olcu|dogru|isin|parca|uzunluk|us|kesir|kok|koyu|ar):([^{}]+)\}')
 SEMBOL = {  # MEB 5. sınıf matematik programındaki gösterimler (⊥, //, AB doğrusu, [AB], |AB|, [AB, m(ABC), şapkalı ABC)
-    'aci': '<span class="s-aci" role="img" aria-label="{0} açısı">{0}</span>',
-    'olcu': 'm(<span class="s-aci" role="img" aria-label="{0} açısı">{0}</span>)',
-    'dogru': '<span class="s-dogru" role="img" aria-label="{0} doğrusu">{0}</span>',
-    'isin': '[{0}', 'parca': '[{0}]', 'uzunluk': '|{0}|',
+    'aci': '<span class="s-aci" role="img" aria-label="{1} açısı">{0}</span>',
+    'olcu': 'm(<span class="s-aci" role="img" aria-label="{1} açısı">{0}</span>)',
+    'dogru': '<span class="s-dogru" role="img" aria-label="{1} doğrusu">{0}</span>',
+    'isin': '[{0}', 'parca': '[{0}]', 'uzunluk': '\ue000{0}\ue000',   # çubuklar e() sonunda '|' olur; kesir/kök/üs ayırıcısıyla karışmaz
     'koyu': '<b>{0}</b>',   # olumsuz kökteki vurgu: {koyu:değildir}
     'ar': '<bdi lang="ar" dir="rtl" style="font-size:1.3em;line-height:1.8">{0}</bdi>',
 }
@@ -53,6 +53,8 @@ def _etiket(ic):
                 self.atla += 1
             elif (ad := dict(attrs).get('aria-label')):
                 self.parcalar.append(ad); self.atla = 1
+            elif tag == 'sup':
+                self.parcalar.append(' üssü ')
         def handle_endtag(self, tag):
             if self.atla: self.atla -= 1
         def handle_startendtag(self, tag, attrs):
@@ -85,10 +87,10 @@ def e(metin):
     ozel = {'us': _us, 'kesir': _kesir, 'kok': _kok}
     # İçteki gösterim önce çözülür: kesir içindeki kök ve kök içindeki üs korunur.
     while KAR.search(metin):
-        metin = KAR.sub(lambda m: ozel[m.group(1)](m.group(2)) if m.group(1) in ozel else SEMBOL[m.group(1)].format(m.group(2)), metin)
+        metin = KAR.sub(lambda m: ozel[m.group(1)](m.group(2)) if m.group(1) in ozel else SEMBOL[m.group(1)].format(m.group(2), _etiket(m.group(2))), metin)
     if re.search(r'\{[a-z]+:[^{}\s]', metin):   # yanlış yazılmış gösterim ({kesr:3|4}) düz metin olarak sayfaya çıkmasın
         raise ValueError('Çözülmemiş gösterim: ' + metin[:120])
-    return metin
+    return metin.replace('\ue000', '|')
 KUTU = {'dikkat': 'Dikkat', 'bilgi': 'Bilgi', 'kural': 'Kural', 'tanim': 'Tanım', 'ipucu': 'İpucu', 'hatirla': 'Hatırla'}
 SIMGE = {  # 24×24 çizgi simgeleri (renk: currentColor)
     'bilgi': '<circle cx="12" cy="12" r="9.5"/><path d="M12 11v6"/><circle cx="12" cy="7.6" r=".6" fill="currentColor"/>',
@@ -241,6 +243,7 @@ def sayfa_uret(o, dersler, icerikler):
 
 
 def main():
+    _sayfa.main()   # iç sayfalar da yenilenir (idempotent)
     dersler = json.loads((PUBLIC / 'veri' / 'dersler.json').read_text(encoding='utf-8'))
     veri = json.loads((PUBLIC / 'veri' / 'icerikler.json').read_text(encoding='utf-8'))
     icerikler = [i for i in veri['icerikler'] if i.get('tur') != 'Konu anlatımı' or not str(i.get('goruntule', '')).startswith('ozet/')]

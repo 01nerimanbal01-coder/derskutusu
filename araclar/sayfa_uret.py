@@ -444,22 +444,28 @@ GOVDE['arapca.html'] = ('Arapça harf ve kelime çalışması', '28 harf ve 48 k
 
 GOVDE['sinav.html'] = ('Sınavlar: LGS ve YKS', 'LGS ve YKS: oturumlar, testler, soru sayıları ve süreler; çıkmış sorular, kılavuzlar ve hazırlık kaynakları.', _sinav_govde(), ())
 
-for ad, (baslik, aciklama, govde, betikler) in GOVDE.items():
-    (PUBLIC / ad).write_text(sayfa(ad, baslik, aciklama, govde, betikler), encoding='utf-8')
+def main():
+    """Sabit iç sayfaları yazar. Yalnız doğrudan çalıştırılınca ya da ozet_uret.main() çağırınca; içe aktarma dosya yazmaz."""
+    for ad, (baslik, aciklama, govde, betikler) in GOVDE.items():
+        (PUBLIC / ad).write_text(sayfa(ad, baslik, aciklama, govde, betikler), encoding='utf-8')
 
-# Gizlilik ve 404: mevcut gövdeleri korunur, üst/alt yenilenir
-for ad, baslik, aciklama, kanonik in [('gizlilik.html', 'Gizlilik ve çerezler', 'Ders Kutusu gizlilik ve çerez bilgilendirmesi.', True),
-                                      ('telif.html', 'Telif hakları ve kullanım koşulları', 'Ders Kutusu içeriklerinin telif hakları ve kullanım koşulları.', True),
-                                      ('404.html', 'Sayfa bulunamadı', 'Aradığınız sayfa bulunamadı.', False)]:
-    eski = (PUBLIC / ad).read_text(encoding='utf-8')
-    govde = eski[eski.index('<main'):eski.index('</main>')]
-    govde = govde[govde.index('>') + 1:].strip('\n')
-    if 'class="metin-sayfa"' not in govde:
-        govde = f'<div class="metin-sayfa">\n{govde}\n</div>'
-    betik = ''
-    if '<script>' in eski:
-        betik = eski[eski.index('<script>'):eski.index('</script>') + len('</script>')]
-    html = sayfa(ad, baslik, aciklama, govde, kanonik=kanonik).replace('</body>', (betik + '\n' if betik else '') + '</body>')
-    (PUBLIC / ad).write_text(html, encoding='utf-8')
+    # Gizlilik ve 404: mevcut gövdeleri korunur, üst/alt yenilenir
+    for ad, baslik, aciklama, kanonik in [('gizlilik.html', 'Gizlilik ve çerezler', 'Ders Kutusu gizlilik ve çerez bilgilendirmesi.', True),
+                                          ('telif.html', 'Telif hakları ve kullanım koşulları', 'Ders Kutusu içeriklerinin telif hakları ve kullanım koşulları.', True),
+                                          ('404.html', 'Sayfa bulunamadı', 'Aradığınız sayfa bulunamadı.', False)]:
+        eski = (PUBLIC / ad).read_text(encoding='utf-8')
+        govde = eski[eski.index('<main'):eski.index('</main>')]
+        govde = govde[govde.index('>') + 1:].strip('\n')
+        if 'class="metin-sayfa"' not in govde:
+            govde = f'<div class="metin-sayfa">\n{govde}\n</div>'
+        betik = ''
+        if '<script>' in eski:
+            betik = eski[eski.index('<script>'):eski.index('</script>') + len('</script>')]
+        html = sayfa(ad, baslik, aciklama, govde, kanonik=kanonik).replace('</body>', (betik + '\n' if betik else '') + '</body>')
+        (PUBLIC / ad).write_text(html, encoding='utf-8')
 
-print('üretildi:', ', '.join([*GOVDE, 'gizlilik.html', 'telif.html', '404.html']))
+    print('üretildi:', ', '.join([*GOVDE, 'gizlilik.html', 'telif.html', '404.html']))
+
+
+if __name__ == '__main__':
+    main()
