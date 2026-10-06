@@ -4,7 +4,7 @@
 İçerik JSON'u (DKOZET yazar; yalnız MEB kitabındaki bilgiler, özgün):
   sinif, ders, hafta, tarih, konu, ciktilar[], hatirla[] (kısa bilgi maddeleri),
   sorular[]: ortak alanlar {tur, duzey: hatirla|uygula|ust, genislik: yarim|tam, soru, gorsel?(SVG)}
-    coktan   {secenekler[4], dogru}             dy       {ifadeler[{metin, dogru}]}
+    coktan   {secenekler[4 veya 5], dogru}             dy       {ifadeler[{metin, dogru}]}
     bosluk   {cumleler[{metin "___", cevap}], kelimeler?: true, fazla?[]}
     eslestir {ciftler[[sol, sag]]}               kisa/acik {cevap, satir}
     tablo    {basliklar[], satirlar[[hücre | {"b": cevap}]]}
@@ -117,8 +117,11 @@ def soru_html(s, no, ad):
     gorsel = f'<div class="ck-gorsel">{s["gorsel"]}</div>' if s.get('gorsel') else ''
     govde = ''
     if t == 'coktan':
-        govde = '<ol class="ck-sec">' + ''.join(
-            f'<li class="{"dogru" if i == s["dogru"] else ""}"><b>{"ABCD"[i]}</b><span>{sembol(x)}</span></li>' for i, x in enumerate(s['secenekler'])) + '</ol>'
+        # Ortaöğretimde beş seçenek (E) de olabilir; "dogru" 0 tabanlı sıra numarasıdır.
+        if not (2 <= len(s['secenekler']) <= 5 and type(s.get('dogru')) is int and 0 <= s['dogru'] < len(s['secenekler'])):
+            raise ValueError(f'{ad} soru {no}: çoktan seçmelide 2-5 seçenek ve 0 tabanlı geçerli "dogru" gerekir')
+        govde ='<ol class="ck-sec">' + ''.join(
+            f'<li class="{"dogru" if i == s["dogru"] else ""}"><b>{"ABCDE"[i]}</b><span>{sembol(x)}</span></li>' for i, x in enumerate(s['secenekler'])) + '</ol>'
     elif t == 'dy':
         govde = '<table class="ck-dy"><tr class="ck-dy-bas"><td></td><td class="k">D</td><td class="k">Y</td></tr>' + ''.join(
             f'<tr><td>{sembol(i["metin"])}</td><td class="k"><span class="ck-kutu">{cvp("✓") if i["dogru"] else ""}</span></td>'
@@ -238,10 +241,16 @@ Promise.all([...document.fonts].map(f => f.load())).then(() => document.fonts.re
     gecici.write_text(belge, encoding='utf-8')
     dom_path = IS / f'{ad}-olcum-dom.html'
     log_path = IS / f'{ad}-olcum-chrome.log'
-    chrome_calistir(CHROME_ARGS + ['--allow-file-access-from-files', '--window-size=1200,1600',
-                    '--virtual-time-budget=8000', '--dump-dom', gecici.as_uri()], dom_path, log_path,
-                    lambda: dom_tamam(dom_path, 'ck-olcum'))
-    gecici.unlink()
+    try:
+        chrome_calistir(CHROME_ARGS + ['--allow-file-access-from-files', '--window-size=1200,1600',
+                        '--virtual-time-budget=8000', '--dump-dom', gecici.as_uri()], dom_path, log_path,
+                        lambda: dom_tamam(dom_path, 'ck-olcum', len(OLCEKLER)))
+    except (RuntimeError, subprocess.SubprocessError) as hata:
+        # Ölçüm alınamazsa main() eski (tahmini) yerleşime döner; tek dosya bütün üretimi durdurmaz.
+        print(f'{ad}: ölçüm alınamadı ({type(hata).__name__}: {hata})')
+        return None
+    finally:
+        gecici.unlink(missing_ok=True)
     m = re.search(r'<pre id="ck-olcum">(\[.*?\])</pre>', dom_path.read_text(encoding='utf-8'), re.S)
     if not m:
         return None
@@ -470,10 +479,13 @@ def pdf_yap(o, ad, cevapli, font_css, plan=None, olcek=None):
                 return len(PdfReader(str(yeni_pdf)).pages) > 0
             except Exception:
                 return False
-        chrome_calistir(CHROME_ARGS + ['--no-pdf-header-footer', '--allow-file-access-from-files',
-                        f'--print-to-pdf={yeni_pdf}', gecici.as_uri()],
-                        IS / f'{gecici.stem}-stdout.log', log_path, pdf_tamam)
-        yeni_pdf.replace(cikti)
+        try:
+            chrome_calistir(CHROME_ARGS + ['--no-pdf-header-footer', '--allow-file-access-from-files',
+                            f'--print-to-pdf={yeni_pdf}', gecici.as_uri()],
+                            IS / f'{gecici.stem}-stdout.log', log_path, pdf_tamam)
+            yeni_pdf.replace(cikti)
+        finally:
+            yeni_pdf.unlink(missing_ok=True)  # hata olursa yarım PDF iş klasöründe kalmaz
         sayfa_sayisi = len(PdfReader(str(cikti)).pages)
         if sayfa_sayisi <= 2:
             return sayfa_sayisi, olcek
@@ -508,13 +520,14 @@ def web_sayfasi(o, ad, plan=None):
     (PUBLIC / 'calisma' / f'{ad}.html').write_text(sayfa(f'calisma/{ad}.html', baslik, aciklama, govde), encoding='utf-8')
     return {'sinif': o['sinif'], 'ders': o['ders'], 'tur': 'Çalışma kâğıdı', 'kitle': 'ogrenci', 'baslik': baslik,
             'aciklama': f'{len(o["sorular"])} soruluk, görselli çalışma kâğıdı; cevapsız ve cevaplı PDF.', 'goruntule': f'calisma/{ad}.html',
-            'dosya': f'calisma/pdf/{ad}.pdf', 'kaynak': 'Ders Kutusu', 'hafta': o['hafta'], 'tarih': o.get('yayin_tarihi', '2026-09-29')}
+            'dosya': f'calisma/pdf/{ad}.pdf', 'kaynak': 'Ders Kutusu', 'hafta': o['hafta'], 'tarih': ozet_uret.yayin_tarihi(o, ad)}
 
 
 def main():
     adlar = sys.argv[1:] or [p.stem for p in sorted((ARACLAR / 'calisma').glob('*.json'))]
     font_css = yazi_tipleri()
     kayitlar = []
+    tasanlar = []
     for ad in adlar:
         p = ARACLAR / 'calisma' / f'{ad}.json'
         o = json.loads(p.read_text(encoding='utf-8'))
@@ -540,6 +553,9 @@ def main():
             s2, k2 = pdf_yap(o, ad, True, font_css, plan, olcek)
             if max(s1, s2) <= 2:
                 break
+        if max(s1, s2) > 2:
+            tasanlar.append(ad)
+            print(f'{ad}: UYARI: PDF 2 sayfayı aşıyor (cevapsız {s1}, cevaplı {s2}); içerik kısaltılmalı')
         kayitlar.append(web_sayfasi(o, ad, plan))
         print(f'{ad}: {len(o["sorular"])} soru, görselli {gorselli} (%{100 * gorselli // len(o["sorular"])}); PDF {s1} sayfa (ölçek {k1}), cevaplı {s2} sayfa (ölçek {k2})'
               + (f'; sütun altı boşluk (mm, yayılmadan önce) {bosluk}' + ('  ← KISA: soru eklenmeli' if max(bosluk[2:] or [0]) > 45 else '') if plan else ''))
@@ -553,6 +569,8 @@ def main():
     harita = re.sub(r'\s*<url><loc>https://derskutusu\.com/calisma/[^<]+</loc></url>', '', harita)
     ek = ''.join(f'\n  <url><loc>https://derskutusu.com/{k}</loc></url>' for k in hepsi)
     (PUBLIC / 'sitemap.xml').write_text(harita.replace('\n</urlset>', ek + '\n</urlset>'), encoding='utf-8')
+    if tasanlar:
+        sys.exit('2 sayfayı aşan çalışma kâğıdı: ' + ', '.join(tasanlar))
 
 
 if __name__ == '__main__':

@@ -44,9 +44,14 @@
 .ds .ornek summary { min-height: 48px; padding: 8px; cursor: pointer; font-size: 20px; }
 .ds .ornek details p { font-size: inherit; line-height: inherit; }
 .ds .etk-geri { font-size: clamp(18px, 1.6vw, 24px); }
-.ds-ink { position: absolute; inset: 0; z-index: 2; }
+/* Kap tıklamayı geçirir: "el" aracında alttaki slayt kaydırılabilsin, düğmelerine basılabilsin. Çizim tuvali kendi satır içi stiliyle açılır. */
+.ds-ink { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+.ds-ink .tahta-cubuk { pointer-events: auto; }
 .ds .tahta-cubuk { max-width: calc(100% - 16px); bottom: 8px; }
-.ds .tahta-cubuk button { min-height: 44px; width: 44px; height: 44px; padding: 0; background: transparent; color: #fff; }
+.ds .tahta-cubuk button { min-height: 44px; width: 44px; height: 44px; padding: 0; border: 0; background: transparent; color: #e9eef6; }
+.ds .tahta-cubuk button:not(:disabled):hover { background: rgb(255 255 255 / .1); }
+.ds .tahta-cubuk button[aria-pressed="true"] { background: rgb(255 255 255 / .2); color: #fff; }
+.ds .tahta-cubuk button:disabled { opacity: .3; }
 .ds-footer { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; padding: 12px 24px 16px; }
 .ds-footer > div { flex: 1; min-width: 100px; text-align: center; }
 .ds-progress { font-size: 14px; margin: 0 0 4px; }

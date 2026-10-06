@@ -8,6 +8,11 @@ on:
       - 'public/tahta.js'
       - 'public/etkinlik.js'
       - 'tests/ders-slayt.cjs'
+      # Testin açtığı sayfa ve onun yüklediği dosyalar
+      - 'public/ortak.js'
+      - 'public/stil.css'
+      - 'public/ozet/5-matematik-hafta-1.html'
+      - 'araclar/ozet_uret.py'
       - '.github/workflows/slayt-kontrol.yml'
   workflow_dispatch:
 

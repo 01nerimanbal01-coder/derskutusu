@@ -15,11 +15,11 @@ const kokParcalari = (metin) => {
         if (s[son] === '(') derinlik++;
         if (s[son] === ')' && --derinlik === 0) break;
       }
-      if (son === s.length) throw new Error('Kökün kapanış parantezi eksik');
+      if (son === s.length) { re.lastIndex = bas; continue; } // kapanış yok (ör. arama kutusuna yazılan metin): işaret düz metin kalır
       ic = s.slice(bas + 1, son++);
     } else {
       const sayi = /^(?:\d+(?:[.,]\d+)?|[a-zA-Z])(?:[²³⁴⁵⁶⁷⁸⁹⁰¹]+)?/.exec(s.slice(bas));
-      if (!sayi) throw new Error('Kök kapsamı açıkça belirtilmeli');
+      if (!sayi) { re.lastIndex = bas; continue; } // kapsam yok: işaret düz metin kalır
       ic = sayi[0]; son += ic.length;
     }
     parcalar.push({ metin: s.slice(pos, m.index) }, { kok: ic, derece: { '√': '', '∛': '3', '∜': '4' }[m[0]] });

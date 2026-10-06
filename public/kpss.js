@@ -18,7 +18,7 @@
   };
   if ($('#kp-home')) {
     const level = $('#kp-level');
-    level.value = Object.hasOwn(guides, state.level) ? state.level : 'ortaogretim';
+    level.value = Object.prototype.hasOwnProperty.call(guides, state.level) ? state.level : 'ortaogretim';
     const syncGuide = () => { $('#kp-guide').href = guides[level.value]; };
     syncGuide();
     level.addEventListener('change', () => { state.level = level.value; save(); syncGuide(); });
@@ -86,7 +86,8 @@
   function tick() {
     if (!running || !deadline) return;
     const seconds = Math.max(0, Math.ceil((deadline - Date.now()) / 1000));
-    timer.textContent = `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, '0')}`;
+    const kalan = `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, '0')}`;
+    if (timer.textContent !== kalan) timer.textContent = kalan;
     if (seconds === 0) conclude(true);
   }
   function prepare(questions) {
@@ -104,7 +105,14 @@
     if (seconds > 0) { deadline = Date.now() + seconds * 1000; tick(); interval = setInterval(tick, 250); } else timer.textContent = 'Süresiz';
     const first = $('input', active[0]); if (first) first.focus();
   });
-  form.addEventListener('submit', event => { event.preventDefault(); conclude(); });
+  // Seçenekte Enter testi bitirmesin; boş soru varken bitirme onay ister.
+  form.addEventListener('keydown', event => { if (event.key === 'Enter' && event.target.matches('input[type="radio"]')) event.preventDefault(); });
+  form.addEventListener('submit', event => {
+    event.preventDefault(); if (!running || ended) return;
+    const bos = active.filter(q => !$('input:checked', q)).length;
+    if (bos && !confirm(`${bos} soru boş. Test yine de bitirilsin mi?`)) return;
+    conclude();
+  });
   form.addEventListener('change', countAnswers);
   retry.addEventListener('click', () => { if (missed.length) prepare([...missed]); });
   reset.addEventListener('click', () => prepare(all));

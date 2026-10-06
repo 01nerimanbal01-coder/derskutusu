@@ -6,15 +6,20 @@ import subprocess
 import time
 
 
-def dom_tamam(path, marker):
+def dom_tamam(path, marker, adet=None):
+    """Ölçüm listesi tam yazıldı mı? "adet" verilirse liste o uzunlukta olmalı (boş/eksik liste tamam sayılmaz)."""
     if not path.exists():
         return False
-    text = path.read_text(encoding='utf-8')
+    try:
+        text = path.read_text(encoding='utf-8')
+    except (OSError, UnicodeDecodeError):  # Chrome çok baytlı bir harfin ortasında yazıyor olabilir
+        return False
     match = re.search(r'<pre id="' + re.escape(marker) + r'">(\[.*?\])</pre>', text, re.S)
     if not text.rstrip().endswith('</html>') or not match:
         return False
     try:
-        return isinstance(json.loads(html.unescape(match.group(1))), list)
+        liste = json.loads(html.unescape(match.group(1)))
+        return isinstance(liste, list) and (len(liste) == adet if adet else len(liste) > 0)
     except (ValueError, TypeError):
         return False
 

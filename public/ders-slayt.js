@@ -73,7 +73,7 @@
   trigger.type = 'button'; trigger.id = 'ders-slayt-ac'; trigger.className = 'dugme ana';
   trigger.textContent = 'Slaytla ders işle'; trigger.setAttribute('aria-haspopup', 'dialog');
   actions.prepend(trigger);
-  const css = document.createElement('link'); css.rel = 'stylesheet'; css.href = '/ders-slayt.css?v=20261003-preview2';
+  const css = document.createElement('link'); css.rel = 'stylesheet'; css.href = '/ders-slayt.css?v=20261006-1';
   document.head.append(css);
 
   const dialog = document.createElement('dialog');
@@ -197,8 +197,11 @@
     const target = revealTarget(), control = button('reveal');
     control.disabled = !target;
     button('next').textContent = target ? 'Devam et →' : 'Sonraki slayt →';
-    button('next').setAttribute('aria-label', target ? 'Sonraki adımı göster' : 'Sonraki slayt');
+    button('next').setAttribute('aria-label', target ? 'Devam et: sonraki adımı göster' : 'Sonraki slayt');
     button('next').disabled = !target && state.index >= slides.length - 1;
+    // Odaktaki düğme devre dışı kaldıysa klavye odağı kaybolmasın.
+    const aktif = document.activeElement;
+    if (aktif && aktif.disabled && dialog.contains(aktif)) stage.focus({ preventScroll: true });
     control.textContent = target?.matches('details') ? 'Çözümü göster' : target?.matches('.etk-ipucu-dugme') ? target.textContent : target ? 'Sonraki adımı göster' : slides[state.index]?.kind === 'activity' ? 'Soruyu slaytta yanıtlayın' : 'Tüm adımlar açık';
   }
   function reveal() {
@@ -209,7 +212,7 @@
     if (target) target.scrollIntoView({ block: 'nearest', behavior: 'instant' });
     updateReveal();
   }
-  function nextStep() { if (revealTarget()) reveal(); else show(state.index + 1); }
+  function nextStep(focus = true) { if (revealTarget()) reveal(); else show(state.index + 1, focus); }
   function show(index, focus = true) {
     rememberInk(); state.index = Math.max(0, Math.min(index, slides.length - 1));
     slides.forEach((slide, i) => { slide.frame.hidden = i !== state.index; });
@@ -239,14 +242,17 @@
     dialog.showModal(); if (!slides.length) build(); show(state.index); explain();
   });
   dialog.addEventListener('cancel', event => { event.preventDefault(); close(); });
+  // Tarayıcı pencereyi "cancel" olmadan kapatırsa (art arda Esc) kalem ve tam ekran açık kalmasın.
+  dialog.addEventListener('close', () => { penOff(); save(); fullscreen.exitOwned().catch(() => {}); trigger.textContent = 'Sunuma devam et'; });
   document.addEventListener('fullscreenchange', fullscreenLabel);
   dialog.addEventListener('click', async event => {
     const control = event.target.closest('[data-action]');
     if (!control || control.disabled) return;
     switch (control.dataset.action) {
       case 'close': close(); break;
-      case 'previous': show(state.index - 1); break;
-      case 'next': nextStep(); break;
+      // Düğmeyle gezinirken odak düğmede kalır (her slaytta yeniden Tab gerekmesin).
+      case 'previous': show(state.index - 1, false); break;
+      case 'next': nextStep(false); break;
       case 'reveal': reveal(); break;
       case 'restart':
         penOff(); drawings.clear(); slideCache.clear(); state.index = 0; build(); show(0);
@@ -279,11 +285,13 @@
   dialog.querySelector('[data-control="slide"]').addEventListener('change', event => show(Number(event.target.value)));
   dialog.addEventListener('keydown', event => {
     if (event.key === 'Escape' && drawing) { event.preventDefault(); event.stopPropagation(); rememberInk(); penOff(); return; }
-    if (event.ctrlKey || event.metaKey || event.altKey || event.target.closest('button, input, textarea, select, a, summary, [contenteditable]')) return;
+    // Önceki/Sonraki düğmesinde odak kalınca da ok tuşları ve sunum kumandası (PageUp/PageDown) çalışsın.
+    const gezinti = event.target.closest('[data-action="previous"], [data-action="next"]');
+    if (event.ctrlKey || event.metaKey || event.altKey || (!gezinti && event.target.closest('button, input, textarea, select, a, summary, [contenteditable]'))) return;
     if (['ArrowRight', 'PageDown', 'ArrowLeft', 'PageUp', 'Home', 'End'].includes(event.key)) {
       event.preventDefault();
-      if (['ArrowRight', 'PageDown'].includes(event.key)) { nextStep(); return; }
-      show(event.key === 'Home' ? 0 : event.key === 'End' ? slides.length - 1 : state.index + (['ArrowRight', 'PageDown'].includes(event.key) ? 1 : -1));
+      if (['ArrowRight', 'PageDown'].includes(event.key)) { nextStep(!gezinti); return; }
+      show(event.key === 'Home' ? 0 : event.key === 'End' ? slides.length - 1 : state.index - 1, !gezinti);
     }
   });
 })();

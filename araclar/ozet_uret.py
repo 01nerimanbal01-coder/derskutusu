@@ -66,8 +66,8 @@ def _etiket(ic):
 def _kok(ic):
     # {kok:16 + 9}; isteğe bağlı derece: {kok:−27|3}.
     govde, _, derece = ic.partition('|')
-    if derece and not derece.isdigit():
-        raise ValueError('Kök derecesi pozitif tam sayı olmalı: ' + derece)
+    if derece and not (derece.isascii() and derece.isdigit() and int(derece) >= 2):
+        raise ValueError('Kök derecesi 2 ya da daha büyük tam sayı olmalı: ' + derece)
     ad = f'{derece}. dereceden kök' if derece else 'karekök'
     indis = f'<span class="s-kok-derece" aria-hidden="true">{derece}</span>' if derece else ''
     return (f'<span class="s-kok" role="math" aria-label="{ad}: {_etiket(govde)}">{indis}'
@@ -86,6 +86,8 @@ def e(metin):
     # İçteki gösterim önce çözülür: kesir içindeki kök ve kök içindeki üs korunur.
     while KAR.search(metin):
         metin = KAR.sub(lambda m: ozel[m.group(1)](m.group(2)) if m.group(1) in ozel else SEMBOL[m.group(1)].format(m.group(2)), metin)
+    if re.search(r'\{[a-z]+:[^{}\s]', metin):   # yanlış yazılmış gösterim ({kesr:3|4}) düz metin olarak sayfaya çıkmasın
+        raise ValueError('Çözülmemiş gösterim: ' + metin[:120])
     return metin
 KUTU = {'dikkat': 'Dikkat', 'bilgi': 'Bilgi', 'kural': 'Kural', 'tanim': 'Tanım', 'ipucu': 'İpucu', 'hatirla': 'Hatırla'}
 SIMGE = {  # 24×24 çizgi simgeleri (renk: currentColor)
@@ -98,12 +100,20 @@ SIMGE = {  # 24×24 çizgi simgeleri (renk: currentColor)
 }
 
 
+def yayin_tarihi(o, ad):
+    """Kütüphane sıralaması bu alana göre yapılır; eksikse sessizce eski bir tarih yazılmaz."""
+    t = o.get('yayin_tarihi')
+    if not (isinstance(t, str) and re.fullmatch(r'\d{4}-\d{2}-\d{2}', t)):
+        raise ValueError(f'{ad}: "yayin_tarihi" (YYYY-AA-GG) gerekli')
+    return t
+
+
 def kutu_html(k):
     """Yan kutu: bilgi | dikkat | kural | tanim | ipucu | hatirla (simgeli, renkli; stil.css "Özet kutuları")."""
     tur = k.get('tur') if k.get('tur') in KUTU else 'bilgi'
     simge = f'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">{SIMGE[tur]}</svg>'
     return (f'<aside class="ozet-kutu {tur}"><div class="kutu-bas"><span class="kutu-simge" aria-hidden="true">{simge}</span>'
-            f'<strong>{k.get("baslik") or KUTU[tur]}</strong></div><p>{e(k["metin"])}</p></aside>')
+            f'<strong>{html.escape(k.get("baslik") or KUTU[tur])}</strong></div><p>{e(k["metin"])}</p></aside>')
 
 
 def paragraflar(liste):
@@ -227,7 +237,7 @@ def sayfa_uret(o, dersler, icerikler):
     (PUBLIC / 'ozet' / dosya).write_text(_sayfa.sayfa(f'ozet/{dosya}', baslik, aciklama, govde, betik), encoding='utf-8')
     return {'sinif': o['sinif'], 'ders': o['ders'], 'tur': 'Konu anlatımı', 'kitle': 'ogrenci', 'baslik': baslik,
             'aciklama': f'{o["unite"]}: {o["konu"]}. Konu özeti, {len(o["ornekler"])} örnek ve cevapları' + (f', {len(o["etkinlikler"])} etkileşimli etkinlik' if o.get('etkinlikler') else '') + '; akıllı tahtada kalemle yazılabilir.',
-            'goruntule': f'ozet/{dosya}', 'kaynak': 'Ders Kutusu', 'hafta': o['hafta'], 'tarih': o.get('yayin_tarihi', '2026-09-29')}
+            'goruntule': f'ozet/{dosya}', 'kaynak': 'Ders Kutusu', 'hafta': o['hafta'], 'tarih': yayin_tarihi(o, dosya)}
 
 
 def main():

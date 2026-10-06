@@ -44,10 +44,13 @@
   function say(s,done){const v=voice();if(!v){$('#a-ses-durum').textContent='Bu cihazda Arapça ses bulunamadı. Harf ve kelimeleri yazılı çalışabilirsin.';return false;}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(s);u.voice=v;u.lang=v.lang;u.rate=.8;u.onend=u.onerror=()=>done?.();speechSynthesis.speak(u);return true;}
   function voiceStatus(){$('#a-ses-durum').textContent=voice()?'Dinleme için cihazının Arapça sesi kullanılır. Harf seslerini MEB kitabındaki ses örnekleriyle de karşılaştır.':'Bu cihazda Arapça ses bulunamadı. Harf ve kelimeleri yazılı çalışabilirsin.';}
   const listen = s => button('Dinle',()=>say(s));
+  let odak=null;
   function controls(){
-    $('#a-sinif').replaceChildren(...data.siniflar.map(g=>el('button',{type:'button',sinif:'sekme','aria-pressed':String(g.sinif===state.grade),onclick:()=>{state.grade=g.sinif;state.topic=g.temalar[0].no;draw();}},`${g.sinif}. sınıf`)));
+    $('#a-sinif').replaceChildren(...data.siniflar.map(g=>el('button',{type:'button',sinif:'sekme','aria-pressed':String(g.sinif===state.grade),onclick:()=>{state.grade=g.sinif;state.topic=g.temalar[0].no;odak='#a-sinif';draw();}},`${g.sinif}. sınıf`)));
     const select=$('#a-konu');select.replaceChildren(...data.siniflar.find(g=>g.sinif===state.grade).temalar.map(t=>el('option',{value:t.no,selected:t.no===state.topic},`${t.ad} · 1. hafta (${t.kelimeler.length})`)));select.onchange=()=>{state.topic=Number(select.value);draw();};
-    $('#a-modlar').replaceChildren(...MODLAR.map(([m,t])=>el('button',{type:'button',sinif:'sekme','aria-pressed':String(m===state.mode),onclick:()=>{state.mode=m;draw();}},t)));
+    $('#a-modlar').replaceChildren(...MODLAR.map(([m,t])=>el('button',{type:'button',sinif:'sekme','aria-pressed':String(m===state.mode),onclick:()=>{state.mode=m;odak='#a-modlar';draw();}},t)));
+    // Sekmeler yeniden üretildiği için odak, basılan sekmenin yenisine geri verilir.
+    if(odak){$(odak+' [aria-pressed="true"]')?.focus();odak=null;}
   }
   function alphabet(){
     const detail=el('div',{sinif:'a-detay','aria-live':'polite'}), grid=el('div',{sinif:'a-harfler',dir:'rtl'});
@@ -59,11 +62,13 @@
     for(const h of data.harfler){const b=el('button',{type:'button','aria-label':`${h.ad} harfi`,'aria-pressed':'false',onclick:()=>show(h,b)},ar(h.harf,'a-buyuk'),el('span',{dir:'ltr'},h.ad));grid.append(b);if(!selected)show(h,b);}
     alan.append(el('p',{},'Alfabedeki 28 harfi incele. Bir harfe dokunarak yazı içindeki biçimlerini gör.'),button('Harfleri tanı: 10 soru',()=>letterQuiz()),grid,detail);
   }
+  // Yeni soru gelince klavye odağı kaybolmasın: soru başlığına taşınır.
+  function odakla(kap){const h=kap.querySelector('h3');if(h){h.tabIndex=-1;h.focus();}}
   function letterQuiz(){
     const qs=mix(data.harfler).slice(0,10);let i=0,score=0;
     function next(){alan.replaceChildren();if(i===qs.length){alan.append(el('h3',{},`10 soruda ${score} doğru`),button('Harflere dön',draw));return;}
       const q=qs[i],fb=el('p',{role:'status'}),opts=mix([q,...mix(data.harfler.filter(h=>h!==q)).slice(0,3)]);let answered=false;
-      const row=el('div',{sinif:'a-harf-sec'});opts.forEach(h=>{const b=button(ar(h.harf,'a-buyuk'),()=>{if(answered)return;answered=true;for(const x of row.children)x.disabled=true;if(h===q){score++;fb.textContent='Doğru!';}else fb.replaceChildren('Doğru harf: ',ar(q.harf),' — '+q.ad);alan.append(button('Sonraki soru',()=>{i++;next();},'dugme ana'));});row.append(b);});
+      const row=el('div',{sinif:'a-harf-sec'});opts.forEach(h=>{const b=button(ar(h.harf,'a-buyuk'),()=>{if(answered)return;answered=true;for(const x of row.children)x.disabled=true;if(h===q){score++;fb.textContent='Doğru!';}else fb.replaceChildren('Doğru harf: ',ar(q.harf),' — '+q.ad);const nb=button('Sonraki soru',()=>{i++;next();odakla(alan);},'dugme ana');alan.append(nb);nb.focus();});row.append(b);});
       alan.append(el('p',{},`${i+1} / 10`),el('h3',{},`“${q.ad}” hangi harftir?`),row,fb);
     }next();
   }
@@ -83,7 +88,7 @@
   function listening(){const list=el('ul',{sinif:'a-sozluk'});for(const w of words())list.append(el('li',{},ar(w.ar),el('span',{},w.tr),listen(w.ar)));alan.append(list);}
   function quiz(){const qs=mix(words()).slice(0,10),slots=plannedSlots(qs.length);let i=0,score=0;const box=el('div',{});alan.append(box);
     function next(){box.replaceChildren();if(i===qs.length){box.append(el('h3',{},`${qs.length} soruda ${score} doğru`),button('Yeni test',draw));return;}const w=qs[i],fb=el('p',{role:'status',sinif:'etk-geri'}),row=el('div',{sinif:'etk-secenekler'});let answered=false;
-      optionsFor(w,words(),slots[i]).forEach(x=>row.append(button(x.tr,e=>{if(answered)return;answered=true;for(const b of row.children)b.disabled=true;if(x===w){score++;e.currentTarget.classList.add('dogru');fb.textContent='Doğru!';}else{e.currentTarget.classList.add('yanlis');fb.textContent=`Doğrusu: ${w.tr}`;}box.append(button('Sonraki soru',()=>{i++;next();},'dugme ana'));},'etk-sec')));
+      optionsFor(w,words(),slots[i]).forEach(x=>row.append(button(x.tr,e=>{if(answered)return;answered=true;for(const b of row.children)b.disabled=true;if(x===w){score++;e.currentTarget.classList.add('dogru');fb.textContent='Doğru!';}else{e.currentTarget.classList.add('yanlis');fb.textContent=`Doğrusu: ${w.tr}`;}const nb=button('Sonraki soru',()=>{i++;next();odakla(box);},'dugme ana');box.append(nb);nb.focus();},'etk-sec')));
       box.append(el('p',{},`${i+1} / ${qs.length}`),el('h3',{},'Türkçe anlamı hangisidir?'),ar(w.ar,'a-kelime'),row,fb);
     }next();
   }
@@ -106,5 +111,5 @@
   }
   const render={harfler:alphabet,hareke:vowels,kartlar:cards,dinle:listening,test:quiz,yaz:writing,eslestir:matching};
   function draw(){if(speechOK)speechSynthesis.cancel();controls();progress();voiceStatus();alan.replaceChildren();history.replaceState(null,'',`?s=${state.grade}&t=${state.topic}&k=${state.mode}`);$('#a-baslik').textContent=['harfler','hareke'].includes(state.mode)?'Alfabe ve yazıya hazırlık':`${state.grade}. sınıf · ${topic().ad}`;render[state.mode]();}
-  veri('arapca-kelimeler.json').then(v=>{if(!v){alan.textContent='İçerik yüklenemedi. Sayfayı yenileyin.';return;}data=v;const p=new URLSearchParams(location.search),g=data.siniflar.find(x=>x.sinif===Number(p.get('s')))||data.siniflar[0];state.grade=g.sinif;state.topic=(g.temalar.find(t=>t.no===Number(p.get('t')))||g.temalar[0]).no;if(render[p.get('k')])state.mode=p.get('k');draw();$('#a-sifirla').onclick=()=>{if(!confirm('Bu konu grubundaki öğrenme işaretleri sıfırlansın mı?'))return;for(const w of words())delete learned[id(w)];try{localStorage.setItem(KEY,JSON.stringify(learned));}catch{}progress();};if(speechOK)speechSynthesis.addEventListener('voiceschanged',voiceStatus);});
+  veri('arapca-kelimeler.json').then(v=>{if(!v){alan.textContent='İçerik yüklenemedi. Sayfayı yenileyin.';return;}data=v;const p=new URLSearchParams(location.search),g=data.siniflar.find(x=>x.sinif===Number(p.get('s')))||data.siniflar[0];state.grade=g.sinif;state.topic=(g.temalar.find(t=>t.no===Number(p.get('t')))||g.temalar[0]).no;if(Object.prototype.hasOwnProperty.call(render,p.get('k')))state.mode=p.get('k');draw();$('#a-sifirla').onclick=()=>{if(!confirm('Bu konu grubundaki öğrenme işaretleri sıfırlansın mı?'))return;for(const w of words())delete learned[id(w)];try{localStorage.setItem(KEY,JSON.stringify(learned));}catch{}progress();};if(speechOK)speechSynthesis.addEventListener('voiceschanged',voiceStatus);});
 })();

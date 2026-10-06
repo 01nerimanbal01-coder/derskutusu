@@ -4,7 +4,8 @@ import re
 from lxml import etree as ET
 W='http://schemas.openxmlformats.org/wordprocessingml/2006/main'
 M='http://schemas.openxmlformats.org/officeDocument/2006/math'
-ROOT=re.compile(r'([√∛∜])((?:\d+(?:[.,]\d+)?|[a-zA-Z])(?:[²³⁴⁵⁶⁷⁸⁹⁰¹]+)?)')
+# Kökten sonra harf/rakam sürüyorsa (√ab, √2x) kök içi belirsizdir: eşleşmez, aşağıda ValueError verir.
+ROOT=re.compile(r'([√∛∜])((?:\d+(?:[.,]\d+)?|[a-zA-Z])(?:[²³⁴⁵⁶⁷⁸⁹⁰¹]+)?)(?![A-Za-z\d])')
 
 def ele(ns,name,text=None):
  e=ET.Element('{'+ns+'}'+name)
@@ -18,7 +19,7 @@ def kokleri_duzelt(doc):
   if len(ts)!=1 or not any(c in (ts[0].text or '') for c in '√∛∜'):continue
   text=ts[0].text
   if any(c in ROOT.sub('',text) for c in '√∛∜'):raise ValueError('Kapsamı desteklenmeyen Word kökü: '+text)
-  assert all(ET.QName(x).localname in ('rPr','t') for x in run),'Kök koşusunda başka nesne var'
+  if not all(isinstance(x.tag,str) and ET.QName(x).localname in ('rPr','t') for x in run):raise ValueError('Kök koşusunda başka nesne var: '+text)
   parent=run.getparent();pos=parent.index(run);out=[];start=0
   def normal(t):
    if t:
@@ -36,13 +37,15 @@ def kokleri_duzelt(doc):
  return adet
 
 if __name__=='__main__':
- import sys,zipfile
+ import os,sys,zipfile
  from pathlib import Path
  for filename in sys.argv[1:]:
   p=Path(filename)
   with zipfile.ZipFile(p) as z:entries=[(i,z.read(i.filename)) for i in z.infolist()]
   root=ET.fromstring(dict((i.filename,b) for i,b in entries)['word/document.xml']);n=kokleri_duzelt(root)
   if n:
-   with zipfile.ZipFile(p,'w') as z:
+   tmp=p.with_name(p.name+'.tmp')  # önce yanına yazılır; kaynak .docx yarım kalmaz
+   with zipfile.ZipFile(tmp,'w') as z:
     for i,b in entries:z.writestr(i,ET.tostring(root,encoding='UTF-8',xml_declaration=True,standalone=True) if i.filename=='word/document.xml' else b)
+   os.replace(tmp,p)
   print(p.name,n,'OMML kök')
