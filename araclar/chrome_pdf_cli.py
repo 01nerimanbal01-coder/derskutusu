@@ -6,8 +6,11 @@ import subprocess
 import time
 
 
-def dom_tamam(path, marker, adet=None):
-    """Ölçüm listesi tam yazıldı mı? "adet" verilirse liste o uzunlukta olmalı (boş/eksik liste tamam sayılmaz)."""
+def dom_tamam(path, marker, adet=None, bos=False):
+    """Ölçüm listesi tam yazıldı mı? "adet" verilirse liste o uzunlukta olmalı (boş/eksik liste tamam sayılmaz).
+
+    "bos=True": boş liste de geçerli sonuçtur (bulgu listesi; ör. cevap_tasma'da [] = taşma yok).
+    Betik çalışmadan önce <pre> boştur, "[]" yalnız ölçüm bitince yazılır."""
     if not path.exists():
         return False
     try:
@@ -19,7 +22,7 @@ def dom_tamam(path, marker, adet=None):
         return False
     try:
         liste = json.loads(html.unescape(match.group(1)))
-        return isinstance(liste, list) and (len(liste) == adet if adet else len(liste) > 0)
+        return isinstance(liste, list) and (len(liste) == adet if adet else bos or len(liste) > 0)
     except (ValueError, TypeError):
         return False
 
