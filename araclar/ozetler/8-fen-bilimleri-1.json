@@ -9,7 +9,7 @@
   "ciktilar": [
     "F.8.1.1.1. Mevsimlerin oluşumuna yönelik tahminlerde bulunur."
   ],
-  "giris": "Aynı tarihte Dünya’nın farklı yarım kürelerinde farklı mevsimler yaşanabilir. Bunu açıklamak için dönme eksenini, dolanma hareketini ve Güneş ışınlarının yüzeye geliş açısını birlikte inceleyeceğiz.",
+  "giris": "Aynı tarihte Dünya’nın farklı yarım kürelerinde farklı mevsimler yaşanabilir. Bunu açıklamak için dönme eksenini, dolanma hareketini ve Güneş ışınlarının yüzeye düşme açısını birlikte inceleyeceğiz.",
   "bolumler": [
     {
       "baslik": "Dönme ve dolanma farklı hareketlerdir",
@@ -30,19 +30,19 @@
       ],
       "kutu": {
         "tur": "tanim",
-        "metin": "Eğiklik, dönme ekseni ile dolanma düzlemine dik doğrultu arasında tanımlanır."
+        "metin": "Eksen eğikliği, dönme ekseni ile dolanma düzlemine dik doğru arasındaki açıdır."
       }
     },
     {
       "baslik": "Işın açısı, alan ve enerji",
       "metin": [
         "Aynı miktardaki ışık enerjisi dar bir alana dağıldığında birim yüzeye daha fazla enerji düşer. Daha geniş bir alana yayıldığında birim yüzeye düşen enerji azalır.",
-        "Yüzeye dik veya dike yakın gelen ışınlar enerjiyi daha dar bir alanda toplar. Eğik gelen ışınlar daha geniş alana yayılır. Diğer koşullar aynı olduğunda birinci yüzey daha fazla ısınır.",
-        "Güneş ışınlarının yere geliş açısı büyüdükçe yere dik bir cismin gölgesi kısalır. Işınların dik geldiği yerde ve anda gölge sıfır olabilir."
+        "Yüzeye dik veya dike yakın gelen ışınlar enerjiyi daha dar bir alanda toplar. Eğik gelen ışınlar daha geniş alana yayılır. Diğer koşullar aynı olduğunda ışınları dik ya da dike yakın açıyla alan yüzey daha fazla ısınır.",
+        "Işınların yere düşme açısı 90°’ye yaklaştıkça yere dik duran bir cismin gölgesi kısalır. Işınların dik geldiği yerde ve anda gölge sıfır olabilir."
       ],
       "kutu": {
         "tur": "kural",
-        "metin": "Toplam enerji ile birim yüzeye düşen enerjiyi ayır."
+        "metin": "Toplam enerji ile birim yüzeye düşen enerjiyi ayırt et."
       },
       "gorsel": "<svg viewBox=\"0 0 470 265\" role=\"img\" aria-label=\"Aynı enerji farklı alana yayılır\"><text x=\"235\" y=\"22\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">Aynı ışık demeti, farklı yüzey açısı</text><rect x=\"10\" y=\"36\" width=\"216\" height=\"216\" rx=\"12\" class=\"g-ma\"/><rect x=\"244\" y=\"36\" width=\"216\" height=\"216\" rx=\"12\" class=\"g-ma\"/><path d=\"M73 64V154 M118 64V154 M163 64V154 M290 64V113 M335 64V140 M380 64V167\" stroke=\"#dd8d19\" stroke-width=\"4\"/><path d=\"M68 146l5 8 5-8 M113 146l5 8 5-8 M158 146l5 8 5-8 M285 105l5 8 5-8 M330 132l5 8 5-8 M375 159l5 8 5-8\" fill=\"none\" stroke=\"#dd8d19\" stroke-width=\"3\"/><path d=\"M58 157H178 M268 103L409 188\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M73 157H163 M290 116L380 170\" stroke=\"#a93b31\" stroke-width=\"7\"/><text x=\"118\" y=\"211\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" class=\"g-y\">Daha dar yüzey alanı</text><text x=\"351\" y=\"211\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" class=\"g-y\">Daha geniş yüzey alanı</text><text x=\"118\" y=\"234\" text-anchor=\"middle\" font-size=\"12\" class=\"g-y\">Birim alana daha çok enerji</text><text x=\"351\" y=\"234\" text-anchor=\"middle\" font-size=\"12\" class=\"g-y\">Birim alana daha az enerji</text></svg>"
     },
@@ -50,7 +50,7 @@
       "baslik": "Yarım kürelerde karşıt mevsimler",
       "metin": [
         "Kuzey yarım küre Güneş ışınlarını daha dik alırken güney yarım küre daha eğik alır. Bu nedenle kuzeyde yaz yaşanırken güneyde kış yaşanır.",
-        "Dünya’nın Güneş’e uzaklığı yıl içinde değişir; ancak mevsimlerin temel açıklaması bu uzaklık değişimi değildir. Aynı Dünya üzerinde, aynı anda karşıt mevsimlerin yaşanması da yalnız uzaklığa dayanan açıklamanın yetersizliğini gösterir."
+        "Dünya’nın Güneş’e uzaklığı yıl içinde değişir; ancak bu değişim mevsimlerin oluşumunu etkilemez. Aynı Dünya üzerinde, aynı anda karşıt mevsimlerin yaşanması da mevsimlerin uzaklıktan kaynaklanmadığını gösterir."
       ],
       "kutu": {
         "tur": "dikkat",
@@ -62,7 +62,7 @@
       "metin": [
         "21 Haziran’da kuzey yarım kürede yaz, güneyde kış başlar. Kuzey yarım kürede en uzun gündüz yaşanır; öğle ışınları Yengeç Dönencesi’ne dik gelir.",
         "21 Aralık’ta kuzey yarım kürede kış, güneyde yaz başlar. Kuzey yarım kürede en uzun gece yaşanır; öğle ışınları Oğlak Dönencesi’ne dik gelir.",
-        "21 Mart ve 23 Eylül ekinoks tarihleridir. Ders kitabındaki modelde gece ve gündüz süreleri eşit kabul edilir; öğle ışınları Ekvator’a dik gelir. 21 Mart kuzeyde ilkbahar, 23 Eylül kuzeyde sonbahar başlangıcıdır; güneyde bunun tersi yaşanır."
+        "21 Mart ve 23 Eylül ekinoks tarihleridir. Bu iki tarihte gece ile gündüz her yerde eşit sürer; öğle ışınları Ekvator’a dik gelir. 21 Mart kuzeyde ilkbahar, 23 Eylül kuzeyde sonbahar başlangıcıdır; güneyde bunun tersi yaşanır."
       ],
       "kutu": {
         "tur": "ipucu",
@@ -72,7 +72,7 @@
     {
       "baslik": "Bir modeli nasıl yorumlarız?",
       "metin": [
-        "Bir ışık kaynağı ve Dünya modeliyle çalışırken eksenin eğik duruşu korunur. Yüzeye gelen ışığın açısı, aydınlanan alan ve farklı yarım kürelerin durumu karşılaştırılır.",
+        "Bir ışık kaynağı ve Dünya modeliyle çalışırken eksenin eğik duruşu korunur. Işığın yüzeye düşme açısı, aydınlanan alan ve farklı yarım kürelerin durumu karşılaştırılır.",
         "Bir gözlemi açıklarken “Işık daha dik geliyor → enerji daha dar alana dağılıyor → birim yüzeye düşen enerji artıyor.” ilişkisi kurulur. Sonuç yalnız tek bir sözcükle değil, bu bağlantıyla açıklanır."
       ],
       "kutu": {
@@ -99,12 +99,12 @@
       "cevap": "Türkiye kuzey yarım kürededir; 21 Aralık kış başlangıcıdır. Bu tarihte kuzey yarım kürede en uzun gece yaşanır."
     },
     {
-      "soru": "Yere dik aynı cismin gölgesi, ışığın yüzeye geliş açısı büyüdüğünde nasıl değişir?",
+      "soru": "Yere dik aynı cismin gölgesi, ışığın yüzeye düşme açısı büyüdüğünde nasıl değişir?",
       "cevap": "Gölge kısalır. Işınlar tam dik geldiğinde gölge sıfır olabilir."
     },
     {
       "soru": "“Mevsim yalnız Güneş’e uzaklığa bağlıdır.” açıklaması, aynı anda kuzeyde kış ve güneyde yaz görülmesini açıklar mı?",
-      "cevap": "Açıklamaz. Her iki yarım küre aynı Dünya üzerindedir. Karşıt mevsimler, eksen eğikliği ve ışınların geliş açılarıyla açıklanır."
+      "cevap": "Açıklamaz. Her iki yarım küre aynı Dünya üzerindedir. Karşıt mevsimler, eksen eğikliği ve ışınların düşme açılarıyla açıklanır."
     }
   ],
   "etkinlikler": [
@@ -115,7 +115,7 @@
         "Artar; enerji yayıldığı alanla birlikte büyür.",
         "Azalır; aynı enerji daha geniş alana dağılır.",
         "Değişmez; demetteki toplam enerji aynı kalır.",
-        "Belirlenemez; ışınların geliş açısı verilmemiştir."
+        "Belirlenemez; ışınların düşme açısı verilmemiştir."
       ],
       "dogru": 1,
       "aciklama": "B. Toplam ışık enerjisi sabittir. Bu enerji daha geniş alana dağıldığında birim yüzeye düşen enerji azalır. Toplam enerjinin değişmemesi, birim yüzeye düşen enerjinin de aynı kaldığı anlamına gelmez. Enerji ve alanla ilgili verilen bilgiler bu karşılaştırma için yeterlidir."
@@ -142,7 +142,7 @@
         "Küresel şekil ve kendi ekseninde dönme"
       ],
       "dogru": 0,
-      "aciklama": "A. Eksen eğikliği ile Güneş çevresindeki dolanma, yıl boyunca ışınların geliş açısının değişmesini açıklar. Dönme ve dolanmayı seçmek eksen eğikliğini dışarıda bırakır. Güneş’e uzaklık değişimi mevsimlerin temel nedeni değildir. Küresel şekil ile günlük dönme de yıllık mevsim döngüsünü açıklamaz."
+      "aciklama": "A. Eksen eğikliği ile Güneş çevresindeki dolanma, yıl boyunca ışınların düşme açısının değişmesini açıklar. Dönme ve dolanmayı seçmek eksen eğikliğini dışarıda bırakır. Güneş’e uzaklık değişimi mevsimlerin nedeni değildir. Küresel şekil ile günlük dönme de yıllık mevsim döngüsünü açıklamaz."
     },
     {
       "tur": "dy",
@@ -164,7 +164,7 @@
           "aciklama": "Bu tarihler ekinokstur."
         },
         {
-          "metin": "Dünya’nın kendi ekseninde dönmesi tek başına mevsimleri açıklar.",
+          "metin": "Dünya’nın kendi ekseni çevresinde dönmesi mevsimlerin oluşmasına neden olur.",
           "dogru": false,
           "aciklama": "Mevsimler için eksen eğikliği ve dolanma hareketi birlikte ele alınır."
         }
@@ -210,7 +210,7 @@
         }
       ],
       "fazla": [
-        "gölge"
+        "dönence"
       ]
     },
     {
@@ -224,7 +224,7 @@
     },
     {
       "tur": "ogretici",
-      "soru": "Türkiye’de 23 Eylül’de başlayan mevsimle güney yarım kürede başlayan mevsim neden farklıdır?",
+      "soru": "Türkiye’de 23 Eylül’de başlayan mevsimle aynı tarihte güney yarım kürede başlayan mevsim neden farklıdır?",
       "ipuclari": [
         "Türkiye’nin hangi yarım kürede olduğunu belirle.",
         "İki yarım kürenin mevsimlerinin karşıtlığını kullan."
@@ -239,5 +239,12 @@
   ],
   "yazan": "Codex · kaynak ve soru kalite düzeltmesi · 03.10.2026",
   "duzenleyen_oturum": "01a0f905-3dfa-7243-b40e-4220ac117f64",
-  "duzenleyen_hesap": "E"
+  "duzenleyen_hesap": "E",
+  "claude_denetim": {
+    "tarih": "2026-10-08",
+    "denetleyen": "Claude · MacBook (Pro hesap) · e03ec8e1",
+    "kapsam": "6 bölüm (1 SVG görsel, 6 kutu), 6 örnek, 8 etkinlik (3 çoktan seçmeli, 1 doğru-yanlış 4 ifade, 1 eşleştirme 4 çift, 1 boşluk 3 cümle + 1 fazla sözcük, 2 öğretici), 3 özet maddesi, giriş ve çıktı; 118 metin dizesi tarandı.",
+    "kaynak": "MEB 8. sınıf Fen Bilimleri ders kitabı (kitap-8-fen-bilimleri-2026-ilk40.txt) s.20-25 (PDF s.21-26): s.21 dönme/dolanma, 365 gün 6 saat, Ekvator, yarım küreler, dönme ekseni, eksen eğikliği tanımı (23° 27'), s.22 Etkinlik 1 ve düşme açısı, s.23 Görsel 1.4-1.5 (30°, 60°, 90°; düşme açısı arttıkça göl",
+    "durum": "Baştan okundu; 15 düzeltme işlendi (yüksek 0, orta 6, düşük 9); 1 bulgu reddedildi."
+  }
 }
