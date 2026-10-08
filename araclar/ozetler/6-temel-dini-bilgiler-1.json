@@ -112,16 +112,16 @@
       "soru": "Bir sunumda zekât emriyle, hangi mallardan ne ölçüde verileceğinin açıklanması yan yana gösteriliyor. Bu düzen hangi ilişkiyi anlatır?",
       "secenekler": [
         "İlkenin uygulamayla açıklanmasını",
-        "İbadet adının sözlükte tanımlanmasını",
+        "Ayrıntıların Kur’an’da yer almasını",
         "Kişisel tercihle biçim belirlenmesini",
-        "Yerel alışkanlığın kaynak seçilmesini"
+        "Sünnetin Kur’an’dan bağımsız olmasını"
       ],
       "dogru": 0,
       "aciklama": "Kur’an’da bildirilen emrin uygulanışı sünnetle açıklanır."
     },
     {
       "tur": "coktan",
-      "soru": "Bir görev listesinde “Güçsüz gördüğün kişinin sırasını alma.” uyarısı bulunuyor. Bu uyarı en doğrudan hangi ilkeye dayanır?",
+      "soru": "Bir görev listesinde “Sırada bekleyen kişinin önüne geçme.” uyarısı bulunuyor. Bu uyarı en doğrudan hangi ilkeye dayanır?",
       "secenekler": [
         "Merhamete",
         "Doğruluğa",
@@ -133,7 +133,7 @@
     },
     {
       "tur": "coktan",
-      "soru": "Bir öğrenci sünnetle ilgili panosuna Hz. Muhammed’in ibadetleri uygulayarak göstermesini ekliyor. Bu örnek hangi başlık altında yer almalıdır?",
+      "soru": "Bir öğrenci sünnetle ilgili panosuna Hz. Muhammed’in hac ibadetinin nasıl yapılacağını bizzat göstermesini ekliyor. Bu örnek hangi başlık altında yer almalıdır?",
       "secenekler": [
         "Sünnetin sözlü açıklamaları",
         "Sünnetin örnek uygulamaları",
@@ -153,7 +153,7 @@
           "aciklama": "Kur’an’ın rehberliği bu alanları birlikte içerir."
         },
         {
-          "metin": "Bir öğüdü ezberlemek, onu her durumda uyguladığımızı kanıtlar.",
+          "metin": "Bir öğüdü ezberlemek, onu davranışa yansıttığımız anlamına gelir.",
           "dogru": false,
           "aciklama": "Bilmek ile davranışa yansıtmak aynı aşama değildir."
         },
@@ -239,6 +239,13 @@
     "denetleyen": "Codex",
     "okunan_ornek": 6,
     "okunan_etkinlik": 8,
-    "claude_incelemesi": "Yapılmadı"
+    "claude_incelemesi": "Yapıldı · 08.10.2026 · bkz. claude_denetim"
+  },
+  "claude_denetim": {
+    "tarih": "2026-10-08",
+    "denetleyen": "Claude · MacBook (Pro) · 5c39b752",
+    "kapsam": "6 bölüm (2 SVG görsel), 6 çözümlü örnek, 8 etkinlik (3 çoktan seçmeli, 1 D/Y [4 ifade], 1 eşleştirme [4 çift], 1 boşluk [3 cümle + 1 fazla], 2 öğretici), giriş, kutular, çıktı ve konu alanları baştan sona okundu. Üç çoktan seçmeli etkinliğin dogru indeksi (0, 3, 1) ve D/Y bayrakları (D, Y, D, Y) kit",
+    "kaynak": "MEB Temel Dinî Bilgiler İslam 1 (ortaokul 2026) metni (_metin/kitap-ortaokul-temel-dini-bilgiler-islam1-2026-ilk35.txt) PDF s.16-22 (basılı s.15-21): Kur’an ve sünnet tanımı, iki temel kaynak, Kur’an konuları (iman, ibadet, ahlak, kıssalar), sünnetin açıklayıcı rolü (namaz, zekât, hac, orta namaz = ",
+    "durum": "Baştan okundu; 5 düzeltme işlendi (yüksek 0, orta 3, düşük 2); 2 bulgu reddedildi."
   }
 }
