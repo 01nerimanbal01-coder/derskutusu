@@ -65,7 +65,7 @@
       "baslik": "Aileyle ilgili güzel davranışlar",
       "metin": [
         "{ar:أُحِبُّ أُسْرَتِي} “Ailemi severim.”, {ar:أَحْتَرِمُهَا} “Ona saygı duyarım.”, {ar:أَزُورُ أَقَارِبِي} “Akrabalarımı ziyaret ederim.” anlamındadır.",
-        "{ar:وَ} ile ilişkili bilgiler bağlanır. Bir kişiyi tanıtan kısa yazıda önce yakınlığı, sonra mesleği, yaptığı işi ve çalışma yeri belirtilebilir. Yalnız verilen bilgileri kullan; metinde söylenmeyen bir mesleği kişiye yakıştırma.",
+        "“Ve” anlamındaki {ar:وَ}, birbiriyle ilişkili bilgileri bağlar. Bir kişiyi tanıtan kısa yazıda önce akrabalık adı, sonra meslek, yapılan iş ve çalışma yeri belirtilebilir. Yalnız verilen bilgileri kullan; metinde söylenmeyen bir mesleği kişiye yakıştırma.",
         "Bir erkek, arkadaşına {ar:أَنَا مُشْتَاق إِلَيْكَ} diyerek onu özlediğini belirtir. Aynı duyguyu paylaşan arkadaşı {ar:وَأَنَا أَيْضًا} yani “Ben de.” diyebilir."
       ],
       "kutu": {
@@ -85,7 +85,7 @@
     },
     {
       "soru": "{ar:هَاتَانِ مُعَلِّمَتَانِ} ifadesinden kişi sayısı ve meslek hakkında hangi bilgiler çıkar?",
-      "cevap": "İki kadın öğretmen anlatılmaktadır. İşaret sözcüğü ve meslek adı ikili gösterir."
+      "cevap": "İki kadın öğretmen anlatılmaktadır. İşaret sözcüğü ve meslek adı ikil biçimdedir."
     },
     {
       "soru": "Bir soru {ar:مَا مِهْنَتُهُمَا؟} ile başlıyor. {ar:هُمَا مُهَنْدِسَانِ} cevabı ne söyler?",
@@ -116,7 +116,7 @@
     },
     {
       "tur": "coktan",
-      "soru": "Röportajın soru sırası: 1. {ar:مَا مِهْنَتُهَا؟} 2. {ar:أَيْنَ تَعْمَلُ؟} 3. {ar:مَاذَا تَفْعَلُ؟} Cevap kartları: K—{ar:هِيَ تَعْمَلُ فِي الْمُسْتَشْفَى.} L—{ar:هِيَ طَبِيبَة.} M—{ar:هِيَ تَفْحَصُ الْمَرْضَى.} Her kart bir kez kullanılacaktır. Her soruyla aynı türde bilgiyi veren cevap kartları hangi sırayla yerleştirilmelidir?",
+      "soru": "Röportajın soru sırası: 1. {ar:مَا مِهْنَتُهَا؟} 2. {ar:أَيْنَ تَعْمَلُ؟} 3. {ar:مَاذَا تَفْعَلُ؟} Cevap kartları: K) {ar:هِيَ تَعْمَلُ فِي الْمُسْتَشْفَى.} L) {ar:هِيَ طَبِيبَة.} M) {ar:هِيَ تَفْحَصُ الْمَرْضَى.} Her kart bir kez kullanılacaktır. Her soruyla aynı türde bilgiyi veren cevap kartları hangi sırayla yerleştirilmelidir?",
       "secenekler": [
         "K – L – M",
         "L – M – K",
@@ -158,7 +158,7 @@
     },
     {
       "tur": "eslestir",
-      "yonerge": "İlişkili kavram ve açıklamaları eşleştiriniz.",
+      "yonerge": "Arapça sözcük ve ifadeleri Türkçe anlamlarıyla eşleştiriniz.",
       "ciftler": [
         [
           "{ar:مُسْتَشْفَى}",
@@ -170,11 +170,11 @@
         ],
         [
           "{ar:يُدَرِّسُ}",
-          "Ders verir."
+          "Ders verir"
         ],
         [
           "{ar:يَسُوقُ}",
-          "Araç sürer."
+          "Araç sürer"
         ]
       ]
     },
@@ -201,7 +201,7 @@
     },
     {
       "tur": "ogretici",
-      "soru": "Görevli bir kadına {ar:أَنْتِ تَعْمَلِينَ فِي الْمَصْنَعِ} diyor. Kadın hakkında başka birine bilgi verirken aynı cümle {ar:هِيَ} ile başlayacak. Cümleyi yeniden yazınız; hangi iki sözcük değişir?",
+      "soru": "Bir kadına {ar:أَنْتِ تَعْمَلِينَ فِي الْمَصْنَعِ} deniyor. Aynı kadın hakkında başka birine bilgi verirken cümle {ar:هِيَ} ile başlayacak. Cümleyi yeniden yazınız; hangi iki sözcük değişir?",
       "ipuclari": [
         "İlk cümlede kadın dinleyendir; ikinci cümlede onun hakkında konuşuluyor.",
         "Çalışılan yer değişmiyor. Kişi sözcüğü ile fiili birlikte düzenle."
@@ -223,5 +223,12 @@
     "Tekil, ikil ve çoğul biçimler kişi sayısına göre seçilir.",
     "Akrabaları tanıtan cümlelerde kişi, meslek ve fiil uyumu korunur."
   ],
-  "yazan": "Codex · Hesap E · 01a0f905-3dfa-7243-b40e-4220ac117f64"
+  "yazan": "Codex · Hesap E · 01a0f905-3dfa-7243-b40e-4220ac117f64",
+  "claude_denetim": {
+    "tarih": "2026-10-08",
+    "denetleyen": "Claude · MacBook (Pro hesap) · e03ec8e1",
+    "kapsam": "bolumler[4], ornekler[1–2], etkinlikler[1,4,6,7] bağlamıyla ana oturumda okundu; denetçinin 88 Arapça sözcük/hareke karşılaştırması (temiz) ve cevap anahtarı denetimi kabul edildi.",
+    "kaynak": "Denetçi: kitap-10-arapca-2026.pdf PDF s.9–31 görüntüleriyle sözcük sözcük karşılaştırma. Ana oturum: terim tutarlılığı dosya içinden, HTML çıktısında Arapça <bdi dir=\"rtl\"> sarmalı sınandı. Ayet/hadis atfı yok.",
+    "durum": "Baştan okundu; 7 düzeltme işlendi (yüksek 0, orta 0, düşük 7); 1 bulgu reddedildi."
+  }
 }
