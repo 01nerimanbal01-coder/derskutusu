@@ -1,0 +1,253 @@
+{
+ "sinif": 5,
+ "ders": "matematik",
+ "hafta": 4,
+ "tarih": "5-9 Ekim 2026",
+ "yayin_tarihi": "2026-10-09",
+ "unite": "Geometrik Şekiller",
+ "konu": "Açı Ölçme: Doğruların Oluşturduğu Açılar",
+ "ciktilar": [
+  "MAT.5.3.4. Düzlemde iki veya üç doğrunun birbirine göre durumuna bağlı olarak oluşabilecek açılara dair çıkarım yapabilme"
+ ],
+ "giris": "Geçen hafta açıları derece cinsinden ölçmeyi ve eş açıları tanımayı öğrendin. Bu hafta iki ya da üç doğru çizildiğinde hangi açıların oluşabileceğini önce tahmin edecek, sonra ölçerek sınayacak ve bulduklarını önerme biçiminde ifade edeceksin.",
+ "bolumler": [
+  {
+   "baslik": "Doğruların birbirine göre üç durumu",
+   "metin": [
+    "Düzlemde iki doğruyu birlikte düşündüğünde onların birbirine göre durumunu ortak noktalarına bakarak belirlersin. Yalnız bir ortak noktası olan doğrulara kesişen doğrular denir; bu ortak nokta kesişim noktasıdır.",
+    "Hiç ortak noktası bulunmayan doğrular paraleldir. Bu doğrular birbirini kesmediği için aralarında açı oluşmaz. Üç doğrunun üçü de birbirine paralelse bu durum {dogru:AB} // {dogru:CD} // {dogru:EF} biçiminde gösterilir.",
+    "Bütün noktaları ortak olan doğrular çakışıktır; iki doğru üst üste çizilmiş gibi görünür. Üç durumu birbirinden ayırmak için ortak nokta sayısına bakarsın: bir nokta, hiç nokta ya da bütün noktalar."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Hatırla",
+    "metin": "Doğru iki yönde de sonsuza kadar uzanır. Kâğıtta kesişmiyormuş gibi görünen iki doğrunun kesişip kesişmediğine, onları uzatılmış düşünerek karar ver."
+   },
+   "gorsel": "<svg viewBox=\"0 0 480 168\" role=\"img\" aria-label=\"İki doğrunun üç durumu: kesişen doğruların bir ortak noktası vardır, paralel doğruların ortak noktası yoktur, çakışık doğruların bütün noktaları ortaktır.\"><defs><marker id=\"ok4k\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-tf\"/></marker><marker id=\"ok4p\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-mf\"/></marker><marker id=\"ok4c\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-yf\"/></marker></defs><line x1=\"35.8\" y1=\"93.0\" x2=\"124.2\" y2=\"31.0\" class=\"g-ts\" stroke-width=\"3\" stroke-linecap=\"round\" marker-start=\"url(#ok4k)\" marker-end=\"url(#ok4k)\"/><line x1=\"111.0\" y1=\"106.2\" x2=\"49.0\" y2=\"17.8\" class=\"g-ts\" stroke-width=\"3\" stroke-linecap=\"round\" marker-start=\"url(#ok4k)\" marker-end=\"url(#ok4k)\"/><circle cx=\"80\" cy=\"62\" r=\"6\" class=\"g-tf\"/><text x=\"80\" y=\"140\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-tf\">Kesişen doğrular</text><text x=\"80\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" class=\"g-s\">bir ortak nokta</text><line x1=\"184\" y1=\"42\" x2=\"296\" y2=\"42\" class=\"g-ms\" stroke-width=\"3\" stroke-linecap=\"round\" marker-start=\"url(#ok4p)\" marker-end=\"url(#ok4p)\"/><line x1=\"184\" y1=\"82\" x2=\"296\" y2=\"82\" class=\"g-ms\" stroke-width=\"3\" stroke-linecap=\"round\" marker-start=\"url(#ok4p)\" marker-end=\"url(#ok4p)\"/><text x=\"240\" y=\"140\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-mf\">Paralel doğrular</text><text x=\"240\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" class=\"g-s\">ortak nokta yok</text><line x1=\"344\" y1=\"62\" x2=\"456\" y2=\"62\" class=\"g-ys\" stroke-width=\"10\" stroke-linecap=\"round\" opacity=\".28\"/><line x1=\"344\" y1=\"62\" x2=\"456\" y2=\"62\" class=\"g-ys\" stroke-width=\"3\" stroke-linecap=\"round\" marker-start=\"url(#ok4c)\" marker-end=\"url(#ok4c)\"/><text x=\"400\" y=\"140\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-yf\">Çakışık doğrular</text><text x=\"400\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" class=\"g-s\">bütün noktalar ortak</text></svg>"
+  },
+  {
+   "baslik": "İki doğru kesişince oluşan açılar",
+   "metin": [
+    "İki doğru bir noktada kesiştiğinde o noktanın çevresinde dört açı oluşur. Açıölçerle ölçersen bu açıların ya ikisinin dar, ikisinin geniş olduğunu ya da dördünün de dik olduğunu görürsün.",
+    "Kesişim noktasında ölçüleri toplamı 180° olan açı çiftleri bulunur. Örneğin açılardan biri 70° ise yanındaki açı 110° ölçüsündedir.",
+    "Kesiştikleri noktada oluşan açıların ölçüsü 90° olan doğrulara dik doğrular denir ve {dogru:AB} ⊥ {dogru:CD} biçiminde gösterilir. Dikdörtgen biçimli bir kâğıdı önce kısa kenarlarını, sonra uzun kenarlarını çakıştırarak katlarsan iki katlama izi bir dik doğru modeli verir. Kesişim noktasındaki dört açıyı ölçersen her birinin 90° olduğunu bulursun."
+   ],
+   "kutu": {
+    "tur": "tanim",
+    "baslik": "Dik doğrular",
+    "metin": "Kesişim noktasında dört dik açı oluşturan doğrulara dik doğrular denir."
+   }
+  },
+  {
+   "baslik": "Ters açılar ve komşu açılar",
+   "metin": [
+    "{dogru:KM} ve {dogru:LN} doğruları O noktasında kesişsin. Birbirine zıt yönlere bakan iki açıya ters açılar adı verilir. {aci:KOL} ile {aci:MON} bir ters açı çiftidir; {aci:LOM} ile {aci:KON} de öyledir. Ters açılar eş ölçülüdür.",
+    "Köşesi ve bir kolu ortak olup öbür kolları ortak kolun iki ayrı yanında yer alan açılar komşu açılardır. {aci:KOL} ile {aci:LOM} komşu açılardır; köşeleri O, ortak kolları {isin:OL} ışınıdır. Şekilde dar açıların ölçüsü 60°, geniş açıların ölçüsü 120° çıkar. Komşu iki açının ölçüleri toplamı 60° + 120° = 180° eder."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "metin": "Ters açıların yalnız köşeleri ortaktır; bu açılar komşu değildir. Komşu açıların ölçüleri ise birbirine eşit olmak zorunda değildir."
+   },
+   "gorsel": "<svg viewBox=\"0 0 480 208\" role=\"img\" aria-label=\"KM ve LN doğruları O noktasında kesişir. Karşılıklı dar açılar 60 derece, karşılıklı geniş açılar 120 derecedir; ters açılar eştir, komşu iki açının toplamı 180 derecedir.\"><defs><marker id=\"ok4gb\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-s\"/></marker></defs><path d=\"M140 102 L98.4 78.0 A48 48 0 0 0 98.4 126.0 Z\" class=\"g-ma\"/><path d=\"M98.4 78.0 A48 48 0 0 0 98.4 126.0\" class=\"g-ms\" stroke-width=\"2\"/><path d=\"M140 102 L181.6 126.0 A48 48 0 0 0 181.6 78.0 Z\" class=\"g-ma\"/><path d=\"M181.6 126.0 A48 48 0 0 0 181.6 78.0\" class=\"g-ms\" stroke-width=\"2\"/><path d=\"M140 102 L181.6 78.0 A48 48 0 0 0 98.4 78.0 Z\" class=\"g-ta\"/><path d=\"M181.6 78.0 A48 48 0 0 0 98.4 78.0\" class=\"g-ts\" stroke-width=\"2\"/><path d=\"M140 102 L98.4 126.0 A48 48 0 0 0 181.6 126.0 Z\" class=\"g-ta\"/><path d=\"M98.4 126.0 A48 48 0 0 0 181.6 126.0\" class=\"g-ts\" stroke-width=\"2\"/><line x1=\"46.5\" y1=\"156.0\" x2=\"233.5\" y2=\"48.0\" class=\"g-c\" stroke-width=\"3\" stroke-linecap=\"round\" marker-start=\"url(#ok4gb)\" marker-end=\"url(#ok4gb)\"/><line x1=\"233.5\" y1=\"156.0\" x2=\"46.5\" y2=\"48.0\" class=\"g-c\" stroke-width=\"3\" stroke-linecap=\"round\" marker-start=\"url(#ok4gb)\" marker-end=\"url(#ok4gb)\"/><circle cx=\"140\" cy=\"102\" r=\"4.5\" class=\"g-y\"/><text x=\"244.7\" y=\"43.0\" font-size=\"16\" font-weight=\"800\" class=\"g-y\">M</text><text x=\"23.3\" y=\"43.0\" font-size=\"16\" font-weight=\"800\" class=\"g-y\">L</text><text x=\"23.3\" y=\"173.0\" font-size=\"16\" font-weight=\"800\" class=\"g-y\">K</text><text x=\"244.7\" y=\"173.0\" font-size=\"16\" font-weight=\"800\" class=\"g-y\">N</text><text x=\"135\" y=\"124\" font-size=\"14\" font-weight=\"800\" class=\"g-y\">O</text><text x=\"70\" y=\"107\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-mf\">60°</text><text x=\"212\" y=\"107\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-mf\">60°</text><text x=\"140\" y=\"77\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">120°</text><text x=\"140\" y=\"140\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">120°</text><rect x=\"272\" y=\"40\" width=\"14\" height=\"14\" rx=\"3\" class=\"g-ma\"/><rect x=\"272\" y=\"40\" width=\"14\" height=\"14\" rx=\"3\" class=\"g-ms\" stroke-width=\"1.5\"/><text x=\"294\" y=\"52\" font-size=\"12\" class=\"g-y\">ters çift: 60° = 60°</text><rect x=\"272\" y=\"68\" width=\"14\" height=\"14\" rx=\"3\" class=\"g-ta\"/><rect x=\"272\" y=\"68\" width=\"14\" height=\"14\" rx=\"3\" class=\"g-ts\" stroke-width=\"1.5\"/><text x=\"294\" y=\"80\" font-size=\"12\" class=\"g-y\">ters çift: 120° = 120°</text><rect x=\"272\" y=\"104\" width=\"14\" height=\"14\" rx=\"3\" class=\"g-ma\"/><rect x=\"272\" y=\"104\" width=\"14\" height=\"14\" rx=\"3\" class=\"g-ms\" stroke-width=\"1.5\"/><rect x=\"290\" y=\"104\" width=\"14\" height=\"14\" rx=\"3\" class=\"g-ta\"/><rect x=\"290\" y=\"104\" width=\"14\" height=\"14\" rx=\"3\" class=\"g-ts\" stroke-width=\"1.5\"/><text x=\"312\" y=\"116\" font-size=\"12\" class=\"g-y\">komşu: 60° + 120° = 180°</text></svg>"
+  },
+  {
+   "baslik": "Üç doğru aynı noktada kesişirse",
+   "metin": [
+    "Üç doğru aynı noktada kesişince o noktanın çevresinde altı açı oluşur. Doğruların konumuna göre bu açılar üç farklı dağılımla karşına çıkar: ya 2 geniş ve 4 dar açı, ya 2 dik ve 4 dar açı, ya da altısı dar açı.",
+    "Böyle bir çizimde önce oluşan açıların çeşidini tahmin edersin. Sonra açıları adlandırıp açıölçerle ölçersin ve sonuçları tahminlerinle karşılaştırırsın. Tahminin ölçümle uyuşuyorsa doğrulanmış olur; uyuşmuyorsa tahminini gözden geçirirsin."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Hatırla",
+    "metin": "Açıyı adlandırırken köşe harfini ortaya yaz. Böylece hangi açıyı ölçtüğünü karıştırmazsın."
+   },
+   "gorsel": "<svg viewBox=\"0 0 480 194\" role=\"img\" aria-label=\"Üç doğru aynı noktada kesişince altı açı oluşur: ilk durumda iki geniş ve dört dar, ikinci durumda iki dik ve dört dar, üçüncü durumda altı dar açı.\"><defs><marker id=\"ok4gc\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-s\"/></marker></defs><path d=\"M80 82 L120.0 82.0 A40 40 0 0 0 114.6 62.0 Z\" class=\"g-ma\"/><path d=\"M120.0 82.0 A40 40 0 0 0 114.6 62.0\" class=\"g-ms\" stroke-width=\"2\"/><path d=\"M80 82 L114.6 62.0 A40 40 0 0 0 54.3 51.4 Z\" class=\"g-ta\"/><path d=\"M114.6 62.0 A40 40 0 0 0 54.3 51.4\" class=\"g-ts\" stroke-width=\"2\"/><path d=\"M80 82 L54.3 51.4 A40 40 0 0 0 40.0 82.0 Z\" class=\"g-ma\"/><path d=\"M54.3 51.4 A40 40 0 0 0 40.0 82.0\" class=\"g-ms\" stroke-width=\"2\"/><path d=\"M80 82 L40.0 82.0 A40 40 0 0 0 45.4 102.0 Z\" class=\"g-ma\"/><path d=\"M40.0 82.0 A40 40 0 0 0 45.4 102.0\" class=\"g-ms\" stroke-width=\"2\"/><path d=\"M80 82 L45.4 102.0 A40 40 0 0 0 105.7 112.6 Z\" class=\"g-ta\"/><path d=\"M45.4 102.0 A40 40 0 0 0 105.7 112.6\" class=\"g-ts\" stroke-width=\"2\"/><path d=\"M80 82 L105.7 112.6 A40 40 0 0 0 120.0 82.0 Z\" class=\"g-ma\"/><path d=\"M105.7 112.6 A40 40 0 0 0 120.0 82.0\" class=\"g-ms\" stroke-width=\"2\"/><line x1=\"18.0\" y1=\"82.0\" x2=\"142.0\" y2=\"82.0\" class=\"g-c\" stroke-width=\"3\" stroke-linecap=\"round\" marker-start=\"url(#ok4gc)\" marker-end=\"url(#ok4gc)\"/><line x1=\"26.3\" y1=\"113.0\" x2=\"133.7\" y2=\"51.0\" class=\"g-c\" stroke-width=\"3\" stroke-linecap=\"round\" marker-start=\"url(#ok4gc)\" marker-end=\"url(#ok4gc)\"/><line x1=\"119.9\" y1=\"129.5\" x2=\"40.1\" y2=\"34.5\" class=\"g-c\" stroke-width=\"3\" stroke-linecap=\"round\" marker-start=\"url(#ok4gc)\" marker-end=\"url(#ok4gc)\"/><circle cx=\"80\" cy=\"82\" r=\"3.5\" class=\"g-y\"/><text x=\"80\" y=\"166\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-tf\">2 geniş açı</text><text x=\"80\" y=\"186\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-mf\">4 dar açı</text><path d=\"M240 82 L280.0 82.0 A40 40 0 0 0 270.6 56.3 Z\" class=\"g-ma\"/><path d=\"M280.0 82.0 A40 40 0 0 0 270.6 56.3\" class=\"g-ms\" stroke-width=\"2\"/><path d=\"M240 82 L270.6 56.3 A40 40 0 0 0 240.0 42.0 Z\" class=\"g-ma\"/><path d=\"M270.6 56.3 A40 40 0 0 0 240.0 42.0\" class=\"g-ms\" stroke-width=\"2\"/><path d=\"M240 82 L240.0 42.0 A40 40 0 0 0 200.0 82.0 Z\" class=\"g-ya\"/><path d=\"M240.0 42.0 A40 40 0 0 0 200.0 82.0\" class=\"g-ys\" stroke-width=\"2\"/><path d=\"M240.0 69.0 L227.0 69.0 L227.0 82.0\" class=\"g-ys\" stroke-width=\"1.8\"/><path d=\"M240 82 L200.0 82.0 A40 40 0 0 0 209.4 107.7 Z\" class=\"g-ma\"/><path d=\"M200.0 82.0 A40 40 0 0 0 209.4 107.7\" class=\"g-ms\" stroke-width=\"2\"/><path d=\"M240 82 L209.4 107.7 A40 40 0 0 0 240.0 122.0 Z\" class=\"g-ma\"/><path d=\"M209.4 107.7 A40 40 0 0 0 240.0 122.0\" class=\"g-ms\" stroke-width=\"2\"/><path d=\"M240 82 L240.0 122.0 A40 40 0 0 0 280.0 82.0 Z\" class=\"g-ya\"/><path d=\"M240.0 122.0 A40 40 0 0 0 280.0 82.0\" class=\"g-ys\" stroke-width=\"2\"/><path d=\"M240.0 95.0 L253.0 95.0 L253.0 82.0\" class=\"g-ys\" stroke-width=\"1.8\"/><line x1=\"178.0\" y1=\"82.0\" x2=\"302.0\" y2=\"82.0\" class=\"g-c\" stroke-width=\"3\" stroke-linecap=\"round\" marker-start=\"url(#ok4gc)\" marker-end=\"url(#ok4gc)\"/><line x1=\"192.5\" y1=\"121.9\" x2=\"287.5\" y2=\"42.1\" class=\"g-c\" stroke-width=\"3\" stroke-linecap=\"round\" marker-start=\"url(#ok4gc)\" marker-end=\"url(#ok4gc)\"/><line x1=\"240.0\" y1=\"144.0\" x2=\"240.0\" y2=\"20.0\" class=\"g-c\" stroke-width=\"3\" stroke-linecap=\"round\" marker-start=\"url(#ok4gc)\" marker-end=\"url(#ok4gc)\"/><circle cx=\"240\" cy=\"82\" r=\"3.5\" class=\"g-y\"/><text x=\"240\" y=\"166\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-yf\">2 dik açı</text><text x=\"240\" y=\"186\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-mf\">4 dar açı</text><path d=\"M400 82 L440.0 82.0 A40 40 0 0 0 430.6 56.3 Z\" class=\"g-ma\"/><path d=\"M440.0 82.0 A40 40 0 0 0 430.6 56.3\" class=\"g-ms\" stroke-width=\"2\"/><path d=\"M400 82 L430.6 56.3 A40 40 0 0 0 393.1 42.6 Z\" class=\"g-ma\"/><path d=\"M430.6 56.3 A40 40 0 0 0 393.1 42.6\" class=\"g-ms\" stroke-width=\"2\"/><path d=\"M400 82 L393.1 42.6 A40 40 0 0 0 360.0 82.0 Z\" class=\"g-ma\"/><path d=\"M393.1 42.6 A40 40 0 0 0 360.0 82.0\" class=\"g-ms\" stroke-width=\"2\"/><path d=\"M400 82 L360.0 82.0 A40 40 0 0 0 369.4 107.7 Z\" class=\"g-ma\"/><path d=\"M360.0 82.0 A40 40 0 0 0 369.4 107.7\" class=\"g-ms\" stroke-width=\"2\"/><path d=\"M400 82 L369.4 107.7 A40 40 0 0 0 406.9 121.4 Z\" class=\"g-ma\"/><path d=\"M369.4 107.7 A40 40 0 0 0 406.9 121.4\" class=\"g-ms\" stroke-width=\"2\"/><path d=\"M400 82 L406.9 121.4 A40 40 0 0 0 440.0 82.0 Z\" class=\"g-ma\"/><path d=\"M406.9 121.4 A40 40 0 0 0 440.0 82.0\" class=\"g-ms\" stroke-width=\"2\"/><line x1=\"338.0\" y1=\"82.0\" x2=\"462.0\" y2=\"82.0\" class=\"g-c\" stroke-width=\"3\" stroke-linecap=\"round\" marker-start=\"url(#ok4gc)\" marker-end=\"url(#ok4gc)\"/><line x1=\"352.5\" y1=\"121.9\" x2=\"447.5\" y2=\"42.1\" class=\"g-c\" stroke-width=\"3\" stroke-linecap=\"round\" marker-start=\"url(#ok4gc)\" marker-end=\"url(#ok4gc)\"/><line x1=\"410.8\" y1=\"143.1\" x2=\"389.2\" y2=\"20.9\" class=\"g-c\" stroke-width=\"3\" stroke-linecap=\"round\" marker-start=\"url(#ok4gc)\" marker-end=\"url(#ok4gc)\"/><circle cx=\"400\" cy=\"82\" r=\"3.5\" class=\"g-y\"/><text x=\"400\" y=\"166\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-mf\">6 dar açı</text></svg>"
+  },
+  {
+   "baslik": "Tümler ve bütünler açılar",
+   "metin": [
+    "İki açının ölçülerini toplayınca 90° buluyorsan bu açılar birbirinin tümleridir; 180° buluyorsan birbirinin bütünleridir. Bu açılar aynı zamanda komşuysa komşu tümler ya da komşu bütünler açılar adını alır. Tümler veya bütünler açıların komşu olması şart değildir.",
+    "Üç doğru B noktasında kesişsin: yatay doğru {dogru:AC}, dikey doğru {dogru:EH}, eğik doğru {dogru:DF} olsun. Bu çizimde {olcu:FBC} = 32° olduğunu varsay. {aci:FBH} açısı, {aci:FBC} ile komşu tümler olduğundan ölçüsü 90° − 32° = 58° olur. {aci:FBA} açısı ise {aci:FBC} ile komşu bütünlerdir; ölçüsü 180° − 32° = 148° bulunur.",
+    "{aci:ABD} açısı, {aci:FBC} açısının ters açısı olduğu için 32°'dir. Bu açı {aci:FBH} ile komşu değildir; ama 32° + 58° = 90° olduğundan ikisi tümler açılardır."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Tümlerini ve bütünlerini bulma",
+    "metin": "Bir açının tümlerini bulmak için ölçüsünü 90°'den, bütünlerini bulmak için 180°'den çıkarırsın."
+   },
+   "gorsel": "<svg viewBox=\"0 0 450 250\" role=\"img\" aria-label=\"B noktasında kesişen AC, EH ve DF doğrularında FBC açısı 32 derecedir. Komşu tümler açısı FBH 58 derece, komşu bütünler açısı FBA 148 derecedir.\"><defs><marker id=\"ok4gd\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-s\"/></marker></defs><path d=\"M150 158 L222.0 158.0 A72 72 0 0 0 211.1 119.8 Z\" class=\"g-ma\"/><path d=\"M222.0 158.0 A72 72 0 0 0 211.1 119.8\" class=\"g-ms\" stroke-width=\"2\"/><path d=\"M150 158 L211.1 119.8 A72 72 0 0 0 150.0 86.0 Z\" class=\"g-ya\"/><path d=\"M211.1 119.8 A72 72 0 0 0 150.0 86.0\" class=\"g-ys\" stroke-width=\"2\"/><path d=\"M239.9 101.8 A106 106 0 0 0 44.0 158.0\" class=\"g-os\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/><line x1=\"150\" y1=\"158\" x2=\"26.0\" y2=\"158.0\" class=\"g-c\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#ok4gd)\"/><line x1=\"150\" y1=\"158\" x2=\"274.0\" y2=\"158.0\" class=\"g-c\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#ok4gd)\"/><line x1=\"150\" y1=\"158\" x2=\"150.0\" y2=\"32.0\" class=\"g-c\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#ok4gd)\"/><line x1=\"150\" y1=\"158\" x2=\"150.0\" y2=\"216.0\" class=\"g-c\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#ok4gd)\"/><line x1=\"150\" y1=\"158\" x2=\"258.6\" y2=\"90.2\" class=\"g-c\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#ok4gd)\"/><line x1=\"150\" y1=\"158\" x2=\"41.4\" y2=\"225.8\" class=\"g-c\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#ok4gd)\"/><circle cx=\"150\" cy=\"158\" r=\"4.5\" class=\"g-y\"/><text x=\"14.0\" y=\"152.0\" font-size=\"16\" font-weight=\"800\" class=\"g-y\">A</text><text x=\"282.0\" y=\"163.0\" font-size=\"16\" font-weight=\"800\" class=\"g-y\">C</text><text x=\"145.0\" y=\"24.0\" font-size=\"16\" font-weight=\"800\" class=\"g-y\">H</text><text x=\"145.0\" y=\"236.0\" font-size=\"16\" font-weight=\"800\" class=\"g-y\">E</text><text x=\"266.6\" y=\"86.2\" font-size=\"16\" font-weight=\"800\" class=\"g-y\">F</text><text x=\"25.4\" y=\"241.8\" font-size=\"16\" font-weight=\"800\" class=\"g-y\">D</text><text x=\"159\" y=\"178\" font-size=\"16\" font-weight=\"800\" class=\"g-y\">B</text><text x=\"246.3\" y=\"136.5\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-mf\">32°</text><text x=\"174.3\" y=\"122.8\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-yf\">58°</text><text x=\"111.7\" y=\"45.1\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-of\">148°</text><rect x=\"300\" y=\"60\" width=\"14\" height=\"14\" rx=\"3\" class=\"g-ma\"/><rect x=\"300\" y=\"60\" width=\"14\" height=\"14\" rx=\"3\" class=\"g-ms\" stroke-width=\"1.5\"/><text x=\"322\" y=\"72\" font-size=\"12\" class=\"g-y\">32° (verilen açı)</text><rect x=\"300\" y=\"90\" width=\"14\" height=\"14\" rx=\"3\" class=\"g-ya\"/><rect x=\"300\" y=\"90\" width=\"14\" height=\"14\" rx=\"3\" class=\"g-ys\" stroke-width=\"1.5\"/><text x=\"322\" y=\"102\" font-size=\"12\" class=\"g-y\">58° = 90° − 32°</text><text x=\"322\" y=\"118\" font-size=\"12\" class=\"g-s\">komşu tümler</text><line x1=\"300\" y1=\"140\" x2=\"314\" y2=\"140\" class=\"g-os\" stroke-width=\"3\" stroke-dasharray=\"4 3\"/><text x=\"322\" y=\"144\" font-size=\"12\" class=\"g-y\">148° = 180° − 32°</text><text x=\"322\" y=\"160\" font-size=\"12\" class=\"g-s\">komşu bütünler</text></svg>"
+  },
+  {
+   "baslik": "Üç doğrunun ikişer kesişimi ve kesen",
+   "metin": [
+    "Üç doğru ikişer ikişer kesişiyorsa üç ayrı kesişim noktası oluşur ve her noktada dört açı vardır. Bu durumda toplam on iki açıdan altısı dar, altısı geniş olabilir; ya da dördü dik, dördü dar, dördü geniş olabilir. Üçgen biçimli bir yol reflektörünün kenarlarını uzattığında bu duruma bir örnek elde edersin.",
+    "Bir doğru, iki doğrunun her birini ayrı birer noktada keserse bu doğru o iki doğrunun keseni olur. Kesen, iki paralel doğruyu keserse iki kesişim noktası oluşur. Kesen paralel doğrulara dik değilse sekiz açının dördü dar, dördü geniş olur; kesen dikse sekiz açının hepsi diktir.",
+    "Çizimi şeffaf bir kâğıda yapıp paralel doğruların arasından onlara paralel biçimde makasla keserek iki parçaya ayırırsan bu parçaları kesişim noktaları üst üste gelecek biçimde yerleştirebilirsin. Üst üste oturan açılar eştir. Böylece paralel doğruların kesenle yaptığı dar açıların kendi aralarında, geniş açıların da kendi aralarında eş olduğunu görürsün."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Önerme kurarken",
+    "metin": "Gözleminden bir önerme çıkardığında onu başka doğru çiftleriyle de dene. Aynı sonuç çıkıyorsa önermen güçlenir; farklı çıkıyorsa önermeni düzeltirsin. Aynı yolu üçten fazla doğru için de kullanabilirsin."
+   },
+   "gorsel": "<svg viewBox=\"0 0 420 208\" role=\"img\" aria-label=\"İki paralel doğruyu bir kesen kestiğinde iki kesişim noktasında dört dar ve dört geniş açı oluşur.\"><defs><marker id=\"ok4ge\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-s\"/></marker></defs><path d=\"M160 64 L187.0 64.0 A27 27 0 0 0 175.5 41.9 Z\" class=\"g-ma\"/><path d=\"M187.0 64.0 A27 27 0 0 0 175.5 41.9\" class=\"g-ms\" stroke-width=\"2\"/><path d=\"M160 64 L133.0 64.0 A27 27 0 0 0 144.5 86.1 Z\" class=\"g-ma\"/><path d=\"M133.0 64.0 A27 27 0 0 0 144.5 86.1\" class=\"g-ms\" stroke-width=\"2\"/><path d=\"M160 64 L175.5 41.9 A27 27 0 0 0 133.0 64.0 Z\" class=\"g-ta\"/><path d=\"M175.5 41.9 A27 27 0 0 0 133.0 64.0\" class=\"g-ts\" stroke-width=\"2\"/><path d=\"M160 64 L144.5 86.1 A27 27 0 0 0 187.0 64.0 Z\" class=\"g-ta\"/><path d=\"M144.5 86.1 A27 27 0 0 0 187.0 64.0\" class=\"g-ts\" stroke-width=\"2\"/><path d=\"M101.18256679038437 148 L128.2 148.0 A27 27 0 0 0 116.7 125.9 Z\" class=\"g-ma\"/><path d=\"M128.2 148.0 A27 27 0 0 0 116.7 125.9\" class=\"g-ms\" stroke-width=\"2\"/><path d=\"M101.18256679038437 148 L74.2 148.0 A27 27 0 0 0 85.7 170.1 Z\" class=\"g-ma\"/><path d=\"M74.2 148.0 A27 27 0 0 0 85.7 170.1\" class=\"g-ms\" stroke-width=\"2\"/><path d=\"M101.18256679038437 148 L116.7 125.9 A27 27 0 0 0 74.2 148.0 Z\" class=\"g-ta\"/><path d=\"M116.7 125.9 A27 27 0 0 0 74.2 148.0\" class=\"g-ts\" stroke-width=\"2\"/><path d=\"M101.18256679038437 148 L85.7 170.1 A27 27 0 0 0 128.2 148.0 Z\" class=\"g-ta\"/><path d=\"M85.7 170.1 A27 27 0 0 0 128.2 148.0\" class=\"g-ts\" stroke-width=\"2\"/><line x1=\"20\" y1=\"64\" x2=\"262\" y2=\"64\" class=\"g-c\" stroke-width=\"3\" stroke-linecap=\"round\" marker-start=\"url(#ok4ge)\" marker-end=\"url(#ok4ge)\"/><line x1=\"20\" y1=\"148\" x2=\"262\" y2=\"148\" class=\"g-c\" stroke-width=\"3\" stroke-linecap=\"round\" marker-start=\"url(#ok4ge)\" marker-end=\"url(#ok4ge)\"/><line x1=\"70.4\" y1=\"192.0\" x2=\"190.8\" y2=\"20.0\" class=\"g-c\" stroke-width=\"3\" stroke-linecap=\"round\" marker-start=\"url(#ok4ge)\" marker-end=\"url(#ok4ge)\"/><text x=\"200.8\" y=\"24.0\" font-size=\"14\" font-weight=\"800\" class=\"g-y\">kesen</text><text x=\"166\" y=\"112\" font-size=\"12.5\" class=\"g-s\">paralel doğrular</text><rect x=\"296\" y=\"70\" width=\"14\" height=\"14\" rx=\"3\" class=\"g-ma\"/><rect x=\"296\" y=\"70\" width=\"14\" height=\"14\" rx=\"3\" class=\"g-ms\" stroke-width=\"1.5\"/><text x=\"318\" y=\"82\" font-size=\"12\" class=\"g-y\">4 dar açı</text><rect x=\"296\" y=\"98\" width=\"14\" height=\"14\" rx=\"3\" class=\"g-ta\"/><rect x=\"296\" y=\"98\" width=\"14\" height=\"14\" rx=\"3\" class=\"g-ts\" stroke-width=\"1.5\"/><text x=\"318\" y=\"110\" font-size=\"12\" class=\"g-y\">4 geniş açı</text></svg>"
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Üç doğru çiftinin durumu şöyle verilmiştir. I. {dogru:AB} ve {dogru:CD} doğrularının hiç ortak noktası yoktur. II. {dogru:EF} ve {dogru:GH} doğrularının yalnız bir ortak noktası vardır. III. {dogru:KL} ve {dogru:MN} doğrularının bütün noktaları ortaktır. Her çiftin durumunu adlandır. Hangisinde kesişim noktasında açı oluşur?",
+   "cevap": "I'deki doğrular paralel, II'dekiler kesişen, III'tekiler çakışık doğrulardır. Kesişim noktasında açı II'de oluşur. I'de ortak nokta olmadığı için açı oluşmaz."
+  },
+  {
+   "soru": "İki doğru bir noktada kesişiyor ve oluşan açılardan biri 90° ölçülüyor. Öbür üç açı hakkında ne söylenebilir? Bu iki doğruya ne ad verilir ve nasıl gösterilir?",
+   "cevap": "Kesişen iki doğrunun açıları ya ikisi dar, ikisi geniş olur ya da dördü de dik olur. Açılardan biri dik olduğuna göre dördü de dik açıdır; öbür üç açı da 90°'dir. Bu doğru çifti dik doğrular adıyla anılır ve {dogru:AB} ⊥ {dogru:CD} biçiminde gösterilir."
+  },
+  {
+   "soru": "{dogru:PS} ve {dogru:RT} doğruları V noktasında kesişiyor; P, R, S, T noktaları V'nin çevresinde bu sırayla dizilmiştir. {olcu:PVR} = 75° olduğuna göre {olcu:SVT}, {olcu:RVS} ve {olcu:TVP} kaç derecedir?",
+   "cevap": "{aci:SVT}, {aci:PVR} açısının ters açısıdır; ölçüsü 75°'dir. {aci:RVS} ile {aci:TVP} açıları {aci:PVR} açısına komşudur ve kesişen iki doğrunun oluşturduğu komşu açıların ölçüleri toplamı 180°'dir. Bu yüzden ikisi de 180° − 75° = 105°'dir."
+  },
+  {
+   "soru": "Bir öğrenci “Üç doğru aynı noktada kesişirse oluşan altı açıdan üçü dik açı olabilir.” önermesini sunuyor. Bu önerme doğru mudur? Gerekçeni söyle.",
+   "cevap": "Önerme doğru değildir. Üç doğru aynı noktada kesişince yalnız şu üç durum görülür: 2 geniş ve 4 dar açı, 2 dik ve 4 dar açı ya da 6 dar açı. Hiçbirinde üç dik açı yoktur. Ayrıca ters açılar eş olduğundan dik açılar çift sayıda bulunur."
+  },
+  {
+   "soru": "Ölçüsü 57° olan bir açının tümlerinin ve bütünlerinin ölçüsünü bul.",
+   "cevap": "Tümleri 90° − 57° = 33°, bütünleri 180° − 57° = 123°'dir. Kontrol: 57° + 33° = 90° ve 57° + 123° = 180° eder."
+  },
+  {
+   "soru": "{dogru:AB} // {dogru:CD} doğrularını {dogru:EF} doğrusu kesiyor. Oluşan açılardan biri 70° ölçüsündedir. Bu çizimde kaç dar, kaç geniş açı vardır? Dik açı bulunur mu?",
+   "cevap": "{dogru:EF}, paralel doğruların kesenidir. Açılardan biri 70° olduğundan kesen paralel doğrulara dik değildir. Bu durumda sekiz açının dördü dar, dördü geniş olur ve dik açı bulunmaz."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "İki doğru bir noktada kesiştiğinde oluşan dört açı için aşağıdakilerden hangisi görülebilir?",
+   "secenekler": [
+    "Üçü dar, biri geniş açı",
+    "İkisi dik, ikisi dar açı",
+    "İkisi dar, ikisi geniş açı",
+    "Üçü geniş, biri dar açı"
+   ],
+   "dogru": 2,
+   "aciklama": "İki doğru kesişince dört açıdan ikisi dar, ikisi geniş olur ya da dördü de dik olur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "{dogru:BD} ve {dogru:CE} doğruları F noktasında kesişiyor; B, C, D, E noktaları F'nin çevresinde bu sırayla dizilmiştir. Aşağıdaki açı çiftlerinden hangisi ters açılardır?",
+   "secenekler": [
+    "{aci:BFC} ve {aci:DFE}",
+    "{aci:BFC} ve {aci:CFD}",
+    "{aci:CFD} ve {aci:DFE}",
+    "{aci:DFE} ve {aci:EFB}"
+   ],
+   "dogru": 0,
+   "aciklama": "Ters açılar zıt yönlere bakar; {aci:BFC} ile {aci:DFE} ters açılardır. Öbür çiftler komşu açılardır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir yol reflektörünün üç kenarı doğru kabul edilip uzatılıyor ve bu doğrular ikişer ikişer kesişiyor. Kesişim noktalarında oluşan açıların sayısı kaçtır?",
+   "secenekler": [
+    "6",
+    "9",
+    "8",
+    "12"
+   ],
+   "dogru": 3,
+   "aciklama": "Üç kesişim noktası vardır ve her birinde dört açı oluşur: 3 × 4 = 12."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadelerden hangilerinin doğru, hangilerinin yanlış olduğunu belirle.",
+   "ifadeler": [
+    {
+     "metin": "Ortak noktası olmayan doğrular, kesişmedikleri için açı oluşturmaz.",
+     "dogru": true,
+     "aciklama": "Açı, kesişen doğruların ortak noktasında oluşur; paralel doğruların ortak noktası yoktur."
+    },
+    {
+     "metin": "Ölçüleri toplamı 180° olan iki açı, komşu olmasalar da bütünler açılardır.",
+     "dogru": true,
+     "aciklama": "Bütünler olmaları için ölçülerinin toplamının 180° olması yeter; komşu olmaları gerekmez."
+    },
+    {
+     "metin": "Çakışık doğruların ortak noktası bir tanedir.",
+     "dogru": false,
+     "aciklama": "Çakışık doğruların bütün noktaları ortaktır."
+    },
+    {
+     "metin": "Dik doğrular kesiştiğinde oluşan açılar arasında dar açı bulunur.",
+     "dogru": false,
+     "aciklama": "Dik doğruların kesişiminde dört açı da 90°'dir."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Kavramları açıklamalarıyla eşleştir.",
+   "ciftler": [
+    [
+     "Ters açılar",
+     "Zıt yönlere bakan ve ölçüleri eşit olanlar"
+    ],
+    [
+     "Komşu açılar",
+     "Bir kolu ortak, öbür kolları o kolun iki yanında olanlar"
+    ],
+    [
+     "Tümler açılar",
+     "Ölçüleri toplamı 90° olanlar"
+    ],
+    [
+     "Bütünler açılar",
+     "Ölçüleri toplamı 180° olanlar"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Hiç ortak noktası bulunmadığı için açı oluşturmayan doğrulara ___ doğrular denir.",
+     "cevap": "paralel"
+    },
+    {
+     "metin": "Yalnız bir ortak noktası olan iki doğrunun bu ortak noktasına ___ noktası denir.",
+     "cevap": "kesişim"
+    },
+    {
+     "metin": "Farklı birer noktada iki doğruyu kesen üçüncü doğruya bu iki doğrunun ___ denir.",
+     "cevap": "keseni"
+    }
+   ],
+   "fazla": [
+    "dik"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir öğrenci, üç doğru aynı noktada kesişirken oluşan altı açının hepsinin dar açı olabileceğini tahmin ediyor. Bu tahminin doğru olup olmadığını nasıl sınarsın?",
+   "ipuclari": [
+    "Önce açıları köşe harfi ortada olacak biçimde adlandır.",
+    "Her açıyı açıölçerle ölçüp ölçüleri tahminle karşılaştır."
+   ],
+   "cevap": "Açılar adlandırılıp açıölçerle ölçülür. Altı açının ölçüsü de 90°'den küçük çıkarsa tahmin doğrulanır. Üç doğru aynı noktada kesişirken görülen durumlardan biri altı dar açıdır; bu nedenle tahmin doğrudur."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir öğrenci iki doğrunun kesişiminde oluşan bir ters açı çiftini ölçüp ikisini de 40° buldu ve “Ters açıların ölçüleri eşittir.” önermesini sundu. Bu tek ölçüm önermeyi kabul etmek için yeterli midir?",
+   "ipuclari": [
+    "Aynı sonuç başka doğru çiftlerinde de çıkıyor mu?",
+    "Tek bir çizimde eşit çıkması rastlantı olabilir mi?"
+   ],
+   "cevap": "Yeterli değildir. Tek bir çizimde ölçüler rastlantıyla eşit çıkmış olabilir. Farklı açılarla kesişen başka doğru çiftleri çizilip ters açılar ölçülmelidir. Bunların hepsinde ölçüler eşit çıkarsa önerme desteklenmiş olur."
+  }
+ ],
+ "ozet": [
+  "Düzlemde iki doğru kesişen, paralel ya da çakışık olabilir; paralel doğruların ortak noktası olmadığı için aralarında açı oluşmaz.",
+  "İki doğru kesişince iki dar ile iki geniş ya da dört dik açı oluşur; ters açıların ölçüleri eşittir, kesişim noktasındaki komşu açıların ölçüleri toplamı 180°'dir.",
+  "Üç doğru aynı noktada kesişirse altı açı oluşur: iki geniş ile dört dar, iki dik ile dört dar ya da altı dar açı.",
+  "Ölçüleri toplamı 90° olan açılar tümler, 180° olan açılar bütünlerdir; komşu olanlara komşu tümler ve komşu bütünler denir.",
+  "Dik olmayan bir kesen iki paralel doğruyu keserse 4 dar ve 4 geniş açı oluşur; önermeler birden fazla örnekle sınanır."
+ ]
+}

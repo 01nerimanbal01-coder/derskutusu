@@ -1,0 +1,284 @@
+{
+ "sinif": 5,
+ "ders": "matematik",
+ "hafta": 3,
+ "tarih": "28 Eylül-2 Ekim 2026",
+ "yayin_tarihi": "2026-10-09",
+ "unite": "Geometrik Şekiller",
+ "konu": "Açı Ölçme: Derece ve Açıölçer",
+ "ciktilar": [
+  "MAT.5.3.3. Açıları ölçmek için matematiksel araç ve teknolojiden yararlanabilme"
+ ],
+ "giris": "Daha önce açıyı tanıdın ve ölçüsünün açıölçerle bulunduğunu öğrendin. Bu hafta açının büyüklüğünün ortak bir birimle nasıl ifade edildiğini ve açıölçerin nasıl kullanıldığını adım adım inceleyeceksin.",
+ "bolumler": [
+  {
+   "baslik": "Açının büyüklüğünü sayıyla ifade etmek",
+   "metin": [
+    "Bir dolap kapağının, makasın ya da pergelin kolları arasındaki açıklığı “biraz açık” ya da “çok açık” diye anlatırsak kesin bir bilgi vermiş olmayız. Açıklığı sayıyla söyleyebilmek için açıyı ölçmek gerekir. Ölçmek için de bir ölçü birimine ve bu birimle çalışan bir araca ihtiyaç vardır.",
+    "Daire biçimindeki bir kâğıdı katlayarak kendine ait bir açı birimi yapabilirsin. Ancak herkesin katladığı parça farklı büyüklükte olabilir. Böyle olunca aynı açıyı iki kişi farklı sayılarla ifade eder ve sonuçlar karşılaştırılamaz. Bu karışıklığı önlemek için herkesin aynı biçimde kullandığı ortak bir birim gerekir."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Hatırla",
+    "metin": "Açı, ışının ne kadar döndüğünü de anlatır. Bu yüzden bir açıyı ölçmek, dönmenin miktarını ölçmek demektir."
+   }
+  },
+  {
+   "baslik": "Tam açı, doğru açı",
+   "metin": [
+    "Bir ışını başlangıç noktası etrafında döndürdüğünde ışının ilk konumu ile son konumu arasında bir açı oluşur. Işın tek bir dönüşte ilk konumuna yeniden ulaşırsa bir tam tur atmış olur. Bu dönüşle oluşan açıya tam açı denir.",
+    "Işın yalnızca bu turun yarısı kadar dönerse oluşan açıya doğru açı denir. Doğru açı, tam açının yarısıdır; iki kolu bir doğru boyunca, birbirine ters yönde uzanır.",
+    "Tam açı daire biçimli bir açıölçerle, doğru açı ise yarım daire biçimli bir açıölçerle gösterilebilir."
+   ],
+   "kutu": {
+    "tur": "tanim",
+    "baslik": "Tam açı, doğru açı",
+    "metin": "Bir ışının tam tur dönmesiyle oluşan açı tam açıdır. Bunun yarısı kadar olan açıya ise doğru açı denir."
+   },
+   "gorsel": "<svg viewBox=\"0 0 440 194\" role=\"img\" aria-label=\"Tam açı ve doğru açı: ışının bir tam tur dönmesiyle tam açı, yarım tur dönmesiyle doğru açı oluşur.\"><defs><marker id=\"ok3tm\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-mf\"/></marker><marker id=\"ok3td\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-of\"/></marker></defs><circle cx=\"110\" cy=\"88\" r=\"44\" class=\"g-ma\"/><circle cx=\"110\" cy=\"88\" r=\"44\" class=\"g-ms\" stroke-width=\"1.5\"/><path d=\"M167.1 77.9 A58 58 0 1 0 166.3 102.0\" class=\"g-ms\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#ok3tm)\"/><line x1=\"110\" y1=\"88\" x2=\"194\" y2=\"88\" class=\"g-ms\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"110\" cy=\"88\" r=\"5\" class=\"g-mf\"/><text x=\"110\" y=\"170\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" class=\"g-mf\">Tam açı</text><text x=\"110\" y=\"187\" text-anchor=\"middle\" font-size=\"12.5\" class=\"g-s\">bir tam tur</text><path d=\"M330 88 L374.0 88.0 A44 44 0 0 0 286.0 88.0 Z\" class=\"g-oa\"/><path d=\"M374.0 88.0 A44 44 0 0 0 286.0 88.0\" class=\"g-os\" stroke-width=\"1.5\"/><path d=\"M387.1 77.9 A58 58 0 0 0 272.9 77.9\" class=\"g-os\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#ok3td)\"/><line x1=\"246\" y1=\"88\" x2=\"414\" y2=\"88\" class=\"g-os\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"330\" cy=\"88\" r=\"5\" class=\"g-of\"/><text x=\"330\" y=\"170\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" class=\"g-of\">Doğru açı</text><text x=\"330\" y=\"187\" text-anchor=\"middle\" font-size=\"12.5\" class=\"g-s\">yarım tur</text></svg>"
+  },
+  {
+   "baslik": "Derece ve özel açı ölçüleri",
+   "metin": [
+    "Tam açıyı birbirine eş 360 parçaya ayırırsan her parçanın ölçüsü 1 derecedir. Derece, sayının sağ üstüne konan küçük bir daire ile gösterilir: 1°. Derece standart bir birimdir. Açıölçerin üzerindeki çizgiler de derecelere göre bölünmüştür; böylece farklı kişiler aynı açıyı aynı sayıyla ifade eder.",
+    "Doğru açı, tam açının yarısı olduğu için ölçüsü 180°, tam açının ölçüsü ise 360°'dir. Dik açının ölçüsü 90°'dir. Ölçüsü 90°'den küçük açılara dar açı, ölçüsü 90° ile 180° arasında olan açılara geniş açı denir.",
+    "Bu ölçülere bakarak açıları büyüklüklerine göre sıralayabilirsin: dar açı dik açıdan küçüktür, geniş açı dik açıdan büyüktür, doğru açı geniş açılardan da büyüktür. Tam açı ise bunların hepsinden büyük ölçüdedir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Açı",
+     "Ölçüsü"
+    ],
+    "satirlar": [
+     [
+      "Dar açı",
+      "90°'den küçük"
+     ],
+     [
+      "Dik açı",
+      "90°"
+     ],
+     [
+      "Geniş açı",
+      "90°'den büyük, 180°'den küçük"
+     ],
+     [
+      "Doğru açı",
+      "180°"
+     ],
+     [
+      "Tam açı",
+      "360°"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Aklında tut",
+    "metin": "Özel açı ölçüleri: dik açı 90°, doğru açı 180°, tam açı 360°."
+   },
+   "gorsel": "<svg viewBox=\"0 0 450 182\" role=\"img\" aria-label=\"Dik açının ölçüsü 90 derece, doğru açının ölçüsü 180 derece, tam açının ölçüsü 360 derecedir.\"><defs><marker id=\"ok3y\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-yf\"/></marker><marker id=\"ok3d\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-of\"/></marker><marker id=\"ok3m\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-mf\"/></marker></defs><path d=\"M78 116 L114.0 116.0 A36 36 0 0 0 78.0 80.0 Z\" class=\"g-ya\"/><path d=\"M114.0 116.0 A36 36 0 0 0 78.0 80.0\" class=\"g-ys\" stroke-width=\"1.5\"/><line x1=\"78\" y1=\"116\" x2=\"142\" y2=\"116\" class=\"g-ys\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#ok3y)\"/><line x1=\"78\" y1=\"116\" x2=\"78\" y2=\"52\" class=\"g-ys\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#ok3y)\"/><circle cx=\"78\" cy=\"116\" r=\"4.5\" class=\"g-yf\"/><text x=\"118\" y=\"80\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-yf\">90°</text><text x=\"78\" y=\"170\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"800\" class=\"g-yf\">Dik açı</text><path d=\"M225 116 L265.0 116.0 A40 40 0 0 0 185.0 116.0 Z\" class=\"g-oa\"/><path d=\"M265.0 116.0 A40 40 0 0 0 185.0 116.0\" class=\"g-os\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"116\" x2=\"289\" y2=\"116\" class=\"g-os\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#ok3d)\"/><line x1=\"225\" y1=\"116\" x2=\"161\" y2=\"116\" class=\"g-os\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#ok3d)\"/><circle cx=\"225\" cy=\"116\" r=\"4.5\" class=\"g-of\"/><text x=\"225\" y=\"99\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-of\">180°</text><text x=\"225\" y=\"170\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"800\" class=\"g-of\">Doğru açı</text><circle cx=\"372\" cy=\"116\" r=\"40\" class=\"g-ma\"/><circle cx=\"372\" cy=\"116\" r=\"40\" class=\"g-ms\" stroke-width=\"1.5\"/><line x1=\"372\" y1=\"116\" x2=\"438\" y2=\"116\" class=\"g-ms\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#ok3m)\"/><circle cx=\"372\" cy=\"116\" r=\"4.5\" class=\"g-mf\"/><text x=\"366\" y=\"102\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-mf\">360°</text><text x=\"372\" y=\"170\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"800\" class=\"g-mf\">Tam açı</text></svg>"
+  },
+  {
+   "baslik": "Açıölçerle açı ölçme",
+   "metin": [
+    "Ölçmek istediğin açının köşesini açıölçerin merkezine yerleştir. Sonra kollardan birini açıölçerin 0° çizgisinin üzerine getir. Öbür kolun açıölçer üzerinde gösterdiği sayı açının ölçüsüdür.",
+    "Açının kolları kâğıtta uzatılsa bile ölçüsü değişmez; çünkü ölçü, kolların uzunluğuna değil aralarındaki dönme miktarına bağlıdır.",
+    "Ölçüyü yazarken açının adı m harfiyle birlikte kullanılır. Köşesi B olan, kolları {isin:BA} ve {isin:BC} olan açının ölçüsü 45° ise bunu {olcu:ABC} = 45° biçiminde yazarsın. Aynı açı {aci:CBA} ya da {aci:B} diye de adlandırılabildiği için {olcu:CBA} = 45° ve {olcu:B} = 45° yazımları da aynı ölçüyü anlatır."
+   ],
+   "kutular": [
+    {
+     "tur": "dikkat",
+     "metin": "Açıölçerin merkezi köşeye, 0° çizgisi de bir kola oturmalıdır. Bunlardan biri yerinden kaymışsa okuduğun sayı açının ölçüsünü vermez."
+    },
+    {
+     "tur": "bilgi",
+     "baslik": "Teknoloji",
+     "metin": "Dinamik matematik yazılımı, açıölçerle yaptığın ölçme ve çizme işlemlerini bilgisayar ekranında da yapmanı sağlar."
+    }
+   ],
+   "gorsel": "<svg viewBox=\"0 0 340 224\" role=\"img\" aria-label=\"Açıölçerle ölçme: ABC açısının köşesi B açıölçerin merkezindedir, BC kolu 0 derece çizgisinin üzerindedir, BA kolu 45 dereceyi gösterir; m(ABC) = 45 derece.\"><defs><marker id=\"ok3a\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-tf\"/></marker></defs><path d=\"M30 170 A140 140 0 0 1 310 170 Z\" class=\"g-ma\"/><path d=\"M30 170 A140 140 0 0 1 310 170 Z\" class=\"g-ms\" stroke-width=\"2\"/><line x1=\"310.0\" y1=\"170.0\" x2=\"296.0\" y2=\"170.0\" class=\"g-ms\" stroke-width=\"1.5\"/><line x1=\"307.9\" y1=\"145.7\" x2=\"300.0\" y2=\"147.1\" class=\"g-ms\" stroke-width=\"1\"/><line x1=\"301.6\" y1=\"122.1\" x2=\"294.0\" y2=\"124.9\" class=\"g-ms\" stroke-width=\"1\"/><line x1=\"291.2\" y1=\"100.0\" x2=\"279.1\" y2=\"107.0\" class=\"g-ms\" stroke-width=\"1.5\"/><line x1=\"277.2\" y1=\"80.0\" x2=\"271.1\" y2=\"85.2\" class=\"g-ms\" stroke-width=\"1\"/><line x1=\"260.0\" y1=\"62.8\" x2=\"254.8\" y2=\"68.9\" class=\"g-ms\" stroke-width=\"1\"/><line x1=\"240.0\" y1=\"48.8\" x2=\"233.0\" y2=\"60.9\" class=\"g-ms\" stroke-width=\"1.5\"/><line x1=\"217.9\" y1=\"38.4\" x2=\"215.1\" y2=\"46.0\" class=\"g-ms\" stroke-width=\"1\"/><line x1=\"194.3\" y1=\"32.1\" x2=\"192.9\" y2=\"40.0\" class=\"g-ms\" stroke-width=\"1\"/><line x1=\"170.0\" y1=\"30.0\" x2=\"170.0\" y2=\"44.0\" class=\"g-ms\" stroke-width=\"1.5\"/><line x1=\"145.7\" y1=\"32.1\" x2=\"147.1\" y2=\"40.0\" class=\"g-ms\" stroke-width=\"1\"/><line x1=\"122.1\" y1=\"38.4\" x2=\"124.9\" y2=\"46.0\" class=\"g-ms\" stroke-width=\"1\"/><line x1=\"100.0\" y1=\"48.8\" x2=\"107.0\" y2=\"60.9\" class=\"g-ms\" stroke-width=\"1.5\"/><line x1=\"80.0\" y1=\"62.8\" x2=\"85.2\" y2=\"68.9\" class=\"g-ms\" stroke-width=\"1\"/><line x1=\"62.8\" y1=\"80.0\" x2=\"68.9\" y2=\"85.2\" class=\"g-ms\" stroke-width=\"1\"/><line x1=\"48.8\" y1=\"100.0\" x2=\"60.9\" y2=\"107.0\" class=\"g-ms\" stroke-width=\"1.5\"/><line x1=\"38.4\" y1=\"122.1\" x2=\"46.0\" y2=\"124.9\" class=\"g-ms\" stroke-width=\"1\"/><line x1=\"32.1\" y1=\"145.7\" x2=\"40.0\" y2=\"147.1\" class=\"g-ms\" stroke-width=\"1\"/><line x1=\"30.0\" y1=\"170.0\" x2=\"44.0\" y2=\"170.0\" class=\"g-ms\" stroke-width=\"1.5\"/><text x=\"282.0\" y=\"162.0\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" class=\"g-y\">0°</text><text x=\"267.0\" y=\"118.0\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" class=\"g-y\">30°</text><text x=\"226.0\" y=\"77.0\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" class=\"g-y\">60°</text><text x=\"170.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" class=\"g-y\">90°</text><text x=\"114.0\" y=\"77.0\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" class=\"g-y\">120°</text><text x=\"73.0\" y=\"118.0\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" class=\"g-y\">150°</text><text x=\"58.0\" y=\"162.0\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" class=\"g-y\">180°</text><path d=\"M170 170 L236.0 170.0 A66 66 0 0 0 216.7 123.3 Z\" class=\"g-ta\"/><path d=\"M236.0 170.0 A66 66 0 0 0 216.7 123.3\" class=\"g-ts\" stroke-width=\"2\"/><line x1=\"170\" y1=\"170\" x2=\"277.5\" y2=\"62.5\" class=\"g-ts\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#ok3a)\"/><line x1=\"170\" y1=\"170\" x2=\"322\" y2=\"170\" class=\"g-ts\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#ok3a)\"/><circle cx=\"170\" cy=\"170\" r=\"5\" class=\"g-tf\"/><text x=\"253.1\" y=\"140.6\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-tf\">45°</text><text x=\"285.5\" y=\"60.5\" font-size=\"16\" font-weight=\"800\" class=\"g-y\">A</text><text x=\"326\" y=\"192\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" class=\"g-y\">C</text><text x=\"170\" y=\"192\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-tf\">B (merkez)</text><text x=\"170\" y=\"216\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" class=\"g-y\">m(ABC) = 45°</text></svg>"
+  },
+  {
+   "baslik": "Ölçüsü verilen açıyı çizme",
+   "metin": [
+    "Açıölçeri tersine de kullanabilirsin. Önce bir ışın çiz ve başlangıç noktasını açının köşesi olarak işaretle. Köşeyi açıölçerin merkezine koy; ışın 0° çizgisinde kalacak biçimde açıölçeri yerleştir.",
+    "Sonra istenen ölçünün yazdığı çizgiye bir nokta koy. Açıölçeri kaldırıp köşeden bu noktaya ikinci bir ışın çiz. İki ışın arasında kalan açı, istenen ölçüdedir.",
+    "Dik, doğru ve tam açılar da bu yolla çizilir. Ölçüsü 90° olan açıda ikinci ışın birinci ışına dik olur. Ölçüsü 180° olan açıda ters yöne gider. Ölçüsü 360° olan açıda ise bir tam tur dönüp birinci ışının üzerine gelir."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "metin": "Çizmeden önce açının dar mı, dik mi, geniş mi olacağını tahmin et. Çizdiğin açı tahminine uymuyorsa ölçüyü yeniden kontrol et."
+   }
+  },
+  {
+   "baslik": "Eş açılar",
+   "metin": [
+    "Ölçüleri aynı olan iki açı birbirinin eşidir; bu açılara eş açılar adı verilir. Bir açıya eş açı çizmek için önce o açıyı açıölçerle ölçersin, sonra aynı ölçüde yeni bir açı oluşturursun.",
+    "Eş açıların kolları aynı uzunlukta ya da aynı yönde olmak zorunda değildir. Kolları kısa çizilmiş 50°'lik bir açı ile kolları uzun çizilmiş 50°'lik bir açı eştir; çünkü iki açının eş olup olmadığını ölçüleri belirler."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Ölçüsü eşit açılar",
+    "metin": "{olcu:A} = {olcu:B} ise A açısı ile B açısı eştir."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Defne, daire biçimli kâğıdı katlayarak elde ettiği parçayı birim seçti ve bir kapak açısını 4 birim buldu. Efe'nin katlayarak yaptığı parça Defne'ninkinden daha küçüktü ve aynı kapak açısını 7 birim buldu. İki sonucun farklı çıkmasının nedeni nedir? Sonuçların karşılaştırılabilmesi için ne yapılmalıdır?",
+   "cevap": "Birimleri farklı büyüklükte olduğu için sayılar farklı çıkmıştır: birim küçüldükçe aynı açıyı doldurmak için daha çok birim gerekir. İkisi de derece gibi ortak bir birimle ölçerse sonuçlar aynı olur."
+  },
+  {
+   "soru": "Bir ışın başlangıç konumundan yarım tur dönüyor, ardından aynı yönde yarım tur daha dönüyor. Işının toplam dönüşüyle oluşan açının adı ve ölçüsü nedir?",
+   "cevap": "Yarım tur 180°'lik doğru açıya karşılık gelir. İki yarım tur birleşince bir tam tur olur: 180° + 180° = 360°. Oluşan açı tam açıdır ve ölçüsü 360°'dir."
+  },
+  {
+   "soru": "Köşesi N olan bir açının kollarından {isin:NP} açıölçerin 0° çizgisinin üzerindedir. {isin:NR} ise 65° yazan çizgiden geçmektedir. Bu açının ölçüsünü m gösterimiyle yaz.",
+   "cevap": "Açının ölçüsü 65°'dir ve {olcu:PNR} = 65° biçiminde yazılır. Köşe harfi ortada olmalıdır. {olcu:RNP} = 65° ve {olcu:N} = 65° yazımları da aynı ölçüyü gösterir."
+  },
+  {
+   "soru": "Selim bir açıyı ölçerken açıölçerin merkezini açının köşesine koydu. Ancak kollardan hiçbiri 0° çizgisinin üzerinde değildi. Kollardan birinin 100° çizgisinden geçtiğini görüp açının ölçüsünü 100° yazdı. Selim'in hatası nedir? Doğru ölçüm için ne yapmalıdır?",
+   "cevap": "Okunan sayı, yalnızca kollardan biri 0° çizgisinin üzerindeyken açının ölçüsünü verir. Selim açıölçeri döndürüp bir kolu 0° çizgisine getirmeli, sonra öbür kolun gösterdiği sayıyı okumalıdır."
+  },
+  {
+   "soru": "Ölçüsü 130° olan bir açı çizilecek. Adımlar karışık verilmiştir: (a) 130° yazan çizgiye nokta koy. (b) Köşeyi açıölçerin merkezine koy, ışını 0° çizgisinde tut. (c) Köşeden bu noktaya ikinci ışını çiz. (d) Bir ışın çiz, başlangıç noktasını işaretle. Doğru sıra nedir? Çizilen açı dar mı, dik mi, geniş mi olur?",
+   "cevap": "Doğru sıra d, b, a, c biçimindedir. Önce ışın çizilir, sonra açıölçer köşeye ve 0° çizgisine göre yerleştirilir, ardından 130° işaretlenir ve ikinci ışın çizilir. Ölçü 90°'den büyük ve 180°'den küçük olduğu için geniş açı elde edilir."
+  },
+  {
+   "soru": "Dört açının ölçüleri şöyledir: {olcu:A} = 48°, {olcu:B} = 84°, {olcu:C} = 48°, {olcu:D} = 44°. Hangi açılar birbirine eştir? Nedenini açıkla.",
+   "cevap": "A ve C açıları eştir; çünkü ikisinin ölçüsü de 48°'dir. B açısının ölçüsü 84°, D açısının ölçüsü 44° olduğu için bu iki açının verilen açılar arasında eşi yoktur."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Bir tam açı kaç eş açıya bölündüğünde elde edilen her açının ölçüsü 1 derece olur?",
+   "secenekler": [
+    "100",
+    "180",
+    "360",
+    "90"
+   ],
+   "dogru": 2,
+   "aciklama": "Derece, tam açının 360 eş parçasından birinin ölçüsüdür."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Ölçüsü 45° olan bir açının kolları kâğıtta iki katı uzunluğa uzatılıyor. Açının ölçüsü için ne söylenir?",
+   "secenekler": [
+    "Ölçüsü iki katına çıkar, çünkü kollar uzar",
+    "Ölçüsü yarıya iner, çünkü açı inceleşir",
+    "Ölçüsü, uzatılan uzunluk kadar artar",
+    "Ölçüsü aynı kalır, çünkü dönme değişmez"
+   ],
+   "dogru": 3,
+   "aciklama": "Ölçü, kolların uzunluğuna değil aralarındaki dönme miktarına bağlıdır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Ölçüleri 90°, 180°, 35° ve 140° olan açılar adlarıyla küçükten büyüğe sıralanırsa hangisi elde edilir?",
+   "secenekler": [
+    "Dik, dar, geniş, doğru",
+    "Dar, dik, geniş, doğru",
+    "Dar, geniş, dik, doğru",
+    "Dar, dik, doğru, geniş"
+   ],
+   "dogru": 1,
+   "aciklama": "Ölçüleri sırasıyla 35° (dar), 90° (dik), 140° (geniş) ve 180° (doğru) olan açılar bu sırayla büyür."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Her ifadenin doğru mu yanlış mı olduğunu belirle.",
+   "ifadeler": [
+    {
+     "metin": "Doğru açının kolları bir doğru boyunca, birbirine ters yönde uzanır.",
+     "dogru": true,
+     "aciklama": "Doğru açı, ışının yarım tur dönmesiyle oluşur; kolları bir doğru boyunca uzanır."
+    },
+    {
+     "metin": "Ölçüsü verilen bir açıyı çizerken ilk ışın açıölçerin 0° çizgisinde tutulur.",
+     "dogru": true,
+     "aciklama": "Çizimde de ilk ışın 0° çizgisine oturur; ikinci ışın istenen ölçünün yazdığı çizgiden geçecek biçimde çizilir."
+    },
+    {
+     "metin": "Ölçüsü 100° olan açı dar açıdır.",
+     "dogru": false,
+     "aciklama": "Dar açının ölçüsü 90°'den küçüktür; 100° geniş açıdır."
+    },
+    {
+     "metin": "Dik açı, tam açının yarısıdır.",
+     "dogru": false,
+     "aciklama": "Tam açının yarısı 180°'lik doğru açıdır; dik açının ölçüsü 90°'dir."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Kavramları karşılıklarıyla eşleştir.",
+   "ciftler": [
+    [
+     "Tam açı",
+     "360°"
+    ],
+    [
+     "Doğru açı",
+     "180°"
+    ],
+    [
+     "Dik açı",
+     "90°"
+    ],
+    [
+     "Derece",
+     "Standart ölçü birimi"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Bir ışının başlangıç konumuna dönüp bir turu bitirmesiyle oluşan açıya ___ açı denir.",
+     "cevap": "tam"
+    },
+    {
+     "metin": "Bir açıyı ölçmek için açının köşesi açıölçerin ___ noktasına yerleştirilir.",
+     "cevap": "merkez"
+    },
+    {
+     "metin": "Ölçüleri aynı olan iki açıya ___ açılar adı verilir.",
+     "cevap": "eş"
+    }
+   ],
+   "fazla": [
+    "geniş"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Defterindeki bir açının eşini başka bir sayfaya çizmek istiyorsun. Elinde yalnızca açıölçer ve ölçüsüz cetvel var. Nasıl ilerlersin?",
+   "ipuclari": [
+    "Eş açı çizebilmek için önce o açının ölçüsünü bilmen gerekir.",
+    "Ölçü belli olunca ölçüsü verilen açıyı çizme adımlarını uygula."
+   ],
+   "cevap": "Önce açı açıölçerle ölçülür. Sonra bir ışın çizilir, köşe açıölçerin merkezine konur ve ışın 0° çizgisinde tutulur. Bulunan ölçünün çizgisine nokta konup köşeden o noktaya ikinci ışın çizilir. İki açının ölçüsü aynı olduğu için bunlar eş açılardır."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir açıyı ölçerken önce sağ kolu, sonra sol kolu açıölçerin 0° çizgisine getirdin. İki ölçümde de aynı sonucu bulman gerekir mi? Nedenini söyle.",
+   "ipuclari": [
+    "{olcu:ABC} ile {olcu:CBA} yazımlarını düşün.",
+    "İki kol da aynı köşeden çıkıyor ve aralarındaki dönme miktarı değişmiyor."
+   ],
+   "cevap": "Evet, aynı sonucu bulursun. Ölçü, iki kol arasındaki dönme miktarıdır; hangi kolun 0° çizgisine getirildiği bu miktarı değiştirmez. Bu yüzden {olcu:ABC} ile {olcu:CBA} aynı değeri gösterir."
+  }
+ ],
+ "ozet": [
+  "Açının büyüklüğü ortak bir birimle ifade edilir; bu birim derecedir ve tam açının 360 eş parçasından birinin ölçüsüdür.",
+  "Özel açı ölçüleri: dik açı 90°, doğru açı 180°, tam açı 360°. Dar açı 90°'den küçük, geniş açı 90° ile 180° arasındadır.",
+  "Açıölçerin merkezi açının köşesine, 0° çizgisi de bir kola yerleştirilir; öbür kolun gösterdiği sayı açının ölçüsüdür.",
+  "Ölçüsü verilen açı, bir ışın ve açıölçerle çizilir; eş açılar, ölçüleri aynı olan açılardır."
+ ]
+}
