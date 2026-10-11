@@ -13,7 +13,9 @@ permissions:
   id-token: write
 
 concurrency:
-  group: yayin
+  # 11.10.2026: eski 'yayin' grubunda 38093505359 çalıştırması github-pages onayında takılı kaldı
+  # (gözden geçiren yok, yönetici olmadan iptal edilemiyor); yeni grup kuyruğu açar.
+  group: yayin-2
   cancel-in-progress: false
 
 jobs:
