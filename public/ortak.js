@@ -171,3 +171,82 @@ ortakVeri.then(({ ayar }) => {
   });
   (document.fonts?.ready || Promise.resolve()).then(sigdir);
 })();
+
+// "Yeni eklenenler" kayan şeridi (kullanıcı 11.10.2026): sitenin kendi içeriğinden en yeni kayıtlar, reklam değildir.
+// Geniş ekranda sağ kenarda dikey sütun, dar ekranda üst bilginin altında yatay şerit (serit.css). Fare üstündeyken
+// ya da odaktayken durur, durdur düğmesi vardır; hareket azaltma tercihinde kaymaz. Veri: icerikler.json + yazili-kagitlari.json.
+(() => {
+  const ust = $('header.ust');
+  if (!ust || /^\/(tahta|goruntule)\.html$/.test(location.pathname)) return;   // tam ekran araç sayfaları
+  const SERIT_SURUM = '20261011-1', EN_COK = 18;
+  const kisaTarih = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'short' });
+  const yol = (a) => (/^(https?:)?\//.test(a) ? a : `/${a}`);
+  const stil = el('link', { rel: 'stylesheet', href: `${kok}serit.css?v=${SERIT_SURUM}` });
+  const stilHazir = new Promise((tamam) => { stil.onload = () => tamam(true); stil.onerror = () => tamam(false); });
+  document.head.append(stil);
+
+  Promise.all([ortakVeri, veri('yazili-kagitlari.json'), stilHazir]).then(([{ dersler, icerikler }, kagit, stilVar]) => {
+    if (!stilVar) return;
+    const dersAd = (d) => dersler?.dersler?.[d] || d || '';
+    const kayitlar = icerikler.filter((i) => i.tarih && (i.hazirla || i.goruntule || i.dosya || i.baglanti)).map((i) => {
+      const ad = dersAd(i.ders);
+      let baslik = String(i.baslik || '').replace(/^\d+\.\s*Sınıf\s+/, '');
+      if (ad && baslik.startsWith(`${ad} `)) baslik = baslik.slice(ad.length + 1);   // sınıf ve ders alt satırda
+      return { tarih: i.tarih, tur: i.tur, baslik, ders: i.ders, alt: [i.sinif && `${i.sinif}. sınıf`, ad].filter(Boolean).join(' · '),
+        adres: yol(i.hazirla || i.goruntule || i.dosya || i.baglanti) };
+    });
+    // Yazılı sınav kâğıtları sınıf başına tek kart (her ders ayrı kart olursa şeridi kaplar)
+    const gruplar = new Map();
+    for (const [anahtar, yazililar] of Object.entries(kagit?.tablolar || {})) {
+      const [, sinif, ders] = /^(\d+)-(.+)$/.exec(anahtar) || [];
+      if (!sinif) continue;
+      const g = gruplar.get(sinif) || { dersler: [], sayi: 0 };
+      g.dersler.push(ders);
+      g.sayi += Object.values(yazililar).reduce((t, s) => t + (Array.isArray(s) ? s.length : 0), 0);
+      gruplar.set(sinif, g);
+    }
+    if (kagit?.guncelleme) for (const [sinif, g] of gruplar) kayitlar.push({ tarih: kagit.guncelleme, tur: 'Yazılı kâğıdı', yazili: true,
+      baslik: `Ortak yazılı sınav kâğıtları: ${g.sayi} kâğıt, cevaplı`, alt: `${sinif}. sınıf · ${g.dersler.map(dersAd).join(', ')}`,
+      adres: `/yazili.html?sinif=${sinif}&ders=${encodeURIComponent(g.dersler[0])}` });
+    const secilen = kayitlar.sort((a, b) => String(b.tarih).localeCompare(String(a.tarih))).slice(0, EN_COK);
+    if (secilen.length < 4) return;
+
+    const kart = (k) => {
+      const dis = /^https?:/.test(k.adres);
+      const gun = new Date(/^\d{4}-\d\d-\d\d$/.test(k.tarih) ? `${k.tarih}T12:00:00` : k.tarih);
+      return el('li', { sinif: 'serit-oge' },
+        el('a', { sinif: ['serit-kart', k.ders && `ders-${k.ders}`, k.yazili && 'serit-yazili'].filter(Boolean).join(' '), href: k.adres,
+          target: dis ? '_blank' : null, rel: dis ? 'noopener' : null },
+          el('span', { sinif: 'serit-ust' }, el('span', { sinif: 'serit-tur' }, k.tur || 'İçerik'),
+            isNaN(gun) ? null : el('time', { datetime: k.tarih }, kisaTarih.format(gun))),
+          el('span', { sinif: 'serit-ad' }, k.baslik),
+          k.alt && el('span', { sinif: 'serit-alt' }, k.alt)));
+    };
+    const liste = () => el('ul', { sinif: 'serit-liste' }, secilen.map(kart));
+    const kopya = liste();   // kesintisiz döngü için ikinci kopya; ekran okuyucu ve klavye için yok sayılır
+    kopya.classList.add('serit-kopya'); kopya.setAttribute('aria-hidden', 'true'); kopya.inert = true;
+
+    let durdu = false;
+    try { durdu = localStorage.getItem('serit-durdu') === '1'; } catch {}
+    const isaret = el('span', { 'aria-hidden': 'true' });
+    const dugme = el('button', { sinif: 'serit-dur', type: 'button' }, isaret);
+    const serit = el('aside', { sinif: 'serit', 'aria-label': 'Yeni eklenenler', style: `--serit-sure: ${secilen.length * 5}s` },
+      el('div', { sinif: 'serit-bas' },
+        el('span', { sinif: 'serit-baslik' }, el('span', {}, 'Yeni', el('span', { sinif: 'serit-uzun' }, ' eklenenler'))),
+        el('a', { sinif: 'serit-tumu', href: '/icerikler.html' }, 'Tümü'), dugme),
+      el('div', { sinif: 'serit-pencere' }, el('div', { sinif: 'serit-iz' }, liste(), kopya)));
+    const ayarla = () => {
+      serit.classList.toggle('durdu', durdu);
+      const yazi = durdu ? 'Kaymayı başlat' : 'Kaymayı durdur';
+      dugme.setAttribute('aria-label', yazi); dugme.title = yazi;
+      isaret.textContent = durdu ? '▶' : '❚❚';
+    };
+    dugme.addEventListener('click', () => {
+      durdu = !durdu; ayarla();
+      try { localStorage.setItem('serit-durdu', durdu ? '1' : '0'); } catch {}
+    });
+    ayarla();
+    ust.after(serit);
+    document.body.classList.add('serit-var');
+  });
+})();
