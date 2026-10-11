@@ -12,7 +12,7 @@ from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'yazili.js': '20261010-1', 'ortak.js': '20261006-1', 'tahta.js': '20261006-1', 'etkinlik.js': '20261003-1', 'arama.js': '20261004-duzen1', 'kutuphane.js': '20261006-1', 'arapca.js': '202610061430'}
+BETIK_SURUMLERI = {'agac.js': '20261011-1', 'yazili.js': '20261010-1', 'ortak.js': '20261011-2', 'tahta.js': '20261006-1', 'etkinlik.js': '20261003-1', 'arama.js': '20261004-duzen1', 'kutuphane.js': '20261011-1', 'arapca.js': '202610061430'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
@@ -24,6 +24,27 @@ alt = re.sub(r'href="([a-z0-9-]+\.html)', r'href="/\1', re.sub(r'(<a\b[^>]*\bhre
 
 # Çerezsiz ziyaret sayacı (Cloudflare Web Analytics; kişisel veri toplamaz, gizlilik.html'de açıklanır)
 SAYAC = '''<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fffb5e8a709947ee9ba14ea753d96275"}'></script><!-- End Cloudflare Web Analytics -->'''
+
+
+# Site ağacı (kullanıcı 11.10.2026): her sayfa kendi dalının kitlesini taşır (üst menü vurgusu, kayan şerit süzgeci).
+KITLE_OGRENCI = ('ogrenci.html', 'kelime.html', 'arapca.html', 'sinav.html')
+KITLE_OGRETMEN = ('ogretmen.html', 'planlar.html', 'yazili.html', 'belgeler.html', 'kpss.html')
+AGAC_CSS = '<link rel="stylesheet" href="/agac.css?v=20261011-1">'
+
+
+def kitle_bul(ad):
+    if ad.startswith(('ozet/', 'calisma/')) or ad in KITLE_OGRENCI:
+        return 'ogrenci'
+    return 'ogretmen' if ad in KITLE_OGRETMEN else ''
+
+
+def kitle_ekle(html, ad):
+    k = kitle_bul(ad)
+    if k and 'data-kitle=' not in html:
+        html = re.sub(r'<body\b', f'<body data-kitle="{k}"', html, count=1)
+    if ad in ('ogrenci.html', 'ogretmen.html') and 'agac.css?' not in html:
+        html = html.replace('</head>', AGAC_CSS + '\n</head>', 1)
+    return html
 
 
 def sayfa(ad, baslik, aciklama, govde, betikler=(), kanonik=True):
@@ -68,7 +89,7 @@ def sayfa(ad, baslik, aciklama, govde, betikler=(), kanonik=True):
 </body>
 </html>
 '''
-    return kesif_sayfa(html, ad)
+    return kitle_ekle(kesif_sayfa(html, ad), ad)
 
 
 YAKINDA = '''      <div class="yakinda" id="icerik-yakinda" hidden>
@@ -442,6 +463,8 @@ GOVDE['arapca.html'] = ('Arapça harf ve kelime çalışması', '28 harf ve 48 k
 <noscript>Alıştırmalar için JavaScript’i etkinleştirin. Konu anlatımlarını yukarıdaki bağlantılardan okuyabilirsiniz.</noscript>
 </div></section>''', ('arapca.js',))
 
+GOVDE['ogrenci.html'] = ('Öğrenci', 'Ders Kutusu öğrenci sayfası: sınıfını seç; ünite ünite konu anlatımları, etkinlikler, çalışma kâğıtları ve ders kitapları.', '''  <div id="agac" class="agac" aria-busy="true"><section class="agac-bas"><div class="kap"><p role="status">Yükleniyor…</p></div></section></div>''', ('agac.js',))
+GOVDE['ogretmen.html'] = ('Öğretmen Köşesi', 'Öğretmen Köşesi: günlük ve yıllık planlar, ortak yazılı senaryoları ve kâğıtları, öğretim programları, çalışma kâğıtları ve resmî belgeler.', '''  <div id="agac" class="agac" aria-busy="true"><section class="agac-bas"><div class="kap"><p role="status">Yükleniyor…</p></div></section></div>''', ('agac.js',))
 GOVDE['sinav.html'] = ('Sınavlar: LGS ve YKS', 'LGS ve YKS: oturumlar, testler, soru sayıları ve süreler; çıkmış sorular, kılavuzlar ve hazırlık kaynakları.', _sinav_govde(), ())
 
 def main():

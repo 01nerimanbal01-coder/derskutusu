@@ -14,6 +14,7 @@ def renkli_sayfa(html, ad):
         'belgeler.html': 'turkuaz', 'kelime.html': 'lacivert',
         'arapca.html': 'lacivert', 'kpss.html': 'sari',
         'tahta.html': 'yesil', 'goruntule.html': 'yesil',
+        'ogrenci.html': 'mavi', 'ogretmen.html': 'yesil',
     }.get(ad, 'mor' if ad.startswith('ozet/') else 'yesil' if ad.startswith('calisma/') else 'mavi')
     html = re.sub(r'(<body\b[^>]*?)\sdata-site-renk="[^"]*"', r'\1', html, count=1)
     html = re.sub(r'<body\b', f'<body data-site-renk="{renk}"', html, count=1)
@@ -43,7 +44,7 @@ def kutuphane_govde(govde):
 
 
 def kesif_sayfa(html, ad):
-    if ad not in ('index.html', 'sinif.html', 'icerikler.html'):
+    if ad not in ('index.html', 'sinif.html', 'icerikler.html', 'ogrenci.html', 'ogretmen.html'):
         return renkli_sayfa(html, ad)
     if 'kesif.css?' not in html:
         html = html.replace('</head>', CSS + '\n</head>')

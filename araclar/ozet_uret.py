@@ -214,7 +214,7 @@ def sayfa_uret(o, dersler, icerikler):
         ck_dugme += f'<a class="dugme" href="/arapca.html?s={o["sinif"]}">Harf ve kelime çalış</a>'
     govde = f'''  <section class="sayfa-bas ozet-bas ders-{o["ders"]}">
     <div class="kap">
-      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/sinif.html?no={o["sinif"]}">{o["sinif"]}. sınıf</a><span aria-hidden="true">/</span><a href="/icerikler.html?sinif={o["sinif"]}&amp;ders={o["ders"]}">{e(ad)}</a><span aria-hidden="true">/</span><span>{o["hafta"]}. hafta</span></nav>
+      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/ogrenci.html">Öğrenci</a><span aria-hidden="true">/</span><a href="/ogrenci.html?sinif={o["sinif"]}">{o["sinif"]}. sınıf</a><span aria-hidden="true">/</span><a href="/ogrenci.html?sinif={o["sinif"]}&amp;ders={o["ders"]}">{e(ad)}</a><span aria-hidden="true">/</span><span>{o["hafta"]}. hafta</span></nav>
       <p class="ust-baslik">{o["sinif"]}. sınıf · {e(ad)} · {o["hafta"]}. hafta ({e(o["tarih"])})</p>
       <h1>{e(o["konu"])}</h1>
       <p>{e(o["unite"])} teması · Konu özeti</p>

@@ -503,7 +503,7 @@ def web_sayfasi(o, ad, plan=None):
     govde = f'''  <link rel="stylesheet" href="/calisma.css?v={ozet_uret._sayfa.SURUM}">
   <section class="sayfa-bas ck-web-bas">
     <div class="kap">
-      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/sinif.html?no={o["sinif"]}">{o["sinif"]}. sınıf</a><span aria-hidden="true">/</span><a href="/icerikler.html?sinif={o["sinif"]}&amp;ders={o["ders"]}">{html.escape(ders)}</a><span aria-hidden="true">/</span><span>Çalışma kâğıdı</span></nav>
+      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/ogrenci.html">Öğrenci</a><span aria-hidden="true">/</span><a href="/ogrenci.html?sinif={o["sinif"]}">{o["sinif"]}. sınıf</a><span aria-hidden="true">/</span><a href="/ogrenci.html?sinif={o["sinif"]}&amp;ders={o["ders"]}">{html.escape(ders)}</a><span aria-hidden="true">/</span><span>Çalışma kâğıdı</span></nav>
       <p class="ust-baslik">{o["sinif"]}. sınıf · {html.escape(ders)} · {o["hafta"]}. hafta ({html.escape(o.get("tarih", ""))})</p>
       <h1>{sembol(o["konu"])}: çalışma kâğıdı</h1>
       <p>{len(o["sorular"])} soru. Yazdırmak için PDF'i indirin; cevaplı sürüm öğretmenler için.</p>

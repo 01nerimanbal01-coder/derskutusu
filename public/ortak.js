@@ -99,6 +99,20 @@ if (menuDugme) {
 
 $$('[data-yil]').forEach((e) => { e.textContent = new Date().getFullYear(); });
 
+// Site ağacı (kullanıcı 11.10.2026): öğrenci / öğretmen dalı. Sayfanın kitlesi body[data-kitle]'dadır.
+(() => {
+  const kitle = document.body.dataset.kitle;
+  try { if (kitle) localStorage.setItem('dk-rol', kitle); } catch {}
+  if (kitle) $$('#ana-menu a').forEach((a) => { if (a.getAttribute('href') === `/${kitle}.html`) a.setAttribute('aria-current', 'page'); });
+  if (!/^\/(index\.html)?$/.test(location.pathname)) return;
+  const eski = { '#siniflar': '/ogrenci.html', '#dersler': '/ogrenci.html', '#ogretmen': '/ogretmen.html', '#kategoriler': '/icerikler.html' }[location.hash];
+  if (eski) { location.replace(eski); return; }
+  let son = null;
+  try { son = localStorage.getItem('dk-rol'); } catch {}
+  const kart = son && $(`.rol-kart[data-rol="${son}"]`);
+  if (kart) kart.append(el('span', { sinif: 'rol-son' }, 'Son seçimin'));
+})();
+
 // Toplam ziyaret (Cloudflare Web Analytics toplu verisinden günde bir kez üretilir: araclar/ziyaret_guncelle.py)
 veri('ziyaret.json').then((z) => {
   const yer = $('#ziyaret');
@@ -188,7 +202,10 @@ ortakVeri.then(({ ayar }) => {
   Promise.all([ortakVeri, veri('yazili-kagitlari.json'), stilHazir]).then(([{ dersler, icerikler }, kagit, stilVar]) => {
     if (!stilVar) return;
     const dersAd = (d) => dersler?.dersler?.[d] || d || '';
-    const kayitlar = icerikler.filter((i) => i.tarih && (i.hazirla || i.goruntule || i.dosya || i.baglanti)).map((i) => {
+    const kitle = document.body.dataset.kitle;   // öğrenci dalında yalnız öğrenci, öğretmen dalında yalnız öğretmen içerikleri
+    const turKitle = Object.fromEntries((dersler?.turler || []).map((t) => [t.ad, t.kitle]));
+    const kitleUyar = (i) => !kitle || (i.kitle || 'ogrenci') === kitle || turKitle[i.tur] === kitle;
+    const kayitlar = icerikler.filter((i) => i.tarih && kitleUyar(i) && (i.hazirla || i.goruntule || i.dosya || i.baglanti)).map((i) => {
       const ad = dersAd(i.ders);
       let baslik = String(i.baslik || '').replace(/^\d+\.\s*Sınıf\s+/, '');
       if (ad && baslik.startsWith(`${ad} `)) baslik = baslik.slice(ad.length + 1);   // sınıf ve ders alt satırda
@@ -205,7 +222,7 @@ ortakVeri.then(({ ayar }) => {
       g.sayi += Object.values(yazililar).reduce((t, s) => t + (Array.isArray(s) ? s.length : 0), 0);
       gruplar.set(sinif, g);
     }
-    if (kagit?.guncelleme) for (const [sinif, g] of gruplar) kayitlar.push({ tarih: kagit.guncelleme, tur: 'Yazılı kâğıdı', yazili: true,
+    if (kagit?.guncelleme && kitle !== 'ogrenci') for (const [sinif, g] of gruplar) kayitlar.push({ tarih: kagit.guncelleme, tur: 'Yazılı kâğıdı', yazili: true,
       baslik: `Ortak yazılı sınav kâğıtları: ${g.sayi} kâğıt, cevaplı`, alt: `${sinif}. sınıf · ${g.dersler.map(dersAd).join(', ')}`,
       adres: `/yazili.html?sinif=${sinif}&ders=${encodeURIComponent(g.dersler[0])}` });
     const secilen = kayitlar.sort((a, b) => String(b.tarih).localeCompare(String(a.tarih))).slice(0, EN_COK);

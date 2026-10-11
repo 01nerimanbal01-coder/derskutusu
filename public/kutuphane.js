@@ -31,6 +31,7 @@ function sinifSayfasi({ dersler, icerikler }) {
   const no = Number(parametre.get('no'));
   const liste = dersler.siniflar[no];
   if (!liste) { location.replace('icerikler.html'); return; }
+  location.replace(`/ogrenci.html?sinif=${no}`); return;   // site ağacı (11.10.2026): sınıf sayfası öğrenci dalına taşındı
   const kademe = dersler.kademeler.find((k) => k.siniflar.includes(no))?.ad || '';
   document.title = `${no}. sınıf · Ders Kutusu`;
   $('#baslik').textContent = `${no}. sınıf`;
