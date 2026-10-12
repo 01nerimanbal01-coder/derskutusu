@@ -1,0 +1,250 @@
+{
+ "sinif": 8,
+ "ders": "matematik",
+ "hafta": 3,
+ "tarih": "28 Eylül-2 Ekim 2026",
+ "yayin_tarihi": "2026-10-12",
+ "unite": "Sayılar ve İşlemler",
+ "konu": "Üslü İfadeler: Tam Sayı Kuvvetleri ve Temel Kurallar",
+ "ciktilar": [
+  "M.8.1.2.1. Tam sayıların, tam sayı kuvvetlerini hesaplar.",
+  "M.8.1.2.2. Üslü ifadelerle ilgili temel kuralları anlar, birbirine denk ifadeler oluşturur."
+ ],
+ "giris": "Geçen haftalarda sayıları asal çarpanlarına ayırmayı, EBOB ile EKOK’u bulmayı ve asal çarpanları üslü ifadelerle yazmayı öğrendin. Bu hafta üssü sıfır ya da negatif olan ifadelerin değerini bulacak, üslü ifadelerle çarpma, bölme ve üs alma kurallarını öğrenecek, aynı değeri veren farklı yazılışlar kuracaksın.",
+ "bolumler": [
+  {
+   "baslik": "Üssü sıfır ve negatif olan ifadeler",
+   "metin": [
+    "Üs, tabanın kaç kez çarpılacağını söyler; üs 3, 2, 1 gibi pozitif bir sayı olduğunda değeri çarparak bulursun. Üssü sıfır ya da negatif olan ifadelerin anlamını ise bir örüntüden çıkarabilirsin. Önce 5 tabanlı ifadelere bak: {us:5|3} = 125, {us:5|2} = 25 ve {us:5|1} = 5.",
+    "Üs her adımda 1 azalırken sayı, tabanla bölünerek küçülür: 125 ÷ 5 = 25, 25 ÷ 5 = 5 ve 5 ÷ 5 = 1. Örüntü sürdüğünde {us:5|0} = 1 olur. Taban 0 olmadığı sürece üssü sıfır olan ifadenin değeri 1’dir.",
+    "Bölmeyi aynı biçimde sürdürürsen 1 ÷ 5 = {kesir:1|5}, {kesir:1|5} ÷ 5 = {kesir:1|25} ve {kesir:1|25} ÷ 5 = {kesir:1|125} bulursun. Bu değerler üssü −1, −2 ve −3 olan ifadelerin değerleridir: {us:5|−1} = {kesir:1|5}, {us:5|−2} = {kesir:1|25} ve {us:5|−3} = {kesir:1|125}. Demek ki negatif üslü ifadede pay ile payda yer değiştirir ve üs pozitife döner."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "metin": "Taban a sıfırdan farklı, n de bir tam sayıysa {us:a|0} = 1 ve {us:a|−n} = {kesir:1|{us:a|n}} olur."
+   },
+   "gorsel": "<svg viewBox=\"0 0 440 228\" role=\"img\" aria-label=\"Her adımda üs 1 azalır ve değer 5’e bölünür: 5 üssü 3 eşittir 125, 5 üssü 2 eşittir 25, 5 üssü 1 eşittir 5, 5 üssü 0 eşittir 1, 5 üssü eksi 1 eşittir 1 bölü 5, 5 üssü eksi 2 eşittir 1 bölü 25, 5 üssü eksi 3 eşittir 1 bölü 125. Üssü pozitif olanlar mavi, üssü sıfır olan yeşil, üssü negatif olanlar turuncudur.\"><defs><marker id=\"okU1\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-s\"/></marker></defs><text x=\"220\" y=\"18\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-s\">her adımda üs 1 azalır</text><line x1=\"14\" y1=\"28\" x2=\"424\" y2=\"28\" class=\"g-c\" stroke-width=\"2\" marker-end=\"url(#okU1)\"/><rect x=\"13\" y=\"40\" width=\"54\" height=\"36\" rx=\"10\" class=\"g-ma\"/><rect x=\"13\" y=\"40\" width=\"54\" height=\"36\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"31.0\" y=\"64.0\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">5</text><text x=\"41.9\" y=\"56.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-mf\">3</text><line x1=\"40\" y1=\"79\" x2=\"40\" y2=\"96\" class=\"g-c\" stroke-width=\"1.8\" marker-end=\"url(#okU1)\"/><rect x=\"13\" y=\"100\" width=\"54\" height=\"46\" rx=\"10\" class=\"g-z\"/><rect x=\"13\" y=\"100\" width=\"54\" height=\"46\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"25.9\" y=\"128.9\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">125</text><rect x=\"73\" y=\"40\" width=\"54\" height=\"36\" rx=\"10\" class=\"g-ma\"/><rect x=\"73\" y=\"40\" width=\"54\" height=\"36\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"91.0\" y=\"64.0\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">5</text><text x=\"101.9\" y=\"56.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-mf\">2</text><line x1=\"100\" y1=\"79\" x2=\"100\" y2=\"96\" class=\"g-c\" stroke-width=\"1.8\" marker-end=\"url(#okU1)\"/><rect x=\"73\" y=\"100\" width=\"54\" height=\"46\" rx=\"10\" class=\"g-z\"/><rect x=\"73\" y=\"100\" width=\"54\" height=\"46\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"90.1\" y=\"128.9\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">25</text><rect x=\"133\" y=\"40\" width=\"54\" height=\"36\" rx=\"10\" class=\"g-ma\"/><rect x=\"133\" y=\"40\" width=\"54\" height=\"36\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"151.5\" y=\"64.0\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">5</text><text x=\"162.4\" y=\"56.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-mf\">1</text><line x1=\"160\" y1=\"79\" x2=\"160\" y2=\"96\" class=\"g-c\" stroke-width=\"1.8\" marker-end=\"url(#okU1)\"/><rect x=\"133\" y=\"100\" width=\"54\" height=\"46\" rx=\"10\" class=\"g-z\"/><rect x=\"133\" y=\"100\" width=\"54\" height=\"46\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"155.1\" y=\"128.9\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">5</text><rect x=\"193\" y=\"40\" width=\"54\" height=\"36\" rx=\"10\" class=\"g-ya\"/><rect x=\"193\" y=\"40\" width=\"54\" height=\"36\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"211.0\" y=\"64.0\" font-size=\"17\" font-weight=\"700\" class=\"g-yf\">5</text><text x=\"221.9\" y=\"56.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-yf\">0</text><line x1=\"220\" y1=\"79\" x2=\"220\" y2=\"96\" class=\"g-c\" stroke-width=\"1.8\" marker-end=\"url(#okU1)\"/><rect x=\"193\" y=\"100\" width=\"54\" height=\"46\" rx=\"10\" class=\"g-z\"/><rect x=\"193\" y=\"100\" width=\"54\" height=\"46\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"215.8\" y=\"128.9\" font-size=\"17\" font-weight=\"700\" class=\"g-yf\">1</text><rect x=\"253\" y=\"40\" width=\"54\" height=\"36\" rx=\"10\" class=\"g-ta\"/><rect x=\"253\" y=\"40\" width=\"54\" height=\"36\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"267.8\" y=\"64.0\" font-size=\"17\" font-weight=\"700\" class=\"g-tf\">5</text><text x=\"278.7\" y=\"56.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-tf\">−1</text><line x1=\"280\" y1=\"79\" x2=\"280\" y2=\"96\" class=\"g-c\" stroke-width=\"1.8\" marker-end=\"url(#okU1)\"/><rect x=\"253\" y=\"100\" width=\"54\" height=\"46\" rx=\"10\" class=\"g-z\"/><rect x=\"253\" y=\"100\" width=\"54\" height=\"46\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"276.2\" y=\"119.0\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">1</text><line x1=\"272.6\" y1=\"123.0\" x2=\"287.3\" y2=\"123.0\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"275.6\" y=\"141.0\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">5</text><rect x=\"313\" y=\"40\" width=\"54\" height=\"36\" rx=\"10\" class=\"g-ta\"/><rect x=\"313\" y=\"40\" width=\"54\" height=\"36\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"327.3\" y=\"64.0\" font-size=\"17\" font-weight=\"700\" class=\"g-tf\">5</text><text x=\"338.2\" y=\"56.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-tf\">−2</text><line x1=\"340\" y1=\"79\" x2=\"340\" y2=\"96\" class=\"g-c\" stroke-width=\"1.8\" marker-end=\"url(#okU1)\"/><rect x=\"313\" y=\"100\" width=\"54\" height=\"46\" rx=\"10\" class=\"g-z\"/><rect x=\"313\" y=\"100\" width=\"54\" height=\"46\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"336.2\" y=\"119.0\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">1</text><line x1=\"328.3\" y1=\"123.0\" x2=\"351.7\" y2=\"123.0\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"331.3\" y=\"141.0\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">25</text><rect x=\"373\" y=\"40\" width=\"54\" height=\"36\" rx=\"10\" class=\"g-ta\"/><rect x=\"373\" y=\"40\" width=\"54\" height=\"36\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"387.3\" y=\"64.0\" font-size=\"17\" font-weight=\"700\" class=\"g-tf\">5</text><text x=\"398.2\" y=\"56.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-tf\">−3</text><line x1=\"400\" y1=\"79\" x2=\"400\" y2=\"96\" class=\"g-c\" stroke-width=\"1.8\" marker-end=\"url(#okU1)\"/><rect x=\"373\" y=\"100\" width=\"54\" height=\"46\" rx=\"10\" class=\"g-z\"/><rect x=\"373\" y=\"100\" width=\"54\" height=\"46\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"396.2\" y=\"119.0\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">1</text><line x1=\"384.6\" y1=\"123.0\" x2=\"415.5\" y2=\"123.0\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"387.6\" y=\"141.0\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">125</text><line x1=\"14\" y1=\"162\" x2=\"424\" y2=\"162\" class=\"g-c\" stroke-width=\"2\" marker-end=\"url(#okU1)\"/><text x=\"220\" y=\"182\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-s\">değer her adımda 5’e bölünür</text><rect x=\"14\" y=\"202\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ma\"/><rect x=\"14\" y=\"202\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"35\" y=\"214\" text-anchor=\"start\" font-size=\"12.5\" font-weight=\"600\" class=\"g-y\">üssü pozitif</text><rect x=\"150\" y=\"202\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ya\"/><rect x=\"150\" y=\"202\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ys\" stroke-width=\"1.6\"/><text x=\"171\" y=\"214\" text-anchor=\"start\" font-size=\"12.5\" font-weight=\"600\" class=\"g-y\">üssü sıfır</text><rect x=\"262\" y=\"202\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ta\"/><rect x=\"262\" y=\"202\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"283\" y=\"214\" text-anchor=\"start\" font-size=\"12.5\" font-weight=\"600\" class=\"g-y\">üssü negatif</text></svg>"
+  },
+  {
+   "baslik": "Negatif üssü pozitife çevirmek",
+   "metin": [
+    "Negatif üslü bir ifadeyi hesaplarken tabanın çarpma işlemine göre tersini alır, üssü pozitif yazarsın. Örneğin {us:6|−2} = {us:({kesir:1|6})|2} = {kesir:1|{us:6|2}} = {kesir:1|36} olur. Kesir tabanlı ifadelerde de aynı yolu izlersin: {kesir:4|5} sayısının tersi {kesir:5|4} olduğundan {us:({kesir:4|5})|−2} = {us:({kesir:5|4})|2} = {kesir:25|16} bulunur.",
+    "Paydada negatif üslü bir ifade varsa onu paya alırken de üssün işareti değişir: {kesir:1|{us:7|−2}} = {us:7|2} = 49 ve {kesir:1|{us:10|−5}} = {us:10|5} = 100 000. Aynı kural iki yönde de çalışır: {us:a|−n} = {kesir:1|{us:a|n}} ve {kesir:1|{us:a|−n}} = {us:a|n}.",
+    "Taban negatifse sonucun işaretini üssün tek ya da çift oluşu belirler. Örneğin {us:(−2)|−4} = {kesir:1|{us:(−2)|4}} = {kesir:1|16} pozitiftir; {kesir:1|{us:(−6)|−3}} = {us:(−6)|3} = −216 ise negatiftir. Parantezlere de dikkat etmelisin: −{us:6|2} yazılışında üs yalnız 6’ya aittir ve değer −36’dır; negatif tabanı üslemek için {us:(−6)|2} = 36 gibi parantez kullanırsın."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "metin": "Parantezli ve parantezsiz yazılışlar farklıdır: {us:(−5)|2} = 25 iken −{us:5|2} = −25’tir."
+   }
+  },
+  {
+   "baslik": "Çarpma kuralları",
+   "metin": [
+    "İki üslü ifadenin tabanı ortaksa çarpmada üsleri toplar, tabanı olduğu gibi yazarsın. Çünkü a sayısından x tane ile y tane yan yana çarpılınca toplam x + y tane a çarpılmış olur: {us:a|x} · {us:a|y} = {us:a|x + y}. Örneğin {us:6|2} · {us:6|3} = (6 · 6) · (6 · 6 · 6) = {us:6|5} bulunur.",
+    "Üsler negatif de olabilir; kural değişmez: {us:7|−6} · {us:7|−2} = {us:7|−8} ve {us:10|−3} · {us:10|3} = {us:10|0} = 1. Taban negatifse parantez korunur: {us:(−2)|3} · {us:(−2)|4} = {us:(−2)|7}.",
+    "Üsleri eşit olan iki üslü ifadeyi çarparken tabanları çarpar, üssü değiştirmeden yazarsın: {us:a|x} · {us:b|x} = {us:(a · b)|x}. Örneğin {us:4|5} · {us:5|5} = {us:20|5} ve {us:2|−3} · {us:5|−3} = {us:10|−3} = {kesir:1|{us:10|3}} = {kesir:1|1000} olur. Negatif tabanlarda çarpımın işaretine bak: {us:(−2)|6} · {us:(−3)|6} = {us:6|6} çıkar, çünkü (−2) · (−3) = 6’dır."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "metin": "Tabanlar aynıysa üsler toplanır; üsler aynıysa tabanlar çarpılır."
+   }
+  },
+  {
+   "baslik": "Bölme kuralları",
+   "metin": [
+    "Tabanı ortak iki üslü ifadeyi bölerken üslerin farkını alırsın: yeni üs, payın üssü eksi paydanın üssüdür ve taban aynen kalır (a sıfırdan farklı olmalı): {kesir:{us:a|b}|{us:a|c}} = {us:a|b − c}. Örneğin {kesir:{us:7|6}|{us:7|2}} = {us:7|6 − 2} = {us:7|4} olur. Paydanın üssü negatifse çıkarmada işarete dikkat et: {kesir:{us:2|5}|{us:2|−3}} = {us:2|5 − (−3)} = {us:2|8}.",
+    "Bölünen ile bölenin üsleri eşitse tabanları böler, üssü değiştirmeden yazarsın (b sıfırdan farklı olmalı): {kesir:{us:a|c}|{us:b|c}} = {us:({kesir:a|b})|c}. Örneğin {kesir:{us:20|4}|{us:5|4}} = {us:4|4} olur. Negatif üslerde de aynı yolu izlersin: {kesir:{us:10|−4}|{us:50|−4}} = {us:({kesir:1|5})|−4} = {us:5|4} bulunur.",
+    "Pay ile payda aynı üslü ifadeyse üsler eşittir, fark 0 çıkar ve değer 1 olur: {kesir:{us:9|−3}|{us:9|−3}} = {us:9|−3 − (−3)} = {us:9|0} = 1. Sonucun işaretini en sonda, kuvvetin tek ya da çift olmasına bakarak denetle: {kesir:{us:(−3)|5}|{us:(−3)|2}} = {us:(−3)|3} = −27."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "metin": "İşleme başlamadan önce neyin aynı olduğuna bak: taban aynıysa üslerle, üs aynıysa tabanlarla işlem yaparsın."
+   },
+   "gorsel": "<svg viewBox=\"0 0 440 300\" role=\"img\" aria-label=\"Dört kural. Tabanlar aynıysa: çarpmada üsler toplanır, a üssü x çarpı a üssü y eşittir a üssü x artı y, örnek 6 üssü 2 çarpı 6 üssü 3 eşittir 6 üssü 5; bölmede üsler çıkarılır, a üssü b bölü a üssü c eşittir a üssü b eksi c, örnek 7 üssü 6 bölü 7 üssü 2 eşittir 7 üssü 4. Üsler aynıysa: çarpmada tabanlar çarpılır, a üssü x çarpı b üssü x eşittir a çarpı b’nin x’inci kuvveti, örnek 4 üssü 5 çarpı 5 üssü 5 eşittir 20 üssü 5; bölmede tabanlar bölünür, a üssü c bölü b üssü c eşittir a bölü b’nin c’inci kuvveti, örnek 20 üssü 4 bölü 5 üssü 4 eşittir 4 üssü 4.\"><rect x=\"80\" y=\"6\" width=\"174\" height=\"28\" rx=\"14\" class=\"g-z\"/><rect x=\"80\" y=\"6\" width=\"174\" height=\"28\" rx=\"14\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"167\" y=\"24.9\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" class=\"g-mf\">Tabanlar aynı</text><rect x=\"262\" y=\"6\" width=\"174\" height=\"28\" rx=\"14\" class=\"g-z\"/><rect x=\"262\" y=\"6\" width=\"174\" height=\"28\" rx=\"14\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"349\" y=\"24.9\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" class=\"g-tf\">Üsler aynı</text><rect x=\"8\" y=\"44\" width=\"64\" height=\"120\" rx=\"12\" class=\"g-oa\"/><rect x=\"8\" y=\"44\" width=\"64\" height=\"120\" rx=\"12\" class=\"g-os\" stroke-width=\"2\"/><text x=\"40\" y=\"109\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" class=\"g-of\">Çarpma</text><rect x=\"80\" y=\"44\" width=\"174\" height=\"120\" rx=\"12\" class=\"g-ma\"/><rect x=\"80\" y=\"44\" width=\"174\" height=\"120\" rx=\"12\" class=\"g-ms\" stroke-width=\"1.8\"/><path d=\"M80 56a12 12 0 0 1 12 -12h150a12 12 0 0 1 12 12v10h-174z\" class=\"g-mf\"/><text x=\"167\" y=\"60\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-b\">üsler toplanır</text><text x=\"117.4\" y=\"101.2\" font-size=\"15\" font-weight=\"700\" class=\"g-mf\">a</text><text x=\"127.1\" y=\"94.3\" font-size=\"10.8\" font-weight=\"700\" class=\"g-mf\">x</text><text x=\"133.4\" y=\"101.2\" font-size=\"15\" font-weight=\"700\" class=\"g-mf\"> · </text><text x=\"147.5\" y=\"101.2\" font-size=\"15\" font-weight=\"700\" class=\"g-mf\">a</text><text x=\"157.2\" y=\"94.3\" font-size=\"10.8\" font-weight=\"700\" class=\"g-mf\">y</text><text x=\"163.4\" y=\"101.2\" font-size=\"15\" font-weight=\"700\" class=\"g-mf\"> = </text><text x=\"181.4\" y=\"101.2\" font-size=\"15\" font-weight=\"700\" class=\"g-mf\">a</text><text x=\"191.1\" y=\"94.3\" font-size=\"10.8\" font-weight=\"700\" class=\"g-mf\">x + y</text><text x=\"129.6\" y=\"144.9\" font-size=\"14\" font-weight=\"600\" class=\"g-y\">6</text><text x=\"138.7\" y=\"138.5\" font-size=\"10.1\" font-weight=\"600\" class=\"g-y\">2</text><text x=\"144.5\" y=\"144.9\" font-size=\"14\" font-weight=\"600\" class=\"g-y\"> · </text><text x=\"157.7\" y=\"144.9\" font-size=\"14\" font-weight=\"600\" class=\"g-y\">6</text><text x=\"166.8\" y=\"138.5\" font-size=\"10.1\" font-weight=\"600\" class=\"g-y\">3</text><text x=\"172.7\" y=\"144.9\" font-size=\"14\" font-weight=\"600\" class=\"g-y\"> = </text><text x=\"189.5\" y=\"144.9\" font-size=\"14\" font-weight=\"600\" class=\"g-y\">6</text><text x=\"198.6\" y=\"138.5\" font-size=\"10.1\" font-weight=\"600\" class=\"g-y\">5</text><rect x=\"262\" y=\"44\" width=\"174\" height=\"120\" rx=\"12\" class=\"g-ta\"/><rect x=\"262\" y=\"44\" width=\"174\" height=\"120\" rx=\"12\" class=\"g-ts\" stroke-width=\"1.8\"/><path d=\"M262 56a12 12 0 0 1 12 -12h150a12 12 0 0 1 12 12v10h-174z\" class=\"g-tf\"/><text x=\"349\" y=\"60\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-b\">tabanlar çarpılır</text><text x=\"292.2\" y=\"101.2\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">a</text><text x=\"301.9\" y=\"94.3\" font-size=\"10.8\" font-weight=\"700\" class=\"g-tf\">x</text><text x=\"308.2\" y=\"101.2\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\"> · </text><text x=\"322.3\" y=\"101.2\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">b</text><text x=\"332.0\" y=\"94.3\" font-size=\"10.8\" font-weight=\"700\" class=\"g-tf\">x</text><text x=\"338.2\" y=\"101.2\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\"> = </text><text x=\"356.2\" y=\"101.2\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">(a · b)</text><text x=\"399.5\" y=\"94.3\" font-size=\"10.8\" font-weight=\"700\" class=\"g-tf\">x</text><text x=\"307.5\" y=\"144.9\" font-size=\"14\" font-weight=\"600\" class=\"g-y\">4</text><text x=\"316.6\" y=\"138.5\" font-size=\"10.1\" font-weight=\"600\" class=\"g-y\">5</text><text x=\"322.5\" y=\"144.9\" font-size=\"14\" font-weight=\"600\" class=\"g-y\"> · </text><text x=\"335.6\" y=\"144.9\" font-size=\"14\" font-weight=\"600\" class=\"g-y\">5</text><text x=\"344.8\" y=\"138.5\" font-size=\"10.1\" font-weight=\"600\" class=\"g-y\">5</text><text x=\"350.6\" y=\"144.9\" font-size=\"14\" font-weight=\"600\" class=\"g-y\"> = </text><text x=\"367.4\" y=\"144.9\" font-size=\"14\" font-weight=\"600\" class=\"g-y\">20</text><text x=\"384.6\" y=\"138.5\" font-size=\"10.1\" font-weight=\"600\" class=\"g-y\">5</text><rect x=\"8\" y=\"172\" width=\"64\" height=\"120\" rx=\"12\" class=\"g-oa\"/><rect x=\"8\" y=\"172\" width=\"64\" height=\"120\" rx=\"12\" class=\"g-os\" stroke-width=\"2\"/><text x=\"40\" y=\"237\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" class=\"g-of\">Bölme</text><rect x=\"80\" y=\"172\" width=\"174\" height=\"120\" rx=\"12\" class=\"g-ma\"/><rect x=\"80\" y=\"172\" width=\"174\" height=\"120\" rx=\"12\" class=\"g-ms\" stroke-width=\"1.8\"/><path d=\"M80 184a12 12 0 0 1 12 -12h150a12 12 0 0 1 12 12v10h-174z\" class=\"g-mf\"/><text x=\"167\" y=\"188\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-b\">üsler çıkarılır</text><text x=\"132.4\" y=\"220.0\" font-size=\"15\" font-weight=\"700\" class=\"g-mf\">a</text><text x=\"142.1\" y=\"213.1\" font-size=\"10.8\" font-weight=\"700\" class=\"g-mf\">b</text><line x1=\"129.4\" y1=\"224.0\" x2=\"151.4\" y2=\"224.0\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"132.4\" y=\"242.0\" font-size=\"15\" font-weight=\"700\" class=\"g-mf\">a</text><text x=\"142.1\" y=\"235.1\" font-size=\"10.8\" font-weight=\"700\" class=\"g-mf\">c</text><text x=\"152.4\" y=\"229.2\" font-size=\"15\" font-weight=\"700\" class=\"g-mf\"> = </text><text x=\"170.4\" y=\"229.2\" font-size=\"15\" font-weight=\"700\" class=\"g-mf\">a</text><text x=\"180.1\" y=\"222.3\" font-size=\"10.8\" font-weight=\"700\" class=\"g-mf\">b − c</text><text x=\"143.6\" y=\"264.0\" font-size=\"14\" font-weight=\"600\" class=\"g-y\">7</text><text x=\"152.8\" y=\"257.6\" font-size=\"10.1\" font-weight=\"600\" class=\"g-y\">6</text><line x1=\"140.6\" y1=\"268.0\" x2=\"161.6\" y2=\"268.0\" class=\"g-c\" stroke-width=\"1.6\"/><text x=\"143.6\" y=\"285.0\" font-size=\"14\" font-weight=\"600\" class=\"g-y\">7</text><text x=\"152.8\" y=\"278.6\" font-size=\"10.1\" font-weight=\"600\" class=\"g-y\">2</text><text x=\"162.6\" y=\"272.9\" font-size=\"14\" font-weight=\"600\" class=\"g-y\"> = </text><text x=\"179.4\" y=\"272.9\" font-size=\"14\" font-weight=\"600\" class=\"g-y\">7</text><text x=\"188.5\" y=\"266.5\" font-size=\"10.1\" font-weight=\"600\" class=\"g-y\">4</text><rect x=\"262\" y=\"172\" width=\"174\" height=\"120\" rx=\"12\" class=\"g-ta\"/><rect x=\"262\" y=\"172\" width=\"174\" height=\"120\" rx=\"12\" class=\"g-ts\" stroke-width=\"1.8\"/><path d=\"M262 184a12 12 0 0 1 12 -12h150a12 12 0 0 1 12 12v10h-174z\" class=\"g-tf\"/><text x=\"349\" y=\"188\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-b\">tabanlar bölünür</text><text x=\"311.0\" y=\"220.0\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">a</text><text x=\"320.7\" y=\"213.1\" font-size=\"10.8\" font-weight=\"700\" class=\"g-tf\">c</text><line x1=\"308.0\" y1=\"224.0\" x2=\"330.0\" y2=\"224.0\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"311.0\" y=\"242.0\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">b</text><text x=\"320.7\" y=\"235.1\" font-size=\"10.8\" font-weight=\"700\" class=\"g-tf\">c</text><text x=\"331.0\" y=\"229.2\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\"> = </text><path d=\"M354.0 205.0 Q348.0 224.0 354.0 243.0\" class=\"g-ts\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"361.0\" y=\"220.0\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">a</text><line x1=\"358.0\" y1=\"224.0\" x2=\"372.7\" y2=\"224.0\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"361.0\" y=\"242.0\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">b</text><path d=\"M376.7 205.0 Q382.7 224.0 376.7 243.0\" class=\"g-ts\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"385.7\" y=\"211.0\" font-size=\"10.8\" font-weight=\"700\" class=\"g-tf\">c</text><text x=\"321.6\" y=\"264.0\" font-size=\"14\" font-weight=\"600\" class=\"g-y\">20</text><text x=\"338.8\" y=\"257.6\" font-size=\"10.1\" font-weight=\"600\" class=\"g-y\">4</text><line x1=\"318.6\" y1=\"268.0\" x2=\"347.7\" y2=\"268.0\" class=\"g-c\" stroke-width=\"1.6\"/><text x=\"325.6\" y=\"285.0\" font-size=\"14\" font-weight=\"600\" class=\"g-y\">5</text><text x=\"334.8\" y=\"278.6\" font-size=\"10.1\" font-weight=\"600\" class=\"g-y\">4</text><text x=\"348.7\" y=\"272.9\" font-size=\"14\" font-weight=\"600\" class=\"g-y\"> = </text><text x=\"365.5\" y=\"272.9\" font-size=\"14\" font-weight=\"600\" class=\"g-y\">4</text><text x=\"374.6\" y=\"266.5\" font-size=\"10.1\" font-weight=\"600\" class=\"g-y\">4</text></svg>"
+  },
+  {
+   "baslik": "Üssün üssü ve denk ifadeler",
+   "metin": [
+    "Bir üslü ifadeyi bir kuvvete yükseltirken üsleri çarparsın: {us:({us:a|b})|c} = {us:a|b · c}. Nedenini {us:({us:4|3})|3} = {us:4|3} · {us:4|3} · {us:4|3} = {us:4|3 + 3 + 3} = {us:4|9} yazarak görebilirsin; üç tane 3’ün toplamı 3 · 3’e eşittir. Negatif üsler de çarpılır: {us:({us:5|−3})|−2} = {us:5|6}.",
+    "Parantez, işaretin kime ait olduğunu belirler. Örneğin {us:(−{us:2|3})|5} ifadesinde −{us:2|3} = −8 negatif bir tam sayıdır; negatif sayının tek kuvveti negatif olduğundan değer −{us:2|15} çıkar. Çift kuvvet alınırsa, örneğin {us:(−{us:3|2})|4} ifadesinde, değer pozitiftir ve {us:3|8}’e eşit olur.",
+    "Tabanları ya da üsleri farklı olan ifadelerle işlem yaparken önce eşitlenebilen olanı eşitlersin. Tabanlar eşitlenebiliyorsa üsler toplanır ya da çıkarılır: {us:25|3} · {us:125|2} · {us:5|−4} işleminde 25 = {us:5|2} ve 125 = {us:5|3} olduğundan {us:({us:5|2})|3} · {us:({us:5|3})|2} · {us:5|−4} = {us:5|6} · {us:5|6} · {us:5|−4} = {us:5|8} bulunur. Üsler eşitlenebiliyorsa tabanlar çarpılır: {us:8|4} · {us:7|12} işleminde 8 = {us:2|3} olduğundan {us:8|4} = {us:2|12} olur ve {us:2|12} · {us:7|12} = {us:14|12} elde edilir.",
+    "Aynı değeri veren farklı yazılışlar birbirine denktir. Üssün üssü kuralıyla bir üslü ifadeden birçok denk ifade üretebilirsin: {us:3|6} = {us:({us:3|2})|3} = {us:9|3} ve {us:3|6} = {us:({us:3|3})|2} = {us:27|2} olur; üçü de 729’a eşittir."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "metin": "Üssün üssünde üsler çarpılır, tabanları aynı iki ifadenin çarpımında ise toplanır; bu iki kuralı birbirine karıştırma."
+   },
+   "gorsel": "<svg viewBox=\"0 0 440 252\" role=\"img\" aria-label=\"Farklı görünen üslü ifadeleri eşitleme. Solda tabanlar eşitlenir: 25 üssü 3 çarpı 125 üssü 2 çarpı 5 üssü eksi 4; 25 = 5 üssü 2 ve 125 = 5 üssü 3 yazılır, üsler çarpılır ve 5 üssü 6 çarpı 5 üssü 6 çarpı 5 üssü eksi 4 olur, üsler toplanınca sonuç 5 üssü 8 bulunur. Sağda üsler eşitlenir: 8 üssü 4 çarpı 7 üssü 12; 8 = 2 üssü 3 yazılır, üsler çarpılır ve 2 üssü 12 çarpı 7 üssü 12 olur, tabanlar çarpılınca sonuç 14 üssü 12 bulunur.\"><defs><marker id=\"okE1\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-s\"/></marker></defs><rect x=\"6\" y=\"8\" width=\"212\" height=\"236\" rx=\"14\" class=\"g-ma\"/><rect x=\"6\" y=\"8\" width=\"212\" height=\"236\" rx=\"14\" class=\"g-ms\" stroke-width=\"2\"/><rect x=\"42\" y=\"16\" width=\"140\" height=\"24\" rx=\"12\" class=\"g-z\"/><rect x=\"42\" y=\"16\" width=\"140\" height=\"24\" rx=\"12\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"112\" y=\"32.7\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Tabanları eşitle</text><text x=\"63.5\" y=\"68.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\">25</text><text x=\"80.1\" y=\"62.5\" font-size=\"9.7\" font-weight=\"700\" class=\"g-y\">3</text><text x=\"85.8\" y=\"68.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\"> · </text><text x=\"98.5\" y=\"68.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\">125</text><text x=\"121.9\" y=\"62.5\" font-size=\"9.7\" font-weight=\"700\" class=\"g-y\">2</text><text x=\"127.5\" y=\"68.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\"> · </text><text x=\"140.2\" y=\"68.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\">5</text><text x=\"149.0\" y=\"62.5\" font-size=\"9.7\" font-weight=\"700\" class=\"g-y\">−4</text><line x1=\"26\" y1=\"78\" x2=\"26\" y2=\"102\" class=\"g-c\" stroke-width=\"1.8\" marker-end=\"url(#okE1)\"/><text x=\"38.0\" y=\"97.4\" font-size=\"12.5\" font-weight=\"600\" class=\"g-s\">25 = </text><text x=\"67.5\" y=\"97.4\" font-size=\"12.5\" font-weight=\"600\" class=\"g-s\">5</text><text x=\"75.8\" y=\"91.6\" font-size=\"9.0\" font-weight=\"600\" class=\"g-s\">2</text><text x=\"81.0\" y=\"97.4\" font-size=\"12.5\" font-weight=\"600\" class=\"g-s\">,  125 = </text><text x=\"128.0\" y=\"97.4\" font-size=\"12.5\" font-weight=\"600\" class=\"g-s\">5</text><text x=\"136.2\" y=\"91.6\" font-size=\"9.0\" font-weight=\"600\" class=\"g-s\">3</text><text x=\"58.3\" y=\"120.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\">(</text><text x=\"63.2\" y=\"120.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\">5</text><text x=\"72.0\" y=\"114.5\" font-size=\"9.7\" font-weight=\"700\" class=\"g-y\">2</text><text x=\"77.7\" y=\"120.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\">)</text><text x=\"83.0\" y=\"114.5\" font-size=\"9.7\" font-weight=\"700\" class=\"g-y\">3</text><text x=\"89.2\" y=\"120.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\"> · </text><text x=\"101.9\" y=\"120.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\">(</text><text x=\"106.7\" y=\"120.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\">5</text><text x=\"115.5\" y=\"114.5\" font-size=\"9.7\" font-weight=\"700\" class=\"g-y\">3</text><text x=\"121.2\" y=\"120.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\">)</text><text x=\"126.5\" y=\"114.5\" font-size=\"9.7\" font-weight=\"700\" class=\"g-y\">2</text><text x=\"132.7\" y=\"120.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\"> · </text><text x=\"145.4\" y=\"120.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\">5</text><text x=\"154.2\" y=\"114.5\" font-size=\"9.7\" font-weight=\"700\" class=\"g-y\">−4</text><line x1=\"26\" y1=\"130\" x2=\"26\" y2=\"154\" class=\"g-c\" stroke-width=\"1.8\" marker-end=\"url(#okE1)\"/><text x=\"38.0\" y=\"149.4\" font-size=\"12.5\" font-weight=\"600\" class=\"g-s\">üsler çarpılır</text><text x=\"74.7\" y=\"172.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\">5</text><text x=\"83.5\" y=\"166.5\" font-size=\"9.7\" font-weight=\"700\" class=\"g-y\">6</text><text x=\"89.2\" y=\"172.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\"> · </text><text x=\"101.9\" y=\"172.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\">5</text><text x=\"110.7\" y=\"166.5\" font-size=\"9.7\" font-weight=\"700\" class=\"g-y\">6</text><text x=\"116.3\" y=\"172.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\"> · </text><text x=\"129.0\" y=\"172.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\">5</text><text x=\"137.8\" y=\"166.5\" font-size=\"9.7\" font-weight=\"700\" class=\"g-y\">−4</text><line x1=\"26\" y1=\"182\" x2=\"26\" y2=\"206\" class=\"g-c\" stroke-width=\"1.8\" marker-end=\"url(#okE1)\"/><text x=\"38.0\" y=\"201.4\" font-size=\"12.5\" font-weight=\"600\" class=\"g-s\">üsler toplanır</text><rect x=\"90.0204\" y=\"209\" width=\"43.9592\" height=\"28\" rx=\"14\" class=\"g-z\"/><rect x=\"90.0204\" y=\"209\" width=\"43.9592\" height=\"28\" rx=\"14\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"103.0\" y=\"228.9\" font-size=\"17\" font-weight=\"800\" class=\"g-mf\">5</text><text x=\"113.9\" y=\"221.1\" font-size=\"12.2\" font-weight=\"800\" class=\"g-mf\">8</text><rect x=\"222\" y=\"8\" width=\"212\" height=\"236\" rx=\"14\" class=\"g-ta\"/><rect x=\"222\" y=\"8\" width=\"212\" height=\"236\" rx=\"14\" class=\"g-ts\" stroke-width=\"2\"/><rect x=\"258\" y=\"16\" width=\"140\" height=\"24\" rx=\"12\" class=\"g-z\"/><rect x=\"258\" y=\"16\" width=\"140\" height=\"24\" rx=\"12\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"328\" y=\"32.7\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" class=\"g-tf\">Üsleri eşitle</text><text x=\"304.8\" y=\"68.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\">8</text><text x=\"313.6\" y=\"62.5\" font-size=\"9.7\" font-weight=\"700\" class=\"g-y\">4</text><text x=\"319.2\" y=\"68.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\"> · </text><text x=\"331.9\" y=\"68.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\">7</text><text x=\"340.7\" y=\"62.5\" font-size=\"9.7\" font-weight=\"700\" class=\"g-y\">12</text><line x1=\"242\" y1=\"78\" x2=\"242\" y2=\"102\" class=\"g-c\" stroke-width=\"1.8\" marker-end=\"url(#okE1)\"/><text x=\"254.0\" y=\"97.4\" font-size=\"12.5\" font-weight=\"600\" class=\"g-s\">8 = </text><text x=\"276.2\" y=\"97.4\" font-size=\"12.5\" font-weight=\"600\" class=\"g-s\">2</text><text x=\"284.5\" y=\"91.6\" font-size=\"9.0\" font-weight=\"600\" class=\"g-s\">3</text><text x=\"296.6\" y=\"120.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\">(</text><text x=\"301.4\" y=\"120.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\">2</text><text x=\"310.3\" y=\"114.5\" font-size=\"9.7\" font-weight=\"700\" class=\"g-y\">3</text><text x=\"315.9\" y=\"120.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\">)</text><text x=\"321.3\" y=\"114.5\" font-size=\"9.7\" font-weight=\"700\" class=\"g-y\">4</text><text x=\"327.4\" y=\"120.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\"> · </text><text x=\"340.1\" y=\"120.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\">7</text><text x=\"348.9\" y=\"114.5\" font-size=\"9.7\" font-weight=\"700\" class=\"g-y\">12</text><line x1=\"242\" y1=\"130\" x2=\"242\" y2=\"154\" class=\"g-c\" stroke-width=\"1.8\" marker-end=\"url(#okE1)\"/><text x=\"254.0\" y=\"149.4\" font-size=\"12.5\" font-weight=\"600\" class=\"g-s\">üsler çarpılır</text><text x=\"302.3\" y=\"172.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\">2</text><text x=\"311.2\" y=\"166.5\" font-size=\"9.7\" font-weight=\"700\" class=\"g-y\">12</text><text x=\"321.7\" y=\"172.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\"> · </text><text x=\"334.3\" y=\"172.7\" font-size=\"13.5\" font-weight=\"700\" class=\"g-y\">7</text><text x=\"343.2\" y=\"166.5\" font-size=\"9.7\" font-weight=\"700\" class=\"g-y\">12</text><line x1=\"242\" y1=\"182\" x2=\"242\" y2=\"206\" class=\"g-c\" stroke-width=\"1.8\" marker-end=\"url(#okE1)\"/><text x=\"254.0\" y=\"201.4\" font-size=\"12.5\" font-weight=\"600\" class=\"g-s\">tabanlar çarpılır</text><rect x=\"298.71\" y=\"209\" width=\"58.5792\" height=\"28\" rx=\"14\" class=\"g-z\"/><rect x=\"298.71\" y=\"209\" width=\"58.5792\" height=\"28\" rx=\"14\" class=\"g-ts\" stroke-width=\"2\"/><text x=\"311.7\" y=\"228.9\" font-size=\"17\" font-weight=\"800\" class=\"g-tf\">14</text><text x=\"331.1\" y=\"221.1\" font-size=\"12.2\" font-weight=\"800\" class=\"g-tf\">12</text></svg>"
+  },
+  {
+   "baslik": "Problemlerde üslü ifadeler",
+   "metin": [
+    "Üslü ifadeler günlük durumlarda da karşına çıkar. Bir yolun başına ve sonuna da gelecek biçimde eşit aralıklarla direk dikiliyorsa direk sayısı aralık sayısından 1 fazladır. Örneğin 5 direk dikilen bir yolda 4 aralık vardır.",
+    "Uzunluk üslü ifadeyle verildiğinde aralığın uzunluğunu bölme kuralıyla bulursun. Uzunluğu {us:6|4} m olan düz bir kanalın başına ve sonuna da gelecek biçimde 217 direk dikilirse 216 aralık oluşur; 216 = {us:6|3} olduğundan her aralığın uzunluğu {kesir:{us:6|4}|{us:6|3}} = {us:6|1} = 6 m olur.",
+    "Sonucu bulduktan sonra denetle: aralık sayısı ile aralık uzunluğunun çarpımı toplam uzunluğu vermelidir. Yukarıdaki durumda 216 · 6 = 1296 ve {us:6|4} = 1296 olduğundan sonuç doğrudur. Üslü ifadeleri son adımda sayı olarak da yazmak bu denetimi kolaylaştırır."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "metin": "Başta ve sonda da nesne bulunan eşit aralıklı dizilişte aralık sayısı, nesne sayısından 1 eksiktir."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Şu iki ifadenin değerlerini bul: {us:4|−3} ve {kesir:1|{us:2|−6}}.",
+   "cevap": "Birinci ifadede tabanın tersi alınır ve üs pozitif yazılır: {us:4|−3} = {kesir:1|{us:4|3}} = {kesir:1|64}. İkinci ifadede payda negatif üslü olduğundan paya geçince üssünün işareti değişir: {kesir:1|{us:2|−6}} = {us:2|6} = 64."
+  },
+  {
+   "soru": "Tabanı kesir olan {us:({kesir:3|4})|−3} ve {us:({kesir:−2|5})|−2} ifadelerinin değerlerini hesapla.",
+   "cevap": "Önce tabanın çarpmaya göre tersine geçilir: {kesir:3|4} için ters {kesir:4|3}, {kesir:−2|5} için ters {kesir:−5|2}’dir. Böylece {us:({kesir:3|4})|−3} = {us:({kesir:4|3})|3} = {kesir:64|27} ve {us:({kesir:−2|5})|−2} = {us:({kesir:−5|2})|2} = {kesir:25|4} bulunur."
+  },
+  {
+   "soru": "Şu sayıları tabanı asal sayı olan negatif üslü ifadeler biçiminde yaz: {kesir:1|243} ve −{kesir:1|256}.",
+   "cevap": "Asal çarpanlara ayırınca 243 = {us:3|5} bulunur; böylece {kesir:1|243} = {kesir:1|{us:3|5}} = {us:3|−5} olur. Benzer biçimde 256 = {us:2|8} olduğundan −{kesir:1|256} = −{kesir:1|{us:2|8}} = −{us:2|−8}’dir."
+  },
+  {
+   "soru": "Üsleri aynı olan {us:4|−3} · {us:25|−3} çarpımını tek bir üslü ifade olarak yaz ve değerini bul.",
+   "cevap": "Üsler aynı olduğundan tabanlar çarpılır: {us:4|−3} · {us:25|−3} = {us:(4 · 25)|−3} = {us:100|−3}. Negatif üs pozitife çevrilince {kesir:1|{us:100|3}} = {kesir:1|1 000 000} bulunur."
+  },
+  {
+   "soru": "Tabanı 2 olan {us:2|12} ifadesine denk, tabanları sırasıyla 4, 8 ve 16 olan üç üslü ifade yaz.",
+   "cevap": "Taban 4 için 4 = {us:2|2} yazılır: {us:2|12} = {us:({us:2|2})|6} = {us:4|6}. Taban 8 için 8 = {us:2|3} yazılır: {us:2|12} = {us:({us:2|3})|4} = {us:8|4}. Taban 16 için 16 = {us:2|4} yazılır: {us:2|12} = {us:({us:2|4})|3} = {us:16|3}. Her yazılışta tabanın 2’nin kaçıncı kuvveti olduğuyla yeni üssün çarpımı 12’dir: 2 · 6 = 12, 3 · 4 = 12 ve 4 · 3 = 12."
+  },
+  {
+   "soru": "Uzunluğu {us:2|10} m olan düz bir yolun başına ve sonuna da gelecek biçimde eşit aralıklarla 257 ağaç dikiliyor. Ardışık iki ağaç arasındaki uzaklık kaç metredir?",
+   "cevap": "Ağaç sayısı aralık sayısından 1 fazla olduğundan 256 aralık vardır ve 256 = {us:2|8}’dir. Bir aralığın uzunluğu {kesir:{us:2|10}|{us:2|8}} = {us:2|10 − 8} = {us:2|2} = 4 m’dir."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Kaan, {us:2|−3} + {us:5|0} toplamını hesaplıyor. Kaan’ın bulması gereken sonuç hangisidir?",
+   "secenekler": [
+    "−7",
+    "{kesir:9|8}",
+    "{kesir:1|8}",
+    "9"
+   ],
+   "dogru": 1,
+   "aciklama": "Önce her terim hesaplanır: {us:2|−3} = {kesir:1|8} ve {us:5|0} = 1’dir; toplam {kesir:9|8} bulunur. Üssü sıfır olan ifadenin değeri 0 değildir; negatif üs de sayıyı negatif yapmaz."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir öğrenci {kesir:{us:5|3}|{us:5|−4}} bölümünü sadeleştiriyor. Doğru sonuç aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "{us:5|−1}",
+    "{us:5|−12}",
+    "{us:5|1}",
+    "{us:5|7}"
+   ],
+   "dogru": 3,
+   "aciklama": "Taban aynı olduğundan üslerin farkı alınır: 3 − (−4) = 7 ve sonuç {us:5|7}’dir. Üsleri toplamak ya da çarpmak bölme için kullanılmaz."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Aşağıdakilerden hangisi {us:(−{us:3|2})|3} ifadesine eşittir?",
+   "secenekler": [
+    "−{us:3|6}",
+    "{us:3|6}",
+    "{us:(−3)|6}",
+    "{us:3|5}"
+   ],
+   "dogru": 0,
+   "aciklama": "Parantez içindeki −{us:3|2} değeri −9 olan negatif bir sayıdır ve negatif sayının tek kuvveti negatiftir. Üsler çarpılınca 2 · 3 = 6 olur; sonuç −{us:3|6}’dır."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadelerin her birine doğru ya da yanlış de; yanlış olanların açıklamasını oku.",
+   "ifadeler": [
+    {
+     "metin": "Tabanı −5 olan {us:(−5)|−3} ifadesinin değeri negatif bir sayıdır.",
+     "dogru": true,
+     "aciklama": "Taban negatif ve üs tek olduğundan değer negatiftir: {us:(−5)|−3} = {kesir:1|{us:(−5)|3}} = −{kesir:1|125}."
+    },
+    {
+     "metin": "İki tane {us:2|3} ifadesinin çarpımı {us:2|9} değerine eşittir.",
+     "dogru": false,
+     "aciklama": "Tabanlar aynı olduğundan üsler toplanır: 3 + 3 = 6 ve çarpım {us:2|6} olur."
+    },
+    {
+     "metin": "Değeri {us:6|4} olan sayı, {us:36|2} biçiminde de yazılabilir.",
+     "dogru": true,
+     "aciklama": "Taban 36 = {us:6|2} yazılınca {us:36|2} = {us:({us:6|2})|2} = {us:6|4} bulunur."
+    },
+    {
+     "metin": "Üsleri aynı olan {kesir:{us:18|4}|{us:6|4}} bölümünün sonucu {us:12|4}’tür.",
+     "dogru": false,
+     "aciklama": "Üsler aynı olduğundan tabanlar bölünür: 18 ÷ 6 = 3. Sonuç {us:3|4}’tür; tabanlar çıkarılmaz."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "İşlemleri sonuçlarıyla eşleştir.",
+   "ciftler": [
+    [
+     "{us:2|7} · {us:2|−4}",
+     "8"
+    ],
+    [
+     "{us:({us:5|−1})|−2}",
+     "25"
+    ],
+    [
+     "{kesir:1|{us:4|−2}}",
+     "16"
+    ],
+    [
+     "{us:2|3} · {us:5|3}",
+     "1000"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Üssü negatif olan ifadede tabanın çarpma işlemindeki ___ alınır ve üs pozitif yazılır.",
+     "cevap": "tersi"
+    },
+    {
+     "metin": "Taban ortaksa bölme yaparken üsler birbirinden ___ ve elde edilen fark ortak tabanın üssü olur.",
+     "cevap": "çıkarılır"
+    },
+    {
+     "metin": "Bir üslü ifadeyi başka bir kuvvete yükseltirken üsler ___.",
+     "cevap": "çarpılır"
+    }
+   ],
+   "fazla": [
+    "toplanır"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Kerem, {us:9|4} · {us:3|8} çarpımını tabanları çarpıp üsleri toplayarak {us:27|12} biçiminde yazmıştır. Bu işlem doğru mudur? Gerekçeni açıkla ve çarpımı tabanları aynı olan bir yazılışla göster.",
+   "ipuclari": [
+    "Üsleri toplamak için tabanların, tabanları çarpmak için üslerin eşit olması gerekir.",
+    "Önce 9 sayısını tabanı 3 olan bir üslü ifade olarak yaz."
+   ],
+   "cevap": "Doğru değildir. Çarpılan ifadelerde hem taban hem üs farklıdır; bu durumda ne üsleri toplama ne de tabanları çarpma kuralı doğrudan uygulanır. Taban 9 = {us:3|2} olduğundan {us:9|4} = {us:3|8} olur. Tabanlar eşit olunca üsler toplanır: {us:3|8} · {us:3|8} = {us:3|16}."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Şu eşitliği sağlayan x tam sayısını bul: {kesir:{us:7|x}|{us:7|−2}} = {us:7|5}.",
+   "ipuclari": [
+    "Tabanlar aynı olduğuna göre üslere hangi işlem uygulanır?",
+    "Çıkarılan üs negatif olduğundan işarete dikkat et."
+   ],
+   "cevap": "Taban aynı olduğundan üslerin farkı alınır: x − (−2) = 5, yani x + 2 = 5 ve x = 3. Sınama: {kesir:{us:7|3}|{us:7|−2}} = {us:7|3 − (−2)} = {us:7|5} olur."
+  }
+ ],
+ "ozet": [
+  "Taban 0 olmadıkça üssü sıfır olan ifadenin değeri 1’dir; üssü negatif olan ifade, tabanın çarpma işlemine göre tersi alınarak pozitif üsle hesaplanır: {us:a|−n} = {kesir:1|{us:a|n}}.",
+  "Bir üslü ifade kesrin payından paydasına ya da paydasından payına taşınınca üssünün işareti değişir.",
+  "Tabanları aynı olan ifadelerde çarpmada üsler toplanır, bölmede çıkarılır; üsleri aynı olan ifadelerde çarpmada tabanlar çarpılır, bölmede bölünür.",
+  "Bir üslü ifadeyi kuvvete yükseltirken üsler çarpılır; parantezin yeri, işaretin kime ait olduğunu belirler.",
+  "Tabanlar ya da üsler farklıysa eşitlenebilenler eşitlenir; böylece aynı değeri veren (denk) ifadeler kurulur."
+ ]
+}
