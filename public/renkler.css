@@ -90,7 +90,12 @@ body .kesif-araclar { background:var(--yuzey); color:var(--metin); border:1px so
 body .kesif-araclar p { color:var(--soluk); }
 body .kesif-arac-links a[data-renk] { background:var(--kart-zemin); color:var(--kart-ana); border-color:var(--kart-cizgi); min-height:52px; gap:12px; }
 body .kesif-arac-links a:hover { border-color:var(--kart-ana); }
-body .iletisim-kart { background:linear-gradient(120deg,var(--kart-zemin),var(--yuzey)); border-color:var(--kart-cizgi); }
+body .iletisim-kart { background:linear-gradient(120deg,var(--kart-zemin),var(--yuzey)); border:1px solid var(--kart-cizgi); color:var(--metin); }
+body .iletisim-kart .ust-baslik { color:var(--kart-vurgu); }
+body .iletisim-kart h2 { color:var(--kart-ana); }
+body .iletisim-kart p { color:color-mix(in srgb, var(--kart-ana) 85%, var(--metin)); }
+body .iletisim-kart .dugme.ana { background:var(--kart-ana); border-color:var(--kart-ana); color:var(--kart-ikon-yazi); }
+body .iletisim-kart .dugme.ana:hover { background:var(--kart-vurgu); border-color:var(--kart-vurgu); }
 body :is(.kesif-rota,.kesif-dersler,.menu,.kesif-arac-links) a:focus-visible { outline:3px solid var(--kart-ana); outline-offset:3px; }
 @media (min-width:1181px) { body .ust-ic { gap:14px; } body .menu { gap:5px; } }
 @media (max-width:1180px) { body .menu { top:72px; max-height:calc(100dvh - 72px); overflow-y:auto; gap:8px; } body .menu > a[data-renk] { justify-content:flex-start; } }

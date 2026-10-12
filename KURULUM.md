@@ -23,9 +23,14 @@ Hesap açma, giriş ve anahtar/şifre girme işlerini siz yaparsınız. Anahtarl
 - `public/veri/youtube.json`, `instagram.json`: `araclar/akis_guncelle.py` üretir; elle değiştirilmez.
 - `public/gizlilik.html` (gizlilik ve çerezler), `404.html`, `robots.txt`, `sitemap.xml`, simgeler ve paylaşım görseli (`paylasim.png`).
 
-## Instagram paylaşımlarının kendiliğinden gelmesi (isteğe bağlı)
-Bu adım yapılmazsa Instagram gönderileri siteye bağlantılarıyla tek tek eklenir.
-1. developers.facebook.com'da ücretsiz bir uygulama oluşturun. Uygulamaya **Instagram** ürününü ekleyin, "Instagram girişiyle API kurulumu" bölümünden @derskutusuinfo hesabını bağlayın ve **erişim anahtarı** oluşturun.
+## Sosyal medya kartları
+- `araclar/sosyal/<kimlik>.json`: her "Bunu biliyor muydunuz?" kartının metni (`ozet`, `baslik`, `paragraflar`, `bilgi`). Kimlik `bilgi-<sınıf>-<ders>-<hafta>` biçimindedir (Din Kültürü → `din-kulturu`, İnkılap Tarihi → `inkilap-tarihi`).
+- `python3 araclar/sosyal_gorsel.py`: görseli olmayan kartları `public/sosyal/<kimlik>.png` olarak üretir (1080×1350, Poppins yazı tipi `araclar/fontlar/`). `--kuyruk 2026-10-13T09:00` ile kuyrukta olmayan kartları günde 6 gönderi (09–19, iki saat arayla) olacak biçimde `sosyal/kuyruk.json`'a ekler.
+- Paylaşım: `IG_TOKEN` (Instagram, aşağıdaki bölüm) ya da `FB_PAGE_TOKEN` (Facebook sayfası) gizli anahtarı girilmişse `araclar/sosyal_paylas.py` zamanı gelen gönderiyi 15 dakikada bir o kanala kendiliğinden paylaşır; anahtarı olmayan kanal bekler ve Meta Business Suite'ten elle paylaşılıp `durum` alanına not düşülür. `sosyal/bekleyen.md` bekleyenleri listeler (`--liste`).
+
+## Instagram anahtarı: akış ve otomatik paylaşım (isteğe bağlı)
+Aynı anahtar hem Instagram gönderilerini siteye çeker hem de kuyruktaki kartları Instagram'da kendiliğinden paylaşır. Yapılmazsa gönderiler siteye bağlantılarıyla tek tek eklenir, kartlar elle paylaşılır.
+1. developers.facebook.com'da ücretsiz bir uygulama oluşturun. Uygulamaya **Instagram** ürününü ekleyin, "Instagram girişiyle API kurulumu" bölümünden @derskutusuinfo hesabını bağlayın ve **erişim anahtarı** oluşturun. Anahtar üretilirken `instagram_business_basic` ve `instagram_business_content_publish` izinleri seçili olmalı (paylaşım için ikincisi şart).
 2. GitHub deposunda **Settings → Secrets and variables → Actions → New repository secret**: ad `IG_TOKEN`, değer bu anahtar.
 3. İsteğe bağlı: anahtarın kendiliğinden yenilenip GitHub'a yazılması için yalnız bu depoya "Secrets: Read and write" izni olan bir fine-grained token oluşturup `GH_PAT` adıyla ekleyin. Eklemezseniz anahtar 60 günde bir yenilenmelidir.
 
