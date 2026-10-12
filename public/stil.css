@@ -693,6 +693,7 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
 .etk-sutunlar { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 12px; }
 .etk-sutun { display: grid; gap: 10px; align-content: start; }
 .etk-eslestir .etk-sec { justify-content: center; text-align: center; }
+.etk-eslestir .etk-sec > span { min-width: 0; overflow-wrap: anywhere; }
 .etk-sec.secili { border-color: var(--vurgu); background: var(--vurgu-acik); box-shadow: 0 0 0 3px var(--vurgu-acik); }
 .etk-sec.esli { cursor: default; font-weight: 600; }
 .etk-sec.r1 { border-color: #0e9f9f; background: rgb(14 159 159 / .13); } .etk-sec.r2 { border-color: #12a150; background: rgb(18 161 80 / .12); }

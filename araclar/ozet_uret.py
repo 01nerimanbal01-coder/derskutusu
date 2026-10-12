@@ -157,8 +157,9 @@ def etkinlik_html(liste):
             sira = list(range(len(x['ciftler'])))
             while sira == sorted(sira) and len(sira) > 1:
                 rnd.shuffle(sira)
-            sol = ''.join(f'<button type="button" class="etk-sec" data-sol="{i}">{e(a)}</button>' for i, (a, _) in enumerate(x['ciftler']))
-            sag = ''.join(f'<button type="button" class="etk-sec" data-sag="{i}">{e(x["ciftler"][i][1])}</button>' for i in sira)
+            # İçerik tek bir <span> içinde: düğme flex olduğu için kesir/kök kutucuklarıyla metin aksi hâlde tek satırda kalıp dar ekranda taşar.
+            sol = ''.join(f'<button type="button" class="etk-sec" data-sol="{i}"><span>{e(a)}</span></button>' for i, (a, _) in enumerate(x['ciftler']))
+            sag = ''.join(f'<button type="button" class="etk-sec" data-sag="{i}"><span>{e(x["ciftler"][i][1])}</span></button>' for i in sira)
             parca.append(f'<li class="etk etk-eslestir">{bas}<p class="etk-ipucu-kucuk">Soldan bir öğeye, sonra sağdaki eşine dokunun.</p>'
                          f'<div class="etk-sutunlar"><div class="etk-sutun">{sol}</div><div class="etk-sutun">{sag}</div></div>{_geri()}</li>')
         elif tur == 'bosluk':
