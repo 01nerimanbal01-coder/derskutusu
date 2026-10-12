@@ -17,6 +17,7 @@ Kullanım:
   python3 araclar/sosyal_gorsel.py bilgi-8-fen-bilimleri-3   # yalnız verilenleri üretir
   python3 araclar/sosyal_gorsel.py --kuyruk 2026-10-13T09:00 # kuyrukta olmayan içerikleri sırayla ekler
                                                               # (günde 6 gönderi: 09, 11, 13, 15, 17, 19)
+  python3 araclar/sosyal_gorsel.py --liste                   # paylaşılmamışları sosyal/bekleyen.md'ye yazar
 Paylaşım: sosyal/kuyruk.json'daki kayıtlar FB_PAGE_TOKEN varsa araclar/sosyal_paylas.py ile kendiliğinden,
 yoksa Meta Business Suite'ten elle paylaşılır; paylaşılınca "durum" alanı doldurulur.
 """
@@ -237,12 +238,27 @@ def kuyruk_ekle(kimlikler, baslangic, saatler=(9, 11, 13, 15, 17, 19)):
     return eklenen
 
 
+def bekleyen_listesi():
+    """Paylaşılmamış gönderileri elle paylaşım için sosyal/bekleyen.md dosyasına yazar."""
+    k = json.loads(KUYRUK.read_text(encoding='utf-8'))
+    bekleyen = [g for g in k['gonderiler'] if any(not g['durum'].get(h) for h in g['hedef'])]
+    satirlar = ['# Paylaşım bekleyen gönderiler', '',
+                'Her gönderi için: görseli indirin, Meta Business Suite\'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; '
+                'aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.', '',
+                f'Toplam {len(bekleyen)} gönderi.', '']
+    for g in bekleyen:
+        satirlar += [f'## {g["kimlik"]}', f'Sıra: {g["zaman"][:16].replace("T", " ")} · Görsel: {g["gorsel"]}', '', '```', g['metin'], '```', '']
+    (KOK / 'sosyal' / 'bekleyen.md').write_text('\n'.join(satirlar), encoding='utf-8')
+    return len(bekleyen)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('kimlikler', nargs='*', help='üretilecek kart kimlikleri (boşsa görseli olmayanlar)')
     ap.add_argument('--hepsi', action='store_true', help='var olan görselleri de yeniden üret')
     ap.add_argument('--kuyruk', metavar='BASLANGIC', help='kuyrukta olmayan içerikleri bu andan başlayarak ekle (ör. 2026-10-13T09:00)')
     ap.add_argument('--cikti', help='görselleri bu dizine yaz (deneme için)')
+    ap.add_argument('--liste', action='store_true', help='paylaşılmamış gönderileri sosyal/bekleyen.md dosyasına yaz')
     a = ap.parse_args()
     hepsi = sorted(p.stem for p in ICERIK.glob('bilgi-*.json'))
     cikti = Path(a.cikti) if a.cikti else CIKTI
@@ -262,6 +278,8 @@ def main():
               f'paragraf {bilgi["paragraf_satir"]} satır/{bilgi["paragraf_boyut"]}px, alt {bilgi["alt"]}{uyari}')
     if a.kuyruk:
         print(f'kuyruğa {kuyruk_ekle(hepsi, a.kuyruk)} gönderi eklendi')
+    if a.liste or a.kuyruk:
+        print(f'sosyal/bekleyen.md: {bekleyen_listesi()} gönderi bekliyor')
 
 
 if __name__ == '__main__':
