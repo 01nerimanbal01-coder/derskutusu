@@ -253,6 +253,8 @@ def main():
         for alan in ('baslik', 'paragraflar', 'bilgi'):
             if not v.get(alan):
                 raise ValueError(f'{kimlik}: {alan} alanı boş')
+        if any('\u0600' <= h <= '\u06ff' for h in v['baslik'] + ''.join(v['paragraflar'])):
+            raise ValueError(f'{kimlik}: kart metninde Arap harfi var; Poppins bunu çizemez, çeviri yazı kullanın (bilgi alanında kalabilir)')
         im, bilgi = ciz(v)
         im.save(cikti / f'{kimlik}.png', optimize=True)
         uyari = ' KÜÇÜLTÜLDÜ' if bilgi['baslik_boyut'] < 68 else ''
