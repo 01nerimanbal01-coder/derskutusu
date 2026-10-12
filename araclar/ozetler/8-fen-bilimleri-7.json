@@ -1,0 +1,435 @@
+{
+ "sinif": 8,
+ "ders": "fen-bilimleri",
+ "hafta": 7,
+ "tarih": "26-30 Ekim 2026",
+ "yayin_tarihi": "2026-10-13",
+ "unite": "DNA ve Genetik Kod",
+ "konu": "Kalıtım: Tek Karakter Çaprazlamaları ve Akraba Evliliği",
+ "ciktilar": [
+  "F.8.2.2.2. Tek karakter çaprazlamaları ile ilgili problemler çözerek sonuçlar hakkında yorum yapar.",
+  "F.8.2.2.3. Akraba evliliklerinin genetik sonuçlarını tartışır."
+ ],
+ "giris": "Beşinci haftada DNA’nın yapısını ve kendini nasıl eşlediğini inceledik; altıncı haftada gen, alel, baskın ve çekinik, genotip ve fenotip, saf döl ve melez döl kavramlarını tanıyıp bezelyelerle ilk çaprazlamaları yaptık. Bu hafta tek karakter çaprazlama problemlerini adım adım çözecek, Punnett karesinden çıkan oranları yorumlamayı öğreneceksin. Ardından aynı kuralların insanda cinsiyetin belirlenmesinde nasıl işlediğini görecek ve akraba evliliklerinin genetik sonuçlarını bilimsel bir dille tartışacaksın.",
+ "bolumler": [
+  {
+   "baslik": "Kalıtım kavramlarını hatırlayalım",
+   "metin": [
+    "Bu haftaki bütün problemler geçen hafta tanıdığın kavramların üzerine kurulu; o yüzden önce onları bir çırpıda hatırlayalım. Canlının her bir özelliğine karakter denir: bezelyede tohum rengi, insanda kan grubu gibi. Bir karakteri belirleyen DNA parçası gendir. Aynı karakterin farklı seçeneklerini, örneğin sarı ya da yeşil tohumu belirleyen gen çeşitlerine ise alel denir.",
+    "Her bireyde bir karakter için iki alel bulunur; biri anneden, biri babadan gelir. Etkisini her durumda gösteren alel baskın, ancak iki tanesi bir araya geldiğinde kendini gösterebilen alel çekiniktir. Baskın alel büyük harfle (S), çekinik alel aynı harfin küçüğüyle (s) gösterilir.",
+    "Bireyin taşıdığı alellerin bütünü, yani harflerle yazdığın SS, Ss ya da ss onun genotipidir. Bu alellerin dışarıdan gözlenen sonucu, yani sarı ya da yeşil tohum ise fenotiptir. İki alel aynıysa (SS ya da ss) birey saf döl (homozigot), farklıysa (Ss) melez döldür (heterozigot). Dikkat et: Ss ve SS bireylerinin genotipi farklı olduğu hâlde fenotipi aynıdır; ikisi de sarı tohumludur."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "metin": "Bir karakter için iki alel vardır: biri anneden, biri babadan. Çekinik özellik ancak iki çekinik alel yan yana gelince (ss) fenotipte görünür; tek bir baskın alel (S) onu gizlemeye yeter."
+   },
+   "tablo": {
+    "basliklar": [
+     "Genotip",
+     "Döl türü",
+     "Fenotip (S: sarı, s: yeşil)"
+    ],
+    "satirlar": [
+     [
+      "SS",
+      "Saf döl (homozigot baskın)",
+      "Sarı tohum"
+     ],
+     [
+      "Ss",
+      "Melez döl (heterozigot)",
+      "Sarı tohum"
+     ],
+     [
+      "ss",
+      "Saf döl (homozigot çekinik)",
+      "Yeşil tohum"
+     ]
+    ]
+   }
+  },
+  {
+   "baslik": "Mendel ve bezelye karakterleri",
+   "metin": [
+    "Kalıtımın kurallarını ilk kez ortaya koyan kişi, 1800’lü yıllarda manastır bahçesinde yıllarca bezelye yetiştiren Gregor Mendel’dir. Mendel bezelyeyi boşuna seçmedi: bezelye kolay yetişir, kısa sürede çok sayıda tohum verir, kendi kendine tozlaşabilir ve karakterleri birbirinden net biçimde ayrılan iki hâlde bulunur. Sarı ile yeşil tohum arasında “biraz sarı” bir tohum yoktur; bu da saymayı ve oran bulmayı kolaylaştırır.",
+    "Mendel bezelyede yedi karakter inceledi. Bu haftaki problemlerde en çok karşına çıkacak dört tanesini tabloda görüyorsun. Baskın özelliği büyük harfle, çekinik özelliği aynı harfin küçüğüyle gösterme alışkanlığını edin; bir problemin çözümü harfleri doğru seçmekle başlar.",
+    "Bezelyeyle çalışmamızın nedeni kuralların yalnızca bezelyede geçerli olması değil. Alellerin anne ve babadan birer birer aktarılması ile baskınlık ve çekiniklik ilişkisi fasulyede de, kedide de, insanda da benzer biçimde işler. Bu yüzden bezelyeyle çözdüğün bir problemin mantığını başka canlılara da uygulayabilirsin; haftanın sonunda bunu insanda cinsiyetin belirlenmesi ve akraba evliliği örneklerinde göreceksin."
+   ],
+   "kutu": {
+    "tur": "bilgi",
+    "metin": "Mendel’in çalışmalarının değeri ancak ölümünden sonra, 1900 yılında başka bilim insanları benzer sonuçlara ulaşınca anlaşıldı. Bugün ona kalıtım biliminin, yani genetiğin kurucusu denir."
+   },
+   "tablo": {
+    "basliklar": [
+     "Karakter",
+     "Baskın özellik",
+     "Çekinik özellik",
+     "Harfler"
+    ],
+    "satirlar": [
+     [
+      "Tohum rengi",
+      "Sarı",
+      "Yeşil",
+      "S, s"
+     ],
+     [
+      "Tohum şekli",
+      "Düz (yuvarlak)",
+      "Buruşuk",
+      "D, d"
+     ],
+     [
+      "Çiçek rengi",
+      "Mor",
+      "Beyaz",
+      "M, m"
+     ],
+     [
+      "Bitki boyu",
+      "Uzun",
+      "Kısa",
+      "U, u"
+     ]
+    ]
+   }
+  },
+  {
+   "baslik": "Çaprazlama ve Punnett karesi: adım adım",
+   "metin": [
+    "Çaprazlama, iki bireyin üreme hücrelerinin birleşmesiyle oluşacak yavruların genotip ve fenotiplerini önceden tahmin etme işidir. Yedinci sınıfta öğrendiğin mayozu hatırla: üreme hücreleri, yani gametler oluşurken bir karakterin iki aleli birbirinden ayrılır ve her gamete yalnız biri gider. Ss genotipli bir bezelye iki çeşit gamet üretir: S ve s. SS genotipli bezelyenin bütün gametleri ise S taşır; ss genotipli bezelyeninkiler yalnız s taşır.",
+    "Olası gamet birleşimlerini tek tek yazmak yerine Punnett karesi denen tabloyu kullanırız. Bir bireyin gametleri satırların başına, diğer bireyinkiler sütunların başına yazılır; her göz, o satır ve sütundaki gametlerin birleşmesiyle oluşan yavrunun genotipini verir. Ss × Ss çaprazlamasının Punnett karesini aşağıdaki tabloda görüyorsun: dört gözde SS, Ss, Ss ve ss yazıyor.",
+    "Bir çaprazlama problemini her zaman aynı sırayla çöz. Birinci adım: karakteri ve harfleri belirle; baskın büyük, çekinik küçük harf. İkinci adım: anne ve babanın genotipini yaz; “melez sarı” ipucunu Ss, “saf döl sarı” ipucunu SS, “yeşil” ipucunu ss olarak harfe çevir. Üçüncü adım: her bireyin gametlerini bul. Dördüncü adım: Punnett karesini doldur. Beşinci adım: gözleri sayarak genotip ve fenotip oranlarını yaz. Altıncı adım: sorulan olasılığı kesir ya da yüzde olarak ifade et ve sonucu yorumla."
+   ],
+   "kutular": [
+    {
+     "tur": "kural",
+     "metin": "Her gamete bir karakterin iki alelinden yalnız biri gider. Yavru bir alelini annesinden, bir alelini babasından alır; böylece yeniden iki alelli olur."
+    },
+    {
+     "tur": "ipucu",
+     "metin": "Çekinik fenotipli bireyin genotipini düşünmene gerek yok: yeşil tohum her zaman ss, buruşuk tohum her zaman dd’dir. Baskın fenotipli bireyde ise iki ihtimal vardır (SS ya da Ss); sorudaki “saf döl” ya da “melez” ipucuna bak."
+    }
+   ],
+   "tablo": {
+    "basliklar": [
+     "Gametler",
+     "S",
+     "s"
+    ],
+    "satirlar": [
+     [
+      "S",
+      "SS",
+      "Ss"
+     ],
+     [
+      "s",
+      "Ss",
+      "ss"
+     ]
+    ]
+   }
+  },
+  {
+   "baslik": "Üç temel çaprazlama ve oranları",
+   "metin": [
+    "Tek karakter çaprazlamalarının büyük bölümü üç temel durumdan birine indirgenir. İlki iki saf dölün çaprazlanmasıdır: SS × ss. SS bireyin bütün gametleri S, ss bireyin bütün gametleri s taşıdığından Punnett karesinin dört gözünde de Ss yazar. Yavruların tümü melez ve tümü sarı tohumludur. Yeşil tohum özelliği kaybolmamıştır, yalnızca baskın alelin arkasında gizlenmiştir.",
+    "İkincisi iki melezin çaprazlanmasıdır: Ss × Ss. Önceki bölümdeki Punnett karesinde gördüğün gibi gözlerde 1 SS, 2 Ss ve 1 ss bulunur; genotip oranı 1:2:1’dir. Fenotipe baktığında SS ve Ss bireylerin üçü de sarı, yalnız ss yeşildir; fenotip oranı 3:1 olur. Birinci çaprazlamada gizlenen yeşil tohum, bu ikinci çaprazlamada yeniden ortaya çıkar. Mendel’i şaşırtan ve kalıtım kurallarını bulmasını sağlayan gözlem tam da buydu.",
+    "Üçüncüsü melez ile çekinik saf dölün çaprazlanmasıdır: Ss × ss. Gözlerde 2 Ss ve 2 ss vardır; hem genotip hem fenotip oranı 1:1’dir. Bu çaprazlamanın özel bir kullanımı var. Sarı tohumlu bir bezelyenin SS mi Ss mi olduğunu dış görünüşünden anlayamazsın. Onu yeşil (ss) bir bezelyeyle çaprazlarsan yavrular arasında tek bir yeşil tohumun bile çıkması bitkinin Ss olduğunu kanıtlar; bütün yavrular sarıysa bitkinin SS olduğu sonucuna varılır. Bu yönteme kontrol çaprazlaması da denir.",
+    "Tablodaki son iki satır daha az sorulan ama karıştırılan durumları gösteriyor. SS × Ss çaprazlamasında genotip oranı 1:1 olduğu hâlde bütün yavrular sarıdır; genotip çeşitliliği fenotipe yansımaz. ss × ss çaprazlamasında ise yalnız ss oluşur: iki yeşil tohumlu bezelyeden asla sarı tohum çıkmaz, çünkü ikisinde de S aleli yoktur."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "metin": "Oran yazarken genotip ile fenotipi karıştırma: Ss × Ss çaprazlamasında genotip oranı 1:2:1, fenotip oranı 3:1’dir. Oran sorulduğunda hangisinin istendiğine bak."
+   },
+   "tablo": {
+    "basliklar": [
+     "Çaprazlama",
+     "Punnett gözleri",
+     "Genotip oranı",
+     "Fenotip oranı (sarı : yeşil)"
+    ],
+    "satirlar": [
+     [
+      "SS × ss",
+      "Ss, Ss, Ss, Ss",
+      "%100 Ss",
+      "%100 sarı"
+     ],
+     [
+      "Ss × Ss",
+      "SS, Ss, Ss, ss",
+      "1 SS : 2 Ss : 1 ss",
+      "3 : 1 (%75 : %25)"
+     ],
+     [
+      "Ss × ss",
+      "Ss, Ss, ss, ss",
+      "1 Ss : 1 ss",
+      "1 : 1 (%50 : %50)"
+     ],
+     [
+      "SS × Ss",
+      "SS, SS, Ss, Ss",
+      "1 SS : 1 Ss",
+      "%100 sarı"
+     ],
+     [
+      "ss × ss",
+      "ss, ss, ss, ss",
+      "%100 ss",
+      "%100 yeşil"
+     ]
+    ]
+   }
+  },
+  {
+   "baslik": "Oranları yorumlamak: olasılık her seferinde yeniden başlar",
+   "metin": [
+    "Punnett karesinden çıkan 3:1 oranı, “dört tohumdan tam üçü sarı olacak” demek değildir. Bu oran bir olasılıktır: her bir tohum için yeşil olma ihtimali %25, sarı olma ihtimali %75’tir. Dört tohumun dördü de sarı çıkabilir, hatta ikisi yeşil olabilir. Tohum sayısı arttıkça gözlenen sonuçlar beklenen orana yaklaşır. Mendel’in kendi sayımı bunun güzel bir örneğidir: melez bitkilerden topladığı 8023 tohumun 6022’si sarı, 2001’i yeşildi; bu da 3:1’e çok yakındır.",
+    "Her çaprazlama olayı bir öncekinden bağımsızdır. Ss × Ss bitkilerinin ilk tohumu yeşil çıktı diye sonraki tohumun yeşil olma olasılığı azalmaz ya da artmaz; yine %25’tir. Bunu yazı tura atmaya benzetebilirsin: üst üste üç kez tura gelmesi dördüncü atışta yazı gelme şansını değiştirmez. Aynı mantık insanda da geçerlidir; hem cinsiyet hem kalıtsal hastalık sorularında her doğum ayrı bir olaydır.",
+    "Bu yüzden olasılık sorularında cevabını her zaman tek bir birey için yaz: “Her tohumun yeşil olma olasılığı %25’tir.” “Oluşan tohumların ne kadarı yeşildir?” sorusunda ise beklenen oranı, yani 1/4’ü yazarsın. İki soru farklı görünse de aynı Punnett karesine dayanır; değişen yalnızca cevabın söyleniş biçimidir."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "metin": "Oran ile kesinliği karıştırma. %25, dört yavrudan birinin kesinlikle çekinik olacağı anlamına gelmez; her yavru için ayrı ayrı geçerli bir ihtimaldir ve önceki yavruların sonucundan etkilenmez."
+   }
+  },
+  {
+   "baslik": "Aynı kurallar insanda da geçerli: cinsiyet nasıl belirlenir?",
+   "metin": [
+    "Dördüncü haftada insan hücrelerinde 46 kromozom bulunduğunu öğrenmiştin. Bu kromozomların 44’ü vücut özelliklerini belirleyen vücut kromozomlarıdır; kalan iki tanesi ise cinsiyeti belirleyen eşey kromozomlarıdır. Kadınlarda eşey kromozomları XX, erkeklerde XY biçimindedir.",
+    "Cinsiyetin belirlenmesi tam bir tek karakter çaprazlaması gibi düşünülebilir. Annenin bütün yumurtaları X kromozomu taşır; babanın spermlerinin yarısı X, yarısı Y taşır. Yumurta, X taşıyan bir spermle birleşirse XX, yani kız; Y taşıyan bir spermle birleşirse XY, yani erkek çocuk oluşur. Demek ki çocuğun cinsiyetini babadan gelen eşey kromozomunun X mi Y mi olduğu belirler.",
+    "Punnett karesindeki iki gözden biri XX, biri XY olduğu için her doğumda kız ya da erkek olma olasılığı %50’dir. Bir önceki bölümde öğrendiğin gibi bu olasılık her çocuk için yeniden başlar: üç kız çocuğu olan bir ailenin dördüncü çocuğunun erkek olma olasılığı da yine %50’dir."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "metin": "Anne her zaman X kromozomu verir; cinsiyet, yumurtayı dölleyen spermin X mi Y mi taşıdığına bağlıdır. Bu yüzden çocuğun cinsiyetini belirleyen eşey kromozomu babadan gelir."
+   },
+   "tablo": {
+    "basliklar": [
+     "Gametler",
+     "X (sperm)",
+     "Y (sperm)"
+    ],
+    "satirlar": [
+     [
+      "X (yumurta)",
+      "XX (kız)",
+      "XY (erkek)"
+     ]
+    ]
+   }
+  },
+  {
+   "baslik": "Akraba evliliği ve genetik sonuçları",
+   "metin": [
+    "Aralarında kan bağı bulunan kişilerin, örneğin kuzenlerin evlenmesine akraba evliliği denir. Akrabalar ortak bir atadan, diyelim aynı dede ve nineden geldikleri için genlerinin bir kısmı aynıdır. Bu ortak genlerin arasında çekinik bir hastalık aleli de bulunabilir. Böyle bir aleli tek kopya taşıyan kişi hastalık belirtisi göstermez; ona taşıyıcı denir. Ailede dolaşan bu alel, kuşaklar boyunca kimse fark etmeden aktarılabilir.",
+    "Birbiriyle akraba olmayan iki kişinin aynı nadir çekinik aleli taşıma olasılığı düşüktür. Akraba evliliğinde ise iki eş aynı aleli aynı atadan almış olabileceği için ikisinin de taşıyıcı olma olasılığı artar. İki taşıyıcı evlendiğinde durum Ss × Ss çaprazlamasının aynısıdır. A sağlıklı aleli, a hastalık alelini göstersin: Aa × Aa çaprazlamasında her çocuk için hasta (aa) olma olasılığı %25, taşıyıcı (Aa) olma olasılığı %50, hastalık alelini hiç taşımama (AA) olasılığı %25’tir. Burada hastalığın tek bir gen çiftiyle aktarıldığını varsayıyoruz; Akdeniz anemisi ve fenilketonüri bu biçimde aktarılan çekinik hastalıklara örnektir.",
+    "Bu noktada bilimsel konuşmak önemli. “Akraba evliliğinden doğan her çocuk hasta olur.” demek doğru değildir; akraba evliliği hastalığa yol açmaz, var olan çekinik alellerin aynı çocukta bir araya gelme olasılığını artırır. Tersine, “Akraba olmayan evliliklerde kalıtsal hastalık görülmez.” demek de yanlıştır. Doğru ifade şudur: akraba evliliklerinde çekinik kalıtsal hastalıkların görülme olasılığı, akraba olmayan evliliklere göre daha yüksektir.",
+    "Bu olasılığı azaltmanın yolu bilgidir. Evlilik öncesi yapılan kan testleri ve genetik danışmanlık, eşlerin taşıyıcı olup olmadığını önceden ortaya koyar; böylece aileler doğacak çocuklarıyla ilgili kararlarını bilerek verir. Ülkemizde de evlenecek çiftlere bazı kalıtsal kan hastalıkları için tarama testi yapılmaktadır."
+   ],
+   "kutular": [
+    {
+     "tur": "dikkat",
+     "metin": "Akraba evliliği hastalık üretmez; ortak atadan gelen çekinik hastalık alellerinin aynı çocukta buluşma olasılığını artırır. Bu konuda konuşurken olasılık dili kullan, kesin hüküm verme."
+    },
+    {
+     "tur": "bilgi",
+     "metin": "Genetik danışmanlık, bir ailede kalıtsal hastalık olasılığını inceleyip aileye bilimsel bilgi veren sağlık hizmetidir. Karar yine aileye aittir; danışmanlık yalnızca bu kararın bilgiye dayanmasını sağlar."
+    }
+   ],
+   "tablo": {
+    "basliklar": [
+     "Gametler",
+     "A (baba)",
+     "a (baba)"
+    ],
+    "satirlar": [
+     [
+      "A (anne)",
+      "AA (sağlıklı, taşıyıcı değil)",
+      "Aa (sağlıklı, taşıyıcı)"
+     ],
+     [
+      "a (anne)",
+      "Aa (sağlıklı, taşıyıcı)",
+      "aa (hasta)"
+     ]
+    ]
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Saf döl sarı tohumlu bir bezelye ile yeşil tohumlu bir bezelye çaprazlanıyor (S: sarı, s: yeşil). Oluşacak bezelyelerin genotip ve fenotiplerini bularak sonucu yorumlayınız.",
+   "cevap": "Birinci adım: saf döl sarı SS, yeşil tohum çekinik olduğundan ss yazılır. İkinci adım: SS bireyin bütün gametleri S, ss bireyin bütün gametleri s taşır. Üçüncü adım: Punnett karesinin dört gözü de Ss olur. Genotip %100 Ss (melez), fenotip %100 sarı tohumdur. Yorum: yeşil tohum özelliği kaybolmamıştır; yavruların hepsi s alelini taşır, ancak baskın S aleli onu gizler. Bu yavrular kendi aralarında çaprazlanırsa yeşil tohum yeniden ortaya çıkar."
+  },
+  {
+   "soru": "Melez sarı tohumlu iki bezelye çaprazlanıyor. a) Genotip ve fenotip oranlarını bulunuz. b) Oluşacak bir tohumun yeşil olma olasılığı nedir? c) Sarı tohumlu yavruların ne kadarı melezdir?",
+   "cevap": "Melez sarı Ss’dir; iki bitki de S ve s gametleri üretir. Punnett karesi: SS, Ss, Ss, ss. a) Genotip oranı 1 SS : 2 Ss : 1 ss, fenotip oranı 3 sarı : 1 yeşildir. b) Dört gözden biri ss olduğundan her tohumun yeşil olma olasılığı 1/4, yani %25’tir. c) Üç sarı tohumlu gözden ikisi Ss olduğundan sarı tohumluların 2/3’ü melezdir. Yorum: iki sarı tohumlu bezelyeden yeşil tohum çıkabilir; bunun için ikisinin de melez olması gerekir."
+  },
+  {
+   "soru": "Melez düz tohumlu bir bezelye ile buruşuk tohumlu bir bezelye çaprazlanıyor (D: düz, d: buruşuk). Oluşan tohumların genotip ve fenotip oranlarını bulunuz; bu çaprazlamanın ne işe yaradığını yorumlayınız.",
+   "cevap": "Melez düz Dd, buruşuk tohum çekinik olduğu için dd’dir. Dd bireyin gametleri D ve d, dd bireyin gametleri yalnız d’dir. Punnett karesi: Dd, Dd, dd, dd. Genotip oranı 1 Dd : 1 dd, fenotip oranı 1 düz : 1 buruşuktur; her tohumun buruşuk olma olasılığı %50’dir. Yorum: düz tohumlu bir bitkinin DD mi Dd mi olduğu dışarıdan anlaşılmaz. Bitki buruşuk (dd) bir bezelyeyle çaprazlandığında yavrular arasında buruşuk tohum çıkıyorsa bitkinin Dd olduğu kesinleşir; bitki DD olsaydı bütün tohumlar düz çıkardı."
+  },
+  {
+   "soru": "Mor çiçekli iki bezelyenin çaprazlanmasından beyaz çiçekli bir bezelye oluşuyor (M: mor, m: beyaz). Ebeveynlerin genotipini belirleyiniz ve bu çaprazlamadan mor çiçekli bezelye oluşma olasılığını hesaplayınız.",
+   "cevap": "Beyaz çiçek çekinik olduğundan oluşan bezelye mm’dir; bu iki m alelinden birini bir ebeveyninden, diğerini öteki ebeveyninden almıştır. Demek ki iki ebeveyn de m aleli taşıyor. Ebeveynler mor çiçekli olduğuna göre birer M aleli de var: ikisinin genotipi de Mm’dir. Mm × Mm çaprazlamasının Punnett karesi MM, Mm, Mm, mm verir; mor çiçekli bezelye oluşma olasılığı 3/4, yani %75’tir. Yorum: yavrudaki çekinik fenotip, baskın fenotipli ebeveynlerin genotipini ortaya çıkarmanın en kestirme yoludur."
+  },
+  {
+   "soru": "Uzun boylu melez bir bezelye ile uzun boylu saf döl bir bezelye çaprazlanıyor (U: uzun, u: kısa). a) Kısa boylu bezelye oluşma olasılığı nedir? b) Oluşan bezelyelerin ne kadarı saf döldür?",
+   "cevap": "Melez uzun Uu, saf döl uzun UU’dur. Uu bireyin gametleri U ve u; UU bireyin bütün gametleri U’dur. Punnett karesi: UU, UU, Uu, Uu. a) Kısa boy için uu gerekir; gözlerde uu bulunmadığından kısa boylu bezelye oluşma olasılığı %0’dır, bütün yavrular uzundur. b) Dört gözden ikisi UU olduğundan yavruların yarısı (%50) saf döl, yarısı melezdir. Yorum: bütün yavruların fenotipi aynı olsa da genotipleri ikiye ayrılır; aynı fenotip, aynı genotip demek değildir."
+  },
+  {
+   "soru": "Tek bir gen çiftiyle aktarılan çekinik bir kalıtsal hastalık için taşıyıcı olan iki kuzen evleniyor (A: sağlıklı alel, a: hastalık aleli). a) Çocuklarının hasta olma ve taşıyıcı olma olasılıklarını bulunuz. b) İlk çocukları hasta doğduysa ikinci çocuğun hasta olma olasılığı değişir mi?",
+   "cevap": "Taşıyıcı olmak, hastalık alelini tek kopya taşımak demektir: iki eş de Aa’dır. Aa × Aa çaprazlamasının Punnett karesi AA, Aa, Aa, aa verir. a) Hasta (aa) olma olasılığı 1/4, yani %25; taşıyıcı (Aa) olma olasılığı 2/4, yani %50; hastalık alelini hiç taşımama (AA) olasılığı %25’tir. b) Değişmez. Her doğum bağımsız bir olaydır; ikinci çocuğun hasta olma olasılığı yine %25’tir. Yorum: akraba evliliği hastalığa yol açmaz; ancak ortak atadan gelen aynı çekinik alelin iki eşte birden bulunma olasılığını artırdığı için bu tür çaprazlamalara akraba evliliklerinde daha sık rastlanır."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Melez sarı tohumlu bir bezelye (Ss), yeşil tohumlu bir bezelyeyle çaprazlanıyor. Oluşacak tohumlar için aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Tohumların tamamı sarı olur.",
+    "Tohumların dörtte biri yeşil olur.",
+    "Tohumların yarısı sarı, yarısı yeşil olur.",
+    "Tohumların tamamı yeşil olur."
+   ],
+   "dogru": 2,
+   "aciklama": "C. Yeşil tohum çekinik olduğundan ss’dir. Ss × ss çaprazlamasında Punnett karesi Ss, Ss, ss, ss verir; fenotip oranı 1 sarı : 1 yeşildir. Dörtte bir yeşil oranı Ss × Ss çaprazlamasına aittir; tamamı sarı sonucu ise SS × ss ya da SS × Ss çaprazlamalarında görülür."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Aşağıdaki çaprazlamaların hangisinde oluşan bütün bireylerin fenotipi aynıdır, genotipi ise ebeveynlerin ikisinden de farklıdır? (D: düz tohum, d: buruşuk tohum)",
+   "secenekler": [
+    "DD × dd",
+    "Dd × Dd",
+    "Dd × dd",
+    "dd × dd"
+   ],
+   "dogru": 0,
+   "aciklama": "A. DD × dd çaprazlamasında bütün yavrular Dd olur: hepsi düz tohumludur ve genotipleri ne DD ne de dd olan ebeveynlerinkine benzemez. Dd × Dd ve Dd × dd çaprazlamalarında iki fenotip birden görülür; dd × dd çaprazlamasında ise yavrular ebeveynlerle aynı genotiptedir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Akraba evliliğinin genetik sonuçlarıyla ilgili bilimsel olarak doğru ifade aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Akraba evliliğinden doğan her çocukta kalıtsal bir hastalık görülür.",
+    "Akraba olmayan kişilerin evliliğinde kalıtsal hastalık ortaya çıkmaz.",
+    "Akraba evliliği çekinik alelleri baskın alellere dönüştürür.",
+    "Akraba evliliği, ortak atadan gelen çekinik hastalık alellerinin aynı çocukta bir araya gelme olasılığını artırır."
+   ],
+   "dogru": 3,
+   "aciklama": "D. Akrabalar ortak bir atadan geldikleri için aynı çekinik hastalık alelini taşıma olasılıkları yüksektir; iki taşıyıcının evliliğinde her çocuk için hasta olma olasılığı %25’tir. Her çocuğun hasta olacağı kesin değildir, akraba olmayan evliliklerde de kalıtsal hastalık görülebilir ve aleller birbirine dönüşmez."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+   "ifadeler": [
+    {
+     "metin": "Ss genotipli bir bezelyenin ürettiği her gamet hem S hem s alelini taşır.",
+     "dogru": false,
+     "aciklama": "Gametler oluşurken aleller birbirinden ayrılır; her gamet yalnız bir alel (S ya da s) taşır."
+    },
+    {
+     "metin": "Ss × Ss çaprazlamasında fenotip oranı 1:2:1’dir.",
+     "dogru": false,
+     "aciklama": "1:2:1 genotip oranıdır; fenotip oranı 3 sarı : 1 yeşil, yani 3:1’dir."
+    },
+    {
+     "metin": "İnsanda çocuğun cinsiyetini, babadan gelen eşey kromozomunun X ya da Y olması belirler.",
+     "dogru": true,
+     "aciklama": "Anne her zaman X verir; sperm X taşırsa kız (XX), Y taşırsa erkek (XY) çocuk oluşur."
+    },
+    {
+     "metin": "Çaprazlama kuralları yalnız bezelyeler için geçerlidir; diğer canlılarda karakterler farklı biçimde aktarılır.",
+     "dogru": false,
+     "aciklama": "Alellerin anne ve babadan birer birer aktarılması diğer canlılarda da benzer biçimde işler."
+    },
+    {
+     "metin": "Yeşil tohumlu bir bezelyenin genotipi her zaman ss’dir.",
+     "dogru": true,
+     "aciklama": "Çekinik özellik ancak iki çekinik alel bir arada olduğunda fenotipte görülür."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Kavramları açıklamalarıyla eşleştiriniz.",
+   "ciftler": [
+    [
+     "Saf döl",
+     "Bir karakter için iki aleli aynı olan birey (SS ya da ss)"
+    ],
+    [
+     "Melez döl",
+     "Bir karakter için iki aleli farklı olan birey (Ss)"
+    ],
+    [
+     "Punnett karesi",
+     "Olası gamet birleşimlerini ve yavru genotiplerini gösteren tablo"
+    ],
+    [
+     "Taşıyıcı",
+     "Çekinik hastalık alelini tek kopya taşıyan, hastalık belirtisi göstermeyen birey"
+    ],
+    [
+     "Fenotip",
+     "Alellerin etkisiyle dışarıdan gözlenen özellik"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Saf döl sarı tohumlu bir bezelye ile yeşil tohumlu bir bezelyenin çaprazlanmasından oluşan bezelyelerin tamamı ___ döldür.",
+     "cevap": "melez"
+    },
+    {
+     "metin": "Çekinik bir hastalık alelini tek kopya taşıyan ve hasta olmayan bireye ___ denir.",
+     "cevap": "taşıyıcı"
+    },
+    {
+     "metin": "Gametler oluşurken bir karakterin iki aleli birbirinden ___ ve her gamete yalnız biri gider.",
+     "cevap": "ayrılır"
+    },
+    {
+     "metin": "Bir bireyin dış görünüşünde ortaya çıkan özelliğe ___ denir.",
+     "cevap": "fenotip"
+    }
+   ],
+   "fazla": [
+    "genotip"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir öğrenci, bahçedeki sarı tohumlu bir bezelye için “Tohumu sarı olduğuna göre genotipi kesinlikle SS’dir.” diyor. Bu ifadeyi değerlendiriniz ve bitkinin genotipini öğrenmek için hangi çaprazlamayı önereceğinizi açıklayınız.",
+   "ipuclari": [
+    "Sarı fenotipini veren kaç farklı genotip var?",
+    "Yeşil tohumlu bitkinin genotipi neden kesin olarak bellidir?"
+   ],
+   "cevap": "İfade yanlıştır. Sarı tohum baskın özellik olduğundan hem SS hem Ss bezelyeler sarı tohumludur; fenotipe bakarak genotip kesin olarak söylenemez. Bitkiyi yeşil tohumlu (ss) bir bezelyeyle çaprazlamak gerekir: yavrular arasında yeşil tohum çıkarsa bitki Ss’dir, bütün yavrular sarıysa bitkinin SS olduğu sonucuna varılır."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Tek gen çiftiyle aktarılan çekinik bir hastalık için taşıyıcı olduğu bilinen kuzen bir çiftin ilk çocuğu sağlıklı doğuyor. Bir yakınları “Birinci çocuk sağlıklı olduğuna göre sonraki çocuklarda da risk kalmadı.” diyor. Bu yorumu çaprazlama bilginizle değerlendiriniz.",
+   "ipuclari": [
+    "Aa × Aa çaprazlamasında her çocuk için hasta olma olasılığı kaçtır?",
+    "Olasılık bir önceki doğumun sonucuna bağlı mıdır?"
+   ],
+   "cevap": "Yorum doğru değildir. Taşıyıcı iki kişinin (Aa × Aa) her çocuğu için hasta (aa) olma olasılığı %25’tir ve her doğum bağımsız bir olaydır; ilk çocuğun sağlıklı olması sonraki çocukların olasılığını değiştirmez. Üstelik sağlıklı doğan ilk çocuk da 2/3 olasılıkla taşıyıcıdır, çünkü üç sağlıklı gözden ikisi Aa’dır. Aile, genetik danışmanlıktan yararlanarak bilimsel bilgiye dayalı karar verebilir."
+  }
+ ],
+ "ozet": [
+  "Bir karakter için her bireyde iki alel bulunur; gametlere bu alellerden yalnız biri gider. Çaprazlama, gametlerin olası birleşimlerini Punnett karesiyle göstererek yavruların genotip ve fenotiplerini tahmin etme işidir.",
+  "SS × ss çaprazlamasında bütün yavrular melez (Ss) ve baskın fenotiplidir; Ss × Ss çaprazlamasında genotip oranı 1:2:1, fenotip oranı 3:1; Ss × ss çaprazlamasında hem genotip hem fenotip oranı 1:1’dir.",
+  "Punnett karesinden çıkan oranlar olasılıktır; her birey için ayrı ayrı geçerlidir ve önceki sonuçlardan etkilenmez. Birey sayısı arttıkça gözlenen sonuç beklenen orana yaklaşır.",
+  "Karakterlerin aktarımı diğer canlılarda da benzer biçimde işler. İnsanda çocuğun cinsiyetini babadan gelen eşey kromozomu (X ya da Y) belirler; kız ya da erkek olma olasılığı her doğumda %50’dir.",
+  "Akraba evliliği, ortak atadan gelen çekinik hastalık alellerinin aynı çocukta buluşma olasılığını artırır; iki taşıyıcının her çocuğu için hasta olma olasılığı %25’tir. Evlilik öncesi testler ve genetik danışmanlık bu konuda bilimsel bilgi sağlar."
+ ]
+}

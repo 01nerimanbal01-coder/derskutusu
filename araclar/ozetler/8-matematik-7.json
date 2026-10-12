@@ -1,0 +1,301 @@
+{
+ "sinif": 8,
+ "ders": "matematik",
+ "hafta": 7,
+ "tarih": "26-30 Ekim 2026",
+ "yayin_tarihi": "2026-10-13",
+ "unite": "Sayılar ve İşlemler",
+ "konu": "Kareköklü İfadeler: Kök Dışına Çıkarma ve Katsayıyı Kök İçine Alma",
+ "ciktilar": [
+  "M.8.1.3.3. Kareköklü bir ifadeyi a{kok:b} şeklinde yazar ve a{kok:b} şeklindeki ifadede katsayıyı kök içine alır."
+ ],
+ "giris": "Geçen hafta tam kare sayılarla kareköklerini öğrendin; {kok:31} gibi tam kare olmayan bir sayının karekökünün hangi iki doğal sayı arasında olduğunu bulmayı da biliyorsun. Bu hafta {kok:50} gibi ifadeleri daha sade bir yazılışa, 5{kok:2} biçimine çevirecek, ardından kökün önündeki katsayıyı yeniden kök içine alarak iki yazılış arasında istediğin gibi gidip geleceksin. İlk haftada öğrendiğin asal çarpanlara ayırma da bu hafta en çok işine yarayacak araçlardan biri olacak.",
+ "bolumler": [
+  {
+   "baslik": "Tam kare sayılar ve karekök: kısa bir hatırlatma",
+   "metin": [
+    "Bir doğal sayının kendisiyle çarpımına tam kare sayı denir. 1 · 1 = 1, 2 · 2 = 4, 3 · 3 = 9 diye ilerlersen 15’e kadar sayıların karelerini elde edersin: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225. Bir sayının karekökü, karesi o sayıya eşit olan negatif olmayan sayıdır; {kok:49} = 7’dir, çünkü 7 · 7 = 49. Aynı biçimde {kok:144} = 12 ve {kok:225} = 15 olur.",
+    "Tam kare olmayan bir sayının karekökü doğal sayı değildir; ardışık iki doğal sayının arasına düşer. Örneğin 25 < 31 < 36 olduğundan {kok:31}, 5 ile 6 arasındadır ve 31 sayısı 36’ya daha yakın olduğu için {kok:31} de 6’ya daha yakındır. Benzer biçimde 49 < 50 < 64 olduğundan {kok:50}, 7 ile 8 arasındadır ve 7’ye çok yakındır.",
+    "Bu hafta {kok:50} gibi ifadeleri olduğu gibi bırakmak yerine daha sade bir biçimde yazmayı öğreneceksin: {kok:50} = 5{kok:2}. Bu yazılışta kökün dışındaki 5 sayısı katsayıdır; kök içindeki 2 ise 1’den başka tam kare çarpanı olmayan, çok daha küçük bir sayıdır. Böyle bir sadeleştirmeyi hızlı yapabilmek için tam kare sayıları ezbere bilmen gerekir; o yüzden yukarıdaki listeyi birkaç kez tekrar et."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Tam kare ve karekök",
+    "metin": "Tam kare bir sayının karekökü bir doğal sayıdır: {kok:81} = 9. Tam kare olmayan bir sayının karekökü ise ardışık iki doğal sayı arasındadır: 36 < 40 < 49 olduğundan {kok:40}, 6 ile 7 arasındadır."
+   }
+  },
+  {
+   "baslik": "Çarpımın karekökü: sadeleştirmenin dayandığı kural",
+   "metin": [
+    "İki sayının çarpımının karekökü, bu sayıların kareköklerinin çarpımına eşittir. Bunu tam kare sayılarla kolayca sınayabilirsin: {kok:36 · 4} = {kok:144} = 12 ve {kok:36} · {kok:4} = 6 · 2 = 12. Başka bir örnek: {kok:9 · 25} = {kok:225} = 15, öte yandan {kok:9} · {kok:25} = 3 · 5 = 15. İki yol da aynı sonucu verir.",
+    "Kural, çarpanlardan biri tam kare olmadığında da geçerlidir. 50 = 25 · 2 olduğundan {kok:50} = {kok:25 · 2} = {kok:25} · {kok:2} = 5 · {kok:2} yazılır. Bir sayı ile bir karekökün çarpımı, katsayı kökün önüne yazılarak kısaca gösterilir: 5 · {kok:2} yerine 5{kok:2} yazarız. Demek ki {kok:50} = 5{kok:2} olur; iki yazılış aynı sayıyı gösterir ama ikincisi daha sadedir.",
+    "a{kok:b} biçimindeki bir ifadede kökün önündeki a sayısına katsayı, b sayısına ise kök içindeki sayı denir. 5{kok:2} ifadesinde katsayı 5, kök içindeki sayı 2’dir. Bu ifadeyi {kok:52} sayısıyla karıştırma: 5{kok:2}, “5 çarpı kök 2” demektir ve {kok:50}’ye eşittir. Yaklaşık değerle de kontrol edebilirsin: {kok:2} ≈ 1,41 olduğundan 5{kok:2} ≈ 7,05 bulunur; {kok:50} de 7 ile 8 arasında ve 7’ye yakındır. Sonuçlar tutarlıdır."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Çarpımın karekökü",
+    "metin": "Negatif olmayan a ve b sayıları için {kok:a · b} = {kok:a} · {kok:b} olur. a{kok:b} yazılışı, a · {kok:b} çarpımının kısaltmasıdır."
+   }
+  },
+  {
+   "baslik": "Kareköklü ifadeyi a{kok:b} biçiminde yazma",
+   "metin": [
+    "Bir kareköklü ifadeyi a{kok:b} biçiminde yazmak için üç adım izlersin. Önce kök içindeki sayıyı, tam kare bir çarpanla başka bir çarpanın çarpımı olarak yazarsın. Sonra tam kare çarpanın karekökünü alıp kökün önüne katsayı olarak koyarsın. Son olarak kalan çarpanı kökün içinde bırakırsın. Örneğin 72 = 36 · 2 olduğundan {kok:72} = {kok:36 · 2} = 6{kok:2}; 48 = 16 · 3 olduğundan {kok:48} = {kok:16 · 3} = 4{kok:3} olur.",
+    "Tam kare çarpan seçerken en büyüğünü seçmelisin; yoksa sadeleştirme yarım kalır. 72 sayısını 4 · 18 biçiminde de yazabilirsin: {kok:72} = {kok:4 · 18} = 2{kok:18}. Bu eşitlik doğrudur ama 18 = 9 · 2 hâlâ bir tam kare çarpan içerir. Devam edersen 2{kok:18} = 2 · {kok:9 · 2} = 2 · 3{kok:2} = 6{kok:2} bulursun. Sonuç aynıdır; ancak baştan 36 çarpanını görseydin tek adımda bitirirdin.",
+    "İki uç durumu da bil. Kök içindeki sayının kendisi tam kareyse sonuç bir doğal sayıdır: {kok:196} = 14. Kök içindeki sayının 1’den başka tam kare çarpanı yoksa ifade zaten en sade biçimdedir; 30 = 2 · 3 · 5, 15 = 3 · 5 ya da 7 gibi sayılar için {kok:30}, {kok:15} ve {kok:7} olduğu gibi kalır.",
+    "Zaten katsayısı olan bir ifade de sadeleştirilebilir; bu durumda kökten dışarı çıkan sayı ile mevcut katsayı çarpılır. Örneğin 3{kok:20} ifadesinde 20 = 4 · 5 olduğundan 3{kok:20} = 3 · 2{kok:5} = 6{kok:5} olur. Aşağıdaki tabloda sık karşılaşacağın sayıların sadeleştirilmiş biçimlerini görebilirsin; her satırı kendin de kontrol et."
+   ],
+   "kutular": [
+    {
+     "tur": "ipucu",
+     "metin": "Kök içindeki sayıyı bölen en büyük tam kareyi ararken 4, 9, 16, 25, 36, 49, 64, 81, 100 sayılarını sırayla dene ve bölenlerin en büyüğünü seç. Sonucu sağlamak için katsayının karesini kök içindeki sayıyla çarp: 6 · 6 · 2 = 72."
+    },
+    {
+     "tur": "bilgi",
+     "metin": "Katsayı bir kesir de olabilir. {kesir:1|2}{kok:12} ifadesini {kesir:{kok:12}|2} biçiminde düşün: {kok:12} = 2{kok:3} olduğundan {kesir:2{kok:3}|2} = {kok:3} bulunur."
+    }
+   ],
+   "tablo": {
+    "basliklar": [
+     "Kareköklü ifade",
+     "En büyük tam kare çarpan",
+     "Çarpım olarak yazılışı",
+     "a{kok:b} biçimi"
+    ],
+    "satirlar": [
+     ["{kok:8}", "4", "{kok:4 · 2}", "2{kok:2}"],
+     ["{kok:18}", "9", "{kok:9 · 2}", "3{kok:2}"],
+     ["{kok:27}", "9", "{kok:9 · 3}", "3{kok:3}"],
+     ["{kok:32}", "16", "{kok:16 · 2}", "4{kok:2}"],
+     ["{kok:45}", "9", "{kok:9 · 5}", "3{kok:5}"],
+     ["{kok:75}", "25", "{kok:25 · 3}", "5{kok:3}"],
+     ["{kok:80}", "16", "{kok:16 · 5}", "4{kok:5}"],
+     ["{kok:200}", "100", "{kok:100 · 2}", "10{kok:2}"]
+    ]
+   }
+  },
+  {
+   "baslik": "En büyük tam kare çarpanı bulmanın iki yolu",
+   "metin": [
+    "Birinci yol tam kare listesini kullanmaktır. 72 sayısını hangi tam kareler böler diye bak: 4 böler (72 = 4 · 18), 9 böler (72 = 9 · 8), 16 bölmez, 25 bölmez, 36 böler (72 = 36 · 2), 49 ve 64 bölmez. Bölenlerin en büyüğü 36 olduğundan {kok:72} = 6{kok:2} olur. Sayılar küçükken bu yol hızlıdır; ancak büyük sayılarda bir tam kare çarpanı gözden kaçırabilirsin.",
+    "İkinci yol, ilk haftada öğrendiğin asal çarpanlara ayırmadır. 72 = 2 · 2 · 2 · 3 · 3 = {us:2|3} · {us:3|2} yazılır. Karekök alırken aynı asal çarpandan oluşan her çift, kökün dışına o çarpanın bir tanesi olarak çıkar; eşi olmayan çarpan ise kökün içinde kalır. 72’de bir çift 2, bir çift 3 ve eşsiz kalan bir 2 vardır. Çiftlerden 2 ve 3 dışarı çıkar, eşsiz 2 içeride kalır: {kok:72} = 2 · 3 · {kok:2} = 6{kok:2}.",
+    "Aynı yolu 180 ve 500 için izle. 180 = {us:2|2} · {us:3|2} · 5 olduğundan 2 ve 3 çiftleri dışarı çıkar, 5 içeride kalır: {kok:180} = 2 · 3 · {kok:5} = 6{kok:5}. Sağlama: 6 · 6 · 5 = 180. 500 = {us:2|2} · {us:5|3} olduğundan bir çift 2 ile bir çift 5 dışarı çıkar, eşsiz 5 içeride kalır: {kok:500} = 2 · 5 · {kok:5} = 10{kok:5}. Sağlama: 10 · 10 · 5 = 500.",
+    "Üslü yazılışa bakarak da karar verebilirsin: üssü çift olan asal çarpan tamamen dışarı çıkar, üssü tek olan çarpanın bir tanesi içeride kalır. Örneğin {kok:{us:2|3} · {us:3|4}} ifadesinde {us:2|3} = {us:2|2} · 2 olduğundan bir 2 dışarı çıkar, bir 2 içeride kalır; {us:3|4} = {us:9|2} olduğundan 9 tamamen dışarı çıkar. Sonuç 2 · 9 · {kok:2} = 18{kok:2} olur. Sağlama: 18 · 18 · 2 = 648 ve {us:2|3} · {us:3|4} = 8 · 81 = 648."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "metin": "Asal çarpanlara ayırdığında eş çarpanları ikişer ikişer eşleştir: her çift kökün dışına tek bir çarpan olarak çıkar, eşleşemeyenler kökün içinde kalır. Dışarı çıkanları birbiriyle, içeride kalanları birbiriyle çarp."
+   }
+  },
+  {
+   "baslik": "Katsayıyı kök içine alma",
+   "metin": [
+    "Bu kez tersini yapacaksın: a{kok:b} biçimindeki bir ifadeyi tek bir kök olarak yazacaksın. Pozitif bir sayı, karesinin karekökü olarak yazılabilir: 3 = {kok:9}, 5 = {kok:25}, 7 = {kok:49}. Bu yüzden katsayı, karesi alınarak kökün içine girer. Örneğin 3{kok:5} = {kok:9} · {kok:5} = {kok:9 · 5} = {kok:45} olur; 2{kok:7} = {kok:4 · 7} = {kok:28} bulunur.",
+    "Kural kısaca şöyledir: a{kok:b} = {kok:{us:a|2} · b}. Katsayının karesi alınır ve kök içindeki sayıyla çarpılır. 5{kok:2} = {kok:25 · 2} = {kok:50}, 4{kok:3} = {kok:16 · 3} = {kok:48} ve 6{kok:2} = {kok:36 · 2} = {kok:72} olur. Dikkat edersen bunlar üçüncü bölümdeki işlemlerin tam tersidir: kök dışına çıkarma ile kök içine alma, aynı eşitliğin iki yönüdür.",
+    "Katsayıyı kök içine almanın en yararlı yanı, kareköklü sayıları karşılaştırmayı kolaylaştırmasıdır. 3{kok:5} ile 2{kok:11} sayılarından hangisi daha büyüktür? Katsayılara bakarak karar veremezsin; ikisini de tek kök olarak yaz: 3{kok:5} = {kok:45} ve 2{kok:11} = {kok:44}. Kök içindeki sayı büyüdükçe karekök de büyür; 45 > 44 olduğundan 3{kok:5} > 2{kok:11} olur. Aynı yöntemle bir ifadenin hangi iki doğal sayı arasında olduğunu da bulursun: 3{kok:7} = {kok:63} ve 49 < 63 < 64 olduğundan 3{kok:7}, 7 ile 8 arasındadır ve 8’e çok yakındır.",
+    "Katsayı negatifse eksi işareti kökün önünde kalır, yalnız sayı kök içine alınır: −3{kok:2} = −{kok:9 · 2} = −{kok:18}. Çünkü {kok:18} = 3{kok:2}’dir ve bunun negatifi −3{kok:2} olur. Negatif bir sayının karekökü olmadığından eksi işaretini kökün içine taşıyamazsın."
+   ],
+   "kutular": [
+    {
+     "tur": "kural",
+     "baslik": "Katsayıyı kök içine alma",
+     "metin": "a pozitif bir sayı olmak üzere a{kok:b} = {kok:{us:a|2} · b} olur: katsayının karesi alınır ve kök içindeki sayıyla çarpılır."
+    },
+    {
+     "tur": "dikkat",
+     "metin": "Katsayının işareti kök içine alınmaz: −2{kok:5} = −{kok:20} olur; eksi işaretini kökün içine yazma."
+    }
+   ]
+  },
+  {
+   "baslik": "Sık yapılan hatalar ve kareköklü ifadelerin geometrideki yeri",
+   "metin": [
+    "En yaygın hata, toplamın karekökünü kareköklerin toplamı sanmaktır. {kok:16 + 9} ifadesinde önce toplam hesaplanır: {kok:16 + 9} = {kok:25} = 5. Oysa {kok:16} + {kok:9} = 4 + 3 = 7’dir ve 5 ≠ 7 olur. Tam kare çarpanı kök dışına çıkarma kuralı yalnız çarpım için geçerlidir; kök içinde toplama ya da çıkarma varsa önce o işlemi yapmalısın.",
+    "İkinci hata, katsayıyı kök içine alırken karesini almayı unutmaktır: 3{kok:5} ifadesini {kok:15} diye yazmak yanlıştır, doğrusu {kok:45}’tir. Yaklaşık değerlerle fark hemen görülür: {kok:15}, 3 ile 4 arasındadır; oysa {kok:5} ≈ 2,24 olduğundan 3{kok:5} ≈ 6,72’dir. Üçüncü hata, kök içindeki sayıyı tam kare olmayan çarpanlara ayırmaktır: 50 = 10 · 5 çarpımı doğrudur ama 10 da 5 de tam kare olmadığından kökten dışarı hiçbir şey çıkmaz; 25 · 2 çarpımını seçmelisin. Dördüncü hata, sadeleştirmeyi yarım bırakmaktır: {kok:200} = 2{kok:50} yazıp durmak yerine 10{kok:2} sonucuna kadar gitmelisin.",
+    "Kareköklü ifadelerle en çok karelerin alanında karşılaşırsın. Alanı A olan bir karenin bir kenarı {kok:A} uzunluğundadır. Alanı 32 {us:cm|2} olan kare biçimindeki bir fayansın bir kenarı {kok:32} = {kok:16 · 2} = 4{kok:2} cm’dir; çevresi 4 · 4{kok:2} = 16{kok:2} cm olur. {kok:2} ≈ 1,41 alırsan çevre yaklaşık 22,6 cm bulunur. Tersine, kenarı 3{kok:3} cm olan bir karenin alanını bulmak için katsayıyı kök içine al: 3{kok:3} = {kok:27} olur; bir sayının karekökünün karesi kendisi olduğundan alan 27 {us:cm|2} bulunur."
+   ],
+   "kutular": [
+    {
+     "tur": "dikkat",
+     "metin": "{kok:a + b} ifadesi {kok:a} + {kok:b} toplamına eşit {koyu:değildir}; kök dışına çıkarma yalnız çarpım biçimindeki ifadelerde kullanılır."
+    },
+    {
+     "tur": "bilgi",
+     "baslik": "29 Ekim Cumhuriyet Bayramı",
+     "metin": "Bu hafta Cumhuriyet’in ilanının 103. yılını kutluyoruz. Atatürk, 1937’de yazdığı Geometri kitabında üçgen, açı, dikey gibi pek çok terimin Türkçe karşılığını önererek matematiğin ana dilimizde öğrenilmesine katkı sağladı."
+    }
+   ]
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "{kok:50}, {kok:72} ve {kok:48} ifadelerini a{kok:b} biçiminde yaz.",
+   "cevap": "Her sayıyı en büyük tam kare çarpanıyla çarpım olarak yaz. 50 = 25 · 2 olduğundan {kok:50} = {kok:25 · 2} = {kok:25} · {kok:2} = 5{kok:2} olur. 72 = 36 · 2 olduğundan {kok:72} = {kok:36 · 2} = 6{kok:2} bulunur. 48 = 16 · 3 olduğundan {kok:48} = {kok:16 · 3} = 4{kok:3} olur. Kök içinde kalan 2 ve 3 sayılarının 1’den başka tam kare çarpanı olmadığından sonuçlar en sade biçimdedir."
+  },
+  {
+   "soru": "{kok:180} ve {kok:128} ifadelerini asal çarpanlara ayırma yöntemiyle a{kok:b} biçiminde yaz.",
+   "cevap": "180 = 2 · 2 · 3 · 3 · 5 = {us:2|2} · {us:3|2} · 5 olur. Bir çift 2 ile bir çift 3, kökün dışına 2 ve 3 olarak çıkar; eşi olmayan 5 içeride kalır: {kok:180} = 2 · 3 · {kok:5} = 6{kok:5}. Sağlama: 6 · 6 · 5 = 180. 128 = 2 · 2 · 2 · 2 · 2 · 2 · 2 = {us:2|7} olur; üç çift 2 ve eşsiz kalan bir 2 vardır. Her çift dışarı 2 olarak çıkar: {kok:128} = 2 · 2 · 2 · {kok:2} = 8{kok:2}. Sağlama: 8 · 8 · 2 = 128."
+  },
+  {
+   "soru": "3{kok:5}, 2{kok:7} ve 7{kok:2} ifadelerinde katsayıları kök içine al.",
+   "cevap": "Katsayının karesi alınır ve kök içindeki sayıyla çarpılır. 3{kok:5} = {kok:9 · 5} = {kok:45}; 2{kok:7} = {kok:4 · 7} = {kok:28}; 7{kok:2} = {kok:49 · 2} = {kok:98} olur. Sağlama için ters yönde ilerle: 45 = 9 · 5 olduğundan {kok:45} = 3{kok:5} bulunur; diğer ikisi de aynı biçimde sağlanır."
+  },
+  {
+   "soru": "3{kok:5}, 2{kok:11} ve {kok:46} sayılarını küçükten büyüğe sırala.",
+   "cevap": "Katsayıları kök içine alarak hepsini tek kök olarak yaz: 3{kok:5} = {kok:9 · 5} = {kok:45}, 2{kok:11} = {kok:4 · 11} = {kok:44}; {kok:46} zaten tek köktür. Kök içindeki sayı büyüdükçe karekök de büyür: 44 < 45 < 46 olduğundan {kok:44} < {kok:45} < {kok:46} olur. Sıralama 2{kok:11} < 3{kok:5} < {kok:46} biçimindedir. Yalnız katsayılara bakarak sıralasaydın 3{kok:5} ifadesini en büyük sanabilirdin."
+  },
+  {
+   "soru": "Alanı 98 {us:cm|2} olan kare biçimindeki bir masa örtüsünün bir kenarının uzunluğunu a{kok:b} biçiminde yaz; örtünün çevresini bul.",
+   "cevap": "Karenin alanı kenar uzunluğunun karesi olduğundan kenar {kok:98} cm’dir. 98 = 49 · 2 olduğundan {kok:98} = {kok:49 · 2} = 7{kok:2} cm bulunur. Çevre, kenar uzunluğunun 4 katıdır: 4 · 7{kok:2} = 28{kok:2} cm. {kok:2} ≈ 1,41 alırsan çevre yaklaşık 28 · 1,41 = 39,48 cm, yani 39,5 cm kadardır."
+  },
+  {
+   "soru": "{kok:x} = 6{kok:2} ve a{kok:3} = {kok:147} eşitliklerini sağlayan x ile a sayılarını bul.",
+   "cevap": "İlk eşitlikte katsayıyı kök içine al: 6{kok:2} = {kok:36 · 2} = {kok:72}. {kok:x} = {kok:72} olduğundan x = 72’dir. İkinci eşitlikte 147’yi en büyük tam kare çarpanıyla yaz: 147 = 49 · 3 olduğundan {kok:147} = {kok:49 · 3} = 7{kok:3} olur. a{kok:3} = 7{kok:3} eşitliğinden a = 7 bulunur."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "{kok:98} ifadesinin a{kok:b} biçiminde yazılışı aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "2{kok:7}",
+    "7{kok:2}",
+    "49{kok:2}",
+    "9{kok:2}"
+   ],
+   "dogru": 1,
+   "aciklama": "98 sayısını bölen en büyük tam kare 49’dur: {kok:98} = {kok:49 · 2} = 7{kok:2}. Diğer seçenekleri kök içine alarak sına: 2{kok:7} = {kok:28}, 49{kok:2} = {kok:4802} ve 9{kok:2} = {kok:162} olduğundan hiçbiri {kok:98} sayısına eşit değildir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Aşağıdakilerden hangisi 4{kok:5} ifadesine eşittir?",
+   "secenekler": [
+    "{kok:20}",
+    "{kok:45}",
+    "{kok:80}",
+    "{kok:9}"
+   ],
+   "dogru": 2,
+   "aciklama": "Katsayının karesi kök içindeki sayıyla çarpılır: 4{kok:5} = {kok:16 · 5} = {kok:80}. {kok:20} = 2{kok:5}, {kok:45} = 3{kok:5} ve {kok:9} = 3 olduğundan diğer seçenekler farklı sayılardır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir öğrenci {kok:200} ifadesini 2{kok:50} biçiminde yazmıştır. Bu çalışmayla ilgili aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Eşitlik yanlıştır; 200 sayısının tam kare çarpanı yoktur.",
+    "Eşitlik doğrudur ancak ifade en sade biçimde değildir; en sade biçim 10{kok:2} olur.",
+    "Eşitlik doğrudur ve ifade en sade biçimdedir.",
+    "Eşitlik yanlıştır; doğrusu 4{kok:50} olmalıdır."
+   ],
+   "dogru": 1,
+   "aciklama": "200 = 4 · 50 olduğundan {kok:200} = 2{kok:50} eşitliği doğrudur; ancak 50 = 25 · 2 hâlâ bir tam kare çarpan içerir. 200 sayısını bölen en büyük tam kare 100’dür: {kok:200} = {kok:100 · 2} = 10{kok:2}. 4{kok:50} ise {kok:800} sayısına eşittir, 200’ün karekökü değildir."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Her yargı için doğru ya da yanlış kararını ver; yanlış bulduklarının açıklamasını oku.",
+   "ifadeler": [
+    {
+     "metin": "{kok:9 + 16} = 3 + 4 = 7 olur.",
+     "dogru": false,
+     "aciklama": "Önce kök içindeki toplam hesaplanır: {kok:9 + 16} = {kok:25} = 5’tir. Toplamın karekökü, kareköklerin toplamına eşit değildir."
+    },
+    {
+     "metin": "{kok:75} = 5{kok:3} olur.",
+     "dogru": true,
+     "aciklama": "75 = 25 · 3 olduğundan {kok:75} = {kok:25 · 3} = 5{kok:3} bulunur."
+    },
+    {
+     "metin": "2{kok:6} = {kok:12} olur.",
+     "dogru": false,
+     "aciklama": "Katsayının karesi alınmalıdır: 2{kok:6} = {kok:4 · 6} = {kok:24}. {kok:12} ise 2{kok:3} sayısına eşittir."
+    },
+    {
+     "metin": "Kök içindeki sayının 1’den başka tam kare çarpanı yoksa ifade en sade biçimdedir.",
+     "dogru": true,
+     "aciklama": "Örneğin 30 = 2 · 3 · 5 sayısının 1’den başka tam kare çarpanı olmadığından {kok:30} olduğu gibi kalır."
+    },
+    {
+     "metin": "{kok:45} ile 3{kok:5} aynı sayıyı gösterir.",
+     "dogru": true,
+     "aciklama": "45 = 9 · 5 olduğundan {kok:45} = 3{kok:5} olur; bunlar aynı sayının iki farklı yazılışıdır."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Birbirine eşit olan ifadeleri eşleştir.",
+   "ciftler": [
+    [
+     "{kok:32}",
+     "4{kok:2}"
+    ],
+    [
+     "{kok:27}",
+     "3{kok:3}"
+    ],
+    [
+     "5{kok:2}",
+     "{kok:50}"
+    ],
+    [
+     "2{kok:11}",
+     "{kok:44}"
+    ],
+    [
+     "{kok:125}",
+     "5{kok:5}"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Kareköklü bir ifadeyi sadeleştirmek için kök içindeki sayıyı bölen en büyük ___ sayı bulunur.",
+     "cevap": "tam kare"
+    },
+    {
+     "metin": "a{kok:b} ifadesinde kökün önündeki a sayısına ___ denir.",
+     "cevap": "katsayı"
+    },
+    {
+     "metin": "Katsayıyı kök içine alırken katsayının ___ alınır ve kök içindeki sayıyla çarpılır.",
+     "cevap": "karesi"
+    },
+    {
+     "metin": "Kök içindeki sayının 1’den başka tam kare çarpanı kalmamışsa ifade en ___ biçimdedir.",
+     "cevap": "sade"
+    }
+   ],
+   "fazla": [
+    "küpü"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "{kok:16 + 9} ifadesinin neden 4 + 3 = 7 olmadığını işlemleri yaparak açıkla. Tam kare çarpanı kök dışına çıkarma kuralı hangi durumda kullanılabilir?",
+   "ipuclari": [
+    "Önce kök içindeki toplamı hesapla, sonra karekökü al.",
+    "Aynı sayıları çarpım olarak yazıp dene: {kok:16 · 9} kaçtır?"
+   ],
+   "cevap": "Kök içindeki toplam önce hesaplanır: 16 + 9 = 25 ve {kok:25} = 5’tir. Kökleri ayrı ayrı alıp toplarsan 4 + 3 = 7 bulursun; 5 ≠ 7 olduğundan toplamın karekökü, kareköklerin toplamına eşit değildir. Çarpımda ise kural işler: {kok:16 · 9} = {kok:144} = 12 ve {kok:16} · {kok:9} = 4 · 3 = 12 olur. Demek ki tam kare çarpanı kök dışına çıkarma yalnız kök içindeki sayı çarpım biçiminde yazıldığında kullanılabilir; kök içinde toplam ya da fark varsa önce o işlem yapılır."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Kare biçimindeki bir bahçenin alanı 128 {us:m|2} olup bahçenin çevresine tel çekilecektir. Gerekli telin uzunluğunu a{kok:b} biçiminde bul; {kok:2} ≈ 1,41 alarak yaklaşık değerini hesapla.",
+   "ipuclari": [
+    "Karenin kenar uzunluğu, alanının kareköküdür; 128 sayısının en büyük tam kare çarpanını ara.",
+    "Çevre, kenar uzunluğunun 4 katıdır; sonucu yaklaşık değere çevirmeyi unutma."
+   ],
+   "cevap": "Kenar uzunluğu {kok:128} metredir. 128 = 64 · 2 olduğundan {kok:128} = {kok:64 · 2} = 8{kok:2} m olur. Çevre 4 · 8{kok:2} = 32{kok:2} m’dir; gereken tel 32{kok:2} metredir. {kok:2} yerine 1,41 yazınca 32 · 1,41 = 45,12 bulunur; yaklaşık 45 m tel gerekir. Sağlama: 32{kok:2} = {kok:1024 · 2} = {kok:2048} olur ve 45 · 45 = 2025 < 2048 < 2116 = 46 · 46 olduğundan sonuç gerçekten 45 ile 46 arasındadır."
+  }
+ ],
+ "ozet": [
+  "Tam kare sayıların karekökü bir doğal sayıdır; tam kare olmayan bir sayının karekökü ardışık iki doğal sayı arasındadır ve çoğu zaman daha sade bir biçimde yazılabilir.",
+  "Negatif olmayan sayılar için {kok:a · b} = {kok:a} · {kok:b} olduğundan kök içindeki tam kare çarpanın karekökü dışarı katsayı olarak çıkar: {kok:50} = {kok:25 · 2} = 5{kok:2}.",
+  "En sade biçim için kök içindeki sayıyı bölen en büyük tam kare bulunur; bunun için tam kare listesi ya da asal çarpanlara ayırma kullanılır: eş asal çarpanlardan oluşan her çift dışarı tek bir çarpan olarak çıkar.",
+  "Katsayı kök içine alınırken karesi alınıp kök içindeki sayıyla çarpılır: a{kok:b} = {kok:{us:a|2} · b}, örneğin 3{kok:5} = {kok:45}. Bu yazılış kareköklü sayıları karşılaştırmayı kolaylaştırır; eksi işareti kökün önünde kalır.",
+  "Toplamın karekökü kareköklerin toplamına eşit değildir; kök dışına çıkarma yalnız çarpım biçimindeki ifadelerde geçerlidir ve sonuç, katsayının karesi kök içindeki sayıyla çarpılarak sağlanır."
+ ]
+}
