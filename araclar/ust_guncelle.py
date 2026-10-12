@@ -5,12 +5,15 @@ sayfanın kitlesini (body data-kitle) ve öğrenci dalı konum çubuğunu uygula
 sayfa_uret.py / ozet_uret.py'nin ürettiği sayfalara da zararsızdır (aynı sonucu verir)."""
 import re
 from pathlib import Path
-from sayfa_uret import kitle_bul, PUBLIC, BETIK_SURUMLERI
+from sayfa_uret import kitle_bul, PUBLIC, BETIK_SURUMLERI, SURUM, AGAC_CSS
+from kesif_sablonlari import CSS as KESIF_CSS, RENK_CSS
 
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 MENU = re.search(r'<nav class="menu" id="ana-menu"[^>]*>.*?</nav>', ana, re.S).group(0)
 ALT = re.search(r'<nav aria-label="Site">.*?</nav>', ana, re.S).group(0)
 ALT = re.sub(r'href="#', 'href="/#', re.sub(r'href="([a-z0-9-]+\.html)', r'href="/\1', ALT))
+SURUMLER = [('stil.css', SURUM), ('tahta.js', BETIK_SURUMLERI['tahta.js']), ('kutuphane.js', BETIK_SURUMLERI['kutuphane.js']),
+            *((d, re.search(r'v=([\w-]+)', s).group(1)) for d, s in (('kesif.css', KESIF_CSS), ('renkler.css', RENK_CSS), ('agac.css', AGAC_CSS)))]
 YOL = re.compile(r'<a href="/sinif\.html\?no=(\d+)">(\d+)\. sınıf</a><span aria-hidden="true">/</span><a href="/icerikler\.html\?sinif=(\d+)&amp;ders=([a-z-]+)">')
 
 
@@ -25,6 +28,8 @@ def guncelle(yol):
     if k and 'data-kitle=' not in t:
         t = re.sub(r'<body\b', f'<body data-kitle="{k}"', t, count=1)
     t = re.sub(r'(/?ortak\.js)\?v=[\w-]+', rf'\1?v={BETIK_SURUMLERI["ortak.js"]}', t)
+    for dosya, surum in SURUMLER:   # ortak stil ve betik sürümleri tek yerden (sayfa_uret / kesif_sablonlari); önbellekteki eski kopya kalmaz
+        t = re.sub(rf'(/?{re.escape(dosya)})\?v=[\w-]+', rf'\1?v={surum}', t)
     if t != eski:
         yol.write_text(t, encoding='utf-8')
         return 1

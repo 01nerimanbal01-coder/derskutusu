@@ -90,6 +90,9 @@ body.kesif-page { --zemin:#faf9f6; --zemin-2:#f0f2f4; --yuzey:#fff; --yuzey-2:#f
 .kesif-page .etiket { background:var(--kart-zemin,var(--zemin-2)); color:var(--kart-ana,var(--soluk)); font-size:10px; }
 .kesif-page .kart .eylemler { padding-top:20px; }
 .kesif-page .kart .ac { min-height:40px; }
+.kesif-page .kart.tiklanir { cursor:pointer; }
+.kesif-page .kart.tiklanir:hover { border-color:var(--kart-ana,#6684be); }
+.suzgec-acilir > summary { display:none; }
 .kesif-more { text-align:center; margin-top:28px; }
 .kesif-more p { font-size:12px; color:var(--soluk); margin-bottom:12px; }
 .kesif-page .ders-kart { border-radius:14px; border-top:4px solid var(--kart-ana,#6684be); }
@@ -117,7 +120,23 @@ body.kesif-page { --zemin:#faf9f6; --zemin-2:#f0f2f4; --yuzey:#fff; --yuzey-2:#f
  .kesif-sidebar button { width:auto; flex:none; border:1px solid var(--cizgi); white-space:nowrap; }
  .kesif-sidebar h2 { margin:0 0 10px; }
  .kesif-page .suzgec-cubugu { grid-template-columns:1fr 1fr; padding:16px; gap:12px; }
- .kesif-page .kartlar { grid-template-columns:1fr; }
+ /* Dar ekranda süzgeçler katlanır (kullanıcı 12.10.2026): sonuçlar bir ekran aşağı itilmez; seçim varsa açık gelir */
+ .suzgec-acilir > summary { display:flex; align-items:center; gap:10px; min-height:48px; padding:0 16px; border:1px solid var(--cizgi); border-radius:12px; background:var(--yuzey); font-weight:700; font-size:14px; cursor:pointer; list-style:none; }
+ .suzgec-acilir > summary::-webkit-details-marker { display:none; }
+ .suzgec-acilir > summary small { font-size:12px; padding:2px 8px; border-radius:999px; background:var(--kart-zemin,var(--zemin-2)); color:var(--kart-ana,var(--vurgu)); }
+ .suzgec-acilir > summary .suzgec-ok { margin-left:auto; transition:transform .15s; }
+ .suzgec-acilir[open] > summary { border-radius:12px 12px 0 0; }
+ .suzgec-acilir[open] > summary .suzgec-ok { transform:rotate(180deg); }
+ .suzgec-acilir[open] .suzgec-cubugu { border-top:0; border-radius:0 0 12px 12px; }
+ .kesif-result-toolbar { margin:14px 0; }
+ .kesif-page .kartlar { grid-template-columns:1fr; gap:12px; }
+ /* Kart: kısa başlık, iki satır açıklama, parmak boyu "Aç" düğmesi; kartın tamamı tıklanır (kutuphane.js) */
+ .kesif-page .kart { padding:16px; border-radius:12px; gap:8px; }
+ .kesif-page .kart h3 { font-size:16px; line-height:1.35; margin-block:6px 0; }
+ .kesif-page .kart > p { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; margin:0; line-height:1.55; }
+ .kesif-page .kart .eylemler { padding-top:8px; gap:8px; }
+ .kesif-page .kart .ac { flex:1 1 auto; justify-content:center; min-height:44px; padding:0 12px; border:1px solid var(--kart-cizgi,var(--cizgi)); border-radius:10px; background:var(--kart-zemin,var(--zemin-2)); color:var(--kart-ana,var(--vurgu)); }
+ .kesif-page .kart .ac:hover { text-decoration:none; }
  .kesif-page .bolum-bas { align-items:start; gap:14px; } .kesif-page .tumu { font-size:12px; }
  .kesif-page .sinif-izgara { grid-template-columns:1fr 1fr; } .kesif-page .sinif-kart { min-height:125px; }
 }

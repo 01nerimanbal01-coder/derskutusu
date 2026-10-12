@@ -192,7 +192,7 @@ ortakVeri.then(({ ayar }) => {
 (() => {
   const ust = $('header.ust');
   if (!ust || /^\/(tahta|goruntule)\.html$/.test(location.pathname)) return;   // tam ekran araç sayfaları
-  const SERIT_SURUM = '20261011-1', EN_COK = 18;
+  const SERIT_SURUM = '20261013-1', EN_COK = 18;
   const kisaTarih = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'short' });
   const yol = (a) => (/^(https?:)?\//.test(a) ? a : `/${a}`);
   const stil = el('link', { rel: 'stylesheet', href: `${kok}serit.css?v=${SERIT_SURUM}` });

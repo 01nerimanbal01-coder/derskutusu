@@ -177,6 +177,24 @@
 .agac-bos p { margin: 0; color: var(--soluk); }
 .agac-bos-eylem { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
 
+/* Dar ekran (kullanıcı 12.10.2026): sınıf kartları iki sütun; öğretmen kategorileri açıklamasız, tek satırlık kartlar (sayfa 1800 px'ten ~700 px'e iner) */
+@media (max-width: 560px) {
+  .agac-siniflar { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .agac-sinif { padding: 16px 14px 12px; border-radius: 14px; }
+  .agac-sinif-no { font-size: 38px; }
+  .agac-sinif-ad { font-size: 16px; }
+  .agac-sinif small { margin-top: 6px; font-size: 12px; }
+  .agac-git { right: 12px; top: 12px; font-size: 18px; }
+  .agac-kategoriler { gap: 10px; }
+  .agac-kategori { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-rows: auto auto; align-items: center; column-gap: 12px; row-gap: 2px;
+    min-height: 0; padding: 12px 14px; border-radius: 14px; border-top: 1px solid var(--kart-cizgi); border-left: 5px solid var(--kart-vurgu); }
+  .agac-kategori-simge { grid-row: 1 / 3; width: 40px; height: 40px; border-radius: 11px; }
+  .agac-kategori h3 { grid-column: 2; grid-row: 1; margin: 0; font-size: 16px; }
+  .agac-kategori p { display: none; }
+  .agac-kategori .agac-basla { grid-column: 2; grid-row: 2; margin-top: 0; font-size: 13px; }
+  .agac-adet { position: static; grid-column: 3; grid-row: 1 / 3; padding: 4px 8px; font-size: 11px; white-space: nowrap; }
+}
+
 /* Üst menüde etkin dal */
 .menu a[aria-current="page"] { color: var(--metin); background: var(--zemin-2); }
 @media (prefers-reduced-motion: reduce) { .rol-kart, .agac-sinif, .agac-ders, .agac-kategori, .agac-unite-ok { transition: none; } .rol-kart:hover, .agac-sinif:hover, .agac-ders:hover, .agac-kategori:hover { transform: none; } }

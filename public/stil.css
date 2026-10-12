@@ -336,8 +336,10 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
   .takip-izgara { grid-template-columns: 1fr; }
   .yakinda { grid-template-columns: 1fr; text-align: left; }
   .iletisim-kart { grid-template-columns: 1fr; padding: 32px 24px; }
-  .alt-izgara { grid-template-columns: 1fr 1fr; }
+  .alt-izgara { grid-template-columns: 1fr 1fr; gap: 24px; }
   .alt-marka { grid-column: 1 / -1; }
+  .alt nav { gap: 0; }   /* dokunmatik hedef: her bağlantı en az 44 px yüksek (kullanıcı 12.10.2026) */
+  .alt nav a { display: flex; align-items: center; min-height: 44px; }
 }
 @media (max-width: 560px) {
   .kap { width: calc(100% - 32px); }
@@ -471,7 +473,14 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
 .tahta-alan { position: relative; height: calc(100vh - 68px - 62px); min-height: 420px; border-top: 1px solid var(--cizgi); background: #fdfdfb; overflow: hidden; }
 .tahta-alan:fullscreen { height: 100vh; }
 #tahta { position: absolute; inset: 0; }
-@media (max-width: 560px) { .tahta-cubuk button { width: 34px; height: 34px; } .kalem-dugme { height: 46px; padding: 0 14px 0 12px; font-size: 14px; right: 12px; bottom: 12px; } }
+@media (max-width: 560px) {
+  .tahta-cubuk button { width: 34px; height: 34px; }
+  /* Dar ekranda yalnız simge: yuvarlak düğme metni örtmez (erişilebilir adı aria-label'da) */
+  .kalem-dugme { width: 52px; height: 52px; padding: 0; justify-content: center; border-radius: 50%; right: 14px; bottom: 14px; }
+  .kalem-dugme span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .alt-son { padding-bottom: 80px; }   /* sabit kalem düğmesi alt bilginin son satırını örtmesin */
+}
+.kalem-dugme.gizli { display: none; }   /* sayfanın kendi "Kalemle yaz" düğmesi görünürken (tahta.js) */
 @media print { .kalem-dugme, .kalem-katman { display: none; } }
 /* PDF görüntüleyici (PDF.js) + kalem */
 .g-alan { position: relative; }
@@ -716,7 +725,12 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
 .etk-ipucu-dugme, .etk-kontrol { margin-top: 12px; }
 .etk-cevap { margin: 12px 0 0; padding: 10px 14px; border-radius: 12px; background: var(--yesil-acik); }
 .etk-cevap b { color: var(--yesil); }
-@media (max-width: 560px) { .etk-secenekler { grid-template-columns: 1fr; } .etk { padding: 14px; } .etk-sutunlar { gap: 8px; } .etk-sec { font-size: 15px; padding: 8px 10px; } .etk-dy-satir { grid-template-columns: 1fr; } }
+@media (max-width: 560px) {
+  .etk-secenekler { grid-template-columns: 1fr; } .etk { padding: 14px; } .etk-sutunlar { gap: 8px; } .etk-sec { font-size: 15px; padding: 8px 10px; } .etk-dy-satir { grid-template-columns: 1fr; }
+  /* Eşleştirme: sütun genişliği içeriğe göre (kısa sayı cümleleri dar, uzun problem cümleleri geniş kalır); çok satırlı metin sola yaslı */
+  .etk-eslestir .etk-sutunlar { grid-template-columns: minmax(0, auto) minmax(0, auto); align-items: start; }
+  .etk-eslestir .etk-sec { justify-content: flex-start; text-align: left; }
+}
 @media print { .etk-sifirla, .etk-ipucu-dugme, .etk-kontrol { display: none; } .etk-ipucu, .etk-cevap { display: block !important; } }
 /* Logo (mühür + yatay yazı; "Logo tasarımı" 29.09, yazılar yol) */
 :root { --logo-1: #0b2257; --logo-2: #2451d6; }

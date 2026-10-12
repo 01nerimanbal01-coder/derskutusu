@@ -1,9 +1,9 @@
 """Keşif sayfalarının ortak görünümü; içerik kaynaklarını değiştirmez."""
 import re
 
-CSS = '<link rel="stylesheet" href="/kesif.css?v=20261004-duzen1">'
+CSS = '<link rel="stylesheet" href="/kesif.css?v=20261013-1">'
 JS = '<script src="/kesif.js?v=20261004-duzen1"></script>'
-RENK_CSS = '<link rel="stylesheet" href="/renkler.css?v=20261004-duzen1" media="screen">'
+RENK_CSS = '<link rel="stylesheet" href="/renkler.css?v=20261013-1" media="screen">'
 
 
 def renkli_sayfa(html, ad):
@@ -31,7 +31,10 @@ def kutuphane_govde(govde):
     govde = govde.replace('<form class="suzgec-cubugu"', '''<div class="kesif-library">
       <aside class="kesif-sidebar" aria-label="Kaynak kategorileri"><h2>Kategoriler</h2><div id="kategori-secimleri"></div></aside>
       <div class="kesif-results">
+      <details class="suzgec-acilir" open>
+      <summary><span>Süzgeçler</span><small id="suzgec-sayi" hidden></small><span class="suzgec-ok" aria-hidden="true">⌄</span></summary>
       <form class="suzgec-cubugu"''')
+    govde = govde.replace('</form>', '</form>\n      </details>', 1)   # dar ekranda katlanır (kesif.css, kutuphane.js)
     govde = govde.replace('<p class="sonuc-bilgi">', '<div class="kesif-result-toolbar"><p class="sonuc-bilgi">')
     govde = govde.replace('Seçimleri temizle</button></p>', '''Seçimleri temizle</button></p>
       <label class="kesif-sort">Sıralama<select id="s-sirala"><option value="yeni">Son eklenen</option><option value="baslik">Başlık A–Z</option><option value="sinif">Sınıf sırası</option></select></label></div>''')

@@ -38,7 +38,14 @@
   .serit { gap: 8px; padding-block: 6px; }
   .serit-uzun, .serit-tumu { display: none; }
   .serit-bas { flex-direction: column; gap: 6px; }
-  .serit-oge { width: 232px; padding-right: 8px; }
+  /* Dar ekranda kaymaz (kullanıcı 12.10.2026): parmakla kaydırılan, kartlara oturan şerit; başlık iki satır okunur */
+  .serit-iz { animation: none; }
+  .serit-kopya, .serit-dur { display: none; }
+  .serit-pencere { overflow: auto hidden; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scrollbar-width: none; -webkit-mask-image: none; mask-image: none; }
+  .serit-pencere::-webkit-scrollbar { display: none; }
+  .serit-oge { width: 236px; padding-right: 8px; scroll-snap-align: start; }
+  .serit-kart { gap: 2px; padding: 7px 12px 8px 13px; }
+  .serit-ad { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; white-space: normal; }
 }
 
 @media (min-width: 1440px) {
