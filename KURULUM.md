@@ -23,6 +23,11 @@ Hesap açma, giriş ve anahtar/şifre girme işlerini siz yaparsınız. Anahtarl
 - `public/veri/youtube.json`, `instagram.json`: `araclar/akis_guncelle.py` üretir; elle değiştirilmez.
 - `public/gizlilik.html` (gizlilik ve çerezler), `404.html`, `robots.txt`, `sitemap.xml`, simgeler ve paylaşım görseli (`paylasim.png`).
 
+## Sosyal medya kartları
+- `araclar/sosyal/<kimlik>.json`: her "Bunu biliyor muydunuz?" kartının metni (`ozet`, `baslik`, `paragraflar`, `bilgi`). Kimlik `bilgi-<sınıf>-<ders>-<hafta>` biçimindedir (Din Kültürü → `din-kulturu`, İnkılap Tarihi → `inkilap-tarihi`).
+- `python3 araclar/sosyal_gorsel.py`: görseli olmayan kartları `public/sosyal/<kimlik>.png` olarak üretir (1080×1350, Poppins yazı tipi `araclar/fontlar/`). `--kuyruk 2026-10-13T09:00` ile kuyrukta olmayan kartları günde 6 gönderi (09–19, iki saat arayla) olacak biçimde `sosyal/kuyruk.json`'a ekler.
+- Paylaşım: `FB_PAGE_TOKEN` gizli anahtarı girilmişse `araclar/sosyal_paylas.py` zamanı gelen gönderiyi 15 dakikada bir kendiliğinden paylaşır; girilmemişse kuyruktaki `metin` ve `gorsel` Meta Business Suite'ten elle paylaşılır ve `durum` alanına not düşülür.
+
 ## Instagram paylaşımlarının kendiliğinden gelmesi (isteğe bağlı)
 Bu adım yapılmazsa Instagram gönderileri siteye bağlantılarıyla tek tek eklenir.
 1. developers.facebook.com'da ücretsiz bir uygulama oluşturun. Uygulamaya **Instagram** ürününü ekleyin, "Instagram girişiyle API kurulumu" bölümünden @derskutusuinfo hesabını bağlayın ve **erişim anahtarı** oluşturun.
