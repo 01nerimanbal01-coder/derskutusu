@@ -12,19 +12,31 @@ function kitleDenetleyici(dersler) {
 function icerikKarti(i, dersler) {
   const dersAd = dersler.dersler[i.ders] || i.ders;
   const adres = i.dosya || i.baglanti;
-  return el('article', { sinif: 'kart', 'data-renk': window.Kesif?.category(i.tur).color || 'mavi' },
+  // Sınıf zaten rozette: "5. Sınıf Matematik 7. Hafta: …" başlığı "Matematik 7. Hafta: …" olarak kısalır (dar ekranda kart boyu)
+  const baslik = String(i.baslik || '').replace(/^\d+\.\s*Sınıf\s+(?=\S)/, '') || i.baslik;
+  const kart = el('article', { sinif: 'kart', 'data-renk': window.Kesif?.category(i.tur).color || 'mavi' },
     el('div', { sinif: 'ust-bilgi' },
       i.hafta && el('span', { sinif: 'etiket' }, `${i.hafta}. hafta`),
       i.sinif && el('span', { sinif: 'etiket' }, `${i.sinif}. sınıf`),
       dersAd && el('span', { sinif: 'etiket tur' }, dersAd),
       i.tur && el('span', { sinif: `etiket ${i.kitle === 'ogretmen' ? 'ogretmen' : 'tur'}` }, i.tur)),
-    el('h3', {}, i.baslik),
+    el('h3', {}, baslik),
     i.aciklama && el('p', {}, i.aciklama),
     el('div', { sinif: 'eylemler' },
       i.goruntule && el('a', { sinif: 'ac', href: `/${i.goruntule}` }, 'Aç', simge('ok')),
       i.hazirla && el('a', { sinif: 'ac', href: `/${i.hazirla}` }, 'Hazırla ve indir', simge('indir')),
       !i.hazirla && adres && (i.dosya || !i.goruntule) && el('a', { sinif: 'ac', href: i.dosya ? `/${i.dosya}` : adres, target: i.dosya ? null : '_blank', rel: 'noopener', download: i.dosya ? '' : null },
         i.dosya ? 'İndir' : 'Aç', simge(i.dosya ? 'indir' : 'ok'))));
+  // Kartın tamamı ilk eyleme götürür (indirme bağlantısı hariç); metin seçimi ve bağlantıya tıklama bozulmaz.
+  const birincil = kart.querySelector('a.ac:not([download])');
+  if (birincil) {
+    kart.classList.add('tiklanir');
+    kart.addEventListener('click', (o) => {
+      if (o.target.closest('a, button') || getSelection()?.toString()) return;
+      birincil.click();
+    });
+  }
+  return kart;
 }
 
 function sinifSayfasi({ dersler, icerikler }) {
@@ -101,6 +113,13 @@ function icerikSayfasi({ dersler, icerikler }) {
   dersSecenekleri(); turSecenekleri();
   for (const a of ['ders', 'tur', 'hafta']) if (parametre.get(a)) alan[a].value = parametre.get(a);
   if (parametre.get('ara')) alan.ara.value = parametre.get('ara');
+  // Dar ekranda süzgeçler katlanır: seçim varsa açık gelir; geniş ekrana geçince hep açık (CSS yalnız başlığı gizler)
+  const acilir = $('.suzgec-acilir');
+  const genis = window.matchMedia?.('(min-width: 761px)');
+  if (acilir) {
+    acilir.open = Boolean(genis?.matches || location.search);
+    genis?.addEventListener?.('change', () => { if (genis.matches) acilir.open = true; });
+  }
 
   const secimiKaldir = (ad) => {
     alan[ad].value = '';
@@ -129,6 +148,12 @@ function icerikSayfasi({ dersler, icerikler }) {
     const secili = Object.values(f).some(Boolean);
     $('#sonuc-sayi').textContent = `${sonuc.length} içerik`;
     $('#temizle').hidden = !secili;
+    const suzgecSayi = $('#suzgec-sayi');
+    if (suzgecSayi) {
+      const n = Object.values(f).filter(Boolean).length;
+      suzgecSayi.textContent = n ? `${n} seçili` : '';
+      suzgecSayi.hidden = !n;
+    }
     const secimler = $('#secili-suzgecler');
     if (secimler) {
       const adlar = { sinif: 'Sınıf', ders: 'Ders', kitle: 'Kimin için', tur: 'Tür', hafta: 'Hafta', ara: 'Arama' };
