@@ -9,7 +9,7 @@
     "bilgi": "...",                         # gönderi metninin ilk cümleleri ("Bunu biliyor muydunuz?" betik ekler)
     "renk": "c05621"                        # isteğe bağlı vurgu rengi; yoksa dersin paletinden seçilir
   }
-Çıktı: public/sosyal/<kimlik>.png. Yazı tipi: araclar/fontlar/Poppins-*.ttf (SIL OFL).
+Çıktı: public/sosyal/<kimlik>.png (+ Instagram API için .jpg). Yazı tipi: araclar/fontlar/Poppins-*.ttf (SIL OFL).
 
 Kullanım:
   python3 araclar/sosyal_gorsel.py                      # görseli olmayan içerikleri üretir
@@ -18,8 +18,8 @@ Kullanım:
   python3 araclar/sosyal_gorsel.py --kuyruk 2026-10-13T09:00 # kuyrukta olmayan içerikleri sırayla ekler
                                                               # (günde 6 gönderi: 09, 11, 13, 15, 17, 19)
   python3 araclar/sosyal_gorsel.py --liste                   # paylaşılmamışları sosyal/bekleyen.md'ye yazar
-Paylaşım: sosyal/kuyruk.json'daki kayıtlar FB_PAGE_TOKEN varsa araclar/sosyal_paylas.py ile kendiliğinden,
-yoksa Meta Business Suite'ten elle paylaşılır; paylaşılınca "durum" alanı doldurulur.
+Paylaşım: sosyal/kuyruk.json'daki kayıtlar IG_TOKEN (Instagram) ya da FB_PAGE_TOKEN (Facebook) varsa
+araclar/sosyal_paylas.py ile kendiliğinden, yoksa Meta Business Suite'ten elle paylaşılır; paylaşılınca "durum" dolar.
 """
 import argparse
 import json
@@ -247,7 +247,9 @@ def bekleyen_listesi():
                 'aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.', '',
                 f'Toplam {len(bekleyen)} gönderi.', '']
     for g in bekleyen:
-        satirlar += [f'## {g["kimlik"]}', f'Sıra: {g["zaman"][:16].replace("T", " ")} · Görsel: {g["gorsel"]}', '', '```', g['metin'], '```', '']
+        kanallar = ', '.join(h for h in g['hedef'] if not g['durum'].get(h))
+        satirlar += [f'## {g["kimlik"]}', f'Sıra: {g["zaman"][:16].replace("T", " ")} · Bekleyen: {kanallar} · Görsel: {g["gorsel"]}', '',
+                     '```', g['metin'], '```', '']
     (KOK / 'sosyal' / 'bekleyen.md').write_text('\n'.join(satirlar), encoding='utf-8')
     return len(bekleyen)
 
@@ -273,6 +275,7 @@ def main():
             raise ValueError(f'{kimlik}: kart metninde Arap harfi var; Poppins bunu çizemez, çeviri yazı kullanın (bilgi alanında kalabilir)')
         im, bilgi = ciz(v)
         im.save(cikti / f'{kimlik}.png', optimize=True)
+        im.save(cikti / f'{kimlik}.jpg', quality=90, optimize=True)   # Instagram API yalnız JPEG kabul eder
         uyari = ' KÜÇÜLTÜLDÜ' if bilgi['baslik_boyut'] < 68 else ''
         print(f'{kimlik}: başlık {bilgi["baslik_satir"]} satır/{bilgi["baslik_boyut"]}px, '
               f'paragraf {bilgi["paragraf_satir"]} satır/{bilgi["paragraf_boyut"]}px, alt {bilgi["alt"]}{uyari}')
