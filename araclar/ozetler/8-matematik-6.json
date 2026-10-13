@@ -1,0 +1,258 @@
+{
+ "sinif": 8,
+ "ders": "matematik",
+ "hafta": 6,
+ "tarih": "19-23 Ekim 2026",
+ "yayin_tarihi": "2026-10-12",
+ "unite": "Sayılar ve İşlemler",
+ "konu": "Kareköklü İfadeler: Tam Kare Sayılar ve Karekökleri",
+ "ciktilar": [
+  "M.8.1.3.1. Tamkare pozitif tam sayılarla bu sayıların karekökleri arasındaki ilişkiyi belirler.",
+  "M.8.1.3.2. Tam kare olmayan kareköklü bir sayının hangi iki doğal sayı arasında olduğunu belirler."
+ ],
+ "giris": "Üslü ifadeleri bilimsel gösterimle tamamladın. Bu hafta kare alma işleminin tersi olan karekökü öğrenecek, tam kare sayılarla kareköklerini ilişkilendirecek ve tam kare olmayan sayıların karekökünü iki doğal sayı arasına yerleştireceksin.",
+ "bolumler": [
+  {
+   "baslik": "Kare modeli ve tam kare sayılar",
+   "metin": [
+    "Kenar uzunluğu doğal sayı olan bir karenin alanı, kenar uzunluğunun kendisiyle çarpımına eşittir. Kenar uzunlukları 1’den 5’e kadar birer birim artan beş karenin alanları 1, 4, 9, 16 ve 25 birimkaredir. Kare modeli bir sayının karesini alan olarak görmeni sağlar: 4 · 4 işlemi, kenarı 4 birim olan karenin içindeki birim karelerin sayısını verir.",
+    "Pozitif bir tam sayıyı kendisiyle çarpınca bulunan sayıya tam kare sayı denir. Örneğin 36 sayısı 6 · 6 olduğu için, 49 sayısı 7 · 7 olduğu için tam karedir. Buna karşılık 40 sayısı hiçbir tam sayının karesi olmadığından tam kare değildir.",
+    "Aynı düşünce kare motifli örgülerde de görülür. Kenarlarında eşit sayıda düğüm bulunan kare bir motifte düğüm sayısı, bir kenardaki düğüm sayısının karesidir. Bir kenarında 15 düğüm olan motifte 15 · 15 = 225 düğüm vardır; bu yüzden toplam 225 düğümlü kare motif yapılabilir, 230 düğümlü yapılamaz."
+   ],
+   "kutu": {
+    "tur": "tanim",
+    "baslik": "Tam kare sayı",
+    "metin": "Pozitif bir tam sayıyı kendisiyle çarpınca bulunan sayı tam karedir; 7 · 7 = {us:7|2} = 49 olduğundan 49 tam kare sayıdır."
+   },
+   "gorsel": "<svg viewBox=\"0 0 440 202\" role=\"img\" aria-label=\"Kenarı 1, 2, 3, 4 ve 5 birim olan beş kare aynı ölçekte çizilmiştir. Alanları kenar çarpı kenar ile bulunur: 1 çarpı 1 eşittir 1, 2 çarpı 2 eşittir 4, 3 çarpı 3 eşittir 9, 4 çarpı 4 eşittir 16, 5 çarpı 5 eşittir 25. Bu alan sayıları tam kare sayılardır.\"><text x=\"145.2\" y=\"26.0\" font-size=\"15\" font-weight=\"800\" class=\"g-tf\">alan</text><text x=\"175.8\" y=\"26.0\" font-size=\"15\" font-weight=\"800\" class=\"g-y\"> = </text><text x=\"193.8\" y=\"26.0\" font-size=\"15\" font-weight=\"800\" class=\"g-mf\">kenar</text><text x=\"237.2\" y=\"26.0\" font-size=\"15\" font-weight=\"800\" class=\"g-y\"> · </text><text x=\"251.3\" y=\"26.0\" font-size=\"15\" font-weight=\"800\" class=\"g-mf\">kenar</text><rect x=\"60.5\" y=\"105\" width=\"15\" height=\"15\" rx=\"2\" class=\"g-ta\"/><rect x=\"60.5\" y=\"105\" width=\"15\" height=\"15\" rx=\"2\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"68\" y=\"140\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-mf\">1 birim</text><text x=\"44.3\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">1</text><text x=\"50.8\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-y\"> · </text><text x=\"63.1\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">1</text><text x=\"69.6\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-y\"> = </text><text x=\"85.2\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-tf\">1</text><rect x=\"129\" y=\"90\" width=\"30\" height=\"30\" rx=\"2\" class=\"g-ta\"/><rect x=\"129\" y=\"90\" width=\"30\" height=\"30\" rx=\"2\" class=\"g-ts\" stroke-width=\"1.8\"/><line x1=\"144.0\" y1=\"90.0\" x2=\"144.0\" y2=\"120.0\" class=\"g-ts\" stroke-width=\"0.9\" stroke-opacity=\"0.55\"/><line x1=\"129.0\" y1=\"105.0\" x2=\"159.0\" y2=\"105.0\" class=\"g-ts\" stroke-width=\"0.9\" stroke-opacity=\"0.55\"/><text x=\"144\" y=\"140\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-mf\">2 birim</text><text x=\"118.0\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">2</text><text x=\"126.1\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-y\"> · </text><text x=\"138.3\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">2</text><text x=\"146.3\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-y\"> = </text><text x=\"161.9\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-tf\">4</text><rect x=\"197.5\" y=\"75\" width=\"45\" height=\"45\" rx=\"2\" class=\"g-ta\"/><rect x=\"197.5\" y=\"75\" width=\"45\" height=\"45\" rx=\"2\" class=\"g-ts\" stroke-width=\"1.8\"/><line x1=\"212.5\" y1=\"75.0\" x2=\"212.5\" y2=\"120.0\" class=\"g-ts\" stroke-width=\"0.9\" stroke-opacity=\"0.55\"/><line x1=\"197.5\" y1=\"90.0\" x2=\"242.5\" y2=\"90.0\" class=\"g-ts\" stroke-width=\"0.9\" stroke-opacity=\"0.55\"/><line x1=\"227.5\" y1=\"75.0\" x2=\"227.5\" y2=\"120.0\" class=\"g-ts\" stroke-width=\"0.9\" stroke-opacity=\"0.55\"/><line x1=\"197.5\" y1=\"105.0\" x2=\"242.5\" y2=\"105.0\" class=\"g-ts\" stroke-width=\"0.9\" stroke-opacity=\"0.55\"/><text x=\"220\" y=\"140\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-mf\">3 birim</text><text x=\"194.0\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">3</text><text x=\"202.1\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-y\"> · </text><text x=\"214.3\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">3</text><text x=\"222.3\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-y\"> = </text><text x=\"237.9\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-tf\">9</text><rect x=\"266\" y=\"60\" width=\"60\" height=\"60\" rx=\"2\" class=\"g-ta\"/><rect x=\"266\" y=\"60\" width=\"60\" height=\"60\" rx=\"2\" class=\"g-ts\" stroke-width=\"1.8\"/><line x1=\"281.0\" y1=\"60.0\" x2=\"281.0\" y2=\"120.0\" class=\"g-ts\" stroke-width=\"0.9\" stroke-opacity=\"0.55\"/><line x1=\"266.0\" y1=\"75.0\" x2=\"326.0\" y2=\"75.0\" class=\"g-ts\" stroke-width=\"0.9\" stroke-opacity=\"0.55\"/><line x1=\"296.0\" y1=\"60.0\" x2=\"296.0\" y2=\"120.0\" class=\"g-ts\" stroke-width=\"0.9\" stroke-opacity=\"0.55\"/><line x1=\"266.0\" y1=\"90.0\" x2=\"326.0\" y2=\"90.0\" class=\"g-ts\" stroke-width=\"0.9\" stroke-opacity=\"0.55\"/><line x1=\"311.0\" y1=\"60.0\" x2=\"311.0\" y2=\"120.0\" class=\"g-ts\" stroke-width=\"0.9\" stroke-opacity=\"0.55\"/><line x1=\"266.0\" y1=\"105.0\" x2=\"326.0\" y2=\"105.0\" class=\"g-ts\" stroke-width=\"0.9\" stroke-opacity=\"0.55\"/><text x=\"296\" y=\"140\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-mf\">4 birim</text><text x=\"266.8\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">4</text><text x=\"274.8\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-y\"> · </text><text x=\"287.0\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">4</text><text x=\"295.1\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-y\"> = </text><text x=\"310.7\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-tf\">16</text><rect x=\"334.5\" y=\"45\" width=\"75\" height=\"75\" rx=\"2\" class=\"g-ta\"/><rect x=\"334.5\" y=\"45\" width=\"75\" height=\"75\" rx=\"2\" class=\"g-ts\" stroke-width=\"1.8\"/><line x1=\"349.5\" y1=\"45.0\" x2=\"349.5\" y2=\"120.0\" class=\"g-ts\" stroke-width=\"0.9\" stroke-opacity=\"0.55\"/><line x1=\"334.5\" y1=\"60.0\" x2=\"409.5\" y2=\"60.0\" class=\"g-ts\" stroke-width=\"0.9\" stroke-opacity=\"0.55\"/><line x1=\"364.5\" y1=\"45.0\" x2=\"364.5\" y2=\"120.0\" class=\"g-ts\" stroke-width=\"0.9\" stroke-opacity=\"0.55\"/><line x1=\"334.5\" y1=\"75.0\" x2=\"409.5\" y2=\"75.0\" class=\"g-ts\" stroke-width=\"0.9\" stroke-opacity=\"0.55\"/><line x1=\"379.5\" y1=\"45.0\" x2=\"379.5\" y2=\"120.0\" class=\"g-ts\" stroke-width=\"0.9\" stroke-opacity=\"0.55\"/><line x1=\"334.5\" y1=\"90.0\" x2=\"409.5\" y2=\"90.0\" class=\"g-ts\" stroke-width=\"0.9\" stroke-opacity=\"0.55\"/><line x1=\"394.5\" y1=\"45.0\" x2=\"394.5\" y2=\"120.0\" class=\"g-ts\" stroke-width=\"0.9\" stroke-opacity=\"0.55\"/><line x1=\"334.5\" y1=\"105.0\" x2=\"409.5\" y2=\"105.0\" class=\"g-ts\" stroke-width=\"0.9\" stroke-opacity=\"0.55\"/><text x=\"372\" y=\"140\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-mf\">5 birim</text><text x=\"342.0\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">5</text><text x=\"350.0\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-y\"> · </text><text x=\"362.2\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">5</text><text x=\"370.3\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-y\"> = </text><text x=\"385.9\" y=\"158.0\" font-size=\"13\" font-weight=\"700\" class=\"g-tf\">25</text><rect x=\"60\" y=\"176\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ta\"/><rect x=\"60\" y=\"176\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"81\" y=\"187.5\" text-anchor=\"start\" font-size=\"12.5\" font-weight=\"600\" class=\"g-y\">alan (tam kare sayı)</text><rect x=\"250\" y=\"176\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ma\"/><rect x=\"250\" y=\"176\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"271\" y=\"187.5\" text-anchor=\"start\" font-size=\"12.5\" font-weight=\"600\" class=\"g-y\">kenar uzunluğu</text></svg>"
+  },
+  {
+   "baslik": "Asal çarpanlarla tam kare denetimi",
+   "metin": [
+    "Bir sayının tam kare olup olmadığını anlamak için sayıyı asal çarpanlarına ayırabilirsin. Çarpım bir tam sayının karesi olarak yazılabiliyorsa sayı tam karedir. Örneğin 1764 = {us:2|2} · {us:3|2} · {us:7|2} = {us:(2 · 3 · 7)|2} = {us:42|2} olduğundan 1764 tam kare sayıdır.",
+    "Öte yandan 720 = {us:2|4} · {us:3|2} · 5 olur. Çarpanlardan 5’in üssü 1 olduğundan çarpım bir tam sayının karesi biçimine getirilemez ve 720 tam kare değildir. Çarpanların hepsi çift üslüyse çarpım bir tam sayının karesi olarak yazılabilir.",
+    "Karesi verilen sayının hangi tam sayılardan geldiğine de dikkat etmelisin. Örneğin (−12) · (−12) = 144 olduğundan 144, yalnız 12’nin değil −12’nin de karesidir. Bu yüzden karesi 144 olan iki tam sayı vardır: 12 ve −12."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "metin": "Asal çarpanlarına ayırdığında her çarpanın üssü çift çıkıyorsa sayı tam karedir; tek üslü bir çarpan kalıyorsa değildir."
+   }
+  },
+  {
+   "baslik": "Karekök ve kök işareti",
+   "metin": [
+    "Bir sayının karekökünü almak, o sayıyı karesi olarak veren pozitif tam sayıyı aramaktır. Bu işlemin sembolü kök işaretidir ve işaretin üstündeki çizgi, kök içindeki sayının tamamını kapsar. Örneğin {kok:49} = {kok:{us:7|2}} = 7 yazılır, çünkü 7 · 7 = 49’dur. Aynı biçimde {kok:121} = {kok:{us:11|2}} = 11’dir.",
+    "Kök alma ile kare alma birbirinin tersidir. Örneğin 13 · 13 = 169 olduğunu bilen biri {kok:169} = 13 sonucuna hemen ulaşır. Tam kare sayıları ne kadar iyi tanırsan karekökleri o kadar çabuk bulursun.",
+    "Eksi işaretli bir sayının karekökü bulunamaz; çünkü hangi tam sayıyı kendisiyle çarparsan çarp çarpım sıfırdan küçük çıkmaz. Bu yüzden −25 gibi bir sayı için kök alma işlemi yapılamaz. Hem 5’in hem −5’in karesi 25’tir; ancak {kok:25} ifadesinin değeri 5’tir."
+   ],
+   "kutular": [
+    {
+     "tur": "tanim",
+     "baslik": "Karekök",
+     "metin": "Karekök alma, bir sayıyı karesi olarak veren pozitif tam sayıyı bulma işlemidir; {kok:36} = 6 yazılır."
+    },
+    {
+     "tur": "dikkat",
+     "metin": "Kök işaretinin çizgisi içindeki işlemin tamamını kapsar; önce çizginin altı hesaplanır, sonra karekök alınır: {kok:9 + 16} = {kok:25} = 5."
+    }
+   ]
+  },
+  {
+   "baslik": "Kare modelinde alan ve kenar",
+   "metin": [
+    "Karesel bir bölgenin alanı biliniyorsa kenar uzunluğu alanın karekökü alınarak bulunur. Alanı 49, 100 ve 169 cm² olan üç karenin kenarları sırasıyla {kok:49} = 7 cm, {kok:100} = 10 cm ve {kok:169} = 13 cm’dir. Her durumda kenar uzunluğunun karesi alana eşittir.",
+    "Kenar uzunluğu bulununca çevre de hesaplanabilir. Alanı 169 cm² olan karenin çevresi 4 · 13 = 52 cm’dir; çevre, kenar uzunluğunun 4 katıdır.",
+    "Alan tam kare sayı değilse kenar uzunluğu tam sayı çıkmaz. Örneğin alanı 150 cm² olan karenin kenarı için 12 · 12 = 144 küçük, 13 · 13 = 169 büyüktür; {kok:150} bir tam sayıya eşit olmaz ve 12 ile 13 arasında kalır."
+   ],
+   "kutu": {
+    "tur": "bilgi",
+    "metin": "Alanı verilen karenin kenar uzunluğu alanın karekökü, çevresi ise bu uzunluğun 4 katıdır."
+   },
+   "gorsel": "<svg viewBox=\"0 0 440 210\" role=\"img\" aria-label=\"Alanları 49, 100 ve 169 santimetrekare olan üç kare aynı ölçekte çizilmiştir. Kenar uzunlukları alanın karekökü ile bulunur: 49 sayısının karekökü 7 santimetre, 100 sayısının karekökü 10 santimetre, 169 sayısının karekökü 13 santimetredir.\"><rect x=\"68\" y=\"92\" width=\"56\" height=\"56\" rx=\"3\" class=\"g-ta\"/><rect x=\"68\" y=\"92\" width=\"56\" height=\"56\" rx=\"3\" class=\"g-ts\" stroke-width=\"2\"/><text x=\"96.0\" y=\"125.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">49 cm<tspan dx=\"1\" dy=\"-6\" font-size=\"9.4\">2</tspan></text><path d=\"M68.0 87.0V79.0M124.0 87.0V79.0M68.0 83.0H124.0\" class=\"g-ms\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"96\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-mf\">7 cm</text><path d=\"M55.8 169.2 L57.6 168.0 L60.8 175.8 L65.1 159.8 H87.0\" class=\"g-ms\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"66.6\" y=\"174.0\" font-size=\"15\" font-weight=\"800\" class=\"g-tf\">49</text><text x=\"87.0\" y=\"174.0\" font-size=\"15\" font-weight=\"800\" class=\"g-mf\"> = 7 cm</text><rect x=\"180\" y=\"68\" width=\"80\" height=\"80\" rx=\"3\" class=\"g-ta\"/><rect x=\"180\" y=\"68\" width=\"80\" height=\"80\" rx=\"3\" class=\"g-ts\" stroke-width=\"2\"/><text x=\"220.0\" y=\"113.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">100 cm<tspan dx=\"1\" dy=\"-6\" font-size=\"9.4\">2</tspan></text><path d=\"M180.0 63.0V55.0M260.0 63.0V55.0M180.0 59.0H260.0\" class=\"g-ms\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"220\" y=\"51\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-mf\">10 cm</text><path d=\"M172.3 169.2 L174.1 168.0 L177.2 175.8 L181.6 159.8 H211.0\" class=\"g-ms\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"183.1\" y=\"174.0\" font-size=\"15\" font-weight=\"800\" class=\"g-tf\">100</text><text x=\"211.0\" y=\"174.0\" font-size=\"15\" font-weight=\"800\" class=\"g-mf\"> = 10 cm</text><rect x=\"292\" y=\"44\" width=\"104\" height=\"104\" rx=\"3\" class=\"g-ta\"/><rect x=\"292\" y=\"44\" width=\"104\" height=\"104\" rx=\"3\" class=\"g-ts\" stroke-width=\"2\"/><text x=\"344.0\" y=\"101.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">169 cm<tspan dx=\"1\" dy=\"-6\" font-size=\"9.4\">2</tspan></text><path d=\"M292.0 39.0V31.0M396.0 39.0V31.0M292.0 35.0H396.0\" class=\"g-ms\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"344\" y=\"27\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-mf\">13 cm</text><path d=\"M296.3 169.2 L298.1 168.0 L301.2 175.8 L305.6 159.8 H335.0\" class=\"g-ms\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"307.1\" y=\"174.0\" font-size=\"15\" font-weight=\"800\" class=\"g-tf\">169</text><text x=\"335.0\" y=\"174.0\" font-size=\"15\" font-weight=\"800\" class=\"g-mf\"> = 13 cm</text><rect x=\"60\" y=\"184\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ta\"/><rect x=\"60\" y=\"184\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"81\" y=\"195.5\" text-anchor=\"start\" font-size=\"12.5\" font-weight=\"600\" class=\"g-y\">alan</text><rect x=\"200\" y=\"184\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ma\"/><rect x=\"200\" y=\"184\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"221\" y=\"195.5\" text-anchor=\"start\" font-size=\"12.5\" font-weight=\"600\" class=\"g-y\">kenar = alanın karekökü</text></svg>"
+  },
+  {
+   "baslik": "Karekök hangi iki doğal sayı arasındadır?",
+   "metin": [
+    "Alanları 36 ve 49 birimkare olan iki karenin kenarları 6 ve 7 birimdir. Alanı bu iki sayının arasında kalan, örneğin 40 birimkare olan bir karenin kenarı da 6 ile 7 birim arasında olmalıdır. Kenar uzunluğu {kok:40} olduğundan 6 < {kok:40} < 7 yazılır.",
+    "Alanı doğal sayı olan ve alanı 36 ile 49 arasında kalan kareler için alan 37’den 48’e kadar değer alabilir. Bu alanların her birinin karekökü 6 ile 7 arasındadır; tam kare olmadıkları için kenarlar tam sayı değildir.",
+    "Yöntem iki adımdan oluşur. Önce sayıyı alttan ve üstten sınırlayan tam kareleri bulursun, sonra bu tam karelerin karekökü olan doğal sayıları sınır alırsın. Örneğin 99 sayısı 81 ile 100 arasındadır; bu tam karelerin kökleri 9 ve 10 olduğundan 9 < {kok:99} < 10 yazılır."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "metin": "Bir doğal sayı tam kare değilse karekökü, sayıyı alttan ve üstten sınırlayan tam karelerin kökleri olan ardışık iki doğal sayının arasında yer alır."
+   },
+   "gorsel": "<svg viewBox=\"0 0 440 252\" role=\"img\" aria-label=\"Alanları 36, 40 ve 49 birimkare olan üç kare aynı ölçekte yan yana çizilmiştir. 36 sayısının karekökü 6, 49 sayısının karekökü 7 birimdir; 40 birimkare alanlı karenin kenarı 40 sayısının karekökü olup 6 ile 7 arasındadır. Sonuç: 6 küçüktür 40 sayısının karekökü küçüktür 7.\"><rect x=\"16.8\" y=\"30\" width=\"120\" height=\"120\" rx=\"3\" class=\"g-ta\"/><rect x=\"16.8\" y=\"30\" width=\"120\" height=\"120\" rx=\"3\" class=\"g-ts\" stroke-width=\"2\"/><text x=\"76.7544\" y=\"95\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"800\" class=\"g-tf\">36 birimkare</text><path d=\"M27.7 171.2 L29.5 170.0 L32.7 177.8 L37.0 161.8 H58.9\" class=\"g-ms\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"38.5\" y=\"176.0\" font-size=\"15\" font-weight=\"800\" class=\"g-tf\">36</text><text x=\"58.9\" y=\"176.0\" font-size=\"15\" font-weight=\"800\" class=\"g-mf\"> = 6 birim</text><rect x=\"146.8\" y=\"23.5\" width=\"126.5\" height=\"126.5\" rx=\"3\" class=\"g-oa\"/><rect x=\"146.8\" y=\"23.5\" width=\"126.5\" height=\"126.5\" rx=\"3\" class=\"g-os\" stroke-width=\"2\"/><text x=\"210\" y=\"91.7544\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"800\" class=\"g-of\">40 birimkare</text><path d=\"M174.6 171.2 L176.4 170.0 L179.5 177.8 L183.9 161.8 H205.8\" class=\"g-os\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"185.4\" y=\"176.0\" font-size=\"15\" font-weight=\"800\" class=\"g-of\">40</text><text x=\"205.8\" y=\"176.0\" font-size=\"15\" font-weight=\"800\" class=\"g-of\"> birim</text><rect x=\"283.2\" y=\"10\" width=\"140\" height=\"140\" rx=\"3\" class=\"g-ta\"/><rect x=\"283.2\" y=\"10\" width=\"140\" height=\"140\" rx=\"3\" class=\"g-ts\" stroke-width=\"2\"/><text x=\"353.246\" y=\"85\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"800\" class=\"g-tf\">49 birimkare</text><path d=\"M304.2 171.2 L306.0 170.0 L309.1 177.8 L313.5 161.8 H335.4\" class=\"g-ms\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"315.0\" y=\"176.0\" font-size=\"15\" font-weight=\"800\" class=\"g-tf\">49</text><text x=\"335.4\" y=\"176.0\" font-size=\"15\" font-weight=\"800\" class=\"g-mf\"> = 7 birim</text><rect x=\"150\" y=\"184\" width=\"140\" height=\"32\" rx=\"16\" class=\"g-z\"/><rect x=\"150\" y=\"184\" width=\"140\" height=\"32\" rx=\"16\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"174.2\" y=\"206.0\" font-size=\"16\" font-weight=\"800\" class=\"g-mf\">6 &lt; </text><path d=\"M203.4 200.9 L205.3 199.6 L208.6 207.9 L213.3 190.8 H236.6\" class=\"g-os\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"214.9\" y=\"206.0\" font-size=\"16\" font-weight=\"800\" class=\"g-of\">40</text><text x=\"236.6\" y=\"206.0\" font-size=\"16\" font-weight=\"800\" class=\"g-mf\"> &lt; 7</text><rect x=\"60\" y=\"228\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ta\"/><rect x=\"60\" y=\"228\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"81\" y=\"239.5\" text-anchor=\"start\" font-size=\"12.5\" font-weight=\"600\" class=\"g-y\">tam kare alan</text><rect x=\"220\" y=\"228\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-oa\"/><rect x=\"220\" y=\"228\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-os\" stroke-width=\"1.6\"/><text x=\"241\" y=\"239.5\" text-anchor=\"start\" font-size=\"12.5\" font-weight=\"600\" class=\"g-y\">tam kare olmayan alan</text></svg>"
+  },
+  {
+   "baslik": "Karekökün yakın olduğu doğal sayı",
+   "metin": [
+    "Karekökün iki doğal sayıdan hangisine yakın olduğunu bulmak için sayının kendisini çevreleyen tam karelere uzaklığına bakılır. Örneğin 27 sayısı 25 ile 36 arasındadır; 25’e uzaklığı 2, 36’ya uzaklığı 9’dur. Sayı 25’e daha yakın olduğundan {kok:27}, 5 ile 6 arasında ve 5’e daha yakındır.",
+    "Benzer biçimde 33 sayısı da 25 ile 36 arasındadır; ancak 25’e uzaklığı 8, 36’ya uzaklığı 3’tür. Bu kez 36’ya daha yakın olduğundan {kok:33}, 6’ya daha yakındır. Sayı doğrusunda 5 ile 6 arasına yerleştirdiğinde {kok:27} 5’in, {kok:33} ise 6’nın yanında yer alır.",
+    "Bu yöntemde karşılaştırma tam kareler üzerinde yapıldığı için hesap kolaydır. Örneğin {kok:56} için 49 ile 64 arasına bakılır; 56’nın 49’a uzaklığı 7, 64’e uzaklığı 8’dir. Bu nedenle {kok:56}, 7 ile 8 arasında ve 7’ye daha yakındır."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "metin": "Sayı hangi tam kareye daha az uzaklıktaysa karekökü de o tam karenin kökü olan doğal sayıya daha yakındır."
+   },
+   "gorsel": "<svg viewBox=\"0 0 440 228\" role=\"img\" aria-label=\"5 ile 6 arasındaki sayı doğrusunda 5 noktası 25 sayısının, 6 noktası 36 sayısının karekökünü gösterir. 27 sayısının karekökü 5’e, 33 sayısının karekökü 6’ya daha yakındır. 27 eksi 25 eşittir 2 ve 36 eksi 27 eşittir 9; 33 eksi 25 eşittir 8 ve 36 eksi 33 eşittir 3.\"><line x1=\"36\" y1=\"64\" x2=\"404\" y2=\"64\" class=\"g-c\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"60\" y1=\"56\" x2=\"60\" y2=\"72\" class=\"g-ms\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M30.8 93.2 L32.5 92.0 L35.7 99.8 L40.0 83.8 H61.9\" class=\"g-ms\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"41.5\" y=\"98.0\" font-size=\"15\" font-weight=\"800\" class=\"g-tf\">25</text><text x=\"62.0\" y=\"98.0\" font-size=\"15\" font-weight=\"800\" class=\"g-mf\"> = 5</text><line x1=\"380\" y1=\"56\" x2=\"380\" y2=\"72\" class=\"g-ms\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M350.8 93.2 L352.6 92.0 L355.7 99.8 L360.1 83.8 H382.0\" class=\"g-ms\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"361.6\" y=\"98.0\" font-size=\"15\" font-weight=\"800\" class=\"g-tf\">36</text><text x=\"381.9\" y=\"98.0\" font-size=\"15\" font-weight=\"800\" class=\"g-mf\"> = 6</text><circle cx=\"122.8\" cy=\"64\" r=\"6.5\" class=\"g-of\"/><line x1=\"122.8\" y1=\"55\" x2=\"122.8\" y2=\"42\" class=\"g-os\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M106.1 30.9 L108.0 29.6 L111.4 37.9 L116.0 20.8 H139.4\" class=\"g-os\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"117.6\" y=\"36.0\" font-size=\"16\" font-weight=\"800\" class=\"g-of\">27</text><circle cx=\"298.3\" cy=\"64\" r=\"6.5\" class=\"g-of\"/><line x1=\"298.3\" y1=\"55\" x2=\"298.3\" y2=\"42\" class=\"g-os\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M281.6 30.9 L283.5 29.6 L286.9 37.9 L291.5 20.8 H314.9\" class=\"g-os\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"293.1\" y=\"36.0\" font-size=\"16\" font-weight=\"800\" class=\"g-of\">33</text><rect x=\"8\" y=\"114\" width=\"208\" height=\"100\" rx=\"12\" class=\"g-z\"/><rect x=\"8\" y=\"114\" width=\"208\" height=\"100\" rx=\"12\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"70.8\" y=\"140.0\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">27 − 25 = 2</text><text x=\"70.8\" y=\"162.0\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">36 − 27 = 9</text><rect x=\"43\" y=\"174\" width=\"138\" height=\"26\" rx=\"13\" class=\"g-z\"/><rect x=\"43\" y=\"174\" width=\"138\" height=\"26\" rx=\"13\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"112\" y=\"191.5\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-mf\">2 &lt; 9, 5’e yakın</text><rect x=\"224\" y=\"114\" width=\"208\" height=\"100\" rx=\"12\" class=\"g-z\"/><rect x=\"224\" y=\"114\" width=\"208\" height=\"100\" rx=\"12\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"286.8\" y=\"140.0\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">33 − 25 = 8</text><text x=\"286.8\" y=\"162.0\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">36 − 33 = 3</text><rect x=\"259\" y=\"174\" width=\"138\" height=\"26\" rx=\"13\" class=\"g-z\"/><rect x=\"259\" y=\"174\" width=\"138\" height=\"26\" rx=\"13\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"328\" y=\"191.5\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-mf\">3 &lt; 8, 6’ya yakın</text></svg>"
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Karesi 256 olan tam sayıları bul ve {kok:256} ifadesinin değerini yaz.",
+   "cevap": "Çarpımlara bakılırsa 16 · 16 = 256 ve (−16) · (−16) = 256 olduğundan karesi 256 olan tam sayılar 16 ve −16’dır. Kök işlemi bu sayıların pozitif olanını verir: {kok:256} = {kok:{us:16|2}} = 16."
+  },
+  {
+   "soru": "Sayılar 1’den 500’e kadar sıralandığında içlerinde kaç tam kare sayı bulunur?",
+   "cevap": "Karesi 500’ü aşmayan tam sayılar aranır. Burada 22 · 22 = 484 olduğundan 484, 500’ü aşmaz; 23 · 23 = 529 ise 500’ü aşar. Karesi 500’ü aşmayan pozitif tam sayılar 1, 2, …, 22’dir. Bu yüzden 22 tam kare sayı vardır."
+  },
+  {
+   "soru": "Asal çarpanlarına ayırarak 576 ve 600 sayılarının tam kare olup olmadığını belirle.",
+   "cevap": "Asal çarpanlara ayırınca 576 = {us:2|6} · {us:3|2} bulunur. Burada {us:2|6} = {us:8|2} olduğundan 576 = {us:8|2} · {us:3|2} = {us:24|2} yazılır; bu nedenle 576 tam kare sayıdır. Aynı yolla 600 = {us:2|3} · 3 · {us:5|2} bulunur. Çarpanlardan 2 ve 3’ün üsleri tek olduğundan çarpım bir tam sayının karesi olarak yazılamaz ve 600 tam kare değildir."
+  },
+  {
+   "soru": "Alanı 225 m² olan kare biçimli bir bahçenin etrafı bir sıra çitle çevrilecektir. En az kaç metre çit gerekir?",
+   "cevap": "Bahçenin bir kenarı {kok:225} = {kok:{us:15|2}} = 15 m’dir. Etrafı bir kez dolaşmak için çevre uzunluğu kadar çit gerekir: 4 · 15 = 60 m."
+  },
+  {
+   "soru": "{kok:68} ifadesinin hangi iki ardışık doğal sayının arasında kaldığını belirle; ardından bu iki sayıdan hangisine yaklaştığını yaz.",
+   "cevap": "Kök içindeki 68 sayısı 64 ile 81 tam kareleri arasındadır: 64 < 68 < 81. Karekökler alınınca 8 < {kok:68} < 9 olur. Sayının 64’e uzaklığı 4, 81’e uzaklığı 13’tür; 64’e daha yakın olduğundan {kok:68}, 8’e daha yakındır."
+  },
+  {
+   "soru": "Alanı santimetrekare cinsinden doğal sayı olan kare biçimli bir kartın kenarı 7 cm ile 8 cm arasındadır. Kartın alanı en az ve en çok kaç santimetrekare olabilir?",
+   "cevap": "Kenar 7 ile 8 arasındaysa alan {us:7|2} = 49 ile {us:8|2} = 64 arasındadır; yani 49 < alan < 64 olur. Alan doğal sayı olduğundan en küçük değer 50, en büyük değer 63’tür."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "{kok:25 + 144} ifadesinin değeri kaçtır?",
+   "secenekler": [
+    "17",
+    "169",
+    "13",
+    "60"
+   ],
+   "dogru": 2,
+   "aciklama": "Kök işaretinin çizgisi toplamın tamamını kapsar; önce 25 + 144 = 169 hesaplanır, sonra {kok:169} = 13 bulunur. Seçeneklerden 17, kökleri ayrı ayrı alıp 5 + 12 yapmakla çıkar; 169 kök almayı unutmaktan, 60 ise toplama yerine çarpma yapmaktan gelir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "{kok:62} ifadesine en yakın doğal sayı hangisidir?",
+   "secenekler": [
+    "8",
+    "7",
+    "31",
+    "64"
+   ],
+   "dogru": 0,
+   "aciklama": "Kök içindeki 62 sayısı 49 ile 64 arasındadır; 49’a uzaklığı 13, 64’e uzaklığı 2’dir. Sayı 64’e daha yakın olduğundan {kok:62} ifadesi 7 ile 8 arasında yer alır ve 8’e daha yakındır. Diğer seçeneklerden 7 alt sınırdır, 31 sayının yarısıdır, 64 ise 8’in karesidir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Çevresi 68 cm olan bir karenin alanı kaç santimetrekaredir?",
+   "secenekler": [
+    "17",
+    "1156",
+    "4624",
+    "289"
+   ],
+   "dogru": 3,
+   "aciklama": "Kenar 68 : 4 = 17 cm’dir; alan 17 · 17 = 289 cm² olur. Seçeneklerden 17 kenar uzunluğudur, 1156 çevrenin yarısını kenar sanmaktan, 4624 ise çevrenin karesini almaktan gelir."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Her yargı için doğru ya da yanlış kararını ver; yanlış bulduklarının açıklamasını oku.",
+   "ifadeler": [
+    {
+     "metin": "Karekök alma işlemi −16 sayısına uygulanırsa sonuç olarak bir tam sayı elde edilmez.",
+     "dogru": true,
+     "aciklama": "Hangi tam sayıyı kendisiyle çarparsan çarp sonuç sıfırdan küçük olmaz; bu yüzden karesi −16 olan bir tam sayı yoktur."
+    },
+    {
+     "metin": "Bir doğal sayı tam kare değilse karekökü, o sayıyı alttan ve üstten sınırlayan tam karelerin kökleri arasında yer alır.",
+     "dogru": true,
+     "aciklama": "Örneğin 40 sayısı 36 ile 49 arasındadır; bu yüzden {kok:40} ifadesi 6 ile 7 arasındadır."
+    },
+    {
+     "metin": "Her kenarında 12 düğüm bulunan kare biçimli bir motifte toplam 24 düğüm vardır.",
+     "dogru": false,
+     "aciklama": "Kare motifte düğüm sayısı, bir kenardaki düğüm sayısının kendisiyle çarpımıdır: 12 · 12 = 144. Yargıdaki 24 ise çarpmak yerine toplamaktan gelir."
+    },
+    {
+     "metin": "Alanı 200 m² olan kare biçimli bir bahçenin bir kenarı tam sayı metredir.",
+     "dogru": false,
+     "aciklama": "Alanı veren 200 sayısı tam kare değildir; 196 ile 225 arasındadır. Kenar {kok:200} olur ve 14 ile 15 arasında kalır."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Kareköklü ifadeleri bulundukları aralıklarla eşleştir.",
+   "ciftler": [
+    [
+     "{kok:11}",
+     "3 ile 4"
+    ],
+    [
+     "{kok:29}",
+     "5 ile 6"
+    ],
+    [
+     "{kok:50}",
+     "7 ile 8"
+    ],
+    [
+     "{kok:105}",
+     "10 ile 11"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Alanı bilinen bir karenin kenar uzunluğu, alan sayısının ___ alınarak bulunur.",
+     "cevap": "karekökü"
+    },
+    {
+     "metin": "Kendisiyle çarpılan bir tam sayının çarpımı ___ olamaz; bu yüzden eksi işaretli bir sayı için kök alma işlemi yapılamaz.",
+     "cevap": "negatif"
+    },
+    {
+     "metin": "{kok:40} sayısı, 6 ve 7 gibi ardışık iki ___ sayı arasında yer alır.",
+     "cevap": "doğal"
+    }
+   ],
+   "fazla": [
+    "çevre"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir öğrenci {kok:45} ifadesinin 22,5 olduğunu, çünkü 45’in yarısı olduğunu söylüyor. Bu düşüncenin neden yanlış olduğunu, ifadenin yer aldığı iki ardışık doğal sayıyı bularak açıkla; ayrıca {kok:45} ifadesinin bu iki sayıdan hangisine daha yakın olduğunu belirt.",
+   "ipuclari": [
+    "Önce 45 sayısının hangi iki ardışık tam kare sayının arasında kaldığını bul.",
+    "Kök içindeki 45 sayısının bu karelerden hangisine daha yakın olduğuna bak."
+   ],
+   "cevap": "Önce kareler yazılır: 6 · 6 = 36 ve 7 · 7 = 49’dur. Buna göre 36 < 45 < 49 olduğundan 6 < {kok:45} < 7 olur; karekök 6 ile 7 arasında kalır ve 22,5 olamaz. Ayrıca 45’in 36’ya uzaklığı 9, 49’a uzaklığı 4’tür; 49’a daha yakın olduğu için {kok:45}, 7’ye daha yakındır."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "{kok:35} ile {kok:130} ifadeleri arasında kalan doğal sayılar kaç tanedir ve toplamları kaçtır?",
+   "ipuclari": [
+    "Önce 35 ve 130 sayılarının hangi ardışık tam kareler arasında olduğunu bul.",
+    "Bulduğun aralıklardan yararlanarak iki ifadenin arasında kalan doğal sayıları küçükten büyüğe yaz."
+   ],
+   "cevap": "Önce sayıların çevresindeki tam karelere bakılır: 25 < 35 < 36 olduğundan {kok:35} ifadesi 5 ile 6 arasında kalır. Benzer biçimde 121 < 130 < 144 olduğundan {kok:130} ifadesi 11 ile 12 arasında kalır. İki ifade arasında kalan doğal sayılar 6’dan 11’e kadardır ve altı tanedir. Uçlardan başlayarak eşleştirirsen 6 + 11 = 7 + 10 = 8 + 9 = 17 olur; üç çift bulunduğundan toplam 3 · 17 = 51’dir."
+  }
+ ],
+ "ozet": [
+  "Pozitif bir tam sayıyı kendisiyle çarpınca bulunan sayıya tam kare sayı denir; asal çarpanlarına ayrılan sayının çarpımı bir tam sayının karesi olarak yazılabiliyorsa sayı tam karedir.",
+  "Karekök alma, kare almanın tersidir: {kok:49} = 7, çünkü 7 · 7 = 49’dur. Kök işaretinin çizgisi içindeki ifadenin tamamını kapsar.",
+  "Eksi işaretli bir sayının karekökü bulunamaz; çünkü bir tam sayıyı kendisiyle çarpınca sonuç sıfırdan küçük çıkmaz.",
+  "Alanı verilen karenin kenar uzunluğu, alanın karekökü alınarak bulunur; çevre bu uzunluğun 4 katıdır.",
+  "Bir doğal sayı tam kare değilse karekökü, sayıyı alttan ve üstten sınırlayan tam karelerin kökleri olan ardışık iki doğal sayının arasındadır; hangisine yakın olduğu, sayının bu tam karelere uzaklığıyla belirlenir."
+ ]
+}
