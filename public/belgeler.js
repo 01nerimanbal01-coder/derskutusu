@@ -19,7 +19,15 @@ function belgeKarti(b, dersler) {
 }
 
 Promise.all([veri('belgeler.json'), ortakVeri]).then(([belgeler, { dersler }]) => {
-  if (!belgeler) return;
+  if (!belgeler) {
+    // Liste gelmedi (ağ hatası): boş sayfa yerine açık hata; süzgeç çalışmayacağından kapalı
+    $('#belge-gruplari').replaceChildren(el('div', { sinif: 'kap' }, el('div', { role: 'alert', sinif: 'bos' },
+      el('p', {}, 'Belge listesi yüklenemedi. Bağlantınızı kontrol edip yeniden deneyin.'),
+      el('button', { type: 'button', sinif: 'dugme', onclick: () => location.reload() }, 'Yeniden dene'))));
+    $('#grup-gecis')?.setAttribute('hidden', '');
+    for (const e of document.querySelectorAll('.belge-suzgec input, .belge-suzgec select')) e.disabled = true;
+    return;
+  }
   const kayit = [];   // süzgeç için: belge + kartı
   $('#grup-gecis').replaceChildren(...belgeler.gruplar.map((g) => el('a', { href: `#${g.kimlik}` }, g.ad)));
   $('#belge-gruplari').replaceChildren(...belgeler.gruplar.map((g, s) =>

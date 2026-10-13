@@ -4,7 +4,7 @@ import json, re
 from pathlib import Path
 from ozet_uret import e
 from sayfa_uret import sayfa, BETIK_SURUMLERI
-R=Path(__file__).resolve().parents[1]; P=R/'public'; V='202610132030'
+R=Path(__file__).resolve().parents[1]; P=R/'public'; V='202610132200'
 GUIDES={
  'ortaogretim':'https://osym.gov.tr/2026-kpss-ortaogretim-kilavuz-ve-basvuru-bilgileri',
  'on-lisans':'https://osym.gov.tr/2026-kpss-on-lisans-kilavuz-ve-basvuru-bilgileri',

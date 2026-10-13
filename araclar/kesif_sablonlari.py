@@ -1,9 +1,9 @@
 """Keşif sayfalarının ortak görünümü; içerik kaynaklarını değiştirmez."""
 import re
 
-CSS = '<link rel="stylesheet" href="/kesif.css?v=20261013-1">'
-JS = '<script src="/kesif.js?v=20261004-duzen1"></script>'
-RENK_CSS = '<link rel="stylesheet" href="/renkler.css?v=20261013-2" media="screen">'
+CSS = '<link rel="stylesheet" href="/kesif.css?v=20261013-2">'
+JS = '<script src="/kesif.js?v=20261013-1"></script>'
+RENK_CSS = '<link rel="stylesheet" href="/renkler.css?v=20261013-3" media="screen">'
 
 
 def renkli_sayfa(html, ad):
@@ -15,11 +15,13 @@ def renkli_sayfa(html, ad):
         'arapca.html': 'lacivert', 'kpss.html': 'sari',
         'tahta.html': 'yesil', 'goruntule.html': 'yesil',
         'ogrenci.html': 'mavi', 'ogretmen.html': 'yesil',
-    }.get(ad, 'mor' if ad.startswith('ozet/') else 'yesil' if ad.startswith('calisma/') else 'mavi')
+    }.get(ad, 'mor' if ad.startswith('ozet/') else 'yesil' if ad.startswith('calisma/') else 'sari' if ad.startswith('kpss/') else 'mavi')
     html = re.sub(r'(<body\b[^>]*?)\sdata-site-renk="[^"]*"', r'\1', html, count=1)
     html = re.sub(r'<body\b', f'<body data-site-renk="{renk}"', html, count=1)
     if 'href="/renkler.css?' not in html:
         html = html.replace('</head>', RENK_CSS + '\n</head>')
+    else:   # var olan bağlantının sürümü de yenilenir (çalışma kâğıtları eski sürümde kalmıştı)
+        html = re.sub(r'(href="/renkler\.css\?v=)[^"]+', lambda m: m[1] + re.search(r'v=([\w-]+)', RENK_CSS).group(1), html, count=1)
     return html
 
 

@@ -44,10 +44,10 @@ async function runCatalogChecks(commonSource, librarySource) {
   const metadata = { siniflar: {5: ['matematik']}, secmeli: {}, kademeler: [{ad: 'Ortaokul', siniflar: [5]}],
     dersler: {matematik: 'Matematik'}, turler: [{ad: 'Konu anlatımı', kitle: 'ogrenci'}] };
   const record = {sinif:5, ders:'matematik', tur:'Konu anlatımı', baslik:'Kesirler', aciklama:'Örnek ders', url:'/ozet/ornek.html', tarih:'2026-10-03', hafta:1};
-  const start = commonSource.indexOf('async function veri(');
+  const start = commonSource.indexOf('const veriSozleri = new Map();');
   const end = commonSource.indexOf('// Mobil menü', start);
   assert(start >= 0 && end > start, 'Shared loader boundaries missing');
-  const loader = commonSource.slice(start, end);
+  const loader = commonSource.slice(start, end);   // veri(), yol, kitleSuzgeci, konuyaEsle, ortakVeri
   async function load(mode) {
     return new Function('fetch', 'kok', loader + '\nreturn ortakVeri;')(async url => {
       const catalog = url.endsWith('icerikler.json');
@@ -74,8 +74,10 @@ async function runCatalogChecks(commonSource, librarySource) {
     const state = {reloads:0, replaced:[], url:null};
     const location = {search, pathname:page === 'class' ? '/sinif.html' : '/icerikler.html',
       reload:() => state.reloads++, replace:url => state.replaced.push(url)};
+    // kutuphane.js ortak.js'in kitleSuzgeci/icerikKarti/yol yardımcılarını kullanır: yükleyici kesitiyle birlikte çalıştırılır
+    const paylasilan = commonSource.slice(commonSource.indexOf('function icerikKarti'), commonSource.indexOf('const ortakVeri'));
     await new Function('$','el','simge','location','document','window','history','URLSearchParams','ortakVeri',
-      librarySource + '\nreturn ortakVeri.then(() => undefined);')(
+      paylasilan + '\n' + librarySource + '\nreturn ortakVeri.then(() => undefined);')(
         selector => nodes[selector.replace(/^#/, '')] ?? null,
         (tag, attrs, ...children) => new Node(tag, attrs, ...children),
         () => new Node('svg'), location, {title:''}, {}, {replaceState:(_a,_b,url) => {state.url = url;}},

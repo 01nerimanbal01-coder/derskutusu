@@ -11,7 +11,6 @@
   const KITLE = document.body.dataset.kitle === 'ogretmen' ? 'ogretmen' : 'ogrenci';
   const P = new URLSearchParams(location.search);
   const K = () => window.Kesif || { category: () => ({ color: 'mavi', icon: 'kitap' }), subjectColor: () => 'mavi', gradeColor: () => 'mavi' };
-  const yol = (a) => (/^(https?:)?\//.test(a) ? a : `/${a}`);
   const adres = (o) => `${location.pathname}?${new URLSearchParams(Object.entries(o).filter(([, v]) => v !== '' && v != null))}`;
   const sayiYaz = (n, ad) => `${n} ${ad}`;
   const ilkHarf = (ad) => String(ad).replace(/^T\.C\.\s*/, '').charAt(0);
@@ -52,14 +51,12 @@
   const yeniler = (liste) => [...liste].sort((a, b) => String(b.tarih || '').localeCompare(String(a.tarih || '')));
 
   // Kitle süzgeci: çalışma kâğıdı iki dalda da (dersler.json "turler" eşlemesi)
-  const kitleUyar = (dersler) => {
-    const turKitle = Object.fromEntries((dersler?.turler || []).map((t) => [t.ad, t.kitle]));
-    return (i) => (i.kitle || 'ogrenci') === KITLE || turKitle[i.tur] === KITLE;
-  };
+  const kitleUyar = (dersler) => kitleSuzgeci(dersler, KITLE);
 
   // Bu haftanın numarası (planın hafta başlangıç tarihlerinden)
   const buHafta = (haftalar) => {
-    const bugun = new Date().toISOString().slice(0, 10);
+    // Yerel tarih: toISOString UTC verir, Pazartesi 00:00–03:00 arasında (UTC+3) bir önceki haftayı gösterirdi
+    const t = new Date(), bugun = `${t.getFullYear()}-${String(t.getMonth() + 1).padStart(2, '0')}-${String(t.getDate()).padStart(2, '0')}`;
     let no = null;
     for (const [n, h] of Object.entries(haftalar || {})) if (h.bas && h.bas <= bugun && (no == null || Number(n) > no)) no = Number(n);
     return no;
@@ -120,7 +117,6 @@
   // ---- Yazılıya hazırlık (kullanıcı 13.10.2026): öğrenci dalında iki tür yazılı, YALNIZ öğrenci kâğıdı. Cevap anahtarı yalnız
   // öğretmen dalındadır (yazili.html); bu bölümlerde hiçbir yerde cevap bağlantısı üretilmez. Veri tek kaynaktan, sitenin JSON'larından:
   // yazili-kagitlari.json (senaryo), yazili-cikti.json (öğrenme çıktısı), senaryolar.json (soru sayısı). Yeni kâğıtlar kendiliğinden görünür.
-  const normal = (s) => String(s || '').toLocaleLowerCase('tr').replace(/[^a-zçğıöşü0-9]+/g, ' ').trim();
   let yaziliSoz;
   const yaziliVeri = () => (yaziliSoz = yaziliSoz || Promise.all([veri('yazili-kagitlari.json'), veri('yazili-cikti.json'), veri('senaryolar.json')])
     .then(([kagit, cikti, sen]) => ({ kagit, cikti, sen })));
@@ -138,12 +134,8 @@
     const cikti = (yz.cikti?.tablolar?.[a] || []).map((c) => ({ ...c, pdf: `${yz.cikti.klasor}${c.dosya}.pdf` }));
     return { senaryo, ulke: ug, deneme, cikti };
   };
-  // Kâğıdın konusu (çıktı tablosundaki "konu") yıllık plandaki konu adıyla eşlenir: önce tam ad, yoksa konu adı onu içerir.
-  const ciktiKonulari = (c, konular) => {
-    const ad = normal(c.konu);
-    const tam = konular.filter((k) => normal(k.ad) === ad);
-    return tam.length ? tam : konular.filter((k) => ad && normal(k.ad).includes(ad));
-  };
+  // Kâğıdın konusu (çıktı tablosundaki "konu") yıllık plandaki konu adıyla eşlenir (ortak.js konuyaEsle; yazili-duzen.js aynı kuralı kullanır)
+  const ciktiKonulari = (c, konular) => konuyaEsle(konular, c.konu);
   const pdfDugme = (href, etiket) => el('a', { sinif: 'dugme ana', href, download: '', 'aria-label': `Öğrenci kâğıdı (PDF): ${etiket}` }, simge('indir'), 'Öğrenci kâğıdı (PDF)');
   const yzSatir = (baslik, ayrinti, alt, dugme) => el('li', { sinif: 'yz-satir' },
     el('div', { sinif: 'yz-govde' }, el('strong', {}, baslik), ayrinti ? el('span', {}, ayrinti) : null, alt ? el('small', {}, alt) : null), dugme);
@@ -238,10 +230,11 @@
         kartlar(yeniler(ogr).slice(0, 6), dersler, { dersGoster: true })) : null);
   }
 
-  async function ogrenciDers({ dersler, icerikler }, n, d) {
+  async function ogrenciDers({ dersler, icerikler }, dizin, n, d) {
     const ad = dersler.dersler[d] || d;
     const renk = K().subjectColor(d);
-    const [agac, yz] = await Promise.all([veri(`agac/${n}-${d}.json`), yaziliVeri()]);
+    // Ağacı olmayan ders (9–12 İngilizce) için dosya istenmez: dizin.json'da yoksa 404 yerine doğrudan boş
+    const [agac, yz] = await Promise.all([dizin?.[`${n}-${d}`] ? veri(`agac/${n}-${d}.json`) : null, yaziliVeri()]);
     const ogr = icerikler.filter(kitleUyar(dersler)).filter((i) => Number(i.sinif) === n && i.ders === d);
     const haftalik = ogr.filter((i) => i.hafta);
     const dersDuzeyi = ogr.filter((i) => !i.hafta);
@@ -414,7 +407,7 @@
       // Ders o sınıfta okutuluyor mu (ör. ?sinif=5&ders=fizik değil); değilse sınıf sayfası açılır, adres düzeltilir
       const dersVar = n && d && ((v.dersler.siniflar[n] || []).includes(d) || (v.dersler.secmeli?.[n] || []).includes(d));
       if (n && d && !dersVar) history.replaceState(null, '', adres({ sinif: n }));
-      if (dersVar) await ogrenciDers(v, n, d);
+      if (dersVar) await ogrenciDers(v, dizin, n, d);
       else if (n) ogrenciSinif(v, dizin, n);
       else ogrenciKok(v, dizin);
     } else {
@@ -423,7 +416,10 @@
       else ogretmenKok(v);
     }
     // Bölüm sayfa açıldıktan sonra çizildiği için #yaziliya-hazirlik bağlantısıyla gelindiyse oraya kaydır
-    if (location.hash.length > 1) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
+    if (location.hash.length > 1) {
+      let hedef = null; try { hedef = decodeURIComponent(location.hash.slice(1)); } catch { /* bozuk yüzde kodu: çizilmiş sayfa bozulmaz */ }
+      if (hedef) document.getElementById(hedef)?.scrollIntoView();
+    }
   }).catch((hata) => {   // beklenmedik veri biçimi vb.: sonsuza dek "Yükleniyor…" kalmasın
     console.error(hata);
     yerles(bolum('', bos('Sayfa açılamadı', 'Veri okunurken bir sorun oldu. Sayfayı yenileyin ya da sınıfınızı yeniden seçin.', el('a', { sinif: 'dugme ana', href: location.pathname }, 'Başa dön'))));

@@ -3,30 +3,12 @@
 // Dışarıdan (YouTube, Instagram, Facebook) hiçbir şey ziyaretçi tıklamadan yüklenmez.
 
 const tarih = (t) => (t ? el('time', { datetime: t }, tarihBicim.format(new Date(t))) : null);
-const bosKutu = (metin) => el('div', { sinif: 'bos' }, metin);
 
 function sonEklenenler(icerikler, dersler) {
   const kartlar = $('#kartlar');
   const liste = [...icerikler].sort((a, b) => String(b.tarih || '').localeCompare(String(a.tarih || ''))).slice(0, 6);
   if (!liste.length) { kartlar.hidden = true; $('#icerik-yakinda').hidden = false; return; }
   kartlar.replaceChildren(...liste.map((i) => icerikKarti(i, dersler)));
-}
-
-function icerikKarti(i, dersler) {
-  const dersAd = dersler?.dersler?.[i.ders] || i.ders;
-  const adres = i.dosya || i.baglanti;
-  return el('article', { sinif: 'kart', 'data-renk': window.Kesif?.category(i.tur).color || 'mavi' },
-    el('div', { sinif: 'ust-bilgi' },
-      i.sinif && el('span', { sinif: 'etiket' }, `${i.sinif}. sınıf`),
-      dersAd && el('span', { sinif: 'etiket tur' }, dersAd),
-      i.tur && el('span', { sinif: `etiket ${i.kitle === 'ogretmen' ? 'ogretmen' : 'tur'}` }, i.tur)),
-    el('h3', {}, i.baslik),
-    i.aciklama && el('p', {}, i.aciklama),
-    i.hazirla ? el('a', { sinif: 'ac', href: `/${i.hazirla}` }, 'Hazırla ve indir', simge('ok'))
-      : i.goruntule ? [el('a', { sinif: 'ac', href: `/${i.goruntule}` }, 'Aç', simge('ok')),
-        i.tur === 'Ders kitabı' && el('a', { sinif: 'ac', href: `/${i.goruntule}&yerel=1`, title: 'Kitabın bilgisayarınızdaki PDF dosyasını açar; internet beklenmez' }, 'Bilgisayardan aç')]
-      : adres && el('a', { sinif: 'ac', href: adres, target: i.dosya ? null : '_blank', rel: 'noopener', download: i.dosya ? '' : null },
-        i.dosya ? 'İndir' : 'Aç', simge('ok')));
 }
 
 function videolariGoster(v) {
@@ -105,5 +87,5 @@ function facebookGoster(ayar) {
   facebookGoster(ayar);
   // Akışta gösterilecek kayıt yokken "son güncelleme" satırı yalnız eski bir tarih gösterir; o zaman yazılmaz.
   const son = [yt?.videolar?.length && yt.guncelleme, ig?.gonderiler?.length && ig.guncelleme].filter(Boolean).sort().pop();
-  if (son && !isNaN(new Date(son))) $('#guncelleme').textContent = `Sosyal medya akışı son güncelleme: ${tarihBicim.format(new Date(son))}`;
+  if (son && !isNaN(new Date(son))) $('#guncelleme').textContent = `Sosyal medya akışındaki son yenilik: ${tarihBicim.format(new Date(son))}`;   // akış listesi en son bu tarihte değişti (akis_guncelle.py)
 })();

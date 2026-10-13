@@ -30,7 +30,7 @@
 body > .ust { border-top:0; border-bottom:1px solid var(--cizgi); }
 body > .ust::before { content:''; position:absolute; inset:0 0 auto; height:4px; background:var(--site-serit); pointer-events:none; }
 body .menu > a[data-renk] { background:var(--kart-zemin); color:var(--kart-ana); border:1px solid var(--kart-cizgi); font-weight:650; min-height:44px; display:flex; align-items:center; justify-content:center; padding:8px 11px; }
-body .menu > a[data-renk]:hover { background:var(--kart-ana); color:var(--kart-ikon-yazi); }
+body .menu > a[data-renk]:hover, body .menu > a[data-renk][aria-current="page"] { background:var(--kart-ana); color:var(--kart-ikon-yazi); border-color:var(--kart-ana); }
 body .ust-arama input { border-color:var(--kart-cizgi); }
 body .menu-dugme { border-color:var(--kart-cizgi); background:var(--kart-zemin); flex:none; }
 body > .alt { position:relative; background:var(--zemin-2); border-top:0; }
@@ -124,7 +124,7 @@ body :is(.kesif-rota,.kesif-dersler,.menu,.kesif-arac-links) a:focus-visible { o
 @media (prefers-reduced-motion:reduce) { .kesif-kategori:hover { transform:none; } }
 @media (forced-colors:active) {
  body .menu > a[data-renk], .kesif-kategori, .kesif-rota a, .kesif-ders-baglari a { border:1px solid LinkText; }
- body .sinif-gecis a[aria-current="page"], body .sekmeler .sekme[aria-pressed="true"] { outline:2px solid Highlight; }
+ body .sinif-gecis a[aria-current="page"], body .sekmeler .sekme[aria-pressed="true"], body .menu > a[data-renk][aria-current="page"] { outline:2px solid Highlight; }
 }
 
 @media (prefers-color-scheme:dark) { :root:not([data-theme="light"]) body.kesif-page { --vurgu:#B3CEFF; --vurgu-koyu:#B3CEFF; --vurgu-acik:#1D3152; } }

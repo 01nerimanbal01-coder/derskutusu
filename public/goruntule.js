@@ -26,6 +26,8 @@ let surum = 0;          // yeni bir açılış eskisini geçersiz kılar (intern
 async function pdfGoster(alan, kaynak, baslik, boyut, secenek = {}) {
   const benim = ++surum;
   if (etkin) { etkin.gozcu?.disconnect(); etkin.doc?.destroy?.(); etkin = null; }
+  // Açık kalem katmanı bu kabın içindedir: belge değişirken kapatılıp kaldırılır (yeni belgede yeni kaba bağlanır)
+  window.kalemHedef = null; window.kalemKapat?.();
   alan.classList.add('pdf-mod');
   const kaydir = el('div', { sinif: 'pdf-kaydir', tabindex: '0', 'aria-label': `${baslik} sayfaları` });
   const sayfalar = el('div', { sinif: 'pdf-sayfalar' });
@@ -229,7 +231,14 @@ veri('belgeler.json').then(async (belgeler) => {
   const ara = new URLSearchParams(location.search);
   const id = ara.get('b');
   let grup = null;
-  const b = belgeler?.gruplar.flatMap((g) => g.belgeler.map((x) => ((x.kimlik === id && (grup = g)), x))).find((x) => x.kimlik === id);
+  if (!belgeler) {
+    // Liste gelmedi (ağ hatası): "listede yok" değil, yeniden deneme
+    $('#g-baslik').textContent = 'Belge listesi yüklenemedi';
+    $('#g-alan').replaceChildren(el('div', { sinif: 'g-uyari', role: 'alert' }, el('p', {}, 'Bağlantınızı kontrol edip yeniden deneyin. '),
+      el('button', { sinif: 'dugme ana', type: 'button', onclick: () => location.reload() }, 'Yeniden dene'), ' ', el('a', { sinif: 'dugme', href: '/belgeler.html' }, 'Resmî belgelere dön')));
+    return;
+  }
+  const b = belgeler.gruplar.flatMap((g) => g.belgeler.map((x) => ((x.kimlik === id && (grup = g)), x))).find((x) => x.kimlik === id);
   if (!b) {
     $('#g-baslik').textContent = 'Belge bulunamadı';
     $('#g-alan').replaceChildren(el('div', { sinif: 'g-uyari' }, el('p', {}, 'Aradığınız belge listede yok. '), el('a', { sinif: 'dugme ana', href: '/belgeler.html' }, 'Resmî belgelere dön')));
@@ -246,6 +255,7 @@ veri('belgeler.json').then(async (belgeler) => {
   const secenek = { kimlik: b.kimlik, sayfa: ara.get('s') };
   let kendimiz = false;
   let yerelPanel = false;          // dosya seçme paneli açıkken kalem/tam ekran gösterilmez (ortada belge yok)
+  let pdfBekleniyor = false;       // PDF çizilene kadar "Kalemle yaz" gösterilmez: kalem erken basılırsa pencereye bağlanır, PDF'le kaymazdı
 
   // Bilgisayardan aç: seçilen PDF yalnız bu tarayıcıda açılır, hiçbir yere gönderilmez.
   const dosyaSec = el('input', { type: 'file', accept: 'application/pdf,.pdf', hidden: true });
@@ -266,12 +276,15 @@ veri('belgeler.json').then(async (belgeler) => {
       return;
     }
     $('#g-bilgi').textContent = `Bilgisayardaki dosya: ${f.name} · açılıyor…`;
+    pdfBekleniyor = true; dugmeleriCiz();
     const sonuc = await pdfGoster(alan, { veri: await f.arrayBuffer(), ad: f.name }, b.baslik, null, secenek);
+    pdfBekleniyor = false;
     if (sonuc === true) {
       kendimiz = true;
       $('#g-bilgi').textContent = `Bilgisayardaki dosya: ${f.name}${bilgiMetni ? ' · ' + bilgiMetni : ''}`;
       dugmeleriCiz();
     } else if (sonuc === false) {
+      dugmeleriCiz();
       $('#g-bilgi').textContent = bilgiMetni;
       alan.replaceChildren(el('div', { sinif: 'g-uyari' }, el('h2', {}, 'Dosya açılamadı'),
         el('p', {}, `“${f.name}” okunamadı; dosya bozuk ya da tam inmemiş olabilir.`), yerelDugme(true)));
@@ -281,19 +294,22 @@ veri('belgeler.json').then(async (belgeler) => {
   function dugmeleriCiz() {
     const dugmeler = [
       kendimiz && el('button', { sinif: 'dugme ana', type: 'button', 'data-kalem-dugme': '', onclick: () => window.kalemAc?.() }, el('span', { 'aria-hidden': 'true' }, '✎'), 'Kalemle yaz'),
-      !kendimiz && !yerelPanel && b.cerceve && el('button', { sinif: 'dugme ana', type: 'button', 'data-kalem-dugme': '', onclick: () => window.kalemAc?.() }, el('span', { 'aria-hidden': 'true' }, '✎'), 'Kalemle yaz'),
+      !kendimiz && !yerelPanel && !pdfBekleniyor && b.cerceve && el('button', { sinif: 'dugme ana', type: 'button', 'data-kalem-dugme': '', onclick: () => window.kalemAc?.() }, el('span', { 'aria-hidden': 'true' }, '✎'), 'Kalemle yaz'),
       uzak && yerelDugme(false),
       b.dosya && el('a', { sinif: 'dugme', href: `/${b.dosya}`, download: '' }, simge('indir'), 'İndir'),
       resmi && el('a', { sinif: 'dugme', href: resmi, target: '_blank', rel: 'noopener' }, 'Resmî kaynak', simge('ok')),
       (kendimiz || (b.cerceve && !yerelPanel)) && el('button', { sinif: 'dugme', type: 'button', onclick: () => (document.fullscreenElement ? document.exitFullscreen() : alan.requestFullscreen?.()) }, simge('buyut'), 'Tam ekran'),
     ];
     $('#g-dugmeler').replaceChildren(...dugmeler.filter(Boolean));
+    window.kalemDugmeGozle?.($('#g-dugmeler [data-kalem-dugme]'));   // üstteki düğme ekrandayken sağ alttaki kopya gizlenir (tahta.js)
   }
 
   const internettenAc = async () => {
     yerelPanel = false;
+    pdfBekleniyor = true; dugmeleriCiz();
     const sonuc = await pdfGoster(alan, pdf, b.baslik, b.boyut, { ...secenek, yerelDugme: uzak ? () => yerelDugme(true) : null });
     if (sonuc === 'iptal') return;              // bu arada bilgisayardan açıldı
+    pdfBekleniyor = false;
     kendimiz = sonuc === true;
     dugmeleriCiz();
     if (kendimiz) return;

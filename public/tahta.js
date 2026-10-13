@@ -580,11 +580,15 @@ if (typeof document !== 'undefined') {
     ac.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l4-1 10-10-3-3L5 16l-1 4zM14 5l3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Kalemle yaz</span>';
     document.body.append(ac);
     sabitBoy(ac, 'sag');
-    let t = null, kap = null;
-    const kapat = () => { kap.hidden = true; ac.hidden = false; document.body.classList.remove('kalem-acik'); };
+    let t = null, kap = null, kapHedef = null;
+    const kapat = () => { if (kap) kap.hidden = true; ac.hidden = false; document.body.classList.remove('kalem-acik'); };
+    // Belge değişince (goruntule.js yeni PDF çizer) katman DOM'dan düşer ya da hedef kap değişir: bir sonraki açılışta yeniden kurulur
+    window.kalemKapat = () => { if (kap && !kap.hidden) kapat(); };
     ac.addEventListener('click', () => {
+      const hedef = window.kalemHedef || null;   // goruntule.js PDF'i kendisi çizerse kabını bildirir
+      if (kap && (!kap.isConnected || kapHedef !== hedef)) { kap.remove(); kap = null; t = null; window.kalemAcik = null; }
       if (!kap) {
-        const hedef = window.kalemHedef;       // goruntule.js PDF'i kendisi çizerse kabını bildirir
+        kapHedef = hedef;
         kap = document.createElement('div');
         kap.className = hedef ? 'kalem-katman yerel' : 'kalem-katman';
         (hedef ? hedef.kap : document.body).append(kap);
@@ -605,11 +609,16 @@ if (typeof document !== 'undefined') {
       }
     });
     window.kalemAc = () => ac.click();
-    // Konu sayfasının başlığındaki "Kalemle yaz" düğmesi ekrandayken sağ alttaki kopyası gizlenir (aynı işi iki düğme yapmaz)
-    const sayfaDugmesi = document.querySelector('button[onclick*="kalemAc"], [data-kalem-dugme]');   // goruntule.js düğmesini el() ile kurar
-    if (sayfaDugmesi && 'IntersectionObserver' in window) {
-      new IntersectionObserver(([g]) => ac.classList.toggle('gizli', g.isIntersecting)).observe(sayfaDugmesi);
-    }
+    // Konu sayfasının başlığındaki "Kalemle yaz" düğmesi ekrandayken sağ alttaki kopyası gizlenir (aynı işi iki düğme yapmaz).
+    // goruntule.js düğmesini veri geldikten sonra kurar ve her çizişte kalemDugmeGozle ile bildirir.
+    let gozcu = null;
+    window.kalemDugmeGozle = (dugme) => {
+      gozcu?.disconnect(); gozcu = null;
+      if (!dugme || !('IntersectionObserver' in window)) { ac.classList.remove('gizli'); return; }
+      gozcu = new IntersectionObserver(([g]) => ac.classList.toggle('gizli', g.isIntersecting));
+      gozcu.observe(dugme);
+    };
+    window.kalemDugmeGozle(document.querySelector('button[onclick*="kalemAc"], [data-kalem-dugme]'));
   }
 }
 

@@ -13,7 +13,7 @@ from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'goruntule.js': '20261013-1', 'belgeler.js': '20261013-1', 'agac.js': '20261013-4', 'yazili.js': '20261013-1', 'ortak.js': '20261013-2', 'tahta.js': '20261013-4', 'etkinlik.js': '20261003-1', 'arama.js': '20261013-3', 'kutuphane.js': '20261013-4', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-2', 'test.js': '20261013-2'}
+BETIK_SURUMLERI = {'goruntule.js': '20261013-2', 'belgeler.js': '20261013-2', 'agac.js': '20261013-5', 'yazili.js': '20261013-1', 'ortak.js': '20261013-3', 'tahta.js': '20261013-5', 'etkinlik.js': '20261003-1', 'arama.js': '20261013-4', 'kutuphane.js': '20261013-5', 'arapca.js': '202610061430', 'yazili-duzen.js': '20261013-3', 'test.js': '20261013-2'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
@@ -40,7 +40,7 @@ AGAC_CSS = '<link rel="stylesheet" href="/agac.css?v=20261013-5">'
 def kitle_bul(ad):
     if ad.startswith(('ozet/', 'calisma/')) or ad in KITLE_OGRENCI:
         return 'ogrenci'
-    return 'ogretmen' if ad in KITLE_OGRETMEN else ''
+    return 'ogretmen' if ad in KITLE_OGRETMEN or ad.startswith('kpss/') else ''
 
 
 def kitle_ekle(html, ad):
@@ -52,7 +52,16 @@ def kitle_ekle(html, ad):
     return html
 
 
+def kisalt(metin, sinir=160):
+    """Arama sonucunda kesilmesin: meta description sözcük sınırından en çok 160 karakter (og:description aynı metni alır)."""
+    metin = ' '.join(str(metin).split())
+    if len(metin) <= sinir:
+        return metin
+    return metin[:sinir - 1].rsplit(' ', 1)[0].rstrip(' ,;:.') + '…'
+
+
 def sayfa(ad, baslik, aciklama, govde, betikler=(), kanonik=True):
+    aciklama = kisalt(aciklama)
     kan = f'<link rel="canonical" href="https://derskutusu.com/{ad}">\n' if kanonik else '<meta name="robots" content="noindex">\n'
     js = ''.join(f'<script src="/{b}?v={BETIK_SURUMLERI.get(b, SURUM)}"></script>\n' for b in ('ortak.js', *betikler, 'arama.js', 'tahta.js'))
     if ad == 'icerikler.html':
@@ -243,7 +252,7 @@ GOVDE = {
       </div>
       <div class="y-kaydir" id="y-tablo"></div>
     </div>
-  </section>''', ('yazili.js', 'yazili-cikti.js', 'yazili-duzen.js')),
+  </section>''', ('yazili.js', 'yazili-duzen.js')),
     'tahta.html': ('Akıllı tahta', 'Tarayıcıda çalışan akıllı tahta: kalem, fosforlu kalem, silgi, renkler, kareli ve çizgili zemin, sayfalar.', '''  <section class="tahta-sayfa">
     <div class="kap tahta-ustbar">
       <h1>Akıllı tahta</h1>

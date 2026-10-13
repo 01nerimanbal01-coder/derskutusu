@@ -45,9 +45,9 @@
   }
 }
 </script>
-<link rel="stylesheet" href="stil.css?v=202610132030">
-<link rel="stylesheet" href="/kesif.css?v=20261013-1">
-<link rel="stylesheet" href="/renkler.css?v=20261013-2" media="screen">
+<link rel="stylesheet" href="stil.css?v=202610132200">
+<link rel="stylesheet" href="/kesif.css?v=20261013-2">
+<link rel="stylesheet" href="/renkler.css?v=20261013-3" media="screen">
 <link rel="stylesheet" href="/agac.css?v=20261013-5">
 </head>
 <body data-site-renk="mavi" class="kesif-page">
@@ -117,7 +117,7 @@
     <div class="kap">
       <div class="bolum-bas">
         <div><p class="ust-baslik">Kütüphane</p><h2>Son eklenenler</h2></div>
-        <a class="tumu" href="icerikler.html">Tümünü gör<svg><use href="#s-ok"/></svg></a>
+        <a class="tumu" href="icerikler.html">Tümünü gör<svg aria-hidden="true"><use href="#s-ok"/></svg></a>
       </div>
       <div class="kartlar" id="kartlar"></div>
       <div class="yakinda" id="icerik-yakinda" hidden>
@@ -126,7 +126,7 @@
           <h3>İlk içerikler hazırlanıyor</h3>
           <p>Konu anlatımları, soru çözümleri ve öğretmen dosyaları eklendikçe burada ve sınıf sayfalarında listelenecek. Yeni içeriklerden haberdar olmak için bizi takip edin.</p>
         </div>
-        <a class="dugme ana" data-sosyal="youtube" target="_blank" rel="noopener" hidden><svg><use href="#s-youtube"/></svg>Abone ol</a>
+        <a class="dugme ana" data-sosyal="youtube" target="_blank" rel="noopener" hidden><svg aria-hidden="true"><use href="#s-youtube"/></svg>Abone ol</a>
       </div>
     </div>
   </section>
@@ -139,38 +139,38 @@
       </div>
       <div class="takip-izgara">
         <a class="takip yt" data-sosyal="youtube" target="_blank" rel="noopener" hidden>
-          <span class="takip-simge"><svg><use href="#s-youtube"/></svg></span>
+          <span class="takip-simge"><svg aria-hidden="true"><use href="#s-youtube"/></svg></span>
           <span class="takip-ad">YouTube</span><span class="takip-kullanici" data-kullanici="youtube"></span>
           <span class="takip-metin">Konu anlatımı ve soru çözümü videoları</span>
-          <span class="takip-eylem">Abone ol<svg><use href="#s-ok"/></svg></span>
+          <span class="takip-eylem">Abone ol<svg aria-hidden="true"><use href="#s-ok"/></svg></span>
         </a>
         <a class="takip ig" data-sosyal="instagram" target="_blank" rel="noopener" hidden>
-          <span class="takip-simge"><svg><use href="#s-instagram"/></svg></span>
+          <span class="takip-simge"><svg aria-hidden="true"><use href="#s-instagram"/></svg></span>
           <span class="takip-ad">Instagram</span><span class="takip-kullanici" data-kullanici="instagram"></span>
           <span class="takip-metin">Kısa videolar ve günlük sorular</span>
-          <span class="takip-eylem">Takip et<svg><use href="#s-ok"/></svg></span>
+          <span class="takip-eylem">Takip et<svg aria-hidden="true"><use href="#s-ok"/></svg></span>
         </a>
         <a class="takip fb" data-sosyal="facebook" target="_blank" rel="noopener" hidden>
-          <span class="takip-simge"><svg><use href="#s-facebook"/></svg></span>
+          <span class="takip-simge"><svg aria-hidden="true"><use href="#s-facebook"/></svg></span>
           <span class="takip-ad">Facebook</span><span class="takip-kullanici" data-kullanici="facebook"></span>
           <span class="takip-metin">Duyurular ve paylaşımlar</span>
-          <span class="takip-eylem">Beğen<svg><use href="#s-ok"/></svg></span>
+          <span class="takip-eylem">Beğen<svg aria-hidden="true"><use href="#s-ok"/></svg></span>
         </a>
       </div>
 
       <div class="akis-blok" id="video-blok" hidden>
-        <h3 class="akis-baslik"><svg class="yt-renk"><use href="#s-youtube"/></svg>Son videolar</h3>
+        <h3 class="akis-baslik"><svg aria-hidden="true" class="yt-renk"><use href="#s-youtube"/></svg>Son videolar</h3>
         <div class="videolar" id="video-listesi"></div>
         <p class="not">Oynat düğmesine basınca video YouTube'dan yüklenir.</p>
       </div>
 
       <div class="akis-blok" id="ig-blok" hidden>
-        <h3 class="akis-baslik"><svg class="ig-renk"><use href="#s-instagram"/></svg>Instagram paylaşımları</h3>
+        <h3 class="akis-baslik"><svg aria-hidden="true" class="ig-renk"><use href="#s-instagram"/></svg>Instagram paylaşımları</h3>
         <div class="gonderiler" id="ig-listesi"></div>
       </div>
 
       <div class="akis-blok" id="fb-blok" hidden>
-        <h3 class="akis-baslik"><svg class="fb-renk"><use href="#s-facebook"/></svg>Facebook paylaşımları</h3>
+        <h3 class="akis-baslik"><svg aria-hidden="true" class="fb-renk"><use href="#s-facebook"/></svg>Facebook paylaşımları</h3>
         <div class="fb-alan" id="fb-alan"></div>
       </div>
     </div>
@@ -184,10 +184,10 @@
         <p class="giris-metin">Ders Kutusu; 5'ten 12. sınıfa kadar bütün dersler için konu anlatımlarını, soru çözümlerini ve kısa videoları, öğretmenler için de yıllık planları, yazılı sorularını ve çalışma kâğıtlarını tek bir yerde toplar. Amacımız dersleri sade bir dille, adım adım ve günlük yaşamdan örneklerle anlatmak.</p>
       </div>
       <ul class="degerler">
-        <li><svg><use href="#s-onay"/></svg><div><strong>Sade anlatım</strong><span>Kısa cümleler, açık adımlar.</span></div></li>
-        <li><svg><use href="#s-onay"/></svg><div><strong>Günlük yaşamdan örnekler</strong><span>Konular tanıdık durumlarla bağlantılı.</span></div></li>
-        <li><svg><use href="#s-onay"/></svg><div><strong>Öğretmenlere hazır dosyalar</strong><span>Yıllık plan, yazılı ve çalışma kâğıdı.</span></div></li>
-        <li><svg><use href="#s-onay"/></svg><div><strong>Her yerden erişim</strong><span>Telefonda, tablette ve bilgisayarda.</span></div></li>
+        <li><svg aria-hidden="true"><use href="#s-onay"/></svg><div><strong>Sade anlatım</strong><span>Kısa cümleler, açık adımlar.</span></div></li>
+        <li><svg aria-hidden="true"><use href="#s-onay"/></svg><div><strong>Günlük yaşamdan örnekler</strong><span>Konular tanıdık durumlarla bağlantılı.</span></div></li>
+        <li><svg aria-hidden="true"><use href="#s-onay"/></svg><div><strong>Öğretmenlere hazır dosyalar</strong><span>Yıllık plan, yazılı ve çalışma kâğıdı.</span></div></li>
+        <li><svg aria-hidden="true"><use href="#s-onay"/></svg><div><strong>Her yerden erişim</strong><span>Telefonda, tablette ve bilgisayarda.</span></div></li>
       </ul>
     </div>
   </section>
@@ -200,7 +200,7 @@
           <h2>Soru ve önerileriniz için yazın</h2>
           <p>Görüşlerinizi, içerik önerilerinizi ve iş birliği tekliflerinizi e-postayla bize iletebilirsiniz.</p>
         </div>
-        <a class="dugme ana buyuk" data-eposta><svg><use href="#s-eposta"/></svg><span>info@derskutusu.com</span></a>
+        <a class="dugme ana buyuk" data-eposta><svg aria-hidden="true"><use href="#s-eposta"/></svg><span>info@derskutusu.com</span></a>
       </div>
     </div>
   </section>
@@ -243,11 +243,11 @@
 </footer>
 
 <noscript><p class="kap">Bu sayfadaki bazı içerikler JavaScript ile yüklenir.</p></noscript>
-<script src="ortak.js?v=20261013-2"></script>
-<script src="/kesif.js?v=20261004-duzen1"></script>
-<script src="akis.js?v=20261013-1"></script>
-<script src="arama.js?v=20261013-3"></script>
-<script src="tahta.js?v=20261013-4"></script>
+<script src="ortak.js?v=20261013-3"></script>
+<script src="/kesif.js?v=20261013-1"></script>
+<script src="akis.js?v=20261013-2"></script>
+<script src="arama.js?v=20261013-4"></script>
+<script src="tahta.js?v=20261013-5"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fffb5e8a709947ee9ba14ea753d96275"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

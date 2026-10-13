@@ -273,7 +273,7 @@
     const s = v.siniflar.find((x) => x.sinif === Number(p.get('s'))) || v.siniflar[0];
     durum.sinif = s.sinif;
     durum.tema = (s.temalar.find((t) => t.no === Number(p.get('t'))) || s.temalar[0]).no;
-    if (CIZ[p.get('k')]) durum.kip = p.get('k');
+    if (Object.prototype.hasOwnProperty.call(CIZ, p.get('k'))) durum.kip = p.get('k');   // ?k=__proto__ kip sayılmaz
     secimKur(); ciz();
     $('#k-sifirla').onclick = () => {
       if (!confirm('Bu temadaki "öğrendim" işaretleri silinsin mi?')) return;

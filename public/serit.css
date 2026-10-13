@@ -25,14 +25,22 @@
   border-radius: 12px; background: var(--yuzey); color: var(--metin); transition: border-color .15s, box-shadow .15s; }
 .serit-kart:hover { text-decoration: none; border-color: var(--ders, var(--vurgu)); box-shadow: var(--golge); }
 .serit-ust { display: flex; justify-content: space-between; gap: 8px; font-size: 11px; font-weight: 800; letter-spacing: .04em; }
+/* Tür etiketi 11 px kalın: ders payı %60 (%72 ile amber 3,7:1, koyu temada 3,8:1 kalıyordu) */
 .serit-tur { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-transform: uppercase;
-  color: color-mix(in srgb, var(--ders, var(--vurgu)) 72%, var(--metin)); }
+  color: color-mix(in srgb, var(--ders, var(--vurgu)) 60%, var(--metin)); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .serit-tur { color: color-mix(in srgb, var(--ders, var(--vurgu)) 50%, var(--metin)); } }
+:root[data-theme="dark"] .serit-tur { color: color-mix(in srgb, var(--ders, var(--vurgu)) 50%, var(--metin)); }
 .serit-ust time { flex: none; color: var(--soluk); font-weight: 600; letter-spacing: 0; }
 .serit-ad { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 13.5px; font-weight: 700; line-height: 1.3; }
 .serit-alt { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 12px; line-height: 1.35; color: var(--soluk); }
 .serit-yazili { --ders: var(--sicak); }
 
 .serit:hover .serit-iz, .serit:focus-within .serit-iz, .serit.durdu .serit-iz { animation-play-state: paused; }
+/* Klavye odağı şeritteyken (ortak.js 'odakta'): kayma sıfırlanır, pencere kaydırılabilir olur; odaklanan kart görünür alana getirilir */
+.serit.odakta .serit-iz { animation: none; transform: none; }
+.serit.odakta .serit-pencere { overflow: auto hidden; scrollbar-width: thin; -webkit-mask-image: none; mask-image: none; }
+.serit.odakta .serit-kopya { display: none; }
+@media (min-width: 1440px) { .serit.odakta .serit-pencere { overflow: hidden auto; } }
 @keyframes serit-yatay { to { transform: translateX(-50%); } }
 @keyframes serit-dikey { to { transform: translateY(-50%); } }
 

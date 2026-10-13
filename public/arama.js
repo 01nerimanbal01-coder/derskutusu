@@ -496,8 +496,11 @@ if (typeof module !== 'undefined') module.exports = Arama;
 // ---------- arayüz ----------
 if (typeof document !== 'undefined') {
   const TUR_ETIKET = { sayfa: 'Sayfa', icerik: 'İçerik', belge: 'Resmî belge' };
-  let hazir = null;
-  const dizinHazirla = () => (hazir ||= Promise.all([ortakVeri, veri('belgeler.json'), veri('kpss.json')]).then(([v, belgeler, kpss]) => Arama.kur({ ...v, belgeler, kpss })));
+  let hazir = null, icerikEksik = false;   // icerikler.json gelmediyse sonuçlar yalnız sayfa/belge kayıtlarıdır: kullanıcıya söylenir
+  const dizinHazirla = () => (hazir ||= Promise.all([ortakVeri, veri('belgeler.json'), veri('kpss.json')]).then(([v, belgeler, kpss]) => {
+    icerikEksik = v.iceriklerYuklendi === false;
+    return Arama.kur({ ...v, belgeler, kpss });
+  }));
 
   const vurgula = (metin, sorgu) => {
     const parca = [];
@@ -586,6 +589,7 @@ if (typeof document !== 'undefined') {
       const notlar = [];
       if (r.sorgu.duzeltmeler.length) notlar.push(`Yazım düzeltildi: ${r.sorgu.duzeltmeler.map(([a, b]) => `“${a}” → “${b}”`).join(', ')}`);
       if (r.not) notlar.push(r.not);
+      if (icerikEksik) notlar.push('İçerik listesi yüklenemedi; sonuçlar eksik olabilir. Sayfayı yenileyip yeniden deneyin.');
       $('#arama-not').replaceChildren(...notlar.map((n) => el('p', {}, n)));
       $('#arama-sayi').textContent = q ? (r.sonuclar.length ? `${r.sonuclar.length} sonuç` : 'Sonuç bulunamadı') : '';
       $('#arama-bos').hidden = !!(q && r.sonuclar.length);

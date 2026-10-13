@@ -12,8 +12,8 @@ if (sinifYonlendirme) {
 
 // Ortak içerikler (ör. çalışma kâğıtları) iki kitlede de sayılır ve listelenir.
 function kitleDenetleyici(dersler) {
-  const turKitle = Object.fromEntries(dersler.turler.map((t) => [t.ad, t.kitle]));
-  return (i, k) => (i.kitle || 'ogrenci') === k || turKitle[i.tur] === k;
+  const suzgec = { ogrenci: kitleSuzgeci(dersler, 'ogrenci'), ogretmen: kitleSuzgeci(dersler, 'ogretmen') };
+  return (i, k) => (suzgec[k] || kitleSuzgeci(dersler, k))(i);
 }
 
 // Kütüphane araması: arama.js'in ek, ünsüz yumuşaması ve yazım hatasına toleranslı eşleşmesi (kesirler → Kesir, kagit → kâğıdı);
@@ -24,36 +24,6 @@ const aramaEslesir = (metin, sorgu) => {
   const m = aramaDuz(metin); return aramaDuz(sorgu).split(' ').filter(Boolean).every((s) => m.includes(s));
 };
 
-function icerikKarti(i, dersler) {
-  const dersAd = dersler.dersler[i.ders] || i.ders;
-  const adres = i.dosya || i.baglanti;
-  // Sınıf zaten rozette: "5. Sınıf Matematik 7. Hafta: …" başlığı "Matematik 7. Hafta: …" olarak kısalır (dar ekranda kart boyu)
-  const baslik = String(i.baslik || '').replace(/^\d+\.\s*Sınıf\s+(?=\S)/, '') || i.baslik;
-  const kart = el('article', { sinif: 'kart', 'data-renk': window.Kesif?.category(i.tur).color || 'mavi' },
-    el('div', { sinif: 'ust-bilgi' },
-      i.hafta && el('span', { sinif: 'etiket' }, `${i.hafta}. hafta`),
-      i.sinif && el('span', { sinif: 'etiket' }, `${i.sinif}. sınıf`),
-      dersAd && el('span', { sinif: 'etiket tur' }, dersAd),
-      i.tur && el('span', { sinif: `etiket ${i.kitle === 'ogretmen' ? 'ogretmen' : 'tur'}` }, i.tur)),
-    el('h3', {}, baslik),
-    i.aciklama && el('p', {}, i.aciklama),
-    el('div', { sinif: 'eylemler' },
-      i.goruntule && el('a', { sinif: 'ac', href: `/${i.goruntule}` }, 'Aç', simge('ok')),
-      i.goruntule && i.tur === 'Ders kitabı' && el('a', { sinif: 'ac', href: `/${i.goruntule}&yerel=1`, title: 'Kitabın bilgisayarınızdaki PDF dosyasını açar; internet beklenmez' }, 'Bilgisayardan aç'),
-      i.hazirla && el('a', { sinif: 'ac', href: `/${i.hazirla}` }, 'Hazırla ve indir', simge('indir')),
-      !i.hazirla && adres && (i.dosya || !i.goruntule) && el('a', { sinif: 'ac', href: i.dosya ? `/${i.dosya}` : adres, target: i.dosya ? null : '_blank', rel: 'noopener', download: i.dosya ? '' : null },
-        i.dosya ? 'İndir' : 'Aç', simge(i.dosya ? 'indir' : 'ok'))));
-  // Kartın tamamı ilk eyleme götürür (indirme bağlantısı hariç); metin seçimi ve bağlantıya tıklama bozulmaz.
-  const birincil = kart.querySelector('a.ac:not([download])');
-  if (birincil) {
-    kart.classList.add('tiklanir');
-    kart.addEventListener('click', (o) => {
-      if (o.target.closest('a, button') || getSelection()?.toString()) return;
-      birincil.click();
-    });
-  }
-  return kart;
-}
 
 function icerikSayfasi({ dersler, icerikler }) {
   const alan = { sinif: $('#s-sinif'), ders: $('#s-ders'), tur: $('#s-tur'), hafta: $('#s-hafta'), kitle: $('#s-kitle'), ara: $('#s-ara') };

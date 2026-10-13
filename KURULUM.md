@@ -23,6 +23,26 @@ Hesap açma, giriş ve anahtar/şifre girme işlerini siz yaparsınız. Anahtarl
 - `public/veri/youtube.json`, `instagram.json`: `araclar/akis_guncelle.py` üretir; elle değiştirilmez.
 - `public/gizlilik.html` (gizlilik ve çerezler), `404.html`, `robots.txt`, `sitemap.xml`, simgeler ve paylaşım görseli (`paylasim.png`).
 
+## Sayfa üretimi (elle düzenlenmeyen dosyalar)
+Üst menü, alt bilgi ve simge takımının tek kaynağı `public/index.html`'dir; öteki sayfalar üreticilerle yazılır. Bir sayfayı elle düzeltirseniz bir sonraki üretimde kaybolur; düzeltmeyi üreticiye (ya da `araclar/ozetler`, `araclar/calisma` gibi kaynak klasörlere) yapın.
+- `python3 araclar/sayfa_uret.py`: kök sayfalar (ogrenci, ogretmen, icerikler, yazili, planlar, belgeler, kelime, arapca, sinav, test, tahta, goruntule, kpss, gizlilik, telif, katki, 404 …). Betik sürümleri `BETIK_SURUMLERI` sözlüğünde, stil sürümü index.html'deki `stil.css?v=` değerinden alınır; bir .js/.css değişince sürümü yükseltip üreticiyi çalıştırın (önbellekteki eski kopya kalmasın).
+- `python3 araclar/ozet_uret.py`: `araclar/ozetler/*.json` → `public/ozet/*.html` (konu anlatımları) ve `icerikler.json`'daki "Konu anlatımı" kayıtları.
+- `python3 araclar/calisma_uret.py`: `araclar/calisma/*.json` → `public/calisma/*.html` + PDF'ler (Chrome gerekir) ve `icerikler.json`'daki "Çalışma kâğıdı" kayıtları. `icerikler.json` bu iki üretici tarafından yeniden yazılır; elle yalnız öteki türler (plan, kitap, video vb.) eklenir.
+- `python3 araclar/kpss_uret.py`: `public/veri/kpss.json` → `public/kpss.html` ve `public/kpss/*.html`.
+- `python3 araclar/ust_guncelle.py`: yeniden üretilmeyen sayfalara (çalışma kâğıtları vb.) güncel üst menü, alt bilgi ve stil/betik sürümlerini işler; index.html'in menüsü ya da bir sürüm değişince çalıştırılır.
+- `python3 araclar/agac_uret.py`: `public/veri/gunluk-plan/*.json` (yıllık planlar) → `public/veri/agac/*.json` (öğrenci dalındaki ünite/konu/hafta ağacı, çevrimiçi testin konu kodları).
+- `python3 araclar/soru_havuzu_uret.py`: çevrimiçi test havuzu (aşağıda). `python3 araclar/kok_yayin_denetle.py`: yayın öncesi kök sayfa denetimi; `ziyaret_guncelle.py`: `ziyaret.json`.
+
+## Veri dosyaları (`public/veri/`)
+`dersler.json` (sınıf/ders/tür ve kitle eşlemesi), `belgeler.json` (resmî belgeler ve kitaplar), `senaryolar.json` (ÖDSGM yazılı senaryoları), `yazili-kagitlari.json` ve `yazili-cikti.json` (hazır yazılı kâğıtları; `public/yazili/` PDF'leri), `sinavlar.json` (sınav takvimi), `gunluk-planlar.json` + `gunluk-plan/` (yıllık/günlük planlar), `agac/` (üretilir), `soru/` (üretilir), `kelimeler.json` ve `arapca-kelimeler.json` (kelime çalışmaları), `kpss.json`, `ziyaret.json`, `youtube.json`/`instagram.json` (üretilir).
+
+## GitHub iş akışları (`.github/workflows/`)
+- `guncelle.yml`: her gün 07.17 — YouTube/Instagram akışını çeker (`akis_guncelle.py`) ve siteyi yayımlar.
+- `nobetci.yml`: 30 dakikada bir site denetimi (`nobetci.py`); sorun olursa "nobetci" etiketli issue açar, Pazartesi 08.43 derin denetim.
+- `sosyal.yml`: 15 dakikada bir kuyruktaki sosyal medya kartını paylaşır (`sosyal_paylas.py`, anahtar girilmişse).
+- `kesif-onizleme.yml`: değişikliklerde testleri çalıştırır (`tests/*.cjs`: ana-sayfa, arama-oneri, katalog-yukleme, soru-havuzu, site-renkleri, kesif-kapsam, ders-slayt, online-test).
+- `slayt-kontrol.yml`: konu anlatımı slaytlarının kapsam denetimi.
+
 ## Çevrimiçi test (öğrenci soru havuzu)
 - `public/test.html` + `public/test.js`: öğrenci sınıf → ders → ünite/konu → öğrenme çıktısı seçer; sorular havuzdan rastgele ve tekrarsız seçilir (son görülenler cihazda tutulur), dönüt anında ya da sonunda verilir; sonuç konu ve çıktıya göre dökülür. Her şey tarayıcıda kalır, sunucuya veri gitmez.
 - `python3 araclar/soru_havuzu_uret.py`: havuzu üretir → `public/veri/soru/<sinif>-<ders>.json` ve `dizin.json`. Kaynaklar: konu özetlerinin etkinlikleri ve örnekleri (`araclar/ozetler`), çalışma kâğıtlarının soruları (`araclar/calisma`) ve ek soru dosyaları. Görsele dayanan sorular alınmaz. Yeni özet/çalışma kâğıdı eklenince yeniden çalıştırılır.
