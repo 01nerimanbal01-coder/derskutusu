@@ -13,6 +13,7 @@ function belgeKarti(b, dersler) {
     dersAd && !b.baslik.startsWith(dersAd) && el('p', { sinif: 'kucuk' }, dersAd),
     el('div', { sinif: 'eylemler' },
       b.goruntule && el('a', { sinif: 'ac', href: `/${b.goruntule}` }, 'Aç', simge('ok')),
+      b.goruntule && /^kitap-/.test(b.kimlik || '') && !b.dosya && el('a', { sinif: 'ac', href: `/${b.goruntule}&yerel=1`, title: 'Kitabın bilgisayarınızdaki PDF dosyasını açar; internet beklenmez' }, 'Bilgisayardan aç'),
       b.dosya && el('a', { sinif: 'ac', href: `/${b.dosya}`, download: '' }, 'İndir', simge('indir')),
       !b.goruntule && !b.dosya && el('a', { sinif: 'ac', href: b.baglanti, target: '_blank', rel: 'noopener' }, 'Aç', simge('ok'))));
 }

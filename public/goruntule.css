@@ -1,0 +1,22 @@
+/* Belge görüntüleyici ekleri (goruntule.js yükler; sürüm goruntule.js içinde). 12.10.2026:
+   sayfaya git kutusu, kaldığın yer düğmesi, yavaş bağlantı önerisi, bilgisayardan açma paneli. */
+.pdf-arac { flex-wrap: wrap; justify-content: flex-end; max-width: calc(100% - 32px); row-gap: 4px; }
+.pdf-git { display: flex; align-items: center; gap: 4px; margin: 0 2px 0 4px; }
+.pdf-git[hidden], .pdf-devam[hidden] { display: none; }
+.pdf-git-no { width: 4.6em; height: 32px; padding: 0 6px; border: 1px solid rgb(255 255 255 / .4); border-radius: 8px;
+  background: rgb(255 255 255 / .12); color: #fff; font: 600 15px/1 inherit; text-align: center; }
+.pdf-git-no::placeholder { color: rgb(255 255 255 / .72); font-weight: 500; }
+.pdf-git-no:focus { outline: 2px solid #fff; outline-offset: 1px; background: rgb(255 255 255 / .2); }
+.pdf-arac .pdf-git button, .pdf-arac .pdf-devam { width: auto; min-width: 36px; padding: 0 10px; font-size: 14px; }
+.pdf-arac .pdf-git button { background: rgb(255 255 255 / .16); }
+.pdf-arac .pdf-devam { background: #f29f05; color: #1b2538; font-weight: 700; }
+.pdf-arac .pdf-devam:hover { background: #ffb52e; }
+.pdf-yavas { max-width: 520px; margin: 48px auto; padding: 20px 22px; border-radius: 16px; background: var(--yuzey); color: var(--metin);
+  text-align: center; box-shadow: 0 8px 24px rgb(0 0 0 / .35); }
+.pdf-yavas p { margin: 0 0 14px; line-height: 1.5; }
+.g-yerel { text-align: center; }
+.g-yerel-eylem { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 18px 0 8px; }
+.g-yerel-not { color: var(--soluk); font-size: 14px; }
+@media (max-width: 640px) {
+  .pdf-arac { left: 8px; right: 8px; top: 8px; max-width: none; justify-content: center; }
+}

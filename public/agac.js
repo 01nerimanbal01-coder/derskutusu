@@ -41,6 +41,7 @@
       i.aciklama ? el('p', {}, i.aciklama) : null,
       el('div', { sinif: 'agac-kart-eylem' },
         i.goruntule ? el('a', { sinif: 'dugme ana', href: yol(i.goruntule) }, 'Aç', simge('ok')) : null,
+        i.goruntule && i.tur === 'Ders kitabı' ? el('a', { sinif: 'dugme', href: `${yol(i.goruntule)}&yerel=1`, title: 'Kitabın bilgisayarınızdaki PDF dosyasını açar; internet beklenmez' }, 'Bilgisayardan aç') : null,
         i.hazirla ? el('a', { sinif: 'dugme ana', href: yol(i.hazirla) }, 'Hazırla ve indir', simge('indir')) : null,
         !i.hazirla && i.dosya ? el('a', { sinif: 'dugme', href: yol(i.dosya), download: '' }, /\.pdf$/i.test(i.dosya) ? 'PDF indir' : 'İndir', simge('indir')) : null,
         !i.hazirla && !i.dosya && !i.goruntule && i.baglanti ? el('a', { sinif: 'dugme ana', href: i.baglanti, target: '_blank', rel: 'noopener' }, 'Aç', simge('ok')) : null));
@@ -244,7 +245,8 @@
           simdi && k.haftalar.includes(simdi) ? el('span', { sinif: 'agac-rozet bu-hafta' }, 'Bu hafta') : null))),
       bolum('', k.icerik.length ? el('div', {}, sekmeler, liste)
         : bos('Bu konunun içerikleri hazırlanıyor', 'Konu anlatımı ve çalışma kâğıdı yıllık plan sırasıyla ekleniyor. Bu arada ders kitabından çalışabilirsin.',
-          ...dersDuzeyi.filter((i) => i.tur === 'Ders kitabı').map((i) => el('a', { sinif: 'dugme ana', href: yol(i.goruntule || i.baglanti) }, 'Ders kitabını aç', simge('ok'))),
+          ...dersDuzeyi.filter((i) => i.tur === 'Ders kitabı').flatMap((i) => [el('a', { sinif: 'dugme ana', href: yol(i.goruntule || i.baglanti) }, 'Ders kitabını aç', simge('ok')),
+            i.goruntule ? el('a', { sinif: 'dugme', href: `${yol(i.goruntule)}&yerel=1`, title: 'Kitabın bilgisayarınızdaki PDF dosyasını açar; internet beklenmez' }, 'Bilgisayardan aç') : null]),
           el('a', { sinif: 'dugme', href: dersYol.href }, 'Bütün üniteler')),
         el('nav', { sinif: 'agac-komsular', 'aria-label': 'Konular arasında geçiş' }, komsu(ix - 1, 'onceki'), komsu(ix + 1, 'sonraki'))));
     if (k.icerik.length) ciz('');
