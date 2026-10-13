@@ -29,7 +29,7 @@ SEMBOL = {  # MEB 5. sınıf matematik programındaki gösterimler (⊥, //, AB 
     'dogru': '<span class="s-dogru" role="img" aria-label="{1} doğrusu">{0}</span>',
     'isin': '[{0}', 'parca': '[{0}]', 'uzunluk': '\ue000{0}\ue000',   # çubuklar e() sonunda '|' olur; kesir/kök/üs ayırıcısıyla karışmaz
     'koyu': '<b>{0}</b>',   # olumsuz kökteki vurgu: {koyu:değildir}
-    'ar': '<bdi lang="ar" dir="rtl" style="font-size:1.3em;line-height:1.8">{0}</bdi>',
+    'ar': '<bdi class="ar" lang="ar" dir="rtl">{0}</bdi>',   # boyut ve satır aralığı stil.css .ar
 }
 
 
@@ -219,7 +219,7 @@ def sayfa_uret(o, dersler, icerikler):
       <p class="ust-baslik">{o["sinif"]}. sınıf · {e(ad)} · {o["hafta"]}. hafta ({e(o["tarih"])})</p>
       <h1>{e(o["konu"])}</h1>
       <p>{e(o["unite"])} teması · Konu özeti</p>
-      <div class="g-dugmeler y-ust"><button class="dugme ana" type="button" onclick="window.kalemAc &amp;&amp; window.kalemAc()"><span aria-hidden="true">✎</span>Kalemle yaz</button><button class="dugme" type="button" onclick="document.querySelectorAll('.ornek details').forEach(d=&gt;d.open=!d.open)">Bütün cevapları aç/kapat</button>{'<a class="dugme" href="#etkinlikler">Etkinlikler</a>' if o.get('etkinlikler') else ''}{ck_dugme}</div>
+      <div class="g-dugmeler y-ust"><button class="dugme ana" type="button" onclick="window.kalemAc &amp;&amp; window.kalemAc()"><span aria-hidden="true">✎</span>Kalemle yaz</button><button class="dugme" type="button" onclick="const ds=[...document.querySelectorAll('.ornek details')],ac=ds.some(d=&gt;!d.open);ds.forEach(d=&gt;d.open=ac);this.textContent=ac?'Bütün cevapları kapat':'Bütün cevapları aç';this.setAttribute('aria-pressed',String(ac))" aria-pressed="false">Bütün cevapları aç</button>{'<a class="dugme" href="#etkinlikler">Etkinlikler</a>' if o.get('etkinlikler') else ''}{ck_dugme}</div>
     </div>
   </section>
   <article class="bolum ozet ders-{o["ders"]}">

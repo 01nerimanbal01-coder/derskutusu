@@ -77,7 +77,7 @@
   trigger.type = 'button'; trigger.id = 'ders-slayt-ac'; trigger.className = 'dugme ana';
   trigger.textContent = 'Slaytla ders işle'; trigger.setAttribute('aria-haspopup', 'dialog');
   actions.prepend(trigger);
-  const css = document.createElement('link'); css.rel = 'stylesheet'; css.href = '/ders-slayt.css?v=20261013-1';
+  const css = document.createElement('link'); css.rel = 'stylesheet'; css.href = '/ders-slayt.css?v=20261013-2';
   document.head.append(css);
 
   const dialog = document.createElement('dialog');

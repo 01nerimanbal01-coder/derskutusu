@@ -16,7 +16,8 @@
 }
 @media screen and (max-width: 640px) { .ck { padding: 16px 12px 20px; } .ck-iki { grid-template-columns: 1fr !important; }
   /* Üst bant: öğrenci bilgisi (ad, sınıf, tarih) 50 mm'den dar olamaz; telefonda alta iner, kâğıt yatay taşmaz */
-  .ck-bant { grid-template-columns: auto 1fr; } .ck-ogrenci { grid-column: 1 / -1; min-width: 0; } }
+  .ck-bant { grid-template-columns: auto 1fr; } .ck-ogrenci { grid-column: 1 / -1; min-width: 0; }
+  .ck { --ck-olcek: 1.15; } .ck-hatirla ul { columns: 1; } .ck-ogrenci { font-size: 9pt; } }   /* pt tabanlı yazılar 328 px kâğıtta 8-9 px kalıyordu */
 
 /* Üst bant */
 .ck-bant { display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: center; padding-bottom: 7px; border-bottom: 2.4px solid var(--ck-lacivert); }
@@ -59,7 +60,7 @@
 .ck-soru-bas { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; }
 .ck-no { flex: none; display: grid; place-items: center; width: 19px; height: 19px; border-radius: 50%; background: var(--ck-lacivert); color: #fff; font: 800 8.4pt/1 Montserrat, sans-serif; }
 .ck-tur { font: 700 6.6pt/1.3 Montserrat, sans-serif; letter-spacing: 1.1px; color: var(--ck-mavi); text-transform: uppercase; }
-.ck-soru.d-uygula .ck-tur { color: var(--ck-yesil); }
+.ck-soru.d-uygula .ck-tur { color: #0e7f3f; }   /* beyazda 5,1:1 */
 .ck-soru.d-ust .ck-tur { color: var(--ck-mor); }
 .ck-soru.d-ust .ck-tur::after { content: ' · DÜŞÜN'; }
 .ck-soru-metin { margin: 0 0 5px; font-weight: 600; }

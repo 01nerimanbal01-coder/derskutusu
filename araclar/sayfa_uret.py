@@ -13,7 +13,7 @@ from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'goruntule.js': '20261013-1', 'belgeler.js': '20261013-1', 'agac.js': '20261013-4', 'yazili.js': '20261013-1', 'ortak.js': '20261013-2', 'tahta.js': '20261013-3', 'etkinlik.js': '20261003-1', 'arama.js': '20261013-3', 'kutuphane.js': '20261013-4', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-2', 'test.js': '20261013-1'}
+BETIK_SURUMLERI = {'goruntule.js': '20261013-1', 'belgeler.js': '20261013-1', 'agac.js': '20261013-4', 'yazili.js': '20261013-1', 'ortak.js': '20261013-2', 'tahta.js': '20261013-4', 'etkinlik.js': '20261003-1', 'arama.js': '20261013-3', 'kutuphane.js': '20261013-4', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-2', 'test.js': '20261013-1'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
@@ -75,10 +75,16 @@ def sayfa(ad, baslik, aciklama, govde, betikler=(), kanonik=True):
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
 <meta property="og:site_name" content="Ders Kutusu">
-<meta property="og:title" content="{baslik} · Ders Kutusu">
+<meta property="og:locale" content="tr_TR">
+{'<meta property="og:url" content="https://derskutusu.com/' + ad + '">' + chr(10) if kanonik else ''}<meta property="og:title" content="{baslik} · Ders Kutusu">
 <meta property="og:description" content="{aciklama}">
 <meta property="og:image" content="https://derskutusu.com/paylasim.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="/stil.css?v={SURUM}">
 </head>
 <body>
@@ -442,14 +448,14 @@ GOVDE['kelime.html'] = ('İngilizce kelime çalışması', '5 ve 6. sınıf İng
       </div>
       <nav class="sekmeler kelime-kipler" id="k-kipler" aria-label="Çalışma biçimi"></nav>
       <h2 class="kelime-baslik" id="k-tema-baslik"></h2>
-      <div id="k-alan" class="kelime-alan" aria-live="polite"></div>
+      <div id="k-alan" class="kelime-alan" aria-live="polite"><p>Kelimeler yükleniyor…</p><noscript>Kelime çalışması için JavaScript’i etkinleştirin.</noscript></div>
       <p class="kelime-not">İlerlemen yalnız bu tarayıcıda tutulur, hiçbir yere gönderilmez. Sesler tarayıcının kendi okuma özelliğiyle çıkar.</p>
     </div>
   </section>''', ('kelime.js',))
 
-GOVDE['arapca.html'] = ('Arapça harf ve kelime çalışması', '28 harf ve 48 kelime/ifade: harf biçimleri, harekeler, kartlar, test, Arapça klavyeyle yazma ve eşleştirme.', '''<link rel="stylesheet" href="/arapca.css?v=202610022030">
+GOVDE['arapca.html'] = ('Arapça harf ve kelime çalışması', '28 harf ve 48 kelime/ifade: harf biçimleri, harekeler, kartlar, test, Arapça klavyeyle yazma ve eşleştirme.', '''<link rel="stylesheet" href="/arapca.css?v=202610131900">
 <section class="sayfa-bas kelime-bas"><div class="kap">
-<nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span>/</span><a href="/icerikler.html?ders=arapca">Arapça</a><span>/</span><span>Harf ve kelime çalışması</span></nav>
+<nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/icerikler.html?ders=arapca">Arapça</a><span aria-hidden="true">/</span><span>Harf ve kelime çalışması</span></nav>
 <p class="ust-baslik">Gör · Oku · Yaz · Eşleştir</p><h1>Arapça harf ve kelime çalışması</h1>
 <p>Harfleri ve harekeleri tanı; kelimeleri kartlarla öğren, test çöz ve Arapça klavyeyle yaz. İlk içerikler: 5. sınıf Merhaba, 6. sınıf Akrabalarım.</p>
 <nav class="sekmeler" id="a-sinif" aria-label="Sınıf"></nav></div></section>
@@ -520,8 +526,9 @@ def main():
         if 'class="metin-sayfa"' not in govde:
             govde = f'<div class="metin-sayfa">\n{govde}\n</div>'
         betik = ''
-        if '<script>' in eski:
-            betik = eski[eski.index('<script>'):eski.index('</script>') + len('</script>')]
+        if '<script>' in eski:   # sayfanın kendi satır içi betiği (ör. gizlilik: izinleri sıfırla); kapanış, açılıştan SONRAKİ ilk </script>
+            bas = eski.index('<script>')
+            betik = eski[bas:eski.index('</script>', bas) + len('</script>')]
         html = sayfa(ad, baslik, aciklama, govde, kanonik=kanonik).replace('</body>', (betik + '\n' if betik else '') + '</body>')
         (PUBLIC / ad).write_text(html, encoding='utf-8')
 

@@ -416,7 +416,11 @@ const Tahta = (() => {
     sabitBoy(cubuk);
     const kutuDugme = cubuk.querySelector('[data-is=kutu]');
     kutuDugme.setAttribute('aria-expanded', 'false'); kutuDugme.setAttribute('aria-controls', kutuPanel.id);
-    const kutuAc = (acik = kutuPanel.hidden) => { kutuPanel.hidden = !acik; kutuDugme.setAttribute('aria-expanded', String(acik)); kutuDugme.setAttribute('aria-pressed', String(acik)); };
+    const kutuAc = (acik = kutuPanel.hidden) => {
+      kutuPanel.hidden = !acik; kutuDugme.setAttribute('aria-expanded', String(acik)); kutuDugme.setAttribute('aria-pressed', String(acik));
+      // Panel kabı aşmasın (tahta alanı overflow:hidden; 360×640'ta başlık ve kapat düğmesi kırpılıyordu)
+      if (acik) kutuPanel.style.maxHeight = `${Math.max(180, (kap.getBoundingClientRect().height || innerHeight) - cubuk.offsetHeight - 26)}px`;
+    };
     const surgu = kutuPanel.querySelector('[data-ayar=g]'), surguCikti = kutuPanel.querySelector('output'), onizle = kutuPanel.querySelector('.tk-onizle i');
     const guncelle = () => {
       cubuk.querySelectorAll('[data-arac]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.arac === d.arac)));
@@ -564,7 +568,10 @@ if (typeof document !== 'undefined') {
     document.getElementById('t-kaydet').addEventListener('click', () => {
       t.pngLogolu().then((adres) => { const a = document.createElement('a'); a.href = adres; a.download = `derskutusu-tahta-${no + 1}.png`; a.click(); });
     });
-    document.getElementById('t-tam').addEventListener('click', () => (document.fullscreenElement ? document.exitFullscreen() : document.getElementById('tahta-alan').requestFullscreen?.()));
+    // Tam ekran bütün tahta sayfasını alır: sayfa/zemin/kaydet düğmeleri ve çıkış görünür kalır
+    const tamDugme = document.getElementById('t-tam'), tamHedef = document.querySelector('.tahta-sayfa') || document.getElementById('tahta-alan');
+    tamDugme.addEventListener('click', () => (document.fullscreenElement ? document.exitFullscreen() : tamHedef.requestFullscreen?.()));
+    document.addEventListener('fullscreenchange', () => { const acik = Boolean(document.fullscreenElement); tamDugme.lastChild.textContent = acik ? 'Tam ekrandan çık' : 'Tam ekran'; tamDugme.setAttribute('aria-pressed', String(acik)); });
     sayfaYaz();
   } else {
     // Öteki sayfalar: sağ altta kalem düğmesi → sayfanın üstüne yaz
@@ -609,6 +616,6 @@ if (typeof document !== 'undefined') {
 // Konu sayfalarındaki sunum, mevcut tahta ve etkinlik davranışlarını yeniden kullanır.
 if (typeof document !== 'undefined' && document.querySelector('article.ozet')) {
   const ders = document.createElement('script');
-  ders.src = '/ders-slayt.js?v=20261013-1';
+  ders.src = '/ders-slayt.js?v=20261013-2';
   document.head.append(ders);
 }
