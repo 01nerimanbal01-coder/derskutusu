@@ -517,7 +517,8 @@ if (typeof document !== 'undefined') {
   const form = $('.ust-arama');
   if (form) {
     const kutu = $('input', form);
-    if (matchMedia('(max-width: 560px)').matches) kutu.placeholder = 'Ara';
+    // 561–640 px'te tam yer tutucu kutuya sığmıyor ('…yıllı'); 640 px'e kadar kısa metin
+    if (matchMedia('(max-width: 640px)').matches) kutu.placeholder = 'Ara';
     const liste = $('.oneri', form);
     let secili = -1, sira = 0, zaman;
     const kapat = () => {

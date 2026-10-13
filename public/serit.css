@@ -6,10 +6,12 @@
 .serit-baslik { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--vurgu); white-space: nowrap; }
 .serit-baslik::before { content: ""; flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--yesil);
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--yesil) 22%, transparent); }
-.serit-tumu { font-size: 13px; font-weight: 700; }
-.serit-dur { display: grid; place-items: center; width: 30px; height: 30px; padding: 0; border: 1px solid var(--cizgi); border-radius: 9px;
+/* Dokunma hedefi 44 px (tabletlerde yatay şerit modu) */
+.serit-tumu { display: inline-flex; align-items: center; min-height: 44px; padding: 0 6px; font-size: 13px; font-weight: 700; }
+.serit-dur { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 1px solid var(--cizgi); border-radius: 9px;
   background: var(--yuzey); color: var(--metin); font: 700 10px/1 inherit; cursor: pointer; }
 .serit-dur:hover { border-color: var(--vurgu); color: var(--vurgu); }
+.serit-dur span { font-size: 11px; }
 .serit-dur:focus-visible, .serit-kart:focus-visible { outline: 2px solid var(--vurgu); outline-offset: 2px; }
 
 .serit-pencere { flex: 1; min-width: 0; overflow: hidden;

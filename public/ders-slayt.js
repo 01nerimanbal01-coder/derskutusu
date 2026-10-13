@@ -29,21 +29,25 @@
       index: Number.isSafeInteger(value.index) && value.index >= 0 ? value.index : 0,
       mode: value.mode === 'questions' ? 'questions' : 'lesson' };
   }
+  // Tam ekran: standart API; eski akıllı tahta tarayıcıları için webkit önekli sürüm de denenir.
   function fullscreenSession(doc, target) {
     let pending = null;
-    const active = () => doc.fullscreenElement === target;
+    const element = () => doc.fullscreenElement ?? doc.webkitFullscreenElement ?? null;
+    const request = () => target.requestFullscreen || target.webkitRequestFullscreen;   // çağrı anında çözülür (sonradan yüklenen uyumluluk katmanları)
+    const exit = () => (doc.exitFullscreen || doc.webkitExitFullscreen || (() => Promise.resolve())).call(doc);
+    const active = () => element() === target;
     function toggle() {
       if (pending) return pending;
-      if (!active() && typeof target.requestFullscreen !== 'function') return Promise.resolve(false);
+      if (!active() && typeof request() !== 'function') return Promise.resolve(false);
       try {
-        const request = active() ? doc.exitFullscreen() : target.requestFullscreen();
-        pending = Promise.resolve(request).then(() => true).finally(() => { pending = null; });
+        const result = active() ? exit() : request().call(target);
+        pending = Promise.resolve(result).then(() => true).finally(() => { pending = null; });
         return pending;
       } catch (error) { return Promise.reject(error); }
     }
     async function exitOwned() {
       if (pending) { try { await pending; } catch {} }
-      if (active()) await doc.exitFullscreen();
+      if (active()) await exit();
     }
     return { active, toggle, exitOwned };
   }
@@ -73,15 +77,16 @@
   trigger.type = 'button'; trigger.id = 'ders-slayt-ac'; trigger.className = 'dugme ana';
   trigger.textContent = 'Slaytla ders işle'; trigger.setAttribute('aria-haspopup', 'dialog');
   actions.prepend(trigger);
-  const css = document.createElement('link'); css.rel = 'stylesheet'; css.href = '/ders-slayt.css?v=20261006-1';
+  const css = document.createElement('link'); css.rel = 'stylesheet'; css.href = '/ders-slayt.css?v=20261013-1';
   document.head.append(css);
 
   const dialog = document.createElement('dialog');
   dialog.className = 'ds'; dialog.setAttribute('aria-labelledby', 'ds-title');
-  dialog.innerHTML = `<div class="ds-shell"><header class="ds-header"><div><p class="ds-eyebrow">DERS KUTUSU · SINIFTA BİRLİKTE</p><h2 id="ds-title"></h2></div><button type="button" data-action="close">Derse dön</button></header>
+  dialog.innerHTML = `<div class="ds-shell"><header class="ds-header"><div><p class="ds-eyebrow">DERS KUTUSU · SINIFTA BİRLİKTE</p><h2 id="ds-title"></h2></div>
+    <div class="ds-pencere" role="group" aria-label="Sunum penceresi"><button type="button" class="ds-tam" data-action="fullscreen" aria-pressed="false" aria-label="Tam ekran" title="Sunumu bütün ekrana yay"><svg class="ds-ikon-ac" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg><svg class="ds-ikon-kucult" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/></svg><span>Tam ekran</span></button><button type="button" class="ds-kapat" data-action="close" aria-label="Slaytı kapat, derse dön" title="Slaytı kapat, derse dön"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg><span>Slaytı kapat</span></button></div></header>
     <div class="ds-tools"><label>Sunum <select data-control="mode"><option value="lesson">Dersin tamamı</option><option value="questions">Kısa soru seti</option></select></label>
     <button type="button" data-action="restart">Aynı seti baştan</button><button type="button" data-action="new">Yeni soru seti</button>
-    <button type="button" data-action="ink" aria-pressed="false">Kalem</button><button type="button" data-action="fullscreen" aria-pressed="false">Tam ekran</button></div>
+    <button type="button" data-action="ink" aria-pressed="false">Kalem</button></div>
     <div class="ds-outline"><label>Bölüme git <select data-control="slide" aria-label="Ders bölümleri"></select></label></div>
     <p class="ds-notice" role="status"></p>
     <div class="ds-stage-wrap"><div class="ds-stage ozet" tabindex="0" aria-label="Ders slaytı"></div><div class="ds-ink" hidden></div></div>
@@ -227,14 +232,22 @@
     dialog.querySelector('[data-control="slide"]').value = String(state.index);
     if (focus) stage.focus({ preventScroll: true });
   }
+  // Tam ekran API'si yoksa ya da cihaz reddederse sunum tarayıcı penceresini kaplar (ds-genis); etiket iki durumda da "Küçült".
+  const genis = () => fullscreen.active() || dialog.classList.contains('ds-genis');
+  let fsIstek = 0;   // bekleyen tam ekran isteği; sunum kapanınca geçersizleşir (bekleme sonrası yanlış karar verilmesin)
   function fullscreenLabel() {
-    const active = fullscreen.active();
-    button('fullscreen').textContent = active ? 'Tam ekrandan çık' : 'Tam ekran';
-    button('fullscreen').setAttribute('aria-pressed', String(active));
+    const active = genis(), control = button('fullscreen');
+    control.querySelector('span').textContent = active ? 'Küçült' : 'Tam ekran';
+    control.setAttribute('aria-label', active ? 'Küçült' : 'Tam ekran');
+    control.title = active ? 'Sunumu küçült' : 'Sunumu bütün ekrana yay';
+    control.setAttribute('aria-pressed', String(active));
+    dialog.classList.toggle('ds-tam-ekran', fullscreen.active());
   }
   async function close() {
     rememberInk(); penOff(); save();
+    fsIstek++;
     try { await fullscreen.exitOwned(); } catch {}
+    dialog.classList.remove('ds-genis');
     dialog.close(); trigger.textContent = 'Sunuma devam et'; trigger.focus({ preventScroll: true });
   }
   trigger.addEventListener('click', () => {
@@ -245,6 +258,7 @@
   // Tarayıcı pencereyi "cancel" olmadan kapatırsa (art arda Esc) kalem ve tam ekran açık kalmasın.
   dialog.addEventListener('close', () => { penOff(); save(); fullscreen.exitOwned().catch(() => {}); trigger.textContent = 'Sunuma devam et'; });
   document.addEventListener('fullscreenchange', fullscreenLabel);
+  document.addEventListener('webkitfullscreenchange', fullscreenLabel);
   dialog.addEventListener('click', async event => {
     const control = event.target.closest('[data-action]');
     if (!control || control.disabled) return;
@@ -268,13 +282,24 @@
         if (!pen) pen = Tahta.olustur({ kap: ink, kaydir: stage, kapat: penOff });
         pen.yukle(drawings.get(slides[state.index]?.id) || []);
         drawing = true; button('ink').setAttribute('aria-pressed', 'true'); break;
-      case 'fullscreen':
+      case 'fullscreen': {
         control.disabled = true;
+        const istek = ++fsIstek, onceki = genis();
         try {
-          if (!await fullscreen.toggle()) explain('Bu cihaz tam ekranı desteklemiyor; sunum bu pencerede kullanılabilir.');
-        } catch { explain('Tam ekran açılamadı; sunum bu pencerede kullanılabilir.'); }
-        finally { control.disabled = false; }
+          if (onceki && !fullscreen.active()) dialog.classList.remove('ds-genis');   // pencereyi kaplayan düzenden çık
+          else {
+            let oldu = false;
+            try { oldu = await fullscreen.toggle(); } catch { oldu = false; }
+            // webkit önekli tarayıcılar durumu olayla bildirir: kısa bir süre bekle
+            if (oldu && !onceki && !fullscreen.active()) await new Promise(resolve => setTimeout(resolve, 150));
+            if (istek !== fsIstek) break;   // bu arada sunum kapandı ya da yeni istek geldi
+            if (onceki) dialog.classList.remove('ds-genis');
+            else if (!fullscreen.active()) dialog.classList.add('ds-genis');      // API yok ya da reddetti: pencereyi kapla
+          }
+          explain(!onceki && !fullscreen.active() ? 'Sunum tarayıcı penceresini kapladı. Cihaz tam ekranı desteklemiyorsa tarayıcının tam ekranını (F11) açabilirsiniz.' : '');
+        } finally { control.disabled = false; }
         fullscreenLabel(); break;
+      }
     }
   });
   stage.addEventListener('click', () => queueMicrotask(updateReveal));

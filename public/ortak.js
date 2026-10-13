@@ -192,7 +192,7 @@ ortakVeri.then(({ ayar }) => {
 (() => {
   const ust = $('header.ust');
   if (!ust || /^\/(tahta|goruntule)\.html$/.test(location.pathname)) return;   // tam ekran araç sayfaları
-  const SERIT_SURUM = '20261013-1', EN_COK = 18;
+  const SERIT_SURUM = '20261013-2', EN_COK = 18;
   const kisaTarih = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'short' });
   const yol = (a) => (/^(https?:)?\//.test(a) ? a : `/${a}`);
   const stil = el('link', { rel: 'stylesheet', href: `${kok}serit.css?v=${SERIT_SURUM}` });
@@ -233,7 +233,7 @@ ortakVeri.then(({ ayar }) => {
       const gun = new Date(/^\d{4}-\d\d-\d\d$/.test(k.tarih) ? `${k.tarih}T12:00:00` : k.tarih);
       return el('li', { sinif: 'serit-oge' },
         el('a', { sinif: ['serit-kart', k.ders && `ders-${k.ders}`, k.yazili && 'serit-yazili'].filter(Boolean).join(' '), href: k.adres,
-          target: dis ? '_blank' : null, rel: dis ? 'noopener' : null },
+          title: k.baslik, target: dis ? '_blank' : null, rel: dis ? 'noopener' : null },   // kesilen başlığın tamamı fareyle görünür
           el('span', { sinif: 'serit-ust' }, el('span', { sinif: 'serit-tur' }, k.tur || 'İçerik'),
             isNaN(gun) ? null : el('time', { datetime: k.tarih }, kisaTarih.format(gun))),
           el('span', { sinif: 'serit-ad' }, k.baslik),

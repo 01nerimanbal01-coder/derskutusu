@@ -26,6 +26,7 @@ async function runCatalogChecks(commonSource, librarySource) {
     append(...children) { this.children.push(...children.filter(c => c != null)); }
     replaceChildren(...children) { this.children = []; this.append(...children); if (this.tag === 'select') this.value = ''; }
     setAttribute(key, value) { this.attrs[key] = String(value); if (key.startsWith('data-')) this.dataset[key.slice(5)] = String(value); }
+    removeAttribute(key) { delete this.attrs[key]; }
     addEventListener(type, callback) { this.listeners[type] = callback; }
     focus() {}
     scrollIntoView() {}

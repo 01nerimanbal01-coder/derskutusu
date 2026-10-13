@@ -16,9 +16,13 @@ function kitleDenetleyici(dersler) {
   return (i, k) => (i.kitle || 'ogrenci') === k || turKitle[i.tur] === k;
 }
 
-// Kütüphane araması: Türkçe küçük harf, aksan ve ı/i farkı gözetmez (kâğıt = kagit); yazılan her sözcük metinde geçmeli.
+// Kütüphane araması: arama.js'in ek, ünsüz yumuşaması ve yazım hatasına toleranslı eşleşmesi (kesirler → Kesir, kagit → kâğıdı);
+// arama.js yüklenmemişse aksan ve ı/i farkı gözetmeyen düz alt dize eşleşmesine düşer.
 const aramaDuz = (s) => String(s || '').toLocaleLowerCase('tr').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ı/g, 'i').replace(/[^a-z0-9]+/g, ' ').trim();
-const aramaEslesir = (metin, sorgu) => { const m = aramaDuz(metin); return aramaDuz(sorgu).split(' ').filter(Boolean).every((s) => m.includes(s)); };
+const aramaEslesir = (metin, sorgu) => {
+  if (typeof Arama !== 'undefined' && typeof Arama.metinEslesir === 'function') return Arama.metinEslesir(metin, sorgu);
+  const m = aramaDuz(metin); return aramaDuz(sorgu).split(' ').filter(Boolean).every((s) => m.includes(s));
+};
 
 function icerikKarti(i, dersler) {
   const dersAd = dersler.dersler[i.ders] || i.ders;
@@ -72,7 +76,8 @@ function icerikSayfasi({ dersler, icerikler }) {
   const turSecenekleri = () => {
     const k = alan.kitle.value;
     const onceki = alan.tur.value;
-    const turler = dersler.turler.filter((t) => !k || t.kitle === k || icerikler.some((i) => i.tur === t.ad && kitleUyar(i, k)));
+    // Yalnız içeriği olan türler listelenir (boş türü seçince 'henüz içerik yok' görmek yerine); kitle seçiliyse o kitleye uyanlar
+    const turler = dersler.turler.filter((t) => icerikler.some((i) => i.tur === t.ad && (!k || kitleUyar(i, k))));
     alan.tur.replaceChildren(el('option', { value: '' }, 'Bütün türler'), ...turler.map((t) => el('option', { value: t.ad }, t.ad)));
     if (turler.some((t) => t.ad === onceki)) alan.tur.value = onceki;
   };
@@ -189,6 +194,7 @@ function icerikSayfasi({ dersler, icerikler }) {
 
 ortakVeri.then((v) => {
   if (sinifYonlendirme) return;
+  $('#kutuphane-yukleniyor')?.remove();   // veri geldi: yükleniyor satırı kalkar
   if (!v.dersler || v.iceriklerYuklendi === false) {
     const yer = $('#kartlar');
     if (yer) {
