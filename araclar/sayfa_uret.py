@@ -222,6 +222,7 @@ GOVDE = {
       <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a id="y-yol-sinif" href="/#siniflar">Sınıf</a><span aria-hidden="true">/</span><span>Ortak yazılı</span></nav>
       <h1 id="y-baslik">Ortak yazılı senaryoları</h1>
       <p>1. dönem, 2026-2027. Okulun zümresi senaryolardan birini seçer; tabloda her öğrenme çıktısından kaç soru çıkacağı yazar.</p>
+      <p class="y-cikti-gec-kap"><a class="y-cikti-gec" href="#cikti-yazililari"><span>Öğrenme çıktısına göre yazılılar<small>Her öğrenme çıktısı için ayrı kâğıt, cevaplı PDF</small></span><span aria-hidden="true">↓</span></a></p>
       <div class="g-dugmeler y-ust" id="y-dugmeler"></div>
       <nav class="sinif-gecis" id="y-siniflar" aria-label="Sınıflar"></nav>
     </div>

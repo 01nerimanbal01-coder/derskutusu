@@ -962,3 +962,17 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
   .etk-eslestir .etk-sec { font-size: 15px; padding: 8px 10px; }
 }
 @media (prefers-reduced-motion: reduce) { .k-yuz, .kelime-cubuk i { transition: none; } }
+/* Yazılılar sayfası: öğrenme çıktısı yazılıları belirgin (kullanıcı 13.10.2026: "çıktıların butonu daha belirgin olsun").
+   Üstteki geçiş düğmesi sayfa şablonunda (sayfa_uret.py), bölümü yazili-cikti.js (DKCIKTI yayını) çizer; görünüm burada. */
+.y-cikti-gec-kap { margin: 18px 0 0; }
+.y-cikti-gec { --cy: #b0246a; display: inline-flex; align-items: center; gap: 12px; min-height: 54px; padding: 12px 14px 12px 22px; border-radius: 16px;
+  background: var(--cy); color: #fff; font-size: 18px; font-weight: 800; line-height: 1.25; text-decoration: none;
+  box-shadow: 0 8px 20px rgb(176 36 106 / .28); transition: transform .12s, box-shadow .12s, filter .12s; }
+.y-cikti-gec small { display: block; font-size: 13px; font-weight: 600; opacity: .9; }
+.y-cikti-gec > span[aria-hidden] { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: rgb(255 255 255 / .22); font-size: 18px; }
+.y-cikti-gec:hover { transform: translateY(-1px); filter: brightness(1.08); box-shadow: 0 12px 26px rgb(176 36 106 / .34); }
+.y-cikti-gec:focus-visible { outline: 3px solid var(--metin); outline-offset: 3px; }
+#cikti-yazililari { scroll-margin-top: 80px; background: linear-gradient(180deg, rgb(176 36 106 / .08), transparent 70%); border-top: 4px solid #b0246a; }
+#cikti-yazililari .dugme.ana { background: #b0246a; border-color: #b0246a; color: #fff; min-height: 50px; padding: 10px 20px; font-size: 17px; font-weight: 800;
+  box-shadow: 0 6px 16px rgb(176 36 106 / .25); }
+#cikti-yazililari .dugme.ana:hover { filter: brightness(1.08); }
