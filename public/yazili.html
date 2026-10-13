@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ortak yazılı senaryoları · Ders Kutusu</title>
-<meta name="description" content="ÖDSGM 1. dönem ortak yazılı konu-soru dağılım senaryoları: hangi öğrenme çıktısından kaç soru çıkacak.">
+<title>Ortak yazılılar: senaryo ve öğrenme çıktısı · Ders Kutusu</title>
+<meta name="description" content="Ortak yazılı senaryoları ve öğrenme çıktısına göre yazılı kâğıtları: sınıf ve dersi seçin; senaryo tablosu, öğrenci kâğıdı ve cevap anahtarı (PDF).">
 <link rel="canonical" href="https://derskutusu.com/yazili.html">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#2451d6">
@@ -14,10 +14,10 @@
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:site_name" content="Ders Kutusu">
-<meta property="og:title" content="Ortak yazılı senaryoları · Ders Kutusu">
-<meta property="og:description" content="ÖDSGM 1. dönem ortak yazılı konu-soru dağılım senaryoları: hangi öğrenme çıktısından kaç soru çıkacak.">
+<meta property="og:title" content="Ortak yazılılar: senaryo ve öğrenme çıktısı · Ders Kutusu">
+<meta property="og:description" content="Ortak yazılı senaryoları ve öğrenme çıktısına göre yazılı kâğıtları: sınıf ve dersi seçin; senaryo tablosu, öğrenci kâğıdı ve cevap anahtarı (PDF).">
 <meta property="og:image" content="https://derskutusu.com/paylasim.png">
-<link rel="stylesheet" href="/stil.css?v=202610131255">
+<link rel="stylesheet" href="/stil.css?v=202610131610">
 <link rel="stylesheet" href="/renkler.css?v=20261013-1" media="screen">
 </head>
 <body data-kitle="ogretmen" data-site-renk="pembe">
@@ -60,16 +60,19 @@
 <main id="icerik">
   <section class="sayfa-bas">
     <div class="kap">
-      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a id="y-yol-sinif" href="/#siniflar">Sınıf</a><span aria-hidden="true">/</span><span>Ortak yazılı</span></nav>
-      <h1 id="y-baslik">Ortak yazılı senaryoları</h1>
-      <p>1. dönem, 2026-2027. Okulun zümresi senaryolardan birini seçer; tabloda her öğrenme çıktısından kaç soru çıkacağı yazar.</p>
-      <p class="y-cikti-gec-kap"><a class="y-cikti-gec" href="#cikti-yazililari"><span>Öğrenme çıktısına göre yazılılar<small>Her öğrenme çıktısı için ayrı kâğıt, cevaplı PDF</small></span><span aria-hidden="true">↓</span></a></p>
-      <div class="g-dugmeler y-ust" id="y-dugmeler"></div>
-      <nav class="sinif-gecis" id="y-siniflar" aria-label="Sınıflar"></nav>
+      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a id="y-yol-sinif" href="/ogretmen.html">Öğretmen Köşesi</a><span aria-hidden="true">/</span><span>Yazılılar</span></nav>
+      <h1 id="y-baslik">Yazılılar</h1>
+      <p id="yd-giris">1. dönem, 2026-2027. Sınıfınızı ve dersinizi seçin; o ders için iki tür yazılı açılır: senaryoya göre ve öğrenme çıktısına göre. Cevap anahtarları yalnız bu sayfadadır; öğrenciler kâğıtları <a href="/ogrenci.html">Öğrenci</a> bölümünde yalnızca öğrenci kâğıdı olarak bulur.</p>
+      <div class="yd-secim" id="yd-secim"></div>
+      <nav class="sinif-gecis" id="y-siniflar" aria-label="Aynı dersin öteki sınıfları"></nav>
+      <nav class="yd-gecis" id="yd-gecis" aria-label="Bu sayfadaki bölümler" hidden></nav>
     </div>
   </section>
-  <section class="bolum y-bolum">
+  <section class="bolum y-bolum" id="senaryo-yazilisi" aria-labelledby="yd-s1-baslik">
     <div class="kap">
+      <h2 class="yd-baslik" id="yd-s1-baslik">1 · Senaryoya göre yazılı</h2>
+      <p class="yd-aciklama">Okulun zümresi ÖDSGM ortak yazılı senaryolarından birini seçer; tablo her öğrenme çıktısından kaç soru çıkacağını gösterir, hazır kâğıt da o senaryonun tam yazılısıdır.</p>
+      <div class="g-dugmeler y-ust" id="y-dugmeler"></div>
       <div class="y-secim">
         <div class="sekmeler" id="y-yazililar" role="group" aria-label="Yazılı"></div>
         <div class="cipler" id="y-senaryolar" role="group" aria-label="Senaryo"></div>
@@ -119,6 +122,7 @@
 <script src="/ortak.js?v=20261013-1"></script>
 <script src="/yazili.js?v=20261010-1"></script>
 <script src="/yazili-cikti.js?v=79d67c33e4"></script>
+<script src="/yazili-duzen.js?v=20261013-1"></script>
 <script src="/arama.js?v=20261004-duzen1"></script>
 <script src="/tahta.js?v=20261013-1"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fffb5e8a709947ee9ba14ea753d96275"}'></script><!-- End Cloudflare Web Analytics -->

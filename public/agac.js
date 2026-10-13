@@ -6,6 +6,8 @@
   'use strict';
   const alan = document.getElementById('agac');
   if (!alan) return;
+  // replaceChildren(null) sayfaya "null" yazar; boş bölümler (null) atlanır
+  const yerles = (...c) => alan.replaceChildren(...c.filter(Boolean));
   const KITLE = document.body.dataset.kitle === 'ogretmen' ? 'ogretmen' : 'ogrenci';
   const P = new URLSearchParams(location.search);
   const K = () => window.Kesif || { category: () => ({ color: 'mavi', icon: 'kitap' }), subjectColor: () => 'mavi', gradeColor: () => 'mavi' };
@@ -197,7 +199,7 @@
     const arama = el('form', { sinif: 'agac-arama', action: '/ara.html', role: 'search' },
       el('label', { sinif: 'gizli', for: 'agac-q' }, 'Konu ara'), el('input', { id: 'agac-q', name: 'q', type: 'search', placeholder: 'Konu, ders ya da hafta ara…', autocomplete: 'off' }),
       el('button', { sinif: 'dugme ana', type: 'submit' }, simge('mercek'), 'Ara'));
-    alan.replaceChildren(
+    yerles(
       basBolum([{ ad: 'Öğrenci' }], 'Öğrenci', 'Merhaba! Hangi sınıftasın?', 'Sınıfını seç; derslerine, ünitelere ve haftanın konu anlatımlarına ulaş.', arama),
       bolum('', ...sinifIzgarasi(dersler, (n) => adres({ sinif: n }), (n) => {
         const d = [...dersler.siniflar[n], ...(dersler.secmeli?.[n] || [])];
@@ -226,7 +228,7 @@
         el('span', { sinif: 'agac-basla' }, 'Başla', el('span', { 'aria-hidden': 'true' }, ' →')));
     };
     const secmeli = dersler.secmeli?.[n] || [];
-    alan.replaceChildren(
+    yerles(
       basBolum([DAL_YOL, { ad: `${n}. sınıf` }], 'Öğrenci', `${n}. Sınıf Dersleri`, 'Dersini seç: üniteler ve konular yıllık plana göre sıralı.',
         sinifGecis(dersler, n, (s) => adres({ sinif: s }))),
       bolum('', el('div', { sinif: 'agac-dersler' }, dersler.siniflar[n].map(dersKarti))),
@@ -247,7 +249,7 @@
     const sinifYol = { ad: `${n}. sınıf`, href: adres({ sinif: n }) };
     if (!agac) {   // yıllık planı olmayan ders: içerikler haftaya göre
       document.title = `${n}. Sınıf ${ad} · Öğrenci · Ders Kutusu`;
-      alan.replaceChildren(basBolum([DAL_YOL, sinifYol, { ad }], `${n}. Sınıf`, ad, null),
+      yerles(basBolum([DAL_YOL, sinifYol, { ad }], `${n}. Sınıf`, ad, null),
         bolum('', ogr.length ? kartlar(yeniler(ogr), dersler, { dersGoster: false }) : bos('İçerikler hazırlanıyor', 'Bu dersin konu anlatımları eklendikçe burada listelenecek.', el('a', { sinif: 'dugme', href: adres({ sinif: n }) }, `${n}. sınıf derslerine dön`))),
         yaziliBolum(yz, n, d, []));
       return;
@@ -282,7 +284,7 @@
           el('span', { sinif: 'agac-unite-ok', 'aria-hidden': 'true' }, '›')),
         el('ol', { sinif: 'agac-konular' }, ks.map(konuSatiri)));
     });
-    alan.replaceChildren(
+    yerles(
       el('section', { sinif: 'agac-bas agac-ders-bas', 'data-renk': renk }, el('div', { sinif: 'kap' },
         konum(KOK_YOL, DAL_YOL, sinifYol, { ad }),
         el('div', { sinif: 'agac-ders-kart' },
@@ -316,7 +318,7 @@
       sekme('Tümü', '', k.icerik.length), ...turler.map((t) => sekme(K().category(t).title || t, t, k.icerik.filter((i) => i.tur === t).length)));
     const komsu = (j, yon) => j >= 0 && j < konular.length ? el('a', { sinif: `agac-komsu ${yon}`, href: adres({ sinif: n, ders: d, konu: konular[j].kod }) },
       el('small', {}, yon === 'onceki' ? '← Önceki konu' : 'Sonraki konu →'), el('strong', {}, konular[j].ad === konular[j].unite ? konular[j].unite : konular[j].ad)) : el('span', {});
-    alan.replaceChildren(
+    yerles(
       el('section', { sinif: 'agac-bas agac-ders-bas', 'data-renk': renk }, el('div', { sinif: 'kap' },
         konum(KOK_YOL, DAL_YOL, sinifYol, dersYol, { ad: baslik }),
         el('p', { sinif: 'agac-ust' }, `${n}. Sınıf · ${ad} · ${k.ui + 1}. ünite: ${k.unite}`),
@@ -354,7 +356,7 @@
         sayi ? el('span', { sinif: 'agac-adet' }, sayiYaz(sayi, 'dosya')) : null,
         el('h3', {}, k.ad), el('p', {}, k.aciklama), el('span', { sinif: 'agac-basla' }, 'Aç', el('span', { 'aria-hidden': 'true' }, ' →')));
     };
-    alan.replaceChildren(
+    yerles(
       basBolum([{ ad: 'Öğretmen Köşesi' }], 'Öğretmen', 'Öğretmen Köşesi', 'Bir kategori seçin: planlar, yazılılar, programlar ve derse hazırlık dosyaları.'),
       bolum('', el('div', { sinif: 'agac-kategoriler' }, KATEGORILER.map(kategoriKarti))),
       bolum('koyu-zemin', baslikSatiri('Öğretmenlere son eklenenler', null, el('a', { sinif: 'tumu', href: '/icerikler.html?kitle=ogretmen' }, 'Tümünü gör', simge('ok'))),
@@ -367,7 +369,7 @@
     const siniflar = new Set(ogt.map((i) => Number(i.sinif)));
     if (!n) {
       document.title = `${kat.ad} · Öğretmen Köşesi · Ders Kutusu`;
-      alan.replaceChildren(
+      yerles(
         basBolum([DAL_YOL, { ad: kat.ad }], 'Öğretmen Köşesi', kat.ad, 'Sınıfınızı seçin.'),
         bolum('', ...sinifIzgarasi(dersler, (s) => adres({ kategori: kat.kod, sinif: s }), (s) => sayiYaz(ogt.filter((i) => Number(i.sinif) === s).length, 'dosya'), (s) => siniflar.has(s))),
         kat.sayfa ? bolum('koyu-zemin', el('a', { sinif: 'dugme ana', href: kat.sayfa }, `${kat.ad} sayfasını aç`, simge('ok'))) : null);
@@ -377,7 +379,7 @@
     const buSinif = ogt.filter((i) => Number(i.sinif) === n);
     const sira = [...dersler.siniflar[n] || [], ...(dersler.secmeli?.[n] || [])];
     const dersAnahtar = [...new Set(buSinif.map((i) => i.ders))].sort((a, b) => (sira.indexOf(a) + 1 || 99) - (sira.indexOf(b) + 1 || 99));
-    alan.replaceChildren(
+    yerles(
       basBolum([DAL_YOL, katYol, { ad: `${n}. sınıf` }], kat.ad, `${n}. sınıf · ${kat.ad}`, null,
         sinifGecis(dersler, n, (s) => adres({ kategori: kat.kod, sinif: s }), (s) => siniflar.has(s))),
       bolum('', buSinif.length ? kartlar(dersAnahtar.flatMap((d) => buSinif.filter((i) => i.ders === d)), dersler)
@@ -387,7 +389,7 @@
   // ---------------------------------------------------------------- başlat
   Promise.all([ortakVeri, veri('agac/dizin.json')]).then(async ([v, dizin]) => {
     if (!v.dersler || !v.iceriklerYuklendi) {
-      alan.replaceChildren(bolum('', bos('İçerikler şu anda yüklenemedi', 'Sayfayı yenileyin ya da kütüphaneden arayın.', el('a', { sinif: 'dugme ana', href: '/icerikler.html' }, 'Kütüphaneyi aç'))));
+      yerles(bolum('', bos('İçerikler şu anda yüklenemedi', 'Sayfayı yenileyin ya da kütüphaneden arayın.', el('a', { sinif: 'dugme ana', href: '/icerikler.html' }, 'Kütüphaneyi aç'))));
       return;
     }
     const n = Number(P.get('sinif')) || null;

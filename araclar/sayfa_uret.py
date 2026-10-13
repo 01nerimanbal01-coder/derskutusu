@@ -12,7 +12,7 @@ from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'goruntule.js': '20261012-1', 'belgeler.js': '20261012-1', 'agac.js': '20261013-1', 'yazili.js': '20261010-1', 'ortak.js': '20261013-1', 'tahta.js': '20261013-1', 'etkinlik.js': '20261003-1', 'arama.js': '20261004-duzen1', 'kutuphane.js': '20261013-2', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4'}
+BETIK_SURUMLERI = {'goruntule.js': '20261012-1', 'belgeler.js': '20261012-1', 'agac.js': '20261013-2', 'yazili.js': '20261010-1', 'ortak.js': '20261013-1', 'tahta.js': '20261013-1', 'etkinlik.js': '20261003-1', 'arama.js': '20261004-duzen1', 'kutuphane.js': '20261013-2', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-1'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
@@ -217,18 +217,21 @@ GOVDE = {
     </div>
   </section>
   <div class="g-alan" id="g-alan"></div>''', ('goruntule.js',)),
-    'yazili.html': ('Ortak yazılı senaryoları', 'ÖDSGM 1. dönem ortak yazılı konu-soru dağılım senaryoları: hangi öğrenme çıktısından kaç soru çıkacak.', '''  <section class="sayfa-bas">
+    'yazili.html': ('Ortak yazılılar: senaryo ve öğrenme çıktısı', 'Ortak yazılı senaryoları ve öğrenme çıktısına göre yazılı kâğıtları: sınıf ve dersi seçin; senaryo tablosu, öğrenci kâğıdı ve cevap anahtarı (PDF).', '''  <section class="sayfa-bas">
     <div class="kap">
-      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a id="y-yol-sinif" href="/#siniflar">Sınıf</a><span aria-hidden="true">/</span><span>Ortak yazılı</span></nav>
-      <h1 id="y-baslik">Ortak yazılı senaryoları</h1>
-      <p>1. dönem, 2026-2027. Okulun zümresi senaryolardan birini seçer; tabloda her öğrenme çıktısından kaç soru çıkacağı yazar.</p>
-      <p class="y-cikti-gec-kap"><a class="y-cikti-gec" href="#cikti-yazililari"><span>Öğrenme çıktısına göre yazılılar<small>Her öğrenme çıktısı için ayrı kâğıt, cevaplı PDF</small></span><span aria-hidden="true">↓</span></a></p>
-      <div class="g-dugmeler y-ust" id="y-dugmeler"></div>
-      <nav class="sinif-gecis" id="y-siniflar" aria-label="Sınıflar"></nav>
+      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a id="y-yol-sinif" href="/ogretmen.html">Öğretmen Köşesi</a><span aria-hidden="true">/</span><span>Yazılılar</span></nav>
+      <h1 id="y-baslik">Yazılılar</h1>
+      <p id="yd-giris">1. dönem, 2026-2027. Sınıfınızı ve dersinizi seçin; o ders için iki tür yazılı açılır: senaryoya göre ve öğrenme çıktısına göre. Cevap anahtarları yalnız bu sayfadadır; öğrenciler kâğıtları <a href="/ogrenci.html">Öğrenci</a> bölümünde yalnızca öğrenci kâğıdı olarak bulur.</p>
+      <div class="yd-secim" id="yd-secim"></div>
+      <nav class="sinif-gecis" id="y-siniflar" aria-label="Aynı dersin öteki sınıfları"></nav>
+      <nav class="yd-gecis" id="yd-gecis" aria-label="Bu sayfadaki bölümler" hidden></nav>
     </div>
   </section>
-  <section class="bolum y-bolum">
+  <section class="bolum y-bolum" id="senaryo-yazilisi" aria-labelledby="yd-s1-baslik">
     <div class="kap">
+      <h2 class="yd-baslik" id="yd-s1-baslik">1 · Senaryoya göre yazılı</h2>
+      <p class="yd-aciklama">Okulun zümresi ÖDSGM ortak yazılı senaryolarından birini seçer; tablo her öğrenme çıktısından kaç soru çıkacağını gösterir, hazır kâğıt da o senaryonun tam yazılısıdır.</p>
+      <div class="g-dugmeler y-ust" id="y-dugmeler"></div>
       <div class="y-secim">
         <div class="sekmeler" id="y-yazililar" role="group" aria-label="Yazılı"></div>
         <div class="cipler" id="y-senaryolar" role="group" aria-label="Senaryo"></div>
@@ -236,7 +239,7 @@ GOVDE = {
       </div>
       <div class="y-kaydir" id="y-tablo"></div>
     </div>
-  </section>''', ('yazili.js', 'yazili-cikti.js')),
+  </section>''', ('yazili.js', 'yazili-cikti.js', 'yazili-duzen.js')),
     'tahta.html': ('Akıllı tahta', 'Tarayıcıda çalışan akıllı tahta: kalem, fosforlu kalem, silgi, renkler, kareli ve çizgili zemin, sayfalar.', '''  <section class="tahta-sayfa">
     <div class="kap tahta-ustbar">
       <h1>Akıllı tahta</h1>
