@@ -13,8 +13,8 @@ const server = http.createServer(async (req, res) => {
   const pathname = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
   const file = path.resolve(root, '.' + (pathname === '/' ? '/index.html' : pathname));
   if (!file.startsWith(root + path.sep)) { res.writeHead(403).end(); return; }
-  try { res.writeHead(200, { 'Content-Type': mime[path.extname(file)] || 'application/octet-stream' }).end(await fs.readFile(file)); }
-  catch { res.writeHead(404).end(); }
+  let govde; try { govde = await fs.readFile(file); } catch { res.writeHead(404).end(); return; }
+  res.writeHead(200, { 'Content-Type': mime[path.extname(file)] || 'application/octet-stream' }).end(govde);
 });
 async function cevapla(page, tur) {
   if (tur === 'coktan') await page.locator('.t-soru .etk-sec').first().click();
@@ -95,6 +95,23 @@ async function run(engine, name, base) {
     await page.getByRole('button', { name: /Yanlışları tekrar/ }).click();
     await expect(page.locator('.t-ilerleme-yazi')).toContainText('yanlışlar');
     ok('Sonunda dönüt, klavye, sürdürme, boş bitirme ve yanlışları tekrar');
+
+    // Zayıf konular: istatistikte %70 altı ve ≥3 deneme olan konu paneli, ondan test başlatma; test ekranında panel gizli
+    const fenKonu = JSON.parse(await fs.readFile(path.join(root, 'veri/soru/5-fen-bilimleri.json'), 'utf8')).uniteler[0].konular[0].kod;
+    await page.evaluate(() => { sessionStorage.removeItem('test-oturum'); localStorage.removeItem('test-istatistik'); });
+    await page.goto(base + '/test.html?sinif=5&ders=fen-bilimleri');
+    await expect(page.locator('#t-kurulum')).toBeVisible();
+    await expect(page.locator('#t-zayif')).toBeHidden();
+    await page.evaluate((kod) => localStorage.setItem('test-istatistik', JSON.stringify({ '5-fen-bilimleri': { konu: { [kod]: [1, 4] }, cikti: {} } })), fenKonu);
+    await page.reload();
+    await expect(page.locator('#t-zayif')).toBeVisible();
+    await expect(page.locator('#t-zayif li')).toHaveCount(1);
+    await expect(page.locator('#t-zayif li b')).toHaveText('25%');
+    await page.locator('#t-zayif button').click();
+    await expect(page.locator('.t-ilerleme-yazi')).toContainText('zayıf konular');
+    await expect(page.locator('#t-zayif')).toBeHidden();
+    assert((await page.locator('.t-soru-bas').textContent()).length > 0);
+    ok('Zayıf konular paneli ve ondan test başlatma');
 
     // Dar ekran: taşma yok
     await page.setViewportSize({ width: 360, height: 780 });

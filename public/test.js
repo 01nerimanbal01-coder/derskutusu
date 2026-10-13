@@ -35,7 +35,7 @@
     if (!havuzOnbellek.has(dersAnahtar)) havuzOnbellek.set(dersAnahtar, veri(`soru/${dersAnahtar}.json`));
     const yuklenen = await havuzOnbellek.get(dersAnahtar);
     if (`${alan.sinif.value}-${alan.ders.value}` !== dersAnahtar) return;   // bu arada seçim değişti
-    ders = yuklenen; konuDoldur();
+    ders = yuklenen; konuDoldur(); zayifCiz();
   }
   function konuDoldur() {
     const istenen = alan.konu.value || P.get('konu') || '';
@@ -121,6 +121,7 @@
   const kaydet = () => { try { sessionStorage.setItem(OTURUM, JSON.stringify(oturum)); } catch { /* bellek yok */ } };
   function goster(hangi) {
     kurulum.hidden = hangi !== 'kurulum'; gecmisAlan.hidden = hangi !== 'kurulum' || !gecmisAlan.querySelector('li');
+    const zayifAlan = document.getElementById('t-zayif'); if (zayifAlan) zayifAlan.hidden = hangi !== 'kurulum' || !zayifAlan.querySelector('li');
     testAlan.hidden = hangi !== 'test'; sonucAlan.hidden = hangi !== 'sonuc';
     document.body.classList.toggle('test-acik', hangi === 'test');
     window.scrollTo({ top: 0, behavior: 'instant' });
@@ -318,6 +319,13 @@
     const gecmis = depo.al('test-gecmis', []);
     gecmis.unshift({ tarih: new Date().toISOString(), anahtar: oturum.anahtar, kapsam: oturum.kapsam, dogru, toplam, sure: oturum.sure });
     depo.koy('test-gecmis', gecmis.slice(0, 30));
+    // Konu ve çıktı başına doğru/toplam: kurulumdaki "zayıf konular" önerisi bunu kullanır
+    const ist = depo.al('test-istatistik', {}); const d = ist[oturum.anahtar] || (ist[oturum.anahtar] = { konu: {}, cikti: {} });
+    oturum.sorular.forEach((q, i) => {
+      const ok = oturum.cevaplar[i]?.dogru === true;
+      for (const [tur, kodlar] of [['konu', [q.konu]], ['cikti', q.cikti || []]]) for (const kod of kodlar) { const g = d[tur][kod] || (d[tur][kod] = [0, 0]); g[0] += ok ? 1 : 0; g[1]++; }
+    });
+    depo.koy('test-istatistik', ist);
     sonucGoster();
   }
   function sonucGoster() {
@@ -368,7 +376,27 @@
     if (q.tur === 'siralama') return html('p', 't-dogru-cevap', `<b>Doğru sıra:</b> ${q.ogeler.join(' → ')}`);
     return html('p', 't-dogru-cevap', `<b>Cevap:</b> ${q.cevap}`);
   }
+  // Bu derste en az 3 soru çözülmüş ve doğruluk %70'in altında kalan konular/çıktılar: "Zayıf konulardan test"
+  function zayifCiz() {
+    const alanZ = document.getElementById('t-zayif'); if (!alanZ) return;
+    const ist = depo.al('test-istatistik', {})[dersAnahtar];
+    const zayif = [];
+    if (ist && ders) {
+      for (const [kod, [d, t]] of Object.entries(ist.konu || {})) if (t >= 3 && d / t < 0.7) zayif.push({ tur: 'konu', kod, ad: ders.uniteler.flatMap((u) => u.konular).find((k) => k.kod === kod)?.ad || kod, d, t });
+      for (const [kod, [d, t]] of Object.entries(ist.cikti || {})) if (t >= 3 && d / t < 0.7) zayif.push({ tur: 'cikti', kod, ad: `${kod} · ${ders.ciktilar.find((c) => c.kod === kod)?.ifade || ''}`, d, t });
+    }
+    alanZ.hidden = !zayif.length;
+    if (!zayif.length) return;
+    const havuzZ = ders.sorular.filter((s) => new Set(secilenTurler()).has(s.tur) && zayif.some((z) => (z.tur === 'konu' ? s.konu === z.kod : s.cikti.includes(z.kod))));
+    alanZ.replaceChildren(el('h2', {}, 'Zayıf olduğun konular'),
+      el('ul', {}, ...zayif.sort((a, b) => a.d / a.t - b.d / b.t).slice(0, 6).map((z) => el('li', {}, el('span', {}, z.ad), el('b', {}, `${Math.round(100 * z.d / z.t)}%`), el('small', {}, `${z.d} / ${z.t}`)))),
+      el('button', { sinif: 'dugme ana', type: 'button', disabled: !havuzZ.length, onclick: () => {
+        depo.koy('test-son', { sinif: alan.sinif.value, ders: alan.ders.value, turler: secilenTurler(), adet: alan.adet.value, donut: alan.donut.value });
+        oturumBaslat(secimYap(havuzZ, Number(alan.adet.value) || 0), `${ders.sinif}. sınıf ${ders.dersAd} · zayıf konular`, alan.donut.value);
+      } }, `Zayıf konulardan test (${havuzZ.length} soru)`));
+  }
   function gecmisCiz() {
+    zayifCiz();
     const liste = depo.al('test-gecmis', []).slice(0, 6);
     const ol = gecmisAlan.querySelector('ol');
     ol.replaceChildren(...liste.map((g) => el('li', {}, el('span', {}, g.kapsam), el('b', {}, `${g.dogru} / ${g.toplam}`), el('time', { datetime: g.tarih }, new Date(g.tarih).toLocaleDateString('tr-TR', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })))));
@@ -396,7 +424,7 @@
   alan.ders.addEventListener('change', dersYukle);
   alan.konu.addEventListener('change', ciktiDoldur);
   alan.cikti.addEventListener('change', havuzGuncelle);
-  turKutular().forEach((k) => k.addEventListener('change', havuzGuncelle));
+  turKutular().forEach((k) => k.addEventListener('change', () => { havuzGuncelle(); zayifCiz(); }));
   function dersDoldur() {
     const sinif = alan.sinif.value;
     const liste = Object.values(dizin.dersler).filter((d) => String(d.sinif) === sinif).sort((a, b) => a.ad.localeCompare(b.ad, 'tr'));

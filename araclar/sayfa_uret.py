@@ -13,7 +13,7 @@ from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'goruntule.js': '20261013-1', 'belgeler.js': '20261013-1', 'agac.js': '20261013-4', 'yazili.js': '20261013-1', 'ortak.js': '20261013-2', 'tahta.js': '20261013-4', 'etkinlik.js': '20261003-1', 'arama.js': '20261013-3', 'kutuphane.js': '20261013-4', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-2', 'test.js': '20261013-1'}
+BETIK_SURUMLERI = {'goruntule.js': '20261013-1', 'belgeler.js': '20261013-1', 'agac.js': '20261013-4', 'yazili.js': '20261013-1', 'ortak.js': '20261013-2', 'tahta.js': '20261013-4', 'etkinlik.js': '20261003-1', 'arama.js': '20261013-3', 'kutuphane.js': '20261013-4', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-2', 'test.js': '20261013-2'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
@@ -504,6 +504,7 @@ GOVDE['test.html'] = ('Çevrimiçi test', 'Çevrimiçi test: sınıfını ve der
         <p id="t-havuz" class="t-havuz" role="status" aria-live="polite"></p>
         <button class="dugme ana buyuk" type="submit" id="t-basla" disabled>Teste başla</button>
       </form>
+      <section id="t-zayif" class="t-gecmis t-zayif" hidden></section>
       <section id="t-gecmis" class="t-gecmis" hidden><h2>Son sonuçların</h2><ol></ol></section>
       <section id="t-test" class="t-test" hidden></section>
       <section id="t-sonuc" class="t-sonuc" hidden></section>

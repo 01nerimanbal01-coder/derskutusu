@@ -1058,6 +1058,9 @@ body:has(.ust-arama .oneri:not([hidden])) .kalem-dugme { display: none; }   /* t
 .t-gecmis ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
 .t-gecmis li { display: flex; align-items: center; gap: 12px; padding: 10px 14px; border: 1px solid var(--cizgi); border-radius: 12px; background: var(--yuzey); font-size: 14px; }
 .t-gecmis li span { flex: 1; min-width: 0; } .t-gecmis li b { color: var(--vurgu); white-space: nowrap; } .t-gecmis time { color: var(--soluk); font-size: 13px; white-space: nowrap; }
+.t-zayif ul { list-style: none; margin: 0 0 12px; padding: 0; display: grid; gap: 6px; }
+.t-zayif li { display: flex; align-items: center; gap: 12px; padding: 10px 14px; border: 1px solid var(--cizgi); border-left: 4px solid var(--kirmizi-metin); border-radius: 12px; background: var(--yuzey); font-size: 14px; }
+.t-zayif li span { flex: 1; min-width: 0; } .t-zayif li b { color: var(--kirmizi-metin); } .t-zayif li small { color: var(--soluk); white-space: nowrap; }
 .t-test { max-width: 980px; }
 .t-ilerleme { display: grid; gap: 6px; margin-bottom: 16px; }
 .t-ilerleme-yazi { margin: 0; font-weight: 700; } .t-ilerleme-yazi small { color: var(--soluk); font-weight: 500; }
