@@ -1,13 +1,24 @@
-// İçerik kütüphanesi: sinif.html (bir sınıfın dersleri) ve icerikler.html (süzgeçli liste).
+// İçerik kütüphanesi: icerikler.html (süzgeçli liste). Eski sinif.html adresi öğrenci dalına yönlendirilir.
 // Veriler: veri/dersler.json (sınıf, ders, tür) ve veri/icerikler.json (içerikler).
 
 const parametre = new URLSearchParams(location.search);
+
+// Sınıf sayfası öğrenci dalına taşındı (11.10.2026): eski /sinif.html?no=N bağlantıları veri beklenmeden yönlendirilir.
+const sinifYonlendirme = /\/sinif\.html$/.test(location.pathname);
+if (sinifYonlendirme) {
+  const no = parametre.get('no');
+  location.replace(/^\d+$/.test(no) ? `/ogrenci.html?sinif=${no}` : '/ogrenci.html');
+}
 
 // Ortak içerikler (ör. çalışma kâğıtları) iki kitlede de sayılır ve listelenir.
 function kitleDenetleyici(dersler) {
   const turKitle = Object.fromEntries(dersler.turler.map((t) => [t.ad, t.kitle]));
   return (i, k) => (i.kitle || 'ogrenci') === k || turKitle[i.tur] === k;
 }
+
+// Kütüphane araması: Türkçe küçük harf, aksan ve ı/i farkı gözetmez (kâğıt = kagit); yazılan her sözcük metinde geçmeli.
+const aramaDuz = (s) => String(s || '').toLocaleLowerCase('tr').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ı/g, 'i').replace(/[^a-z0-9]+/g, ' ').trim();
+const aramaEslesir = (metin, sorgu) => { const m = aramaDuz(metin); return aramaDuz(sorgu).split(' ').filter(Boolean).every((s) => m.includes(s)); };
 
 function icerikKarti(i, dersler) {
   const dersAd = dersler.dersler[i.ders] || i.ders;
@@ -39,51 +50,6 @@ function icerikKarti(i, dersler) {
   }
   return kart;
 }
-
-function sinifSayfasi({ dersler, icerikler }) {
-  const no = Number(parametre.get('no'));
-  const liste = dersler.siniflar[no];
-  if (!liste) { location.replace('icerikler.html'); return; }
-  location.replace(`/ogrenci.html?sinif=${no}`); return;   // site ağacı (11.10.2026): sınıf sayfası öğrenci dalına taşındı
-  const kademe = dersler.kademeler.find((k) => k.siniflar.includes(no))?.ad || '';
-  document.title = `${no}. sınıf · Ders Kutusu`;
-  $('#baslik').textContent = `${no}. sınıf`;
-  $('#yol-sinif').textContent = `${no}. sınıf`;
-  $('#aciklama').textContent = `${kademe} ${no}. sınıf: ${liste.length} ders için konu anlatımları, soru çözümleri, videolar ve öğretmen dosyaları.`;
-  $('#sinif-gecis').replaceChildren(...Object.keys(dersler.siniflar).map((n) =>
-    el('a', { href: `sinif.html?no=${n}`, 'data-renk': window.Kesif?.gradeColor(n) || 'mavi', 'aria-current': Number(n) === no ? 'page' : null }, `${n}. sınıf`)));
-  const buSinif = icerikler.filter((i) => Number(i.sinif) === no);
-  const kitleUyar = kitleDenetleyici(dersler);
-  const dersKarti = (d, s) => {
-    const ad = dersler.dersler[d];
-    const ogrenci = buSinif.filter((i) => i.ders === d && kitleUyar(i, 'ogrenci')).length;
-    const ogretmen = buSinif.filter((i) => i.ders === d && kitleUyar(i, 'ogretmen')).length;
-    return el('a', { sinif: 'ders-kart', 'data-renk': window.Kesif?.subjectColor(d) || 'mavi', href: `icerikler.html?sinif=${no}&ders=${d}` },
-      el('div', { sinif: 'ders-kart-ust' },
-        el('span', { sinif: 'ders-harf' }, ad.replace(/^T\.C\. /, '').charAt(0)),
-        el('h3', {}, ad)),
-      el('div', { sinif: 'sayilar' },
-        el('span', {}, ogrenci ? `${ogrenci} öğrenci içeriği` : 'Öğrenci içerikleri yakında'),
-        el('span', { sinif: 'ogretmen' }, ogretmen ? `${ogretmen} öğretmen dosyası` : 'Öğretmen dosyaları yakında')));
-  };
-  $('#ders-listesi').replaceChildren(...liste.map(dersKarti));
-  const secmeli = dersler.secmeli?.[no] || [];
-  if (secmeli.length && $('#secmeli-listesi')) {
-    $('#secmeli-listesi').replaceChildren(...secmeli.map((d, s) => dersKarti(d, s + liste.length)));
-    $('#secmeli-bolum').hidden = false;
-  }
-  $('#tum-icerik').href = `icerikler.html?sinif=${no}`;
-  const hizli = $('#ogretmen-hizli');   // öğretmen kısayolları: bu sınıfın günlük ve yıllık planları
-  if (hizli) {
-    hizli.replaceChildren(el('span', {}, 'Öğretmen:'),
-      el('a', { href: `/planlar.html?sinif=${no}` }, simge('takvim'), 'Günlük planlar', el('small', {}, 'Word · PDF · aylık')),
-      el('a', { href: `/icerikler.html?sinif=${no}&kitle=ogretmen&tur=${encodeURIComponent('Yıllık plan')}` }, simge('kitap'), 'Yıllık planlar'));
-    hizli.hidden = false;
-  }
-}
-
-// Akıllı arama yüklüyse yazım hatasına dayanıklı eşleşme, değilse düz içerme.
-const aramaEslesir = (metin, q) => (typeof Arama !== 'undefined' ? Arama.metinEslesir(metin, q) : metin.toLocaleLowerCase('tr').includes(q.toLocaleLowerCase('tr')));
 
 function icerikSayfasi({ dersler, icerikler }) {
   const alan = { sinif: $('#s-sinif'), ders: $('#s-ders'), tur: $('#s-tur'), hafta: $('#s-hafta'), kitle: $('#s-kitle'), ara: $('#s-ara') };
@@ -222,8 +188,9 @@ function icerikSayfasi({ dersler, icerikler }) {
 }
 
 ortakVeri.then((v) => {
+  if (sinifYonlendirme) return;
   if (!v.dersler || v.iceriklerYuklendi === false) {
-    const yer = $('#kartlar') || $('#ders-listesi');
+    const yer = $('#kartlar');
     if (yer) {
       yer.hidden = false;
       yer.replaceChildren(el('div', { role: 'alert', style: 'grid-column: 1 / -1' },
@@ -242,6 +209,5 @@ ortakVeri.then((v) => {
     if (sayi) sayi.textContent = '';
     return;
   }
-  if ($('#ders-listesi')) sinifSayfasi(v);
   if ($('#s-sinif')) icerikSayfasi(v);
 });

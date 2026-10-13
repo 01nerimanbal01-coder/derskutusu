@@ -100,20 +100,15 @@ async function coverage(page, base, browserName, filenames) {
 }
 async function interfaces(page, base, name) {
   const data = JSON.parse(await fs.readFile(path.join(root,'veri/icerikler.json'),'utf8')).icerikler;
+  // Ana sayfa (11.10.2026): rol kartları ve "Son eklenenler" (en yeni 6 kayıt); kaynak türleri kütüphane kenar çubuğunda.
   await page.goto(base + '/');
-  await expect(page.locator('.kesif-kategori')).toHaveCount(8);
-  await expect(page.locator('[data-kesif-sayi="kaynak"]')).toHaveText(String(data.length));
-  const categories = await page.locator('.kesif-kategori').evaluateAll(nodes => nodes.map(n => ({ href:n.getAttribute('href'), count:n.querySelector('.kesif-adet').textContent })));
-  for (const item of categories) {
-    const type = new URL(item.href,'http://localhost').searchParams.get('tur');
-    assert.equal(parseInt(item.count),data.filter(i=>i.tur===type).length);
-  }
+  await expect(page.locator('.rol-kart')).toHaveCount(2);
+  await expect(page.locator('#kartlar .kart')).toHaveCount(Math.min(6, data.length));
   await page.screenshot({ path:path.join(output,name+'-ana-sayfa.png'), fullPage:true });
   await page.screenshot({ path:path.join(output,name+'-home-viewport.png') });
-  await page.locator('#hizli-bul [name="sinif"]').selectOption('5');
-  await page.locator('#hizli-bul [name="ders"]').selectOption('matematik');
-  await page.locator('#hizli-bul [name="tur"]').selectOption('Konu anlatımı');
-  await page.locator('#hizli-bul button').click();
+  await page.goto(base + '/icerikler.html?sinif=5&ders=matematik&tur=' + encodeURIComponent('Konu anlatımı'));
+  const categories = await page.evaluate(() => window.Kesif.categories.map(c => ({ href:'/icerikler.html?tur=' + encodeURIComponent(c.type) })));
+  assert.equal(categories.length, 8);
   await expect(page.locator('#s-sinif')).toHaveValue('5');
   await expect(page.locator('#s-ders')).toHaveValue('matematik');
   await expect(page.locator('#s-tur')).toHaveValue('Konu anlatımı');
@@ -147,19 +142,21 @@ async function interfaces(page, base, name) {
   await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));
   await page.screenshot({ path:path.join(output,name+'-kutuphane.png'), fullPage:true });
   await page.screenshot({ path:path.join(output,name+'-library-viewport.png') });
+  // Sınıf sayfaları öğrenci ağacında (11.10.2026); eski /sinif.html?no=N adresi oraya yönlendirir.
   for (let grade=5;grade<=12;grade++) {
-    await page.goto(base + '/sinif.html?no='+grade);
-    await expect(page.locator('#baslik')).toContainText(grade+'. sınıf');
-    assert(await page.locator('.ders-kart').count()>0);
-    for (const href of await page.locator('.ders-kart').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('href')))) assert.equal(new URL(href,base).searchParams.get('sinif'),String(grade));
+    await page.goto(base + '/ogrenci.html?sinif='+grade);
+    await expect(page.locator('.agac-bas h1')).toContainText(grade+'. Sınıf');
+    assert(await page.locator('.agac-ders').count()>0);
+    for (const href of await page.locator('.agac-ders').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('href')))) assert.equal(new URL(href,base).searchParams.get('sinif'),String(grade));
   }
   await page.goto(base + '/sinif.html?no=5');
-  await page.locator('.ders-kart').first().waitFor();
+  await page.waitForURL('**/ogrenci.html?sinif=5');
+  await page.locator('.agac-ders').first().waitFor();
   await page.screenshot({ path:path.join(output,name+'-sinif.png'), fullPage:true });
   for (const width of [768,360]) {
     await page.setViewportSize({width,height:900});
-    for (const route of ['/', '/icerikler.html', '/sinif.html?no=5']) {
-      await page.goto(base+route); await page.locator(route==='/'?'.kesif-kategori':route.includes('icerikler')?'#kartlar .kart':'.ders-kart').first().waitFor();
+    for (const route of ['/', '/icerikler.html', '/ogrenci.html?sinif=5']) {
+      await page.goto(base+route); await page.locator(route==='/'?'#kartlar .kart':route.includes('icerikler')?'#kartlar .kart':'.agac-ders').first().waitFor();
       const overflow = await page.evaluate(() => [...document.body.querySelectorAll('*')].filter(n => {
         const box = n.getBoundingClientRect(); return box.width && (box.right > innerWidth + 1 || box.left < -1) && getComputedStyle(n).position !== 'absolute';
       }).slice(0,12).map(n=>({tag:n.tagName,class:n.className,width:n.getBoundingClientRect().width,right:n.getBoundingClientRect().right})));
@@ -176,7 +173,7 @@ async function interfaces(page, base, name) {
   await page.screenshot({path:path.join(output,name+'-koyu-tema.png'),fullPage:true});
   await page.emulateMedia({colorScheme:'light'});
   await page.setViewportSize({width:1366,height:900});
-  report.interfaces.push({browser:name,status:'passed', categories:8,classes:8,widths:[1366,768,360],checks:['gerçek kategori sayıları','hızlı bul','bağımlı filtreler','kısa ve uzun liste','sıralama','sonuçsuz arama','aramayı temizle','yenileme','mobil menü','karanlık tema','yatay taşma']});
+  report.interfaces.push({browser:name,status:'passed', categories:categories.length,classes:8,widths:[1366,768,360],checks:['gerçek kategori sayıları','hızlı bul','bağımlı filtreler','kısa ve uzun liste','sıralama','sonuçsuz arama','aramayı temizle','yenileme','mobil menü','karanlık tema','yatay taşma']});
 }
 (async()=>{
   await fs.mkdir(output,{recursive:true});

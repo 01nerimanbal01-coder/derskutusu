@@ -64,14 +64,14 @@ async function runCatalogChecks(commonSource, librarySource) {
       };
     }, '/');
   }
-  async function render(page, data) {
+  async function render(page, data, search = page === 'class' ? '?no=5' : '') {
     const ids = page === 'library'
       ? ['s-sinif','s-ders','s-kitle','s-hafta','s-tur','s-ara','s-sirala','kartlar','sonuc-sayi','temizle','icerik-yakinda','sonucsuz-baslik','sonucsuz-aciklama','aramayi-temizle','sonucsuz-temizle','daha-goster','daha-alani','gosterilen-sayi','secili-suzgecler']
       : ['ders-listesi','baslik','yol-sinif','aciklama','sinif-gecis','tum-icerik','secmeli-listesi','secmeli-bolum','ogretmen-hizli'];
     const nodes = Object.fromEntries(ids.map(id => [id, new Node(id.startsWith('s-') && id !== 's-ara' ? 'select' : 'div')]));
     if (nodes['s-sirala']) nodes['s-sirala'].value = 'yeni';
     const state = {reloads:0, replaced:[], url:null};
-    const location = {search:page === 'class' ? '?no=5' : '', pathname:page === 'class' ? '/sinif.html' : '/icerikler.html',
+    const location = {search, pathname:page === 'class' ? '/sinif.html' : '/icerikler.html',
       reload:() => state.reloads++, replace:url => state.replaced.push(url)};
     await new Function('$','el','simge','location','document','window','history','URLSearchParams','ortakVeri',
       librarySource + '\nreturn ortakVeri.then(() => undefined);')(
@@ -85,6 +85,13 @@ async function runCatalogChecks(commonSource, librarySource) {
     const data = await load(mode);
     for (const page of ['library', 'class']) {
       const {nodes, state, target} = await render(page, data);
+      if (page === 'class') {
+        // Eski sınıf sayfası (11.10.2026): veri yüklenemese de /ogrenci.html?sinif=N'e yönlendirir, hata kutusu çizmez.
+        assert(JSON.stringify(state.replaced) === JSON.stringify(['/ogrenci.html?sinif=5']), mode + '/class: redirect missing');
+        assert(target.children.length === 0 && state.reloads === 0, mode + '/class: rendered after redirect');
+        cases.push({name:mode + '/' + page, status:'passed'});
+        continue;
+      }
       const alert = target.children.find(n => n?.attrs?.role === 'alert');
       assert(alert && alert.textContent.includes('Kaynak listesi yüklenemedi'), mode + '/' + page + ': missing load error');
       assert(target.hidden === false, mode + '/' + page + ': error hidden');
@@ -105,7 +112,7 @@ async function runCatalogChecks(commonSource, librarySource) {
     const data = await load(mode);
     assert(data.iceriklerYuklendi === true, mode + ': valid catalog marked unavailable');
     for (const page of ['library', 'class']) {
-      const {nodes, target} = await render(page, data);
+      const {nodes, state, target} = await render(page, data);
       assert(!target.children.some(n => n?.attrs?.role === 'alert'), mode + '/' + page + ': unexpected load error');
       if (page === 'library') {
         assert(nodes['sonuc-sayi'].textContent === (mode === 'empty' ? '0 içerik' : '1 içerik'), mode + ': wrong count');
@@ -113,11 +120,17 @@ async function runCatalogChecks(commonSource, librarySource) {
         assert(!nodes['s-sinif'].disabled, 'Loaded filter disabled');
         if (mode !== 'empty') assert(target.textContent.includes('Kesirler'), 'Real content lost');
       } else {
-        assert(target.textContent.includes('Matematik'), 'Class subject lost');
-        assert(target.textContent.includes(mode === 'empty' ? 'Öğrenci içerikleri yakında' : '1 öğrenci içeriği'), 'Wrong class count');
+        assert(JSON.stringify(state.replaced) === JSON.stringify(['/ogrenci.html?sinif=5']), mode + '/class: redirect missing');
+        assert(target.children.length === 0, mode + '/class: old class page rendered instead of redirecting');
       }
       cases.push({name:mode + '/' + page, status:'passed'});
     }
+  }
+  {
+    const data = await load('populated');
+    const {state} = await render('class', data, '?no=abc');
+    assert(JSON.stringify(state.replaced) === JSON.stringify(['/ogrenci.html']), 'Invalid grade must fall back to the student root');
+    cases.push({name:'invalid-grade/class', status:'passed'});
   }
   return {status:'passed', environment:'JavaScript V8 with minimal DOM fixture; not a browser', cases};
 }

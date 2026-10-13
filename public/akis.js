@@ -1,34 +1,9 @@
-// Ana sayfa: sınıf kartları, öğretmen köşesi sayıları, son eklenen içerikler ve sosyal medya akışları.
+// Ana sayfa: son eklenen içerikler ve sosyal medya akışları. (Sınıf kartları 11.10.2026'dan beri ogrenci.html'de, agac.js çizer.)
 // youtube.json ve instagram.json her gün araclar/akis_guncelle.py ile yenilenir (GitHub Actions).
 // Dışarıdan (YouTube, Instagram, Facebook) hiçbir şey ziyaretçi tıklamadan yüklenmez.
 
 const tarih = (t) => (t ? el('time', { datetime: t }, tarihBicim.format(new Date(t))) : null);
 const bosKutu = (metin) => el('div', { sinif: 'bos' }, metin);
-
-function siniflariGoster(dersler, icerikler) {
-  const alan = $('#sinif-listesi');
-  if (!dersler || !alan) return;
-  $$('[data-sayi="ders"]').forEach((e) => { e.textContent = Object.keys(dersler.dersler).length; });
-  alan.replaceChildren(...dersler.kademeler.map((k) => el('div', { sinif: 'kademe' },
-    el('h3', { sinif: 'kademe-ad' }, k.ad),
-    el('div', { sinif: 'sinif-izgara' }, k.siniflar.map((n) => {
-      const dersSay = new Set([...(dersler.siniflar[n] || []), ...(dersler.secmeli?.[n] || [])]).size;
-      const icerikSay = icerikler.filter((i) => Number(i.sinif) === n).length;
-      return el('a', { sinif: 'sinif-kart', 'data-renk': window.Kesif?.gradeColor(n) || 'mavi', href: `sinif.html?no=${n}` },
-        el('span', { sinif: 'sinif-no' }, String(n)),
-        el('span', { sinif: 'sinif-ad' }, `${n}. sınıf`),
-        el('span', { sinif: 'sinif-bilgi' }, `${dersSay} ders${icerikSay ? ` · ${icerikSay} içerik` : ''}`),
-        simge('ok', 'sinif-ok'));
-    })))));
-}
-
-function turSayilari(icerikler) {
-  $$('[data-tur-sayi]').forEach((e) => {
-    const n = icerikler.filter((i) => i.tur === e.dataset.turSayi).length;
-    e.textContent = n ? `${n} dosya` : 'Yakında';
-    e.classList.toggle('yakinda-etiket', !n);
-  });
-}
 
 function sonEklenenler(icerikler, dersler) {
   const kartlar = $('#kartlar');
@@ -124,12 +99,11 @@ function facebookGoster(ayar) {
 
 (async () => {
   const [{ ayar, dersler, icerikler }, yt, ig] = await Promise.all([ortakVeri, veri('youtube.json'), veri('instagram.json')]);
-  siniflariGoster(dersler, icerikler);
-  turSayilari(icerikler);
   sonEklenenler(icerikler, dersler);
   videolariGoster(yt);
   instagramGoster(ig, ayar);
   facebookGoster(ayar);
-  const son = [yt?.guncelleme, ig?.guncelleme].filter(Boolean).sort().pop();
-  if (son) $('#guncelleme').textContent = `Sosyal medya akışı son güncelleme: ${tarihBicim.format(new Date(son))}`;
+  // Akışta gösterilecek kayıt yokken "son güncelleme" satırı yalnız eski bir tarih gösterir; o zaman yazılmaz.
+  const son = [yt?.videolar?.length && yt.guncelleme, ig?.gonderiler?.length && ig.guncelleme].filter(Boolean).sort().pop();
+  if (son && !isNaN(new Date(son))) $('#guncelleme').textContent = `Sosyal medya akışı son güncelleme: ${tarihBicim.format(new Date(son))}`;
 })();

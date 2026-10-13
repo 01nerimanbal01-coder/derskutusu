@@ -48,7 +48,7 @@ Promise.all([veri('senaryolar.json'), ortakVeri, veri('yazili-kagitlari.json')])
   if (yolSon) yolSon.replaceWith(el('a', { href: '/yazili.html' }, yolSon.textContent));
   document.title = `${sinif}. sınıf ${dersAd} ortak yazılı senaryoları · Ders Kutusu`;
   $('#y-yol-sinif').textContent = `${sinif}. sınıf`;
-  $('#y-yol-sinif').href = `/sinif.html?no=${sinif}`;
+  $('#y-yol-sinif').href = `/ogretmen.html?kategori=yazili&sinif=${sinif}`;   // öğretmen dalında bu sınıfın yazılıları
   $('#y-baslik').textContent = `${sinif}. sınıf ${dersAd}: ortak yazılı senaryoları`;
   $('#y-dugmeler').replaceChildren(
     el('a', { sinif: 'dugme', href: `/${t.dosya}`, download: '' }, simge('indir'), 'Excel'),

@@ -185,7 +185,7 @@ const Arama = (() => {
     ekle({ tip: 'sayfa', baslik: 'Sosyal medya', aciklama: 'YouTube, Instagram ve Facebook hesaplarımız.', adres: '/#sosyal', ek: 'youtube instagram facebook takip' });
     for (const n of Object.keys(siniflar)) {
       const no = Number(n);
-      ekle({ tip: 'sayfa', alt: 'sinif', baslik: `${no}. sınıf`, aciklama: `${no <= 8 ? 'Ortaokul' : 'Lise'} ${no}. sınıfın bütün dersleri.`, adres: `/sinif.html?no=${no}`, sinif: no });
+      ekle({ tip: 'sayfa', alt: 'sinif', baslik: `${no}. sınıf`, aciklama: `${no <= 8 ? 'Ortaokul' : 'Lise'} ${no}. sınıfın bütün dersleri.`, adres: `/ogrenci.html?sinif=${no}`, sinif: no });
       for (const d of sinifDersleri[n]) {
         ekle({ tip: 'sayfa', alt: 'ders', baslik: `${no}. sınıf ${dAd[d]}`, aciklama: `${no}. sınıf ${dAd[d]} dersinin bütün içerikleri.`, adres: `/icerikler.html?sinif=${no}&ders=${d}`, sinif: no, ders: d });
       }

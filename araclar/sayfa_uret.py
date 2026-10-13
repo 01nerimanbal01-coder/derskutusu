@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""İç sayfaları (sinif.html, icerikler.html, gizlilik.html, 404.html) ana sayfanın üst ve alt bölümüyle üretir.
+"""İç sayfaları (ogrenci.html, ogretmen.html, icerikler.html, gizlilik.html, 404.html vb.) ana sayfanın üst ve alt bölümüyle üretir.
 
 Ana sayfadaki simge takımı, üst menü ve alt bilgi değişince bu betik yeniden çalıştırılır:
     python3 araclar/sayfa_uret.py
 Sayfaların kendi gövdeleri aşağıdaki GOVDE sözlüğündedir.
 """
+import json
 import re
 from pathlib import Path
 from kesif_sablonlari import kesif_sayfa, kutuphane_govde
@@ -12,7 +13,7 @@ from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'goruntule.js': '20261012-1', 'belgeler.js': '20261012-1', 'agac.js': '20261013-2', 'yazili.js': '20261010-1', 'ortak.js': '20261013-1', 'tahta.js': '20261013-1', 'etkinlik.js': '20261003-1', 'arama.js': '20261004-duzen1', 'kutuphane.js': '20261013-2', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-1'}
+BETIK_SURUMLERI = {'goruntule.js': '20261012-1', 'belgeler.js': '20261012-1', 'agac.js': '20261013-2', 'yazili.js': '20261013-1', 'ortak.js': '20261013-1', 'tahta.js': '20261013-1', 'etkinlik.js': '20261003-1', 'arama.js': '20261013-1', 'kutuphane.js': '20261013-3', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-1'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
@@ -27,6 +28,10 @@ SAYAC = '''<!-- Cloudflare Web Analytics --><script type='module' src='https://s
 
 
 # Site ağacı (kullanıcı 11.10.2026): her sayfa kendi dalının kitlesini taşır (üst menü vurgusu, kayan şerit süzgeci).
+# Eski sınıf sayfası (11.10.2026'dan beri yalnız /ogrenci.html?sinif=N'e yönlendirir): aramaya girmez
+YONLENDIRME = {'sinif.html'}
+SINIFLAR = [n for k in json.loads((PUBLIC / 'veri' / 'dersler.json').read_text(encoding='utf-8'))['kademeler'] for n in k['siniflar']]
+
 KITLE_OGRENCI = ('ogrenci.html', 'kelime.html', 'arapca.html', 'sinav.html')
 KITLE_OGRETMEN = ('ogretmen.html', 'planlar.html', 'yazili.html', 'belgeler.html', 'kpss.html')
 AGAC_CSS = '<link rel="stylesheet" href="/agac.css?v=20261013-2">'
@@ -102,30 +107,12 @@ YAKINDA = '''      <div class="yakinda" id="icerik-yakinda" hidden>
       </div>'''
 
 GOVDE = {
-    'sinif.html': ('Sınıf', '5-12. sınıf dersleri için konu anlatımları, soru çözümleri ve öğretmen dosyaları.', '''  <section class="sayfa-bas">
+    'sinif.html': ('Sınıf', 'Sınıf sayfaları Öğrenci bölümüne taşındı: sınıfını seç, derslerine ve haftanın konularına ulaş.', '''  <section class="sayfa-bas">
     <div class="kap">
-      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/#siniflar">Sınıflar</a><span aria-hidden="true">/</span><span id="yol-sinif"></span></nav>
-      <h1 id="baslik">Sınıf</h1>
-      <p id="aciklama"></p>
-      <nav class="sinif-gecis" id="sinif-gecis" aria-label="Sınıflar"></nav>
-      <nav class="hizli-baglanti" id="ogretmen-hizli" aria-label="Öğretmen dosyaları" hidden></nav>
-    </div>
-  </section>
-  <section class="bolum">
-    <div class="kap">
-      <div class="bolum-bas">
-        <div><p class="ust-baslik">Dersler</p><h2>Dersini seç</h2></div>
-        <a class="tumu" id="tum-icerik" href="/icerikler.html">Bu sınıfın bütün içerikleri<svg><use href="#s-ok"/></svg></a>
-      </div>
-      <div class="ders-izgara" id="ders-listesi"></div>
-    </div>
-  </section>
-  <section class="bolum koyu-zemin" id="secmeli-bolum" hidden>
-    <div class="kap">
-      <div class="bolum-bas">
-        <div><p class="ust-baslik">Seçmeli dersler</p><h2>Seçmeli ve imam hatip dersleri</h2></div>
-      </div>
-      <div class="ders-izgara" id="secmeli-listesi"></div>
+      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/ogrenci.html">Öğrenci</a></nav>
+      <h1>Sınıf sayfaları taşındı</h1>
+      <p>Sınıf sayfaları artık <a href="/ogrenci.html">Öğrenci</a> bölümünde; yönlendiriliyorsunuz. Açılmazsa sınıfınızı seçin:</p>
+      <nav class="sinif-gecis" aria-label="Sınıflar">''' + ''.join(f'<a href="/ogrenci.html?sinif={n}">{n}. sınıf</a>' for n in SINIFLAR) + '''</nav>
     </div>
   </section>''', ('kutuphane.js',)),
     'icerikler.html': ('İçerikler', 'Sınıfa, derse ve türe göre konu anlatımları, soru çözümleri, videolar, yıllık planlar ve yazılı soruları.', f'''  <section class="sayfa-bas">
@@ -330,11 +317,11 @@ def _sinav_govde():
             f'<li><a href="/goruntule.html?b={k}">{e(bl[k]["baslik"])}</a><span>{e(bl[k].get("kaynak", ""))}</span></li>'
             for k in x['belgeler'] if k in bl)
         if lgs:
-            hazirlik = ('<li><a href="/sinif.html?no=8">8. sınıfın bütün dersleri</a></li>'
+            hazirlik = ('<li><a href="/ogrenci.html?sinif=8">8. sınıfın bütün dersleri</a></li>'
                         '<li><a href="/icerikler.html?sinif=8&amp;tur=Konu%20anlat%C4%B1m%C4%B1">8. sınıf konu özetleri</a></li>'
                         '<li><a href="/icerikler.html?sinif=8&amp;tur=Yaz%C4%B1l%C4%B1%20senaryosu">8. sınıf ortak yazılı senaryoları</a></li>')
         else:
-            hazirlik = ''.join(f'<li><a href="/sinif.html?no={k}">{k}. sınıfın bütün dersleri</a></li>' for k in x['siniflar'])
+            hazirlik = ''.join(f'<li><a href="/ogrenci.html?sinif={k}">{k}. sınıfın bütün dersleri</a></li>' for k in x['siniflar'])
             hazirlik += '<li><a href="/icerikler.html?tur=Ders%20kitab%C4%B1">Lise ders kitapları</a></li>'
         bolumler += f'''  <section class="bolum{' koyu-zemin' if n % 2 else ''}" id="{x['kimlik']}">
     <div class="kap">
@@ -474,7 +461,7 @@ GOVDE['sinav.html'] = ('Sınavlar: LGS ve YKS', 'LGS ve YKS: oturumlar, testler,
 def main():
     """Sabit iç sayfaları yazar. Yalnız doğrudan çalıştırılınca ya da ozet_uret.main() çağırınca; içe aktarma dosya yazmaz."""
     for ad, (baslik, aciklama, govde, betikler) in GOVDE.items():
-        (PUBLIC / ad).write_text(sayfa(ad, baslik, aciklama, govde, betikler), encoding='utf-8')
+        (PUBLIC / ad).write_text(sayfa(ad, baslik, aciklama, govde, betikler, kanonik=ad not in YONLENDIRME), encoding='utf-8')
 
     # Gizlilik ve 404: mevcut gövdeleri korunur, üst/alt yenilenir
     for ad, baslik, aciklama, kanonik in [('gizlilik.html', 'Gizlilik ve çerezler', 'Ders Kutusu gizlilik ve çerez bilgilendirmesi.', True),
