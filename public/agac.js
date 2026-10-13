@@ -114,6 +114,84 @@
   const aracKarti = (a) => el('a', { sinif: 'agac-arac', href: a.href, 'data-renk': a.renk },
     el('span', { sinif: 'agac-arac-simge', 'aria-hidden': 'true' }, simge(a.simge)), el('span', {}, el('strong', {}, a.ad), el('small', {}, a.alt)));
 
+  // ---- Yazılıya hazırlık (kullanıcı 13.10.2026): öğrenci dalında iki tür yazılı, YALNIZ öğrenci kâğıdı. Cevap anahtarı yalnız
+  // öğretmen dalındadır (yazili.html); bu bölümlerde hiçbir yerde cevap bağlantısı üretilmez. Veri tek kaynaktan, sitenin JSON'larından:
+  // yazili-kagitlari.json (senaryo), yazili-cikti.json (öğrenme çıktısı), senaryolar.json (soru sayısı). Yeni kâğıtlar kendiliğinden görünür.
+  const normal = (s) => String(s || '').toLocaleLowerCase('tr').replace(/[^a-zçğıöşü0-9]+/g, ' ').trim();
+  let yaziliSoz;
+  const yaziliVeri = () => (yaziliSoz = yaziliSoz || Promise.all([veri('yazili-kagitlari.json'), veri('yazili-cikti.json'), veri('senaryolar.json')])
+    .then(([kagit, cikti, sen]) => ({ kagit, cikti, sen })));
+  const yaziliDers = (yz, n, d) => {
+    const a = `${n}-${d}`;
+    const kt = yz.kagit?.tablolar?.[a], st = yz.sen?.tablolar?.[a], ug = yz.kagit?.ulke?.[a];
+    const senaryo = [];
+    for (const yNo of Object.keys(kt || {}).sort((x, y) => x - y)) {
+      const yi = st ? st.yazililar.findIndex((x, i) => ((/(\d+)\. Ortak/.exec(x.ad) || [])[1] || String(i + 1)) === yNo) : -1;
+      for (const s of kt[yNo]) senaryo.push({ yazili: yNo, ad: yi >= 0 ? st.yazililar[yi].ad : `${yNo}. Ortak yazılı`, no: s,
+        soru: yi >= 0 ? st.satirlar.reduce((t, r) => t + (r.sayilar[yi]?.[s - 1] || 0), 0) : 0,
+        pdf: `${yz.kagit.klasor}${a}-${yNo}-yazili-senaryo-${s}.pdf` });
+    }
+    const deneme = ug ? Array.from({ length: ug.denemeler }, (_, i) => ({ no: i + 1, pdf: `${yz.kagit.klasor}${a}-${ug.yazili}-yazili-ulke-geneli-deneme-${i + 1}.pdf` })) : [];
+    const cikti = (yz.cikti?.tablolar?.[a] || []).map((c) => ({ ...c, pdf: `${yz.cikti.klasor}${c.dosya}.pdf` }));
+    return { senaryo, ulke: ug, deneme, cikti };
+  };
+  // Kâğıdın konusu (çıktı tablosundaki "konu") yıllık plandaki konu adıyla eşlenir: önce tam ad, yoksa konu adı onu içerir.
+  const ciktiKonulari = (c, konular) => {
+    const ad = normal(c.konu);
+    const tam = konular.filter((k) => normal(k.ad) === ad);
+    return tam.length ? tam : konular.filter((k) => ad && normal(k.ad).includes(ad));
+  };
+  const pdfDugme = (href, etiket) => el('a', { sinif: 'dugme ana', href, download: '', 'aria-label': `Öğrenci kâğıdı (PDF): ${etiket}` }, simge('indir'), 'Öğrenci kâğıdı (PDF)');
+  const yzSatir = (baslik, ayrinti, alt, dugme) => el('li', { sinif: 'yz-satir' },
+    el('div', { sinif: 'yz-govde' }, el('strong', {}, baslik), ayrinti ? el('span', {}, ayrinti) : null, alt ? el('small', {}, alt) : null), dugme);
+  const ciktiSatiri = (c) => yzSatir(c.kod, c.ifade, `${c.soru} soru · 2 sayfa · 40 dakika`, pdfDugme(c.pdf, `${c.kod} ${c.ifade}`));
+  const yzGrup = (kimlik, baslik, aciklama, ...ic) => el('section', { sinif: 'yz-grup', 'aria-labelledby': kimlik },
+    el('h3', { id: kimlik }, baslik), el('p', { sinif: 'yz-acik' }, aciklama), ...ic);
+  const yzHazirlaniyor = () => el('p', { sinif: 'yz-bos' }, 'Bu ders için hazırlanıyor. Hazır oldukça burada görünecek.');
+
+  function yaziliBolum(yz, n, d, konular) {
+    const v = yaziliDers(yz, n, d);
+    if (!v.senaryo.length && !v.deneme.length && !v.cikti.length) return null;
+    const yazililar = [...new Set(v.senaryo.map((x) => x.yazili))];
+    const senaryoIc = [
+      ...yazililar.flatMap((yNo) => {
+        const L = v.senaryo.filter((x) => x.yazili === yNo);
+        return [el('h4', {}, L[0].ad), el('ol', { sinif: 'yz-liste' }, L.map((x) => yzSatir(`Senaryo ${x.no}`, null,
+          x.soru ? `${x.soru} soru · 2 sayfa · 40 dakika` : '2 sayfa · 40 dakika', pdfDugme(x.pdf, `${x.ad}, Senaryo ${x.no}`))))];
+      }),
+      v.deneme.length ? [el('h4', {}, v.ulke.sinav),
+        el('p', { sinif: 'yz-acik' }, `Bu yazılı ${v.ulke.tarih} tarihinde MEB tarafından ülke genelinde ortak yapılır; senaryosu yoktur. Hazırlık denemeleri:`),
+        el('ol', { sinif: 'yz-liste' }, v.deneme.map((x) => yzSatir(`Deneme ${x.no}`, null, '2 sayfa · 40 dakika', pdfDugme(x.pdf, `${v.ulke.sinav}, Deneme ${x.no}`))))] : null,
+    ].flat(Infinity).filter(Boolean);
+    const birimler = new Map();
+    for (const c of v.cikti) {
+      const k = ciktiKonulari(c, konular)[0];
+      const u = k ? { ui: k.ui, ad: `${k.ui + 1}. ünite: ${k.unite}` } : { ui: 999, ad: konular.length ? 'Diğer çıktılar' : '' };
+      if (!birimler.has(u.ad)) birimler.set(u.ad, { ...u, liste: [] });
+      birimler.get(u.ad).liste.push(c);
+    }
+    const ciktiIc = [...birimler.values()].sort((a, b) => a.ui - b.ui).flatMap((u) => [u.ad ? el('h4', {}, u.ad) : null, el('ol', { sinif: 'yz-liste' }, u.liste.map(ciktiSatiri))]);
+    return el('section', { sinif: 'agac-bolum yz-bolum', id: 'yaziliya-hazirlik', 'aria-labelledby': 'yz-baslik' }, el('div', { sinif: 'kap' },
+      el('div', { sinif: 'agac-bolum-bas' }, el('div', {}, el('h2', { id: 'yz-baslik' }, 'Yazılıya hazırlık'),
+        el('p', {}, 'Yazılıdan önce kâğıdı indir, yazdır, süre tutarak çöz. Cevap anahtarını öğretmenin verir.'))),
+      el('div', { sinif: 'yz-iki' },
+        yzGrup('yz-senaryo', 'Senaryoya göre yazılı', 'Okulundaki ortak yazılı, ÖDSGM senaryolarından birine göre yapılır. Öğretmeninden senaryo numarasını öğren, o senaryonun kâğıdını çöz.',
+          senaryoIc.length ? senaryoIc : yzHazirlaniyor()),
+        yzGrup('yz-cikti', 'Öğrenme çıktısına göre yazılı', 'Her kâğıt tek bir öğrenme çıktısını ölçer: 2 sayfa, 40 dakika. Konuyu bitirince ilgili çıktının kâğıdıyla kendini dene.',
+          ciktiIc.length ? ciktiIc : yzHazirlaniyor()))));
+  }
+
+  // Konu sayfasında: konunun öğrenme çıktısıyla eşleşen kâğıtlar (eşleşme yoksa hiçbir şey eklenmez)
+  function yaziliKonu(yz, n, d, k, konular, dersYol) {
+    const es = yaziliDers(yz, n, d).cikti.filter((c) => ciktiKonulari(c, konular).includes(k));
+    if (!es.length) return null;
+    return el('section', { sinif: 'yz-konu', 'aria-labelledby': 'yz-konu-baslik' },
+      el('h2', { id: 'yz-konu-baslik' }, 'Yazılıya hazırlık'),
+      el('p', { sinif: 'yz-acik' }, 'Bu konunun öğrenme çıktısına göre yazılı kâğıdı. Çözdükten sonra cevapları öğretmenine sor.'),
+      el('ol', { sinif: 'yz-liste' }, es.map(ciktiSatiri)),
+      el('a', { sinif: 'yz-baglanti', href: `${dersYol.href}#yaziliya-hazirlik` }, 'Dersin bütün yazılı kâğıtları', el('span', { 'aria-hidden': 'true' }, ' →')));
+  }
+
   function ogrenciKok({ dersler, icerikler }, dizin) {
     const ogr = icerikler.filter(kitleUyar(dersler));
     const arama = el('form', { sinif: 'agac-arama', action: '/ara.html', role: 'search' },
@@ -160,7 +238,7 @@
   async function ogrenciDers({ dersler, icerikler }, n, d) {
     const ad = dersler.dersler[d] || d;
     const renk = K().subjectColor(d);
-    const agac = await veri(`agac/${n}-${d}.json`);
+    const [agac, yz] = await Promise.all([veri(`agac/${n}-${d}.json`), yaziliVeri()]);
     const ogr = icerikler.filter(kitleUyar(dersler)).filter((i) => Number(i.sinif) === n && i.ders === d);
     const haftalik = ogr.filter((i) => i.hafta);
     const dersDuzeyi = ogr.filter((i) => !i.hafta);
@@ -170,12 +248,13 @@
     if (!agac) {   // yıllık planı olmayan ders: içerikler haftaya göre
       document.title = `${n}. Sınıf ${ad} · Öğrenci · Ders Kutusu`;
       alan.replaceChildren(basBolum([DAL_YOL, sinifYol, { ad }], `${n}. Sınıf`, ad, null),
-        bolum('', ogr.length ? kartlar(yeniler(ogr), dersler, { dersGoster: false }) : bos('İçerikler hazırlanıyor', 'Bu dersin konu anlatımları eklendikçe burada listelenecek.', el('a', { sinif: 'dugme', href: adres({ sinif: n }) }, `${n}. sınıf derslerine dön`))));
+        bolum('', ogr.length ? kartlar(yeniler(ogr), dersler, { dersGoster: false }) : bos('İçerikler hazırlanıyor', 'Bu dersin konu anlatımları eklendikçe burada listelenecek.', el('a', { sinif: 'dugme', href: adres({ sinif: n }) }, `${n}. sınıf derslerine dön`))),
+        yaziliBolum(yz, n, d, []));
       return;
     }
     const { konular, disarida } = konuyaBagla(agac, haftalik);
     const simdi = buHafta(agac.haftalar);
-    if (konuKodu) return ogrenciKonu({ dersler }, n, d, ad, renk, agac, konular, konuKodu, dersYol, sinifYol, dersDuzeyi, simdi);
+    if (konuKodu) return ogrenciKonu({ dersler }, n, d, ad, renk, agac, konular, konuKodu, dersYol, sinifYol, dersDuzeyi, simdi, yz);
     document.title = `${n}. Sınıf ${ad}: Üniteler ve Konular · Ders Kutusu`;
     const icerikSay = konular.reduce((t, k) => t + k.icerik.length, 0) + disarida.length;
     const kaynaklar = dersDuzeyi.map((i) => el('a', { sinif: 'agac-kaynak', href: yol(i.goruntule || i.dosya || i.baglanti || '#'), 'data-renk': K().category(i.tur).color },
@@ -214,10 +293,11 @@
           el('span', { sinif: 'agac-rozet bu-hafta' }, `Bu hafta · ${simdi}. hafta`), el('strong', {}, buKonu.ad === buKonu.unite ? buKonu.unite : buKonu.ad), el('span', { 'aria-hidden': 'true' }, '→')) : null)),
       kaynaklar.length ? bolum('agac-ince', el('div', { sinif: 'agac-kaynaklar' }, kaynaklar)) : null,
       bolum('', baslikSatiri('Üniteler ve konular', 'Konuya dokun; konu anlatımı, etkinlikler ve çalışma kâğıdı açılır.'), el('div', { sinif: 'agac-uniteler' }, uniteler)),
+      yaziliBolum(yz, n, d, konular),
       disarida.length ? bolum('koyu-zemin', baslikSatiri('Diğer içerikler'), kartlar(disarida, dersler, { dersGoster: false })) : null);
   }
 
-  function ogrenciKonu({ dersler }, n, d, ad, renk, agac, konular, kod, dersYol, sinifYol, dersDuzeyi, simdi) {
+  function ogrenciKonu({ dersler }, n, d, ad, renk, agac, konular, kod, dersYol, sinifYol, dersDuzeyi, simdi, yz) {
     const ix = konular.findIndex((k) => k.kod === kod);
     if (ix < 0) { location.replace(adres({ sinif: n, ders: d })); return; }
     const k = konular[ix];
@@ -248,6 +328,7 @@
           ...dersDuzeyi.filter((i) => i.tur === 'Ders kitabı').flatMap((i) => [el('a', { sinif: 'dugme ana', href: yol(i.goruntule || i.baglanti) }, 'Ders kitabını aç', simge('ok')),
             i.goruntule ? el('a', { sinif: 'dugme', href: `${yol(i.goruntule)}&yerel=1`, title: 'Kitabın bilgisayarınızdaki PDF dosyasını açar; internet beklenmez' }, 'Bilgisayardan aç') : null]),
           el('a', { sinif: 'dugme', href: dersYol.href }, 'Bütün üniteler')),
+        yaziliKonu(yz, n, d, k, konular, dersYol),
         el('nav', { sinif: 'agac-komsular', 'aria-label': 'Konular arasında geçiş' }, komsu(ix - 1, 'onceki'), komsu(ix + 1, 'sonraki'))));
     if (k.icerik.length) ciz('');
   }
@@ -322,5 +403,7 @@
       else ogretmenKok(v);
     }
     alan.setAttribute('aria-busy', 'false');
+    // Bölüm sayfa açıldıktan sonra çizildiği için #yaziliya-hazirlik bağlantısıyla gelindiyse oraya kaydır
+    if (location.hash.length > 1) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
   });
 })();
