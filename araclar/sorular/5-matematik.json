@@ -1,0 +1,478 @@
+{
+ "sorular": [
+  {
+   "tur": "coktan",
+   "konu": "temel-geometrik-cizimler-ve-insalar",
+   "cikti": ["MAT.5.3.1"],
+   "hafta": 1,
+   "duzey": "hatirla",
+   "soru": "Uzunluğu önemli olmayan düz bir çizgi çizmek için kullanılan, üzerinde birim bulunmayan araç hangisidir?",
+   "secenekler": ["Cetvel", "Çizgeç", "Gönye", "Açıölçer"],
+   "dogru": 1,
+   "aciklama": "Çizgeç ölçüsüz cetveldir; uzunluk ölçülecekse cetvel, dikme çizilecekse gönye, açı ölçülecekse açıölçer kullanılır."
+  },
+  {
+   "tur": "coktan",
+   "konu": "temel-geometrik-cizimler-ve-insalar",
+   "cikti": ["MAT.5.3.1"],
+   "hafta": 1,
+   "duzey": "hatirla",
+   "soru": "Çemberin iki noktasını merkezden geçecek biçimde birleştiren doğru parçası hangi harfle gösterilir?",
+   "secenekler": ["r", "R", "d", "m"],
+   "dogru": 1,
+   "aciklama": "Bu doğru parçası çaptır ve R ile gösterilir; yarıçap r ile gösterilir."
+  },
+  {
+   "tur": "coktan",
+   "konu": "temel-geometrik-cizimler-ve-insalar",
+   "cikti": ["MAT.5.3.1"],
+   "hafta": 1,
+   "duzey": "hatirla",
+   "soru": "Başlangıç noktası K olan ve M noktasından geçerek sonsuza kadar uzanan ışın nasıl gösterilir?",
+   "secenekler": ["[KM]", "[MK ışını", "[KM ışını", "KM doğrusu"],
+   "dogru": 2,
+   "aciklama": "Işın gösteriminde başlangıç noktası önce yazılır: [KM ışını. [MK ışını M noktasından başlar; [KM] ise iki ucu olan doğru parçasıdır."
+  },
+  {
+   "tur": "coktan",
+   "konu": "temel-geometrik-cizimler-ve-insalar",
+   "cikti": ["MAT.5.3.1"],
+   "hafta": 1,
+   "duzey": "uygula",
+   "soru": "Bir öğrenci pergelin sivri ucunu O noktasına koyup kalemli ucu döndürerek bir çember çizdi. Pergelin kolları arasındaki açıklık 5 cm ise çember üzerindeki herhangi bir noktanın O noktasına uzaklığı kaç santimetredir?",
+   "secenekler": ["2,5 cm", "5 cm", "10 cm", "Noktaya göre değişir"],
+   "dogru": 1,
+   "aciklama": "Sivri uç merkezde dururken kolların uçları arasındaki uzaklık yarıçapa eşittir; çember üzerindeki her nokta merkeze 5 cm uzaklıktadır."
+  },
+  {
+   "tur": "coktan",
+   "konu": "temel-geometrik-cizimler-ve-insalar",
+   "cikti": ["MAT.5.3.1"],
+   "hafta": 1,
+   "duzey": "uygula",
+   "soru": "Bir öğrenci, d doğrusunun dışındaki P noktasından d doğrusuna bir dikme çizecek, sonra bu dikmenin uzunluğunu ölçecektir. Sırasıyla hangi iki aracı kullanmalıdır?",
+   "secenekler": ["Pergel ve açıölçer", "Gönye ve cetvel", "Çizgeç ve pergel", "Açıölçer ve gönye"],
+   "dogru": 1,
+   "aciklama": "Dikme gönyeyle çizilir; bir doğru parçasının uzunluğu cetvelle ölçülür."
+  },
+  {
+   "tur": "coktan",
+   "konu": "temel-geometrik-cizimler-ve-insalar",
+   "cikti": ["MAT.5.3.1"],
+   "hafta": 1,
+   "duzey": "ust",
+   "soru": "Ayşe defterine uzunluğu 5 cm olan [AB] doğru parçasını çizdi. Sonra B noktasını merkez alıp yarıçapı 3 cm olan bir çember çizdi. Çember, [AB] üzerindeki bir C noktasından geçiyor. |AC| kaç santimetredir?",
+   "secenekler": ["2 cm", "3 cm", "5 cm", "8 cm"],
+   "dogru": 0,
+   "aciklama": "C noktası çember üzerinde olduğundan merkeze uzaklığı yarıçapa eşittir: |BC| = 3 cm. Buradan |AC| = 5 − 3 = 2 cm bulunur."
+  },
+  {
+   "tur": "dy",
+   "konu": "temel-geometrik-cizimler-ve-insalar",
+   "cikti": ["MAT.5.3.1"],
+   "hafta": 1,
+   "duzey": "hatirla",
+   "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirle.",
+   "ifadeler": [
+    {"metin": "Bir doğru parçasının uzunluğu cetvelle ölçülür.", "dogru": true, "aciklama": "Doğru parçasının iki uç noktası vardır; aralarındaki uzaklık cetvelle ölçülüp |AB| biçiminde yazılır."},
+    {"metin": "Bir doğrunun uzunluğu cetvelle ölçülebilir.", "dogru": false, "aciklama": "Doğru iki yönde de sınırsız uzandığı için uzunluğu ölçülemez."},
+    {"metin": "Bir açının ölçüsü m(ABC) biçiminde gösterilir ve açıölçerle bulunur.", "dogru": true, "aciklama": "Açının ölçüsü, adının önüne m yazılarak gösterilir."},
+    {"metin": "Dikme, bir noktadan doğruya çizilebilecek en uzun doğru parçasıdır.", "dogru": false, "aciklama": "Dikme, o noktadan doğruya çizilebilecek en kısa doğru parçasıdır."}
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "konu": "temel-geometrik-cizimler-ve-insalar",
+   "cikti": ["MAT.5.3.1"],
+   "hafta": 1,
+   "duzey": "hatirla",
+   "soru": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {"metin": "Düz bir yüzeyde, merkez olarak belirlenen bir noktaya eşit uzaklıktaki noktaların oluşturduğu şekle ___ denir.", "cevap": "çember"},
+    {"metin": "Çember çizmek için kullanılan araca ___ denir.", "cevap": "pergel"},
+    {"metin": "Bir açının ölçüsünü bulmak için ___ kullanılır.", "cevap": "açıölçer"}
+   ],
+   "fazla": ["gönye"]
+  },
+
+  {
+   "tur": "coktan",
+   "konu": "temel-geometrik-cizimler-ve-insalar",
+   "cikti": ["MAT.5.3.2"],
+   "hafta": 2,
+   "duzey": "hatirla",
+   "soru": "Tek bir noktadan kaç farklı doğru geçirilebilir?",
+   "secenekler": ["1", "2", "3", "Sınırsız sayıda"],
+   "dogru": 3,
+   "aciklama": "Yön değiştirerek çizime devam edilebildiği için tek bir noktadan geçen doğru sayısı sınırlı değildir; farklı iki noktadan ise yalnız bir doğru geçer."
+  },
+  {
+   "tur": "coktan",
+   "konu": "temel-geometrik-cizimler-ve-insalar",
+   "cikti": ["MAT.5.3.2"],
+   "hafta": 2,
+   "duzey": "hatirla",
+   "soru": "Aynı düzlemde aynı doğrultuda uzanan ve aralarındaki uzaklık hiç değişmeyen farklı doğrulara ne ad verilir?",
+   "secenekler": ["Kesişen doğrular", "Paralel doğrular", "Dik doğrular", "Çakışık doğrular"],
+   "dogru": 1,
+   "aciklama": "Böyle doğrular paraleldir; ortak noktaları yoktur ve paralellik // işaretiyle gösterilir."
+  },
+  {
+   "tur": "coktan",
+   "konu": "temel-geometrik-cizimler-ve-insalar",
+   "cikti": ["MAT.5.3.2"],
+   "hafta": 2,
+   "duzey": "hatirla",
+   "soru": "\"KL doğrusu MN doğrusuna paraleldir.\" cümlesi sembollerle nasıl yazılır?",
+   "secenekler": ["KL ⊥ MN", "KL // MN", "[KL] = [MN]", "|KL| = |MN|"],
+   "dogru": 1,
+   "aciklama": "Paralellik // işaretiyle gösterilir; ⊥ işareti dikliği anlatır."
+  },
+  {
+   "tur": "coktan",
+   "konu": "temel-geometrik-cizimler-ve-insalar",
+   "cikti": ["MAT.5.3.2"],
+   "hafta": 2,
+   "duzey": "uygula",
+   "soru": "Başlangıç noktası A olan bir ışın üzerinde, aynı pergel açıklığı art arda taşınarak sırasıyla B, C, D ve E noktaları işaretleniyor. |AE| = 20 cm ise pergelin açıklığı kaç santimetredir?",
+   "secenekler": ["4 cm", "5 cm", "10 cm", "20 cm"],
+   "dogru": 1,
+   "aciklama": "Aynı açıklıkla taşınan [AB], [BC], [CD] ve [DE] eş uzunluktadır; 20 ÷ 4 = 5 cm."
+  },
+  {
+   "tur": "coktan",
+   "konu": "temel-geometrik-cizimler-ve-insalar",
+   "cikti": ["MAT.5.3.2"],
+   "hafta": 2,
+   "duzey": "uygula",
+   "soru": "Pergelin açıklığı 4 cm yapılarak merkezi K olan bir çember çizildi. Açıklık değiştirilmeden merkezi L olan ikinci bir çember çizildi. İkinci çember üzerindeki bir P noktasının L noktasına uzaklığı kaç santimetredir?",
+   "secenekler": ["2 cm", "4 cm", "8 cm", "Ölçülmeden bilinemez"],
+   "dogru": 1,
+   "aciklama": "Pergel açıklığı korunduğu için ikinci çemberin yarıçapı da 4 cm'dir; çember üzerindeki her nokta merkeze yarıçap kadar uzaktır."
+  },
+  {
+   "tur": "coktan",
+   "konu": "temel-geometrik-cizimler-ve-insalar",
+   "cikti": ["MAT.5.3.2"],
+   "hafta": 2,
+   "duzey": "ust",
+   "soru": "P noktası d doğrusunun dışındadır. P noktasından d doğrusuna uzunlukları 5 cm, 7 cm ve 9 cm olan üç doğru parçası çizilmiştir ve bunlardan yalnız biri d doğrusuna diktir. Dik olan parçanın uzunluğu kaç santimetredir?",
+   "secenekler": ["5 cm", "7 cm", "9 cm", "Üçü de dik olabilir"],
+   "dogru": 0,
+   "aciklama": "Dikme, noktadan doğruya çizilebilecek en kısa parçadır; eğik parçalar dikmeden uzun olduğu için dik olan parça 5 cm olandır."
+  },
+  {
+   "tur": "dy",
+   "konu": "temel-geometrik-cizimler-ve-insalar",
+   "cikti": ["MAT.5.3.2"],
+   "hafta": 2,
+   "duzey": "hatirla",
+   "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirle.",
+   "ifadeler": [
+    {"metin": "Farklı iki noktadan birden fazla doğru geçer.", "dogru": false, "aciklama": "Farklı iki noktadan yalnız bir doğru geçer."},
+    {"metin": "Paralel iki doğru arasındaki uzaklık dik doğrultuda ölçülür.", "dogru": true, "aciklama": "Paralel doğrular arasındaki uzaklık, bir doğrudan öbürüne çizilen dikmeyle ölçülür ve hiç değişmez."},
+    {"metin": "Bir çizgi sayfada dikey duruyorsa mutlaka dikmedir.", "dogru": false, "aciklama": "Diklik, çizginin sayfada dikey görünmesine göre değil doğruyla yaptığı açıya göre belirlenir."},
+    {"metin": "Aynı dış noktadan aynı doğruya yalnız bir dikme çizilebilir.", "dogru": true, "aciklama": "Dış noktadan doğruya çizilen dikme tektir; öbür parçalar eğiktir ve dikmeden uzundur."}
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "konu": "temel-geometrik-cizimler-ve-insalar",
+   "cikti": ["MAT.5.3.2"],
+   "hafta": 2,
+   "duzey": "hatirla",
+   "soru": "Kavramları özellikleriyle eşleştir.",
+   "ciftler": [
+    ["Dikme", "Noktadan doğruya en kısa uzaklık"],
+    ["Paralel doğrular", "Ortak noktası olmayan, aralarındaki uzaklık değişmeyen doğrular"],
+    ["Pergel açıklığı", "Çemberin yarıçapı"],
+    ["Pergelin sivri ucu", "Çemberin merkezi"]
+   ]
+  },
+
+  {
+   "tur": "coktan",
+   "konu": "aci-olcme",
+   "cikti": ["MAT.5.3.3"],
+   "hafta": 3,
+   "duzey": "hatirla",
+   "soru": "Bir ışının başlangıç noktası etrafında yarım tur dönmesiyle oluşan açının adı ve ölçüsü hangisidir?",
+   "secenekler": ["Dik açı, 90°", "Doğru açı, 180°", "Tam açı, 360°", "Geniş açı, 120°"],
+   "dogru": 1,
+   "aciklama": "Yarım tur dönüşle doğru açı oluşur; doğru açı tam açının yarısıdır ve ölçüsü 180°'dir."
+  },
+  {
+   "tur": "coktan",
+   "konu": "aci-olcme",
+   "cikti": ["MAT.5.3.3"],
+   "hafta": 3,
+   "duzey": "hatirla",
+   "soru": "Açıölçerin merkezi açının köşesine yerleştirildikten sonra ölçüyü doğru okuyabilmek için ne yapılmalıdır?",
+   "secenekler": ["Kollardan biri 0° çizgisinin üzerine getirilmelidir", "İki kol da 90° çizgisinin üzerine getirilmelidir", "Açının kolları kâğıtta uzatılmalıdır", "Açıölçer ters çevrilmelidir"],
+   "dogru": 0,
+   "aciklama": "Kollardan biri 0° çizgisine oturmalıdır; öbür kolun açıölçerde gösterdiği sayı açının ölçüsüdür."
+  },
+  {
+   "tur": "coktan",
+   "konu": "aci-olcme",
+   "cikti": ["MAT.5.3.3"],
+   "hafta": 3,
+   "duzey": "hatirla",
+   "soru": "Ölçüsü 90° ile 180° arasında olan açılara ne ad verilir?",
+   "secenekler": ["Dar açı", "Dik açı", "Geniş açı", "Tam açı"],
+   "dogru": 2,
+   "aciklama": "90°'den küçük açılar dar, 90° ile 180° arasındaki açılar geniş açıdır; dik açı 90°, tam açı 360°'dir."
+  },
+  {
+   "tur": "coktan",
+   "konu": "aci-olcme",
+   "cikti": ["MAT.5.3.3"],
+   "hafta": 3,
+   "duzey": "uygula",
+   "soru": "Ölçüleri 25°, 90°, 160°, 180° ve 360° olan beş açıdan kaç tanesi dar ya da geniş açıdır?",
+   "secenekler": ["1", "2", "3", "4"],
+   "dogru": 1,
+   "aciklama": "25° dar açı, 160° geniş açıdır; 90° dik, 180° doğru, 360° tam açıdır. Dar ya da geniş olan 2 açı vardır."
+  },
+  {
+   "tur": "coktan",
+   "konu": "aci-olcme",
+   "cikti": ["MAT.5.3.3"],
+   "hafta": 3,
+   "duzey": "uygula",
+   "soru": "Köşesi K olan bir açının kollarından [KL açıölçerin 0° çizgisinin üzerindedir; [KM ise 115° yazan çizgiden geçmektedir. Bu açı için hangisi doğrudur?",
+   "secenekler": ["m(LKM) = 115° ve açı geniştir", "m(KLM) = 115° ve açı geniştir", "m(LKM) = 65° ve açı dardır", "m(LMK) = 115° ve açı dardır"],
+   "dogru": 0,
+   "aciklama": "Köşe harfi ortada yazılır: m(LKM) = 115°. 115°, 90° ile 180° arasında olduğundan açı geniştir."
+  },
+  {
+   "tur": "coktan",
+   "konu": "aci-olcme",
+   "cikti": ["MAT.5.3.3"],
+   "hafta": 3,
+   "duzey": "ust",
+   "soru": "Elif bir açıyı açıölçerle ölçtü ve 72° buldu. Bu açının eşini çizmek için bir ışın çizdi, köşeyi açıölçerin merkezine koyup ışını 0° çizgisine oturttu. İkinci ışını hangi çizgiden geçecek biçimde çizmelidir ve çizdiği açı hangi türden olur?",
+   "secenekler": ["72° çizgisi, dar açı", "72° çizgisi, geniş açı", "108° çizgisi, geniş açı", "18° çizgisi, dar açı"],
+   "dogru": 0,
+   "aciklama": "Eş açıların ölçüleri aynıdır; ikinci ışın 72° yazan çizgiden geçmelidir. 72°, 90°'den küçük olduğu için dar açıdır."
+  },
+  {
+   "tur": "dy",
+   "konu": "aci-olcme",
+   "cikti": ["MAT.5.3.3"],
+   "hafta": 3,
+   "duzey": "hatirla",
+   "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirle.",
+   "ifadeler": [
+    {"metin": "Ortak bir birim olmadan iki kişinin aynı açı için bulduğu sayılar karşılaştırılamaz.", "dogru": true, "aciklama": "Kâğıt katlayarak yapılan birimler farklı büyüklükte olabilir; bu yüzden derece gibi herkesin kullandığı ortak bir birim gerekir."},
+    {"metin": "Tam açı, daire biçimli bir açıölçerle gösterilebilir.", "dogru": true, "aciklama": "Tam açı daire biçimli, doğru açı ise yarım daire biçimli bir açıölçerle gösterilebilir."},
+    {"metin": "Kolları uzun çizilmiş 50°'lik bir açı, kolları kısa çizilmiş 50°'lik bir açıdan büyüktür.", "dogru": false, "aciklama": "Açının ölçüsü kolların uzunluğuna bağlı değildir; ölçüleri aynı olan bu iki açı eştir."},
+    {"metin": "Ölçüsü 360° olan bir açı çizilirken ikinci ışın birinci ışının üzerine gelir.", "dogru": true, "aciklama": "Tam açıda ışın bir tam tur dönüp başlangıç konumuna döner."}
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "konu": "aci-olcme",
+   "cikti": ["MAT.5.3.3"],
+   "hafta": 3,
+   "duzey": "hatirla",
+   "soru": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {"metin": "Ölçüsü 90°'den küçük olan açılara ___ açı denir.", "cevap": "dar"},
+    {"metin": "Açı ölçmede kullanılan standart birime ___ denir.", "cevap": "derece"},
+    {"metin": "Ölçüsü 90° olan açıya ___ açı denir.", "cevap": "dik"}
+   ],
+   "fazla": ["geniş"]
+  },
+
+  {
+   "tur": "coktan",
+   "konu": "aci-olcme",
+   "cikti": ["MAT.5.3.4"],
+   "hafta": 4,
+   "duzey": "hatirla",
+   "soru": "Bütün noktaları ortak olan, üst üste çizilmiş gibi görünen iki doğruya ne ad verilir?",
+   "secenekler": ["Paralel doğrular", "Kesişen doğrular", "Çakışık doğrular", "Dik doğrular"],
+   "dogru": 2,
+   "aciklama": "Çakışık doğruların bütün noktaları ortaktır; paralel doğruların hiç ortak noktası yoktur, kesişen doğruların yalnız bir ortak noktası vardır."
+  },
+  {
+   "tur": "coktan",
+   "konu": "aci-olcme",
+   "cikti": ["MAT.5.3.4"],
+   "hafta": 4,
+   "duzey": "hatirla",
+   "soru": "Kesiştikleri noktada dört dik açı oluşturan AB ve CD doğruları nasıl gösterilir?",
+   "secenekler": ["AB // CD", "AB ⊥ CD", "[AB] = [CD]", "|AB| = |CD|"],
+   "dogru": 1,
+   "aciklama": "Dik doğrular ⊥ sembolüyle gösterilir; // işareti paralelliği anlatır."
+  },
+  {
+   "tur": "coktan",
+   "konu": "aci-olcme",
+   "cikti": ["MAT.5.3.4"],
+   "hafta": 4,
+   "duzey": "hatirla",
+   "soru": "Üç doğru aynı noktada kesiştiğinde o noktanın çevresinde kaç açı oluşur?",
+   "secenekler": ["3", "4", "6", "12"],
+   "dogru": 2,
+   "aciklama": "Üç doğru aynı noktada kesişince altı açı oluşur; üç doğru ikişer ikişer kesişirse üç noktada toplam on iki açı oluşur."
+  },
+  {
+   "tur": "coktan",
+   "konu": "aci-olcme",
+   "cikti": ["MAT.5.3.4"],
+   "hafta": 4,
+   "duzey": "uygula",
+   "soru": "Bir açının ölçüsü 36°'dir. Bu açının tümlerinin ve bütünlerinin ölçüleri sırasıyla hangisidir?",
+   "secenekler": ["54° ve 144°", "64° ve 154°", "144° ve 54°", "54° ve 324°"],
+   "dogru": 0,
+   "aciklama": "Tümleri 90° − 36° = 54°, bütünleri 180° − 36° = 144°'dir. Kontrol: 36° + 54° = 90° ve 36° + 144° = 180°."
+  },
+  {
+   "tur": "coktan",
+   "konu": "aci-olcme",
+   "cikti": ["MAT.5.3.4"],
+   "hafta": 4,
+   "duzey": "uygula",
+   "soru": "KM ve LN doğruları O noktasında kesişiyor; K, L, M, N noktaları O noktasının çevresinde bu sırayla dizilmiştir. m(KOL) = 48° ise m(MON) ve m(LOM) sırasıyla kaç derecedir?",
+   "secenekler": ["48° ve 132°", "132° ve 48°", "48° ve 48°", "42° ve 138°"],
+   "dogru": 0,
+   "aciklama": "KOL ile MON ters açılardır, ölçüleri eşittir: 48°. KOL ile LOM komşu açılardır ve kesişen doğrularda komşu açıların toplamı 180° olduğundan m(LOM) = 180° − 48° = 132°."
+  },
+  {
+   "tur": "coktan",
+   "konu": "aci-olcme",
+   "cikti": ["MAT.5.3.4"],
+   "hafta": 4,
+   "duzey": "ust",
+   "soru": "Üç doğru ikişer ikişer kesişiyor ve kesişim noktalarından birinde dik açı oluşuyor. Oluşan on iki açının dağılımı hangisidir?",
+   "secenekler": ["6 dar, 6 geniş açı", "4 dik, 4 dar, 4 geniş açı", "12 dik açı", "8 dik, 4 dar açı"],
+   "dogru": 1,
+   "aciklama": "Bir kesişim noktasında dik açı varsa o noktadaki dört açı da diktir. Kalan iki noktanın her birinde iki dar, iki geniş açı oluşur: 4 dik, 4 dar, 4 geniş."
+  },
+  {
+   "tur": "dy",
+   "konu": "aci-olcme",
+   "cikti": ["MAT.5.3.4"],
+   "hafta": 4,
+   "duzey": "hatirla",
+   "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirle.",
+   "ifadeler": [
+    {"metin": "Ters açıların ölçüleri eşittir.", "dogru": true, "aciklama": "Birbirine zıt yönlere bakan ters açılar eş ölçülüdür."},
+    {"metin": "Komşu açıların ölçüleri her zaman birbirine eşittir.", "dogru": false, "aciklama": "Komşu açıların ölçüleri eşit olmak zorunda değildir; kesişen iki doğruda komşu açıların toplamı 180°'dir."},
+    {"metin": "Dik bir kesen iki paralel doğruyu kestiğinde oluşan sekiz açının hepsi diktir.", "dogru": true, "aciklama": "Kesen paralel doğrulara dikse her iki kesişim noktasındaki dört açı da 90°'dir."},
+    {"metin": "İki açının tümler olabilmesi için komşu olmaları gerekir.", "dogru": false, "aciklama": "Ölçüleri toplamı 90° olan açılar komşu olmasa da tümlerdir; komşu olanlara komşu tümler denir."}
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "konu": "aci-olcme",
+   "cikti": ["MAT.5.3.4"],
+   "hafta": 4,
+   "duzey": "hatirla",
+   "soru": "İki doğrunun birbirine göre durumunu adıyla eşleştir.",
+   "ciftler": [
+    ["Yalnız bir ortak noktası olan doğrular", "Kesişen doğrular"],
+    ["Hiç ortak noktası olmayan doğrular", "Paralel doğrular"],
+    ["Bütün noktaları ortak olan doğrular", "Çakışık doğrular"],
+    ["Kesişim noktasında dört dik açı oluşturan doğrular", "Dik doğrular"]
+   ]
+  },
+
+  {
+   "tur": "coktan",
+   "konu": "cokgenler-ve-cember",
+   "cikti": ["MAT.5.3.7"],
+   "hafta": 7,
+   "duzey": "hatirla",
+   "soru": "İki kenarının uzunluğu eşit, üçüncü kenarı farklı olan üçgene ne ad verilir?",
+   "secenekler": ["Çeşitkenar üçgen", "İkizkenar üçgen", "Eşkenar üçgen", "Dik üçgen"],
+   "dogru": 1,
+   "aciklama": "İki kenarı eşit olan üçgen ikizkenardır; eşit kenarlara ikiz kenarlar, üçüncü kenara taban denir."
+  },
+  {
+   "tur": "coktan",
+   "konu": "cokgenler-ve-cember",
+   "cikti": ["MAT.5.3.7"],
+   "hafta": 7,
+   "duzey": "hatirla",
+   "soru": "Dinamik matematik yazılımında iki çemberin kesişim noktalarını oluşturmak için hangi araç kullanılır?",
+   "secenekler": ["Nokta aracı", "Kesiştir aracı", "Çokgen aracı", "Taşı aracı"],
+   "dogru": 1,
+   "aciklama": "Kesiştir aracı iki çemberin ortak noktaları C ve D'yi oluşturur; çokgen aracı üçgeni kapatır, taşı aracı noktaları sürüklemeye yarar."
+  },
+  {
+   "tur": "coktan",
+   "konu": "cokgenler-ve-cember",
+   "cikti": ["MAT.5.3.7"],
+   "hafta": 7,
+   "duzey": "hatirla",
+   "soru": "Yarıçapı 4 cm olan bir çemberin çapının uzunluğu kaç santimetredir?",
+   "secenekler": ["2 cm", "4 cm", "8 cm", "16 cm"],
+   "dogru": 2,
+   "aciklama": "Çapın uzunluğu yarıçapın iki katıdır: 2 × 4 = 8 cm."
+  },
+  {
+   "tur": "coktan",
+   "konu": "cokgenler-ve-cember",
+   "cikti": ["MAT.5.3.7"],
+   "hafta": 7,
+   "duzey": "uygula",
+   "soru": "Yarıçapları 4 cm olan iki çemberin merkezleri arasındaki uzaklık 8 cm'dir. Bu çemberlerin ortak nokta sayısı kaçtır?",
+   "secenekler": ["0", "1", "2", "Sınırsız"],
+   "dogru": 1,
+   "aciklama": "Merkezler arasındaki uzaklık yarıçapların toplamına (4 + 4 = 8 cm) eşit olduğundan çemberler yalnız bir noktada birbirine değer; bu noktayla üçgen kurulamaz."
+  },
+  {
+   "tur": "coktan",
+   "konu": "cokgenler-ve-cember",
+   "cikti": ["MAT.5.3.7"],
+   "hafta": 7,
+   "duzey": "uygula",
+   "soru": "Yarıçapları 4 cm ve 6 cm olan iki çemberin merkezleri arasındaki uzaklık 6 cm'dir. Merkezler ve bir kesişim noktasıyla kurulan üçgenin kenar uzunlukları ve türü hangisidir?",
+   "secenekler": ["4 cm, 6 cm, 6 cm; ikizkenar", "4 cm, 4 cm, 6 cm; ikizkenar", "4 cm, 6 cm, 10 cm; çeşitkenar", "6 cm, 6 cm, 6 cm; eşkenar"],
+   "dogru": 0,
+   "aciklama": "İki kenar çemberlerin yarıçaplarıdır: 4 cm ve 6 cm; üçüncü kenar merkezler arasındaki uzaklıktır: 6 cm. İki kenar eşit olduğundan üçgen ikizkenardır."
+  },
+  {
+   "tur": "coktan",
+   "konu": "cokgenler-ve-cember",
+   "cikti": ["MAT.5.3.7"],
+   "hafta": 7,
+   "duzey": "ust",
+   "soru": "Dinamik matematik yazılımında A ve B merkezli, yarıçapları 5 birim olan iki çember çizildi ve kesişim noktası C ile ABC üçgeni kuruldu. B noktası sürüklenerek |AB| önce 4 birim, sonra 5 birim yapıldı. Üçgenin türü sırasıyla nasıl olur?",
+   "secenekler": ["İkizkenar, sonra eşkenar", "Eşkenar, sonra ikizkenar", "Çeşitkenar, sonra ikizkenar", "İkizkenar, sonra çeşitkenar"],
+   "dogru": 0,
+   "aciklama": "|AC| ve |BC| yarıçap olduğundan 5 birimde sabit kalır. |AB| = 4 iken kenarlar 5, 5, 4 olur: ikizkenar. |AB| = 5 iken kenarlar 5, 5, 5 olur: eşkenar."
+  },
+  {
+   "tur": "dy",
+   "konu": "cokgenler-ve-cember",
+   "cikti": ["MAT.5.3.7"],
+   "hafta": 7,
+   "duzey": "hatirla",
+   "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirle.",
+   "ifadeler": [
+    {"metin": "Kesişen iki çemberin kesişim noktaları, merkezleri birleştiren doğrunun aynı yanında bulunur.", "dogru": false, "aciklama": "Kesişim noktaları, merkezleri birleştiren doğrunun iki ayrı yanında birbirinin ayna görüntüsü gibi durur."},
+    {"metin": "Küçük bir çember büyük bir çemberin tamamen içinde kalıyorsa iki çemberin ortak noktası yoktur.", "dogru": true, "aciklama": "Çizgiler birbirine değmediği için ortak nokta oluşmaz; yarıçapları 2 cm ve 6 cm, merkezleri 1 cm aralıklı çemberler böyledir."},
+    {"metin": "Yarıçapları farklı iki çemberle eşkenar üçgen kurulabilir.", "dogru": false, "aciklama": "Üçgenin iki kenarı yarıçaplar olduğundan daha baştan farklıdır; üç kenar hiçbir zaman eşitlenemez."},
+    {"metin": "Pergelle kurulan üçgenler, cetvelle ölçerek çizilenlerden daha güvenilirdir.", "dogru": true, "aciklama": "Pergel aynı açıklığı olduğu gibi aktarır; cetvelle ölçerken milimetrelik okuma hataları olur."}
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "konu": "cokgenler-ve-cember",
+   "cikti": ["MAT.5.3.7"],
+   "hafta": 7,
+   "duzey": "hatirla",
+   "soru": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {"metin": "Üç kenarının uzunluğu da birbirinden farklı olan üçgene ___ üçgen denir.", "cevap": "çeşitkenar"},
+    {"metin": "İkizkenar üçgende eşit olmayan üçüncü kenara ___ denir.", "cevap": "taban"},
+    {"metin": "Çemberin iki noktasını merkezden geçerek birleştiren doğru parçasına ___ denir.", "cevap": "çap"}
+   ],
+   "fazla": ["ikizkenar"]
+  }
+ ]
+}
