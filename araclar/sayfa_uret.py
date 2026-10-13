@@ -13,7 +13,7 @@ from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'goruntule.js': '20261012-1', 'belgeler.js': '20261012-1', 'agac.js': '20261013-2', 'yazili.js': '20261013-1', 'ortak.js': '20261013-2', 'tahta.js': '20261013-2', 'etkinlik.js': '20261003-1', 'arama.js': '20261013-2', 'kutuphane.js': '20261013-4', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-1'}
+BETIK_SURUMLERI = {'goruntule.js': '20261012-1', 'belgeler.js': '20261012-1', 'agac.js': '20261013-3', 'yazili.js': '20261013-1', 'ortak.js': '20261013-2', 'tahta.js': '20261013-2', 'etkinlik.js': '20261003-1', 'arama.js': '20261013-2', 'kutuphane.js': '20261013-4', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-1'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
@@ -34,7 +34,7 @@ SINIFLAR = [n for k in json.loads((PUBLIC / 'veri' / 'dersler.json').read_text(e
 
 KITLE_OGRENCI = ('ogrenci.html', 'kelime.html', 'arapca.html', 'sinav.html')
 KITLE_OGRETMEN = ('ogretmen.html', 'planlar.html', 'yazili.html', 'belgeler.html', 'kpss.html')
-AGAC_CSS = '<link rel="stylesheet" href="/agac.css?v=20261013-3">'
+AGAC_CSS = '<link rel="stylesheet" href="/agac.css?v=20261013-4">'
 
 
 def kitle_bul(ad):

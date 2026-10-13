@@ -125,7 +125,7 @@
 .agac-sekme { display: inline-flex; align-items: center; gap: 8px; font: inherit; font-weight: 700; font-size: 14px; padding: 8px 14px; border-radius: 999px; cursor: pointer;
   background: var(--yuzey); color: var(--metin); border: 1px solid var(--cizgi); min-height: 40px; }
 .agac-sekme small { font-size: 12px; padding: 1px 7px; border-radius: 999px; background: var(--zemin-2); }
-.agac-sekme[aria-selected="true"] { background: var(--vurgu); color: #fff; border-color: var(--vurgu); }
+.agac-sekme[aria-selected="true"] { background: var(--vurgu); color: var(--zemin); border-color: var(--vurgu); }   /* koyu temada --vurgu açık: yazı koyu zemin rengi (beyaz 1,6:1 kalıyordu) */
 .agac-sekme[aria-selected="true"] small { background: rgb(255 255 255 / .2); }
 .agac-komsular { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 26px; }
 .agac-komsu { display: flex; flex-direction: column; gap: 2px; padding: 12px 16px; border-radius: 12px; border: 1px solid var(--cizgi); background: var(--yuzey); color: var(--metin); text-decoration: none; }
@@ -212,4 +212,4 @@
 .yz-govde small { color: var(--soluk); font-size: 13px; }
 .yz-bos { margin: 0; padding: 12px 14px; border: 1px dashed var(--cizgi); border-radius: 12px; color: var(--soluk); font-size: 14px; }
 .yz-konu { margin-top: 24px; }
-.yz-baglanti { display: inline-block; margin-top: 12px; font-weight: 600; }
+.yz-baglanti { display: inline-flex; align-items: center; min-height: 44px; margin-top: 4px; font-weight: 600; }

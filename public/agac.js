@@ -155,16 +155,16 @@
     const v = yaziliDers(yz, n, d);
     if (!v.senaryo.length && !v.deneme.length && !v.cikti.length) return null;
     const yazililar = [...new Set(v.senaryo.map((x) => x.yazili))];
-    const senaryoIc = [
-      ...yazililar.flatMap((yNo) => {
-        const L = v.senaryo.filter((x) => x.yazili === yNo);
-        return [el('h4', {}, L[0].ad), el('ol', { sinif: 'yz-liste' }, L.map((x) => yzSatir(`Senaryo ${x.no}`, null,
-          x.soru ? `${x.soru} soru · 2 sayfa · 40 dakika` : '2 sayfa · 40 dakika', pdfDugme(x.pdf, `${x.ad}, Senaryo ${x.no}`))))];
-      }),
-      v.deneme.length ? [el('h4', {}, v.ulke.sinav),
-        el('p', { sinif: 'yz-acik' }, `Bu yazılı ${v.ulke.tarih} tarihinde MEB tarafından ülke genelinde ortak yapılır; senaryosu yoktur. Hazırlık denemeleri:`),
-        el('ol', { sinif: 'yz-liste' }, v.deneme.map((x) => yzSatir(`Deneme ${x.no}`, null, '2 sayfa · 40 dakika', pdfDugme(x.pdf, `${v.ulke.sinav}, Deneme ${x.no}`))))] : null,
-    ].flat(Infinity).filter(Boolean);
+    // Senaryolu yazılılar ve ülke geneli yazılı tek listede, yazılı numarasına göre (1. yazılı ülke geneliyse önce o gelir)
+    const gruplar = yazililar.map((yNo) => {
+      const L = v.senaryo.filter((x) => x.yazili === yNo);
+      return { no: Number(yNo) || 0, ic: [el('h4', {}, L[0].ad), el('ol', { sinif: 'yz-liste' }, L.map((x) => yzSatir(`Senaryo ${x.no}`, null,
+        x.soru ? `${x.soru} soru · 2 sayfa · 40 dakika` : '2 sayfa · 40 dakika', pdfDugme(x.pdf, `${x.ad}, Senaryo ${x.no}`))))] };
+    });
+    if (v.deneme.length) gruplar.push({ no: Number(v.ulke.yazili) || 99, ic: [el('h4', {}, v.ulke.sinav),
+      el('p', { sinif: 'yz-acik' }, `Bu yazılı ${v.ulke.tarih} tarihinde MEB tarafından ülke genelinde ortak yapılır; senaryosu yoktur. Hazırlık denemeleri:`),
+      el('ol', { sinif: 'yz-liste' }, v.deneme.map((x) => yzSatir(`Deneme ${x.no}`, null, '2 sayfa · 40 dakika', pdfDugme(x.pdf, `${v.ulke.sinav}, Deneme ${x.no}`))))] });
+    const senaryoIc = gruplar.sort((a, b) => a.no - b.no).flatMap((g) => g.ic);
     const birimler = new Map();
     for (const c of v.cikti) {
       const k = ciktiKonulari(c, konular)[0];
@@ -306,15 +306,27 @@
     const baslik = k.ad === k.unite ? k.unite : k.ad;
     document.title = `${baslik} · ${n}. Sınıf ${ad} · Ders Kutusu`;
     const turler = [...new Set(k.icerik.map((i) => i.tur))];
-    const liste = el('div', { sinif: 'agac-kartlar', id: 'konu-icerik', role: 'tabpanel' });
+    const liste = el('div', { sinif: 'agac-kartlar', id: 'konu-icerik', role: 'tabpanel', 'aria-labelledby': 'sekme-tumu' });
     const ciz = (tur) => {
       const L = k.icerik.filter((i) => !tur || i.tur === tur).sort((a, b) => (a.hafta - b.hafta) || a.tur.localeCompare(b.tur, 'tr'));
       liste.replaceChildren(...L.map((i) => kart(i, dersler, { dersGoster: false })));
     };
-    const sekme = (etiket, tur, sayi) => el('button', { type: 'button', role: 'tab', sinif: 'agac-sekme', 'aria-selected': tur === '' ? 'true' : 'false', 'aria-controls': 'konu-icerik', 'data-tur': tur,
-      onclick: (o) => { $$('.agac-sekme', sekmeler).forEach((b) => b.setAttribute('aria-selected', String(b === o.currentTarget))); ciz(tur); } },
+    // Sekme kalıbı: yalnız seçili sekme Tab sırasında, ok tuşları ve Home/End sekmeler arasında gezer
+    const sekmeKimlik = (tur) => `sekme-${tur ? tur.toLocaleLowerCase('tr').replace(/[^a-z0-9çğıöşü]+/g, '-') : 'tumu'}`;
+    const sec = (b) => {
+      $$('.agac-sekme', sekmeler).forEach((x) => { const secili = x === b; x.setAttribute('aria-selected', String(secili)); x.tabIndex = secili ? 0 : -1; });
+      liste.setAttribute('aria-labelledby', b.id); ciz(b.dataset.tur);
+    };
+    const sekme = (etiket, tur, sayi) => el('button', { type: 'button', role: 'tab', id: sekmeKimlik(tur), sinif: 'agac-sekme', 'aria-selected': tur === '' ? 'true' : 'false',
+      tabindex: tur === '' ? null : '-1', 'aria-controls': 'konu-icerik', 'data-tur': tur, onclick: (o) => sec(o.currentTarget) },
       etiket, el('small', {}, String(sayi)));
-    const sekmeler = el('div', { sinif: 'agac-sekmeler', role: 'tablist', 'aria-label': 'İçerik türleri' },
+    const sekmeler = el('div', { sinif: 'agac-sekmeler', role: 'tablist', 'aria-label': 'İçerik türleri',
+      onkeydown: (o) => {
+        const L = $$('.agac-sekme', sekmeler), i = L.indexOf(document.activeElement);
+        const j = { ArrowRight: i + 1, ArrowLeft: i - 1, Home: 0, End: L.length - 1 }[o.key];
+        if (i < 0 || j == null) return;
+        o.preventDefault(); const b = L[(j + L.length) % L.length]; b.focus(); sec(b);
+      } },
       sekme('Tümü', '', k.icerik.length), ...turler.map((t) => sekme(K().category(t).title || t, t, k.icerik.filter((i) => i.tur === t).length)));
     const komsu = (j, yon) => j >= 0 && j < konular.length ? el('a', { sinif: `agac-komsu ${yon}`, href: adres({ sinif: n, ders: d, konu: konular[j].kod }) },
       el('small', {}, yon === 'onceki' ? '← Önceki konu' : 'Sonraki konu →'), el('strong', {}, konular[j].ad === konular[j].unite ? konular[j].unite : konular[j].ad)) : el('span', {});
@@ -396,7 +408,10 @@
     if (n && !v.dersler.siniflar[n]) { location.replace(location.pathname); return; }
     if (KITLE === 'ogrenci') {
       const d = P.get('ders');
-      if (n && d && (v.dersler.dersler[d])) await ogrenciDers(v, n, d);
+      // Ders o sınıfta okutuluyor mu (ör. ?sinif=5&ders=fizik değil); değilse sınıf sayfası açılır, adres düzeltilir
+      const dersVar = n && d && ((v.dersler.siniflar[n] || []).includes(d) || (v.dersler.secmeli?.[n] || []).includes(d));
+      if (n && d && !dersVar) history.replaceState(null, '', adres({ sinif: n }));
+      if (dersVar) await ogrenciDers(v, n, d);
       else if (n) ogrenciSinif(v, dizin, n);
       else ogrenciKok(v, dizin);
     } else {
@@ -404,8 +419,10 @@
       if (kat) ogretmenKategori(v, kat, n);
       else ogretmenKok(v);
     }
-    alan.setAttribute('aria-busy', 'false');
     // Bölüm sayfa açıldıktan sonra çizildiği için #yaziliya-hazirlik bağlantısıyla gelindiyse oraya kaydır
     if (location.hash.length > 1) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
-  });
+  }).catch((hata) => {   // beklenmedik veri biçimi vb.: sonsuza dek "Yükleniyor…" kalmasın
+    console.error(hata);
+    yerles(bolum('', bos('Sayfa açılamadı', 'Veri okunurken bir sorun oldu. Sayfayı yenileyin ya da sınıfınızı yeniden seçin.', el('a', { sinif: 'dugme ana', href: location.pathname }, 'Başa dön'))));
+  }).finally(() => alan.setAttribute('aria-busy', 'false'));
 })();
