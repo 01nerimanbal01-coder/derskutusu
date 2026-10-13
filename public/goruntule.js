@@ -11,7 +11,7 @@ const PDF_CORS = /^https:\/\/cdn\.eba\.gov\.tr\/.+\.pdf(\?|$)/i;
 (() => {
   const l = document.createElement('link');
   l.rel = 'stylesheet';
-  l.href = '/goruntule.css?v=20261012-1';
+  l.href = '/goruntule.css?v=20261013-1';
   document.head.append(l);
 })();
 
@@ -257,8 +257,12 @@ veri('belgeler.json').then(async (belgeler) => {
     dosyaSec.value = '';
     if (!f) return;
     if (!/\.pdf$/i.test(f.name) && f.type !== 'application/pdf') {
-      alan.replaceChildren(el('div', { sinif: 'g-uyari' }, el('h2', {}, 'Bu dosya PDF değil'),
-        el('p', {}, `“${f.name}” açılamadı. Kitabın .pdf uzantılı dosyasını seçin.`), yerelDugme(true)));
+      // Açık bir belge varsa silinmez: uyarı üstte kısa süre görünür
+      const acik = alan.querySelector('.pdf-kaydir, iframe');
+      const uyari = el('div', { sinif: acik ? 'g-uyari g-uyari-ust' : 'g-uyari', role: 'alert' }, el('h2', {}, 'Bu dosya PDF değil'),
+        el('p', {}, `“${f.name}” açılamadı. Kitabın .pdf uzantılı dosyasını seçin.`), acik ? null : yerelDugme(true));
+      if (acik) { alan.querySelector('.g-uyari-ust')?.remove(); alan.append(uyari); setTimeout(() => uyari.remove(), 6000); }
+      else alan.replaceChildren(uyari);
       return;
     }
     $('#g-bilgi').textContent = `Bilgisayardaki dosya: ${f.name} · açılıyor…`;
@@ -276,8 +280,8 @@ veri('belgeler.json').then(async (belgeler) => {
 
   function dugmeleriCiz() {
     const dugmeler = [
-      kendimiz && el('button', { sinif: 'dugme ana', type: 'button', onclick: () => window.kalemAc?.() }, el('span', { 'aria-hidden': 'true' }, '✎'), 'Kalemle yaz'),
-      !kendimiz && !yerelPanel && b.cerceve && el('button', { sinif: 'dugme ana', type: 'button', onclick: () => window.kalemAc?.() }, el('span', { 'aria-hidden': 'true' }, '✎'), 'Kalemle yaz'),
+      kendimiz && el('button', { sinif: 'dugme ana', type: 'button', 'data-kalem-dugme': '', onclick: () => window.kalemAc?.() }, el('span', { 'aria-hidden': 'true' }, '✎'), 'Kalemle yaz'),
+      !kendimiz && !yerelPanel && b.cerceve && el('button', { sinif: 'dugme ana', type: 'button', 'data-kalem-dugme': '', onclick: () => window.kalemAc?.() }, el('span', { 'aria-hidden': 'true' }, '✎'), 'Kalemle yaz'),
       uzak && yerelDugme(false),
       b.dosya && el('a', { sinif: 'dugme', href: `/${b.dosya}`, download: '' }, simge('indir'), 'İndir'),
       resmi && el('a', { sinif: 'dugme', href: resmi, target: '_blank', rel: 'noopener' }, 'Resmî kaynak', simge('ok')),

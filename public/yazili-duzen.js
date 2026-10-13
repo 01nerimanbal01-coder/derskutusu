@@ -20,7 +20,8 @@
   const indir = (href, ad, etiket, ana) => el('a', { sinif: `dugme${ana ? ' ana' : ''}`, href, download: '', 'aria-label': `${ad}: ${etiket}` }, simge('indir'), ad);
 
   Promise.all([veri('senaryolar.json'), veri('yazili-kagitlari.json'), veri('yazili-cikti.json'),
-    sinif && ders ? veri(`agac/${sinif}-${ders}.json`) : null, ortakVeri]).then(async ([sen, kagit, cikti, agac, ortak]) => {
+    sinif && ders ? veri('agac/dizin.json').then((dz) => (dz?.[`${sinif}-${ders}`] ? veri(`agac/${sinif}-${ders}.json`) : null)) : null,   // ağaç yoksa (9-12 İngilizce) 404 istenmez
+    ortakVeri]).then(async ([sen, kagit, cikti, agac, ortak]) => {
     const anahtar = `${sinif}-${ders}`;
     const t = sen?.tablolar?.[anahtar];
     const liste = cikti?.tablolar?.[anahtar];

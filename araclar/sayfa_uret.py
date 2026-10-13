@@ -13,7 +13,7 @@ from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'goruntule.js': '20261012-1', 'belgeler.js': '20261012-1', 'agac.js': '20261013-3', 'yazili.js': '20261013-1', 'ortak.js': '20261013-2', 'tahta.js': '20261013-2', 'etkinlik.js': '20261003-1', 'arama.js': '20261013-2', 'kutuphane.js': '20261013-4', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-1'}
+BETIK_SURUMLERI = {'goruntule.js': '20261013-1', 'belgeler.js': '20261013-1', 'agac.js': '20261013-3', 'yazili.js': '20261013-1', 'ortak.js': '20261013-2', 'tahta.js': '20261013-3', 'etkinlik.js': '20261003-1', 'arama.js': '20261013-2', 'kutuphane.js': '20261013-4', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-2'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
@@ -159,6 +159,12 @@ GOVDE = {
       <h1>Resmî belgeler</h1>
       <p>MEB, ÖDSGM, DÖGM ve ÖSYM’nin yayımladığı belgeler tek yerde. Bağlantılar doğrudan resmî kaynaklara gider; dosyalar her zaman güncel sürümüyle açılır.</p>
       <nav class="sinif-gecis" id="grup-gecis" aria-label="Belge grupları"></nav>
+      <form class="belge-suzgec" role="search" aria-label="Belgeleri süz">
+        <label>Ara<input id="b-ara" type="search" placeholder="Belge, ders ya da kurum…" autocomplete="off"></label>
+        <label>Sınıf<select id="b-sinif"><option value="">Bütün sınıflar</option></select></label>
+        <label>Kimin için<select id="b-kitle"><option value="">Herkes</option><option value="ogretmen">Öğretmen</option><option value="ogrenci">Öğrenci ve veli</option></select></label>
+        <p class="belge-sonuc" id="b-sonuc" role="status" aria-live="polite"></p>
+      </form>
     </div>
   </section>
   <div id="belge-gruplari"></div>''', ('belgeler.js',)),
@@ -352,7 +358,7 @@ def _sinav_govde():
 
 GOVDE['planlar.html'] = ('Günlük planlar', 'Günlük ders planları: Okul, öğretmen, müdür yardımcısı ve müdür adları her sayfaya yazılır. Plan tüm yıl ya da ay ay, Word veya PDF olarak indirilir.', '''  <section class="sayfa-bas plan-bas">
     <div class="kap">
-      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/#ogretmen">Öğretmen</a><span aria-hidden="true">/</span><span>Günlük planlar</span></nav>
+      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/ogretmen.html">Öğretmen Köşesi</a><span aria-hidden="true">/</span><span>Günlük planlar</span></nav>
       <h1>Günlük ders planları</h1>
       <p>Okulun adını, kendi adınızı, müdür yardımcısının ve müdürün adını bir kez yazın. İndirdiğiniz planın her sayfasına bu bilgiler kendiliğinden yerleşir. Planı tüm yıl ya da ay ay, Word veya PDF olarak alın.</p>
       <ol class="plan-adimlar" aria-label="Adımlar">

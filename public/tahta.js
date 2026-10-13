@@ -599,7 +599,7 @@ if (typeof document !== 'undefined') {
     });
     window.kalemAc = () => ac.click();
     // Konu sayfasının başlığındaki "Kalemle yaz" düğmesi ekrandayken sağ alttaki kopyası gizlenir (aynı işi iki düğme yapmaz)
-    const sayfaDugmesi = document.querySelector('button[onclick*="kalemAc"]');
+    const sayfaDugmesi = document.querySelector('button[onclick*="kalemAc"], [data-kalem-dugme]');   // goruntule.js düğmesini el() ile kurar
     if (sayfaDugmesi && 'IntersectionObserver' in window) {
       new IntersectionObserver(([g]) => ac.classList.toggle('gizli', g.isIntersecting)).observe(sayfaDugmesi);
     }
