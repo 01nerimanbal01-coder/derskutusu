@@ -108,6 +108,7 @@
 
   // ---------------------------------------------------------------- ÖĞRENCİ
   const ARACLAR_OGRENCI = [
+    { ad: 'Çevrimiçi test', alt: 'Konuya ve çıktıya göre sorular, anında dönüt', href: '/test.html', simge: 'onay', renk: 'yesil' },
     { ad: 'İngilizce kelime çalışması', alt: '5 ve 6. sınıf · kart, dinleme, test', href: '/kelime.html', simge: 'ses', renk: 'lacivert' },
     { ad: 'Arapça harf ve kelime', alt: 'Harfler, harekeler, kartlar', href: '/arapca.html', simge: 'kalem', renk: 'turkuaz' },
     { ad: 'Sınavlar: LGS ve YKS', alt: 'Oturumlar, kılavuzlar, kaynaklar', href: '/sinav.html', simge: 'onay', renk: 'pembe' },
@@ -291,6 +292,7 @@
           el('span', { sinif: 'agac-ders-harf buyuk', 'aria-hidden': 'true' }, ilkHarf(ad)),
           el('div', {}, el('p', { sinif: 'agac-ust' }, `${n}. Sınıf`), el('h1', {}, ad),
             el('div', { sinif: 'agac-cipler' }, el('span', {}, `${agac.uniteler.length} ünite`), el('span', {}, `${konular.length} konu`), el('span', {}, icerikSay ? sayiYaz(icerikSay, 'içerik') : 'İçerikler hazırlanıyor')))),
+        el('div', { sinif: 'agac-eylemler' }, el('a', { sinif: 'dugme ana', href: `/test.html?sinif=${n}&ders=${encodeURIComponent(d)}` }, simge('onay'), 'Bu dersten test çöz')),
         buKonu ? el('a', { sinif: 'agac-bu-hafta', href: adres({ sinif: n, ders: d, konu: buKonu.kod }) },
           el('span', { sinif: 'agac-rozet bu-hafta' }, `Bu hafta · ${simdi}. hafta`), el('strong', {}, buKonu.ad === buKonu.unite ? buKonu.unite : buKonu.ad), el('span', { 'aria-hidden': 'true' }, '→')) : null)),
       kaynaklar.length ? bolum('agac-ince', el('div', { sinif: 'agac-kaynaklar' }, kaynaklar)) : null,
@@ -336,7 +338,8 @@
         el('p', { sinif: 'agac-ust' }, `${n}. Sınıf · ${ad} · ${k.ui + 1}. ünite: ${k.unite}`),
         el('h1', {}, baslik),
         el('div', { sinif: 'agac-cipler' }, el('span', {}, haftaMetni(k.haftalar)), tarihMetni(k.haftalar, agac.haftalar) ? el('span', {}, tarihMetni(k.haftalar, agac.haftalar)) : null,
-          simdi && k.haftalar.includes(simdi) ? el('span', { sinif: 'agac-rozet bu-hafta' }, 'Bu hafta') : null))),
+          simdi && k.haftalar.includes(simdi) ? el('span', { sinif: 'agac-rozet bu-hafta' }, 'Bu hafta') : null),
+        el('div', { sinif: 'agac-eylemler' }, el('a', { sinif: 'dugme ana', href: `/test.html?sinif=${n}&ders=${encodeURIComponent(d)}&konu=${encodeURIComponent(k.kod)}` }, simge('onay'), 'Bu konudan test çöz')))),
       bolum('', k.icerik.length ? el('div', {}, sekmeler, liste)
         : bos('Bu konunun içerikleri hazırlanıyor', 'Konu anlatımı ve çalışma kâğıdı yıllık plan sırasıyla ekleniyor. Bu arada ders kitabından çalışabilirsin.',
           ...dersDuzeyi.filter((i) => i.tur === 'Ders kitabı').flatMap((i) => [el('a', { sinif: 'dugme ana', href: yol(i.goruntule || i.baglanti) }, 'Ders kitabını aç', simge('ok')),

@@ -23,6 +23,11 @@ Hesap açma, giriş ve anahtar/şifre girme işlerini siz yaparsınız. Anahtarl
 - `public/veri/youtube.json`, `instagram.json`: `araclar/akis_guncelle.py` üretir; elle değiştirilmez.
 - `public/gizlilik.html` (gizlilik ve çerezler), `404.html`, `robots.txt`, `sitemap.xml`, simgeler ve paylaşım görseli (`paylasim.png`).
 
+## Çevrimiçi test (öğrenci soru havuzu)
+- `public/test.html` + `public/test.js`: öğrenci sınıf → ders → ünite/konu → öğrenme çıktısı seçer; sorular havuzdan rastgele ve tekrarsız seçilir (son görülenler cihazda tutulur), dönüt anında ya da sonunda verilir; sonuç konu ve çıktıya göre dökülür. Her şey tarayıcıda kalır, sunucuya veri gitmez.
+- `python3 araclar/soru_havuzu_uret.py`: havuzu üretir → `public/veri/soru/<sinif>-<ders>.json` ve `dizin.json`. Kaynaklar: konu özetlerinin etkinlikleri ve örnekleri (`araclar/ozetler`), çalışma kâğıtlarının soruları (`araclar/calisma`) ve ek soru dosyaları. Görsele dayanan sorular alınmaz. Yeni özet/çalışma kâğıdı eklenince yeniden çalıştırılır.
+- Ek soru yazmak için `araclar/sorular/<sinif>-<ders>.json`: `{"sorular": [{"tur": "coktan", "konu": "<ağaçtaki konu kodu>", "cikti": ["MAT.5.3.1"], "soru": "...", "secenekler": ["...", "..."], "dogru": 1, "aciklama": "..."}]}`. Türler: `coktan`, `dy` (`ifadeler`: metin/dogru/aciklama), `bosluk` (`cumleler`: metin `___` ile / cevap, `fazla`), `eslestir` (`ciftler`), `siralama` (`ogeler` doğru sırada), `acik` (`cevap`, `ipuclari`). Metinlerde `{kesir:3|4}`, `{kok:2}`, `{us:2|3}`, `{ar:...}` gösterimleri kullanılabilir. `node tests/soru-havuzu.cjs` havuzu denetler.
+
 ## Sosyal medya kartları
 - `araclar/sosyal/<kimlik>.json`: her "Bunu biliyor muydunuz?" kartının metni (`ozet`, `baslik`, `paragraflar`, `bilgi`). Kimlik `bilgi-<sınıf>-<ders>-<hafta>` biçimindedir (Din Kültürü → `din-kulturu`, İnkılap Tarihi → `inkilap-tarihi`).
 - `python3 araclar/sosyal_gorsel.py`: görseli olmayan kartları `public/sosyal/<kimlik>.png` olarak üretir (1080×1350, Poppins yazı tipi `araclar/fontlar/`). `--kuyruk 2026-10-13T09:00` ile kuyrukta olmayan kartları günde 6 gönderi (09–19, iki saat arayla) olacak biçimde `sosyal/kuyruk.json`'a ekler.

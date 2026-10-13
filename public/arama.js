@@ -174,6 +174,7 @@ const Arama = (() => {
 
     // Sayfalar
     ekle({ tip: 'sayfa', baslik: 'İçerikler', aciklama: 'Bütün içerikler: sınıf, ders ve türe göre süzün.', adres: '/icerikler.html', ek: 'kutuphane liste' });
+    ekle({ tip: 'sayfa', baslik: 'Çevrimiçi test', aciklama: 'Sınıf, ders, konu ve öğrenme çıktısına göre otomatik seçilen sorularla test çöz; anında dönüt.', adres: '/test.html', ek: 'online test soru havuzu quiz sinav deneme' });
     ekle({ tip: 'sayfa', baslik: 'Resmî belgeler', aciklama: 'Öğretim programları, kılavuzlar, ortak yazılı tabloları, LGS ve YKS belgeleri.', adres: '/belgeler.html', ek: 'meb odsgm dogm osym resmi' });
     ekle({ tip: 'sayfa', baslik: 'Günlük planlar', aciklama: 'Okul, öğretmen ve yönetici adları her sayfaya yazılı günlük ders planları; tüm yıl ya da aylık, Word veya PDF.', adres: '/planlar.html', kitle: 'ogretmen', ek: 'ogretmen', tur: 'Ders planı' });
     ekle({ tip: 'sayfa', baslik: 'Öğretmen köşesi', aciklama: 'Yıllık planlar, günlük planlar, ortak yazılı tabloları ve çalışma kâğıtları.', adres: '/icerikler.html?kitle=ogretmen', kitle: 'ogretmen', ek: 'ogretmen' });
