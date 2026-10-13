@@ -11,11 +11,13 @@ const server=http.createServer(async(req,res)=>{
   try{res.writeHead(200,{'Content-Type':mime[path.extname(file)]||'application/octet-stream'}).end(await fs.readFile(file));}
   catch{res.writeHead(404).end();}
 });
-const routes=['/','/icerikler.html','/sinif.html?no=5','/planlar.html','/belgeler.html','/kelime.html','/arapca.html','/kpss.html','/sinav.html','/ara.html?q=matematik','/ozet/5-matematik-hafta-1.html'];
+const routes=['/','/icerikler.html','/ogrenci.html','/ogrenci.html?sinif=5','/planlar.html','/belgeler.html','/kelime.html','/arapca.html','/kpss.html','/sinav.html','/ara.html?q=matematik','/ozet/5-matematik-hafta-1.html'];
 async function ready(page,route){
-  if(route==='/')await expect(page.locator('.kesif-kategori')).toHaveCount(8);
+  // Ana sayfa (11.10.2026): iki rol kartı ve "Son eklenenler"; sınıf ve ders kartları öğrenci ağacında (agac.js).
+  if(route==='/'){await expect(page.locator('.rol-kart')).toHaveCount(2);await page.locator('#kartlar .kart').first().waitFor();}
   else if(route.includes('icerikler'))await page.locator('#kartlar .kart').first().waitFor();
-  else if(route.includes('sinif.html'))await page.locator('.ders-kart').first().waitFor();
+  else if(route.includes('sinif='))await page.locator('.agac-ders').first().waitFor();
+  else if(route.includes('ogrenci.html'))await page.locator('.agac-sinif').first().waitFor();
   else await page.locator('main').waitFor();
   await page.evaluate(()=>document.fonts.ready);
 }
@@ -44,45 +46,48 @@ let base;
         for(const width of [1366,1180,768,390,320]){
           await page.setViewportSize({width,height:900});
           for(const route of routes)await layout(page,route,name,width);
+          await page.goto(base+'/ogrenci.html');await ready(page,'/ogrenci.html');
+          await expect(page.locator('.agac-sinif')).toHaveCount(Object.keys(metadata.siniflar).length);
           await page.goto(base+'/');await ready(page,'/');
-          await expect(page.locator('.kesif-ders-baglari a')).toHaveCount(Object.keys(metadata.dersler).length);
           await page.screenshot({path:path.join(output,`${name}-home-${width}.png`)});
           if([1366,390].includes(width)){
-            for(const section of ['kategoriler','dersler','siniflar'])await page.locator('#'+section).screenshot({path:path.join(output,`${name}-${section}-${width}.png`)});
+            for(const section of ['.rol-giris','#icerikler','#araclar'])await page.locator(section).screenshot({path:path.join(output,`${name}-${section.replace(/^[.#]/,'')}-${width}.png`)});
           }
         }
         await page.setViewportSize({width:390,height:900});
         await page.goto(base+'/');await ready(page,'/');
         await page.locator('.menu-dugme').tap();
         await expect(page.locator('.menu-dugme')).toHaveAttribute('aria-expanded','true');
-        await page.locator('#ana-menu a[href="/#dersler"]').tap();
+        await page.locator('#ana-menu a[href="/ogrenci.html"]').tap();
+        await page.waitForURL('**/ogrenci.html');await ready(page,'/ogrenci.html');
         await expect(page.locator('.menu-dugme')).toHaveAttribute('aria-expanded','false');
-        assert(new URL(page.url()).hash==='#dersler');
-        const firstSubject=page.locator('.kesif-ders-baglari a').first();
-        await firstSubject.focus();
+        const firstGrade=page.locator('.agac-sinif').first();
+        await firstGrade.focus();
         // A touch followed by focus() retains pointer modality. Exercise real keyboard navigation.
         await page.keyboard.press('Tab');
-        await expect(page.locator('.kesif-ders-baglari a').nth(1)).toBeFocused();
+        await expect(page.locator('.agac-sinif').nth(1)).toBeFocused();
         await page.keyboard.press('Shift+Tab');
-        await expect(firstSubject).toBeFocused();
-        assert(await firstSubject.evaluate(n=>n.matches(':focus-visible')&&getComputedStyle(n).outlineStyle!=='none'),'Keyboard focus missing');
+        await expect(firstGrade).toBeFocused();
+        assert(await firstGrade.evaluate(n=>n.matches(':focus-visible')&&getComputedStyle(n).outlineStyle!=='none'),'Keyboard focus missing');
         await page.keyboard.press('Enter');
-        await expect(page.locator('#s-ders')).toHaveValue('matematik');
-        report.checks.push({browser:name,check:'touch menu, keyboard subject navigation',status:'passed'});
+        await page.waitForURL('**/ogrenci.html?sinif=5');await ready(page,'/ogrenci.html?sinif=5');
+        await expect(page.locator('.agac-ders').first()).toBeVisible();
+        report.checks.push({browser:name,check:'touch menu, keyboard grade navigation',status:'passed'});
         await page.setViewportSize({width:1366,height:900});
         for(const mode of ['system-dark','explicit-dark','explicit-light']){
           await page.emulateMedia({colorScheme:mode==='explicit-dark'?'light':'dark'});
           await page.goto(base+'/');await ready(page,'/');
           if(mode.startsWith('explicit'))await page.evaluate(theme=>document.documentElement.dataset.theme=theme,mode.split('-')[1]);
-          const colors=await page.locator('.kesif-kategori').evaluateAll(cards=>cards.map(n=>({ink:getComputedStyle(n).getPropertyValue('--kart-ana').trim().toUpperCase(),bg:getComputedStyle(n).backgroundColor})));
-          assert.equal(new Set(colors.map(c=>c.ink)).size,8,'Category colors collapsed');
+          // Renk sistemi: menü, rol kartları ve araç bağlantıları data-renk taşır (mavi, yeşil, pembe, mor, turkuaz, lacivert, sarı)
+          const colors=await page.locator('.menu > a[data-renk], .rol-kart[data-renk], .kesif-arac-links a[data-renk]').evaluateAll(cards=>cards.map(n=>({ink:getComputedStyle(n).getPropertyValue('--kart-ana').trim().toUpperCase(),bg:getComputedStyle(n).backgroundColor})));
+          assert(new Set(colors.map(c=>c.ink)).size>=7,'Palette colors collapsed: '+JSON.stringify(colors));
           assert(colors.some(c=>c.ink===(mode==='explicit-light'?'#6135BD':'#D2B8FF')),'Theme mismatch');
           await page.screenshot({path:path.join(output,`${name}-${mode}.png`)});
-          await page.locator('#kategoriler').screenshot({path:path.join(output,`${name}-${mode}-categories.png`)});
+          await page.locator('.rol-giris').screenshot({path:path.join(output,`${name}-${mode}-roles.png`)});
           report.checks.push({browser:name,check:mode,status:'passed'});
         }
         await page.emulateMedia({colorScheme:'light'});
-        for(const route of ['/planlar.html','/belgeler.html','/kelime.html','/kpss.html','/sinif.html?no=5']){
+        for(const route of ['/planlar.html','/belgeler.html','/kelime.html','/kpss.html','/ogrenci.html?sinif=5']){
           await page.goto(base+route);await ready(page,route);
           await page.screenshot({path:path.join(output,`${name}-${route.split('?')[0].slice(1,-5)}.png`)});
         }

@@ -13,12 +13,19 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
 <meta property="og:site_name" content="Ders Kutusu">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:url" content="https://derskutusu.com/belgeler.html">
 <meta property="og:title" content="Resmî belgeler · Ders Kutusu">
 <meta property="og:description" content="MEB, ÖDSGM, DÖGM ve ÖSYM resmî belgeleri: öğretim programları, kılavuzlar, ortak yazılı tabloları, LGS ve YKS.">
 <meta property="og:image" content="https://derskutusu.com/paylasim.png">
-<link rel="stylesheet" href="/stil.css?v=202610131610">
-<link rel="stylesheet" href="/renkler.css?v=20261013-1" media="screen">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/stil.css?v=202610132200">
+<link rel="stylesheet" href="/renkler.css?v=20261013-3" media="screen">
 </head>
 <body data-kitle="ogretmen" data-site-renk="turkuaz">
 <a class="atla" href="#icerik">İçeriğe geç</a>
@@ -64,6 +71,12 @@
       <h1>Resmî belgeler</h1>
       <p>MEB, ÖDSGM, DÖGM ve ÖSYM’nin yayımladığı belgeler tek yerde. Bağlantılar doğrudan resmî kaynaklara gider; dosyalar her zaman güncel sürümüyle açılır.</p>
       <nav class="sinif-gecis" id="grup-gecis" aria-label="Belge grupları"></nav>
+      <form class="belge-suzgec" role="search" aria-label="Belgeleri süz">
+        <label>Ara<input id="b-ara" type="search" placeholder="Belge, ders ya da kurum…" autocomplete="off"></label>
+        <label>Sınıf<select id="b-sinif"><option value="">Bütün sınıflar</option></select></label>
+        <label>Kimin için<select id="b-kitle"><option value="">Herkes</option><option value="ogretmen">Öğretmen</option><option value="ogrenci">Öğrenci ve veli</option></select></label>
+        <p class="belge-sonuc" id="b-sonuc" role="status" aria-live="polite"></p>
+      </form>
     </div>
   </section>
   <div id="belge-gruplari"></div>
@@ -105,10 +118,10 @@
   </div>
 </footer>
 
-<script src="/ortak.js?v=20261013-1"></script>
-<script src="/belgeler.js?v=20261012-1"></script>
-<script src="/arama.js?v=20261004-duzen1"></script>
-<script src="/tahta.js?v=20261013-1"></script>
+<script src="/ortak.js?v=20261013-3"></script>
+<script src="/belgeler.js?v=20261013-2"></script>
+<script src="/arama.js?v=20261013-4"></script>
+<script src="/tahta.js?v=20261013-5"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fffb5e8a709947ee9ba14ea753d96275"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

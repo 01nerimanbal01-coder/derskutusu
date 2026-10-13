@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""İç sayfaları (sinif.html, icerikler.html, gizlilik.html, 404.html) ana sayfanın üst ve alt bölümüyle üretir.
+"""İç sayfaları (ogrenci.html, ogretmen.html, icerikler.html, gizlilik.html, 404.html vb.) ana sayfanın üst ve alt bölümüyle üretir.
 
 Ana sayfadaki simge takımı, üst menü ve alt bilgi değişince bu betik yeniden çalıştırılır:
     python3 araclar/sayfa_uret.py
 Sayfaların kendi gövdeleri aşağıdaki GOVDE sözlüğündedir.
 """
+import json
 import re
 from pathlib import Path
 from kesif_sablonlari import kesif_sayfa, kutuphane_govde
@@ -12,7 +13,7 @@ from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'goruntule.js': '20261012-1', 'belgeler.js': '20261012-1', 'agac.js': '20261013-2', 'yazili.js': '20261010-1', 'ortak.js': '20261013-1', 'tahta.js': '20261013-1', 'etkinlik.js': '20261003-1', 'arama.js': '20261004-duzen1', 'kutuphane.js': '20261013-2', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-1'}
+BETIK_SURUMLERI = {'goruntule.js': '20261013-2', 'belgeler.js': '20261013-2', 'agac.js': '20261013-5', 'yazili.js': '20261013-1', 'ortak.js': '20261013-3', 'tahta.js': '20261013-5', 'etkinlik.js': '20261003-1', 'arama.js': '20261013-4', 'kutuphane.js': '20261013-5', 'arapca.js': '202610061430', 'yazili-duzen.js': '20261013-3', 'test.js': '20261013-2'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
@@ -27,15 +28,19 @@ SAYAC = '''<!-- Cloudflare Web Analytics --><script type='module' src='https://s
 
 
 # Site ağacı (kullanıcı 11.10.2026): her sayfa kendi dalının kitlesini taşır (üst menü vurgusu, kayan şerit süzgeci).
-KITLE_OGRENCI = ('ogrenci.html', 'kelime.html', 'arapca.html', 'sinav.html')
+# Eski sınıf sayfası (11.10.2026'dan beri yalnız /ogrenci.html?sinif=N'e yönlendirir): aramaya girmez
+YONLENDIRME = {'sinif.html'}
+SINIFLAR = [n for k in json.loads((PUBLIC / 'veri' / 'dersler.json').read_text(encoding='utf-8'))['kademeler'] for n in k['siniflar']]
+
+KITLE_OGRENCI = ('ogrenci.html', 'kelime.html', 'arapca.html', 'sinav.html', 'test.html')
 KITLE_OGRETMEN = ('ogretmen.html', 'planlar.html', 'yazili.html', 'belgeler.html', 'kpss.html')
-AGAC_CSS = '<link rel="stylesheet" href="/agac.css?v=20261013-2">'
+AGAC_CSS = '<link rel="stylesheet" href="/agac.css?v=20261013-5">'
 
 
 def kitle_bul(ad):
     if ad.startswith(('ozet/', 'calisma/')) or ad in KITLE_OGRENCI:
         return 'ogrenci'
-    return 'ogretmen' if ad in KITLE_OGRETMEN else ''
+    return 'ogretmen' if ad in KITLE_OGRETMEN or ad.startswith('kpss/') else ''
 
 
 def kitle_ekle(html, ad):
@@ -47,17 +52,30 @@ def kitle_ekle(html, ad):
     return html
 
 
+def kisalt(metin, sinir=160):
+    """Arama sonucunda kesilmesin: meta description sözcük sınırından en çok 160 karakter (og:description aynı metni alır)."""
+    metin = ' '.join(str(metin).split())
+    if len(metin) <= sinir:
+        return metin
+    return metin[:sinir - 1].rsplit(' ', 1)[0].rstrip(' ,;:.') + '…'
+
+
 def sayfa(ad, baslik, aciklama, govde, betikler=(), kanonik=True):
+    aciklama = kisalt(aciklama)
     kan = f'<link rel="canonical" href="https://derskutusu.com/{ad}">\n' if kanonik else '<meta name="robots" content="noindex">\n'
     js = ''.join(f'<script src="/{b}?v={BETIK_SURUMLERI.get(b, SURUM)}"></script>\n' for b in ('ortak.js', *betikler, 'arama.js', 'tahta.js'))
     if ad == 'icerikler.html':
         govde = kutuphane_govde(govde)
+    yonlendir = ''
+    if ad in YONLENDIRME:   # başka hiçbir şey yüklenmeden yönlendir; JS kapalıysa meta yenileme
+        yonlendir = ('<script>(function(){var n=new URLSearchParams(location.search).get("no");location.replace(/^\\d+$/.test(n)?"/ogrenci.html?sinif="+n:"/ogrenci.html");})();</script>\n'
+                     '<noscript><meta http-equiv="refresh" content="0;url=/ogrenci.html"></noscript>\n')
     html = f'''<!doctype html>
 <html lang="tr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{baslik} · Ders Kutusu</title>
+{yonlendir}<title>{baslik} · Ders Kutusu</title>
 <meta name="description" content="{aciklama}">
 {kan}<meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#2451d6">
@@ -66,10 +84,16 @@ def sayfa(ad, baslik, aciklama, govde, betikler=(), kanonik=True):
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
 <meta property="og:site_name" content="Ders Kutusu">
-<meta property="og:title" content="{baslik} · Ders Kutusu">
+<meta property="og:locale" content="tr_TR">
+{'<meta property="og:url" content="https://derskutusu.com/' + ad + '">' + chr(10) if kanonik else ''}<meta property="og:title" content="{baslik} · Ders Kutusu">
 <meta property="og:description" content="{aciklama}">
 <meta property="og:image" content="https://derskutusu.com/paylasim.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="/stil.css?v={SURUM}">
 </head>
 <body>
@@ -102,30 +126,12 @@ YAKINDA = '''      <div class="yakinda" id="icerik-yakinda" hidden>
       </div>'''
 
 GOVDE = {
-    'sinif.html': ('Sınıf', '5-12. sınıf dersleri için konu anlatımları, soru çözümleri ve öğretmen dosyaları.', '''  <section class="sayfa-bas">
+    'sinif.html': ('Sınıf', 'Sınıf sayfaları Öğrenci bölümüne taşındı: sınıfını seç, derslerine ve haftanın konularına ulaş.', '''  <section class="sayfa-bas">
     <div class="kap">
-      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/#siniflar">Sınıflar</a><span aria-hidden="true">/</span><span id="yol-sinif"></span></nav>
-      <h1 id="baslik">Sınıf</h1>
-      <p id="aciklama"></p>
-      <nav class="sinif-gecis" id="sinif-gecis" aria-label="Sınıflar"></nav>
-      <nav class="hizli-baglanti" id="ogretmen-hizli" aria-label="Öğretmen dosyaları" hidden></nav>
-    </div>
-  </section>
-  <section class="bolum">
-    <div class="kap">
-      <div class="bolum-bas">
-        <div><p class="ust-baslik">Dersler</p><h2>Dersini seç</h2></div>
-        <a class="tumu" id="tum-icerik" href="/icerikler.html">Bu sınıfın bütün içerikleri<svg><use href="#s-ok"/></svg></a>
-      </div>
-      <div class="ders-izgara" id="ders-listesi"></div>
-    </div>
-  </section>
-  <section class="bolum koyu-zemin" id="secmeli-bolum" hidden>
-    <div class="kap">
-      <div class="bolum-bas">
-        <div><p class="ust-baslik">Seçmeli dersler</p><h2>Seçmeli ve imam hatip dersleri</h2></div>
-      </div>
-      <div class="ders-izgara" id="secmeli-listesi"></div>
+      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/ogrenci.html">Öğrenci</a></nav>
+      <h1>Sınıf sayfaları taşındı</h1>
+      <p>Sınıf sayfaları artık <a href="/ogrenci.html">Öğrenci</a> bölümünde; yönlendiriliyorsunuz. Açılmazsa sınıfınızı seçin:</p>
+      <nav class="sinif-gecis" aria-label="Sınıflar">''' + ''.join(f'<a href="/ogrenci.html?sinif={n}">{n}. sınıf</a>' for n in SINIFLAR) + '''</nav>
     </div>
   </section>''', ('kutuphane.js',)),
     'icerikler.html': ('İçerikler', 'Sınıfa, derse ve türe göre konu anlatımları, soru çözümleri, videolar, yıllık planlar ve yazılı soruları.', f'''  <section class="sayfa-bas">
@@ -147,6 +153,7 @@ GOVDE = {
       </form>
       <div class="secili-suzgecler" id="secili-suzgecler" role="group" aria-label="Seçili süzgeçler" hidden></div>
       <p class="sonuc-bilgi"><span id="sonuc-sayi" role="status" aria-live="polite" aria-atomic="true"></span><button type="button" id="temizle" hidden>Seçimleri temizle</button></p>
+      <p class="yukleniyor" id="kutuphane-yukleniyor" role="status">Kaynaklar yükleniyor…</p>
       <div class="kartlar" id="kartlar"></div>
       <div class="yakinda" id="icerik-yakinda" hidden>
         <div class="yakinda-simge" aria-hidden="true"><svg><use href="#s-kitap"/></svg></div>
@@ -167,6 +174,12 @@ GOVDE = {
       <h1>Resmî belgeler</h1>
       <p>MEB, ÖDSGM, DÖGM ve ÖSYM’nin yayımladığı belgeler tek yerde. Bağlantılar doğrudan resmî kaynaklara gider; dosyalar her zaman güncel sürümüyle açılır.</p>
       <nav class="sinif-gecis" id="grup-gecis" aria-label="Belge grupları"></nav>
+      <form class="belge-suzgec" role="search" aria-label="Belgeleri süz">
+        <label>Ara<input id="b-ara" type="search" placeholder="Belge, ders ya da kurum…" autocomplete="off"></label>
+        <label>Sınıf<select id="b-sinif"><option value="">Bütün sınıflar</option></select></label>
+        <label>Kimin için<select id="b-kitle"><option value="">Herkes</option><option value="ogretmen">Öğretmen</option><option value="ogrenci">Öğrenci ve veli</option></select></label>
+        <p class="belge-sonuc" id="b-sonuc" role="status" aria-live="polite"></p>
+      </form>
     </div>
   </section>
   <div id="belge-gruplari"></div>''', ('belgeler.js',)),
@@ -194,7 +207,7 @@ GOVDE = {
         <div>
           <h3>Ne aramak istersiniz?</h3>
           <p>Sınıf, ders ve tür yazmanız yeterli. Örnekler:</p>
-          <div class="ornekler">
+          <div class="arama-ornekler">
             <a href="?q=8.+sınıf+matematik+yıllık+plan" data-ornek="8. sınıf matematik yıllık plan">8. sınıf matematik yıllık plan</a>
             <a href="?q=5+fen+günlük+plan" data-ornek="5 fen günlük plan">5 fen günlük plan</a>
             <a href="?q=tde+öğretim+programı" data-ornek="tde öğretim programı">tde öğretim programı</a>
@@ -239,7 +252,7 @@ GOVDE = {
       </div>
       <div class="y-kaydir" id="y-tablo"></div>
     </div>
-  </section>''', ('yazili.js', 'yazili-cikti.js', 'yazili-duzen.js')),
+  </section>''', ('yazili.js', 'yazili-duzen.js')),
     'tahta.html': ('Akıllı tahta', 'Tarayıcıda çalışan akıllı tahta: kalem, fosforlu kalem, silgi, renkler, kareli ve çizgili zemin, sayfalar.', '''  <section class="tahta-sayfa">
     <div class="kap tahta-ustbar">
       <h1>Akıllı tahta</h1>
@@ -330,11 +343,11 @@ def _sinav_govde():
             f'<li><a href="/goruntule.html?b={k}">{e(bl[k]["baslik"])}</a><span>{e(bl[k].get("kaynak", ""))}</span></li>'
             for k in x['belgeler'] if k in bl)
         if lgs:
-            hazirlik = ('<li><a href="/sinif.html?no=8">8. sınıfın bütün dersleri</a></li>'
+            hazirlik = ('<li><a href="/ogrenci.html?sinif=8">8. sınıfın bütün dersleri</a></li>'
                         '<li><a href="/icerikler.html?sinif=8&amp;tur=Konu%20anlat%C4%B1m%C4%B1">8. sınıf konu özetleri</a></li>'
                         '<li><a href="/icerikler.html?sinif=8&amp;tur=Yaz%C4%B1l%C4%B1%20senaryosu">8. sınıf ortak yazılı senaryoları</a></li>')
         else:
-            hazirlik = ''.join(f'<li><a href="/sinif.html?no={k}">{k}. sınıfın bütün dersleri</a></li>' for k in x['siniflar'])
+            hazirlik = ''.join(f'<li><a href="/ogrenci.html?sinif={k}">{k}. sınıfın bütün dersleri</a></li>' for k in x['siniflar'])
             hazirlik += '<li><a href="/icerikler.html?tur=Ders%20kitab%C4%B1">Lise ders kitapları</a></li>'
         bolumler += f'''  <section class="bolum{' koyu-zemin' if n % 2 else ''}" id="{x['kimlik']}">
     <div class="kap">
@@ -360,7 +373,7 @@ def _sinav_govde():
 
 GOVDE['planlar.html'] = ('Günlük planlar', 'Günlük ders planları: Okul, öğretmen, müdür yardımcısı ve müdür adları her sayfaya yazılır. Plan tüm yıl ya da ay ay, Word veya PDF olarak indirilir.', '''  <section class="sayfa-bas plan-bas">
     <div class="kap">
-      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/#ogretmen">Öğretmen</a><span aria-hidden="true">/</span><span>Günlük planlar</span></nav>
+      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/ogretmen.html">Öğretmen Köşesi</a><span aria-hidden="true">/</span><span>Günlük planlar</span></nav>
       <h1>Günlük ders planları</h1>
       <p>Okulun adını, kendi adınızı, müdür yardımcısının ve müdürün adını bir kez yazın. İndirdiğiniz planın her sayfasına bu bilgiler kendiliğinden yerleşir. Planı tüm yıl ya da ay ay, Word veya PDF olarak alın.</p>
       <ol class="plan-adimlar" aria-label="Adımlar">
@@ -444,14 +457,14 @@ GOVDE['kelime.html'] = ('İngilizce kelime çalışması', '5 ve 6. sınıf İng
       </div>
       <nav class="sekmeler kelime-kipler" id="k-kipler" aria-label="Çalışma biçimi"></nav>
       <h2 class="kelime-baslik" id="k-tema-baslik"></h2>
-      <div id="k-alan" class="kelime-alan" aria-live="polite"></div>
+      <div id="k-alan" class="kelime-alan" aria-live="polite"><p>Kelimeler yükleniyor…</p><noscript>Kelime çalışması için JavaScript’i etkinleştirin.</noscript></div>
       <p class="kelime-not">İlerlemen yalnız bu tarayıcıda tutulur, hiçbir yere gönderilmez. Sesler tarayıcının kendi okuma özelliğiyle çıkar.</p>
     </div>
   </section>''', ('kelime.js',))
 
-GOVDE['arapca.html'] = ('Arapça harf ve kelime çalışması', '28 harf ve 48 kelime/ifade: harf biçimleri, harekeler, kartlar, test, Arapça klavyeyle yazma ve eşleştirme.', '''<link rel="stylesheet" href="/arapca.css?v=202610022030">
+GOVDE['arapca.html'] = ('Arapça harf ve kelime çalışması', '28 harf ve 48 kelime/ifade: harf biçimleri, harekeler, kartlar, test, Arapça klavyeyle yazma ve eşleştirme.', '''<link rel="stylesheet" href="/arapca.css?v=202610131900">
 <section class="sayfa-bas kelime-bas"><div class="kap">
-<nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span>/</span><a href="/icerikler.html?ders=arapca">Arapça</a><span>/</span><span>Harf ve kelime çalışması</span></nav>
+<nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/icerikler.html?ders=arapca">Arapça</a><span aria-hidden="true">/</span><span>Harf ve kelime çalışması</span></nav>
 <p class="ust-baslik">Gör · Oku · Yaz · Eşleştir</p><h1>Arapça harf ve kelime çalışması</h1>
 <p>Harfleri ve harekeleri tanı; kelimeleri kartlarla öğren, test çöz ve Arapça klavyeyle yaz. İlk içerikler: 5. sınıf Merhaba, 6. sınıf Akrabalarım.</p>
 <nav class="sekmeler" id="a-sinif" aria-label="Sınıf"></nav></div></section>
@@ -469,12 +482,49 @@ GOVDE['arapca.html'] = ('Arapça harf ve kelime çalışması', '28 harf ve 48 k
 
 GOVDE['ogrenci.html'] = ('Öğrenci', 'Ders Kutusu öğrenci sayfası: sınıfını seç; ünite ünite konu anlatımları, etkinlikler, çalışma kâğıtları ve ders kitapları.', '''  <div id="agac" class="agac" aria-busy="true"><section class="agac-bas"><div class="kap"><p role="status">Yükleniyor…</p></div></section></div>''', ('agac.js',))
 GOVDE['ogretmen.html'] = ('Öğretmen Köşesi', 'Öğretmen Köşesi: günlük ve yıllık planlar, ortak yazılı senaryoları ve kâğıtları, öğretim programları, çalışma kâğıtları ve resmî belgeler.', '''  <div id="agac" class="agac" aria-busy="true"><section class="agac-bas"><div class="kap"><p role="status">Yükleniyor…</p></div></section></div>''', ('agac.js',))
+GOVDE['test.html'] = ('Çevrimiçi test', 'Çevrimiçi test: sınıfını ve dersini seç; ünite, konu ya da öğrenme çıktısına özel sorular havuzdan otomatik seçilir, anında ya da sonunda dönüt alırsın.', '''  <section class="sayfa-bas test-bas">
+    <div class="kap">
+      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/ogrenci.html">Öğrenci</a><span aria-hidden="true">/</span><span>Çevrimiçi test</span></nav>
+      <h1>Çevrimiçi test</h1>
+      <p>Sınıfını ve dersini seç; istersen üniteyi, konuyu ya da öğrenme çıktısını daralt. Sorular her seferinde havuzdan yeniden seçilir; cevapların ve sonuçların yalnız bu cihazda kalır.</p>
+    </div>
+  </section>
+  <section class="bolum test-govde">
+    <div class="kap">
+      <form id="t-kurulum" class="t-kurulum" aria-label="Test ayarları">
+        <div class="t-alanlar">
+          <label>Sınıf<select id="t-sinif" required></select></label>
+          <label>Ders<select id="t-ders" required></select></label>
+          <label>Ünite / konu<select id="t-konu"><option value="">Dersin tamamı</option></select></label>
+          <label>Öğrenme çıktısı<select id="t-cikti"><option value="">Bütün çıktılar</option></select></label>
+        </div>
+        <fieldset class="t-turler"><legend>Soru türleri</legend>
+          <label><input type="checkbox" name="tur" value="coktan" checked> Çoktan seçmeli</label>
+          <label><input type="checkbox" name="tur" value="dy" checked> Doğru / yanlış</label>
+          <label><input type="checkbox" name="tur" value="bosluk" checked> Boşluk doldurma</label>
+          <label><input type="checkbox" name="tur" value="eslestir" checked> Eşleştirme</label>
+          <label><input type="checkbox" name="tur" value="siralama" checked> Sıralama</label>
+          <label><input type="checkbox" name="tur" value="acik"> Açık uçlu <small>(cevabı gör, kendini değerlendir)</small></label>
+        </fieldset>
+        <div class="t-alanlar t-ayar">
+          <label>Soru sayısı<select id="t-adet"><option value="10">10 soru</option><option value="20">20 soru</option><option value="30">30 soru</option><option value="0">Havuzdaki hepsi</option></select></label>
+          <label>Dönüt<select id="t-donut"><option value="aninda">Her sorudan sonra</option><option value="sonunda">Testin sonunda</option></select></label>
+        </div>
+        <p id="t-havuz" class="t-havuz" role="status" aria-live="polite"></p>
+        <button class="dugme ana buyuk" type="submit" id="t-basla" disabled>Teste başla</button>
+      </form>
+      <section id="t-zayif" class="t-gecmis t-zayif" hidden></section>
+      <section id="t-gecmis" class="t-gecmis" hidden><h2>Son sonuçların</h2><ol></ol></section>
+      <section id="t-test" class="t-test" hidden></section>
+      <section id="t-sonuc" class="t-sonuc" hidden></section>
+    </div>
+  </section>''', ('test.js',))
 GOVDE['sinav.html'] = ('Sınavlar: LGS ve YKS', 'LGS ve YKS: oturumlar, testler, soru sayıları ve süreler; çıkmış sorular, kılavuzlar ve hazırlık kaynakları.', _sinav_govde(), ())
 
 def main():
     """Sabit iç sayfaları yazar. Yalnız doğrudan çalıştırılınca ya da ozet_uret.main() çağırınca; içe aktarma dosya yazmaz."""
     for ad, (baslik, aciklama, govde, betikler) in GOVDE.items():
-        (PUBLIC / ad).write_text(sayfa(ad, baslik, aciklama, govde, betikler), encoding='utf-8')
+        (PUBLIC / ad).write_text(sayfa(ad, baslik, aciklama, govde, betikler, kanonik=ad not in YONLENDIRME), encoding='utf-8')
 
     # Gizlilik ve 404: mevcut gövdeleri korunur, üst/alt yenilenir
     for ad, baslik, aciklama, kanonik in [('gizlilik.html', 'Gizlilik ve çerezler', 'Ders Kutusu gizlilik ve çerez bilgilendirmesi.', True),
@@ -486,8 +536,9 @@ def main():
         if 'class="metin-sayfa"' not in govde:
             govde = f'<div class="metin-sayfa">\n{govde}\n</div>'
         betik = ''
-        if '<script>' in eski:
-            betik = eski[eski.index('<script>'):eski.index('</script>') + len('</script>')]
+        if '<script>' in eski:   # sayfanın kendi satır içi betiği (ör. gizlilik: izinleri sıfırla); kapanış, açılıştan SONRAKİ ilk </script>
+            bas = eski.index('<script>')
+            betik = eski[bas:eski.index('</script>', bas) + len('</script>')]
         html = sayfa(ad, baslik, aciklama, govde, kanonik=kanonik).replace('</body>', (betik + '\n' if betik else '') + '</body>')
         (PUBLIC / ad).write_text(html, encoding='utf-8')
 

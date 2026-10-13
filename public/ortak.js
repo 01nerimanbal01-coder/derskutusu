@@ -63,17 +63,70 @@ const simge = (ad, sinif) => {
   return s;
 };
 const tarihBicim = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' });
+
+// İçerik kartı (ana sayfa "Son eklenenler" ve kütüphane aynı kartı çizer)
+function icerikKarti(i, dersler) {
+  const dersAd = dersler?.dersler?.[i.ders] || i.ders;
+  const adres = i.dosya || i.baglanti;
+  // Sınıf zaten rozette: "5. Sınıf Matematik 7. Hafta: …" başlığı "Matematik 7. Hafta: …" olarak kısalır (dar ekranda kart boyu)
+  const baslik = String(i.baslik || '').replace(/^\d+\.\s*Sınıf\s+(?=\S)/, '') || i.baslik;
+  const kart = el('article', { sinif: 'kart', 'data-renk': window.Kesif?.category(i.tur).color || 'mavi' },
+    el('div', { sinif: 'ust-bilgi' },
+      i.hafta && el('span', { sinif: 'etiket' }, `${i.hafta}. hafta`),
+      i.sinif && el('span', { sinif: 'etiket' }, `${i.sinif}. sınıf`),
+      dersAd && el('span', { sinif: 'etiket tur' }, dersAd),
+      i.tur && el('span', { sinif: `etiket ${i.kitle === 'ogretmen' ? 'ogretmen' : 'tur'}` }, i.tur)),
+    el('h3', {}, baslik),
+    i.aciklama && el('p', {}, i.aciklama),
+    el('div', { sinif: 'eylemler' },
+      i.goruntule && el('a', { sinif: 'ac', href: `/${i.goruntule}` }, 'Aç', simge('ok')),
+      i.goruntule && i.tur === 'Ders kitabı' && el('a', { sinif: 'ac', href: `/${i.goruntule}&yerel=1`, title: 'Kitabın bilgisayarınızdaki PDF dosyasını açar; internet beklenmez' }, 'Bilgisayardan aç'),
+      i.hazirla && el('a', { sinif: 'ac', href: `/${i.hazirla}` }, 'Hazırla ve indir', simge('indir')),
+      !i.hazirla && adres && (i.dosya || !i.goruntule) && el('a', { sinif: 'ac', href: i.dosya ? `/${i.dosya}` : adres, target: i.dosya ? null : '_blank', rel: 'noopener', download: i.dosya ? '' : null },
+        i.dosya ? 'İndir' : 'Aç', simge(i.dosya ? 'indir' : 'ok'))));
+  // Kartın tamamı ilk eyleme götürür (indirme bağlantısı hariç); metin seçimi ve bağlantıya tıklama bozulmaz.
+  const birincil = kart.querySelector('a.ac:not([download])');
+  if (birincil) {
+    kart.classList.add('tiklanir');
+    kart.addEventListener('click', (o) => {
+      if (o.target.closest('a, button') || getSelection()?.toString()) return;
+      birincil.click();
+    });
+  }
+  return kart;
+}
+
 const tercih = {
   al: (a) => { try { return localStorage.getItem(a) === '1'; } catch { return false; } },
   koy: (a) => { try { localStorage.setItem(a, '1'); } catch {} },
 };
 const kok = '/';   // veri dosyaları her zaman site kökünden (alt klasördeki sayfalar da, ör. /ozet/)
 
-async function veri(ad) {
-  try {
-    const y = await fetch(`${kok}veri/${ad}`, { cache: 'no-cache' });
-    return y.ok ? await y.json() : null;
-  } catch { return null; }
+// Aynı sayfada aynı dosya bir kez indirilir (yazili.html üç betikle aynı JSON'u istiyordu); sonuç nesnesi paylaşılır, değiştirilmez.
+const veriSozleri = new Map();
+function veri(ad) {
+  if (!veriSozleri.has(ad)) veriSozleri.set(ad, (async () => {
+    try {
+      const y = await fetch(`${kok}veri/${ad}`, { cache: 'no-cache' });
+      return y.ok ? await y.json() : null;
+    } catch { return null; }
+  })());
+  return veriSozleri.get(ad);
+}
+// Site içi adres: "ozet/5-matematik-1.html" → "/ozet/…" (alt klasördeki sayfalarda da kökten)
+const yol = (a) => (/^(https?:)?\//.test(a) ? a : `/${a}`);
+// Kitle süzgeci (tek kaynak: şerit, öğrenci/öğretmen dalı ve kütüphane aynı kuralı kullanır): içeriğin kitlesi ya da türünün
+// dersler.json "turler" eşlemesindeki kitlesi istenen kitleyle örtüşür; kitle verilmemişse hepsi geçer.
+function kitleSuzgeci(dersler, kitle) {
+  const turKitle = Object.fromEntries((dersler?.turler || []).map((t) => [t.ad, t.kitle]));
+  return (i) => !kitle || (i.kitle || 'ogrenci') === kitle || turKitle[i.tur] === kitle;
+}
+// Konu adı karşılaştırması (yazılı kâğıdının konusu ↔ yıllık plan konusu): önce tam ad, yoksa konu adı onu içerir
+const adNormal = (s) => String(s || '').toLocaleLowerCase('tr').replace(/[^a-zçğıöşü0-9]+/g, ' ').trim();
+function konuyaEsle(konular, konuAdi) {
+  const ad = adNormal(konuAdi);
+  const tam = konular.filter((k) => adNormal(k.ad) === ad);
+  return tam.length ? tam : konular.filter((k) => ad && adNormal(k.ad).includes(ad));
 }
 
 const ortakVeri = Promise.all(['ayarlar.json', 'dersler.json', 'icerikler.json'].map(veri))
@@ -103,7 +156,11 @@ $$('[data-yil]').forEach((e) => { e.textContent = new Date().getFullYear(); });
 (() => {
   const kitle = document.body.dataset.kitle;
   try { if (kitle) localStorage.setItem('dk-rol', kitle); } catch {}
-  if (kitle) $$('#ana-menu a').forEach((a) => { if (a.getAttribute('href') === `/${kitle}.html`) a.setAttribute('aria-current', 'page'); });
+  // Menüde geçerli sayfa: önce sayfanın kendi bağlantısı (sinav.html → Sınavlar, icerikler.html → Kütüphane), yoksa dalın bağlantısı
+  const yolAdi = location.pathname.replace(/\/index\.html$/, '/');
+  const baglar = $$('#ana-menu a'), mutlak = (a) => { const h = a.getAttribute('href') || ''; return /^\//.test(h) ? h : `/${h}`; };
+  const esas = baglar.find((a) => mutlak(a) === yolAdi) || (kitle && baglar.find((a) => mutlak(a) === `/${kitle}.html`));
+  if (esas) esas.setAttribute('aria-current', 'page');
   if (!/^\/(index\.html)?$/.test(location.pathname)) return;
   const eski = { '#siniflar': '/ogrenci.html', '#dersler': '/ogrenci.html', '#ogretmen': '/ogretmen.html', '#kategoriler': '/icerikler.html' }[location.hash];
   if (eski) { location.replace(eski); return; }
@@ -192,9 +249,8 @@ ortakVeri.then(({ ayar }) => {
 (() => {
   const ust = $('header.ust');
   if (!ust || /^\/(tahta|goruntule)\.html$/.test(location.pathname)) return;   // tam ekran araç sayfaları
-  const SERIT_SURUM = '20261013-1', EN_COK = 18;
+  const SERIT_SURUM = '20261013-3', EN_COK = 18;
   const kisaTarih = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'short' });
-  const yol = (a) => (/^(https?:)?\//.test(a) ? a : `/${a}`);
   const stil = el('link', { rel: 'stylesheet', href: `${kok}serit.css?v=${SERIT_SURUM}` });
   const stilHazir = new Promise((tamam) => { stil.onload = () => tamam(true); stil.onerror = () => tamam(false); });
   document.head.append(stil);
@@ -203,8 +259,7 @@ ortakVeri.then(({ ayar }) => {
     if (!stilVar) return;
     const dersAd = (d) => dersler?.dersler?.[d] || d || '';
     const kitle = document.body.dataset.kitle;   // öğrenci dalında yalnız öğrenci, öğretmen dalında yalnız öğretmen içerikleri
-    const turKitle = Object.fromEntries((dersler?.turler || []).map((t) => [t.ad, t.kitle]));
-    const kitleUyar = (i) => !kitle || (i.kitle || 'ogrenci') === kitle || turKitle[i.tur] === kitle;
+    const kitleUyar = kitleSuzgeci(dersler, kitle);
     const kayitlar = icerikler.filter((i) => i.tarih && kitleUyar(i) && (i.hazirla || i.goruntule || i.dosya || i.baglanti)).map((i) => {
       const ad = dersAd(i.ders);
       let baslik = String(i.baslik || '').replace(/^\d+\.\s*Sınıf\s+/, '');
@@ -233,7 +288,7 @@ ortakVeri.then(({ ayar }) => {
       const gun = new Date(/^\d{4}-\d\d-\d\d$/.test(k.tarih) ? `${k.tarih}T12:00:00` : k.tarih);
       return el('li', { sinif: 'serit-oge' },
         el('a', { sinif: ['serit-kart', k.ders && `ders-${k.ders}`, k.yazili && 'serit-yazili'].filter(Boolean).join(' '), href: k.adres,
-          target: dis ? '_blank' : null, rel: dis ? 'noopener' : null },
+          title: k.baslik, target: dis ? '_blank' : null, rel: dis ? 'noopener' : null },   // kesilen başlığın tamamı fareyle görünür
           el('span', { sinif: 'serit-ust' }, el('span', { sinif: 'serit-tur' }, k.tur || 'İçerik'),
             isNaN(gun) ? null : el('time', { datetime: k.tarih }, kisaTarih.format(gun))),
           el('span', { sinif: 'serit-ad' }, k.baslik),
@@ -250,8 +305,15 @@ ortakVeri.then(({ ayar }) => {
     const serit = el('aside', { sinif: 'serit', 'aria-label': 'Yeni eklenenler', style: `--serit-sure: ${secilen.length * 5}s` },
       el('div', { sinif: 'serit-bas' },
         el('span', { sinif: 'serit-baslik' }, el('span', {}, 'Yeni', el('span', { sinif: 'serit-uzun' }, ' eklenenler'))),
-        el('a', { sinif: 'serit-tumu', href: '/icerikler.html' }, 'Tümü'), dugme),
+        el('a', { sinif: 'serit-tumu', href: '/icerikler.html' }, 'Tümü'), dugme,
+        el('a', { sinif: 'atla serit-atla', href: '#icerik' }, 'Şeridi atla')),   // klavye: 18 kartı tek tek geçmek gerekmez
       el('div', { sinif: 'serit-pencere' }, el('div', { sinif: 'serit-iz' }, liste(), kopya)));
+    // Klavye odağı şeritteyken kayma durur ve pencere kaydırılabilir olur (serit.css .odakta): odaklanan kart görünür alana gelir
+    serit.addEventListener('focusin', (o) => {
+      serit.classList.add('odakta');
+      o.target.closest('.serit-kart')?.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+    });
+    serit.addEventListener('focusout', (o) => { if (!serit.contains(o.relatedTarget)) serit.classList.remove('odakta'); });
     const ayarla = () => {
       serit.classList.toggle('durdu', durdu);
       const yazi = durdu ? 'Kaymayı başlat' : 'Kaymayı durdur';

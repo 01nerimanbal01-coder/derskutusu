@@ -26,9 +26,11 @@
 :root[data-theme="dark"] [data-renk="turkuaz"], :root[data-theme="dark"] body[data-site-renk="turkuaz"] { --kart-ana:#9BE3DF; --kart-zemin:#163C3B; --kart-cizgi:#3D8380; --kart-vurgu:#45D1C3; --kart-ikon-yazi:#111b23; }
 :root[data-theme="dark"] [data-renk="lacivert"], :root[data-theme="dark"] body[data-site-renk="lacivert"] { --kart-ana:#C5C7FF; --kart-zemin:#292947; --kart-cizgi:#7174AE; --kart-vurgu:#9C9EFF; --kart-ikon-yazi:#111b23; }
 :root { --site-serit:linear-gradient(90deg,#7C3AED 0 12.5%,#16A34A 12.5% 25%,#EA580C 25% 37.5%,#2563EB 37.5% 50%,#DB2777 50% 62.5%,#D99A00 62.5% 75%,#0D9488 75% 87.5%,#6366F1 87.5%); }
-body > .ust { border-top:4px solid transparent; border-image:var(--site-serit) 1; border-bottom:1px solid var(--cizgi); }
+/* Gökkuşağı şeridi sözde öğeyle: border-image alt kenarı da boyuyordu, 4 px'lik üst kenar menü/şerit hizasını kaydırıyordu */
+body > .ust { border-top:0; border-bottom:1px solid var(--cizgi); }
+body > .ust::before { content:''; position:absolute; inset:0 0 auto; height:4px; background:var(--site-serit); pointer-events:none; }
 body .menu > a[data-renk] { background:var(--kart-zemin); color:var(--kart-ana); border:1px solid var(--kart-cizgi); font-weight:650; min-height:44px; display:flex; align-items:center; justify-content:center; padding:8px 11px; }
-body .menu > a[data-renk]:hover { background:var(--kart-ana); color:var(--kart-ikon-yazi); }
+body .menu > a[data-renk]:hover, body .menu > a[data-renk][aria-current="page"] { background:var(--kart-ana); color:var(--kart-ikon-yazi); border-color:var(--kart-ana); }
 body .ust-arama input { border-color:var(--kart-cizgi); }
 body .menu-dugme { border-color:var(--kart-cizgi); background:var(--kart-zemin); flex:none; }
 body > .alt { position:relative; background:var(--zemin-2); border-top:0; }
@@ -91,14 +93,14 @@ body .kesif-araclar p { color:var(--soluk); }
 body .kesif-arac-links a[data-renk] { background:var(--kart-zemin); color:var(--kart-ana); border-color:var(--kart-cizgi); min-height:52px; gap:12px; }
 body .kesif-arac-links a:hover { border-color:var(--kart-ana); }
 body .iletisim-kart { background:linear-gradient(120deg,var(--kart-zemin),var(--yuzey)); border:1px solid var(--kart-cizgi); color:var(--metin); }
-body .iletisim-kart .ust-baslik { color:var(--kart-vurgu); }
+body .iletisim-kart .ust-baslik { color:var(--kart-ana); }   /* pembe --kart-vurgu açık zeminde 4,4:1 kalıyordu */
 body .iletisim-kart h2 { color:var(--kart-ana); }
 body .iletisim-kart p { color:color-mix(in srgb, var(--kart-ana) 85%, var(--metin)); }
 body .iletisim-kart .dugme.ana { background:var(--kart-ana); border-color:var(--kart-ana); color:var(--kart-ikon-yazi); }
 body .iletisim-kart .dugme.ana:hover { background:var(--kart-vurgu); border-color:var(--kart-vurgu); }
 body :is(.kesif-rota,.kesif-dersler,.menu,.kesif-arac-links) a:focus-visible { outline:3px solid var(--kart-ana); outline-offset:3px; }
 @media (min-width:1181px) { body .ust-ic { gap:14px; } body .menu { gap:5px; } }
-@media (max-width:1180px) { body .menu { top:72px; max-height:calc(100dvh - 72px); overflow-y:auto; gap:8px; } body .menu > a[data-renk] { justify-content:flex-start; } }
+@media (max-width:1180px) { body .menu { top:69px; max-height:calc(100dvh - 69px); overflow-y:auto; gap:8px; } body .menu > a[data-renk] { justify-content:flex-start; } }
 @media (max-width:1100px) {
  body .kesif-kategoriler { grid-template-columns:1fr; }
  .kesif-kategori-grup:last-child .kesif-grup-kartlar { grid-template-columns:repeat(2,minmax(0,1fr)); }
@@ -122,7 +124,7 @@ body :is(.kesif-rota,.kesif-dersler,.menu,.kesif-arac-links) a:focus-visible { o
 @media (prefers-reduced-motion:reduce) { .kesif-kategori:hover { transform:none; } }
 @media (forced-colors:active) {
  body .menu > a[data-renk], .kesif-kategori, .kesif-rota a, .kesif-ders-baglari a { border:1px solid LinkText; }
- body .sinif-gecis a[aria-current="page"], body .sekmeler .sekme[aria-pressed="true"] { outline:2px solid Highlight; }
+ body .sinif-gecis a[aria-current="page"], body .sekmeler .sekme[aria-pressed="true"], body .menu > a[data-renk][aria-current="page"] { outline:2px solid Highlight; }
 }
 
 @media (prefers-color-scheme:dark) { :root:not([data-theme="light"]) body.kesif-page { --vurgu:#B3CEFF; --vurgu-koyu:#B3CEFF; --vurgu-acik:#1D3152; } }

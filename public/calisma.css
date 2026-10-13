@@ -14,7 +14,10 @@
   .ck-sayfalar { display: grid; gap: 24px; justify-content: center; }
   .ck { width: min(210mm, 100%); margin-inline: auto; background: #fff; padding: 11mm 11mm 14mm; box-shadow: 0 2px 6px rgb(16 24 40 / .08), 0 18px 40px rgb(16 24 40 / .12); border-radius: 6px; }
 }
-@media screen and (max-width: 640px) { .ck { padding: 16px 12px 20px; } .ck-iki { grid-template-columns: 1fr !important; } }
+@media screen and (max-width: 640px) { .ck { padding: 16px 12px 20px; } .ck-iki { grid-template-columns: 1fr !important; }
+  /* Üst bant: öğrenci bilgisi (ad, sınıf, tarih) 50 mm'den dar olamaz; telefonda alta iner, kâğıt yatay taşmaz */
+  .ck-bant { grid-template-columns: auto 1fr; } .ck-ogrenci { grid-column: 1 / -1; min-width: 0; }
+  .ck { --ck-olcek: 1.15; } .ck-hatirla ul { columns: 1; } .ck-ogrenci { font-size: 9pt; } }   /* pt tabanlı yazılar 328 px kâğıtta 8-9 px kalıyordu */
 
 /* Üst bant */
 .ck-bant { display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: center; padding-bottom: 7px; border-bottom: 2.4px solid var(--ck-lacivert); }
@@ -34,7 +37,7 @@
 
 /* Başlık ve hatırlayalım */
 .ck-konu { display: flex; justify-content: space-between; gap: 12px; align-items: flex-end; margin: 7px 0 6px; }
-.ck-konu h1 { font-size: calc(15.5pt * var(--ck-olcek)); line-height: 1.15; color: var(--ck-lacivert); margin: 0; font-weight: 800; }
+.ck-konu :is(h1, h2) { font-size: calc(15.5pt * var(--ck-olcek)); line-height: 1.15; color: var(--ck-lacivert); margin: 0; font-weight: 800; }
 .ck-konu p { margin: 0; font-size: 7.6pt; color: var(--ck-soluk); max-width: 62%; text-align: right; }
 /* Etiket kutunun üst kenarına oturan yatay rozettir: kutu yalnız maddeler kadar yer tutar. */
 .ck-hatirla { position: relative; padding: 10px 11px 5px; border-radius: 9px; background: linear-gradient(90deg, var(--ck-mavi-acik), #f6f8ff); border: 1px solid #cfdbfb; margin: 13px 0 8px; }
@@ -57,7 +60,7 @@
 .ck-soru-bas { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; }
 .ck-no { flex: none; display: grid; place-items: center; width: 19px; height: 19px; border-radius: 50%; background: var(--ck-lacivert); color: #fff; font: 800 8.4pt/1 Montserrat, sans-serif; }
 .ck-tur { font: 700 6.6pt/1.3 Montserrat, sans-serif; letter-spacing: 1.1px; color: var(--ck-mavi); text-transform: uppercase; }
-.ck-soru.d-uygula .ck-tur { color: var(--ck-yesil); }
+.ck-soru.d-uygula .ck-tur { color: #0e7f3f; }   /* beyazda 5,1:1 */
 .ck-soru.d-ust .ck-tur { color: var(--ck-mor); }
 .ck-soru.d-ust .ck-tur::after { content: ' · DÜŞÜN'; }
 .ck-soru-metin { margin: 0 0 5px; font-weight: 600; }

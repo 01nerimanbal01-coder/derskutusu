@@ -74,9 +74,14 @@ async function run(engine, name, base) {
     await expect(page.locator('.ds-progress')).toHaveText('1 / 23 slayt');
     ok('Aynı sette yeniden başlatma çizimleri sıfırlar');
 
+    // Üst bilgideki Tam ekran / Küçült ve Slaytı kapat düğmeleri (akıllı tahta, 13.10.2026)
+    await expect(action('fullscreen')).toHaveText('Tam ekran');
+    await expect(action('close')).toHaveAttribute('aria-label', /Slaytı kapat/);
+    const filled = () => page.evaluate(() => document.querySelector('.ds').classList.contains('ds-genis'));
     await action('fullscreen').click();
     if (name === 'chromium') {
       await expect.poll(() => page.evaluate(() => document.fullscreenElement?.className)).toBe('ds-shell');
+      await expect(action('fullscreen')).toHaveText('Küçült');
       record.fullscreen = 'entered';
       await action('close').click();
       await expect.poll(() => page.evaluate(() => document.fullscreenElement === null)).toBe(true);
@@ -85,12 +90,27 @@ async function run(engine, name, base) {
       await expect.poll(() => page.evaluate(() => document.fullscreenElement?.className)).toBe('ds-shell');
       await action('fullscreen').click();
       await expect.poll(() => page.evaluate(() => document.fullscreenElement === null)).toBe(true);
+      await expect(action('fullscreen')).toHaveText('Tam ekran');
+      // Tam ekranı reddeden cihaz: sunum pencereyi kaplar, Küçült geri alır
+      await page.evaluate(() => { window.__fs = HTMLElement.prototype.requestFullscreen; HTMLElement.prototype.requestFullscreen = () => Promise.reject(new Error('denied')); });
+      await action('fullscreen').click();
+      await expect.poll(filled).toBe(true);
+      await expect(action('fullscreen')).toHaveText('Küçült');
+      assert.equal(await page.evaluate(() => document.fullscreenElement), null);
+      const size = await page.locator('.ds').boundingBox();
+      assert(size.width >= 1360 && size.height >= 890, 'Pencereyi kaplayan düzen pencereyi doldurmadı: ' + JSON.stringify(size));
+      await action('fullscreen').click();
+      await expect.poll(filled).toBe(false);
+      await expect(action('fullscreen')).toHaveText('Tam ekran');
+      await page.evaluate(() => { HTMLElement.prototype.requestFullscreen = window.__fs; });
     } else {
-      await expect.poll(async () => (await page.evaluate(() => Boolean(document.fullscreenElement))) || (await page.locator('.ds-notice').textContent()).includes('bu pencerede')).toBe(true);
-      record.fullscreen = await page.evaluate(() => document.fullscreenElement ? 'entered' : 'graceful-window-fallback');
-      if (record.fullscreen === 'entered') await action('fullscreen').click();
+      await expect.poll(async () => (await page.evaluate(() => Boolean(document.fullscreenElement))) || (await filled())).toBe(true);
+      record.fullscreen = await page.evaluate(() => document.fullscreenElement ? 'entered' : 'window-fill-fallback');
+      await expect(action('fullscreen')).toHaveText('Küçült');
+      await action('fullscreen').click();
+      await expect.poll(async () => !(await page.evaluate(() => Boolean(document.fullscreenElement))) && !(await filled())).toBe(true);
     }
-    ok('Tam ekran ve güvenli çıkış: ' + record.fullscreen);
+    ok('Tam ekran, pencereyi kaplama ve güvenli çıkış: ' + record.fullscreen);
 
     await page.locator('.ds [data-control="mode"]').selectOption('questions');
     const seen = new Set(), types = new Set();

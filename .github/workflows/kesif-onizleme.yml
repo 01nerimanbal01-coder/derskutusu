@@ -26,10 +26,16 @@ jobs:
           node tests/ana-sayfa.cjs
           node tests/arama-oneri.cjs
           node tests/katalog-yukleme.cjs
+          node tests/soru-havuzu.cjs
       - name: Site genelinde renk, gezinme ve ekran boyutları
         env:
           NODE_PATH: ${{ runner.temp }}/kesif-qa/node_modules
         run: node tests/site-renkleri.cjs
+      - name: Çevrimiçi test: kurulum, soru türleri, sürdürme, sonuç
+        if: always()
+        env:
+          NODE_PATH: ${{ runner.temp }}/kesif-qa/node_modules
+        run: node tests/online-test.cjs
       - name: Etkinlik, kalem, devam etme ve tam ekran regresyonu
         if: always()
         env:
@@ -43,4 +49,5 @@ jobs:
             kesif-test-results/
             slayt-test-results/
             site-test-results/
+            online-test-results/
           retention-days: 14

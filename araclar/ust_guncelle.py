@@ -5,7 +5,7 @@ sayfanın kitlesini (body data-kitle) ve öğrenci dalı konum çubuğunu uygula
 sayfa_uret.py / ozet_uret.py'nin ürettiği sayfalara da zararsızdır (aynı sonucu verir)."""
 import re
 from pathlib import Path
-from sayfa_uret import kitle_bul, PUBLIC, BETIK_SURUMLERI, SURUM, AGAC_CSS
+from sayfa_uret import kitle_bul, kisalt, PUBLIC, BETIK_SURUMLERI, SURUM, AGAC_CSS
 from kesif_sablonlari import CSS as KESIF_CSS, RENK_CSS
 
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
@@ -30,6 +30,18 @@ def guncelle(yol):
     t = re.sub(r'(/?ortak\.js)\?v=[\w-]+', rf'\1?v={BETIK_SURUMLERI["ortak.js"]}', t)
     for dosya, surum in SURUMLER:   # ortak stil ve betik sürümleri tek yerden (sayfa_uret / kesif_sablonlari); önbellekteki eski kopya kalmaz
         t = re.sub(rf'(/?{re.escape(dosya)})\?v=[\w-]+', rf'\1?v={surum}', t)
+    # <head> sayfa_uret şablonuyla aynı olsun: description ≤160, manifest, og:type/locale/url, og:image boyutları, twitter:card
+    t = re.sub(r'(<meta (?:name="description"|property="og:description") content=")([^"]*)(")', lambda m: m[1] + kisalt(m[2]) + m[3], t)
+    if '<link rel="manifest"' not in t:
+        t = t.replace('<link rel="apple-touch-icon" href="/apple-touch-icon.png">', '<link rel="apple-touch-icon" href="/apple-touch-icon.png">\n<link rel="manifest" href="/site.webmanifest">', 1)
+    if '<meta property="og:type"' not in t:
+        t = t.replace('<meta property="og:site_name" content="Ders Kutusu">', '<meta property="og:type" content="website">\n<meta property="og:site_name" content="Ders Kutusu">\n<meta property="og:locale" content="tr_TR">', 1)
+    kan = re.search(r'<link rel="canonical" href="([^"]+)">', t)
+    if kan and '<meta property="og:url"' not in t:
+        t = t.replace('<meta property="og:title"', f'<meta property="og:url" content="{kan[1]}">\n<meta property="og:title"', 1)
+    if '<meta property="og:image:width"' not in t:
+        t = t.replace('<meta property="og:image" content="https://derskutusu.com/paylasim.png">',
+                      '<meta property="og:image" content="https://derskutusu.com/paylasim.png">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n<meta name="twitter:card" content="summary_large_image">', 1)
     if t != eski:
         yol.write_text(t, encoding='utf-8')
         return 1

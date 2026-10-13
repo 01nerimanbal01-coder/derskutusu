@@ -13,13 +13,20 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
 <meta property="og:site_name" content="Ders Kutusu">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:url" content="https://derskutusu.com/icerikler.html">
 <meta property="og:title" content="İçerikler · Ders Kutusu">
 <meta property="og:description" content="Sınıfa, derse ve türe göre konu anlatımları, soru çözümleri, videolar, yıllık planlar ve yazılı soruları.">
 <meta property="og:image" content="https://derskutusu.com/paylasim.png">
-<link rel="stylesheet" href="/stil.css?v=202610131610">
-<link rel="stylesheet" href="/kesif.css?v=20261013-1">
-<link rel="stylesheet" href="/renkler.css?v=20261013-1" media="screen">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/stil.css?v=202610132200">
+<link rel="stylesheet" href="/kesif.css?v=20261013-2">
+<link rel="stylesheet" href="/renkler.css?v=20261013-3" media="screen">
 </head>
 <body data-site-renk="mor" class="kesif-page">
 <a class="atla" href="#icerik">İçeriğe geç</a>
@@ -85,6 +92,7 @@
       <div class="secili-suzgecler" id="secili-suzgecler" role="group" aria-label="Seçili süzgeçler" hidden></div>
       <div class="kesif-result-toolbar"><p class="sonuc-bilgi"><span id="sonuc-sayi" role="status" aria-live="polite" aria-atomic="true"></span><button type="button" id="temizle" hidden>Seçimleri temizle</button></p>
       <label class="kesif-sort">Sıralama<select id="s-sirala"><option value="yeni">Son eklenen</option><option value="baslik">Başlık A–Z</option><option value="sinif">Sınıf sırası</option></select></label></div>
+      <p class="yukleniyor" id="kutuphane-yukleniyor" role="status">Kaynaklar yükleniyor…</p>
       <div class="kartlar" id="kartlar"></div>
       <div class="kesif-more" id="daha-alani" hidden><p id="gosterilen-sayi" role="status"></p><button class="dugme" type="button" id="daha-goster">Daha fazla kaynak göster ↓</button></div>
       <div class="yakinda" id="icerik-yakinda" hidden>
@@ -140,11 +148,11 @@
   </div>
 </footer>
 
-<script src="/ortak.js?v=20261013-1"></script>
-<script src="/kesif.js?v=20261004-duzen1"></script>
-<script src="/kutuphane.js?v=20261013-2"></script>
-<script src="/arama.js?v=20261004-duzen1"></script>
-<script src="/tahta.js?v=20261013-1"></script>
+<script src="/ortak.js?v=20261013-3"></script>
+<script src="/kesif.js?v=20261013-1"></script>
+<script src="/kutuphane.js?v=20261013-5"></script>
+<script src="/arama.js?v=20261013-4"></script>
+<script src="/tahta.js?v=20261013-5"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fffb5e8a709947ee9ba14ea753d96275"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

@@ -12,6 +12,18 @@
 .ds-shell:fullscreen { width: 100vw; height: 100dvh; border: 0; border-radius: 0; }
 .ds [hidden] { display: none !important; }
 .ds-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 24px 10px; }
+.ds-header > div:first-child { min-width: 0; }
+/* Pencere düğmeleri (kullanıcı 13.10: akıllı tahtada tam ekran): Tam ekran / Küçült ve Slaytı kapat her zaman üstte, belirgin */
+.ds-pencere { display: flex; gap: 8px; flex: none; }
+.ds-pencere button { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
+.ds-pencere svg { width: 22px; height: 22px; flex: none; }
+.ds-tam .ds-ikon-kucult, .ds-tam[aria-pressed="true"] .ds-ikon-ac { display: none; }
+.ds-tam[aria-pressed="true"] .ds-ikon-kucult { display: block; }
+.ds-kapat { color: #8b2222; background: #fff5f5; border-color: #e3b4b4; }
+.ds-kapat:not(:disabled):hover { border-color: #b94848; background: #ffeded; }
+/* Pencereyi kaplayan düzen: tam ekran API'si olmayan cihazlarda sunum tarayıcı penceresinin tamamını kullanır */
+.ds.ds-genis { width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; inset: 0; border: 0; border-radius: 0; }
+.ds.ds-genis .ds-eyebrow, .ds.ds-tam-ekran .ds-eyebrow { display: none; }
 .ds-eyebrow { font-size: 11px; font-weight: 800; letter-spacing: .1em; color: var(--ds-accent); margin: 0 0 4px; }
 .ds-header h2 { font-size: clamp(18px, 2vw, 26px); line-height: 1.25; margin: 0; }
 .ds button, .ds select { font: inherit; color: var(--ds-text); background: var(--ds-card); border: 1px solid var(--ds-line); border-radius: 10px; }
@@ -58,8 +70,9 @@
 .ds progress { accent-color: var(--ds-accent); width: min(180px, 100%); height: 6px; display: block; margin: auto; }
 @media (max-width: 650px) {
   .ds { width: 100vw; height: 100dvh; border-radius: 0; border: 0; }
-  .ds-header { padding: 10px 12px; } .ds-header h2 { font-size: 17px; }
-  .ds-eyebrow { display: none; } .ds-tools { padding: 0 12px; gap: 6px; flex-wrap: nowrap; overflow-x: auto; flex-shrink: 0; }
+  .ds-header { padding: 10px 12px; gap: 8px; } .ds-header h2 { font-size: 17px; }
+  .ds-pencere button span { display: none; } .ds-pencere button { padding-inline: 10px; min-width: 48px; }
+  .ds-eyebrow { display: none; } .ds-tools { padding: 0 12px; gap: 6px; flex-wrap: wrap; flex-shrink: 0; }
   .ds-tools > * { flex-shrink: 0; } .ds-tools button { font-size: 14px; padding-inline: 10px; }
   .ds-notice { margin: 8px 12px; font-size: 12px; } .ds-stage-wrap { margin: 0 8px; border-radius: 10px; }
   .ds-stage { padding: 18px; } .ds-footer { padding: 8px; gap: 6px; }

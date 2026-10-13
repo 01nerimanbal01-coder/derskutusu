@@ -432,7 +432,7 @@ def kagit_html(o, ad, cevapli=False, plan=None, baski=False, olcum=False):
       <div class="ck-bilgi">{o["sinif"]}. Sınıf · {html.escape(ders)} · {o["hafta"]}. Hafta</div></div>
     <div class="ck-ogrenci"><span>Ad Soyad:<i></i></span><span>Sınıf / No:<i></i></span><span>Tarih:<i></i></span></div>
   </header>
-  <div class="ck-konu"><h1>{sembol(o["konu"])}</h1><p>{" · ".join(html.escape(c) for c in o["ciktilar"])}</p></div>
+  <div class="ck-konu"><h2>{sembol(o["konu"])}</h2><p>{" · ".join(html.escape(c) for c in o["ciktilar"])}</p></div>
   {f'<div class="ck-hatirla"><div class="ck-hatirla-bas">HATIRLAYALIM</div><ul>{hatirla}</ul></div>' if hatirla else ''}
   {sorular}
   <footer class="ck-alt"><span>derskutusu.com · © Ders Kutusu · Tüm hakları saklıdır.</span><span>{o["sinif"]}. Sınıf {html.escape(ders)} · {o["hafta"]}. Hafta</span></footer>

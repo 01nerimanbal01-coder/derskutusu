@@ -174,6 +174,7 @@ const Arama = (() => {
 
     // Sayfalar
     ekle({ tip: 'sayfa', baslik: 'İçerikler', aciklama: 'Bütün içerikler: sınıf, ders ve türe göre süzün.', adres: '/icerikler.html', ek: 'kutuphane liste' });
+    ekle({ tip: 'sayfa', baslik: 'Çevrimiçi test', aciklama: 'Sınıf, ders, konu ve öğrenme çıktısına göre otomatik seçilen sorularla test çöz; anında dönüt.', adres: '/test.html', ek: 'online test soru havuzu quiz sinav deneme' });
     ekle({ tip: 'sayfa', baslik: 'Resmî belgeler', aciklama: 'Öğretim programları, kılavuzlar, ortak yazılı tabloları, LGS ve YKS belgeleri.', adres: '/belgeler.html', ek: 'meb odsgm dogm osym resmi' });
     ekle({ tip: 'sayfa', baslik: 'Günlük planlar', aciklama: 'Okul, öğretmen ve yönetici adları her sayfaya yazılı günlük ders planları; tüm yıl ya da aylık, Word veya PDF.', adres: '/planlar.html', kitle: 'ogretmen', ek: 'ogretmen', tur: 'Ders planı' });
     ekle({ tip: 'sayfa', baslik: 'Öğretmen köşesi', aciklama: 'Yıllık planlar, günlük planlar, ortak yazılı tabloları ve çalışma kâğıtları.', adres: '/icerikler.html?kitle=ogretmen', kitle: 'ogretmen', ek: 'ogretmen' });
@@ -185,7 +186,7 @@ const Arama = (() => {
     ekle({ tip: 'sayfa', baslik: 'Sosyal medya', aciklama: 'YouTube, Instagram ve Facebook hesaplarımız.', adres: '/#sosyal', ek: 'youtube instagram facebook takip' });
     for (const n of Object.keys(siniflar)) {
       const no = Number(n);
-      ekle({ tip: 'sayfa', alt: 'sinif', baslik: `${no}. sınıf`, aciklama: `${no <= 8 ? 'Ortaokul' : 'Lise'} ${no}. sınıfın bütün dersleri.`, adres: `/sinif.html?no=${no}`, sinif: no });
+      ekle({ tip: 'sayfa', alt: 'sinif', baslik: `${no}. sınıf`, aciklama: `${no <= 8 ? 'Ortaokul' : 'Lise'} ${no}. sınıfın bütün dersleri.`, adres: `/ogrenci.html?sinif=${no}`, sinif: no });
       for (const d of sinifDersleri[n]) {
         ekle({ tip: 'sayfa', alt: 'ders', baslik: `${no}. sınıf ${dAd[d]}`, aciklama: `${no}. sınıf ${dAd[d]} dersinin bütün içerikleri.`, adres: `/icerikler.html?sinif=${no}&ders=${d}`, sinif: no, ders: d });
       }
@@ -495,8 +496,11 @@ if (typeof module !== 'undefined') module.exports = Arama;
 // ---------- arayüz ----------
 if (typeof document !== 'undefined') {
   const TUR_ETIKET = { sayfa: 'Sayfa', icerik: 'İçerik', belge: 'Resmî belge' };
-  let hazir = null;
-  const dizinHazirla = () => (hazir ||= Promise.all([ortakVeri, veri('belgeler.json'), veri('kpss.json')]).then(([v, belgeler, kpss]) => Arama.kur({ ...v, belgeler, kpss })));
+  let hazir = null, icerikEksik = false;   // icerikler.json gelmediyse sonuçlar yalnız sayfa/belge kayıtlarıdır: kullanıcıya söylenir
+  const dizinHazirla = () => (hazir ||= Promise.all([ortakVeri, veri('belgeler.json'), veri('kpss.json')]).then(([v, belgeler, kpss]) => {
+    icerikEksik = v.iceriklerYuklendi === false;
+    return Arama.kur({ ...v, belgeler, kpss });
+  }));
 
   const vurgula = (metin, sorgu) => {
     const parca = [];
@@ -517,7 +521,8 @@ if (typeof document !== 'undefined') {
   const form = $('.ust-arama');
   if (form) {
     const kutu = $('input', form);
-    if (matchMedia('(max-width: 560px)').matches) kutu.placeholder = 'Ara';
+    // 561–640 px'te tam yer tutucu kutuya sığmıyor ('…yıllı'); 640 px'e kadar kısa metin
+    if (matchMedia('(max-width: 640px)').matches) kutu.placeholder = 'Ara';
     const liste = $('.oneri', form);
     let secili = -1, sira = 0, zaman;
     const kapat = () => {
@@ -584,6 +589,7 @@ if (typeof document !== 'undefined') {
       const notlar = [];
       if (r.sorgu.duzeltmeler.length) notlar.push(`Yazım düzeltildi: ${r.sorgu.duzeltmeler.map(([a, b]) => `“${a}” → “${b}”`).join(', ')}`);
       if (r.not) notlar.push(r.not);
+      if (icerikEksik) notlar.push('İçerik listesi yüklenemedi; sonuçlar eksik olabilir. Sayfayı yenileyip yeniden deneyin.');
       $('#arama-not').replaceChildren(...notlar.map((n) => el('p', {}, n)));
       $('#arama-sayi').textContent = q ? (r.sonuclar.length ? `${r.sonuclar.length} sonuç` : 'Sonuç bulunamadı') : '';
       $('#arama-bos').hidden = !!(q && r.sonuclar.length);

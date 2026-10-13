@@ -19,4 +19,6 @@
 .g-yerel-not { color: var(--soluk); font-size: 14px; }
 @media (max-width: 640px) {
   .pdf-arac { left: 8px; right: 8px; top: 8px; max-width: none; justify-content: center; }
+  .pdf-sayfalar { padding-top: 100px; }   /* iki satırlık çubuk (84 px) ilk sayfanın üstünü örtmesin */
 }
+@media (pointer: coarse) { .pdf-arac button, .pdf-git-no, .pdf-arac .pdf-devam { height: 44px; min-width: 44px; } }
