@@ -1,0 +1,379 @@
+{
+ "sinif": 7,
+ "ders": "fen-bilimleri",
+ "hafta": 6,
+ "tarih": "19-23 Ekim 2026",
+ "yayin_tarihi": "2026-10-14",
+ "unite": "Kuvvet ve Enerjiyi Keşfedelim",
+ "konu": "Kuvvet, İş ve Enerji İlişkisi: İşin Bağlı Olduğu Değişkenler ve Enerji",
+ "ciktilar": [
+  "FB.7.2.1. Fiziksel anlamda yapılan işin bağlı olduğu faktörlere ilişkin bilimsel çıkarım yapabilme",
+  "FB.7.2.2. Enerji çeşitlerinden kinetik ve potansiyel enerjiyi karşılaştırabilme"
+ ],
+ "giris": "Geçen hafta fiziksel anlamda işin ne olduğunu öğrendin: Bir cisme kuvvet uygulanacak ve cisim kuvvetin doğrultusunda yer değiştirecek; İş = Kuvvet × Yol, birimi joule. Bu hafta önce işin kuvvete ve yola bağlılığını deney verileriyle sınayıp yorumlayacaksın. Sonra şu soruyu soracağız: İş yapabilmek için neye ihtiyaç vardır? Yanıt enerjidir. Enerjinin ne olduğunu, iş ile enerji arasındaki bağı ve enerjinin cisimlerde nerede saklandığını öğrenecek, gelecek hafta karşılaştıracağımız kinetik ve potansiyel enerjiye kapı aralayacaksın.",
+ "bolumler": [
+  {
+   "baslik": "Deney: yol sabitken kuvveti değiştirelim",
+   "metin": [
+    "İşin kuvvete bağlı olduğunu geçen hafta akıl yürüterek söyledik; şimdi bunu ölçerek sınayalım. Düzenek basit: tahta bir kutu, bir dinamometre ve bir metre. Kutuyu dinamometreye bağlayıp masanın üzerinde sabit süratle çekiyoruz; dinamometre uyguladığımız kuvveti gösteriyor, metreyle de kutunun aldığı yolu ölçüyoruz.",
+    "Bu deneyde kuvveti değiştirmek için kutunun içine ağırlıklar koyarız: Kutu ağırlaştıkça onu çekmek daha büyük kuvvet ister. Yolu ise her denemede 2 m olarak sabit tutarız. Sonra her deneme için İş = Kuvvet × Yol bağıntısıyla işi hesaplayıp tabloya yazarız.",
+    "Tablodaki sayılara bak: Kuvvet 5 N’dan 10 N’a, yani iki katına çıkınca iş 10 J iken 20 J olmuş, o da iki katına çıkmış. Kuvvet üç katına çıkınca iş de üç katına çıkmış. Buradan şu bilimsel çıkarımı yaparız: Yol sabitken yapılan iş, uygulanan kuvvetle doğru orantılıdır."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Deneme",
+     "Kuvvet (N)",
+     "Yol (m)",
+     "İş (J)"
+    ],
+    "satirlar": [
+     [
+      "1",
+      "5",
+      "2",
+      "10"
+     ],
+     [
+      "2",
+      "10",
+      "2",
+      "20"
+     ],
+     [
+      "3",
+      "15",
+      "2",
+      "30"
+     ],
+     [
+      "4",
+      "20",
+      "2",
+      "40"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Deneydeki değişkenler",
+    "metin": "Bilerek değiştirdiğimiz etken bağımsız değişkendir (kuvvet); onun etkisini gözlediğimiz etken bağımlı değişkendir (iş); sabit tuttuğumuz etken ise kontrol değişkenidir (yol). Her deneyde yalnızca bir değişkeni değiştir."
+   }
+  },
+  {
+   "baslik": "Deney: kuvvet sabitken yolu değiştirelim",
+   "metin": [
+    "Şimdi ikinci soruya geçelim: İş yola bağlı mı? Bu kez kutunun içindekileri değiştirmiyoruz; böylece dinamometredeki kuvvet her denemede aynı, diyelim 10 N, kalıyor. Değiştirdiğimiz tek şey kutuyu çektiğimiz mesafe: 1 m, 2 m, 3 m ve 4 m.",
+    "Hesaplanan işler tabloda görülüyor. Yol 1 m iken 2 m olunca iş de 10 J iken 20 J oluyor; yol dört katına çıkınca iş de dört katına çıkıyor. Çıkarımımız şu: Kuvvet sabitken yapılan iş, kuvvet doğrultusunda alınan yolla doğru orantılıdır.",
+    "İki deneyi birlikte düşündüğümüzde işin iki değişkene bağlı olduğunu verilerle göstermiş olduk: uygulanan kuvvet ve alınan yol. Her ikisi de artarsa iş daha da hızlı artar; örneğin kuvvet de yol da iki katına çıkarsa iş 2 × 2 = 4 katına çıkar. Verileri grafiğe döktüğünde kuvvet–iş ve yol–iş grafiklerinin başlangıç noktasından çıkan doğrular olduğunu görürsün; doğru orantının grafiği böyledir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Deneme",
+     "Kuvvet (N)",
+     "Yol (m)",
+     "İş (J)"
+    ],
+    "satirlar": [
+     [
+      "1",
+      "10",
+      "1",
+      "10"
+     ],
+     [
+      "2",
+      "10",
+      "2",
+      "20"
+     ],
+     [
+      "3",
+      "10",
+      "3",
+      "30"
+     ],
+     [
+      "4",
+      "10",
+      "4",
+      "40"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "kural",
+    "metin": "Yapılan iş, uygulanan kuvvetle ve kuvvet doğrultusunda alınan yolla doğru orantılıdır. Biri sabitken öteki kaç katına çıkarsa iş de o kadar katına çıkar."
+   }
+  },
+  {
+   "baslik": "İş yapmak için ne gerekir? Enerji",
+   "metin": [
+    "Kutuyu çekme deneyini uzun süre tekrarladığını düşün: Bir süre sonra yorulursun, kolun kuvvet uygulayamaz olur ve iş yapamazsın. Dinlenip bir şeyler yediğinde ise yeniden kutuyu çekebilirsin. Demek ki iş yapabilmek için sende bir şeyin bulunması gerekiyor; bu şey enerjidir. Enerji, iş yapabilme yeteneğidir.",
+    "Enerji yalnızca canlılarda bulunmaz. Akan su, değirmenin çarkını döndürür; rüzgâr, yelkenliyi iter; yüksekten düşen bir çekiç çiviyi tahtaya çakar; sıkıştırılmış bir yay, oyuncak arabayı fırlatır. Bütün bu olaylarda bir cisim başka bir cisme kuvvet uyguluyor ve onu yer değiştiriyor, yani iş yapıyor. İş yapabildiğine göre o cismin enerjisi vardır.",
+    "Tersi de doğrudur: Enerjisi olmayan bir cisim iş yapamaz. Yerde hareketsiz duran bir top yanındaki kutuyu itemez. Topa vurduğunda ise top hareketlenir, kutuya çarpıp onu iter; artık topun enerjisi vardır. Bir cismin enerjisi olup olmadığını anlamanın en iyi yolu, onun iş yapıp yapamayacağına bakmaktır."
+   ],
+   "kutu": {
+    "tur": "tanim",
+    "baslik": "Enerji",
+    "metin": "Enerji, iş yapabilme yeteneğidir. Enerjisi olan cisimler başka cisimlere kuvvet uygulayarak onları yer değiştirebilir, yani iş yapabilir. Enerjinin birimi de işin birimi gibi joule (J) olarak yazılır."
+   }
+  },
+  {
+   "baslik": "İş ile enerji arasındaki ilişki",
+   "metin": [
+    "İş ile enerji birbirine sıkı sıkıya bağlıdır. Bir cisme iş yaptığında ona enerji aktarırsın: Kutuyu rafa kaldırmak için 60 J iş yaptıysan kutu 60 J enerji kazanmıştır. İş yapan cisim ise enerjisinin bir kısmını harcar; kutuyu kaldıran sen, besinlerden aldığın enerjinin bir bölümünü kullanmış olursun.",
+    "Bu yüzden iş ile enerjinin birimi aynıdır: joule (J). Bir cisme 1 J iş yapıldığında ona 1 J enerji aktarılmış olur. Yapılan iş ne kadar büyükse aktarılan enerji de o kadar büyüktür. Enerjiyi bir cisimden başka bir cisme taşıyan şey iştir diyebiliriz.",
+    "Enerji aktarımını günlük olaylarda izleyebilirsin. Ayağınla topa vurduğunda ayağın topa iş yapar, topun enerjisi artar ve top uçar. Vinç yükü yukarı çekerken yüke iş yapar; yük yükseldikçe enerji kazanır. Akan su çarka çarptığında suyun enerjisinin bir kısmı çarka geçer, çark döner. Her olayda enerji, iş yoluyla bir cisimden ötekine geçmektedir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Olay",
+     "İş yapan",
+     "Enerji kazanan"
+    ],
+    "satirlar": [
+     [
+      "Topa vurmak",
+      "Ayak",
+      "Top"
+     ],
+     [
+      "Vinçle yükü yukarı çekmek",
+      "Vinç",
+      "Yük"
+     ],
+     [
+      "Akan suyun çarkı döndürmesi",
+      "Su",
+      "Çark"
+     ],
+     [
+      "Kutuyu rafa kaldırmak",
+      "Kişi (kasları)",
+      "Kutu"
+     ],
+     [
+      "Yayın oyuncak arabayı fırlatması",
+      "Yay",
+      "Oyuncak araba"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "hatirla",
+    "metin": "İş yapıldığında enerji aktarılır: İş yapan enerji harcar, iş yapılan enerji kazanır. Aktarılan enerji, yapılan iş kadardır; ikisi de joule (J) ile ölçülür."
+   }
+  },
+  {
+   "baslik": "Enerji cisimlerde nerede saklıdır?",
+   "metin": [
+    "Enerjisi olan cisimleri incelediğimizde iki farklı durum fark ederiz. Birinci grupta hareket eden cisimler var: akan su, esen rüzgâr, yuvarlanan top, koşan atlet. Bunlar hareket ettikleri için iş yapabilir. Hareket eden cisimlerin hareketlerinden dolayı sahip oldukları enerjiye kinetik enerji denir.",
+    "İkinci grupta ise hareket etmeyen ama yine de iş yapabilecek cisimler var: Rafın üstünde duran vazo düşerse altındaki şeyi kırabilir; barajda biriken su kapaklar açılınca türbinleri döndürebilir; gerilmiş bir yay bırakılınca oku fırlatır. Bu cisimler bulundukları konum ya da aldıkları şekil nedeniyle enerji depolamıştır. Cisimlerin konumlarından ya da şekillerinden dolayı sahip oldukları enerjiye potansiyel enerji denir.",
+    "Kinetik ve potansiyel enerji, enerji çeşitlerinden ikisidir ve ikisi de joule ile ölçülür. Gelecek hafta bu iki enerji türünü yan yana koyacak, her birinin nelere bağlı olduğunu deneylerle bulacak, benzer ve farklı özelliklerini listeleyeceksin. Şimdilik şunu aklında tut: Hareket eden cisimde kinetik, yüksekteki ya da gerilmiş cisimde potansiyel enerji vardır."
+   ],
+   "kutu": {
+    "tur": "bilgi",
+    "metin": "Enerjinin başka çeşitleri de vardır: ısı, ışık, ses, elektrik ve kimyasal enerji gibi. Bu ünitede önce kinetik ve potansiyel enerjiyi, sonra bunların birbirine dönüşümünü inceleyeceğiz."
+   }
+  },
+  {
+   "baslik": "Günlük yaşamda iş ve enerji",
+   "metin": [
+    "Çevrende iş yapan her şey bir enerji kaynağı kullanır. Sen merdiven çıkarken, kutu taşırken ya da bisiklet sürerken kasların iş yapar; bunun enerjisini yediğin besinlerden alırsın. Asansör, vinç ve çamaşır makinesi elektrik enerjisiyle, otomobil ve kamyon yakıttaki enerjiyle iş yapar. Yel değirmeni rüzgârın, su değirmeni akan suyun enerjisini kullanır.",
+    "Enerji harcamak ile iş yapmak her zaman aynı şey değildir. Ağır çantayı kolunda sabit tutarken kasların sürekli kuvvet uygular ve enerji harcar; bu yüzden yorulursun. Ama çanta yer değiştirmediği için çantaya iş yapmazsın ve harcadığın enerji çantaya aktarılmaz. Fiziksel anlamda iş, ancak cisim kuvvet doğrultusunda yer değiştirdiğinde yapılmış olur.",
+    "Bu haftanın bilgisini bir cümlede toplayalım: Enerji olmadan iş olmaz; iş yapıldığında enerji bir cisimden ötekine aktarılır. Artık bir olaya baktığında üç soru sorabilirsin: İş yapılıyor mu? İş yapan cismin enerjisi nereden geliyor? Enerji hangi cisme geçiyor?"
+   ],
+   "tablo": {
+    "basliklar": [
+     "Günlük durum",
+     "İş yapan",
+     "Kullanılan enerji kaynağı"
+    ],
+    "satirlar": [
+     [
+      "Merdiven çıkmak",
+      "Bacak kasları",
+      "Besinlerden alınan enerji"
+     ],
+     [
+      "Asansörün yolcuları yukarı taşıması",
+      "Asansörün motoru",
+      "Elektrik enerjisi"
+     ],
+     [
+      "Kamyonun yokuş yukarı çıkması",
+      "Kamyonun motoru",
+      "Yakıttaki enerji"
+     ],
+     [
+      "Yel değirmeninin tahıl öğütmesi",
+      "Rüzgârın döndürdüğü kanatlar",
+      "Rüzgârın (hareket eden havanın) enerjisi"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "dikkat",
+    "metin": "Enerji harcamak her zaman iş yapmak demek değildir. Çantayı sabit tutan kasların enerji harcar; ama çanta yer değiştirmediği için çantaya iş yapılmaz."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Bir öğrenci aynı kutuyu masanın üzerinde 2 m boyunca sırasıyla 4 N, 8 N ve 12 N kuvvetle çekiyor. Her denemede yapılan işi hesaplayınız ve bu verilerden hangi bilimsel çıkarımı yapabileceğinizi yazınız.",
+   "cevap": "İş = Kuvvet × Yol: 4 N × 2 m = 8 J; 8 N × 2 m = 16 J; 12 N × 2 m = 24 J. Yol sabitken kuvvet 2 katına çıkınca iş 2 katına (8 J iken 16 J), 3 katına çıkınca iş 3 katına (8 J iken 24 J) çıkmıştır. Çıkarım: Yol sabitken iş, uygulanan kuvvetle doğru orantılıdır."
+  },
+  {
+   "soru": "Ela, “Yapılan iş, alınan yolla doğru orantılıdır.” hipotezini deneyle sınamak istiyor. Ela deneyde hangi değişkeni değiştirmeli, hangisini sabit tutmalı, neyi ölçüp hesaplamalıdır?",
+   "cevap": "Ela yalnızca yolu değiştirmelidir (bağımsız değişken): Kutuyu 1 m, 2 m, 3 m gibi farklı mesafelerde çekmelidir. Uygulanan kuvveti sabit tutmalıdır (kontrol değişkeni); bunun için aynı kutuyu aynı zeminde, dinamometrede aynı değeri okuyarak çekmelidir. Her denemede yolu ölçüp işi hesaplar (bağımlı değişken) ve yol arttıkça işin aynı oranda artıp artmadığına bakar. Kuvveti de değiştirseydi işin hangi değişken yüzünden değiştiğini bilemezdi."
+  },
+  {
+   "soru": "Can, bir kutuyu yerden rafa kaldırırken 60 J iş yapıyor ve “Demek ki kutuya 60 J enerji aktardım.” diyor. Can’ın görüşünü değerlendiriniz.",
+   "cevap": "Can haklıdır. Bir cisme iş yapıldığında, yapılan iş kadar enerji o cisme aktarılır; iş ile enerjinin birimi de aynıdır (joule). Can 60 J iş yaptığına göre kutu 60 J enerji kazanmıştır. Bu enerji kutunun yerden yüksekte olmasından, yani konumundan kaynaklanan potansiyel enerjidir; Can ise bu işi yapmak için besinlerden aldığı enerjinin bir bölümünü harcamıştır."
+  },
+  {
+   "soru": "Bir elektrikli vinç, ağırlığı 500 N olan bir yükü 6 m yukarı çekiyor. a) Vincin yaptığı iş kaç joule olur? b) Yük kaç joule enerji kazanmıştır? c) Vinç bu işi yapmak için gereken enerjiyi nereden alır?",
+   "cevap": "a) Yükü kaldırmak için ağırlığı kadar, yani 500 N kuvvet gerekir. İş = 500 N × 6 m = 3.000 J. b) Yapılan iş kadar enerji aktarıldığından yük 3.000 J enerji kazanmıştır. c) Vinç elektrik enerjisi kullanır; bu enerjinin bir bölümü iş yoluyla yüke aktarılır."
+  },
+  {
+   "soru": "Selin, yerde hareketsiz duran bir topun yanındaki kutuyu itemediğini, ancak yuvarlanan bir topun kutuya çarpıp onu ittiğini gözlemliyor. Selin bu gözlemden enerji hakkında hangi çıkarımı yapabilir?",
+   "cevap": "Yuvarlanan top kutuya kuvvet uygulayıp onu yer değiştirmiş, yani iş yapmıştır. İş yapabildiğine göre hareket eden topun enerjisi vardır; bu enerji hareketinden kaynaklanan kinetik enerjidir. Yerde duran topun ise hareketi yoktur, iş yapamaz; dolayısıyla kinetik enerjisi yoktur. Çıkarım: Hareket eden cisimler enerjiye sahiptir ve bu enerjiyle iş yapabilir."
+  },
+  {
+   "soru": "Bir deneyde elde edilen veriler şöyledir: 1. deneme 6 N kuvvet, 1 m yol; 2. deneme 6 N, 3 m; 3. deneme 18 N, 1 m; 4. deneme 18 N, 3 m. a) Her denemedeki işi hesaplayınız. b) Hangi denemeler karşılaştırılırsa işin yola bağlılığı görülür? c) Hem kuvvet hem yol üç katına çıkınca iş kaç katına çıkar?",
+   "cevap": "a) 1. deneme: 6 × 1 = 6 J; 2. deneme: 6 × 3 = 18 J; 3. deneme: 18 × 1 = 18 J; 4. deneme: 18 × 3 = 54 J. b) Kuvvetin sabit olduğu denemeler karşılaştırılır: 1 ile 2 (6 N) ya da 3 ile 4 (18 N). Bu çiftlerde yol 3 katına çıkınca iş de 3 katına çıkmıştır. c) 1. denemeden 4. denemeye hem kuvvet hem yol 3 katına çıkmış; iş 6 J iken 54 J olmuş, yani 3 × 3 = 9 katına çıkmıştır."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Bir kutuya uygulanan kuvvet de kutunun kuvvet doğrultusunda aldığı yol da iki katına çıkarılırsa yapılan iş nasıl değişir?",
+   "secenekler": [
+    "İki katına çıkar",
+    "Dört katına çıkar",
+    "Değişmez",
+    "Yarıya iner"
+   ],
+   "dogru": 1,
+   "aciklama": "İş hem kuvvetle hem de yolla doğru orantılıdır. İkisi de iki katına çıkınca iş 2 × 2 = 4 katına çıkar; yalnızca biri iki katına çıksaydı iş iki katına çıkardı."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Enerji ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "secenekler": [
+    "Yalnızca hareket eden cisimlerin enerjisi vardır.",
+    "Enerjinin birimi newton (N) olarak yazılır.",
+    "Enerji, iş yapabilme yeteneğidir.",
+    "Enerjisi olan bir cisim iş yapamaz."
+   ],
+   "dogru": 2,
+   "aciklama": "Enerji, iş yapabilme yeteneğidir ve joule ile ölçülür. Rafın üstündeki vazo gibi hareket etmeyen cisimlerin de enerjisi olabilir; enerjisi olan cisimler iş yapabilir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir öğrenci, 25 N’luk kuvvetle bir kutuyu kuvvet doğrultusunda 4 m itiyor. Kutuya aktarılan enerji ne kadardır?",
+   "secenekler": [
+    "100 J",
+    "29 J",
+    "21 J",
+    "100 N"
+   ],
+   "dogru": 0,
+   "aciklama": "Yapılan iş = 25 N × 4 m = 100 J. Cisme yapılan iş kadar enerji aktarılır; enerjinin birimi joule olup newton değildir."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadeler doğru mu, yanlış mı?",
+   "ifadeler": [
+    {
+     "metin": "Enerjisi olmayan bir cisim iş yapamaz.",
+     "dogru": true,
+     "aciklama": "Enerji, iş yapabilme yeteneğidir; iş yapabilmek için enerji gerekir."
+    },
+    {
+     "metin": "İşin birimi ile enerjinin birimi farklıdır.",
+     "dogru": false,
+     "aciklama": "İş de enerji de joule (J) ile ölçülür; bir cisme yapılan iş kadar enerji aktarılır."
+    },
+    {
+     "metin": "Uygulanan kuvvet sabitken alınan yol üç katına çıkarsa yapılan iş de üç katına çıkar.",
+     "dogru": true,
+     "aciklama": "İş yolla doğru orantılıdır; kuvvet sabitken yol kaç katına çıkarsa iş de o kadar katına çıkar."
+    },
+    {
+     "metin": "Duvarı itip kıpırdatamayan kişi duvara enerji aktarmıştır.",
+     "dogru": false,
+     "aciklama": "Duvar yer değiştirmediği için iş yapılmamıştır; iş yapılmadan cisme enerji aktarılmaz. Kişi enerji harcar ama bu enerji duvara geçmez."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Kavramları açıklamalarıyla eşleştiriniz.",
+   "ciftler": [
+    [
+     "Enerji",
+     "İş yapabilme yeteneği"
+    ],
+    [
+     "Joule (J)",
+     "İşin ve enerjinin ortak birimi"
+    ],
+    [
+     "Bağımsız değişken",
+     "Deneyde bilerek değiştirilen etken"
+    ],
+    [
+     "Kontrol değişkeni",
+     "Deney boyunca sabit tutulan etken"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Enerji, ___ yapabilme yeteneğidir.",
+     "cevap": "iş"
+    },
+    {
+     "metin": "Bir cisme iş yapıldığında o cisme ___ aktarılır.",
+     "cevap": "enerji"
+    },
+    {
+     "metin": "Uygulanan kuvvet sabitken alınan yol arttıkça yapılan iş ___.",
+     "cevap": "artar"
+    }
+   ],
+   "fazla": [
+    "azalır"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir öğrenci boş bir kutuyu masanın üzerinde 2 m çekerken dinamometre 5 N gösteriyor. Kutunun içine kitaplar koyup yine 2 m çektiğinde dinamometre 15 N gösteriyor. a) İki durumda yapılan işleri hesaplayınız. b) Öğrenci hangi durumda daha çok enerji harcamıştır, kaç kat? c) Bu deneyde hangi değişken sabit tutulmuş, hangisi değiştirilmiştir?",
+   "ipuclari": [
+    "İş = Kuvvet × Yol bağıntısını iki durum için ayrı ayrı uygula.",
+    "Yapılan iş kadar enerji harcanır."
+   ],
+   "cevap": "a) Boş kutu: 5 N × 2 m = 10 J. Dolu kutu: 15 N × 2 m = 30 J. b) Yapılan iş kadar enerji harcandığından öğrenci dolu kutuyu çekerken 30 J, boş kutuyu çekerken 10 J enerji harcamıştır; dolu kutuda 3 kat fazla. c) Yol (2 m) sabit tutulmuş; kutunun ağırlığı artırılarak uygulanan kuvvet değiştirilmiştir. Çıkarım: Yol sabitken kuvvet 3 katına çıkınca iş de 3 katına çıkar."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Rüzgâr, yelkenli bir tekneyi iterek denizde ilerletiyor. Rüzgârın enerjisi var mıdır? İş-enerji ilişkisinden yararlanarak gerekçelendiriniz ve bu enerjinin kaynağını söyleyiniz.",
+   "ipuclari": [
+    "Rüzgâr tekneye kuvvet uyguluyor mu, tekne bu kuvvetin doğrultusunda yer değiştiriyor mu?",
+    "Rüzgâr nedir? Hareket eden bir şey mi?"
+   ],
+   "cevap": "Rüzgâr yelkene kuvvet uygular ve tekne bu kuvvetin doğrultusunda yer değiştirir; yani rüzgâr tekneye iş yapar. İş yapabilen her şeyin enerjisi vardır; dolayısıyla rüzgârın enerjisi vardır ve bu enerjinin bir kısmı iş yoluyla tekneye aktarılır. Rüzgâr hareket eden havadır; enerjisi hareketinden kaynaklanır, yani kinetik enerjidir."
+  }
+ ],
+ "ozet": [
+  "Deney verileri işin iki değişkene bağlı olduğunu gösterir: Yol sabitken iş kuvvetle, kuvvet sabitken iş yolla doğru orantılıdır. Her deneyde yalnızca bir değişken değiştirilir.",
+  "Enerji, iş yapabilme yeteneğidir. Enerjisi olan cisimler iş yapabilir; enerjisi olmayan cisim iş yapamaz. Enerjinin birimi de joule (J) olarak yazılır.",
+  "Bir cisme iş yapıldığında yapılan iş kadar enerji o cisme aktarılır; iş yapan cisim enerji harcar. Enerji, iş yoluyla bir cisimden ötekine geçer.",
+  "Hareket eden cisimlerin hareketlerinden dolayı sahip olduğu enerjiye kinetik enerji, cisimlerin konumlarından ya da şekillerinden dolayı sahip olduğu enerjiye potansiyel enerji denir; gelecek hafta bu ikisi karşılaştırılacak.",
+  "Günlük yaşamda iş yapan her şey bir enerji kaynağı kullanır: kaslar besinlerden, makineler elektrikten ya da yakıttan. Enerji harcamak her zaman iş yapmak demek değildir; cisim yer değiştirmiyorsa iş yapılmamıştır."
+ ]
+}
