@@ -467,14 +467,108 @@ GOVDE['arapca.html'] = ('Arapça harf ve kelime çalışması', '28 harf ve 48 k
 <noscript>Alıştırmalar için JavaScript’i etkinleştirin. Konu anlatımlarını yukarıdaki bağlantılardan okuyabilirsiniz.</noscript>
 </div></section>''', ('arapca.js',))
 
-GOVDE['ogrenci.html'] = ('Öğrenci', 'Ders Kutusu öğrenci sayfası: sınıfını seç; ünite ünite konu anlatımları, etkinlikler, çalışma kâğıtları ve ders kitapları.', '''  <div id="agac" class="agac" aria-busy="true"><section class="agac-bas"><div class="kap"><p role="status">Yükleniyor…</p></div></section></div>''', ('agac.js',))
-GOVDE['ogretmen.html'] = ('Öğretmen Köşesi', 'Öğretmen Köşesi: günlük ve yıllık planlar, ortak yazılı senaryoları ve kâğıtları, öğretim programları, çalışma kâğıtları ve resmî belgeler.', '''  <div id="agac" class="agac" aria-busy="true"><section class="agac-bas"><div class="kap"><p role="status">Yükleniyor…</p></div></section></div>''', ('agac.js',))
+GOVDE['ogrenci.html'] = ('Öğrenci', 'Ders Kutusu öğrenci sayfası: sınıfını seç; ünite ünite konu anlatımları, etkinlikler, çalışma kâğıtları ve ders kitapları.', '''  <div id="agac" class="agac" aria-busy="true"><section class="agac-bas"><div class="kap">
+      <h1>Öğrenci</h1>
+      <p>Sınıfını seç; derslerin ünite ve konularına, haftalık konu özetlerine, çözümlü örneklere, etkileşimli etkinliklere ve çalışma kâğıtlarına ulaş. Konular MEB yıllık planındaki hafta sırasıyla eklenir.</p>
+      <ul>
+        <li><a href="/ogrenci.html?sinif=5">5. sınıf dersleri</a></li>
+        <li><a href="/ogrenci.html?sinif=6">6. sınıf dersleri</a></li>
+        <li><a href="/ogrenci.html?sinif=7">7. sınıf dersleri</a></li>
+        <li><a href="/ogrenci.html?sinif=8">8. sınıf dersleri</a></li>
+        <li><a href="/ogrenci.html?sinif=9">9. sınıf dersleri</a></li>
+        <li><a href="/ogrenci.html?sinif=10">10. sınıf dersleri</a></li>
+        <li><a href="/ogrenci.html?sinif=11">11. sınıf dersleri</a></li>
+        <li><a href="/ogrenci.html?sinif=12">12. sınıf dersleri</a></li>
+      </ul>
+      <p>Ayrıca: <a href="/kelime.html">İngilizce kelime çalışması</a> · <a href="/arapca.html">Arapça harf ve kelime çalışması</a> · <a href="/sinav.html">Sınavlar (LGS, YKS)</a></p>
+      <p role="status">Yükleniyor…</p>
+    </div></section></div>''', ('agac.js',))
+GOVDE['ogretmen.html'] = ('Öğretmen Köşesi', 'Öğretmen Köşesi: günlük ve yıllık planlar, ortak yazılı senaryoları ve kâğıtları, öğretim programları, çalışma kâğıtları ve resmî belgeler.', '''  <div id="agac" class="agac" aria-busy="true"><section class="agac-bas"><div class="kap">
+      <h1>Öğretmen Köşesi</h1>
+      <p>Derse hazırlık ve ölçme için ihtiyaç duyulan dosyalar kategorilere ayrılmıştır. Kategoriyi, ardından sınıfı seçin.</p>
+      <ul>
+        <li><a href="/planlar.html">Günlük planlar</a>: Okul ve yönetici adları her sayfaya yazılır; tüm yıl ya da ay ay, Word veya PDF.</li>
+        <li><a href="/ogretmen.html?kategori=yillik-plan">Yıllık planlar</a>: Güncel öğretim programına göre haftalık yıllık planlar.</li>
+        <li><a href="/yazili.html">Yazılı senaryoları ve kâğıtları</a>: Ortak yazılı konu-soru dağılımları ve cevaplı yazılı kâğıtları.</li>
+        <li><a href="/ogretmen.html?kategori=ogretim-programi">Öğretim programları</a>: Öğrenme çıktıları, süreç bileşenleri ve açıklamalar.</li>
+        <li><a href="/ogretmen.html?kategori=calisma-kagidi">Çalışma kâğıtları</a>: Derste kullanmak için cevaplı ve cevapsız PDF.</li>
+        <li><a href="/belgeler.html">Resmî belgeler</a>: MEB, ÖDSGM, DÖGM ve ÖSYM kılavuzları ve tabloları.</li>
+        <li><a href="/tahta.html">Akıllı tahta</a>: Kalem, renkler, kareli zemin; tarayıcıda çalışır.</li>
+        <li><a href="/kpss.html">KPSS hazırlık</a>: Öğretmen adayları için konu anlatımı ve testler.</li>
+      </ul>
+      <p role="status">Yükleniyor…</p>
+    </div></section></div>''', ('agac.js',))
 GOVDE['sinav.html'] = ('Sınavlar: LGS ve YKS', 'LGS ve YKS: oturumlar, testler, soru sayıları ve süreler; çıkmış sorular, kılavuzlar ve hazırlık kaynakları.', _sinav_govde(), ())
+
+# Hakkımızda ve İletişim (14.10.2026, AdSense 'düşük değerli içerik' düzeltmesi)
+GOVDE['hakkimizda.html'] = ('Hakkımızda', 'Ders Kutusu nedir, kimler için hazırlanır, içerikler nasıl hazırlanır ve denetlenir?', '''<div class="metin-sayfa">
+  <div class="kap">
+    <h1>Hakkımızda</h1>
+    <p>Ders Kutusu, 5–12. sınıf öğrencileri ve öğretmenleri için hazırlanan ücretsiz bir eğitim sitesidir. Okulda o hafta işlenen konuyu aynı sırayla, sade bir dille tekrar etmeyi ve derse hazırlanmayı kolaylaştırmak için kuruldu.</p>
+
+    <h2>Öğrenciler için</h2>
+    <ul>
+      <li><strong>Haftalık konu özetleri:</strong> her ders için MEB yıllık planındaki hafta sırasıyla; renkli görseller, bilgi ve dikkat kutuları, çözümlü örnekler.</li>
+      <li><strong>Etkileşimli etkinlikler:</strong> her özetin sonunda çoktan seçmeli, doğru-yanlış, eşleştirme ve boşluk doldurma soruları; cevap anında denetlenir.</li>
+      <li><strong>Çalışma kâğıtları:</strong> haftanın konusunu baştan sona yoklayan iki sayfalık kâğıtlar; cevaplı ve cevapsız PDF.</li>
+      <li><strong>Kelime çalışmaları:</strong> İngilizce ve Arapça kelime kartları; dinleme, yazma ve eşleştirme alıştırmaları.</li>
+      <li><strong>Sınav bilgileri:</strong> LGS ve YKS için takvim, kapsam ve resmî kaynaklar.</li>
+    </ul>
+
+    <h2>Öğretmenler için</h2>
+    <ul>
+      <li><strong>Yıllık ve günlük planlar:</strong> güncel öğretim programına göre; okul, öğretmen ve yönetici adları her sayfaya yazılır, plan tüm yıl ya da ay ay Word veya PDF olarak indirilir.</li>
+      <li><strong>Ortak yazılılar:</strong> senaryo tabloları, öğrenme çıktısına göre hazırlanmış yazılı kâğıtları ve cevap anahtarları.</li>
+      <li><strong>Öğretim programları ve resmî belgeler:</strong> MEB, ÖDSGM, DÖGM ve ÖSYM yayınları tek yerde.</li>
+      <li><strong>Akıllı tahta:</strong> tarayıcıda çalışan kalem, renkler, kareli ve çizgili zemin.</li>
+      <li><strong>KPSS hazırlık:</strong> öğretmen adayları için konu anlatımı ve testler.</li>
+    </ul>
+
+    <h2>İçerikleri nasıl hazırlıyoruz?</h2>
+    <p>Konu özetleri, o sınıf ve dersin güncel MEB ders kitabında yer alan bilgilere dayanır; kitapta olmayan bilgi eklenmez. Anlatımlar, örnekler ve sorular özgün olarak yazılır; ders kitabından metin kopyalanmaz.</p>
+    <p>Her içerik yayımlanmadan önce denetlenir: bilgiler kaynak kitapla karşılaştırılır, matematik sembolleri öğretim programındaki gösterimle yazılır, soruların tek doğru cevabı olduğu ve daha önce yayımlanan sorulardan farklı olduğu kontrol edilir.</p>
+    <p>Öğretim programları ve kılavuzlar gibi resmî yayınlar kaynağı belirtilerek sunulur. Ders kitapları ve sınav kitapçıkları kopyalanmaz, resmî adreslerinden açılır. Ayrıntılar için <a href="/telif.html">Telif hakları ve kullanım</a> sayfasına bakabilirsiniz.</p>
+
+    <h2>İlkelerimiz</h2>
+    <ul>
+      <li>Bütün içerikler ücretsizdir; üyelik gerekmez.</li>
+      <li>Ziyaretçilerden kişisel bilgi istenmez. Günlük planlara yazılan adlar yalnız tarayıcıda kalır, sunucuya gönderilmez (<a href="/gizlilik.html">Gizlilik ve çerezler</a>).</li>
+      <li>Site telefonda, tablette ve bilgisayarda çalışır.</li>
+      <li>Bildirilen hatalar en kısa sürede düzeltilir.</li>
+    </ul>
+
+    <h2>Bize ulaşın</h2>
+    <p>Soru, öneri ve hata bildirimleriniz için <a href="/iletisim.html">İletişim</a> sayfasını kullanabilir, <a href="/katki.html">Katkıda bulun</a> sayfasından da siteye destek olabilirsiniz.</p>
+  </div>
+</div>''', ())
+GOVDE['iletisim.html'] = ('İletişim', 'Ders Kutusu ile iletişim: soru, öneri, hata bildirimi ve telif başvuruları için e-posta.', '''<div class="metin-sayfa">
+  <div class="kap">
+    <h1>İletişim</h1>
+    <p>Ders Kutusu ile ilgili soru, öneri ve bildirimlerinizi e-postayla iletebilirsiniz. Sitede iletişim formu yoktur; e-posta adresiniz yalnız size yanıt vermek için kullanılır.</p>
+
+    <h2>E-posta</h2>
+    <p><a href="mailto:info@derskutusu.com">info@derskutusu.com</a></p>
+
+    <h2>Ne için yazabilirsiniz?</h2>
+    <ul>
+      <li><strong>Hata bildirimi:</strong> konu özetinde, soruda, cevapta ya da plan dosyasında gördüğünüz yanlışı sayfanın adresiyle birlikte yazın. <a href="mailto:info@derskutusu.com?subject=Hata%20bildirimi">Hata bildir</a></li>
+      <li><strong>İçerik önerisi:</strong> eklenmesini istediğiniz ders, konu ya da öğretmen dosyasını yazın. <a href="mailto:info@derskutusu.com?subject=%C4%B0%C3%A7erik%20%C3%B6nerisi">Öneri gönder</a></li>
+      <li><strong>Telif:</strong> bir içeriğin size ait olduğunu düşünüyorsanız sayfa adresini ve gerekçenizi yazın; inceleyip gereğini yaparız. Ayrıntı: <a href="/telif.html">Telif hakları ve kullanım</a>.</li>
+      <li><strong>Okul ağında erişim:</strong> site okulunuzun ağında ya da akıllı tahtada açılmıyorsa okulunuzun adını ve ekranda görünen uyarıyı yazın.</li>
+    </ul>
+
+    <p>Siteye başka yollarla destek olmak için <a href="/katki.html">Katkıda bulun</a> sayfasına, sitenin amacı ve içeriklerin nasıl hazırlandığı için <a href="/hakkimizda.html">Hakkımızda</a> sayfasına bakabilirsiniz.</p>
+  </div>
+</div>''', ())
+
+# Arama dizinine girmeyecek araç/yönlendirme sayfaları (içerik değil, araç)
+NOINDEX = {'sinif.html', 'ara.html', 'tahta.html', 'goruntule.html'}
+
 
 def main():
     """Sabit iç sayfaları yazar. Yalnız doğrudan çalıştırılınca ya da ozet_uret.main() çağırınca; içe aktarma dosya yazmaz."""
     for ad, (baslik, aciklama, govde, betikler) in GOVDE.items():
-        (PUBLIC / ad).write_text(sayfa(ad, baslik, aciklama, govde, betikler), encoding='utf-8')
+        (PUBLIC / ad).write_text(sayfa(ad, baslik, aciklama, govde, betikler, kanonik=ad not in NOINDEX), encoding='utf-8')
 
     # Gizlilik ve 404: mevcut gövdeleri korunur, üst/alt yenilenir
     for ad, baslik, aciklama, kanonik in [('gizlilik.html', 'Gizlilik ve çerezler', 'Ders Kutusu gizlilik ve çerez bilgilendirmesi.', True),
