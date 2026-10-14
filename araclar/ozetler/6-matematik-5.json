@@ -20,12 +20,32 @@
     "Bu gözlemden bir çıkarım yapabilirsin: az sayıda tekrarda göreli sıklık bir deneyden diğerine büyük dalgalanma gösterir; tekrar sayısı büyüdükçe dalgalanma küçülür ve göreli sıklık belirli bir değerin çevresinde toplanır. Para atma deneyinde bu değer {kesir:1|2}’dir. Deneyi kimin yaptığı değil, kaç kez yapıldığı sonucu belirler."
    ],
    "tablo": {
-    "basliklar": ["Tekrar sayısı", "Tura sıklığı", "Göreli sıklık"],
+    "basliklar": [
+     "Tekrar sayısı",
+     "Tura sıklığı",
+     "Göreli sıklık"
+    ],
     "satirlar": [
-     ["10", "3", "{kesir:3|10} = %30"],
-     ["50", "23", "{kesir:23|50} = %46"],
-     ["200", "97", "{kesir:97|200} = %48,5"],
-     ["1000", "503", "{kesir:503|1000} = %50,3"]
+     [
+      "10",
+      "3",
+      "{kesir:3|10} = %30"
+     ],
+     [
+      "50",
+      "23",
+      "{kesir:23|50} = %46"
+     ],
+     [
+      "200",
+      "97",
+      "{kesir:97|200} = %48,5"
+     ],
+     [
+      "1000",
+      "503",
+      "{kesir:503|1000} = %50,3"
+     ]
     ]
    },
    "kutular": [
@@ -68,14 +88,42 @@
     "Deneysel olasılıkla bilinmeyeni tahmin de edebilirsin. Bir torbada 20 boncuk var ama renklerini göremiyorsun. Boncuğu her seferinde geri koyarak 100 çekiliş yaptığında 24 kez kırmızı, 76 kez mavi geldi. Kırmızı için göreli sıklık {kesir:24|100} = 0,24’tür ve {kesir:1|4}’e yakındır; bu yüzden torbadaki boncukların yaklaşık dörtte birinin, yani 5 kadarının kırmızı olduğunu tahmin edersin. Torbayı açıp saydığında 4 ya da 6 kırmızı boncuk da çıkabilir; deneysel tahmin kesin sayıyı değil, en akla yakın değeri verir."
    ],
    "tablo": {
-    "basliklar": ["Üst yüze gelen sayı", "Sıklık (600 atış)", "Göreli sıklık (yaklaşık)"],
+    "basliklar": [
+     "Üst yüze gelen sayı",
+     "Sıklık (600 atış)",
+     "Göreli sıklık (yaklaşık)"
+    ],
     "satirlar": [
-     ["1", "78", "%13"],
-     ["2", "79", "%13,2"],
-     ["3", "80", "%13,3"],
-     ["4", "78", "%13"],
-     ["5", "75", "%12,5"],
-     ["6", "210", "%35"]
+     [
+      "1",
+      "78",
+      "%13"
+     ],
+     [
+      "2",
+      "79",
+      "%13,2"
+     ],
+     [
+      "3",
+      "80",
+      "%13,3"
+     ],
+     [
+      "4",
+      "78",
+      "%13"
+     ],
+     [
+      "5",
+      "75",
+      "%12,5"
+     ],
+     [
+      "6",
+      "210",
+      "%35"
+     ]
     ]
    },
    "kutular": [
@@ -97,11 +145,31 @@
     "Basamaklar arasındaki ilişki virgülün solundakiyle aynıdır: her basamak sağındakinin 10 katıdır. 10 tane binde birlik bir yüzde birlik eder, 10 tane yüzde birlik bir onda birlik eder, 10 tane onda birlik de bir bütün eder. Bunu metre şeridinde görebilirsin: 1 metre 10 desimetre, 100 santimetre ve 1000 milimetredir; yani 1 dm = 0,1 m, 1 cm = 0,01 m ve 1 mm = 0,001 m."
    ],
    "tablo": {
-    "basliklar": ["Basamak", "Kesir", "Ondalık gösterim", "Okunuşu"],
+    "basliklar": [
+     "Basamak",
+     "Kesir",
+     "Ondalık gösterim",
+     "Okunuşu"
+    ],
     "satirlar": [
-     ["Onda birler", "{kesir:1|10}", "0,1", "onda bir"],
-     ["Yüzde birler", "{kesir:1|100}", "0,01", "yüzde bir"],
-     ["Binde birler", "{kesir:1|1000}", "0,001", "binde bir"]
+     [
+      "Onda birler",
+      "{kesir:1|10}",
+      "0,1",
+      "onda bir"
+     ],
+     [
+      "Yüzde birler",
+      "{kesir:1|100}",
+      "0,01",
+      "yüzde bir"
+     ],
+     [
+      "Binde birler",
+      "{kesir:1|1000}",
+      "0,001",
+      "binde bir"
+     ]
     ]
    },
    "kutular": [
@@ -124,12 +192,32 @@
     "Sıfırlar yer tutucudur, atılamaz. 0,205 sayısında 2 onda birler, 0 yüzde birler ve 5 binde birler basamağındadır; 5 rakamının basamak değeri {kesir:5|1000}’dir. Aradaki sıfırı silip 0,25 yazarsan 5 rakamı yüzde birler basamağına kayar ve değeri {kesir:5|100} olur; sayı değişir. Virgülün solundaki sıfır da tam kısmın olmadığını gösterir: 0,7 sayısında tam kısım yoktur, yalnız 7 onda birlik vardır."
    ],
    "tablo": {
-    "basliklar": ["Sayı", "7 rakamının basamağı", "Basamak değeri"],
+    "basliklar": [
+     "Sayı",
+     "7 rakamının basamağı",
+     "Basamak değeri"
+    ],
     "satirlar": [
-     ["7,2", "birler", "7"],
-     ["0,7", "onda birler", "{kesir:7|10} = 0,7"],
-     ["3,07", "yüzde birler", "{kesir:7|100} = 0,07"],
-     ["1,257", "binde birler", "{kesir:7|1000} = 0,007"]
+     [
+      "7,2",
+      "birler",
+      "7"
+     ],
+     [
+      "0,7",
+      "onda birler",
+      "{kesir:7|10} = 0,7"
+     ],
+     [
+      "3,07",
+      "yüzde birler",
+      "{kesir:7|100} = 0,07"
+     ],
+     [
+      "1,257",
+      "binde birler",
+      "{kesir:7|1000} = 0,007"
+     ]
     ]
    },
    "kutular": [
@@ -257,10 +345,22 @@
    "tur": "eslestir",
    "yonerge": "Ondalık gösterimleri çözümlenmiş hâlleriyle eşleştir.",
    "ciftler": [
-    ["0,35", "{kesir:3|10} + {kesir:5|100}"],
-    ["3,5", "3 + {kesir:5|10}"],
-    ["0,305", "{kesir:3|10} + {kesir:5|1000}"],
-    ["3,05", "3 + {kesir:5|100}"]
+    [
+     "0,35",
+     "{kesir:3|10} + {kesir:5|100}"
+    ],
+    [
+     "3,5",
+     "3 + {kesir:5|10}"
+    ],
+    [
+     "0,305",
+     "{kesir:3|10} + {kesir:5|1000}"
+    ],
+    [
+     "3,05",
+     "3 + {kesir:5|100}"
+    ]
    ]
   },
   {
