@@ -82,29 +82,12 @@ function izinKutusu(metin, dugme, tamam) {
   return kutu;
 }
 
-function facebookGoster(ayar) {
-  const adres = ayar.facebook?.adres;
-  if (!adres) return;
-  $('#fb-blok').hidden = false;
-  const alan = $('#fb-alan');
-  const yukle = () => {
-    const g = Math.min(500, alan.clientWidth || 500);
-    const p = new URLSearchParams({ href: adres, tabs: 'timeline', width: g, height: 600, small_header: 'true',
-      adapt_container_width: 'true', hide_cover: 'false', show_facepile: 'false' });
-    alan.replaceChildren(el('iframe', { src: `https://www.facebook.com/plugins/page.php?${p}`, title: 'Facebook sayfası',
-      loading: 'lazy', allow: 'encrypted-media', scrolling: 'no' }));
-  };
-  if (tercih.al('harici-fb')) yukle();
-  else alan.append(izinKutusu('Sayfa paylaşımları Facebook’tan yüklenir. Facebook çerez kullanabilir.', 'Facebook paylaşımlarını göster', () => { tercih.koy('harici-fb'); yukle(); }));
-}
-
 (async () => {
   const [{ ayar, dersler, icerikler }, yt, ig] = await Promise.all([ortakVeri, veri('youtube.json'), veri('instagram.json')]);
   siniflariGoster(dersler, icerikler);
   turSayilari(icerikler);
   videolariGoster(yt);
   instagramGoster(ig, ayar);
-  facebookGoster(ayar);
   const son = [yt?.guncelleme, ig?.guncelleme].filter(Boolean).sort().pop();
   if (son) $('#guncelleme').textContent = `Sosyal medya akışı son güncelleme: ${tarihBicim.format(new Date(son))}`;
 })();
