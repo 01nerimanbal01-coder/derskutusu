@@ -105,7 +105,7 @@ $$('[data-yil]').forEach((e) => { e.textContent = new Date().getFullYear(); });
   try { if (kitle) localStorage.setItem('dk-rol', kitle); } catch {}
   if (kitle) $$('#ana-menu a').forEach((a) => { if (a.getAttribute('href') === `/${kitle}.html`) a.setAttribute('aria-current', 'page'); });
   if (!/^\/(index\.html)?$/.test(location.pathname)) return;
-  const eski = { '#siniflar': '/ogrenci.html', '#dersler': '/ogrenci.html', '#ogretmen': '/ogretmen.html', '#kategoriler': '/icerikler.html' }[location.hash];
+  const eski = { '#siniflar': '/ogrenci.html', '#dersler': '/ogrenci.html', '#ogretmen': '/ogretmen.html', '#kategoriler': '/icerikler.html', '#icerikler': '/icerikler.html' }[location.hash];
   if (eski) { location.replace(eski); return; }
   let son = null;
   try { son = localStorage.getItem('dk-rol'); } catch {}

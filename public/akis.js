@@ -1,4 +1,4 @@
-// Ana sayfa: sınıf kartları, öğretmen köşesi sayıları, son eklenen içerikler ve sosyal medya akışları.
+// Ana sayfa: sınıf kartları, öğretmen köşesi sayıları ve sosyal medya akışları.
 // youtube.json ve instagram.json her gün araclar/akis_guncelle.py ile yenilenir (GitHub Actions).
 // Dışarıdan (YouTube, Instagram, Facebook) hiçbir şey ziyaretçi tıklamadan yüklenmez.
 
@@ -28,30 +28,6 @@ function turSayilari(icerikler) {
     e.textContent = n ? `${n} dosya` : 'Yakında';
     e.classList.toggle('yakinda-etiket', !n);
   });
-}
-
-function sonEklenenler(icerikler, dersler) {
-  const kartlar = $('#kartlar');
-  const liste = [...icerikler].sort((a, b) => String(b.tarih || '').localeCompare(String(a.tarih || ''))).slice(0, 6);
-  if (!liste.length) { kartlar.hidden = true; $('#icerik-yakinda').hidden = false; return; }
-  kartlar.replaceChildren(...liste.map((i) => icerikKarti(i, dersler)));
-}
-
-function icerikKarti(i, dersler) {
-  const dersAd = dersler?.dersler?.[i.ders] || i.ders;
-  const adres = i.dosya || i.baglanti;
-  return el('article', { sinif: 'kart', 'data-renk': window.Kesif?.category(i.tur).color || 'mavi' },
-    el('div', { sinif: 'ust-bilgi' },
-      i.sinif && el('span', { sinif: 'etiket' }, `${i.sinif}. sınıf`),
-      dersAd && el('span', { sinif: 'etiket tur' }, dersAd),
-      i.tur && el('span', { sinif: `etiket ${i.kitle === 'ogretmen' ? 'ogretmen' : 'tur'}` }, i.tur)),
-    el('h3', {}, i.baslik),
-    i.aciklama && el('p', {}, i.aciklama),
-    i.hazirla ? el('a', { sinif: 'ac', href: `/${i.hazirla}` }, 'Hazırla ve indir', simge('ok'))
-      : i.goruntule ? [el('a', { sinif: 'ac', href: `/${i.goruntule}` }, 'Aç', simge('ok')),
-        i.tur === 'Ders kitabı' && el('a', { sinif: 'ac', href: `/${i.goruntule}&yerel=1`, title: 'Kitabın bilgisayarınızdaki PDF dosyasını açar; internet beklenmez' }, 'Bilgisayardan aç')]
-      : adres && el('a', { sinif: 'ac', href: adres, target: i.dosya ? null : '_blank', rel: 'noopener', download: i.dosya ? '' : null },
-        i.dosya ? 'İndir' : 'Aç', simge('ok')));
 }
 
 function videolariGoster(v) {
@@ -126,7 +102,6 @@ function facebookGoster(ayar) {
   const [{ ayar, dersler, icerikler }, yt, ig] = await Promise.all([ortakVeri, veri('youtube.json'), veri('instagram.json')]);
   siniflariGoster(dersler, icerikler);
   turSayilari(icerikler);
-  sonEklenenler(icerikler, dersler);
   videolariGoster(yt);
   instagramGoster(ig, ayar);
   facebookGoster(ayar);
