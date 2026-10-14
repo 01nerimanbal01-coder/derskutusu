@@ -1,0 +1,408 @@
+{
+ "sinif": 6,
+ "ders": "fen-bilimleri",
+ "hafta": 5,
+ "tarih": "12-16 Ekim 2026",
+ "yayin_tarihi": "2026-10-14",
+ "unite": "Kuvvetin Etkisinde Hareket",
+ "konu": "Bileşke Kuvvet: Dengelenmiş ve Dengelenmemiş Kuvvetler",
+ "ciktilar": [
+  "FB.6.2.2. Dengelenmiş ve dengelenmemiş kuvvetlerin etkisi altındaki bir cismin hareketine yönelik deney yapabilme"
+ ],
+ "giris": "Geçen hafta bir cisme aynı doğrultuda etki eden kuvvetlerin yerine geçen tek kuvveti, yani bileşke kuvveti bulmayı ve okla çizmeyi öğrendik. Bu hafta bileşke kuvvetin sıfır olduğu ve olmadığı durumları, yani dengelenmiş ve dengelenmemiş kuvvetleri inceliyoruz. Bu kuvvetlerin cismin hareketini nasıl etkilediğini görmek için bir deney düzeneği tasarlayacak, ölçümlerimizi tabloya kaydedecek ve verileri yorumlayacağız.",
+ "bolumler": [
+  {
+   "baslik": "Bileşke kuvveti hatırlayalım",
+   "metin": [
+    "Bir cisme aynı doğrultuda birden fazla kuvvet etki ettiğinde bu kuvvetlerin yerine geçen tek kuvvete bileşke kuvvet ya da net kuvvet demiştik. Bileşke kuvvet R harfiyle gösterilir, büyüklüğü N (newton) birimiyle ölçülür. Kuvvetler aynı yöndeyse büyüklükler toplanır; zıt yöndeyse büyük değerden küçük değer çıkarılır ve bileşke kuvvet büyük kuvvetin yönünde olur.",
+    "Örneğin bir sandığa doğu yönünde 6 N ve 4 N büyüklüğünde iki kuvvet uygulanırsa R = 6 N + 4 N = 10 N olur ve bileşke kuvvet doğu yönündedir. Aynı sandığa doğu yönünde 6 N, batı yönünde 4 N uygulanırsa R = 6 N − 4 N = 2 N olur; yön yine doğudur. Peki doğu yönünde 6 N, batı yönünde 6 N uygulanırsa ne olur? R = 6 N − 6 N = 0 N bulunur. Bu hafta tam da bu sıfır sonucunun ne anlama geldiğini öğreneceğiz.",
+    "Kuvvetleri çizerken her kuvvet bir okla gösterilir; okun uzunluğu büyüklüğü, ucu yönü gösterir. Bileşke kuvvet sıfır değilse cismin üzerine R için de bir ok çizilir. Bileşke kuvvet sıfırsa çizilecek bir ok yoktur; bu durumu “R = 0 N” diye yazarız. Aşağıdaki tabloda birkaç durum için bileşke kuvvet hesaplanmıştır."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Uygulanan kuvvetler",
+     "İşlem",
+     "Bileşke kuvvet"
+    ],
+    "satirlar": [
+     [
+      "Doğuya 6 N ve doğuya 4 N",
+      "6 N + 4 N",
+      "Doğuya 10 N"
+     ],
+     [
+      "Doğuya 6 N ve batıya 4 N",
+      "6 N − 4 N",
+      "Doğuya 2 N"
+     ],
+     [
+      "Kuzeye 3 N ve güneye 7 N",
+      "7 N − 3 N",
+      "Güneye 4 N"
+     ],
+     [
+      "Doğuya 6 N ve batıya 6 N",
+      "6 N − 6 N",
+      "0 N"
+     ],
+     [
+      "Batıya 2 N, batıya 3 N ve doğuya 5 N",
+      "(2 N + 3 N) − 5 N",
+      "0 N"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Bileşke kuvvet kuralları",
+    "metin": "Aynı yönlü kuvvetlerde büyüklükler toplanır, yön değişmez. Zıt yönlü kuvvetlerde büyük değerden küçük değer çıkarılır, yön büyük kuvvetin yönüdür. Zıt yönlü kuvvetlerin büyüklükleri eşitse bileşke kuvvet 0 N olur."
+   }
+  },
+  {
+   "baslik": "Dengelenmiş kuvvetler",
+   "metin": [
+    "Bir cisme etki eden kuvvetlerin bileşkesi sıfırsa bu kuvvetlere dengelenmiş kuvvetler denir. Aynı doğrultuda, zıt yönlü ve eşit büyüklükteki iki kuvvet birbirini dengeler: biri cismi doğuya 5 N ile çekerken öteki batıya 5 N ile çekiyorsa R = 5 N − 5 N = 0 N olur. Kuvvetler cisme uygulanmaya devam eder, ama etkileri birbirini yok ettiği için cisim sanki hiç kuvvet uygulanmıyormuş gibi davranır.",
+    "Dengelenmiş kuvvetlerin etkisindeki bir cisim duruyorsa durmaya devam eder. Halat çekme oyununda iki takım da halatı eşit büyüklükte kuvvetle çektiğinde halatın ortasındaki işaret yerinden kımıldamaz; kuvvetler dengelenmiştir. Tavana asılı duran bir lambayı ipin yukarı doğru çekme kuvveti ile yer çekiminin aşağı doğru çekme kuvveti dengeler; lamba olduğu yerde asılı kalır.",
+    "Dengelenmiş kuvvetler hareket hâlindeki bir cismi de durdurmaz, hareketini değiştirmez. Düz bir yolda aynı çabuklukla, yönünü değiştirmeden ilerleyen bir bisikletliye etki eden kuvvetler dengelenmiştir: pedalla oluşturduğu ileri yönlü kuvvet, sürtünme ile hava direncinin geri yönlü kuvvetlerine eşittir. Yani dengelenmiş kuvvetler altındaki cisim ya durur ya da hareketini aynı biçimde sürdürür. Önümüzdeki hafta bu “aynı çabukluk” kavramını sürat adıyla ölçmeyi öğreneceğiz."
+   ],
+   "kutu": {
+    "tur": "tanim",
+    "baslik": "Dengelenmiş kuvvetler",
+    "metin": "Bir cisme etki eden kuvvetlerin bileşkesi 0 N ise kuvvetler dengelenmiştir. Dengelenmiş kuvvetlerin etkisindeki cisim duruyorsa durmaya devam eder, hareket ediyorsa hareketini aynı yönde ve aynı çabuklukla sürdürür."
+   },
+   "kutular": [
+    {
+     "tur": "bilgi",
+     "baslik": "Kuvvetsiz hareket olur mu?",
+     "metin": "Aristoteles’ten İbni Sina’ya kadar pek çok düşünür, bir cismin hareketini sürdürmesi için ona sürekli bir kuvvet uygulanması gerektiğini düşünmüştür. Bugün biliyoruz ki üzerindeki kuvvetler dengelenmiş olan hareketli bir cisim hareketini kendiliğinden sürdürür; onu yavaşlatan, sürtünme gibi dengelenmemiş kuvvetlerdir. Bilimsel bilgi yeni gözlem ve deneylerle zamanla gelişir."
+    }
+   ]
+  },
+  {
+   "baslik": "Dengelenmemiş kuvvetler",
+   "metin": [
+    "Bir cisme etki eden kuvvetlerin bileşkesi sıfırdan farklıysa bu kuvvetlere dengelenmemiş kuvvetler denir. Zıt yönlü iki kuvvetten biri ötekinden büyükse, aynı yönlü kuvvetler bir araya gelmişse ya da cisme tek bir kuvvet etki ediyorsa kuvvetler dengelenmemiştir. Bu durumda bileşke kuvvetin büyüklüğü sıfır değildir ve belirli bir yönü vardır.",
+    "Dengelenmemiş kuvvetler cismin hareketini değiştirir. Duran bir cisim bileşke kuvvetin yönünde harekete geçer: halat çekmede bir takım 120 N, öteki takım 100 N ile çekiyorsa R = 120 N − 100 N = 20 N olur ve halat, 120 N ile çeken takıma doğru kayar. Hareket eden bir cisim ise bileşke kuvvet hareket yönündeyse hızlanır, hareket yönüne zıtsa yavaşlar; bileşke kuvvet başka bir doğrultudaysa cismin yönü değişir.",
+    "Bileşke kuvvet ne kadar büyükse etkisi de o kadar belirgindir. Aynı arabayı 20 N'lık bileşke kuvvet yerine 60 N'lık bileşke kuvvetle itersek araba daha çabuk harekete geçer ve daha çabuk hızlanır. Fren yapan bir otomobili yavaşlatan, duran bir topu yuvarlanmaya başlatan ve rüzgârın savurduğu yaprağın yönünü değiştiren hep dengelenmemiş kuvvetlerdir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Özellik",
+     "Dengelenmiş kuvvetler",
+     "Dengelenmemiş kuvvetler"
+    ],
+    "satirlar": [
+     [
+      "Bileşke kuvvet",
+      "0 N",
+      "0 N'dan büyük, belirli bir yönde"
+     ],
+     [
+      "Duran cisim",
+      "Durmaya devam eder",
+      "Bileşke kuvvetin yönünde harekete geçer"
+     ],
+     [
+      "Hareket eden cisim",
+      "Aynı yönde, aynı çabuklukla hareketini sürdürür",
+      "Hızlanır, yavaşlar ya da yön değiştirir"
+     ],
+     [
+      "Örnek",
+      "Berabere kalan halat çekme, tavanda asılı lamba",
+      "Kazanan tarafa kayan halat, fren yapan araba"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Hareketi değiştiren kuvvet",
+    "metin": "Bir cismin hareketinin başlaması, hızlanması, yavaşlaması ya da yön değiştirmesi için cisme dengelenmemiş bir kuvvet etki etmelidir. Bileşke kuvvet ne kadar büyükse hareketteki değişim o kadar çabuk olur."
+   }
+  },
+  {
+   "baslik": "Günlük yaşamdan örnekler",
+   "metin": [
+    "Çevremizde dengelenmiş ve dengelenmemiş kuvvetlere her gün rastlarız. Masanın üzerinde duran kitap, rafta duran vazo ya da tavandan sarkan lamba dengelenmiş kuvvetlerin etkisindedir; bu yüzden oldukları yerde kalırlar. Düz bir yolda aynı çabuklukla giden tren ya da paraşütü açıldıktan sonra aynı çabuklukla alçalan paraşütçü de dengelenmiş kuvvetlerin etkisindedir.",
+    "Dengelenmemiş kuvvetlerin olduğu yerde hareket değişir. Başlama düdüğüyle fırlayan koşucu, ağaçtan düşen elma, fren yapan bisiklet ve kaleciye çarpıp geri dönen top bu kuvvetlerin etkisindedir. Market arabasını ittiğimizde araba hızlanır; itmeyi bırakınca sürtünme kuvveti onu yavaşlatıp durdurur. Her iki durumda da kuvvetler dengelenmemiştir.",
+    "Bir olayı incelerken şu soruları sorabiliriz: Cisme hangi kuvvetler etki ediyor? Bu kuvvetlerin bileşkesi sıfır mı? Cismin hareketi değişiyor mu? Hareket değişmiyorsa kuvvetler dengelenmiş, değişiyorsa dengelenmemiştir. Aşağıdaki tablo bazı örnekleri bu sorulara göre sınıflıyor."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Olay",
+     "Kuvvetler",
+     "Cismin hareketi"
+    ],
+    "satirlar": [
+     [
+      "Masada duran kitap",
+      "Dengelenmiş",
+      "Durmaya devam eder"
+     ],
+     [
+      "Berabere giden halat çekme",
+      "Dengelenmiş",
+      "Halat kımıldamaz"
+     ],
+     [
+      "Aynı çabuklukla düz yolda giden tren",
+      "Dengelenmiş",
+      "Hareketini aynı biçimde sürdürür"
+     ],
+     [
+      "Başlama çizgisinden fırlayan koşucu",
+      "Dengelenmemiş",
+      "Harekete geçer ve hızlanır"
+     ],
+     [
+      "Fren yapan bisiklet",
+      "Dengelenmemiş",
+      "Yavaşlar ve durur"
+     ],
+     [
+      "Kaleciye çarpıp geri dönen top",
+      "Dengelenmemiş",
+      "Yön değiştirir"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Poster hazırlarken",
+    "metin": "Günlük yaşamdan dengelenmiş ve dengelenmemiş kuvvet örneklerini tanıtan bir poster hazırlarken her örnek için cisme etki eden kuvvetleri oklarla çizelim, bileşke kuvveti yazalım ve cismin hareketinin değişip değişmediğini belirtelim."
+   }
+  },
+  {
+   "baslik": "Deney düzeneği tasarlayalım",
+   "metin": [
+    "Dengelenmiş ve dengelenmemiş kuvvetlerin cismin hareketine etkisini bir deneyle gösterebiliriz. Deney için tekerlekli bir oyuncak araba, iki dinamometre, ip, cetvel ya da metre ve bir kronometre yeter. Dinamometre, daha önce tanıdığımız kuvvet ölçme aracıdır; içindeki yay gerildikçe kaç N'lık kuvvet uygulandığını gösterir.",
+    "Arabanın iki ucuna ip bağlayıp iplerin uçlarına birer dinamometre takarız. İki arkadaşımız dinamometreleri aynı doğrultuda, zıt yönlere çeker. Birinci denemede ikisi de 2 N ile çeker; ikinci denemede biri 2 N, öteki 4 N; üçüncü denemede biri 2 N, öteki 6 N ile çeker. Her denemede dinamometrelerin gösterdiği değerleri, arabanın hareket edip etmediğini, ettiyse hangi yöne gittiğini ve 2 saniyede ne kadar yol aldığını kaydederiz.",
+    "Bir deneyde değişkenleri belirlemek gerekir. Bu deneyde değiştirdiğimiz şey, yani bağımsız değişken, kuvvetlerin büyüklükleri arasındaki farktır. Buna bağlı olarak ölçtüğümüz şey, yani bağımlı değişken, arabanın hareketidir. Araba, zemin ve iplerin doğrultusu her denemede aynı tutulur; bunlar kontrol edilen değişkenlerdir. Her denemeyi birkaç kez tekrar etmek sonuçların güvenilirliğini artırır."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Deneyde dikkat edilecekler",
+    "metin": "İpler aynı doğrultuda ve zemine paralel çekilmeli; yoksa kuvvetler aynı doğrultuda olmaz ve bileşke kuvvet hesabımız yanlış çıkar. Dinamometreyi okurken gözümüz ölçeğin tam karşısında olmalı ve dinamometrenin ölçebileceğinden büyük kuvvet uygulanmamalı."
+   },
+   "kutular": [
+    {
+     "tur": "ipucu",
+     "baslik": "Başka bir düzenek",
+     "metin": "Dinamometre yoksa arabanın iki ucundaki ipleri masanın kenarlarındaki makaralardan geçirip uçlarına özdeş ağırlıklar asabiliriz. İki tarafa eşit sayıda ağırlık asıldığında kuvvetler dengelenir; bir tarafa fazladan ağırlık eklendiğinde dengelenmemiş olur."
+    }
+   ]
+  },
+  {
+   "baslik": "Ölçme, veri kaydı ve analiz",
+   "metin": [
+    "Deneyde elde ettiğimiz verileri bir tabloya kaydederiz. Aşağıdaki tablo, dört denemede dinamometrelerin gösterdiği değerleri, hesapladığımız bileşke kuvveti ve gözlediğimiz hareketi bir arada gösteriyor. Bileşke kuvveti her deneme için geçen haftaki kuralla hesaplarız: zıt yönlü kuvvetlerde büyük değerden küçük değer çıkarılır.",
+    "Verileri yorumlayalım. Birinci denemede kuvvetler eşit olduğundan R = 2 N − 2 N = 0 N bulunur ve araba yerinden kımıldamaz; kuvvetler dengelenmiştir. İkinci denemede R = 4 N − 2 N = 2 N olur; araba 4 N ile çeken arkadaşımıza doğru, yani bileşke kuvvetin yönünde harekete geçer ve 2 saniyede yaklaşık 40 cm yol alır. Üçüncü denemede R = 6 N − 2 N = 4 N olur; araba yine büyük kuvvetin yönünde hareket eder, ama aynı sürede yaklaşık 80 cm yol alır. Dördüncü denemede kuvvetler 5 N ve 5 N olduğundan R = 0 N olur ve araba yine hareket etmez.",
+    "Buradan iki sonuç çıkarırız. Birincisi, bileşke kuvvet sıfırsa duran cisim harekete geçmez; bileşke kuvvet sıfırdan farklıysa cisim bileşke kuvvetin yönünde harekete geçer. İkincisi, bileşke kuvvet büyüdükçe cisim aynı sürede daha çok yol alır, yani daha çabuk hızlanır. Deneyin sonunda sonuçlarımızı başlangıçtaki tahminlerimizle karşılaştırır, beklenmedik bir sonuç varsa düzeneği kontrol edip denemeyi tekrarlarız."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Deneme",
+     "Uygulanan kuvvetler",
+     "Bileşke kuvvet",
+     "Gözlenen hareket"
+    ],
+    "satirlar": [
+     [
+      "1",
+      "Batıya 2 N, doğuya 2 N",
+      "0 N",
+      "Araba hareket etmedi"
+     ],
+     [
+      "2",
+      "Batıya 2 N, doğuya 4 N",
+      "Doğuya 2 N",
+      "Doğuya hareket etti; 2 s'de yaklaşık 40 cm yol aldı"
+     ],
+     [
+      "3",
+      "Batıya 2 N, doğuya 6 N",
+      "Doğuya 4 N",
+      "Doğuya hareket etti; 2 s'de yaklaşık 80 cm yol aldı"
+     ],
+     [
+      "4",
+      "Batıya 5 N, doğuya 5 N",
+      "0 N",
+      "Araba hareket etmedi"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Deneyden çıkan sonuç",
+    "metin": "Bileşke kuvvet 0 N ise duran cisim harekete geçmez. Bileşke kuvvet 0 N'dan büyükse cisim bileşke kuvvetin yönünde harekete geçer ve bileşke kuvvet büyüdükçe daha çabuk hızlanır."
+   },
+   "kutular": [
+    {
+     "tur": "dikkat",
+     "baslik": "Fark önemli, büyüklük değil",
+     "metin": "Dördüncü denemede kuvvetler 2 N değil 5 N olduğu hâlde araba hareket etmedi. Cismin hareketini belirleyen, kuvvetlerin tek tek büyüklüğü değil bileşkesidir."
+    }
+   ]
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Bir kutuya doğu yönünde 7 N, batı yönünde 7 N büyüklüğünde iki kuvvet uygulanıyor. Bileşke kuvveti bulunuz. Kuvvetler dengelenmiş midir? Duran kutu ne olur?",
+   "cevap": "Kuvvetler zıt yönlü olduğundan büyük değerden küçük değer çıkarılır: R = 7 N − 7 N = 0 N. Bileşke kuvvet sıfır olduğu için kuvvetler dengelenmiştir. Dengelenmiş kuvvetlerin etkisindeki duran bir cisim durmaya devam eder; kutu yerinden kımıldamaz."
+  },
+  {
+   "soru": "Bir sandığa doğu yönünde 9 N, batı yönünde 4 N büyüklüğünde iki kuvvet uygulanıyor. Kuvvetler dengelenmiş midir? Başlangıçta duran sandık nasıl hareket eder?",
+   "cevap": "R = 9 N − 4 N = 5 N bulunur; bileşke kuvvet doğu yönünde 5 N'dır. Bileşke kuvvet sıfırdan farklı olduğu için kuvvetler dengelenmemiştir. Duran sandık bileşke kuvvetin yönünde, yani doğuya doğru harekete geçer."
+  },
+  {
+   "soru": "Halat çekme oyununda A takımı halatı 150 N, B takımı 130 N büyüklüğünde kuvvetle çekiyor. Halat hangi tarafa kayar? B takımına halatı 25 N ile çekebilen bir öğrenci katılırsa sonuç değişir mi?",
+   "cevap": "Kuvvetler zıt yönlü olduğundan R = 150 N − 130 N = 20 N bulunur; bileşke kuvvet A takımı yönündedir ve halat A takımına doğru kayar. Yeni öğrenci katılınca B takımının kuvveti 130 N + 25 N = 155 N olur. Şimdi R = 155 N − 150 N = 5 N ve yön B takımı yönündedir; halat bu kez B takımına doğru kayar. Kuvvetler hiçbir durumda dengelenmemiştir."
+  },
+  {
+   "soru": "Bir öğrenci “Masanın üzerinde duran kitaba hiçbir kuvvet etki etmiyor, bu yüzden duruyor.” diyor. Öğrencinin düşüncesini değerlendiriniz.",
+   "cevap": "Öğrencinin düşüncesi doğru değildir. Kitaba kuvvet etki eder: yer çekimi kitabı aşağı doğru çeker, masa da kitaba yukarı doğru eşit büyüklükte bir kuvvet uygular. Bu iki kuvvet zıt yönlü ve eşit büyüklükte olduğundan bileşkeleri 0 N'dır; yani kuvvetler dengelenmiştir. Kitap kuvvet etki etmediği için değil, kuvvetler dengelendiği için durmaya devam eder."
+  },
+  {
+   "soru": "Bir cisme batı yönünde 3 N ve 4 N, doğu yönünde 8 N büyüklüğünde üç kuvvet uygulanıyor. Kuvvetler dengelenmiş midir? Kuvvetlerin dengelenmesi için cisme hangi yönde, kaç N'lık bir kuvvet daha uygulanmalıdır?",
+   "cevap": "Önce aynı yöndeki kuvvetler toplanır: batıya 3 N + 4 N = 7 N. Doğuya 8 N vardır. R = 8 N − 7 N = 1 N olur ve bileşke kuvvet doğu yönündedir; kuvvetler dengelenmemiştir. Bileşkenin 0 N olması için doğu yönündeki fazlalığın karşılanması gerekir: cisme batı yönünde 1 N'lık bir kuvvet daha uygulanırsa batıya 8 N, doğuya 8 N olur ve kuvvetler dengelenir."
+  },
+  {
+   "soru": "Bir grup, oyuncak arabanın iki ucuna bağlı dinamometreleri zıt yönlere çekerek üç deneme yapıyor: 1. denemede 3 N ve 3 N, 2. denemede 3 N ve 5 N, 3. denemede 3 N ve 7 N. Gruptan bir öğrenci “Üçüncü denemede araba ikinci denemeye göre daha az yol alır.” diye tahmin ediyor. Hangi denemede kuvvetler dengelenmiştir? Öğrencinin tahmini doğru mudur?",
+   "cevap": "Bileşke kuvvetler sırayla 3 N − 3 N = 0 N, 5 N − 3 N = 2 N ve 7 N − 3 N = 4 N bulunur. Yalnızca birinci denemede bileşke kuvvet sıfırdır; kuvvetler dengelenmiştir ve araba hareket etmez. İkinci ve üçüncü denemelerde araba büyük kuvvetin yönünde harekete geçer. Üçüncü denemede bileşke kuvvet daha büyük olduğundan araba daha çabuk hızlanır ve aynı sürede daha çok yol alır. Öğrencinin tahmini yanlıştır."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Aşağıdaki kuvvet çiftlerinden hangisi bir cisme uygulandığında kuvvetler dengelenmiş olur?",
+   "secenekler": [
+    "Doğuya 5 N ve doğuya 5 N",
+    "Doğuya 5 N ve batıya 5 N",
+    "Doğuya 8 N ve batıya 5 N",
+    "Kuzeye 5 N ve güneye 8 N"
+   ],
+   "dogru": 1,
+   "aciklama": "Kuvvetlerin dengelenmesi için zıt yönlü ve eşit büyüklükte olmaları gerekir; doğuya 5 N ve batıya 5 N için R = 0 N olur. Aynı yönlü iki kuvvetin bileşkesi 10 N, öteki çiftlerin bileşkesi 3 N'dır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Hareket hâlindeki bir cisme etki eden kuvvetler dengelenmiştir. Bu cisim için aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Hemen durur.",
+    "Giderek yavaşlar ve bir süre sonra durur.",
+    "Hareketini aynı yönde ve aynı çabuklukla sürdürür.",
+    "Bileşke kuvvetin yönünde hızlanır."
+   ],
+   "dogru": 2,
+   "aciklama": "Dengelenmiş kuvvetler hareketi değiştirmez; hareket eden cisim hareketini aynı yönde ve aynı çabuklukla sürdürür. Durması, yavaşlaması ya da hızlanması için dengelenmemiş bir kuvvet gerekir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Halat çekme oyununda A takımı halatı 200 N, B takımı 180 N ile çekiyor. Aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Bileşke kuvvet 20 N'dır ve halat A takımına doğru kayar.",
+    "Bileşke kuvvet 380 N'dır ve halat A takımına doğru kayar.",
+    "Bileşke kuvvet 20 N'dır ve halat B takımına doğru kayar.",
+    "Kuvvetler dengelenmiştir ve halat kımıldamaz."
+   ],
+   "dogru": 0,
+   "aciklama": "Zıt yönlü kuvvetlerde büyük değerden küçük değer çıkarılır: R = 200 N − 180 N = 20 N. Bileşke kuvvet büyük kuvvetin, yani A takımının yönündedir; kuvvetler dengelenmemiştir ve halat A takımına doğru kayar."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadeler doğru mu, yanlış mı?",
+   "ifadeler": [
+    {
+     "metin": "Bileşke kuvveti sıfır olan bir cisme hiçbir kuvvet etki etmiyordur.",
+     "dogru": false,
+     "aciklama": "Cisme kuvvetler etki edebilir; bileşkenin sıfır olması bu kuvvetlerin birbirini dengelediğini gösterir."
+    },
+    {
+     "metin": "Dengelenmemiş kuvvetlerin etkisindeki duran bir cisim, bileşke kuvvetin yönünde harekete geçer.",
+     "dogru": true,
+     "aciklama": "Bileşke kuvvet sıfırdan farklıysa duran cisim bileşke kuvvetin yönünde harekete geçer."
+    },
+    {
+     "metin": "Zıt yönlü ve eşit büyüklükteki iki kuvvet birbirini dengeler.",
+     "dogru": true,
+     "aciklama": "Büyüklükler eşit olduğundan fark sıfırdır; bileşke kuvvet 0 N olur ve kuvvetler dengelenmiş olur."
+    },
+    {
+     "metin": "Cisme uygulanan kuvvetler çok büyükse kuvvetler kesinlikle dengelenmemiştir.",
+     "dogru": false,
+     "aciklama": "Dengelenmeyi belirleyen büyüklük değil bileşkedir; 500 N ve 500 N büyüklüğünde zıt yönlü iki kuvvet de birbirini dengeler."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Olayları, cisme etki eden kuvvetlerin durumu ve cismin hareketiyle eşleştiriniz.",
+   "ciftler": [
+    [
+     "Tavana asılı lamba",
+     "Dengelenmiş kuvvetler; cisim durmaya devam eder"
+    ],
+    [
+     "Fren yapan otomobil",
+     "Dengelenmemiş kuvvetler; cisim yavaşlar"
+    ],
+    [
+     "Başlama düdüğüyle fırlayan koşucu",
+     "Dengelenmemiş kuvvetler; cisim harekete geçip hızlanır"
+    ],
+    [
+     "Düz yolda aynı çabuklukla giden tren",
+     "Dengelenmiş kuvvetler; cisim hareketini aynı biçimde sürdürür"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Bileşkesi sıfır olan kuvvetlere ___ kuvvetler denir.",
+     "cevap": "dengelenmiş"
+    },
+    {
+     "metin": "Dengelenmemiş kuvvetlerin etkisindeki duran bir cisim, ___ kuvvetin yönünde harekete geçer.",
+     "cevap": "bileşke"
+    },
+    {
+     "metin": "Deneyde kuvvetlerin büyüklüğünü ölçmek için ___ kullanılır.",
+     "cevap": "dinamometre"
+    }
+   ],
+   "fazla": [
+    "dengelenmemiş"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir grup, oyuncak arabanın iki ucuna bağlı dinamometreleri zıt yönlere çekiyor. İki dinamometre de 3 N gösterdiği hâlde araba yavaşça bir tarafa doğru hareket ediyor. Bu durumun olası nedenlerini bulunuz ve deneyi nasıl düzelteceğinizi açıklayınız.",
+   "ipuclari": [
+    "Kuvvetler gerçekten eşit ve zıt yönlüyse bileşke kuvvet kaç N olmalıdır?",
+    "İpler aynı doğrultuda ve zemine paralel mi? Dinamometreler aynı anda ve doğru biçimde mi okundu?"
+   ],
+   "cevap": "İki kuvvet gerçekten eşit büyüklükte ve zıt yönlü olsaydı R = 3 N − 3 N = 0 N olur, kuvvetler dengelenir ve araba hareket etmezdi. Araba hareket ettiğine göre kuvvetler aslında dengelenmemiştir. Olası nedenler: ipler aynı doğrultuda ya da zemine paralel çekilmemiş olabilir; dinamometreler aynı anda okunmamış ya da yanlış okunmuş olabilir; dinamometrelerden birinin sıfır ayarı bozuk olabilir; zemin eğik olabilir. Düzeltmek için ipleri aynı doğrultuda ve zemine paralel tutar, dinamometrelerin sıfır ayarını kontrol eder, değerleri aynı anda okur, düz bir zemin seçer ve denemeyi tekrarlarız."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir öğrenci “Dengelenmiş kuvvetlerin etkisindeki bir cisim kesinlikle hareketsizdir.” diyor. Düz bir yolda aynı çabuklukla, yönünü değiştirmeden ilerleyen bir bisikletli örneğini kullanarak bu düşünceyi değerlendiriniz. Bisikletlinin durması için ne gerekir?",
+   "ipuclari": [
+    "Bisikletliye hangi yönlerde kuvvetler etki eder? Hareketi değişiyor mu?",
+    "Dengelenmiş kuvvetler hareketi değiştirir mi?"
+   ],
+   "cevap": "Öğrencinin düşüncesi doğru değildir. Dengelenmiş kuvvetler hareketi değiştirmez: duran cisim durmaya devam eder, hareket eden cisim hareketini sürdürür. Bisikletliye pedalla oluşturduğu ileri yönlü kuvvet ile sürtünme ve hava direncinin geri yönlü kuvvetleri etki eder. Bisikletli aynı çabuklukla ve aynı yönde ilerlediğine göre bu kuvvetler eşit büyüklüktedir ve bileşkeleri 0 N'dır; yani kuvvetler dengelenmiş olduğu hâlde cisim hareketlidir. Bisikletlinin durması için hareketini değiştirecek dengelenmemiş bir kuvvet, örneğin fren kuvveti gerekir."
+  }
+ ],
+ "ozet": [
+  "Bir cisme etki eden kuvvetlerin bileşkesi 0 N ise kuvvetler dengelenmiş, 0 N'dan farklıysa dengelenmemiştir; zıt yönlü ve eşit büyüklükteki kuvvetler birbirini dengeler.",
+  "Dengelenmiş kuvvetlerin etkisindeki cisim duruyorsa durmaya devam eder, hareket ediyorsa aynı yönde ve aynı çabuklukla hareketini sürdürür.",
+  "Dengelenmemiş kuvvetler hareketi değiştirir: duran cisim bileşke kuvvetin yönünde harekete geçer; hareket eden cisim hızlanır, yavaşlar ya da yön değiştirir.",
+  "Cismin hareketini kuvvetlerin tek tek büyüklüğü değil bileşkesi belirler; bileşke kuvvet büyüdükçe hareketteki değişim daha çabuk olur.",
+  "Deneyde kuvvetler dinamometreyle ölçülür ve veriler tabloya kaydedilir; bağımsız değişken kuvvetler arasındaki fark, bağımlı değişken cismin hareketidir."
+ ]
+}
