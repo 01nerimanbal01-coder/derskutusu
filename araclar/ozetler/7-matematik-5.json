@@ -1,0 +1,373 @@
+{
+ "sinif": 7,
+ "ders": "matematik",
+ "hafta": 5,
+ "tarih": "12-16 Ekim 2026",
+ "yayin_tarihi": "2026-10-14",
+ "unite": "Sayılar ve Nicelikler (1)",
+ "konu": "Rasyonel Sayılarda Karşılaştırma ve Sıralama: Farklı Gösterimler ve Sayı Doğrusu",
+ "ciktilar": [
+  "MAT.7.1.3. Rasyonel sayıların karşılaştırma ve sıralama ilişkilerini yorumlayabilme"
+ ],
+ "giris": "Geçen hafta rasyonel sayıları sayı doğrusunda yaklaşık yerlerine koyup soldan sağa okuyarak sıraladın; pozitif, negatif ve sıfırı işaretlerine göre karşılaştırdın. Bu hafta karşılaştırmayı sembollerle yazacak, kesir, ondalık ve tam sayı karışık verilen sayıları ortak bir gösterime çevirerek sıralayacak ve sayı doğrusunda tam yerlerini bulacaksın. İki rasyonel sayı arasına yeni rasyonel sayılar yazmayı ve negatif sayılarda sık düşülen sıralama tuzaklarını da öğreneceksin.",
+ "bolumler": [
+  {
+   "baslik": "Karşılaştırmayı sembollerle yazmak",
+   "metin": [
+    "İki rasyonel sayıyı karşılaştırdığında aralarındaki ilişkiyi bir sembolle yazarsın. Küçüktür sembolü “<” ile −2 < {kesir:1|2} yazmak, sayı doğrusunda −2’nin {kesir:1|2}’nin solunda olduğunu söyler. Sembolün sivri ucu küçük sayıya, açık tarafı büyük sayıya bakar. Üç ya da daha fazla sayıyı da zincir gibi art arda yazabilirsin: −3 < −{kesir:1|2} < 0 < 1,2.",
+    "Aynı ilişkiyi büyük sayıdan başlayarak büyüktür sembolü “>” ile yazarsın: {kesir:1|2} > −2 ve 1,2 > 0 > −{kesir:1|2} > −3. Küçükten büyüğe sıralama ile büyükten küçüğe sıralama aynı bilgiyi verir; yalnızca okuma yönü değişir. Hangi sembolü kullanırsan kullan, açık taraf her zaman sayı doğrusunda daha sağdaki sayıya dönüktür.",
+    "Aynı noktayı gösteren farklı gösterimler ise eşittir sembolüyle yazılır: {kesir:3|4} = 0,75 = {kesir:6|8} ve −{kesir:5|2} = −2,5. Sembolik ifadeyi sayı doğrusu üzerinde kendi cümlelerinle de açıklayabilmelisin: “−3 küçüktür −{kesir:1|2} yazdım; çünkü sayı doğrusunda −3 daha solda kalıyor.” Gerekçeni söylemek hem hatanı bulmanı hem de arkadaşına anlatmanı kolaylaştırır."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Sembol",
+     "Okunuşu",
+     "Sayı doğrusundaki anlamı",
+     "Örnek"
+    ],
+    "satirlar": [
+     [
+      "<",
+      "küçüktür",
+      "Soldaki sayı sağdakinin solundadır.",
+      "−{kesir:7|4} < −1"
+     ],
+     [
+      ">",
+      "büyüktür",
+      "Soldaki sayı sağdakinin sağındadır.",
+      "0,3 > −{kesir:9|10}"
+     ],
+     [
+      "=",
+      "eşittir",
+      "İki gösterim aynı noktayı gösterir.",
+      "−{kesir:3|5} = −0,6"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "ipucu",
+    "metin": "Sembolün açık tarafı büyük sayıya bakar. Yönü şaşırırsan sayıları sayı doğrusuna koy; sağdaki sayı büyüktür ve sembolün açık tarafı ona dönük olmalıdır."
+   }
+  },
+  {
+   "baslik": "Paydaları eşitleyerek kesirleri karşılaştırmak",
+   "metin": [
+    "Paydaları eşit iki pozitif kesirden payı büyük olan daha büyüktür; çünkü bütün aynı büyüklükteki parçalara bölünmüştür ve daha çok parça alınmıştır: {kesir:5|9} > {kesir:2|9}. Paydalar farklıysa önce kesirleri paydaların ortak katında genişletirsin. {kesir:2|3} ile {kesir:3|4} için ortak payda 12’dir: {kesir:2|3} = {kesir:8|12} ve {kesir:3|4} = {kesir:9|12} olduğundan {kesir:3|4} > {kesir:2|3} bulunur.",
+    "Payları eşit pozitif kesirlerde ise paydası büyük olan daha küçüktür; çünkü bütün daha çok parçaya bölündüğünde her parça küçülür: {kesir:3|5} > {kesir:3|8}. Bu kuralı sayı doğrusunda da görebilirsin; {kesir:3|8}, {kesir:3|5}’in solunda, sıfıra daha yakın bir yerdedir.",
+    "Negatif kesirlerde sıralama tersine döner; çünkü negatif sayılarda sıfırdan uzaklaşan sayı küçülür. −{kesir:2|3} ile −{kesir:3|4} sayılarını karşılaştırmak için önce pozitiflerine bakarsın: {kesir:3|4}, {kesir:2|3}’ten büyüktür. Pozitifi büyük olan negatif sayı sıfırdan daha uzaktır, bu yüzden daha küçüktür: −{kesir:3|4} < −{kesir:2|3}. Aynı nedenle −{kesir:3|5} < −{kesir:3|8} olur."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Durum",
+     "Pozitif kesirlerde",
+     "Negatif kesirlerde"
+    ],
+    "satirlar": [
+     [
+      "Paydalar eşit",
+      "Payı büyük olan büyüktür: {kesir:5|9} > {kesir:2|9}",
+      "Payı büyük olan küçüktür: −{kesir:5|9} < −{kesir:2|9}"
+     ],
+     [
+      "Paylar eşit",
+      "Paydası büyük olan küçüktür: {kesir:3|8} < {kesir:3|5}",
+      "Paydası büyük olan büyüktür: −{kesir:3|8} > −{kesir:3|5}"
+     ],
+     [
+      "Paydalar farklı",
+      "Paydalar eşitlenir: {kesir:8|12} < {kesir:9|12}",
+      "Pozitifleri karşılaştırılır, sıra ters çevrilir: −{kesir:8|12} > −{kesir:9|12}"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "kural",
+    "metin": "Pozitif kesirlerde payda eşitken payı büyük olan, pay eşitken paydası küçük olan daha büyüktür. Negatif kesirlerde bu sıralama tersine döner; önce pozitiflerini sırala, sonra sırayı ters çevir."
+   }
+  },
+  {
+   "baslik": "Kesir, ondalık ve tam sayı bir arada",
+   "metin": [
+    "Sıralanacak sayılar kesir, ondalık ve tam sayı olarak karışık verildiğinde önce hepsini aynı gösterime çevirirsin. Paydası 2, 4, 5, 8, 10 gibi sayılardan oluşan kesirler sonlu ondalık gösterime kolayca çevrildiğinden genellikle ondalık gösterim daha pratiktir. Tam sayıları da ondalık biçimde düşünebilirsin: −1 = −1,0 ve 2 = 2,00. Devirli ondalığa dönüşen kesirleri ise ya devirli biçimiyle karşılaştırır ya da öbür sayıları kesre çevirirsin.",
+    "Şu beş sayıyı sırala: −1,4; −{kesir:3|2}; {kesir:4|5}; 0,7 ve −1. Ondalık gösterimleri −1,4; −1,5; 0,8; 0,7 ve −1,0’dır. Negatifleri sıfırdan uzak olandan başlayarak, pozitifleri ise küçükten büyüğe yazarsan −1,5 < −1,4 < −1,0 < 0,7 < 0,8 bulunur. Sonucu verilen gösterimlerle yazarsın: −{kesir:3|2} < −1,4 < −1 < 0,7 < {kesir:4|5}.",
+    "Ondalık gösterimleri karşılaştırırken virgülden sonraki rakam sayısına aldanma; 0,7 ile 0,65’i karşılaştırmak için 0,7’yi 0,70 olarak yaz ve 0,70 > 0,65 olduğunu gör. Devirli bir gösterimle sonlu bir gösterimi karşılaştırırken birkaç basamak açarsın: {kesir:1|3} = 0,333… sayısı 0,3’ten büyüktür; çünkü 0,333… > 0,300’dür."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Sayı",
+     "Ondalık gösterimi",
+     "Kesir gösterimi"
+    ],
+    "satirlar": [
+     [
+      "{kesir:3|4}",
+      "0,75",
+      "{kesir:75|100}"
+     ],
+     [
+      "−{kesir:7|5}",
+      "−1,4",
+      "−{kesir:14|10}"
+     ],
+     [
+      "2",
+      "2,0",
+      "{kesir:2|1}"
+     ],
+     [
+      "{kesir:1|3}",
+      "0,333… (devirli)",
+      "{kesir:1|3}"
+     ],
+     [
+      "−0,125",
+      "−0,125",
+      "−{kesir:1|8}"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "dikkat",
+    "metin": "Ondalık gösterimde rakamı çok olan sayı büyük olmak zorunda değildir: 0,7 sayısı 0,65’ten büyük, −0,8 sayısı −0,75’ten küçüktür. Basamak sayısını sıfır ekleyerek eşitle, sonra karşılaştır."
+   },
+   "kutular": [
+    {
+     "tur": "ipucu",
+     "metin": "Paydası 10’un bir kuvvetine genişletilebilen kesirleri ondalığa çevir. {kesir:1|3} ya da {kesir:2|7} gibi devirli ondalık veren kesirler varsa öbür sayıları kesre çevirmek daha güvenlidir."
+    }
+   ]
+  },
+  {
+   "baslik": "Sayı doğrusunda tam yerini bulmak",
+   "metin": [
+    "Geçen hafta sayıları sayı doğrusunda yaklaşık yerlerine koymuştun; bu hafta tam yerlerini bulacaksın. Bunun için ardışık iki tam sayı arasını kesrin paydası kadar eş parçaya bölersin; her parça, paydası o sayı olan bir birim kesri gösterir. Örneğin paydası 4 olan {kesir:7|4} için her aralığı 4 eş parçaya ayırırsın. Sıfırdan sağa doğru 4 parça seni 1’e, 7 parça {kesir:7|4}’e ulaştırır; yani {kesir:7|4}, 1 ile 2 arasında ve 1’in 3 parça sağındadır.",
+    "Negatif sayılarda sıfırdan sola doğru sayarsın. −{kesir:5|3} için aralıkları 3 eş parçaya bölersin; sıfırdan sola 3 parça −1’e, 5 parça −{kesir:5|3}’e götürür. Demek ki −{kesir:5|3}, −2 ile −1 arasında ve −1’in 2 parça solundadır. Ondalık gösterimlerde aralığı 10 eş parçaya bölmek yeterlidir: −0,8 sayısı sıfırın 8 parça solunda, −1 ile 0 arasındadır.",
+    "Paydaları farklı sayıları aynı doğruya yerleştirmek için aralığı paydaların ortak katı kadar parçaya bölersin. {kesir:1|2}, {kesir:3|4} ve −{kesir:5|8} sayıları için 8 parça uygundur: {kesir:1|2} = {kesir:4|8} sıfırın 4 parça sağında, {kesir:3|4} = {kesir:6|8} 6 parça sağında, −{kesir:5|8} ise 5 parça solundadır. Doğru üzerinde soldan sağa okuyunca −{kesir:5|8} < {kesir:1|2} < {kesir:3|4} sıralaması kendiliğinden ortaya çıkar."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "metin": "Önce sayının hangi iki tam sayı arasında olduğunu bul, sonra aralığı payda kadar eş parçaya böl. Negatif sayılarda sıfırdan sola doğru say; mutlak değeri büyük olan daha solda kalır."
+   }
+  },
+  {
+   "baslik": "İki rasyonel sayı arasına rasyonel sayı yazmak",
+   "metin": [
+    "Ardışık iki tam sayının, örneğin −3 ile −2’nin arasında başka tam sayı yoktur; ama bu aralıkta −2,5; −{kesir:11|4}; −2,9 gibi sonsuz tane rasyonel sayı vardır. Aynı durum birbirine çok yakın görünen iki rasyonel sayı için de geçerlidir. {kesir:1|3} ile {kesir:2|3} arasına, paydaları genişleterek yeni sayılar bulabilirsin: {kesir:1|3} = {kesir:2|6} ve {kesir:2|3} = {kesir:4|6} olduğundan {kesir:3|6} = {kesir:1|2} bu iki sayının arasındadır.",
+    "Daha çok sayı istersen paydayı daha büyük bir ortak kata genişletirsin: {kesir:10|30} ile {kesir:20|30} arasında {kesir:11|30}, {kesir:12|30}, …, {kesir:19|30} olmak üzere dokuz sayı bulunur. Ondalık gösterimle de çalışabilirsin: 0,3 ile 0,4 arasına 0,31; 0,35 ve 0,39 yazılabilir; basamak sayısını artırdıkça 0,301; 0,3001 gibi yeni sayılar üretmeye devam edebilirsin. Bu yüzden iki farklı rasyonel sayı arasında her zaman sonsuz tane rasyonel sayı vardır.",
+    "Negatif sayılarda da yöntem aynıdır; yalnız sırayı kontrol ederken negatif sayı kurallarını unutma. −{kesir:3|4} ile −{kesir:1|2} arasına bir sayı yazmak için paydaları 8 yaparsın: −{kesir:6|8} ile −{kesir:4|8} arasında −{kesir:5|8} vardır. Sağlama için ondalığa çevir: −0,75 < −0,625 < −0,5 sıralaması doğrudur."
+   ],
+   "kutu": {
+    "tur": "bilgi",
+    "metin": "Tam sayılarda bir sayının hemen ardından gelen sayı vardır; rasyonel sayılarda yoktur. Hangi iki farklı rasyonel sayıyı alırsan al, aralarına yeni bir rasyonel sayı sığdırabilirsin."
+   },
+   "kutular": [
+    {
+     "tur": "ipucu",
+     "metin": "Aralarına sayı bulamıyorsan paydaları daha büyük bir ortak kata genişlet ya da ondalık gösterimde bir basamak daha aç."
+    }
+   ]
+  },
+  {
+   "baslik": "Negatif sayılarda sıralama tuzakları",
+   "metin": [
+    "Negatif sayıları sıralarken en sık yapılan hata, mutlak değeri büyük olan sayıyı büyük sanmaktır. {kesir:7|2}, {kesir:5|2}’den büyük olsa da −{kesir:7|2} sıfırdan daha uzakta ve daha solda olduğundan −{kesir:7|2} < −{kesir:5|2}’dir. Güvenli yol, negatif sayıların pozitiflerini sıralayıp sırayı tersine çevirmektir: Pozitiflerde {kesir:5|2} önce, {kesir:7|2} sonra geliyorsa negatiflerde −{kesir:7|2} önce, −{kesir:5|2} sonra gelir.",
+    "İkinci tuzak paydalarla ilgilidir. Pozitif kesirlerde paydası büyük olan küçüktür, ama negatiflerde paydası büyük olan sıfıra daha yakındır, dolayısıyla daha büyüktür: −{kesir:1|5} > −{kesir:1|2}. Üçüncü tuzak ondalık gösterimdeki rakam sayısıdır: −0,25 ile −0,3’ü karşılaştırırken 0,25 sayısı 0,30’dan küçük olduğundan −0,25 > −0,3 bulunur; rakamı çok olan sayı daha küçük değildir.",
+    "Tam kısımları eşit olan negatif sayılarda virgülden sonrasına bakarken de dikkatli ol: −2,3 ile −2,7 sayılarından −2,7 sıfırdan daha uzaktır, bu yüzden −2,3’ten küçüktür. Son olarak büyükten küçüğe sıralama istendiğinde pozitif sayılar başa, negatif sayılar sona gelir; negatifler kendi aralarında sıfıra yakın olandan uzak olana doğru dizilir: 1,5 > {kesir:1|4} > −{kesir:1|4} > −1,5."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Karşılaştırma",
+     "Yaygın yanılgı",
+     "Doğrusu"
+    ],
+    "satirlar": [
+     [
+      "−{kesir:7|2} ile −{kesir:5|2}",
+      "7 > 5 olduğu için −{kesir:7|2} büyüktür.",
+      "−{kesir:7|2} < −{kesir:5|2}; sıfırdan uzak olan küçüktür."
+     ],
+     [
+      "−{kesir:1|5} ile −{kesir:1|2}",
+      "Paydası büyük olan küçüktür.",
+      "−{kesir:1|5} > −{kesir:1|2}; negatiflerde kural tersine döner."
+     ],
+     [
+      "−0,25 ile −0,3",
+      "Rakamı çok olan sayı daha küçüktür.",
+      "−0,25 > −0,3; çünkü 0,25 sayısı 0,30’dan küçüktür."
+     ],
+     [
+      "−2,3 ile −2,7",
+      "Tam kısımlar eşit, 7 > 3 olduğu için −2,7 büyüktür.",
+      "−2,7 < −2,3; sıfırdan uzak olan daha soldadır."
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "dikkat",
+    "metin": "Negatif sayıları sıralarken önce pozitiflerini sırala, sonra sırayı ters çevir. Sonucu mutlaka sayı doğrusuna koyarak kontrol et; soldaki sayı her zaman küçüktür."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "{kesir:5|8} ile {kesir:7|12} sayılarını karşılaştır; aralarındaki ilişkiyi uygun sembolle yaz ve sayı doğrusu üzerinde açıkla.",
+   "cevap": "Paydalar farklı olduğundan 8 ve 12’nin ortak katı olan 24’te genişletirsin: {kesir:5|8} = {kesir:15|24} ve {kesir:7|12} = {kesir:14|24}. Paydalar eşitken payı büyük olan büyüktür; 15 > 14 olduğundan {kesir:5|8} > {kesir:7|12} yazılır. Sayı doğrusunda 0 ile 1 arasını 24 eş parçaya böldüğünde {kesir:7|12} on dördüncü, {kesir:5|8} on beşinci işarette yer alır; {kesir:5|8} daha sağda olduğu için daha büyüktür. Ondalıkla kontrol: 0,625 > 0,5833… olduğundan sonuç doğrudur."
+  },
+  {
+   "soru": "Bir öğrenci “{kesir:5|8} > {kesir:7|12} olduğunu buldum; o hâlde −{kesir:5|8} > −{kesir:7|12} olmalı.” diyor. Öğrencinin düşüncesini değerlendir ve doğru karşılaştırmayı yaz.",
+   "cevap": "Öğrencinin ilk adımı doğru, ikinci adımı yanlıştır. Negatif sayılarda sıfırdan uzaklaşan sayı küçülür. {kesir:5|8} = {kesir:15|24} ve {kesir:7|12} = {kesir:14|24} olduğundan −{kesir:5|8} = −{kesir:15|24} ve −{kesir:7|12} = −{kesir:14|24}’tür. Sayı doğrusunda −{kesir:15|24} sıfırın 15 parça solunda, −{kesir:14|24} ise 14 parça solundadır; daha solda kalan −{kesir:5|8} daha küçüktür. Doğru karşılaştırma −{kesir:5|8} < −{kesir:7|12}’dir. Ondalıkla da görebilirsin: −0,625 < −0,5833… olur."
+  },
+  {
+   "soru": "Şu sayıları ortak bir gösterime çevirerek küçükten büyüğe sırala, eşit olanları eşittir sembolüyle göster: 0,8; −{kesir:4|5}; −1,25; {kesir:3|4}; −{kesir:5|4}; {kesir:4|5}.",
+   "cevap": "Paydalar 4 ve 5 olduğundan ondalık gösterim pratiktir: −{kesir:4|5} = −0,8; {kesir:3|4} = 0,75; −{kesir:5|4} = −1,25 ve {kesir:4|5} = 0,8. Demek ki −1,25 ile −{kesir:5|4} aynı sayı, 0,8 ile {kesir:4|5} de aynı sayıdır. Negatifleri sıfırdan uzak olandan başlayarak, pozitifleri küçükten büyüğe yazarsın: −1,25 < −0,8 < 0,75 < 0,8. Sonuç: −{kesir:5|4} = −1,25 < −{kesir:4|5} < {kesir:3|4} < {kesir:4|5} = 0,8. Kontrol: −1,25 sayısı −2 ile −1 arasında, −0,8 sayısı −1 ile 0 arasında, 0,75 ve 0,8 ise 0 ile 1 arasındadır ve 0,80 sayısı 0,75’ten büyüktür."
+  },
+  {
+   "soru": "Ardışık tam sayılar arası 4 eş parçaya bölünmüş bir sayı doğrusuna −{kesir:7|4}, 0,5, −{kesir:1|2} ve {kesir:5|4} sayılarını yerleştir. Her sayının sıfırdan kaç parça uzakta ve hangi yönde olduğunu söyleyip sayıları küçükten büyüğe sırala.",
+   "cevap": "Her parça {kesir:1|4} birimdir, bu yüzden bütün sayıları paydası 4 olan kesirlerle yazarsın: 0,5 = {kesir:2|4}, −{kesir:1|2} = −{kesir:2|4}, {kesir:5|4} ve −{kesir:7|4}. Buna göre −{kesir:7|4} sıfırın 7 parça solunda (−2 ile −1 arasında), −{kesir:1|2} sıfırın 2 parça solunda, 0,5 sıfırın 2 parça sağında, {kesir:5|4} ise 5 parça sağında (1 ile 2 arasında) yer alır. Soldan sağa okuyunca −{kesir:7|4} < −{kesir:1|2} < 0,5 < {kesir:5|4} bulunur. −{kesir:1|2} ile 0,5’in sıfıra uzaklıkları eşittir; ama biri solda, öbürü sağda olduğundan sıraları farklıdır."
+  },
+  {
+   "soru": "−{kesir:1|2} ile −{kesir:1|3} arasında yer alan üç farklı rasyonel sayı yaz; sayıların gerçekten bu aralıkta olduğunu ondalık gösterimle kontrol et.",
+   "cevap": "Paydaları 6 yaparsan −{kesir:3|6} ile −{kesir:2|6} arasında paydası 6 olan sayı bulunmaz; bu yüzden paydayı daha büyük bir ortak kata, örneğin 24’e genişletirsin: −{kesir:1|2} = −{kesir:12|24} ve −{kesir:1|3} = −{kesir:8|24}. Aradaki −{kesir:11|24}, −{kesir:10|24} = −{kesir:5|12} ve −{kesir:9|24} = −{kesir:3|8} sayıları istenen üç sayıdır. Ondalıkla kontrol: −0,5 < −0,4583… < −0,4166… < −0,375 < −0,333… sıralaması doğrudur. Doğrudan ondalık gösterimle −0,45; −0,4 ve −0,35 de yazılabilirdi."
+  },
+  {
+   "soru": "Bir deniz araştırmasında dört sensör deniz seviyesine göre şu derinliklerde çalışıyor: A sensörü −{kesir:9|4} m, B sensörü −2,3 m, C sensörü −{kesir:11|5} m, D sensörü −2,25 m. Sensörleri yüzeye en yakından en derine doğru sırala; aynı derinlikte olan sensör var mı?",
+   "cevap": "Önce hepsini ondalık gösterime çevirirsin: −{kesir:9|4} = −2,25 ve −{kesir:11|5} = −2,2; B için −2,30 ve D için −2,25 yazılır. Dördü de −3 ile −2 arasındadır; sıfıra en yakın olan en büyük, yani yüzeye en yakın sensördür. Mutlak değerleri küçükten büyüğe 2,2; 2,25; 2,25 ve 2,3 biçiminde sıralanır; bu yüzden −2,2 > −2,25 = −2,25 > −2,3 olur. Yüzeye en yakın sensör C, en derindeki sensör B’dir; A ile D aynı derinliktedir. Sembolle: −{kesir:11|5} > −{kesir:9|4} = −2,25 > −2,3. Tuzağa dikkat: 2,3 sayısının 2,25’ten “kısa” yazılması onu küçük yapmaz; 2,30 > 2,25’tir."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Aşağıdaki karşılaştırmalardan hangisi doğrudur?",
+   "secenekler": [
+    "−{kesir:2|3} < −{kesir:3|4}",
+    "0,45 > {kesir:1|2}",
+    "−{kesir:1|5} > −{kesir:1|4}",
+    "−1,2 > −{kesir:11|10}"
+   ],
+   "dogru": 2,
+   "aciklama": "−{kesir:1|5} = −0,2 ve −{kesir:1|4} = −0,25’tir; −0,2 sıfıra daha yakın olduğundan daha büyüktür. Öbürlerinde −{kesir:2|3} = −{kesir:8|12} sayısı −{kesir:9|12}’nin sağındadır; 0,45 < 0,50’dir; −1,2 ise −1,1’in solunda kalır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "0,6; {kesir:2|3}; −0,6 ve −{kesir:2|3} sayılarının küçükten büyüğe doğru sıralanışı aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "−0,6 < −{kesir:2|3} < 0,6 < {kesir:2|3}",
+    "−{kesir:2|3} < −0,6 < 0,6 < {kesir:2|3}",
+    "−{kesir:2|3} < −0,6 < {kesir:2|3} < 0,6",
+    "{kesir:2|3} < 0,6 < −0,6 < −{kesir:2|3}"
+   ],
+   "dogru": 1,
+   "aciklama": "{kesir:2|3} = 0,666… sayısı 0,6’dan büyüktür; bu yüzden −{kesir:2|3} sıfırdan daha uzaktır ve −0,6’dan küçüktür. Sıralama −{kesir:2|3} < −0,6 < 0,6 < {kesir:2|3} olur. Son seçenek büyükten küçüğe değil, baştan sona yanlış yönde bir sıralamadır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir sayı doğrusunda ardışık tam sayılar arası 5 eş parçaya bölünmüştür. −2’nin 3 parça sağındaki nokta hangi rasyonel sayıyı gösterir?",
+   "secenekler": [
+    "−{kesir:7|5}",
+    "−{kesir:13|5}",
+    "−{kesir:3|5}",
+    "{kesir:7|5}"
+   ],
+   "dogru": 0,
+   "aciklama": "Her parça {kesir:1|5} birimdir. Sıfırdan sola 10 parça −2’ye götürür; −2’den 3 parça sağa dönünce sıfırın 7 parça solunda kalırsın: −{kesir:7|5}. Sola sayarsan −{kesir:13|5}, parçaları sıfırdan değil −2’den başlayarak sayarsan −{kesir:3|5}, işareti unutursan {kesir:7|5} gibi yanlış sonuçlar çıkar."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadeler doğru mu, yanlış mı?",
+   "ifadeler": [
+    {
+     "metin": "Paydaları eşit iki pozitif kesirden payı büyük olan daha büyüktür.",
+     "dogru": true,
+     "aciklama": "Bütün aynı sayıda eş parçaya bölündüğünden daha çok parça alan kesir daha büyüktür: {kesir:5|9} > {kesir:2|9}."
+    },
+    {
+     "metin": "Paydaları eşit iki negatif kesirden payının mutlak değeri büyük olan daha büyüktür.",
+     "dogru": false,
+     "aciklama": "Negatif sayılarda sıfırdan uzaklaşan sayı küçülür: −{kesir:5|7} < −{kesir:2|7}. Pozitiflerdeki sıra negatiflerde tersine döner."
+    },
+    {
+     "metin": "İki farklı rasyonel sayı arasında her zaman başka bir rasyonel sayı vardır.",
+     "dogru": true,
+     "aciklama": "Paydaları genişleterek ya da ondalık basamak açarak aradaki sayıları bulabilirsin; örneğin {kesir:1|3} ile {kesir:2|3} arasında {kesir:1|2} vardır."
+    },
+    {
+     "metin": "−0,8 sayısı −0,75’ten büyüktür; çünkü 8, 75’ten küçük bir sayıdır.",
+     "dogru": false,
+     "aciklama": "Basamakları eşitleyince −0,80 ile −0,75 karşılaştırılır; 0,80 sayısı 0,75’ten büyük olduğundan −0,8 sıfırdan daha uzaktır ve −0,8 < −0,75’tir."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Her aralığı, o aralıkta yer alan rasyonel sayıyla eşleştir.",
+   "ciftler": [
+    [
+     "−1 ile −{kesir:1|2} arasında",
+     "−{kesir:3|4}"
+    ],
+    [
+     "0 ile {kesir:1|4} arasında",
+     "0,2"
+    ],
+    [
+     "{kesir:1|2} ile 1 arasında",
+     "0,9"
+    ],
+    [
+     "−3 ile −2,5 arasında",
+     "−{kesir:11|4}"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Sayı doğrusunda bir sayının ___ yer alan sayılar o sayıdan küçüktür.",
+     "cevap": "solunda"
+    },
+    {
+     "metin": "Paydaları farklı kesirleri karşılaştırmak için önce paydalar ___.",
+     "cevap": "eşitlenir"
+    },
+    {
+     "metin": "Kesir, ondalık ve tam sayı karışık verildiğinde sayılar ___ bir gösterime çevrilir.",
+     "cevap": "ortak"
+    }
+   ],
+   "fazla": [
+    "sağında"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Selin, “−{kesir:1|3} ile −{kesir:1|4} arasında hiçbir rasyonel sayı yoktur; çünkü payları eşit, paydaları ardışık.” diyor. Selin haklı mı? Gerekçeni iki farklı yolla göster.",
+   "ipuclari": [
+    "İki kesri paydaları 24 olacak biçimde genişlet; paylar arasında başka sayı var mı?",
+    "Sayıları ondalık gösterime çevirip aralarına bir ondalık sayı yazmayı dene."
+   ],
+   "cevap": "Selin haklı değildir. Paydaları 24 yapınca −{kesir:1|3} = −{kesir:8|24} ve −{kesir:1|4} = −{kesir:6|24} olur; aralarında −{kesir:7|24} vardır. Paydayı 48’e genişletirsen −{kesir:16|48} ile −{kesir:12|48} arasında −{kesir:15|48}, −{kesir:14|48} ve −{kesir:13|48} bulunur. Ondalıkla −0,333… ile −0,25 arasına −0,3; −0,28 ya da −0,26 yazılabilir. İki farklı rasyonel sayı arasında her zaman sonsuz tane rasyonel sayı vardır; payların eşit, paydaların ardışık olması bunu değiştirmez."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir sayı doğrusunda −1 ile 0 arasında kalan ve paydası 7 olan rasyonel sayıları bul. Bu sayıları büyükten küçüğe sırala; en büyüğü ile en küçüğünün sıfıra uzaklıklarını karşılaştır.",
+   "ipuclari": [
+    "−1 ile 0 arasını 7 eş parçaya böl; her işaret hangi sayıyı gösterir?",
+    "Negatif sayılarda sıfıra yakın olan mı, uzak olan mı daha büyüktür?"
+   ],
+   "cevap": "−1 ile 0 arası 7 eş parçaya bölündüğünde işaretler sıfırdan sola doğru −{kesir:1|7}, −{kesir:2|7}, −{kesir:3|7}, −{kesir:4|7}, −{kesir:5|7} ve −{kesir:6|7} sayılarını gösterir; −{kesir:7|7} = −1 olduğundan aralığın içinde kalmaz. Büyükten küçüğe sıralama −{kesir:1|7} > −{kesir:2|7} > −{kesir:3|7} > −{kesir:4|7} > −{kesir:5|7} > −{kesir:6|7} biçimindedir; sıfıra en yakın olan −{kesir:1|7} en büyük, sıfırdan en uzak olan −{kesir:6|7} en küçük sayıdır. Mutlak değerleri {kesir:1|7} ve {kesir:6|7} olduğundan en küçük sayının sıfıra uzaklığı, en büyük sayının uzaklığının 6 katıdır."
+  }
+ ],
+ "ozet": [
+  "Karşılaştırma küçüktür, büyüktür ve eşittir sembolleriyle yazılır; sembolün açık tarafı büyük sayıya bakar. a < b yazmak, sayı doğrusunda a’nın b’nin solunda olması demektir.",
+  "Paydaları eşit pozitif kesirlerde payı büyük olan, payları eşit pozitif kesirlerde paydası küçük olan daha büyüktür; paydalar farklıysa önce eşitlenir. Negatif kesirlerde bu sıralama tersine döner.",
+  "Kesir, ondalık ve tam sayı karışık verildiğinde sayılar ortak bir gösterime çevrilir; ondalık gösterimlerde basamak sayısı sıfır eklenerek eşitlenir, sonra karşılaştırılır.",
+  "Sayı doğrusunda tam yer bulmak için ardışık tam sayılar arası payda kadar eş parçaya bölünür; pozitif sayılar sıfırdan sağa, negatif sayılar sıfırdan sola sayılır.",
+  "İki farklı rasyonel sayı arasında sonsuz tane rasyonel sayı vardır; bunlar paydaları genişleterek ya da ondalık basamak açarak bulunur.",
+  "Negatif sayılarda sıfırdan uzaklaşan sayı küçülür; mutlak değeri büyük olan, paydası küçük olan ya da rakamı çok olan sayıyı büyük sanmak en yaygın tuzaklardır."
+ ]
+}

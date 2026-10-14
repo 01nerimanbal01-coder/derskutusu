@@ -1,0 +1,356 @@
+{
+ "sinif": 7,
+ "ders": "matematik",
+ "hafta": 6,
+ "tarih": "19-23 Ekim 2026",
+ "yayin_tarihi": "2026-10-14",
+ "unite": "Sayılar ve Nicelikler (1)",
+ "konu": "Rasyonel Sayılarla İşlemler ve Problem Çözme: Toplama ve Çıkarma",
+ "ciktilar": [
+  "MAT.7.1.4. Rasyonel sayılar ve işlemler içeren gerçek yaşam problemlerini çözebilme"
+ ],
+ "giris": "Geçen hafta rasyonel sayıları ortak bir gösterime çevirerek sıraladın, sayı doğrusunda tam yerlerini buldun ve iki rasyonel sayı arasına yeni sayılar yazdın. Bu hafta rasyonel sayılarla işlem yapmaya başlıyorsun: Önce paydası 1 olan sayılarda, yani tam sayılarda toplama ve çıkarmanın işaret kurallarını sayı doğrusu ve sayma pullarıyla keşfedecek, sonra paydaları farklı kesirlere ve ondalık gösterimlere geçeceksin. Sıcaklık, kat, derinlik ve para gibi günlük durumları sayı cümlesine çevirip çözecek, çözümünü kontrol edeceksin.",
+ "bolumler": [
+  {
+   "baslik": "Tam sayılarda toplama: sayı doğrusunda adımlar",
+   "metin": [
+    "Rasyonel sayılarla toplamaya paydası 1 olan sayılardan, yani tam sayılardan başlarsın. Sayı doğrusunda pozitif bir sayı eklemek sağa, negatif bir sayı eklemek sola adım atmak demektir. (−3) + 5 işleminde −3’ten başlayıp 5 birim sağa gidersin ve 2’ye varırsın: (−3) + 5 = 2. (−3) + (−5) işleminde ise −3’ten 5 birim sola gidersin: (−3) + (−5) = −8.",
+    "Sayma pulları da aynı işi görür: Her pozitif pul +1, her negatif pul −1 değerindedir; bir pozitif pul ile bir negatif pul birbirini götürüp sıfır çifti oluşturur. 4 + (−7) için 4 pozitif ve 7 negatif pul koyarsın; 4 sıfır çifti çıkınca geriye 3 negatif pul kalır: 4 + (−7) = −3. Bu modellerden iki kural çıkar: Aynı işaretli sayıların mutlak değerleri toplanır ve ortak işaret sonuca verilir; farklı işaretli sayılarda mutlak değerlerin farkı alınır ve mutlak değeri büyük olanın işareti kullanılır.",
+    "Bir sayı ile ters işaretlisinin toplamı daima sıfırdır: 6 + (−6) = 0 ve (−{kesir:2|5}) + {kesir:2|5} = 0. Birbirini sıfırlayan bu sayılara toplama işlemine göre ters eleman denir; sıfır ise hiçbir sayıyı değiştirmediği için etkisiz elemandır: (−9) + 0 = −9. Kurallar paydası 1’den farklı rasyonel sayılarda da aynen geçerlidir; bu yüzden önce tam sayılarla iyice kavra."
+   ],
+   "tablo": {
+    "basliklar": [
+     "İşlem",
+     "Sayı doğrusunda hareket",
+     "Sonuç"
+    ],
+    "satirlar": [
+     [
+      "(+4) + (+3)",
+      "4’ten 3 birim sağa",
+      "7"
+     ],
+     [
+      "(−4) + (−3)",
+      "−4’ten 3 birim sola",
+      "−7"
+     ],
+     [
+      "(+4) + (−6)",
+      "4’ten 6 birim sola",
+      "−2"
+     ],
+     [
+      "(−4) + (+6)",
+      "−4’ten 6 birim sağa",
+      "2"
+     ],
+     [
+      "(−4) + (+4)",
+      "−4’ten 4 birim sağa",
+      "0"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "kural",
+    "metin": "Aynı işaretli sayılar: mutlak değerleri topla, ortak işareti yaz. Farklı işaretli sayılar: mutlak değerlerin farkını al, mutlak değeri büyük olanın işaretini yaz."
+   }
+  },
+  {
+   "baslik": "Çıkarma: çıkanın ters işaretlisini eklemek",
+   "metin": [
+    "Bir sayıdan başka bir sayıyı çıkarmak, çıkanın ters işaretlisini eklemektir; böylece her çıkarma bir toplamaya dönüşür. 3 − 7 işlemi 3 + (−7) demektir ve sonucu −4’tür; −2 − 5 işlemi −2 + (−5) = −7 olur. Sayı doğrusunda pozitif bir sayı çıkarmak sola, negatif bir sayı çıkarmak sağa gitmektir.",
+    "Negatif bir sayı çıkarıldığında iki eksi işareti yan yana gelir ve işlem toplamaya dönüşür: 4 − (−3) = 4 + 3 = 7 ve −6 − (−2) = −6 + 2 = −4. Bu kuralı sayma pullarıyla görebilirsin: 4 pozitif pulun içinden 3 negatif pul almak için önce 3 sıfır çifti eklersin; negatif pulları alınca geriye 7 pozitif pul kalır.",
+    "Çıkarma, iki sayı arasındaki farkı ve bir değişimi bulmak için kullanılır. Sıcaklık −9 °C’den −2 °C’ye yükseldiyse değişim, son değerden ilk değerin çıkarılmasıyla bulunur: (−2) − (−9) = −2 + 9 = 7 °C. Sayı doğrusunda −9’dan −2’ye 7 birim sağa gidildiğini görmek de aynı sonucu verir. Toplamada sayıların yeri değişebilir, ama çıkarmada değişmez: 7 − 3 = 4 iken 3 − 7 = −4’tür."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "metin": "Çıkarma, toplamaya dönüştürülür: Çıkanın işaretini değiştir, sonra toplama kurallarını uygula. 3 − 7 = 3 + (−7) = −4."
+   },
+   "kutular": [
+    {
+     "tur": "dikkat",
+     "metin": "Yan yana gelen iki eksi işaretini ayraçla ayır: 5 − (−2). Negatif bir sayıyı çıkarmak onun pozitifini eklemektir, bu yüzden sonuç büyür: 5 − (−2) = 7."
+    }
+   ]
+  },
+  {
+   "baslik": "Paydaları farklı kesirlerle toplama ve çıkarma",
+   "metin": [
+    "Paydaları eşit kesirlerde payları işaretli tam sayılar gibi toplar ya da çıkarırsın, paydayı aynen yazarsın: (−{kesir:5|7}) + {kesir:2|7} = {kesir:−5 + 2|7} = −{kesir:3|7}. Paydalar farklıysa önce paydaların en küçük ortak katını bulup kesirleri genişletirsin, sonra pay işlemini yaparsın. {kesir:2|3} + (−{kesir:5|6}) işleminde ortak payda 6’dır: {kesir:4|6} + (−{kesir:5|6}) = −{kesir:1|6}.",
+    "Çıkarmada da kural aynıdır: Çıkanın ters işaretlisini ekle, paydaları eşitle. −{kesir:3|4} − {kesir:1|6} işleminde ortak payda 12’dir: −{kesir:9|12} + (−{kesir:2|12}) = −{kesir:11|12}. Negatif bir kesri çıkarırken işareti değiştirirsin: −{kesir:1|2} − (−{kesir:7|10}) = −{kesir:5|10} + {kesir:7|10} = {kesir:2|10} = {kesir:1|5}. Sonucu her zaman en sade biçimde yaz.",
+    "Tam sayı ile kesir toplanırken tam sayıyı, paydası kesrin paydası olan bir kesre çevirirsin: 2 + (−{kesir:3|4}) = {kesir:8|4} + (−{kesir:3|4}) = {kesir:5|4}. Sonucun makul olup olmadığını sayı doğrusuyla kontrol et: 2’den {kesir:3|4} birim sola gidince 1 ile 2 arasında, 1’e yakın bir sayıya varırsın; {kesir:5|4} = 1,25 bu beklentiye uyar."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "metin": "Önce paydaları eşitle, sonra payları işaretli tam sayılar gibi topla ya da çıkar; paydayı aynen yaz ve sonucu sadeleştir."
+   },
+   "kutular": [
+    {
+     "tur": "ipucu",
+     "metin": "Ortak payda olarak paydaların en küçük ortak katını seç. 4 ile 6 için 24 yerine 12 kullanırsan sayılar küçük kalır ve sadeleştirme işin azalır."
+    }
+   ]
+  },
+  {
+   "baslik": "Ondalık gösterimlerle toplama ve çıkarma",
+   "metin": [
+    "Ondalık gösterimlerde de işaret kuralları aynıdır; işlemi yaparken virgülleri alt alta hizalar, gerekirse sona sıfır ekleyerek basamak sayısını eşitlersin. −2,75 + 1,5 işleminde işaretler farklıdır: Mutlak değerlerin farkı 2,75 − 1,50 = 1,25’tir, mutlak değeri büyük olan sayı negatif olduğundan sonuç −1,25 olur. 3,4 − 5,65 işlemini 3,40 + (−5,65) olarak düşünürsün; fark 5,65 − 3,40 = 2,25 ve sonuç −2,25’tir.",
+    "Negatif bir ondalık sayıyı çıkarırken yine ters işaretlisini eklersin: −0,8 − (−1,25) = −0,8 + 1,25 = 0,45. Para hesaplarında bu kurallar çok işe yarar: 12,5 TL borcu olan birine 20 TL verildiğinde durumu (−12,5) + 20 = 7,5 TL olur; borç kapanmış, 7,5 TL de artmıştır.",
+    "Kesir ile ondalık gösterim bir arada verildiğinde ikisini de aynı gösterime çevirirsin. {kesir:3|4} + (−1,2) işlemini ondalıkla 0,75 + (−1,2) = −0,45, kesirle {kesir:15|20} + (−{kesir:24|20}) = −{kesir:9|20} olarak yapabilirsin; iki sonuç aynı sayıdır. Devirli ondalığa dönüşen kesirleri ondalığa çevirme; {kesir:1|3} + 0,5 için 0,5’i {kesir:1|2} yapıp {kesir:2|6} + {kesir:3|6} = {kesir:5|6} bulmak daha güvenlidir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "İşlem",
+     "Ortak gösterim",
+     "Sonuç"
+    ],
+    "satirlar": [
+     [
+      "−2,75 + 1,5",
+      "−2,75 + 1,50",
+      "−1,25"
+     ],
+     [
+      "3,4 − 5,65",
+      "3,40 + (−5,65)",
+      "−2,25"
+     ],
+     [
+      "{kesir:3|4} + (−1,2)",
+      "0,75 + (−1,20)",
+      "−0,45"
+     ],
+     [
+      "{kesir:1|3} + 0,5",
+      "{kesir:2|6} + {kesir:3|6}",
+      "{kesir:5|6}"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "dikkat",
+    "metin": "Ondalık sayıları alt alta yazarken virgülleri hizala ve basamakları sıfırla tamamla: 3,4 − 5,65 için 3,40 yaz. Devirli ondalıklarla işlem yapmak yerine kesre dön."
+   }
+  },
+  {
+   "baslik": "Toplamanın özellikleri işlemi kolaylaştırır",
+   "metin": [
+    "Toplama işleminde sayıların yerini değiştirebilir (değişme özelliği) ve istediğin iki sayıyı önce gruplayabilirsin (birleşme özelliği); sonuç değişmez. Bu özellikler uzun toplamalarda işini kolaylaştırır: Ters işaretli sayıları yan yana getirip sıfır çifti yaparsın, paydaları aynı olanları önce toplarsın. −{kesir:3|5} + {kesir:7|4} + {kesir:3|5} toplamında −{kesir:3|5} ile {kesir:3|5} sıfır verir, geriye {kesir:7|4} kalır.",
+    "Ondalık gösterimlerde de aynı yolu izlersin: 2,7 + (−4,3) + 1,3 + (−2,7) işleminde 2,7 ile −2,7 sıfır çiftidir; kalan 1,3 + (−4,3) = −3 olur. Çıkarma içeren bir zincirde önce bütün çıkarmaları toplamaya çevirir, sonra gruplarsın: {kesir:1|2} − {kesir:5|6} − (−{kesir:1|2}) = {kesir:1|2} + (−{kesir:5|6}) + {kesir:1|2} = 1 + (−{kesir:5|6}) = {kesir:1|6}.",
+    "Çıkarmada değişme özelliği yoktur; 5 − 8 ile 8 − 5 farklı sonuçlar verir. Bu yüzden sayıların yerini yalnızca işlemi toplamaya çevirdikten sonra değiştir. Gruplama yaparken her sayıyı kendi işaretiyle birlikte taşı; −4,3’ü taşırken eksi işaretini geride bırakırsan sonuç yanlış çıkar."
+   ],
+   "kutu": {
+    "tur": "bilgi",
+    "metin": "Değişme: a + b = b + a. Birleşme: (a + b) + c = a + (b + c). Etkisiz eleman: a + 0 = a. Ters eleman: a + (−a) = 0. Bu özellikler bütün rasyonel sayılar için geçerlidir."
+   }
+  },
+  {
+   "baslik": "Günlük yaşamda toplama ve çıkarma problemleri",
+   "metin": [
+    "Bir problemi çözerken önce verilenleri işaretleriyle yazarsın: Sıfırın altındaki sıcaklık, deniz seviyesinin altındaki derinlik, zemin katın altındaki kat ve borç negatif; artış, yükseliş ve alacak pozitif sayılarla gösterilir. Sonra durumu bir sayı cümlesine çevirirsin. Zemin katın 2 kat altındaki otoparktan binen bir asansör 5 kat yukarı çıkıp 3 kat inerse son konumu (−2) + 5 − 3 = 0’dır; asansör zemin kattadır.",
+    "Kesirli büyüklüklerde de aynı yol izlenir. {kesir:3|4} litre sütün {kesir:1|3} litresi kullanıldıysa kalan süt {kesir:3|4} − {kesir:1|3} = {kesir:9|12} − {kesir:4|12} = {kesir:5|12} litredir. Bir takımın averajı (attığı gollerden yediği gollerin çıkarılmasıyla bulunan sayı) −3 iken takım bir maçı 4-1 kazanırsa yeni averaj (−3) + 3 = 0 olur. Sıcaklık gece −6,5 °C iken gündüz 4 °C arttıysa gündüz sıcaklığı −6,5 + 4 = −2,5 °C’dir.",
+    "Sonucu bulduktan sonra kontrol etmeyi unutma: İşlemi tersten yap ya da sayı doğrusunda adımları say. Asansör örneğinde 0’dan 3 kat yukarı çıkıp 5 kat inersen −2’ye, yani başlangıç noktasına dönersin. Sonucun anlamını da yorumla: Kalan süt {kesir:5|12} litre, yani yarım litreden biraz azdır; −2,5 °C ise hâlâ sıfırın altında bir sıcaklıktır."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Durum",
+     "Sayı cümlesi",
+     "Sonuç"
+    ],
+    "satirlar": [
+     [
+      "Otoparktan (−2. kat) 5 kat yukarı, 3 kat aşağı",
+      "(−2) + 5 − 3",
+      "0 (zemin kat)"
+     ],
+     [
+      "{kesir:3|4} litre sütten {kesir:1|3} litre kullanıldı",
+      "{kesir:3|4} − {kesir:1|3}",
+      "{kesir:5|12} litre"
+     ],
+     [
+      "Averaj −3, maç 4-1 kazanıldı",
+      "(−3) + 3",
+      "0"
+     ],
+     [
+      "Gece −6,5 °C, gündüz 4 °C arttı",
+      "−6,5 + 4",
+      "−2,5 °C"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "bilgi",
+    "metin": "Borç, derinlik, sıfırın altındaki sıcaklık ve zemin altındaki katlar negatif; alacak, yükseklik, sıfırın üstündeki sıcaklık ve üst katlar pozitif sayılarla gösterilir. İşaretleri doğru koyduğunda sayı cümlesi kendiliğinden kurulur."
+   },
+   "kutular": [
+    {
+     "tur": "bilgi",
+     "baslik": "Gelecek hafta",
+     "metin": "Çarpma, aynı sayının tekrar tekrar toplanmasıdır: 3 · (−2) = (−2) + (−2) + (−2) = −6. Bu hafta öğrendiğin toplama kuralları, gelecek hafta rasyonel sayılarla çarpma ve bölmeye ve dört işlemi içeren problemlere geçerken sana yol gösterecek."
+    }
+   ]
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Bir öğrenci (−7) + 12 ve (−7) + (−12) işlemlerinin ikisinde de sonucun işaretinin eksi olması gerektiğini söylüyor; çünkü iki işlemde de −7 var. Öğrenciyi değerlendir; sonuçları sayı doğrusunda adım sayarak bul.",
+   "cevap": "Öğrenci yanılıyor; sonucun işareti tek bir sayıya değil, iki sayının işaretine ve mutlak değerlerine bağlıdır. (−7) + 12 işleminde −7’den 12 birim sağa gidersin: 7 birimde sıfıra, 5 birim daha gidince 5’e varırsın; (−7) + 12 = 5. İşaretler farklı olduğundan mutlak değerlerin farkı 12 − 7 = 5 alınır ve mutlak değeri büyük olan 12 pozitif olduğu için sonuç pozitiftir. (−7) + (−12) işleminde ise −7’den 12 birim sola gidersin ve −19’a varırsın; aynı işaretli sayıların mutlak değerleri toplanır, ortak işaret konur: (−7) + (−12) = −19."
+  },
+  {
+   "soru": "Kerem −4 − (−10) işlemini “İki eksi var, o hâlde sonuç −14 olur.” diyerek çözmüştür. Kerem’in hatasını açıkla; doğru sonucu bul ve 5 − 9 ile −3 − 8 işlemlerini de aynı kuralla çöz.",
+   "cevap": "Çıkarma, çıkanın ters işaretlisini eklemektir; −10’un ters işaretlisi +10’dur. Bu yüzden −4 − (−10) = −4 + 10 = 6 olur; Kerem ikinci eksiyi ters çevirmeyi unutup −4 + (−10) = −14 yapmıştır. Sayı doğrusunda −4’ten 10 birim sağa gidince 6’ya varırsın. Aynı kuralla 5 − 9 = 5 + (−9) = −4 ve −3 − 8 = −3 + (−8) = −11 bulunur. Kontrol: Bulduğun sonucu çıkanla toplayınca eksilene ulaşmalısın; 6 + (−10) = −4, −4 + 9 = 5 ve −11 + 8 = −3 olduğundan üç sonuç da doğrudur."
+  },
+  {
+   "soru": "−{kesir:5|6} + {kesir:3|4} ve {kesir:2|5} − (−{kesir:7|10}) işlemlerini yap; sonuçları en sade biçimde yaz ve sayı doğrusunda makul olup olmadıklarını yorumla.",
+   "cevap": "İlk işlemde paydalar 6 ve 4, ortak payda 12’dir: −{kesir:5|6} = −{kesir:10|12} ve {kesir:3|4} = {kesir:9|12}. İşaretler farklı olduğundan mutlak değerlerin farkı alınır: 10 − 9 = 1; mutlak değeri büyük olan negatif olduğu için sonuç −{kesir:1|12}’dir. Sayı doğrusunda −{kesir:5|6}’dan {kesir:3|4} birim sağa gidersen sıfıra çok yaklaşır ama geçemezsin; sonuç sıfırın hemen solundadır. İkinci işlemde çıkanın ters işaretlisi eklenir: {kesir:2|5} + {kesir:7|10} = {kesir:4|10} + {kesir:7|10} = {kesir:11|10}. {kesir:2|5}’ten {kesir:7|10} birim sağa gidince 1’i biraz geçersin; {kesir:11|10} = 1,1 bu beklentiye uyar."
+  },
+  {
+   "soru": "Bir barajda su seviyesi, belirlenen referans çizgisine göre −1,35 m olarak ölçülmüştür. Yağışlarla seviye 2,8 m yükselmiş, sonra sulama için su bırakıldığında 0,95 m düşmüştür. Son su seviyesi referans çizgisine göre kaç metredir? Sonucu tersten işlemle kontrol et.",
+   "cevap": "Verilenler: başlangıç −1,35; yükseliş +2,8; düşüş −0,95. Sayı cümlesi: −1,35 + 2,8 − 0,95. Virgülleri hizalayarak önce −1,35 + 2,80 = 1,45 bulursun; işaretler farklı olduğundan fark alınır ve mutlak değeri büyük olan pozitiftir. Sonra 1,45 − 0,95 = 0,50; son seviye referans çizgisinin 0,5 m üstündedir. Kontrol: Sondan başa git, 0,5 + 0,95 = 1,45 ve 1,45 − 2,8 = −1,35; başlangıç değerine döndüğün için çözüm doğrudur. Makul mü? Yükseliş 2,8 m, düşüş 0,95 m olduğundan net değişim 2,8 − 0,95 = 1,85 m artıştır; −1,35 + 1,85 = 0,5 aynı sonucu verir."
+  },
+  {
+   "soru": "1,25 + (−{kesir:3|4}) + (−1,25) + {kesir:1|8} işlemini toplamanın özelliklerini kullanarak en kısa yoldan yap; hangi özellikleri kullandığını belirt.",
+   "cevap": "Değişme ve birleşme özellikleriyle 1,25 ile −1,25’i yan yana getirirsin; bunlar ters elemanlardır ve toplamları 0’dır. Geriye −{kesir:3|4} + {kesir:1|8} kalır. Paydaları 8’de eşitlersin: −{kesir:6|8} + {kesir:1|8} = −{kesir:5|8}. İşaretler farklı olduğundan mutlak değerlerin farkı 6 − 1 = 5 alınmış, büyük olanın işareti verilmiştir. Kontrol: Ondalıkla 1,25 − 0,75 − 1,25 + 0,125 = −0,625 ve −{kesir:5|8} = −0,625’tir. Kullanılan özellikler: değişme, birleşme, ters eleman ve etkisiz eleman (0’ı eklemek sonucu değiştirmez)."
+  },
+  {
+   "soru": "Bir bilgi yarışmasında Elif 1. turda {kesir:5|2} puan kazanmış, 2. turda {kesir:7|4} puan kaybetmiş, 3. turda 1,25 puan kazanmış, 4. turda {kesir:3|2} puan kaybetmiştir. Elif, “İki turda kaybettim, puanım negatif olur.” diyor. Elif’in toplam puanını bulup bu düşünceyi değerlendir.",
+   "cevap": "Kazanılan puanlar pozitif, kaybedilenler negatif yazılır: {kesir:5|2} + (−{kesir:7|4}) + 1,25 + (−{kesir:3|2}). Hepsini ondalığa çevirmek pratiktir: 2,5 + (−1,75) + 1,25 + (−1,5). Gruplayarak 2,5 + (−1,5) = 1 ve (−1,75) + 1,25 = −0,5 bulursun; toplam 1 + (−0,5) = 0,5 puandır. Kesirle de aynı sonuca ulaşırsın: Paydaları 4 yapınca {kesir:10|4} − {kesir:7|4} + {kesir:5|4} − {kesir:6|4} = {kesir:2|4} = {kesir:1|2}. Elif’in düşüncesi yanlıştır; kaybedilen tur sayısı değil, kazanılan ve kaybedilen puanların toplamı önemlidir. Kazanılan 3,75 puan, kaybedilen 3,25 puandan büyük olduğundan toplam pozitiftir."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "(−{kesir:3|4}) + {kesir:1|6} işleminin sonucu kaçtır?",
+   "secenekler": [
+    "−{kesir:7|12}",
+    "{kesir:7|12}",
+    "−{kesir:11|12}",
+    "−{kesir:2|10}"
+   ],
+   "dogru": 0,
+   "aciklama": "Ortak payda 12’dir: −{kesir:9|12} + {kesir:2|12}. İşaretler farklı olduğundan mutlak değerlerin farkı 9 − 2 = 7 alınır ve büyük olanın işareti verilir: −{kesir:7|12}. Mutlak değerleri toplamak −{kesir:11|12}, işareti unutmak {kesir:7|12}, payları ve paydaları ayrı ayrı toplamak −{kesir:2|10} hatalarına yol açar."
+  },
+  {
+   "tur": "coktan",
+   "soru": "−5 − (−8) işleminin sonucu kaçtır?",
+   "secenekler": [
+    "−13",
+    "3",
+    "−3",
+    "13"
+   ],
+   "dogru": 1,
+   "aciklama": "Negatif bir sayıyı çıkarmak onun pozitifini eklemektir: −5 − (−8) = −5 + 8 = 3. İkinci eksiyi ters çevirmeyi unutursan −13, işaretleri karıştırırsan −3 ya da 13 bulursun."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir dalgıç deniz yüzeyinin 12,5 m altındadır. Önce 4,75 m yükselmiş, sonra 7,25 m dalmıştır. Dalgıcın son konumu deniz yüzeyine göre kaç metredir?",
+   "secenekler": [
+    "−10 m",
+    "−24,5 m",
+    "−15 m",
+    "15 m"
+   ],
+   "dogru": 2,
+   "aciklama": "Sayı cümlesi −12,5 + 4,75 − 7,25’tir. Önce −12,5 + 4,75 = −7,75, sonra −7,75 − 7,25 = −15 bulunur; dalgıç yüzeyin 15 m altındadır. Her iki hareketi de aşağı sayarsan −24,5, hareketlerin yönünü ters alırsan −10, işareti unutursan 15 çıkar."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadeler doğru mu, yanlış mı?",
+   "ifadeler": [
+    {
+     "metin": "Farklı işaretli iki rasyonel sayının toplamı, mutlak değeri büyük olan sayının işaretini alır.",
+     "dogru": true,
+     "aciklama": "(−7) + 12 = 5 pozitif, (−12) + 7 = −5 negatiftir; sonucun işaretini mutlak değeri büyük olan sayı belirler."
+    },
+    {
+     "metin": "Bir sayıdan negatif bir sayı çıkarıldığında sonuç o sayıdan küçük olur.",
+     "dogru": false,
+     "aciklama": "Negatif bir sayıyı çıkarmak onun pozitifini eklemektir; 2 − (−3) = 2 + 3 = 5 olur ve sonuç 2’den büyüktür."
+    },
+    {
+     "metin": "Paydaları farklı kesirleri toplarken önce paydalar eşitlenir, sonra paylar toplanır.",
+     "dogru": true,
+     "aciklama": "{kesir:1|2} + (−{kesir:1|3}) = {kesir:3|6} + (−{kesir:2|6}) = {kesir:1|6}. Paydalar eşitlenmeden paylar toplanamaz."
+    },
+    {
+     "metin": "(−0,5) + 0,5 işleminin sonucu −1’dir.",
+     "dogru": false,
+     "aciklama": "Ters işaretli iki sayının toplamı sıfırdır: (−0,5) + 0,5 = 0. Mutlak değerleri toplamak yalnızca aynı işaretli sayılarda yapılır."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Her durumu, çözümünde kullanılacak sayı cümlesiyle eşleştir.",
+   "ciftler": [
+    [
+     "Sıcaklık −3 °C iken 7 °C düşüyor.",
+     "−3 − 7"
+    ],
+    [
+     "Yüzeyin 2,5 m altındaki balık 1,5 m yükseliyor.",
+     "−2,5 + 1,5"
+    ],
+    [
+     "12 TL borcu olan Ali’ye 20 TL harçlık veriliyor.",
+     "−12 + 20"
+    ],
+    [
+     "Sıcaklık −4 °C’den 5 °C’ye çıkıyor; değişim kaç derece?",
+     "5 − (−4)"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Aynı işaretli iki sayı toplanırken mutlak değerler toplanır, sonuca ___ işaret verilir.",
+     "cevap": "ortak"
+    },
+    {
+     "metin": "Bir sayıdan başka bir sayıyı çıkarmak, çıkanın ___ işaretlisini eklemektir.",
+     "cevap": "ters"
+    },
+    {
+     "metin": "Sıfır, hiçbir sayıyı değiştirmediği için toplama işleminin ___ elemanıdır.",
+     "cevap": "etkisiz"
+    }
+   ],
+   "fazla": [
+    "büyük"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Deniz, −{kesir:3|4} + (−0,7) işlemini “Mutlak değerlerin farkını aldım.” diyerek −0,05 bulmuştur. Deniz’in hatasını bul; doğru sonucu kesir ve ondalık gösterimle ayrı ayrı hesapla.",
+   "ipuclari": [
+    "İki sayının işaretleri aynı mı, farklı mı? Hangi durumda mutlak değerlerin farkı alınır?",
+    "−{kesir:3|4}’ü ondalığa, −0,7’yi kesre çevirip iki yoldan da dene."
+   ],
+   "cevap": "İki sayı da negatiftir, yani aynı işaretlidir; aynı işaretli sayılarda mutlak değerler toplanır ve ortak işaret verilir. Deniz, farklı işaretli sayılar için geçerli olan kuralı uygulamıştır. Ondalıkla −0,75 + (−0,70) = −1,45; kesirle −0,7 = −{kesir:7|10} olduğundan −{kesir:15|20} + (−{kesir:14|20}) = −{kesir:29|20} bulunur ve −{kesir:29|20} = −1,45’tir. Sayı doğrusunda −0,75’ten 0,7 birim daha sola gidildiği için sonuç −0,75’ten de küçüktür; −0,05 sıfıra yakın olduğundan makul değildir."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir sayı doğrusunda −{kesir:5|4} noktasından başlayıp önce {kesir:3|2} birim sağa, sonra {kesir:7|4} birim sola gidiliyor. Varılan noktayı bul ve bu yolculuğu tek bir sayı cümlesiyle yaz; sonucu sayı doğrusunda sayarak kontrol et.",
+   "ipuclari": [
+    "Sağa gitmek toplama, sola gitmek çıkarma demektir; sayı cümlesini buna göre kur.",
+    "Bütün sayıları paydası 4 olan kesirlere çevirip aralığı 4 eş parçaya böl."
+   ],
+   "cevap": "Sayı cümlesi −{kesir:5|4} + {kesir:3|2} − {kesir:7|4} biçimindedir. Paydaları 4 yapınca −{kesir:5|4} + {kesir:6|4} − {kesir:7|4} olur; önce −{kesir:5|4} + {kesir:6|4} = {kesir:1|4}, sonra {kesir:1|4} − {kesir:7|4} = −{kesir:6|4} = −{kesir:3|2} bulunur. Sayı doğrusunda her parça {kesir:1|4} birimdir: Sıfırın 5 parça solundan başlayıp 6 parça sağa gidince sıfırın 1 parça sağına, oradan 7 parça sola gidince sıfırın 6 parça soluna, yani −{kesir:6|4} = −1,5 noktasına varırsın. Varılan nokta −{kesir:3|2}’dir."
+  }
+ ],
+ "ozet": [
+  "Toplamada aynı işaretli sayıların mutlak değerleri toplanır ve ortak işaret verilir; farklı işaretli sayılarda mutlak değerlerin farkı alınır ve mutlak değeri büyük olanın işareti verilir.",
+  "Çıkarma, çıkanın ters işaretlisini eklemektir: a − b = a + (−b). Negatif bir sayıyı çıkarmak onun pozitifini eklemek demektir ve sonucu büyütür.",
+  "Paydaları farklı kesirlerde önce paydalar en küçük ortak katta eşitlenir, sonra paylar işaretli tam sayılar gibi toplanır; ondalık gösterimlerde virgüller hizalanır. Kesir ile ondalık bir aradaysa ortak gösterime geçilir.",
+  "Toplamanın değişme ve birleşme özellikleri, ters elemanların sıfır çifti yapması ve sıfırın etkisiz eleman olması uzun işlemleri kısaltır; çıkarmada sayıların yeri değiştirilemez.",
+  "Günlük problemlerde sıfırın altındaki sıcaklık, derinlik, borç ve zemin altındaki katlar negatif sayılarla gösterilir; sayı cümlesi kurulur, işlem yapılır ve sonuç tersten işlemle kontrol edilir. Gelecek hafta çarpma ve bölme işlemleri eklenecek."
+ ]
+}
