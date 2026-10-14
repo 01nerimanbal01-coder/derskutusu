@@ -1,0 +1,314 @@
+{
+ "sinif": 6,
+ "ders": "matematik",
+ "hafta": 5,
+ "tarih": "12-16 Ekim 2026",
+ "yayin_tarihi": "2026-10-14",
+ "unite": "Veriden Olasılığa / Sayılar ve Nicelikler (2)",
+ "konu": "Deneysel Olasılıkta Tekrar Sayısı ve Ondalık Gösterimlerin Basamak Değerleri",
+ "ciktilar": [
+  "MAT.6.6.1. Bir olayın olasılığını gözleme dayalı tahmin edebilme",
+  "MAT.6.1.5. Gerçek yaşam durumlarında ondalık gösterimlerin basamak değerlerini kesirlerden yararlanarak yorumlayabilme"
+ ],
+ "giris": "Geçen hafta deney, çıktı ve olay kavramlarını tanıdın; sonuçları çetele ve sıklık tablolarına kaydedip göreli sıklıktan deneysel olasılığa ulaştın. Bu hafta önce tekrar sayısı büyüdükçe göreli sıklığın nasıl davrandığını inceleyecek ve bir olasılık değeri belirlerken göreli sıklığa ne kadar güvenebileceğine karar vereceksin. Haftanın ikinci yarısında yeni bir üniteye geçip ondalık gösterimlerde virgülün sağındaki basamakları kesirlerle açıklayacaksın.",
+ "bolumler": [
+  {
+   "baslik": "Tekrar sayısı büyüdükçe göreli sıklık",
+   "metin": [
+    "Geçen hafta aynı deneyi aynı sayıda tekrarlayan iki kişinin farklı göreli sıklıklar bulabildiğini görmüştün. Şimdi bu farkın tekrar sayısıyla nasıl değiştiğine bak. Sınıfta herkes bir madenî parayı 10 kez atsın ve tura sayısını kaydetsin. Bir öğrenci 3 tura görürken bir başkası 7 tura görebilir; göreli sıklıklar {kesir:3|10} = %30 ile {kesir:7|10} = %70 arasında dağılır. Yalnız 10 atışa bakarak tura gelme olasılığı hakkında sağlam bir şey söylemek zordur.",
+    "Şimdi verileri birleştir. Beş öğrencinin atışlarını topladığında 50 atış olur; diyelim ki bunların 23’ü turadır. Göreli sıklık {kesir:23|50} = {kesir:46|100} = %46 bulunur. Sınıftaki 20 öğrencinin tüm atışları toplandığında 200 atışta 97 tura görülmüş olsun; göreli sıklık {kesir:97|200} = %48,5 olur. Tekrar sayısı büyüdükçe göreli sıklık %50’ye yaklaşır ve tek tek öğrencilerde görülen %30, %70 gibi uç değerler kaybolur.",
+    "Bu gözlemden bir çıkarım yapabilirsin: az sayıda tekrarda göreli sıklık bir deneyden diğerine büyük dalgalanma gösterir; tekrar sayısı büyüdükçe dalgalanma küçülür ve göreli sıklık belirli bir değerin çevresinde toplanır. Para atma deneyinde bu değer {kesir:1|2}’dir. Deneyi kimin yaptığı değil, kaç kez yapıldığı sonucu belirler."
+   ],
+   "tablo": {
+    "basliklar": ["Tekrar sayısı", "Tura sıklığı", "Göreli sıklık"],
+    "satirlar": [
+     ["10", "3", "{kesir:3|10} = %30"],
+     ["50", "23", "{kesir:23|50} = %46"],
+     ["200", "97", "{kesir:97|200} = %48,5"],
+     ["1000", "503", "{kesir:503|1000} = %50,3"]
+    ]
+   },
+   "kutular": [
+    {
+     "tur": "kural",
+     "baslik": "Tekrar sayısı ve göreli sıklık",
+     "metin": "Tekrar sayısı büyüdükçe göreli sıklık belirli bir değerin çevresinde toplanır. Az tekrarla bulunan göreli sıklık ise deneyden deneye çok değişebilir."
+    },
+    {
+     "tur": "ipucu",
+     "metin": "Sınıfta herkesin verisini tek bir tabloda birleştir. Birleşik veri, tek bir öğrencinin verisinden çok daha fazla tekrar içerdiği için daha güvenilir bir göreli sıklık verir."
+    }
+   ]
+  },
+  {
+   "baslik": "Göreli sıklıktan olasılık değerine",
+   "metin": [
+    "Bazı deneylerde sonucun ne kadar olası olduğunu önceden kestiremezsin. Bir raptiyeyi havaya attığında sivri ucu yukarı mı yoksa yana mı gelir? Raptiye simetrik olmadığı için iki çıktının eşit şanslı olduğunu söyleyemezsin. Bu durumda olasılık değerini belirlemenin yolu deney yapmaktır: raptiyeyi çok kez at, sivri ucun yukarı gelme sıklığını kaydet ve göreli sıklığı hesapla.",
+    "Diyelim ki 200 atışta sivri uç 124 kez yukarı geldi. Göreli sıklık {kesir:124|200} = {kesir:62|100} = 0,62’dir. Tekrar sayısı yeterince büyük olduğu için bu göreli sıklığı sivri ucun yukarı gelme olasılığının değeri olarak kullanabilirsin: olasılık yaklaşık 0,62, yani %62’dir. Elindeki en çok tekrarlı veriden bulduğun göreli sıklık, olasılık değeri için en güvenilir dayanaktır.",
+    "Olasılık değerini bir kez belirledikten sonra gelecekteki sonuçları tahmin etmekte kullanırsın. Aynı raptiye 500 kez atılırsa sivri ucun yaklaşık 500 × {kesir:62|100} = 310 kez yukarı gelmesini beklersin. Buradaki “yaklaşık” sözcüğü önemlidir; deney sonuçları her tekrarda değişebildiğinden 305 ya da 318 gibi bir sonuç da çıkabilir. Olasılık değeri sana kesin sayıyı değil, beklenen düzeyi söyler.",
+    "Göreli sıklığı olasılık değeri olarak kullanırken iki soruyu kendine sor: deney yeterince tekrarlandı mı ve deney her seferinde aynı koşullarda mı yapıldı? 10 atışlık bir veriye dayanarak “olasılık 0,7” demek aceleci bir yargıdır; raptiye bir kısım atışta halıya, bir kısım atışta mermer zemine atılmışsa koşullar değişmiş demektir. Bu sorulara olumlu cevap verebiliyorsan göreli sıklık olasılık için iyi bir tahmindir."
+   ],
+   "kutular": [
+    {
+     "tur": "kural",
+     "baslik": "Olasılık değeri",
+     "metin": "Yeterince çok tekrarlanan bir deneyde olayın göreli sıklığı, o olayın olasılık değeri olarak kullanılır. Bu değer bir tahmindir; deney daha çok tekrarlandıkça tahmin güçlenir."
+    },
+    {
+     "tur": "dikkat",
+     "metin": "Olasılık değerinden yola çıkarak yaptığın tahminler “yaklaşık” sonuçlardır. Olasılığı 0,62 olan bir olay 500 tekrarda tam 310 kez değil, 310 civarında gerçekleşir."
+    }
+   ]
+  },
+  {
+   "baslik": "Deneysel olasılıkla karar vermek",
+   "metin": [
+    "Deneysel olasılık sana bir deney aracı hakkında yargıda bulunma imkânı da verir. Bir sayı küpünün altı yüzü eşit şanslıysa çok sayıda atışta her yüzün göreli sıklığının birbirine yakın olmasını beklersin. Bir küp 600 kez atıldığında 1, 2, 3, 4, 5 ve 6 sayılarının sıklıkları sırasıyla 78, 79, 80, 78, 75 ve 210 olsun. 6 gelme olayının göreli sıklığı {kesir:210|600} = {kesir:35|100} = %35’tir; öteki yüzlerin her biri ise %13 dolayında kalır.",
+    "600 tekrar, göreli sıklıkların kararlı hâle gelmesi için yeterince büyük bir sayıdır. Buna rağmen 6’nın göreli sıklığı diğerlerinin neredeyse üç katıdır. Bu durumda küpün yüzlerinin eşit şanslı olmadığına, örneğin bir yüzünün ağırlaştırılmış olduğuna karar verebilirsin. Aynı fark 12 atışta görülseydi böyle bir karar veremezdin; 12 atışta 4 kez 6 gelmesi sıradan bir dalgalanma olabilir.",
+    "Deneysel olasılıkla bilinmeyeni tahmin de edebilirsin. Bir torbada 20 boncuk var ama renklerini göremiyorsun. Boncuğu her seferinde geri koyarak 100 çekiliş yaptığında 24 kez kırmızı, 76 kez mavi geldi. Kırmızı için göreli sıklık {kesir:24|100} = 0,24’tür ve {kesir:1|4}’e yakındır; bu yüzden torbadaki boncukların yaklaşık dörtte birinin, yani 5 kadarının kırmızı olduğunu tahmin edersin. Torbayı açıp saydığında 4 ya da 6 kırmızı boncuk da çıkabilir; deneysel tahmin kesin sayıyı değil, en akla yakın değeri verir."
+   ],
+   "tablo": {
+    "basliklar": ["Üst yüze gelen sayı", "Sıklık (600 atış)", "Göreli sıklık (yaklaşık)"],
+    "satirlar": [
+     ["1", "78", "%13"],
+     ["2", "79", "%13,2"],
+     ["3", "80", "%13,3"],
+     ["4", "78", "%13"],
+     ["5", "75", "%12,5"],
+     ["6", "210", "%35"]
+    ]
+   },
+   "kutular": [
+    {
+     "tur": "bilgi",
+     "metin": "Yüzleri eşit şanslı bir küpte çok sayıda atış sonunda her yüzün göreli sıklığı birbirine yakın çıkar. Bir yüzün göreli sıklığı ötekilerden sürekli ve belirgin biçimde büyükse küpün hileli olduğunu düşünebilirsin."
+    },
+    {
+     "tur": "ipucu",
+     "metin": "Bir fark görünce hemen karar verme; önce tekrar sayısının yeterli olup olmadığını sor. Az tekrarda büyük farklar olağandır."
+    }
+   ]
+  },
+  {
+   "baslik": "Virgülün sağındaki basamaklar",
+   "metin": [
+    "Bir bütünü 10 eş parçaya böldüğünde her parça bütünün {kesir:1|10}’udur; bu kesrin ondalık gösterimi 0,1’dir ve “onda bir” diye okunur. Parçalardan birini yeniden 10 eş parçaya bölersen bütün 100 eş parçaya ayrılmış olur; her küçük parça {kesir:1|100} = 0,01, yani “yüzde bir”dir. Bir adım daha atıp bütünü 1000 eş parçaya böldüğünde her parça {kesir:1|1000} = 0,001, yani “binde bir” olur.",
+    "Bu üç kesir, ondalık gösterimde virgülün sağındaki basamakların adlarını verir. Virgülden hemen sonraki basamak onda birler, onun sağındaki yüzde birler, onun da sağındaki binde birler basamağıdır. 2,357 sayısında 2 birler, 3 onda birler, 5 yüzde birler ve 7 binde birler basamağındadır. Sayı “iki tam binde üç yüz elli yedi” diye okunur; çünkü virgülün sağındaki 357, binde birlik parçaların sayısıdır.",
+    "Basamaklar arasındaki ilişki virgülün solundakiyle aynıdır: her basamak sağındakinin 10 katıdır. 10 tane binde birlik bir yüzde birlik eder, 10 tane yüzde birlik bir onda birlik eder, 10 tane onda birlik de bir bütün eder. Bunu metre şeridinde görebilirsin: 1 metre 10 desimetre, 100 santimetre ve 1000 milimetredir; yani 1 dm = 0,1 m, 1 cm = 0,01 m ve 1 mm = 0,001 m."
+   ],
+   "tablo": {
+    "basliklar": ["Basamak", "Kesir", "Ondalık gösterim", "Okunuşu"],
+    "satirlar": [
+     ["Onda birler", "{kesir:1|10}", "0,1", "onda bir"],
+     ["Yüzde birler", "{kesir:1|100}", "0,01", "yüzde bir"],
+     ["Binde birler", "{kesir:1|1000}", "0,001", "binde bir"]
+    ]
+   },
+   "kutular": [
+    {
+     "tur": "tanim",
+     "baslik": "Virgülün sağındaki basamaklar",
+     "metin": "Ondalık gösterimde virgülden sonra sırasıyla onda birler ({kesir:1|10}), yüzde birler ({kesir:1|100}) ve binde birler ({kesir:1|1000}) basamakları gelir. Her basamak sağındakinin 10 katıdır."
+    },
+    {
+     "tur": "hatirla",
+     "metin": "Virgülün solundaki kısım tam kısım, sağındaki kısım ondalık kısımdır. 2,357 sayısında tam kısım 2, ondalık kısım 357’dir."
+    }
+   ]
+  },
+  {
+   "baslik": "Basamak değeri: rakam ile basamağın çarpımı",
+   "metin": [
+    "Bir rakamın basamak değeri, o rakam ile bulunduğu basamağın değerinin çarpımıdır. 2,357 sayısında 3 rakamı onda birler basamağında olduğundan basamak değeri 3 × {kesir:1|10} = {kesir:3|10}, yani 0,3’tür. 5 rakamı yüzde birler basamağındadır: 5 × {kesir:1|100} = {kesir:5|100} = 0,05. 7 rakamı ise binde birler basamağındadır: 7 × {kesir:1|1000} = {kesir:7|1000} = 0,007. Birler basamağındaki 2 rakamının basamak değeri 2 × 1 = 2’dir.",
+    "Aynı rakam farklı basamaklarda farklı değer taşır. 4,44 sayısındaki üç 4 rakamının basamak değerleri sırasıyla 4, {kesir:4|10} ve {kesir:4|100}’dür; soldaki her 4, sağındakinin 10 katı değerindedir. 0,5 ile 0,05 sayılarını karıştırmamanın yolu da budur: ilkinde 5 rakamı onda birler basamağında ve {kesir:5|10} değerinde, ikincisinde yüzde birler basamağında ve {kesir:5|100} değerindedir. 0,5 sayısı 0,05’in 10 katıdır.",
+    "Sıfırlar yer tutucudur, atılamaz. 0,205 sayısında 2 onda birler, 0 yüzde birler ve 5 binde birler basamağındadır; 5 rakamının basamak değeri {kesir:5|1000}’dir. Aradaki sıfırı silip 0,25 yazarsan 5 rakamı yüzde birler basamağına kayar ve değeri {kesir:5|100} olur; sayı değişir. Virgülün solundaki sıfır da tam kısmın olmadığını gösterir: 0,7 sayısında tam kısım yoktur, yalnız 7 onda birlik vardır."
+   ],
+   "tablo": {
+    "basliklar": ["Sayı", "7 rakamının basamağı", "Basamak değeri"],
+    "satirlar": [
+     ["7,2", "birler", "7"],
+     ["0,7", "onda birler", "{kesir:7|10} = 0,7"],
+     ["3,07", "yüzde birler", "{kesir:7|100} = 0,07"],
+     ["1,257", "binde birler", "{kesir:7|1000} = 0,007"]
+    ]
+   },
+   "kutular": [
+    {
+     "tur": "kural",
+     "baslik": "Basamak değeri",
+     "metin": "Basamak değeri = rakam × basamağın değeri. Onda birler basamağındaki 3’ün değeri 3 × {kesir:1|10} = {kesir:3|10}, binde birler basamağındaki 3’ün değeri 3 × {kesir:1|1000} = {kesir:3|1000}’dir."
+    },
+    {
+     "tur": "dikkat",
+     "metin": "Ondalık kısımdaki sıfırları atma. 0,205 ile 0,25 farklı sayılardır; ilkinde 5 binde birler, ikincisinde yüzde birler basamağındadır."
+    }
+   ]
+  },
+  {
+   "baslik": "Ondalık gösterimi kesirlerin toplamı olarak yazmak",
+   "metin": [
+    "Bir sayıyı basamak değerlerinin toplamı biçiminde yazmaya çözümleme denir. Doğal sayılarda bunu zaten yapıyordun: 23 = 2 · 10 + 3 · 1. Ondalık gösterimlerde virgülün sağındaki basamaklar paydası 10, 100 ve 1000 olan kesirlerle çözümlenir. 23,456 sayısı şöyle açılır: 23,456 = 2 · 10 + 3 · 1 + 4 · {kesir:1|10} + 5 · {kesir:1|100} + 6 · {kesir:1|1000}. Çarpımları yazarsan 23,456 = 20 + 3 + {kesir:4|10} + {kesir:5|100} + {kesir:6|1000} olur.",
+    "Çözümleme, sayının ne anlama geldiğini açıkça gösterir: 23,456 sayısı 2 onluk, 3 birlik, 4 onda birlik, 5 yüzde birlik ve 6 binde birlikten oluşur. 0,75 sayısı {kesir:7|10} + {kesir:5|100} biçiminde, 5,08 sayısı ise 5 + {kesir:8|100} biçiminde çözümlenir; onda birler basamağındaki 0’ın değeri {kesir:0|10} = 0 olduğundan toplama yazılmaz, ama sayıda yerinde durur.",
+    "Gerçek yaşamdaki ondalık gösterimler de böyle okunur. Bir defterin fiyatı 12,75 TL ise bu 12 + {kesir:7|10} + {kesir:5|100} liradır. Bir liranın {kesir:1|100}’ü 1 kuruş, {kesir:1|10}’u 10 kuruş olduğundan {kesir:7|10} lira 70 kuruş, {kesir:5|100} lira 5 kuruş eder; fiyat 12 lira 75 kuruştur. Market terazisindeki 1,250 kg yazısı 1 + {kesir:2|10} + {kesir:5|100} + {kesir:0|1000} kilogramdır; 1 kilogramın {kesir:1|1000}’i 1 gram olduğundan bu 1 kilogram 250 gram demektir."
+   ],
+   "kutular": [
+    {
+     "tur": "kural",
+     "baslik": "Çözümleme",
+     "metin": "Ondalık gösterim, basamak değerlerinin toplamıdır: 23,456 = 20 + 3 + {kesir:4|10} + {kesir:5|100} + {kesir:6|1000}. Virgülün sağındaki basamaklar paydası 10, 100 ve 1000 olan kesirlerle yazılır."
+    },
+    {
+     "tur": "bilgi",
+     "metin": "1 lira 100 kuruş olduğundan {kesir:1|100} lira 1 kuruştur; 1 kilogram 1000 gram olduğundan {kesir:1|1000} kilogram 1 gramdır. Para ve ölçü birimleri ondalık basamakları somutlaştırır."
+    }
+   ]
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Ayşe bir madenî parayı 10 kez attı; 7 kez tura geldi. “Tura gelme olasılığı {kesir:7|10}’dur, bu para hilelidir.” diyor. Ayşe’nin yargısını değerlendir.",
+   "cevap": "Göreli sıklık doğru hesaplanmış: {kesir:7|10} = %70. Ancak 10 tekrar çok azdır; az tekrarda göreli sıklık deneyden deneye büyük dalgalanma gösterir ve aynı parayla yapılan başka bir 10 atışta 3 ya da 4 tura gelmesi olağandır. Bu veriyle paranın hileli olduğuna karar verilemez. Ayşe deneyi çok daha fazla, örneğin 200 kez tekrarlamalı; göreli sıklık o zaman da %50’den belirgin biçimde uzak kalırsa hile düşünülebilir."
+  },
+  {
+   "soru": "Sınıftaki 25 öğrencinin her biri aynı sayı küpünü 20 kez atıp 5 gelme sayısını kaydetti. Kerem 20 atışta 1 kez, Ela 6 kez 5 gördü. Veriler birleştirildiğinde toplam 84 kez 5 geldiği görüldü. Birleşik veride deney kaç kez yapılmıştır? Kerem’in, Ela’nın ve sınıfın bulduğu göreli sıklıkları karşılaştır.",
+   "cevap": "Birleşik veride tekrar sayısı 25 × 20 = 500’dür. Kerem için göreli sıklık {kesir:1|20} = %5, Ela için {kesir:6|20} = %30, sınıf için {kesir:84|500} = {kesir:168|1000} = %16,8’dir. Kerem ile Ela’nın sonuçları birbirinden çok uzaktır; çünkü 20 tekrar azdır. 500 tekrarlı birleşik veri daha güvenilirdir ve 5 gelme olasılığı için en uygun tahmin %16,8 dolayıdır."
+  },
+  {
+   "soru": "Bir raptiye atıldığında sivri ucunun yukarı gelme sıklığı 50 atışta 31, 200 atışta 123, 400 atışta 248 olarak kaydedildi. Her aşamadaki göreli sıklığı bul. Olasılık değeri olarak hangisini kullanırsın? Bu raptiye 1000 kez atılırsa sivri ucun yaklaşık kaç kez yukarı gelmesini beklersin?",
+   "cevap": "Göreli sıklıklar: {kesir:31|50} = {kesir:62|100} = %62; {kesir:123|200} = {kesir:615|1000} = %61,5; {kesir:248|400} = {kesir:62|100} = %62. Tekrar sayısı arttıkça göreli sıklık %62 çevresinde kararlı kalıyor. Olasılık değeri olarak en çok tekrarı olan 400 atışlık veriyi kullanırsın: yaklaşık 0,62. 1000 atışta 1000 × {kesir:62|100} = 620 olduğundan sivri ucun yaklaşık 620 kez yukarı gelmesini beklersin; tam 620 çıkması gerekmez."
+  },
+  {
+   "soru": "Bir torbada renkleri görülmeyen 30 bilye var. Bilye her seferinde geri konularak 150 çekiliş yapıldı: 51 kez sarı, 99 kez yeşil geldi. Her rengin göreli sıklığını bul ve torbada yaklaşık kaç sarı bilye olduğunu tahmin et.",
+   "cevap": "Sarı için göreli sıklık {kesir:51|150} = {kesir:34|100} = %34, yeşil için {kesir:99|150} = {kesir:66|100} = %66’dır; toplamları %100 eder. Torbadaki bilyelerin yaklaşık %34’ünün sarı olduğunu düşünürsün: 30 × {kesir:34|100} = 10,2. Bilye sayısı doğal sayı olacağından torbada yaklaşık 10 sarı ve 20 yeşil bilye olduğunu tahmin edersin. Bu bir tahmindir; torba açıldığında 9 ya da 11 sarı bilye de çıkabilir."
+  },
+  {
+   "soru": "2,375 sayısında 3, 7 ve 5 rakamlarının bulunduğu basamakları ve basamak değerlerini yaz. Sayıyı paydası 10, 100 ve 1000 olan kesirlerin toplamı olarak çözümle.",
+   "cevap": "3 onda birler basamağındadır, basamak değeri 3 × {kesir:1|10} = {kesir:3|10} = 0,3’tür. 7 yüzde birler basamağındadır, basamak değeri {kesir:7|100} = 0,07’dir. 5 binde birler basamağındadır, basamak değeri {kesir:5|1000} = 0,005’tir. Birler basamağındaki 2’nin değeri 2’dir. Çözümleme: 2,375 = 2 + {kesir:3|10} + {kesir:7|100} + {kesir:5|1000}."
+  },
+  {
+   "soru": "Market etiketinde bir peynirin kütlesi 1,250 kg olarak yazıyor. Burak “Virgülden sonraki 250, 250 gram demek.” diyor; Ceren “Sondaki sıfır gereksiz, 1,25 yazılsa da olurdu.” diyor. İkisini de basamak değerlerini kullanarak değerlendir.",
+   "cevap": "1,250 kg = 1 + {kesir:2|10} + {kesir:5|100} + {kesir:0|1000} kilogramdır. 1 kg 1000 g olduğundan {kesir:1|1000} kg 1 gramdır; {kesir:2|10} kg = 200 g, {kesir:5|100} kg = 50 g ve {kesir:0|1000} kg = 0 g eder. Toplam 250 g olduğundan Burak haklıdır. Ceren değer açısından haklıdır: sondaki sıfırın basamak değeri 0 olduğundan 1,250 ile 1,25 aynı kütledir. Ancak etiketteki sıfır gereksiz değildir; terazinin gram duyarlığında ölçtüğünü, yani binde birler basamağının da okunduğunu gösterir."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Aynı madenî parayı Ali 10, Beren 100, Ceyda 1000 kez atıp tura gelme olayının göreli sıklığını hesapladı. Hangisinin bulduğu göreli sıklık, tura gelme olasılığının değeri olarak kullanılmaya en uygundur?",
+   "secenekler": [
+    "Ali’ninki, çünkü az atışta sayım hatası yapılmaz",
+    "Beren’inki, çünkü 100 atış yeterlidir ve fazlası gereksizdir",
+    "Ceyda’nınki, çünkü tekrar sayısı en fazla olan odur",
+    "Üçü de aynı parayla yapıldığından eşit derecede uygundur"
+   ],
+   "dogru": 2,
+   "aciklama": "Tekrar sayısı büyüdükçe göreli sıklık belirli bir değere yaklaşır ve dalgalanma küçülür. 1000 atışlık veri olasılık değeri için en güvenilir dayanaktır; 10 atışın sonucu ise rastgele dalgalanmadan çok etkilenir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir sayı küpü 300 kez atıldığında 2 sayısı 48 kez geldi. 2 gelme olayının göreli sıklığı yüzde kaçtır?",
+   "secenekler": [
+    "%48",
+    "%16",
+    "%6",
+    "%20"
+   ],
+   "dogru": 1,
+   "aciklama": "Göreli sıklık {kesir:48|300} = {kesir:16|100} = %16’dır. Sıklık olan 48 doğrudan yüzde değildir; toplam tekrar sayısına oranlanır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "0,406 sayısıyla ilgili aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "6 rakamının basamak değeri {kesir:6|1000}’dir.",
+    "4 rakamı yüzde birler basamağındadır.",
+    "Sayı {kesir:4|10} + {kesir:6|100} biçiminde çözümlenir.",
+    "Ortadaki 0 atılırsa sayının değeri değişmez."
+   ],
+   "dogru": 0,
+   "aciklama": "0,406 sayısında 4 onda birler, 0 yüzde birler, 6 binde birler basamağındadır; 6’nın basamak değeri {kesir:6|1000}’dir. Çözümleme {kesir:4|10} + {kesir:6|1000} olur. Sıfır atılırsa 6 yüzde birler basamağına kayar ve sayı 0,46’ya dönüşür."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadeler doğru mu, yanlış mı?",
+   "ifadeler": [
+    {
+     "metin": "Deney sayısı arttıkça göreli sıklık genellikle belirli bir değerin çevresinde toplanır.",
+     "dogru": true,
+     "aciklama": "Az tekrarda dalgalanma büyüktür; tekrar sayısı büyüdükçe göreli sıklık kararlı bir değere yaklaşır."
+    },
+    {
+     "metin": "20 tekrarla bulunan bir göreli sıklık, 500 tekrarla bulunandan daha güvenilir bir olasılık tahmini verir.",
+     "dogru": false,
+     "aciklama": "Tam tersi: tekrar sayısı büyük olan veri daha güvenilirdir; 20 tekrar az olduğundan sonucu rastgele dalgalanma çok etkiler."
+    },
+    {
+     "metin": "0,07 sayısında 7 rakamının basamak değeri {kesir:7|100}’dür.",
+     "dogru": true,
+     "aciklama": "7 rakamı yüzde birler basamağındadır: 7 × {kesir:1|100} = {kesir:7|100}."
+    },
+    {
+     "metin": "3,5 ile 3,05 sayılarında 5 rakamının basamak değeri aynıdır.",
+     "dogru": false,
+     "aciklama": "3,5 sayısında 5 onda birler basamağındadır ve değeri {kesir:5|10}; 3,05 sayısında yüzde birler basamağındadır ve değeri {kesir:5|100}’dür."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Ondalık gösterimleri çözümlenmiş hâlleriyle eşleştir.",
+   "ciftler": [
+    ["0,35", "{kesir:3|10} + {kesir:5|100}"],
+    ["3,5", "3 + {kesir:5|10}"],
+    ["0,305", "{kesir:3|10} + {kesir:5|1000}"],
+    ["3,05", "3 + {kesir:5|100}"]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Bir olayın sıklığının toplam tekrar sayısına oranına ___ sıklık denir.",
+     "cevap": "göreli"
+    },
+    {
+     "metin": "Ondalık gösterimde virgülün hemen sağındaki basamak ___ birler basamağıdır.",
+     "cevap": "onda"
+    },
+    {
+     "metin": "{kesir:1|1000} kesrinin ondalık gösterimi olan 0,001 sayısı “___ bir” diye okunur.",
+     "cevap": "binde"
+    }
+   ],
+   "fazla": [
+    "yüzde"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Ege bir raptiyeyi 20 kez attı ve 15 kez sivri ucun yukarı geldiğini gördü. “Sivri ucun yukarı gelme olasılığı {kesir:3|4}; 100 atışta tam 75 kez yukarı gelir.” dedi. Ege’nin iki yargısını da değerlendir.",
+   "ipuclari": [
+    "Önce göreli sıklığı hesapla, sonra tekrar sayısının yeterli olup olmadığını sor.",
+    "“Tam 75 kez” ifadesindeki “tam” sözcüğü üzerinde düşün."
+   ],
+   "cevap": "Göreli sıklık {kesir:15|20} = {kesir:3|4} = %75 doğru hesaplanmıştır. Ancak 20 tekrar azdır; az tekrarda göreli sıklık çok dalgalanır, bu yüzden {kesir:3|4} değeri olasılık değeri olarak güvenilir değildir; Ege deneyi çok daha fazla tekrarlamalıdır. İkinci yargı da yanlıştır: olasılık değeri gerçekten 0,75 olsa bile 100 atışta sivri ucun tam 75 değil, yaklaşık 75 kez yukarı gelmesi beklenir; deney sonuçları her tekrarda değişebilir."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir koşucunun 100 metreyi koşma süresi 11,08 saniye olarak ölçüldü. Bu sayıdaki her rakamın basamak değerini saniye cinsinden açıkla. Arkadaşın “Virgülden sonraki 0 gereksiz, 11,8 yazalım.” diyor; haklı mı?",
+   "ipuclari": [
+    "Sayıyı paydası 10 ve 100 olan kesirlerle çözümle.",
+    "0 atılınca 8 rakamının basamağı değişir mi?"
+   ],
+   "cevap": "11,08 = 10 + 1 + {kesir:0|10} + {kesir:8|100} saniyedir: onlar basamağındaki 1’in değeri 10 saniye, birler basamağındaki 1’in değeri 1 saniye, onda birler basamağındaki 0’ın değeri 0 saniye, yüzde birler basamağındaki 8’in değeri {kesir:8|100} saniyedir, yani saniyenin yüzde sekizi. Arkadaşın haklı değildir: 0 atılırsa 8 onda birler basamağına kayar ve 11,8 = 11 + {kesir:8|10} olur; {kesir:8|10} saniye, {kesir:8|100} saniyenin 10 katıdır. 11,08 ile 11,8 farklı sürelerdir; aradaki fark {kesir:72|100} saniyedir."
+  }
+ ],
+ "ozet": [
+  "Tekrar sayısı büyüdükçe göreli sıklık belirli bir değerin çevresinde toplanır; az tekrarla bulunan göreli sıklık deneyden deneye çok değişebilir, bu yüzden sınıf verileri birleştirilir.",
+  "Yeterince çok tekrarlanan bir deneyde olayın göreli sıklığı olasılık değeri olarak kullanılır; bu değer bir tahmindir ve ondan yapılan öngörüler “yaklaşık” sonuçlardır.",
+  "Yüzleri eşit şanslı bir küpte çok sayıda atış sonunda göreli sıklıklar birbirine yakın çıkar; bir yüzün göreli sıklığı belirgin biçimde büyükse küpün hileli olduğuna karar verilebilir.",
+  "Ondalık gösterimde virgülün sağındaki basamaklar onda birler ({kesir:1|10}), yüzde birler ({kesir:1|100}) ve binde birler ({kesir:1|1000}) basamaklarıdır; her basamak sağındakinin 10 katıdır.",
+  "Basamak değeri rakam ile basamağın değerinin çarpımıdır; sıfırlar yer tutucudur ve atılamaz. Ondalık gösterim basamak değerlerinin toplamı olarak çözümlenir: 23,456 = 20 + 3 + {kesir:4|10} + {kesir:5|100} + {kesir:6|1000}.",
+  "Para ve ölçü birimleri basamak değerlerini somutlaştırır: {kesir:1|100} lira 1 kuruş, {kesir:1|100} metre 1 santimetre, {kesir:1|1000} kilogram 1 gramdır."
+ ]
+}
