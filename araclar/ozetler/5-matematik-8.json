@@ -1,0 +1,331 @@
+{
+ "sinif": 5,
+ "ders": "matematik",
+ "hafta": 8,
+ "tarih": "2-6 Kasım 2026",
+ "yayin_tarihi": "2026-10-15",
+ "unite": "Geometrik Şekiller",
+ "konu": "Kesişen Çemberlerle Üçgen İnşası: Verilen Kenarlarla Çizim, Kesişme Koşulu ve Önermelerin Katkısı",
+ "ciktilar": [
+  "MAT.5.3.7. Matematiksel araç ve teknoloji yardımıyla düzlemde iki noktada kesişen çember çiftinin merkezleri ve kesişim noktalarından biri ile inşa edilen üçgenlerin kenar özelliklerine yönelik çıkarım yapabilme"
+ ],
+ "giris": "Geçen hafta iki noktada kesişen iki çember çizdin, merkezleri ve bir kesişim noktasını birleştirerek üçgen kurdun. Yarıçaplar eşitse üçgenin ikizkenar, merkezler arasındaki uzaklık da yarıçapa eşitse eşkenar olduğunu keşfettin; varsayımlarını önermelere dönüştürdün. Bu hafta bu önermeleri işe koşacaksın: Kenar uzunlukları verilen bir üçgeni pergel ve cetvelle çizecek, hangi üç uzunlukla üçgen çizilebildiğini çemberlerin kesişip kesişmemesine bakarak bulacak, ikinci kesişim noktasının oluşturduğu dörtgeni inceleyecek ve önermelerin sana ne kazandırdığını değerlendireceksin.",
+ "bolumler": [
+  {
+   "baslik": "Geçen haftanın önermelerini hatırla",
+   "metin": [
+    "Merkezleri A ve B olan iki çember C noktasında kesişsin. ABC üçgeninde {uzunluk:AC} birinci çemberin yarıçapına, {uzunluk:BC} ikinci çemberin yarıçapına, {uzunluk:AB} ise merkezler arasındaki uzaklığa eşittir. Üçgenin çeşidi bu üç uzunluğa bağlıdır.",
+    "Geçen hafta bu ilişkilerden önermeler kurdun. Önerme, doğru olup olmadığı sınanabilen bir yargıdır. Bir önermeyi örnek çizimlerle sınarsın; tek bir karşı örnek bile önermenin o hâliyle yanlış olduğunu gösterir.",
+    "Bu hafta önermeleri yalnızca sınamayacak, onları kullanarak yeni üçgenler çizecek ve sorulara cevap vereceksin. İyi kurulmuş bir önerme, her seferinde ölçüp denemeden sonucu tahmin etmeni sağlar."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Durum",
+     "Oluşan üçgen"
+    ],
+    "satirlar": [
+     [
+      "Yarıçaplar eşit, {uzunluk:AB} yarıçaptan farklı",
+      "İkizkenar üçgen"
+     ],
+     [
+      "Yarıçaplar ve {uzunluk:AB} birbirine eşit",
+      "Eşkenar üçgen"
+     ],
+     [
+      "Yarıçaplar farklı, {uzunluk:AB} yarıçaplardan birine eşit",
+      "İkizkenar üçgen"
+     ],
+     [
+      "Yarıçaplar ve {uzunluk:AB} birbirinden farklı",
+      "Çeşitkenar üçgen"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Üçgenin kenarları",
+    "metin": "İki kenar çemberlerin yarıçaplarıdır, üçüncü kenar merkezler arasındaki uzaklıktır."
+   }
+  },
+  {
+   "baslik": "Kenarları verilen üçgeni pergelle çizmek",
+   "metin": [
+    "Kenar uzunlukları 4 cm, 5 cm ve 6 cm olan bir üçgen çizmek istediğini düşün. Önce en uzun kenarı taban olarak seçer, cetvelle 6 cm uzunluğunda bir [AB] doğru parçası çizersin. Bu doğru parçasının uçları iki çemberin merkezleri olacaktır.",
+    "Sonra pergeli 4 cm açar, sivri ucunu A noktasına koyup bir çember (ya da AB’nin üstünde kalan bir yay) çizersin. Pergeli 5 cm açar, sivri ucunu B noktasına koyup ikinci çemberi çizersin. İki çemberin kesiştiği noktaya C adını verirsin.",
+    "Son olarak A ile C’yi ve B ile C’yi cetvelle birleştirirsin. {uzunluk:AC} = 4 cm, {uzunluk:BC} = 5 cm ve {uzunluk:AB} = 6 cm olan üçgen hazırdır. Kenarları cetvelle ölçerek çizimini kontrol edebilirsin. Üç kenar da farklı olduğu için bu üçgen çeşitkenardır."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Adım",
+     "Ne yaparsın?"
+    ],
+    "satirlar": [
+     [
+      "1",
+      "En uzun kenarı [AB] olarak cetvelle çiz."
+     ],
+     [
+      "2",
+      "A merkezli, yarıçapı ikinci kenar kadar olan çemberi çiz."
+     ],
+     [
+      "3",
+      "B merkezli, yarıçapı üçüncü kenar kadar olan çemberi çiz."
+     ],
+     [
+      "4",
+      "Kesişim noktasını C olarak adlandır, A ve B ile birleştir."
+     ],
+     [
+      "5",
+      "Kenarları ölçerek kontrol et."
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Pergel ölçüyü taşır",
+    "metin": "Pergeli cetvel üzerinde istediğin uzunlukta açarsan bu uzunluğu kâğıdın her yerine kaymadan taşıyabilirsin."
+   }
+  },
+  {
+   "baslik": "Her üç uzunlukla üçgen çizilebilir mi?",
+   "metin": [
+    "Kenarları 2 cm, 3 cm ve 6 cm olan bir üçgen çizmeye çalışalım. 6 cm’lik [AB] çizilir; A merkezli 2 cm’lik ve B merkezli 3 cm’lik çemberler çizilir. Yarıçapların toplamı 2 + 3 = 5 cm’dir ve merkezler arasındaki 6 cm’den kısadır. Çemberler birbirine ulaşamaz, ortak noktaları olmaz; bu yüzden üçgen çizilemez.",
+    "Kenarlar 2 cm, 4 cm ve 6 cm olsun. Bu kez yarıçapların toplamı 2 + 4 = 6 cm’dir ve tam olarak {uzunluk:AB}’ye eşittir. Çemberler [AB] üzerinde yalnızca bir noktada birbirine değer. Bu nokta A ile B’nin arasındadır ve üç nokta aynı doğru üzerinde kalır; yine üçgen oluşmaz.",
+    "Kenarlar 4 cm, 5 cm ve 6 cm olduğunda ise 4 + 5 = 9 cm, 6 cm’den büyüktür; çemberler iki noktada kesişir ve üçgen çizilir. Bu örneklerden bir önerme kurabilirsin: “En uzun kenarı taban seçtiğimizde, öbür iki kenarın toplamı en uzun kenardan büyükse üçgen çizilebilir.”"
+   ],
+   "tablo": {
+    "basliklar": [
+     "Kenarlar (cm)",
+     "Kısa iki kenarın toplamı",
+     "Çemberler",
+     "Üçgen"
+    ],
+    "satirlar": [
+     [
+      "2, 3, 6",
+      "5 (6’dan küçük)",
+      "Kesişmez",
+      "Çizilemez"
+     ],
+     [
+      "2, 4, 6",
+      "6 (6’ya eşit)",
+      "Bir noktada değer",
+      "Çizilemez"
+     ],
+     [
+      "4, 5, 6",
+      "9 (6’dan büyük)",
+      "İki noktada kesişir",
+      "Çizilir"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Üçgen olma koşulu",
+    "metin": "Kısa iki kenarın uzunlukları toplamı en uzun kenardan büyük olmalıdır. Aksi hâlde çemberler kesişmez ya da yalnızca bir noktada değer."
+   }
+  },
+  {
+   "baslik": "İkinci kesişim noktası ve oluşan dörtgen",
+   "metin": [
+    "İki noktada kesişen çemberlerin ikinci kesişim noktasına D diyelim. D noktası da her iki çemberin üzerindedir; bu yüzden {uzunluk:AD} birinci yarıçapa, {uzunluk:BD} ikinci yarıçapa eşittir. ABD üçgeni, ABC üçgeniyle aynı kenar uzunluklarına sahiptir; [AB]’nin öbür yanında, onun ayna görüntüsü gibi durur.",
+    "A, C, B ve D noktalarını sırayla birleştirirsen ACBD dörtgeni oluşur. Yarıçaplar eşitse bu dörtgenin dört kenarı da eşit olur: {uzunluk:AC} = {uzunluk:CB} = {uzunluk:BD} = {uzunluk:DA}. Dört kenarı eşit olan bu dörtgen bir eşkenar dörtgendir.",
+    "Yarıçaplar ve merkezler arasındaki uzaklık da birbirine eşitse ACBD dörtgeni, tabanları ortak iki eşkenar üçgenden oluşur. Bu yöntem, süslemelerde ve desenlerde sık kullanılan eşkenar üçgen ve eşkenar dörtgenleri ölçmeden çizmeni sağlar."
+   ],
+   "kutu": {
+    "tur": "bilgi",
+    "baslik": "Ayna görüntüsü",
+    "metin": "İki kesişim noktası, merkezleri birleştiren doğrunun iki yanında birbirinin ayna görüntüsüdür; bu yüzden aynı uzunlukta kenarlar verirler."
+   }
+  },
+  {
+   "baslik": "Önermelerin katkısını değerlendirmek",
+   "metin": [
+    "Kurduğun önermeler sana zaman kazandırır. “Yarıçaplar ve merkezler arasındaki uzaklık eşitse üçgen eşkenardır.” önermesi sayesinde cetvelle açı ya da uzunluk ölçmeden eşkenar üçgen çizebilirsin. Pergeli bir kez açman yeterlidir.",
+    "Önermeler aynı zamanda bir çizimi kontrol etmeni sağlar. Arkadaşın “Yarıçapları 3 cm ve 5 cm olan çemberlerle eşkenar üçgen çizdim.” derse önermeni kullanarak bunun mümkün olmadığını söylersin; çünkü {uzunluk:AC} ile {uzunluk:BC} baştan farklıdır.",
+    "Bir önermenin katkısını değerlendirirken şu soruları sorarsın: Bu önerme hangi durumda işe yarar? Hangi işi kolaylaştırır? Her durumda doğru mudur, yoksa bir koşula mı bağlıdır? Örneğin üçgen olma koşulu, bir üçgeni çizmeye başlamadan önce çizilip çizilemeyeceğini söyleyerek seni boşuna uğraşmaktan kurtarır."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Önermeyi değerlendirme soruları",
+    "metin": "Ne zaman işe yarar? Neyi kolaylaştırır? Hangi koşulda doğrudur?"
+   }
+  },
+  {
+   "baslik": "Gerçek yaşamda kesişen çemberler",
+   "metin": [
+    "Bir noktanın iki farklı yere olan uzaklıkları biliniyorsa o noktanın yeri iki çemberle bulunabilir. Bir hazine haritasında “Hazine, ağaçtan 4 m, kuyudan 5 m uzaktadır.” yazdığını, ağaç ile kuyu arasının 6 m olduğunu düşün. Ağaç merkezli 4 m’lik ve kuyu merkezli 5 m’lik iki çember çizersen hazinenin olabileceği iki nokta, yani çemberlerin kesişim noktaları bulunur.",
+    "Hangi noktada olduğunu kesinleştirmek için üçüncü bir bilgiye ihtiyaç vardır; örneğin “Hazine, ağaç ile kuyuyu birleştiren yolun kuzeyindedir.” bilgisi iki noktadan birini seçmeni sağlar.",
+    "Deniz fenerlerinin ışığının ulaştığı bölgeler, bir telsizin çekim alanı ya da bir bahçe sulama fıskiyesinin suladığı alan da çemberle gösterilebilir. İki alanın ortak bölgesi, iki çemberin kesişimiyle belirlenir."
+   ],
+   "kutu": {
+    "tur": "bilgi",
+    "baslik": "Konum bulma",
+    "metin": "İki yere olan uzaklığı bilinen bir noktanın yeri, bu yerleri merkez kabul eden iki çemberin kesişim noktalarından biridir."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Kenarları 5 cm, 5 cm ve 4 cm olan bir üçgeni pergel ve cetvelle nasıl çizersin? Üçgenin çeşidi nedir?",
+   "cevap": "4 cm’lik [AB] çizilir. Pergel 5 cm açılır; A merkezli ve B merkezli iki çember (ya da yay) çizilir. Kesişim noktası C ile A ve B birleştirilir. {uzunluk:AC} = {uzunluk:BC} = 5 cm olduğu için üçgen ikizkenardır. Yarıçaplar eşit olduğundan pergeli bir kez açmak yeterlidir."
+  },
+  {
+   "soru": "Kenarları 3 cm, 4 cm ve 8 cm olan bir üçgen çizilebilir mi? Çemberlerle açıkla.",
+   "cevap": "Çizilemez. 8 cm’lik [AB] çizilir; A merkezli 3 cm’lik ve B merkezli 4 cm’lik çemberlerin yarıçapları toplamı 3 + 4 = 7 cm’dir. Bu, merkezler arasındaki 8 cm’den küçük olduğu için çemberler kesişmez ve üçgenin üçüncü köşesi bulunamaz."
+  },
+  {
+   "soru": "Yarıçapları 3 cm olan iki çemberin merkezleri arasındaki uzaklık 3 cm’dir. Kesişim noktaları C ve D ise ABC üçgeni ve ACBD dörtgeni nasıl bir şekildir?",
+   "cevap": "ABC üçgeninin bütün kenarları 3 cm’dir; üçgen eşkenardır. ABD üçgeni de eşkenardır. ACBD dörtgeninin dört kenarı da 3 cm olduğu için eşkenar dörtgendir; bu dörtgen tabanları ortak iki eşkenar üçgenden oluşur."
+  },
+  {
+   "soru": "Ece, “Yarıçapları 4 cm ve 6 cm olan çemberlerle çizdiğim üçgen hiçbir zaman ikizkenar olmaz.” diyor. Ece haklı mı?",
+   "cevap": "Haklı değildir. Merkezler arasındaki uzaklık yarıçaplardan birine eşit seçilirse üçgen ikizkenar olur. Örneğin {uzunluk:AB} = 4 cm ise kenarlar 4 cm, 6 cm, 4 cm; {uzunluk:AB} = 6 cm ise kenarlar 4 cm, 6 cm, 6 cm olur. İki durumda da iki kenar eşittir."
+  },
+  {
+   "soru": "Kenar uzunlukları 2 cm, 5 cm ve 7 cm olan bir üçgen çizmeye çalışan Arda, çemberlerin tek bir noktada değdiğini görüyor. Neden üçgen oluşmadı?",
+   "cevap": "Kısa iki kenarın toplamı 2 + 5 = 7 cm’dir ve en uzun kenara eşittir. Bu durumda çemberler [AB] üzerinde yalnızca bir noktada değer; A, değme noktası ve B aynı doğru üzerinde kalır. Üç nokta bir doğru üzerinde olduğu için üçgen oluşmaz."
+  },
+  {
+   "soru": "Bir telefon, iki baz istasyonundan birine 3 km, öbürüne 4 km uzaklıktadır. İstasyonlar arası uzaklık 5 km’dir. Telefonun yeri hakkında ne söyleyebilirsin?",
+   "cevap": "Birinci istasyon merkezli 3 km’lik ve ikinci istasyon merkezli 4 km’lik çemberler çizilir. 3 + 4 = 7 km, 5 km’den büyük olduğu için çemberler iki noktada kesişir. Telefon bu iki noktadan birindedir. Hangisinde olduğunu bulmak için üçüncü bir bilgi gerekir."
+  }
+ ],
+ "ozet": [
+  "Kesişen iki çemberle kurulan üçgende iki kenar yarıçaplara, üçüncü kenar merkezler arasındaki uzaklığa eşittir; bu uzunluklar üçgenin eşkenar, ikizkenar ya da çeşitkenar olduğunu belirler.",
+  "Kenarları verilen bir üçgen çizilirken en uzun kenar taban seçilir, uçlarına öbür kenarlar kadar yarıçaplı çemberler çizilir ve kesişim noktası köşe olur.",
+  "Kısa iki kenarın toplamı en uzun kenardan küçük ya da ona eşitse çemberler kesişmez veya yalnızca bir noktada değer; bu durumda üçgen çizilemez.",
+  "İkinci kesişim noktası aynı kenarları veren ayna görüntüsü bir üçgen oluşturur; yarıçaplar eşitse dört noktanın oluşturduğu dörtgen eşkenar dörtgendir.",
+  "Önermeler ölçmeden çizim yapmayı, çizimleri kontrol etmeyi ve çizilemeyecek üçgenleri baştan fark etmeyi sağlar; kesişen çemberler konum bulma gibi gerçek yaşam problemlerinde de kullanılır."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Aşağıdaki uzunluklardan hangileriyle bir üçgen çizilebilir?",
+   "secenekler": [
+    "1 cm, 2 cm, 4 cm",
+    "2 cm, 3 cm, 5 cm",
+    "3 cm, 4 cm, 6 cm",
+    "2 cm, 2 cm, 5 cm"
+   ],
+   "dogru": 2,
+   "aciklama": "3 + 4 = 7, en uzun kenar olan 6’dan büyüktür; üçgen çizilir. Öbürlerinde kısa iki kenarın toplamı (3, 5, 4) en uzun kenardan büyük değildir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Yarıçapları 5 cm olan iki çemberin merkezleri arasındaki uzaklık 5 cm’dir. Merkezler ve bir kesişim noktasıyla kurulan üçgen hangisidir?",
+   "secenekler": [
+    "Çeşitkenar üçgen",
+    "Eşkenar üçgen",
+    "Kenarları 5 cm, 5 cm, 10 cm olan üçgen",
+    "Üçgen kurulamaz"
+   ],
+   "dogru": 1,
+   "aciklama": "İki kenar yarıçap (5 cm), üçüncü kenar merkezler arası uzaklıktır (5 cm). Üç kenar eşit olduğu için üçgen eşkenardır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Kenarları 4 cm, 6 cm ve 7 cm olan üçgen çizilirken 7 cm’lik [AB] çizildikten sonra ne yapılır?",
+   "secenekler": [
+    "A merkezli 7 cm’lik bir çember çizilir.",
+    "A merkezli 4 cm’lik, B merkezli 6 cm’lik çemberler çizilir.",
+    "[AB]’nin ortasına 4 cm’lik bir doğru çizilir.",
+    "A ve B merkezli 7 cm’lik çemberler çizilir."
+   ],
+   "dogru": 1,
+   "aciklama": "Tabanın uçlarına öbür iki kenar kadar yarıçaplı çemberler çizilir; kesişim noktası üçgenin üçüncü köşesidir."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Her ifadenin doğru mu yanlış mı olduğuna karar ver; yanlış çıkanların açıklamasını oku.",
+   "ifadeler": [
+    {
+     "metin": "İki kesişim noktasıyla kurulan iki üçgenin kenar uzunlukları aynıdır.",
+     "dogru": true,
+     "aciklama": "İki kesişim noktası da her iki çemberin üzerindedir; bu yüzden aynı yarıçapları ve aynı tabanı paylaşırlar."
+    },
+    {
+     "metin": "Kenarları 2 cm, 4 cm ve 6 cm olan bir üçgen çizilebilir.",
+     "dogru": false,
+     "aciklama": "2 + 4 = 6 olduğu için çemberler yalnızca bir noktada değer; üç nokta aynı doğru üzerinde kalır ve üçgen oluşmaz."
+    },
+    {
+     "metin": "Yarıçapları farklı iki çemberle eşkenar üçgen kurulabilir.",
+     "dogru": false,
+     "aciklama": "Yarıçaplar farklıysa üçgenin iki kenarı baştan farklıdır; üçgen eşkenar olamaz."
+    },
+    {
+     "metin": "Yarıçapları eşit iki çemberin merkezleri ve iki kesişim noktası eşkenar dörtgen oluşturur.",
+     "dogru": true,
+     "aciklama": "Dört kenar da yarıçapa eşit olduğu için dörtgen eşkenar dörtgendir."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Her kenar üçlüsünü, çizilecek üçgenin çeşidiyle eşleştir.",
+   "ciftler": [
+    [
+     "3 cm, 3 cm, 3 cm",
+     "Eşkenar üçgen"
+    ],
+    [
+     "4 cm, 4 cm, 3 cm",
+     "İkizkenar üçgen"
+    ],
+    [
+     "3 cm, 4 cm, 5 cm",
+     "Çeşitkenar üçgen"
+    ],
+    [
+     "1 cm, 2 cm, 5 cm",
+     "Üçgen çizilemez"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Kenarları verilen bir üçgen çizilirken genellikle en uzun kenar ___ olarak seçilir.",
+     "cevap": "taban"
+    },
+    {
+     "metin": "Kısa iki kenarın toplamı en uzun kenardan ___ ise üçgen çizilebilir.",
+     "cevap": "büyük"
+    },
+    {
+     "metin": "Uzunluğu bir yerden başka bir yere ölçmeden taşımak için ___ kullanılır.",
+     "cevap": "pergel"
+    }
+   ],
+   "fazla": [
+    "küçük"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Pergel ve cetvel kullanarak kenarları 5 cm olan bir eşkenar üçgeni nasıl çizersin? Adımlarını yaz ve hangi önermeyi kullandığını belirt.",
+   "ipuclari": [
+    "Önce 5 cm’lik bir doğru parçası çiz.",
+    "Pergeli kaç santimetre açmalısın? A ve B merkezli çemberlerin yarıçapları ne olmalı?"
+   ],
+   "cevap": "5 cm’lik [AB] çizilir. Pergel 5 cm açılır; A merkezli ve B merkezli iki çember çizilir. Kesişim noktası C, A ve B ile birleştirilir. Kullanılan önerme: Yarıçaplar ve merkezler arasındaki uzaklık birbirine eşitse kurulan üçgen eşkenardır. Bu yüzden açı ya da uzunluk ölçmeden eşkenar üçgen elde edilir."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir parkta salıncak ile kaydırak arasında 8 m vardır. Bir çeşme, salıncağa 5 m, kaydırağa 4 m uzaklıktadır. Çeşmenin yerini çemberlerle nasıl bulursun? Kaç olası yer vardır?",
+   "ipuclari": [
+    "Salıncak ve kaydırağı merkez olarak düşün; yarıçaplar ne olmalı?",
+    "Yarıçapların toplamını merkezler arası uzaklıkla karşılaştır."
+   ],
+   "cevap": "Salıncak merkezli 5 m’lik ve kaydırak merkezli 4 m’lik iki çember çizilir (uygun bir ölçekle). 5 + 4 = 9 m, 8 m’den büyük olduğu için çemberler iki noktada kesişir. Çeşme bu iki noktadan birindedir; yani iki olası yer vardır. Hangisi olduğunu bulmak için ek bir bilgi gerekir."
+  }
+ ]
+}

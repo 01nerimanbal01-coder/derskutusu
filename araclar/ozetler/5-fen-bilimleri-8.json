@@ -1,0 +1,371 @@
+{
+ "sinif": 5,
+ "ders": "fen-bilimleri",
+ "hafta": 8,
+ "tarih": "2-6 Kasım 2026",
+ "yayin_tarihi": "2026-10-15",
+ "unite": "Kuvveti Tanıyalım",
+ "konu": "Kuvveti Okla Göstermek, Doğru Dinamometreyi Seçmek ve Ölçümleri Yorumlamak",
+ "ciktilar": [
+  "FB.5.2.1. Kuvveti büyüklüğü ile operasyonel tanımlayabilme"
+ ],
+ "giris": "Geçen hafta kuvvetin bir itme ya da çekme olduğunu, cisimlerin hareketini ve şeklini değiştirdiğini öğrendin. Kuvvetin büyüklüğü, yönü ve uygulama noktası olduğunu gördün; dinamometreyle kuvvet ölçüp sonuçları newton (N) birimiyle yazdın. Bu hafta kuvveti bir okla göstermeyi, ölçeceğin kuvvete uygun dinamometreyi seçmeyi, ölçeği doğru okumayı ve ölçüm hatalarını önlemeyi öğreneceksin. Ayrıca yayın uzaması ile kuvvet arasındaki düzenli ilişkiyi bir tabloyla inceleyip tahminlerde bulunacaksın.",
+ "bolumler": [
+  {
+   "baslik": "Kuvveti okla göstermek",
+   "metin": [
+    "Kuvvet gözle görülmez, ama onu bir okla gösterebiliriz. Okun başladığı nokta kuvvetin uygulama noktasını, okun ucunun baktığı taraf kuvvetin yönünü, okun uzunluğu ise kuvvetin büyüklüğünü gösterir. Büyük bir kuvvet uzun, küçük bir kuvvet kısa okla çizilir.",
+    "Örneğin her 1 cm’lik okun 2 N’luk kuvveti gösterdiğini kabul edelim. Bir kutuyu sağa doğru 6 N’luk kuvvetle itiyorsan kutunun üzerinden sağa doğru 3 cm’lik bir ok çizersin. 4 N’luk bir kuvvetle sola çekiyorsan sola doğru 2 cm’lik bir ok çizersin.",
+    "Aynı çizimde birden fazla kuvvet varsa okların uzunluklarını karşılaştırarak hangi kuvvetin daha büyük olduğunu hemen görebilirsin. Okları çizerken hep aynı ölçeği kullanmalısın; yoksa karşılaştırma yanlış olur."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Okun özelliği",
+     "Gösterdiği nitelik"
+    ],
+    "satirlar": [
+     [
+      "Okun başladığı nokta",
+      "Uygulama noktası"
+     ],
+     [
+      "Okun ucunun yönü",
+      "Kuvvetin yönü"
+     ],
+     [
+      "Okun uzunluğu",
+      "Kuvvetin büyüklüğü"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Aynı ölçek",
+    "metin": "Bir çizimdeki bütün kuvvetleri aynı ölçekle çiz: 1 cm 2 N ise 6 N için 3 cm, 4 N için 2 cm."
+   }
+  },
+  {
+   "baslik": "Uygun dinamometreyi seçmek",
+   "metin": [
+    "Dinamometreler farklı ölçüm aralıklarında üretilir. Bazısı en çok 5 N, bazısı 10 N, bazısı 50 N ölçebilir. Dinamometrenin ölçebileceği en büyük değer üzerinde yazar. Ölçeceğin kuvvete göre uygun dinamometreyi seçmen gerekir.",
+    "Ağır bir cismi küçük ölçüm aralıklı bir dinamometreye asarsan yay sonuna kadar uzar ve ibre ölçeğin dışına çıkar. Yay aşırı gerilirse esnekliğini kaybedip bozulabilir; dinamometre bir daha doğru ölçmez. Bu yüzden ağır cisimler için büyük ölçüm aralıklı dinamometre kullanılır.",
+    "Çok hafif bir cismi ise büyük ölçüm aralıklı bir dinamometreyle ölçersen ibre çok az hareket eder ve değeri okumak zorlaşır. Hafif cisimler için küçük ölçüm aralıklı dinamometre daha duyarlı ve doğru sonuç verir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Ölçülecek cisim",
+     "Uygun dinamometre",
+     "Neden?"
+    ],
+    "satirlar": [
+     [
+      "Silgi",
+      "0-5 N",
+      "Hafif cisim; küçük değerler daha iyi okunur."
+     ],
+     [
+      "Fen kitabı",
+      "0-10 N",
+      "Orta ağırlıkta cisim"
+     ],
+     [
+      "Dolu su kovası",
+      "0-50 N",
+      "Ağır cisim; küçük dinamometrenin yayı bozulabilir."
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Yayı koru",
+    "metin": "Dinamometreye ölçebileceği en büyük değerden daha büyük bir kuvvet uygulama; yay esnekliğini kaybedip bozulabilir."
+   }
+  },
+  {
+   "baslik": "Ölçeği doğru okumak",
+   "metin": [
+    "Dinamometrenin ölçeğinde büyük çizgilerin yanında sayılar, aralarında ise küçük bölme çizgileri bulunur. Doğru okuma yapmak için önce bir küçük bölmenin kaç newton olduğunu bulursun. Örneğin 0 ile 10 N arası 5 eşit bölmeye ayrılmışsa her bölme 2 N’dur.",
+    "İbre 0’dan sonraki üçüncü küçük çizgide duruyorsa okuyacağın değer 3 × 2 = 6 N olur. İbre iki çizginin tam ortasında duruyorsa iki değerin ortasını alırsın: 4 N ile 6 N’un ortası 5 N’dur.",
+    "Okuma yaparken gözünü ibreyle aynı hizaya getirirsin. Ölçeğe yukarıdan ya da aşağıdan eğik bakarsan ibrenin yerini yanlış görürsün. Ayrıca ölçüme başlamadan önce kancada hiçbir şey yokken ibrenin sıfırı gösterip göstermediğini kontrol edersin."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Ölçek",
+     "Bir bölme",
+     "İbre",
+     "Okunan değer"
+    ],
+    "satirlar": [
+     [
+      "0-10 N, 5 bölme",
+      "2 N",
+      "3. çizgi",
+      "6 N"
+     ],
+     [
+      "0-10 N, 10 bölme",
+      "1 N",
+      "7. çizgi",
+      "7 N"
+     ],
+     [
+      "0-50 N, 10 bölme",
+      "5 N",
+      "4. çizgi",
+      "20 N"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Önce bölmeyi bul",
+    "metin": "İki sayı arasındaki farkı, aradaki bölme sayısına böl. Böylece bir küçük bölmenin değerini bulursun."
+   }
+  },
+  {
+   "baslik": "Ölçüm hatalarını önlemek",
+   "metin": [
+    "Aynı cismi ölçen iki arkadaşın farklı sonuçlar bulması mümkündür. Bunun nedeni çoğu zaman ölçüm sırasında yapılan küçük hatalardır. Bu hataları bilirsen önleyebilirsin.",
+    "En sık yapılan hatalar şunlardır: İbre başta sıfırda değilken ölçüme başlamak, cisim sallanırken okuma yapmak, ölçeğe eğik bakmak ve dinamometreyi dik tutmamak. Dinamometre yan tutulursa yay kasaya sürtünür ve değer yanlış çıkar.",
+    "Güvenilir bir sonuç için ölçümü birkaç kez tekrarlarsın. Sonuçlar birbirine çok yakınsa ölçümün güvenilirdir. Biri ötekilerden çok farklıysa o ölçümü yeniden yaparsın; çünkü bir hata yapılmış olabilir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Hata",
+     "Önlem"
+    ],
+    "satirlar": [
+     [
+      "İbre başta sıfırda değil",
+      "Ölçümden önce sıfır ayarını yap."
+     ],
+     [
+      "Cisim sallanırken okuma",
+      "Cismin durmasını bekle."
+     ],
+     [
+      "Ölçeğe eğik bakma",
+      "Gözünü ibreyle aynı hizaya getir."
+     ],
+     [
+      "Dinamometreyi yan tutma",
+      "Dinamometreyi dik tut."
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Tekrarlı ölçüm",
+    "metin": "Ölçümü en az üç kez yap. Sonuçlar yakınsa güvenilirdir; çok farklı olanı yeniden ölç."
+   }
+  },
+  {
+   "baslik": "Yay ne kadar uzar? Düzenli bir ilişki",
+   "metin": [
+    "Bir yayın ucuna farklı kuvvetler uygulayıp yayın ne kadar uzadığını ölçelim. 1 N’luk kuvvette yay 2 cm, 2 N’luk kuvvette 4 cm, 3 N’luk kuvvette 6 cm uzasın. Kuvvet her 1 N arttığında yay 2 cm daha uzar. Bu düzenli ilişkiye bakarak 4 N’luk kuvvette yayın 8 cm uzayacağını tahmin edebilirsin.",
+    "Dinamometreler bu düzenli ilişki sayesinde çalışır. Uzama kuvvetle düzenli arttığı için ölçek eşit aralıklı çizgilerle bölünebilir. İbre ne kadar aşağı inerse kuvvet o kadar büyüktür.",
+    "Ancak bu düzen sınırsız değildir. Yaya çok büyük bir kuvvet uygulanırsa yay aşırı gerilir ve kuvvet kalktığında eski hâline dönmez. Bu yüzden dinamometrenin ölçüm aralığının dışına çıkılmaz."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Kuvvet (N)",
+     "Yayın uzaması (cm)"
+    ],
+    "satirlar": [
+     [
+      "1",
+      "2"
+     ],
+     [
+      "2",
+      "4"
+     ],
+     [
+      "3",
+      "6"
+     ],
+     [
+      "4",
+      "8 (tahmin)"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "bilgi",
+    "baslik": "Eşit aralıklı ölçek",
+    "metin": "Yayın uzaması kuvvetle düzenli arttığı için dinamometrenin ölçeği eşit aralıklı çizgilerle bölünür."
+   }
+  },
+  {
+   "baslik": "Kuvvetleri karşılaştırmak ve günlük hayatta ölçüm",
+   "metin": [
+    "Ölçtüğün kuvvetleri karşılaştırmak için bir tablo ya da sütun grafiği çizebilirsin. Grafikte her cisim için bir sütun çizer, sütunun boyunu ölçtüğün kuvvete göre ayarlarsın. En uzun sütun en büyük kuvveti gösterir. İki değerin farkını bularak hangi cismin ne kadar daha büyük bir kuvvet uyguladığını söylersin.",
+    "Günlük hayatta da kuvvet ve ağırlık ölçen araçlar vardır. Valiz tartısı ya da el kantarı, içindeki yay sayesinde dinamometreye benzer biçimde çalışır. Manavlarda ve marketlerde kullanılan teraziler ise genellikle sonucu kilogram cinsinden gösterir.",
+    "Bilimde kuvvet newtonla ölçülür. Bir sonucu yazarken sayının yanına mutlaka birimini eklersin: “Çantam 30 N’luk kuvvetle dinamometreyi çekti.” Birimsiz yazılan “30” sayısı, neyin ölçüldüğünü anlatmaz."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Birimi unutma",
+    "metin": "Kuvvetin büyüklüğü her zaman sayı ve birimle yazılır: 12 N. Yalnızca “12” yazmak eksiktir."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "1 cm’lik okun 5 N’luk kuvveti gösterdiği bir çizimde 15 N’luk ve 10 N’luk kuvvetler kaç santimetrelik oklarla gösterilir?",
+   "cevap": "15 N için 15 ÷ 5 = 3 cm, 10 N için 10 ÷ 5 = 2 cm’lik ok çizilir. Okların yönü kuvvetlerin yönüne göre çizilir; uzun ok daha büyük kuvveti gösterir."
+  },
+  {
+   "soru": "En çok 10 N ölçebilen bir dinamometreye yaklaşık 40 N’luk bir cisim asılırsa ne olur? Hangi dinamometre seçilmelidir?",
+   "cevap": "Yay aşırı uzar, ibre ölçeğin dışına çıkar ve yay esnekliğini kaybederek bozulabilir. Bu cismi ölçmek için 40 N’dan daha büyük değerleri ölçebilen, örneğin 0-50 N’luk bir dinamometre seçilmelidir."
+  },
+  {
+   "soru": "Bir dinamometrenin ölçeğinde 0 ile 20 N arası 10 eşit bölmeye ayrılmıştır. İbre 0’dan sonraki 6. çizgide durursa okunan değer kaçtır?",
+   "cevap": "Bir bölme 20 ÷ 10 = 2 N’dur. İbre 6. çizgide olduğu için okunan değer 6 × 2 = 12 N’dur."
+  },
+  {
+   "soru": "Üç arkadaş aynı kitabı ölçüp 8 N, 8 N ve 13 N buluyor. Hangi sonuç güvenilir değildir? Neden olabilir?",
+   "cevap": "13 N güvenilir değildir; çünkü öbür iki ölçümden çok farklıdır. Bu arkadaş ibre sıfırda değilken ölçmüş, cisim sallanırken okumuş ya da ölçeğe eğik bakmış olabilir. Ölçüm yeniden yapılmalıdır."
+  },
+  {
+   "soru": "Bir yay 1 N’luk kuvvetle 3 cm, 2 N’luk kuvvetle 6 cm uzuyor. 4 N’luk kuvvetle kaç santimetre uzamasını beklersin?",
+   "cevap": "Kuvvet her 1 N arttığında yay 3 cm uzuyor. 4 N’luk kuvvette 4 × 3 = 12 cm uzaması beklenir. Bu tahmin, kuvvet dinamometrenin ölçüm aralığını aşmadığı sürece geçerlidir."
+  },
+  {
+   "soru": "Bir öğrenci ölçüm sonucunu deftere “Su şişesi: 10” diye yazmıştır. Bu yazımda eksik olan nedir?",
+   "cevap": "Birim eksiktir. Kuvvetin büyüklüğü sayı ve birimle yazılmalıdır: “Su şişesi: 10 N.” Birim olmadan neyin ölçüldüğü anlaşılmaz."
+  }
+ ],
+ "ozet": [
+  "Kuvvet okla gösterilir: Okun başladığı nokta uygulama noktasını, ucu yönü, uzunluğu büyüklüğü belirtir; bir çizimdeki bütün oklar aynı ölçekle çizilir.",
+  "Dinamometre, ölçülecek kuvvete göre seçilir: Ağır cisimler için büyük, hafif cisimler için küçük ölçüm aralıklı dinamometre kullanılır; ölçüm aralığını aşmak yayı bozabilir.",
+  "Ölçek okunurken önce bir küçük bölmenin değeri bulunur; göz ibreyle aynı hizada tutulur ve ölçümden önce sıfır ayarı yapılır.",
+  "Cisim sallanırken okumak, eğik bakmak ve dinamometreyi yan tutmak ölçüm hatasına yol açar; ölçüm birkaç kez tekrarlanır.",
+  "Yayın uzaması kuvvet arttıkça düzenli olarak artar; bu yüzden dinamometrenin ölçeği eşit aralıklıdır. Ölçüm sonuçları sayı ve birimle (N) yazılır, tablo ve grafikle karşılaştırılır."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Bir kuvveti gösteren okun uzunluğu kuvvetin hangi niteliğini belirtir?",
+   "secenekler": [
+    "Yönünü",
+    "Büyüklüğünü",
+    "Uygulama noktasını",
+    "Birimini"
+   ],
+   "dogru": 1,
+   "aciklama": "Okun uzunluğu büyüklüğü, ucunun yönü kuvvetin yönünü, başladığı nokta uygulama noktasını gösterir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir silginin uyguladığı kuvveti en doğru biçimde ölçmek için hangi dinamometre seçilmelidir?",
+   "secenekler": [
+    "0-5 N",
+    "0-50 N",
+    "0-100 N",
+    "0-200 N"
+   ],
+   "dogru": 0,
+   "aciklama": "Silgi çok hafif olduğu için küçük ölçüm aralıklı dinamometre daha duyarlı sonuç verir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "0 ile 10 N arası 5 eşit bölmeye ayrılmış bir ölçekte ibre 4. çizgide durmaktadır. Okunan değer kaçtır?",
+   "secenekler": [
+    "4 N",
+    "5 N",
+    "8 N",
+    "10 N"
+   ],
+   "dogru": 2,
+   "aciklama": "Bir bölme 10 ÷ 5 = 2 N’dur; 4 × 2 = 8 N okunur."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Her ifadenin doğru mu yanlış mı olduğuna karar ver; yanlış çıkanların açıklamasını oku.",
+   "ifadeler": [
+    {
+     "metin": "Ölçüme başlamadan önce ibrenin sıfırda olup olmadığı kontrol edilmelidir.",
+     "dogru": true,
+     "aciklama": "İbre başta sıfırda değilse bütün ölçümler hatalı çıkar."
+    },
+    {
+     "metin": "Cisim sallanırken yapılan okuma en doğru sonucu verir.",
+     "dogru": false,
+     "aciklama": "Cisim sallanırken ibre oynar; okuma cisim durduktan sonra yapılmalıdır."
+    },
+    {
+     "metin": "Yayın uzaması, uygulanan kuvvet arttıkça düzenli olarak artar.",
+     "dogru": true,
+     "aciklama": "Bu düzenli ilişki sayesinde dinamometrenin ölçeği eşit aralıklıdır."
+    },
+    {
+     "metin": "Bir dinamometreye ölçebileceğinden daha büyük bir kuvvet uygulamak sakıncasızdır.",
+     "dogru": false,
+     "aciklama": "Yay aşırı gerilip esnekliğini kaybedebilir ve dinamometre bozulur."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Her ölçüm hatasını uygun önlemle eşleştir.",
+   "ciftler": [
+    [
+     "İbre başta sıfırda değil",
+     "Sıfır ayarını yapmak"
+    ],
+    [
+     "Ölçeğe eğik bakmak",
+     "Gözü ibreyle aynı hizaya getirmek"
+    ],
+    [
+     "Cisim sallanırken okumak",
+     "Cismin durmasını beklemek"
+    ],
+    [
+     "Ağır cismi küçük dinamometreyle ölçmek",
+     "Büyük ölçüm aralıklı dinamometre seçmek"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Okun ucunun baktığı taraf kuvvetin ___ gösterir.",
+     "cevap": "yönünü"
+    },
+    {
+     "metin": "Ölçeği okurken önce bir küçük ___ değerini bulursun.",
+     "cevap": "bölmenin"
+    },
+    {
+     "metin": "Kuvvetin birimi ___’dur.",
+     "cevap": "newton"
+    }
+   ],
+   "fazla": [
+    "kilogram"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir kutu sağa doğru 8 N’luk, sola doğru 4 N’luk kuvvetle çekiliyor. 1 cm’lik ok 2 N’u gösterecek biçimde bu kuvvetleri okla nasıl çizersin? Kutu hangi yöne hareket etmeye eğilimlidir?",
+   "ipuclari": [
+    "Her kuvvet için okun uzunluğunu bul: kuvvet ÷ 2.",
+    "Okları kutunun üzerinden başlat; hangi ok daha uzun?"
+   ],
+   "cevap": "8 N için sağa doğru 4 cm’lik, 4 N için sola doğru 2 cm’lik ok çizilir; iki ok da kutunun üzerinden başlar. Sağa doğru olan kuvvet daha büyük olduğu için kutu sağa doğru hareket etmeye eğilimlidir."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Grubunla bir yayın uzamasını ölçüyorsun: 1 N’da 1 cm, 2 N’da 2 cm, 3 N’da 3 cm. 5 N’da yayın kaç santimetre uzayacağını tahmin et. Tahminini nasıl sınarsın?",
+   "ipuclari": [
+    "Kuvvet 1 N arttığında uzama kaç santimetre artıyor?",
+    "Tahminini sınamak için 5 N’luk kuvveti uygulayıp cetvelle ölçebilirsin."
+   ],
+   "cevap": "Kuvvet her 1 N arttığında yay 1 cm uzuyor; 5 N’da 5 cm uzaması beklenir. Tahmini sınamak için yaya 5 N’luk kuvvet uygulanır ve uzama cetvelle ölçülür. Ölçüm birkaç kez tekrarlanır; sonuç 5 cm’ye yakınsa tahmin doğrulanmış olur."
+  }
+ ]
+}

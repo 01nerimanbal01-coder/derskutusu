@@ -1,0 +1,482 @@
+{
+ "sinif": 6,
+ "ders": "matematik",
+ "hafta": 9,
+ "tarih": "9-13 Kasım 2026",
+ "yayin_tarihi": "2026-10-15",
+ "unite": "Sayılar ve Nicelikler (2)",
+ "konu": "Kesir, Ondalık ve Yüzde Gösterimleriyle Çarpma ve Bölme Problemleri: Kesir Kadarı, Yüzde Hesapları, Şerit Modeli ve Tablo",
+ "ciktilar": [
+  "MAT.6.1.7. Gerçek yaşam durumlarında karşılaşılan kesir, ondalık ve yüzde gösterimleri ile ilgili dört işlem gerektiren problemleri çözebilme"
+ ],
+ "giris": "Geçen hafta kesirlerle toplama ve çıkarma problemlerini çözdün; paydaları eşitledin, tam sayılı kesirlerle işlem yaptın, problemleri şerit modeliyle gösterdin ve sonuçları önceden tahmin edip kontrol ettin. Bu hafta aynı yolculuğun ikinci durağındasın: çarpma ve bölme gerektiren problemler. Bir çokluğun kesir kadarını bulacak, kesirleri çarpıp bölecek, ondalık gösterimlerle para ve ölçü problemleri çözecek, yüzdeyle indirim, zam ve oran hesaplayacaksın. Kesir, ondalık ve yüzde gösterimlerinin bir arada bulunduğu çok adımlı problemlerde şerit modeli ve tablo kullanacak, her zamanki gibi önce tahmin edip sonra kontrol edeceksin. 10 Kasım’da Atatürk’ü ölüm yıl dönümünde saygıyla anıyoruz; haftanın ardından da ara tatil başlıyor.",
+ "bolumler": [
+  {
+   "baslik": "Bir çokluğun kesir kadarını bulmak",
+   "metin": [
+    "Problemlerde “bir çokluğun kesir kadarı” sorulduğunda çarpma kullanırsın. “72 sayfalık bir kitabın {kesir:5|8}’i” demek, 72’yi 8 eş parçaya ayırıp bu parçalardan 5’ini almak demektir: 72 ÷ 8 = 9, 9 × 5 = 45 sayfa. Bu işlem kısaca {kesir:5|8} × 72 = 45 biçiminde yazılır.",
+    "Şerit modeli bu düşünceyi gözle görülür hâle getirir. 72 sayfayı gösteren şeridi 8 eş parçaya bölersin; her parça 9 sayfadır. 5 parçayı boyadığında okunan 45 sayfayı, boyanmayan 3 parçada da kalan 27 sayfayı görürsün. Böylece tek bir şeritten hem okunan hem kalan sayfa sayısını okuyabilirsin.",
+    "Bir kesri doğal sayıyla çarparken payı doğal sayıyla çarpar, paydayı aynen yazarsın: 4 × {kesir:2|3} = {kesir:8|3} = 2{kesir:2|3}. Bu, {kesir:2|3} kesrini 4 kez toplamakla aynıdır. Tam sayılı kesirlerde önce bileşik kesre çevirirsin: 3 × 1{kesir:1|4} = 3 × {kesir:5|4} = {kesir:15|4} = 3{kesir:3|4}. Örneğin her biri 1{kesir:1|4} kg gelen 3 paket un toplam 3{kesir:3|4} kg’dır."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Soru",
+     "Düşünce",
+     "İşlem"
+    ],
+    "satirlar": [
+     [
+      "72’nin {kesir:5|8}’i",
+      "8 eş parça, her biri 9; 5 parça alınır",
+      "{kesir:5|8} × 72 = 45"
+     ],
+     [
+      "40’ın {kesir:3|4}’ü",
+      "4 eş parça, her biri 10; 3 parça alınır",
+      "{kesir:3|4} × 40 = 30"
+     ],
+     [
+      "150’nin {kesir:2|5}’si",
+      "5 eş parça, her biri 30; 2 parça alınır",
+      "{kesir:2|5} × 150 = 60"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Kesir kadarını bulma",
+    "metin": "Bir çokluğun {kesir:a|b} kadarı bulunurken çokluk b’ye bölünür, bulunan sonuç a ile çarpılır. Kısaca kesir ile çokluk çarpılır."
+   }
+  },
+  {
+   "baslik": "Kesirle kesri çarpmak: bir kısmın kısmı",
+   "metin": [
+    "Bazen bir bütünün değil, bir kısmın kesri sorulur. “Bir bahçenin {kesir:3|4}’üne sebze ekildi; sebze ekilen alanın {kesir:2|3}’si domatestir. Domates bahçenin ne kadarıdır?” sorusunda {kesir:3|4}’ün {kesir:2|3}’sini ararsın. Bu da {kesir:2|3} × {kesir:3|4} işlemidir.",
+    "Bunu alan modeliyle görebilirsin. Bir kareyi dikey çizgilerle 4 eş parçaya bölüp 3’ünü taralarsın (sebze). Sonra yatay çizgilerle 3 eş parçaya bölüp taralı kısmın 2 sırasını yeniden taralarsın (domates). Kare 3 × 4 = 12 küçük parçaya ayrılmıştır; iki kez taranan parça sayısı 2 × 3 = 6’dır. Domates bahçenin {kesir:6|12}’sini, yani yarısını kaplar.",
+    "Modelden kuralı çıkarırsın: İki kesir çarpılırken paylar çarpılıp paya, paydalar çarpılıp paydaya yazılır: {kesir:2|3} × {kesir:3|4} = {kesir:2 × 3|3 × 4} = {kesir:6|12} = {kesir:1|2}. Çarpmadan önce sadeleştirme yapmak işlemi kısaltır. Sıfırdan büyük bir sayıyı 1’den küçük bir kesirle çarptığında sonuç o sayıdan küçük çıkar; “çarpma her zaman büyütür” düşüncesi kesirlerde geçerli değildir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Çarpım",
+     "Önce sadeleştir",
+     "Sonuç"
+    ],
+    "satirlar": [
+     [
+      "{kesir:2|3} × {kesir:3|4}",
+      "3 ile 3, 2 ile 4",
+      "{kesir:1|2}"
+     ],
+     [
+      "{kesir:4|5} × {kesir:5|8}",
+      "5 ile 5, 4 ile 8",
+      "{kesir:1|2}"
+     ],
+     [
+      "{kesir:3|10} × {kesir:5|9}",
+      "3 ile 9, 5 ile 10",
+      "{kesir:1|6}"
+     ],
+     [
+      "1{kesir:1|2} × {kesir:2|3}",
+      "{kesir:3|2} × {kesir:2|3}",
+      "1"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Çarpma her zaman büyütmez",
+    "metin": "1’den küçük bir kesirle çarpınca sonuç küçülür: {kesir:1|2} × 10 = 5. 1’den büyük bir sayıyla çarpınca büyür: 1{kesir:1|2} × 10 = 15."
+   }
+  },
+  {
+   "baslik": "Kesirlerle bölme: kaç tane sığar, kaçar düşer?",
+   "metin": [
+    "Bölme problemlerinde iki farklı soruyla karşılaşırsın. “3 L su {kesir:1|4} L’lik bardaklara doldurulursa kaç bardak dolar?” sorusu, 3 L’nin içinde kaç tane {kesir:1|4} L olduğunu sorar. 1 L ile 4 bardak dolduğundan 3 L ile 3 × 4 = 12 bardak dolar: 3 ÷ {kesir:1|4} = 12. Sıfırdan büyük bir sayıyı 1’den küçük bir kesre bölünce sonucun büyüdüğüne dikkat et.",
+    "“{kesir:3|4} kg peynir 3 kişiye eşit paylaştırılırsa kişi başına ne kadar düşer?” sorusu ise bir paylaştırmadır: {kesir:3|4} ÷ 3 = {kesir:1|4} kg. Bir kesri bir doğal sayıya bölmek, o kesri doğal sayının tersiyle çarpmakla aynıdır: {kesir:3|4} ÷ 3 = {kesir:3|4} × {kesir:1|3} = {kesir:1|4}.",
+    "Bu iki durumdan genel bir kural çıkarırsın: Bir sayıyı bir kesre bölmek, o sayıyı kesrin çarpmaya göre tersiyle çarpmaktır. {kesir:5|8} kesrinin çarpmaya göre tersi {kesir:8|5} kesridir; çünkü çarpımları 1’dir. Örneğin 3{kesir:3|4} kg pirinç {kesir:5|8} kg’lık paketlere konursa {kesir:15|4} ÷ {kesir:5|8} = {kesir:15|4} × {kesir:8|5} = {kesir:120|20} = 6 paket dolar. Kontrol için çarpmayı kullanırsın: 6 × {kesir:5|8} = {kesir:30|8} = 3{kesir:3|4}."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Soru türü",
+     "Durum",
+     "İşlem",
+     "Sonuç"
+    ],
+    "satirlar": [
+     [
+      "Kaç tane sığar?",
+      "3 L su, {kesir:1|4} L’lik bardaklar",
+      "3 ÷ {kesir:1|4} = 3 × 4",
+      "12 bardak"
+     ],
+     [
+      "Kaçar düşer?",
+      "{kesir:3|4} kg peynir, 3 kişi",
+      "{kesir:3|4} ÷ 3 = {kesir:3|4} × {kesir:1|3}",
+      "{kesir:1|4} kg"
+     ],
+     [
+      "Kaç tane sığar?",
+      "3{kesir:3|4} kg pirinç, {kesir:5|8} kg’lık paketler",
+      "{kesir:15|4} × {kesir:8|5}",
+      "6 paket"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Kesirlerle bölme",
+    "metin": "Bölünen aynen yazılır, bölenin çarpmaya göre tersi alınarak çarpılır: {kesir:a|b} ÷ {kesir:c|d} = {kesir:a|b} × {kesir:d|c}. Bir sayı sıfıra bölünemez."
+   }
+  },
+  {
+   "baslik": "Ondalık gösterimlerle çarpma ve bölme",
+   "metin": [
+    "Para ve ölçü problemlerinde ondalık gösterimle çarpma sık karşına çıkar. Tanesi 12,75 TL olan defterden 4 tane alırsan 4 × 12,75 TL ödersin. Bunu basamaklara ayırarak düşünebilirsin: 4 × 12 = 48 ve 4 × 0,75 = 3; toplam 48 + 3 = 51 TL.",
+    "Ondalık gösterimi kesre çevirmek de işe yarar. 0,25 = {kesir:1|4} olduğundan 0,25 × 80 işlemi 80’in dörtte birini bulmak demektir; sonuç 20’dir. Kilogramı 24,80 TL olan elmadan 1,5 kg almak için 1,5 kg’ı 1 kg ve yarım kg olarak düşünürsün: 1 kg 24,80 TL, yarım kg 12,40 TL; toplam 37,20 TL ödenir.",
+    "Ondalık gösterimli bir miktarı eşit paylaştırırken bölme yaparsın. 45,60 TL’lik hesap 4 arkadaş arasında eşit bölünürse 45,60 ÷ 4 = 11,40 TL düşer. Sonucu çarpmayla kontrol edersin: 4 × 11,40 = 45,60. Virgülün yerini tahminle denetlersin: Sonuç 44 ÷ 4 = 11’e yakın olmalıdır; 1,14 ya da 114 makul değildir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Durum",
+     "İşlem",
+     "Sonuç",
+     "Tahmin"
+    ],
+    "satirlar": [
+     [
+      "4 defter, tanesi 12,75 TL",
+      "4 × 12,75",
+      "51 TL",
+      "4 × 13 = 52’ye yakın"
+     ],
+     [
+      "1,5 kg elma, kilogramı 24,80 TL",
+      "1,5 × 24,80",
+      "37,20 TL",
+      "1,5 × 25 = 37,5’e yakın"
+     ],
+     [
+      "45,60 TL hesap, 4 kişi",
+      "45,60 ÷ 4",
+      "11,40 TL",
+      "44 ÷ 4 = 11’e yakın"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Virgülün yeri",
+    "metin": "Ondalık gösterimli işlemlerde önce sayıları yuvarlayıp sonucu tahmin et. Bulduğun sonuç tahminine yakın değilse virgülü yanlış yere koymuş olabilirsin."
+   }
+  },
+  {
+   "baslik": "Yüzde ve bir çokluğun yüzdesi",
+   "metin": [
+    "Yüzde, paydası 100 olan bir kesrin kısa yazılışıdır: %35 = {kesir:35|100} = 0,35. Olasılık haftalarında göreli sıklıkları yüzdeyle yazmıştın. Bir çokluğun yüzdesini bulmak, onun kesir kadarını bulmakla aynıdır: 80’in %35’i = {kesir:35|100} × 80 = 28.",
+    "Bazı yüzdelerin kesir karşılıklarını bilmek akıldan hesaplamayı kolaylaştırır: %50 yarısı, %25 dörtte biri, %20 beşte biri, %10 onda biri, %1 yüzde biridir. Öbür yüzdeleri bunlardan kurarsın. 360’ın %15’i için önce %10’unu bulursun: 36. %5’i bunun yarısıdır: 18. Toplam 36 + 18 = 54 olur.",
+    "İndirim ve zam problemleri yüzdenin en sık kullanıldığı yerlerdir. 240 TL’lik bir ayakkabıya %20 indirim yapılırsa indirim miktarı 240’ın beşte biri, yani 48 TL’dir; yeni fiyat 240 − 48 = 192 TL olur. Tek adımda da düşünebilirsin: %20 indirimden sonra fiyatın %80’i ödenir; 0,8 × 240 = 192 TL."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Yüzde",
+     "Kesir",
+     "Ondalık",
+     "Akıldan hesap"
+    ],
+    "satirlar": [
+     [
+      "%50",
+      "{kesir:1|2}",
+      "0,5",
+      "İkiye böl"
+     ],
+     [
+      "%25",
+      "{kesir:1|4}",
+      "0,25",
+      "Dörde böl"
+     ],
+     [
+      "%20",
+      "{kesir:1|5}",
+      "0,2",
+      "Beşe böl"
+     ],
+     [
+      "%10",
+      "{kesir:1|10}",
+      "0,1",
+      "Ona böl"
+     ],
+     [
+      "%75",
+      "{kesir:3|4}",
+      "0,75",
+      "Dörde böl, üçle çarp"
+     ],
+     [
+      "%1",
+      "{kesir:1|100}",
+      "0,01",
+      "Yüze böl"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "tanim",
+    "baslik": "Yüzde",
+    "metin": "Yüzde, bir bütünün 100 eş parçasından kaçının alındığını gösterir ve % sembolüyle yazılır: {kesir:7|100} = %7 (yüzde yedi). %100 bütünün tamamıdır."
+   }
+  },
+  {
+   "baslik": "Bir sayı öbürünün yüzde kaçıdır?",
+   "metin": [
+    "Bazı problemlerde yüzde verilmez, bulunması istenir. “40 soruluk bir testte 30 doğru yapan Elif, soruların yüzde kaçını doğru yapmıştır?” sorusunda önce kısmı bütüne oranlarsın: {kesir:30|40}. Sonra bu kesri paydası 100 olan bir kesre çevirirsin: {kesir:30|40} = {kesir:3|4} = {kesir:75|100} = %75.",
+    "Kesri paydası 100 olacak biçimde genişletemiyorsan kesir-bölme ilişkisinden yararlanırsın. Bir torbadaki 40 bilyenin 9’u kırmızıysa kırmızıların oranı {kesir:9|40} olur. 9 ÷ 40 = 0,225 bulunur. Ondalık gösterimi 100 ile çarpıp % işareti koyarak yüzdeye geçersin: 0,225 × 100 = 22,5, yani %22,5.",
+    "Yüzde, büyüklükleri farklı bütünleri karşılaştırmanın adil bir yoludur. A sınıfında 25 öğrenciden 18’i, B sınıfında 30 öğrenciden 21’i kitap okuma yarışmasına katıldı. Katılan öğrenci sayısı B sınıfında daha çoktur, ama oranlara bakınca sonuç değişir: A sınıfında {kesir:18|25} = {kesir:72|100} = %72, B sınıfında {kesir:21|30} = {kesir:70|100} = %70. Katılım oranı A sınıfında daha yüksektir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Durum",
+     "Kesir",
+     "Yüzde"
+    ],
+    "satirlar": [
+     [
+      "40 sorudan 30 doğru",
+      "{kesir:30|40} = {kesir:75|100}",
+      "%75"
+     ],
+     [
+      "40 bilyeden 9 kırmızı",
+      "{kesir:9|40} = 0,225",
+      "%22,5"
+     ],
+     [
+      "A sınıfı: 25 öğrenciden 18 katılımcı",
+      "{kesir:18|25} = {kesir:72|100}",
+      "%72"
+     ],
+     [
+      "B sınıfı: 30 öğrenciden 21 katılımcı",
+      "{kesir:21|30} = {kesir:70|100}",
+      "%70"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Yüzde kaç?",
+    "metin": "Kısmı bütüne oranla. Kesri paydası 100 olacak biçimde genişlet ya da payı paydaya bölüp ondalık gösterimi bul; sonra yüzde olarak yaz."
+   }
+  },
+  {
+   "baslik": "Karışık gösterimli çok adımlı problemler",
+   "metin": [
+    "Gerçek yaşam problemlerinde kesir, ondalık ve yüzde gösterimleri bir arada bulunabilir. Örnek bir aile bütçesi düşün: “Aylık 30.000 TL’lik bütçenin {kesir:1|3}’i kiraya, %25’i mutfağa, 0,15’i faturalara ayrılıyor. Geriye ne kadar kalır?” {kesir:1|3} kesrinin ondalık gösterimi devirli olduğu için burada her kalemin TL karşılığını ayrı ayrı bulmak daha kolaydır: kira 30.000 ÷ 3 = 10.000 TL, mutfak 30.000 ÷ 4 = 7.500 TL, faturalar 0,15 × 30.000 = 4.500 TL.",
+    "Toplam harcama 10.000 + 7.500 + 4.500 = 22.000 TL’dir; geriye 30.000 − 22.000 = 8.000 TL kalır. Tablo, bu tür problemlerde verilenleri düzenlemene yardım eder: Her satıra bir harcama kalemini, gösterimini, hesabını ve TL karşılığını yazarsın. Böylece hiçbir kalemi atlamazsın ve toplamın bütçeyi aşıp aşmadığını hemen görürsün.",
+    "Çözmeden önce tahmin, çözdükten sonra kontrol yaparsın. {kesir:1|3} yaklaşık %33’tür; %25 ve %15 ile birlikte yaklaşık %73 eder. Geriye bütçenin dörtte birinden biraz fazlası, yani 7.500 TL’den biraz fazla kalmalıdır; bulduğun 8.000 TL bu tahminle uyumludur. Kontrol için kalan kısmı da kesirle yazarsın: {kesir:8000|30000} = {kesir:4|15}. Bütün kısımların toplamı 1 etmelidir: {kesir:1|3} + {kesir:1|4} + {kesir:3|20} + {kesir:4|15} = {kesir:20|60} + {kesir:15|60} + {kesir:9|60} + {kesir:16|60} = 1."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Kalem",
+     "Gösterim",
+     "Hesap",
+     "TL"
+    ],
+    "satirlar": [
+     [
+      "Kira",
+      "{kesir:1|3}",
+      "30.000 ÷ 3",
+      "10.000"
+     ],
+     [
+      "Mutfak",
+      "%25",
+      "30.000 ÷ 4",
+      "7.500"
+     ],
+     [
+      "Faturalar",
+      "0,15",
+      "0,15 × 30.000",
+      "4.500"
+     ],
+     [
+      "Kalan",
+      "{kesir:4|15}",
+      "30.000 − 22.000",
+      "8.000"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Strateji seçimi",
+    "metin": "Gösterimlerden biri devirli ondalığa dönüşüyorsa ({kesir:1|3} gibi) kesirle ya da doğrudan miktarlarla çalış. Bir yol çözüme götürmezse şerit modeli ya da tablo gibi başka bir temsile geç."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Bir okulda 360 öğrenci vardır ve öğrencilerin {kesir:5|8}’i okula servisle gelir. Servisle gelen kaç öğrenci vardır?",
+   "cevap": "Tahmin: {kesir:5|8} yarımdan biraz fazladır; sonuç 180’den biraz fazla olmalıdır. Çözüm: 360 ÷ 8 = 45, 45 × 5 = 225. Servisle 225 öğrenci gelir. Şeritte kalan 3 parça 3 × 45 = 135 öğrenciyi gösterir; 225 + 135 = 360 olduğundan sonuç doğrudur."
+  },
+  {
+   "soru": "Bir tarlanın {kesir:3|5}’üne buğday ekildi; buğday ekilen alanın {kesir:1|4}’i damlama yöntemiyle sulanıyor. Sulanan buğday alanı tarlanın ne kadarıdır? Tarla 200 dekar ise bu alan kaç dekardır?",
+   "cevap": "Bir kısmın kısmı sorulduğu için çarpılır: {kesir:1|4} × {kesir:3|5} = {kesir:3|20}. Sulanan buğday alanı tarlanın {kesir:3|20}’üdür. 200 dekarın {kesir:3|20}’ü: 200 ÷ 20 = 10, 10 × 3 = 30 dekar. Kontrol: Buğday alanı 200 × {kesir:3|5} = 120 dekar, bunun dörtte biri 30 dekardır."
+  },
+  {
+   "soru": "4{kesir:1|2} L ayran {kesir:3|4} L’lik şişelere doldurulacak. Kaç şişe gerekir?",
+   "cevap": "“Kaç tane sığar?” sorusu bölmeyle çözülür: 4{kesir:1|2} ÷ {kesir:3|4} = {kesir:9|2} × {kesir:4|3} = {kesir:36|6} = 6. 6 şişe gerekir. Kontrol: 6 × {kesir:3|4} = {kesir:18|4} = 4{kesir:1|2} L."
+  },
+  {
+   "soru": "Tanesi 160 TL olan bir oyuncağın fiyatına %15 zam yapıldı. Oyuncağın yeni fiyatı kaç TL’dir?",
+   "cevap": "160’ın %10’u 16, %5’i 8’dir; zam miktarı 16 + 8 = 24 TL’dir. Yeni fiyat 160 + 24 = 184 TL olur. Tek adımda: Zamdan sonra eski fiyatın %115’i ödenir; 1,15 × 160 = 184 TL."
+  },
+  {
+   "soru": "Atatürk Haftası’nda okul kütüphanesine 120 kitap bağışlandı. Bu kitapların 42’si Atatürk’ün hayatını anlatıyor. Bu kitaplar bağışlanan kitapların yüzde kaçıdır?",
+   "cevap": "Kısım bütüne oranlanır: {kesir:42|120}. Kesir sadeleştirilir: {kesir:42|120} = {kesir:7|20}. Payda 100 yapılır: {kesir:7|20} = {kesir:35|100} = %35. Kontrol: 120’nin %35’i {kesir:35|100} × 120 = 42’dir."
+  },
+  {
+   "soru": "Mert bir kitabın {kesir:1|4}’ini pazartesi, %35’ini salı okudu. Okumadığı 96 sayfa kaldı. Kitap kaç sayfadır?",
+   "cevap": "Gösterimler aynı türe çevrilir: {kesir:1|4} = %25. Okunan kısım %25 + %35 = %60, kalan kısım %40’tır. %40, 96 sayfaya karşılık gelir. Şeridi 10 eş parçaya bölersen kalan 4 parça 96 sayfadır; bir parça (%10) 96 ÷ 4 = 24 sayfadır. Kitap 10 × 24 = 240 sayfadır. Kontrol: 240’ın dörtte biri 60, %35’i 84; 240 − 60 − 84 = 96."
+  }
+ ],
+ "ozet": [
+  "Bir çokluğun kesir kadarı çarpmayla bulunur: Çokluk paydaya bölünür, sonuç payla çarpılır ({kesir:5|8} × 72 = 45); şerit modeli bu işlemi görselleştirir.",
+  "İki kesir çarpılırken paylar kendi aralarında, paydalar kendi aralarında çarpılır; önce sadeleştirmek işlemi kısaltır. Sıfırdan büyük bir sayıyı 1’den küçük bir kesirle çarpmak sonucu küçültür.",
+  "Bir sayıyı bir kesre bölmek, kesrin çarpmaya göre tersiyle çarpmaktır; “kaç tane sığar?” sorularında 1’den küçük bir kesre bölmek sonucu büyütür. Bölmenin sonucu çarpmayla kontrol edilir.",
+  "Yüzde paydası 100 olan bir kesirdir; bir çokluğun yüzdesi kesir kadarı gibi bulunur. Bir sayının öbürünün yüzde kaçı olduğu ise kısım bütüne oranlanıp payda 100 yapılarak bulunur.",
+  "Karışık gösterimli problemlerde gösterimler uygun türe çevrilir, veriler tablo ya da şeritle düzenlenir; sonuç önceden tahmin edilir, ters işlemle ve kısımların toplamının bütüne eşit olup olmadığına bakılarak kontrol edilir."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "{kesir:2|3} × {kesir:9|10} işleminin sonucu kaçtır?",
+   "secenekler": [
+    "{kesir:3|5}",
+    "{kesir:11|13}",
+    "{kesir:20|27}",
+    "{kesir:18|13}"
+   ],
+   "dogru": 0,
+   "aciklama": "Paylar ve paydalar çarpılır: {kesir:2 × 9|3 × 10} = {kesir:18|30} = {kesir:3|5}. {kesir:11|13} payları ve paydaları toplayınca, {kesir:20|27} ise çarpma yerine bölme yapınca bulunur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Fiyatı 640 TL olan bir ayakkabı %15 indirimle satılıyor. Ayakkabının indirimli fiyatı kaç TL’dir?",
+   "secenekler": [
+    "96 TL",
+    "625 TL",
+    "736 TL",
+    "544 TL"
+   ],
+   "dogru": 3,
+   "aciklama": "640’ın %10’u 64, %5’i 32’dir; indirim 64 + 32 = 96 TL’dir. İndirimli fiyat 640 − 96 = 544 TL olur. 96 TL indirim miktarıdır, 736 TL ise zamlı fiyattır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "6 m’lik bir kurdele {kesir:3|4} m’lik eş parçalara kesiliyor. Kaç parça elde edilir?",
+   "secenekler": [
+    "4{kesir:1|2}",
+    "8",
+    "6{kesir:3|4}",
+    "24"
+   ],
+   "dogru": 1,
+   "aciklama": "6 m’nin içinde kaç tane {kesir:3|4} m olduğu sorulur: 6 ÷ {kesir:3|4} = 6 × {kesir:4|3} = 8. Kontrol: 8 × {kesir:3|4} = 6. 4{kesir:1|2} sonucu, bölmek yerine çarpınca bulunur."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Her ifadenin doğru mu yanlış mı olduğuna karar ver; yanlış çıkanların açıklamasını oku.",
+   "ifadeler": [
+    {
+     "metin": "Bir sayıyı {kesir:1|2} kesrine bölmek, o sayıyı 2’ye bölmekle aynıdır.",
+     "dogru": false,
+     "aciklama": "{kesir:1|2} kesrine bölmek 2 ile çarpmaktır: 5 ÷ {kesir:1|2} = 10. 5’in içinde 10 tane yarım vardır."
+    },
+    {
+     "metin": "Sıfırdan farklı bir doğal sayıyı sıfırdan büyük ve 1’den küçük bir kesirle çarpınca sonuç o sayıdan küçük olur.",
+     "dogru": true,
+     "aciklama": "Örneğin {kesir:3|4} × 20 = 15 ve 15, 20’den küçüktür. Sayının yalnızca bir kısmı alınmış olur."
+    },
+    {
+     "metin": "%25, {kesir:1|4} ve 0,25 aynı değeri gösterir.",
+     "dogru": true,
+     "aciklama": "%25 = {kesir:25|100} = {kesir:1|4} = 0,25."
+    },
+    {
+     "metin": "Bir ürüne önce %10 zam, sonra %10 indirim yapılırsa ürün eski fiyatına döner.",
+     "dogru": false,
+     "aciklama": "100 TL’lik ürün %10 zamla 110 TL olur. İndirim 110 TL’nin %10’u, yani 11 TL’dir; ürün 99 TL’ye düşer. İkinci yüzde farklı bir bütünün yüzdesidir."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Her gösterimi eşit olduğu yüzdeyle eşleştir.",
+   "ciftler": [
+    [
+     "{kesir:3|4}",
+     "%75"
+    ],
+    [
+     "0,4",
+     "%40"
+    ],
+    [
+     "{kesir:1|20}",
+     "%5"
+    ],
+    [
+     "{kesir:7|25}",
+     "%28"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Bir sayının %50’sini bulmak için sayının ___ alınır.",
+     "cevap": "yarısı"
+    },
+    {
+     "metin": "Kesirlerle bölmede bölünen, bölenin çarpmaya göre ___ ile çarpılır.",
+     "cevap": "tersi"
+    },
+    {
+     "metin": "İki kesir çarpılırken paylar çarpılıp paya, paydalar çarpılıp ___ yazılır.",
+     "cevap": "paydaya"
+    }
+   ],
+   "fazla": [
+    "dörtte biri"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Zeynep aylık 500 TL harçlığının {kesir:2|5}’sini biriktiriyor, %30’unu kitaba, kalanını ulaşıma harcıyor. Ulaşıma kaç TL harcadığını şerit modeliyle göster ve hesapla.",
+   "ipuclari": [
+    "{kesir:2|5} kesrini yüzdeye çevir: paydayı 100 yap.",
+    "Şeridi 10 eş parçaya böl; her parça %10, yani 50 TL’dir."
+   ],
+   "cevap": "{kesir:2|5} = {kesir:40|100} = %40’tır. Biriktirilen ve kitaba harcanan kısım %40 + %30 = %70 eder; ulaşıma %30 kalır. Şerit 10 eş parçaya bölünür, her parça 500 ÷ 10 = 50 TL’dir: 4 parça birikim (200 TL), 3 parça kitap (150 TL), 3 parça ulaşım (150 TL). Zeynep ulaşıma 150 TL harcar. Kontrol: 200 + 150 + 150 = 500."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Deniz, 3{kesir:1|3} m kumaşın {kesir:3|5}’ünü kullanacağını ve bunun 3{kesir:3|15} m ettiğini söylüyor. Sonucun makul olup olmadığını tahminle değerlendir ve doğru sonucu bul.",
+   "ipuclari": [
+    "{kesir:3|5} yarımdan biraz fazladır. 3{kesir:1|3} m’nin yarısı kaç metredir?",
+    "Tam sayılı kesri önce bileşik kesre çevir, sonra çarp."
+   ],
+   "cevap": "Sonuç makul değildir. {kesir:3|5} yarımdan biraz fazladır; 3{kesir:1|3} m’nin yarısı 1{kesir:2|3} m olduğuna göre sonuç 2 m dolayında olmalıdır. Oysa 3{kesir:3|15} m, kumaşın neredeyse tamamıdır. Deniz yalnızca kesir kısmını çarpmış ({kesir:1|3} × {kesir:3|5} = {kesir:3|15}), tam kısmı olduğu gibi bırakmıştır. Doğrusu: 3{kesir:1|3} = {kesir:10|3}; {kesir:10|3} × {kesir:3|5} = {kesir:30|15} = 2 m."
+  }
+ ]
+}

@@ -1,0 +1,373 @@
+{
+ "sinif": 8,
+ "ders": "fen-bilimleri",
+ "hafta": 6,
+ "tarih": "19-23 Ekim 2026",
+ "yayin_tarihi": "2026-10-15",
+ "unite": "DNA ve Genetik Kod",
+ "konu": "Kalıtım Kavramları: Gen ve Alel, Baskın ve Çekinik, Genotip ve Fenotip, Saf ve Melez Döl",
+ "ciktilar": [
+  "F.8.2.2.1. Kalıtım ile ilgili kavramları tanımlar.",
+  "F.8.2.2.2. Tek karakter çaprazlamaları ile ilgili problemler çözerek sonuçlar hakkında yorum yapar."
+ ],
+ "giris": "Geçen hafta DNA’nın yapısını model üzerinde gösterdin, kendini nasıl eşlediğini öğrendin ve kalıtıma ilk adımı attın. Bu hafta kalıtımın dilini öğreneceksin: karakter, gen ve alel, baskın ve çekinik, genotip ve fenotip, saf döl ve melez döl. Bu kavramları harflerle göstermeyi öğrenecek, Mendel’in bezelyelerini tanıyacak ve ilk çaprazlamanı yapacaksın. Gelecek hafta aynı kavramlarla daha çok çaprazlama problemi çözeceksin.",
+ "bolumler": [
+  {
+   "baslik": "Karakter, gen ve alel",
+   "metin": [
+    "Canlının sahip olduğu her bir özelliğe karakter denir. Bezelyede tohum rengi, insanda göz rengi ya da kan grubu birer karakterdir. Bir karakterin oluşmasını sağlayan bilgi DNA’nın belirli bir bölümünde, yani gende bulunur.",
+    "Aynı karakter farklı biçimlerde görülebilir: Bezelye tohumu sarı ya da yeşil, çiçeği mor ya da beyaz olabilir. Aynı karakterin farklı biçimlerini belirleyen gen çeşitlerine alel denir. Tohum rengi karakteri için sarılık aleli ve yeşillik aleli vardır.",
+    "Vücut hücrelerinde kromozomlar çiftler hâlinde bulunur; her çiftin bir kromozomu anneden, öbürü babadan gelir. Bu yüzden her bireyde bir karakter için iki alel bulunur. Üreme hücrelerine (gametlere) ise bu iki alelden yalnızca biri geçer."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Kavram",
+     "Anlamı",
+     "Örnek"
+    ],
+    "satirlar": [
+     [
+      "Karakter",
+      "Canlının bir özelliği",
+      "Bezelyede tohum rengi"
+     ],
+     [
+      "Gen",
+      "Bir karakteri belirleyen DNA bölümü",
+      "Tohum rengi geni"
+     ],
+     [
+      "Alel",
+      "Aynı karakterin farklı biçimlerini belirleyen gen çeşidi",
+      "Sarılık aleli, yeşillik aleli"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "İki alel, biri gamete",
+    "metin": "Her bireyde bir karakter için iki alel bulunur: biri anneden, biri babadan gelir. Gametlere bu iki alelden yalnızca biri geçer."
+   }
+  },
+  {
+   "baslik": "Baskın ve çekinik alel",
+   "metin": [
+    "Bir bireydeki iki alel farklıysa genellikle yalnızca biri etkisini gösterir. Etkisini her durumda gösteren alele baskın, ancak iki tanesi bir araya geldiğinde etkisini gösterebilen alele çekinik denir. Bezelyede tohumun sarı olması baskın, yeşil olması çekiniktir.",
+    "Alelleri harflerle gösterirsin: Baskın alel büyük harfle (S), çekinik alel aynı harfin küçüğüyle (s) yazılır. Harf genellikle baskın özelliğin baş harfinden seçilir. Bir bireyde S ve s birlikte bulunursa S, s’nin etkisini örter ve tohum sarı olur.",
+    "Çekinik bir özelliğin görülmesi için bireyde iki çekinik alel bulunmalıdır. Yeşil tohumlu bir bezelyenin aleller ss’dir. Bu yüzden yeşil tohumlu bir bitkinin alellerini fenotipine bakarak kesin söyleyebilirsin; ama sarı tohumlu bir bitki SS de olabilir, Ss de."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Harflerle gösterim",
+    "metin": "Baskın alel büyük harf (S), çekinik alel aynı harfin küçüğü (s). Çekinik özellik yalnızca ss durumunda görülür."
+   }
+  },
+  {
+   "baslik": "Genotip ve fenotip",
+   "metin": [
+    "Bir bireyin bir karakter için taşıdığı alellerin bütününe genotip denir. Genotip harflerle yazılır: SS, Ss ya da ss. Genotip dışarıdan görülmez; DNA’da saklıdır.",
+    "Genotipin dışarıdan gözlenebilen sonucuna fenotip denir. Sarı tohum ya da yeşil tohum birer fenotiptir. Fenotip bir canlının görünüşüyle sınırlı değildir; kan grubu gibi ölçülebilen özellikler de fenotiptir.",
+    "Farklı genotipler aynı fenotipi verebilir. SS ve Ss genotipli bezelyelerin ikisinde de tohum sarıdır; çünkü iki genotipte de baskın S aleli vardır. Bu yüzden yalnızca fenotipe bakarak her zaman genotip bilinemez."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Genotip",
+     "Fenotip (S: sarı, s: yeşil)"
+    ],
+    "satirlar": [
+     [
+      "SS",
+      "Sarı tohum"
+     ],
+     [
+      "Ss",
+      "Sarı tohum"
+     ],
+     [
+      "ss",
+      "Yeşil tohum"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Aynı görünüş, farklı genotip",
+    "metin": "SS ve Ss genotipli bireylerin fenotipi aynıdır. Sarı tohumlu bir bezelyenin genotipini yalnızca rengine bakarak kesin bilemezsin."
+   }
+  },
+  {
+   "baslik": "Saf döl ve melez döl",
+   "metin": [
+    "Bir karakter için iki aleli aynı olan bireye saf döl (homozigot) denir. SS genotipli birey baskın özellik bakımından, ss genotipli birey çekinik özellik bakımından saf döldür.",
+    "İki aleli farklı olan bireye melez döl (heterozigot) denir. Ss genotipli bezelye melez döldür. Melez bireyde çekinik alel bulunur ama baskın alel tarafından örtüldüğü için fenotipte görülmez.",
+    "Saf döl bir birey, gametlerine her zaman aynı aleli verir: SS bireyin bütün gametlerinde S, ss bireyin bütün gametlerinde s bulunur. Melez birey ise gametlerinin yarısına S, yarısına s aleli verir. Bu durum, çaprazlamalarda yavruların neden farklı olabildiğini açıklar."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Genotip",
+     "Döl türü",
+     "Oluşturduğu gametler"
+    ],
+    "satirlar": [
+     [
+      "SS",
+      "Saf döl (homozigot baskın)",
+      "Yalnızca S"
+     ],
+     [
+      "Ss",
+      "Melez döl (heterozigot)",
+      "Yarısı S, yarısı s"
+     ],
+     [
+      "ss",
+      "Saf döl (homozigot çekinik)",
+      "Yalnızca s"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "tanim",
+    "baslik": "Saf döl ve melez döl",
+    "metin": "Saf döl: iki aleli aynı birey (SS, ss). Melez döl: iki aleli farklı birey (Ss)."
+   }
+  },
+  {
+   "baslik": "Mendel ve bezelye karakterleri",
+   "metin": [
+    "Kalıtımın kurallarını ilk kez ortaya koyan bilim insanı Gregor Mendel’dir. Mendel 1800’lü yıllarda bezelyelerle yaptığı çalışmalarda karakterlerin nesilden nesile nasıl aktarıldığını inceledi; sonuçlarını sayarak ve oranlar hesaplayarak yorumladı.",
+    "Bezelye bu çalışmalar için uygundur: Kolay yetişir, kısa sürede çok sayıda tohum verir ve karakterleri birbirinden net olarak ayrılan iki biçimde görülür. Tohum ya sarıdır ya yeşil; arada bir renk yoktur. Bu da sonuçları saymayı kolaylaştırır.",
+    "Bezelyede karakterlerin aktarılmasıyla ilgili kurallar başka canlılarda da benzer biçimde işler. Bu yüzden bezelyeyle öğrendiğin kavramlar ve çaprazlama yöntemi, insan dâhil diğer canlılardaki kalıtımı anlamana da yardımcı olur."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Karakter",
+     "Baskın",
+     "Çekinik",
+     "Harfler"
+    ],
+    "satirlar": [
+     [
+      "Tohum rengi",
+      "Sarı",
+      "Yeşil",
+      "S, s"
+     ],
+     [
+      "Tohum şekli",
+      "Düz (yuvarlak)",
+      "Buruşuk",
+      "D, d"
+     ],
+     [
+      "Çiçek rengi",
+      "Mor",
+      "Beyaz",
+      "M, m"
+     ],
+     [
+      "Bitki boyu",
+      "Uzun",
+      "Kısa",
+      "U, u"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "bilgi",
+    "baslik": "Neden bezelye?",
+    "metin": "Kolay yetişir, çok tohum verir ve karakterleri iki net biçimde görülür. Kurallar diğer canlılarda da benzer işler."
+   }
+  },
+  {
+   "baslik": "İlk çaprazlama: saf sarı × saf yeşil",
+   "metin": [
+    "Çaprazlama, genotipleri bilinen iki bireyin birleştirilerek yavruların genotip ve fenotiplerinin tahmin edilmesidir. Saf sarı tohumlu (SS) bir bezelye ile saf yeşil tohumlu (ss) bir bezelyeyi çaprazladığını düşün.",
+    "Önce gametleri yazarsın: SS bitkisinin bütün gametleri S, ss bitkisinin bütün gametleri s alelini taşır. Gametler birleşince her yavru bir S ve bir s alır; yavruların hepsinin genotipi Ss olur. S baskın olduğu için bütün yavruların tohumu sarıdır.",
+    "Bu çaprazlamadan önemli bir sonuç çıkar: Yeşillik aleli yavrularda kaybolmamıştır, yalnızca örtülmüştür. Bu melez yavrular kendi aralarında çaprazlanırsa yeşil tohumlu bezelyeler yeniden ortaya çıkabilir. Gelecek hafta bu durumu Punnett karesiyle adım adım inceleyeceksin."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Gametler",
+     "s",
+     "s"
+    ],
+    "satirlar": [
+     [
+      "S",
+      "Ss",
+      "Ss"
+     ],
+     [
+      "S",
+      "Ss",
+      "Ss"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Çaprazlamanın adımları",
+    "metin": "1. Ebeveynlerin genotiplerini yaz. 2. Her ebeveynin gametlerini belirle. 3. Gametleri tabloda birleştir. 4. Yavruların genotip ve fenotiplerini yaz."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Bezelyede mor çiçek (M) baskın, beyaz çiçek (m) çekiniktir. MM, Mm ve mm genotipli bezelyelerin fenotiplerini ve döl türlerini yaz.",
+   "cevap": "MM: mor çiçekli, saf döl (homozigot baskın). Mm: mor çiçekli, melez döl (heterozigot). mm: beyaz çiçekli, saf döl (homozigot çekinik)."
+  },
+  {
+   "soru": "Yeşil tohumlu bir bezelyenin genotipini kesin olarak söyleyebilir misin? Sarı tohumlu bir bezelye için ne söylersin?",
+   "cevap": "Yeşil tohum çekinik bir özellik olduğu için yalnızca ss genotipinde görülür; genotip kesin olarak ss’dir. Sarı tohumlu bezelye ise SS ya da Ss olabilir; çünkü iki genotipte de baskın S aleli sarı rengi verir. Yalnızca fenotipe bakarak hangisi olduğu kesin söylenemez."
+  },
+  {
+   "soru": "Ss genotipli bir bezelye hangi gametleri oluşturur? SS genotipli bir bezelye hangi gametleri oluşturur?",
+   "cevap": "Ss genotipli bezelye iki çeşit gamet oluşturur: gametlerin yarısı S, yarısı s alelini taşır. SS genotipli bezelye ise tek çeşit gamet oluşturur: bütün gametleri S alelini taşır."
+  },
+  {
+   "soru": "Saf uzun boylu (UU) bir bezelye ile saf kısa boylu (uu) bir bezelye çaprazlanıyor. Yavruların genotip ve fenotiplerini bul.",
+   "cevap": "UU bitkisinin bütün gametleri U, uu bitkisinin bütün gametleri u alelini taşır. Yavruların hepsi Uu genotiplidir; U baskın olduğu için hepsi uzun boyludur. Yavrular melez döldür."
+  },
+  {
+   "soru": "“Genotip” ile “fenotip” arasındaki farkı bezelye tohum rengi örneğiyle açıkla.",
+   "cevap": "Genotip, bireyin taşıdığı alellerin bütünüdür ve harflerle yazılır (SS, Ss, ss); dışarıdan görülmez. Fenotip ise genotipin gözlenebilen sonucudur; tohumun sarı ya da yeşil olmasıdır. SS ve Ss farklı genotiplerdir ama ikisinin fenotipi de sarı tohumdur."
+  },
+  {
+   "soru": "Saf sarı (SS) ile saf yeşil (ss) bezelyelerin çaprazlanmasından bütün yavrular sarı tohumlu çıkıyor. Bir öğrenci “Yeşillik aleli yok oldu.” diyor. Bu görüş doğru mudur?",
+   "cevap": "Doğru değildir. Yavruların genotipi Ss’dir; yani her yavruda bir yeşillik aleli (s) vardır. Bu alel baskın S aleli tarafından örtüldüğü için fenotipte görülmez. Melez yavrular kendi aralarında çaprazlanırsa ss genotipli, yeşil tohumlu bezelyeler yeniden ortaya çıkabilir."
+  }
+ ],
+ "ozet": [
+  "Karakter canlının bir özelliğidir; gen bir karakteri belirleyen DNA bölümü, alel ise aynı karakterin farklı biçimlerini belirleyen gen çeşididir. Her bireyde bir karakter için iki alel bulunur, gametlere bunlardan biri geçer.",
+  "Baskın alel etkisini her durumda gösterir ve büyük harfle yazılır; çekinik alel yalnızca iki tanesi bir aradayken etkisini gösterir ve küçük harfle yazılır.",
+  "Genotip bireyin taşıdığı alellerin bütünüdür (SS, Ss, ss); fenotip genotipin gözlenebilen sonucudur. SS ve Ss aynı fenotipi verir.",
+  "İki aleli aynı olan birey saf döl (homozigot), farklı olan birey melez döldür (heterozigot); saf döl tek çeşit, melez döl iki çeşit gamet oluşturur.",
+  "Mendel kalıtımın kurallarını bezelyelerle ortaya koydu. Saf sarı (SS) ile saf yeşil (ss) çaprazlandığında bütün yavrular Ss genotipli ve sarı tohumlu olur; çekinik alel kaybolmaz, örtülür."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Aşağıdaki genotiplerden hangisi melez döldür?",
+   "secenekler": [
+    "SS",
+    "ss",
+    "Ss",
+    "MM"
+   ],
+   "dogru": 2,
+   "aciklama": "Melez döl, iki aleli farklı olan bireydir: Ss. SS, ss ve MM bireylerinin iki aleli aynıdır; bunlar saf döldür."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bezelyede buruşuk tohum (d) çekinik, düz tohum (D) baskındır. Buruşuk tohumlu bir bezelyenin genotipi hangisidir?",
+   "secenekler": [
+    "DD",
+    "Dd",
+    "dD",
+    "dd"
+   ],
+   "dogru": 3,
+   "aciklama": "Çekinik özellik yalnızca iki çekinik alel bir aradayken görülür. Buruşuk tohumlu bezelyenin genotipi dd’dir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Saf mor çiçekli (MM) bir bezelye ile beyaz çiçekli (mm) bir bezelye çaprazlanırsa yavrular nasıl olur?",
+   "secenekler": [
+    "Hepsi mor çiçekli ve Mm genotipli",
+    "Hepsi beyaz çiçekli ve mm genotipli",
+    "Yarısı mor, yarısı beyaz çiçekli",
+    "Hepsi mor çiçekli ve MM genotipli"
+   ],
+   "dogru": 0,
+   "aciklama": "MM bitkisinin gametleri M, mm bitkisinin gametleri m taşır. Yavruların hepsi Mm olur; M baskın olduğu için hepsi mor çiçeklidir."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Her ifadenin doğru mu yanlış mı olduğuna karar ver; yanlış çıkanların açıklamasını oku.",
+   "ifadeler": [
+    {
+     "metin": "Her bireyde bir karakter için iki alel bulunur.",
+     "dogru": true,
+     "aciklama": "Alellerden biri anneden, öbürü babadan gelir."
+    },
+    {
+     "metin": "Fenotipi aynı olan iki bireyin genotipi de mutlaka aynıdır.",
+     "dogru": false,
+     "aciklama": "SS ve Ss genotipli bezelyelerin ikisi de sarı tohumludur; fenotip aynı olsa da genotip farklı olabilir."
+    },
+    {
+     "metin": "Melez bir birey iki çeşit gamet oluşturur.",
+     "dogru": true,
+     "aciklama": "Ss genotipli bireyin gametlerinin yarısı S, yarısı s alelini taşır."
+    },
+    {
+     "metin": "Çekinik alel, melez bireylerde etkisini gösterir.",
+     "dogru": false,
+     "aciklama": "Melez bireyde çekinik alel baskın alel tarafından örtülür; etkisini göstermesi için iki çekinik alel gerekir."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Her kavramı açıklamasıyla eşleştir.",
+   "ciftler": [
+    [
+     "Alel",
+     "Aynı karakterin farklı biçimlerini belirleyen gen çeşidi"
+    ],
+    [
+     "Genotip",
+     "Bireyin taşıdığı alellerin harflerle gösterimi"
+    ],
+    [
+     "Fenotip",
+     "Genotipin dışarıdan gözlenebilen sonucu"
+    ],
+    [
+     "Saf döl",
+     "İki aleli aynı olan birey"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Etkisini her durumda gösteren alele ___ alel denir.",
+     "cevap": "baskın"
+    },
+    {
+     "metin": "İki aleli farklı olan bireye ___ döl denir.",
+     "cevap": "melez"
+    },
+    {
+     "metin": "Kalıtımın kurallarını bezelyelerle ortaya koyan bilim insanı ___’dir.",
+     "cevap": "Mendel"
+    }
+   ],
+   "fazla": [
+    "çekinik"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Saf uzun boylu (UU) bir bezelye ile saf kısa boylu (uu) bir bezelyeyi çaprazla. Gametleri, yavruların genotipini ve fenotipini adım adım yaz.",
+   "ipuclari": [
+    "Saf döl bireyler tek çeşit gamet oluşturur.",
+    "Gametleri birleştir; U baskın olduğuna göre yavruların boyu nasıl olur?"
+   ],
+   "cevap": "1. Ebeveynler: UU × uu. 2. Gametler: UU bitkisinden yalnız U, uu bitkisinden yalnız u. 3. Birleşme: Her yavru bir U ve bir u alır. 4. Sonuç: Bütün yavruların genotipi Uu (melez döl), fenotipi uzun boydur; çünkü U baskındır."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir bahçıvanın sarı tohumlu bir bezelyesi var ama genotipinin SS mi Ss mi olduğunu bilmiyor. Bu bezelyeyi yeşil tohumlu (ss) bir bezelyeyle çaprazlarsa yavrulardan hangi sonucu çıkarabilir?",
+   "ipuclari": [
+    "SS × ss ve Ss × ss çaprazlamalarının yavrularını ayrı ayrı düşün.",
+    "Yavrular arasında yeşil tohumlu bezelye çıkarsa bu neyi gösterir?"
+   ],
+   "cevap": "Bezelye SS ise bütün gametleri S taşır ve yavruların hepsi Ss, yani sarı tohumlu olur. Bezelye Ss ise gametlerinin yarısı s taşır; s gameti ss bitkisinin s gametiyle birleşince ss, yani yeşil tohumlu yavrular da oluşur. Yavrular arasında yeşil tohumlu bezelye çıkarsa bahçıvanın bezelyesi Ss’dir; çok sayıda yavrunun hepsi sarıysa SS olduğu düşünülür."
+  }
+ ]
+}

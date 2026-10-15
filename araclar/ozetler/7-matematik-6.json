@@ -1,0 +1,343 @@
+{
+ "sinif": 7,
+ "ders": "matematik",
+ "hafta": 6,
+ "tarih": "19-23 Ekim 2026",
+ "yayin_tarihi": "2026-10-15",
+ "unite": "Sayılar ve Nicelikler (1)",
+ "konu": "Rasyonel Sayılarla Dört İşlem: İşaret Kuralları, Kesirli ve Ondalık Gösterimlerle İşlemler",
+ "ciktilar": [
+  "MAT.7.1.4. Rasyonel sayılar ve işlemler içeren gerçek yaşam problemlerini çözebilme"
+ ],
+ "giris": "Geçen hafta rasyonel sayıları sembollerle karşılaştırmayı, payda eşitleyerek ve ondalık gösterime çevirerek sıralamayı öğrendin. Bu hafta bu sayılarla toplama, çıkarma, çarpma ve bölme yapacaksın. İşaret kurallarını önce paydası 1 olan rasyonel sayılarla, yani tam sayılarla sayı doğrusu ve sayma pulları yardımıyla keşfedecek, sonra aynı kuralları kesirli ve ondalık gösterimli sayılarda kullanacaksın. Son olarak bir problemde hangi sayıların ve hangi işlemin kullanılacağını belirlemeyi deneyeceksin.",
+ "bolumler": [
+  {
+   "baslik": "Tam sayılarla toplama: sayı doğrusu ve sayma pulları",
+   "metin": [
+    "Sayı doğrusunda toplama yaparken ilk sayının bulunduğu noktadan başlarsın. İkinci sayı pozitifse o kadar birim sağa, negatifse o kadar birim sola gidersin. (−5) + 3 işleminde −5’ten başlayıp 3 birim sağa gidersin ve −2’ye ulaşırsın. (−2) + (−4) işleminde −2’den 4 birim sola gidersin ve −6’ya ulaşırsın.",
+    "Sayma pullarında her pozitif pul +1, her negatif pul −1 değerindedir. Bir pozitif pul ile bir negatif pul bir araya gelince toplamları 0 olur; bu ikiliye sıfır çifti denir. (−5) + 3 işlemi için 5 negatif ve 3 pozitif pul koyarsın. 3 sıfır çifti oluşur ve masadan kaldırılır; geriye 2 negatif pul kalır. Sonuç −2’dir.",
+    "Bu modellerden iki kural çıkar. Aynı işaretli iki sayı toplanırken mutlak değerler toplanır ve ortak işaret sonuca yazılır: (−2) + (−4) = −6. Farklı işaretli iki sayı toplanırken mutlak değeri büyük olandan küçük olan çıkarılır ve mutlak değeri büyük olan sayının işareti sonuca yazılır: (−5) + 3 = −2."
+   ],
+   "tablo": {
+    "basliklar": [
+     "İşlem",
+     "Sayı doğrusunda",
+     "Pullarla",
+     "Sonuç"
+    ],
+    "satirlar": [
+     [
+      "(+4) + (+2)",
+      "4’ten 2 birim sağa",
+      "6 pozitif pul",
+      "+6"
+     ],
+     [
+      "(−2) + (−4)",
+      "−2’den 4 birim sola",
+      "6 negatif pul",
+      "−6"
+     ],
+     [
+      "(−5) + (+3)",
+      "−5’ten 3 birim sağa",
+      "3 sıfır çifti atılır, 2 negatif kalır",
+      "−2"
+     ],
+     [
+      "(+6) + (−2)",
+      "6’dan 2 birim sola",
+      "2 sıfır çifti atılır, 4 pozitif kalır",
+      "+4"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "tanim",
+    "baslik": "Sıfır çifti",
+    "metin": "Bir pozitif ve bir negatif pulun oluşturduğu ikilidir; değeri 0’dır. Masaya sıfır çifti eklemek ya da masadan sıfır çifti kaldırmak toplamı değiştirmez."
+   }
+  },
+  {
+   "baslik": "Tam sayılarla çıkarma: ters işaretlisini eklemek",
+   "metin": [
+    "Çıkarma işleminde eksilenin pullarından çıkanı alırsın. 7 − 3 işleminde 7 pozitif pulun 3’ünü alırsın ve 4 kalır. 2 − (−3) işleminde ise masada 2 pozitif pul vardır ama alınacak negatif pul yoktur. Masaya 3 sıfır çifti eklersin; toplam değişmez. Şimdi 3 negatif pulu alabilirsin ve masada 5 pozitif pul kalır: 2 − (−3) = 5.",
+    "Aynı sonuca 2 + 3 işlemiyle de ulaşılır. Bu, çıkarmanın genel kuralını gösterir: Bir sayıdan başka bir sayıyı çıkarmak, o sayıya çıkanın ters işaretlisini eklemektir. (−4) − 6 = (−4) + (−6) = −10 ve (−4) − (−9) = (−4) + 9 = 5 olur.",
+    "Sayı doğrusunda çıkarma, iki sayı arasındaki farkı da gösterir. Sıcaklık −4 °C’den 5 °C’ye çıktıysa değişim 5 − (−4) = 9 °C’dir; sayı doğrusunda −4’ten 5’e kadar 9 birim vardır. Son değerden ilk değeri çıkarınca sonuç pozitifse artış, negatifse azalış olmuştur."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Çıkarmayı toplamaya çevir",
+    "metin": "a − b = a + (−b). Eksi işaretinden sonra gelen sayının işaretini değiştir ve topla: 3 − (−8) = 3 + 8 = 11."
+   }
+  },
+  {
+   "baslik": "Çarpma ve bölmede işaret kuralı",
+   "metin": [
+    "Pozitif bir sayıyla negatif bir sayının çarpımını tekrarlı toplama olarak düşünebilirsin: 3 · (−2) = (−2) + (−2) + (−2) = −6. Negatif bir sayıyı negatif bir sayıyla çarpmayı anlamak için bir örüntüye bakarsın: 3 · (−2) = −6, 2 · (−2) = −4, 1 · (−2) = −2, 0 · (−2) = 0. İlk çarpan 1 azaldıkça sonuç 2 artıyor. Örüntü sürünce (−1) · (−2) = 2 ve (−2) · (−2) = 4 olur.",
+    "Bölme, çarpmanın tersidir. (−12) ÷ 3 işleminin sonucu −4’tür; çünkü 3 · (−4) = −12. (−12) ÷ (−3) işleminin sonucu 4’tür; çünkü (−3) · 4 = −12. Böylece çarpmadaki işaret kuralının bölmede de aynen geçerli olduğu görülür.",
+    "İşlem yaparken önce sonucun işaretine karar verir, sonra mutlak değerlerle işlem yaparsın. Çarpanlardan biri 0 ise sonuç 0’dır. Sıfır bir sayıya bölünebilir: 0 ÷ (−5) = 0. Ama bir sayı sıfıra bölünemez."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Çarpanların ya da bölenin işaretleri",
+     "Sonucun işareti",
+     "Örnek"
+    ],
+    "satirlar": [
+     [
+      "(+) ve (+)",
+      "+",
+      "4 · 3 = 12"
+     ],
+     [
+      "(−) ve (−)",
+      "+",
+      "(−4) · (−3) = 12"
+     ],
+     [
+      "(+) ve (−)",
+      "−",
+      "4 · (−3) = −12"
+     ],
+     [
+      "(−) ve (+)",
+      "−",
+      "(−12) ÷ 4 = −3"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "kural",
+    "baslik": "İşaret kuralı",
+    "metin": "Aynı işaretli iki sayının çarpımı ve bölümü pozitif, farklı işaretli iki sayının çarpımı ve bölümü negatiftir."
+   }
+  },
+  {
+   "baslik": "Kesirli ve ondalık gösterimlerle toplama ve çıkarma",
+   "metin": [
+    "Paydası 1’den farklı rasyonel sayılarda da işaret kuralları aynıdır. Paydalar eşit değilse önce paydaları eşitlersin. −{kesir:2|3} + {kesir:1|4} işleminde ortak payda 12’dir: −{kesir:8|12} + {kesir:3|12}. Farklı işaretli sayılar olduğundan mutlak değerler çıkarılır, 8 − 3 = 5 bulunur ve mutlak değeri büyük olanın işareti yazılır: −{kesir:5|12}.",
+    "Çıkarmada yine ters işaretlisini eklersin. {kesir:1|6} − {kesir:3|4} = {kesir:2|12} + (−{kesir:9|12}) = −{kesir:7|12} olur. −{kesir:1|2} − (−{kesir:5|6}) = −{kesir:3|6} + {kesir:5|6} = {kesir:2|6} = {kesir:1|3} bulunur.",
+    "Ondalık gösterimlerde virgülleri alt alta getirir, işaret kuralına göre toplar ya da çıkarırsın. (−2,4) + 1,75 işleminde mutlak değerler 2,40 ve 1,75’tir. 2,40 − 1,75 = 0,65 olur ve büyük mutlak değerin işareti yazılır: −0,65. (−3,2) − 1,5 = (−3,2) + (−1,5) = −4,7 bulunur."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Paylar ve paydalar toplanmaz",
+    "metin": "−{kesir:1|2} + {kesir:1|3} işleminde payları ve paydaları ayrı ayrı toplayıp {kesir:0|5} yazmak yanlıştır. Önce paydalar eşitlenir: −{kesir:3|6} + {kesir:2|6} = −{kesir:1|6}."
+   }
+  },
+  {
+   "baslik": "Kesirli ve ondalık gösterimlerle çarpma ve bölme",
+   "metin": [
+    "Kesirlerle çarpmada önce işarete karar verir, sonra payı payla, paydayı paydayla çarparsın. Çarpmadan önce sadeleştirme yapmak hesabı kolaylaştırır. (−{kesir:3|4}) · {kesir:2|9} işleminde sonuç negatiftir. 3 ile 9, 2 ile 4 sadeleşir: −{kesir:1|2} · {kesir:1|3} = −{kesir:1|6}.",
+    "Çarpımları 1 olan iki sayıya birbirinin çarpmaya göre tersi denir. −{kesir:5|6} sayısının tersi −{kesir:6|5}’tir; çünkü çarpımları 1’dir. Bölmede böleni çarpmaya göre tersiyle değiştirip çarparsın: (−{kesir:5|6}) ÷ (−{kesir:10|9}) = (−{kesir:5|6}) · (−{kesir:9|10}) = {kesir:45|60} = {kesir:3|4}. İki negatif sayının bölümü olduğundan sonuç pozitiftir.",
+    "Ondalık gösterimlerle çarpmada sayıları virgül yokmuş gibi çarpar, sonra çarpanlardaki toplam ondalık basamak sayısı kadar basamağı virgülle ayırırsın: (−0,5) · (−0,4) = 0,20 = 0,2. Bölmede bölen ile bölünenin virgüllerini aynı sayıda basamak kaydırarak böleni tam sayı yaparsın: 1,2 ÷ (−0,3) = 12 ÷ (−3) = −4."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Çarpmaya göre ters",
+    "metin": "Bir kesrin tersi pay ile paydanın yer değiştirmesiyle bulunur; işaret değişmez. 0’ın çarpmaya göre tersi yoktur, çünkü 0 ile çarpılan hiçbir sayı 1 vermez."
+   }
+  },
+  {
+   "baslik": "Problemde sayıları ve işlemi belirlemek",
+   "metin": [
+    "Bir problemde önce sayı bileşenlerini belirlersin: Hangi sayı başlangıç değeri, hangisi değişim, hangisi tekrar sayısı? Sonra her sayının işaretine karar verirsin. Deniz seviyesinin altı, sıfırın altındaki sıcaklık, borç ve azalış negatif; deniz seviyesinin üstü, artış ve gelir pozitif sayıyla gösterilir.",
+    "Ardından istenenle işlem arasındaki ilişkiyi kurarsın. Değişim başlangıç değerine ekleniyorsa toplama, iki değer arasındaki fark soruluyorsa çıkarma, aynı değişim tekrar ediyorsa çarpma, bir miktar eşit paylaştırılıyorsa bölme yaparsın. Örneğin −6,5 °C olan sıcaklık 3 saat boyunca her saat 1,5 °C düşüyorsa tekrar eden değişim çarpmayla bulunur: 3 · (−1,5) = −4,5. Sonra başlangıç değerine eklenir: −6,5 + (−4,5) = −11 °C.",
+    "Problemi bir temsile dönüştürmek işlemi seçmeni kolaylaştırır. Sıcaklık ve derinlik gibi yön içeren durumlarda dikey bir sayı doğrusu, borç ve alacakta sayma pulları, kesirli bütünlerde şerit modeli kullanabilirsin. Gelecek hafta bu adımları çok adımlı gerçek yaşam problemlerinde kullanacaksın."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Durum",
+     "Seçilen işlem",
+     "Örnek"
+    ],
+    "satirlar": [
+     [
+      "Başlangıç değerine değişim ekleniyor",
+      "Toplama",
+      "−3 + 8 = 5"
+     ],
+     [
+      "İki değer arasındaki fark soruluyor",
+      "Çıkarma",
+      "5 − (−4) = 9"
+     ],
+     [
+      "Aynı değişim birkaç kez tekrar ediyor",
+      "Çarpma",
+      "3 · (−1,5) = −4,5"
+     ],
+     [
+      "Miktar eşit parçalara ayrılıyor",
+      "Bölme",
+      "(−24) ÷ 4 = −6"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "İşareti yanına yaz",
+    "metin": "Her sayının yanına anlamını not et: “−6,5: başlangıç sıcaklığı”, “−1,5: saatlik düşüş”, “3: saat sayısı”. Hangi işlemi neden seçtiğini böylece kolayca açıklarsın."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "(−7) + 4 işlemini sayma pullarıyla modelle ve sonucu bul.",
+   "cevap": "Masaya 7 negatif ve 4 pozitif pul konur. 4 pozitif pul, 4 negatif pulla 4 sıfır çifti oluşturur; sıfır çiftleri masadan kaldırılır. Geriye 3 negatif pul kalır. Sonuç −3’tür. Kural ile de farklı işaretli sayılarda 7 − 4 = 3 bulunur ve mutlak değeri büyük olan −7’nin işareti yazılır: −3."
+  },
+  {
+   "soru": "(−4) − (−9) işlemini çıkarmayı toplamaya çevirerek yap; sonucu sayı doğrusunda yorumla.",
+   "cevap": "Çıkanın ters işaretlisi eklenir: (−4) − (−9) = (−4) + 9 = 5. Sayı doğrusunda −4’ten başlayıp 9 birim sağa gidilince 5’e ulaşılır. Sonuç aynı zamanda −9 ile −4 arasındaki uzaklığın 5 birim olduğunu gösterir."
+  },
+  {
+   "soru": "(−{kesir:3|5}) + {kesir:7|10} − (−{kesir:1|2}) işleminin sonucunu bul.",
+   "cevap": "Çıkarma toplamaya çevrilir: (−{kesir:3|5}) + {kesir:7|10} + {kesir:1|2}. Ortak payda 10’dur: −{kesir:6|10} + {kesir:7|10} + {kesir:5|10}. Paylar işaretleriyle toplanır: −6 + 7 + 5 = 6. Sonuç {kesir:6|10} = {kesir:3|5} olur."
+  },
+  {
+   "soru": "(−{kesir:4|15}) · (−{kesir:5|8}) işleminin sonucunu sadeleştirerek bul.",
+   "cevap": "İki negatif sayının çarpımı pozitiftir. Çarpmadan önce 4 ile 8, 4’e bölünerek 1 ve 2 olur; 5 ile 15, 5’e bölünerek 1 ve 3 olur. Sonuç {kesir:1|3} · {kesir:1|2} = {kesir:1|6} bulunur."
+  },
+  {
+   "soru": "(−{kesir:9|4}) ÷ {kesir:3|8} işleminin sonucunu bul. Sonucu çarpma ile kontrol et.",
+   "cevap": "Bölen ters çevrilip çarpılır: (−{kesir:9|4}) · {kesir:8|3}. Farklı işaretli sayılar olduğundan sonuç negatiftir. 9 ile 3, 8 ile 4 sadeleşir: −3 · 2 = −6. Kontrol: (−6) · {kesir:3|8} = −{kesir:18|8} = −{kesir:9|4} olduğundan sonuç doğrudur."
+  },
+  {
+   "soru": "Bir dağ evinde sabah sıcaklığı −6,5 °C’dir. Sıcaklık 3 saat boyunca her saat 1,5 °C düşüyor. Problemdeki sayı bileşenlerini ve kullanılacak işlemleri belirleyip 3 saat sonraki sıcaklığı bul.",
+   "cevap": "Sayı bileşenleri: başlangıç sıcaklığı −6,5; saatlik değişim −1,5 (düşüş olduğu için negatif); tekrar sayısı 3. Aynı değişim tekrar ettiği için önce çarpma yapılır: 3 · (−1,5) = −4,5. Sonra değişim başlangıç değerine eklenir: −6,5 + (−4,5) = −11. Üç saat sonra sıcaklık −11 °C olur. Kontrol: −11 °C’den her saat 1,5 °C geri çıkılırsa −9,5; −8 ve −6,5 bulunur."
+  }
+ ],
+ "ozet": [
+  "Toplamada aynı işaretli sayıların mutlak değerleri toplanır, ortak işaret yazılır; farklı işaretli sayıların mutlak değerleri çıkarılır, mutlak değeri büyük olanın işareti yazılır. Sayma pullarında bir pozitif ve bir negatif pul sıfır çifti oluşturur.",
+  "Çıkarma, eksilene çıkanın ters işaretlisini eklemektir: a − b = a + (−b). Son değerden ilk değerin çıkarılması değişimi verir.",
+  "Çarpma ve bölmede aynı işaretli iki sayının sonucu pozitif, farklı işaretli iki sayının sonucu negatiftir; bir sayı sıfıra bölünemez.",
+  "Kesirlerde toplama ve çıkarmadan önce paydalar eşitlenir; çarpmada pay payla, payda paydayla çarpılır; bölmede bölen çarpmaya göre tersiyle değiştirilip çarpılır. Ondalık gösterimlerde de aynı işaret kuralları geçerlidir.",
+  "Problemde önce başlangıç değeri, değişim ve tekrar sayısı gibi bileşenler işaretleriyle belirlenir; sonra istenenle ilişkili işlem seçilir ve uygun bir temsil kullanılır."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "(−7) − (−3) işleminin sonucu kaçtır?",
+   "secenekler": [
+    "−10",
+    "−4",
+    "4",
+    "10"
+   ],
+   "dogru": 1,
+   "aciklama": "Çıkanın ters işaretlisi eklenir: (−7) + 3 = −4. −10 bulmak çıkanın işaretini değiştirmeyi unutmak demektir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "(−{kesir:2|3}) · {kesir:9|4} işleminin sonucu kaçtır?",
+   "secenekler": [
+    "{kesir:3|2}",
+    "−{kesir:8|27}",
+    "−{kesir:11|12}",
+    "−{kesir:3|2}"
+   ],
+   "dogru": 3,
+   "aciklama": "Farklı işaretli sayıların çarpımı negatiftir. 2 ile 4, 3 ile 9 sadeleşir: −1 · {kesir:3|2} = −{kesir:3|2}. −{kesir:8|27} bölme yapıldığında çıkar; −{kesir:11|12} ise toplama sonucudur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Aşağıdaki işlemlerden hangisinin sonucu pozitiftir?",
+   "secenekler": [
+    "(−3) · 4",
+    "(−{kesir:1|2}) ÷ (−{kesir:1|4})",
+    "(−5) + 2",
+    "0,2 − 0,7"
+   ],
+   "dogru": 1,
+   "aciklama": "İki negatif sayının bölümü pozitiftir: (−{kesir:1|2}) · (−4) = 2. Öbür sonuçlar sırasıyla −12, −3 ve −0,5’tir."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Her ifadenin doğru mu yanlış mı olduğuna karar ver; yanlış çıkanların açıklamasını oku.",
+   "ifadeler": [
+    {
+     "metin": "(−8) ÷ (−2) işleminin sonucu −4’tür.",
+     "dogru": false,
+     "aciklama": "Aynı işaretli iki sayının bölümü pozitiftir: (−8) ÷ (−2) = 4."
+    },
+    {
+     "metin": "Bir sayıdan negatif bir sayı çıkarmak, o sayıya bu negatif sayının pozitifini eklemektir.",
+     "dogru": true,
+     "aciklama": "Örneğin 3 − (−5) = 3 + 5 = 8 olur."
+    },
+    {
+     "metin": "Sıfırın çarpmaya göre tersi yoktur.",
+     "dogru": true,
+     "aciklama": "Hiçbir sayı 0 ile çarpıldığında 1 vermez; bu yüzden 0’ın çarpmaya göre tersi yoktur."
+    },
+    {
+     "metin": "İki negatif sayının toplamı pozitiftir.",
+     "dogru": false,
+     "aciklama": "Aynı işaretli sayılar toplanınca ortak işaret korunur: (−3) + (−4) = −7. Pozitif sonucu veren, iki negatif sayının çarpımıdır."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Her işlemi sonucuyla eşleştir.",
+   "ciftler": [
+    [
+     "(−6) + 4",
+     "−2"
+    ],
+    [
+     "(−6) − 4",
+     "−10"
+    ],
+    [
+     "(−6) · (−4)",
+     "24"
+    ],
+    [
+     "(−6) ÷ 4",
+     "−{kesir:3|2}"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Bir pozitif ve bir negatif pul bir araya gelince ___ çifti oluşturur.",
+     "cevap": "sıfır"
+    },
+    {
+     "metin": "Farklı işaretli iki sayının çarpımı ___ olur.",
+     "cevap": "negatif"
+    },
+    {
+     "metin": "Bölme işleminde bölünen, bölenin çarpmaya göre ___ ile çarpılır.",
+     "cevap": "tersi"
+    }
+   ],
+   "fazla": [
+    "pozitif"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Can, −{kesir:1|2} + {kesir:1|3} işleminde payları ve paydaları ayrı ayrı toplayıp {kesir:0|5} = 0 sonucunu bulmuştur. Can’ın hatası nedir? Doğru sonucu bul.",
+   "ipuclari": [
+    "Paydaları farklı kesirler toplanmadan önce ne yapılmalıdır?",
+    "Ortak payda 6’dır. Kesirleri bu paydaya göre genişlet."
+   ],
+   "cevap": "Kesirlerde paylar ve paydalar ayrı ayrı toplanmaz; önce paydalar eşitlenir. −{kesir:1|2} = −{kesir:3|6} ve {kesir:1|3} = {kesir:2|6} olur. Farklı işaretli sayılarda 3 − 2 = 1 bulunur ve mutlak değeri büyük olanın işareti yazılır: −{kesir:1|6}. Sonuç 0 olamaz, çünkü iki sayının mutlak değerleri eşit değildir."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir örüntü kullanarak (−2) · (−3) işleminin sonucunun neden pozitif olduğunu açıkla.",
+   "ipuclari": [
+    "2 · (−3), 1 · (−3) ve 0 · (−3) işlemlerinin sonuçlarını alt alta yaz.",
+    "İlk çarpan 1 azaldıkça sonuç nasıl değişiyor? Örüntüyü sürdür."
+   ],
+   "cevap": "2 · (−3) = −6, 1 · (−3) = −3, 0 · (−3) = 0 olur. İlk çarpan 1 azaldıkça sonuç 3 artar. Örüntü sürünce (−1) · (−3) = 3 ve (−2) · (−3) = 6 bulunur. Demek ki iki negatif sayının çarpımı pozitiftir."
+  }
+ ]
+}

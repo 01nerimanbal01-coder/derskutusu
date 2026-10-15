@@ -1,0 +1,483 @@
+{
+ "sinif": 8,
+ "ders": "matematik",
+ "hafta": 9,
+ "tarih": "9-13 Kasım 2026",
+ "yayin_tarihi": "2026-10-15",
+ "unite": "Sayılar ve İşlemler",
+ "konu": "Kareköklü İfadeler: Sonucu Doğal Sayı Yapan Çarpanlar ve Toplama-Çıkarma Uygulamaları",
+ "ciktilar": [
+  "M.8.1.3.5. Kareköklü ifadelerde toplama ve çıkarma işlemlerini yapar.",
+  "M.8.1.3.6. Kareköklü bir ifade ile çarpıldığında, sonucu bir doğal sayı yapan çarpanlara örnek verir."
+ ],
+ "giris": "Geçen hafta kareköklü ifadelerle dört işlem yaptın: Çarpma ve bölmede kök içlerinin birleştiğini, toplama ve çıkarmada ise yalnızca benzer terimlerin birleşebildiğini gördün; bazı çarpımların doğal sayı çıktığını da fark ettin. Bu hafta bu gözlemin peşine düşüyorsun: Bir kareköklü ifadeyi hangi çarpanlarla çarparsan sonuç doğal sayı olur, bu çarpanların en küçüğü nasıl bulunur? Ardından toplama ve çıkarmayı daha zorlu uygulamalarda kullanacaksın: Eşitlikte bilinmeyeni bulacak, sayı doğrusunda uzaklık ve orta nokta hesaplayacak, kenarları kareköklü olan şekillerin çevresini LGS tarzı sorularla inceleyeceksin. 10 Kasım’da Atatürk’ü ölüm yıl dönümünde saygıyla anıyoruz; haftanın ardından da ara tatil başlıyor.",
+ "bolumler": [
+  {
+   "baslik": "Çarpım ne zaman doğal sayı olur?",
+   "metin": [
+    "Geçen hafta {kok:a} · {kok:b} = {kok:a · b} kuralıyla kareköklü ifadeleri çarptın. Bu hafta aynı kurala tersinden bakacaksın: Bir kareköklü ifadeyi hangi sayıyla çarparsan sonuç bir doğal sayı olur? Kural cevabın ipucunu verir: a ve b sıfırdan farklı doğal sayılarken {kok:a} · {kok:b} çarpımı {kok:a · b} ifadesine eşit olduğundan sonuç ancak a · b bir tam kare sayıysa doğal sayı olur.",
+    "Örneğin {kok:20} · {kok:5} = {kok:100} = 10, {kok:6} · {kok:24} = {kok:144} = 12 ve {kok:7} · {kok:28} = {kok:196} = 14 olur; çünkü 100, 144 ve 196 tam kare sayılardır. Buna karşılık {kok:6} · {kok:10} = {kok:60} = 2{kok:15} bir doğal sayı değildir; çünkü 60 tam kare değildir.",
+    "Bir sayının tam kare olup olmadığını iki yolla anlarsın: Tam kareler listesine bakarak (1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, ...) ya da sayıyı asal çarpanlarına ayırıp her asal çarpanın üssünün çift olup olmadığını kontrol ederek. 144 = {us:2|4} · {us:3|2} sayısında üslerin ikisi de çift olduğu için 144 tam karedir; 60 = {us:2|2} · 3 · 5 sayısında ise 3 ve 5’in üssü tektir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Çarpım",
+     "Kök içi",
+     "Tam kare mi?",
+     "Sonuç"
+    ],
+    "satirlar": [
+     [
+      "{kok:20} · {kok:5}",
+      "100",
+      "Evet",
+      "10"
+     ],
+     [
+      "{kok:6} · {kok:24}",
+      "144",
+      "Evet",
+      "12"
+     ],
+     [
+      "{kok:7} · {kok:28}",
+      "196",
+      "Evet",
+      "14"
+     ],
+     [
+      "{kok:6} · {kok:10}",
+      "60",
+      "Hayır",
+      "2{kok:15}"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Doğal sayı koşulu",
+    "metin": "a ve b sıfırdan farklı doğal sayılarsa {kok:a} · {kok:b} çarpımı, ancak a · b bir tam kare sayı olduğunda doğal sayıdır."
+   }
+  },
+  {
+   "baslik": "Sade biçimden çarpanı bulmak",
+   "metin": [
+    "Bir kareköklü ifadeyi doğal sayıya çevirecek çarpanı bulmanın en kısa yolu, ifadeyi önce en sade a{kok:b} biçimine getirmektir. Kök içinde kalan b sayısı ifadenin “eksik” kısmını gösterir. a{kok:b} ifadesini {kok:b} ile çarptığında {kok:b} · {kok:b} = b olduğundan sonuç a · b doğal sayısıdır.",
+    "Örneğin {kok:45} = 3{kok:5} olduğundan {kok:45} · {kok:5} = 3 · 5 = 15 olur. {kok:90} = 3{kok:10} olduğundan {kok:90} · {kok:10} = 30, {kok:150} = 5{kok:6} olduğundan {kok:150} · {kok:6} = 30 bulunur. Katsayılı ifadelerde de aynı yol işler: 4{kok:7} · {kok:7} = 4 · 7 = 28.",
+    "Çarpan yalnızca {kok:b} olmak zorunda değildir; {kok:b} ifadesinin doğal sayı katları da işe yarar. 3{kok:5} ifadesi 2{kok:5} ile çarpılınca 3 · 2 · 5 = 30, {kok:80} = 4{kok:5} ile çarpılınca 3 · 4 · 5 = 60 bulunur. Doğrudan kontrol edersen {kok:45} · {kok:80} = {kok:3600} = 60’tır."
+   ],
+   "tablo": {
+    "basliklar": [
+     "İfade",
+     "En sade biçim",
+     "En basit çarpan",
+     "Sonuç"
+    ],
+    "satirlar": [
+     [
+      "{kok:45}",
+      "3{kok:5}",
+      "{kok:5}",
+      "15"
+     ],
+     [
+      "{kok:90}",
+      "3{kok:10}",
+      "{kok:10}",
+      "30"
+     ],
+     [
+      "{kok:150}",
+      "5{kok:6}",
+      "{kok:6}",
+      "30"
+     ],
+     [
+      "{kok:98}",
+      "7{kok:2}",
+      "{kok:2}",
+      "14"
+     ],
+     [
+      "4{kok:7}",
+      "4{kok:7}",
+      "{kok:7}",
+      "28"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Önce sadeleştir",
+    "metin": "İfadeyi a{kok:b} biçimine getir; b’nin içinde tam kare çarpan kalmasın. {kok:b} ile ya da onun doğal sayı katlarıyla (2{kok:b}, 3{kok:b}, ...) çarpınca sonuç doğal sayı olur."
+   }
+  },
+  {
+   "baslik": "Sonsuz sayıda çarpan ve en küçük doğal sayı",
+   "metin": [
+    "Bir kareköklü ifadeyi doğal sayı yapan çarpanlar tek değildir. {kok:50} = 5{kok:2} ifadesini {kok:2} ile çarparsan 10, {kok:8} = 2{kok:2} ile çarparsan 20, {kok:18} = 3{kok:2} ile çarparsan 30, {kok:32} = 4{kok:2} ile çarparsan 40 bulursun. Bu çarpanların hepsi {kok:2} ifadesinin doğal sayı katıdır; kök içleri de 2 · 1, 2 · 4, 2 · 9, 2 · 16, yani 2 ile tam karelerin çarpımıdır.",
+    "LGS tarzı sorularda sık karşılaşılan bir soru, kök içindeki sayıyı tam kareye tamamlayan en küçük çarpanı sorar: “{kok:75 · x} ifadesini doğal sayı yapan sıfırdan farklı en küçük x doğal sayısı kaçtır?” (x = 0 için ifade 0 olur; bu yüzden sorularda sıfırdan farklı değer aranır.) 75 sayısını asal çarpanlarına ayırırsın: 75 = 3 · {us:5|2}. 5’in üssü çift, 3’ün üssü tektir; eksik olan bir tane 3’tür. x = 3 için {kok:225} = 15 olur.",
+    "Birden çok asal çarpanın üssü tekse hepsinden birer tane alıp çarparsın. 180 = {us:2|2} · {us:3|2} · 5 olduğundan en küçük x 5’tir ve {kok:900} = 30 olur. 84 = {us:2|2} · 3 · 7 sayısında 3 ve 7’nin üssü tek olduğu için en küçük x = 3 · 7 = 21’dir; {kok:84 · 21} = {kok:1764} = 42 bulunur. En küçük değeri bir tam kareyle çarparak başka x değerleri de bulabilirsin: 21 · 4 = 84, 21 · 9 = 189, ..."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Sayı",
+     "Asal çarpanlar",
+     "En küçük x",
+     "Sonuç"
+    ],
+    "satirlar": [
+     [
+      "75",
+      "3 · {us:5|2}",
+      "3",
+      "{kok:225} = 15"
+     ],
+     [
+      "72",
+      "{us:2|3} · {us:3|2}",
+      "2",
+      "{kok:144} = 12"
+     ],
+     [
+      "180",
+      "{us:2|2} · {us:3|2} · 5",
+      "5",
+      "{kok:900} = 30"
+     ],
+     [
+      "84",
+      "{us:2|2} · 3 · 7",
+      "21",
+      "{kok:1764} = 42"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "kural",
+    "baslik": "En küçük çarpan",
+    "metin": "Kök içindeki sayıyı asal çarpanlarına ayır. Üssü tek olan her asal çarpandan birer tane alıp çarparsan sonucu doğal sayı yapan sıfırdan farklı en küçük doğal sayıyı bulursun."
+   }
+  },
+  {
+   "baslik": "Önce topla ya da çıkar, sonra çarpanı bul",
+   "metin": [
+    "İki kazanımı birleştiren sorularda önce toplama ya da çıkarmayı bitirip ifadeyi tek bir a{kok:b} terimine indirirsin, sonra çarpanı ararsın. Örneğin {kok:12} + {kok:27} toplamında {kok:12} = 2{kok:3} ve {kok:27} = 3{kok:3} olduğundan toplam 5{kok:3} olur. Bu ifadeyi doğal sayı yapan en basit çarpan {kok:3}’tür: 5{kok:3} · {kok:3} = 5 · 3 = 15.",
+    "Aynı yol çıkarmada da işler: {kok:50} − {kok:8} = 5{kok:2} − 2{kok:2} = 3{kok:2} ve 3{kok:2} · {kok:2} = 6 olur. Soruda “sıfırdan farklı en küçük x doğal sayısı” istenirse, örneğin 3{kok:2} · {kok:x} ifadesinin doğal sayı olması için x en az 2 olmalıdır; x = 2 için sonuç 3{kok:4} = 3 · 2 = 6 bulunur.",
+    "Sadeleştirmeden sonra kök içleri farklı kalırsa durum değişir. {kok:2} + {kok:3} toplamını {kok:2} ile çarparsan 2 + {kok:6}, {kok:3} ile çarparsan {kok:6} + 3 bulursun; ikisi de doğal sayı değildir. Bu yüzden böyle sorularda ilk iş, terimlerin sadeleşince benzer olup olmadığını kontrol etmektir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "İfade",
+     "Sade biçimi",
+     "Çarpan",
+     "Sonuç"
+    ],
+    "satirlar": [
+     [
+      "{kok:12} + {kok:27}",
+      "5{kok:3}",
+      "{kok:3}",
+      "15"
+     ],
+     [
+      "{kok:50} − {kok:8}",
+      "3{kok:2}",
+      "{kok:2}",
+      "6"
+     ],
+     [
+      "{kok:48} − {kok:3}",
+      "3{kok:3}",
+      "{kok:3}",
+      "9"
+     ],
+     [
+      "{kok:20} + {kok:45}",
+      "5{kok:5}",
+      "{kok:5}",
+      "25"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Sıra önemli",
+    "metin": "Önce her terimi sadeleştir ve benzer terimleri birleştir; çarpanı ancak tek terim kaldığında ara. Kök içlerini doğrudan toplayıp çıkarma: {kok:48} − {kok:3} ifadesi {kok:45} değil, 3{kok:3}’tür."
+   }
+  },
+  {
+   "baslik": "Toplama ve çıkarmada bilinmeyeni bulmak",
+   "metin": [
+    "Geçen hafta benzer terimleri toplayıp çıkardın. Bu hafta eşitliğin bir tarafında bilinmeyen bulunan sorularla bu bilgini derinleştireceksin. “{kok:a} + {kok:63} = 5{kok:7} ise a kaçtır?” sorusunda önce bilinen terimi sadeleştirirsin: {kok:63} = 3{kok:7}. Eşitlik {kok:a} + 3{kok:7} = 5{kok:7} olur; buradan {kok:a} = 2{kok:7} bulunur.",
+    "Son adımda katsayıyı kök içine alırsın: 2{kok:7} = {kok:4 · 7} = {kok:28}, yani a = 28’dir. Kontrol: {kok:28} + {kok:63} = 2{kok:7} + 3{kok:7} = 5{kok:7}. Çıkarmada da aynı yolu izlersin: {kok:x} − {kok:12} = {kok:48} ise {kok:x} = 4{kok:3} + 2{kok:3} = 6{kok:3} = {kok:108}, yani x = 108’dir.",
+    "Katsayılı terimler bir arada olduğunda her terimi sadeleştirip katsayıları dikkatle işleme sokarsın: 3{kok:20} − {kok:45} + 2{kok:5} = 6{kok:5} − 3{kok:5} + 2{kok:5} = 5{kok:5}. Kökün önündeki katsayıyı kök dışına çıkan sayıyla çarpmayı unutma: 3{kok:20} = 3 · 2{kok:5} = 6{kok:5} olur; 3{kok:5} yazmak sık yapılan bir hatadır."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Eşitlik",
+     "Sadeleştirilmiş hâli",
+     "Bilinmeyen"
+    ],
+    "satirlar": [
+     [
+      "{kok:a} + {kok:63} = 5{kok:7}",
+      "{kok:a} = 5{kok:7} − 3{kok:7} = 2{kok:7}",
+      "a = 28"
+     ],
+     [
+      "{kok:x} − {kok:12} = {kok:48}",
+      "{kok:x} = 4{kok:3} + 2{kok:3} = 6{kok:3}",
+      "x = 108"
+     ],
+     [
+      "{kok:y} + {kok:y} = {kok:72}",
+      "2{kok:y} = 6{kok:2}, {kok:y} = 3{kok:2}",
+      "y = 18"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Son adım",
+    "metin": "Bulduğun a{kok:b} ifadesini {kok:{us:a|2} · b} biçimine çevirerek bilinmeyeni bul, sonra yerine koyup eşitliği kontrol et."
+   }
+  },
+  {
+   "baslik": "Sayı doğrusunda kareköklü ifadeler",
+   "metin": [
+    "Sayı doğrusundaki iki nokta arasındaki uzaklık, büyük sayıdan küçük sayı çıkarılarak bulunur. A noktası {kok:18}, B noktası {kok:98} sayısını gösteriyorsa {uzunluk:AB} = {kok:98} − {kok:18} = 7{kok:2} − 3{kok:2} = 4{kok:2} birimdir. Kök içlerini çıkarıp {kok:80} yazmak yanlış olur; çünkü {kok:80} = 4{kok:5} ve bu, 4{kok:2} ile aynı sayı değildir.",
+    "Aynı örnekte {parca:AB} doğru parçasının orta noktası, A’dan {uzunluk:AB} uzunluğunun yarısı kadar, yani 2{kok:2} birim uzaktadır. Orta noktanın gösterdiği sayı 3{kok:2} + 2{kok:2} = 5{kok:2} = {kok:50} olur. İki ucun ortalamasını alarak da aynı sonuca ulaşırsın: (3{kok:2} + 7{kok:2}) ÷ 2 = 10{kok:2} ÷ 2 = 5{kok:2}.",
+    "Bir toplamın ya da farkın sayı doğrusunda hangi iki doğal sayı arasında olduğunu bulmak için önce sonucu tek terim olarak yazar, sonra katsayıyı kök içine alırsın. {kok:12} + {kok:48} = 2{kok:3} + 4{kok:3} = 6{kok:3} = {kok:108}; 100 < 108 < 121 olduğundan bu sayı 10 ile 11 arasındadır. {kok:50} − {kok:8} = 3{kok:2} = {kok:18} ise 16 < 18 < 25 olduğundan 4 ile 5 arasındadır ve 4’e daha yakındır."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Toplam ya da fark",
+     "Tek terim",
+     "Katsayı kök içinde",
+     "Arasında olduğu sayılar"
+    ],
+    "satirlar": [
+     [
+      "{kok:12} + {kok:48}",
+      "6{kok:3}",
+      "{kok:108}",
+      "10 ile 11"
+     ],
+     [
+      "{kok:50} − {kok:8}",
+      "3{kok:2}",
+      "{kok:18}",
+      "4 ile 5"
+     ],
+     [
+      "{kok:28} + {kok:7}",
+      "3{kok:7}",
+      "{kok:63}",
+      "7 ile 8"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Hangi iki doğal sayı arasında?",
+    "metin": "Sonucu a{kok:b} biçiminde tek terim olarak yaz, katsayıyı kök içine al ve kök içindeki sayıyı ardışık iki tam kare sayının arasına yerleştir."
+   }
+  },
+  {
+   "baslik": "Geometride çevre ve LGS tarzı sorular",
+   "metin": [
+    "Kenar uzunlukları kareköklü olan şekillerin çevresi toplama ile bulunur. Kenarları {kok:32} cm, {kok:50} cm ve {kok:72} cm olan bir üçgenin çevresi 4{kok:2} + 5{kok:2} + 6{kok:2} = 15{kok:2} cm’dir. Kenarlar sadeleştirilince benzer terimlere dönüştüğü için çevre tek terim olarak yazılabilir.",
+    "Sınavlarda sık görülen bir soru türünde kareler yan yana konur. Alanları 18 cm² ve 50 cm² olan iki kare, tabanları aynı doğru üzerinde olacak biçimde yan yana konursa kenarları {kok:18} = 3{kok:2} cm ve {kok:50} = 5{kok:2} cm olur. Oluşan şeklin çevresi, iki karenin çevreleri toplamından birbirine değen kısmın iki katı çıkarılarak bulunur: 12{kok:2} + 20{kok:2} − 2 · 3{kok:2} = 26{kok:2} cm. Şeklin alanı ise 18 + 50 = 68 cm²’dir.",
+    "Bir başka soru türünde çevre verilir, bir kenar istenir. Bir kenarı {kok:45} cm ve çevresi 10{kok:5} cm olan dikdörtgenin öbür kenarı x olsun: 2 · ({kok:45} + x) = 10{kok:5} ise {kok:45} + x = 5{kok:5} ve x = 5{kok:5} − 3{kok:5} = 2{kok:5} cm’dir. Bu dikdörtgenin alanı 3{kok:5} · 2{kok:5} = 6 · 5 = 30 cm² olur. Kenarları kareköklü olduğu hâlde alanın doğal sayı çıkması, bu haftanın çarpan fikrinin geometrideki karşılığıdır."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Hatalı",
+     "Doğru"
+    ],
+    "satirlar": [
+     [
+      "{kok:98} − {kok:18} = {kok:80}",
+      "7{kok:2} − 3{kok:2} = 4{kok:2}"
+     ],
+     [
+      "3{kok:20} = 3{kok:5}",
+      "3{kok:20} = 3 · 2{kok:5} = 6{kok:5}"
+     ],
+     [
+      "{kesir:6|{kok:3}} = {kesir:6|3} = 2",
+      "{kesir:6|{kok:3}} = {kesir:6{kok:3}|3} = 2{kok:3}"
+     ],
+     [
+      "Yan yana karelerin çevresi = çevrelerin toplamı",
+      "Birbirine değen kısmın iki katı çıkarılır."
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Çevre ve alan",
+    "metin": "Çevre hesaplarken toplama ve çıkarma kurallarını, alan hesaplarken çarpma kuralını kullanırsın. Kök içleri hiçbir zaman doğrudan toplanmaz ya da çıkarılmaz."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "{kok:28} ile çarpıldığında sonucu doğal sayı yapan üç farklı çarpan yaz.",
+   "cevap": "Önce sadeleştirilir: {kok:28} = 2{kok:7}. {kok:7} ile çarpınca 2 · 7 = 14 bulunur. {kok:28} ile çarpınca {kok:784} = 28, {kok:63} = 3{kok:7} ile çarpınca 2 · 3 · 7 = 42 bulunur. Çarpanlar {kok:7}, {kok:28} ve {kok:63} olabilir; {kok:7}’nin her doğal sayı katı da işe yarar."
+  },
+  {
+   "soru": "{kok:150 · n} ifadesini doğal sayı yapan sıfırdan farklı en küçük n doğal sayısı kaçtır?",
+   "cevap": "150 asal çarpanlarına ayrılır: 150 = 2 · 3 · {us:5|2}. 5’in üssü çift, 2 ve 3’ün üssü tektir. En küçük n = 2 · 3 = 6’dır. Kontrol: {kok:150 · 6} = {kok:900} = 30."
+  },
+  {
+   "soru": "{kok:18} + {kok:32} toplamını en sade biçimde yaz ve sonucu doğal sayı yapan bir kareköklü çarpan bul.",
+   "cevap": "{kok:18} = 3{kok:2} ve {kok:32} = 4{kok:2} olduğundan toplam 7{kok:2} olur. Bu ifade {kok:2} ile çarpılırsa 7{kok:2} · {kok:2} = 7 · 2 = 14 doğal sayısı elde edilir. {kok:8} = 2{kok:2} gibi {kok:2}’nin katları da işe yarar: 7{kok:2} · {kok:8} = 7 · 4 = 28."
+  },
+  {
+   "soru": "{kok:a} + {kok:50} = 8{kok:2} eşitliğinde a kaçtır?",
+   "cevap": "{kok:50} = 5{kok:2} olduğundan {kok:a} = 8{kok:2} − 5{kok:2} = 3{kok:2} olur. Katsayı kök içine alınır: 3{kok:2} = {kok:9 · 2} = {kok:18}. a = 18’dir. Kontrol: {kok:18} + {kok:50} = 3{kok:2} + 5{kok:2} = 8{kok:2}."
+  },
+  {
+   "soru": "Sayı doğrusunda K noktası {kok:8}, L noktası {kok:72} sayısını gösteriyor. {uzunluk:KL} kaç birimdir? {parca:KL} doğru parçasının orta noktası hangi sayıyı gösterir ve bu sayı hangi iki doğal sayı arasındadır?",
+   "cevap": "{kok:8} = 2{kok:2} ve {kok:72} = 6{kok:2} olduğundan {uzunluk:KL} = 6{kok:2} − 2{kok:2} = 4{kok:2} birimdir. Orta nokta K’dan 2{kok:2} birim uzaktadır: 2{kok:2} + 2{kok:2} = 4{kok:2} = {kok:32}. 25 < 32 < 36 olduğundan bu sayı 5 ile 6 arasındadır."
+  },
+  {
+   "soru": "Kenarı {kok:27} cm olan bir karenin çevresi ile kenarı {kok:48} cm olan bir eşkenar üçgenin çevresini karşılaştır.",
+   "cevap": "{kok:27} = 3{kok:3} olduğundan karenin çevresi 4 · 3{kok:3} = 12{kok:3} cm’dir. {kok:48} = 4{kok:3} olduğundan eşkenar üçgenin çevresi 3 · 4{kok:3} = 12{kok:3} cm’dir. Kenar uzunlukları farklı olsa da iki şeklin çevreleri eşittir."
+  }
+ ],
+ "ozet": [
+  "a ve b sıfırdan farklı doğal sayılarken {kok:a} · {kok:b} = {kok:a · b} çarpımı, ancak a · b bir tam kare sayı olduğunda doğal sayıdır.",
+  "Bir ifade a{kok:b} biçiminde sadeleştirilince {kok:b} ile ya da onun doğal sayı katlarıyla çarpılarak doğal sayı elde edilir: a{kok:b} · {kok:b} = a · b. Bu tür çarpanlar sonsuz sayıdadır.",
+  "{kok:n · x} ifadesini doğal sayı yapan sıfırdan farklı en küçük x, n’nin asal çarpanlarından üssü tek olanların birer tanesinin çarpımıdır; toplama ya da çıkarmanın sonucu tek bir a{kok:b} terimine iniyorsa o terim de {kok:b} ile çarpılarak doğal sayıya çevrilir.",
+  "Bilinmeyenli toplama ve çıkarma eşitliklerinde terimler sadeleştirilir, benzer terimlerin katsayıları işleme sokulur, sonuç katsayı kök içine alınarak bulunur ve yerine koyarak kontrol edilir.",
+  "Sayı doğrusunda uzaklık büyük sayıdan küçük sayı çıkarılarak, şekillerin çevresi kenarlar toplanarak bulunur; kök içleri hiçbir zaman doğrudan toplanıp çıkarılmaz."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Aşağıdakilerden hangisi {kok:18} ile çarpıldığında sonuç bir doğal sayı olmaz?",
+   "secenekler": [
+    "{kok:2}",
+    "{kok:6}",
+    "{kok:8}",
+    "{kok:50}"
+   ],
+   "dogru": 1,
+   "aciklama": "{kok:18} · {kok:6} = {kok:108} = 6{kok:3}; 108 tam kare değildir. Öbürlerinde {kok:36} = 6, {kok:144} = 12 ve {kok:900} = 30 bulunur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "{kok:120 · n} ifadesini doğal sayı yapan sıfırdan farklı en küçük n doğal sayısı kaçtır?",
+   "secenekler": [
+    "2",
+    "15",
+    "30",
+    "120"
+   ],
+   "dogru": 2,
+   "aciklama": "120 = {us:2|3} · 3 · 5 sayısında 2, 3 ve 5’in üssü tektir; en küçük n = 2 · 3 · 5 = 30 olur ve {kok:3600} = 60 bulunur. 120 de sonucu doğal sayı yapar ama en küçük değer değildir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Sayı doğrusunda A noktası {kok:27}, B noktası {kok:108} sayısını gösteriyor. {uzunluk:AB} kaç birimdir?",
+   "secenekler": [
+    "3{kok:3}",
+    "9{kok:3}",
+    "9",
+    "3"
+   ],
+   "dogru": 0,
+   "aciklama": "{kok:108} = 6{kok:3} ve {kok:27} = 3{kok:3} olduğundan uzaklık 6{kok:3} − 3{kok:3} = 3{kok:3} birimdir. 9 sonucu kök içlerini çıkarıp {kok:81} yazmakla, 9{kok:3} ise iki sayıyı toplamakla bulunur."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Her ifadenin doğru mu yanlış mı olduğuna karar ver; yanlış çıkanların açıklamasını oku.",
+   "ifadeler": [
+    {
+     "metin": "a ve b sıfırdan farklı doğal sayılar olmak üzere {kok:a} · {kok:b} çarpımı bir doğal sayıysa a · b bir tam kare sayıdır.",
+     "dogru": true,
+     "aciklama": "{kok:a} · {kok:b} = {kok:a · b} ifadesi ancak kök içi tam kare olduğunda doğal sayıdır."
+    },
+    {
+     "metin": "({kok:8} + {kok:18}) · {kok:2} işleminin sonucu bir doğal sayıdır.",
+     "dogru": true,
+     "aciklama": "Parantez içi sadeleştirilir: 2{kok:2} + 3{kok:2} = 5{kok:2}. Sonra 5{kok:2} · {kok:2} = 5 · 2 = 10 bulunur; sonuç doğal sayıdır."
+    },
+    {
+     "metin": "{kok:20} ile çarpıldığında sonucu doğal sayı yapan tek ifade {kok:5}’tir.",
+     "dogru": false,
+     "aciklama": "Sonsuz sayıda çarpan vardır: {kok:20} · {kok:20} = 20, {kok:20} · {kok:45} = 30, {kok:20} · 3{kok:5} = 30 gibi."
+    },
+    {
+     "metin": "{kok:45} − {kok:20} = 5",
+     "dogru": false,
+     "aciklama": "Kök içleri çıkarılmaz. 3{kok:5} − 2{kok:5} = {kok:5} olur."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Her çarpımı sonucuyla eşleştir.",
+   "ciftler": [
+    [
+     "{kok:24} · {kok:6}",
+     "12"
+    ],
+    [
+     "2{kok:7} · {kok:7}",
+     "14"
+    ],
+    [
+     "{kok:40} · {kok:10}",
+     "20"
+    ],
+    [
+     "{kok:5} · {kok:45}",
+     "15"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "a ve b sıfırdan farklı doğal sayılarken {kok:a} · {kok:b} çarpımının doğal sayı olması için a · b çarpımının ___ bir sayı olması gerekir.",
+     "cevap": "tam kare"
+    },
+    {
+     "metin": "Farklı görünen kareköklü terimler toplanmadan önce a{kok:b} biçiminde ___.",
+     "cevap": "sadeleştirilir"
+    },
+    {
+     "metin": "Sayı doğrusunda iki nokta arasındaki uzaklık, büyük sayıdan küçük sayının ___ bulunur.",
+     "cevap": "çıkarılmasıyla"
+    }
+   ],
+   "fazla": [
+    "asal"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Alanları 8 cm², 32 cm² ve 72 cm² olan üç kare, küçükten büyüğe soldan sağa ve tabanları aynı doğru üzerinde olacak biçimde yan yana konuyor. Oluşan şeklin çevresi kaç cm’dir?",
+   "ipuclari": [
+    "Önce karelerin kenar uzunluklarını sadeleştirerek bul.",
+    "Üç karenin çevreleri toplamından, birbirine değen kenar parçalarının her birini iki kez çıkar."
+   ],
+   "cevap": "Kenarlar {kok:8} = 2{kok:2} cm, {kok:32} = 4{kok:2} cm ve {kok:72} = 6{kok:2} cm’dir. Çevreler toplamı 4 · (2{kok:2} + 4{kok:2} + 6{kok:2}) = 48{kok:2} cm’dir. Birinci ile ikinci kare 2{kok:2} cm, ikinci ile üçüncü kare 4{kok:2} cm boyunca birbirine değer; bu parçalar çevreden ikişer kez çıkarılır: 48{kok:2} − 2 · 2{kok:2} − 2 · 4{kok:2} = 36{kok:2} cm."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "{kok:48} · {kok:x} çarpımını doğal sayı yapan sıfırdan farklı en küçük üç x doğal sayısını bul. Bu x değerlerinde ortak olan özellik nedir?",
+   "ipuclari": [
+    "48 sayısını asal çarpanlarına ayır ve üssü tek olan çarpanı bul.",
+    "En küçük değeri 1, 4, 9 gibi tam karelerle çarpmayı dene."
+   ],
+   "cevap": "48 = {us:2|4} · 3 olduğundan en küçük x = 3’tür: {kok:144} = 12. Sonraki değerler 3 · 4 = 12 ({kok:576} = 24) ve 3 · 9 = 27 ({kok:1296} = 36) olur. Ortak özellik: Hepsi 3 ile bir tam kare sayının çarpımıdır (3 · 1, 3 · 4, 3 · 9)."
+  }
+ ]
+}

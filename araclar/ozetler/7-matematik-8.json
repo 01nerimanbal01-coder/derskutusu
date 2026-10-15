@@ -1,0 +1,304 @@
+{
+ "sinif": 7,
+ "ders": "matematik",
+ "hafta": 8,
+ "tarih": "2-6 Kasım 2026",
+ "yayin_tarihi": "2026-10-15",
+ "unite": "Sayılar ve Nicelikler (1); Geometrik Nicelikler (1)",
+ "konu": "Problem Çözmede Tersten Çalışma; Eş Küplerle Oluşturulan Yapıların Farklı Yönlerden Görünümleri",
+ "ciktilar": [
+  "MAT.7.1.4. Rasyonel sayılar ve işlemler içeren gerçek yaşam problemlerini çözebilme",
+  "MAT.7.4.1. Eş küplerle oluşturulan yapılar ile görünümleri arasındaki ilişkiyi çözümleyebilme"
+ ],
+ "giris": "Geçen hafta rasyonel sayılarla gerçek yaşam problemlerini dört adımda çözdün; sıcaklık, derinlik, harçlık ve alışveriş problemlerinde uygun işlemi ve temsili seçtin, sonucu kontrol ettin. Bu hafta önce yeni bir strateji öğreneceksin: sonucu bilinen bir problemi tersten çalışarak çözmek. Ardından yeni bir konuya, eş küplerle oluşturulan yapılara geçeceksin. Bir yapının önden, yandan ve üstten görünümlerini çizecek, görünümleri verilen bir yapıyı küplerle kuracak ve görünümlerle yapı arasındaki ilişkileri çözümleyeceksin.",
+ "bolumler": [
+  {
+   "baslik": "Yeni bir strateji: tersten çalışmak",
+   "metin": [
+    "Bazı problemlerde başlangıç değeri bilinmez, ama sonuç ve sonuca giden adımlar bilinir. Böyle problemleri sondan başa doğru, her işlemin tersini yaparak çözersin. Toplamanın tersi çıkarma, çarpmanın tersi bölmedir; “kalanın yarısı” gibi kesirli ifadeleri de tersine çevirirsin.",
+    "Örnek: “Deniz parasının {kesir:1|3}’ünü harcadı. Kalan paranın yarısıyla bir kitap aldı ve 40 TL’si kaldı. Deniz’in başlangıçta kaç lirası vardı?” Sondan başlarsın: Kitaptan sonra 40 TL kaldıysa ve kitaba kalanın yarısı verildiyse kitaptan önceki para 40 · 2 = 80 TL’dir. Bu 80 TL, ilk harcamadan sonra kalan {kesir:2|3}’tür; bütün para 80 ÷ {kesir:2|3} = 80 · {kesir:3|2} = 120 TL’dir.",
+    "Sonucu baştan kontrol edersin: 120 TL’nin {kesir:1|3}’ü 40 TL’dir; 120 − 40 = 80 TL kalır. 80 TL’nin yarısı 40 TL kitaba verilir; geriye 40 TL kalır. Kontrol, tersten çalışmanın doğru yapıldığını gösterir."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Tersten çalışma",
+    "metin": "Sonuçtan başla, her adımda işlemin tersini yap: toplamaya karşı çıkarma, çarpmaya karşı bölme. Sonra baştan giderek kontrol et."
+   }
+  },
+  {
+   "baslik": "Eş küplerle yapılar ve görünüm",
+   "metin": [
+    "Eş küpler, bütün ayrıtları aynı uzunlukta olan, birbirinin aynısı küplerdir. Bu küpleri yüzleri tam çakışacak biçimde yan yana ve üst üste koyarak yapılar oluşturursun. Oyuncak bloklar, istiflenmiş kutular ve bazı binalar bu tür yapılara benzer.",
+    "Bir yapıya farklı yönlerden baktığında farklı şekiller görürsün. Önden bakınca gördüğün şekle önden görünüm, sağdan ya da soldan bakınca gördüğüne yandan görünüm, yukarıdan bakınca gördüğüne üstten görünüm denir. Görünümler kareli kâğıda, her küp yüzü bir kare olacak biçimde çizilir.",
+    "Görünüm çizerken derinlik kaybolur: Önden bakınca arka arkaya duran küpler tek bir kare olarak görünür. Bu yüzden bir görünümdeki kare sayısı, yapıdaki küp sayısına eşit olmak zorunda değildir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Görünüm",
+     "Nereden bakılır?",
+     "Ne gösterir?"
+    ],
+    "satirlar": [
+     [
+      "Önden",
+      "Yapının karşısından",
+      "Her sütunun en yüksek küp sayısı"
+     ],
+     [
+      "Yandan (sağdan/soldan)",
+      "Yapının yan tarafından",
+      "Her sıranın en yüksek küp sayısı"
+     ],
+     [
+      "Üstten",
+      "Yukarıdan",
+      "Yapının zemine oturduğu bölge"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "tanim",
+    "baslik": "Görünüm",
+    "metin": "Bir yapıya belirli bir yönden bakıldığında görülen şeklin kareli kâğıda çizilmiş hâlidir."
+   }
+  },
+  {
+   "baslik": "Görünümleri çizmek: üstten bakış ve sayılar",
+   "metin": [
+    "Bir yapının görünümlerini çizmenin kolay bir yolu, üstten görünümün her karesine o noktada üst üste kaç küp olduğunu yazmaktır. Örneğin önde soldan sağa 2, 1, 1 küp, arkada soldan sağa 3, 1, 0 küp bulunan bir yapı düşün. Bu yapıda toplam 2 + 1 + 1 + 3 + 1 + 0 = 8 küp vardır.",
+    "Önden görünümü çizmek için her sütundaki en büyük sayıyı alırsın: Sol sütunda 2 ve 3’ten büyüğü 3, orta sütunda 1, sağ sütunda 1. Önden görünüm soldan sağa 3, 1, 1 kare yüksekliğinde sütunlardan oluşur. Sağdan görünüm için her sıranın en büyük sayısını alırsın: ön sıra 2, arka sıra 3.",
+    "Üstten görünümde yalnızca küp bulunan yerler kare olarak çizilir: önde üç, arkada iki kare (arkanın sağ köşesi boştur). Böylece aynı yapıdan üç farklı görünüm elde edersin."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Sıra",
+     "Sol",
+     "Orta",
+     "Sağ"
+    ],
+    "satirlar": [
+     [
+      "Arka",
+      "3",
+      "1",
+      "0"
+     ],
+     [
+      "Ön",
+      "2",
+      "1",
+      "1"
+     ],
+     [
+      "Önden görünüm (sütun yüksekliği)",
+      "3",
+      "1",
+      "1"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "kural",
+    "baslik": "En büyük sayı",
+    "metin": "Önden görünümde her sütunun, yandan görünümde her sıranın en büyük küp sayısı görünür."
+   }
+  },
+  {
+   "baslik": "Görünümlerden yapıyı kurmak",
+   "metin": [
+    "Görünümleri verilen bir yapıyı küplerle kurmaya çalıştığında tek bir görünümün çoğu zaman yetmediğini fark edersin. Yalnızca önden görünümü bilinen bir yapı, arkaya doğru farklı biçimlerde uzanabilir. Bu yüzden önden, yandan ve üstten görünümler birlikte kullanılır.",
+    "Önceki örnekte yalnızca önden ve üstten görünümler verilseydi yapıda en az 7, en çok 9 küp olabilirdi. Sağdan görünüm de verilince ön sıranın en yüksek sütunu 2, arka sıranınki 3 olarak belirlenir; bu bilgiyle yapı tek biçimde kurulabilir ve 8 küp gerekir.",
+    "Yapıyı kurarken önce üstten görünüme göre zemine küpleri yerleştirirsin. Sonra önden ve yandan görünümlere bakarak hangi noktalara küp ekleyeceğine karar verirsin. Kurduğun yapının görünümlerini yeniden çizip verilen görünümlerle karşılaştırarak kontrol edersin."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Tek görünüm yetmez",
+    "metin": "Bir görünüm, yapıdaki küp sayısını ve yerleşimini tek başına belirlemez. Önden, yandan ve üstten görünümleri birlikte kullan."
+   }
+  },
+  {
+   "baslik": "Bakış yönü değişince",
+   "metin": [
+    "Aynı yapının önden ve arkadan görünümleri birbirinin ayna görüntüsüdür. Önden bakınca solda görülen uzun sütun, arkadan bakınca sağda görülür. Sağdan ve soldan görünümler arasında da aynı ilişki vardır.",
+    "Yapıya bir küp eklendiğinde ya da yapıdan bir küp çıkarıldığında görünümlerin hepsi değişmeyebilir. Arka sıradaki kısa bir sütuna eklenen küp, önde daha uzun bir sütunun arkasında kalırsa önden görünüm değişmez; ama yandan görünüm değişebilir.",
+    "Yapıları noktalı izometrik kâğıda da çizebilirsin. İzometrik çizim yapıyı üç boyutlu gösterir; kareli kâğıttaki görünümler ise yapıyı tek bir yönden, iki boyutlu gösterir. İkisi birlikte bir yapıyı başkalarına anlatmanın en açık yoludur."
+   ],
+   "kutu": {
+    "tur": "bilgi",
+    "baslik": "Ayna görüntüsü",
+    "metin": "Önden görünüm ile arkadan görünüm, soldan görünüm ile sağdan görünüm birbirinin ayna görüntüsüdür."
+   }
+  },
+  {
+   "baslik": "Gerçek yaşamda görünümler",
+   "metin": [
+    "Mimarlar bir binanın planını hazırlarken binanın üstten görünümünü (kat planı) ve dört yönden görünümlerini (cephe çizimleri) ayrı ayrı çizer. İnşaat ustaları bu çizimlere bakarak binayı yapar.",
+    "Depolarda kolilerin istiflenmesinde de görünümler kullanılır. Bir depo görevlisi üstten ve yandan görünümlere bakarak kaç koli olduğunu tahmin eder. Oyuncak bloklarla yapılan modellerin kutularındaki talimatlar da çoğu zaman yapıyı farklı yönlerden gösteren çizimlerden oluşur.",
+    "Bilgisayar oyunlarında ve üç boyutlu tasarım programlarında da nesneler farklı yönlerden gösterilir. Bir nesneyi farklı yönlerden zihninde canlandırabilmek, bu meslekler için önemli bir beceridir."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Zihinde döndür",
+    "metin": "Bir yapıyı görünümlerine bakarak kurmak, zihinde döndürme becerini geliştirir. Önce küplerle dene, sonra zihninde canlandır."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Bir öğrenci harçlığının {kesir:1|4}’ünü defter almaya, kalanın {kesir:1|3}’ünü kitap almaya harcadı. Geriye 60 TL kaldı. Öğrencinin harçlığı kaç liradır?",
+   "cevap": "Tersten çalışılır: Kitaptan sonra kalan 60 TL, kitaptan önceki paranın {kesir:2|3}’üdür; kitaptan önceki para 60 ÷ {kesir:2|3} = 90 TL’dir. Bu 90 TL, harçlığın {kesir:3|4}’üdür; harçlık 90 ÷ {kesir:3|4} = 120 TL’dir. Kontrol: 120’nin {kesir:1|4}’ü 30, kalan 90; 90’ın {kesir:1|3}’ü 30, kalan 60 TL."
+  },
+  {
+   "soru": "Üstten görünümünde tek sıra hâlinde üç kare bulunan bir yapıda soldan sağa 1, 3, 2 küp üst üste duruyor. Yapının önden görünümünü tarif et ve kaç küp olduğunu bul.",
+   "cevap": "Yapı tek sıra olduğu için önden görünüm sütunların yüksekliklerini doğrudan gösterir: soldan sağa 1, 3 ve 2 kare yüksekliğinde üç sütun. Toplam küp sayısı 1 + 3 + 2 = 6’dır."
+  },
+  {
+   "soru": "Önde soldan sağa 1, 2; arkada soldan sağa 2, 2 küp bulunan bir yapının önden görünümünde her sütunun yüksekliği kaçtır? Toplam kaç küp vardır?",
+   "cevap": "Önden görünümde her sütunun en büyük sayısı görünür: sol sütun 1 ve 2’den büyüğü 2, sağ sütun 2 ve 2’den 2. Önden görünüm iki sütundan oluşur, ikisi de 2 kare yüksekliğindedir. Toplam küp sayısı 1 + 2 + 2 + 2 = 7’dir."
+  },
+  {
+   "soru": "Bir yapının önden görünümü 3 kare genişliğinde ve her sütunu 1 kare yüksekliğinde, üstten görünümü ise 3 × 2’lik bir dikdörtgendir. Yapıda en az ve en çok kaç küp olabilir?",
+   "cevap": "Üstten görünümde 6 kare olduğu için zeminde 6 noktada küp vardır. Önden görünümde bütün sütunlar 1 kare yüksekliğinde olduğundan hiçbir noktada üst üste küp yoktur. Bu durumda yapıda tam 6 küp vardır; en az ve en çok küp sayısı eşittir."
+  },
+  {
+   "soru": "Önden görünümde soldaki sütun 3 kare yüksekliğindeyse yapının arkadan görünümünde bu sütun nerede görünür?",
+   "cevap": "Önden ve arkadan görünümler birbirinin ayna görüntüsüdür. Önden bakınca solda görülen 3 kare yüksekliğindeki sütun, arkadan bakınca sağda görülür."
+  },
+  {
+   "soru": "Önde soldan sağa 3, 1; arkada soldan sağa 1, 1 küp bulunan bir yapıda arka soldaki sütuna bir küp eklenirse önden ve soldan görünümler değişir mi?",
+   "cevap": "Önden görünüm değişmez; çünkü sol sütunda öndeki 3 küplük sütun, arkadaki 2 küplük sütundan uzundur ve onu gizler. Soldan görünümde ise arka sıranın en yüksek sütunu 1’den 2’ye çıkar; bu yüzden soldan görünüm değişir."
+  }
+ ],
+ "ozet": [
+  "Başlangıç değeri bilinmeyen problemler tersten çalışılarak çözülür: Sonuçtan başlanır, her adımda işlemin tersi yapılır, sonra baştan giderek kontrol edilir.",
+  "Eş küplerle oluşturulan yapıların önden, yandan ve üstten görünümleri kareli kâğıda çizilir; görünümde derinlik kaybolduğu için kare sayısı küp sayısına eşit olmayabilir.",
+  "Üstten görünümün karelerine küp sayıları yazılarak görünümler kolayca çizilir: Önden görünümde her sütunun, yandan görünümde her sıranın en büyük sayısı görünür.",
+  "Tek bir görünüm yapıyı belirlemez; görünümler birlikte kullanıldığında küp sayısı ve yerleşim belirlenir. En az ve en çok küp sayısı görünümlere bakarak bulunabilir.",
+  "Önden ve arkadan, sağdan ve soldan görünümler birbirinin ayna görüntüsüdür; görünümler mimari planlarda, depolarda ve tasarımda kullanılır."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Bir sayının 5 fazlasının 3 katı 36’dır. Bu sayı kaçtır?",
+   "secenekler": [
+    "7",
+    "12",
+    "17",
+    "31"
+   ],
+   "dogru": 0,
+   "aciklama": "Tersten çalışılır: 36 ÷ 3 = 12; 12 − 5 = 7. Kontrol: (7 + 5) · 3 = 36."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Önde soldan sağa 2, 3, 1; arkada soldan sağa 1, 4, 2 küp bulunan bir yapının önden görünümünde sütun yükseklikleri soldan sağa nasıldır?",
+   "secenekler": [
+    "2, 3, 1",
+    "1, 4, 2",
+    "2, 4, 2",
+    "3, 7, 3"
+   ],
+   "dogru": 2,
+   "aciklama": "Her sütunun en büyük sayısı görünür: sol max(2, 1) = 2, orta max(3, 4) = 4, sağ max(1, 2) = 2."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir yapının üstten görünümünde 5 kare vardır. Bu yapıdaki küp sayısı için aşağıdakilerden hangisi kesinlikle doğrudur?",
+   "secenekler": [
+    "Yapıda tam 5 küp vardır.",
+    "Yapıda en az 5 küp vardır.",
+    "Yapıda en çok 5 küp vardır.",
+    "Yapıda 10 küp vardır."
+   ],
+   "dogru": 1,
+   "aciklama": "Üstten görünümdeki her karenin altında en az bir küp vardır; ama üst üste küpler de olabilir. Bu yüzden en az 5 küp vardır."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Her ifadenin doğru mu yanlış mı olduğuna karar ver; yanlış çıkanların açıklamasını oku.",
+   "ifadeler": [
+    {
+     "metin": "Önden görünümdeki kare sayısı her zaman yapıdaki küp sayısına eşittir.",
+     "dogru": false,
+     "aciklama": "Arka arkaya duran küpler önden tek kare gibi görünür; bu yüzden kare sayısı küp sayısından az olabilir."
+    },
+    {
+     "metin": "Önden ve arkadan görünümler birbirinin ayna görüntüsüdür.",
+     "dogru": true,
+     "aciklama": "Önden bakınca solda görülen, arkadan bakınca sağda görülür."
+    },
+    {
+     "metin": "Tek bir görünüm, yapıyı her zaman tek biçimde belirler.",
+     "dogru": false,
+     "aciklama": "Tek görünüm genellikle yetmez; görünümler birlikte kullanılmalıdır."
+    },
+    {
+     "metin": "Tersten çalışırken çarpmanın tersi olarak bölme yapılır.",
+     "dogru": true,
+     "aciklama": "Toplamaya karşı çıkarma, çarpmaya karşı bölme yapılır."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Her görünümü gösterdiği bilgiyle eşleştir.",
+   "ciftler": [
+    [
+     "Önden görünüm",
+     "Her sütunun en yüksek küp sayısı"
+    ],
+    [
+     "Yandan görünüm",
+     "Her sıranın en yüksek küp sayısı"
+    ],
+    [
+     "Üstten görünüm",
+     "Yapının zemine oturduğu bölge"
+    ],
+    [
+     "İzometrik çizim",
+     "Yapının üç boyutlu görüntüsü"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Bütün ayrıtları aynı uzunlukta olan, birbirinin aynısı küplere ___ küpler denir.",
+     "cevap": "eş"
+    },
+    {
+     "metin": "Görünüm çizerken ___ kaybolur; arka arkaya duran küpler tek kare görünür.",
+     "cevap": "derinlik"
+    },
+    {
+     "metin": "Sonucu bilinen problemi sondan başa çözmeye ___ çalışma denir.",
+     "cevap": "tersten"
+    }
+   ],
+   "fazla": [
+    "yükseklik"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir kitapçı sabah kitaplarının yarısını, öğleden sonra kalanın {kesir:1|4}’ünü sattı. Akşam rafta 30 kitap kaldı. Sabah rafta kaç kitap vardı? Tersten çalışarak çöz ve kontrol et.",
+   "ipuclari": [
+    "Akşam kalan 30 kitap, öğleden önceki kitapların kaçta kaçıdır?",
+    "Öğleden önceki kitap sayısı, sabahki kitapların yarısıdır."
+   ],
+   "cevap": "Öğleden sonra kalanın {kesir:1|4}’ü satıldığı için akşam kalan 30 kitap, öğleden önceki kitapların {kesir:3|4}’üdür: 30 ÷ {kesir:3|4} = 40 kitap. Bu 40 kitap sabahki kitapların yarısıdır: 40 · 2 = 80 kitap. Kontrol: 80’in yarısı 40 satılır, 40 kalır; 40’ın {kesir:1|4}’ü 10 satılır, 30 kalır."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Önden görünümü soldan sağa 2 ve 1 kare yüksekliğinde iki sütun, üstten görünümü 2 × 2’lik bir kare olan bir yapıda en az ve en çok kaç küp olabilir?",
+   "ipuclari": [
+    "Üstten görünümde 4 kare olduğuna göre zeminde 4 küp vardır.",
+    "Sol sütundaki iki kareden en az birinde 2 küp olmalı; sağ sütunda hiçbir yerde 1’den fazla küp olamaz."
+   ],
+   "cevap": "Zeminde 4 küp vardır. Sağ sütundaki iki karenin her birinde 1 küp bulunur. Sol sütunda en az bir karede 2 küp olmalıdır. En az: 2 + 1 + 1 + 1 = 5 küp. En çok: Sol sütundaki iki karede de 2 küp olabilir: 2 + 2 + 1 + 1 = 6 küp."
+  }
+ ]
+}

@@ -1,0 +1,314 @@
+{
+  "sinif": 5,
+  "ders": "fen-bilimleri",
+  "hafta": 9,
+  "tarih": "9-13 Kasım 2026",
+  "yayin_tarihi": "2026-10-15",
+  "unite": "Kuvveti Tanıyalım",
+  "konu": "Dinamometre Modeli Tasarlamak: Model Önermek, Ölçeklendirmek, Test Etmek ve Yeni Kanıtlarla Yenilemek",
+  "ciktilar": [
+    "FB.5.2.2. Basit araç gereçle bilimsel bir dinamometre modeli oluşturabilme"
+  ],
+  "giris": "Geçen hafta kuvveti okla göstermeyi, ölçeceğin kuvvete uygun dinamometreyi seçmeyi, ölçeği doğru okumayı ve ölçüm hatalarını önlemeyi öğrendin. Yayın uzamasının kuvvetle düzenli arttığını bir tabloda görüp tahminler yaptın. İki hafta önce de bir lastik ve kartonla basit bir kuvvet ölçer denemiştin. Bu hafta o ilk denemeyi bilimsel bir modele dönüştürüyorsun. Bir mühendis gibi önce problemi belirleyecek, malzemeni gerekçesiyle seçecek, modelini önerecek, ölçeğini değeri bilinen yüklerle çizecek, modelini test edip verilerini tabloya yazacaksın. Sonra modelinin sınırlılıklarını bulacak, onu gerçek bir dinamometreyle karşılaştıracak ve elde ettiğin yeni kanıtlara göre yenileyeceksin. 10 Kasım’da Atatürk’ü ölüm yıl dönümünde saygıyla anıyoruz; haftanın ardından başlayan ara tatilde modelini evde de geliştirebilirsin.",
+  "bolumler": [
+    {
+      "baslik": "Bilimsel model nedir?",
+      "metin": [
+        "Model, gerçek bir varlığın ya da aracın nasıl çalıştığını daha basit bir biçimde gösteren yapıdır. Dünya küresi Dünya’nın bir modelidir; Güneş, Dünya ve Ay’ın hareketlerini göstermek için toplarla kurulan bir düzenek de bu gök cisimlerinin hareketlerinin bir modelidir. Bu hafta yapacağın dinamometre modeli de gerçek dinamometrenin nasıl çalıştığını gösterecek; üstelik küçük kuvvetleri gerçekten ölçebilecek.",
+        "Bir modeli bilimsel yapan şey, güzel görünmesi değil, kanıtla sınanmasıdır. Bilimsel bir model önerirken ne yapacağını söylersin, nasıl çalışacağını bir çizimle gösterirsin ve seçimlerinin nedenini açıklarsın. Sonra modelini dener, sonuçlarını gerçek ölçümlerle karşılaştırırsın. Model beklendiği gibi çalışmıyorsa bu bir başarısızlık değildir; yeni bir kanıttır ve modeli geliştirmek için sana ipucu verir.",
+        "Dinamometre modelini kurarken gerçek dinamometrenin parçalarını düşünürsün: kuvvetle uzayan esnek bir parça, onu taşıyan bir gövde, cismi takacağın bir kanca, uzamayı gösteren bir işaretçi ve üzerinde değerlerin yazılı olduğu bir ölçek. Modelinde bu parçaların her birinin yerine evde ya da sınıfta kolayca bulabileceğin bir malzeme koyarsın."
+      ],
+      "tablo": {
+        "basliklar": ["Gerçek dinamometredeki parça", "Görevi", "Modeldeki karşılığı (örnek)"],
+        "satirlar": [
+          ["Yay", "Kuvvetle uzar, kuvvet kalkınca eski hâline döner.", "Yumuşak bir yay ya da paket lastiği"],
+          ["Gövde", "Yayı taşır, ölçeği üzerinde bulundurur.", "Karton şerit, tahta çıta ya da kesilmiş pet şişe"],
+          ["Kanca", "Cismi asmayı sağlar.", "Açılmış bir ataş ya da tel kanca"],
+          ["Gösterge (ibre)", "Yayın ne kadar uzadığını gösterir.", "Yayın ucuna bantlanmış kürdan ya da renkli bant"],
+          ["Ölçek", "Kuvvetin değerini okumayı sağlar.", "Kartona cetvelle çizilmiş çizgiler"],
+          ["Asma halkası", "Aracı sabit tutmayı sağlar.", "İp ilmeği ya da raptiye"]
+        ]
+      },
+      "kutu": {
+        "tur": "tanim",
+        "baslik": "Bilimsel model",
+        "metin": "Gerçek bir varlığın ya da aracın nasıl çalıştığını basitleştirerek gösteren, kanıtlarla sınanan ve yeni kanıtlara göre yenilenebilen yapıdır."
+      }
+    },
+    {
+      "baslik": "Tasarım süreci: Problemden model önerisine",
+      "metin": [
+        "Mühendisler bir araç tasarlarken rastgele işe koyulmaz, adım adım ilerler. İlk adım problemi açıkça yazmaktır: “Sınıftaki küçük cisimlerin uyguladığı 0 ile 5 N arasındaki kuvvetleri ölçebilen, basit malzemelerle yapılmış bir dinamometre modeli tasarlamak.” Bu cümle neyi ölçeceğini ve modelin hangi aralıkta çalışması gerektiğini söyler.",
+        "Sonra ölçütleri ve sınırlamaları belirlersin. Ölçütler, modelinin başarılı sayılması için ne yapması gerektiğidir: Gerçek dinamometreye yakın sonuç vermeli, yük kaldırılınca işaretçi sıfıra dönmeli, ölçek kolay okunmalı. Sınırlamalar ise elindeki imkânlardır: Yalnızca sınıfta ve evde bulunan malzemeleri kullanabilirsin, model güvenli olmalı ve belirlenen sürede bitmeli.",
+        "Ardından grubunla fikir üretirsin. Her üye bir çizim yapar; çizimler karşılaştırılır ve en uygun görülen fikir seçilir. Model önerini bir çizimle ve kısa bir açıklamayla sunarsın: Hangi malzemeyi neden seçtin, işaretçi nereyi gösterecek, ölçek nereye çizilecek? Gerekçesini söylediğin bir öneriyi arkadaşların anlayabilir, sorgulayabilir ve sınayabilir."
+      ],
+      "tablo": {
+        "basliklar": ["Adım", "Kendine sorduğun soru"],
+        "satirlar": [
+          ["1. Problemi belirle", "Ne ölçeceğim? Hangi aralıkta ölçeceğim?"],
+          ["2. Ölçüt ve sınırlamaları yaz", "Model ne yapmalı? Elimde hangi imkânlar var?"],
+          ["3. Fikir üret ve model öner", "Hangi malzemeyi neden seçiyorum? Çizimim nasıl?"],
+          ["4. Modeli yap", "Parçaları sağlam ve düzgün yerleştirdim mi?"],
+          ["5. Ölçeklendir", "Çizgileri değeri bilinen yüklerle çizdim mi?"],
+          ["6. Test et, veriyi kaydet", "Model gerçek dinamometreyle aynı sonucu veriyor mu?"],
+          ["7. Değerlendir ve yenile", "Hangi sorun çıktı, onu nasıl düzeltirim?"]
+        ]
+      },
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Tasarım bir döngüdür",
+        "metin": "Tasarım süreci düz bir çizgi değil, bir döngüdür. Test sonuçların seni çoğu zaman yeniden malzeme seçmeye ya da ölçeği yeniden çizmeye götürür. Her turda modelin biraz daha iyi olur."
+      }
+    },
+    {
+      "baslik": "Yay mı, lastik mi? Malzemeyi gerekçesiyle seçmek",
+      "metin": [
+        "Modelinin kalbi, kuvvetle uzayan esnek parçadır. En çok kullanılan iki seçenek yay ve paket lastiğidir. Metal bir yay, esneklik sınırı aşılmadığı sürece düzenli uzar: Kuvvet her 1 N arttığında hep aynı miktarda uzar. Geçen hafta tabloda gördüğün bu düzen sayesinde yaylı bir modelde ölçek çizgileri eşit aralıklı olur.",
+        "Paket lastiği kolay bulunur ve küçük kuvvetlerde bile gözle görülür biçimde uzar. Ancak lastiğin uzaması çoğu zaman bu kadar düzenli değildir: Her 1 N’luk artışta lastik farklı miktarlarda uzayabilir. Ayrıca uzun süre gergin kalan ya da çok gerilen lastik gevşer; yük kaldırıldığında eski uzunluğuna tam dönmeyebilir. Bu yüzden lastikli bir modelde çizgileri eşit aralıklarla çizemezsin; her çizgiyi ayrı ayrı, yük asarak işaretlemen gerekir.",
+        "Esnek parçanın kalınlığı da önemlidir. İnce bir lastik ya da yumuşak bir yay küçük kuvvetlerde çok uzar; çizgiler birbirinden belirgin biçimde ayrılır, model duyarlı olur. Ama böyle bir parça büyük kuvvetlerde çabucak sınırına ulaşır. Kalın bir lastik ya da sert bir yay büyük kuvvetleri taşıyabilir, ama küçük kuvvetlerde çok az uzar ve çizgiler birbirine çok yakın düşer. Bu yüzden malzemeyi, ölçmek istediğin kuvvet aralığına göre seçersin."
+      ],
+      "tablo": {
+        "basliklar": ["Malzeme", "Güçlü yanı", "Zayıf yanı", "Ölçek nasıl çizilir?"],
+        "satirlar": [
+          ["Yumuşak metal yay", "Düzenli uzar, kolay kolay bozulmaz.", "Bulması lastikten zor olabilir.", "Eşit aralıklı çizilebilir."],
+          ["İnce paket lastiği", "Kolay bulunur; küçük kuvvetlerde belirgin uzar.", "Düzensiz uzayabilir, zamanla gevşer.", "Her çizgi yük asılarak ayrı ayrı işaretlenir."],
+          ["Kalın lastik ya da yan yana iki lastik", "Daha büyük kuvvetleri taşır.", "Küçük kuvvetlerde az uzar, çizgiler sıkışır.", "Her çizgi yük asılarak ayrı ayrı işaretlenir."]
+        ]
+      },
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Esneklik sınırı",
+        "metin": "Yayı ya da lastiği aşırı yüklersen esneklik sınırı aşılır; parça kalıcı olarak uzar ve yük kaldırılınca işaretçi sıfıra dönmez. Bunu anlamak için her ölçümden sonra yükü indir ve işaretçinin sıfıra dönüp dönmediğine bak."
+      }
+    },
+    {
+      "baslik": "Ölçeklendirme: Çizgileri değeri bilinen yüklerle çizmek",
+      "metin": [
+        "Modelin çalışıyor, ama işaretçinin gösterdiği yer henüz bir sayı söylemiyor. Modelin üzerine newton değerlerini yerleştirme işine ölçeklendirme (kalibrasyon) denir. Ölçeklendirme için kuvveti önceden bilinen yüklere ihtiyacın var. Bunun için küçük poşetlere kum ya da pirinç doldurup her birini gerçek dinamometreye asabilir, dinamometre tam 1 N gösterene kadar kum ekleyip çıkarabilirsin. Böylece her biri 1 N’luk kuvvet uygulayan, birbirinin aynısı birkaç torba hazırlamış olursun.",
+        "Sonra modelini boşken asarsın ve işaretçinin durduğu yere 0 yazarsın. Kancaya bir torba asarsın, işaretçinin durduğu yeri çizer ve yanına 1 N yazarsın. İkinci torbayı ekleyince işaretçinin yeni yerine 2 N, üçüncüde 3 N yazarsın. Bunu modelinin güvenle taşıyabileceği en büyük yüke kadar sürdürürsün. Her çizgiden sonra torbaları indirip işaretçinin sıfıra döndüğünü kontrol edersin.",
+        "Yaylı modelde çizgiler arasındaki uzaklıklar eşit çıkar; aradaki boşlukları cetvelle ikiye bölerek yarım newtonluk çizgiler de ekleyebilirsin. Lastikli modelde ise aralıklar farklı çıkabilir; bu durumda ara çizgileri tahminle değil, ölçerek çizersin. Son olarak ölçeğin üzerine modelinin ölçebileceği en büyük değeri yazarsın, tıpkı gerçek dinamometrelerde olduğu gibi. Aşağıdaki tablo, biri yay, öbürü lastik kullanan iki grubun ölçeklendirme sırasında aldığı ölçümleri gösteriyor: Yaylı modelde her torba işaretçiyi 1,5 cm indiriyor; lastikli modelde ise her torbanın etkisi farklı."
+      ],
+      "tablo": {
+        "basliklar": ["Asılan torba sayısı", "Kuvvet", "Yaylı modelde işaretçinin 0 çizgisine uzaklığı", "Lastikli modelde işaretçinin 0 çizgisine uzaklığı"],
+        "satirlar": [
+          ["0", "0 N", "0 cm", "0 cm"],
+          ["1", "1 N", "1,5 cm", "2,0 cm"],
+          ["2", "2 N", "3,0 cm", "3,5 cm"],
+          ["3", "3 N", "4,5 cm", "4,6 cm"],
+          ["4", "4 N", "6,0 cm", "5,5 cm"],
+          ["5", "5 N", "7,5 cm", "6,3 cm"]
+        ]
+      },
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Ölçeklendirme kuralı",
+        "metin": "Çizgileri cetvelle tahminen değil, değeri bilinen yükleri asarak çiz. Önce sıfırı işaretle, sonra yükleri birer birer ekle, en sonda modelinin ölçebileceği en büyük değeri ölçeğe yaz."
+      }
+    },
+    {
+      "baslik": "Test etmek ve veri tablosu tutmak",
+      "metin": [
+        "Ölçeklendirdiğin model gerçekten doğru ölçüyor mu? Bunu anlamanın yolu test etmektir. Ölçeklendirmede kullanmadığın birkaç cisim seç: bir boya kutusu, bir kalem kutusu, bir fen kitabı, bir sözlük. Her cismi önce modeline, sonra gerçek dinamometreye as ve iki değeri de tabloya yaz. Her ölçümü üç kez tekrarla; birbirine yakın sonuçlar güvenilirdir.",
+        "Tabloyu doldurduktan sonra her cisim için iki değer arasındaki farkı bul. Farklar sıfıra yakınsa modelin iyi çalışıyor demektir. Farklar büyükse nedenini aramaya başlarsın. Aşağıdaki tabloda bir grubun test sonuçları var. Dikkat edersen model her cisimde gerçek dinamometreden 1 N kadar fazla gösteriyor. Hep aynı miktardaki bir fark, rastgele bir okuma hatası değil, düzenli bir hatadır. Grup modeli boşken astığında işaretçinin 0 çizgisinde değil, 1 N çizgisinde durduğunu fark ediyor: Lastik gevşemiş, sıfır noktası kaymış. Sözlük asıldığında ise işaretçi ölçeğin dışına çıkıyor; grup, lastiğe zarar vermemek için sözlüğü hemen indiriyor. Demek ki 7 N, bu modelin ölçüm aralığının dışında.",
+        "Test sırasında yalnızca sayıları değil, gözlemlerini de not edersin: İşaretçi kartona sürtünüp takılıyor mu, model sallanıyor mu, çizgiler kolay okunuyor mu? Bu notlar sayılar kadar değerlidir; çünkü modelini neresinden düzelteceğini çoğu zaman bu gözlemler söyler."
+      ],
+      "tablo": {
+        "basliklar": ["Cisim", "Modelin gösterdiği", "Gerçek dinamometrenin gösterdiği", "Fark"],
+        "satirlar": [
+          ["Boya kutusu", "2 N", "1 N", "1 N"],
+          ["Kalem kutusu", "3 N", "2 N", "1 N"],
+          ["Fen kitabı", "5 N", "4 N", "1 N"],
+          ["Sözlük", "Ölçeğin dışına çıktı", "7 N", "Ölçülemedi"]
+        ]
+      },
+      "kutu": {
+        "tur": "hatirla",
+        "baslik": "Hep aynı fark",
+        "metin": "Model her ölçümde aynı miktarda fazla ya da eksik gösteriyorsa çoğu zaman sıfır noktası kaymıştır; sıfırı yeniden işaretlersin. Sonuçlar bir fazla bir eksik, dağınık çıkıyorsa ölçümleri dikkatle tekrarlarsın."
+      }
+    },
+    {
+      "baslik": "Sınırlılıklar ve modeli yeni kanıtlara göre yenilemek",
+      "metin": [
+        "Her modelin sınırlılıkları, yani iyi çalışmadığı durumlar vardır. Dinamometre modelinin sınırlılıkları genellikle şunlardır: Ölçebildiği kuvvet aralığı dardır, lastik zamanla gevşer, işaretçi kartona sürtünüp takılabilir, elle çizilen çizgiler kalın olduğu için küçük farklar zor okunur, nemlenen karton eğilebilir. Sınırlılıkları açıkça yazmak bir eksiklik değil, bilimsel dürüstlüktür.",
+        "Modeli yenilemek, testten gelen her kanıtı bir değişikliğe dönüştürmektir. Bir önceki bölümdeki grubun iki kanıtı vardı: Model her cisimde 1 N fazla gösteriyordu ve sözlüğü ölçemiyordu. Grup birinci kanıt için yeni bir lastik taktı, sıfırı yeniden işaretledi ve ölçeği baştan çizdi. İkinci kanıt için iki seçeneği tartıştı. Ölçek şeridini uzatmak, aynı lastiği daha çok germek demekti ve esneklik sınırını aşma tehlikesi taşıyordu. Yalnızca kalın bir lastik kullanmak ise küçük kuvvetlerin okunmasını zorlaştıracaktı. Sonunda iki ayrı model yapmaya karar verdi: biri 0-5 N, öbürü 0-10 N için. Tıpkı gerçek dinamometrelerin farklı ölçüm aralıklarında üretilmesi gibi.",
+        "Yeniledikten sonra iş bitmez: Yenilenmiş modeli aynı cisimlerle yeniden test eder, yeni sonuçları eskileriyle karşılaştırırsın. Fark küçüldüyse yenileme işe yaramıştır. Bilim insanları da modellerini böyle geliştirir: Yeni bir kanıt modele uymuyorsa model değiştirilir ve yeniden sınanır."
+      ],
+      "tablo": {
+        "basliklar": ["Kanıt (gözlem)", "Olası neden", "Yenileme"],
+        "satirlar": [
+          ["Yük indirilince işaretçi sıfıra dönmüyor.", "Esnek parça esneklik sınırını aştı.", "Parçayı değiştir, ölçeği yeniden çiz, en büyük değeri aşma."],
+          ["Hafif cisimlerde işaretçi neredeyse kıpırdamıyor.", "Esnek parça çok kalın ya da sert.", "Daha ince bir lastik ya da daha yumuşak bir yay kullan."],
+          ["Ağır bir cisimde işaretçi ölçeğin dışına çıkıyor.", "Ölçüm aralığı dar.", "Daha geniş ölçüm aralıklı ikinci bir model yap."],
+          ["İşaretçi kartona sürtünüp takılıyor.", "Gövde eğri ya da işaretçi kartona çok yakın.", "Gövdeyi düz tut, işaretçiyle karton arasında küçük bir boşluk bırak."],
+          ["Model her cisimde aynı miktarda fazla gösteriyor.", "Sıfır noktası kaymış.", "Sıfırı yeniden işaretle, ölçeği yeniden çiz."]
+        ]
+      },
+      "kutu": {
+        "tur": "bilgi",
+        "baslik": "Yeni kanıt, yenilenen model",
+        "metin": "Bilimde modeller kesin ve değişmez değildir. Yeni gözlemler ve ölçümler bir modelin eksiğini gösterdiğinde model yenilenir. Senin dinamometre modelin de her testte biraz daha iyi hâle gelir."
+      }
+    },
+    {
+      "baslik": "Gerçek dinamometreyle karşılaştırma ve sunum",
+      "metin": [
+        "Modelini gerçek bir dinamometrenin yanına koyup ikisini karşılaştırdığında, gerçek araçtaki bazı ayrıntıların neden var olduğunu daha iyi anlarsın. Gerçek dinamometrenin yayı bir gövdenin ya da saydam bir borunun içindedir; böylece yay sallanmaz ve ibre düz bir çizgide kayar. Birçok dinamometrede sıfır ayarı yapmaya yarayan bir düzenek bulunur; senin modelinde ise sıfırı yeniden işaretlemen gerekir. Gerçek dinamometrenin ölçeği eşit aralıklı ve ince çizgilerle basıldığı için değerler daha ayrıntılı okunur.",
+        "Karşılaştırmanın amacı modelini küçümsemek değildir. Modelin, gerçek dinamometreyle aynı ilkeyle çalışır: Kuvvet esnek bir parçayı uzatır, uzama bir ölçek üzerinde okunur. Aradaki farklar, kullanılan malzemelerden ve üretimdeki özenden kaynaklanır. Bu farkları bulmak, bir sonraki modelini nasıl geliştireceğini gösterir.",
+        "Çalışmanın sonunda modelini sınıfa sunarsın. Sunumunda problemi, model çizimini, malzeme seçiminin gerekçesini, ölçeklendirme ve test tablolarını, bulduğun sınırlılıkları ve yaptığın yenilemeleri anlatırsın. Arkadaşlarının sorularını dinler, onların modellerinden yeni fikirler alırsın. Grupça çalışırken görev paylaşımı yapmak, birbirini dinlemek ve sonuçları dürüstçe yazmak da modelin kadar önemlidir."
+      ],
+      "tablo": {
+        "basliklar": ["Özellik", "Gerçek dinamometre", "Dinamometre modelin"],
+        "satirlar": [
+          ["Esnek parça", "Metal yay", "Yay ya da lastik"],
+          ["Gövde", "Metal ya da saydam plastik boru", "Karton, çıta ya da pet şişe"],
+          ["Sıfır ayarı", "Birçoğunda ayar düzeneği vardır.", "Sıfır elle yeniden işaretlenir."],
+          ["Ölçek", "Eşit aralıklı, ince çizgili", "Elle çizilir; lastikte aralıklar eşit olmayabilir."],
+          ["Ölçüm aralığı", "Üzerinde yazar (5 N, 10 N gibi).", "Ölçeklendirmede belirlenir ve ölçeğe yazılır."],
+          ["Çalışma ilkesi", "Kuvvet yayı uzatır, uzama ölçekte okunur.", "Aynı ilke"]
+        ]
+      },
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Sunum kontrol listesi",
+        "metin": "Problemim açık mı? Çizimimde parçaların adları var mı? Malzeme seçimimi gerekçelendirdim mi? Tablolarımda birimler yazılı mı? Sınırlılıkları ve yenilemeleri anlattım mı?"
+      }
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Yaylı bir dinamometre modelinde 1 N’luk torba asıldığında işaretçi 0 çizgisinden 2 cm aşağı iniyor; esneklik sınırı aşılmıyor. a) 3 N’luk yükte işaretçi 0 çizgisinden kaç cm aşağıda olur? b) Bir cisim asıldığında işaretçi 0 çizgisinden 8 cm aşağıda duruyor. Cisim modele kaç N’luk kuvvet uygular?",
+      "cevap": "a) Yay düzenli uzadığı için her 1 N işaretçiyi 2 cm indirir. 3 N için 3 × 2 = 6 cm aşağıda olur. b) 8 cm’nin içinde kaç tane 2 cm olduğunu bulursun: 8 ÷ 2 = 4. Cisim modele 4 N’luk kuvvet uygular."
+    },
+    {
+      "soru": "Bir grup, lastikli modelini ölçeklendirirken şu sonuçları buldu: 0 N’da 0 cm, 1 N’da 2 cm, 2 N’da 3,5 cm, 3 N’da 4,6 cm. Grup, 4 N ve 5 N çizgilerini cetvelle 2’şer cm aralıkla çizmeye karar verdi. Bu karar doğru mu?",
+      "cevap": "Doğru değil. Lastiğin uzaması düzenli değildir: Birinci 1 N’luk artışta işaretçi 2 cm, ikincide 3,5 − 2 = 1,5 cm, üçüncüde 4,6 − 3,5 = 1,1 cm inmiştir. Her artışın etkisi farklı olduğu için sonraki çizgilerin yeri tahminle bulunamaz; 2’şer cm aralık hiç uygun değildir, çünkü aralıklar giderek küçülmektedir. Grup 4 N ve 5 N çizgilerini de torba asarak, ölçerek işaretlemelidir."
+    },
+    {
+      "soru": "Elif modelinden ağır bir su şişesini indirdiğinde işaretçinin 0 çizgisine dönmediğini, 1 cm aşağıda kaldığını görüyor. Bu kanıt neyi gösterir? Elif ne yapmalıdır?",
+      "cevap": "Lastik aşırı gerildiği için esneklik sınırını aşmış ve kalıcı olarak uzamıştır; eski ölçek artık doğru ölçmez. Elif lastiği yenisiyle değiştirmeli, sıfırı yeniden işaretlemeli ve ölçeği değeri bilinen yüklerle baştan çizmelidir. Aynı sorunu yeniden yaşamamak için ölçeğin üzerine modelin ölçebileceği en büyük değeri yazmalı ve daha ağır cisimleri bu modelle ölçmemelidir."
+    },
+    {
+      "soru": "Bir grubun test sonuçları şöyle: Boya kutusu modelde 2 N, gerçek dinamometrede 1 N; kalem kutusu modelde 3 N, dinamometrede 2 N; fen kitabı modelde 5 N, dinamometrede 4 N. Bu verilerde nasıl bir örüntü var? Örüntünün olası nedeni nedir?",
+      "cevap": "Model her cisimde gerçek dinamometreden 1 N fazla göstermektedir: 2 − 1 = 1, 3 − 2 = 1, 5 − 4 = 1. Fark hep aynı olduğu için bu rastgele bir okuma hatası değil, düzenli bir hatadır. En olası neden sıfır noktasının kaymasıdır: Model boşken işaretçi 0 çizgisinde değil, 1 N çizgisinde duruyor olabilir. Grup modeli boşken asıp bunu kontrol etmeli, sıfırı yeniden işaretleyip ölçeği yeniden çizmelidir."
+    },
+    {
+      "soru": "Can, silgi, kurşun kalem ve birkaç kâğıt yaprağı gibi çok hafif cisimleri karşılaştırmak için bir model yapmak istiyor. Kalın bir lastik mi, ince bir lastik mi seçmeli? Seçiminin bir sınırlılığı ne olur?",
+      "cevap": "İnce bir lastik seçmelidir. İnce lastik küçük kuvvetlerde bile belirgin biçimde uzar; çizgiler birbirinden kolayca ayrılır ve hafif cisimler arasındaki farklar görülebilir. Sınırlılığı ise ölçüm aralığının dar olmasıdır: Bu modele ağır bir cisim asılırsa ince lastik esneklik sınırını çabucak aşar ve bozulur. Bu yüzden ölçeğin üzerine modelin ölçebileceği en büyük değer yazılmalıdır."
+    },
+    {
+      "soru": "Mert, modelinin ölçeğini hiç yük asmadan, cetvelle 1’er cm aralıklarla çizip yanlarına 1 N, 2 N, 3 N yazdı. Bu modelle bir kitabı ölçtü ve 4 N buldu. Mert’in ölçümüne güvenebilir miyiz? Neden?",
+      "cevap": "Güvenemeyiz. Mert ölçeklendirme yapmamıştır; 1 cm’lik aralığın gerçekten 1 N’a karşılık geldiğini hiçbir kanıta dayandırmamıştır. 1 N’luk kuvvet lastiği 1 cm değil, örneğin 2 cm uzatıyor olabilir. Mert önce değeri bilinen yükleri asarak çizgileri yeniden işaretlemeli, sonra kitabı hem modelle hem gerçek dinamometreyle ölçüp sonuçları karşılaştırmalıdır."
+    }
+  ],
+  "ozet": [
+    "Bilimsel model, gerçek bir aracın nasıl çalıştığını basitleştirerek gösteren, kanıtlarla sınanan ve yeni kanıtlara göre yenilenen yapıdır; dinamometre modelinde esnek bir parça, gövde, kanca, işaretçi ve ölçek bulunur.",
+    "Tasarım süreci bir döngüdür: problemi belirle, ölçüt ve sınırlamaları yaz, model öner, modeli yap, ölçeklendir, test et, değerlendir ve yenile.",
+    "Yay düzenli uzadığı için ölçeği eşit aralıklı çizilebilir; lastik düzensiz uzayabilir ve zamanla gevşer. İnce ve yumuşak parçalar küçük kuvvetlere duyarlıdır ama ölçüm aralıkları dardır; esneklik sınırı aşılırsa işaretçi sıfıra dönmez.",
+    "Ölçeklendirmede önce sıfır işaretlenir, sonra değeri bilinen yükler birer birer asılarak çizgiler çizilir ve ölçeğe modelin ölçebileceği en büyük değer yazılır.",
+    "Model, gerçek dinamometreyle karşılaştırılarak test edilir; sonuçlar tabloya yazılır ve farklar incelenir. Sıfır kayması, dar ölçüm aralığı ve sürtünme gibi sınırlılıklar yeni kanıt olarak kullanılır, model yenilenip yeniden test edilir."
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir dinamometre modelinin ölçeğini çizmek (ölçeklendirmek) için aşağıdakilerden hangisi gereklidir?",
+      "secenekler": [
+        "Cetvelle eşit aralıklı çizgiler çizip sırayla sayı yazmak",
+        "Modelin gövdesini renkli kâğıtla kaplamak",
+        "Değeri gerçek dinamometreyle önceden ölçülmüş yükleri modele asmak",
+        "Lastiği olabildiğince çok gerip uzunluğunu ölçmek"
+      ],
+      "dogru": 2,
+      "aciklama": "Ölçeklendirmede çizgiler, değeri bilinen yükler asılarak işaretlenir. Cetvelle tahminen çizilen çizgiler bir kanıta dayanmaz; lastiği aşırı germek ise esneklik sınırını aştırır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir öğrenci modelinden yükü indirdiğinde işaretçinin sıfır çizgisine dönmediğini görüyor. Bu gözlem en çok neyi gösterir?",
+      "secenekler": [
+        "Esnek parçanın esneklik sınırını aştığını",
+        "Modelin çok duyarlı olduğunu",
+        "Yükün çok hafif olduğunu",
+        "Ölçeğin eşit aralıklı çizildiğini"
+      ],
+      "dogru": 0,
+      "aciklama": "Esneklik sınırı aşılan lastik ya da yay kalıcı olarak uzar ve eski uzunluğuna dönemez; bu yüzden işaretçi sıfıra dönmez. Parça değiştirilmeli ve ölçek yeniden çizilmelidir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Yaylı bir modelde 1 N’luk yükte işaretçi 1,5 cm, 2 N’luk yükte 3 cm aşağı iniyor. Esneklik sınırı aşılmadan 4 N’luk yük asılırsa işaretçi kaç cm aşağı iner?",
+      "secenekler": [
+        "4 cm",
+        "4,5 cm",
+        "5 cm",
+        "6 cm"
+      ],
+      "dogru": 3,
+      "aciklama": "Yay düzenli uzar: Her 1 N işaretçiyi 1,5 cm indirir. 4 N için 4 × 1,5 = 6 cm aşağı iner."
+    },
+    {
+      "tur": "dy",
+      "yonerge": "Her ifadenin doğru mu yanlış mı olduğuna karar ver; yanlış çıkanların açıklamasını oku.",
+      "ifadeler": [
+        {
+          "metin": "Bir model beklendiği gibi çalışmazsa yapılan çalışma boşa gitmiş olur.",
+          "dogru": false,
+          "aciklama": "Beklenmeyen sonuç yeni bir kanıttır; model bu kanıta göre yenilenir ve geliştirilir."
+        },
+        {
+          "metin": "Lastikli bir modelde ölçek çizgileri her zaman eşit aralıklı çıkar.",
+          "dogru": false,
+          "aciklama": "Lastik her zaman düzenli uzamaz; çizgiler her yük için ayrı ayrı ölçülerek işaretlenmelidir."
+        },
+        {
+          "metin": "İnce bir lastik, küçük kuvvetlerde kalın bir lastikten daha belirgin uzar.",
+          "dogru": true,
+          "aciklama": "İnce lastikli model küçük kuvvetlere karşı daha duyarlıdır, ama ölçüm aralığı daha dardır."
+        },
+        {
+          "metin": "Modelin gerçek dinamometreden hep aynı miktarda fazla göstermesi, sıfır noktasının kaydığını düşündürür.",
+          "dogru": true,
+          "aciklama": "Hep aynı fark düzenli bir hatadır; sıfır yeniden işaretlenerek düzeltilir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "yonerge": "Test sırasında elde edilen her kanıtı uygun yenilemeyle eşleştir.",
+      "ciftler": [
+        ["İşaretçi kartona sürtünüp takılıyor.", "Gövdeyi düzeltmek, işaretçiyle karton arasında boşluk bırakmak"],
+        ["Hafif cisimlerde işaretçi neredeyse kıpırdamıyor.", "Daha ince bir lastik ya da daha yumuşak bir yay kullanmak"],
+        ["Ağır bir cisimde işaretçi ölçeğin dışına çıkıyor.", "Daha geniş ölçüm aralıklı ikinci bir model yapmak"],
+        ["Model her cisimde 1 N fazla gösteriyor.", "Sıfırı yeniden işaretleyip ölçeği yeniden çizmek"]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+      "cumleler": [
+        {"metin": "Gerçek bir aracın nasıl çalıştığını basitleştirerek gösteren ve kanıtlarla sınanan yapıya ___ denir.", "cevap": "model"},
+        {"metin": "Değeri bilinen yükleri asarak modelin çizgilerini işaretlemeye ___ denir.", "cevap": "ölçeklendirme"},
+        {"metin": "Lastik çok gerilip ___ sınırını aşarsa yük kaldırılınca eski uzunluğuna dönemez.", "cevap": "esneklik"},
+        {"metin": "Modelin ölçeğindeki kuvvet değerleri ___ birimiyle yazılır.", "cevap": "newton"}
+      ],
+      "fazla": ["termometre"]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "0 ile 5 N arasındaki kuvvetleri ölçecek yaylı bir model yapıyorsun. Denemelerinde 1 N’luk yük yayı 2 cm uzatıyor. İşaretçinin hareket edeceği ölçek bölümü en az kaç santimetre olmalı? Ölçeği nasıl çizer, modelini nasıl test edersin?",
+      "ipuclari": [
+        "En büyük yük olan 5 N, işaretçiyi kaç santimetre indirir?",
+        "Çizgileri tahminle değil, değeri bilinen yüklerle işaretlemeyi unutma."
+      ],
+      "cevap": "5 N’luk yük yayı 5 × 2 = 10 cm uzatır; bu yüzden ölçek bölümü en az 10 cm olmalı, okumayı kolaylaştırmak için alt ve üstte biraz boşluk bırakılmalıdır. Önce model boşken işaretçinin yerine 0 yazılır. Sonra 1 N’luk torbalar birer birer asılarak 1, 2, 3, 4 ve 5 N çizgileri işaretlenir; yay düzenli uzadığı için çizgiler 2’şer cm aralıklı çıkmalıdır. Ölçeğin üstüne en büyük değer olarak 5 N yazılır. Test için ölçeklendirmede kullanılmayan birkaç cisim önce modele, sonra gerçek dinamometreye asılır; sonuçlar tabloya yazılır ve farklar karşılaştırılır."
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir grubun lastikli modeli testte iki kanıt verdi: Model her cisimde gerçek dinamometreden 1 N fazla gösterdi ve 7 N’luk sözlüğü ölçemedi, işaretçi ölçeğin dışına çıktı. Grup için iki yenileme öner ve her birinin gerekçesini yaz. Yenilemenin işe yarayıp yaramadığı nasıl anlaşılır?",
+      "ipuclari": [
+        "Her cisimde aynı miktarda fark neyi gösterir?",
+        "Tek bir model hem çok küçük hem büyük kuvvetleri iyi ölçebilir mi?"
+      ],
+      "cevap": "Birinci yenileme: Model boşken işaretçinin yeri kontrol edilmeli; lastik gevşediyse yeni lastik takılıp sıfır yeniden işaretlenmeli ve ölçek değeri bilinen yüklerle baştan çizilmelidir. Gerekçe: Farkın her cisimde aynı olması, sıfır noktasının kaydığını gösterir. İkinci yenileme: 7 N gibi büyük kuvvetler için daha kalın lastikli ikinci bir model (örneğin 0-10 N) yapılmalıdır. Gerekçe: Aynı lastiği daha çok germek esneklik sınırını aşabilir; tek bir kalın lastikli modelde ise küçük kuvvetler zor okunur. Yenilemenin işe yarayıp yaramadığını anlamak için modeller aynı cisimlerle yeniden test edilir; model ile gerçek dinamometre arasındaki farklar küçüldüyse yenileme başarılıdır."
+    }
+  ]
+}
