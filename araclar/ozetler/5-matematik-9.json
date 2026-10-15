@@ -1,0 +1,476 @@
+{
+ "sinif": 5,
+ "ders": "matematik",
+ "hafta": 9,
+ "tarih": "9-13 Kasım 2026",
+ "yayin_tarihi": "2026-10-15",
+ "unite": "Sayılar ve Nicelikler (1)",
+ "konu": "Çok Basamaklı Sayıları Okuma ve Yazma: Bölükler, Okunuş ve Yazılış, Örüntülerden Önermeler",
+ "ciktilar": [
+  "MAT.5.1.1. Altı basamaklı sayıları okuma ve yazmayı çok basamaklı sayılara genelleyebilme"
+ ],
+ "giris": "Geçen hafta kesişen çemberlerle kenarları verilen üçgenleri çizdin, hangi üç uzunlukla üçgen kurulabileceğini çemberlerin kesişip kesişmediğine bakarak buldun ve önermelerinin sana ne kazandırdığını değerlendirdin. Böylece Geometrik Şekiller temasını tamamladın. Bu hafta yeni bir temaya, “Sayılar ve Nicelikler” temasına başlıyorsun. Altı basamaklı sayıları okuyup yazmayı biliyorsun; şimdi bu bilgini milyonlarca, hatta milyarlarca nesneyi anlatan çok daha büyük sayılara genişleteceksin. Büyük sayıların günlük hayatta nerelerde kullanıldığını araştıracak, sayıları bölüklere ayıracak, bölüklerin okunuşundaki benzerlikleri ve farkları bulacak, bölüklerdeki örüntüden yola çıkarak önermeler kuracaksın. 10 Kasım’da Atatürk’ü ölüm yıl dönümünde saygıyla anıyoruz; haftanın ardından da ara tatil başlıyor.",
+ "bolumler": [
+  {
+   "baslik": "Büyük sayılar hayatın neresinde?",
+   "metin": [
+    "Bir şehrin nüfusu, iki gök cismi arasındaki uzaklık, bir kurumun yıllık bütçesi ya da bir fabrikada bir yılda üretilen ürün sayısı çoğu zaman altıdan çok basamaklı sayılarla anlatılır. Altı basamaklı en büyük sayı 999.999’dur. Bu sayıya 1 eklediğinde 1.000.000 sayısına ulaşırsın. Bu sayı “bir milyon” diye okunur ve yedi basamaklı sayıların en küçüğüdür.",
+    "Haberlerde, ansiklopedilerde ve resmî istatistiklerde büyük sayılarla sık sık karşılaşırsın. Örneğin Türkiye’nin nüfusu 85 milyonun, Dünya’nın nüfusu 8 milyarın üzerindedir. Dünya ile Güneş arasındaki ortalama uzaklık ise yaklaşık 150 milyon km’dir. Bu değerler yuvarlanmış yaklaşık değerlerdir; nüfus gibi bilgiler her yıl değişir.",
+    "Bilgi toplarken sayının neyi anlattığına, hangi birimle verildiğine ve kaynağın güvenilir olup olmadığına dikkat edersin. Büyük sayılar çoğu zaman “85 milyon” ya da “150 milyon km” gibi rakam ve sözcük birlikte yazılır. Böyle bir yazımı yalnızca rakamlarla yazabilmek ve rakamla yazılmış bir sayıyı doğru okuyabilmek, bu haftanın temel becerisidir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Bağlam",
+     "Yaklaşık değer",
+     "Rakamla",
+     "Basamak sayısı"
+    ],
+    "satirlar": [
+     [
+      "Dünya ile Ay arasındaki ortalama uzaklık",
+      "384 bin km",
+      "384.000 km",
+      "6"
+     ],
+     [
+      "Türkiye’nin nüfusu",
+      "85 milyon",
+      "85.000.000",
+      "8"
+     ],
+     [
+      "Dünya ile Güneş arasındaki ortalama uzaklık",
+      "150 milyon km",
+      "150.000.000 km",
+      "9"
+     ],
+     [
+      "Dünya’nın nüfusu",
+      "8 milyar",
+      "8.000.000.000",
+      "10"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Yaklaşık değerler",
+    "metin": "Tablodaki sayılar yuvarlanmış yaklaşık değerlerdir. Nüfus gibi zamanla değişen bilgilerin güncel ve kesin değerini Türkiye İstatistik Kurumu gibi resmî kaynaklardan kontrol etmelisin."
+   }
+  },
+  {
+   "baslik": "Bölükler ve basamaklar",
+   "metin": [
+    "Çok basamaklı bir sayıyı kolayca okuyabilmek için rakamlarını sağdan başlayarak üçer üçer gruplarsın. Bu grupların her birine bölük denir. Sağdan sola doğru bölükler sırasıyla birler bölüğü, binler bölüğü, milyonlar bölüğü ve milyarlar bölüğüdür.",
+    "Her bölük kendi içinde üç basamaktan oluşur. Birler bölüğünde birler, onlar ve yüzler basamakları vardır. Binler bölüğünde binler, on binler ve yüz binler; milyonlar bölüğünde milyonlar, on milyonlar ve yüz milyonlar; milyarlar bölüğünde milyarlar, on milyarlar ve yüz milyarlar basamakları bulunur. Basamak adlarına dikkat et: Her bölükte “birler, onlar, yüzler” düzeni yeniden başlar.",
+    "Rakamla yazarken bölükleri birbirinden ayırmak için sondan başlayarak üçlü gruplar arasına nokta koyarsın: 2345678 yerine 2.345.678 yazarsın. Nokta, sayıyı okuyan kişiye bölüklerin nerede başlayıp bittiğini gösterir. En soldaki bölük bir, iki ya da üç rakamdan oluşabilir; öbür bölüklerin her biri tam üç rakamlıdır."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Bölük",
+     "Bölükteki basamaklar (soldan sağa)"
+    ],
+    "satirlar": [
+     [
+      "Milyarlar bölüğü",
+      "Yüz milyarlar, on milyarlar, milyarlar"
+     ],
+     [
+      "Milyonlar bölüğü",
+      "Yüz milyonlar, on milyonlar, milyonlar"
+     ],
+     [
+      "Binler bölüğü",
+      "Yüz binler, on binler, binler"
+     ],
+     [
+      "Birler bölüğü",
+      "Yüzler, onlar, birler"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "tanim",
+    "baslik": "Bölük",
+    "metin": "Bir sayının rakamları sağdan başlanarak üçer üçer ayrıldığında oluşan her gruba bölük denir. Her bölük kendi içinde yüzler, onlar ve birler basamaklarından oluşur."
+   }
+  },
+  {
+   "baslik": "Bölüklere ayırarak okuma",
+   "metin": [
+    "Çok basamaklı bir sayıyı okurken önce rakamları sağdan başlayarak üçer üçer ayırır, sayının kaç bölükten oluştuğunu bulursun. Sonra en soldaki bölükten başlarsın. Her bölükteki sayıyı üç basamaklı bir sayı okur gibi okur, hemen ardından o bölüğün adını söylersin. Birler bölüğünün adı söylenmez.",
+    "Örneğin 2.345.678 sayısında milyonlar bölüğünde 2, binler bölüğünde 345, birler bölüğünde 678 vardır. Sayı “iki milyon üç yüz kırk beş bin altı yüz yetmiş sekiz” diye okunur. 45.007.300.020 sayısında ise milyarlar bölüğünde 45, milyonlar bölüğünde 007, binler bölüğünde 300, birler bölüğünde 020 vardır. Bu sayı “kırk beş milyar yedi milyon üç yüz bin yirmi” diye okunur.",
+    "Bir bölüğün başındaki sıfırlar okunmaz: 007 yalnızca “yedi”, 020 yalnızca “yirmi” diye okunur. Bir bölüğün bütün rakamları sıfırsa o bölük de adı da okunmaz. Örneğin 6.080.000.700 sayısında binler bölüğü 000 olduğu için okunuşta “bin” sözcüğü hiç geçmez. Sayı “altı milyar seksen milyon yedi yüz” diye okunur."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Sayı",
+     "Milyarlar",
+     "Milyonlar",
+     "Binler",
+     "Birler"
+    ],
+    "satirlar": [
+     [
+      "2.345.678",
+      "—",
+      "2",
+      "345",
+      "678"
+     ],
+     [
+      "45.007.300.020",
+      "45",
+      "007",
+      "300",
+      "020"
+     ],
+     [
+      "6.080.000.700",
+      "6",
+      "080",
+      "000",
+      "700"
+     ],
+     [
+      "999.999",
+      "—",
+      "—",
+      "999",
+      "999"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Okuma kuralı",
+    "metin": "Soldan başla; her bölüğü üç basamaklı bir sayı gibi oku ve adını söyle. Birler bölüğünün adı söylenmez. Baştaki sıfırlar okunmaz; bütün rakamları sıfır olan bölük adıyla birlikte atlanır."
+   }
+  },
+  {
+   "baslik": "Okunuşu verilen sayıyı rakamla yazma",
+   "metin": [
+    "Okunuşu verilen bir sayıyı rakamla yazarken bölük adlarını işaret olarak kullanırsın. “sekiz milyar altmış milyon dört bin beş” okunuşunda “milyar” sözcüğünden önce 8, “milyon” sözcüğünden önce 60, “bin” sözcüğünden önce 4 söylenmiştir. Sonda kalan ve bölük adı almayan 5 ise birler bölüğündedir.",
+    "Ardından en soldaki bölük dışındaki her bölüğü üç rakama tamamlarsın: 60 yerine 060, 4 yerine 004, 5 yerine 005 yazarsın. Böylece sayı 8.060.004.005 olur. Okunuşta adı hiç geçmeyen bir bölük varsa onun yerine 000 yazarsın. Örneğin “üç milyar beş yüz” okunuşunda milyonlar ve binler bölükleri söylenmemiştir; sayı 3.000.000.500 diye yazılır.",
+    "Sayıları yazıyla yazarken Türk Dil Kurumunun yazım kuralına uyarsın: Birden çok sözcükten oluşan sayılarda her sözcük ayrı yazılır. Bu yüzden “ikimilyonüçyüzbin” gibi bitişik değil, “iki milyon üç yüz bin” biçiminde yazarsın. Yalnızca çek ve senet gibi para belgelerinde, tutara sonradan ekleme yapılmasını önlemek için yazıyla yazılan sayılar bitişik yazılabilir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Okunuş",
+     "Bölüklere göre",
+     "Rakamla"
+    ],
+    "satirlar": [
+     [
+      "sekiz milyar altmış milyon dört bin beş",
+      "8 | 060 | 004 | 005",
+      "8.060.004.005"
+     ],
+     [
+      "üç milyar beş yüz",
+      "3 | 000 | 000 | 500",
+      "3.000.000.500"
+     ],
+     [
+      "yirmi beş milyon üç",
+      "25 | 000 | 003",
+      "25.000.003"
+     ],
+     [
+      "dört yüz beş milyon",
+      "405 | 000 | 000",
+      "405.000.000"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Sık yapılan yanlış",
+    "metin": "“sekiz milyar altmış milyon dört bin beş” sayısını 8.60.4.5 ya da 86045 diye yazmak yanlıştır. En soldaki bölük dışındaki her bölük tam üç rakamlı olmalıdır; eksik basamaklara 0 yazılır."
+   }
+  },
+  {
+   "baslik": "Bölüklerin okunuşunda benzerlikler ve farklar",
+   "metin": [
+    "Bütün bölükler aynı düzenle okunur: Önce bölükteki üç basamaklı sayı söylenir, sonra bölüğün adı gelir. 345.000, 345.000.000 ve 345.000.000.000 sayılarının okunuşlarında “üç yüz kırk beş” kısmı aynıdır; yalnızca sondaki bölük adı değişir: bin, milyon, milyar. Bu yüzden 999’a kadar sayıları okuyabilen biri, bölük adlarını öğrenince milyarlarca nesneyi anlatan sayıları da okuyabilir.",
+    "Bölükler arasında bazı farklar da vardır. Birler bölüğünün adı okunuşta hiç söylenmez, öbür bölüklerin adı ise söylenir. Ayrıca binler bölüğünde yalnızca 1 varsa “bir bin” denmez, “bin” denir: 1.000 sayısı “bin”, 1.001.000 sayısı “bir milyon bin” diye okunur. Milyonlar ve milyarlar bölüğünde ise “bir” sözcüğü söylenir: 1.000.000 “bir milyon”, 1.000.000.000 “bir milyar” diye okunur.",
+    "Bölükler basamak sayısı bakımından da farklılaşabilir. En soldaki bölük bir, iki ya da üç basamaklı olabilir; öbür bölükler her zaman üç basamaklıdır. Örneğin 15.020.000 sayısında milyonlar bölüğü iki basamaklıdır (15), binler bölüğü ise başında 0 olsa da üç basamaklıdır (020). Bu bölük “yirmi bin” diye okunur, ama rakamla yazarken baştaki 0 atlanmaz."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Bölükteki sayı 1 ise",
+     "Rakamla",
+     "Okunuşu"
+    ],
+    "satirlar": [
+     [
+      "Birler bölüğü",
+      "1",
+      "bir"
+     ],
+     [
+      "Binler bölüğü",
+      "1.000",
+      "bin"
+     ],
+     [
+      "Milyonlar bölüğü",
+      "1.000.000",
+      "bir milyon"
+     ],
+     [
+      "Milyarlar bölüğü",
+      "1.000.000.000",
+      "bir milyar"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "“bir bin” denmez",
+    "metin": "Binler bölüğünde yalnızca 1 varsa “bin” dersin. 1.001.000 sayısının okunuşu “bir milyon bin” olur, “bir milyon bir bin” olmaz. Ama 21.000 “yirmi bir bin”, 101.000 “yüz bir bin” diye okunur; çünkü bu bölüklerdeki sayı 1 değil, 21 ve 101’dir."
+   }
+  },
+  {
+   "baslik": "Örüntülerden önermelere",
+   "metin": [
+    "Basamak sayısı arttıkça bölükler belli bir düzenle eklenir. 1 ile başlayıp sıfırlarla devam eden sayıları sırayla yazarsan bu düzeni görürsün: 1.000 “bin”, 10.000 “on bin”, 100.000 “yüz bin”, 1.000.000 “bir milyon”, 10.000.000 “on milyon”, 100.000.000 “yüz milyon”, 1.000.000.000 “bir milyar”. Okunuşlardaki “bir, on, yüz” üçlüsü her yeni bölükte yeniden başlar (binler bölüğünde “bir” söylenmez, yalnızca “bin” denir).",
+    "Bu örüntüden önermeler kurabilirsin: “Basamak sayısı üç arttığında sayıya yeni bir bölük eklenir.” “7, 8 ya da 9 basamaklı bir sayının en soldaki bölüğü milyonlar bölüğüdür.” “10, 11 ya da 12 basamaklı bir sayının okunuşunda milyar sözcüğü geçer.” Önerme, doğru olup olmadığı örneklerle sınanabilen bir yargıdır; geometri haftalarında da önermelerini çizimlerle sınamıştın.",
+    "Önermeni farklı örneklerle denersin; tek bir karşı örnek, önermenin o hâliyle yanlış olduğunu gösterir. “Okunuşunda milyon sözcüğü geçen her sayı 7, 8 ya da 9 basamaklıdır.” önermesini düşün. 1.002.000.000 sayısı “bir milyar iki milyon” diye okunur; okunuşunda milyon sözcüğü geçer ama sayı 10 basamaklıdır. Bu karşı örnek önermenin yanlış olduğunu gösterir. Önermeyi “En soldaki bölüğü milyonlar bölüğü olan her sayı 7, 8 ya da 9 basamaklıdır.” biçiminde düzeltebilirsin."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Basamak sayısı",
+     "Bölük sayısı",
+     "En soldaki bölük",
+     "En küçük sayı"
+    ],
+    "satirlar": [
+     [
+      "7",
+      "3",
+      "Milyonlar",
+      "1.000.000 (bir milyon)"
+     ],
+     [
+      "8",
+      "3",
+      "Milyonlar",
+      "10.000.000 (on milyon)"
+     ],
+     [
+      "9",
+      "3",
+      "Milyonlar",
+      "100.000.000 (yüz milyon)"
+     ],
+     [
+      "10",
+      "4",
+      "Milyarlar",
+      "1.000.000.000 (bir milyar)"
+     ],
+     [
+      "11",
+      "4",
+      "Milyarlar",
+      "10.000.000.000 (on milyar)"
+     ],
+     [
+      "12",
+      "4",
+      "Milyarlar",
+      "100.000.000.000 (yüz milyar)"
+     ]
+    ]
+   },
+   "kutular": [
+    {
+     "tur": "bilgi",
+     "baslik": "Milyardan sonra",
+     "metin": "Örüntü milyarlarda bitmez. Milyarlar bölüğünün solunda trilyonlar bölüğü gelir: 1.000.000.000.000 sayısı “bir trilyon” diye okunur ve 13 basamaklıdır."
+    },
+    {
+     "tur": "ipucu",
+     "baslik": "Önermeni sına",
+     "metin": "Önermeni en az üç farklı örnekle dene ve bir karşı örnek ara. Karşı örnek bulursan önermeye bir koşul ekleyerek onu düzelt."
+    }
+   ]
+  },
+  {
+   "baslik": "Haberlerde ve bütçede büyük sayılar",
+   "metin": [
+    "Gazete ve haber sitelerinde büyük sayılar çoğu zaman rakam ve sözcük birlikte yazılır: “12 milyon fidan”, “3 milyar lira” gibi. Böyle bir yazımı rakama çevirirken sayıyı adı geçen bölüğe yerleştirir, sağındaki bölüklere sıfır yazarsın: 12 milyon = 12.000.000, 3 milyar = 3.000.000.000, 250 bin = 250.000. Birden çok bölük adı geçen yazımlarda her sayı kendi bölüğüne yazılır: “2 milyar 400 milyon” sayısı 2.400.000.000 biçiminde yazılır.",
+    "Bütçe tablolarında sayılar genellikle bölüklere ayrılarak yazılır. Bir belediyenin yıllık bütçesinin 1.250.000.000 lira olduğunu düşün (bu, örnek bir değerdir). Bu sayı “bir milyar iki yüz elli milyon” lira diye okunur. Bölükleri ayıran noktalar, hangi tutarın milyonlarla, hangisinin milyarlarla ifade edildiğini bir bakışta görmeni sağlar. Ortak kaynakların nasıl kullanıldığını anlamak büyük sayıları doğru okumakla başlar.",
+    "Büyük sayılar tasarrufun gücünü de gösterir. Bir şehirde 1.000.000 kişinin her gün 10 litre su tasarruf ettiğini düşün: Bir günde 10.000.000 litre, yani “on milyon” litre su korunmuş olur. Tek bir kişinin küçük bir alışkanlığı, milyonlarca kişiyle bir araya geldiğinde büyük bir sonuca dönüşür. Kaynakları korumak herkesin sorumluluğudur."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Sözcüklü yazımı rakama çevirme",
+    "metin": "Yalnızca bir bölük adıyla yazılan sayılarda bin yerine 3, milyon yerine 6, milyar yerine 9 sıfır yazılır. 45 milyon, 45’in sağına 6 sıfır yazılarak 45.000.000 biçiminde gösterilir."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "307.040.506 sayısını bölüklerine ayır ve oku.",
+   "cevap": "Milyonlar bölüğünde 307, binler bölüğünde 040, birler bölüğünde 506 vardır. Binler bölüğünün başındaki 0 okunmaz. Sayı “üç yüz yedi milyon kırk bin beş yüz altı” diye okunur."
+  },
+  {
+   "soru": "“on iki milyar dört yüz milyon otuz bin dokuz” sayısını rakamla yaz. Sayı kaç basamaklıdır?",
+   "cevap": "Milyarlar bölüğü 12, milyonlar bölüğü 400, binler bölüğü 30, birler bölüğü 9’dur. En soldaki bölük dışındakiler üç rakama tamamlanır: 400, 030, 009. Sayı 12.400.030.009 olur ve 11 basamaklıdır."
+  },
+  {
+   "soru": "70.009.000.010 sayısı kaç bölükten oluşur? Sayıyı oku.",
+   "cevap": "Sayı dört bölükten oluşur: milyarlar bölüğünde 70, milyonlar bölüğünde 009, binler bölüğünde 000, birler bölüğünde 010 vardır. Binler bölüğünün bütün rakamları sıfır olduğu için bu bölük okunmaz. Sayı “yetmiş milyar dokuz milyon on” diye okunur."
+  },
+  {
+   "soru": "Elif, 1.001.000 sayısını “bir milyon bir bin” diye okuyor. Elif’in okuması doğru mu?",
+   "cevap": "Doğru değildir. Binler bölüğünde yalnızca 1 olduğunda “bir bin” denmez, “bin” denir. Sayının doğru okunuşu “bir milyon bin” biçimindedir. Milyonlar bölüğünde ise “bir milyon” denir; bu, bölüklerin okunuşu arasındaki farklardan biridir."
+  },
+  {
+   "soru": "Kerem, “Okunuşunda milyar sözcüğü geçen her sayı 10 basamaklıdır.” önermesini kuruyor. Önermeyi sına ve gerekiyorsa düzelt.",
+   "cevap": "Önerme yanlıştır. Örneğin 10.000.000.000 sayısı “on milyar” diye okunur; okunuşunda milyar sözcüğü geçer ama sayı 11 basamaklıdır. Milyarlar bölüğü bir, iki ya da üç basamaklı olabileceği için önerme şöyle düzeltilebilir: “En soldaki bölüğü milyarlar bölüğü olan bir sayı 10, 11 ya da 12 basamaklıdır.”"
+  },
+  {
+   "soru": "Bir haberde “Bu yıl ülke genelinde 15 milyon 250 bin fidan dikildi.” yazdığını düşün (örnek bir haber). Fidan sayısını rakamla yaz ve oku.",
+   "cevap": "Milyonlar bölüğüne 15, binler bölüğüne 250 yazılır. Birler bölüğü söylenmediği için oraya 000 gelir. Sayı 15.250.000 olur, 8 basamaklıdır ve “on beş milyon iki yüz elli bin” diye okunur."
+  }
+ ],
+ "ozet": [
+  "Altıdan çok basamaklı sayılar nüfus, uzaklık ve bütçe gibi büyük nicelikleri anlatır; haberlerdeki bu sayıların çoğu yaklaşık değerdir ve güvenilir kaynaklardan kontrol edilmelidir.",
+  "Bir sayının rakamları sağdan üçer üçer ayrılarak birler, binler, milyonlar ve milyarlar bölükleri bulunur; her bölükte yüzler, onlar ve birler basamakları vardır.",
+  "Okurken soldan başlanır, her bölük üç basamaklı bir sayı gibi okunup adı söylenir; birler bölüğünün adı söylenmez, bütün rakamları sıfır olan bölük okunmaz.",
+  "Rakamla yazarken en soldaki bölük dışındaki her bölük üç rakama tamamlanır ve üçlü gruplar arasına nokta konur; yazıyla yazarken sayıyı oluşturan sözcükler ayrı yazılır.",
+  "Bölükler aynı düzenle okunur ama farklar da vardır (1.000 “bin”, 1.000.000 “bir milyon”); basamak sayısı üç arttıkça yeni bir bölük eklenir ve bu örüntüden kurulan önermeler karşı örneklerle sınanır."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "“beş milyar yirmi milyon üç bin” sayısının rakamla yazılışı hangisidir?",
+   "secenekler": [
+    "5.200.003.000",
+    "5.020.300.000",
+    "5.020.003.000",
+    "520.003.000"
+   ],
+   "dogru": 2,
+   "aciklama": "Milyarlar bölüğünde 5, milyonlar bölüğünde 020, binler bölüğünde 003 vardır. Birler bölüğü okunmadığı için oraya 000 yazılır: 5.020.003.000."
+  },
+  {
+   "tur": "coktan",
+   "soru": "40.506.007.000 sayısının okunuşu hangisidir?",
+   "secenekler": [
+    "kırk milyar beş yüz altı milyon yedi bin",
+    "dört yüz beş milyar altı milyon yedi bin",
+    "kırk milyar elli milyon altı yüz yedi bin",
+    "kırk milyon beş yüz altı bin yedi"
+   ],
+   "dogru": 0,
+   "aciklama": "Bölükler 40 | 506 | 007 | 000 biçimindedir: kırk milyar, beş yüz altı milyon, yedi bin. Birler bölüğünün bütün rakamları sıfır olduğu için okunmaz."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Aşağıdaki sayılardan hangisinin okunuşunda “bin” sözcüğü geçmez?",
+   "secenekler": [
+    "4.000.001.000",
+    "2.000.000.900",
+    "7.000.020.000",
+    "1.100.000"
+   ],
+   "dogru": 1,
+   "aciklama": "2.000.000.900 sayısında milyonlar ve binler bölükleri 000 olduğu için okunmaz: “iki milyar dokuz yüz”. Öbürleri “dört milyar bin”, “yedi milyar yirmi bin” ve “bir milyon yüz bin” diye okunur."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Her ifadenin doğru mu yanlış mı olduğuna karar ver; yanlış çıkanların açıklamasını oku.",
+   "ifadeler": [
+    {
+     "metin": "12 basamaklı bir sayının en soldaki bölüğü milyarlar bölüğüdür.",
+     "dogru": true,
+     "aciklama": "10, 11 ve 12 basamaklı sayılarda en soldaki bölük milyarlar bölüğüdür; 12 basamaklı sayılarda bu bölük de üç basamaklıdır."
+    },
+    {
+     "metin": "2.000.050 sayısı “iki milyon elli bin” diye okunur.",
+     "dogru": false,
+     "aciklama": "Binler bölüğü 000 olduğu için okunmaz; 050 birler bölüğündedir. Doğru okunuş “iki milyon elli” biçimindedir."
+    },
+    {
+     "metin": "Genel yazım kuralına göre sayılar yazıyla yazılırken sayıyı oluşturan her sözcük ayrı yazılır: dört yüz on iki bin.",
+     "dogru": true,
+     "aciklama": "Türk Dil Kurumunun yazım kuralına göre birden çok sözcükten oluşan sayılar ayrı yazılır."
+    },
+    {
+     "metin": "Bir sayının en soldaki bölüğü de her zaman üç basamaklıdır.",
+     "dogru": false,
+     "aciklama": "En soldaki bölük bir, iki ya da üç basamaklı olabilir. Örneğin 5.000.000 sayısında milyonlar bölüğünde yalnızca 5 vardır."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Her sayıyı doğru okunuşuyla eşleştir.",
+   "ciftler": [
+    [
+     "1.000.001",
+     "bir milyon bir"
+    ],
+    [
+     "1.001.000",
+     "bir milyon bin"
+    ],
+    [
+     "1.100.000",
+     "bir milyon yüz bin"
+    ],
+    [
+     "1.000.100",
+     "bir milyon yüz"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Bir sayının rakamları sağdan başlanarak üçer üçer ayrıldığında oluşan her gruba ___ denir.",
+     "cevap": "bölük"
+    },
+    {
+     "metin": "Büyük sayılar rakamla yazılırken sondan başlayarak üçlü gruplar arasına ___ konur.",
+     "cevap": "nokta"
+    },
+    {
+     "metin": "Milyonlar bölüğünün hemen solunda ___ bölüğü bulunur.",
+     "cevap": "milyarlar"
+    },
+    {
+     "metin": "Sayı okunurken adı hiçbir zaman söylenmeyen bölük ___ bölüğüdür.",
+     "cevap": "birler"
+    }
+   ],
+   "fazla": [
+    "virgül"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir haberde “Bu yıl 2405060 fidan toprakla buluştu.” cümlesi var (örnek bir haber). Sayı noktasız yazıldığı için okumak zor. Sayıyı noktalarla yaz, bölüklerini belirt, oku ve yazıyla yaz.",
+   "ipuclari": [
+    "Sağdan başlayarak rakamları üçer üçer ayır.",
+    "Her bölüğü üç basamaklı bir sayı gibi oku, ardından bölüğün adını söyle; baştaki sıfırları okuma."
+   ],
+   "cevap": "Sağdan üçer ayırınca sayı 2.405.060 olur. Milyonlar bölüğünde 2, binler bölüğünde 405, birler bölüğünde 060 vardır. Sayı “iki milyon dört yüz beş bin altmış” diye okunur. Yazıyla yazarken her sözcük ayrı yazılır: iki milyon dört yüz beş bin altmış."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "1.000 (bin), 1.000.000 (bir milyon) ve 1.000.000.000 (bir milyar) sayılarının basamak sayılarını karşılaştır. Bu örüntüden yararlanarak “bir trilyon” sayısının kaç basamaklı olduğunu bul ve bir önerme kur.",
+   "ipuclari": [
+    "1.000 sayısı 4, 1.000.000 sayısı 7, 1.000.000.000 sayısı 10 basamaklıdır. Ardışık iki sayının basamak sayıları arasındaki fark kaçtır?",
+    "Milyarlar bölüğünün solunda trilyonlar bölüğü gelir."
+   ],
+   "cevap": "1.000 sayısı 4, 1.000.000 sayısı 7, 1.000.000.000 sayısı 10 basamaklıdır; bir sonraki bölük adına geçildiğinde basamak sayısı 3 artar. Bu yüzden bir trilyon 10 + 3 = 13 basamaklıdır: 1.000.000.000.000. Kurulabilecek önerme: “1’in sağına sıfırlar yazılarak oluşan sayılarda, bir sonraki bölük adına geçmek için 3 sıfır daha yazmak gerekir.”"
+  }
+ ]
+}

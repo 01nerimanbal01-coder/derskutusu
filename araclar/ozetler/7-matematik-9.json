@@ -1,0 +1,463 @@
+{
+ "sinif": 7,
+ "ders": "matematik",
+ "hafta": 9,
+ "tarih": "9-13 Kasım 2026",
+ "yayin_tarihi": "2026-10-15",
+ "unite": "Geometrik Nicelikler (1)",
+ "konu": "Dikdörtgenler Prizmasının Yüzey Alanı ve Hacmi: Açınımlar, Birim Küpler ve Hacim Bağıntısı",
+ "ciktilar": [
+  "MAT.7.4.2. Dikdörtgenler prizmasının yüzey alanını yorumlayabilme",
+  "MAT.7.4.3. Dikdörtgenler prizmasının hacmini eş nesneler aracılığıyla yorumlayabilme",
+  "MAT.7.4.4. Dikdörtgenler prizmasının hacim bağıntısını değerlendirebilme"
+ ],
+ "giris": "Geçen hafta eş küplerle yapılar kurdun; bir yapının önden, yandan ve üstten görünümlerini çizdin, görünümleri verilen yapıları küplerle oluşturdun. Bu hafta eş küplerle kurulabilen en düzenli yapıya, dikdörtgenler prizmasına odaklanıyorsun. Önce prizmanın yüzeyini açıp düz bir şekle dönüştürecek, farklı açınımları inceleyecek ve açınımdan yararlanarak yüzey alanını hesaplayacaksın. Sonra prizmanın içini eş nesnelerle ve birim küplerle dolduracak, hacmi bu nesnelerin sayısı olarak yorumlayacak, birim küpleri farklı stratejilerle sayarak hacmin taban alanı ile yüksekliğin çarpımı olduğunu keşfedeceksin. 10 Kasım’da Atatürk’ü ölüm yıl dönümünde saygıyla anıyoruz; haftanın ardından da ara tatil başlıyor.",
+ "bolumler": [
+  {
+   "baslik": "Dikdörtgenler prizmasını tanıyalım",
+   "metin": [
+    "Ayakkabı kutusu, tuğla, buzdolabı ve kibrit kutusu dikdörtgenler prizmasına benzer. Dikdörtgenler prizmasının 6 yüzü vardır ve her yüzü bir dikdörtgendir. Karşılıklı yüzler birbirine eş ve paraleldir: alt yüz ile üst yüz, ön yüz ile arka yüz, sağ yüz ile sol yüz.",
+    "İki yüzün birleştiği doğru parçalarına ayrıt, ayrıtların birleştiği noktalara köşe denir. Dikdörtgenler prizmasının 12 ayrıtı ve 8 köşesi vardır. 12 ayrıt, uzunlukları eşit dörder ayrıttan oluşan üç gruba ayrılır. Bu üç uzunluğa genellikle a (uzunluk), b (genişlik) ve c (yükseklik) denir; prizmanın bütün ölçüleri bu üç sayıyla belirlenir.",
+    "Bütün ayrıtları eşit uzunlukta olan dikdörtgenler prizmasına küp denir. Küpün 6 yüzü de birbirine eş karelerdir. Geçen hafta yapı kurarken kullandığın eş küpler de birer küptü. Eş küpleri dikdörtgen biçimli bir taban üzerine, boşluk bırakmadan ve her noktada aynı sayıda olacak biçimde üst üste dizersen bir dikdörtgenler prizması elde edersin."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Eleman",
+     "Sayı",
+     "Özellik"
+    ],
+    "satirlar": [
+     [
+      "Yüz",
+      "6",
+      "Karşılıklı yüzler eş dikdörtgenlerdir."
+     ],
+     [
+      "Ayrıt",
+      "12",
+      "Dörder dörder eşit uzunlukta üç grup oluşturur."
+     ],
+     [
+      "Köşe",
+      "8",
+      "Her köşede 3 ayrıt birleşir."
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "tanim",
+    "baslik": "Dikdörtgenler prizması",
+    "metin": "Altı yüzü de dikdörtgen olan, karşılıklı yüzleri eş ve paralel olan cisimdir. Bütün ayrıtları eşit olan dikdörtgenler prizması küptür."
+   }
+  },
+  {
+   "baslik": "Yüzey açınımları",
+   "metin": [
+    "Bir kutuyu bazı ayrıtlarından kesip düz bir zemine açarsan altı dikdörtgenden oluşan bir şekil elde edersin. Bu şekle prizmanın yüzey açınımı denir; açınımı yeniden katlarsan prizma tekrar oluşur. Ayrıtları 5 cm, 3 cm ve 2 cm olan bir prizmanın açınımında iki tane 5 cm × 3 cm’lik, iki tane 5 cm × 2 cm’lik ve iki tane 3 cm × 2 cm’lik dikdörtgen bulunur.",
+    "Aynı prizma farklı biçimlerde açılabilir. Yan yüzler bir şerit hâlinde sıralanıp alt ve üst yüzler bu şeridin iki yanına eklenebilir; yüzler merdiven biçiminde de dizilebilir. Hangi açınımı seçersen seç, açınımda aynı altı dikdörtgen bulunur; yalnızca yerleri değişir.",
+    "Bir şeklin prizma açınımı olup olmadığını anlamak için onu zihninde katlarsın. Açınımdaki her dikdörtgenin karşı yüzü kendisine eş olmalıdır. Dört yüzün yan yana dizildiği bir şeritte birinci ile üçüncü, ikinci ile dördüncü yüz katlandığında karşılıklı gelir. Katlarken iki yüz üst üste biniyorsa ya da bir yüz açıkta kalıyorsa şekil bir açınım değildir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Yüz çifti",
+     "Boyutlar",
+     "Bir yüzün alanı"
+    ],
+    "satirlar": [
+     [
+      "Alt ve üst",
+      "5 cm × 3 cm",
+      "15 cm²"
+     ],
+     [
+      "Ön ve arka",
+      "5 cm × 2 cm",
+      "10 cm²"
+     ],
+     [
+      "Sağ ve sol",
+      "3 cm × 2 cm",
+      "6 cm²"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "bilgi",
+    "baslik": "Küpün açınımları",
+    "metin": "Küpün, döndürüldüğünde ya da ters çevrildiğinde birbirine dönüşmeyen 11 farklı açınımı vardır. Altı karenin her dizilişi küp açınımı değildir; örneğin altı kare tek sıra hâlinde dizilirse katlandığında yüzler üst üste biner ve iki yüz açıkta kalır."
+   }
+  },
+  {
+   "baslik": "Açınımdan yüzey alanına",
+   "metin": [
+    "Prizmanın yüzey alanı, bütün yüzlerinin alanları toplamıdır. Açınım, prizmanın yüzlerini hiçbirini atlamadan ve üst üste bindirmeden düzleme serdiği için yüzey alanı açınımın alanına eşittir. Bir kutuyu kaplamak için gereken kâğıt ya da bir dolabın dışını boyamak için gereken boya yüzey alanıyla ilgilidir.",
+    "Ayrıtları 5 cm, 3 cm ve 2 cm olan prizmada yüz alanları 5 · 3 = 15 cm², 5 · 2 = 10 cm² ve 3 · 2 = 6 cm²’dir. Her yüzden ikişer tane olduğu için yüzey alanı 2 · 15 + 2 · 10 + 2 · 6 = 30 + 20 + 12 = 62 cm² olur. Bu toplamı kısaca 2 · (15 + 10 + 6) = 2 · 31 = 62 cm² diye de yazabilirsin.",
+    "Ayrıtları a, b ve c olan bir dikdörtgenler prizmasında bu düşünce genel bir bağıntıya dönüşür: Yüzey alanı = 2 · (a · b + a · c + b · c), kısaca 2(ab + ac + bc). Küpte bütün ayrıtlar a olduğu için 6 eş karenin alanı toplanır: Yüzey alanı = 6 · a · a. Ayrıtı 4 cm olan küpün yüzey alanı 6 · 4 · 4 = 96 cm²’dir. Yüzey alanı, prizmanın dışını kaplayan birim karelerin sayısını anlatır; bu yüzden cm² gibi kare birimlerle ifade edilir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Prizmanın ayrıtları",
+     "Farklı yüz alanları",
+     "Yüzey alanı"
+    ],
+    "satirlar": [
+     [
+      "5 cm, 3 cm, 2 cm",
+      "15 cm², 10 cm², 6 cm²",
+      "2 · 31 = 62 cm²"
+     ],
+     [
+      "6 cm, 4 cm, 1 cm",
+      "24 cm², 6 cm², 4 cm²",
+      "2 · 34 = 68 cm²"
+     ],
+     [
+      "4 cm, 4 cm, 4 cm (küp)",
+      "16 cm²",
+      "6 · 16 = 96 cm²"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Yüzey alanı bağıntısı",
+    "metin": "Dikdörtgenler prizması: 2 · (a · b + a · c + b · c). Küp: 6 · a · a. Üstü açık bir kutuda üst yüz sayılmaz; yalnızca 5 yüzün alanı toplanır."
+   }
+  },
+  {
+   "baslik": "Hacim: prizmayı eş nesnelerle doldurmak",
+   "metin": [
+    "Bir cismin uzayda kapladığı yerin büyüklüğüne hacim denir. İki kutudan hangisinin daha çok yer kapladığını anlamak için ikisini de aynı türden eş nesnelerle, örneğin eş şeker küpleriyle boşluk bırakmadan doldurabilirsin. A kutusuna 24, B kutusuna 30 şeker küpü sığıyorsa B kutusunun hacmi daha büyüktür.",
+    "Prizmanın içine boşluksuz yerleştirilen eş nesnelerin sayısı, o nesneye göre prizmanın hacmidir. Bu durumda A kutusunun hacmi 24 şeker küpü, B kutusunun hacmi 30 şeker küpü kadardır. Hacmi bir sayıyla ifade ederken hangi nesneyi ölçüt olarak kullandığını da söylemen gerekir.",
+    "Karşılaştırma yaparken nesnelerin aynı olması gerekir. Ayrıtları 4 cm, 4 cm ve 2 cm olan bir kutu, ayrıtı 1 cm olan küplerle doldurulunca 32, ayrıtı 2 cm olan küplerle doldurulunca 4 küp alır. Kutunun hacmi değişmemiştir, yalnızca ölçmek için kullanılan nesne değişmiştir: Ayrıtı 2 cm olan bir küpün içine ayrıtı 1 cm olan 2 · 2 · 2 = 8 küp sığdığından 4 büyük küp, 4 · 8 = 32 küçük küpe eşittir. Herkesin aynı sonucu bulabilmesi için ortak bir ölçüt gerekir: birim küp."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Kutu",
+     "Kullanılan nesne",
+     "Sığan sayı"
+    ],
+    "satirlar": [
+     [
+      "A",
+      "Şeker küpü",
+      "24"
+     ],
+     [
+      "B",
+      "Şeker küpü",
+      "30"
+     ],
+     [
+      "C (4 cm, 4 cm, 2 cm)",
+      "Ayrıtı 1 cm olan küp",
+      "32"
+     ],
+     [
+      "C (4 cm, 4 cm, 2 cm)",
+      "Ayrıtı 2 cm olan küp",
+      "4"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Aynı nesneyle karşılaştır",
+    "metin": "Farklı nesnelerle bulunan sayılar doğrudan karşılaştırılamaz. 30 küçük zar alan bir kutu, 20 büyük zar alan bir kutudan büyük olmayabilir."
+   }
+  },
+  {
+   "baslik": "Birim küplerle hacmi ölçmek ve saymak",
+   "metin": [
+    "Ayrıtı 1 birim olan küpe birim küp denir. Ayrıtı 1 cm olan birim küpün hacmi 1 santimetreküptür ve 1 cm³ biçiminde yazılır. Bir dikdörtgenler prizmasının hacmi, onu boşluksuz dolduran birim küplerin sayısıdır. 24 birim küple dolan bir prizmanın hacmi 24 cm³’tür.",
+    "Birim küpleri tek tek saymak uzun sürer; düzenli saymak işini kolaylaştırır. Ayrıtları 4 cm, 3 cm ve 2 cm olan prizmayı düşün. Katman katman sayarsan tabandaki katmanda 4 · 3 = 12 küp vardır ve üst üste 2 katman bulunur: 12 · 2 = 24 küp. Sıra sıra sayarsan her sırada 4 küp vardır; bir katmanda 3, iki katmanda 6 sıra bulunur: 4 · 6 = 24 küp.",
+    "Dikey sütunlarla da sayabilirsin. Geçen hafta yaptığın gibi üstten görünümün her karesine o noktadaki küp sayısını yazarsın. Bu prizmanın üstten görünümü 4 × 3’lük bir dikdörtgendir ve her karede 2 yazar; 12 sütunun her birinde 2 küp vardır: 12 · 2 = 24. Hangi stratejiyi seçersen seç sonuç aynıdır; bu, sayımını kontrol etmenin de bir yoludur."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Strateji",
+     "Nasıl sayılır?",
+     "Sonuç"
+    ],
+    "satirlar": [
+     [
+      "Katman katman",
+      "Bir katmanda 4 · 3 = 12 küp, 2 katman",
+      "12 · 2 = 24"
+     ],
+     [
+      "Sıra sıra",
+      "Her sırada 4 küp, toplam 6 sıra",
+      "4 · 6 = 24"
+     ],
+     [
+      "Sütun sütun",
+      "12 sütun, her sütunda 2 küp",
+      "12 · 2 = 24"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "tanim",
+    "baslik": "Birim küp",
+    "metin": "Ayrıtı 1 birim olan küptür. Ayrıtı 1 cm olan birim küpün hacmi 1 cm³ (bir santimetreküp) kabul edilir."
+   }
+  },
+  {
+   "baslik": "Hacim bağıntısı: taban alanı ile yüksekliğin çarpımı",
+   "metin": [
+    "Farklı prizmaları birim küplerle doldurup küp sayısını ayrıt uzunluklarıyla karşılaştırırsan bir düzen fark edersin: Birim küp sayısı her seferinde üç ayrıt uzunluğunun çarpımına eşittir. Ayrıtları 4 cm, 3 cm ve 2 cm olan prizmada 4 · 3 · 2 = 24, ayrıtları 5 cm, 2 cm ve 3 cm olan prizmada 5 · 2 · 3 = 30 birim küp vardır.",
+    "Bu düzenin nedeni katman katman saymadır. Tabandaki katmanda bulunan birim küp sayısı tabanın alanına eşittir: a · b. Katman sayısı ise yüksekliktir: c. Bu yüzden Hacim = a · b · c = taban alanı · yükseklik olur. Küpte üç ayrıt da eşit olduğundan Hacim = a · a · a = {us:a|3} yazılır; ayrıtı 3 cm olan küpün hacmi 3 · 3 · 3 = 27 cm³’tür.",
+    "Bağıntıyı değerlendirirken şunlara dikkat edersin: Prizmanın hangi yüzünü taban seçersen seç hacim değişmez; çünkü çarpmada çarpanların sırası sonucu değiştirmez (4 · 3 · 2 = 2 · 3 · 4 = 24). Ayrıt uzunlukları tam sayı olmasa da bağıntı geçerlidir: Ayrıtları 2,5 cm, 4 cm ve 2 cm olan prizmanın hacmi 2,5 · 4 · 2 = 20 cm³’tür. Ayrıca yalnızca yükseklik 2 katına çıkarsa hacim 2 katına, üç ayrıtın hepsi 2 katına çıkarsa hacim 2 · 2 · 2 = 8 katına çıkar."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Ayrıtlar (cm)",
+     "Taban alanı (cm²)",
+     "Yükseklik (cm)",
+     "Hacim (cm³)"
+    ],
+    "satirlar": [
+     [
+      "4, 3, 2",
+      "12",
+      "2",
+      "24"
+     ],
+     [
+      "5, 2, 3",
+      "10",
+      "3",
+      "30"
+     ],
+     [
+      "6, 5, 4",
+      "30",
+      "4",
+      "120"
+     ],
+     [
+      "3, 3, 3 (küp)",
+      "9",
+      "3",
+      "27"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Hacim bağıntısı",
+    "metin": "Dikdörtgenler prizmasının hacmi = taban alanı · yükseklik = a · b · c. Küpün hacmi = a · a · a = {us:a|3}. Hacim cm³ gibi küp birimlerle ifade edilir."
+   }
+  },
+  {
+   "baslik": "Yüzey alanı mı, hacim mi?",
+   "metin": [
+    "Yüzey alanı ile hacim farklı şeyleri ölçer. Yüzey alanı bir kutunun dışını kaplamak için gereken malzemeyi, hacim ise kutunun içine sığan miktarı anlatır. Yüzey alanı birim karelerle (cm²), hacim birim küplerle (cm³) ölçülür. Bir hediye paketi için gereken ambalaj kâğıdını hesaplarken yüzey alanını, kutuya kaç birim küp sığacağını hesaplarken hacmi kullanırsın.",
+    "Hacimleri eşit olan prizmaların yüzey alanları farklı olabilir. 24 birim küpün hepsini kullanarak 1 × 1 × 24, 2 × 2 × 6 ya da 2 × 3 × 4 boyutlarında prizmalar kurabilirsin. Üçünün de hacmi 24 cm³’tür; ama yüzey alanları sırasıyla 98 cm², 56 cm² ve 52 cm²’dir. Bu örneklerde ayrıt uzunlukları birbirine yaklaştıkça, yani prizma küpe benzedikçe yüzey alanı küçülür.",
+    "Bu gözlem tasarrufla ilgilidir: Aynı hacimdeki kutulardan yüzey alanı küçük olan, daha az ambalaj malzemesiyle üretilir. Hacmi büyük olan bir prizmanın yüzey alanının da her zaman büyük olduğunu düşünmek ise yanlıştır. 1 × 1 × 24 boyutlarındaki prizmanın hacmi 24 cm³, yüzey alanı 98 cm²’dir; ayrıtı 3 cm olan küpün hacmi 27 cm³ olduğu hâlde yüzey alanı yalnızca 54 cm²’dir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Boyutlar (cm)",
+     "Hacim (cm³)",
+     "Yüzey alanı (cm²)"
+    ],
+    "satirlar": [
+     [
+      "1 × 1 × 24",
+      "24",
+      "98"
+     ],
+     [
+      "1 × 4 × 6",
+      "24",
+      "68"
+     ],
+     [
+      "2 × 2 × 6",
+      "24",
+      "56"
+     ],
+     [
+      "2 × 3 × 4",
+      "24",
+      "52"
+     ],
+     [
+      "3 × 3 × 3",
+      "27",
+      "54"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "İki farklı nicelik",
+    "metin": "Hacimleri eşit prizmaların yüzey alanları farklı olabilir. Yüzey alanları eşit prizmaların hacimleri de farklı olabilir: 1 × 1 × 5 ve 1 × 2 × 3 boyutlarındaki prizmaların yüzey alanı 22 cm², hacimleri ise 5 cm³ ve 6 cm³’tür."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Ayrıtları 6 cm, 4 cm ve 3 cm olan bir dikdörtgenler prizmasının açınımında hangi dikdörtgenler bulunur? Prizmanın yüzey alanı kaç cm²’dir?",
+   "cevap": "Açınımda iki tane 6 cm × 4 cm’lik (24 cm²), iki tane 6 cm × 3 cm’lik (18 cm²) ve iki tane 4 cm × 3 cm’lik (12 cm²) dikdörtgen bulunur. Yüzey alanı 2 · (24 + 18 + 12) = 2 · 54 = 108 cm²’dir."
+  },
+  {
+   "soru": "Bir küpün yüzey alanı 150 cm²’dir. Küpün bir ayrıtı kaç cm’dir? Hacmi kaç cm³’tür?",
+   "cevap": "Küpün 6 eş yüzü vardır; bir yüzün alanı 150 ÷ 6 = 25 cm²’dir. Kenarı a olan karenin alanı a · a olduğundan a · a = 25 ve a = 5 cm’dir. Hacim 5 · 5 · 5 = 125 cm³’tür."
+  },
+  {
+   "soru": "Ali kutusunu 18 büyük zarla, Ayşe kendi kutusunu 40 küçük zarla boşluksuz dolduruyor. Ayşe, “Benim kutum daha büyük, çünkü 40, 18’den büyük.” diyor. Büyük zarın ayrıtı küçük zarın ayrıtının 2 katıysa Ayşe haklı mıdır?",
+   "cevap": "Haklı değildir; farklı nesnelerle bulunan sayılar doğrudan karşılaştırılamaz. Ayrıtı 2 katı olan bir büyük zarın içine 2 · 2 · 2 = 8 küçük zar sığar. Ali’nin kutusu 18 · 8 = 144 küçük zar alır. 144, 40’tan büyük olduğu için Ali’nin kutusunun hacmi daha büyüktür."
+  },
+  {
+   "soru": "Tabanında 5 sıra, her sırada 4 birim küp bulunan ve 3 katmandan oluşan bir prizmanın hacmini iki farklı stratejiyle bul. Birim küplerin ayrıtı 1 cm’dir.",
+   "cevap": "Katman katman: Bir katmanda 5 · 4 = 20 küp, 3 katmanda 20 · 3 = 60 küp. Sütun sütun: Üstten görünümde 20 kare vardır, her sütunda 3 küp bulunur; 20 · 3 = 60. Sıra sıra: Her sırada 4 küp, 3 katmanda 15 sıra; 4 · 15 = 60. Prizmanın hacmi 60 cm³’tür."
+  },
+  {
+   "soru": "Taban alanı 35 cm² ve hacmi 210 cm³ olan bir dikdörtgenler prizmasının yüksekliği kaç cm’dir?",
+   "cevap": "Hacim = taban alanı · yükseklik olduğundan 35 · yükseklik = 210 olur. Yükseklik 210 ÷ 35 = 6 cm’dir. Bir başka deyişle tabandaki katmanda 35 birim küp vardır ve 210 küpü yerleştirmek için 6 katman gerekir. Kontrol: 35 · 6 = 210."
+  },
+  {
+   "soru": "Ayrıtları 3 cm, 2 cm ve 1 cm olan bir prizmanın bütün ayrıtları 2 katına çıkarılırsa hacmi ve yüzey alanı kaç katına çıkar?",
+   "cevap": "İlk prizmanın hacmi 3 · 2 · 1 = 6 cm³, yüzey alanı 2 · (6 + 3 + 2) = 22 cm²’dir. Yeni ayrıtlar 6 cm, 4 cm ve 2 cm olur; hacim 6 · 4 · 2 = 48 cm³, yüzey alanı 2 · (24 + 12 + 8) = 88 cm²’dir. Hacim 48 ÷ 6 = 8 katına, yüzey alanı 88 ÷ 22 = 4 katına çıkar."
+  }
+ ],
+ "ozet": [
+  "Dikdörtgenler prizmasının 6 dikdörtgen yüzü, 12 ayrıtı ve 8 köşesi vardır; karşılıklı yüzleri eştir. Bütün ayrıtları eşit olan dikdörtgenler prizması küptür.",
+  "Prizma ayrıtlarından kesilip düzleme açılınca yüzey açınımı oluşur; farklı açınımlarda aynı altı dikdörtgen bulunur ve katlandığında karşılıklı gelen yüzler eştir.",
+  "Yüzey alanı açınımın alanıdır: Ayrıtları a, b, c olan prizmada 2 · (a · b + a · c + b · c), küpte 6 · a · a’dır; cm² gibi kare birimlerle ifade edilir.",
+  "Hacim, prizmayı boşluksuz dolduran eş nesnelerin sayısıdır ve ortak ölçüt birim küptür; ayrıtı 1 cm olan birim küpün hacmi 1 cm³’tür. Birim küpler katman, sıra ya da sütun hâlinde sayılabilir.",
+  "Hacim = taban alanı · yükseklik = a · b · c, küpte {us:a|3}’tür. Hacim ile yüzey alanı farklı niceliklerdir; hacimleri eşit prizmaların yüzey alanları farklı olabilir."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Ayrıtları 5 cm, 4 cm ve 2 cm olan bir dikdörtgenler prizmasının yüzey alanı kaç cm²’dir?",
+   "secenekler": [
+    "22 cm²",
+    "38 cm²",
+    "76 cm²",
+    "40 cm²"
+   ],
+   "dogru": 2,
+   "aciklama": "Yüz alanları 5 · 4 = 20 cm², 5 · 2 = 10 cm² ve 4 · 2 = 8 cm²’dir. Her biri ikişer tane olduğundan yüzey alanı 2 · (20 + 10 + 8) = 76 cm²’dir. 38 yalnızca üç yüzün toplamıdır, 40 ise prizmanın hacmidir (40 cm³)."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Ayrıtı 1 cm olan birim küplerle doldurulan bir prizmanın tabanında 6 sıra, her sırada 4 küp vardır. Prizma 5 katmandan oluşuyorsa hacmi kaç cm³’tür?",
+   "secenekler": [
+    "15 cm³",
+    "120 cm³",
+    "29 cm³",
+    "148 cm³"
+   ],
+   "dogru": 1,
+   "aciklama": "Bir katmanda 6 · 4 = 24 küp vardır; 5 katmanda 24 · 5 = 120 küp bulunur. Hacim 120 cm³’tür. 148 sayısı bu prizmanın yüzey alanıdır (cm²)."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Hacimleri 36 cm³ olan aşağıdaki prizmalardan hangisinin yüzey alanı en küçüktür?",
+   "secenekler": [
+    "2 cm, 3 cm, 6 cm",
+    "1 cm, 6 cm, 6 cm",
+    "2 cm, 2 cm, 9 cm",
+    "3 cm, 3 cm, 4 cm"
+   ],
+   "dogru": 3,
+   "aciklama": "Yüzey alanları sırasıyla 2 · (6 + 12 + 18) = 72 cm², 2 · (6 + 6 + 36) = 96 cm², 2 · (4 + 18 + 18) = 80 cm² ve 2 · (9 + 12 + 12) = 66 cm²’dir. En küçük yüzey alanı 66 cm²’dir; bu seçenekler içinde ayrıtları birbirine en yakın olan da 3 cm, 3 cm, 4 cm’lik prizmadır."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Her ifadenin doğru mu yanlış mı olduğuna karar ver; yanlış çıkanların açıklamasını oku.",
+   "ifadeler": [
+    {
+     "metin": "Küpün bütün yüzleri eş karelerdir.",
+     "dogru": true,
+     "aciklama": "Küpün bütün ayrıtları eşit olduğu için 6 yüzü de kenar uzunluğu aynı olan karelerdir."
+    },
+    {
+     "metin": "Hacimleri eşit olan iki dikdörtgenler prizmasının yüzey alanları da eşittir.",
+     "dogru": false,
+     "aciklama": "1 × 1 × 24 ve 2 × 3 × 4 boyutlarındaki prizmaların hacmi 24 cm³’tür; yüzey alanları ise 98 cm² ve 52 cm²’dir."
+    },
+    {
+     "metin": "Bir dikdörtgenler prizmasının yüzey alanı, açınımının alanına eşittir.",
+     "dogru": true,
+     "aciklama": "Açınım, prizmanın altı yüzünü hiçbirini atlamadan ve üst üste bindirmeden düzleme serer."
+    },
+    {
+     "metin": "Bir prizmanın yalnızca yüksekliği 2 katına çıkarılırsa hacmi 4 katına çıkar.",
+     "dogru": false,
+     "aciklama": "Taban alanı değişmez, yükseklik 2 katına çıkar. Hacim = taban alanı · yükseklik olduğundan hacim 2 katına çıkar."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Her kavramı doğru açıklamasıyla eşleştir.",
+   "ciftler": [
+    [
+     "Birim küp",
+     "Ayrıtı 1 birim olan küp"
+    ],
+    [
+     "Yüzey alanı",
+     "Açınımın alanı"
+    ],
+    [
+     "Hacim",
+     "Prizmayı boşluksuz dolduran birim küp sayısı"
+    ],
+    [
+     "Taban alanı",
+     "Tabandaki bir katmanda bulunan birim küp sayısı"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Prizmanın ayrıtlarından kesilip düzleme serilmesiyle oluşan şekle ___ denir.",
+     "cevap": "açınım"
+    },
+    {
+     "metin": "Ayrıtı 1 cm olan küpün hacmi 1 ___ olarak kabul edilir.",
+     "cevap": "santimetreküp"
+    },
+    {
+     "metin": "Dikdörtgenler prizmasının hacmi, taban alanı ile ___ çarpımına eşittir.",
+     "cevap": "yüksekliğin"
+    },
+    {
+     "metin": "Bütün ayrıtları eşit olan dikdörtgenler prizmasına ___ denir.",
+     "cevap": "küp"
+    }
+   ],
+   "fazla": [
+    "santimetrekare"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir prizmanın açınımında iki tane 8 cm × 5 cm’lik, iki tane 8 cm × 3 cm’lik ve iki tane 5 cm × 3 cm’lik dikdörtgen vardır. Prizmanın ayrıt uzunluklarını belirle, yüzey alanını ve hacmini bul.",
+   "ipuclari": [
+    "Dikdörtgenlerin kenarlarında yalnızca üç farklı uzunluk vardır; bunlar prizmanın ayrıtlarıdır.",
+    "Yüzey alanı için altı dikdörtgenin alanını topla; hacim için üç ayrıtı çarp."
+   ],
+   "cevap": "Ayrıtlar 8 cm, 5 cm ve 3 cm’dir. Yüz alanları 8 · 5 = 40 cm², 8 · 3 = 24 cm² ve 5 · 3 = 15 cm²’dir; yüzey alanı 2 · (40 + 24 + 15) = 2 · 79 = 158 cm² olur. Hacim 8 · 5 · 3 = 120 cm³’tür."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Ayrıtı 1 cm olan 24 birim küpün hepsini kullanarak kurulabilecek farklı dikdörtgenler prizmalarından üç tanesini yaz. Hacimlerini ve yüzey alanlarını karşılaştır. Ne gözlersin?",
+   "ipuclari": [
+    "Çarpımı 24 olan üç doğal sayı bul; örneğin 2 · 3 · 4 = 24.",
+    "Yüzey alanı için 2 · (a · b + a · c + b · c) bağıntısını kullan."
+   ],
+   "cevap": "Örneğin 1 × 1 × 24 (yüzey alanı 2 · (1 + 24 + 24) = 98 cm²), 2 × 2 × 6 (2 · (4 + 12 + 12) = 56 cm²) ve 2 × 3 × 4 (2 · (6 + 8 + 12) = 52 cm²). Üçünün de hacmi 24 cm³’tür. Hacim aynı kalırken yüzey alanı değişir; bu örneklerde ayrıt uzunlukları birbirine yaklaştıkça yüzey alanı küçülür."
+  }
+ ]
+}
