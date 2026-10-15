@@ -1,0 +1,299 @@
+{
+ "sinif": 6,
+ "ders": "matematik",
+ "hafta": 8,
+ "tarih": "2-6 Kasım 2026",
+ "yayin_tarihi": "2026-10-15",
+ "unite": "Sayılar ve Nicelikler (2)",
+ "konu": "Kesirlerle Toplama ve Çıkarma Problemleri: Ortak Payda, Tam Sayılı Kesirler, Şerit Modeli ve Tahmin",
+ "ciktilar": [
+  "MAT.6.1.7. Gerçek yaşam durumlarında karşılaşılan kesir, ondalık ve yüzde gösterimleri ile ilgili dört işlem gerektiren problemleri çözebilme"
+ ],
+ "giris": "Geçen hafta kesir çizgisinin bir bölme işareti olduğunu öğrendin; payı paydaya bölerek kesirlerin ondalık gösterimlerini buldun ve hangi kesirlerin sonlu, hangilerinin devirli ondalık gösterimi olduğunu keşfettin. Bu hafta kesir, ondalık ve yüzde gösterimleriyle ilgili problemler üzerine kurulu uzun bir yolculuğa başlıyorsun. İlk durak kesirlerle toplama ve çıkarma problemleri: Problemdeki sayıları ve işlemi belirleyecek, paydaları eşitleyecek, tam sayılı kesirlerle işlem yapacak, problemi şerit modeliyle gösterecek, sonucu önceden tahmin edip çözdükten sonra kontrol edeceksin.",
+ "bolumler": [
+  {
+   "baslik": "Problemi anlamak: sayı ve işlem bileşenleri",
+   "metin": [
+    "Bir problemi çözmeye başlamadan önce onu dikkatle okur ve iki şeyi belirlersin: Problemde hangi sayılar var ve bu sayılar neyi gösteriyor? Benden ne isteniyor? Örneğin “Ayşe pastanın {kesir:1|4}’ünü, kardeşi {kesir:1|3}’ünü yedi. Pastanın ne kadarı kaldı?” probleminde sayılar {kesir:1|4} ve {kesir:1|3}’tür; bunlar pastanın yenen kısımlarıdır. İstenen ise kalan kısımdır.",
+    "Sonra istenenle işlem arasındaki ilişkiyi kurarsın. Kısımlar birleştiriliyorsa toplama, bir bütünden ya da bir miktardan bir kısım ayrılıyorsa veya iki miktar arasındaki fark soruluyorsa çıkarma yaparsın. Pasta probleminde önce yenen kısımları toplar, sonra bütünden (1’den) çıkarırsın.",
+    "Bütün, kesir problemlerinin anahtarıdır. Bir pastanın tamamı, bir yolun tamamı ya da bir kitabın tamamı 1 ile gösterilir. 1’i istediğin paydayla yazabilirsin: 1 = {kesir:12|12} = {kesir:15|15}."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Problem çözmenin adımları",
+    "metin": "Anla (sayılar, istenen), planla (işlem, temsil), uygula (hesapla), kontrol et (makul mü, doğru mu?)."
+   }
+  },
+  {
+   "baslik": "Paydaları eşit ve farklı kesirlerle toplama ve çıkarma",
+   "metin": [
+    "Paydaları eşit kesirleri toplarken ya da çıkarırken payları toplar ya da çıkarırsın, paydayı aynen yazarsın: {kesir:3|8} + {kesir:2|8} = {kesir:5|8}. Çünkü iki kesir de aynı büyüklükteki parçalardan oluşur; üç sekizlik ile iki sekizlik beş sekizlik eder.",
+    "Paydalar farklıysa önce paydaları eşitlersin. Ortak payda olarak paydaların ortak bir katını seçersin; en küçük ortak kat (OKEK) hesabı en kolay yapar. {kesir:5|6} − {kesir:1|4} işleminde 6 ile 4’ün en küçük ortak katı 12’dir: {kesir:10|12} − {kesir:3|12} = {kesir:7|12}.",
+    "Sonuç pay paydan büyük bir bileşik kesir çıkarsa onu tam sayılı kesre çevirebilirsin: {kesir:2|3} + {kesir:3|4} = {kesir:8|12} + {kesir:9|12} = {kesir:17|12} = 1{kesir:5|12}. Sonucu her zaman sadeleştirip sadeleşmediğini de kontrol edersin."
+   ],
+   "tablo": {
+    "basliklar": [
+     "İşlem",
+     "Ortak payda",
+     "Sonuç"
+    ],
+    "satirlar": [
+     [
+      "{kesir:3|8} + {kesir:2|8}",
+      "8 (zaten eşit)",
+      "{kesir:5|8}"
+     ],
+     [
+      "{kesir:5|6} − {kesir:1|4}",
+      "12",
+      "{kesir:7|12}"
+     ],
+     [
+      "{kesir:2|3} + {kesir:3|4}",
+      "12",
+      "{kesir:17|12} = 1{kesir:5|12}"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Paylar ve paydalar ayrı ayrı toplanmaz",
+    "metin": "{kesir:1|2} + {kesir:1|3} işleminin sonucu {kesir:2|5} değildir. Önce paydalar eşitlenir: {kesir:3|6} + {kesir:2|6} = {kesir:5|6}."
+   }
+  },
+  {
+   "baslik": "Tam sayılı kesirlerle toplama ve çıkarma",
+   "metin": [
+    "Tam sayılı kesir, bir tam sayı ile bir basit kesrin birlikte yazılmasıdır: 2{kesir:1|4}, “iki tam dörtte bir” diye okunur. Tam sayılı kesirleri toplarken tam kısımları ve kesir kısımlarını ayrı ayrı toplayabilirsin: 2{kesir:1|4} + 1{kesir:2|3} = (2 + 1) + ({kesir:3|12} + {kesir:8|12}) = 3{kesir:11|12}.",
+    "Çıkarmada kesir kısmı yetmezse tam kısımdan 1 alıp kesre eklersin. 3{kesir:1|5} − 1{kesir:1|2} işleminde paydalar 10 yapılır: 3{kesir:2|10} − 1{kesir:5|10}. {kesir:2|10}’dan {kesir:5|10} çıkmaz; 3’ten 1 alınıp {kesir:10|10} olarak eklenir: 2{kesir:12|10} − 1{kesir:5|10} = 1{kesir:7|10}.",
+    "İstersen tam sayılı kesirleri önce bileşik kesre çevirip öyle de işlem yapabilirsin: 3{kesir:1|5} = {kesir:16|5} ve 1{kesir:1|2} = {kesir:3|2}; {kesir:32|10} − {kesir:15|10} = {kesir:17|10} = 1{kesir:7|10}. İki yol da aynı sonucu verir; sana kolay geleni seçersin."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "İki strateji",
+    "metin": "Tamları ve kesirleri ayrı işle ya da hepsini bileşik kesre çevir. Sonucu öbür yolla kontrol edebilirsin."
+   }
+  },
+  {
+   "baslik": "Şerit modeliyle problem çözmek",
+   "metin": [
+    "Şerit modeli, bütünü bir şerit olarak çizip parçalarını göstermeye dayanır. Problemi bir şekle dönüştürmek, hangi işlemin gerektiğini görmeni kolaylaştırır.",
+    "“Ali okul yolunun {kesir:2|5}’ini yürüyerek, {kesir:1|3}’ünü bisikletle gitti, kalanını servisle gitti. Yolun ne kadarını servisle gitti?” Şeridi 15 eş parçaya bölersin; çünkü 5 ile 3’ün ortak katı 15’tir. Yürüdüğü kısım {kesir:6|15}, bisikletle gittiği kısım {kesir:5|15}’tir. Kalan parçalar 15 − 6 − 5 = 4 tanedir; yani servisle gittiği kısım {kesir:4|15}’tir.",
+    "Aynı problemi işlemle şöyle yazarsın: 1 − {kesir:2|5} − {kesir:1|3} = {kesir:15|15} − {kesir:6|15} − {kesir:5|15} = {kesir:4|15}. Şerit, işlemin neden böyle kurulduğunu anlatır; problemi kendi cümlelerinle açıklamanı da kolaylaştırır."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Şeritteki kısım",
+     "Parça sayısı (15’te)",
+     "Kesir"
+    ],
+    "satirlar": [
+     [
+      "Yürüyerek",
+      "6",
+      "{kesir:6|15} = {kesir:2|5}"
+     ],
+     [
+      "Bisikletle",
+      "5",
+      "{kesir:5|15} = {kesir:1|3}"
+     ],
+     [
+      "Servisle",
+      "4",
+      "{kesir:4|15}"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "bilgi",
+    "baslik": "Şerit kaç parça?",
+    "metin": "Şeridi paydaların ortak katı kadar eş parçaya böl; böylece bütün kesirleri aynı şeritte gösterebilirsin."
+   }
+  },
+  {
+   "baslik": "Ölçü ve para problemleri: kesir ile ondalık birlikte",
+   "metin": [
+    "Gerçek yaşamda kesirler çoğu zaman ölçülerle birlikte karşına çıkar. “Bir şişede 1{kesir:1|2} L su var. Elif {kesir:3|4} L su içti. Şişede ne kadar su kaldı?” sorusunda bir miktardan bir kısım ayrıldığı için çıkarma yaparsın: {kesir:6|4} − {kesir:3|4} = {kesir:3|4} L.",
+    "Bir problemde kesir ve ondalık gösterim birlikte bulunabilir. Bu durumda ikisini aynı gösterime çevirirsin. 0,25 kg peynir ile {kesir:3|4} kg peynirin toplamını bulmak için 0,25’i {kesir:1|4} olarak yazarsın: {kesir:1|4} + {kesir:3|4} = 1 kg. Ondalığa çevirmek de olur: 0,25 + 0,75 = 1.",
+    "Hangi gösterimi seçeceğine sayılara bakarak karar verirsin. Kesirlerin paydası 2, 4, 5, 10 gibi sayılarsa ondalık gösterim kolay olabilir. {kesir:1|3} gibi devirli ondalık gösterimi olan kesirlerde ise kesirle çalışmak daha doğru sonuç verir."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Aynı gösterim",
+    "metin": "Kesir ve ondalık gösterimi aynı işlemde toplamadan önce birini öbürüne çevir. {kesir:1|3} gibi kesirlerde kesirle çalışmak daha güvenlidir."
+   }
+  },
+  {
+   "baslik": "Tahmin et, çöz, kontrol et",
+   "metin": [
+    "İşlem yapmadan önce sonucu tahmin etmek, yanlış bir sonucu fark etmeni sağlar. Kesirleri 0, {kesir:1|2} ve 1 gibi kıyaslama noktalarına yuvarlayarak tahmin yaparsın. {kesir:7|8} + {kesir:5|6} işleminde iki kesir de 1’e yakındır; sonuç 2’ye yakın ama 2’den biraz küçük olmalıdır. Gerçek sonuç {kesir:21|24} + {kesir:20|24} = {kesir:41|24} = 1{kesir:17|24}’tür.",
+    "Çözdükten sonra sonucu kontrol edersin. Toplamayı çıkarmayla, çıkarmayı toplamayla kontrol edebilirsin: {kesir:7|12} + {kesir:1|4} = {kesir:7|12} + {kesir:3|12} = {kesir:10|12} = {kesir:5|6} olduğundan {kesir:5|6} − {kesir:1|4} = {kesir:7|12} doğrudur.",
+    "Sonucun makul olup olmadığına da bakarsın. Bir bütünün kalan kısmı 1’den büyük ya da 0’dan küçük çıkamaz. Bulduğun sonuç tahmininden çok farklıysa çözüm yolunu gözden geçirir, gerekirse stratejini değiştirirsin; örneğin şerit modeline dönersin."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Kıyaslama noktaları",
+    "metin": "Kesri 0’a mı, {kesir:1|2}’ye mi, 1’e mi yakın diye düşün. Bu, sonucu hızlıca tahmin etmeni sağlar."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Ayşe pastanın {kesir:1|4}’ünü, kardeşi {kesir:1|3}’ünü yedi. Pastanın ne kadarı kaldı?",
+   "cevap": "Yenen kısımlar toplanır: {kesir:1|4} + {kesir:1|3} = {kesir:3|12} + {kesir:4|12} = {kesir:7|12}. Bütünden çıkarılır: 1 − {kesir:7|12} = {kesir:12|12} − {kesir:7|12} = {kesir:5|12}. Pastanın {kesir:5|12}’si kaldı. Kontrol: {kesir:7|12} + {kesir:5|12} = 1."
+  },
+  {
+   "soru": "{kesir:5|6} − {kesir:4|9} işlemini yap.",
+   "cevap": "6 ile 9’un en küçük ortak katı 18’dir. {kesir:5|6} = {kesir:15|18} ve {kesir:4|9} = {kesir:8|18} olur. {kesir:15|18} − {kesir:8|18} = {kesir:7|18}. Sonuç sadeleşmez."
+  },
+  {
+   "soru": "Bir terzi 2{kesir:3|4} m kumaştan 1{kesir:1|8} m kesti. Kaç metre kumaş kaldı?",
+   "cevap": "Paydalar 8 yapılır: 2{kesir:6|8} − 1{kesir:1|8}. Tam kısımlar: 2 − 1 = 1; kesir kısımları: {kesir:6|8} − {kesir:1|8} = {kesir:5|8}. Kalan kumaş 1{kesir:5|8} m’dir. Kontrol: 1{kesir:5|8} + 1{kesir:1|8} = 2{kesir:6|8} = 2{kesir:3|4}."
+  },
+  {
+   "soru": "3{kesir:1|5} − 1{kesir:1|2} işlemini iki farklı stratejiyle yap.",
+   "cevap": "1. strateji: Paydalar 10 yapılır: 3{kesir:2|10} − 1{kesir:5|10}. {kesir:2|10}’dan {kesir:5|10} çıkmadığı için 3’ten 1 alınır: 2{kesir:12|10} − 1{kesir:5|10} = 1{kesir:7|10}. 2. strateji: Bileşik kesre çevrilir: {kesir:16|5} − {kesir:3|2} = {kesir:32|10} − {kesir:15|10} = {kesir:17|10} = 1{kesir:7|10}. İki strateji de aynı sonucu verir."
+  },
+  {
+   "soru": "Bir manavdan 0,5 kg elma, {kesir:1|4} kg çilek ve 1,25 kg portakal alındı. Toplam kaç kilogram meyve alındı?",
+   "cevap": "Hepsi ondalık gösterime çevrilir: {kesir:1|4} = 0,25. Toplam 0,5 + 0,25 + 1,25 = 2 kg’dır. Kesirle de yapılabilir: {kesir:1|2} + {kesir:1|4} + 1{kesir:1|4} = {kesir:2|4} + {kesir:1|4} + {kesir:5|4} = {kesir:8|4} = 2 kg."
+  },
+  {
+   "soru": "{kesir:7|8} + {kesir:5|6} işleminin sonucunu önce tahmin et, sonra hesapla.",
+   "cevap": "Tahmin: İki kesir de 1’e yakındır; sonuç 2’ye yakın ama 2’den biraz küçük olmalıdır. Hesaplama: 8 ile 6’nın en küçük ortak katı 24’tür; {kesir:21|24} + {kesir:20|24} = {kesir:41|24} = 1{kesir:17|24}. Sonuç tahminle uyumludur."
+  }
+ ],
+ "ozet": [
+  "Problem çözerken önce sayılar ve istenen belirlenir; kısımlar birleşiyorsa toplama, bir bütünden ya da miktardan bir kısım ayrılıyorsa veya fark soruluyorsa çıkarma yapılır. Bütün 1 ile gösterilir.",
+  "Paydaları eşit kesirlerde paylar toplanır ya da çıkarılır; paydalar farklıysa önce ortak payda (çoğu zaman en küçük ortak kat) bulunur. Paylar ve paydalar ayrı ayrı toplanmaz.",
+  "Tam sayılı kesirlerde tam ve kesir kısımları ayrı işlenebilir ya da hepsi bileşik kesre çevrilebilir; çıkarmada kesir kısmı yetmezse tam kısımdan 1 alınır.",
+  "Şerit modeli bütünü paydaların ortak katı kadar eş parçaya bölerek problemi görselleştirir; kesir ve ondalık gösterimler aynı işlemde aynı gösterime çevrilir.",
+  "Sonuç kıyaslama noktalarıyla önceden tahmin edilir, ters işlemle kontrol edilir ve makul olup olmadığına bakılır; gerekirse strateji değiştirilir."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "{kesir:3|4} − {kesir:1|6} işleminin sonucu kaçtır?",
+   "secenekler": [
+    "{kesir:1|2}",
+    "{kesir:11|12}",
+    "{kesir:7|12}",
+    "{kesir:5|12}"
+   ],
+   "dogru": 2,
+   "aciklama": "Ortak payda 12’dir: {kesir:9|12} − {kesir:2|12} = {kesir:7|12}. {kesir:11|12} toplama yapıldığında çıkar."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir öğrenci kitabının {kesir:3|10}’unu pazartesi, {kesir:2|5}’ini salı okudu. Kitabın ne kadarı okunmadan kaldı?",
+   "secenekler": [
+    "{kesir:7|10}",
+    "{kesir:3|10}",
+    "{kesir:5|15}",
+    "{kesir:1|2}"
+   ],
+   "dogru": 1,
+   "aciklama": "Okunan kısım {kesir:3|10} + {kesir:4|10} = {kesir:7|10}’dur. Kalan: 1 − {kesir:7|10} = {kesir:3|10}. {kesir:7|10} okunan kısımdır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "1{kesir:2|3} + 2{kesir:1|2} işleminin sonucu kaçtır?",
+   "secenekler": [
+    "3{kesir:3|5}",
+    "4{kesir:1|6}",
+    "3{kesir:1|6}",
+    "4{kesir:5|6}"
+   ],
+   "dogru": 1,
+   "aciklama": "Tam kısımlar 1 + 2 = 3; kesirler {kesir:4|6} + {kesir:3|6} = {kesir:7|6} = 1{kesir:1|6}. Toplam 3 + 1{kesir:1|6} = 4{kesir:1|6}."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Her ifadenin doğru mu yanlış mı olduğuna karar ver; yanlış çıkanların açıklamasını oku.",
+   "ifadeler": [
+    {
+     "metin": "{kesir:1|2} + {kesir:1|3} = {kesir:2|5} eşitliği doğrudur.",
+     "dogru": false,
+     "aciklama": "Paylar ve paydalar ayrı ayrı toplanmaz: {kesir:3|6} + {kesir:2|6} = {kesir:5|6}."
+    },
+    {
+     "metin": "Bir bütünün kalan kısmı 1’den büyük çıkamaz.",
+     "dogru": true,
+     "aciklama": "Kalan kısım bütünün bir parçasıdır; 0 ile 1 arasında olmalıdır."
+    },
+    {
+     "metin": "Çıkarma işleminin sonucu toplamayla kontrol edilebilir.",
+     "dogru": true,
+     "aciklama": "Fark ile çıkanın toplamı eksileni vermelidir."
+    },
+    {
+     "metin": "Ortak payda olarak paydaların yalnızca çarpımı kullanılabilir.",
+     "dogru": false,
+     "aciklama": "Paydaların herhangi bir ortak katı kullanılabilir; en küçük ortak kat işlemi en kolay hâle getirir."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Her işlemi sonucuyla eşleştir.",
+   "ciftler": [
+    [
+     "{kesir:1|2} + {kesir:1|4}",
+     "{kesir:3|4}"
+    ],
+    [
+     "{kesir:2|3} − {kesir:1|6}",
+     "{kesir:1|2}"
+    ],
+    [
+     "{kesir:3|5} + {kesir:1|10}",
+     "{kesir:7|10}"
+    ],
+    [
+     "1 − {kesir:3|8}",
+     "{kesir:5|8}"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Paydaları farklı kesirler toplanmadan önce paydalar ___.",
+     "cevap": "eşitlenir"
+    },
+    {
+     "metin": "Bir problemdeki bütün, ___ ile gösterilir.",
+     "cevap": "1"
+    },
+    {
+     "metin": "Toplamanın sonucu ___ işlemiyle kontrol edilebilir.",
+     "cevap": "çıkarma"
+    }
+   ],
+   "fazla": [
+    "çarpma"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir bahçenin {kesir:1|3}’üne domates, {kesir:1|4}’üne biber ekildi. Kalan kısma çiçek dikildi. Bahçenin ne kadarına çiçek dikildiğini şerit modeliyle göster ve işlemle doğrula.",
+   "ipuclari": [
+    "Şeridi 3 ile 4’ün ortak katı kadar eş parçaya böl.",
+    "Domates ve biber parçalarını say, kalanı bul; sonra 1’den çıkararak doğrula."
+   ],
+   "cevap": "Şerit 12 eş parçaya bölünür. Domates {kesir:4|12} (4 parça), biber {kesir:3|12} (3 parça) kaplar. Kalan 12 − 4 − 3 = 5 parçadır; yani çiçek dikilen kısım {kesir:5|12}’dir. İşlemle: 1 − {kesir:1|3} − {kesir:1|4} = {kesir:12|12} − {kesir:4|12} − {kesir:3|12} = {kesir:5|12}."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Kerem, {kesir:2|3} + {kesir:1|5} işleminin sonucunu {kesir:3|8} bulmuştur. Sonucun makul olup olmadığını tahminle değerlendir ve doğru sonucu bul.",
+   "ipuclari": [
+    "{kesir:2|3}, {kesir:1|2}’den büyüktür; ona bir şey eklenince sonuç {kesir:1|2}’den küçük olabilir mi?",
+    "Ortak payda 15’tir."
+   ],
+   "cevap": "Sonuç makul değildir; çünkü {kesir:2|3} zaten {kesir:1|2}’den büyüktür ve ona pozitif bir sayı eklenince sonuç daha da büyümelidir. Oysa {kesir:3|8}, {kesir:1|2}’den küçüktür. Kerem payları ve paydaları ayrı ayrı toplamıştır. Doğrusu: {kesir:10|15} + {kesir:3|15} = {kesir:13|15}."
+  }
+ ]
+}
