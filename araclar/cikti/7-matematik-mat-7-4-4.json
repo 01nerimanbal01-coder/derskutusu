@@ -1,0 +1,193 @@
+{
+  "tablo": "7-matematik",
+  "sinif": 7,
+  "ders": "MATEMATİK",
+  "donem": 1,
+  "kod": "MAT.7.4.4",
+  "ifade": "Dikdörtgenler prizmasının hacim bağıntısını değerlendirebilme",
+  "konu": "Dikdörtgenler Prizmasının Hacim Bağıntısı",
+  "sorular": [
+    {
+      "puan": 15,
+      "duzey": "kavrama",
+      "giris": "Ece ve Can, dikdörtgenler prizması şeklindeki aynı kutuyu farklı nesnelerle tamamen doldurmuştur.",
+      "gorsel": {
+        "tur": "kartlar",
+        "konum": "alt",
+        "genislik": 165,
+        "yon": "row",
+        "kartlar": [
+          {
+            "baslik": "Ece",
+            "satirlar": [
+              "Kutuya 52 bilye koydum. Bilyelerin arasında boşluklar kaldı."
+            ]
+          },
+          {
+            "baslik": "Can",
+            "satirlar": [
+              "Kutuya, aralarında hiç boşluk kalmayacak şekilde 30 birim küp yerleştirdim."
+            ]
+          }
+        ]
+      },
+      "maddeler": [
+        "Aynı kutu için farklı sayılar bulunmasının sebebini açıklayınız.",
+        "Bilye ve birim küpten hangisi hacmi belirlemek için daha uygun bir birimdir? Gerekçesiyle yazınız.",
+        "Kutunun hacmini br³ cinsinden yazınız."
+      ],
+      "cevap": [
+        "a) Nesnelerin şekli ve büyüklüğü farklıdır. Bilyelerin arasında boşluk kalır; bilye sayısı hacmi tam göstermez.",
+        "b) Birim küp. Birim küpler kutuyu aralarında hiç boşluk kalmadan doldurur; bilyelerin arasında ise boşluk kalır.",
+        "c) Kutuyu boşluksuz dolduran 30 birim küp olduğundan hacim 30 br³ olur."
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "uygulama",
+      "giris": "Yandaki dikdörtgenler prizması, boşluk kalmayacak şekilde birim küplerle doldurulmuştur.",
+      "maddeler": [
+        "Prizmanın tabanına dizilen ilk katmanda kaç birim küp bulunduğunu yazınız.",
+        "Prizmadaki katman sayısını ve prizmanın hacmini br³ cinsinden bulunuz.",
+        "Prizmanın ayrıt uzunlukları ile toplam birim küp sayısı arasındaki ilişkiyi açıklayınız. (Ayrıt uzunluklarını birim küpleri sayarak bulunuz.)"
+      ],
+      "gorsel": {
+        "tur": "prizma",
+        "a": 5,
+        "b": 3,
+        "c": 4,
+        "izgara": true,
+        "olcek": 19,
+        "genislik": 40
+      },
+      "cevap": [
+        "a) İlk katmanda 5 · 3 = 15 birim küp vardır.",
+        "b) 4 katman vardır. Hacim = 15 · 4 = 60 birim küp, yani 60 br³ olur.",
+        "c) Ayrıt uzunlukları 5 br, 3 br ve 4 br; toplam birim küp sayısı bunların çarpımına eşittir: 5 · 3 · 4 = 60."
+      ]
+    },
+    {
+      "puan": 20,
+      "duzey": "analiz",
+      "giris": "Birim küplerle hacmi 72 br³ olan farklı dikdörtgenler prizmaları oluşturulacaktır. Prizmaların tüm ayrıt uzunlukları birim cinsinden birer doğal sayıdır.",
+      "maddeler": [
+        "Yüksekliği 3 br olan, birbirinden farklı üç prizmanın tabana ait dik ayrıtlarının uzunluklarını yazınız.",
+        "Taban alanı 18 br² olan prizmanın yüksekliğini bulunuz. Bu prizmanın yüksekliği 2 katına çıkarılırsa hacmi kaç br³ olur? Açıklayınız."
+      ],
+      "cevap": [
+        "a) Taban alanı 72 : 3 = 24 br² olmalıdır: 1 br ve 24 br; 2 br ve 12 br; 3 br ve 8 br; 4 br ve 6 br. Herhangi üçü tam puandır (ayrıtların yer değiştirmesi yeni prizma sayılmaz).",
+        "b) Yükseklik = 72 : 18 = 4 br. Taban alanı aynı kalıp yükseklik 2 katına çıkınca hacim de 2 katına çıkar: 18 · 8 = 144 br³."
+      ],
+      "sayfa": 1
+    },
+    {
+      "puan": 15,
+      "duzey": "uygulama",
+      "giris": "Aşağıdaki tabloda bazı dikdörtgenler prizmalarının ölçüleri verilmiştir.",
+      "gorsel": {
+        "tur": "tablo",
+        "konum": "alt",
+        "genislik": 150,
+        "basliklar": [
+          "Prizma",
+          "Tabana ait 1. dik ayrıt",
+          "Tabana ait 2. dik ayrıt",
+          "Yükseklik",
+          "Taban alanı",
+          "Hacim"
+        ],
+        "satirlar": [
+          [
+            "A",
+            "6 br",
+            "4 br",
+            "5 br",
+            {
+              "b": "24 br²"
+            },
+            {
+              "b": "120 br³"
+            }
+          ],
+          [
+            "B",
+            "8 br",
+            "5 br",
+            {
+              "b": "3 br"
+            },
+            {
+              "b": "40 br²"
+            },
+            "120 br³"
+          ],
+          [
+            "C",
+            {
+              "b": "9 br"
+            },
+            "3 br",
+            "7 br",
+            "27 br²",
+            {
+              "b": "189 br³"
+            }
+          ]
+        ]
+      },
+      "cevap": [
+        "Tablodaki kırmızı değerler. A: 6 · 4 = 24, 24 · 5 = 120. B: 8 · 5 = 40, 120 : 40 = 3. C: 27 : 3 = 9, 27 · 7 = 189."
+      ],
+      "bosluk": 18,
+      "sayfa": 2,
+      "vurgu": "Tablodaki boş bırakılan yerleri doldurunuz."
+    },
+    {
+      "puan": 20,
+      "duzey": "analiz",
+      "giris": "Arda ve Selin, aşağıdaki dikdörtgenler prizmasının içine boşluk kalmayacak şekilde yerleştirilen birim küpleri farklı yollarla saymıştır.",
+      "gorsel": {
+        "tur": "html",
+        "konum": "alt",
+        "genislik": 170,
+        "html": "<div style=\"display:flex;gap:6mm;align-items:center\"><div style=\"flex:0 0 44mm\"><svg style=\"width:100%;height:auto;display:block\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-6.0 -102.8 180.0 128.8\"><polygon points=\"0.0,0.0 120.0,0.0 120.0,-80.0 0.0,-80.0\" fill=\"#dfe9f7\" stroke=\"#222\" stroke-width=\"1.1\" stroke-linejoin=\"round\"/><polygon points=\"0.0,-80.0 120.0,-80.0 140.0,-96.8 20.0,-96.8\" fill=\"#c4d6ef\" stroke=\"#222\" stroke-width=\"1.1\" stroke-linejoin=\"round\"/><polygon points=\"120.0,0.0 140.0,-16.8 140.0,-96.8 120.0,-80.0\" fill=\"#a9c2e6\" stroke=\"#222\" stroke-width=\"1.1\" stroke-linejoin=\"round\"/><line x1=\"20.0\" y1=\"0.0\" x2=\"20.0\" y2=\"-80.0\" stroke=\"#222\" stroke-width=\".7\"/><line x1=\"20.0\" y1=\"-80.0\" x2=\"40.0\" y2=\"-96.8\" stroke=\"#222\" stroke-width=\".7\"/><line x1=\"40.0\" y1=\"0.0\" x2=\"40.0\" y2=\"-80.0\" stroke=\"#222\" stroke-width=\".7\"/><line x1=\"40.0\" y1=\"-80.0\" x2=\"60.0\" y2=\"-96.8\" stroke=\"#222\" stroke-width=\".7\"/><line x1=\"60.0\" y1=\"0.0\" x2=\"60.0\" y2=\"-80.0\" stroke=\"#222\" stroke-width=\".7\"/><line x1=\"60.0\" y1=\"-80.0\" x2=\"80.0\" y2=\"-96.8\" stroke=\"#222\" stroke-width=\".7\"/><line x1=\"80.0\" y1=\"0.0\" x2=\"80.0\" y2=\"-80.0\" stroke=\"#222\" stroke-width=\".7\"/><line x1=\"80.0\" y1=\"-80.0\" x2=\"100.0\" y2=\"-96.8\" stroke=\"#222\" stroke-width=\".7\"/><line x1=\"100.0\" y1=\"0.0\" x2=\"100.0\" y2=\"-80.0\" stroke=\"#222\" stroke-width=\".7\"/><line x1=\"100.0\" y1=\"-80.0\" x2=\"120.0\" y2=\"-96.8\" stroke=\"#222\" stroke-width=\".7\"/><line x1=\"0.0\" y1=\"-20.0\" x2=\"120.0\" y2=\"-20.0\" stroke=\"#222\" stroke-width=\".7\"/><line x1=\"120.0\" y1=\"-20.0\" x2=\"140.0\" y2=\"-36.8\" stroke=\"#222\" stroke-width=\".7\"/><line x1=\"0.0\" y1=\"-40.0\" x2=\"120.0\" y2=\"-40.0\" stroke=\"#222\" stroke-width=\".7\"/><line x1=\"120.0\" y1=\"-40.0\" x2=\"140.0\" y2=\"-56.8\" stroke=\"#222\" stroke-width=\".7\"/><line x1=\"0.0\" y1=\"-60.0\" x2=\"120.0\" y2=\"-60.0\" stroke=\"#222\" stroke-width=\".7\"/><line x1=\"120.0\" y1=\"-60.0\" x2=\"140.0\" y2=\"-76.8\" stroke=\"#222\" stroke-width=\".7\"/><line x1=\"10.0\" y1=\"-88.4\" x2=\"130.0\" y2=\"-88.4\" stroke=\"#222\" stroke-width=\".7\"/><line x1=\"130.0\" y1=\"-8.4\" x2=\"130.0\" y2=\"-88.4\" stroke=\"#222\" stroke-width=\".7\"/><text x=\"60.0\" y=\"15.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#111\" font-weight=\"700\" font-family=\"Arial, Liberation Sans, sans-serif\">6 br</text><text x=\"136.0\" y=\"1.6\" font-size=\"11\" text-anchor=\"start\" fill=\"#111\" font-weight=\"700\" font-family=\"Arial, Liberation Sans, sans-serif\">2 br</text><text x=\"146.0\" y=\"-52.8\" font-size=\"11\" text-anchor=\"start\" fill=\"#111\" font-weight=\"700\" font-family=\"Arial, Liberation Sans, sans-serif\">4 br</text></svg></div><div style=\"flex:1 1 auto\"><div class=\"kartlar\" style=\"flex-direction:row\"><div class=\"kart\"><div class=\"kb\">Arda</div><div>Tabana 6 · 2 = 12 birim küplük bir katman dizdim.</div><div>Yükseklik 4 br olduğu için 4 katman olur.</div></div><div class=\"kart\"><div class=\"kb\">Selin</div><div>Ön yüze 6 · 4 = 24 birim küplük bir katman dizdim.</div><div>Arkaya doğru 2 katman olur.</div></div></div></div></div>"
+      },
+      "maddeler": [
+        "Arda ve Selin'in buldukları toplam birim küp sayılarını hesaplayınız.",
+        "Birim küpler sağ yan yüze katman olarak dizilirse ilk katmanda kaç birim küp olur ve kaç katman oluşur?",
+        "Üç sayma yolunun da “Hacim = Taban alanı · Yükseklik” bağıntısına uyduğunu, her yolda taban ve yükseklik olarak düşünülen yüzü ve ayrıtı belirterek açıklayınız."
+      ],
+      "cevap": [
+        "a) Arda: 12 · 4 = 48 birim küp. Selin: 24 · 2 = 48 birim küp. İkisi de hacmi 48 br³ bulur.",
+        "b) Sağ yan yüzün dik ayrıtları 2 br ve 4 br olduğundan ilk katmanda 2 · 4 = 8 birim küp olur; 6 katman oluşur (8 · 6 = 48).",
+        "c) Birim küplerin dizildiği yüz taban, bu yüze dik ayrıt yükseklik olur: Arda (6 · 2) · 4, Selin (6 · 4) · 2,",
+        "sağ yan yüz (2 · 4) · 6. Hangi yüz taban seçilirse seçilsin taban alanı · yükseklik = 48 br³ bulunur."
+      ],
+      "sayfa": 2
+    },
+    {
+      "puan": 15,
+      "duzey": "değerlendirme",
+      "giris": "Kerem, ayrıt uzunlukları 7 br, 3 br ve 5 br olan bir dikdörtgenler prizmasının hacmini yandaki gibi hesaplamıştır.",
+      "vurgu": "Kerem'in hatalarını bulunuz ve hacmi doğru hesaplayınız.",
+      "gorsel": {
+        "tur": "kartlar",
+        "genislik": 62,
+        "kartlar": [
+          {
+            "baslik": "Kerem'in çözümü",
+            "satirlar": [
+              "Taban alanı = 7 · 3 = 21 br",
+              "Hacim = 21 + 5 = 26 br³"
+            ]
+          }
+        ]
+      },
+      "cevap": [
+        "Hata 1: Taban alanının birimi br değil br² olmalıdır: Taban alanı = 7 br · 3 br = 21 br².",
+        "Hata 2: Hacim, taban alanı ile yüksekliğin toplamı değil çarpımıdır.",
+        "Doğrusu: Hacim = 21 br² · 5 br = 105 br³"
+      ]
+    }
+  ]
+}

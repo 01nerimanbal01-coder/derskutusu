@@ -1,0 +1,151 @@
+{
+  "tablo": "7-matematik",
+  "sinif": 7,
+  "ders": "MATEMATİK",
+  "donem": 1,
+  "kod": "MAT.7.4.6",
+  "ifade": "Günlük hayat durumlarında dikdörtgenler prizmaları ile modellenen cisimlerin yüzey alanı ve hacmine yönelik problem çözebilme",
+  "konu": "Dikdörtgenler Prizmaları ile Modellenen Cisimlerin Yüzey Alanları ve Hacimlerine Yönelik Problemler",
+  "sorular": [
+    {
+      "puan": 15,
+      "duzey": "uygulama",
+      "giris": "Taban ölçüleri 25 cm ve 16 cm, yüksekliği 10 cm olan dikdörtgenler prizması şeklinde üstü açık bir kutu kartondan yapılacaktır. Kartonun birleşme yerlerindeki pay önemsenmeyecektir.",
+      "gorsel": {
+        "tur": "svg",
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-6 -66.2 176.8 92.2\"><polygon points=\"0.0,-36.0 28.8,-60.2 28.8,-36.0\" fill=\"#a9875a\" stroke=\"#222\" stroke-width=\"1.1\" stroke-linejoin=\"round\"/><polygon points=\"28.8,-60.2 118.8,-60.2 90.0,-36.0 28.8,-36.0\" fill=\"#c7a476\" stroke=\"#222\" stroke-width=\"1.1\" stroke-linejoin=\"round\"/><polygon points=\"0.0,0.0 90.0,0.0 90.0,-36.0 0.0,-36.0\" fill=\"#ead2ac\" stroke=\"#222\" stroke-width=\"1.1\" stroke-linejoin=\"round\"/><polygon points=\"90.0,0.0 118.8,-24.2 118.8,-60.2 90.0,-36.0\" fill=\"#d9b98a\" stroke=\"#222\" stroke-width=\"1.1\" stroke-linejoin=\"round\"/><text x=\"45.0\" y=\"15.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#111\" font-weight=\"700\" font-family=\"Arial, Liberation Sans, sans-serif\">25 cm</text><text x=\"110.4\" y=\"-2.1\" font-size=\"11\" text-anchor=\"start\" fill=\"#111\" font-weight=\"700\" font-family=\"Arial, Liberation Sans, sans-serif\">16 cm</text><text x=\"124.8\" y=\"-38.2\" font-size=\"11\" text-anchor=\"start\" fill=\"#111\" font-weight=\"700\" font-family=\"Arial, Liberation Sans, sans-serif\">10 cm</text></svg>",
+        "genislik": 50
+      },
+      "maddeler": [
+        "Kutuyu yapmak için en az kaç cm² karton gerektiğini bulunuz.",
+        "Kutunun hacmini cm³ ve L cinsinden bulunuz."
+      ],
+      "cevap": [
+        "a) Kutunun 5 yüzü vardır (üst yüz yok). Taban: 25 · 16 = 400 cm²; ön ve arka yüzler: 2 · (25 · 10) = 500 cm²; yan yüzler: 2 · (16 · 10) = 320 cm². 400 + 500 + 320 = 1220 cm² karton gerekir.",
+        "b) Hacim = Taban alanı · Yükseklik = 400 · 10 = 4000 cm³. 4000 cm³ = 4 dm³ ve 1 dm³ = 1 L olduğundan 4 L"
+      ]
+    },
+    {
+      "puan": 20,
+      "duzey": "analiz",
+      "giris": "Bir evin çatısında uzunluğu 2,5 m, genişliği 1,2 m ve yüksekliği 1 m olan dikdörtgenler prizması şeklinde bir su deposu vardır. Depo tamamen doludur ve evde günde ortalama 250 L su kullanılmaktadır. Depoya hiç su eklenmezse suyun kaç gün yeteceğini bulmak için aşağıdaki soruları cevaplayınız.",
+      "gorsel": {
+        "tur": "prizma",
+        "a": 5,
+        "b": 2.4,
+        "c": 2,
+        "olcek": 20,
+        "renk": [
+          "#dfeefa",
+          "#eef6fd",
+          "#bcd9f0"
+        ],
+        "etiketler": [
+          "………",
+          "………",
+          "………"
+        ],
+        "genislik": 46
+      },
+      "maddeler": [
+        "Verilen bilgileri ve isteneni kendi cümlelerinizle yazınız. Deponun ölçülerini yandaki modelde gösteriniz.",
+        "Depodaki suyun kaç litre olduğunu bulunuz. Suyun kaç gün yeteceğini önce tahmin ediniz, sonra hesaplayarak kontrol ediniz.",
+        "Kaç gün sonra depodaki suyun yüksekliğinin 25 cm'ye ineceğini bulunuz."
+      ],
+      "cevap": [
+        "a) Verilenler: deponun ölçüleri 2,5 m, 1,2 m, 1 m; depo dolu; günde 250 L su kullanılıyor. İstenen: suyun kaç gün yeteceği. Modelde ön alt ayrıta 2,5 m, derinlik ayrıtına 1,2 m, dikey ayrıta 1 m yazılır.",
+        "b) 2,5 · 1,2 · 1 = 3 m³ = 3000 L. Tahmin: 3000 : 300 = 10, yani 10 günden biraz fazla. 3000 : 250 = 12 gün (12 · 250 = 3000)",
+        "c) 25 cm = 0,25 m; kalan su 2,5 · 1,2 · 0,25 = 0,75 m³ = 750 L; (3000 − 750) : 250 = 2250 : 250 = 9 gün"
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "uygulama",
+      "giris": "Taban ölçüleri 5 m ve 4 m, yüksekliği 3 m olan dikdörtgenler prizması şeklindeki bir odanın dört duvarı ve tavanı boyanacaktır. Odadaki kapı ve pencerenin toplam alanı 4 m²'dir. Bir kutu boya 12 m² yüzeyi boyamaktadır.",
+      "maddeler": [
+        "Boyanacak yüzeyin alanını bulunuz.",
+        "En az kaç kutu boya alınması gerektiğini bulunuz."
+      ],
+      "cevap": [
+        "a) Duvarlar: 2 · (5 · 3) + 2 · (4 · 3) = 30 + 24 = 54 m², tavan: 5 · 4 = 20 m². Kapı ve pencere boyanmaz: 54 + 20 − 4 = 70 m²",
+        "b) 70 : 12 işleminde bölüm 5, kalan 10'dur. 5 kutu 5 · 12 = 60 m² boyar; kalan 10 m² için 1 kutu daha gerekir. En az 6 kutu boya alınmalıdır."
+      ]
+    },
+    {
+      "puan": 20,
+      "duzey": "değerlendirme",
+      "giris": "Ayrıt uzunlukları 60 cm, 40 cm ve 30 cm olan dikdörtgenler prizması şeklindeki bir koliye, ayrıt uzunlukları 20 cm, 10 cm ve 10 cm olan kare prizma şeklindeki eş kutular yerleştirilecektir. Kutuların hepsi aynı yönde dizilecektir.",
+      "gorsel": {
+        "tur": "prizma",
+        "a": 6,
+        "b": 4,
+        "c": 3,
+        "olcek": 13,
+        "renk": [
+          "#ead2ac",
+          "#f7ecd9",
+          "#d9b98a"
+        ],
+        "etiketler": [
+          "60 cm",
+          "40 cm",
+          "30 cm"
+        ],
+        "genislik": 42
+      },
+      "maddeler": [
+        "Kutuların 20 cm'lik ayrıtı kolinin 60 cm'lik ayrıtı boyunca dizilirse koliye kaç kutu sığar?",
+        "Aynı sonucu hacimleri kullanarak bulunuz ve iki çözüm yolunu karşılaştırınız.",
+        "Ali, “Koliye sığan kutu sayısı, kolinin hacmi bir kutunun hacmine bölünerek her zaman bulunur.” demiştir. Aynı kutular 50 cm, 30 cm ve 30 cm ölçülerindeki başka bir koliye yine aynı yönde ve 20 cm'lik ayrıtları 50 cm'lik ayrıt boyunca dizilecektir. Bu örnekle Ali'nin genellemesini değerlendiriniz."
+      ],
+      "cevap": [
+        "a) 60 : 20 = 3, 40 : 10 = 4, 30 : 10 = 3; 3 · 4 · 3 = 36 kutu",
+        "b) 60 · 40 · 30 = 72 000 cm³, 20 · 10 · 10 = 2000 cm³, 72 000 : 2000 = 36. Ayrıtlar tam bölündüğünden sonuç aynıdır.",
+        "c) Hacimle 50 · 30 · 30 = 45 000 cm³, 45 000 : 2000 = 22,5 (tam sayı bile değil). Aynı yönde dizilince 50 cm'lik ayrıt boyunca 2 kutu sığar (2 · 20 = 40 cm), 10 cm boş kalır: 2 · 3 · 3 = 18 kutu. Boşluk kaldığı için genelleme her zaman geçerli değildir."
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "değerlendirme",
+      "giris": "Taban ölçüleri 4 m ve 3 m olan dikdörtgenler prizması şeklindeki bir kum havuzuna 30 cm yüksekliğinde kum doldurulacaktır. Zeynep gereken kum miktarını yandaki gibi hesaplamıştır.",
+      "gorsel": {
+        "tur": "kartlar",
+        "genislik": 52,
+        "kartlar": [
+          {
+            "baslik": "Zeynep'in çözümü",
+            "satirlar": [
+              "4 · 3 · 30 = 360",
+              "Gereken kum 360 m³tür."
+            ]
+          }
+        ]
+      },
+      "vurgu": "Zeynep'in hatasını açıklayınız ve gereken kum miktarını m³ cinsinden doğru olarak bulunuz.",
+      "cevap": [
+        "Zeynep m ve cm ile verilen ölçüleri aynı birime dönüştürmeden çarpmıştır. 30 cm = 0,3 m olduğundan 4 · 3 · 0,3 = 3,6 m³ kum gerekir. (Ya da 400 · 300 · 30 = 3 600 000 cm³ = 3,6 m³)",
+        "Kontrol: 360 m³ kum, 4 m'ye 3 m'lik tabanda 30 m yüksekliğe ulaşırdı; bu sonuç mantıklı değildir."
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "analiz",
+      "giris": "Bir firma 1 L süt için dikdörtgenler prizması şeklinde iki ambalaj tasarlamıştır. A ambalajının ayrıt uzunlukları 10 cm, 5 cm ve 20 cm'dir. B ambalajı ise her ayrıtı 10 cm olan küp şeklindedir.",
+      "gorsel": {
+        "tur": "svg",
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-6 -94.4 220.0 114.4\"><polygon points=\"0.0,0.0 40.0,0.0 40.0,-80.0 0.0,-80.0\" fill=\"#f4f7fb\" stroke=\"#222\" stroke-width=\"1.1\" stroke-linejoin=\"round\"/><polygon points=\"0.0,-80.0 40.0,-80.0 50.0,-88.4 10.0,-88.4\" fill=\"#dfe9f7\" stroke=\"#222\" stroke-width=\"1.1\" stroke-linejoin=\"round\"/><polygon points=\"40.0,0.0 50.0,-8.4 50.0,-88.4 40.0,-80.0\" fill=\"#c4d6ef\" stroke=\"#222\" stroke-width=\"1.1\" stroke-linejoin=\"round\"/><text x=\"20.0\" y=\"-35.0\" font-size=\"14\" text-anchor=\"middle\" fill=\"#111\" font-weight=\"700\" font-family=\"Arial, Liberation Sans, sans-serif\">A</text><text x=\"20.0\" y=\"13.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#111\" font-weight=\"700\" font-family=\"Arial, Liberation Sans, sans-serif\">10 cm</text><text x=\"49.0\" y=\"4.8\" font-size=\"10\" text-anchor=\"start\" fill=\"#111\" font-weight=\"700\" font-family=\"Arial, Liberation Sans, sans-serif\">5 cm</text><text x=\"54.0\" y=\"-44.4\" font-size=\"10\" text-anchor=\"start\" fill=\"#111\" font-weight=\"700\" font-family=\"Arial, Liberation Sans, sans-serif\">20 cm</text><polygon points=\"110.0,0.0 150.0,0.0 150.0,-40.0 110.0,-40.0\" fill=\"#f4f7fb\" stroke=\"#222\" stroke-width=\"1.1\" stroke-linejoin=\"round\"/><polygon points=\"110.0,-40.0 150.0,-40.0 170.0,-56.8 130.0,-56.8\" fill=\"#dfe9f7\" stroke=\"#222\" stroke-width=\"1.1\" stroke-linejoin=\"round\"/><polygon points=\"150.0,0.0 170.0,-16.8 170.0,-56.8 150.0,-40.0\" fill=\"#c4d6ef\" stroke=\"#222\" stroke-width=\"1.1\" stroke-linejoin=\"round\"/><text x=\"130.0\" y=\"-15.0\" font-size=\"14\" text-anchor=\"middle\" fill=\"#111\" font-weight=\"700\" font-family=\"Arial, Liberation Sans, sans-serif\">B</text><text x=\"130.0\" y=\"13.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#111\" font-weight=\"700\" font-family=\"Arial, Liberation Sans, sans-serif\">10 cm</text><text x=\"164.0\" y=\"0.6\" font-size=\"10\" text-anchor=\"start\" fill=\"#111\" font-weight=\"700\" font-family=\"Arial, Liberation Sans, sans-serif\">10 cm</text><text x=\"174.0\" y=\"-32.8\" font-size=\"10\" text-anchor=\"start\" fill=\"#111\" font-weight=\"700\" font-family=\"Arial, Liberation Sans, sans-serif\">10 cm</text></svg>",
+        "genislik": 56
+      },
+      "maddeler": [
+        "İki ambalajın da 1 L süt aldığını gösteriniz.",
+        "Hangi ambalaj için daha az karton gerekeceğini önce tahmin ediniz. Sonra yüzey alanlarını hesaplayarak tahmininizi kontrol ediniz.",
+        "“Hacimleri eşit olan dikdörtgenler prizmalarının yüzey alanları da eşittir.” ifadesi doğru mudur? Bu sorudaki ambalajları kullanarak açıklayınız."
+      ],
+      "cevap": [
+        "a) A: 10 · 5 · 20 = 1000 cm³, B: 10 · 10 · 10 = 1000 cm³. 1000 cm³ = 1 dm³ = 1 L",
+        "b) Gerekçeli tahmin kabul edilir (ör. ayrıtları eşit olan B). A: 2 · (10 · 5 + 10 · 20 + 5 · 20) = 2 · 350 = 700 cm²; B: 6 · (10 · 10) = 600 cm². B için daha az karton gerekir.",
+        "c) Doğru değildir. A ve B'nin hacimleri eşit (1000 cm³) olduğu hâlde yüzey alanları 700 cm² ve 600 cm²'dir."
+      ]
+    }
+  ]
+}
