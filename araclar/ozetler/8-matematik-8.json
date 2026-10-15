@@ -1,0 +1,229 @@
+{
+  "sinif": 8,
+  "ders": "matematik",
+  "hafta": 8,
+  "tarih": "2-6 Kasım 2026",
+  "yayin_tarihi": "2026-10-15",
+  "unite": "Sayılar ve İşlemler",
+  "konu": "Kareköklü İfadelerde Çarpma, Bölme, Toplama ve Çıkarma",
+  "ciktilar": [
+    "M.8.1.3.4. Kareköklü ifadelerde çarpma ve bölme işlemlerini yapar.",
+    "M.8.1.3.5. Kareköklü ifadelerde toplama ve çıkarma işlemlerini yapar."
+  ],
+  "giris": "Geçen hafta {kok:72} gibi bir ifadeyi 6{kok:2} biçiminde yazmayı, 3{kok:5} gibi bir ifadenin katsayısını kök içine alıp {kok:45} yazmayı öğrendin. Bu hafta kareköklü ifadelerle dört işlem yapacaksın. Çarpma ve bölmede kök içindeki sayıların birleşebildiğini, toplama ve çıkarmada ise yalnızca kök içi aynı olan terimlerin birleşebildiğini göreceksin. Geçen hafta öğrendiğin sadeleştirme, bu haftanın neredeyse her işleminde son adım ya da ilk adım olarak karşına çıkacak.",
+  "bolumler": [
+    {
+      "baslik": "Çarpma: kök içleri birleşir",
+      "metin": [
+        "Geçen hafta {kok:a · b} = {kok:a} · {kok:b} eşitliğini sadeleştirmede kullandın. Aynı eşitliği ters yönde okursan çarpma kuralını bulursun: {kok:a} · {kok:b} = {kok:a · b} (a ve b sıfır ya da pozitif). Örneğin {kok:2} · {kok:8} = {kok:16} = 4 ve {kok:3} · {kok:12} = {kok:36} = 6 olur. İki ayrı kareköklü sayının çarpımı bir doğal sayı çıkabilir.",
+        "Katsayılı ifadelerde katsayılar kendi arasında, kök içindeki sayılar kendi arasında çarpılır: a{kok:b} · c{kok:d} = (a · c){kok:b · d}. Örneğin 2{kok:3} · 5{kok:2} = 10{kok:6} olur. Sonuçta kök içi sadeleşebiliyorsa sadeleştirirsin: 3{kok:2} · 4{kok:6} = 12{kok:12} = 12 · 2{kok:3} = 24{kok:3}.",
+        "Bir kareköklü sayının kendisiyle çarpımı, kök içindeki sayıya eşittir: {kok:5} · {kok:5} = {kok:25} = 5, {kok:7} · {kok:7} = 7. Benzer biçimde (3{kok:2}) · (3{kok:2}) = 9 · 2 = 18 olur. Bir doğal sayı ile kareköklü ifade çarpılırken doğal sayı katsayıyla çarpılır: 4 · 3{kok:5} = 12{kok:5}."
+      ],
+      "kutular": [
+        {
+          "tur": "kural",
+          "metin": "{kok:a} · {kok:b} = {kok:a · b}; a{kok:b} · c{kok:d} = (a · c){kok:b · d}; {kok:a} · {kok:a} = a."
+        },
+        {
+          "tur": "ipucu",
+          "metin": "Sayılar büyükse önce sadeleştir, sonra çarp: {kok:18} · {kok:50} = 3{kok:2} · 5{kok:2} = 15 · 2 = 30. Doğrudan çarpsaydın {kok:900} = 30 bulurdun; ama 900’ün karekökünü görmek daha zor olabilirdi."
+        }
+      ]
+    },
+    {
+      "baslik": "Bölme: kök içleri bölünür",
+      "metin": [
+        "Bölmede de kök içleri birleşir: {kok:a} ÷ {kok:b} = {kok:a ÷ b} (a sıfır ya da pozitif, b pozitif). Örneğin {kok:50} ÷ {kok:2} = {kok:25} = 5 ve {kok:48} ÷ {kok:3} = {kok:16} = 4 olur. Bölmeyi kesir çizgisiyle de yazabilirsin: {kesir:{kok:72}|{kok:2}} = {kok:36} = 6.",
+        "Katsayılı ifadelerde katsayı katsayıya, kök içi kök içine bölünür: a{kok:b} ÷ c{kok:d} = (a ÷ c){kok:b ÷ d}. Örneğin 12{kok:15} ÷ 4{kok:5} = 3{kok:3} ve 10{kok:42} ÷ 5{kok:6} = 2{kok:7} olur.",
+        "Aynı kural, kök içinde kesir olduğunda da işe yarar: {kok:{kesir:9|16}} = {kesir:{kok:9}|{kok:16}} = {kesir:3|4}. Pay ve paydanın karekökleri ayrı ayrı alınır. {kok:{kesir:25|49}} = {kesir:5|7} gibi ifadeleri bu sayede hızla hesaplarsın."
+      ],
+      "tablo": {
+        "basliklar": ["İşlem", "Örnek", "Sonuç"],
+        "satirlar": [
+          ["{kok:a} ÷ {kok:b} = {kok:a ÷ b}", "{kok:50} ÷ {kok:2}", "{kok:25} = 5"],
+          ["Katsayılı bölme", "12{kok:15} ÷ 4{kok:5}", "3{kok:3}"],
+          ["Kesirli kök içi", "{kok:{kesir:9|16}}", "{kesir:3|4}"]
+        ]
+      }
+    },
+    {
+      "baslik": "Toplama ve çıkarma: yalnızca benzer terimler",
+      "metin": [
+        "Kök içleri aynı olan kareköklü ifadelere benzer terimler denir: 3{kok:2}, 5{kok:2} ve −{kok:2} benzer terimlerdir. Benzer terimler toplanırken ya da çıkarılırken katsayılar toplanır ya da çıkarılır, kök içi aynen yazılır: 3{kok:2} + 5{kok:2} = 8{kok:2} ve 7{kok:3} − 2{kok:3} = 5{kok:3}.",
+        "Bunu cebirsel ifadelerdeki benzer terimlere benzetebilirsin: 3x + 5x = 8x olduğu gibi 3{kok:2} + 5{kok:2} = 8{kok:2} olur. {kok:2} burada x’in yerini tutar. Katsayısı yazılmayan ifadenin katsayısı 1’dir: {kok:5} + 4{kok:5} = 5{kok:5}.",
+        "Kök içleri farklı olan terimler doğrudan toplanamaz. {kok:2} + {kok:3} toplamı {kok:5} değildir; bu toplam olduğu gibi bırakılır. Kontrol etmek için yaklaşık değerlere bak: {kok:2} yaklaşık 1,4 ve {kok:3} yaklaşık 1,7 olduğundan toplam yaklaşık 3,1’dir; {kok:5} ise yaklaşık 2,2’dir."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Toplamada kök içleri toplanmaz",
+        "metin": "{kok:9} + {kok:16} = 3 + 4 = 7’dir; {kok:25} = 5 değildir. Çarpma ve bölmede kök içleri birleşir, toplama ve çıkarmada birleşmez."
+      }
+    },
+    {
+      "baslik": "Önce sadeleştir, sonra topla",
+      "metin": [
+        "Kök içleri farklı görünen terimler sadeleştirildiğinde benzer terimlere dönüşebilir. Örneğin {kok:12} + {kok:27} toplamında 12 = 4 · 3 ve 27 = 9 · 3 olduğundan {kok:12} = 2{kok:3} ve {kok:27} = 3{kok:3} olur. Toplam 2{kok:3} + 3{kok:3} = 5{kok:3} bulunur.",
+        "Üç ya da daha fazla terimde de aynı yolu izlersin: {kok:50} + {kok:32} − {kok:8} = 5{kok:2} + 4{kok:2} − 2{kok:2} = 7{kok:2}. Her terimi en sade biçimine getirdikten sonra benzer terimleri gruplarsın.",
+        "Sadeleştirmeden sonra da farklı kök içleri kalırsa her grubu ayrı toplarsın: {kok:8} + {kok:12} + {kok:18} = 2{kok:2} + 2{kok:3} + 3{kok:2} = 5{kok:2} + 2{kok:3}. Bu ifade daha fazla sadeleşmez; sonuç bu biçimde bırakılır."
+      ],
+      "tablo": {
+        "basliklar": ["İfade", "Sadeleştirilmiş", "Sonuç"],
+        "satirlar": [
+          ["{kok:12} + {kok:27}", "2{kok:3} + 3{kok:3}", "5{kok:3}"],
+          ["{kok:75} − {kok:27}", "5{kok:3} − 3{kok:3}", "2{kok:3}"],
+          ["{kok:50} + {kok:32} − {kok:8}", "5{kok:2} + 4{kok:2} − 2{kok:2}", "7{kok:2}"],
+          ["{kok:8} + {kok:12} + {kok:18}", "2{kok:2} + 2{kok:3} + 3{kok:2}", "5{kok:2} + 2{kok:3}"]
+        ]
+      }
+    },
+    {
+      "baslik": "Karışık işlemler ve dağılma özelliği",
+      "metin": [
+        "Kareköklü ifadelerde de işlem önceliği geçerlidir: önce parantez içi, sonra çarpma ve bölme, en son toplama ve çıkarma yapılır. Örneğin 2{kok:3} · {kok:3} + {kok:12} ÷ {kok:3} işleminde önce çarpma ve bölme yapılır: 2 · 3 + {kok:4} = 6 + 2 = 8.",
+        "Bir kareköklü ifade parantezle çarpılırken çarpmanın toplama üzerine dağılma özelliği kullanılır: {kok:2} · ({kok:8} + {kok:18}) = {kok:16} + {kok:36} = 4 + 6 = 10. Önce parantez içini sadeleştirip toplasaydın da aynı sonucu bulurdun: {kok:8} + {kok:18} = 2{kok:2} + 3{kok:2} = 5{kok:2} ve {kok:2} · 5{kok:2} = 5 · 2 = 10.",
+        "Hangi yolun daha kısa olduğuna işleme bakarak karar verirsin. Parantez içi benzer terimlere dönüşüyorsa önce toplamak, dönüşmüyorsa dağıtmak genellikle daha kolaydır: {kok:3} · ({kok:12} − {kok:3}) = {kok:36} − {kok:9} = 6 − 3 = 3."
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "metin": "İşlem önceliği: parantez → çarpma ve bölme (soldan sağa) → toplama ve çıkarma (soldan sağa). Dağılma özelliği: a · (b + c) = a · b + a · c."
+      }
+    },
+    {
+      "baslik": "Geometride kareköklü işlemler ve sık yapılan hatalar",
+      "metin": [
+        "Alanı tam kare olmayan bir karenin kenar uzunluğu kareköklü bir ifadedir. Alanı 50 cm² olan karenin kenarı {kok:50} = 5{kok:2} cm’dir; çevresi 4 · 5{kok:2} = 20{kok:2} cm olur. Çevre hesaplarken toplama, alan hesaplarken çarpma kurallarını kullanırsın.",
+        "Kenarları {kok:12} cm ve {kok:27} cm olan bir dikdörtgenin çevresi 2 · ({kok:12} + {kok:27}) = 2 · (2{kok:3} + 3{kok:3}) = 2 · 5{kok:3} = 10{kok:3} cm’dir. Alanı ise {kok:12} · {kok:27} = {kok:324} = 18 cm²’dir. Kenarları kareköklü olan bir şeklin alanının doğal sayı çıkabildiğine dikkat et.",
+        "Aşağıdaki tabloda bu konuda en sık yapılan hataları ve doğrularını görüyorsun. Bir işlemi bitirdiğinde sonucu bu hatalara karşı kontrol et."
+      ],
+      "tablo": {
+        "basliklar": ["Hatalı", "Doğru"],
+        "satirlar": [
+          ["{kok:2} + {kok:3} = {kok:5}", "{kok:2} + {kok:3} olduğu gibi kalır."],
+          ["{kok:75} − {kok:27} = {kok:48}", "5{kok:3} − 3{kok:3} = 2{kok:3}"],
+          ["3{kok:2} · 2{kok:2} = 6{kok:2}", "3{kok:2} · 2{kok:2} = 6 · 2 = 12"],
+          ["2{kok:3} + 3{kok:3} = 5{kok:6}", "2{kok:3} + 3{kok:3} = 5{kok:3}"]
+        ]
+      }
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "3{kok:6} · 2{kok:3} işleminin sonucunu en sade biçimde yaz.",
+      "cevap": "Katsayılar ve kök içleri ayrı ayrı çarpılır: 3{kok:6} · 2{kok:3} = 6{kok:18}. 18 = 9 · 2 olduğundan {kok:18} = 3{kok:2}; sonuç 6 · 3{kok:2} = 18{kok:2} olur."
+    },
+    {
+      "soru": "{kok:96} ÷ {kok:6} ve 15{kok:20} ÷ 5{kok:5} işlemlerini yap.",
+      "cevap": "{kok:96} ÷ {kok:6} = {kok:16} = 4. 15{kok:20} ÷ 5{kok:5} = (15 ÷ 5){kok:20 ÷ 5} = 3{kok:4} = 3 · 2 = 6."
+    },
+    {
+      "soru": "{kok:50} + {kok:18} − {kok:32} işleminin sonucu kaçtır?",
+      "cevap": "Önce her terim sadeleştirilir: {kok:50} = 5{kok:2}, {kok:18} = 3{kok:2}, {kok:32} = 4{kok:2}. Hepsi benzer terim olduğundan katsayılar işleme girer: 5{kok:2} + 3{kok:2} − 4{kok:2} = 4{kok:2}."
+    },
+    {
+      "soru": "{kok:3} · ({kok:27} + {kok:12}) işlemini iki farklı yoldan yap.",
+      "cevap": "Dağılma özelliğiyle: {kok:81} + {kok:36} = 9 + 6 = 15. Önce parantez içini toplayarak: {kok:27} + {kok:12} = 3{kok:3} + 2{kok:3} = 5{kok:3}; {kok:3} · 5{kok:3} = 5 · 3 = 15. İki yol da aynı sonucu verir."
+    },
+    {
+      "soru": "Kenarları {kok:20} cm ve {kok:45} cm olan dikdörtgenin çevresini ve alanını bul.",
+      "cevap": "{kok:20} = 2{kok:5} ve {kok:45} = 3{kok:5}. Çevre: 2 · (2{kok:5} + 3{kok:5}) = 2 · 5{kok:5} = 10{kok:5} cm. Alan: {kok:20} · {kok:45} = {kok:900} = 30 cm²."
+    },
+    {
+      "soru": "Bir öğrenci “{kok:16} + {kok:9} = {kok:25} = 5” yazmış. Hatasını bul ve düzelt.",
+      "cevap": "Toplamada kök içleri toplanmaz. Doğrusu: {kok:16} + {kok:9} = 4 + 3 = 7. Kök içlerini birleştirme kuralı yalnızca çarpma ve bölmede geçerlidir: {kok:16} · {kok:9} = {kok:144} = 12."
+    }
+  ],
+  "ozet": [
+    "Çarpmada kök içleri birleşir: {kok:a} · {kok:b} = {kok:a · b}; katsayılı ifadelerde katsayılar ve kök içleri ayrı ayrı çarpılır, {kok:a} · {kok:a} = a’dır.",
+    "Bölmede de kök içleri birleşir: {kok:a} ÷ {kok:b} = {kok:a ÷ b}; kök içinde kesir varsa pay ve paydanın karekökü ayrı alınır.",
+    "Toplama ve çıkarmada yalnızca kök içi aynı olan benzer terimler birleşir; katsayılar toplanır ya da çıkarılır, kök içi aynen kalır.",
+    "Kök içleri farklı görünen terimler önce sadeleştirilir; sadeleştirmeden sonra benzer hâle gelenler toplanır, gelmeyenler olduğu gibi bırakılır.",
+    "Karışık işlemlerde işlem önceliği ve dağılma özelliği geçerlidir; geometride çevre için toplama, alan için çarpma kuralları kullanılır."
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "{kok:2} · {kok:32} işleminin sonucu kaçtır?",
+      "secenekler": ["8", "16", "{kok:34}", "4{kok:2}"],
+      "dogru": 0,
+      "aciklama": "Çarpmada kök içleri birleşir: {kok:2} · {kok:32} = {kok:64} = 8. {kok:34} kök içlerini toplamakla bulunur; bu yanlıştır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "{kok:75} − {kok:27} işleminin sonucu aşağıdakilerden hangisidir?",
+      "secenekler": ["{kok:48}", "2{kok:3}", "8{kok:3}", "6"],
+      "dogru": 1,
+      "aciklama": "Önce sadeleştirilir: {kok:75} = 5{kok:3}, {kok:27} = 3{kok:3}. Benzer terimler çıkarılır: 5{kok:3} − 3{kok:3} = 2{kok:3}. {kok:48}, kök içlerini çıkarmakla yapılan hatadır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "6{kok:10} ÷ 2{kok:5} işleminin sonucu kaçtır?",
+      "secenekler": ["3{kok:5}", "3{kok:2}", "4{kok:2}", "12{kok:2}"],
+      "dogru": 1,
+      "aciklama": "Katsayı katsayıya, kök içi kök içine bölünür: (6 ÷ 2){kok:10 ÷ 5} = 3{kok:2}."
+    },
+    {
+      "tur": "dy",
+      "yonerge": "Her ifadenin doğru mu yanlış mı olduğuna karar ver; yanlış çıkanların açıklamasını oku.",
+      "ifadeler": [
+        {
+          "metin": "{kok:a} + {kok:b} = {kok:a + b} eşitliği her zaman doğrudur.",
+          "dogru": false,
+          "aciklama": "Toplamada kök içleri toplanmaz. Örneğin {kok:9} + {kok:16} = 7, ama {kok:25} = 5’tir."
+        },
+        {
+          "metin": "{kok:5} · {kok:5} = 5",
+          "dogru": true,
+          "aciklama": "Bir kareköklü sayının kendisiyle çarpımı kök içindeki sayıya eşittir: {kok:25} = 5."
+        },
+        {
+          "metin": "4{kok:3} + 2{kok:3} = 6{kok:3}",
+          "dogru": true,
+          "aciklama": "Benzer terimlerde katsayılar toplanır, kök içi aynen kalır."
+        },
+        {
+          "metin": "{kok:2} + {kok:3} toplamı {kok:5} biçiminde tek terim olarak yazılabilir.",
+          "dogru": false,
+          "aciklama": "Kök içleri farklı ve sadeleşmeyen terimler toplanamaz; {kok:2} + {kok:3} olduğu gibi kalır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "yonerge": "Her işlemi sonucuyla eşleştir.",
+      "ciftler": [
+        ["{kok:3} · {kok:27}", "9"],
+        ["{kok:48} ÷ {kok:3}", "4"],
+        ["{kok:8} + {kok:2}", "3{kok:2}"],
+        ["5{kok:7} − 2{kok:7}", "3{kok:7}"]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+      "cumleler": [
+        {"metin": "Kök içleri aynı olan kareköklü ifadelere ___ terimler denir.", "cevap": "benzer"},
+        {"metin": "Toplama ve çıkarmadan önce her terim mümkünse a{kok:b} biçiminde ___.", "cevap": "sadeleştirilir"},
+        {"metin": "Çarpmada katsayılar kendi arasında, kök içleri de kendi arasında ___.", "cevap": "çarpılır"}
+      ],
+      "fazla": ["toplanır"]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Alanı 72 cm² olan bir karenin kenar uzunluğunu ve çevresini bul. Bu karelerden iki tanesi yan yana konarak bir dikdörtgen oluşturuluyor. Dikdörtgenin çevresi ve alanı ne olur?",
+      "ipuclari": [
+        "Karenin kenarı alanın kareköküdür; {kok:72}’yi sadeleştir.",
+        "Dikdörtgenin kısa kenarı karenin kenarı, uzun kenarı ise iki karenin kenarlarının toplamıdır."
+      ],
+      "cevap": "Kare: kenar {kok:72} = 6{kok:2} cm, çevre 4 · 6{kok:2} = 24{kok:2} cm. Dikdörtgen: kenarlar 6{kok:2} cm ve 12{kok:2} cm. Çevre 2 · (6{kok:2} + 12{kok:2}) = 2 · 18{kok:2} = 36{kok:2} cm. Alan 6{kok:2} · 12{kok:2} = 72 · 2 = 144 cm² (iki karenin alanları toplamı: 72 + 72 = 144)."
+    },
+    {
+      "tur": "ogretici",
+      "soru": "({kok:18} + {kok:8}) · {kok:2} − {kok:50} ÷ {kok:2} işleminin sonucunu bul.",
+      "ipuclari": [
+        "Önce parantez içindeki terimleri sadeleştirip topla.",
+        "Çarpma ve bölmeyi yaptıktan sonra çıkarmaya geç."
+      ],
+      "cevap": "Parantez içi: {kok:18} + {kok:8} = 3{kok:2} + 2{kok:2} = 5{kok:2}. Çarpma: 5{kok:2} · {kok:2} = 5 · 2 = 10. Bölme: {kok:50} ÷ {kok:2} = {kok:25} = 5. Çıkarma: 10 − 5 = 5."
+    }
+  ]
+}
