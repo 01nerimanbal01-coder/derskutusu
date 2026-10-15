@@ -1,0 +1,290 @@
+{
+ "sinif": 8,
+ "ders": "fen-bilimleri",
+ "hafta": 5,
+ "tarih": "12-16 Ekim 2026",
+ "yayin_tarihi": "2026-10-15",
+ "unite": "DNA ve Genetik Kod",
+ "konu": "DNA’nın Yapısı, DNA’nın Eşlenmesi ve Kalıtıma Giriş",
+ "ciktilar": [
+  "F.8.2.1.2. DNA’nın yapısını model üzerinde gösterir.",
+  "F.8.2.1.3. DNA’nın kendini nasıl eşlediğini ifade eder.",
+  "F.8.2.2.1. Kalıtım ile ilgili kavramları tanımlar."
+ ],
+ "giris": "Geçen hafta kalıtsal bilginin taşındığı yapıları tanıdın: Nükleotidler art arda dizilerek geni, genler DNA’yı, DNA da proteinlerle birlikte kromozomu oluşturur. Bu hafta DNA’yı yakından inceleyecek, bir model üzerinde nükleotidlerin nasıl dizildiğini ve bazların nasıl eşleştiğini göstereceksin. Ardından hücre bölünmeden önce DNA’nın kendini nasıl eşlediğini öğrenecek, eşlenmede oluşan hataların ne anlama geldiğini göreceksin. Haftanın sonunda kalıtım konusuna giriş yapacak, kalıtım ve karakter kavramlarıyla tanışacaksın.",
+ "bolumler": [
+  {
+   "baslik": "Nükleotidi hatırla",
+   "metin": [
+    "DNA’nın yapı birimi nükleotiddir. Her nükleotid üç parçadan oluşur: bir fosfat grubu, beş karbonlu bir şeker olan deoksiriboz ve bir organik baz. DNA’da dört çeşit organik baz bulunur: adenin (A), timin (T), guanin (G) ve sitozin (C).",
+    "Bütün nükleotidlerde fosfat ve şeker aynıdır; nükleotidleri birbirinden ayıran organik bazdır. Bu yüzden DNA’da dört çeşit nükleotid vardır ve her biri içindeki bazın adıyla anılır: adenin nükleotidi, timin nükleotidi, guanin nükleotidi ve sitozin nükleotidi.",
+    "Dört çeşit nükleotid, alfabedeki harflere benzetilebilir. Az sayıda harfle sayısız kelime yazılabildiği gibi, dört çeşit nükleotidin farklı sayı ve sırada dizilmesiyle de sayısız farklı genetik bilgi oluşur."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "metin": "Nükleotid = fosfat + şeker (deoksiriboz) + organik baz (A, T, G ya da C)."
+   },
+   "gorsel": "<svg viewBox=\"0 0 440 190\" role=\"img\" aria-label=\"Bir nükleotidin üç parçası: fosfat, şeker ve organik baz. Fosfat şekere, şeker de organik baza bağlıdır. Şeker deoksiriboz adlı beş karbonlu bir şekerdir. Organik baz adenin, timin, guanin ya da sitozindir. Nükleotid içindeki bazın adıyla anılır.\"><text x=\"220\" y=\"24\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-y\">Bir nükleotidin üç parçası</text><circle cx=\"110\" cy=\"96\" r=\"30\" class=\"g-ta\"/><circle cx=\"110\" cy=\"96\" r=\"30\" class=\"g-ts\" stroke-width=\"2\"/><text x=\"110\" y=\"101\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"800\" class=\"g-tf\">Fosfat</text><path d=\"M220 66 L252 88 L240 126 L200 126 L188 88z\" class=\"g-ya\"/><path d=\"M220 66 L252 88 L240 126 L200 126 L188 88z\" class=\"g-ys\" stroke-width=\"2\"/><text x=\"220\" y=\"101\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"800\" class=\"g-yf\">Şeker</text><rect x=\"296\" y=\"70\" width=\"110\" height=\"52\" rx=\"10\" class=\"g-ma\"/><rect x=\"296\" y=\"70\" width=\"110\" height=\"52\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"351\" y=\"92\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"800\" class=\"g-mf\">Organik baz</text><text x=\"351\" y=\"110\" text-anchor=\"middle\" font-size=\"11\" class=\"g-y\">A, T, G ya da C</text><line x1=\"142\" y1=\"96\" x2=\"186\" y2=\"96\" class=\"g-c\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"254\" y1=\"96\" x2=\"294\" y2=\"96\" class=\"g-c\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"220\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" class=\"g-s\">Şeker: deoksiriboz (beş karbonlu)</text><text x=\"220\" y=\"174\" text-anchor=\"middle\" font-size=\"12\" class=\"g-y\">Nükleotid, içindeki bazın adıyla anılır: adenin nükleotidi gibi.</text></svg>"
+  },
+  {
+   "baslik": "DNA’nın yapısı: sarmal bir merdiven",
+   "metin": [
+    "DNA, karşılıklı iki nükleotid zincirinden oluşur. Bu iki zincir birbirinin etrafında dönerek sarmal bir yapı oluşturur; bu yüzden DNA’ya çift zincirli sarmal denir. DNA’yı bükülmüş bir ip merdivene benzetebilirsin.",
+    "Merdivenin iki kenarını şeker ve fosfatlar, basamaklarını ise karşılıklı gelen organik bazlar oluşturur. Bazlar rastgele eşleşmez: Adenin her zaman timinle, guanin her zaman sitozinle karşılıklı gelir. Bu kural sayesinde bir zincirdeki baz sırasını bilirsen karşı zinciri de yazabilirsin. Örneğin bir zincir ATGC ise karşısındaki zincir TACG olur.",
+    "DNA’nın çift sarmal yapısı 1953’te James Watson ve Francis Crick tarafından bir model olarak ortaya kondu. Bu modelin kurulmasında Rosalind Franklin’in DNA’nın X ışınlarıyla çektiği görüntüler önemli bir rol oynadı. Bilim insanlarının ortaya koyduğu model, DNA’nın kendini nasıl eşlediğini anlamanın da yolunu açtı."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "metin": "DNA’da adenin (A) timinle (T), guanin (G) sitozinle (C) eşleşir. A–T ve G–C eşleşmesine baz eşleşmesi denir."
+   },
+   "gorsel": "<svg viewBox=\"0 0 440 274\" role=\"img\" aria-label=\"DNA’nın açılmış merdiven modeli. Merdivenin iki kenarı şeker ve fosfattan oluşur; basamakları karşılıklı bazlar oluşturur. Soldaki zincir A, T, G, C, G, T, A, C; karşısındaki zincir T, A, C, G, C, A, T, G. Adenin her zaman timinle, guanin her zaman sitozinle eşleşir.\"><rect x=\"74\" y=\"18\" width=\"16\" height=\"246\" rx=\"6\" class=\"g-z\"/><rect x=\"74\" y=\"18\" width=\"16\" height=\"246\" rx=\"6\" class=\"g-c\" stroke-width=\"1.6\"/><rect x=\"290\" y=\"18\" width=\"16\" height=\"246\" rx=\"6\" class=\"g-z\"/><rect x=\"290\" y=\"18\" width=\"16\" height=\"246\" rx=\"6\" class=\"g-c\" stroke-width=\"1.6\"/><rect x=\"92\" y=\"24\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ma\"/><rect x=\"92\" y=\"24\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"140.0\" y=\"40.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-mf\">A</text><rect x=\"192\" y=\"24\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ta\"/><rect x=\"192\" y=\"24\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"240.0\" y=\"40.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">T</text><rect x=\"92\" y=\"54\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ta\"/><rect x=\"92\" y=\"54\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"140.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">T</text><rect x=\"192\" y=\"54\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ma\"/><rect x=\"192\" y=\"54\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"240.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-mf\">A</text><rect x=\"92\" y=\"84\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ya\"/><rect x=\"92\" y=\"84\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ys\" stroke-width=\"1.6\"/><text x=\"140.0\" y=\"100.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-yf\">G</text><rect x=\"192\" y=\"84\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-oa\"/><rect x=\"192\" y=\"84\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-os\" stroke-width=\"1.6\"/><text x=\"240.0\" y=\"100.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-of\">C</text><rect x=\"92\" y=\"114\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-oa\"/><rect x=\"92\" y=\"114\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-os\" stroke-width=\"1.6\"/><text x=\"140.0\" y=\"130.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-of\">C</text><rect x=\"192\" y=\"114\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ya\"/><rect x=\"192\" y=\"114\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ys\" stroke-width=\"1.6\"/><text x=\"240.0\" y=\"130.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-yf\">G</text><rect x=\"92\" y=\"144\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ya\"/><rect x=\"92\" y=\"144\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ys\" stroke-width=\"1.6\"/><text x=\"140.0\" y=\"160.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-yf\">G</text><rect x=\"192\" y=\"144\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-oa\"/><rect x=\"192\" y=\"144\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-os\" stroke-width=\"1.6\"/><text x=\"240.0\" y=\"160.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-of\">C</text><rect x=\"92\" y=\"174\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ta\"/><rect x=\"92\" y=\"174\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"140.0\" y=\"190.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">T</text><rect x=\"192\" y=\"174\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ma\"/><rect x=\"192\" y=\"174\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"240.0\" y=\"190.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-mf\">A</text><rect x=\"92\" y=\"204\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ma\"/><rect x=\"92\" y=\"204\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"140.0\" y=\"220.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-mf\">A</text><rect x=\"192\" y=\"204\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ta\"/><rect x=\"192\" y=\"204\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"240.0\" y=\"220.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">T</text><rect x=\"92\" y=\"234\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-oa\"/><rect x=\"92\" y=\"234\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-os\" stroke-width=\"1.6\"/><text x=\"140.0\" y=\"250.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-of\">C</text><rect x=\"192\" y=\"234\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ya\"/><rect x=\"192\" y=\"234\" width=\"96\" height=\"22\" rx=\"4\" class=\"g-ys\" stroke-width=\"1.6\"/><text x=\"240.0\" y=\"250.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-yf\">G</text><text x=\"82\" y=\"12\" text-anchor=\"middle\" font-size=\"10.5\" class=\"g-s\">şeker-fosfat</text><text x=\"298\" y=\"12\" text-anchor=\"middle\" font-size=\"10.5\" class=\"g-s\">şeker-fosfat</text><rect x=\"330\" y=\"30\" width=\"26\" height=\"24\" rx=\"4\" class=\"g-ma\"/><rect x=\"330\" y=\"30\" width=\"26\" height=\"24\" rx=\"4\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"343.0\" y=\"47.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-mf\">A</text><text x=\"364\" y=\"47\" font-size=\"12.5\" class=\"g-y\">Adenin</text><rect x=\"330\" y=\"64\" width=\"26\" height=\"24\" rx=\"4\" class=\"g-ta\"/><rect x=\"330\" y=\"64\" width=\"26\" height=\"24\" rx=\"4\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"343.0\" y=\"81.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">T</text><text x=\"364\" y=\"81\" font-size=\"12.5\" class=\"g-y\">Timin</text><rect x=\"330\" y=\"98\" width=\"26\" height=\"24\" rx=\"4\" class=\"g-ya\"/><rect x=\"330\" y=\"98\" width=\"26\" height=\"24\" rx=\"4\" class=\"g-ys\" stroke-width=\"1.6\"/><text x=\"343.0\" y=\"115.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-yf\">G</text><text x=\"364\" y=\"115\" font-size=\"12.5\" class=\"g-y\">Guanin</text><rect x=\"330\" y=\"132\" width=\"26\" height=\"24\" rx=\"4\" class=\"g-oa\"/><rect x=\"330\" y=\"132\" width=\"26\" height=\"24\" rx=\"4\" class=\"g-os\" stroke-width=\"1.6\"/><text x=\"343.0\" y=\"149.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-of\">C</text><text x=\"364\" y=\"149\" font-size=\"12.5\" class=\"g-y\">Sitozin</text><text x=\"330\" y=\"186\" font-size=\"12.5\" font-weight=\"700\" class=\"g-y\">A ile T,</text><text x=\"330\" y=\"204\" font-size=\"12.5\" font-weight=\"700\" class=\"g-y\">G ile C</text><text x=\"330\" y=\"222\" font-size=\"12.5\" font-weight=\"700\" class=\"g-y\">karşılıklı gelir.</text></svg>"
+  },
+  {
+   "baslik": "Bir DNA modeli yapmak",
+   "metin": [
+    "DNA modeli yaparken her parçayı farklı bir malzemeyle gösterebilirsin. Örneğin şekerleri ve fosfatları iki farklı renkte boncukla, dört organik bazı da dört ayrı renkte pipet ya da kartonla temsil edebilirsin. Önce tek zinciri dizer, sonra baz eşleşmesi kuralına uyarak karşı zinciri tamamlarsın.",
+    "Modelde merdivenin kenarlarının şeker ve fosfatların sırayla dizilmesinden oluştuğunu, basamakların da ortada birbirine tutunan iki bazdan meydana geldiğini göstermelisin. İki zinciri tamamladıktan sonra merdiveni hafifçe kendi etrafında döndürürsen sarmal yapıyı da göstermiş olursun.",
+    "Her model gerçeği basitleştirir. Gerçek bir DNA’da milyonlarca nükleotid bulunur ve DNA gözle görülemeyecek kadar incedir. Model, yapıyı anlamamıza yardım eden bir araçtır; modelin eksik yönlerini de belirtmek bilimsel bir tutumdur."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "metin": "Model yaparken bir renk anahtarı hazırla: Her renk neyi gösteriyor? Bu anahtar olmadan modelin anlaşılmaz."
+   }
+  },
+  {
+   "baslik": "DNA kendini nasıl eşler?",
+   "metin": [
+    "Canlılar büyür ve yaralarını onarır; bunun için hücreler bölünerek çoğalır. Bölünme sonunda oluşan her yeni hücrenin de aynı genetik bilgiye sahip olması gerekir. Bu yüzden hücre bölünmeden önce DNA kendinin bir kopyasını yapar. Buna DNA’nın eşlenmesi denir.",
+    "Eşlenme sırasında DNA’nın iki zinciri bir fermuar gibi birbirinden ayrılır. Hücrede serbest hâlde bulunan nükleotidler, baz eşleşmesi kuralına göre her eski zincirin karşısına yerleşir: Adeninin karşısına timin, guaninin karşısına sitozin gelir. Böylece başlangıçtaki DNA’nın aynısı olan iki DNA molekülü oluşur.",
+    "Yeni oluşan her DNA’da zincirlerden biri eski, diğeri yenidir. Hücre bölündüğünde bu iki DNA molekülünden biri bir yavru hücreye, diğeri öteki yavru hücreye geçer. Böylece genetik bilgi yeni hücrelere eksiksiz aktarılır."
+   ],
+   "kutu": {
+    "tur": "tanim",
+    "baslik": "DNA’nın eşlenmesi",
+    "metin": "Hücre bölünmeden önce DNA’nın, baz eşleşmesi kuralına uyarak kendisinin aynısı olan bir kopya oluşturmasıdır."
+   },
+   "gorsel": "<svg viewBox=\"0 0 440 252\" role=\"img\" aria-label=\"DNA’nın eşlenmesi üç adımda: 1. DNA çift zincirlidir. 2. Zincirler fermuar gibi birbirinden ayrılır. 3. Her eski zincirin karşısına baz eşleşmesi kuralına göre yeni nükleotidler gelir; birbirinin aynısı iki DNA oluşur. Her yeni DNA’da bir eski, bir yeni zincir vardır; yeni zincirler kesik çizgiyle gösterilmiştir.\"><text x=\"58\" y=\"22\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"800\" class=\"g-y\">1. DNA</text><rect x=\"14\" y=\"36\" width=\"42\" height=\"22\" rx=\"4\" class=\"g-ma\"/><rect x=\"14\" y=\"36\" width=\"42\" height=\"22\" rx=\"4\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"35.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-mf\">A</text><rect x=\"60\" y=\"36\" width=\"42\" height=\"22\" rx=\"4\" class=\"g-ta\"/><rect x=\"60\" y=\"36\" width=\"42\" height=\"22\" rx=\"4\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"81.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">T</text><rect x=\"14\" y=\"64\" width=\"42\" height=\"22\" rx=\"4\" class=\"g-ya\"/><rect x=\"14\" y=\"64\" width=\"42\" height=\"22\" rx=\"4\" class=\"g-ys\" stroke-width=\"1.6\"/><text x=\"35.0\" y=\"80.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-yf\">G</text><rect x=\"60\" y=\"64\" width=\"42\" height=\"22\" rx=\"4\" class=\"g-oa\"/><rect x=\"60\" y=\"64\" width=\"42\" height=\"22\" rx=\"4\" class=\"g-os\" stroke-width=\"1.6\"/><text x=\"81.0\" y=\"80.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-of\">C</text><rect x=\"14\" y=\"92\" width=\"42\" height=\"22\" rx=\"4\" class=\"g-ta\"/><rect x=\"14\" y=\"92\" width=\"42\" height=\"22\" rx=\"4\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"35.0\" y=\"108.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">T</text><rect x=\"60\" y=\"92\" width=\"42\" height=\"22\" rx=\"4\" class=\"g-ma\"/><rect x=\"60\" y=\"92\" width=\"42\" height=\"22\" rx=\"4\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"81.0\" y=\"108.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-mf\">A</text><rect x=\"14\" y=\"120\" width=\"42\" height=\"22\" rx=\"4\" class=\"g-oa\"/><rect x=\"14\" y=\"120\" width=\"42\" height=\"22\" rx=\"4\" class=\"g-os\" stroke-width=\"1.6\"/><text x=\"35.0\" y=\"136.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-of\">C</text><rect x=\"60\" y=\"120\" width=\"42\" height=\"22\" rx=\"4\" class=\"g-ya\"/><rect x=\"60\" y=\"120\" width=\"42\" height=\"22\" rx=\"4\" class=\"g-ys\" stroke-width=\"1.6\"/><text x=\"81.0\" y=\"136.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-yf\">G</text><text x=\"190\" y=\"22\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"800\" class=\"g-y\">2. Zincirler ayrılır</text><rect x=\"134\" y=\"36\" width=\"36\" height=\"22\" rx=\"4\" class=\"g-ma\"/><rect x=\"134\" y=\"36\" width=\"36\" height=\"22\" rx=\"4\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"152.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-mf\">A</text><rect x=\"210\" y=\"36\" width=\"36\" height=\"22\" rx=\"4\" class=\"g-ta\"/><rect x=\"210\" y=\"36\" width=\"36\" height=\"22\" rx=\"4\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"228.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">T</text><rect x=\"134\" y=\"64\" width=\"36\" height=\"22\" rx=\"4\" class=\"g-ya\"/><rect x=\"134\" y=\"64\" width=\"36\" height=\"22\" rx=\"4\" class=\"g-ys\" stroke-width=\"1.6\"/><text x=\"152.0\" y=\"80.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-yf\">G</text><rect x=\"210\" y=\"64\" width=\"36\" height=\"22\" rx=\"4\" class=\"g-oa\"/><rect x=\"210\" y=\"64\" width=\"36\" height=\"22\" rx=\"4\" class=\"g-os\" stroke-width=\"1.6\"/><text x=\"228.0\" y=\"80.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-of\">C</text><rect x=\"134\" y=\"92\" width=\"36\" height=\"22\" rx=\"4\" class=\"g-ta\"/><rect x=\"134\" y=\"92\" width=\"36\" height=\"22\" rx=\"4\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"152.0\" y=\"108.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">T</text><rect x=\"210\" y=\"92\" width=\"36\" height=\"22\" rx=\"4\" class=\"g-ma\"/><rect x=\"210\" y=\"92\" width=\"36\" height=\"22\" rx=\"4\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"228.0\" y=\"108.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-mf\">A</text><rect x=\"134\" y=\"120\" width=\"36\" height=\"22\" rx=\"4\" class=\"g-oa\"/><rect x=\"134\" y=\"120\" width=\"36\" height=\"22\" rx=\"4\" class=\"g-os\" stroke-width=\"1.6\"/><text x=\"152.0\" y=\"136.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-of\">C</text><rect x=\"210\" y=\"120\" width=\"36\" height=\"22\" rx=\"4\" class=\"g-ya\"/><rect x=\"210\" y=\"120\" width=\"36\" height=\"22\" rx=\"4\" class=\"g-ys\" stroke-width=\"1.6\"/><text x=\"228.0\" y=\"136.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-yf\">G</text><text x=\"352\" y=\"22\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"800\" class=\"g-y\">3. İki özdeş DNA</text><rect x=\"278\" y=\"36\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-ma\"/><rect x=\"278\" y=\"36\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"295.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-mf\">A</text><rect x=\"314\" y=\"36\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-z\"/><rect x=\"314\" y=\"36\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-ts\" stroke-width=\"1.6\" stroke-dasharray=\"3 2\"/><text x=\"331.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">T</text><rect x=\"358\" y=\"36\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-z\"/><rect x=\"358\" y=\"36\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-ms\" stroke-width=\"1.6\" stroke-dasharray=\"3 2\"/><text x=\"375.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-mf\">A</text><rect x=\"394\" y=\"36\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-ta\"/><rect x=\"394\" y=\"36\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"411.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">T</text><rect x=\"278\" y=\"64\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-ya\"/><rect x=\"278\" y=\"64\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-ys\" stroke-width=\"1.6\"/><text x=\"295.0\" y=\"80.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-yf\">G</text><rect x=\"314\" y=\"64\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-z\"/><rect x=\"314\" y=\"64\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-os\" stroke-width=\"1.6\" stroke-dasharray=\"3 2\"/><text x=\"331.0\" y=\"80.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-of\">C</text><rect x=\"358\" y=\"64\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-z\"/><rect x=\"358\" y=\"64\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-ys\" stroke-width=\"1.6\" stroke-dasharray=\"3 2\"/><text x=\"375.0\" y=\"80.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-yf\">G</text><rect x=\"394\" y=\"64\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-oa\"/><rect x=\"394\" y=\"64\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-os\" stroke-width=\"1.6\"/><text x=\"411.0\" y=\"80.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-of\">C</text><rect x=\"278\" y=\"92\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-ta\"/><rect x=\"278\" y=\"92\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"295.0\" y=\"108.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">T</text><rect x=\"314\" y=\"92\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-z\"/><rect x=\"314\" y=\"92\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-ms\" stroke-width=\"1.6\" stroke-dasharray=\"3 2\"/><text x=\"331.0\" y=\"108.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-mf\">A</text><rect x=\"358\" y=\"92\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-z\"/><rect x=\"358\" y=\"92\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-ts\" stroke-width=\"1.6\" stroke-dasharray=\"3 2\"/><text x=\"375.0\" y=\"108.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">T</text><rect x=\"394\" y=\"92\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-ma\"/><rect x=\"394\" y=\"92\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"411.0\" y=\"108.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-mf\">A</text><rect x=\"278\" y=\"120\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-oa\"/><rect x=\"278\" y=\"120\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-os\" stroke-width=\"1.6\"/><text x=\"295.0\" y=\"136.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-of\">C</text><rect x=\"314\" y=\"120\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-z\"/><rect x=\"314\" y=\"120\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-ys\" stroke-width=\"1.6\" stroke-dasharray=\"3 2\"/><text x=\"331.0\" y=\"136.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-yf\">G</text><rect x=\"358\" y=\"120\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-z\"/><rect x=\"358\" y=\"120\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-os\" stroke-width=\"1.6\" stroke-dasharray=\"3 2\"/><text x=\"375.0\" y=\"136.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-of\">C</text><rect x=\"394\" y=\"120\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-ya\"/><rect x=\"394\" y=\"120\" width=\"34\" height=\"22\" rx=\"4\" class=\"g-ys\" stroke-width=\"1.6\"/><text x=\"411.0\" y=\"136.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-yf\">G</text><line x1=\"108\" y1=\"80\" x2=\"124\" y2=\"80\" class=\"g-c\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M124 75 L132 80 L124 85z\" class=\"g-s\"/><line x1=\"252\" y1=\"80\" x2=\"266\" y2=\"80\" class=\"g-c\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M266 75 L274 80 L266 85z\" class=\"g-s\"/><rect x=\"20\" y=\"160\" width=\"20\" height=\"14\" rx=\"3\" class=\"g-c\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"48\" y=\"172\" font-size=\"12\" class=\"g-s\">eski zincir</text><rect x=\"150\" y=\"160\" width=\"20\" height=\"14\" rx=\"3\" class=\"g-c\" stroke-width=\"1.6\" stroke-dasharray=\"3 2\" fill=\"none\"/><text x=\"178\" y=\"172\" font-size=\"12\" class=\"g-s\">yeni zincir (kesik çizgili)</text><rect x=\"14\" y=\"188\" width=\"412\" height=\"54\" rx=\"10\" class=\"g-z\"/><rect x=\"14\" y=\"188\" width=\"412\" height=\"54\" rx=\"10\" class=\"g-c\" stroke-width=\"1.6\"/><text x=\"220\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" class=\"g-y\">Her eski zincirin karşısına yeni nükleotidler gelir.</text><text x=\"220\" y=\"229\" text-anchor=\"middle\" font-size=\"11.5\" class=\"g-s\">Birbirinin aynısı iki DNA oluşur.</text></svg>"
+  },
+  {
+   "baslik": "Eşlenmede hata olursa",
+   "metin": [
+    "DNA eşlenmesi çok hassas bir süreçtir; yine de zaman zaman bir nükleotidin yerine yanlış bir nükleotid gelebilir. Hücrede bu hataları fark edip düzelten onarım sistemleri vardır. Hataların büyük çoğunluğu bu sistemler sayesinde onarılır.",
+    "Onarılamayan hatalar DNA’da kalıcı değişikliklere yol açabilir. Bu değişiklikler bazen hiçbir etki göstermez, bazen de canlının bir özelliğini değiştirebilir. DNA’daki değişiklikleri gelecek konularda daha ayrıntılı inceleyeceksin.",
+    "Eşlenmenin bu kadar hassas olması, genetik bilginin hücreden hücreye ve nesilden nesile büyük ölçüde korunarak aktarılmasını sağlar. Senin göz rengin, kan grubun ve pek çok özelliğin bu sayede anne ve babandan sana geçmiştir."
+   ],
+   "kutu": {
+    "tur": "bilgi",
+    "metin": "Hücrelerde DNA’daki eşlenme hatalarını fark edip düzelten onarım sistemleri bulunur; hataların çoğu onarılır."
+   }
+  },
+  {
+   "baslik": "Kalıtıma giriş: karakter ve kalıtsal özellik",
+   "metin": [
+    "Anne ve babadan yavrulara aktarılan özelliklere kalıtsal özellik, bu özelliklerin nesilden nesile aktarılmasına kalıtım denir. Göz rengi, saç şekli, kan grubu ve kulak memesinin yapışık ya da serbest olması kalıtsal özelliklerdir. Kalıtımı inceleyen bilim dalına genetik denir.",
+    "Bir canlının gözlenebilen ya da ölçülebilen her bir özelliğine karakter denir. Bezelyede tohum rengi ve çiçek rengi, insanda göz rengi ve kan grubu birer karakterdir. Bir karakterin farklı görünüşleri olabilir: Bezelyede tohum rengi sarı ya da yeşil olabilir.",
+    "Her özellik kalıtsal değildir. Yüzme bilmek, bir dil konuşmak, güneşte bronzlaşmak ya da kaza sonucu oluşan bir yara izi, sonradan kazanılmış özelliklerdir ve yavrulara aktarılmaz. Gelecek hafta kalıtımı anlamak için gen, alel, baskın, çekinik, genotip ve fenotip kavramlarını öğreneceksin."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Kalıtsal özellik",
+     "Sonradan kazanılan özellik"
+    ],
+    "satirlar": [
+     [
+      "Göz rengi",
+      "Gözlük kullanmak"
+     ],
+     [
+      "Kan grubu",
+      "Bisiklet sürmeyi bilmek"
+     ],
+     [
+      "Kulak memesinin yapısı",
+      "Güneşte bronzlaşmak"
+     ],
+     [
+      "Saç şekli",
+      "Saçını boyatmak"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "tanim",
+    "baslik": "Kalıtım",
+    "metin": "Canlıların özelliklerinin genler aracılığıyla anne ve babadan yavrulara aktarılmasıdır."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Bir DNA zincirindeki baz sırası AGCTTA’dır. Karşı zincirin baz sırasını yaz.",
+   "cevap": "Baz eşleşmesi kuralına göre A’nın karşısına T, G’nin karşısına C, C’nin karşısına G, T’nin karşısına A gelir. Karşı zincir: TCGAAT."
+  },
+  {
+   "soru": "Bir nükleotidi diğer nükleotidlerden ayıran parça hangisidir? Neden?",
+   "cevap": "Organik bazdır. Bütün DNA nükleotidlerinde fosfat ve şeker (deoksiriboz) aynıdır; nükleotidler yalnızca organik bazlarına göre farklılaşır ve adlarını da bu bazdan alır."
+  },
+  {
+   "soru": "DNA’nın merdivene benzetilmesinde merdivenin kenarları ve basamakları neyi temsil eder?",
+   "cevap": "Kenarlar şeker ve fosfatların sırayla dizilmesinden oluşan omurgayı, basamaklar ise ortada karşılıklı eşleşen organik bazları (A–T, G–C) temsil eder."
+  },
+  {
+   "soru": "Hücre bölünmeden önce DNA’nın eşlenmesi neden gereklidir?",
+   "cevap": "Bölünme sonunda oluşan iki yeni hücrenin de ana hücreyle aynı genetik bilgiye sahip olması gerekir. DNA eşlenmezse bir hücre genetik bilginin tamamını alırken diğeri eksik kalır. Eşlenme sayesinde her yavru hücreye birer DNA molekülü geçer."
+  },
+  {
+   "soru": "Eşlenme sonunda oluşan iki DNA molekülünün zincirleri hakkında ne söylenebilir?",
+   "cevap": "Her DNA molekülünün bir zinciri başlangıçtaki DNA’dan gelen eski zincir, diğeri ise yeni nükleotidlerden oluşan yeni zincirdir. İki molekül de baz sırası bakımından başlangıçtaki DNA’nın aynısıdır."
+  },
+  {
+   "soru": "Ayşe’nin annesi piyano çalmayı biliyor, Ayşe ise annesi gibi kahverengi gözlüdür. Bu özelliklerden hangisi kalıtsaldır? Açıkla.",
+   "cevap": "Kahverengi göz kalıtsal bir özelliktir; genlerle anneden ya da babadan aktarılır. Piyano çalmayı bilmek ise öğrenmeyle sonradan kazanılmış bir özelliktir; genlerle aktarılmaz. Ayşe piyano çalmak isterse çalışarak öğrenmelidir."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Aşağıdakilerden hangisi DNA’daki doğru baz eşleşmelerini gösterir?",
+   "secenekler": [
+    "A–G ve T–C",
+    "A–T ve G–C",
+    "A–C ve G–T",
+    "A–A ve G–G"
+   ],
+   "dogru": 1,
+   "aciklama": "DNA’da adenin timinle, guanin sitozinle eşleşir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir nükleotidin yapısında aşağıdakilerden hangisi bulunmaz?",
+   "secenekler": [
+    "Fosfat",
+    "Deoksiriboz şekeri",
+    "Organik baz",
+    "Kromozom"
+   ],
+   "dogru": 3,
+   "aciklama": "Kromozom, DNA’nın proteinlerle birlikte oluşturduğu çok daha büyük bir yapıdır; nükleotidin parçası değildir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "DNA eşlenmesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
+   "secenekler": [
+    "Hücre bölünmesinden önce gerçekleşir.",
+    "DNA’nın iki zinciri birbirinden ayrılır.",
+    "Yeni DNA’ların iki zinciri de tamamen yenidir.",
+    "Baz eşleşmesi kuralına göre yeni nükleotidler yerleşir."
+   ],
+   "dogru": 2,
+   "aciklama": "Yeni oluşan her DNA’da zincirlerden biri eski, diğeri yenidir."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Her ifadenin doğru mu yanlış mı olduğuna karar ver.",
+   "ifadeler": [
+    {
+     "metin": "DNA, çift zincirli sarmal bir yapıdır.",
+     "dogru": true,
+     "aciklama": "İki nükleotid zinciri birbirinin etrafında dönerek sarmal oluşturur."
+    },
+    {
+     "metin": "DNA’da dört çeşit nükleotid bulunur.",
+     "dogru": true,
+     "aciklama": "Adenin, timin, guanin ve sitozin nükleotidleri."
+    },
+    {
+     "metin": "DNA eşlenmesinde oluşan hataların hiçbiri onarılamaz.",
+     "dogru": false,
+     "aciklama": "Hücrelerde onarım sistemleri vardır; hataların büyük çoğunluğu onarılır."
+    },
+    {
+     "metin": "Bisiklet sürmeyi bilmek kalıtsal bir özelliktir.",
+     "dogru": false,
+     "aciklama": "Bisiklet sürmek öğrenilerek kazanılır; genlerle aktarılmaz."
+    },
+    {
+     "metin": "Bir canlının gözlenebilen her bir özelliğine karakter denir.",
+     "dogru": true,
+     "aciklama": "Örneğin bezelyede tohum rengi, insanda kan grubu birer karakterdir."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Her kavramı tanımıyla eşleştir.",
+   "ciftler": [
+    [
+     "Nükleotid",
+     "DNA’nın yapı birimi"
+    ],
+    [
+     "Baz eşleşmesi",
+     "A ile T, G ile C’nin karşılıklı gelmesi"
+    ],
+    [
+     "Eşlenme",
+     "DNA’nın kendinin aynısını oluşturması"
+    ],
+    [
+     "Kalıtım",
+     "Özelliklerin nesilden nesile aktarılması"
+    ],
+    [
+     "Karakter",
+     "Canlının gözlenebilen her bir özelliği"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "DNA’daki şeker çeşidi ___ adını alır.",
+     "cevap": "deoksiriboz"
+    },
+    {
+     "metin": "DNA’da guanin her zaman ___ ile eşleşir.",
+     "cevap": "sitozin"
+    },
+    {
+     "metin": "DNA’nın eşlenmesi hücre ___ önce gerçekleşir.",
+     "cevap": "bölünmesinden"
+    },
+    {
+     "metin": "Kalıtımı inceleyen bilim dalına ___ denir.",
+     "cevap": "genetik"
+    }
+   ],
+   "fazla": [
+    "timin"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Çift zincirli bir DNA parçasının zincirlerinden biri GATC, diğeri CTAG’dir. Bu DNA eşlendiğinde oluşan iki DNA parçasını zincirleriyle birlikte yaz ve hangi zincirlerin eski olduğunu belirt.",
+   "ipuclari": [
+    "Önce iki zincir birbirinden ayrılır: GATC ve CTAG ayrı ayrı kalır.",
+    "Her zincirin karşısına baz eşleşmesi kuralına göre yeni nükleotidler gelir: GATC’nin karşısına ne gelir, CTAG’nin karşısına ne gelir?"
+   ],
+   "cevap": "Zincirler ayrılınca GATC’nin karşısına yeni CTAG, CTAG’nin karşısına yeni GATC dizilir. Birinci DNA: eski GATC + yeni CTAG. İkinci DNA: eski CTAG + yeni GATC. İki DNA da başlangıçtaki DNA’nın aynısıdır ve her birinde bir eski, bir yeni zincir vardır."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Renkli boncuklar ve pipetlerle bir DNA modeli yapacaksın. Modelinde hangi malzemenin neyi göstereceğini ve modelin gerçek DNA’dan hangi yönlerden farklı olacağını yaz.",
+   "ipuclari": [
+    "Şeker, fosfat ve dört organik baz için ayrı renkler seç. Toplam kaç renk gerekir?",
+    "Gerçek DNA’nın boyutunu ve nükleotid sayısını düşün; modelin bunları gösterebilir mi?"
+   ],
+   "cevap": "Örnek cevap: Şeker için beyaz, fosfat için siyah boncuk; adenin için mavi, timin için turuncu, guanin için yeşil, sitozin için mor pipet kullanılır (toplam 6 renk). Mavi her zaman turuncuyla, yeşil her zaman morla karşılıklı yerleştirilir. Model, gerçek DNA’dan çok daha büyüktür ve gerçekteki milyonlarca nükleotidin yerine yalnızca birkaç nükleotid içerir; ayrıca nükleotidlerin gerçek şekillerini göstermez."
+  }
+ ],
+ "ozet": [
+  "Nükleotid fosfat, deoksiriboz şekeri ve organik bazdan oluşur; dört çeşit organik baz (A, T, G, C) dört çeşit nükleotid demektir.",
+  "DNA, iki nükleotid zincirinden oluşan çift zincirli bir sarmaldır; merdivenin kenarlarını şeker ve fosfatlar, basamaklarını bazlar oluşturur.",
+  "DNA’da adenin timinle, guanin sitozinle eşleşir; bir zincirin baz sırası bilinirse karşı zincir yazılabilir.",
+  "Hücre bölünmeden önce DNA iki zincirine ayrılır ve her zincirin karşısına uygun nükleotidler gelerek birbirinin aynısı iki DNA oluşur.",
+  "Eşlenmede oluşan hataların çoğu hücredeki onarım sistemleriyle düzeltilir.",
+  "Kalıtım, özelliklerin genlerle nesilden nesile aktarılmasıdır; sonradan kazanılan özellikler kalıtsal değildir."
+ ]
+}
