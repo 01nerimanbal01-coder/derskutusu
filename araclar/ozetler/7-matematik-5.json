@@ -1,0 +1,345 @@
+{
+ "sinif": 7,
+ "ders": "matematik",
+ "hafta": 5,
+ "tarih": "12-16 Ekim 2026",
+ "yayin_tarihi": "2026-10-15",
+ "unite": "Sayılar ve Nicelikler (1)",
+ "konu": "Rasyonel Sayılarda Karşılaştırma ve Sıralama: Semboller, Payda Eşitleme ve Ondalık Gösterim",
+ "ciktilar": [
+  "MAT.7.1.3. Rasyonel sayıların karşılaştırma ve sıralama ilişkilerini yorumlayabilme"
+ ],
+ "giris": "Geçen hafta devirli ondalık gösterimleri kesre çevirdin; tam sayılardan başlayarak rasyonel sayıları sayı doğrusuna yerleştirdin ve işaretlerine göre karşılaştırdın. Bu hafta karşılaştırmayı sembollerle yazacak, kesirleri payda eşitleyerek ya da ondalık gösterime çevirerek karşılaştıracak, farklı biçimlerde yazılmış sayıları birlikte sıralayacaksın. Son olarak iki rasyonel sayı arasında başka sayılar bulacak ve bu becerileri tasarruf ile alışveriş durumlarında kullanacaksın.",
+ "bolumler": [
+  {
+   "baslik": "Karşılaştırmayı sembollerle yazmak",
+   "metin": [
+    "İki rasyonel sayı arasındaki ilişkiyi üç sembolle gösterirsin: “<” küçüktür, “>” büyüktür, “=” eşittir anlamına gelir. Sembolün açık ağzı her zaman büyük sayıya bakar. Sayı doğrusunda solda kalan sayı küçük olduğundan −{kesir:3|2} < {kesir:1|4} yazılır. Aynı ilişkiyi ters yönden okursan {kesir:1|4} > −{kesir:3|2} olur; iki yazılış aynı bilgiyi verir.",
+    "Üç ya da daha fazla sayıyı tek bir zincirle sıralayabilirsin: −2 < −{kesir:1|2} < 0 < 0,75. Zincirde bütün semboller aynı yöne bakmalıdır. Küçükten büyüğe sıralamada “<”, büyükten küçüğe sıralamada “>” kullanılır.",
+    "Bir sayının iki sayı arasında olduğunu da sembolle söyleyebilirsin. “x sayısı −1’den büyük ve 2’den küçüktür” cümlesi −1 < x < 2 biçiminde yazılır. Sayı doğrusunda x, −1’in sağında ve 2’nin solunda kalan bölgededir. Bu bölgedeki tam sayılar 0 ve 1’dir; ama {kesir:1|2}, −0,8 ve 1,99 gibi sayısız rasyonel sayı da bu aralıktadır."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Yazılış",
+     "Okunuş",
+     "Sayı doğrusunda anlamı"
+    ],
+    "satirlar": [
+     [
+      "a < b",
+      "a, b’den küçüktür.",
+      "a, b’nin solundadır."
+     ],
+     [
+      "a > b",
+      "a, b’den büyüktür.",
+      "a, b’nin sağındadır."
+     ],
+     [
+      "a = b",
+      "a, b’ye eşittir.",
+      "a ile b aynı noktadadır."
+     ],
+     [
+      "a < x < b",
+      "x, a’dan büyük ve b’den küçüktür.",
+      "x, a ile b arasındadır."
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Sembolün ağzı",
+    "metin": "“<” ve “>” sembollerinin açık tarafı büyük sayıya, sivri ucu küçük sayıya bakar. Sıralama zincirinde bütün semboller aynı yöne bakmalıdır."
+   }
+  },
+  {
+   "baslik": "Paydaları ya da payları eşit kesirler",
+   "metin": [
+    "Paydaları eşit iki pozitif kesirden payı büyük olan büyüktür: {kesir:5|8} > {kesir:3|8}. Çünkü iki kesir de aynı büyüklükteki parçalardan oluşur, beş parça üç parçadan fazladır. Negatif kesirlerde durum tersine döner. −{kesir:5|8}, sıfırdan −{kesir:3|8}’den daha uzaktır ve sayı doğrusunda daha soldadır; bu yüzden −{kesir:5|8} < −{kesir:3|8} olur.",
+    "Payları eşit iki pozitif kesirde paydası küçük olan büyüktür: {kesir:3|4} > {kesir:3|5}. Bütün dört parçaya bölününce her parça beşe bölünmeye göre daha büyük olur; üç büyük parça, üç küçük parçadan fazladır. Negatif kesirlerde yine sıra tersine döner: −{kesir:3|4} < −{kesir:3|5}.",
+    "Bu kuralları ezberlemek yerine nedenini düşün: Negatif bir sayıda mutlak değer büyüdükçe sayı sıfırdan uzaklaşır ve küçülür. Önce iki pozitif kesrin hangisinin büyük olduğuna karar verir, sonra eksi işareti eklendiğinde sıranın ters döndüğünü hatırlarsın."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Durum",
+     "Pozitif kesirlerde",
+     "Negatif kesirlerde"
+    ],
+    "satirlar": [
+     [
+      "Paydalar eşit",
+      "Payı büyük olan büyüktür.",
+      "Payı büyük olan küçüktür."
+     ],
+     [
+      "Örnek",
+      "{kesir:5|8} > {kesir:3|8}",
+      "−{kesir:5|8} < −{kesir:3|8}"
+     ],
+     [
+      "Paylar eşit",
+      "Paydası küçük olan büyüktür.",
+      "Paydası küçük olan küçüktür."
+     ],
+     [
+      "Örnek",
+      "{kesir:3|4} > {kesir:3|5}",
+      "−{kesir:3|4} < −{kesir:3|5}"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Eksi işareti sırayı çevirir",
+    "metin": "İki pozitif sayıdan büyük olanın negatifi, öbürünün negatifinden küçüktür: {kesir:5|8} > {kesir:3|8} ise −{kesir:5|8} < −{kesir:3|8} olur."
+   }
+  },
+  {
+   "baslik": "Payda eşitleyerek ve kıyaslama noktasıyla karşılaştırmak",
+   "metin": [
+    "Payları da paydaları da farklı kesirleri karşılaştırmak için paydaları eşitlersin. −{kesir:2|3} ile −{kesir:3|5} sayılarında ortak payda 15 olur: −{kesir:2|3} = −{kesir:10|15} ve −{kesir:3|5} = −{kesir:9|15}. Paydaları eşit negatif kesirlerde payı büyük olan küçük olduğundan −{kesir:10|15} < −{kesir:9|15}, yani −{kesir:2|3} < −{kesir:3|5} bulunur.",
+    "Bazen hesap yapmadan da karar verebilirsin. 0, {kesir:1|2} ve 1 gibi bildiğin sayılar kıyaslama noktası olarak işe yarar. {kesir:4|9} kesrinde pay, paydanın yarısından azdır; bu yüzden {kesir:4|9} < {kesir:1|2} olur. {kesir:7|12} kesrinde pay, paydanın yarısından fazladır; bu yüzden {kesir:7|12} > {kesir:1|2} olur. Demek ki {kesir:4|9} < {kesir:7|12}’dir.",
+    "Kıyaslama noktası negatif sayılarda da kullanılır. −{kesir:9|8} sayısı −1’in solunda, −{kesir:7|8} sayısı −1’in sağında olduğundan −{kesir:9|8} < −1 < −{kesir:7|8} sıralaması hemen yazılır. İki sayı aynı kıyaslama noktasının aynı tarafındaysa payda eşitlemeye geçersin."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Önce kıyasla, sonra hesapla",
+    "metin": "Sayılar 0, {kesir:1|2} ya da 1’in farklı taraflarındaysa hesap yapmana gerek yoktur. Aynı taraftaysalar paydaları eşitle ya da ondalık gösterime çevir."
+   }
+  },
+  {
+   "baslik": "Ondalık gösterimleri karşılaştırmak",
+   "metin": [
+    "Ondalık gösterimleri karşılaştırırken önce işarete, sonra tam kısma, sonra virgülden sonraki basamaklara soldan sağa doğru bakarsın. 2,47 ile 2,5 sayılarında tam kısımlar eşittir; onda birler basamağında 4 < 5 olduğundan 2,47 < 2,5 olur. Basamak sayısı fazla olan sayı daha büyük olmak zorunda değildir.",
+    "Basamak sayıları farklıysa kısa olan sayının sonuna sıfır ekleyerek eşitleyebilirsin; değer değişmez. {kesir:7|8} = 0,875 sayısını 0,87 ile karşılaştırırken 0,870 yazarsın; 0,875 > 0,870 olduğundan {kesir:7|8} > 0,87 bulunur.",
+    "Devirli gösterimlerde devreden rakamları birkaç kez açık yazarsın. 0,3̅ = 0,333… olduğundan 0,3̅ > 0,33 olur; çünkü 0,333… sayısının binde birler basamağında 3, 0,330 sayısında 0 vardır. Negatif sayılarda sıra yine tersine döner: −0,3̅ < −0,33. Kesirleri bölme yoluyla ondalık gösterime çevirip bu yolla da karşılaştırabilirsin."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Karşılaştırılan sayılar",
+     "Karar veren basamak",
+     "Sonuç"
+    ],
+    "satirlar": [
+     [
+      "2,47 ve 2,5",
+      "onda birler: 4 < 5",
+      "2,47 < 2,5"
+     ],
+     [
+      "0,875 ve 0,870",
+      "binde birler: 5 > 0",
+      "0,875 > 0,87"
+     ],
+     [
+      "0,333… ve 0,330",
+      "binde birler: 3 > 0",
+      "0,3̅ > 0,33"
+     ],
+     [
+      "−0,333… ve −0,330",
+      "aynı basamak, eksi işareti sırayı çevirir",
+      "−0,3̅ < −0,33"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Uzun sayı büyük değildir",
+    "metin": "2,47 sayısında 2,5’ten daha çok basamak vardır ama 2,47 daha küçüktür. Karşılaştırmayı basamak sayısına göre değil, basamak değerlerine göre yap."
+   }
+  },
+  {
+   "baslik": "Farklı gösterimleri birlikte sıralamak",
+   "metin": [
+    "Bir listede kesir, ondalık gösterim ve tam sayı bir arada olabilir. Böyle bir listeyi sıralamak için önce bütün sayıları aynı gösterime çevirirsin; çoğu zaman en kolayı ondalık gösterimdir. Ardından sayıları sayı doğrusunda yaklaşık yerlerine koyar ya da basamak basamak karşılaştırırsın.",
+    "−1,25; −{kesir:5|4}; {kesir:3|8}; −{kesir:4|3} ve 0,4 sayılarını sıralayalım. Ondalık gösterimleri −1,25; −1,25; 0,375; −1,333… ve 0,4’tür. −1,25 ile −{kesir:5|4} aynı sayıdır; bu iki sayı arasında “=” kullanılır. Negatifler arasında −1,333… sıfıra en uzak olduğundan en küçüktür.",
+    "Küçükten büyüğe sıralama şöyledir: −{kesir:4|3} < −1,25 = −{kesir:5|4} < {kesir:3|8} < 0,4. Büyükten küçüğe sıralamak istersen zinciri sağdan sola okur, sembolleri “>” yaparsın. Sıralamayı bitirince en küçük ve en büyük sayının doğru uçta olup olmadığını işaretlerine bakarak kontrol edersin."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Sıralama adımları",
+    "metin": "1. Sayıları aynı gösterime çevir. 2. Önce negatifleri ve pozitifleri ayır. 3. Her grubu kendi içinde karşılaştır. 4. Eşit olanları “=” ile yaz. 5. Zinciri tek yönlü sembollerle tamamla."
+   }
+  },
+  {
+   "baslik": "İki sayı arasında ve gerçek yaşamda karşılaştırma",
+   "metin": [
+    "İki farklı rasyonel sayı arasında her zaman başka bir rasyonel sayı bulunur. {kesir:1|3} ile {kesir:1|2} arasında bir sayı bulmak için paydaları eşitlersin: {kesir:2|6} ve {kesir:3|6}. Aralarında tam pay yoksa kesirleri 2 ile genişletirsin: {kesir:4|12} ve {kesir:6|12}. Aradaki {kesir:5|12} aranan sayıdır. İki sayının toplamının yarısını almak da aynı sonucu verir: ({kesir:1|3} + {kesir:1|2}) ÷ 2 = {kesir:5|12}.",
+    "Karşılaştırma günlük hayatta sık kullanılır. Elif harçlığının {kesir:3|8}’ini, Kerem ise {kesir:2|5}’ini biriktiriyor. Ortak payda 40 alınınca {kesir:15|40} < {kesir:16|40} bulunur; harçlığının daha büyük kısmını biriktiren Kerem’dir. Harçlıklar farklıysa biriken para miktarı ayrıca hesaplanmalıdır; kesir yalnızca oranı karşılaştırır.",
+    "Bir ailenin aylık bütçe farkları Ocak’ta −350,5 TL, Şubat’ta 120,25 TL, Mart’ta −350,25 TL ve Nisan’da 0 TL olsun. Eksi işareti harcamanın gelirden fazla olduğunu gösterir. Sıralama −350,5 < −350,25 < 0 < 120,25 olur. Bütçe açığının en büyük olduğu ay Ocak, tasarruf yapılan tek ay Şubat’tır."
+   ],
+   "kutular": [
+    {
+     "tur": "bilgi",
+     "baslik": "Rasyonel sayıların yoğunluğu",
+     "metin": "İki rasyonel sayı ne kadar yakın olursa olsun aralarına yeni bir rasyonel sayı yazılabilir. Bu yüzden “{kesir:1|3}’ten sonra gelen ilk rasyonel sayı” diye bir sayı yoktur."
+    },
+    {
+     "tur": "dikkat",
+     "baslik": "Oran ve miktar",
+     "metin": "Büyük kesir her zaman büyük miktar demek değildir. 200 TL’nin {kesir:1|4}’ü 50 TL, 100 TL’nin {kesir:2|5}’i 40 TL’dir."
+    }
+   ]
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "−{kesir:5|6} ile −{kesir:7|9} sayılarını payda eşitleyerek karşılaştır ve sonucu sembolle yaz.",
+   "cevap": "6 ile 9’un ortak paydası 18’dir. −{kesir:5|6} = −{kesir:15|18} ve −{kesir:7|9} = −{kesir:14|18} olur. Paydaları eşit negatif kesirlerde payı büyük olan küçüktür. Bu yüzden −{kesir:15|18} < −{kesir:14|18}, yani −{kesir:5|6} < −{kesir:7|9} bulunur. Kontrol: −{kesir:5|6} ≈ −0,83 ve −{kesir:7|9} ≈ −0,78’dir; −0,83 daha soldadır."
+  },
+  {
+   "soru": "{kesir:5|11} ile {kesir:6|10} sayılarını hesap yapmadan karşılaştır.",
+   "cevap": "{kesir:5|11} kesrinde pay 5, paydanın yarısı olan 5,5’ten küçüktür; bu yüzden {kesir:5|11} < {kesir:1|2} olur. {kesir:6|10} kesrinde pay 6, paydanın yarısı olan 5’ten büyüktür; bu yüzden {kesir:6|10} > {kesir:1|2} olur. Kıyaslama noktası {kesir:1|2} iki sayının arasında kaldığından {kesir:5|11} < {kesir:6|10} bulunur."
+  },
+  {
+   "soru": "Şu sayıları küçükten büyüğe sırala: −0,6; −{kesir:2|3}; {kesir:1|5}; −{kesir:5|8}; 0,25.",
+   "cevap": "Ondalık gösterimler: −0,6; −{kesir:2|3} = −0,666…; {kesir:1|5} = 0,2; −{kesir:5|8} = −0,625; 0,25. Negatifler arasında sıfıra en uzak olan −0,666…, en yakın olan −0,6’dır. Pozitiflerde 0,2 < 0,25 olur. Sıralama: −{kesir:2|3} < −{kesir:5|8} < −0,6 < {kesir:1|5} < 0,25."
+  },
+  {
+   "soru": "Dört arkadaşın kantin kartı bakiyeleri şöyledir: Ada −12,5 TL, Bora 4,75 TL, Cem −12,05 TL, Defne −3 TL. Bakiyeleri büyükten küçüğe sırala. Borcu en fazla olan kimdir?",
+   "cevap": "Pozitif tek bakiye Bora’nınkidir ve en büyüktür. Negatiflerde sıfıra en yakın olan −3, en uzak olan −12,5’tir. −12,5 ile −12,05 karşılaştırılırken onda birler basamağında 5 > 0 olduğundan 12,5 > 12,05 olur; eksi işareti sırayı çevirir ve −12,5 < −12,05 bulunur. Büyükten küçüğe: 4,75 > −3 > −12,05 > −12,5. Borcu en fazla olan Ada’dır."
+  },
+  {
+   "soru": "“x sayısı −{kesir:3|2}’den büyük ve 2’den küçüktür.” cümlesini sembollerle yaz. x tam sayıysa kaç farklı değer alabilir?",
+   "cevap": "Sembolle −{kesir:3|2} < x < 2 yazılır. −{kesir:3|2} = −1,5 olduğundan x, sayı doğrusunda −1,5’in sağında ve 2’nin solundadır. Bu aralıktaki tam sayılar −1, 0 ve 1’dir. −2 aralığın dışında, 2 ise sınırda olduğu için alınmaz. x tam sayı olarak 3 farklı değer alır."
+  },
+  {
+   "soru": "−{kesir:1|2} ile −{kesir:1|4} arasında üç rasyonel sayı yaz.",
+   "cevap": "Paydaları eşitle: −{kesir:2|4} ve −{kesir:1|4}. Aralarında üç sayı yazabilmek için kesirleri 4 ile genişlet: −{kesir:8|16} ve −{kesir:4|16}. Aradaki −{kesir:7|16}, −{kesir:6|16} ve −{kesir:5|16} sayıları aranan sayılardır. Sıralama: −{kesir:8|16} < −{kesir:7|16} < −{kesir:6|16} < −{kesir:5|16} < −{kesir:4|16}. Bunlardan −{kesir:6|16} sadeleşince −{kesir:3|8} olur."
+  }
+ ],
+ "ozet": [
+  "Karşılaştırma “<”, “>” ve “=” sembolleriyle yazılır; sembolün açık tarafı büyük sayıya bakar. Bir sayının iki sayı arasında olduğu a < x < b biçiminde gösterilir.",
+  "Paydaları eşit pozitif kesirlerde payı büyük olan, payları eşit pozitif kesirlerde paydası küçük olan büyüktür; negatif kesirlerde bu sıralar tersine döner.",
+  "Payları ve paydaları farklı kesirler payda eşitlenerek ya da 0, {kesir:1|2}, 1 gibi kıyaslama noktalarıyla karşılaştırılır.",
+  "Ondalık gösterimler işaret, tam kısım ve basamaklar soldan sağa incelenerek karşılaştırılır; devirli gösterimde devreden rakamlar açık yazılır. Farklı gösterimdeki sayılar sıralanırken önce aynı gösterime çevrilir.",
+  "İki farklı rasyonel sayı arasında her zaman başka rasyonel sayılar bulunur; kesirler genişletilerek ya da iki sayının ortalaması alınarak bulunabilir. Bütçe, borç ve tasarruf gibi durumlar rasyonel sayılarla karşılaştırılır."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Aşağıdaki sayılardan hangisi en büyüktür?",
+   "secenekler": [
+    "−{kesir:1|2}",
+    "−{kesir:3|4}",
+    "−{kesir:1|3}",
+    "−{kesir:2|3}"
+   ],
+   "dogru": 2,
+   "aciklama": "Negatif sayılarda sıfıra en yakın olan en büyüktür. Ondalık gösterimler −0,5; −0,75; −0,333… ve −0,666…’dır; sıfıra en yakın olan −{kesir:1|3}’tür."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Aşağıdaki sayılardan hangisi {kesir:2|5} ile {kesir:1|2} arasındadır?",
+   "secenekler": [
+    "{kesir:3|8}",
+    "{kesir:11|20}",
+    "{kesir:9|20}",
+    "{kesir:1|3}"
+   ],
+   "dogru": 2,
+   "aciklama": "Paydalar 20 yapılınca {kesir:2|5} = {kesir:8|20} ve {kesir:1|2} = {kesir:10|20} olur; arada {kesir:9|20} vardır. {kesir:3|8} = 0,375 ve {kesir:1|3} ≈ 0,33 sayıları 0,4’ten küçük, {kesir:11|20} = 0,55 ise 0,5’ten büyüktür."
+  },
+  {
+   "tur": "coktan",
+   "soru": "a = −0,6̅, b = −{kesir:5|8} ve c = −0,65 sayıları için hangi sıralama doğrudur?",
+   "secenekler": [
+    "a < b < c",
+    "b < c < a",
+    "a < c < b",
+    "c < a < b"
+   ],
+   "dogru": 2,
+   "aciklama": "a = −0,666…, b = −0,625 ve c = −0,650’dir. Sıfıra en uzak olan a en küçük, sıfıra en yakın olan b en büyüktür: a < c < b."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Her ifadenin doğru mu yanlış mı olduğuna karar ver; yanlış çıkanların açıklamasını oku.",
+   "ifadeler": [
+    {
+     "metin": "Paydaları eşit iki negatif kesirden payı büyük olan daha büyüktür.",
+     "dogru": false,
+     "aciklama": "Payı büyük olan negatif kesir sıfırdan daha uzaktır, bu yüzden daha küçüktür: −{kesir:5|8} < −{kesir:3|8}."
+    },
+    {
+     "metin": "−{kesir:3|5} < −{kesir:3|7} ifadesi doğrudur.",
+     "dogru": true,
+     "aciklama": "Pozitiflerde {kesir:3|5} > {kesir:3|7} olur; eksi işareti sırayı çevirdiği için −{kesir:3|5} < −{kesir:3|7} doğrudur."
+    },
+    {
+     "metin": "0,3̅ ile 0,33 aynı sayıdır.",
+     "dogru": false,
+     "aciklama": "0,3̅ = 0,333… sayısının binde birler basamağında 3, 0,33 sayısında 0 vardır. Bu yüzden 0,3̅ > 0,33 olur."
+    },
+    {
+     "metin": "İki farklı rasyonel sayı arasında her zaman başka bir rasyonel sayı bulunur.",
+     "dogru": true,
+     "aciklama": "Örneğin iki sayının toplamının yarısı her zaman bu iki sayının arasındadır."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Her kesri ondalık gösterimiyle eşleştir.",
+   "ciftler": [
+    [
+     "{kesir:5|8}",
+     "0,625"
+    ],
+    [
+     "−{kesir:7|4}",
+     "−1,75"
+    ],
+    [
+     "{kesir:2|3}",
+     "0,6̅"
+    ],
+    [
+     "−{kesir:3|20}",
+     "−0,15"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Payları eşit iki pozitif kesirden paydası ___ olan daha büyüktür.",
+     "cevap": "küçük"
+    },
+    {
+     "metin": "Farklı paydalı kesirleri karşılaştırmak için paydaları ___.",
+     "cevap": "eşitleriz"
+    },
+    {
+     "metin": "Sayı doğrusunda solda kalan sayı, sağdaki sayıdan ___.",
+     "cevap": "küçüktür"
+    }
+   ],
+   "fazla": [
+    "çarparız"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Zeynep, “9 sayısı 7’den büyük olduğu için −{kesir:4|9} sayısı −{kesir:4|7}’den küçüktür.” diyor. Zeynep’in görüşü doğru mudur? Gerekçesiyle açıkla.",
+   "ipuclari": [
+    "Önce pozitif {kesir:4|9} ile {kesir:4|7} kesirlerini karşılaştır. Paylar eşit, hangisinin parçaları daha büyük?",
+    "Eksi işareti eklenince sıranın ne olduğunu düşün."
+   ],
+   "cevap": "Doğru değildir. Payları eşit pozitif kesirlerde paydası büyük olan küçüktür: {kesir:4|9} < {kesir:4|7}. Eksi işareti sırayı çevirdiği için −{kesir:4|9} > −{kesir:4|7} olur. Ondalık gösterimle de −{kesir:4|9} ≈ −0,44 ve −{kesir:4|7} ≈ −0,57’dir; −0,44 sıfıra daha yakın olduğundan büyüktür."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir sınıf gezi için para biriktiriyor. Birinci hafta hedefin {kesir:3|10}’u, ikinci hafta {kesir:1|4}’ü, üçüncü hafta 0,28’i toplandı. En çok ve en az para hangi haftalarda toplandı? Haftaları toplanan paraya göre sırala.",
+   "ipuclari": [
+    "Bütün sayıları ondalık gösterime çevir.",
+    "Ondalık gösterimleri basamak basamak karşılaştır."
+   ],
+   "cevap": "{kesir:3|10} = 0,30; {kesir:1|4} = 0,25 ve 0,28’dir. Sıralama 0,25 < 0,28 < 0,30 olur. En az para ikinci hafta, en çok para birinci hafta toplanmıştır. Küçükten büyüğe: ikinci hafta < üçüncü hafta < birinci hafta."
+  }
+ ]
+}
