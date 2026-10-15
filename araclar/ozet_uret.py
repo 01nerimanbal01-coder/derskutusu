@@ -23,6 +23,9 @@ _sayfa = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(_sayfa)          # yalnız işlevler; iç sayfaları main() yeniler
 
 KAR = re.compile(r'\{(aci|olcu|dogru|isin|parca|uzunluk|us|kesir|kok|koyu|ar):([^{}]+)\}')
+# Köke boşluksuz yapışık katsayı: 10{kok:42}, −3{kok:2}, a{kok:b}, (a ÷ c){kok:b ÷ d}, {kesir:1|2}{kok:12}.
+# Katsayı kökle birlikte bölünmez bir kutuya alınır; tarayıcı satırı ikisinin arasından kırmaz.
+KOK = re.compile(r'((?:[^\W_]|[−-])*\([^()<>{}|]*\)|(?:[^\W_]|[−-])+|\)|\{(?:kesir|us):[^{}]+\})?\{kok:([^{}]+)\}')
 SEMBOL = {  # MEB 5. sınıf matematik programındaki gösterimler (⊥, //, AB doğrusu, [AB], |AB|, [AB, m(ABC), şapkalı ABC)
     'aci': '<span class="s-aci" role="img" aria-label="{1} açısı">{0}</span>',
     'olcu': 'm(<span class="s-aci" role="img" aria-label="{1} açısı">{0}</span>)',
@@ -79,6 +82,12 @@ def _kok(ic):
             f'<span class="s-kok-ic" aria-hidden="true">{govde}</span></span>')
 
 
+def _kok_birlik(m):
+    # Kutunun aria-label'ı yok: ekran okuyucu metni değişmez (katsayı, ardından "karekök: …").
+    kok = _kok(m.group(2))
+    return f'<span class="s-birlik" style="white-space:nowrap">{m.group(1)}{kok}</span>' if m.group(1) else kok
+
+
 def e(metin):
     # Önce kaçış, sonra {aci:ABC} gibi sembol işaretleri MEB gösterimine çevrilir.
     if any(isaret in str(metin) for isaret in '√∛∜'):
@@ -87,6 +96,7 @@ def e(metin):
     ozel = {'us': _us, 'kesir': _kesir, 'kok': _kok}
     # İçteki gösterim önce çözülür: kesir içindeki kök ve kök içindeki üs korunur.
     while KAR.search(metin):
+        metin = KOK.sub(_kok_birlik, metin)   # kök önce: önündeki {kesir:..} katsayısı henüz çözülmemişken yakalanır
         metin = KAR.sub(lambda m: ozel[m.group(1)](m.group(2)) if m.group(1) in ozel else SEMBOL[m.group(1)].format(m.group(2), _etiket(m.group(2))), metin)
     if re.search(r'\{[a-z]+:[^{}\s]', metin):   # yanlış yazılmış gösterim ({kesr:3|4}) düz metin olarak sayfaya çıkmasın
         raise ValueError('Çözülmemiş gösterim: ' + metin[:120])
@@ -197,7 +207,10 @@ def sayfa_uret(o, dersler, icerikler):
         kutular = ([b['kutu']] if b.get('kutu') else []) + b.get('kutular', [])
         yan = (f'<figure class="ozet-gorsel">{b["gorsel"]}</figure>' if b.get('gorsel') else '') + ''.join(kutu_html(k) for k in kutular)
         metin = paragraflar(b.get('metin')) + tablo(b.get('tablo'))
-        bolumler += (f'<section class="ozet-bolum konu{" yanli-bolum" if yan and metin else ""}"><h2 data-no="{no}">{e(b["baslik"])}</h2>'
+        baslik = e(b['baslik'])
+        if '<' in baslik:   # h2 esnek kutu: kök/Arapça öğesi ayrı sütun olup 12px aralıkla kopmasın, başlık tek metin gibi kırılsın
+            baslik = f'<span>{baslik}</span>'
+        bolumler += (f'<section class="ozet-bolum konu{" yanli-bolum" if yan and metin else ""}"><h2 data-no="{no}">{baslik}</h2>'
                      f'<div class="bolum-govde"><div class="bolum-metin">{metin}</div>'
                      + (f'<div class="bolum-yan">{yan}</div>' if yan else '') + '</div></section>')
     ornekler = ''.join(
