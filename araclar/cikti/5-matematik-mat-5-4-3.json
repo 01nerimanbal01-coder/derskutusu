@@ -1,0 +1,195 @@
+{
+  "tablo": "5-matematik",
+  "sinif": 5,
+  "ders": "MATEMATİK",
+  "donem": 1,
+  "kod": "MAT.5.4.3",
+  "ifade": "Kenar uzunlukları doğal sayı olan bir dikdörtgenin alanının ölçüsü verildiğinde çevre uzunluğunu, çevre uzunluğu verildiğinde alanını yorumlayabilme",
+  "konu": "Dikdörtgenin Çevre Uzunluğu ve Alanı",
+  "sorular": [
+    {
+      "puan": 15,
+      "duzey": "kavrama",
+      "giris": "Kareli zemine A, B ve C dikdörtgenleri çizilmiştir. Her birim karenin bir kenarı 1 birimdir.",
+      "gorsel": {
+        "tur": "kareli",
+        "konum": "sag",
+        "genislik": 84,
+        "en": 15,
+        "boy": 6,
+        "olcek": 16,
+        "dikdortgenler": [
+          {
+            "x": 1,
+            "y": 1,
+            "en": 6,
+            "boy": 2,
+            "ad": "A"
+          },
+          {
+            "x": 9,
+            "y": 1,
+            "en": 4,
+            "boy": 3,
+            "ad": "B",
+            "renk": "#f6d38a"
+          },
+          {
+            "x": 1,
+            "y": 4,
+            "en": 12,
+            "boy": 1,
+            "ad": "C",
+            "renk": "#bfe3c8"
+          }
+        ]
+      },
+      "maddeler": [
+        "Her dikdörtgenin alanını birim kare cinsinden yazınız.",
+        "Her dikdörtgenin çevre uzunluğunu bulunuz.",
+        "Alanları eşit olan dikdörtgenlerin çevre uzunlukları hakkında ne söyleyebilirsiniz?"
+      ],
+      "cevap": [
+        "a) A: 6 · 2 = 12, B: 4 · 3 = 12, C: 12 · 1 = 12 birim kare (üçünün alanı eşittir).",
+        "b) A: 6 + 2 + 6 + 2 = 16 birim, B: 4 + 3 + 4 + 3 = 14 birim, C: 12 + 1 + 12 + 1 = 26 birim",
+        "c) Alanları eşit olan dikdörtgenlerin çevre uzunlukları farklı olabilir."
+      ]
+    },
+    {
+      "puan": 20,
+      "duzey": "uygulama",
+      "giris": "Çevre uzunluğu 20 cm olan ve kenar uzunlukları santimetre cinsinden doğal sayı olan dikdörtgenler aşağıdaki tabloda gösterilecektir.",
+      "gorsel": {
+        "tur": "tablo",
+        "konum": "alt",
+        "genislik": 140,
+        "basliklar": [
+          "Kısa kenar",
+          "Uzun kenar",
+          "Çevre uzunluğu",
+          "Alan"
+        ],
+        "satirlar": [
+          [
+            "1 cm",
+            "9 cm",
+            "20 cm",
+            "9 cm²"
+          ],
+          [
+            "2 cm",
+            {
+              "b": "8 cm"
+            },
+            "20 cm",
+            {
+              "b": "16 cm²"
+            }
+          ],
+          [
+            "3 cm",
+            {
+              "b": "7 cm"
+            },
+            "20 cm",
+            {
+              "b": "21 cm²"
+            }
+          ],
+          [
+            "4 cm",
+            {
+              "b": "6 cm"
+            },
+            "20 cm",
+            {
+              "b": "24 cm²"
+            }
+          ],
+          [
+            "5 cm",
+            {
+              "b": "5 cm"
+            },
+            "20 cm",
+            {
+              "b": "25 cm²"
+            }
+          ]
+        ]
+      },
+      "maddeler": [
+        "Tablodaki boş bırakılan yerleri doldurunuz.",
+        "Alanı en büyük olan dikdörtgenin kenar uzunlukları arasında nasıl bir ilişki vardır?"
+      ],
+      "bosluk": 12,
+      "cevap": [
+        "a) Tablodaki kırmızı değerler. b) Alanı en büyük olan dikdörtgenin (25 cm²) kenar uzunlukları birbirine eşittir; bu dikdörtgen bir karedir."
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "analiz",
+      "giris": "Dikdörtgen biçimindeki bir bahçenin alanı 24 m² ve kenar uzunlukları metre cinsinden doğal sayıdır. Bahçenin çevresine tel çit çekilecektir.",
+      "maddeler": [
+        "Bahçenin kenar uzunlukları için olabilecek tüm durumları yazınız.",
+        "Hangi durumda en az, hangi durumda en çok tel çit gerektiğini çevre uzunluklarını hesaplayarak gösteriniz."
+      ],
+      "cevap": [
+        "a) 1 m ve 24 m; 2 m ve 12 m; 3 m ve 8 m; 4 m ve 6 m",
+        "b) Çevreler: 50 m, 28 m, 22 m, 20 m. En az tel 4 m ve 6 m'lik bahçede (20 m), en çok tel 1 m ve 24 m'lik bahçede (50 m) gerekir."
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "değerlendirme",
+      "giris": "Ela, \"Çevre uzunlukları eşit olan dikdörtgenlerin alanları da eşittir.\" demiştir.",
+      "vurgu": "Ela'nın bu ifadesinin doğru olup olmadığını, çevre uzunluğu 16 cm olan iki dikdörtgen örneği vererek açıklayınız.",
+      "cevap": [
+        "Doğru değildir. Örneğin 7 cm ve 1 cm'lik dikdörtgenin çevresi 16 cm, alanı 7 cm²; 4 cm ve 4 cm'lik (kare) dikdörtgenin çevresi 16 cm, alanı 16 cm²'dir. Çevreleri eşit olan dikdörtgenlerin alanları farklı olabilir."
+      ]
+    },
+    {
+      "puan": 20,
+      "duzey": "uygulama",
+      "giris": "Kareli zemindeki dikdörtgende her birim karenin bir kenarı 1 cm'dir.",
+      "gorsel": {
+        "tur": "kareli",
+        "konum": "sag",
+        "genislik": 82,
+        "en": 16,
+        "boy": 7,
+        "olcek": 13,
+        "dikdortgenler": [
+          {
+            "x": 1,
+            "y": 1,
+            "en": 5,
+            "boy": 4
+          }
+        ]
+      },
+      "maddeler": [
+        "Dikdörtgenin alanını ve çevre uzunluğunu bulunuz.",
+        "Alanı bu dikdörtgenle aynı olan ama çevre uzunluğu daha büyük olan bir dikdörtgeni kareli zemine çiziniz ve çevre uzunluğunu yazınız."
+      ],
+      "cevap": [
+        "a) Alan 5 · 4 = 20 cm², çevre 5 + 4 + 5 + 4 = 18 cm",
+        "b) Örneğin 10 cm ve 2 cm'lik dikdörtgen: alanı 20 cm², çevresi 24 cm (20 cm ve 1 cm'lik dikdörtgen de olur: 42 cm)."
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "analiz",
+      "giris": "Kenar uzunlukları santimetre cinsinden doğal sayı olan iki dikdörtgen veriliyor.",
+      "maddeler": [
+        "Bir kenarı 8 cm ve alanı 40 cm² olan dikdörtgenin çevre uzunluğunu bulunuz.",
+        "Bir kenarı 9 cm ve çevre uzunluğu 30 cm olan dikdörtgenin alanını bulunuz."
+      ],
+      "cevap": [
+        "a) Diğer kenar 40 : 8 = 5 cm. Çevre 8 + 5 + 8 + 5 = 26 cm",
+        "b) İki kenarın toplamı 30 : 2 = 15 cm, diğer kenar 15 − 9 = 6 cm. Alan 9 · 6 = 54 cm²"
+      ]
+    }
+  ]
+}

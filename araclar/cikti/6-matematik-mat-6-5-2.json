@@ -1,0 +1,194 @@
+{
+  "tablo": "6-matematik",
+  "sinif": 6,
+  "ders": "MATEMATİK",
+  "donem": 1,
+  "kod": "MAT.6.5.2",
+  "ifade": "Başkaları tarafından oluşturulan kategorik veya nicel (kesikli) veriye dayalı istatistiksel sonuç veya yorumları tartışabilme",
+  "konu": "Kategorik ve Nicel (Kesikli) Veri Dağılımları",
+  "sorular": [
+    {
+      "puan": 15,
+      "duzey": "analiz",
+      "giris": "Okul gazetesinde, yalnız 6/A sınıfındaki 30 öğrenciyle yapılan ankete dayanarak \"Okulumuzdaki öğrencilerin çoğu en çok futbolu seviyor.\" yazılmıştır. Anket sonuçları yandaki grafiktedir.",
+      "gorsel": {
+        "tur": "sutun",
+        "genislik": 64,
+        "w": 250,
+        "h": 128,
+        "ust": 15,
+        "adim": 3,
+        "kategoriler": [
+          "Futbol",
+          "Voleybol",
+          "Basketbol",
+          "Yüzme"
+        ],
+        "degerler": [
+          12,
+          9,
+          6,
+          3
+        ],
+        "eksen_adi": "Öğrenci sayısı",
+        "baslik": "6/A sınıfında en sevilen spor"
+      },
+      "maddeler": [
+        "Grafiğe göre futbolu seçen öğrenci sayısını ve bu sayının sınıfın yarısından fazla olup olmadığını yazınız.",
+        "Gazetedeki sonucu iki yönden tartışınız: \"çoğu\" ifadesi ve anketin kimlerle yapıldığı."
+      ],
+      "cevap": [
+        "a) 12 öğrenci; sınıfın yarısı 15 olduğundan yarısından azdır.",
+        "b) Futbol en çok seçilen spordur ama 30 kişiden 12'si \"çoğu\" değildir. Ayrıca anket tek sınıfla yapılmıştır; sonuç tüm okula genellenemez, farklı sınıflardan öğrencilere de sorulmalıdır."
+      ]
+    },
+    {
+      "puan": 20,
+      "duzey": "değerlendirme",
+      "giris": "Okul kantininde bir haftada satılan iki ürünün sayıları yandaki grafikte verilmiştir. Kantin görevlisi \"Tost, simidin 2 katından fazla satıldı.\" demiştir.",
+      "gorsel": {
+        "tur": "sutun",
+        "genislik": 52,
+        "w": 200,
+        "h": 125,
+        "alt": 45,
+        "ust": 53,
+        "adim": 1,
+        "kategoriler": [
+          "Tost",
+          "Simit"
+        ],
+        "degerler": [
+          52,
+          48
+        ],
+        "eksen_adi": "Satış sayısı"
+      },
+      "maddeler": [
+        "Grafikten her iki ürünün satış sayısını okuyunuz.",
+        "Kantin görevlisinin yorumunu çürütünüz ve grafiğin neden yanıltıcı olduğunu açıklayınız."
+      ],
+      "cevap": [
+        "a) Tost 52, simit 48",
+        "b) 48 · 2 = 96 > 52 olduğundan yorum yanlıştır; tost simitten yalnızca 4 fazla satılmıştır. Dikey eksen 0'dan değil 45'ten başladığı için sütunlar arasındaki fark gerçekte olduğundan çok büyük görünmektedir."
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "analiz",
+      "giris": "Bir sınıftaki 12 öğrencinin geçen ay okuduğu kitap sayıları nokta grafiğinde gösterilmiştir. Deniz, \"Aritmetik ortalama 4 olduğuna göre öğrencilerin çoğu 4 kitap okumuştur.\" demiştir.",
+      "gorsel": {
+        "tur": "nokta",
+        "genislik": 72,
+        "w": 260,
+        "min": 1,
+        "max": 9,
+        "sayilar": {
+          "1": 1,
+          "2": 3,
+          "3": 4,
+          "4": 1,
+          "8": 2,
+          "9": 1
+        },
+        "baslik": "Okunan kitap sayısı"
+      },
+      "maddeler": [
+        "Verinin aritmetik ortalamasının 4 olduğunu gösteriniz. Tepe değeri ve ortancayı bulunuz.",
+        "Deniz'in yorumunu değerlendiriniz."
+      ],
+      "cevap": [
+        "a) Toplam 1 + 6 + 12 + 4 + 16 + 9 = 48, 48 : 12 = 4. Tepe değer 3; ortanca (3 + 3) : 2 = 3",
+        "b) Yorum yanlıştır. Yalnız 1 öğrenci 4 kitap okumuştur. 8 ve 9 gibi büyük değerler ortalamayı yükseltmiştir; öğrencilerin çoğu 3 ve daha az kitap okumuştur."
+      ]
+    },
+    {
+      "puan": 20,
+      "duzey": "değerlendirme",
+      "giris": "6/A ve 6/B sınıflarından altışar öğrencinin bir sınavdan aldığı puanlar tabloda verilmiştir. Bir öğretmen, \"İki sınıfın puan ortalaması eşit olduğundan iki sınıfın başarı durumu aynıdır.\" demiştir.",
+      "gorsel": {
+        "tur": "tablo",
+        "konum": "alt",
+        "genislik": 150,
+        "basliklar": [
+          "Sınıf",
+          "1.",
+          "2.",
+          "3.",
+          "4.",
+          "5.",
+          "6.",
+          "Ortalama",
+          "Açıklık"
+        ],
+        "satirlar": [
+          [
+            "6/A",
+            "68",
+            "70",
+            "70",
+            "71",
+            "71",
+            "70",
+            "70",
+            {
+              "b": "3"
+            }
+          ],
+          [
+            "6/B",
+            "40",
+            "100",
+            "50",
+            "90",
+            "60",
+            "80",
+            "70",
+            {
+              "b": "60"
+            }
+          ]
+        ]
+      },
+      "maddeler": [
+        "Tablodaki açıklık değerlerini hesaplayarak yazınız.",
+        "Öğretmenin yorumunu açıklık değerlerine göre tartışınız."
+      ],
+      "bosluk": 14,
+      "cevap": [
+        "a) 6/A: 71 − 68 = 3, 6/B: 100 − 40 = 60. b) Ortalamalar eşit olsa da 6/B'de puanlar çok dağınık, 6/A'da birbirine yakındır; yalnız ortalamaya bakarak başarı durumu aynıdır denemez."
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "analiz",
+      "giris": "Basketbol takımındaki öğrenciler, okula yeni bir saha yapılmasıyla ilgili bir anket hazırlamış ve anketi yalnızca takım arkadaşlarına uygulamıştır. Anketteki soru şöyledir: <i>\"Okulumuza yeni ve güzel bir basketbol sahası yapılmasını istemez misiniz?\"</i>",
+      "maddeler": [
+        "Bu ankette sonucu yanlı hâle getiren iki durumu belirtiniz.",
+        "Yönlendirici olmayan bir anket sorusu yazınız."
+      ],
+      "cevap": [
+        "a) Soru, \"istemez misiniz\" ve \"güzel\" ifadeleriyle evet cevabına yönlendirmektedir. Anket yalnız basketbol oynayan öğrencilere uygulanmıştır.",
+        "b) Örnek: \"Okulumuza hangi spor alanının yapılmasını istersiniz?\" (Anket farklı sınıflardan öğrencilere uygulanmalıdır.)"
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "analiz",
+      "giris": "Bir sınıftaki 10 öğrencinin bir dakikada yaptığı mekik sayıları kök-yaprak gösterimiyle verilmiştir. Ece, \"En çok mekik sayısı 34 olduğundan verinin tepe değeri 34'tür.\" demiştir.",
+      "gorsel": {
+        "tur": "html",
+        "genislik": 46,
+        "html": "<div style=\"white-space:nowrap\"><table class=\"gt\" style=\"width:auto;margin:auto\"><tr><th>Kök</th><th>Yaprak</th></tr><tr><td>1</td><td style=\"text-align:left\">5 8 9</td></tr><tr><td>2</td><td style=\"text-align:left\">0 2 2 2 6</td></tr><tr><td>3</td><td style=\"text-align:left\">1 4</td></tr></table><div style=\"font-size:8pt;margin-top:1mm;text-align:center\">1 | 5: 15 mekik</div></div>"
+      },
+      "maddeler": [
+        "Ece'nin yorumundaki hatayı açıklayınız ve tepe değeri yazınız.",
+        "Verinin açıklığını ve ortancasını bulunuz."
+      ],
+      "cevap": [
+        "a) 34 en büyük değerdir, tepe değer değildir. Tepe değer en çok tekrar eden değerdir: 22",
+        "b) Açıklık 34 − 15 = 19. Ortanca, 5. ve 6. değerlerin ortalaması: (22 + 22) : 2 = 22"
+      ]
+    }
+  ]
+}

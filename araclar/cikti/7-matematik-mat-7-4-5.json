@@ -1,0 +1,168 @@
+{
+  "tablo": "7-matematik",
+  "sinif": 7,
+  "ders": "MATEMATİK",
+  "donem": 1,
+  "kod": "MAT.7.4.5",
+  "ifade": "Hacim ölçme birimleri arasındaki ilişkileri değerlendirebilme",
+  "konu": "Hacim Ölçme Birimleri",
+  "sorular": [
+    {
+      "puan": 15,
+      "duzey": "kavrama",
+      "giris": "Ayrıtı 1 dm olan küp biçimindeki bir kabın içi, ayrıtı 1 cm olan birim küplerle boşluk kalmayacak biçimde doldurulacaktır. Yandaki şekilde kabın taban katı gösterilmiştir.",
+      "gorsel": {
+        "tur": "prizma",
+        "a": 10,
+        "b": 10,
+        "c": 1,
+        "izgara": true,
+        "olcek": 11,
+        "genislik": 66,
+        "etiketler": [
+          "1 dm",
+          "1 dm",
+          ""
+        ]
+      },
+      "maddeler": [
+        "Kabın taban katına kaç birim küp sığar? Kap kaç kattan oluşur?",
+        "1 dm³'ün kaç cm³ olduğunu buna göre açıklayınız. Bu kaba kaç litre su sığar?"
+      ],
+      "cevap": [
+        "a) 1 dm = 10 cm olduğundan taban katına 10 · 10 = 100 birim küp sığar; kap 10 kattır.",
+        "b) 100 · 10 = 1000 birim küp sığar, yani 1 dm³ = 1000 cm³. 1 dm³ = 1 L olduğundan kaba 1 L su sığar."
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "uygulama",
+      "giris": "Aşağıdaki ölçüleri istenen birimlere dönüştürünüz.",
+      "gorsel": {
+        "tur": "tablo",
+        "konum": "alt",
+        "genislik": 150,
+        "basliklar": [
+          "Ölçü",
+          "İstenen birim",
+          "Sonuç",
+          "Ölçü",
+          "İstenen birim",
+          "Sonuç"
+        ],
+        "satirlar": [
+          [
+            "3 m³",
+            "dm³",
+            {
+              "b": "3000 dm³"
+            },
+            "2 L",
+            "cm³",
+            {
+              "b": "2000 cm³"
+            }
+          ],
+          [
+            "4500 cm³",
+            "dm³",
+            {
+              "b": "4,5 dm³"
+            },
+            "6 dL",
+            "mL",
+            {
+              "b": "600 mL"
+            }
+          ],
+          [
+            "0,25 m³",
+            "L",
+            {
+              "b": "250 L"
+            },
+            "750 mL",
+            "cm³",
+            {
+              "b": "750 cm³"
+            }
+          ]
+        ]
+      },
+      "bosluk": 0,
+      "cevap": [
+        "Tablodaki kırmızı değerler."
+      ]
+    },
+    {
+      "puan": 20,
+      "duzey": "uygulama",
+      "giris": "İç ölçüleri 60 cm, 30 cm ve 40 cm olan dikdörtgenler prizması biçimindeki bir akvaryum boştur.",
+      "gorsel": {
+        "tur": "prizma",
+        "a": 6,
+        "b": 3,
+        "c": 4,
+        "olcek": 15,
+        "renk": [
+          "#d6ecf7",
+          "#bfe0f2",
+          "#a8d3ec"
+        ],
+        "etiketler": [
+          "60 cm",
+          "30 cm",
+          "40 cm"
+        ],
+        "genislik": 46
+      },
+      "maddeler": [
+        "Akvaryumun hacmini cm³ ve litre cinsinden bulunuz.",
+        "Akvaryum 1,5 L'lik şişelerle doldurulursa tamamen dolması için kaç şişe su gerektiğini bulunuz."
+      ],
+      "cevap": [
+        "a) 60 · 30 · 40 = 72 000 cm³. 1000 cm³ = 1 L olduğundan 72 000 : 1000 = 72 L",
+        "b) 72 : 1,5 = 48 şişe"
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "analiz",
+      "giris": "Dört kaptaki su miktarları aşağıda verilmiştir.<br><b>A:</b> 2,5 L &nbsp;&nbsp; <b>B:</b> 2400 cm³ &nbsp;&nbsp; <b>C:</b> 25 dL &nbsp;&nbsp; <b>D:</b> 0,002 m³",
+      "maddeler": [
+        "Su miktarları eşit olan kapları belirleyiniz.",
+        "Kapları su miktarı çoktan aza doğru sıralayınız. Hangi birime dönüştürerek karşılaştırdığınızı belirtiniz."
+      ],
+      "cevap": [
+        "a) Litreye çevrilirse A = 2,5 L, B = 2,4 L, C = 2,5 L, D = 2 L. A ile C eşittir.",
+        "b) A = C > B > D (hepsi litreye dönüştürülerek karşılaştırıldı)"
+      ]
+    },
+    {
+      "puan": 20,
+      "duzey": "değerlendirme",
+      "giris": "Yusuf, \"1 m = 100 cm olduğundan 1 m³ = 100 cm³ olur.\" demiştir.",
+      "maddeler": [
+        "Yusuf'un hatasını, ayrıtı 1 m olan bir küpü düşünerek açıklayınız ve 1 m³'ün kaç cm³ olduğunu bulunuz.",
+        "1 L = 1000 mL ve 1 L = 1 dm³ = 1000 cm³ bilgilerini kullanarak 1 mL ile 1 cm³ arasındaki ilişkiyi yazınız."
+      ],
+      "cevap": [
+        "a) Hacim üç ayrıtın çarpımıdır. Ayrıtı 1 m = 100 cm olan küpün hacmi 100 · 100 · 100 = 1 000 000 cm³'tür. Yusuf yalnız bir ayrıtı dönüştürmüştür.",
+        "b) 1000 mL = 1000 cm³ olduğundan 1 mL = 1 cm³ olur."
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "uygulama",
+      "giris": "Bir şişede 150 mL şurup vardır. Doktor, şuruptan günde 3 kez 5 mL içilmesini önermiştir.",
+      "maddeler": [
+        "Şişedeki şurup kaç gün yeter?",
+        "Şurubun kaç cm³ ve kaç dL olduğunu yazınız."
+      ],
+      "cevap": [
+        "a) Günde 3 · 5 = 15 mL içilir. 150 : 15 = 10 gün",
+        "b) 150 mL = 150 cm³; 100 mL = 1 dL olduğundan 150 mL = 1,5 dL"
+      ]
+    }
+  ]
+}

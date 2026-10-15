@@ -1,0 +1,259 @@
+{
+  "tablo": "5-matematik",
+  "sinif": 5,
+  "ders": "MATEMATİK",
+  "donem": 1,
+  "kod": "MAT.5.4.4",
+  "ifade": "Dikdörtgenin çevre uzunluğu ve alanı ile ilgili problemleri çözebilme",
+  "konu": "Dikdörtgenin Çevre Uzunluğu ve Alanı",
+  "sorular": [
+    {
+      "puan": 15,
+      "duzey": "uygulama",
+      "giris": "Yanda planı verilen dikdörtgen biçimindeki odanın kenar uzunlukları 5 m ve 4 m'dir. Odanın kapısının genişliği 1 m'dir.",
+      "gorsel": {
+        "tur": "cizim",
+        "genislik": 58,
+        "kutu": [
+          -30,
+          -16,
+          220,
+          152
+        ],
+        "oge": [
+          [
+            "dik",
+            0,
+            0,
+            150,
+            120,
+            "#eef3fa"
+          ],
+          [
+            "sil",
+            105,
+            120,
+            135,
+            120
+          ],
+          [
+            "cizgi",
+            105,
+            120,
+            128,
+            100
+          ],
+          [
+            "yazi",
+            120,
+            112,
+            "kapı",
+            10
+          ],
+          [
+            "yazi",
+            75,
+            -5,
+            "5 m",
+            12
+          ],
+          [
+            "yazi",
+            172,
+            64,
+            "4 m",
+            12
+          ],
+          [
+            "yazi",
+            120,
+            136,
+            "1 m",
+            11
+          ]
+        ]
+      },
+      "maddeler": [
+        "Kapının bulunduğu yer dışında odanın kenarlarına süpürgelik döşenecektir. Kaç metre süpürgelik gerekir?",
+        "Odanın zemini, her biri 1 m² olan kare halı karolarla boşluk kalmadan kaplanacaktır. Kaç karo gerekir?"
+      ],
+      "cevap": [
+        "a) Odanın çevresi 5 + 4 + 5 + 4 = 18 m. Kapı çıkarılırsa 18 − 1 = 17 m süpürgelik gerekir.",
+        "b) Zeminin alanı 5 · 4 = 20 m² olduğundan 20 karo gerekir."
+      ]
+    },
+    {
+      "puan": 20,
+      "duzey": "analiz",
+      "giris": "Dikdörtgen biçimindeki bir duvarın uzunluğu 6 m, yüksekliği 3 m'dir. Duvarda kenar uzunlukları 2 m ve 1 m olan dikdörtgen biçiminde bir pencere vardır. Pencere dışında kalan duvar boyanacaktır.",
+      "gorsel": {
+        "tur": "cizim",
+        "genislik": 62,
+        "kutu": [
+          -8,
+          -16,
+          236,
+          138
+        ],
+        "oge": [
+          [
+            "dik",
+            0,
+            0,
+            210,
+            105,
+            "#f3e7d3"
+          ],
+          [
+            "dik",
+            70,
+            25,
+            70,
+            35,
+            "#cfe5f7"
+          ],
+          [
+            "cizgi",
+            105,
+            25,
+            105,
+            60
+          ],
+          [
+            "yazi",
+            105,
+            -5,
+            "6 m",
+            12
+          ],
+          [
+            "yazi",
+            222,
+            57,
+            "3 m",
+            12
+          ],
+          [
+            "yazi",
+            105,
+            75,
+            "2 m",
+            11
+          ],
+          [
+            "yazi",
+            152,
+            47,
+            "1 m",
+            11
+          ]
+        ]
+      },
+      "maddeler": [
+        "Boyanacak duvarın alanını bulunuz.",
+        "Bir kutu boya 4 m² duvarı boyamaya yetiyorsa duvar için kaç kutu boya gerektiğini bulunuz. Çözümünüzü kontrol ediniz."
+      ],
+      "cevap": [
+        "a) Duvarın alanı 6 · 3 = 18 m², pencerenin alanı 2 · 1 = 2 m². Boyanacak alan 18 − 2 = 16 m²",
+        "b) 16 : 4 = 4 kutu. Kontrol: 4 · 4 = 16 m²"
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "uygulama",
+      "giris": "Kenar uzunlukları 12 cm ve 8 cm olan dikdörtgen biçimindeki bir fotoğrafın çevresine her yerde 2 cm genişliğinde bir çerçeve yapılmıştır.",
+      "gorsel": {
+        "tur": "cizim",
+        "genislik": 52,
+        "kutu": [
+          -6,
+          -6,
+          192,
+          144
+        ],
+        "oge": [
+          [
+            "dik",
+            0,
+            0,
+            180,
+            132,
+            "#c9a46a"
+          ],
+          [
+            "dik",
+            24,
+            24,
+            132,
+            84,
+            "#e9f2fb"
+          ],
+          [
+            "yazi",
+            90,
+            70,
+            "12 cm",
+            10
+          ],
+          [
+            "yazi",
+            120,
+            101,
+            "8 cm",
+            9
+          ],
+          [
+            "yazi",
+            12,
+            70,
+            "2",
+            9
+          ]
+        ]
+      },
+      "maddeler": [
+        "Çerçeveli fotoğrafın dış kenar uzunluklarını ve çevre uzunluğunu bulunuz.",
+        "Çerçevenin kapladığı alanı bulunuz."
+      ],
+      "cevap": [
+        "a) 12 + 2 + 2 = 16 cm ve 8 + 2 + 2 = 12 cm. Çevre 16 + 12 + 16 + 12 = 56 cm",
+        "b) Dış alan 16 · 12 = 192 cm², fotoğrafın alanı 12 · 8 = 96 cm². Çerçeve 192 − 96 = 96 cm²"
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "değerlendirme",
+      "giris": "Mert, \"Dikdörtgen biçimindeki bahçemin iki kenar uzunluğunu da 2 katına çıkarırsam bahçenin alanı da 2 katına çıkar.\" demiştir.",
+      "vurgu": "Kenar uzunlukları 3 m ve 2 m olan bir bahçe üzerinde Mert'in düşüncesini değerlendiriniz.",
+      "cevap": [
+        "İlk alan 3 · 2 = 6 m². Yeni kenarlar 6 m ve 4 m, yeni alan 6 · 4 = 24 m². 24 : 6 = 4 olduğundan alan 2 katına değil 4 katına çıkar; Mert yanılmıştır. (Çevre ise 10 m'den 20 m'ye, yani 2 katına çıkar.)"
+      ]
+    },
+    {
+      "puan": 20,
+      "duzey": "analiz",
+      "giris": "36 cm uzunluğundaki bir tel, hiç artmayacak biçimde bükülerek kenar uzunlukları santimetre cinsinden doğal sayı olan bir dikdörtgen yapılacaktır.",
+      "maddeler": [
+        "Dikdörtgenin uzun kenarı kısa kenarının 2 katı olursa kenar uzunlukları ve alanı ne olur?",
+        "Bu tel ile yapılabilecek dikdörtgenlerden alanı en büyük olanın kenar uzunluklarını ve alanını bulunuz. Nasıl karar verdiğinizi açıklayınız."
+      ],
+      "cevap": [
+        "a) İki kenarın toplamı 36 : 2 = 18 cm. Kısa kenar 6 cm, uzun kenar 12 cm (6 + 12 = 18). Alan 6 · 12 = 72 cm²",
+        "b) Kenarlar toplamı 18 cm olan dikdörtgenler denenir (1 ve 17: 17 cm², 5 ve 13: 65 cm², 8 ve 10: 80 cm² ...). Kenarlar birbirine yaklaştıkça alan büyür; en büyük alan 9 cm ve 9 cm'lik karede 81 cm² olur."
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "uygulama",
+      "giris": "Kenar uzunlukları 15 m ve 8 m olan dikdörtgen biçimindeki bir bahçenin çevresine tel çit çekilecektir. Tel çitin 1 metresi 20 TL'dir.",
+      "maddeler": [
+        "Çit için kaç TL ödeneceğini bulunuz.",
+        "Bahçenin yarısına çim ekilecektir. Çim ekilecek alanı bulunuz."
+      ],
+      "cevap": [
+        "a) Çevre 15 + 8 + 15 + 8 = 46 m. 46 · 20 = 920 TL",
+        "b) Bahçenin alanı 15 · 8 = 120 m². Yarısı 120 : 2 = 60 m²"
+      ]
+    }
+  ]
+}

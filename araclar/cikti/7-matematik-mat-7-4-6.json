@@ -1,0 +1,134 @@
+{
+  "tablo": "7-matematik",
+  "sinif": 7,
+  "ders": "MATEMATİK",
+  "donem": 1,
+  "kod": "MAT.7.4.6",
+  "ifade": "Günlük hayat durumlarında dikdörtgenler prizmaları ile modellenen cisimlerin yüzey alanı ve hacmine yönelik problem çözebilme",
+  "konu": "Dikdörtgenler Prizmasının Hacmi ve Yüzey Alanı",
+  "sorular": [
+    {
+      "puan": 20,
+      "duzey": "uygulama",
+      "giris": "Taban ölçüleri 30 cm ve 20 cm, yüksekliği 10 cm olan, dikdörtgenler prizması biçiminde üstü açık bir kutu kartondan yapılacaktır. Kartonun birleşme yerlerindeki payı önemsenmeyecektir.",
+      "gorsel": {
+        "tur": "prizma",
+        "a": 6,
+        "b": 4,
+        "c": 2,
+        "olcek": 16,
+        "renk": [
+          "#ead2ac",
+          "#f7ecd9",
+          "#d9b98a"
+        ],
+        "etiketler": [
+          "30 cm",
+          "20 cm",
+          "10 cm"
+        ],
+        "genislik": 52
+      },
+      "maddeler": [
+        "Kutuyu yapmak için kaç cm² karton gerektiğini bulunuz.",
+        "Kutunun hacmini cm³ ve litre cinsinden bulunuz."
+      ],
+      "cevap": [
+        "a) Taban 30 · 20 = 600 cm²; ön ve arka yüzler 2 · (30 · 10) = 600 cm²; yan yüzler 2 · (20 · 10) = 400 cm². Üst yüz olmadığından 600 + 600 + 400 = 1600 cm²",
+        "b) 30 · 20 · 10 = 6000 cm³ = 6 L"
+      ]
+    },
+    {
+      "puan": 20,
+      "duzey": "analiz",
+      "giris": "Bir evin çatısındaki dikdörtgenler prizması biçimindeki su deposunun iç ölçüleri 2 m, 1,5 m ve 1 m'dir. Depo tamamen doludur ve evde günde ortalama 250 L su kullanılmaktadır.",
+      "maddeler": [
+        "Depodaki suyun kaç litre olduğunu bulunuz.",
+        "Depoya hiç su eklenmezse suyun kaç gün yeteceğini bulunuz. Sonucun doğruluğunu kontrol ediniz."
+      ],
+      "cevap": [
+        "a) 2 · 1,5 · 1 = 3 m³. 1 m³ = 1000 L olduğundan 3000 L",
+        "b) 3000 : 250 = 12 gün. Kontrol: 12 · 250 = 3000 L"
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "uygulama",
+      "giris": "Taban ölçüleri 5 m ve 4 m, yüksekliği 3 m olan dikdörtgenler prizması biçimindeki bir odanın dört duvarı ve tavanı boyanacaktır. Odadaki kapı ve pencerenin toplam alanı 4 m²'dir. Bir kutu boya 10 m² yüzeyi boyamaktadır.",
+      "maddeler": [
+        "Boyanacak yüzeyin alanını bulunuz.",
+        "Kaç kutu boya gerektiğini bulunuz."
+      ],
+      "cevap": [
+        "a) Duvarlar 2 · (5 · 3) + 2 · (4 · 3) = 30 + 24 = 54 m², tavan 5 · 4 = 20 m². 54 + 20 − 4 = 70 m²",
+        "b) 70 : 10 = 7 kutu"
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "analiz",
+      "giris": "İç ölçüleri 60 cm, 40 cm ve 30 cm olan bir koliye, ölçüleri 20 cm, 10 cm ve 10 cm olan dikdörtgenler prizması biçimindeki kutular yerleştirilecektir. Kutuların hepsi aynı yönde dizilecektir.",
+      "gorsel": {
+        "tur": "prizma",
+        "a": 6,
+        "b": 4,
+        "c": 3,
+        "olcek": 13,
+        "renk": [
+          "#ead2ac",
+          "#f7ecd9",
+          "#d9b98a"
+        ],
+        "etiketler": [
+          "60 cm",
+          "40 cm",
+          "30 cm"
+        ],
+        "genislik": 46
+      },
+      "maddeler": [
+        "Kutuların 20 cm'lik ayrıtı kolinin 60 cm'lik ayrıtı boyunca dizilirse koliye kaç kutu sığar?",
+        "Aynı sonucu hacimleri kullanarak bulunuz ve iki yolu karşılaştırınız."
+      ],
+      "cevap": [
+        "a) 60 : 20 = 3, 40 : 10 = 4, 30 : 10 = 3 olduğundan 3 · 4 · 3 = 36 kutu",
+        "b) Koli 60 · 40 · 30 = 72 000 cm³, kutu 20 · 10 · 10 = 2000 cm³; 72 000 : 2000 = 36. Ayrıtlar tam bölündüğü için iki yol aynı sonucu verir."
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "değerlendirme",
+      "giris": "Taban ölçüleri 4 m ve 3 m olan dikdörtgenler prizması biçimindeki bir kum havuzuna 40 cm yüksekliğinde kum doldurulacaktır. Zeynep gereken kum miktarını yandaki gibi hesaplamıştır.",
+      "gorsel": {
+        "tur": "kartlar",
+        "genislik": 52,
+        "kartlar": [
+          {
+            "baslik": "Zeynep'in çözümü",
+            "satirlar": [
+              "4 · 3 · 40 = 480",
+              "Gereken kum 480 m³'tür."
+            ]
+          }
+        ]
+      },
+      "vurgu": "Zeynep'in hatasını açıklayınız ve doğru sonucu bulunuz.",
+      "cevap": [
+        "Zeynep ölçüleri aynı birime dönüştürmeden çarpmıştır. 40 cm = 0,4 m olduğundan 4 · 3 · 0,4 = 4,8 m³ kum gerekir."
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "analiz",
+      "giris": "Bir firma 1 L süt için iki ambalaj tasarlamıştır. A ambalajının ölçüleri 10 cm, 5 cm ve 20 cm; B ambalajının ölçüleri 10 cm, 10 cm ve 10 cm'dir.",
+      "maddeler": [
+        "İki ambalajın da 1 L süt aldığını gösteriniz.",
+        "Hangi ambalaj için daha az karton gerektiğini yüzey alanlarını hesaplayarak belirleyiniz."
+      ],
+      "cevap": [
+        "a) A: 10 · 5 · 20 = 1000 cm³, B: 10 · 10 · 10 = 1000 cm³; ikisi de 1000 cm³ = 1 L",
+        "b) A: 2 · (50 + 200 + 100) = 700 cm², B: 6 · 100 = 600 cm². B ambalajı için daha az karton gerekir."
+      ]
+    }
+  ]
+}
