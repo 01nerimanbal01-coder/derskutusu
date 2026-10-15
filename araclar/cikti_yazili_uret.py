@@ -10,7 +10,9 @@ böylece kâğıtlar bulutta da hazırlanabilir.
   sorular[]: {puan, duzey (hatırlama|kavrama|uygulama|analiz|değerlendirme), giris, maddeler[] ("a) " öneki kendiliğinden),
               cevap[] (cevaplı kâğıtta kırmızı), vurgu? (girişten sonra kalın yönerge), bosluk? (en az cevap alanı, mm;
               0: cevap görselin içinde, ör. tablo),
-              gorsel? {tur: svg|html|prizma|kupler|kareli|sutun|nokta|cizim|tablo|kartlar (alanları aşağıdaki işlevlerde), konum: sag|alt, genislik (mm)}, sayfa? (1|2; hiçbirinde yoksa bölüm ölçülerek seçilir)}
+              gorsel? {tur: svg|html|prizma|kupler|kareli|sutun|nokta|cizgi_grafigi|cizim|tablo|kartlar (alanları aşağıdaki
+              işlevlerde), konum: sag|alt, genislik (mm)}, sayfa? (1|2; hiçbirinde yoksa bölüm ölçülerek seçilir)}
+Görsellerde yalnız cevaplı kâğıtta görünecek (kırmızı) çizimler: kareli öğelerinde "cevap": true, cizim'de ["cevap", [öğeler]].
 Puanların toplamı 100 olmalıdır. Öğrenci kâğıdındaki karekod cevaplı PDF'in site adresini açar.
 
 Denetim: her sayfa ölçülür; taşan sayfa, öğrencinin yazacağı alanı 18 mm'den kısa kalan soru ya da cevap alanına
@@ -23,6 +25,7 @@ import datetime
 import glob
 import html
 import json
+import math
 import os
 import re
 import shutil
@@ -42,10 +45,15 @@ YIL = '2026-2027'
 EN_AZ_BOSLUK_MM = 18
 TASLAK = False  # --taslak: denetim hatalarında da PDF yazar (yalnız gözden geçirme için), veriyi güncellemez
 BUYUK = str.maketrans('iıçğöşü', 'İIÇĞÖŞÜ')
+KUCUK = str.maketrans('İIÇĞÖŞÜ', 'iıçğöşü')
 
 
 def tr_buyuk(s):
     return s.translate(BUYUK).upper()
+
+
+def tr_kucuk(s):  # str.lower() "İ"yi "i̇" (i + birleşik nokta) yapar
+    return s.translate(KUCUK).lower()
 
 
 def chrome_yolu():
@@ -199,10 +207,18 @@ def kartlar(g):
     return f'<div class="kartlar" style="flex-direction:{g.get("yon", "column")}">{ic}</div>'
 
 
-def kareli(g):
-    """Kareli zemin: en × boy birim kare; dikdortgenler [{x, y, en, boy, ad?, renk?}] (birim cinsinden, sol üst köşe)."""
+KIRMIZI = '#d0242b'
+
+
+def kareli(g, cevapli=False):
+    """Kareli zemin: en × boy birim kare; koordinatlar birim cinsinden, sol üst köşe (0, 0).
+    dikdortgenler [{x, y, en, boy, ad?, renk?}], cokgenler [{noktalar: [[x, y], …], renk?}],
+    dogrular [{x1, y1, x2, y2, ad?, kesik?}] (ad ikinci ucun yanına yazılır), noktalar [{x, y, ad?, dx?, dy?}]
+    (ad, noktadan dx, dy birim uzağa yazılır), yazilar [{x, y, metin, boy?}] (x, y metnin ortası);
+    pay? (zeminin çevresinde bırakılan boşluk, birim). "cevap": true olan öğe yalnız cevaplı kâğıtta kırmızı çizilir."""
     s = g.get('olcek', 14)
     en, boy = g['en'], g['boy']
+    gorunur = lambda d: cevapli or not d.get('cevap')
     ic = ''.join(f'<line x1="{i * s}" y1="0" x2="{i * s}" y2="{boy * s}" stroke="#b9c2cf" stroke-width=".7"/>'
                  for i in range(en + 1))
     ic += ''.join(f'<line x1="0" y1="{j * s}" x2="{en * s}" y2="{j * s}" stroke="#b9c2cf" stroke-width=".7"/>'
@@ -212,7 +228,27 @@ def kareli(g):
                f'fill="{d.get("renk", "#c4d6ef")}" fill-opacity=".85" stroke="#1d3d7a" stroke-width="1.6"/>')
         if d.get('ad'):
             ic += _yazi((d['x'] + d['en'] / 2) * s, (d['y'] + d['boy'] / 2) * s + 4.5, d['ad'], 13)
-    return _svg(ic, -2, -2, en * s + 2, boy * s + 2)
+    for c in filter(gorunur, g.get('cokgenler', [])):
+        dolgu, cizgi = ('#f6c9cb', KIRMIZI) if c.get('cevap') else (c.get('renk', '#c4d6ef'), '#1d3d7a')
+        ic += _cokgen([(x * s, y * s) for x, y in c['noktalar']], dolgu, cizgi, 1.6).replace(
+            '/>', ' fill-opacity=".85"/>')
+    for d in filter(gorunur, g.get('dogrular', [])):
+        renk = KIRMIZI if d.get('cevap') else '#111'
+        kesik = ' stroke-dasharray="6 4"' if d.get('kesik') else ''
+        ic += (f'<line x1="{d["x1"] * s}" y1="{d["y1"] * s}" x2="{d["x2"] * s}" y2="{d["y2"] * s}" stroke="{renk}" '
+               f'stroke-width="1.8"{kesik}/>')
+        if d.get('ad'):
+            ic += _yazi(d['x2'] * s + d.get('dx', .45) * s, d['y2'] * s + d.get('dy', .3) * s, d['ad'], 11, renk=renk)
+    for n in filter(gorunur, g.get('noktalar', [])):
+        renk = KIRMIZI if n.get('cevap') else '#111'
+        ic += f'<circle cx="{n["x"] * s}" cy="{n["y"] * s}" r="2.6" fill="{renk}"/>'
+        if n.get('ad'):
+            ic += _yazi((n['x'] + n.get('dx', -.4)) * s, (n['y'] + n.get('dy', -.3)) * s + 3.5, n['ad'], 10, renk=renk)
+    for y in filter(gorunur, g.get('yazilar', [])):
+        ic += _yazi(y['x'] * s, y['y'] * s + 4, y['metin'], y.get('boy', 11),
+                    renk=KIRMIZI if y.get('cevap') else '#111')
+    return _svg(ic, -2 - g.get('pay', 0) * s, -2 - g.get('pay', 0) * s, (en + g.get('pay', 0)) * s + 2,
+                (boy + g.get('pay', 0)) * s + 2)
 
 
 def sutun(g):
@@ -260,22 +296,89 @@ def nokta(g):
     return _svg(ic, 0, 0, W, yuk)
 
 
-def cizim(g):
-    """Serbest çizim (mm benzeri birim): oge [["dik", x, y, en, boy, dolgu?], ["yazi", x, y, metin, boy?], ["cizgi", x1, y1, x2, y2, kesik?], ["sil", x1, y1, x2, y2]]."""
+def cizgi_grafigi(g):
+    """Çizgi grafiği: kategoriler (yatay eksen), seriler [{ad?, degerler}], alt? (eksenin başladığı değer), ust, adim,
+    etiket_adim? (eksende her kaç değerde bir sayı yazılacağı), eksen_adi?, baslik?. İkinci seri kesik çizgi ve kare
+    işaretle çizilir (siyah-beyaz baskıda da ayırt edilir); birden çok seride ad'lar gösterge olarak yazılır."""
+    kat, seriler = g['kategoriler'], g['seriler']
+    alt, ust, adim = g.get('alt', 0), g['ust'], g['adim']
+    etiket_adim = g.get('etiket_adim', adim)
+    W, H, sol, alt_bos, ust_bos = g.get('w', 300), g.get('h', 150), 34, 30, 22
+    y = lambda v: ust_bos + (H - ust_bos - alt_bos) * (1 - (v - alt) / (ust - alt))
     ic = ''
-    for o in g['oge']:
+    i = 0
+    while alt + i * adim <= ust + 1e-9:
+        v = alt + i * adim
+        ic += f'<line x1="{sol}" y1="{y(v):.1f}" x2="{W - 4}" y2="{y(v):.1f}" stroke="#d5dae2" stroke-width=".7"/>'
+        if abs((v - alt) / etiket_adim - round((v - alt) / etiket_adim)) < 1e-9:
+            ic += _yazi(sol - 5, y(v) + 3.5, f'{v:g}'.replace('.', ','), 9, 'end', False)
+        i += 1
+    ic += f'<line x1="{sol}" y1="{ust_bos - 6}" x2="{sol}" y2="{y(alt):.1f}" stroke="#222" stroke-width="1.1"/>'
+    ic += f'<line x1="{sol}" y1="{y(alt):.1f}" x2="{W - 4}" y2="{y(alt):.1f}" stroke="#222" stroke-width="1.1"/>'
+    aralik = (W - 4 - sol) / len(kat)
+    x = lambda i: sol + aralik * (i + .5)
+    for i, k in enumerate(kat):
+        ic += (f'<line x1="{x(i):.1f}" y1="{y(alt):.1f}" x2="{x(i):.1f}" y2="{y(alt) + 3:.1f}" stroke="#222"/>'
+               + _yazi(x(i), y(alt) + 13, k, 9, kalin=False))
+    bicim = [('#1d3d7a', '', 'daire'), ('#b5541b', ' stroke-dasharray="5 3"', 'kare')]
+    for j, sr in enumerate(seriler):
+        renk, kesik, isaret = bicim[j % 2]
+        noktalar = [(x(i), y(v)) for i, v in enumerate(sr['degerler'])]
+        ic += (f'<polyline points="{" ".join(f"{a:.1f},{b:.1f}" for a, b in noktalar)}" fill="none" stroke="{renk}" '
+               f'stroke-width="1.6"{kesik}/>')
+        for a, b in noktalar:
+            ic += (f'<circle cx="{a:.1f}" cy="{b:.1f}" r="2.8" fill="{renk}"/>' if isaret == 'daire' else
+                   f'<rect x="{a - 2.6:.1f}" y="{b - 2.6:.1f}" width="5.2" height="5.2" fill="{renk}"/>')
+        if len(seriler) > 1 and sr.get('ad'):
+            gx = W - 4 - 70 * (len(seriler) - j)
+            ic += (f'<line x1="{gx}" y1="9" x2="{gx + 16}" y2="9" stroke="{renk}" stroke-width="1.6"{kesik}/>'
+                   + (f'<circle cx="{gx + 8}" cy="9" r="2.8" fill="{renk}"/>' if isaret == 'daire' else
+                      f'<rect x="{gx + 5.4}" y="6.4" width="5.2" height="5.2" fill="{renk}"/>')
+                   + _yazi(gx + 20, 12.5, sr['ad'], 9, 'start'))
+    if g.get('eksen_adi'):
+        ic += _yazi(sol + 2, ust_bos - 9, g['eksen_adi'], 9, 'start', False)
+    if g.get('baslik'):
+        ic += _yazi(W / 2, H - 2, g['baslik'], 9.5)
+    return _svg(ic, 0, 0, W, H)
+
+
+def cizim(g, cevapli=False):
+    """Serbest çizim (mm benzeri birim): oge [["dik", x, y, en, boy, dolgu?], ["yazi", x, y, metin, boy?], ["cizgi", x1, y1, x2, y2, kesik?],
+    ["sil", x1, y1, x2, y2], ["yay", cx, cy, r, aci1, aci2] (derece, saat yönünün tersine; 0° sağ),
+    ["nokta", x, y], ["cevap", [öğeler]] (yalnız cevaplı kâğıtta, kırmızı)]; kalin? çizgi kalınlığı (varsayılan 1.1)."""
+    return _svg(_cizim_oge(g['oge'], g, cevapli, '#222', '#111'), *g['kutu'])
+
+
+def _cizim_oge(ogeler, g, cevapli, cizgi_renk, yazi_renk):
+    kalin = g.get('kalin', 1.1)
+    ic = ''
+    for o in ogeler:
         t = o[0]
-        if t == 'dik':
+        if t == 'cevap':
+            if cevapli:
+                ic += _cizim_oge(o[1], g, cevapli, KIRMIZI, KIRMIZI)
+            continue
+        if t == 'yay':
+            cx, cy, r, a1, a2 = o[1:6]
+            p = lambda a: (cx + r * math.cos(math.radians(a)), cy - r * math.sin(math.radians(a)))
+            (x1, y1), (x2, y2) = p(a1), p(a2)
+            buyuk = 1 if (a2 - a1) % 360 > 180 else 0
+            ic += (f'<path d="M{x1:.2f} {y1:.2f} A{r} {r} 0 {buyuk} 0 {x2:.2f} {y2:.2f}" fill="none" '
+                   f'stroke="{cizgi_renk}" stroke-width="{kalin}"/>')
+        elif t == 'nokta':
+            ic += f'<circle cx="{o[1]}" cy="{o[2]}" r="{kalin * 2.2:.2f}" fill="{yazi_renk}"/>'
+        elif t == 'dik':
             ic += (f'<rect x="{o[1]}" y="{o[2]}" width="{o[3]}" height="{o[4]}" fill="{o[5] if len(o) > 5 else "#dfe9f7"}" '
                    f'stroke="#1d3d7a" stroke-width="1.4"/>')
         elif t == 'yazi':
-            ic += _yazi(o[1], o[2], o[3], o[4] if len(o) > 4 else 10.5)
+            ic += _yazi(o[1], o[2], o[3], o[4] if len(o) > 4 else 10.5, renk=yazi_renk)
         elif t == 'sil':  # kenarda boşluk (ör. kapı)
             ic += f'<line x1="{o[1]}" y1="{o[2]}" x2="{o[3]}" y2="{o[4]}" stroke="#fff" stroke-width="4"/>'
         elif t == 'cizgi':
             kesik = ' stroke-dasharray="4 3"' if len(o) > 5 and o[5] else ''
-            ic += f'<line x1="{o[1]}" y1="{o[2]}" x2="{o[3]}" y2="{o[4]}" stroke="#222" stroke-width="1.1"{kesik}/>'
-    return _svg(ic, *g['kutu'])
+            ic += (f'<line x1="{o[1]}" y1="{o[2]}" x2="{o[3]}" y2="{o[4]}" stroke="{cizgi_renk}" '
+                   f'stroke-width="{kalin}"{kesik}/>')
+    return ic
 
 
 def gorsel_html(g, cevapli):
@@ -288,7 +391,9 @@ def gorsel_html(g, cevapli):
         return kartlar(g)
     if tur == 'html':
         return g['html']
-    return {'prizma': prizma, 'kupler': kupler, 'kareli': kareli, 'sutun': sutun, 'nokta': nokta, 'cizim': cizim}[tur](g)
+    if tur in ('kareli', 'cizim'):
+        return {'kareli': kareli, 'cizim': cizim}[tur](g, cevapli)
+    return {'prizma': prizma, 'kupler': kupler, 'sutun': sutun, 'nokta': nokta, 'cizgi_grafigi': cizgi_grafigi}[tur](g)
 
 
 CSS = """
@@ -495,7 +600,7 @@ def ust_veri(pdf, o, cevapli):
 def uret(ad):
     o = json.loads((KAYNAK / f'{ad}.json').read_text(encoding='utf-8'))
     o['dosya'] = ad
-    o.setdefault('ders_ad', o['ders'][:1] + o['ders'][1:].lower())
+    o.setdefault('ders_ad', o['ders'][:1] + tr_kucuk(o['ders'][1:]))
     toplam = sum(s['puan'] for s in o['sorular'])
     if toplam != 100:
         raise RuntimeError(f'{ad}: puanların toplamı {toplam}')

@@ -1,0 +1,237 @@
+{
+  "tablo": "7-matematik",
+  "sinif": 7,
+  "ders": "MATEMATİK",
+  "donem": 1,
+  "kod": "MAT.7.6.2",
+  "ifade": "Başkaları tarafından oluşturulan kategorik veya nicel (sürekli) veriye dayalı istatistiksel sonuç veya yorumları tartışabilme",
+  "konu": "Kategorik ve Nicel (Sürekli) Veri Dağılımları",
+  "sorular": [
+    {
+      "puan": 15,
+      "duzey": "analiz",
+      "giris": "Bir haber sitesi, bir barajın doluluk oranını yandaki grafikle vermiş ve \"Barajdaki su beş ayda neredeyse tükendi!\" başlığını kullanmıştır.",
+      "gorsel": {
+        "tur": "cizgi_grafigi",
+        "genislik": 60,
+        "w": 250,
+        "h": 130,
+        "kategoriler": [
+          "Ocak",
+          "Şubat",
+          "Mart",
+          "Nisan",
+          "Mayıs"
+        ],
+        "seriler": [
+          {
+            "degerler": [
+              62,
+              61,
+              61,
+              60,
+              59
+            ]
+          }
+        ],
+        "alt": 58,
+        "ust": 62,
+        "adim": 1,
+        "eksen_adi": "Doluluk oranı (%)"
+      },
+      "maddeler": [
+        "Ocak ve mayıstaki doluluk oranlarını okuyunuz. Oran kaç puan azalmıştır?",
+        "Başlığı çürütünüz; grafiğin okuyucuyu nasıl yanılttığını açıklayınız."
+      ],
+      "cevap": [
+        "a) Ocakta %62, mayısta %59; doluluk oranı 62 − 59 = 3 puan azalmıştır.",
+        "b) Baraj hâlâ yarısından fazla (%59) doludur, su tükenmemiştir. Dikey eksen 0'dan değil 58'den başladığı için küçük düşüş çok büyük görünmektedir."
+      ]
+    },
+    {
+      "puan": 20,
+      "duzey": "değerlendirme",
+      "giris": "7/A ve 7/B'den beşer öğrencinin bir zekâ oyununu bitirme süreleri (dakika) tablodadır.",
+      "gorsel": {
+        "tur": "tablo",
+        "konum": "alt",
+        "genislik": 160,
+        "basliklar": [
+          "Sınıf",
+          "1.",
+          "2.",
+          "3.",
+          "4.",
+          "5.",
+          "Aritmetik ortalama",
+          "Ortalama mutlak sapma"
+        ],
+        "satirlar": [
+          [
+            "7/A",
+            "6",
+            "7",
+            "8",
+            "9",
+            "15",
+            "9",
+            {
+              "b": "2,4"
+            }
+          ],
+          [
+            "7/B",
+            "9",
+            "10",
+            "10",
+            "11",
+            "10",
+            "10",
+            {
+              "b": "0,4"
+            }
+          ]
+        ]
+      },
+      "maddeler": [
+        "Tablodaki ortalama mutlak sapma değerlerini hesaplayarak yazınız.",
+        "Selin: \"7/A'nın ortalaması düşük; 7/A'daki her öğrenci 7/B'dekilerin hepsinden hızlıdır.\" Kabul ya da çürütünüz.",
+        "Kaan: \"7/B'deki süreler birbirine daha yakındır.\" Kabul ya da çürütünüz."
+      ],
+      "cevap": [
+        "a) 7/A: (3 + 2 + 1 + 0 + 6) : 5 = 2,4. 7/B: (1 + 0 + 0 + 1 + 0) : 5 = 0,4",
+        "b) Çürütülür: 7/A'da 15 dakikada bitiren öğrenci, 7/B'deki herkesten (en çok 11 dk) yavaştır.",
+        "c) Kabul edilir: 7/B'nin ortalama mutlak sapması (0,4) daha küçüktür."
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "analiz",
+      "giris": "Bir spor salonundan çıkan 40 kişiye haftada kaç saat spor yaptıkları sorulmuş, ortalama 6 saat bulunmuştur. Bir gazete \"Şehrimizde insanlar haftada ortalama 6 saat spor yapıyor.\" diye yazmıştır.",
+      "maddeler": [
+        "Bu haberdeki sonucu yanlı hâle getiren durumu açıklayınız.",
+        "Daha doğru bir sonuç için veri nasıl toplanmalıdır?"
+      ],
+      "cevap": [
+        "a) Veri yalnız spor salonuna gelen, düzenli spor yapan kişilerden toplanmıştır; ortalama olduğundan yüksek çıkar, şehrin tamamına genellenemez.",
+        "b) Farklı semtlerden, yaş ve mesleklerden rastgele seçilen daha çok kişiye sorulmalıdır."
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "analiz",
+      "giris": "Yedi öğrencinin evden okula gelme süreleri (dakika) şöyledir: <b>5, 6, 8, 8, 10, 12, 42</b>. Can, \"Bu öğrencilerin okula gelme süresi genellikle 13 dakikadır.\" demiştir.",
+      "maddeler": [
+        "Verinin aritmetik ortalamasını ve ortancasını bulunuz.",
+        "Can'ın yorumunu değerlendiriniz. Bu veriyi hangi değerin daha iyi temsil ettiğini gerekçesiyle yazınız."
+      ],
+      "cevap": [
+        "a) Ortalama 91 : 7 = 13 dk; ortanca (sıralı verinin 4. değeri) 8 dk",
+        "b) Yanlıştır: 7 öğrenciden 6'sı 12 dakikada ya da daha kısa sürede gelir. 42 dakikalık uç değer ortalamayı yükseltmiştir; veriyi ortanca (8 dk) daha iyi temsil eder."
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "değerlendirme",
+      "giris": "Bir okuldaki 200 öğrenciye en sevdikleri ders sorulmuş, sonuçlar yandaki sütun grafiğinde gösterilmiştir.",
+      "gorsel": {
+        "tur": "sutun",
+        "genislik": 62,
+        "w": 250,
+        "h": 135,
+        "kategoriler": [
+          "Matematik",
+          "Türkçe",
+          "Fen",
+          "Sosyal",
+          "İngilizce"
+        ],
+        "degerler": [
+          60,
+          45,
+          50,
+          25,
+          20
+        ],
+        "ust": 70,
+        "adim": 10,
+        "eksen_adi": "Öğrenci sayısı"
+      },
+      "vurgu": "Aşağıdaki yorumları kabul ya da çürütünüz; gerekçesini yazınız.",
+      "maddeler": [
+        "\"Öğrencilerin dörtte birinden fazlası matematiği seçmiştir.\"",
+        "\"Fen bilimlerini seçenlerin sayısı, sosyal bilgileri seçenlerin 2 katıdır.\"",
+        "\"İngilizceyi seçenlerin sayısı, Türkçeyi seçenlerin yarısıdır.\""
+      ],
+      "cevap": [
+        "a) Kabul: 200'ün dörtte biri 50'dir; 60 > 50",
+        "b) Kabul: 25 · 2 = 50",
+        "c) Çürütülür: 45'in yarısı 22,5'tir; İngilizceyi 20 öğrenci seçmiştir."
+      ]
+    },
+    {
+      "puan": 20,
+      "duzey": "değerlendirme",
+      "giris": "A ve B şehirlerinde bir hafta boyunca ölçülen en yüksek hava sıcaklıkları (°C) çizgi grafiğinde gösterilmiştir.",
+      "gorsel": {
+        "tur": "cizgi_grafigi",
+        "konum": "alt",
+        "genislik": 118,
+        "w": 380,
+        "h": 150,
+        "kategoriler": [
+          "Pazartesi",
+          "Salı",
+          "Çarşamba",
+          "Perşembe",
+          "Cuma",
+          "Cumartesi",
+          "Pazar"
+        ],
+        "seriler": [
+          {
+            "ad": "A şehri",
+            "degerler": [
+              17,
+              19,
+              23,
+              27,
+              26,
+              22,
+              20
+            ]
+          },
+          {
+            "ad": "B şehri",
+            "degerler": [
+              21,
+              22,
+              22,
+              23,
+              22,
+              22,
+              22
+            ]
+          }
+        ],
+        "alt": 16,
+        "ust": 28,
+        "adim": 1,
+        "etiket_adim": 2,
+        "eksen_adi": "Sıcaklık (°C)"
+      },
+      "vurgu": "Aşağıdaki yorumları kabul ya da çürütünüz; gerekçenizi verilerle gösteriniz.",
+      "maddeler": [
+        "Mert: \"A şehri hafta boyunca her gün B şehrinden daha sıcaktır.\"",
+        "Derya: \"İki şehrin haftalık sıcaklık ortalamaları eşittir.\"",
+        "Ozan: \"Ortalamalar eşit olduğundan iki şehirde sıcaklık hafta boyunca benzer biçimde değişmiştir.\""
+      ],
+      "bosluk": 14,
+      "cevap": [
+        "a) Çürütülür: pazartesi, salı ve pazar B daha sıcaktır (pazartesi A 17 °C, B 21 °C).",
+        "b) Kabul: A için 154 : 7 = 22 °C, B için 154 : 7 = 22 °C",
+        "c) Çürütülür: açıklık A'da 27 − 17 = 10 °C, B'de 23 − 21 = 2 °C; B'de sıcaklık neredeyse sabittir."
+      ]
+    }
+  ]
+}
