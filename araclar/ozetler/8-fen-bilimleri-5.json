@@ -1,0 +1,321 @@
+{
+ "sinif": 8,
+ "ders": "fen-bilimleri",
+ "hafta": 5,
+ "tarih": "12-16 Ekim 2026",
+ "yayin_tarihi": "2026-10-15",
+ "unite": "DNA ve Genetik Kod",
+ "konu": "DNA’nın Yapısı, Kendini Eşlemesi ve Kalıtıma Giriş",
+ "ciktilar": [
+  "F.8.2.1.2. DNA’nın yapısını model üzerinde gösterir.",
+  "F.8.2.1.3. DNA’nın kendini nasıl eşlediğini ifade eder.",
+  "F.8.2.2.1. Kalıtım ile ilgili kavramları tanımlar."
+ ],
+ "giris": "Geçen hafta kalıtsal bilginin taşındığı yapıları tanıdın: kromozom, DNA, gen ve nükleotid. Bu hafta DNA’nın yapısına yakından bakacaksın. Nükleotidlerin nasıl dizildiğini, organik bazların hangi kurala göre eşleştiğini öğrenecek ve DNA’yı bir model üzerinde göstereceksin. Ardından hücre bölünmeden önce DNA’nın kendini nasıl eşlediğini ve eşlenmede oluşan hataların ne olduğunu göreceksin. Haftanın sonunda kalıtım konusuna ilk adımı atacaksın.",
+ "bolumler": [
+  {
+   "baslik": "DNA’nın keşfi: çift sarmal",
+   "metin": [
+    "DNA’nın varlığı 19. yüzyıldan beri biliniyordu, ama nasıl bir yapıda olduğu uzun süre çözülemedi. 1950’lerin başında Rosalind Franklin, DNA’nın X ışınlarıyla elde edilen görüntüleri üzerinde çalıştı. Bu görüntüler DNA’nın sarmal bir yapıda olduğunu düşündürüyordu.",
+    "James Watson ve Francis Crick, bu verilerden ve başka bilim insanlarının çalışmalarından yararlanarak 1953’te DNA’nın çift sarmal modelini önerdi. Bu modele göre DNA, birbirine sarılmış iki zincirden oluşur ve bükülmüş bir merdivene benzer.",
+    "DNA’nın yapısının çözülmesi, bilimin birçok bilim insanının emeğiyle ilerlediğini gösterir. Bir bilim insanının verisi, başka bilim insanlarının yeni bir model kurmasını sağlamıştır."
+   ],
+   "kutu": {
+    "tur": "bilgi",
+    "baslik": "Bilim birikimle ilerler",
+    "metin": "Franklin’in X ışını görüntüleri, Watson ve Crick’in çift sarmal modelini kurmasında önemli bir kanıt oldu."
+   }
+  },
+  {
+   "baslik": "Nükleotid ve dört organik baz",
+   "metin": [
+    "DNA’nın yapı birimi nükleotiddir. Her nükleotid üç parçadan oluşur: bir şeker (deoksiriboz), bir fosfat ve bir organik baz. Şeker ve fosfat bütün nükleotidlerde aynıdır; nükleotidleri birbirinden ayıran, taşıdıkları organik bazdır.",
+    "DNA’da dört çeşit organik baz bulunur: adenin (A), timin (T), guanin (G) ve sitozin (C). Bu yüzden DNA’da dört çeşit nükleotid vardır. Nükleotidler zincir boyunca art arda dizilir; dizilişleri canlıdan canlıya farklıdır.",
+    "Canlılar arasındaki farkları oluşturan, nükleotidlerin sayısı ve diziliş sırasıdır. Dört harfle sayısız kelime yazılabildiği gibi, dört çeşit nükleotidle de sayısız farklı bilgi kodlanabilir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Nükleotidin parçası",
+     "Açıklama"
+    ],
+    "satirlar": [
+     [
+      "Şeker",
+      "Deoksiriboz; bütün nükleotidlerde aynıdır."
+     ],
+     [
+      "Fosfat",
+      "Bütün nükleotidlerde aynıdır."
+     ],
+     [
+      "Organik baz",
+      "Adenin (A), timin (T), guanin (G) ya da sitozin (C)"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "tanim",
+    "baslik": "Nükleotid",
+    "metin": "Şeker, fosfat ve organik bazdan oluşan, DNA’nın en küçük yapı birimidir."
+   }
+  },
+  {
+   "baslik": "Bazların eşleşme kuralı",
+   "metin": [
+    "DNA’nın iki zinciri karşılıklı bazlar aracılığıyla birbirine bağlanır. Bu bağlanma rastgele değildir: Adenin her zaman timinle (A–T), guanin her zaman sitozinle (G–C) eşleşir. Bu kurala bakarak bir zincirin dizilişinden karşı zincirin dizilişini bulabilirsin.",
+    "DNA’yı bükülmüş bir merdivene benzetirsen merdivenin iki kenarı şeker ve fosfatlardan, basamakları ise karşılıklı eşleşmiş baz çiftlerinden oluşur. Merdiven kendi çevresinde kıvrılarak sarmal bir biçim alır.",
+    "Örneğin bir zincirin bir bölümü A–T–G–C–C–A ise karşı zincirin aynı bölümü T–A–C–G–G–T olur. Her basamakta bir A’nın karşısında T, bir G’nin karşısında C bulunur."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Bir zincirdeki baz",
+     "Karşı zincirdeki baz"
+    ],
+    "satirlar": [
+     [
+      "A (adenin)",
+      "T (timin)"
+     ],
+     [
+      "T (timin)",
+      "A (adenin)"
+     ],
+     [
+      "G (guanin)",
+      "C (sitozin)"
+     ],
+     [
+      "C (sitozin)",
+      "G (guanin)"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Eşleşme kuralı",
+    "metin": "A her zaman T ile, G her zaman C ile eşleşir. A ile G ya da T ile C eşleşmez."
+   }
+  },
+  {
+   "baslik": "DNA modelini yapmak",
+   "metin": [
+    "DNA’nın yapısını bir modelle gösterebilirsin. Şeker, fosfat ve dört bazın her biri için farklı renkte malzeme seçersin; örneğin oyun hamuru, pipet, boncuk ya da renkli kartonlar. Önce her biri bir şeker, bir fosfat ve bir bazdan oluşan nükleotidleri hazırlarsın.",
+    "Sonra nükleotidleri art arda dizerek bir zincir oluşturursun; şeker ve fosfatlar zincirin kenarını oluşturur. İkinci zinciri eşleşme kuralına göre kurarsın: Birinci zincirdeki her A’nın karşısına T, her G’nin karşısına C yerleştirirsin. İki zinciri bazlardan birleştirip merdiveni hafifçe bükersen çift sarmal görünümü elde edersin.",
+    "Modelini değerlendirirken şu soruları sorarsın: Her nükleotidde üç parça var mı? Bazlar kurala uygun eşleşmiş mi? Kenarlarda yalnız şeker ve fosfat mı var? Model, DNA’nın gerçek boyutunu göstermez; yalnızca yapısını anlamamızı kolaylaştırır."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Renk anahtarı",
+    "metin": "Modelinin yanına hangi rengin şekeri, fosfatı ve hangi bazı gösterdiğini yazan küçük bir anahtar ekle; böylece model başkaları için de anlaşılır olur."
+   }
+  },
+  {
+   "baslik": "DNA kendini nasıl eşler?",
+   "metin": [
+    "Bir hücre bölünmeden önce DNA’sını eşler; böylece bölünmeyle oluşan yeni hücrelerin her birine aynı kalıtsal bilgi aktarılır. Eşlenme sırasında DNA’nın iki zinciri bir fermuar gibi açılır, bazlar arasındaki bağlantılar ayrılır.",
+    "Açılan her zincir yeni bir zincir için kalıp görevi görür. Hücrede serbest hâlde bulunan nükleotidler, eşleşme kuralına uygun biçimde kalıp zincirdeki bazların karşısına yerleşir: A’nın karşısına T, G’nin karşısına C gelir. Bu işlemleri hücredeki özel yapılar (enzimler) yürütür ve denetler.",
+    "Eşlenme sonunda birbirinin aynısı iki DNA molekülü oluşur. Her yeni DNA’nın bir zinciri eski DNA’dan gelir, öbür zinciri yeni yapılmıştır. Eşlenme sırasında nükleotidler bazen yanlış yerleşebilir; bu hataların büyük çoğunluğu hücredeki onarım sistemleri tarafından düzeltilir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Adım",
+     "Ne olur?"
+    ],
+    "satirlar": [
+     [
+      "1. Açılma",
+      "İki zincir fermuar gibi birbirinden ayrılır."
+     ],
+     [
+      "2. Eşleşme",
+      "Serbest nükleotidler kurala göre kalıp zincirdeki bazların karşısına gelir."
+     ],
+     [
+      "3. Tamamlanma",
+      "Birbirinin aynısı iki DNA oluşur; her birinde bir eski, bir yeni zincir bulunur."
+     ],
+     [
+      "4. Denetim",
+      "Eşleşme hatalarının çoğu onarılır."
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Eşlenme ne zaman olur?",
+    "metin": "DNA, hücre bölünmesinden önce eşlenir. Böylece oluşan her yeni hücre aynı kalıtsal bilgiyi alır."
+   }
+  },
+  {
+   "baslik": "Kalıtıma ilk adım",
+   "metin": [
+    "Anne babaların özelliklerinin çocuklarına aktarılmasına kalıtım denir. Göz rengi, saç biçimi, kan grubu gibi özellikler kalıtsal özelliklerdir. Bu özellikleri taşıyan bilgi DNA’daki genlerde saklıdır ve eşlenme sayesinde hücreden hücreye, üreme yoluyla da nesilden nesile aktarılır.",
+    "Bir canlıda görülen her özelliğe karakter denir. Bezelyede tohum rengi, çiçek rengi ya da gövde boyu birer karakterdir. Karakterler canlıdan canlıya farklı biçimlerde görülebilir; örneğin bezelye tohumu sarı ya da yeşil olabilir.",
+    "Gelecek hafta kalıtımla ilgili gen, baskın ve çekinik gen, genotip, fenotip, saf döl ve melez döl kavramlarını öğrenecek ve bezelyelerle ilk çaprazlamaları yapacaksın."
+   ],
+   "kutu": {
+    "tur": "tanim",
+    "baslik": "Kalıtım",
+    "metin": "Canlıların sahip olduğu özelliklerin genler aracılığıyla nesilden nesile aktarılmasıdır."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Bir DNA zincirinin bir bölümünün dizilişi G–A–T–T–C–A’dır. Karşı zincirin aynı bölümünün dizilişini yaz.",
+   "cevap": "Eşleşme kuralına göre G’nin karşısına C, A’nın karşısına T, T’nin karşısına A, C’nin karşısına G gelir. Karşı zincir: C–T–A–A–G–T."
+  },
+  {
+   "soru": "Bir öğrencinin DNA modelinde bir basamakta A ile G karşılıklı yerleştirilmiştir. Bu modelde hangi hata vardır? Nasıl düzeltilir?",
+   "cevap": "A ile G eşleşmez; A her zaman T ile eşleşir. Hata, A’nın karşısına T yerleştirilerek ya da G’nin karşısına C yerleştirilerek düzeltilir. Hangisinin düzeltileceği, birinci zincirdeki bazın hangisi olduğuna bağlıdır."
+  },
+  {
+   "soru": "Nükleotidleri birbirinden ayıran parça hangisidir? Neden?",
+   "cevap": "Organik bazdır. Şeker (deoksiriboz) ve fosfat bütün nükleotidlerde aynıdır; nükleotidler yalnızca taşıdıkları baza (A, T, G ya da C) göre farklılık gösterir. Bu yüzden DNA’da dört çeşit nükleotid bulunur."
+  },
+  {
+   "soru": "DNA eşlendikten sonra oluşan iki DNA molekülü birbirine göre nasıldır? Her birinin zincirleri nereden gelir?",
+   "cevap": "Oluşan iki DNA molekülü birbirinin aynısıdır. Her birinin bir zinciri eşlenmeden önceki DNA’dan gelen eski zincirdir, öbür zinciri ise serbest nükleotidlerle yeni yapılmış zincirdir."
+  },
+  {
+   "soru": "Bir hücre bölünmeden önce DNA’sını eşlemeseydi ne olurdu? Tahmin et.",
+   "cevap": "Bölünmeyle oluşan yeni hücrelere yeterli kalıtsal bilgi aktarılamazdı; hücrelerden biri bilginin bir kısmını alamaz ya da eksik alırdı. Eşlenme, her yeni hücrenin aynı ve eksiksiz kalıtsal bilgiyi almasını sağlar."
+  },
+  {
+   "soru": "Watson ve Crick’in DNA modelini kurmasında Rosalind Franklin’in çalışmasının rolü nedir? Bu örnek bilimin doğası hakkında ne söyler?",
+   "cevap": "Franklin’in X ışınlarıyla elde ettiği görüntüler DNA’nın sarmal yapıda olduğunu gösteren önemli bir kanıttı; Watson ve Crick bu ve başka verileri kullanarak çift sarmal modelini önerdi. Örnek, bilimsel bilginin birçok bilim insanının çalışmalarının birikimiyle oluştuğunu gösterir."
+  }
+ ],
+ "ozet": [
+  "DNA, birbirine sarılmış iki zincirden oluşan çift sarmal bir moleküldür; modeli 1953’te Watson ve Crick önerdi, Rosalind Franklin’in X ışını görüntüleri bu modelin önemli kanıtlarındandır.",
+  "Nükleotid şeker (deoksiriboz), fosfat ve organik bazdan oluşur; DNA’da adenin, timin, guanin ve sitozin olmak üzere dört çeşit baz, dolayısıyla dört çeşit nükleotid vardır.",
+  "Bazlar belirli bir kurala göre eşleşir: A–T ve G–C. Merdiven benzetmesinde kenarlar şeker ve fosfatlardan, basamaklar baz çiftlerinden oluşur.",
+  "Hücre bölünmeden önce DNA kendini eşler: Zincirler fermuar gibi açılır, serbest nükleotidler kurala göre yerleşir ve her birinde bir eski bir yeni zincir bulunan iki özdeş DNA oluşur. Eşlenme hatalarının çoğu onarılır.",
+  "Kalıtım, özelliklerin genler aracılığıyla nesilden nesile aktarılmasıdır; canlıda görülen her özelliğe karakter denir."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "DNA’da adenin (A) bazının karşısında hangi baz bulunur?",
+   "secenekler": [
+    "Guanin",
+    "Sitozin",
+    "Timin",
+    "Adenin"
+   ],
+   "dogru": 2,
+   "aciklama": "Eşleşme kuralına göre A her zaman T (timin) ile eşleşir; G ise C ile eşleşir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir zincirin dizilişi C–C–A–T–G ise karşı zincirin dizilişi hangisidir?",
+   "secenekler": [
+    "G–G–T–A–C",
+    "C–C–A–T–G",
+    "G–G–A–T–C",
+    "A–A–C–G–T"
+   ],
+   "dogru": 0,
+   "aciklama": "C’nin karşısına G, A’nın karşısına T, T’nin karşısına A, G’nin karşısına C gelir: G–G–T–A–C."
+  },
+  {
+   "tur": "coktan",
+   "soru": "DNA eşlenmesiyle ilgili aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Hücre bölündükten sonra gerçekleşir.",
+    "Oluşan iki DNA birbirinden farklıdır.",
+    "Her yeni DNA’da bir eski ve bir yeni zincir bulunur.",
+    "Eşlenmede hiçbir zaman hata olmaz."
+   ],
+   "dogru": 2,
+   "aciklama": "Eşlenme bölünmeden önce olur, birbirinin aynısı iki DNA oluşur ve her birinde bir eski, bir yeni zincir bulunur. Eşlenmede hata olabilir; ama çoğu onarılır."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Her ifadenin doğru mu yanlış mı olduğuna karar ver; yanlış çıkanların açıklamasını oku.",
+   "ifadeler": [
+    {
+     "metin": "Bütün nükleotidlerde şeker ve fosfat aynıdır.",
+     "dogru": true,
+     "aciklama": "Nükleotidler yalnız organik bazlarına göre farklılık gösterir."
+    },
+    {
+     "metin": "DNA’da guanin bazı timinle eşleşir.",
+     "dogru": false,
+     "aciklama": "Guanin sitozinle (G–C), adenin timinle (A–T) eşleşir."
+    },
+    {
+     "metin": "Merdiven benzetmesinde basamaklar şeker ve fosfatlardan oluşur.",
+     "dogru": false,
+     "aciklama": "Merdivenin kenarları şeker ve fosfatlardan, basamakları ise baz çiftlerinden oluşur."
+    },
+    {
+     "metin": "DNA eşlenmesi, yeni hücrelerin aynı kalıtsal bilgiyi almasını sağlar.",
+     "dogru": true,
+     "aciklama": "Bölünmeden önce eşlenen DNA, oluşan hücrelere eşit ve eksiksiz biçimde aktarılır."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Her kavramı açıklamasıyla eşleştir.",
+   "ciftler": [
+    [
+     "Nükleotid",
+     "DNA’nın şeker, fosfat ve bazdan oluşan yapı birimi"
+    ],
+    [
+     "Çift sarmal",
+     "Birbirine sarılmış iki zincirden oluşan DNA yapısı"
+    ],
+    [
+     "Eşlenme",
+     "DNA’nın hücre bölünmesinden önce kendini kopyalaması"
+    ],
+    [
+     "Kalıtım",
+     "Özelliklerin nesilden nesile aktarılması"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "DNA’daki şeker çeşidine ___ denir.",
+     "cevap": "deoksiriboz"
+    },
+    {
+     "metin": "Eşlenme sırasında DNA’nın iki zinciri bir ___ gibi açılır.",
+     "cevap": "fermuar"
+    },
+    {
+     "metin": "Canlıda görülen her özelliğe ___ denir.",
+     "cevap": "karakter"
+    }
+   ],
+   "fazla": [
+    "kromozom"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Oyun hamuru ve pipetle bir DNA modeli yapacaksın. Modelin hangi parçalardan oluşacağını ve bazları hangi kurala göre yerleştireceğini açıkla.",
+   "ipuclari": [
+    "Bir nükleotidin üç parçasını ve dört bazı farklı renklerle göstermeyi düşün.",
+    "Kenarlarda hangi parçalar, basamaklarda hangi parçalar olmalı?"
+   ],
+   "cevap": "Şeker, fosfat ve dört bazın (A, T, G, C) her biri için ayrı renk seçilir. Her nükleotid bir şeker, bir fosfat ve bir bazdan kurulur. Şeker ve fosfatlar art arda dizilerek merdivenin iki kenarını oluşturur. Bazlar basamaklara yerleştirilir; her basamakta A’nın karşısına T, G’nin karşısına C konur. Merdiven hafifçe bükülerek çift sarmal görünümü verilir."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir zincirin dizilişi A–A–G–C–T olan bir DNA bölümü eşlendiğinde oluşan iki yeni DNA bölümünün dizilişlerini göster.",
+   "ipuclari": [
+    "Önce eşlenmeden önceki karşı zinciri bul.",
+    "Zincirler ayrıldıktan sonra her biri kendi karşısına kurala uygun yeni bir zincir kurar."
+   ],
+   "cevap": "Başlangıçtaki DNA: A–A–G–C–T ve karşısında T–T–C–G–A. Zincirler ayrılınca A–A–G–C–T zincirinin karşısına yeni T–T–C–G–A, T–T–C–G–A zincirinin karşısına yeni A–A–G–C–T zinciri kurulur. Sonuçta iki DNA bölümü de A–A–G–C–T / T–T–C–G–A çiftinden oluşur; ikisi birbirinin aynısıdır ve her birinde bir eski, bir yeni zincir vardır."
+  }
+ ]
+}
