@@ -1,0 +1,357 @@
+{
+ "sinif": 7,
+ "ders": "fen-bilimleri",
+ "hafta": 8,
+ "tarih": "2-6 Kasım 2026",
+ "yayin_tarihi": "2026-10-15",
+ "unite": "Kuvvet ve Enerjiyi Keşfedelim",
+ "konu": "Kinetik ve Potansiyel Enerjinin Dönüşümü: Örüntüler, Mekanik Enerji ve Enerjinin Korunumu",
+ "ciktilar": [
+  "FB.7.2.2. Enerji çeşitlerinden kinetik ve potansiyel enerjiyi karşılaştırabilme",
+  "FB.7.2.3. Enerji dönüşümünden hareketle enerjinin korunduğuna yönelik tümevarımsal akıl yürütebilme"
+ ],
+ "giris": "Geçen hafta kinetik enerjinin hareketten, potansiyel enerjinin konum ya da şekilden kaynaklandığını öğrendin; ikisini benzerlik ve farklarıyla karşılaştırdın, düşen elmada ve salıncakta enerjinin bir türden diğerine geçtiğini fark ettin. Bu hafta bu dönüşümleri yakından izleyeceksin. Düşen bir cisimde, salınan bir sarkaçta, zıplayan bir topta ve lunapark treninde kinetik ve potansiyel enerjinin nasıl değiştiğini tablolarla inceleyecek, bu örneklerdeki ortak örüntüyü bulacak ve tümevarımla enerjinin korunduğu genellemesine ulaşacaksın.",
+ "bolumler": [
+  {
+   "baslik": "Kinetik ve potansiyel enerjiyi hatırla",
+   "metin": [
+    "Kinetik enerji, hareket eden cisimlerin hareketlerinden dolayı sahip olduğu enerjidir; cismin kütlesi ve sürati arttıkça artar. Duran bir cismin kinetik enerjisi yoktur.",
+    "Çekim potansiyel enerjisi, cismin yerden yüksekte olmasından kaynaklanır; kütle ve yükseklik arttıkça artar. Esneklik potansiyel enerjisi ise gerilmiş ya da sıkıştırılmış esnek cisimlerde depolanır.",
+    "İki enerji türü de joule (J) ile ölçülür ve iş yapabilir. En önemli ortak özellikleri birbirine dönüşebilmeleridir. Bu hafta bu dönüşümü sayılarla izleyeceksin."
+   ],
+   "tablo": {
+    "basliklar": [
+     "",
+     "Kinetik enerji",
+     "Çekim potansiyel enerjisi"
+    ],
+    "satirlar": [
+     [
+      "Kaynağı",
+      "Hareket",
+      "Yükseklik (konum)"
+     ],
+     [
+      "Bağlı olduğu değişkenler",
+      "Kütle ve sürat",
+      "Kütle ve yükseklik"
+     ],
+     [
+      "Duran cisimde",
+      "Yoktur",
+      "Yüksekteyse vardır"
+     ],
+     [
+      "Birimi",
+      "Joule (J)",
+      "Joule (J)"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Ortak özellik",
+    "metin": "Kinetik ve potansiyel enerji birbirine dönüşebilir; bu dönüşüm enerjinin korunumunu anlamanın anahtarıdır."
+   }
+  },
+  {
+   "baslik": "Örüntü 1: Düşen bir cisim",
+   "metin": [
+    "Bir topu belirli bir yükseklikten serbest bırakalım ve hava direncini yok sayalım. Bırakıldığı anda top durgundur; kinetik enerjisi sıfır, çekim potansiyel enerjisi en büyüktür. Bu enerjinin 20 J olduğunu düşün.",
+    "Top düşerken yüksekliği azalır, sürati artar. Yolun yarısında potansiyel enerjinin yarısı kinetik enerjiye dönüşmüştür: 10 J potansiyel, 10 J kinetik enerji. Yere çarpmadan hemen önce yükseklik neredeyse sıfırdır; potansiyel enerji neredeyse tamamen kinetik enerjiye dönüşmüştür: yaklaşık 0 J potansiyel, 20 J kinetik enerji.",
+    "Tablodaki sayılara dikkat et: Potansiyel enerji ne kadar azalıyorsa kinetik enerji o kadar artıyor. İkisinin toplamı her noktada aynı kalıyor: 20 J."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Konum",
+     "Potansiyel enerji",
+     "Kinetik enerji",
+     "Toplam"
+    ],
+    "satirlar": [
+     [
+      "Bırakıldığı an (en yüksek)",
+      "20 J",
+      "0 J",
+      "20 J"
+     ],
+     [
+      "Yolun yarısı",
+      "10 J",
+      "10 J",
+      "20 J"
+     ],
+     [
+      "Yere çarpmadan hemen önce",
+      "0 J",
+      "20 J",
+      "20 J"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "bilgi",
+    "baslik": "Hava direnci yok sayıldığında",
+    "metin": "Hava direnci ve sürtünme yok sayılırsa potansiyel enerjideki azalma, kinetik enerjideki artışa eşittir."
+   }
+  },
+  {
+   "baslik": "Örüntü 2: Sarkaç ve salıncak",
+   "metin": [
+    "Bir ipin ucuna bağlı ağırlıktan oluşan sarkacı bir yana çekip bıraktığında sarkaç gidip gelir. En yüksek noktalarda sarkaç bir an durur; burada kinetik enerji sıfır, potansiyel enerji en büyüktür. En alçak noktadan geçerken sürat en büyüktür; burada kinetik enerji en büyük, potansiyel enerji en küçüktür.",
+    "Sarkaç inerken potansiyel enerji kinetik enerjiye, çıkarken kinetik enerji potansiyel enerjiye dönüşür. Bu dönüşüm her salınımda tekrarlanır. Salıncakta sallanan bir çocukta da aynı örüntü görülür.",
+    "Sürtünme yok sayılırsa sarkaç her seferinde aynı yüksekliğe çıkar. Bu, enerjinin kaybolmadığını, yalnızca bir türden diğerine geçtiğini gösterir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Sarkacın konumu",
+     "Kinetik enerji",
+     "Potansiyel enerji"
+    ],
+    "satirlar": [
+     [
+      "Sol en yüksek nokta",
+      "Sıfır",
+      "En büyük"
+     ],
+     [
+      "En alçak nokta",
+      "En büyük",
+      "En küçük"
+     ],
+     [
+      "Sağ en yüksek nokta",
+      "Sıfır",
+      "En büyük"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "kural",
+    "baslik": "İnerken ve çıkarken",
+    "metin": "İnerken potansiyel enerji kinetik enerjiye, çıkarken kinetik enerji potansiyel enerjiye dönüşür."
+   }
+  },
+  {
+   "baslik": "Örüntü 3: Zıplayan top, yay ve lunapark treni",
+   "metin": [
+    "Yukarı doğru atılan bir topta, atıldığı anda kinetik enerji en büyüktür. Top yükseldikçe yavaşlar; kinetik enerjisi çekim potansiyel enerjisine dönüşür. En yüksek noktada bir an durur, sonra düşerken potansiyel enerji yeniden kinetik enerjiye dönüşür.",
+    "Yere çarpan top bir an için yassılaşır: Kinetik enerji esneklik potansiyel enerjisine dönüşür. Top eski şekline dönerken bu enerji yeniden kinetik enerjiye dönüşür ve top zıplar. Sıkıştırılmış bir yay bırakıldığında da esneklik potansiyel enerjisi kinetik enerjiye dönüşür.",
+    "Lunapark treni ilk yokuşun tepesine motorla çekilir ve büyük bir potansiyel enerji kazanır. Sonra motorsuz olarak iner; inişlerde potansiyel enerji kinetik enerjiye, çıkışlarda kinetik enerji potansiyel enerjiye dönüşür. Bu yüzden sonraki tepeler ilk tepeden daha alçak yapılır."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Neden ilk tepe en yüksek?",
+    "metin": "Lunapark treni ilk tepede kazandığı enerjiyle yol alır. Sürtünme nedeniyle enerjisinin bir kısmı başka türlere dönüştüğü için sonraki tepelere aynı yüksekliğe çıkamaz."
+   }
+  },
+  {
+   "baslik": "Tümevarım: örneklerden genellemeye",
+   "metin": [
+    "Tümevarım, tek tek örneklerde gözlenen ortak örüntüden genel bir sonuca ulaşmaktır. Düşen topta, sarkaçta, zıplayan topta ve lunapark treninde aynı şeyi gördün: Bir enerji türü azaldığında diğeri artıyor; toplam enerji ise (sürtünme yok sayıldığında) aynı kalıyor.",
+    "Bir cismin kinetik ve potansiyel enerjilerinin toplamına mekanik enerji denir. Sürtünmenin olmadığı durumlarda mekanik enerji korunur, yani sabit kalır. Bu örneklerden şu genellemeye ulaşırsın: Enerji yoktan var edilemez, var olan enerji de yok edilemez; enerji yalnızca bir türden başka bir türe dönüşür. Buna enerjinin korunumu denir.",
+    "Genellemeni yeni örneklerle sınarsın: Barajdaki su, kayakçı, ok ve yay, havaya atılan anahtar… Her birinde enerjinin bir türden diğerine geçtiğini ve toplamın korunduğunu görürsen genellemen güçlenir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Örnek",
+     "Dönüşüm"
+    ],
+    "satirlar": [
+     [
+      "Düşen top",
+      "Potansiyel → kinetik"
+     ],
+     [
+      "Yukarı atılan top",
+      "Kinetik → potansiyel"
+     ],
+     [
+      "Gerilen yaydan fırlayan ok",
+      "Esneklik potansiyel → kinetik"
+     ],
+     [
+      "Barajdan akan su",
+      "Potansiyel → kinetik"
+     ]
+    ]
+   },
+   "kutu": {
+    "tur": "tanim",
+    "baslik": "Enerjinin korunumu",
+    "metin": "Enerji yoktan var edilemez, var olan enerji yok edilemez; yalnızca bir türden başka bir türe dönüşür."
+   }
+  },
+  {
+   "baslik": "Sürtünme varken enerji nereye gider?",
+   "metin": [
+    "Gerçek hayatta sarkaç bir süre sonra durur, zıplayan top her seferinde biraz daha alçağa çıkar. Bu, enerjinin yok olduğu anlamına mı gelir? Hayır. Sürtünme ve hava direnci, mekanik enerjinin bir kısmının ısı enerjisine ve ses enerjisine dönüşmesine yol açar.",
+    "Ellerini birbirine sürttüğünde ısınması, frene basılan bisikletin tekerleğinin ısınması ve yere düşen topun ses çıkarması bu dönüşümün örnekleridir. Mekanik enerji azalır ama toplam enerji korunur; azalan kısım ısı ve ses olarak çevreye yayılır.",
+    "Bu yüzden enerjinin korunumunu söylerken iki durumu ayırırsın: Sürtünme yoksa mekanik enerji korunur. Sürtünme varsa mekanik enerji azalır, ama ısı ve ses dâhil toplam enerji yine korunur. Enerji dönüşümlerini gelecek hafta daha ayrıntılı inceleyeceksin."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Enerji kaybolmaz",
+    "metin": "Duran sarkaçta enerji yok olmamıştır; ısı ve ses enerjisine dönüşerek çevreye yayılmıştır."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Bir saksı balkon korkuluğundan düşüyor. Saksının çekim potansiyel enerjisi korkulukta 30 J’dür. Hava direnci yok sayılırsa yolun yarısında ve yere çarpmadan hemen önce kinetik ve potansiyel enerjisi ne olur?",
+   "cevap": "Yolun yarısında potansiyel enerjinin yarısı kinetik enerjiye dönüşür: 15 J potansiyel, 15 J kinetik. Yere çarpmadan hemen önce potansiyel enerji yaklaşık 0 J, kinetik enerji yaklaşık 30 J olur. Toplam her noktada 30 J’dür."
+  },
+  {
+   "soru": "Bir salıncakta sallanan çocuğun kinetik enerjisi hangi noktada en büyük, hangi noktada sıfırdır?",
+   "cevap": "Kinetik enerji, sürat en büyük olduğu için salıncağın en alçak noktasında en büyüktür. Salıncağın en yüksek noktalarında çocuk bir an durduğu için kinetik enerji sıfırdır; bu noktalarda potansiyel enerji en büyüktür."
+  },
+  {
+   "soru": "Yere çarpıp zıplayan bir topta hangi enerji dönüşümleri gerçekleşir?",
+   "cevap": "Top düşerken çekim potansiyel enerjisi kinetik enerjiye dönüşür. Yere çarpınca yassılaşır; kinetik enerji esneklik potansiyel enerjisine dönüşür. Eski şekline dönerken esneklik potansiyel enerjisi kinetik enerjiye, yükselirken kinetik enerji çekim potansiyel enerjisine dönüşür."
+  },
+  {
+   "soru": "Lunapark treninde neden ikinci tepe birinci tepeden daha alçak yapılır?",
+   "cevap": "Tren motorsuz olarak ilk tepede kazandığı enerjiyle ilerler. Sürtünme ve hava direnci nedeniyle mekanik enerjinin bir kısmı ısı ve ses enerjisine dönüşür. Tren ilk tepedeki yüksekliğe yeniden çıkacak kadar mekanik enerjiye sahip olmadığı için sonraki tepeler daha alçak yapılır."
+  },
+  {
+   "soru": "Bir öğrenci “Sarkaç durduğuna göre enerjisi yok oldu.” diyor. Bu görüşü enerjinin korunumuyla değerlendir.",
+   "cevap": "Görüş yanlıştır. Sürtünme ve hava direnci nedeniyle sarkacın mekanik enerjisi zamanla ısı ve ses enerjisine dönüşmüştür. Enerji yok olmamış, başka türlere dönüşerek çevreye yayılmıştır; toplam enerji korunmuştur."
+  },
+  {
+   "soru": "Hava direnci yok sayıldığında yukarı doğru 12 J kinetik enerjiyle atılan bir topun en yüksek noktadaki potansiyel enerjisi ne olur? (Atıldığı noktadaki potansiyel enerjiyi sıfır kabul et.)",
+   "cevap": "En yüksek noktada top bir an durur; kinetik enerjisi sıfırdır. Kinetik enerjinin tamamı potansiyel enerjiye dönüştüğü için potansiyel enerji 12 J olur. Mekanik enerji korunur: 12 J."
+  }
+ ],
+ "ozet": [
+  "Kinetik enerji kütle ve sürate, çekim potansiyel enerjisi kütle ve yüksekliğe bağlıdır; ikisi de joule ile ölçülür ve birbirine dönüşebilir.",
+  "Düşen cisimde potansiyel enerji azalırken kinetik enerji artar; hava direnci yok sayılırsa azalma ile artış eşittir ve toplam aynı kalır.",
+  "Sarkaç ve salıncakta en yüksek noktada kinetik enerji sıfır, potansiyel enerji en büyük; en alçak noktada kinetik enerji en büyüktür. Zıplayan topta ve yayda esneklik potansiyel enerjisi de dönüşüme katılır.",
+  "Kinetik ve potansiyel enerjinin toplamı mekanik enerjidir; sürtünme yoksa mekanik enerji korunur. Tümevarımla ulaşılan genelleme: Enerji yoktan var edilemez, yok edilemez; yalnızca bir türden diğerine dönüşür.",
+  "Sürtünme ve hava direnci mekanik enerjinin bir kısmını ısı ve ses enerjisine dönüştürür; mekanik enerji azalır ama toplam enerji korunur."
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Serbest bırakılan bir cisim düşerken (hava direnci yok sayıldığında) aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Potansiyel enerji artar, kinetik enerji azalır.",
+    "Potansiyel enerji azalır, kinetik enerji artar.",
+    "İkisi de artar.",
+    "İkisi de azalır."
+   ],
+   "dogru": 1,
+   "aciklama": "Cisim alçaldıkça potansiyel enerjisi azalır, hızlandıkça kinetik enerjisi artar; toplam aynı kalır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Sürtünmenin olmadığı bir ortamda bir cismin mekanik enerjisi için ne söylenebilir?",
+   "secenekler": [
+    "Sürekli artar.",
+    "Sürekli azalır.",
+    "Sabit kalır.",
+    "Önce artar sonra azalır."
+   ],
+   "dogru": 2,
+   "aciklama": "Sürtünme yoksa mekanik enerji korunur; kinetik ve potansiyel enerji birbirine dönüşse de toplamları sabit kalır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir sarkaç zamanla durur. Bunun nedeni aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Enerjinin yok olması",
+    "Mekanik enerjinin ısı ve ses enerjisine dönüşmesi",
+    "Kütlesinin azalması",
+    "Yerçekiminin ortadan kalkması"
+   ],
+   "dogru": 1,
+   "aciklama": "Sürtünme ve hava direnci mekanik enerjinin bir kısmını ısı ve ses enerjisine dönüştürür; enerji yok olmaz."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Her ifadenin doğru mu yanlış mı olduğuna karar ver; yanlış çıkanların açıklamasını oku.",
+   "ifadeler": [
+    {
+     "metin": "Salıncağın en yüksek noktasında kinetik enerji en büyüktür.",
+     "dogru": false,
+     "aciklama": "En yüksek noktada çocuk bir an durur; kinetik enerji sıfır, potansiyel enerji en büyüktür."
+    },
+    {
+     "metin": "Kinetik ve potansiyel enerjinin toplamına mekanik enerji denir.",
+     "dogru": true,
+     "aciklama": "Mekanik enerji = kinetik enerji + potansiyel enerji."
+    },
+    {
+     "metin": "Enerji yoktan var edilebilir.",
+     "dogru": false,
+     "aciklama": "Enerjinin korunumuna göre enerji yoktan var edilemez ve yok edilemez."
+    },
+    {
+     "metin": "Gerilen yaydan fırlayan okta esneklik potansiyel enerjisi kinetik enerjiye dönüşür.",
+     "dogru": true,
+     "aciklama": "Yayda depolanan enerji, oku hareket ettiren kinetik enerjiye dönüşür."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Her olayı içerdiği temel enerji dönüşümüyle eşleştir.",
+   "ciftler": [
+    [
+     "Dalından düşen elma",
+     "Potansiyel → kinetik"
+    ],
+    [
+     "Yukarı atılan anahtar",
+     "Kinetik → potansiyel"
+    ],
+    [
+     "Sıkıştırılıp bırakılan yaylı oyuncak",
+     "Esneklik potansiyel → kinetik"
+    ],
+    [
+     "Frene basılan bisikletin tekerleği",
+     "Kinetik → ısı"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "cumleler": [
+    {
+     "metin": "Tek tek örneklerden genel bir sonuca ulaşmaya ___ denir.",
+     "cevap": "tümevarım"
+    },
+    {
+     "metin": "Kinetik ve potansiyel enerjinin toplamına ___ enerji denir.",
+     "cevap": "mekanik"
+    },
+    {
+     "metin": "Sürtünme, mekanik enerjinin bir kısmını ___ enerjisine dönüştürür.",
+     "cevap": "ısı"
+    }
+   ],
+   "fazla": [
+    "ışık"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir kayakçı tepenin en üstünde durmaktadır ve potansiyel enerjisi 3000 J’dür. Sürtünme yok sayılırsa yokuşun ortasında ve en altında kinetik ve potansiyel enerjisi ne olur? Bir tabloyla göster.",
+   "ipuclari": [
+    "Tepede kayakçı durgun olduğu için kinetik enerjisi sıfırdır.",
+    "Yokuşun ortasında yükseklik yarıya inmişse potansiyel enerjinin yarısı kinetik enerjiye dönüşmüştür."
+   ],
+   "cevap": "Tepe: Potansiyel 3000 J, kinetik 0 J, toplam 3000 J. Yokuşun ortası (yarı yükseklik): Potansiyel 1500 J, kinetik 1500 J, toplam 3000 J. En alt: Potansiyel yaklaşık 0 J, kinetik yaklaşık 3000 J, toplam 3000 J. Mekanik enerji her noktada korunur."
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bu hafta incelediğin örneklerden tümevarımla enerjinin korunumu genellemesine nasıl ulaştığını adım adım açıkla. Genellemeni sınamak için yeni bir örnek ver.",
+   "ipuclari": [
+    "Düşen top, sarkaç, zıplayan top ve lunapark treninde ortak olarak ne gözledin?",
+    "Yeni örneğinde enerjinin hangi türden hangi türe dönüştüğünü ve toplamın ne olduğunu söyle."
+   ],
+   "cevap": "1. Düşen topta potansiyel enerji azalırken kinetik enerji arttı, toplam aynı kaldı. 2. Sarkaçta inerken ve çıkarken enerji türleri birbirine dönüştü, toplam aynı kaldı. 3. Zıplayan top ve lunapark treninde de aynı örüntü görüldü; sürtünme varken eksilen kısım ısı ve sese dönüştü. Genelleme: Enerji yoktan var edilemez, yok edilemez; yalnızca bir türden diğerine dönüşür. Yeni örnek: Barajdaki suyun potansiyel enerjisi akarken kinetik enerjiye dönüşür; toplam enerji korunur."
+  }
+ ]
+}
