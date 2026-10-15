@@ -1,0 +1,402 @@
+{
+  "tablo": "7-matematik",
+  "sinif": 7,
+  "ders": "MATEMATİK",
+  "donem": 1,
+  "kod": "MAT.7.3.2",
+  "ifade": "Yansıma dönüşümündeki deneyimlerini orta dikme ve açıortay inşasına yansıtabilme",
+  "konu": "Orta Dikme ve Açıortay İnşası",
+  "sorular": [
+    {
+      "puan": 15,
+      "duzey": "kavrama",
+      "giris": "A′ noktası, A'nın d doğrusuna göre yansımasıdır; P noktası d üzerindedir.",
+      "gorsel": {
+        "tur": "kareli",
+        "genislik": 36,
+        "en": 8,
+        "boy": 6,
+        "dogrular": [
+          {
+            "x1": 4,
+            "y1": 6,
+            "x2": 4,
+            "y2": 0,
+            "ad": "d",
+            "dx": 0.35,
+            "dy": 0.75
+          }
+        ],
+        "noktalar": [
+          {
+            "x": 1,
+            "y": 2,
+            "ad": "A"
+          },
+          {
+            "x": 7,
+            "y": 2,
+            "ad": "A′",
+            "dx": 0.15
+          },
+          {
+            "x": 4,
+            "y": 5,
+            "ad": "P",
+            "dx": 0.4,
+            "dy": 0.1
+          }
+        ]
+      },
+      "maddeler": [
+        "d doğrusu ile [AA′] doğru parçası arasındaki iki ilişkiyi yazınız.",
+        "|PA| ve |PA′| için ne söylenebilir? Nedenini yansıma ile açıklayınız.",
+        "Bu özelliklere göre d doğrusu [AA′] için nasıl adlandırılır?"
+      ],
+      "cevap": [
+        "a) d, [AA′] doğru parçasına diktir ve onu iki eş parçaya ayırır (orta noktasından geçer).",
+        "b) |PA| = |PA′|: P'nin görüntüsü kendisidir; [PA]'nın görüntüsü [PA′] olur, yansıma uzunluğu korur.",
+        "c) d doğrusu [AA′] doğru parçasının orta dikmesidir."
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "analiz",
+      "giris": [
+        "[AB] doğru parçasının orta dikmesini inşa etme adımları karışık verilmiştir:",
+        "<b>K)</b> Pergelin açıklığını değiştirmeden sivri ucunu B'ye koyarak aynı biçimde iki yay çiziniz.<br><b>L)</b> Pergeli |AB| uzunluğunun yarısından daha fazla açınız.<br><b>M)</b> Yayların kesiştiği iki noktayı cetvelle birleştiriniz.<br><b>N)</b> Pergelin sivri ucunu A'ya koyarak [AB]'nin üstünde ve altında birer yay çiziniz."
+      ],
+      "maddeler": [
+        "Adımları doğru sıraya koyunuz.",
+        "Pergel |AB| uzunluğunun yarısından daha az açılırsa ne olur? Açıklayınız."
+      ],
+      "cevap": [
+        "a) L → N → K → M",
+        "b) A ve B merkezli yaylar kesişmez; orta dikmenin geçtiği noktalar bulunamaz."
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "uygulama",
+      "giris": "Aşağıdaki [AB] doğru parçasının uzunluğu 6 cm'dir.",
+      "gorsel": {
+        "tur": "cizim",
+        "genislik": 90,
+        "kutu": [
+          0,
+          0,
+          360,
+          160
+        ],
+        "kalin": 2,
+        "oge": [
+          [
+            "cizgi",
+            60,
+            80,
+            300,
+            80
+          ],
+          [
+            "nokta",
+            60,
+            80
+          ],
+          [
+            "nokta",
+            300,
+            80
+          ],
+          [
+            "yazi",
+            48,
+            96,
+            "A",
+            15
+          ],
+          [
+            "yazi",
+            312,
+            96,
+            "B",
+            15
+          ],
+          [
+            "cevap",
+            [
+              [
+                "yay",
+                60,
+                80,
+                140,
+                18.002719133873985,
+                44.00271913387398
+              ],
+              [
+                "yay",
+                60,
+                80,
+                140,
+                -44.00271913387398,
+                -18.002719133873985
+              ],
+              [
+                "yay",
+                300,
+                80,
+                140,
+                135.997280866126,
+                161.997280866126
+              ],
+              [
+                "yay",
+                300,
+                80,
+                140,
+                198.002719133874,
+                224.002719133874
+              ],
+              [
+                "cizgi",
+                180,
+                3,
+                180,
+                157
+              ],
+              [
+                "nokta",
+                180,
+                80
+              ],
+              [
+                "yazi",
+                194,
+                96,
+                "M",
+                15
+              ]
+            ]
+          ]
+        ]
+      },
+      "maddeler": [
+        "[AB]'nin orta dikmesini pergel ve cetvel kullanarak inşa ediniz. Orta dikmenin [AB]'yi kestiği noktayı M ile gösteriniz.",
+        "|AM| ve |MB| uzunluklarını ölçerek yazınız."
+      ],
+      "bosluk": 9,
+      "cevap": [
+        "a) İnşa kırmızı ile gösterilmiştir. b) |AM| = |MB| = 3 cm"
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "uygulama",
+      "giris": "Aşağıda ölçüsü 70° olan AOB açısı verilmiştir.",
+      "gorsel": {
+        "tur": "cizim",
+        "genislik": 90,
+        "kutu": [
+          0,
+          0,
+          360,
+          200
+        ],
+        "kalin": 2,
+        "oge": [
+          [
+            "cizgi",
+            30,
+            180,
+            320,
+            180
+          ],
+          [
+            "cizgi",
+            30,
+            180,
+            90.2,
+            14.6
+          ],
+          [
+            "nokta",
+            30,
+            180
+          ],
+          [
+            "yazi",
+            18,
+            184,
+            "O",
+            15
+          ],
+          [
+            "yazi",
+            332,
+            185,
+            "A",
+            15
+          ],
+          [
+            "yazi",
+            76.2,
+            22.6,
+            "B",
+            15
+          ],
+          [
+            "cevap",
+            [
+              [
+                "yay",
+                30,
+                180,
+                100,
+                -6,
+                76
+              ],
+              [
+                "yay",
+                130,
+                180,
+                80,
+                69.8,
+                91.8
+              ],
+              [
+                "yay",
+                64.2,
+                86.0,
+                80,
+                -21.8,
+                0.2
+              ],
+              [
+                "cizgi",
+                30,
+                180,
+                275.7,
+                7.9
+              ],
+              [
+                "yazi",
+                279.7,
+                23.9,
+                "C",
+                15
+              ],
+              [
+                "yazi",
+                92.9,
+                165.2,
+                "35°",
+                12
+              ],
+              [
+                "yazi",
+                70.2,
+                132.6,
+                "35°",
+                12
+              ]
+            ]
+          ]
+        ]
+      },
+      "maddeler": [
+        "AOB açısının açıortayını pergel ve cetvel kullanarak inşa ediniz.",
+        "Açıortayın açıyı ayırdığı açıların ölçülerini yazınız. Açıortay, açının kolları için nasıl bir doğrudur?"
+      ],
+      "bosluk": 12,
+      "cevap": [
+        "a) İnşa kırmızı ile gösterilmiştir. b) 35° ve 35°. Açıortay açının simetri doğrusudur: [OA ışınının açıortaya göre yansıması [OB ışınıdır."
+      ]
+    },
+    {
+      "puan": 20,
+      "duzey": "analiz",
+      "giris": "A ve B köylerine eşit uzaklıkta olacak biçimde, kareli zemindeki yolun üzerine bir otobüs durağı yapılacaktır.",
+      "gorsel": {
+        "tur": "kareli",
+        "genislik": 54,
+        "en": 11,
+        "boy": 7,
+        "dogrular": [
+          {
+            "x1": 0,
+            "y1": 6,
+            "x2": 11,
+            "y2": 6,
+            "ad": "yol",
+            "dx": -0.9,
+            "dy": 0.75
+          },
+          {
+            "x1": 7,
+            "y1": 0,
+            "x2": 2.333,
+            "y2": 7,
+            "cevap": true
+          },
+          {
+            "x1": 2,
+            "y1": 1,
+            "x2": 8,
+            "y2": 5,
+            "kesik": true,
+            "cevap": true
+          }
+        ],
+        "noktalar": [
+          {
+            "x": 2,
+            "y": 1,
+            "ad": "A",
+            "dx": -0.45,
+            "dy": -0.2
+          },
+          {
+            "x": 8,
+            "y": 5,
+            "ad": "B",
+            "dx": 0.45,
+            "dy": -0.1
+          },
+          {
+            "x": 3,
+            "y": 6,
+            "ad": "D",
+            "dx": -0.45,
+            "dy": 0.75,
+            "cevap": true
+          }
+        ]
+      },
+      "maddeler": [
+        "Durağın yerini bulup D ile gösteriniz. Nasıl bulduğunuzu açıklayınız.",
+        "Durağın iki köye eşit uzaklıkta olduğunu pergelle nasıl doğrularsınız?"
+      ],
+      "cevap": [
+        "a) D, [AB]'nin orta dikmesinin yolu kestiği noktadır (kırmızı). Orta dikme üzerindeki her nokta A ve B'ye eşit uzaklıktadır.",
+        "b) Pergel D'ye konup A'ya kadar açılır ve yay çizilir; yay B'den de geçer."
+      ]
+    },
+    {
+      "puan": 20,
+      "duzey": "değerlendirme",
+      "giris": "Öğrencilerin orta dikme ve açıortay ile ilgili önermeleri aşağıda verilmiştir.",
+      "vurgu": "Her önermeyi kabul ya da çürütünüz; gerekçenizi yansıma dönüşümüyle ya da bir örnekle açıklayınız.",
+      "maddeler": [
+        "Elif: \"Bir açının açıortayı, o açının simetri doğrusudur.\"",
+        "Mert: \"Bir doğru parçasının orta dikmesi üzerindeki her nokta, uç noktalara eşit uzaklıktadır.\"",
+        "Zeynep: \"A ve B merkezli yayları farklı pergel açıklıklarıyla çizsek de kesişim noktaları orta dikme üzerinde olur.\"",
+        "Can: \"Bir üçgende bir kenarın orta dikmesi her zaman karşısındaki köşeden geçer.\""
+      ],
+      "cevap": [
+        "a) Kabul: bir kol açıortaya göre yansıtılınca öbür kolun üzerine gelir.",
+        "b) Kabul: uç noktalar orta dikmeye göre birbirinin yansımasıdır; uzaklıklar eşittir.",
+        "c) Çürütülür: yarıçaplar farklıysa kesişim noktası A ve B'ye eşit uzaklıkta olmaz.",
+        "ç) Çürütülür: yalnız karşı köşe kenarın uçlarına eşit uzaklıktaysa geçer (ikizkenar üçgende tabanın orta dikmesi). Ör. kenarları 3, 4, 5 cm olan üçgende hiçbiri geçmez."
+      ]
+    }
+  ]
+}

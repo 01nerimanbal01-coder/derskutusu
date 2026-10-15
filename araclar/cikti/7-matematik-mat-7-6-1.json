@@ -1,0 +1,230 @@
+{
+  "tablo": "7-matematik",
+  "sinif": 7,
+  "ders": "MATEMATİK",
+  "donem": 1,
+  "kod": "MAT.7.6.1",
+  "ifade": "Kategorik veya nicel (sürekli) veri ile çalışabilme ve veriye dayalı karar verebilme",
+  "konu": "Kategorik ve Nicel (Sürekli) Veri Dağılımları",
+  "sorular": [
+    {
+      "puan": 15,
+      "duzey": "kavrama",
+      "giris": "Aşağıdaki soruların istatistiksel araştırma sorusu olup olmadığını belirtiniz. İstatistiksel araştırma sorusu olanlarda toplanacak verinin kategorik mi, nicel (sürekli) mi olduğunu yazınız.",
+      "gorsel": {
+        "tur": "tablo",
+        "konum": "alt",
+        "genislik": 172,
+        "basliklar": [
+          "Soru",
+          "Araştırma sorusu mu?",
+          "Verinin türü"
+        ],
+        "satirlar": [
+          [
+            "<div style=\"text-align:left\">a) Sınıfımızdaki öğrencilerin boy uzunlukları nasıl dağılır?</div>",
+            {
+              "b": "Evet"
+            },
+            {
+              "b": "<span style=\"white-space:nowrap\">Nicel (sürekli)</span>"
+            }
+          ],
+          [
+            "<div style=\"text-align:left\">b) Okul bahçesindeki çınar ağacının boyu kaç metredir?</div>",
+            {
+              "b": "Hayır"
+            },
+            {
+              "b": "<span style=\"white-space:nowrap\">—</span>"
+            }
+          ],
+          [
+            "<div style=\"text-align:left\">c) Öğrenciler okula en çok hangi ulaşım yoluyla gelir?</div>",
+            {
+              "b": "Evet"
+            },
+            {
+              "b": "<span style=\"white-space:nowrap\">Kategorik</span>"
+            }
+          ],
+          [
+            "<div style=\"text-align:left\">ç) Öğrencilerin evden okula gelme süreleri ne kadardır?</div>",
+            {
+              "b": "Evet"
+            },
+            {
+              "b": "<span style=\"white-space:nowrap\">Nicel (sürekli)</span>"
+            }
+          ]
+        ]
+      },
+      "bosluk": 0,
+      "cevap": [
+        "Tablodaki kırmızı değerler. b) tek ölçümle cevaplanır, verilerde değişkenlik yoktur."
+      ]
+    },
+    {
+      "puan": 20,
+      "duzey": "analiz",
+      "giris": "Zeynep, yetiştirdiği fasulye fidesinin boyunu 6 hafta boyunca her hafta sonunda ölçüp yandaki çizgi grafiğinde göstermiştir.",
+      "gorsel": {
+        "tur": "cizgi_grafigi",
+        "genislik": 62,
+        "w": 260,
+        "h": 140,
+        "kategoriler": [
+          "1.",
+          "2.",
+          "3.",
+          "4.",
+          "5.",
+          "6."
+        ],
+        "seriler": [
+          {
+            "degerler": [
+              2,
+              5,
+              9,
+              12,
+              14,
+              15
+            ]
+          }
+        ],
+        "ust": 16,
+        "adim": 1,
+        "etiket_adim": 2,
+        "eksen_adi": "Boy (cm)",
+        "baslik": "Hafta"
+      },
+      "maddeler": [
+        "Boyun en çok arttığı iki hafta arasını ve artışı (cm) yazınız.",
+        "Bu veri için çizgi grafiğinin seçilme gerekçesini yazınız.",
+        "7. hafta sonundaki boy için gerekçeli bir tahminde bulununuz."
+      ],
+      "cevap": [
+        "a) 2. ve 3. haftalar arası: 9 − 5 = 4 cm (öbür artışlar 3, 3, 2 ve 1 cm)",
+        "b) Boy zamanla sürekli değişir; çizgi grafiği değişimin hızlanıp yavaşladığını gösterir.",
+        "c) Yaklaşık 15-16 cm: haftalık artış 2 cm'den 1 cm'ye düşmüş, büyüme yavaşlamıştır."
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "uygulama",
+      "giris": "Bir fırında 250 g diye satılan 12 ekmeğin kütleleri nokta grafiğinde verilmiştir.",
+      "gorsel": {
+        "tur": "nokta",
+        "genislik": 64,
+        "w": 260,
+        "min": 246,
+        "max": 254,
+        "sayilar": {
+          "247": 1,
+          "248": 1,
+          "249": 2,
+          "250": 4,
+          "251": 2,
+          "252": 1,
+          "253": 1
+        },
+        "baslik": "Ekmeğin kütlesi (g)"
+      },
+      "maddeler": [
+        "Aritmetik ortalama, ortanca, tepe değer ve açıklığı bulunuz.",
+        "Belediye, ortalaması 250 g'dan az olan ya da 247 g'dan hafif ekmeği bulunan fırını uyarır. Bu fırın uyarılmalı mı? Neden?"
+      ],
+      "cevap": [
+        "a) Ortalama 3000 : 12 = 250 g; ortanca 250 g; tepe değer 250 g; açıklık 253 − 247 = 6 g",
+        "b) Uyarılmamalıdır: ortalama 250 g'dan az değildir, en hafif ekmek 247 g'dır."
+      ]
+    },
+    {
+      "puan": 20,
+      "duzey": "değerlendirme",
+      "giris": "Koşu takımına bir öğrenci seçilecektir. Ali ve Berk'in 5 antrenmandaki 100 m koşu süreleri (saniye) tabloda verilmiştir.",
+      "gorsel": {
+        "tur": "tablo",
+        "konum": "alt",
+        "genislik": 160,
+        "basliklar": [
+          "Öğrenci",
+          "1.",
+          "2.",
+          "3.",
+          "4.",
+          "5.",
+          "Aritmetik ortalama",
+          "Ortalama mutlak sapma"
+        ],
+        "satirlar": [
+          [
+            "Ali",
+            "15",
+            "14",
+            "16",
+            "13",
+            "17",
+            {
+              "b": "15"
+            },
+            {
+              "b": "1,2"
+            }
+          ],
+          [
+            "Berk",
+            "15",
+            "15",
+            "14",
+            "16",
+            "15",
+            {
+              "b": "15"
+            },
+            {
+              "b": "0,4"
+            }
+          ]
+        ]
+      },
+      "maddeler": [
+        "Tablodaki boş yerleri doldurunuz. İşlemlerinizi aşağıya yazınız.",
+        "Takıma, süreleri daha az değişen (daha istikrarlı) koşucu seçilecektir. Hangi öğrenci seçilmelidir? Gerekçesiyle yazınız."
+      ],
+      "cevap": [
+        "a) Ali: 75 : 5 = 15; (0 + 1 + 1 + 2 + 2) : 5 = 1,2. Berk: 75 : 5 = 15; (0 + 0 + 1 + 1 + 0) : 5 = 0,4",
+        "b) Berk: ortalamalar eşit, Berk'in ortalama mutlak sapması (0,4) daha küçüktür."
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "analiz",
+      "giris": "Aşağıdaki araştırmalarda toplanan verileri göstermek için sütun grafiği, çizgi grafiği ve nokta grafiğinden en uygun olanı seçiniz. Seçiminizin gerekçesini yazınız.",
+      "maddeler": [
+        "Bir gün boyunca okul bahçesinde her saat başı ölçülen hava sıcaklığının değişimi",
+        "7/A sınıfındaki 28 öğrencinin en sevdiği spor dalı",
+        "Sınıftaki 20 öğrencinin santimetre cinsinden (tam sayıya yuvarlanmış) boy uzunluklarının dağılımı"
+      ],
+      "cevap": [
+        "a) Çizgi grafiği: sıcaklığın zamana bağlı değişimi (artış ve azalışlar) gösterilir.",
+        "b) Sütun grafiği: veri kategoriktir; her spor dalını seçenlerin sayısı karşılaştırılır.",
+        "c) Nokta grafiği: her boy değerinin kaç kez tekrarlandığı, verinin nerede toplandığı ve açıklığı görülür."
+      ]
+    },
+    {
+      "puan": 15,
+      "duzey": "değerlendirme",
+      "giris": "Ece, \"Okulumuzdaki öğrenciler günde kaç dakika kitap okuyor?\" sorusunu araştırmak için bir teneffüste kütüphanedeki 8 öğrenciye \"Kitap okumayı sever misiniz, günde kaç dakika okursunuz?\" diye sormuştur. Cevapların ortalamasını 55 dakika bulan Ece, \"Okulumuzdaki öğrenciler günde ortalama 55 dakika kitap okuyor.\" sonucuna varmıştır.",
+      "maddeler": [
+        "Ece'nin sonucunun araştırma sorusuna ne düzeyde cevap verdiğini değerlendiriniz.",
+        "Araştırmanın uygun olmayan adımlarını yeniden planlayınız: kimlerden, kaç kişiden ve hangi soruyla veri toplanmalıdır?"
+      ],
+      "cevap": [
+        "a) Yeterli cevap vermez: veri yalnız kütüphanedeki öğrencilerden toplandığı için yanlıdır; 8 öğrenci okulu temsil etmez.",
+        "b) Her şubeden rastgele seçilen öğrencilere (ör. beşer kişi) tek ve yönlendirmeyen bir soru: \"Dün kaç dakika kitap okudunuz?\""
+      ]
+    }
+  ]
+}
