@@ -125,3 +125,9 @@ GORSELLER = {
   <text x="625" y="178" text-anchor="middle" font-size="11" fill="#7f1d1d">kalın seslendirilir.</text>
 </svg>'''
 }
+
+
+def uygula(v):
+    for i, k in enumerate(["b1", "b2", "b3", "b4", "b5", "b6"]):
+        if i < len(v.get("bolumler", [])) and k in GORSELLER:
+            v["bolumler"][i]["gorsel"] = GORSELLER[k]
