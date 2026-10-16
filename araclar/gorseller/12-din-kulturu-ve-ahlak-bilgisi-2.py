@@ -13,7 +13,7 @@ GORSELLER = {
   <text x="40" y="111" font-size="11" fill="#1e3a8a">ile başlayan ilim seferberliği.</text>
   <text x="32" y="133" font-size="11" fill="#1e3a8a">• Kur'an ve Sünnet'in anlaşılması</text>
   <text x="40" y="149" font-size="11" fill="#1e3a8a">için <tspan font-weight="700">Tefsir, Hadis, Fıkıh ve</tspan></text>
-  <text x="40" y="165" font-size="11" font-weight="700" fill="#1e3a8a">Kelam</tspan> ilimleri doğdu.</text>
+  <text x="40" y="165" font-size="11" fill="#1e3a8a"><tspan font-weight="700">Kelam</tspan> ilimleri doğdu.</text>
   <text x="32" y="187" font-size="11" fill="#1d4ed8">• Dil, edebiyat ve İslam tarihi</text>
   <text x="40" y="203" font-size="11" fill="#1d4ed8">(Siyer/Megazi) çalışmaları gelişti.</text>
   <!-- Arrow 1 -->
@@ -141,7 +141,7 @@ GORSELLER = {
   <text x="288" y="66" text-anchor="middle" font-size="11.5" font-weight="800" fill="#ffffff">2. BÜYÜK SELÇUKLU</text>
   <text x="213" y="92" font-size="10.5" fill="#065f46">• Vezir <tspan font-weight="700">Nizamülmülk</tspan></text>
   <text x="221" y="106" font-size="10.5" fill="#065f46">tarafından <tspan font-weight="700">1067'de Bağdat'ta</tspan></text>
-  <text x="221" y="120" font-size="10.5" font-weight="700" fill="#047857">Nizamiye Medresesi</tspan> açıldı.</text>
+  <text x="221" y="120" font-size="10.5" fill="#065f46"><tspan font-weight="700" fill="#047857">Nizamiye Medresesi</tspan> açıldı.</text>
   <text x="213" y="142" font-size="10.5" fill="#065f46">• Dinî ilimlerin yanında</text>
   <text x="221" y="156" font-size="10.5" fill="#065f46">felsefe, matematik, edebiyat</text>
   <text x="221" y="170" font-size="10.5" fill="#065f46">ve astronomi okutuldu.</text>
@@ -211,7 +211,7 @@ GORSELLER = {
   <text x="32" y="94" font-size="10.5" fill="#78350f">• İlk kütüphaneler Emeviler</text>
   <text x="40" y="108" font-size="10.5" fill="#78350f">döneminde mescitlerde doğdu.</text>
   <text x="32" y="128" font-size="10.5" fill="#78350f">• <tspan font-weight="700">794'te Bağdat'ta ilk kâğıt</tspan></text>
-  <text x="40" y="142" font-size="10.5" font-weight="700" fill="#78350f">fabrikasının</tspan> kurulmasıyla</text>
+  <text x="40" y="142" font-size="10.5" fill="#78350f"><tspan font-weight="700">fabrikasının</tspan> kurulmasıyla</text>
   <text x="40" y="156" font-size="10.5" fill="#78350f">kitap sayısı hızla arttı.</text>
   <text x="32" y="176" font-size="10.5" fill="#78350f">• Endülüs başkenti <tspan font-weight="700">Kurtuba'da</tspan></text>
   <text x="40" y="190" font-size="10.5" font-weight="700" fill="#92400e">70 kütüphane</text>
