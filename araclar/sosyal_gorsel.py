@@ -78,6 +78,17 @@ DERSLER = {
     'temel-dini-bilgiler': ('temel-dini-bilgiler', 'TEMEL DİNÎ BİLGİLER', 'Temel Dinî Bilgiler', 'Temel Dinî Bilgiler', 'temeldinibilgiler',
                             ['4f46e5', '6d28d9', '4338ca', '7c3aed']),
     'mesleki-arapca': ('mesleki-arapca', 'MESLEKİ ARAPÇA', 'Mesleki Arapça', 'Mesleki Arapça', 'meslekiarapça', ['312e81', '1e1b4b']),
+    'fikih': ('fikih', 'FIKIH', 'Fıkıh', 'Fıkıh', 'fıkıh', ['7c2d12', '9a3412', 'b45309']),
+    'hadis': ('hadis', 'HADİS', 'Hadis', 'Hadis', 'hadis', ['065f46', '047857', '0f766e']),
+    'siyer': ('siyer', 'SİYER', 'Siyer', 'Siyer', 'siyer', ['166534', '15803d', '14532d']),
+    'akaid': ('akaid', 'AKAİD', 'Akaid', 'Akaid', 'akaid', ['4c1d95', '5b21b6', '6d28d9']),
+    'dinler-tarihi': ('dinler-tarihi', 'DİNLER TARİHİ', 'Dinler Tarihi', 'Dinler Tarihi', 'dinlertarihi', ['78350f', '92400e', 'b45309']),
+    'hitabet-ve-mesleki-uygulama': ('hitabet-ve-mesleki-uygulama', 'HİTABET', 'Hitabet ve Mesleki Uygulama', 'Hitabet ve Mesleki Uygulama',
+                                    'hitabet', ['1e3a8a', '1d4ed8', '0369a1']),
+    'tefsir': ('tefsir', 'TEFSİR', 'Tefsir', 'Tefsir', 'tefsir', ['115e59', '0f766e', '134e4a']),
+    'islam-kultur-ve-medeniyeti': ('islam-kultur-ve-medeniyeti', 'İSLAM KÜLTÜRÜ', 'İslam Kültür ve Medeniyeti', 'İslam Kültür ve Medeniyeti',
+                                   'islamkültürü', ['1e40af', '0369a1', '1d4ed8']),
+    'kelam': ('kelam', 'KELAM', 'Kelam', 'Kelam', 'kelam', ['3730a3', '4338ca', '312e81']),
 }
 
 _fontlar = {}
