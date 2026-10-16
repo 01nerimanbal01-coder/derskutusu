@@ -1,0 +1,263 @@
+{
+  "ad": "11-fizik-2",
+  "sinif": 11,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 2,
+  "tarih": "21-25 Eylül 2026",
+  "yayin_tarihi": "2026-10-16",
+  "unite": "1. Ünite: Kuvvet ve Hareket",
+  "konu": "Serbest Düşme Hareketi ile İlgili Veriler, Matematiksel Modeller ve Grafikler",
+  "ciktilar": [
+    "FİZ.11.1.2. Serbest düşme hareketi ile ilgili kanıt kullanabilme."
+  ],
+  "giris": "Hava direncinin ihmal edildiği bir ortamda yalnızca yer çekimi kuvveti etkisinde gerçekleşen {koyu:serbest düşme hareketi}, düşey doğrultuda yapılan sabit ivmeli bir harekettir. İster durgun hâlden serbest bırakılsın isterse düşey doğrultuda yukarı veya aşağı fırlatılsın, tüm bu hareketler aynı matematiksel modeller ve grafiklerle açıklanır. Bu haftaki dersimizde serbest düşme hareketine ait veri setlerini, matematiksel bağıntıları ve konum-zaman, hız-zaman ile ivme-zaman grafiklerini inceliyoruz.",
+  "ozet": [
+    "{koyu:Serbest Düşmenin Kapsamı:} Sürtünmesiz ortamda yalnızca yer çekimi kuvveti etkisinde hareket eden cisimlerin (ilk hızsız bırakılan, düşey yukarı veya aşağı atılan) yaptığı harekettir; ivmesi daima yerin merkezine doğru {koyu:`g`} kadardır.",
+    "{koyu:İlk Hızsız (`v_0 = 0`) Serbest Düşme Denklemleri:} `t` süre sonunda hız {koyu:`v = g · t`}, düşey yer değiştirme {koyu:`h = {kesir:1|2} · g · {us:t|2}`} ve zamandan bağımsız hız {koyu:`{us:v|2} = 2 · g · h`} bağıntılarıyla hesaplanır.",
+    "{koyu:Ardışık Zamanlarda Alınan Yollar (`h - 3h - 5h`):} İlk hızsız serbest düşen bir cisim eşit zaman aralıklarında sırasıyla {koyu:`h, 3h, 5h, 7h...`} kadar yol alır (`g = 10 m/{us:s|2}` için her saniyede `5 m, 15 m, 25 m, 35 m...`).",
+    "{koyu:İlk Hızı Sıfırdan Farklı (`v_0 != 0`) Serbest Düşme:} Düşey doğrultuda `v_0` ilk hızıyla atılan cisimler için {koyu:`v = v_0 ± g · t`}, {koyu:`h = v_0 · t ± {kesir:1|2} · g · {us:t|2}`} ve {koyu:`{us:v|2} = {us:v_0|2} ± 2 · g · h`} modelleri kullanılır.",
+    "{koyu:Düşey Yukarı Atış ve Tepe Noktası:} Yukarı atılan cismin tepe noktasında (`h_max`) {koyu:anlık hızı sıfırdır (`v = 0`)}, ancak {koyu:ivmesi sıfır değildir} ve aşağı yönde `g` olarak devam eder (`t_cikis = {kesir:v_0|g}`).",
+    "{koyu:Hareket Grafikleri:} Aşağı yön negatif (`-y`) seçildiğinde ivme-zaman grafiği {koyu:`a = -g` sabit doğrusu}, hız-zaman grafiği {koyu:eğimi `-g` olan eğik doğru}, konum-zaman grafiği ise {koyu:parabolik eğri} şeklindedir."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Serbest Düşme Hareketi ve Sabit İvmeli Hareket Modelleri",
+      "metin": [
+        "Fizikte {koyu:serbest düşme} terimi yalnızca durgun hâlden (`v_0 = 0`) bırakılan cisimler için değil; düşey doğrultuda yukarı veya aşağı doğru belirli bir ilk hızla atıldıktan sonra yalnızca yer çekimi kuvvetinin etkisi altında hareket eden tüm cisimler için kullanılır. Hava sürtünmesi ihmal edildiğinde ve hareket yüksekliği Dünya yarıçapına göre küçük olduğunda yer çekimi ivmesi ({koyu:`g ≈ 9,8 m/{us:s|2}`}, problem çözümlerinde çoğunlukla {koyu:`10 m/{us:s|2}`}) sabit kabul edilir.",
+        "Bu koşullar altında serbest düşme hareketi, bir boyutta sabit ivmeli hareketle bire bir aynıdır. Yatay eksendeki `x` yer değiştirmesi yerine düşey yükseklik/konum değişimi ({koyu:`h`} veya {koyu:`y`}), `a` ivmesi yerine ise yönü daima yerin merkezine (aşağıya) doğru olan yer çekimi ivmesi ({koyu:`g`}) yazılarak tüm matematiksel modeller elde edilir."
+      ],
+      "kutu": {
+        "tur": "onemli",
+        "baslik": "Serbest Düşen Delikli Bardak Deneyi",
+        "metin": "Tabanında delik bulunan su dolu bir bardak elimizde tutulurken delikten su akar; ancak bardak serbest bırakıldığı anda {koyu:delikten su akışı kesilir}. Çünkü hem bardak hem de içindeki su aynı yer çekimi ivmesiyle (`g`) birlikte serbest düşme hareketi yapar ve birbirlerine göre bağıl ivmeleri sıfır olur."
+      }
+    },
+    {
+      "baslik": "İlk Hızsız (v_0 = 0) Serbest Düşme Bağıntıları ve Veri Setleri",
+      "metin": [
+        "Belirli bir yükseklikten ilk hızsız (`v_0 = 0`) serbest bırakılan bir cismin hızı, aşağı yönde her saniye `g` kadar artar. Bırakıldıktan `t` süre sonra cismin hız büyüklüğü {koyu:`v = g · t`}, bu sürede aldığı düşey yol (yükseklik) {koyu:`h = {kesir:1|2} · g · {us:t|2}`} ve zamandan bağımsız hız denklemi {koyu:`{us:v|2} = 2 · g · h`} ile modellenir.",
+        "Deneysel bir veri setinde düşme yüksekliği `h` ve düşme süresi `t` ölçüldüğünde, o bölgenin yer çekimi ivmesi {koyu:`g = {kesir:2 · h|{us:t|2}}`} bağıntısıyla hesaplanabilir. Örneğin `h = 1 m` yüksekliğinden bırakılan metal bir topun yere `t = 0,447 s` sürede ulaştığı ölçülürse, `{us:t|2} ≈ 0,20 {us:s|2}` olduğundan yer çekimi ivmesi `g = {kesir:2 · 1|0,20} = 10 m/{us:s|2}` olarak kanıtlanır."
+      ],
+      "tablo": {
+        "basliklar": ["Matematiksel Model Türü", "Sabit İvmeli Hareket (Genel)", "İlk Hızsız Serbest Düşme (v_0 = 0)", "İlk Hızlı Serbest Düşme (v_0 != 0)"],
+        "satirlar": [
+          ["Hız - Zaman Bağıntısı", "v = v_0 ± a · t", "v = g · t", "v = v_0 ± g · t"],
+          ["Konum / Yol - Zaman Bağıntısı", "x = v_0 · t ± (1/2) · a · {us:t|2}", "h = (1/2) · g · {us:t|2}", "h = v_0 · t ± (1/2) · g · {us:t|2}"],
+          ["Zamandan Bağımsız Hız", "{us:v|2} = {us:v_0|2} ± 2 · a · x", "{us:v|2} = 2 · g · h", "{us:v|2} = {us:v_0|2} ± 2 · g · h"]
+        ]
+      }
+    },
+    {
+      "baslik": "Eşit Zaman Aralıklarında Alınan Yollar (h - 3h - 5h Kuralı)",
+      "metin": [
+        "İlk hızsız serbest bırakılan bir cismin `t, 2t, 3t, 4t...` anlarındaki hız büyüklükleri `v, 2v, 3v, 4v...` şeklinde düzgün artarken; başlangıç noktasından itibaren toplam yer değiştirmeleri `{us:t|2}` ile orantılı olarak {koyu:`h, 4h, 9h, 16h...`} olur. Bu nedenle cismin birbirini izleyen eşit `t` zaman aralıklarında aldığı ardışık yollar {koyu:`h, 3h, 5h, 7h...`} şeklinde tek sayıların katları olarak büyür.",
+        "`g = 10 m/{us:s|2}` kabul edilen bir ortamda `h = {kesir:1|2} · 10 · {us:1|2} = 5 m` olduğundan, ilk hızsız bırakılan bir cisim {koyu:1. saniye içinde 5 m}, {koyu:2. saniye içinde 15 m} (toplam `20 m`), {koyu:3. saniye içinde 25 m} (toplam `45 m`), {koyu:4. saniye içinde 35 m} (toplam `80 m`) düşer. Aynı düşey doğrultuda birkaç saniye arayla atlayan iki hava dalgıcının ivmeleri eşit olduğu için aralarındaki {koyu:hız farkı sabit kalır}, ancak öndeki dalgıç her an daha hızlı olduğundan aralarındaki {koyu:düşey mesafe zamanla artar}."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "g = 10 m/{us:s|2} İçin Saniye Saniye Serbest Düşme Tablosu",
+        "metin": "• `t = 1 s` sonunda: Hız `v = 10 m/s` | O saniyede alınan yol: `5 m` | Toplam düşülen yükseklik: `5 m`\n• `t = 2 s` sonunda: Hız `v = 20 m/s` | O saniyede alınan yol: `15 m` | Toplam düşülen yükseklik: `20 m`\n• `t = 3 s` sonunda: Hız `v = 30 m/s` | O saniyede alınan yol: `25 m` | Toplam düşülen yükseklik: `45 m`\n• `t = 4 s` sonunda: Hız `v = 40 m/s` | O saniyede alınan yol: `35 m` | Toplam düşülen yükseklik: `80 m`"
+      }
+    },
+    {
+      "baslik": "İlk Hızı Sıfırdan Farklı (v_0 != 0) Düşey Hareketler",
+      "metin": [
+        "Bir cisim düşey doğrultuda yukarı doğru `v_0` başlangıç hızıyla fırlatıldığında, hareket yönü (`+y`) ile yer çekimi ivmesinin yönü (`-y`) birbirine zıttır. Bu nedenle cisim yükselirken hızı her saniye `g` kadar azalır ({koyu:`v = v_0 - g · t`}) ve yerden yüksekliği {koyu:`y = v_0 · t - {kesir:1|2} · g · {us:t|2}`} olur. Cisim çıkabileceği {koyu:maksimum yüksekliğe (`h_max`)} ulaştığı anda {koyu:anlık hızı sıfır (`v = 0`)} olur.",
+        "Tepe noktasında `v = 0` eşitliğinden çıkış süresi {koyu:`t_cikis = {kesir:v_0|g}`} ve maksimum yükseklik {koyu:`h_max = {kesir:{us:v_0|2}|2 · g}`} olarak bulunur. Simetri gereği cismin tepe noktasından atıldığı seviyeye inme süresi çıkış süresine eşittir (`t_inis = t_cikis`) ve atıldığı seviyeden geçerken hız büyüklüğü yine `v_0` (yönü aşağı, `-v_0`) olur. Eğer cisim bir kuleden veya çatıdan yukarı atılmışsa, atıldığı seviyeyi geçtikten sonra da `-y` yönünde hızlanarak yere çarpar."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Tepe Noktasında İvme Sıfır Değildir!",
+        "metin": "Düşey yukarı fırlatılan bir cismin maksimum yükseklikte (`h_max`) {koyu:anlık hızı sıfırdır (`v = 0`)}, ancak {koyu:ivmesi kesinlikle sıfır değildir!} Yer çekimi kuvveti tepe noktasında da cisme etki etmeye devam ettiği için ivmesi hareketin her anında aşağı yönde {koyu:`g` (`-10 m/{us:s|2}`)} değerindedir."
+      }
+    },
+    {
+      "baslik": "Serbest Düşme Hareketinin Grafikleri (Konum, Hız ve İvme)",
+      "metin": [
+        "Yukarı yön pozitif (`+y`), aşağı yön negatif (`-y`) seçildiğinde serbest düşme hareketinin üç temel grafiği birbiriyle tam bir matematiksel uyum gösterir: 1. {koyu:İvme-Zaman (`a-t`) Grafiği:} İster ilk hızsız bırakılsın ister yukarı fırlatılsın, ivme tüm hareket boyunca `-g` (`-10 m/{us:s|2}`) değerinde yatay bir doğrudur. Grafiğin zaman ekseniyle arasındaki alan hız değişimini (`Δv = -g · t`) verir.",
+        "2. {koyu:Hız-Zaman (`v-t`) Grafiği:} Eğimi sabit ve `-g`'ye eşit olan düz bir doğrudur. İlk hızsız düşmede `0`'dan başlayıp `-v`'ye iner; düşey yukarı atışta ise `+v_0`'dan başlayarak `t_cikis` anında zaman eksenini keser (`v = 0`) ve negatif bölgede `-v`'ye doğru devam eder. `v-t` grafiğinin altında kalan cebirsel alan cismin yer değiştirmesini (`Δy`) verir. 3. {koyu:Konum-Zaman (`y-t`) Grafiği:} Zamanın karesiyle (`{us:t|2}`) değiştiği için {koyu:parabolik} bir eğridir; tepe noktasında eğimi sıfırdır."
+      ],
+      "tablo": {
+        "basliklar": ["Zaman (t)", "İlk Hızsız Düşme: Konum / Hız", "Yukarı Atış (v_0 = +10 m/s): Konum / Hız", "İvme (Her İki Durumda)"],
+        "satirlar": [
+          ["0 s", "y = 0 m | v = 0 m/s", "y = 0 m | v = +10 m/s", "a = -10 m/{us:s|2}"],
+          ["1 s", "y = -5 m | v = -10 m/s", "y = +5 m (Tepe) | v = 0 m/s", "a = -10 m/{us:s|2}"],
+          ["2 s", "y = -20 m | v = -20 m/s", "y = 0 m (Atıldığı hiza) | v = -10 m/s", "a = -10 m/{us:s|2}"],
+          ["3 s", "y = -45 m | v = -30 m/s", "y = -15 m | v = -20 m/s", "a = -10 m/{us:s|2}"]
+        ]
+      }
+    },
+    {
+      "baslik": "Yatay ve Düşey Hareketin Bağımsızlığına Giriş",
+      "metin": [
+        "Serbest düşme verileri, iki boyutta sabit ivmeli hareketleri (yatay atış ve eğik atış) anlamanın da anahtarıdır. Hava direncinin ihmal edildiği bir ortamda bir cismin {koyu:yatay ve düşey hareket bileşenleri birbirinden tamamen bağımsızdır}. Yer çekimi kuvveti yalnızca düşey (`y`) doğrultuda etki ettiği için yatay doğrultuda ivme sıfırdır (`a_x = 0`) ve yatay hız hareket boyunca sabit kalır (`v_x = v_0x = sabit`).",
+        "Bu bağımsızlık ilkesinin en çarpıcı kanıtı şudur: Aynı `h` yüksekliğinden aynı anda {koyu:ilk hızsız serbest bırakılan K topu} ile {koyu:yatay doğrultuda fırlatılan L topunun} her an düşey konumları ve düşey hızları birbirine eşittir; dolayısıyla her iki top da {koyu:aynı anda yere çarpar}."
+      ],
+      "kutu": {
+        "tur": "bilgi",
+        "baslik": "Bileşenlerin Bağımsızlığı İlkesi",
+        "metin": "Aynı yükseklikten serbest bırakılan bir cisim ile yatay olarak fırlatılan bir cismin havada kalma süreleri yalnızca düşey yüksekliğe (`h`) ve yer çekimi ivmesine (`g`) bağlıdır ({koyu:`t = {kok:{kesir:2 · h|g}}`}); yatay atılış hızının büyüklüğü yere düşme süresini değiştirmez."
+      }
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Ballıkayalar Kanyonu'nda yerden 180 m yükseklikten koparak ilk hızsız serbest düşmeye başlayan bir kaya parçasının (hava direnci önemsiz, g = 10 m/{us:s|2}): a) 2 s sonraki yerden yüksekliğini, b) Yere çarpma süresini ve yere çarpma hız büyüklüğünü hesaplayınız.",
+      "cevap": "a) Kaya parçası ilk `2 s` içinde `h_1 = {kesir:1|2} · g · {us:t|2} = {kesir:1|2} · 10 · {us:2|2} = 20 m` düşer. Başlangıçta yerden `180 m` yüksekte olduğundan, `2 s` sonraki yerden yüksekliği `180 - 20 = {koyu:160 m}` olur.\nb) Toplam `180 m` yüksekliği düşme süresi: `180 = {kesir:1|2} · 10 · {us:t|2} => {us:t|2} = 36 => {koyu:t = 6 s}` bulunur. Yere çarpma hız büyüklüğü ise `v = g · t = 10 · 6 = {koyu:60 m/s}` olur."
+    },
+    {
+      "soru": "Derinliği bilinmeyen bir su kuyusunun ağzından ilk hızsız bırakılan bir taşın su yüzeyine çarpma sesi, bırakıldıktan 3,15 s sonra duyuluyor. Sesin havadaki hızı 300 m/s ve g = 10 m/{us:s|2} olduğuna göre kuyunun su yüzeyine kadar olan derinliği (h) kaç metredir?",
+      "cevap": "Toplam süre taşların düşme süresi (`t_dusme`) ile sesin kuyudan yukarı çıkma süresinin (`t_ses`) toplamıdır: `t_dusme + t_ses = 3,15 s`. Kuyu derinliği `h = 5 · {us:t_dusme|2}` ve aynı zamanda `h = v_ses · t_ses = 300 · t_ses` eşitliğini sağlar. `t_dusme = 3 s` için kuyu derinliği `h = 5 · {us:3|2} = {koyu:45 m}` olur; sesin çıkış süresi de `t_ses = {kesir:45|300} = 0,15 s` olup toplam `3 + 0,15 = 3,15 s` değerini tam olarak sağlar. Dolayısıyla kuyunun derinliği {koyu:45 m}'dir."
+    },
+    {
+      "soru": "Nurcan elindeki topu hava direncinin ihmal edildiği ortamda düşey yukarı doğru 20 m/s hızla fırlatıyor ve top tekrar eline düşüyor (g = 10 m/{us:s|2}). Topun maksimum yüksekliğini, havada kalma süresini ve elinden 15 m yukarıdaki noktadan geçiş hız büyüklüğünü bulunuz.",
+      "cevap": "• Çıkış süresi: `t_cikis = {kesir:v_0|g} = {kesir:20|10} = 2 s` ve havada kalma (uçuş) süresi: `t_ucus = 2 · 2 = {koyu:4 s}`.\n• Maksimum yükseklik: `h_max = {kesir:{us:v_0|2}|2 · g} = {kesir:{us:20|2}|20} = {koyu:20 m}`.\n• Elinden `h = 15 m` yukarıdaki hız büyüklüğü: `{us:v|2} = {us:v_0|2} - 2 · g · h = {us:20|2} - 2 · 10 · 15 = 400 - 300 = 100 => {koyu:v = 10 m/s}`."
+    },
+    {
+      "soru": "80 m yüksekliğindeki bir binanın çatısından düşey yukarı doğru 30 m/s başlangıç hızıyla atılan bir taş, çıkabileceği en üst noktaya çıkıp binanın çatısını sıyırarak yere düşüyor (g = 10 m/{us:s|2}). Taşın yerden maksimum yüksekliğini ve yere çarpma süresini hesaplayınız.",
+      "cevap": "• Taşın çatıdan itibaren çıkış süresi `t_cikis = {kesir:30|10} = 3 s` ve çatıdan yükselme miktarı `h_cikis = {kesir:{us:30|2}|2 · 10} = 45 m`'dir. Bina `80 m` olduğundan yerden maksimum yüksekliği `80 + 45 = {koyu:125 m}` olur.\n• Tepe noktasından (`125 m`) yere serbest düşme süresi: `125 = 5 · {us:t_inis|2} => {us:t_inis|2} = 25 => t_inis = 5 s`. Toplam uçuş süresi `t_toplam = t_cikis + t_inis = 3 + 5 = {koyu:8 s}` (veya `y = 30t - 5{us:t|2} = -80 => t = 8 s`) bulunur."
+    },
+    {
+      "soru": "Hava direncinin önemsiz olduğu ortamda 1,8 m yükseklikten serbest bırakılan bir tenis topu, sert zemine çarptıktan sonra düşey olarak 1,25 m yükseliyor (g = 10 m/{us:s|2}). Topun yere çarpma hızını ve yerden sıçrama hızını hesaplayınız.",
+      "cevap": "• Yere çarpma hız büyüklüğü (`h_1 = 1,8 m`): `{us:v_1|2} = 2 · g · h_1 = 2 · 10 · 1,8 = 36 => {koyu:v_1 = 6 m/s}` (aşağı yönlü).\n• Yerden sıçrama hız büyüklüğü (`h_2 = 1,25 m`): `{us:v_2|2} = 2 · g · h_2 = 2 · 10 · 1,25 = 25 => {koyu:v_2 = 5 m/s}` (yukarı yönlü)."
+    },
+    {
+      "soru": "Aynı düşey doğrultuda bir helikopterden 2 saniye arayla ilk hızsız atlayan iki hava dalgıcının (hava direnci ihmal ediliyor) hareket süresince ivmeleri, hız farkları ve aralarındaki düşey uzaklık nasıl değişir?",
+      "cevap": "Her iki dalgıç da yalnızca yer çekimi etkisinde olduğundan {koyu:ivmeleri birbirine eşittir (`g`)}. İvmeleri eşit olduğu için her saniye hızları aynı miktarda artar ve aralarındaki {koyu:hız farkı (`2g = 20 m/s`) sabit kalır}. Ancak ilk atlayan dalgıcın anlık hızı daima ikinci dalgıçtan büyük olduğu için eşit sürede daha çok yol alır ve {koyu:aralarındaki düşey mesafe zamanla artar}."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Hava direncinin ihmal edildiği ve g = 10 m/{us:s|2} olduğu bir ortamda, yerden 80 m yükseklikten ilk hızsız serbest bırakılan bir cisim kaç saniyede yere çarpar ve yere çarpma hızının büyüklüğü kaç m/s olur?",
+      "secenekler": [
+        "3 s ve 30 m/s",
+        "4 s ve 40 m/s",
+        "4 s ve 80 m/s",
+        "8 s ve 40 m/s",
+        "8 s ve 80 m/s"
+      ],
+      "dogru": 1,
+      "aciklama": "h = (1/2)·g·{us:t|2} bağıntısından 80 = 5·{us:t|2} => {us:t|2} = 16 => t = 4 s bulunur. Yere çarpma hızı ise v = g·t = 10·4 = 40 m/s'dir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Havasız ortamda ilk hızsız serbest bırakılan bir cisim hareketinin ilk saniyesinde h_1, üçüncü saniyesi içinde (t = 2 s ile t = 3 s arasında) h_3 kadar yol alıyor. Buna göre h_1 / h_3 oranı kaçtır?",
+      "secenekler": [
+        "1/9",
+        "1/5",
+        "1/3",
+        "3/5",
+        "1"
+      ],
+      "dogru": 1,
+      "aciklama": "İlk hızsız serbest düşen cisim ardışık eşit zaman aralıklarında sırasıyla h, 3h, 5h, 7h... yol alır. İlk saniyede h_1 = h, üçüncü saniye içinde ise h_3 = 5h yol aldığından oran 1/5'tir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Yerden düşey doğrultuda yukarı doğru 30 m/s ilk hızla fırlatılan bir cisim için (hava direnci önemsiz, g = 10 m/{us:s|2}) aşağıdaki ifadelerden hangisi YANLIŞTIR?",
+      "secenekler": [
+        "Cisim fırlatıldıktan 3 s sonra maksimum yüksekliğe ulaşır.",
+        "Cismin çıkabileceği maksimum yükseklik 45 metredir.",
+        "Cismin maksimum yükseklikteki anlık hızı ve ivmesi sıfırdır.",
+        "Cisim fırlatıldıktan 6 s sonra atıldığı noktaya geri döner.",
+        "Cismin 2. saniyedeki ve 4. saniyedeki yerden yükseklikleri birbirine eşittir."
+      ],
+      "dogru": 2,
+      "aciklama": "Maksimum yükseklikte cismin anlık hızı sıfırdır (v = 0), ancak cisme yer çekimi kuvveti etki etmeye devam ettiği için ivmesi sıfır değildir (a = -g = -10 m/{us:s|2})."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir pencereden düşey yukarı doğru 10 m/s hızla fırlatılan bir anahtarlık, pencere hizasını geçerek fırlatıldıktan 3 s sonra yere çarpıyor (hava direnci önemsiz, g = 10 m/{us:s|2}). Buna göre pencerenin yerden yüksekliği kaç metredir?",
+      "secenekler": [
+        "5",
+        "10",
+        "15",
+        "20",
+        "25"
+      ],
+      "dogru": 2,
+      "aciklama": "y = v_0·t - (1/2)·g·{us:t|2} bağıntısında t = 3 s için y = 10·3 - 5·({us:3|2}) = 30 - 45 = -15 m bulunur. Yani anahtarlık pencerenin 15 m altındaki zemine çarpmıştır."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Fizikte serbest düşme kavramı yalnızca ilk hızsız bırakılan cisimleri değil, düşey yukarı veya aşağı atılıp sadece yer çekimi etkisinde hareket eden cisimleri de kapsar.",
+          "dogru": true,
+          "aciklama": "El veya fırlatıcıdan ayrıldıktan sonra yalnızca yer çekimi kuvveti etkisinde hareket eden tüm cisimler serbest düşme hareketi yapar."
+        },
+        {
+          "metin": "İlk hızsız serbest düşen bir cismin konum-zaman grafiği doğrusal, hız-zaman grafiği ise paraboliktir.",
+          "dogru": false,
+          "aciklama": "Sabit ivmeli harekette hız zamanla doğrusal (v = g·t), konum ise zamanın karesiyle parabolik (h = 1/2·g·{us:t|2}) değişir."
+        },
+        {
+          "metin": "Tabanında delik olan su dolu bir bardak serbest düşmeye bırakıldığında, düşüş süresince delikten su akmaz.",
+          "dogru": true,
+          "aciklama": "Bardak ve içindeki su aynı yer çekimi ivmesiyle (g) birlikte düştüğü için suyun bardağa göre bağıl ivmesi sıfır olur ve su akmaz."
+        },
+        {
+          "metin": "Aynı yükseklikten aynı anda serbest bırakılan K cismi ile yatay olarak fırlatılan L cismi, hava direnci yoksa aynı anda yere çarpar.",
+          "dogru": true,
+          "aciklama": "Yatay ve düşey hareketler birbirinden bağımsızdır; her iki cismin de düşey ilk hızı sıfır ve düşey ivmesi g olduğundan yere aynı sürede ulaşırlar."
+        },
+        {
+          "metin": "Bir helikopterden birkaç saniye arayla atlayan iki dalgıcın hava direnci ihmal edildiğinde düşüş süresince aralarındaki düşey mesafe sabit kalır.",
+          "dogru": false,
+          "aciklama": "Dalgıçların hız farkı sabit kalır; ancak ilk atlayan dalgıç her an daha hızlı olduğu için aralarındaki düşey mesafe zamanla artar."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Hava direncinin önemsiz ve g = 10 m/{us:s|2} olduğu ortamda aşağıdaki durumları karşılık gelen değerlerle eşleştiriniz.",
+      "ciftler": [
+        ["İlk hızsız bırakılan cismin 3 s sonunda aldığı toplam yol", "45 metre"],
+        ["İlk hızsız bırakılan cismin 3. saniye içinde aldığı yol", "25 metre"],
+        ["Düşey yukarı 40 m/s hızla atılan cismin çıkış süresi", "4 saniye"],
+        ["Düşey yukarı 20 m/s hızla atılan cismin maksimum yüksekliği", "20 metre"],
+        ["Serbest düşen cismin hız-zaman grafiğinin eğimi", "Yer çekimi ivmesi (g)"]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Sürtünmesiz ortamda yalnızca yer çekimi kuvvetinin etkisi altında gerçekleşen harekete ___ düşme hareketi denir.",
+          "cevap": "serbest"
+        },
+        {
+          "metin": "Serbest düşme hareketi yapan bir cismin hız-zaman grafiğinin zaman ekseni ile arasında kalan alan cismin ___ miktarını verir.",
+          "cevap": "yer değiştirme"
+        },
+        {
+          "metin": "Düşey yukarı doğru atılan bir cismin yörüngesinin en üst noktasında anlık ___ sıfırdır.",
+          "cevap": "hızı"
+        },
+        {
+          "metin": "Serbest düşen bir cismin konum-zaman grafiği zamanın karesiyle orantılı olduğu için ___ bir eğri şeklindedir.",
+          "cevap": "parabolik"
+        },
+        {
+          "metin": "İki boyutlu sabit ivmeli harekette yer çekimi kuvveti etki etmediği için ___ hız bileşeni hareket boyunca sabit kalır.",
+          "cevap": "yatay"
+        }
+      ],
+      "fazla": ["ivmesi", "düşey"]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Hava direncinin ihmal edildiği bir ortamda düşey yukarı doğru v_0 = 20 m/s hızla fırlatılan bir topun atıldığı noktaya dönünceye kadar geçen 4 saniyelik hareketini; konum, hız ve ivme değişkenleri ile grafikleri üzerinden kanıtlarıyla açıklayınız (g = 10 m/{us:s|2}).",
+      "ipuclari": [
+        "t = 0, 1, 2, 3 ve 4 s anlarındaki konum (y), hız (v) ve ivme (a) değerlerini içeren veri tablosunu oluşturunuz.",
+        "t = 2 s (tepe noktası) anında hız sıfır olduğu hâlde ivmenin neden sıfır olmadığını belirtiniz.",
+        "Konum-zaman, hız-zaman ve ivme-zaman grafiklerinin şeklini ve eğim/alan anlamlarını açıklayınız."
+      ],
+      "cevap": "Yukarı yön `+y` seçildiğinde `g = -10 m/{us:s|2}` olur. `v = v_0 - g·t` ve `y = v_0·t - {kesir:1|2}·g·{us:t|2}` modellerine göre:\n• `t = 0 s`: `y = 0 m`, `v = +20 m/s`, `a = -10 m/{us:s|2}`\n• `t = 1 s`: `y = +15 m`, `v = +10 m/s`, `a = -10 m/{us:s|2}`\n• `t = 2 s` (Tepe noktası): `y = +20 m` (`h_max`), `v = 0 m/s`, ancak yer çekimi kuvveti sürdüğü için {koyu:`a = -10 m/{us:s|2}`}\n• `t = 3 s`: `y = +15 m`, `v = -10 m/s`, `a = -10 m/{us:s|2}`\n• `t = 4 s` (Dönüş anı): `y = 0 m`, `v = -20 m/s`, `a = -10 m/{us:s|2}`.\nBu verilere göre {koyu:ivme-zaman grafiği} `-10 m/{us:s|2}`'de sabit yatay doğru; {koyu:hız-zaman grafiği} `+20`'den `-20`'ye inen ve `t = 2 s`'de sıfırlanan doğrusal grafik (altındaki net alan `20 - 20 = 0 m` yer değiştirme); {koyu:konum-zaman grafiği} ise `t = 2 s`'de `+20 m` tepe noktasına ulaşan simetrik bir paraboldür."
+    }
+  ]
+}
