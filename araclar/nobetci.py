@@ -151,9 +151,70 @@ def dis_baglantilar():
     return [f'Dış bağlantı açılmıyor (kod {k}): {a}' for a, k in kirik], len(adresler)
 
 
+def ziyaret_ve_yayin():
+    """Canlı ziyaret.json güncelliğini, özet senkronizasyonunu ve son guncelle.yml durumunu denetler."""
+    sorun = []
+    yeniden_yayimla = False
+
+    # 1. Canlı ziyaret.json denetimi
+    kod, govde = getir(KOK + '/veri/ziyaret.json')
+    if kod != 200:
+        sorun.append(f'`/veri/ziyaret.json` açılmıyor (kod {kod})')
+        yeniden_yayimla = True
+    else:
+        try:
+            zv = json.loads(govde)
+            toplam = zv.get('toplam', 0)
+            guncelleme = zv.get('guncelleme', '')
+            if not isinstance(toplam, int) or toplam <= 0:
+                sorun.append(f'`/veri/ziyaret.json` toplam ziyaretçi sayısı geçersiz: {toplam}')
+                yeniden_yayimla = True
+            if guncelleme:
+                son = dt.datetime.fromisoformat(guncelleme.replace('Z', '+00:00')).astimezone(dt.timezone.utc).replace(tzinfo=None)
+                saat_farki = (dt.datetime.utcnow() - son).total_seconds() / 3600
+                if saat_farki > 26:
+                    sorun.append(f'Ziyaretçi sayacı {saat_farki:.1f} saattir güncellenmemiş (son: {guncelleme}).')
+                    yeniden_yayimla = True
+        except Exception as h:
+            sorun.append(f'`/veri/ziyaret.json` okunamadı: {h}')
+            yeniden_yayimla = True
+
+    # 2. Depodaki özet sayısı ile canlı icerikler.json karşılaştırması
+    yerel_ozet_sayisi = len(list((KLASOR / 'araclar' / 'ozetler').glob('*.json')))
+    kod_ic, govde_ic = getir(KOK + '/veri/icerikler.json')
+    if kod_ic == 200:
+        try:
+            ic_liste = json.loads(govde_ic).get('icerikler', [])
+            canli_ozet_sayisi = sum(1 for i in ic_liste if i.get('tur') == 'Konu anlatımı')
+            if yerel_ozet_sayisi > canli_ozet_sayisi:
+                fark = yerel_ozet_sayisi - canli_ozet_sayisi
+                sorun.append(f'Depoda {yerel_ozet_sayisi} konu özeti var ancak canlı sitede {canli_ozet_sayisi} tanesi yayında ({fark} özet eksik).')
+                yeniden_yayimla = True
+        except Exception:
+            pass
+
+    # 3. Son guncelle.yml iş akışı durumu
+    kod_gh, govde_gh = getir('https://api.github.com/repos/01nerimanbal01-coder/derskutusu/actions/workflows/guncelle.yml/runs?per_page=1')
+    if kod_gh == 200:
+        try:
+            kosular = json.loads(govde_gh).get('workflow_runs', [])
+            if kosular and kosular[0].get('status') == 'completed' and kosular[0].get('conclusion') == 'failure':
+                sha = kosular[0].get('head_sha', '')[:7]
+                sorun.append(f'Son yayım iş akışı (`guncelle.yml`, commit `{sha}`) başarısız (`failure`) sonuçlandı.')
+                yeniden_yayimla = True
+        except Exception:
+            pass
+
+    return sorun, yeniden_yayimla
+
+
 def main():
     derin = '--derin' in sys.argv
     sorun, ana_var = sayfalar()
+    z_sorun, yeniden_yayimla = ziyaret_ve_yayin()
+    sorun += z_sorun
+    if yeniden_yayimla:
+        ana_var = False
     sorun += dns() + sertifika() + alan_adi()
     uyari = []
     if derin:
@@ -184,3 +245,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

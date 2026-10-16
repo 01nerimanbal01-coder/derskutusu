@@ -31,9 +31,6 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Kök gösterimlerini doğrula
-        run: python araclar/kok_yayin_denetle.py
-
       - name: YouTube ve Instagram akışlarını al
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
@@ -53,13 +50,19 @@ jobs:
           CF_ACCOUNT_ID: 6aa67a3c005bba9f3597a16e0140dfde   # hesap kimliği (gizli değil)
         run: python araclar/ziyaret_guncelle.py
 
+      - name: Özetleri derle ve hata denetimini çalıştır
+        run: |
+          python araclar/yayin_denetle.py --onar
+          python araclar/kok_yayin_denetle.py
+
       - name: Değişen veriyi kaydet
         run: |
           git config user.name "akis-botu"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/veri
+          git add public/veri public/ozet public/sitemap.xml araclar/ozetler araclar/gorseller
           if ! git diff --cached --quiet; then
-            git commit -m "Sosyal medya akışları ve ziyaret sayısı güncellendi"
+            git commit -m "Sosyal medya akışları, ziyaret sayısı ve özet derlemeleri güncellendi"
+            git pull --rebase origin main
             git push
           fi
 
@@ -69,3 +72,4 @@ jobs:
           path: public
       - id: yayin
         uses: actions/deploy-pages@v4
+
