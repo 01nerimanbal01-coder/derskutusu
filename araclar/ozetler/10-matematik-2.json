@@ -1,0 +1,346 @@
+{
+ "ad": "10-matematik-2",
+ "sinif": 10,
+ "ders": "matematik",
+ "ders_adi": "Matematik",
+ "hafta": 2,
+ "tarih": "21-25 Eylül 2026",
+ "yayin_tarihi": "2026-10-16",
+ "unite": "1. TEMA: GEOMETRİK ŞEKİLLER",
+ "konu": "Dik Üçgende Trigonometrik Oranlar, Özdeşlik Uygulamaları, Birim Çember, Geniş Açılar ve Yönlü Açılar",
+ "ciktilar": [
+  "MAT.10.1.1. Dik üçgende trigonometrik oranlara (sinüs, kosinüs, tanjant, kotanjant) ve trigonometrik özdeşliklere ilişkin çıkarım yapabilme."
+ ],
+ "giris": "İlk haftada dik üçgende dar açıların dört temel trigonometrik oranını, 30°, 45°, 60° özel açılarını ve temel Pisagor özdeşliğini öğrenmiştik. Bu ikinci haftada ise dik olmayan üçgenlerde dikme indirerek trigonometrik modelleme yapmayı, {koyu:trigonometrik özdeşliklerin tam kare ifadelerle} kullanımını, {koyu:hipotenüsü 1 birim olan dik üçgende} kenarların trigonometrik oranlarla temsilini, {koyu:eğim yüzdesi ve trigonometrik cetvel} uygulamalarını, {koyu:birim çember} yardımıyla {koyu:geniş açıların (90° < α < 180°)} sinüs ve kosinüs değerlerini ve {koyu:yönlü açı} kavramını inceliyoruz.",
+ "ozet": [
+  "Dik olmayan bir üçgende iki dar açı ve bir kenar biliniyorsa üçgenin uygun bir köşesinden {koyu:yükseklik (dikme)} indirilerek iki dik üçgen oluşturulur ve ortak yükseklik üzerinden trigonometrik oranlar kurulur.",
+  "{koyu:{us:sin|2} x + {us:cos|2} x = 1} ve {koyu:tan x · cot x = 1} özdeşlikleri tam kare açılımlarıyla birleştirildiğinde {koyu:{us:(sin x ∓ cos x)|2} = 1 ∓ 2 · sin x · cos x} ve {koyu:{us:tan|2} x + {us:cot|2} x = {us:(tan x + cot x)|2} − 2} eşitlikleri elde edilir.",
+  "Hipotenüs uzunluğu {koyu:1 birim} olan bir dik üçgende {koyu:x} dar açısının karşısındaki dik kenar uzunluğu {koyu:sin x} birim, komşu dik kenar uzunluğu ise {koyu:cos x} birimdir; buradan {koyu:tan x = {kesir:sin x|cos x}} ve {koyu:cot x = {kesir:cos x|sin x}} olur.",
+  "Bir yolun eğim açısı {koyu:α} olmak üzere {koyu:Eğim = {kesir:Yükseklik Farkı|Yatay Uzaklık} = tan α = {kesir:sin α|cos α}} ve {koyu:Eğim Yüzdesi (%) = tan α · 100} formülüyle hesaplanır.",
+  "Dik koordinat sisteminde merkezi orijin {koyu:O(0, 0)} ve yarıçapı {koyu:1 birim} olan çembere {koyu:birim çember} denir; başlangıç kolu +x ekseni olan bir {koyu:α} açısının birim çemberi kestiği noktanın koordinatları {koyu:P(cos α, sin α)} şeklindedir.",
+  "İkinci bölgedeki geniş açılar ({koyu:90° < α < 180°}) için birim çemberde apsis negatif, ordinat pozitif olduğundan {koyu:cos(180° − dar açı) = −cos(dar açı)} ve {koyu:sin(180° − dar açı) = +sin(dar açı)} eşitlikleri geçerlidir.",
+  "Başlangıç kolu sabitken orijin etrafında {koyu:saat yönünün tersine} dönen ışının oluşturduğu açı {koyu:pozitif yönlü açı (+)}, {koyu:saat yönünde} dönen ışının oluşturduğu açı ise {koyu:negatif yönlü açı (−)} olarak adlandırılır."
+ ],
+ "bolumler": [
+  {
+   "baslik": "Dikme İndirerek Trigonometrik Modelleme ve Gerçek Yaşam Problemleri",
+   "metin": [
+    "Gerçek yaşam problemlerinde karşılaşılan her üçgen başlangıçta dik üçgen olmayabilir. Bir üçgende iki dar açının trigonometrik oranları (veya yaklaşık değerleri) biliniyorsa bilinen açıları bozmayacak şekilde üçgenin tepe köşesinden tabana bir {koyu:dikme (yükseklik)} indirilir. Böylece ortak bir dik kenara sahip iki ayrı dik üçgen elde edilir.",
+    "Örneğin tabanı {koyu:[AB]} olan bir {koyu:DAB} üçgeninde {koyu:D} köşesinden {koyu:[DH] ⊥ [AB]} dikmesi indirildiğinde {koyu:DAH} ve {koyu:DBH} dik üçgenleri oluşur. {koyu:|DH| = h} ortak dik kenarı üzerinden {koyu:tan A = {kesir:h||AH|}} ve {koyu:tan B = {kesir:h||BH|}} (veya tümler açının kotanjantı) yazılarak {koyu:|AH|} ile {koyu:|BH|} uzunlukları {koyu:k} orantı sabiti cinsinden ifade edilir ve toplam taban uzunluğu {koyu:|AB| = |AH| + |BH|} yardımıyla aranan mesafe bulunur."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Ortak Dik Kenar Stratejisi",
+    "metin": "İki dik üçgenin ortak kenarı olan yükseklik {koyu:|DH|}, her iki üçgendeki kesirli trigonometrik oranların pay (veya payda) değerlerinin en küçük ortak katı ({koyu:EKOK}) olacak şekilde {koyu:k} cinsinden seçilirse kesirlerle uğraşmadan hızlı çözüm yapılır."
+   },
+   "gorsel": "<svg viewBox=\"0 0 680 230\" role=\"img\" aria-label=\"Genel üçgende dikme indirerek ortak yükseklik üzerinden trigonometrik problem çözümü\"><rect x=\"14\" y=\"14\" width=\"652\" height=\"34\" rx=\"6\" fill=\"#1f2e45\" stroke=\"#1f2e45\" stroke-width=\"1.5\"/><text x=\"340\" y=\"36\" font-size=\"13\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"700\">GENEL ÜÇGENDE DİKME İNDİREREK TRİGONOMETRİK MODELLEME</text><rect x=\"18\" y=\"58\" width=\"330\" height=\"158\" rx=\"8\" fill=\"#fff\" stroke=\"#d8d1c3\" stroke-width=\"1.5\"/><polygon points=\"45,185 315,185 210,78\" fill=\"#eaf2fa\" stroke=\"#245785\" stroke-width=\"2.2\"/><line x1=\"210\" y1=\"78\" x2=\"210\" y2=\"185\" stroke=\"#b8362a\" stroke-width=\"2.2\" stroke-dasharray=\"5,4\"/><polyline points=\"210,173 222,173 222,185\" fill=\"none\" stroke=\"#b8362a\" stroke-width=\"1.5\"/><text x=\"35\" y=\"192\" font-size=\"12\" fill=\"#1f2e45\" text-anchor=\"middle\" font-weight=\"700\">A</text><text x=\"326\" y=\"192\" font-size=\"12\" fill=\"#1f2e45\" text-anchor=\"middle\" font-weight=\"700\">B</text><text x=\"210\" y=\"70\" font-size=\"11\" fill=\"#b8362a\" text-anchor=\"middle\" font-weight=\"700\">D (Deniz Feneri)</text><text x=\"210\" y=\"202\" font-size=\"11.5\" fill=\"#b8362a\" text-anchor=\"middle\" font-weight=\"700\">H</text><text x=\"92\" y=\"178\" font-size=\"11\" fill=\"#245785\" text-anchor=\"middle\" font-weight=\"700\">22°</text><text x=\"280\" y=\"178\" font-size=\"11\" fill=\"#246c45\" text-anchor=\"middle\" font-weight=\"700\">31°</text><text x=\"232\" y=\"114\" font-size=\"10\" fill=\"#246c45\" text-anchor=\"middle\" font-weight=\"700\">59°</text><text x=\"192\" y=\"138\" font-size=\"11\" fill=\"#b8362a\" text-anchor=\"middle\" font-weight=\"700\">h = 4k</text><text x=\"128\" y=\"202\" font-size=\"10.5\" fill=\"#245785\" text-anchor=\"middle\" font-weight=\"700\">|AH| = 10k</text><text x=\"265\" y=\"202\" font-size=\"10.5\" fill=\"#246c45\" text-anchor=\"middle\" font-weight=\"700\">|BH| = 20k/3</text><rect x=\"362\" y=\"58\" width=\"300\" height=\"158\" rx=\"8\" fill=\"#fdf5e2\" stroke=\"#9e6b12\" stroke-width=\"1.5\"/><text x=\"512\" y=\"80\" font-size=\"11.5\" fill=\"#9e6b12\" text-anchor=\"middle\" font-weight=\"700\">ÇÖZÜM ADIMLARI (ORTAK DİK KENAR)</text><text x=\"376\" y=\"104\" font-size=\"10.5\" fill=\"#1a1815\" font-weight=\"500\">1. [DH] ⊥ [AB] dikmesi indirilerek iki</text><text x=\"376\" y=\"120\" font-size=\"10.5\" fill=\"#1a1815\" font-weight=\"500\">   dik üçgen (DAH ve DBH) oluşturulur.</text><text x=\"376\" y=\"144\" font-size=\"10\" fill=\"#245785\" font-weight=\"700\">2. tan 22° = h/|AH| = 4/10 ⇒ h = 4k, |AH| = 10k</text><text x=\"376\" y=\"166\" font-size=\"10\" fill=\"#246c45\" font-weight=\"700\">3. cot 59° = |BH|/h = 6/10 ⇒ |BH| = 20k/3</text><text x=\"376\" y=\"190\" font-size=\"10.5\" fill=\"#b8362a\" font-weight=\"700\">4. |AB| = |AH| + |BH| toplamından k ve h</text><text x=\"376\" y=\"206\" font-size=\"10.5\" fill=\"#1a1815\" font-weight=\"500\">   (fenerin kıyıya uzaklığı) bulunur.</text></svg>"
+  },
+  {
+   "baslik": "Trigonometrik Özdeşliklerin Tam Kare İfadelerle Kullanımı",
+   "metin": [
+    "Bir {koyu:x} dar açısı için Pisagor teoreminden türetilen {koyu:{us:sin|2} x + {us:cos|2} x = 1} ve ters oranların çarpımından gelen {koyu:tan x · cot x = 1} özdeşlikleri, cebirsel çarpanlara ayırma ve tam kare özdeşlikleriyle birlikte sıkça kullanılır. Özellikle {koyu:sin x + cos x} veya {koyu:sin x − cos x} toplam/farkı verildiğinde {koyu:sin x · cos x} çarpımını bulmak için ifadenin her iki tarafının karesi alınır: {koyu:{us:(sin x ∓ cos x)|2} = {us:sin|2} x ∓ 2 · sin x · cos x + {us:cos|2} x = 1 ∓ 2 · sin x · cos x}.",
+    "Benzer şekilde bir dar açının tanjant ve kotanjant değerlerinin kareleri toplamı veya toplamlarının karesi sorulduğunda {koyu:tan x · cot x = 1} özdeşliğinden yararlanılır: {koyu:{us:(tan x + cot x)|2} = {us:tan|2} x + 2 · tan x · cot x + {us:cot|2} x = {us:tan|2} x + {us:cot|2} x + 2}. Böylece açı ölçüsü veya dik üçgenin kenarları tek tek bulunmadan cebirsel sonuç doğrudan elde edilir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Cebirsel İfade",
+     "Trigonometrik Özdeşliklerle Sadeleştirilmiş Eşiti"
+    ],
+    "satirlar": [
+     [
+      "{us:(sin x + cos x)|2}",
+      "{us:sin|2} x + {us:cos|2} x + 2 · sin x · cos x = 1 + 2 · sin x · cos x"
+     ],
+     [
+      "{us:(sin x − cos x)|2}",
+      "{us:sin|2} x + {us:cos|2} x − 2 · sin x · cos x = 1 − 2 · sin x · cos x"
+     ],
+     [
+      "{us:(tan x + cot x)|2}",
+      "{us:tan|2} x + {us:cot|2} x + 2 · tan x · cot x = {us:tan|2} x + {us:cot|2} x + 2"
+     ],
+     [
+      "1 − {us:sin|2} x  ve  1 − {us:cos|2} x",
+      "1 − {us:sin|2} x = {us:cos|2} x   ve   1 − {us:cos|2} x = {us:sin|2} x"
+     ]
+    ]
+   },
+   "gorsel": "<svg viewBox=\"0 0 680 220\" role=\"img\" aria-label=\"Trigonometrik özdeşliklerin tam kare ifadelerle kullanımı\"><rect x=\"14\" y=\"14\" width=\"652\" height=\"34\" rx=\"6\" fill=\"#6b3e8e\" stroke=\"#6b3e8e\" stroke-width=\"1.5\"/><text x=\"340\" y=\"36\" font-size=\"13\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"700\">TRİGONOMETRİK ÖZDEŞLİKLER VE TAM KARE UYGULAMALARI</text><rect x=\"20\" y=\"60\" width=\"308\" height=\"144\" rx=\"8\" fill=\"#eaf2fa\" stroke=\"#245785\" stroke-width=\"1.5\"/><text x=\"174\" y=\"82\" font-size=\"11.5\" fill=\"#245785\" text-anchor=\"middle\" font-weight=\"700\">1. SİNÜS - KOSİNÜS TAM KARE</text><rect x=\"34\" y=\"92\" width=\"280\" height=\"28\" rx=\"5\" fill=\"#fff\" stroke=\"#245785\" stroke-width=\"1.5\"/><text x=\"174\" y=\"110\" font-size=\"11\" fill=\"#245785\" text-anchor=\"middle\" font-weight=\"700\">Temel Özdeşlik: sin²x + cos²x = 1</text><text x=\"174\" y=\"136\" font-size=\"10.5\" fill=\"#1a1815\" text-anchor=\"middle\" font-weight=\"700\">(sin x + cos x)² = 1 + 2 · sin x · cos x</text><text x=\"174\" y=\"158\" font-size=\"10.5\" fill=\"#1a1815\" text-anchor=\"middle\" font-weight=\"700\">(sin x − cos x)² = 1 − 2 · sin x · cos x</text><text x=\"174\" y=\"184\" font-size=\"10\" fill=\"#b8362a\" text-anchor=\"middle\" font-weight=\"700\">Uygulama: Tel çerçeve alanı A = sin x · cos x</text><rect x=\"352\" y=\"60\" width=\"308\" height=\"144\" rx=\"8\" fill=\"#e8f5ee\" stroke=\"#246c45\" stroke-width=\"1.5\"/><text x=\"506\" y=\"82\" font-size=\"11.5\" fill=\"#246c45\" text-anchor=\"middle\" font-weight=\"700\">2. TANJANT - KOTANJANT TAM KARE</text><rect x=\"366\" y=\"92\" width=\"280\" height=\"28\" rx=\"5\" fill=\"#fff\" stroke=\"#246c45\" stroke-width=\"1.5\"/><text x=\"506\" y=\"110\" font-size=\"11\" fill=\"#246c45\" text-anchor=\"middle\" font-weight=\"700\">Temel Özdeşlik: tan x · cot x = 1</text><text x=\"506\" y=\"136\" font-size=\"10.5\" fill=\"#1a1815\" text-anchor=\"middle\" font-weight=\"700\">(tan x + cot x)² = tan²x + cot²x + 2</text><text x=\"506\" y=\"158\" font-size=\"10.5\" fill=\"#1a1815\" text-anchor=\"middle\" font-weight=\"700\">(tan x − cot x)² = tan²x + cot²x − 2</text><text x=\"506\" y=\"184\" font-size=\"10\" fill=\"#246c45\" text-anchor=\"middle\" font-weight=\"700\">Uygulama: tan²x + cot²x = 14 ⇒ Alan = 14 + 2 = 16</text></svg>"
+  },
+  {
+   "baslik": "Hipotenüsü 1 Birim Olan Dik Üçgen, Eğim Yüzdesi ve Trigonometrik Cetvel",
+   "metin": [
+    "Hipotenüs uzunluğu {koyu:1 birim} olan bir {koyu:ABC} dik üçgeninde ({koyu:m(A) = 90°}) dar açılardan birinin ölçüsü {koyu:x} olsun. Bu durumda {koyu:sin x = {kesir:|AC||1} = |AC|} ve {koyu:cos x = {kesir:|AB||1} = |AB|} olur. Yani hipotenüsü 1 birim olan dik üçgende {koyu:x açısının karşısındaki dik kenar doğrudan sin x birim}, {koyu:komşu dik kenar ise doğrudan cos x birimdir}. Buradan karşı dik kenarın komşu dik kenara oranı yazılırsa {koyu:tan x = {kesir:sin x|cos x}} ve {koyu:cot x = {kesir:cos x|sin x}} özdeşlikleri doğal olarak kanıtlanmış olur.",
+    "Günlük hayatta karayollarının dikliğini gösteren {koyu:Tehlikeli Eğim Levhalarında} eğim yüzdesi trigonometrik oranlarla hesaplanır. Eğim açısı {koyu:α} olan bir yolda {koyu:Eğim = {kesir:Yükseklik Farkı|Yatay Uzaklık} = tan α = {kesir:sin α|cos α}} olup {koyu:Eğim Yüzdesi (%) = tan α · 100} formülüyle bulunur. {koyu:15°, 16°, 17°} gibi özel olmayan açılarda ise {koyu:trigonometrik cetvel}deki yaklaşık sinüs ve kosinüs değerleri birbirine bölünerek tanjant ve eğim yüzdesi hesaplanır."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Hipotenüsü c Birim Olan Dik Üçgende Dik Kenarlar",
+    "metin": "Hipotenüsü {koyu:1 birim} olan dik üçgende dik kenarlar {koyu:sin x} ve {koyu:cos x} birimdir. Benzerlik gereği hipotenüsü {koyu:c birim} olan bir dik üçgende {koyu:x} açısının karşısındaki dik kenar {koyu:c · sin x}, komşu dik kenarı ise {koyu:c · cos x} birim olur."
+   },
+   "gorsel": "<svg viewBox=\"0 0 680 225\" role=\"img\" aria-label=\"Hipotenüsü 1 birim olan dik üçgende dik kenarlar ve yol eğim yüzdesi hesabı\"><rect x=\"14\" y=\"14\" width=\"652\" height=\"34\" rx=\"6\" fill=\"#246c45\" stroke=\"#246c45\" stroke-width=\"1.5\"/><text x=\"340\" y=\"36\" font-size=\"12.5\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"700\">HİPOTENÜSÜ 1 BİRİM OLAN DİK ÜÇGEN VE YOL EĞİM YÜZDESİ</text><rect x=\"20\" y=\"60\" width=\"308\" height=\"150\" rx=\"8\" fill=\"#fff\" stroke=\"#245785\" stroke-width=\"1.5\"/><text x=\"174\" y=\"80\" font-size=\"11\" fill=\"#245785\" text-anchor=\"middle\" font-weight=\"700\">HİPOTENÜSÜ 1 BİRİM OLAN DİK ÜÇGEN</text><polygon points=\"50,182 230,182 230,96\" fill=\"#eaf2fa\" stroke=\"#245785\" stroke-width=\"2.2\"/><polyline points=\"218,182 218,170 230,170\" fill=\"none\" stroke=\"#245785\" stroke-width=\"1.5\"/><text x=\"82\" y=\"176\" font-size=\"12\" fill=\"#b8362a\" text-anchor=\"middle\" font-weight=\"700\">x</text><text x=\"132\" y=\"128\" font-size=\"11\" fill=\"#1f2e45\" text-anchor=\"middle\" font-weight=\"700\">Hipotenüs = 1</text><text x=\"140\" y=\"198\" font-size=\"11\" fill=\"#245785\" text-anchor=\"middle\" font-weight=\"700\">Komşu = cos x</text><text x=\"272\" y=\"144\" font-size=\"11\" fill=\"#b8362a\" text-anchor=\"middle\" font-weight=\"700\">Karşı = sin x</text><rect x=\"352\" y=\"60\" width=\"308\" height=\"150\" rx=\"8\" fill=\"#fdf5e2\" stroke=\"#9e6b12\" stroke-width=\"1.5\"/><text x=\"506\" y=\"80\" font-size=\"11\" fill=\"#9e6b12\" text-anchor=\"middle\" font-weight=\"700\">ORANLAR VE YOL EĞİM YÜZDESİ (%)</text><rect x=\"368\" y=\"92\" width=\"276\" height=\"32\" rx=\"5\" fill=\"#fff\" stroke=\"#9e6b12\" stroke-width=\"1.5\"/><text x=\"506\" y=\"112\" font-size=\"10.5\" fill=\"#1f2e45\" text-anchor=\"middle\" font-weight=\"700\">tan x = sin x / cos x  •  cot x = cos x / sin x</text><text x=\"506\" y=\"142\" font-size=\"10.5\" fill=\"#1a1815\" text-anchor=\"middle\" font-weight=\"700\">Eğim = Yükseklik Farkı / Yatay Uzaklık = tan α</text><rect x=\"368\" y=\"156\" width=\"276\" height=\"40\" rx=\"5\" fill=\"#fff\" stroke=\"#b8362a\" stroke-width=\"1.5\"/><text x=\"506\" y=\"174\" font-size=\"11\" fill=\"#b8362a\" text-anchor=\"middle\" font-weight=\"700\">Eğim Yüzdesi (%) = tan α · 100</text><text x=\"506\" y=\"190\" font-size=\"9.5\" fill=\"#1a1815\" text-anchor=\"middle\" font-weight=\"500\">Örn: α = 17° için tan 17° ≈ 0,30 ⇒ Eğim ≈ %30</text></svg>"
+  },
+  {
+   "baslik": "Birim Çember ve Dar Açıların Koordinat Temsili",
+   "metin": [
+    "Dik üçgen yardımıyla yalnızca {koyu:0° < α < 90°} aralığındaki dar açıların trigonometrik oranları tanımlanabilir. Geniş açıların ve yönlü açıların trigonometrik oranlarını inceleyebilmek için {koyu:birim çember} kullanılır. Dik koordinat düzleminde merkezi orijin {koyu:O(0, 0)} ve yarıçap uzunluğu {koyu:r = 1 birim} olan çembere {koyu:birim çember} denir. Birim çember eksenleri {koyu:(1, 0), (0, 1), (−1, 0) ve (0, −1)} noktalarında keser.",
+    "Başlangıç kolu pozitif {koyu:x} ekseni olan bir {koyu:α} dar açısının bitim kolunun birim çemberi birinci bölgede kestiği nokta {koyu:P(x, y)} olsun. {koyu:P} noktasından {koyu:x} eksenine dikme indirildiğinde hipotenüsü {koyu:|OP| = 1 birim} olan bir dik üçgen oluşur. Bu üçgende komşu dik kenar {koyu:x = cos α}, karşı dik kenar ise {koyu:y = sin α} olur. Dolayısıyla birim çember üzerindeki her noktanın koordinatları {koyu:P(cos α, sin α)} biçimindedir: Birinci bileşen (apsis) açının {koyu:kosinüsünü}, ikinci bileşen (ordinat) ise açının {koyu:sinüsünü} verir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Dar Açı (α)",
+     "Birim Çemberi Kestiği Nokta P(cos α, sin α)",
+     "cos α (Apsis)",
+     "sin α (Ordinat)"
+    ],
+    "satirlar": [
+     [
+      "30°",
+      "B({kesir:{kok:3}|2}, {kesir:1|2})",
+      "{kesir:{kok:3}|2}",
+      "{kesir:1|2}"
+     ],
+     [
+      "45°",
+      "L({kesir:{kok:2}|2}, {kesir:{kok:2}|2})",
+      "{kesir:{kok:2}|2}",
+      "{kesir:{kok:2}|2}"
+     ],
+     [
+      "60°",
+      "N({kesir:1|2}, {kesir:{kok:3}|2})",
+      "{kesir:1|2}",
+      "{kesir:{kok:3}|2}"
+     ]
+    ]
+   },
+   "gorsel": "<svg viewBox=\"0 0 680 240\" role=\"img\" aria-label=\"Birim çember üzerinde P(cos α, sin α) noktası ve 30°, 45°, 60° koordinatları\"><rect x=\"14\" y=\"14\" width=\"652\" height=\"34\" rx=\"6\" fill=\"#245785\" stroke=\"#245785\" stroke-width=\"1.5\"/><text x=\"340\" y=\"36\" font-size=\"12.5\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"700\">BİRİM ÇEMBER VE NOKTALARIN TRİGONOMETRİK KOORDİNATLARI</text><rect x=\"18\" y=\"58\" width=\"290\" height=\"168\" rx=\"8\" fill=\"#fff\" stroke=\"#d8d1c3\" stroke-width=\"1.5\"/><line x1=\"65\" y1=\"144\" x2=\"248\" y2=\"144\" stroke=\"#68645c\" stroke-width=\"1.5\"/><line x1=\"155\" y1=\"66\" x2=\"155\" y2=\"220\" stroke=\"#68645c\" stroke-width=\"1.5\"/><circle cx=\"155\" cy=\"144\" r=\"64\" fill=\"none\" stroke=\"#245785\" stroke-width=\"2.2\"/><polygon points=\"155,144 204,144 204,103\" fill=\"#eaf2fa\" stroke=\"#b8362a\" stroke-width=\"1.8\"/><circle cx=\"204\" cy=\"103\" r=\"4\" fill=\"#b8362a\"/><text x=\"242\" y=\"99\" font-size=\"10.5\" fill=\"#b8362a\" text-anchor=\"middle\" font-weight=\"700\">P(cos α, sin α)</text><text x=\"176\" y=\"139\" font-size=\"11\" fill=\"#1f2e45\" text-anchor=\"middle\" font-weight=\"700\">α</text><text x=\"180\" y=\"157\" font-size=\"9.5\" fill=\"#245785\" text-anchor=\"middle\" font-weight=\"700\">cos α</text><text x=\"222\" y=\"126\" font-size=\"9.5\" fill=\"#b8362a\" text-anchor=\"middle\" font-weight=\"700\">sin α</text><text x=\"232\" y=\"156\" font-size=\"10\" fill=\"#68645c\" text-anchor=\"middle\" font-weight=\"700\">1</text><text x=\"80\" y=\"156\" font-size=\"10\" fill=\"#68645c\" text-anchor=\"middle\" font-weight=\"700\">−1</text><text x=\"145\" y=\"76\" font-size=\"10\" fill=\"#68645c\" text-anchor=\"middle\" font-weight=\"700\">1</text><rect x=\"322\" y=\"58\" width=\"340\" height=\"168\" rx=\"8\" fill=\"#eaf2fa\" stroke=\"#245785\" stroke-width=\"1.5\"/><text x=\"492\" y=\"80\" font-size=\"11.5\" fill=\"#245785\" text-anchor=\"middle\" font-weight=\"700\">1. BÖLGEDE ÖZEL AÇILAR: P(cos α, sin α)</text><rect x=\"336\" y=\"94\" width=\"312\" height=\"32\" rx=\"5\" fill=\"#fff\" stroke=\"#245785\" stroke-width=\"1.5\"/><text x=\"375\" y=\"114\" font-size=\"10.5\" fill=\"#b8362a\" text-anchor=\"middle\" font-weight=\"700\">α = 30°</text><text x=\"455\" y=\"114\" font-size=\"10.5\" fill=\"#1f2e45\" text-anchor=\"middle\" font-weight=\"700\">B( √3/2 , 1/2 )</text><text x=\"576\" y=\"114\" font-size=\"9.5\" fill=\"#245785\" text-anchor=\"middle\" font-weight=\"700\">cos 30° = √3/2 • sin 30° = 1/2</text><rect x=\"336\" y=\"134\" width=\"312\" height=\"32\" rx=\"5\" fill=\"#fff\" stroke=\"#245785\" stroke-width=\"1.5\"/><text x=\"375\" y=\"154\" font-size=\"10.5\" fill=\"#b8362a\" text-anchor=\"middle\" font-weight=\"700\">α = 45°</text><text x=\"455\" y=\"154\" font-size=\"10.5\" fill=\"#1f2e45\" text-anchor=\"middle\" font-weight=\"700\">L( √2/2 , √2/2 )</text><text x=\"576\" y=\"154\" font-size=\"9.5\" fill=\"#245785\" text-anchor=\"middle\" font-weight=\"700\">cos 45° = √2/2 • sin 45° = √2/2</text><rect x=\"336\" y=\"174\" width=\"312\" height=\"32\" rx=\"5\" fill=\"#fff\" stroke=\"#245785\" stroke-width=\"1.5\"/><text x=\"375\" y=\"194\" font-size=\"10.5\" fill=\"#b8362a\" text-anchor=\"middle\" font-weight=\"700\">α = 60°</text><text x=\"455\" y=\"194\" font-size=\"10.5\" fill=\"#1f2e45\" text-anchor=\"middle\" font-weight=\"700\">N( 1/2 , √3/2 )</text><text x=\"576\" y=\"194\" font-size=\"9.5\" fill=\"#245785\" text-anchor=\"middle\" font-weight=\"700\">cos 60° = 1/2  • sin 60° = √3/2</text></svg>"
+  },
+  {
+   "baslik": "Geniş Açıların (90° < α < 180°) Trigonometrik Oranları ve İş Uygulaması",
+   "metin": [
+    "Ölçüsü {koyu:90° < α < 180°} olan bir geniş açının bitim kolu birim çemberi {koyu:ikinci bölgede} keser. İkinci bölgedeki bir {koyu:P(cos α, sin α)} noktasından {koyu:x} ekseninin negatif kısmına dikme indirildiğinde, bütünler açı olan {koyu:180° − α} dar açısına sahip bir dik üçgen oluşur. İkinci bölgede noktaların {koyu:apsisi (x) negatif}, {koyu:ordinatı (y) pozitif} olduğu için geniş açıların {koyu:kosinüs değeri negatif}, {koyu:sinüs değeri ise pozitiftir}: {koyu:cos(180° − θ) = −cos θ} ve {koyu:sin(180° − θ) = +sin θ}.",
+    "Örneğin {koyu:120°}lik açının bütünleri {koyu:60°} olduğundan birim çemberi kestiği nokta {koyu:B(−{kesir:1|2}, {kesir:{kok:3}|2})} olur; buradan {koyu:cos 120° = −{kesir:1|2}} ve {koyu:sin 120° = {kesir:{kok:3}|2}} bulunur. Benzer şekilde {koyu:cos 135° = −{kesir:{kok:2}|2}, sin 135° = {kesir:{kok:2}|2}} ve {koyu:cos 150° = −{kesir:{kok:3}|2}, sin 150° = {kesir:1|2}} değerlerine ulaşılır. Fizikte bir kuvvetin yaptığı iş {koyu:W = F · d · cos θ} formülüyle hesaplanır; kuvvet ile yer değiştirme arasındaki açı {koyu:θ > 90°} (geniş açı) ise {koyu:cos θ < 0} olduğundan yapılan iş {koyu:negatif} çıkar ve bu durum {koyu:sistemden enerji çekildiğini} gösterir."
+   ],
+   "tablo": {
+    "basliklar": [
+     "Geniş Açı",
+     "Bütünler Dar Açısı",
+     "Birim Çemberdeki Noktası",
+     "Kosinüs ve Sinüs Değerleri"
+    ],
+    "satirlar": [
+     [
+      "120°",
+      "60°",
+      "B(−{kesir:1|2}, {kesir:{kok:3}|2})",
+      "cos 120° = −{kesir:1|2}  •  sin 120° = {kesir:{kok:3}|2}"
+     ],
+     [
+      "135°",
+      "45°",
+      "L(−{kesir:{kok:2}|2}, {kesir:{kok:2}|2})",
+      "cos 135° = −{kesir:{kok:2}|2}  •  sin 135° = {kesir:{kok:2}|2}"
+     ],
+     [
+      "150°",
+      "30°",
+      "N(−{kesir:{kok:3}|2}, {kesir:1|2})",
+      "cos 150° = −{kesir:{kok:3}|2}  •  sin 150° = {kesir:1|2}"
+     ]
+    ]
+   },
+   "gorsel": "<svg viewBox=\"0 0 680 235\" role=\"img\" aria-label=\"Birim çemberin ikinci bölgesinde geniş açıların sinüs ve kosinüs değerleri\"><rect x=\"14\" y=\"14\" width=\"652\" height=\"34\" rx=\"6\" fill=\"#b8362a\" stroke=\"#b8362a\" stroke-width=\"1.5\"/><text x=\"340\" y=\"36\" font-size=\"12.5\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"700\">BİRİM ÇEMBERDE GENİŞ AÇILAR (90° < α < 180°) VE MEKANİK İŞ</text><rect x=\"18\" y=\"58\" width=\"300\" height=\"162\" rx=\"8\" fill=\"#fff\" stroke=\"#d8d1c3\" stroke-width=\"1.5\"/><line x1=\"85\" y1=\"152\" x2=\"255\" y2=\"152\" stroke=\"#68645c\" stroke-width=\"1.5\"/><line x1=\"175\" y1=\"74\" x2=\"175\" y2=\"212\" stroke=\"#68645c\" stroke-width=\"1.5\"/><circle cx=\"175\" cy=\"152\" r=\"62\" fill=\"none\" stroke=\"#245785\" stroke-width=\"2\"/><polygon points=\"175,152 144,152 144,98\" fill=\"#faecea\" stroke=\"#b8362a\" stroke-width=\"1.8\"/><circle cx=\"144\" cy=\"98\" r=\"4\" fill=\"#b8362a\"/><text x=\"122\" y=\"90\" font-size=\"10\" fill=\"#b8362a\" text-anchor=\"middle\" font-weight=\"700\">B(−1/2, √3/2)</text><text x=\"157\" y=\"146\" font-size=\"9.5\" fill=\"#b8362a\" text-anchor=\"middle\" font-weight=\"700\">60°</text><text x=\"197\" y=\"138\" font-size=\"10.5\" fill=\"#245785\" text-anchor=\"middle\" font-weight=\"700\">120°</text><text x=\"168\" y=\"206\" font-size=\"10\" fill=\"#1f2e45\" text-anchor=\"middle\" font-weight=\"700\">2. Bölge: cos α < 0 (Negatif), sin α > 0 (Pozitif)</text><rect x=\"332\" y=\"58\" width=\"330\" height=\"162\" rx=\"8\" fill=\"#faecea\" stroke=\"#b8362a\" stroke-width=\"1.5\"/><text x=\"497\" y=\"78\" font-size=\"11\" fill=\"#b8362a\" text-anchor=\"middle\" font-weight=\"700\">GENİŞ AÇI ÖZDEŞLİKLERİ (BÜTÜNLER AÇI)</text><text x=\"497\" y=\"98\" font-size=\"10.5\" fill=\"#1f2e45\" text-anchor=\"middle\" font-weight=\"700\">cos(180° − θ) = −cos θ   •   sin(180° − θ) = +sin θ</text><rect x=\"346\" y=\"108\" width=\"302\" height=\"54\" rx=\"5\" fill=\"#fff\" stroke=\"#b8362a\" stroke-width=\"1.5\"/><text x=\"497\" y=\"125\" font-size=\"10\" fill=\"#1a1815\" text-anchor=\"middle\" font-weight=\"700\">• 120°: cos 120° = −1/2   |   sin 120° = √3/2</text><text x=\"497\" y=\"141\" font-size=\"10\" fill=\"#1a1815\" text-anchor=\"middle\" font-weight=\"700\">• 135°: cos 135° = −√2/2  |   sin 135° = √2/2</text><text x=\"497\" y=\"156\" font-size=\"10\" fill=\"#1a1815\" text-anchor=\"middle\" font-weight=\"700\">• 150°: cos 150° = −√3/2  |   sin 150° = 1/2</text><rect x=\"346\" y=\"168\" width=\"302\" height=\"42\" rx=\"5\" fill=\"#fdf5e2\" stroke=\"#9e6b12\" stroke-width=\"1.5\"/><text x=\"497\" y=\"184\" font-size=\"10.5\" fill=\"#9e6b12\" text-anchor=\"middle\" font-weight=\"700\">Fizikte İş: W = F · d · cos θ</text><text x=\"497\" y=\"200\" font-size=\"9.5\" fill=\"#1a1815\" text-anchor=\"middle\" font-weight=\"700\">θ geniş açı ise cos θ < 0 ⇒ W < 0 (Enerji çekilir)</text></svg>"
+  },
+  {
+   "baslik": "Yönlü Açılar ve Türk-İslam Bilginlerinin Trigonometriye Katkıları",
+   "metin": [
+    "Birim çember üzerinde ortak köşesi orijin {koyu:O} ve başlangıç kolu pozitif {koyu:x} ekseni ({koyu:[OA} ışını) olan açılarda dönüş yönü büyük önem taşır. Bir ışın orijini merkez alarak {koyu:saat yönünün tersine} dönerse oluşan açıya {koyu:pozitif yönlü açı (+)}, {koyu:saat yönünde} dönerse oluşan açıya {koyu:negatif yönlü açı (−)} denir. Tam çember {koyu:360°} olduğundan dairesel bir pistte iki nokta arasındaki bir dönüş pozitif yönde {koyu:α°} ise negatif yönde {koyu:−(360° − α)°} olarak ifade edilir.",
+    "Trigonometrinin bağımsız bir bilim dalı hâline gelmesinde ve dakik trigonometrik cetvellerin hazırlanmasında Türk-İslam bilim insanları öncü rol oynamıştır. Özellikle Semerkant Rasathanesi’ni kuran {koyu:Uluğ Bey} ({koyu:Zîc-i Uluğ Bey} adlı eseriyle 1°nin sinüsünü büyük hassasiyetle hesaplamıştır) ile {koyu:Battânî, Ebü’l-Vefâ el-Bûzcânî, Bîrûnî, Gıyâseddin Cemşîd el-Kâşî ve Ali Kuşçu} sinüs, kosinüs, tanjant ve kotanjant kavramlarının ve cetvellerinin gelişimine büyük katkılar sunmuştur."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Yönlü Açı Kuralı",
+    "metin": "Saat yönünün tersi = {koyu:Pozitif yön (+)} • Saat yönü = {koyu:Negatif yön (−)}. Örneğin başlangıç kolundan saat yönünün tersine 70° dönmek {koyu:+70°}, saat yönünde 50° dönmek ise {koyu:−50°} olarak gösterilir."
+   },
+   "gorsel": "<svg viewBox=\"0 0 680 215\" role=\"img\" aria-label=\"Birim çemberde pozitif ve negatif yönlü açıların tanımı ve örnekleri\"><rect x=\"14\" y=\"14\" width=\"652\" height=\"34\" rx=\"6\" fill=\"#1c7278\" stroke=\"#1c7278\" stroke-width=\"1.5\"/><text x=\"340\" y=\"36\" font-size=\"13\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"700\">YÖNLÜ AÇILAR: POZİTİF (+) VE NEGATİF (−) DÖNÜŞ YÖNLERİ</text><rect x=\"20\" y=\"60\" width=\"305\" height=\"138\" rx=\"8\" fill=\"#e8f5ee\" stroke=\"#246c45\" stroke-width=\"1.5\"/><text x=\"172\" y=\"84\" font-size=\"12\" fill=\"#246c45\" text-anchor=\"middle\" font-weight=\"700\">POZİTİF YÖNLÜ AÇI (+)</text><text x=\"172\" y=\"108\" font-size=\"11\" fill=\"#1a1815\" text-anchor=\"middle\" font-weight=\"700\">Saat Yönünün Tersine Dönüş</text><text x=\"172\" y=\"132\" font-size=\"10\" fill=\"#1a1815\" text-anchor=\"middle\" font-weight=\"500\">Başlangıç kolu (+x ekseni) sabitken</text><text x=\"172\" y=\"150\" font-size=\"10\" fill=\"#1a1815\" text-anchor=\"middle\" font-weight=\"500\">saat yönünün tersine dönen ışının açısıdır.</text><rect x=\"42\" y=\"162\" width=\"260\" height=\"26\" rx=\"5\" fill=\"#fff\" stroke=\"#246c45\" stroke-width=\"1.5\"/><text x=\"172\" y=\"179\" font-size=\"10.5\" fill=\"#246c45\" text-anchor=\"middle\" font-weight=\"700\">Örnek: +20°, +70°, +140°</text><rect x=\"355\" y=\"60\" width=\"305\" height=\"138\" rx=\"8\" fill=\"#faecea\" stroke=\"#b8362a\" stroke-width=\"1.5\"/><text x=\"507\" y=\"84\" font-size=\"12\" fill=\"#b8362a\" text-anchor=\"middle\" font-weight=\"700\">NEGATİF YÖNLÜ AÇI (−)</text><text x=\"507\" y=\"108\" font-size=\"11\" fill=\"#1a1815\" text-anchor=\"middle\" font-weight=\"700\">Saat Yönünde Dönüş</text><text x=\"507\" y=\"132\" font-size=\"10\" fill=\"#1a1815\" text-anchor=\"middle\" font-weight=\"500\">Başlangıç kolu (+x ekseni) sabitken</text><text x=\"507\" y=\"150\" font-size=\"10\" fill=\"#1a1815\" text-anchor=\"middle\" font-weight=\"500\">saat yönünde dönen ışının açısıdır.</text><rect x=\"377\" y=\"162\" width=\"260\" height=\"26\" rx=\"5\" fill=\"#fff\" stroke=\"#b8362a\" stroke-width=\"1.5\"/><text x=\"507\" y=\"179\" font-size=\"10.5\" fill=\"#b8362a\" text-anchor=\"middle\" font-weight=\"700\">Örnek: −40°, −50°, −120°, −150°</text></svg>"
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "0° < x < 90° olmak üzere kenar uzunlukları sin x mm ve cos x mm olan iki metal telin uzunlukları farkı |sin x − cos x| = {kesir:1|2} mm’dir. Bu tellerle yapılan dikdörtgen çerçevenin alanı kaç milimetrekaredir?",
+   "cevap": "Dikdörtgen çerçevenin alanı {koyu:A = sin x · cos x} çarpımına eşittir. {koyu:|sin x − cos x| = {kesir:1|2}} eşitliğinin iki tarafının karesi alınırsa {koyu:{us:sin|2} x − 2 · sin x · cos x + {us:cos|2} x = {kesir:1|4}} olur. {koyu:{us:sin|2} x + {us:cos|2} x = 1} olduğundan {koyu:1 − 2 · sin x · cos x = {kesir:1|4}} ⇒ {koyu:2 · sin x · cos x = {kesir:3|4}} ⇒ {koyu:sin x · cos x = {kesir:3|8}} milimetrekare bulunur. (Not: Fark {kesir:1|{kok:2}} mm verildiğinde ise karesi {kesir:1|2} olduğundan alan {koyu:{kesir:1|4}} milimetrekare olur.)"
+  },
+  {
+   "soru": "0° < x < 90° olmak üzere bir kenarı tan x birim olan mavi kare ile bir kenarı cot x birim olan yeşil karenin alanları toplamı 14 birimkaredir. Bir kenar uzunluğu (tan x + cot x) birim olan büyük karenin alanı kaç birimkaredir?",
+   "cevap": "Mavi ve yeşil karelerin alanları toplamı {koyu:{us:tan|2} x + {us:cot|2} x = 14} birimkaredir. Büyük karenin bir kenarı {koyu:tan x + cot x} olduğundan alanı {koyu:{us:(tan x + cot x)|2} = {us:tan|2} x + {us:cot|2} x + 2 · tan x · cot x} olur. {koyu:tan x · cot x = 1} özdeşliği yerine yazılırsa alan {koyu:14 + 2 · 1 = 16} birimkare olarak bulunur."
+  },
+  {
+   "soru": "Zemine dik bir direk, yerden 1,2 metre yükseklikten kırılarak devrilmiş ve kırılan üst parça zeminle 30°lik açı yapmıştır. Direğin kırılmadan önceki toplam boyu kaç metredir?",
+   "cevap": "Kırılma noktasının yerden yüksekliği olan {koyu:1,2 m}, oluşan dik üçgende {koyu:30°}lik açının karşısındaki dik kenardır. Devrilen üst parçanın uzunluğu hipotenüs ({koyu:L}) olduğundan {koyu:sin 30° = {kesir:1,2|L} = {kesir:1|2}} ⇒ {koyu:L = 2,4 m} bulunur. Direğin kırılmadan önceki toplam boyu {koyu:1,2 + 2,4 = 3,6 metre}dir."
+  },
+  {
+   "soru": "Eğim açısı 17° olan bir karayolunda sin 17° ≈ 0,2924 ve cos 17° ≈ 0,9563 olarak verilmiştir. Bu yolun tehlikeli eğim levhasında yazması gereken eğim yüzdesi yaklaşık kaçtır?",
+   "cevap": "Yolun eğimi {koyu:tan 17° = {kesir:sin 17°|cos 17°} ≈ {kesir:0,29|0,96} ≈ 0,30} olur. Eğim yüzdesi ise {koyu:Eğim (%) = tan 17° · 100 ≈ 0,30 · 100 = %30} (kesirli değerler doğrudan bölündüğünde yaklaşık {koyu:%30,58}) olarak bulunur."
+  },
+  {
+   "soru": "Yatay zemin üzerindeki bir kutu, yer değiştirme doğrultusuyla 120°lik açı yapan 60 N büyüklüğündeki kuvvetle 4 metre çekiliyor. W = F · d · cos θ formülüne göre kuvvetin yaptığı işi ve sistemin enerji durumunu bulunuz.",
+   "cevap": "Geniş açı için {koyu:cos 120° = −cos 60° = −{kesir:1|2}} değerindedir. İş formülünde yerine yazılırsa {koyu:W = 60 · 4 · (−{kesir:1|2}) = −120 joule} bulunur. İş negatif çıktığı için {koyu:sistemden enerji çekilmiştir}."
+  },
+  {
+   "soru": "Dik koordinat sistemindeki dairesel pistte A(1, 0) noktasından başlayan Beril pozitif yönde 70° dönerek B noktasına, Cansu ise negatif yönde 150° dönerek C noktasına ulaşıyor. Beril’in B noktasından C noktasına ulaşması için hangi yönde kaç derece dönmesi gerekir?",
+   "cevap": "B noktası {koyu:+70°}, C noktası ise {koyu:−150°} (yani pozitif yönde {koyu:210°}) konumundadır. Beril B noktasından C noktasına gitmek için {koyu:pozitif yönde (saat yönünün tersine) 210° − 70° = 140°} veya {koyu:negatif yönde (saat yönünde) 70° + 150° = 220°} dönmelidir."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "0° < x < 90° olmak üzere {koyu:sin x + cos x = {kesir:4|3}} olduğuna göre {koyu:sin x · cos x} çarpımının değeri kaçtır?",
+   "secenekler": [
+    "{kesir:7|18}",
+    "{kesir:7|9}",
+    "{kesir:1|3}",
+    "{kesir:5|18}",
+    "{kesir:2|9}"
+   ],
+   "dogru": 0,
+   "aciklama": "{us:(sin x + cos x)|2} = {us:(4/3)|2} ⇒ {us:sin|2} x + {us:cos|2} x + 2·sin x·cos x = {kesir:16|9} ⇒ 1 + 2·sin x·cos x = {kesir:16|9} ⇒ 2·sin x·cos x = {kesir:7|9} ⇒ sin x·cos x = {kesir:7|18} bulunur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Birim çember üzerinde başlangıç kolu pozitif x ekseni olan {koyu:150°}lik pozitif yönlü açının birim çemberi kestiği N noktasının koordinatları aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "({kesir:{kok:3}|2}, {kesir:1|2})",
+    "(−{kesir:1|2}, {kesir:{kok:3}|2})",
+    "(−{kesir:{kok:3}|2}, {kesir:1|2})",
+    "(−{kesir:{kok:2}|2}, {kesir:{kok:2}|2})",
+    "({kesir:1|2}, −{kesir:{kok:3}|2})"
+   ],
+   "dogru": 2,
+   "aciklama": "150° ikinci bölgede olup bütünleri 30°dir. N(cos 150°, sin 150°) = (−cos 30°, sin 30°) = (−{kesir:{kok:3}|2}, {kesir:1|2}) olur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Her iki ayağının uzunluğu {koyu:2,5 metre} olan ikizkenar üçgen biçimindeki bir iş merdiveni, ayakları zeminle {koyu:50°}lik açı yapacak şekilde açılmıştır. Ayakların zemine değdiği iki uç arasına gerilecek emniyet ipinin uzunluğu en az kaç metre olmalıdır? ({koyu:sin 40° ≈ 0,6} alınız.)",
+   "secenekler": [
+    "1,5",
+    "2",
+    "2,4",
+    "3",
+    "3,6"
+   ],
+   "dogru": 3,
+   "aciklama": "Tepe noktasından zemine dikme indirildiğinde taban iki eş parçaya bölünür ve tepedeki dar açılar 90° − 50° = 40° olur. Bir dik üçgende sin 40° = (x/2) / 2,5 = 0,6 ⇒ x/2 = 1,5 m ve ipin toplam uzunluğu x = 3 m bulunur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Birim çemberde başlangıç kolu pozitif x ekseni olan bir ışın, orijin etrafında {koyu:saat yönünde 120°} döndürülerek D noktası elde ediliyor. Bu açının yönlü açı ölçüsü aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "+120°",
+    "−120°",
+    "+60°",
+    "−60°",
+    "+240°"
+   ],
+   "dogru": 1,
+   "aciklama": "Saat yönündeki dönüşler negatif yönlü açı olduğundan açı ölçüsü −120° olarak ifade edilir."
+  },
+  {
+   "tur": "dy",
+   "soru": "Trigonometrik oranlar, birim çember ve yönlü açılarla ilgili aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "Hipotenüs uzunluğu 1 birim olan bir dik üçgende x dar açısının karşısındaki dik kenarın uzunluğu sin x birim, komşu dik kenarın uzunluğu cos x birimdir.",
+     "dogru": true,
+     "aciklama": "Doğru. Hipotenüs 1 birim olduğunda sin x = karşı/1 ve cos x = komşu/1 olduğundan dik kenarlar doğrudan sin x ve cos x olur."
+    },
+    {
+     "metin": "İkinci bölgedeki bir geniş açının (90° < α < 180°) hem sinüs hem de kosinüs değeri negatiftir.",
+     "dogru": false,
+     "aciklama": "Yanlış. İkinci bölgede apsis (cos α) negatif, ordinat (sin α) ise pozitiftir."
+    },
+    {
+     "metin": "Birim çember üzerindeki herhangi bir P(x, y) noktası için {us:x|2} + {us:y|2} = 1 eşitliği her zaman sağlanır.",
+     "dogru": true,
+     "aciklama": "Doğru. Birim çemberin yarıçapı 1 birim olduğundan {us:cos|2} α + {us:sin|2} α = {us:x|2} + {us:y|2} = 1 olur."
+    },
+    {
+     "metin": "Bir ışının orijin etrafında saat yönünün tersine dönmesiyle oluşan açıya negatif yönlü açı denir.",
+     "dogru": false,
+     "aciklama": "Yanlış. Saat yönünün tersine dönüş pozitif yönlü (+), saat yönünde dönüş ise negatif yönlü (−) açıdır."
+    },
+    {
+     "metin": "Eğim açısı α olan bir rampanın eğim yüzdesi tan α · 100 formülüyle hesaplanır.",
+     "dogru": true,
+     "aciklama": "Doğru. Eğim = Yükseklik Farkı / Yatay Uzaklık = tan α olduğundan eğim yüzdesi tan α · 100 ile bulunur."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "soru": "Aşağıdaki trigonometrik kavram ve ifadeleri doğru karşılıklarıyla eşleştiriniz.",
+   "ciftler": [
+    [
+     "Birim Çember",
+     "Merkezi orijin O(0, 0) ve yarıçapı 1 birim olan çember"
+    ],
+    [
+     "cos 120°",
+     "İkinci bölgede bulunan ve değeri −{kesir:1|2} olan trigonometrik oran"
+    ],
+    [
+     "sin 135°",
+     "İkinci bölgede bulunan ve değeri {kesir:{kok:2}|2} olan trigonometrik oran"
+    ],
+    [
+     "Pozitif Yönlü Açı",
+     "Bir ışının orijin etrafında saat yönünün tersine dönmesiyle oluşan açı"
+    ],
+    [
+     "Uluğ Bey",
+     "Semerkant Rasathanesi’nde Zîc adlı eseriyle hassas sinüs cetvelleri hazırlayan Türk-İslam bilgini"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+   "cumleler": [
+    {
+     "metin": "Birim çember üzerindeki bir P noktasının birinci bileşeni olan ___ açının kosinüs değerini verir.",
+     "cevap": "apsis"
+    },
+    {
+     "metin": "Birim çember üzerindeki bir P noktasının ikinci bileşeni olan ___ açının sinüs değerini verir.",
+     "cevap": "ordinat"
+    },
+    {
+     "metin": "Bir dar açının sinüs değerinin kosinüs değerine oranı o açının ___ değerine eşittir.",
+     "cevap": "tanjant"
+    },
+    {
+     "metin": "Fizikte W = F · d · cos θ formülünde θ geniş açı olduğunda yapılan iş ___ işaretli çıkar.",
+     "cevap": "negatif"
+    },
+    {
+     "metin": "Bir ışının orijin etrafında saat yönünde dönmesiyle oluşan açıya ___ yönlü açı adı verilir.",
+     "cevap": "negatif"
+    }
+   ],
+   "fazla": [
+    "hipotenüs",
+    "merkez"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Dik üçgende tanımlanan dar açı trigonometrik oranlarının birim çember yardımıyla geniş açılara (90° < α < 180°) nasıl genişletildiğini 120° ve 150° örnekleri üzerinden adım adım açıklayınız.",
+   "ipuclari": [
+    "1. Adım: Hipotenüsü 1 birim olan dik üçgenin birim çemberin birinci bölgesine nasıl yerleştirildiğini ve P(cos α, sin α) noktasını açıklayınız.",
+    "2. Adım: Açının bitim kolu ikinci bölgeye (90° < α < 180°) geçtiğinde x ekseninin negatif kısmıyla oluşan bütünler dar açılı (180° − α) dik üçgeni tanımlayınız.",
+    "3. Adım: İkinci bölgedeki işaret kuralını (apsis negatif, ordinat pozitif) belirterek 120° ve 150°nin sinüs ve kosinüs değerlerini yazınız."
+   ],
+   "cevap": "Hipotenüsü {koyu:1 birim} olan bir dik üçgende {koyu:α} dar açısının komşu dik kenarı {koyu:cos α}, karşı dik kenarı ise {koyu:sin α} birimdir. Bu üçgen merkezi orijin {koyu:O(0, 0)} ve yarıçapı {koyu:1 birim} olan {koyu:birim çemberin} birinci bölgesine yerleştirildiğinde açının çemberi kestiği nokta {koyu:P(cos α, sin α)} olur. Açının ölçüsü {koyu:90° < α < 180°} aralığındaki bir geniş açıya ulaştığında ise bitim kolu birim çemberi {koyu:ikinci bölgede} keser. Kesim noktasından negatif {koyu:x} eksenine dikme indirildiğinde dar açısı {koyu:180° − α} olan bir dik üçgen oluşur. İkinci bölgede apsis negatif, ordinat pozitif olduğundan {koyu:cos α = −cos(180° − α)} ve {koyu:sin α = +sin(180° − α)} kuralı elde edilir. Bu kurala göre {koyu:120°} için ({koyu:180° − 120° = 60°}) {koyu:cos 120° = −cos 60° = −{kesir:1|2}} ve {koyu:sin 120° = sin 60° = {kesir:{kok:3}|2}}; {koyu:150°} için ({koyu:180° − 150° = 30°}) ise {koyu:cos 150° = −cos 30° = −{kesir:{kok:3}|2}} ve {koyu:sin 150° = sin 30° = {kesir:1|2}} bulunur."
+  }
+ ]
+}
