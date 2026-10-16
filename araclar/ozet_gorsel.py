@@ -1047,5 +1047,20 @@ if __name__ == '__main__':
         spec = importlib.util.spec_from_file_location(f'gorsel_{modul.stem.replace("-", "_")}', modul)
         m = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(m)
-        yaz(hedef, m.uygula)
+        if hasattr(m, 'uygula'):
+            yaz(hedef, m.uygula)
+        elif hasattr(m, 'GORSELLER'):
+            def _uygula_gorseller(v, _g=m.GORSELLER):
+                bolumler = v.get('bolumler', [])
+                if isinstance(_g, dict):
+                    for i, b in enumerate(bolumler):
+                        k = f'b{i+1}'
+                        if k in _g:
+                            b['gorsel'] = _g[k]
+                elif isinstance(_g, (list, tuple)):
+                    for i, g in enumerate(_g):
+                        if i < len(bolumler):
+                            bolumler[i]['gorsel'] = g
+            yaz(hedef, _uygula_gorseller)
     print('görseller yazıldı')
+

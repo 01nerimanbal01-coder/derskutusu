@@ -169,17 +169,52 @@ def gorsel_4():
     ic.append(kutu(322, 58, 340, 168, C["acik_mavi"], C["mavi"]))
     ic.append(metin(492, 80, "1. BÖLGEDE ÖZEL AÇILAR: P(cos α, sin α)", 11.5, C["mavi"], True))
     satirlar = [
-        (94, "α = 30°", "B( √3/2 , 1/2 )", "cos 30° = √3/2 • sin 30° = 1/2"),
-        (134, "α = 45°", "L( √2/2 , √2/2 )", "cos 45° = √2/2 • sin 45° = √2/2"),
-        (174, "α = 60°", "N( 1/2 , √3/2 )", "cos 60° = 1/2  • sin 60° = √3/2"),
+        (94, "α = 30°", ["B( ", ("k", "3"), "/2 , 1/2 )"], ["cos 30° = ", ("k", "3"), "/2 • sin 30° = 1/2"]),
+        (134, "α = 45°", ["L( ", ("k", "2"), "/2 , ", ("k", "2"), "/2 )"], ["cos 45° = ", ("k", "2"), "/2 • sin 45° = ", ("k", "2"), "/2"]),
+        (174, "α = 60°", ["N( 1/2 , ", ("k", "3"), "/2 )"], ["cos 60° = 1/2  • sin 60° = ", ("k", "3"), "/2"]),
     ]
     for y, aci, nokta, deger in satirlar:
         ic.append(kutu(336, y, 312, 32, "#fff", C["mavi"], r=5))
         ic.append(metin(375, y + 20, aci, 10.5, C["kirmizi"], True))
-        ic.append(metin(455, y + 20, nokta, 10.5, C["lacivert"], True))
-        ic.append(metin(576, y + 20, deger, 9.5, C["mavi"], True))
+        ic.append(_kok_satir(455, y + 20, nokta, 10.5, C["lacivert"], True))
+        ic.append(_kok_satir(576, y + 20, deger, 9.5, C["mavi"], True))
 
     return svg(w, h, "".join(ic), "Birim çember üzerinde P(cos α, sin α) noktası ve 30°, 45°, 60° koordinatları")
+
+
+def _kok_satir(xc, y, parcalar, boyut=10, renk="#1a1815", kalin=True):
+    fw = "700" if kalin else "500"
+    gen = {" ": 0.30, ",": 0.30, ".": 0.30, "•": 0.48, "(": 0.36, ")": 0.36, "=": 0.58, "−": 0.58, "/": 0.42, "|": 0.34, ":": 0.32, "1": 0.50}
+    def mw(s):
+        return sum(gen.get(c, 0.56) for c in s) * boyut
+    def pw(p):
+        if isinstance(p, str):
+            return mw(p)
+        return boyut * 0.58 + boyut * 0.08 + mw(p[1]) + boyut * 0.10
+    toplam = sum(pw(p) for p in parcalar)
+    cx = xc - toplam / 2.0
+    out = []
+    for p in parcalar:
+        if isinstance(p, str):
+            out.append(f'<text x="{cx:.1f}" y="{y:.1f}" font-size="{boyut}" fill="{renk}" font-weight="{fw}">{p}</text>')
+        else:
+            ic = p[1]
+            yt = y - boyut * 0.88
+            x_ic = cx + boyut * 0.58 + boyut * 0.08
+            x_son = x_ic + mw(ic) + boyut * 0.10
+            d = (
+                f"M{cx:.1f} {y - boyut * 0.30:.1f} "
+                f"L{cx + boyut * 0.11:.1f} {y - boyut * 0.38:.1f} "
+                f"L{cx + boyut * 0.30:.1f} {y + boyut * 0.08:.1f} "
+                f"L{cx + boyut * 0.58:.1f} {yt:.1f} "
+                f"H{x_son:.1f}"
+            )
+            out.append(
+                f'<path d="{d}" fill="none" stroke="{renk}" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>'
+                f'<text x="{x_ic:.1f}" y="{y:.1f}" font-size="{boyut}" fill="{renk}" font-weight="{fw}">{ic}</text>'
+            )
+        cx += pw(p)
+    return "".join(out)
 
 
 def gorsel_5():
@@ -198,7 +233,7 @@ def gorsel_5():
     px, py = cx - 31, cy - 54
     ic.append(f'<polygon points="{cx},{cy} {px},{cy} {px},{py}" fill="#faecea" stroke="#b8362a" stroke-width="1.8"/>')
     ic.append(f'<circle cx="{px}" cy="{py}" r="4" fill="{C["kirmizi"]}"/>')
-    ic.append(metin(px - 22, py - 8, "B(−1/2, √3/2)", 10, C["kirmizi"], True))
+    ic.append(_kok_satir(px - 22, py - 8, ["B(−1/2, ", ("k", "3"), "/2)"], 10, C["kirmizi"], True))
     ic.append(metin(cx - 18, cy - 6, "60°", 9.5, C["kirmizi"], True))
     ic.append(metin(cx + 22, cy - 14, "120°", 10.5, C["mavi"], True))
     ic.append(metin(168, 206, "2. Bölge: cos α < 0 (Negatif), sin α > 0 (Pozitif)", 10, C["lacivert"], True))
@@ -208,9 +243,9 @@ def gorsel_5():
     ic.append(metin(497, 78, "GENİŞ AÇI ÖZDEŞLİKLERİ (BÜTÜNLER AÇI)", 11, C["kirmizi"], True))
     ic.append(metin(497, 98, "cos(180° − θ) = −cos θ   •   sin(180° − θ) = +sin θ", 10.5, C["lacivert"], True))
     ic.append(kutu(346, 108, 302, 54, "#fff", C["kirmizi"], r=5))
-    ic.append(metin(497, 125, "• 120°: cos 120° = −1/2   |   sin 120° = √3/2", 10, "#1a1815", True))
-    ic.append(metin(497, 141, "• 135°: cos 135° = −√2/2  |   sin 135° = √2/2", 10, "#1a1815", True))
-    ic.append(metin(497, 156, "• 150°: cos 150° = −√3/2  |   sin 150° = 1/2", 10, "#1a1815", True))
+    ic.append(_kok_satir(497, 125, ["• 120°: cos 120° = −1/2   |   sin 120° = ", ("k", "3"), "/2"], 10, "#1a1815", True))
+    ic.append(_kok_satir(497, 141, ["• 135°: cos 135° = −", ("k", "2"), "/2  |   sin 135° = ", ("k", "2"), "/2"], 10, "#1a1815", True))
+    ic.append(_kok_satir(497, 156, ["• 150°: cos 150° = −", ("k", "3"), "/2  |   sin 150° = 1/2"], 10, "#1a1815", True))
     ic.append(kutu(346, 168, 302, 42, C["acik_sari"], C["sari"], r=5))
     ic.append(metin(497, 184, "Fizikte İş: W = F · d · cos θ", 10.5, C["sari"], True))
     ic.append(metin(497, 200, "θ geniş açı ise cos θ < 0 ⇒ W < 0 (Enerji çekilir)", 9.5, "#1a1815", True))
