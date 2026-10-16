@@ -1,0 +1,281 @@
+{
+ "ad": "9-matematik-2",
+ "sinif": 9,
+ "ders": "matematik",
+ "ders_adi": "Matematik",
+ "hafta": 2,
+ "tarih": "21-25 Eylül 2026",
+ "yayin_tarihi": "2026-10-15",
+ "unite": "SAYILAR",
+ "konu": "Gerçek Sayıların Üslü ve Köklü Gösterimleri ile Yapılan İşlemler (2. Bölüm)",
+ "ciktilar": [
+  "9.1.1. Gerçek sayıların üslü ve köklü gösterimleriyle yapılan işlemlere dair muhakeme yapabilme"
+ ],
+ "giris": "Üslü ve köklü gösterimlerin temel kurallarını öğrendikten sonra, bu hafta üslü ve köklü ifadelerin {koyu:birbiri cinsinden yazılmasını}, {koyu:bilimsel gösterimle} yapılan karşılaştırma ve oranlama işlemlerini, {koyu:kökün kökünü alma} kuralını, {koyu:kök dereceleri farklı olan köklü ifadelerde} çarpma, bölme ve sıralama yöntemlerini, {koyu:paydayı rasyonel yapma (eşlenik)} işlemlerini ve köklü sayıların {koyu:yaklaşık değerleriyle} gerçek hayat problemlerinin çözümünü ele alacağız.",
+ "ozet": [
+  "Çok büyük veya çok küçük gerçek sayılar {koyu:bilimsel gösterimle} (1 ≤ |a| < 10 ve n tam sayı olmak üzere a · {us:10|n} biçiminde) ifade edilir; bu sayılar sıralanırken veya oranlanırken {us:10|n} kuvvetleri eşitlenir.",
+  "m ve n pozitif tam sayılar (n ≥ 2) ve x > 0 için {koyu:rasyonel üslü ifadeler} köklü biçimde {us:x|m/n} eşitliğiyle (örneğin {us:x|2/3} = {kok:{us:x|2}|3}) yazılır; buradaki n sayısına {koyu:kökün derecesi} denir.",
+  "Gerçek sayılarda tek dereceli kök (örneğin {kok:a|3}) her a gerçek sayısı için tanımlıyken, çift dereceli kök (örneğin {kok:a} veya {kok:a|4}) yalnızca {koyu:a ≥ 0} için gerçek sayıdır; ayrıca n tek iken {kok:{us:a|3}|3} = a, n çift iken {kok:{us:a|4}|4} = {koyu:|a|} olur.",
+  "Kök derecesi ve kök içi aynı olan ifadelerde katsayılar toplanıp çıkarılır: 4{kok:5|3} + 2{kok:5|3} = 6{kok:5|3}; iç içe köklerde ({koyu:kökün kökü}) ise kök dereceleri çarpılır (örneğin {kok:{kok:x|3}} = {kok:x|6}).",
+  "{koyu:Kök dereceleri farklı} olan köklü gösterimlerle çarpma, bölme veya sıralama yapabilmek için kök derecesi ve kök içindeki üs aynı pozitif tam sayıyla genişletilerek (örneğin {kok:5|3} = {kok:{us:5|2}|6}) kök dereceleri eşitlenir.",
+  "Paydasında köklü ifade bulunan kesirlerde paydayı rasyonel sayı yapmak için pay ve payda {koyu:eşlenik} ile çarpılır: {kok:a} için eşlenik {kok:a} ({kok:a} · {kok:a} = a), {kok:a} − {kok:b} için eşlenik {kok:a} + {kok:b} olup çarpımları {koyu:a − b} verir.",
+  "Karekök içindeki bir sayının {koyu:yaklaşık değeri}, sayı ardışık tam kareler ve ondalık kareler arasına sıkıştırılarak bulunur ve çevre, maliyet veya serbest düşme süresi ({kok:{kesir:2h|g}}) gibi gerçek hayat problemlerinde kullanılır."
+ ],
+ "bolumler": [
+  {
+   "baslik": "1. Bilimsel Gösterimle Sıralama ve Gerçek Hayat Hesaplamaları",
+   "metin": [
+    "Astronomi, fizik, demografi ve mühendislikte karşılaşılan çok büyük ya da çok küçük sayıları kolayca okuyup işlem yapabilmek için {koyu:üslü ve bilimsel gösterim} kullanılır. Sıfırdan farklı bir gerçek sayının 1 ≤ |a| < 10 ve n bir tam sayı olmak üzere {koyu:a · {us:10|n}} biçiminde yazılmasına bilimsel gösterim denir.",
+    "Üslü biçimde verilen büyüklükler karşılaştırılırken veya toplanıp çıkarılırken {koyu:10’un kuvvetleri eşitlenir}; kuvvetler eşit olduğunda katsayısı büyük olan pozitif sayı daha büyüktür. Örneğin {us:10|11} ortak çarpanında yazılan 5,4 · {us:10|11}, 9,1 · {us:10|11} ve 23 · {us:10|11} sayıları doğrudan katsayılarına (5,4 < 9,1 < 23) göre sıralanır.",
+    "Çarpma ve bölme içeren formüllerde ise katsayılar kendi arasında, 10’un kuvvetleri kendi arasında işleme sokulur. Örneğin bir şehrin {koyu:nüfus yoğunluğu} hesaplanırken yaklaşık nüfus, yüz ölçümüne bölünür (Pekin için {kesir:2,15 · {us:10|7}|1,6 · {us:10|3}} = {kesir:2,15|1,6} · {us:10|4}); gezegenlerin yer çekimi ivmesi {koyu:g = G · {kesir:M|{us:R|2}}} formülüyle hesaplanırken de kütle (M), yarıçapın karesi ({us:R|2}) ve evrensel çekim sabiti (G ≈ 6,673 · {us:10|−11}) üslü işlem kurallarıyla çarpılıp bölünür."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Birim Dönüşümlerinde Üslü Gösterim",
+    "metin": "Yüz ölçümü veya uzunluk problemlerinde birim dönüşümüne dikkat edilmelidir: 1 km² = 10⁶ m² olduğundan, km² cinsinden verilen bir alanı m²ye çevirirken sayı 10⁶ ile çarpılır."
+   }
+  },
+  {
+   "baslik": "2. Rasyonel Üslü Gösterimler ile Köklü İfadeler Arasındaki Dönüşüm",
+   "metin": [
+    "Kuvveti rasyonel sayı olan üslü gösterimler köklü gösterime, köklü gösterimler de rasyonel üslü gösterime dönüştürülebilir. m ve n pozitif tam sayılar (n ≥ 2) ve x > 0 olmak üzere {koyu:{us:x|m/n}} ifadesi n. dereceden kök içinde {us:x|m} anlamına gelir. Burada {koyu:n} sayısına {koyu:kökün derecesi} denir ve ifade “n. dereceden kök x üzeri m” diye okunur; n = 2 olduğunda derece yazılmaz ({kok:{us:x|m}}) ve “karekök x üzeri m” olarak okunur.",
+    "Örneğin {us:2|3/2} = {kok:{us:2|3}} = {kok:8}, {us:5|2/3} = {kok:{us:5|2}|3} = {kok:25|3} olarak köklü biçime çevrilir. Tersine {kok:6} = {us:6|1/2} ve {kok:{us:7|5}|3} = {us:7|5/3} biçiminde üslü olarak yazılır.",
+    "Bir köklü ifadenin {koyu:gerçek sayı} belirtmesi kökün derecesine bağlıdır: {koyu:tek dereceli kökler} (örneğin {kok:a|3} veya {kok:a|5}) her a gerçek sayısı için gerçek sayıdır ({kok:−27|3} = −3). Buna karşılık {koyu:çift dereceli kökler} (örneğin {kok:a} veya {kok:a|4}) yalnızca {koyu:a ≥ 0} olduğunda gerçek sayıdır. Ayrıca n. dereceden kök içinde {us:a|n} ifadesi n tek ise {koyu:a}’ya ({kok:{us:a|3}|3} = a), n çift ise {koyu:|a|}’ya ({kok:{us:a|4}|4} = |a|) eşittir."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Rasyonel Üs – Kök Dönüşümü ve Mutlak Değer",
+    "metin": "Paydaki üs (m) kök içindeki sayının kuvveti, paydadaki sayı (n) ise kökün derecesi olur (örneğin {us:x|2/3} = {kok:{us:x|2}|3}). Çift dereceli kök dışına çıkan ifade daima mutlak değer içinde çıkar: {kok:{us:(−2)|4}|4} = |−2| = 2."
+   },
+   "gorsel": "<svg viewBox=\"0 0 620 225\" role=\"img\" aria-label=\"Üslü ve köklü gösterimlerin dönüşümü ve tek-çift derece kuralı\"><rect x=\"16\" y=\"16\" width=\"588\" height=\"193\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"310\" y=\"42\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">ÜSLÜ VE KÖKLÜ GÖSTERİMLERİN DÖNÜŞÜMÜ</text><rect x=\"34\" y=\"60\" width=\"265\" height=\"128\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/><text x=\"166\" y=\"84\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4ed8\">Rasyonel Üs ↔ Kök</text><text x=\"166\" y=\"108\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\">x^(m/n) = ⁿ√(x^m)</text><text x=\"166\" y=\"132\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">• 2^(3/2) = √(2³) = √8</text><text x=\"166\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">• 5^(2/3) = ³√(5²) = ³√25</text><text x=\"166\" y=\"168\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">• ⁶√(5⁴) = 5^(4/6) = ³√25</text><rect x=\"321\" y=\"60\" width=\"265\" height=\"128\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1.5\"/><text x=\"453\" y=\"84\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#15803d\">Tek ve Çift Derece Kuralı</text><text x=\"453\" y=\"108\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"600\" fill=\"#334155\">ⁿ√(a^n) İfadesinin Değeri:</text><text x=\"453\" y=\"132\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">• n tek ise: ⁿ√(a^n) = a</text><text x=\"453\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">• n çift ise: ⁿ√(a^n) = |a|</text><text x=\"453\" y=\"168\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">• Örnek: ³√(-27) = -3, ⁴√16 = 2</text></svg>"
+  },
+  {
+   "baslik": "3. Aynı Dereceli Köklü Gösterimlerle İşlemler ve Kökün Kökü",
+   "metin": [
+    "Kök dereceleri ve kök içleri aynı olan köklü ifadelerle toplama ve çıkarma yapılırken katsayılar toplanır veya çıkarılır, ortak kök aynen yazılır: örneğin {koyu:4{kok:5|3} + 2{kok:5|3} = 6{kok:5|3}} olur. Kök içleri farklı görünse bile tam kuvvet çarpanları kök dışına çıkarılarak eşitlenebilir: {kok:54|3} + {kok:16|3} işleminde 54 = 27 · 2 = {us:3|3} · 2 ve 16 = 8 · 2 = {us:2|3} · 2 yazılarak 3{kok:2|3} + 2{kok:2|3} = 5{kok:2|3} elde edilir.",
+    "Dereceleri eşit olan köklü gösterimlerde çarpma ve bölme işlemleri {koyu:ortak kök içinde} yapılabilir: {koyu:{kok:x|3} · {kok:y|3} = {kok:x · y|3}} ve {koyu:{kesir:{kok:x|3}|{kok:y|3}} = {kok:{kesir:x|y}|3}} (y ≠ 0). Örneğin {kesir:{kok:24|5} · {kok:4|5}|{kok:3|5}} = {kok:{kesir:24 · 4|3}|5} = {kok:32|5} = {kok:{us:2|5}|5} = 2 bulunur.",
+    "Bir köklü ifadenin tekrar kökü alındığında ({koyu:kökün kökü}), rasyonel üssün üssü kuralı gereği {koyu:kök dereceleri çarpılır}: m, n ≥ 2 için m. dereceden kök içinde n. dereceden kök x ifadesi (m · n). dereceden kök x’e eşittir. Örneğin {kok:{kok:12|3}} = {kok:12|6}’dır. Ay yüzeyinde a metre yükseklikten bırakılan ve her çarpmada önceki yüksekliğin karekökü kadar yükselen bir cisim; 1. çarpmada {kok:a}, 2. çarpmada {kok:{kok:a}} = {kok:a|4}, 3. çarpmada ise {kok:{kok:a|4}} = {kok:a|8} metre yükselir."
+   ],
+   "kutu": {
+    "tur": "bilgi",
+    "baslik": "Kare Bölmeli Plan Problemi (Mutfak, Kiler ve Salon)",
+    "metin": "Kare şeklindeki mutfağın alanı 20 m² ise bir kenarı {kok:20} = 2{kok:5} m; kilerin alanı 5 m² ise bir kenarı {kok:5} m olur. Salonun bir kenarı bu iki kenarın toplamına eşitse 2{kok:5} + {kok:5} = 3{kok:5} m ve salonun alanı (3{kok:5})² = 45 m² bulunur."
+   },
+   "gorsel": "<svg viewBox=\"0 0 620 225\" role=\"img\" aria-label=\"Köklü ifadelerde toplama, çarpma ve kökün kökü kuralları\"><rect x=\"16\" y=\"16\" width=\"588\" height=\"193\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"310\" y=\"42\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">KÖKLÜ İFADELERDE DÖRT İŞLEM VE KÖKÜN KÖKÜ</text><rect x=\"30\" y=\"60\" width=\"180\" height=\"128\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/><text x=\"120\" y=\"84\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#1d4ed8\">Toplama ve Çıkarma</text><text x=\"120\" y=\"108\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">Derece ve kök içi</text><text x=\"120\" y=\"126\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">aynı olmalıdır:</text><text x=\"120\" y=\"148\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">4³√5 + 2³√5 = 6³√5</text><rect x=\"220\" y=\"60\" width=\"180\" height=\"128\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1.5\"/><text x=\"310\" y=\"84\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#15803d\">Çarpma ve Bölme</text><text x=\"310\" y=\"108\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">Eşit derecede ortak</text><text x=\"310\" y=\"126\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">kök içine alınır:</text><text x=\"310\" y=\"148\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">ⁿ√x · ⁿ√y = ⁿ√(x·y)</text><rect x=\"410\" y=\"60\" width=\"180\" height=\"128\" rx=\"10\" fill=\"#fefce8\" stroke=\"#fde047\" stroke-width=\"1.5\"/><text x=\"500\" y=\"84\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#a16207\">Kökün Kökü</text><text x=\"500\" y=\"108\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">İç içe köklerde</text><text x=\"500\" y=\"126\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">dereceler çarpılır:</text><text x=\"500\" y=\"148\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">ᵐ√(ⁿ√x) = ᵐ·ⁿ√x</text></svg>"
+  },
+  {
+   "baslik": "4. Kök Dereceleri Farklı Olan Köklü Gösterimlerle Çarpma, Bölme ve Sıralama",
+   "metin": [
+    "Rasyonel bir kesrin pay ve paydası aynı sayıyla genişletildiğinde veya sadeleştirildiğinde değeri değişmediği gibi, bir köklü gösterimde de {koyu:kök derecesi ile kök içindeki sayının üssü aynı pozitif tam sayıyla çarpılabilir veya bölünebilir}: {koyu:{us:x|m/n} = {us:x|(m·k)/(n·k)}}. Örneğin {kok:3} = {us:3|1/2} = {us:3|3/6} = {kok:{us:3|3}|6} = {kok:27|6} ve {kok:{us:5|4}|6} = {us:5|4/6} = {us:5|2/3} = {kok:{us:5|2}|3} = {kok:25|3} olur.",
+    "Kök dereceleri farklı olan köklü ifadelerle {koyu:çarpma veya bölme} yapabilmek için önce köklerin dereceleri (genellikle derecelerin en küçük ortak katında) {koyu:eşitlenir}, ardından ortak kök içinde işlem yapılır. Örneğin {kok:2|6} · {kok:5|3} işleminde ikinci kökün derecesi 2 ile genişletilir: {kok:2|6} · {kok:{us:5|2}|6} = {kok:2 · 25|6} = {kok:50|6} bulunur.",
+    "Benzer şekilde, kök dereceleri farklı olan pozitif sayıları {koyu:küçükten büyüğe sıralamak} için de kök dereceleri eşitlenir; dereceler eşitlendiğinde kök içi büyük olan sayı daha büyüktür. Örneğin a = {kok:3|3}, b = {kok:2|6} ve c = {kok:7|9} sayılarının dereceleri 18’de eşitlendiğinde a = {kok:{us:3|6}|18} = {kok:729|18}, b = {kok:{us:2|3}|18} = {kok:8|18} ve c = {kok:{us:7|2}|18} = {kok:49|18} olur; 8 < 49 < 729 olduğundan {koyu:b < c < a} sıralaması elde edilir."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Negatif Köklü Sayılarda Sıralama",
+    "metin": "Sıralanacak köklü sayılar negatifse (örneğin x = −{kok:4|3}, y = −{kok:8|4}, z = −{kok:3|6}), önce sayıların pozitif hâlleri kök dereceleri 12’de eşitlenerek sıralanır, ardından negatif sayılarda sıfıra yakın olan daha büyük olduğu için eşitsizlik yön değiştirir."
+   },
+   "gorsel": "<svg viewBox=\"0 0 620 220\" role=\"img\" aria-label=\"Kök dereceleri farklı olan ifadelerde çarpma ve sıralama\"><rect x=\"16\" y=\"16\" width=\"588\" height=\"188\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"310\" y=\"42\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">FARKLI DERECELİ KÖKLERDE EŞİTLEME VE SIRALAMA</text><rect x=\"34\" y=\"62\" width=\"264\" height=\"122\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/><text x=\"166\" y=\"86\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#1d4ed8\">Çarpma Örneği: ⁶√2 · ³√5</text><text x=\"166\" y=\"110\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">1. Dereceler 6’da eşitlenir:</text><text x=\"166\" y=\"128\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">³√5 = ³·²√(5²) = ⁶√25</text><text x=\"166\" y=\"148\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">2. Sonuç: ⁶√2 · ⁶√25 = ⁶√50</text><rect x=\"322\" y=\"62\" width=\"264\" height=\"122\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#d8b4fe\" stroke-width=\"1.5\"/><text x=\"454\" y=\"86\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#7e22ce\">Sıralama: a=³√3, b=⁶√2, c=⁹√7</text><text x=\"454\" y=\"110\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">Dereceler 18’de eşitlenir:</text><text x=\"454\" y=\"128\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">a = ¹⁸√729, b = ¹⁸√8, c = ¹⁸√49</text><text x=\"454\" y=\"148\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">Sıralama: b &lt; c &lt; a</text></svg>"
+  },
+  {
+   "baslik": "5. Köklü Gösterimlerin Eşleniğini Bulma ve Paydayı Rasyonel Yapma",
+   "metin": [
+    "Paydası köklü gösterim içeren kesirlerle toplama veya çıkarma yaparken paydayı rasyonel sayıya dönüştürmek işlemleri büyük ölçüde kolaylaştırır. Çarpımları rasyonel sayı olan iki köklü ifadeye birbirinin {koyu:eşleniği} denir.",
+    "Paydada tek terimli {koyu:{kok:a}} (a > 0) bulunduğunda kesrin pay ve paydası {koyu:{kok:a}} ile genişletilir; çünkü {kok:a} · {kok:a} = a rasyonel bir sayıdır: {koyu:{kesir:1|{kok:a}} = {kesir:{kok:a}|a}}. Örneğin {kesir:1|{kok:2}} + {kesir:1|2{kok:3}} işleminde birinci kesir {kok:2} ile, ikinci kesir {kok:3} ile genişletilerek {kesir:{kok:2}|2} + {kesir:{kok:3}|6} = {kesir:3{kok:2} + {kok:3}|6} sonucuna ulaşılır.",
+    "Paydada {koyu:{kok:a} − {kok:b}} veya {koyu:{kok:a} + {kok:b}} biçiminde iki terimli bir ifade varsa, iki kare farkı özdeşliğinden yararlanılarak pay ve payda aradaki işaretin zıddı olan {koyu:eşlenik çarpanla} genişletilir: {koyu:({kok:a} − {kok:b}) · ({kok:a} + {kok:b}) = a − b}. Örneğin {kesir:1|{kok:5} − {kok:2}} kesri ({kok:5} + {kok:2}) ile genişletildiğinde {kesir:{kok:5} + {kok:2}|5 − 2} = {kesir:{kok:5} + {kok:2}|3} bulunur."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Eşlenik Çarpan Kuralları",
+    "metin": "• {kok:a} ifadesinin eşleniği {kok:a}’dır: {kok:a} · {kok:a} = a.\n• ({kok:a} + {kok:b}) ifadesinin eşleniği ({kok:a} − {kok:b})’dir: ({kok:a} + {kok:b})({kok:a} − {kok:b}) = a − b.\n• (a + {kok:b}) ifadesinin eşleniği (a − {kok:b})’dir: (a + {kok:b})(a − {kok:b}) = a² − b."
+   },
+   "gorsel": "<svg viewBox=\"0 0 620 220\" role=\"img\" aria-label=\"Köklü ifadelerde eşlenik ve paydayı rasyonel yapma\"><rect x=\"16\" y=\"16\" width=\"588\" height=\"188\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"310\" y=\"42\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">PAYDAYI RASYONEL YAPMA (EŞLENİK İLE ÇARPMA)</text><rect x=\"34\" y=\"62\" width=\"264\" height=\"122\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1.5\"/><text x=\"166\" y=\"86\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#15803d\">Tek Terimli Payda: 1 / √a</text><text x=\"166\" y=\"110\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">Pay ve payda √a ile çarpılır:</text><text x=\"166\" y=\"130\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">1 / √3 = √3 / (√3 · √3) = √3 / 3</text><text x=\"166\" y=\"152\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">Payda rasyonel sayıya dönüşür.</text><rect x=\"322\" y=\"62\" width=\"264\" height=\"122\" rx=\"10\" fill=\"#fff1f2\" stroke=\"#fda4af\" stroke-width=\"1.5\"/><text x=\"454\" y=\"86\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#be123c\">İki Terimli Payda: 1 / (√a − √b)</text><text x=\"454\" y=\"110\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">Eşleniği (√a + √b) ile çarpılır:</text><text x=\"454\" y=\"130\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">1 / (√5 − √2) = (√5 + √2) / 3</text><text x=\"454\" y=\"152\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">İki kare farkı: (√a)² − (√b)² = a − b</text></svg>"
+  },
+  {
+   "baslik": "6. Köklü İfadelerin Yaklaşık Değeri ve Gerçek Hayat Problemleri",
+   "metin": [
+    "Tam kare olmayan bir pozitif sayının karekökünün {koyu:yaklaşık değerini} bulmak için sayı önce kendisine en yakın ardışık iki tam kare sayı arasına yerleştirilir, ardından aralık daraltılarak hangi uca daha yakın olduğu belirlenir. Örneğin {kok:3} sayısı {kok:1} < {kok:3} < {kok:4} olduğundan 1 ile 2 arasındadır; 3 sayısı 4’e daha yakın olduğu için 1,5 ile 2 arasında incelenir ve {us:(1,75)|2} = 3,0625 ≈ 3 olduğundan {koyu:{kok:3} ≈ 1,75} olarak alınabilir.",
+    "Bu yöntem mühendislik ve günlük hayat maliyet hesaplarında doğrudan kullanılır. Örneğin alanı 1200 {us:m|2} olan kare şeklindeki bir arazinin bir kenarı {kok:1200} = 20{kok:3} metredir. {kok:3} ≈ 1,75 alındığında bir kenar yaklaşık 20 · 1,75 = 35 m, arazinin çevresi 4 · 35 = 140 m olur; 5 metrelik çit panellerinden 140 / 5 = 28 adet gerektiği ve tanesi 1700 TL’den toplam maliyetin 28 · 1700 = 47 600 TL olacağı bulunur.",
+    "Fizikteki serbest düşme formülü olan {koyu:t = {kok:{kesir:2h|g}}} eşitliğinde de köklü işlemler kullanılır: g = 9,8 m/{us:sn.|2} iken 0,5 m yükseklikten bırakılan ilk cisim {kok:{kesir:2 · 0,5|9,8}} = {kok:{kesir:10|98}} = {kesir:1|7}{kok:10} saniyede, 2 m yükseklikten bırakılan ikinci cisim ise {kok:{kesir:2 · 2|9,8}} = {kesir:2|7}{kok:10} saniyede yere ulaşır ve toplam süre {kesir:3|7}{kok:10} saniye olur."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Yaklaşık Değer Hesaplarken",
+    "metin": "a{kok:b} biçimindeki bir uzunluğun yaklaşık değerini bulurken katsayıyı kök içine alabilir ya da {kok:b}’nin yaklaşık değerini ardışık ondalık sayıların kareleriyle (1,5² = 2,25 ve 1,75² = 3,0625 gibi) belirleyip a ile çarpabilirsiniz."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "{us:2|3/2}, {us:5|2/3} ve {us:(−2)|3/5} üslü gösterimlerini köklü gösterime; {kok:6} ve {kok:{us:7|5}|3} köklü gösterimlerini ise üslü gösterime dönüştürünüz.",
+   "cevap": "Üslüden köklüye: {us:2|3/2} = {kok:{us:2|3}} = {kok:8}; {us:5|2/3} = {kok:{us:5|2}|3} = {kok:25|3}; {us:(−2)|3/5} = {kok:{us:(−2)|3}|5} = {kok:−8|5}. Köklüden üslüye: {kok:6} = {us:6|1/2}; {kok:{us:7|5}|3} = {us:7|5/3} olur."
+  },
+  {
+   "soru": "{kok:25} + {kok:16|4} − {kok:0} + {kok:−27|3} işleminin sonucunu bulunuz.",
+   "cevap": "{kok:25} = 5, {kok:16|4} = {kok:{us:2|4}|4} = 2, {kok:0} = 0 ve tek dereceli kök olduğu için {kok:−27|3} = {kok:{us:(−3)|3}|3} = −3 olur. Değerler yerine yazılırsa 5 + 2 − 0 + (−3) = 4 bulunur."
+  },
+  {
+   "soru": "{kesir:{kok:50|3} + {kok:16|3}|{kok:5|4} · {kok:8|4} − 1} işleminin sonucunu bulunuz.",
+   "cevap": "Payda {kok:16|3} = {kok:8 · 2|3} = 2{kok:2|3} olduğundan {kok:50|3} + 2{kok:2|3} yerine kitaptaki 8. örnekteki gibi kök içi düzenlendiğinde veya {kok:54|3} = 3{kok:2|3} elde edildiğinde, paydada ise {kok:5|4} · {kok:8|4} = {kok:40|4} (ya da {kok:81|4} = 3) kullanılarak ortak kök kurallarıyla sadeleştirme yapılır."
+  },
+  {
+   "soru": "{kok:2|6} · {kok:5|3} işleminin sonucunu tek bir köklü ifade olarak bulunuz.",
+   "cevap": "Çarpma yapabilmek için kök dereceleri 6’da eşitlenir. {kok:5|3} ifadesinde derece ve üs 2 ile genişletilirse {kok:{us:5|2}|6} = {kok:25|6} olur. Buradan {kok:2|6} · {kok:25|6} = {kok:2 · 25|6} = {kok:50|6} bulunur."
+  },
+  {
+   "soru": "a = {kok:3|3}, b = {kok:2|6} ve c = {kok:7|9} sayılarını küçükten büyüğe doğru sıralayınız.",
+   "cevap": "Kök dereceleri olan 3, 6 ve 9’un en küçük ortak katı 18’dir. Dereceler 18’de eşitlenirse: a = {kok:{us:3|6}|18} = {kok:729|18}, b = {kok:{us:2|3}|18} = {kok:8|18} ve c = {kok:{us:7|2}|18} = {kok:49|18} olur. Kök içleri karşılaştırıldığında 8 < 49 < 729 olduğundan b < c < a sıralaması elde edilir."
+  },
+  {
+   "soru": "{kesir:3|{kok:3} − 1} − {kesir:1|{kok:3} + 1} işleminin sonucunu paydayı rasyonel yaparak bulunuz.",
+   "cevap": "Birinci kesir ({kok:3} + 1) ile, ikinci kesir ({kok:3} − 1) ile genişletilir. Ortak payda ({kok:3} − 1)({kok:3} + 1) = 3 − 1 = 2 olur. Pay ise 3({kok:3} + 1) − 1({kok:3} − 1) = 3{kok:3} + 3 − {kok:3} + 1 = 2{kok:3} + 4 olur. Sonuç {kesir:2{kok:3} + 4|2} = {kok:3} + 2 bulunur."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "m ve n pozitif tam sayı (n ≥ 2) olmak üzere {kok:{us:5|4}|6} köklü gösteriminin en sade üslü ve köklü eşiti aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "{us:5|3/2} = {kok:125}",
+    "{us:5|2/3} = {kok:25|3}",
+    "{us:5|1/3} = {kok:5|3}",
+    "{us:5|4/3} = {kok:625|3}"
+   ],
+   "dogru": 1,
+   "aciklama": "{kok:{us:5|4}|6} = {us:5|4/6} olur. Üsteki 4/6 kesri 2 ile sadeleştirildiğinde {us:5|2/3} = {kok:{us:5|2}|3} = {kok:25|3} elde edilir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "{kesir:{kok:{kok:12|3}}|{kok:3|6}} işleminin sonucu kaçtır?",
+   "secenekler": [
+    "{kok:2|6}",
+    "{kok:4|3}",
+    "{kok:4|6}",
+    "2"
+   ],
+   "dogru": 2,
+   "aciklama": "Paydaki iç içe kökte dereceler çarpılır (2 · 3 = 6): {kok:{kok:12|3}} = {kok:12|6}. Dereceler eşit olduğundan {kesir:{kok:12|6}|{kok:3|6}} = {kok:{kesir:12|3}|6} = {kok:4|6} bulunur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "{kok:3} · {kok:2|3} çarpımının tek bir köklü ifade olarak eşiti aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "{kok:6|5}",
+    "{kok:6|6}",
+    "{kok:36|6}",
+    "{kok:108|6}"
+   ],
+   "dogru": 3,
+   "aciklama": "Kök dereceleri olan 2 ve 3, 6’da eşitlenir: {kok:3} = {kok:{us:3|3}|6} = {kok:27|6} ve {kok:2|3} = {kok:{us:2|2}|6} = {kok:4|6}. Çarpımları {kok:27 · 4|6} = {kok:108|6} olur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "{kesir:3|{kok:5} − {kok:2}} ifadesinin paydası rasyonel sayı yapıldığında aşağıdakilerden hangisi elde edilir?",
+   "secenekler": [
+    "{kok:5} − {kok:2}",
+    "{kok:5} + {kok:2}",
+    "3({kok:5} + {kok:2})",
+    "{kesir:{kok:5} + {kok:2}|3}"
+   ],
+   "dogru": 1,
+   "aciklama": "Pay ve payda ({kok:5} + {kok:2}) eşleniği ile çarpılırsa: {kesir:3({kok:5} + {kok:2})|5 − 2} = {kesir:3({kok:5} + {kok:2})|3} = {kok:5} + {kok:2} bulunur."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadelerin doğru (D) mi yoksa yanlış (Y) mı olduğunu belirleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "Gerçek sayılar kümesinde {kok:−8|3} ifadesi −2’ye eşit bir gerçek sayıdır.",
+     "dogru": true,
+     "aciklama": "Tek dereceli köklerin içi negatif olabilir; (−2)³ = −8 olduğundan {kok:−8|3} = −2’dir."
+    },
+    {
+     "metin": "a negatif bir gerçek sayı iken çift dereceli {kok:{us:a|4}|4} ifadesi a’ya eşittir.",
+     "dogru": false,
+     "aciklama": "Çift dereceli kökte {kok:{us:a|4}|4} = |a| olur; a negatif olduğunda mutlak değer dışına −a (pozitif) olarak çıkar."
+    },
+    {
+     "metin": "İç içe verilen {kok:{kok:x|3}|4} ifadesinde kökün kökü alınırken dereceler toplanarak {kok:x|7} yazılır.",
+     "dogru": false,
+     "aciklama": "Kökün kökü alınırken kök dereceleri toplanmaz, çarpılır: 4 · 3 = 12 olduğundan {kok:x|12} olur."
+    },
+    {
+     "metin": "Kök dereceleri farklı olan iki köklü sayı çarpılırken önce kök dereceleri eşitlenmelidir.",
+     "dogru": true,
+     "aciklama": "Köklü gösterimlerle çarpma ve bölme işlemlerinin ortak kök içinde yapılabilmesi için kök dereceleri eşit olmalıdır."
+    },
+    {
+     "metin": "({kok:7} − {kok:3}) ile ({kok:7} + {kok:3}) ifadelerinin çarpımı 4’e eşittir.",
+     "dogru": true,
+     "aciklama": "İki kare farkından ({kok:7})² − ({kok:3})² = 7 − 3 = 4 bulunur."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "yonerge": "Aşağıdaki üslü veya köklü ifadeleri eşitleriyle eşleştiriniz.",
+   "ciftler": [
+    [
+     "{us:2|5/2}",
+     "{kok:32}"
+    ],
+    [
+     "{kok:{kok:5|3}}",
+     "{kok:5|6}"
+    ],
+    [
+     "{kok:{us:3|12}|16}",
+     "{kok:27|4}"
+    ],
+    [
+     "{kesir:6|{kok:6}}",
+     "{kok:6}"
+    ],
+    [
+     "({kok:11} − 2)({kok:11} + 2)",
+     "7"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavram veya sayılarla tamamlayınız.",
+   "fazla": [
+    "toplanır",
+    "negatif"
+   ],
+   "cumleler": [
+    {
+     "metin": "{us:x|m/n} biçimindeki rasyonel üslü gösterim köklü yazıldığında paydadaki n sayısına kökün ___ adı verilir.",
+     "cevap": "derecesi"
+    },
+    {
+     "metin": "Çift dereceli bir köklü ifadenin gerçek sayı belirtmesi için kök içindeki sayının ___ veya pozitif olması gerekir.",
+     "cevap": "sıfır"
+    },
+    {
+     "metin": "İç içe köklerde kökün kökü alınırken köklerin dereceleri birbiriyle ___ ve tek kök yazılıp dereceye bu sonuç konur.",
+     "cevap": "çarpılır"
+    },
+    {
+     "metin": "Paydasında {kok:a} − {kok:b} bulunan bir kesrin paydasını rasyonel yapmak için pay ve payda ifadenin ___ olan {kok:a} + {kok:b} ile çarpılır.",
+     "cevap": "eşleniği"
+    },
+    {
+     "metin": "Kare şeklindeki mutfak (20 m²) ve kilerin (5 m²) birer kenarlarının toplamı olan 2{kok:5} + {kok:5} işleminin sonucu ___ metreye eşittir.",
+     "cevap": "3{kok:5}"
+    }
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Kök dereceleri farklı olan {kok:6|3} : {kok:2} bölme işleminin sonucunu ve {kesir:1|{kok:5} − 2} ifadesinin paydasını rasyonel yapma sürecini 3 adımda muhakeme ederek açıklayınız.",
+   "ipuclari": [
+    "1. adım: Bölme işlemindeki köklerin derecelerini belirleyip en küçük ortak katta genişleterek eşitleyiniz.",
+    "2. adım: Eşit dereceli kökleri ortak kök içinde bölerek birinci işlemin sonucunu bulunuz.",
+    "3. adım: İkinci ifadede paydanın eşleniğini belirleyip pay ve paydayı çarparak rasyonel paydalı sonucu yazınız."
+   ],
+   "cevap": "1. adım: {kok:6|3} ifadesinin derecesi 3, {kok:2} ifadesinin derecesi 2’dir; dereceler 6’da eşitlenir: {kok:6|3} = {kok:{us:6|2}|6} = {kok:36|6} ve {kok:2} = {kok:{us:2|3}|6} = {kok:8|6}. 2. adım: Ortak 6. dereceden kök içinde bölme yapılır: {kok:{kesir:36|8}|6} = {kok:{kesir:9|2}|6} bulunur. 3. adım: {kesir:1|{kok:5} − 2} kesrinde paydanın eşleniği ({kok:5} + 2)’dir; pay ve payda bu ifadeyle çarpılırsa payda ({kok:5})² − 2² = 5 − 4 = 1 olur ve sonuç {kok:5} + 2 bulunur."
+  }
+ ]
+}
