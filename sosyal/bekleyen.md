@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 398 gönderi.
+Toplam 413 gönderi.
 
 ## bilgi-7-turkce-7
 Sıra: 2026-11-19 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-turkce-7.png
@@ -3982,4 +3982,154 @@ Bunu biliyor muydunuz? Hezarfen Necmeddin Okyay çiçekli ve yazılı (akkâse) 
 Faydalı bulduysanız arkadaşınızı etiketleyin.
 📘 11. sınıf Temel Dinî Bilgiler 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-temel-dini-bilgiler-hafta-7
 #derskutusu #temeldinibilgiler #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-biyoloji-7
+Sıra: 2026-10-18 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-biyoloji-7.png
+
+```
+Bunu biliyor muydunuz? DNA yarı korunumlu eşlenir; replikasyonda helikaz sarmalı açar, DNA polimeraz yeni zinciri sentezler ve DNA ligaz parçaları fosfodiester bağıyla birleştirir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Biyoloji 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-biyoloji-hafta-7
+#derskutusu #biyoloji #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-cografya-7
+Sıra: 2026-10-18 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-cografya-7.png
+
+```
+Bunu biliyor muydunuz? TÜİK İBBS sınıflandırması Düzey 1 (12), Düzey 2 (26) ve Düzey 3 (81 il) birimlerinden oluşur; bölgesel kalkınma projeleri ise bölgeler arası gelişmişlik farklarını azaltmayı hedefler.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Coğrafya 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-cografya-hafta-7
+#derskutusu #coğrafya #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-din-kulturu-7
+Sıra: 2026-10-18 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-din-kulturu-7.png
+
+```
+Bunu biliyor muydunuz? Müslüman âlimler deney ve gözlemle dünya bilim tarihine öncülük etmiş; Fatır suresi 27-28. ayetlerde ise kâinatı inceleyen âlimlerin Allah'a derin saygı (haşyet) duyduğu vurgulanmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Din Kültürü ve Ahlak Bilgisi 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-din-kulturu-ve-ahlak-bilgisi-hafta-7
+#derskutusu #dinkültürü #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-edebiyat-7
+Sıra: 2026-10-18 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-edebiyat-7.png
+
+```
+Bunu biliyor muydunuz? Küçürek hikâye; kelime tasarrufu, yoğun imgesel anlatım ve açık uçlu sonuyla öne çıkar; Türk edebiyatındaki başlıca öncüleri Ferit Edgü ve Sevim Burak'tır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Türk Dili ve Edebiyatı 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-turk-dili-ve-edebiyati-hafta-7
+#derskutusu #edebiyat #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-fizik-7
+Sıra: 2026-10-18 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-fizik-7.png
+
+```
+Bunu biliyor muydunuz? Kurtulma hızı cismin kütlesine bağlı değildir; yörüngedeki bir uydunun bağlanma enerjisi ise toplam mekanik enerjisinin pozitif değerine (-E_t = +G·M·m/2r) eşittir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Fizik 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-fizik-hafta-7
+#derskutusu #fizik #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-ingilizce-7
+Sıra: 2026-10-18 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-ingilizce-7.png
+
+```
+Bunu biliyor muydunuz? İngilizcede 'I suggest' ve 'How about / What about' öneri kalıplarından sonra fiil -ing alırken, 'Why don't we' ve 'Let's' kalıplarından sonra yalın fiil (V1) gelir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf İngilizce 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-ingilizce-hafta-7
+#derskutusu #ingilizce #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-inkilap-tarihi-7
+Sıra: 2026-10-19 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-inkilap-tarihi-7.png
+
+```
+Bunu biliyor muydunuz? Millî Mücadele'nin gerekçe, amaç ve yöntemi Amasya Genelgesi'nde açıklanmış; Erzurum ve Sivas kongreleriyle ulusal birlik sağlanarak Temsil Heyeti Ankara'ya gelmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf T.C. İnkılap Tarihi 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-tc-inkilap-tarihi-ve-ataturkculuk-hafta-7
+#derskutusu #inkılaptarihi #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-islam-kultur-ve-medeniyeti-7
+Sıra: 2026-10-19 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-7.png
+
+```
+Bunu biliyor muydunuz? İslam kültür ve medeniyeti; tevhid ve hürriyetin yanı sıra ilmîlik, özgünlük, yerellik, evrensellik ve sulh (barış) esasları üzerinde yükselmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf İslam Kültür ve Medeniyeti 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-islam-kultur-ve-medeniyeti-hafta-7
+#derskutusu #islamkültürü #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-kelam-7
+Sıra: 2026-10-19 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kelam-7.png
+
+```
+Bunu biliyor muydunuz? Kelam ilmi vahyi temel alıp selim akıl ve salim duyularla inanç esaslarını savunur; el-Fıkhu'l-Ekber, Kitâbü't-Tevhîd ve el-İbâne en önemli kurucu metinleridir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Kelam 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-kelam-hafta-7
+#derskutusu #kelam #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-kimya-7
+Sıra: 2026-10-19 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kimya-7.png
+
+```
+Bunu biliyor muydunuz? Elektrotların aktiflik farkı pil potansiyelini belirlerken, elektrot kütlesi ve çözelti hacmi pil voltajını değiştirmeyip pil ömrünü uzatır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Kimya 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-kimya-hafta-7
+#derskutusu #kimya #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-kuran-i-kerim-7
+Sıra: 2026-10-19 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kuran-i-kerim-7.png
+
+```
+Bunu biliyor muydunuz? Hz. İsa (as), kendisine İncil verilen, Havariler tarafından desteklenen ve Allah'ın izniyle beşikte konuşma, hastaları iyileştirme gibi mucizeler gösteren ulü'l-azm bir peygamberdir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Kur’an-ı Kerim 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-kuran-i-kerim-hafta-7
+#derskutusu #kuranıkerim #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-matematik-7
+Sıra: 2026-10-19 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-matematik-7.png
+
+```
+Bunu biliyor muydunuz? Pozitif tam sayılar kümesinde (Z⁺) tanımlı fonksiyonlara dizi denir; üçgensel sayı dizisinin genel terimi n(n+1)/2, karesel sayı dizisinin genel terimi ise n²'dir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Matematik 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-matematik-hafta-7
+#derskutusu #matematik #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-mesleki-arapca-7
+Sıra: 2026-10-20 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-mesleki-arapca-7.png
+
+```
+Bunu biliyor muydunuz? Kur'an-ı Kerim'de 25 peygamberin ismi geçer ve 5'i Ulu'l-Azm peygamberdir; Arapçada fiiller kök harflerine ek alıp almamasına göre mücerred ve mezîd olarak ikiye ayrılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Mesleki Arapça 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-mesleki-arapca-hafta-7
+#derskutusu #meslekiarapça #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-peygamberimizin-hayati-7
+Sıra: 2026-10-20 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-peygamberimizin-hayati-7.png
+
+```
+Bunu biliyor muydunuz? Abdullah bin Ömer (ra), 2630 hadis rivayetiyle en çok hadis nakleden ikinci sahabi ve Medine'deki yedi fakih sahabiden (Fukaha-i Seb'a) biridir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Peygamberimizin Hayatı 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-peygamberimizin-hayati-hafta-7
+#derskutusu #peygamberimizinhayatı #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-temel-dini-bilgiler-7
+Sıra: 2026-10-20 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-temel-dini-bilgiler-7.png
+
+```
+Bunu biliyor muydunuz? İlahi vahiy karşısındaki tutumlarına göre insanlar mümin, münafık, kâfir, müşrik ve fasık kavramlarıyla nitelendirilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Temel Dinî Bilgiler 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-temel-dini-bilgiler-hafta-7
+#derskutusu #temeldinibilgiler #12sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
