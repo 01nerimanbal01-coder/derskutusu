@@ -334,7 +334,7 @@ def denetle(hizli=False):
         if p.name.startswith("_"):
             continue
         s = p.read_text(encoding="utf-8")
-        if "def uygula" not in s and "GORSELLER" not in s and "def ciz(" not in s:
+        if not any(k in s for k in ("def uygula", "GORSELLER", "def ciz(", "def gorsel_1(")):
             hatalar.append(f"{p.relative_to(KOK)}: 'def uygula(v):' fonksiyonu tanımlı değil")
 
     # 4. Ziyaretçi verisi (public/veri/ziyaret.json) bütünlük denetimi

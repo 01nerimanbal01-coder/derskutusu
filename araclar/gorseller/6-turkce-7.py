@@ -42,7 +42,7 @@ def ciz():
     # Alt bant
     ic.append(P.kutu(20, 360, 760, 48, '#f0fdf4', R['orta']))
     ic.append(P.metin(400, 380, 'AYIRT ETME İPUCU: İsim tamlamasında 2. sözcük mutlaka iyelik eki (-ı/-i/-sı/-si) alır ("devlet bayrağı"); Sıfat tamlamasında ek almaz ("kırmızı bayrak")!', R['koyu'], 10, 'bold', 'middle'))
-    ic.append(P.metin(400, 398, 'Deyim vs. Atasözü: Deyimler durum betimler (yargı/öğüt vermez: "göz اللاه girmek"); Atasözleri ise tam cümledir ve öğüt verir ("Damlaya damlaya göl olur").', '#334155', 10, 'normal', 'middle'))
+    ic.append(P.metin(400, 398, 'Deyim vs. Atasözü: Deyimler durum betimler (yargı/öğüt vermez: "göze girmek"); Atasözleri ise tam cümledir ve öğüt verir ("Damlaya damlaya göl olur").', '#334155', 10, 'normal', 'middle'))
 
     kaydet('6-turkce-7.svg', P.sar(ic))
 

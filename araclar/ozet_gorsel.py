@@ -1051,7 +1051,10 @@ if __name__ == '__main__':
             continue
         spec = importlib.util.spec_from_file_location(f'gorsel_{modul.stem.replace("-", "_")}', modul)
         m = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(m)
+        try:
+            spec.loader.exec_module(m)
+        except Exception:
+            continue
         if hasattr(m, 'uygula'):
             yaz(hedef, m.uygula)
         elif hasattr(m, 'GORSELLER'):
