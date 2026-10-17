@@ -2085,3 +2085,185 @@ Konu özetinin tamamı: https://derskutusu.com/ozet/8-temel-dini-bilgiler-6
 
 #derskutusu #8sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #lgs
 ```
+
+### `bilgi-9-arapca-6` — 9. Sınıf · arapca · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-9-arapca-6.png` (`public/sosyal/bilgi-9-arapca-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/9-arapca-6
+- **Metin:**
+```text
+Arapçada İşaret İsimleri, El-Takısı ve Emir Fiiller
+
+Arapçada tanışma ve sınıf içi iletişimde hâzâ-hâzihî işaret isimleri, şemsî-kamerî el- takısı ve eril-dişil emir fiiller kullanılır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/9-arapca-6
+
+#derskutusu #9sınıf #arapça #konuözeti #dersnotu #meb #tyt
+```
+
+### `bilgi-9-biyoloji-6` — 9. Sınıf · biyoloji · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-9-biyoloji-6.png` (`public/sosyal/bilgi-9-biyoloji-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/9-biyoloji-6
+- **Metin:**
+```text
+Bilimsel Araştırma Süreci ve Bilim Etiği
+
+Bilimsel araştırmalar gözlem, hipotez ve kontrollü deneylerle yürütülürken dürüstlük ve intihalden kaçınma gibi bilim etiği ilkelerine uyulur.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/9-biyoloji-6
+
+#derskutusu #9sınıf #biyoloji #konuözeti #dersnotu #meb #tyt
+```
+
+### `bilgi-9-cografya-6` — 9. Sınıf · cografya · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-9-cografya-6.png` (`public/sosyal/bilgi-9-cografya-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/9-cografya-6
+- **Metin:**
+```text
+Harita Elemanları ve Projeksiyon Yöntemleri
+
+Harita çiziminde küresellikten kaynaklanan bozulmaları en aza indirmek için silindir, konik ve düzlem projeksiyon yöntemleri kullanılır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/9-cografya-6
+
+#derskutusu #9sınıf #coğrafya #konuözeti #dersnotu #meb #tyt
+```
+
+### `bilgi-9-din-kulturu-6` — 9. Sınıf · din-kulturu-ve-ahlak-bilgisi · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-9-din-kulturu-6.png` (`public/sosyal/bilgi-9-din-kulturu-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/9-din-kulturu-ve-ahlak-bilgisi-6
+- **Metin:**
+```text
+İbadet ve Dua Eden Bir Varlık Olarak İnsan
+
+İnsan ibadet ve dua ile Yaratıcısıyla bağ kurar; fiili dua ile emek verip kavli dua ile yalnız Allah’tan yardım diler.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/9-din-kulturu-ve-ahlak-bilgisi-6
+
+#derskutusu #9sınıf #dinkültürü #konuözeti #dersnotu #meb #tyt
+```
+
+### `bilgi-9-edebiyat-6` — 9. Sınıf · turk-dili-ve-edebiyati · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-9-edebiyat-6.png` (`public/sosyal/bilgi-9-edebiyat-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/9-turk-dili-ve-edebiyati-6
+- **Metin:**
+```text
+Mülakat (Görüşme) Türü ve Röportajdan Farkları
+
+Mülakat uzman kişinin görüşlerini doğrudan soru-cevap yapısıyla aktarırken röportaj yazarın gözlem ve belgeleriyle zenginleştirilir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/9-turk-dili-ve-edebiyati-6
+
+#derskutusu #9sınıf #edebiyat #konuözeti #dersnotu #meb #tyt
+```
+
+### `bilgi-9-fizik-6` — 9. Sınıf · fizik · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-9-fizik-6.png` (`public/sosyal/bilgi-9-fizik-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/9-fizik-6
+- **Metin:**
+```text
+Skaler ve Vektörel Niceliklerin Özellikleri
+
+Skaler nicelikler yalnız sayı ve birimle tanımlanırken vektörel nicelikler başlangıç noktası, doğrultu, yön ve büyüklükle belirtilir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/9-fizik-6
+
+#derskutusu #9sınıf #fizik #konuözeti #dersnotu #meb #tyt
+```
+
+### `bilgi-9-ingilizce-6` — 9. Sınıf · ingilizce · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-9-ingilizce-6.png` (`public/sosyal/bilgi-9-ingilizce-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/9-ingilizce-6
+- **Metin:**
+```text
+Mekân Betimleme: There is / There are ve Yer Edatları
+
+İngilizcede mekân tanıtımlarında varlık bildirmek için there is / there are, konum belirtmek için ise prepositions of place kullanılır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/9-ingilizce-6
+
+#derskutusu #9sınıf #ingilizce #konuözeti #dersnotu #meb #tyt
+```
+
+### `bilgi-9-kimya-6` — 9. Sınıf · kimya · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-9-kimya-6.png` (`public/sosyal/bilgi-9-kimya-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/9-kimya-6
+- **Metin:**
+```text
+Atom Orbitalleri ve Elektron Dizilimi Kuralları
+
+Atomda elektron dizilimi Aufbau (artan enerji), Pauli (zıt spin) ve Hund (eş enerjili orbitallere tek tek yerleşme) kurallarına göre yazılır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/9-kimya-6
+
+#derskutusu #9sınıf #kimya #konuözeti #dersnotu #meb #tyt
+```
+
+### `bilgi-9-kuran-i-kerim-6` — 9. Sınıf · kuran-i-kerim · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-9-kuran-i-kerim-6.png` (`public/sosyal/bilgi-9-kuran-i-kerim-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/9-kuran-i-kerim-6
+- **Metin:**
+```text
+Kur’an Kıraatinde Mahreç ve Özel Durumlar
+
+Kur’an tilavetinde harflerin mahreç ve sıfatlarına uyulurken altında sıfır işareti bulunan uzatma harfleri ve vasıl hemzeleri geçişte okunmaz.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/9-kuran-i-kerim-6
+
+#derskutusu #9sınıf #kuranıkerim #konuözeti #dersnotu #meb #tyt
+```
+
+### `bilgi-9-matematik-6` — 9. Sınıf · matematik · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-9-matematik-6.png` (`public/sosyal/bilgi-9-matematik-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/9-matematik-6
+- **Metin:**
+```text
+Gerçek Sayıların Cebirsel İşlem Özellikleri
+
+Gerçek sayıların değişme, birleşme ve dağılma özellikleri cebirsel ifadelerin sadeleştirilmesi ve çarpanlara ayrılmasının temelini oluşturur.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/9-matematik-6
+
+#derskutusu #9sınıf #matematik #konuözeti #dersnotu #meb #tyt
+```
+
+### `bilgi-9-peygamberimizin-hayati-6` — 9. Sınıf · peygamberimizin-hayati · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-9-peygamberimizin-hayati-6.png` (`public/sosyal/bilgi-9-peygamberimizin-hayati-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/9-peygamberimizin-hayati-6
+- **Metin:**
+```text
+Cahiliye Döneminde Mekke ve İslam’ın Dönüşümü
+
+İslam dini Cahiliye Mekke’sindeki kölelik zulmünü, kabile asabiyetini ve kadınlara yönelik haksızlıkları tevhid ve adaletle ortadan kaldırmıştır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/9-peygamberimizin-hayati-6
+
+#derskutusu #9sınıf #peygamberimizinhayatı #konuözeti #dersnotu #meb #tyt
+```
+
+### `bilgi-9-tarih-6` — 9. Sınıf · tarih · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-9-tarih-6.png` (`public/sosyal/bilgi-9-tarih-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/9-tarih-6
+- **Metin:**
+```text
+Tarihsel Bilginin Üretimi: 5T Yöntemi
+
+Tarih araştırmalarında doğru bilgiye ulaşmak için kaynaklar Tarama, Tasnif, Tahlil, Tenkit ve Terkip (5T) basamaklarından geçirilir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/9-tarih-6
+
+#derskutusu #9sınıf #tarih #konuözeti #dersnotu #meb #tyt
+```
+
+### `bilgi-9-temel-dini-bilgiler-6` — 9. Sınıf · temel-dini-bilgiler · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-9-temel-dini-bilgiler-6.png` (`public/sosyal/bilgi-9-temel-dini-bilgiler-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/9-temel-dini-bilgiler-6
+- **Metin:**
+```text
+Allah’ın Varlığında Aklî ve Naklî Deliller
+
+Allah’ın (cc) varlığı ve birliği; gaye-nizam, hudûs, fıtrat ve temânu gibi aklî deliller ile Kur’an’daki naklî delillerle temellendirilir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/9-temel-dini-bilgiler-6
+
+#derskutusu #9sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #tyt
+```
