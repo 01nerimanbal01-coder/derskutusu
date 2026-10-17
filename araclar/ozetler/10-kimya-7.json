@@ -1,0 +1,228 @@
+{
+ "ad": "10-kimya-7",
+ "sinif": 10,
+ "ders": "kimya",
+ "ders_adi": "Kimya",
+ "hafta": 7,
+ "tarih": "26-30 Ekim 2026",
+ "yayin_tarihi": "2026-10-28",
+ "unite": "ETKİLEŞİM",
+ "konu": "Mol Kavramı: Atomik Kütle Birimi (akb), Ortalama Atom Kütlesi ve Bileşik Formülü Problemleri",
+ "ciktilar": [
+  "Atomik kütle birimi (akb) ile gram arasındaki ilişkiyi (1 g = N_A akb) ve gerçek atom/molekül kütlesi kavramını açıklar.",
+  "Doğadaki izotop bolluk yüzdelerinden yararlanarak elementlerin ortalama atom kütlesini hesaplar.",
+  "Bileşiklerin mol sayısı, atom sayısı, kütlece yüzdesi ve basit/molekül formülü arasındaki nicel ilişkileri içeren ileri düzey mol problemlerini çözer."
+ ],
+ "giris": "Geçen hafta mol kavramının tanımını, Avogadro sayısını ({koyu:N_A = 6,02 × 10²³}), molar kütleyi ({koyu:n = m / M_A}) ve gazların normal/standart koşullardaki molar hacmini ({koyu:22,4 L ve 24,5 L}) öğrenmiştik. Bu hafta ise {koyu:Mol Kavramı}’nın en ince ve sınavlarda en çok ayırt edici olan bölümünü ele alıyoruz: Tek bir atomu tartmak için kullanılan {koyu:atomik kütle birimi (akb)}, periyodik tablodaki kütlelerin neden virgüllü olduğunu açıklayan {koyu:izotop ortalama atom kütlesi} ve bir bileşiğin içindeki atomların mol-kütle oranlarından {koyu:kimyasal formül bulma} yöntemlerini pekiştireceğiz.",
+ "ozet": [
+  "{koyu:Atomik Kütle Birimi (1 akb / u):} Doğadaki {koyu:¹²C (Karbon-12)} izotopunun 1 tane atomunun kütlesinin {koyu:1/12’sine 1 akb} denir. Gram ile akb arasındaki dönüşüm: {koyu:1 gram = N_A akb} ve {koyu:1 akb = 1 / N_A gram}’dır.",
+  "{koyu:1 Tane Atom vs. 1 Mol Atom:} Karbon ({koyu:C = 12}) için {koyu:1 tane C atomu = 12 akb = 12 / N_A gram} (buna {koyu:gerçek atom kütlesi} denir); {koyu:1 mol C atomu (N_A tane) = 12 gram = 12 · N_A akb}’dir.",
+  "{koyu:Ortalama Atom Kütlesi:} Bir elementin doğadaki izotoplarının kütle numaraları ile doğada bulunma yüzdelerinin ağırlıklı ortalamasıdır: {koyu:Ort. A.K. = (A₁ · %Bolluk₁ + A₂ · %Bolluk₂) / 100}.",
+  "{koyu:Bileşikteki Atomların Mol Analizi:} {koyu:n} mol {koyu:XₐY_b} bileşiğinde {koyu:n · a mol X atomu}, {koyu:n · b mol Y atomu} ve toplam {koyu:n · (a + b) mol atom} bulunur.",
+  "{koyu:Basit (Kaba) ve Molekül (Gerçek) Formülü:} Bileşiği oluşturan elementlerin kütleleri kendi atom kütlelerine ({koyu:M_A}) bölünerek mol oranları bulunur; bu oranlar en küçük tam sayılara çevrilirse {koyu:basit formül}, bileşiğin gerçek molar kütlesiyle genişletilirse {koyu:molekül formülü} elde edilir."
+ ],
+ "bolumler": [
+  {
+   "baslik": "1. Atomik Kütle Birimi (akb), Gerçek Kütle ve Ortalama Atom Kütlesi",
+   "metin": [
+    "Tek bir atomun kütlesi yaklaşık {koyu:10⁻²³ gram} mertebesinde olduğu için tekil atomları ve molekülleri ‘gram’ ile ifade etmek çok kullanışsızdır. Bu nedenle bilim insanları referans olarak {koyu:Karbon-12 (¹²C)} izotopunu seçmiş ve {koyu:1 tane ¹²C atomunun kütlesinin 12’de birine 1 atomik kütle birimi (1 akb veya 1 u)} adını vermiştir. Dolayısıyla {koyu:1 tane ¹²C atomu tam olarak 12 akb}’dir. Diğer yandan {koyu:1 mol (N_A tane) ¹²C atomunun 12 gram} olduğunu biliyoruz. Bu iki bilgiyi eşitlediğimizde ({koyu:N_A × 12 akb = 12 gram}) kimyanın en önemli dönüşüm bağıntısını elde ederiz: {koyu:1 gram = N_A akb} yani {koyu:1 akb = 1 / N_A gram}! Bir elementin {koyu:1 tane atomunun gram cinsinden kütlesine “gerçek atom kütlesi”}, bir bileşiğin {koyu:1 tane molekülünün gram cinsinden kütlesine ise “gerçek molekül kütlesi”} denir. Örneğin {koyu:H₂O (M_A = 18 g/mol)} için 1 mol su {koyu:18 gram} iken, 1 tane su molekülünün kütlesi {koyu:18 akb} veya gram cinsinden {koyu:18 / N_A gram}’dır (gerçek molekül kütlesi).",
+    "Periyodik tabloya baktığımızda Klorun atom kütlesinin {koyu:35,5}, Bakırın {koyu:63,5} gibi ondalıklı sayılar olduğunu görürüz. Bunun nedeni elementlerin doğada kütle numaraları farklı olan {koyu:izotoplar} hâlinde bulunmasıdır. Bir elementin izotoplarının kütle numaraları ({koyu:A₁, A₂...}) ile doğadaki bolluk yüzdeleri ({koyu:%y₁, %y₂...}) kullanılarak {koyu:Ortalama Atom Kütlesi = (A₁ · %y₁ + A₂ · %y₂) / 100} formülüyle hesaplanır. Örneğin doğadaki klorun {koyu:%75’i ³⁵Cl} ve {koyu:%25’i ³⁷Cl} izotopudur; klorun ortalama atom kütlesi {koyu:(35 × 75 + 37 × 25) / 100 = 35,5 akb (veya g/mol)} olur."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Sınavların En Büyük Tuzağı: '1 Tane' mi Diyor, '1 Mol' mü?",
+    "metin": "C = 12, O = 16 (CO₂ = 44) verildiğinde sorudaki kelimeye çok dikkat edin:\n• “1 TANE CO₂ molekülü” = 44 akb = 44 / N_A gramdır (44 gram DEĞİLDİR!).\n• “1 MOL CO₂ molekülü” = 44 gram = 44 · N_A akb’dir (44 akb DEĞİLDİR!)."
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 424\" role=\"img\" aria-label=\"Konu özet şeması\"><text x=\"400\" y=\"32\" font-family=\"sans-serif\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f766e\" text-anchor=\"middle\">MOL KAVRAMI: AKB-GRAM İLİŞKİSİ, İZOTOP KÜTLESİ VE FORMÜL HESAPLARI</text><rect x=\"20\" y=\"56\" width=\"365\" height=\"290\" rx=\"8\" fill=\"#f0fdfa\" stroke=\"#0d9488\" stroke-width=\"1.6\"/><text x=\"202\" y=\"80\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#0f766e\" text-anchor=\"middle\">1. AKB, GERÇEK KÜTLE VE ORTALAMA ATOM KÜTLESİ</text><rect x=\"35\" y=\"100\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#0d9488\" stroke-width=\"1.6\"/><text x=\"202\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#0f766e\" text-anchor=\"middle\">Atomik Kütle Birimi (1 akb / u) Tanımı</text><text x=\"202\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">1 tane ¹²C atomunun kütlesinin 1/12’sine 1 akb denir: 1 akb = 1 / N_A gram!</text><rect x=\"35\" y=\"150\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#0d9488\" stroke-width=\"1.6\"/><text x=\"202\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#0f766e\" text-anchor=\"middle\">Gram ile akb Arasındaki Altın Dönüşüm!</text><text x=\"202\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">1 gram = N_A akb (6,02 × 10²³ akb)  &lt;---&gt;  1 akb = 1 / N_A gram.</text><rect x=\"35\" y=\"200\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#0d9488\" stroke-width=\"1.6\"/><text x=\"202\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#0f766e\" text-anchor=\"middle\">1 Tane Atom Kütlesi vs. 1 Mol Atom Kütlesi (O=16)</text><text x=\"202\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">1 tane O atomu = 16 akb = 16/N_A g  |  1 mol O atomu = 16 g = 16·N_A akb!</text><rect x=\"35\" y=\"250\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#0d9488\" stroke-width=\"1.6\"/><text x=\"202\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#0f766e\" text-anchor=\"middle\">Gerçek Atom/Molekül Kütlesi Kavramı</text><text x=\"202\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">1 TANE atom veya molekülün GRAM cinsinden kütlesidir (M_A / N_A gram).</text><rect x=\"35\" y=\"300\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#0d9488\" stroke-width=\"1.6\"/><text x=\"202\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#0f766e\" text-anchor=\"middle\">İzotoplar ve Ortalama Atom Kütlesi</text><text x=\"202\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Ort. A.K. = (m₁ · %Bolluk₁ + m₂ · %Bolluk₂) / 100 (Örn: Cl = 35,5).</text><rect x=\"400\" y=\"56\" width=\"380\" height=\"290\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"80\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">2. BİLEŞİKLERDE MOL ANALİZİ VE FORMÜL BULMA</text><rect x=\"415\" y=\"100\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">1 Mol Bileşikteki Atomların Mol Sayısı</text><text x=\"590\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">1 mol C₃H₈ bileşiğinde: 3 mol C atomu + 8 mol H atomu = 11 mol atom vardır!</text><rect x=\"415\" y=\"150\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Bileşikte Kütlece Yüzde Bileşim</text><text x=\"590\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Kütlece % = (Elementin 1 mol bileşikteki kütlesi / Bileşiğin M_A’sı) × 100.</text><rect x=\"415\" y=\"200\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Basit (Kaba) Formül ve Molekül (Gerçek) Formülü</text><text x=\"590\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Elementlerin mol sayıları en küçük tam sayılara sadeleştirilirse basit formül bulunur.</text><rect x=\"415\" y=\"250\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Kristal Sulu (Hidrat) Bileşik Problemleri</text><text x=\"590\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">CuSO₄·nH₂O ısıtılınca uçan suyun kütlesinden n katsayısı (mol oranı) bulunur.</text><rect x=\"415\" y=\"300\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Atom Kütlesi Bilinmeyen (X) Elementi Bulma</text><text x=\"590\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Verilen mol ve kütle (n = m / M_A) eşitliğinden önce bileşiğin M_A’sı, sonra X bulunur.</text><rect x=\"20\" y=\"360\" width=\"760\" height=\"48\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#0d9488\" stroke-width=\"1.6\"/><text x=\"400\" y=\"380\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0f766e\" text-anchor=\"middle\">TUZAK UYARISI (H₂O = 18 g/mol): “1 tane H₂O molekülü 18 gramdır” YANLIŞ! Doğrusu: “1 tane H₂O = 18 akb = 18/N_A gramdır!”</text><text x=\"400\" y=\"398\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">“0,2 mol SO₃ gazı kaç mol atom içerir?” -&gt; 1 molde 4 mol atom varsa, 0,2 molde 0,2 × 4 = 0,8 mol atom vardır!</text></svg>"
+  },
+  {
+   "baslik": "2. Bileşiklerin Mol-Atom Analizi ve Kimyasal Formül Hesaplamaları",
+   "metin": [
+    "Bir bileşiğin formülü bize o bileşiğin {koyu:1 molünün} içinde hangi elementten kaç mol atom bulunduğunu doğrudan söyler. Örneğin {koyu:1 mol H₂SO₄ (Sülfürik asit)} bileşiğinde {koyu:2 mol H atomu, 1 mol S atomu ve 4 mol O atomu} olmak üzere toplam {koyu:7 mol atom} (tane cinsinden {koyu:7 · N_A tane atom}) vardır. Eğer elimizde {koyu:0,3 mol H₂SO₄} varsa, içindeki her bir atomun mol sayısı da 0,3 ile çarpılır: {koyu:0,3 × 2 = 0,6 mol H}, {koyu:0,3 × 1 = 0,3 mol S} ve {koyu:0,3 × 4 = 1,2 mol O} atomu (toplam {koyu:0,3 × 7 = 2,1 mol atom}) bulunur. Benzer şekilde kütle veya atom sayısı üzerinden tersten gidilerek bileşiğin mol sayısı ve bilinmeyen bir elementin molar kütlesi ({koyu:M_A}) kolayca hesaplanabilir.",
+    "Deneysel verilerden bir bileşiğin {koyu:basit (kaba) formülünü} ve {koyu:molekül (gerçek) formülünü} bulmak için şu üç adım izlenir: {koyu:1. Adım:} Bileşikteki her elementin verilen kütlesi (veya kütlece yüzdesi) o elementin atom kütlesine ({koyu:M_A}) bölünerek elementlerin {koyu:mol sayıları (n = m / M_A)} bulunur. {koyu:2. Adım:} Bulunan mol sayıları, içlerindeki en küçük sayıya bölünüp en küçük tam sayılara genişletilerek {koyu:Basit (Kaba) Formül} elde edilir. {koyu:3. Adım:} Eğer bileşiğin gerçek molar kütlesi ({koyu:M_A}) verilmişse, {koyu:n · (Basit Formül Kütlesi) = Gerçek M_A} eşitliğinden {koyu:n} tam sayısı bulunur ve basit formül {koyu:n} ile genişletilerek {koyu:Molekül Formülü} yazılır."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Pratik İpucu: Kristal Sulu (Hidrat) Bileşik Soruları",
+    "metin": "CuSO₄·nH₂O veya Na₂CO₃·nH₂O gibi kristal sulu bir tuz ısıtıldığında kütlesindeki azalma miktarı doğrudan UÇAN SUYUN (nH₂O) kütlesidir! Kalan katı kütle susuz tuzun (1 mol) kütlesine, uçan kütle ise suyun (n × 18 g) kütlesine oranlanarak n katsayısı hemen bulunur."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Kükürt trioksit (SO₃) gazı için; a) 1 tane SO₃ molekülünün kaç akb ve kaç gram olduğunu, b) 0,4 mol SO₃ gazının kaç gram olduğunu, toplam kaç mol atom ve kaç tane oksijen atomu içerdiğini hesaplayınız. (O = 16, S = 32, Avogadro sayısı = N_A)",
+   "cevap": "Önce SO₃’ün molar kütlesini bulalım: M_A(SO₃) = 32 + 3(16) = 80 g/mol.\na) 1 tane SO₃ molekülü = 80 akb’dir; gram cinsinden (gerçek molekül kütlesi) ise 80 / N_A gramdır.\nb) 0,4 mol SO₃ kütlesi: m = n · M_A = 0,4 · 80 = 32 gramdır. 1 mol SO₃’te 4 mol atom (1 S + 3 O) bulunduğundan 0,4 mol SO₃’te 0,4 × 4 = 1,6 mol atom vardır. Oksijen atomu sayısı ise 0,4 × 3 = 1,2 mol O atomu = 1,2 · N_A tane O atomudur."
+  },
+  {
+   "soru": "Doğada Bakır elementinin iki kararlı izotopu bulunmaktadır: ⁶³Cu izotopunun doğada bulunma bolluğu %70, ⁶⁵Cu izotopunun bolluğu ise %30’dur. Buna göre Bakır elementinin ortalama atom kütlesi kaç akb’dir?",
+   "cevap": "Ortalama Atom Kütlesi = (A₁ · %Bolluk₁ + A₂ · %Bolluk₂) / 100 formülünden:\nOrt. A.K.(Cu) = (63 × 70 + 65 × 30) / 100 = (4410 + 1950) / 100 = 6360 / 100 = 63,6 akb (veya g/mol) bulunur."
+  },
+  {
+   "soru": "Karbon ve hidrojenden oluşan bir organik bileşiğin 0,2 molü tamamen analiz edildiğinde 7,2 gram C ve 1,6 gram H içerdiği saptanıyor. Bu bileşiğin molekül (gerçek) formülünü bulunuz. (H = 1, C = 12)",
+   "cevap": "0,2 mol bileşikte 7,2 g C ve 1,6 g H varsa, 1 mol bileşikteki (5 katı) kütleleri ve mollerini bulalım:\n• 1 mol bileşikte C: m_C = 7,2 × 5 = 36 g ⇒ n_C = 36 / 12 = 3 mol C.\n• 1 mol bileşikte H: m_H = 1,6 × 5 = 8 g ⇒ n_H = 8 / 1 = 8 mol H.\n1 mol bileşikte 3 mol C ve 8 mol H bulunduğuna göre bileşiğin gerçek (molekül) formülü C₃H₈’dir."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Metan (CH₄) gazı ile ilgili aşağıdaki ifadelerden hangisi yanlıştır? (H = 1, C = 12, Avogadro sayısı = N_A)",
+   "secenekler": [
+    "1 mol CH₄ molekülü 16 gramdır.",
+    "1 tane CH₄ molekülünün kütlesi 16 akb’dir.",
+    "CH₄’ün gerçek molekül kütlesi 16 / N_A gramdır.",
+    "1 tane CH₄ molekülü 16 gramdır.",
+    "1 mol CH₄ bileşiği toplam 5 · N_A tane atom içerir."
+   ],
+   "dogru": 3,
+   "aciklama": "1 tane CH₄ molekülü 16 gram değil, 16 akb (yani 16 / N_A gram)’dır; 16 gram olan 1 mol (N_A tane) CH₄ molekülüdür."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bor (B) elementinin doğada ¹⁰B ve ¹¹B olmak üzere iki izotopu vardır. Borun periyodik tablodaki ortalama atom kütlesi 10,8 akb olduğuna göre, doğadaki ¹¹B izotopunun bulunma yüzdesi kaçtır?",
+   "secenekler": [
+    "%20",
+    "%40",
+    "%50",
+    "%75",
+    "%80"
+   ],
+   "dogru": 4,
+   "aciklama": "¹¹B yüzdesine x dersek ¹⁰B yüzdesi (100 - x) olur: [10(100 - x) + 11x] / 100 = 10,8 ⇒ 1000 + x = 1080 ⇒ x = %80 bulunur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Yapısında toplam 1,5 mol atom bulunduran N₂O₃ gazı kaç gramdır? (N = 14, O = 16)",
+   "secenekler": [
+    "15,2",
+    "22,8",
+    "30,4",
+    "38,0",
+    "76,0"
+   ],
+   "dogru": 1,
+   "aciklama": "1 mol N₂O₃ bileşiğinde (2 + 3) = 5 mol atom vardır. Toplam 1,5 mol atom içeren bileşik n = 1,5 / 5 = 0,3 moldür. M_A(N₂O₃) = 2(14) + 3(16) = 76 g/mol olduğundan m = 0,3 × 76 = 22,8 gramdır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "0,2 mol X₂O₅ bileşiğinin kütlesi 21,6 gram olduğuna göre, X elementinin atom kütlesi (M_A) kaç g/mol’dür? (O = 16)",
+   "secenekler": [
+    "14",
+    "27",
+    "31",
+    "40",
+    "56"
+   ],
+   "dogru": 0,
+   "aciklama": "0,2 molü 21,6 gram ise 1 mol X₂O₅ bileşiği M_A = 21,6 / 0,2 = 108 g/mol’dür. 2X + 5(16) = 108 ⇒ 2X + 80 = 108 ⇒ 2X = 28 ⇒ X = 14 g/mol bulunur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Kütlece %40 Kalsiyum (Ca), %12 Karbon (C) ve %48 Oksijen (O) içeren bileşiğin basit (kaba) formülü aşağıdakilerden hangisidir? (C = 12, O = 16, Ca = 40)",
+   "secenekler": [
+    "CaCO₂",
+    "CaCO₃",
+    "Ca₂CO₃",
+    "CaC₂O₄",
+    "Ca(OH)₂"
+   ],
+   "dogru": 1,
+   "aciklama": "100 g bileşikte: n_Ca = 40/40 = 1 mol; n_C = 12/12 = 1 mol; n_O = 48/16 = 3 mol bulunur. Mol oranı 1 : 1 : 3 olduğundan basit formül CaCO₃’tür."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Atomik kütle birimi, ortalama atom kütlesi ve mol hesaplamalarıyla ilgili aşağıdaki ifadelerin Doğru (D) mu yoksa Yanlış (Y) mı olduğunu belirleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "1 tane ¹²C atomunun kütlesinin 1/12’sine 1 atomik kütle birimi (1 akb) denir.",
+     "dogru": true,
+     "aciklama": "Doğru; IUPAC tanımına göre 1 akb, Karbon-12 izotopunun 1/12'sidir."
+    },
+    {
+     "metin": "1 gram, Avogadro sayısı (N_A) kadar akb’ye eşittir (1 g = N_A akb).",
+     "dogru": true,
+     "aciklama": "Doğru; 1 akb = 1 / N_A g olduğundan 1 g = N_A akb'dir."
+    },
+    {
+     "metin": "0,5 mol C₂H₆ gazında toplam 4 mol hidrojen atomu bulunur.",
+     "dogru": false,
+     "aciklama": "Yanlış; 1 mol C₂H₆'da 6 mol H atomu vardır, 0,5 molünde 0,5 × 6 = 3 mol H atomu bulunur (toplam atom sayısı 0,5 × 8 = 4 moldür)."
+    },
+    {
+     "metin": "Bir elementin ortalama atom kütlesi her zaman doğada en çok bulunan izotopunun kütle numarasına daha yakındır.",
+     "dogru": true,
+     "aciklama": "Doğru; ağırlıklı ortalama bolluğu yüksek olan izotopa daha yakın çıkar."
+    },
+    {
+     "metin": "Basit formülü CH₂O olan ve molar kütlesi 180 g/mol olan bileşiğin gerçek (molekül) formülü C₆H₁₂O₆’dır. (H=1, C=12, O=16)",
+     "dogru": true,
+     "aciklama": "Doğru; CH₂O kütlesi 12+2+16 = 30'dur. 180 / 30 = 6 katı alındığında C₆H₁₂O₆ elde edilir."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "soru": "O = 16 ve H = 1 (H₂O = 18 g/mol) değerlerine göre aşağıdaki nicelikleri doğru karşılıklarıyla eşleştiriniz.",
+   "ciftler": [
+    [
+     "1 tane Oksijen (O) atomunun kütlesi",
+     "16 akb  (veya 16 / N_A gram — Gerçek atom kütlesi)"
+    ],
+    [
+     "1 mol Oksijen (O₂) gazının kütlesi",
+     "32 gram  (veya 32 · N_A akb)"
+    ],
+    [
+     "1 tane Su (H₂O) molekülünün gerçek kütlesi",
+     "18 / N_A gram  (veya 18 akb)"
+    ],
+    [
+     "0,5 mol H₂O bileşiğinin içerdiği toplam atom sayısı",
+     "1,5 mol atom  (1,5 · N_A tane atom)"
+    ],
+    [
+     "3,6 gram H₂O bileşiğinin mol sayısı",
+     "0,2 mol H₂O"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kimya kavramlarıyla tamamlayınız.",
+   "cumleler": [
+    {
+     "metin": "Bir elementin 1 tane atomunun gram cinsinden kütlesine ___ atom kütlesi denir.",
+     "cevap": "gerçek"
+    },
+    {
+     "metin": "Periyodik tablodaki atom kütlelerinin tam sayı değil virgüllü olmasının nedeni elementlerin doğada ___ hâlinde bulunmasıdır.",
+     "cevap": "izotoplar"
+    },
+    {
+     "metin": "Bir bileşikteki elementlerin mol sayılarının en sade tam sayı oranını gösteren formüle ___ (kaba) formül denir.",
+     "cevap": "basit"
+    },
+    {
+     "metin": "1 akb, 1 gramın ___ sayısına (N_A) bölünmesiyle elde edilen çok küçük bir kütle birimidir.",
+     "cevap": "Avogadro"
+    },
+    {
+     "metin": "0,25 mol CaCO₃ katısı toplam ___ mol oksijen atomu içerir.",
+     "cevap": "0,75"
+    }
+   ],
+   "fazla": [
+    "nötron",
+    "1,25"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Kristal sulu bir tuz olan 0,1 mol Na₂CO₃·nH₂O katısının toplam kütlesi 28,6 gramdır. Bu bileşik ısıtılarak suyunun tamamı buharlaştırıldığında; a) Bileşikteki n sayısını, b) Buharlaşan suyun kaç gram olduğunu hesaplayınız. (H = 1, C = 12, O = 16, Na = 23)",
+   "ipuclari": [
+    "1. 0,1 molü 28,6 g ise 1 mol Na₂CO₃·nH₂O bileşiğinin toplam kütlesini (286 g/mol) bulunuz.",
+    "2. Susuz Na₂CO₃ kısmının molar kütlesini (106 g/mol) çıkararak kalan kütleyi H₂O’nun molar kütlesine (18 g/mol) bölünüz."
+   ],
+   "cevap": "a) 0,1 mol bileşik 28,6 g ise 1 mol Na₂CO₃·nH₂O bileşiği 286 g/mol’dür.\nSusuz kısmın kütlesi: M_A(Na₂CO₃) = 2(23) + 12 + 3(16) = 46 + 12 + 48 = 106 g/mol ve M_A(H₂O) = 18 g/mol’dür.\n106 + 18n = 286 ⇒ 18n = 180 ⇒ n = 10 bulunur (Formül: Na₂CO₃·10H₂O — Çamaşır sodası).\nb) 1 mol bileşikte 180 g su varsa, 0,1 mol bileşik ısıtıldığında 0,1 × 180 = 18 gram su buharlaşır."
+  }
+ ]
+}

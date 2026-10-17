@@ -1,0 +1,228 @@
+{
+ "ad": "10-matematik-7",
+ "sinif": 10,
+ "ders": "matematik",
+ "ders_adi": "Matematik",
+ "hafta": 7,
+ "tarih": "26-30 Ekim 2026",
+ "yayin_tarihi": "2026-10-28",
+ "unite": "İSTATİSTİKSEL ARAŞTIRMA SÜRECİ",
+ "konu": "İki Kategorik Değişkenli Veriler: İki Yönlü Sıklık Tabloları, Koşullu Göreli Sıklık ve Sütun Grafikleri",
+ "ciktilar": [
+  "İki kategorik değişken arasındaki ilişkiyi incelemek üzere istatistiksel araştırma sorusu oluşturur ve verileri iki yönlü sıklık (çapraz) tablosuyla düzenler.",
+  "İki yönlü tablolardan yararlanarak marjinal (kenar), birleşik (ortak) ve koşullu göreli sıklıkları (yüzdeleri) hesaplar.",
+  "Verileri kümelenmiş ve yığılmış sütun grafikleriyle görselleştirerek iki kategorik değişken arasında ilişki olup olmadığını koşullu göreli sıklıklarla yorumlar."
+ ],
+ "giris": "Üçgende trigonometrik oranlar ve Sinüs-Kosinüs teoremleriyle tamamladığımız geometri yolculuğumuzun ardından, Türkiye Yüzyılı Maarif Modeli’nin yeni teması olan {koyu:İstatistiksel Araştırma Süreci}’ne başlıyoruz! Günlük yaşamda, tıpta, ekonomide ve sosyal bilimlerde çoğu zaman sayısal olmayan ({koyu:kategorik/nitel}) iki değişken arasında bir bağ olup olmadığını merak ederiz: *“Öğrencilerin seçtiği spor dalı ile cinsiyetleri arasında bir ilişki var mıdır?”* veya *“İzlenen reklam türü ile ürünü satın alma kararı birbiriyle ilişkili midir?”* Bu haftaki dersimizde iki kategorik değişkenli verileri {koyu:iki yönlü sıklık tabloları}, {koyu:koşullu göreli sıklıklar} ve {koyu:kümelenmiş/yığılmış sütun grafikleri} ile analiz etmeyi öğreneceğiz.",
+ "ozet": [
+  "{koyu:Kategorik Değişken ve Araştırma Sorusu:} Bireyleri veya nesneleri nitel özelliklerine göre sınıflandıran değişkenlere {koyu:kategorik (nitel) değişken} denir (göz rengi, tercih edilen kulüp, eğitim düzeyi). İki kategorik değişkenli istatistiksel araştırma sorusu değişebilirlik içermeli ve gruplar arası ilişkiyi sorgulamalıdır.",
+  "{koyu:İki Yönlü Sıklık (Çapraz) Tablosu:} Birinci kategorik değişkenin kategorilerinin {koyu:satırlarda}, ikinci kategorik değişkenin kategorilerinin {koyu:sütunlarda} gösterildiği özet tablodur. Satır ve sütunların en sonundaki toplamlara {koyu:marjinal (kenar) sıklıklar} denir.",
+  "{koyu:Birleşik ve Marjinal Göreli Sıklık:} Bir hücredeki gözlem sayısının tüm ankete katılanların {koyu:genel toplamına (N)} oranına {koyu:birleşik (ortak) göreli sıklık}; satır veya sütun toplamının genel toplama ({koyu:N}) oranına ise {koyu:marjinal göreli sıklık} denir.",
+  "{koyu:Koşullu Göreli Sıklık:} Bir hücredeki sıklığın genel toplama değil, yalnızca ait olduğu {koyu:satır toplamına (satır koşullu)} veya {koyu:sütun toplamına (sütun koşullu)} bölünmesiyle elde edilen orandır.",
+  "{koyu:Görselleştirme ve İlişki Yorumu:} İki kategorik değişken {koyu:kümelenmiş (yan yana)} veya {koyu:yığılmış (%100 oransal) sütun grafiğiyle} gösterilir. Koşullu göreli sıklıklar kategoriden kategoriye belirgin biçimde değişiyorsa {koyu:iki değişken arasında ilişki (bağımlılık) vardır}; oranlar birbirine çok yakınsa {koyu:ilişki yoktur (bağımsızdır)}."
+ ],
+ "bolumler": [
+  {
+   "baslik": "1. İki Yönlü Sıklık Tabloları: Marjinal, Birleşik ve Koşullu Göreli Sıklık",
+   "metin": [
+    "İstatistiksel araştırma süreci dört temel aşamadan oluşur: {koyu:1) Araştırma sorusu oluşturma, 2) Veri toplama planı yapma ve veri toplama, 3) Verileri düzenleme ve analiz etme, 4) Sonuçları yorumlama}. İncelenen iki değişken de sayısal ölçüm yerine kategori belirtiyorsa ({koyu:kategorik değişken}; örneğin 1. değişken: *Sınıf düzeyi [9. sınıf / 10. sınıf]*, 2. değişken: *Tercih edilen yabancı dil [İngilizce / Almanca]*), toplanan ham veriler {koyu:İki Yönlü Sıklık Tablosu (Çapraz Tablo / Kontenjans Tablosu)} ile özetlenir. Tablonun iç kısmındaki hücreler her iki özelliği aynı anda taşıyan kişi sayısını ({koyu:birleşik sıklık}) gösterirken; en sağ sütun satır toplamlarını, en alt satır sütun toplamlarını ({koyu:marjinal/kenar sıklıkları}), sağ alt köşe ise tüm verilerin {koyu:genel toplamını (N)} verir.",
+    "Farklı büyüklükteki grupları sağlıklı karşılaştırabilmek için kişi sayılarını (sıklıkları) orana veya yüzdeye ({koyu:göreli sıklığa}) dönüştürürüz. Üç tür göreli sıklık vardır ve aralarındaki fark {koyu:paydaya hangi toplamın yazıldığıdır}: {koyu:1) Marjinal (Kenar) Göreli Sıklık:} Bir satır veya sütun toplamının {koyu:genel toplama (N)} oranıdır (*“Ankete katılanların yüzde kaçı 10. sınıftır?”*). {koyu:2) Birleşik (Ortak) Göreli Sıklık:} Tablonun içindeki bir hücre değerinin {koyu:genel toplama (N)} oranıdır (*“Ankete katılan tüm öğrencilerin yüzde kaçı hem 10. sınıf olup hem Almanca seçmiştir?”*). {koyu:3) Koşullu Göreli Sıklık:} Bir hücre değerinin yalnızca {koyu:kendi satır toplamına (satır koşullu)} veya {koyu:kendi sütun toplamına (sütun koşullu)} oranıdır (*“10. sınıf öğrencilerinin yüzde kaçı Almanca seçmiştir?”* — burada paydaya genel toplam değil, yalnızca 10. sınıfların toplamı yazılır!)."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Altın Formül: Paydaya Hangi Sayı Yazılacak?",
+    "metin": "200 kişilik bir okul anketinde 80 kız öğrenciden 20’si satranç kulübündeyse:\n• Birleşik Göreli Sıklık (“Tüm öğrencilerin kaçta kaçı satrançtaki kızlardır?”) = 20 / 200 = %10 (Payda: Genel Toplam N = 200).\n• Koşullu Göreli Sıklık (“Kız öğrencilerin yüzde kaçı satranç kulübündedir?”) = 20 / 80 = %25 (Payda: Kızların Toplamı = 80)!"
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 424\" role=\"img\" aria-label=\"Konu özet şeması\"><text x=\"400\" y=\"32\" font-family=\"sans-serif\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">İSTATİSTİKSEL ARAŞTIRMA: İKİ KATEGORİK DEĞİŞKENLİ VERİLER</text><rect x=\"20\" y=\"56\" width=\"365\" height=\"290\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"80\" font-family=\"sans-serif\" font-size=\"11.8\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. İKİ YÖNLÜ TABLO VE GÖRELİ SIKLIK TÜRLERİ</text><rect x=\"35\" y=\"100\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Kategorik (Nitel) Değişken Nedir?</text><text x=\"202\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Sayısal ölçüm yerine sınıflandırma belirten değişken (cinsiyet, dal, kan grubu).</text><rect x=\"35\" y=\"150\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">İki Yönlü Sıklık (Çapraz) Tablosu</text><text x=\"202\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Satırlarda 1. kategorik değişken, sütunlarda 2. kategorik değişken yer alır.</text><rect x=\"35\" y=\"200\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Marjinal (Kenar) Toplam ve Marjinal Göreli Sıklık</text><text x=\"202\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Satır veya sütun toplamının genel toplama (N) oranıdır.</text><rect x=\"35\" y=\"250\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Birleşik (Ortak) Göreli Sıklık</text><text x=\"202\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Tablo içindeki bir hücre değerinin (f_ij) genel toplama (N) oranıdır (f_ij / N).</text><rect x=\"35\" y=\"300\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Koşullu Göreli Sıklık (Satır veya Sütun Koşullu)</text><text x=\"202\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Hücre değerinin yalnızca ilgili SATIR veya SÜTUN toplamına oranıdır!</text><rect x=\"400\" y=\"56\" width=\"380\" height=\"290\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"80\" font-family=\"sans-serif\" font-size=\"11.8\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">2. SÜTUN GRAFİKLERİ VE İLİŞKİ ANALİZİ</text><rect x=\"415\" y=\"100\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">İstatistiksel Araştırma Süreci (4 Adım)</text><text x=\"590\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">1) Soru Oluşturma -&gt; 2) Veri Toplama -&gt; 3) Analiz -&gt; 4) Sonuç Yorumlama.</text><rect x=\"415\" y=\"150\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Kümelenmiş (Yan Yana) Sütun Grafiği</text><text x=\"590\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Her ana kategori için alt kategorilerin sütunları yan yana çizilerek karşılaştırılır.</text><rect x=\"415\" y=\"200\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Yığılmış (%100 Oransal) Sütun Grafiği</text><text x=\"590\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Koşullu göreli sıklıkları (% dağılımı) tek sütun içinde üst üste gösterir.</text><rect x=\"415\" y=\"250\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">İki Kategorik Değişken Arasında İlişki Var mı?</text><text x=\"590\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Koşullu göreli sıklıklar satırdan satıra belirgin değişiyorsa İLİŞKİ VARDIR!</text><rect x=\"415\" y=\"300\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">İlişki Olmaması (Bağımsızlık) Durumu</text><text x=\"590\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Koşullu yüzdeler her grupta birbirine çok yakınsa değişkenler ilişkisizdir.</text><rect x=\"20\" y=\"360\" width=\"760\" height=\"48\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"400\" y=\"380\" font-family=\"sans-serif\" font-size=\"9.8\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">DİKKAT: “Katılımcıların yüzde kaçı...” derse paydaya GENEL TOPLAM (Birleşik); “Kızların yüzde kaçı...” derse KIZ TOPLAMI (Koşullu) yazılır!</text><text x=\"400\" y=\"398\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Farklı büyüklükteki grupları karşılaştırırken sıklık (kişi sayısı) değil, KOŞULLU GÖRELİ SIKLIK (%) kullanılmalıdır!</text></svg>"
+  },
+  {
+   "baslik": "2. Kümelenmiş ve Yığılmış Sütun Grafikleri ile İlişki (Bağımsızlık) Analizi",
+   "metin": [
+    "İki kategorik değişkenli verileri görselleştirmek için iki özel sütun grafiği kullanılır: {koyu:1) Kümelenmiş (Yan Yana) Sütun Grafiği:} Yatay eksende birinci değişkenin kategorileri yer alırken, her kategorinin içinde ikinci değişkenin alt kategorileri farklı renkli sütunlar hâlinde {koyu:yan yana} çizilir. Bu grafik hem sıklıkları hem de koşullu göreli sıklıkları doğrudan yan yana karşılaştırmak için çok elverişlidir. {koyu:2) Yığılmış (Bölünmüş / %100 Oransal) Sütun Grafiği:} Her ana kategori için toplam yüksekliği %100 (veya 1 tam) olan tek bir sütun çizilir ve bu sütun alt kategorilerin {koyu:koşullu göreli sıklıklarına} göre renkli dilimlere bölünerek üst üste yığılır.",
+    "İki kategorik değişkenli bir araştırmanın nihai amacı, {koyu:“Bu iki değişken arasında istatistiksel bir ilişki (bağımlılık) var mıdır?”} sorusuna yanıt vermektir. Bunun için {koyu:koşullu göreli sıklıklar} karşılaştırılır: Eğer bir değişkenin kategorileri değiştikçe diğer değişkenin koşullu yüzdeleri {koyu:belirgin şekilde değişiyorsa}, iki değişken arasında {koyu:bir ilişki (bağımlılık) vardır} denir (örneğin düzenli spor yapanlarda uyku kalitesi yüksek olanların oranı %80 iken, spor yapmayanlarda bu oran %35 ise spor yapma durumu ile uyku kalitesi ilişkilidir). Buna karşılık koşullu göreli sıklıklar her satırda (veya her sütunda) birbirine eşit ya da çok yakın çıkıyorsa (örneğin her iki grupta da %50-%52 civarındaysa), iki kategorik değişken arasında {koyu:ilişki yoktur (değişkenler birbirinden bağımsızdır)} yorumu yapılır."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Dikkat: İlişki Analizinde Sıklık Değil, Koşullu Göreli Sıklık Kullanılır!",
+    "metin": "A şubesinde 20 öğrenciden 10’u, B şubesinde ise 40 öğrenciden 20’si gözlüklü olsun. Sıklıklara (10 ve 20) bakıp “B şubesinde gözlük kullanımı daha yaygındır” demek YANLIŞTIR! Çünkü koşullu göreli sıklıklar A’da 10/20 = %50 ve B’de 20/40 = %50 olup birbirine eşittir; yani şube ile gözlük kullanımı arasında ilişki YOKTUR!"
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Bir lisedeki 120 öğrenciye tercih ettikleri atölye (Robotik / Tasarım) sorulmuş ve şu sonuçlar elde edilmiştir: 50 kız öğrencinin 30’u Robotik, 20’si Tasarım; 70 erkek öğrencinin 42’si Robotik, 28’i Tasarım atölyesini seçmiştir.\na) Kız öğrencilerin Robotik seçme koşullu göreli sıklığını,\nb) Erkek öğrencilerin Robotik seçme koşullu göreli sıklığını bularak cinsiyet ile atölye tercihi arasında ilişki olup olmadığını yorumlayınız.",
+   "cevap": "a) Kızlarda Robotik koşullu göreli sıklığı = 30 / 50 = 0,60 (%60).\nb) Erkeklerde Robotik koşullu göreli sıklığı = 42 / 70 = 0,60 (%60).\nYorum: Hem kızların hem de erkeklerin %60’ı Robotik, %40’ı Tasarım atölyesini seçmiştir. Koşullu göreli sıklıklar her iki cinsiyette de bire bir aynı (%60) olduğu için bu okulda cinsiyet ile atölye tercihi arasında bir ilişki YOKTUR (bağımsızdır)."
+  },
+  {
+   "soru": "Yukarıdaki 120 kişilik ankette: a) 'Robotik atölyesini seçen kız öğrenci' olmanın birleşik (ortak) göreli sıklığı kaçtır? b) 'Robotik atölyesini seçenler arasında kız öğrenci olma' (sütun koşullu) göreli sıklığı kaçtır?",
+   "cevap": "a) Birleşik göreli sıklıkta paydaya genel toplam (N = 120) yazılır: 30 / 120 = 1/4 = 0,25 (%25).\nb) Sütun koşullu göreli sıklıkta paydaya Robotik seçenlerin toplamı (30 kız + 42 erkek = 72) yazılır: 30 / 72 = 5/12."
+  },
+  {
+   "soru": "Aşağıdaki araştırma sorularından hangisi 'iki kategorik değişkenli' bir istatistiksel araştırma sorusudur?\nI. 10. sınıf öğrencilerinin günlük ders çalışma süresi (dakika) ile matematik sınav puanları arasında ilişki var mıdır?\nII. Lise öğrencilerinin okula ulaşım biçimi (yürüyerek / servisle / toplu taşımayla) ile okula geç kalma durumu (evet / hayır) arasında ilişki var mıdır?",
+   "cevap": "I. sorudaki 'çalışma süresi (dk)' ve 'sınav puanı' sayısal (nicel) değişkenlerdir. II. sorudaki 'ulaşım biçimi' ve 'geç kalma durumu (evet/hayır)' ise sınıflandırma bildiren iki KATEGORİK değişkendir; dolayısıyla II. soru iki kategorik değişkenli araştırma sorusudur."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Aşağıdaki değişken çiftlerinden hangisinin her ikisi de 'kategorik (nitel) değişken'dir?",
+   "secenekler": [
+    "Öğrencinin boy uzunluğu (cm) — Ayakkabı numarası",
+    "Hava sıcaklığı (°C) — Günlük dondurma satış adedi",
+    "Kan grubu (A, B, AB, 0) — Göz rengi (Kahverengi, Mavi, Yeşil)",
+    "Aracın hızı (km/sa) — Fren mesafesi (m)",
+    "Aylık gelir (TL) — Elektrik faturası tutarı (TL)"
+   ],
+   "dogru": 2,
+   "aciklama": "Kan grubu ve göz rengi sayısal ölçüm değil, nitel sınıflandırma belirten iki kategorik değişkendir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "250 kişinin katıldığı bir araştırmada katılımcıların yaş grubu (Genç / Yetişkin) ve haber takip kaynağı (Sosyal Medya / Televizyon) incelenmiştir. Ankete katılan 150 gencin 120’si sosyal medyayı, 100 yetişkinin ise 30’u sosyal medyayı tercih etmektedir. Buna göre 'tüm katılımcılar içinde sosyal medyayı tercih eden gençlerin' birleşik (ortak) göreli sıklığı yüzde kaçtır?",
+   "secenekler": [
+    "%30",
+    "%48",
+    "%60",
+    "%80",
+    "%90"
+   ],
+   "dogru": 1,
+   "aciklama": "Birleşik göreli sıklıkta hücre değeri (120) genel toplama (N = 250) bölünür: 120 / 250 = 48 / 100 = %48. (Eğer 'gençlerin yüzde kaçı' diye koşullu sorulsaydı 120/150 = %80 olurdu)."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Yukarıdaki 250 kişilik araştırmada 'Gençlerin sosyal medyayı tercih etme koşullu göreli sıklığı' ile 'Yetişkinlerin sosyal medyayı tercih etme koşullu göreli sıklığı' sırasıyla aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "%48 ve %12",
+    "%80 ve %30",
+    "%60 ve %40",
+    "%75 ve %25",
+    "%50 ve %50"
+   ],
+   "dogru": 1,
+   "aciklama": "Gençlerde koşullu göreli sıklık: 120 / 150 = %80; Yetişkinlerde koşullu göreli sıklık: 30 / 100 = %30’dur. Oranlar (%80 ve %30) çok farklı olduğu için yaş grubu ile haber kaynağı tercihi arasında güçlü bir ilişki vardır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "İki kategorik değişkenli bir veri grubunda her bir ana kategoriyi %100’lük tek bir sütun olarak alıp alt kategorilerin koşullu yüzdelerini aynı sütun üzerinde üst üste dilimler hâlinde gösteren grafik türü aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Çizgi grafiği",
+    "Serpilme (dağılım) diyagramı",
+    "Yığılmış (bölünmüş) sütun grafiği",
+    "Histogram",
+    "Kutu (box-plot) grafiği"
+   ],
+   "dogru": 2,
+   "aciklama": "Alt kategorilerin oransal dağılımını tek bir sütun içinde üst üste gösteren grafiğe 'yığılmış (bölünmüş) sütun grafiği' denir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "İki yönlü bir sıklık tablosunda A ve B kategorik değişkenleri arasında 'hiçbir istatistiksel ilişki olmadığı (bağımsız oldukları)' sonucuna varmak için aşağıdakilerden hangisi gözlemlenmelidir?",
+   "secenekler": [
+    "Toplam veri sayısının 100’den küçük olması",
+    "Satır (veya sütun) koşullu göreli sıklıkların tüm gruplarda birbirine eşit veya çok yakın olması",
+    "Tablodaki tüm hücrelerdeki kişi sayılarının sıfır olması",
+    "Sadece birleşik göreli sıklıkların toplamının %100 olması",
+    "Kümelenmiş sütun grafiğinde tek bir sütun bulunması"
+   ],
+   "dogru": 1,
+   "aciklama": "Koşullu göreli sıklıklar bir kategoriden diğerine geçildiğinde değişmiyorsa (birbirine eşit veya çok yakınsa) iki değişken birbirinden bağımsızdır (ilişki yoktur)."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "İki kategorik değişkenli verilerin analizi ile ilgili aşağıdaki ifadelerin Doğru (D) mu yoksa Yanlış (Y) mı olduğunu belirleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "İki yönlü sıklık tablosunun en sağ sütununda ve en alt satırında yer alan satır/sütun toplamlarına 'marjinal (kenar) sıklıklar' denir.",
+     "dogru": true,
+     "aciklama": "Doğru; tablonun kenarlarındaki toplamlar marjinal sıklıklardır."
+    },
+    {
+     "metin": "Birleşik göreli sıklık hesaplanırken hücredeki değer yalnızca bulunduğu satırın toplamına bölünür.",
+     "dogru": false,
+     "aciklama": "Yanlış; hücre değerinin satır toplamına bölünmesi 'koşullu göreli sıklık'tır. Birleşik göreli sıklıkta paydaya genel toplam (N) yazılır."
+    },
+    {
+     "metin": "Farklı kişi sayısına sahip iki grubu karşılaştırırken ham sıklıklar yerine koşullu göreli sıklıklar (yüzdeler) kullanılmalıdır.",
+     "dogru": true,
+     "aciklama": "Doğru; grup büyüklükleri farklı olduğunda yalnızca yüzdeler (koşullu göreli sıklıklar) adil karşılaştırma sağlar."
+    },
+    {
+     "metin": "Tablodaki tüm hücrelerin birleşik (ortak) göreli sıklıklarının toplamı 1’e (%100’e) eşittir.",
+     "dogru": true,
+     "aciklama": "Doğru; tüm iç hücrelerin toplamı N olduğu için N/N = 1 (%100) eder."
+    },
+    {
+     "metin": "İki kategorik değişkeni görselleştirmek için histogram grafiği kullanılır.",
+     "dogru": false,
+     "aciklama": "Yanlış; histogram sürekli nicel veriler içindir; iki kategorik değişken için kümelenmiş veya yığılmış sütun grafiği kullanılır."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "soru": "İki yönlü sıklık tablosu ve veri analizi kavramlarını tanımlarıyla doğru şekilde eşleştiriniz.",
+   "ciftler": [
+    [
+     "Kategorik (Nitel) Değişken",
+     "Gözlemleri sayısal değer yerine gruplara/sınıflara ayıran değişken"
+    ],
+    [
+     "Marjinal Göreli Sıklık",
+     "Bir satır veya sütun toplamının genel toplama (N) oranı"
+    ],
+    [
+     "Birleşik (Ortak) Göreli Sıklık",
+     "Tablo içindeki bir hücre değerinin genel toplama (N) oranı"
+    ],
+    [
+     "Koşullu Göreli Sıklık",
+     "Bir hücre değerinin yalnızca ait olduğu satır veya sütun toplamına oranı"
+    ],
+    [
+     "Kümelenmiş Sütun Grafiği",
+     "Alt kategorilere ait sütunların her grup için yan yana çizildiği grafik"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun istatistik kavramlarıyla tamamlayınız.",
+   "cumleler": [
+    {
+     "metin": "İki kategorik değişkenin satır ve sütunlar hâlinde çaprazlanarak özetlendiği tabloya ___ yönlü sıklık tablosu denir.",
+     "cevap": "iki"
+    },
+    {
+     "metin": "“Erkek öğrencilerin yüzde kaçı basketbol oynamaktadır?” sorusu bir ___ göreli sıklık sorusudur.",
+     "cevap": "koşullu"
+    },
+    {
+     "metin": "Koşullu göreli sıklıklar gruplar arasında büyük farklılık gösteriyorsa iki kategorik değişken arasında ___ vardır.",
+     "cevap": "ilişki"
+    },
+    {
+     "metin": "Her kategorinin %100’lük tek bir sütun içinde üst üste bölmelerle gösterildiği grafiğe ___ sütun grafiği denir.",
+     "cevap": "yığılmış"
+    },
+    {
+     "metin": "İstatistiksel araştırma sürecinin ilk basamağı araştırma ___ oluşturmaktır.",
+     "cevap": "sorusu"
+    }
+   ],
+   "fazla": [
+    "medyan",
+    "aritmetik"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir hastanede 100 hastaya uygulanan iki farklı tedavi yöntemi (A İlacı / B İlacı) ve iyileşme durumu (İyileşti / İyileşmedi) incelenmiştir: A ilacı kullanan 60 hastanın 48’i iyileşmiş; B ilacı kullanan 40 hastanın ise 20’si iyileşmiştir. Her iki ilaç için 'iyileşme koşullu göreli sıklıklarını' hesaplayarak ilaç türü ile iyileşme durumu arasında ilişki olup olmadığını açıklayınız.",
+   "ipuclari": [
+    "1. A ilacı kullananlarda iyileşme oranını (48/60) ve B ilacı kullananlarda iyileşme oranını (20/40) yüzde olarak bulunuz.",
+    "2. Bulduğunuz iki koşullu yüzdeyi karşılaştırarak hangi ilacın daha etkili olduğunu yorumlayınız."
+   ],
+   "cevap": "• A ilacı kullananlarda iyileşme koşullu göreli sıklığı: 48 / 60 = 4/5 = %80’dir.\n• B ilacı kullananlarda iyileşme koşullu göreli sıklığı: 20 / 40 = 1/2 = %50’dir.\n• Yorum: A ilacı grubunda iyileşme oranı %80 iken B ilacı grubunda %50’de kalmıştır. Koşullu göreli sıklıklar arasında belirgin bir fark (%80 vs %50) olduğu için kullanılan ilaç türü ile iyileşme durumu arasında güçlü bir istatistiksel İLİŞKİ VARDIR ve A ilacı daha etkilidir."
+  }
+ ]
+}

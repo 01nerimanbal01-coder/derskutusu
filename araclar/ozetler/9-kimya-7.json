@@ -1,0 +1,228 @@
+{
+ "ad": "9-kimya-7",
+ "sinif": 9,
+ "ders": "kimya",
+ "ders_adi": "Kimya",
+ "hafta": 7,
+ "tarih": "26-30 Ekim 2026",
+ "yayin_tarihi": "2026-10-28",
+ "unite": "ETKİLEŞİM",
+ "konu": "Atom Orbitalleri ve Elektron Dizilimi: Aufbau, Pauli, Hund Kuralları, Küresel Simetri ve İyon Dizilimleri",
+ "ciktilar": [
+  "Atom orbitallerinin bağıl enerjilerini karşılaştırarak Aufbau prensibi, Pauli dışlama ilkesi ve Hund kuralına göre temel hâl elektron dizilimlerini ve orbital şemalarını yazar.",
+  "Küresel simetri özelliğini (yarı dolu ve tam dolu orbital kararlılığını) açıklar; ₂₄Cr ve ₂₉Cu atomlarının özel temel hâl elektron dizilimlerini yorumlar.",
+  "Tek atomlu iyonların elektron dizilimlerini, izoelektronik tanecikleri ve değerlik elektron sayılarını belirler."
+ ],
+ "giris": "Geçen hafta modern atom teorisinde elektronların bulunma olasılığının yüksek olduğu bölgeleri, yani {koyu:s, p, d, f orbitallerini} ve bunların alt kabuk kapasitelerini tanımıştık. Peki bir atomun sahip olduğu onlarca elektron bu orbitallere rastgele mi yerleşir, yoksa evrensel bir fiziksel düzen mi izler? Bu haftaki dersimizde elektronların orbitallere yerleşmesini yöneten üç temel yasayı ({koyu:Aufbau Prensibi, Pauli Dışlama İlkesi ve Hund Kuralı}), atomlara ekstra kararlılık kazandıran {koyu:küresel simetri} durumunu ve iyonların elektron dizilimlerini derinlemesine öğreneceğiz.",
+ "ozet": [
+  "{koyu:Aufbau (İnşa) Kuralı:} Elektronlar temel hâlde her zaman enerjisi en düşük olan orbitalden başlayarak daha yüksek enerjili orbitallere doğru sırayla yerleşir ({koyu:1s → 2s → 2p → 3s → 3p → 4s → 3d → 4p...}).",
+  "{koyu:Pauli Dışlama İlkesi ve Hund Kuralı:} Bir orbitalde zıt spinli ({koyu:↑↓}) en fazla {koyu:2 elektron} bulunabilir (Pauli). Eş enerjili alt orbitallere (örneğin {koyu:pₓ, pᵧ, p₂}) elektronlar önce {koyu:birer birer ve aynı spinli (↑ ↑ ↑)} olarak yerleşir, daha sonra zıt spinli olarak eşleşir (Hund).",
+  "{koyu:Küresel Simetri:} Atomun elektron dizilimindeki son orbital türünün {koyu:tam dolu (s², p⁶, d¹⁰)} veya {koyu:yarı dolu (s¹, p³, d⁵)} olması durumudur; atoma küresel yük dağılımı ve ekstra kararlılık kazandırır.",
+  "{koyu:Krom (₂₄Cr) ve Bakır (₂₉Cu) Özel Durumu:} Küresel simetri kararlılığına ulaşmak için {koyu:₂₄Cr} atomu {koyu:1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹ 3d⁵}, {koyu:₂₉Cu} atomu ise {koyu:...4s¹ 3d¹⁰} dizilimine sahiptir; bu dizilimler uyarılmış hâl değil {koyu:temel hâldir}!",
+  "{koyu:İyon Dizilimi ve İzoelektronik Tanecikler:} Atom numarası 20’den büyük katyonlarda elektron koparılırken önce {koyu:en dış katmandaki 4s orbitalinden}, sonra {koyu:3d} orbitalinden koparılır. Elektron sayıları ve elektron dizilimleri aynı, proton sayıları farklı taneciklere {koyu:izoelektronik tanecikler} denir."
+ ],
+ "bolumler": [
+  {
+   "baslik": "1. Elektron Dizilimi Kuralları: Aufbau, Pauli İlkesi ve Hund Kuralı",
+   "metin": [
+    "Bir atomun en düşük enerjili ve en kararlı durumuna {koyu:temel hâl} denir. Temel hâldeki bir atomda elektronların orbitallere yerleşimi üç temel kuralla belirlenir: {koyu:1) Aufbau (İnşa) Prensibi:} Almanca ‘inşa etmek’ anlamına gelen bu kurala göre elektronlar önce enerjisi en düşük orbitale yerleşir; bir alt kabuk tam dolmadan bir üst enerjili orbitale elektron geçemez. Orbitallerin enerjisi {koyu:baş kuantum sayısı (n)} ve orbital türüne göre ({koyu:Madelung-Kletchkowski n + ℓ kuralı}) sıralanır: {koyu:1s < 2s < 2p < 3s < 3p < 4s < 3d < 4p}. Dikkat edilirse 4. enerji düzeyindeki {koyu:4s} orbitalinin enerjisi, 3. enerji düzeyindeki {koyu:3d} orbitalinden daha düşüktür; bu yüzden elektronlar önce {koyu:4s} orbitalini doldurur ({koyu:₁₉K: 1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹} ve {koyu:₂₀Ca: ...4s²}), ardından 21. elektrondan itibaren {koyu:3d} orbitallerine yerleşmeye başlar ({koyu:₂₁Sc: [Ar] 4s² 3d¹}).",
+    "{koyu:2) Pauli Dışlama İlkesi:} Bir orbital hangi türden olursa olsun en fazla {koyu:2 elektron} taşıyabilir ve bu iki elektronun kendi ekseni etrafındaki dönme yönleri ({koyu:spinleri}) mutlaka birbirine {koyu:zıt (↑↓)} olmalıdır. Orbital şemasında (kutu diyagramında) bir daire veya kare içine aynı yönlü iki ok ({koyu:↑↑}) çizilmesi Pauli ilkesine aykırıdır. {koyu:3) Hund Kuralı:} Elektronlar eş enerjili orbitallere ({koyu:p}’nin 3 orbitaline veya {koyu:d}’nin 5 orbitaline) yerleşirken birbirini itmeyi en aza indirmek için önce her orbitale {koyu:birer birer ve aynı yönlü (paralel spinli: ↑  ↑  ↑)} olarak yerleşir; tüm eş enerjili orbitaller yarı dolduktan sonra kalan elektronlar zıt spinli olarak eşleşmeye başlar. Örneğin {koyu:₇N (1s² 2s² 2p³)} atomunda {koyu:2p} alt kabuğundaki 3 elektron üç ayrı {koyu:p} orbitaline tek tek ({koyu:2pₓ¹ 2pᵧ¹ 2p₂¹}) yerleşir."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Dikkat: Temel Hâl ile Uyarılmış Hâl Nasıl Ayırt Edilir?",
+    "metin": "Alt enerjili bir orbital tam dolmadan dışarıdan enerji alınarak elektronun daha yüksek enerjili bir orbitale geçmesine UYARILMIŞ HÂL denir (Örn: ₆C için temel hâl 1s² 2s² 2p² iken, 1s² 2s¹ 2p³ dizilimi uyarılmış hâldir). Uyarılmış atom kararsızdır; temel hâle dönerken aldığı enerjiyi ışık (foton) olarak geri yayar!"
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 424\" role=\"img\" aria-label=\"Konu özet şeması\"><text x=\"400\" y=\"32\" font-family=\"sans-serif\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f766e\" text-anchor=\"middle\">ATOM ORBİTALLERİ VE ELEKTRON DİZİLİMİ KURALLARI</text><rect x=\"20\" y=\"56\" width=\"365\" height=\"290\" rx=\"8\" fill=\"#f0fdfa\" stroke=\"#0d9488\" stroke-width=\"1.6\"/><text x=\"202\" y=\"80\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f766e\" text-anchor=\"middle\">1. TEMEL ELEKTRON DİZİLİM İLKELERİ</text><rect x=\"35\" y=\"100\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#0d9488\" stroke-width=\"1.6\"/><text x=\"202\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#0f766e\" text-anchor=\"middle\">Aufbau (İnşa) Kuralı — Düşük Enerjiden Yükseğe</text><text x=\"202\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Elektronlar önce en düşük enerjili orbitale yerleşir: 1s 2s 2p 3s 3p 4s 3d...</text><rect x=\"35\" y=\"150\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#0d9488\" stroke-width=\"1.6\"/><text x=\"202\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#0f766e\" text-anchor=\"middle\">Madelung-Kletchkowski (n + ℓ) Enerji Sıralaması</text><text x=\"202\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">n+ℓ değeri küçük olanın enerjisi düşüktür; eşitse n’si küçük olan düşüktür.</text><rect x=\"35\" y=\"200\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#0d9488\" stroke-width=\"1.6\"/><text x=\"202\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#0f766e\" text-anchor=\"middle\">Pauli Dışlama İlkesi (En Fazla 2 Elektron)</text><text x=\"202\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Bir orbitalde zıt spinli (↑↓) en fazla 2 elektron bulunabilir.</text><rect x=\"35\" y=\"250\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#0d9488\" stroke-width=\"1.6\"/><text x=\"202\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#0f766e\" text-anchor=\"middle\">Hund Kuralı (Eş Enerjili Orbitallere Yerleşim)</text><text x=\"202\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Elektronlar eş enerjili orbitallere önce tek tek aynı yönlü (↑ ↑ ↑), sonra zıt yerleşir.</text><rect x=\"35\" y=\"300\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#0d9488\" stroke-width=\"1.6\"/><text x=\"202\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#0f766e\" text-anchor=\"middle\">Orbital Kapasiteleri (s, p, d, f)</text><text x=\"202\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">s: 1 orb. (2 e⁻) | p: 3 orb. (6 e⁻) | d: 5 orb. (10 e⁻) | f: 7 orb. (14 e⁻).</text><rect x=\"400\" y=\"56\" width=\"380\" height=\"290\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"80\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">2. KÜRESEL SİMETRİ, DEĞERLİK e⁻ VE İYONLAR</text><rect x=\"415\" y=\"100\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Temel Hâl ve Uyarılmış Hâl Ayrımı</text><text x=\"590\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Elektron dışarıdan enerji alıp üst orbitale çıkarsa atom uyarılmış (kararsız) olur.</text><rect x=\"415\" y=\"150\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Küresel Simetri (Yarı Dolu / Tam Dolu Kararlılık)</text><text x=\"590\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Son orbitalin s¹, s², p³, p⁶, d⁵, d¹⁰ ile bitmesi atomu ekstra kararlı yapar.</text><rect x=\"415\" y=\"200\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">₂₄Cr ve ₂₉Cu Özel Küresel Simetri Dizilimi!</text><text x=\"590\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">₂₄Cr: [Ar] 4s¹ 3d⁵ (4s² 3d⁴ değil!)  |  ₂₉Cu: [Ar] 4s¹ 3d¹⁰ (4s² 3d⁹ değil!).</text><rect x=\"415\" y=\"250\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">İyonlarda Elektron Dizilimi ve İzoelektroniklik</text><text x=\"590\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Katyonlarda (n &gt; 20) elektron önce en dış katmandan (4s’den, 3d’den önce!) kopar.</text><rect x=\"415\" y=\"300\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Soygaz Kısa Gösterimi ve Değerlik Elektronları</text><text x=\"590\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">En yüksek baş kuantum (en dış katman) elektronları kimyasal bağı belirler.</text><rect x=\"20\" y=\"360\" width=\"760\" height=\"48\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#0d9488\" stroke-width=\"1.6\"/><text x=\"400\" y=\"380\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0f766e\" text-anchor=\"middle\">ENERJİ SIRASI (AUFBAU): 1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶... (4s orbitali 3d’den önce dolar ve iyonlaşmada önce 4s’den elektron kopar!)</text><text x=\"400\" y=\"398\" font-family=\"sans-serif\" font-size=\"9.8\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">₂₄Cr ve ₂₉Cu atomlarının 4s¹ 3d⁵ ve 4s¹ 3d¹⁰ dizilimleri kendiliğinden gerçekleştiği için UYARILMIŞ HÂL DEĞİL, TEMEL HÂLDİR!</text></svg>"
+  },
+  {
+   "baslik": "2. Küresel Simetri (₂₄Cr ve ₂₉Cu), Değerlik Elektronları ve İyon Dizilimleri",
+   "metin": [
+    "Bir atomun elektron diziliminde yer alan {koyu:en son orbital türünün} {koyu:yarı dolu (s¹, p³, d⁵, f⁷)} veya {koyu:tam dolu (s², p⁶, d¹⁰, f¹⁴)} olması durumunda elektron bulutu çekirdek etrafında her yönde eşit dağılır; bu özelliğe {koyu:küresel simetri} denir. Küresel simetri atoma ekstra kararlılık kazandırır ve elektron koparmayı zorlaştırır. Periyodik tabloda {koyu:Krom (₂₄Cr)} ve {koyu:Bakır (₂₉Cu)} atomları bu kararlılığa ulaşmak için çok özel bir davranış sergiler: Beklenen dizilim {koyu:₂₄Cr için [Ar] 4s² 3d⁴} ve {koyu:₂₉Cu için [Ar] 4s² 3d⁹} iken, {koyu:4s} orbitalindeki bir elektron kendiliğinden {koyu:3d} orbitaline geçer ve gerçek temel hâl dizilimleri {koyu:₂₄Cr: 1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹ 3d⁵} (hem 4s hem 3d yarı dolu!) ve {koyu:₂₉Cu: 1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹ 3d¹⁰} (4s yarı, 3d tam dolu!) olur. Bu geçiş dışarıdan enerji almadan kendiliğinden gerçekleştiği için {koyu:uyarılmış hâl değil, temel hâldir}!",
+    "Bir atomun kimyasal bağ yapma yeteneğini en dış katmanındaki (en büyük baş kuantum sayılı katmandaki ve varsa dolmakta olan {koyu:d} alt kabuğundaki) {koyu:değerlik elektronları} belirler. Nötr bir atom elektron alarak {koyu:anyon (-)} oluşturduğunda yeni elektronlar Aufbau sırasına göre en son orbitale eklenir. Ancak atom elektron vererek {koyu:katyon (+)} oluşturduğunda elektron her zaman {koyu:en dış enerji düzeyinden (baş kuantum sayısı n en büyük olan katmandan)} koparılır! Bu nedenle atom numarası 20’den büyük olan geçiş metallerinde (örneğin {koyu:₂₆Fe: [Ar] 4s² 3d⁶}) elektron koparılırken önce {koyu:4s} orbitalinden, daha sonra gerekirse {koyu:3d} orbitalinden koparılır ({koyu:₂₆Fe²⁺: [Ar] 3d⁶}). Elektron sayıları ve elektron dizilimleri aynı olan farklı element taneciklerine ise {koyu:izoelektronik tanecikler} denir (örneğin {koyu:₈O²⁻, ₉F⁻, ₁₀Ne, ₁₁Na⁺ ve ₁₂Mg²⁺} taneciklerinin hepsi {koyu:1s² 2s² 2p⁶} dizilimine sahiptir)."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Altın Kural: Geçiş Metallerinde (Z > 20) Katyon Dizilimi!",
+    "metin": "Z > 20 olan bir atomdan elektron koparılırken ÖNCE nötr atomun dizilimi yazılır, ardından elektron en yüksek baş kuantum sayılı 4s orbitalinden koparılır!\nÖrnek: ₂₂Ti nötr: [₁₈Ar] 4s² 3d²  --->  ₂₂Ti²⁺ iyonu: [₁₈Ar] 3d² (4s²’deki 2 elektron kopar!)."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Fosfor (₁₅P) atomunun temel hâl elektron dizilimini yazınız; tam dolu orbital sayısını, yarı dolu orbital sayısını, değerlik elektron sayısını ve küresel simetri gösterip göstermediğini belirleyiniz.",
+   "cevap": "1) Temel hâl dizilimi: ₁₅P: 1s² 2s² 2p⁶ 3s² 3p³ (veya [₁₀Ne] 3s² 3p³).\n2) Orbital sayıları: 1s(1) + 2s(1) + 2p(3) + 3s(1) = 6 tane TAM DOLU orbital vardır. Hund kuralına göre 3p³ alt kabuğundaki 3 elektron üç ayrı p orbitaline tek tek yerleştiği için 3 tane YARI DOLU orbital vardır.\n3) En dış katman n = 3 olduğu için değerlik elektron sayısı: 2 + 3 = 5’tir.\n4) Son alt kabuk 3p³ (yarı dolu) ile bittiği için ₁₅P atomu KÜRESEL SİMETRİ gösterir."
+  },
+  {
+   "soru": "Krom (₂₄Cr) nötr atomunun ve ₂₄Cr⁺ katyonunun temel hâl elektron dizilimlerini yazarak karşılaştırınız.",
+   "cevap": "Krom (₂₄Cr) küresel simetri kararlılığı nedeniyle özel temel hâl dizilimine sahiptir:\n• Nötr ₂₄Cr: 1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹ 3d⁵ (1 tane s yarı dolu + 5 tane d yarı dolu = toplam 6 yarı dolu orbital).\n• ₂₄Cr⁺ katyonu oluşurken 1 elektron en dış katman olan 4s¹ orbitalinden kopar: ₂₄Cr⁺: 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁵."
+  },
+  {
+   "soru": "₂₁Sc⁺ katyonu ile ₂₀Ca nötr atomunun elektron sayıları eşit (20 e⁻) olduğu hâlde neden birbirleriyle 'izoelektronik' olmadıklarını elektron dizilimlerini yazarak açıklayınız.",
+   "cevap": "• Nötr ₂₀Ca atomunun (20 e⁻) dizilimi: [₁₈Ar] 4s².\n• Nötr ₂₁Sc atomunun (21 e⁻) dizilimi [₁₈Ar] 4s² 3d¹’dir. ₂₁Sc⁺ katyonu oluşurken 1 elektron en dış katman olan 4s orbitalinden kopar ve ₂₁Sc⁺ (20 e⁻) dizilimi: [₁₈Ar] 4s¹ 3d¹ olur.\nHer iki taneciğin elektron sayısı 20 olsa da elektron dizilimleri ([Ar] 4s² ile [Ar] 4s¹ 3d¹) birbirinden farklı olduğu için İZOELEKTRONİK DEĞİLLERDİR!"
+  }
+ ],
+ "etkinlikler": [
+  {
+   "soru": "Temel hâldeki ₂₃V (Vanadyum) atomunun elektron dizilimi ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "secenekler": [
+    "Elektron dizilimi 1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d³ şeklindedir.",
+    "En yüksek enerjili orbitali 3d orbitalidir.",
+    "En dış katmanı (en büyük baş kuantum sayısı) n = 4’tür.",
+    "Hund kuralına göre 3d alt kabuğunda 3 tane yarı dolu orbitali vardır.",
+    "Küresel simetri özelliği gösterir."
+   ],
+   "aciklama": "₂₃V atomunun dizilimi ...4s² 3d³ ile biter. d alt kabuğu 5 orbitalden oluşur; küresel simetri için d⁵ (yarı dolu) veya d¹⁰ (tam dolu) olması gerekir. d³ ile bittiği için küresel simetri göstermez.",
+   "tur": "coktan",
+   "dogru": 4
+  },
+  {
+   "soru": "Aşağıdaki temel hâl elektron dizilimlerinden hangisi doğrudan Bakır (₂₉Cu) atomuna aittir?",
+   "secenekler": [
+    "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁹",
+    "1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹ 3d¹⁰",
+    "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁷ 4p²",
+    "1s² 2s² 2p⁶ 3s² 3p⁶ 3d¹⁰ 4p¹",
+    "1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹ 3d⁵"
+   ],
+   "aciklama": "Bakır (₂₉Cu) atomu küresel simetri kararlılığına ulaşmak için 4s orbitalindeki bir elektronunu 3d orbitaline aktarır ve temel hâlde 1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹ 3d¹⁰ dizilimine sahip olur.",
+   "tur": "coktan",
+   "dogru": 1
+  },
+  {
+   "soru": "Eş enerjili 2pₓ, 2pᵧ ve 2p₂ orbitallerine 4 elektron yerleştirilirken üç orbitale önce birer elektronun aynı yönlü (↑ ↑ ↑) yerleştirilip 4. elektronun bunlardan birine zıt yönlü (↑↓ ↑ ↑) yerleştirilmesini zorunlu kılan ilke aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Hund Kuralı",
+    "Aufbau Prensibi",
+    "Pauli Dışlama İlkesi",
+    "Heisenberg Belirsizlik İlkesi",
+    "Kütlenin Korunumu Kanunu"
+   ],
+   "aciklama": "Eş enerjili orbitallere elektronların önce birer birer paralel spinli, ardından zıt spinli yerleşmesini açıklayan kural Hund Kuralıdır.",
+   "tur": "coktan",
+   "dogru": 0
+  },
+  {
+   "soru": "Demir (₂₆Fe) atomunun oluşturduğu ₂₆Fe²⁺ katyonunun temel hâl elektron dizilimi aşağıdakilerden hangisidir? (₁₈Ar)",
+   "secenekler": [
+    "[₁₈Ar] 4s² 3d⁴",
+    "[₁₈Ar] 4s¹ 3d⁵",
+    "[₁₈Ar] 3d⁶",
+    "[₁₈Ar] 4s² 3d⁶",
+    "[₁₈Ar] 3d⁸"
+   ],
+   "aciklama": "Nötr ₂₆Fe atomunun dizilimi [₁₈Ar] 4s² 3d⁶ şeklindedir. 2 elektron koparılırken en dış katman olan 4s² orbitalindeki 2 elektron kopar ve [₁₈Ar] 3d⁶ dizilimi elde edilir.",
+   "tur": "coktan",
+   "dogru": 2
+  },
+  {
+   "soru": "Nötr bir X atomunun elektron dizilimi 1s² 2s² 2p⁵ 3s¹ şeklinde verilmiştir. Bu X atomu için aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Temel hâldedir ve atom numarası 10’dur.",
+    "Pauli dışlama ilkesine uyulmamıştır.",
+    "2p alt kabuğu tam dolmadan 3s orbitaline elektron geçtiği için uyarılmış hâldedir.",
+    "Bir katyondur.",
+    "Değerlik elektron sayısı 1’dir."
+   ],
+   "aciklama": "10 elektronlu (₁₀Ne) atomun temel hâli 1s² 2s² 2p⁶’dır. 2p alt kabuğu tam dolmadan bir elektron enerji alarak 3s orbitaline geçtiği için atom uyarılmış hâldedir.",
+   "tur": "coktan",
+   "dogru": 2
+  },
+  {
+   "ifadeler": [
+    {
+     "metin": "Pauli dışlama ilkesine göre bir orbitalde zıt spinli en fazla 2 elektron bulunabilir.",
+     "dogru": true,
+     "aciklama": "4s orbitalinin (n+ℓ = 4+0 = 4) enerjisi 3d orbitalinden (n+ℓ = 3+2 = 5) daha düşüktür; bu yüzden önce 4s dolar."
+    },
+    {
+     "metin": "4s orbitalinin baş kuantum sayısı daha büyük olduğu için enerjisi 3d orbitalinden daha yüksektir.",
+     "dogru": false,
+     "aciklama": "4s orbitalinin (n+ℓ = 4+0 = 4) enerjisi 3d orbitalinden (n+ℓ = 3+2 = 5) daha düşüktür; bu yüzden önce 4s dolar."
+    },
+    {
+     "metin": "₂₄Cr atomunun [Ar] 4s¹ 3d⁵ dizilimi uyarılmış hâl değil, küresel simetrili temel hâldir.",
+     "dogru": true,
+     "aciklama": "4s orbitalinin (n+ℓ = 4+0 = 4) enerjisi 3d orbitalinden (n+ℓ = 3+2 = 5) daha düşüktür; bu yüzden önce 4s dolar."
+    },
+    {
+     "metin": "₁₁Na⁺, ₁₂Mg²⁺ ve ₉F⁻ iyonları birbirleriyle izoelektronik taneciklerdir.",
+     "dogru": true,
+     "aciklama": "4s orbitalinin (n+ℓ = 4+0 = 4) enerjisi 3d orbitalinden (n+ℓ = 3+2 = 5) daha düşüktür; bu yüzden önce 4s dolar."
+    },
+    {
+     "metin": "₇N (Azot) atomunun temel hâl elektron diziliminde 3 tane yarı dolu orbitali vardır.",
+     "dogru": true,
+     "aciklama": "4s orbitalinin (n+ℓ = 4+0 = 4) enerjisi 3d orbitalinden (n+ℓ = 3+2 = 5) daha düşüktür; bu yüzden önce 4s dolar."
+    }
+   ],
+   "tur": "dy",
+   "yonerge": "Atom orbitalleri ve elektron dizilimi ile ilgili aşağıdaki ifadelerin Doğru (D) mu yoksa Yanlış (Y) mı olduğunu belirleyiniz."
+  },
+  {
+   "soru": "Aşağıdaki atom ve iyonları temel hâl elektron dizilimlerinin son terimleriyle eşleştiriniz.",
+   "ciftler": [
+    [
+     "₈O (Oksijen — Nötr)",
+     "... 2s² 2p⁴"
+    ],
+    [
+     "₂₀Ca (Kalsiyum — Nötr)",
+     "... 3p⁶ 4s²"
+    ],
+    [
+     "₂₄Cr (Krom — Nötr)",
+     "... 3p⁶ 4s¹ 3d⁵"
+    ],
+    [
+     "₂₉Cu (Bakır — Nötr)",
+     "... 3p⁶ 4s¹ 3d¹⁰"
+    ],
+    [
+     "₂₂Ti²⁺ (Titanyum +2 Katyonu)",
+     "... 3s² 3p⁶ 3d² (4s’den 2 e⁻ kopmuş)"
+    ]
+   ],
+   "tur": "eslestir"
+  },
+  {
+   "cumleler": [
+    {
+     "metin": "Elektronların en düşük enerjili orbitalden başlayarak artan enerji sırasına göre yerleşmesi kuralına ___ prensibi denir.",
+     "cevap": "Aufbau"
+    },
+    {
+     "metin": "Bir atomun elektron dizilimindeki son orbital türünün yarı dolu veya tam dolu olması durumuna ___ simetri denir.",
+     "cevap": "küresel"
+    },
+    {
+     "metin": "Bir orbitalde bulunan iki elektronun dönme yönlerinin birbirine zıt olmasını şart koşan ilke ___ dışlama ilkesidir.",
+     "cevap": "Pauli"
+    },
+    {
+     "metin": "Elektron sayıları ve elektron dizilimleri aynı, proton sayıları farklı olan taneciklere ___ tanecikler denir.",
+     "cevap": "izoelektronik"
+    },
+    {
+     "metin": "Temel hâldeki bir atomun dışarıdan enerji alarak elektronlarından birinin daha üst enerjili orbitale geçmesine ___ hâl denir.",
+     "cevap": "uyarılmış"
+    }
+   ],
+   "fazla": [
+    "izotop",
+    "radyoaktif"
+   ],
+   "tur": "bosluk",
+   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kimya kavramlarıyla tamamlayınız."
+  },
+  {
+   "soru": "Temel hâldeki Kükürt (₁₆S) atomu ile ₁₆S²⁻ anyonunun elektron dizilimlerini yazınız; hangisinin küresel simetri özelliğine sahip olduğunu gerekçesiyle açıklayınız.",
+   "ipuclari": [
+    "1. Nötr ₁₆S atomunun 16 elektronunu ve ₁₆S²⁻ anyonunun 18 elektronunu Aufbau sırasına göre yerleştiriniz.",
+    "2. Son alt kabuk olan 3p orbitalinin doluluk durumunu (3p⁴ ve 3p⁶) karşılaştırınız."
+   ],
+   "cevap": "• Nötr ₁₆S (16 e⁻) elektron dizilimi: 1s² 2s² 2p⁶ 3s² 3p⁴. Son alt kabuk 3p⁴ ile bittiği için (ne yarı dolu p³ ne de tam dolu p⁶ olduğundan) nötr kükürt atomu küresel simetri GÖSTERMEZ.\n• ₁₆S²⁻ anyonu (18 e⁻) elektron dizilimi: 1s² 2s² 2p⁶ 3s² 3p⁶. Dışarıdan aldığı 2 elektronla son alt kabuğu olan 3p⁶ tam dolu hâle ulaşmıştır; bu nedenle ₁₆S²⁻ iyonu KÜRESEL SİMETRİ özelliğine sahiptir ve Argon (₁₈Ar) soygazı ile izoelektroniktir.",
+   "tur": "ogretici"
+  }
+ ]
+}

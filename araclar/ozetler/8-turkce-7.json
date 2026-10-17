@@ -1,416 +1,228 @@
 {
+ "ad": "8-turkce-7",
  "sinif": 8,
  "ders": "turkce",
+ "ders_adi": "Türkçe",
  "hafta": 7,
  "tarih": "26-30 Ekim 2026",
- "yayin_tarihi": "2026-10-13",
+ "yayin_tarihi": "2026-10-28",
  "unite": "Millî Mücadele ve Atatürk",
- "konu": "Memleketin Hayatı Söz Konusu: Sözsüz Mesajlar, Hazırlıklı Konuşma, Not Alma ve Cümlenin Ögeleri",
+ "konu": "Memleketin Hayatı Söz Konusu: Cümlenin Yardımcı Ögeleri (Nesne, Yer Tamlayıcısı, Zarf Tamlayıcısı), Ara Söz ve Vurgu",
  "ciktilar": [
-  "T.8.1.13. Konuşmacının sözlü olmayan mesajlarını kavrar.",
-  "T.8.2.1–2. Hazırlıklı ve hazırlıksız konuşma yapar.",
-  "T.8.3.1, 5. Noktalama işaretlerine dikkat ederek okur; bilmediği sözcüklerin anlamını bağlamdan tahmin eder.",
-  "T.8.3.14, 19, 30, 31. Metinle ilgili soruları cevaplar, başlık belirler, bilgi kaynaklarını kullanır ve güvenilirliğini sorgular.",
-  "T.8.4.4, 13, 17. Yazma stratejilerini uygular; başlık belirler; yazdıklarını paylaşır.",
-  "T.8.4.18. Cümlenin ögelerini ayırt eder."
+  "Millî Mücadele temalı 'Memleketin Hayatı Söz Konusu' metninin ana fikrini, tarihsel bağlamını ve dil özelliklerini çözümler.",
+  "Cümlenin yardımcı ögelerini (belirtili/belirtisiz nesne, yer tamlayıcısı ve zarf tamlayıcısı) doğru soru sırasıyla (YÖN kuralı) belirler.",
+  "Cümlede vurgunun yerini, ara sözleri ve cümle dışı unsurları ayırt eder."
  ],
- "giris": "Millî Mücadele ve Atatürk temasında önceki iki hafta “Bu Vatan Kimin?” ve “215 Okkalık Mermi Nasıl Kaldırıldı?” metinleriyle çalıştın; söz sanatlarını, medya metinlerini, not alma ve özet çıkarmayı, cümlenin ögelerini öğrendin. Bu hafta sıra “Memleketin Hayatı Söz Konusu” metninde. Cumhuriyet Bayramı haftasında konuşmacının beden diliyle ve ses tonuyla verdiği sözsüz mesajları okuyacak, törene yakışır bir hazırlıklı konuşma kuracak, bilmediğin sözcükleri bağlamdan tahmin edecek, kaynakların güvenilirliğini sorgulayacak, cümlenin ögelerini ve tarihlerle özel adların yazımını pekiştireceksin.",
+ "giris": "Geçen hafta cümlenin temel ögeleri olan {koyu:yüklem} ve {koyu:özneyi} öğrenmiştik. Bu hafta {koyu:Millî Mücadele ve Atatürk} temamızda Mustafa Kemal Paşa’nın vatan savunmasındaki kararlılığını anlatan {koyu:“Memleketin Hayatı Söz Konusu”} metni eşliğinde cümlenin yardımcı ögelerini ({koyu:nesne, yer tamlayıcısı, zarf tamlayıcısı}), {koyu:ara sözleri} ve LGS’de her yıl sorulan {koyu:cümlede vurgu} konusunu tüm püf noktalarıyla tamamlıyoruz!",
+ "ozet": [
+  "{koyu:Öge Bulma Sırası (YÖN Kuralı):} Önce {koyu:1) Yüklem}, sonra {koyu:2) Özne}, ardından {koyu:3) Nesne} ve en son {koyu:4) Tamlayıcılar} bulunur! Özne bulunmadan nesne aranmaz.",
+  "{koyu:Nesne (Düz Tümleç):} Öznenin yaptığı işten etkilenen ögedir. {koyu:Belirtili Nesne} (*-ı/-i/-u/-ü* eki alır -> *Neyi? Kimi? Nereyi?*), {koyu:Belirtisiz Nesne} (ek almaz -> *Ne?*).",
+  "{koyu:Yer Tamlayıcısı (Dolaylı Tümleç):} Yüklemi yönelme ({koyu:-e}), bulunma ({koyu:-de}) ve ayrılma ({koyu:-den}) ekleriyle tamamlar (*Kime, kimde, kimden / Neye, nerede, nereden?*).",
+  "{koyu:Zarf Tamlayıcısı:} Yüklemi zaman, durum, miktar, sebep, vasıta ve yön bakımından tamamlar (*Ne zaman, nasıl, ne kadar, niçin, neyle, kimle, nereye?*).",
+  "{koyu:Cümlede Vurgu:} Fiil cümlelerinde vurgu {koyu:yüklemden hemen önceki ögededir}; isim cümlelerinde ise {koyu:yüklemin kendisindedir}."
+ ],
  "bolumler": [
   {
-   "baslik": "Konuşmacının sözsüz mesajlarını oku",
+   "baslik": "1. Cümlenin Yardımcı Ögeleri: Nesne, Yer Tamlayıcısı ve Zarf Tamlayıcısı",
    "metin": [
-    "Bir konuşmacı yalnız sözcükleriyle konuşmaz. Duruşu, el kol hareketleri (jestleri), yüz ifadeleri (mimikleri), göz teması, ses tonu, konuşma hızı ve susmaları da dinleyene bir şey söyler. Bunlara sözlü olmayan mesaj denir. Bu hafta metni dinlerken ya da bir konuşmayı izlerken yalnız söylenene değil, nasıl söylendiğine de dikkat edeceksin.",
-    "Şöyle düşün: Cumhuriyet Bayramı töreninde arkadaşın “Bu bayrak, bu topraklar hepimize emanet.” derken sesini alçaltıp yavaşlıyor, bir an susuyor ve dinleyenlere bakıyor. Sözcükler aynı kalsa da bu duraklama ve bakış, söylenenin önemli olduğunu ve konuşmacının duygulandığını gösterir. Aynı cümleyi kâğıda bakarak, hızlı hızlı ve düz bir sesle okusaydı mesaj zayıflardı.",
-    "Sözsüz mesajları yorumlarken üç soru sor: Konuşmacının bedeni ve sesi sözleriyle uyumlu mu? Hangi bölümde ton değişti, ne vurgulandı? Dinleyenle göz teması kurdu mu? Söz ile beden dili çelişirse (gülümseyerek “Çok üzgünüm.” demek gibi) dinleyen genellikle beden diline inanır. Bu yüzden izlediğin bir konuşmayı değerlendirirken sözsüz mesajları da not al; değerlendirmeni “Ne dedi?” ve “Nasıl dedi?” sorularının ikisine de dayandır."
-   ],
-   "kutu": {
-    "tur": "tanim",
-    "baslik": "Sözlü olmayan mesaj",
-    "metin": "Konuşmacının sözcükleri dışında jest, mimik, duruş, göz teması, ses tonu, hız ve susma gibi yollarla ilettiği anlamdır."
-   },
-   "tablo": {
-    "basliklar": [
-     "Sözsüz mesaj",
-     "Dinleyene ne söyleyebilir?"
-    ],
-    "satirlar": [
-     [
-      "Sesin alçalıp yavaşlaması",
-      "Önemli ya da duygulu bir bölüm geldi."
-     ],
-     [
-      "Kısa bir susma",
-      "Söylenenin üzerinde düşünmeni istiyor."
-     ],
-     [
-      "Göz teması",
-      "Dinleyene güveniyor, ona seslendiğini hissettiriyor."
-     ],
-     [
-      "Dik duruş ve açık eller",
-      "Konuya hâkim, kendinden emin."
-     ],
-     [
-      "Yere bakma, eller cepte",
-      "Heyecanlı ya da hazırlıksız; mesaj zayıflıyor."
-     ],
-     [
-      "Bir sözcüğü yüksek sesle söyleme",
-      "O sözcük vurgulanıyor; ana düşünceyle ilgili."
-     ]
-    ]
-   }
-  },
-  {
-   "baslik": "Hazırlıklı konuşmanı adım adım kur",
-   "metin": [
-    "Hazırlıklı konuşma, önceden planlanmış ve prova edilmiş konuşmadır; beş adımda kurulur. Birinci adım konu seçimi: Temaya uygun, sınırlı bir konu seç. “Millî Mücadele” çok geniştir; “Millî Mücadele’de kağnılarla cephane taşıyan kadınlar” ya da “23 Nisan 1920: Meclisin açılışı” gibi daraltılmış bir konu beş dakikada daha iyi anlatılır. İkinci adım araştırma: Güvenilir kaynaklardan bilgi topla, aldığın her bilginin yanına kaynağını yaz.",
-    "Üçüncü adım plan: Giriş bölümünde dinleyenin ilgisini çeken bir soru ya da tarih ver, gelişmede düşüncelerini sırayla ve gerekçeleriyle sun, sonuçta ana düşünceni bir cümleyle yinele. Dördüncü adım görsel-işitsel destek: Bir harita, dönemin bir fotoğrafı, kısa bir ses kaydı ya da birkaç slayt konuşmanı güçlendirir; ama slaytlara uzun paragraflar yazıp okuma. Slayt seni değil, sen slaytı yönet. Beşinci adım prova: Konuşmayı süre tutarak en az iki kez sesli prova et; ses tonunu, göz temasını ve duruşunu da prova et. Birinci bölümde okumayı öğrendiğin sözsüz mesajlar, bu kez senin elindedir.",
-    "Hazırlıksız konuşmada ise konu sana o anda verilir; örneğin “Cumhuriyet senin için ne anlama geliyor?” Bir dakika düşün, kafanda üçlü bir iskelet kur: bir ana düşünce, iki gerekçe ya da örnek, bir kapanış cümlesi. Hazırlıksız konuşmada da nezaket kurallarına uyar, konudan sapmaz, “şey, yani, hani” gibi dolgu sözlerinden kaçınırsın. Hazırlıklı konuşmanı sınıfta sempozyum, panel ya da forum biçiminde sunabilirsin: Panelde birkaç konuşmacı aynı konuyu farklı yönlerden anlatır, forumda dinleyiciler de söz alır."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Prova süreyi gösterir",
-    "metin": "Prova yaparken süre tut: Beş dakikalık konuşman üç dakikada bitiyorsa örnek ekle, sekiz dakikayı aşıyorsa ayrıntı çıkar."
-   },
-   "tablo": {
-    "basliklar": [
-     "Adım",
-     "Ne yaparsın?",
-     "Kendine soracağın soru"
-    ],
-    "satirlar": [
-     [
-      "1. Konu seçimi",
-      "Temaya uygun, dar bir konu belirlersin.",
-      "Bu konuyu beş dakikada anlatabilir miyim?"
-     ],
-     [
-      "2. Araştırma",
-      "Güvenilir kaynaklardan bilgi toplar, kaynağı not edersin.",
-      "Bu bilgiyi nereden aldım, doğruladım mı?"
-     ],
-     [
-      "3. Plan",
-      "Giriş, gelişme ve sonuç bölümlerini maddelersin.",
-      "Düşüncelerim mantıklı bir sırada mı?"
-     ],
-     [
-      "4. Görsel-işitsel destek",
-      "Harita, fotoğraf, ses kaydı ya da slayt hazırlarsın.",
-      "Bu görsel anlattığımı somutlaştırıyor mu?"
-     ],
-     [
-      "5. Prova",
-      "Süre tutarak sesli prova yaparsın.",
-      "Sesim, duruşum ve bakışım sözlerimle uyumlu mu?"
-     ]
-    ]
-   }
-  },
-  {
-   "baslik": "Noktalamaya göre oku, anlamı bağlamdan tahmin et",
-   "metin": [
-    "Sesli okurken noktalama işaretleri sana nasıl okuyacağını söyler: Noktada sesini düşürüp durursun, virgülde kısa soluk alırsın, soru işaretinde ses yükselir, ünlem işaretinde duygu ya da seslenme vurgulanır, üç noktada sesi askıda bırakırsın, tırnak içindeki sözleri konuşanın ağzından okursun. Başlığı bir cümle gibi okuyalım: “Memleketin hayatı söz konusu!” ünlemle, “Memleketin hayatı mı söz konusu?” soru tonuyla okunur; işaret değişince anlam da değişir. Sessiz okurken de bu işaretler anlam birimlerini ayırmana yardım eder.",
-    "Metinde bilmediğin bir sözcükle karşılaştığında hemen sözlüğe koşma; önce bağlama bak. Şu cümleyi oku: “Düşman yurdu işgal edince köylüsüyle kentlisiyle herkes seferber oldu; kimi cepheye koştu, kimi kağnısıyla cephane taşıdı.” “Seferber olmak” sözünü bilmesen de noktalı virgülden sonraki bölüm herkesin harekete geçtiğini, bir işe koyulduğunu gösteriyor. Tahminin: “bir amaç için harekete geçmek”. Sonra sözlükten doğrularsın.",
-    "Tahmin için dört ipucu kullan: Sözcüğün önünde ya da arkasında bir açıklama var mı (“yani”, “bir başka deyişle”)? Aynı cümlede eş ya da zıt anlamlı bir sözcük var mı? Örnekler sıralanmış mı? Sözcük hangi türde: isim mi, fiil mi, sıfat mı? Tahminini cümleye koyup sesli oku; anlam akıyorsa tahminin güçlüdür. Doğruladığın her sözcüğü defterinin arkasındaki kendi sözlüğüne anlamı ve örnek cümlesiyle ekle; deyim ve atasözleri için deyimler ve atasözleri sözlüğüne bak."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Tahmin et, sonra doğrula",
-    "metin": "Bağlamdan tahmin ettiğin anlamı sözlükle doğrulamadan özetinde ya da sunumunda kullanma."
-   }
-  },
-  {
-   "baslik": "Soruları yanıtla, başlık belirle, kaynağı sorgula",
-   "metin": [
-    "Metinle ilgili sorular iki türlüdür. Metin içi sorularda cevap satırların arasındadır: Kim, nerede, ne yapmış, neden böyle davranmış? Cevabı verirken metindeki ilgili yeri gösterebilmelisin. Metin dışı sorularda ise metindeki bilgiyi kendi bilgin ve yaşantınla birleştirirsin: “Sen o kişinin yerinde olsaydın ne yapardın?” ya da “Bu olay bugün bize ne öğretiyor?” gibi. Bu sorulara verdiğin cevapta görüşünü gerekçesiyle söylersin.",
-    "Başlık, metnin konusunu ya da ana düşüncesini en kısa yoldan veren ifadedir. Okumadan önce “Memleketin Hayatı Söz Konusu” başlığının sende hangi beklentiyi uyandırdığını düşün; okuduktan sonra metne kendi başlığını öner ve iki başlığı karşılaştır: Seninki konuyu mu, ana düşünceyi mi yansıtıyor? Aynı ölçüt kendi yazdığın metinler için de geçerlidir: Başlık içerikle uyumlu, kısa ve merak uyandırıcı olmalıdır.",
-    "Konuşman ya da yazın için araştırma yaparken her kaynağa güvenme. Yazarı ve tarihi belli olmayan bir blog, kişisel bir internet sayfası ya da sosyal medya paylaşımı yanlış ya da abartılı bilgi içerebilir. Bilimsel çalışmalarda ağırlıklı olarak “edu” (üniversite) ve “gov” (devlet kurumu) uzantılı siteler kullanılır; ülkemizde bu adresler “edu.tr” ve “gov.tr” ile biter. Bir kaynağı dört soruyla sına: Yazarı kim ve konunun uzmanı mı? Ne zaman yazılmış? Kaynak gösteriyor mu? Verdiği bilgi başka güvenilir bir kaynakla uyuşuyor mu?"
+    "Yüklem ve özneyi bulduktan sonra cümleyi tamamlayan {koyu:yardımcı ögeler} üç başlıkta incelenir:\n{koyu:1. Nesne (Düz Tümleç):} Cümlede öznenin yaptığı işten etkilenen ögedir (yalnızca geçişli fiil cümlelerinde bulunur):\n• {koyu:Belirtili Nesne:} Belirtme hâl ekini ({koyu:-ı / -i / -u / -ü}) alır; yükleme sorulan {koyu:“Neyi? Kimi? Nereyi?”} sorularına cevap verir:\n  - *“Türk milleti {koyu:bağımsızlığını} canı pahasına korudu.”* (Neyi korudu? -> *bağımsızlığını*).\n• {koyu:Belirtisiz Nesne:} Hâl eki almaz; {koyu:özne bulunduktan sonra} yükleme sorulan {koyu:“Ne?”} sorusuna cevap verir:\n  - *“Mustafa Kemal Paşa cephedeki komutanlara {koyu:telgraf} gönderdi.”* (Gönderen kim? *Mustafa Kemal Paşa [Özne]* | Ne gönderdi? -> *telgraf [Belirtisiz Nesne]*).",
+    "{koyu:2. Yer Tamlayıcısı (Dolaylı Tümleç):} Mutlaka yönelme ({koyu:-e/-a}), bulunma ({koyu:-de/-da/-te/-ta}) veya ayrılma ({koyu:-den/-dan/-ten/-tan}) hâl eklerinden birini alır! Yükleme sorulan {koyu:“Kime, kimde, kimden / Neye, neyde, neyden / Nereye, nerede, nereden?”} sorularına cevap verir:\n  - *“Ordumuz {koyu:Sakarya Meydanı’nda} {koyu:düşmana} geçit vermedi.”*\n{koyu:3. Zarf Tamlayıcısı (Zarf Tümleci):} Yüklemi durum, zaman, miktar, sebep, araç ve yön bakımından tamamlar; {koyu:“Nasıl, ne zaman, ne kadar, niçin/neden, neyle, kiminle, nereye (eksiz)?”} sorularına cevap verir:\n  - *“Mehmetçik {koyu:dün gece} cepheyi {koyu:kahramanca} savundu.”* (*dün gece* ve *kahramanca* -> Zarf Tamlayıcısı)."
    ],
    "kutu": {
     "tur": "dikkat",
-    "baslik": "Tek kaynağa güvenme",
-    "metin": "Bir tarih ya da sayı tek kaynakta geçiyorsa ikinci bir güvenilir kaynaktan doğrulamadan sunumuna koyma."
+    "baslik": "LGS’nin En Büyük 2 Tuzağı: 'Yön Sözcükleri' ve '-de/-den Alan Zaman/Durum'!",
+    "metin": "1. {koyu:İçeri, dışarı, ileri, geri, aşağı, yukarı} sözcükleri {koyu:yalın hâldeyse Zarf Tamlayıcısıdır} (*“Askerler {koyu:içeri} girdi”*); ancak {koyu:-e/-de/-den eki alırsa Yer Tamlayıcısı olur} (*“Askerler {koyu:içeriye} girdi”*)!\n2. {koyu:“Akşamda, kıştan, ayakta, bir çırpıda”} gibi sözcükler *-de/-den* eki alsa bile yer değil {koyu:zaman veya durum} bildirdiği için (*Ne zaman? Nasıl?*) {koyu:Zarf Tamlayıcısıdır}!"
    },
-   "tablo": {
-    "basliklar": [
-     "Kaynak",
-     "Güvenilirlik belirtisi",
-     "Ne yaparsın?"
-    ],
-    "satirlar": [
-     [
-      "Devlet kurumunun gov.tr sayfası",
-      "Kurum adı, tarih ve belge var.",
-      "Kullanırsın; kaynağı not edersin."
-     ],
-     [
-      "Üniversitenin edu.tr sayfası",
-      "Yazar ve alanı belli, kaynakça var.",
-      "Kullanırsın; alıntıyı kaynağıyla verirsin."
-     ],
-     [
-      "Yazarı belirsiz blog",
-      "Tarih yok, kaynak gösterilmemiş.",
-      "Başka kaynakla doğrulamadan kullanmazsın."
-     ],
-     [
-      "Sosyal medya paylaşımı",
-      "Kim yazdığı ve nereden aldığı belirsiz.",
-      "Yalnız ipucu olarak alır, asıl kaynağı ararsın."
-     ]
-    ]
-   }
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 424\" role=\"img\" aria-label=\"Konu özet şeması\"><text x=\"400\" y=\"32\" font-family=\"sans-serif\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">CÜMLENİN ÖGELERİ: YARDIMCI ÖGELER (NESNE, TAMLAYICILAR) VE VURGU</text><rect x=\"20\" y=\"56\" width=\"365\" height=\"290\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"80\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. YARDIMCI ÖGELER VE SORULARI</text><rect x=\"35\" y=\"100\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. Belirtili Nesne (Yükleme: Neyi? / Kimi? / Nereyi?)</text><text x=\"202\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Belirtme hâl eki (-ı/-i/-u/-ü) alır: &quot;Vatan-ı koruduk.&quot;</text><rect x=\"35\" y=\"150\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">2. Belirtisiz Nesne (Özneden Sonra: Ne?)</text><text x=\"202\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Ek almaz: &quot;Atatürk cepheden mektup yazdı.&quot; (Ne yazdı? -&gt; mektup).</text><rect x=\"35\" y=\"200\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">3. Yer Tamlayıcısı / Dolaylı Tümleç (-e / -de / -den)</text><text x=\"202\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Kime, kimde, kimden / Neye, nerede, nereden? (Mutlaka -e/-de/-den!).</text><rect x=\"35\" y=\"250\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">4. Zarf Tamlayıcısı (Zaman, Durum, Miktar, Yön)</text><text x=\"202\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Nasıl, ne zaman, ne kadar, niçin, neyle, kimle, nereye (eksiz)?</text><rect x=\"35\" y=\"300\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Öge Bulma Sırası (YÖN Kuralı!)</text><text x=\"202\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Önce 1) YÜKLEM -&gt; 2) ÖZNE -&gt; 3) NESNE -&gt; 4) TAMLAYICILAR!</text><rect x=\"400\" y=\"56\" width=\"380\" height=\"290\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"80\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">2. CÜMLEDE VURGU, ARA SÖZ VE LGS TUZAKLARI</text><rect x=\"415\" y=\"100\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Yön-Yer Sözcükleri Tuzağı (içeri, dışarı, ileri, geri...)</text><text x=\"590\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Yalın hâldeyse ZARF (&quot;içeri girdi&quot;); -e/-de/-den alırsa YER TAMLAYICISI!</text><rect x=\"415\" y=\"150\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Fiil Cümlelerinde Vurgu Kuralı</text><text x=\"590\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Yüklemden HEMEN ÖNCEKİ öge vurgulanır! (Yüklem baştaysa yüklemde).</text><rect x=\"415\" y=\"200\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">İsim Cümlelerinde Vurgu Kuralı</text><text x=\"590\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Yüklemi isim olan cümlelerde vurgu YÜKLEMİN KENDİSİNDEDİR!</text><rect x=\"415\" y=\"250\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">&quot;mi&quot; Soru Eki ve &quot;de/da&quot; Bağlacında Vurgu</text><text x=\"590\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">&quot;mi&quot; ve &quot;de/da&quot; kendisinden ÖNCEKİ ögeye vurgu kazandırır.</text><rect x=\"415\" y=\"300\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Ara Söz ve Cümle Dışı Unsur (CDU)</text><text x=\"590\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">İki virgül/kısa çizgi arası açıklama = Ara söz; Bağlaç/Ünlem = CDU.</text><rect x=\"20\" y=\"360\" width=\"760\" height=\"48\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"400\" y=\"380\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">ALTIN KURAL: Tamlamalar, deyimler, birleşik fiiller ve fiilimsi grupları ÖGELER BULUNURKEN ASLA BÖLÜNMEZ!</text><text x=\"400\" y=\"398\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">&quot;İçeri girdi&quot; -&gt; Zarf Tamlayıcısı (Nereye? - eksiz) | &quot;İçeriye girdi&quot; -&gt; Yer Tamlayıcısı (Nereye? - &quot;-e&quot; yönelme ekli)!</text></svg>"
   },
   {
-   "baslik": "Not al, özet çıkar, başlığını koy, paylaş",
+   "baslik": "2. Cümlede Vurgu, Ara Söz ve Cümle Dışı Unsur",
    "metin": [
-    "Not alma, dinlerken ya da okurken önemli bilgiyi kısa yoldan kaydetmektir. Cümleleri aynen yazmaya çalışırsan konuşmanın gerisinde kalırsın; anahtar sözcükleri, tarihleri, adları ve sayıları yaz. Kendi kısaltmalarını kullan: “TBMM”, “MK Paşa”, sonuç için ok işareti, doğrulanacak bilgi için soru işareti. Notlarını başlıklar altında, madde madde ve boşluk bırakarak tut; sonra eklemek istediklerine yer kalsın. Not alırken kaynağı ve sayfayı da yaz; sunumunda ya da yazında bilgiyi nereden aldığını söyleyebilmelisin.",
-    "Özet çıkarmak, notlarını metnin ana çizgisine göre kendi cümlelerinle birleştirmektir. Önce metnin konusunu bir cümleyle söyle, sonra önemli bilgileri metindeki sırayla aktar, ayrıntıları ve kendi yorumunu dışarıda bırak. Özetin uzunluğu metnin beşte birini geçmemeli. Bu hafta kelime ve kavram havuzundan yazmayı da dene: “bağımsızlık, meclis, egemenlik, bayrak, 29 Ekim” gibi sözcüklerden bir havuz oluştur; en az dördünü kullanan bir paragraf yaz. Bir metinden hareketle yazarken de okuduğun metnin bir cümlesini çıkış noktası alırsın.",
-    "Yazını bitirince içeriğe uygun bir başlık koy; başlık, paragrafta anlattığını karşılamalı. Sonra yazını paylaş: Sınıf ya da okul panosuna as, Cumhuriyet Bayramı etkinliğinde oku, okulun şiir ve kompozisyon yarışmalarına katıl. Sosyal medyada paylaşacaksan ailenden izin al, kişisel bilgini yazma ve alıntı yaptığın kaynağı belirt. Paylaşmak, yazının okunmasını sağlar; okunan yazı için aldığın geri bildirim bir sonraki yazını geliştirir."
+    "{koyu:A) Cümlede Vurgu Nerede Bulunur?}\n1. {koyu:Fiil Cümlelerinde:} Vurgu, yüklemden {koyu:hemen önceki ögededir}:\n  - *“Atatürk Samsun’a {koyu:19 Mayıs 1919’da} çıktı.”* -> Vurgu: {koyu:Zarf Tamlayıcısında}.\n  - *“19 Mayıs 1919’da Atatürk {koyu:Samsun’a} çıktı.”* -> Vurgu: {koyu:Yer Tamlayıcısında}.\n  - Yüklem cümlenin {koyu:en başındaysa} vurgu {koyu:yüklemin kendisindedir}.\n2. {koyu:İsim Cümlelerinde:} Yüklem sonda da olsa başta da olsa vurgu daima {koyu:yüklemin kendisindedir} (*“En büyük güç {koyu:milletin iradesidir}.”*).\n3. {koyu:Soru ve Bağlaçlı Cümlelerde:} {koyu:“mi”} soru eki ve {koyu:“de/da”} bağlacı hangi ögeden sonra gelmişse vurgu {koyu:o ögededir}. Soru sözcükleri (*kim, ne zaman, nerede*) cümlede kendi başlarına vurguludur.",
+    "{koyu:B) Ara Söz ve Cümle Dışı Unsur (CDU):}\n• {koyu:Ara Söz:} Herhangi bir ögenin açıklayıcısı olarak {koyu:iki virgül (, ... ,)} veya {koyu:iki kısa çizgi (- ... -)} arasında söylenen sözdür; açıkladığı ögenin içinde kabul edilir:\n  - *“Doğduğum şehri, {koyu:Erzurum’u}, çok özledim.”* (*Erzurum’u* -> Belirtili nesnenin ara sözü).\n• {koyu:Cümle Dışı Unsur (CDU):} Cümlenin hiçbir ögesi olmayan {koyu:bağlaçlar, ünlemler, hitaplar} ve bir ögeyi açıklamayan {koyu:ara cümlelerdir} (*“{koyu:Ey Türk gençliği!} Birinci vazifen...”* -> Hitap = CDU)."
    ],
    "kutu": {
     "tur": "ipucu",
-    "baslik": "Notu aynı gün oku",
-    "metin": "Aldığın notu aynı gün yeniden okuyup eksik sözcükleri tamamla; bir hafta sonra kısaltmaların ne anlama geldiğini unutabilirsin."
-   }
-  },
-  {
-   "baslik": "Cümlenin ögelerini bul",
-   "metin": [
-    "Cümlenin ögeleri yüklem, özne, nesne, yer tamlayıcısı ve zarf tamlayıcısıdır. Ögeleri bulmaya her zaman yüklemden başlarsın; çünkü öteki ögeler yükleme sorulan sorularla bulunur. Yüklem, iş, oluş ya da durum bildiren çekimli fiildir ya da ek fiille yüklem olmuş isimdir. Özneyi yükleme “kim, ne” diye sorarak bulursun. Nesneyi “neyi, kimi” (belirtili nesne) ya da “ne” (belirtisiz nesne) sorusuyla; yer tamlayıcısını “nereye, nerede, nereden, kime, kimde, kimden” sorularıyla; zarf tamlayıcısını “ne zaman, nasıl, niçin, ne kadar” sorularıyla bulursun.",
-    "Şu cümleyi birlikte çözelim: “Mustafa Kemal Paşa 19 Mayıs 1919’da Samsun’a çıktı.” Yüklem “çıktı”. Kim çıktı? “Mustafa Kemal Paşa” özne. Ne zaman çıktı? “19 Mayıs 1919’da” zarf tamlayıcısı. Nereye çıktı? “Samsun’a” yer tamlayıcısı. Şimdi karşılaştır: “Halk Ankara’ya koştu.” cümlesinde “Ankara’ya” yer tamlayıcısıdır; “Halk Ankara’yı savundu.” cümlesinde ise “Ankara’yı” belirtili nesnedir. Aynı özel ad, aldığı eke ve yükleme sorulan soruya göre farklı öge olur; “Ankara’yı” sözcüğüne “nereyi” diye sorup yer tamlayıcısı demek yaygın bir yanlıştır, doğru soru “neyi” sorusudur.",
-    "Bir sözcük grubu tek öge sayılır: “Türkiye Büyük Millet Meclisi 23 Nisan 1920’de Ankara’da açıldı.” cümlesinde “Türkiye Büyük Millet Meclisi” bütünüyle öznedir, parçalanmaz. Ögelerin yeri değişebilir; yüklemi sonda olmayan cümleye devrik cümle denir: “Çıktı Samsun’a 19 Mayıs 1919’da.” Ögeler aynıdır, yalnız sıraları değişmiştir. Ünlemler, seslenmeler, bağlaçlar ve ara sözler ögelere katılmaz; bunlara cümle dışı unsur denir: “Çocuklar, bayrağımızı dikkatle asalım.” cümlesinde “Çocuklar” seslenmedir, özne değildir; özne “biz” gizli öznedir."
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "baslik": "Önce yüklem",
-    "metin": "Ögeleri bulma sırası: yüklem, özne, nesne, yer tamlayıcısı, zarf tamlayıcısı. Soruyu her zaman yükleme sor."
-   },
-   "tablo": {
-    "basliklar": [
-     "Öge",
-     "Yükleme sorulan soru",
-     "Örnek (öge tırnak içinde)"
-    ],
-    "satirlar": [
-     [
-      "Yüklem",
-      "Sorulmaz; cümlenin temelidir.",
-      "Meclis 23 Nisan 1920’de “açıldı”."
-     ],
-     [
-      "Özne",
-      "Kim? Ne?",
-      "“Meclis” 23 Nisan 1920’de açıldı."
-     ],
-     [
-      "Belirtili nesne",
-      "Neyi? Kimi?",
-      "Halk “bağımsızlığını” kazandı."
-     ],
-     [
-      "Belirtisiz nesne",
-      "Ne?",
-      "Köylüler cepheye “cephane” taşıdı."
-     ],
-     [
-      "Yer tamlayıcısı",
-      "Nereye? Nerede? Nereden? Kime? Kimden?",
-      "Köylüler “cepheye” cephane taşıdı."
-     ],
-     [
-      "Zarf tamlayıcısı",
-      "Ne zaman? Nasıl? Niçin? Ne kadar?",
-      "Ordu “30 Ağustos 1922’de” düşmanı yendi."
-     ]
-    ]
-   }
-  },
-  {
-   "baslik": "Yazım ve noktalama: tarihler, özel adlar, kesme işareti",
-   "metin": [
-    "Bu temada tarih ve özel ad çok geçer; yazımlarını doğru bilmen gerekir. Belirli bir tarih bildiren gün ve ay adları büyük harfle başlar: 29 Ekim 1923, 19 Mayıs 1919. Belirli bir tarih bildirmeyen ay ve gün adları ise küçük yazılır: “Bayram, ekim ayının son haftasına denk gelir.” Tarihî olay ve dönem adları özel addır, büyük harfle yazılır: Millî Mücadele, Kurtuluş Savaşı, Cumhuriyet Dönemi. Ulusal bayram adları da büyük harfle başlar: Cumhuriyet Bayramı, Ulusal Egemenlik ve Çocuk Bayramı. Yönetim biçimi olarak cumhuriyet ise tür adıdır ve küçük yazılır: “29 Ekim 1923’te cumhuriyet ilan edildi.”",
-    "Kesme işareti, bu temada en çok hata yapılan noktalama işaretidir. Kişi ve yer adlarına, tarihlere ve sayılara gelen çekim ekleri kesme işaretiyle ayrılır: Atatürk’ün, Samsun’a, 1923’te, 29 Ekim’de, Kurtuluş Savaşı’nı. Kurum ve kuruluş adlarına gelen ekler ise ayrılmaz: Türkiye Büyük Millet Meclisine, Türk Tarih Kurumundan. Yanlış yazımları doğrularıyla karşılaştır: “Atatürkün” değil “Atatürk’ün”; “1919 da” ya da “1919’ da” değil “1919’da”; “Türkiye Büyük Millet Meclisi’nin” değil “Türkiye Büyük Millet Meclisinin”. Kısaltmalara gelen ekler kısaltmanın okunuşuna göre yazılır ve kesmeyle ayrılır: TBMM’nin, TDK’den.",
-    "Nispet eki “-î” ile kurulan sözcüklerde düzeltme işaretini unutma: millî, tarihî, resmî. Düzeltme işareti olmadan yazarsan “milli” (mili olan) ya da “tarihi” (tarihini) gibi başka sözcüklerle karışır. Özel adlardan türeyen sözcükler de büyük yazılır: Türkçe, Türklük, Atatürkçü. Seslenmelerden sonra virgül, cümle dışı ara sözlerin iki yanında virgül ya da kısa çizgi kullanılır: “Arkadaşlar, bu bayrak bize emanet.” / “O gün, 23 Nisan 1920’de, Meclis açıldı.” Yazını panoya asmadan önce bu kuralları tek tek kontrol et; tarih ve ad yanlışları en çok göze batan yanlışlardır."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Kesme: kişi ve yer adında var, kurum adında yok",
-    "metin": "Atatürk’ün, Samsun’a, 1923’te biçiminde ayrılır; Türkiye Büyük Millet Meclisine, Türk Dil Kurumundan biçiminde ayrılmaz."
+    "baslik": "Ögeler Bulunurken Asla Bölünemeyen Söz Öbekleri!",
+    "metin": "• {koyu:İsim ve sıfat tamlamaları} (*“kırmızı bayrağın gölgesi”*),\n• {koyu:Deyimler} (*“kulak kabartmak”, “göze girmek”*),\n• {koyu:Birleşik fiiller} (*“yardım etmek”, “kabul buyurmak”*),\n• {koyu:Fiilimsi (eylemsi) grupları ve edat grupları} ögeler bulunurken {koyu:tek bir öge olarak alınır, asla parçalanmaz}!"
    }
   }
  ],
  "ornekler": [
   {
-   "soru": "Sınıfta Cumhuriyet Bayramı için hazırlanan iki konuşmayı izledin. Mert, “Bu cumhuriyet bize emanet.” cümlesini söylemeden önce kısa bir süre sustu, sesini alçalttı ve dinleyenlere baktı. Ece ise aynı cümleyi kâğıttan, hızlı ve düz bir sesle okudu; gözleri hiç kalkmadı. İki konuşmacının sözsüz mesajlarını karşılaştır: Dinleyici hangi konuşmada cümlenin önemini daha iyi hisseder, neden?",
-   "cevap": "Mert’in konuşmasında. Susma, ses tonunun alçalması ve göz teması, cümlenin önemli olduğunu ve konuşmacının söylediğine inandığını gösteren sözsüz mesajlardır; dinleyici bu işaretlerle cümleye dikkat kesilir. Ece’nin sözcükleri aynı olsa da kâğıda bakarak hızlı ve düz bir sesle okuması heyecan ya da hazırlıksızlık izlenimi verir, cümlenin vurgusu kaybolur. Sözsüz mesajlar sözle uyumlu olduğunda anlam güçlenir."
+   "soru": "“Mustafa Kemal Paşa, 23 Nisan 1920’de Ankara’da Büyük Millet Meclisini büyük bir coşkuyla açtı.” cümlesini ögelerine ayırınız ve vurgulanan ögeyi bulunuz.",
+   "cevap": "• {koyu:Yüklem:} açtı\n• {koyu:Özne:} Mustafa Kemal Paşa (Açan kim?)\n• {koyu:Zarf Tamlayıcısı 1:} 23 Nisan 1920’de (Ne zaman?)\n• {koyu:Yer Tamlayıcısı:} Ankara’da (Nerede?)\n• {koyu:Belirtili Nesne:} Büyük Millet Meclisini (Neyi açtı?)\n• {koyu:Zarf Tamlayıcısı 2:} büyük bir coşkuyla (Nasıl açtı?)\n• {koyu:Vurgulanan Öge:} Fiil cümlesi olduğu için yüklemden hemen önceki öge olan {koyu:“büyük bir coşkuyla” (Zarf Tamlayıcısı)} vurgulanmıştır."
   },
   {
-   "soru": "Deniz, “Türkiye Büyük Millet Meclisinin açılışı” konulu beş dakikalık bir hazırlıklı konuşma yapacak. Yaptığı işler sırasız olarak şöyle: (1) Konuşmayı süre tutarak iki kez sesli prova etti. (2) Konuyu “Millî Mücadele” gibi geniş bir başlıktan Meclisin açılışına daralttı. (3) Giriş, gelişme ve sonuç bölümlerini maddeler hâlinde planladı. (4) Bir devlet kurumunun gov.tr sayfasından bilgi topladı, kaynağını not etti. (5) Dönemin bir fotoğrafını ve bir haritayı slayt olarak hazırladı. Bu işleri hazırlıklı konuşmanın adımlarına göre sırala ve her adımın adını söyle.",
-   "cevap": "Doğru sıra 2, 4, 3, 5, 1’dir. (2) Konu seçimi: Geniş konuyu daraltmak anlatımı derinleştirir. (4) Araştırma: Güvenilir kaynaktan bilgi toplanır, kaynağı not edilir. (3) Plan: Giriş, gelişme ve sonuç bölümleri belirlenir. (5) Görsel-işitsel destek: Fotoğraf ve harita anlatılanı somutlaştırır. (1) Prova: Süre tutularak sesli prova yapılır; ses tonu ve beden dili de burada denenir. Araştırma plandan önce gelir; çünkü neyi anlatacağını bilmeden bölümleri kuramazsın."
+   "soru": "1) 'Çocuklar koşarak dışarı çıktı.' ve 2) 'Çocuklar koşarak dışarıya çıktı.' cümlelerindeki altı çizili 'dışarı / dışarıya' sözcüklerinin hangi öge olduğunu karşılaştırınız.",
+   "cevap": "• 1. cümledeki {koyu:“dışarı”} sözcüğü hiçbir hâl eki almadığı (yalın hâlde olduğu) için {koyu:Zarf Tamlayıcısıdır}.\n• 2. cümledeki {koyu:“dışarıya”} sözcüğü {koyu:“-a” yönelme hâl ekini} aldığı için {koyu:Yer Tamlayıcısıdır (Dolaylı Tümleç)}."
   },
   {
-   "soru": "Şu cümleyi oku: “Cephane azalınca kasabanın kadınları kağnılarını koşup mühimmat taşımaya başladı; sandıklarda mermi, barut ve tüfek vardı.” “Mühimmat” sözcüğünün anlamını bağlamdan tahmin et; hangi ipuçlarını kullandığını açıkla ve sonra ne yapman gerektiğini söyle.",
-   "cevap": "“Mühimmat” savaş gereçleri, cephane anlamına gelir. İpuçları: Cümlenin başındaki “cephane azalınca” ifadesi taşınan şeyin cephaneyle ilgili olduğunu düşündürür; noktalı virgülden sonraki “mermi, barut ve tüfek” örnekleri sandıklarda ne olduğunu açıklar; sözcük “taşımaya” fiiliyle kullanıldığı için taşınabilen bir nesne adıdır. Tahmini sözlükten doğrular, sözcüğü anlamı ve örnek cümlesiyle kendi sözlüğüne eklersin."
-  },
-  {
-   "soru": "Ayşe, 23 Nisan 1920 hakkında sunum hazırlıyor. İki kaynak buldu. Birinci kaynak: Yazarı ve tarihi belli olmayan bir blog yazısı; kaynak göstermiyor, verdiği bazı tarihler başka sitelerle çelişiyor. İkinci kaynak: Bir devlet kurumunun gov.tr uzantılı sayfası; belge ve tarih veriyor. Ayşe hangi kaynağı kullanmalı? Birinci kaynaktaki bir bilgiyi çok beğendiyse ne yapmalı?",
-   "cevap": "İkinci kaynağı kullanmalı; çünkü gov.tr uzantılı kurum sayfaları, sahibi ve dayandığı belge belli olduğu için güvenilirdir. Blog yazısının yazarı ve tarihi belirsizdir, kaynak göstermez ve başka kaynaklarla çelişir; bu dört belirti güvenilirliğini düşürür. Blogdaki bir bilgiyi kullanmak istiyorsa onu önce gov.tr ya da edu.tr uzantılı ikinci bir kaynakla doğrulamalı, doğrulayamazsa sunumuna almamalıdır."
-  },
-  {
-   "soru": "“Köylüler o kış cepheye kağnılarla cephane taşıdı.” cümlesinin ögelerini bul; her ögeyi yükleme sorduğun soruyla gerekçelendir. Sonra “Köylüler cephaneyi cepheye taşıdı.” cümlesinde nesnenin türünün neden değiştiğini açıkla.",
-   "cevap": "Yüklem “taşıdı”. Kim taşıdı? “Köylüler” özne. Ne taşıdı? “cephane” belirtisiz nesne. Nereye taşıdı? “cepheye” yer tamlayıcısı. Ne zaman taşıdı? “o kış” zarf tamlayıcısı. Nasıl taşıdı? “kağnılarla” zarf tamlayıcısı. İkinci cümlede nesne “cephaneyi” olmuştur; sözcük belirtme eki (-i) aldığı için “neyi” sorusuna cevap verir ve belirtili nesne olur. Nesnenin belirtili ya da belirtisiz olması, yükleme sorulan sorunun “neyi” mi “ne” mi olduğuna bağlıdır."
-  },
-  {
-   "soru": "Öğretmenin okuduğu kısa bir bilgi metninden iki öğrenci not aldı. Metin: “Türkiye Büyük Millet Meclisi 29 Ekim 1923’te cumhuriyeti ilan etti. Aynı gün Mustafa Kemal, Meclis tarafından ilk cumhurbaşkanı seçildi. O günden bu yana 29 Ekim, Cumhuriyet Bayramı olarak kutlanır.” Selin’in notu: “Türkiye Büyük Millet Meclisi 29 Ekim 1923’te cumhuriyeti ilan etti. Aynı gün Mustafa Kemal, Meclis tarafından ilk cumhurbaşkanı seçildi.” Can’ın notu: “29 Ekim 1923: TBMM → cumhuriyet ilan. Aynı gün MK → ilk cumhurbaşkanı. 29 Ekim = Cumh. Bayramı”. Hangi not daha iyi, neden? Can’ın notlarından iki cümlelik bir özet yaz.",
-   "cevap": "Can’ın notu daha iyidir; çünkü anahtar sözcükleri, tarihi ve kısaltmaları kullanmış, üç bilgiyi de yakalamıştır. Selin ise cümleleri aynen yazmaya çalıştığı için konuşmanın gerisinde kalmış, son bilgiyi kaçırmıştır. Özet: “Türkiye Büyük Millet Meclisi 29 Ekim 1923’te cumhuriyeti ilan etti ve Mustafa Kemal ilk cumhurbaşkanı seçildi. Bu tarih, Cumhuriyet Bayramı olarak kutlanır.”"
+   "soru": "“Vatan savunmasında en önemli görev gençlerimizindir.” cümlesinde vurgu hangi ögededir? Nedenini açıklayınız.",
+   "cevap": "Bu cümlenin yüklemi {koyu:“gençlerimizindir”} sözcüğüdür ve bir {koyu:isimdir (isim cümlesidir)}. İsim cümlelerinde vurgu yüklemden önceki ögede değil, doğrudan {koyu:yüklemin kendisinde} bulunur."
   }
  ],
  "etkinlikler": [
   {
    "tur": "coktan",
-   "soru": "Bir konuşmacı “Şehitlerimizi saygıyla anıyoruz.” cümlesini söylerken sesini alçalttı, yavaşladı, bir an sustu ve dinleyicilere baktı. Bu sözsüz mesajlar dinleyiciye en çok neyi hissettirir?",
+   "soru": "“Kahraman Türk ordusu, Sakarya Irmağı’nın doğusunda düşman kuvvetlerini ağır bir yenilgiye uğrattı.” cümlesinin öge dizilişi aşağıdakilerden hangisinde doğru verilmiştir?",
    "secenekler": [
-    "Konuşmacının konuyu iyi bilmediğini ve cümlenin devamını unuttuğunu",
-    "Cümlenin önemli ve duygulu bir bölüm olduğunu, saygı duyulması gerektiğini",
-    "Konuşmanın bittiğini ve dinleyicilerin dağılabileceğini",
-    "Konuşmacının dinleyicilerin dikkatini çekmekten vazgeçtiğini"
+    "Özne - Yer Tamlayıcısı - Belirtili Nesne - Zarf Tamlayıcısı - Yüklem",
+    "Özne - Yer Tamlayıcısı - Belirtili Nesne - Yer Tamlayıcısı - Yüklem",
+    "Özne - Zarf Tamlayıcısı - Belirtisiz Nesne - Yer Tamlayıcısı - Yüklem",
+    "Belirtili Nesne - Yer Tamlayıcısı - Özne - Zarf Tamlayıcısı - Yüklem",
+    "Özne - Yer Tamlayıcısı - Zarf Tamlayıcısı - Yüklem"
    ],
    "dogru": 1,
-   "aciklama": "Sesin alçalıp yavaşlaması, kısa susma ve göz teması, önemli ve duygulu bir bölüme gelindiğini gösteren sözsüz mesajlardır. Unutma ya da bitiş izlenimi için konuşmacının duraksayıp kâğıda bakması, gözlerini kaçırması gerekirdi; göz teması kurması dinleyiciyle bağını sürdürdüğünü gösterir."
+   "aciklama": "uğrattı (Yüklem) | Kahraman Türk ordusu (Özne - Kim?) | Sakarya Irmağı’nın doğusunda (Yer Tamlayıcısı - Nerede?) | düşman kuvvetlerini (Belirtili Nesne - Kimi?) | ağır bir yenilgiye (Yer Tamlayıcısı - Neye? '-e' yönelme eki almış!)."
   },
   {
    "tur": "coktan",
-   "soru": "Aşağıdaki cümlelerin hangisinde belirtili nesne vardır?",
+   "soru": "Aşağıdaki cümlelerin hangisinde 'yer-yön' bildiren sözcük ötekilerden farklı bir öge görevinde kullanılmıştır?",
    "secenekler": [
-    "Öğrenciler bayram töreni için şiir ezberledi.",
-    "Öğretmenimiz sunumu dikkatle dinledi.",
-    "Kafile sabah erkenden Anıtkabir’e ulaştı.",
-    "Konuşmacı kürsüde heyecanla konuştu."
+    "Nöbetçi asker komutanı görünce bir adım ileri çıktı.",
+    "Yağmur başlayınca bahçedeki bütün çocuklar içeri girdi.",
+    "Annem balkondan aşağıya sepet sarkıttı.",
+    "Merdivenlerden yukarı hızla tırmandık.",
+    "Otomobil dar sokakta yavaşça geri gitti."
    ],
-   "dogru": 1,
-   "aciklama": "“Sunumu” sözcüğü belirtme eki almıştır ve yükleme sorulan “neyi dinledi” sorusuna cevap verir; belirtili nesnedir. Birinci cümledeki “şiir” sözcüğü “ne ezberledi” sorusuna cevap verdiği için belirtisiz nesnedir. “Anıtkabir’e” yer tamlayıcısı, “kürsüde” yer tamlayıcısı ve “heyecanla” zarf tamlayıcısıdır; bu iki cümlede nesne yoktur."
+   "dogru": 2,
+   "aciklama": "A, B, D ve E seçeneklerinde 'ileri, içeri, yukarı, geri' sözcükleri ek almadığı için Zarf Tamlayıcısıdır. C seçeneğinde ise 'aşağıya' sözcüğü '-ya' yönelme hâl ekini aldığı için Yer Tamlayıcısıdır!"
   },
   {
    "tur": "coktan",
-   "soru": "Millî Mücadele konulu bir sunum hazırlıyorsun. Aşağıdaki kaynaklardan hangisi en güvenilirdir?",
+   "soru": "Aşağıdaki cümlelerin hangisinde vurgu 'yer tamlayıcısı (dolaylı tümleç)' üzerindedir?",
    "secenekler": [
-    "Yazarı belli olmayan, tarih içermeyen bir blog yazısı",
-    "Bir devlet kurumunun gov.tr uzantılı sayfasındaki belgeli yazı",
-    "Kim olduğu bilinmeyen bir hesabın sosyal medya paylaşımı",
-    "Bir forumda kullanıcıların birbirine yazdığı yorumlar"
+    "Mustafa Kemal Paşa telgrafı dün gece Ankara’dan gönderdi.",
+    "Ankara’dan dün gece telgrafı Mustafa Kemal Paşa gönderdi.",
+    "Mustafa Kemal Paşa Ankara’dan dün gece telgrafı gönderdi.",
+    "Mustafa Kemal Paşa Ankara’dan telgrafı dün gece gönderdi.",
+    "Gönderdi Mustafa Kemal Paşa dün gece Ankara’dan telgrafı."
+   ],
+   "dogru": 0,
+   "aciklama": "Fiil cümlesinde vurgu yüklemden ('gönderdi') hemen önceki ögededir. A seçeneğinde yüklemden hemen önce 'Ankara’dan' (Nereden? -> Yer Tamlayıcısı) yer almaktadır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "“Mektubu açtığında içinde kurutulmuş bir karanfil buldu.” cümlesindeki 'kurutulmuş bir karanfil' söz öbeği cümlenin hangi ögesidir?",
+   "secenekler": [
+    "Özne",
+    "Belirtili Nesne",
+    "Belirtisiz Nesne",
+    "Zarf Tamlayıcısı",
+    "Yer Tamlayıcısı"
+   ],
+   "dogru": 2,
+   "aciklama": "Buldu (Yüklem) | Bulan kim? O (Gizli Özne) | Ne buldu? 'kurutulmuş bir karanfil' -> Belirtisiz Nesne."
+  },
+  {
+   "tur": "coktan",
+   "soru": "“Kurtuluş Savaşı’nın dönüm noktası olan kenti, Kütahya’yı, hafta sonu rehber eşliğinde gezdik.” cümlesindeki ara söz ('Kütahya’yı') hangi ögenin açıklayıcısıdır?",
+   "secenekler": [
+    "Öznenin",
+    "Belirtili nesnenin",
+    "Belirtisiz nesnenin",
+    "Yer tamlayıcısının",
+    "Zarf tamlayıcısının"
    ],
    "dogru": 1,
-   "aciklama": "Bilimsel çalışmalarda ağırlıklı olarak gov ve edu uzantılı siteler kullanılır; kurum sayfasında yazının sahibi, tarihi ve dayandığı belge bellidir. Yazarı belirsiz blog, kimliği bilinmeyen hesabın paylaşımı ve forum yorumları, kaynağı ve doğruluğu denetlenemeyen bilgiler içerebilir."
+   "aciklama": "Gezdik (Yüklem) | Biz (Gizli Özne) | Nereyi gezdik? 'Kurtuluş Savaşı’nın dönüm noktası olan kenti, Kütahya’yı,' -> '-ı' belirtme hâl eki aldığı için Belirtili Nesnedir."
   },
   {
    "tur": "dy",
-   "yonerge": "Aşağıdaki ifadeler doğru mu, yanlış mı?",
+   "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
    "ifadeler": [
     {
-     "metin": "Soru işaretiyle biten bir cümleyi sesli okurken ses tonu yükselir.",
+     "metin": "Cümlenin ögeleri bulunurken önce yüklem, ardından özne, daha sonra nesne ve tamlayıcılar (YÖN kuralı) bulunur.",
      "dogru": true,
-     "aciklama": "Noktalama işaretleri okuma tonunu belirler; soru işaretinde ses yükselir, noktada düşer, ünlemde vurgu artar."
+     "aciklama": "Özne ve belirtisiz nesnenin 'Ne?' sorusu karışabileceği için önce özne, sonra nesne bulunur."
     },
     {
-     "metin": "Hazırlıksız konuşmada konu o anda verildiği için konuşmayı kafada planlamaya gerek yoktur.",
-     "dogru": false,
-     "aciklama": "Hazırlıksız konuşmada da bir dakika düşünüp ana düşünce, iki gerekçe ve kapanış cümlesinden oluşan kısa bir iskelet kurarsın; plansız konuşma dağılır."
-    },
-    {
-     "metin": "Yer tamlayıcısı, yükleme “neyi, kimi” soruları sorularak bulunur.",
-     "dogru": false,
-     "aciklama": "“Neyi, kimi” soruları belirtili nesneyi bulur. Yer tamlayıcısı “nereye, nerede, nereden, kime, kimden” sorularıyla bulunur."
-    },
-    {
-     "metin": "Kurum ve kuruluş adlarına gelen çekim ekleri kesme işaretiyle ayrılmaz.",
+     "metin": "Yer tamlayıcısı (dolaylı tümleç) olan her sözcük veya söz öbeği mutlaka '-e, -de, -den' hâl eklerinden birini alır.",
      "dogru": true,
-     "aciklama": "Türkiye Büyük Millet Meclisine, Türk Dil Kurumundan biçiminde yazılır; kesme işareti kişi ve yer adlarına, tarih ve sayılara gelen eklerde kullanılır."
+     "aciklama": "Yönelme (-e), bulunma (-de) veya ayrılma (-den) eki almayan bir sözcük yer tamlayıcısı olamaz."
     },
     {
-     "metin": "Bağlamdan tahmin ettiğin anlamı sözlükten doğrulamadan kendi sözlüğüne eklemek yeterlidir.",
+     "metin": "Yüklemi isim olan cümlelerde (isim cümlelerinde) vurgu yüklemden hemen önceki ögededir.",
      "dogru": false,
-     "aciklama": "Bağlamdan tahmin ilk adımdır; anlam sözlükten doğrulanmadan sözlüğe eklenmez, özette ya da sunumda kullanılmaz."
+     "aciklama": "Yanlıştır; isim cümlelerinde vurgu yüklemin kendisindedir."
+    },
+    {
+     "metin": "'Sabahleyin erkenden yola çıktık.' cümlesindeki 'yola çıktık' deyimi bölünmeden birlikte yüklem olarak alınır.",
+     "dogru": true,
+     "aciklama": "Deyimler anlamca kaynaşmış söz öbekleri olduğu için ögeler bulunurken parçalanmaz."
+    },
+    {
+     "metin": "Bağlaçlar, ünlemler ve hitap sözleri cümlenin herhangi bir ögesi olmaz; 'cümle dışı unsur' (CDU) sayılır.",
+     "dogru": true,
+     "aciklama": "Örneğin 'Arkadaşlar, beni dikkatle dinleyin!' cümlesinde 'Arkadaşlar' hitabı cümle dışı unsurdur."
     }
    ]
   },
   {
    "tur": "eslestir",
-   "yonerge": "Cümle ögelerini, onları bulmak için yükleme sorduğun sorularla ya da tanımlarıyla eşleştir.",
+   "soru": "Aşağıdaki öge türlerini yükleme sorulan temel sorularıyla eşleştiriniz.",
    "ciftler": [
     [
-     "Özne",
-     "Kim? Ne? (işi yapan ya da olan)"
+     "Belirtili Nesne",
+     "Neyi? Kimi? Nereyi? (Belirtme hâl eki -ı/-i/-u/-ü alır)"
     ],
     [
-     "Belirtili nesne",
-     "Neyi? Kimi?"
+     "Belirtisiz Nesne",
+     "Özne bulunduktan sonra sorulan 'Ne?' sorusu (Hâl eki almaz)"
     ],
     [
-     "Yer tamlayıcısı",
-     "Nereye? Nerede? Nereden?"
+     "Yer Tamlayıcısı (Dolaylı Tümleç)",
+     "Kime, kimde, kimden / Nereye, nerede, nereden? (-e/-de/-den alır)"
     ],
     [
-     "Zarf tamlayıcısı",
-     "Ne zaman? Nasıl? Niçin?"
+     "Zarf Tamlayıcısı",
+     "Nasıl, ne zaman, ne kadar, niçin, neyle, kiminle?"
     ],
     [
-     "Yüklem",
-     "İş, oluş ya da durumu bildiren temel öge"
+     "Ara Söz",
+     "İki virgül veya iki kısa çizgi arasında bir ögeyi açıklayan söz"
     ]
    ]
   },
   {
    "tur": "bosluk",
-   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun dil bilgisi kavramlarıyla tamamlayınız.",
    "cumleler": [
     {
-     "metin": "Konuşmacının jestleri, mimikleri, duruşu ve ses tonu ___ mesajlardır.",
-     "cevap": "sözsüz"
+     "metin": "Cümlede öznenin yaptığı işten etkilenen ve '-ı, -i, -u, -ü' ekini alan ögeye ___ nesne denir.",
+     "cevap": "belirtili"
     },
     {
-     "metin": "Bilmediğin sözcüğün anlamını cümlenin ___ yararlanarak tahmin edebilirsin.",
-     "cevap": "bağlamından"
+     "metin": "Yüklemi yer ve yön bakımından '-e, -de, -den' ekleriyle tamamlayan ögeye ___ tamlayıcısı denir.",
+     "cevap": "yer"
     },
     {
-     "metin": "Bilimsel çalışmalarda ağırlıklı olarak edu ve ___ uzantılı siteler kullanılır.",
-     "cevap": "gov"
+     "metin": "Yüklemi fiil olan cümlelerde (yüklem başta değilse) vurgu yüklemden hemen ___ ögededir.",
+     "cevap": "önceki"
     },
     {
-     "metin": "Cümlenin ögelerini bulmaya her zaman ___ başlanır.",
-     "cevap": "yüklemden"
+     "metin": "Yüklemi zaman, durum, miktar ve sebep yönünden tamamlayan ögeye ___ tamlayıcısı denir.",
+     "cevap": "zarf"
+    },
+    {
+     "metin": "Cümlede hiçbir ögeye dâhil olmayan bağlaç ve hitaplara cümle ___ unsur denir.",
+     "cevap": "dışı"
     }
    ],
    "fazla": [
-    "özneden"
+    "sonraki",
+    "belirtisiz"
    ]
   },
   {
    "tur": "ogretici",
-   "soru": "Bir arkadaşın panoya asılacak yazısına şu cümleyi yazdı: “Atatürkün 19 mayıs 1919 da Samsuna çıkışıyla başlayan milli mücadele, Türkiye Büyük Millet Meclisi’nin açılışı ve 29 ekim 1923 te cumhuriyetin ilanıyla taçlandı.” Cümledeki yazım yanlışlarını bul ve düzelt; her düzeltmenin kuralını söyle.",
+   "soru": "“Genç subay, cepheden gönderdiği mektupta ailesine zafer müjdesi verdi.” cümlesini YÖN kuralına göre adım adım ögelerine ayırınız.",
    "ipuclari": [
-    "Kişi adı, yer adı, tarih ve kurum adlarına gelen eklerin yazımını ayrı ayrı düşün.",
-    "Belirli bir tarih bildiren ay adlarının ve tarihî olay adlarının nasıl yazıldığını hatırla."
+    "1. İpucu: Önce yüklemi ('verdi') ve özneyi ('Genç subay') bulunuz.",
+    "2. İpucu: 'Nerede?', 'Kime?' ve 'Ne verdi?' sorularını sorarak yardımcı ögeleri sırasıyla belirleyiniz."
    ],
-   "cevap": "Doğru yazım: “Atatürk’ün 19 Mayıs 1919’da Samsun’a çıkışıyla başlayan Millî Mücadele, Türkiye Büyük Millet Meclisinin açılışı ve 29 Ekim 1923’te cumhuriyetin ilanıyla taçlandı.” Düzeltmeler: “Atatürk’ün” ve “Samsun’a”: Kişi ve yer adlarına gelen ekler kesmeyle ayrılır. “1919’da” ve “1923’te”: Sayılara gelen ekler kesmeyle ayrılır, ayrı yazılmaz. “Mayıs” ve “Ekim”: Belirli tarih bildiren ay adları büyük harfle başlar. “Millî Mücadele”: Tarihî olay adı büyük harfle, nispet eki düzeltme işaretiyle yazılır. “Türkiye Büyük Millet Meclisinin”: Kurum adlarına gelen ekler kesmeyle ayrılmaz. Yönetim biçimi anlamındaki “cumhuriyet” küçük harfle yazıldığı için doğrudur."
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Zeynep, Cumhuriyet Bayramı töreninde beş dakikalık bir konuşma yapacak. Konuyu bir gece önce seçti, bilgileri yazarı belirsiz bir blogdan aldı, slaytlarına uzun paragraflar yazdı ve konuşmayı hiç prova etmedi. Törende slayta dönüp paragrafları okudu, dinleyicilere hiç bakmadı; konuşması on dakika sürdü. Zeynep’in hazırlık ve sunum sürecindeki sorunları bul; her sorun için ne yapması gerektiğini söyle.",
-   "ipuclari": [
-    "Hazırlıklı konuşmanın beş adımını (konu, araştırma, plan, görsel destek, prova) tek tek kontrol et.",
-    "Konuşma sırasında dinleyiciye giden sözsüz mesajları düşün."
-   ],
-   "cevap": "Beş sorun var. (1) Konuyu bir gece önce seçmek araştırma ve provaya zaman bırakmaz; konu günler önce seçilip daraltılmalıdır. (2) Yazarı belirsiz blog güvenilir kaynak değildir; bilgiler gov.tr ya da edu.tr uzantılı sayfalardan alınıp kaynağı not edilmelidir. (3) Slaytlar uzun paragraf değil, anahtar sözcük, tarih, fotoğraf ve harita taşımalıdır; slayt konuşmayı destekler, konuşmanın yerine geçmez. (4) Prova yapılmadığı için süre iki katına çıkmıştır; süre tutarak en az iki sesli prova yapılmalı, beş dakikaya sığmayan ayrıntılar çıkarılmalıdır. (5) Slayta dönüp okumak ve dinleyiciye bakmamak, hazırlıksızlık ve ilgisizlik izlenimi veren sözsüz mesajlardır; dinleyiciyle göz teması kurmalı, dik durmalı, önemli cümlelerde ses tonunu ve hızını değiştirmelidir."
+   "cevap": "1. Yüklem: verdi\n2. Özne: Genç subay (Veren kim? -> Genç subay)\n3. Belirtisiz Nesne: zafer müjdesi (Ne verdi? -> zafer müjdesi — vurgu da yüklemden hemen önceki bu ögededir!)\n4. Yer Tamlayıcısı 1: cepheden gönderdiği mektupta (Nerede verdi? -> '-ta' bulunma eki almış)\n5. Yer Tamlayıcısı 2: ailesine (Kime verdi? -> '-e' yönelme eki almış).\nÖge Dizilişi: Özne - Yer Tamlayıcısı - Yer Tamlayıcısı - Belirtisiz Nesne - Yüklem."
   }
- ],
- "ozet": [
-  "Konuşmacının jestleri, mimikleri, duruşu, göz teması, ses tonu ve susmaları sözsüz mesajdır; söz ile beden dili çelişirse dinleyen beden diline inanır.",
-  "Hazırlıklı konuşma beş adımda kurulur: Konuyu daralt, güvenilir kaynaktan araştır, giriş-gelişme-sonuç planı yap, görsel-işitsel destek hazırla, süre tutarak prova et; hazırlıksız konuşmada bir ana düşünce, iki gerekçe ve bir kapanış cümlesi kur.",
-  "Bilmediğin sözcüğü bağlamdaki açıklama, eş ya da zıt anlam, örnek ve sözcük türü ipuçlarıyla tahmin eder, sözlükle doğrular, kendi sözlüğüne eklersin; kaynakları yazar, tarih, kaynakça ve başka kaynakla uyum ölçütleriyle sınarsın.",
-  "Not alırken anahtar sözcük ve kısaltma kullanır, özette metnin ana çizgisini kendi cümlelerinle sırayla verirsin; yazına içeriğe uygun başlık koyup panoda ya da yarışmada paylaşırsın.",
-  "Ögeleri yüklemden başlayarak sorularla bulursun: kim, ne özne; neyi, kimi belirtili nesne; ne belirtisiz nesne; nereye, nerede, nereden yer tamlayıcısı; ne zaman, nasıl, niçin zarf tamlayıcısı. Kişi ve yer adlarıyla tarihlere gelen ekler kesmeyle ayrılır, kurum adlarına gelenler ayrılmaz."
  ]
 }
