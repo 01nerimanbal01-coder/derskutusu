@@ -137,9 +137,9 @@ def eposta():
         ic += f'<rect x="14" y="{y - 12}" width="52" height="15" rx="4" fill="{MAVI_A}"/>' + yazi(40, y - 1, etiket, 11.5, MAVI)
         ic += yazi(74, y, deger, 12.5, LAC, 'start')
         ic += f'<line x1="14" y1="{y + 5}" x2="346" y2="{y + 5}" stroke="{GRI_A}" stroke-width="1"/>'
-    ic += duz(16, 106, ['Merhaba Selin,', 'Geçen hafta oynadığımız kedi beşiği oyununun kurallarını', 'bana yazar mısın? Hafta sonu kuzenime öğretmek istiyorum.'], 12.5, LAC, 'start', 16)
-    ic += f'<rect x="286" y="146" width="60" height="16" rx="8" fill="{MAVI}"/>' + yazi(316, 157.5, 'Gönder', 11.5, '#fff')
-    return svg(360, 172, ic, 'E-posta penceresi. Kimden: arda@eposta.com. Kime: selin@eposta.com. Konu: Kedi beşiği kuralları. İleti: Merhaba Selin, Geçen hafta oynadığımız kedi beşiği oyununun kurallarını bana yazar mısın? Hafta sonu kuzenime öğretmek istiyorum. İleti burada bitiyor; kapanış ve imza yok. Gönder düğmesi.', 44)
+    ic += duz(16, 106, ['Merhaba Selin,', 'Geçen hafta oynadığımız kedi beşiği oyununun', 'kurallarını bana yazar mısın? Hafta sonu', 'kuzenime öğretmek istiyorum.'], 12.5, LAC, 'start', 16)
+    ic += f'<rect x="286" y="160" width="60" height="16" rx="8" fill="{MAVI}"/>' + yazi(316, 171.5, 'Gönder', 11.5, '#fff')
+    return svg(360, 186, ic, 'E-posta penceresi. Kimden: arda@eposta.com. Kime: selin@eposta.com. Konu: Kedi beşiği kuralları. İleti: Merhaba Selin, Geçen hafta oynadığımız kedi beşiği oyununun kurallarını bana yazar mısın? Hafta sonu kuzenime öğretmek istiyorum. İleti burada bitiyor; kapanış ve imza yok. Gönder düğmesi.', 48)
 
 
 def gunluk():
