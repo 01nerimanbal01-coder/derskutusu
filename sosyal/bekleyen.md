@@ -993,3 +993,73 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 📘 8. sınıf Temel Dinî Bilgiler 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-temel-dini-bilgiler-hafta-4
 #derskutusu #temeldinibilgiler #8sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
+
+### `bilgi-9-arapca-5` — 9. Sınıf · arapca · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-9-arapca-5.png` (`public/sosyal/bilgi-9-arapca-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/9-arapca-5
+- **Metin:**
+```text
+Arapçada Tekil Zamirler ve Selamlaşma Kalıpları
+
+Arapçada tekil zamirler ve işaret isimleri kelimenin eril (müzekker) veya dişil (müennes) oluşuna göre uyum sağlar.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/9-arapca-5
+
+#derskutusu #9sınıf #arapça #konuözeti #dersnotu #meb #tyt
+```
+
+### `bilgi-9-ingilizce-5` — 9. Sınıf · ingilizce · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-9-ingilizce-5.png` (`public/sosyal/bilgi-9-ingilizce-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/9-ingilizce-5
+- **Metin:**
+```text
+Present Continuous Tense ve Durum Fiilleri
+
+İngilizcede konuşma anındaki eylemler Present Continuous Tense ile anlatılırken durum fiilleri (State Verbs) -ing eki almaz.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/9-ingilizce-5
+
+#derskutusu #9sınıf #ingilizce #konuözeti #dersnotu #meb #tyt
+```
+
+### `bilgi-9-kuran-i-kerim-5` — 9. Sınıf · kuran-i-kerim · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-9-kuran-i-kerim-5.png` (`public/sosyal/bilgi-9-kuran-i-kerim-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/9-kuran-i-kerim-5
+- **Metin:**
+```text
+Kur’an Harflerinde Mahreç ve Sıfat Kuralları
+
+Kur’an-ı Kerim kıraatinde anlam bozulmaması için harflerin beş mahreç bölgesinden, kalın-ince ve peltek sıfatlarına uygun okunması gerekir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/9-kuran-i-kerim-5
+
+#derskutusu #9sınıf #kuranıkerim #konuözeti #dersnotu #meb #tyt
+```
+
+### `bilgi-9-peygamberimizin-hayati-5` — 9. Sınıf · peygamberimizin-hayati · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-9-peygamberimizin-hayati-5.png` (`public/sosyal/bilgi-9-peygamberimizin-hayati-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/9-peygamberimizin-hayati-5
+- **Metin:**
+```text
+Mekke’de Cahiliye Kültürü ve Toplum Yapısı
+
+İslam dini Cahiliye toplumundaki asabiyet ve sınıf ayrımını kaldırarak üstünlüğün yalnız takvada olduğunu ilan etmiştir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/9-peygamberimizin-hayati-5
+
+#derskutusu #9sınıf #peygamberimizinhayatı #konuözeti #dersnotu #meb #tyt
+```
+
+### `bilgi-9-temel-dini-bilgiler-5` — 9. Sınıf · temel-dini-bilgiler · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-9-temel-dini-bilgiler-5.png` (`public/sosyal/bilgi-9-temel-dini-bilgiler-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/9-temel-dini-bilgiler-5
+- **Metin:**
+```text
+Aklî ve Naklî Deliller Işığında İlkeli Yaşamak
+
+Aklî ve naklî deliller uyum içinde insanı tefekküre, emanet bilincine ve hayatın her alanında ilkeli yaşamaya yöneltir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/9-temel-dini-bilgiler-5
+
+#derskutusu #9sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #tyt
+```
