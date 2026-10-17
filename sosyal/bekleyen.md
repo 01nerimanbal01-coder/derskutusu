@@ -2,407 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 140 gönderi.
-
-## bilgi-11-fizik-2
-Sıra: 2026-10-29 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-fizik-2.png
-
-```
-Bunu biliyor muydunuz? Sürtünmesiz ortamda düşey yukarı atılan bir cismin hızı maksimum yükseklikte anlık olarak sıfır olur; ancak yer çekimi ivmesi (g) tepe noktada bile sıfır değildir, daima aşağı yönlüdür.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Fizik 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-fizik-hafta-2
-#derskutusu #fizik #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-hitabet-ve-mesleki-uygulama-2
-Sıra: 2026-10-29 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-hitabet-ve-mesleki-uygulama-2.png
-
-```
-Bunu biliyor muydunuz? Ülkemizde toplumu din konusunda aydınlatmak ve ibadet yerlerini yönetmekle görevli olan Diyanet İşleri Başkanlığı 3 Mart 1924 tarihinde kurulmuştur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Hitabet ve Mesleki Uygulama 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-hitabet-ve-mesleki-uygulama-hafta-2
-#derskutusu #hitabet #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-ingilizce-2
-Sıra: 2026-10-29 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-ingilizce-2.png
-
-```
-Bunu biliyor muydunuz? İngilizcede kanıta dayalı tahminler ve önceden yapılmış kariyer planları "be going to" ile, gelecekte belirli bir anda sürüyor olacak işler ise "will be V-ing" (Future Continuous) ile anlatılır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf İngilizce 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-ingilizce-hafta-2
-#derskutusu #ingilizce #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-kimya-2
-Sıra: 2026-10-29 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-kimya-2.png
-
-```
-Bunu biliyor muydunuz? Termodinamiğin birinci yasasına (enerjinin korunumu) göre kimyasal tepkimelerde sistemin aldığı veya verdiği ısı, ortamın verdiği veya aldığı ısıya büyüklükçe eşittir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Kimya 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-kimya-hafta-2
-#derskutusu #kimya #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-kuran-i-kerim-2
-Sıra: 2026-10-29 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-kuran-i-kerim-2.png
-
-```
-Bunu biliyor muydunuz? Hz. Peygamber döneminde gerçekleşen bir olaya açıklık getirmek veya sorulan bir soruya cevap vermek üzere ayetlerin indirilme sebeplerine "esbabınüzul" denir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Kur’an-ı Kerim 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-kuran-i-kerim-hafta-2
-#derskutusu #kuranıkerim #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-matematik-2
-Sıra: 2026-10-29 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-matematik-2.png
-
-```
-Bunu biliyor muydunuz? İstatistikte iki nicel değişken arasındaki ilişkinin yönü (pozitif/negatif) ve gücü, veri çiftlerinin koordinat düzlemine işaretlendiği serpme diyagramı (saçılım grafiği) ile belirlenir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Matematik 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-matematik-hafta-2
-#derskutusu #matematik #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-mesleki-arapca-2
-Sıra: 2026-10-30 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-mesleki-arapca-2.png
-
-```
-Bunu biliyor muydunuz? Arapçada "isimler" anlamındaki esma ile "en güzel" anlamındaki el-hüsna kelimelerinden oluşan Esmaülhüsna, Yüce Allah’ın Kur’an ve hadislerde geçen en güzel isimlerini ifade eder.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Mesleki Arapça 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-mesleki-arapca-hafta-2
-#derskutusu #meslekiarapça #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-peygamberimizin-hayati-2
-Sıra: 2026-10-30 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-peygamberimizin-hayati-2.png
-
-```
-Bunu biliyor muydunuz? İslam’dan önce "Yesrib" adıyla bilinen şehir, Hz. Peygamber’in 622 yılındaki Hicret’inden sonra "Peygamber Şehri" anlamında Medinetü’n-Nebi (Medine) adını almıştır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Peygamberimizin Hayatı 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-peygamberimizin-hayati-hafta-2
-#derskutusu #peygamberimizinhayatı #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-tarih-2
-Sıra: 2026-10-30 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-tarih-2.png
-
-```
-Bunu biliyor muydunuz? 1711 Prut Savaşı’nda Sadrazam Baltacı Mehmed Paşa’nın Rus Çarı I. Petro’yu kuşatması sonucunda imzalanan Prut Antlaşması ile Osmanlı Devleti Azak Kalesi’ni geri almıştır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Tarih 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-tarih-hafta-2
-#derskutusu #tarih #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-tefsir-2
-Sıra: 2026-10-30 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-tefsir-2.png
-
-```
-Bunu biliyor muydunuz? Kur’an-ı Kerim’in Hz. Ebubekir döneminde tek bir Mushaf hâlinde toplanmasına "cem’", Hz. Osman döneminde çoğaltılarak İslam beldelerine gönderilmesine ise "istinsah" denir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Tefsir 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-tefsir-hafta-2
-#derskutusu #tefsir #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-temel-dini-bilgiler-2
-Sıra: 2026-10-30 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-temel-dini-bilgiler-2.png
-
-```
-Bunu biliyor muydunuz? İslam düşüncesinde insanın kendi yaratılışını ve evrendeki eşsiz düzeni tefekkür ederek Yüce Allah’ı isim, sıfat ve fiilleriyle tanımasına "marifetullah" adı verilir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Temel Dinî Bilgiler 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-temel-dini-bilgiler-hafta-2
-#derskutusu #temeldinibilgiler #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-biyoloji-2
-Sıra: 2026-10-30 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-biyoloji-2.png
-
-```
-Bunu biliyor muydunuz? DNA ve RNA’nın yapı birimi olan her bir nükleotit; azotlu organik baz, beş karbonlu pentoz şekeri ve fosfat grubu olmak üzere üç temel bileşenden oluşur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Biyoloji 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-biyoloji-hafta-2
-#derskutusu #biyoloji #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-cografya-2
-Sıra: 2026-10-31 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-cografya-2.png
-
-```
-Bunu biliyor muydunuz? Levha tektoniğine dayalı Süper Kıta Döngüsü’ne göre kıtalar her 300–500 milyon yılda bir birleşip ayrılır; yaklaşık 250 milyon yıl sonra yeni bir süper kıtanın oluşacağı öngörülmektedir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Coğrafya 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-cografya-hafta-2
-#derskutusu #coğrafya #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-din-kulturu-2
-Sıra: 2026-10-31 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-din-kulturu-2.png
-
-```
-Bunu biliyor muydunuz? Abbasiler döneminde Bağdat’ta kurulan Beytülhikme (Hikmet Evi); kütüphanesi, tercüme bürosu ve rasathanesiyle İslam medeniyetinin en büyük akademisi ve bilim merkezi olmuştur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Din Kültürü ve Ahlak Bilgisi 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-din-kulturu-ve-ahlak-bilgisi-hafta-2
-#derskutusu #dinkültürü #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-edebiyat-2
-Sıra: 2026-10-31 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-edebiyat-2.png
-
-```
-Bunu biliyor muydunuz? Peyami Safa’nın "Dokuzuncu Hariciye Koğuşu" ve Sabahattin Ali’nin "Kürk Mantolu Madonna" adlı eserleri, Türk edebiyatında edebiyat ile psikoloji biliminin kesiştiği en güçlü roman örnekleridir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Türk Dili ve Edebiyatı 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-turk-dili-ve-edebiyati-hafta-2
-#derskutusu #edebiyat #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-fizik-2
-Sıra: 2026-10-31 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-fizik-2.png
-
-```
-Bunu biliyor muydunuz? Çembersel harekette merkezcil kuvvet cisme etki eden gerçek kuvvetlerin net bileşkesi olduğu için serbest cisim diyagramında ayrı bir kuvvet vektörü olarak gösterilmez.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Fizik 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-fizik-hafta-2
-#derskutusu #fizik #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-ingilizce-2
-Sıra: 2026-10-31 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-ingilizce-2.png
-
-```
-Bunu biliyor muydunuz? İngilizcede müzik ve sanat tercihlerini belirtirken genel eğilimler için "prefer ... to ...", belirli bir durumdaki tercihler içinse "would rather ... than ..." kalıbı kullanılır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf İngilizce 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-ingilizce-hafta-2
-#derskutusu #ingilizce #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-inkilap-tarihi-2
-Sıra: 2026-10-31 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-inkilap-tarihi-2.png
-
-```
-Bunu biliyor muydunuz? Osmanlı Devleti’nin dağılmasını önlemek amacıyla 19. ve 20. yüzyıl başlarında aydınlar tarafından Osmanlıcılık, İslamcılık, Batıcılık ve Türkçülük fikir akımları geliştirilmiştir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf T.C. İnkılap Tarihi 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-tc-inkilap-tarihi-ve-ataturkculuk-hafta-2
-#derskutusu #inkılaptarihi #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-islam-kultur-ve-medeniyeti-2
-Sıra: 2026-11-01 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-2.png
-
-```
-Bunu biliyor muydunuz? 622 yılındaki Hicret’in ardından Mescid-i Nebi, muahat (kardeşlik) uygulaması ve Medine Vesikası ile şekillenen Medine, İslam medeniyetinin ilk kurumsal şehir modeli olmuştur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf İslam Kültür ve Medeniyeti 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-islam-kultur-ve-medeniyeti-hafta-2
-#derskutusu #islamkültürü #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-kelam-2
-Sıra: 2026-11-01 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kelam-2.png
-
-```
-Bunu biliyor muydunuz? Kelam ilmi, İslam’ın inanç esaslarını Kur’an ve sünnete dayalı naklî delillerin yanı sıra aklî delillerle temellendirmek ve itikadi şüphelere cevap vermek amacıyla doğmuştur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Kelam 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-kelam-hafta-2
-#derskutusu #kelam #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-kimya-2
-Sıra: 2026-11-01 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kimya-2.png
-
-```
-Bunu biliyor muydunuz? Redoks tepkimeleri denkleştirilirken kütlenin ve yükün korunumu gereği yükseltgenme ve indirgenme yarı basamaklarında alınan ve verilen toplam elektron sayıları birbirine eşitlenir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Kimya 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-kimya-hafta-2
-#derskutusu #kimya #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-kuran-i-kerim-2
-Sıra: 2026-11-01 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kuran-i-kerim-2.png
-
-```
-Bunu biliyor muydunuz? Kur’an-ı Kerim’i ayet, hadis ve sahabe kavilleriyle açıklayan yönteme rivayet tefsiri; dil, belagat ve ilmî verilerle birlikte akıl yürüterek açıklayan yönteme ise dirayet tefsiri denir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Kur’an-ı Kerim 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-kuran-i-kerim-hafta-2
-#derskutusu #kuranıkerim #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-matematik-2
-Sıra: 2026-11-01 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-matematik-2.png
-
-```
-Bunu biliyor muydunuz? Üstel fonksiyonun tersi olan logaritma fonksiyonu; deprem büyüklüğü (Richter ölçeği), ses düzeyi (desibel) ve asitlik-bazlık (pH) hesaplamalarında çok büyük sayı aralıklarını ifade etmek için kullanılır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Matematik 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-matematik-hafta-2
-#derskutusu #matematik #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-mesleki-arapca-2
-Sıra: 2026-11-01 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-mesleki-arapca-2.png
-
-```
-Bunu biliyor muydunuz? Mesleki Arapça metinlerinde "el-İlahiyyat" bölümü; Yüce Allah’ın varlığını, birliğini (vahdaniyye), ibadette yalnız O’na yönelmeyi (ihlas) ve şirkten uzak durmayı konu edinir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Mesleki Arapça 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-mesleki-arapca-hafta-2
-#derskutusu #meslekiarapça #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-peygamberimizin-hayati-2
-Sıra: 2026-11-02 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-peygamberimizin-hayati-2.png
-
-```
-Bunu biliyor muydunuz? Kur’an-ı Kerim’de "Kim Resul’e itaat ederse Allah’a itaat etmiş olur." (Nisa, 80) buyrularak Hz. Peygamber’in sünnetine ve örnekliğine (üsve-i hasene) uymanın önemi bildirilmiştir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Peygamberimizin Hayatı 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-peygamberimizin-hayati-hafta-2
-#derskutusu #peygamberimizinhayatı #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-temel-dini-bilgiler-2
-Sıra: 2026-11-02 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-temel-dini-bilgiler-2.png
-
-```
-Bunu biliyor muydunuz? İslam dinini doğru öğrenmenin iki asli kaynağı Kur’an-ı Kerim (Kitap) ve onu açıklayıp uygulayan Hz. Peygamber’in Sünnetidir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Temel Dinî Bilgiler 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-temel-dini-bilgiler-hafta-2
-#derskutusu #temeldinibilgiler #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-5-arapca-2
-Sıra: 2026-11-02 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-arapca-2.png
-
-```
-Bunu biliyor muydunuz? Arapça tanışma konuşmalarında erkek muhataba "Mesmuke? / Keyfe haluke?", kadın muhataba ise "Mesmuki? / Keyfe haluki?" diye sorulur; cevapta ise her iki cinsiyet de "İsmî..." ve "Ene bi-hayrin" ifadelerini kullanır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 5. sınıf Arapça 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-arapca-hafta-2
-#derskutusu #arapça #5sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-5-kuran-i-kerim-2
-Sıra: 2026-11-02 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-kuran-i-kerim-2.png
-
-```
-Bunu biliyor muydunuz? Kur’an alfabesi elif’ten ye’ye 28 harften oluşur; elifbâ tablolarının sonunda görülen lâmelif ayrı bir harf değil, lâm ile elif harflerinin birleşik yazılışıdır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 5. sınıf Kur’an-ı Kerim 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-kuran-i-kerim-hafta-2
-#derskutusu #kuranıkerim #5sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-5-arapca-3
-Sıra: 2026-11-03 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-arapca-3.png
-
-```
-Bunu biliyor muydunuz? Arapçada "Hel" soru edatıyla kurulan doğrulama sorularına olumlu cevap verirken "Neam" (Evet), olumsuz cevap verirken ise "La" (Hayır) ifadesi kullanılır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 5. sınıf Arapça 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-arapca-hafta-3
-#derskutusu #arapça #5sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-5-din-kulturu-3
-Sıra: 2026-11-03 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-din-kulturu-3.png
-
-```
-Bunu biliyor muydunuz? Gece ile gündüzün ardışık düzeni, Dünya’nın Güneş’e uzaklığı ve canlıların yaşadıkları ortama uyumu evrende hiçbir şeyin tesadüfen olmadığını gösteren ilahi ölçü örnekleridir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 5. sınıf Din Kültürü ve Ahlak Bilgisi 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-din-kulturu-ve-ahlak-bilgisi-hafta-3
-#derskutusu #dinkültürü #5sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-5-din-kulturu-4
-Sıra: 2026-11-03 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-din-kulturu-4.png
-
-```
-Bunu biliyor muydunuz? Arapçada "en güzel isimler" anlamına gelen Esmaülhüsna; Yüce Allah’ın sonsuz ilmini, merhametini ve kudretini tanıtan güzel isimlerinin tamamıdır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 5. sınıf Din Kültürü ve Ahlak Bilgisi 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-din-kulturu-ve-ahlak-bilgisi-hafta-4
-#derskutusu #dinkültürü #5sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-5-fen-bilimleri-3
-Sıra: 2026-11-03 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-fen-bilimleri-3.png
-
-```
-Bunu biliyor muydunuz? Güneş yüzeyindeki nispeten soğuk ve koyu bölgeler olan Güneş lekelerinin düzenli yer değiştirmesi, Güneş’in kendi ekseni etrafında batıdan doğuya doğru döndüğünü kanıtlar.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 5. sınıf Fen Bilimleri 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-fen-bilimleri-hafta-3
-#derskutusu #fenbilimleri #5sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-5-fen-bilimleri-4
-Sıra: 2026-11-03 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-fen-bilimleri-4.png
-
-```
-Bunu biliyor muydunuz? Dünya’nın tek doğal uydusu olan Ay bir ışık kaynağı değildir; Güneş’ten aldığı ışığı yansıtır ve çok ince bir atmosfere sahip olduğu için yüzeyinde hava olayları gerçekleşmez.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 5. sınıf Fen Bilimleri 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-fen-bilimleri-hafta-4
-#derskutusu #fenbilimleri #5sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-5-ingilizce-3
-Sıra: 2026-11-03 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-ingilizce-3.png
-
-```
-Bunu biliyor muydunuz? İngilizcede meslek adlarından önce "a / an", çalışılan yerlerden önce "at" edatı kullanılır; yer tariflerinde ise "next to", "opposite" ve "between" kalıpları öne çıkar.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 5. sınıf İngilizce 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-ingilizce-hafta-3
-#derskutusu #ingilizce #5sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-5-kuran-i-kerim-3
-Sıra: 2026-11-04 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-kuran-i-kerim-3.png
-
-```
-Bunu biliyor muydunuz? Kur’an harflerinin ses yolundan çıktığı bölgelere "mahreç" denir; 28 harf çıkış yerine göre dudak (4), boğaz (6) ve dil (18) harfleri olarak üçe ayrılır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 5. sınıf Kur’an-ı Kerim 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-kuran-i-kerim-hafta-3
-#derskutusu #kuranıkerim #5sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-5-matematik-3
-Sıra: 2026-11-04 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-matematik-3.png
-
-```
-Bunu biliyor muydunuz? Tam açının 360 eş parçasından birinin ölçüsüne 1 derece (1°) denir; 90° dik açıyı, 180° doğru açıyı, 90° ile 180° arasındaki ölçüler ise geniş açıyı ifade eder.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 5. sınıf Matematik 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-matematik-hafta-3
-#derskutusu #matematik #5sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-5-matematik-4
-Sıra: 2026-11-04 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-matematik-4.png
-
-```
-Bunu biliyor muydunuz? Aynı düzlemde kesişen iki doğrunun oluşturduğu komşu açıların ölçüleri toplamı 180°, birbirine sırt sırta bakan ters açıların ölçüleri ise birbirine eşittir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 5. sınıf Matematik 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-matematik-hafta-4
-#derskutusu #matematik #5sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-5-peygamberimizin-hayati-3
-Sıra: 2026-11-04 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-peygamberimizin-hayati-3.png
-
-```
-Bunu biliyor muydunuz? Hz. Peygamber, Cahiliye Dönemi’nin tüm kötülüklerinden uzak kalarak dürüstlüğü ve emanete bağlılığı sayesinde henüz gençlik yıllarında "Muhammedü’l-Emin" unvanıyla tanınmıştır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 5. sınıf Peygamberimizin Hayatı 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-peygamberimizin-hayati-hafta-3
-#derskutusu #peygamberimizinhayatı #5sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-5-sosyal-bilgiler-3
-Sıra: 2026-11-04 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-sosyal-bilgiler-3.png
-
-```
-Bunu biliyor muydunuz? Atatürk’ün armağan ettiği 23 Nisan Ulusal Egemenlik ve Çocuk Bayramı, farklı kültürlerden dünya çocuklarının bir araya gelerek kutladığı ilk ve tek çocuk bayramıdır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 5. sınıf Sosyal Bilgiler 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-sosyal-bilgiler-hafta-3
-#derskutusu #sosyalbilgiler #5sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-5-sosyal-bilgiler-4
-Sıra: 2026-11-04 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-sosyal-bilgiler-4.png
-
-```
-Bunu biliyor muydunuz? Tarihimizdeki sadaka taşı geleneği, veren elin alan eli görmemesini ve ihtiyaç sahibinin incinmeden yalnız ihtiyacı kadar yardım almasını sağlayan zarif bir dayanışma örneğidir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 5. sınıf Sosyal Bilgiler 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-sosyal-bilgiler-hafta-4
-#derskutusu #sosyalbilgiler #5sınıf #bunubiliyormuydunuz #maarifmodeli
-```
+Toplam 122 gönderi.
 
 ## bilgi-5-temel-dini-bilgiler-3
 Sıra: 2026-11-05 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-temel-dini-bilgiler-3.png
@@ -1402,4 +1002,224 @@ Bunu biliyor muydunuz? Hazırlıklı ve hazırlıksız konuşmalarda ses tonu, g
 Faydalı bulduysanız arkadaşınızı etiketleyin.
 📘 8. sınıf Türkçe 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-turkce-hafta-7
 #derskutusu #türkçe #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-fen-bilimleri-2
+Sıra: 2026-11-22 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-fen-bilimleri-2.png
+
+```
+Bunu biliyor muydunuz? Dünya’mıza en yakın yıldız olan Güneş, yaklaşık %73 hidrojen ve %25 helyum gazından oluşan dev bir gaz küresidir; yaydığı ısı ve ışık enerjisiyle yeryüzündeki yaşamın devamını sağlar.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Fen Bilimleri 2. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-fen-bilimleri-hafta-2
+#derskutusu #fenbilimleri #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-arapca-3
+Sıra: 2026-11-22 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-arapca-3.png
+
+```
+Bunu biliyor muydunuz? Arapçada branş öğretmenleri tanıtılırken "muderris" (erkek öğretmen) veya "muderrise" (kadın öğretmen) kelimesinden sonra dersin adı getirilir; öğretmenler odasına ise "gurfetu el-muallimine" denir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Arapça 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-arapca-hafta-3
+#derskutusu #arapça #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-kuran-i-kerim-3
+Sıra: 2026-11-22 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-kuran-i-kerim-3.png
+
+```
+Bunu biliyor muydunuz? Kur’an-ı Kerim’de boğaz mahrecinden çıkan altı harf (Hemze, He, Ayn, Ha, Gayn, Hı), boğazın alt, orta ve üst bölgesinden çıkışlarına göre üç gruba ayrılır ve kelimenin anlamını doğrudan belirler.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Kur’an-ı Kerim 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-kuran-i-kerim-hafta-3
+#derskutusu #kuranıkerim #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-peygamberimizin-hayati-3
+Sıra: 2026-11-22 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-peygamberimizin-hayati-3.png
+
+```
+Bunu biliyor muydunuz? Hüzün Yılı sonrasında Zeyd bin Harise (r.a.) ile çıktığı Taif yolculuğunda ağır eziyetlere maruz kalan Hz. Peygamber (s.a.v.), Taif halkına beddua etmeyip soylarından müminler çıkması için dua ederek eşsiz bir merhamet örneği sergilemiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Peygamberimizin Hayatı 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-peygamberimizin-hayati-hafta-3
+#derskutusu #peygamberimizinhayatı #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-temel-dini-bilgiler-3
+Sıra: 2026-11-22 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-temel-dini-bilgiler-3.png
+
+```
+Bunu biliyor muydunuz? İnanma ihtiyacı insanın yaratılışında (fıtratında) var olan temel bir duygudur; evrendeki şaşmaz ölçü ve düzen üzerinde düşünmek insanı Yüce Yaratıcı’ya imana ve kalp huzuruna ulaştırır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Temel Dinî Bilgiler 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-temel-dini-bilgiler-hafta-3
+#derskutusu #temeldinibilgiler #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-arapca-3
+Sıra: 2026-11-22 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-arapca-3.png
+
+```
+Bunu biliyor muydunuz? Arapçada tiyatro (el-mesrah) ve kültürel etkinliklerin zamanı "meta" veya "fi eyyi saatin" ile, yeri ise "eyne" soru edatı ve "emame" (önünde), "bi-canibi" (yanında) gibi yön zarflarıyla ifade edilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Arapça 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-arapca-hafta-3
+#derskutusu #arapça #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-kuran-i-kerim-3
+Sıra: 2026-11-23 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-kuran-i-kerim-3.png
+
+```
+Bunu biliyor muydunuz? Kur’an-ı Kerim’de ahiret hayatı ve yeniden diriliş, kışın ölen toprağın baharda yeniden yeşermesi örneğiyle açıklanır; ahirete iman insana dünyada yaptığı her davranışın hesabını vereceği bilincini kazandırır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Kur’an-ı Kerim 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-kuran-i-kerim-hafta-3
+#derskutusu #kuranıkerim #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-peygamberimizin-hayati-3
+Sıra: 2026-11-23 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-peygamberimizin-hayati-3.png
+
+```
+Bunu biliyor muydunuz? Hicretten hemen sonra inşa edilen Mescid-i Nebevi; ibadethane olmasının yanı sıra içindeki Suffe okuluyla ilim merkezi, istişare meclisi ve Medine İslam toplumunun kalbi olmuştur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Peygamberimizin Hayatı 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-peygamberimizin-hayati-hafta-3
+#derskutusu #peygamberimizinhayatı #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-temel-dini-bilgiler-3
+Sıra: 2026-11-23 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-temel-dini-bilgiler-3.png
+
+```
+Bunu biliyor muydunuz? Hz. Muhammed’e (s.a.v.) inanmak, O’na itaat etmek, O’nu sevmek, güzel ahlakını ve sünnetini örnek almak ve ismi anıldığında salavat getirmek her müminin Peygamberimize karşı beş temel sorumluluğudur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Temel Dinî Bilgiler 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-temel-dini-bilgiler-hafta-3
+#derskutusu #temeldinibilgiler #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-arapca-3
+Sıra: 2026-11-23 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-arapca-3.png
+
+```
+Bunu biliyor muydunuz? Arapçada tanışma ifadelerinde kişi zamirleri ve bitişik iyelik ekleri muhatabın cinsiyetine göre değişir: Erkeğe "Ma ismuke?", kadına ise "Ma ismuki?" (Adın ne?) diye sorulur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Arapça 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-arapca-hafta-3
+#derskutusu #arapça #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-biyoloji-3
+Sıra: 2026-11-23 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-biyoloji-3.png
+
+```
+Bunu biliyor muydunuz? Biyoloji araştırmalarında duyu organları veya ölçüm aletleriyle doğrudan tespit edilen bilgilere gözlem, gözlem verilerinin ön bilgilerle birleştirilerek yorumlanmasına ise çıkarım adı verilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Biyoloji 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-biyoloji-hafta-3
+#derskutusu #biyoloji #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-cografya-3
+Sıra: 2026-11-23 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-cografya-3.png
+
+```
+Bunu biliyor muydunuz? Coğrafya terimini ilk kez kullanan Eratosthenes’ten Amasyalı Strabon’a, Orta Çağ İslam bilginleri Biruni ve İdrisi’den modern coğrafyanın kurucusu Humboldt’a kadar coğrafi bilgi insanlığın ortak mirasıyla gelişmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Coğrafya 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-cografya-hafta-3
+#derskutusu #coğrafya #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-din-kulturu-3
+Sıra: 2026-11-24 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-din-kulturu-3.png
+
+```
+Bunu biliyor muydunuz? İslam âlimlerine göre insanı hakikate ulaştıran doğru bilginin üç temel kaynağı vardır: Selim akıl, sağlam duyular (havâss-ı selîme) ve peygamberler aracılığıyla gelen doğru haber (vahiy).
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Din Kültürü ve Ahlak Bilgisi 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-din-kulturu-ve-ahlak-bilgisi-hafta-3
+#derskutusu #dinkültürü #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-edebiyat-3
+Sıra: 2026-11-24 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-edebiyat-3.png
+
+```
+Bunu biliyor muydunuz? Türk dili ve edebiyatında metinler iki ana gruba ayrılır: Bilgi ve haber vermek için dilin göndergesel işleviyle yazılan öğretici metinler ile estetik zevk uyandırmak için kurgulanan sanat (edebî) metinleri.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Türk Dili ve Edebiyatı 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-turk-dili-ve-edebiyati-hafta-3
+#derskutusu #edebiyat #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-fizik-3
+Sıra: 2026-11-24 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-fizik-3.png
+
+```
+Bunu biliyor muydunuz? Türk-İslam dünyasında İbnü’l-Heysem karanlık oda deneyleri ve "Kitâbü’l-Menâzır" eseriyle modern optiğin temellerini atmış; El-Hazini ise yer çekimi ve akışkanlar mekaniği üzerine öncü deneyler gerçekleştirmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Fizik 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-fizik-hafta-3
+#derskutusu #fizik #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-ingilizce-3
+Sıra: 2026-11-24 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-ingilizce-3.png
+
+```
+Bunu biliyor muydunuz? İngilizcede memleket belirtirken "I am from + ülke adı", milliyet belirtirken ise "I am + milliyet" kalıbı kullanılır; sahiplik bildirmek içinse isimlerden önce "my, your, his, her, our, their" iyelik sıfatları getirilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf İngilizce 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-ingilizce-hafta-3
+#derskutusu #ingilizce #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-kimya-3
+Sıra: 2026-11-24 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-kimya-3.png
+
+```
+Bunu biliyor muydunuz? Atom modelleri Dalton, Thomson, Rutherford ve Bohr’un çalışmalarıyla gelişerek günümüzdeki Modern Atom Teorisi’ne (bulut modeli) ulaşmıştır; bu süreç bilimsel bilginin yeni kanıtlarla gelişebilir olduğunu gösterir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Kimya 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-kimya-hafta-3
+#derskutusu #kimya #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-kuran-i-kerim-3
+Sıra: 2026-11-24 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-kuran-i-kerim-3.png
+
+```
+Bunu biliyor muydunuz? Kur’an-ı Kerim’de "ilah" kavramı yalnızca Allah’a kulluk edilmesini (tevhit) ifade ederken, "ihlas" kavramı yapılan her ibadet ve güzel davranışın sadece Allah rızası için samimiyetle yerine getirilmesini anlatır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Kur’an-ı Kerim 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-kuran-i-kerim-hafta-3
+#derskutusu #kuranıkerim #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-matematik-3
+Sıra: 2026-11-25 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-matematik-3.png
+
+```
+Bunu biliyor muydunuz? Gerçek sayılar kümesi (R), rasyonel sayılar (Q) ile irrasyonel sayıların birleşiminden oluşur; sayı doğrusundaki her noktaya bir gerçek sayı karşılık gelir ve aralıklar açık, kapalı veya yarı açık olarak gösterilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Matematik 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-matematik-hafta-3
+#derskutusu #matematik #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-peygamberimizin-hayati-3
+Sıra: 2026-11-25 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-peygamberimizin-hayati-3.png
+
+```
+Bunu biliyor muydunuz? Peygamberimizin (s.a.v.) mensup olduğu Haşimoğulları ailesi, Mekke’de hacılara hizmet görevleri (sikâye ve rifâde) ile komşu ülkelerle yapılan İlâf ticaret antlaşmaları sayesinde büyük bir saygınlığa sahipti.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Peygamberimizin Hayatı 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-peygamberimizin-hayati-hafta-3
+#derskutusu #peygamberimizinhayatı #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-tarih-3
+Sıra: 2026-11-25 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-tarih-3.png
+
+```
+Bunu biliyor muydunuz? Tarih bilimi geçmişteki olayları yer, zaman ve neden-sonuç ilişkisi çerçevesinde belgelere dayanarak inceler; geçmişteki olaylar tekrarlanamadığı için tarihsel bilgi yeni belgeler bulundukça zenginleşir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Tarih 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-tarih-hafta-3
+#derskutusu #tarih #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-temel-dini-bilgiler-3
+Sıra: 2026-11-25 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-temel-dini-bilgiler-3.png
+
+```
+Bunu biliyor muydunuz? İslam’da iman, inanç esaslarını kalple tasdik edip dille ikrar etmektir; sahih bilgiye dayanan iman, ibadet ve salih amellerle (güzel davranışlarla) desteklendiğinde bireyin ve toplumun hayatını güzelleştirir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Temel Dinî Bilgiler 3. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-temel-dini-bilgiler-hafta-3
+#derskutusu #temeldinibilgiler #9sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
