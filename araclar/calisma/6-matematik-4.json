@@ -1,0 +1,138 @@
+{
+ "sinif": 6,
+ "ders": "matematik",
+ "hafta": 4,
+ "tarih": "5-9 Ekim 2026",
+ "konu": "Deneysel Olasılık",
+ "ciktilar": [
+  "MAT.6.6.1. Bir olayın olasılığını gözleme dayalı tahmin edebilme"
+ ],
+ "hatirla": [
+  "Deney: sonuçları bilinen, tekrarlanabilen, her seferinde tek sonuç veren işlem. Çıktı: deneyin her bir sonucu. Olay: bir ya da birkaç çıktıdan oluşan durum.",
+  "Olasılık spektrumunda 0 imkânsız, 1 kesin olayı gösterir; tahminler deney yapılarak sınanır.",
+  "Sıklık, bir çıktının deneyde kaç kez görüldüğüdür; sıklıkların toplamı deney sayısını verir. Göreli sıklık = olayın sıklığının deney sayısına oranı.",
+  "Deneysel olasılık göreli sıklığa eşittir; kesir, ondalık ya da yüzde olarak yazılır; 0 ile 1 arasındadır. Deney sayıları farklıysa göreli sıklıklar karşılaştırılır."
+ ],
+ "sorular": [
+  {
+   "tur": "tablo",
+   "duzey": "hatirla",
+   "soru": "Görseldeki çark çevrilmekte, torbadan kart çekilmektedir. Her ifadenin deney mi, çıktı mı, olay mı olduğunu tabloya yazınız. İlk satır örnektir.",
+   "basliklar": ["İfade", "Kavram"],
+   "satirlar": [
+    ["Çarkı çevirmek", "deney"],
+    ["Okun kırmızıyı göstermesi", {"b": "çıktı"}],
+    ["Okun kırmızı ya da mavi göstermesi", {"b": "olay"}],
+    ["Torbadan bir kart çekmek", {"b": "deney"}],
+    ["Çekilen kartın 2 olması", {"b": "çıktı"}]
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Bir torbada 2 sarı ve 10 yeşil top vardır. Rastgele çekilen topun sarı olması ve yeşil olması olayları için yapılan tahminler görseldeki spektrumda sırasıyla hangi harflere yerleştirilir?",
+   "secenekler": ["A ve C", "A ve D", "B ve C", "B ve D"],
+   "dogru": 0
+  },
+  {
+   "tur": "kisa",
+   "duzey": "uygula",
+   "soru": "Görseldeki çetele tablosu, dört renkli bir çarkın çevrilmesinde okun gösterdiği renkleri kaydetmektedir. Çark kaç kez çevrilmiştir? En sık gelen renk hangisidir?",
+   "cevap": "12 + 8 + 5 + 15 = 40 kez çevrilmiştir. En sık gelen renk mordur (15).",
+   "satir": 2
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görseldeki kayıt kartına göre sayı küpünün üst yüzüne 3 gelmesi olayının deneysel olasılığı yüzde olarak kaçtır?",
+   "secenekler": ["%7", "%25", "%28", "%32"],
+   "dogru": 2
+  },
+  {
+   "tur": "tablo",
+   "duzey": "uygula",
+   "soru": "Görseldeki sütun grafiği bir sayı küpünün 40 atışının sonuçlarını gösterir. Grafikten yararlanarak tabloyu tamamlayınız. İlk satır örnektir.",
+   "basliklar": ["Sayı", "Sıklık", "Deneysel olasılık"],
+   "satirlar": [
+    ["2", "8", "{kesir:8|40}"],
+    ["4", {"b": "9"}, {"b": "{kesir:9|40}"}],
+    ["6", {"b": "5"}, {"b": "{kesir:5|40}"}],
+    ["1", {"b": "6"}, {"b": "{kesir:6|40}"}]
+   ]
+  },
+  {
+   "tur": "dy",
+   "duzey": "hatirla",
+   "soru": "Deneysel olasılıkla ilgili ifadelerden doğru olanların D, yanlış olanların Y kutusunu işaretleyiniz.",
+   "ifadeler": [
+    {"metin": "Bir deneyin her tekrarında birden fazla sonuç elde edilir.", "dogru": false},
+    {"metin": "Sıklıkların toplamı, deneyin kaç kez yapıldığını verir.", "dogru": true},
+    {"metin": "Bir olayın deneysel olasılığı 1’den büyük olabilir.", "dogru": false},
+    {"metin": "Aynı deneyi aynı sayıda tekrarlayan iki kişi farklı sonuçlar bulabilir.", "dogru": true},
+    {"metin": "Deney sayıları farklı iki olay, yalnız sıklıklarına bakılarak karşılaştırılır.", "dogru": false}
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Görseldeki kartlarda Ayşe ile Can’ın hedefe atış sonuçları verilmiştir. Hedefi isabet ettirme olayının deneysel olasılığı hangisinde daha büyüktür ve bunun gerekçesi nedir?",
+   "secenekler": [
+    "Ayşe; çünkü göreli sıklığı %75, Can’ınki %70’tir.",
+    "Can; çünkü isabet sayısı 35 ile daha fazladır.",
+    "Can; çünkü daha çok atış yapmıştır.",
+    "İkisi de eşittir; çünkü ikisi de atışlarının çoğunu isabet ettirmiştir."
+   ],
+   "dogru": 0
+  },
+  {
+   "tur": "kisa",
+   "duzey": "uygula",
+   "soru": "Görseldeki torbadan top çekilip geri konulmuştur. Nota göre kırmızı top kaç kez çekilmiştir? Kırmızı gelme olayının göreli sıklığını kesir olarak yazınız.",
+   "cevap": "60 × 0,35 = 21 kez çekilmiştir. Göreli sıklık {kesir:21|60} olur.",
+   "satir": 2
+  },
+  {
+   "tur": "siralama",
+   "duzey": "uygula",
+   "soru": "Bir olayın deneysel olasılığını bulma adımlarını 1’den 4’e kadar sıralayınız.",
+   "ogeler": [
+    "Deney aynı koşullarda çok kez tekrarlanır.",
+    "Her tekrarın sonucu çetele tablosuna kaydedilir.",
+    "Olayın sıklığı ve toplam deney sayısı bulunur.",
+    "Olayın sıklığı deney sayısına bölünür."
+   ]
+  },
+  {
+   "tur": "acik",
+   "duzey": "ust",
+   "soru": "Görselde Deniz’in tahmini ve deney sonucu verilmiştir. Deneyin sonucu tahminle uyumlu mudur? Deney daha çok tekrarlanırsa göreli sıklık için ne söylenebilir?",
+   "cevap": "Uyumludur: {kesir:23|50} = 0,46, yani {kesir:1|2}’ye yakındır. Deney daha çok tekrarlanırsa göreli sıklık değişebilir; ancak olasılık değeri için daha sağlam bir dayanak elde edilir.",
+   "satir": 4
+  },
+  {
+   "tur": "sifre",
+   "duzey": "hatirla",
+   "soru": "İpuçlarına uyan kelimeleri kutulara yazınız. Turuncu kutulardaki harfler, bir ya da birkaç çıktıdan oluşan durumun adını verir.",
+   "satirlar": [
+    {"ipucu": "Sıklıkların … deney sayısını verir.", "cevap": "TOPLAMI", "anahtar": 1},
+    {"ipucu": "Çizgi çizerek kayıt tutulan tablo: … tablosu", "cevap": "ÇETELE", "anahtar": 4},
+    {"ipucu": "Okun bir rengi gösterdiği dönen araç", "cevap": "ÇARK", "anahtar": 1},
+    {"ipucu": "Göreli sıklığın % işaretiyle yazılışı", "cevap": "YÜZDE", "anahtar": 0}
+   ],
+   "sonuc": "OLAY"
+  },
+  {
+   "tur": "eslestir",
+   "duzey": "hatirla",
+   "soru": "Soldaki kavramların açıklamalarını sağdaki listeden bulunuz; harfleri kutulara yazınız.",
+   "ciftler": [
+    ["deney", "Tekrarlanabilen, sonuçları bilinen işlem"],
+    ["spektrum", "Olasılığı 0 ile 1 arasında gösteren çizgi"],
+    ["sıklık", "Olayın deneyde gerçekleşme sayısı"],
+    ["deneysel olasılık", "Göreli sıklığa eşit olan değer"],
+    ["kesin olay", "Spektrumda 1 ile gösterilen olay"]
+   ]
+  }
+ ],
+ "yayin_tarihi": "2026-10-18"
+}
