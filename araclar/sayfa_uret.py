@@ -29,7 +29,7 @@ SAYAC = '''<!-- Cloudflare Web Analytics --><script type='module' src='https://s
 # Site ağacı (kullanıcı 11.10.2026): her sayfa kendi dalının kitlesini taşır (üst menü vurgusu, kayan şerit süzgeci).
 KITLE_OGRENCI = ('ogrenci.html', 'kelime.html', 'arapca.html', 'sinav.html')
 KITLE_OGRETMEN = ('ogretmen.html', 'planlar.html', 'yazili.html', 'belgeler.html', 'kpss.html')
-AGAC_CSS = '<link rel="stylesheet" href="/agac.css?v=20261013-2">'
+AGAC_CSS = '<link rel="stylesheet" href="/agac.css?v=20261017-1">'
 
 
 def kitle_bul(ad):
