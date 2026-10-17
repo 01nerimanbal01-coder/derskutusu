@@ -1,0 +1,225 @@
+{
+ "ad": "12-matematik-3",
+ "sinif": 12,
+ "ders": "matematik",
+ "ders_adi": "Matematik",
+ "hafta": 3,
+ "tarih": "28 Eylül - 2 Ekim 2026",
+ "yayin_tarihi": "2026-10-17",
+ "unite": "SAYILAR VE CEBİR",
+ "konu": "Logaritma Fonksiyonunun Özellikleri, Taban Değiştirme Kuralı ve Uygulamaları",
+ "ciktilar": [
+  "12.1.2.3. Logaritma fonksiyonunun özelliklerini kullanarak işlemler yapar."
+ ],
+ "giris": "Geçen hafta üstel fonksiyonun tersi olarak logaritma fonksiyonunu, en geniş tanım kümesini, grafiğini, 10 tabanında (adi) logaritma ile {koyu:e} tabanında (doğal) logaritmayı öğrenmiştik. Bu hafta ise 17. yüzyılda {koyu:John Napier} ve {koyu:Henry Briggs}'in astronomi ve denizcilikteki çok basamaklı çarpma-bölme işlemlerini toplama-çıkarmaya indirgeyerek bilim dünyasında devrim yaratan {koyu:logaritma fonksiyonunun özelliklerini}, {koyu:taban değiştirme kuralını}, zincirleme çarpımları ve {koyu:çok büyük üslü sayıların basamak sayısını bulma} yöntemlerini inceleyeceğiz.",
+ "ozet": [
+  "Tanımlı olduğu aralıkta ({koyu:a ∈ ℝ⁺ − (1)}) her tabanda 1'in logaritması sıfır ({koyu:logₐ 1 = 0}), tabanın kendisine göre logaritması ise 1'dir ({koyu:logₐ a = 1}; özel olarak {koyu:log 10 = 1} ve {koyu:ln e = 1}).",
+  "{koyu:Çarpımın logaritması}, çarpanların logaritmaları toplamına eşittir ({koyu:logₐ(x · y) = logₐ x + logₐ y}); {koyu:bölümün logaritması} ise payın logaritmasından paydanın logaritmasının çıkarılmasına eşittir ({koyu:logₐ({kesir:x|y}) = logₐ x - logₐ y}).",
+  "Logaritması alınan pozitif sayının üssü başa çarpan olarak, tabanın üssü ise başa bölen (paydaya) olarak iner: {koyu:logₐ({us:x|n}) = n · logₐ x} ve {koyu:log_{us:a|m}({us:x|n}) = {kesir:n|m} · logₐ x}.",
+  "{koyu:Taban değiştirme kuralına} göre {koyu:a} tabanındaki bir logaritma herhangi bir {koyu:c} tabanında {koyu:logₐ b = {kesir:log_c b|log_c a} = {kesir:log b|log a} = {kesir:ln b|ln a}} şeklinde yazılır; buradan {koyu:logₐ b = {kesir:1|log_b a}} ve {koyu:logₐ b · log_b c · log_c d = logₐ d} sonuçları elde edilir.",
+  "Üstünde logaritma bulunan üslü ifadelerde taban ile logaritmanın içi yer değiştirebilir: {koyu:{us:a|log_b c} = {us:c|log_b a}} ve özel olarak {koyu:{us:a|logₐ x} = x} eşitliği sağlanır.",
+  "1'den büyük bir {koyu:A} doğal sayısının kaç basamaklı olduğunu bulmak için 10 tabanında logaritması alınır; {koyu:log A}'nın tam kısmına (karakteristiğine) {koyu:1 eklenerek} sayının {koyu:basamak sayısı} bulunur."
+ ],
+ "bolumler": [
+  {
+   "baslik": "1. Temel Logaritma Özdeşlikleri ve Çarpım / Bölüm Kuralları",
+   "metin": [
+    "{koyu:a ∈ ℝ⁺ − (1)} ve {koyu:x, y ∈ ℝ⁺} olmak üzere üstel fonksiyonun özelliklerinden doğrudan elde edilen temel logaritma kuralları şunlardır:\n• {koyu:1. Özdeşlik:} {koyu:{us:a|0} = 1} olduğundan her tabanda 1 sayısının logaritması sıfırdır:\n  {koyu:logₐ 1 = 0}   (Özel olarak: {koyu:log 1 = 0} ve {koyu:ln 1 = 0}).\n• {koyu:2. Özdeşlik:} {koyu:{us:a|1} = a} olduğundan her tabanın kendisine göre logaritması 1'dir:\n  {koyu:logₐ a = 1}   (Özel olarak: {koyu:log 10 = 1} ve {koyu:ln e = 1}).",
+    "• {koyu:3. Çarpımın Logaritması Kuralı:} İki pozitif gerçek sayının çarpımının logaritması, bu sayıların ayrı ayrı logaritmalarının {koyu:toplamına} eşittir:\n  {koyu:logₐ(x · y) = logₐ x + logₐ y}\n  Örnek: {koyu:log₆ 12 + log₆ 3 = log₆(12 · 3) = log₆ 36 = log₆({us:6|2}) = 2}.\n• {koyu:4. Bölümün Logaritması Kuralı:} İki pozitif gerçek sayının bölümünün logaritması, payın logaritması ile paydanın logaritmasının {koyu:farkına} eşittir:\n  {koyu:logₐ({kesir:x|y}) = logₐ x - logₐ y}\n  Örnek: {koyu:log₅ 100 - log₅ 4 = log₅({kesir:100|4}) = log₅ 25 = 2}."
+   ],
+   "kutu": {
+    "tur": "uyari",
+    "baslik": "Çok Önemli Uyarı: Toplamın veya Farkın Logaritması Parçalanamaz!",
+    "metin": "Öğrencilerin en sık düştüğü kavram yanılgısı şudur:\n• {koyu:logₐ(x + y) ≠ logₐ x + logₐ y}  ve  {koyu:logₐ(x - y) ≠ logₐ x - logₐ y}!\nToplama ve çıkarma işlemleri logaritmanın {koyu:içinde} değil, {koyu:dışında} olduğunda çarpma ve bölmeye dönüşür!"
+   },
+   "gorsel": "<svg viewBox=\"0 0 740 265\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:740px;display:block;margin:14px auto;background:#fff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><rect x=\"0\" y=\"0\" width=\"740\" height=\"38\" rx=\"10\" fill=\"#1d4ed8\"/><rect x=\"0\" y=\"20\" width=\"740\" height=\"18\" fill=\"#1d4ed8\"/><text x=\"370\" y=\"25\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">LOGARİTMA FONKSİYONUNUN TEMEL ÖZELLİKLERİ (a > 0, a ≠ 1)</text><rect x=\"20\" y=\"52\" width=\"340\" height=\"195\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.8\"/><text x=\"190\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">TEMEL VE ÇARPIM / BÖLÜM KURALLARI</text><line x1=\"30\" y1=\"82\" x2=\"350\" y2=\"82\" stroke=\"#3b82f6\" stroke-width=\"1\"/><text x=\"190\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">1) log_a(1) = 0   ve   log_a(a) = 1</text><text x=\"190\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   ln(1) = 0, ln(e) = 1  |  log(1) = 0, log(10) = 1</text><text x=\"190\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">2) Çarpımın Logaritması (Toplama dönüşür):</text><text x=\"190\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   log_a(x · y) = log_a(x) + log_a(y)</text><text x=\"190\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">3) Bölümün Logaritması (Farka dönüşür):</text><text x=\"190\" y=\"190\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   log_a(x / y) = log_a(x) - log_a(y)</text><rect x=\"380\" y=\"52\" width=\"340\" height=\"195\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.8\"/><text x=\"550\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#14532d\" text-anchor=\"middle\">KUVVET VE ÜS ÖZELLİKLERİ</text><line x1=\"390\" y1=\"82\" x2=\"710\" y2=\"82\" stroke=\"#16a34a\" stroke-width=\"1\"/><text x=\"550\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">4) Üssün Başa Çarpan İnişi:</text><text x=\"550\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   log_a(x^n) = n · log_a(x)</text><text x=\"550\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">5) Hem Tabanın Hem İçerinin Üssü:</text><text x=\"550\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   log_(a^m)(x^n) = (n / m) · log_a(x)</text><text x=\"550\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">6) Üstteki Logaritmada Yer Değiştirme:</text><text x=\"550\" y=\"190\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   a^(log_b(c)) = c^(log_b(a))  ve  a^(log_a(x)) = x</text></svg>"
+  },
+  {
+   "baslik": "2. Kuvvet (Üs) Kuralları ve Köklü İfadelerin Logaritması",
+   "metin": [
+    "Logaritması alınan ifadenin veya tabanın kuvveti varsa, bu üsler logaritmanın önüne katsayı olarak indirilir:\n• {koyu:1. İçerideki Sayının Üssü:} {koyu:logₐ({us:x|n}) = n · logₐ x}\n  Örnek: {koyu:ln({us:e|5}) = 5 · ln e = 5 · 1 = 5}.\n• {koyu:2. Hem Tabanın Hem İçerideki Sayının Üssü:} İçerideki sayının üssü ({koyu:n}) paya, tabanın üssü ({koyu:m}) ise paydaya gelir:\n  {koyu:log_{us:a|m}({us:x|n}) = {kesir:n|m} · logₐ x}\n  Örnek: {koyu:log₈ 16 = log_{us:2|3}({us:2|4}) = {kesir:4|3} · log₂ 2 = {kesir:4|3}}.",
+    "{koyu:Köklü İfadelerde Uygulama:} Köklü ifadeler rasyonel üslü sayıya ({koyu:{us:x|n/m} = {us:x|n/m}}) çevrilerek logaritması kolayca hesaplanır.\nÖrnek: {koyu:log_{kok:3}(9 · {kok:3|3})} ifadesinde taban {koyu:{kok:3} = {us:3|1/2}}, iç kısım ise {koyu:{us:3|2} · {us:3|1/3} = {us:3|7/3}} olduğundan:\n{koyu:log_{us:3|1/2}({us:3|7/3}) = {kesir:7/3|1/2} · log₃ 3 = {kesir:7|3} · {kesir:2|1} = {kesir:14|3}} bulunur."
+   ],
+   "gorsel": "<svg viewBox=\"0 0 740 255\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:740px;display:block;margin:14px auto;background:#fff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><rect x=\"0\" y=\"0\" width=\"740\" height=\"38\" rx=\"10\" fill=\"#0f766e\"/><rect x=\"0\" y=\"20\" width=\"740\" height=\"18\" fill=\"#0f766e\"/><text x=\"370\" y=\"25\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">TABAN DEĞİŞTİRME KURALI VE ÖNEMLİ SONUÇLARI</text><rect x=\"20\" y=\"52\" width=\"340\" height=\"185\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#10b981\" stroke-width=\"1.8\"/><text x=\"190\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#065f46\" text-anchor=\"middle\">TABAN DEĞİŞTİRME FORMÜLÜ</text><line x1=\"30\" y1=\"82\" x2=\"350\" y2=\"82\" stroke=\"#10b981\" stroke-width=\"1\"/><text x=\"190\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• a tabanındaki log_a(b) ifadesini c tabanına çevirme:</text><text x=\"190\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  log_a(b) = log_c(b) / log_c(a)</text><text x=\"190\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• 10 tabanında: log_a(b) = log(b) / log(a)</text><text x=\"190\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Doğal tabanda (e): log_a(b) = ln(b) / ln(a)</text><text x=\"190\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Ters Çevirme Sonucu: log_a(b) = 1 / log_b(a)</text><rect x=\"380\" y=\"52\" width=\"340\" height=\"185\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\" stroke-width=\"1.8\"/><text x=\"550\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#854d0e\" text-anchor=\"middle\">ZİNCİRLEME ÇARPIM VE GENİŞLETME</text><line x1=\"390\" y1=\"82\" x2=\"710\" y2=\"82\" stroke=\"#eab308\" stroke-width=\"1\"/><text x=\"550\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">1) Çarpımsal Terslik:</text><text x=\"550\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   log_a(b) · log_b(a) = 1</text><text x=\"550\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">2) Zincirleme Sadeleşme Kuralı:</text><text x=\"550\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   log_a(b) · log_b(c) · log_c(d) = log_a(d)</text><text x=\"550\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">3) Aynı Kuvvetle Genişletme / Sadeleştirme:</text><text x=\"550\" y=\"190\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   log_a(b) = log_(a^k)(b^k)</text></svg>"
+  },
+  {
+   "baslik": "3. Taban Değiştirme Kuralı ve Zincirleme Çarpım Özdeşlikleri",
+   "metin": [
+    "Farklı tabanlarda verilen logaritmik ifadelerle işlem yapabilmek için tüm ifadeleri ortak bir tabanda buluşturan {koyu:Taban Değiştirme Kuralı} kullanılır. {koyu:a, c ∈ ℝ⁺ − (1)} ve {koyu:b ∈ ℝ⁺} olmak üzere {koyu:a} tabanındaki {koyu:logₐ b} ifadesi, {koyu:c} tabanında şöyle yazılır:\n{koyu:logₐ b = {kesir:log_c b|log_c a} = {kesir:log b|log a} = {kesir:ln b|ln a}}",
+    "Taban değiştirme kuralından türeyen ve soru çözümlerini saniyelere indiren {koyu:dört önemli sonuç} şunlardır:\n• {koyu:Sonuç 1 (Taban ile İçi Yer Değiştirme):} {koyu:c = b} seçilirse:\n  {koyu:logₐ b = {kesir:1|log_b a}}  veya  {koyu:logₐ b · log_b a = 1}  (Örn: {koyu:log₂ 5 · log₅ 2 = 1}).\n• {koyu:Sonuç 2 (Zincirleme Çarpım / Sadeleşme):} Çarpım durumundaki logaritmalarda çapraz taban ve içler birbirini götürür:\n  {koyu:logₐ b · log_b c · log_c d = logₐ d}\n  Örnek: {koyu:log₂ 5 · log₅ 7 · log₇ 8 = log₂ 8 = log₂({us:2|3}) = 3}.\n• {koyu:Sonuç 3 (Aynı Kuvveti Alma):} Tabanın ve içerideki sayının aynı kuvveti (veya kökü) alınırsa logaritmanın değeri değişmez:\n  {koyu:logₐ b = log_{us:a|n}({us:b|n})}  (Örn: {koyu:log_{kok:2}({kok:5}) = log₂ 5}).\n• {koyu:Sonuç 4 (Paydadaki Logaritmayı Paya Çıkarma):}\n  {koyu:{kesir:1|logₐ x} + {kesir:1|log_b x} = log_x a + log_x b = log_x(a · b)}."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Pratik İpucu: 'Üstteki Paya, Alttaki Paydaya!'",
+    "metin": "Taban değiştirme yaparken {koyu:logₐ b} ifadesinde yazılış olarak üstte duran {koyu:b} yeni kesrin {koyu:payına} ({koyu:log_c b}), altta duran taban {koyu:a} ise yeni kesrin {koyu:paydasına} ({koyu:log_c a}) yazılır. Tersten okursak: Aynı tabanlı iki logaritmanın bölümü {koyu:{kesir:log_c b|log_c a} = logₐ b} verir!"
+   },
+   "gorsel": "<svg viewBox=\"0 0 740 250\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:740px;display:block;margin:14px auto;background:#fff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><rect x=\"0\" y=\"0\" width=\"740\" height=\"38\" rx=\"10\" fill=\"#b91c1c\"/><rect x=\"0\" y=\"20\" width=\"740\" height=\"18\" fill=\"#b91c1c\"/><text x=\"370\" y=\"25\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">DİKKAT: LOGARİTMADA EN SIK YAPILAN KAVRAM YANILGILARI!</text><rect x=\"20\" y=\"52\" width=\"340\" height=\"180\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#ef4444\" stroke-width=\"1.8\"/><text x=\"190\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#991b1b\" text-anchor=\"middle\">YANLIŞ KULLANIMLAR (ASLA YAPMAYIN!)</text><line x1=\"30\" y1=\"82\" x2=\"350\" y2=\"82\" stroke=\"#ef4444\" stroke-width=\"1\"/><text x=\"190\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• YANLIŞ: log_a(x + y) ≠ log_a(x) + log_a(y)</text><text x=\"190\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• YANLIŞ: log_a(x - y) ≠ log_a(x) - log_a(y)</text><text x=\"190\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  (Toplamın veya farkın logaritması parçalanamaz!)</text><text x=\"190\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• YANLIŞ: (log_a(x)) / (log_a(y)) ≠ log_a(x - y)</text><text x=\"190\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• YANLIŞ: (log_a(x))^n ≠ n · log_a(x)</text><rect x=\"380\" y=\"52\" width=\"340\" height=\"180\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#10b981\" stroke-width=\"1.8\"/><text x=\"550\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#065f46\" text-anchor=\"middle\">DOĞRU KARŞILIKLARI</text><line x1=\"390\" y1=\"82\" x2=\"710\" y2=\"82\" stroke=\"#10b981\" stroke-width=\"1\"/><text x=\"550\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• DOĞRU: log_a(x · y) = log_a(x) + log_a(y)</text><text x=\"550\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• DOĞRU: log_a(x / y) = log_a(x) - log_a(y)</text><text x=\"550\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• DOĞRU: (log_a(x)) / (log_a(y)) = log_y(x)</text><text x=\"550\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  (Bölüm şeklindeki iki logaritma taban değiştirmedir!)</text><text x=\"550\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• DOĞRU: log_a(x^n) = n · log_a(x)</text></svg>"
+  },
+  {
+   "baslik": "4. Üslü İfadenin Kuvvetinde Logaritma Bulunması Kuralları",
+   "metin": [
+    "Bir üslü ifadenin üssünde logaritma yer alıyorsa şu iki altın kural uygulanır:\n• {koyu:Kural 1 (Bileşke Özdeşliği):} Üslü ifadenin tabanı ile üssündeki logaritmanın tabanı aynı ise birbirini götürür ve geriye yalnız logaritmanın içindeki sayı kalır:\n  {koyu:{us:a|logₐ x} = x}  ve  {koyu:{us:e|ln x} = x}  ve  {koyu:{us:10|log x} = x}\n  Örnek: {koyu:{us:5|log₅ 12} = 12}  |  {koyu:{us:e|ln 7} = 7}  |  {koyu:{us:10|2 + log 3} = {us:10|2} · {us:10|log 3} = 100 · 3 = 300}.",
+    "• {koyu:Kural 2 (Taban ve İç Değiştirme Kuralı):} Üslü ifadenin tabanı ({koyu:a}) ile üssündeki logaritmanın içi ({koyu:c}) yer değiştirdiğinde ifadenin değeri değişmez:\n  {koyu:{us:a|log_b c} = {us:c|log_b a}}\n  Örnek: {koyu:{us:27|log₃ 5} = {us:5|log₃ 27} = {us:5|3} = 125}!"
+   ],
+   "gorsel": "<svg viewBox=\"0 0 740 245\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:740px;display:block;margin:14px auto;background:#fff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><rect x=\"0\" y=\"0\" width=\"740\" height=\"38\" rx=\"10\" fill=\"#6d28d9\"/><rect x=\"0\" y=\"20\" width=\"740\" height=\"18\" fill=\"#6d28d9\"/><text x=\"370\" y=\"25\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">10 TABANINDA LOGARİTMA İLE BASAMAK SAYISI BULMA</text><rect x=\"20\" y=\"52\" width=\"340\" height=\"175\" rx=\"8\" fill=\"#f5f3ff\" stroke=\"#8b5cf6\" stroke-width=\"1.8\"/><text x=\"190\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#5b21b6\" text-anchor=\"middle\">TAM KISIM (KARAKTERİSTİK) VE BASAMAK SAYISI</text><line x1=\"30\" y1=\"82\" x2=\"350\" y2=\"82\" stroke=\"#8b5cf6\" stroke-width=\"1\"/><text x=\"190\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• A > 1 bir doğal sayı olmak üzere:</text><text x=\"190\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  log(A) = n,xyz... ise A sayısı (n + 1) BASAMAKLIDIR!</text><text x=\"190\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Formül: Basamak Sayısı = Tam Değer[log(A)] + 1</text><text x=\"190\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Örnek: log(2) ≈ 0,301 ise 2^100 sayısının basamak sayısı:</text><text x=\"190\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  log(2^100) = 100 · 0,301 = 30,1 -> 30 + 1 = 31 basamaklı!</text><rect x=\"380\" y=\"52\" width=\"340\" height=\"175\" rx=\"8\" fill=\"#fdf4ff\" stroke=\"#d946ef\" stroke-width=\"1.8\"/><text x=\"550\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#86198f\" text-anchor=\"middle\">LOGARİTMALI İFADELERDE ARALIK BULMA</text><line x1=\"390\" y1=\"82\" x2=\"710\" y2=\"82\" stroke=\"#d946ef\" stroke-width=\"1\"/><text x=\"550\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• x = log_a(b) sayısının hangi iki tam sayı arasında</text><text x=\"550\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  olduğunu bulmak için b sayısı a'nın ardışık iki</text><text x=\"550\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  tam sayı kuvveti arasına sıkıştırılır:</text><text x=\"550\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Örnek: x = log_3(50) için 3^3 = 27 < 50 < 81 = 3^4</text><text x=\"550\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  olduğundan 3 < log_3(50) < 4 bulunur.</text></svg>"
+  },
+  {
+   "baslik": "5. Verilen Bir Logaritma Değerinden Başka Bir Logaritmayı Cinsinden Yazma",
+   "metin": [
+    "Sınavlarda çok sık sorulan {koyu:'log₂ 3 = a ve log₃ 5 = b olduğuna göre log₁₂ 30 ifadesinin a ve b türünden eşiti nedir?'} tarzı sorularda şu 3 adımlı standart yöntem izlenir:\n1. {koyu:Ortak Sayıyı Yeni Taban Seç:} Verilen bilgilerde en çok tekrar eden asal sayıyı (bu örnekte her ikisinde de ortak olan {koyu:3} sayısını) ortak taban seç!\n2. {koyu:İstenen İfadeyi Seçtiğin Tabana Çevir:} {koyu:log₁₂ 30 = {kesir:log₃ 30|log₃ 12}}.\n3. {koyu:Sayıları Asal Çarpanlarına Ayırıp Parçala:}\n   • Pay: {koyu:log₃ 30 = log₃(2 · 3 · 5) = log₃ 2 + log₃ 3 + log₃ 5 = {kesir:1|a} + 1 + b}\n   • Payda: {koyu:log₃ 12 = log₃({us:2|2} · 3) = 2 · log₃ 2 + log₃ 3 = {kesir:2|a} + 1}\n   Pay ve payda {koyu:a} ile genişletildiğinde sonuç {koyu:{kesir:1 + a + a·b|2 + a}} olarak kolayca bulunur!"
+   ],
+   "kutu": {
+    "tur": "onemli",
+    "baslik": "Altın Bilgi: log 2 + log 5 = 1 Özdeşliği!",
+    "metin": "10 tabanındaki logaritma sorularında genellikle yalnız {koyu:log 2 ≈ 0,301} verilir ve {koyu:log 5} sorulur. Unutmayın:\n{koyu:log 2 + log 5 = log(2 · 5) = log 10 = 1}\nolduğundan {koyu:log 5 = 1 - log 2} ve {koyu:log 2 = 1 - log 5} eşitliği her zaman geçerlidir!"
+   }
+  },
+  {
+   "baslik": "6. 10 Tabanında Logaritma İle Çok Büyük Sayıların Basamak Sayısını Bulma",
+   "metin": [
+    "10 tabanındaki logaritma ({koyu:log x}), bir sayının 10'un kaçıncı kuvvetleri arasında yer aldığını, dolayısıyla {koyu:kaç basamaklı bir sayı olduğunu} doğrudan söyler:\n• {koyu:10¹ = 10} (2 basamaklı) → {koyu:log 10 = 1}\n• {koyu:10² = 100} (3 basamaklı) → {koyu:log 100 = 2}\n• {koyu:10³ = 1000} (4 basamaklı) → {koyu:log 1000 = 3}\nBuradan görüldüğü üzere 1'den büyük herhangi bir {koyu:A} doğal sayısı için {koyu:log A = n,xyz...} (tam kısmı {koyu:n}) ise, {koyu:A} sayısı {koyu:(n + 1) basamaklıdır}!",
+    "{koyu:Örnek Uygulama:} {koyu:log 2 ≈ 0,30103} olduğuna göre {koyu:A = {us:2|50}} sayısı kaç basamaklıdır?\n• {koyu:log A = log({us:2|50}) = 50 · log 2 = 50 · 0,30103 = 15,0515}\n• Bulunan değerin tam kısmı {koyu:15} olduğu için {koyu:{us:2|50}} sayısı {koyu:15 + 1 = 16 basamaklıdır}!"
+   ]
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "log₃ 54 + log₃ 2 - log₃ 4 işleminin sonucu kaçtır?",
+   "cevap": "Tabanlar aynı (3 tabanı) olduğu için toplamada içler çarpılır, çıkarmada bölünür:\n{koyu:log₃ 54 + log₃ 2 - log₃ 4 = log₃({kesir:54 · 2|4}) = log₃({kesir:108|4}) = log₃ 27}\n{koyu:27 = {us:3|3}} olduğundan:\n{koyu:log₃({us:3|3}) = 3 · log₃ 3 = 3 · 1 = 3} bulunur."
+  },
+  {
+   "soru": "log₄ 9 · log₂₇ 32 · log₂ 3 işleminin sonucunu bulunuz.",
+   "cevap": "Önce sayıları asal tabanların kuvvetleri biçiminde yazıp üsleri başa katsayı olarak çıkaralım:\n• {koyu:log₄ 9 = log_{us:2|2}({us:3|2}) = {kesir:2|2} · log₂ 3 = log₂ 3}\n• {koyu:log₂₇ 32 = log_{us:3|3}({us:2|5}) = {kesir:5|3} · log₃ 2}\nŞimdi çarpımı yazalım:\n{koyu:(log₂ 3) · ({kesir:5|3} · log₃ 2) · (log₂ 3)}\n{koyu:log₂ 3 · log₃ 2 = 1} olduğundan soru {koyu:{kesir:5|3} · log₂ 3} (veya son çarpan {koyu:log₃ 8 = 3·log₃ 2} ise tam sayı) şeklinde sadeleşir."
+  },
+  {
+   "soru": "{kesir:1|log₂ 60} + {kesir:1|log₃ 60} + {kesir:1|log₁₀ 60} işleminin sonucu kaçtır?",
+   "cevap": "Taban değiştirme kuralının tersinden {koyu:{kesir:1|logₐ b} = log_b a} özelliğini kullanalım:\n• {koyu:{kesir:1|log₂ 60} = log₆₀ 2}\n• {koyu:{kesir:1|log₃ 60} = log₆₀ 3}\n• {koyu:{kesir:1|log₁₀ 60} = log₆₀ 10}\nÜç ifadeyi topladığımızda tabanlar eşit (60 tabanı) olduğundan içler çarpılır:\n{koyu:log₆₀ 2 + log₆₀ 3 + log₆₀ 10 = log₆₀(2 · 3 · 10) = log₆₀ 60 = 1} bulunur."
+  },
+  {
+   "soru": "log 2 = x olduğuna göre log 250 ifadesinin x türünden eşitini bulunuz.",
+   "cevap": "10 tabanında 250 sayısını 10 ve 2 cinsinden yazalım ({koyu:250 = {kesir:1000|4} = {kesir:{us:10|3}|{us:2|2}}}):\n{koyu:log 250 = log({kesir:{us:10|3}|{us:2|2}}) = log({us:10|3}) - log({us:2|2}) = 3 · log 10 - 2 · log 2}\n{koyu:log 10 = 1} ve {koyu:log 2 = x} olduğundan sonuç {koyu:3 - 2x} bulunur.\n(İkinci yol: {koyu:log 250 = log(25 · 10) = 2·log 5 + 1 = 2(1 - x) + 1 = 3 - 2x})."
+  },
+  {
+   "soru": "log 3 ≈ 0,4771 olduğuna göre 9²⁰ sayısı kaç basamaklı bir doğal sayıdır?",
+   "cevap": "Sayımıza {koyu:A = {us:9|20} = {us:({us:3|2})|20} = {us:3|40}} diyelim ve 10 tabanında logaritmasını alalım:\n{koyu:log A = log({us:3|40}) = 40 · log 3 = 40 · 0,4771 = 19,084}\nBulunan {koyu:19,084} sayısının tam kısmı {koyu:19} olduğu için basamak sayısı {koyu:19 + 1 = 20 basamaklıdır}."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "log₂ 24 - log₂ 3 + log₃ 9 işleminin sonucu aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "3",
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   "dogru": 2,
+   "aciklama": "{koyu:log₂ 24 - log₂ 3 = log₂({kesir:24|3}) = log₂ 8 = 3} ve {koyu:log₃ 9 = log₃({us:3|2}) = 2} olduğundan toplam {koyu:3 + 2 = 5} bulunur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "{us:4|log₂ 5} + {us:e|ln 6} işleminin sonucu kaçtır?",
+   "secenekler": [
+    "16",
+    "21",
+    "26",
+    "31",
+    "36"
+   ],
+   "dogru": 3,
+   "aciklama": "{koyu:{us:4|log₂ 5} = {us:5|log₂ 4} = {us:5|2} = 25} ve {koyu:{us:e|ln 6} = 6} olduğundan {koyu:25 + 6 = 31} bulunur."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "Pozitif gerçek sayılarda log_a(x + y) = log_a(x) + log_a(y) eşitliği her zaman doğrudur.",
+     "dogru": false,
+     "aciklama": "Bu ifade {koyu:yanlıştır}. Toplamın logaritması parçalanamaz; doğru kural çarpımın logaritmasıdır: {koyu:logₐ(x · y) = logₐ x + logₐ y}."
+    }
+   ]
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "10 tabanında log 2 + log 5 işleminin sonucu 1'e eşittir.",
+     "dogru": true,
+     "aciklama": "Bu ifade {koyu:doğrudur}. {koyu:log 2 + log 5 = log(2 · 5) = log 10 = 1} olur."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "soru": "Aşağıdaki logaritmik ifadeleri eşit oldukları değerlerle eşleştiriniz.",
+   "ciftler": [
+    [
+     "log_a(x · y)",
+     "log_a(x) + log_a(y)"
+    ],
+    [
+     "log_a(x / y)",
+     "log_a(x) - log_a(y)"
+    ],
+    [
+     "log_(a^m)(x^n)",
+     "(n / m) · log_a(x)"
+    ],
+    [
+     "log_a(b) · log_b(c)",
+     "log_a(c)"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Cümlelerdeki boşlukları uygun kelimelerle tamamlayınız.",
+   "cumleler": [
+    {
+     "metin": "Tanımlı olduğu her tabanda 1 sayısının logaritması (log_a 1) daima ___ sayısına eşittir.",
+     "cevap": "0"
+    },
+    {
+     "metin": "Taban değiştirme kuralına göre log_a(b) ile log_b(a) ifadelerinin çarpımı daima ___ sayısına eşittir.",
+     "cevap": "1"
+    }
+   ],
+   "fazla": [
+    "a",
+    "10"
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Cümlelerdeki boşlukları uygun kelimelerle tamamlayınız.",
+   "cumleler": [
+    {
+     "metin": "1'den büyük bir A doğal sayısının 10 tabanındaki logaritması log A = 24,63 ise A sayısı ___ basamaklıdır.",
+     "cevap": "25"
+    },
+    {
+     "metin": "Doğal logaritma tabanı olan e sayısının eleni (ln e) ___ sayısına eşittir.",
+     "cevap": "1"
+    }
+   ],
+   "fazla": [
+    "24",
+    "0"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Karmaşık bir logaritma işlemini çözerken izlenecek 3 adımı değerlendiriniz.",
+   "ipuclari": [
+    "1. Adım: Sayıları Asal Kuvvetlere Çevir: 8 = 2³, 9 = 3², kök(5) = 5^(1/2) şeklinde yazıp üsleri log_(a^m)(x^n) = (n/m)·log_a(x) ile başa indir.",
+    "2. Adım: Tabanları Eşitle: Farklı tabanlar varsa Taban Değiştirme Kuralı (log_a(b) = log_c(b) / log_c(a)) veya 1 / log_b(a) = log_a(b) uygula.",
+    "3. Adım: Çarpım ve Bölüm Kurallarıyla Birleştir: Aynı tabanda toplama varsa içleri çarp, çıkarma varsa içleri böl."
+   ],
+   "cevap": "1) Tüm sayıları asal tabanların üslü biçimine çevir.\n2) {koyu:log_{us:a|m}({us:x|n}) = {kesir:n|m} · logₐ x} ve {koyu:{kesir:1|log_b a} = logₐ b} kurallarıyla tabanları eşitle.\n3) {koyu:logₐ x + logₐ y = logₐ(x·y)} ile tek logaritmada toplayıp sonucu bul."
+  }
+ ]
+}

@@ -1,0 +1,233 @@
+{
+ "ad": "12-fizik-3",
+ "sinif": 12,
+ "ders": "fizik",
+ "ders_adi": "Fizik",
+ "hafta": 3,
+ "tarih": "28 Eylül - 2 Ekim 2026",
+ "yayin_tarihi": "2026-10-17",
+ "unite": "1. ÜNİTE: ÇEMBERSEL HAREKET",
+ "konu": "Dönerek Öteleme Hareketi, Eylemsizlik Momenti ve Dönme Kinetik Enerjisi",
+ "ciktilar": [
+  "12.1.2.1. Dönerek öteleme hareketini analiz eder.",
+  "12.1.2.2. Eylemsizlik momenti kavramını açıklar.",
+  "12.1.2.3. Dönme ve dönerek öteleme hareketi yapan cismin kinetik enerjisinin bağlı olduğu değişkenleri açıklar."
+ ],
+ "giris": "Bir otomobil yolda ilerlerken şasisinin hareketi saf {koyu:öteleme}, sabit bir mil etrafında dönen vantilatör pervanesinin hareketi saf {koyu:dönme}, yolda kaymadan yuvarlanan otomobil tekerleğinin hareketi ise hem dönme hem ötelemeyi birleştiren {koyu:dönerek öteleme hareketidir}. Bu hafta kaymadan dönerek öteleme hareketi yapan bir tekerlek üzerindeki noktaların anlık hız analizini, dönme hareketine karşı direncin ölçüsü olan {koyu:eylemsizlik momentini (I)} ve {koyu:dönme kinetik enerjisi ile toplam kinetik enerji} hesaplamalarını ayrıntılı olarak öğreneceğiz.",
+ "ozet": [
+  "Bir cismin kütle merkezinin yer değiştirmesiyle birlikte kendi ekseni etrafında dönerek ilerlemesine {koyu:dönerek öteleme (yuvarlanma) hareketi} denir; r yarıçaplı tekerlek kaymadan 1 tam tur döndüğünde kütle merkezi yatayda çemberin çevresi kadar ({koyu:Δx = 2πr}) yol alır.",
+  "Kaymadan dönerek öteleme yapan tekerleğin kütle merkezinin hızı {koyu:v} ise; tekerlek üzerindeki her noktanın {koyu:öteleme hızı v} (hareket yönünde) ve çember üzerindeki noktaların {koyu:dönme hızı büyüklüğü v} (yarıçapa dik) olur.",
+  "Herhangi bir noktanın {koyu:yere göre anlık hızı}, o noktanın öteleme hızı ile dönme hızının {koyu:vektörel toplamıdır}: Yere değme noktasında (M) {koyu:v_M = 0}, merkezde (O) {koyu:v_O = v}, yan noktalarda (L, N) {koyu:v_L = v·{kok:2}}, en üst noktada (K) ise {koyu:v_K = 2v} olur (Pratik formül: {koyu:v_X = ω · d_M}).",
+  "Dönme hareketi yapan bir cismin açısal hızındaki değişime karşı gösterdiği dirence {koyu:eylemsizlik momenti (I)} denir; skalerdir, SI birimi {koyu:kg · {us:m|2}} olup {koyu:I = Σ m · {us:r|2}} bağıntısıyla ifade edilir.",
+  "Eylemsizlik momenti; cismin {koyu:kütlesine (m)}, {koyu:dönme ekseninin yerine} ve {koyu:kütlenin dönme eksenine olan uzaklığına (geometrik şekline)} bağlıdır; açısal hıza (ω) veya periyoda bağlı {koyu:değildir}.",
+  "Dönerek öteleme yapan bir cismin toplam kinetik enerjisi, öteleme ve dönme kinetik enerjilerinin toplamına eşittir: {koyu:E_toplam = E_öteleme + E_dönme = {kesir:1|2} · m · {us:v|2} + {kesir:1|2} · I · {us:ω|2}}."
+ ],
+ "bolumler": [
+  {
+   "baslik": "1. Öteleme, Dönme ve Kaymadan Dönerek Öteleme Hareketi",
+   "metin": [
+    "Katı (rijit) bir cismin uzaydaki hareketi üç temel biçimde incelenir:\n• {koyu:1. Öteleme Hareketi:} Cismi oluşturan bütün parçacıkların aynı sürede, aynı yönde ve eşit miktarda yer değiştirdiği harekettir (Örn: Doğrusal rayda ilerleyen tren vagonunun gövdesi).\n• {koyu:2. Dönme Hareketi:} Cismin kütle merkezinin yeri değişmeden, sabit bir eksen etrafında tüm noktalarının eşit açısal hızla ({koyu:ω}) dolandığı harekettir (Örn: Rüzgâr türbini kanatları veya lunapark dönme dolabı).\n• {koyu:3. Dönerek Öteleme (Yuvarlanma) Hareketi:} Cismin hem sabit bir eksen etrafında döndüğü hem de kütle merkezinin yer değiştirerek ilerlediği birleşik harekettir (Örn: Yolda ilerleyen bisiklet tekerleği veya bovling topu).",
+    "{koyu:Kaymadan Dönerek Öteleme Şartı:} Yarıçapı {koyu:r} olan bir tekerlek yatay zeminde kaymadan (patinaj yapmadan) {koyu:1 tam tur} döndüğünde, kütle merkezi yatayda tekerleğin çevresi kadar yani {koyu:Δx = 2πr} kadar ilerler; {koyu:N tur} döndüğünde ise {koyu:Δx = N · 2πr} yol alır. Bu hareket bir periyotluk ({koyu:T}) sürede gerçekleştiğinden, kütle merkezinin öteleme sürati ({koyu:v_öteleme}) tekerleğin dış yüzeyindeki bir noktanın çizgisel dönme süratine ({koyu:v_dönme}) büyüklükçe tam eşittir:\n{koyu:v_öteleme = v_dönme = {kesir:2πr|T} = ω · r}"
+   ],
+   "kutu": {
+    "tur": "onemli",
+    "baslik": "Eş Merkezli (Perçinli) Kasnaklarda İlerleme Miktarı",
+    "metin": "Eğer yarıçapı {koyu:R} olan büyük tekerlek yatay zeminde kaymadan {koyu:N tur} dönerek ilerlerken, ona eş merkezli olarak perçinlenmiş {koyu:r} yarıçaplı iç makaraya sarılı bir ip varsa; ipin ucundaki cismin yer değiştirmesi hem {koyu:kütle merkezinin ilerlemesinden (N · 2πR)} hem de {koyu:ipin makaraya sarılmasından/boşalmasından (N · 2πr)} etkilenir."
+   },
+   "gorsel": "<svg viewBox=\"0 0 740 275\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:740px;display:block;margin:14px auto;background:#fff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><rect x=\"0\" y=\"0\" width=\"740\" height=\"38\" rx=\"10\" fill=\"#1d4ed8\"/><rect x=\"0\" y=\"20\" width=\"740\" height=\"18\" fill=\"#1d4ed8\"/><text x=\"370\" y=\"25\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">KAYMADAN DÖNEREK ÖTELEME: ÖTELEME + DÖNME = ANLIK YERE GÖRE HIZ</text><rect x=\"16\" y=\"52\" width=\"226\" height=\"205\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.8\"/><text x=\"129\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. SAF ÖTELEME HIZI</text><line x1=\"26\" y1=\"82\" x2=\"232\" y2=\"82\" stroke=\"#3b82f6\" stroke-width=\"1\"/><text x=\"129\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Tekerlek üzerindeki her</text><text x=\"129\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  noktanın öteleme hızı</text><text x=\"129\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  kütle merkezinin hızına (v)</text><text x=\"129\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  yön ve büyüklükçe EŞİTTİR:</text><text x=\"129\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• v_K = v_O = v_L = v_M = v</text><text x=\"129\" y=\"190\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  (Hepsi sağa doğru +x yönünde)</text><rect x=\"257\" y=\"52\" width=\"226\" height=\"205\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\" stroke-width=\"1.8\"/><text x=\"370\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#854d0e\" text-anchor=\"middle\">2. SAF DÖNME HIZI</text><line x1=\"267\" y1=\"82\" x2=\"473\" y2=\"82\" stroke=\"#eab308\" stroke-width=\"1\"/><text x=\"370\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Merkezde (O) dönme hızı: 0</text><text x=\"370\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Çember üzerindeki noktalarda</text><text x=\"370\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  yarıçapa dik ve büyüklüğü v:</text><text x=\"370\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Üstte (K): sağa doğru (+v)</text><text x=\"370\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Altta (M): sola doğru (-v)</text><text x=\"370\" y=\"190\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Yanda (L, N): düşey yönde (v)</text><rect x=\"498\" y=\"52\" width=\"226\" height=\"205\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#10b981\" stroke-width=\"1.8\"/><text x=\"611\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#065f46\" text-anchor=\"middle\">3. YERE GÖRE ANLIK HIZ</text><line x1=\"508\" y1=\"82\" x2=\"714\" y2=\"82\" stroke=\"#10b981\" stroke-width=\"1\"/><text x=\"611\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">(Vektörel Toplam: v_öt + v_dön)</text><text x=\"611\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• En Üst Nokta (K): v_K = 2v</text><text x=\"611\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Kütle Merkezi (O): v_O = v</text><text x=\"611\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Yan Noktalar (L, N): v·kök(2)</text><text x=\"611\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Yere Değme Noktası (M): v_M = 0</text><text x=\"611\" y=\"190\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Genel Formül: v_X = ω · d_M</text></svg>"
+  },
+  {
+   "baslik": "2. Dönerek Öteleme Yapan Tekerlek Üzerindeki Noktaların Anlık Hız Analizi",
+   "metin": [
+    "Yatay düzlemde sağa (+x yönünde) {koyu:v} hızıyla kaymadan dönerek öteleme yapan bir tekerlek üzerindeki herhangi bir noktanın {koyu:yere göre anlık hızı (v_yer)}, o noktanın {koyu:öteleme hız vektörü} ile {koyu:dönme hız vektörünün} vektörel toplamına eşittir:\n• {koyu:Öteleme Hızı:} Tekerlek üzerindeki tüm noktaların (merkez, tepe, alt, yan) öteleme hızı kütle merkezinin hızına yön ve büyüklük olarak eşittir ({koyu:hepsi sağa doğru v}).\n• {koyu:Dönme Hızı:} Kütle merkezine {koyu:d} kadar uzaklıktaki bir noktanın dönme hızı yarıçap vektörüne diktir ve büyüklüğü {koyu:v_dön = ω · d} ile bulunur (çember üzerindeki noktalarda {koyu:d = r} olduğundan büyüklüğü {koyu:v} kadardır; ancak yönü her noktada teğet yönündedir).",
+    "Buna göre çember üzerindeki özel noktaların {koyu:yere göre anlık hız büyüklükleri} şöyledir:\n• {koyu:1. Yere Değme Noktası (M — En Alt Nokta):} Öteleme hızı sağa ({koyu:+v}), dönme hızı sola ({koyu:-v}) olduğundan birbirini sıfırlar: {koyu:v_M = v - v = 0}. (Tekerlek kaymadığı için yere değen nokta o an için durgundur ve anlık dönme merkezi gibi davranır!)\n• {koyu:2. Kütle Merkezi (O):} Dönme hızı sıfır olduğu için yalnızca öteleme hızına sahiptir: {koyu:v_O = v}.\n• {koyu:3. Yan Noktalar (L ve N — Yatay Çap Uçları):} Öteleme hızı ({koyu:v}) yatay, dönme hızı ({koyu:v}) düşey olup aralarındaki açı {koyu:90°} olduğundan Pisagor bağıntısıyla: {koyu:v_L = v_N = v · {kok:2}}.\n• {koyu:4. En Üst Nokta (K — Tepe Noktası):} Hem öteleme hızı ({koyu:+v}) hem de dönme hızı ({koyu:+v}) sağa doğru aynı yönlü olduğundan: {koyu:v_K = v + v = 2v} (Maksimum anlık hız!)."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Altın Pratik Kural: Yere Değme Noktasına Uzaklık Yöntemi!",
+    "metin": "Kaymadan dönerek öteleme yapan bir tekerlek üzerindeki herhangi bir {koyu:X noktasının yere göre anlık hız büyüklüğü}, o noktanın tekerleğin {koyu:yere değdiği en alt noktaya (M) olan kuş uçuşu uzaklığı (d_M)} ile doğru orantılıdır:\n{koyu:v_X = ω · d_M}\nÖrneğin merkez için {koyu:d_M = r ⇒ v_O = ω·r = v}; en üst nokta için {koyu:d_M = 2r ⇒ v_K = ω·2r = 2v}; yan nokta için {koyu:d_M = r·{kok:2} ⇒ v_L = v·{kok:2}}!"
+   },
+   "gorsel": "<svg viewBox=\"0 0 740 260\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:740px;display:block;margin:14px auto;background:#fff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><rect x=\"0\" y=\"0\" width=\"740\" height=\"38\" rx=\"10\" fill=\"#0f766e\"/><rect x=\"0\" y=\"20\" width=\"740\" height=\"18\" fill=\"#0f766e\"/><text x=\"370\" y=\"25\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">EYLEMSİZLİK MOMENTİ (I): DÖNME HAREKETİNE KARŞI DİRENÇ</text><rect x=\"20\" y=\"52\" width=\"340\" height=\"190\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#10b981\" stroke-width=\"1.8\"/><text x=\"190\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#065f46\" text-anchor=\"middle\">EYLEMSİZLİK MOMENTİ (I) NEDİR?</text><line x1=\"30\" y1=\"82\" x2=\"350\" y2=\"82\" stroke=\"#10b981\" stroke-width=\"1\"/><text x=\"190\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Cismin dönme hareketindeki değişikliğe karşı</text><text x=\"190\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  gösterdiği direncin ölçüsüdür (Skaler büyüklüktür).</text><text x=\"190\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• SI Birimi: kg · m²  |  Temel Bağıntı: I = Σ m · r²</text><text x=\"190\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Bağlı Olduğu 3 Değişken:</text><text x=\"190\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  1) Cismin kütlesi (m),  2) Dönme ekseninin yeri,</text><text x=\"190\" y=\"190\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  3) Kütle dağılımı (eksenden uzaklık r arttıkça I artar!).</text><rect x=\"380\" y=\"52\" width=\"340\" height=\"190\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.8\"/><text x=\"550\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">AYNI m VE r İÇİN EYLEMSİZLİK MOMENTİ SIRALAMASI</text><line x1=\"390\" y1=\"82\" x2=\"710\" y2=\"82\" stroke=\"#3b82f6\" stroke-width=\"1\"/><text x=\"550\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• İçi Boş Çember / Halka: I = m · r²  (En Büyük!)</text><text x=\"550\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• İçi Dolu Silindir / Disk: I = (1/2) · m · r²</text><text x=\"550\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• İçi Dolu Küre: I = (2/5) · m · r²  (En Küçük!)</text><text x=\"550\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• İnce Çubuk (Ortasından): I = (1/12) · m · L²</text><text x=\"550\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• İnce Çubuk (Ucundan): I = (1/3) · m · L²</text><text x=\"550\" y=\"190\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Kütle merkezden dışa doğru toplandıkça I büyür!</text></svg>"
+  },
+  {
+   "baslik": "3. Eylemsizlik Momenti (I): Tanımı ve Bağlı Olduğu Değişkenler",
+   "metin": [
+    "Doğrusal (öteleme) hareketinde Newton'un eylemsizlik yasasına göre bir cismin hız değişimine karşı gösterdiği direncin ölçüsü {koyu:kütle (m)} iken; dönme hareketinde açısal hız değişimine karşı gösterilen direncin ölçüsü {koyu:eylemsizlik momentidir} ve {koyu:I} sembolüyle gösterilir. Eylemsizlik momenti {koyu:skaler} bir büyüklüktür ve SI birim sistemindeki birimi {koyu:kg · {us:m|2}} dir.",
+    "Noktasal {koyu:m} kütleli bir parçacığın dönme eksenine dik uzaklığı {koyu:r} ise eylemsizlik momenti {koyu:I = m · {us:r|2}} olur. Çok sayıda parçacıktan oluşan katı bir cismin toplam eylemsizlik momenti ise:\n{koyu:I = m₁·{us:r₁|2} + m₂·{us:r₂|2} + ... = Σ m · {us:r|2}}\nbağıntısıyla bulunur. Bu denklemden açıkça görüldüğü üzere bir cismin eylemsizlik momenti {koyu:üç temel değişkene} bağlıdır:\n1. {koyu:Cismin toplam kütlesine (m):} Kütle arttıkça eylemsizlik momenti doğru orantılı artar.\n2. {koyu:Dönme ekseninin yerine ve yönüne:} Aynı çubuk ortasından geçen eksen etrafında kolay dönerken ({koyu:I küçük}), ucundan geçen eksen etrafında daha zor döner ({koyu:I büyük}).\n3. {koyu:Cismin geometrik şekline (kütlenin dönme eksenine dağılımına):} Kütle dönme ekseninden ne kadar uzağa ({koyu:r}) toplanmışsa eylemsizlik momenti {koyu:{us:r|2}} ile orantılı olarak o kadar büyük olur!"
+   ],
+   "kutu": {
+    "tur": "uyari",
+    "baslik": "Dikkat: Eylemsizlik Momenti Hıza Bağlı Değildir!",
+    "metin": "Sorularda en sık kurulan tuzak şudur: 'Cismin açısal hızı (ω) veya periyodu (T) iki katına çıkarılırsa eylemsizlik momenti (I) nasıl değişir?' Cismin kütlesi ve dönme eksenine göre şekli değişmediği sürece {koyu:açısal hızın (ω) değişmesi eylemsizlik momentini (I) DEĞİŞTİRMEZ}!"
+   },
+   "gorsel": "<svg viewBox=\"0 0 740 255\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:740px;display:block;margin:14px auto;background:#fff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><rect x=\"0\" y=\"0\" width=\"740\" height=\"38\" rx=\"10\" fill=\"#6d28d9\"/><rect x=\"0\" y=\"20\" width=\"740\" height=\"18\" fill=\"#6d28d9\"/><text x=\"370\" y=\"25\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">DÖNME VE DÖNEREK ÖTELEME KİNETİK ENERJİSİ</text><rect x=\"20\" y=\"52\" width=\"340\" height=\"185\" rx=\"8\" fill=\"#f5f3ff\" stroke=\"#8b5cf6\" stroke-width=\"1.8\"/><text x=\"190\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#5b21b6\" text-anchor=\"middle\">1. DÖNME KİNETİK ENERJİSİ (E_dönme)</text><line x1=\"30\" y1=\"82\" x2=\"350\" y2=\"82\" stroke=\"#8b5cf6\" stroke-width=\"1\"/><text x=\"190\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Sabit bir eksen etrafında ω açısal hızıyla dönen</text><text x=\"190\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  cismin sahip olduğu kinetik enerjidir:</text><text x=\"190\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• E_dönme = (1/2) · I · ω²   (Birim: Joule - J)</text><text x=\"190\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Öteleme ile Benzerlik:</text><text x=\"190\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  Kütle (m) <-> Eylemsizlik Momenti (I)</text><text x=\"190\" y=\"190\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  Çizgisel Hız (v) <-> Açısal Hız (ω)</text><rect x=\"380\" y=\"52\" width=\"340\" height=\"185\" rx=\"8\" fill=\"#fdf4ff\" stroke=\"#d946ef\" stroke-width=\"1.8\"/><text x=\"550\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#86198f\" text-anchor=\"middle\">2. TOPLAM KİNETİK ENERJİ (Dönerek Öteleme)</text><line x1=\"390\" y1=\"82\" x2=\"710\" y2=\"82\" stroke=\"#d946ef\" stroke-width=\"1\"/><text x=\"550\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Hem öteleme hem dönme yapan tekerlek/kürenin</text><text x=\"550\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  toplam kinetik enerjisi iki enerjinin toplamıdır:</text><text x=\"550\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• E_toplam = E_öteleme + E_dönme</text><text x=\"550\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• E_toplam = (1/2) · m · v² + (1/2) · I · ω²</text><text x=\"550\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Kaymadan dönmede v = ω · r yazılabilir.</text></svg>"
+  },
+  {
+   "baslik": "4. Farklı Geometrik Cisimlerin Eylemsizlik Momentleri ve Cambaz Sırığı Örneği",
+   "metin": [
+    "Kütleleri ({koyu:m}) ve yarıçapları ({koyu:r}) birbirine eşit olan üç farklı cismin merkezlerinden geçen eksene göre eylemsizlik momentlerini karşılaştıralım:\n• {koyu:İçi Boş Çember / İnce Halka:} Tüm kütle dönme ekseninden en uzakta ({koyu:r} mesafede) toplandığı için eylemsizlik momenti en büyüktür: {koyu:I_halka = m · {us:r|2}}.\n• {koyu:İçi Dolu Silindir / Homojen Disk:} Kütle merkezden dışa homojen dağılmıştır: {koyu:I_disk = {kesir:1|2} · m · {us:r|2}}.\n• {koyu:İçi Dolu Küre:} Kütle merkeze daha yakın toplandığı için eylemsizlik momenti en küçüktür: {koyu:I_küre = {kesir:2|5} · m · {us:r|2}}.\nDolayısıyla eşit kütle ve yarıçaplı bu üç cisim için daima {koyu:I_halka > I_disk > I_küre} sıralaması geçerlidir (Ezberlemeye gerek yoktur; sınavlarda katsayılar parantez içinde verilir, ancak kütle dışarıda toplandıkça I'nın büyüdüğü yorumu çok önemlidir).",
+    "{koyu:Gündelik Yaşam Örneği (İpte Yürüyen Cambaz):} İp üzerinde yürüyen cambazların ellerinde çok {koyu:uzun bir sırık} taşımalarının sebebi, kütleyi dönme ekseninden (ip hizasından) uzağa yayarak {koyu:eylemsizlik momentini (I) büyütmektir}. Eylemsizlik momenti büyüdüğünde cambazın sağa veya sola devrilmeye (dönmeye) karşı direnci artar ve dengesini korumak için çok daha fazla zaman kazanır!"
+   ],
+   "gorsel": "<svg viewBox=\"0 0 740 250\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:740px;display:block;margin:14px auto;background:#fff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><rect x=\"0\" y=\"0\" width=\"740\" height=\"38\" rx=\"10\" fill=\"#b91c1c\"/><rect x=\"0\" y=\"20\" width=\"740\" height=\"18\" fill=\"#b91c1c\"/><text x=\"370\" y=\"25\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">EĞİK DÜZLEMDEN KAYMADAN YUVARLANAN CİSİMLERİN YARIŞI</text><rect x=\"20\" y=\"52\" width=\"340\" height=\"180\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#ef4444\" stroke-width=\"1.8\"/><text x=\"190\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#991b1b\" text-anchor=\"middle\">ENERJİ KORUNUMU ANALİZİ</text><line x1=\"30\" y1=\"82\" x2=\"350\" y2=\"82\" stroke=\"#ef4444\" stroke-width=\"1\"/><text x=\"190\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• h yüksekliğinden serbest bırakılan cisimde:</text><text x=\"190\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  m · g · h = (1/2) · m · v² + (1/2) · I · ω²</text><text x=\"190\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Eylemsizlik momenti (I) KÜÇÜK olan cisim,</text><text x=\"190\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  potansiyel enerjisinin daha büyük kısmını</text><text x=\"190\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  ÖTELEME hızına (v) dönüştürür ve yarışı kazanır!</text><rect x=\"380\" y=\"52\" width=\"340\" height=\"180\" rx=\"8\" fill=\"#fff7ed\" stroke=\"#f97316\" stroke-width=\"1.8\"/><text x=\"550\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#9a3412\" text-anchor=\"middle\">BİTİŞ ÇİZGİSİNE VARIŞ SIRALAMASI</text><line x1=\"390\" y1=\"82\" x2=\"710\" y2=\"82\" stroke=\"#f97316\" stroke-width=\"1\"/><text x=\"550\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Eylemsizlik Momentleri: I_halka > I_disk > I_küre</text><text x=\"550\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Tabandaki Öteleme Hızları: v_küre > v_disk > v_halka</text><text x=\"550\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• İniş Süreleri: t_küre < t_disk < t_halka</text><text x=\"550\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Sonuç: Eğik düzlemden aynı anda bırakılan içi dolu</text><text x=\"550\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  KÜRE 1., DİSK (SİLİNDİR) 2., HALKA (ÇEMBER) 3. olur!</text></svg>"
+  },
+  {
+   "baslik": "5. Dönme Kinetik Enerjisi ve Toplam Kinetik Enerji",
+   "metin": [
+    "Doğrusal hareket yapan {koyu:m} kütleli bir cismin {koyu:v} hızıyla sahip olduğu öteleme kinetik enerjisi {koyu:E_öteleme = {kesir:1|2} · m · {us:v|2}} dir. Sabit bir eksen etrafında {koyu:ω} açısal hızıyla dönen katı bir cismin sahip olduğu {koyu:dönme kinetik enerjisi (E_dönme)} ise kütle yerine eylemsizlik momenti ({koyu:I}), çizgisel hız yerine açısal hız ({koyu:ω}) yazılarak:\n{koyu:E_dönme = {kesir:1|2} · I · {us:ω|2}}\nbağıntısıyla hesaplanır (Birimi yine {koyu:Joule [J]} dür). Kayışla veya dişliyle birbirine bağlı kasnaklarda tur sayıları yarıçaplarla ters orantılı olduğu için {koyu:ω₁ · r₁ = ω₂ · r₂} eşitliğinden açısal hızlar bulunur.",
+    "Yatay veya eğik düzlemde {koyu:dönerek öteleme (yuvarlanma)} hareketi yapan bir tekerlek, silindir veya küre aynı anda hem öteleme hem de dönme hareketi yaptığı için {koyu:toplam kinetik enerjisi (E_toplam)} bu iki enerjinin aritmetik toplamına eşittir:\n{koyu:E_toplam = E_öteleme + E_dönme = {kesir:1|2} · m · {us:v|2} + {kesir:1|2} · I · {us:ω|2}}\nKaymadan yuvarlanan cisimlerde {koyu:ω = {kesir:v|r}} veya {koyu:I · {us:ω|2}} yerine {koyu:k · m · {us:v|2}} yazılarak toplam enerji doğrudan {koyu:m · {us:v|2}} cinsinden bulunabilir."
+   ]
+  },
+  {
+   "baslik": "6. Eğik Düzlemden Yuvarlanan Cisimlerde Mekanik Enerji Korunumu",
+   "metin": [
+    "Yerden {koyu:h} yüksekliğindeki bir eğik düzlemin tepesinden ilk hızsız serbest bırakılan ve kaymadan yuvarlanarak tabana inen {koyu:m} kütleli bir cisimde başlangıçtaki yer çekimi potansiyel enerjisi ({koyu:m · g · h}), tabanda hem öteleme hem de dönme kinetik enerjisine dönüşür:\n{koyu:m · g · h = {kesir:1|2} · m · {us:v|2} + {kesir:1|2} · I · {us:ω|2}}",
+    "Bu denklemden iki çok önemli fiziksel sonuç çıkar:\n• {koyu:1. Kaymadan Yuvarlanan Cisim ile Sürtünmesiz Kayan Küpün Karşılaştırması:} Sürtünmesiz eğik düzlemde dönmeden yalnızca kayarak inen bir küp tüm potansiyel enerjisini öteleme hızına çevirir ({koyu:m·g·h = {kesir:1|2}·m·{us:v|2}}). Yuvarlanan küre veya silindir ise enerjisinin bir kısmını dönmeye ({koyu:E_dönme}) harcadığı için tabana {koyu:daha küçük bir öteleme hızıyla (v)} ve {koyu:daha uzun sürede} ulaşır!\n• {koyu:2. Küre, Disk ve Çemberin Yarışı:} Aynı yükseklikten aynı anda bırakılan içi dolu küre ({koyu:I = 0,4 m{us:r|2}}), disk ({koyu:I = 0,5 m{us:r|2}}) ve halka ({koyu:I = m{us:r|2}}) arasında eylemsizlik momenti en küçük olan {koyu:küre}, dönmeye en az enerji ayırıp ötelemeye en çok enerji aktardığı için tabana {koyu:en büyük hızla ve en kısa sürede (1. olarak)} ulaşır!"
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Sınav İpucu: Eğik Düzlemde Kütle ve Yarıçap Bağımsızlığı!",
+    "metin": "Eğik düzlemde kaymadan yuvarlanan iki içi dolu kürenin kütleleri ({koyu:m ve 3m}) veya yarıçapları ({koyu:r ve 2r}) farklı olsa bile; {koyu:m·g·h = {kesir:1|2}m{us:v|2} + {kesir:1|2}({kesir:2|5}m{us:r|2})({kesir:{us:v|2}|{us:r|2}}) = {kesir:7|10}m{us:v|2}} denkleminde {koyu:m} ve {koyu:r} sadeleşir! Yani aynı tür iki geometrik cisim (iki içi dolu küre) kütle ve yarıçapları ne olursa olsun eğik düzlemin tabanına {koyu:aynı anda ve eşit öteleme hızıyla} ulaşır!"
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Yatay düzlemde kaymadan dönerek öteleme hareketi yapan r = 0,5 m yarıçaplı bir tekerleğin kütle merkezinin hızı v = 6 m/s'dir. Buna göre;\na) Tekerleğin açısal hızı (ω) kaç rad/s'dir?\nb) Tekerleğin yere değen en alt noktasının (M), yatay çap uçlarındaki yan noktasının (L) ve en üst tepe noktasının (K) yere göre anlık hızlarının büyüklükleri kaç m/s'dir?",
+   "cevap": "a) Kaymadan dönerek ötelemede {koyu:v = ω · r ⇒ 6 = ω · 0,5 ⇒ ω = 12 rad/s} bulunur.\nb) • En alt (yere değme) noktası (M): {koyu:v_M = v - v = 0 m/s}.\n   • Yan nokta (L): Öteleme ve dönme hızları dik olduğu için {koyu:v_L = v · {kok:2} = 6{kok:2} m/s}.\n   • En üst (tepe) noktası (K): {koyu:v_K = v + v = 2v = 12 m/s}."
+  },
+  {
+   "soru": "Kütlesi m = 4 kg, yarıçapı r = 0,5 m olan homojen bir diskin kütle merkezinden geçen dik eksene göre eylemsizlik momenti kaç kg·m² dir ve disk ω = 10 rad/s açısal hızla sabit eksen etrafında dönerken dönme kinetik enerjisi kaç Joule olur? (I_disk = {kesir:1|2} · m · {us:r|2})",
+   "cevap": "• Önce eylemsizlik momentini bulalım:\n  {koyu:I = {kesir:1|2} · m · {us:r|2} = {kesir:1|2} · 4 · {us:(0,5)|2} = 2 · 0,25 = 0,5 kg·{us:m|2}}.\n• Dönme kinetik enerjisi:\n  {koyu:E_dönme = {kesir:1|2} · I · {us:ω|2} = {kesir:1|2} · 0,5 · {us:10|2} = 0,25 · 100 = 25 Joule} bulunur."
+  },
+  {
+   "soru": "Yatay düzlemde v = 10 m/s sabit öteleme hızıyla kaymadan yuvarlanan m = 2 kg kütleli içi dolu bir kürenin;\na) Öteleme kinetik enerjisini,\nb) Dönme kinetik enerjisini,\nc) Toplam kinetik enerjisini hesaplayınız. (I_küre = {kesir:2|5} · m · {us:r|2})",
+   "cevap": "a) Öteleme kinetik enerjisi:\n   {koyu:E_öteleme = {kesir:1|2} · m · {us:v|2} = {kesir:1|2} · 2 · {us:10|2} = 100 J}.\nb) Dönme kinetik enerjisinde {koyu:I = {kesir:2|5} · m · {us:r|2}} ve {koyu:ω = {kesir:v|r}} yerine yazılırsa ({koyu:{us:r|2}} sadeleşir):\n   {koyu:E_dönme = {kesir:1|2} · ({kesir:2|5} · m · {us:r|2}) · {kesir:{us:v|2}|{us:r|2}} = {kesir:1|5} · m · {us:v|2} = {kesir:1|5} · 2 · 100 = 40 J}.\nc) Toplam kinetik enerji:\n   {koyu:E_toplam = E_öteleme + E_dönme = 100 + 40 = 140 J}."
+  },
+  {
+   "soru": "Yarıçapları sırasıyla r_X = r ve r_Y = 3r olan X ve Y dişli çarklarının eylemsizlik momentleri arasında I_Y = 3 · I_X ilişkisi vardır. Çarklar birlikte dönerken X çarkının dönme kinetik enerjisi E_X olduğuna göre Y çarkının dönme kinetik enerjisi kaç E_X olur?",
+   "cevap": "Birbirine bağlı dişlilerin tur sayıları ve açısal hızları yarıçaplarıyla ters orantılıdır: {koyu:ω_X · r = ω_Y · 3r} olduğundan {koyu:ω_Y = ω} dersek {koyu:ω_X = 3ω} olur.\n• {koyu:E_X = {kesir:1|2} · I_X · {us:(3ω)|2} = {kesir:1|2} · 9 · I_X · {us:ω|2}}\n• {koyu:E_Y = {kesir:1|2} · (3 · I_X) · {us:ω|2} = {kesir:1|2} · 3 · I_X · {us:ω|2}}\nTaraf tarafa oranlandığında {koyu:{kesir:E_Y|E_X} = {kesir:3|9} = {kesir:1|3} ⇒ E_Y = {kesir:1|3} E_X} bulunur."
+  },
+  {
+   "soru": "Yerden h = 7 m yükseklikteki eğik düzlemin tepesinden ilk hızsız bırakılan içi dolu bir küre, kaymadan yuvarlanarak eğik düzlemin tabanına indiğinde kütle merkezinin öteleme hızı (v) kaç m/s olur? (g = 10 m/s², I_küre = {kesir:2|5} · m · {us:r|2})",
+   "cevap": "Enerji korunumu denklemini yazalım:\n{koyu:m · g · h = {kesir:1|2} · m · {us:v|2} + {kesir:1|2} · I · {us:ω|2}}\n{koyu:I = {kesir:2|5} m {us:r|2}} ve {koyu:ω = {kesir:v|r}} yerine yazılıp {koyu:m}'ler sadeleştirilirse:\n{koyu:g · h = {kesir:1|2} {us:v|2} + {kesir:1|5} {us:v|2} = {kesir:7|10} {us:v|2}}\nVerilenleri yerine koyalım ({koyu:g = 10, h = 7}):\n{koyu:10 · 7 = {kesir:7|10} · {us:v|2} ⇒ 70 = {kesir:7|10} · {us:v|2} ⇒ {us:v|2} = 100 ⇒ v = 10 m/s} bulunur."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Yatay bir yolda sabit v öteleme süratiyle kaymadan dönerek ilerleyen r yarıçaplı bir bisiklet tekerleğinin en üst (tepe) noktasının yere göre anlık hız büyüklüğü v_üst, yere değdiği en alt noktasının yere göre anlık hız büyüklüğü ise v_alt olduğuna göre (v_üst, v_alt) ikilisi aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "(v, v)",
+    "(2v, 0)",
+    "(2v, v)",
+    "(v, 0)",
+    "(0, 2v)"
+   ],
+   "dogru": 1,
+   "aciklama": "Kaymadan dönerek öteleme yapan tekerleğin en üst noktasında öteleme ve dönme hızları aynı yönlü olduğu için {koyu:v_üst = v + v = 2v}; en alt (yere değme) noktasında ise zıt yönlü olduğu için {koyu:v_alt = v - v = 0} olur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir cismin sabit bir eksen etrafındaki eylemsizlik momenti (I) ile ilgili aşağıdaki ifadelerden hangisi YANLIŞTIR?",
+   "secenekler": [
+    "Dönme hareketindeki açısal hız değişimine karşı gösterilen direncin ölçüsüdür.",
+    "Skaler bir büyüklüktür ve SI birim sistemindeki birimi kg·m² dir.",
+    "Cismin toplam kütlesine ve kütlenin dönme eksenine olan uzaklığına bağlıdır.",
+    "Cismin birim zamandaki tur sayısı (frekansı) artırılırsa eylemsizlik momenti de artar.",
+    "Eşit kütle ve yarıçaplı içi boş çemberin eylemsizlik momenti, içi dolu küreninkinden büyüktür."
+   ],
+   "dogru": 3,
+   "aciklama": "Eylemsizlik momenti ({koyu:I = Σ m·{us:r|2}}) yalnızca cismin kütlesine, geometrik şekline ve dönme ekseninin yerine bağlıdır; cismin dönüş hızına, periyoduna veya frekansına {koyu:bağlı değildir}."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "Yarıçapı r olan bir tekerlek yatay zeminde kaymadan 3 tam tur dönerek ilerlediğinde, tekerleğin kütle merkezi yatayda 6πr kadar yer değiştirir.",
+     "dogru": true,
+     "aciklama": "Bu ifade {koyu:doğrudur}. 1 tam turda 2πr ilerleyen tekerlek, 3 tam turda {koyu:Δx = 3 · 2πr = 6πr} kadar yer değiştirir."
+    }
+   ]
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "Bir eğik düzlemin aynı yüksekliğinden aynı anda serbest bırakılan eşit kütle ve yarıçaplı içi boş halka ve içi dolu küreden, eğik düzlemin tabanına önce içi boş halka ulaşır.",
+     "dogru": false,
+     "aciklama": "Bu ifade {koyu:yanlıştır}. İçi dolu kürenin eylemsizlik momenti ({koyu:I = 0,4 m{us:r|2}}) halkanınkinden ({koyu:I = m{us:r|2}}) daha küçük olduğu için küre daha çabuk hızlanır ve tabana {koyu:önce küre} ulaşır."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "soru": "Kaymadan v hızıyla dönerek öteleme yapan tekerlek üzerindeki noktaları ve kavramları doğru karşılıklarıyla eşleştiriniz.",
+   "ciftler": [
+    [
+     "Tekerleğin en üst (tepe) noktasının yere göre anlık hızı",
+     "2v"
+    ],
+    [
+     "Tekerleğin yatay çap uçlarındaki yan noktalarının yere göre anlık hızı",
+     "v · kök(2)"
+    ],
+    [
+     "Tekerleğin yere değdiği en alt noktasının yere göre anlık hızı",
+     "0"
+    ],
+    [
+     "Dönme kinetik enerjisinin matematiksel bağıntısı",
+     "(1/2) · I · ω²"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Cümlelerdeki boşlukları uygun kelimelerle tamamlayınız.",
+   "cumleler": [
+    {
+     "metin": "Dönme hareketi yapan bir cismin dönme durumundaki değişikliğe karşı gösterdiği dirence ___ momenti denir ve I harfiyle gösterilir.",
+     "cevap": "eylemsizlik"
+    },
+    {
+     "metin": "İp üzerinde yürüyen bir cambazın elinde uzun bir sırık taşıması, eylemsizlik momentini ___ dengede kalmasını kolaylaştırır.",
+     "cevap": "artırarak"
+    }
+   ],
+   "fazla": [
+    "azaltarak",
+    "eylem"
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Cümlelerdeki boşlukları uygun kelimelerle tamamlayınız.",
+   "cumleler": [
+    {
+     "metin": "Dönerek öteleme hareketi yapan bir cismin toplam kinetik enerjisi, ___ kinetik enerjisi ile dönme kinetik enerjisinin toplamına eşittir.",
+     "cevap": "öteleme"
+    },
+    {
+     "metin": "Eylemsizlik momentinin Uluslararası Birim Sistemindeki (SI) birimi ___'dir.",
+     "cevap": "kg·m²"
+    }
+   ],
+   "fazla": [
+    "potansiyel",
+    "N·m"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Kaymadan dönerek öteleme hareketi ve enerji sorularını çözerken izlenecek 3 temel adımı değerlendiriniz.",
+   "ipuclari": [
+    "1. Adım: Hız Sorularında Yere Değme Noktasını Referans Al: Herhangi bir X noktasının yere göre anlık hızını v_X = ω · d_M ile bul.",
+    "2. Adım: Eylemsizlik Momentinde Kütle Dağılımına Bak: Kütle eksenden uzağa gittikçe I = Σ m·r² artar (I_halka > I_disk > I_küre).",
+    "3. Adım: Enerji Korunumunda İki Kinetik Enerjiyi Topla: m·g·h = (1/2)m·v² + (1/2)I·ω² denklemini kur."
+   ],
+   "cevap": "1) Anlık hız sorularında {koyu:v_alt = 0, v_merkez = v, v_yan = v{kok:2}, v_üst = 2v} değerlerini kullan.\n2) Eylemsizlik momentinin açısal hıza bağlı olmadığını, yalnız kütle ve şekle ({koyu:I = Σ m·{us:r|2}}) bağlı olduğunu hatırla.\n3) Yuvarlanan cisimlerde toplam kinetik enerjiyi {koyu:E_top = {kesir:1|2}m{us:v|2} + {kesir:1|2}I{us:ω|2}} olarak hesapla."
+  }
+ ]
+}
