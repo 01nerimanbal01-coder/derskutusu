@@ -1,0 +1,230 @@
+{
+ "ad": "12-matematik-5",
+ "sinif": 12,
+ "ders": "matematik",
+ "ders_adi": "Matematik",
+ "hafta": 5,
+ "tarih": "12-16 Ekim 2026",
+ "yayin_tarihi": "2026-10-14",
+ "unite": "SAYILAR VE CEBİR: DİZİLER",
+ "konu": "Gerçek Sayı Dizileri, Sonlu Dizi, Sabit Dizi, İndirgemeli Diziler ve Özel Sayı Dizileri (Fibonacci, Üçgensel, Karesel)",
+ "ciktilar": [
+  "Dizi kavramını fonksiyonlarla ilişkilendirerek genel terim, sonlu dizi, sabit dizi ve eşit dizileri açıklar.",
+  "Genel terimi veya indirgeme bağıntısı verilen bir sayı dizisinin terimlerini ve ilk n terim toplamı (Sn) ile genel terim (an) ilişkisini bulur.",
+  "Üçgensel, karesel ve Fibonacci sayı dizilerinin özelliklerini gerçek hayat ve matematik problemlerinde uygular."
+ ],
+ "giris": "Doğadaki ayçiçeği tohumlarının sarmal diziliminden banka taksit planlarına, bakteri popülasyonlarının artışından bilgisayar algoritmalarına kadar belirli bir kurala göre sıralanan sayı örüntüleri matematikte {koyu:gerçek sayı dizileri} olarak modellenir. Bu hafta tanım kümesi pozitif tam sayılar olan bu özel fonksiyonların temel özelliklerini, {koyu:sabit ve sonlu dizileri}, bir terimi önceki terimleriyle tanımlayan {koyu:indirgemeli dizileri} ve doğanın matematiğini yansıtan {koyu:Fibonacci} ile {koyu:üçgensel-karesel dizileri} öğreneceğiz.",
+ "ozet": [
+  "Tanım kümesi pozitif tam sayılar kümesi ({koyu:Z+ = 1, 2, 3, ...}) ve değer kümesi gerçek sayılar kümesi ({koyu:R}) olan her fonksiyona {koyu:gerçek sayı dizisi} denir; {koyu:f(n) = an} ifadesine dizinin {koyu:genel terimi} adı verilir.",
+  "Tanım kümesi {koyu:Ak = (1, 2, 3, ..., k)} biçiminde sonlu bir küme olan dizilere {koyu:sonlu dizi}; tüm terimleri birbirine eşit olan dizilere ise {koyu:sabit dizi} denir.",
+  "{koyu:an = (p.n + r) / (s.n + t)} biçimindeki rasyonel bir dizinin sabit dizi olması için {koyu:p / s = r / t} orantısı sağlanmalıdır.",
+  "Bir dizinin ilk n terim toplamı {koyu:Sn} ile gösterildiğinde, {koyu:a1 = S1} ve {koyu:n >= 2} için {koyu:an = Sn - S(n-1)} eşitliği her zaman geçerlidir.",
+  "Her terimi kendisinden önceki terimlere bağlı olarak tanımlanan dizilere {koyu:indirgemeli dizi} denir; özel sayı dizilerinin en bilinenleri {koyu:üçgensel sayılar} ({koyu:n.(n+1)/2}), {koyu:karesel sayılar} ({koyu:n²}) ve {koyu:Fibonacci dizisidir}."
+ ],
+ "bolumler": [
+  {
+   "baslik": "1. Gerçek Sayı Dizisi Kavramı ve Genel Terim",
+   "metin": [
+    "Pozitif tam sayılar kümesi {koyu:Z+ = (1, 2, 3, ..., n, ...)} tanım kümesinden gerçek sayılar kümesi {koyu:R}'ye tanımlanan her {koyu:f: Z+ -> R} fonksiyonuna {koyu:gerçek sayı dizisi} (veya kısaca {koyu:dizi}) adı verilir. Dizilerde fonksiyonun {koyu:n} pozitif tam sayısındaki görüntüsü {koyu:f(n) = an} şeklinde gösterilir ve buna dizinin {koyu:n. terimi (genel terimi)} denir. Bir dizi {koyu:(an) = (a1, a2, a3, ..., an, ...)} biçiminde parantez içinde yazılır.",
+    "Bir cebirsel ifadenin sonsuz gerçek sayı dizisinin genel terimi olabilmesi için {koyu:her n pozitif tam sayısı için tanımlı ve gerçek sayı} olması şarttır. Örneğin {koyu:an = (3n + 2) / (n - 5)} ifadesi {koyu:n = 5} için paydayı sıfır yaptığından ({koyu:17/0} tanımsız) bir gerçek sayı dizisi belirtmez. Aynı şekilde indis olan {koyu:n} yerine yalnız {koyu:1, 2, 3, ...} pozitif tam sayıları yazılabilir; bir dizinin kaç teriminin negatif veya tam sayı olduğu sorulduğunda yalnızca {koyu:n eleman Z+} değerleri dikkate alınır."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Dizi Olma Şartı (Payda ve Çift Dereceli Kök)",
+    "metin": "Paydayı sıfır yapan kök eğer {koyu:pozitif bir tam sayı değilse} (örneğin {koyu:2n - 7 = 0 -> n = 7/2} veya {koyu:n + 4 = 0 -> n = -4} ise) ifade her pozitif tam sayıda tanımlı olduğundan {koyu:dizi belirtir}!"
+   },
+   "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"14\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">GERÇEK SAYI DİZİLERİ: TANIM KÜMESİ VE GENEL TERİM (a_n)</text><rect x=\"20\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#EFF6FF\" stroke=\"#2563EB\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#2563EB\"/><rect x=\"20\" y=\"62\" width=\"310\" height=\"12\" fill=\"#2563EB\"/><text x=\"175.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">DİZİ TANIMI (f: Z+ -> R)</text><text x=\"32\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Tanım kümesi pozitif tam sayılar kümesi</text><text x=\"32\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  Z+ = {1, 2, 3, ..., n, ...} olan her fonksiyona</text><text x=\"32\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">  'Gerçek Sayı Dizisi' denir.</text><text x=\"32\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• f(n) = a_n dizinin 'n. terimi' veya 'genel terimi'dir.</text><text x=\"32\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">• (a_n) = (a_1, a_2, a_3, ..., a_n, ...) şeklinde yazılır.</text><text x=\"32\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">• DİKKAT: n yerine yalnızca 1, 2, 3, ... pozitif tam</text><text x=\"32\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">  sayıları yazılabilir (0, negatif veya kesir yazılamaz!).</text><rect x=\"350\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#FEF2F2\" stroke=\"#DC2626\" stroke-width=\"1.8\"/><rect x=\"350\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#DC2626\"/><rect x=\"350\" y=\"62\" width=\"310\" height=\"12\" fill=\"#DC2626\"/><text x=\"505.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">HANGİ İFADELER DİZİ BELİRTMEZ?</text><text x=\"362\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Paydayı pozitif bir tam sayıda sıfır yapan ifadeler:</text><text x=\"362\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  Örn: a_n = (2n + 1) / (n - 4) -> n = 4 için tanımsız!</text><text x=\"362\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Çift dereceli kök içini pozitif tam sayıda negatif</text><text x=\"362\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">  yapan ifadeler: Örn: b_n = Kök(5 - n) -> n = 6 için</text><text x=\"362\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  gerçek sayı değil (ancak 5 elemanlı sonlu dizi olabilir).</text><text x=\"362\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">• Logaritma içini n eleman Z+ için 0 veya negatif</text><text x=\"362\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">  yapan ifadeler sonsuz gerçek sayı dizisi belirtmez.</text></svg>"
+  },
+  {
+   "baslik": "2. Sonlu Dizi, Sabit Dizi ve Eşit Diziler",
+   "metin": [
+    "Bütün pozitif tam sayılarda değil de yalnızca {koyu:Ak = (1, 2, 3, ..., k)} kümesinde tanımlanan {koyu:f: Ak -> R} fonksiyonuna {koyu:k terimli sonlu dizi} denir. Örneğin çift dereceli kök içeren ifadelerde kök içinin sıfırdan büyük veya eşit olduğu {koyu:1, 2, ..., k} tam sayıları sonlu bir dizi oluşturur.",
+    "Bütün terimleri birbirine eşit olan, yani her {koyu:n eleman Z+} için {koyu:an = c} ({koyu:c eleman R}) biçimindeki dizilere {koyu:sabit dizi} denir: {koyu:(an) = (c, c, c, ...)}. Rasyonel biçimde verilen {koyu:an = (p.n + r) / (s.n + t)} dizisinin sabit dizi olması için {koyu:n}'li terimlerin katsayıları oranı ile sabit terimlerin oranı birbirine eşit olmalıdır: {koyu:p / s = r / t}. Karşılıklı bütün terimleri birbirine eşit olan (her {koyu:n eleman Z+} için {koyu:an = bn} şartını sağlayan) iki diziye ise {koyu:eşit diziler} denir ve {koyu:(an) = (bn)} ile gösterilir."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Polinom Tipi Sabit Dizi Kuralı",
+    "metin": "{koyu:an = (a - 3)n² + (b + 2)n + 7} gibi polinom tipindeki bir dizinin sabit dizi olabilmesi için {koyu:n}'ye bağlı tüm terimlerin katsayıları sıfır olmalıdır: {koyu:a - 3 = 0 -> a = 3} ve {koyu:b + 2 = 0 -> b = -2} olup {koyu:an = 7} bulunur."
+   },
+   "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"14\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">SONLU DİZİ, SABİT DİZİ VE EŞİT DİZİLER</text><rect x=\"20\" y=\"44\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#ECFDF5\" stroke=\"#059669\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"44\" width=\"205\" height=\"30\" rx=\"10\" fill=\"#059669\"/><rect x=\"20\" y=\"62\" width=\"205\" height=\"12\" fill=\"#059669\"/><text x=\"122.5\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">1. SONLU DİZİ</text><text x=\"32\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Tanım kümesi A_k = {1, 2, ..., k}</text><text x=\"32\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  olan k elemanlı dizidir.</text><text x=\"32\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• f: A_k -> R</text><text x=\"32\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• Örn: a_n = Kök(6 - n) ifadesi</text><text x=\"32\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  en çok 6 elemanlı (A_6) bir</text><text x=\"32\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  sonlu dizi belirtebilir</text><text x=\"32\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">  (n = 1, 2, 3, 4, 5, 6).</text><rect x=\"237\" y=\"44\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#EFF6FF\" stroke=\"#2563EB\" stroke-width=\"1.8\"/><rect x=\"237\" y=\"44\" width=\"205\" height=\"30\" rx=\"10\" fill=\"#2563EB\"/><rect x=\"237\" y=\"62\" width=\"205\" height=\"12\" fill=\"#2563EB\"/><text x=\"339.5\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">2. SABİT DİZİ</text><text x=\"249\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Bütün terimleri birbirine</text><text x=\"249\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  eşit olan dizidir: a_n = c.</text><text x=\"249\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Kesirli rasyonel dizide:</text><text x=\"249\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">  a_n = (p.n + r) / (s.n + t)</text><text x=\"249\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  sabit dizi ise katsayılar</text><text x=\"249\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  oranı birbirine eşittir:</text><text x=\"249\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">  p / s = r / t = a_n.</text><rect x=\"455\" y=\"44\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#F5F3FF\" stroke=\"#7C3AED\" stroke-width=\"1.8\"/><rect x=\"455\" y=\"44\" width=\"205\" height=\"30\" rx=\"10\" fill=\"#7C3AED\"/><rect x=\"455\" y=\"62\" width=\"205\" height=\"12\" fill=\"#7C3AED\"/><text x=\"557.5\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">3. EŞİT DİZİLER</text><text x=\"467\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Her n eleman Z+ için</text><text x=\"467\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  a_n = b_n oluyorsa</text><text x=\"467\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">  (a_n) = (b_n) denir.</text><text x=\"467\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• Örn: a_n = (-1)^(2n) = 1</text><text x=\"467\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  ve b_n = cos(2.n.pi) = 1</text><text x=\"467\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  dizileri birbirine eşittir.</text><text x=\"467\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">• Sıralı her terim aynıdır.</text></svg>"
+  },
+  {
+   "baslik": "3. İndirgemeli Diziler ve İlk n Terim Toplamı (Sn)",
+   "metin": [
+    "Genel terimi doğrudan {koyu:n}'ye bağlı bir formülle verilmek yerine, herhangi bir terimi kendisinden önceki bir veya birkaç terim cinsinden tanımlanan dizilere {koyu:indirgemeli (özyinelemeli) dizi} ve bu kurala {koyu:indirgeme bağıntısı} denir. Örneğin {koyu:a1 = 2} ve {koyu:a(n+1) = an + 3n} şeklinde verilen bir dizide {koyu:a10} terimini bulmak için {koyu:n = 1, 2, ..., 9} değerleri alt alta yazılıp {koyu:taraf tarafa toplanarak} ara terimler sadeleştirilir. Eğer bağıntı {koyu:a(n+1) = f(n) . an} şeklinde çarpım durumundaysa eşitlikler alt alta yazılıp {koyu:taraf tarafa çarpılır}.",
+    "Bir {koyu:(an)} dizisinin ilk {koyu:n} teriminin toplamı {koyu:Sn = a1 + a2 + a3 + ... + an} ile gösterilir. İlk {koyu:n} terim toplamından ilk {koyu:(n - 1)} terim toplamı çıkarıldığında yalnız son terim olan {koyu:an} kalır: {koyu:an = Sn - S(n-1)} ({koyu:n >= 2} için) ve {koyu:a1 = S1}."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Sn Verildiğinde an Terimini Hızlı Bulma",
+    "metin": "Bir dizinin ilk n terim toplamı {koyu:Sn} formülü verildiğinde, {koyu:a7} terimini bulmak için genel terimi bulmaya gerek yoktur; doğrudan {koyu:a7 = S7 - S6} farkı hesaplanır!"
+   },
+   "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"14\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">İNDİRGEMELİ DİZİLER VE İLK n TERİM TOPLAMI (S_n) İLİŞKİSİ</text><rect x=\"20\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#FEF3C7\" stroke=\"#D97706\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#D97706\"/><rect x=\"20\" y=\"62\" width=\"310\" height=\"12\" fill=\"#D97706\"/><text x=\"175.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">İNDİRGEMELİ (ÖZYİNELEMELİ) DİZİLER</text><text x=\"32\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Herhangi bir terimi kendisinden önceki bir veya</text><text x=\"32\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  birkaç terim cinsinden tanımlanan dizilerdir.</text><text x=\"32\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Örn: a_1 = 3 ve a_(n+1) = a_n + 4 bağlantısında</text><text x=\"32\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">  n = 1, 2, ..., (k-1) yazılıp taraf tarafa toplanarak</text><text x=\"32\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  teleskopik sadeleştirme ile k. terim bulunur.</text><text x=\"32\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">• Çarpım biçimindeyse: a_(n+1) = n . a_n ifadesinde</text><text x=\"32\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">  taraf tarafa ÇARPILARAK genel terime ulaşılır.</text><rect x=\"350\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#ECFEFF\" stroke=\"#0891B2\" stroke-width=\"1.8\"/><rect x=\"350\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#0891B2\"/><rect x=\"350\" y=\"62\" width=\"310\" height=\"12\" fill=\"#0891B2\"/><text x=\"505.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">İLK n TERİM TOPLAMI (S_n) VE a_n BAĞINTISI</text><text x=\"362\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• S_n = a_1 + a_2 + ... + a_(n-1) + a_n</text><text x=\"362\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">• S_(n-1) = a_1 + a_2 + ... + a_(n-1)</text><text x=\"362\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Taraf tarafa çıkarılırsa ALTIN FORMÜL elde edilir:</text><text x=\"362\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">  a_n = S_n - S_(n-1)   (n &gt;= 2 için)</text><text x=\"362\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  a_1 = S_1</text><text x=\"362\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">• Örn: S_n = n^2 + 2n ise a_5 = S_5 - S_4</text><text x=\"362\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">  a_5 = (25 + 10) - (16 + 8) = 35 - 24 = 11.</text></svg>"
+  },
+  {
+   "baslik": "4. Parçalı Tanımlı Diziler ve Terimlerin İşaret İncelemesi",
+   "metin": [
+    "Terimleri indis olan {koyu:n} sayısının tek veya çift olmasına, belirli bir sayıdan küçük veya büyük olmasına ya da bir sayıya bölümünden kalana (moduna) göre farklı kurallarla tanımlanan dizilere {koyu:parçalı diziler} denir. Örneğin {koyu:n} tek ise {koyu:an = 2n + 1}, {koyu:n} çift ise {koyu:an = n / 2} şeklinde tanımlanan bir dizide {koyu:a5 = 2(5) + 1 = 11} ve {koyu:a6 = 6 / 2 = 3} olarak hesaplanır.",
+    "Bir dizinin kaç teriminin negatif ({koyu:an < 0}) veya kaç teriminin tam sayı olduğu sorulduğunda, eşitsizlik tablosu veya polinom bölmesi yapıldıktan sonra çözüm kümesinin {koyu:Z+ = (1, 2, 3, ...)} ile kesişimi alınır."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Tam Sayı Terimleri Bulmada Polinom Bölmesi",
+    "metin": "{koyu:an = (3n + 18) / (n + 1)} dizisinin kaç teriminin tam sayı olduğunu bulmak için ifade {koyu:an = 3 + 15 / (n + 1)} şekline çevrilir; {koyu:n + 1} ifadesi 15'in pozitif bölenleri ({koyu:3, 5, 15 -> n = 2, 4, 14}) olmalıdır (1 olamaz çünkü {koyu:n >= 1})."
+   }
+  },
+  {
+   "baslik": "5. Özel Sayı Dizileri: Üçgensel, Karesel ve Fibonacci Dizisi",
+   "metin": [
+    "Matematik tarihinde ve doğada özel öneme sahip üç temel sayı dizisi vardır:\n1) {koyu:Üçgensel Sayı Dizisi:} Noktalarla eşkenar üçgenler oluşturacak biçimde dizilen ve 1'den {koyu:n}'ye kadar olan ardışık doğal sayıların toplamıyla elde edilen dizidir. Genel terimi {koyu:an = n.(n + 1) / 2} olup terimleri {koyu:(1, 3, 6, 10, 15, 21, 28, ...)} şeklindedir.\n2) {koyu:Karesel Sayı Dizisi:} Noktalarla kareler oluşturan ve genel terimi {koyu:an = n²} olan dizidir: {koyu:(1, 4, 9, 16, 25, 36, ...)}. Ardışık iki üçgensel sayının toplamı daima bir karesel sayı verir: {koyu:Tn + T(n+1) = (n + 1)²}.",
+    "3) {koyu:Fibonacci Sayı Dizisi:} İtalyan matematikçi Leonardo Fibonacci tarafından tanımlanan, ilk iki terimi {koyu:F1 = 1, F2 = 1} olan ve sonraki her terimi kendisinden önceki iki terimin toplamına eşit olan ({koyu:F(n+2) = F(n+1) + Fn}) indirgemeli dizidir: {koyu:(1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...)}. Fibonacci dizisinde ardışık terimlerin oranı terimler büyüdükçe {koyu:altın orana (yaklaşık 1,618)} yaklaşır."
+   ],
+   "kutu": {
+    "tur": "bilgi",
+    "baslik": "Üçgensel ve Karesel Sayı Bağıntısı",
+    "metin": "Üçgensel sayı dizisinin ardışık terimleri (1, 3, 6, 10, 15) ikişer ikişer toplandığında {koyu:1+3=4, 3+6=9, 6+10=16, 10+15=25} yani karesel sayı dizisinin terimleri elde edilir."
+   },
+   "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"14\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">ÖZEL SAYI DİZİLERİ: ÜÇGENSEL, KARESEL VE FİBONACCİ DİZİSİ</text><rect x=\"25\" y=\"44\" width=\"630\" height=\"40\" rx=\"8\" fill=\"#EFF6FF\" stroke=\"#2563EB\" stroke-width=\"1.5\"/><text x=\"40\" y=\"60\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563EB\">ÜÇGENSEL SAYI DİZİSİ</text><text x=\"40\" y=\"76\" font-size=\"10.5\" fill=\"#1E293B\">Genel terimi a_n = n.(n + 1) / 2 olan dizidir: (1, 3, 6, 10, 15, 21, 28, ...). 1'den n'ye kadar ardışık toplam.</text><rect x=\"25\" y=\"92\" width=\"630\" height=\"40\" rx=\"8\" fill=\"#ECFDF5\" stroke=\"#059669\" stroke-width=\"1.5\"/><text x=\"40\" y=\"108\" font-size=\"11\" font-weight=\"bold\" fill=\"#059669\">KARESEL SAYI DİZİSİ</text><text x=\"40\" y=\"124\" font-size=\"10.5\" fill=\"#1E293B\">Genel terimi a_n = n^2 olan dizidir: (1, 4, 9, 16, 25, 36, ...). Ardışık iki üçgensel sayının toplamı karesel sayıdır!</text><rect x=\"25\" y=\"140\" width=\"630\" height=\"40\" rx=\"8\" fill=\"#F5F3FF\" stroke=\"#7C3AED\" stroke-width=\"1.5\"/><text x=\"40\" y=\"156\" font-size=\"11\" font-weight=\"bold\" fill=\"#7C3AED\">FİBONACCİ SAYI DİZİSİ</text><text x=\"40\" y=\"172\" font-size=\"10.5\" fill=\"#1E293B\">F_1 = 1, F_2 = 1 ve F_(n+2) = F_(n+1) + F_n kuralıyla oluşan dizidir: (1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ...).</text><rect x=\"25\" y=\"188\" width=\"630\" height=\"40\" rx=\"8\" fill=\"#FEF3C7\" stroke=\"#D97706\" stroke-width=\"1.5\"/><text x=\"40\" y=\"204\" font-size=\"11\" font-weight=\"bold\" fill=\"#D97706\">PARÇALI DİZİLER</text><text x=\"40\" y=\"220\" font-size=\"10.5\" fill=\"#1E293B\">n'nin tek veya çift olmasına (ya da mod değerine) göre farklı kurallarla tanımlanan dizilerdir.</text></svg>"
+  },
+  {
+   "baslik": "6. İkinci Dereceden Dizilerde En Büyük ve En Küçük Terim",
+   "metin": [
+    "Genel terimi {koyu:an = a.n² + b.n + c} biçiminde ikinci dereceden bir fonksiyon (parabol) olan dizilerin en küçük veya en büyük terimini bulmak için parabolün tepe noktasının apsisi olan {koyu:r = -b / (2a)} değeri hesaplanır.",
+    "Eğer {koyu:r} bir pozitif tam sayı ise dizinin en küçük (veya en büyük) terimi doğrudan {koyu:ar} terimidir. Eğer {koyu:r} tam sayı değilse (veya pozitif değilse), {koyu:r}'ye en yakın olan pozitif tam sayı indisindeki terim dizinin ekstremum (en küçük/en büyük) terimini verir."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Tepe Noktası Pozitif Tam Sayı Değilse",
+    "metin": "Örneğin {koyu:an = n² - 7n + 10} dizisinde tepe noktası {koyu:r = 7/2 = 3,5} bulunur. 3,5 tam sayı olmadığı için ona en yakın pozitif tam sayılar olan {koyu:n = 3} ve {koyu:n = 4} için {koyu:a3 = a4 = -2} dizinin en küçük terimidir."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Genel terimi an = (4n - 9) / (2n + k) olan (an) dizisi sabit bir dizi olduğuna göre k gerçek sayısı kaçtır ve dizinin 25. terimi (a25) kaçtır?",
+   "cevap": "Rasyonel bir dizinin sabit dizi olması için n'lerin katsayıları oranı sabit terimlerin oranına eşit olmalıdır: {koyu:4 / 2 = -9 / k -> 2 = -9 / k -> k = -9/2} bulunur. Sabit dizide tüm terimler birbirine ve katsayılar oranına eşit olduğundan {koyu:a25 = 4 / 2 = 2} olur."
+  },
+  {
+   "soru": "Genel terimi an = (n² - 5n - 14) / (n + 3) olan dizinin kaç terimi negatiftir?",
+   "cevap": "Pay çarpanlarına ayrılırsa {koyu:n² - 5n - 14 = (n - 7)(n + 2)} olur. Dizinin tanım kümesi pozitif tam sayılar ({koyu:n >= 1}) olduğu için {koyu:n + 2 > 0} ve {koyu:n + 3 > 0} ifadeleri daima pozitiftir. İfadenin negatif olması için yalnız {koyu:n - 7 < 0 -> n < 7} olmalıdır. Pozitif tam sayılarda {koyu:n = 1, 2, 3, 4, 5, 6} olmak üzere dizinin {koyu:6 terimi} negatiftir."
+  },
+  {
+   "soru": "Bir (an) dizisinde a1 = 4 ve her n >= 1 için a(n+1) = an + 2n + 1 indirgeme bağıntısı verildiğine göre bu dizinin 10. terimi (a10) kaçtır?",
+   "cevap": "n = 1, 2, ..., 9 için eşitlikler yazılıp taraf tarafa toplanırsa sol ve sağdaki ara terimler birbirini götürür ve {koyu:a10 - a1 = (2.1 + 1) + (2.2 + 1) + ... + (2.9 + 1)} elde edilir. Sağ taraf 3'ten 19'a kadar tek sayıların toplamıdır (1 eksik olduğundan {koyu:10² - 1 = 99}). Buradan {koyu:a10 = a1 + 99 = 4 + 99 = 103} bulunur."
+  },
+  {
+   "soru": "İlk n teriminin toplamı Sn = 2n² + 3n olan bir (an) dizisinin 1. terimi ile 8. teriminin toplamı (a1 + a8) kaçtır?",
+   "cevap": "İlk terim {koyu:a1 = S1 = 2(1)² + 3(1) = 5} olur. 8. terim ise {koyu:a8 = S8 - S7} formülüyle bulunur: {koyu:S8 = 2(64) + 24 = 152} ve {koyu:S7 = 2(49) + 21 = 119} olduğundan {koyu:a8 = 152 - 119 = 33} elde edilir. İstenen toplam {koyu:a1 + a8 = 5 + 33 = 38} olur."
+  },
+  {
+   "soru": "Üçgensel sayı dizisinin 8. terimi ile karesel sayı dizisinin 6. teriminin toplamı kaçtır?",
+   "cevap": "Üçgensel sayı dizisinin genel terimi {koyu:Tn = n.(n + 1) / 2} olduğundan 8. terimi {koyu:T8 = 8 . 9 / 2 = 36} olur. Karesel sayı dizisinin genel terimi {koyu:Kn = n²} olduğundan 6. terimi {koyu:K6 = 6² = 36} olur. İkisinin toplamı {koyu:36 + 36 = 72} bulunur."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Aşağıda verilen ifadelerden hangisi bir gerçek sayı dizisinin genel terimi olamaz?",
+   "secenekler": [
+    "an = (3n + 1) / (2n - 5)",
+    "bn = (n² + 4) / (n + 3)",
+    "cn = (5n - 2) / (3n - 12)",
+    "dn = (-1)^n . (2n + 7)",
+    "en = n / (n² + 1)"
+   ],
+   "dogru": 2,
+   "aciklama": "cn = (5n - 2) / (3n - 12) ifadesinde payda 3n - 12 = 0 -> n = 4 pozitif tam sayısında sıfır olduğu için c4 tanımsızdır ve dizi belirtmez."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Genel terimi an = (6n + m) / (2n - 4) olan (an) dizisi sabit bir dizi olduğuna göre m + a10 toplamı kaçtır?",
+   "secenekler": [
+    "-15",
+    "-9",
+    "-6",
+    "9",
+    "15"
+   ],
+   "dogru": 1,
+   "aciklama": "Sabit dizi kuralından 6 / 2 = m / (-4) -> 3 = m / (-4) -> m = -12 olur. Dizinin tüm terimleri 6 / 2 = 3 olduğundan a10 = 3 ve m + a10 = -12 + 3 = -9 bulunur."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "Gerçek sayı dizilerinin tanım kümesi pozitif tam sayılar kümesi (Z+) olup n yerine 0 veya negatif tam sayı yazılamaz.",
+     "dogru": true,
+     "aciklama": "Diziler Z+ = {1, 2, 3, ...} kümesinden R'ye tanımlı fonksiyonlardır."
+    },
+    {
+     "metin": "Ardışık iki üçgensel sayının toplamı her zaman bir karesel sayıya eşittir.",
+     "dogru": true,
+     "aciklama": "n(n+1)/2 + (n+1)(n+2)/2 = (n+1)² olduğundan ardışık iki üçgensel sayının toplamı tam karedir."
+    },
+    {
+     "metin": "İlk n terim toplamı Sn olan bir dizide n >= 2 için genel terim an = Sn + S(n-1) formülüyle bulunur.",
+     "dogru": false,
+     "aciklama": "Genel terim toplamla değil farkla bulunur: an = Sn - S(n-1)."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "soru": "Aşağıdaki dizi kavramlarını ve özel dizileri genel terimleri veya kurallarıyla eşleştiriniz.",
+   "ciftler": [
+    [
+     "Üçgensel Sayı Dizisi",
+     "an = n . (n + 1) / 2"
+    ],
+    [
+     "Karesel Sayı Dizisi",
+     "an = n²"
+    ],
+    [
+     "Fibonacci Sayı Dizisi",
+     "F1 = 1, F2 = 1 ve F(n+2) = F(n+1) + Fn"
+    ],
+    [
+     "Sabit Dizi Kuralı",
+     "(pn + r) / (sn + t) dizisinde p/s = r/t"
+    ],
+    [
+     "İlk n Terim Toplamından Terim Bulma",
+     "an = Sn - S(n-1) (n >= 2 için)"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kelimelerle tamamlayınız.",
+   "cumleler": [
+    {
+     "metin": "Tanım kümesi A_k = {1, 2, 3, ..., k} biçiminde sınırlı olan dizilere ___ dizi adı verilir.",
+     "cevap": "sonlu"
+    },
+    {
+     "metin": "Her terimi kendisinden önceki terimler cinsinden tanımlanan dizilere ___ dizi denir.",
+     "cevap": "indirgemeli"
+    },
+    {
+     "metin": "Fibonacci sayı dizisinde ardışık terimlerin oranı terimler büyüdükçe ___ orana yaklaşır.",
+     "cevap": "altın"
+    }
+   ],
+   "fazla": [
+    "sabit",
+    "rasyonel"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Genel terimi an = n² - 8n + 19 olan bir (an) dizisinin en küçük terimi kaçıncı terimdir ve değeri kaçtır? Adım adım açıklayınız.",
+   "ipuclari": [
+    "1. İpucu: İkinci dereceden ifadenin tepe noktasının apsisini r = -b / (2a) formülüyle bulunuz.",
+    "2. İpucu: Bulduğunuz r değerinin pozitif tam sayı olup olmadığını kontrol ederek dizide n yerine yazınız."
+   ],
+   "cevap": "Verilen dizi ikinci dereceden bir parabol denklemi olduğundan tepe noktasının apsisi {koyu:r = -(-8) / (2.1) = 4} bulunur. 4 sayısı pozitif bir tam sayı ({koyu:4 eleman Z+}) olduğu için dizinin en küçük terimi {koyu:4. terimdir (a4)} ve değeri {koyu:a4 = 4² - 8(4) + 19 = 16 - 32 + 19 = 3} olarak hesaplanır."
+  }
+ ]
+}
