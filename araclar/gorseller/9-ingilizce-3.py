@@ -233,3 +233,9 @@ GORSELLER = {
   <text x="560" y="196" text-anchor="middle" font-size="10" font-weight="700" fill="#5b21b6">• on the second floor (2. katta)</text>
 </svg>'''
 }
+
+
+def uygula(v):
+    for i, k in enumerate(["b1", "b2", "b3", "b4", "b5", "b6"]):
+        if i < len(v.get("bolumler", [])) and k in GORSELLER:
+            v["bolumler"][i]["gorsel"] = GORSELLER[k]
