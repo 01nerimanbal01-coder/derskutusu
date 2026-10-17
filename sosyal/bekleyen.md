@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 346 gönderi.
+Toplam 368 gönderi.
 
 ## bilgi-7-turkce-7
 Sıra: 2026-11-19 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-turkce-7.png
@@ -2055,7 +2055,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-fizik-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-fizik-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-fizik-5.png
 
 ```
 Bunu biliyor muydunuz? Sabit ivmeli harekette grafiklerin eğimi türev büyüklüğü, eksenle sınırladığı alan ise hız değişimi ve yer değiştirmeyi verir.
@@ -2065,7 +2065,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-hadis-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-hadis-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-hadis-5.png
 
 ```
 Bunu biliyor muydunuz? Sünnet Kur’an-ı Kerim’in kapalı ve özet ayetlerini beyan ederek İslam dininin hükümlerini yaşanabilir hale getirir.
@@ -2075,7 +2075,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-ingilizce-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-ingilizce-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-ingilizce-5.png
 
 ```
 Bunu biliyor muydunuz? İngilizcede mustn’t yasak, don’t have to zorunluluk olmayışı anlatırken planlı kulüp projeleri be going to ile ifade edilir.
@@ -2085,7 +2085,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-kimya-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-kimya-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-kimya-5.png
 
 ```
 Bunu biliyor muydunuz? 1 mol madde 6,02·10²³ tanecik içerir ve mol sayısı kütle, tanecik sayısı ile gaz hacmi arasındaki dönüşüm köprüsünü kurar.
@@ -2095,7 +2095,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-kuran-i-kerim-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-kuran-i-kerim-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-kuran-i-kerim-5.png
 
 ```
 Bunu biliyor muydunuz? Tecvitte med harflerinden sonra hemze veya sükûn gelmesine göre Muttasıl, Munfasıl, Lâzım, Ârız ve Lîn medleri uygulanır.
@@ -2105,7 +2105,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-matematik-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-matematik-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-matematik-5.png
 
 ```
 Bunu biliyor muydunuz? Üçgende alan taban-yükseklik, sinüs teoremi veya iç teğet çember yarıçapıyla hesaplanır; benzer üçgenlerde alanlar oranı k² olur.
@@ -2115,7 +2115,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-peygamberimizin-hayati-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-peygamberimizin-hayati-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-peygamberimizin-hayati-5.png
 
 ```
 Bunu biliyor muydunuz? Hz. Peygamber (sav) Taif’te uğradığı ağır eziyetlere beddua yerine dua ve merhametle karşılık vererek Taif’in kalbini kazanmıştır.
@@ -2125,7 +2125,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-siyer-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-siyer-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-siyer-5.png
 
 ```
 Bunu biliyor muydunuz? Hz. Muhammed (sav) risalet öncesinde Hilfü’l-Fudûl üyeliği, dürüst ticareti ve Kâbe hakemliğiyle El-Emin sıfatını kazanmıştır.
@@ -2135,7 +2135,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-tarih-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-tarih-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-tarih-5.png
 
 ```
 Bunu biliyor muydunuz? Türk-İslam devletlerinde kut ve töre geleneği korunurken Divan teşkilatı, gulam sistemi ve ikta ordusuyla kurumsal dönüşüm sağlanmıştır.
@@ -2145,7 +2145,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-temel-dini-bilgiler-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-temel-dini-bilgiler-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-temel-dini-bilgiler-5.png
 
 ```
 Bunu biliyor muydunuz? İslam’da dünya ahiretin tarlası kabul edilir; mümin iman, salih amel, ihlas ve helal kazançla dünya-ahiret dengesini kurar.
@@ -2155,7 +2155,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-akaid-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-akaid-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-akaid-5.png
 
 ```
 Bunu biliyor muydunuz? İslam akaidinde insanlar iman karşısındaki tutumlarına göre mümin, kâfir, müşrik ve münafık olarak ayrılır; salih amel imanı korur.
@@ -2165,7 +2165,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-biyoloji-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-biyoloji-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-biyoloji-5.png
 
 ```
 Bunu biliyor muydunuz? Bitkisel hormonlardan oksin, giberellin ve sitokinin büyümeyi uyarırken etilen ve absisik asit olgunlaşma ile stres yanıtını yönetir.
@@ -2175,7 +2175,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-cografya-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-cografya-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-cografya-5.png
 
 ```
 Bunu biliyor muydunuz? Ekosistemin sürekliliği besin zincirindeki tek yönlü enerji akışı ile karbon, oksijen, azot ve su döngülerinin dengesine bağlıdır.
@@ -2185,7 +2185,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-din-kulturu-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-din-kulturu-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-din-kulturu-5.png
 
 ```
 Bunu biliyor muydunuz? Ahiret hayatı berzah, kıyamet, ba’s, haşir ve mizan aşamalarından oluşur; cenaze techiz ve namazı ise müminlere farz-ı kifayedir.
@@ -2195,7 +2195,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-dinler-tarihi-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-dinler-tarihi-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-dinler-tarihi-5.png
 
 ```
 Bunu biliyor muydunuz? Hinduizmde Vedalar kutsal metin kabul edilirken toplumsal yapı kast sistemine, kurtuluş inancı ise karma ve samsara döngüsüne dayanır.
@@ -2205,7 +2205,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-edebiyat-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-edebiyat-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-edebiyat-5.png
 
 ```
 Bunu biliyor muydunuz? Makale kanıtlama amacı taşırken fıkra güncel konuları samimi dille yorumlar; cümlenin ögeleri bulunurken söz öbekleri bölünmez.
@@ -2215,7 +2215,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-felsefe-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-felsefe-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-felsefe-5.png
 
 ```
 Bunu biliyor muydunuz? İlk Çağ doğa filozofları evrenin ana maddesini (arkhe) doğa içinde aramış; Herakleitos oluşu, Parmenides ise değişmez varlığı savunmuştur.
@@ -2225,7 +2225,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-fizik-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-fizik-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-fizik-5.png
 
 ```
 Bunu biliyor muydunuz? Cisme uygulanan net itme çizgisel momentum değişimine eşittir; çarpışma süresi uzadıkça etki eden ortalama kuvvet azalır.
@@ -2235,7 +2235,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-hitabet-ve-mesleki-uygulama-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-hitabet-ve-mesleki-uygulama-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-hitabet-ve-mesleki-uygulama-5.png
 
 ```
 Bunu biliyor muydunuz? Din hizmetlerinde etkili iletişim; muhatap analizi, hikmetli ve müjdeleyici üslup ile samimi beden dilinin bütünleşmesine dayanır.
@@ -2245,7 +2245,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-ingilizce-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-ingilizce-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-ingilizce-5.png
 
 ```
 Bunu biliyor muydunuz? İngilizcede used to hem geçmiş eylem hem durumları anlatırken would yalnız eylemlerle, was/were able to ise özel başarılarla kullanılır.
@@ -2255,7 +2255,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-kimya-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-kimya-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-kimya-5.png
 
 ```
 Bunu biliyor muydunuz? Hess Yasası’na göre ara basamakların toplanmasıyla elde edilen net tepkimenin entalpisi basamakların entalpi değişimleri toplamına eşittir.
@@ -2265,7 +2265,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-kuran-i-kerim-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-kuran-i-kerim-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-kuran-i-kerim-5.png
 
 ```
 Bunu biliyor muydunuz? Kehf Suresi 1-10. ayetler tevhid inancını ve Ashab-ı Kehf’in samimi duasını anlatırken 1. ayette tecvitteki dört sekteden biri uygulanır.
@@ -2275,7 +2275,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-matematik-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-matematik-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-matematik-5.png
 
 ```
 Bunu biliyor muydunuz? Trigonometride 180° = π radyan dönüşümü kullanılır ve her yönlü açının birim çember üzerindeki yeri [0, 2π) aralığındaki esas ölçüsüyle bulunur.
@@ -2285,7 +2285,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-mesleki-arapca-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-mesleki-arapca-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-mesleki-arapca-5.png
 
 ```
 Bunu biliyor muydunuz? Mesleki Arapçada taharet, vudû, ğusl ve teyemmüm terimleri ile abdestin farz ve sünnetlerini bildiren fıkhi kalıplar temel ibadet dilini oluşturur.
@@ -2295,7 +2295,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-peygamberimizin-hayati-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-peygamberimizin-hayati-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-peygamberimizin-hayati-5.png
 
 ```
 Bunu biliyor muydunuz? Hicret sonrasında Medine’de inşa edilen Mescid-i Nebi, Suffe, muâhât kardeşliği ve Medine Vesikası İslam toplumunun kurucu temellerini oluşturmuştur.
@@ -3462,4 +3462,224 @@ Bunu biliyor muydunuz? Mümin el-Hâdî ismiyle hidayeti arar, es-Selâm ismiyle
 Faydalı bulduysanız arkadaşınızı etiketleyin.
 📘 7. sınıf Temel Dinî Bilgiler 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-temel-dini-bilgiler-hafta-7
 #derskutusu #temeldinibilgiler #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-biyoloji-7
+Sıra: 2026-12-10 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-biyoloji-7.png
+
+```
+Bunu biliyor muydunuz? Kemosentez ışık enerjisi olmadan yalnız bazı bakteri ve arkelerde gerçekleşir; gece-gündüz kesintisiz devam edebilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Biyoloji 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-biyoloji-hafta-7
+#derskutusu #biyoloji #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-edebiyat-7
+Sıra: 2026-12-10 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-edebiyat-7.png
+
+```
+Bunu biliyor muydunuz? Masallar döşeme, asıl olay ve dilek bölümlerinden oluşur; yazım kurallarında ünlü düşmesi, ünsüz yumuşaması ve benzeşmesi doğru uygulanmalıdır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Türk Dili ve Edebiyatı 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-turk-dili-ve-edebiyati-hafta-7
+#derskutusu #edebiyat #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-fizik-7
+Sıra: 2026-12-10 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fizik-7.png
+
+```
+Bunu biliyor muydunuz? Serbest düşmede cismin hızı v = g·t, düştüğü yükseklik h = ½·g·t² bağıntısıyla bulunur ve her saniye 5 m, 15 m, 25 m... yol alır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Fizik 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fizik-hafta-7
+#derskutusu #fizik #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-kimya-7
+Sıra: 2026-12-10 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kimya-7.png
+
+```
+Bunu biliyor muydunuz? 1 gram madde Avogadro sayısı kadar akb’ye eşittir (1 g = N_A akb); elementlerin ortalama atom kütlesi izotop bolluk yüzdeleriyle hesaplanır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Kimya 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kimya-hafta-7
+#derskutusu #kimya #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-matematik-7
+Sıra: 2026-12-10 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-matematik-7.png
+
+```
+Bunu biliyor muydunuz? İki yönlü sıklık tablolarında belirli bir satır veya sütun alt kümesine göre hesaplanan yüzdelere koşullu göreli sıklık denir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Matematik 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-matematik-hafta-7
+#derskutusu #matematik #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-arapca-7
+Sıra: 2026-12-10 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-arapca-7.png
+
+```
+Bunu biliyor muydunuz? Arapçada edebî türler eş-şi’r (şiir), el-kıssa (hikâye), er-rivâye (roman) ve el-mesrahiyye (tiyatro) kelimeleriyle ifade edilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Arapça 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-arapca-hafta-7
+#derskutusu #arapça #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-kuran-i-kerim-7
+Sıra: 2026-12-11 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-kuran-i-kerim-7.png
+
+```
+Bunu biliyor muydunuz? Hucurât suresinde haber doğrulama ve kardeşlik emredilir; sû-i zan, tecessüs ve gıybet yasaklanarak üstünlüğün yalnız takvada olduğu bildirilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Kur’an-ı Kerim 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-kuran-i-kerim-hafta-7
+#derskutusu #kuranıkerim #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-peygamberimizin-hayati-7
+Sıra: 2026-12-11 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-peygamberimizin-hayati-7.png
+
+```
+Bunu biliyor muydunuz? Hz. Peygamber Bedir, Uhud ve Hendek savaşlarında istişareyle hareket etmiş; Bedir esirlerini okuma yazma öğretmeleri şartıyla serbest bırakmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Peygamberimizin Hayatı 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-peygamberimizin-hayati-hafta-7
+#derskutusu #peygamberimizinhayatı #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-temel-dini-bilgiler-7
+Sıra: 2026-12-11 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-temel-dini-bilgiler-7.png
+
+```
+Bunu biliyor muydunuz? Kul ve kamu hakkı tövbeyle kendiliğinden düşmez; alınan hakkın sahibine iade edilmesi (tazmin) ve helallik alınması gerekir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Temel Dinî Bilgiler 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-temel-dini-bilgiler-hafta-7
+#derskutusu #temeldinibilgiler #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-arapca-7
+Sıra: 2026-12-11 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-arapca-7.png
+
+```
+Bunu biliyor muydunuz? Arapçada isimlerin sonuna bitişen -î, -ke, -ki, -hû ve -hâ zamirleri iyelik (sahiplik) bildirir; “Min eyne ente?” ise “Nerelisin?” demektir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Arapça 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-arapca-hafta-7
+#derskutusu #arapça #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-biyoloji-7
+Sıra: 2026-12-11 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-biyoloji-7.png
+
+```
+Bunu biliyor muydunuz? Kontrollü deneyde araştırmacının değiştirdiği faktör bağımsız değişkendir; bilimsel teoriler ve kanunlar farklı bilgi türleri olup birbirine dönüşmez.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Biyoloji 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-biyoloji-hafta-7
+#derskutusu #biyoloji #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-cografya-7
+Sıra: 2026-12-11 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-cografya-7.png
+
+```
+Bunu biliyor muydunuz? Türkiye’de dört mevsimin belirgin yaşanması ve bakı yönünün güney olması mutlak konumun; boğazlar ve yükselti ise göreceli konumun sonucudur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Coğrafya 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-cografya-hafta-7
+#derskutusu #coğrafya #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-din-kulturu-7
+Sıra: 2026-12-12 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-din-kulturu-7.png
+
+```
+Bunu biliyor muydunuz? Rûm suresi 20–27. ayetlerde insanın yaratılışı, ailedeki sevgi-merhamet, dil ve renk çeşitliliği ile toprağın dirilişi ilahi kudretin delilleri olarak gösterilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Din Kültürü ve Ahlak Bilgisi 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-din-kulturu-ve-ahlak-bilgisi-hafta-7
+#derskutusu #dinkültürü #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-edebiyat-7
+Sıra: 2026-12-12 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-edebiyat-7.png
+
+```
+Bunu biliyor muydunuz? Anlatımda gereksiz sözcük bulunmamasına duruluk, tek ve net anlam çıkmasına açıklık, süsten uzak sade söyleyişe ise yalınlık denir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Türk Dili ve Edebiyatı 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-turk-dili-ve-edebiyati-hafta-7
+#derskutusu #edebiyat #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-fizik-7
+Sıra: 2026-12-12 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-fizik-7.png
+
+```
+Bunu biliyor muydunuz? Eşit büyüklükteki (F) iki vektör arasındaki açı 60° ise bileşke F·√3, 90° ise F·√2, 120° ise F olur; açı küçüldükçe bileşke büyür.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Fizik 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-fizik-hafta-7
+#derskutusu #fizik #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-ingilizce-7
+Sıra: 2026-12-12 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-ingilizce-7.png
+
+```
+Bunu biliyor muydunuz? İngilizcede saatlerle “at”, günlerle “on”, ay ve günün bölümleriyle “in” edatı kullanılır; rutinler Present Simple Tense ile ifade edilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf İngilizce 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-ingilizce-hafta-7
+#derskutusu #ingilizce #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-kimya-7
+Sıra: 2026-12-12 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-kimya-7.png
+
+```
+Bunu biliyor muydunuz? Küresel simetri kararlılığı nedeniyle 24Cr atomunun temel hâl dizilimi 4s¹ 3d⁵, 29Cu atomunun temel hâl dizilimi ise 4s¹ 3d¹⁰ şeklindedir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Kimya 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-kimya-hafta-7
+#derskutusu #kimya #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-kuran-i-kerim-7
+Sıra: 2026-12-12 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-kuran-i-kerim-7.png
+
+```
+Bunu biliyor muydunuz? Peltek harfler sâ, zel ve zı’dır; “kutbü ced” (kâf, tâ, bâ, cîm, dâl) harfleri ise sakin olduğunda sarsılarak (kalkale ile) okunur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Kur’an-ı Kerim 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-kuran-i-kerim-hafta-7
+#derskutusu #kuranıkerim #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-matematik-7
+Sıra: 2026-12-13 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-matematik-7.png
+
+```
+Bunu biliyor muydunuz? g(x) = ax + b (a ≠ 0) doğrusal fonksiyonunda a eğimi, −b/a fonksiyonun sıfırını verir; a > 0 ise fonksiyon artan, a < 0 ise azalandır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Matematik 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-matematik-hafta-7
+#derskutusu #matematik #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-peygamberimizin-hayati-7
+Sıra: 2026-12-13 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-peygamberimizin-hayati-7.png
+
+```
+Bunu biliyor muydunuz? İslam öncesi Mekke’de Îlâf antlaşmalarıyla kervan ticareti gelişmiş; putperestliğe karşı Hz. İbrahim’in tevhid dinini koruyanlara Hanîf denmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Peygamberimizin Hayatı 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-peygamberimizin-hayati-hafta-7
+#derskutusu #peygamberimizinhayatı #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-tarih-7
+Sıra: 2026-12-13 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-tarih-7.png
+
+```
+Bunu biliyor muydunuz? Tarih araştırmalarında 5T yöntemi (Tarama, Tasnif, Tahlil, Tenkit, Terkip) uygulanır; tenkit aşaması iç ve dış tenkit olarak ikiye ayrılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Tarih 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-tarih-hafta-7
+#derskutusu #tarih #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-temel-dini-bilgiler-7
+Sıra: 2026-12-13 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-temel-dini-bilgiler-7.png
+
+```
+Bunu biliyor muydunuz? Hezarfen Necmeddin Okyay, ihsan bilinciyle hüsn-i hat, okçuluk, ciltçilik ve çiçekli ebru (Necmeddin Ebrusu) sanatlarında ustalaşmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Temel Dinî Bilgiler 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-temel-dini-bilgiler-hafta-7
+#derskutusu #temeldinibilgiler #9sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
