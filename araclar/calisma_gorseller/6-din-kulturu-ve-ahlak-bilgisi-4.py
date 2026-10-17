@@ -41,27 +41,18 @@ def ok(x1, y1, x2, y2, renk=SOLUK, kalin=2):
 
 
 def roller():
-    """Peygamberlerin rolleri çarkı: beş dilim dolu, biri boş (önce dilimler, sonra etiketler)."""
-    cx, cy, r1, r2 = 180, 66, 26, 62
-    roller_ = ['Kul', 'Yönetici', 'Komşu', 'Baba', 'Eş', '?']
-    renkler = [MAVI, YES, TUR, MOR, CAM, TUR]
-    ic, etiket = '', ''
-    for i, (ad, renk) in enumerate(zip(roller_, renkler)):
-        a0, a1 = math.radians(-90 + i * 60 + 2), math.radians(-90 + (i + 1) * 60 - 2)
-        p = [(cx + r1 * math.cos(a0), cy + r1 * math.sin(a0)), (cx + r2 * math.cos(a0), cy + r2 * math.sin(a0)),
-             (cx + r2 * math.cos(a1), cy + r2 * math.sin(a1)), (cx + r1 * math.cos(a1), cy + r1 * math.sin(a1))]
+    """Peygamberlerin rolleri: ortada Roller göbeği, çevresinde altı kart (biri boş, kesik çizgili)."""
+    cx, cy = 180, 64
+    ic = ''
+    kartlar = [('Kul', 60, 16, MAVI), ('Yönetici', 300, 16, YES), ('Komşu', 318, 64, TUR), ('Baba', 300, 112, MOR), ('Eş', 60, 112, CAM), ('?', 42, 64, TUR)]
+    for ad, x, y, renk in kartlar:
+        ic += f'<line x1="{cx}" y1="{cy}" x2="{x}" y2="{y}" stroke="{GRI}" stroke-width="1.4"/>'
+    for ad, x, y, renk in kartlar:
         bos = ad == '?'
-        d = (f'M{p[0][0]:.1f} {p[0][1]:.1f} L{p[1][0]:.1f} {p[1][1]:.1f} A{r2} {r2} 0 0 1 {p[2][0]:.1f} {p[2][1]:.1f} '
-             f'L{p[3][0]:.1f} {p[3][1]:.1f} A{r1} {r1} 0 0 0 {p[0][0]:.1f} {p[0][1]:.1f} Z')
-        kesik = ' stroke-dasharray="5 4"' if bos else ''
-        ic += f'<path d="{d}" fill="{"#fff" if bos else renk}" stroke="{renk}" stroke-width="{1.6 if bos else 0}"{kesik}/>'
-        am = math.radians(-90 + i * 60 + 30)
-        tx, ty = cx + (r1 + r2) / 2 * math.cos(am), cy + (r1 + r2) / 2 * math.sin(am)
-        etiket += yazi(tx, ty + 4.5, ad, 12 if len(ad) < 7 else 10, TUR if bos else '#fff')
-    ic += etiket + f'<circle cx="{cx}" cy="{cy}" r="{r1 - 2}" fill="{LAC}"/>' + yazi(cx, cy + 4, 'Roller', 11, '#fff')
-    ic += duz(6, 34, ['Peygamberler', 'hayatın her', 'rolünde', 'örnek oldu.'], 12.5, LAC, 'start', 15)
-    ic += duz(256, 34, ['Toplumsal', 'sorunlara', 'çözüm', 'aradılar.'], 12.5, LAC, 'start', 15)
-    return svg(360, 132, ic, 'Altı dilimli çark: Kul, Yönetici, Komşu, Baba, Eş ve soru işaretli boş dilim; ortada Roller yazısı. Yanlarda notlar: Peygamberler hayatın her rolünde örnek oldu. Toplumsal sorunlara çözüm aradılar.', 33)
+        ic += kutu(x - 38, y - 12, 76, 24, '#fff' if bos else renk, renk, 7, 1.6, ' stroke-dasharray="5 4"' if bos else '')
+        ic += yazi(x, y + 4.5, ad, 12.5, TUR if bos else '#fff')
+    ic += f'<circle cx="{cx}" cy="{cy}" r="30" fill="{LAC}"/>' + yazi(cx, cy - 2, 'Peygamberin', 10.5, '#fff') + yazi(cx, cy + 11, 'rolleri', 11, '#fff')
+    return svg(360, 128, ic, 'Ortada Peygamberin rolleri göbeği; çevresinde altı kart: Kul, Yönetici, Komşu, Baba, Eş ve soru işaretli kesik çizgili boş kart.', 32)
 
 
 def kilcik():
@@ -70,20 +61,18 @@ def kilcik():
     ic += f'<line x1="96" y1="50" x2="298" y2="50" stroke="{SOLUK}" stroke-width="2.4"/>'
     ic += kutu(298, 36, 58, 28, TUR_A, TUR, 6, 1.4) + yazi(327, 54, 'Ana fikir', 11.5, TUR)
     ust = ['ahlak', 'aile', 'bilim']
-    alt = ['toplumsal düzen', 'inanç', 'hukuk']
+    alt = [['toplumsal', 'düzen'], ['inanç'], ['hukuk']]
     for k, (u, a) in enumerate(zip(ust, alt)):
         x = 140 + k * 60
-        ic += f'<line x1="{x}" y1="50" x2="{x - 16}" y2="18" stroke="{SOLUK}" stroke-width="1.6"/><line x1="{x}" y1="50" x2="{x - 16}" y2="82" stroke="{SOLUK}" stroke-width="1.6"/>'
+        ic += f'<line x1="{x}" y1="{50}" x2="{x - 16}" y2="18" stroke="{SOLUK}" stroke-width="1.6"/><line x1="{x}" y1="50" x2="{x - 16}" y2="82" stroke="{SOLUK}" stroke-width="1.6"/>'
         ic += kutu(x - 44, 4, 56, 18, MAVI_A, MAVI, 5, 1.2) + yazi(x - 16, 17, u, 11.5, MAVI)
-        if k == 0:
-            ic += kutu(x - 62, 78, 92, 18, YES_A, YES, 5, 1.2) + yazi(x - 16, 91, a, 11, YES)
-        else:
-            ic += kutu(x - 44, 78, 56, 18, YES_A, YES, 5, 1.2) + yazi(x - 16, 91, a, 11.5, YES)
-    kartlar = ['Doğru sözlü olmak', 'Anne babaya saygı', 'Evreni gözlemleyip düşünmek', 'Haksızlık yapmamak', 'Allah’a inanmak', 'Komşularla yardımlaşmak']
+        yuk = 30 if len(a) > 1 else 18
+        ic += kutu(x - 44, 78, 56, yuk, YES_A, YES, 5, 1.2) + ''.join(yazi(x - 16, 91 + i * 12, m, 11, YES) for i, m in enumerate(a))
+    kartlar = ['Doğru sözlü olmak', 'Anne babaya saygı', 'Evreni araştırmak', 'Haksızlık yapmamak', 'Allah’a inanmak', 'Komşuyla yardımlaşma']
     for i, m in enumerate(kartlar):
-        x, y = 4 + (i % 2) * 180, 104 + (i // 2) * 26
+        x, y = 4 + (i % 2) * 180, 116 + (i // 2) * 26
         ic += kutu(x, y, 172, 22, KUM, GRI, 5, 1.1) + numara(x + 12, y + 11, i + 1, LAC, 8) + yazi(x + 96, y + 15.5, m, 11.5, LAC)
-    return svg(360, 182, ic, 'Balık kılçığı diyagramı: baş kısmında Vahyin getirdikleri nelerdir sorusu; üst kılçıklar ahlak, aile, bilim; alt kılçıklar toplumsal düzen, inanç, hukuk; kuyrukta Ana fikir. Altında numaralı kartlar: 1 Doğru sözlü olmak, 2 Anne babaya saygı, 3 Evreni gözlemleyip düşünmek, 4 Haksızlık yapmamak, 5 Allah’a inanmak, 6 Komşularla yardımlaşmak.', 46)
+    return svg(360, 194, ic, 'Balık kılçığı diyagramı: baş kısmında Vahyin getirdikleri nelerdir sorusu; üst kılçıklar ahlak, aile, bilim; alt kılçıklar toplumsal düzen, inanç, hukuk; kuyrukta Ana fikir. Altında numaralı kartlar: 1 Doğru sözlü olmak, 2 Anne babaya saygı, 3 Evreni araştırmak, 4 Haksızlık yapmamak, 5 Allah’a inanmak, 6 Komşuyla yardımlaşma.', 49)
 
 
 def levhalar():
