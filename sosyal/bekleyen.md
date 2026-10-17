@@ -1555,7 +1555,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-inkilap-tarihi-4
-Sıra: 2026-10-17 08:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-inkilap-tarihi-4.png
+Sıra: 2026-10-17 08:15 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-12-inkilap-tarihi-4.png
 
 ```
 Bunu biliyor muydunuz? Mondros Ateşkes Antlaşması'nın 7 ve 24. maddeleri Osmanlı topraklarını işgale açık hâle getirmiş; İzmir'in işgali ise Millî Mücadele ruhunu ateşlemiştir.
@@ -1565,7 +1565,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-islam-kultur-ve-medeniyeti-4
-Sıra: 2026-10-17 08:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-4.png
+Sıra: 2026-10-17 08:15 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-4.png
 
 ```
 Bunu biliyor muydunuz? İslam kültür ve medeniyeti; Kur'an ve Sünnet temelinde yükselmiş, selim akıl ve farklı kültürlerin sahih örf-âdetleriyle zenginleşerek evrensel bir nitelik kazanmıştır.
@@ -1575,7 +1575,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kelam-4
-Sıra: 2026-10-17 08:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-kelam-4.png
+Sıra: 2026-10-17 08:15 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-12-kelam-4.png
 
 ```
 Bunu biliyor muydunuz? Kelam ilmi İslam inancını şüphe ve inkârcı akımlara karşı savunmak için doğmuş; Ehl-i Sünnet kelam ekolü İmam Mâtürîdî ve İmam Eş'arî öncülüğünde sistemleşmiştir.
@@ -1585,7 +1585,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kuran-i-kerim-4
-Sıra: 2026-10-17 08:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-kuran-i-kerim-4.png
+Sıra: 2026-10-17 08:15 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-12-kuran-i-kerim-4.png
 
 ```
 Bunu biliyor muydunuz? Kur'an mesajını doğru anlamak için meal ve tefsir birlikte okunmalıdır; Kehf ve Mülk surelerindeki ayetler dünya malına aldanmamayı ve yalnız Allah'a güvenmeyi öğütler.
@@ -1595,7 +1595,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-mesleki-arapca-4
-Sıra: 2026-10-17 08:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-mesleki-arapca-4.png
+Sıra: 2026-10-17 08:15 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-12-mesleki-arapca-4.png
 
 ```
 Bunu biliyor muydunuz? Mesleki Arapçada tevhit ve ihlas kavramlarının yanı sıra kök harflerinde illet harfi taşıyan misal, ecvef ve nâkıs (mu'tel) fiillerin çekimleri incelenir.
@@ -1605,7 +1605,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-peygamberimizin-hayati-4
-Sıra: 2026-10-17 08:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-peygamberimizin-hayati-4.png
+Sıra: 2026-10-17 08:15 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-12-peygamberimizin-hayati-4.png
 
 ```
 Bunu biliyor muydunuz? İbadetlerde ve günlük hayatta Hz. Peygamber'in Sünnetine ve denge (itidal) ilkesine uymak esastır; dine sonradan eklenen bid'at ve hurafelerden sakınılmalıdır.
@@ -1615,7 +1615,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-temel-dini-bilgiler-4
-Sıra: 2026-10-17 08:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-temel-dini-bilgiler-4.png
+Sıra: 2026-10-17 08:15 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-12-temel-dini-bilgiler-4.png
 
 ```
 Bunu biliyor muydunuz? İslam inanç esaslarının (imanın şartlarının) belirlenmesinde tek yetkili kaynak Kur'an-ı Kerim ve sahih Sünnettir; salim akıl ise bu hakikatleri kavrayıp tasdik eder.
@@ -1625,7 +1625,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-5-arapca-5
-Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-5-arapca-5.png
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-5-arapca-5.png
 
 ```
 Bunu biliyor muydunuz? Arapçada cezm işareti harfi harekesiz okuturken, şedde işareti yan yana gelen iki aynı harfi birleştirerek kuvvetli ve iki kez okutur.
@@ -1635,7 +1635,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-5-kuran-i-kerim-5
-Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-5-kuran-i-kerim-5.png
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-5-kuran-i-kerim-5.png
 
 ```
 Bunu biliyor muydunuz? Kur'an-ı Kerim yazımında Elif, Dal, Zel, Ra, Ze ve Vav harfleri kendinden önce gelen harfle birleşir fakat kendinden sonra gelen harfle asla birleşmez.
@@ -1645,7 +1645,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-5-peygamberimizin-hayati-5
-Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-5-peygamberimizin-hayati-5.png
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-5-peygamberimizin-hayati-5.png
 
 ```
 Bunu biliyor muydunuz? Hz. Muhammed (sav), bebekliğinde sağlıklı büyümesi ve güzel Arapça öğrenmesi için sütannesi Hz. Halîme'ye verilmiş ve Benî Sa'd yurdunda dört yıl kalmıştır.
@@ -1655,7 +1655,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-5-temel-dini-bilgiler-5
-Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-5-temel-dini-bilgiler-5.png
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-5-temel-dini-bilgiler-5.png
 
 ```
 Bunu biliyor muydunuz? Mümin kimliğinin ilk adımı Kelime-i Tevhid ve Kelime-i Şehadet ile Allah'ın birliğine ve Hz. Muhammed'in peygamberliğine gönülden inanmaktır.
@@ -1665,7 +1665,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-6-arapca-5
-Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-6-arapca-5.png
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-6-arapca-5.png
 
 ```
 Bunu biliyor muydunuz? Arapçada mesleklerin çalışma yerleri anlatılırken "Eyne ya'melü / ta'melü?" kalıbı kullanılır; el- takısı şemsî harflerde okunmazken kamerî harflerde okunur.
@@ -1675,7 +1675,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-6-kuran-i-kerim-5
-Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-6-kuran-i-kerim-5.png
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-6-kuran-i-kerim-5.png
 
 ```
 Bunu biliyor muydunuz? Kur'an-ı Kerim tilavetinde Kutbu Ced (Kaf, Tı, Be, Cim, Dal) harfleri sakin olduğunda kalkale yapılır; sakin mîm ise kendinden sonraki harfe göre üç farklı tecvit kuralıyla okunur.
@@ -1685,7 +1685,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-6-peygamberimizin-hayati-5
-Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-6-peygamberimizin-hayati-5.png
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-6-peygamberimizin-hayati-5.png
 
 ```
 Bunu biliyor muydunuz? Hz. Peygamber (sav), gençlik yıllarındaki dürüst ticareti ve üstün emanet bilinci sayesinde henüz peygamber olmadan önce de el-Emîn olarak tanınmıştır.
@@ -1695,7 +1695,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-6-temel-dini-bilgiler-5
-Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-6-temel-dini-bilgiler-5.png
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-6-temel-dini-bilgiler-5.png
 
 ```
 Bunu biliyor muydunuz? İslam'da kalpteki iman bir ağacın köküne, ibadet ve salih ameller ise o ağacın dallarına ve meyvelerine benzer; iman ve amel birbirini besler.
@@ -1705,7 +1705,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-7-arapca-5
-Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-arapca-5.png
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-7-arapca-5.png
 
 ```
 Bunu biliyor muydunuz? Arapçada gelecekteki meslek hedefleri "Hulmî en ekûne..." kalıbıyla anlatılırken, sebep bildirmek için "li-ennenî" (çünkü ben) ve "li-key" (-mek için) ifadeleri kullanılır.
@@ -1715,7 +1715,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-7-kuran-i-kerim-5
-Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-kuran-i-kerim-5.png
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-7-kuran-i-kerim-5.png
 
 ```
 Bunu biliyor muydunuz? Bakara Suresi 177–186. ayetlerde gerçek iyilik ve erdemin (el-Birr) ölçütleri, Ramazan orucunun farziyeti ve Allah'ın dua eden kuluna yakınlığı anlatılır.
@@ -1725,7 +1725,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-7-matematik-5
-Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-matematik-5.png
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-7-matematik-5.png
 
 ```
 Bunu biliyor muydunuz? Rasyonel sayılar karşılaştırılırken pozitif sayılarda uygulanan büyüklük sıralamasının tam tersi negatif rasyonel sayılar için geçerlidir; sıfıra yakın olan negatif sayı daha büyüktür.
@@ -1735,7 +1735,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-7-peygamberimizin-hayati-5
-Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-peygamberimizin-hayati-5.png
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-7-peygamberimizin-hayati-5.png
 
 ```
 Bunu biliyor muydunuz? İsrâ ve Miraç mucizesi Hüzün Yılı'nın ardından Hz. Peygamber'e ilahi bir teselli olmuş; bu gecede beş vakit namaz ve Âmenerresûlü ayetleri hediye edilmiştir.
@@ -1745,7 +1745,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-7-sosyal-bilgiler-5
-Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-sosyal-bilgiler-5.png
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-7-sosyal-bilgiler-5.png
 
 ```
 Bunu biliyor muydunuz? Türk toplumu tarih boyunca bağımsızlık, vatan savunması ve doğal afet gibi millî meseleler karşısında tüm farklılıkları geride bırakarak tek yürek hâlinde kenetlenmiştir.
@@ -1755,7 +1755,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-7-temel-dini-bilgiler-5
-Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-temel-dini-bilgiler-5.png
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-7-temel-dini-bilgiler-5.png
 
 ```
 Bunu biliyor muydunuz? Cibrîl Hadisi'nde öğretilen ihsan bilinci; insanın her an Allah'ın gözetiminde olduğunu bilerek ibadetlerini ve insan ilişkilerini en güzel biçimde yapmasıdır.
@@ -1765,7 +1765,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-7-turkce-5
-Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-turkce-5.png
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-7-turkce-5.png
 
 ```
 Bunu biliyor muydunuz? Mülakat yalnızca soru ve cevapların nesnel biçimde aktarılmasına dayanırken; röportajda yazar soru-cevabın yanı sıra kendi gözlem, araştırma ve betimlemelerine de yer verir.
@@ -1775,7 +1775,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-din-kulturu-5
-Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-din-kulturu-5.png
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-8-din-kulturu-5.png
 
 ```
 Bunu biliyor muydunuz? İslam'da tevekkül tembellik etmek değil; başarı ve sağlık için cüz'î iradeyle çalışıp tüm önlemleri aldıktan sonra sonucu Yüce Allah'a havale etmektir.
@@ -1785,7 +1785,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-fen-bilimleri-5
-Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-fen-bilimleri-5.png
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-8-fen-bilimleri-5.png
 
 ```
 Bunu biliyor muydunuz? Kalıtsal yapılar büyükten küçüğe Kromozom - DNA - Gen - Nükleotid şeklinde sıralanır; DNA'da Adenin ile Timin ikili, Guanin ile Sitozin üçlü zayıf hidrojen bağı kurar.
@@ -1795,7 +1795,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-ingilizce-5
-Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-ingilizce-5.png
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-8-ingilizce-5.png
 
 ```
 Bunu biliyor muydunuz? İngilizcede tercih cümleleri kurulurken "prefer + V-ing + to + V-ing" kalıbı, "would rather" yapısında ise "would rather + V1 + than + V1" kuralı uygulanır.
