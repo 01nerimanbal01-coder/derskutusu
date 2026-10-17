@@ -108,6 +108,11 @@ def kavram_svg(merkez, dallar):
     return f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="Kavram haritası: {html.escape(merkez)}">{ic}</svg>'
 
 
+def dortlu_mu(s):
+    sec = s.get('secenekler', [])
+    return len(sec) == 4 and max(len(x) for x in sec) <= 10
+
+
 def soru_html(s, no, ad):
     t = s['tur']
     duzey = {'hatirla': '', 'uygula': ' d-uygula', 'ust': ' d-ust'}.get(s.get('duzey', 'hatirla'), '')
@@ -120,7 +125,9 @@ def soru_html(s, no, ad):
         # Ortaöğretimde beş seçenek (E) de olabilir; "dogru" 0 tabanlı sıra numarasıdır.
         if not (2 <= len(s['secenekler']) <= 5 and type(s.get('dogru')) is int and 0 <= s['dogru'] < len(s['secenekler'])):
             raise ValueError(f'{ad} soru {no}: çoktan seçmelide 2-5 seçenek ve 0 tabanlı geçerli "dogru" gerekir')
-        govde ='<ol class="ck-sec">' + ''.join(
+        # Dört kısa şık ("1 ve 3", "12 cm" gibi) tek satırda dizilir (17.10.2026).
+        dortlu = ' dortlu' if dortlu_mu(s) else ''
+        govde = f'<ol class="ck-sec{dortlu}">' + ''.join(
             f'<li class="{"dogru" if i == s["dogru"] else ""}"><b>{"ABCDE"[i]}</b><span>{sembol(x)}</span></li>' for i, x in enumerate(s['secenekler'])) + '</ol>'
     elif t == 'dy':
         govde = '<table class="ck-dy"><tr class="ck-dy-bas"><td></td><td class="k">D</td><td class="k">Y</td></tr>' + ''.join(
@@ -182,7 +189,7 @@ def tahmini_boy(s):
         g, y = (float(m.group(1)), float(m.group(2))) if m else (4, 3)
         boy += min(40, 88 * y / g) + 3
     # İki sütunlu şık ızgarası: 4 şık 2 satır, 5 şık 3 satır.
-    boy += {'coktan': (5.5 if max(len(x) for x in s.get('secenekler', [''])) < 22 else 10) * ((len(s.get('secenekler', [''])) + 1) // 2),
+    boy += {'coktan': (5.5 if max(len(x) for x in s.get('secenekler', [''])) < 22 else 10) * (1 if dortlu_mu(s) else (len(s.get('secenekler', [''])) + 1) // 2),
             'dy': 7 + 6.2 * len(s.get('ifadeler', [])), 'bosluk': 9 + 6.4 * len(s.get('cumleler', [])),
             'eslestir': 7.5 * len(s.get('ciftler', [])), 'kisa': 6 * s.get('satir', 2), 'acik': 6 * s.get('satir', 3),
             'tablo': 7.5 * (len(s.get('satirlar', [])) + 1), 'siralama': 6.2 * len(s.get('ogeler', [])),

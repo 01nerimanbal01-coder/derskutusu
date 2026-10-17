@@ -72,6 +72,7 @@
 
 /* Çoktan seçmeli */
 .ck-sec { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 10px; margin: 0; padding: 0; list-style: none; }
+.ck-sec.dortlu { grid-template-columns: repeat(4, 1fr); }
 .ck-sec li { display: flex; gap: 5px; align-items: baseline; }
 .ck-sec b { flex: none; display: inline-grid; place-items: center; width: 15px; height: 15px; border: 1.2px solid var(--ck-lacivert); border-radius: 50%; font: 700 7.2pt/1 Montserrat, sans-serif; }
 .ck.cevapli .ck-sec li.dogru b, body.cevapli .ck .ck-sec li.dogru b { background: var(--ck-cevap); border-color: var(--ck-cevap); color: #fff; }

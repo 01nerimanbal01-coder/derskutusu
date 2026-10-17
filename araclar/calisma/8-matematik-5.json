@@ -1,0 +1,275 @@
+{
+  "sinif": 8,
+  "ders": "matematik",
+  "hafta": 5,
+  "tarih": "12-16 Ekim 2026",
+  "konu": "Bilimsel Gösterim",
+  "ciktilar": [
+    "M.8.1.2.5. Çok büyük ve çok küçük sayıları bilimsel gösterimle ifade eder ve karşılaştırır."
+  ],
+  "hatirla": [
+    "Bilimsel gösterim a · {us:10|n} biçimindedir; burada 1 ≤ |a| < 10 ve n bir tam sayıdır.",
+    "Büyük sayılarda virgül sola kaydırılır; kaydırılan basamak sayısı 10'un pozitif üssü olur.",
+    "0 ile 1 arasındaki sayılarda virgül sağa kaydırılır; kaydırılan basamak sayısı 10'un negatif üssü olur.",
+    "Karşılaştırmada önce 10'un üslerine, üsler eşitse katsayılara bakılır. Katsayı 10 kat küçültülürse üs 1 artırılır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Her sayıyı bilimsel gösterimiyle eşleştiriniz. Harfleri kutulara yazınız.",
+      "ciftler": [
+        [
+          "4 060 000",
+          "4,06 · {us:10|6}"
+        ],
+        [
+          "0,000 81",
+          "8,1 · {us:10|−4}"
+        ],
+        [
+          "92 000 000 000",
+          "9,2 · {us:10|10}"
+        ],
+        [
+          "0,07",
+          "7 · {us:10|−2}"
+        ],
+        [
+          "30 500",
+          "3,05 · {us:10|4}"
+        ]
+      ]
+    },
+    {
+      "tur": "kisa",
+      "duzey": "hatirla",
+      "soru": "Görseldeki bilgi kartlarında üç büyüklük verilmiştir. Her birini birimiyle birlikte bilimsel gösterimle yazınız.",
+      "cevap": "Işık: 3 · {us:10|5} km; yaprak: 1 · {us:10|−4} m; yüzölçümü: 7,836 · {us:10|5} km².",
+      "satir": 3
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Doğru olan ifadelerin yanındaki D kutusunu, yanlış olanların yanındaki Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "a · {us:10|n} biçiminde yazılan sayıda katsayı için 1 ≤ |a| < 10 olmalıdır.",
+          "dogru": true
+        },
+        {
+          "metin": "12,5 · {us:10|3} ifadesi bilimsel gösterimdir.",
+          "dogru": false
+        },
+        {
+          "metin": "0 ile 1 arasındaki bir sayının bilimsel gösteriminde 10'un üssü negatiftir.",
+          "dogru": true
+        },
+        {
+          "metin": "Katsayıdaki virgül bir basamak sağa kaydırılırsa eşitliğin bozulmaması için 10'un üssü 1 artırılır.",
+          "dogru": false
+        },
+        {
+          "metin": "{us:10|0} = 1 olduğundan 7 sayısı 7 · {us:10|0} biçiminde yazılabilir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "hatirla",
+      "soru": "Sayılar bilimsel gösterimle yazılırken virgülün kaç basamak ve hangi yöne kaydırıldığını yazarak tabloyu tamamlayınız.",
+      "basliklar": [
+        "Sayı",
+        "Virgülün kayması",
+        "Bilimsel gösterim"
+      ],
+      "satirlar": [
+        [
+          "5 800 000",
+          "6 basamak sola",
+          "5,8 · {us:10|6}"
+        ],
+        [
+          "0,000 034",
+          {
+            "b": "5 basamak sağa"
+          },
+          {
+            "b": "3,4 · {us:10|−5}"
+          }
+        ],
+        [
+          "710 000 000",
+          {
+            "b": "8 basamak sola"
+          },
+          {
+            "b": "7,1 · {us:10|8}"
+          }
+        ],
+        [
+          "0,0062",
+          {
+            "b": "3 basamak sağa"
+          },
+          {
+            "b": "6,2 · {us:10|−3}"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerdeki boşlukları kutudaki sözcüklerle doldurunuz. Bir sözcük artacaktır.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "a · {us:10|n} ifadesindeki a sayısına ___ denir.",
+          "cevap": "katsayı"
+        },
+        {
+          "metin": "10 ve 10'dan büyük sayılar bilimsel gösterimle yazılırken 10'un üssü ___ olur.",
+          "cevap": "pozitif"
+        },
+        {
+          "metin": "0 ile 1 arasındaki sayılar bilimsel gösterimle yazılırken 10'un üssü ___ olur.",
+          "cevap": "negatif"
+        },
+        {
+          "metin": "Bilimsel gösterimle yazılmış iki pozitif sayıdan 10'un üssü büyük olan sayı daha ___.",
+          "cevap": "büyüktür"
+        },
+        {
+          "metin": "Katsayı 10 kat büyütülürse eşitliğin bozulmaması için 10'un üssü 1 ___.",
+          "cevap": "azaltılır"
+        }
+      ],
+      "fazla": [
+        "artırılır"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Bir hesap makinesiyle 4 000 000 · 900 000 işlemi yapılınca ekranda görseldeki sonuç çıkmıştır. Ekrandaki “e” harfinden sonraki sayı 10'un üssünü gösterir. İşlemin sonucu aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "3,6 · {us:10|11}",
+        "3,6 · {us:10|12}",
+        "36 · {us:10|12}",
+        "3,6 · {us:10|13}"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "Deniz, defterine dört sayıyı bilimsel gösterimle görseldeki gibi yazmıştır. Deniz hangi satırlarda hata yapmıştır? Hatalı satırların doğrusunu yazınız.",
+      "cevap": "2. ve 3. satırlar hatalıdır. Doğrusu: 0,000 46 = 4,6 · {us:10|−4} ve 81 300 000 = 8,13 · {us:10|7}.",
+      "satir": 3
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Tablodaki ifadeler bilimsel gösterime uygun değildir. 10'un üssünün nasıl değişeceğini ve sayının bilimsel gösterimini yazınız.",
+      "basliklar": [
+        "İfade",
+        "Üs nasıl değişir?",
+        "Bilimsel gösterim"
+      ],
+      "satirlar": [
+        [
+          "0,36 · {us:10|8}",
+          "1 azalır",
+          "3,6 · {us:10|7}"
+        ],
+        [
+          "2700 · {us:10|−9}",
+          {
+            "b": "3 artar"
+          },
+          {
+            "b": "2,7 · {us:10|−6}"
+          }
+        ],
+        [
+          "45 · {us:10|4}",
+          {
+            "b": "1 artar"
+          },
+          {
+            "b": "4,5 · {us:10|5}"
+          }
+        ],
+        [
+          "0,008 · {us:10|−2}",
+          {
+            "b": "3 azalır"
+          },
+          {
+            "b": "8 · {us:10|−5}"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Bir fabrikanın dört deposundaki vida sayıları görseldeki etiketlerde yazılıdır. Bazı etiketlerdeki katsayılar 1 ile 10 aralığının dışındadır. En çok vida hangi depodadır?",
+      "secenekler": [
+        "A deposunda",
+        "B deposunda",
+        "C deposunda",
+        "D deposunda"
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "soru": "Bir laboratuvarda ölçülen beş tanecik çapı metre cinsinden verilmiştir. Çapları küçükten büyüğe doğru sıralayınız.",
+      "ogeler": [
+        "9,1 · {us:10|−6}",
+        "2,4 · {us:10|−5}",
+        "7,5 · {us:10|−5}",
+        "1,8 · {us:10|−4}",
+        "3 · {us:10|−3}"
+      ]
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "Bir saç telinin kalınlığı büyüteçle görseldeki gibi ölçülmüştür. 1 mm = {us:10|−3} m olduğuna göre saç telinin kalınlığını metre cinsinden bilimsel gösterimle yazınız.",
+      "cevap": "0,08 mm = 0,000 08 m. Virgül 5 basamak sağa kayar: kalınlık 8 · {us:10|−5} m'dir.",
+      "satir": 2
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "soru": "Bir matbaada görseldeki gibi her biri aynı sayıda yapraktan oluşan kâğıt desteleri vardır. Matbaadaki toplam yaprak sayısı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "6,5 · {us:10|5}",
+        "1 · {us:10|5}",
+        "1 · {us:10|6}",
+        "1 · {us:10|7}"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "kisa",
+      "duzey": "ust",
+      "soru": "Görseldeki her kasanın şifresi, kasanın üzerinde bilimsel gösterimle yazılmış doğal sayının basamak sayısıdır. Kasaların şifrelerini bulunuz. Basamak sayısını 10'un üssünden nasıl bulduğunuzu açıklayınız.",
+      "cevap": "a · {us:10|n} (1 ≤ a < 10) biçimindeki doğal sayı n + 1 basamaklıdır. Şifreler: 7, 12 ve 9.",
+      "satir": 3
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Görseldeki kartlarda üç sayı soldan sağa küçükten büyüğe doğru sıralanmıştır. Ortadaki sayının bir rakamı silinmiştir (■). ■ yerine gelebilecek rakamları bulunuz.",
+      "cevap": "0,000 038 = 3,8 · {us:10|−5}. Üsler eşit olduğundan katsayılar karşılaştırılır: 3,4 < 3,■ < 3,8. ■ yerine 5, 6 ya da 7 gelebilir.",
+      "satir": 3
+    }
+  ],
+  "yayin_tarihi": "2026-10-13"
+}

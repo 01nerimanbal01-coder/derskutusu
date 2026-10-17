@@ -1,0 +1,158 @@
+{
+ "sinif": 5,
+ "ders": "turkce",
+ "hafta": 4,
+ "tarih": "5-9 Ekim 2026",
+ "konu": "Bir İp Bul, Oyuna Başla!: Konuşma, Akıcı Okuma, İsim ve Fiil, Yazım ve E-posta",
+ "ciktilar": [
+  "T.O.5.2. Akıcı okuyabilme",
+  "T.O.5.15. Metnin anahtar kelimelerini belirlemeye yönelik çözümleme yapabilme",
+  "T.K.5.20. Konuşmasında beden dilini kullanabilme",
+  "T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme"
+ ],
+ "hatirla": [
+  "Akıcı okuma; anlamı yansıtan hız, yerinde vurgu ve doğru söyleyişle yapılır. Hızlı okumak akıcı okumak demek değildir.",
+  "Anahtar kelimeler metnin içeriğini yansıtır; metinde sık geçen ve konuyla yakından ilgili kelimelerdir.",
+  "Varlığa ad olan kelime isimdir; iş ya da durum bildiren kelime fiildir. Ek alan isim yine isimdir.",
+  "Satıra sığmayan kelime hece sınırından bölünür; kısa çizgi satırın sonunda kalır, kelimenin devamı alt satıra geçer."
+ ],
+ "sorular": [
+  {
+   "tur": "eslestir",
+   "duzey": "hatirla",
+   "soru": "Görseldeki beş ip oyununu oynanış biçimleriyle eşleştiriniz. Harfleri kutulara yazınız.",
+   "ciftler": [
+    ["Halat çekme", "İki takım ipin uçlarından çeker; rakibi sınır çizgisinden geçiren kazanır."],
+    ["İp çevirme", "Ortadaki oyuncu ipi döndürür; ötekiler ipe değmemek için zıplar."],
+    ["Bayrak koşusu", "Oyuncular ip atlayarak gidip döner, ipi sıradaki arkadaşına verir."],
+    ["Lazer oyunu", "Ağaçlara bağlı iplere değmeden hedefe ulaşılır."],
+    ["Kedi beşiği", "İki kişi, uçları bağlı ipe sırayla yeni biçimler verir."]
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görselde bir ip oyununun alanı çizilmiştir. Bu alanda oynanan oyunla ilgili aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Oyuncular iplere değmeden hedefe koşar.",
+    "Rakip takımı sınır çizgisinden geçiren takım kazanır.",
+    "İpi en uzun süre çeviren oyuncu kazanır.",
+    "İp düğüm olunca oyun biter."
+   ],
+   "dogru": 1
+  },
+  {
+   "tur": "dy",
+   "duzey": "hatirla",
+   "soru": "Konuşma, okuma ve yazımla ilgili ifadelerden doğru olanların D, yanlış olanların Y kutusunu işaretleyiniz.",
+   "ifadeler": [
+    {"metin": "Konuşmaya, konuyu neden seçtiğimizi söyleyerek başlayabiliriz.", "dogru": true},
+    {"metin": "Akıcı okumada hız, metnin anlamını yansıtacak ölçüde olmalıdır.", "dogru": true},
+    {"metin": "Konuşurken bakışlarımızı sınıftaki tek bir arkadaşımıza sabitleriz.", "dogru": false},
+    {"metin": "Ek almış bir kelime artık isim sayılmaz.", "dogru": false},
+    {"metin": "Satır sonunda bölünen kelimenin kısa çizgisi alt satırın başına yazılır.", "dogru": false}
+   ]
+  },
+  {
+   "tur": "tablo",
+   "duzey": "uygula",
+   "soru": "Cümlelerden alınan kelimelerin isim mi, fiil mi olduğunu tabloya yazınız. İlk satır örnektir.",
+   "basliklar": ["Cümle", "Kelime", "Türü"],
+   "satirlar": [
+    ["Kardeşim ipi sıkıca tuttu.", "ipi", "İsim"],
+    ["Takımlar sahaya dizildi.", "dizildi", {"b": "Fiil"}],
+    ["Ağaçlara renkli kurdeleler bağlandı.", "kurdeleler", {"b": "İsim"}],
+    ["Oyun düdük sesiyle başladı.", "başladı", {"b": "Fiil"}],
+    ["Sepetin kapağı açık kalmış.", "sepetin", {"b": "İsim"}]
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görseldeki duyuru kartında I, II ve III ile gösterilen noktaların görevleri hangi seçenekte doğru verilmiştir?",
+   "secenekler": [
+    "I saat ile dakika, II binlik basamak, III adres bölümleri",
+    "I binlik basamak, II saat ile dakika, III adres bölümleri",
+    "I saat ile dakika, II çarpma işlemi, III binlik basamak",
+    "I adres bölümleri, II binlik basamak, III saat ile dakika"
+   ],
+   "dogru": 0
+  },
+  {
+   "tur": "kisa",
+   "duzey": "uygula",
+   "soru": "Görseldeki defter sayfasında satır sonuna sığmayan üç kelime bölünmüştür. Yanlış bölünen kelimenin numarasını ve bu kelimenin doğru bölünmüş biçimini yazınız.",
+   "cevap": "2. kelime yanlış bölünmüştür. Doğrusu: kur-dele ya da kurde-le.",
+   "satir": 2
+  },
+  {
+   "tur": "siralama",
+   "duzey": "uygula",
+   "soru": "Defne, ailesiyle yaptığı bir etkinliği sınıfta anlatacaktır. İzlemesi gereken adımları 1’den 5’e kadar sıralayınız.",
+   "ogeler": [
+    "Ailesiyle yaptığı etkinlikleri sosyal, eğlence ve kültürel alanlarda listeler.",
+    "Listeden en çok hoşuna giden etkinliği seçer.",
+    "Ne sıklıkla yaptığı, neler hissettiği gibi sorulara cevap verip kısa bir plan yapar.",
+    "Göz teması, el kol hareketleri ve yüz ifadesiyle desteklediği konuşmasını yapar.",
+    "Zorlandığı yerleri ve sonraki konuşmada düzelteceklerini not alır."
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Görselde Arda’nın arkadaşına yazdığı e-posta verilmiştir. Arda, iletisini göndermeden önce kontrol etseydi hangi eksikliği fark ederdi?",
+   "secenekler": [
+    "Konu alanını boş bıraktığını",
+    "Alıcının adresini yazmadığını",
+    "Selam ve hitapla başlamadığını",
+    "Kapanış ve imza yazmadığını"
+   ],
+   "dogru": 3
+  },
+  {
+   "tur": "kisa",
+   "duzey": "ust",
+   "soru": "Görselde Efe’nin günlüğünden alınan cümle çok uzundur. Bu cümleyi, anlamını koruyarak üç kısa cümle hâlinde yeniden yazınız.",
+   "cevap": "Teneffüs zili çalınca ipimizi alıp bahçeye çıktık. Gölgeli köşede iki takıma ayrıldık. Halat çekmeye başladık.",
+   "satir": 3
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Lazer oyununu anlatan bir metinde bazı kelimelerin kaç kez geçtiği görseldeki grafikte gösterilmiştir. Buna göre metnin anahtar kelimeleri hangi seçenekte birlikte verilmiştir?",
+   "secenekler": [
+    "ip, ağaç, hedef",
+    "öğle, rüzgâr, ip",
+    "rüzgâr, hedef, öğle",
+    "ağaç, öğle, rüzgâr"
+   ],
+   "dogru": 0
+  },
+  {
+   "tur": "sifre",
+   "duzey": "hatirla",
+   "soru": "İpuçlarına uyan kelimeleri kutulara yazınız. Turuncu kutulardaki harfler, iki takımla oynanan bir ip oyununun adını verir.",
+   "satirlar": [
+    {"ipucu": "Satıra sığmayan kelime bu sınırdan bölünür: … sınırı", "cevap": "HECE", "anahtar": 0},
+    {"ipucu": "Konuşurken duygularımızı yüz … ile gösteririz.", "cevap": "İFADESİ", "anahtar": 2},
+    {"ipucu": "Ağaçlara bağlı iplere değmeden hedefe ulaşılan oyun", "cevap": "LAZER", "anahtar": 0},
+    {"ipucu": "Anlamı yansıtan hız, vurgu ve doğru söyleyişle yapılan okuma: … okuma", "cevap": "AKICI", "anahtar": 0},
+    {"ipucu": "Konuşurken dinleyenlerle kurulan göz …", "cevap": "TEMASI", "anahtar": 0}
+   ],
+   "sonuc": "HALAT"
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Görselde öğretmenin, bir öğrencinin sınıf konuşması için doldurduğu değerlendirme kartı verilmiştir. Bu öğrencinin geliştirmesi gereken yanlar hangi seçenekte birlikte verilmiştir?",
+   "secenekler": [
+    "Yüz ifadesi ile konuşmayı bitirme",
+    "Göz teması ile el ve kol hareketleri",
+    "Olayların sırası ile yüz ifadesi",
+    "Göz teması ile konuşmayı bitirme"
+   ],
+   "dogru": 0
+  }
+ ],
+ "yayin_tarihi": "2026-10-17"
+}

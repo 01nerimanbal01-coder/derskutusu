@@ -1,0 +1,256 @@
+{
+  "sinif": 5,
+  "ders": "matematik",
+  "hafta": 4,
+  "tarih": "5-9 Ekim 2026",
+  "konu": "Doğruların Oluşturduğu Açılar",
+  "ciktilar": [
+    "MAT.5.3.4. Düzlemde iki veya üç doğrunun birbirine göre durumuna bağlı olarak oluşabilecek açılara dair çıkarım yapabilme"
+  ],
+  "hatirla": [
+    "İki doğru kesişen (bir ortak nokta), paralel (ortak nokta yok) ya da çakışık (bütün noktalar ortak) olabilir. Paralel doğrular arasında açı oluşmaz.",
+    "Kesişen iki doğru dört açı oluşturur: ikisi dar, ikisi geniş ya da dördü de dik. Dördü dik olan doğrular dik doğrulardır: {dogru:AB} ⊥ {dogru:CD}.",
+    "Ters açılar eş ölçülüdür. Kesişen iki doğrunun oluşturduğu komşu açıların ölçüleri toplamı 180°’dir.",
+    "Ölçüleri toplamı 90° olan açılar tümler, 180° olan açılar bütünlerdir. Kesen, iki paralel doğruyu keserse sekiz açı oluşur."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Kavramları açıklamalarıyla eşleştiriniz. Harfleri kutulara yazınız.",
+      "ciftler": [
+        [
+          "kesişen doğrular",
+          "Tek bir ortak noktası bulunan doğrular"
+        ],
+        [
+          "paralel doğrular",
+          "Ortak noktası olmadığı için aralarında açı oluşmayan doğrular"
+        ],
+        [
+          "çakışık doğrular",
+          "Üst üste çizilmiş gibi görünen, bütün noktaları ortak doğrular"
+        ],
+        [
+          "komşu açılar",
+          "Köşesi ve bir kolu ortak, öbür kolları ortak kolun iki yanında kalan açılar"
+        ],
+        [
+          "kesen",
+          "İki doğrunun her birini ayrı birer noktada kesen doğru"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Görseldeki doğru çiftleri bir kâğıdın sınırları içinde çizilmiştir. Doğruların iki yönde de sonsuza uzandığı düşünülürse hangi çiftler kesişen doğrulardır?",
+      "secenekler": [
+        "1 ve 2",
+        "1 ve 3",
+        "2 ve 3",
+        "1, 2 ve 3"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Doğru olan ifadelerin yanındaki D kutusunu, yanlış olanların yanındaki Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Paralel doğrular birbirini kesmediği için aralarında açı oluşmaz.",
+          "dogru": true
+        },
+        {
+          "metin": "Kesişen iki doğrunun oluşturduğu dört açıdan üçü dar, biri geniş olabilir.",
+          "dogru": false
+        },
+        {
+          "metin": "Ters açıların ölçüleri birbirine eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "{dogru:AB} ⊥ {dogru:CD} gösterimi, iki doğrunun paralel olduğunu belirtir.",
+          "dogru": false
+        },
+        {
+          "metin": "Ölçüsü 35° olan bir açının tümleri 55°’dir.",
+          "dogru": true
+        },
+        {
+          "metin": "İki açının bütünler sayılması için komşu olmaları gerekir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Görselde iki düz caddenin kesiştiği bir kavşak çizilmiştir. Caddelerin orta çizgileri arasındaki açılardan biri 65°’dir. Fırının ve eczanenin köşesindeki açılar kaç derecedir?",
+      "secenekler": [
+        "Fırın: 115°, Eczane: 65°",
+        "Fırın: 65°, Eczane: 65°",
+        "Fırın: 65°, Eczane: 115°",
+        "Fırın: 25°, Eczane: 115°"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Görselde {dogru:RT} ve {dogru:SU} doğruları O noktasında kesişmektedir. Açı çiftlerinin ters mi komşu mu olduğunu ve ölçüleri arasındaki ilişkiyi yazınız.",
+      "basliklar": [
+        "Açı çifti",
+        "Ters / komşu",
+        "Ölçüleri arasındaki ilişki"
+      ],
+      "satirlar": [
+        [
+          "{aci:ROS} ile {aci:TOU}",
+          "ters",
+          "Ölçüleri eşittir."
+        ],
+        [
+          "{aci:ROS} ile {aci:SOT}",
+          {
+            "b": "komşu"
+          },
+          {
+            "b": "Ölçüleri toplamı 180°’dir."
+          }
+        ],
+        [
+          "{aci:SOT} ile {aci:UOR}",
+          {
+            "b": "ters"
+          },
+          {
+            "b": "Ölçüleri eşittir."
+          }
+        ],
+        [
+          "{aci:TOU} ile {aci:UOR}",
+          {
+            "b": "komşu"
+          },
+          {
+            "b": "Ölçüleri toplamı 180°’dir."
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Görseldeki her çizimde üç doğru aynı noktada kesişmektedir. Her çizimde oluşan altı açının kaçının dar, kaçının dik, kaçının geniş olduğunu yazınız.",
+      "basliklar": [
+        "Çizim",
+        "Dar açı",
+        "Dik açı",
+        "Geniş açı"
+      ],
+      "satirlar": [
+        [
+          "1. çizim",
+          "4",
+          "0",
+          "2"
+        ],
+        [
+          "2. çizim",
+          {
+            "b": "4"
+          },
+          {
+            "b": "2"
+          },
+          {
+            "b": "0"
+          }
+        ],
+        [
+          "3. çizim",
+          {
+            "b": "6"
+          },
+          {
+            "b": "0"
+          },
+          {
+            "b": "0"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "soru": "Görselde üç düz yol ikişer ikişer kesişerek üçgen biçimli bir parkı çevrelemektedir. Yollar birer doğru kabul edilirse kesişim noktalarında toplam kaç açı oluşur ve bunların kaçı dik açıdır?",
+      "secenekler": [
+        "12 açı oluşur; 4’ü dik açıdır.",
+        "12 açı oluşur; 1’i dik açıdır.",
+        "9 açı oluşur; 3’ü dik açıdır.",
+        "6 açı oluşur; 2’si dik açıdır."
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "Görselde {dogru:d₁} // {dogru:d₂} doğrularını k doğrusu kesmektedir. Açılardan biri 58° olarak verilmiştir. 1, 2 ve 3 numaralı açıların ölçülerini yazınız.",
+      "cevap": "1: 122° (58° ile komşu). 2: 58°, 3: 122° (öbür kesişimdeki eş açılar).",
+      "satir": 2
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Ece, kesişen iki doğrunun oluşturduğu dört açıyı açıölçerle ölçüp sonuçları görseldeki karta yazmıştır. Ölçümlerden biri hatalıdır. Hatalı ölçümü bulunuz; nasıl anladığınızı açıklayıp doğru ölçüyü yazınız.",
+      "cevap": "4. açının ölçümü hatalıdır. 4. açı, 2. açının ters açısıdır; 132° olmalıdır. Ayrıca 3. ve 4. açılar komşudur; toplamları 48° + 132° = 180° etmelidir.",
+      "satir": 3
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "soru": "Görseldeki kartlarda bazı açıların tümleri ve bütünleri hesaplanmıştır. Kartlardaki sonuçlara göre ölçüsü 90°’den küçük bir açının bütünleri ile tümleri arasındaki fark için ne söylenebilir?",
+      "secenekler": [
+        "Fark, açının ölçüsü kadardır.",
+        "Fark, açının ölçüsünün iki katıdır.",
+        "Fark, açı küçüldükçe büyür.",
+        "Fark, açıdan bağımsız olarak 90°’dir."
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "Görseldeki makasın sapları ve ağızları, perçin noktasında kesişen iki doğru gibi düşünülebilir. Sapların arasındaki açı 40° ise ağızların arasındaki açı kaç derecedir? Kullandığınız açı ilişkisini yazınız.",
+      "cevap": "40°’dir. Sapların arasındaki açı ile ağızların arasındaki açı ters açılardır; ters açılar eş ölçülüdür.",
+      "satir": 2
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "soru": "Bir öğrenci paralel iki doğru ile bunları kesen doğruyu şeffaf kâğıda çizmiş, kâğıdı paralel doğruların arasından kesmiş ve görseldeki gibi kesişim noktalarını üst üste getirmiştir. Bu deneyden hangi önerme çıkarılabilir?",
+      "secenekler": [
+        "Kesen dik değilse oluşan sekiz açının sekizi de dar açıdır.",
+        "Dar açılar kendi aralarında, geniş açılar kendi aralarında eştir.",
+        "Üst kesişimdeki dar açı, alt kesişimdeki geniş açıyla eş ölçülüdür.",
+        "Parçalar üst üste konunca açıların ölçüleri yarı yarıya küçülür."
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "soru": "Dikdörtgen biçimli bir kâğıdı katlayarak dik doğrular modeli oluşturmak ve bunu sınamak için yapılacak işlemleri 1’den 4’e kadar sıralayınız.",
+      "ogeler": [
+        "Kâğıdı kısa kenarları üst üste gelecek biçimde katlarım.",
+        "Kâğıdı açmadan, ilk katlama çizgisinin iki ucu üst üste gelecek biçimde bir kez daha katlarım.",
+        "Kâğıdı açıp iki katlama izini kalemle belirginleştiririm.",
+        "İzlerin kesişim noktasındaki dört açıyı açıölçerle ölçüp 90° olduklarını görürüm."
+      ]
+    }
+  ],
+  "yayin_tarihi": "2026-10-13"
+}
