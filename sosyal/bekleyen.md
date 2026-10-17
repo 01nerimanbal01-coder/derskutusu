@@ -1553,3 +1553,213 @@ Konu özetinin tamamı: https://derskutusu.com/ozet/11-temel-dini-bilgiler-5
 
 #derskutusu #11sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #tyt #ayt
 ```
+
+### `bilgi-12-biyoloji-5` — 12. Sınıf · biyoloji · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-12-biyoloji-5.png` (`public/sosyal/bilgi-12-biyoloji-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/12-biyoloji-5
+- **Metin:**
+```text
+ATP Molekülü ve Fosforilasyon Çeşitleri
+
+ATP hücre içinde depolanamaz ve hücreden hücreye aktarılamaz; fosforilasyon çeşitleriyle anlık üretilip tüketilir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/12-biyoloji-5
+
+#derskutusu #12sınıf #biyoloji #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-12-cografya-5` — 12. Sınıf · cografya · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-12-cografya-5.png` (`public/sosyal/bilgi-12-cografya-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/12-cografya-5
+- **Metin:**
+```text
+Küresel Ulaşım Sistemleri, Boğazlar ve Kanallar
+
+Küresel dış ticarette en ekonomik ulaşım türü deniz yoludur; Süveyş, Panama, Hürmüz ve Malakka su yolları dünya ticaretine yön verir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/12-cografya-5
+
+#derskutusu #12sınıf #coğrafya #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-12-din-kulturu-5` — 12. Sınıf · din-kulturu-ve-ahlak-bilgisi · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-12-din-kulturu-5.png` (`public/sosyal/bilgi-12-din-kulturu-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/12-din-kulturu-ve-ahlak-bilgisi-5
+- **Metin:**
+```text
+İslam Medeniyetinde Öncü Bilim İnsanları
+
+Hârizmî, İbn Sînâ, İbnü’l-Heysem, Bîrûnî ve İbn Haldun gibi Müslüman bilginler matematikten tıbba modern bilimin temellerini atmıştır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/12-din-kulturu-ve-ahlak-bilgisi-5
+
+#derskutusu #12sınıf #dinkültürü #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-12-edebiyat-5` — 12. Sınıf · turk-dili-ve-edebiyati · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-12-edebiyat-5.png` (`public/sosyal/bilgi-12-edebiyat-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/12-turk-dili-ve-edebiyati-5
+- **Metin:**
+```text
+Cumhuriyet Dönemi Saf Şiir ve Yedi Meşaleciler
+
+Saf şiir anlayışı şiiri soylu bir sanat kabul ederek ahenk, imge ve iç musikiyi her türlü ideolojik söylemin üstünde tutmuştur.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/12-turk-dili-ve-edebiyati-5
+
+#derskutusu #12sınıf #edebiyat #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-12-fizik-5` — 12. Sınıf · fizik · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-12-fizik-5.png` (`public/sosyal/bilgi-12-fizik-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/12-fizik-5
+- **Metin:**
+```text
+Kütle Çekim Kuvveti ve Kepler Yasaları
+
+Kütle çekim kuvveti uzaklığın karesiyle ters orantılıdır; Kepler’in periyotlar yasasına göre her gezegen için R³ / T² oranı sabittir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/12-fizik-5
+
+#derskutusu #12sınıf #fizik #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-12-ingilizce-5` — 12. Sınıf · ingilizce · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-12-ingilizce-5.png` (`public/sosyal/bilgi-12-ingilizce-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/12-ingilizce-5
+- **Metin:**
+```text
+İnsan Hakları İfadeleri ve Passive Modals Yapısı
+
+İngilizcede the + adjective yapısı çoğul bir topluluğu anlatırken toplumsal kurallar modal + be + V3 edilgen yapısıyla ifade edilir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/12-ingilizce-5
+
+#derskutusu #12sınıf #ingilizce #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-12-inkilap-tarihi-5` — 12. Sınıf · tc-inkilap-tarihi-ve-ataturkculuk · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-12-inkilap-tarihi-5.png` (`public/sosyal/bilgi-12-inkilap-tarihi-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/12-tc-inkilap-tarihi-ve-ataturkculuk-5
+- **Metin:**
+```text
+Millî Mücadele’de Genelge ve Kongreler
+
+Millî Mücadele’nin programı Amasya Genelgesi ile çizilmiş, Erzurum ve Sivas kongrelerinde ulusal egemenlik ve tam bağımsızlık kararlaştırılmıştır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/12-tc-inkilap-tarihi-ve-ataturkculuk-5
+
+#derskutusu #12sınıf #inkılaptarihi #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-12-islam-kultur-ve-medeniyeti-5` — 12. Sınıf · islam-kultur-ve-medeniyeti · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-5.png` (`public/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/12-islam-kultur-ve-medeniyeti-5
+- **Metin:**
+```text
+İslam Medeniyetinin Özellikleri ve Havzaları
+
+İslam medeniyeti tevhid, ilim, adalet ve vakıf ruhuyla Endülüs’ten Mâverâünnehir’e uzanan geniş havzalarda insanlığa rehberlik etmiştir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/12-islam-kultur-ve-medeniyeti-5
+
+#derskutusu #12sınıf #islamkültürü #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-12-kelam-5` — 12. Sınıf · kelam · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-12-kelam-5.png` (`public/sosyal/bilgi-12-kelam-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/12-kelam-5
+- **Metin:**
+```text
+Kelamda Bilgi Kaynakları ve Varlık Anlayışı
+
+Kelam ilminde bilginin üç nesnel kaynağı sağlam duyular, doğru haber ve selim akıldır; varlık ise Kadîm (Allah) ve Hâdis (âlem) olarak ayrılır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/12-kelam-5
+
+#derskutusu #12sınıf #kelam #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-12-kimya-5` — 12. Sınıf · kimya · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-12-kimya-5.png` (`public/sosyal/bilgi-12-kimya-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/12-kimya-5
+- **Metin:**
+```text
+Elektroliz, Faraday Yasaları ve Korozyon
+
+Elektrolizde açığa çıkan madde miktarı devreden geçen yükle doğru orantılıdır; metalleri korozyondan korumak için kurban elektrot kullanılır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/12-kimya-5
+
+#derskutusu #12sınıf #kimya #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-12-kuran-i-kerim-5` — 12. Sınıf · kuran-i-kerim · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-12-kuran-i-kerim-5.png` (`public/sosyal/bilgi-12-kuran-i-kerim-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/12-kuran-i-kerim-5
+- **Metin:**
+```text
+Kehf Suresi 60-82: Hz. Musa ve Hızır Kıssası
+
+Kehf Suresi’ndeki Hz. Musa ve Hızır kıssası, ilim yolunda tevazu ve sabrı öğretirken olayların ardındaki ilahi hikmete teslimiyeti vurgular.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/12-kuran-i-kerim-5
+
+#derskutusu #12sınıf #kuranıkerim #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-12-matematik-5` — 12. Sınıf · matematik · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-12-matematik-5.png` (`public/sosyal/bilgi-12-matematik-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/12-matematik-5
+- **Metin:**
+```text
+Gerçek Sayı Dizileri, Sabit ve İndirgemeli Diziler
+
+Gerçek sayı dizilerinin tanım kümesi pozitif tam sayılardır; sabit, eşit ve indirgemeli diziler genel terim kurallarıyla modellenir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/12-matematik-5
+
+#derskutusu #12sınıf #matematik #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-12-mesleki-arapca-5` — 12. Sınıf · mesleki-arapca · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-12-mesleki-arapca-5.png` (`public/sosyal/bilgi-12-mesleki-arapca-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/12-mesleki-arapca-5
+- **Metin:**
+```text
+Mesleki Arapçada Nefis Tezkiyesi ve Mezîd Fiiller
+
+Mesleki Arapçada nefis tezkiyesi ve güzel ahlak metinleri, kök fiillere harf eklenerek türetilen sülâsî mezîd fiil bâblarıyla kurulur.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/12-mesleki-arapca-5
+
+#derskutusu #12sınıf #meslekiarapça #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-12-peygamberimizin-hayati-5` — 12. Sınıf · peygamberimizin-hayati · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-12-peygamberimizin-hayati-5.png` (`public/sosyal/bilgi-12-peygamberimizin-hayati-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/12-peygamberimizin-hayati-5
+- **Metin:**
+```text
+Asr-ı Saadet’te Öncü Genç Sahabiler
+
+Hz. Peygamber (sav) gençlerin potansiyeline güvenerek onları öğretmen, elçi, kadı ve komutan olarak İslam toplumunun ön saflarında görevlendirmiştir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/12-peygamberimizin-hayati-5
+
+#derskutusu #12sınıf #peygamberimizinhayatı #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-12-temel-dini-bilgiler-5` — 12. Sınıf · temel-dini-bilgiler · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-12-temel-dini-bilgiler-5.png` (`public/sosyal/bilgi-12-temel-dini-bilgiler-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/12-temel-dini-bilgiler-5
+- **Metin:**
+```text
+Tevhid İnancı, Salih Amel ve İnsanın Sorumluluğu
+
+Tevhid inancı iman ile salih ameli bütünleştirir ve yeryüzünün halifesi olan insana hayatın her alanında ahlaki sorumluluk yükler.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/12-temel-dini-bilgiler-5
+
+#derskutusu #12sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #tyt #ayt
+```
