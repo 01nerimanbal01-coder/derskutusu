@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 337 gönderi.
+Toplam 340 gönderi.
 
 ## bilgi-7-turkce-7
 Sıra: 2026-11-19 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-turkce-7.png
@@ -1055,7 +1055,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-ingilizce-4
-Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-ingilizce-4.png
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-ingilizce-4.png
 
 ```
 Bunu biliyor muydunuz? İngilizcede geniş zamanla günlük rutinler anlatılırken saatlerde "at", günlerde "on", ay ve mevsimlerde "in" zaman edatı kullanılır.
@@ -1065,7 +1065,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-kimya-4
-Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-kimya-4.png
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-kimya-4.png
 
 ```
 Bunu biliyor muydunuz? Bohr atom modeli elektronları belirli dairesel yörüngelerde gösterirken, Modern Atom Teorisi elektronların bulunma olasılığının yüksek olduğu üç boyutlu orbitalleri (elektron bulutunu) esas alır.
@@ -1075,7 +1075,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-kuran-i-kerim-4
-Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-kuran-i-kerim-4.png
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-kuran-i-kerim-4.png
 
 ```
 Bunu biliyor muydunuz? İbrahim Suresi 40 ve 41. ayetlerde Hz. İbrahim'in diliyle namazı dosdoğru kılma, neslin salih olması ve hesap gününde anne-baba ile tüm müminlerin bağışlanması için dua edilir.
@@ -1085,7 +1085,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-matematik-4
-Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-matematik-4.png
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-matematik-4.png
 
 ```
 Bunu biliyor muydunuz? Gerçek sayı aralıklarında köşeli parantez [a, b] uç noktaların kümeye dahil olduğunu, normal parantez (a, b) ise uç noktaların dahil olmadığını gösterir.
@@ -1095,7 +1095,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-peygamberimizin-hayati-4
-Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-peygamberimizin-hayati-4.png
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-peygamberimizin-hayati-4.png
 
 ```
 Bunu biliyor muydunuz? İslam öncesi Mekke'de Cahiliye kültürünün en belirgin özellikleri; kabile taassubu (asabiyet), kan davaları, putperestlik ve keskin sosyal sınıf ayrımıydı.
@@ -1105,7 +1105,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-tarih-4
-Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-tarih-4.png
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-tarih-4.png
 
 ```
 Bunu biliyor muydunuz? Tarih bilimi geçmişteki olayları incelerken birincil ve ikincil kaynakları Tarama, Tasnif, Tahlil, Tenkit ve Terkip (5T) basamaklarıyla süzgeçten geçirir.
@@ -1115,7 +1115,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-temel-dini-bilgiler-4
-Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-temel-dini-bilgiler-4.png
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-temel-dini-bilgiler-4.png
 
 ```
 Bunu biliyor muydunuz? İslam ahlakında ilkeli ve dengeli yaşam (itidal), aşırılık (ifrat) ile gevşeklik ve ihmal (tefrit) arasındaki dosdoğru orta yolu korumaktır.
@@ -1125,7 +1125,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-biyoloji-4
-Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-biyoloji-4.png
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-biyoloji-4.png
 
 ```
 Bunu biliyor muydunuz? Fotosentezin ışığa bağımlı evresinde suyun fotoliziyle atmosfere oksijen verilirken, ışıktan bağımsız evrede (stromada) CO2 kullanılarak organik besin sentezlenir.
@@ -1135,7 +1135,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-cografya-4
-Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-cografya-4.png
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-cografya-4.png
 
 ```
 Bunu biliyor muydunuz? Haritalarda mekânsal veriler özelliğine göre üç vektörel yöntemle gösterilir: zirve ve binalar noktasal, akarsu ve yollar çizgisel, göl ve ormanlar alansal olarak aktarılır.
@@ -1145,7 +1145,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-edebiyat-4
-Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-edebiyat-4.png
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-edebiyat-4.png
 
 ```
 Bunu biliyor muydunuz? Şiir dinletisi sunumunda diksiyon, vurgu, tonlama ve beden dili uyumu şiirin duygusunu dinleyiciye aktarırken; isim tamlamaları metnin imge ve anlam dünyasını zenginleştirir.
@@ -1155,7 +1155,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-fizik-4
-Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-fizik-4.png
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-fizik-4.png
 
 ```
 Bunu biliyor muydunuz? Sabit ivmeli harekette hız-zaman (v-t) grafiğinin eğimi ivmeyi, altındaki alan yer değiştirmeyi verir; hız ve ivme vektörleri aynı yönlüyse cisim hızlanır, zıt yönlüyse yavaşlar.
@@ -1165,7 +1165,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-kimya-4
-Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-kimya-4.png
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-kimya-4.png
 
 ```
 Bunu biliyor muydunuz? Çözünme-çökelme tepkimelerinde çöken katıyı oluşturan iyonlar net iyon denklemini oluştururken, çözeltide suda çözünmüş hâlde kalan iyonlara seyirci iyonlar denir.
@@ -1175,7 +1175,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-matematik-4
-Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-matematik-4.png
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-matematik-4.png
 
 ```
 Bunu biliyor muydunuz? Bir üçgende aynı kenara ait yükseklik, açıortay ve kenarortay uzunlukları ha ≤ na ≤ Va şeklinde sıralanır; kenarortayların kesim noktası olan ağırlık merkezi (G) kenarortayı 1:2 oranında böler.
@@ -1185,7 +1185,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-tarih-4
-Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-tarih-4.png
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-tarih-4.png
 
 ```
 Bunu biliyor muydunuz? Türkistan'dan Türkiye'ye uzanan süreçte Türk devlet geleneği İslam kurumlarıyla bütünleşmiş; kurultayın yerini Divan-ı Saltanat, boy ordularının yerini ise gulam ve ikta sistemi almıştır.
@@ -1195,7 +1195,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-arapca-4
-Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-arapca-4.png
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-arapca-4.png
 
 ```
 Bunu biliyor muydunuz? Arapçada isimle başlayan cümlelere isim cümlesi, fiille başlayanlara fiil cümlesi denir; akraba ve meslek tanıtımlarında ismin sonuna bitişen muttasıl zamirler kullanılır.
@@ -1205,7 +1205,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-din-kulturu-4
-Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-din-kulturu-4.png
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-din-kulturu-4.png
 
 ```
 Bunu biliyor muydunuz? Kâinattaki varlık ve olaylar birer kevnî ayettir; Yüce Allah'ın evrene koyduğu fiziksel, biyolojik ve toplumsal yasalara ise Sünnetullah denir.
@@ -1215,7 +1215,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-felsefe-4
-Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-felsefe-4.png
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-felsefe-4.png
 
 ```
 Bunu biliyor muydunuz? Felsefe; bilim, sanat ve din ile sürekli etkileşim içindedir ancak varlığı deneyle parçalara ayırmadan, bütüncül ve akılcı biçimde sorgulamasıyla ayrılır.
@@ -1225,7 +1225,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-fikih-4
-Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-fikih-4.png
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-fikih-4.png
 
 ```
 Bunu biliyor muydunuz? Fıkıh ilminin temel amacı din, can, akıl, nesil ve mal emniyetini (zarûriyyât-ı hamse) korumak; azîmet ve ruhsat hükümleriyle kulun hayatını kolaylaştırmaktır.
@@ -1235,7 +1235,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-hadis-4
-Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-hadis-4.png
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-hadis-4.png
 
 ```
 Bunu biliyor muydunuz? Hz. Peygamber'in Sünneti, Kur'an-ı Kerim'deki hükümleri pekiştirir (te'kid), kapalı ayetleri açıklar (beyân) ve yeni meselelerde hüküm koyar (teşrî).
@@ -1245,7 +1245,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-ingilizce-4
-Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-ingilizce-4.png
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-ingilizce-4.png
 
 ```
 Bunu biliyor muydunuz? İngilizcede genel alışkanlıklar ve rutinler Simple Present Tense ile, konuşma anında devam eden eylemler ise Present Continuous Tense ile ifade edilir.
@@ -1255,7 +1255,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-kuran-i-kerim-4
-Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-kuran-i-kerim-4.png
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-kuran-i-kerim-4.png
 
 ```
 Bunu biliyor muydunuz? Tâhâ Suresi 25–28. ayetlerdeki "Rabbişrahlî" duası; gönül ferahlığı, işlerin kolaylaşması ve doğru ifade gücü için okunan peygamber duasıdır.
@@ -1265,7 +1265,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-peygamberimizin-hayati-4
-Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-peygamberimizin-hayati-4.png
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-peygamberimizin-hayati-4.png
 
 ```
 Bunu biliyor muydunuz? Hz. Peygamber (sav) Taif'te gördüğü eziyete rağmen beddua etmeyip halkın hidayetini dilemiş; Mekke'ye ise güvenlik tedbiri olarak civâr (himaye) uygulamasıyla girmiştir.
@@ -1275,7 +1275,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-siyer-4
-Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-siyer-4.png
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-siyer-4.png
 
 ```
 Bunu biliyor muydunuz? Hz. Muhammed (sav), peygamberlikten önceki kırk yıllık hayatında Hilfü'l-Fudûl üyeliği ve Kâbe hakemliğiyle güvenilirliğin (el-Emîn) ve adaletin simgesi olmuştur.
@@ -1285,7 +1285,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-temel-dini-bilgiler-4
-Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-temel-dini-bilgiler-4.png
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-temel-dini-bilgiler-4.png
 
 ```
 Bunu biliyor muydunuz? İslam'da dünya ahiretin tarlasıdır; mümin ihlas, takva ve istikamet üzere yaşayarak hem dünyasını imar eder hem de ebedî ahiret hayatına hazırlanır.
@@ -1295,7 +1295,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-biyoloji-4
-Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-biyoloji-4.png
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-biyoloji-4.png
 
 ```
 Bunu biliyor muydunuz? Koleoptil deneylerinde uç kısımdan salgılanan oksin hormonunun ışıktan kaçıp gölge tarafta birikerek asimetrik büyüme ve ışığa yönelme (pozitif fototropizma) sağladığı kanıtlanmıştır.
@@ -3372,4 +3372,34 @@ Bunu biliyor muydunuz? Hz. Muhammed (sav), çocukluğunun ilk dört yılını Be
 Faydalı bulduysanız arkadaşınızı etiketleyin.
 📘 5. sınıf Peygamberimizin Hayatı 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-peygamberimizin-hayati-hafta-7
 #derskutusu #peygamberimizinhayatı #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-arapca-7
+Sıra: 2026-12-08 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-arapca-7.png
+
+```
+Bunu biliyor muydunuz? Harf-i tariften (el-) sonra kamerî harf gelirse lâm açıkça okunur; şemsî harf gelirse lâm okunmayıp sonraki harf şeddeli okunur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Arapça 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-arapca-hafta-7
+#derskutusu #arapça #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-kuran-i-kerim-7
+Sıra: 2026-12-08 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-kuran-i-kerim-7.png
+
+```
+Bunu biliyor muydunuz? Allahümme Salli ve Barik duaları Hz. Peygamber’e salavat ve bereket duasıdır; namazların son oturuşunda Ettahiyyatü’den sonra okunur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Kur’an-ı Kerim 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-kuran-i-kerim-hafta-7
+#derskutusu #kuranıkerim #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-peygamberimizin-hayati-7
+Sıra: 2026-12-08 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-peygamberimizin-hayati-7.png
+
+```
+Bunu biliyor muydunuz? İlk vahiy 610 yılında Hira Mağarası’nda Alak suresinin ilk beş ayetiyle inmiş; ilk Müslümanlar Hz. Hatice, Hz. Ebû Bekir, Hz. Ali ve Hz. Zeyd olmuştur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Peygamberimizin Hayatı 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-peygamberimizin-hayati-hafta-7
+#derskutusu #peygamberimizinhayatı #6sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
