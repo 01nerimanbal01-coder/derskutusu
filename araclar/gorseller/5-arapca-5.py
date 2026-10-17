@@ -90,17 +90,17 @@ def gorsel_3():
             "• Harfin üzerine konulan küçük dairedir.",
             "• Üzerinde cezm olan harf sesli okunmaz;",
             "  kendinden önceki harekeli harfe tutunur.",
-            "• Örnek: مَنْ (Men) — هَلْ (Hel) — مِنْ (Min)",
-            "• Örnek: كَيْفَ (Key-fe) — أَنْتَ (En-te)",
+            "• Örnek: Men (Kim?) — Hel (Mı/Mi?) — Min (-den)",
+            "• Örnek: Key-fe (Nasıl?) — En-te (Sen)",
             "• Türkçedeki sessiz harfle biten hece gibidir."
         ], "#0d9488", "#f0fdfa"),
         _kart(395, 50, 335, 215, "Şedde (Dişli Kuvvetlendirme İşareti)", [
             "• Harfin üzerine konulan 'w' benzeri işarettir.",
             "• Üzerinde bulunduğu harfi İKİ KEZ okutur:",
             "  Birincisi cezimli (tutunarak), ikincisi harekeli!",
-            "• Örnek: أُمٌّ (Üm-mün = Anne)",
-            "• Örnek: جَدٌّ (Ced-dün = Dede)",
-            "• Örnek: مُعَلِّمٌ (Mu-al-li-mün = Öğretmen)"
+            "• Örnek: Üm-mün (Anne)",
+            "• Örnek: Ced-dün (Dede)",
+            "• Örnek: Mu-al-li-mün (Öğretmen)"
         ], "#e11d48", "#fff1f2"),
     ]
     return _svg(w, h, "".join(s))
