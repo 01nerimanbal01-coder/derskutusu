@@ -1,0 +1,214 @@
+{
+ "ad": "11-matematik-5",
+ "sinif": 11,
+ "ders": "matematik",
+ "ders_adi": "Matematik",
+ "hafta": 5,
+ "tarih": "12-16 Ekim 2026",
+ "yayin_tarihi": "2026-10-14",
+ "unite": "SAYILAR VE NİCELİKLER",
+ "konu": "Yönlü Açılar, Açı Ölçü Birimleri (Derece ve Radyan), Esas Ölçü ve Birim Çember",
+ "ciktilar": [
+  "MAT.11.1.1.a — Yönlü açıları başlangıç kenarı, bitim kenarı ve dönme yönü (pozitif ve negatif yön) kavramlarıyla açıklar.",
+  "MAT.11.1.1.b — Açı ölçü birimleri olan derece (dakika, saniye) ve radyan arasındaki dönüşümleri yapar; verilen bir açının esas ölçüsünü hesaplar.",
+  "MAT.11.1.1.c — Analitik düzlemde birim çember denklemini (x² + y² = 1) oluşturarak yönlü açıların birim çember üzerindeki bitim noktası koordinatlarını (cos alfa, sin alfa) belirler."
+ ],
+ "giris": "Dönme dolabın kabinlerinin yerden yüksekliği, alternatif akımın gerilim dalgaları, kalp atışlarımızı gösteren EKG grafikleri ve gezegenlerin yörünge hareketleri belirli zaman aralıklarında kendini tekrar eden periyodik olaylardır. Geometride üçgenlerin iç açılarıyla sınırlı kaldığımızda 0° ile 180° arasındaki açılar yeterli olurken; dönme hareketlerini ve periyodik dalgaları modellemek için binlerce derecelik dönmeleri ve dönme yönünü tanımlamamız gerekir. Bu hafta trigonometrinin temelini oluşturan yönlü açıları, derece-radyan dönüşümlerini, esas ölçüyü ve birim çemberi öğreneceğiz.",
+ "ozet": [
+  "Başlangıç noktaları ortak iki ışından birinin başlangıç kenarı, diğerinin bitim kenarı olarak alındığı açılara yönlü açı denir; saatin dönme yönünün tersi pozitif (+), saatin dönme yönü ise negatif (-) yöndür.",
+  "Bir tam çember yayının 360 eş parçasından birini gören merkez açıya 1 derece (1°), yarıçap uzunluğundaki yayı gören merkez açıya ise 1 radyan (1 rad) denir.",
+  "Derece ve radyan arasındaki temel dönüşüm bağıntısı D / 180 = R / pi şeklindedir; 180° = pi radyan ve 360° = 2.pi radyandır. Ayrıca 1° = 60' (dakika) = 3600'' (saniye) alt birimlerine ayrılır.",
+  "Bir yönlü açının [0°, 360°) veya [0, 2.pi) aralığındaki karşılığına o açının esas ölçüsü denir; esas ölçü hiçbir zaman negatif olamaz.",
+  "Analitik düzlemde merkezi başlangıç noktası O(0,0) ve yarıçapı r = 1 birim olan çembere birim çember denir ve denklemi x² + y² = 1 şeklindedir.",
+  "Standart konumdaki alfa açısının birim çemberi kestiği P(x, y) noktasının apsisi x = cos(alfa), ordinatı y = sin(alfa) olarak tanımlanır ve cos²(alfa) + sin²(alfa) = 1 özdeşliği her zaman sağlanır."
+ ],
+ "bolumler": [
+  {
+   "baslik": "Yönlü Açılar: Başlangıç Kenarı, Bitim Kenarı ve Açı Yönleri",
+   "metin": [
+    "Düzlemde başlangıç noktaları ortak olan iki ışının birleşimine açı denir. Bir açıyı oluşturan iki ışından biri {koyu:başlangıç kenarı}, diğeri ise {koyu:bitim kenarı} olarak seçildiğinde ve başlangıç kenarından bitim kenarına doğru olan dönme yönü belirtildiğinde elde edilen açıya {koyu:yönlü açı} adı verilir. Örneğin başlangıç noktası O, başlangıç kenarı [OA ve bitim kenarı [OB olan yönlü açı AOB açısı olarak adlandırılır.\n\nTrigonometri ve fizikte yönlü açıların dönme yönü evrensel bir kabulle ikiye ayrılır:\n1) {koyu:Pozitif (+) Yön}: Saatin yelkovanının dönme yönünün {koyu:tersi} olan yöndür.\n2) {koyu:Negatif (-) Yön}: Saatin yelkovanının dönme yönüyle {koyu:aynı} olan yöndür.\nAnalitik düzlemde köşesi orijinde O(0,0) ve başlangıç kenarı yatay Ox ekseninin pozitif kısmında bulunan yönlü açılara {koyu:standart konumdaki açılar} denir."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Kenarların Sırası Yönü Değiştirir",
+    "metin": "AOB yönlü açısında başlangıç kenarı [OA ve bitim kenarı [OB iken; BOA yönlü açısında başlangıç kenarı [OB ve bitim kenarı [OA olur. Bu iki açının mutlak büyüklüğü eşit ancak işaretleri (yönleri) birbirinin tersidir!"
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 310\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect x=\"10\" y=\"10\" width=\"740\" height=\"290\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"10\" width=\"740\" height=\"32\" rx=\"12\" fill=\"#2563eb\"/><rect x=\"10\" y=\"28\" width=\"740\" height=\"14\" fill=\"#2563eb\"/><text x=\"380.0\" y=\"31\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"13\" font-weight=\"700\">Yönlü Açılar: Başlangıç Kenarı, Bitim Kenarı ve Açı Yönleri</text><rect x=\"30\" y=\"55\" width=\"335\" height=\"230\" rx=\"10\" fill=\"#fff\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/><text x=\"197\" y=\"78\" text-anchor=\"middle\" fill=\"#16a34a\" font-size=\"12.5\" font-weight=\"700\">1. Pozitif (+) Yönlü Açı (Saat Yönünün Tersi)</text><line x1=\"85\" y1=\"210\" x2=\"295\" y2=\"210\" stroke=\"#1e293b\" stroke-width=\"2.5\"/><line x1=\"85\" y1=\"210\" x2=\"245\" y2=\"105\" stroke=\"#16a34a\" stroke-width=\"2.5\"/><path d=\"M165,210 A80,80 0 0,0 148,168\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2.5\"/><polygon points=\"145,165 156,169 149,176\" fill=\"#16a34a\"/><text x=\"220\" y=\"228\" fill=\"#1e293b\" font-size=\"10.5\" font-weight=\"700\">[OA (Başlangıç Kenarı)</text><text x=\"195\" y=\"102\" fill=\"#16a34a\" font-size=\"10.5\" font-weight=\"700\">[OB (Bitim Kenarı)</text><text x=\"197\" y=\"262\" text-anchor=\"middle\" fill=\"#15803d\" font-size=\"10.5\" font-weight=\"700\">Saatin dönme yönünün TERSİ (+) yöndür.</text><rect x=\"395\" y=\"55\" width=\"335\" height=\"230\" rx=\"10\" fill=\"#fff\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/><text x=\"562\" y=\"78\" text-anchor=\"middle\" fill=\"#dc2626\" font-size=\"12.5\" font-weight=\"700\">2. Negatif (-) Yönlü Açı (Saat Yönü)</text><line x1=\"450\" y1=\"120\" x2=\"660\" y2=\"120\" stroke=\"#1e293b\" stroke-width=\"2.5\"/><line x1=\"450\" y1=\"120\" x2=\"610\" y2=\"225\" stroke=\"#dc2626\" stroke-width=\"2.5\"/><path d=\"M530,120 A80,80 0 0,1 513,162\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.5\"/><polygon points=\"510,165 521,161 514,154\" fill=\"#dc2626\"/><text x=\"585\" y=\"110\" fill=\"#1e293b\" font-size=\"10.5\" font-weight=\"700\">[OA (Başlangıç Kenarı)</text><text x=\"570\" y=\"242\" fill=\"#dc2626\" font-size=\"10.5\" font-weight=\"700\">[OB (Bitim Kenarı)</text><text x=\"562\" y=\"262\" text-anchor=\"middle\" fill=\"#b91c1c\" font-size=\"10.5\" font-weight=\"700\">Saatin dönme yönüyle AYNI yön (-) yöndür.</text></svg>"
+  },
+  {
+   "baslik": "Açı Ölçü Birimleri: Derece, Dakika, Saniye ve Radyan",
+   "metin": [
+    "Bir açının ölçüsünü ifade etmek için günlük yaşamda ve bilimde en yaygın kullanılan iki birim {koyu:derece} ve {koyu:radyan} birimleridir.\n1) {koyu:Derece (D)}: Bir çemberin çevresi 360 eş parçaya bölündüğünde, bu eş yaylardan birini gören merkez açının ölçüsüne {koyu:1 derece (1°)} denir. Çok hassas astronomi, denizcilik ve harita ölçümlerinde derecenin alt birimleri olan {koyu:dakika (')} ve {koyu:saniye ('')} kullanılır: {koyu:1° = 60'} (altmış dakika) ve {koyu:1' = 60''} (altmış saniye) olup buradan {koyu:1° = 3600''} eşitliği elde edilir.\n\n2) {koyu:Radyan (R)}: Bir çemberde {koyu:yarıçap uzunluğuna (r) eşit uzunluktaki yayı} gören merkez açının ölçüsüne {koyu:1 radyan (1 rad)} denir. Bir çemberin tam çevresi C = 2 . pi . r olduğundan, tam çemberin içinde yarıçap uzunluğundan 2.pi tane vardır; dolayısıyla tam açı {koyu:360° = 2.pi radyan} ve doğru açı {koyu:180° = pi radyan} olur. Derece (D) ve radyan (R) arasında geçiş yapmak için {koyu:D / 180 = R / pi} temel dönüşüm orantısı kullanılır."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "En Sık Kullanılan Özel Açıların Radyan Karşılıkları",
+    "metin": "pi = 180° kabul ederek zihinden hızlıca dönüştürebilirsiniz:\n• 30° = pi / 6   • 45° = pi / 4   • 60° = pi / 3\n• 90° = pi / 2   • 120° = 2.pi / 3   • 135° = 3.pi / 4\n• 150° = 5.pi / 6   • 180° = pi   • 270° = 3.pi / 2   • 360° = 2.pi"
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 310\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect x=\"10\" y=\"10\" width=\"740\" height=\"290\" rx=\"12\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"10\" width=\"740\" height=\"32\" rx=\"12\" fill=\"#7c3aed\"/><rect x=\"10\" y=\"28\" width=\"740\" height=\"14\" fill=\"#7c3aed\"/><text x=\"380.0\" y=\"31\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"13\" font-weight=\"700\">Açı Ölçü Birimleri: Derece - Radyan Dönüşümü ve Alt Birimler</text><rect x=\"30\" y=\"55\" width=\"700\" height=\"58\" rx=\"10\" fill=\"#ede9fe\" stroke=\"#7c3aed\" stroke-width=\"1.6\"/><text x=\"380\" y=\"80\" text-anchor=\"middle\" fill=\"#5b21b6\" font-size=\"14\" font-weight=\"700\">Temel Dönüşüm Orantısı:   D / 180  =  R / pi     (Tam Çember: 360° = 2.pi radyan,  180° = pi radyan)</text><text x=\"380\" y=\"101\" text-anchor=\"middle\" fill=\"#4c1d95\" font-size=\"10.5\">Derece Alt Birimleri:  1° = 60' (dakika) = 3600'' (saniye)   |   1' = 60'' (saniye)</text><rect x=\"30\" y=\"130\" width=\"108\" height=\"150\" rx=\"10\" fill=\"#fff\" stroke=\"#0284c7\" stroke-width=\"1.5\"/><rect x=\"30\" y=\"130\" width=\"108\" height=\"28\" rx=\"10\" fill=\"#0284c7\"/><text x=\"84\" y=\"149\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"12\" font-weight=\"700\">30°</text><text x=\"84\" y=\"198\" text-anchor=\"middle\" fill=\"#0284c7\" font-size=\"13\" font-weight=\"700\">pi / 6 rad</text><text x=\"84\" y=\"245\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"9.5\">180° = pi</text><rect x=\"148\" y=\"130\" width=\"108\" height=\"150\" rx=\"10\" fill=\"#fff\" stroke=\"#0d9488\" stroke-width=\"1.5\"/><rect x=\"148\" y=\"130\" width=\"108\" height=\"28\" rx=\"10\" fill=\"#0d9488\"/><text x=\"202\" y=\"149\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"12\" font-weight=\"700\">45°</text><text x=\"202\" y=\"198\" text-anchor=\"middle\" fill=\"#0d9488\" font-size=\"13\" font-weight=\"700\">pi / 4 rad</text><text x=\"202\" y=\"245\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"9.5\">180° = pi</text><rect x=\"266\" y=\"130\" width=\"108\" height=\"150\" rx=\"10\" fill=\"#fff\" stroke=\"#16a34a\" stroke-width=\"1.5\"/><rect x=\"266\" y=\"130\" width=\"108\" height=\"28\" rx=\"10\" fill=\"#16a34a\"/><text x=\"320\" y=\"149\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"12\" font-weight=\"700\">60°</text><text x=\"320\" y=\"198\" text-anchor=\"middle\" fill=\"#16a34a\" font-size=\"13\" font-weight=\"700\">pi / 3 rad</text><text x=\"320\" y=\"245\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"9.5\">180° = pi</text><rect x=\"384\" y=\"130\" width=\"108\" height=\"150\" rx=\"10\" fill=\"#fff\" stroke=\"#d97706\" stroke-width=\"1.5\"/><rect x=\"384\" y=\"130\" width=\"108\" height=\"28\" rx=\"10\" fill=\"#d97706\"/><text x=\"438\" y=\"149\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"12\" font-weight=\"700\">90°</text><text x=\"438\" y=\"198\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"13\" font-weight=\"700\">pi / 2 rad</text><text x=\"438\" y=\"245\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"9.5\">180° = pi</text><rect x=\"502\" y=\"130\" width=\"108\" height=\"150\" rx=\"10\" fill=\"#fff\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><rect x=\"502\" y=\"130\" width=\"108\" height=\"28\" rx=\"10\" fill=\"#dc2626\"/><text x=\"556\" y=\"149\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"12\" font-weight=\"700\">180°</text><text x=\"556\" y=\"198\" text-anchor=\"middle\" fill=\"#dc2626\" font-size=\"13\" font-weight=\"700\">pi rad</text><text x=\"556\" y=\"245\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"9.5\">180° = pi</text><rect x=\"620\" y=\"130\" width=\"108\" height=\"150\" rx=\"10\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-width=\"1.5\"/><rect x=\"620\" y=\"130\" width=\"108\" height=\"28\" rx=\"10\" fill=\"#7c3aed\"/><text x=\"674\" y=\"149\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"12\" font-weight=\"700\">270°</text><text x=\"674\" y=\"198\" text-anchor=\"middle\" fill=\"#7c3aed\" font-size=\"13\" font-weight=\"700\">3.pi / 2 rad</text><text x=\"674\" y=\"245\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"9.5\">180° = pi</text></svg>"
+  },
+  {
+   "baslik": "Yönlü Bir Açının Esas Ölçüsünün Bulunması",
+   "metin": [
+    "Bir dönme hareketinde çember etrafında birden fazla tam tur (360° veya 2.pi radyan) atıldığında açının bitim kenarı yine aynı konuma gelir. k bir tam sayı olmak üzere, ölçüsü beta olan bir açının {koyu:beta = alfa + k . 360°} (veya radyan cinsinden {koyu:beta = alfa + k . 2.pi}) yazılışında {koyu:0° <= alfa < 360°} (veya {koyu:0 <= alfa < 2.pi}) şartını sağlayan alfa açısına verilen açının {koyu:esas ölçüsü} denir. Esas ölçü bitim kenarının çember üzerindeki gerçek konumunu gösterir ve {koyu:asla negatif olamaz}!\n\nEsas ölçüyü bulmak için üç pratik kural uygulanır:\n1) {koyu:Pozitif Derecelerde}: Verilen açı 360°'ye bölünür; bölme işlemindeki {koyu:kalan} doğrudan esas ölçüdür.\n2) {koyu:Negatif Derecelerde}: Açının mutlak değeri (pozitifmiş gibi) 360°'ye bölünür; bulunan kalan {koyu:360°'den çıkarılır} (veya negatif açıya pozitif olana kadar 360°'nin katları eklenir).\n3) {koyu:Radyan Cinsinden Kesirli Açılarda ((A . pi) / B)}: Paydaki sayı (A), {koyu:paydanın 2 katına (2B)} bölünür! Bulunan kalan (K), pi'nin yeni katsayısı olarak paya yazılır ve eski payda (B) aynen korunur: {koyu:(K . pi) / B}. Eğer açı negatif ise bulunan kesir 2.pi'den çıkarılır."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Radyanda Bölen Neden Paydanın 2 Katıdır (2B)?",
+    "metin": "Çünkü tam çember pi değil, 2.pi radyandır! Örneğin 19.pi / 4 açısında 2.pi'nin katlarını (8.pi / 4'ün katlarını) atmak için 19'u 4'e değil, 4'ün iki katı olan 8'e böleriz: 19 = 2 . 8 + 3 olduğundan kalan 3'tür ve esas ölçü 3.pi / 4 olur."
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 310\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect x=\"10\" y=\"10\" width=\"740\" height=\"290\" rx=\"12\" fill=\"#f0fdfa\" stroke=\"#0d9488\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"10\" width=\"740\" height=\"32\" rx=\"12\" fill=\"#0d9488\"/><rect x=\"10\" y=\"28\" width=\"740\" height=\"14\" fill=\"#0d9488\"/><text x=\"380.0\" y=\"31\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"13\" font-weight=\"700\">Açının Esas Ölçüsü: [0°, 360°) ve [0, 2.pi) Aralığına İndirgeme</text><rect x=\"28\" y=\"58\" width=\"224\" height=\"225\" rx=\"10\" fill=\"#ccfbf1\" stroke=\"#0d9488\" stroke-width=\"1.6\"/><rect x=\"28\" y=\"58\" width=\"224\" height=\"28\" rx=\"10\" fill=\"#0d9488\"/><text x=\"140\" y=\"77\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"11\" font-weight=\"700\">1. Pozitif Derecede Esas Ölçü</text><text x=\"140\" y=\"112\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">Açı 360°'ye bölünür; kalan</text><text x=\"140\" y=\"130\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">değer esas ölçüdür:</text><text x=\"140\" y=\"156\" text-anchor=\"middle\" fill=\"#0d9488\" font-size=\"10\" font-weight=\"700\">alfa = beta + k . 360° (0° &lt;= alfa &lt; 360°)</text><rect x=\"40\" y=\"180\" width=\"200\" height=\"82\" rx=\"8\" fill=\"#fff\" stroke=\"#0d9488\"/><text x=\"140\" y=\"225\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\" font-weight=\"700\">Örnek: 1120° = 3 . 360° + 40° => 40°</text><rect x=\"268\" y=\"58\" width=\"224\" height=\"225\" rx=\"10\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><rect x=\"268\" y=\"58\" width=\"224\" height=\"28\" rx=\"10\" fill=\"#dc2626\"/><text x=\"380\" y=\"77\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"11\" font-weight=\"700\">2. Negatif Derecede Esas Ölçü</text><text x=\"380\" y=\"112\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">Mutlak değerce 360°'ye bölünür;</text><text x=\"380\" y=\"130\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">kalan 360°'den çıkarılır!</text><text x=\"380\" y=\"156\" text-anchor=\"middle\" fill=\"#dc2626\" font-size=\"10\" font-weight=\"700\">Örnek: -800° -> 800 = 2.360 + 80</text><rect x=\"280\" y=\"180\" width=\"200\" height=\"82\" rx=\"8\" fill=\"#fff\" stroke=\"#dc2626\"/><text x=\"380\" y=\"225\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\" font-weight=\"700\">Esas ölçü: 360° - 80° = 280°</text><rect x=\"508\" y=\"58\" width=\"224\" height=\"225\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><rect x=\"508\" y=\"58\" width=\"224\" height=\"28\" rx=\"10\" fill=\"#2563eb\"/><text x=\"620\" y=\"77\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"11\" font-weight=\"700\">3. Radyan Cinsinden (A . pi / B)</text><text x=\"620\" y=\"112\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">Pay (A), paydanın 2 katına (2B)</text><text x=\"620\" y=\"130\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">bölünür; kalan paya yazılır!</text><text x=\"620\" y=\"156\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"10\" font-weight=\"700\">Örnek: 23.pi / 4 -> 23 : 8 => Kalan 7</text><rect x=\"520\" y=\"180\" width=\"200\" height=\"82\" rx=\"8\" fill=\"#fff\" stroke=\"#2563eb\"/><text x=\"620\" y=\"225\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\" font-weight=\"700\">Esas ölçü: 7.pi / 4 radyan</text></svg>"
+  },
+  {
+   "baslik": "Analitik Düzlemde Birim Çember ve Denklemi",
+   "metin": [
+    "Analitik düzlemde merkezi başlangıç noktası olan {koyu:orijinde O(0, 0)} bulunan ve yarıçapı {koyu:r = 1 birim} olan çembere {koyu:birim çember} (veya trigonometrik çember) denir. Birim çember eksenleri dört ana noktada keser: A(1, 0), B(0, 1), A'(-1, 0) ve B'(0, -1).\n\nBirim çember üzerinde alınan herhangi bir {koyu:P(x, y)} noktasının orijine olan uzaklığı her zaman yarıçapa yani 1 birime eşittir. P noktasından x eksenine dikme indirildiğinde oluşan dik üçgende dik kenarlar |x| ve |y|, hipotenüs ise 1 birimdir. Pisagor teoremi uygulandığında birim çemberin denklemi {koyu:x² + y² = 1} olarak elde edilir. Dolayısıyla bir (x, y) noktasının birim çember üzerinde bulunabilmesi için koordinatlarının kareleri toplamının mutlaka {koyu:1'e eşit olması} gerekir."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Birim Çember Üzerindeki Noktaların Sınırları",
+    "metin": "x² + y² = 1 denklemini sağlayan hiçbir gerçek (x, y) noktasının apsisi veya ordinatı 1'den büyük veya -1'den küçük olamaz: -1 <= x <= 1 ve -1 <= y <= 1."
+   }
+  },
+  {
+   "baslik": "Birim Çember Üzerinde Kosinüs ve Sinüs Eksenleri",
+   "metin": [
+    "Standart konumdaki pozitif yönlü bir {koyu:alfa} açısının bitim kenarının birim çemberi kestiği nokta {koyu:P(x, y)} olsun. Trigonometride bu P noktasının birinci bileşenine (apsisine) alfa açısının {koyu:kosinüsü}, ikinci bileşenine (ordinatına) ise alfa açısının {koyu:sinüsü} denir. Bu nedenle yatay Ox ekseni {koyu:kosinüs ekseni}, dikey Oy ekseni ise {koyu:sinüs ekseni} olarak adlandırılır ve bitim noktası {koyu:P(cos(alfa), sin(alfa))} şeklinde gösterilir.\n\nx = cos(alfa) ve y = sin(alfa) değerlerini birim çember denklemi olan x² + y² = 1 içinde yerine yazdığımızda, trigonometrinin en temel özdeşliği olan {koyu:cos²(alfa) + sin²(alfa) = 1} bağıntısına ulaşırız. Ayrıca analitik düzlemin dört bölgesindeki işaretlere göre; 1. bölgede (0° < alfa < 90°) hem cos hem sin pozitif (+, +); 2. bölgede (90° < alfa < 180°) cos negatif, sin pozitif (-, +); 3. bölgede (180° < alfa < 270°) her ikisi de negatif (-, -) ve 4. bölgede (270° < alfa < 360°) cos pozitif, sin negatif (+, -) işaretlidir."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Negatif Açının Bitim Noktası",
+    "metin": "Bir P noktasının koordinatlarını P(cos(alfa), sin(alfa)) olarak yazabilmemiz için alfa açısının Ox ekseninin pozitif yönünden başlayarak POZİTİF YÖNDE taranmış esas ölçü olması gerekir."
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 320\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect x=\"10\" y=\"10\" width=\"740\" height=\"300\" rx=\"12\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"10\" width=\"740\" height=\"32\" rx=\"12\" fill=\"#d97706\"/><rect x=\"10\" y=\"28\" width=\"740\" height=\"14\" fill=\"#d97706\"/><text x=\"380.0\" y=\"31\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"13\" font-weight=\"700\">Birim Çember (x² + y² = 1) ve P(cos alfa, sin alfa) Noktası</text><rect x=\"30\" y=\"52\" width=\"330\" height=\"242\" rx=\"10\" fill=\"#fff\" stroke=\"#fcd34d\" stroke-width=\"1.5\"/><line x1=\"75\" y1=\"175\" x2=\"315\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"195\" y1=\"65\" x2=\"195\" y2=\"280\" stroke=\"#64748b\" stroke-width=\"1.5\"/><circle cx=\"195\" cy=\"175\" r=\"82\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><line x1=\"195\" y1=\"175\" x2=\"258\" y2=\"122\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><line x1=\"258\" y1=\"122\" x2=\"258\" y2=\"175\" stroke=\"#16a34a\" stroke-width=\"1.5\" stroke-dasharray=\"4,2\"/><circle cx=\"258\" cy=\"122\" r=\"4.5\" fill=\"#dc2626\"/><text x=\"266\" y=\"116\" fill=\"#dc2626\" font-size=\"10.5\" font-weight=\"700\">P(cos a, sin a)</text><text x=\"283\" y=\"189\" fill=\"#1e293b\" font-size=\"9.5\">A(1,0)</text><text x=\"160\" y=\"89\" fill=\"#1e293b\" font-size=\"9.5\">B(0,1)</text><text x=\"77\" y=\"189\" fill=\"#1e293b\" font-size=\"9.5\">A'(-1,0)</text><text x=\"201\" y=\"271\" fill=\"#1e293b\" font-size=\"9.5\">B'(0,-1)</text><rect x=\"380\" y=\"52\" width=\"350\" height=\"242\" rx=\"10\" fill=\"#fff\" stroke=\"#fcd34d\" stroke-width=\"1.5\"/><text x=\"555\" y=\"75\" text-anchor=\"middle\" fill=\"#92400e\" font-size=\"12\" font-weight=\"700\">Birim Çemberin Temel Bağıntıları</text><rect x=\"394\" y=\"90\" width=\"322\" height=\"40\" rx=\"6\" fill=\"#fffbeb\" stroke=\"#f59e0b\"/><text x=\"404\" y=\"106\" fill=\"#b45309\" font-size=\"10.5\" font-weight=\"700\">1. Birim Çember Denklemi:</text><text x=\"404\" y=\"122\" fill=\"#1e293b\" font-size=\"9.8\">Merkezi O(0,0) ve yarıçapı r = 1 br olan çember: x² + y² = 1</text><rect x=\"394\" y=\"138\" width=\"322\" height=\"40\" rx=\"6\" fill=\"#fffbeb\" stroke=\"#f59e0b\"/><text x=\"404\" y=\"154\" fill=\"#b45309\" font-size=\"10.5\" font-weight=\"700\">2. Bitim Noktası Koordinatları:</text><text x=\"404\" y=\"170\" fill=\"#1e293b\" font-size=\"9.8\">P(x, y) = P(cos(alfa), sin(alfa)) -> Apsis = cos, Ordinat = sin</text><rect x=\"394\" y=\"186\" width=\"322\" height=\"40\" rx=\"6\" fill=\"#fffbeb\" stroke=\"#f59e0b\"/><text x=\"404\" y=\"202\" fill=\"#b45309\" font-size=\"10.5\" font-weight=\"700\">3. Temel Pisagor Özdeşliği:</text><text x=\"404\" y=\"218\" fill=\"#1e293b\" font-size=\"9.8\">cos²(alfa) + sin²(alfa) = 1   (-1 &lt;= sin(alfa), cos(alfa) &lt;= 1)</text><rect x=\"394\" y=\"234\" width=\"322\" height=\"40\" rx=\"6\" fill=\"#fffbeb\" stroke=\"#f59e0b\"/><text x=\"404\" y=\"250\" fill=\"#b45309\" font-size=\"10.5\" font-weight=\"700\">4. Bölgelerde İşaretler (A-S-T-C):</text><text x=\"404\" y=\"266\" fill=\"#1e293b\" font-size=\"9.8\">1. Bölge (+,+), 2. Bölge (-,+), 3. Bölge (-,-), 4. Bölge (+,-)</text></svg>"
+  },
+  {
+   "baslik": "Yönlü Açılar ve Birim Çemberin Mühendislik Uygulamaları",
+   "metin": [
+    "Yönlü açılar, radyan birimi ve birim çember; robot kollarının eklem dönüş açılarının programlanmasında, uçak ve gemi navigasyon sistemlerinde, bilgisayar grafiklerinde (oyun motorlarında 2B ve 3B döndürme matrislerinde) ve alternatif akım elektrik mühendisliğinde doğrudan kullanılır.\n\nÖrneğin bir rüzgâr türbininin kanat ucundaki bir noktanın yerden yüksekliği zamana bağlı olarak birim çember üzerindeki {koyu:sinüs fonksiyonu} ile modellenirken, yatay konumu {koyu:kosinüs fonksiyonu} ile takip edilir."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Saniye ve Dakika Toplama-Çıkarma İpucu",
+    "metin": "Derece-dakika-saniye toplamalarında saniye veya dakika 60'ı geçerse içinden 60 çıkarılıp bir üst birime +1 eklenir. Çıkarma işleminde ise komşu birimden 1° = 60' veya 1' = 60'' bozdurularak işlem yapılır."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Bir ABC üçgeninde m(A) = 48° 35' 42'' ve m(B) = 64° 40' 38'' olduğuna göre m(A) + m(B) toplamını derece, dakika ve saniye cinsinden bulunuz.",
+   "cevap": "Alt birimleri alt alta toplayalım:\n• Saniye: 42'' + 38'' = 80'' = 1' 20'' (20'' yazılır, 1' dakikaya elde olarak eklenir).\n• Dakika: 35' + 40' + 1' (elde) = 76' = 1° 16' (16' yazılır, 1° dereceye elde olarak eklenir).\n• Derece: 48° + 64° + 1° (elde) = 113°.\nSonuç: m(A) + m(B) = 113° 16' 20'' bulunur."
+  },
+  {
+   "soru": "a) 240° kaç radyandır? b) (7.pi) / 12 radyan kaç derecedir?",
+   "cevap": "a) D / 180 = R / pi bağıntısından: R = (240 . pi) / 180. Pay ve paydayı 60 ile sadeleştirirsek R = (4.pi) / 3 radyan bulunur.\nb) Radyanı dereceye çevirirken pi yerine 180° yazarız:\n(7 . 180°) / 12 = 7 . 15° = 105° bulunur."
+  },
+  {
+   "soru": "Ölçüleri a) 1510° ve b) -1200° olan yönlü açıların esas ölçülerini derece cinsinden bulunuz.",
+   "cevap": "a) Pozitif açı 1510°'yi 360°'ye bölelim: 1510 = 4 . 360 + 70. Kalan 70 olduğundan esas ölçü 70°'dir.\nb) Negatif açı -1200° için önce 1200'ü 360'a bölelim: 1200 = 3 . 360 + 120. Açımız negatif olduğu için kalanı 360°'den çıkarırız: 360° - 120° = 240° bulunur."
+  },
+  {
+   "soru": "Ölçüleri a) (37.pi) / 5 radyan ve b) (-29.pi) / 6 radyan olan açıların esas ölçülerini radyan cinsinden bulunuz.",
+   "cevap": "a) Paydaki 37'yi paydanın 2 katına (2 . 5 = 10'a) bölelim: 37 = 3 . 10 + 7 (Kalan = 7). O hâlde esas ölçü (7.pi) / 5 radyandır.\nb) 29'u paydanın 2 katına (2 . 6 = 12'ye) bölelim: 29 = 2 . 12 + 5 (Kalan = 5). Açımız negatif olduğu için (-5.pi) / 6 ifadesini 2.pi'den çıkarırız:\n2.pi - (5.pi) / 6 = (12.pi - 5.pi) / 6 = (7.pi) / 6 radyan bulunur."
+  },
+  {
+   "soru": "Analitik düzlemin 2. bölgesinde bulunan P(m, kök(5) / 3) noktası birim çember üzerinde olduğuna göre m değeri kaçtır?",
+   "cevap": "Birim çember üzerindeki her P(x, y) noktası x² + y² = 1 denklemini sağlar:\nm² + (kök(5) / 3)² = 1 => m² + 5 / 9 = 1 => m² = 1 - 5 / 9 = 4 / 9.\nBuradan m = 2/3 veya m = -2/3 bulunur. P noktası analitik düzlemin 2. bölgesinde (-, +) olduğundan apsisi negatiftir; dolayısıyla m = -2 / 3 olur."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "soru": "Ölçüsü -950° olan yönlü bir açının esas ölçüsü kaç derecedir?",
+   "secenekler": [
+    "130°",
+    "150°",
+    "210°",
+    "230°",
+    "250°"
+   ],
+   "dogru": 0,
+   "aciklama": "950 sayısı 360'a bölündüğünde 950 = 2 . 360 + 230 elde edilir (kalan 230). Açı negatif olduğu için esas ölçü 360° - 230° = 130° olur.",
+   "tur": "coktan"
+  },
+  {
+   "soru": "Ölçüsü (43.pi) / 6 radyan olan açının esas ölçüsü kaç radyandır?",
+   "secenekler": [
+    "pi / 6",
+    "5.pi / 6",
+    "7.pi / 6",
+    "11.pi / 6",
+    "pi / 3"
+   ],
+   "dogru": 2,
+   "aciklama": "Paydaki 43 sayısı, paydanın 2 katı olan 12'ye bölünür: 43 = 3 . 12 + 7. Kalan 7 olduğundan esas ölçü (7.pi) / 6 radyandır.",
+   "tur": "coktan"
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "Saatin yelkovanının dönme yönünün tersi olan yön, pozitif (+) yön olarak kabul edilir.",
+     "dogru": true,
+     "aciklama": "Trigonometride saat yönünün tersi pozitif (+), saat yönü ise negatif (-) yöndür."
+    },
+    {
+     "metin": "Analitik düzlemde P(3/4, 1/4) noktası birim çember üzerinde yer alır.",
+     "dogru": false,
+     "aciklama": "Birim çember üzerindeki noktanın koordinatlarının kareleri toplamı 1 olmalıdır. (3/4)² + (1/4)² = 9/16 + 1/16 = 10/16 != 1 olduğundan bu nokta birim çember üzerinde değildir (3/5, 4/5 noktası birim çember üzerindedir)."
+    }
+   ]
+  },
+  {
+   "soru": "Aşağıdaki açı ve birim çember kavramlarını doğru karşılıklarıyla eşleştiriniz.",
+   "aciklama": "Derece-radyan dönüşümü ve birim çember koordinatları trigonometrik fonksiyonların temelini oluşturur.",
+   "tur": "eslestir",
+   "ciftler": [
+    [
+     "150° açısının radyan karşılığı",
+     "(5.pi) / 6 radyan"
+    ],
+    [
+     "1° (Bir derece)",
+     "60' (dakika) = 3600'' (saniye)"
+    ],
+    [
+     "Birim çember denklemi",
+     "x² + y² = 1"
+    ],
+    [
+     "Birim çemberde P(x, y) bitim noktası",
+     "P(cos(alfa), sin(alfa))"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+   "cumleler": [
+    {
+     "metin": "Bir çemberde yarıçap uzunluğuna eşit uzunluktaki yayı gören merkez açının ölçüsüne 1 ___ denir.",
+     "cevap": "radyan"
+    },
+    {
+     "metin": "Standart konumdaki bir alfa açısının birim çemberi kestiği noktanın apsisi cos(alfa), ordinatı ise ___ değerini verir.",
+     "cevap": "sin(alfa)"
+    }
+   ],
+   "fazla": [
+    "kavram",
+    "ilke"
+   ]
+  },
+  {
+   "soru": "Standart konumdaki pozitif yönlü 120°'lik açının birim çemberi kestiği P noktasının koordinatlarını, 2. bölgede oluşturacağı 30°-60°-90° özel dik üçgeninden yararlanarak adım adım bulunuz.",
+   "ipucu": "120°'lik açının negatif x ekseniyle 60°'lik açı yaptığını ve 2. bölgede apsisin negatif (-), ordinatın pozitif (+) olduğunu kullanınız.",
+   "tur": "ogretici",
+   "cevap": "1) Standart konumdaki 120°'lik açının bitim kenarı analitik düzlemin 2. bölgesindedir ve yatay negatif Ox ekseniyle 180° - 120° = 60°'lik bir açı yapar.\n2) P noktasından x eksenine dikme indirildiğinde hipotenüsü birim çember yarıçapı (r = 1 br) olan bir 30°-60°-90° dik üçgeni oluşur.\n3) 90°'nin karşısı 1 birim ise, 30°'nin karşısı (yatay uzunluk) 1/2 birim, 60°'nin karşısı (dikey uzunluk) ise kök(3)/2 birimdir.\n4) Nokta 2. bölgede (-, +) olduğu için apsis negatif, ordinat pozitiftir: P(cos 120°, sin 120°) = P(-1/2, kök(3)/2) bulunur.",
+   "ipuclari": [
+    "Konunun temel kavramlarını ve tanımlarını hatırlayınız.",
+    "Sebep-sonuç ilişkisini kurarak değerlendiriniz."
+   ]
+  }
+ ]
+}

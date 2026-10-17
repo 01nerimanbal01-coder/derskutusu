@@ -29,7 +29,7 @@
     "Harita okumanın bir üst basamağı {koyu:mekânsal ilişkileri çözümleme ve çıkarım yapmadır}. Örneğin bir bölgenin fiziki haritası ile nüfus dağılış haritası karşılaştırıldığında; yükseltinin ve engebenin fazla olduğu dağlık alanlarda ulaşımın zorlaştığı ve nüfusun seyrekleştiği, buna karşılık akarsu boylarındaki alüvyal ovalarda tarım ve yerleşmenin yoğunlaştığı çıkarımına ulaşılır. Farklı yıllara ait haritaların karşılaştırılması (örneğin Aral Gölü veya şehirleşme haritaları) ise {koyu:mekânsal değişimi} ortaya koyar."
    ],
    "kutu": {
-    "tur": "onemli",
+    "tur": "kural",
     "baslik": "Fiziki Haritalarda Renklerin Anlamı Tuzağı!",
     "metin": "Fiziki haritalarda yeşil renk 'orman veya çayır alanlarını', sarı renk ise 'çöl veya bozkırları' GÖSTERMEZ! Fiziki haritalardaki tüm renkler yalnızca YÜKSELTİ BASAMAKLARINI ifade eder (0-200 m koyu yeşil, 200-500 m açık yeşil, 500-1000 m sarı, 1000-1500 m turuncu, 1500 m üzeri kahverengi). Örneğin Konya Ovası da Bafra Ovası da ovadır; ancak Bafra Ovası 0-200 m'de olduğu için yeşil, Konya Ovası ~1000 m yükseltide olduğu için sarı-turuncu renkle gösterilir!"
    },
@@ -55,7 +55,7 @@
     "• {koyu:Kapalı Çukur (Çanak)}: Krater, kaldera veya obruk gibi çukurluklar, yükseltinin azaldığı yöne doğru çizilen {koyu:ok işaretleriyle (→)} gösterilir; okun başladığı eğriden bittiği eğriye kadar yükselti azalır. • {koyu:Falez (Yalıyar), Delta ve Haliç}: İzohipslerin deniz kıyısında birbirine çok yaklaşarak çakıştığı dik kıyılara {koyu:falez}; akarsuyun kıyıda denize doğru oluşturduğu üçgen çıkıntıya {koyu:delta ovası}; okyanus kıyılarında gelgit etkisiyle akarsu ağzının karaya doğru aşınmasıyla oluşan girintiye ise {koyu:haliç} denir."
    ],
    "kutu": {
-    "tur": "uyari",
+    "tur": "dikkat",
     "baslik": "Vadi ile Sırtı Ayırt Etmenin En Kolay Yolu",
     "metin": "Eğer izohipslerin V büklümünün ortasından bir akarsu çizgisi geçiyorsa orası kesinlikle VADİDİR! Akarsu çizgisi verilmemişse eğrilerin sayısal değerlerine bakılır: V'nin sivri ucu daha yüksek değerli eğriye doğru bakıyorsa VADİ, daha alçak değerli eğriye doğru bakıyorsa SIRTTIR."
    },
@@ -80,7 +80,7 @@
     "Bir yamacın veya yolun diklik derecesini ifade eden {koyu:eğim} ise iki nokta arasındaki {koyu:yükselti farkının (h)}, {koyu:yatay uzaklığa (L, gerçek uzunluk)} bölünmesiyle hesaplanır: • Yüzde olarak eğim: {koyu:Eğim (%) = (h / L) × 100} • Binde olarak eğim: {koyu:Eğim (‰) = (h / L) × 1000}. Eğim hesaplamasında en önemli kural, {koyu:yükselti farkı (h) ile yatay uzaklığın (L) mutlaka aynı uzunluk birimine (genellikle metreye) çevrilmesidir}!"
    ],
    "kutu": {
-    "tur": "onemli",
+    "tur": "kural",
     "baslik": "Adım Adım Eğim Hesaplama Örneği",
     "metin": "Soru: Deniz kıyısındaki (0 m) K noktası ile 600 m yükseltideki L noktası arasındaki yatay uzaklık 12 km'dir. K-L noktaları arasındaki eğim yüzde (%) kaçtır?\nÇözüm:\n• Yükselti farkı: h = 600 - 0 = 600 m.\n• Yatay uzaklık (metreye çevrilir!): L = 12 km = 12.000 m.\n• Eğim (%) = (h / L) × 100 = (600 / 12.000) × 100 = 60.000 / 12.000 = %5 bulunur."
    },

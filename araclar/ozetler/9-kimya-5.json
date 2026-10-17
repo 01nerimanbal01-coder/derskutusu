@@ -29,7 +29,7 @@
     "Atomdaki temel enerji düzeyleri (kabuklar/katmanlar) {koyu:baş kuantum sayısı (n)} ile gösterilir ve {koyu:n = 1, 2, 3, 4, 5, 6, 7} gibi pozitif tam sayı değerleri alır (harflerle {koyu:K, L, M, N, O, P, Q} kabukları). Baş kuantum sayısı {koyu:n} büyüdükçe elektron bulutunun çekirdeğe olan ortalama uzaklığı, orbitalin hacmi ve potansiyel enerjisi artar. Her {koyu:n}. temel enerji düzeyinde toplam {koyu:n² tane orbital} ve en fazla {koyu:2n² tane elektron} bulunabilir."
    ],
    "kutu": {
-    "tur": "onemli",
+    "tur": "kural",
     "baslik": "n. Enerji Düzeyindeki Orbital ve Elektron Formülü",
     "metin": "• n = 1 (K katmanı): n² = 1² = 1 orbital (yalnızca 1s) -> En fazla 2n² = 2 elektron.\n• n = 2 (L katmanı): n² = 2² = 4 orbital (bir tane 2s, üç tane 2p) -> En fazla 2n² = 8 elektron.\n• n = 3 (M katmanı): n² = 3² = 9 orbital (bir 3s, üç 3p, beş 3d) -> En fazla 2n² = 18 elektron.\n• n = 4 (N katmanı): n² = 4² = 16 orbital (bir 4s, üç 4p, beş 4d, yedi 4f) -> En fazla 2n² = 32 elektron."
    },
@@ -55,7 +55,7 @@
     "• {koyu:1. Kural}: {koyu:(n + l)} toplamı büyük olan orbitalin bağıl enerjisi daha büyüktür. Örneğin {koyu:4s} orbitali için {koyu:n + l = 4 + 0 = 4} iken, {koyu:3d} orbitali için {koyu:n + l = 3 + 2 = 5}'tir; dolayısıyla {koyu:3d orbitalinin enerjisi 4s orbitalinden daha yüksektir (4s < 3d)}! • {koyu:2. Kural}: İki farklı orbitalin {koyu:(n + l)} değerleri birbirine eşitse, baş kuantum sayısı ({koyu:n}) büyük olan orbitalin enerjisi daha büyüktür. Örneğin {koyu:3d (3 + 2 = 5)} ile {koyu:4p (4 + 1 = 5)} orbitallerinin {koyu:n + l} toplamları eşittir; {koyu:4p}'nin baş kuantum sayısı ({koyu:n = 4}) daha büyük olduğundan enerjisi {koyu:3d < 4p} şeklinde sıralanır."
    ],
    "kutu": {
-    "tur": "onemli",
+    "tur": "kural",
     "baslik": "Bağıl Enerji Karşılaştırma Uygulaması",
     "metin": "3p (3+1=4), 4s (4+0=4), 3d (3+2=5) ve 4p (4+1=5) orbitalleri için önce (n+l) değeri küçük olanlar, eşitlik hâlinde ise n değeri küçük olanlar öne yazılır: 3p < 4s < 3d < 4p."
    },
@@ -80,7 +80,7 @@
     "Bu deneysel veri, temel hâldeki çok elektronlu atomlarda {koyu:4s orbitalinin bağıl enerjisinin 3d orbitalinden daha düşük olduğu} önermesini doğrular. Buna karşılık {koyu:'Baş kuantum sayısı (n) büyük olan her orbitalin enerjisi, n sayısı küçük olan tüm orbitallerden büyüktür'} şeklindeki bilimsel veriye dayanmayan önerme {koyu:yanlıştır}; çünkü {koyu:4s < 3d}, {koyu:5s < 4d} ve {koyu:6s < 4f < 5d} örneklerinde görüldüğü gibi katmanlar arasında enerji girişimi (örtüşmesi) meydana gelir."
    ],
    "kutu": {
-    "tur": "uyari",
+    "tur": "dikkat",
     "baslik": "Genel Bağıl Enerji Sıralaması (Aufbau Sırası)",
     "metin": "Çok elektronlu atomlarda temel hâl bağıl enerji sırası küçükten büyüğe doğru şöyledir:\n1s < 2s < 2p < 3s < 3p < 4s < 3d < 4p < 5s < 4d < 5p < 6s < 4f < 5d < 6p < 7s < 5f < 6d < 7p"
    },
@@ -93,7 +93,7 @@
     "Bir orbitalde hiç elektron yoksa {koyu:boş orbital}, 1 elektron varsa {koyu:yarı dolu orbital (↑)}, zıt spinli 2 elektron varsa {koyu:tam dolu orbital (↑↓)} olarak adlandırılır. Buna göre {koyu:s} alt kabuğu 1 kutuyla (en fazla 2 elektron), {koyu:p} alt kabuğu yan yana 3 kutuyla (en fazla 6 elektron), {koyu:d} alt kabuğu 5 kutuyla (en fazla 10 elektron) ve {koyu:f} alt kabuğu 7 kutuyla (en fazla 14 elektron) gösterilir."
    ],
    "kutu": {
-    "tur": "onemli",
+    "tur": "kural",
     "baslik": "Alt Kabuktaki Orbital Sayısı Formülü: (2l + 1)",
     "metin": "Açısal momentum kuantum sayısı l olan bir alt kabuktaki orbital (kutu) sayısı (2l + 1), alabileceği maksimum elektron sayısı ise 2·(2l + 1) formülüyle bulunur:\n• s (l=0): 1 orbital, 2 elektron | p (l=1): 3 orbital, 6 elektron | d (l=2): 5 orbital, 10 elektron | f (l=3): 7 orbital, 14 elektron."
    }

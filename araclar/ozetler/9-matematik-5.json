@@ -30,7 +30,7 @@
     "• {koyu:Rasyonel Sayılar Kümesi (ℚ)}: {koyu:a, b ∈ ℤ} ve {koyu:b ≠ 0} olmak üzere {koyu:a/b} biçiminde yazılabilen sayıların kümesidir. Her tam sayı paydası 1 olan bir rasyonel sayı olduğundan {koyu:ℕ ⊂ ℤ ⊂ ℚ} kapsama ilişkisi geçerlidir. • {koyu:İrrasyonel Sayılar (ℚ') ve Gerçek Sayılar (ℝ)}: İki tam sayının oranı şeklinde yazılamayan, virgülden sonraki kısmı düzensiz ve sonsuza kadar devam eden sayılara ({koyu:π, e} ve kök dışına tam çıkamayan {koyu:kök 2, kök 5} gibi sayılara) irrasyonel sayılar denir. Rasyonel ve irrasyonel sayıların birleşimi sayı doğrusunu boşluksuz dolduran {koyu:Gerçek (Reel) Sayılar Kümesini (ℝ = ℚ ∪ ℚ')} oluşturur."
    ],
    "kutu": {
-    "tur": "onemli",
+    "tur": "kural",
     "baslik": "Rasyonel ve İrrasyonel Sayılar Ayrıktır",
     "metin": "Bir gerçek sayı ya rasyoneldir ya da irrasyoneldir; hem rasyonel hem irrasyonel olan hiçbir sayı yoktur. Dolayısıyla ℚ ∩ ℚ' = ∅ (boş küme) ve ℚ ∪ ℚ' = ℝ eşitlikleri her zaman geçerlidir. Devirli ondalık gösterimler (örneğin 0,333... = 1/3) a/b biçiminde yazılabildiği için rasyonel sayıdır."
    },
@@ -56,7 +56,7 @@
     "• {koyu:Etkisiz (Birim) Eleman Özelliği}: Toplama işleminin etkisiz elemanı {koyu:0}'dır ({koyu:a + 0 = 0 + a = a}); çarpma işleminin etkisiz elemanı {koyu:1}'dir ({koyu:a · 1 = 1 · a = a}). • {koyu:Ters Eleman Özelliği}: Bir {koyu:a} gerçek sayısının toplama işlemine göre tersi {koyu:-a}'dır çünkü {koyu:a + (-a) = 0} (birim eleman) olur. Sıfırdan farklı bir {koyu:a} gerçek sayısının ({koyu:a ≠ 0}) çarpma işlemine göre tersi {koyu:1/a}'dır çünkü {koyu:a · (1/a) = 1} olur; {koyu:0'ın çarpma işlemine göre tersi yoktur}. • {koyu:Yutan Eleman ve Dağılma Özelliği}: Çarpmada {koyu:0} yutan elemandır ({koyu:a · 0 = 0}); çarpma işleminin toplama ve çıkarma üzerine sağdan ve soldan dağılma özelliği vardır: {koyu:a · (b ± c) = a · b ± a · c}."
    ],
    "kutu": {
-    "tur": "onemli",
+    "tur": "kural",
     "baslik": "Ters Eleman ve Dağılma Özelliği Uygulaması",
     "metin": "x = 3/5 gerçek sayısının toplama işlemine göre tersi A = -3/5, çarpma işlemine göre tersi B = 5/3'tür. Toplamları: A + B = (-3/5) + (5/3) = 16/15 bulunur."
    },
@@ -69,7 +69,7 @@
     "Benzer biçimde {koyu:Tam Sayılar Kümesinde (ℤ)} çarpma işleminin etkisiz elemanı 1'dir; ancak {koyu:1} ve {koyu:-1} dışındaki hiçbir tam sayının çarpma işlemine göre tersi tam sayı değildir (örneğin 4'ün çarpmaya göre tersi olan {koyu:1/4 ∉ ℤ}). Rasyonel sayılar (ℚ) ve gerçek sayılar (ℝ) kümelerinde ise 0 hariç her elemanın çarpma işlemine göre tersi yine aynı kümenin elemanıdır."
    ],
    "kutu": {
-    "tur": "uyari",
+    "tur": "dikkat",
     "baslik": "Tam Sayılarda Çarpmaya Göre Ters Eleman Tuzağı",
     "metin": "Tam sayılar kümesinde (ℤ) çarpma işlemine göre tersi yine bir tam sayı olan yalnızca İKİ eleman vardır: 1 ve -1. Diğer tüm tam sayıların çarpmaya göre tersi rasyonel sayıdır (ℤ kümesinin dışındadır)!"
    }
@@ -94,7 +94,7 @@
     "Buna karşılık {koyu:'Bir rasyonel sayı ile bir irrasyonel sayının çarpımı her zaman irrasyoneldir'} iddiasını incelediğimizde, {koyu:a = 0 ∈ ℚ} ve {koyu:b = kök 5 ∈ ℚ'} seçersek {koyu:0 · kök 5 = 0 ∈ ℚ} (rasyonel) sonucunu elde ederiz. İşte bir genellemenin yanlış olduğunu kanıtlayan bu özel duruma {koyu:karşı örnek (aksi örnek)} denir. İfadeyi doğru bir genellemeye dönüştürmek için koşulu {koyu:'Sıfırdan farklı bir rasyonel sayı ile bir irrasyonel sayının çarpımı daima irrasyoneldir'} biçiminde daraltmamız gerekir."
    ],
    "kutu": {
-    "tur": "uyari",
+    "tur": "dikkat",
     "baslik": "Muhakeme Sorularında Sıfır (0) ve Bir (1) Kontrolü",
     "metin": "Sayı kümeleriyle ilgili 'Her zaman doğrudur / Kesinlikle irrasyoneldir' tarzı öncüllü sorularda varsayımı test ederken mutlaka 0 (toplamanın etkisiz, çarpmanın yutan elemanı), 1 (çarpmanın etkisiz elemanı) ve birbirinin eşleniği olan irrasyonel sayıları karşı örnek olarak deneyiniz!"
    }

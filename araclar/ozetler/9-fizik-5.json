@@ -29,7 +29,7 @@
     "Bu sorunu ortadan kaldırmak amacıyla Ağırlıklar ve Ölçüler Genel Konferansı (CGPM) tarafından tüm dünyada ortak geçerliliğe sahip {koyu:Uluslararası Birim Sistemi (SI)} kabul edilmiştir. Fiziksel nicelikler, başka bir niceliğe bağlı olup olmamalarına göre {koyu:temel nicelikler} ve {koyu:türetilmiş nicelikler}; yön bilgisine ihtiyaç duyup duymamalarına göre ise {koyu:skaler nicelikler} ve {koyu:vektörel nicelikler} olarak sınıflandırılır."
    ],
    "kutu": {
-    "tur": "onemli",
+    "tur": "kural",
     "baslik": "Neden Evrensel SI Birimleri Kullanılır?",
     "metin": "Farklı ülkelerdeki bilim insanlarının yaptığı deney sonuçlarının karşılaştırılabilmesi, mühendislik parçalarının birbirine uyum sağlaması ve birim dönüşüm hatalarının önlenmesi için tüm bilimsel yayınlarda SI birimleri standart olarak kullanılır."
    },
@@ -42,7 +42,7 @@
     "• {koyu:3. Sıcaklık (T)}: Madde taneciklerinin ortalama kinetik enerjisinin bir göstergesidir; SI birimi {koyu:kelvin (K)}, ölçüm aracı {koyu:termometre}dir. • {koyu:4. Akım Şiddeti (i veya I)}: İletkenin dik kesitinden birim zamanda geçen elektrik yükü miktarıdır; SI birimi {koyu:amper (A)}, ölçüm aracı {koyu:ampermetre}dir. • {koyu:5. Madde Miktarı (n)}: Avogadro sayısı ({koyu:6,02 × 10²³}) kadar tanecik içeren madde miktarıdır; SI birimi {koyu:mol (mol)}'dür (doğrudan bir ölçme aleti yoktur). • {koyu:6. Uzunluk (l, x, h)}: İki nokta arasındaki mesafedir; SI birimi {koyu:metre (m)}, ölçüm aracı {koyu:şerit metre, cetvel veya kumpas}tır. • {koyu:7. Zaman (t)}: Olaylar arasındaki süredir; SI birimi {koyu:saniye (s)}, ölçüm aracı {koyu:kronometre}dir."
    ],
    "kutu": {
-    "tur": "uyari",
+    "tur": "dikkat",
     "baslik": "SI Birimlerinde En Sık Yapılan 3 Hata!",
     "metin": "1) Sıcaklığın SI birimi santigrat derece (°C) DEĞİL, Kelvin (K)'dir!\n2) Kütlenin SI birimi gram (g) veya ton DEĞİL, kilogram (kg)'dır!\n3) Uzunluğun SI birimi santimetre (cm) veya kilometre (km) DEĞİL, metre (m); zamanın SI birimi saat (h) DEĞİL, saniye (s)'dir!"
    },
@@ -68,7 +68,7 @@
     "Benzer şekilde {koyu:sıcaklık (T)} temel bir nicelik olup {koyu:termometre} ile ölçülür ve SI birimi {koyu:Kelvin (K)}'dir; oysa {koyu:ısı (Q)} sıcaklık farkından dolayı alınıp verilen bir enerji türü olduğu için {koyu:türetilmiş} bir niceliktir, {koyu:kalorimetre kabı} yardımıyla hesaplanır ve SI birimi {koyu:Joule (J)}'dür (kalori birimi SI birimi değildir!). Elektrik devrelerinde {koyu:akım şiddeti (A)} temel nicelik iken, {koyu:elektrik yükü (Coulomb)}, {koyu:potansiyel fark/gerilim (Volt)} ve {koyu:elektrik direnci (Ohm)} türetilmiş niceliklerdir."
    ],
    "kutu": {
-    "tur": "uyari",
+    "tur": "dikkat",
     "baslik": "Akım Şiddeti mi Temeldir Yoksa Elektrik Yükü mü?",
     "metin": "Öğrencilerin en çok karıştırdığı noktalardan biri elektrik yükü (q) ile akım şiddetidir (i). SI birim sisteminde AKIM ŞİDDETİ (Amper) TEMEL nicelik kabul edilmiş; elektrik yükü ise q = i · t bağıntısıyla (1 Coulomb = 1 Amper × 1 saniye) TÜRETİLMİŞ nicelik olarak tanımlanmıştır!"
    }
@@ -80,7 +80,7 @@
     "Bu iki sınıflandırma kesiştirildiğinde çok önemli bir kural ortaya çıkar: {koyu:7 temel niceliğin (KISAMUZ) tamamı aynı zamanda skaler büyüklüktür; hem temel hem vektörel olan hiçbir fiziksel nicelik yoktur!} Türetilmiş niceliklerin ise bir kısmı skalerdir ({koyu:sürat, alınan yol, hacim, öz kütle, iş, güç, enerji, ısı, basınç, elektrik yükü, potansiyel fark}), bir kısmı da vektöreldir ({koyu:konum, yer değiştirme, hız, ivme, kuvvet, ağırlık, tork, momentum, elektrik alan, manyetik alan})."
    ],
    "kutu": {
-    "tur": "onemli",
+    "tur": "kural",
     "baslik": "Hızlı Kontrol Özeti",
     "metin": "• Bir nicelik TEMEL ise -> Kesinlikle SKALERDİR.\n• Bir nicelik VEKTÖREL ise -> Kesinlikle TÜRETİLMİŞTİR.\n• Bir nicelik TÜRETİLMİŞ ise -> Skaler de olabilir (enerji, basınç, sürat), vektörel de olabilir (kuvvet, hız, ivme)."
    },

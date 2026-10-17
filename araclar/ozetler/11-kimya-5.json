@@ -1,0 +1,214 @@
+{
+ "ad": "11-kimya-5",
+ "sinif": 11,
+ "ders": "kimya",
+ "ders_adi": "Kimya",
+ "hafta": 5,
+ "tarih": "12-16 Ekim 2026",
+ "yayin_tarihi": "2026-10-14",
+ "unite": "ETKİLEŞİM",
+ "konu": "Tepkime Isılarının Toplanabilirliği (Hess Yasası) ve Kimyasal Tepkimelerde Çarpışma Teorisi",
+ "ciktilar": [
+  "KİM.11.1.4.a — Entalpinin bir hâl fonksiyonu olmasından yararlanarak Hess Yasası'nı (tepkime ısılarının toplanabilirliğini) açıklar ve ara basamaklardan net tepkime entalpisini hesaplar.",
+  "KİM.11.1.5.a — Çarpışma teorisini, etkin çarpışmanın şartlarını (uygun geometri ve yeterli kinetik enerji), aktifleşme enerjisini (E_a) ve aktifleşmiş kompleksi açıklar.",
+  "KİM.11.1.5.b — Kimyasal tepkimelere ait potansiyel enerji (PE) - tepkime koordinatı grafiklerinden ileri/geri aktifleşme enerjilerini (E_ai, E_ag) ve tepkime entalpisini (Delta_H) hesaplar."
+ ],
+ "giris": "Doğada elmastan grafite dönüşüm gibi binlerce yıl süren veya karbon monoksit eldesi gibi yan ürünlerle karışan bazı kimyasal tepkimelerin entalpi değişimini kalorimetre kabında doğrudan ölçmek imkânsızdır. İşte bu noktada İsviçre-Rus asıllı kimyacı Germain Henri Hess'in ortaya koyduğu 'Tepkime Isılarının Toplanabilirliği Yasası' imdadımıza yetişir. Bu hafta ilk olarak Hess Yasası ile dolaylı entalpi hesabını öğrenecek; ardından 'Bir kimyasal tepkime atom ve moleküllerin çarpışmasıyla nasıl gerçekleşir?' sorusuna yanıt veren Çarpışma Teorisi ve aktifleşme enerjisi grafiklerini inceleyeceğiz.",
+ "ozet": [
+  "Entalpi (H) bir hâl fonksiyonudur; bir tepkimenin entalpi değişimi (Delta_H) tepkimenin izlediği yola veya basamak sayısına değil, yalnız girenlerin ve ürünlerin ilk ve son hâllerine bağlıdır (Hess Yasası).",
+  "Hess Yasası'nın 3 kuralı: 1) Denklem ters çevrilirse Delta_H işaret değiştirir, 2) Denklem bir k katsayısıyla çarpılırsa Delta_H da k ile çarpılır, 3) Ara denklemler toplanırsa Delta_H değerleri de cebirsel olarak toplanır.",
+  "Çarpışma Teorisine göre bir kimyasal tepkimenin gerçekleşmesi için taneciklerin 'Etkin Çarpışma' yapması gerekir.",
+  "Etkin çarpışmanın iki temel şartı vardır: 1) Tanecikler uygun geometrik doğrultu ve açıda çarpışmalıdır, 2) Çarpışan taneciklerin toplam kinetik enerjisi en az Aktifleşme (Eşik) Enerjisi (E_a) kadar olmalıdır.",
+  "Aktifleşme enerjisi (E_a) her zaman pozitif işaretlidir (E_a > 0) ve sıcaklıkla değişmez; yalnız katalizör ile düşürülebilir.",
+  "Potansiyel Enerji (PE) grafiğinde tepe noktası 'Aktifleşmiş Kompleks'i gösterir ve tepkime entalpisi Delta_H = E_ai - E_ag bağıntısıyla hesaplanır."
+ ],
+ "bolumler": [
+  {
+   "baslik": "Entalpinin Hâl Fonksiyonu Olması ve Hess Yasası",
+   "metin": [
+    "Termokimyada bir sistemin {koyu:entalpi değişimi (Delta_H)}, tıpkı bir dağcının dağın zirvesine hangi patikadan çıkarsa çıksın yaptığı yer değiştirmenin (irtifa farkının) aynı olması gibi bir {koyu:hâl fonksiyonudur}. Yani bir kimyasal tepkimenin entalpi değişimi, tepkimenin tek basamakta mı yoksa birden fazla ara basamakta mı gerçekleştiğine bağlı değildir; yalnızca başlangıçtaki girenlerin ve son durumdaki ürünlerin enerjilerine bağlıdır.\n\n1840 yılında Germain Henri Hess tarafından kanıtlanan bu ilkeye {koyu:Hess Yasası (Tepkime Isılarının Toplanabilirliği Yasası)} denir. Örneğin karbon katısının (grafitin) yanarak karbondioksit (CO2) gazına dönüşmesi doğrudan tek basamakta gerçekleştiğinde {koyu:Delta_H = -393,5 kJ} ısı açığa çıkar. Aynı tepkime önce karbon monoksit (CO) oluşumu (Delta_H1 = -110,5 kJ) ve ardından CO gazının yanarak CO2 oluşturması (Delta_H2 = -283,0 kJ) şeklinde iki basamakta gerçekleştirildiğinde de toplam entalpi değişimi {koyu:Delta_H_net = Delta_H1 + Delta_H2 = -110,5 + (-283,0) = -393,5 kJ} olarak birebir aynı değeri verir."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Hess Yasası Neden Çok Önemlidir?",
+    "metin": "Laboratuvarda çok yavaş gerçekleşen (örneğin demirin paslanması), patlamalı yürüyen veya yan ürün oluşumu engellenemeyen tepkimelerin entalpileri, entalpisi bilinen başka tepkimelerin toplanmasıyla hatasız olarak hesaplanabilir."
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 310\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect x=\"10\" y=\"10\" width=\"740\" height=\"290\" rx=\"12\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"10\" width=\"740\" height=\"32\" rx=\"12\" fill=\"#7c3aed\"/><rect x=\"10\" y=\"28\" width=\"740\" height=\"14\" fill=\"#7c3aed\"/><text x=\"380.0\" y=\"31\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"13\" font-weight=\"700\">Hess Yasası: Tepkime Entalpilerinin (Delta_H) Toplanabilirliği Kuralları</text><rect x=\"28\" y=\"55\" width=\"224\" height=\"230\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><rect x=\"28\" y=\"55\" width=\"224\" height=\"28\" rx=\"10\" fill=\"#dc2626\"/><text x=\"140\" y=\"74\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"11\" font-weight=\"700\">1. Tepkime Ters Çevrilirse</text><text x=\"140\" y=\"106\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">Girenler ve ürünler yer</text><text x=\"140\" y=\"124\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">değiştirdiğinde Delta_H</text><text x=\"140\" y=\"144\" text-anchor=\"middle\" fill=\"#dc2626\" font-size=\"10.5\" font-weight=\"700\">İŞARET DEĞİŞTİRİR!</text><rect x=\"40\" y=\"166\" width=\"200\" height=\"96\" rx=\"8\" fill=\"#fff\" stroke=\"#dc2626\"/><text x=\"140\" y=\"198\" text-anchor=\"middle\" fill=\"#334155\" font-size=\"10\" font-weight=\"700\">A -> B   (Delta_H = -100 kJ)</text><text x=\"140\" y=\"226\" text-anchor=\"middle\" fill=\"#dc2626\" font-size=\"10\" font-weight=\"700\">B -> A   (Delta_H = +100 kJ)</text><rect x=\"268\" y=\"55\" width=\"224\" height=\"230\" rx=\"10\" fill=\"#f0f9ff\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><rect x=\"268\" y=\"55\" width=\"224\" height=\"28\" rx=\"10\" fill=\"#0284c7\"/><text x=\"380\" y=\"74\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"11\" font-weight=\"700\">2. Katsayı İle Çarpılır/Bölünürse</text><text x=\"380\" y=\"106\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">Denklem hangi pozitif sayıyla</text><text x=\"380\" y=\"124\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">(k) çarpılır veya bölünürse,</text><text x=\"380\" y=\"144\" text-anchor=\"middle\" fill=\"#0284c7\" font-size=\"10.5\" font-weight=\"700\">Delta_H da k ile ÇARPILIR!</text><rect x=\"280\" y=\"166\" width=\"200\" height=\"96\" rx=\"8\" fill=\"#fff\" stroke=\"#0284c7\"/><text x=\"380\" y=\"198\" text-anchor=\"middle\" fill=\"#334155\" font-size=\"10\" font-weight=\"700\">A -> B   (Delta_H = -100 kJ)</text><text x=\"380\" y=\"226\" text-anchor=\"middle\" fill=\"#0284c7\" font-size=\"10\" font-weight=\"700\">2A -> 2B (Delta_H = -200 kJ)</text><rect x=\"508\" y=\"55\" width=\"224\" height=\"230\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><rect x=\"508\" y=\"55\" width=\"224\" height=\"28\" rx=\"10\" fill=\"#16a34a\"/><text x=\"620\" y=\"74\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"11\" font-weight=\"700\">3. Ara Basamaklar Toplanırsa</text><text x=\"620\" y=\"106\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">Ara tepkimeler taraf tarafa</text><text x=\"620\" y=\"124\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">toplandığında net tepkimenin</text><text x=\"620\" y=\"144\" text-anchor=\"middle\" fill=\"#16a34a\" font-size=\"10.5\" font-weight=\"700\">entalpisi CEBİRSEL TOPLAMDIR:</text><rect x=\"520\" y=\"166\" width=\"200\" height=\"96\" rx=\"8\" fill=\"#fff\" stroke=\"#16a34a\"/><text x=\"620\" y=\"198\" text-anchor=\"middle\" fill=\"#334155\" font-size=\"10\" font-weight=\"700\">Delta_H_net = Delta_H1 + Delta_H2</text><text x=\"620\" y=\"226\" text-anchor=\"middle\" fill=\"#16a34a\" font-size=\"10\" font-weight=\"700\">(Zıt taraftaki eşit türler sadeleşir)</text></svg>"
+  },
+  {
+   "baslik": "Hess Yasası Uygulama Kuralları",
+   "metin": [
+    "Ara basamakları verilen bir tepkime sisteminden hedef (net) tepkimeyi elde ederken şu {koyu:üç altın kural} uygulanır:\n1) {koyu:Tepkime Ters Çevrilirse}: Bir kimyasal tepkime denklemi ters çevrildiğinde (girenler ürünlere, ürünler girenlere geçirildiğinde), entalpi değişiminin büyüklüğü aynı kalır ancak {koyu:Delta_H işaret değiştirir} (ekzotermikse endotermik, endotermikse ekzotermik olur).\n• C(k) + O2(g) -> CO2(g)   (Delta_H = -393,5 kJ)\n• CO2(g) -> C(k) + O2(g)   (Delta_H = +393,5 kJ)\n\n2) {koyu:Tepkime Bir Katsayıyla Çarpılır veya Bölünürse}: Entalpi madde miktarıyla doğru orantılı bir büyüklük olduğundan, bir tepkime denkleminin tüm katsayıları hangi pozitif {koyu:k} sayısıyla çarpılır veya bölünürse, {koyu:Delta_H değeri de aynı k sayısıyla çarpılır veya bölünür}.\n• 2 C(k) + 2 O2(g) -> 2 CO2(g)   (Delta_H = 2 . (-393,5) = -787 kJ)\n3) {koyu:Tepkimeler Taraf Tarafa Toplanırsa}: Ara basamak denklemleri taraf tarafa toplandığında, bir tepkimenin ürünlerinde yer alan bir madde ile diğer tepkimenin girenlerinde yer alan aynı fiziksel hâldeki madde birbirini götürür (ara ürün sadeleşmesi). Net tepkimenin entalpisi ara basamak entalpilerinin {koyu:cebirsel toplamına} eşittir: {koyu:Delta_H_net = Delta_H1 + Delta_H2 + ...}"
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Hess Sorularında Çözüm Stratejisi",
+    "metin": "Net tepkimedeki her bir maddeyi ara basamaklarda arayın! Eğer aradığınız madde yalnız tek bir ara basamakta varsa, o basamağın yönünü (giren/ürün) ve katsayısını hemen net tepkimeye göre ayarlayın; birden fazla basamakta geçen maddeleri (örneğin O2'yi) en sona bırakın, kendiliğinden denkleşecektir!"
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 310\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect x=\"10\" y=\"10\" width=\"740\" height=\"290\" rx=\"12\" fill=\"#f0f9ff\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"10\" width=\"740\" height=\"32\" rx=\"12\" fill=\"#0284c7\"/><rect x=\"10\" y=\"28\" width=\"740\" height=\"14\" fill=\"#0284c7\"/><text x=\"380.0\" y=\"31\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"13\" font-weight=\"700\">Hess Yasası Enerji Diyagramı: Entalpi Yoldan Bağımsız Bir Hal Fonksiyonudur</text><rect x=\"30\" y=\"55\" width=\"380\" height=\"230\" rx=\"10\" fill=\"#fff\" stroke=\"#7dd3fc\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"85\" x2=\"360\" y2=\"85\" stroke=\"#1e293b\" stroke-width=\"3\"/><text x=\"210\" y=\"76\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"700\">Başlangıç: C(k) + O2(g)</text><line x1=\"210\" y1=\"165\" x2=\"375\" y2=\"165\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"292\" y=\"156\" text-anchor=\"middle\" fill=\"#b45309\" font-size=\"10\" font-weight=\"700\">Ara: CO(g) + 1/2 O2(g)</text><line x1=\"60\" y1=\"245\" x2=\"360\" y2=\"245\" stroke=\"#16a34a\" stroke-width=\"3\"/><text x=\"210\" y=\"264\" text-anchor=\"middle\" fill=\"#15803d\" font-size=\"11\" font-weight=\"700\">Sonuç: CO2(g)</text><line x1=\"110\" y1=\"88\" x2=\"110\" y2=\"240\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"115\" y=\"170\" fill=\"#dc2626\" font-size=\"10.5\" font-weight=\"700\">Delta_H_net = -393,5 kJ</text><line x1=\"285\" y1=\"88\" x2=\"285\" y2=\"140\" stroke=\"#0284c7\" stroke-width=\"2.2\"/><text x=\"292\" y=\"118\" fill=\"#0284c7\" font-size=\"9.8\" font-weight=\"700\">Delta_H1 = -110,5 kJ</text><line x1=\"285\" y1=\"168\" x2=\"285\" y2=\"240\" stroke=\"#7c3aed\" stroke-width=\"2.2\"/><text x=\"292\" y=\"210\" fill=\"#7c3aed\" font-size=\"9.8\" font-weight=\"700\">Delta_H2 = -283,0 kJ</text><rect x=\"428\" y=\"55\" width=\"302\" height=\"230\" rx=\"10\" fill=\"#fff\" stroke=\"#7dd3fc\" stroke-width=\"1.5\"/><text x=\"579\" y=\"80\" text-anchor=\"middle\" fill=\"#0369a1\" font-size=\"12\" font-weight=\"700\">Neden Toplam Değişmez?</text><text x=\"579\" y=\"110\" text-anchor=\"middle\" fill=\"#334155\" font-size=\"10.2\">Entalpi (H) bir HAL FONKSİYONUDUR;</text><text x=\"579\" y=\"128\" text-anchor=\"middle\" fill=\"#334155\" font-size=\"10.2\">izlenen yola veya basamak sayısına değil,</text><text x=\"579\" y=\"146\" text-anchor=\"middle\" fill=\"#0369a1\" font-size=\"10.2\" font-weight=\"700\">yalnız ilk ve son duruma bağlıdır.</text><rect x=\"444\" y=\"168\" width=\"270\" height=\"96\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0284c7\"/><text x=\"579\" y=\"194\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.5\" font-weight=\"700\">Delta_H_net = Delta_H1 + Delta_H2</text><text x=\"579\" y=\"218\" text-anchor=\"middle\" fill=\"#dc2626\" font-size=\"11\" font-weight=\"700\">-393,5 kJ = (-110,5) + (-283,0)</text><text x=\"579\" y=\"242\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"9.8\">(Germain Henri Hess, 1840)</text></svg>"
+  },
+  {
+   "baslik": "Kimyasal Tepkimelerde Hız: Çarpışma Teorisi ve Etkin Çarpışma",
+   "metin": [
+    "Bir kap içerisinde bulunan milyarlarca gaz molekülü her saniye birbiriyle çarpışır; ancak bu çarpışmaların çok küçük bir kısmı kimyasal tepkimeyle sonuçlanır. Max Trautz ve William Lewis tarafından geliştirilen {koyu:Çarpışma Teorisine} göre, tepkimeye giren taneciklerin ürüne dönüşebilmesi için yaptıkları çarpışmaya {koyu:etkin (başarılı) çarpışma} denir. Bir çarpışmanın etkin çarpışma olabilmesi için {koyu:iki temel şartın aynı anda} sağlanması zorunludur:\n\n1) {koyu:Uygun Geometrik Doğrultu ve Yönelim}: Çarpışan atom veya moleküller, eski bağların kopup yeni bağların kurulabileceği doğru açı, doğrultu ve merkez-merkez yöneliminde çarpışmalıdır.\n2) {koyu:Yeterli Kinetik Enerji (Eşik / Aktifleşme Enerjisi)}: Çarpışan taneciklerin bağların kırılmasını sağlayacak minimum bir toplam kinetik enerjiye sahip olması gerekir. Bir tepkimenin başlaması için gereken bu en düşük enerji sınırına {koyu:Aktifleşme Enerjisi (veya Eşik Enerjisi, E_a)} adı verilir."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Aktifleşme Enerjisi (E_a) Hakkında 3 Değişmez Gerçek",
+    "metin": "1) Aktifleşme enerjisi (E_a) tepkime endotermik de olsa ekzotermik de olsa DAİMA POZİTİF bir sayıdır (E_a > 0), asla negatif olamaz!\n2) E_a değeri sıcaklıkla veya madde miktarıyla DEĞİŞMEZ; yalnız KATALİZÖR kullanıldığında düşer.\n3) E_a ne kadar küçükse, o enerji engelini aşan tanecik sayısı o kadar fazla olur ve tepkime o kadar HIZLI gerçekleşir!"
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 310\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect x=\"10\" y=\"10\" width=\"740\" height=\"290\" rx=\"12\" fill=\"#f0fdfa\" stroke=\"#0d9488\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"10\" width=\"740\" height=\"32\" rx=\"12\" fill=\"#0d9488\"/><rect x=\"10\" y=\"28\" width=\"740\" height=\"14\" fill=\"#0d9488\"/><text x=\"380.0\" y=\"31\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"13\" font-weight=\"700\">Kimyasal Tepkimelerde Hız: Çarpışma Teorisi ve Etkin Çarpışma Şartları</text><rect x=\"28\" y=\"58\" width=\"224\" height=\"225\" rx=\"10\" fill=\"#ccfbf1\" stroke=\"#0d9488\" stroke-width=\"1.6\"/><rect x=\"28\" y=\"58\" width=\"224\" height=\"28\" rx=\"10\" fill=\"#0d9488\"/><text x=\"140\" y=\"77\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"10.5\" font-weight=\"700\">1. Şart: Uygun Geometrik Doğrultu</text><text x=\"140\" y=\"118\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">Tanecikler bağların kopup yeni</text><text x=\"140\" y=\"138\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">bağların oluşabileceği doğru</text><text x=\"140\" y=\"158\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">açı ve doğrultuda çarpışmalıdır.</text><text x=\"140\" y=\"188\" text-anchor=\"middle\" fill=\"#0d9488\" font-size=\"10.2\" font-weight=\"700\">(Merkez-merkez uygun yönelim)</text><rect x=\"268\" y=\"58\" width=\"224\" height=\"225\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.6\"/><rect x=\"268\" y=\"58\" width=\"224\" height=\"28\" rx=\"10\" fill=\"#d97706\"/><text x=\"380\" y=\"77\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"10.5\" font-weight=\"700\">2. Şart: Yeterli Kinetik Enerji (E_a)</text><text x=\"380\" y=\"118\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">Çarpışan taneciklerin toplam</text><text x=\"380\" y=\"138\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">kinetik enerjisi en az Eşik Enerjisi</text><text x=\"380\" y=\"158\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">(Aktifleşme Enerjisi, E_a) kadar</text><text x=\"380\" y=\"188\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"10.2\" font-weight=\"700\">olmalıdır (E_a daima POZİTİFTİR!).</text><rect x=\"508\" y=\"58\" width=\"224\" height=\"225\" rx=\"10\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"1.6\"/><rect x=\"508\" y=\"58\" width=\"224\" height=\"28\" rx=\"10\" fill=\"#7c3aed\"/><text x=\"620\" y=\"77\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"10.5\" font-weight=\"700\">Sonuç: Aktifleşmiş Kompleks</text><text x=\"620\" y=\"118\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">İki şartı sağlayan ETKİN ÇARPIŞMA</text><text x=\"620\" y=\"138\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">sonucunda yüksek enerjili ve</text><text x=\"620\" y=\"158\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">kararsız ara durum olan</text><text x=\"620\" y=\"188\" text-anchor=\"middle\" fill=\"#7c3aed\" font-size=\"10.2\" font-weight=\"700\">Aktifleşmiş Kompleks oluşur.</text></svg>"
+  },
+  {
+   "baslik": "Aktifleşmiş Kompleks (Geçiş Hâli) Kavramı",
+   "metin": [
+    "Uygun geometride ve yeterli kinetik enerjiyle (E >= E_a) çarpışan tanecikler, kinetik enerjilerini potansiyel enerjiye dönüştürerek atomlar arasındaki eski bağların zayıflamaya ve yeni bağların oluşmaya başladığı en yüksek enerjili ara duruma ulaşırlar. Potansiyel enerjinin maksimum olduğu bu kararsız ara duruma {koyu:Aktifleşmiş Kompleks (veya Geçiş Hâli)} denir.\n\nAktifleşmiş kompleks çok kısa ömürlü ve {koyu:yüksek enerjili (kararsız)} bir yapı olduğu için doğrudan izole edilemez; ya ileri yönde devam ederek {koyu:ürünlere} dönüşür ya da çarpışma başarısız olursa geri dönerek tekrar {koyu:girenlere} ayrışır."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Örnek: H2 + I2 -> 2 HI Tepkimesinde Aktifleşmiş Kompleks",
+    "metin": "H2 ve I2 molekülleri uygun doğrultuda çarpıştığında H-H ve I-I bağları gevşerken H...I ara bağlarının kurulduğu dörtlü [H2I2]* geçiş yapısı aktifleşmiş komplekstir."
+   }
+  },
+  {
+   "baslik": "Potansiyel Enerji (PE) — Tepkime Koordinatı Grafikleri (E_ai ve E_ag)",
+   "metin": [
+    "Bir kimyasal tepkime sürecinde potansiyel enerjinin değişimini gösteren grafikte üç kritik büyüklük okunur:\n1) {koyu:İleri Aktifleşme Enerjisi (E_ai)}: Tepkimeye girenlerin başlangıç enerjisi ile tepe noktası (aktifleşmiş kompleks) arasındaki enerji farkıdır: {koyu:E_ai = PE(Aktifleşmiş Kompleks) - PE(Girenler)}.\n2) {koyu:Geri Aktifleşme Enerjisi (E_ag)}: Tepkime ters yönde düşünülerek ürünlerin enerjisi ile tepe noktası arasındaki enerji farkıdır: {koyu:E_ag = PE(Aktifleşmiş Kompleks) - PE(Ürünler)}.\n\n3) {koyu:Tepkime Entalpisi (Delta_H)}: İleri aktifleşme enerjisinden geri aktifleşme enerjisinin çıkarılmasıyla (veya ürünler eksi girenler ile) bulunur:\n{koyu:Delta_H = E_ai - E_ag = PE(Ürünler) - PE(Girenler)}.\n• {koyu:Endotermik Tepkimelerde (Delta_H > 0)}: Ürünlerin enerjisi girenlerden yüksektir; bu nedenle {koyu:E_ai > E_ag} olur.\n• {koyu:Ekzotermik Tepkimelerde (Delta_H < 0)}: Ürünlerin enerjisi girenlerden düşüktür; bu nedenle {koyu:E_ai < E_ag} olur."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Delta_H = E_ai - E_ag Formülünde Sıralamayı Karıştırmayın!",
+    "metin": "Oluşum entalpilerinde 'Ürünler - Girenler' yaparken, aktifleşme enerjilerinde (tıpkı bağ enerjilerindeki Kırılan - Oluşan gibi) 'İLERİ eksi GERİ' yani Delta_H = E_ai - E_ag işlemi yapılır!"
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 310\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect x=\"10\" y=\"10\" width=\"740\" height=\"290\" rx=\"12\" fill=\"#f0fdf4\" stroke=\"#15803d\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"10\" width=\"740\" height=\"32\" rx=\"12\" fill=\"#15803d\"/><rect x=\"10\" y=\"28\" width=\"740\" height=\"14\" fill=\"#15803d\"/><text x=\"380.0\" y=\"31\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"13\" font-weight=\"700\">Potansiyel Enerji Grafiği: İleri/Geri Aktifleşme Enerjisi ve Delta_H</text><rect x=\"30\" y=\"55\" width=\"350\" height=\"230\" rx=\"10\" fill=\"#fff\" stroke=\"#86efac\" stroke-width=\"1.5\"/><line x1=\"65\" y1=\"245\" x2=\"350\" y2=\"245\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"65\" y1=\"75\" x2=\"65\" y2=\"245\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M65,165 L115,165 Q185,60 245,215 L325,215\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"3\"/><circle cx=\"182\" cy=\"112\" r=\"5\" fill=\"#dc2626\"/><text x=\"182\" y=\"98\" text-anchor=\"middle\" fill=\"#dc2626\" font-size=\"9.5\" font-weight=\"700\">Aktifleşmiş Kompleks (Tepe)</text><text x=\"90\" y=\"156\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"9.5\" font-weight=\"700\">Girenler</text><text x=\"295\" y=\"206\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"9.5\" font-weight=\"700\">Ürünler</text><line x1=\"150\" y1=\"112\" x2=\"150\" y2=\"165\" stroke=\"#0284c7\" stroke-width=\"2\" stroke-dasharray=\"3,2\"/><text x=\"130\" y=\"142\" fill=\"#0284c7\" font-size=\"9.5\" font-weight=\"700\">E_ai</text><line x1=\"215\" y1=\"112\" x2=\"215\" y2=\"215\" stroke=\"#7c3aed\" stroke-width=\"2\" stroke-dasharray=\"3,2\"/><text x=\"235\" y=\"165\" fill=\"#7c3aed\" font-size=\"9.5\" font-weight=\"700\">E_ag</text><rect x=\"398\" y=\"55\" width=\"332\" height=\"230\" rx=\"10\" fill=\"#fff\" stroke=\"#86efac\" stroke-width=\"1.5\"/><text x=\"564\" y=\"78\" text-anchor=\"middle\" fill=\"#166534\" font-size=\"12\" font-weight=\"700\">PE Grafiği Temel Bağıntıları</text><rect x=\"412\" y=\"92\" width=\"304\" height=\"38\" rx=\"6\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/><text x=\"422\" y=\"108\" fill=\"#15803d\" font-size=\"10.2\" font-weight=\"700\">1) E_ai = PE(Tepe) - PE(Girenler)</text><text x=\"422\" y=\"123\" fill=\"#334155\" font-size=\"9.5\">İleri aktifleşme enerjisi (Daima E_ai > 0)</text><rect x=\"412\" y=\"137\" width=\"304\" height=\"38\" rx=\"6\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/><text x=\"422\" y=\"153\" fill=\"#15803d\" font-size=\"10.2\" font-weight=\"700\">2) E_ag = PE(Tepe) - PE(Ürünler)</text><text x=\"422\" y=\"168\" fill=\"#334155\" font-size=\"9.5\">Geri aktifleşme enerjisi (Daima E_ag > 0)</text><rect x=\"412\" y=\"182\" width=\"304\" height=\"38\" rx=\"6\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/><text x=\"422\" y=\"198\" fill=\"#15803d\" font-size=\"10.2\" font-weight=\"700\">3) Delta_H = E_ai - E_ag</text><text x=\"422\" y=\"213\" fill=\"#334155\" font-size=\"9.5\">E_ai < E_ag ise Ekzotermik (Delta_H < 0)</text><rect x=\"412\" y=\"227\" width=\"304\" height=\"38\" rx=\"6\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/><text x=\"422\" y=\"243\" fill=\"#15803d\" font-size=\"10.2\" font-weight=\"700\">4) Delta_H = PE(Ürünler) - PE(Girenler)</text><text x=\"422\" y=\"258\" fill=\"#334155\" font-size=\"9.5\">E_ai > E_ag ise Endotermik (Delta_H > 0)</text></svg>"
+  },
+  {
+   "baslik": "Çok Basamaklı (Mekanizmalı) Tepkimelerin PE Grafikleri",
+   "metin": [
+    "Bazı kimyasal tepkimeler tek adımda değil, birbirini izleyen birden fazla basamakta ({koyu:mekanizmalı}) gerçekleşir. Bir Potansiyel Enerji - Tepkime Koordinatı grafiğinde {koyu:kaç tane tepe noktası (maksimum) varsa, tepkime o kadar basamakta} gerçekleşiyor demektir.\n\nÇok basamaklı tepkimelerde her basamağın kendine ait bir ileri aktifleşme enerjisi (E_ai) vardır. Aktifleşme enerjisi (E_ai) yani {koyu:aşılması gereken enerji engeli en büyük olan basamak, en yavaş basamaktır} ve tepkimenin toplam hızını bu {koyu:en yavaş basamak} belirler. Net tepkimenin entalpisi (Delta_H_net) ise Hess Yasası gereği sadece ilk basamağın girenleri ile son basamağın ürünleri arasındaki farka eşittir."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "baslik": "En Yüksek Tepe Değil, En Yüksek E_ai Engeli!",
+    "metin": "Mekanizmalı bir tepkimede en yavaş basamağı bulurken tepe noktasının sayısal değerine değil, o basamağın kendi başlangıcı ile kendi tepesi arasındaki farka (E_ai değerine) bakılır! E_ai değeri en büyük olan basamak en yavaştır."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Aşağıda iki ara tepkime ve entalpi değişimleri verilmiştir:\n1) N2(g) + O2(g) -> 2 NO(g)   (Delta_H1 = +180 kJ)\n2) 2 NO(g) + O2(g) -> 2 NO2(g)   (Delta_H2 = -114 kJ)\nBuna göre 1/2 N2(g) + O2(g) -> NO2(g) tepkimesinin entalpi değişimi (Delta_H) kaç kJ'dür?",
+   "cevap": "Önce verilen 1. ve 2. denklemleri taraf tarafa toplayalım (2 NO gazları sadeleşir):\nN2(g) + 2 O2(g) -> 2 NO2(g)   => Delta_H_toplam = (+180) + (-114) = +66 kJ.\nBizden istenen net denklem (1/2 N2 + O2 -> NO2), elde ettiğimiz bu denklemin 2'ye bölünmüş (1/2 ile çarpılmış) hâlidir.\nHess Yasası gereği Delta_H değerini de 2'ye böleriz: Delta_H = +66 / 2 = +33 kJ bulunur."
+  },
+  {
+   "soru": "1) C(k) + O2(g) -> CO2(g)   (Delta_H1 = -394 kJ)\n2) H2(g) + 1/2 O2(g) -> H2O(s)   (Delta_H2 = -286 kJ)\n3) CH4(g) + 2 O2(g) -> CO2(g) + 2 H2O(s)   (Delta_H3 = -890 kJ)\nYukarıdaki tepkimelere göre C(k) + 2 H2(g) -> CH4(g) tepkimesinin entalpisi (CH4'ün molar oluşum entalpisi) kaç kJ/mol'dür?",
+   "cevap": "Hedef tepkimede C(k) girenlerde 1 mol: 1. denklem aynen kalır (Delta_H = -394 kJ).\nHedef tepkimede H2(g) girenlerde 2 mol: 2. denklem 2 ile çarpılır (Delta_H = 2 . (-286) = -572 kJ).\nHedef tepkimede CH4(g) ürünlerde 1 mol: 3. denklem ters çevrilir (Delta_H = +890 kJ).\nÜç denklem toplandığında CO2, H2O ve O2'ler sadeleşir:\nDelta_H_net = -394 + (-572) + 890 = -966 + 890 = -76 kJ/mol bulunur."
+  },
+  {
+   "soru": "Bir kimyasal tepkimede girenlerin potansiyel enerjileri toplamı 40 kJ, aktifleşmiş kompleksin potansiyel enerjisi 150 kJ ve ürünlerin potansiyel enerjileri toplamı 90 kJ olarak verilmiştir. Bu tepkimenin a) İleri aktifleşme enerjisini (E_ai), b) Geri aktifleşme enerjisini (E_ag), c) Tepkime entalpisini (Delta_H) bulunuz.",
+   "cevap": "a) E_ai = PE(Aktifleşmiş kompleks) - PE(Girenler) = 150 - 40 = 110 kJ.\nb) E_ag = PE(Aktifleşmiş kompleks) - PE(Ürünler) = 150 - 90 = 60 kJ.\nc) Delta_H = E_ai - E_ag = 110 - 60 = +50 kJ (Endotermik tepkimedir; kontrol: PE(Ürünler) - PE(Girenler) = 90 - 40 = +50 kJ)."
+  },
+  {
+   "soru": "İleri aktifleşme enerjisi (E_ai) 85 kJ ve tepkime entalpisi (Delta_H) -120 kJ olan ekzotermik bir tepkimenin geri aktifleşme enerjisi (E_ag) kaç kJ'dür?",
+   "cevap": "Delta_H = E_ai - E_ag bağıntısında verilenleri işaretleriyle yerine koyalım:\n-120 = 85 - E_ag => E_ag = 85 + 120 = 205 kJ bulunur."
+  },
+  {
+   "soru": "Üç basamakta gerçekleşen bir tepkimenin basamaklarının ileri aktifleşme enerjileri sırasıyla E_ai1 = 45 kJ, E_ai2 = 115 kJ ve E_ai3 = 70 kJ'dür. Bu basamakların hızlarını büyükten küçüğe sıralayınız ve tepkimenin hızını hangi basamağın belirlediğini açıklayınız.",
+   "cevap": "Bir tepkimenin ileri aktifleşme enerjisi (E_ai) ne kadar küçükse aşılması gereken enerji engeli o kadar düşüktür ve tepkime o kadar hızlıdır.\nAktifleşme enerjileri sıralaması: E_ai2 (115) > E_ai3 (70) > E_ai1 (45).\nHızları sıralaması (ters orantılı): 1. Basamak > 3. Basamak > 2. Basamak.\nNet tepkimenin hızını en yavaş olan 2. basamak (E_ai2 = 115 kJ olan basamak) belirler."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "soru": "X2(g) + 2 Y2(g) -> 2 XY2(g) tepkimesinin entalpi değişimi Delta_H = -160 kJ'dür. Buna göre XY2(g) -> 1/2 X2(g) + Y2(g) tepkimesinin aynı koşullardaki entalpi değişimi kaç kJ'dür?",
+   "secenekler": [
+    "-160",
+    "-80",
+    "+80",
+    "+160",
+    "+320"
+   ],
+   "dogru": 2,
+   "aciklama": "İlk tepkime ters çevrilmiş (Delta_H işareti +160 kJ olur) ve tüm katsayıları 2'ye bölünmüştür (+160 / 2 = +80 kJ).",
+   "tur": "coktan"
+  },
+  {
+   "soru": "Çarpışma teorisi ve aktifleşme enerjisi (E_a) ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "secenekler": [
+    "Her çarpışma kimyasal tepkimeyle sonuçlanmaz; yalnız etkin çarpışmalar ürün oluşturur.",
+    "Etkin çarpışma için uygun geometri ve yeterli kinetik enerji şarttır.",
+    "Ekzotermik tepkimelerin ileri aktifleşme enerjisi (E_ai) negatif işaretlidir.",
+    "Potansiyel enerjinin en yüksek olduğu kararsız ara duruma aktifleşmiş kompleks denir.",
+    "Delta_H = E_ai - E_ag bağıntısı ile tepkime entalpisi hesaplanır."
+   ],
+   "dogru": 2,
+   "aciklama": "Aktifleşme enerjisi (E_ai ve E_ag) tepkime ister endotermik ister ekzotermik olsun DAİMA pozitif işaretlidir; asla negatif değer alamaz.",
+   "tur": "coktan"
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "Hess Yasası'na göre bir kimyasal tepkimenin entalpi değişimi (Delta_H), tepkimenin izlediği yola ve ara basamak sayısına bağlı değildir.",
+     "dogru": true,
+     "aciklama": "Entalpi bir hâl fonksiyonu olduğu için yalnız girenlerin ve ürünlerin ilk ve son durumuna bağlıdır."
+    },
+    {
+     "metin": "İleri aktifleşme enerjisi geri aktifleşme enerjisinden büyük olan (E_ai > E_ag) bir tepkime ekzotermiktir.",
+     "dogru": false,
+     "aciklama": "Delta_H = E_ai - E_ag bağıntısına göre E_ai > E_ag ise Delta_H > 0 olur ve tepkime endotermiktir."
+    }
+   ]
+  },
+  {
+   "soru": "Termokimya ve kimyasal hız kavramlarını doğru açıklamalarıyla eşleştiriniz.",
+   "aciklama": "Hess yasası ve çarpışma teorisi enerji ile tepkime hızı arasındaki temel köprüdür.",
+   "tur": "eslestir",
+   "ciftler": [
+    [
+     "Hess Yasası",
+     "Ara basamaklar toplandığında net tepkime entalpisinin cebirsel toplam olması"
+    ],
+    [
+     "Etkin Çarpışma",
+     "Uygun geometride ve yeterli kinetik enerjiyle gerçekleşip ürün oluşturan çarpışma"
+    ],
+    [
+     "Aktifleşmiş Kompleks",
+     "Potansiyel enerji grafiğinin tepe noktasındaki en yüksek enerjili kararsız ara durum"
+    ],
+    [
+     "E_ai - E_ag",
+     "İleri ve geri aktifleşme enerjileri farkından bulunan tepkime entalpisi (Delta_H)"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+   "cumleler": [
+    {
+     "metin": "Bir kimyasal tepkimenin başlaması için çarpışan taneciklerin sahip olması gereken minimum kinetik enerjiye eşik enerjisi veya ___ enerjisi denir.",
+     "cevap": "aktifleşme"
+    },
+    {
+     "metin": "Mekanizmalı (çok basamaklı) bir tepkimede toplam tepkime hızını, ileri aktifleşme enerjisi (E_ai) en büyük olan yani en ___ gerçekleşen basamak belirler.",
+     "cevap": "yavaş"
+    }
+   ],
+   "fazla": [
+    "kavram",
+    "ilke"
+   ]
+  },
+  {
+   "soru": "Oda sıcaklığında ağzı açık bir kapta bulunan kömür (C) veya kâğıt, havadaki oksijen gazıyla (O2) sürekli temas hâlinde olduğu ve yanma tepkimesi ekzotermik olduğu hâlde neden kendiliğinden tutuşup yanmaz? Çarpışma teorisi ve aktifleşme enerjisi (E_a) kavramlarını kullanarak açıklayınız.",
+   "ipucu": "Oda sıcaklığındaki çarpışmaların enerjisini yanma tepkimesinin yüksek aktifleşme enerjisi (E_a) engeliyle karşılaştırınız.",
+   "tur": "ogretici",
+   "cevap": "Kömür ve kâğıdın oksijenle yanma tepkimesi ekzotermiktir (Delta_H < 0); ancak bu tepkimenin ileri aktifleşme enerjisi (eşik enerjisi, E_a) oldukça yüksektir. Oda sıcaklığında (25 °C) havadaki oksijen moleküllerinin ortalama kinetik enerjisi bu yüksek aktifleşme enerjisi engelini aşmaya yetmez ve yapılan çarpışmalar etkin çarpışma olamaz. Dışarıdan bir kibrit veya kıvılcımla başlangıçtaki taneciklere eşik enerjisini (E_a) aşacak enerji verildiğinde etkin çarpışmalar başlar; ardından ekzotermik tepkimenin açığa çıkardığı ısı diğer taneciklerin de E_a engelini aşmasını sağlayarak yanmayı kendiliğinden devam ettirir.",
+   "ipuclari": [
+    "Konunun temel kavramlarını ve tanımlarını hatırlayınız.",
+    "Sebep-sonuç ilişkisini kurarak değerlendiriniz."
+   ]
+  }
+ ]
+}
