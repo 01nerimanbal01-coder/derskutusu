@@ -275,6 +275,10 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
 .fb-alan { display: grid; justify-items: start; }
 .izin { background: var(--yuzey); border: 1px solid var(--cizgi); border-radius: var(--kose); padding: 24px; max-width: 520px; width: 100%; box-shadow: var(--golge); }
 .izin p { color: var(--soluk); margin: 0 0 16px; font-size: 15px; }
+/* Reklam izni penceresi (ortak.js): sol altta, kalem düğmesini (sağ alt, 50 px) ve kayan şeridi kapatmaz */
+.reklam-izin { position: fixed; left: 16px; bottom: 16px; z-index: 50; width: min(520px, calc(100% - 102px)); box-shadow: var(--golge-buyuk); }
+.reklam-izin h2 { font-size: 17px; margin: 0 0 8px; }
+@media print { .reklam-izin { display: none; } }
 .fb-alan iframe { border: 0; width: 100%; max-width: 500px; height: 600px; border-radius: 14px; background: #fff; }
 
 /* Hakkımızda ve iletişim */
