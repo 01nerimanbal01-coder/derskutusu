@@ -106,12 +106,189 @@ def rgb(hexrenk):
     return tuple(int(hexrenk[i:i + 2], 16) for i in (0, 2, 4))
 
 
-def sar(metin, f, genislik):
+SUP_MAP = str.maketrans('⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿˣʸ', '0123456789+-=()nxy')
+SUB_MAP = str.maketrans('₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ₐₑₒₓ', '0123456789+-=()aeox')
+_SUP_RE = re.compile(r'[⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿˣʸ]+')
+_SUB_RE = re.compile(r'[₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ₐₑₒₓ]+')
+
+
+def metin_hazirla(metin):
+    """Karekök içi ve çarpım/eşitlik içeren matematik ifadelerinin satır ortasında bölünmesini önler."""
+    # √(...) içindeki boşlukları bölünmez boşluk (\u00a0) yap
+    def _kok_ic(m):
+        return '√(' + m.group(1).replace(' ', '\u00a0') + ')'
+    s = re.sub(r'√\(([^)]+)\)', _kok_ic, metin)
+    # · 10^ veya = √ veya a^(-n) = 1 / a^n gibi ifadeleri birbirine bağla
+    s = re.sub(r'([^\t\n\r ]+)\s+·\s+(10\^[^\t\n\r ,.;:)]+)', lambda m: f'{m.group(1)}\u00a0·\u00a0{m.group(2)}', s)
+    s = re.sub(r'(√[^\t\n\r ]+)\s*=\s*(√[^\t\n\r ]+)\s*=\s*([^\t\n\r ,.;:]+)', lambda m: f'{m.group(1)}\u00a0=\u00a0{m.group(2)}\u00a0=\u00a0{m.group(3)}', s)
+    s = re.sub(r'(a\^\(-n\))\s*=\s*(1)\s*/\s*(a\^n)', lambda m: f'{m.group(1)}\u00a0=\u00a01\u00a0/\u00a0{m.group(3)}', s)
+    return s
+
+
+def _normalize_sup_sub(s):
+    s = _SUP_RE.sub(lambda m: '^(' + m.group(0).translate(SUP_MAP) + ')', s)
+    s = _SUB_RE.sub(lambda m: '_(' + m.group(0).translate(SUB_MAP) + ')', s)
+    return s
+
+
+def _parcala_ic(s):
+    """Üs (^), alt indis (_) ve normal metin parçalarını ayrıştırır."""
+    dugumler = []
+    i, n = 0, len(s)
+    buf = []
+    while i < n:
+        ch = s[i]
+        if ch in ('^', '_') and i + 1 < n:
+            if buf:
+                dugumler.append(('text', ''.join(buf)))
+                buf = []
+            tip = 'sup' if ch == '^' else 'sub'
+            if s[i + 1] == '(':
+                kapanis = s.find(')', i + 2)
+                if kapanis != -1:
+                    ic = s[i + 2:kapanis].replace('-', '−')
+                    dugumler.append((tip, ic))
+                    i = kapanis + 1
+                    continue
+            m = re.match(r'[0-9A-Za-z+-]+', s[i + 1:])
+            if m:
+                ic = m.group(0).replace('-', '−')
+                dugumler.append((tip, ic))
+                i += 1 + len(m.group(0))
+                continue
+        buf.append(ch)
+        i += 1
+    if buf:
+        dugumler.append(('text', ''.join(buf)))
+    return dugumler
+
+
+def parcala(soz):
+    """Bir sözcüğü/ifadeyi ('text', ...), ('sup', ...), ('sub', ...), ('sqrt', [...]) düğümlerine ayırır."""
+    s = _normalize_sup_sub(soz.replace('\u00a0', ' '))
+    dugumler = []
+    i, n = 0, len(s)
+    buf = []
+    while i < n:
+        if s[i] == '√':
+            if buf:
+                dugumler.extend(_parcala_ic(''.join(buf)))
+                buf = []
+            if i + 1 < n and s[i + 1] == '(':
+                # Eşleşen parantezi bul
+                derinlik = 0
+                kapanis = -1
+                for j in range(i + 1, n):
+                    if s[j] == '(':
+                        derinlik += 1
+                    elif s[j] == ')':
+                        derinlik -= 1
+                        if derinlik == 0:
+                            kapanis = j
+                            break
+                if kapanis != -1:
+                    ic = s[i + 2:kapanis]
+                    dugumler.append(('sqrt', _parcala_ic(ic)))
+                    i = kapanis + 1
+                    continue
+            m = re.match(r'[0-9A-Za-zπ]+(?:\^\([^)]+\)|\^[0-9A-Za-z+-]+)?', s[i + 1:])
+            if m:
+                ic = m.group(0)
+                dugumler.append(('sqrt', _parcala_ic(ic)))
+                i += 1 + len(ic)
+                continue
+            dugumler.append(('sqrt', []))
+            i += 1
+        else:
+            buf.append(s[i])
+            i += 1
+    if buf:
+        dugumler.extend(_parcala_ic(''.join(buf)))
+    return dugumler
+
+
+def dugum_genislik(dugum, agirlik, boyut):
+    tip, deger = dugum
+    f = font(agirlik, boyut)
+    if tip == 'text':
+        return f.getlength(deger)
+    if tip in ('sup', 'sub'):
+        alt_ag = 600 if agirlik == 500 else agirlik
+        alt_b = round(boyut * 0.60)
+        return font(alt_ag, alt_b).getlength(deger) + round(boyut * 0.03)
+    if tip == 'sqrt':
+        rw = f.getlength('√')
+        if not deger:
+            return round(rw * 0.90) + round(boyut * 0.34)
+        ic_gen = sum(dugum_genislik(d, agirlik, boyut) for d in deger)
+        return round(rw * 0.95) + ic_gen + round(boyut * 0.10)
+    return 0.0
+
+
+def metin_genislik(metin, agirlik, boyut):
+    return sum(dugum_genislik(d, agirlik, boyut) for d in parcala(metin))
+
+
+def metin_ciz(draw, xy, metin, agirlik, boyut, dolgu):
+    x, y = xy
+    f = font(agirlik, boyut)
+    for tip, deger in parcala(metin):
+        if tip == 'text':
+            draw.text((x, y), deger, font=f, fill=dolgu, anchor='ls')
+            x += f.getlength(deger)
+        elif tip == 'sup':
+            alt_ag = 600 if agirlik == 500 else agirlik
+            alt_b = round(boyut * 0.60)
+            af = font(alt_ag, alt_b)
+            draw.text((x + round(boyut * 0.015), y - round(boyut * 0.36)), deger, font=af, fill=dolgu, anchor='ls')
+            x += af.getlength(deger) + round(boyut * 0.03)
+        elif tip == 'sub':
+            alt_ag = 600 if agirlik == 500 else agirlik
+            alt_b = round(boyut * 0.60)
+            af = font(alt_ag, alt_b)
+            draw.text((x + round(boyut * 0.015), y + round(boyut * 0.18)), deger, font=af, fill=dolgu, anchor='ls')
+            x += af.getlength(deger) + round(boyut * 0.03)
+        elif tip == 'sqrt':
+            rw = f.getlength('√')
+            _, y0, _, _ = f.getbbox('√', anchor='ls')
+            kalinlik = max(3, round(boyut * (0.105 if agirlik >= 700 else 0.078)))
+            draw.text((x, y), '√', font=f, fill=dolgu, anchor='ls')
+            bar_x0 = x + round(rw * (0.85 if agirlik >= 700 else 0.81))
+            bar_y0 = y + y0
+            if not deger:
+                bar_x1 = bar_x0 + round(boyut * 0.32)
+                draw.rectangle((bar_x0, bar_y0, bar_x1, bar_y0 + kalinlik), fill=dolgu)
+                x += round(rw * 0.90) + round(boyut * 0.34)
+            else:
+                ic_x = x + round(rw * 0.95)
+                for alt_d in deger:
+                    alt_tip, alt_deg = alt_d
+                    if alt_tip == 'text':
+                        draw.text((ic_x, y), alt_deg, font=f, fill=dolgu, anchor='ls')
+                    elif alt_tip == 'sup':
+                        alt_ag = 600 if agirlik == 500 else agirlik
+                        alt_b = round(boyut * 0.54)
+                        draw.text((ic_x + round(boyut * 0.015), y - round(boyut * 0.26)), alt_deg, font=font(alt_ag, alt_b), fill=dolgu, anchor='ls')
+                    elif alt_tip == 'sub':
+                        alt_ag = 600 if agirlik == 500 else agirlik
+                        alt_b = round(boyut * 0.60)
+                        draw.text((ic_x + round(boyut * 0.015), y + round(boyut * 0.18)), alt_deg, font=font(alt_ag, alt_b), fill=dolgu, anchor='ls')
+                    ic_x += dugum_genislik(alt_d, agirlik, boyut)
+                bar_x1 = ic_x + round(boyut * 0.07)
+                draw.rectangle((bar_x0, bar_y0, bar_x1, bar_y0 + kalinlik), fill=dolgu)
+                x = bar_x1 + round(boyut * 0.03)
+    return x - xy[0]
+
+
+def sar(metin, agirlik, boyut, genislik):
     """Sözcükleri satırlara böler; tek sözcük bile sığmıyorsa olduğu gibi bırakır."""
+    hazir = metin_hazirla(metin)
     satirlar, satir = [], ''
-    for soz in metin.split():
+    for soz in re.split(r'[ \t\n\r]+', hazir.strip()):
+        if not soz:
+            continue
         deneme = f'{satir} {soz}'.strip()
-        if f.getlength(deneme) <= genislik or not satir:
+        if metin_genislik(deneme, agirlik, boyut) <= genislik or not satir:
             satir = deneme
         else:
             satirlar.append(satir)
@@ -190,26 +367,25 @@ def ciz(v):
     aralikli(d, (KENAR, 292), 'BUNU BİLİYOR MUYDUNUZ?', font(800, 31), '#' + v['renk'], 1.4)
     bb, pb = 68, 37
     while True:
-        bf, pf = font(800, bb), font(500, pb)
-        baslik = sar(v['baslik'], bf, W - 2 * KENAR)
+        baslik = sar(v['baslik'], 800, bb, W - 2 * KENAR)
         bsatir = round(bb * 1.15)
         psatir = round(pb * 1.36)
         y = 342 + round(bb * 0.70)                    # ilk satırın taban çizgisi
         y_son = y + bsatir * (len(baslik) - 1)
         cizgi_y = y_son + round(bb * 0.53)
         py = cizgi_y + 10 + round(pb * 1.97)
-        paragraflar = [sar(p, pf, W - 2 * KENAR - 20) for p in v['paragraflar']]
+        paragraflar = [sar(p, 500, pb, W - 2 * KENAR - 20) for p in v['paragraflar']]
         satir_sayisi = sum(len(p) for p in paragraflar)
         alt = py + psatir * (satir_sayisi - 1) + round(pb * 0.68) * (len(paragraflar) - 1) + round(pb * 0.3)
         if alt <= ALT_Y - 40 or (bb <= 54 and pb <= 30):
             break
         bb, pb = max(54, bb - 2), max(30, pb - 1)
     for i, satir in enumerate(baslik):
-        d.text((KENAR, y + bsatir * i), satir, font=bf, fill=NAVY, anchor='ls')
+        metin_ciz(d, (KENAR, y + bsatir * i), satir, 800, bb, NAVY)
     d.rounded_rectangle((KENAR, cizgi_y, KENAR + 160, cizgi_y + 10), radius=5, fill=vurgu)
     for p in paragraflar:
         for satir in p:
-            d.text((KENAR, py), satir, font=pf, fill=METIN, anchor='ls')
+            metin_ciz(d, (KENAR, py), satir, 500, pb, METIN)
             py += psatir
         py += round(pb * 0.68)
 
@@ -221,8 +397,18 @@ def ciz(v):
     return im, dict(baslik_boyut=bb, paragraf_boyut=pb, baslik_satir=len(baslik), paragraf_satir=satir_sayisi, alt=alt)
 
 
+_TO_SUP = str.maketrans('0123456789+-=()nxy', '⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿˣʸ')
+
+
+def _metin_us_temizle(s):
+    s = re.sub(r'\^\(([^)]+)\)', lambda m: m.group(1).translate(_TO_SUP), s)
+    s = re.sub(r'\^([0-9nxy+-]+)', lambda m: m.group(1).translate(_TO_SUP), s)
+    return s
+
+
 def gonderi_metni(v):
-    return (f'Bunu biliyor muydunuz? {v["bilgi"].strip()}\n'
+    bilgi = _metin_us_temizle(v["bilgi"].strip())
+    return (f'Bunu biliyor muydunuz? {bilgi}\n'
             'Faydalı bulduysanız arkadaşınızı etiketleyin.\n'
             f'📘 {v["sinif"]}. sınıf {v["ad"]} {v["hafta"]}. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 '
             f'derskutusu.com/ozet/{v["sayfa"]}\n'

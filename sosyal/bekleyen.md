@@ -2,10 +2,10 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 99 gönderi.
+Toplam 284 gönderi.
 
 ## bilgi-7-turkce-7
-Sıra: 2026-11-19 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-turkce-7.png
+Sıra: 2026-11-19 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-turkce-7.png
 
 ```
 Bunu biliyor muydunuz? Görsel okuma yaparken görseldeki renk, sembol ve figürlerin doğrudan anlattığı açık bilginin yanı sıra verilmek istenen örtük mesaj da çözümlenir.
@@ -15,7 +15,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-din-kulturu-7
-Sıra: 2026-11-20 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-din-kulturu-7.png
+Sıra: 2026-11-20 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-din-kulturu-7.png
 
 ```
 Bunu biliyor muydunuz? Bakara suresinin 255. ayeti olan Ayetelkürsi; Yüce Allah’ın birliğini (tevhit), el-Hayy ve el-Kayyum isimlerini, sınırsız ilmini ve mutlak hükümranlığını anlatır.
@@ -25,7 +25,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-fen-bilimleri-7
-Sıra: 2026-11-20 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-fen-bilimleri-7.png
+Sıra: 2026-11-20 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-fen-bilimleri-7.png
 
 ```
 Bunu biliyor muydunuz? Kalıtım biliminin kurucusu Gregor Mendel, bezelyelerle yaptığı çaprazlama deneyleriyle baskın ve çekinik genlerin kuşaktan kuşağa hangi oranlarla aktarıldığını ortaya koymuştur.
@@ -35,7 +35,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-ingilizce-7
-Sıra: 2026-11-20 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-ingilizce-7.png
+Sıra: 2026-11-20 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-ingilizce-7.png
 
 ```
 Bunu biliyor muydunuz? İngilizce yemek tariflerinde hazırlık ve pişirme adımlarını sırayla anlatmak için "First, Second, Then, Next, After that" ve son adımda "Finally" bağlaçları kullanılır.
@@ -45,7 +45,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-inkilap-tarihi-7
-Sıra: 2026-11-20 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-inkilap-tarihi-7.png
+Sıra: 2026-11-20 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-inkilap-tarihi-7.png
 
 ```
 Bunu biliyor muydunuz? 30 Ekim 1918 tarihli Mondros Ateşkes Antlaşması’nın 7. ve 24. maddeleri, İtilaf Devletlerinin Anadolu topraklarını işgal etmesine zemin hazırlamak amacıyla konulmuştur.
@@ -994,1276 +994,1852 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 #derskutusu #temeldinibilgiler #8sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-9-arapca-5` — 9. Sınıf · arapca · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-9-arapca-5.png` (`public/sosyal/bilgi-9-arapca-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/9-arapca-5
-- **Metin:**
-```text
-Arapçada Tekil Zamirler ve Selamlaşma Kalıpları
+## bilgi-9-arapca-4
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-arapca-4.png
 
-Arapçada tekil zamirler ve işaret isimleri kelimenin eril (müzekker) veya dişil (müennes) oluşuna göre uyum sağlar.
+```
+Bunu biliyor muydunuz? Arapçada Elif, Vav ve Yâ med harfleri kendinden önceki fetha, damme ve kesra harekelerini uzatırken; sınıf içi emir fiilleri muhatabın eril veya dişil olmasına göre çekimlenir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Arapça 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-arapca-hafta-4
+#derskutusu #arapça #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-biyoloji-4
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-biyoloji-4.png
+
+```
+Bunu biliyor muydunuz? Bilimsel araştırmalarda nitel gözlem duyu organlarına, nicel gözlem ölçü aletlerine dayanır; çıkarım ise gözlemlerin yorumlanmasıyla elde edilen mantıklı açıklamadır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Biyoloji 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-biyoloji-hafta-4
+#derskutusu #biyoloji #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-cografya-4
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-cografya-4.png
+
+```
+Bunu biliyor muydunuz? Harita çizimlerinde küresellikten kaynaklanan bozulmaları en aza indirmek için Ekvator'da silindirik, Türkiye'nin de bulunduğu orta kuşakta konik, kutuplarda düzlem projeksiyon kullanılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Coğrafya 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-cografya-hafta-4
+#derskutusu #coğrafya #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-din-kulturu-4
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-din-kulturu-4.png
+
+```
+Bunu biliyor muydunuz? İslam düşüncesinde doğru bilginin üç temel kaynağı (esbâb-ı ilim); sağlıklı düşünen selim akıl, beş duyu organımız olan salim duyular ve vahye dayanan sadık haberdir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Din Kültürü ve Ahlak Bilgisi 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-din-kulturu-ve-ahlak-bilgisi-hafta-4
+#derskutusu #dinkültürü #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/9-arapca-5
+## bilgi-9-edebiyat-4
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-edebiyat-4.png
 
-#derskutusu #9sınıf #arapça #konuözeti #dersnotu #meb #tyt
 ```
+Bunu biliyor muydunuz? Şiiri betimleme paragrafına dönüştürürken duyulara seslenen ayrıntılar ve söz sanatları kullanılarak okurun zihninde canlı bir tablo oluşturulur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Türk Dili ve Edebiyatı 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-turk-dili-ve-edebiyati-hafta-4
+#derskutusu #edebiyat #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-9-ingilizce-5` — 9. Sınıf · ingilizce · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-9-ingilizce-5.png` (`public/sosyal/bilgi-9-ingilizce-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/9-ingilizce-5
-- **Metin:**
-```text
-Present Continuous Tense ve Durum Fiilleri
+## bilgi-9-fizik-4
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-fizik-4.png
 
-İngilizcede konuşma anındaki eylemler Present Continuous Tense ile anlatılırken durum fiilleri (State Verbs) -ing eki almaz.
+```
+Bunu biliyor muydunuz? Fizik biliminin teknolojiye dönüştüğü başlıca merkezler arasında ülkemizde TÜBİTAK, TENMAK, TUA ve ASELSAN; dünyada ise CERN, NASA ve ESA yer alır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Fizik 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-fizik-hafta-4
+#derskutusu #fizik #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/9-ingilizce-5
+## bilgi-9-ingilizce-4
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-ingilizce-4.png
 
-#derskutusu #9sınıf #ingilizce #konuözeti #dersnotu #meb #tyt
 ```
+Bunu biliyor muydunuz? İngilizcede geniş zamanla günlük rutinler anlatılırken saatlerde "at", günlerde "on", ay ve mevsimlerde "in" zaman edatı kullanılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf İngilizce 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-ingilizce-hafta-4
+#derskutusu #ingilizce #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-9-kuran-i-kerim-5` — 9. Sınıf · kuran-i-kerim · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-9-kuran-i-kerim-5.png` (`public/sosyal/bilgi-9-kuran-i-kerim-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/9-kuran-i-kerim-5
-- **Metin:**
-```text
-Kur’an Harflerinde Mahreç ve Sıfat Kuralları
+## bilgi-9-kimya-4
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-kimya-4.png
 
-Kur’an-ı Kerim kıraatinde anlam bozulmaması için harflerin beş mahreç bölgesinden, kalın-ince ve peltek sıfatlarına uygun okunması gerekir.
+```
+Bunu biliyor muydunuz? Bohr atom modeli elektronları belirli dairesel yörüngelerde gösterirken, Modern Atom Teorisi elektronların bulunma olasılığının yüksek olduğu üç boyutlu orbitalleri (elektron bulutunu) esas alır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Kimya 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-kimya-hafta-4
+#derskutusu #kimya #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/9-kuran-i-kerim-5
+## bilgi-9-kuran-i-kerim-4
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-kuran-i-kerim-4.png
 
-#derskutusu #9sınıf #kuranıkerim #konuözeti #dersnotu #meb #tyt
+```
+Bunu biliyor muydunuz? İbrahim Suresi 40 ve 41. ayetlerde Hz. İbrahim'in diliyle namazı dosdoğru kılma, neslin salih olması ve hesap gününde anne-baba ile tüm müminlerin bağışlanması için dua edilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Kur’an-ı Kerim 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-kuran-i-kerim-hafta-4
+#derskutusu #kuranıkerim #9sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-9-peygamberimizin-hayati-5` — 9. Sınıf · peygamberimizin-hayati · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-9-peygamberimizin-hayati-5.png` (`public/sosyal/bilgi-9-peygamberimizin-hayati-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/9-peygamberimizin-hayati-5
-- **Metin:**
-```text
-Mekke’de Cahiliye Kültürü ve Toplum Yapısı
+## bilgi-9-matematik-4
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-matematik-4.png
 
-İslam dini Cahiliye toplumundaki asabiyet ve sınıf ayrımını kaldırarak üstünlüğün yalnız takvada olduğunu ilan etmiştir.
+```
+Bunu biliyor muydunuz? Gerçek sayı aralıklarında köşeli parantez [a, b] uç noktaların kümeye dahil olduğunu, normal parantez (a, b) ise uç noktaların dahil olmadığını gösterir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Matematik 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-matematik-hafta-4
+#derskutusu #matematik #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/9-peygamberimizin-hayati-5
+## bilgi-9-peygamberimizin-hayati-4
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-peygamberimizin-hayati-4.png
 
-#derskutusu #9sınıf #peygamberimizinhayatı #konuözeti #dersnotu #meb #tyt
 ```
+Bunu biliyor muydunuz? İslam öncesi Mekke'de Cahiliye kültürünün en belirgin özellikleri; kabile taassubu (asabiyet), kan davaları, putperestlik ve keskin sosyal sınıf ayrımıydı.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Peygamberimizin Hayatı 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-peygamberimizin-hayati-hafta-4
+#derskutusu #peygamberimizinhayatı #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-9-temel-dini-bilgiler-5` — 9. Sınıf · temel-dini-bilgiler · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-9-temel-dini-bilgiler-5.png` (`public/sosyal/bilgi-9-temel-dini-bilgiler-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/9-temel-dini-bilgiler-5
-- **Metin:**
-```text
-Aklî ve Naklî Deliller Işığında İlkeli Yaşamak
+## bilgi-9-tarih-4
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-tarih-4.png
 
-Aklî ve naklî deliller uyum içinde insanı tefekküre, emanet bilincine ve hayatın her alanında ilkeli yaşamaya yöneltir.
+```
+Bunu biliyor muydunuz? Tarih bilimi geçmişteki olayları incelerken birincil ve ikincil kaynakları Tarama, Tasnif, Tahlil, Tenkit ve Terkip (5T) basamaklarıyla süzgeçten geçirir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Tarih 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-tarih-hafta-4
+#derskutusu #tarih #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/9-temel-dini-bilgiler-5
+## bilgi-9-temel-dini-bilgiler-4
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-temel-dini-bilgiler-4.png
 
-#derskutusu #9sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #tyt
 ```
+Bunu biliyor muydunuz? İslam ahlakında ilkeli ve dengeli yaşam (itidal), aşırılık (ifrat) ile gevşeklik ve ihmal (tefrit) arasındaki dosdoğru orta yolu korumaktır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Temel Dinî Bilgiler 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-temel-dini-bilgiler-hafta-4
+#derskutusu #temeldinibilgiler #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-10-arapca-5` — 10. Sınıf · arapca · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-10-arapca-5.png` (`public/sosyal/bilgi-10-arapca-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/10-arapca-5
-- **Metin:**
-```text
-Arapçada Akrabalık İfadeleri ve İsim Tamlaması
+## bilgi-10-biyoloji-4
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-biyoloji-4.png
 
-Arapçada akrabalık ilişkileri muzâf ve muzâfun ileyh uyumuyla kurulan isim tamlaması (el-izâfe) kalıplarıyla ifade edilir.
+```
+Bunu biliyor muydunuz? Fotosentezin ışığa bağımlı evresinde suyun fotoliziyle atmosfere oksijen verilirken, ışıktan bağımsız evrede (stromada) CO2 kullanılarak organik besin sentezlenir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Biyoloji 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-biyoloji-hafta-4
+#derskutusu #biyoloji #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/10-arapca-5
+## bilgi-10-cografya-4
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-cografya-4.png
 
-#derskutusu #10sınıf #arapça #konuözeti #dersnotu #meb #tyt #ayt
+```
+Bunu biliyor muydunuz? Haritalarda mekânsal veriler özelliğine göre üç vektörel yöntemle gösterilir: zirve ve binalar noktasal, akarsu ve yollar çizgisel, göl ve ormanlar alansal olarak aktarılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Coğrafya 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-cografya-hafta-4
+#derskutusu #coğrafya #10sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-10-biyoloji-5` — 10. Sınıf · biyoloji · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-10-biyoloji-5.png` (`public/sosyal/bilgi-10-biyoloji-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/10-biyoloji-5
-- **Metin:**
-```text
-Fotosentez Deneyleri ve Kimyasal Ayıraçlar
+## bilgi-10-edebiyat-4
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-edebiyat-4.png
 
-Fotosentez deneylerinde KOH karbondioksit tutucu, iyot çözeltisi ise nişasta ayracı olarak kullanılarak fotosentez hızı ölçülür.
+```
+Bunu biliyor muydunuz? Şiir dinletisi sunumunda diksiyon, vurgu, tonlama ve beden dili uyumu şiirin duygusunu dinleyiciye aktarırken; isim tamlamaları metnin imge ve anlam dünyasını zenginleştirir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Türk Dili ve Edebiyatı 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-turk-dili-ve-edebiyati-hafta-4
+#derskutusu #edebiyat #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/10-biyoloji-5
+## bilgi-10-fizik-4
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-fizik-4.png
 
-#derskutusu #10sınıf #biyoloji #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? Sabit ivmeli harekette hız-zaman (v-t) grafiğinin eğimi ivmeyi, altındaki alan yer değiştirmeyi verir; hız ve ivme vektörleri aynı yönlüyse cisim hızlanır, zıt yönlüyse yavaşlar.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Fizik 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fizik-hafta-4
+#derskutusu #fizik #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-10-cografya-5` — 10. Sınıf · cografya · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-10-cografya-5.png` (`public/sosyal/bilgi-10-cografya-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/10-cografya-5
-- **Metin:**
-```text
-Coğrafi Bilgi Sistemlerinde Mekânsal Veri Modelleri
+## bilgi-10-kimya-4
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-kimya-4.png
 
-CBS ortamında yeryüzü unsurları nokta, çizgi ve poligon katmanlarıyla sayısallaştırılarak öznitelik tablolarıyla ilişkilendirilir.
+```
+Bunu biliyor muydunuz? Çözünme-çökelme tepkimelerinde çöken katıyı oluşturan iyonlar net iyon denklemini oluştururken, çözeltide suda çözünmüş hâlde kalan iyonlara seyirci iyonlar denir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Kimya 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kimya-hafta-4
+#derskutusu #kimya #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/10-cografya-5
+## bilgi-10-matematik-4
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-matematik-4.png
 
-#derskutusu #10sınıf #coğrafya #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? Bir üçgende aynı kenara ait yükseklik, açıortay ve kenarortay uzunlukları ha ≤ na ≤ Va şeklinde sıralanır; kenarortayların kesim noktası olan ağırlık merkezi (G) kenarortayı 1:2 oranında böler.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Matematik 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-matematik-hafta-4
+#derskutusu #matematik #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-10-din-kulturu-5` — 10. Sınıf · din-kulturu-ve-ahlak-bilgisi · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-10-din-kulturu-5.png` (`public/sosyal/bilgi-10-din-kulturu-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/10-din-kulturu-ve-ahlak-bilgisi-5
-- **Metin:**
-```text
-Allah-Âlem İlişkisinde Yaratma, Ölçü ve Sünnetullah
+## bilgi-10-tarih-4
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-tarih-4.png
 
-Allah (cc) âlemi kusursuz bir ölçü (mizan) ve Sünnetullah adı verilen değişmez evrensel yasalarla yaratıp yönetmektedir.
+```
+Bunu biliyor muydunuz? Türkistan'dan Türkiye'ye uzanan süreçte Türk devlet geleneği İslam kurumlarıyla bütünleşmiş; kurultayın yerini Divan-ı Saltanat, boy ordularının yerini ise gulam ve ikta sistemi almıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Tarih 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-tarih-hafta-4
+#derskutusu #tarih #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/10-din-kulturu-ve-ahlak-bilgisi-5
+## bilgi-10-arapca-4
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-arapca-4.png
 
-#derskutusu #10sınıf #dinkültürü #konuözeti #dersnotu #meb #tyt #ayt
+```
+Bunu biliyor muydunuz? Arapçada isimle başlayan cümlelere isim cümlesi, fiille başlayanlara fiil cümlesi denir; akraba ve meslek tanıtımlarında ismin sonuna bitişen muttasıl zamirler kullanılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Arapça 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-arapca-hafta-4
+#derskutusu #arapça #10sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-10-edebiyat-5` — 10. Sınıf · turk-dili-ve-edebiyati · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-10-edebiyat-5.png` (`public/sosyal/bilgi-10-edebiyat-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/10-turk-dili-ve-edebiyati-5
-- **Metin:**
-```text
-Şiir Dinletisi Hazırlama, Vurgu ve Sahne Duruşu
+## bilgi-10-din-kulturu-4
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-din-kulturu-4.png
 
-Başarılı bir şiir dinletisinde doğru vurgu, tonlama, durak ve nefes kontrolü sahne duruşuyla bütünleştirilerek sunulur.
+```
+Bunu biliyor muydunuz? Kâinattaki varlık ve olaylar birer kevnî ayettir; Yüce Allah'ın evrene koyduğu fiziksel, biyolojik ve toplumsal yasalara ise Sünnetullah denir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Din Kültürü ve Ahlak Bilgisi 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-din-kulturu-ve-ahlak-bilgisi-hafta-4
+#derskutusu #dinkültürü #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/10-turk-dili-ve-edebiyati-5
+## bilgi-10-felsefe-4
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-felsefe-4.png
 
-#derskutusu #10sınıf #edebiyat #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? Felsefe; bilim, sanat ve din ile sürekli etkileşim içindedir ancak varlığı deneyle parçalara ayırmadan, bütüncül ve akılcı biçimde sorgulamasıyla ayrılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Felsefe 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-felsefe-hafta-4
+#derskutusu #felsefe #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-10-felsefe-5` — 10. Sınıf · felsefe · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-10-felsefe-5.png` (`public/sosyal/bilgi-10-felsefe-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/10-felsefe-5
-- **Metin:**
-```text
-Felsefenin Bireysel ve Toplumsal Hayattaki İşlevleri
+## bilgi-10-fikih-4
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-fikih-4.png
 
-Felsefe bireyde eleştirel ve özgür düşünceyi geliştirirken toplumda demokrasi, hoşgörü ve insan hakları bilincini güçlendirir.
+```
+Bunu biliyor muydunuz? Fıkıh ilminin temel amacı din, can, akıl, nesil ve mal emniyetini (zarûriyyât-ı hamse) korumak; azîmet ve ruhsat hükümleriyle kulun hayatını kolaylaştırmaktır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Fıkıh 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fikih-hafta-4
+#derskutusu #fıkıh #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/10-felsefe-5
+## bilgi-10-hadis-4
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-hadis-4.png
 
-#derskutusu #10sınıf #felsefe #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? Hz. Peygamber'in Sünneti, Kur'an-ı Kerim'deki hükümleri pekiştirir (te'kid), kapalı ayetleri açıklar (beyân) ve yeni meselelerde hüküm koyar (teşrî).
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Hadis 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-hadis-hafta-4
+#derskutusu #hadis #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-10-fikih-5` — 10. Sınıf · fikih · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-10-fikih-5.png` (`public/sosyal/bilgi-10-fikih-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/10-fikih-5
-- **Metin:**
-```text
-İslam Hukukunun Tarihsel Dönemleri ve Fıkıh Ekolleri
+## bilgi-10-ingilizce-4
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-ingilizce-4.png
 
-İslam hukuku vahiy döneminden itibaren içtihat, Ehl-i Hadis ve Ehl-i Re’y ekolleriyle gelişerek fıkıh mezheplerini oluşturmuştur.
+```
+Bunu biliyor muydunuz? İngilizcede genel alışkanlıklar ve rutinler Simple Present Tense ile, konuşma anında devam eden eylemler ise Present Continuous Tense ile ifade edilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf İngilizce 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-ingilizce-hafta-4
+#derskutusu #ingilizce #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/10-fikih-5
+## bilgi-10-kuran-i-kerim-4
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-kuran-i-kerim-4.png
 
-#derskutusu #10sınıf #fıkıh #konuözeti #dersnotu #meb #tyt #ayt
+```
+Bunu biliyor muydunuz? Tâhâ Suresi 25–28. ayetlerdeki "Rabbişrahlî" duası; gönül ferahlığı, işlerin kolaylaşması ve doğru ifade gücü için okunan peygamber duasıdır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Kur’an-ı Kerim 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kuran-i-kerim-hafta-4
+#derskutusu #kuranıkerim #10sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-10-fizik-5` — 10. Sınıf · fizik · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-10-fizik-5.png` (`public/sosyal/bilgi-10-fizik-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/10-fizik-5
-- **Metin:**
-```text
-Sabit İvmeli Harekette Grafik ve Denklemler
+## bilgi-10-peygamberimizin-hayati-4
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-peygamberimizin-hayati-4.png
 
-Sabit ivmeli harekette grafiklerin eğimi türev büyüklüğü, eksenle sınırladığı alan ise hız değişimi ve yer değiştirmeyi verir.
+```
+Bunu biliyor muydunuz? Hz. Peygamber (sav) Taif'te gördüğü eziyete rağmen beddua etmeyip halkın hidayetini dilemiş; Mekke'ye ise güvenlik tedbiri olarak civâr (himaye) uygulamasıyla girmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Peygamberimizin Hayatı 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-peygamberimizin-hayati-hafta-4
+#derskutusu #peygamberimizinhayatı #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/10-fizik-5
+## bilgi-10-siyer-4
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-siyer-4.png
 
-#derskutusu #10sınıf #fizik #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? Hz. Muhammed (sav), peygamberlikten önceki kırk yıllık hayatında Hilfü'l-Fudûl üyeliği ve Kâbe hakemliğiyle güvenilirliğin (el-Emîn) ve adaletin simgesi olmuştur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Siyer 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-siyer-hafta-4
+#derskutusu #siyer #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-10-hadis-5` — 10. Sınıf · hadis · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-10-hadis-5.png` (`public/sosyal/bilgi-10-hadis-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/10-hadis-5
-- **Metin:**
-```text
-Sünnetin Dindeki Yeri ve Kur’an’ı Açıklama İşlevi
+## bilgi-10-temel-dini-bilgiler-4
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-temel-dini-bilgiler-4.png
 
-Sünnet Kur’an-ı Kerim’in kapalı ve özet ayetlerini beyan ederek İslam dininin hükümlerini yaşanabilir hale getirir.
+```
+Bunu biliyor muydunuz? İslam'da dünya ahiretin tarlasıdır; mümin ihlas, takva ve istikamet üzere yaşayarak hem dünyasını imar eder hem de ebedî ahiret hayatına hazırlanır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Temel Dinî Bilgiler 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-temel-dini-bilgiler-hafta-4
+#derskutusu #temeldinibilgiler #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/10-hadis-5
+## bilgi-11-biyoloji-4
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-biyoloji-4.png
 
-#derskutusu #10sınıf #hadis #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? Koleoptil deneylerinde uç kısımdan salgılanan oksin hormonunun ışıktan kaçıp gölge tarafta birikerek asimetrik büyüme ve ışığa yönelme (pozitif fototropizma) sağladığı kanıtlanmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Biyoloji 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-biyoloji-hafta-4
+#derskutusu #biyoloji #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-10-ingilizce-5` — 10. Sınıf · ingilizce · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-10-ingilizce-5.png` (`public/sosyal/bilgi-10-ingilizce-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/10-ingilizce-5
-- **Metin:**
-```text
-Must / Have to ve Kulüp Gelecek Planları
+## bilgi-11-cografya-4
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-cografya-4.png
 
-İngilizcede mustn’t yasak, don’t have to zorunluluk olmayışı anlatırken planlı kulüp projeleri be going to ile ifade edilir.
+```
+Bunu biliyor muydunuz? Coğrafi Bilgi Sistemlerinde (CBS) nokta, çizgi ve alanlardan oluşan nesneler vektör veri modeliyle; uydu görüntüleri ve sıcaklık/yükselti yüzeyleri ise piksel tabanlı raster veri modeliyle analiz edilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Coğrafya 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-cografya-hafta-4
+#derskutusu #coğrafya #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/10-ingilizce-5
+## bilgi-11-fizik-4
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-fizik-4.png
 
-#derskutusu #10sınıf #ingilizce #konuözeti #dersnotu #meb #tyt #ayt
+```
+Bunu biliyor muydunuz? İki boyutta sabit ivmeli harekette (yatay ve eğik atış) yatay hız bileşeni hareket boyunca değişmezken, düşey hız bileşeni yer çekimi ivmesi (g) ile düzgün değişir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Fizik 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-fizik-hafta-4
+#derskutusu #fizik #11sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-10-kimya-5` — 10. Sınıf · kimya · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-10-kimya-5.png` (`public/sosyal/bilgi-10-kimya-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/10-kimya-5
-- **Metin:**
-```text
-Mol Kavramı, Avogadro Sayısı ve Hesaplamalar
+## bilgi-11-kimya-4
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-kimya-4.png
 
-1 mol madde 6,02·10²³ tanecik içerir ve mol sayısı kütle, tanecik sayısı ile gaz hacmi arasındaki dönüşüm köprüsünü kurar.
+```
+Bunu biliyor muydunuz? Kimyasal tepkimelerde bağ kırılması enerji alan (endotermik), bağ oluşumu ise enerji veren (ekzotermik) bir süreçtir; tepkime entalpisi kırılan ve oluşan bağ enerjilerinin farkına eşittir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Kimya 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-kimya-hafta-4
+#derskutusu #kimya #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/10-kimya-5
+## bilgi-11-matematik-4
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-matematik-4.png
 
-#derskutusu #10sınıf #kimya #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? İstatistiksel araştırmalarda iki nicel değişkenin birlikte artması veya azalması (korelasyon), aralarında doğrudan bir neden-sonuç ilişkisi (nedensellik) olduğunu kanıtlamaz.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Matematik 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-matematik-hafta-4
+#derskutusu #matematik #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-10-kuran-i-kerim-5` — 10. Sınıf · kuran-i-kerim · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-10-kuran-i-kerim-5.png` (`public/sosyal/bilgi-10-kuran-i-kerim-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/10-kuran-i-kerim-5
-- **Metin:**
-```text
-Tecvitte Asli Med ve Fer’i Med (Uzatma) Çeşitleri
+## bilgi-11-tarih-4
+Sıra: 2026-10-17 07:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-tarih-4.png
 
-Tecvitte med harflerinden sonra hemze veya sükûn gelmesine göre Muttasıl, Munfasıl, Lâzım, Ârız ve Lîn medleri uygulanır.
+```
+Bunu biliyor muydunuz? Osmanlı Devleti 1683–1789 döneminde Karlofça ile gerileme sürecine girmiş; Kırım ise Küçük Kaynarca, Aynalıkavak ve Yaş (KAY) aşamalarıyla Rusya'ya kaybedilmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Tarih 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-tarih-hafta-4
+#derskutusu #tarih #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/10-kuran-i-kerim-5
+## bilgi-11-akaid-4
+Sıra: 2026-10-17 07:30 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-akaid-4.png
 
-#derskutusu #10sınıf #kuranıkerim #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? Akaid ilminde imanın temel rüknü kalp ile tasdik, dünyevi hükümlerin uygulanması için şartı ise dil ile ikrardır; araştırmaya dayanan tahkikî iman şüpheler karşısında sarsılmaz.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Akaid 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-akaid-hafta-4
+#derskutusu #akaid #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-10-matematik-5` — 10. Sınıf · matematik · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-10-matematik-5.png` (`public/sosyal/bilgi-10-matematik-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/10-matematik-5
-- **Metin:**
-```text
-Üçgende Alan Bağıntıları, Sinüs Formülü ve Benzerlik
+## bilgi-11-din-kulturu-4
+Sıra: 2026-10-17 07:30 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-din-kulturu-4.png
 
-Üçgende alan taban-yükseklik, sinüs teoremi veya iç teğet çember yarıçapıyla hesaplanır; benzer üçgenlerde alanlar oranı k² olur.
+```
+Bunu biliyor muydunuz? İslam'da kader inancı insanı tembelliğe veya sorumluluktan kaçmaya değil, cüz'î iradesiyle tedbir alıp çalışmaya ve ardından Allah'a tevekkül etmeye yöneltir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Din Kültürü ve Ahlak Bilgisi 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-din-kulturu-ve-ahlak-bilgisi-hafta-4
+#derskutusu #dinkültürü #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/10-matematik-5
+## bilgi-11-dinler-tarihi-4
+Sıra: 2026-10-17 07:30 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-dinler-tarihi-4.png
 
-#derskutusu #10sınıf #matematik #konuözeti #dersnotu #meb #tyt #ayt
+```
+Bunu biliyor muydunuz? Dinler tarihi; kutsal metinleri ve arkeolojik bulguları inceler; Bîrûnî, İbn Hazm ve Şehristânî yazdıkları eserlerle dünyada karşılaştırmalı dinler tarihinin öncüsü olmuştur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Dinler Tarihi 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-dinler-tarihi-hafta-4
+#derskutusu #dinlertarihi #11sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-10-peygamberimizin-hayati-5` — 10. Sınıf · peygamberimizin-hayati · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-10-peygamberimizin-hayati-5.png` (`public/sosyal/bilgi-10-peygamberimizin-hayati-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/10-peygamberimizin-hayati-5
-- **Metin:**
-```text
-Taif Yolculuğu ve Rahmet Peygamberi
+## bilgi-11-edebiyat-4
+Sıra: 2026-10-17 07:30 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-edebiyat-4.png
 
-Hz. Peygamber (sav) Taif’te uğradığı ağır eziyetlere beddua yerine dua ve merhametle karşılık vererek Taif’in kalbini kazanmıştır.
+```
+Bunu biliyor muydunuz? Sözlü iletişim engellerini aşmanın en etkili yolu önyargıdan uzak durmak, etkin dinleme yapmak ve suçlayıcı "sen dili" yerine yapıcı "ben dili" kullanmaktır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Türk Dili ve Edebiyatı 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-turk-dili-ve-edebiyati-hafta-4
+#derskutusu #edebiyat #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/10-peygamberimizin-hayati-5
+## bilgi-11-felsefe-4
+Sıra: 2026-10-17 07:30 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-felsefe-4.png
 
-#derskutusu #10sınıf #peygamberimizinhayatı #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? Çevre felsefesinde bir çevre sorununa yönelik argüman oluşturulurken; insan merkezci yaklaşım insan yararını, canlı ve çevre merkezci yaklaşımlar ise doğanın içsel değerini öncül alır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Felsefe 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-felsefe-hafta-4
+#derskutusu #felsefe #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-10-siyer-5` — 10. Sınıf · siyer · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-10-siyer-5.png` (`public/sosyal/bilgi-10-siyer-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/10-siyer-5
-- **Metin:**
-```text
-Hz. Muhammed’in Risalet Öncesi Örnek Hayatı
+## bilgi-11-hitabet-ve-mesleki-uygulama-4
+Sıra: 2026-10-17 07:30 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-hitabet-ve-mesleki-uygulama-4.png
 
-Hz. Muhammed (sav) risalet öncesinde Hilfü’l-Fudûl üyeliği, dürüst ticareti ve Kâbe hakemliğiyle El-Emin sıfatını kazanmıştır.
+```
+Bunu biliyor muydunuz? Günümüzde din hizmetleri yalnızca cami içi ibadet ve irşatla sınırlı kalmayıp; aile rehberliği, gençlik çalışmaları, dijital yayınlar ve manevi danışmanlık hizmetleriyle toplumun her kesimine ulaşır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Hitabet ve Mesleki Uygulama 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-hitabet-ve-mesleki-uygulama-hafta-4
+#derskutusu #hitabet #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/10-siyer-5
+## bilgi-11-ingilizce-4
+Sıra: 2026-10-17 07:30 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-ingilizce-4.png
 
-#derskutusu #10sınıf #siyer #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? İngilizcede tercihler ifade edilirken "prefer" yapısında iki eylem arasında "to", "would rather" yapısında ise yalın fiil (V1) ve "than" kullanılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf İngilizce 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-ingilizce-hafta-4
+#derskutusu #ingilizce #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-10-tarih-5` — 10. Sınıf · tarih · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-10-tarih-5.png` (`public/sosyal/bilgi-10-tarih-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/10-tarih-5
-- **Metin:**
-```text
-Türkistan’dan Türkiye’ye Devlet ve Ordu Teşkilatı
+## bilgi-11-kuran-i-kerim-4
+Sıra: 2026-10-17 07:30 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-kuran-i-kerim-4.png
 
-Türk-İslam devletlerinde kut ve töre geleneği korunurken Divan teşkilatı, gulam sistemi ve ikta ordusuyla kurumsal dönüşüm sağlanmıştır.
+```
+Bunu biliyor muydunuz? Âl-i İmrân Suresi 8 ve 9. ayetlerdeki "Rabbenâ lâ tüziğ kulûbenâ" duası; hidayete erdikten sonra kalbin hak yoldan kaymaması, ilahi rahmet ve ahiret bilinci için okunan Kur'an duasıdır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Kur’an-ı Kerim 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-kuran-i-kerim-hafta-4
+#derskutusu #kuranıkerim #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/10-tarih-5
+## bilgi-11-mesleki-arapca-4
+Sıra: 2026-10-17 07:30 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-mesleki-arapca-4.png
 
-#derskutusu #10sınıf #tarih #konuözeti #dersnotu #meb #tyt #ayt
+```
+Bunu biliyor muydunuz? Mesleki Arapçada İslam inanç esasları incelenirken erkânü'l-îmân (imanın şartları), el-Esmâü'l-Hüsnâ ve meleklerin görevleriyle ilgili temel kelam terimleri kullanılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Mesleki Arapça 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-mesleki-arapca-hafta-4
+#derskutusu #meslekiarapça #11sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-10-temel-dini-bilgiler-5` — 10. Sınıf · temel-dini-bilgiler · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-10-temel-dini-bilgiler-5.png` (`public/sosyal/bilgi-10-temel-dini-bilgiler-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/10-temel-dini-bilgiler-5
-- **Metin:**
-```text
-İslam’da Dünya-Ahiret Dengesi ve Salih Amel
+## bilgi-11-peygamberimizin-hayati-4
+Sıra: 2026-10-17 07:30 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-peygamberimizin-hayati-4.png
 
-İslam’da dünya ahiretin tarlası kabul edilir; mümin iman, salih amel, ihlas ve helal kazançla dünya-ahiret dengesini kurar.
+```
+Bunu biliyor muydunuz? 621 ve 622 yıllarında gerçekleşen Akabe Biatleri ve Hz. Mus'ab bin Umeyr'in gayretleri sayesinde Yesrib halkı İslam'la tanışmış ve Medine İslam devletinin temelleri atılmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Peygamberimizin Hayatı 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-peygamberimizin-hayati-hafta-4
+#derskutusu #peygamberimizinhayatı #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/10-temel-dini-bilgiler-5
+## bilgi-11-tefsir-4
+Sıra: 2026-10-17 07:30 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-tefsir-4.png
 
-#derskutusu #10sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? Ulûmü'l-Kur'ân (Kur'an İlimleri); Mekkî-Medenî, Esbâb-ı Nüzûl, Muhkem-Müteşâbih ve İ'câzü'l-Kur'ân gibi disiplinlerle ayetlerin doğru anlaşılmasını sağlar.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Tefsir 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-tefsir-hafta-4
+#derskutusu #tefsir #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-11-akaid-5` — 11. Sınıf · akaid · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-11-akaid-5.png` (`public/sosyal/bilgi-11-akaid-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/11-akaid-5
-- **Metin:**
-```text
-İman Bakımından İnsanlar ve Salih Amel
+## bilgi-11-temel-dini-bilgiler-4
+Sıra: 2026-10-17 07:30 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-temel-dini-bilgiler-4.png
 
-İslam akaidinde insanlar iman karşısındaki tutumlarına göre mümin, kâfir, müşrik ve münafık olarak ayrılır; salih amel imanı korur.
+```
+Bunu biliyor muydunuz? İslam'da ilkeli yaşam (istikamet); doğruluk (sıdk), güvenilirlik (emanet), adalet ve ahde vefa ilkelerini hayatın her alanında kararlılıkla uygulamaktır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Temel Dinî Bilgiler 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-temel-dini-bilgiler-hafta-4
+#derskutusu #temeldinibilgiler #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/11-akaid-5
+## bilgi-12-biyoloji-4
+Sıra: 2026-10-17 08:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-biyoloji-4.png
 
-#derskutusu #11sınıf #akaid #konuözeti #dersnotu #meb #tyt #ayt
+```
+Bunu biliyor muydunuz? Gen klonlamasında hedef gen ve plazmit vektör aynı restriksiyon enzimiyle kesilip DNA ligaz ile birleştirilerek rekombinant DNA oluşturulur ve bakterilerde çoğaltılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Biyoloji 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-biyoloji-hafta-4
+#derskutusu #biyoloji #12sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-11-biyoloji-5` — 11. Sınıf · biyoloji · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-11-biyoloji-5.png` (`public/sosyal/bilgi-11-biyoloji-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/11-biyoloji-5
-- **Metin:**
-```text
-Bitkisel Hormonlar ve Bitki Gelişimine Etkileri
+## bilgi-12-cografya-4
+Sıra: 2026-10-17 08:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-cografya-4.png
 
-Bitkisel hormonlardan oksin, giberellin ve sitokinin büyümeyi uyarırken etilen ve absisik asit olgunlaşma ile stres yanıtını yönetir.
+```
+Bunu biliyor muydunuz? Türkiye'de uygulanan GAP, DAP, DOKAP, KOP, ZBK ve YHGP gibi bölgesel kalkınma projeleri, her bölgenin kendi potansiyelini değerlendirerek kalkınmasını ve göçün azalmasını sağlar.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Coğrafya 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-cografya-hafta-4
+#derskutusu #coğrafya #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/11-biyoloji-5
+## bilgi-12-fizik-4
+Sıra: 2026-10-17 08:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-fizik-4.png
 
-#derskutusu #11sınıf #biyoloji #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? Dönen bir sisteme dışarıdan net bir tork etki etmediği sürece açısal momentum (L = I · w) korunur; eylemsizlik momenti (I) azaldığında açısal hız (w) aynı oranda artar.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Fizik 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-fizik-hafta-4
+#derskutusu #fizik #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-11-cografya-5` — 11. Sınıf · cografya · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-11-cografya-5.png` (`public/sosyal/bilgi-11-cografya-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/11-cografya-5
-- **Metin:**
-```text
-Ekosistemde Enerji Akışı ve Madde Döngüsü
+## bilgi-12-kimya-4
+Sıra: 2026-10-17 08:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-kimya-4.png
 
-Ekosistemin sürekliliği besin zincirindeki tek yönlü enerji akışı ile karbon, oksijen, azot ve su döngülerinin dengesine bağlıdır.
+```
+Bunu biliyor muydunuz? Elektroliz devresinde elektrik enerjisi kimyasal enerjiye dönüşür; katotta katyonlar indirgenirken anotta anyonlar yükseltgenir ve toplanan madde miktarı geçen yükle doğru orantılıdır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Kimya 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-kimya-hafta-4
+#derskutusu #kimya #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/11-cografya-5
+## bilgi-12-matematik-4
+Sıra: 2026-10-17 08:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-matematik-4.png
 
-#derskutusu #11sınıf #coğrafya #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? Logaritmik eşitsizliklerde taban 1'den büyükse eşitsizlik yönü korunur, taban 0 ile 1 arasındaysa yön değiştirir ve çözüm kümesi daima logaritmanın tanım kümesiyle kesiştirilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Matematik 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-matematik-hafta-4
+#derskutusu #matematik #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-11-din-kulturu-5` — 11. Sınıf · din-kulturu-ve-ahlak-bilgisi · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-11-din-kulturu-5.png` (`public/sosyal/bilgi-11-din-kulturu-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/11-din-kulturu-ve-ahlak-bilgisi-5
-- **Metin:**
-```text
-Ahiret Hayatının Aşamaları ve Cenaze Hükümleri
+## bilgi-12-din-kulturu-4
+Sıra: 2026-10-17 08:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-din-kulturu-4.png
 
-Ahiret hayatı berzah, kıyamet, ba’s, haşir ve mizan aşamalarından oluşur; cenaze techiz ve namazı ise müminlere farz-ı kifayedir.
+```
+Bunu biliyor muydunuz? İslam medeniyetinde Suffe ile başlayan eğitim geleneği; Beytülhikme, Medrese, Dârülkurrâ, Dârülhadis, Şifahane ve Rasathane gibi kurumlarla dünya bilim tarihine öncülük etmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Din Kültürü ve Ahlak Bilgisi 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-din-kulturu-ve-ahlak-bilgisi-hafta-4
+#derskutusu #dinkültürü #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/11-din-kulturu-ve-ahlak-bilgisi-5
+## bilgi-12-edebiyat-4
+Sıra: 2026-10-17 08:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-edebiyat-4.png
 
-#derskutusu #11sınıf #dinkültürü #konuözeti #dersnotu #meb #tyt #ayt
+```
+Bunu biliyor muydunuz? 1960 sonrası Türk öykücülüğünde modernist teknikler ve çok az sözcükle derin çağrışımlar uyandıran küçürek (minimal) hikâye türü öne çıkmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Türk Dili ve Edebiyatı 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-turk-dili-ve-edebiyati-hafta-4
+#derskutusu #edebiyat #12sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-11-dinler-tarihi-5` — 11. Sınıf · dinler-tarihi · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-11-dinler-tarihi-5.png` (`public/sosyal/bilgi-11-dinler-tarihi-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/11-dinler-tarihi-5
-- **Metin:**
-```text
-Hinduizmde Kutsal Metinler ve Kast Sistemi
+## bilgi-12-ingilizce-4
+Sıra: 2026-10-17 08:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-ingilizce-4.png
 
-Hinduizmde Vedalar kutsal metin kabul edilirken toplumsal yapı kast sistemine, kurtuluş inancı ise karma ve samsara döngüsüne dayanır.
+```
+Bunu biliyor muydunuz? İngilizcede sosyal davetlerde "Would you like to...?" ve "How about...?" yapıları kullanılır; davet reddedilirken kibar bir özür ve açıklama eklenir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf İngilizce 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-ingilizce-hafta-4
+#derskutusu #ingilizce #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/11-dinler-tarihi-5
+## bilgi-12-inkilap-tarihi-4
+Sıra: 2026-10-17 08:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-inkilap-tarihi-4.png
 
-#derskutusu #11sınıf #dinlertarihi #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? Mondros Ateşkes Antlaşması'nın 7 ve 24. maddeleri Osmanlı topraklarını işgale açık hâle getirmiş; İzmir'in işgali ise Millî Mücadele ruhunu ateşlemiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf T.C. İnkılap Tarihi 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-tc-inkilap-tarihi-ve-ataturkculuk-hafta-4
+#derskutusu #inkılaptarihi #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-11-edebiyat-5` — 11. Sınıf · turk-dili-ve-edebiyati · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-11-edebiyat-5.png` (`public/sosyal/bilgi-11-edebiyat-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/11-turk-dili-ve-edebiyati-5
-- **Metin:**
-```text
-Makale, Fıkra Türleri ve Cümlenin Ögeleri
+## bilgi-12-islam-kultur-ve-medeniyeti-4
+Sıra: 2026-10-17 08:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-4.png
 
-Makale kanıtlama amacı taşırken fıkra güncel konuları samimi dille yorumlar; cümlenin ögeleri bulunurken söz öbekleri bölünmez.
+```
+Bunu biliyor muydunuz? İslam kültür ve medeniyeti; Kur'an ve Sünnet temelinde yükselmiş, selim akıl ve farklı kültürlerin sahih örf-âdetleriyle zenginleşerek evrensel bir nitelik kazanmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf İslam Kültür ve Medeniyeti 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-islam-kultur-ve-medeniyeti-hafta-4
+#derskutusu #islamkültürü #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/11-turk-dili-ve-edebiyati-5
+## bilgi-12-kelam-4
+Sıra: 2026-10-17 08:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-kelam-4.png
 
-#derskutusu #11sınıf #edebiyat #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? Kelam ilmi İslam inancını şüphe ve inkârcı akımlara karşı savunmak için doğmuş; Ehl-i Sünnet kelam ekolü İmam Mâtürîdî ve İmam Eş'arî öncülüğünde sistemleşmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Kelam 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-kelam-hafta-4
+#derskutusu #kelam #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-11-felsefe-5` — 11. Sınıf · felsefe · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-11-felsefe-5.png` (`public/sosyal/bilgi-11-felsefe-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/11-felsefe-5
-- **Metin:**
-```text
-İlk Çağ Doğa Filozofları ve Arkhe Problemi
+## bilgi-12-kuran-i-kerim-4
+Sıra: 2026-10-17 08:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-kuran-i-kerim-4.png
 
-İlk Çağ doğa filozofları evrenin ana maddesini (arkhe) doğa içinde aramış; Herakleitos oluşu, Parmenides ise değişmez varlığı savunmuştur.
+```
+Bunu biliyor muydunuz? Kur'an mesajını doğru anlamak için meal ve tefsir birlikte okunmalıdır; Kehf ve Mülk surelerindeki ayetler dünya malına aldanmamayı ve yalnız Allah'a güvenmeyi öğütler.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Kur’an-ı Kerim 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-kuran-i-kerim-hafta-4
+#derskutusu #kuranıkerim #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/11-felsefe-5
+## bilgi-12-mesleki-arapca-4
+Sıra: 2026-10-17 08:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-mesleki-arapca-4.png
 
-#derskutusu #11sınıf #felsefe #konuözeti #dersnotu #meb #tyt #ayt
+```
+Bunu biliyor muydunuz? Mesleki Arapçada tevhit ve ihlas kavramlarının yanı sıra kök harflerinde illet harfi taşıyan misal, ecvef ve nâkıs (mu'tel) fiillerin çekimleri incelenir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Mesleki Arapça 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-mesleki-arapca-hafta-4
+#derskutusu #meslekiarapça #12sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-11-fizik-5` — 11. Sınıf · fizik · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-11-fizik-5.png` (`public/sosyal/bilgi-11-fizik-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/11-fizik-5
-- **Metin:**
-```text
-İtme ve Çizgisel Momentum Değişimi
+## bilgi-12-peygamberimizin-hayati-4
+Sıra: 2026-10-17 08:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-peygamberimizin-hayati-4.png
 
-Cisme uygulanan net itme çizgisel momentum değişimine eşittir; çarpışma süresi uzadıkça etki eden ortalama kuvvet azalır.
+```
+Bunu biliyor muydunuz? İbadetlerde ve günlük hayatta Hz. Peygamber'in Sünnetine ve denge (itidal) ilkesine uymak esastır; dine sonradan eklenen bid'at ve hurafelerden sakınılmalıdır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Peygamberimizin Hayatı 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-peygamberimizin-hayati-hafta-4
+#derskutusu #peygamberimizinhayatı #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/11-fizik-5
+## bilgi-12-temel-dini-bilgiler-4
+Sıra: 2026-10-17 08:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-temel-dini-bilgiler-4.png
 
-#derskutusu #11sınıf #fizik #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? İslam inanç esaslarının (imanın şartlarının) belirlenmesinde tek yetkili kaynak Kur'an-ı Kerim ve sahih Sünnettir; salim akıl ise bu hakikatleri kavrayıp tasdik eder.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Temel Dinî Bilgiler 4. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-temel-dini-bilgiler-hafta-4
+#derskutusu #temeldinibilgiler #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-11-hitabet-ve-mesleki-uygulama-5` — 11. Sınıf · hitabet-ve-mesleki-uygulama · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-11-hitabet-ve-mesleki-uygulama-5.png` (`public/sosyal/bilgi-11-hitabet-ve-mesleki-uygulama-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/11-hitabet-ve-mesleki-uygulama-5
-- **Metin:**
-```text
-Din Hizmetlerinde İletişim İlkeleri ve Hitabet Üslubu
+## bilgi-5-arapca-5
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-5-arapca-5.png
 
-Din hizmetlerinde etkili iletişim; muhatap analizi, hikmetli ve müjdeleyici üslup ile samimi beden dilinin bütünleşmesine dayanır.
+```
+Bunu biliyor muydunuz? Arapçada cezm işareti harfi harekesiz okuturken, şedde işareti yan yana gelen iki aynı harfi birleştirerek kuvvetli ve iki kez okutur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Arapça 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-arapca-hafta-5
+#derskutusu #arapça #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/11-hitabet-ve-mesleki-uygulama-5
+## bilgi-5-kuran-i-kerim-5
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-5-kuran-i-kerim-5.png
 
-#derskutusu #11sınıf #hitabet #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? Kur'an-ı Kerim yazımında Elif, Dal, Zel, Ra, Ze ve Vav harfleri kendinden önce gelen harfle birleşir fakat kendinden sonra gelen harfle asla birleşmez.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Kur’an-ı Kerim 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-kuran-i-kerim-hafta-5
+#derskutusu #kuranıkerim #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-11-ingilizce-5` — 11. Sınıf · ingilizce · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-11-ingilizce-5.png` (`public/sosyal/bilgi-11-ingilizce-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/11-ingilizce-5
-- **Metin:**
-```text
-Geçmiş Alışkanlıklar: Used to, Would ve Could
+## bilgi-5-peygamberimizin-hayati-5
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-5-peygamberimizin-hayati-5.png
 
-İngilizcede used to hem geçmiş eylem hem durumları anlatırken would yalnız eylemlerle, was/were able to ise özel başarılarla kullanılır.
+```
+Bunu biliyor muydunuz? Hz. Muhammed (sav), bebekliğinde sağlıklı büyümesi ve güzel Arapça öğrenmesi için sütannesi Hz. Halîme'ye verilmiş ve Benî Sa'd yurdunda dört yıl kalmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Peygamberimizin Hayatı 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-peygamberimizin-hayati-hafta-5
+#derskutusu #peygamberimizinhayatı #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/11-ingilizce-5
+## bilgi-5-temel-dini-bilgiler-5
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-5-temel-dini-bilgiler-5.png
 
-#derskutusu #11sınıf #ingilizce #konuözeti #dersnotu #meb #tyt #ayt
+```
+Bunu biliyor muydunuz? Mümin kimliğinin ilk adımı Kelime-i Tevhid ve Kelime-i Şehadet ile Allah'ın birliğine ve Hz. Muhammed'in peygamberliğine gönülden inanmaktır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Temel Dinî Bilgiler 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-temel-dini-bilgiler-hafta-5
+#derskutusu #temeldinibilgiler #5sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-11-kimya-5` — 11. Sınıf · kimya · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-11-kimya-5.png` (`public/sosyal/bilgi-11-kimya-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/11-kimya-5
-- **Metin:**
-```text
-Hess Yasası ve Çarpışma Teorisi İlkeleri
+## bilgi-6-arapca-5
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-6-arapca-5.png
 
-Hess Yasası’na göre ara basamakların toplanmasıyla elde edilen net tepkimenin entalpisi basamakların entalpi değişimleri toplamına eşittir.
+```
+Bunu biliyor muydunuz? Arapçada mesleklerin çalışma yerleri anlatılırken "Eyne ya'melü / ta'melü?" kalıbı kullanılır; el- takısı şemsî harflerde okunmazken kamerî harflerde okunur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Arapça 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-arapca-hafta-5
+#derskutusu #arapça #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/11-kimya-5
+## bilgi-6-kuran-i-kerim-5
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-6-kuran-i-kerim-5.png
 
-#derskutusu #11sınıf #kimya #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? Kur'an-ı Kerim tilavetinde Kutbu Ced (Kaf, Tı, Be, Cim, Dal) harfleri sakin olduğunda kalkale yapılır; sakin mîm ise kendinden sonraki harfe göre üç farklı tecvit kuralıyla okunur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Kur’an-ı Kerim 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-kuran-i-kerim-hafta-5
+#derskutusu #kuranıkerim #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-11-kuran-i-kerim-5` — 11. Sınıf · kuran-i-kerim · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-11-kuran-i-kerim-5.png` (`public/sosyal/bilgi-11-kuran-i-kerim-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/11-kuran-i-kerim-5
-- **Metin:**
-```text
-Kehf Suresi 1-10. Ayetlerin Mesajları ve Sekte Kuralı
+## bilgi-6-peygamberimizin-hayati-5
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-6-peygamberimizin-hayati-5.png
 
-Kehf Suresi 1-10. ayetler tevhid inancını ve Ashab-ı Kehf’in samimi duasını anlatırken 1. ayette tecvitteki dört sekteden biri uygulanır.
+```
+Bunu biliyor muydunuz? Hz. Peygamber (sav), gençlik yıllarındaki dürüst ticareti ve üstün emanet bilinci sayesinde henüz peygamber olmadan önce de el-Emîn olarak tanınmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Peygamberimizin Hayatı 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-peygamberimizin-hayati-hafta-5
+#derskutusu #peygamberimizinhayatı #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/11-kuran-i-kerim-5
+## bilgi-6-temel-dini-bilgiler-5
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-6-temel-dini-bilgiler-5.png
 
-#derskutusu #11sınıf #kuranıkerim #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? İslam'da kalpteki iman bir ağacın köküne, ibadet ve salih ameller ise o ağacın dallarına ve meyvelerine benzer; iman ve amel birbirini besler.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Temel Dinî Bilgiler 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-temel-dini-bilgiler-hafta-5
+#derskutusu #temeldinibilgiler #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-11-matematik-5` — 11. Sınıf · matematik · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-11-matematik-5.png` (`public/sosyal/bilgi-11-matematik-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/11-matematik-5
-- **Metin:**
-```text
-Yönlü Açılar, Esas Ölçü ve Birim Çember
+## bilgi-7-arapca-5
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-arapca-5.png
 
-Trigonometride 180° = π radyan dönüşümü kullanılır ve her yönlü açının birim çember üzerindeki yeri [0, 2π) aralığındaki esas ölçüsüyle bulunur.
+```
+Bunu biliyor muydunuz? Arapçada gelecekteki meslek hedefleri "Hulmî en ekûne..." kalıbıyla anlatılırken, sebep bildirmek için "li-ennenî" (çünkü ben) ve "li-key" (-mek için) ifadeleri kullanılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Arapça 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-arapca-hafta-5
+#derskutusu #arapça #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/11-matematik-5
+## bilgi-7-kuran-i-kerim-5
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-kuran-i-kerim-5.png
 
-#derskutusu #11sınıf #matematik #konuözeti #dersnotu #meb #tyt #ayt
+```
+Bunu biliyor muydunuz? Bakara Suresi 177–186. ayetlerde gerçek iyilik ve erdemin (el-Birr) ölçütleri, Ramazan orucunun farziyeti ve Allah'ın dua eden kuluna yakınlığı anlatılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Kur’an-ı Kerim 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-kuran-i-kerim-hafta-5
+#derskutusu #kuranıkerim #7sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-11-mesleki-arapca-5` — 11. Sınıf · mesleki-arapca · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-11-mesleki-arapca-5.png` (`public/sosyal/bilgi-11-mesleki-arapca-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/11-mesleki-arapca-5
-- **Metin:**
-```text
-Arapçada Taharet ve Abdest Kavramları
+## bilgi-7-matematik-5
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-matematik-5.png
 
-Mesleki Arapçada taharet, vudû, ğusl ve teyemmüm terimleri ile abdestin farz ve sünnetlerini bildiren fıkhi kalıplar temel ibadet dilini oluşturur.
+```
+Bunu biliyor muydunuz? Rasyonel sayılar karşılaştırılırken pozitif sayılarda uygulanan büyüklük sıralamasının tam tersi negatif rasyonel sayılar için geçerlidir; sıfıra yakın olan negatif sayı daha büyüktür.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Matematik 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-matematik-hafta-5
+#derskutusu #matematik #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/11-mesleki-arapca-5
+## bilgi-7-peygamberimizin-hayati-5
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-peygamberimizin-hayati-5.png
 
-#derskutusu #11sınıf #meslekiarapça #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? İsrâ ve Miraç mucizesi Hüzün Yılı'nın ardından Hz. Peygamber'e ilahi bir teselli olmuş; bu gecede beş vakit namaz ve Âmenerresûlü ayetleri hediye edilmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Peygamberimizin Hayatı 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-peygamberimizin-hayati-hafta-5
+#derskutusu #peygamberimizinhayatı #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-11-peygamberimizin-hayati-5` — 11. Sınıf · peygamberimizin-hayati · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-11-peygamberimizin-hayati-5.png` (`public/sosyal/bilgi-11-peygamberimizin-hayati-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/11-peygamberimizin-hayati-5
-- **Metin:**
-```text
-Hicret Yolculuğu ve Medine’de İlk Kurumlar
+## bilgi-7-sosyal-bilgiler-5
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-sosyal-bilgiler-5.png
 
-Hicret sonrasında Medine’de inşa edilen Mescid-i Nebi, Suffe, muâhât kardeşliği ve Medine Vesikası İslam toplumunun kurucu temellerini oluşturmuştur.
+```
+Bunu biliyor muydunuz? Türk toplumu tarih boyunca bağımsızlık, vatan savunması ve doğal afet gibi millî meseleler karşısında tüm farklılıkları geride bırakarak tek yürek hâlinde kenetlenmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Sosyal Bilgiler 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-sosyal-bilgiler-hafta-5
+#derskutusu #sosyalbilgiler #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/11-peygamberimizin-hayati-5
+## bilgi-7-temel-dini-bilgiler-5
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-temel-dini-bilgiler-5.png
 
-#derskutusu #11sınıf #peygamberimizinhayatı #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? Cibrîl Hadisi'nde öğretilen ihsan bilinci; insanın her an Allah'ın gözetiminde olduğunu bilerek ibadetlerini ve insan ilişkilerini en güzel biçimde yapmasıdır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Temel Dinî Bilgiler 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-temel-dini-bilgiler-hafta-5
+#derskutusu #temeldinibilgiler #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-11-tarih-5` — 11. Sınıf · tarih · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-11-tarih-5.png` (`public/sosyal/bilgi-11-tarih-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/11-tarih-5
-- **Metin:**
-```text
-18. Yüzyılda Avrupa ve Osmanlı Islahatları
+## bilgi-7-turkce-5
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-turkce-5.png
 
-18. yüzyılda Osmanlı Devleti Lale Devri’nde kültürel, I. Mahmud ve I. Abdülhamid dönemlerinde ise Batı tarzı askerî-teknik ıslahatlara yönelmiştir.
+```
+Bunu biliyor muydunuz? Mülakat yalnızca soru ve cevapların nesnel biçimde aktarılmasına dayanırken; röportajda yazar soru-cevabın yanı sıra kendi gözlem, araştırma ve betimlemelerine de yer verir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Türkçe 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-turkce-hafta-5
+#derskutusu #türkçe #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/11-tarih-5
+## bilgi-8-din-kulturu-5
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-din-kulturu-5.png
 
-#derskutusu #11sınıf #tarih #konuözeti #dersnotu #meb #tyt #ayt
+```
+Bunu biliyor muydunuz? İslam'da tevekkül tembellik etmek değil; başarı ve sağlık için cüz'î iradeyle çalışıp tüm önlemleri aldıktan sonra sonucu Yüce Allah'a havale etmektir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Din Kültürü ve Ahlak Bilgisi 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-din-kulturu-ve-ahlak-bilgisi-hafta-5
+#derskutusu #dinkültürü #8sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-11-tefsir-5` — 11. Sınıf · tefsir · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-11-tefsir-5.png` (`public/sosyal/bilgi-11-tefsir-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/11-tefsir-5
-- **Metin:**
-```text
-İlk Dönem Tefsir Hareketleri ve Ekolleri
+## bilgi-8-fen-bilimleri-5
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-fen-bilimleri-5.png
 
-Tefsir ilmi Hz. Peygamber’in beyanıyla başlamış; Sahabe ve Tabiîn döneminde Mekke, Medine ve Kûfe tefsir ekolleriyle kurumsallaşmıştır.
+```
+Bunu biliyor muydunuz? Kalıtsal yapılar büyükten küçüğe Kromozom - DNA - Gen - Nükleotid şeklinde sıralanır; DNA'da Adenin ile Timin ikili, Guanin ile Sitozin üçlü zayıf hidrojen bağı kurar.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Fen Bilimleri 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-fen-bilimleri-hafta-5
+#derskutusu #fenbilimleri #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/11-tefsir-5
+## bilgi-8-ingilizce-5
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-ingilizce-5.png
 
-#derskutusu #11sınıf #tefsir #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? İngilizcede tercih cümleleri kurulurken "prefer + V-ing + to + V-ing" kalıbı, "would rather" yapısında ise "would rather + V1 + than + V1" kuralı uygulanır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf İngilizce 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-ingilizce-hafta-5
+#derskutusu #ingilizce #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-11-temel-dini-bilgiler-5` — 11. Sınıf · temel-dini-bilgiler · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-11-temel-dini-bilgiler-5.png` (`public/sosyal/bilgi-11-temel-dini-bilgiler-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/11-temel-dini-bilgiler-5
-- **Metin:**
-```text
-İslam’da Aile Kurumu, Nikâh ve Sorumluluklar
+## bilgi-8-inkilap-tarihi-5
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-inkilap-tarihi-5.png
 
-İslam’da aile kurumu meşru nikâh akdi üzerine inşa edilir; huzur, sevgi, merhamet ve karşılıklı hak-sorumluluk bilinciyle korunur.
+```
+Bunu biliyor muydunuz? Birinci Dünya Savaşı, sömürgecilik rekabeti ve milliyetçilik akımı yüzünden çıkmış; Goben ve Breslau gemilerinin Rus limanlarını bombalamasıyla Osmanlı Devleti savaşa dahil olmuştur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf T.C. İnkılap Tarihi 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-tc-inkilap-tarihi-ve-ataturkculuk-hafta-5
+#derskutusu #inkılaptarihi #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/11-temel-dini-bilgiler-5
+## bilgi-8-arapca-5
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-arapca-5.png
 
-#derskutusu #11sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? Arapçada "er-rihle" (gezi) metinlerinde "Nahnü" (biz) zamiriyle geçmiş zaman anlatılırken fiilin sonuna "-nâ" eki, şimdiki zamanda ise fiilin başına "n-" harfi getirilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Arapça 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-arapca-hafta-5
+#derskutusu #arapça #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-12-biyoloji-5` — 12. Sınıf · biyoloji · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-12-biyoloji-5.png` (`public/sosyal/bilgi-12-biyoloji-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/12-biyoloji-5
-- **Metin:**
-```text
-ATP Molekülü ve Fosforilasyon Çeşitleri
+## bilgi-8-kuran-i-kerim-5
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-kuran-i-kerim-5.png
 
-ATP hücre içinde depolanamaz ve hücreden hücreye aktarılamaz; fosforilasyon çeşitleriyle anlık üretilip tüketilir.
+```
+Bunu biliyor muydunuz? Hz. Yusuf (as) kıssası; zorluklar karşısında sabretmenin, iffeti korumanın, emanete sahip çıkmanın ve güç elindeyken bile affedici olmanın en güzel örneğidir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Kur’an-ı Kerim 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-kuran-i-kerim-hafta-5
+#derskutusu #kuranıkerim #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/12-biyoloji-5
+## bilgi-8-peygamberimizin-hayati-5
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-peygamberimizin-hayati-5.png
 
-#derskutusu #12sınıf #biyoloji #konuözeti #dersnotu #meb #tyt #ayt
+```
+Bunu biliyor muydunuz? Hz. Peygamber (sav), Hicret sonrasında Mescid-i Nebevî ve Suffe'yi kurmuş, Ensar-Muhacir kardeşliğini (Muâhât) sağlamış ve Medine Sözleşmesi ile toplumsal barışı tesis etmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Peygamberimizin Hayatı 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-peygamberimizin-hayati-hafta-5
+#derskutusu #peygamberimizinhayatı #8sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-12-cografya-5` — 12. Sınıf · cografya · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-12-cografya-5.png` (`public/sosyal/bilgi-12-cografya-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/12-cografya-5
-- **Metin:**
-```text
-Küresel Ulaşım Sistemleri, Boğazlar ve Kanallar
+## bilgi-8-temel-dini-bilgiler-5
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-temel-dini-bilgiler-5.png
 
-Küresel dış ticarette en ekonomik ulaşım türü deniz yoludur; Süveyş, Panama, Hürmüz ve Malakka su yolları dünya ticaretine yön verir.
+```
+Bunu biliyor muydunuz? Kur'an-ı Kerim'e karşı ahlaki sorumluluğumuz; O'na gönülden inanmak, edeple okumak, ayetlerin anlamını derinlemesine düşünmek ve ahlakını hayatımıza yansıtmaktır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Temel Dinî Bilgiler 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-temel-dini-bilgiler-hafta-5
+#derskutusu #temeldinibilgiler #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/12-cografya-5
+## bilgi-9-biyoloji-5
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-biyoloji-5.png
 
-#derskutusu #12sınıf #coğrafya #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? Bilimsel yöntemde hipotezi sınamak için yapılan kontrollü deneylerde etkisi araştırılan faktör bağımsız değişken, bağımsız değişkene göre ortaya çıkan sonuç ise bağımlı değişkendir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Biyoloji 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-biyoloji-hafta-5
+#derskutusu #biyoloji #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-12-din-kulturu-5` — 12. Sınıf · din-kulturu-ve-ahlak-bilgisi · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-12-din-kulturu-5.png` (`public/sosyal/bilgi-12-din-kulturu-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/12-din-kulturu-ve-ahlak-bilgisi-5
-- **Metin:**
-```text
-İslam Medeniyetinde Öncü Bilim İnsanları
+## bilgi-9-cografya-5
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-cografya-5.png
 
-Hârizmî, İbn Sînâ, İbnü’l-Heysem, Bîrûnî ve İbn Haldun gibi Müslüman bilginler matematikten tıbba modern bilimin temellerini atmıştır.
+```
+Bunu biliyor muydunuz? Topoğrafya haritalarında eş yükselti eğrilerinin (izohipslerin) birbirine yaklaştığı yerlerde eğim artar, uzaklaştığı yerlerde ise eğim azalır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Coğrafya 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-cografya-hafta-5
+#derskutusu #coğrafya #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/12-din-kulturu-ve-ahlak-bilgisi-5
+## bilgi-9-din-kulturu-5
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-din-kulturu-5.png
 
-#derskutusu #12sınıf #dinkültürü #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? İslam'da Allah ile kul arasındaki bağ vahiy, ibadet ve dua ile kurulur; ibadetin kabul olması için iman, ihlas (samimiyet) ve Sünnete uygunluk şarttır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Din Kültürü ve Ahlak Bilgisi 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-din-kulturu-ve-ahlak-bilgisi-hafta-5
+#derskutusu #dinkültürü #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-12-edebiyat-5` — 12. Sınıf · turk-dili-ve-edebiyati · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-12-edebiyat-5.png` (`public/sosyal/bilgi-12-edebiyat-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/12-turk-dili-ve-edebiyati-5
-- **Metin:**
-```text
-Cumhuriyet Dönemi Saf Şiir ve Yedi Meşaleciler
+## bilgi-9-edebiyat-5
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-edebiyat-5.png
 
-Saf şiir anlayışı şiiri soylu bir sanat kabul ederek ahenk, imge ve iç musikiyi her türlü ideolojik söylemin üstünde tutmuştur.
+```
+Bunu biliyor muydunuz? Betimleme paragrafı yazılırken nesnel bilgi vermek amaçlanıyorsa açıklayıcı betimleme, okurda estetik duygu ve izlenim uyandırmak amaçlanıyorsa sanatsal (izlenimsel) betimleme kullanılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Türk Dili ve Edebiyatı 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-turk-dili-ve-edebiyati-hafta-5
+#derskutusu #edebiyat #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/12-turk-dili-ve-edebiyati-5
+## bilgi-9-fizik-5
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-fizik-5.png
 
-#derskutusu #12sınıf #edebiyat #konuözeti #dersnotu #meb #tyt #ayt
+```
+Bunu biliyor muydunuz? Uluslararası Birim Sisteminde (SI) Kütle, Işık şiddeti, Sıcaklık, Akım şiddeti, Madde miktarı, Uzunluk ve Zaman (KISAMUZ) olmak üzere 7 temel nicelik vardır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Fizik 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-fizik-hafta-5
+#derskutusu #fizik #9sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-12-fizik-5` — 12. Sınıf · fizik · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-12-fizik-5.png` (`public/sosyal/bilgi-12-fizik-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/12-fizik-5
-- **Metin:**
-```text
-Kütle Çekim Kuvveti ve Kepler Yasaları
+## bilgi-9-kimya-5
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-kimya-5.png
 
-Kütle çekim kuvveti uzaklığın karesiyle ters orantılıdır; Kepler’in periyotlar yasasına göre her gezegen için R³ / T² oranı sabittir.
+```
+Bunu biliyor muydunuz? Atomda s, p, d ve f orbitalleri en fazla 2, 6, 10 ve 14 elektron alır; orbitallerin enerjisi n+l toplamına göre sıralanır ve elektronlar önce en düşük enerjili orbitale yerleşir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Kimya 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-kimya-hafta-5
+#derskutusu #kimya #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/12-fizik-5
+## bilgi-9-matematik-5
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-matematik-5.png
 
-#derskutusu #12sınıf #fizik #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? Sayı kümelerinde Doğal Sayılar (N), Tam Sayılar (Z) ve Rasyonel Sayılar (Q) birbirini kapsar; rasyonel (Q) ile irrasyonel sayıların (Q') birleşimi gerçek sayılar kümesini (R) oluşturur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Matematik 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-matematik-hafta-5
+#derskutusu #matematik #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-12-ingilizce-5` — 12. Sınıf · ingilizce · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-12-ingilizce-5.png` (`public/sosyal/bilgi-12-ingilizce-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/12-ingilizce-5
-- **Metin:**
-```text
-İnsan Hakları İfadeleri ve Passive Modals Yapısı
+## bilgi-9-tarih-5
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-tarih-5.png
 
-İngilizcede the + adjective yapısı çoğul bir topluluğu anlatırken toplumsal kurallar modal + be + V3 edilgen yapısıyla ifade edilir.
+```
+Bunu biliyor muydunuz? Tarih araştırmalarında 5T yönteminin dördüncü basamağı olan Tenkit (Eleştiri), belgenin orijinalliğini (dış tenkit) ve içindeki bilgilerin doğruluğunu (iç tenkit) denetler.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Tarih 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-tarih-hafta-5
+#derskutusu #tarih #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/12-ingilizce-5
+## bilgi-9-arapca-5
+Sıra: 2026-10-17 10:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-arapca-5.png
 
-#derskutusu #12sınıf #ingilizce #konuözeti #dersnotu #meb #tyt #ayt
+```
+Bunu biliyor muydunuz? Arapçada tekil zamirler ve işaret isimleri kelimenin eril (müzekker) veya dişil (müennes) oluşuna göre uyum sağlar.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Arapça 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-arapca-hafta-5
+#derskutusu #arapça #9sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-12-inkilap-tarihi-5` — 12. Sınıf · tc-inkilap-tarihi-ve-ataturkculuk · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-12-inkilap-tarihi-5.png` (`public/sosyal/bilgi-12-inkilap-tarihi-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/12-tc-inkilap-tarihi-ve-ataturkculuk-5
-- **Metin:**
-```text
-Millî Mücadele’de Genelge ve Kongreler
+## bilgi-9-ingilizce-5
+Sıra: 2026-10-17 10:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-ingilizce-5.png
 
-Millî Mücadele’nin programı Amasya Genelgesi ile çizilmiş, Erzurum ve Sivas kongrelerinde ulusal egemenlik ve tam bağımsızlık kararlaştırılmıştır.
+```
+Bunu biliyor muydunuz? İngilizcede konuşma anındaki eylemler Present Continuous Tense ile anlatılırken durum fiilleri (State Verbs) -ing eki almaz.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf İngilizce 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-ingilizce-hafta-5
+#derskutusu #ingilizce #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/12-tc-inkilap-tarihi-ve-ataturkculuk-5
+## bilgi-9-kuran-i-kerim-5
+Sıra: 2026-10-17 10:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-kuran-i-kerim-5.png
 
-#derskutusu #12sınıf #inkılaptarihi #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? Kur’an-ı Kerim kıraatinde anlam bozulmaması için harflerin beş mahreç bölgesinden, kalın-ince ve peltek sıfatlarına uygun okunması gerekir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Kur’an-ı Kerim 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-kuran-i-kerim-hafta-5
+#derskutusu #kuranıkerim #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-12-islam-kultur-ve-medeniyeti-5` — 12. Sınıf · islam-kultur-ve-medeniyeti · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-5.png` (`public/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/12-islam-kultur-ve-medeniyeti-5
-- **Metin:**
-```text
-İslam Medeniyetinin Özellikleri ve Havzaları
+## bilgi-9-peygamberimizin-hayati-5
+Sıra: 2026-10-17 10:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-peygamberimizin-hayati-5.png
 
-İslam medeniyeti tevhid, ilim, adalet ve vakıf ruhuyla Endülüs’ten Mâverâünnehir’e uzanan geniş havzalarda insanlığa rehberlik etmiştir.
+```
+Bunu biliyor muydunuz? İslam dini Cahiliye toplumundaki asabiyet ve sınıf ayrımını kaldırarak üstünlüğün yalnız takvada olduğunu ilan etmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Peygamberimizin Hayatı 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-peygamberimizin-hayati-hafta-5
+#derskutusu #peygamberimizinhayatı #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/12-islam-kultur-ve-medeniyeti-5
+## bilgi-9-temel-dini-bilgiler-5
+Sıra: 2026-10-17 10:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-temel-dini-bilgiler-5.png
 
-#derskutusu #12sınıf #islamkültürü #konuözeti #dersnotu #meb #tyt #ayt
+```
+Bunu biliyor muydunuz? Aklî ve naklî deliller uyum içinde insanı tefekküre, emanet bilincine ve hayatın her alanında ilkeli yaşamaya yöneltir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Temel Dinî Bilgiler 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-temel-dini-bilgiler-hafta-5
+#derskutusu #temeldinibilgiler #9sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-12-kelam-5` — 12. Sınıf · kelam · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-12-kelam-5.png` (`public/sosyal/bilgi-12-kelam-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/12-kelam-5
-- **Metin:**
-```text
-Kelamda Bilgi Kaynakları ve Varlık Anlayışı
+## bilgi-10-arapca-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-arapca-5.png
 
-Kelam ilminde bilginin üç nesnel kaynağı sağlam duyular, doğru haber ve selim akıldır; varlık ise Kadîm (Allah) ve Hâdis (âlem) olarak ayrılır.
+```
+Bunu biliyor muydunuz? Arapçada akrabalık ilişkileri muzâf ve muzâfun ileyh uyumuyla kurulan isim tamlaması (el-izâfe) kalıplarıyla ifade edilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Arapça 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-arapca-hafta-5
+#derskutusu #arapça #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/12-kelam-5
+## bilgi-10-biyoloji-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-biyoloji-5.png
 
-#derskutusu #12sınıf #kelam #konuözeti #dersnotu #meb #tyt #ayt
+```
+Bunu biliyor muydunuz? Fotosentez deneylerinde KOH karbondioksit tutucu, iyot çözeltisi ise nişasta ayracı olarak kullanılarak fotosentez hızı ölçülür.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Biyoloji 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-biyoloji-hafta-5
+#derskutusu #biyoloji #10sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-12-kimya-5` — 12. Sınıf · kimya · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-12-kimya-5.png` (`public/sosyal/bilgi-12-kimya-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/12-kimya-5
-- **Metin:**
-```text
-Elektroliz, Faraday Yasaları ve Korozyon
+## bilgi-10-cografya-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-cografya-5.png
 
-Elektrolizde açığa çıkan madde miktarı devreden geçen yükle doğru orantılıdır; metalleri korozyondan korumak için kurban elektrot kullanılır.
+```
+Bunu biliyor muydunuz? CBS ortamında yeryüzü unsurları nokta, çizgi ve poligon katmanlarıyla sayısallaştırılarak öznitelik tablolarıyla ilişkilendirilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Coğrafya 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-cografya-hafta-5
+#derskutusu #coğrafya #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/12-kimya-5
+## bilgi-10-din-kulturu-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-din-kulturu-5.png
 
-#derskutusu #12sınıf #kimya #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? Allah (cc) âlemi kusursuz bir ölçü (mizan) ve Sünnetullah adı verilen değişmez evrensel yasalarla yaratıp yönetmektedir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Din Kültürü ve Ahlak Bilgisi 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-din-kulturu-ve-ahlak-bilgisi-hafta-5
+#derskutusu #dinkültürü #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-12-kuran-i-kerim-5` — 12. Sınıf · kuran-i-kerim · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-12-kuran-i-kerim-5.png` (`public/sosyal/bilgi-12-kuran-i-kerim-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/12-kuran-i-kerim-5
-- **Metin:**
-```text
-Kehf Suresi 60-82: Hz. Musa ve Hızır Kıssası
+## bilgi-10-edebiyat-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-edebiyat-5.png
 
-Kehf Suresi’ndeki Hz. Musa ve Hızır kıssası, ilim yolunda tevazu ve sabrı öğretirken olayların ardındaki ilahi hikmete teslimiyeti vurgular.
+```
+Bunu biliyor muydunuz? Başarılı bir şiir dinletisinde doğru vurgu, tonlama, durak ve nefes kontrolü sahne duruşuyla bütünleştirilerek sunulur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Türk Dili ve Edebiyatı 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-turk-dili-ve-edebiyati-hafta-5
+#derskutusu #edebiyat #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/12-kuran-i-kerim-5
+## bilgi-10-felsefe-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-felsefe-5.png
 
-#derskutusu #12sınıf #kuranıkerim #konuözeti #dersnotu #meb #tyt #ayt
+```
+Bunu biliyor muydunuz? Felsefe bireyde eleştirel ve özgür düşünceyi geliştirirken toplumda demokrasi, hoşgörü ve insan hakları bilincini güçlendirir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Felsefe 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-felsefe-hafta-5
+#derskutusu #felsefe #10sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-12-matematik-5` — 12. Sınıf · matematik · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-12-matematik-5.png` (`public/sosyal/bilgi-12-matematik-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/12-matematik-5
-- **Metin:**
-```text
-Gerçek Sayı Dizileri, Sabit ve İndirgemeli Diziler
+## bilgi-10-fikih-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-fikih-5.png
 
-Gerçek sayı dizilerinin tanım kümesi pozitif tam sayılardır; sabit, eşit ve indirgemeli diziler genel terim kurallarıyla modellenir.
+```
+Bunu biliyor muydunuz? İslam hukuku vahiy döneminden itibaren içtihat, Ehl-i Hadis ve Ehl-i Re’y ekolleriyle gelişerek fıkıh mezheplerini oluşturmuştur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Fıkıh 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fikih-hafta-5
+#derskutusu #fıkıh #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/12-matematik-5
+## bilgi-10-fizik-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-fizik-5.png
 
-#derskutusu #12sınıf #matematik #konuözeti #dersnotu #meb #tyt #ayt
+```
+Bunu biliyor muydunuz? Sabit ivmeli harekette grafiklerin eğimi türev büyüklüğü, eksenle sınırladığı alan ise hız değişimi ve yer değiştirmeyi verir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Fizik 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fizik-hafta-5
+#derskutusu #fizik #10sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-12-mesleki-arapca-5` — 12. Sınıf · mesleki-arapca · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-12-mesleki-arapca-5.png` (`public/sosyal/bilgi-12-mesleki-arapca-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/12-mesleki-arapca-5
-- **Metin:**
-```text
-Mesleki Arapçada Nefis Tezkiyesi ve Mezîd Fiiller
+## bilgi-10-hadis-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-hadis-5.png
 
-Mesleki Arapçada nefis tezkiyesi ve güzel ahlak metinleri, kök fiillere harf eklenerek türetilen sülâsî mezîd fiil bâblarıyla kurulur.
+```
+Bunu biliyor muydunuz? Sünnet Kur’an-ı Kerim’in kapalı ve özet ayetlerini beyan ederek İslam dininin hükümlerini yaşanabilir hale getirir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Hadis 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-hadis-hafta-5
+#derskutusu #hadis #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/12-mesleki-arapca-5
+## bilgi-10-ingilizce-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-ingilizce-5.png
 
-#derskutusu #12sınıf #meslekiarapça #konuözeti #dersnotu #meb #tyt #ayt
 ```
+Bunu biliyor muydunuz? İngilizcede mustn’t yasak, don’t have to zorunluluk olmayışı anlatırken planlı kulüp projeleri be going to ile ifade edilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf İngilizce 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-ingilizce-hafta-5
+#derskutusu #ingilizce #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-12-peygamberimizin-hayati-5` — 12. Sınıf · peygamberimizin-hayati · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-12-peygamberimizin-hayati-5.png` (`public/sosyal/bilgi-12-peygamberimizin-hayati-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/12-peygamberimizin-hayati-5
-- **Metin:**
-```text
-Asr-ı Saadet’te Öncü Genç Sahabiler
+## bilgi-10-kimya-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-kimya-5.png
 
-Hz. Peygamber (sav) gençlerin potansiyeline güvenerek onları öğretmen, elçi, kadı ve komutan olarak İslam toplumunun ön saflarında görevlendirmiştir.
+```
+Bunu biliyor muydunuz? 1 mol madde 6,02·10²³ tanecik içerir ve mol sayısı kütle, tanecik sayısı ile gaz hacmi arasındaki dönüşüm köprüsünü kurar.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Kimya 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kimya-hafta-5
+#derskutusu #kimya #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/12-peygamberimizin-hayati-5
+## bilgi-10-kuran-i-kerim-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-kuran-i-kerim-5.png
 
-#derskutusu #12sınıf #peygamberimizinhayatı #konuözeti #dersnotu #meb #tyt #ayt
+```
+Bunu biliyor muydunuz? Tecvitte med harflerinden sonra hemze veya sükûn gelmesine göre Muttasıl, Munfasıl, Lâzım, Ârız ve Lîn medleri uygulanır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Kur’an-ı Kerim 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kuran-i-kerim-hafta-5
+#derskutusu #kuranıkerim #10sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-12-temel-dini-bilgiler-5` — 12. Sınıf · temel-dini-bilgiler · 5. Hafta
-- **Görsel:** `public/sosyal/bilgi-12-temel-dini-bilgiler-5.png` (`public/sosyal/bilgi-12-temel-dini-bilgiler-5.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/12-temel-dini-bilgiler-5
-- **Metin:**
-```text
-Tevhid İnancı, Salih Amel ve İnsanın Sorumluluğu
+## bilgi-10-matematik-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-matematik-5.png
 
-Tevhid inancı iman ile salih ameli bütünleştirir ve yeryüzünün halifesi olan insana hayatın her alanında ahlaki sorumluluk yükler.
+```
+Bunu biliyor muydunuz? Üçgende alan taban-yükseklik, sinüs teoremi veya iç teğet çember yarıçapıyla hesaplanır; benzer üçgenlerde alanlar oranı k² olur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Matematik 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-matematik-hafta-5
+#derskutusu #matematik #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/12-temel-dini-bilgiler-5
+## bilgi-10-peygamberimizin-hayati-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-peygamberimizin-hayati-5.png
 
-#derskutusu #12sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #tyt #ayt
+```
+Bunu biliyor muydunuz? Hz. Peygamber (sav) Taif’te uğradığı ağır eziyetlere beddua yerine dua ve merhametle karşılık vererek Taif’in kalbini kazanmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Peygamberimizin Hayatı 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-peygamberimizin-hayati-hafta-5
+#derskutusu #peygamberimizinhayatı #10sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-5-arapca-6` — 5. Sınıf · arapca · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-5-arapca-6.png` (`public/sosyal/bilgi-5-arapca-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/5-arapca-6
-- **Metin:**
-```text
-Arapçada Tanışma ve Selamlaşma Adabı
+## bilgi-10-siyer-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-siyer-5.png
 
-Arapçada iletişim es-selâmu kable’l-kelâm ilkesiyle başlar; mâ ismuke, keyfe hâluke ve hel ente kalıplarıyla tanışma diyaloğu kurulur.
+```
+Bunu biliyor muydunuz? Hz. Muhammed (sav) risalet öncesinde Hilfü’l-Fudûl üyeliği, dürüst ticareti ve Kâbe hakemliğiyle El-Emin sıfatını kazanmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Siyer 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-siyer-hafta-5
+#derskutusu #siyer #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/5-arapca-6
+## bilgi-10-tarih-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-tarih-5.png
 
-#derskutusu #5sınıf #arapça #konuözeti #dersnotu #meb #ortaokul
 ```
+Bunu biliyor muydunuz? Türk-İslam devletlerinde kut ve töre geleneği korunurken Divan teşkilatı, gulam sistemi ve ikta ordusuyla kurumsal dönüşüm sağlanmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Tarih 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-tarih-hafta-5
+#derskutusu #tarih #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-5-kuran-i-kerim-6` — 5. Sınıf · kuran-i-kerim · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-5-kuran-i-kerim-6.png` (`public/sosyal/bilgi-5-kuran-i-kerim-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/5-kuran-i-kerim-6
-- **Metin:**
-```text
-Kur’an Harflerini Üstün, Esre ve Ötre İle Okuma
+## bilgi-10-temel-dini-bilgiler-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-temel-dini-bilgiler-5.png
 
-Kur’an harfleri üstün, esre ve ötre harekeleriyle seslendirilirken harfin ince, kalın veya peltek özelliğine dikkat edilir.
+```
+Bunu biliyor muydunuz? İslam’da dünya ahiretin tarlası kabul edilir; mümin iman, salih amel, ihlas ve helal kazançla dünya-ahiret dengesini kurar.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Temel Dinî Bilgiler 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-temel-dini-bilgiler-hafta-5
+#derskutusu #temeldinibilgiler #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/5-kuran-i-kerim-6
+## bilgi-11-akaid-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-akaid-5.png
 
-#derskutusu #5sınıf #kuranıkerim #konuözeti #dersnotu #meb #ortaokul
+```
+Bunu biliyor muydunuz? İslam akaidinde insanlar iman karşısındaki tutumlarına göre mümin, kâfir, müşrik ve münafık olarak ayrılır; salih amel imanı korur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Akaid 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-akaid-hafta-5
+#derskutusu #akaid #11sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-5-peygamberimizin-hayati-6` — 5. Sınıf · peygamberimizin-hayati · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-5-peygamberimizin-hayati-6.png` (`public/sosyal/bilgi-5-peygamberimizin-hayati-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/5-peygamberimizin-hayati-6
-- **Metin:**
-```text
-Fil Vakası, Fil Suresi ve Kutlu Doğum
+## bilgi-11-biyoloji-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-biyoloji-5.png
 
-Allah (cc) Fil Vakası’nda Kâbe’yi ebâbîl kuşlarıyla korumuş; aynı yıl (571) âlemlere rahmet olan Hz. Muhammed (sav) dünyaya gelmiştir.
+```
+Bunu biliyor muydunuz? Bitkisel hormonlardan oksin, giberellin ve sitokinin büyümeyi uyarırken etilen ve absisik asit olgunlaşma ile stres yanıtını yönetir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Biyoloji 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-biyoloji-hafta-5
+#derskutusu #biyoloji #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/5-peygamberimizin-hayati-6
+## bilgi-11-cografya-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-cografya-5.png
 
-#derskutusu #5sınıf #peygamberimizinhayatı #konuözeti #dersnotu #meb #ortaokul
+```
+Bunu biliyor muydunuz? Ekosistemin sürekliliği besin zincirindeki tek yönlü enerji akışı ile karbon, oksijen, azot ve su döngülerinin dengesine bağlıdır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Coğrafya 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-cografya-hafta-5
+#derskutusu #coğrafya #11sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-5-temel-dini-bilgiler-6` — 5. Sınıf · temel-dini-bilgiler · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-5-temel-dini-bilgiler-6.png` (`public/sosyal/bilgi-5-temel-dini-bilgiler-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/5-temel-dini-bilgiler-6
-- **Metin:**
-```text
-Günlük Hayatta Mümin Kimliği: Doğruluk ve Emanet
+## bilgi-11-din-kulturu-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-din-kulturu-5.png
 
-Mümin kimliği kalpteki imanın doğruluk (sıdk), emanet bilinci, selamlaşma ve güzel ahlak olarak günlük hayata yansımasıdır.
+```
+Bunu biliyor muydunuz? Ahiret hayatı berzah, kıyamet, ba’s, haşir ve mizan aşamalarından oluşur; cenaze techiz ve namazı ise müminlere farz-ı kifayedir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Din Kültürü ve Ahlak Bilgisi 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-din-kulturu-ve-ahlak-bilgisi-hafta-5
+#derskutusu #dinkültürü #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/5-temel-dini-bilgiler-6
+## bilgi-11-dinler-tarihi-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-dinler-tarihi-5.png
 
-#derskutusu #5sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #ortaokul
 ```
+Bunu biliyor muydunuz? Hinduizmde Vedalar kutsal metin kabul edilirken toplumsal yapı kast sistemine, kurtuluş inancı ise karma ve samsara döngüsüne dayanır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Dinler Tarihi 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-dinler-tarihi-hafta-5
+#derskutusu #dinlertarihi #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-6-arapca-6` — 6. Sınıf · arapca · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-6-arapca-6.png` (`public/sosyal/bilgi-6-arapca-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/6-arapca-6
-- **Metin:**
-```text
-Arapçada Meslekler ve Şemsî-Kamerî Harfler
+## bilgi-11-edebiyat-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-edebiyat-5.png
 
-Arapçada meslek ve çalışma yeri mâ mihnetuhû ve ya’melu fî ile anlatılır; el takısı şemsî ve kamerî harflere göre okunur.
+```
+Bunu biliyor muydunuz? Makale kanıtlama amacı taşırken fıkra güncel konuları samimi dille yorumlar; cümlenin ögeleri bulunurken söz öbekleri bölünmez.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Türk Dili ve Edebiyatı 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-turk-dili-ve-edebiyati-hafta-5
+#derskutusu #edebiyat #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/6-arapca-6
+## bilgi-11-felsefe-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-felsefe-5.png
 
-#derskutusu #6sınıf #arapça #konuözeti #dersnotu #meb #ortaokul
+```
+Bunu biliyor muydunuz? İlk Çağ doğa filozofları evrenin ana maddesini (arkhe) doğa içinde aramış; Herakleitos oluşu, Parmenides ise değişmez varlığı savunmuştur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Felsefe 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-felsefe-hafta-5
+#derskutusu #felsefe #11sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-6-kuran-i-kerim-6` — 6. Sınıf · kuran-i-kerim · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-6-kuran-i-kerim-6.png` (`public/sosyal/bilgi-6-kuran-i-kerim-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/6-kuran-i-kerim-6
-- **Metin:**
-```text
-Namazda Okunan Salli ve Bârik Duaları
+## bilgi-11-fizik-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-fizik-5.png
 
-Salli ve Bârik duaları namazların son oturuşunda okunan, Hz. Muhammed (sav) ve ailesine rahmet ve bereket dileyen salavat dualarıdır.
+```
+Bunu biliyor muydunuz? Cisme uygulanan net itme çizgisel momentum değişimine eşittir; çarpışma süresi uzadıkça etki eden ortalama kuvvet azalır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Fizik 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-fizik-hafta-5
+#derskutusu #fizik #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/6-kuran-i-kerim-6
+## bilgi-11-hitabet-ve-mesleki-uygulama-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-hitabet-ve-mesleki-uygulama-5.png
 
-#derskutusu #6sınıf #kuranıkerim #konuözeti #dersnotu #meb #ortaokul
+```
+Bunu biliyor muydunuz? Din hizmetlerinde etkili iletişim; muhatap analizi, hikmetli ve müjdeleyici üslup ile samimi beden dilinin bütünleşmesine dayanır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Hitabet ve Mesleki Uygulama 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-hitabet-ve-mesleki-uygulama-hafta-5
+#derskutusu #hitabet #11sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-6-peygamberimizin-hayati-6` — 6. Sınıf · peygamberimizin-hayati · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-6-peygamberimizin-hayati-6.png` (`public/sosyal/bilgi-6-peygamberimizin-hayati-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/6-peygamberimizin-hayati-6
-- **Metin:**
-```text
-Gençlik Yıllarında Peygamberimizin Ahlakı
+## bilgi-11-ingilizce-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-ingilizce-5.png
 
-Peygamberimiz (sav) gençlik yıllarında iffeti, dürüst ticareti, Hilfü’l-Fudûl üyeliği ve Kâbe hakemliğiyle El-Emîn sıfatını kazanmıştır.
+```
+Bunu biliyor muydunuz? İngilizcede used to hem geçmiş eylem hem durumları anlatırken would yalnız eylemlerle, was/were able to ise özel başarılarla kullanılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf İngilizce 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-ingilizce-hafta-5
+#derskutusu #ingilizce #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/6-peygamberimizin-hayati-6
+## bilgi-11-kimya-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-kimya-5.png
 
-#derskutusu #6sınıf #peygamberimizinhayatı #konuözeti #dersnotu #meb #ortaokul
 ```
+Bunu biliyor muydunuz? Hess Yasası’na göre ara basamakların toplanmasıyla elde edilen net tepkimenin entalpisi basamakların entalpi değişimleri toplamına eşittir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Kimya 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-kimya-hafta-5
+#derskutusu #kimya #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-6-temel-dini-bilgiler-6` — 6. Sınıf · temel-dini-bilgiler · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-6-temel-dini-bilgiler-6.png` (`public/sosyal/bilgi-6-temel-dini-bilgiler-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/6-temel-dini-bilgiler-6
-- **Metin:**
-```text
-İman-Ahlak Bütünlüğü ve Mümin Kimliğinin İlkeleri
+## bilgi-11-kuran-i-kerim-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-kuran-i-kerim-5.png
 
-Mümin kimliği; iman, ibadet ve ihsan bütünlüğü içinde emanete sadakat ve kardeşlik ahlakını günlük hayatta yaşatmaktır.
+```
+Bunu biliyor muydunuz? Kehf Suresi 1-10. ayetler tevhid inancını ve Ashab-ı Kehf’in samimi duasını anlatırken 1. ayette tecvitteki dört sekteden biri uygulanır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Kur’an-ı Kerim 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-kuran-i-kerim-hafta-5
+#derskutusu #kuranıkerim #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/6-temel-dini-bilgiler-6
+## bilgi-11-matematik-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-matematik-5.png
 
-#derskutusu #6sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #ortaokul
+```
+Bunu biliyor muydunuz? Trigonometride 180° = π radyan dönüşümü kullanılır ve her yönlü açının birim çember üzerindeki yeri [0, 2π) aralığındaki esas ölçüsüyle bulunur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Matematik 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-matematik-hafta-5
+#derskutusu #matematik #11sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-7-arapca-6` — 7. Sınıf · arapca · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-7-arapca-6.png` (`public/sosyal/bilgi-7-arapca-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/7-arapca-6
-- **Metin:**
-```text
-Arapçada Meslekler ve Çalışma Yerleri
+## bilgi-11-mesleki-arapca-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-mesleki-arapca-5.png
 
-Arapçada mesleklerin çalışma yerleri eyne ya’melu sorusu ve fî harf-i cerriyle kurulan mekân ifadeleriyle anlatılır.
+```
+Bunu biliyor muydunuz? Mesleki Arapçada taharet, vudû, ğusl ve teyemmüm terimleri ile abdestin farz ve sünnetlerini bildiren fıkhi kalıplar temel ibadet dilini oluşturur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Mesleki Arapça 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-mesleki-arapca-hafta-5
+#derskutusu #meslekiarapça #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/7-arapca-6
+## bilgi-11-peygamberimizin-hayati-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-peygamberimizin-hayati-5.png
 
-#derskutusu #7sınıf #arapça #konuözeti #dersnotu #meb #ortaokul
+```
+Bunu biliyor muydunuz? Hicret sonrasında Medine’de inşa edilen Mescid-i Nebi, Suffe, muâhât kardeşliği ve Medine Vesikası İslam toplumunun kurucu temellerini oluşturmuştur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Peygamberimizin Hayatı 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-peygamberimizin-hayati-hafta-5
+#derskutusu #peygamberimizinhayatı #11sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-7-kuran-i-kerim-6` — 7. Sınıf · kuran-i-kerim · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-7-kuran-i-kerim-6.png` (`public/sosyal/bilgi-7-kuran-i-kerim-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/7-kuran-i-kerim-6
-- **Metin:**
-```text
-Vitir Namazında Okunan Kunut Duaları ve Anlamları
+## bilgi-11-tarih-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-tarih-5.png
 
-Kunut duaları vitir namazının son rekâtında okunan, yalnız Allah’a kulluk ve bağlılık sözü veren kapsamlı yakarış dualarıdır.
+```
+Bunu biliyor muydunuz? 18. yüzyılda Osmanlı Devleti Lale Devri’nde kültürel, I. Mahmud ve I. Abdülhamid dönemlerinde ise Batı tarzı askerî-teknik ıslahatlara yönelmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Tarih 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-tarih-hafta-5
+#derskutusu #tarih #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/7-kuran-i-kerim-6
+## bilgi-11-tefsir-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-tefsir-5.png
 
-#derskutusu #7sınıf #kuranıkerim #konuözeti #dersnotu #meb #ortaokul
 ```
+Bunu biliyor muydunuz? Tefsir ilmi Hz. Peygamber’in beyanıyla başlamış; Sahabe ve Tabiîn döneminde Mekke, Medine ve Kûfe tefsir ekolleriyle kurumsallaşmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Tefsir 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-tefsir-hafta-5
+#derskutusu #tefsir #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-7-matematik-6` — 7. Sınıf · matematik · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-7-matematik-6.png` (`public/sosyal/bilgi-7-matematik-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/7-matematik-6
-- **Metin:**
-```text
-Rasyonel Sayılarla Dört İşlem ve Kuvvet Alma
+## bilgi-11-temel-dini-bilgiler-5
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-temel-dini-bilgiler-5.png
 
-Rasyonel sayılarla problemlerde toplama-çıkarmada payda eşitlenir, bölmede ikinci kesir ters çevrilip çarpılır ve işlem önceliği korunur.
+```
+Bunu biliyor muydunuz? İslam’da aile kurumu meşru nikâh akdi üzerine inşa edilir; huzur, sevgi, merhamet ve karşılıklı hak-sorumluluk bilinciyle korunur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Temel Dinî Bilgiler 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-temel-dini-bilgiler-hafta-5
+#derskutusu #temeldinibilgiler #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/7-matematik-6
+## bilgi-12-biyoloji-5
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-biyoloji-5.png
 
-#derskutusu #7sınıf #matematik #konuözeti #dersnotu #meb #ortaokul
+```
+Bunu biliyor muydunuz? ATP hücre içinde depolanamaz ve hücreden hücreye aktarılamaz; fosforilasyon çeşitleriyle anlık üretilip tüketilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Biyoloji 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-biyoloji-hafta-5
+#derskutusu #biyoloji #12sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-7-peygamberimizin-hayati-6` — 7. Sınıf · peygamberimizin-hayati · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-7-peygamberimizin-hayati-6.png` (`public/sosyal/bilgi-7-peygamberimizin-hayati-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/7-peygamberimizin-hayati-6
-- **Metin:**
-```text
-İsra ve Miraç Mucizesi İle Üç Büyük Hediye
+## bilgi-12-cografya-5
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-cografya-5.png
 
-İsrâ ve Miraç mucizesi Hüzün Yılı’nda Peygamberimize ilahi teselli olmuş ve ümmete beş vakit namaz hediyesini getirmiştir.
+```
+Bunu biliyor muydunuz? Küresel dış ticarette en ekonomik ulaşım türü deniz yoludur; Süveyş, Panama, Hürmüz ve Malakka su yolları dünya ticaretine yön verir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Coğrafya 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-cografya-hafta-5
+#derskutusu #coğrafya #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/7-peygamberimizin-hayati-6
+## bilgi-12-din-kulturu-5
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-din-kulturu-5.png
 
-#derskutusu #7sınıf #peygamberimizinhayatı #konuözeti #dersnotu #meb #ortaokul
+```
+Bunu biliyor muydunuz? Hârizmî, İbn Sînâ, İbnü’l-Heysem, Bîrûnî ve İbn Haldun gibi Müslüman bilginler matematikten tıbba modern bilimin temellerini atmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Din Kültürü ve Ahlak Bilgisi 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-din-kulturu-ve-ahlak-bilgisi-hafta-5
+#derskutusu #dinkültürü #12sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-7-sosyal-bilgiler-6` — 7. Sınıf · sosyal-bilgiler · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-7-sosyal-bilgiler-6.png` (`public/sosyal/bilgi-7-sosyal-bilgiler-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/7-sosyal-bilgiler-6
-- **Metin:**
-```text
-Millî Dayanışma Ruhu ve Küreselleşmenin Etkileri
+## bilgi-12-edebiyat-5
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-edebiyat-5.png
 
-Türk toplumu millî meselelerde dayanışma ruhuyla kenetlenirken küreselleşme sürecinde millî ve kültürel değerlerini koruyarak dünyayla etkileşir.
+```
+Bunu biliyor muydunuz? Saf şiir anlayışı şiiri soylu bir sanat kabul ederek ahenk, imge ve iç musikiyi her türlü ideolojik söylemin üstünde tutmuştur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Türk Dili ve Edebiyatı 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-turk-dili-ve-edebiyati-hafta-5
+#derskutusu #edebiyat #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/7-sosyal-bilgiler-6
+## bilgi-12-fizik-5
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-fizik-5.png
 
-#derskutusu #7sınıf #sosyalbilgiler #konuözeti #dersnotu #meb #ortaokul
 ```
+Bunu biliyor muydunuz? Kütle çekim kuvveti uzaklığın karesiyle ters orantılıdır; Kepler’in periyotlar yasasına göre her gezegen için R³ / T² oranı sabittir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Fizik 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-fizik-hafta-5
+#derskutusu #fizik #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-7-temel-dini-bilgiler-6` — 7. Sınıf · temel-dini-bilgiler · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-7-temel-dini-bilgiler-6.png` (`public/sosyal/bilgi-7-temel-dini-bilgiler-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/7-temel-dini-bilgiler-6
-- **Metin:**
-```text
-İman, İbadet ve Ahlak Bütünlüğünde Mümin Kimliği
+## bilgi-12-ingilizce-5
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-ingilizce-5.png
 
-Mümin kimliği; kalpteki samimi imanın düzenli ibadet ve güven veren güzel ahlakla bütünleşerek hayatta görünür olmasıdır.
+```
+Bunu biliyor muydunuz? İngilizcede the + adjective yapısı çoğul bir topluluğu anlatırken toplumsal kurallar modal + be + V3 edilgen yapısıyla ifade edilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf İngilizce 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-ingilizce-hafta-5
+#derskutusu #ingilizce #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/7-temel-dini-bilgiler-6
+## bilgi-12-inkilap-tarihi-5
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-inkilap-tarihi-5.png
 
-#derskutusu #7sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #ortaokul
+```
+Bunu biliyor muydunuz? Millî Mücadele’nin programı Amasya Genelgesi ile çizilmiş, Erzurum ve Sivas kongrelerinde ulusal egemenlik ve tam bağımsızlık kararlaştırılmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf T.C. İnkılap Tarihi 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-tc-inkilap-tarihi-ve-ataturkculuk-hafta-5
+#derskutusu #inkılaptarihi #12sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-7-turkce-6` — 7. Sınıf · turkce · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-7-turkce-6.png` (`public/sosyal/bilgi-7-turkce-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/7-turkce-6
-- **Metin:**
-```text
-Zaman Yönetimi, Metin Karşılaştırma ve Özetleme
+## bilgi-12-islam-kultur-ve-medeniyeti-5
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-5.png
 
-Metin karşılaştırmada konu ve ana fikir ortaklıkları incelenirken özetlemede metnin özü kendi ifadelerimizle kısaltılarak aktarılır.
+```
+Bunu biliyor muydunuz? İslam medeniyeti tevhid, ilim, adalet ve vakıf ruhuyla Endülüs’ten Mâverâünnehir’e uzanan geniş havzalarda insanlığa rehberlik etmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf İslam Kültür ve Medeniyeti 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-islam-kultur-ve-medeniyeti-hafta-5
+#derskutusu #islamkültürü #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/7-turkce-6
+## bilgi-12-kelam-5
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-kelam-5.png
 
-#derskutusu #7sınıf #türkçe #konuözeti #dersnotu #meb #ortaokul
+```
+Bunu biliyor muydunuz? Kelam ilminde bilginin üç nesnel kaynağı sağlam duyular, doğru haber ve selim akıldır; varlık ise Kadîm (Allah) ve Hâdis (âlem) olarak ayrılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Kelam 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-kelam-hafta-5
+#derskutusu #kelam #12sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-8-arapca-6` — 8. Sınıf · arapca · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-8-arapca-6.png` (`public/sosyal/bilgi-8-arapca-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/8-arapca-6
-- **Metin:**
-```text
-Arapçada Gezi Türleri ve Ulaşım Araçları
+## bilgi-12-kimya-5
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-kimya-5.png
 
-Arapçada gezi türleri er-rıhle tamlamalarıyla, kullanılan ulaşım araçları ise bi- harf-i cerriyle kurulan kalıplarla ifade edilir.
+```
+Bunu biliyor muydunuz? Elektrolizde açığa çıkan madde miktarı devreden geçen yükle doğru orantılıdır; metalleri korozyondan korumak için kurban elektrot kullanılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Kimya 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-kimya-hafta-5
+#derskutusu #kimya #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/8-arapca-6
+## bilgi-12-kuran-i-kerim-5
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-kuran-i-kerim-5.png
 
-#derskutusu #8sınıf #arapça #konuözeti #dersnotu #meb #lgs
 ```
+Bunu biliyor muydunuz? Kehf Suresi’ndeki Hz. Musa ve Hızır kıssası, ilim yolunda tevazu ve sabrı öğretirken olayların ardındaki ilahi hikmete teslimiyeti vurgular.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Kur’an-ı Kerim 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-kuran-i-kerim-hafta-5
+#derskutusu #kuranıkerim #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-8-din-kulturu-6` — 8. Sınıf · din-kulturu-ve-ahlak-bilgisi · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-8-din-kulturu-6.png` (`public/sosyal/bilgi-8-din-kulturu-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/8-din-kulturu-ve-ahlak-bilgisi-6
-- **Metin:**
-```text
-Ulu’l-Azm Peygamberlerden Hz. Musa’nın (as) Hayatı
+## bilgi-12-matematik-5
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-matematik-5.png
 
-Hz. Musa (as) kendisine Tevrat verilen, kardeşi Hz. Harun ile Firavun’a karşı tevhid mücadelesi yürüten Ulu’l-Azm bir peygamberdir.
+```
+Bunu biliyor muydunuz? Gerçek sayı dizilerinin tanım kümesi pozitif tam sayılardır; sabit, eşit ve indirgemeli diziler genel terim kurallarıyla modellenir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Matematik 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-matematik-hafta-5
+#derskutusu #matematik #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/8-din-kulturu-ve-ahlak-bilgisi-6
+## bilgi-12-mesleki-arapca-5
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-mesleki-arapca-5.png
 
-#derskutusu #8sınıf #dinkültürü #konuözeti #dersnotu #meb #lgs
+```
+Bunu biliyor muydunuz? Mesleki Arapçada nefis tezkiyesi ve güzel ahlak metinleri, kök fiillere harf eklenerek türetilen sülâsî mezîd fiil bâblarıyla kurulur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Mesleki Arapça 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-mesleki-arapca-hafta-5
+#derskutusu #meslekiarapça #12sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-8-fen-bilimleri-6` — 8. Sınıf · fen-bilimleri · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-8-fen-bilimleri-6.png` (`public/sosyal/bilgi-8-fen-bilimleri-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/8-fen-bilimleri-6
-- **Metin:**
-```text
-Kalıtım ve Mendel’in Bezelye Çaprazlaması
+## bilgi-12-peygamberimizin-hayati-5
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-peygamberimizin-hayati-5.png
 
-Kalıtımda iki melez dölün (Aa x Aa) çaprazlanması sonucunda 3:1 oranında (%75 baskın, %25 çekinik) fenotip dağılımı elde edilir.
+```
+Bunu biliyor muydunuz? Hz. Peygamber (sav) gençlerin potansiyeline güvenerek onları öğretmen, elçi, kadı ve komutan olarak İslam toplumunun ön saflarında görevlendirmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Peygamberimizin Hayatı 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-peygamberimizin-hayati-hafta-5
+#derskutusu #peygamberimizinhayatı #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/8-fen-bilimleri-6
+## bilgi-12-temel-dini-bilgiler-5
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-temel-dini-bilgiler-5.png
 
-#derskutusu #8sınıf #fenbilimleri #konuözeti #dersnotu #meb #lgs
+```
+Bunu biliyor muydunuz? Tevhid inancı iman ile salih ameli bütünleştirir ve yeryüzünün halifesi olan insana hayatın her alanında ahlaki sorumluluk yükler.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Temel Dinî Bilgiler 5. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-temel-dini-bilgiler-hafta-5
+#derskutusu #temeldinibilgiler #12sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-8-ingilizce-6` — 8. Sınıf · ingilizce · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-8-ingilizce-6.png` (`public/sosyal/bilgi-8-ingilizce-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/8-ingilizce-6
-- **Metin:**
-```text
-İngilizcede Tercihler (Prefer) ve Kişisel Görüşler
+## bilgi-5-arapca-6
+Sıra: 2026-10-17 12:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-5-arapca-6.png
 
-İngilizcede tercihler prefer ... to ... kalıbıyla, beğeniler ve kişisel görüşler ise fond of, can’t stand ve niteleme sıfatlarıyla anlatılır.
+```
+Bunu biliyor muydunuz? Arapçada iletişim es-selâmu kable’l-kelâm ilkesiyle başlar; mâ ismuke, keyfe hâluke ve hel ente kalıplarıyla tanışma diyaloğu kurulur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Arapça 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-arapca-hafta-6
+#derskutusu #arapça #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/8-ingilizce-6
+## bilgi-5-kuran-i-kerim-6
+Sıra: 2026-10-17 12:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-5-kuran-i-kerim-6.png
 
-#derskutusu #8sınıf #ingilizce #konuözeti #dersnotu #meb #lgs
 ```
+Bunu biliyor muydunuz? Kur’an harfleri üstün, esre ve ötre harekeleriyle seslendirilirken harfin ince, kalın veya peltek özelliğine dikkat edilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Kur’an-ı Kerim 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-kuran-i-kerim-hafta-6
+#derskutusu #kuranıkerim #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-8-inkilap-tarihi-6` — 8. Sınıf · tc-inkilap-tarihi-ve-ataturkculuk · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-8-inkilap-tarihi-6.png` (`public/sosyal/bilgi-8-inkilap-tarihi-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/8-tc-inkilap-tarihi-ve-ataturkculuk-6
-- **Metin:**
-```text
-I. Dünya Savaşı’nda Osmanlı Cepheleri
+## bilgi-5-peygamberimizin-hayati-6
+Sıra: 2026-10-17 12:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-5-peygamberimizin-hayati-6.png
 
-Osmanlı Devleti I. Dünya Savaşı’nda Kafkas ve Kanal’da taarruz, Çanakkale ve güney cephelerinde savunma, Avrupa’da yardım savaşı vermiştir.
+```
+Bunu biliyor muydunuz? Allah (cc) Fil Vakası’nda Kâbe’yi ebâbîl kuşlarıyla korumuş; aynı yıl (571) âlemlere rahmet olan Hz. Muhammed (sav) dünyaya gelmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Peygamberimizin Hayatı 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-peygamberimizin-hayati-hafta-6
+#derskutusu #peygamberimizinhayatı #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/8-tc-inkilap-tarihi-ve-ataturkculuk-6
+## bilgi-5-temel-dini-bilgiler-6
+Sıra: 2026-10-17 12:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-5-temel-dini-bilgiler-6.png
 
-#derskutusu #8sınıf #inkılaptarihi #konuözeti #dersnotu #meb #lgs
+```
+Bunu biliyor muydunuz? Mümin kimliği kalpteki imanın doğruluk (sıdk), emanet bilinci, selamlaşma ve güzel ahlak olarak günlük hayata yansımasıdır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Temel Dinî Bilgiler 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-temel-dini-bilgiler-hafta-6
+#derskutusu #temeldinibilgiler #5sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-8-kuran-i-kerim-6` — 8. Sınıf · kuran-i-kerim · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-8-kuran-i-kerim-6.png` (`public/sosyal/bilgi-8-kuran-i-kerim-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/8-kuran-i-kerim-6
-- **Metin:**
-```text
-Hz. Yakup ve Hz. Yusuf (as) Kıssası
+## bilgi-6-arapca-6
+Sıra: 2026-10-17 12:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-6-arapca-6.png
 
-Hz. Yakup ve Hz. Yusuf kıssası; hasedin zararını, zorluklara güzel sabırla (sabr-ı cemil) dayanmayı ve iffetle yükselmeyi öğretir.
+```
+Bunu biliyor muydunuz? Arapçada meslek ve çalışma yeri mâ mihnetuhû ve ya’melu fî ile anlatılır; el takısı şemsî ve kamerî harflere göre okunur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Arapça 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-arapca-hafta-6
+#derskutusu #arapça #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/8-kuran-i-kerim-6
+## bilgi-6-kuran-i-kerim-6
+Sıra: 2026-10-17 12:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-6-kuran-i-kerim-6.png
 
-#derskutusu #8sınıf #kuranıkerim #konuözeti #dersnotu #meb #lgs
+```
+Bunu biliyor muydunuz? Salli ve Bârik duaları namazların son oturuşunda okunan, Hz. Muhammed (sav) ve ailesine rahmet ve bereket dileyen salavat dualarıdır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Kur’an-ı Kerim 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-kuran-i-kerim-hafta-6
+#derskutusu #kuranıkerim #6sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-8-peygamberimizin-hayati-6` — 8. Sınıf · peygamberimizin-hayati · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-8-peygamberimizin-hayati-6.png` (`public/sosyal/bilgi-8-peygamberimizin-hayati-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/8-peygamberimizin-hayati-6
-- **Metin:**
-```text
-Medine’de İslam Toplumunun Kurucu Temelleri
+## bilgi-6-peygamberimizin-hayati-6
+Sıra: 2026-10-17 12:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-6-peygamberimizin-hayati-6.png
 
-Medine’de İslam toplumu Mescid-i Nebi, Ashâb-ı Suffe, Ensar-Muhacir kardeşliği (muâhât) ve Medine Sözleşmesi üzerinde yükselmiştir.
+```
+Bunu biliyor muydunuz? Peygamberimiz (sav) gençlik yıllarında iffeti, dürüst ticareti, Hilfü’l-Fudûl üyeliği ve Kâbe hakemliğiyle El-Emîn sıfatını kazanmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Peygamberimizin Hayatı 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-peygamberimizin-hayati-hafta-6
+#derskutusu #peygamberimizinhayatı #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/8-peygamberimizin-hayati-6
+## bilgi-6-temel-dini-bilgiler-6
+Sıra: 2026-10-17 12:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-6-temel-dini-bilgiler-6.png
 
-#derskutusu #8sınıf #peygamberimizinhayatı #konuözeti #dersnotu #meb #lgs
 ```
+Bunu biliyor muydunuz? Mümin kimliği; iman, ibadet ve ihsan bütünlüğü içinde emanete sadakat ve kardeşlik ahlakını günlük hayatta yaşatmaktır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Temel Dinî Bilgiler 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-temel-dini-bilgiler-hafta-6
+#derskutusu #temeldinibilgiler #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-8-temel-dini-bilgiler-6` — 8. Sınıf · temel-dini-bilgiler · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-8-temel-dini-bilgiler-6.png` (`public/sosyal/bilgi-8-temel-dini-bilgiler-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/8-temel-dini-bilgiler-6
-- **Metin:**
-```text
-Kur’an-ı Kerim’e Karşı Ahlaki Sorumluluklarımız
+## bilgi-7-arapca-6
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-arapca-6.png
 
-Kur’an-ı Kerim’e karşı görevimiz; ona iman etmek, tertîl üzere okumak, anlamını tedebbür etmek ve ahlaki ilkelerini yaşamaktır.
+```
+Bunu biliyor muydunuz? Arapçada mesleklerin çalışma yerleri eyne ya’melu sorusu ve fî harf-i cerriyle kurulan mekân ifadeleriyle anlatılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Arapça 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-arapca-hafta-6
+#derskutusu #arapça #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/8-temel-dini-bilgiler-6
+## bilgi-7-kuran-i-kerim-6
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-kuran-i-kerim-6.png
 
-#derskutusu #8sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #lgs
+```
+Bunu biliyor muydunuz? Kunut duaları vitir namazının son rekâtında okunan, yalnız Allah’a kulluk ve bağlılık sözü veren kapsamlı yakarış dualarıdır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Kur’an-ı Kerim 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-kuran-i-kerim-hafta-6
+#derskutusu #kuranıkerim #7sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-9-arapca-6` — 9. Sınıf · arapca · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-9-arapca-6.png` (`public/sosyal/bilgi-9-arapca-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/9-arapca-6
-- **Metin:**
-```text
-Arapçada İşaret İsimleri, El-Takısı ve Emir Fiiller
+## bilgi-7-matematik-6
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-matematik-6.png
 
-Arapçada tanışma ve sınıf içi iletişimde hâzâ-hâzihî işaret isimleri, şemsî-kamerî el- takısı ve eril-dişil emir fiiller kullanılır.
+```
+Bunu biliyor muydunuz? Rasyonel sayılarla problemlerde toplama-çıkarmada payda eşitlenir, bölmede ikinci kesir ters çevrilip çarpılır ve işlem önceliği korunur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Matematik 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-matematik-hafta-6
+#derskutusu #matematik #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/9-arapca-6
+## bilgi-7-peygamberimizin-hayati-6
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-peygamberimizin-hayati-6.png
 
-#derskutusu #9sınıf #arapça #konuözeti #dersnotu #meb #tyt
+```
+Bunu biliyor muydunuz? İsrâ ve Miraç mucizesi Hüzün Yılı’nda Peygamberimize ilahi teselli olmuş ve ümmete beş vakit namaz hediyesini getirmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Peygamberimizin Hayatı 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-peygamberimizin-hayati-hafta-6
+#derskutusu #peygamberimizinhayatı #7sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-9-biyoloji-6` — 9. Sınıf · biyoloji · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-9-biyoloji-6.png` (`public/sosyal/bilgi-9-biyoloji-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/9-biyoloji-6
-- **Metin:**
-```text
-Bilimsel Araştırma Süreci ve Bilim Etiği
+## bilgi-7-sosyal-bilgiler-6
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-sosyal-bilgiler-6.png
 
-Bilimsel araştırmalar gözlem, hipotez ve kontrollü deneylerle yürütülürken dürüstlük ve intihalden kaçınma gibi bilim etiği ilkelerine uyulur.
+```
+Bunu biliyor muydunuz? Türk toplumu millî meselelerde dayanışma ruhuyla kenetlenirken küreselleşme sürecinde millî ve kültürel değerlerini koruyarak dünyayla etkileşir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Sosyal Bilgiler 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-sosyal-bilgiler-hafta-6
+#derskutusu #sosyalbilgiler #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/9-biyoloji-6
+## bilgi-7-temel-dini-bilgiler-6
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-temel-dini-bilgiler-6.png
 
-#derskutusu #9sınıf #biyoloji #konuözeti #dersnotu #meb #tyt
 ```
+Bunu biliyor muydunuz? Mümin kimliği; kalpteki samimi imanın düzenli ibadet ve güven veren güzel ahlakla bütünleşerek hayatta görünür olmasıdır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Temel Dinî Bilgiler 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-temel-dini-bilgiler-hafta-6
+#derskutusu #temeldinibilgiler #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-9-cografya-6` — 9. Sınıf · cografya · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-9-cografya-6.png` (`public/sosyal/bilgi-9-cografya-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/9-cografya-6
-- **Metin:**
-```text
-Harita Elemanları ve Projeksiyon Yöntemleri
+## bilgi-7-turkce-6
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-turkce-6.png
 
-Harita çiziminde küresellikten kaynaklanan bozulmaları en aza indirmek için silindir, konik ve düzlem projeksiyon yöntemleri kullanılır.
+```
+Bunu biliyor muydunuz? Metin karşılaştırmada konu ve ana fikir ortaklıkları incelenirken özetlemede metnin özü kendi ifadelerimizle kısaltılarak aktarılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Türkçe 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-turkce-hafta-6
+#derskutusu #türkçe #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/9-cografya-6
+## bilgi-8-arapca-6
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-arapca-6.png
 
-#derskutusu #9sınıf #coğrafya #konuözeti #dersnotu #meb #tyt
+```
+Bunu biliyor muydunuz? Arapçada gezi türleri er-rıhle tamlamalarıyla, kullanılan ulaşım araçları ise bi- harf-i cerriyle kurulan kalıplarla ifade edilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Arapça 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-arapca-hafta-6
+#derskutusu #arapça #8sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-9-din-kulturu-6` — 9. Sınıf · din-kulturu-ve-ahlak-bilgisi · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-9-din-kulturu-6.png` (`public/sosyal/bilgi-9-din-kulturu-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/9-din-kulturu-ve-ahlak-bilgisi-6
-- **Metin:**
-```text
-İbadet ve Dua Eden Bir Varlık Olarak İnsan
+## bilgi-8-din-kulturu-6
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-din-kulturu-6.png
 
-İnsan ibadet ve dua ile Yaratıcısıyla bağ kurar; fiili dua ile emek verip kavli dua ile yalnız Allah’tan yardım diler.
+```
+Bunu biliyor muydunuz? Hz. Musa (as) kendisine Tevrat verilen, kardeşi Hz. Harun ile Firavun’a karşı tevhid mücadelesi yürüten Ulu’l-Azm bir peygamberdir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Din Kültürü ve Ahlak Bilgisi 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-din-kulturu-ve-ahlak-bilgisi-hafta-6
+#derskutusu #dinkültürü #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/9-din-kulturu-ve-ahlak-bilgisi-6
+## bilgi-8-fen-bilimleri-6
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-fen-bilimleri-6.png
 
-#derskutusu #9sınıf #dinkültürü #konuözeti #dersnotu #meb #tyt
+```
+Bunu biliyor muydunuz? Kalıtımda iki melez dölün (Aa x Aa) çaprazlanması sonucunda 3:1 oranında (%75 baskın, %25 çekinik) fenotip dağılımı elde edilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Fen Bilimleri 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-fen-bilimleri-hafta-6
+#derskutusu #fenbilimleri #8sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-9-edebiyat-6` — 9. Sınıf · turk-dili-ve-edebiyati · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-9-edebiyat-6.png` (`public/sosyal/bilgi-9-edebiyat-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/9-turk-dili-ve-edebiyati-6
-- **Metin:**
-```text
-Mülakat (Görüşme) Türü ve Röportajdan Farkları
+## bilgi-8-ingilizce-6
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-ingilizce-6.png
 
-Mülakat uzman kişinin görüşlerini doğrudan soru-cevap yapısıyla aktarırken röportaj yazarın gözlem ve belgeleriyle zenginleştirilir.
+```
+Bunu biliyor muydunuz? İngilizcede tercihler prefer ... to ... kalıbıyla, beğeniler ve kişisel görüşler ise fond of, can’t stand ve niteleme sıfatlarıyla anlatılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf İngilizce 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-ingilizce-hafta-6
+#derskutusu #ingilizce #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/9-turk-dili-ve-edebiyati-6
+## bilgi-8-inkilap-tarihi-6
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-inkilap-tarihi-6.png
 
-#derskutusu #9sınıf #edebiyat #konuözeti #dersnotu #meb #tyt
 ```
+Bunu biliyor muydunuz? Osmanlı Devleti I. Dünya Savaşı’nda Kafkas ve Kanal’da taarruz, Çanakkale ve güney cephelerinde savunma, Avrupa’da yardım savaşı vermiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf T.C. İnkılap Tarihi 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-tc-inkilap-tarihi-ve-ataturkculuk-hafta-6
+#derskutusu #inkılaptarihi #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-9-fizik-6` — 9. Sınıf · fizik · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-9-fizik-6.png` (`public/sosyal/bilgi-9-fizik-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/9-fizik-6
-- **Metin:**
-```text
-Skaler ve Vektörel Niceliklerin Özellikleri
+## bilgi-8-kuran-i-kerim-6
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-kuran-i-kerim-6.png
 
-Skaler nicelikler yalnız sayı ve birimle tanımlanırken vektörel nicelikler başlangıç noktası, doğrultu, yön ve büyüklükle belirtilir.
+```
+Bunu biliyor muydunuz? Hz. Yakup ve Hz. Yusuf kıssası; hasedin zararını, zorluklara güzel sabırla (sabr-ı cemil) dayanmayı ve iffetle yükselmeyi öğretir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Kur’an-ı Kerim 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-kuran-i-kerim-hafta-6
+#derskutusu #kuranıkerim #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/9-fizik-6
+## bilgi-8-peygamberimizin-hayati-6
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-peygamberimizin-hayati-6.png
 
-#derskutusu #9sınıf #fizik #konuözeti #dersnotu #meb #tyt
+```
+Bunu biliyor muydunuz? Medine’de İslam toplumu Mescid-i Nebi, Ashâb-ı Suffe, Ensar-Muhacir kardeşliği (muâhât) ve Medine Sözleşmesi üzerinde yükselmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Peygamberimizin Hayatı 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-peygamberimizin-hayati-hafta-6
+#derskutusu #peygamberimizinhayatı #8sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-9-ingilizce-6` — 9. Sınıf · ingilizce · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-9-ingilizce-6.png` (`public/sosyal/bilgi-9-ingilizce-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/9-ingilizce-6
-- **Metin:**
-```text
-Mekân Betimleme: There is / There are ve Yer Edatları
+## bilgi-8-temel-dini-bilgiler-6
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-temel-dini-bilgiler-6.png
 
-İngilizcede mekân tanıtımlarında varlık bildirmek için there is / there are, konum belirtmek için ise prepositions of place kullanılır.
+```
+Bunu biliyor muydunuz? Kur’an-ı Kerim’e karşı görevimiz; ona iman etmek, tertîl üzere okumak, anlamını tedebbür etmek ve ahlaki ilkelerini yaşamaktır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Temel Dinî Bilgiler 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-temel-dini-bilgiler-hafta-6
+#derskutusu #temeldinibilgiler #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/9-ingilizce-6
+## bilgi-9-arapca-6
+Sıra: 2026-10-17 13:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-arapca-6.png
 
-#derskutusu #9sınıf #ingilizce #konuözeti #dersnotu #meb #tyt
+```
+Bunu biliyor muydunuz? Arapçada tanışma ve sınıf içi iletişimde hâzâ-hâzihî işaret isimleri, şemsî-kamerî el- takısı ve eril-dişil emir fiiller kullanılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Arapça 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-arapca-hafta-6
+#derskutusu #arapça #9sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-9-kimya-6` — 9. Sınıf · kimya · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-9-kimya-6.png` (`public/sosyal/bilgi-9-kimya-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/9-kimya-6
-- **Metin:**
-```text
-Atom Orbitalleri ve Elektron Dizilimi Kuralları
+## bilgi-9-biyoloji-6
+Sıra: 2026-10-17 13:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-biyoloji-6.png
 
-Atomda elektron dizilimi Aufbau (artan enerji), Pauli (zıt spin) ve Hund (eş enerjili orbitallere tek tek yerleşme) kurallarına göre yazılır.
+```
+Bunu biliyor muydunuz? Bilimsel araştırmalar gözlem, hipotez ve kontrollü deneylerle yürütülürken dürüstlük ve intihalden kaçınma gibi bilim etiği ilkelerine uyulur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Biyoloji 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-biyoloji-hafta-6
+#derskutusu #biyoloji #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/9-kimya-6
+## bilgi-9-cografya-6
+Sıra: 2026-10-17 13:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-cografya-6.png
 
-#derskutusu #9sınıf #kimya #konuözeti #dersnotu #meb #tyt
 ```
+Bunu biliyor muydunuz? Harita çiziminde küresellikten kaynaklanan bozulmaları en aza indirmek için silindir, konik ve düzlem projeksiyon yöntemleri kullanılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Coğrafya 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-cografya-hafta-6
+#derskutusu #coğrafya #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-9-kuran-i-kerim-6` — 9. Sınıf · kuran-i-kerim · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-9-kuran-i-kerim-6.png` (`public/sosyal/bilgi-9-kuran-i-kerim-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/9-kuran-i-kerim-6
-- **Metin:**
-```text
-Kur’an Kıraatinde Mahreç ve Özel Durumlar
+## bilgi-9-din-kulturu-6
+Sıra: 2026-10-17 13:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-din-kulturu-6.png
 
-Kur’an tilavetinde harflerin mahreç ve sıfatlarına uyulurken altında sıfır işareti bulunan uzatma harfleri ve vasıl hemzeleri geçişte okunmaz.
+```
+Bunu biliyor muydunuz? İnsan ibadet ve dua ile Yaratıcısıyla bağ kurar; fiili dua ile emek verip kavli dua ile yalnız Allah’tan yardım diler.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Din Kültürü ve Ahlak Bilgisi 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-din-kulturu-ve-ahlak-bilgisi-hafta-6
+#derskutusu #dinkültürü #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/9-kuran-i-kerim-6
+## bilgi-9-edebiyat-6
+Sıra: 2026-10-17 13:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-edebiyat-6.png
 
-#derskutusu #9sınıf #kuranıkerim #konuözeti #dersnotu #meb #tyt
+```
+Bunu biliyor muydunuz? Mülakat uzman kişinin görüşlerini doğrudan soru-cevap yapısıyla aktarırken röportaj yazarın gözlem ve belgeleriyle zenginleştirilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Türk Dili ve Edebiyatı 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-turk-dili-ve-edebiyati-hafta-6
+#derskutusu #edebiyat #9sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-9-matematik-6` — 9. Sınıf · matematik · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-9-matematik-6.png` (`public/sosyal/bilgi-9-matematik-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/9-matematik-6
-- **Metin:**
-```text
-Gerçek Sayıların Cebirsel İşlem Özellikleri
+## bilgi-9-fizik-6
+Sıra: 2026-10-17 13:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-fizik-6.png
 
-Gerçek sayıların değişme, birleşme ve dağılma özellikleri cebirsel ifadelerin sadeleştirilmesi ve çarpanlara ayrılmasının temelini oluşturur.
+```
+Bunu biliyor muydunuz? Skaler nicelikler yalnız sayı ve birimle tanımlanırken vektörel nicelikler başlangıç noktası, doğrultu, yön ve büyüklükle belirtilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Fizik 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-fizik-hafta-6
+#derskutusu #fizik #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/9-matematik-6
+## bilgi-9-ingilizce-6
+Sıra: 2026-10-17 13:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-ingilizce-6.png
 
-#derskutusu #9sınıf #matematik #konuözeti #dersnotu #meb #tyt
+```
+Bunu biliyor muydunuz? İngilizcede mekân tanıtımlarında varlık bildirmek için there is / there are, konum belirtmek için ise prepositions of place kullanılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf İngilizce 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-ingilizce-hafta-6
+#derskutusu #ingilizce #9sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-9-peygamberimizin-hayati-6` — 9. Sınıf · peygamberimizin-hayati · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-9-peygamberimizin-hayati-6.png` (`public/sosyal/bilgi-9-peygamberimizin-hayati-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/9-peygamberimizin-hayati-6
-- **Metin:**
-```text
-Cahiliye Döneminde Mekke ve İslam’ın Dönüşümü
+## bilgi-9-kimya-6
+Sıra: 2026-10-17 13:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-kimya-6.png
 
-İslam dini Cahiliye Mekke’sindeki kölelik zulmünü, kabile asabiyetini ve kadınlara yönelik haksızlıkları tevhid ve adaletle ortadan kaldırmıştır.
+```
+Bunu biliyor muydunuz? Atomda elektron dizilimi Aufbau (artan enerji), Pauli (zıt spin) ve Hund (eş enerjili orbitallere tek tek yerleşme) kurallarına göre yazılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Kimya 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-kimya-hafta-6
+#derskutusu #kimya #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/9-peygamberimizin-hayati-6
+## bilgi-9-kuran-i-kerim-6
+Sıra: 2026-10-17 13:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-kuran-i-kerim-6.png
 
-#derskutusu #9sınıf #peygamberimizinhayatı #konuözeti #dersnotu #meb #tyt
 ```
+Bunu biliyor muydunuz? Kur’an tilavetinde harflerin mahreç ve sıfatlarına uyulurken altında sıfır işareti bulunan uzatma harfleri ve vasıl hemzeleri geçişte okunmaz.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Kur’an-ı Kerim 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-kuran-i-kerim-hafta-6
+#derskutusu #kuranıkerim #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-### `bilgi-9-tarih-6` — 9. Sınıf · tarih · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-9-tarih-6.png` (`public/sosyal/bilgi-9-tarih-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/9-tarih-6
-- **Metin:**
-```text
-Tarihsel Bilginin Üretimi: 5T Yöntemi
+## bilgi-9-matematik-6
+Sıra: 2026-10-17 13:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-matematik-6.png
 
-Tarih araştırmalarında doğru bilgiye ulaşmak için kaynaklar Tarama, Tasnif, Tahlil, Tenkit ve Terkip (5T) basamaklarından geçirilir.
+```
+Bunu biliyor muydunuz? Gerçek sayıların değişme, birleşme ve dağılma özellikleri cebirsel ifadelerin sadeleştirilmesi ve çarpanlara ayrılmasının temelini oluşturur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Matematik 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-matematik-hafta-6
+#derskutusu #matematik #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/9-tarih-6
+## bilgi-9-peygamberimizin-hayati-6
+Sıra: 2026-10-17 13:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-peygamberimizin-hayati-6.png
 
-#derskutusu #9sınıf #tarih #konuözeti #dersnotu #meb #tyt
+```
+Bunu biliyor muydunuz? İslam dini Cahiliye Mekke’sindeki kölelik zulmünü, kabile asabiyetini ve kadınlara yönelik haksızlıkları tevhid ve adaletle ortadan kaldırmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Peygamberimizin Hayatı 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-peygamberimizin-hayati-hafta-6
+#derskutusu #peygamberimizinhayatı #9sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
 
-### `bilgi-9-temel-dini-bilgiler-6` — 9. Sınıf · temel-dini-bilgiler · 6. Hafta
-- **Görsel:** `public/sosyal/bilgi-9-temel-dini-bilgiler-6.png` (`public/sosyal/bilgi-9-temel-dini-bilgiler-6.jpg`)
-- **Bağlantı:** https://derskutusu.com/ozet/9-temel-dini-bilgiler-6
-- **Metin:**
-```text
-Allah’ın Varlığında Aklî ve Naklî Deliller
+## bilgi-9-tarih-6
+Sıra: 2026-10-17 13:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-tarih-6.png
 
-Allah’ın (cc) varlığı ve birliği; gaye-nizam, hudûs, fıtrat ve temânu gibi aklî deliller ile Kur’an’daki naklî delillerle temellendirilir.
+```
+Bunu biliyor muydunuz? Tarih araştırmalarında doğru bilgiye ulaşmak için kaynaklar Tarama, Tasnif, Tahlil, Tenkit ve Terkip (5T) basamaklarından geçirilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Tarih 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-tarih-hafta-6
+#derskutusu #tarih #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
 
-Konu özetinin tamamı: https://derskutusu.com/ozet/9-temel-dini-bilgiler-6
+## bilgi-9-temel-dini-bilgiler-6
+Sıra: 2026-10-17 13:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-temel-dini-bilgiler-6.png
 
-#derskutusu #9sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #tyt
+```
+Bunu biliyor muydunuz? Allah’ın (cc) varlığı ve birliği; gaye-nizam, hudûs, fıtrat ve temânu gibi aklî deliller ile Kur’an’daki naklî delillerle temellendirilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Temel Dinî Bilgiler 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-temel-dini-bilgiler-hafta-6
+#derskutusu #temeldinibilgiler #9sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
