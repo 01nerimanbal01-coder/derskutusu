@@ -1,0 +1,277 @@
+{
+ "ad": "11. Sınıf Coğrafya - 4. Hafta Özeti",
+ "sinif": 11,
+ "ders": "cografya",
+ "ders_adi": "Coğrafya",
+ "hafta": 4,
+ "tarih": "5-9 Ekim 2026",
+ "yayin_tarihi": "2026-10-17",
+ "unite": "MEKÂNSAL BİLGİ TEKNOLOJİLERİ",
+ "konu": "Web Tabanlı CBS Uygulamaları İle Harita Okuma, Çözümleme, Çıkarım Yapma ve Basit Harita Oluşturma",
+ "ciktilar": [
+  "COĞ.11.2.1. Web tabanlı CBS aracılığı ile harita uygulamaları yapabilme",
+  "Web tabanlı CBS uygulamalarını kullanarak tematik katmanları okur, çözümler ve mekânsal dağılışlardan çıkarım yapar.",
+  "Web tabanlı CBS araçları üzerinde nokta, çizgi ve poligon katmanları kullanarak basit bir tematik harita oluşturur."
+ ],
+ "giris": "Geçtiğimiz hafta Coğrafi Bilgi Sistemlerinin (CBS) temel bileşenlerini ve web tabanlı CBS'nin geleneksel masaüstü yazılımlara göre avantajlarını inceledik. Bu haftaki dersimizde ise {koyu:web tabanlı CBS uygulamalarını bizzat kullanarak harita okuma, harita çözümleme, haritadan mekânsal çıkarım yapma ve sıfırdan basit bir dijital harita oluşturma} süreçlerini adım adım uygulayacağız.",
+ "ozet": [
+  "Web tabanlı CBS ile harita uygulaması dört ardışık süreç bileşeniyle gerçekleştirilir: a) Harita okuma, b) Harita çözümleme, c) Haritadan çıkarım yapma ve ç) Basit harita oluşturma.",
+  "CBS ortamında mekânsal veriler iki temel modelle saklanır: Nokta, çizgi ve poligonlardan (alan) oluşan 'Vektör Veri Modeli' ile piksellerden (hücre/grid) oluşan 'Raster Veri Modeli'.",
+  "Harita çözümleme aşamasında öznitelik (veri tabanı) sorgulaması, mesafe/alan/yükseklik profili ölçümü, çakıştırma (overlay) analizi ve tampon bölge (buffer) analizi yapılır.",
+  "Tampon bölge (buffer) analizi; bir okul, hastane, fay hattı veya akarsu çevresinde belirli bir mesafedeki etki ya da koruma alanını belirlemek için kullanılır.",
+  "Çakıştırma (overlay) analizi; eğim, yağış, kayaç yapısı ve bitki örtüsü gibi birden fazla katmanın üst üste bindirilerek heyelan riski veya en uygun tesis yeri gibi çıkarımların yapılmasını sağlar.",
+  "Basit bir web haritası oluştururken amaca uygun altlık harita (basemap) seçilir; nokta, çizgi ve poligon katmanlarıyla sayısallaştırma yapılır; öznitelik verileri girilir ve semboloji/lejant düzenlenerek harita paylaşılır."
+ ],
+ "bolumler": [
+  {
+   "baslik": "1. Web Tabanlı CBS İle Harita Okuma ve Harita Çözümleme Süreci",
+   "metin": [
+    "Türkiye Yüzyılı Maarif Modeli'nde ({koyu:COĞ.11.2.1}) web tabanlı CBS uygulamalarının kullanımı dört temel beceri basamağı üzerine inşa edilmiştir. İlk iki basamak mevcut dijital haritaların anlaşılması ve analiz edilmesidir:",
+    "a) {koyu:Web Tabanlı CBS Kullanarak Harita Okuma}: Kullanıcı önce haritanın amacına uygun {koyu:altlık haritayı (basemap)} (uydu görüntüsü, topoğrafya haritası, sokak haritası veya kabartma harita) seçer. Ardından katman panelindeki ({koyu:layer list}) nokta, çizgi ve alan sembollerini {koyu:lejant (harita anahtarı)} yardımıyla okur; yakınlaştırma/uzaklaştırma ({koyu:zoom}) yaparak ölçek değişimini ve ekranın alt köşesindeki dinamik coğrafi koordinatları takip eder.",
+    "b) {koyu:Web Tabanlı CBS Kullanarak Harita Çözümleme}: Harita üzerindeki coğrafi nesnelere tıklanarak açılan {koyu:bilgi pencereleri (pop-up)} ve {koyu:öznitelik tabloları (attribute table)} incelenir. Örneğin Türkiye İller Katmanı'nda 'Nüfus yoğunluğu 200 kişi/km²'den fazla olan illeri göster' şeklinde {koyu:sorgulama ve filtreleme} yapılır. Ayrıca araç çubuğundaki ölçüm araçlarıyla iki nokta arası kuş uçuşu mesafe, bir gölün yüzölçümü veya bir dağ hattının {koyu:yükselti profili} çözümlenir."
+   ],
+   "kutu": {
+    "tur": "onemli",
+    "baslik": "Mekânsal Veri ile Öznitelik Verisi Arasındaki Fark",
+    "metin": "CBS'de bir coğrafi unsurun harita üzerindeki konumu ve şekline 'mekânsal (konumsal) veri'; o unsura ait tablodaki sayısal ve sözel bilgilere (örneğin bir barajın adı, yapım yılı, su tutma kapasitesi, derinliği) ise 'öznitelik (konumsal olmayan) verisi' denir."
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 265\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:0 auto;font-family:'Segoe UI',Roboto,sans-serif\"><rect x=\"5\" y=\"5\" width=\"750\" height=\"255\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"380\" y=\"28\" fill=\"#0f172a\" font-size=\"14.5\" font-weight=\"bold\" text-anchor=\"middle\">WEB TABANLI CBS İLE HARİTA UYGULAMA SÜRECİNİN 4 ADIMI (COĞ.11.2.1)</text><rect x=\"20\" y=\"42\" width=\"345\" height=\"95\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/><rect x=\"20\" y=\"42\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#2563eb\"/><rect x=\"20\" y=\"64\" width=\"345\" height=\"8\" fill=\"#2563eb\"/><text x=\"192.5\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">a) Harita Okuma (Katman ve Sembol Tanıma)</text><text x=\"32\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Altlık harita (uydu, topoğrafya, sokak) seçimi,</text><text x=\"32\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">• Lejant (harita anahtarı), ölçek ve koordinat okuma,</text><text x=\"32\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">• Nokta, çizgi ve alan katmanlarını ayırt etme.</text><rect x=\"395\" y=\"42\" width=\"345\" height=\"95\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"395\" y=\"42\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#059669\"/><rect x=\"395\" y=\"64\" width=\"345\" height=\"8\" fill=\"#059669\"/><text x=\"567.5\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">b) Harita Çözümleme (Sorgulama ve Ölçüm)</text><text x=\"407\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Mesafe, alan ve yükseklik profili ölçümü yapma,</text><text x=\"407\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">• Öznitelik tablosundan (veri tabanı) filtreleme,</text><text x=\"407\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">• Çoklu katmanları (örn. eğim + heyelan) çakıştırma.</text><rect x=\"20\" y=\"148\" width=\"345\" height=\"95\" rx=\"10\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"20\" y=\"148\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#d97706\"/><rect x=\"20\" y=\"170\" width=\"345\" height=\"8\" fill=\"#d97706\"/><text x=\"192.5\" y=\"168\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">c) Haritadan Çıkarım Yapma (Mekânsal Yorum)</text><text x=\"32\" y=\"197\" fill=\"#1e293b\" font-size=\"11.5\">• Dağılış örüntülerinden neden-sonuç ilişkisi kurma,</text><text x=\"32\" y=\"215\" fill=\"#1e293b\" font-size=\"11.5\">• Riskli alanları ve uygun yer seçimi bölgelerini</text><text x=\"32\" y=\"233\" fill=\"#1e293b\" font-size=\"11.5\">  belirleyerek geleceğe yönelik tahmin üretme.</text><rect x=\"395\" y=\"148\" width=\"345\" height=\"95\" rx=\"10\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"2\"/><rect x=\"395\" y=\"148\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#7c3aed\"/><rect x=\"395\" y=\"170\" width=\"345\" height=\"8\" fill=\"#7c3aed\"/><text x=\"567.5\" y=\"168\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">ç) Basit Harita Oluşturma (Sayısallaştırma)</text><text x=\"407\" y=\"197\" fill=\"#1e293b\" font-size=\"11.5\">• Nokta (okul/deprem), çizgi (yol/akarsu) ve poligon</text><text x=\"407\" y=\"215\" fill=\"#1e293b\" font-size=\"11.5\">  (göl/orman) çizerek öznitelik verisi girme,</text><text x=\"407\" y=\"233\" fill=\"#1e293b\" font-size=\"11.5\">• Semboloji, lejant ve başlık ekleyip paylaşma.</text></svg>"
+  },
+  {
+   "baslik": "2. CBS Veri Modelleri: Vektör Veri (Nokta, Çizgi, Poligon) ve Raster Veri",
+   "metin": [
+    "Web tabanlı CBS üzerinde harita okurken ve yeni bir harita üretirken verilerin iki farklı yapıda katmanlaştığını görürüz:",
+    "1) {koyu:Vektör Veri Modeli}: Coğrafi unsurları (x, y) koordinatlarıyla tanımlanan geometrik şekillerle gösterir ve üç alt türü vardır: • {koyu:Nokta (Point)}: Ölçeğe göre boyutsuz kabul edilen tekil konumları gösterir (deprem merkez üssü, meteoroloji istasyonu, okul, hastane, su kuyusu, tepe doruğu). • {koyu:Çizgi (Line / Polyline)}: Uzunluğu olan ancak genişliği ölçekte gösterilemeyen doğrusal unsurlardır (akarsu, karayolu, demiryolu, diri fay hattı, boru hattı, eş yükselti eğrisi). • {koyu:Alan / Poligon (Polygon)}: Başlangıç ve bitiş noktası birleşen kapalı yüzeylerdir (göl, baraj gölü, orman alanı, il/ülke sınırları, tarım parseli).",
+    "2) {koyu:Raster (Hücresel / Piksel) Veri Modeli}: Yeryüzünü satır ve sütunlardan oluşan eşit boyutlu kare hücreler ({koyu:piksel / grid}) ağı olarak modeller. Her piksel tek bir sayısal değer (yükselti, sıcaklık, NDVI bitki indeksi) taşır. {koyu:Uydu görüntüleri, hava fotoğrafları ve Sayısal Yükselti Modelleri (SYM/DEM)} raster veri yapısındadır. Piksel boyutu küçüldükçe haritanın {koyu:mekânsal çözünürlüğü} ve dosya boyutu artar."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Ölçeğe Göre Vektör Tipinin Değişmesi",
+    "metin": "Bir şehir küçük ölçekli (örneğin 1/5.000.000) bir Dünya veya Türkiye haritasında 'nokta' verisiyle gösterilirken; büyük ölçekli (örneğin 1/10.000) bir imar haritasında mahalle sınırlarıyla birlikte 'poligon (alan)' verisiyle gösterilir!"
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 265\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:0 auto;font-family:'Segoe UI',Roboto,sans-serif\"><rect x=\"5\" y=\"5\" width=\"750\" height=\"255\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"380\" y=\"28\" fill=\"#0f172a\" font-size=\"14.5\" font-weight=\"bold\" text-anchor=\"middle\">CBS VERİ MODELLERİ: VEKTÖR VERİ (NOKTA, ÇİZGİ, POLİGON) VE RASTER VERİ</text><rect x=\"20\" y=\"42\" width=\"345\" height=\"198\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/><rect x=\"20\" y=\"42\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#2563eb\"/><rect x=\"20\" y=\"64\" width=\"345\" height=\"8\" fill=\"#2563eb\"/><text x=\"192.5\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">1. Vektör Veri Modeli (Koordinat Tabanlı)</text><text x=\"32\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Coğrafi unsurları (x, y) koordinat çiftleriyle</text><text x=\"32\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">  keskin sınırlarla temsil eder:</text><text x=\"32\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">  - Nokta (Point): Kuyu, okul, hastane, deprem.</text><text x=\"32\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">  - Çizgi (Line): Akarsu, karayolu, fay hattı, boru.</text><text x=\"32\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">  - Alan / Poligon (Polygon): Göl, il sınırı, orman.</text><text x=\"32\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">• Her şeklin arkasında satır ve sütunlardan oluşan</text><text x=\"32\" y=\"199\" fill=\"#1e293b\" font-size=\"11.5\">  bir 'Öznitelik Tablosu (Attribute Table)' bulunur.</text><rect x=\"395\" y=\"42\" width=\"345\" height=\"198\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"395\" y=\"42\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#059669\"/><rect x=\"395\" y=\"64\" width=\"345\" height=\"8\" fill=\"#059669\"/><text x=\"567.5\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">2. Raster (Hücresel / Piksel) Veri Modeli</text><text x=\"407\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Mekânı eşit boyutlu kare hücrelerden (piksel /</text><text x=\"407\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">  grid) oluşan bir matris olarak temsil eder.</text><text x=\"407\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">• Her piksel tek bir sayısal değer (yükselti,</text><text x=\"407\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">  sıcaklık, yağış, yansıma değeri) taşır.</text><text x=\"407\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">• Örnekler: Uydu görüntüleri, hava fotoğrafları,</text><text x=\"407\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">  Sayısal Yükselti Modeli (SYM / DEM).</text><text x=\"407\" y=\"199\" fill=\"#1e293b\" font-size=\"11.5\">• Sürekli yüzey analizlerinde (eğim, bakı) kullanılır.</text></svg>"
+  },
+  {
+   "baslik": "3. Mekânsal Analiz Yöntemleri ve Haritadan Çıkarım Yapma",
+   "metin": [
+    "c) {koyu:Web Tabanlı CBS Kullanarak Haritadan Çıkarım Yapma}: Harita katmanlarının tek başına okunmasının ötesine geçilerek, farklı katmanlar arasındaki mekânsal ilişkilerden {koyu:neden-sonuç bağlantıları, risk analizleri ve geleceğe yönelik kararlar} üretilmesidir. Bunun için üç temel CBS analizi kullanılır:",
+    "1) {koyu:Çakıştırma (Üst Üste Bindirme / Overlay) Analizi}: Farklı coğrafi katmanların şeffaflık (saydamlık) ayarıyla üst üste getirilerek ortak alanların saptanmasıdır. Örneğin bir bölgede {koyu:'Eğim Katmanı' + 'Killi Anakaya Katmanı' + 'Aşırı Yağış Katmanı'} üst üste çakıştırıldığında Doğu Karadeniz'de {koyu:heyelan riskinin en yüksek olduğu alanlar} çıkarım olarak belirlenir. Yine {koyu:'Güneşlenme Süresi' + 'Arazi Eğimi' + 'Trafo Merkezlerine Yakınlık'} katmanları çakıştırılarak Güneş Enerjisi Santrali (GES) için en uygun yer seçimi yapılır.",
+    "2) {koyu:Tampon Bölge (Buffer / Yakınlık) Analizi}: Nokta, çizgi veya poligon şeklindeki bir coğrafi unsurun etrafında belirli bir yarıçap veya mesafe koridoru oluşturularak etki/yasak alanının belirlenmesidir. Örneğin {koyu:'Diri fay hattının sağ ve solunda 100 metrelik yapılaşma yasağı koridoru oluşturmak'} veya {koyu:'Yeni açılacak bir lisenin 1 km yarıçapındaki yürüme mesafesinde kalan konutları belirlemek'} tampon bölge analizidir. 3) {koyu:Ağ (Network) Analizi}: Ulaşım hatları üzerinde itfaiye, ambulans veya kargo araçları için {koyu:en kısa ve en hızlı güzergâhın} hesaplanmasıdır."
+   ],
+   "kutu": {
+    "tur": "bilgi",
+    "baslik": "Zaman Kaydırıcı (Time Slider) İle Zamansal Çıkarım",
+    "metin": "Web tabanlı CBS uygulamalarındaki zaman kaydırıcı özelliğiyle 1984'ten 2026'ya kadar uydu görüntüleri oynatıldığında; bir gölün kuruma hızı (örneğin Tuz Gölü veya Burdur Gölü), orman tahribatı ya da bir şehrin kentsel yayılma yönü hakkında doğrudan çıkarım yapılabilir."
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 265\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:0 auto;font-family:'Segoe UI',Roboto,sans-serif\"><rect x=\"5\" y=\"5\" width=\"750\" height=\"255\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"380\" y=\"28\" fill=\"#0f172a\" font-size=\"14.5\" font-weight=\"bold\" text-anchor=\"middle\">WEB TABANLI CBS'DE MEKÂNSAL ANALİZ TEKNİKLERİ</text><rect x=\"20\" y=\"42\" width=\"230\" height=\"198\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/><rect x=\"20\" y=\"42\" width=\"230\" height=\"30\" rx=\"10\" fill=\"#dc2626\"/><rect x=\"20\" y=\"64\" width=\"230\" height=\"8\" fill=\"#dc2626\"/><text x=\"135.0\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">1. Çakıştırma (Overlay) Analizi</text><text x=\"32\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Farklı tematik katmanların</text><text x=\"32\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">  üst üste bindirilerek ortak</text><text x=\"32\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">  koşulları sağlayan alanların</text><text x=\"32\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">  bulunmasıdır.</text><text x=\"32\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">• Örnek: Fay hattı + Alüvyal</text><text x=\"32\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">  zemin + Nüfus yoğunluğu →</text><text x=\"32\" y=\"199\" fill=\"#1e293b\" font-size=\"11.5\">  Deprem Risk Haritası!</text><rect x=\"265\" y=\"42\" width=\"230\" height=\"198\" rx=\"10\" fill=\"#f0f9ff\" stroke=\"#0284c7\" stroke-width=\"2\"/><rect x=\"265\" y=\"42\" width=\"230\" height=\"30\" rx=\"10\" fill=\"#0284c7\"/><rect x=\"265\" y=\"64\" width=\"230\" height=\"8\" fill=\"#0284c7\"/><text x=\"380.0\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">2. Tampon Bölge (Buffer) Analizi</text><text x=\"277\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Bir nokta, çizgi veya alanın</text><text x=\"277\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">  çevresinde belirli bir mesafe</text><text x=\"277\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">  (yarıçap/koridor) belirlenerek</text><text x=\"277\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">  etki alanının çizilmesidir.</text><text x=\"277\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">• Örnek: Akarsu yatağının sağ</text><text x=\"277\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">  ve solunda 500 m taşkın</text><text x=\"277\" y=\"199\" fill=\"#1e293b\" font-size=\"11.5\">  koruma bandı oluşturma.</text><rect x=\"510\" y=\"42\" width=\"230\" height=\"198\" rx=\"10\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"510\" y=\"42\" width=\"230\" height=\"30\" rx=\"10\" fill=\"#d97706\"/><rect x=\"510\" y=\"64\" width=\"230\" height=\"8\" fill=\"#d97706\"/><text x=\"625.0\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">3. Ağ (Network) ve Yakınlık</text><text x=\"522\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Ulaşım veya altyapı ağları</text><text x=\"522\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">  üzerinde en kısa / en hızlı</text><text x=\"522\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">  rotanın hesaplanmasıdır.</text><text x=\"522\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">• Örnek: İtfaiye veya ambulansın</text><text x=\"522\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">  olay yerine en kısa sürede</text><text x=\"522\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">  ulaşacağı güzergâhı bulma.</text></svg>"
+  },
+  {
+   "baslik": "4. Web Tabanlı CBS İle Basit Harita Oluşturma Adımları",
+   "metin": [
+    "ç) {koyu:Web Tabanlı CBS Kullanarak Basit Harita Oluşturma}: Öğrencilerin veya araştırmacıların kendi topladıkları verileri web CBS platformları (ATLAS, HGM Küre, Google My Maps, ArcGIS Online, uMap vb.) üzerinde dijital haritaya dönüştürmesi beş adımda gerçekleştirilir:",
+    "{koyu:1. Adım — Konu ve Altlık Harita Seçimi}: Haritanın konusu (örneğin 'İlçemizdeki Toplanma Alanları ve Hastaneler Haritası') belirlenir ve konuyu en iyi gösterecek altlık harita (uydu veya sokak haritası) seçilir. {koyu:2. Adım — Katman Oluşturma ve Sayısallaştırma (Çizim)}: Harita üzerine toplanma alanları için {koyu:poligon (alan)}, hastaneler için {koyu:nokta}, acil ulaşım yolları için {koyu:çizgi} araçlarıyla çizim (sayısallaştırma) yapılır veya hazır koordinat dosyası ({koyu:.kml, .kmz, .geojson, .csv, .gpx}) içe aktarılır.",
+    "{koyu:3. Adım — Öznitelik Verisi Girişi}: Çizilen her nokta, çizgi ve poligonun bilgi tablosuna adı, kapasitesi, adresi ve fotoğrafı gibi öznitelik bilgileri girilir. {koyu:4. Adım — Semboloji ve Lejant Tasarımı}: Verinin niteliğine göre renk derecelendirmesi (koroplet harita), simge boyutu ve çizgi kalınlığı ayarlanır; başlık ve lejant eklenir. {koyu:5. Adım — Kaydetme ve Paylaşma}: Oluşturulan harita web bağlantısı (URL), karekod (QR) veya gömülü kod (iframe) ile etkileşimli olarak paylaşılır."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "CBS Dosya Uzantıları (.KML, .GeoJSON, .SHP)",
+    "metin": "Web tabanlı CBS uygulamalarında oluşturulan harita katmanlarını başka bir programa aktarmak için en sık kullanılan standart dosya formatları: • .kml / .kmz (Google Earth ve HGM Küre formatı), • .geojson (Web haritalama standardı), • .shp (Shapefile - profesyonel vektör veri standardı) ve • .csv (enlem-boylam içeren tablo formatı)."
+   }
+  },
+  {
+   "baslik": "5. Türkiye'de ve Dünyada Başlıca Web Tabanlı CBS Uygulamaları",
+   "metin": [
+    "Günümüzde kamu kurumları ve uluslararası kuruluşlar vatandaşların ve araştırmacıların ücretsiz kullanımına açık güçlü web CBS portalları sunmaktadır:",
+    "• {koyu:ATLAS (atlas.gov.tr) ve TUCBS}: Çevre, Şehircilik ve İklim Değişikliği Bakanlığı Coğrafi Bilgi Sistemleri Genel Müdürlüğü tarafından geliştirilen {koyu:Türkiye Ulusal Coğrafi Bilgi Sistemi} portalıdır. İdari sınırlar, korunan alanlar, ulaşım, hidrografya ve çevre katmanları üzerinde çizim, ölçüm ve sorgulama yapılabilir.",
+    "• {koyu:HGM Küre ve HGM Atlas (kure.harita.gov.tr)}: Milli Savunma Bakanlığı Harita Genel Müdürlüğü tarafından hazırlanan yerli ve milli 3 boyutlu dijital küre ve topoğrafik web CBS uygulamasıdır.",
+    "• {koyu:MTA Yerbilimleri Portalı (yerbilimleri.mta.gov.tr)}: Maden Tetkik ve Arama Genel Müdürlüğünün diri fay hatları, deprem odakları, jeolojik formasyonlar ve heyelan envanterini katmanlar halinde sunduğu web CBS uygulamasıdır. • {koyu:AFAD TDTH}: Türkiye Deprem Tehlike Haritaları İnteraktif Web Uygulamasıdır."
+   ],
+   "kutu": {
+    "tur": "bilgi",
+    "baslik": "E-Devlet ve TKGM Parsel Sorgulama",
+    "metin": "Tapu ve Kadastro Genel Müdürlüğünün (TKGM) 'Parsel Sorgulama' web uygulaması ve AFAD'ın e-Devlet üzerindeki 'Afet ve Acil Durum Toplanma Alanı Sorgulama' ekranı, günlük yaşamda milyonlarca vatandaşın kullandığı en yaygın web tabanlı CBS örnekleridir."
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 265\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:0 auto;font-family:'Segoe UI',Roboto,sans-serif\"><rect x=\"5\" y=\"5\" width=\"750\" height=\"255\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"380\" y=\"28\" fill=\"#0f172a\" font-size=\"14.5\" font-weight=\"bold\" text-anchor=\"middle\">TÜRKİYE VE DÜNYADA BAŞLICA WEB TABANLI CBS PORTALLARI</text><rect x=\"20\" y=\"42\" width=\"345\" height=\"198\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"20\" y=\"42\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#059669\"/><rect x=\"20\" y=\"64\" width=\"345\" height=\"8\" fill=\"#059669\"/><text x=\"192.5\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">Türkiye'nin Milli Web CBS Platformları</text><text x=\"32\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• ATLAS (atlas.gov.tr) & TUCBS: Çevre, Şehircilik ve</text><text x=\"32\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">  İklim Değişikliği Bakanlığı Türkiye Ulusal CBS.</text><text x=\"32\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">• HGM Küre ve Atlas: Harita Genel Müdürlüğünün</text><text x=\"32\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">  3B dijital küre ve topoğrafik harita uygulaması.</text><text x=\"32\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">• MTA Yerbilimleri Portalı: Diri fay hatları, jeoloji</text><text x=\"32\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">  ve heyelan katmanlarının sorgulandığı portal.</text><text x=\"32\" y=\"199\" fill=\"#1e293b\" font-size=\"11.5\">• TKGM Parsel Sorgu ve AFAD TDTH.</text><rect x=\"395\" y=\"42\" width=\"345\" height=\"198\" rx=\"10\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"2\"/><rect x=\"395\" y=\"42\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#7c3aed\"/><rect x=\"395\" y=\"64\" width=\"345\" height=\"8\" fill=\"#7c3aed\"/><text x=\"567.5\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">Küresel Açık Kaynak ve Bulut CBS Araçları</text><text x=\"407\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• ArcGIS Online & StoryMaps: Bulut tabanlı</text><text x=\"407\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">  etkileşimli harita ve hikâye haritası üretimi.</text><text x=\"407\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">• Google Earth Web & Google My Maps: Uydu</text><text x=\"407\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">  görüntüsü okuma ve kişisel harita katmanı çizme.</text><text x=\"407\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">• OpenStreetMap (OSM) & uMap: Kitle kaynaklı</text><text x=\"407\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">  (crowdsourced) özgür dünya haritası üretimi.</text><text x=\"407\" y=\"199\" fill=\"#1e293b\" font-size=\"11.5\">• Copernicus Browser: Avrupa Uzay Ajansı uyduları.</text></svg>"
+  },
+  {
+   "baslik": "6. Web Tabanlı CBS'de Kartografik Tasarım İlkeleri ve Etik",
+   "metin": [
+    "Web tabanlı CBS ile harita oluştururken haritanın doğru okunabilmesi için {koyu:kartografik tasarım ilkelerine} uyulmalıdır: Nüfus yoğunluğu veya sıcaklık gibi azdan çoğa değişen nicel veriler gösterilirken {koyu:açıktan koyuya giden sıralı renk tonları (koroplet)}; arazi kullanımı (orman, tarım, yerleşim) gibi nitel veriler gösterilirken ise {koyu:farklı renkler} tercih edilmelidir.",
+    "Ayrıca bir haritada çok fazla katmanın aynı anda açık bırakılması {koyu:görsel karmaşaya} yol açarak haritanın okunabilirliğini bozar. Harita üretiminde resmi kurum verilerinin kaynak olarak belirtilmesi ve {koyu:kişisel verilerin / askeri güvenlik bölgelerinin mahremiyetine} dikkat edilmesi temel etik kuraldır."
+   ],
+   "kutu": {
+    "tur": "uyari",
+    "baslik": "Kitle Kaynaklı (Crowdsourced) Verilerde Doğruluk Kontrolü",
+    "metin": "OpenStreetMap gibi gönüllü kullanıcıların veri girdiği web CBS platformlarında veriler çok hızlı güncellenir; ancak bilimsel veya resmi bir karar alınırken bu verilerin HGM, TÜİK veya ATLAS gibi resmi kurum katmanlarıyla çapraz doğrulanması gerekir."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Bir belediye, şehir içinden geçen Çoruh Nehri'nin taşkın riskini belirlemek için nehir yatağının her iki kıyısından 250 metre mesafede kalan binaları tespit etmek istiyor. Web tabanlı CBS uygulamasında nehir ve bina katmanları hangi veri modeliyle (nokta, çizgi, poligon) gösterilir ve bu işlem için hangi mekânsal analiz tekniği kullanılır?",
+   "cevap": "1) Veri Modelleri: Çoruh Nehri doğrusal bir unsur olduğu için 'çizgi (line)' vektör katmanıyla; binalar ise taban alanlarıyla gösterildiği için 'poligon (alan)' (veya ölçeğe göre 'nokta') vektör katmanıyla temsil edilir.\n2) Kullanılacak Mekânsal Analiz: Nehir çizgisinin sağında ve solunda 250 metrelik bir koruma/etki koridoru oluşturularak bu alanın içine düşen binaların sorgulanması işlemine 'Tampon Bölge (Buffer / Yakınlık) Analizi' denir."
+  },
+  {
+   "soru": "Bir öğrenci web tabanlı CBS uygulaması (örneğin ATLAS veya HGM Küre) kullanarak yaşadığı mahalledeki 'Okullar, Yaya Geçitleri ve Yeşil Alanlar' konulu basit bir harita oluşturmak istiyor. Öğrencinin bu üç unsuru çizerken kullanması gereken vektör veri tiplerini ve harita oluşturma adımlarını açıklayınız.",
+   "cevap": "1) Vektör Veri Tipleri:\n• Okullar (veya yaya geçidi tabelaları): 'Nokta (Point)' katmanı ile işaretlenir.\n• Sokaklar ve yaya yürüyüş güzergâhları: 'Çizgi (Line)' katmanı ile çizilir.\n• Parklar ve yeşil alanlar: 'Poligon (Alan)' katmanı ile sınırları kapatılarak çizilir.\n2) Harita Oluşturma Adımları: Öğrenci önce mahallesini net gösteren bir altlık harita (uydu veya sokak) seçer; ardından nokta, çizgi ve poligon çizim araçlarıyla sayısallaştırma yapar; her unsura okul adı ve park alanı gibi öznitelik verilerini girer; uygun sembol ve lejant ekleyerek haritasını kaydedip paylaşır."
+  },
+  {
+   "soru": "Orman yangını risk haritası hazırlamak isteyen bir uzman, web tabanlı CBS üzerinde hangi coğrafi katmanları bir araya getirmeli ve hangi analiz yöntemiyle çıkarımda bulunmalıdır?",
+   "cevap": "Uzman; 1) Yaz sıcaklığı ve nem dağılışı katmanı, 2) Rüzgâr hızı ve yönü katmanı, 3) Orman/ağaç türü (kızılçam vb.) katmanı, 4) Arazi eğim ve bakı katmanı ile 5) Yerleşim ve yol ağlarına yakınlık katmanlarını CBS ortamına yüklemelidir. Ardından 'Çakıştırma (Üst Üste Bindirme / Overlay) Analizi' uygulayarak sıcaklığın yüksek, nemin düşük, kızılçam ormanlarının yoğun ve insan etkisinin fazla olduğu alanları üst üste çakıştırır ve yangın riskinin en yüksek olduğu bölgeleri çıkarım olarak belirler."
+  },
+  {
+   "soru": "CBS'de kullanılan 'Vektör Veri Modeli' ile 'Raster Veri Modeli' arasındaki temel farkları açıklayarak her ikisine ikişer örnek veriniz.",
+   "cevap": "• Vektör Veri Modeli: Coğrafi unsurları (x, y) koordinat çiftlerine dayalı nokta, çizgi ve poligon (alan) geometrileriyle keskin sınırlarla gösterir; her şeklin bir öznitelik tablosu vardır. Örnek: İl sınırları haritası ve karayolları ağı katmanı.\n• Raster Veri Modeli: Yeryüzünü eşit boyutlu kare piksellerden (grid hücrelerinden) oluşan bir matris olarak gösterir; her piksel tek bir sayısal değer (yükselti, sıcaklık, renk yansıması) taşır. Örnek: Uydu görüntüleri ve Sayısal Yükselti Modeli (SYM/DEM)."
+  },
+  {
+   "soru": "Türkiye'de kamu kurumları tarafından vatandaşların ve araştırmacıların kullanımına sunulan üç resmi web tabanlı CBS uygulamasını ve kullanım alanlarını yazınız.",
+   "cevap": "1) ATLAS (atlas.gov.tr — Çevre, Şehircilik ve İklim Değişikliği Bakanlığı): Türkiye Ulusal CBS kapsamında idari sınırlar, çevre, ulaşım ve korunan alan katmanlarının görüntülenmesi ve harita çizimi.\n2) HGM Küre ve Atlas (Harita Genel Müdürlüğü): Türkiye ve dünyanın 3 boyutlu topoğrafik haritalarının, ortofoto görüntülerinin incelenmesi ve yükseklik/mesafe ölçümü.\n3) MTA Yerbilimleri Portalı (Maden Tetkik ve Arama Genel Müdürlüğü): Türkiye'deki diri fay hatlarının, son depremlerin, jeolojik birimlerin ve heyelan alanlarının sorgulanması."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Web tabanlı CBS uygulamasında yeni yapılacak bir Güneş Enerjisi Santrali (GES) için en uygun yeri belirlemek amacıyla 'Yıllık Güneşlenme Süresi', 'Arazi Eğimi', 'Korunan Alan Sınırları' ve 'Enerji Nakil Hatları' katmanlarının üst üste getirilerek ortak uygun alanların saptanması işlemi aşağıdaki analiz yöntemlerinden hangisidir?",
+   "secenekler": [
+    "Çakıştırma (Overlay) Analizi",
+    "Ağ (Network) Analizi",
+    "Yükselti Profili Çıkarma",
+    "Jeodezik Nirengi Ölçümü",
+    "Spektral Yansıma Analizi"
+   ],
+   "dogru": 0,
+   "aciklama": "Farklı tematik katmanların üst üste bindirilerek belirlenen kriterleri aynı anda sağlayan alanların tespit edilmesine 'Çakıştırma (Overlay) Analizi' denir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Web tabanlı bir CBS uygulamasında Türkiye fiziki ve beşeri unsurlarını sayısallaştıran bir öğrencinin; I. Van Gölü, II. Kuzey Anadolu Fay Hattı, III. İl merkezlerindeki meteoroloji istasyonları unsurlarını göstermek için kullanması gereken vektör veri tipleri aşağıdakilerden hangisinde doğru eşleştirilmiştir?",
+   "secenekler": [
+    "I: Nokta — II: Çizgi — III: Poligon",
+    "I: Poligon (Alan) — II: Çizgi — III: Nokta",
+    "I: Çizgi — II: Poligon (Alan) — III: Nokta",
+    "I: Poligon (Alan) — II: Nokta — III: Çizgi",
+    "I: Raster — II: Nokta — III: Poligon"
+   ],
+   "dogru": 1,
+   "aciklama": "Van Gölü kapalı bir yüzey olduğu için Poligon (Alan), Kuzey Anadolu Fay Hattı doğrusal bir uzanım gösterdiği için Çizgi, meteoroloji istasyonları ise tekil konum belirttiği için Nokta verisiyle gösterilir."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Web tabanlı CBS uygulamaları ve veri modelleriyle ilgili aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "CBS'de uydu görüntüleri, hava fotoğrafları ve Sayısal Yükselti Modelleri (SYM/DEM) piksellerden oluşan 'Raster Veri Modeli'ne örnektir.",
+     "dogru": true,
+     "aciklama": "Doğrudur; hücresel (piksel/grid) yapıdaki görüntüler ve sürekli yüzey modelleri raster veridir."
+    },
+    {
+     "metin": "Bir akarsu yatağının sağ ve solunda 300 metrelik taşkın koruma şeridi belirlemek için 'Ağ (Network) Analizi' kullanılır.",
+     "dogru": false,
+     "aciklama": "Yanlıştır; bir nokta, çizgi veya alanın çevresinde belirli bir mesafe koridoru oluşturma işlemine 'Tampon Bölge (Buffer) Analizi' denir."
+    },
+    {
+     "metin": "Web tabanlı CBS uygulamalarında bir coğrafi unsura tıklandığında açılan tablodaki nüfus, kapasite ve isim gibi bilgilere 'öznitelik verisi' denir.",
+     "dogru": true,
+     "aciklama": "Doğrudur; coğrafi şeklin koordinatlarına mekânsal veri, tablodaki sözel ve sayısal özelliklerine ise öznitelik verisi denir."
+    }
+   ]
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Harita oluşturma ve Türkiye'deki CBS portallarıyla ilgili aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "Harita Genel Müdürlüğü tarafından geliştirilen 'HGM Küre', kullanıcıların tarayıcı üzerinden 3 boyutlu harita okuma ve ölçüm yapmasına olanak tanıyan milli bir web CBS uygulamasıdır.",
+     "dogru": true,
+     "aciklama": "Doğrudur; HGM Küre ve ATLAS Türkiye'nin önde gelen resmi web tabanlı CBS platformlarıdır."
+    },
+    {
+     "metin": "Bir web haritasının daha iyi okunabilmesi için mevcut olan bütün katmanların (yüzlerce katmanın) aynı anda açık tutulması gerekir.",
+     "dogru": false,
+     "aciklama": "Yanlıştır; çok fazla katmanın aynı anda açık olması görsel karmaşaya yol açar ve haritanın okunabilirliğini bozar."
+    },
+    {
+     "metin": "Web tabanlı CBS uygulamalarında oluşturulan harita katmanları .kml, .kmz veya .geojson uzantılı dosyalar halinde dışa aktarılıp paylaşılabilir.",
+     "dogru": true,
+     "aciklama": "Doğrudur; .kml, .kmz ve .geojson en yaygın coğrafi veri paylaşım formatlarıdır."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "soru": "Web tabanlı CBS'de yer alan aşağıdaki kavram ve analizleri karşılık gelen açıklamalarla eşleştiriniz.",
+   "ciftler": [
+    [
+     "Altlık Harita (Basemap)",
+     "Üzerine tematik katmanların eklendiği uydu, topoğrafya veya sokak görünümü"
+    ],
+    [
+     "Tampon Bölge (Buffer) Analizi",
+     "Fay hattı, yol veya okul çevresinde belirli bir mesafedeki etki alanını belirleme"
+    ],
+    [
+     "Ağ (Network) Analizi",
+     "İtfaiye veya ambulansın ulaşım hatları üzerinde en kısa sürede gideceği rotayı bulma"
+    ],
+    [
+     "Öznitelik Tablosu (Attribute Table)",
+     "Haritadaki vektör şekillere ait sözel ve sayısal verilerin tutulduğu veri tabanı tablosu"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+   "cumleler": [
+    {
+     "metin": "CBS'de yeryüzü unsurlarını nokta, çizgi ve poligon (alan) şeklinde koordinatlarla gösteren veri modeline ___ veri modeli denir.",
+     "cevap": "vektör"
+    },
+    {
+     "metin": "Eğim, yağış ve kayaç yapısı gibi farklı katmanların üst üste getirilerek heyelan riskli alanların belirlenmesine ___ (overlay) analizi denir.",
+     "cevap": "çakıştırma"
+    },
+    {
+     "metin": "Maden Tetkik ve Arama Genel Müdürlüğünün (___) Yerbilimleri Portalı üzerinden Türkiye'deki diri fay hatları sorgulanabilir.",
+     "cevap": "MTA"
+    }
+   ],
+   "fazla": [
+    "raster",
+    "TÜİK"
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+   "cumleler": [
+    {
+     "metin": "Harita üzerindeki renk, simge ve işaretlerin ne anlama geldiğini gösteren harita anahtarına ___ denir.",
+     "cevap": "lejant"
+    },
+    {
+     "metin": "Yeryüzünü eşit boyutlu kare hücrelerden (piksellerden) oluşan bir ağ olarak temsil eden veri modeline ___ veri modeli denir.",
+     "cevap": "raster"
+    },
+    {
+     "metin": "Çevre, Şehircilik ve İklim Değişikliği Bakanlığı tarafından sunulan ulusal web CBS portalının adı ___ uygulamasıdır.",
+     "cevap": "ATLAS"
+    }
+   ],
+   "fazla": [
+    "projeksiyon",
+    "izohips"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Yaşadığınız ilçede 'Deprem Sonrası Acil Toplanma Alanlarının Yeterliliği ve Erişilebilirliği' konulu bir projeyi web tabanlı CBS kullanarak gerçekleştireceğinizi düşününüz. COĞ.11.2.1 süreç bileşenlerine (a: Harita okuma, b: Harita çözümleme, c: Çıkarım yapma, ç: Basit harita oluşturma) göre bu çalışmayı nasıl yürüteceğinizi adım adım açıklayınız.",
+   "ipuclari": [
+    "1. Adım (Harita Okuma ve Çözümleme): İlçenin uydu/sokak altlığını açıp mevcut toplanma alanları, nüfus ve bina katmanlarını nasıl okuyup sorgulayacağınızı belirtiniz.",
+    "2. Adım (Çıkarım Yapma): Tampon bölge (buffer - örneğin 500 m yürüme mesafesi) ve çakıştırma analiziyle hangi mahallelerde toplanma alanı eksikliği olduğunu nasıl çıkaracağınızı açıklayınız.",
+    "3. Adım (Basit Harita Oluşturma): Yeni önerilen toplanma alanlarını poligon, güvenli yürüyüş yollarını çizgi olarak sayısallaştırıp lejantla nasıl sunacağınızı sentezleyiniz."
+   ],
+   "cevap": "1) Harita Okuma ve Çözümleme: Önce web tabanlı CBS uygulamasında (ATLAS veya HGM Küre) ilçenin sokak/uydu altlık haritası açılır; mahalle sınırları, nüfus yoğunluğu, diri fay hatları ve mevcut toplanma alanları katmanları okunur. Öznitelik tablosundan her toplanma alanının yüzölçümü ve kişi kapasitesi sorgulanarak çözümlenir. 2) Haritadan Çıkarım Yapma: Mevcut toplanma alanlarının etrafında 500 metrelik 'tampon bölge (buffer) analizi' uygulanır ve nüfus yoğunluğu katmanıyla 'çakıştırma (overlay) analizi' yapılır. Böylece 500 metre yürüme mesafesinde toplanma alanı bulunmayan yoğun nüfuslu mahalleler çıkarım yoluyla tespit edilir. 3) Basit Harita Oluşturma: Tespit edilen eksik bölgelerdeki uygun park ve okul bahçeleri 'poligon (alan)' aracıyla yeni toplanma alanı olarak, buralara ulaşan güvenli caddeler ise 'çizgi' aracıyla sayısallaştırılır; öznitelik bilgileri, başlık ve lejant eklenerek etkileşimli harita oluşturulur."
+  }
+ ]
+}
