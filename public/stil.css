@@ -279,6 +279,14 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
 .reklam-izin { position: fixed; left: 16px; bottom: 16px; z-index: 50; width: min(520px, calc(100% - 102px)); box-shadow: var(--golge-buyuk); }
 .reklam-izin h2 { font-size: 17px; margin: 0 0 8px; }
 @media print { .reklam-izin { display: none; } }
+/* Reklam alanı (sayfa_uret.py reklam_yeri; birim yalnız izinle açılır, ortak.js): ana/ağaç sayfaları ve konu özetlerinde alt bilginin üstünde.
+   İzin yokken (hidden) ya da reklam gelmeyince yer kaplamaz; etkinlik, kalem/tahta, görüntüleyici ve indirme alanlarına konmaz. */
+.reklam { margin-top: 56px; }
+.reklam .kap { display: grid; gap: 6px; }
+.reklam-etiket { font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--soluk); }
+.reklam ins.adsbygoogle { display: block; min-height: 0; }
+.reklam:has(ins[data-ad-status="unfilled"]) { display: none; }
+@media print { .reklam { display: none; } }
 .fb-alan iframe { border: 0; width: 100%; max-width: 500px; height: 600px; border-radius: 14px; background: #fff; }
 
 /* Hakkımızda ve iletişim */

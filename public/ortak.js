@@ -271,18 +271,33 @@ ortakVeri.then(({ ayar }) => {
 // Reklam izni (kullanıcı 29.09.2026 "adsense de kurabiliriz", 17.10.2026 "adsbygoogle.js betiğini ekle"; KVKK): Google AdSense betiği
 // yalnız ziyaretçi "Kabul et" deyince yüklenir; ret de saklanır, yeniden sorulmaz; seçim gizlilik.html'den değiştirilir.
 // Reklamlar kişiselleştirilmemiş istenir (requestNonPersonalizedAds). Tahta ve kitap görüntüleyicide betik hiç yüklenmez
-// (kalem/tahta alanına reklam konmaz). Reklam birimi yerleri sonraki iş: etkinlik, kalem/tahta, indirme alanı dışında.
+// (kalem/tahta alanına reklam konmaz). Reklam birimleri (sayfa_uret.py reklam_yeri): ana/ağaç sayfaları ve konu özetlerinde alt bilginin
+// üstünde tek alan; etkinlik, kalem/tahta, görüntüleyici ve indirme alanlarında yok. Alan HTML'de gizlidir; yalnız izin + betik yüklenince açılır.
 (() => {
   const ANAHTAR = 'dk-reklam', MUSTERI = 'ca-pub-6660544937586858';
   const aracSayfasi = /^\/(tahta|goruntule)\.html$/.test(location.pathname);
   const secim = () => { try { return localStorage.getItem(ANAHTAR); } catch { return null; } };
   const kaydet = (d) => { try { d ? localStorage.setItem(ANAHTAR, d) : localStorage.removeItem(ANAHTAR); } catch {} };
   let yuklendi = false;
+  const birimler = () => {   // slot kimliği olmayan alanda <ins> yoktur: açılmaz; dolmayan reklam (data-ad-status=unfilled) stil.css'te gizlenir
+    $$('aside.reklam').forEach((alan) => {
+      const birim = $('ins.adsbygoogle', alan);
+      if (!birim || birim.dataset.istendi) return;
+      birim.dataset.istendi = '1';
+      alan.hidden = false;   // genişliği 0 olan alana reklam istenmez: önce görünür olur, sonra istenir
+      try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch { alan.hidden = true; return; }
+      // Boş alan kalmasın: Google dolmayan birime data-ad-status="unfilled" yazar (stil.css gizler); istek hiç yapılmazsa
+      // (engelleyici, ağ, onaysız site) 12 sn sonra alan yeniden gizlenir
+      setTimeout(() => { if (!birim.getAttribute('data-ad-status') && !birim.querySelector('iframe')) alan.hidden = true; }, 12000);
+    });
+  };
+  const gizle = () => $$('aside.reklam').forEach((alan) => { alan.hidden = true; });
   const yukle = () => {
     if (yuklendi || aracSayfasi) return;
     yuklendi = true;
     (window.adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = 1;
-    document.head.append(el('script', { async: true, src: `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${MUSTERI}`, crossorigin: 'anonymous' }));
+    document.head.append(el('script', { async: true, src: `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${MUSTERI}`, crossorigin: 'anonymous', onerror: gizle }));
+    birimler();
   };
   const durum = $('#reklam-durum');
   const durumYaz = () => {

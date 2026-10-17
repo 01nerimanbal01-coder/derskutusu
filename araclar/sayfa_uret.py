@@ -12,7 +12,7 @@ from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'goruntule.js': '20261012-1', 'belgeler.js': '20261012-1', 'agac.js': '20261013-2', 'yazili.js': '20261010-1', 'ortak.js': '20261017-1', 'tahta.js': '20261017-3', 'etkinlik.js': '20261003-1', 'arama.js': '20261004-duzen1', 'kutuphane.js': '20261013-2', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-1'}
+BETIK_SURUMLERI = {'goruntule.js': '20261012-1', 'belgeler.js': '20261012-1', 'agac.js': '20261013-2', 'yazili.js': '20261010-1', 'ortak.js': '20261017-2', 'tahta.js': '20261017-3', 'etkinlik.js': '20261003-1', 'arama.js': '20261004-duzen1', 'kutuphane.js': '20261013-2', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-1'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
@@ -45,6 +45,27 @@ def kitle_ekle(html, ad):
     if ad in ('ogrenci.html', 'ogretmen.html') and 'agac.css?' not in html:
         html = html.replace('</head>', AGAC_CSS + '\n</head>', 1)
     return html
+
+
+# Reklam birimi yerleri (kullanıcı 29.09 "adsense de kurabiliriz", 17.10; AGENTS-TAM 46): yalnız ana/ağaç sayfaları ve konu özetleri,
+# alt bilginin üstünde tek alan. Etkinlik, kalem/tahta, kitap görüntüleyici, yazılı/plan indirme ve kelime/Arapça çalışma sayfalarına konmaz.
+# Alan HTML'de gizli (hidden) durur; ortak.js yalnız ziyaretçi izin verip betik yüklenince açar ve doldurur (izin yoksa yer kaplamaz).
+# Slot kimliklerini kullanıcı AdSense'ten verir (Reklamlar → Reklama göre → Görüntülü reklam, duyarlı); kimlik yokken <ins> yazılmaz,
+# alan boş ve gizli kalır. Kimlik gelince buraya yazılır, ozet_uret.py + ust_guncelle.py yeniden çalıştırılır.
+REKLAM_MUSTERI = 'ca-pub-6660544937586858'
+REKLAM_SLOTLAR = {'ana': '', 'ozet': ''}   # 'ana': "Ders Kutusu – sayfa altı" (index, öğrenci, öğretmen, içerikler); 'ozet': "Ders Kutusu – özet altı"
+REKLAM_SAYFALARI = {'index.html': 'ana', 'ogrenci.html': 'ana', 'ogretmen.html': 'ana', 'icerikler.html': 'ana'}
+
+
+def reklam_yeri(ad):
+    """Sayfanın reklam alanı (alt bilginin hemen üstü); reklam konmayan sayfada boş."""
+    yer = 'ozet' if ad.startswith('ozet/') else REKLAM_SAYFALARI.get(ad)
+    if not yer:
+        return ''
+    slot = REKLAM_SLOTLAR.get(yer, '')
+    birim = (f'<ins class="adsbygoogle" style="display:block" data-ad-client="{REKLAM_MUSTERI}" data-ad-slot="{slot}" data-ad-format="auto" '
+             'data-full-width-responsive="true" data-tag-for-age-treatment="1"></ins>') if slot else ''
+    return f'<aside class="reklam" data-reklam="{yer}" aria-label="Reklam" hidden><div class="kap"><span class="reklam-etiket">Reklam</span>{birim}</div></aside>\n'
 
 
 def sayfa(ad, baslik, aciklama, govde, betikler=(), kanonik=True):
@@ -83,7 +104,7 @@ def sayfa(ad, baslik, aciklama, govde, betikler=(), kanonik=True):
 {govde}
 </main>
 
-{alt}
+{reklam_yeri(ad)}{alt}
 
 {js}{SAYAC}
 </body>
@@ -587,7 +608,14 @@ def main():
         html = sayfa(ad, baslik, aciklama, govde, kanonik=kanonik).replace('</body>', (betik + '\n' if betik else '') + '</body>')
         (PUBLIC / ad).write_text(html, encoding='utf-8')
 
-    print('üretildi:', ', '.join([*GOVDE, 'gizlilik.html', 'telif.html', '404.html']))
+    # Ana sayfa (gövdesi elle bakılır): reklam alanı alt bilginin üstünde; slot kimliği değişince burası da yenilenir
+    yol = PUBLIC / 'index.html'
+    eski = yol.read_text(encoding='utf-8')
+    yeni = re.sub(r'<aside class="reklam"[^\n]*</aside>\n', '', eski).replace('<footer class="alt">', reklam_yeri('index.html') + '<footer class="alt">', 1)
+    if yeni != eski:
+        yol.write_text(yeni, encoding='utf-8')
+
+    print('üretildi:', ', '.join([*GOVDE, 'gizlilik.html', 'telif.html', '404.html', 'index.html (reklam alanı)']))
 
 
 if __name__ == '__main__':
