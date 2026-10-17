@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 368 gönderi.
+Toplam 380 gönderi.
 
 ## bilgi-7-turkce-7
 Sıra: 2026-11-19 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-turkce-7.png
@@ -2555,7 +2555,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-6-temel-dini-bilgiler-6
-Sıra: 2026-10-17 12:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-6-temel-dini-bilgiler-6.png
+Sıra: 2026-10-17 12:03 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-6-temel-dini-bilgiler-6.png
 
 ```
 Bunu biliyor muydunuz? Mümin kimliği; iman, ibadet ve ihsan bütünlüğü içinde emanete sadakat ve kardeşlik ahlakını günlük hayatta yaşatmaktır.
@@ -2565,7 +2565,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-7-arapca-6
-Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-arapca-6.png
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-7-arapca-6.png
 
 ```
 Bunu biliyor muydunuz? Arapçada mesleklerin çalışma yerleri eyne ya’melu sorusu ve fî harf-i cerriyle kurulan mekân ifadeleriyle anlatılır.
@@ -2575,7 +2575,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-7-kuran-i-kerim-6
-Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-kuran-i-kerim-6.png
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-7-kuran-i-kerim-6.png
 
 ```
 Bunu biliyor muydunuz? Kunut duaları vitir namazının son rekâtında okunan, yalnız Allah’a kulluk ve bağlılık sözü veren kapsamlı yakarış dualarıdır.
@@ -2585,7 +2585,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-7-matematik-6
-Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-matematik-6.png
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-7-matematik-6.png
 
 ```
 Bunu biliyor muydunuz? Rasyonel sayılarla problemlerde toplama-çıkarmada payda eşitlenir, bölmede ikinci kesir ters çevrilip çarpılır ve işlem önceliği korunur.
@@ -2595,7 +2595,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-7-peygamberimizin-hayati-6
-Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-peygamberimizin-hayati-6.png
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-7-peygamberimizin-hayati-6.png
 
 ```
 Bunu biliyor muydunuz? İsrâ ve Miraç mucizesi Hüzün Yılı’nda Peygamberimize ilahi teselli olmuş ve ümmete beş vakit namaz hediyesini getirmiştir.
@@ -2605,7 +2605,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-7-sosyal-bilgiler-6
-Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-sosyal-bilgiler-6.png
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-7-sosyal-bilgiler-6.png
 
 ```
 Bunu biliyor muydunuz? Türk toplumu millî meselelerde dayanışma ruhuyla kenetlenirken küreselleşme sürecinde millî ve kültürel değerlerini koruyarak dünyayla etkileşir.
@@ -2615,7 +2615,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-7-temel-dini-bilgiler-6
-Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-temel-dini-bilgiler-6.png
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-7-temel-dini-bilgiler-6.png
 
 ```
 Bunu biliyor muydunuz? Mümin kimliği; kalpteki samimi imanın düzenli ibadet ve güven veren güzel ahlakla bütünleşerek hayatta görünür olmasıdır.
@@ -2625,7 +2625,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-7-turkce-6
-Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-7-turkce-6.png
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-7-turkce-6.png
 
 ```
 Bunu biliyor muydunuz? Metin karşılaştırmada konu ve ana fikir ortaklıkları incelenirken özetlemede metnin özü kendi ifadelerimizle kısaltılarak aktarılır.
@@ -2635,7 +2635,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-arapca-6
-Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-arapca-6.png
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-8-arapca-6.png
 
 ```
 Bunu biliyor muydunuz? Arapçada gezi türleri er-rıhle tamlamalarıyla, kullanılan ulaşım araçları ise bi- harf-i cerriyle kurulan kalıplarla ifade edilir.
@@ -2645,7 +2645,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-din-kulturu-6
-Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-din-kulturu-6.png
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-8-din-kulturu-6.png
 
 ```
 Bunu biliyor muydunuz? Hz. Musa (as) kendisine Tevrat verilen, kardeşi Hz. Harun ile Firavun’a karşı tevhid mücadelesi yürüten Ulu’l-Azm bir peygamberdir.
@@ -2655,7 +2655,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-fen-bilimleri-6
-Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-fen-bilimleri-6.png
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-8-fen-bilimleri-6.png
 
 ```
 Bunu biliyor muydunuz? Kalıtımda iki melez dölün (Aa x Aa) çaprazlanması sonucunda 3:1 oranında (%75 baskın, %25 çekinik) fenotip dağılımı elde edilir.
@@ -2665,7 +2665,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-ingilizce-6
-Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-ingilizce-6.png
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-8-ingilizce-6.png
 
 ```
 Bunu biliyor muydunuz? İngilizcede tercihler prefer ... to ... kalıbıyla, beğeniler ve kişisel görüşler ise fond of, can’t stand ve niteleme sıfatlarıyla anlatılır.
@@ -2675,7 +2675,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-inkilap-tarihi-6
-Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-inkilap-tarihi-6.png
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-8-inkilap-tarihi-6.png
 
 ```
 Bunu biliyor muydunuz? Osmanlı Devleti I. Dünya Savaşı’nda Kafkas ve Kanal’da taarruz, Çanakkale ve güney cephelerinde savunma, Avrupa’da yardım savaşı vermiştir.
@@ -2685,7 +2685,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-kuran-i-kerim-6
-Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-kuran-i-kerim-6.png
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-8-kuran-i-kerim-6.png
 
 ```
 Bunu biliyor muydunuz? Hz. Yakup ve Hz. Yusuf kıssası; hasedin zararını, zorluklara güzel sabırla (sabr-ı cemil) dayanmayı ve iffetle yükselmeyi öğretir.
@@ -2695,7 +2695,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-peygamberimizin-hayati-6
-Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-peygamberimizin-hayati-6.png
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-8-peygamberimizin-hayati-6.png
 
 ```
 Bunu biliyor muydunuz? Medine’de İslam toplumu Mescid-i Nebi, Ashâb-ı Suffe, Ensar-Muhacir kardeşliği (muâhât) ve Medine Sözleşmesi üzerinde yükselmiştir.
@@ -2705,7 +2705,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-temel-dini-bilgiler-6
-Sıra: 2026-10-17 12:33 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-temel-dini-bilgiler-6.png
+Sıra: 2026-10-17 12:33 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-8-temel-dini-bilgiler-6.png
 
 ```
 Bunu biliyor muydunuz? Kur’an-ı Kerim’e karşı görevimiz; ona iman etmek, tertîl üzere okumak, anlamını tedebbür etmek ve ahlaki ilkelerini yaşamaktır.
@@ -2715,7 +2715,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-arapca-6
-Sıra: 2026-10-17 13:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-arapca-6.png
+Sıra: 2026-10-17 13:03 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-arapca-6.png
 
 ```
 Bunu biliyor muydunuz? Arapçada tanışma ve sınıf içi iletişimde hâzâ-hâzihî işaret isimleri, şemsî-kamerî el- takısı ve eril-dişil emir fiiller kullanılır.
@@ -2725,7 +2725,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-biyoloji-6
-Sıra: 2026-10-17 13:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-biyoloji-6.png
+Sıra: 2026-10-17 13:03 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-biyoloji-6.png
 
 ```
 Bunu biliyor muydunuz? Bilimsel araştırmalar gözlem, hipotez ve kontrollü deneylerle yürütülürken dürüstlük ve intihalden kaçınma gibi bilim etiği ilkelerine uyulur.
@@ -2735,7 +2735,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-cografya-6
-Sıra: 2026-10-17 13:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-cografya-6.png
+Sıra: 2026-10-17 13:03 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-cografya-6.png
 
 ```
 Bunu biliyor muydunuz? Harita çiziminde küresellikten kaynaklanan bozulmaları en aza indirmek için silindir, konik ve düzlem projeksiyon yöntemleri kullanılır.
@@ -2745,7 +2745,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-din-kulturu-6
-Sıra: 2026-10-17 13:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-din-kulturu-6.png
+Sıra: 2026-10-17 13:03 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-din-kulturu-6.png
 
 ```
 Bunu biliyor muydunuz? İnsan ibadet ve dua ile Yaratıcısıyla bağ kurar; fiili dua ile emek verip kavli dua ile yalnız Allah’tan yardım diler.
@@ -2755,7 +2755,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-edebiyat-6
-Sıra: 2026-10-17 13:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-edebiyat-6.png
+Sıra: 2026-10-17 13:03 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-edebiyat-6.png
 
 ```
 Bunu biliyor muydunuz? Mülakat uzman kişinin görüşlerini doğrudan soru-cevap yapısıyla aktarırken röportaj yazarın gözlem ve belgeleriyle zenginleştirilir.
@@ -2765,7 +2765,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-fizik-6
-Sıra: 2026-10-17 13:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-fizik-6.png
+Sıra: 2026-10-17 13:03 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-fizik-6.png
 
 ```
 Bunu biliyor muydunuz? Skaler nicelikler yalnız sayı ve birimle tanımlanırken vektörel nicelikler başlangıç noktası, doğrultu, yön ve büyüklükle belirtilir.
@@ -2775,7 +2775,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-ingilizce-6
-Sıra: 2026-10-17 13:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-ingilizce-6.png
+Sıra: 2026-10-17 13:03 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-ingilizce-6.png
 
 ```
 Bunu biliyor muydunuz? İngilizcede mekân tanıtımlarında varlık bildirmek için there is / there are, konum belirtmek için ise prepositions of place kullanılır.
@@ -2785,7 +2785,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-kimya-6
-Sıra: 2026-10-17 13:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-kimya-6.png
+Sıra: 2026-10-17 13:03 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-kimya-6.png
 
 ```
 Bunu biliyor muydunuz? Atomda elektron dizilimi Aufbau (artan enerji), Pauli (zıt spin) ve Hund (eş enerjili orbitallere tek tek yerleşme) kurallarına göre yazılır.
@@ -2795,7 +2795,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-kuran-i-kerim-6
-Sıra: 2026-10-17 13:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-kuran-i-kerim-6.png
+Sıra: 2026-10-17 13:03 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-kuran-i-kerim-6.png
 
 ```
 Bunu biliyor muydunuz? Kur’an tilavetinde harflerin mahreç ve sıfatlarına uyulurken altında sıfır işareti bulunan uzatma harfleri ve vasıl hemzeleri geçişte okunmaz.
@@ -3682,4 +3682,124 @@ Bunu biliyor muydunuz? Hezarfen Necmeddin Okyay, ihsan bilinciyle hüsn-i hat, o
 Faydalı bulduysanız arkadaşınızı etiketleyin.
 📘 9. sınıf Temel Dinî Bilgiler 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-temel-dini-bilgiler-hafta-7
 #derskutusu #temeldinibilgiler #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-arapca-7
+Sıra: 2026-12-14 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-arapca-7.png
+
+```
+Bunu biliyor muydunuz? Arapçada güzel davranışlar es-sıdk, el-emâne ve et-teâvün kelimeleriyle; nezaket ise “Min fadlike” ve “Şükran cezîlen” kalıplarıyla ifade edilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Arapça 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-arapca-hafta-7
+#derskutusu #arapça #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-cografya-7
+Sıra: 2026-12-14 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-cografya-7.png
+
+```
+Bunu biliyor muydunuz? Kayaçlar püskürük, tortul ve başkalaşım olarak üçe ayrılır; granitlerde tor topoğrafyası, volkanik tüflerde peribacaları, kalkerde karstik şekiller oluşur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Coğrafya 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-cografya-hafta-7
+#derskutusu #coğrafya #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-din-kulturu-7
+Sıra: 2026-12-14 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-din-kulturu-7.png
+
+```
+Bunu biliyor muydunuz? Âl-i İmrân 190–191. ayetler Ulü’l-Elbâb’ın zikir ve tefekkürünü, İsrâ 36. ayet ise bilgi kaynaklarını doğru kullanma sorumluluğunu vurgular.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Din Kültürü ve Ahlak Bilgisi 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-din-kulturu-ve-ahlak-bilgisi-hafta-7
+#derskutusu #dinkültürü #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-felsefe-7
+Sıra: 2026-12-14 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-felsefe-7.png
+
+```
+Bunu biliyor muydunuz? Geçerli bir argümanda öncüller de doğruysa argüman sağlamdır; mantık kurallarını ihlal eden yanıltıcı çıkarımlara ise safsata denir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Felsefe 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-felsefe-hafta-7
+#derskutusu #felsefe #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-fikih-7
+Sıra: 2026-12-14 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fikih-7.png
+
+```
+Bunu biliyor muydunuz? Ahmed Cevdet Paşa başkanlığında hazırlanan Mecelle-i Ahkâm-ı Adliyye ve 1917 Hukuk-ı Aile Kararnamesi İslam hukukunun ilk kanunlaştırma örnekleridir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Fıkıh 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fikih-hafta-7
+#derskutusu #fıkıh #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-hadis-7
+Sıra: 2026-12-14 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-hadis-7.png
+
+```
+Bunu biliyor muydunuz? Hz. Peygamber Veda Hutbesi’nde Kur’an ve Sünneti iki büyük emanet (Sekaleyn) olarak bırakmış; Sünnet olmadan Kur’an’ın yaşanamayacağını bildirmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Hadis 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-hadis-hafta-7
+#derskutusu #hadis #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-ingilizce-7
+Sıra: 2026-12-15 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-ingilizce-7.png
+
+```
+Bunu biliyor muydunuz? Konuşma anındaki kararlar ve kişisel tahminler için “will”, önceden yapılmış planlar ve kanıtlı tahminler için “be going to” kullanılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf İngilizce 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-ingilizce-hafta-7
+#derskutusu #ingilizce #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-kuran-i-kerim-7
+Sıra: 2026-12-15 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kuran-i-kerim-7.png
+
+```
+Bunu biliyor muydunuz? Asli sükûnla oluşan Medd-i Lâzım 4 elif uzatılır; durak sonlarındaki geçici sükûnla Medd-i Ârız, cezimli vâv/yâ ile ise Medd-i Lîn oluşur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Kur’an-ı Kerim 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kuran-i-kerim-hafta-7
+#derskutusu #kuranıkerim #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-peygamberimizin-hayati-7
+Sıra: 2026-12-15 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-peygamberimizin-hayati-7.png
+
+```
+Bunu biliyor muydunuz? Hz. Peygamber Taif’te taşlanmasına rağmen halkın helakini istemeyip nesillerinden müminler çıkması için dua etmiş; bağda Addâs Müslüman olmuştur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Peygamberimizin Hayatı 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-peygamberimizin-hayati-hafta-7
+#derskutusu #peygamberimizinhayatı #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-siyer-7
+Sıra: 2026-12-15 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-siyer-7.png
+
+```
+Bunu biliyor muydunuz? Hz. Muhammed (sav) gençliğinde mazlumları koruyan Hilfü’l-Fudûl’a katılmış, 605 yılında Kâbe hakemliğiyle kabileler arası savaşı önlemiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Siyer 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-siyer-hafta-7
+#derskutusu #siyer #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-tarih-7
+Sıra: 2026-12-15 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-tarih-7.png
+
+```
+Bunu biliyor muydunuz? Selçuklularda ikta sistemi üretimi ve askeri gücü süreklileştirmiş; Ahîlik teşkilatı, kervansaraylar ve medreseler Anadolu’yu kalkındırmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Tarih 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-tarih-hafta-7
+#derskutusu #tarih #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-temel-dini-bilgiler-7
+Sıra: 2026-12-15 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-temel-dini-bilgiler-7.png
+
+```
+Bunu biliyor muydunuz? Hezarfen Necmeddin Okyay; kırk yıllık imam-hatiplik görevini hüsn-i hat, okçuluk ve çiçekli ebru (Necmeddin Ebrusu) sanatlarıyla bütünleştirmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Temel Dinî Bilgiler 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-temel-dini-bilgiler-hafta-7
+#derskutusu #temeldinibilgiler #10sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
