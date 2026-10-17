@@ -1,0 +1,360 @@
+{
+  "ad": "9-matematik-3",
+  "sinif": 9,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 3,
+  "tarih": "28 Eylül - 2 Ekim 2026",
+  "yayin_tarihi": "2026-10-17",
+  "unite": "SAYILAR",
+  "konu": "Gerçek Sayıların Üslü ve Köklü Gösterimleri ile Gerçek Sayı Aralıkları",
+  "ciktilar": [
+    "9.1.1. Gerçek sayıların üslü ve köklü gösterimleriyle yapılan işlemlere dair muhakeme yapabilme",
+    "9.1.2. Gerçek sayı aralıklarının gösteriminde ve aralıklarla ilgili işlemlerde küme sembol ve işlemlerinden yararlanabilme"
+  ],
+  "giris": "Gerçek sayıların üslü ve köklü gösterimleri yalnızca işlem yapmaya değil, bilimsel ve matematiksel önermelerin doğruluğunu muhakeme etmeye de olanak tanır. Bu haftanın ilk bölümünde üslü ve köklü ifadelerle ilgili önermeleri cebirsel kanıt ve aksine örnek yöntemleriyle doğrulamayı ve paydada yer alan köklü ifadeleri eşlenik çarpımıyla rasyonelleştirmeyi tamamlıyoruz. İkinci bölümde ise sayı kümeleri arasındaki kapsama ilişkilerini küme sembolleriyle ifade ediyor, gerçek sayı doğrusu üzerindeki sınırlı ve sınırsız aralıkları tanımlıyor ve aralıklarla birleşim, kesişim, fark ile tümleyen işlemlerini inceliyoruz.",
+  "ozet": [
+    "1. Üslü ve Köklü Gösterimlerle İlgili Muhakeme ve Eşlenik İşlemleri: Gerçek sayıların üslü ve köklü gösterimleri arasında rasyonel üs bağıntısı köprü kurar: a > 0, m bir tam sayı ve n ≥ 2 bir doğal sayı olmak üzere {koyu:{us:a|2/3} = {kok:{us:a|2}|3}} eşitliği geçerlidir.",
+    "2. Sayı Kümeleri ve Küme Sembolleri: Gerçek sayılar ve alt kümeleri arasındaki ilişkileri göstermek için küme dili ve sembolleri kullanılır.",
+    "3. Sınırlı Gerçek Sayı Aralıkları: Açık, Kapalı ve Yarı Açık Aralıklar: İki gerçek sayı arasındaki tüm gerçek sayıları tek tek liste yöntemiyle yazmak imkânsızdır; çünkü iki gerçek sayı arasında sonsuz tane gerçek sayı bulunur.",
+    "4. Sınırsız Gerçek Sayı Aralıkları: Bir gerçek sayıdan büyük olan tüm gerçek sayıların veya bir gerçek sayıdan küçük olan tüm gerçek sayıların oluşturduğu kümeler bir yönden sınırlı, diğer yönden ise sonsuza uzanan sınırsız aralıklardır.",
+    "5. Gerçek Sayı Aralıklarıyla Küme İşlemleri: Birleşim, Kesişim ve Fark: Gerçek sayı aralıkları gerçek sayılar kümesinin birer alt kümesi olduğundan, aralıklar üzerinde birleşim (∪), kesişim (∩) ve fark (\\) işlemleri doğrudan uygulanabilir.",
+    "6. Bir Aralığın Tümleyeni ve Gerçek Yaşam Modellemesi: Gerçek sayılar kümesi R = (-∞, ∞) evrensel küme kabul edildiğinde, bir A aralığında bulunmayan tüm gerçek sayıların oluşturduğu kümeye A aralığının tümleyeni denir ve A' = R \\ A ile gösterilir."
+  ],
+  "bolumler": [
+    {
+      "baslik": "1. Üslü ve Köklü Gösterimlerle İlgili Muhakeme ve Eşlenik İşlemleri",
+      "metin": "Gerçek sayıların üslü ve köklü gösterimleri arasında {koyu:rasyonel üs bağıntısı} köprü kurar: {koyu:a > 0}, {koyu:m} bir tam sayı ve {koyu:n ≥ 2} bir doğal sayı olmak üzere {koyu:{us:a|2/3} = {kok:{us:a|2}|3}} eşitliği geçerlidir. Köklü ifadelerde kök derecesi olan {koyu:n} sayısının tek veya çift olması kritik önem taşır: {koyu:n tek} ise {kok:{us:a|3}|3} = a olurken, {koyu:n çift} ise sonuç negatif olamayacağından {koyu:{kok:{us:a|2}} = |a|} (mutlak değer a) olur. Paydasında köklü ifade bulunan kesirlerde paydayı rasyonel sayıya dönüştürmek için {koyu:eşlenik çarpımı} kullanılır; iki kare farkı özdeşliği gereğince {koyu:({kok:a} - {kok:b}) · ({kok:a} + {kok:b}) = a - b} çarpımı kökleri ortadan kaldırır. Matematiksel bir önermenin doğruluğunu sorgularken önerme her gerçek sayı için geçerliyse {koyu:cebirsel kanıt} yapılır; en az bir sayı değeri için bile sağlamıyorsa {koyu:aksine örnek} verilerek önermenin yanlış olduğu ispatlanır.",
+      "ornekler": [
+        {
+          "baslik": "Eşlenik ile Teleskopik Toplam",
+          "aciklama": "{kesir:1|{kok:2}+1} + {kesir:1|{kok:3}+{kok:2}} + {kesir:1|2+{kok:3}} işleminde her kesir kendi paydasının eşleniği ile genişletilirse paydalar 2-1=1, 3-2=1 ve 4-3=1 olur. İfade ({kok:2}-1) + ({kok:3}-{kok:2}) + (2-{kok:3}) şekline dönüşür; ara terimler birbirini götürür ve sonuç 2 - 1 = 1 bulunur."
+        },
+        {
+          "baslik": "Aksine Örnek ile Önerme Çürütme",
+          "aciklama": "\"Her a, b pozitif gerçek sayısı için {kok:a + b} = {kok:a} + {kok:b} olur.\" önermesini inceleyelim. a = 9 ve b = 16 seçilirse sol taraf {kok:9 + 16} = {kok:25} = 5 iken sağ taraf {kok:9} + {kok:16} = 3 + 4 = 7 olur. 5 ≠ 7 olduğundan bu tek aksine örnek önermenin yanlış olduğunu kanıtlar."
+        }
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Çift Dereceli Kökte Mutlak Değer Tuzağı",
+        "metin": "x < 0 negatif bir gerçek sayı iken {kok:{us:x|2}} ifadesi x'e değil, |x| = -x'e eşittir! Örneğin x = -4 için {kok:{us:(-4)|2}} = {kok:16} = 4 = -(-4) olur."
+      },
+      "gorsel": ""
+    },
+    {
+      "baslik": "2. Sayı Kümeleri ve Küme Sembolleri",
+      "metin": "Gerçek sayılar ve alt kümeleri arasındaki ilişkileri göstermek için {koyu:küme dili ve sembolleri} kullanılır. Sayı kümeleri en dar kümeden en geniş kümeye doğru birbirinin alt kümesi olacak biçimde sıralanır: {koyu:Doğal sayılar kümesi} (N = {0, 1, 2, 3, ...}), {koyu:tam sayılar kümesi} (Z = {..., -2, -1, 0, 1, 2, ...}), a ve b tam sayı ve b ≠ 0 olmak üzere {kesir:a|b} biçiminde yazılabilen {koyu:rasyonel sayılar kümesi (Q)} ve virgülden sonraki basamakları düzensiz olarak sonsuza kadar devam eden {koyu:irrasyonel sayılar kümesi (Q')} ({kok:2}, {kok:5}, π, e gibi). Rasyonel ve irrasyonel sayıların birleşimi {koyu:gerçek (reel) sayılar kümesini (R = Q ∪ Q')} oluşturur ve bu iki küme ayrık olduğundan kesişimleri boş kümedir ({koyu:Q ∩ Q' = ∅}). Bir elemanın kümeye ait olması {koyu:∈} (elemanıdır), ait olmaması {koyu:∉} (elemanı değildir) ve bir kümenin başka bir kümenin içinde yer alması {koyu:⊂} (alt kümesidir) sembolüyle gösterilir.",
+      "tablo": {
+        "basliklar": [
+          "Sembol / Gösterim",
+          "Okunuşu ve Anlamı",
+          "Matematiksel Örnek"
+        ],
+        "satirlar": [
+          [
+            "∈ ve ∉",
+            "Elemanıdır / Elemanı değildir",
+            "-5 ∈ Z, ancak -5 ∉ N; {kok:3} ∈ Q', ancak {kok:3} ∉ Q"
+          ],
+          [
+            "⊂ ve ⊆",
+            "Alt kümesidir / Kapsanır",
+            "N ⊂ Z ⊂ Q ⊂ R ve Q' ⊂ R"
+          ],
+          [
+            "∪ (Birleşim)",
+            "İki kümenin tüm elemanlarının oluşturduğu küme",
+            "Q ∪ Q' = R (Gerçek sayılar kümesi)"
+          ],
+          [
+            "∩ (Kesişim)",
+            "İki kümenin ortak elemanlarının oluşturduğu küme",
+            "Q ∩ Q' = ∅ ve Z ∩ N = N"
+          ],
+          [
+            "\\ veya - (Fark)",
+            "Birinci kümede olup ikinci kümede olmayan elemanlar",
+            "R \\ Q = Q' ve N \\ {0} = {us:Z|+}"
+          ],
+          [
+            "A' (Tümleyen)",
+            "Evrensel kümede (R) olup A kümesinde olmayanlar",
+            "Q' = R \\ Q (Rasyonel olmayan gerçek sayılar)"
+          ]
+        ]
+      },
+      "kutu": {
+        "tur": "bilgi",
+        "baslik": "Gerçek Sayı Doğrusunun Sürekliliği",
+        "metin": "Tam sayılar veya doğal sayılar sayı doğrusunda aralıklı noktalar hâlinde dizilirken, gerçek sayılar (R) sayı doğrusundaki boşlukların tamamını kesintisiz biçimde doldurur; sayı doğrusundaki her noktaya tam olarak bir gerçek sayı karşılık gelir."
+      },
+      "gorsel": ""
+    },
+    {
+      "baslik": "3. Sınırlı Gerçek Sayı Aralıkları: Açık, Kapalı ve Yarı Açık Aralıklar",
+      "metin": "İki gerçek sayı arasındaki tüm gerçek sayıları tek tek liste yöntemiyle yazmak imkânsızdır; çünkü iki gerçek sayı arasında sonsuz tane gerçek sayı bulunur. Bu nedenle gerçek sayı doğrusu üzerindeki kesintisiz sayı kümelerini ifade etmek için {koyu:aralık gösterimi} kullanılır. Alt sınırı {koyu:a} ve üst sınırı {koyu:b} ({koyu:a < b}) olan aralıklar {koyu:sınırlı aralıklar} olarak adlandırılır. Sınır noktasının kümeye dâhil olup olmamasına göre dört tür sınırlı aralık vardır: Sınır noktaları kümeye dâhil değilse {koyu:açık parantez ( )} kullanılır ve sayı doğrusunda uç nokta {koyu:içi boş daire (○)} ile gösterilir. Sınır noktaları kümeye dâhil ise {koyu:köşeli parantez [ ]} kullanılır ve sayı doğrusunda uç nokta {koyu:içi dolu daire (●)} ile gösterilir.",
+      "tablo": {
+        "basliklar": [
+          "Aralık Türü",
+          "Gösterim",
+          "Ortak Özellik Yöntemi",
+          "Uç Noktaların Durumu"
+        ],
+        "satirlar": [
+          [
+            "Açık Aralık",
+            "(a, b)",
+            "{x | a < x < b, x ∈ R}",
+            "a ∉ (a, b) ve b ∉ (a, b) — her iki uç açık (○ — ○)"
+          ],
+          [
+            "Kapalı Aralık",
+            "[a, b]",
+            "{x | a ≤ x ≤ b, x ∈ R}",
+            "a ∈ [a, b] ve b ∈ [a, b] — her iki uç kapalı (● — ●)"
+          ],
+          [
+            "Yarı Açık Aralık",
+            "[a, b)",
+            "{x | a ≤ x < b, x ∈ R}",
+            "a ∈ [a, b) ancak b ∉ [a, b) — sol kapalı, sağ açık (● — ○)"
+          ],
+          [
+            "Yarı Açık Aralık",
+            "(a, b]",
+            "{x | a < x ≤ b, x ∈ R}",
+            "a ∉ (a, b] ancak b ∈ (a, b] — sol açık, sağ kapalı (○ — ●)"
+          ]
+        ]
+      },
+      "ornekler": [
+        {
+          "baslik": "Aralıktaki Tam Sayıların Sayısı",
+          "aciklama": "A = (-3, 4] yarı açık aralığı {x | -3 < x ≤ 4, x ∈ R} kümesini belirtir. Bu aralıktaki gerçek sayıların sayısı sonsuzdur; ancak aralıktaki tam sayılar A ∩ Z = {-2, -1, 0, 1, 2, 3, 4} olup toplam 7 tanedir (-3 açık uç olduğu için alınmaz, 4 kapalı uç olduğu için alınır)."
+        }
+      ],
+      "kutu": {
+        "tur": "tanim",
+        "baslik": "Aralık Kavramı",
+        "metin": "Gerçek sayı doğrusu üzerinde birbirinden farklı iki nokta arasındaki (uç noktaların dâhil olduğu veya olmadığı) tüm gerçek sayıların oluşturduğu alt kümeye gerçek sayı aralığı denir."
+      },
+      "gorsel": ""
+    },
+    {
+      "baslik": "4. Sınırsız Gerçek Sayı Aralıkları",
+      "metin": "Bir gerçek sayıdan büyük olan tüm gerçek sayıların veya bir gerçek sayıdan küçük olan tüm gerçek sayıların oluşturduğu kümeler bir yönden sınırlı, diğer yönden ise sonsuza uzanan {koyu:sınırsız aralıklar}dır. Sayı doğrusunun sağ ucunda {koyu:artı sonsuz (+∞ veya ∞)}, sol ucunda ise {koyu:eksi sonsuz (-∞)} sembolü kullanılır. {koyu:Sonsuz (∞ ve -∞) bir gerçek sayı değildir}; yalnızca sayıların sınırsız biçimde büyüdüğünü veya küçüldüğünü gösteren bir semboldür. Bu nedenle aralık gösteriminde {koyu:-∞ ve ∞ sembollerinin bulunduğu taraf daima açık parantez ( ) ile yazılır}, hiçbir zaman köşeli parantez kullanılmaz. Tüm gerçek sayılar kümesi de her iki yönden sınırsız aralık olarak {koyu:R = (-∞, ∞)} biçiminde ifade edilir.",
+      "tablo": {
+        "basliklar": [
+          "Sınırsız Aralık",
+          "Ortak Özellik Gösterimi",
+          "Sözel Anlamı ve Sayı Doğrusu Yönü"
+        ],
+        "satirlar": [
+          [
+            "(a, ∞)",
+            "{x | x > a, x ∈ R}",
+            "a'dan büyük tüm gerçek sayılar (a noktasında içi boş daire, sağa doğru ok)"
+          ],
+          [
+            "[a, ∞)",
+            "{x | x ≥ a, x ∈ R}",
+            "a ve a'dan büyük tüm gerçek sayılar (a noktasında içi dolu daire, sağa doğru ok)"
+          ],
+          [
+            "(-∞, b)",
+            "{x | x < b, x ∈ R}",
+            "b'den küçük tüm gerçek sayılar (b noktasında içi boş daire, sola doğru ok)"
+          ],
+          [
+            "(-∞, b]",
+            "{x | x ≤ b, x ∈ R}",
+            "b ve b'den küçük tüm gerçek sayılar (b noktasında içi dolu daire, sola doğru ok)"
+          ],
+          [
+            "(-∞, ∞)",
+            "R (Tüm gerçek sayılar)",
+            "Gerçek sayı doğrusunun tamamı (her iki yöne sonsuza uzanan doğru)"
+          ]
+        ]
+      },
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Sonsuz Sembolünde Parantez Kuralı",
+        "metin": "-∞ ve +∞ birer gerçek sayı olmadığı için hiçbir kümeye eleman olarak dâhil edilemez. Dolayısıyla [-∞, 5] veya [3, ∞] gibi gösterimler matematiksel olarak yanlıştır; doğrusu (-∞, 5] ve [3, ∞) şeklindedir."
+      },
+      "gorsel": ""
+    },
+    {
+      "baslik": "5. Gerçek Sayı Aralıklarıyla Küme İşlemleri: Birleşim, Kesişim ve Fark",
+      "metin": "Gerçek sayı aralıkları gerçek sayılar kümesinin birer alt kümesi olduğundan, aralıklar üzerinde {koyu:birleşim (∪)}, {koyu:kesişim (∩)} ve {koyu:fark (\\)} işlemleri doğrudan uygulanabilir. Bu işlemleri hatasız yapmanın en etkili yolu her iki aralığı aynı sayı doğrusu üzerinde alt alta çizmektir. {koyu:Birleşim (A ∪ B)}, sayı doğrusunda A veya B aralıklarından en az biri tarafından taranan tüm noktaları kapsar (ortak bölgesi olan iki aralığın birleşimi en küçük alt sınırdan en büyük üst sınıra uzanan tek bir aralıktır). {koyu:Kesişim (A ∩ B)}, her iki aralıkta aynı anda bulunan ortak noktaların kümesidir (büyük alt sınır ile küçük üst sınır arasındaki bölge). {koyu:Fark (A \\ B)} ise A aralığında bulunup B aralığında bulunmayan elemanlardan oluşur.",
+      "ornekler": [
+        {
+          "baslik": "A = [-2, 4) ve B = (1, 6] Aralıklarında İşlemler",
+          "aciklama": "• Birleşim: En sol sınır -2 (A'da kapalı), en sağ sınır 6 (B'de kapalı) olup aradaki tüm sayılar tarandığından A ∪ B = [-2, 6] olur.\n• Kesişim: Ortak bölge 1 ile 4 arasıdır. 1 sayısı B'de olmadığı için kesişimde de yoktur (açık); 4 sayısı A'da olmadığı için kesişimde de yoktur (açık). Dolayısıyla A ∩ B = (1, 4) bulunur.\n• Fark (A \\ B): [-2, 4) aralığından (1, 6] aralığını çıkardığımızda -2'den 1'e kadar olan kısım kalır. Dikkat edilirse 1 sayısı A'da vardır ama B'de yoktur (1 ∉ B); dolayısıyla 1 sayısı A'dan çıkarılamaz ve fark kümesinde kalır: A \\ B = [-2, 1]."
+        }
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Fark İşleminde Sınır Noktası Kuralı",
+        "metin": "A \\ B fark kümesini bulurken iç sınır noktasına dikkat edin: Çıkarılan B kümesinde sınır noktası AÇIK ise (B'de yoksa) o nokta silinemediği için A \\ B kümesinde KAPALI olur; B kümesinde KAPALI ise (B'de varsa) silindiği için A \\ B kümesinde AÇIK olur!"
+      },
+      "gorsel": ""
+    },
+    {
+      "baslik": "6. Bir Aralığın Tümleyeni ve Gerçek Yaşam Modellemesi",
+      "metin": "Gerçek sayılar kümesi {koyu:R = (-∞, ∞)} evrensel küme kabul edildiğinde, bir A aralığında bulunmayan tüm gerçek sayıların oluşturduğu kümeye {koyu:A aralığının tümleyeni} denir ve {koyu:A' = R \\ A} ile gösterilir. Bir aralığın tümleyeni alınırken sayı doğrusunda o aralığın dışında kalan bölgeler alınır; A aralığına dâhil olan (kapalı) sınır noktaları tümleyende dâhil olmaz (açık olur), A aralığına dâhil olmayan (açık) sınır noktaları ise tümleyende dâhil olur (kapalı olur). Gerçek yaşamda sıcaklık toleransları, laboratuvar güvenlik sınırları, ilaç dozaj aralıkları ve mühendislik hata payları gerçek sayı aralıkları ve bunların tümleyenleriyle modellenir.",
+      "ornekler": [
+        {
+          "baslik": "Tümleyen Alma Örnekleri",
+          "aciklama": "• A = [-3, 5) yarı açık aralığının tümleyeni: -3 sayısı A'da olduğu için A' kümesinde olmaz (açık); 5 sayısı A'da olmadığı için A' kümesinde olur (kapalı). Böylece A' = (-∞, -3) ∪ [5, ∞) bulunur.\n• B = (-∞, 2] sınırsız aralığının tümleyeni: 2'den küçük veya 2'ye eşit olmayan sayılar 2'den büyük sayılardır; yani B' = (2, ∞) olur."
+        },
+        {
+          "baslik": "Gerçek Yaşam Problemi: Sera Sıcaklık Kontrolü",
+          "aciklama": "Bir serada A bitkisi [15, 26] °C aralığında, B bitkisi ise (20, 32) °C aralığında sağlıklı yetişmektedir. Her iki bitkinin aynı serada birlikte yetişebileceği sıcaklık aralığı iki kümenin kesişimi olan A ∩ B = [15, 26] ∩ (20, 32) = (20, 26] °C aralığıdır."
+        }
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "baslik": "Tümleyenin Tümleyeni",
+        "metin": "Her A gerçek sayı aralığı için A ∪ A' = R = (-∞, ∞), A ∩ A' = ∅ ve (A')' = A eşitlikleri daima geçerlidir."
+      },
+      "gorsel": ""
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "{kesir:2|{kok:5} - {kok:3}} + {kesir:2|{kok:5} + {kok:3}} işleminin sonucunu paydaları rasyonelleştirerek bulunuz.",
+      "cevap": "Birinci kesri ({kok:5}+{kok:3}), ikinci kesri ({kok:5}-{kok:3}) eşleniği ile genişletirsek ortak payda 5 - 3 = 2 olur. İfade {kesir:2({kok:5}+{kok:3})|2} + {kesir:2({kok:5}-{kok:3})|2} = ({kok:5}+{kok:3}) + ({kok:5}-{kok:3}) = 2{kok:5} bulunur."
+    },
+    {
+      "soru": "x < 0 < y olmak üzere {kok:{us:x|2}} + {kok:{us:y|3}|3} - {kok:{us:(x-y)|2}} ifadesinin en sade biçimini bulunuz.",
+      "cevap": "Çift dereceli köklerden ifadeler mutlak değer içinde, tek dereceli kökten aynen çıkar: |x| + y - |x - y|. x < 0 olduğundan |x| = -x ve x - y < 0 olduğundan |x - y| = -(x - y) = -x + y olur. Yerine yazılırsa: (-x) + y - (-x + y) = -x + y + x - y = 0 bulunur."
+    },
+    {
+      "soru": "Gerçek sayılar kümesinde A = [-3, 5) ve B = (1, 7] aralıkları veriliyor. A ∪ B ve A ∩ B kümelerini aralık gösterimiyle yazınız.",
+      "cevap": "Sayı doğrusunda her iki küme çizildiğinde en küçük alt sınır -3 (kapalı) ve en büyük üst sınır 7 (kapalı) olduğundan A ∪ B = [-3, 7] olur. Ortak bölgenin sınırları ise 1 (B kümesinde açık olduğundan kesişimde açık) ve 5 (A kümesinde açık olduğundan kesişimde açık) olup A ∩ B = (1, 5) bulunur."
+    },
+    {
+      "soru": "Gerçek sayılar kümesinde A = [-2, 4] ve B = (1, 6) aralıkları için A \\ B (A fark B) kümesini bulunuz.",
+      "cevap": "[-2, 4] aralığından (1, 6) aralığının elemanları çıkarıldığında -2 ile 1 arasındaki sayılar kalır. 1 sınır noktası A kümesinde vardır (1 ∈ A) ancak B kümesinde açık uç olduğundan yoktur (1 ∉ B); dolayısıyla 1 sayısı A kümesinden silinemez ve fark kümesinde kapalı uç olur: A \\ B = [-2, 1]."
+    },
+    {
+      "soru": "Gerçek sayılar kümesinde M = (-4, 3] yarı açık aralığının tümleyeni olan M' = R \\ M kümesini bulunuz.",
+      "cevap": "M = (-4, 3] aralığının dışında kalan gerçek sayılar -4 ve -4'ten küçük sayılar ile 3'ten büyük sayılardır. -4 sayısı M'de açık olduğu için M' kümesinde kapalı, 3 sayısı M'de kapalı olduğu için M' kümesinde açık olur: M' = (-∞, -4] ∪ (3, ∞)."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Gerçek sayılar kümesinde tanımlı A = [-4, 3) ve B = (0, 5] aralıkları veriliyor. Buna göre A \\ B (A fark B) kümesi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "[-4, 0]",
+        "[-4, 0)",
+        "(0, 3)",
+        "[-4, 5]"
+      ],
+      "dogru": 0,
+      "aciklama": "A = [-4, 3) aralığından B = (0, 5] aralığının elemanları çıkarıldığında -4 ile 0 arasındaki sayılar kalır. -4 sayısı A'da kapalı olduğundan sonuçta kapalıdır. 0 sayısı ise A kümesinde vardır (0 ∈ A) fakat B kümesinde açık uç olduğundan yoktur (0 ∉ B); dolayısıyla 0 sayısı A'dan çıkarılamaz ve fark kümesinde kalır: A \\ B = [-4, 0]."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Gerçek sayılar kümesinde K = (-2, 6] aralığının tümleyeni olan K' = R \\ K kümesi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "(-∞, -2] ∪ (6, ∞)",
+        "(-∞, -2) ∪ [6, ∞)",
+        "(-∞, -2) ∪ (6, ∞)",
+        "[-2, 6)"
+      ],
+      "dogru": 0,
+      "aciklama": "K = (-2, 6] aralığında -2 elemanı yoktur (-2 ∉ K), bu yüzden tümleyen kümesinde -2 yer alır (kapalı uç: -2]). 6 elemanı K kümesinde vardır (6 ∈ K), bu yüzden tümleyende yer almaz (açık uç: (6). Dolayısıyla K' = (-∞, -2] ∪ (6, ∞) olur."
+    },
+    {
+      "tur": "dy",
+      "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Gerçek sayı aralıklarında sonsuz (-∞ veya ∞) sembolünün bulunduğu uç her zaman açık parantez ile gösterilir.",
+          "dogru": true,
+          "aciklama": "Sonsuz bir gerçek sayı olmadığı için kümeye dâhil edilemez; bu nedenle daima (-∞, a veya b, ∞) şeklinde açık parantez kullanılır."
+        }
+      ]
+    },
+    {
+      "tur": "dy",
+      "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "A = [-1, 4] ve B = (2, 7) aralıklarının kesişimi A ∩ B = [2, 4] kapalı aralığıdır.",
+          "dogru": false,
+          "aciklama": "2 sayısı B = (2, 7) aralığına dâhil olmadığı için (2 ∉ B) kesişim kümesine de dâhil olamaz. Doğru kesişim kümesi A ∩ B = (2, 4] yarı açık aralığıdır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki gerçek sayı kümelerini ve aralık işlemlerini doğru karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "{x | -3 ≤ x < 5, x ∈ R}",
+          "[-3, 5) yarı açık aralığı"
+        ],
+        [
+          "{x | x > 4, x ∈ R}",
+          "(4, ∞) sınırsız açık aralığı"
+        ],
+        [
+          "[-1, 3] ∩ (1, 6)",
+          "(1, 3] yarı açık aralığı"
+        ],
+        [
+          "[2, ∞) aralığının tümleyeni",
+          "(-∞, 2) sınırsız açık aralığı"
+        ],
+        [
+          "Q ∪ Q' (Rasyonel ve irrasyonel birleşimi)",
+          "R = (-∞, ∞) gerçek sayılar kümesi"
+        ]
+      ],
+      "aciklama": "Eşitsizlikte ≤ veya ≥ varsa köşeli parantez [ ], < veya > varsa açık parantez ( ) kullanılır; tümleyende sınırın açıklık-kapalılık durumu tersine döner."
+    },
+    {
+      "tur": "bosluk",
+      "yonerge": "Cümlelerdeki boşlukları uygun kelimelerle tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Uç noktalarının her ikisi de kümeye dâhil olan [a, b] biçimindeki gerçek sayı aralığına ___ aralık denir.",
+          "cevap": "kapalı"
+        }
+      ],
+      "fazla": [
+        "açık",
+        "birleşim"
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "yonerge": "Cümlelerdeki boşlukları uygun kelimelerle tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Matematiksel bir önermenin yanlış olduğunu ispatlamak için önermeyi sağlamayan tek bir ___ bulmak yeterlidir.",
+          "cevap": "aksine örnek"
+        }
+      ],
+      "fazla": [
+        "açık",
+        "birleşim"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Gerçek sayılar kümesinde M = (-3, 5] ve N = [1, 8) aralıkları veriliyor.\na) M ∪ N ve M ∩ N kümelerini aralık olarak yazınız.\nb) M \\ N kümesini bulunuz ve bu kümede kaç tane tam sayı olduğunu hesaplayınız.",
+      "ipuclari": [
+        "1. Adım: Sayı doğrusunda -3, 1, 5 ve 8 noktalarını işaretleyerek M = (-3, 5] ve N = [1, 8) aralıklarını gösteriniz.",
+        "2. Adım: Birleşim için en sol sınır (-3, açık) ile en sağ sınırı (8, açık); kesişim için ortak bölgenin sınırlarını (1 kapalı, 5 kapalı) belirleyiniz.",
+        "3. Adım: M \\ N fark kümesinde 1 sınır noktası N kümesine dâhil olduğu için (1 ∈ N) fark kümesinde açık uç olacağına dikkat ediniz."
+      ],
+      "cevap": "a) İki aralığın birleşimi en küçük alt sınır -3 (açık) ile en büyük üst sınır 8 (açık) arasındaki tüm gerçek sayılardır: M ∪ N = (-3, 8). Ortak bölge ise 1 (her iki kümede de var, kapalı) ile 5 (her iki kümede de var, kapalı) arasıdır: M ∩ N = [1, 5].\nb) M = (-3, 5] kümesinden N = [1, 8) kümesini çıkardığımızda -3 ile 1 arasındaki kısım kalır. 1 sayısı N kümesinin elemanı olduğu için (1 ∈ N) M kümesinden silinir ve açık uç olur: M \\ N = (-3, 1). Bu aralıktaki tam sayılar {-2, -1, 0} olup toplam 3 tanedir."
+    }
+  ]
+}
