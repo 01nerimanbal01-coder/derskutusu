@@ -1240,14 +1240,16 @@ const Tahta = (() => {
       guncelle();
     }
 
-    // Sınıf içi yardımcı pencere 3: Hatasız Ekran / Tahta ve Ses Kaydedici (Ders Kaydı Stüdyosu)
-    let kayitKutu = null, kayitDurum = 'hazir'; // 'hazir' | 'kayitta' | 'duraklatildi' | 'bitti'
+    // Sınıf içi yardımcı pencere 3: Hatasız Ekran / Tahta ve Ses Kaydedici (MP4 & YouTube Uyumlu, Ekranda İzi Kalmayan Kayıt)
+    let kayitKutu = null, kayitDurum = 'hazir'; // 'hazir' | 'kayitta' | 'duraklatildi'
     const ekranDestek = Boolean(typeof navigator !== 'undefined' && navigator.mediaDevices?.getDisplayMedia);
     let kayitModu = (kaydir && ekranDestek) ? 'ekran' : 'tuval'; // 'ekran': tüm sekme/ekran, 'tuval': doğrudan tahta (izinsiz)
-    let mikIstek = true, mikSessiz = false, kayitDar = false;
-    let kaydedici = null, kayitParcalar = [], kayitBlobUrl = null, kayitUzanti = 'webm', kayitBoyut = 0;
+    let kayitBicim = 'mp4'; // 'mp4' (Varsayılan MP4) | 'youtube' (YouTube 1080p HD MP4) | 'webm' (WebM)
+    let mikIstek = true, secilenDosyaAdi = '';
+    let kaydedici = null, kayitParcalar = [], kayitBlobUrl = null, kayitUzanti = 'mp4';
     let ekranAkisi = null, mikAkisi = null, birlesikAkis = null, sesBaglam = null;
-    let kayitTimer = 0, tuvalTimer = 0, vuTimer = 0, gecenMs = 0, sonTick = 0, kayitNot = '';
+    let kayitTimer = 0, tuvalTimer = 0, gecenMs = 0, sonTick = 0, kayitNot = '';
+    const ilkSayfaBasligi = typeof document !== 'undefined' ? document.title : '';
     let muhurHazir = null;
 
     function muhurYukle() {
@@ -1268,33 +1270,63 @@ const Tahta = (() => {
       return `${dk}:${sn}`;
     }
 
-    function enIyiKayitTuru(sesVar) {
-      if (typeof MediaRecorder === 'undefined' || !MediaRecorder.isTypeSupported) return '';
-      const adaylar = sesVar
-        ? [
-            'video/webm;codecs=vp9,opus',
-            'video/webm;codecs=vp8,opus',
-            'video/webm',
-            'video/mp4;codecs=avc1.42E01E,mp4a.40.2',
-            'video/mp4',
-          ]
-        : [
-            'video/webm;codecs=vp9',
-            'video/webm;codecs=vp8',
-            'video/webm',
-            'video/mp4;codecs=avc1.42E01E',
-            'video/mp4',
-          ];
-      for (const tur of adaylar) {
-        try { if (MediaRecorder.isTypeSupported(tur)) return tur; } catch { /* */ }
+    function adayKayitTurleri(sesVar, bicim) {
+      if (typeof MediaRecorder === 'undefined' || !MediaRecorder.isTypeSupported) return [''];
+      const mp4Sesli = [
+        'video/mp4;codecs="avc1.64002A, mp4a.40.2"',
+        'video/mp4;codecs="avc1.4D4028, mp4a.40.2"',
+        'video/mp4;codecs="avc1.42E028, mp4a.40.2"',
+        'video/mp4;codecs=avc1,mp4a.40.2',
+        'video/mp4;codecs="avc1.42E01E, mp4a.40.2"',
+        'video/mp4;codecs=h264,aac',
+        'video/mp4;codecs=avc1,opus',
+        'video/mp4;codecs=h264,opus',
+        'video/mp4',
+      ];
+      const mp4Sessiz = [
+        'video/mp4;codecs=avc1.64002A',
+        'video/mp4;codecs=avc1.4D4028',
+        'video/mp4;codecs=avc1.42E028',
+        'video/mp4;codecs=avc1',
+        'video/mp4;codecs=avc1.42E01E',
+        'video/mp4;codecs=h264',
+        'video/mp4',
+      ];
+      const webmSesli = [
+        'video/webm;codecs=h264,opus',
+        'video/webm;codecs=vp9,opus',
+        'video/webm;codecs=vp8,opus',
+        'video/webm',
+      ];
+      const webmSessiz = [
+        'video/webm;codecs=h264',
+        'video/webm;codecs=vp9',
+        'video/webm;codecs=vp8',
+        'video/webm',
+      ];
+      const mp4Liste = sesVar ? mp4Sesli : mp4Sessiz;
+      const webmListe = sesVar ? webmSesli : webmSessiz;
+      const tumAdaylar = bicim === 'webm' ? [...webmListe, ...mp4Liste] : [...mp4Liste, ...webmListe];
+      const desteklenen = tumAdaylar.filter((tur) => {
+        try { return MediaRecorder.isTypeSupported(tur); } catch { return false; }
+      });
+      return [...desteklenen, ''];
+    }
+
+    function kayitUstDugmeGuncelle() {
+      const ustVideoBtn = document.getElementById('t-video');
+      if (ustVideoBtn) {
+        const aktif = kayitDurum === 'kayitta' || kayitDurum === 'duraklatildi';
+        ustVideoBtn.innerHTML = aktif
+          ? `<span class="kayit-nokta"></span>⏹ Kaydı Bitir (${sureBicimle(gecenMs)})`
+          : `<span class="kayit-nokta"></span>Ders Kaydı`;
+        ustVideoBtn.classList.toggle('aktif-kayit', aktif);
       }
-      return '';
     }
 
     function kayitKaynakTemizle() {
       clearInterval(kayitTimer); kayitTimer = 0;
       clearInterval(tuvalTimer); tuvalTimer = 0;
-      clearInterval(vuTimer); vuTimer = 0;
       for (const akis of [ekranAkisi, mikAkisi, birlesikAkis]) {
         if (!akis) continue;
         try { akis.getTracks().forEach((t) => t.stop()); } catch { /* */ }
@@ -1304,16 +1336,30 @@ const Tahta = (() => {
         try { if (sesBaglam.state !== 'closed') sesBaglam.close(); } catch { /* */ }
         sesBaglam = null;
       }
+      if (typeof document !== 'undefined' && ilkSayfaBasligi) {
+        document.title = ilkSayfaBasligi;
+      }
+      kayitUstDugmeGuncelle();
+    }
+
+    function kayitKutuyuYokEt() {
+      if (kayitKutu) {
+        kayitKutu.hidden = true;
+        kayitKutu.style.display = 'none';
+        kayitKutu.remove();
+        kayitKutu = null;
+      }
     }
 
     async function tuvalAkisiHazirla() {
       const kTuval = document.createElement('canvas');
       const hamG = alt.width || Math.round((gen || 1280) * oran);
       const hamY = alt.height || Math.round((yuk || 720) * oran);
-      const olcek = Math.min(1, 1920 / Math.max(hamG, hamY, 1));
-      // Donanım video kodlayıcıları (özellikle H.264/MP4) çift sayı genişlik/yükseklik ister
-      kTuval.width = Math.max(320, Math.round((hamG * olcek) / 2) * 2);
-      kTuval.height = Math.max(240, Math.round((hamY * olcek) / 2) * 2);
+      const hedefMax = kayitBicim === 'youtube' ? 1920 : 1600;
+      const olcek = Math.min(1, hedefMax / Math.max(hamG, hamY, 1));
+      // Donanım H.264/MP4 kodlayıcıları çift sayı genişlik/yükseklik ister
+      kTuval.width = Math.max(640, Math.round((hamG * olcek) / 2) * 2);
+      kTuval.height = Math.max(360, Math.round((hamY * olcek) / 2) * 2);
       const kx = kTuval.getContext('2d', { alpha: false });
       const muhur = await muhurYukle();
       const kareCiz = () => {
@@ -1335,7 +1381,7 @@ const Tahta = (() => {
         kx.fillText('derskutusu.com', w - b - p - 8, h - p - b / 2);
       };
       kareCiz();
-      tuvalTimer = setInterval(kareCiz, 33); // 30 FPS sabit kare üretimi (kalem dururken de sesle senkron kalır)
+      tuvalTimer = setInterval(kareCiz, 33); // 30 FPS sabit kare üretimi
       const akis = kTuval.captureStream ? kTuval.captureStream(30) : kTuval.mozCaptureStream?.(30);
       if (!akis) throw new Error('Tarayıcı tuval video akışını desteklemiyor.');
       return akis;
@@ -1353,76 +1399,66 @@ const Tahta = (() => {
     }
 
     function kayitKutuCiz() {
-      if (!kayitKutu) return;
-      kayitKutu.classList.toggle('dar', kayitDar && (kayitDurum === 'kayitta' || kayitDurum === 'duraklatildi'));
-      if (kayitDurum === 'hazir') {
-        kayitKutu.innerHTML =
-          `<div class="tk-ust"><span>🎥 Ders ve Ses Kaydedici</span><button type="button" data-tk="kapat" aria-label="Kaydediciyi kapat">✕</button></div>` +
-          `<div class="tk-govde">` +
-          `<div class="tk-kip-grup" role="radiogroup" aria-label="Kayıt alanı">` +
-          `<button type="button" class="tk-kip${kayitModu === 'tuval' ? ' etkin' : ''}" data-kip="tuval">` +
-          `<strong>🎨 Tahta + Ses</strong><small>İzin sormadan anında tahta çizimlerini ve sesinizi kaydeder</small></button>` +
-          (ekranDestek
-            ? `<button type="button" class="tk-kip${kayitModu === 'ekran' ? ' etkin' : ''}" data-kip="ekran">` +
-              `<strong>🖥️ Tüm Ekran / Sekme + Ses</strong><small>Konu anlatımı metnini, slaytı ve kalem çizimlerini birlikte kaydeder</small></button>`
-            : '') +
-          `</div>` +
-          `<label class="tk-secenek"><input type="checkbox" data-tk-mik ${mikIstek ? 'checked' : ''}><span>🎙️ Mikrofon sesimi kayda ekle (gürültü engellemeli)</span></label>` +
-          (kayitNot ? `<p class="tk-not" role="status">${kayitNot}</p>` : '') +
-          `<button type="button" class="tk-baslat" data-tk="baslat"><i class="tk-kirmizi-nokta"></i> Kaydı Başlat</button>` +
-          `</div>`;
-      } else if (kayitDurum === 'kayitta' || kayitDurum === 'duraklatildi') {
-        const durak = kayitDurum === 'duraklatildi';
-        const mikVar = Boolean(mikAkisi && mikAkisi.getAudioTracks().length);
-        kayitKutu.innerHTML =
-          `<div class="tk-ust">` +
-          `<span class="tk-canli-etiket ${durak ? 'durak' : 'aktif'}"><i class="tk-kirmizi-nokta"></i> ${durak ? 'DURAKLATILDI' : 'KAYITTA'}</span>` +
-          `<strong class="tk-sure" aria-live="off">${sureBicimle(gecenMs)}</strong>` +
-          `<button type="button" data-tk="daralt" title="${kayitDar ? 'Paneli genişlet' : 'Küçült (tahtayı kapatmasın)'}" aria-label="Küçült veya genişlet">${kayitDar ? '▢' : '—'}</button>` +
-          `</div>` +
-          `<div class="tk-govde">` +
-          (mikVar
-            ? `<div class="tk-ses-satir"><span class="tk-ses-etiket">${mikSessiz ? '🔇 Mikrofon kapalı' : '🎙️ Ses seviyesi'}</span>` +
-              `<div class="tk-vu" aria-hidden="true"><i class="tk-vu-ic" style="width:4%"></i></div></div>`
-            : `<p class="tk-not">🔇 Sessiz görüntü kaydı yapılıyor</p>`) +
-          (kayitNot ? `<p class="tk-not">${kayitNot}</p>` : '') +
-          `<div class="tk-denetim">` +
-          (mikVar
-            ? `<button type="button" class="tk-dugme ${mikSessiz ? 'uyari' : ''}" data-tk="mik" title="Mikrofonu aç/kapat">${mikSessiz ? '🔇 Sesi Aç' : '🎙️ Sessize Al'}</button>`
-            : '') +
-          `<button type="button" class="tk-dugme" data-tk="duraklat">${durak ? '▶ Devam Et' : '❚❚ Duraklat'}</button>` +
-          `<button type="button" class="tk-dugme bitir" data-tk="bitir">⏹ Kaydı Bitir</button>` +
-          `</div>` +
-          `</div>`;
-      } else if (kayitDurum === 'bitti') {
-        const mb = (kayitBoyut / (1024 * 1024)).toFixed(2);
-        kayitKutu.innerHTML =
-          `<div class="tk-ust"><span>✅ Ders Kaydı Hazır</span><button type="button" data-tk="kapat" aria-label="Kapat">✕</button></div>` +
-          `<div class="tk-govde">` +
-          `<video class="tk-onizleme" src="${kayitBlobUrl || ''}" controls playsinline></video>` +
-          `<div class="tk-meta"><span>⏱ Süre: <b>${sureBicimle(gecenMs)}</b></span><span>📦 Boyut: <b>${mb} MB</b></span><span>🎬 Biçim: <b>${kayitUzanti.toUpperCase()}</b></span></div>` +
-          `<label class="tk-ad-etiket">Dosya adı:<input type="text" class="tk-dosya-ad" value="${varsayilanDosyaAdi()}" spellcheck="false"></label>` +
-          `<div class="tk-denetim">` +
-          `<button type="button" class="tk-baslat indir" data-tk="indir">⬇ Ders Videosunu İndir</button>` +
-          `<button type="button" class="tk-dugme" data-tk="yeni">🔄 Yeni Kayıt</button>` +
-          `</div>` +
-          `</div>`;
+      // Kayıt sırasında veya kayıt bittikten sonra ekranda kesinlikle kayıt programı penceresi gösterilmez
+      if (kayitDurum !== 'hazir') {
+        kayitKutuyuYokEt();
+        guncelle();
+        return;
       }
+      if (!kayitKutu) return;
+      const dosyaAdDeger = secilenDosyaAdi || varsayilanDosyaAdi();
+      kayitKutu.innerHTML =
+        `<div class="tk-ust"><span>🎥 Ders ve Ses Kaydedici</span><button type="button" data-tk="kapat" aria-label="Kaydediciyi kapat">✕</button></div>` +
+        `<div class="tk-govde">` +
+        `<div class="tk-kip-grup" role="radiogroup" aria-label="Kayıt alanı">` +
+        `<button type="button" class="tk-kip${kayitModu === 'tuval' ? ' etkin' : ''}" data-kip="tuval">` +
+        `<strong>🎨 Sadece Tahta + Ses</strong><small>Hiçbir araç çubuğu ve pencere görünmeden yalnızca tahtayı ve sesinizi kaydeder</small></button>` +
+        (ekranDestek
+          ? `<button type="button" class="tk-kip${kayitModu === 'ekran' ? ' etkin' : ''}" data-kip="ekran">` +
+            `<strong>🖥️ Tüm Ekran / Sekme + Ses</strong><small>Konu anlatımı metnini, PDF'i ve kalem çizimlerini birlikte kaydeder</small></button>`
+          : '') +
+        `</div>` +
+        `<div class="tk-bicim-grup" role="radiogroup" aria-label="Video kayıt uzantısı">` +
+        `<button type="button" class="tk-bicim${kayitBicim === 'mp4' ? ' etkin' : ''}" data-bicim="mp4">` +
+        `<strong>🎬 MP4 (.mp4)</strong><small>Tüm cihazlar & WhatsApp</small></button>` +
+        `<button type="button" class="tk-bicim${kayitBicim === 'youtube' ? ' etkin' : ''}" data-bicim="youtube">` +
+        `<strong>▶️ YouTube HD (.mp4)</strong><small>1080p YouTube yükleme</small></button>` +
+        `<button type="button" class="tk-bicim${kayitBicim === 'webm' ? ' etkin' : ''}" data-bicim="webm">` +
+        `<strong>🌐 WebM (.webm)</strong><small>YouTube & Web</small></button>` +
+        `</div>` +
+        `<label class="tk-ad-etiket">Dosya adı:<input type="text" class="tk-dosya-ad" value="${dosyaAdDeger}" spellcheck="false"></label>` +
+        `<label class="tk-secenek"><input type="checkbox" data-tk-mik ${mikIstek ? 'checked' : ''}><span>🎙️ Mikrofon sesimi kayda ekle (gürültü engellemeli)</span></label>` +
+        `<p class="tk-ipucu-mini">💡 Kayıt başladığında bu pencere otomatik kapanır (videoda görünmez). Bitirmek için araç çubuğundaki kırmızı <b>⏹ Kayıt</b> düğmesine veya <b>F9</b> tuşuna basın; video otomatik indirilir.</p>` +
+        (kayitNot ? `<p class="tk-not" role="status">${kayitNot}</p>` : '') +
+        `<button type="button" class="tk-baslat" data-tk="baslat"><i class="tk-kirmizi-nokta"></i> Kaydı Başlat (.${kayitBicim === 'webm' ? 'WEBM' : 'MP4'})</button>` +
+        `</div>`;
       guncelle();
     }
 
     async function kaydiBaslat(zorlaKip = null) {
       if (kayitDurum === 'kayitta' || kayitDurum === 'duraklatildi') return;
       if (zorlaKip) kayitModu = zorlaKip;
+      const adGirdi = kayitKutu?.querySelector('.tk-dosya-ad');
+      secilenDosyaAdi = (adGirdi?.value || varsayilanDosyaAdi()).trim().replace(/\.(webm|mp4|mov)$/i, '') || varsayilanDosyaAdi();
       kayitNot = '';
       kayitKaynakTemizle();
       if (kayitBlobUrl) { try { URL.revokeObjectURL(kayitBlobUrl); } catch { /* */ } kayitBlobUrl = null; }
 
-      // 1) Görüntü akışını hazırla (ekran seçildiyse ve iptal edilirse hatasız şekilde uyar / yedekle)
+      // ÖNEMLİ: Kayıt penceresini görüntü yakalama başlamadan ÖNCE ekrandan tamamen kaldır (videoda asla görünmesin)
+      kayitKutuyuYokEt();
+      if (yardimKutu) { yardimKutu.remove(); yardimKutu = null; }
+      guncelle();
+
+      // 1) Görüntü akışını hazırla
       try {
         if (kayitModu === 'ekran' && ekranDestek) {
           ekranAkisi = await navigator.mediaDevices.getDisplayMedia({
-            video: { frameRate: { ideal: 30, max: 30 }, cursor: 'always' },
+            video: {
+              width: { ideal: 1920, max: 1920 },
+              height: { ideal: 1080, max: 1080 },
+              frameRate: { ideal: 30, max: 30 },
+              cursor: 'always',
+            },
             audio: true,
             preferCurrentTab: true,
             selfBrowserSurface: 'include',
@@ -1433,15 +1469,14 @@ const Tahta = (() => {
           ekranAkisi = await tuvalAkisiHazirla();
         }
       } catch {
-        // Kullanıcı ekran paylaşımını kapattıysa veya tarayıcı izin vermediyse çökme; Tahta + Ses kipine yönlendir
+        // Kullanıcı ekran paylaşımını iptal ettiyse Tahta + Ses kipine yönlendir
         kayitModu = 'tuval';
-        kayitNot = 'Ekran paylaşımı seçilmedi. "🎨 Tahta + Ses" kipinde izin gerekmeden hemen kayıt başlatabilirsiniz.';
-        kayitKutuCiz();
+        kayitNot = 'Ekran paylaşımı seçilmedi. "🎨 Sadece Tahta + Ses" kipinde izin gerekmeden hemen kayıt başlatabilirsiniz.';
+        kayitAcKapat();
         return;
       }
 
-      // 2) Mikrofon akışını hazırla (mikrofon yoksa veya reddedildiyse kayıt asla çökmez, sessiz devam eder)
-      mikSessiz = false;
+      // 2) Mikrofon akışını hazırla (mikrofon yoksa kayıt çökmez, sessiz devam eder)
       if (mikIstek && navigator.mediaDevices?.getUserMedia) {
         try {
           mikAkisi = await navigator.mediaDevices.getUserMedia({
@@ -1449,17 +1484,16 @@ const Tahta = (() => {
           });
         } catch {
           mikAkisi = null;
-          kayitNot = 'Mikrofon bulunamadı veya izin verilmedi; ders kaydı sessiz başlatıldı.';
         }
       }
 
-      // 3) Görüntü ve ses kanallarını birleştir + Canlı Ses Seviyesi (VU Metre) bağla
+      // 3) Görüntü ve ses kanallarını birleştir
       const videoIzleri = ekranAkisi ? ekranAkisi.getVideoTracks() : [];
       if (!videoIzleri.length) {
         kayitKaynakTemizle();
-        kayitNot = 'Görüntü kaynağı alınamadı. Lütfen "🎨 Tahta + Ses" kipini deneyin.';
         kayitModu = 'tuval';
-        kayitKutuCiz();
+        kayitNot = 'Görüntü kaynağı alınamadı. "🎨 Sadece Tahta + Ses" kipini deneyin.';
+        kayitAcKapat();
         return;
       }
       let sesIzleri = [];
@@ -1477,21 +1511,7 @@ const Tahta = (() => {
           }
           if (mikSes.length) {
             const k2 = sesBaglam.createMediaStreamSource(new MediaStream(mikSes));
-            const analiz = sesBaglam.createAnalyser();
-            analiz.fftSize = 128;
-            k2.connect(analiz);
             k2.connect(hedef);
-            const veriDizisi = new Uint8Array(analiz.frequencyBinCount);
-            vuTimer = setInterval(() => {
-              if (!kayitKutu || kayitDurum !== 'kayitta' || mikSessiz) return;
-              analiz.getByteFrequencyData(veriDizisi);
-              let toplam = 0;
-              for (let i = 0; i < veriDizisi.length; i++) toplam += veriDizisi[i];
-              const ort = toplam / (veriDizisi.length || 1);
-              const yuzde = Math.min(100, Math.max(4, Math.round((ort / 140) * 100)));
-              const cubukIc = kayitKutu.querySelector('.tk-vu-ic');
-              if (cubukIc) cubukIc.style.width = `${yuzde}%`;
-            }, 90);
           }
           sesIzleri = hedef.stream.getAudioTracks();
         }
@@ -1503,139 +1523,148 @@ const Tahta = (() => {
       }
 
       birlesikAkis = new MediaStream([...videoIzleri, ...sesIzleri]);
-      // Kullanıcı tarayıcının kendi "Paylaşımı Durdur" düğmesine basarsa kaydı güvenle tamamla
       videoIzleri[0].addEventListener('ended', () => {
         if (kayitDurum === 'kayitta' || kayitDurum === 'duraklatildi') kaydiBitir();
       });
 
-      // 4) MediaRecorder başlat (en uygun codec + çok katmanlı yedek)
+      // Ekranın tamamen temiz olduğundan emin olmak için iki animasyon karesi bekle
+      await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+
+      // 4) MediaRecorder başlat (MP4 / YouTube HD öncelikli çok katmanlı başlatıcı)
       kayitParcalar = [];
-      const uygunTur = enIyiKayitTuru(sesIzleri.length > 0);
-      try {
-        kaydedici = uygunTur
-          ? new MediaRecorder(birlesikAkis, { mimeType: uygunTur, videoBitsPerSecond: 2500000 })
-          : new MediaRecorder(birlesikAkis);
-      } catch {
+      const bitHizi = kayitBicim === 'youtube' ? 4500000 : 2800000;
+      const adaylar = adayKayitTurleri(sesIzleri.length > 0, kayitBicim);
+      kaydedici = null;
+
+      for (const tur of adaylar) {
+        try {
+          const mr = tur
+            ? new MediaRecorder(birlesikAkis, { mimeType: tur, videoBitsPerSecond: bitHizi })
+            : new MediaRecorder(birlesikAkis);
+          mr.ondataavailable = (e) => {
+            if (e.data && e.data.size > 0) kayitParcalar.push(e.data);
+          };
+          mr.start(1000);
+          kaydedici = mr;
+          break;
+        } catch {
+          // Bu profil/codec mevcut ekran çözünürlüğüyle başlamadıysa sıradaki MP4/YouTube adayına geç
+        }
+      }
+
+      if (!kaydedici) {
         try {
           kaydedici = new MediaRecorder(birlesikAkis);
+          kaydedici.ondataavailable = (e) => {
+            if (e.data && e.data.size > 0) kayitParcalar.push(e.data);
+          };
+          kaydedici.start();
         } catch {
           kayitKaynakTemizle();
-          kayitNot = 'Bu tarayıcıda video kaydı desteklenmiyor.';
-          kayitKutuCiz();
+          kayitNot = 'Bu tarayıcıda video kaydı başlatılamadı.';
+          kayitAcKapat();
           return;
         }
       }
 
-      kaydedici.ondataavailable = (e) => {
-        if (e.data && e.data.size > 0) kayitParcalar.push(e.data);
-      };
       kaydedici.onerror = () => {
         if (kayitParcalar.length) kaydiBitir();
         else {
           kayitKaynakTemizle();
           kayitDurum = 'hazir';
-          kayitNot = 'Kayıt sırasında beklenmeyen bir durum oluştu; lütfen tekrar deneyin.';
-          kayitKutuCiz();
+          kayitKutuyuYokEt();
+          guncelle();
         }
       };
+
       kaydedici.onstop = () => {
-        const etkinTur = kaydedici?.mimeType || kayitParcalar[0]?.type || 'video/webm';
-        kayitUzanti = etkinTur.includes('mp4') ? 'mp4' : 'webm';
-        const blob = new Blob(kayitParcalar, { type: etkinTur });
-        kayitBoyut = blob.size;
+        // Kayıt bittiğinde ekranda hiçbir kayıt programı penceresi açılmaz; doğrudan seçilen uzantıyla (.mp4 / .webm) indirilir
+        kayitKutuyuYokEt();
+        const etkinTur = kaydedici?.mimeType || kayitParcalar[0]?.type || 'video/mp4';
+        kayitUzanti = kayitBicim === 'webm' ? 'webm' : 'mp4';
+        const ciktiMime = kayitUzanti === 'mp4' ? (etkinTur.includes('mp4') ? etkinTur : 'video/mp4') : 'video/webm';
+        const blob = new Blob(kayitParcalar, { type: ciktiMime });
         if (kayitBlobUrl) { try { URL.revokeObjectURL(kayitBlobUrl); } catch { /* */ } }
         kayitBlobUrl = URL.createObjectURL(blob);
         kayitKaynakTemizle();
-        kayitDar = false;
-        kayitDurum = 'bitti';
-        if (!kap.isConnected || kap.hidden) {
-          kap.hidden = false;
-          document.body.classList.add('kalem-acik');
+        kayitDurum = 'hazir';
+        guncelle();
+        if (blob.size > 0) {
+          kaydiIndir();
         }
-        kayitKutuCiz();
       };
 
-      try {
-        kaydedici.start(1000);
-      } catch {
-        kaydedici.start();
-      }
       gecenMs = 0;
       sonTick = performance.now();
       kayitDurum = 'kayitta';
-      kayitDar = false;
       kayitTimer = setInterval(() => {
         if (kayitDurum !== 'kayitta') return;
         const simdi = performance.now();
         gecenMs += simdi - sonTick;
         sonTick = simdi;
-        const sEl = kayitKutu?.querySelector('.tk-sure');
-        if (sEl) sEl.textContent = sureBicimle(gecenMs);
-      }, 250);
-      kayitKutuCiz();
-    }
-
-    function kaydiDuraklatDevam() {
-      if (!kaydedici) return;
-      try {
-        if (kayitDurum === 'kayitta' && kaydedici.state === 'recording') {
-          gecenMs += performance.now() - sonTick;
-          kaydedici.pause();
-          kayitDurum = 'duraklatildi';
-        } else if (kayitDurum === 'duraklatildi' && kaydedici.state === 'paused') {
-          sonTick = performance.now();
-          kaydedici.resume();
-          kayitDurum = 'kayitta';
+        const sureMetin = sureBicimle(gecenMs);
+        if (typeof document !== 'undefined' && ilkSayfaBasligi) {
+          document.title = `🔴 ${sureMetin} — ${ilkSayfaBasligi}`;
         }
-      } catch { /* */ }
-      kayitKutuCiz();
-    }
-
-    function mikAcKapat() {
-      if (!mikAkisi) return;
-      mikSessiz = !mikSessiz;
-      mikAkisi.getAudioTracks().forEach((t) => { t.enabled = !mikSessiz; });
-      kayitKutuCiz();
+        const kayitBtn = cubuk?.querySelector('[data-is=kayit]');
+        if (kayitBtn) {
+          kayitBtn.title = `Kaydı bitir ve .${kayitBicim === 'webm' ? 'WEBM' : 'MP4'} olarak indir (${sureMetin} — F9)`;
+        }
+        kayitUstDugmeGuncelle();
+      }, 500);
+      kayitUstDugmeGuncelle();
+      guncelle();
     }
 
     function kaydiBitir() {
+      // Kayıt biterken de kayıt programı penceresi kesinlikle kapalı tutulur
+      kayitKutuyuYokEt();
       if (!kaydedici || kaydedici.state === 'inactive') {
         kayitKaynakTemizle();
         kayitDurum = 'hazir';
-        kayitKutuCiz();
+        guncelle();
         return;
       }
       if (kayitDurum === 'kayitta') gecenMs += performance.now() - sonTick;
       try { if (kaydedici.state === 'recording') kaydedici.requestData(); } catch { /* */ }
-      try { kaydedici.stop(); } catch { kayitKaynakTemizle(); kayitDurum = 'hazir'; kayitKutuCiz(); }
+      try {
+        kaydedici.stop();
+      } catch {
+        kayitKaynakTemizle();
+        kayitDurum = 'hazir';
+        guncelle();
+      }
     }
 
     function kaydiIndir() {
       if (!kayitBlobUrl) return;
-      const girdi = kayitKutu?.querySelector('.tk-dosya-ad');
-      const hamAd = (girdi?.value || varsayilanDosyaAdi()).trim().replace(/\.(webm|mp4)$/i, '') || 'derskutusu-ders-kaydi';
+      const hamAd = (secilenDosyaAdi || varsayilanDosyaAdi()).trim().replace(/\.(webm|mp4|mov)$/i, '') || 'derskutusu-ders-kaydi';
       const a = document.createElement('a');
       a.href = kayitBlobUrl;
       a.download = `${hamAd}.${kayitUzanti}`;
       document.body.append(a);
       a.click();
       a.remove();
+      setTimeout(() => {
+        if (kayitBlobUrl) { try { URL.revokeObjectURL(kayitBlobUrl); } catch { /* */ } kayitBlobUrl = null; }
+      }, 15000);
     }
 
     function kayitAcKapat() {
+      // Kayıt sürerken kayıt düğmesine basılırsa doğrudan kaydı bitir ve MP4 olarak indir (pencere açma)
+      if (kayitDurum === 'kayitta' || kayitDurum === 'duraklatildi') {
+        kaydiBitir();
+        return;
+      }
       if (kayitKutu) {
-        if (kayitDurum === 'kayitta' || kayitDurum === 'duraklatildi') {
-          // Kayıt sürerken düğmeye basılırsa kutuyu küçült/büyüt
-          kayitDar = !kayitDar;
-          kayitKutuCiz();
-          return;
-        }
         kayitKaynakTemizle();
-        if (kayitBlobUrl) { try { URL.revokeObjectURL(kayitBlobUrl); } catch { /* */ } kayitBlobUrl = null; }
-        kayitKutu.remove(); kayitKutu = null; kayitDurum = 'hazir'; kayitNot = '';
+        kayitKutuyuYokEt();
+        kayitDurum = 'hazir';
+        kayitNot = '';
         guncelle();
         return;
       }
+      secilenDosyaAdi = varsayilanDosyaAdi();
       kayitKutu = document.createElement('div');
       kayitKutu.className = 'tahta-kayit';
       kayitKutu.setAttribute('role', 'region');
@@ -1659,6 +1688,9 @@ const Tahta = (() => {
       });
       kayitKutu.addEventListener('pointerup', () => { tkSurukle = null; });
 
+      kayitKutu.addEventListener('input', (e) => {
+        if (e.target.matches('.tk-dosya-ad')) secilenDosyaAdi = e.target.value;
+      });
       kayitKutu.addEventListener('change', (e) => {
         if (e.target.matches('[data-tk-mik]')) mikIstek = e.target.checked;
       });
@@ -1670,25 +1702,17 @@ const Tahta = (() => {
           kayitKutuCiz();
           return;
         }
+        const bicimBtn = e.target.closest('[data-bicim]');
+        if (bicimBtn) {
+          kayitBicim = bicimBtn.dataset.bicim;
+          kayitKutuCiz();
+          return;
+        }
         const b = e.target.closest('button[data-tk]');
         if (!b) return;
         const islem = b.dataset.tk;
-        if (islem === 'kapat') {
-          if (kayitDurum === 'kayitta' || kayitDurum === 'duraklatildi') kaydiBitir();
-          else kayitAcKapat();
-        } else if (islem === 'baslat') kaydiBaslat();
-        else if (islem === 'duraklat') kaydiDuraklatDevam();
-        else if (islem === 'mik') mikAcKapat();
-        else if (islem === 'bitir') kaydiBitir();
-        else if (islem === 'indir') kaydiIndir();
-        else if (islem === 'yeni') {
-          if (kayitBlobUrl) { try { URL.revokeObjectURL(kayitBlobUrl); } catch { /* */ } kayitBlobUrl = null; }
-          kayitDurum = 'hazir'; kayitNot = '';
-          kayitKutuCiz();
-        } else if (islem === 'daralt') {
-          kayitDar = !kayitDar;
-          kayitKutuCiz();
-        }
+        if (islem === 'kapat') kayitAcKapat();
+        else if (islem === 'baslat') kaydiBaslat();
       });
       kayitKutuCiz();
     }
@@ -1816,8 +1840,10 @@ const Tahta = (() => {
       cubuk.querySelector('[data-is=dolgu]')?.setAttribute('aria-pressed', String(d.dolu));
       const kayitBtn = cubuk.querySelector('[data-is=kayit]');
       if (kayitBtn) {
-        kayitBtn.setAttribute('aria-pressed', String(Boolean(kayitKutu)));
-        kayitBtn.classList.toggle('aktif-kayit', kayitDurum === 'kayitta' || kayitDurum === 'duraklatildi');
+        const aktifKayit = kayitDurum === 'kayitta' || kayitDurum === 'duraklatildi';
+        kayitBtn.setAttribute('aria-pressed', String(Boolean(kayitKutu) || aktifKayit));
+        kayitBtn.classList.toggle('aktif-kayit', aktifKayit);
+        if (!aktifKayit) kayitBtn.title = 'Ders anlatımı ekran ve ses kaydı al (.MP4 / YouTube — F9)';
       }
       cubuk.querySelector('[data-is=sayac]')?.setAttribute('aria-pressed', String(Boolean(sayacKutu)));
       cubuk.querySelector('[data-is=perde]')?.setAttribute('aria-pressed', String(Boolean(perdeOge)));
@@ -1931,6 +1957,7 @@ const Tahta = (() => {
       if (!kap.isConnected || kap.closest('[hidden]') || (modal && !modal.contains(kap))) return;
       if (/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName)) return;
       const k = o.key.toLowerCase();
+      if (o.key === 'F9' || (o.altKey && k === 'k')) { o.preventDefault(); kayitAcKapat(); return; }
       if ((o.ctrlKey || o.metaKey) && k === 'z') { o.preventDefault(); o.shiftKey ? yinele() : geriAl(); return; }
       if ((o.ctrlKey || o.metaKey) && k === 'y') { o.preventDefault(); yinele(); return; }
       if ((o.ctrlKey || o.metaKey) && k === 'd' && d.secili.length) { o.preventDefault(); seciliCogalt(); return; }
@@ -1947,9 +1974,10 @@ const Tahta = (() => {
       if (arac) { d.arac = arac; if (arac !== 'sec') d.secili = []; guncelle(); }
       if (k === 'escape') {
         if (yardimKutu) yardimAcKapat();
+        else if (kayitKutu) kayitAcKapat();
         else if (d.secili.length) { d.secili = []; guncelle(); }
         else if (d.arac === 'odak') { d.arac = 'kalem'; guncelle(); }
-        else if (kayitDurum === 'kayitta' || kayitDurum === 'duraklatildi') { kayitDar = !kayitDar; kayitKutuCiz(); }
+        else if (kayitDurum === 'kayitta' || kayitDurum === 'duraklatildi') { kaydiBitir(); }
         else if (kapat) kapat();
       }
     };
