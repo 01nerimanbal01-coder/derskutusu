@@ -1,0 +1,271 @@
+{
+ "ad": "10. Sınıf Coğrafya - 4. Hafta Özeti",
+ "sinif": 10,
+ "ders": "cografya",
+ "ders_adi": "Coğrafya",
+ "hafta": 4,
+ "tarih": "5-9 Ekim 2026",
+ "yayin_tarihi": "2026-10-17",
+ "unite": "MEKÂNSAL BİLGİ TEKNOLOJİLERİ",
+ "konu": "Mekânsal Verilerin Haritalara Aktarılması: Noktasal, Çizgisel ve Alansal Gösterim Yöntemleri",
+ "ciktilar": [
+  "Mekânsal bilgi teknolojilerini (CBS) kullanarak altlık haritalar üzerinde noktasal, çizgisel ve alansal (poligon) veriler oluşturma sürecini açıklar.",
+  "Nitel ve nicel mekânsal verilerin haritalara aktarılmasında kullanılan koroplet, izoplet, noktalama, oransal sembol ve akış haritası tekniklerini ayırt eder.",
+  "CBS ortamında geometrik mekânsal veriler ile öznitelik (tablo) verileri arasındaki ilişkiyi ve harita elemanlarının (lejant, ölçek, yön oku) önemini yorumlar."
+ ],
+ "giris": "Yeryüzündeki doğal ve beşerî unsurlara ait verilerin Coğrafi Bilgi Sistemleri (CBS) kullanılarak altlık haritalar üzerine aktarılması, karmaşık istatistikleri bir bakışta anlaşılır görsel bilgilere dönüştürür. Bu haftaki dersimizde mekânsal verilerin nokta, çizgi ve alan (poligon) sembolleriyle haritalara nasıl işlendiğini, tematik harita oluşturma adımlarını ve kartografik gösterim tekniklerini inceleyeceğiz.",
+ "ozet": [
+  "Mekânsal veriler altlık haritalar üzerine geometrik özelliklerine göre noktasal (okul, kuyu, zirve), çizgisel (yol, akarsu, fay hattı) ve alansal/poligon (göl, orman, il) olarak aktarılır.",
+  "Harita oluşturma süreci; haritanın amacını belirleme, uygun altlık ve yöntem seçme, verileri sembolleştirerek aktarma ve dağılışı yorumlama adımlarından oluşur.",
+  "İdari alanlardaki yoğunluk ve oranlar koroplet (dereceli renklendirme), eş değer veriler izoplet (izohips, izoterm), hareket yön ve miktarları ise akış haritalarıyla gösterilir.",
+  "Haritada kullanılan tüm renk, çizgi ve sembollerin anlamını açıklayan bölüme lejant (harita anahtarı) denir.",
+  "CBS’de haritadaki her geometrik unsur arka planda tanımlayıcı bilgilerin yer aldığı bir öznitelik tablosuna (attribute table) bağlıdır.",
+  "Haritanın ölçeği değiştikçe coğrafi bir unsurun gösterim biçimi (küçük ölçekte nokta, büyük ölçekte alan) değişebilir."
+ ],
+ "bolumler": [
+  {
+   "baslik": "Mekânsal Verilerin Vektörel Gösterimi: Nokta, Çizgi ve Alan",
+   "metin": [
+    "Yeryüzündeki coğrafi unsurlar ve olaylar altlık haritalar üzerine aktarılırken geometrik özelliklerine göre üç temel vektörel veri türüyle sembolleştirilir: 1) {koyu:Noktasal (Point) Gösterim}: Tek bir koordinat çifti ({koyu:X, Y}) ile belirtilen, harita ölçeğinde alan kaplamayan konumsal unsurlardır. Okullar, hastaneler, eczaneler, deprem merkez üsleri, dağ zirveleri, su kuyuları, meteoroloji istasyonları ve küçük ölçekli haritalarda şehir merkezleri noktasal verilerle gösterilir.",
+    "2) {koyu:Çizgisel (Line) Gösterim}: Ardışık koordinat noktalarının birleştirilmesiyle oluşan uzunluk, yön ve ağ yapısına sahip unsurlardır. Akarsular, kara yolları, demir yolları, fay hatları, petrol ve doğal gaz boru hatları, enerji nakil hatları ve idari sınır çizgileri çizgisel yöntemle aktarılır. 3) {koyu:Alansal (Poligon) Gösterim}: Başlangıç ve bitiş noktaları birleşerek kapalı bir yüzey oluşturan, çevre ve yüz ölçümü hesaplanabilen unsurlardır. Göller, barajlar, ormanlık alanlar, tarım arazileri, milli parklar ile il, ilçe ve ülke sınırlarının kapladığı yüzeyler alansal (poligon) veri olarak haritalanır."
+   ],
+   "kutu": {
+    "tur": "onemli",
+    "baslik": "Harita Ölçeği ve Gösterim Türünün Değişimi",
+    "metin": "Bir coğrafi unsurun hangi geometrik türle gösterileceği haritanın ölçeğine göre değişebilir: Küçük ölçekli bir Türkiye haritasında bir şehir merkezi 'nokta' ile gösterilirken, büyük ölçekli bir imar veya şehir haritasında aynı şehir ve mahalleleri 'alan (poligon)' olarak gösterilir."
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 675\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:12px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"1200\" height=\"675\" rx=\"18\" fill=\"#0F172A\"/><rect x=\"40\" y=\"24\" width=\"1120\" height=\"84\" rx=\"14\" fill=\"#1E293B\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"600\" y=\"58\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"800\" fill=\"#F8FAFC\">MEKÂNSAL VERİ TÜRLERİ: NOKTA, ÇİZGİ VE ALAN (POLİGON)</text><text x=\"600\" y=\"88\" text-anchor=\"middle\" font-size=\"15\" fill=\"#94A3B8\">CBS Ortamında Coğrafi Unsur ve Verilerin Vektörel Temsili</text><rect x=\"55\" y=\"130\" width=\"345\" height=\"440\" rx=\"14\" fill=\"#1E293B\" stroke=\"#60A5FA\" stroke-width=\"2.5\"/><rect x=\"55\" y=\"130\" width=\"345\" height=\"42\" rx=\"14\" fill=\"#2563EB\"/><text x=\"227.5\" y=\"157\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">1. Noktasal (Point) Veri</text><circle cx=\"155\" cy=\"235\" r=\"10\" fill=\"#60A5FA\" stroke=\"#F8FAFC\" stroke-width=\"2\"/><circle cx=\"255\" cy=\"215\" r=\"10\" fill=\"#FDE047\" stroke=\"#F8FAFC\" stroke-width=\"2\"/><circle cx=\"215\" cy=\"295\" r=\"10\" fill=\"#34D399\" stroke=\"#F8FAFC\" stroke-width=\"2\"/><circle cx=\"300\" cy=\"280\" r=\"10\" fill=\"#F87171\" stroke=\"#F8FAFC\" stroke-width=\"2\"/><rect x=\"80\" y=\"345\" width=\"295\" height=\"65\" rx=\"10\" fill=\"#1E3A8A\" stroke=\"#60A5FA\" stroke-width=\"2\"/><text x=\"227.5\" y=\"372.5\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Tek bir (X, Y) koordinat çifti ile</text><text x=\"227.5\" y=\"392.5\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">gösterilen konumsal verilerdir.</text><text x=\"227\" y=\"445\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#FDE047\">Örnekler:</text><text x=\"227\" y=\"480\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"500\" fill=\"#E2E8F0\">• Okul, hastane, eczane, müze</text><text x=\"227\" y=\"499\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"500\" fill=\"#E2E8F0\">• Deprem merkez üssü, kuyu</text><text x=\"227\" y=\"518\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"500\" fill=\"#E2E8F0\">• Dağ zirvesi, otobüs durağı</text><rect x=\"425\" y=\"130\" width=\"345\" height=\"440\" rx=\"14\" fill=\"#1E293B\" stroke=\"#34D399\" stroke-width=\"2.5\"/><rect x=\"425\" y=\"130\" width=\"345\" height=\"42\" rx=\"14\" fill=\"#059669\"/><text x=\"597.5\" y=\"157\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">2. Çizgisel (Line) Veri</text><line x1=\"475\" y1=\"295\" x2=\"555\" y2=\"225\" stroke=\"#34D399\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"555\" y1=\"225\" x2=\"645\" y2=\"275\" stroke=\"#34D399\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"645\" y1=\"275\" x2=\"720\" y2=\"210\" stroke=\"#34D399\" stroke-width=\"5\" stroke-linecap=\"round\"/><circle cx=\"475\" cy=\"295\" r=\"6\" fill=\"#FDE047\" stroke=\"#0F172A\" stroke-width=\"2\"/><circle cx=\"555\" cy=\"225\" r=\"6\" fill=\"#FDE047\" stroke=\"#0F172A\" stroke-width=\"2\"/><circle cx=\"645\" cy=\"275\" r=\"6\" fill=\"#FDE047\" stroke=\"#0F172A\" stroke-width=\"2\"/><circle cx=\"720\" cy=\"210\" r=\"6\" fill=\"#FDE047\" stroke=\"#0F172A\" stroke-width=\"2\"/><rect x=\"450\" y=\"345\" width=\"295\" height=\"65\" rx=\"10\" fill=\"#064E3B\" stroke=\"#34D399\" stroke-width=\"2\"/><text x=\"597.5\" y=\"372.5\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Ardışık noktaların birleşmesiyle</text><text x=\"597.5\" y=\"392.5\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">oluşan uzunluk/ağ verileridir.</text><text x=\"597\" y=\"445\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#FDE047\">Örnekler:</text><text x=\"597\" y=\"480\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"500\" fill=\"#E2E8F0\">• Akarsular, kara ve demir yolları</text><text x=\"597\" y=\"499\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"500\" fill=\"#E2E8F0\">• Fay hatları, boru ve enerji hatları</text><text x=\"597\" y=\"518\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"500\" fill=\"#E2E8F0\">• Ülke ve il idari sınır çizgileri</text><rect x=\"795\" y=\"130\" width=\"350\" height=\"440\" rx=\"14\" fill=\"#1E293B\" stroke=\"#FB923C\" stroke-width=\"2.5\"/><rect x=\"795\" y=\"130\" width=\"350\" height=\"42\" rx=\"14\" fill=\"#EA580C\"/><text x=\"970.0\" y=\"157\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">3. Alansal (Poligon) Veri</text><polygon points=\"865,220 985,195 1075,255 1030,315 890,305\" fill=\"#7C2D12\" stroke=\"#FB923C\" stroke-width=\"3\"/><rect x=\"820\" y=\"345\" width=\"300\" height=\"65\" rx=\"10\" fill=\"#431407\" stroke=\"#FB923C\" stroke-width=\"2\"/><text x=\"970.0\" y=\"372.5\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Başlangıç ve bitiş noktası birleşen</text><text x=\"970.0\" y=\"392.5\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">kapalı yüzey/bölge verileridir.</text><text x=\"970\" y=\"445\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#FDE047\">Örnekler:</text><text x=\"970\" y=\"480\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"500\" fill=\"#E2E8F0\">• Göller, barajlar, orman alanları</text><text x=\"970\" y=\"499\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"500\" fill=\"#E2E8F0\">• Tarım arazileri, milli parklar</text><text x=\"970\" y=\"518\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"500\" fill=\"#E2E8F0\">• İl, ilçe ve ülke yüz ölçümleri</text><rect x=\"40\" y=\"595\" width=\"1120\" height=\"54\" rx=\"12\" fill=\"#1E293B\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"600\" y=\"628\" text-anchor=\"middle\" font-size=\"15.5\" font-weight=\"700\" fill=\"#FDE047\">Haritanın ölçeğine göre aynı unsur (örneğin bir şehir) küçük ölçekte nokta, büyük ölçekte alan olarak gösterilebilir.</text></svg>"
+  },
+  {
+   "baslik": "Altlık Harita Üzerinde Mekânsal Veri Oluşturma Süreci",
+   "metin": [
+    "Mekânsal bilgi teknolojilerini (CBS yazılımlarını veya web tabanlı harita uygulamalarını) kullanarak altlık bir harita üzerinde mekânsal veri oluşturma süreci dört temel aşamadan oluşur. {koyu:Birinci aşamada} oluşturulacak haritanın {koyu:amacı} net biçimde belirlenir ('Bu harita hangi coğrafi sorunu veya dağılışı, hangi hedef kitleye gösterecek?'). {koyu:İkinci aşamada} amaca uygun {koyu:altlık harita} (fiziki harita, idari sınır haritası, topoğrafya haritası veya uydu görüntüsü) ile gerekli veri toplama ve gösterim yöntemi seçilir.",
+    "{koyu:Üçüncü aşamada} toplanan veriler nokta, çizgi ve alan katmanları hâlinde altlık harita üzerine aktarılır; haritanın {koyu:başlığı, lejantı (harita anahtarı), ölçeği, yön oku ve koordinat ağı} eksiksiz biçimde yerleştirilir. {koyu:Dördüncü aşamada} ise oluşturulan harita üzerinden mekânsal dağılış örüntüleri, kümelenmeler ve coğrafi unsurlar arasındaki neden-sonuç ilişkileri yorumlanır."
+   ],
+   "kutu": {
+    "tur": "bilgi",
+    "baslik": "Altlık Harita (Basemap) Nedir?",
+    "metin": "Üzerine tematik verilerin (örneğin deprem noktalarının, ulaşım ağlarının veya nüfus yoğunluğunun) işlenebilmesi için referans alınan, temel coğrafi sınırları, kıyı çizgilerini, yükselti veya uydu görüntüsünü içeren arka plan haritasına altlık harita denir."
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 675\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:12px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"1200\" height=\"675\" rx=\"18\" fill=\"#0F172A\"/><rect x=\"40\" y=\"24\" width=\"1120\" height=\"84\" rx=\"14\" fill=\"#1E293B\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"600\" y=\"58\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"800\" fill=\"#F8FAFC\">ALTLIK HARİTA ÜZERİNDE MEKÂNSAL VERİ OLUŞTURMA SÜRECİ</text><text x=\"600\" y=\"88\" text-anchor=\"middle\" font-size=\"15\" fill=\"#94A3B8\">COĞ.10.2.2 — Harita Tasarımının Dört Temel Aşaması</text><rect x=\"55\" y=\"130\" width=\"525\" height=\"205\" rx=\"14\" fill=\"#1E293B\" stroke=\"#60A5FA\" stroke-width=\"2.5\"/><rect x=\"55\" y=\"130\" width=\"525\" height=\"42\" rx=\"14\" fill=\"#2563EB\"/><text x=\"317.5\" y=\"157\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">1. Adım: Haritanın Amacını Belirleme</text><rect x=\"85\" y=\"195\" width=\"465\" height=\"60\" rx=\"10\" fill=\"#1E3A8A\" stroke=\"#60A5FA\" stroke-width=\"2\"/><text x=\"317.5\" y=\"230.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">&#x27;Bu harita neyi, kime ve hangi ölçekte gösterecek?&#x27;</text><text x=\"317\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"500\" fill=\"#E2E8F0\">Örn: Türkiye&#x27;de deprem riskini veya okul çevresi afet toplanma</text><text x=\"317\" y=\"309\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"500\" fill=\"#E2E8F0\">alanlarını göstermek üzere konu ve hedef kitle seçilir.</text><rect x=\"620\" y=\"130\" width=\"525\" height=\"205\" rx=\"14\" fill=\"#1E293B\" stroke=\"#34D399\" stroke-width=\"2.5\"/><rect x=\"620\" y=\"130\" width=\"525\" height=\"42\" rx=\"14\" fill=\"#059669\"/><text x=\"882.5\" y=\"157\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">2. Adım: Yöntem, Veri ve Altlık Harita Seçimi</text><rect x=\"650\" y=\"195\" width=\"465\" height=\"60\" rx=\"10\" fill=\"#064E3B\" stroke=\"#34D399\" stroke-width=\"2\"/><text x=\"882.5\" y=\"230.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Uygun Altlık Harita + Doğru Gösterim Tekniği</text><text x=\"882\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"500\" fill=\"#E2E8F0\">Konuya uygun altlık harita (fiziki, idari, uydu görüntüsü) seçilir;</text><text x=\"882\" y=\"309\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"500\" fill=\"#E2E8F0\">verilerin nokta, çizgi veya alan yönteminden hangisiyle işleneceği belirlenir.</text><rect x=\"55\" y=\"365\" width=\"525\" height=\"205\" rx=\"14\" fill=\"#1E293B\" stroke=\"#FB923C\" stroke-width=\"2.5\"/><rect x=\"55\" y=\"365\" width=\"525\" height=\"42\" rx=\"14\" fill=\"#EA580C\"/><text x=\"317.5\" y=\"392\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">3. Adım: Verileri Harita Üzerine Aktarma ve Sembolleştirme</text><rect x=\"85\" y=\"430\" width=\"465\" height=\"60\" rx=\"10\" fill=\"#431407\" stroke=\"#FB923C\" stroke-width=\"2\"/><text x=\"317.5\" y=\"465.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">CBS Katmanları, Renk, Sembol ve Harita Elemanları</text><text x=\"317\" y=\"525\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"500\" fill=\"#E2E8F0\">Başlık, lejant (harita anahtarı), ölçek, yön oku ve koordinat</text><text x=\"317\" y=\"544\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"500\" fill=\"#E2E8F0\">ağı eksiksiz eklenerek mekânsal veriler katmanlara işlenir.</text><rect x=\"620\" y=\"365\" width=\"525\" height=\"205\" rx=\"14\" fill=\"#1E293B\" stroke=\"#C084FC\" stroke-width=\"2.5\"/><rect x=\"620\" y=\"365\" width=\"525\" height=\"42\" rx=\"14\" fill=\"#7C3AED\"/><text x=\"882.5\" y=\"392\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">4. Adım: Mekânsal Dağılışı ve İlişkileri Yorumlama</text><rect x=\"650\" y=\"430\" width=\"465\" height=\"60\" rx=\"10\" fill=\"#3B0764\" stroke=\"#C084FC\" stroke-width=\"2\"/><text x=\"882.5\" y=\"465.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Neden-Sonuç, Kümelenme ve Dağılış Analizi</text><text x=\"882\" y=\"525\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"500\" fill=\"#E2E8F0\">Haritadaki verilerin nerede yoğunlaştığı, hangi coğrafi</text><text x=\"882\" y=\"544\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"500\" fill=\"#E2E8F0\">unsurlarla (yükselti, su, ulaşım) ilişkili olduğu analiz edilir.</text><rect x=\"40\" y=\"595\" width=\"1120\" height=\"54\" rx=\"12\" fill=\"#1E293B\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"600\" y=\"628\" text-anchor=\"middle\" font-size=\"15.5\" font-weight=\"700\" fill=\"#FDE047\">İyi bir tematik harita; doğru altlık seçimi, anlaşılır bir lejant ve amaca uygun sembolleştirmeyle oluşturulur.</text></svg>"
+  },
+  {
+   "baslik": "Tematik Harita Gösterim Teknikleri: Koroplet, Noktalama ve İzoplet",
+   "metin": [
+    "İstatistiksel ve nicel mekânsal verilerin haritalara aktarılmasında farklı kartografik teknikler kullanılır: 1) {koyu:Koroplet (Dereceli Renklendirme/Tarama) Haritaları}: İl, ilçe veya ülke gibi idari alanların belirli bir veri değerine (örneğin aritmetik nüfus yoğunluğu, okuryazarlık oranı, kişi başına düşen gelir) göre açıktan koyuya doğru dereceli renk tonlarıyla boyandığı alansal haritalardır. 2) {koyu:Noktalama (Dot) Haritaları}: Belirli bir miktara karşılık gelen özdeş noktaların dağılış sıklığıyla tarım ürünleri (fındık, buğday üretimi) veya kırsal nüfus dağılışının gösterildiği haritalardır.",
+    "3) {koyu:Oransal (Dereceli) Sembol Haritaları}: Bir konumdaki veri büyüklüğünün daire, kare veya sütun gibi sembollerin boyutlarıyla orantılı olarak büyütülüp küçültüldüğü haritalardır (örneğin limanların ticaret hacmi veya şehir nüfus büyüklükleri). 4) {koyu:İzoplet (Eş Değer Çizgisi) Haritaları}: Aynı sayısal değere sahip noktaların birleştirilmesiyle elde edilen {koyu:izohips} (eş yükselti), {koyu:izoterm} (eş sıcaklık), {koyu:izobar} (eş basınç) ve {koyu:izohiyet} (eş yağış) haritalarıdır. 5) {koyu:Akış Haritaları}: Göç, ticaret, su veya trafik hareketlerinin yönünü oklarla, miktarını ise çizgi kalınlığıyla gösteren çizgisel haritalardır."
+   ],
+   "kutu": {
+    "tur": "uyari",
+    "baslik": "Fiziki Harita Renkleri ile Koroplet Renklerini Karıştırmayınız!",
+    "metin": "Fiziki haritalardaki yeşil, sarı ve kahverengi tonları bitki örtüsünü veya yoğunluğu değil yalnızca 'yükselti basamaklarını' (0-500 m yeşil, 500-1000 m sarı, 1000 m üstü kahverengi) gösterir. Koroplet haritalarda ise renk tonunun koyulaşması incelenen istatistiksel değerin veya yoğunluğun arttığını ifade eder."
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 675\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:12px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"1200\" height=\"675\" rx=\"18\" fill=\"#0F172A\"/><rect x=\"40\" y=\"24\" width=\"1120\" height=\"84\" rx=\"14\" fill=\"#1E293B\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"600\" y=\"58\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"800\" fill=\"#F8FAFC\">TEMATİK HARİTA GÖSTERİM YÖNTEMLERİ (KARTOGRAFİK TEKNİKLER)</text><text x=\"600\" y=\"88\" text-anchor=\"middle\" font-size=\"15\" fill=\"#94A3B8\">Nitel ve Nicel Mekânsal Verilerin Görselleştirilmesi</text><rect x=\"55\" y=\"130\" width=\"525\" height=\"210\" rx=\"14\" fill=\"#1E293B\" stroke=\"#60A5FA\" stroke-width=\"2.5\"/><rect x=\"55\" y=\"130\" width=\"525\" height=\"42\" rx=\"14\" fill=\"#2563EB\"/><text x=\"317.5\" y=\"157\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">1. Koroplet (Dereceli Renklendirme) Haritası</text><rect x=\"85\" y=\"195\" width=\"70\" height=\"55\" rx=\"4\" fill=\"#DBEAFE\" stroke=\"#1E3A8A\" stroke-width=\"2\"/><rect x=\"165\" y=\"195\" width=\"70\" height=\"55\" rx=\"4\" fill=\"#60A5FA\" stroke=\"#1E3A8A\" stroke-width=\"2\"/><rect x=\"245\" y=\"195\" width=\"70\" height=\"55\" rx=\"4\" fill=\"#1D4ED8\" stroke=\"#F8FAFC\" stroke-width=\"2\"/><text x=\"335\" y=\"215\" text-anchor=\"start\" font-size=\"14\" font-weight=\"700\" fill=\"#FDE047\">İdari sınırlar içinde yoğunluk/oran</text><text x=\"335\" y=\"240\" text-anchor=\"start\" font-size=\"14\" font-weight=\"500\" fill=\"#E2E8F0\">arttıkça renk tonu koyulaşır.</text><rect x=\"85\" y=\"268\" width=\"465\" height=\"52\" rx=\"10\" fill=\"#1E3A8A\" stroke=\"#60A5FA\" stroke-width=\"2\"/><text x=\"317.5\" y=\"299.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Örn: İllere göre aritmetik nüfus yoğunluğu veya okuryazarlık oranı</text><rect x=\"620\" y=\"130\" width=\"525\" height=\"210\" rx=\"14\" fill=\"#1E293B\" stroke=\"#34D399\" stroke-width=\"2.5\"/><rect x=\"620\" y=\"130\" width=\"525\" height=\"42\" rx=\"14\" fill=\"#059669\"/><text x=\"882.5\" y=\"157\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">2. Noktalama (Dot) ve 3. Oransal Sembol Haritası</text><circle cx=\"670\" cy=\"222\" r=\"10\" fill=\"#34D399\" stroke=\"#F8FAFC\" stroke-width=\"2\"/><circle cx=\"725\" cy=\"222\" r=\"18\" fill=\"#34D399\" stroke=\"#F8FAFC\" stroke-width=\"2\"/><circle cx=\"795\" cy=\"222\" r=\"26\" fill=\"#34D399\" stroke=\"#F8FAFC\" stroke-width=\"2\"/><text x=\"840\" y=\"215\" text-anchor=\"start\" font-size=\"14\" font-weight=\"700\" fill=\"#FDE047\">Veri büyüklüğüne göre daire/sembol</text><text x=\"840\" y=\"240\" text-anchor=\"start\" font-size=\"14\" font-weight=\"500\" fill=\"#E2E8F0\">boyutu veya nokta sıklığı artar.</text><rect x=\"650\" y=\"268\" width=\"465\" height=\"52\" rx=\"10\" fill=\"#064E3B\" stroke=\"#34D399\" stroke-width=\"2\"/><text x=\"882.5\" y=\"299.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Örn: Limanların yük hacmi (Oransal) / Tarım ürünü dağılışı (Noktalama)</text><rect x=\"55\" y=\"360\" width=\"525\" height=\"210\" rx=\"14\" fill=\"#1E293B\" stroke=\"#FB923C\" stroke-width=\"2.5\"/><rect x=\"55\" y=\"360\" width=\"525\" height=\"42\" rx=\"14\" fill=\"#EA580C\"/><text x=\"317.5\" y=\"387\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">4. İzoplet (Eş Değer Çizgisi) Haritası</text><rect x=\"85\" y=\"420\" width=\"465\" height=\"60\" rx=\"10\" fill=\"#431407\" stroke=\"#FB923C\" stroke-width=\"2\"/><text x=\"317.5\" y=\"445.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Aynı değere sahip noktaların birleştirilmesi:</text><text x=\"317.5\" y=\"465.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">İzohips (Yükselti), İzoterm (Sıcaklık), İzobar (Basınç), İzohiyet (Yağış)</text><text x=\"317\" y=\"518\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"500\" fill=\"#E2E8F0\">Süreklilik gösteren doğal/fiziki verilerin haritalanmasında kullanılır.</text><rect x=\"620\" y=\"360\" width=\"525\" height=\"210\" rx=\"14\" fill=\"#1E293B\" stroke=\"#C084FC\" stroke-width=\"2.5\"/><rect x=\"620\" y=\"360\" width=\"525\" height=\"42\" rx=\"14\" fill=\"#7C3AED\"/><text x=\"882.5\" y=\"387\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">5. Akış (Çizgisel Hareket) Haritası</text><line x1=\"660\" y1=\"445\" x2=\"830\" y2=\"445\" stroke=\"#FDE047\" stroke-width=\"8\" stroke-linecap=\"round\"/><line x1=\"860\" y1=\"445\" x2=\"1010\" y2=\"445\" stroke=\"#60A5FA\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"882\" y=\"505\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"500\" fill=\"#E2E8F0\">Çizgi kalınlığı hareketin/taşınan miktarın hacmini,</text><text x=\"882\" y=\"524\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"500\" fill=\"#E2E8F0\">ok yönü ise hareket yönünü gösterir (Göç, ticaret, trafik akışı).</text><rect x=\"40\" y=\"595\" width=\"1120\" height=\"54\" rx=\"12\" fill=\"#1E293B\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"600\" y=\"628\" text-anchor=\"middle\" font-size=\"15.5\" font-weight=\"700\" fill=\"#FDE047\">İstatistiksel bir veriyi haritaya aktarırken veri tipine en uygun kartografik yöntemi seçmek doğru okuma sağlar.</text></svg>"
+  },
+  {
+   "baslik": "Harita Dili: Sembol Seçimi, Görsel Değişkenler ve Lejant Tasarımı",
+   "metin": [
+    "Verilerin harita üzerine aktarılmasında kullanılan sembollerin {koyu:boyutu, şekli, rengi, dokusu ve yönü} kartografyanın görsel değişkenleridir. Nitel veriler (örneğin maden türleri: bakır, krom, bor veya arazi kullanım türleri: orman, mera, yerleşim) birbirinden {koyu:farklı şekil veya farklı renklerle} (kırmızı, yeşil, mor) ayırt edilir. Nicel (sayısal büyüklük bildiren) veriler ise {koyu:aynı rengin açıktan koyuya tonlarıyla} veya {koyu:sembol boyutunun kademeli olarak büyütülmesiyle} gösterilir.",
+    "Haritada kullanılan tüm nokta, çizgi, alan sembollerinin ve renk tonlarının ne anlama geldiğini açıklayan bölüme {koyu:lejant (harita anahtarı / işaretler tablosu)} denir. Lejantı olmayan veya lejantındaki sınıf aralıkları hatalı belirlenmiş bir tematik harita okuyucu tarafından doğru okunamaz ve bilimsel değer taşımaz."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Evrensel Harita Sembolleri ve Renk Uyumu",
+    "metin": "Harita tasarımında su kütleleri ve akarsular için mavi, orman ve bitki örtüsü için yeşil, yüksek sıcaklık veya yüksek risk bölgeleri için kırmızı/turuncu tonlarının tercih edilmesi haritanın sezgisel olarak hızlı algılanmasını sağlar."
+   }
+  },
+  {
+   "baslik": "CBS'de Mekânsal Veri ile Öznitelik (Tablo) Verisinin Bütünleşmesi",
+   "metin": [
+    "Coğrafi Bilgi Sistemlerini (CBS) kağıt haritalardan ve basit çizim programlarından ayıran en önemli özellik, harita üzerindeki her nokta, çizgi ve poligonun arka planda bir {koyu:öznitelik tablosuna (attribute table)} bağlı olmasıdır. Harita üzerindeki geometrik şekil {koyu:'Nerede?'} sorusuna yanıt verirken, öznitelik tablosundaki satır ve sütunlar o unsura ait {koyu:'Ne, ne kadar, hangi özellikte?'} sorularına yanıt verir.",
+    "Örneğin bir afet yönetimi haritasında 'Toplanma Alanları' poligon olarak çizildiğinde, öznitelik tablosunda her bir alanın adı, mahallesi, yüz ölçümü ({koyu:m²}), kişi kapasitesi, su ve elektrik altyapı durumu kayıtlıdır. Bu sayede CBS üzerinden {koyu:'Yüz ölçümü 5.000 m²'den büyük ve su altyapısı bulunan toplanma alanlarını göster'} şeklinde mekânsal sorgulamalar saniyeler içinde yapılabilir."
+   ],
+   "kutu": {
+    "tur": "onemli",
+    "baslik": "Tampon Bölge (Buffer) Analizi",
+    "metin": "CBS'de nokta, çizgi veya alan verilerinin etrafında belirli bir mesafede (örneğin bir fay hattının 500 metre sağ ve solunda veya bir itfaiye istasyonunun 2 km çevresinde) etki ve güvenlik alanları oluşturma işlemine Tampon Bölge (Buffer) Analizi denir."
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 675\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:12px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"1200\" height=\"675\" rx=\"18\" fill=\"#0F172A\"/><rect x=\"40\" y=\"24\" width=\"1120\" height=\"84\" rx=\"14\" fill=\"#1E293B\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"600\" y=\"58\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"800\" fill=\"#F8FAFC\">CBS&#x27;DE MEKÂNSAL VERİ İLE ÖZNİTELİK (TABLO) VERİSİNİN EŞLEŞTİRİLMESİ</text><text x=\"600\" y=\"88\" text-anchor=\"middle\" font-size=\"15\" fill=\"#94A3B8\">Haritadaki Her Coğrafi Unsurun Arka Planındaki Veri Tabanı</text><rect x=\"55\" y=\"130\" width=\"490\" height=\"440\" rx=\"14\" fill=\"#1E293B\" stroke=\"#60A5FA\" stroke-width=\"2.5\"/><rect x=\"55\" y=\"130\" width=\"490\" height=\"42\" rx=\"14\" fill=\"#2563EB\"/><text x=\"300.0\" y=\"157\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">1. Mekânsal (Geometrik) Katman</text><rect x=\"95\" y=\"195\" width=\"410\" height=\"260\" rx=\"10\" fill=\"#1E293B\" stroke=\"#60A5FA\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"265\" r=\"16\" fill=\"#EF4444\" stroke=\"#F8FAFC\" stroke-width=\"2\"/><text x=\"180\" y=\"270\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#F8FAFC\">1</text><circle cx=\"310\" cy=\"320\" r=\"16\" fill=\"#34D399\" stroke=\"#F8FAFC\" stroke-width=\"2\"/><text x=\"310\" y=\"325\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">2</text><circle cx=\"410\" cy=\"245\" r=\"16\" fill=\"#FDE047\" stroke=\"#0F172A\" stroke-width=\"2\"/><text x=\"410\" y=\"250\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0F172A\">3</text><text x=\"300\" y=\"420\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#93C5FD\">Altlık Harita Üzerinde Konumlar (X, Y)</text><rect x=\"95\" y=\"475\" width=\"410\" height=\"65\" rx=\"10\" fill=\"#1E3A8A\" stroke=\"#60A5FA\" stroke-width=\"2\"/><text x=\"300.0\" y=\"502.5\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">&#x27;Nerede?&#x27; sorusuna yanıt verir.</text><text x=\"300.0\" y=\"522.5\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">Nokta, çizgi ve poligon geometrisini tutar.</text><rect x=\"585\" y=\"130\" width=\"560\" height=\"440\" rx=\"14\" fill=\"#1E293B\" stroke=\"#34D399\" stroke-width=\"2.5\"/><rect x=\"585\" y=\"130\" width=\"560\" height=\"42\" rx=\"14\" fill=\"#059669\"/><text x=\"865.0\" y=\"157\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">2. Öznitelik (Attribute) Veri Tablosu</text><rect x=\"615\" y=\"195\" width=\"500\" height=\"52\" rx=\"10\" fill=\"#422006\" stroke=\"#FDE047\" stroke-width=\"2\"/><text x=\"865.0\" y=\"226.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">ID  |  Unsur Adı         |  Tür         |  Kapasite / Değer</text><rect x=\"615\" y=\"260\" width=\"500\" height=\"52\" rx=\"10\" fill=\"#431407\" stroke=\"#FB923C\" stroke-width=\"2\"/><text x=\"865.0\" y=\"291.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">1   |  Merkez Hastanesi  |  Sağlık      |  650 Yatak</text><rect x=\"615\" y=\"325\" width=\"500\" height=\"52\" rx=\"10\" fill=\"#064E3B\" stroke=\"#34D399\" stroke-width=\"2\"/><text x=\"865.0\" y=\"356.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">2   |  Atatürk Lisesi    |  Eğitim      |  920 Öğrenci</text><rect x=\"615\" y=\"390\" width=\"500\" height=\"52\" rx=\"10\" fill=\"#1E3A8A\" stroke=\"#60A5FA\" stroke-width=\"2\"/><text x=\"865.0\" y=\"421.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">3   |  Millet Parkı      |  Toplanma    |  15.000 m²</text><rect x=\"615\" y=\"475\" width=\"500\" height=\"65\" rx=\"10\" fill=\"#3B0764\" stroke=\"#C084FC\" stroke-width=\"2\"/><text x=\"865.0\" y=\"502.5\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">&#x27;Ne var ve özellikleri neler?&#x27; sorusuna yanıt verir.</text><text x=\"865.0\" y=\"522.5\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">Sorgulama, filtreleme ve mekânsal analiz yapılmasını sağlar.</text><rect x=\"40\" y=\"595\" width=\"1120\" height=\"54\" rx=\"12\" fill=\"#1E293B\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"600\" y=\"628\" text-anchor=\"middle\" font-size=\"15.5\" font-weight=\"700\" fill=\"#FDE047\">CBS&#x27;yi sıradan bir çizim programından ayıran temel güç, haritadaki her şeklin bir öznitelik tablosuna bağlı olmasıdır.</text></svg>"
+  },
+  {
+   "baslik": "Yakın Çevremizi Haritalama: Dijital Katmanlarla Uygulama Örneği",
+   "metin": [
+    "Öğrencilerin ve araştırmacıların kendi yaşam alanlarına (okul çevresi, mahalle veya ilçe) yönelik bir CBS projesi hazırlarken izlediği uygulama adımları şöyledir: Örneğin {koyu:'Okul Çevresi Ulaşım Güvenliği ve Acil Durum Haritası'} oluşturmak amacıyla önce yüksek çözünürlüklü bir uydu görüntüsü veya sokak haritası {koyu:altlık harita} olarak seçilir.",
+    "Ardından birinci katmanda yaya geçitleri, trafik ışıkları, otobüs durakları ve nöbetçi eczaneler {koyu:noktasal veri} olarak işaretlenir; ikinci katmanda güvenli yaya rotaları ve bisiklet yolları {koyu:çizgisel veri} olarak çizilir; üçüncü katmanda ise okul bahçesi, parklar ve deprem toplanma alanları {koyu:alansal (poligon) veri} olarak sınırlandırılır. Katmanlar üst üste çakıştırılıp lejant eklendiğinde yerel yönetimler ve öğrenciler için işlevsel bir karar destek haritası ortaya çıkar."
+   ],
+   "kutu": {
+    "tur": "bilgi",
+    "baslik": "Kitle Kaynaklı Haritalama (Katılımcı CBS)",
+    "metin": "Günümüzde OpenStreetMap gibi açık kaynaklı platformlar ve mobil CBS uygulamaları sayesinde vatandaşlar da yaşadıkları çevredeki mekânsal verileri (yeni açılan yolları, engelli rampalarını, afet hasarlarını) haritalara aktararak toplumsal fayda üretebilmektedir."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Bir araştırmacı kendi iline ait 'Turizm ve Ulaşım Rehberi Haritası' hazırlamaktadır. Haritada yer alacak; a) Antik kent ve müzeleri, b) Turistik gezi rotalarını ve kara yollarını, c) Milli parkları ve gölleri hangi vektörel veri türleriyle (nokta, çizgi, alan) göstermelidir?",
+   "cevap": "a) Antik kentler ve müzeler tek bir konum belirttiği için 'Noktasal (Point)' veri ile; b) Gezi rotaları ve kara yolları uzunluk ve güzergâh belirttiği için 'Çizgisel (Line)' veri ile; c) Milli parklar ve göller belirli bir yüz ölçümü kaplayan kapalı yüzeyler olduğu için 'Alansal (Poligon)' veri ile gösterilmelidir."
+  },
+  {
+   "soru": "Türkiye'de illere göre 'Aritmetik Nüfus Yoğunluğu (kişi/km²)' dağılışını göstermek isteyen bir coğrafyacının hangi tematik harita yöntemini kullanması en uygundur? Bu yöntemde renk tonlarının değişimi neyi ifade eder?",
+   "cevap": "İdari sınırlar (iller) bazında yoğunluk ve oran verilerini göstermek için en uygun yöntem 'Koroplet (Dereceli Renklendirme)' haritasıdır. Bu yöntemde aynı rengin açıktan koyuya doğru giden tonları kullanılır; nüfus yoğunluğu az olan iller açık tonlarla, yoğunluğu fazla olan iller ise koyu tonlarla gösterilir."
+  },
+  {
+   "soru": "CBS ortamında oluşturulan bir deprem haritasında her deprem merkez üssünün (noktasal verinin) arka planındaki 'Öznitelik Tablosunda (Attribute Table)' hangi bilgiler yer alabilir? Üç örnek veriniz.",
+   "cevap": "Deprem merkez üssünün geometrik konumu (enlem-boylam) harita üzerinde nokta ile gösterilirken; öznitelik tablosunda depremin 1) Büyüklüğü (Mw), 2) Odak derinliği (km), 3) Gerçekleşme tarihi ve saati gibi tanımlayıcı sayısal ve metinsel veriler yer alır."
+  },
+  {
+   "soru": "İller arası iç göç hareketlerinin yönünü ve göç eden insan sayısını aynı harita üzerinde göstermek için hangi harita tekniği tercih edilmelidir? Açıklayınız.",
+   "cevap": "'Akış Haritası (Çizgisel Hareket Haritası)' tercih edilmelidir. Bu teknikte göçün nereden nereye yapıldığı okların yönüyle, göç eden nüfus miktarı ise okların (çizgilerin) kalınlığıyla orantılı olarak gösterilir."
+  },
+  {
+   "soru": "Altlık bir harita üzerinde mekânsal veri oluştururken sürecin ilk adımı neden 'haritanın amacını belirlemek' olmalıdır?",
+   "cevap": "Çünkü haritanın amacı; hangi altlık haritanın kullanılacağını, hangi ölçeğin seçileceğini, hangi verilerin toplanacağını ve bu verilerin hangi sembollerle (nokta, çizgi, alan) görselleştirileceğini doğrudan belirleyen temel pusuladır."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Aşağıdaki coğrafi unsurlardan hangisi CBS ortamında haritaya aktarılırken 'çizgisel (line)' veri katmanında gösterilir?",
+   "secenekler": [
+    "Van Gölü",
+    "Kuzey Anadolu Fay Hattı",
+    "Ağrı Dağı Zirvesi",
+    "Konya Ovası Tarım Alanları",
+    "Meteoroloji Ölçüm İstasyonları"
+   ],
+   "dogru": 1,
+   "aciklama": "Fay hatları, akarsular, kara ve demir yolları ile boru hatları uzunluk ve doğrultu belirten 'çizgisel (line)' verilerdir. Van Gölü ve Konya Ovası alansal (poligon), Ağrı Dağı zirvesi ve meteoroloji istasyonları ise noktasal veridir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "İdari bölge sınırları (il veya ülke sınırları) içindeki nüfus yoğunluğu, okuryazarlık oranı veya kişi başına düşen gelir gibi oransal verilerin açıktan koyuya değişen renk tonlarıyla gösterildiği tematik harita türü aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "İzoplet (Eş Değer) Haritası",
+    "Akış Haritası",
+    "Koroplet (Dereceli Renklendirme) Haritası",
+    "Topoğrafya Haritası",
+    "Bathy-hipsometrik Fiziki Harita"
+   ],
+   "dogru": 2,
+   "aciklama": "İdari alanların istatistiksel yoğunluk veya oran değerlerine göre dereceli renk tonlarıyla boyandığı haritalara Koroplet harita denir."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Mekânsal verilerin haritalara aktarılmasıyla ilgili aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "Göller, orman alanları ve milli parklar haritalara aktarılırken alansal (poligon) veri yöntemi kullanılır.",
+     "dogru": true,
+     "aciklama": "Doğrudur; belirli bir yüz ölçümü ve sınırı olan kapalı yüzeyler poligon (alan) verisiyle gösterilir."
+    },
+    {
+     "metin": "Bir coğrafi unsurun nokta ya da alan olarak gösterilmesi haritanın ölçeğine göre hiçbir zaman değişmez.",
+     "dogru": false,
+     "aciklama": "Yanlıştır; örneğin bir şehir küçük ölçekli dünya haritasında nokta ile gösterilirken, büyük ölçekli imar haritasında alan (poligon) olarak gösterilir."
+    },
+    {
+     "metin": "Haritada kullanılan sembollerin, çizgilerin ve renklerin ne anlama geldiğini açıklayan bölüme lejant (harita anahtarı) denir.",
+     "dogru": true,
+     "aciklama": "Doğrudur; lejant haritanın dilini çözen anahtar bölümdür."
+    }
+   ]
+  },
+  {
+   "tur": "dy",
+   "yonerge": "CBS ve kartografik gösterim teknikleriyle ilgili aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "Fiziki haritalarda kullanılan yeşil renk ormanlık alanları, kahverengi ise kurak alanları göstermek için kullanılır.",
+     "dogru": false,
+     "aciklama": "Yanlıştır; fiziki haritalarda renkler yalnızca yükselti basamaklarını (yeşil 0-500 m, kahverengi 1000 m üzeri) gösterir."
+    },
+    {
+     "metin": "CBS'de harita üzerindeki her nokta, çizgi ve alansal şeklin arka planında tanımlayıcı bilgilerin tutulduğu bir öznitelik tablosu bulunur.",
+     "dogru": true,
+     "aciklama": "Doğrudur; mekânsal veri ile öznitelik verisinin bağlantısı CBS'de sorgulama ve analiz yapılmasını sağlar."
+    },
+    {
+     "metin": "Aynı sıcaklık değerine sahip noktaların birleştirilmesiyle oluşturulan eş sıcaklık haritaları izoplet haritalara örnektir.",
+     "dogru": true,
+     "aciklama": "Doğrudur; izohips, izoterm, izobar ve izohiyet haritaları eş değer çizgisi (izoplet) haritalarıdır."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "soru": "Aşağıdaki coğrafi veri veya harita örneklerini karşılık gelen gösterim yöntemiyle eşleştiriniz.",
+   "ciftler": [
+    [
+     "Nöbetçi eczaneler ve su kuyuları",
+     "Noktasal (Point) gösterim"
+    ],
+    [
+     "Demir yolu ağları ve akarsular",
+     "Çizgisel (Line) gösterim"
+    ],
+    [
+     "Baraj gölleri ve tarım arazileri",
+     "Alansal (Poligon) gösterim"
+    ],
+    [
+     "Dış ticaret ve göç güzergâhları",
+     "Akış (Çizgisel hareket) haritası"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+   "cumleler": [
+    {
+     "metin": "Üzerine tematik mekânsal verilerin işlenebilmesi için referans olarak kullanılan arka plan haritasına ___ harita denir.",
+     "cevap": "altlık"
+    },
+    {
+     "metin": "Altlık harita üzerinde mekânsal veri oluşturma sürecinin ilk basamağı, oluşturulacak haritanın ___ belirlemektir.",
+     "cevap": "amacını"
+    },
+    {
+     "metin": "CBS'de bir fay hattının veya akarsuyun çevresinde belirli bir mesafede risk/etki alanı belirleme işlemine ___ bölge (buffer) analizi denir.",
+     "cevap": "tampon"
+    }
+   ],
+   "fazla": [
+    "lejant",
+    "ölçeğini"
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kartografik kavramlarla tamamlayınız.",
+   "cumleler": [
+    {
+     "metin": "Limanların yıllık yük taşıma kapasitelerinin büyüklükleriyle orantılı dairelerle gösterildiği haritalara ___ sembol haritası denir.",
+     "cevap": "oransal"
+    },
+    {
+     "metin": "CBS veri tabanında coğrafi unsurların adı, kapasitesi, nüfusu gibi tanımlayıcı bilgilerin yer aldığı tabloya ___ tablosu denir.",
+     "cevap": "öznitelik"
+    },
+    {
+     "metin": "Eş yükselti eğrileriyle (izohipslerle) çizilen topoğrafya haritaları ___ harita tekniğine örnektir.",
+     "cevap": "izoplet"
+    }
+   ],
+   "fazla": [
+    "koroplet",
+    "projeksiyon"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Yaşadığınız ilçede 'Deprem ve Acil Durum Yönetim Haritası' oluşturmak istediğinizi düşünün. Mekânsal bilgi teknolojilerini kullanarak bu haritayı hazırlarken; 1) Haritanın amacı ve altlık seçimi, 2) Noktasal, çizgisel ve alansal olarak aktaracağınız veriler, 3) Harita elemanları ve yorumlama aşamalarını adım adım tasarlayınız.",
+   "ipuclari": [
+    "1. Adım: Haritanın amacını ve hangi altlık haritanın (uydu görüntüsü / sokak haritası) kullanılacağını belirtiniz.",
+    "2. Adım: İlçedeki hangi unsurların nokta (hastane vb.), hangilerinin çizgi (fay hattı, tahliye yolu) ve hangilerinin alan (toplanma parkı) olarak çizileceğini sınıflandırınız.",
+    "3. Adım: Haritaya eklenecek temel unsurları (lejant, ölçek, yön oku, başlık) ve haritanın nasıl yorumlanacağını açıklayınız."
+   ],
+   "cevap": "1) Amaç ve Altlık: Amaç, deprem anında vatandaşların en yakın toplanma alanlarına ve sağlık tesislerine güvenli ulaşımını sağlamaktır; bunun için güncel ilçe sokak/uydu altlık haritası seçilir. 2) Veri Katmanları: Hastaneler, itfaiye istasyonları ve acil yardım depoları 'noktasal'; ilçeden geçen diri fay hatları ve acil tahliye ana arterleri 'çizgisel'; deprem toplanma parkları ve riskli zemin bölgeleri ise 'alansal (poligon)' veri olarak haritaya aktarılır. 3) Tamamlama ve Yorum: Başlık, anlaşılır bir lejant, ölçek ve yön oku eklenir; ardından hangi mahallelerde toplanma alanının yetersiz olduğu ve fay hattına yakın binaların dağılışı yorumlanarak önlem alınır."
+  }
+ ]
+}

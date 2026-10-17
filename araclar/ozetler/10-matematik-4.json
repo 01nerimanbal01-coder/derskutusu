@@ -1,0 +1,271 @@
+{
+ "ad": "10. Sınıf Matematik - 4. Hafta Özeti",
+ "sinif": 10,
+ "ders": "matematik",
+ "ders_adi": "Matematik",
+ "hafta": 4,
+ "tarih": "5-9 Ekim 2026",
+ "yayin_tarihi": "2026-10-17",
+ "unite": "GEOMETRİK ŞEKİLLER",
+ "konu": "Üçgende Yardımcı Elemanların Özellikleri ve Üçgenin Alanı",
+ "ciktilar": [
+  "Üçgenin yardımcı elemanlarının (açıortay, kenarortay, kenar orta dikme ve yükseklik) kesim noktalarını ve uzunluk sıralamasını çıkarımlarla belirler.",
+  "Üçgenin bir kenarı ve o kenara ait yüksekliğinin değişimine bağlı olarak alanının nasıl değiştiğini ve taban-alan oranlarını analiz eder.",
+  "Kenarortayların alan paylaşım özelliğini, sinüs alan teoremini ve eşkenar üçgenin alan bağıntısını problem çözümlerinde kullanır."
+ ],
+ "giris": "Üçgenin açıortay, kenarortay, kenar orta dikme ve yükseklik gibi yardımcı elemanları yalnızca üçgenin özel merkezlerini belirlemekle kalmaz; aynı zamanda kenar uzunlukları, açılar ve üçgenin kapladığı alan arasında güçlü bağıntılar kurar. Bu haftaki dersimizde üçgenin yardımcı elemanlarının uzunluk sıralamasını, ikizkenar ve eşkenar üçgenlerdeki özel durumlarını, taban ve yükseklik değişimine bağlı alan oranlarını ve sinüs alan teoremini inceleyeceğiz.",
+ "ozet": [
+  "İç açıortaylar iç teğet çember merkezinde (I), kenarortaylar ağırlık merkezinde (G), kenar orta dikmeler çevrel çember merkezinde (O), yükseklikler diklik merkezinde (H) kesişir.",
+  "Çeşitkenar bir üçgende aynı köşeden çizilen yardımcı elemanlar h_a < n_a < V_a şeklinde sıralanır; ikizkenar üçgende ise tepeden inen yardımcı elemanlar çakışıktır.",
+  "Üçgenin alanı Alan(ABC) = (a · h_a) / 2 bağıntısıyla bulunur; geniş açılı üçgende dar köşelerden çizilen yükseklikler üçgenin dışına iner.",
+  "Tepe noktaları ortak (yükseklikleri eşit) olan üçgenlerin alanları oranı taban uzunlukları oranına eşittir.",
+  "Üç kenarortay bir üçgenin alanını 6 eş alana (6S) böler; ağırlık merkezi G her kenarortayı tabana 1 birim (k), köşeye 2 birim (2k) oranında ayırır.",
+  "İki kenarı ve arasındaki açısı bilinen üçgenin alanı ½ · b · c · sin(A), bir kenarı a olan eşkenar üçgenin alanı ise ({us:a|2} · {kok:3}) / 4 formülüyle hesaplanır."
+ ],
+ "bolumler": [
+  {
+   "baslik": "Üçgende Yardımcı Elemanların Kesim Noktaları ve Uzunluk Sıralaması",
+   "metin": [
+    "Bir üçgende aynı türden üç yardımcı eleman daima tek bir noktada kesişir ({koyu:nokudaştır}): Üç {koyu:iç açıortayın} kesim noktası ({koyu:I}) üçgenin kenarlarına eşit uzaklıkta olup {koyu:iç teğet çemberin merkezidir}. Üç {koyu:kenarortayın} kesim noktası ({koyu:G}) üçgenin {koyu:ağırlık merkezidir} ve her kenarortayı tabana {koyu:1 birim (k)}, köşeye {koyu:2 birim (2k)} olacak biçimde böler. Üç {koyu:kenar orta dikmenin} kesim noktası ({koyu:O}) köşelere eşit uzaklıkta olup {koyu:çevrel çemberin merkezidir}. Üç {koyu:yüksekliğin} kesim noktası ({koyu:H}) ise üçgenin {koyu:diklik merkezidir}.",
+    "Çeşitkenar bir {koyu:ABC} üçgeninde aynı köşeden çizilen yardımcı elemanlar arasında daima {koyu:h_a < n_a < V_a} sıralaması vardır; yani bir köşeden karşı kenara çizilen en kısa doğru parçası {koyu:yükseklik (h_a)}, ortanca olan {koyu:açıortay (n_a)}, en uzun olan ise {koyu:kenarortaydır (V_a)}. Ayrıca kenar uzunlukları küçüldükçe o kenarlara ait yardımcı elemanların uzunlukları büyür: {koyu:a > b > c} ise {koyu:h_a < h_b < h_c}, {koyu:n_a < n_b < n_c} ve {koyu:V_a < V_b < V_c} olur."
+   ],
+   "kutu": {
+    "tur": "onemli",
+    "baslik": "İkizkenar ve Eşkenar Üçgende Yardımcı Elemanlar (YA-Kİ Kuralı)",
+    "metin": "Bir ikizkenar üçgende (|AB| = |AC|) tepe açısından tabana indirilen yükseklik, açıortay ve kenarortay üst üste çakışır ve uzunlukları birbirine eşittir (h_a = n_a = V_a). Eşkenar üçgende ise üç köşenin tamamında tüm yardımcı elemanlar birbirine eşittir ve dört özel merkez (I, G, O, H) tek bir noktada çakışır."
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 675\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:12px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"1200\" height=\"675\" rx=\"18\" fill=\"#0F172A\"/><rect x=\"40\" y=\"24\" width=\"1120\" height=\"84\" rx=\"14\" fill=\"#1E293B\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"600\" y=\"58\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"800\" fill=\"#F8FAFC\">ÜÇGENİN YARDIMCI ELEMANLARININ ÖZEL NOKTALARI</text><text x=\"600\" y=\"88\" text-anchor=\"middle\" font-size=\"15\" fill=\"#94A3B8\">İç Teğet Çember, Çevrel Çember, Ağırlık Merkezi ve Diklik Merkezi</text><rect x=\"55\" y=\"130\" width=\"525\" height=\"210\" rx=\"14\" fill=\"#1E293B\" stroke=\"#60A5FA\" stroke-width=\"2.5\"/><rect x=\"55\" y=\"130\" width=\"525\" height=\"42\" rx=\"14\" fill=\"#2563EB\"/><text x=\"317.5\" y=\"157\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">1. Açıortaylar ve 2. Kenarortaylar</text><rect x=\"80\" y=\"190\" width=\"475\" height=\"58\" rx=\"10\" fill=\"#1E3A8A\" stroke=\"#60A5FA\" stroke-width=\"2\"/><text x=\"317.5\" y=\"214.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">İç Açıortayların Kesim Noktası (I):</text><text x=\"317.5\" y=\"234.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">İç teğet çemberin merkezidir; kenarlara eşit uzaklıktadır.</text><rect x=\"80\" y=\"262\" width=\"475\" height=\"58\" rx=\"10\" fill=\"#064E3B\" stroke=\"#34D399\" stroke-width=\"2\"/><text x=\"317.5\" y=\"286.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Kenarortayların Kesim Noktası (G - Ağırlık Merkezi):</text><text x=\"317.5\" y=\"306.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">Tabana 1 birim (k), köşeye 2 birim (2k) uzaklıktadır.</text><rect x=\"620\" y=\"130\" width=\"525\" height=\"210\" rx=\"14\" fill=\"#1E293B\" stroke=\"#FB923C\" stroke-width=\"2.5\"/><rect x=\"620\" y=\"130\" width=\"525\" height=\"42\" rx=\"14\" fill=\"#EA580C\"/><text x=\"882.5\" y=\"157\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">3. Kenar Orta Dikmeler ve 4. Yükseklikler</text><rect x=\"645\" y=\"190\" width=\"475\" height=\"58\" rx=\"10\" fill=\"#431407\" stroke=\"#FB923C\" stroke-width=\"2\"/><text x=\"882.5\" y=\"214.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Kenar Orta Dikmelerin Kesim Noktası (O):</text><text x=\"882.5\" y=\"234.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">Çevrel çemberin merkezidir; köşelere eşit uzaklıktadır.</text><rect x=\"645\" y=\"262\" width=\"475\" height=\"58\" rx=\"10\" fill=\"#3B0764\" stroke=\"#C084FC\" stroke-width=\"2\"/><text x=\"882.5\" y=\"286.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Yüksekliklerin Kesim Noktası (H - Diklik Merkezi):</text><text x=\"882.5\" y=\"306.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">Dar açılıda içte, dik üçgende dik köşede, genişte dışta!</text><rect x=\"55\" y=\"360\" width=\"1090\" height=\"210\" rx=\"14\" fill=\"#1E293B\" stroke=\"#34D399\" stroke-width=\"2.5\"/><rect x=\"55\" y=\"360\" width=\"1090\" height=\"42\" rx=\"14\" fill=\"#059669\"/><text x=\"600.0\" y=\"387\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">İkizkenar ve Eşkenar Üçgende Yardımcı Elemanlar (YA-Kİ Kuralı)</text><polygon points=\"260,410 140,545 380,545\" fill=\"#064E3B\" stroke=\"#34D399\" stroke-width=\"3\"/><line x1=\"260\" y1=\"410\" x2=\"260\" y2=\"545\" stroke=\"#FDE047\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"260\" y=\"398\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#F8FAFC\">A</text><text x=\"125\" y=\"550\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#F8FAFC\">B</text><text x=\"395\" y=\"550\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#F8FAFC\">C</text><text x=\"260\" y=\"563\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#FDE047\">H (Diklik = Kenarortay = Açıortay)</text><rect x=\"440\" y=\"415\" width=\"670\" height=\"60\" rx=\"10\" fill=\"#422006\" stroke=\"#FDE047\" stroke-width=\"2\"/><text x=\"775.0\" y=\"440.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">İkizkenar Üçgende (|AB| = |AC|) Tepe Açısından İndirilen:</text><text x=\"775.0\" y=\"460.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">h_a = n_a = V_a  (Yükseklik = Açıortay = Kenarortay aynı doğrudur!)</text><rect x=\"440\" y=\"490\" width=\"670\" height=\"60\" rx=\"10\" fill=\"#1E3A8A\" stroke=\"#60A5FA\" stroke-width=\"2\"/><text x=\"775.0\" y=\"515.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Genel Üçgende Aynı Köşeden Çizilen Elemanların Sıralaması:</text><text x=\"775.0\" y=\"535.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">h_a ≤ n_a ≤ V_a   (En kısa yükseklik, ortanca açıortay, en uzun kenarortay)</text><rect x=\"40\" y=\"595\" width=\"1120\" height=\"54\" rx=\"12\" fill=\"#1E293B\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"600\" y=\"628\" text-anchor=\"middle\" font-size=\"15.5\" font-weight=\"700\" fill=\"#FDE047\">Eşkenar üçgende tüm kenarlara ait yükseklik, açıortay ve kenarortay uzunlukları birbirine eşittir.</text></svg>"
+  },
+  {
+   "baslik": "Üçgenin Temel Alan Bağıntısı ve Yükseklik Konumları",
+   "metin": [
+    "Bir üçgenin alanı, herhangi bir kenar uzunluğu (taban) ile o kenara ait yüksekliğin çarpımının yarısına eşittir: {koyu:Alan(ABC) = {kesir:a · h_a|2} = {kesir:b · h_b|2} = {kesir:c · h_c|2}}. Bu eşitlikten üçgenin kenar uzunlukları ile o kenarlara ait yüksekliklerin {koyu:ters orantılı} olduğu görülür; yani taban uzunluğu büyüdükçe aynı alanı veren yükseklik küçülür.",
+    "Üçgenin açı türlerine göre yüksekliğin konumu değişir: {koyu:Dar açılı üçgende} üç yükseklik de üçgenin iç bölgesindedir. {koyu:Dik üçgende} dik kenarlar birbirinin yüksekliği olduğundan alan {koyu:dik kenarların çarpımının yarısına} ({koyu:Alan = {kesir:b · c|2}}) eşittir. {koyu:Geniş açılı üçgende} ise dar açılı köşelerden çizilen yükseklikler üçgenin {koyu:dış bölgesine} (tabanın uzantısına) iner; ancak alan hesaplanırken uzantı parçası alınmaz, yalnızca üçgenin kendi kenar uzunluğu ile dış yükseklik çarpılıp ikiye bölünür."
+   ],
+   "kutu": {
+    "tur": "uyari",
+    "baslik": "Geniş Açılı Üçgende Taban Hatasına Dikkat!",
+    "metin": "Geniş açılı bir ABC üçgeninde A köşesinden [BC] kenarının uzantısı olan H noktasına dikme indirildiğinde, Alan(ABC) = (|BC| · |AH|) / 2 formülünde taban olarak |BH| değil, yalnızca üçgenin kenarı olan |BC| uzunluğu kullanılır."
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 675\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:12px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"1200\" height=\"675\" rx=\"18\" fill=\"#0F172A\"/><rect x=\"40\" y=\"24\" width=\"1120\" height=\"84\" rx=\"14\" fill=\"#1E293B\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"600\" y=\"58\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"800\" fill=\"#F8FAFC\">ÜÇGENİN TEMEL ALAN BAĞINTISI VE YÜKSEKLİK KONUMLARI</text><text x=\"600\" y=\"88\" text-anchor=\"middle\" font-size=\"15\" fill=\"#94A3B8\">Alan(ABC) = (Taban · Yükseklik) / 2 = (a · h_a) / 2</text><rect x=\"55\" y=\"130\" width=\"345\" height=\"440\" rx=\"14\" fill=\"#1E293B\" stroke=\"#60A5FA\" stroke-width=\"2.5\"/><rect x=\"55\" y=\"130\" width=\"345\" height=\"42\" rx=\"14\" fill=\"#2563EB\"/><text x=\"227.5\" y=\"157\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">1. Dar Açılı Üçgen</text><polygon points=\"210,200 95,430 355,430\" fill=\"#1E3A8A\" stroke=\"#60A5FA\" stroke-width=\"3\"/><line x1=\"210\" y1=\"200\" x2=\"210\" y2=\"430\" stroke=\"#FDE047\" stroke-width=\"3\" stroke-dasharray=\"6,6\" stroke-linecap=\"round\"/><text x=\"228\" y=\"325\" text-anchor=\"start\" font-size=\"16\" font-weight=\"700\" fill=\"#FDE047\">h_a</text><text x=\"225\" y=\"455\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#93C5FD\">a (Taban)</text><rect x=\"80\" y=\"485\" width=\"295\" height=\"60\" rx=\"10\" fill=\"#1E3A8A\" stroke=\"#60A5FA\" stroke-width=\"2\"/><text x=\"227.5\" y=\"510.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Yükseklik üçgenin içindedir.</text><text x=\"227.5\" y=\"530.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">A(ABC) = (a · h_a) / 2</text><rect x=\"425\" y=\"130\" width=\"345\" height=\"440\" rx=\"14\" fill=\"#1E293B\" stroke=\"#34D399\" stroke-width=\"2.5\"/><rect x=\"425\" y=\"130\" width=\"345\" height=\"42\" rx=\"14\" fill=\"#059669\"/><text x=\"597.5\" y=\"157\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">2. Dik Açılı Üçgen</text><polygon points=\"470,200 470,430 725,430\" fill=\"#064E3B\" stroke=\"#34D399\" stroke-width=\"3\"/><text x=\"450\" y=\"315\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FDE047\">c</text><text x=\"595\" y=\"455\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#A7F3D0\">a (Dik Kenar)</text><text x=\"615\" y=\"300\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#F8FAFC\">b (Hipotenüs)</text><rect x=\"450\" y=\"485\" width=\"295\" height=\"60\" rx=\"10\" fill=\"#064E3B\" stroke=\"#34D399\" stroke-width=\"2\"/><text x=\"597.5\" y=\"510.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Dik kenarlar birbirinin yüksekliğidir:</text><text x=\"597.5\" y=\"530.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">A(ABC) = (a · c) / 2 = (b · h_b) / 2</text><rect x=\"795\" y=\"130\" width=\"350\" height=\"440\" rx=\"14\" fill=\"#1E293B\" stroke=\"#FB923C\" stroke-width=\"2.5\"/><rect x=\"795\" y=\"130\" width=\"350\" height=\"42\" rx=\"14\" fill=\"#EA580C\"/><text x=\"970.0\" y=\"157\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">3. Geniş Açılı Üçgen</text><polygon points=\"835,200 915,430 1110,430\" fill=\"#431407\" stroke=\"#F97316\" stroke-width=\"3\"/><line x1=\"835\" y1=\"200\" x2=\"835\" y2=\"430\" stroke=\"#FDE047\" stroke-width=\"3\" stroke-dasharray=\"6,6\" stroke-linecap=\"round\"/><line x1=\"835\" y1=\"430\" x2=\"915\" y2=\"430\" stroke=\"#94A3B8\" stroke-width=\"2\" stroke-dasharray=\"6,6\" stroke-linecap=\"round\"/><text x=\"860\" y=\"325\" text-anchor=\"start\" font-size=\"16\" font-weight=\"700\" fill=\"#FDE047\">h_a</text><text x=\"1012\" y=\"455\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#FDBA74\">a (Taban)</text><rect x=\"820\" y=\"485\" width=\"300\" height=\"60\" rx=\"10\" fill=\"#431407\" stroke=\"#FB923C\" stroke-width=\"2\"/><text x=\"970.0\" y=\"510.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Yükseklik dışarıya iner ama</text><text x=\"970.0\" y=\"530.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">formülde SADECE &#x27;a&#x27; tabanı alınır!</text><rect x=\"40\" y=\"595\" width=\"1120\" height=\"54\" rx=\"12\" fill=\"#1E293B\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"600\" y=\"628\" text-anchor=\"middle\" font-size=\"15.5\" font-weight=\"700\" fill=\"#FDE047\">Geniş açılı üçgende dışarıdan inen yükseklik hesaplanırken uzantı parçası tabana eklenmez!</text></svg>"
+  },
+  {
+   "baslik": "Taban ve Yükseklik Değişimine Bağlı Alan Oranları",
+   "metin": [
+    "Bir üçgenin yüksekliği sabit tutulup taban uzunluğu {koyu:k} katına çıkarılırsa alanı da {koyu:k} katına çıkar. Bu ilkeye göre {koyu:tepe noktaları ortak (yükseklikleri eşit)} olan iki üçgenin alanları oranı, taban uzunlukları oranına eşittir: {koyu:{kesir:Alan(ABD)|Alan(ADC)} = {uzunluk:BD} / {uzunluk:DC}}. Benzer şekilde {koyu:tabanları ortak (veya eşit)} olan iki üçgenin alanları oranı da yükseklikleri oranına eşittir: {koyu:{kesir:Alan₁|Alan₂} = {kesir:h₁|h₂}}.",
+    "Bir üçgenin hem taban uzunluğu hem de o tabana ait yüksekliği aynı anda değiştirilirse, yeni alan değişim oranlarının çarpımı ile bulunur. Örneğin bir üçgenin tabanı {koyu:3 katına} çıkarılıp yüksekliği {koyu:yarıya ({kesir:1|2})} indirilirse alanı {koyu:3 · {kesir:1|2} = {kesir:3|2}} katına çıkar. Taban {koyu:%20 artırılıp} ({koyu:1,2 kat}) yükseklik {koyu:%20 azaltılırsa} ({koyu:0,8 kat}) yeni alan {koyu:1,2 · 0,8 = 0,96} katına düşer, yani alan {koyu:%4 azalır}."
+   ],
+   "kutu": {
+    "tur": "bilgi",
+    "baslik": "Paralel Doğrular Arasında Alan Kaydırma",
+    "metin": "Tabanı sabit bir doğru parçası üzerinde bulunan ve tepe noktası bu tabana paralel ikinci bir doğru üzerinde hareket ettirilen tüm üçgenlerin tabanları ve yükseklikleri eşit olduğu için alanları birbirine eşittir."
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 675\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:12px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"1200\" height=\"675\" rx=\"18\" fill=\"#0F172A\"/><rect x=\"40\" y=\"24\" width=\"1120\" height=\"84\" rx=\"14\" fill=\"#1E293B\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"600\" y=\"58\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"800\" fill=\"#F8FAFC\">TABAN VE YÜKSEKLİK DEĞİŞİMİNE GÖRE ALAN ORANLARI</text><text x=\"600\" y=\"88\" text-anchor=\"middle\" font-size=\"15\" fill=\"#94A3B8\">Yükseklikleri Eşit veya Tabanları Eşit Üçgenlerde Alan Paylaşımı</text><rect x=\"55\" y=\"130\" width=\"530\" height=\"440\" rx=\"14\" fill=\"#1E293B\" stroke=\"#60A5FA\" stroke-width=\"2.5\"/><rect x=\"55\" y=\"130\" width=\"530\" height=\"42\" rx=\"14\" fill=\"#2563EB\"/><text x=\"320.0\" y=\"157\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">1. Yükseklikleri Eşit Üçgenler (Tepe Noktası Ortak)</text><polygon points=\"310,195 105,435 525,435\" fill=\"#1E293B\" stroke=\"#60A5FA\" stroke-width=\"3\"/><line x1=\"310\" y1=\"195\" x2=\"245\" y2=\"435\" stroke=\"#FDE047\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"310\" y=\"180\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#F8FAFC\">A (Ortak Tepe)</text><text x=\"175\" y=\"460\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#93C5FD\">2k</text><text x=\"385\" y=\"460\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#34D399\">5k</text><text x=\"200\" y=\"360\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"700\" fill=\"#FDE047\">2S</text><text x=\"365\" y=\"360\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"700\" fill=\"#34D399\">5S</text><rect x=\"85\" y=\"490\" width=\"470\" height=\"60\" rx=\"10\" fill=\"#1E3A8A\" stroke=\"#60A5FA\" stroke-width=\"2\"/><text x=\"320.0\" y=\"515.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Yükseklikleri eşit olan üçgenlerin alanları</text><text x=\"320.0\" y=\"535.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">taban uzunluklarıyla doğru orantılıdır: A₁ / A₂ = a₁ / a₂</text><rect x=\"615\" y=\"130\" width=\"530\" height=\"440\" rx=\"14\" fill=\"#1E293B\" stroke=\"#34D399\" stroke-width=\"2.5\"/><rect x=\"615\" y=\"130\" width=\"530\" height=\"42\" rx=\"14\" fill=\"#059669\"/><text x=\"880.0\" y=\"157\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">2. Ağırlık Merkezi (G) ve Alanların 6 Eşit Parçaya Bölünmesi</text><polygon points=\"880,195 675,435 1085,435\" fill=\"#064E3B\" stroke=\"#34D399\" stroke-width=\"3\"/><line x1=\"880\" y1=\"195\" x2=\"880\" y2=\"435\" stroke=\"#94A3B8\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"675\" y1=\"435\" x2=\"982\" y2=\"315\" stroke=\"#94A3B8\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"1085\" y1=\"435\" x2=\"777\" y2=\"315\" stroke=\"#94A3B8\" stroke-width=\"2\" stroke-linecap=\"round\"/><circle cx=\"880\" cy=\"355\" r=\"6\" fill=\"#FDE047\" stroke=\"#F59E0B\" stroke-width=\"2\"/><text x=\"845\" y=\"300\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FDE047\">S</text><text x=\"915\" y=\"300\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FDE047\">S</text><text x=\"785\" y=\"370\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FDE047\">S</text><text x=\"975\" y=\"370\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FDE047\">S</text><text x=\"830\" y=\"415\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FDE047\">S</text><text x=\"930\" y=\"415\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FDE047\">S</text><rect x=\"645\" y=\"490\" width=\"470\" height=\"60\" rx=\"10\" fill=\"#064E3B\" stroke=\"#34D399\" stroke-width=\"2\"/><text x=\"880.0\" y=\"515.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Üç kenarortay, üçgenin alanını 6 eş alana (6S) böler.</text><text x=\"880.0\" y=\"535.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">Tek bir kenarortay ise alanı 2 eş parçaya (3S - 3S) ayırır.</text><rect x=\"40\" y=\"595\" width=\"1120\" height=\"54\" rx=\"12\" fill=\"#1E293B\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"600\" y=\"628\" text-anchor=\"middle\" font-size=\"15.5\" font-weight=\"700\" fill=\"#FDE047\">Taban sabitken yükseklik k katına çıkarsa alan da k katına çıkar; hem taban hem yükseklik değişirse oranları çarpılır.</text></svg>"
+  },
+  {
+   "baslik": "Kenarortay (Ağırlık Merkezi) ve Açıortayın Alan Paylaşımı",
+   "metin": [
+    "Bir üçgende çizilen {koyu:tek bir kenarortay}, tabanı iki eşit parçaya böldüğü ve yükseklik ortak olduğu için üçgenin alanını {koyu:iki eşit alana (S ve S)} ayırır. Üçgenin {koyu:üç kenarortayı} birden çizildiğinde ise ağırlık merkezi ({koyu:G}) etrafında oluşan {koyu:6 küçük üçgenin alanları birbirine eşittir} ({koyu:Alan(ABC) = 6S}). Köşeleri ağırlık merkezi {koyu:G}'ye birleştiren doğru parçaları ise üçgeni {koyu:3 eş alana (2S, 2S, 2S)} böler.",
+    "Bir üçgende {koyu:iç açıortay} üzerinde alınan herhangi bir noktadan açının kollarına indirilen dikmelerin (yüksekliklerin) uzunlukları birbirine eşittir. Bu nedenle iç açıortayın böldüğü iki üçgenin yükseklikleri eşit olduğundan alanları oranı yan kenarların (ve aynı zamanda taban parçalarının) oranına eşittir. Ayrıca iç teğet çemberin merkezi {koyu:I} noktası üçgenin köşeleriyle birleştirildiğinde oluşan üç üçgenin yükseklikleri çemberin yarıçapına ({koyu:r}) eşit olduğundan alanları doğrudan {koyu:a, b, c} kenar uzunluklarıyla orantılı olur."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "İç Teğet Çember Yarıçapı (r) ve Çevre-Alan Bağıntısı",
+    "metin": "Kenar uzunlukları a, b, c ve yarı çevresi u = (a + b + c) / 2 olan bir üçgenin iç teğet çemberinin yarıçapı r ise üçgenin alanı Alan(ABC) = u · r bağıntısıyla hesaplanır."
+   }
+  },
+  {
+   "baslik": "Sinüs Alan Teoremi ve Eşkenar Üçgenin Alanı",
+   "metin": [
+    "Bir üçgenin yüksekliği doğrudan verilmediğinde, iki kenar uzunluğu ve bu iki kenarın arasındaki açının ölçüsü biliniyorsa trigonometrik dik üçgen oranından {koyu:h_a = c · sin(B)} yazılarak {koyu:Sinüs Alan Teoremi} elde edilir: {koyu:Alan(ABC) = {kesir:1|2} · a · c · sin(B) = {kesir:1|2} · a · b · sin(C) = {kesir:1|2} · b · c · sin(A)}. Hesaplamalarda özel açıların sinüs değerleri kullanılır: {koyu:sin(30°) = {kesir:1|2}}, {koyu:sin(45°) = {kesir:{kok:2}|2}}, {koyu:sin(60°) = {kesir:{kok:3}|2}} ve {koyu:sin(90°) = 1}.",
+    "Bir kenar uzunluğu {koyu:a} olan {koyu:eşkenar üçgenin} tüm iç açıları {koyu:60°} olduğundan, sinüs alan formülünde iki kenar {koyu:a} ve aradaki açı {koyu:60°} yerine yazıldığında eşkenar üçgenin alanı {koyu:Alan = {kesir:1|2} · a · a · {kesir:{kok:3}|2} = {kesir:{us:a|2} · {kok:3}|4}} olarak bulunur. Eşkenar üçgenin bir yüksekliği ise {koyu:30°-60°-90°} dik üçgeninden {koyu:h = {kesir:a · {kok:3}|2}} bağıntısıyla hesaplanır."
+   ],
+   "kutu": {
+    "tur": "onemli",
+    "baslik": "Bütünler Açıların Sinüsleri Eşittir",
+    "metin": "Birbirini 180°'ye tamamlayan (bütünler) iki açının sinüs değerleri birbirine eşittir: sin(120°) = sin(60°) = {kok:3} / 2, sin(135°) = sin(45°) = {kok:2} / 2 ve sin(150°) = sin(30°) = 1 / 2."
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 675\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:12px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"1200\" height=\"675\" rx=\"18\" fill=\"#0F172A\"/><rect x=\"40\" y=\"24\" width=\"1120\" height=\"84\" rx=\"14\" fill=\"#1E293B\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"600\" y=\"58\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"800\" fill=\"#F8FAFC\">SİNÜS ALAN TEOREMİ VE EŞKENAR ÜÇGENİN ALANI</text><text x=\"600\" y=\"88\" text-anchor=\"middle\" font-size=\"15\" fill=\"#94A3B8\">İki Kenar ve Arasındaki Açı Bilindiğinde Alan Hesabı</text><rect x=\"55\" y=\"130\" width=\"530\" height=\"440\" rx=\"14\" fill=\"#1E293B\" stroke=\"#C084FC\" stroke-width=\"2.5\"/><rect x=\"55\" y=\"130\" width=\"530\" height=\"42\" rx=\"14\" fill=\"#7C3AED\"/><text x=\"320.0\" y=\"157\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">Sinüs Alan Bağıntısı</text><polygon points=\"260,200 110,420 490,420\" fill=\"#3B0764\" stroke=\"#C084FC\" stroke-width=\"3\"/><text x=\"165\" y=\"300\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"700\" fill=\"#FDE047\">c</text><text x=\"300\" y=\"448\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"700\" fill=\"#FDE047\">a</text><text x=\"155\" y=\"400\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#F8FAFC\">B açısı</text><rect x=\"90\" y=\"480\" width=\"460\" height=\"68\" rx=\"10\" fill=\"#3B0764\" stroke=\"#C084FC\" stroke-width=\"2\"/><text x=\"320.0\" y=\"509.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Alan(ABC) = ½ · a · c · sin(B)</text><text x=\"320.0\" y=\"529.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">= ½ · a · b · sin(C) = ½ · b · c · sin(A)</text><rect x=\"615\" y=\"130\" width=\"530\" height=\"440\" rx=\"14\" fill=\"#1E293B\" stroke=\"#FB923C\" stroke-width=\"2.5\"/><rect x=\"615\" y=\"130\" width=\"530\" height=\"42\" rx=\"14\" fill=\"#EA580C\"/><text x=\"880.0\" y=\"157\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">Eşkenar Üçgenin Yüksekliği ve Alanı</text><polygon points=\"880,195 710,420 1050,420\" fill=\"#431407\" stroke=\"#FB923C\" stroke-width=\"3\"/><line x1=\"880\" y1=\"195\" x2=\"880\" y2=\"420\" stroke=\"#FDE047\" stroke-width=\"3\" stroke-dasharray=\"6,6\" stroke-linecap=\"round\"/><text x=\"775\" y=\"300\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"700\" fill=\"#FDBA74\">a</text><text x=\"985\" y=\"300\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"700\" fill=\"#FDBA74\">a</text><text x=\"880\" y=\"448\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#F8FAFC\">a (Tüm açılar 60°)</text><rect x=\"650\" y=\"475\" width=\"460\" height=\"75\" rx=\"10\" fill=\"#422006\" stroke=\"#FDE047\" stroke-width=\"2\"/><text x=\"880.0\" y=\"507.5\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Yükseklik:  h = a · sin(60°)</text><text x=\"880.0\" y=\"527.5\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">Alan:  A(ABC) = ½ · a² · sin(60°)</text><rect x=\"40\" y=\"595\" width=\"1120\" height=\"54\" rx=\"12\" fill=\"#1E293B\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"600\" y=\"628\" text-anchor=\"middle\" font-size=\"15.5\" font-weight=\"700\" fill=\"#FDE047\">Sinüs alan formülü: iki kenar uzunluğu ve aralarındaki açının sinüsü bilindiğinde alanı doğrudan verir.</text></svg>"
+  },
+  {
+   "baslik": "Dik Üçgende Öklid ve Alan Bağıntısının Birlikte Kullanımı",
+   "metin": [
+    "Bir dik üçgende dik açıdan hipotenüse indirilen yükseklik ({koyu:h_a}) hem Öklid bağıntılarını hem de üçgenin alan eşitliğini sağlar. Dik kenarları {koyu:b} ve {koyu:c}, hipotenüsü {koyu:a} olan bir dik üçgenin alanı hem dik kenarların çarpımının yarısına hem de hipotenüs ile hipotenüse ait yüksekliğin çarpımının yarısına eşittir: {koyu:Alan(ABC) = {kesir:b · c|2} = {kesir:a · h_a|2}}.",
+    "Bu eşitlikte paydadaki 2'ler sadeleştirildiğinde dik üçgenlerin en önemli pratik bağıntılarından biri olan {koyu:b · c = a · h_a} (Dik kenarların çarpımı = Hipotenüs × Hipotenüse ait yükseklik) elde edilir. Böylece dik kenarları bilinen bir dik üçgenin hipotenüse ait yüksekliği saniyeler içinde hesaplanabilir."
+   ],
+   "kutu": {
+    "tur": "bilgi",
+    "baslik": "Dik Üçgende Muhteşem Üçlü ve Alan",
+    "metin": "Dik üçgende dik köşeden hipotenüse çizilen kenarortay hipotenüsün yarısına eşittir (Muhteşem Üçlü) ve dik üçgenin alanını tepe açıları ikizkenar olan iki eşit alana (S ve S) böler."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Bir ABC dik üçgeninde [AB] ⊥ [AC], |AB| = 6 cm ve |AC| = 8 cm'dir. Buna göre üçgenin alanını ve A köşesinden [BC] hipotenüsüne indirilen yüksekliğin (h_a) uzunluğunu bulunuz.",
+   "cevap": "6-8-10 özel dik üçgeninden hipotenüs |BC| = a = 10 cm'dir. Dik üçgenin alanı Alan(ABC) = (6 · 8) / 2 = 24 cm² bulunur. Aynı alan (a · h_a) / 2 = (10 · h_a) / 2 = 24 eşitliğini sağladığından 10 · h_a = 48 → h_a = 4,8 cm olarak bulunur."
+  },
+  {
+   "soru": "Bir ABC üçgeninde [BC] kenarı üzerinde bir D noktası alınıyor. |BD| = 3 cm, |DC| = 7 cm ve Alan(ABD) = 18 cm² olduğuna göre Alan(ABC) kaç cm²'dir?",
+   "cevap": "ABD ve ADC üçgenlerinin A tepe noktası ortak olduğundan yükseklikleri eşittir ve alanları tabanlarıyla doğru orantılıdır. |BD| = 3 cm tabanına 18 cm² alan düşüyorsa (1 cm'ye 6 cm²), |DC| = 7 cm tabanına 7 · 6 = 42 cm² alan düşer. Tüm alan Alan(ABC) = 18 + 42 = 60 cm² bulunur."
+  },
+  {
+   "soru": "Bir ABC üçgeninde |AB| = 8 cm, |BC| = 10 cm ve m(ABC) = 30° olduğuna göre Alan(ABC) kaç cm²'dir? (sin 30° = 1/2)",
+   "cevap": "Sinüs alan teoremine göre: Alan(ABC) = ½ · |AB| · |BC| · sin(30°) = ½ · 8 · 10 · (1/2) = 40 · (1/2) = 20 cm² olarak bulunur."
+  },
+  {
+   "soru": "G noktası ABC üçgeninin ağırlık merkezi (kenarortayların kesim noktası) olmak üzere Alan(BGC) = 16 cm² ise Alan(ABC) kaç cm²'dir?",
+   "cevap": "Üç kenarortay üçgenin alanını 6 eş alana (6S) böler. BGC üçgeni bu eş alanlardan tabandaki 2 tanesini (2S) kapsar. 2S = 16 cm² ise S = 8 cm² olur. Tüm üçgenin alanı Alan(ABC) = 6S = 6 · 8 = 48 cm² bulunur."
+  },
+  {
+   "soru": "Çevresi 24 cm olan bir eşkenar üçgenin yüksekliği kaç cm ve alanı kaç cm²'dir?",
+   "cevap": "Eşkenar üçgenin üç kenarı eşit olduğundan bir kenarı a = 24 / 3 = 8 cm'dir. Yüksekliği h = (a · {kok:3}) / 2 = (8 · {kok:3}) / 2 = 4{kok:3} cm bulunur. Alanı ise Alan = ({us:a|2} · {kok:3}) / 4 = (64 · {kok:3}) / 4 = 16{kok:3} cm² olur."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Bir üçgenin bir kenar uzunluğu %50 artırılıp, o kenara ait yüksekliği %20 azaltılırsa üçgenin alanı nasıl değişir?",
+   "secenekler": [
+    "%10 artar",
+    "%20 artar",
+    "%30 artar",
+    "Değişmez",
+    "%10 azalır"
+   ],
+   "dogru": 1,
+   "aciklama": "Kenar %50 artırıldığında 1,5 katına çıkar; yükseklik %20 azaltıldığında 0,8 katına düşer. Yeni alan eski alanın 1,5 · 0,8 = 1,20 katı olur; yani alan %20 artar."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Çeşitkenar bir ABC üçgeninde a > b > c kenar sıralaması olduğuna göre aşağıdaki sıralamalardan hangisi kesinlikle doğrudur?",
+   "secenekler": [
+    "h_a > h_b > h_c",
+    "V_a > n_a > h_a",
+    "h_a > n_a > V_a",
+    "V_a > V_b > V_c",
+    "n_a > n_b > n_c"
+   ],
+   "dogru": 1,
+   "aciklama": "Çeşitkenar bir üçgende aynı köşeden çizilen yardımcı elemanlardan en kısası yükseklik (h_a), ortancası açıortay (n_a), en uzunu ise kenarortaydır (V_a). Dolayısıyla V_a > n_a > h_a kesinlikle doğrudur."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Üçgende yardımcı elemanlar ve özel merkezlerle ilgili aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "Üçgenin iç açıortaylarının kesim noktası, iç teğet çemberin merkezidir ve üçgenin kenarlarına eşit uzaklıktadır.",
+     "dogru": true,
+     "aciklama": "Doğrudur; iç açıortayların kesim noktası kenarlara teğet olan iç çemberin merkezidir."
+    },
+    {
+     "metin": "Geniş açılı bir üçgende yüksekliklerin kesim noktası (diklik merkezi) üçgenin iç bölgesindedir.",
+     "dogru": false,
+     "aciklama": "Yanlıştır; geniş açılı üçgende diklik merkezi üçgenin dış bölgesindedir (dar açılıda içte, dik üçgende dik köşededir)."
+    },
+    {
+     "metin": "İkizkenar bir üçgende tepe açısından tabana indirilen yükseklik aynı zamanda açıortay ve kenarortaydır.",
+     "dogru": true,
+     "aciklama": "Doğrudur; ikizkenar üçgende tepe açısından inen yardımcı elemanlar çakışıktır."
+    }
+   ]
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Üçgende alan bağıntılarıyla ilgili aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "Bir üçgende üç kenarortay çizildiğinde üçgenin alanı birbirine eşit 6 küçük üçgensel bölgeye ayrılır.",
+     "dogru": true,
+     "aciklama": "Doğrudur; kenarortaylar üçgeni alanı eşit 6 parçaya (6S) böler."
+    },
+    {
+     "metin": "Bir üçgenin kenar uzunlukları ile o kenarlara ait yüksekliklerin uzunlukları doğru orantılıdır.",
+     "dogru": false,
+     "aciklama": "Yanlıştır; Alan = (a · h_a)/2 = (b · h_b)/2 sabit olduğundan kenar uzunlukları ile yükseklikler ters orantılıdır."
+    },
+    {
+     "metin": "Bir kenar uzunluğu a olan eşkenar üçgenin alanı ({us:a|2} · {kok:3}) / 4 bağıntısıyla hesaplanır.",
+     "dogru": true,
+     "aciklama": "Doğrudur; sinüs alan formülünden 1/2 · a · a · sin(60°) = ({us:a|2} · {kok:3}) / 4 elde edilir."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "soru": "Üçgendeki yardımcı elemanların kesim noktalarını karşılık gelen özel merkez adlarıyla eşleştiriniz.",
+   "ciftler": [
+    [
+     "İç açıortayların kesim noktası",
+     "İç teğet çemberin merkezi (I)"
+    ],
+    [
+     "Kenarortayların kesim noktası",
+     "Ağırlık merkezi (G)"
+    ],
+    [
+     "Kenar orta dikmelerin kesim noktası",
+     "Çevrel çemberin merkezi (O)"
+    ],
+    [
+     "Yüksekliklerin kesim noktası",
+     "Diklik merkezi (H)"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+   "cumleler": [
+    {
+     "metin": "Ağırlık merkezi (G), her kenarortayı tabana 1 birim, köşeye ___ birim olacak şekilde böler.",
+     "cevap": "2"
+    },
+    {
+     "metin": "Dik açılı bir üçgende yüksekliklerin kesim noktası (diklik merkezi), üçgenin ___ açılı köşesidir.",
+     "cevap": "dik"
+    },
+    {
+     "metin": "Tepe noktaları ortak (yükseklikleri eşit) olan iki üçgenin alanları oranı, ___ uzunlukları oranına eşittir.",
+     "cevap": "taban"
+    }
+   ],
+   "fazla": [
+    "3",
+    "çevre"
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun sayısal değerlerle tamamlayınız.",
+   "cumleler": [
+    {
+     "metin": "Taban uzunluğu 12 cm ve bu tabana ait yüksekliği 5 cm olan bir üçgenin alanı ___ cm²'dir.",
+     "cevap": "30"
+    },
+    {
+     "metin": "İki kenar uzunluğu 6 cm ve 8 cm, bu iki kenar arasındaki açısı 30° olan üçgenin alanı ___ cm²'dir.",
+     "cevap": "12"
+    },
+    {
+     "metin": "Alanı 36 cm² olan bir üçgende kenarortayların oluşturduğu 6 eş küçük üçgenden her birinin alanı ___ cm²'dir.",
+     "cevap": "6"
+    }
+   ],
+   "fazla": [
+    "60",
+    "24"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "İkizkenar bir ABC üçgeninde |AB| = |AC| = 13 cm ve taban uzunluğu |BC| = 10 cm'dir. Bu üçgenin; 1) A tepe noktasından [BC] tabanına indirilen yüksekliğini (h_a), 2) Alanını ve 3) Eşit yan kenarlarından birine ([AC] kenarına) ait yüksekliğini (h_b) adım adım hesaplayınız.",
+   "ipuclari": [
+    "1. Adım: İkizkenar üçgende tepeden tabana indirilen dikmenin tabanı iki eşit parçaya (5 cm - 5 cm) böldüğünü kullanarak Pisagor'dan h_a yüksekliğini bulunuz.",
+    "2. Adım: Taban (10 cm) ve h_a yüksekliğini kullanarak Alan(ABC) = (a · h_a) / 2 değerini hesaplayınız.",
+    "3. Adım: Aynı alanı yan kenar (b = 13 cm) ile yan yüksekliğin çarpımının yarısına eşitleyerek [(13 · h_b) / 2 = Alan] h_b değerini bulunuz."
+   ],
+   "cevap": "1) A'dan [BC]'ye indirilen dikme tabanı 5 cm ve 5 cm olarak ikiye böler. 5-12-13 özel dik üçgeninden yükseklik h_a = 12 cm bulunur. 2) Üçgenin alanı: Alan(ABC) = (10 · 12) / 2 = 60 cm² olur. 3) Yan kenara ait yükseklik: Alan(ABC) = (|AC| · h_b) / 2 → 60 = (13 · h_b) / 2 → 13 · h_b = 120 → h_b = 120/13 cm olarak bulunur."
+  }
+ ]
+}
