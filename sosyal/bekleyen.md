@@ -1063,3 +1063,493 @@ Konu özetinin tamamı: https://derskutusu.com/ozet/9-temel-dini-bilgiler-5
 
 #derskutusu #9sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #tyt
 ```
+
+### `bilgi-10-arapca-5` — 10. Sınıf · arapca · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-10-arapca-5.png` (`public/sosyal/bilgi-10-arapca-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/10-arapca-5
+- **Metin:**
+```text
+Arapçada Akrabalık İfadeleri ve İsim Tamlaması
+
+Arapçada akrabalık ilişkileri muzâf ve muzâfun ileyh uyumuyla kurulan isim tamlaması (el-izâfe) kalıplarıyla ifade edilir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/10-arapca-5
+
+#derskutusu #10sınıf #arapça #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-10-biyoloji-5` — 10. Sınıf · biyoloji · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-10-biyoloji-5.png` (`public/sosyal/bilgi-10-biyoloji-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/10-biyoloji-5
+- **Metin:**
+```text
+Fotosentez Deneyleri ve Kimyasal Ayıraçlar
+
+Fotosentez deneylerinde KOH karbondioksit tutucu, iyot çözeltisi ise nişasta ayracı olarak kullanılarak fotosentez hızı ölçülür.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/10-biyoloji-5
+
+#derskutusu #10sınıf #biyoloji #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-10-cografya-5` — 10. Sınıf · cografya · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-10-cografya-5.png` (`public/sosyal/bilgi-10-cografya-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/10-cografya-5
+- **Metin:**
+```text
+Coğrafi Bilgi Sistemlerinde Mekânsal Veri Modelleri
+
+CBS ortamında yeryüzü unsurları nokta, çizgi ve poligon katmanlarıyla sayısallaştırılarak öznitelik tablolarıyla ilişkilendirilir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/10-cografya-5
+
+#derskutusu #10sınıf #coğrafya #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-10-din-kulturu-5` — 10. Sınıf · din-kulturu-ve-ahlak-bilgisi · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-10-din-kulturu-5.png` (`public/sosyal/bilgi-10-din-kulturu-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/10-din-kulturu-ve-ahlak-bilgisi-5
+- **Metin:**
+```text
+Allah-Âlem İlişkisinde Yaratma, Ölçü ve Sünnetullah
+
+Allah (cc) âlemi kusursuz bir ölçü (mizan) ve Sünnetullah adı verilen değişmez evrensel yasalarla yaratıp yönetmektedir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/10-din-kulturu-ve-ahlak-bilgisi-5
+
+#derskutusu #10sınıf #dinkültürü #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-10-edebiyat-5` — 10. Sınıf · turk-dili-ve-edebiyati · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-10-edebiyat-5.png` (`public/sosyal/bilgi-10-edebiyat-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/10-turk-dili-ve-edebiyati-5
+- **Metin:**
+```text
+Şiir Dinletisi Hazırlama, Vurgu ve Sahne Duruşu
+
+Başarılı bir şiir dinletisinde doğru vurgu, tonlama, durak ve nefes kontrolü sahne duruşuyla bütünleştirilerek sunulur.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/10-turk-dili-ve-edebiyati-5
+
+#derskutusu #10sınıf #edebiyat #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-10-felsefe-5` — 10. Sınıf · felsefe · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-10-felsefe-5.png` (`public/sosyal/bilgi-10-felsefe-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/10-felsefe-5
+- **Metin:**
+```text
+Felsefenin Bireysel ve Toplumsal Hayattaki İşlevleri
+
+Felsefe bireyde eleştirel ve özgür düşünceyi geliştirirken toplumda demokrasi, hoşgörü ve insan hakları bilincini güçlendirir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/10-felsefe-5
+
+#derskutusu #10sınıf #felsefe #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-10-fikih-5` — 10. Sınıf · fikih · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-10-fikih-5.png` (`public/sosyal/bilgi-10-fikih-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/10-fikih-5
+- **Metin:**
+```text
+İslam Hukukunun Tarihsel Dönemleri ve Fıkıh Ekolleri
+
+İslam hukuku vahiy döneminden itibaren içtihat, Ehl-i Hadis ve Ehl-i Re’y ekolleriyle gelişerek fıkıh mezheplerini oluşturmuştur.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/10-fikih-5
+
+#derskutusu #10sınıf #fıkıh #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-10-fizik-5` — 10. Sınıf · fizik · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-10-fizik-5.png` (`public/sosyal/bilgi-10-fizik-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/10-fizik-5
+- **Metin:**
+```text
+Sabit İvmeli Harekette Grafik ve Denklemler
+
+Sabit ivmeli harekette grafiklerin eğimi türev büyüklüğü, eksenle sınırladığı alan ise hız değişimi ve yer değiştirmeyi verir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/10-fizik-5
+
+#derskutusu #10sınıf #fizik #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-10-hadis-5` — 10. Sınıf · hadis · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-10-hadis-5.png` (`public/sosyal/bilgi-10-hadis-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/10-hadis-5
+- **Metin:**
+```text
+Sünnetin Dindeki Yeri ve Kur’an’ı Açıklama İşlevi
+
+Sünnet Kur’an-ı Kerim’in kapalı ve özet ayetlerini beyan ederek İslam dininin hükümlerini yaşanabilir hale getirir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/10-hadis-5
+
+#derskutusu #10sınıf #hadis #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-10-ingilizce-5` — 10. Sınıf · ingilizce · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-10-ingilizce-5.png` (`public/sosyal/bilgi-10-ingilizce-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/10-ingilizce-5
+- **Metin:**
+```text
+Must / Have to ve Kulüp Gelecek Planları
+
+İngilizcede mustn’t yasak, don’t have to zorunluluk olmayışı anlatırken planlı kulüp projeleri be going to ile ifade edilir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/10-ingilizce-5
+
+#derskutusu #10sınıf #ingilizce #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-10-kimya-5` — 10. Sınıf · kimya · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-10-kimya-5.png` (`public/sosyal/bilgi-10-kimya-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/10-kimya-5
+- **Metin:**
+```text
+Mol Kavramı, Avogadro Sayısı ve Hesaplamalar
+
+1 mol madde 6,02·10²³ tanecik içerir ve mol sayısı kütle, tanecik sayısı ile gaz hacmi arasındaki dönüşüm köprüsünü kurar.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/10-kimya-5
+
+#derskutusu #10sınıf #kimya #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-10-kuran-i-kerim-5` — 10. Sınıf · kuran-i-kerim · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-10-kuran-i-kerim-5.png` (`public/sosyal/bilgi-10-kuran-i-kerim-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/10-kuran-i-kerim-5
+- **Metin:**
+```text
+Tecvitte Asli Med ve Fer’i Med (Uzatma) Çeşitleri
+
+Tecvitte med harflerinden sonra hemze veya sükûn gelmesine göre Muttasıl, Munfasıl, Lâzım, Ârız ve Lîn medleri uygulanır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/10-kuran-i-kerim-5
+
+#derskutusu #10sınıf #kuranıkerim #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-10-matematik-5` — 10. Sınıf · matematik · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-10-matematik-5.png` (`public/sosyal/bilgi-10-matematik-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/10-matematik-5
+- **Metin:**
+```text
+Üçgende Alan Bağıntıları, Sinüs Formülü ve Benzerlik
+
+Üçgende alan taban-yükseklik, sinüs teoremi veya iç teğet çember yarıçapıyla hesaplanır; benzer üçgenlerde alanlar oranı k² olur.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/10-matematik-5
+
+#derskutusu #10sınıf #matematik #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-10-peygamberimizin-hayati-5` — 10. Sınıf · peygamberimizin-hayati · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-10-peygamberimizin-hayati-5.png` (`public/sosyal/bilgi-10-peygamberimizin-hayati-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/10-peygamberimizin-hayati-5
+- **Metin:**
+```text
+Taif Yolculuğu ve Rahmet Peygamberi
+
+Hz. Peygamber (sav) Taif’te uğradığı ağır eziyetlere beddua yerine dua ve merhametle karşılık vererek Taif’in kalbini kazanmıştır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/10-peygamberimizin-hayati-5
+
+#derskutusu #10sınıf #peygamberimizinhayatı #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-10-siyer-5` — 10. Sınıf · siyer · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-10-siyer-5.png` (`public/sosyal/bilgi-10-siyer-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/10-siyer-5
+- **Metin:**
+```text
+Hz. Muhammed’in Risalet Öncesi Örnek Hayatı
+
+Hz. Muhammed (sav) risalet öncesinde Hilfü’l-Fudûl üyeliği, dürüst ticareti ve Kâbe hakemliğiyle El-Emin sıfatını kazanmıştır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/10-siyer-5
+
+#derskutusu #10sınıf #siyer #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-10-tarih-5` — 10. Sınıf · tarih · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-10-tarih-5.png` (`public/sosyal/bilgi-10-tarih-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/10-tarih-5
+- **Metin:**
+```text
+Türkistan’dan Türkiye’ye Devlet ve Ordu Teşkilatı
+
+Türk-İslam devletlerinde kut ve töre geleneği korunurken Divan teşkilatı, gulam sistemi ve ikta ordusuyla kurumsal dönüşüm sağlanmıştır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/10-tarih-5
+
+#derskutusu #10sınıf #tarih #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-10-temel-dini-bilgiler-5` — 10. Sınıf · temel-dini-bilgiler · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-10-temel-dini-bilgiler-5.png` (`public/sosyal/bilgi-10-temel-dini-bilgiler-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/10-temel-dini-bilgiler-5
+- **Metin:**
+```text
+İslam’da Dünya-Ahiret Dengesi ve Salih Amel
+
+İslam’da dünya ahiretin tarlası kabul edilir; mümin iman, salih amel, ihlas ve helal kazançla dünya-ahiret dengesini kurar.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/10-temel-dini-bilgiler-5
+
+#derskutusu #10sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-11-akaid-5` — 11. Sınıf · akaid · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-11-akaid-5.png` (`public/sosyal/bilgi-11-akaid-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/11-akaid-5
+- **Metin:**
+```text
+İman Bakımından İnsanlar ve Salih Amel
+
+İslam akaidinde insanlar iman karşısındaki tutumlarına göre mümin, kâfir, müşrik ve münafık olarak ayrılır; salih amel imanı korur.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/11-akaid-5
+
+#derskutusu #11sınıf #akaid #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-11-biyoloji-5` — 11. Sınıf · biyoloji · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-11-biyoloji-5.png` (`public/sosyal/bilgi-11-biyoloji-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/11-biyoloji-5
+- **Metin:**
+```text
+Bitkisel Hormonlar ve Bitki Gelişimine Etkileri
+
+Bitkisel hormonlardan oksin, giberellin ve sitokinin büyümeyi uyarırken etilen ve absisik asit olgunlaşma ile stres yanıtını yönetir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/11-biyoloji-5
+
+#derskutusu #11sınıf #biyoloji #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-11-cografya-5` — 11. Sınıf · cografya · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-11-cografya-5.png` (`public/sosyal/bilgi-11-cografya-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/11-cografya-5
+- **Metin:**
+```text
+Ekosistemde Enerji Akışı ve Madde Döngüsü
+
+Ekosistemin sürekliliği besin zincirindeki tek yönlü enerji akışı ile karbon, oksijen, azot ve su döngülerinin dengesine bağlıdır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/11-cografya-5
+
+#derskutusu #11sınıf #coğrafya #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-11-din-kulturu-5` — 11. Sınıf · din-kulturu-ve-ahlak-bilgisi · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-11-din-kulturu-5.png` (`public/sosyal/bilgi-11-din-kulturu-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/11-din-kulturu-ve-ahlak-bilgisi-5
+- **Metin:**
+```text
+Ahiret Hayatının Aşamaları ve Cenaze Hükümleri
+
+Ahiret hayatı berzah, kıyamet, ba’s, haşir ve mizan aşamalarından oluşur; cenaze techiz ve namazı ise müminlere farz-ı kifayedir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/11-din-kulturu-ve-ahlak-bilgisi-5
+
+#derskutusu #11sınıf #dinkültürü #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-11-dinler-tarihi-5` — 11. Sınıf · dinler-tarihi · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-11-dinler-tarihi-5.png` (`public/sosyal/bilgi-11-dinler-tarihi-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/11-dinler-tarihi-5
+- **Metin:**
+```text
+Hinduizmde Kutsal Metinler ve Kast Sistemi
+
+Hinduizmde Vedalar kutsal metin kabul edilirken toplumsal yapı kast sistemine, kurtuluş inancı ise karma ve samsara döngüsüne dayanır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/11-dinler-tarihi-5
+
+#derskutusu #11sınıf #dinlertarihi #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-11-edebiyat-5` — 11. Sınıf · turk-dili-ve-edebiyati · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-11-edebiyat-5.png` (`public/sosyal/bilgi-11-edebiyat-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/11-turk-dili-ve-edebiyati-5
+- **Metin:**
+```text
+Makale, Fıkra Türleri ve Cümlenin Ögeleri
+
+Makale kanıtlama amacı taşırken fıkra güncel konuları samimi dille yorumlar; cümlenin ögeleri bulunurken söz öbekleri bölünmez.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/11-turk-dili-ve-edebiyati-5
+
+#derskutusu #11sınıf #edebiyat #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-11-felsefe-5` — 11. Sınıf · felsefe · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-11-felsefe-5.png` (`public/sosyal/bilgi-11-felsefe-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/11-felsefe-5
+- **Metin:**
+```text
+İlk Çağ Doğa Filozofları ve Arkhe Problemi
+
+İlk Çağ doğa filozofları evrenin ana maddesini (arkhe) doğa içinde aramış; Herakleitos oluşu, Parmenides ise değişmez varlığı savunmuştur.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/11-felsefe-5
+
+#derskutusu #11sınıf #felsefe #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-11-fizik-5` — 11. Sınıf · fizik · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-11-fizik-5.png` (`public/sosyal/bilgi-11-fizik-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/11-fizik-5
+- **Metin:**
+```text
+İtme ve Çizgisel Momentum Değişimi
+
+Cisme uygulanan net itme çizgisel momentum değişimine eşittir; çarpışma süresi uzadıkça etki eden ortalama kuvvet azalır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/11-fizik-5
+
+#derskutusu #11sınıf #fizik #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-11-hitabet-ve-mesleki-uygulama-5` — 11. Sınıf · hitabet-ve-mesleki-uygulama · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-11-hitabet-ve-mesleki-uygulama-5.png` (`public/sosyal/bilgi-11-hitabet-ve-mesleki-uygulama-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/11-hitabet-ve-mesleki-uygulama-5
+- **Metin:**
+```text
+Din Hizmetlerinde İletişim İlkeleri ve Hitabet Üslubu
+
+Din hizmetlerinde etkili iletişim; muhatap analizi, hikmetli ve müjdeleyici üslup ile samimi beden dilinin bütünleşmesine dayanır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/11-hitabet-ve-mesleki-uygulama-5
+
+#derskutusu #11sınıf #hitabet #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-11-ingilizce-5` — 11. Sınıf · ingilizce · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-11-ingilizce-5.png` (`public/sosyal/bilgi-11-ingilizce-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/11-ingilizce-5
+- **Metin:**
+```text
+Geçmiş Alışkanlıklar: Used to, Would ve Could
+
+İngilizcede used to hem geçmiş eylem hem durumları anlatırken would yalnız eylemlerle, was/were able to ise özel başarılarla kullanılır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/11-ingilizce-5
+
+#derskutusu #11sınıf #ingilizce #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-11-kimya-5` — 11. Sınıf · kimya · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-11-kimya-5.png` (`public/sosyal/bilgi-11-kimya-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/11-kimya-5
+- **Metin:**
+```text
+Hess Yasası ve Çarpışma Teorisi İlkeleri
+
+Hess Yasası’na göre ara basamakların toplanmasıyla elde edilen net tepkimenin entalpisi basamakların entalpi değişimleri toplamına eşittir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/11-kimya-5
+
+#derskutusu #11sınıf #kimya #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-11-kuran-i-kerim-5` — 11. Sınıf · kuran-i-kerim · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-11-kuran-i-kerim-5.png` (`public/sosyal/bilgi-11-kuran-i-kerim-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/11-kuran-i-kerim-5
+- **Metin:**
+```text
+Kehf Suresi 1-10. Ayetlerin Mesajları ve Sekte Kuralı
+
+Kehf Suresi 1-10. ayetler tevhid inancını ve Ashab-ı Kehf’in samimi duasını anlatırken 1. ayette tecvitteki dört sekteden biri uygulanır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/11-kuran-i-kerim-5
+
+#derskutusu #11sınıf #kuranıkerim #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-11-matematik-5` — 11. Sınıf · matematik · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-11-matematik-5.png` (`public/sosyal/bilgi-11-matematik-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/11-matematik-5
+- **Metin:**
+```text
+Yönlü Açılar, Esas Ölçü ve Birim Çember
+
+Trigonometride 180° = π radyan dönüşümü kullanılır ve her yönlü açının birim çember üzerindeki yeri [0, 2π) aralığındaki esas ölçüsüyle bulunur.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/11-matematik-5
+
+#derskutusu #11sınıf #matematik #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-11-mesleki-arapca-5` — 11. Sınıf · mesleki-arapca · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-11-mesleki-arapca-5.png` (`public/sosyal/bilgi-11-mesleki-arapca-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/11-mesleki-arapca-5
+- **Metin:**
+```text
+Arapçada Taharet ve Abdest Kavramları
+
+Mesleki Arapçada taharet, vudû, ğusl ve teyemmüm terimleri ile abdestin farz ve sünnetlerini bildiren fıkhi kalıplar temel ibadet dilini oluşturur.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/11-mesleki-arapca-5
+
+#derskutusu #11sınıf #meslekiarapça #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-11-peygamberimizin-hayati-5` — 11. Sınıf · peygamberimizin-hayati · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-11-peygamberimizin-hayati-5.png` (`public/sosyal/bilgi-11-peygamberimizin-hayati-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/11-peygamberimizin-hayati-5
+- **Metin:**
+```text
+Hicret Yolculuğu ve Medine’de İlk Kurumlar
+
+Hicret sonrasında Medine’de inşa edilen Mescid-i Nebi, Suffe, muâhât kardeşliği ve Medine Vesikası İslam toplumunun kurucu temellerini oluşturmuştur.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/11-peygamberimizin-hayati-5
+
+#derskutusu #11sınıf #peygamberimizinhayatı #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-11-tarih-5` — 11. Sınıf · tarih · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-11-tarih-5.png` (`public/sosyal/bilgi-11-tarih-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/11-tarih-5
+- **Metin:**
+```text
+18. Yüzyılda Avrupa ve Osmanlı Islahatları
+
+18. yüzyılda Osmanlı Devleti Lale Devri’nde kültürel, I. Mahmud ve I. Abdülhamid dönemlerinde ise Batı tarzı askerî-teknik ıslahatlara yönelmiştir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/11-tarih-5
+
+#derskutusu #11sınıf #tarih #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-11-tefsir-5` — 11. Sınıf · tefsir · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-11-tefsir-5.png` (`public/sosyal/bilgi-11-tefsir-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/11-tefsir-5
+- **Metin:**
+```text
+İlk Dönem Tefsir Hareketleri ve Ekolleri
+
+Tefsir ilmi Hz. Peygamber’in beyanıyla başlamış; Sahabe ve Tabiîn döneminde Mekke, Medine ve Kûfe tefsir ekolleriyle kurumsallaşmıştır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/11-tefsir-5
+
+#derskutusu #11sınıf #tefsir #konuözeti #dersnotu #meb #tyt #ayt
+```
+
+### `bilgi-11-temel-dini-bilgiler-5` — 11. Sınıf · temel-dini-bilgiler · 5. Hafta
+- **Görsel:** `public/sosyal/bilgi-11-temel-dini-bilgiler-5.png` (`public/sosyal/bilgi-11-temel-dini-bilgiler-5.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/11-temel-dini-bilgiler-5
+- **Metin:**
+```text
+İslam’da Aile Kurumu, Nikâh ve Sorumluluklar
+
+İslam’da aile kurumu meşru nikâh akdi üzerine inşa edilir; huzur, sevgi, merhamet ve karşılıklı hak-sorumluluk bilinciyle korunur.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/11-temel-dini-bilgiler-5
+
+#derskutusu #11sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #tyt #ayt
+```
