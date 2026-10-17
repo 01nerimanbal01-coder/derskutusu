@@ -1,0 +1,338 @@
+{
+  "ad": "10-matematik-3",
+  "sinif": 10,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 3,
+  "tarih": "28 Eylül - 2 Ekim 2026",
+  "yayin_tarihi": "2026-10-17",
+  "unite": "GEOMETRİK ŞEKİLLER",
+  "konu": "Üçgende Yardımcı Elemanlar: Açıortay, Kenarortay, Kenar Orta Dikme ve Yükseklik",
+  "ciktilar": [
+    "10.1.2. Üçgenin yardımcı elemanlarının özellikleri ile ilgili çıkarım yapabilme"
+  ],
+  "giris": "Üçgenin temel elemanları olan kenarlar ve açılar dışında, üçgenin geometrik özelliklerini ve özel merkezlerini belirleyen dört temel yardımcı elemanı vardır: açıortay, kenarortay, kenar orta dikme ve yükseklik. Bu haftaki dersimizde üçgenin bu dört yardımcı elemanının özelliklerine ilişkin varsayımlarda bulunuyor, iç teğet çemberin merkezi (I), ağırlık merkezi (G), çevrel çemberin merkezi (O) ve diklik merkezinin (H) üçgenin açı türüne göre konumlarını keşfediyor ve ikizkenar ile eşkenar üçgenlerde yardımcı elemanlar arasındaki örüntüleri genelliyoruz.",
+  "ozet": [
+    "1. Üçgende Açıortay ve İç Teğet Çemberin Merkezi (I): Üçgenin iç açıortayları üçgenin iç bölgesindeki tek bir noktada (I - iç teğet çemberin merkezi) kesişir; iç açıortay karşı kenarı komşu kenarların uzunlukları oranında böler.",
+    "2. Üçgende Kenarortay, Ağırlık Merkezi (G) ve Muhteşem Üçlü: Üçgenin kenarortayları ağırlık merkezinde (G) kesişir ve G noktası her kenarortayı köşeye 2 birim, kenara 1 birim (2k : k) oranında böler; dik üçgende hipotenüse ait kenarortay hipotenüsün yarısına eşittir.",
+    "3. Üçgende Kenar Orta Dikmeler ve Çevrel Çemberin Merkezi (O): Kenarların orta noktalarından geçen dikmelerin kesim noktası üçgenin köşelerine eşit uzaklıkta olan çevrel çemberin merkezidir (O); dar açılıda içte, dik açılıda hipotenüsün ortasında, geniş açılıda dışta yer alır.",
+    "4. Üçgende Yükseklikler ve Diklik Merkezi (H): Üçgenin yüksekliklerinin kesim noktasına diklik merkezi (H) denir; dar açılı üçgende iç bölgede, dik açılı üçgende dik açılı köşede, geniş açılı üçgende ise dış bölgede bulunur.",
+    "5. İkizkenar ve Eşkenar Üçgende Yardımcı Elemanlar (YAKİ Kuralı): İkizkenar üçgende tepe açısından tabana indirilen yükseklik aynı zamanda açıortay, kenarortay ve kenar orta dikmedir; eşkenar üçgende ise tüm yardımcı elemanlar eşit olup dört merkez (I, G, O, H) tek noktada çakışır.",
+    "6. Yardımcı Elemanlar Arasındaki Sıralama ve Özel Merkezlerin Özeti: Aynı köşeden çizilen yardımcı elemanlar arasında daima h_a ≤ n_a ≤ V_a sıralaması geçerlidir ve kenar uzunluğu büyüdükçe o kenara ait yardımcı elemanların uzunluğu küçülür."
+  ],
+  "bolumler": [
+    {
+      "baslik": "1. Üçgende Açıortay ve İç Teğet Çemberin Merkezi (I)",
+      "metin": [
+        "Bir açıyı ölçüleri eşit iki açıya bölen ışına {koyu:açıortay} denir. Açıortay üzerindeki herhangi bir noktadan açının kollarına indirilen {koyu:dikme uzunlukları} ve açının köşesinden bu dikme ayaklarına kadar olan {koyu:kol uzunlukları birbirine eşittir}. Bir ABC üçgeninde A, B ve C açılarının iç açıortaylarının karşı kenarları kestiği noktalar birleştirildiğinde elde edilen doğru parçalarına üçgenin {koyu:iç açıortay uzunlukları} ({koyu:n_A, n_B, n_C}) denir. Bir üçgende üç iç açıortay daima üçgenin iç bölgesinde tek bir noktada kesişir; bu noktaya üçgenin kenarlarına içten teğet olan {koyu:iç teğet çemberin merkezi (I)} denir ve I noktası üçgenin {koyu:üç kenarına da eşit uzaklıktadır}. Ayrıca {koyu:İç Açıortay Oran Teoremi'ne} göre bir iç açıortay, indiği karşı kenarı komşu kenarların uzunluklarıyla {koyu:doğru orantılı} iki parçaya böler: {parca:AN} açıortay ise {koyu:{kesir:{uzunluk:AB}|{uzunluk:AC}} = {kesir:{uzunluk:BN}|{uzunluk:NC}}} eşitliği sağlanır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Açıortay Kavramı / Özelliği",
+          "Matematiksel Bağıntı ve Geometrik Anlamı"
+        ],
+        "satirlar": [
+          [
+            "Açıortay Üzerindeki Nokta",
+            "Açıortay üzerindeki her nokta açının kollarına eşit uzaklıktadır"
+          ],
+          [
+            "İç Teğet Çemberin Merkezi (I)",
+            "İç açıortayların kesim noktasıdır; daima üçgenin iç bölgesindedir ve kenarlara uzaklığı r'dir"
+          ],
+          [
+            "İç Açıortay Oran Teoremi",
+            "c ve b komşu kenarlar, x ve y taban parçaları ise {kesir:c|b} = {kesir:x|y} veya {kesir:c|x} = {kesir:b|y}"
+          ],
+          [
+            "Dış Açıortay Oran Özelliği",
+            "Dış açıortayın karşı kenarın uzantısını kestiği noktadan köşelere olan uzaklıklar oranı komşu kenarlar oranına eşittir"
+          ]
+        ]
+      },
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Oranlama Kısayolu (Yansıma Kuralı)",
+        "metin": "Bir ABC üçgeninde {uzunluk:AB} = 6 cm ve {uzunluk:AC} = 10 cm (sadeleşince 3 ve 5 ile orantılı) ise, A açısının iç açıortayı BC kenarını 3k ve 5k olacak biçimde iki parçaya ayırır!"
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 270\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\">\n  <defs>\n    <linearGradient id=\"bg10m3_1\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n      <stop offset=\"0%\" stop-color=\"#eff6ff\"/>\n      <stop offset=\"100%\" stop-color=\"#eef2ff\"/>\n    </linearGradient>\n  </defs>\n  <rect width=\"680\" height=\"270\" rx=\"16\" fill=\"url(#bg10m3_1)\" stroke=\"#93c5fd\" stroke-width=\"2\"/>\n  <text x=\"340\" y=\"28\" text-anchor=\"middle\" font-size=\"15.5\" font-weight=\"800\" fill=\"#1e3a8a\">1. ÜÇGENDE AÇIORTAY VE İÇ TEĞET ÇEMBERİN MERKEZİ (I)</text>\n\n  <!-- Left Diagram: Angle Bisector Property & Ratio -->\n  <rect x=\"24\" y=\"44\" width=\"310\" height=\"206\" rx=\"12\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"179\" y=\"66\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#1d4ed8\">İÇ AÇIORTAY ORAN TEOREMİ</text>\n  <polygon points=\"165,80 65,205 285,205\" fill=\"#eff6ff\" stroke=\"#1e40af\" stroke-width=\"2.5\"/>\n  <!-- Bisector AD -->\n  <line x1=\"165\" y1=\"80\" x2=\"160\" y2=\"205\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-dasharray=\"5,3\"/>\n  <text x=\"165\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">A</text>\n  <text x=\"53\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">B</text>\n  <text x=\"297\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">C</text>\n  <text x=\"160\" y=\"222\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\">N</text>\n  <text x=\"102\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#1d4ed8\">c</text>\n  <text x=\"235\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#1d4ed8\">b</text>\n  <text x=\"112\" y=\"198\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\">x</text>\n  <text x=\"220\" y=\"198\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\">y</text>\n  <text x=\"154\" y=\"106\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">α</text>\n  <text x=\"171\" y=\"106\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">α</text>\n  <text x=\"179\" y=\"240\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e3a8a\">c / b = x / y   (veya  c / x = b / y)</text>\n\n  <!-- Right Card: Incenter I & Perpendiculars -->\n  <rect x=\"352\" y=\"44\" width=\"304\" height=\"206\" rx=\"12\" fill=\"#ffffff\" stroke=\"#059669\" stroke-width=\"2\"/>\n  <rect x=\"352\" y=\"44\" width=\"304\" height=\"32\" rx=\"12\" fill=\"#059669\"/>\n  <text x=\"504\" y=\"65\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#ffffff\">İÇ TEĞET ÇEMBERİN MERKEZİ (I)</text>\n  <text x=\"504\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#065f46\">• Üç iç açıortay tek bir noktada (I) kesişir.</text>\n  <text x=\"504\" y=\"114\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• I noktası üçgenin KENARLARINA eşit</text>\n  <text x=\"504\" y=\"130\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">uzaklıktadır (uzaklık = iç teğet yarıçapı r).</text>\n  <rect x=\"368\" y=\"144\" width=\"272\" height=\"90\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#6ee7b7\"/>\n  <text x=\"504\" y=\"164\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\">Açıortay Üzerindeki Nokta Özelliği:</text>\n  <text x=\"504\" y=\"182\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Açıortay üzerindeki bir P noktasından açının</text>\n  <text x=\"504\" y=\"198\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">kollarına indirilen dikme uzunlukları ve</text>\n  <text x=\"504\" y=\"214\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" fill=\"#065f46\">ayrılan kol parçaları birbirine EŞİTTİR!</text>\n</svg>"
+    },
+    {
+      "baslik": "2. Üçgende Kenarortay, Ağırlık Merkezi (G) ve Muhteşem Üçlü",
+      "metin": [
+        "Üçgenin bir köşesini karşı kenarın orta noktasına birleştiren doğru parçasına o kenara ait {koyu:kenarortay} denir ve uzunlukları {koyu:V_a, V_b, V_c} ile gösterilir. Bir üçgende üç kenarortay daima üçgenin iç bölgesindeki tek bir noktada kesişir; bu noktaya üçgenin {koyu:ağırlık merkezi (G)} adı verilir. Ağırlık merkezi G, üzerinde bulunduğu her kenarortayı {koyu:köşeye 2 birim, kenarın orta noktasına 1 birim (2k : k)} uzaklıkta olacak biçimde böler: {parca:AD} kenarortay ise {koyu:{uzunluk:AG} = 2 · {uzunluk:GD}} olur. Ayrıca bir {koyu:dik üçgende} 90 derecelik dik açıdan hipotenüse çizilen kenarortayın uzunluğu, hipotenüs uzunluğunun yarısına eşittir ({koyu:{uzunluk:AD} = {uzunluk:BD} = {uzunluk:DC}}); bu özelliğe {koyu:Muhteşem Üçlü} denir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Kenarortay Özelliği",
+          "Formül / Oran",
+          "Kullanım Koşulu"
+        ],
+        "satirlar": [
+          [
+            "Ağırlık Merkezi (G) Oranı",
+            "{uzunluk:AG} = 2 · {uzunluk:GD} ve {uzunluk:AD} = 3 · {uzunluk:GD}",
+            "Tüm üçgenlerde geçerlidir (köşeye 2k, tabana k)"
+          ],
+          [
+            "Muhteşem Üçlü",
+            "{uzunluk:AD} = {uzunluk:BD} = {uzunluk:DC} = {kesir:{uzunluk:BC}|2}",
+            "Yalnızca dik üçgende hipotenüse ait kenarortay için geçerlidir"
+          ],
+          [
+            "Orta Taban - Ağırlık Merkezi (3-1-2)",
+            "Orta taban kenarortayı 3k : k : 2k oranında böler",
+            "Yan kenarların orta noktaları birleştirildiğinde uygulanır"
+          ]
+        ]
+      },
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Ağırlık Merkezini Tanıma Kriterleri",
+        "metin": "Bir üçgenin içinde verilen bir K noktası için; 1) İki kenarortayın kesim noktasıysa, veya 2) Bir kenarortay üzerinde olup onu köşeden 2k, kenardan k oranında bölüyorsa K noktası kesinlikle üçgenin AĞIRLIK MERKEZİDİR (G)."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 270\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\">\n  <rect width=\"680\" height=\"270\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <text x=\"340\" y=\"28\" text-anchor=\"middle\" font-size=\"15.5\" font-weight=\"800\" fill=\"#0f172a\">2. ÜÇGENDE KENARORTAY, AĞIRLIK MERKEZİ (G) VE MUHTEŞEM ÜÇLÜ</text>\n\n  <!-- Left Card: Centroid G (2k : k) -->\n  <rect x=\"24\" y=\"44\" width=\"310\" height=\"206\" rx=\"12\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"2\"/>\n  <text x=\"179\" y=\"66\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#6d28d9\">AĞIRLIK MERKEZİ (G): 2k - k KURALI</text>\n  <polygon points=\"175,78 65,200 285,200\" fill=\"#f5f3ff\" stroke=\"#5b21b6\" stroke-width=\"2.5\"/>\n  <!-- Medians -->\n  <line x1=\"175\" y1=\"78\" x2=\"175\" y2=\"200\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/>\n  <line x1=\"65\" y1=\"200\" x2=\"230\" y2=\"139\" stroke=\"#9333ea\" stroke-width=\"1.8\" stroke-dasharray=\"4,3\"/>\n  <line x1=\"285\" y1=\"200\" x2=\"120\" y2=\"139\" stroke=\"#9333ea\" stroke-width=\"1.8\" stroke-dasharray=\"4,3\"/>\n  <circle cx=\"175\" cy=\"159\" r=\"5\" fill=\"#dc2626\"/>\n  <text x=\"190\" y=\"156\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\">G</text>\n  <text x=\"175\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">A</text>\n  <text x=\"53\" y=\"205\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">B</text>\n  <text x=\"297\" y=\"205\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">C</text>\n  <text x=\"175\" y=\"216\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"800\" fill=\"#5b21b6\">D</text>\n  <text x=\"160\" y=\"125\" text-anchor=\"end\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\">2k</text>\n  <text x=\"160\" y=\"185\" text-anchor=\"end\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\">k</text>\n  <text x=\"179\" y=\"238\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#5b21b6\">|AG| = 2·|GD|  (Köşeye 2 birim, kenara 1 birim)</text>\n\n  <!-- Right Card: Muhteşem Üçlü -->\n  <rect x=\"352\" y=\"44\" width=\"304\" height=\"206\" rx=\"12\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <rect x=\"352\" y=\"44\" width=\"304\" height=\"32\" rx=\"12\" fill=\"#d97706\"/>\n  <text x=\"504\" y=\"65\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#ffffff\">DİK ÜÇGENDE MUHTEŞEM ÜÇLÜ</text>\n  <!-- Right Triangle -->\n  <polygon points=\"390,95 390,195 590,195\" fill=\"#fffbeb\" stroke=\"#b45309\" stroke-width=\"2.5\"/>\n  <rect x=\"390\" y=\"181\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"1.8\"/>\n  <line x1=\"390\" y1=\"195\" x2=\"490\" y2=\"145\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n  <text x=\"378\" y=\"98\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0f172a\">B</text>\n  <text x=\"378\" y=\"200\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0f172a\">A</text>\n  <text x=\"602\" y=\"200\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0f172a\">C</text>\n  <text x=\"500\" y=\"142\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\">D</text>\n  <text x=\"504\" y=\"220\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"800\" fill=\"#92400e\">m(A) = 90° ve |BD| = |DC|  ⇒  |AD| = |BD| = |DC|</text>\n  <text x=\"504\" y=\"238\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#475569\">Hipotenüse ait kenarortay hipotenüsün yarısıdır!</text>\n</svg>"
+    },
+    {
+      "baslik": "3. Üçgende Kenar Orta Dikmeler ve Çevrel Çemberin Merkezi (O)",
+      "metin": [
+        "Bir doğru parçasının tam orta noktasından geçen ve o doğru parçasına dik olan doğruya {koyu:orta dikme doğrusu} denir. Orta dikme doğrusu üzerindeki her nokta, doğru parçasının {koyu:iki uç noktasına (köşelere) eşit uzaklıktadır}. Bir üçgenin üç kenarının orta dikme doğruları tek bir noktada kesişir; bu noktaya üçgenin köşelerinden geçen {koyu:çevrel çemberin merkezi (O)} denir. O noktası üçgenin üç köşesine de eşit uzaklıkta olup bu uzaklık çevrel çemberin yarıçapına ({koyu:{uzunluk:OA} = {uzunluk:OB} = {uzunluk:OC} = R}) eşittir. Çevrel çemberin merkezinin konumu üçgenin açılarına göre değişir: {koyu:Dar açılı üçgende} üçgenin {koyu:iç bölgesinde}, {koyu:dik açılı üçgende hipotenüsün tam orta noktasında}, {koyu:geniş açılı üçgende} ise üçgenin {koyu:dış bölgesinde} yer alır."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Kenar Orta Dikme Köşeden Geçmek Zorunda Değildir!",
+        "metin": "Kenarortay ve yükseklik mutlaka karşı köşeden geçer; ancak kenar orta dikme sadece kenarın ortasından dik çıkar, ikizkenar veya eşkenar olmayan (çeşitkenar) üçgenlerde karşı köşeden GEÇMEZ!"
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 260\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\">\n  <rect width=\"680\" height=\"260\" rx=\"16\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"2\"/>\n  <text x=\"340\" y=\"28\" text-anchor=\"middle\" font-size=\"15.5\" font-weight=\"800\" fill=\"#1e3a8a\">3. KENAR ORTA DİKMELER VE ÇEVREL ÇEMBERİN MERKEZİ (O)</text>\n\n  <!-- 3 Cards for Acute, Right, Obtuse Triangles -->\n  <rect x=\"20\" y=\"46\" width=\"200\" height=\"194\" rx=\"12\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <rect x=\"20\" y=\"46\" width=\"200\" height=\"32\" rx=\"12\" fill=\"#2563eb\"/>\n  <text x=\"120\" y=\"67\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"800\" fill=\"#ffffff\">1. DAR AÇILI ÜÇGEN</text>\n  <text x=\"120\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1d4ed8\">Merkez (O): Üçgenin İÇİNDE</text>\n  <polygon points=\"120,108 65,185 175,185\" fill=\"#dbeafe\" stroke=\"#1e40af\" stroke-width=\"2\"/>\n  <circle cx=\"120\" cy=\"156\" r=\"5\" fill=\"#dc2626\"/>\n  <text x=\"134\" y=\"160\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">O</text>\n  <text x=\"120\" y=\"208\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Köşelere eşit uzaklıktadır:</text>\n  <text x=\"120\" y=\"226\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">|OA| = |OB| = |OC| = R</text>\n\n  <rect x=\"240\" y=\"46\" width=\"200\" height=\"194\" rx=\"12\" fill=\"#ffffff\" stroke=\"#059669\" stroke-width=\"2\"/>\n  <rect x=\"240\" y=\"46\" width=\"200\" height=\"32\" rx=\"12\" fill=\"#059669\"/>\n  <text x=\"340\" y=\"67\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"800\" fill=\"#ffffff\">2. DİK AÇILI ÜÇGEN</text>\n  <text x=\"340\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#047857\">Merkez (O): HİPOTENÜS ORTASI</text>\n  <polygon points=\"275,112 275,185 405,185\" fill=\"#dcfce7\" stroke=\"#15803d\" stroke-width=\"2\"/>\n  <circle cx=\"340\" cy=\"148\" r=\"5\" fill=\"#dc2626\"/>\n  <text x=\"352\" y=\"144\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">O</text>\n  <text x=\"340\" y=\"208\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Hipotenüs çap olur:</text>\n  <text x=\"340\" y=\"226\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"800\" fill=\"#065f46\">|BC| = 2R  (Muhteşem Üçlü)</text>\n\n  <rect x=\"460\" y=\"46\" width=\"200\" height=\"194\" rx=\"12\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <rect x=\"460\" y=\"46\" width=\"200\" height=\"32\" rx=\"12\" fill=\"#d97706\"/>\n  <text x=\"560\" y=\"67\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"800\" fill=\"#ffffff\">3. GENİŞ AÇILI ÜÇGEN</text>\n  <text x=\"560\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#b45309\">Merkez (O): Üçgenin DIŞINDA</text>\n  <polygon points=\"495,120 530,175 625,175\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"2\"/>\n  <circle cx=\"575\" cy=\"122\" r=\"5\" fill=\"#dc2626\"/>\n  <text x=\"588\" y=\"126\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">O</text>\n  <text x=\"560\" y=\"208\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Geniş açının karşısındaki</text>\n  <text x=\"560\" y=\"226\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" fill=\"#92400e\">uzun kenarın dış tarafındadır.</text>\n</svg>"
+    },
+    {
+      "baslik": "4. Üçgende Yükseklikler ve Diklik Merkezi (H)",
+      "metin": [
+        "Üçgenin bir köşesinden karşı kenara veya karşı kenarın uzantısına indirilen dik doğru parçasına o kenara ait {koyu:yükseklik} denir ve {koyu:h_a, h_b, h_c} ile gösterilir. Bir üçgende üç yüksekliğin (veya uzantılarının) kesiştiği noktaya üçgenin {koyu:diklik merkezi (H)} adı verilir. Diklik merkezinin konumu da üçgenin açı türüne göre üç farklı durum gösterir: 1) {koyu:Dar açılı üçgende} üç yükseklik de üçgenin içinde çizilir ve diklik merkezi (H) {koyu:üçgenin iç bölgesindedir}. 2) {koyu:Dik açılı üçgende} dik kenarlar birbirinin yüksekliği olduğundan diklik merkezi (H) {koyu:dik açının bulunduğu köşenin tam üzerindedir}. 3) {koyu:Geniş açılı üçgende} dar açılı köşelerden çizilen iki yükseklik üçgenin dışına düştüğü için diklik merkezi (H) {koyu:üçgenin dış bölgesinde} (geniş açılı köşenin arkasında) yer alır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Üçgenin Açı Türü",
+          "Çevrel Çemberin Merkezi (O)",
+          "Diklik Merkezi (H)"
+        ],
+        "satirlar": [
+          [
+            "Dar Açılı Üçgen",
+            "Üçgenin iç bölgesindedir",
+            "Üçgenin iç bölgesindedir"
+          ],
+          [
+            "Dik Açılı Üçgen",
+            "Hipotenüsün orta noktasındadır (Üçgen üzerinde)",
+            "Dik açılı köşenin üzerindedir (Üçgen üzerinde)"
+          ],
+          [
+            "Geniş Açılı Üçgen",
+            "Üçgenin dış bölgesindedir (Uzun kenar tarafında)",
+            "Üçgenin dış bölgesindedir (Geniş köşe tarafında)"
+          ]
+        ]
+      },
+      "kutu": {
+        "tur": "bilgi",
+        "baslik": "Üçgenin Alanı ve Yükseklik İlişkisi",
+        "metin": "Bir üçgenin alanı hangi kenar ve o kenara ait yükseklik çarpılırsa çarpılsın sabittir: Alan(ABC) = {kesir:a · h_a|2} = {kesir:b · h_b|2} = {kesir:c · h_c|2}. Dolayısıyla kenar uzunluğu büyüdükçe o kenara ait yükseklik küçülür!"
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 260\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\">\n  <rect width=\"680\" height=\"260\" rx=\"16\" fill=\"#fefce8\" stroke=\"#fde047\" stroke-width=\"2\"/>\n  <text x=\"340\" y=\"28\" text-anchor=\"middle\" font-size=\"15.5\" font-weight=\"800\" fill=\"#854d0e\">4. ÜÇGENDE YÜKSEKLİK VE DİKLİK MERKEZİNİN (H) KONUMU</text>\n\n  <!-- 3 Cards for Orthocenter H -->\n  <rect x=\"20\" y=\"46\" width=\"200\" height=\"194\" rx=\"12\" fill=\"#ffffff\" stroke=\"#059669\" stroke-width=\"2\"/>\n  <rect x=\"20\" y=\"46\" width=\"200\" height=\"32\" rx=\"12\" fill=\"#059669\"/>\n  <text x=\"120\" y=\"67\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"800\" fill=\"#ffffff\">1. DAR AÇILI ÜÇGEN</text>\n  <text x=\"120\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#047857\">Diklik Merkezi (H): İÇ BÖLGEDE</text>\n  <polygon points=\"120,108 65,185 175,185\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/>\n  <line x1=\"120\" y1=\"108\" x2=\"120\" y2=\"185\" stroke=\"#059669\" stroke-width=\"1.8\" stroke-dasharray=\"3,3\"/>\n  <circle cx=\"120\" cy=\"152\" r=\"5\" fill=\"#dc2626\"/>\n  <text x=\"133\" y=\"156\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">H</text>\n  <text x=\"120\" y=\"208\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Üç yükseklik de üçgenin</text>\n  <text x=\"120\" y=\"224\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">iç bölgesinde kesişir.</text>\n\n  <rect x=\"240\" y=\"46\" width=\"200\" height=\"194\" rx=\"12\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <rect x=\"240\" y=\"46\" width=\"200\" height=\"32\" rx=\"12\" fill=\"#2563eb\"/>\n  <text x=\"340\" y=\"67\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"800\" fill=\"#ffffff\">2. DİK AÇILI ÜÇGEN</text>\n  <text x=\"340\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1d4ed8\">Diklik Merkezi (H): DİK KÖŞEDE</text>\n  <polygon points=\"280,112 280,185 405,185\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <circle cx=\"280\" cy=\"185\" r=\"6\" fill=\"#dc2626\"/>\n  <text x=\"266\" y=\"198\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">H=A</text>\n  <text x=\"340\" y=\"208\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Dik kenarlar aynı zamanda</text>\n  <text x=\"340\" y=\"224\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e40af\">birer yüksekliktir (H = Dik köşe)!</text>\n\n  <rect x=\"460\" y=\"46\" width=\"200\" height=\"194\" rx=\"12\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <rect x=\"460\" y=\"46\" width=\"200\" height=\"32\" rx=\"12\" fill=\"#dc2626\"/>\n  <text x=\"560\" y=\"67\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"800\" fill=\"#ffffff\">3. GENİŞ AÇILI ÜÇGEN</text>\n  <text x=\"560\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#b91c1c\">Diklik Merkezi (H): DIŞ BÖLGEDE</text>\n  <polygon points=\"510,120 540,165 625,165\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <circle cx=\"510\" cy=\"188\" r=\"5\" fill=\"#dc2626\"/>\n  <text x=\"524\" y=\"192\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">H</text>\n  <text x=\"560\" y=\"208\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Yüksekliklerin uzantıları</text>\n  <text x=\"560\" y=\"224\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" fill=\"#991b1b\">geniş açılı köşenin arkasında kesişir.</text>\n</svg>"
+    },
+    {
+      "baslik": "5. İkizkenar ve Eşkenar Üçgende Yardımcı Elemanlar (YAKİ Kuralı)",
+      "metin": [
+        "Özel üçgenlerde yardımcı elemanlar arasında çok güçlü bir simetri ve çakışma örüntüsü vardır. Bir {koyu:ikizkenar üçgende} ({uzunluk:AB} = {uzunluk:AC}) tepe açısından tabana (BC kenarına) indirilen {koyu:Yükseklik (h_a), Açıortay (n_a) ve Kenarortay (V_a) birbirine eşittir ve aynı doğru parçası üzerindedir} (bu doğru aynı zamanda tabanın kenar orta dikmesidir). Bu özelliğe kısaca {koyu:YAKİ (Yükseklik - Açıortay - Kenarortay - İkizkenar)} kuralı denir; bu dört özellikten herhangi ikisi bir üçgende aynı doğru üzerinde görülürse diğer ikisi de kesinlikle vardır. Ayrıca ikizkenar üçgende eşit kenarlara (b = c) ait yükseklikler ({koyu:h_b = h_c}), açıortaylar ({koyu:n_b = n_c}) ve kenarortaylar ({koyu:V_b = V_c}) birbirine eşittir. {koyu:Eşkenar üçgende} ise üç kenar da eşit olduğundan {koyu:tüm yardımcı elemanların uzunlukları birbirine eşittir} ve dört özel merkez ({koyu:I, G, O, H}) tek bir noktada çakışır."
+      ],
+      "kutu": {
+        "tur": "tanim",
+        "baslik": "YAKİ Kuralını Soruda Fark Etmek",
+        "metin": "Bir soruda bir köşeden karşı kenara inen doğru parçası hem DİK (yükseklik) hem de KENARORTAY ise (veya hem DİK hem AÇIORTAY ise), hemen o üçgenin İKİZKENAR olduğunu belirleyip kolların ve taban açılarının eşitliğini yazın!"
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 260\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\">\n  <rect width=\"680\" height=\"260\" rx=\"16\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"2\"/>\n  <text x=\"340\" y=\"28\" text-anchor=\"middle\" font-size=\"15.5\" font-weight=\"800\" fill=\"#14532d\">5. İKİZKENAR VE EŞKENAR ÜÇGENDE YARDIMCI ELEMANLAR (YAKİ KURALI)</text>\n\n  <!-- Left Card: YAKİ (Isosceles) -->\n  <rect x=\"24\" y=\"46\" width=\"310\" height=\"194\" rx=\"12\" fill=\"#ffffff\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"179\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#15803d\">İKİZKENAR ÜÇGENDE \"YAKİ\" KURALI</text>\n  <polygon points=\"179,82 95,195 263,195\" fill=\"#dcfce7\" stroke=\"#15803d\" stroke-width=\"2.5\"/>\n  <line x1=\"179\" y1=\"82\" x2=\"179\" y2=\"195\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n  <rect x=\"179\" y=\"183\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.8\"/>\n  <text x=\"179\" y=\"75\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0f172a\">A</text>\n  <text x=\"83\" y=\"198\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0f172a\">B</text>\n  <text x=\"275\" y=\"198\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0f172a\">C</text>\n  <text x=\"179\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">H</text>\n  <text x=\"179\" y=\"228\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"800\" fill=\"#14532d\">|AB| = |AC| ⇒ h_a = n_a = V_a (Yükseklik = Açıortay = Kenarortay)</text>\n\n  <!-- Right Card: Equilateral & Ordering -->\n  <rect x=\"352\" y=\"46\" width=\"304\" height=\"194\" rx=\"12\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <rect x=\"352\" y=\"46\" width=\"304\" height=\"32\" rx=\"12\" fill=\"#2563eb\"/>\n  <text x=\"504\" y=\"67\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#ffffff\">EŞKENAR ÜÇGEN VE UZUNLUK SIRALAMASI</text>\n  <text x=\"504\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1e40af\">1. Eşkenar Üçgende (|AB| = |BC| = |AC|):</text>\n  <text x=\"504\" y=\"114\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Tüm yardımcı elemanlar birbirine eşittir ve</text>\n  <text x=\"504\" y=\"130\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1d4ed8\">I, G, O, H merkezleri TEK NOKTADA çakışır!</text>\n  <rect x=\"368\" y=\"144\" width=\"272\" height=\"82\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\"/>\n  <text x=\"504\" y=\"164\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">2. Çeşitkenar Üçgende (a &gt; b &gt; c ise):</text>\n  <text x=\"504\" y=\"184\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\">h_a &lt; n_a &lt; V_a   (Aynı köşeden çizilenler)</text>\n  <text x=\"504\" y=\"204\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1e40af\">Uzun kenara ait yardımcı eleman daha KISADIR:</text>\n  <text x=\"504\" y=\"220\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"800\" fill=\"#0f172a\">h_a &lt; h_b &lt; h_c  |  n_a &lt; n_b &lt; n_c  |  V_a &lt; V_b &lt; V_c</text>\n</svg>"
+    },
+    {
+      "baslik": "6. Yardımcı Elemanların Uzunluk Sıralaması ve Özel Merkezlerin Özeti",
+      "metin": [
+        "Bir köşeden karşı kenara çizilen en kısa doğru parçası dikme (yükseklik) olduğundan, herhangi bir üçgende aynı köşeden çizilen yardımcı elemanların uzunlukları arasında daima {koyu:h_a ≤ n_a ≤ V_a} (yükseklik ≤ açıortay ≤ kenarortay) bağıntısı vardır. Çeşitkenar bir üçgende eşitlik olmaz ({koyu:h_a < n_a < V_a}); eşitlik yalnızca ikizkenar üçgenin tepe açısında veya eşkenar üçgende ({koyu:h_a = n_a = V_a}) sağlanır. Farklı kenarlara ait aynı tür yardımcı elemanlar karşılaştırıldığında ise {koyu:kenar uzunluğu ile yardımcı eleman uzunluğu ters orantılıdır}: {koyu:a > b > c} ise {koyu:h_a < h_b < h_c}, {koyu:n_a < n_b < n_c} ve {koyu:V_a < V_b < V_c} olur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Özel Merkez",
+          "Kesişen Yardımcı Elemanlar",
+          "Temel Geometrik Özelliği",
+          "Konumu"
+        ],
+        "satirlar": [
+          [
+            "İç Teğet Çember M. (I)",
+            "İç Açıortaylar",
+            "Üçgenin kenarlarına eşit uzaklıktadır (r)",
+            "Daima üçgenin iç bölgesinde"
+          ],
+          [
+            "Ağırlık Merkezi (G)",
+            "Kenarortaylar",
+            "Kenarortayı köşeye 2k, kenara k oranında böler",
+            "Daima üçgenin iç bölgesinde"
+          ],
+          [
+            "Çevrel Çember M. (O)",
+            "Kenar Orta Dikmeler",
+            "Üçgenin köşelerine eşit uzaklıktadır (R)",
+            "Dar: İçte, Dik: Hipotenüste, Geniş: Dışta"
+          ],
+          [
+            "Diklik Merkezi (H)",
+            "Yükseklikler",
+            "Köşelerden karşı kenarlara inen dikmelerin kesimidir",
+            "Dar: İçte, Dik: Dik köşede, Geniş: Dışta"
+          ]
+        ]
+      },
+      "kutu": {
+        "tur": "hatirla",
+        "baslik": "Euler Doğrusu Bilgisi",
+        "metin": "Eşkenar olmayan her üçgende diklik merkezi (H), ağırlık merkezi (G) ve çevrel çemberin merkezi (O) aynı doğru (Euler doğrusu) üzerinde yer alır; ikizkenar üçgende ise I noktası da bu simetri ekseni üzerindedir."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\">\n  <rect width=\"680\" height=\"250\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <text x=\"340\" y=\"30\" text-anchor=\"middle\" font-size=\"15.5\" font-weight=\"800\" fill=\"#0f172a\">ÜÇGENDE DÖRT ÖZEL MERKEZİN KARŞILAŞTIRMA TABLOSU (I, G, O, H)</text>\n\n  <!-- 4 Summary Cards -->\n  <rect x=\"20\" y=\"48\" width=\"150\" height=\"182\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.8\"/>\n  <text x=\"95\" y=\"70\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1d4ed8\">1. İÇ AÇIORTAYLAR</text>\n  <text x=\"95\" y=\"92\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1e40af\">İç Teğet Çember M. (I)</text>\n  <text x=\"95\" y=\"114\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">• Kenarlara eşit</text>\n  <text x=\"95\" y=\"130\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">uzaklıktadır (r).</text>\n  <text x=\"95\" y=\"154\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#059669\">• Her üçgende DAİMA</text>\n  <text x=\"95\" y=\"170\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#059669\">üçgenin İÇ bölgesindedir!</text>\n\n  <rect x=\"184\" y=\"48\" width=\"150\" height=\"182\" rx=\"10\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"1.8\"/>\n  <text x=\"259\" y=\"70\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"800\" fill=\"#6d28d9\">2. KENARORTAYLAR</text>\n  <text x=\"259\" y=\"92\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#5b21b6\">Ağırlık Merkezi (G)</text>\n  <text x=\"259\" y=\"114\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">• Kenarortayı 2k : k</text>\n  <text x=\"259\" y=\"130\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">oranında böler.</text>\n  <text x=\"259\" y=\"154\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#059669\">• Her üçgende DAİMA</text>\n  <text x=\"259\" y=\"170\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#059669\">üçgenin İÇ bölgesindedir!</text>\n\n  <rect x=\"348\" y=\"48\" width=\"150\" height=\"182\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"1.8\"/>\n  <text x=\"423\" y=\"70\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\">3. KENAR ORTA DİKME</text>\n  <text x=\"423\" y=\"92\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#065f46\">Çevrel Çember M. (O)</text>\n  <text x=\"423\" y=\"114\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">• Köşelere eşit</text>\n  <text x=\"423\" y=\"130\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">uzaklıktadır (R).</text>\n  <text x=\"423\" y=\"154\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#dc2626\">• Dar: İçte | Dik: Hipotenüs</text>\n  <text x=\"423\" y=\"170\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#dc2626\">ortası | Geniş: Dışta</text>\n\n  <rect x=\"512\" y=\"48\" width=\"148\" height=\"182\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.8\"/>\n  <text x=\"586\" y=\"70\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">4. YÜKSEKLİKLER</text>\n  <text x=\"586\" y=\"92\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#92400e\">Diklik Merkezi (H)</text>\n  <text x=\"586\" y=\"114\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">• Köşeden karşı kenara</text>\n  <text x=\"586\" y=\"130\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">indirilen dikmelerdir.</text>\n  <text x=\"586\" y=\"154\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#dc2626\">• Dar: İçte | Dik: Dik köşe</text>\n  <text x=\"586\" y=\"170\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#dc2626\">| Geniş: Dışta</text>\n</svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir ABC üçgeninde {parca:AD} iç açıortay, {uzunluk:AB} = 8 cm, {uzunluk:AC} = 12 cm ve {uzunluk:BC} = 15 cm olduğuna göre {uzunluk:BD} uzunluğu kaç santimetredir?",
+      "cevap": "İç Açıortay Oran Teoremi'ne göre {kesir:{uzunluk:AB}|{uzunluk:AC}} = {kesir:{uzunluk:BD}|{uzunluk:DC}} = {kesir:8|12} = {kesir:2|3} olur. Buna göre {uzunluk:BD} = 2k ve {uzunluk:DC} = 3k dersek; {uzunluk:BC} = 2k + 3k = 5k = 15 cm buradan k = 3 cm ve {uzunluk:BD} = 2 · 3 = 6 cm bulunur."
+    },
+    {
+      "soru": "Bir ABC dik üçgeninde {olcu:BAC} = 90° ve G noktası üçgenin ağırlık merkezidir. {uzunluk:AG} = 10 cm olduğuna göre hipotenüs uzunluğu olan {uzunluk:BC} kaç santimetredir?",
+      "cevap": "Ağırlık merkezi G kenarortayı köşeye 2k, kenara k oranında böldüğünden, A köşesinden geçen kenarortay {parca:AD} için {uzunluk:AG} = 10 cm ise {uzunluk:GD} = 5 cm ve kenarortayın tamamı {uzunluk:AD} = 10 + 5 = 15 cm olur. Dik üçgende hipotenüse ait kenarortay hipotenüsün yarısı (Muhteşem Üçlü) olduğundan {uzunluk:BC} = 2 · {uzunluk:AD} = 2 · 15 = 30 cm bulunur."
+    },
+    {
+      "soru": "Bir ABC üçgeninde {uzunluk:AB} = {uzunluk:AC} = 13 cm ve {uzunluk:BC} = 10 cm'dir. A köşesinden BC tabanına indirilen yüksekliğin (ve aynı zamanda kenarortayın) uzunluğu kaç santimetredir?",
+      "cevap": "İkizkenar üçgende YAKİ kuralı gereğince A tepe açısından BC tabanına indirilen yükseklik {parca:AH} aynı zamanda kenarortaydır; yani tabanı {uzunluk:BH} = {uzunluk:HC} = 5 cm olarak iki eşit parçaya böler. ABH dik üçgeninde Pisagor teoreminden (5-12-13 özel dik üçgeni) yükseklik {uzunluk:AH} = 12 cm bulunur."
+    },
+    {
+      "soru": "Bir ABC üçgeninin kenar uzunlukları a = 12 cm, b = 8 cm ve c = 10 cm olarak veriliyor. Bu üçgenin yüksekliklerini (h_a, h_b, h_c) ve A köşesinden çizilen yardımcı elemanlarını (h_a, n_a, V_a) küçükten büyüğe doğru sıralayınız.",
+      "cevap": "Kenar uzunlukları a > c > b (12 > 10 > 8) olduğundan, yükseklikler kenar uzunluklarıyla ters orantılıdır: h_a < h_c < h_b. Üçgen çeşitkenar olduğu için A köşesinden çizilen yardımcı elemanlar arasında ise h_a < n_a < V_a sıralaması geçerlidir."
+    },
+    {
+      "soru": "Bir üçgenin diklik merkezi (H) üçgenin köşelerinden birinin üzerinde, çevrel çemberinin merkezi (O) ise üçgenin kenarlarından birinin orta noktasında bulunmaktadır. Bu üçgenin açılarına göre türü nedir ve O ile H noktaları arasındaki uzaklık 9 cm ise en uzun kenarı kaç santimetredir?",
+      "cevap": "Diklik merkezi (H) dik açılı köşede ve çevrel çemberin merkezi (O) hipotenüsün orta noktasında bulunduğu için bu üçgen DİK AÇILI ÜÇGENDİR. H (dik köşe) ile O (hipotenüsün orta noktası) arasındaki doğru parçası hipotenüse ait kenarortay olup 9 cm'dir. Muhteşem Üçlü gereğince en uzun kenar olan hipotenüs 2 · 9 = 18 cm olur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir ABC üçgeninde G noktası kenarortayların kesim noktası (ağırlık merkezi) ve D noktası BC kenarının orta noktasıdır. {uzunluk:AD} = 24 cm olduğuna göre {uzunluk:AG} uzunluğu kaç santimetredir?",
+      "secenekler": [
+        "16",
+        "12",
+        "8",
+        "18"
+      ],
+      "dogru": 0,
+      "aciklama": "Ağırlık merkezi G kenarortayı köşeye 2k, kenara k oranında böler: {uzunluk:AG} = 2k ve {uzunluk:GD} = k. Toplam {uzunluk:AD} = 3k = 24 cm olduğundan k = 8 cm ve {uzunluk:AG} = 2k = 16 cm bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Üçgenin yardımcı elemanlarının kesişim noktalarıyla (özel merkezlerle) ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+      "secenekler": [
+        "Geniş açılı bir üçgende ağırlık merkezi (G) ve iç teğet çemberin merkezi (I) üçgenin dış bölgesindedir.",
+        "Dar açılı bir üçgende diklik merkezi (H) ve çevrel çemberin merkezi (O) üçgenin iç bölgesindedir.",
+        "Dik açılı bir üçgende diklik merkezi (H) dik açının bulunduğu köşededir.",
+        "Eşkenar üçgende açıortay, kenarortay ve yüksekliklerin kesim noktaları aynı noktada çakışır."
+      ],
+      "dogru": 0,
+      "aciklama": "Üçgenin açı türü ne olursa olsun (dar, dik veya geniş açılı), iç teğet çemberin merkezi (I) ve ağırlık merkezi (G) DAİMA üçgenin iç bölgesinde yer alır."
+    },
+    {
+      "tur": "dy",
+      "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Bir üçgende kenar orta dikmelerin kesim noktası olan çevrel çemberin merkezi (O), üçgenin üç köşesine de eşit uzaklıktadır.",
+          "dogru": true,
+          "aciklama": "Kenar orta dikmelerin kesim noktası çevrel çemberin merkezidir ve köşelere olan uzaklığı çevrel çemberin yarıçapına (R) eşittir."
+        }
+      ]
+    },
+    {
+      "tur": "dy",
+      "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Çeşitkenar bir ABC üçgeninde A köşesinden çizilen yükseklik (h_a), açıortay (n_a) ve kenarortay (V_a) arasında V_a < n_a < h_a sıralaması vardır.",
+          "dogru": false,
+          "aciklama": "Bir noktadan bir doğruya en kısa uzaklık dikme (yükseklik) olduğundan doğru sıralama h_a < n_a < V_a şeklindedir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Üçgenin yardımcı elemanlarını ve özel merkezlerini doğru özellikleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "İç açıortayların kesim noktası (I)",
+          "Üçgenin kenarlarına eşit uzaklıkta olan iç teğet çemberin merkezi"
+        ],
+        [
+          "Kenarortayların kesim noktası (G)",
+          "Kenarortayı köşeye 2 birim, kenara 1 birim bölen ağırlık merkezi"
+        ],
+        [
+          "Kenar orta dikmelerin kesim noktası (O)",
+          "Üçgenin köşelerine eşit uzaklıkta olan çevrel çemberin merkezi"
+        ],
+        [
+          "Yüksekliklerin kesim noktası (H)",
+          "Dik üçgende dik açılı köşenin üzerinde bulunan diklik merkezi"
+        ],
+        [
+          "İkizkenar üçgende tepe açısından tabana inen dikme",
+          "Aynı zamanda açıortay ve kenarortay olan doğru parçası (YAKİ)"
+        ]
+      ],
+      "aciklama": "I, G, O, H özel merkezleri ve YAKİ kuralı üçgende yardımcı elemanların temel çıkarımlarıdır."
+    },
+    {
+      "tur": "bosluk",
+      "yonerge": "Cümlelerdeki boşlukları uygun kelimelerle tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Dik üçgende 90 derecelik köşeden hipotenüse çizilen kenarortayın uzunluğunun hipotenüsün yarısına eşit olması özelliğine ___ denir.",
+          "cevap": "Muhteşem Üçlü"
+        }
+      ],
+      "fazla": [
+        "Pisagor",
+        "Öklid"
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "yonerge": "Cümlelerdeki boşlukları uygun kelimelerle tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Geniş açılı bir üçgende yüksekliklerin uzantılarının kesiştiği diklik merkezi (H), üçgenin ___ bölgesinde yer alır.",
+          "cevap": "dış"
+        }
+      ],
+      "fazla": [
+        "iç",
+        "kenar"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir ABC üçgeninde {uzunluk:AB} = 10 cm, {uzunluk:AC} = 10 cm ve {uzunluk:BC} = 12 cm'dir. Üçgenin ağırlık merkezi G noktası olduğuna göre:\na) A köşesinden BC kenarına indirilen kenarortayın (ve yüksekliğin) uzunluğunu bulunuz.\nb) {uzunluk:AG} ve {uzunluk:BG} uzunluklarını hesaplayınız.",
+      "ipuclari": [
+        "1. Adım: {uzunluk:AB} = {uzunluk:AC} = 10 cm olduğundan üçgenin ikizkenar olduğunu görünüz ve YAKİ kuralıyla A'dan BC'ye inen kenarortay {parca:AD}'nin aynı zamanda dik (yükseklik) olduğunu kullanınız.",
+        "2. Adım: ABD dik üçgeninde ({uzunluk:BD} = 6 cm, {uzunluk:AB} = 10 cm) Pisagor teoremiyle {uzunluk:AD} uzunluğunu bulunuz ve G noktasının 2k : k oranıyla {uzunluk:AG} ile {uzunluk:GD}'yi ayırınız.",
+        "3. Adım: BGD dik üçgeninde Pisagor teoremini uygulayarak {uzunluk:BG} uzunluğunu hesaplayınız."
+      ],
+      "cevap": "a) ABC ikizkenar üçgeninde ({uzunluk:AB} = {uzunluk:AC} = 10 cm) A köşesinden BC tabanına çizilen kenarortay {parca:AD} aynı zamanda yüksekliktir ve tabanı {uzunluk:BD} = {uzunluk:DC} = 6 cm olarak ikiye böler. ABD dik üçgeninde (6-8-10 özel üçgeni) {uzunluk:AD} = 8 cm bulunur.\nb) Ağırlık merkezi G noktası {parca:AD} üzerinde olup onu 2k : k oranında böldüğünden {uzunluk:AG} = {kesir:2|3} · 8 = {kesir:16|3} cm ve {uzunluk:GD} = {kesir:8|3} cm olur. BGD dik üçgeninde Pisagor bağıntısından: {us:{uzunluk:BG}|2} = {us:6|2} + {us:({kesir:8|3})|2} = 36 + {kesir:64|9} = {kesir:388|9} ⇒ {uzunluk:BG} = {kesir:2{kok:97}|3} cm bulunur."
+    }
+  ]
+}
