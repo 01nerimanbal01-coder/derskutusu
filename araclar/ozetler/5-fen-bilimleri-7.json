@@ -1,369 +1,227 @@
 {
+ "ad": "5-fen-bilimleri-7",
  "sinif": 5,
  "ders": "fen-bilimleri",
+ "ders_adi": "Fen Bilimleri",
  "hafta": 7,
  "tarih": "26-30 Ekim 2026",
- "yayin_tarihi": "2026-10-13",
- "unite": "Kuvveti Tanıyalım",
- "konu": "Kuvvet ve Kuvvetin Ölçülmesi",
+ "yayin_tarihi": "2026-10-28",
+ "unite": "2. ÜNİTE: KUVVETİ TANIYALIM",
+ "konu": "Kuvvet ve Kuvvetin Ölçülmesi: Kuvvetin Etkileri, Dinamometre ve Newton (N) Birimi",
  "ciktilar": [
-  "FB.5.2.1. Kuvveti büyüklüğü ile operasyonel tanımlayabilme"
+  "Kuvvetin cisimler üzerindeki hareket ettirme, durdurma, hızlandırma, yavaşlatma, yön ve şekil değiştirme etkilerini örneklerle açıklar.",
+  "Kuvvetin büyüklüğünü dinamometre (kuvvetölçer) ile ölçer ve birimini Newton (N) olarak kullanır.",
+  "Dinamometre içindeki yayın kalınlığı ve cinsi ile ölçebileceği maksimum kuvvet ve ölçüm hassasiyeti arasındaki ilişkiyi çözümler."
  ],
- "giris": "Geçen haftalarda gökyüzüne baktın: Güneş’i, Ay’ı ve Dünya’mızı tanıdın; bunların birbirine göre hareketlerini ve büyüklüklerini gösteren modeller kurdun. Bu hafta yeni bir üniteye başlıyorsun ve bakışını gökyüzünden kendi çevrene çeviriyorsun. Kapıyı iterken, çantanı kaldırırken, topa vururken ya da bayramda bayrağı göndere çekerken hep aynı şeyi yaparsın: bir kuvvet uygularsın. Hatta Ay’ı Dünya’nın çevresinde dolanmaya devam ettiren de bir çekme kuvvetidir. Bu hafta kuvvetin ne olduğunu, cisimlere neler yaptığını, kuvvetin büyüklüğünün dinamometreyle nasıl ölçüldüğünü ve newton biriminin ne anlama geldiğini öğreneceksin. 29 Ekim Cumhuriyet Bayramı da bu haftaya denk geliyor; ders günlerin az olduğu için konuyu bu özetle baştan sona kendin de çalışabilirsin.",
+ "giris": "Sabah okul çantamızı kaldırırken, kapıyı açarken, bisiklet sürerken veya oyun hamuruna şekil verirken farkında olmadan hep aynı fiziksel büyüklüğü kullanırız: {koyu:Kuvvet}! İkinci ünitemiz olan {koyu:Kuvveti Tanıyalım} ünitesine başladığımız bu haftada; kuvvetin cisimler üzerindeki etkilerini, esnek maddelerin sırrını ve kuvvetin büyüklüğünü ölçen {koyu:dinamometrenin} nasıl çalıştığını öğreneceğiz.",
+ "ozet": [
+  "{koyu:Kuvvetin Tanımı ve Birimi:} Duran bir cismi hareket ettiren, hareketli bir cismi durduran, cisimlerin hızını, yönünü veya şeklini değiştiren etkiye {koyu:kuvvet} denir. Kuvvet {koyu:F} harfi ile gösterilir ve birimi ünlü bilim insanı Isaac Newton’ın soyadından gelen {koyu:Newton (N)}’dır.",
+  "{koyu:Esnek ve Esnek Olmayan Maddeler:} Kuvvet uygulandığında şekli değişen ve kuvvet ortadan kalktığında {koyu:eski hâline geri dönen} maddelere {koyu:esnek madde} (yay, lastik, sünger, balon) denir.",
+  "{koyu:Dinamometre (Kuvvetölçer):} Kuvvetin büyüklüğünü ölçen araçtır ve sarmal {koyu:yayların esneklik özelliğinden} yararlanılarak yapılmıştır.",
+  "{koyu:Doğru Orantı Kuralı:} Dinamometredeki yayın uzama miktarı (veya dışarı çıkan bölme sayısı), uygulanan kuvvetin büyüklüğü ile {koyu:doğru orantılıdır}.",
+  "{koyu:Yay Kalınlığı ve Hassasiyet:} {koyu:İnce yaylı} dinamometreler küçük kuvvetleri daha {koyu:hassas (duyarlı)} ölçer; {koyu:kalın ve sert yaylı} dinamometreler ise daha {koyu:büyük kuvvetleri} ölçmek için kullanılır."
+ ],
  "bolumler": [
   {
-   "baslik": "Kuvvet nedir? İtme ve çekme",
+   "baslik": "1. Kuvvetin Cisimler Üzerindeki Etkileri ve Esnek Maddeler",
    "metin": [
-    "Sabah okula gelirken kapıyı itip açtın, sırana oturunca çantanın fermuarını çektin, kalemini eline aldın. Bütün bunları yaparken cisimleri ya ittin ya da çektin. Bir cisme uygulanan itme ya da çekmeye kuvvet denir. Kuvveti gözünle göremezsin; ama kapının açılması, fermuarın kayması, topun yuvarlanması gibi sonuçlarından kuvvetin uygulandığını anlarsın.",
-    "İtme, bir cismi kendinden uzaklaştırmaya çalışmandır: Alışveriş arabasını itersin, kaydırakta arkadaşını hafifçe itersin, duvara yaslanırken duvarı itersin. Çekme ise cismi kendine doğru getirmeye çalışmandır: Çekmeceyi çekersin, ipi çekersin, bayramda bayrağı göndere çekerken ipi aşağı doğru çekersin. Halat çekme oyununda iki takım da halatı kendine doğru çeker; hangi takım daha büyük kuvvet uygularsa halat o yöne gider.",
-    "Kuvvet yalnızca insanların uyguladığı bir şey değildir. Rüzgâr yelkenliyi iter, akarsu üzerindeki yaprağı sürükler, at arabayı çeker, mıknatıs toplu iğneyi kendine çeker. Elinden bıraktığın kalemi yere doğru çeken de Dünya’dır. Demek ki çoğu kuvvet için cisme dokunmak gerekir; ama mıknatısın ve Dünya’nın çekmesi gibi dokunmadan etki eden kuvvetler de vardır."
+    "Günlük yaşamda itme ve çekme olarak uyguladığımız {koyu:kuvvet (F)}, cisimler üzerinde şu temel etkileri meydana getirir:\n• {koyu:Hareket Ettirme ve Durdurma:} Duran topa vurduğumuzda top hareket eder; kaleci gelen topu tuttuğunda top durur.\n• {koyu:Hızlandırma ve Yavaşlatma:} Hareket yönünde kuvvet uygulanırsa cisim hızlanır, harekete zıt yönde kuvvet uygulanırsa (fren gibi) yavaşlar.\n• {koyu:Yön Değiştirme ve Döndürme:} Raketle gelen topa vurmak yön değiştirme; musluğu veya kapı kolunu çevirmek ise döndürme etkisidir.\n• {koyu:Şekil Değiştirme:} Kuvvetin şekil değiştirme etkisi maddeleri iki gruba ayırır:\n1. {koyu:Esnek Maddeler:} Kuvvet uygulandığında şekli değişen (uzayan, sıkışan, bükülen), ancak {koyu:kuvvet kaldırıldığında tekrar eski şekline dönen} maddelerdir. {koyu:Sarmal yay, paket lastiği, bulaşık süngeri, şişirilmiş balon ve silgi} esnek maddelerdir.\n2. {koyu:Esnek Olmayan (Berk) Maddeler:} Kuvvet kaldırıldığında eski şekline dönemeyen, şekil değişikliği {koyu:kalıcı} olan maddelerdir. {koyu:Oyun hamuru, kağıt, cam, tahta, taş ve alüminyum folyo} esnek olmayan maddelerdir."
    ],
-   "kutu": {
-    "tur": "tanim",
-    "baslik": "Kuvvet",
-    "metin": "Kuvvet, bir cisme uygulanan itme ya da çekmedir. Kuvvetin kendisi görünmez; uygulandığını, cisim üzerindeki etkilerinden anlarsın."
-   }
-  },
-  {
-   "baslik": "Kuvvet cisimlere ne yapar?",
-   "metin": [
-    "Kuvvet uyguladığında cisimde bir değişiklik olur. Yerde duran topa vurursan top hareket etmeye başlar: Kuvvet, duran cismi hareket ettirir. Sana doğru gelen topu elinle tutarsan top durur: Kuvvet, hareket eden cismi durdurur. Bisikletin pedalını daha güçlü çevirirsen hızlanırsın, frene basarsan yavaşlarsın: Kuvvet, cismin hızını artırabilir ya da azaltabilir.",
-    "Kuvvet, hareket eden bir cismin yönünü de değiştirir. Kaleye doğru gelen top, kafa vuruşuyla başka yöne gider; tenis topu rakete çarpınca geri döner. Kuvvetin bir etkisi de cismin şeklini değiştirmesidir. Hamuru yoğurduğunda, süngeri sıktığında, kâğıdı buruşturduğunda, boş bir teneke kutuyu ezdiğinde cismin şekli uyguladığın kuvvetle değişir.",
-    "Şekil değişikliği bazen kalıcı, bazen geçicidir. Hamur ve alüminyum folyo verdiğin şekli korur. Sünger, lastik ve yay ise kuvveti kaldırınca eski şekline döner. Bu ikinci tür cisimlere esnek cisimler denir; kuvveti ölçerken bu özellikten yararlanacaksın.",
-    "Bazen kuvvet uygularsın ama gözle görülür bir değişiklik olmaz. Sınıfın duvarını bütün gücünle itsen de duvar yerinden oynamaz. Yine de kuvvet uygulamışsındır; duvar çok sağlam olduğu için etkisini göremezsin. Kuvvetin varlığını her zaman hareketten anlayamazsın; ellerinin yorulması bile bir kuvvet uyguladığını gösterir."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Kuvvetin etkisi",
-     "Günlük yaşamdan örnekler"
-    ],
-    "satirlar": [
-     [
-      "Duran cismi hareket ettirme",
-      "Yerdeki topa vurmak, alışveriş arabasını itmek, çekmeceyi açmak"
-     ],
-     [
-      "Hareket eden cismi durdurma",
-      "Kalecinin topu tutması, salıncaktaki kardeşini tutup durdurman"
-     ],
-     [
-      "Hızlandırma ve yavaşlatma",
-      "Pedalı daha güçlü çevirmek, bisiklette frene basmak"
-     ],
-     [
-      "Hareket yönünü değiştirme",
-      "Gelen topa kafa vurmak, raketle topu geri göndermek"
-     ],
-     [
-      "Şekil değiştirme",
-      "Hamur yoğurmak, sünger sıkmak, kâğıt buruşturmak, teneke kutu ezmek"
-     ]
-    ]
-   },
    "kutu": {
     "tur": "dikkat",
-    "baslik": "Hareket etmeyen cisim",
-    "metin": "Bir cisim, kuvvet uygulandığı hâlde hareket etmeyebilir. Duvarı ittiğinde duvar yerinden oynamaz ama sen yine de kuvvet uygulamışsındır. Kuvvetin olup olmadığına yalnızca harekete bakarak karar verme."
-   }
+    "baslik": "Esneklik Sınırı Nedir?",
+    "metin": "Esnek maddelere (örneğin bir yaya veya paket lastiğine) {koyu:dayanabileceğinden çok daha büyük bir kuvvet} uygulanırsa, madde esneklik özelliğini kaybeder (yay bozulur veya lastik kopar) ve bir daha eski hâline dönemez. Buna {koyu:esneklik sınırının aşılması} denir!"
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 424\" role=\"img\" aria-label=\"Konu özet şeması\"><text x=\"400\" y=\"32\" font-family=\"sans-serif\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">KUVVET VE KUVVETİN ÖLÇÜLMESİ: DİNAMOMETRE VE NEWTON (N)</text><rect x=\"20\" y=\"56\" width=\"365\" height=\"290\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"80\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. KUVVET NEDİR? ETKİLERİ NELERDİR?</text><text x=\"202\" y=\"100\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">(Kuvvet Sembolü: F  |  Birimi: Newton - N)</text><rect x=\"35\" y=\"114\" width=\"335\" height=\"40\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"129\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. Hareket Ettirme ve Durdurma Etkisi</text><text x=\"202\" y=\"145\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Duran topa vurunca hareket eder; kaleci topu tutunca durur.</text><rect x=\"35\" y=\"162\" width=\"335\" height=\"40\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"177\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">2. Hızlandırma ve Yavaşlatma Etkisi</text><text x=\"202\" y=\"193\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Pedala basınca bisiklet hızlanır; frene basınca yavaşlar.</text><rect x=\"35\" y=\"210\" width=\"335\" height=\"40\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"225\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">3. Yön Değiştirme Etkisi</text><text x=\"202\" y=\"241\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Tenis raketiyle gelen topa vurulunca topun yönü değişir.</text><rect x=\"35\" y=\"258\" width=\"335\" height=\"40\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"273\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">4. Döndürme Etkisi</text><text x=\"202\" y=\"289\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Musluğu açmak, direksiyonu çevirmek, kapı kolunu indirmek.</text><rect x=\"35\" y=\"306\" width=\"335\" height=\"40\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"321\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">5. Şekil Değiştirme Etkisi (Esnek / Kalıcı)</text><text x=\"202\" y=\"337\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Yay ve süngerde geçici (esnek); oyun hamuru ve kağıtta kalıcı.</text><rect x=\"400\" y=\"56\" width=\"380\" height=\"290\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"80\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">2. KUVVETİN ÖLÇÜLMESİ: DİNAMOMETRE</text><text x=\"590\" y=\"100\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">(Yayların Esneklik Özelliğinden Yararlanılarak Yapılır)</text><rect x=\"415\" y=\"114\" width=\"350\" height=\"40\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"129\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">Uzama Miktarı İle Kuvvet Doğru Orantılıdır!</text><text x=\"590\" y=\"145\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">10 N kuvvet yayı 2 cm uzatırsa → 30 N kuvvet 6 cm uzatır.</text><rect x=\"415\" y=\"162\" width=\"350\" height=\"40\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"177\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">İnce Yay = Hassas Ölçüm (Küçük Kuvvetler)</text><text x=\"590\" y=\"193\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">İnce bakır yay kolay uzar; küçük kuvvetleri hassas ölçer.</text><rect x=\"415\" y=\"210\" width=\"350\" height=\"40\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"225\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">Kalın Yay = Büyük Kuvvet Ölçümü</text><text x=\"590\" y=\"241\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Kalın çelik yay zor uzar; daha büyük kuvvetleri ölçebilir.</text><rect x=\"415\" y=\"258\" width=\"350\" height=\"40\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"273\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">Esneklik Sınırı (Kapasite) Aşılmamalıdır!</text><text x=\"590\" y=\"289\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">50 N’luk dinamometreye 80 N asılırsa yay bozulur!</text><rect x=\"415\" y=\"306\" width=\"350\" height=\"40\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"321\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">Bölme Hesabı: Kapasite ÷ Bölme Sayısı</text><text x=\"590\" y=\"337\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">10 bölmeli 50 N’luk dinamometrede 1 bölme = 5 N gösterir.</text><rect x=\"20\" y=\"360\" width=\"760\" height=\"48\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"400\" y=\"380\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">ESNEK CİSİM: Kuvvet kalkınca eski hâline döner (Yay, paket lastiği, bulaşık süngeri, balon).</text><text x=\"400\" y=\"398\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">ESNEK OLMAYAN CİSİM: Kuvvet kalkınca eski hâline dönemez (Oyun hamuru, cam, kağıt, bakır tel).</text></svg>"
   },
   {
-   "baslik": "Kuvvetin nitelikleri",
+   "baslik": "2. Kuvvetin Ölçülmesi: Dinamometre Nasıl Çalışır?",
    "metin": [
-    "Bir kuvveti arkadaşına anlatmak istesen neler söylerdin? Önce kuvvetin ne kadar büyük olduğunu söylersin: Topa hafifçe mi vurdun, bütün gücünle mi? Buna kuvvetin büyüklüğü denir. Boş bir kutuyu itmek için küçük bir kuvvet yeter; dolu bir dolabı itmek için çok daha büyük bir kuvvet gerekir.",
-    "Sonra kuvvetin hangi yöne uygulandığını söylersin. İpi sağa çekersen kutu sağa, sola çekersen sola gider; topu yukarı atarsan top yukarı çıkar. Buna kuvvetin yönü denir. Halat çekme oyununda iki takım aynı büyüklükte kuvvet uygularsa halat kıpırdamaz; çünkü kuvvetlerin yönleri birbirine terstir.",
-    "Son olarak kuvveti cismin neresine uyguladığın önemlidir; buna uygulama noktası denir. Kapıyı kolunun yanından itmek kolaydır ama menteşeye yakın bir yerden itmek çok zordur. Topun ortasına vurursan top düz gider, kenarına vurursan döne döne gider.",
-    "Özetle kuvvet itme ya da çekme olarak uygulanır; cisimlerin hareketini ya da şeklini değiştirir; büyüklüğü, yönü ve uygulama noktası vardır. Bunların içinde bu hafta en çok büyüklükle ilgileneceksin; çünkü “az kuvvet”, “çok kuvvet” demek bilimde yeterli değildir. Bir kuvvetin büyüklüğünü herkesin aynı biçimde anlayabilmesi için onu ölçmek ve bir sayıyla söylemek gerekir."
+    "Kuvvetin büyüklüğü {koyu:dinamometre (kuvvetölçer)} adı verilen araçla ölçülür ve birimi {koyu:Newton (N)} olarak ifade edilir. Bir dinamometrenin iç yapısında esnek bir {koyu:sarmal yay}, üzerinde sayıların yazılı olduğu {koyu:ölçekli iç çubuk}, yayı koruyan {koyu:dış silindir} ve cismin asıldığı {koyu:kanca} bulunur.\nDinamometre sorularını çözerken şu 3 altın kuralı kullanırız:\n1. {koyu:Bölme ve Uzama Orantısı:} Dinamometreye asılan yük (kuvvet) kaç katına çıkarsa, yayın uzama miktarı ve dışarı çıkan bölme sayısı da {koyu:aynı oranda artar}.\n• {koyu:Örnek:} 10 bölmeli bir dinamometre en fazla {koyu:50 N} ölçebiliyorsa, her 1 bölme {koyu:50 ÷ 10 = 5 N} kuvveti gösterir. Bu dinamometreye 20 N’luk bir cisim asılırsa {koyu:20 ÷ 5 = 4 bölme} dışarı çıkar.",
+    "2. {koyu:Yay Kalınlığı ve Ölçüm Hassasiyeti:}\n• {koyu:İnce Yaylı Dinamometre:} Küçük bir kuvvet uygulandığında bile çok uzar. Bu yüzden {koyu:küçük kuvvetleri çok hassas (duyarlı)} ölçer; ancak büyük kuvvetlerde yay hemen bozulur.\n• {koyu:Kalın Yaylı Dinamometre:} Yay zor uzadığı için {koyu:büyük kuvvetleri} ölçebilir; ancak çok küçük kuvvetlerde yay neredeyse hiç uzamayacağı için hassas ölçüm yapamaz.\n3. {koyu:Yayın Cinsi ve Uzunluğu:} Yumuşak metallerden (ör. bakır) yapılan yaylar sert metallerden (ör. çelik) yapılan yaylara göre daha çok uzar ve daha hassas ölçüm yapar."
    ],
    "kutu": {
     "tur": "ipucu",
-    "baslik": "Kuvveti anlatmanın üç sorusu",
-    "metin": "Ne kadar (büyüklüğü), hangi yöne (yönü), neresine (uygulama noktası)? Bir kuvveti anlatırken bu üç soruya cevap verirsin. Bu haftanın asıl işi ilk soruya ölçerek cevap vermektir."
-   }
-  },
-  {
-   "baslik": "Yaylar ve esneklik: Kuvvet neden yayla ölçülür?",
-   "metin": [
-    "Bir yayı iki ucundan tutup çek: Yay uzar. Bırakınca eski uzunluğuna döner. Bir lastiği gerdiğinde de aynı şey olur. Kuvvet uygulandığında şekli değişen, kuvvet kalkınca eski hâline dönen cisimlere esnek cisim; bu özelliğe de esneklik denir. Yay, lastik, sünger ve lastik top esnek cisimlerdir.",
-    "Yayın esnekliğinin çok işine yarayacak bir özelliği var: Yayı ne kadar büyük kuvvetle çekersen yay o kadar çok uzar. Küçük bir kuvvet yayı az, daha büyük bir kuvvet daha çok uzatır. Uzama düzenli biçimde artar; yani kuvveti iki katına çıkarırsan uzama da iki katına çıkar. Bu düzen sayesinde yayın ne kadar uzadığına bakarak uygulanan kuvvetin büyüklüğünü anlayabilirsin. Kuvvet ölçen araçlar işte bu düşünceyle yapılır.",
-    "Ancak her yayın bir dayanma sınırı vardır. Yayı çok büyük bir kuvvetle çekersen esneklik sınırı aşılır; yay bir daha eski hâline dönemez, kalıcı olarak uzar ve artık doğru ölçüm yapamaz. Bunun yanında yaylar birbirinden farklıdır: İnce telden yapılmış bir yay küçük bir kuvvetle bile kolayca uzar; kalın telden yapılmış bir yayı uzatmak içinse büyük bir kuvvet gerekir. Bu yüzden küçük kuvvetleri ince yaylı, büyük kuvvetleri kalın yaylı araçlarla ölçersin."
-   ],
-   "kutu": {
-    "tur": "tanim",
-    "baslik": "Esneklik",
-    "metin": "Esneklik, bir cismin uygulanan kuvvetle şeklinin değişmesi, kuvvet ortadan kalkınca eski şekline dönebilmesidir. Yay esnek bir cisimdir; uzaması, uygulanan kuvvet büyüdükçe artar."
-   }
-  },
-  {
-   "baslik": "Dinamometre ve kuvvetin birimi: newton",
-   "metin": [
-    "Kuvvetin büyüklüğünü ölçmek için kullanılan araca dinamometre denir. Dinamometrenin içinde bir yay bulunur. Yayın üst ucu, dinamometreyi bir yere asmanı sağlayan halkanın bulunduğu tarafa bağlıdır; alt ucunda ise cismi takacağın kanca vardır. Kancayı çektiğinde ya da kancaya bir cisim astığında yay uzar; yaya bağlı gösterge (ibre), dinamometrenin üzerindeki bölmeli ölçek boyunca kayar. İbrenin durduğu yerdeki sayı, uygulanan kuvvetin büyüklüğüdür.",
-    "Kuvvet birimi olarak newton kullanılır; kısaltması büyük N harfidir. Bu birim adını, kuvvet ve hareket üzerine çalışmalar yapan ünlü bilim insanı Isaac Newton’dan alır. Bir kuvvetin büyüklüğü “5 N” ya da “12 N” gibi, sayı ve birimle birlikte yazılır. Kuvvet, dinamometreyle ölçülen bir büyüklüktür; demek ki bilimdeki kısa tanımı şöyledir: Kuvvet, dinamometreyle ölçülen ve newton (N) birimiyle ifade edilen büyüklüktür.",
-    "1 N’luk kuvvet ne kadardır? Bunu hissetmek için küçük bir elmayı (yaklaşık 100 gramlık) avucunda tuttuğunu düşün; elma, avucunu yaklaşık 1 N’luk kuvvetle aşağı doğru iter. Bir litrelik dolu su şişesini dinamometreye asarsan ibre yaklaşık 10 N değerini gösterir. Masanın üzerindeki kalem kutusunu çekmek, bir çekmeceyi açmak gibi günlük işler genellikle birkaç newtonluk kuvvetlerle yapılır.",
-    "Dinamometreler ölçebilecekleri en büyük kuvvete göre üretilir; bu değer aracın üzerinde yazar: 1 N, 2 N, 5 N, 10 N, 50 N gibi. Küçük kuvvetleri ölçen dinamometrelerde ince, büyük kuvvetleri ölçenlerde kalın yay bulunur. Ölçeceğin kuvvete uygun dinamometreyi seçmelisin: Küçük bir dinamometreyle büyük bir kuvvet ölçmeye kalkarsan yay bozulur; çok büyük bir dinamometreyle küçük bir kuvvet ölçmeye kalkarsan ibre neredeyse hiç kıpırdamaz ve değeri okuyamazsın."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Dinamometreye asılan cisim",
-     "İbrenin gösterdiği yaklaşık değer"
-    ],
-    "satirlar": [
-     [
-      "Küçük bir elma (yaklaşık 100 gram)",
-      "yaklaşık 1 N"
-     ],
-     [
-      "Yarım litrelik dolu su şişesi",
-      "yaklaşık 5 N"
-     ],
-     [
-      "Bir litrelik dolu su şişesi",
-      "yaklaşık 10 N"
-     ],
-     [
-      "Dolu bir okul çantası (yaklaşık 3 kilogram)",
-      "yaklaşık 30 N"
-     ]
-    ]
-   },
-   "kutular": [
-    {
-     "tur": "kural",
-     "baslik": "Dinamometre kullanma kuralları",
-     "metin": "Ölçmeye başlamadan önce ibrenin sıfırı gösterdiğini kontrol et. Dinamometreyi, üzerinde yazan en büyük değerden daha büyük bir kuvvetle çekme. Değeri okurken gözünü ibrenin tam hizasına getir. Sonucu her zaman birimiyle yaz: 3 N gibi."
-    },
-    {
-     "tur": "bilgi",
-     "baslik": "Isaac Newton",
-     "metin": "Isaac Newton, 1643-1727 yılları arasında yaşamış İngiliz bir bilim insanıdır. Kuvvet ve hareketle ilgili çalışmaları o kadar önemlidir ki kuvvet birimine onun adı verilmiştir. Birim adı yazılırken küçük harfle newton, kısaltması ise büyük N ile gösterilir."
-    }
-   ]
-  },
-  {
-   "baslik": "Ölçüm etkinliği: Kuvvetleri ölç, tabloya yaz, karşılaştır",
-   "metin": [
-    "Şimdi kuvveti kendin ölçme zamanı. Grubunla birlikte bir dinamometre, bir silgi, bir kalem kutusu, bir fen kitabı ve dolu bir su matarası alın. Her cismi ipliğiyle ya da doğrudan kancaya asın; dinamometreyi halkasından tutup sabit durmasını bekleyin ve ibrenin gösterdiği değeri okuyun. Cisim sallanırken okuma yapmayın; ibre durunca okuyun.",
-    "Her ölçümü hemen bir tabloya yazın. Tabloda cismin adı, kullandığınız dinamometrenin en büyük değeri ve okuduğunuz kuvvet bulunmalı. Ölçümü grubun farklı üyeleri birer kez tekrar etsin; sonuçlar birbirine yakın çıkıyorsa ölçümünüz güvenilirdir. Farklı çıkıyorsa nedenini birlikte arayın: Belki ibre başta sıfırda değildi, belki cisim sallanırken okudunuz, belki de cisimler için farklı dinamometreler kullandınız.",
-    "Ölçümler bitince tabloyu inceleyin. Hangi cisim dinamometreyi en büyük kuvvetle çekti, hangisi en küçük? Cisimleri uyguladıkları kuvvete göre küçükten büyüğe sıralayın. İki cismin değerlerini çıkararak aralarındaki farkı bulun. Başka bir grubun tablosuyla kendi tablonuzu karşılaştırın; aynı cisim için benzer değerler bulup bulmadığınıza bakın. Aşağıdaki tablo bir grubun ölçüm sonuçlarını gösteriyor; sizin değerleriniz farklı çıkabilir.",
-    "Dinamometreyi cisim asmadan, elinle çekerek de kullanabilirsin. Önce hafifçe, sonra biraz daha güçlü, en sonunda da üzerindeki en büyük değeri aşmadan güçlüce çek ve her seferinde değeri oku. Böylece “hafif”, “orta” ve “güçlü” dediğin kuvvetlerin kaç newton olduğunu görürsün. Artık kuvvet hakkında konuşurken tahmin yürütmek yerine ölçüm sonucu verebilirsin."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Cisim",
-     "Kullanılan dinamometre",
-     "Ölçülen kuvvet"
-    ],
-    "satirlar": [
-     [
-      "Silgi",
-      "2 N’luk",
-      "1 N’dan az; ibre 1 N çizgisine ulaşmadı"
-     ],
-     [
-      "Kalem kutusu",
-      "5 N’luk",
-      "2 N"
-     ],
-     [
-      "Fen kitabı",
-      "5 N’luk",
-      "4 N"
-     ],
-     [
-      "Dolu su matarası",
-      "10 N’luk",
-      "6 N"
-     ]
-    ]
-   },
-   "kutu": {
-    "tur": "hatirla",
-    "baslik": "Kuvveti tanımlamanın bilimsel yolu",
-    "metin": "Kuvvet, dinamometreyle ölçülen ve newton (N) birimiyle ifade edilen bir büyüklüktür. Bir kuvveti anlatırken “çok” ya da “az” demek yerine ölçüp “6 N” gibi bir değer vermelisin."
-   }
-  },
-  {
-   "baslik": "Kendi kuvvet ölçerini yap",
-   "metin": [
-    "Dinamometrenin nasıl çalıştığını en iyi, kendin bir model yaparak anlarsın. Bunun için bir paket lastiği (ya da yumuşak bir yay), bir ataş, bir karton şerit, kalem, cetvel ve modelini asabileceğin bir yer yeterli. Lastiğin bir ucunu kartonun üst kısmına raptiye ya da bantla sabitle; alt ucuna ataşı kanca olacak biçimde tak. Lastik serbest dururken ucunun geldiği yeri kartona işaretle ve yanına 0 yaz.",
-    "Şimdi kancaya sırayla farklı cisimler as: bir silgi, bir makas, küçük bir su şişesi. Her cisimde lastiğin ucunun geldiği yeri kartona işaretle ve yanına cismin adını yaz. Cisim ne kadar büyük kuvvetle çekiyorsa işaret 0’dan o kadar uzağa düşer. Böylece modelin, cisimlerin uyguladığı çekme kuvvetlerini karşılaştırmanı sağlar.",
-    "Modeline newton değerleri de yazabilirsin. Bunun için bir cismi önce gerçek dinamometreyle ölç, sonra aynı cismi modeline as ve o işaretin yanına ölçtüğün değeri yaz. Birkaç cisimle bunu tekrarlarsan kartonun üzerinde kendi ölçeğin oluşur. Modelini yaparken lastiği aşırı germemeye dikkat et; aksi hâlde lastik esnekliğini kaybeder ve ölçeğin artık doğru çalışmaz. Tasarımını arkadaşlarınınkiyle karşılaştır: Hangi modelde işaretler birbirinden daha net ayrılıyor, neden?"
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Daha hassas bir model",
-    "metin": "İnce ve yumuşak bir lastik küçük kuvvetlerde bile belirgin biçimde uzar; işaretler birbirinden daha kolay ayrılır. Daha büyük cisimleri ölçmek içinse kalın bir lastik ya da yan yana takılmış iki lastik kullanabilirsin."
+    "baslik": "Hangisi Daha Hassas Ölçüm Yapar?",
+    "metin": "Üzerinde yazan {koyu:maksimum ölçüm değeri (kapasitesi) en küçük olan} dinamometre (örneğin 10 N, 50 N ve 100 N’luk üç dinamometreden {koyu:10 N’luk olanı}) en ince yaya sahiptir ve {koyu:en hassas (duyarlı) ölçümü} yapar!"
    }
   }
  ],
  "ornekler": [
   {
-   "soru": "Deniz okula girerken kapıyı iterek açıyor, sınıfta çekmeceyi çekerek açıyor ve beden eğitimi dersinde topa vuruyor. Bu üç durumda da kuvvet uygulamış mıdır? Uyguladıysa her birinde kuvvet itme midir, çekme midir?",
-   "cevap": "Üçünde de kuvvet uygulamıştır; çünkü kuvvet, bir cisme uygulanan itme ya da çekmedir. Kapıyı açarken kapıyı kendinden uzaklaştırır: itme kuvveti. Çekmeceyi açarken onu kendine doğru getirir: çekme kuvveti. Topa vururken ayağıyla topu kendinden uzağa gönderir: itme kuvveti. Her üç durumda da kuvvetin etkisi görülür: Kapı ve çekmece hareket eder, duran top hareket etmeye başlar."
+   "soru": "10 eşit bölmeli bir dinamometre en fazla 40 N büyüklüğündeki kuvveti ölçebilmektedir. Bu dinamometreye K cismi asıldığında dinamometrenin çubuğu 6 bölme dışarı çıktığına göre K cisminin dinamometreye uyguladığı kuvvet kaç Newton’dır?",
+   "cevap": "10 bölme 40 N ölçüyorsa 1 bölmenin değeri: 40 N ÷ 10 = {koyu:4 N}’dır. K cismi asıldığında 6 bölme uzadığına göre: 6 × 4 N = {koyu:24 N} bulunur."
   },
   {
-   "soru": "Aşağıdaki olaylarda kuvvetin hangi etkisi görülür? (a) Kaleci, kaleye gelen topu yakalıyor. (b) Bir oyuncu gelen topa kafa vurarak topu yana gönderiyor. (c) Sen oyun hamurundan bir yıldız yapıyorsun. (d) Bisikletini sürerken frene basıyorsun.",
-   "cevap": "(a) Hareket eden top, kalecinin uyguladığı kuvvetle durur: durdurma etkisi. (b) Top zaten hareket ediyordu; kafa vuruşuyla başka yöne gitti: hareket yönünü değiştirme etkisi. (c) Hamurun şekli uyguladığın kuvvetle değişti: şekil değiştirme etkisi. (d) Fren bisikleti hemen durdurmaz, hızını azaltır: yavaşlatma etkisi. Dört olayda da kuvvetin kendisini görmezsin; etkilerini görürsün."
+   "soru": "Esnek bir yaya 15 N kuvvet uygulandığında yay 3 cm uzamaktadır. Yayın esneklik sınırı aşılmadığına göre, aynı yaya 45 N kuvvet uygulanırsa yay kaç cm uzar?",
+   "cevap": "Yayın uzama miktarı uygulanan kuvvetle doğru orantılıdır. Kuvvet 15 N’dan 45 N’a yani {koyu:3 katına} çıktığına göre (45 ÷ 15 = 3), uzama miktarı da 3 katına çıkar: 3 cm × 3 = {koyu:9 cm} uzar."
   },
   {
-   "soru": "Elif, dinamometreyi yaklaşık 3 N’luk kuvvetle çeken bir cismi ölçmek istiyor. Fen laboratuvarında 1 N’luk, 5 N’luk ve 50 N’luk dinamometreler var. Hangisini seçmeli? Diğer ikisini neden seçmemeli?",
-   "cevap": "5 N’luk dinamometreyi seçmelidir. 1 N’luk dinamometrenin ölçebileceği en büyük kuvvet 1 N’dır; 3 N’luk kuvvet bu sınırı aşar, yay esneklik sınırını geçerek bozulabilir. 50 N’luk dinamometrenin yayı çok kalındır; 3 N’luk kuvvet bu yayı o kadar az uzatır ki ibre neredeyse kıpırdamaz, değer doğru okunamaz. 5 N’luk dinamometrede ise 3 N hem sınırın içindedir hem de ibre, ölçek üzerinde rahatça okunacak kadar ilerler."
-  },
-  {
-   "soru": "Bir dinamometrenin ölçeğinde 0 ile 10 N arasında 10 eşit bölme var. Mert bir cismi kancaya astığında ibre, 0’dan itibaren 4. çizgide duruyor. Mert, birinci cismi indirmeden ikinci bir cismi de kancaya asınca ibre 9. çizgiye iniyor. Birinci ve ikinci cisim dinamometreyi tek tek kaç N’luk kuvvetle çeker?",
-   "cevap": "Önce bir bölmenin değerini bul: 0 ile 10 N arası 10 bölmeye ayrıldığına göre her bölme 10 ÷ 10 = 1 N’dır. İbre 4. çizgideyken kuvvet 4 × 1 = 4 N’dır; yani birinci cisim dinamometreyi 4 N’luk kuvvetle çeker. İki cisim birlikteyken ibre 9. çizgide olduğuna göre toplam kuvvet 9 N’dır. İkinci cismin tek başına uyguladığı kuvvet, toplamdan birincinin kuvvetini çıkararak bulunur: 9 − 4 = 5 N."
-  },
-  {
-   "soru": "Bir yaya 1 N’luk kuvvet uygulandığında yay 2 cm uzuyor. Aynı yaya 3 N’luk kuvvet uygulanırsa yay kaç cm uzar? (Yayın esneklik sınırı aşılmıyor.)",
-   "cevap": "Esneklik sınırı aşılmadığı sürece yayın uzaması, uygulanan kuvvetle düzenli biçimde artar: Kuvvet kaç katına çıkarsa uzama da o kadar katına çıkar. Kuvvet 1 N’dan 3 N’a çıkınca 3 katına çıkmıştır; uzama da 3 katına çıkar: 3 × 2 = 6 cm. Bu düzen, yayın uzamasına bakarak kuvveti ölçmeyi mümkün kılar; dinamometreler bu ilkeyle çalışır."
-  },
-  {
-   "soru": "Bir grup, cisimleri dinamometreye asarak şu sonuçları yazdı: silgi 1 N’dan az, kalem kutusu 2 N, fen kitabı 4 N, dolu su matarası 6 N. Cisimleri uyguladıkları kuvvete göre küçükten büyüğe sırala. Kitap, kalem kutusundan kaç N daha büyük kuvvet uyguluyor? Matarayı ölçmek için 5 N’luk dinamometre uygun olur muydu?",
-   "cevap": "Sıralama: silgi, kalem kutusu, fen kitabı, dolu su matarası. Kitap ile kalem kutusu arasındaki fark 4 − 2 = 2 N’dır; kitap 2 N daha büyük kuvvet uygular. Matara 6 N’luk kuvvet uyguladığına göre 5 N’luk dinamometre uygun olmazdı; 6 N, bu dinamometrenin ölçebileceği en büyük değeri aşar ve yayı bozabilir. Matara için 10 N’luk gibi daha büyük bir dinamometre seçilmelidir."
+   "soru": "Ölçebileceği en büyük kuvvet değerleri sırasıyla X = 20 N, Y = 50 N ve Z = 100 N olan üç dinamometreden hangisiyle 12 N’luk bir kuvvet en hassas şekilde ölçülür? 75 N’luk bir kuvvet hangi dinamometrelerle ölçülebilir?",
+   "cevap": "1. {koyu:12 N’luk kuvvet} üç dinamometrenin de sınırları içindedir; ancak en ince yaya sahip olan ve bölme değeri en küçük olan {koyu:X (20 N) dinamometresiyle en hassas} ölçülür.\n2. {koyu:75 N’luk kuvvet}, X (20 N) ve Y (50 N) dinamometrelerinin esneklik sınırını aşacağı (yaylarını bozacağı) için {koyu:yalnızca Z (100 N) dinamometresiyle} ölçülebilir."
   }
  ],
  "etkinlikler": [
   {
    "tur": "coktan",
-   "soru": "Aşağıdakilerden hangisi kuvvetin cisimler üzerindeki etkilerinden biri değildir?",
+   "soru": "Kuvvetin büyüklüğünü ölçmek için kullanılan ölçü aleti ve kuvvetin uluslararası birimi aşağıdakilerin hangisinde doğru verilmiştir?",
    "secenekler": [
-    "Duran bir cismi hareket ettirmesi",
-    "Hareket eden bir cismi durdurması",
-    "Cismin rengini değiştirmesi",
-    "Cismin şeklini değiştirmesi"
+    "Eşit kollu terazi — Kilogram (kg)",
+    "Dinamometre — Newton (N)",
+    "Termometre — Derece (°C)",
+    "Cetvel — Santimetre (cm)",
+    "Kronometre — Saniye (s)"
+   ],
+   "dogru": 1,
+   "aciklama": "Kuvvetin büyüklüğü dinamometre (kuvvetölçer) ile ölçülür ve birimi Newton (N) olarak adlandırılır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Aşağıdaki maddelerden hangisi kuvvet uygulandığında şekli değişip kuvvet ortadan kalktığında eski hâline geri dönen 'esnek' bir maddedir?",
+   "secenekler": [
+    "Oyun hamuru",
+    "Cam bardak",
+    "Bulaşık süngeri",
+    "Alüminyum folyo",
+    "Kuru dal parçası"
    ],
    "dogru": 2,
-   "aciklama": "Kuvvet cisimleri hareket ettirir, durdurur, hızlandırır, yavaşlatır, yönünü ve şeklini değiştirir; ama rengini değiştirmez."
+   "aciklama": "Bulaşık süngeri sıkıldığında şekli değişir, bırakıldığında eski hâline döner; yani esnek bir maddedir. Oyun hamuru ve folyo ise esnek değildir."
   },
   {
    "tur": "coktan",
-   "soru": "Kuvvetin büyüklüğünü ölçmek için kullanılan araç ve kuvvetin birimi hangi seçenekte doğru verilmiştir?",
+   "soru": "10 eşit bölmeli bir dinamometreye 18 N’luk bir yük asıldığında dinamometrenin yayında 3 bölmelik uzama gerçekleşiyor. Buna göre bu dinamometrenin ölçebileceği en büyük kuvvet kaç Newton’dır?",
    "secenekler": [
-    "Cetvel – metre",
-    "Dinamometre – newton",
-    "Termometre – newton",
-    "Dinamometre – metre"
+    "30 N",
+    "45 N",
+    "60 N",
+    "90 N",
+    "180 N"
    ],
-   "dogru": 1,
-   "aciklama": "Kuvvetin büyüklüğü dinamometreyle ölçülür ve newton (N) birimiyle ifade edilir. Cetvel uzunluk, termometre sıcaklık ölçer; metre uzunluk birimidir."
+   "dogru": 2,
+   "aciklama": "3 bölme 18 N ise 1 bölme = 18 ÷ 3 = 6 N’dır. Dinamometre 10 bölmeli olduğundan en fazla 10 × 6 N = 60 N ölçebilir."
   },
   {
    "tur": "coktan",
-   "soru": "Bir öğrenci, dolu bir su bidonunun dinamometreyi kaç N’luk kuvvetle çektiğini ölçmek istiyor. Hangi dinamometreyi seçmesi daha doğru olur?",
+   "soru": "Aynı metalden yapılmış ve uzunlukları eşit olan K, L ve M yaylarından K yayı en ince, M yayı ise en kalındır. Bu yaylarla yapılan dinamometrelerin aynı ağırlıktaki bir elmayı en hassas (duyarlı) ölçenden en az hassas ölçene doğru sıralanışı nasıldır?",
    "secenekler": [
-    "İnce yaylı, 1 N’luk dinamometre; çünkü yayı kolay uzar.",
-    "Kalın yaylı, 100 N’luk dinamometre; çünkü büyük kuvvetleri yayı bozulmadan ölçer.",
-    "Herhangi bir dinamometre; çünkü hepsi aynı kuvveti ölçer.",
-    "En uzun dinamometre; çünkü ibre daha çok yol alır."
+    "K - L - M",
+    "M - L - K",
+    "L - K - M",
+    "K - M - L",
+    "M - K - L"
+   ],
+   "dogru": 0,
+   "aciklama": "Yay ne kadar inceyse küçük kuvvetlerde o kadar fazla uzar ve daha hassas ölçüm yapar. En ince yay K, sonra L, en kalın yay M olduğundan hassasiyet sıralaması K - L - M olur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "En fazla 30 N kuvvet ölçebilen bir dinamometreye 45 N kuvvet uygularsak aşağıdakilerden hangisi gerçekleşir?",
+   "secenekler": [
+    "Dinamometre 45 N değerini hatasız ölçer.",
+    "Dinamometrenin içindeki yayın esneklik sınırı aşılır ve yay bozulur.",
+    "Dinamometrenin yayı hiç uzamaz.",
+    "Dinamometre daha hassas hâle gelir.",
+    "Yayın kalınlığı artar."
    ],
    "dogru": 1,
-   "aciklama": "Büyük kuvvetler için kalın yaylı, en büyük değeri yüksek bir dinamometre seçilir. İnce yaylı bir dinamometre bu kuvvette esneklik sınırını aşar ve bozulur."
+   "aciklama": "Dinamometrenin ölçebileceği maksimum değerden (30 N) daha büyük bir kuvvet (45 N) uygulandığında yayın esneklik sınırı aşılır, yay bozulur ve doğru ölçüm yapamaz."
   },
   {
    "tur": "dy",
-   "yonerge": "Aşağıdaki ifadeler doğru mu, yanlış mı?",
+   "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
    "ifadeler": [
     {
-     "metin": "Kuvvet, bir cisme itme ya da çekme olarak uygulanır.",
+     "metin": "Dinamometreler sarmal yayların esneklik özelliğinden yararlanılarak üretilmiştir.",
      "dogru": true,
-     "aciklama": "Kuvvet, itme ya da çekme biçiminde uygulanır; kapıyı itmek de ipi çekmek de kuvvet uygulamaktır."
+     "aciklama": "Dinamometrenin içinde uygulanan kuvvetle doğru orantılı uzayan esnek bir sarmal yay bulunur."
     },
     {
-     "metin": "Kuvvetin büyüklüğü cetvelle ölçülür.",
+     "metin": "Oyun hamuru kuvvet uygulandığında kolayca şekil değiştirdiği için esnek bir maddedir.",
      "dogru": false,
-     "aciklama": "Kuvvetin büyüklüğü dinamometreyle ölçülür; cetvel uzunluk ölçer."
+     "aciklama": "Yanlıştır; oyun hamuru kuvvet kaldırıldığında eski şekline geri dönmediği için esnek olmayan bir maddedir."
     },
     {
-     "metin": "Dinamometreler, yayların esneklik özelliğinden yararlanılarak yapılır.",
+     "metin": "Bir dinamometreye asılan cismin ağırlığı 2 katına çıkarılırsa (esneklik sınırı aşılmadan), yayın uzama miktarı da 2 katına çıkar.",
      "dogru": true,
-     "aciklama": "Dinamometrenin içindeki yay, uygulanan kuvvet büyüdükçe daha çok uzar; ibre bu uzamayı ölçek üzerinde gösterir."
+     "aciklama": "Yayın uzama miktarı uygulanan kuvvetin büyüklüğü ile doğru orantılıdır."
     },
     {
-     "metin": "Bir dinamometreyle her büyüklükteki kuvvet ölçülebilir.",
+     "metin": "Kalın çelik yaydan yapılmış bir dinamometre, ince bakır yaydan yapılmış dinamometreye göre küçük kuvvetleri daha hassas ölçer.",
      "dogru": false,
-     "aciklama": "Her dinamometrenin ölçebileceği en büyük kuvvet bellidir; daha büyük bir kuvvet yayı bozar."
+     "aciklama": "Yanlıştır; küçük kuvvetleri ince ve yumuşak yaydan yapılmış dinamometreler daha hassas ölçer; kalın çelik yaylar ise büyük kuvvetleri ölçmek içindir."
     },
     {
-     "metin": "Ölçüme başlamadan önce ibrenin sıfırı gösterip göstermediği kontrol edilir.",
+     "metin": "Bisiklet sürerken frene basıldığında bisikletin yavaşlaması kuvvetin hareketli cisimleri yavaşlatma ve durdurma etkisine örnektir.",
      "dogru": true,
-     "aciklama": "İbre sıfırda değilse okunan değer yanlış olur; bu yüzden ölçümden önce sıfır kontrolü yapılır."
+     "aciklama": "Harekete zıt yönde uygulanan kuvvet cismi yavaşlatır ve durdurur."
     }
    ]
   },
   {
    "tur": "eslestir",
-   "yonerge": "Olayları, kuvvetin hangi etkisini gösterdikleriyle eşleştir.",
+   "soru": "Aşağıdaki kavramları ve durumları doğru karşılıklarıyla eşleştiriniz.",
    "ciftler": [
     [
-     "Kalecinin kaleye gelen topu yakalaması",
-     "Hareket eden cismi durdurma"
+     "Dinamometre",
+     "Yayların esneklik özelliğinden yararlanarak kuvvetin büyüklüğünü ölçen araç"
     ],
     [
-     "Yerde duran topa vurulması",
-     "Duran cismi hareket ettirme"
+     "Newton (N)",
+     "Kuvvetin uluslararası standart ölçüm birimi"
     ],
     [
-     "Bisiklette frene basılması",
-     "Yavaşlatma"
+     "Esnek Madde",
+     "Kuvvet kalktığında eski şekline geri dönen madde (yay, sünger, paket lastiği)"
     ],
     [
-     "Raketle gelen topun geri gönderilmesi",
-     "Hareket yönünü değiştirme"
+     "İnce Yaylı Dinamometre",
+     "Küçük kuvvetleri daha duyarlı (hassas) ölçmeye yarayan kuvvetölçer"
     ],
     [
-     "Hamurun yoğrulması",
-     "Şekil değiştirme"
+     "Kalın Yaylı Dinamometre",
+     "Büyük kuvvetleri esneklik sınırı bozulmadan ölçebilen kuvvetölçer"
     ]
    ]
   },
   {
    "tur": "bosluk",
-   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
    "cumleler": [
     {
-     "metin": "Kuvvetin büyüklüğü ___ adı verilen araçla ölçülür.",
+     "metin": "Duran bir cismi hareket ettiren, hareketli bir cismi durduran veya cisimlerin şeklini değiştiren etkiye ___ denir.",
+     "cevap": "kuvvet"
+    },
+    {
+     "metin": "Fen bilimlerinde kuvvet ___ harfi ile gösterilir ve birimi kısaca N ile yazılır.",
+     "cevap": "F"
+    },
+    {
+     "metin": "Kuvvetin büyüklüğünü ölçmek için kullanılan araca kuvvetölçer ya da ___ adı verilir.",
      "cevap": "dinamometre"
     },
     {
-     "metin": "Kuvvetin birimi ___ olup N harfiyle gösterilir.",
-     "cevap": "newton"
+     "metin": "Bir yaya kapasitesinin üzerinde çok büyük bir kuvvet uygulanırsa yayın ___ sınırı aşılır ve yay bozulur.",
+     "cevap": "esneklik"
     },
     {
-     "metin": "Kuvvet kalkınca eski şekline dönen yay ve lastik gibi cisimler ___ cisimlerdir.",
-     "cevap": "esnek"
-    },
-    {
-     "metin": "Çekmeceyi açarken ona bir ___ kuvveti uygularsın.",
-     "cevap": "çekme"
+     "metin": "10 eşit bölmeli 80 N’luk bir dinamometrede her bir bölme ___ Newton kuvvet değerini gösterir.",
+     "cevap": "8"
     }
    ],
    "fazla": [
-    "cetvel"
+    "terazi",
+    "800"
    ]
   },
   {
    "tur": "ogretici",
-   "soru": "Grubun, dolu bir su bidonunu 5 N’luk dinamometreyle ölçmeye çalışıyor. Bidonu asar asmaz ibre ölçeğin en sonuna dayanıyor ve yay gerilmeye devam ediyor. Ne yapmalısınız, neden?",
+   "soru": "Özdeş ve 10’ar bölmeli K ve L dinamometrelerine aynı P cismi ayrı ayrı asıldığında; K dinamometresinde 2 bölme, L dinamometresinde ise 6 bölme dışarı çıkmaktadır. Buna göre hangi dinamometrenin yayı daha incedir ve hangisi daha büyük kuvvetleri ölçebilir? Nedenleriyle açıklayınız.",
    "ipuclari": [
-    "Dinamometrenin üzerinde yazan en büyük değer ne anlama gelir?",
-    "Yay çok büyük bir kuvvetle çekilirse ne olur?"
+    "1. İpucu: Aynı P cismi asıldığında daha çok uzayan (daha çok bölmesi çıkan) dinamometrenin yay kalınlığını düşününüz.",
+    "2. İpucu: Örneğin P cismine 12 N değer vererek K ve L’nin 1 bölme değerini ve 10 bölmelik maksimum kapasitelerini hesaplayınız."
    ],
-   "cevap": "Bidonu hemen indirmelisiniz. 5 N, bu dinamometrenin ölçebileceği en büyük kuvvettir; bidon bundan daha büyük bir kuvvet uyguladığı için ibre sona dayanmıştır. Çekmeye devam ederseniz yay esneklik sınırını aşar, eski hâline dönemez ve dinamometre bozulur. Bidonu ölçmek için en büyük değeri daha yüksek, kalın yaylı bir dinamometre (örneğin 50 N’luk) seçmelisiniz."
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Arkadaşın sınıfın duvarını bütün gücüyle itiyor, duvar hiç kıpırdamıyor. “Duvar hareket etmediğine göre ben kuvvet uygulamadım.” diyor. Bu düşünce doğru mu? Açıkla.",
-   "ipuclari": [
-    "Kuvvetin tanımını hatırla: itme ya da çekme.",
-    "Kuvvet uygulanan her cisim hareket etmek zorunda mı?"
-   ],
-   "cevap": "Doğru değil. Arkadaşın duvarı ittiğine göre kuvvet uygulamıştır; çünkü kuvvet, bir cisme uygulanan itme ya da çekmedir. Duvar çok sağlam ve yere sıkıca bağlı olduğu için bu kuvvetin etkisi hareket olarak görülmez. Kuvvetin varlığına yalnızca harekete bakarak karar verilmez; arkadaşının ellerinin ve kollarının yorulması bile kuvvet uyguladığını gösterir."
+   "cevap": "1. Hangi Yay Daha İncedir? Aynı P ağırlığı asıldığında L dinamometresi 6 bölme, K dinamometresi ise sadece 2 bölme uzamıştır. Aynı kuvvette daha fazla uzayan L dinamometresinin yayı daha İNCEDİR ve L dinamometresi daha hassas ölçüm yapar.\n2. Hangisi Daha Büyük Kuvvet Ölçer? K dinamometresinin yayı daha KALIN ve sert olduğu için aynı yükte az uzamıştır. Örneğin P = 12 N dersek; K’de 2 bölme = 12 N => 1 bölme = 6 N ve K’nin 10 bölmeli kapasitesi 60 N olur. L’de ise 6 bölme = 12 N => 1 bölme = 2 N ve L’nin kapasitesi 20 N olur. Dolayısıyla kalın yaylı K dinamometresi 3 kat daha büyük kuvvetleri ölçebilir."
   }
- ],
- "ozet": [
-  "Kuvvet, bir cisme uygulanan itme ya da çekmedir; kuvvetin kendisi görülmez, etkileri gözlenir.",
-  "Kuvvet cisimleri hareket ettirir, durdurur, hızlandırır, yavaşlatır, hareket yönünü değiştirir ve şeklini değiştirir.",
-  "Kuvvetin büyüklüğü, yönü ve uygulama noktası vardır; büyüklüğü ölçülebilir ve sayıyla söylenir.",
-  "Yay esnek bir cisimdir: Uygulanan kuvvet büyüdükçe daha çok uzar, kuvvet kalkınca eski hâline döner. Dinamometre bu özellikle çalışır.",
-  "Kuvvetin büyüklüğü dinamometreyle ölçülür, birimi newtondur (N). Ölçülecek kuvvete uygun dinamometre seçilir; ibre sıfırdan başlatılır, en büyük değer aşılmaz, sonuç birimiyle yazılır."
  ]
 }
