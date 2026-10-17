@@ -463,8 +463,10 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
 .kalem-dugme svg { width: 24px; height: 24px; }
 .kalem-dugme:hover { transform: translateY(-1px); }
 .tahta-cubuk { position: absolute; left: 0; right: 0; margin-inline: auto; width: max-content; bottom: 14px; z-index: 2; display: flex; gap: 4px; flex-wrap: wrap; justify-content: center; align-items: center;
-  max-width: calc(100% - 20px); padding: 6px 8px; border-radius: 16px; background: rgb(17 26 46 / .94); border: 1px solid rgb(255 255 255 / .12); box-shadow: 0 12px 34px rgb(0 0 0 / .35); backdrop-filter: blur(8px); }
+  max-width: calc(100% - 20px); padding: 6px 8px; border-radius: 16px; background: rgb(17 26 46 / .94); border: 1px solid rgb(255 255 255 / .12); box-shadow: 0 12px 34px rgb(0 0 0 / .35); backdrop-filter: blur(8px);
+  transition: transform .28s cubic-bezier(.2, .9, .3, 1), opacity .2s ease; }
 .kalem-katman .tahta-cubuk { position: fixed; }
+.tahta-cubuk.kayitta-gizli { transform: translateY(calc(100% + 40px)) !important; opacity: 0 !important; pointer-events: none !important; }
 .tahta-cubuk.dar .tahta-gizlenebilir { display: none !important; }
 .tahta-cubuk.dar [data-is="daralt"] svg { transform: rotate(180deg); }
 .tahta-tutac { width: 22px !important; cursor: grab !important; opacity: .65; }

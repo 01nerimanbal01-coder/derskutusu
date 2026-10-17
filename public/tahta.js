@@ -1245,7 +1245,8 @@ const Tahta = (() => {
     const ekranDestek = Boolean(typeof navigator !== 'undefined' && navigator.mediaDevices?.getDisplayMedia);
     let kayitModu = (kaydir && ekranDestek) ? 'ekran' : 'tuval'; // 'ekran': tüm sekme/ekran, 'tuval': doğrudan tahta (izinsiz)
     let kayitBicim = 'mp4'; // 'mp4' (Varsayılan MP4) | 'youtube' (YouTube 1080p HD MP4) | 'webm' (WebM)
-    let mikIstek = true, secilenDosyaAdi = '';
+    let mikIstek = true, tikirtiEngelleme = true, kayittaMenuyuGizle = true;
+    let secilenDosyaAdi = '', otoMenuZamanlayici = 0;
     let kaydedici = null, kayitParcalar = [], kayitBlobUrl = null, kayitUzanti = 'mp4';
     let ekranAkisi = null, mikAkisi = null, birlesikAkis = null, sesBaglam = null;
     let kayitTimer = 0, tuvalTimer = 0, gecenMs = 0, sonTick = 0, kayitNot = '';
@@ -1327,6 +1328,7 @@ const Tahta = (() => {
     function kayitKaynakTemizle() {
       clearInterval(kayitTimer); kayitTimer = 0;
       clearInterval(tuvalTimer); tuvalTimer = 0;
+      clearTimeout(otoMenuZamanlayici);
       for (const akis of [ekranAkisi, mikAkisi, birlesikAkis]) {
         if (!akis) continue;
         try { akis.getTracks().forEach((t) => t.stop()); } catch { /* */ }
@@ -1349,6 +1351,19 @@ const Tahta = (() => {
         kayitKutu.remove();
         kayitKutu = null;
       }
+    }
+
+    // Kayıt sırasında alttaki menü videoda görünmesin diye gizlendiğinde, farenin/kalemin ekranın altına gelmesiyle geçici açılır
+    function kayittaMenuyuGeciciGoster() {
+      if (kayitDurum !== 'kayitta' && kayitDurum !== 'duraklatildi') return;
+      if (!kayittaMenuyuGizle || typeof cubuk === 'undefined' || !cubuk) return;
+      cubuk.classList.remove('kayitta-gizli');
+      clearTimeout(otoMenuZamanlayici);
+      otoMenuZamanlayici = setTimeout(() => {
+        if (kayitDurum === 'kayitta' || kayitDurum === 'duraklatildi') {
+          cubuk.classList.add('kayitta-gizli');
+        }
+      }, 3400);
     }
 
     async function tuvalAkisiHazirla() {
@@ -1427,8 +1442,10 @@ const Tahta = (() => {
         `<strong>🌐 WebM (.webm)</strong><small>YouTube & Web</small></button>` +
         `</div>` +
         `<label class="tk-ad-etiket">Dosya adı:<input type="text" class="tk-dosya-ad" value="${dosyaAdDeger}" spellcheck="false"></label>` +
-        `<label class="tk-secenek"><input type="checkbox" data-tk-mik ${mikIstek ? 'checked' : ''}><span>🎙️ Mikrofon sesimi kayda ekle (gürültü engellemeli)</span></label>` +
-        `<p class="tk-ipucu-mini">💡 Kayıt başladığında bu pencere otomatik kapanır (videoda görünmez). Bitirmek için araç çubuğundaki kırmızı <b>⏹ Kayıt</b> düğmesine veya <b>F9</b> tuşuna basın; video otomatik indirilir.</p>` +
+        `<label class="tk-secenek"><input type="checkbox" data-tk-mik ${mikIstek ? 'checked' : ''}><span>🎙️ Mikrofon sesimi kayda ekle</span></label>` +
+        `<label class="tk-secenek"><input type="checkbox" data-tk-tikirti ${tikirtiEngelleme ? 'checked' : ''}><span>🛡️ Klavye tuş ve tablet ekranına vurma seslerini filtrele</span></label>` +
+        `<label class="tk-secenek"><input type="checkbox" data-tk-menugizle ${kayittaMenuyuGizle ? 'checked' : ''}><span>🪄 Kayıt sırasında alttaki kalem menüsünü gizle (videoda görünmez)</span></label>` +
+        `<p class="tk-ipucu-mini">💡 Kayıt başladığında bu pencere ve kalem menüsü otomatik gizlenir. Bitirmek için <b>F9</b> tuşuna veya ekranın altına yaklaşıp kırmızı <b>⏹ Kayıt</b> düğmesine basın; video otomatik indirilir.</p>` +
         (kayitNot ? `<p class="tk-not" role="status">${kayitNot}</p>` : '') +
         `<button type="button" class="tk-baslat" data-tk="baslat"><i class="tk-kirmizi-nokta"></i> Kaydı Başlat (.${kayitBicim === 'webm' ? 'WEBM' : 'MP4'})</button>` +
         `</div>`;
@@ -1448,6 +1465,11 @@ const Tahta = (() => {
       kayitKutuyuYokEt();
       if (yardimKutu) { yardimKutu.remove(); yardimKutu = null; }
       guncelle();
+
+      // Alttaki kalem menüsünün videoda görünmemesi için kayıtta gizle
+      if (kayittaMenuyuGizle && typeof cubuk !== 'undefined' && cubuk) {
+        cubuk.classList.add('kayitta-gizli');
+      }
 
       // 1) Görüntü akışını hazırla
       try {
@@ -1470,27 +1492,40 @@ const Tahta = (() => {
         }
       } catch {
         // Kullanıcı ekran paylaşımını iptal ettiyse Tahta + Ses kipine yönlendir
+        if (typeof cubuk !== 'undefined' && cubuk) cubuk.classList.remove('kayitta-gizli');
         kayitModu = 'tuval';
         kayitNot = 'Ekran paylaşımı seçilmedi. "🎨 Sadece Tahta + Ses" kipinde izin gerekmeden hemen kayıt başlatabilirsiniz.';
         kayitAcKapat();
         return;
       }
 
-      // 2) Mikrofon akışını hazırla (mikrofon yoksa kayıt çökmez, sessiz devam eder)
+      // 2) Mikrofon akışını hazırla (tuş ve ekran vurma seslerini filtreleyen gelişmiş constraints)
       if (mikIstek && navigator.mediaDevices?.getUserMedia) {
         try {
           mikAkisi = await navigator.mediaDevices.getUserMedia({
-            audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true },
+            audio: {
+              echoCancellation: true,
+              noiseSuppression: true,
+              autoGainControl: true,
+              channelCount: 1,
+              sampleRate: 48000,
+              googEchoCancellation: true,
+              googAutoGainControl: true,
+              googNoiseSuppression: true,
+              googHighpassFilter: true,
+              googTypingNoiseDetection: true,
+            },
           });
         } catch {
           mikAkisi = null;
         }
       }
 
-      // 3) Görüntü ve ses kanallarını birleştir
+      // 3) Görüntü ve ses kanallarını birleştir + Tablet Vuruşu/Tuş Ses Filtresi
       const videoIzleri = ekranAkisi ? ekranAkisi.getVideoTracks() : [];
       if (!videoIzleri.length) {
         kayitKaynakTemizle();
+        if (typeof cubuk !== 'undefined' && cubuk) cubuk.classList.remove('kayitta-gizli');
         kayitModu = 'tuval';
         kayitNot = 'Görüntü kaynağı alınamadı. "🎨 Sadece Tahta + Ses" kipini deneyin.';
         kayitAcKapat();
@@ -1511,7 +1546,68 @@ const Tahta = (() => {
           }
           if (mikSes.length) {
             const k2 = sesBaglam.createMediaStreamSource(new MediaStream(mikSes));
-            k2.connect(hedef);
+            if (tikirtiEngelleme) {
+              // 1. Kademe: Yüksek Geçiren Filtre (Highpass 140Hz) - Masaya, tablete el/avuç temas sarsıntısı ve gövde gümlemelerini keser
+              const hp = sesBaglam.createBiquadFilter();
+              hp.type = 'highpass';
+              hp.frequency.value = 140;
+              hp.Q.value = 0.7;
+
+              // 2. Kademe: Klavye tuş basımı ve cam tıkırtısı rezonans çentiği (Peaking 2850Hz)
+              const notch = sesBaglam.createBiquadFilter();
+              notch.type = 'peaking';
+              notch.frequency.value = 2850;
+              notch.Q.value = 2.2;
+              notch.gain.value = -8;
+
+              // 3. Kademe: Alçak Geçiren Filtre (Lowpass 5200Hz) - Kalem ucunun cam ekrana çarpma kliklerinin tizliğini keser
+              const lp = sesBaglam.createBiquadFilter();
+              lp.type = 'lowpass';
+              lp.frequency.value = 5200;
+              lp.Q.value = 0.7;
+
+              // 4. Kademe: Hızlı Kompresör (DynamicsCompressor) - Ani vuruş patlamalarını 2ms içinde bastırır
+              const comp = sesBaglam.createDynamicsCompressor();
+              comp.threshold.value = -23;
+              comp.knee.value = 8;
+              comp.ratio.value = 16;
+              comp.attack.value = 0.002;
+              comp.release.value = 0.12;
+
+              // 5. Kademe: Akıllı Konuşma Kapısı (Smart Voice Gate) - Konuşma yokken kalemin ekrana dokunma ve vurma seslerini %100 susturur
+              let zarf = 0;
+              let kapiKazanc = 0;
+              const KONUSMA_ESIGI = 0.015;
+              const gate = sesBaglam.createScriptProcessor(1024, 1, 1);
+              gate.onaudioprocess = (e) => {
+                const inp = e.inputBuffer.getChannelData(0);
+                const out = e.outputBuffer.getChannelData(0);
+                let maks = 0;
+                for (let i = 0; i < inp.length; i++) {
+                  const m = Math.abs(inp[i]);
+                  if (m > maks) maks = m;
+                }
+                if (maks > zarf) {
+                  zarf = zarf * 0.35 + maks * 0.65;
+                } else {
+                  zarf = zarf * 0.94; // yumuşak sönüm
+                }
+                const hedefK = zarf > KONUSMA_ESIGI ? 1.0 : 0.0;
+                for (let i = 0; i < inp.length; i++) {
+                  kapiKazanc += (hedefK - kapiKazanc) * 0.025;
+                  out[i] = inp[i] * (kapiKazanc < 0.005 ? 0 : kapiKazanc);
+                }
+              };
+
+              k2.connect(hp);
+              hp.connect(notch);
+              notch.connect(lp);
+              lp.connect(comp);
+              comp.connect(gate);
+              gate.connect(hedef);
+            } else {
+              k2.connect(hedef);
+            }
           }
           sesIzleri = hedef.stream.getAudioTracks();
         }
@@ -1561,6 +1657,7 @@ const Tahta = (() => {
           kaydedici.start();
         } catch {
           kayitKaynakTemizle();
+          if (typeof cubuk !== 'undefined' && cubuk) cubuk.classList.remove('kayitta-gizli');
           kayitNot = 'Bu tarayıcıda video kaydı başlatılamadı.';
           kayitAcKapat();
           return;
@@ -1571,6 +1668,7 @@ const Tahta = (() => {
         if (kayitParcalar.length) kaydiBitir();
         else {
           kayitKaynakTemizle();
+          if (typeof cubuk !== 'undefined' && cubuk) cubuk.classList.remove('kayitta-gizli');
           kayitDurum = 'hazir';
           kayitKutuyuYokEt();
           guncelle();
@@ -1580,6 +1678,7 @@ const Tahta = (() => {
       kaydedici.onstop = () => {
         // Kayıt bittiğinde ekranda hiçbir kayıt programı penceresi açılmaz; doğrudan seçilen uzantıyla (.mp4 / .webm) indirilir
         kayitKutuyuYokEt();
+        if (typeof cubuk !== 'undefined' && cubuk) cubuk.classList.remove('kayitta-gizli');
         const etkinTur = kaydedici?.mimeType || kayitParcalar[0]?.type || 'video/mp4';
         kayitUzanti = kayitBicim === 'webm' ? 'webm' : 'mp4';
         const ciktiMime = kayitUzanti === 'mp4' ? (etkinTur.includes('mp4') ? etkinTur : 'video/mp4') : 'video/webm';
@@ -1617,8 +1716,10 @@ const Tahta = (() => {
     }
 
     function kaydiBitir() {
-      // Kayıt biterken de kayıt programı penceresi kesinlikle kapalı tutulur
+      // Kayıt biterken kayıt programı penceresi kapalı tutulur ve kalem menüsü geri getirilir
       kayitKutuyuYokEt();
+      if (typeof cubuk !== 'undefined' && cubuk) cubuk.classList.remove('kayitta-gizli');
+      clearTimeout(otoMenuZamanlayici);
       if (!kaydedici || kaydedici.state === 'inactive') {
         kayitKaynakTemizle();
         kayitDurum = 'hazir';
@@ -1693,6 +1794,8 @@ const Tahta = (() => {
       });
       kayitKutu.addEventListener('change', (e) => {
         if (e.target.matches('[data-tk-mik]')) mikIstek = e.target.checked;
+        if (e.target.matches('[data-tk-tikirti]')) tikirtiEngelleme = e.target.checked;
+        if (e.target.matches('[data-tk-menugizle]')) kayittaMenuyuGizle = e.target.checked;
       });
       kayitKutu.addEventListener('click', (e) => {
         const kipBtn = e.target.closest('[data-kip]');
@@ -1958,6 +2061,11 @@ const Tahta = (() => {
       if (/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName)) return;
       const k = o.key.toLowerCase();
       if (o.key === 'F9' || (o.altKey && k === 'k')) { o.preventDefault(); kayitAcKapat(); return; }
+      if (k === 'm' && !o.ctrlKey && !o.metaKey && (kayitDurum === 'kayitta' || kayitDurum === 'duraklatildi')) {
+        o.preventDefault();
+        if (typeof cubuk !== 'undefined' && cubuk) cubuk.classList.toggle('kayitta-gizli');
+        return;
+      }
       if ((o.ctrlKey || o.metaKey) && k === 'z') { o.preventDefault(); o.shiftKey ? yinele() : geriAl(); return; }
       if ((o.ctrlKey || o.metaKey) && k === 'y') { o.preventDefault(); yinele(); return; }
       if ((o.ctrlKey || o.metaKey) && k === 'd' && d.secili.length) { o.preventDefault(); seciliCogalt(); return; }
@@ -1982,6 +2090,16 @@ const Tahta = (() => {
       }
     };
     document.addEventListener('keydown', tus);
+
+    // Kayıt esnasında ekranın altına yaklaşıldığında menüyü geçici gösteren dinleyici
+    const altKenarDinleyici = (e) => {
+      if ((kayitDurum === 'kayitta' || kayitDurum === 'duraklatildi') && kayittaMenuyuGizle) {
+        if (e.clientY >= (window.innerHeight - 34)) {
+          kayittaMenuyuGeciciGoster();
+        }
+      }
+    };
+    window.addEventListener('pointermove', altKenarDinleyici, { passive: true });
     const olcu = new ResizeObserver(boyutla);
     olcu.observe(kap);
     const kaydirildi = () => { hepsiniCiz(); iste(); };
@@ -2018,6 +2136,7 @@ const Tahta = (() => {
         kayitKaynakTemizle();
         if (kayitBlobUrl) { try { URL.revokeObjectURL(kayitBlobUrl); } catch { /* */ } }
         olcu.disconnect();
+        window.removeEventListener('pointermove', altKenarDinleyici);
         document.removeEventListener('keydown', tus);
         document.removeEventListener('paste', yapistir);
         kaydirHedef?.removeEventListener('scroll', kaydirildi);
