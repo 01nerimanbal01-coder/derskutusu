@@ -1875,3 +1875,213 @@ Konu özetinin tamamı: https://derskutusu.com/ozet/6-temel-dini-bilgiler-6
 
 #derskutusu #6sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #ortaokul
 ```
+
+### `bilgi-7-arapca-6` — 7. Sınıf · arapca · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-7-arapca-6.png` (`public/sosyal/bilgi-7-arapca-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/7-arapca-6
+- **Metin:**
+```text
+Arapçada Meslekler ve Çalışma Yerleri
+
+Arapçada mesleklerin çalışma yerleri eyne ya’melu sorusu ve fî harf-i cerriyle kurulan mekân ifadeleriyle anlatılır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/7-arapca-6
+
+#derskutusu #7sınıf #arapça #konuözeti #dersnotu #meb #ortaokul
+```
+
+### `bilgi-7-kuran-i-kerim-6` — 7. Sınıf · kuran-i-kerim · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-7-kuran-i-kerim-6.png` (`public/sosyal/bilgi-7-kuran-i-kerim-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/7-kuran-i-kerim-6
+- **Metin:**
+```text
+Vitir Namazında Okunan Kunut Duaları ve Anlamları
+
+Kunut duaları vitir namazının son rekâtında okunan, yalnız Allah’a kulluk ve bağlılık sözü veren kapsamlı yakarış dualarıdır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/7-kuran-i-kerim-6
+
+#derskutusu #7sınıf #kuranıkerim #konuözeti #dersnotu #meb #ortaokul
+```
+
+### `bilgi-7-matematik-6` — 7. Sınıf · matematik · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-7-matematik-6.png` (`public/sosyal/bilgi-7-matematik-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/7-matematik-6
+- **Metin:**
+```text
+Rasyonel Sayılarla Dört İşlem ve Kuvvet Alma
+
+Rasyonel sayılarla problemlerde toplama-çıkarmada payda eşitlenir, bölmede ikinci kesir ters çevrilip çarpılır ve işlem önceliği korunur.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/7-matematik-6
+
+#derskutusu #7sınıf #matematik #konuözeti #dersnotu #meb #ortaokul
+```
+
+### `bilgi-7-peygamberimizin-hayati-6` — 7. Sınıf · peygamberimizin-hayati · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-7-peygamberimizin-hayati-6.png` (`public/sosyal/bilgi-7-peygamberimizin-hayati-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/7-peygamberimizin-hayati-6
+- **Metin:**
+```text
+İsra ve Miraç Mucizesi İle Üç Büyük Hediye
+
+İsrâ ve Miraç mucizesi Hüzün Yılı’nda Peygamberimize ilahi teselli olmuş ve ümmete beş vakit namaz hediyesini getirmiştir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/7-peygamberimizin-hayati-6
+
+#derskutusu #7sınıf #peygamberimizinhayatı #konuözeti #dersnotu #meb #ortaokul
+```
+
+### `bilgi-7-sosyal-bilgiler-6` — 7. Sınıf · sosyal-bilgiler · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-7-sosyal-bilgiler-6.png` (`public/sosyal/bilgi-7-sosyal-bilgiler-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/7-sosyal-bilgiler-6
+- **Metin:**
+```text
+Millî Dayanışma Ruhu ve Küreselleşmenin Etkileri
+
+Türk toplumu millî meselelerde dayanışma ruhuyla kenetlenirken küreselleşme sürecinde millî ve kültürel değerlerini koruyarak dünyayla etkileşir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/7-sosyal-bilgiler-6
+
+#derskutusu #7sınıf #sosyalbilgiler #konuözeti #dersnotu #meb #ortaokul
+```
+
+### `bilgi-7-temel-dini-bilgiler-6` — 7. Sınıf · temel-dini-bilgiler · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-7-temel-dini-bilgiler-6.png` (`public/sosyal/bilgi-7-temel-dini-bilgiler-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/7-temel-dini-bilgiler-6
+- **Metin:**
+```text
+İman, İbadet ve Ahlak Bütünlüğünde Mümin Kimliği
+
+Mümin kimliği; kalpteki samimi imanın düzenli ibadet ve güven veren güzel ahlakla bütünleşerek hayatta görünür olmasıdır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/7-temel-dini-bilgiler-6
+
+#derskutusu #7sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #ortaokul
+```
+
+### `bilgi-7-turkce-6` — 7. Sınıf · turkce · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-7-turkce-6.png` (`public/sosyal/bilgi-7-turkce-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/7-turkce-6
+- **Metin:**
+```text
+Zaman Yönetimi, Metin Karşılaştırma ve Özetleme
+
+Metin karşılaştırmada konu ve ana fikir ortaklıkları incelenirken özetlemede metnin özü kendi ifadelerimizle kısaltılarak aktarılır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/7-turkce-6
+
+#derskutusu #7sınıf #türkçe #konuözeti #dersnotu #meb #ortaokul
+```
+
+### `bilgi-8-arapca-6` — 8. Sınıf · arapca · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-8-arapca-6.png` (`public/sosyal/bilgi-8-arapca-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/8-arapca-6
+- **Metin:**
+```text
+Arapçada Gezi Türleri ve Ulaşım Araçları
+
+Arapçada gezi türleri er-rıhle tamlamalarıyla, kullanılan ulaşım araçları ise bi- harf-i cerriyle kurulan kalıplarla ifade edilir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/8-arapca-6
+
+#derskutusu #8sınıf #arapça #konuözeti #dersnotu #meb #lgs
+```
+
+### `bilgi-8-din-kulturu-6` — 8. Sınıf · din-kulturu-ve-ahlak-bilgisi · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-8-din-kulturu-6.png` (`public/sosyal/bilgi-8-din-kulturu-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/8-din-kulturu-ve-ahlak-bilgisi-6
+- **Metin:**
+```text
+Ulu’l-Azm Peygamberlerden Hz. Musa’nın (as) Hayatı
+
+Hz. Musa (as) kendisine Tevrat verilen, kardeşi Hz. Harun ile Firavun’a karşı tevhid mücadelesi yürüten Ulu’l-Azm bir peygamberdir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/8-din-kulturu-ve-ahlak-bilgisi-6
+
+#derskutusu #8sınıf #dinkültürü #konuözeti #dersnotu #meb #lgs
+```
+
+### `bilgi-8-fen-bilimleri-6` — 8. Sınıf · fen-bilimleri · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-8-fen-bilimleri-6.png` (`public/sosyal/bilgi-8-fen-bilimleri-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/8-fen-bilimleri-6
+- **Metin:**
+```text
+Kalıtım ve Mendel’in Bezelye Çaprazlaması
+
+Kalıtımda iki melez dölün (Aa x Aa) çaprazlanması sonucunda 3:1 oranında (%75 baskın, %25 çekinik) fenotip dağılımı elde edilir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/8-fen-bilimleri-6
+
+#derskutusu #8sınıf #fenbilimleri #konuözeti #dersnotu #meb #lgs
+```
+
+### `bilgi-8-ingilizce-6` — 8. Sınıf · ingilizce · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-8-ingilizce-6.png` (`public/sosyal/bilgi-8-ingilizce-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/8-ingilizce-6
+- **Metin:**
+```text
+İngilizcede Tercihler (Prefer) ve Kişisel Görüşler
+
+İngilizcede tercihler prefer ... to ... kalıbıyla, beğeniler ve kişisel görüşler ise fond of, can’t stand ve niteleme sıfatlarıyla anlatılır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/8-ingilizce-6
+
+#derskutusu #8sınıf #ingilizce #konuözeti #dersnotu #meb #lgs
+```
+
+### `bilgi-8-inkilap-tarihi-6` — 8. Sınıf · tc-inkilap-tarihi-ve-ataturkculuk · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-8-inkilap-tarihi-6.png` (`public/sosyal/bilgi-8-inkilap-tarihi-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/8-tc-inkilap-tarihi-ve-ataturkculuk-6
+- **Metin:**
+```text
+I. Dünya Savaşı’nda Osmanlı Cepheleri
+
+Osmanlı Devleti I. Dünya Savaşı’nda Kafkas ve Kanal’da taarruz, Çanakkale ve güney cephelerinde savunma, Avrupa’da yardım savaşı vermiştir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/8-tc-inkilap-tarihi-ve-ataturkculuk-6
+
+#derskutusu #8sınıf #inkılaptarihi #konuözeti #dersnotu #meb #lgs
+```
+
+### `bilgi-8-kuran-i-kerim-6` — 8. Sınıf · kuran-i-kerim · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-8-kuran-i-kerim-6.png` (`public/sosyal/bilgi-8-kuran-i-kerim-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/8-kuran-i-kerim-6
+- **Metin:**
+```text
+Hz. Yakup ve Hz. Yusuf (as) Kıssası
+
+Hz. Yakup ve Hz. Yusuf kıssası; hasedin zararını, zorluklara güzel sabırla (sabr-ı cemil) dayanmayı ve iffetle yükselmeyi öğretir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/8-kuran-i-kerim-6
+
+#derskutusu #8sınıf #kuranıkerim #konuözeti #dersnotu #meb #lgs
+```
+
+### `bilgi-8-peygamberimizin-hayati-6` — 8. Sınıf · peygamberimizin-hayati · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-8-peygamberimizin-hayati-6.png` (`public/sosyal/bilgi-8-peygamberimizin-hayati-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/8-peygamberimizin-hayati-6
+- **Metin:**
+```text
+Medine’de İslam Toplumunun Kurucu Temelleri
+
+Medine’de İslam toplumu Mescid-i Nebi, Ashâb-ı Suffe, Ensar-Muhacir kardeşliği (muâhât) ve Medine Sözleşmesi üzerinde yükselmiştir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/8-peygamberimizin-hayati-6
+
+#derskutusu #8sınıf #peygamberimizinhayatı #konuözeti #dersnotu #meb #lgs
+```
+
+### `bilgi-8-temel-dini-bilgiler-6` — 8. Sınıf · temel-dini-bilgiler · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-8-temel-dini-bilgiler-6.png` (`public/sosyal/bilgi-8-temel-dini-bilgiler-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/8-temel-dini-bilgiler-6
+- **Metin:**
+```text
+Kur’an-ı Kerim’e Karşı Ahlaki Sorumluluklarımız
+
+Kur’an-ı Kerim’e karşı görevimiz; ona iman etmek, tertîl üzere okumak, anlamını tedebbür etmek ve ahlaki ilkelerini yaşamaktır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/8-temel-dini-bilgiler-6
+
+#derskutusu #8sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #lgs
+```
