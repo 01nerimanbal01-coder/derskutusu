@@ -3445,7 +3445,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-7-peygamberimizin-hayati-7
-Sıra: 2026-12-09 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-peygamberimizin-hayati-7.png
+Sıra: 2026-12-09 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-peygamberimizin-hayati-7.png
 
 ```
 Bunu biliyor muydunuz? 621 ve 622 yıllarındaki Akabe Biatları ve ilk öğretmen Hz. Mus’ab bin Umeyr’in tebliği, Medine’yi Hicret yurdu hâline getirmiştir.
@@ -3455,7 +3455,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-7-temel-dini-bilgiler-7
-Sıra: 2026-12-09 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-temel-dini-bilgiler-7.png
+Sıra: 2026-12-09 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-temel-dini-bilgiler-7.png
 
 ```
 Bunu biliyor muydunuz? Mümin el-Hâdî ismiyle hidayeti arar, es-Selâm ismiyle çevresine güven verir, el-Vekîl ismiyle de fiilî duasını yapıp Allah’a tevekkül eder.
@@ -3465,7 +3465,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-biyoloji-7
-Sıra: 2026-12-10 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-biyoloji-7.png
+Sıra: 2026-12-10 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-biyoloji-7.png
 
 ```
 Bunu biliyor muydunuz? Kemosentez ışık enerjisi olmadan yalnız bazı bakteri ve arkelerde gerçekleşir; gece-gündüz kesintisiz devam edebilir.
@@ -3475,7 +3475,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-edebiyat-7
-Sıra: 2026-12-10 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-edebiyat-7.png
+Sıra: 2026-12-10 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-edebiyat-7.png
 
 ```
 Bunu biliyor muydunuz? Masallar döşeme, asıl olay ve dilek bölümlerinden oluşur; yazım kurallarında ünlü düşmesi, ünsüz yumuşaması ve benzeşmesi doğru uygulanmalıdır.
@@ -3485,7 +3485,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-fizik-7
-Sıra: 2026-12-10 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fizik-7.png
+Sıra: 2026-12-10 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fizik-7.png
 
 ```
 Bunu biliyor muydunuz? Serbest düşmede cismin hızı v = g·t, düştüğü yükseklik h = ½·g·t² bağıntısıyla bulunur ve her saniye 5 m, 15 m, 25 m... yol alır.
@@ -3495,7 +3495,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-kimya-7
-Sıra: 2026-12-10 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kimya-7.png
+Sıra: 2026-12-10 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kimya-7.png
 
 ```
 Bunu biliyor muydunuz? 1 gram madde Avogadro sayısı kadar akb’ye eşittir (1 g = N_A akb); elementlerin ortalama atom kütlesi izotop bolluk yüzdeleriyle hesaplanır.
@@ -3505,7 +3505,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-matematik-7
-Sıra: 2026-12-10 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-matematik-7.png
+Sıra: 2026-12-10 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-matematik-7.png
 
 ```
 Bunu biliyor muydunuz? İki yönlü sıklık tablolarında belirli bir satır veya sütun alt kümesine göre hesaplanan yüzdelere koşullu göreli sıklık denir.
@@ -3515,7 +3515,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-arapca-7
-Sıra: 2026-12-10 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-arapca-7.png
+Sıra: 2026-12-10 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-arapca-7.png
 
 ```
 Bunu biliyor muydunuz? Arapçada edebî türler eş-şi’r (şiir), el-kıssa (hikâye), er-rivâye (roman) ve el-mesrahiyye (tiyatro) kelimeleriyle ifade edilir.
@@ -3525,7 +3525,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-kuran-i-kerim-7
-Sıra: 2026-12-11 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-kuran-i-kerim-7.png
+Sıra: 2026-12-11 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-kuran-i-kerim-7.png
 
 ```
 Bunu biliyor muydunuz? Hucurât suresinde haber doğrulama ve kardeşlik emredilir; sû-i zan, tecessüs ve gıybet yasaklanarak üstünlüğün yalnız takvada olduğu bildirilir.
@@ -3535,7 +3535,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-peygamberimizin-hayati-7
-Sıra: 2026-12-11 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-peygamberimizin-hayati-7.png
+Sıra: 2026-12-11 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-peygamberimizin-hayati-7.png
 
 ```
 Bunu biliyor muydunuz? Hz. Peygamber Bedir, Uhud ve Hendek savaşlarında istişareyle hareket etmiş; Bedir esirlerini okuma yazma öğretmeleri şartıyla serbest bırakmıştır.
@@ -3545,7 +3545,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-temel-dini-bilgiler-7
-Sıra: 2026-12-11 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-temel-dini-bilgiler-7.png
+Sıra: 2026-12-11 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-temel-dini-bilgiler-7.png
 
 ```
 Bunu biliyor muydunuz? Kul ve kamu hakkı tövbeyle kendiliğinden düşmez; alınan hakkın sahibine iade edilmesi (tazmin) ve helallik alınması gerekir.
@@ -3555,7 +3555,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-arapca-7
-Sıra: 2026-12-11 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-arapca-7.png
+Sıra: 2026-12-11 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-arapca-7.png
 
 ```
 Bunu biliyor muydunuz? Arapçada isimlerin sonuna bitişen -î, -ke, -ki, -hû ve -hâ zamirleri iyelik (sahiplik) bildirir; “Min eyne ente?” ise “Nerelisin?” demektir.
@@ -3565,7 +3565,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-biyoloji-7
-Sıra: 2026-12-11 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-biyoloji-7.png
+Sıra: 2026-12-11 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-biyoloji-7.png
 
 ```
 Bunu biliyor muydunuz? Kontrollü deneyde araştırmacının değiştirdiği faktör bağımsız değişkendir; bilimsel teoriler ve kanunlar farklı bilgi türleri olup birbirine dönüşmez.
@@ -3575,7 +3575,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-cografya-7
-Sıra: 2026-12-11 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-cografya-7.png
+Sıra: 2026-12-11 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-cografya-7.png
 
 ```
 Bunu biliyor muydunuz? Türkiye’de dört mevsimin belirgin yaşanması ve bakı yönünün güney olması mutlak konumun; boğazlar ve yükselti ise göreceli konumun sonucudur.
@@ -3585,7 +3585,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-din-kulturu-7
-Sıra: 2026-12-12 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-din-kulturu-7.png
+Sıra: 2026-12-12 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-din-kulturu-7.png
 
 ```
 Bunu biliyor muydunuz? Rûm suresi 20–27. ayetlerde insanın yaratılışı, ailedeki sevgi-merhamet, dil ve renk çeşitliliği ile toprağın dirilişi ilahi kudretin delilleri olarak gösterilir.
@@ -3595,7 +3595,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-edebiyat-7
-Sıra: 2026-12-12 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-edebiyat-7.png
+Sıra: 2026-12-12 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-edebiyat-7.png
 
 ```
 Bunu biliyor muydunuz? Anlatımda gereksiz sözcük bulunmamasına duruluk, tek ve net anlam çıkmasına açıklık, süsten uzak sade söyleyişe ise yalınlık denir.
@@ -3605,7 +3605,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-fizik-7
-Sıra: 2026-12-12 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-fizik-7.png
+Sıra: 2026-12-12 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-fizik-7.png
 
 ```
 Bunu biliyor muydunuz? Eşit büyüklükteki (F) iki vektör arasındaki açı 60° ise bileşke F·√3, 90° ise F·√2, 120° ise F olur; açı küçüldükçe bileşke büyür.
@@ -3615,7 +3615,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-ingilizce-7
-Sıra: 2026-12-12 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-ingilizce-7.png
+Sıra: 2026-12-12 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-ingilizce-7.png
 
 ```
 Bunu biliyor muydunuz? İngilizcede saatlerle “at”, günlerle “on”, ay ve günün bölümleriyle “in” edatı kullanılır; rutinler Present Simple Tense ile ifade edilir.
@@ -3625,7 +3625,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-kimya-7
-Sıra: 2026-12-12 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-kimya-7.png
+Sıra: 2026-12-12 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-kimya-7.png
 
 ```
 Bunu biliyor muydunuz? Küresel simetri kararlılığı nedeniyle 24Cr atomunun temel hâl dizilimi 4s¹ 3d⁵, 29Cu atomunun temel hâl dizilimi ise 4s¹ 3d¹⁰ şeklindedir.
@@ -3635,7 +3635,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-kuran-i-kerim-7
-Sıra: 2026-12-12 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-kuran-i-kerim-7.png
+Sıra: 2026-12-12 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-kuran-i-kerim-7.png
 
 ```
 Bunu biliyor muydunuz? Peltek harfler sâ, zel ve zı’dır; “kutbü ced” (kâf, tâ, bâ, cîm, dâl) harfleri ise sakin olduğunda sarsılarak (kalkale ile) okunur.
@@ -3645,7 +3645,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-matematik-7
-Sıra: 2026-12-13 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-matematik-7.png
+Sıra: 2026-12-13 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-matematik-7.png
 
 ```
 Bunu biliyor muydunuz? g(x) = ax + b (a ≠ 0) doğrusal fonksiyonunda a eğimi, −b/a fonksiyonun sıfırını verir; a > 0 ise fonksiyon artan, a < 0 ise azalandır.
@@ -3655,7 +3655,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-peygamberimizin-hayati-7
-Sıra: 2026-12-13 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-peygamberimizin-hayati-7.png
+Sıra: 2026-12-13 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-peygamberimizin-hayati-7.png
 
 ```
 Bunu biliyor muydunuz? İslam öncesi Mekke’de Îlâf antlaşmalarıyla kervan ticareti gelişmiş; putperestliğe karşı Hz. İbrahim’in tevhid dinini koruyanlara Hanîf denmiştir.
