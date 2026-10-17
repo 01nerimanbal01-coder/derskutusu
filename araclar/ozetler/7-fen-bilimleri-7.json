@@ -1,355 +1,228 @@
 {
+ "ad": "7-fen-bilimleri-7",
  "sinif": 7,
  "ders": "fen-bilimleri",
+ "ders_adi": "Fen Bilimleri",
  "hafta": 7,
  "tarih": "26-30 Ekim 2026",
- "yayin_tarihi": "2026-10-13",
+ "yayin_tarihi": "2026-10-28",
  "unite": "Kuvvet ve Enerjiyi Keşfedelim",
- "konu": "Kuvvet, İş ve Enerji İlişkisi: Kinetik ve Potansiyel Enerji",
+ "konu": "Kuvvet, İş ve Enerji İlişkisi: Kinetik Enerji ve Potansiyel Enerji (Çekim ve Esneklik Potansiyeli)",
  "ciktilar": [
-  "FB.7.2.2. Enerji çeşitlerinden kinetik ve potansiyel enerjiyi karşılaştırabilme"
+  "Enerjiyi iş yapabilme yeteneği olarak tanımlar; kinetik ve potansiyel enerji türlerini sınıflandırır.",
+  "Kinetik enerjinin cismin kütlesine ve süratine bağlı olduğunu kontrollü deney değişkenleriyle açıklar.",
+  "Çekim potansiyel enerjisinin ağırlık ve yüksekliğe, esneklik potansiyel enerjisinin ise esnek cismin özelliğine ve sıkışma/gerilme miktarına bağlı olduğunu analiz eder."
  ],
- "giris": "Beşinci ve altıncı haftalarda fiziksel anlamda işin ne olduğunu öğrendin: bir cisme kuvvet uygulanacak ve cisim o kuvvetin doğrultusunda yer değiştirecek. Geçen hafta ayrıca iş yapabilmek için enerjiye ihtiyaç olduğunu, hareket eden cisimlerin kinetik, yüksekteki ya da gerilmiş cisimlerin potansiyel enerji taşıdığını konuşmaya başladık. Bu hafta bu iki enerji türünü yan yana koyacağız: her birinin nelere bağlı olduğunu, nerede benzeştiklerini, nerede ayrıldıklarını günlük yaşamdan örneklerle inceleyeceğiz. Bu hafta 29 Ekim Cumhuriyet Bayramı’nı da kutlayacağız; bayram tatilinde salıncakta ya da bisiklette bile bu haftanın konusunu gözleyebilirsin.",
+ "giris": "Geçen hafta fiziksel anlamda {koyu:iş} yapılabilmesi için cisme kuvvet uygulanması ve cismin kuvvet doğrultusunda yer değiştirmesi gerektiğini öğrenmiştik. Bir cismin {koyu:iş yapabilme yeteneğine enerji} denir ve birimi tıpkı iş gibi {koyu:Joule (J)}’dür. Bu hafta mekanik enerjiyi oluşturan iki temel enerji türünü; hareketten kaynaklanan {koyu:kinetik enerjiyi} ve konum veya durumdan kaynaklanan {koyu:potansiyel enerjiyi (çekim ve esneklik)} bağlı oldukları değişkenlerle birlikte keşfediyoruz!",
+ "ozet": [
+  "{koyu:İş ve Enerji İlişkisi:} İş yapabilme yeteneğine {koyu:enerji} denir. Bir cisme kuvvet uygulanarak iş yapıldığında cisme enerji aktarılır; iş yapan cismin enerjisi değişir.",
+  "{koyu:Kinetik (Hareket) Enerjisi:} Hareket hâlindeki cisimlerin sahip olduğu enerjidir; cismin {koyu:kütlesi (m)} ve {koyu:sürati (v)} ile {koyu:doğru orantılıdır}.",
+  "{koyu:Çekim Potansiyel Enerjisi:} Belirli bir yükseklikte bulunan cisimlerin yer çekimi etkisinden dolayı sahip olduğu enerjidir; cismin {koyu:ağırlığı (G)} ve {koyu:yerden yüksekliği (h)} ile {koyu:doğru orantılıdır}.",
+  "{koyu:Esneklik Potansiyel Enerjisi:} Esnek cisimlerin (yay, lastik, sünger) sıkıştırılması veya gerilmesiyle depolanan enerjidir; cismin {koyu:esneklik özelliğine (kalınlık/cins)} ve {koyu:sıkışma/gerilme miktarına} bağlıdır.",
+  "{koyu:Birlikte Bulunma:} Gökyüzünde uçan bir kuş veya uçak, hem yerden yüksekte olduğu için {koyu:çekim potansiyel enerjisine} hem de hareket ettiği için {koyu:kinetik enerjiye} aynı anda sahiptir."
+ ],
  "bolumler": [
   {
-   "baslik": "İş ile enerji arasındaki bağ",
+   "baslik": "1. Kinetik Enerji (Hareket Enerjisi) ve Bağlı Olduğu Değişkenler",
    "metin": [
-    "Önce kısa bir hatırlatma. Fiziksel anlamda iş, bir cisme uygulanan kuvvetin cismi kendi doğrultusunda yer değiştirmesiyle ortaya çıkar. Çantanı yerden kaldırdığında ya da market arabasını ittiğinde iş yaparsın; ama ağır bir dolabı ittiğin hâlde kıpırdatamadığında ne kadar yorulursan yorul fiziksel anlamda iş yapmış sayılmazsın.",
-    "Peki bu işi yapmanı sağlayan şey nedir? Enerji. Enerji, iş yapabilme yeteneğidir. Enerjisi olan her cisim iş yapabilir; bir cisme iş yaptığında da ona enerji kazandırırsın. Çantayı kaldırırken yaptığın iş çantada enerji olarak saklanır: çanta artık yüksektedir, bırakılırsa düşüp yere çarpabilir. Topa vurduğunda ise yaptığın iş topun hareketine aktarılır.",
-    "İş ile enerjinin birimi de aynıdır: joule (J). Bir newtonluk kuvvetle bir cismi kuvvet doğrultusunda bir metre yer değiştirdiğinde bir joule iş yaparsın; aynı miktarda enerji de cisme geçmiş olur. Bu hafta inceleyeceğimiz kinetik ve potansiyel enerji de joule ile ölçülür."
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "metin": "İş yapılabilmesi için kuvvet ve o kuvvetin doğrultusunda yer değiştirme gerekir. Enerji ise iş yapabilme yeteneğidir; işin de enerjinin de birimi joule (J) olarak yazılır."
-   }
-  },
-  {
-   "baslik": "Kinetik enerji: hareket eden her cisimde",
-   "metin": [
-    "Yolda giden bir otomobil, uçan bir kuş, akan bir dere, koşan bir atlet: bunların ortak noktası hareket etmeleridir. Hareket eden cisimlerin hareketlerinden dolayı sahip olduğu enerjiye kinetik enerji denir. Kinetik sözcüğü hareketle ilgili demektir; bu yüzden kinetik enerjiye kısaca hareket enerjisi de diyebilirsin. Duran bir cismin kinetik enerjisi yoktur.",
-    "Hareket eden bir cismin iş yapabildiğini kolayca gösterebilirsin: eğik bir düzlemden bıraktığın bilye, düzlemin dibindeki küçük bir kutuya çarpıp onu iter. Kutu yer değiştirdiğine göre bilye kutuya iş yapmıştır. Bilyeyi daha yüksekten bıraktığında bilye kutuya daha hızlı gelir ve kutuyu daha uzağa iter; aynı süratle gelen daha büyük bir bilye kullandığında da kutu daha uzağa gider.",
-    "Bu gözlem, kinetik enerjinin iki değişkene bağlı olduğunu gösterir: cismin kütlesi ve sürati. Aynı süratle giden boş ve yüklü iki kamyondan yüklü olanın kinetik enerjisi daha büyüktür; çünkü kütlesi daha büyüktür. Aynı kütledeki iki bisikletliden hızlı gidenin kinetik enerjisi daha büyüktür. Üstelik sürat arttıkça kinetik enerji çok daha hızlı büyür: sürat iki katına çıktığında kinetik enerji iki katına değil, dört katına çıkar. Trafikte hız sınırlarına bu kadar önem verilmesinin bir nedeni de budur."
-   ],
-   "kutular": [
-    {
-     "tur": "tanim",
-     "baslik": "Kinetik enerji",
-     "metin": "Hareket eden cisimlerin hareketlerinden dolayı sahip olduğu enerjidir. Cismin kütlesi ve sürati arttıkça kinetik enerjisi de artar."
-    },
-    {
-     "tur": "dikkat",
-     "metin": "Kütleyi iki katına çıkarmak kinetik enerjiyi iki katına çıkarır; sürati iki katına çıkarmak ise dört katına çıkarır. Sürat, kinetik enerjiyi kütleden daha güçlü etkiler."
-    }
-   ]
-  },
-  {
-   "baslik": "Çekim potansiyel enerjisi: yüksekteki cisim",
-   "metin": [
-    "Şimdi hareket etmeyen ama yine de iş yapabilen cisimlere bakalım. Rafın üst katında duran bir vazo kıpırdamıyor; ama düşerse yere çarpar, altındaki bir şeyi kırabilir, yani iş yapabilir. Demek ki vazonun da enerjisi var. Bu enerji vazonun hareketinden değil, konumundan, yani yerden yüksekte bulunmasından kaynaklanır. Cisimlerin konumlarından dolayı sahip oldukları enerjiye potansiyel enerji denir. Potansiyel sözcüğü “saklı, gizli güç” anlamına gelir; enerji orada kullanılmayı beklemektedir.",
-    "Yüksekteki cisimlerin bu enerjisini Dünya’nın çekim kuvveti sağlar; bu yüzden ona çekim potansiyel enerjisi denir. Barajda biriken su, tepede bekleyen kayakçı, daldaki elma, yukarı kaldırdığın çekiç ve tramplenin ucunda bekleyen yüzücü çekim potansiyel enerjisine sahiptir.",
-    "Çekim potansiyel enerjisi iki değişkene bağlıdır: cismin kütlesi (dolayısıyla ağırlığı) ve yerden yüksekliği. Bunu kum dolu bir kabın üzerine cisimler bırakarak sınayabilirsin. Aynı yükseklikten bırakılan iki bilyeden kütlesi büyük olan kumda daha derin bir çukur açar. Aynı bilyeyi daha yüksekten bıraktığında da çukur derinleşir. Çukur ne kadar derinse bilye kuma o kadar çok iş yapmış, yani o kadar çok enerji taşımış demektir."
-   ],
-   "kutular": [
-    {
-     "tur": "tanim",
-     "baslik": "Çekim potansiyel enerjisi",
-     "metin": "Yerden yüksekte bulunan cisimlerin konumlarından dolayı sahip olduğu enerjidir. Cismin kütlesi ve yüksekliği arttıkça artar."
-    },
-    {
-     "tur": "ipucu",
-     "metin": "Deney yaparken değişkenleri tek tek değiştir: kütlenin etkisini ararken yüksekliği, yüksekliğin etkisini ararken kütleyi sabit tut. Aksi hâlde sonucu hangisinin değiştirdiğini bilemezsin."
-    }
-   ]
-  },
-  {
-   "baslik": "Esneklik potansiyel enerjisi: gerilen ve sıkışan cisimler",
-   "metin": [
-    "Potansiyel enerjinin tek kaynağı yükseklik değildir. Okçu yayını gerdiğinde yay şekil değiştirir; okçu yayı bıraktığı anda ok fırlar. Yay gerilmiş hâldeyken hareket etmiyordu, yüksekte de değildi; ama oku fırlatacak enerjiyi içinde saklıyordu. Esnek cisimlerin gerilme, sıkıştırılma ya da bükülme sonucu şekil değiştirerek depoladıkları bu enerjiye esneklik potansiyel enerjisi denir.",
-    "Çevrende bunun pek çok örneği var: gerilmiş sapan lastiği, kurmalı oyuncağın kurulmuş yayı, üzerinde zıpladığın trambolin, sırıkla atlayan sporcunun bükülen sırığı, bastırdığın tükenmez kalemin yayı. Bu cisimler serbest bırakıldığında eski şekline dönerken iş yapar: oku ya da taşı fırlatır, oyuncağı yürütür, seni havaya kaldırır.",
-    "Esneklik potansiyel enerjisi, cismin ne kadar şekil değiştirdiğine bağlıdır: yayı ne kadar çok sıkıştırır ya da gerersen depolanan enerji o kadar büyük olur. Yayın cinsi de önemlidir; sert bir yayı aynı miktarda sıkıştırmak daha çok kuvvet ister ve böyle bir yay daha çok enerji depolar. Burada belirleyici olan kütle ya da yükseklik değil, şekil değişimidir."
+    "Hareket hâlindeki bütün varlıkların (koşan bir sporcunun, yolda giden otomobilin, akan nehir suyunun, esen rüzgârın) sahip olduğu enerjiye {koyu:kinetik enerji (hareket enerjisi)} denir. Duran (sürati sıfır olan) bir cismin kinetik enerjisi {koyu:sıfırdır}.\nKinetik enerjinin büyüklüğü {koyu:iki temel değişkene} bağlıdır:\n1. {koyu:Sürat (v):} Kütleleri eşit olan iki cisimden {koyu:sürati fazla olanın kinetik enerjisi daha fazladır}. Örneğin 100 km/h süratle giden bir otomobilin kinetik enerjisi, 50 km/h süratle giden özdeş otomobilden daha büyüktür.\n2. {koyu:Kütle (m):} Aynı süratle hareket eden iki cisimden {koyu:kütlesi fazla olanın kinetik enerjisi daha fazladır}. Örneğin 60 km/h süratle giden yüklü bir kamyonun kinetik enerjisi, aynı süratle giden küçük bir otomobilden çok daha büyüktür.",
+    "{koyu:Kontrollü Deneylerde Değişken Analizi:}\nEğik düzlemden bırakılan bilyelerin yatay zemindeki takozu sürükleme miktarı ({koyu:yapılan iş = kinetik enerji}) ölçülürken:\n• Sadece bilyenin {koyu:kütlesi değiştirilip} bırakıldığı yükseklik (dolayısıyla yatay zemine iniş sürati) sabit tutulursa:\n  - {koyu:Bağımsız değişken:} Kütle\n  - {koyu:Bağımlı değişken:} Kinetik enerji (takozun yer değiştirme miktarı)\n  - {koyu:Kontrol edilen (sabit) değişken:} Sürat (bırakılma yüksekliği)."
    ],
    "kutu": {
     "tur": "dikkat",
-    "metin": "Her şekil değiştiren cisim enerji depolamaz. Oyun hamuru ya da ıslak kil şekil değiştirince eski hâline dönmez; bu yüzden esneklik potansiyel enerjisi kazanmaz. Esneklik için cismin bırakılınca eski hâline dönebilmesi gerekir."
-   }
-  },
-  {
-   "baslik": "Benzerlikler ve farklar: yan yana koyalım",
-   "metin": [
-    "Artık iki enerji türünü karşılaştırabiliriz. Önce benzerlikler: kinetik enerji de potansiyel enerji de birer enerji çeşididir, yani ikisi de iş yapabilme yeteneğidir. İkisi de joule (J) birimiyle ölçülür. İkisi de cisme iş yapılarak artırılabilir: topu daha hızlı attığında kinetik enerjisini, daha yükseğe çıkardığında potansiyel enerjisini artırmış olursun. Kütle, hem kinetik enerjiyi hem de çekim potansiyel enerjisini etkiler. Üstelik bu iki enerji birbirine dönüşebilir.",
-    "Şimdi farklar: kinetik enerji cismin hareketinden kaynaklanır; potansiyel enerji ise cismin konumundan ya da şeklinden. Kinetik enerji kütle ve sürate bağlıdır; çekim potansiyel enerjisi kütle ve yüksekliğe, esneklik potansiyel enerjisi ise şekil değişiminin miktarına bağlıdır. Duran bir cismin kinetik enerjisi yoktur, ama potansiyel enerjisi olabilir. Yerde duran gerilmemiş bir cismin potansiyel enerjisi yoktur, ama hareket ediyorsa kinetik enerjisi vardır. Potansiyel enerjinin çekim ve esneklik olmak üzere iki çeşidi vardır; kinetik enerjinin böyle bir ayrımı yoktur."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Özellik",
-     "Kinetik enerji",
-     "Potansiyel enerji"
-    ],
-    "satirlar": [
-     [
-      "Kaynağı",
-      "Cismin hareketi",
-      "Cismin konumu ya da şekli"
-     ],
-     [
-      "Bağlı olduğu değişkenler",
-      "Kütle ve sürat",
-      "Çekim: kütle ve yükseklik; esneklik: şekil değişiminin miktarı ve yayın cinsi"
-     ],
-     [
-      "Duran cisimde",
-      "Yoktur",
-      "Olabilir: cisim yüksekteyse ya da gerilip sıkıştırılmışsa"
-     ],
-     [
-      "Çeşitleri",
-      "Tek türdür",
-      "Çekim potansiyel enerjisi ve esneklik potansiyel enerjisi"
-     ],
-     [
-      "Günlük yaşam örneği",
-      "Koşan atlet, akan dere, fırlayan ok",
-      "Barajdaki su, raftaki kitap, gerilmiş yay"
-     ],
-     [
-      "Birimi",
-      "joule (J)",
-      "joule (J)"
-     ]
-    ]
+    "baslik": "Eğik Düzlem Deneylerinde 'Yükseklik = Sürat' İpucu!",
+    "metin": "Eğik düzlem deneylerinde farklı kütleli iki bilye {koyu:aynı yükseklikten} serbest bırakıldığında, eğik düzlemin alt ucuna {koyu:eşit süratle} ulaşırlar! Dolayısıyla bilyelerin farklı yükseklikten bırakılması {koyu:süratlerinin farklı olması} anlamına gelir."
    },
-   "kutu": {
-    "tur": "hatirla",
-    "metin": "İkisi de enerjidir, ikisi de joule ile ölçülür, ikisi de iş yapabilir. Fark kaynaktadır: biri harekette, öteki konumda ya da şekilde saklıdır."
-   }
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 424\" role=\"img\" aria-label=\"Konu özet şeması\"><text x=\"400\" y=\"32\" font-family=\"sans-serif\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">KUVVET, İŞ VE ENERJİ İLİŞKİSİ: KİNETİK VE POTANSİYEL ENERJİ</text><rect x=\"20\" y=\"56\" width=\"365\" height=\"290\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"80\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. KİNETİK (HAREKET) ENERJİSİ (Ek)</text><rect x=\"35\" y=\"100\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"116\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Enerji Nedir? (Birim: Joule - J)</text><text x=\"202\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Bir cismin İŞ YAPABİLME yeteneğine enerji denir.</text><rect x=\"35\" y=\"150\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"166\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Kinetik Enerji Tanımı</text><text x=\"202\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Hareket hâlindeki cisimlerin sahip olduğu enerjidir.</text><rect x=\"35\" y=\"200\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"216\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. Değişken: Sürat (v) — Doğru Orantılı</text><text x=\"202\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Kütle sabitken sürat artarsa kinetik enerji ARTAR.</text><rect x=\"35\" y=\"250\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"266\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">2. Değişken: Kütle (m) — Doğru Orantılı</text><text x=\"202\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Sürat sabitken kütle artarsa kinetik enerji ARTAR.</text><rect x=\"35\" y=\"300\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"316\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Günlük Hayat Örnekleri</text><text x=\"202\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Koşan sporcu, akan nehir, dönen rüzgâr türbini, uçan kuş.</text><rect x=\"400\" y=\"56\" width=\"380\" height=\"290\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"80\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">2. POTANSİYEL (DURUM / DEPO) ENERJİSİ (Ep)</text><rect x=\"415\" y=\"100\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"116\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">A) Çekim Potansiyel Enerjisi</text><text x=\"590\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Belirli bir yükseklikteki cisimlerin ağırlığından dolayı enerjisidir.</text><rect x=\"415\" y=\"150\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"166\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Çekim Potansiyelinin Bağlı Olduğu Değişkenler</text><text x=\"590\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">1) Ağırlık / Kütle (G) ile doğru, 2) Yükseklik (h) ile doğru orantılı!</text><rect x=\"415\" y=\"200\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"216\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Çekim Potansiyeli Örnekleri</text><text x=\"590\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Dalda duran elma, barajdaki su, rafın üstündeki kitap.</text><rect x=\"415\" y=\"250\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"266\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">B) Esneklik Potansiyel Enerjisi</text><text x=\"590\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Esnek cisimlerin sıkıştırılması veya gerilmesiyle depolanan enerji.</text><rect x=\"415\" y=\"300\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"316\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Esneklik Potansiyelinin Değişkenleri</text><text x=\"590\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">1) Yay esneklik özelliğine (cins/kalınlık), 2) Sıkışma/gerilme miktarına!</text><rect x=\"20\" y=\"360\" width=\"760\" height=\"48\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"400\" y=\"380\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">DENEY DEĞİŞKENLERİ: Bağımsız Değişken = Bizim değiştirdiğimiz | Bağımlı Değişken = Sonuçta değişen enerji!</text><text x=\"400\" y=\"398\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Hem yüksekte olan hem de hareket eden cisimler (ör. uçmakta olan uçak/kuş) HEM KİNETİK HEM POTANSİYEL enerjiye sahiptir!</text></svg>"
   },
   {
-   "baslik": "Aynı anda ikisi birden: enerji el değiştirir",
+   "baslik": "2. Potansiyel Enerji: Çekim ve Esneklik Potansiyel Enerjisi",
    "metin": [
-    "Bir cisim yalnızca bir enerji türüne sahip olmak zorunda değildir. Gökyüzünde uçan bir kuş hem hareket eder hem de yüksektedir; dolayısıyla hem kinetik hem de çekim potansiyel enerjisi vardır. Yokuş aşağı kayan kayakçı, havada süzülen uçak ve dalından düşmekte olan elma için de aynı şey geçerlidir.",
-    "Düşen elmayı izlersen ilginç bir şey fark edersin: elma alçaldıkça yüksekliği, yani çekim potansiyel enerjisi azalır; buna karşılık sürati, yani kinetik enerjisi artar. Potansiyel enerji azalırken kinetik enerji artmaktadır. Salıncakta da aynısı olur: en yüksek noktada bir an durursun; orada kinetik enerjin sıfır, potansiyel enerjin en büyüktür. En alçak noktadan geçerken ise süratin ve kinetik enerjin en büyük, potansiyel enerjin en küçüktür.",
-    "Sıkıştırılmış yayı bıraktığında oyuncak araba fırlar: esneklik potansiyel enerjisi kinetik enerjiye dönüşür. Yere çarpan top bir an için yassılaşır, sonra eski şekline dönerek zıplar: kinetik enerji önce esneklik potansiyel enerjisine, sonra yeniden kinetik enerjiye dönüşür. Bu dönüşümleri önümüzdeki haftalarda ayrıntısıyla inceleyeceğiz; şimdilik enerjinin bir türden diğerine geçebildiğini aklında tut."
+    "Cisimlerin hareket etmese bile konumları veya fiziksel durumları nedeniyle {koyu:depoladıkları} enerjiye {koyu:potansiyel (durum) enerjisi} denir ve ikiye ayrılır:\n{koyu:A) Çekim Potansiyel Enerjisi:}\nYerden belirli bir yükseklikte bulunan cisimlerin yer çekimi kuvveti nedeniyle sahip olduğu enerjidir (Örn: Ağaç dalındaki elma, barajda biriken su, balkondaki saksı). Çekim potansiyel enerjisi {koyu:iki değişkene} bağlıdır:\n1. {koyu:Cismin Ağırlığı (veya Kütlesi):} Aynı yükseklikten kum havuzuna bırakılan iki top içerisinden {koyu:ağırlığı fazla olan} kumda daha derin iz bırakır; yani ağırlık arttıkça çekim potansiyel enerjisi {koyu:artar}.\n2. {koyu:Cismin Yerden Yüksekliği (h):} Özdeş iki toptan {koyu:daha yüksekten bırakılan} kumda daha derin iz bırakır; yani yükseklik arttıkça çekim potansiyel enerjisi {koyu:artar}.",
+    "{koyu:B) Esneklik Potansiyel Enerjisi:}\nKuvvet uygulandığında şekli değişen, kuvvet kaldırıldığında eski hâline dönen {koyu:esnek cisimlerin} (yay, paket lastiği, ok yayı, trambolin, kurmalı saat zembereği) {koyu:sıkıştırılması veya gerilmesiyle} depolanan enerjidir (Örn: Oyun hamuru ve cam esnek olmadığı için esneklik potansiyel enerjisi depolayamaz!).\nEsneklik potansiyel enerjisi {koyu:iki değişkene} bağlıdır:\n1. {koyu:Sıkışma veya Gerilme Miktarı:} Özdeş bir yay ne kadar çok sıkıştırılır veya gerilirse depoladığı enerji o kadar {koyu:artar}.\n2. {koyu:Esnek Cismin Cinsi ve Kalınlığı (Sertliği):} Kalın (sert) bir yay ile ince bir yay eşit miktarda sıkıştırıldığında, {koyu:kalın yayın depoladığı esneklik potansiyel enerjisi daha fazladır}."
    ],
-   "kutu": {
-    "tur": "bilgi",
-    "metin": "Salıncak, lunapark treni ve zıplayan top, kinetik ile potansiyel enerjinin sürekli yer değiştirdiği örneklerdir. Biri azalırken öteki artar."
-   }
-  },
-  {
-   "baslik": "Günlük yaşamdaki örnekleri sınıflandırma",
-   "metin": [
-    "Bir görsele ya da olaya baktığında enerji türünü bulmak için kendine üç soru sor. Cisim hareket ediyor mu? Ediyorsa kinetik enerjisi vardır. Cisim yerden yüksekte mi? Öyleyse çekim potansiyel enerjisi vardır. Gerilmiş, sıkıştırılmış ya da bükülmüş esnek bir cisim var mı? Varsa esneklik potansiyel enerjisi vardır. Birden fazla soruya “evet” diyorsan cisim birden fazla enerji türüne sahiptir.",
-    "Bazı örnekler ilk bakışta yanıltıcı olabilir. Baraj gölündeki su hareketsizdir ama yüksekte olduğu için büyük bir çekim potansiyel enerjisi taşır; kapaklar açıldığında bu enerji akan suyun kinetik enerjisine dönüşür. Masanın üzerinde duran kitap, yere göre yüksekte olduğu için çekim potansiyel enerjisine sahiptir; masadan düşerse ayağına çarpıp canını yakabilir. Rüzgâr gözle görülmez ama hareket eden havadır; bu yüzden kinetik enerjisi vardır ve yel değirmeninin kanatlarını döndürebilir."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Durum",
-     "Enerji türü",
-     "Gerekçe"
-    ],
-    "satirlar": [
-     [
-      "Baraj gölünde biriken su",
-      "Çekim potansiyel enerjisi",
-      "Yüksekte, hareketsiz"
-     ],
-     [
-      "Düz yolda koşan atlet",
-      "Kinetik enerji",
-      "Hareket ediyor, yerde"
-     ],
-     [
-      "Gerilmiş sapan lastiği",
-      "Esneklik potansiyel enerjisi",
-      "Esnek cisim şekil değiştirmiş, bırakılınca eski hâline dönecek"
-     ],
-     [
-      "Yokuş aşağı kayan kayakçı",
-      "Kinetik enerji ve çekim potansiyel enerjisi",
-      "Hem hareket ediyor hem yüksekte"
-     ],
-     [
-      "Yerde duran top",
-      "Yere göre ikisi de yok",
-      "Hareketsiz, yerde ve şekli bozulmamış"
-     ]
-    ]
-   },
    "kutu": {
     "tur": "ipucu",
-    "metin": "Üç soru: Hareket ediyor mu? Yüksekte mi? Gerilmiş ya da sıkışmış mı? Yanıtlar sana enerji türünü söyler; birden çok “evet” varsa birden çok enerji türü vardır."
+    "baslik": "Hangi Cisimde Hangi Enerji Var? Hızlı Tablo!",
+    "metin": "• {koyu:Yerde yuvarlanan top:} Sadece {koyu:Kinetik Enerji}\n• {koyu:Dalda duran elma:} Sadece {koyu:Çekim Potansiyel Enerjisi}\n• {koyu:Gerilmiş ok yayı:} Sadece {koyu:Esneklik Potansiyel Enerjisi}\n• {koyu:Havada uçan uçak / daldan düşmekte olan elma:} Hem {koyu:Kinetik} hem {koyu:Çekim Potansiyel Enerjisi}!"
    }
   }
  ],
  "ornekler": [
   {
-   "soru": "Aynı yolda aynı süratle ilerleyen boş bir kamyon ile yüklü bir kamyonun kinetik enerjilerini karşılaştırınız. Yüklü kamyon süratini iki katına çıkarırsa kinetik enerjisi nasıl değişir?",
-   "cevap": "Süratleri eşit olduğundan kinetik enerjiyi kütle belirler; kütlesi büyük olan yüklü kamyonun kinetik enerjisi daha büyüktür. Yüklü kamyon süratini iki katına çıkarırsa kinetik enerjisi iki katına değil, dört katına çıkar; çünkü sürat, kinetik enerjiyi kütleden daha güçlü etkiler."
+   "soru": "Bir öğrenci 'Kinetik enerji cismin süratine bağlı mıdır?' sorusunu araştırmak için kum havuzu veya takoz düzeneğinde nasıl bir kontrollü deney tasarlamalıdır?",
+   "cevap": "Süratin etkisini araştırdığı için {koyu:bağımsız değişken sürat} olmalıdır. Bunun için {koyu:aynı kütleli (özdeş)} iki bilyeyi eğik düzlemin {koyu:farklı yüksekliklerinden} (örneğin h ve 2h) serbest bırakmalıdır. Böylece kütle sabit tutulmuş (kontrol edilen değişken), yatay zemindeki sürat değiştirilmiş ve takozun sürüklenme mesafesiyle {koyu:kinetik enerji (bağımlı değişken)} ölçülmüş olur."
   },
   {
-   "soru": "Ada ile Ege aynı kitaptan birer tane taşıyor. Ada kitabı yerden kaldırıp birinci rafa, Ege ise kendi kitabını yerden kaldırıp üçüncü rafa koyuyor. Hangi kitabın çekim potansiyel enerjisi daha büyüktür? Kim daha çok iş yapmıştır?",
-   "cevap": "Kitaplar aynı olduğundan kütleleri eşittir; fark yüksekliktedir. Üçüncü raf daha yüksek olduğu için Ege’nin koyduğu kitabın çekim potansiyel enerjisi daha büyüktür. Kitabı daha yükseğe taşıyan Ege aynı kuvvetle daha çok yer değiştirme sağlamış, dolayısıyla daha çok iş yapmıştır; yaptığı iş kitapta çekim potansiyel enerjisi olarak saklanır."
+   "soru": "1. katta bulunan 2 kg kütleli K saksısı, 3. katta bulunan 2 kg kütleli L saksısı ve 3. katta bulunan 5 kg kütleli M saksısının yere göre çekim potansiyel enerjilerini büyükten küçüğe sıralayınız.",
+   "cevap": "• L ve M saksıları aynı yükseklikte (3. katta) olduğu için kütlesi/ağırlığı büyük olan M’nin çekim potansiyel enerjisi L’den büyüktür ({koyu:M > L}).\n• K ve L saksılarının kütleleri eşit (2 kg) olduğu için daha yüksekte olan L’nin çekim potansiyel enerjisi K’den büyüktür ({koyu:L > K}).\nSonuç olarak sıralama: {koyu:Em > El > Ek} olur."
   },
   {
-   "soru": "Bir okçu ilk atışında yayı az, ikinci atışında aynı yayı çok geriyor. Hangi atışta ok daha uzağa gider? Enerji kavramlarıyla açıklayınız.",
-   "cevap": "İkinci atışta. Yay ne kadar çok gerilirse depoladığı esneklik potansiyel enerjisi o kadar büyük olur. Yay bırakıldığında bu enerji okun kinetik enerjisine dönüşür; daha çok enerji alan ok daha hızlı fırlar ve daha uzağa gider."
-  },
-  {
-   "soru": "Aşağıdaki durumların her birinde hangi enerji türlerinin bulunduğunu belirleyiniz: a) Tepede hareketsiz bekleyen kayakçı b) Yokuş aşağı kayan kayakçı c) Yerde duran top d) Gerilmiş sapan lastiği e) Düz yolda koşan atlet",
-   "cevap": "a) Yalnızca çekim potansiyel enerjisi; kayakçı yüksekte ama hareketsiz. b) Hem kinetik hem çekim potansiyel enerjisi; kayakçı hareketli ve hâlâ yüksekte. c) Yere göre ikisi de yok; top hareketsiz ve yerde. d) Esneklik potansiyel enerjisi; lastik gerilmiş, bırakılınca eski hâline dönecek. e) Kinetik enerji; atlet hareketli ve yerde."
-  },
-  {
-   "soru": "Bir deneyde aynı bilye farklı yüksekliklerden kum dolu kaba bırakılıyor ve açtığı çukurun derinliği ölçülüyor: 20 cm yükseklikten 1 cm, 40 cm yükseklikten 2 cm, 60 cm yükseklikten 3 cm. a) Bu verilerden hangi sonuç çıkarılır? b) Bilye 80 cm yükseklikten bırakılırsa çukur derinliği ne kadar olabilir? c) Deneyde hangi değişken sabit tutulmuştur, neden?",
-   "cevap": "a) Yükseklik arttıkça çukur derinleşmektedir; bilye daha yüksekten bırakıldığında daha çok çekim potansiyel enerjisi taşır ve kuma daha çok iş yapar. b) Her 20 cm yükseklik çukuru 1 cm derinleştirdiğine göre verilerdeki düzen sürerse 80 cm için yaklaşık 4 cm beklenir. c) Bilyenin kütlesi sabit tutulmuştur; çünkü yalnızca yüksekliğin etkisini görmek için öteki değişkenin değişmemesi gerekir."
-  },
-  {
-   "soru": "Bir lunapark treni rayın en yüksek noktasında yavaşça ilerliyor, sonra aşağı doğru hızlanıyor. En yüksek noktada ve en alçak noktada trenin kinetik ve potansiyel enerjilerini karşılaştırınız.",
-   "cevap": "En yüksek noktada trenin yüksekliği en fazla olduğundan çekim potansiyel enerjisi en büyük, sürati küçük olduğundan kinetik enerjisi küçüktür. Aşağı indikçe yükseklik azalır, sürat artar: potansiyel enerji azalırken kinetik enerji artar. En alçak noktada kinetik enerji en büyük, çekim potansiyel enerjisi en küçüktür."
+   "soru": "Aşağıdaki cisimlerden hangilerinde esneklik potansiyel enerjisi depolanabilir: (1) Sıkıştırılmış çelik yay, (2) Sıkılmış oyun hamuru, (3) Gerilmiş sapan lastiği, (4) Buruşturulmuş alüminyum folyo?",
+   "cevap": "Oyun hamuru ve alüminyum folyo esnek maddeler değildir; kuvvet kaldırıldığında eski şekillerine dönemezler. Buna karşılık {koyu:(1) sıkıştırılmış çelik yay} ve {koyu:(3) gerilmiş sapan lastiği} esnek cisimler olduğu için {koyu:esneklik potansiyel enerjisi} depolar."
   }
  ],
  "etkinlikler": [
   {
    "tur": "coktan",
-   "soru": "Aşağıdaki cisimlerden hangisi yalnızca çekim potansiyel enerjisine sahiptir?",
+   "soru": "Hareket hâlindeki cisimlerin sahip olduğu kinetik enerjinin büyüklüğü aşağıdaki değişken çiftlerinden hangisine bağlıdır?",
    "secenekler": [
-    "Düz yolda yuvarlanan top",
-    "Rafın üstünde duran vazo",
-    "Gökyüzünde uçan kuş",
-    "Yerde duran çanta"
+    "Cismin rengi ve hacmi",
+    "Cismin kütlesi ve sürati",
+    "Cismin sıcaklığı ve yoğunluğu",
+    "Cismin yerden yüksekliği ve esnekliği",
+    "Cismin yüzey alanı ve şekli"
    ],
    "dogru": 1,
-   "aciklama": "Vazo hareket etmediği için kinetik enerjisi yoktur; yerden yüksekte olduğu için yalnızca çekim potansiyel enerjisine sahiptir. Yuvarlanan topta yalnızca kinetik, uçan kuşta her iki enerji vardır; yerde duran çantanın yere göre ikisi de yoktur."
+   "aciklama": "Kinetik enerji yalnızca cismin kütlesine (m) ve süratine (v) bağlıdır; her ikisiyle de doğru orantılıdır."
   },
   {
    "tur": "coktan",
-   "soru": "Aynı süratle ilerleyen boş bir otobüs ile yolcu dolu bir otobüs için aşağıdakilerden hangisi doğrudur?",
+   "soru": "Aşağıda verilen durumlardan hangisinde cisim hem kinetik enerjiye hem de çekim potansiyel enerjisine aynı anda sahiptir?",
    "secenekler": [
-    "Boş otobüsün kinetik enerjisi daha büyüktür; çünkü daha kolay hızlanır.",
-    "Dolu otobüsün kinetik enerjisi daha büyüktür; çünkü kütlesi daha büyüktür.",
-    "Kinetik enerjileri eşittir; çünkü süratleri eşittir.",
-    "İkisinin de kinetik enerjisi yoktur; çünkü yerden yüksekte değillerdir."
+    "Kitaplığın en üst rafında duran ansiklopedi",
+    "Düz asfalt yolda hızla ilerleyen otomobil",
+    "Gökyüzünde uçmakta olan kartal",
+    "Masada sıkıştırılmış hâlde bekleyen yay",
+    "Ağacın dalında asılı duran elma"
    ],
-   "dogru": 1,
-   "aciklama": "Kinetik enerji kütleye ve sürate bağlıdır. Süratler eşit olduğuna göre farkı kütle yaratır; kütlesi büyük olan dolu otobüsün kinetik enerjisi daha büyüktür. Yüksekte olmak kinetik enerjinin değil, çekim potansiyel enerjisinin koşuludur."
+   "dogru": 2,
+   "aciklama": "Gökyüzünde uçan kartal yerden yüksekte olduğu için çekim potansiyel enerjisine, hareket ettiği için de kinetik enerjiye sahiptir."
   },
   {
    "tur": "coktan",
-   "soru": "Aşağıdakilerin hangisinde esneklik potansiyel enerjisi vardır?",
+   "soru": "Bir öğrenci özdeş iki demir bilyeden birini kum havuzuna 1 metre yükseklikten, diğerini ise 2 metre yükseklikten serbest bırakıyor ve kumda açılan çukurların derinliğini ölçüyor. Bu deneydeki 'bağımsız değişken' ve 'bağımlı değişken' aşağıdakilerden hangisinde doğru verilmiştir?",
    "secenekler": [
-    "Dağın tepesinde duran kaya",
-    "Yayı gerilmiş, atışa hazır bir ok",
-    "Havada süzülen yolcu uçağı",
-    "Yokuş aşağı inen bisikletli"
+    "Bağımsız: Cismin ağırlığı — Bağımlı: Cismin yüksekliği",
+    "Bağımsız: Cismin yüksekliği — Bağımlı: Çekim potansiyel enerjisi",
+    "Bağımsız: Çekim potansiyel enerjisi — Bağımlı: Cismin kütlesi",
+    "Bağımsız: Kumun cinsi — Bağımlı: Cismin sürati",
+    "Bağımsız: Esneklik potansiyel enerjisi — Bağımlı: Cismin yüksekliği"
    ],
    "dogru": 1,
-   "aciklama": "Gerilmiş yay şekil değiştirmiş esnek bir cisimdir; depoladığı enerji esneklik potansiyel enerjisidir. Kayada çekim potansiyel enerjisi, uçakta ve bisikletlide ise kinetik enerji ile çekim potansiyel enerjisi vardır."
+   "aciklama": "Öğrencinin kendi değiştirdiği değişken 'yükseklik' (bağımsız değişken), buna bağlı olarak değişen sonuç ise 'çekim potansiyel enerjisi / çukur derinliği' (bağımlı değişken) olur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Aşağıdaki cisimlerden hangisi esneklik potansiyel enerjisine sahip değildir?",
+   "secenekler": [
+    "Ok atmak için gerilmiş yay",
+    "Üzerine zıplanarak çökertilmiş trambolin ağı",
+    "İki ucundan çekilerek uzatılmış paket lastiği",
+    "Elimizle bastırarak şeklini değiştirdiğimiz oyun hamuru",
+    "Kurulmuş mekanik kol saatinin içindeki zemberek yayı"
+   ],
+   "dogru": 3,
+   "aciklama": "Oyun hamuru esnek bir madde değildir; kuvvet kaldırıldığında eski hâline dönmediği için esneklik potansiyel enerjisi depolayamaz."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Aynı otoyolda 90 km/h sabit süratle ilerleyen K motosikleti (200 kg), L otomobili (1200 kg) ve M otobüsünün (8000 kg) kinetik enerjileri arasındaki ilişki aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Ek > El > Em",
+    "Ek = El = Em",
+    "Em > El > Ek",
+    "El > Em > Ek",
+    "Em > Ek > El"
+   ],
+   "dogru": 2,
+   "aciklama": "Süratleri eşit (90 km/h) olan araçlardan kütlesi en büyük olan otobüsün (M) kinetik enerjisi en büyük, kütlesi en küçük olan motosikletin (K) kinetik enerjisi en küçüktür (Em > El > Ek)."
   },
   {
    "tur": "dy",
-   "yonerge": "Aşağıdaki ifadeler doğru mu, yanlış mı?",
+   "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
    "ifadeler": [
     {
-     "metin": "Duran bir cismin kinetik enerjisi yoktur.",
+     "metin": "Bir cismin iş yapabilme yeteneğine enerji denir ve enerjinin Uluslararası Birim Sistemi’ndeki birimi Joule (J)’dür.",
      "dogru": true,
-     "aciklama": "Kinetik enerji hareketten kaynaklanır; hareket etmeyen cismin kinetik enerjisi olmaz."
+     "aciklama": "İş ve enerji birbiriyle doğrudan ilişkilidir ve her ikisinin de birimi Joule’dür."
     },
     {
-     "metin": "Bir cismin potansiyel enerjisi olması için hareket etmesi gerekir.",
+     "metin": "Kütleleri eşit olan iki koşucudan sürati daha az olanın kinetik enerjisi daha fazladır.",
      "dogru": false,
-     "aciklama": "Potansiyel enerji konumdan ya da şekilden kaynaklanır; raftaki vazo ya da gerilmiş yay hareket etmeden de potansiyel enerjiye sahiptir."
+     "aciklama": "Yanlıştır; kinetik enerji süratle doğru orantılıdır, sürati fazla olanın kinetik enerjisi daha fazladır."
     },
     {
-     "metin": "Kinetik ve potansiyel enerji aynı birimle, joule ile ölçülür.",
+     "metin": "Barajlarda yüksekte biriktirilen su, çekim potansiyel enerjisine sahiptir.",
      "dogru": true,
-     "aciklama": "İkisi de enerji çeşididir; enerjinin ve işin birimi joule (J) olarak yazılır."
+     "aciklama": "Yüksekte tutulan baraj suyu ağırlığı ve yüksekliği nedeniyle çekim potansiyel enerjisi depolar."
     },
     {
-     "metin": "Aynı yükseklikte duran iki cisimden kütlesi büyük olanın çekim potansiyel enerjisi daha büyüktür.",
+     "metin": "Özdeş bir yay 5 cm yerine 10 cm sıkıştırılırsa yayda depolanan esneklik potansiyel enerjisi artar.",
      "dogru": true,
-     "aciklama": "Çekim potansiyel enerjisi kütleye ve yüksekliğe bağlıdır; yükseklikler eşitken kütlesi büyük olanın enerjisi daha büyüktür."
+     "aciklama": "Esneklik potansiyel enerjisi sıkışma veya gerilme miktarıyla doğru orantılıdır."
     },
     {
-     "metin": "Kinetik enerji yalnızca cismin kütlesine bağlıdır.",
-     "dogru": false,
-     "aciklama": "Kinetik enerji hem kütleye hem sürate bağlıdır; sürat, kinetik enerjiyi kütleden bile daha güçlü etkiler."
+     "metin": "Yerde hareketsiz duran bir futbol topunun kinetik enerjisi sıfırdır.",
+     "dogru": true,
+     "aciklama": "Duran (sürati sıfır olan) cisimlerin kinetik enerjisi yoktur."
     }
    ]
   },
   {
    "tur": "eslestir",
-   "yonerge": "Durumları sahip oldukları enerji türüyle eşleştiriniz.",
+   "soru": "Aşağıdaki günlük yaşam örneklerini sahip oldukları baskın enerji türü veya kavramla eşleştiriniz.",
    "ciftler": [
     [
-     "Baraj gölünde biriken su",
+     "Düz rayda hızla ilerleyen tren",
+     "Kinetik (hareket) enerjisi"
+    ],
+    [
+     "Ağacın en üst dalında duran elma",
      "Çekim potansiyel enerjisi"
     ],
     [
-     "Gerilmiş sapan lastiği",
+     "Okçunun bırakmak üzere gerdiği yay",
      "Esneklik potansiyel enerjisi"
     ],
     [
-     "Düz pistte koşan atlet",
-     "Kinetik enerji"
-    ],
-    [
-     "Gökyüzünde uçan kuş",
+     "Gökyüzünde uçmakta olan yolcu uçağı",
      "Hem kinetik hem çekim potansiyel enerjisi"
     ],
     [
-     "Yerde hareketsiz duran top",
-     "Yere göre kinetik enerjisi de potansiyel enerjisi de yok"
+     "Joule (J)",
+     "İş ve enerjinin ortak birimi"
     ]
    ]
   },
   {
    "tur": "bosluk",
-   "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
    "cumleler": [
     {
-     "metin": "Hareket eden cisimlerin hareketlerinden dolayı sahip olduğu enerjiye ___ enerji denir.",
+     "metin": "Bir cismin iş yapabilme yeteneğine ___ denir.",
+     "cevap": "enerji"
+    },
+    {
+     "metin": "Hareket hâlindeki cisimlerin sahip olduğu enerjiye ___ enerji adı verilir.",
      "cevap": "kinetik"
     },
     {
-     "metin": "Yerden yüksekte duran bir cismin konumundan dolayı sahip olduğu enerji ___ potansiyel enerjisidir.",
+     "metin": "Yerden belirli bir yükseklikte bulunan cisimlerin ağırlıklarından dolayı sahip olduğu enerjiye ___ potansiyel enerjisi denir.",
      "cevap": "çekim"
     },
     {
-     "metin": "Kinetik enerji, cismin kütlesine ve ___ bağlıdır.",
-     "cevap": "süratine"
+     "metin": "Yay ve lastik gibi esnek cisimlerin sıkıştırılması veya gerilmesiyle depolanan enerjiye ___ potansiyel enerjisi denir.",
+     "cevap": "esneklik"
     },
     {
-     "metin": "Gerilmiş bir yayda ya da sıkıştırılmış bir lastikte ___ potansiyel enerjisi depolanır.",
-     "cevap": "esneklik"
+     "metin": "Aynı süratle hareket eden iki araçtan ___ fazla olanın kinetik enerjisi daha büyüktür.",
+     "cevap": "kütlesi"
     }
    ],
    "fazla": [
-    "yüksekliğine"
+    "sürtünme",
+    "hacmi"
    ]
   },
   {
    "tur": "ogretici",
-   "soru": "Elif salıncakta sallanıyor. Salıncağın en yüksek noktasında ve en alçak noktasında Elif’in kinetik ve potansiyel enerjilerini karşılaştırınız. İki enerji arasında nasıl bir ilişki gözlemlersiniz?",
+   "soru": "Kinetik enerji, çekim potansiyel enerjisi ve esneklik potansiyel enerjisinin bağlı olduğu ikişer değişkeni maddeler hâlinde yazınız.",
    "ipuclari": [
-    "En yüksek noktada salıncak yön değiştirmeden önce bir an durur.",
-    "En alçak noktada Elif yere en yakındır ve en hızlıdır."
+    "1. İpucu: Kinetik enerji için kütle ve sürati belirtiniz.",
+    "2. İpucu: Çekim potansiyeli için ağırlık ve yüksekliği; esneklik potansiyeli için yayın özelliği ve sıkışma/gerilme miktarını yazınız."
    ],
-   "cevap": "En yüksek noktada Elif bir an durduğu için kinetik enerjisi sıfır, yerden en yüksekte olduğu için çekim potansiyel enerjisi en büyüktür. En alçak noktada ise sürati en büyük olduğundan kinetik enerjisi en büyük, yüksekliği en az olduğundan potansiyel enerjisi en küçüktür. Biri azalırken öteki artar: salıncakta enerji sürekli bir türden diğerine dönüşür."
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Yayla çalışan bir oyuncak araba tasarlıyorsun: yayı sıkıştırıp bırakınca araba ileri fırlıyor. Arabanın daha uzağa gitmesi için tasarımında neleri değiştirebilirsin? Bu sırada hangi enerji türü hangisine dönüşür?",
-   "ipuclari": [
-    "Esneklik potansiyel enerjisinin nelere bağlı olduğunu hatırla.",
-    "Araba harekete geçtiğinde sahip olduğu enerji hangi türdür?"
-   ],
-   "cevap": "Yayı daha çok sıkıştırabilir ya da daha sert bir yay kullanabilirsin; böylece yayda daha fazla esneklik potansiyel enerjisi depolanır. Yay bırakıldığında bu enerji arabanın kinetik enerjisine dönüşür; daha çok enerji alan araba daha hızlı fırlar ve daha uzağa gider. Arabayı hafifletmek de aynı enerjiyle daha yüksek sürat kazanmasını sağlar."
+   "cevap": "1. Kinetik Enerjinin Bağlı Olduğu Değişkenler:\n• Cismin kütlesi (m) ile doğru orantılıdır.\n• Cismin sürati (v) ile doğru orantılıdır.\n2. Çekim Potansiyel Enerjisinin Bağlı Olduğu Değişkenler:\n• Cismin ağırlığı / kütlesi (G) ile doğru orantılıdır.\n• Cismin yerden yüksekliği (h) ile doğru orantılıdır.\n3. Esneklik Potansiyel Enerjisinin Bağlı Olduğu Değişkenler:\n• Esnek cismin cinsi, kalınlığı ve sertlik özelliği.\n• Esnek cismin sıkıştırılma veya gerilme (uzama) miktarı."
   }
- ],
- "ozet": [
-  "Enerji, iş yapabilme yeteneğidir; bir cisme iş yapıldığında enerjisi artar. İş gibi enerji de joule (J) birimiyle ölçülür.",
-  "Kinetik enerji, hareket eden cisimlerin hareketlerinden dolayı sahip olduğu enerjidir; kütle ve sürat arttıkça artar, süratin etkisi daha büyüktür. Duran cismin kinetik enerjisi yoktur.",
-  "Potansiyel enerji, cismin konumundan ya da şeklinden kaynaklanır. Çekim potansiyel enerjisi kütle ve yüksekliğe, esneklik potansiyel enerjisi ise esnek cismin ne kadar gerilip sıkıştırıldığına bağlıdır.",
-  "Benzerlikler: ikisi de enerji çeşididir, iş yapabilir, joule ile ölçülür ve birbirine dönüşebilir. Farklar: biri harekete, öteki konuma ya da şekle bağlıdır; duran cismin kinetik enerjisi yoktur ama potansiyel enerjisi olabilir.",
-  "Uçan kuş ya da yokuş inen kayakçı gibi cisimler aynı anda hem kinetik hem potansiyel enerjiye sahip olabilir. Salıncakta, düşen elmada ve fırlayan okta enerji bir türden diğerine dönüşür."
  ]
 }

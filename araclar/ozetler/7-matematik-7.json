@@ -1,310 +1,228 @@
 {
+ "ad": "7-matematik-7",
  "sinif": 7,
  "ders": "matematik",
+ "ders_adi": "Matematik",
  "hafta": 7,
  "tarih": "26-30 Ekim 2026",
- "yayin_tarihi": "2026-10-13",
- "unite": "Sayılar ve Nicelikler (1)",
- "konu": "Rasyonel Sayılarla İşlemler ve Problem Çözme",
+ "yayin_tarihi": "2026-10-28",
+ "unite": "SAYILAR VE NİCELİKLER (1)",
+ "konu": "Rasyonel Sayılarla İşlemler ve Problem Çözme: Kare-Küp, Çok Adımlı İşlemler ve Gerçek Yaşam Problemleri",
  "ciktilar": [
-  "MAT.7.1.4. Rasyonel sayılar ve işlemler içeren gerçek yaşam problemlerini çözebilme"
+  "Rasyonel sayıların karesini ve küpünü işaret ve parantez kurallarına dikkat ederek hesaplar.",
+  "Rasyonel sayılarla çok adımlı (merdivenli) işlemleri işlem önceliği ve ana kesir çizgisi kuralına göre yapar.",
+  "Gerçek yaşam durumlarında karşılaşılan rasyonel sayı problemlerini ('bütünün kesri', 'kalanın kesri', 'kesir kadarı verilen bütün') çözer."
  ],
- "giris": "Beşinci haftada rasyonel sayıları sayı doğrusuna yerleştirip karşılaştırmayı ve sıralamayı öğrendin. Geçen hafta ise bu sayılarla toplama, çıkarma, çarpma ve bölme işlemlerine başladın; işaret kurallarını önce tam sayılarla, sonra paydası 1’den farklı rasyonel sayılarla keşfettin. Bu hafta aynı işlemleri gerçek yaşamdan alınmış problemlerde kullanacaksın: sıcaklık değişimleri, deniz altındaki derinlikler, harçlık ve tasarruf hesapları, kesirli uzunluk ve ağırlıklar. Her problemde verilenleri ve isteneni belirleyecek, uygun işlemi ve temsili seçecek, çözdükten sonra sonucun doğru ve makul olup olmadığını kontrol edeceksin.",
+ "giris": "Geçen hafta rasyonel sayılarla toplama, çıkarma, çarpma ve bölme işlemlerinin temel kurallarını öğrenmiştik. Bu hafta rasyonel sayılar konumuzu bir adım ileri taşıyarak {koyu:rasyonel sayıların karesi ve küpünü}, {koyu:çok adımlı (merdivenli) işlemleri} ve sınavlarda en sık karşılaşılan {koyu:rasyonel sayı problemlerini çözme stratejilerini} uygulamalı örneklerle pekiştiriyoruz.",
+ "ozet": [
+  "{koyu:Rasyonel Sayıların Karesi:} Sıfırdan farklı her rasyonel sayının karesi (2. kuvveti) {koyu:daima pozitiftir}: (-{kesir:a|b})² = +{kesir:a²|b²}.",
+  "{koyu:Rasyonel Sayıların Küpü:} Bir rasyonel sayının küpü (3. kuvveti) alınırken {koyu:sayının işareti korunur}: pozitifin küpü pozitif, negatifin küpü negatiftir: (-{kesir:a|b})³ = -{kesir:a³|b³}.",
+  "{koyu:Tam Sayılı Kesirlerde Kuvvet:} Tam sayılı bir kesrin karesi veya küpü alınırken {koyu:önce mutlaka bileşik kesre çevrilir}, ardından pay ve paydanın kuvveti alınır.",
+  "{koyu:Çok Adımlı İşlemler:} İşlem önceliği {koyu:Üslü -> Parantez -> Çarpma/Bölme -> Toplama/Çıkarma} sırasıyla uygulanır; merdivenli kesirlerde {koyu:eşittir (=) hizasındaki ana kesir çizgisi} pay ve paydayı belirler.",
+  "{koyu:Problem Stratejileri:} Bütünün kesir kadarı bulunurken {koyu:çarpma}, kesir kadarı verilen bütün bulunurken {koyu:bölme} yapılır; {koyu:“kalanın kesri”} sorularında her adımda geriye kalan miktar üzerinden işlem yürütülür."
+ ],
  "bolumler": [
   {
-   "baslik": "Dört işlemi kısaca hatırla",
+   "baslik": "1. Rasyonel Sayıların Karesi, Küpü ve Çok Adımlı İşlemler",
    "metin": [
-    "Problemlere geçmeden önce geçen hafta öğrendiğin kuralları aklında tazele. Aynı işaretli iki rasyonel sayıyı toplarken mutlak değerleri toplar, ortak işareti sonuca verirsin: (−{kesir:1|4}) + (−{kesir:3|4}) = −{kesir:4|4} = −1. Farklı işaretli iki sayıyı toplarken mutlak değerlerin farkını alır, mutlak değeri büyük olan sayının işaretini kullanırsın: (−{kesir:5|6}) + {kesir:1|6} = −{kesir:4|6} = −{kesir:2|3}. Paydalar farklıysa işleme başlamadan önce paydaları eşitlersin.",
-    "Çıkarma işlemi, eksilene çıkanın ters işaretlisini eklemek demektir; (+2) − (+6) ile (+2) + (−6) aynı sonucu, −4’ü verir. Bu yüzden {kesir:1|2} − {kesir:3|4} işlemini {kesir:2|4} + (−{kesir:3|4}) = −{kesir:1|4} biçiminde düşünebilirsin. Ondalık gösterimlerde de kural değişmez: 2,5 − 4 = 2,5 + (−4) = −1,5. Bir sayıdan negatif bir sayı çıkarmak ise o sayının pozitifini eklemektir: 3 − (−4) = 3 + 4 = 7.",
-    "Çarpma ve bölmede önce işarete karar verirsin: Aynı işaretli iki sayının çarpımı ve bölümü pozitif, farklı işaretli iki sayının çarpımı ve bölümü negatiftir. Sonra kesirlerde pay ile payı, payda ile paydayı çarparsın: (−{kesir:2|3}) · {kesir:3|5} = −{kesir:6|15} = −{kesir:2|5}. Bölmede böleni ters çevirip çarparsın: (−{kesir:3|4}) ÷ (−{kesir:3|8}) = (−{kesir:3|4}) · (−{kesir:8|3}) = {kesir:24|12} = 2. İki negatif sayının bölümü olduğundan sonuç pozitiftir."
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "metin": "Toplama ve çıkarmada paydaları eşitle; çarpmada pay ile payı, payda ile paydayı çarp; bölmede böleni ters çevirip çarp. İşaret kuralı çarpma ve bölmede aynıdır: Aynı işaret pozitif, farklı işaret negatif sonuç verir."
-   },
-   "tablo": {
-    "basliklar": [
-     "İşlem",
-     "Kural",
-     "Örnek"
-    ],
-    "satirlar": [
-     [
-      "Toplama (aynı işaret)",
-      "Mutlak değerler toplanır, ortak işaret konur.",
-      "(−{kesir:1|4}) + (−{kesir:3|4}) = −1"
-     ],
-     [
-      "Toplama (farklı işaret)",
-      "Mutlak değerler çıkarılır, mutlak değeri büyük olanın işareti konur.",
-      "(−{kesir:5|6}) + {kesir:1|6} = −{kesir:2|3}"
-     ],
-     [
-      "Çıkarma",
-      "Çıkanın ters işaretlisi eklenir.",
-      "{kesir:1|2} − {kesir:3|4} = −{kesir:1|4}"
-     ],
-     [
-      "Çarpma",
-      "İşaret belirlenir; pay ile pay, payda ile payda çarpılır.",
-      "(−{kesir:2|3}) · {kesir:3|5} = −{kesir:2|5}"
-     ],
-     [
-      "Bölme",
-      "İşaret belirlenir; bölen ters çevrilip çarpılır.",
-      "(−{kesir:3|4}) ÷ (−{kesir:3|8}) = 2"
-     ]
-    ]
-   }
-  },
-  {
-   "baslik": "Problem çözmenin dört adımı",
-   "metin": [
-    "Bir problemi çözmek yalnızca işlem yapmak değildir. İlk adım anlamaktır: Problemi iki kez oku, verilen sayıları ve bunların neyi gösterdiğini yaz, ardından senden ne istendiğini kendi cümlenle söyle. Sayıların işaretine özellikle dikkat et; sıfırın altındaki sıcaklık, deniz seviyesinin altındaki derinlik ve borç negatif sayılarla gösterilir. Problemdeki sayı ve işlem bileşenlerini bu adımda ayırt edersin: Hangi sayı başlangıç değeri, hangisi değişim, hangisi tekrar sayısı?",
-    "İkinci adım plan yapmaktır. İstenene ulaşmak için hangi işlemin gerektiğine ve birden fazla işlem varsa bunların sırasına karar verirsin; gerekirse durumu sayı doğrusu, şekil ya da tablo gibi bir temsile dönüştürürsün. Üçüncü adımda planını uygular, her işlemi düzenli biçimde alt alta yazarsın. Dördüncü adım kontroldür: Sonuç makul mü, işlemleri tersten yaparak başlangıçtaki sayıya dönebiliyor musun, başka bir yolla aynı sonucu buluyor musun?",
-    "Örneğin sabah −3,5 °C olan sıcaklık öğlene kadar 6 °C artıp akşama kadar 4,5 °C düşüyorsa akşam sıcaklığını bulmak için verilenler −3,5; +6 ve −4,5’tir. Plan şudur: Başlangıç sıcaklığına artışı ekle, sonra düşüşü çıkar. Uygulama: −3,5 + 6 = 2,5 ve 2,5 − 4,5 = −2; akşam sıcaklığı −2 °C’dir. Kontrol için tersten git: −2 + 4,5 = 2,5 ve 2,5 − 6 = −3,5. Başlangıç değerine döndüğün için çözümün doğrudur. Sonuç makuldür de; çünkü artış düşüşten 1,5 °C daha büyük olduğundan akşam sıcaklığı sabahkinden 1,5 °C daha yüksek olmalıdır: −3,5 + 1,5 = −2."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "metin": "Verilenleri yazarken her sayının yanına ne anlama geldiğini de not et: “−3,5: sabah sıcaklığı”, “+6: öğlene kadar artış”, “−4,5: akşama kadar düşüş”. Böylece hangi işlemi neden seçtiğini kolayca açıklarsın."
-   }
-  },
-  {
-   "baslik": "Problemi temsile dönüştürmek",
-   "metin": [
-    "Paydası 1 olan rasyonel sayılarla, yani tam sayılarla kurulan problemlerde en kullanışlı temsil sayı doğrusudur. Sağa doğru atılan adım pozitif bir sayı eklemeyi, sola doğru atılan adım negatif bir sayı eklemeyi ya da çıkarmayı gösterir. Deniz yüzeyinin 12 m altındaki bir dalgıç 7 m daha dalarsa sayı doğrusunda −12’den 7 birim sola gidersin: −12 + (−7) = −19. Dalgıç ardından 4 m yükselirse 4 birim sağa gidersin: −19 + 4 = −15; dalgıç artık yüzeyin 15 m altındadır.",
-    "Borç ve alacak durumlarında sayma pulları da işe yarar: Her lira alacak için bir pozitif pul, her lira borç için bir negatif pul koyarsın; bir pozitif pul ile bir negatif pul birbirini götürüp sıfır yapar. 3 lira alacağı ve 5 lira borcu olan birinin durumu (+3) + (−5) = −2’dir; yani 2 lira borcu kalır. Sayma pullarını yalnızca toplama ve çıkarmada kullan; çarpma ve bölmede sayı doğrusunu ya da şekli tercih et.",
-    "Paydası 1’den farklı sayılarda şekil temsili işe yarar. {kesir:3|4} metrelik bir kurdeleyi {kesir:1|8} metrelik parçalara bölmek istiyorsan 1 metreyi gösteren bir şeridi 8 eş parçaya ayırırsın; {kesir:3|4} metre bu parçalardan 6 tanesine denk gelir. Şekil sana {kesir:3|4} ÷ {kesir:1|8} = {kesir:3|4} · 8 = {kesir:24|4} = 6 sonucunu önceden gösterir. Hangi temsili seçersen seç, problemi o temsil üzerinden kendi cümlelerinle anlatabilmelisin: “Yüzeyden 12 birim aşağıdan 7 birim daha indim, şimdi 19 birim aşağıdayım.”"
-   ],
-   "kutu": {
-    "tur": "bilgi",
-    "metin": "Sayı doğrusu, değişim ve yön içeren durumlar (sıcaklık, yükseklik, derinlik) için; şerit ve şekil modeli, kesirli bütünler için; tablo ise birden fazla gelir ve gider kalemini düzenlemek için uygun temsildir."
-   }
-  },
-  {
-   "baslik": "Hangi işlem? İstenen ile işlem arasındaki ilişki",
-   "metin": [
-    "Problemdeki anahtar düşünce, istenenle işlem arasındaki ilişkiyi görmektir. Bir miktar artıyor, iki miktar birleşiyor ya da bir değişim başlangıç değerine ekleniyorsa toplama yaparsın. Bir miktar azalıyor, iki değer arasındaki fark soruluyor ya da bir değişim geri alınıyorsa çıkarma yaparsın. Sıcaklığın −4 °C’den 3 °C’ye çıkması durumunda değişimi bulmak için son değerden ilk değeri çıkarırsın: 3 − (−4) = 3 + 4 = 7 °C. Sayı doğrusunda −4’ten 3’e kadar 7 birim sağa gidildiğini görmek de aynı sonucu verir.",
-    "Aynı miktar birkaç kez tekrarlanıyorsa ya da bir bütünün kesirle belirtilen bir kısmı soruluyorsa çarpma yaparsın. 150 TL harçlığın {kesir:2|5}’i 150 · {kesir:2|5} = {kesir:300|5} = 60 TL’dir. Bir bütün eşit parçalara paylaştırılıyorsa ya da bir miktarın içinde belirli büyüklükte kaç parça olduğu soruluyorsa bölme yaparsın. 37,5 TL’lik bir borcu üç kardeş eşit paylaşırsa her birine (−37,5) ÷ 3 = −12,5 TL düşer; eksi işareti bunun bir borç olduğunu söyler.",
-    "Bazen aynı problem farklı işlemlerle çözülebilir. {kesir:9|4} litre suyun {kesir:3|4} litrelik şişelere doldurulması için bölme yapabilirsin: {kesir:9|4} ÷ {kesir:3|4} = {kesir:9|4} · {kesir:4|3} = {kesir:36|12} = 3 şişe. Ama {kesir:3|4} + {kesir:3|4} + {kesir:3|4} = {kesir:9|4} olduğunu görerek de üç şişe dolduğunu söyleyebilirsin. İki yolun da aynı sonuca götürmesi sana çözümünü kontrol etme fırsatı verir."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "metin": "Artış ve birleştirme için toplama; azalış, fark ve geri alma için çıkarma; tekrar eden miktar ve bütünün bir kısmı için çarpma; eşit paylaştırma ve “içinde kaç tane var?” sorusu için bölme yapılır."
-   }
-  },
-  {
-   "baslik": "Çok adımlı işlemler ve işlem önceliği",
-   "metin": [
-    "Gerçek yaşam problemlerinin çoğu tek işlemle bitmez; iki ya da üç adım gerektirir. Çok adımlı bir işlemde önce ayraç içindeki işlemler, sonra çarpma ve bölme, en son toplama ve çıkarma yapılır. Aynı öncelikteki işlemler soldan sağa doğru yapılır. Örneğin 2 − {kesir:3|4} · (−{kesir:8|9}) işleminde önce çarpma yapılır: {kesir:3|4} · (−{kesir:8|9}) = −{kesir:24|36} = −{kesir:2|3}. Sonra 2 − (−{kesir:2|3}) = 2 + {kesir:2|3} = {kesir:8|3} bulunur.",
-    "Hangi işlemin önce yapılacağını belirtmek için ayraç kullanırsın; ayracın yeri değişince sonuç da değişir: (2 − {kesir:3|4}) · (−{kesir:8|9}) = {kesir:5|4} · (−{kesir:8|9}) = −{kesir:40|36} = −{kesir:10|9}. Kesir çizgisi de ayraç gibi davranır: {kesir:1 − 5|2} ifadesinde önce pay hesaplanır, 1 − 5 = −4; sonra −4 ÷ 2 = −2 bulunur. Bir problemi sayı cümlesine çevirirken ayraçları doğru yere koymak, işlemi doğru yapmak kadar önemlidir.",
-    "Toplama ve çarpmanın değişme ve birleşme özellikleri işlemleri kolaylaştırır. {kesir:3|7} + (−{kesir:5|2}) + {kesir:4|7} toplamında paydası aynı olan sayıları önce bir araya getirirsin: {kesir:3|7} + {kesir:4|7} = 1, ardından 1 + (−{kesir:5|2}) = −{kesir:3|2}. Bir rasyonel sayının kendisiyle tekrarlı çarpımını üslü biçimde yazabilirsin: (−{kesir:1|2}) · (−{kesir:1|2}) · (−{kesir:1|2}) = {us:(−{kesir:1|2})|3} = −{kesir:1|8}. Üç negatif çarpan bulunduğundan sonuç negatiftir; çarpan sayısı çift olsaydı sonuç pozitif çıkardı."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "metin": "Öncelik sırası: önce ayraç içi, sonra çarpma ve bölme, en son toplama ve çıkarma. Kesir çizgisinin üstü ve altı birer ayraç gibi önce hesaplanır."
-   },
-   "kutular": [
-    {
-     "tur": "dikkat",
-     "metin": "Çok adımlı işlemlerde en sık yapılan iki hata işaret hatası ve öncelik hatasıdır. Her adımı ayrı satıra yaz, negatif sayıları ayraç içine al ve bir sonraki adıma geçmeden işareti bir kez daha kontrol et."
-    }
-   ]
-  },
-  {
-   "baslik": "Para, alışveriş ve tasarruf problemleri",
-   "metin": [
-    "Para problemlerinde gelirler pozitif, giderler ve borçlar negatif sayılarla gösterilir; böylece bir dönemin sonunda elde kalan para tek bir toplama işlemiyle bulunur. Haftalık 120 TL harçlık alan, 42,5 TL kırtasiye harcaması yapan ve arkadaşına 15 TL borcunu ödeyen bir öğrencinin hafta sonundaki durumu (+120) + (−42,5) + (−15) = 62,5 TL’dir. Giderler gelirden büyükse sonuç negatif çıkar ve bu, borçlanıldığını gösterir.",
-    "Düzenli tasarruf, çarpma işleminin en güzel örneğidir. Her hafta 17,5 TL biriktirirsen 12 hafta sonra 17,5 · 12 = 210 TL biriktirmiş olursun. Hedefin 180 TL’lik bir kulaklıksa paran yeter ve 210 − 180 = 30 TL artar. Tersine, hedefe kaç haftada ulaşacağını bölmeyle bulursun: 180 ÷ 17,5 işleminin sonucu 10 ile 11 arasında olduğundan 11 hafta gerekir; çünkü 10 haftada biriken 175 TL yetmez, 11 haftada biriken 192,5 TL yeter.",
-    "Alışverişte fiyat araştırması yapmak kesirli hesaplar gerektirir. Aynı kalemin fiyatı bir mağazada 24 TL, başka bir mağazada {kesir:1|4} indirimle 28 TL ise ikinci mağazada ödenecek tutar 28 − 28 · {kesir:1|4} = 28 − 7 = 21 TL’dir; yani indirimli ürün 3 TL daha ucuzdur. Kilogramı 45 TL olan elmadan {kesir:7|4} kg alırsan 45 · {kesir:7|4} = {kesir:315|4} = 78,75 TL ödersin. Bilinçli bir alıcı ödemeden önce sonucu tahmin eder: {kesir:7|4} kg, 2 kg’dan biraz az olduğundan tutar 90 TL’den biraz düşük olmalıdır."
-   ],
-   "kutu": {
-    "tur": "bilgi",
-    "metin": "Gelir ve giderleri bir tabloda ayrı sütunlara yazıp toplamak, uzun para problemlerinde hata yapmanı önler. Tablonun en altındaki fark pozitifse tasarruf, negatifse borç var demektir."
-   }
-  },
-  {
-   "baslik": "Çözümü kontrol etmek, farklı yollar ve genelleme",
-   "metin": [
-    "Sonucu bulmak çözümün bitmesi değildir; bulduğun sayının anlamlı olup olmadığına bakmalısın. Bir kumaşın tamamı parçasından kısa, bir sınıftaki öğrenci sayısı kesirli, bir uzunluk negatif çıkamaz. Buna karşılık sıcaklık, derinlik ve hesap bakiyesi gibi büyüklükler negatif olabilir; bu durumda eksi işareti bir hata değil, bir anlam taşır. Sonucu önce yuvarlanmış sayılarla tahmin et: 45 · {kesir:7|4} için 45 · 2 = 90 civarında bir sonuç beklersin; 787,5 gibi bir değer bulursan virgülü yanlış yere koyduğunu anlarsın.",
-    "İkinci kontrol yolu işlemleri tersinden yapmaktır: Toplamadan çıkarmaya, çarpmadan bölmeye geçersin. 12 ÷ {kesir:2|5} = 30 bulduysan 30 · {kesir:2|5} = 12 ederek sağlama yaparsın. Üçüncü yol farklı bir strateji kullanmaktır: {kesir:21|4} ÷ {kesir:3|4} işlemini ters çevirip çarparak 7 bulabilir, ondalık gösterimle 5,25 ÷ 0,75 = 7 diyerek doğrulayabilirsin. Çözüme ulaşamadığında inat etme; temsilini ya da stratejini değiştir.",
-    "Birkaç problemi çözdükten sonra ortak örüntüleri fark edip genelleme yapabilirsin: Bir sayıdan negatif bir sayı çıkarmak, o sayının pozitifini eklemektir; bir sayıyı {kesir:1|4} ile bölmek 4 ile çarpmaktır; iki negatif sayının çarpımı pozitiftir. Her genellemeyi birkaç sayı cümlesiyle sına: 6 ÷ {kesir:1|4} = 24 ve 6 · 4 = 24; −{kesir:1|2} ÷ {kesir:1|4} = −2 ve −{kesir:1|2} · 4 = −2. Son olarak kendi problemini kur: Bir sıcaklık, bir borç ya da bir alışveriş durumu seç, sayıları belirle ve problemini arkadaşına çözdür; hangi stratejiyi neden seçtiğini anlat."
+    "Bir rasyonel sayının kendisiyle çarpımına o sayının {koyu:karesi (2. kuvveti)}, kendisiyle üç kez tekrarlı çarpımına ise {koyu:küpü (3. kuvveti)} denir:\n• {koyu:Kare Alma (Üs = 2):} Negatif iki sayının çarpımı pozitif olduğundan, negatif rasyonel sayıların parantez karesi {koyu:daima pozitiftir}:\n  (-{kesir:3|5})² = (-{kesir:3|5}) · (-{kesir:3|5}) = {koyu:+}{kesir:9|25}\n• {koyu:Küp Alma (Üs = 3):} Negatif bir sayının üç kez çarpımı negatif olduğundan, küp alınırken {koyu:işaret değişmez}:\n  (-{kesir:2|3})³ = (-{kesir:2|3}) · (-{kesir:2|3}) · (-{kesir:2|3}) = {koyu:-}{kesir:8|27}\n• {koyu:Tam Sayılı Kesir Kuralı:} Tam sayılı kesirlerde tam kısmın ve kesir kısmının ayrı ayrı karesi alınamaz! Önce bileşik kesre çevrilir:\n  (-1{kesir:1|2})² = (-{kesir:3|2})² = {koyu:+}{kesir:9|4}   |   (-1{kesir:1|2})³ = (-{kesir:3|2})³ = {koyu:-}{kesir:27|8}.",
+    "{koyu:Çok Adımlı (Merdivenli) İşlemler:}\nBirden fazla işlemin yer aldığı rasyonel sayı ifadelerinde:\n1. Önce varsa {koyu:üslü ifadelerin} değerleri bulunur.\n2. {koyu:Parantez içindeki} işlemler veya merdivenli kesirlerde en alt/en üst basamaktaki işlemler yapılır.\n3. {koyu:Ana kesir çizgisi} (eşittir işaretinin tam ortasındaki en uzun çizgi) belirlenir: Ana çizginin üstündeki ifade {koyu:birinci sayı (pay)} olarak aynen yazılır, altındaki ifade {koyu:ikinci sayı (payda)} olarak ters çevrilip çarpılır:\n• {koyu:Örnek:} 1 + {kesir:1|1 - 1/3} işleminde önce alt payda: 1 - {kesir:1|3} = {kesir:2|3} bulunur; ardından 1 ÷ {kesir:2|3} = {kesir:3|2} olur; en son 1 + {kesir:3|2} = {koyu:5/2} elde edilir."
    ],
    "kutu": {
     "tur": "dikkat",
-    "metin": "“Çarpma büyütür, bölme küçültür” genellemesi rasyonel sayılarda geçerli değildir: 6 · {kesir:1|2} = 3 ile sayı küçülür, 6 ÷ {kesir:1|2} = 12 ile sayı büyür. Genellemeni her zaman 1’den küçük sayılarla ve negatif sayılarla da dene."
+    "baslik": "Parantezin Yeri ve Ana Kesir Çizgisi Tuzakları!",
+    "metin": "• {koyu:Parantez Tuzağı:} (-{kesir:2|5})² = {koyu:+4/25} iken, eksi parantez dışındaysa -({kesir:2|5})² = {koyu:-4/25} olur!\n• {koyu:Ana Kesir Çizgisi Tuzağı:} {kesir:3/4|5} işleminde ana çizgi 3/4 ile 5 arasındadır: ({kesir:3|4}) ÷ 5 = {kesir:3|4} · {kesir:1|5} = {koyu:3/20}. Oysa {kesir:3|4/5} işleminde ana çizgi 3 ile 4/5 arasındadır: 3 ÷ ({kesir:4|5}) = 3 · {kesir:5|4} = {koyu:15/4}!"
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 424\" role=\"img\" aria-label=\"Konu özet şeması\"><text x=\"400\" y=\"32\" font-family=\"sans-serif\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">RASYONEL SAYILARIN KARESİ-KÜPÜ, ÇOK ADIMLI İŞLEMLER VE PROBLEMLER</text><rect x=\"20\" y=\"56\" width=\"365\" height=\"290\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"80\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. KARE-KÜP VE ÇOK ADIMLI İŞLEMLER</text><rect x=\"35\" y=\"100\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"116\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Rasyonel Sayının Karesi (n = 2 -&gt; Daima Pozitif)</text><text x=\"202\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">(-a/b)² = (-a/b) · (-a/b) = +a²/b²   Ör: (-2/3)² = +4/9.</text><rect x=\"35\" y=\"150\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"166\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Rasyonel Sayının Küpü (n = 3 -&gt; İşaret Korunur)</text><text x=\"202\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">(-a/b)³ = -a³/b³   Ör: (-2/3)³ = -8/27  |  (+1/2)³ = +1/8.</text><rect x=\"35\" y=\"200\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"216\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Çok Adımlı İşlemlerde İşlem Önceliği</text><text x=\"202\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">1) Üslü  2) Parantez içi  3) Çarpma-Bölme  4) Toplama-Çıkarma.</text><rect x=\"35\" y=\"250\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"266\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Merdivenli İşlemlerde ANA KESİR ÇİZGİSİ</text><text x=\"202\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Eşittir (=) hizasındaki en uzun çizgi bölme işlemini ayırır!</text><rect x=\"35\" y=\"300\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"316\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Örnek: (2/3) / 4  ≠  2 / (3/4)</text><text x=\"202\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">(2/3) ÷ 4 = 2/12 = 1/6   iken   2 ÷ (3/4) = 2 · (4/3) = 8/3!</text><rect x=\"400\" y=\"56\" width=\"380\" height=\"290\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"80\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">2. RASYONEL SAYI PROBLEMLERİ STRATEJİLERİ</text><rect x=\"415\" y=\"100\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"116\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">1. Bütünün Kesir Kadarını Bulma (Çarpma)</text><text x=\"590\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">120 TL’nin 3/5’ü -&gt; 120 · (3/5) = 72 TL.</text><rect x=\"415\" y=\"150\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"166\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">2. Kesir Kadarı Verilen Bütünü Bulma (Bölme)</text><text x=\"590\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">3/5’ü 72 TL olan para -&gt; 72 ÷ (3/5) = 72 · (5/3) = 120 TL.</text><rect x=\"415\" y=\"200\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"216\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">3. &quot;Kalanın Kesri&quot; Problemleri</text><text x=\"590\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Önce 1’den ilk kesir çıkarılır, kalan ile ikinci kesir çarpılır!</text><rect x=\"415\" y=\"250\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"266\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">4. Kesrin Kesrini Bulma (İki Kesrin Çarpımı)</text><text x=\"590\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">2/3’ünün 3/4’ü -&gt; (2/3) · (3/4) = 6/12 = 1/2.</text><rect x=\"415\" y=\"300\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"316\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">5. Top Zıplama / Yol / Su Deposu Problemleri</text><text x=\"590\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Her adımda yüksekliği veya kalan miktarı rasyonel kesirle çarp!</text><rect x=\"20\" y=\"360\" width=\"760\" height=\"48\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"400\" y=\"380\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">PARANTEZ UYARISI: (-3/4)² = +9/16 iken, parantezsiz -3²/4 = -9/4 ve -(3/4)² = -9/16 olur!</text><text x=\"400\" y=\"398\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Tam sayılı kesirlerin karesi veya küpü alınırken ÖNCE BİLEŞİK KESRE çevrilir: (-1 tam 1/2)² = (-3/2)² = +9/4.</text></svg>"
+  },
+  {
+   "baslik": "2. Rasyonel Sayılarla Problem Çözme Stratejileri",
+   "metin": [
+    "Gerçek yaşam problemlerinde kullanılan 4 temel rasyonel sayı modeli şunlardır:\n1. {koyu:Bütünün Kesir Kadarını Bulma (Çarpma):} Bir çokluğun belirtilen kesir kadarını bulmak için çokluk ile kesir çarpılır. Örneğin 240 sayfalık kitabın {kesir:3|8}’ünü okuyan bir öğrenci: 240 · {kesir:3|8} = {koyu:90 sayfa} okumuştur.\n2. {koyu:Kesir Kadarı Verilen Bütünü Bulma (Bölme):} Kesir kadarı bilinen bir bütünün tamamını bulmak için verilen sayı kesre bölünür. Örneğin {kesir:2|5}’i 60 L olan bir deponun tamamı: 60 ÷ {kesir:2|5} = 60 · {kesir:5|2} = {koyu:150 L}’dir.",
+    "3. {koyu:Kesrin Kesrini ve 'Kalanın Kesrini' Bulma:}\n• Bir kesrin kesri bulunurken iki kesir çarpılır: Maaşının önce {kesir:1|3}’ünü, sonra {koyu:kalan parasının} {kesir:2|5}’ini harcayan bir kişide:\n  - İlk harcamadan sonra {koyu:kalan}: 1 - {kesir:1|3} = {kesir:2|3}\n  - İkinci harcama (kalanın {kesir:2|5}’i): {kesir:2|3} · {kesir:2|5} = {kesir:4|15}\n  - Geriye kalan son kesir: {kesir:2|3} - {kesir:4|15} = {kesir:10|15} - {kesir:4|15} = {koyu:6/15 = 2/5} olur.\n4. {koyu:Ortak Payda (Kutu / Kat) Yöntemi:} Kesirlerin paydalarının çarpımı kadar 'kutu' veya 'birim' seçerek problemi hiç kesir işlemi yapmadan tam sayılarla da kolayca çözebiliriz!"
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "'Tüm Paranın mı' Yoksa 'Kalan Paranın mı' İfadesine Çok Dikkat!",
+    "metin": "• Soruda {koyu:“önce 1/4’ünü, sonra 2/4’ünü harcadı”} deniyorsa (kalan kelimesi yoksa) kesirler doğrudan toplanır: {kesir:1|4} + {kesir:2|4} = {kesir:3|4}.\n• Soruda {koyu:“önce 1/4’ünü, sonra KALANIN 2/3’ünü harcadı”} deniyorsa önce 1 - {kesir:1|4} = {kesir:3|4} (kalan) bulunur, sonra {kesir:3|4} · {kesir:2|3} = {kesir:2|4} hesaplanır!"
    }
   }
  ],
  "ornekler": [
   {
-   "soru": "Erzurum’da sabah saat 06.00’da sıcaklık −8,5 °C olarak ölçülmüştür. Sıcaklık öğleye kadar 11 °C artmış, akşama kadar ise 13,5 °C düşmüştür. Akşam sıcaklığı kaç derecedir? Çözümünü tersten işlem yaparak kontrol et.",
-   "cevap": "Verilenler: başlangıç sıcaklığı −8,5; artış +11; düşüş −13,5. İstenen: akşam sıcaklığı. Plan: Başlangıca artışı ekle, sonra düşüşü çıkar. Uygulama: −8,5 + 11 = 2,5 olur; öğle sıcaklığı 2,5 °C’dir. Ardından 2,5 − 13,5 = −11 bulunur; akşam sıcaklığı −11 °C’dir. Kontrol: Akşam değerinden geriye doğru giderek −11 + 13,5 = 2,5 ve 2,5 − 11 = −8,5 elde edilir; başlangıç değerine ulaşıldığı için çözüm doğrudur. Sonuç makuldür: Gün içindeki net değişim 11 − 13,5 = −2,5 °C olduğundan akşam, sabahtan 2,5 °C daha soğuktur ve −8,5 − 2,5 = −11 çıkar."
+   "soru": "(-1 tam 1/3)² ÷ (-2/3)³ işleminin sonucunu adım adım bulunuz.",
+   "cevap": "1. Önce tam sayılı kesri bileşik kesre çevirelim: -1{kesir:1|3} = -{kesir:4|3}.\n2. Üslü ifadeleri hesaplayalım:\n• (-{kesir:4|3})² = +{kesir:16|9}\n• (-{kesir:2|3})³ = -{kesir:8|27}\n3. Bölme işlemini yapalım (birinciyi aynen yazıp ikinciyi ters çevirip çarpalım):\n(+{kesir:16|9}) ÷ (-{kesir:8|27}) = (+{kesir:16|9}) · (-{kesir:27|8}) = -{kesir:2 · 3|1 · 1} = {koyu:-6} bulunur."
   },
   {
-   "soru": "Bir dalgıç deniz yüzeyinin {kesir:15|2} m altındadır. Dört kez, her seferinde {kesir:5|4} m daha dalıyor. Dalgıç son durumda yüzeyin kaç metre altındadır? Yüzeye çıkmak için kaç metre yükselmesi gerekir?",
-   "cevap": "Verilenler: başlangıç konumu −{kesir:15|2}; her dalış −{kesir:5|4}; dalış sayısı 4. İstenen: son konum. Plan: Tekrarlanan dalışı çarpmayla bul, başlangıç konumuna ekle. Uygulama: 4 · (−{kesir:5|4}) = −{kesir:20|4} = −5; dört dalışta toplam 5 m inilir. Son konum −{kesir:15|2} + (−5) = −{kesir:15|2} − {kesir:10|2} = −{kesir:25|2} olur; dalgıç yüzeyin {kesir:25|2} m, yani 12,5 m altındadır. Yüzeye çıkmak için 12,5 m yükselmelidir; çünkü −12,5 + 12,5 = 0’dır. Kontrol: Sayı doğrusunda −7,5’ten başlayıp dört kez 1,25 birim sola gidersen sırasıyla −8,75; −10; −11,25 ve −12,5 noktalarına ulaşırsın; iki yol aynı sonucu verir."
+   "soru": "2 - [ 3 / (1 + 1/2) ] çok adımlı işleminin sonucu kaçtır?",
+   "cevap": "1. En içteki paydayı toplayalım: 1 + {kesir:1|2} = {kesir:3|2}.\n2. Köşeli parantez içindeki bölmeyi yapalım: 3 ÷ {kesir:3|2} = 3 · {kesir:2|3} = {koyu:2}.\n3. Çıkarma işlemini tamamlayalım: 2 - 2 = {koyu:0} bulunur."
   },
   {
-   "soru": "Ayşe haftalık 120 TL harçlığının pazartesi günü {kesir:1|4}’ünü, salı günü ise kalan paranın {kesir:1|3}’ünü harcamıştır. Çarşamba günü arkadaşına 15,5 TL borcunu ödemiştir. Ayşe’nin çarşamba akşamı kaç lirası kalmıştır?",
-   "cevap": "Verilenler: harçlık 120; pazartesi harcaması bütünün {kesir:1|4}’ü; salı harcaması kalanın {kesir:1|3}’ü; borç ödemesi 15,5. İstenen: kalan para. Plan: Her günün harcamasını sırayla bulup kalandan çıkar; en sonda borcu çıkar. Uygulama: Pazartesi 120 · {kesir:1|4} = 30 TL harcanır, kalan 120 − 30 = 90 TL olur. Salı 90 · {kesir:1|3} = 30 TL harcanır, kalan 90 − 30 = 60 TL olur. Çarşamba 60 − 15,5 = 44,5 TL kalır. Kontrol: Toplam harcanan 30 + 30 + 15,5 = 75,5 TL’dir ve 120 − 75,5 = 44,5 TL bulunur; sonuç doğrudur. Dikkat: Salı günkü {kesir:1|3}, 120’nin değil kalan 90’ın üçte biridir; 120 · {kesir:1|3} = 40 alsaydın yanlış sonuca ulaşırdın."
-  },
-  {
-   "soru": "Bir marangoz {kesir:21|4} m uzunluğundaki bir tahtayı {kesir:3|4} m uzunluğunda parçalara ayırıyor. Kaç parça elde eder? Problemi iki farklı stratejiyle çöz ve sonucu kontrol et.",
-   "cevap": "Verilenler: tahtanın uzunluğu {kesir:21|4} m; parça uzunluğu {kesir:3|4} m. İstenen: parça sayısı; yani {kesir:21|4} metrenin içinde kaç tane {kesir:3|4} metre olduğu. Birinci strateji bölmedir: {kesir:21|4} ÷ {kesir:3|4} = {kesir:21|4} · {kesir:4|3} = {kesir:84|12} = 7 parça. İkinci strateji ondalık gösterimle çalışmaktır: {kesir:21|4} = 5,25 ve {kesir:3|4} = 0,75 olduğundan 5,25 ÷ 0,75 = 7 bulunur. Üçüncü bir yol olarak paydaları eşit olan kesirlerde yalnızca payları bölebilirsin: 21 ÷ 3 = 7. Kontrol: 7 · {kesir:3|4} = {kesir:21|4} olduğundan parçalar tahtanın tamamını oluşturur; sonuç tam sayı çıktığından artık parça kalmaz."
-  },
-  {
-   "soru": "Manavda elmanın kilogramı 45 TL, kirazın kilogramı 160 TL’dir. Kerem {kesir:7|4} kg elma ile {kesir:1|2} kg kiraz alıp kasaya 200 TL veriyor. Kerem kaç lira para üstü alır? Ödemeden önce tutarı tahmin et, sonra hesapla.",
-   "cevap": "Verilenler: elma 45 TL/kg ve {kesir:7|4} kg; kiraz 160 TL/kg ve {kesir:1|2} kg; verilen para 200 TL. İstenen: para üstü. Tahmin: {kesir:7|4} kg, 2 kg’dan biraz az olduğundan elma 90 TL’den biraz ucuz; kiraz 160’ın yarısı, yani 80 TL. Toplam 170 TL’den biraz az, para üstü ise 30 TL’den biraz fazla olmalıdır. Plan: Her meyvenin tutarını çarpmayla bul, tutarları topla, toplamı 200’den çıkar. Uygulama: Elma 45 · {kesir:7|4} = {kesir:315|4} = 78,75 TL; kiraz 160 · {kesir:1|2} = 80 TL. Toplam 78,75 + 80 = 158,75 TL. Para üstü 200 − 158,75 = 41,25 TL. Kontrol: 158,75 + 41,25 = 200 olduğundan hesap doğrudur. Sonuç tahminle de uyumludur: 41,25 TL, 30 TL’nin 11,25 TL üzerindedir ve bu fark, elma için tahmin edilen 90 TL ile gerçek tutar 78,75 TL arasındaki farka eşittir."
-  },
-  {
-   "soru": "Bir bilgi yarışmasında her doğru cevap {kesir:5|2} puan kazandırıyor, her yanlış cevap {kesir:3|4} puan kaybettiriyor, boş bırakılan sorular puanı değiştirmiyor. 25 soruluk yarışmada Ece 14 doğru, 8 yanlış yapmış, 3 soruyu boş bırakmıştır. Ece’nin puanı kaçtır? İşlemi tek bir sayı cümlesiyle yaz ve çöz.",
-   "cevap": "Verilenler: doğru başına +{kesir:5|2}; yanlış başına −{kesir:3|4}; 14 doğru, 8 yanlış, 3 boş. İstenen: toplam puan. Sayı cümlesi: 14 · {kesir:5|2} + 8 · (−{kesir:3|4}). İşlem önceliğine göre önce çarpmalar yapılır: 14 · {kesir:5|2} = {kesir:70|2} = 35 ve 8 · (−{kesir:3|4}) = −{kesir:24|4} = −6. Sonra toplama yapılır: 35 + (−6) = 29. Ece’nin puanı 29’dur. Kontrol: Ondalık gösterimle 14 · 2,5 = 35 ve 8 · 0,75 = 6; 35 − 6 = 29 aynı sonucu verir. Soru sayısı da 14 + 8 + 3 = 25 olduğundan veriler tutarlıdır. Genelleme: Yanlış cevaplar puanı azalttığı için negatif sayıyla çarpılır; toplam puan, kazanılan puanlardan kaybedilen puanların çıkarılmasıyla bulunur."
+   "soru": "Bir su deposunun 3/8’i doludur. Depoya 90 litre daha su eklendiğinde deponun 3/4’ü dolduğuna göre bu su deposunun tamamı kaç litre su alır?",
+   "cevap": "1. Paydaları eşitleyelim: {kesir:3|4} = {kesir:6|8}.\n2. Eklenen 90 litre suyun deponun kaçta kaçına karşılık geldiğini bulalım:\n{kesir:6|8} - {kesir:3|8} = {kesir:3|8} (Deponun {kesir:3|8}’ü 90 litredir).\n3. Tamamını bulmak için 90’ı {kesir:3|8}’e bölelim:\n90 ÷ {kesir:3|8} = 90 · {kesir:8|3} = 30 · 8 = {koyu:240 litre} alır."
   }
  ],
  "etkinlikler": [
   {
    "tur": "coktan",
-   "soru": "Bir soğuk hava deposunda sıcaklık −18 °C’dir. Elektrik kesilince depodaki sıcaklık her saat 2,5 °C artmaktadır. Elektrik 4 saat sonra geldiğinde depodaki sıcaklık kaç derecedir?",
+   "soru": "(-2/3)² - (-1/3)³ işleminin sonucu aşağıdakilerden hangisidir?",
    "secenekler": [
-    "−28 °C",
-    "−8 °C",
-    "8 °C",
-    "−15,5 °C"
+    "11/27",
+    "13/27",
+    "-11/27",
+    "-13/27",
+    "5/9"
    ],
    "dogru": 1,
-   "aciklama": "Dört saatteki toplam artış 4 · 2,5 = 10 °C’dir. Başlangıç sıcaklığına bu artış eklenir: −18 + 10 = −8 °C. Artışı çıkarmak −28, işareti unutmak 8, artışı yalnız bir kez eklemek −15,5 sonucunu verir; üçü de yanlıştır."
+   "aciklama": "(-2/3)² = +4/9 = 12/27 ve (-1/3)³ = -1/27’dir. İşlem: (12/27) - (-1/27) = 12/27 + 1/27 = 13/27 olur."
   },
   {
    "tur": "coktan",
-   "soru": "Bir sürahide {kesir:3|2} litre limonata vardır. Limonata {kesir:1|4} litrelik bardaklara doldurulacaktır. “Kaç bardak dolar?” sorusunu çözmek için hangi işlem yapılmalıdır?",
+   "soru": "(-1 tam 1/2)³ ifadesinin değeri aşağıdakilerden hangisidir?",
    "secenekler": [
-    "{kesir:3|2} + {kesir:1|4}",
-    "{kesir:3|2} − {kesir:1|4}",
-    "{kesir:3|2} · {kesir:1|4}",
-    "{kesir:3|2} ÷ {kesir:1|4}"
+    "-1 tam 1/8",
+    "+9/4",
+    "-27/8",
+    "+27/8",
+    "-9/8"
    ],
-   "dogru": 3,
-   "aciklama": "{kesir:3|2} litrenin içinde kaç tane {kesir:1|4} litre olduğu sorulduğundan bölme yapılır: {kesir:3|2} ÷ {kesir:1|4} = {kesir:3|2} · 4 = {kesir:12|2} = 6 bardak. Kontrol: 6 · {kesir:1|4} = {kesir:6|4} = {kesir:3|2} litre."
+   "dogru": 2,
+   "aciklama": "-1 tam 1/2 = -3/2 bileşik kesrine çevrilir. Küpü: (-3/2)³ = -27/8 olur."
   },
   {
    "tur": "coktan",
-   "soru": "3 − {kesir:1|2} · (−4) işleminin sonucu kaçtır?",
+   "soru": "[ (1 - 1/3) ÷ (1 + 1/3) ] + (1/2) çok adımlı işleminin sonucu kaçtır?",
    "secenekler": [
-    "5",
+    "1/2",
     "1",
-    "−10",
-    "−1"
+    "3/2",
+    "2",
+    "5/4"
    ],
-   "dogru": 0,
-   "aciklama": "Önce çarpma yapılır: {kesir:1|2} · (−4) = −2. Sonra 3 − (−2) = 3 + 2 = 5 bulunur. Soldan sağa giderek (3 − {kesir:1|2}) · (−4) = −10 yapmak işlem önceliği hatası, 3 − 2 = 1 yapmak ise işaret hatasıdır."
+   "dogru": 1,
+   "aciklama": "1 - 1/3 = 2/3 ve 1 + 1/3 = 4/3’tür. (2/3) ÷ (4/3) = (2/3) · (3/4) = 1/2 olur. Son adımda 1/2 + 1/2 = 1 bulunur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Arda parasının önce 1/4’ünü, daha sonra kalan parasının 1/3’ünü harcıyor. Arda’nın geriye 120 TL’si kaldığına göre başlangıçtaki parası kaç TL’dir?",
+   "secenekler": [
+    "180",
+    "200",
+    "240",
+    "300",
+    "360"
+   ],
+   "dogru": 2,
+   "aciklama": "1/4’ünü harcayınca 3/4’ü kalır. Kalanın 1/3’ünü ((3/4)·(1/3) = 1/4) daha harcayınca geriye 3/4 - 1/4 = 2/4 = 1/2’si kalır. Yarısı 120 TL ise tamamı 240 TL’dir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Belirli bir yükseklikten bırakılan bir top, yere her çarptığında düştüğü yüksekliğin 2/3’ü kadar yükselmektedir. Top 180 cm yükseklikten bırakıldığına göre yere 2. çarpmasından sonra kaç cm yükselir?",
+   "secenekler": [
+    "60",
+    "80",
+    "90",
+    "100",
+    "120"
+   ],
+   "dogru": 1,
+   "aciklama": "1. çarpmadan sonra: 180 · (2/3) = 120 cm yükselir. 2. çarpmadan sonra: 120 · (2/3) = 80 cm yükselir."
   },
   {
    "tur": "dy",
-   "yonerge": "Her ifadenin doğru mu yanlış mı olduğuna karar ver; yanlış çıkanların açıklamasını oku.",
+   "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
    "ifadeler": [
     {
-     "metin": "Çıkarma işlemi, eksilen ile çıkanın ters işaretlisini toplamak demektir; örneğin 2 − 6 ile 2 + (−6) aynı sonucu verir.",
+     "metin": "Sıfırdan farklı negatif bir rasyonel sayının karesi daima pozitiftir.",
      "dogru": true,
-     "aciklama": "İkisi de −4 sonucunu verir. Bu ilişki bütün rasyonel sayılar için geçerlidir ve çıkarma işlemini toplamaya dönüştürmeni sağlar."
+     "aciklama": "İki negatif rasyonel sayının çarpımı pozitif olduğu için (-a/b)² = +a²/b² olur."
     },
     {
-     "metin": "İki negatif rasyonel sayının çarpımı negatif bir sayıdır.",
+     "metin": "(-2 tam 1/3)² işlemini yaparken tam kısmın karesi (4) ve kesir kısmının karesi (1/9) ayrı ayrı alınıp 4 tam 1/9 bulunur.",
      "dogru": false,
-     "aciklama": "Aynı işaretli iki sayının çarpımı pozitiftir: (−{kesir:1|2}) · (−4) = 2. Çarpım yalnızca çarpanların işaretleri farklıysa negatif olur."
+     "aciklama": "Yanlıştır; önce bileşik kesre çevrilmelidir: (-7/3)² = +49/9 = 5 tam 4/9 olur."
     },
     {
-     "metin": "Bir problemde sonucun negatif çıkması, çözümde mutlaka hata yapıldığını gösterir.",
+     "metin": "(2/5) / 3 işleminin sonucu 2/15 iken, 2 / (5/3) işleminin sonucu 6/5’tir.",
+     "dogru": true,
+     "aciklama": "Ana kesir çizgisinin yeri değiştiğinde bölünen ve bölen değişir: (2/5) ÷ 3 = 2/15 ve 2 ÷ (5/3) = 6/5’tir."
+    },
+    {
+     "metin": "Bir sayının 3/7’sinin 7/9’u, o sayının 1/3’üne eşittir.",
+     "dogru": true,
+     "aciklama": "Kesrin kesri bulunurken çarpılır: (3/7) · (7/9) = 3/9 = 1/3’tür."
+    },
+    {
+     "metin": "(-1/2)³ sayısı (-1/2)² sayısından büyüktür.",
      "dogru": false,
-     "aciklama": "Sıcaklık, derinlik ve hesap bakiyesi negatif olabilir. Ancak uzunluk, kütle ya da kişi sayısı gibi büyüklükler negatif çıkarsa çözümü yeniden gözden geçirmelisin."
-    },
-    {
-     "metin": "Kesir çizgisi, payın ve paydanın önce hesaplanmasını gerektiren bir ayraç gibi davranır.",
-     "dogru": true,
-     "aciklama": "{kesir:1 − 5|2} ifadesinde önce 1 − 5 = −4 bulunur, sonra −4 ÷ 2 = −2 yapılır."
-    },
-    {
-     "metin": "Bir rasyonel sayıyı {kesir:1|4} ile bölmek, o sayıyı 4 ile çarpmakla aynı sonucu verir.",
-     "dogru": true,
-     "aciklama": "Bölen ters çevrilip çarpılır; {kesir:1|4} sayısının tersi 4’tür. Örneğin 6 ÷ {kesir:1|4} = 6 · 4 = 24."
+     "aciklama": "Yanlıştır; (-1/2)³ = -1/8 (negatif) iken (-1/2)² = +1/4 (pozitif) olduğundan (-1/2)² daha büyüktür."
     }
    ]
   },
   {
    "tur": "eslestir",
-   "yonerge": "Her problem durumunu, çözümünde kullanılacak sayı cümlesiyle eşleştir.",
+   "soru": "Aşağıdaki rasyonel sayı işlemlerini doğru sonuçlarıyla eşleştiriniz.",
    "ciftler": [
     [
-     "Sıcaklık −4 °C iken 7 °C artıyor.",
-     "−4 + 7"
+     "(-3/4)²",
+     "+9/16"
     ],
     [
-     "Yüzeyin {kesir:3|2} m altındaki dalgıç {kesir:1|2} m daha dalıyor.",
-     "−{kesir:3|2} − {kesir:1|2}"
+     "(-2/5)³",
+     "-8/125"
     ],
     [
-     "Her hafta 12,5 TL, 6 hafta boyunca biriktiriliyor.",
-     "12,5 · 6"
+     "(-1 tam 1/2)²",
+     "+9/4"
     ],
     [
-     "{kesir:9|4} litre su {kesir:3|4} litrelik şişelere dolduruluyor.",
-     "{kesir:9|4} ÷ {kesir:3|4}"
+     "1 + (1 / (1/2))",
+     "3"
     ],
     [
-     "Üç kardeş 37,5 TL borcu eşit paylaşıyor.",
-     "(−37,5) ÷ 3"
+     "60 sayısının 2/3’ünün 3/5’i",
+     "24"
     ]
    ]
   },
   {
    "tur": "bosluk",
-   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavram veya sayılarla tamamlayınız.",
    "cumleler": [
     {
-     "metin": "Problemi anlamak için önce verilenleri ve ___ belirlersin.",
-     "cevap": "isteneni"
+     "metin": "Negatif bir rasyonel sayının küpü (3. kuvveti) daima ___ işaretlidir.",
+     "cevap": "negatif"
     },
     {
-     "metin": "Farklı işaretli iki rasyonel sayı toplanırken sonuca mutlak değeri ___ olan sayının işareti verilir.",
-     "cevap": "büyük"
+     "metin": "Tam sayılı bir kesrin karesi veya küpü alınırken önce mutlaka ___ kesre çevrilmelidir.",
+     "cevap": "bileşik"
     },
     {
-     "metin": "Bölme işleminde bölen ___ çevrilerek çarpma yapılır.",
-     "cevap": "ters"
+     "metin": "Merdivenli kesir işlemlerinde eşittir (=) işaretinin hizasındaki en uzun çizgiye ___ kesir çizgisi denir.",
+     "cevap": "ana"
     },
     {
-     "metin": "Çok adımlı bir işlemde önce ___ içindeki işlem yapılır.",
-     "cevap": "ayraç"
+     "metin": "3/5’i 45 olan bir sayının tamamı ___’dir.",
+     "cevap": "75"
+    },
+    {
+     "metin": "(-1/3)² ÷ (-1/3)³ işleminin sonucu ___’tür.",
+     "cevap": "-3"
     }
    ],
    "fazla": [
-    "küçük"
+    "pozitif",
+    "27"
    ]
   },
   {
    "tur": "ogretici",
-   "soru": "Mert, “Bir sayıyı {kesir:1|2} ile çarpmak onu büyütür; çünkü çarpma her zaman büyütür.” diyor. Bu genellemenin geçerli olup olmadığını 6 kg şekerin {kesir:1|2} kilogramlık paketlere bölünmesi gibi bir bağlamda ve sayı cümleleriyle değerlendir.",
+   "soru": "Bir terzi elindeki kumaşın önce 2/5’ini, daha sonra kalan kumaşın 1/3’ünü kullanarak elbise dikmiştir. Terzinin geriye 16 metre kumaşı kaldığına göre başlangıçta kaç metre kumaşı vardı? Adım adım çözünüz.",
    "ipuclari": [
-    "6 · {kesir:1|2} işleminin sonucunu bul; sonuç 6’dan büyük mü, küçük mü?",
-    "Çarpanı değiştirerek dene: 6 · 2, 6 · 1 ve 6 · {kesir:1|2} sonuçlarını karşılaştır."
+    "1. İpucu: Kumaşın 2/5’i kullanıldığında geriye kalan kesri (1 - 2/5) bulunuz.",
+    "2. İpucu: Kalan kumaşın 1/3’ünü çıkardıktan sonra geriye kalan kesri 16 metreye eşitleyerek tamamını hesaplayınız."
    ],
-   "cevap": "Genelleme geçerli değildir. 6 · {kesir:1|2} = 3 olduğundan sonuç 6’dan küçüktür; 6 kg şekerin yarısı 3 kg’dır. Sayı cümleleriyle sınayınca 6 · 2 = 12 ile sayı büyür, 6 · 1 = 6 ile değişmez, 6 · {kesir:1|2} = 3 ile küçülür. Demek ki pozitif bir sayıyı 1’den küçük pozitif bir sayıyla çarpmak onu küçültür. Bu arada 6 kg şekerden {kesir:1|2} kilogramlık kaç paket çıkacağı sorulursa bölme yapılır: 6 ÷ {kesir:1|2} = 12 paket; yani burada bölme sayıyı büyütmüştür."
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Bir öğrenci “Bir kumaşın {kesir:2|5}’i 12 m ise kumaşın tamamı kaç metredir?” problemini 12 · {kesir:2|5} = {kesir:24|5} = 4,8 m biçiminde çözmüştür. Sonucun makul olup olmadığını kontrol ederek çözümün doğru olup olmadığını açıkla; yanlışsa doğru çözümü yaz ve sağlamasını yap.",
-   "ipuclari": [
-    "Bir bütün, kendi parçasından kısa olabilir mi? 4,8 m ile 12 m’yi karşılaştır.",
-    "Tamamın {kesir:2|5}’i 12 m ise tamamı bulmak için hangi işlem gerekir: çarpma mı, bölme mi?"
-   ],
-   "cevap": "Çözüm yanlıştır; çünkü 4,8 m, parçanın uzunluğu olan 12 m’den kısadır, oysa bütün parçadan uzun olmalıdır. Verilen 12 m, tamamın {kesir:2|5}’i olduğundan tamamı bulmak için bölme yapılır: 12 ÷ {kesir:2|5} = 12 · {kesir:5|2} = {kesir:60|2} = 30 m. Sağlama: 30 · {kesir:2|5} = {kesir:60|5} = 12 m bulunduğundan sonuç doğrudur. Şekille de görebilirsin: Kumaşı 5 eş parçaya böldüğünde 2 parça 12 m ise 1 parça 6 m, 5 parça 30 m eder."
+   "cevap": "1. Adım (İlk kalan): Kumaşın 2/5’i kullanıldığında geriye 1 - 2/5 = 3/5’i kalır.\n2. Adım (İkinci kullanım): Kalanın (3/5’in) 1/3’ü kullanılmıştır: (3/5) · (1/3) = 1/5’i daha kullanılmıştır.\n3. Adım (Son kalan kesir): 3/5 - 1/5 = 2/5’i geriye kalmıştır.\n4. Adım (Bütünü bulma): Kumaşın 2/5’i 16 metre ise tamamı: 16 ÷ (2/5) = 16 · (5/2) = 8 · 5 = 40 metre kumaşı vardı."
   }
- ],
- "ozet": [
-  "Bir problemi çözerken dört adım izlenir: Verilenleri ve isteneni belirleyerek problemi anla, uygun işlemi ve temsili seçerek plan yap, planı adım adım uygula, sonucu kontrol et.",
-  "Toplamada aynı işaretli sayıların mutlak değerleri toplanır, farklı işaretlilerin mutlak değerleri çıkarılır; çıkarma, çıkanın ters işaretlisini toplamaktır. Paydalar farklıysa önce eşitlenir.",
-  "Çarpma ve bölmede önce işaret belirlenir: Aynı işaret pozitif, farklı işaret negatif sonuç verir. Çarpmada pay ile pay, payda ile payda çarpılır; bölmede bölen ters çevrilip çarpılır.",
-  "Çok adımlı işlemlerde önce ayraç içi, sonra çarpma ve bölme, en son toplama ve çıkarma yapılır; kesir çizgisi ayraç gibi davranır. Sıcaklık, derinlik ve borç gibi durumlarda negatif sonuç anlamlıdır.",
-  "Çözüm tahminle, tersten işlemle ya da farklı bir stratejiyle kontrol edilir. Benzer problemlerden elde edilen genellemeler sayı cümleleriyle sınanır; öğrenilenler kendi kurduğun problemlerle pekiştirilir."
  ]
 }
