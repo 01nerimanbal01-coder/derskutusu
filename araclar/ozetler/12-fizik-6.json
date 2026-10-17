@@ -1,0 +1,249 @@
+{
+ "ad": "12-fizik-6",
+ "sinif": 12,
+ "ders": "fizik",
+ "ders_adi": "Fizik",
+ "hafta": 6,
+ "tarih": "19-23 Ekim 2026",
+ "yayin_tarihi": "2026-10-21",
+ "unite": "12.1. ÇEMBERSEL HAREKET",
+ "konu": "Kütle Çekim Kuvveti ve Kütle Çekim İvmesi",
+ "ciktilar": [
+  "Newton’ın Evrensel Kütle Çekim Yasası’nı açıklar ve kütle çekim kuvvetinin bağlı olduğu değişkenleri analiz eder.",
+  "Newton’ın hareket yasalarını kullanarak bir gök cisminin kütle çekim ivmesinin (g) bağlı olduğu değişkenleri belirler.",
+  "Gezegenin merkezinden yüzeyine ve yüzeyinden dış uzaya doğru gidildikçe kütle çekim ivmesinin değişimini grafikle yorumlar."
+ ],
+ "giris": "Dalından kopan bir elmanın yere düşmesini sağlayan kuvvet ile Ay’ı Dünya etrafındaki yörüngesinde, Dünya’yı ise Güneş etrafındaki yörüngesinde tutan kuvvet aynı doğa yasasının sonucudur. Isaac Newton, doğadaki dört temel kuvvetten biri olan {koyu:Evrensel Kütle Çekim Kuvveti}ni formüle ederek gök mekaniği ile yeryüzü fiziğini birleştirmiştir. Bu haftaki dersimizde kütle çekim kuvvetini, {koyu:kütle çekim ivmesini (g)} ve yapay uyduların dolanım hızını inceleyeceğiz.",
+ "ozet": [
+  "{koyu:Evrensel Kütle Çekim Yasası:} Evrendeki her kütle birbirini kütlelerinin çarpımıyla doğru, kütle merkezleri arasındaki uzaklığın karesiyle ters orantılı bir kuvvetle çeker: {koyu:F = G . {kesir:m1 . m2|{us:d|2}}}.",
+  "{koyu:Etki-Tepki Özelliği:} Kütleleri ne kadar farklı olursa olsun (örneğin Dünya ile Ay), iki cismin birbirine uyguladığı kütle çekim kuvvetleri {koyu:eşit büyüklükte ve zıt yönlüdür} ({koyu:F_12 = -F_21}).",
+  "{koyu:Yüzeydeki Kütle Çekim İvmesi:} Kütlesi M, yarıçapı R olan bir gezegenin yüzeyindeki çekim ivmesi {koyu:g = G . {kesir:M|{us:R|2}}} bağıntısıyla bulunur ve gezegen yüzeyindeki cismin kütlesine (m) bağlı değildir.",
+  "{koyu:Gezegenin İçinde ve Dışında g:} Gezegenin tam merkezinde {koyu:g = 0}’dır; merkezden yüzeye doğru uzaklıkla {koyu:doğru orantılı} artar (g = {kesir:4|3}.π.G.d.r), yüzeyde maksimum olur ve yüzeyden uzaklaştıkça {koyu:{kesir:1|{us:r|2}} ile ters orantılı} azalır.",
+  "{koyu:Uyduların Yörünge Hızı:} Gezegen etrafında r yarıçaplı çembersel yörüngede dolanan uydunun çizgisel hızı {koyu:v = {kok:{kesir:G . M|r}}} olup uydunun kendi kütlesinden bağımsızdır."
+ ],
+ "bolumler": [
+  {
+   "baslik": "1. Evrensel Kütle Çekim Kuvveti",
+   "metin": [
+    "Doğadaki dört temel kuvvetten (güçlü nükleer, elektromanyetik, zayıf nükleer ve kütle çekim) menzili sonsuz olan ve en zayıf şiddetli olan kuvvet {koyu:kütle çekim kuvvetidir}. Newton’ın Evrensel Kütle Çekim Yasası’na göre; aralarında {koyu:d} kadar uzaklık bulunan {koyu:m1} ve {koyu:m2} kütleli iki cisim birbirini kütle merkezlerini birleştiren doğrultuda şu kuvvetle çeker:\n• {koyu:F = G . {kesir:m1 . m2|{us:d|2}}}\nBurada {koyu:G ≈ 6,67 . {us:10|-11} N.{us:m|2}/{us:kg|2}} değerindeki {koyu:evrensel çekim sabitidir}.",
+    "Kütle çekim kuvvetinin temel özellikleri şunlardır:\n• Daima {koyu:çekme} yönündedir (itme özelliği yoktur).\n• Cisimlerin kütleleri ne olursa olsun (örneğin kütlesi çok büyük olan Güneş ile Dünya), birbirlerine uyguladıkları çekim kuvvetlerinin {koyu:büyüklükleri birbirine eşittir} ({koyu:|F_12| = |F_21|}), yönleri ise zıttır ({koyu:F_12 = -F_21}).\n• Kütle merkezleri arasındaki uzaklık (d) 2 katına çıkarsa çekim kuvveti {koyu:4’te 1’ine ({kesir:F|4})}, 3 katına çıkarsa {koyu:9’da 1’ine ({kesir:F|9})} düşer."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Vektörel Gösterim Tuzağına Dikkat!",
+    "metin": "Sorularda {koyu:“Dünya’nın Ay’a uyguladığı kütle çekim kuvveti F ise, Ay’ın Dünya’ya uyguladığı kuvvet nedir?”} diye sorulduğunda; büyüklükleri eşit ancak yönleri zıt olduğu için vektörel cevap {koyu:-F}’dir!"
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 205\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"25\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Newton’ın Evrensel Kütle Çekim Yasası</text><circle cx=\"75\" cy=\"115\" r=\"28\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><text x=\"75\" y=\"120\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">m_1</text><circle cx=\"245\" cy=\"115\" r=\"22\" fill=\"#dcfce7\" stroke=\"#059669\" stroke-width=\"2.2\"/><text x=\"245\" y=\"120\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#065f46\" text-anchor=\"middle\">m_2</text><line x1=\"103\" y1=\"115\" x2=\"150\" y2=\"115\" stroke=\"#dc2626\" stroke-width=\"2.5\"/><polygon points=\"157,115 147,110 147,120\" fill=\"#dc2626\"/><text x=\"130\" y=\"105\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"middle\">F_12</text><line x1=\"223\" y1=\"115\" x2=\"176\" y2=\"115\" stroke=\"#dc2626\" stroke-width=\"2.5\"/><polygon points=\"169,115 179,110 179,120\" fill=\"#dc2626\"/><text x=\"195\" y=\"105\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"middle\">F_21</text><line x1=\"75\" y1=\"162\" x2=\"245\" y2=\"162\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-dasharray=\"4,3\"/><text x=\"160\" y=\"178\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">d (kütle merkezleri arası uzaklık)</text><rect x=\"315\" y=\"42\" width=\"345\" height=\"145\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><rect x=\"315\" y=\"42\" width=\"345\" height=\"28\" rx=\"8\" fill=\"#2563eb\"/><rect x=\"315\" y=\"60\" width=\"345\" height=\"10\" fill=\"#2563eb\"/><text x=\"487.5\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Evrensel Kütle Çekim Kuvveti Özellikleri</text><text x=\"327\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bağıntı: F = G . (m_1 . m_2) / d²</text><text x=\"327\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• G = 6,67 . 10^(-11) N.m²/kg² (Evrensel çekim sabiti)</text><text x=\"327\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Kütlelerin çarpımıyla doğru, aradaki uzaklığın</text><text x=\"327\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  karesiyle (d²) ters orantılıdır.</text><text x=\"327\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Etki-tepki çiftidir: |F_12| = |F_21| ve F_12 = -F_21</text></svg>"
+  },
+  {
+   "baslik": "2. Kütle Çekim İvmesi (g) ve Değişim Grafiği",
+   "metin": [
+    "Kütlesi {koyu:M}, yarıçapı {koyu:R} olan bir gezegenin yüzeyinde bulunan {koyu:m} kütleli bir cisme etki eden ağırlık kuvveti (G_ağırlık = m . g), gezegenin cisme uyguladığı kütle çekim kuvvetine eşittir:\n• m . g = G . {kesir:M . m|{us:R|2}}  =>  {koyu:g = G . {kesir:M|{us:R|2}}}\nGörülüğü gibi çekim ivmesi cismin kütlesine (m) bağlı değildir; yalnızca {koyu:gezegenin kütlesine (M)} ve {koyu:yarıçapına (R)} bağlıdır.",
+    "Homojen yoğunluklu (d özkütleli) küresel bir gezegenin merkezinden dış uzaya doğru gidildikçe çekim ivmesi üç bölgede incelenir:\n1. {koyu:Gezegenin Merkezinde (r = 0):} Her yönden eşit kütle çekimi uygulandığı için net çekim ivmesi sıfırdır ({koyu:g = 0}).\n2. {koyu:Gezegenin İçinde (0 < r < R):} M = d . V = d . {kesir:4|3}.π.{us:r|3} yerine yazılırsa {koyu:g_iç = {kesir:4|3} . π . G . d . r} (yani {koyu:K . d . r}) elde edilir. Gezegenin içinde merkezden yüzeye doğru gidildikçe çekim ivmesi {koyu:r ile doğru orantılı} olarak artar.\n3. {koyu:Gezegenin Yüzeyinde (r = R) ve Dışında (r > R):} Çekim ivmesi yüzeyde {koyu:maksimum} değerini alır ({koyu:g_max = G.M/{us:R|2}}). Yüzeyden h kadar yükseğe çıkıldığında ise merkezden olan toplam uzaklığın ({koyu:r = R + h}) karesiyle ters orantılı olarak azalır: {koyu:g(h) = G . {kesir:M|{us:(R + h)|2}}}."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Yüzeyden R Kadar Yükseğe Çıkılırsa g Ne Olur?",
+    "metin": "Çok sık yapılan hata sadece h yüksekliğini almaktır! Uzaklık {koyu:her zaman gezegenin merkezinden} ölçülür: Yüzeyde uzaklık {koyu:R} iken çekim ivmesi {koyu:g} ise, yüzeyden {koyu:R kadar yükseğe} çıkıldığında merkezden uzaklık {koyu:2R} olur ve çekim ivmesi {koyu:{kesir:g|4}} değerine düşer!"
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 200\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"25\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#7c2d12\" text-anchor=\"middle\">Kütle Çekim İvmesinin (g) Uzaklığa Göre Değişimi</text><rect x=\"25\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"1.6\"/><rect x=\"25\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#059669\"/><rect x=\"25\" y=\"60\" width=\"300\" height=\"10\" fill=\"#059669\"/><text x=\"175.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Gezegenin İçinde ve Yüzeyinde g</text><text x=\"37\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Gezegenin tam merkezinde: g = 0</text><text x=\"37\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Merkezden yüzeye doğru (r < R): Uzaklıkla</text><text x=\"37\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  DOĞRU orantılı artar -> g_iç = (4/3).π.G.d.r</text><text x=\"37\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Gezegen yüzeyinde (r = R) maksimumdur:</text><text x=\"37\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  g_yüzey = G . M / R²</text><rect x=\"355\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"1.6\"/><rect x=\"355\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#d97706\"/><rect x=\"355\" y=\"60\" width=\"300\" height=\"10\" fill=\"#d97706\"/><text x=\"505.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Yüzeyden Uzaklaştıkça (r > R) ve Uydular</text><text x=\"367\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Yüzeyden dışarı çıkıldıkça merkezden uzaklığın</text><text x=\"367\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  karesiyle TERS orantılı azalır: g(r) = G . M / r²</text><text x=\"367\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Uydu dolanım hızı: F_çekim = F_merkezcil</text><text x=\"367\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  G.M.m / r² = m.v² / r  =>  v = kök(G . M / r)</text><text x=\"367\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Uydu hızı uydunun kendi kütlesine (m) bağlı değildir!</text></svg>"
+  },
+  {
+   "baslik": "3. Çembersel Yörüngede Dolanan Uyduların Hızı",
+   "metin": [
+    "Kütlesi M olan bir gezegenin merkezinden r uzaklıktaki çembersel yörüngede dolanan m kütleli bir uydunun yörüngede kalmasını sağlayan {koyu:merkezcil kuvvet}, doğrudan gezegenin uyduya uyguladığı {koyu:kütle çekim kuvvetidir}:\n• F_çekim = F_merkezcil  =>  G . {kesir:M . m|{us:r|2}} = {kesir:m . {us:v|2}|r}",
+    "Denklemin her iki tarafındaki uydu kütlesi (m) ve r’lerden biri sadeleştiğinde uydunun {koyu:çizgisel dolanım hızı}:\n• {koyu:v = {kok:{kesir:G . M|r}}}\nolur. Bu bağıntıya göre aynı yörüngede dolanan farklı kütleli uyduların hızları birbirine eşittir; uydunun yörünge yarıçapı (r) arttıkça (gezegenden uzaklaştıkça) çizgisel hızı {koyu:azalır}, dolanım periyodu (T) ise {koyu:artar}."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Kütle ve Ağırlık Farkı",
+    "metin": "• {koyu:Kütle (m):} Değişmeyen madde miktarıdır; skalerdir, eşit kollu terazi ile ölçülür ve evrenin her yerinde aynıdır.\n• {koyu:Ağırlık (G = m . g):} Cisme etki eden kütle çekim kuvvetidir; vektöreldir, dinamometre ile ölçülür ve çekim ivmesine (g) bağlı olarak değişir."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Aralarında d uzaklığı bulunan m1 ve m2 kütleli iki cismin birbirine uyguladığı kütle çekim kuvvetinin büyüklüğü F’dir. Cisimlerin kütleleri 2 katına çıkarılıp aralarındaki uzaklık yarıya indirilirse yeni çekim kuvveti kaç F olur?",
+   "cevap": "İlk durumda F = G . {kesir:m1 . m2|{us:d|2}}’dir. Yeni durumda F’ = G . {kesir:(2m1) . (2m2)|{us:(d/2)|2}} = G . {kesir:4.m1.m2|{us:d|2}/4} = {koyu:16 F} bulunur."
+  },
+  {
+   "soru": "Dünya’nın yüzeyindeki yer çekimi ivmesi g kadardır. Dünya’nın yarıçapı R olduğuna göre, yer yüzeyinden 2R kadar yükseklikteki bir noktada çekim ivmesi kaç g olur?",
+   "cevap": "Yüzeyde merkezden uzaklık r1 = R iken g = {kesir:G.M|{us:R|2}}’dir. Yüzeyden 2R kadar yükseklikte merkezden toplam uzaklık r2 = R + 2R = 3R olur. Buradaki çekim ivmesi g’ = {kesir:G.M|{us:(3R)|2}} = {kesir:G.M|9.{us:R|2}} = {koyu:{kesir:g|9}} bulunur."
+  },
+  {
+   "soru": "Homojen Dünya’nın yarıçapı R ve yüzeyindeki çekim ivmesi g’dir. Dünya’nın merkezinden R/2 uzaklıktaki (yerkürenin içindeki) bir noktada çekim ivmesi kaç g’dir?",
+   "cevap": "Gezegenin iç kısmında çekim ivmesi merkezden olan uzaklıkla (r) doğru orantılıdır (g_iç = K . d . r). Yüzeyde (r = R iken) çekim ivmesi g ise, merkezden {kesir:R|2} uzaklıkta çekim ivmesi {koyu:{kesir:g|2}} olur."
+  },
+  {
+   "soru": "Kütlesi Dünya’nın kütlesinin 8 katı, yarıçapı ise Dünya’nın yarıçapının 2 katı olan bir X gezegeninin yüzeyindeki çekim ivmesi Dünya’nın yüzeyindeki çekim ivmesinin (g) kaç katıdır?",
+   "cevap": "g_Dünya = G . {kesir:M|{us:R|2}} = g ise, X gezegeni için g_X = G . {kesir:8M|{us:(2R)|2}} = G . {kesir:8M|4.{us:R|2}} = {koyu:2g (2 katı)} bulunur."
+  },
+  {
+   "soru": "Dünya etrafında r ve 4r yarıçaplı çembersel yörüngelerde dolanan m ve 2m kütleli X ve Y uydularının çizgisel hızlarının oranı v_X / v_Y kaçtır?",
+   "cevap": "Uyduların yörünge hızı kendi kütlelerine (m ve 2m) bağlı değildir; v = {kok:{kesir:G.M|r}} formülünden {kesir:v_X|v_Y} = {kok:{kesir:r_Y|r_X}} = {kok:{kesir:4r|r}} = {kok:4} = {koyu:2} bulunur."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Kütlesi M olan Dünya ile kütlesi M/81 olan Ay arasındaki kütle çekim etkileşimi için aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Dünya’nın Ay’a uyguladığı çekim kuvvetinin büyüklüğü Ay’ınkinden 81 kat fazladır.",
+    "Ay’ın Dünya’ya uyguladığı çekim kuvveti sıfırdır.",
+    "Dünya ve Ay’ın birbirine uyguladığı kütle çekim kuvvetleri eşit büyüklükte ve zıt yönlüdür.",
+    "İki gök cismi birbirini iter.",
+    "Kütle çekim kuvveti aralarındaki uzaklıkla doğru orantılıdır."
+   ],
+   "dogru": 2,
+   "aciklama": "Newton’ın etki-tepki yasası ve evrensel çekim yasası gereği kütleler ne kadar farklı olursa olsun iki cismin birbirine uyguladığı kütle çekim kuvvetleri eşit büyüklükte ve zıt yönlüdür."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Yarıçapı R olan Dünya’nın yüzeyinde çekim ivmesi g’dir. Dünya’nın yüzeyinden kaç R yükseklikte çekim ivmesi g/16 değerine düşer?",
+   "secenekler": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "16"
+   ],
+   "dogru": 2,
+   "aciklama": "Çekim ivmesinin g/16 olması için merkezden toplam uzaklığın r = 4R olması gerekir (1/(4R)² = 1/16R²). Merkezden uzaklık 4R ise yüzeyden olan yükseklik h = 4R - R = 3R olur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir gezegenin yüzeyindeki kütle çekim ivmesinin (g) büyüklüğü aşağıdaki niceliklerden hangisine bağlı değildir?",
+   "secenekler": [
+    "Gezegenin kütlesine (M)",
+    "Gezegenin yarıçapına (R)",
+    "Gezegenin ortalama özkütlesine (d)",
+    "Gezegenin yüzeyine bırakılan cismin kütlesine (m)",
+    "Evrensel çekim sabitine (G)"
+   ],
+   "dogru": 3,
+   "aciklama": "g = G.M / R² bağıntısında yüzeydeki cismin kütlesi (m) sadeleşmiştir; dolayısıyla g cismin kütlesine bağlı değildir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Homojen küresel bir gezegenin tam merkezinde (r = 0) çekim ivmesinin değeri nedir?",
+   "secenekler": [
+    "Maksimumdur (g_max)",
+    "Yüzeydeki değerin yarısıdır (g/2)",
+    "Sıfırdır (0)",
+    "Sonsuzdur",
+    "Yüzeydeki değere eşittir"
+   ],
+   "dogru": 2,
+   "aciklama": "Gezegenin tam merkezinde g_iç = K.d.r bağıntısında r = 0 olduğundan çekim ivmesi sıfırdır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Dünya etrafında çembersel bir yörüngede dolanmakta olan bir haberleşme uydusunun yörünge yarıçapı (r) artırılırsa, uydunun çizgisel hızı (v) ve cisme etki eden kütle çekim kuvveti (F) nasıl değişir?",
+   "secenekler": [
+    "v artar, F artar",
+    "v azalır, F azalır",
+    "v değişmez, F azalır",
+    "v azalır, F artar",
+    "v artar, F azalır"
+   ],
+   "dogru": 1,
+   "aciklama": "Yörünge yarıçapı r arttıkça v = kök(G.M/r) gereği çizgisel hız azalır ve F = G.M.m/r² gereği kütle çekim kuvveti de azalır."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "Kütle çekim kuvveti doğadaki dört temel kuvvet içinde menzili sonsuz olan ancak şiddeti en zayıf olan kuvvettir.",
+     "dogru": true,
+     "aciklama": "Kütle çekim kuvvetinin menzili sonsuzdur ve temel kuvvetlerin en zayıfıdır."
+    },
+    {
+     "metin": "Homojen bir gezegenin merkezinden yüzeyine doğru gidildikçe çekim ivmesi merkezden olan uzaklıkla doğru orantılı olarak artar.",
+     "dogru": true,
+     "aciklama": "Gezegenin içinde g = (4/3).π.G.d.r bağıntısı geçerlidir."
+    },
+    {
+     "metin": "Dünya’dan Ay’a götürülen bir cismin hem kütlesi hem de ağırlığı 6’da 1’ine düşer.",
+     "dogru": false,
+     "aciklama": "Yanlıştır; cismin kütlesi değişmez, yalnızca ağırlığı (G = m.g) Ay’ın çekim ivmesi Dünya’nınkinin 1/6’sı olduğu için 1/6’sına düşer."
+    },
+    {
+     "metin": "Aynı gezegen etrafında aynı yörünge yarıçapında dolanan iki uydudan kütlesi büyük olanın dolanım hızı daha büyüktür.",
+     "dogru": false,
+     "aciklama": "Yanlıştır; v = kök(G.M/r) bağıntısına göre dolanım hızı uydunun kütlesine bağlı değildir, ikisinin de hızı eşittir."
+    },
+    {
+     "metin": "Gezegenin çekim ivmesi en büyük değerini gezegenin tam yüzeyinde (r = R) alır.",
+     "dogru": true,
+     "aciklama": "Merkezden yüzeye kadar artan çekim ivmesi yüzeyde maksimum olur, yüzeyden uzaklaştıkça azalır."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "soru": "Aşağıdaki fiziksel nicelikleri doğru matematiksel bağıntılarıyla eşleştiriniz.",
+   "ciftler": [
+    [
+     "G . (m1 . m2) / d²",
+     "Evrensel kütle çekim kuvveti"
+    ],
+    [
+     "G . M / R²",
+     "Gezegen yüzeyindeki kütle çekim ivmesi"
+    ],
+    [
+     "(4/3) . π . G . d . r",
+     "Gezegenin iç kısmındaki kütle çekim ivmesi"
+    ],
+    [
+     "G . M / (R + h)²",
+     "Yüzeyden h kadar yükseklikteki çekim ivmesi"
+    ],
+    [
+     "kök(G . M / r)",
+     "Çembersel yörüngede dolanan uydunun çizgisel hızı"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+   "cumleler": [
+    {
+     "metin": "İki cisim arasındaki kütle çekim kuvveti, kütle merkezleri arasındaki uzaklığın ___ ile ters orantılıdır.",
+     "cevap": "karesi"
+    },
+    {
+     "metin": "Bir cisme gezegen tarafından uygulanan kütle çekim kuvvetine o cismin ___ adı verilir.",
+     "cevap": "ağırlığı"
+    },
+    {
+     "metin": "Bir uydunun gezegen etrafında çembersel yörüngede dolanmasını sağlayan merkezcil kuvvet ___ çekim kuvvetidir.",
+     "cevap": "kütle"
+    },
+    {
+     "metin": "Dünya’nın kutupları ekvatora göre merkeze biraz daha yakın olduğu için kutuplardaki çekim ivmesi ekvatordakinden daha ___.",
+     "cevap": "büyüktür"
+    },
+    {
+     "metin": "Evrenin her yerinde değişmeyen madde miktarına ___ denir ve eşit kollu terazi ile ölçülür.",
+     "cevap": "kütle"
+    }
+   ],
+   "fazla": [
+    "küçüktür",
+    "hacim"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Yarıçapı R olan homojen Dünya’nın merkezinden R/2 uzaklıktaki K noktası, yüzeyindeki L noktası ve yüzeyinden R kadar yükseklikteki M noktasındaki kütle çekim ivmelerini (g_K, g_L, g_M) hesaplayarak büyükten küçüğe sıralayınız.",
+   "ipuclari": [
+    "1. İpucu: Yüzeydeki L noktasının çekim ivmesine g_L = g diyerek içteki K noktasını doğru orantıyla bulunuz.",
+    "2. İpucu: Dıştaki M noktasının merkezden toplam uzaklığını r = R + R = 2R alarak ters kare yasasıyla hesaplayınız."
+   ],
+   "cevap": "1. Dünya’nın yüzeyindeki L noktasında (r = R) çekim ivmesi maksimumdur: g_L = G.M / R² = g diyelim.\n2. Dünya’nın içindeki K noktası merkezden r_K = R/2 uzaklıktadır. Gezegen içinde çekim ivmesi merkezden uzaklıkla doğru orantılı olduğundan g_K = g / 2 = 0,5g olur.\n3. Yüzeyden R kadar yükseklikteki M noktasının Dünya merkezine olan toplam uzaklığı r_M = R + R = 2R’dir. Dış bölgede çekim ivmesi uzaklığın karesiyle ters orantılı olduğundan g_M = G.M / (2R)² = g / 4 = 0,25g olur.\nSıralama: g_L > g_K > g_M (g > g/2 > g/4) bulunur."
+  }
+ ]
+}

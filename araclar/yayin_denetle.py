@@ -56,6 +56,8 @@ def sema_ve_gorsel_onar():
     onaran = []
 
     for p in sorted((ARACLAR / "gorseller").glob("*.py")):
+        if p.name.startswith("_"):
+            continue
         s = p.read_text(encoding="utf-8")
         if "def uygula" not in s and "GORSELLER" in s:
             ek = (
@@ -66,6 +68,18 @@ def sema_ve_gorsel_onar():
             )
             p.write_text(s + ek, encoding="utf-8")
             onaran.append(f"araclar/gorseller/{p.name}: uygula(v) eklendi")
+        elif "def uygula" not in s and "def ciz(" in s:
+            ek = (
+                "\n\ndef uygula(v):\n"
+                "    from _taban import SON_SVG\n"
+                "    SON_SVG.clear()\n"
+                "    ciz()\n"
+                "    svg_ic = SON_SVG.get('_son')\n"
+                "    if svg_ic and v.get('bolumler'):\n"
+                "        v['bolumler'][0]['gorsel'] = svg_ic\n"
+            )
+            p.write_text(s + ek, encoding="utf-8")
+            onaran.append(f"araclar/gorseller/{p.name}: ciz() -> uygula(v) köprüsü eklendi")
 
     for p in sorted((ARACLAR / "ozetler").glob("*.json")):
         try:
@@ -317,8 +331,10 @@ def denetle(hizli=False):
 
     # 3. Görsel modüllerinin (araclar/gorseller/*.py) arayüz denetimi
     for p in sorted((ARACLAR / "gorseller").glob("*.py")):
+        if p.name.startswith("_"):
+            continue
         s = p.read_text(encoding="utf-8")
-        if "def uygula" not in s and "GORSELLER" not in s:
+        if "def uygula" not in s and "GORSELLER" not in s and "def ciz(" not in s:
             hatalar.append(f"{p.relative_to(KOK)}: 'def uygula(v):' fonksiyonu tanımlı değil")
 
     # 4. Ziyaretçi verisi (public/veri/ziyaret.json) bütünlük denetimi

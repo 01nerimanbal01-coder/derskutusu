@@ -1039,8 +1039,13 @@ if __name__ == '__main__':
     # (paralel yazımda tek dosyada çakışma olmasın diye; modül bu dosyadaki svg, ok_isareti, dugum, dal … yardımcılarını kullanır)
     import importlib.util
     import sys as _sys
+    _gorsel_dizin = Path(__file__).resolve().parent / 'gorseller'
+    if str(_gorsel_dizin) not in _sys.path:
+        _sys.path.insert(0, str(_gorsel_dizin))
     _sys.modules.setdefault('ozet_gorsel', _sys.modules[__name__])
-    for modul in sorted((Path(__file__).resolve().parent / 'gorseller').glob('*.py')):
+    for modul in sorted(_gorsel_dizin.glob('*.py')):
+        if modul.name.startswith('_'):
+            continue
         hedef = modul.stem + '.json'
         if not (OZET / hedef).exists():
             continue
@@ -1062,5 +1067,14 @@ if __name__ == '__main__':
                         if i < len(bolumler):
                             bolumler[i]['gorsel'] = g
             yaz(hedef, _uygula_gorseller)
+        elif hasattr(m, 'ciz'):
+            def _uygula_ciz(v, _ciz=m.ciz):
+                from _taban import SON_SVG
+                SON_SVG.clear()
+                _ciz()
+                svg_ic = SON_SVG.get('_son')
+                if svg_ic and v.get('bolumler'):
+                    v['bolumler'][0]['gorsel'] = svg_ic
+            yaz(hedef, _uygula_ciz)
     print('görseller yazıldı')
 

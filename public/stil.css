@@ -450,20 +450,29 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
 .kalem-dugme[hidden] { display: none; }
 .kalem-dugme svg { width: 24px; height: 24px; }
 .kalem-dugme:hover { transform: translateY(-1px); }
-.tahta-cubuk { position: absolute; left: 0; right: 0; margin-inline: auto; width: max-content; bottom: 16px; z-index: 2; display: flex; gap: 6px; flex-wrap: wrap; justify-content: center;
-  max-width: calc(100% - 24px); padding: 6px; border-radius: 16px; background: rgb(17 26 46 / .92); box-shadow: 0 10px 30px rgb(0 0 0 / .3); backdrop-filter: blur(6px); }
+.tahta-cubuk { position: absolute; left: 0; right: 0; margin-inline: auto; width: max-content; bottom: 14px; z-index: 2; display: flex; gap: 4px; flex-wrap: wrap; justify-content: center; align-items: center;
+  max-width: calc(100% - 20px); padding: 6px 8px; border-radius: 16px; background: rgb(17 26 46 / .94); border: 1px solid rgb(255 255 255 / .12); box-shadow: 0 12px 34px rgb(0 0 0 / .35); backdrop-filter: blur(8px); }
 .kalem-katman .tahta-cubuk { position: fixed; }
-.tahta-grup { display: flex; gap: 2px; padding: 0 4px; border-right: 1px solid rgb(255 255 255 / .14); }
+.tahta-grup { display: flex; gap: 2px; align-items: center; padding: 0 4px; border-right: 1px solid rgb(255 255 255 / .14); }
 .tahta-grup:last-child { border-right: 0; }
-.tahta-cubuk button { width: 40px; height: 40px; border: 0; border-radius: 10px; background: transparent; color: #e9eef6; cursor: pointer; display: grid; place-items: center; }
-.tahta-cubuk button svg { width: 21px; height: 21px; }
-.tahta-cubuk button:hover { background: rgb(255 255 255 / .1); }
-.tahta-cubuk button[aria-pressed="true"] { background: rgb(255 255 255 / .2); color: #fff; }
-.tahta-cubuk .renk span { width: 20px; height: 20px; border-radius: 50%; border: 2px solid rgb(255 255 255 / .35); }
-.tahta-cubuk .renk[aria-pressed="true"] span { border-color: #fff; box-shadow: 0 0 0 2px rgb(255 255 255 / .35); }
+.tahta-cubuk button { width: 36px; height: 36px; border: 0; border-radius: 9px; background: transparent; color: #e9eef6; cursor: pointer; display: grid; place-items: center; transition: background .12s, transform .12s; }
+.tahta-cubuk button svg { width: 19px; height: 19px; }
+.tahta-cubuk button:hover { background: rgb(255 255 255 / .12); }
+.tahta-cubuk button[aria-pressed="true"] { background: var(--vurgu, #2451d6); color: #fff; box-shadow: 0 0 0 1px rgb(255 255 255 / .28) inset; }
+.tahta-cubuk .renk span { width: 18px; height: 18px; border-radius: 50%; border: 2px solid rgb(255 255 255 / .35); }
+.tahta-cubuk .renk[aria-pressed="true"] { background: rgb(255 255 255 / .18); }
+.tahta-cubuk .renk[aria-pressed="true"] span { border-color: #fff; box-shadow: 0 0 0 2px rgb(255 255 255 / .4); transform: scale(1.08); }
+.tahta-ozel-renk { width: 32px; height: 32px; border-radius: 9px; display: grid; place-items: center; cursor: pointer; position: relative; }
+.tahta-ozel-renk:hover { background: rgb(255 255 255 / .12); }
+.tahta-ozel-renk input { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; border: 0; padding: 0; }
+.tahta-ozel-renk span { width: 18px; height: 18px; border-radius: 50%; border: 2px solid rgb(255 255 255 / .65);
+  background: conic-gradient(#e62117, #f29f05, #12a150, #00a3b4, #2451d6, #8b3fd6, #e62117); pointer-events: none; }
 .tahta-cubuk .kalin i { display: block; border-radius: 50%; background: #e9eef6; }
 .tahta-cubuk .kapat { color: #ffb4ad; }
 .tahta-cubuk button:disabled { opacity: .3; cursor: default; background: transparent; }
+.tahta-metin-girdi { position: absolute; z-index: 5; min-width: 120px; max-width: min(420px, calc(100% - 24px)); padding: 4px 8px;
+  border: 1.5px dashed var(--vurgu, #2451d6); border-radius: 8px; background: rgb(255 255 255 / .92); outline: none;
+  box-shadow: 0 6px 18px rgb(0 0 0 / .18); resize: none; overflow: hidden; line-height: 1.25; }
 .kalem-ipucu { position: fixed; left: 0; right: 0; top: 84px; margin-inline: auto; width: max-content; max-width: calc(100% - 32px); z-index: 3;
   padding: 10px 16px; border-radius: 12px; background: rgb(17 26 46 / .92); color: #fff; font-size: 14px; pointer-events: none; box-shadow: 0 10px 30px rgb(0 0 0 / .3); }
 .tahta-sayfa { padding: 0; }
@@ -476,7 +485,8 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
 .tahta-alan:fullscreen { height: 100vh; }
 #tahta { position: absolute; inset: 0; }
 @media (max-width: 560px) {
-  .tahta-cubuk button { width: 34px; height: 34px; }
+  .tahta-cubuk button { width: 32px; height: 32px; }
+  .tahta-cubuk button svg { width: 17px; height: 17px; }
   /* Dar ekranda yalnız simge: yuvarlak düğme metni örtmez (erişilebilir adı aria-label'da) */
   .kalem-dugme { width: 52px; height: 52px; padding: 0; justify-content: center; border-radius: 50%; right: 14px; bottom: 14px; }
   .kalem-dugme span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

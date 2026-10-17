@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Akıllı tahta · Ders Kutusu</title>
-<meta name="description" content="Tarayıcıda çalışan akıllı tahta: kalem, fosforlu kalem, silgi, renkler, kareli ve çizgili zemin, sayfalar.">
+<meta name="description" content="Tarayıcıda çalışan akıllı tahta: hassas kalem, fosforlu kalem, cetvel, geometrik şekiller, koordinat ekseni, lazer işaretçi, kareli ve çizgili zemin, sayfalar.">
 <meta name="robots" content="noindex">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#2451d6">
@@ -15,9 +15,9 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:site_name" content="Ders Kutusu">
 <meta property="og:title" content="Akıllı tahta · Ders Kutusu">
-<meta property="og:description" content="Tarayıcıda çalışan akıllı tahta: kalem, fosforlu kalem, silgi, renkler, kareli ve çizgili zemin, sayfalar.">
+<meta property="og:description" content="Tarayıcıda çalışan akıllı tahta: hassas kalem, fosforlu kalem, cetvel, geometrik şekiller, koordinat ekseni, lazer işaretçi, kareli ve çizgili zemin, sayfalar.">
 <meta property="og:image" content="https://derskutusu.com/paylasim.png">
-<link rel="stylesheet" href="/stil.css?v=202610171400">
+<link rel="stylesheet" href="/stil.css?v=202610171430">
 <link rel="stylesheet" href="/renkler.css?v=20261017-1" media="screen">
 </head>
 <body data-site-renk="yesil">
@@ -62,7 +62,7 @@
     <div class="kap tahta-ustbar">
       <h1>Akıllı tahta</h1>
       <label class="gizli" for="t-zemin">Zemin</label>
-      <select id="t-zemin" aria-label="Zemin"><option value="kareli">Kareli</option><option value="cizgili">Çizgili</option><option value="noktali">Noktalı</option><option value="">Düz</option></select>
+      <select id="t-zemin" aria-label="Zemin"><option value="kareli">Kareli</option><option value="cizgili">Çizgili</option><option value="noktali">Noktalı</option><option value="izometrik">İzometrik noktalı</option><option value="koordinat">Koordinat düzlemi</option><option value="birim-cember">Birim çember</option><option value="sayidogrusu">Sayı doğrusu</option><option value="muzik">Müzik dizeği (Porte)</option><option value="koyu">Koyu tahta</option><option value="">Düz beyaz</option></select>
       <button class="dugme" type="button" id="t-onceki" aria-label="Önceki sayfa">‹</button>
       <span id="t-sayfa" aria-live="polite">1 / 1</span>
       <button class="dugme" type="button" id="t-sonraki" aria-label="Sonraki ya da yeni sayfa">›</button>
@@ -111,7 +111,7 @@
 
 <script src="/ortak.js?v=20261014-1"></script>
 <script src="/arama.js?v=20261004-duzen1"></script>
-<script src="/tahta.js?v=20261013-1"></script>
+<script src="/tahta.js?v=20261017-2"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fffb5e8a709947ee9ba14ea753d96275"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
