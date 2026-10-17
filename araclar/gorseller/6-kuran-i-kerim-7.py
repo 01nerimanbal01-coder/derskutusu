@@ -1,68 +1,60 @@
-from PIL import Image, ImageDraw
-import os
-from yardimci import (
-    W, H, C_BG, C_WHITE, C_DARK, C_TEXT, C_MUTED, C_BORDER,
-    C_BLUE, C_GREEN, C_ORANGE, C_RED, C_PURPLE, C_TEAL, C_YELLOW,
-    C_LIGHT_BLUE, C_LIGHT_GREEN, C_LIGHT_ORANGE, C_LIGHT_RED, C_LIGHT_PURPLE, C_LIGHT_YELLOW,
-    font, yeni_kart, kaydet, ciz_kutu, ciz_baslik_kutu, ciz_etiket, ortali_yazi,
-    sarili_yazi, ciz_ok, ciz_tablo
-)
+from _taban import Primitifler, renkler, kaydet
 
-OUT_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))),
-                       "img", "ozetler", "6-kuran-i-kerim-7")
 
-def gorsel_1():
-    img, d = yeni_kart("SALLİ VE BARİK DUALARI İLE ANLAMLARI",
-                       "6. Sınıf Kur'an-ı Kerim • 1. Ünite • 7. Hafta", C_GREEN)
+def ciz():
+    P = Primitifler()
+    R = renkler('kuran-i-kerim')
+    ic = []
+    ic.append(P.baslik(400, 32, 'SALLİ VE BARİK DUALARI İLE ANLAMLARI (SALAVAT DUALARI)', R['koyu']))
 
-    ciz_baslik_kutu(d, 50, 120, 560, 420, "ALLAHÜMME SALLİ DUASI", C_GREEN, C_LIGHT_GREEN)
-    ciz_kutu(d, 70, 175, 520, 165, C_WHITE, C_GREEN, r=10)
-    d.text((88, 188), "OKUNUŞU:", font=font(14, True), fill=C_GREEN)
-    salli_okunus = [
-        "Allâhümme salli alâ Muhammedin",
-        "ve alâ âli Muhammed.",
-        "Kemâ salleyte alâ İbrâhîme",
-        "ve alâ âli İbrâhîm.",
-        "İnneke hamîdün mecîd."
+    # Sol panel: Allahümme Salli Duası
+    ic.append(P.kutu(20, 56, 365, 290, R['acik'], R['orta']))
+    ic.append(P.metin(202, 80, '1. ALLAHÜMME SALLİ DUASI VE ANLAMI', R['koyu'], 13, 'bold', 'middle'))
+
+    sol = [
+        (100, '1. Cümle: Allâhümme salli alâ Muhammedin...', 'Allah’ım! Muhammed’e ve Muhammed’in ailesine rahmet et.'),
+        (150, '2. Cümle: Kemâ salleyte alâ İbrâhîme...', 'İbrahim’e ve İbrahim’in ailesine rahmet ettiğin gibi.'),
+        (200, '3. Cümle: İnneke hamîdün mecîd.', 'Şüphesiz Sen övülmeye layık (Hamîd) ve şanı yüce (Mecîd) olansın.'),
+        (250, '"Salli" Kelimesinin Anlamı', 'Allah’tan Peygamberimize rahmet etmesini ve şanını yüceltmesini dilemek.'),
+        (300, '"Âl" Kavramı', 'Peygamberimizin Ehl-i Beyt’i (ailesi) ve samimi müminler.'),
     ]
-    y = 212
-    for s in salli_okunus:
-        d.text((95, y), s, font=font(14, True), fill=C_DARK)
-        y += 24
+    for y, b, a in sol:
+        ic.append(P.kutu(35, y, 335, 42, '#ffffff', R['orta']))
+        ic.append(P.metin(202, y + 16, b, R['koyu'], 11, 'bold', 'middle'))
+        ic.append(P.metin(202, y + 32, a, '#334155', 9.5, 'normal', 'middle'))
 
-    ciz_kutu(d, 70, 355, 520, 165, C_WHITE, C_TEAL, r=10)
-    d.text((88, 368), "TÜRKÇE ANLAMI:", font=font(14, True), fill=C_TEAL)
-    salli_anlam = (
-        "Allah'ım! حضرت İbrahim'e ve İbrahim'in ailesine "
-        "rahmet ettiğin gibi Muhammed'e ve Muhammed'in "
-        "ailesine de rahmet et (şerefini yücelt). "
-        "Şüphesiz Sen övülmeye layık ve şanı yüce olansın."
-    )
-    sarili_yazi(d, "Allah'ım! İbrahim'e ve İbrahim'in ailesine rahmet ettiğin gibi, Muhammed'e ve Muhammed'in ailesine de rahmet et. Şüphesiz Sen övülmeye layık (Hamîd) ve şanı yüce (Mecîd) olansın.", 90, 396, 480, font(13), C_DARK)
+    # Sağ panel: Allahümme Barik Duası ve Okunduğu Yerler
+    ic.append(P.kutu(400, 56, 380, 290, '#fef3c7', '#d97706'))
+    ic.append(P.metin(590, 80, '2. ALLAHÜMME BARİK DUASI VE OKUNDUĞU YERLER', '#92400e', 12.5, 'bold', 'middle'))
 
-    ciz_baslik_kutu(d, 640, 120, 590, 420, "ALLAHÜMME BARİK DUASI", C_BLUE, C_LIGHT_BLUE)
-    ciz_kutu(d, 660, 175, 550, 165, C_WHITE, C_BLUE, r=10)
-    d.text((678, 188), "OKUNUŞU:", font=font(14, True), fill=C_BLUE)
-    barik_okunus = [
-        "Allâhümme bârik alâ Muhammedin",
-        "ve alâ âli Muhammed.",
-        "Kemâ bârekte alâ İbrâhîme",
-        "ve alâ âli İbrâhîm.",
-        "İnneke hamîdün mecîd."
+    sag = [
+        (100, '1. Cümle: Allâhümme bârik alâ Muhammedin...', 'Allah’ım! Muhammed’i ve Muhammed’in ailesini mübarek kıl.'),
+        (150, '2. Cümle: Kemâ bârekte alâ İbrâhîme...', 'İbrahim’i ve İbrahim’in ailesini mübarek kıldığın gibi.'),
+        (200, '3. Cümle: İnneke hamîdün mecîd.', 'Şüphesiz Sen övülmeye layık ve şanı yüce olansın.'),
+        (250, 'Namazda Okunduğu Yerler (Ka’de-i Ahîre)', 'Tüm namazların son oturuşunda Ettehiyyâtü’den sonra okunur.'),
+        (300, 'Diğer Okunduğu Yerler', 'Cenaze namazında 2. tekbirden sonra; İkindi/Yatsı sünneti ilk oturuşta.'),
     ]
-    y = 212
-    for s in barik_okunus:
-        d.text((685, y), s, font=font(14, True), fill=C_DARK)
-        y += 24
+    for y, b, a in sag:
+        ic.append(P.kutu(415, y, 350, 42, '#ffffff', '#d97706'))
+        ic.append(P.metin(590, y + 16, b, '#92400e', 11, 'bold', 'middle'))
+        ic.append(P.metin(590, y + 32, a, '#334155', 9.5, 'normal', 'middle'))
 
-    ciz_kutu(d, 660, 355, 550, 165, C_WHITE, C_PURPLE, r=10)
-    d.text((678, 368), "TÜRKÇE ANLAMI:", font=font(14, True), fill=C_PURPLE)
-    sarili_yazi(d, "Allah'ım! İbrahim'i ve İbrahim'in ailesini mübarek (bereketli) kıldığın gibi, Muhammed'i ve Muhammed'in ailesini de mübarek kıl. Şüphesiz Sen övülmeye layık (Hamîd) ve şanı yüce (Mecîd) olansın.", 680, 396, 510, font(13), C_DARK)
+    # Alt bant
+    ic.append(P.kutu(20, 360, 760, 48, '#f0fdf4', R['orta']))
+    ic.append(P.metin(400, 380, 'EZBER İPUCU: Salli duasında "salli ... kemâ salleyte" (rahmet et); Barik duasında "bârik ... kemâ bârekte" (mübarek kıl) denir!', R['koyu'], 10.5, 'bold', 'middle'))
+    ic.append(P.metin(400, 398, 'Her iki duada da tevhid mücadelesinin iki büyük peygamberi Hz. Muhammed (s.a.v.) ve Hz. İbrahim (a.s.) birlikte anılır.', '#334155', 10.5, 'normal', 'middle'))
 
-    ciz_kutu(d, 50, 560, 1180, 75, C_LIGHT_YELLOW, C_ORANGE, r=12)
-    ortali_yazi(d, "Salli ve Barik duaları namazların son oturuşunda (Ka'de-i Ahîre) Ettehiyyâtü duasından sonra ve cenaze namazında 2. tekbirden sonra okunur.", 597, font(14, True), C_DARK)
+    kaydet('6-kuran-i-kerim-7.svg', P.sar(ic))
 
-    kaydet(img, os.path.join(OUT_DIR, "gorsel_1.png"))
 
-if __name__ == "__main__":
-    gorsel_1()
+if __name__ == '__main__':
+    ciz()
+
+
+def uygula(v):
+    from _taban import SON_SVG
+    SON_SVG.clear()
+    ciz()
+    svg_ic = SON_SVG.get('_son')
+    if svg_ic and v.get('bolumler'):
+        v['bolumler'][0]['gorsel'] = svg_ic

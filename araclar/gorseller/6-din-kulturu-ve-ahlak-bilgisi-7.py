@@ -1,66 +1,60 @@
-from PIL import Image, ImageDraw
-import os
-from yardimci import (
-    W, H, C_BG, C_WHITE, C_DARK, C_TEXT, C_MUTED, C_BORDER,
-    C_BLUE, C_GREEN, C_ORANGE, C_RED, C_PURPLE, C_TEAL, C_YELLOW,
-    C_LIGHT_BLUE, C_LIGHT_GREEN, C_LIGHT_ORANGE, C_LIGHT_RED, C_LIGHT_PURPLE, C_LIGHT_YELLOW,
-    font, yeni_kart, kaydet, ciz_kutu, ciz_baslik_kutu, ciz_etiket, ortali_yazi,
-    sarili_yazi, ciz_ok, ciz_tablo
-)
+from _taban import Primitifler, renkler, kaydet
 
-OUT_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))),
-                       "img", "ozetler", "6-din-kulturu-ve-ahlak-bilgisi-7")
 
-def gorsel_1():
-    img, d = yeni_kart("BİR SURE ÖĞRENİYORUM: FELAK SURESİ VE ANLAMI",
-                       "6. Sınıf Din Kültürü ve Ahlak Bilgisi • 1. Ünite • 7. Hafta", C_TEAL)
+def ciz():
+    P = Primitifler()
+    R = renkler('din-kulturu-ve-ahlak-bilgisi')
+    ic = []
+    ic.append(P.baslik(400, 32, 'BİR SURE ÖĞRENİYORUM: FELAK SURESİ VE ANLAMI', R['koyu']))
 
-    ciz_baslik_kutu(d, 50, 120, 560, 420, "FELAK SURESİ KÜNYESİ VE OKUNUŞU", C_TEAL, C_LIGHT_GREEN)
-    bilgiler = [
-        ("İniş Yeri ve Ayet:", "Mekke'de inmiştir, 5 ayettir. 113. suredir."),
-        ("Felak Kelimesi:", "'Sabah aydınlığı, karanlığı yarıp çıkan ışık' demektir."),
-        ("Muavvizeteyn:", "Felak ve Nâs surelerine 'iki koruyucu' (Muavvizeteyn) denir.")
-    ]
-    y = 175
-    for b, a in bilgiler:
-        ciz_kutu(d, 70, y, 520, 44, C_WHITE, C_TEAL, r=8)
-        d.text((85, y + 12), b, font=font(14, True), fill=C_TEAL)
-        d.text((240, y + 12), a, font=font(13), fill=C_DARK)
-        y += 52
+    # Sol panel: Felak Suresi Okunuşu ve Künyesi
+    ic.append(P.kutu(20, 56, 365, 290, R['acik'], R['orta']))
+    ic.append(P.metin(202, 80, '1. FELAK SURESİ’NİN OKUNUŞU (113. SURE)', R['koyu'], 13, 'bold', 'middle'))
 
-    ciz_kutu(d, 70, 340, 520, 185, C_WHITE, C_GREEN, r=10)
-    d.text((90, 352), "OKUNUŞU (Bismillâhirrahmânirrahîm):", font=font(14, True), fill=C_GREEN)
     ayetler = [
-        "1. Kul eûzü birabbil-felak.",
-        "2. Min şerri mâ halak.",
-        "3. Ve min şerri gâsikın izâ vekab.",
-        "4. Ve min şerrin-neffâsâti fil-ukad.",
-        "5. Ve min şerri hâsidin izâ hased."
+        (100, '1. Ayet: قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ', 'Kul eûzü birabbi’l-felak.'),
+        (150, '2. Ayet: مِنْ شَرِّ مَا خَلَقَ', 'Min şerri mâ halak.'),
+        (200, '3. Ayet: وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ', 'Ve min şerri gâsikın izâ vekab.'),
+        (250, '4. Ayet: وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ', 'Ve min şerri’n-neffâsâti fi’l-ukad.'),
+        (300, '5. Ayet: وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ', 'Ve min şerri hâsidin izâ hased.'),
     ]
-    ay_y = 378
-    for ay in ayetler:
-        d.text((95, ay_y), ay, font=font(14, True), fill=C_DARK)
-        ay_y += 28
+    for y, b, a in ayetler:
+        ic.append(P.kutu(35, y, 335, 42, '#ffffff', R['orta']))
+        ic.append(P.metin(202, y + 16, b, R['koyu'], 11, 'bold', 'middle'))
+        ic.append(P.metin(202, y + 32, a, '#334155', 10, 'normal', 'middle'))
 
-    ciz_baslik_kutu(d, 640, 120, 590, 420, "FELAK SURESİNDE ALLAH'A SIĞINILAN KÖTÜLÜKLER", C_PURPLE, C_LIGHT_PURPLE)
-    anlamlar = [
-        ("1. Ayet: Sabahın Rabbine Sığınma", "De ki: Yarattığı şeylerin kötülüğünden sabahın Rabbine sığınırım.", C_TEAL),
-        ("2. Ayet: Yaratılmışların Şerri", "Görünür-görünmez tüm zararlı varlıkların kötülüğünden korunma.", C_BLUE),
-        ("3. Ayet: Çöken Karanlığın Şerri", "Karanlığı çöktüğü zaman gecenin ve içindeki tehlikelerin şerri.", C_PURPLE),
-        ("4. Ayet: Düğümlere Üfleyenler", "İnsanların arasını bozan, fitne ve büyü peşinde koşanların şerri.", C_ORANGE),
-        ("5. Ayet: Kıskanç (Hasetçi) Şerri", "Başkasının nimetini çekemeyen hasetçinin kıskandığı zamanki şerri.", C_RED)
+    # Sağ panel: Felak Suresi'nin Anlamı ve Sığınılan Şerler
+    ic.append(P.kutu(400, 56, 380, 290, '#fef3c7', '#d97706'))
+    ic.append(P.metin(590, 80, '2. ALLAH’A SIĞINILAN KÖTÜLÜKLER (MEALİ)', '#92400e', 13, 'bold', 'middle'))
+
+    sag = [
+        (100, '1. Sabahın Rabbine Sığınma (İstiâze)', 'De ki: "Sabahın Rabbine sığınırım!" (Felak = Sabah aydınlığı)'),
+        (150, '2. Yaratılmışların Şerri', 'Yarattığı şeylerin (görünür-görünmez zararların) kötülüğünden,'),
+        (200, '3. Çöken Gece Karanlığının Şerri (Gâsık)', 'Karanlığı çöktüğü zaman gecenin ve tehlikelerinin kötülüğünden,'),
+        (250, '4. Düğümlere Üfleyenlerin Şerri', 'Büyü, fitne ve dedikodu ile ara bozanların kötülüğünden,'),
+        (300, '5. Kıskanç Kişinin Şerri (Haset)', 'Kıskandığı vakit kıskanç (hasetçi) kişinin kötülüğünden!'),
     ]
-    y = 175
-    for bas, acik, renk in anlamlar:
-        ciz_kutu(d, 660, y, 550, 62, C_WHITE, renk, r=8)
-        d.text((675, y + 10), bas, font=font(14, True), fill=renk)
-        d.text((675, y + 34), acik, font=font(13), fill=C_DARK)
-        y += 70
+    for y, b, a in sag:
+        ic.append(P.kutu(415, y, 350, 42, '#ffffff', '#d97706'))
+        ic.append(P.metin(590, y + 16, b, '#92400e', 11, 'bold', 'middle'))
+        ic.append(P.metin(590, y + 32, a, '#334155', 10, 'normal', 'middle'))
 
-    ciz_kutu(d, 50, 560, 1180, 75, C_LIGHT_YELLOW, C_ORANGE, r=12)
-    ortali_yazi(d, "Peygamberimiz (s.a.v.) her gece yatmadan önce İhlas, Felak ve Nâs surelerini okuyup ellerine üfler ve vücudunu mesh ederdi.", 597, font(15, True), C_DARK)
+    # Alt bant
+    ic.append(P.kutu(20, 360, 760, 48, '#f0fdf4', R['orta']))
+    ic.append(P.metin(400, 380, 'MUAVVİZETEYN (İKİ KORUYUCU SURE): Kur’an’ın son iki suresi olan FELAK (113) ve NÂS (114) sureleridir.', R['koyu'], 11, 'bold', 'middle'))
+    ic.append(P.metin(400, 398, 'Haset: Başkasındaki nimetin yok olmasını istemektir (yasaktır). Gıpta (İmrenme): Benzerinin kendine de verilmesini dilemektir.', '#334155', 10.5, 'normal', 'middle'))
 
-    kaydet(img, os.path.join(OUT_DIR, "gorsel_1.png"))
+    kaydet('6-din-kulturu-ve-ahlak-bilgisi-7.svg', P.sar(ic))
 
-if __name__ == "__main__":
-    gorsel_1()
+
+if __name__ == '__main__':
+    ciz()
+
+
+def uygula(v):
+    from _taban import SON_SVG
+    SON_SVG.clear()
+    ciz()
+    svg_ic = SON_SVG.get('_son')
+    if svg_ic and v.get('bolumler'):
+        v['bolumler'][0]['gorsel'] = svg_ic

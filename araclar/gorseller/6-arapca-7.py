@@ -1,54 +1,60 @@
-from PIL import Image, ImageDraw
-import os
-from yardimci import (
-    W, H, C_BG, C_WHITE, C_DARK, C_TEXT, C_MUTED, C_BORDER,
-    C_BLUE, C_GREEN, C_ORANGE, C_RED, C_PURPLE, C_TEAL, C_YELLOW,
-    C_LIGHT_BLUE, C_LIGHT_GREEN, C_LIGHT_ORANGE, C_LIGHT_RED, C_LIGHT_PURPLE, C_LIGHT_YELLOW,
-    font, yeni_kart, kaydet, ciz_kutu, ciz_baslik_kutu, ciz_etiket, ortali_yazi,
-    sarili_yazi, ciz_ok, ciz_tablo
-)
+from _taban import Primitifler, renkler, kaydet
 
-OUT_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))),
-                       "img", "ozetler", "6-arapca-7")
 
-def gorsel_1():
-    img, d = yeni_kart("HARF-İ TARİF (el-) İLE AKRABA VE MESLEK DİYALOGLARI",
-                       "6. Sınıf Arapça • 1. Ünite: Akrabalarım • 7. Hafta", C_ORANGE)
+def ciz():
+    P = Primitifler()
+    R = renkler('arapca')
+    ic = []
+    ic.append(P.baslik(400, 32, 'HARF-İ TARİF (الـ / el-) İLE AKRABA VE MESLEK DİYALOGLARI', R['koyu']))
 
-    ciz_baslik_kutu(d, 50, 120, 560, 420, "ŞEMSÎ VE KAMERÎ HARFLER (Harf-i Tarif: el-)", C_ORANGE, C_LIGHT_ORANGE)
-    ciz_kutu(d, 70, 175, 520, 165, C_WHITE, C_BLUE, r=10)
-    d.text((88, 188), "1. KAMERÎ HARFLER (el- Takısındaki 'L' Okunur)", font=font(14, True), fill=C_BLUE)
-    d.text((88, 216), "Kural: Kelime başına gelen 'el-' (ال) takısının Lam harfi", font=font(13), fill=C_DARK)
-    d.text((88, 236), "cezimli olarak açıkça okunur, sonraki harf şeddelenmez.", font=font(13), fill=C_DARK)
-    d.text((88, 266), "Örnekler: el-Ebü (Baba), el-Ümmü (Anne), el-Ceddu (Dede),", font=font(13, True), fill=C_BLUE)
-    d.text((88, 290), "el-Ammu (Amca), el-Hâlü (Dayı), el-Mühendisu (Mühendis)", font=font(13, True), fill=C_BLUE)
+    # Sol panel: Şemsî ve Kamerî Harfler
+    ic.append(P.kutu(20, 56, 365, 290, R['acik'], R['orta']))
+    ic.append(P.metin(202, 80, '1. HARF-İ TARİF (el-) VE OKUNUŞ KURALLARI', R['koyu'], 12.5, 'bold', 'middle'))
 
-    ciz_kutu(d, 70, 355, 520, 165, C_WHITE, C_RED, r=10)
-    d.text((88, 368), "2. ŞEMSÎ HARFLER (el- Takısındaki 'L' Okunmaz, Şeddelenir)", font=font(14, True), fill=C_RED)
-    d.text((88, 396), "Kural: 'el-' takısındaki Lam okunmaz; kelimenin ilk harfi", font=font(13), fill=C_DARK)
-    d.text((88, 416), "şeddeli (çift sesli) olarak okunur.", font=font(13), fill=C_DARK)
-    d.text((88, 446), "Örnekler: et-Tabîbu (Doktor), et-Tâciru (Tüccar),", font=font(13, True), fill=C_RED)
-    d.text((88, 470), "eş-Şurtiyyu (Polis), es-Sâiku (Şoför), en-Neccâru (Marangoz)", font=font(13, True), fill=C_RED)
-
-    ciz_baslik_kutu(d, 640, 120, 590, 420, "AKRABALARIM VE MESLEKLERİ DİYALOG KALIPLARI", C_TEAL, C_LIGHT_GREEN)
-    kaliplar = [
-        ("Men hâzâ? / Men hâzihî?", "Bu kimdir? (Erkek / Kadın için)", C_TEAL),
-        ("Hâzâ ammî. Hüve mühendisün.", "Bu benim amcamdır. O bir mühendistir.", C_BLUE),
-        ("Hâzihî ammetî. Hiye tabîbetün.", "Bu benim halamdır. O bir kadın doktordur.", C_PURPLE),
-        ("Mâ mihnetü hâlike?", "Senin dayının mesleği nedir?", C_ORANGE),
-        ("Hâlî muallimün fî'l-medreseti.", "Dayım okulda bir öğretmendir.", C_GREEN)
+    sol = [
+        (100, 'Harf-i Tarif (الـ / el-) Ne İşe Yarar?', 'İsmin başına gelir, belirli yapar; sondaki tenvin (-ün) düşer (-ü olur).'),
+        (150, 'Kamerî Harfler (Ay Harfleri — 14 Harf)', '"el-" takısındaki Lam (ل) cezimli olarak AÇIKÇA OKUNUR.'),
+        (200, 'Kamerî Örnekler (Akraba ve Meslek)', 'el-Ebü (الْأَبُ), el-Ammü (الْعَمُّ), el-Muallimü (الْمُعَلِّمُ).'),
+        (250, 'Şemsî Harfler (Güneş Harfleri — 14 Harf)', '"el-" takısındaki Lam OKUNMAZ; ilk harf ŞEDDELİ okunur!'),
+        (300, 'Şemsî Örnekler (Meslekler)', 'et-Tabîbü (الطَّبِيبُ), et-Tâciru (التَّاجِرُ), eş-Şurtiyyü (الشُّرْطِيُّ).'),
     ]
-    y = 175
-    for ar, tr, renk in kaliplar:
-        ciz_kutu(d, 660, y, 550, 62, C_WHITE, renk, r=8)
-        d.text((678, y + 10), ar, font=font(14, True), fill=renk)
-        d.text((678, y + 34), tr, font=font(13), fill=C_DARK)
-        y += 70
+    for y, b, a in sol:
+        ic.append(P.kutu(35, y, 335, 42, '#ffffff', R['orta']))
+        ic.append(P.metin(202, y + 16, b, R['koyu'], 11, 'bold', 'middle'))
+        ic.append(P.metin(202, y + 32, a, '#334155', 9.5, 'normal', 'middle'))
 
-    ciz_kutu(d, 50, 560, 1180, 75, C_LIGHT_YELLOW, C_ORANGE, r=12)
-    ortali_yazi(d, "Ünite Özeti: Erkek akraba/meslek için 'Hâzâ - Hüve', kadın akraba/meslek (sonunda -tün/-etün olan) için 'Hâzihî - Hiye' kullanılır.", 597, font(14, True), C_DARK)
+    # Sağ panel: Akraba ve Meslek Diyalogları
+    ic.append(P.kutu(400, 56, 380, 290, '#fef3c7', '#d97706'))
+    ic.append(P.metin(590, 80, '2. AKRABALARIM VE MESLEKLERİ DİYALOGLARI', '#92400e', 12.5, 'bold', 'middle'))
 
-    kaydet(img, os.path.join(OUT_DIR, "gorsel_1.png"))
+    sag = [
+        (100, 'مَنْ هٰذَا؟ / مَنْ هٰذِهِ؟ (Men hâzâ? / Men hâzihî?)', 'Bu kimdir? (Erkek için Hâzâ / Kadın için Hâzihî)'),
+        (150, 'هٰذَا عَمِّي. هُوَ مُهَنْدِسٌ. (Hâzâ ammî. Hüve mühendisün.)', 'Bu benim amcamdır. O bir mühendistir.'),
+        (200, 'هٰذِهِ خَالَتِي. هِيَ طَبِيبَةٌ. (Hâzihî hâletî. Hiye tabîbetün.)', 'Bu benim teyzemdir. O bir (kadın) doktordur.'),
+        (250, 'مَا مِهْنَةُ خَالِكَ؟ (Mâ mihnetü hâlike?)', 'Senin dayının mesleği nedir? -> Hâlî muallimün.'),
+        (300, 'أَيْنَ يَعْمَلُ؟ (Eyne ya’melü?)', 'Nerede çalışıyor? -> Fî’l-medreseti (Okulda) / Fî’l-müsteşfâ.'),
+    ]
+    for y, b, a in sag:
+        ic.append(P.kutu(415, y, 350, 42, '#ffffff', '#d97706'))
+        ic.append(P.metin(590, y + 16, b, '#92400e', 10.5, 'bold', 'middle'))
+        ic.append(P.metin(590, y + 32, a, '#334155', 9.5, 'normal', 'middle'))
 
-if __name__ == "__main__":
-    gorsel_1()
+    # Alt bant
+    ic.append(P.kutu(20, 360, 760, 48, '#f0fdf4', R['orta']))
+    ic.append(P.metin(400, 380, 'MÜZEKKER - MÜENNES UYUMU: Erkek akraba için "Hâzâ - Hüve - tabîbün"; Kadın akraba için "Hâzihî - Hiye - tabîbetün (ـة)"!', R['koyu'], 10.5, 'bold', 'middle'))
+    ic.append(P.metin(400, 398, 'ammî (amcam) - ammetî (halam) | hâlî (dayım) - hâletî (teyzem) | ceddî (dedem) - ceddetî (ninem).', '#334155', 10.5, 'normal', 'middle'))
+
+    kaydet('6-arapca-7.svg', P.sar(ic))
+
+
+if __name__ == '__main__':
+    ciz()
+
+
+def uygula(v):
+    from _taban import SON_SVG
+    SON_SVG.clear()
+    ciz()
+    svg_ic = SON_SVG.get('_son')
+    if svg_ic and v.get('bolumler'):
+        v['bolumler'][0]['gorsel'] = svg_ic

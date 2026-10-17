@@ -1,52 +1,60 @@
-from PIL import Image, ImageDraw
-import os
-from yardimci import (
-    W, H, C_BG, C_WHITE, C_DARK, C_TEXT, C_MUTED, C_BORDER,
-    C_BLUE, C_GREEN, C_ORANGE, C_RED, C_PURPLE, C_TEAL, C_YELLOW,
-    C_LIGHT_BLUE, C_LIGHT_GREEN, C_LIGHT_ORANGE, C_LIGHT_RED, C_LIGHT_PURPLE, C_LIGHT_YELLOW,
-    font, yeni_kart, kaydet, ciz_kutu, ciz_baslik_kutu, ciz_etiket, ortali_yazi,
-    sarili_yazi, ciz_ok, ciz_tablo
-)
+from _taban import Primitifler, renkler, kaydet
 
-OUT_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))),
-                       "img", "ozetler", "6-peygamberimizin-hayati-7")
 
-def gorsel_1():
-    img, d = yeni_kart("VAHYİN GELİŞİ: HİRA MAĞARASI VE İLK VAHİY (610)",
-                       "6. Sınıf Peygamberimizin Hayatı • 1. Ünite • 7. Hafta", C_PURPLE)
+def ciz():
+    P = Primitifler()
+    R = renkler('peygamberimizin-hayati')
+    ic = []
+    ic.append(P.baslik(400, 32, 'VAHYİN GELİŞİ: HİRA MAĞARASI, İLK VAHİY (610) VE İLK MÜSLÜMANLAR', R['koyu']))
 
-    ciz_baslik_kutu(d, 50, 120, 560, 420, "İLK VAHİY SÜRECİ (MİLADİ 610 - RAMAZAN)", C_PURPLE, C_LIGHT_PURPLE)
-    adimlar = [
-        ("1. Hira'da İnziva (Tahannüs)", "40 yaşına yaklaşan Hz. Muhammed (s.a.v.), Nur Dağı'ndaki Hira Mağarası'nda tefekkür ederdi.", C_PURPLE),
-        ("2. Vahiy Meleği Cebrail (a.s.)", "610 yılı Ramazan ayında Kadir Gecesi'nde Cebrail (a.s.) gelerek 'İkra!' (Oku!) buyurdu.", C_BLUE),
-        ("3. Alak Suresi 1-5. Ayetler", "'Yaratan Rabbinin adıyla oku! O, insanı alaktan yarattı... Kalemle yazmayı öğretti.'", C_GREEN),
-        ("4. Hz. Hatice ve Varaka Desteği", "İlk Müslüman Hz. Hatice onu teskin etti; bilgin Varaka bin Nevfel peygamberliği müjdeledi.", C_ORANGE)
+    # Sol panel: İlk Vahiy Süreci
+    ic.append(P.kutu(20, 56, 365, 290, R['acik'], R['orta']))
+    ic.append(P.metin(202, 80, '1. HİRA MAĞARASI VE İLK VAHİY (MİLADİ 610)', R['koyu'], 12.5, 'bold', 'middle'))
+
+    sol = [
+        (100, 'Hira Mağarası’nda Tefekkür ve İnziva', 'Nur Dağı’ndaki Hira Mağarası’nda Ramazan ayında tefekkür.'),
+        (150, 'Vahiy Meleği Cebrail (a.s.) ve "İkra!" Emri', '610 yılı Ramazan ayı Kadir Gecesi (40 yaşında): "Oku!"'),
+        (200, 'İlk Vahiy: Alak Suresi 1-5. Ayetler', '"Yaratan Rabbinin adıyla oku! ... Kalemle yazmayı öğretti."'),
+        (250, 'Hz. Hatice’nin Tesellisi ve Varaka bin Nevfel', 'Varaka: "Bu, Hz. Musa’ya gelen Nâmûs-ı Ekber’dir (Cebrail)."'),
+        (300, 'Fetret-i Vahiy ve Müddessir Suresi', 'Kısa kesintiden sonra: "Ey örtünüp bürünen! Kalk ve uyar!"'),
     ]
-    y = 175
-    for bas, acik, renk in adimlar:
-        ciz_kutu(d, 70, y, 520, 78, C_WHITE, renk, r=10)
-        d.text((88, y + 10), bas, font=font(14, True), fill=renk)
-        sarili_yazi(d, acik, 88, y + 34, 490, font(13), C_DARK)
-        y += 88
+    for y, b, a in sol:
+        ic.append(P.kutu(35, y, 335, 42, '#ffffff', R['orta']))
+        ic.append(P.metin(202, y + 16, b, R['koyu'], 11, 'bold', 'middle'))
+        ic.append(P.metin(202, y + 32, a, '#334155', 9.5, 'normal', 'middle'))
 
-    ciz_baslik_kutu(d, 640, 120, 590, 420, "İLK İMAN EDENLER (SÂBİKÛN-İ EVVELÛN)", C_TEAL, C_LIGHT_GREEN)
-    ilkler = [
-        ("Hz. Hatice (r.a.)", "Peygamberimizin vefakâr eşi — İlk Müslüman (Kadınlardan ilk)", C_TEAL),
-        ("Hz. Ali (r.a.)", "Peygamberimizin yanında büyüyen kuzeni — Çocuklardan ilk", C_BLUE),
-        ("Hz. Zeyd bin Hârise (r.a.)", "Peygamberimizin azatlısı ve manevi evladı — Azatlılardan ilk", C_GREEN),
-        ("Hz. Ebû Bekir (r.a.)", "Peygamberimizin en yakın dostu (es-Sıddîk) — Hür erkeklerden ilk", C_ORANGE)
+    # Sağ panel: İlk İman Edenler
+    ic.append(P.kutu(400, 56, 380, 290, '#fef3c7', '#d97706'))
+    ic.append(P.metin(590, 80, '2. İLK MÜSLÜMANLAR (SÂBİKÛN-İ EVVELÛN)', '#92400e', 13, 'bold', 'middle'))
+
+    sag = [
+        (100, '1. Hz. Hatice (r.a.) — İlk Müslüman (Kadınlar)', 'Peygamberimizin vefakâr eşi; yeryüzünde ilk iman eden kişi.'),
+        (150, '2. Hz. Ali (r.a.) — Çocuklar Arasında İlk', 'Peygamberimizin yanında büyüyen amcasının oğlu (kuzeni).'),
+        (200, '3. Hz. Zeyd bin Hârise (r.a.) — Azatlılardan İlk', 'Peygamberimizin azatlısı ve manevi evladı (Zeyd bin Muhammed).'),
+        (250, '4. Hz. Ebû Bekir (r.a.) — Hür Erkeklerden İlk', 'Peygamberimizin en yakın ve sadık dostu (es-Sıddîk).'),
+        (300, 'İlk Vahyin Mesajı: İlim ve Okuma', 'Okumak, kalem, yazmak ve düşünmek İslam’ın ilk emridir!'),
     ]
-    y = 180
-    for isim, unvan, renk in ilkler:
-        ciz_kutu(d, 660, y, 550, 74, C_WHITE, renk, r=10)
-        d.text((680, y + 12), isim, font=font(16, True), fill=renk)
-        d.text((680, y + 40), unvan, font=font(13, True), fill=C_DARK)
-        y += 86
+    for y, b, a in sag:
+        ic.append(P.kutu(415, y, 350, 42, '#ffffff', '#d97706'))
+        ic.append(P.metin(590, y + 16, b, '#92400e', 11, 'bold', 'middle'))
+        ic.append(P.metin(590, y + 32, a, '#334155', 9.5, 'normal', 'middle'))
 
-    ciz_kutu(d, 50, 560, 1180, 75, C_LIGHT_YELLOW, C_ORANGE, r=12)
-    ortali_yazi(d, "İlk vahiy 'Oku!' (İkra) emriyle başlamış; İslam dini ilme, okumaya, kaleme ve düşünmeye en üstün değeri vermiştir.", 597, font(15, True), C_DARK)
+    # Alt bant
+    ic.append(P.kutu(20, 360, 760, 48, '#f0fdf4', R['orta']))
+    ic.append(P.metin(400, 380, 'ALAK SURESİ 1. AYET: "İkra’ bismi rabbikellezî halak" — "Yaratan Rabbinin adıyla oku!"', R['koyu'], 11, 'bold', 'middle'))
+    ic.append(P.metin(400, 398, 'Hz. Hatice: "Allah seni asla utandırmaz; çünkü sen akrabanı gözetir, doğru konuşur ve güçsüzlere yardım edersin."', '#334155', 10.5, 'normal', 'middle'))
 
-    kaydet(img, os.path.join(OUT_DIR, "gorsel_1.png"))
+    kaydet('6-peygamberimizin-hayati-7.svg', P.sar(ic))
 
-if __name__ == "__main__":
-    gorsel_1()
+
+if __name__ == '__main__':
+    ciz()
+
+
+def uygula(v):
+    from _taban import SON_SVG
+    SON_SVG.clear()
+    ciz()
+    svg_ic = SON_SVG.get('_son')
+    if svg_ic and v.get('bolumler'):
+        v['bolumler'][0]['gorsel'] = svg_ic
