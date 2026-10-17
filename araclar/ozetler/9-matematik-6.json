@@ -1,0 +1,288 @@
+{
+ "ad": "9-matematik-6",
+ "sinif": 9,
+ "ders": "matematik",
+ "ders_adi": "Matematik",
+ "hafta": 6,
+ "tarih": "19-23 Ekim 2026",
+ "yayin_tarihi": "2026-10-21",
+ "unite": "SAYILAR",
+ "konu": "Gerçek Sayıların İşlem Özelliklerini Cebirsel Olarak İfade Etme",
+ "ciktilar": [
+  "Gerçek sayıların toplama ve çarpma işlemlerine ait cebirsel özellikleri (kapalılık, değişme, birleşme, birim eleman, ters eleman, dağılma) ifade eder.",
+  "Sayısal işlemler ile cebirsel özdeşlikler (iki terimin toplamının/farkının karesi, iki kare farkı) arasında analojik akıl yürütme yapar.",
+  "Gerçek sayıların sıralama (eşitsizlik) özelliklerini cebirsel olarak inceler ve denklemlerde sıfır çarpan özelliğini uygular."
+ ],
+ "giris": "Gerçek sayılar kümesi (R), üzerinde tanımlanan toplama ve çarpma işlemlerinin kusursuz kuralları ile matematiğin en güçlü yapısını oluşturur. Sayılarla yaptığımız işlemleri harfler ve sembollerle genelleştirdiğimizde ise 'cebir' dünyasına adım atarız. Bu hafta Türkiye Yüzyılı Maarif Modeli'nin 'Sayılar' teması kapsamında gerçek sayıların işlem özelliklerini cebirsel olarak ifade etmeyi, sayısal işlemlerden temel cebirsel özdeşliklere analojik akıl yürütmeyle ulaşmayı ve gerçek sayıların sıralama özelliklerini inceleyeceğiz.",
+ "ozet": [
+  "Gerçek sayılar kümesinde toplama ve çarpma işlemlerinin kapalılık, değişme, birleşme, etkisiz (birim) eleman ve ters eleman özellikleri vardır.",
+  "Toplama işleminin birim elemanı 0, bir a gerçek sayısının toplamaya göre tersi -a'dır; çarpma işleminin birim elemanı 1, sıfırdan farklı bir a gerçek sayısının çarpmaya göre tersi 1/a'dır.",
+  "Çarpma işleminin toplama ve çıkarma işlemleri üzerine sağdan ve soldan dağılma özelliği (a.(b+c) = a.b + a.c), cebirsel ifadelerde parantez açma ve ortak çarpan parantezine almanın temelidir.",
+  "Dağılma özelliğinin cebirsel genellemesiyle tam kare özdeşlikleri ((a+b)² = a² + 2ab + b², (a-b)² = a² - 2ab + b²) ve iki kare farkı özdeşliği (a² - b² = (a-b).(a+b)) elde edilir.",
+  "Bir eşitsizliğin her iki tarafına aynı gerçek sayı eklenirse veya pozitif bir sayıyla çarpılırsa eşitsizlik yön değiştirmez; negatif bir sayıyla çarpılır veya bölünürse eşitsizlik yön değiştirir.",
+  "Gerçek sayılarda sıfır çarpan özelliğine göre iki ifadenin çarpımı sıfır ise (a.b = 0), çarpanlardan en az biri sıfırdır (a = 0 veya b = 0)."
+ ],
+ "bolumler": [
+  {
+   "baslik": "1. Gerçek Sayılarda Toplama ve Çarpma İşlemlerinin Cebirsel Özellikleri",
+   "metin": [
+    "Her a, b, c gerçek sayısı için toplama ve çarpma işlemleri şu temel aksiyomları (özellikleri) sağlar: 1. {koyu:Kapalılık Özelliği:} İki gerçek sayının toplamı (a + b) ve çarpımı (a . b) daima bir gerçek sayıdır. 2. {koyu:Değişme Özelliği:} İşleme giren sayıların yeri değiştiğinde sonuç değişmez: {koyu:a + b = b + a} ve {koyu:a . b = b . a}. 3. {koyu:Birleşme Özelliği:} Üç veya daha fazla sayı toplanırken ya da çarpılırken önce hangi ikisinin işleme alındığı sonucu değiştirmez: {koyu:(a + b) + c = a + (b + c)} ve {koyu:(a . b) . c = a . (b . c)}.",
+    "4. {koyu:Etkisiz (Birim) Eleman Özelliği:} Toplama işleminin birim elemanı {koyu:0} (a + 0 = a), çarpma işleminin birim elemanı ise {koyu:1}'dir (a . 1 = a). 5. {koyu:Ters Eleman Özelliği:} Her a gerçek sayısının toplamaya göre tersi {koyu:-a} olup toplamları birim elemanı verir ({koyu:a + (-a) = 0}). Sıfırdan farklı her a gerçek sayısının (a ≠ 0) çarpmaya göre tersi ise {kesir:1|a} olup çarpımları 1'i verir ({koyu:a . ({kesir:1|a}) = 1}). Çarpma işleminde {koyu:0 yutan elemandır} (a . 0 = 0)."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Çıkarma ve Bölmede Değişme-Birleşme Yoktur!",
+    "metin": "Gerçek sayılarda çıkarma ve bölme işlemlerinin değişme veya birleşme özelliği yoktur (a - b ≠ b - a). Ancak çıkarma işlemi 'a + (-b)' şeklinde toplamaya, bölme işlemi ise 'a . (1/b)' şeklinde çarpmaya dönüştürülerek cebirsel özellikler uygulanabilir."
+   },
+   "gorsel": "<svg viewBox=\"0 0 680 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"10\" y=\"10\" width=\"660\" height=\"220\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"340.0\" y=\"38\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">GERÇEK SAYILARIN TOPLAMA VE ÇARPMA ÖZELLİKLERİ</text><rect x=\"30\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"127.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#1d4ed8\" text-anchor=\"middle\">Kapalılık &amp; Değişme</text><line x1=\"42\" y1=\"92\" x2=\"213\" y2=\"92\" stroke=\"#3b82f6\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"127.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Her a, b gerçek sayısı için:</text><text x=\"127.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">a+b ve a.b gerçek sayıdır</text><text x=\"127.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Değişme: a + b = b + a</text><text x=\"127.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Değişme: a . b = b . a</text><rect x=\"242\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"2\"/><text x=\"339.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\" text-anchor=\"middle\">Birleşme &amp; Dağılma</text><line x1=\"254\" y1=\"92\" x2=\"425\" y2=\"92\" stroke=\"#22c55e\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"339.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">(a+b)+c = a+(b+c)</text><text x=\"339.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">(a.b).c = a.(b.c)</text><text x=\"339.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Dağılma: a.(b+c) = a.b + a.c</text><text x=\"339.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Ortak çarpan parantezi!</text><rect x=\"454\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\"/><text x=\"551.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#b45309\" text-anchor=\"middle\">Birim, Ters &amp; Yutan</text><line x1=\"466\" y1=\"92\" x2=\"637\" y2=\"92\" stroke=\"#f59e0b\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"551.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Toplama birim: 0 | Ters: -a</text><text x=\"551.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Çarpma birim: 1 | Ters: 1/a</text><text x=\"551.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">(a ≠ 0 için a . (1/a) = 1)</text><text x=\"551.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Çarpmada yutan eleman: 0</text></svg>"
+  },
+  {
+   "baslik": "2. Dağılma Özelliği ve Ortak Çarpan Parantezine Alma",
+   "metin": [
+    "Gerçek sayılarda toplama ile çarpma işlemlerini birbirine bağlayan köprü {koyu:dağılma özelliğidir}. Her a, b, c gerçek sayısı için çarpma işleminin toplama ve çıkarma üzerine soldan ve sağdan dağılma özelliği vardır: {koyu:a . (b + c) = a . b + a . c} ve {koyu:a . (b - c) = a . b - a . c}.",
+    "Dağılma özelliğini soldan sağa doğru uygulamak cebirsel ifadelerde {koyu:parantezleri açmayı (çarpmayı)}; sağdan sola doğru ({koyu:a . b + a . c = a . (b + c)}) uygulamak ise cebirsel ifadeleri {koyu:ortak çarpan parantezine alarak çarpanlarına ayırmayı} sağlar. Örneğin 6{us:x|2}y - 9x{us:y|2} ifadesinde her iki terimde ortak olan 3xy çarpanı parantez dışına alınarak ifade {koyu:3xy . (2x - 3y)} çarpımı biçiminde yazılır."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Zihinden İşlem Analojisi",
+    "metin": "17 . 99 işlemini zihinden yaparken 17 . (100 - 1) = 1700 - 17 = 1683 olarak hesaplamak, gerçek sayıların dağılma özelliğinin aritmetikteki doğrudan kullanımıdır."
+   },
+   "gorsel": "<svg viewBox=\"0 0 680 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"10\" y=\"10\" width=\"660\" height=\"220\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"340.0\" y=\"38\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">SAYISAL İŞLEMDEN CEBİRSEL ÖZDEŞLİĞE ANALOJİ</text><rect x=\"30\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#fae8ff\" stroke=\"#d946ef\" stroke-width=\"2\"/><text x=\"127.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\" text-anchor=\"middle\">Tam Kare Özdeşliği</text><line x1=\"42\" y1=\"92\" x2=\"213\" y2=\"92\" stroke=\"#d946ef\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"127.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">(a + b)² = a² + 2ab + b²</text><text x=\"127.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">(a - b)² = a² - 2ab + b²</text><text x=\"127.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Sayısal: 103² = (100+3)²</text><text x=\"127.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">10000 + 600 + 9 = 10609</text><rect x=\"242\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/><text x=\"339.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0369a1\" text-anchor=\"middle\">İki Kare Farkı</text><line x1=\"254\" y1=\"92\" x2=\"425\" y2=\"92\" stroke=\"#0284c7\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"339.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">a² - b² = (a - b).(a + b)</text><text x=\"339.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Sayısal Analoji:</text><text x=\"339.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">98 . 102 = (100-2).(100+2)</text><text x=\"339.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">= 100² - 2² = 9996</text><rect x=\"454\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#ffe4e6\" stroke=\"#f43f5e\" stroke-width=\"2\"/><text x=\"551.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#be123c\" text-anchor=\"middle\">Geometrik Modelleme</text><line x1=\"466\" y1=\"92\" x2=\"637\" y2=\"92\" stroke=\"#f43f5e\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"551.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Kenarı (a+b) olan kare alanı:</text><text x=\"551.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">a² ve b² iki kare ile</text><text x=\"551.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">a.b alanlı iki dikdörtgen</text><text x=\"551.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Toplam alan = a² + 2ab + b²</text></svg>"
+  },
+  {
+   "baslik": "3. Analojik Akıl Yürütme: Sayılardan Cebirsel Özdeşliklere",
+   "metin": [
+    "{koyu:Analojik akıl yürütme}, bilinen sayısal işlem örüntülerinden ve geometrik alan modellerinden yararlanarak genel cebirsel kurallara (özdeşliklere) ulaşma sürecidir. İki terimli iki cebirsel ifadenin çarpımında dağılma özelliği art arda uygulandığında matematikteki en temel üç {koyu:özdeşlik} elde edilir:",
+    "1. {koyu:İki Terimin Toplamının Karesi (Tam Kare):} (a + b)² = (a + b).(a + b) = {koyu:a² + 2ab + b²}. (Birincinin karesi + birinci ile ikincinin çarpımının 2 katı + ikincinin karesi). 2. {koyu:İki Terimin Farkının Karesi:} (a - b)² = (a - b).(a - b) = {koyu:a² - 2ab + b²}. 3. {koyu:İki Kare Farkı Özdeşliği:} (a - b).(a + b) = a² + ab - ab - b² = {koyu:a² - b²}."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Tam Kare Hatasına Dikkat!",
+    "metin": "(a + b)² ifadesi ASLA a² + b²'ye eşit değildir! Arada mutlaka '2ab' (çarpımlarının iki katı) terimi bulunur. Yalnızca a = 0 veya b = 0 olduğunda (a+b)² = a²+b² eşitliği sağlanır."
+   },
+   "gorsel": "<svg viewBox=\"0 0 680 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"10\" y=\"10\" width=\"660\" height=\"220\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"340.0\" y=\"38\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">GERÇEK SAYILARDA SIRALAMA VE EŞİTSİZLİK ÖZELLİKLERİ</text><rect x=\"30\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#ede9fe\" stroke=\"#8b5cf6\" stroke-width=\"2\"/><text x=\"127.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#6d28d9\" text-anchor=\"middle\">Geçişme &amp; Toplama</text><line x1=\"42\" y1=\"92\" x2=\"213\" y2=\"92\" stroke=\"#8b5cf6\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"127.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">a &lt; b ve b &lt; c ise a &lt; c</text><text x=\"127.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">a &lt; b iken her c için:</text><text x=\"127.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">a + c &lt; b + c</text><text x=\"127.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Eşitsizlik yön değiştirmez</text><rect x=\"242\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#fef9c3\" stroke=\"#eab308\" stroke-width=\"2\"/><text x=\"339.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#a16207\" text-anchor=\"middle\">Pozitif Sayıyla Çarpma</text><line x1=\"254\" y1=\"92\" x2=\"425\" y2=\"92\" stroke=\"#eab308\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"339.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">a &lt; b ve c &gt; 0 ise:</text><text x=\"339.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">a . c &lt; b . c</text><text x=\"339.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Bölmede: a/c &lt; b/c</text><text x=\"339.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Eşitsizlik yönü AYNIDIR</text><rect x=\"454\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#dcfce7\" stroke=\"#10b981\" stroke-width=\"2\"/><text x=\"551.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#047857\" text-anchor=\"middle\">Negatif Sayıyla Çarpma</text><line x1=\"466\" y1=\"92\" x2=\"637\" y2=\"92\" stroke=\"#10b981\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"551.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">a &lt; b ve c &lt; 0 ise:</text><text x=\"551.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">a . c &gt; b . c</text><text x=\"551.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Negatifle çarpılıp bölününce</text><text x=\"551.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Eşitsizlik YÖN DEĞİŞTİRİR!</text></svg>"
+  },
+  {
+   "baslik": "4. Özdeşliklerin Sayısal Hesaplamalarda Kullanımı",
+   "metin": [
+    "Cebirsel özdeşlikler, büyük sayıların karelerini veya çarpımlarını hesap makinesi kullanmadan saniyeler içinde bulmamızı sağlar. Örneğin {koyu:104²} işlemini (100 + 4)² tam kare özdeşliği ile açarsak: 100² + 2.(100).(4) + 4² = 10000 + 800 + 16 = {koyu:10816} buluruz.",
+    "Benzer şekilde ortası 100 olan {koyu:97 . 103} çarpımını iki kare farkı özdeşliğiyle (100 - 3).(100 + 3) şeklinde yazarsak: 100² - 3² = 10000 - 9 = {koyu:9991} sonucuna kolayca ulaşırız. Ayrıca x + y = 7 ve x . y = 10 verildiğinde x² + y² değerini bulmak için {koyu:x² + y² = (x + y)² - 2xy} dönüşümünden yararlanarak 7² - 2.(10) = 49 - 20 = 29 sonucunu elde ederiz."
+   ],
+   "kutu": {
+    "tur": "bilgi",
+    "baslik": "Geometrik Alan Yorumu",
+    "metin": "Kenar uzunluğu (a + b) birim olan bir karenin alanı (a + b)²'dir. Bu kare; kenarı a olan bir kare (alanı a²), kenarı b olan bir kare (alanı b²) ve kenarları a ile b olan iki eş dikdörtgene (alanları ab + ab = 2ab) bölündüğünde alanlar toplamı a² + 2ab + b² özdeşliğini görsel olarak kanıtlar."
+   }
+  },
+  {
+   "baslik": "5. Sıfır Çarpan Özelliği ve Gruplandırarak Çarpanlara Ayırma",
+   "metin": [
+    "Gerçek sayılar kümesinde çok önemli bir diğer özellik {koyu:sıfır çarpan özelliğidir}: İki veya daha fazla gerçek sayının çarpımı sıfıra eşitse, bu çarpanlardan en az biri mutlaka sıfırdır ({koyu:a . b = 0 ⇔ a = 0 veya b = 0}). Bu özellik yüksek dereceli cebirsel denklemleri çözmenin anahtarıdır.",
+    "Dört terimli bir cebirsel ifadede tüm terimlerin ortak bir çarpanı yoksa {koyu:gruplandırma yöntemi} kullanılır: Terimler ikişerli gruplandırılarak kendi içlerinde ortak çarpan parantezine alınır, ardından oluşan yeni ortak parantez tekrar dışarı alınır: {koyu:ax + ay + bx + by = a.(x + y) + b.(x + y) = (x + y).(a + b)}."
+   ],
+   "kutu": {
+    "tur": "tanim",
+    "baslik": "Denklemde Sadeleştirme Tuzağı",
+    "metin": "x² = 5x denkleminde her iki tarafı x'e bölmek 'x = 0' kökünün kaybolmasına yol açar! Doğru yöntem ifadeyi x² - 5x = 0 -> x.(x - 5) = 0 biçiminde çarpanlarına ayırıp sıfır çarpan özelliğiyle x = 0 veya x = 5 bulmaktır."
+   },
+   "gorsel": "<svg viewBox=\"0 0 680 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"10\" y=\"10\" width=\"660\" height=\"220\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"340.0\" y=\"38\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">CEBİRSEL İFADELERDE ÇARPANLARA AYIRMA STRATEJİLERİ</text><rect x=\"30\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#ffedd5\" stroke=\"#f97316\" stroke-width=\"2\"/><text x=\"127.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#c2410c\" text-anchor=\"middle\">Ortak Çarpan Parantezi</text><line x1=\"42\" y1=\"92\" x2=\"213\" y2=\"92\" stroke=\"#f97316\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"127.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Dağılma özelliğinin tersi</text><text x=\"127.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">ax + ay = a.(x + y)</text><text x=\"127.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">6x²y - 9xy² = 3xy.(2x - 3y)</text><text x=\"127.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Her terimde ortak olanı bul</text><rect x=\"242\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"2\"/><text x=\"339.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#4338ca\" text-anchor=\"middle\">Gruplandırma Yöntemi</text><line x1=\"254\" y1=\"92\" x2=\"425\" y2=\"92\" stroke=\"#6366f1\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"339.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">ax + ay + bx + by</text><text x=\"339.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">= a.(x + y) + b.(x + y)</text><text x=\"339.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">= (x + y).(a + b)</text><text x=\"339.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">4 terimli ifadelerde kullanılır</text><rect x=\"454\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"2\"/><text x=\"551.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">Sıfır Çarpan Özelliği</text><line x1=\"466\" y1=\"92\" x2=\"637\" y2=\"92\" stroke=\"#64748b\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"551.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">a . b = 0 ise:</text><text x=\"551.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">a = 0 veya b = 0’dır</text><text x=\"551.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">(x - 3).(x + 5) = 0</text><text x=\"551.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Çözüm: x = 3 veya x = -5</text></svg>"
+  },
+  {
+   "baslik": "6. Gerçek Sayıların Sıralama (Eşitsizlik) Özellikleri",
+   "metin": [
+    "Gerçek sayılar sayı doğrusu üzerinde sıralı bir kümedir. Her a, b, c gerçek sayısı için sıralama bağıntısının cebirsel özellikleri şunlardır: 1. {koyu:Üçlü Durum (Trikotomi) Özelliği:} İki gerçek sayı için a < b, a = b veya a > b durumlarından yalnız biri doğrudur. 2. {koyu:Geçişme Özelliği:} a < b ve b < c ise {koyu:a < c}'dir. 3. {koyu:Toplama Özelliği:} a < b iken her c gerçek sayısı için {koyu:a + c < b + c} olur (Eşitsizliğin iki tarafına aynı sayı eklenip çıkarıldığında yön değişmez).",
+    "4. {koyu:Çarpma Özelliği:} a < b iken {koyu:pozitif} bir c sayısı (c > 0) ile çarpılırsa eşitsizlik yön değiştirmez ({koyu:a . c < b . c}); ancak {koyu:negatif} bir c sayısı (c < 0) ile çarpılır veya bölünürse {koyu:eşitsizlik yön değiştirir (a . c > b . c)}. Ayrıca a ve b aynı işaretli (ikisi de pozitif veya ikisi de negatif) iken a < b ise çarpmaya göre tersleri alındığında eşitsizlik yön değiştirir: {kesir:1|a} > {kesir:1|b}."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "0 ile 1 Arasındaki Sayılar (Basit Kesirler)",
+    "metin": "Bir gerçek sayının karesi kendisinden küçükse (x² < x), bu sayı kesinlikle 0 ile 1 arasındadır (0 < x < 1). Örneğin x = 1/2 için x² = 1/4 < 1/2'dir."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Gerçek sayılar kümesinde (2x - 6) gerçek sayısının çarpmaya göre tersi tanımsız olduğuna göre, x değerini ve (x + 5) sayısının toplamaya göre tersini bulunuz.",
+   "cevap": "Gerçek sayılarda yalnızca 0 sayısının çarpmaya göre tersi tanımsızdır. Buna göre 2x - 6 = 0 => 2x = 6 => x = 3 olmalıdır. x = 3 için x + 5 = 3 + 5 = 8 olur. 8 sayısının toplamaya göre tersi ise -8'dir."
+  },
+  {
+   "soru": "İki kare farkı özdeşliğinden yararlanarak (2026² - 2024²) / 4 işleminin sonucunu hesaplayınız.",
+   "cevap": "Pay kısmına a² - b² = (a - b).(a + b) özdeşliğini uygulayalım: 2026² - 2024² = (2026 - 2024) . (2026 + 2024) = 2 . 4050 = 8100 olur. Bunu paydadaki 4'e bölersek: 8100 / 4 = 2025 bulunur."
+  },
+  {
+   "soru": "a ve b gerçek sayıları için a - b = 6 ve a . b = 7 olduğuna göre a² + b² toplamı kaçtır?",
+   "cevap": "a - b = 6 eşitliğinin her iki tarafının karesini alalım: (a - b)² = 6² => a² - 2ab + b² = 36. Burada a . b = 7 değerini yerine yazarsak: a² - 2.(7) + b² = 36 => a² - 14 + b² = 36 => a² + b² = 36 + 14 = 50 bulunur."
+  },
+  {
+   "soru": "x² - 3x - xy + 3y = 0 denklemini sağlayan x ve y gerçek sayıları arasındaki bağıntıları gruplandırma ve sıfır çarpan özelliklerini kullanarak bulunuz.",
+   "cevap": "İlk iki terimi x parantezine, son iki terimi -y parantezine alalım: x.(x - 3) - y.(x - 3) = 0. Şimdi ortak olan (x - 3) parantezine alalım: (x - 3).(x - y) = 0. Sıfır çarpan özelliğine göre ya x - 3 = 0 (yani x = 3) ya da x - y = 0 (yani x = y) olmalıdır."
+  },
+  {
+   "soru": "a, b, c gerçek sayıları için a² . b < 0, b . c > 0 ve a . c > 0 olduğuna göre a, b ve c sayılarının işaretlerini sırasıyla belirleyiniz.",
+   "cevap": "Sıfırdan farklı bir gerçek sayının karesi daima pozitiftir (a² > 0). a² . b < 0 olduğuna göre b kesinlikle negatiftir (b < 0). b negatif iken b . c > 0 olması için c de negatif olmalıdır (c < 0). c negatif iken a . c > 0 olması için a da negatif olmalıdır (a < 0). Sonuç: (-, -, -)."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Her a, b, c gerçek sayısı için 'a . (b + c) = a . b + a . c' eşitliği gerçek sayılar kümesinin hangi işlem özelliğini ifade eder?",
+   "secenekler": [
+    "Toplama işleminin birleşme özelliği",
+    "Çarpma işleminin değişme özelliği",
+    "Çarpma işleminin toplama işlemi üzerine soldan dağılma özelliği",
+    "Çarpma işleminin etkisiz eleman özelliği",
+    "Toplama işleminin ters eleman özelliği"
+   ],
+   "dogru": 2,
+   "aciklama": "Parantez dışındaki a çarpanının parantez içindeki b ve c terimlerine ayrı ayrı dağıtılması çarpmanın toplama üzerine soldan dağılma özelliğidir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "x ve y gerçek sayıları için x + y = 8 ve x² + y² = 40 olduğuna göre x . y çarpımı kaçtır?",
+   "secenekler": [
+    "8",
+    "12",
+    "16",
+    "24",
+    "32"
+   ],
+   "dogru": 1,
+   "aciklama": "(x + y)² = x² + 2xy + y² özdeşliğinde değerler yerine yazılırsa: 8² = 40 + 2xy => 64 - 40 = 2xy => 24 = 2xy => x . y = 12 bulunur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "İki kare farkı özdeşliği kullanıldığında 995 . 1005 çarpımının eşiti aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "1000² - 5²",
+    "1000² + 5²",
+    "(1000 - 5)²",
+    "(1000 + 5)²",
+    "995² - 5²"
+   ],
+   "dogru": 0,
+   "aciklama": "995 . 1005 = (1000 - 5).(1000 + 5) şeklinde yazılır ve iki kare farkı özdeşliğinden 1000² - 5² elde edilir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "a < b < 0 olmak üzere aşağıdaki eşitsizliklerden hangisi kesinlikle DOĞRUDUR?",
+   "secenekler": [
+    "a . b < 0",
+    "a + b > 0",
+    "a² < b²",
+    "a . b > b²",
+    "{kesir:1|a} < {kesir:1|b}"
+   ],
+   "dogru": 3,
+   "aciklama": "a < b eşitsizliğinin her iki tarafı negatif olan b sayısı (b < 0) ile çarpılırsa eşitsizlik yön değiştirir ve a . b > b² elde edilir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir x gerçek sayısı için x² < x eşitsizliği sağlandığına göre x sayısı aşağıdaki aralıklardan hangisinde yer alır?",
+   "secenekler": [
+    "x < -1",
+    "-1 < x < 0",
+    "0 < x < 1",
+    "1 < x < 2",
+    "x > 2"
+   ],
+   "dogru": 2,
+   "aciklama": "Karesi kendisinden küçük olan gerçek sayılar 0 ile 1 arasındaki basit kesirlerdir (0 < x < 1)."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "Gerçek sayılar kümesinde toplama işleminin birim (etkisiz) elemanı 0, çarpma işleminin birim elemanı 1'dir.",
+     "dogru": true,
+     "aciklama": "Her a gerçek sayısı için a + 0 = a ve a . 1 = a eşitlikleri sağlanır."
+    },
+    {
+     "metin": "Her a ve b gerçek sayısı için (a + b)² = a² + b² eşitliği daima doğrudur.",
+     "dogru": false,
+     "aciklama": "(a + b)² tam kare özdeşliğinin açılımı a² + 2ab + b²'dir."
+    },
+    {
+     "metin": "Bir eşitsizliğin her iki tarafı negatif bir gerçek sayıyla çarpılırsa eşitsizlik yön değiştirir.",
+     "dogru": true,
+     "aciklama": "Negatif sayılarla çarpma ve bölme işlemi sıralama yönünü tersine çevirir."
+    },
+    {
+     "metin": "Gerçek sayılarda 0 sayısının çarpmaya göre tersi yine 0'dır.",
+     "dogru": false,
+     "aciklama": "1/0 tanımsız olduğu için 0 sayısının çarpmaya göre tersi yoktur."
+    },
+    {
+     "metin": "a ve b gerçek sayıları için a . b = 0 ise a = 0 veya b = 0 olmalıdır.",
+     "dogru": true,
+     "aciklama": "Bu özelliğe gerçek sayıların sıfır çarpan özelliği denir."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "soru": "Aşağıdaki cebirsel ifadeleri ve özellikleri karşılıklarıyla eşleştiriniz.",
+   "ciftler": [
+    [
+     "(a + b)² tam kare açılımı",
+     "a² + 2ab + b²"
+    ],
+    [
+     "(a - b)² tam kare açılımı",
+     "a² - 2ab + b²"
+    ],
+    [
+     "a² - b² iki kare farkı çarpanları",
+     "(a - b) . (a + b)"
+    ],
+    [
+     "(a + b) + c = a + (b + c)",
+     "Toplama işleminin birleşme özelliği"
+    ],
+    [
+     "a + (-a) = 0",
+     "Toplama işleminin ters eleman özelliği"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+   "cumleler": [
+    {
+     "metin": "İki gerçek sayının toplamının veya çarpımının yine bir gerçek sayı olmasına ___ özelliği denir.",
+     "cevap": "kapalılık"
+    },
+    {
+     "metin": "Gerçek sayılarda çarpma işleminin ___ elemanı 0'dır.",
+     "cevap": "yutan"
+    },
+    {
+     "metin": "Cebirsel ifadelerde ortak çarpan parantezine alma işlemi, ___ özelliğinin ters yönde uygulanmasıdır.",
+     "cevap": "dağılma"
+    },
+    {
+     "metin": "Bilinmeyenlerin aldığı her gerçek sayı değeri için doğru olan eşitliklere ___ denir.",
+     "cevap": "özdeşlik"
+    },
+    {
+     "metin": "a < b ve b < c iken a < c olması sıralama bağıntısının ___ özelliğidir.",
+     "cevap": "geçişme"
+    }
+   ],
+   "fazla": [
+    "birim",
+    "orantı"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "x - {kesir:1|x} = 4 olduğuna göre {us:x|2} + {kesir:1|{us:x|2}} ifadesinin değerini tam kare özdeşliğini kullanarak adım adım bulunuz.",
+   "ipuclari": [
+    "1. İpucu: Verilen eşitliğin her iki tarafının karesini alarak (a - b)² = a² - 2ab + b² özdeşliğini uygulayınız.",
+    "2. İpucu: Ortadaki -2 . x . (1/x) teriminde x'lerin sadeleşerek -2 kaldığına dikkat ediniz."
+   ],
+   "cevap": "x - (1/x) = 4 eşitliğinin her iki tarafının karesini alalım: (x - 1/x)² = 4² => x² - 2 . x . (1/x) + (1/x²) = 16. Ortadaki çarpımda x ile 1/x birbirinin çarpmaya göre tersi olduğundan çarpımları 1'dir: x² - 2 + (1/x²) = 16 => x² + (1/x²) = 16 + 2 = 18 bulunur."
+  }
+ ]
+}
