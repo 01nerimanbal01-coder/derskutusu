@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 334 gönderi.
+Toplam 337 gönderi.
 
 ## bilgi-7-turkce-7
 Sıra: 2026-11-19 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-turkce-7.png
@@ -805,7 +805,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-mesleki-arapca-3
-Sıra: 2026-12-03 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-mesleki-arapca-3.png
+Sıra: 2026-12-03 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-mesleki-arapca-3.png
 
 ```
 Bunu biliyor muydunuz? Mesleki Arapçada kök harfleri arasında illet harfi (vav, ye, elif) bulunan mu’tel fiiller; illet harfinin başta, ortada veya sonda olmasına göre misal, ecvef, nâkıs ve lefîf olarak sınıflandırılır.
@@ -815,7 +815,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-peygamberimizin-hayati-3
-Sıra: 2026-12-04 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-peygamberimizin-hayati-3.png
+Sıra: 2026-12-04 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-peygamberimizin-hayati-3.png
 
 ```
 Bunu biliyor muydunuz? Hz. Peygamber (s.a.v.), geceleri hiç uyumadan namaz kılmak veya hiç evlenmemek isteyen sahabileri uyararak kendi sünnetinin ibadet ile dünya hayatı arasında denge ve itidal (orta yol) olduğunu bildirmiştir.
@@ -825,7 +825,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-temel-dini-bilgiler-3
-Sıra: 2026-12-04 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-temel-dini-bilgiler-3.png
+Sıra: 2026-12-04 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-temel-dini-bilgiler-3.png
 
 ```
 Bunu biliyor muydunuz? Yüce Allah’ı zâtî ve sübûtî sıfatlarıyla doğru tanımak (marifetullah), insanın kalbindeki tevhit inancını sağlamlaştırır ve onu samimi ibadet ile güzel ahlaka yöneltir.
@@ -835,7 +835,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-5-arapca-4
-Sıra: 2026-12-04 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-arapca-4.png
+Sıra: 2026-12-04 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-arapca-4.png
 
 ```
 Bunu biliyor muydunuz? Arapçada "hel" edatı cümleye "mı / mi?" soru anlamı katar ve cevabı "neam" (evet) veya "la" (hayır) ile verilir; Peygamberimizin "Önce selam, sonra kelam" hadisi ise iletişime selamla başlamanın önemini vurgular.
@@ -845,7 +845,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-5-kuran-i-kerim-4
-Sıra: 2026-12-04 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-kuran-i-kerim-4.png
+Sıra: 2026-12-04 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-kuran-i-kerim-4.png
 
 ```
 Bunu biliyor muydunuz? Kur’an-ı Kerim harflerini yazarken sağdan sola doğru gidilir; Elif, Dal, Zel, Ra, Ze ve Vav harfleri kendilerinden sonra gelen harflerle birleşmeyen altı özel harftir.
@@ -855,7 +855,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-5-peygamberimizin-hayati-4
-Sıra: 2026-12-04 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-peygamberimizin-hayati-4.png
+Sıra: 2026-12-04 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-peygamberimizin-hayati-4.png
 
 ```
 Bunu biliyor muydunuz? Peygamberimiz Hz. Muhammed (s.a.v.), Fil Yılı’nda 12 Rebiülevvel (20 Nisan 571) Pazartesi günü Mekke’de dünyaya gelmiştir; annesi Hz. Âmine O’na Ahmed, dedesi Abdülmuttalib ise Muhammed ismini vermiştir.
@@ -865,7 +865,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-5-temel-dini-bilgiler-4
-Sıra: 2026-12-04 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-temel-dini-bilgiler-4.png
+Sıra: 2026-12-04 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-temel-dini-bilgiler-4.png
 
 ```
 Bunu biliyor muydunuz? Kur’an-ı Kerim meallerinde yer alan yaratılış, ölçü ve nimet ayetleri; insanın evrendeki kusursuz düzen üzerinde düşünerek Yüce Allah’ın varlığını, birliğini ve sonsuz kudretini kavramasını sağlar.
@@ -875,7 +875,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-6-arapca-4
-Sıra: 2026-12-05 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-arapca-4.png
+Sıra: 2026-12-05 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-arapca-4.png
 
 ```
 Bunu biliyor muydunuz? Arapçada 28 harfin 14’ü kamerî, 14’ü şemsî harftir; kelimenin başındaki "el-" (harf-i tarif) takısı kamerî harflerde okunurken, şemsî harflerde lam sesi sonraki harfe katılarak şeddeli okunur.
@@ -885,7 +885,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-6-kuran-i-kerim-4
-Sıra: 2026-12-05 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-kuran-i-kerim-4.png
+Sıra: 2026-12-05 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-kuran-i-kerim-4.png
 
 ```
 Bunu biliyor muydunuz? Kur’an-ı Kerim Fatiha Suresi ile başlayıp Nas Suresi ile sona eren 114 sureden ve 20’şer sayfalık 30 cüzden oluşur; en uzun suresi 286 ayetlik Bakara Suresi, en kısa suresi ise 3 ayetlik Kevser Suresi’dir.
@@ -895,7 +895,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-6-peygamberimizin-hayati-4
-Sıra: 2026-12-05 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-peygamberimizin-hayati-4.png
+Sıra: 2026-12-05 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-peygamberimizin-hayati-4.png
 
 ```
 Bunu biliyor muydunuz? Hz. Muhammed (s.a.v.), peygamberliğinden önce de haksızlıklara karşı kurulan Hilfü’l-Fudûl cemiyetinde yer almış ve Hacerü’l-Esved hakemliğiyle kabileler arasında kan dökülmesini önlemiştir.
@@ -905,7 +905,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-6-temel-dini-bilgiler-4
-Sıra: 2026-12-05 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-temel-dini-bilgiler-4.png
+Sıra: 2026-12-05 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-temel-dini-bilgiler-4.png
 
 ```
 Bunu biliyor muydunuz? Kur’an-ı Kerim meallerinde iman konulu ayetler; insanın fıtratını, evrendeki kusursuz uyumu ve yaratılış gayesini bir bütün hâlinde açıklayarak bireyi bilinçli bir imana yöneltir.
@@ -915,7 +915,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-7-arapca-4
-Sıra: 2026-12-05 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-arapca-4.png
+Sıra: 2026-12-05 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-arapca-4.png
 
 ```
 Bunu biliyor muydunuz? Arapçada muzari fiilin başına gelen "se-" eki fiile gelecek zaman anlamı katar; "Se-ekunu muallimen" (Öğretmen olacağım) veya "Se-usbihu muhendisen" (Mühendis olacağım) şeklinde gelecek hedefleri anlatılır.
@@ -925,7 +925,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-7-kuran-i-kerim-4
-Sıra: 2026-12-05 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-kuran-i-kerim-4.png
+Sıra: 2026-12-05 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-kuran-i-kerim-4.png
 
 ```
 Bunu biliyor muydunuz? Kur’an-ı Kerim tilavetinde ayet sonlarında ve cümle içinde yer alan secâvend (durak) işaretlerine uymak, ayetlerin anlam bütünlüğünü korumak açısından büyük önem taşır.
@@ -935,7 +935,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-7-peygamberimizin-hayati-4
-Sıra: 2026-12-06 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-peygamberimizin-hayati-4.png
+Sıra: 2026-12-06 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-peygamberimizin-hayati-4.png
 
 ```
 Bunu biliyor muydunuz? Hüzün Yılı ve Taif yolculuğunun ardından gerçekleşen İsrâ ve Miraç mucizesi müminlere büyük bir manevi güç vermiş; ardından gelen I. ve II. Akabe Biatları ile Medine’ye hicretin kapısı açılmıştır.
@@ -945,7 +945,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-7-temel-dini-bilgiler-4
-Sıra: 2026-12-06 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-temel-dini-bilgiler-4.png
+Sıra: 2026-12-06 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-temel-dini-bilgiler-4.png
 
 ```
 Bunu biliyor muydunuz? Gâşiye Suresi 17-20. ayetlerde devenin nasıl yaratıldığına, göğün nasıl yükseltildiğine, dağların nasıl dikildiğine ve yeryüzünün nasıl yayıldığına bakıp tefekkür etmemiz istenir.
@@ -955,7 +955,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-arapca-4
-Sıra: 2026-12-06 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-arapca-4.png
+Sıra: 2026-12-06 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-arapca-4.png
 
 ```
 Bunu biliyor muydunuz? Arapçada etkinlik saatlerini ve şehir betimlemelerini yaparken soru edatları, yön zarfları ve "li-enne" (çünkü), "sümme" (sonra) gibi bağlaçlar bir arada kullanılarak anlamlı paragraflar oluşturulur.
@@ -965,7 +965,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-kuran-i-kerim-4
-Sıra: 2026-12-06 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-kuran-i-kerim-4.png
+Sıra: 2026-12-06 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-kuran-i-kerim-4.png
 
 ```
 Bunu biliyor muydunuz? Hz. Yakup (a.s.) ve Hz. Yusuf (a.s.) kıssası; kıskançlık ve iftiraya karşı iffet ve sabrın, umutsuzluğa karşı Allah’a tevekkülün ve güce kavuşulduğunda intikam yerine affetmenin en güzel örneğidir.
@@ -975,7 +975,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-peygamberimizin-hayati-4
-Sıra: 2026-12-06 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-peygamberimizin-hayati-4.png
+Sıra: 2026-12-06 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-peygamberimizin-hayati-4.png
 
 ```
 Bunu biliyor muydunuz? 622 yılındaki Yesrib’e (Medine’ye) hicret yalnızca bir göç değil; emanete sadakatin, kusursuz planlama ve tedbirin, Sevr Mağarası’ndaki "Üzülme, Allah bizimle beraberdir" (Tevbe, 40) tevekkülünün ve İslam medeniyetinin başlangıcıdır.
@@ -985,7 +985,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-temel-dini-bilgiler-4
-Sıra: 2026-12-06 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-temel-dini-bilgiler-4.png
+Sıra: 2026-12-06 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-temel-dini-bilgiler-4.png
 
 ```
 Bunu biliyor muydunuz? Âl-i İmrân Suresi 31. ayette "(Resulüm!) De ki: Eğer Allah’ı seviyorsanız bana uyun ki Allah da sizi sevsin ve günahlarınızı bağışlasın" buyrularak Allah sevgisinin yolunun Peygamberimizin sünnetine uymaktan geçtiği bildirilir.
@@ -995,7 +995,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-arapca-4
-Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-arapca-4.png
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-arapca-4.png
 
 ```
 Bunu biliyor muydunuz? Arapçada Elif, Vav ve Yâ med harfleri kendinden önceki fetha, damme ve kesra harekelerini uzatırken; sınıf içi emir fiilleri muhatabın eril veya dişil olmasına göre çekimlenir.
@@ -1005,7 +1005,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-biyoloji-4
-Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-biyoloji-4.png
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-biyoloji-4.png
 
 ```
 Bunu biliyor muydunuz? Bilimsel araştırmalarda nitel gözlem duyu organlarına, nicel gözlem ölçü aletlerine dayanır; çıkarım ise gözlemlerin yorumlanmasıyla elde edilen mantıklı açıklamadır.
@@ -1015,7 +1015,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-cografya-4
-Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-cografya-4.png
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-cografya-4.png
 
 ```
 Bunu biliyor muydunuz? Harita çizimlerinde küresellikten kaynaklanan bozulmaları en aza indirmek için Ekvator'da silindirik, Türkiye'nin de bulunduğu orta kuşakta konik, kutuplarda düzlem projeksiyon kullanılır.
@@ -1025,7 +1025,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-din-kulturu-4
-Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-din-kulturu-4.png
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-din-kulturu-4.png
 
 ```
 Bunu biliyor muydunuz? İslam düşüncesinde doğru bilginin üç temel kaynağı (esbâb-ı ilim); sağlıklı düşünen selim akıl, beş duyu organımız olan salim duyular ve vahye dayanan sadık haberdir.
@@ -1035,7 +1035,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-edebiyat-4
-Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-edebiyat-4.png
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-edebiyat-4.png
 
 ```
 Bunu biliyor muydunuz? Şiiri betimleme paragrafına dönüştürürken duyulara seslenen ayrıntılar ve söz sanatları kullanılarak okurun zihninde canlı bir tablo oluşturulur.
@@ -1045,7 +1045,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-fizik-4
-Sıra: 2026-10-17 06:00 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-fizik-4.png
+Sıra: 2026-10-17 06:00 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-fizik-4.png
 
 ```
 Bunu biliyor muydunuz? Fizik biliminin teknolojiye dönüştüğü başlıca merkezler arasında ülkemizde TÜBİTAK, TENMAK, TUA ve ASELSAN; dünyada ise CERN, NASA ve ESA yer alır.
@@ -3342,4 +3342,34 @@ Bunu biliyor muydunuz? İmanın geçerli olması için yeis hâli (son nefes) ge
 Faydalı bulduysanız arkadaşınızı etiketleyin.
 📘 12. sınıf Temel Dinî Bilgiler 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-temel-dini-bilgiler-hafta-6
 #derskutusu #temeldinibilgiler #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-arapca-7
+Sıra: 2026-12-07 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-arapca-7.png
+
+```
+Bunu biliyor muydunuz? Arapçada elif, dal, zel, ra ve ze harfleri kendinden sonraki harfle birleşmez; yakın işaret ismi olarak eril için “Hâzâ”, dişil için “Hâzihî” kullanılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Arapça 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-arapca-hafta-7
+#derskutusu #arapça #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-kuran-i-kerim-7
+Sıra: 2026-12-07 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-kuran-i-kerim-7.png
+
+```
+Bunu biliyor muydunuz? Kur’an okurken ra harfi üstün ve ötre harekeli olduğunda kalın, esre harekeli olduğunda ise ince sesle telaffuz edilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Kur’an-ı Kerim 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-kuran-i-kerim-hafta-7
+#derskutusu #kuranıkerim #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-peygamberimizin-hayati-7
+Sıra: 2026-12-07 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-peygamberimizin-hayati-7.png
+
+```
+Bunu biliyor muydunuz? Hz. Muhammed (sav), çocukluğunun ilk dört yılını Benî Sa’d yurdunda sütannesi Hz. Halîme’nin yanında geçirmiş ve sütailesine daima vefa göstermiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Peygamberimizin Hayatı 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-peygamberimizin-hayati-hafta-7
+#derskutusu #peygamberimizinhayatı #5sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
