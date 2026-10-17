@@ -1805,7 +1805,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-inkilap-tarihi-5
-Sıra: 2026-10-17 08:45 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-inkilap-tarihi-5.png
+Sıra: 2026-10-17 08:45 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-8-inkilap-tarihi-5.png
 
 ```
 Bunu biliyor muydunuz? Birinci Dünya Savaşı, sömürgecilik rekabeti ve milliyetçilik akımı yüzünden çıkmış; Goben ve Breslau gemilerinin Rus limanlarını bombalamasıyla Osmanlı Devleti savaşa dahil olmuştur.
@@ -1815,7 +1815,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-arapca-5
-Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-arapca-5.png
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-8-arapca-5.png
 
 ```
 Bunu biliyor muydunuz? Arapçada "er-rihle" (gezi) metinlerinde "Nahnü" (biz) zamiriyle geçmiş zaman anlatılırken fiilin sonuna "-nâ" eki, şimdiki zamanda ise fiilin başına "n-" harfi getirilir.
@@ -1825,7 +1825,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-kuran-i-kerim-5
-Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-kuran-i-kerim-5.png
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-8-kuran-i-kerim-5.png
 
 ```
 Bunu biliyor muydunuz? Hz. Yusuf (as) kıssası; zorluklar karşısında sabretmenin, iffeti korumanın, emanete sahip çıkmanın ve güç elindeyken bile affedici olmanın en güzel örneğidir.
@@ -1835,7 +1835,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-peygamberimizin-hayati-5
-Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-peygamberimizin-hayati-5.png
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-8-peygamberimizin-hayati-5.png
 
 ```
 Bunu biliyor muydunuz? Hz. Peygamber (sav), Hicret sonrasında Mescid-i Nebevî ve Suffe'yi kurmuş, Ensar-Muhacir kardeşliğini (Muâhât) sağlamış ve Medine Sözleşmesi ile toplumsal barışı tesis etmiştir.
@@ -1845,7 +1845,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-8-temel-dini-bilgiler-5
-Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-8-temel-dini-bilgiler-5.png
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-8-temel-dini-bilgiler-5.png
 
 ```
 Bunu biliyor muydunuz? Kur'an-ı Kerim'e karşı ahlaki sorumluluğumuz; O'na gönülden inanmak, edeple okumak, ayetlerin anlamını derinlemesine düşünmek ve ahlakını hayatımıza yansıtmaktır.
@@ -1855,7 +1855,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-biyoloji-5
-Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-biyoloji-5.png
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-biyoloji-5.png
 
 ```
 Bunu biliyor muydunuz? Bilimsel yöntemde hipotezi sınamak için yapılan kontrollü deneylerde etkisi araştırılan faktör bağımsız değişken, bağımsız değişkene göre ortaya çıkan sonuç ise bağımlı değişkendir.
@@ -1865,7 +1865,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-cografya-5
-Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-cografya-5.png
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-cografya-5.png
 
 ```
 Bunu biliyor muydunuz? Topoğrafya haritalarında eş yükselti eğrilerinin (izohipslerin) birbirine yaklaştığı yerlerde eğim artar, uzaklaştığı yerlerde ise eğim azalır.
@@ -1875,7 +1875,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-din-kulturu-5
-Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-din-kulturu-5.png
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-din-kulturu-5.png
 
 ```
 Bunu biliyor muydunuz? İslam'da Allah ile kul arasındaki bağ vahiy, ibadet ve dua ile kurulur; ibadetin kabul olması için iman, ihlas (samimiyet) ve Sünnete uygunluk şarttır.
@@ -1885,7 +1885,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-edebiyat-5
-Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-edebiyat-5.png
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-edebiyat-5.png
 
 ```
 Bunu biliyor muydunuz? Betimleme paragrafı yazılırken nesnel bilgi vermek amaçlanıyorsa açıklayıcı betimleme, okurda estetik duygu ve izlenim uyandırmak amaçlanıyorsa sanatsal (izlenimsel) betimleme kullanılır.
@@ -1895,7 +1895,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-fizik-5
-Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-fizik-5.png
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-fizik-5.png
 
 ```
 Bunu biliyor muydunuz? Uluslararası Birim Sisteminde (SI) Kütle, Işık şiddeti, Sıcaklık, Akım şiddeti, Madde miktarı, Uzunluk ve Zaman (KISAMUZ) olmak üzere 7 temel nicelik vardır.
@@ -1905,7 +1905,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-kimya-5
-Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-kimya-5.png
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-kimya-5.png
 
 ```
 Bunu biliyor muydunuz? Atomda s, p, d ve f orbitalleri en fazla 2, 6, 10 ve 14 elektron alır; orbitallerin enerjisi n+l toplamına göre sıralanır ve elektronlar önce en düşük enerjili orbitale yerleşir.
@@ -1915,7 +1915,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-matematik-5
-Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-matematik-5.png
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-matematik-5.png
 
 ```
 Bunu biliyor muydunuz? Sayı kümelerinde Doğal Sayılar (N), Tam Sayılar (Z) ve Rasyonel Sayılar (Q) birbirini kapsar; rasyonel (Q) ile irrasyonel sayıların (Q') birleşimi gerçek sayılar kümesini (R) oluşturur.
@@ -1925,7 +1925,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-tarih-5
-Sıra: 2026-10-17 09:15 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-tarih-5.png
+Sıra: 2026-10-17 09:15 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-tarih-5.png
 
 ```
 Bunu biliyor muydunuz? Tarih araştırmalarında 5T yönteminin dördüncü basamağı olan Tenkit (Eleştiri), belgenin orijinalliğini (dış tenkit) ve içindeki bilgilerin doğruluğunu (iç tenkit) denetler.
@@ -1935,7 +1935,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-arapca-5
-Sıra: 2026-10-17 10:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-arapca-5.png
+Sıra: 2026-10-17 10:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-arapca-5.png
 
 ```
 Bunu biliyor muydunuz? Arapçada tekil zamirler ve işaret isimleri kelimenin eril (müzekker) veya dişil (müennes) oluşuna göre uyum sağlar.
@@ -1945,7 +1945,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-ingilizce-5
-Sıra: 2026-10-17 10:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-ingilizce-5.png
+Sıra: 2026-10-17 10:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-ingilizce-5.png
 
 ```
 Bunu biliyor muydunuz? İngilizcede konuşma anındaki eylemler Present Continuous Tense ile anlatılırken durum fiilleri (State Verbs) -ing eki almaz.
@@ -1955,7 +1955,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-kuran-i-kerim-5
-Sıra: 2026-10-17 10:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-kuran-i-kerim-5.png
+Sıra: 2026-10-17 10:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-kuran-i-kerim-5.png
 
 ```
 Bunu biliyor muydunuz? Kur’an-ı Kerim kıraatinde anlam bozulmaması için harflerin beş mahreç bölgesinden, kalın-ince ve peltek sıfatlarına uygun okunması gerekir.
@@ -1965,7 +1965,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-peygamberimizin-hayati-5
-Sıra: 2026-10-17 10:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-peygamberimizin-hayati-5.png
+Sıra: 2026-10-17 10:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-peygamberimizin-hayati-5.png
 
 ```
 Bunu biliyor muydunuz? İslam dini Cahiliye toplumundaki asabiyet ve sınıf ayrımını kaldırarak üstünlüğün yalnız takvada olduğunu ilan etmiştir.
@@ -1975,7 +1975,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-temel-dini-bilgiler-5
-Sıra: 2026-10-17 10:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-9-temel-dini-bilgiler-5.png
+Sıra: 2026-10-17 10:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-9-temel-dini-bilgiler-5.png
 
 ```
 Bunu biliyor muydunuz? Aklî ve naklî deliller uyum içinde insanı tefekküre, emanet bilincine ve hayatın her alanında ilkeli yaşamaya yöneltir.
@@ -1985,7 +1985,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-arapca-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-arapca-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-arapca-5.png
 
 ```
 Bunu biliyor muydunuz? Arapçada akrabalık ilişkileri muzâf ve muzâfun ileyh uyumuyla kurulan isim tamlaması (el-izâfe) kalıplarıyla ifade edilir.
@@ -1995,7 +1995,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-biyoloji-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-biyoloji-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-biyoloji-5.png
 
 ```
 Bunu biliyor muydunuz? Fotosentez deneylerinde KOH karbondioksit tutucu, iyot çözeltisi ise nişasta ayracı olarak kullanılarak fotosentez hızı ölçülür.
@@ -2005,7 +2005,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-cografya-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-cografya-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-cografya-5.png
 
 ```
 Bunu biliyor muydunuz? CBS ortamında yeryüzü unsurları nokta, çizgi ve poligon katmanlarıyla sayısallaştırılarak öznitelik tablolarıyla ilişkilendirilir.
@@ -2015,7 +2015,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-din-kulturu-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-din-kulturu-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-din-kulturu-5.png
 
 ```
 Bunu biliyor muydunuz? Allah (cc) âlemi kusursuz bir ölçü (mizan) ve Sünnetullah adı verilen değişmez evrensel yasalarla yaratıp yönetmektedir.
@@ -2025,7 +2025,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-edebiyat-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-edebiyat-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-edebiyat-5.png
 
 ```
 Bunu biliyor muydunuz? Başarılı bir şiir dinletisinde doğru vurgu, tonlama, durak ve nefes kontrolü sahne duruşuyla bütünleştirilerek sunulur.
@@ -2035,7 +2035,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-felsefe-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-felsefe-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-felsefe-5.png
 
 ```
 Bunu biliyor muydunuz? Felsefe bireyde eleştirel ve özgür düşünceyi geliştirirken toplumda demokrasi, hoşgörü ve insan hakları bilincini güçlendirir.
@@ -2045,7 +2045,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-fikih-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-10-fikih-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-fikih-5.png
 
 ```
 Bunu biliyor muydunuz? İslam hukuku vahiy döneminden itibaren içtihat, Ehl-i Hadis ve Ehl-i Re’y ekolleriyle gelişerek fıkıh mezheplerini oluşturmuştur.
