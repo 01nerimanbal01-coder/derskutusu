@@ -39,10 +39,19 @@
     });
   }
 
+  function ozetKapsayiciBul() {
+    return document.querySelector('article.ozet, main.ozet, .ozet');
+  }
+
   function etkinlikKur(kok) {
     if (!kok || kok.dataset.etkinlikKuruldu === '1') return;
     kok.dataset.etkinlikKuruldu = '1';
-    const ozetId = kok.dataset.ozetId || '';
+    const ozetId = (
+      kok.dataset.ozetId ||
+      kok.closest('[data-ozet-kimlik]')?.dataset.ozetKimlik ||
+      document.querySelector('[data-ozet-kimlik]')?.dataset.ozetKimlik ||
+      ''
+    );
     const ilkHal = kok.querySelector('.etk-liste').innerHTML;
 
     function kur() {
@@ -188,13 +197,13 @@
     if (!bolum || bolum.dataset.kuruldu === '1') return;
     bolum.dataset.kuruldu = '1';
 
-    const veriElemanlari = [...bolum.querySelectorAll('.fkart-veri > li')];
+    const veriElemanlari = [...bolum.querySelectorAll('.fkart-veri > .fkart-oge, .fkart-veri > li')];
     if (!veriElemanlari.length) return;
 
-    let deste = veriElemanlari.map((li) => ({
-      on: li.dataset.on || '',
-      arka: li.dataset.arka || '',
-      etiket: li.dataset.etiket || 'Kavram'
+    let deste = veriElemanlari.map((el) => ({
+      on: el.dataset.on || '',
+      arka: el.dataset.arka || '',
+      etiket: el.dataset.etiket || 'Kavram / Soru · Çevirmek için dokunun ↻'
     }));
     let sira = 0;
 
@@ -226,13 +235,13 @@
       onYuz.querySelector('.fkart-etiket').textContent = k.etiket;
       onYuz.querySelector('.fkart-metin').innerHTML = k.on;
       arkaYuz.querySelector('.fkart-metin').innerHTML = k.arka;
-      sayac.textContent = `${sira + 1} / ${deste.length}`;
+      sayac.innerHTML = `<b>${sira + 1}</b> / ${deste.length}`;
       [...noktalarKap.children].forEach((n, idx) => n.classList.toggle('etkin', idx === sira));
       sesliDinleKur(kartDugme);
     }
 
     kartDugme.addEventListener('click', (ev) => {
-      if (ev.target.closest('.ses-dugme, .sesli-ar')) return;
+      if (ev.target.closest('.ses-dugme, .sesli-ar, .sesli-en')) return;
       const cevrik = kartDugme.classList.toggle('cevrik');
       kartDugme.setAttribute('aria-pressed', cevrik ? 'true' : 'false');
     });
@@ -294,7 +303,8 @@
       modal.setAttribute('aria-modal', 'true');
       modal.setAttribute('aria-label', baslik);
 
-      const renkSinifi = [...(document.querySelector('main.ozet')?.classList || [])].find((c) => c.startsWith('ders-')) || '';
+      const ana = ozetKapsayiciBul();
+      const renkSinifi = [...(ana?.classList || [])].find((c) => c.startsWith('ders-')) || '';
       if (renkSinifi) modal.classList.add(renkSinifi);
 
       modal.innerHTML = `
@@ -350,13 +360,13 @@
       sunumDurum.kapat();
       return;
     }
-    const ana = document.querySelector('main.ozet');
+    const ana = ozetKapsayiciBul();
     if (!ana) return;
     const slaytlar = [
       ana.querySelector('.ozet-ust'),
       ...ana.querySelectorAll('.ozet-bolum.konu'),
-      ana.querySelector('#kartlar'),
       ana.querySelector('#ornekler'),
+      ana.querySelector('#kartlar'),
       ana.querySelector('#etkinlikler'),
       ana.querySelector('#kisaca')
     ].filter(Boolean);
@@ -380,14 +390,17 @@
     document.body.appendChild(cubuk);
 
     function guncelle() {
-      slaytlar.forEach((s, i) => s.classList.toggle('sunum-aktif', i === indeks));
+      slaytlar.forEach((s, i) => {
+        s.classList.toggle('sunum-aktif', i === indeks);
+        s.classList.toggle('sunum-gizli', i !== indeks);
+      });
       const aktif = slaytlar[indeks];
       const h2 = aktif.querySelector('h2');
       const ad = h2 ? h2.textContent.trim() : 'Giriş ve Öğrenme Çıktıları';
       cubuk.querySelector('.sunum-sayac').textContent = `Slayt ${indeks + 1} / ${slaytlar.length} · ${ad}`;
       cubuk.querySelector('.s-onceki').disabled = indeks === 0;
       cubuk.querySelector('.s-sonraki').disabled = indeks === slaytlar.length - 1;
-      aktif.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      aktif.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     function klavye(ev) {
@@ -404,7 +417,7 @@
 
     function kapat() {
       document.body.classList.remove('sunum-modu', 'sunum-iri');
-      slaytlar.forEach((s) => s.classList.remove('sunum-aktif'));
+      slaytlar.forEach((s) => s.classList.remove('sunum-aktif', 'sunum-gizli'));
       cubuk.remove();
       window.removeEventListener('keydown', klavye);
       sunumDurum = null;
@@ -438,7 +451,7 @@
   // 6. Okuma İlerleme Çubuğu ve Sabit "Bu Sayfada" Vurgusu
   function okumaVeIcindekilerKur() {
     const cubuk = document.getElementById('okuma-ilerleme');
-    const ana = document.querySelector('main.ozet');
+    const ana = ozetKapsayiciBul();
     if (cubuk && ana) {
       let bekliyor = false;
       const kaydirGuncelle = () => {
@@ -454,7 +467,7 @@
       kaydirGuncelle();
     }
 
-    const bolumler = [...document.querySelectorAll('main.ozet section[id]')];
+    const bolumler = [...document.querySelectorAll('article.ozet section[id], main.ozet section[id], .ozet section[id]')];
     const baglar = [...document.querySelectorAll('.ozet-ic-cubuk .ic-bag, .ozet-yan li a')];
     if (!bolumler.length || !baglar.length || !('IntersectionObserver' in window)) return;
 
@@ -515,10 +528,10 @@
       });
     });
 
-    // İngilizce ders özetlerinde kalın/italik İngilizce ifadeler için ses düğmesi
-    const ingilizceSayfa = document.querySelector('main.ozet.ders-ingilizce');
+    // İngilizce ders özetlerinde kalın/italik İngilizce ifadeler ve tablo/kart terimleri için ses düğmesi
+    const ingilizceSayfa = document.querySelector('.ozet.ders-ingilizce, .ozet-bas.ders-ingilizce');
     if (ingilizceSayfa) {
-      kapsayici.querySelectorAll('.ozet-bolum.konu li b, .ozet-bolum.konu p b, .fkart-on .fkart-metin').forEach((el) => {
+      kapsayici.querySelectorAll('.ozet-bolum.konu li b, .ozet-bolum.konu p b, .ozet-bolum.konu .ozet-tablo tbody td:first-child, .fkart-on .fkart-metin').forEach((el) => {
         if (el.dataset.sesKuruldu === '1') return;
         const m = (el.textContent || '').trim();
         if (m.length < 2 || m.length > 95 || /[çğıöşüÇĞİÖŞÜ]/.test(m) || !/[a-zA-Z]/.test(m)) return;

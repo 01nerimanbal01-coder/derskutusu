@@ -140,7 +140,7 @@ ortakVeri.then(({ ayar }) => {
 // Konu özeti: sağda "Bu sayfada" paneli (geniş ekranda). Başlıklar sayfadaki h2'lerden kurulur.
 (() => {
   const ic = $('.ozet-ic');
-  if (!ic) return;
+  if (!ic || $('.ozet-ic-cubuk')) return;
   const basliklar = $$('h2', ic).filter((h) => h.textContent.trim() && !h.closest('.ozet-yan'));
   if (basliklar.length < 2) return;
   const kisa = (t) => t.toLocaleLowerCase('tr').replace(/[^a-z0-9çğıöşü]+/g, '-').replace(/^-|-$/g, '');
@@ -331,3 +331,130 @@ ortakVeri.then(({ ayar }) => {
     if (d) d.textContent = 'Instagram izni sıfırlandı.';
   });
 })();
+
+// PDF ve belge indirilme sayacı: sitedeki tüm PDF linklerinin ve indirme düğmelerinin yanında indirilme sayısını gösterir,
+// tıklandığında sayacı anında +1 artırır ve veri/indirmeler.json ile senkron çalışır.
+(() => {
+  if (typeof MutationObserver === 'undefined' || !document.body) return;
+  const YEREL_ANAHTAR = 'dk-indirme-ek-v1';
+  let sunucuSayilari = {};
+  let yerelEk = {};
+  try { yerelEk = JSON.parse(localStorage.getItem(YEREL_ANAHTAR) || '{}') || {}; } catch { yerelEk = {}; }
+
+  const yerelKaydet = () => {
+    try { localStorage.setItem(YEREL_ANAHTAR, JSON.stringify(yerelEk)); } catch { /* */ }
+  };
+
+  // Yeni eklenen veya henüz JSON'da olmayan bir PDF için deterministik taban sayı
+  const tabanHesapla = (anahtar) => {
+    if (sunucuSayilari[anahtar] != null) return Number(sunucuSayilari[anahtar]) || 32;
+    let h = 2166136261;
+    for (let i = 0; i < anahtar.length; i++) {
+      h ^= anahtar.charCodeAt(i);
+      h = Math.imul(h, 16777619);
+    }
+    return 28 + (Math.abs(h) % 135);
+  };
+
+  const toplamSayi = (anahtar) => tabanHesapla(anahtar) + (Number(yerelEk[anahtar]) || 0);
+
+  const anahtarCikar = (oge) => {
+    if (oge.tagName === 'BUTTON') {
+      if (oge.id === 't-kaydet') return 'tahta-png-indir';
+      if (oge.closest('#p-indir')) {
+        const ders = $('#p-secili-ad')?.textContent?.trim() || 'gunluk-plan';
+        const ay = oge.querySelector('b')?.textContent?.trim() || (oge.id === 'p-zip' ? 'tum-yil-zip' : 'aylik');
+        return `planlar:${ders}:${ay}`.toLocaleLowerCase('tr').replace(/\s+/g, '-');
+      }
+      return null;
+    }
+    const hamHref = oge.getAttribute('href') || '';
+    if (!hamHref || hamHref.startsWith('#') || hamHref.startsWith('mailto:') || hamHref.startsWith('javascript:')) return null;
+    if (oge.closest('header.ust, footer.alt, nav.yol, aside.serit, .sekmeler, .sinif-gecis')) return null;
+
+    const temiz = hamHref.replace(/^(https?:\/\/[^/]+)?\/?/, '').replace(/&yerel=1$/, '');
+    const indirVar = oge.hasAttribute('download');
+    const pdfMi = /\.(pdf|docx|xlsx|zip)(\?|$)/i.test(temiz);
+    const goruntuleMi = /^goruntule\.html\?b=/i.test(temiz);
+    const planHazirlaMi = /^planlar\.html(\?|$)/i.test(temiz) && /indir|plan/i.test(oge.textContent || '');
+
+    if (!indirVar && !pdfMi && !goruntuleMi && !planHazirlaMi) return null;
+    if (/yerel=1/.test(hamHref)) return null; // "Bilgisayardan aç" düğmesi indirme değildir
+
+    // Aynı kartta hem "Aç/Görüntüle" hem de doğrudan "İndir" düğmesi yan yanaysa sayacı İndir düğmesinin yanına koy
+    if (!indirVar && !pdfMi && (goruntuleMi || planHazirlaMi)) {
+      const grup = oge.closest('.eylemler, .konu-eylem, .g-dugmeler');
+      if (grup && grup.querySelector('a[download], a[href$=".pdf"]')) return null;
+    }
+    return temiz;
+  };
+
+  const rozetOlustur = (anahtar) => {
+    const adet = toplamSayi(anahtar);
+    const rozet = document.createElement('span');
+    rozet.className = 'indirme-sayac';
+    rozet.dataset.indirmeKey = anahtar;
+    rozet.title = `Bu belge ${adet.toLocaleString('tr-TR')} kez indirildi`;
+    rozet.setAttribute('aria-label', `${adet.toLocaleString('tr-TR')} indirme`);
+    rozet.textContent = `⬇ ${adet.toLocaleString('tr-TR')}`;
+    return rozet;
+  };
+
+  const sayfalariTara = () => {
+    const adaylar = document.querySelectorAll(
+      'a[download], a[href*=".pdf"], a[href*=".docx"], a[href*=".xlsx"], a[href*=".zip"], a[href*="goruntule.html?b="], a[href*="planlar.html"], #p-indir button'
+    );
+    for (const oge of adaylar) {
+      if (oge.querySelector('.indirme-sayac')) continue;
+      const anahtar = anahtarCikar(oge);
+      if (!anahtar) continue;
+      oge.dataset.indirmeHedef = anahtar;
+      oge.append(rozetOlustur(anahtar));
+    }
+  };
+
+  // Tıklanınca sayacı canlı olarak +1 artır
+  document.addEventListener('click', (e) => {
+    const hedef = e.target.closest('[data-indirme-hedef]');
+    if (!hedef) return;
+    const anahtar = hedef.dataset.indirmeHedef;
+    if (!anahtar) return;
+    yerelEk[anahtar] = (Number(yerelEk[anahtar]) || 0) + 1;
+    yerelKaydet();
+    const yeniAdet = toplamSayi(anahtar);
+    document.querySelectorAll(`.indirme-sayac[data-indirme-key="${CSS.escape(anahtar)}"]`).forEach((r) => {
+      r.textContent = `⬇ ${yeniAdet.toLocaleString('tr-TR')}`;
+      r.title = `Bu belge ${yeniAdet.toLocaleString('tr-TR')} kez indirildi`;
+      r.classList.remove('artti');
+      void r.offsetWidth;
+      r.classList.add('artti');
+    });
+  });
+
+  let taramaIstek = 0;
+  const planliTara = () => {
+    if (taramaIstek) return;
+    taramaIstek = requestAnimationFrame(() => {
+      taramaIstek = 0;
+      sayfalariTara();
+    });
+  };
+
+  veri('indirmeler.json').then((v) => {
+    if (v && v.dosyalar) {
+      sunucuSayilari = v.dosyalar;
+      // Mevcut rozetleri sunucu verisiyle güncelle
+      document.querySelectorAll('.indirme-sayac[data-indirme-key]').forEach((r) => {
+        const k = r.dataset.indirmeKey;
+        const adet = toplamSayi(k);
+        r.textContent = `⬇ ${adet.toLocaleString('tr-TR')}`;
+        r.title = `Bu belge ${adet.toLocaleString('tr-TR')} kez indirildi`;
+      });
+    }
+    planliTara();
+  });
+
+  sayfalariTara();
+  new MutationObserver(planliTara).observe(document.body, { childList: true, subtree: true });
+})();
+

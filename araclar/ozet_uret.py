@@ -147,7 +147,7 @@ def _geri(metin=''):
     return f'<p class="etk-geri" hidden><b></b><span>{e(metin) if metin else ""}</span></p>'
 
 
-def etkinlik_html(liste):
+def etkinlik_html(liste, ozet_kimlik=''):
     """Etkinlikler (MEB kitabındaki bilgilerle): coktan | dy | eslestir | bosluk | ogretici. Davranış public/etkinlik.js'te."""
     import random
     parca = []
@@ -188,7 +188,8 @@ def etkinlik_html(liste):
             ilk = '1. ipucunu göster' if x.get('ipuclari') else 'Cevabı göster'
             parca.append(f'<li class="etk etk-ogretici">{bas}{ip}<button type="button" class="dugme etk-ipucu-dugme">{ilk}</button>'
                          f'<p class="etk-cevap" hidden><b>Cevap:</b> {e(x["cevap"])}</p></li>')
-    return ('<section class="ozet-bolum" id="etkinlikler"><div class="etk-bas"><h2>Etkinlikler</h2><p class="etk-puan"></p>'
+    kimlik_attr = f' data-ozet-id="{ozet_kimlik}"' if ozet_kimlik else ''
+    return (f'<section class="ozet-bolum" id="etkinlikler"{kimlik_attr}><div class="etk-bas"><h2>Etkinlikler</h2><p class="etk-puan"></p>'
             '<button type="button" class="dugme etk-sifirla">Baştan başla</button></div>'
             '<p class="etk-aciklama">Soruları çözün; her cevaptan sonra doğru mu yanlış mı olduğunu hemen göreceksiniz.</p>'
             f'<ol class="etk-liste">{"".join(parca)}</ol></section>')
@@ -311,12 +312,12 @@ def sayfa_uret(o, dersler, icerikler, hafta_haritasi=None):
             sol_k = (
                 f'<a class="hgecis-kart onceki" href="/ozet/{o["sinif"]}-{o["ders"]}-hafta-{onceki_h}.html">'
                 f'<small>← Önceki hafta · {onceki_h}. Hafta</small><strong>{e(ders_haftalari[onceki_h])}</strong></a>'
-                if onceki_h else '<span></span>'
+                if onceki_h else '<span class="hgecis-kart bos"></span>'
             )
             sag_k = (
                 f'<a class="hgecis-kart sonraki" href="/ozet/{o["sinif"]}-{o["ders"]}-hafta-{sonraki_h}.html">'
                 f'<small>Sonraki hafta · {sonraki_h}. Hafta →</small><strong>{e(ders_haftalari[sonraki_h])}</strong></a>'
-                if sonraki_h else '<span></span>'
+                if sonraki_h else '<span class="hgecis-kart bos"></span>'
             )
             hafta_alt_gecis = f'      <nav class="ozet-hafta-gecis" aria-label="Önceki ve sonraki hafta">{sol_k}{sag_k}</nav>'
 
@@ -328,7 +329,7 @@ def sayfa_uret(o, dersler, icerikler, hafta_haritasi=None):
     if ozet_son:
         icindekiler_ek += '<a href="#kisaca" class="ic-bag"><span>📌</span>Kısaca</a>'
     icindekiler_cubuk = (
-        '<nav class="ozet-ic-cubuk" aria-label="Bu sayfada">'
+        f'<nav class="ozet-ic-cubuk ders-{o["ders"]}" aria-label="Bu sayfada">'
         f'<div class="kap ic-cubuk-ic"><span class="ic-etiket">Bu sayfada:</span><div class="ic-baglar">{"".join(icindekiler_bag)}{icindekiler_ek}</div></div>'
         '</nav>'
     )
@@ -352,7 +353,7 @@ def sayfa_uret(o, dersler, icerikler, hafta_haritasi=None):
       {bolumler}
       <section class="ozet-bolum" id="ornekler"><h2>Örnekler</h2><ol class="ornekler">{ornekler}</ol></section>
       {kartlar_bolum}
-      {etkinlik_html(o['etkinlikler']) if o.get('etkinlikler') else ''}
+      {etkinlik_html(o['etkinlikler'], ozet_kimlik) if o.get('etkinlikler') else ''}
 {ozet_son}
 {hafta_alt_gecis}
       {f'<section class="ozet-bolum ozet-ilgili"><h2>Bu dersin öteki kaynakları</h2><ul>{ilgili}</ul></section>' if ilgili else ''}
