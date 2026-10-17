@@ -194,62 +194,174 @@ def etkinlik_html(liste):
             f'<ol class="etk-liste">{"".join(parca)}</ol></section>')
 
 
-def sayfa_uret(o, dersler, icerikler):
+def kartlar_html(o):
+    """Eşleştirme çiftleri, boşluk doldurma ve örneklerden otomatik etkileşimli kavram kartları (flashcard) üretir."""
+    kartlar = []
+    gorulen = set()
+    for x in o.get('etkinlikler', []):
+        if x.get('tur') == 'eslestir':
+            for sol, sag in x.get('ciftler', []):
+                if sol and sag and sol not in gorulen:
+                    gorulen.add(sol)
+                    kartlar.append((e(sol), e(sag)))
+    for x in o.get('etkinlikler', []):
+        if x.get('tur') == 'bosluk' and len(kartlar) < 8:
+            for c in x.get('cumleler', []):
+                cev = c.get('cevap', '')
+                met = c.get('metin', '')
+                if cev and met and cev not in gorulen and len(kartlar) < 8:
+                    gorulen.add(cev)
+                    kartlar.append((e(met.replace('___', '……')), f'<b>{e(cev)}</b>'))
+    for x in o.get('ornekler', []):
+        if len(kartlar) >= 8:
+            break
+        s, c = x.get('soru', ''), x.get('cevap', '')
+        if s and c and s not in gorulen:
+            gorulen.add(s)
+            kartlar.append((e(s), e(c)))
+    if not kartlar:
+        return ''
+    veri = ''.join(
+        f'<div class="fkart-oge" data-on="{html.escape(on, quote=True)}" data-arka="{html.escape(arka, quote=True)}"></div>'
+        for on, arka in kartlar
+    )
+    ilk_on, ilk_arka = kartlar[0]
+    return (
+        '<section class="ozet-bolum ozet-kartlar-bolum" id="kartlar">'
+        '<div class="etk-bas"><h2>Kavram Kartları</h2><p class="fkart-sayac"><b>1</b> / ' + str(len(kartlar)) + '</p>'
+        '<button type="button" class="dugme fkart-karistir">🔀 Karıştır</button></div>'
+        '<p class="etk-aciklama">Karta dokunarak arka yüzündeki açıklamayı görün; yön tuşlarıyla kartlar arasında geçiş yapın.</p>'
+        '<div class="fkart-sahne">'
+        '<button type="button" class="fkart" aria-label="Kartı çevir">'
+        f'<span class="fkart-yuz fkart-on"><small class="fkart-etiket">Kavram / Soru · Çevirmek için dokunun ↻</small><span class="fkart-metin">{ilk_on}</span></span>'
+        f'<span class="fkart-yuz fkart-arka"><small class="fkart-etiket">Açıklama / Cevap ↻</small><span class="fkart-metin">{ilk_arka}</span></span>'
+        '</button>'
+        '<div class="fkart-alt">'
+        '<button type="button" class="dugme fkart-onceki">← Önceki kart</button>'
+        '<div class="fkart-noktalar" role="tablist" aria-label="Kart seçimi"></div>'
+        '<button type="button" class="dugme fkart-sonraki">Sonraki kart →</button>'
+        '</div>'
+        f'<div class="fkart-veri" hidden>{veri}</div>'
+        '</div></section>'
+    )
+
+
+def sayfa_uret(o, dersler, icerikler, hafta_haritasi=None):
     ad = dersler['dersler'][o['ders']]
     dosya = f'{o["sinif"]}-{o["ders"]}-hafta-{o["hafta"]}.html'
+    ozet_kimlik = f'{o["sinif"]}-{o["ders"]}-{o["hafta"]}'
     baglar = [i for i in icerikler if i.get('sinif') == o['sinif'] and i.get('ders') == o['ders'] and i.get('tur') != 'Konu anlatımı']
     ilgili = ''.join(
         f'<li><a href="/{i.get("hazirla") or i.get("goruntule") or i.get("dosya") or ""}">{e(i["baslik"])}</a> <span>{e(i["tur"])}</span></li>'
         for i in baglar if i.get('hazirla') or i.get('goruntule') or i.get('dosya'))   # günlük plan: adların yazıldığı hazırlama sayfası
     bolumler = ''
+    icindekiler_bag = []
     for no, b in enumerate(o['bolumler'], 1):
         # Metin ve tablo solda; görsel ve kutular yanda (geniş ekranda; dar ekranda alt alta)
-        kutular = ([b['kutu']] if b.get('kutu') else []) + b.get('kutular', [])
-        yan = (f'<figure class="ozet-gorsel">{b["gorsel"]}</figure>' if b.get('gorsel') else '') + ''.join(kutu_html(k) for k in kutular)
+        k_tek = [b['kutu']] if b.get('kutu') else []
+        k_cok = [k for k in b.get('kutular', []) if k not in k_tek]
+        kutular = k_tek + k_cok
+        gorsel_html = (
+            f'<figure class="ozet-gorsel" tabindex="0" role="button" aria-label="Görseli tam ekran büyüt">'
+            f'{b["gorsel"]}<figcaption class="gorsel-ipucu">🔍 Büyütmek için dokunun</figcaption></figure>'
+            if b.get('gorsel') else ''
+        )
+        yan = gorsel_html + ''.join(kutu_html(k) for k in kutular)
         metin = paragraflar(b.get('metin')) + tablo(b.get('tablo'))
         baslik = e(b['baslik'])
+        icindekiler_bag.append(f'<a href="#bolum-{no}" class="ic-bag"><span>{no}</span>{baslik}</a>')
         if '<' in baslik:   # h2 esnek kutu: kök/Arapça öğesi ayrı sütun olup 12px aralıkla kopmasın, başlık tek metin gibi kırılsın
             baslik = f'<span>{baslik}</span>'
-        bolumler += (f'<section class="ozet-bolum konu{" yanli-bolum" if yan and metin else ""}"><h2 data-no="{no}">{baslik}</h2>'
+        bolumler += (f'<section class="ozet-bolum konu{" yanli-bolum" if yan and metin else ""}" id="bolum-{no}"><h2 data-no="{no}">{baslik}</h2>'
                      f'<div class="bolum-govde"><div class="bolum-metin">{metin}</div>'
                      + (f'<div class="bolum-yan">{yan}</div>' if yan else '') + '</div></section>')
     ornekler = ''.join(
         f'<li class="ornek"><p class="ornek-soru"><span class="ornek-no">Örnek {n}</span>{e(x["soru"])}</p>'
-        + (f'<figure class="ozet-gorsel">{x["gorsel"]}</figure>' if x.get('gorsel') else '')
+        + (f'<figure class="ozet-gorsel" tabindex="0" role="button" aria-label="Görseli tam ekran büyüt">{x["gorsel"]}<figcaption class="gorsel-ipucu">🔍 Büyütmek için dokunun</figcaption></figure>' if x.get('gorsel') else '')
         + f'<details><summary>Cevabı göster</summary><p>{e(x["cevap"])}</p></details></li>'
         for n, x in enumerate(o['ornekler'], 1))
+    kartlar_bolum = kartlar_html(o)
     ozet = ''.join(f'<li>{e(x)}</li>' for x in o.get('ozet', []))
-    ozet_son = f'      <section class="ozet-bolum ozet-son"><h2>Kısaca</h2><ul class="kisaca">{ozet}</ul></section>' if ozet else ''
+    ozet_son = f'      <section class="ozet-bolum ozet-son" id="kisaca"><h2>Kısaca</h2><ul class="kisaca">{ozet}</ul></section>' if ozet else ''
     ciktilar = ''.join(f'<li>{e(c)}</li>' for c in o['ciktilar'])
     ck = next((i for i in icerikler if i.get('tur') == 'Çalışma kâğıdı' and i.get('sinif') == o['sinif']
                and i.get('ders') == o['ders'] and i.get('hafta') == o['hafta']), None)
     ck_dugme = f'<a class="dugme" href="/{ck["goruntule"]}">Çalışma kâğıdı</a>' if ck else ''
     if o['ders'] == 'arapca' and o['sinif'] in (5, 6):
         ck_dugme += f'<a class="dugme" href="/arapca.html?s={o["sinif"]}">Harf ve kelime çalış</a>'
-    govde = f'''  <section class="sayfa-bas ozet-bas ders-{o["ders"]}">
+
+    # Hafta seçici şerit ve önceki/sonraki hafta kartları
+    ders_haftalari = (hafta_haritasi or {}).get((o['sinif'], o['ders']), {})
+    hafta_serit = ''
+    hafta_alt_gecis = ''
+    if ders_haftalari:
+        haplar = ''.join(
+            f'<a href="/ozet/{o["sinif"]}-{o["ders"]}-hafta-{h}.html" '
+            f'class="hafta-hap{" etkin" if h == o["hafta"] else ""}" '
+            f'data-ozet-id="{o["sinif"]}-{o["ders"]}-{h}" '
+            + ('aria-current="page" ' if h == o["hafta"] else '')
+            + f'title="{h}. Hafta: {html.escape(ders_haftalari[h], quote=True)}">'
+            f'<span>{h}. Hafta</span></a>'
+            for h in sorted(ders_haftalari)
+        )
+        hafta_serit = f'<nav class="ozet-haftalar" aria-label="Haftalar"><span class="haftalar-etiket">Haftalar:</span><div class="haftalar-liste">{haplar}</div></nav>'
+        onceki_h = o['hafta'] - 1 if (o['hafta'] - 1) in ders_haftalari else None
+        sonraki_h = o['hafta'] + 1 if (o['hafta'] + 1) in ders_haftalari else None
+        if onceki_h or sonraki_h:
+            sol_k = (
+                f'<a class="hgecis-kart onceki" href="/ozet/{o["sinif"]}-{o["ders"]}-hafta-{onceki_h}.html">'
+                f'<small>← Önceki hafta · {onceki_h}. Hafta</small><strong>{e(ders_haftalari[onceki_h])}</strong></a>'
+                if onceki_h else '<span></span>'
+            )
+            sag_k = (
+                f'<a class="hgecis-kart sonraki" href="/ozet/{o["sinif"]}-{o["ders"]}-hafta-{sonraki_h}.html">'
+                f'<small>Sonraki hafta · {sonraki_h}. Hafta →</small><strong>{e(ders_haftalari[sonraki_h])}</strong></a>'
+                if sonraki_h else '<span></span>'
+            )
+            hafta_alt_gecis = f'      <nav class="ozet-hafta-gecis" aria-label="Önceki ve sonraki hafta">{sol_k}{sag_k}</nav>'
+
+    icindekiler_ek = '<a href="#ornekler" class="ic-bag"><span>★</span>Örnekler</a>'
+    if kartlar_bolum:
+        icindekiler_ek += '<a href="#kartlar" class="ic-bag"><span>🃏</span>Kartlar</a>'
+    if o.get('etkinlikler'):
+        icindekiler_ek += '<a href="#etkinlikler" class="ic-bag"><span>✓</span>Etkinlikler</a>'
+    if ozet_son:
+        icindekiler_ek += '<a href="#kisaca" class="ic-bag"><span>📌</span>Kısaca</a>'
+    icindekiler_cubuk = (
+        '<nav class="ozet-ic-cubuk" aria-label="Bu sayfada">'
+        f'<div class="kap ic-cubuk-ic"><span class="ic-etiket">Bu sayfada:</span><div class="ic-baglar">{"".join(icindekiler_bag)}{icindekiler_ek}</div></div>'
+        '</nav>'
+    )
+
+    govde = f'''  <div class="okuma-cubuk" aria-hidden="true"><i id="okuma-ilerleme"></i></div>
+  <section class="sayfa-bas ozet-bas ders-{o["ders"]}" data-ozet-kimlik="{ozet_kimlik}">
     <div class="kap">
       <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/ogrenci.html">Öğrenci</a><span aria-hidden="true">/</span><a href="/ogrenci.html?sinif={o["sinif"]}">{o["sinif"]}. sınıf</a><span aria-hidden="true">/</span><a href="/ogrenci.html?sinif={o["sinif"]}&amp;ders={o["ders"]}">{e(ad)}</a><span aria-hidden="true">/</span><span>{o["hafta"]}. hafta</span></nav>
+      {hafta_serit}
       <p class="ust-baslik">{o["sinif"]}. sınıf · {e(ad)} · {o["hafta"]}. hafta ({e(o["tarih"])})</p>
       <h1>{e(o["konu"])}</h1>
       <p>{e(o["unite"])} teması · Konu özeti</p>
-      <div class="g-dugmeler y-ust"><button class="dugme ana" type="button" onclick="window.kalemAc &amp;&amp; window.kalemAc()"><span aria-hidden="true">✎</span>Kalemle yaz</button><button class="dugme" type="button" onclick="document.querySelectorAll('.ornek details').forEach(d=&gt;d.open=!d.open)">Bütün cevapları aç/kapat</button>{'<a class="dugme" href="#etkinlikler">Etkinlikler</a>' if o.get('etkinlikler') else ''}{ck_dugme}</div>
+      <div class="g-dugmeler y-ust"><button class="dugme ana" type="button" onclick="window.kalemAc &amp;&amp; window.kalemAc()"><span aria-hidden="true">✎</span>Kalemle yaz</button><button class="dugme" type="button" onclick="window.ozetSunumAc &amp;&amp; window.ozetSunumAc()"><span aria-hidden="true">🖥️</span>Sunum modu</button><button class="dugme" type="button" onclick="window.ozetYazdir ? window.ozetYazdir() : window.print()"><span aria-hidden="true">🖨️</span>Yazdır / PDF</button><button class="dugme" type="button" onclick="document.querySelectorAll('.ornek details').forEach(d=&gt;d.open=!d.open)">Bütün cevapları aç/kapat</button>{'<a class="dugme" href="#kartlar">🃏 Kavram kartları</a>' if kartlar_bolum else ''}{'<a class="dugme" href="#etkinlikler">Etkinlikler</a>' if o.get('etkinlikler') else ''}{ck_dugme}</div>
     </div>
   </section>
-  <article class="bolum ozet ders-{o["ders"]}">
+  {icindekiler_cubuk}
+  <article class="bolum ozet ders-{o["ders"]}" data-ozet-kimlik="{ozet_kimlik}">
     <div class="kap ozet-ic">
       <div class="ozet-ust"><aside class="ozet-cikti"><strong>Öğrenme çıktısı</strong><ul>{ciktilar}</ul></aside>
       <div class="ozet-giris-kart"><span class="giris-etiket">Bu hafta</span><p class="ozet-giris">{e(o["giris"])}</p></div></div>
       {bolumler}
-      <section class="ozet-bolum"><h2>Örnekler</h2><ol class="ornekler">{ornekler}</ol></section>
+      <section class="ozet-bolum" id="ornekler"><h2>Örnekler</h2><ol class="ornekler">{ornekler}</ol></section>
+      {kartlar_bolum}
       {etkinlik_html(o['etkinlikler']) if o.get('etkinlikler') else ''}
 {ozet_son}
+{hafta_alt_gecis}
       {f'<section class="ozet-bolum ozet-ilgili"><h2>Bu dersin öteki kaynakları</h2><ul>{ilgili}</ul></section>' if ilgili else ''}
     </div>
   </article>'''
     baslik = f'{o["sinif"]}. Sınıf {ad} {o["hafta"]}. Hafta: {o["konu"]}'
     aciklama = f'{o["sinif"]}. sınıf {ad} {o["hafta"]}. hafta konu özeti: {o["konu"]}. Çözümlü örnekler ve cevaplar.'
     (PUBLIC / 'ozet').mkdir(exist_ok=True)
-    betik = ('etkinlik.js',) if o.get('etkinlikler') else ()
+    betik = ('etkinlik.js',)
     (PUBLIC / 'ozet' / dosya).write_text(_sayfa.sayfa(f'ozet/{dosya}', baslik, aciklama, govde, betik), encoding='utf-8')
     return {'sinif': o['sinif'], 'ders': o['ders'], 'tur': 'Konu anlatımı', 'kitle': 'ogrenci', 'baslik': baslik,
             'aciklama': f'{o["unite"]}: {o["konu"]}. Konu özeti, {len(o["ornekler"])} örnek ve cevapları' + (f', {len(o["etkinlikler"])} etkileşimli etkinlik' if o.get('etkinlikler') else '') + '; akıllı tahtada kalemle yazılabilir.',
@@ -261,7 +373,11 @@ def main():
     dersler = json.loads((PUBLIC / 'veri' / 'dersler.json').read_text(encoding='utf-8'))
     veri = json.loads((PUBLIC / 'veri' / 'icerikler.json').read_text(encoding='utf-8'))
     icerikler = [i for i in veri['icerikler'] if i.get('tur') != 'Konu anlatımı' or not str(i.get('goruntule', '')).startswith('ozet/')]
-    yeni = [sayfa_uret(json.loads(f.read_text(encoding='utf-8')), dersler, icerikler) for f in sorted((ARACLAR / 'ozetler').glob('*.json'))]
+    tum_dosyalar = [json.loads(f.read_text(encoding='utf-8')) for f in sorted((ARACLAR / 'ozetler').glob('*.json'))]
+    hafta_haritasi = {}
+    for o in tum_dosyalar:
+        hafta_haritasi.setdefault((o['sinif'], o['ders']), {})[o['hafta']] = o['konu']
+    yeni = [sayfa_uret(o, dersler, icerikler, hafta_haritasi) for o in tum_dosyalar]
     veri['icerikler'] = icerikler + yeni
     (PUBLIC / 'veri' / 'icerikler.json').write_text(json.dumps(veri, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
     harita = (PUBLIC / 'sitemap.xml').read_text(encoding='utf-8')
@@ -273,3 +389,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

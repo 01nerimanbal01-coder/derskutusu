@@ -1,103 +1,120 @@
-"""6. sınıf Temel Dinî Bilgiler (İslam 1), 2. hafta: Niçin inanıyorum?
+# 6. Sınıf Temel Dinî Bilgiler 2. Hafta görsel modülü
 
-Görseller yalnız MEB 6. sınıf Temel Dinî Bilgiler (İslam 1) ders kitabındaki bilgilerle çizilir (kitap s. 21-28).
-Renk anlamı: mavi = inanç esasları, yeşil = salih amel ve mümin, turuncu = imanın kökü ve münafık,
-gri = kâfir ve hadisteki uyarı.
-"""
-from ozet_gorsel import svg
-
-RENK = {  # (dolgu, çerçeve, yazı)
-    'turuncu': ('g-ta', 'g-ts', 'g-tf'),
-    'mavi': ('g-ma', 'g-ms', 'g-mf'),
-    'yesil': ('g-ya', 'g-ys', 'g-yf'),
+GORSELLER = {
+    "Kur’an-ı Kerim’i Okumak, Anlamak ve Yaşamak": (
+        '<svg viewBox="0 0 700 220" role="img" aria-label="Kur\'an-ı Kerim\'le kurulan üç aşamalı bağ">'
+        '<rect x="14" y="24" width="204" height="172" rx="14" class="g-ma"/>'
+        '<rect x="14" y="24" width="204" height="172" rx="14" class="g-ms" stroke-width="1.8"/>'
+        '<rect x="30" y="38" width="172" height="30" rx="8" class="g-mf"/>'
+        '<text x="116" y="58" text-anchor="middle" font-size="13.5" font-weight="800" class="g-b">1. OKUMAK</text>'
+        '<text x="116" y="96" text-anchor="middle" font-size="12.5" font-weight="700" class="g-y">Lafzını usulüne uygun</text>'
+        '<text x="116" y="118" text-anchor="middle" font-size="12.5" font-weight="700" class="g-y">okuyarak ibadet etmek</text>'
+        '<text x="116" y="156" text-anchor="middle" font-size="11.5" class="g-s">Öğrenen ve öğreten hayırlıdır</text>'
+        '<line x1="218" y1="110" x2="248" y2="110" class="g-c" stroke-width="2.4" stroke-linecap="round"/>'
+        '<rect x="248" y="24" width="204" height="172" rx="14" class="g-ta"/>'
+        '<rect x="248" y="24" width="204" height="172" rx="14" class="g-ts" stroke-width="1.8"/>'
+        '<rect x="264" y="38" width="172" height="30" rx="8" class="g-tf"/>'
+        '<text x="350" y="58" text-anchor="middle" font-size="13.5" font-weight="800" class="g-b">2. ANLAMAK</text>'
+        '<text x="350" y="96" text-anchor="middle" font-size="12.5" font-weight="700" class="g-y">Ayetler üzerinde düşünmek</text>'
+        '<text x="350" y="118" text-anchor="middle" font-size="12.5" font-weight="700" class="g-y">ve ilahi öğütleri kavramak</text>'
+        '<text x="350" y="156" text-anchor="middle" font-size="11.5" class="g-s">Sâd, 38/29: Düşünüp öğüt alma</text>'
+        '<line x1="452" y1="110" x2="482" y2="110" class="g-c" stroke-width="2.4" stroke-linecap="round"/>'
+        '<rect x="482" y="24" width="204" height="172" rx="14" class="g-ya"/>'
+        '<rect x="482" y="24" width="204" height="172" rx="14" class="g-ys" stroke-width="1.8"/>'
+        '<rect x="498" y="38" width="172" height="30" rx="8" class="g-yf"/>'
+        '<text x="584" y="58" text-anchor="middle" font-size="13.5" font-weight="800" class="g-b">3. YAŞAMAK</text>'
+        '<text x="584" y="96" text-anchor="middle" font-size="12.5" font-weight="700" class="g-y">İlkeleri sünnet rehberliğinde</text>'
+        '<text x="584" y="118" text-anchor="middle" font-size="12.5" font-weight="700" class="g-y">günlük davranışa dönüştürmek</text>'
+        '<text x="584" y="156" text-anchor="middle" font-size="11.5" class="g-s">Yûnus, 10/108: Doğru yola uyma</text>'
+        '</svg>'
+    ),
+    "Sünnetin İbadetleri ve Ayetleri Açıklayıcı Rolü": (
+        '<svg viewBox="0 0 700 230" role="img" aria-label="Sünnetin ibadetleri ve kapalı ifadeleri açıklaması">'
+        '<rect x="14" y="14" width="672" height="40" rx="10" class="g-mf"/>'
+        '<text x="350" y="39" text-anchor="middle" font-size="14" font-weight="800" class="g-b">KUR\'AN\'DAKİ GENEL EMİRLERİN SÜNNET İLE AÇIKLANMASI (Nahl, 16/44)</text>'
+        '<rect x="14" y="68" width="158" height="146" rx="12" class="g-ma"/>'
+        '<rect x="14" y="68" width="158" height="146" rx="12" class="g-ms" stroke-width="1.6"/>'
+        '<text x="93" y="96" text-anchor="middle" font-size="13.5" font-weight="800" class="g-mf">NAMAZ</text>'
+        '<text x="93" y="124" text-anchor="middle" font-size="12" class="g-y">Vakitleri, rekât</text>'
+        '<text x="93" y="144" text-anchor="middle" font-size="12" class="g-y">sayıları ve kılınışı</text>'
+        '<text x="93" y="182" text-anchor="middle" font-size="11" class="g-s">"Beni nasıl namaz</text>'
+        '<text x="93" y="198" text-anchor="middle" font-size="11" class="g-s">kılıyor gördüyseniz…"</text>'
+        '<rect x="185" y="68" width="158" height="146" rx="12" class="g-ta"/>'
+        '<rect x="185" y="68" width="158" height="146" rx="12" class="g-ts" stroke-width="1.6"/>'
+        '<text x="264" y="96" text-anchor="middle" font-size="13.5" font-weight="800" class="g-tf">ZEKÂT</text>'
+        '<text x="264" y="124" text-anchor="middle" font-size="12" class="g-y">Hangi mallardan</text>'
+        '<text x="264" y="144" text-anchor="middle" font-size="12" class="g-y">ne miktarda verileceği</text>'
+        '<text x="264" y="182" text-anchor="middle" font-size="11" class="g-s">Malların cinsi ve</text>'
+        '<text x="264" y="198" text-anchor="middle" font-size="11" class="g-s">ölçülerinin beyanı</text>'
+        '<rect x="356" y="68" width="158" height="146" rx="12" class="g-ya"/>'
+        '<rect x="356" y="68" width="158" height="146" rx="12" class="g-ys" stroke-width="1.6"/>'
+        '<text x="435" y="96" text-anchor="middle" font-size="13.5" font-weight="800" class="g-yf">HAC</text>'
+        '<text x="435" y="124" text-anchor="middle" font-size="12" class="g-y">Zamanı, şartları ve</text>'
+        '<text x="435" y="144" text-anchor="middle" font-size="12" class="g-y">uygulanış sırası</text>'
+        '<text x="435" y="182" text-anchor="middle" font-size="11" class="g-s">"Hac ibadetlerini</text>'
+        '<text x="435" y="198" text-anchor="middle" font-size="11" class="g-s">benden öğrenin."</text>'
+        '<rect x="528" y="68" width="158" height="146" rx="12" class="g-oa"/>'
+        '<rect x="528" y="68" width="158" height="146" rx="12" class="g-os" stroke-width="1.6"/>'
+        '<text x="607" y="96" text-anchor="middle" font-size="13.5" font-weight="800" class="g-of">ORTA NAMAZ</text>'
+        '<text x="607" y="124" text-anchor="middle" font-size="12" class="g-y">Bakara, 2/238\'deki</text>'
+        '<text x="607" y="144" text-anchor="middle" font-size="12" class="g-y">kapalı ifadenin açıklaması</text>'
+        '<text x="607" y="182" text-anchor="middle" font-size="11" font-weight="700" class="g-of">"Orta namaz,</text>'
+        '<text x="607" y="198" text-anchor="middle" font-size="11" font-weight="700" class="g-of">ikindi namazıdır."</text>'
+        '</svg>'
+    ),
+    "Hz. Peygamber’in Güzel Ahlakı ve Örnek Davranışları": (
+        '<svg viewBox="0 0 700 220" role="img" aria-label="Peygamberimizin örnek ahlaki davranışları">'
+        '<rect x="190" y="14" width="320" height="40" rx="20" class="g-yf"/>'
+        '<text x="350" y="39" text-anchor="middle" font-size="14" font-weight="800" class="g-b">ÜSVE-İ HASENE · EN GÜZEL ÖRNEK (Ahzâb, 33/21)</text>'
+        '<rect x="14" y="70" width="212" height="62" rx="10" class="g-ma"/>'
+        '<text x="120" y="96" text-anchor="middle" font-size="13" font-weight="800" class="g-mf">Besmele ve Temizlik</text>'
+        '<text x="120" y="116" text-anchor="middle" font-size="11.5" class="g-y">İşe besmeleyle başlama, temizlik</text>'
+        '<rect x="244" y="70" width="212" height="62" rx="10" class="g-ta"/>'
+        '<text x="350" y="96" text-anchor="middle" font-size="13" font-weight="800" class="g-tf">Saygı ve Şefkat</text>'
+        '<text x="350" y="116" text-anchor="middle" font-size="11.5" class="g-y">Büyüklere saygı, küçüklere şefkat</text>'
+        '<rect x="474" y="70" width="212" height="62" rx="10" class="g-ya"/>'
+        '<text x="580" y="96" text-anchor="middle" font-size="13" font-weight="800" class="g-yf">Anne Babaya İyilik</text>'
+        '<text x="580" y="116" text-anchor="middle" font-size="11.5" class="g-y">Aileye destek ve selamlaşma</text>'
+        '<rect x="14" y="146" width="212" height="62" rx="10" class="g-oa"/>'
+        '<text x="120" y="172" text-anchor="middle" font-size="13" font-weight="800" class="g-of">İsraftan Kaçınma</text>'
+        '<text x="120" y="192" text-anchor="middle" font-size="11.5" class="g-y">Nimetleri ve zamanı ölçülü kullanma</text>'
+        '<rect x="244" y="146" width="212" height="62" rx="10" class="g-ma"/>'
+        '<text x="350" y="172" text-anchor="middle" font-size="13" font-weight="800" class="g-mf">Adalet ve Yardım</text>'
+        '<text x="350" y="192" text-anchor="middle" font-size="11.5" class="g-y">Nahl, 16/90: Adalet ve iyilik</text>'
+        '<rect x="474" y="146" width="212" height="62" rx="10" class="g-ya"/>'
+        '<text x="580" y="172" text-anchor="middle" font-size="13" font-weight="800" class="g-yf">Doğruluk ve Güven</text>'
+        '<text x="580" y="192" text-anchor="middle" font-size="11.5" class="g-y">Doğruluk iyiliğe, iyilik cennete götürür</text>'
+        '</svg>'
+    ),
+    "Günlük Davranışların İnanç, İbadet, Ahlak ve Sosyal Hayat Alanlarına Yansıması": (
+        '<svg viewBox="0 0 700 220" role="img" aria-label="Günlük davranışların dört alana göre sınıflandırılması">'
+        '<rect x="14" y="14" width="326" height="90" rx="12" class="g-ma"/>'
+        '<rect x="14" y="14" width="326" height="90" rx="12" class="g-ms" stroke-width="1.6"/>'
+        '<text x="177" y="42" text-anchor="middle" font-size="14" font-weight="800" class="g-mf">1. İNANÇ ALANI</text>'
+        '<text x="177" y="66" text-anchor="middle" font-size="12.5" class="g-y">Allah\'ın (cc) her zaman bizi gördüğünü</text>'
+        '<text x="177" y="86" text-anchor="middle" font-size="12.5" class="g-y">bilerek hareket etmek ve besmele çekmek</text>'
+        '<rect x="360" y="14" width="326" height="90" rx="12" class="g-ya"/>'
+        '<rect x="360" y="14" width="326" height="90" rx="12" class="g-ys" stroke-width="1.6"/>'
+        '<text x="523" y="42" text-anchor="middle" font-size="14" font-weight="800" class="g-yf">2. İBADET ALANI</text>'
+        '<text x="523" y="66" text-anchor="middle" font-size="12.5" class="g-y">Kur\'an okumak, vakti gelince abdest alıp</text>'
+        '<text x="523" y="86" text-anchor="middle" font-size="12.5" class="g-y">namaz kılmak ve Rabbimize dua etmek</text>'
+        '<rect x="14" y="116" width="326" height="90" rx="12" class="g-ta"/>'
+        '<rect x="14" y="116" width="326" height="90" rx="12" class="g-ts" stroke-width="1.6"/>'
+        '<text x="177" y="144" text-anchor="middle" font-size="14" font-weight="800" class="g-tf">3. AHLAK ALANI</text>'
+        '<text x="177" y="168" text-anchor="middle" font-size="12.5" class="g-y">Yalandan uzak durmak, doğru sözlü olmak,</text>'
+        '<text x="177" y="188" text-anchor="middle" font-size="12.5" class="g-y">nazik konuşmak ve zamanı verimli kullanmak</text>'
+        '<rect x="360" y="116" width="326" height="90" rx="12" class="g-oa"/>'
+        '<rect x="360" y="116" width="326" height="90" rx="12" class="g-os" stroke-width="1.6"/>'
+        '<text x="523" y="144" text-anchor="middle" font-size="14" font-weight="800" class="g-of">4. SOSYAL HAYAT ALANI</text>'
+        '<text x="523" y="168" text-anchor="middle" font-size="12.5" class="g-y">Komşulara ve arkadaşlara selam vermek,</text>'
+        '<text x="523" y="188" text-anchor="middle" font-size="12.5" class="g-y">anne babaya destek olmak, kardeşle ilgilenmek</text>'
+        '</svg>'
+    ),
 }
 
 
-def _kutu(x, y, w, h, renk, rx=12):
-    a, s, _ = RENK[renk]
-    return (f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" class="{a}"/>'
-            f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" class="{s}" stroke-width="2"/>')
-
-
-def _gri(x, y, w, h, rx=12):
-    return (f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" class="g-z"/>'
-            f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" class="g-c" stroke-width="1.5"/>')
-
-
-def _yazi(x, y, metin, boy=12.5, sinif='g-y', kalin=False, hiza='middle'):
-    k = ' font-weight="800"' if kalin else ''
-    return f'<text x="{x}" y="{y}" text-anchor="{hiza}" font-size="{boy}"{k} class="{sinif}">{metin}</text>'
-
-
-def esaslar():
-    """Kitap s. 22-23: Amentü duası ve Bilgi Görseli 1.1, İslam’ın altı inanç esası."""
-    ic = _yazi(236, 20, 'Amentü’de sayılan inanç esasları', 12.5, 'g-s', kalin=True)
-    ad = ['1. Allah’a', '2. Meleklere', '3. Kitaplara', '4. Peygamberlere', '5. Ahiret gününe', '6. Kader ve kazaya']
-    for i, a in enumerate(ad):
-        x = 6 + (i % 3) * 156
-        y = 32 + (i // 3) * 64
-        ic += _kutu(x, y, 148, 54, 'mavi')
-        ic += _yazi(x + 74, y + 24, a, 12.5, 'g-mf', kalin=True)
-        ic += _yazi(x + 74, y + 43, 'iman', 12.5, 'g-mf')
-    ic += _kutu(6, 166, 460, 46, 'turuncu', rx=10)
-    ic += _yazi(236, 185, 'Esaslar ayrılmaz bir bütündür.', 12.5, 'g-tf', kalin=True)
-    ic += _yazi(236, 203, 'Birine inanmamak imanın bütünlüğünü bozar.', 12, 'g-tf')
-    return svg(472, 220, ic, 'Amentü’de sayılan altı inanç esası: 1. Allah’a iman, 2. meleklere iman, 3. kitaplara iman, '
-               '4. peygamberlere iman, 5. ahiret gününe iman, 6. kader ve kazaya iman. Esaslar ayrılmaz bir bütündür; '
-               'birine inanmamak imanın bütünlüğünü bozar.')
-
-
-def agac():
-    """Kitap s. 25: iman ile amel bir ağacın kökü ve dalları gibidir."""
-    ic = '<rect x="222" y="118" width="28" height="72" rx="4" class="g-ta"/>'
-    ic += '<rect x="222" y="118" width="28" height="72" rx="4" class="g-ts" stroke-width="2"/>'
-    ic += '<ellipse cx="236" cy="70" rx="226" ry="62" class="g-ya"/>'
-    ic += '<ellipse cx="236" cy="70" rx="226" ry="62" class="g-ys" stroke-width="2"/>'
-    ic += _yazi(236, 34, 'Dallar: salih ameller', 12.5, 'g-yf', kalin=True)
-    for x, y, a in ((120, 64, 'Dürüst olmak'), (236, 64, 'Sözünü tutmak'), (360, 64, 'Yardımsever olmak'),
-                    (160, 94, 'Kötülükten sakınmak'), (322, 94, 'İhtiyaç sahibine vermek')):
-        ic += _yazi(x, y, a, 12.5, 'g-y', kalin=True)
-    ic += '<line x1="40" y1="190" x2="432" y2="190" class="g-c" stroke-width="2"/>'
-    for x2 in (196, 236, 276):
-        ic += f'<line x1="236" y1="190" x2="{x2}" y2="206" class="g-ts" stroke-width="2"/>'
-    ic += _yazi(210, 160, 'Kök sağlam oldukça', 12.5, 'g-s', hiza='end')
-    ic += _yazi(262, 160, 'dallar canlı olur', 12.5, 'g-s', hiza='start')
-    ic += _kutu(96, 206, 280, 46, 'turuncu', rx=10)
-    ic += _yazi(236, 225, 'Kök: iman', 12.5, 'g-tf', kalin=True)
-    ic += _yazi(236, 243, 'kalp ile tasdik, dil ile söyleme', 12, 'g-tf')
-    return svg(472, 258, ic, 'İman ile amel bir ağacın kökü ve dalları gibidir. Kök imandır: kalp ile tasdik, dil ile söyleme. '
-               'Dallar salih amellerdir: dürüst olmak, sözünü tutmak, yardımsever olmak, kötülükten sakınmak, ihtiyaç '
-               'sahibine vermek. Kök sağlam oldukça dallar canlı olur.')
-
-
-def insanlar():
-    """Kitap s. 27, Bilgi Görseli 1.2: iman bakımından insanlar; münafığın alameti hadisi."""
-    grup = [('Mümin', 'yesil', 'inanır', 'söyler'),
-            ('Kâfir', None, 'inkâr eder', 'açıkça reddeder'),
-            ('Münafık', 'turuncu', 'inanmaz', 'inandığını söyler')]
-    ic = ''
-    for k, (ad, renk, kalp, dil) in enumerate(grup):
-        x = 6 + k * 156
-        f = RENK[renk][2] if renk else 'g-s'
-        ic += _kutu(x, 10, 148, 34, renk, rx=10) if renk else _gri(x, 10, 148, 34, rx=10)
-        ic += _yazi(x + 74, 32, ad, 13, f, kalin=True)
-        ic += _gri(x, 52, 148, 96, rx=10)
-        ic += _yazi(x + 74, 72, 'Kalbiyle', 12, 'g-s')
-        ic += _yazi(x + 74, 90, kalp, 12.5, 'g-y', kalin=True)
-        ic += _yazi(x + 74, 114, 'Diliyle', 12, 'g-s')
-        ic += _yazi(x + 74, 132, dil, 12.5, 'g-y', kalin=True)
-    ic += _kutu(6, 158, 460, 48, 'turuncu', rx=10)
-    ic += _yazi(236, 177, 'Münafığın üç alameti (hadis)', 12.5, 'g-tf', kalin=True)
-    ic += _yazi(236, 196, 'yalan söyler · emanete ihanet eder · sözünde durmaz', 12, 'g-tf')
-    return svg(472, 214, ic, 'İman bakımından insanlar: mümin kalbiyle inanır, diliyle söyler; kâfir kalbiyle inkâr eder, '
-               'diliyle açıkça reddeder; münafık kalbiyle inanmaz, diliyle inandığını söyler. Hadise göre münafığın üç '
-               'alameti: yalan söyler, emanete ihanet eder, sözünde durmaz.')
-
-
 def uygula(o):
-    g = {'Amentü ve altı inanç esası': esaslar(),
-         'İman ve salih amel: kök ile dallar': agac(),
-         'İman bakımından insanlar': insanlar()}
-    for b in o['bolumler']:
-        if b['baslik'] in g:
-            b['gorsel'] = g[b['baslik']]
+    for b in o.get("bolumler", []):
+        g = GORSELLER.get(b.get("baslik"))
+        if g:
+            b["gorsel"] = g
