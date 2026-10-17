@@ -1,340 +1,340 @@
 {
- "ad": "12-matematik-2",
- "sinif": 12,
- "ders": "matematik",
- "ders_adi": "Matematik",
- "hafta": 2,
- "tarih": "21-25 Eylül 2026",
- "yayin_tarihi": "2026-10-16",
- "unite": "SAYILAR VE CEBİR",
- "konu": "Logaritma Fonksiyonu, En Geniş Tanım Kümesi, Grafiği, 10 Tabanında ve Doğal Logaritma",
- "ciktilar": [
-  "12.1.2.1. Logaritma fonksiyonu ile üstel fonksiyonu ilişkilendirerek problemler çözer.",
-  "12.1.2.2. 10 ve e tabanında logaritma fonksiyonunu tanımlayarak problemler çözer."
- ],
- "giris": "Birinci hafta dersimizde tabanı pozitif ve 1'den farklı olan bire bir ve örten f(x) = {us:a|x} üstel fonksiyonunu ve grafiğini incelemiştik. Bu haftaki dersimizde ise üstel fonksiyonun tersi olarak tanımlanan {koyu:logaritma fonksiyonunu}, üstel ve logaritmik eşitliklerin birbirine dönüştürülmesini, logaritma fonksiyonunun {koyu:en geniş tanım kümesini}, y = x doğrusuna göre simetrik olan {koyu:grafiğini}, {koyu:10 tabanında (adi) logaritmayı} ve Euler sayısı (e) tabanındaki {koyu:doğal logaritma fonksiyonunu} (ln x) öğreneceğiz.",
- "ozet": [
-  "a ∈ ℝ⁺ − {1} olmak üzere bire bir ve örten f: ℝ → ℝ⁺, f(x) = {us:a|x} üstel fonksiyonunun tersine {koyu:a tabanında logaritma fonksiyonu} denir ve {us:f|−1}: ℝ⁺ → ℝ, {us:f|−1}(x) = logₐ x şeklinde gösterilir.",
-  "Üstel ve logaritmik ifadeler arasında y = logₐ x ⇔ x = {us:a|y} temel denkliği vardır; dönüşüm yapılırken {koyu:taban daima tabanda kalır}.",
-  "f(x) = log_g(x) h(x) fonksiyonunun gerçek sayılarda tanımlı olabilmesi için {koyu:1. h(x) > 0}, {koyu:2. g(x) > 0} ve {koyu:3. g(x) ≠ 1} koşulları birlikte sağlanmalıdır.",
-  "f(x) = {us:a|x} ile {us:f|−1}(x) = logₐ x fonksiyonlarının grafikleri {koyu:y = x doğrusuna göre simetriktir}; y = logₐ x grafiği (1, 0) noktasından geçer, a > 1 için {koyu:artan}, 0 < a < 1 için {koyu:azalandır}.",
-  "Tabanı 10 olan logaritmaya {koyu:10 tabanında (adi/bayağı) logaritma} denir ve taban yazılmadan log₁₀ x = log x biçiminde gösterilir; logaritmayı İskoç matematikçi {koyu:John Napier} icat etmiş, Osmanlı'da ise {koyu:Gelenbevî İsmail Efendi} tanıtmıştır.",
-  "Yaklaşık değeri 2,71828… olan irrasyonel {koyu:Euler sayısı (e)} tabanındaki logaritmaya {koyu:doğal logaritma} denir ve logₑ x = ln x ile gösterilir (ln e = 1, ln 1 = 0, ln({us:e|k}) = k)."
- ],
- "bolumler": [
-  {
-   "baslik": "Üstel Fonksiyonun Tersi Olarak Logaritma Fonksiyonu",
-   "metin": [
-    "Richter ölçeğine göre deprem enerjisinin (E = {us:10|11,8 + 1,5M}) veya bir çözeltinin hidrojen iyonu derişiminden pH değerinin (pH = −log[{us:H|+}]) hesaplanmasında olduğu gibi, {us:a|y} = x üstel denkleminde bilinmeyen üs y'yi yalnız bırakabilmek için üstel fonksiyonun tersine ihtiyaç duyulur. Bir f: A → B fonksiyonunun tersinin ({us:f|−1}: B → A) fonksiyon olabilmesi için f'nin {koyu:bire bir ve örten} olması gerekir.",
-    "a ∈ ℝ⁺ − {1} olmak üzere f: ℝ → ℝ⁺, f(x) = {us:a|x} üstel fonksiyonu bire bir ve örten olduğundan tersi de bir fonksiyondur. Üstel fonksiyonun tersi olan bu fonksiyona {koyu:tabanı a olan logaritma fonksiyonu} denir ve {us:f|−1}: ℝ⁺ → ℝ, {us:f|−1}(x) = logₐ x biçiminde gösterilir ('logaritma a tabanında x' diye okunur). Logaritmanın tanımı gereğince a > 0, a ≠ 1 ve x > 0 için şu temel denklik geçerlidir: {koyu:y = logₐ x ⇔ x = {us:a|y}}."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Üstel ve Logaritmik Dönüşüm Kuralı",
-    "metin": "y = logₐ x ⇔ x = {us:a|y} dönüşümünde logaritmanın tabanı olan a, üstel ifadede de {koyu:taban} olarak kalır; logaritmanın sonucu olan y ise {koyu:üs (kuvvet)} olur. Örneğin log₂ 32 = 5 ⇔ 32 = {us:2|5} ve log₃({kesir:1|81}) = −4 ⇔ {kesir:1|81} = {us:3|−4}."
-   },
-   "tablo": {
-    "basliklar": [
-     "Üstel Biçim (x = {us:a|y})",
-     "Logaritmik Biçim (y = logₐ x)",
-     "Taban (a)",
-     "Üs / Sonuç (y)"
-    ],
-    "satirlar": [
-     [
-      "{us:10|4} = 10 000",
-      "log₁₀ 10 000 = 4",
-      "10",
-      "4"
-     ],
-     [
-      "{us:2|5} = 32",
-      "log₂ 32 = 5",
-      "2",
-      "5"
-     ],
-     [
-      "{us:5|−2} = {kesir:1|25} = 0,04",
-      "log₅(0,04) = −2",
-      "5",
-      "−2"
-     ],
-     [
-      "{us:({kesir:2|3})|−4} = {kesir:81|16}",
-      "log₂/₃({kesir:81|16}) = −4",
-      "{kesir:2|3}",
-      "−4"
-     ],
-     [
-      "{us:a|1} = a ve {us:a|0} = 1",
-      "logₐ a = 1 ve logₐ 1 = 0",
-      "a",
-      "1 ve 0"
-     ]
-    ]
-   },
-   "gorsel": "<svg viewBox=\"0 0 720 285\" role=\"img\" aria-label=\"Üstel Fonksiyon ve Logaritma Fonksiyonu İlişkisi\">\n    <rect x=\"20\" y=\"16\" width=\"680\" height=\"44\" rx=\"10\" fill=\"#1e3a8a\"/>\n    <text x=\"360\" y=\"44\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#ffffff\">Üstel Fonksiyonun Tersi Olarak Logaritma: y = logₐ x ⇔ x = aʸ</text>\n\n    <rect x=\"30\" y=\"78\" width=\"290\" height=\"190\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"2\"/>\n    <text x=\"175\" y=\"106\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1d4ed8\">Üstel Fonksiyon (f)</text>\n    <text x=\"175\" y=\"135\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e40af\">f : ℝ → ℝ⁺ ,  y = aˣ</text>\n    <text x=\"175\" y=\"165\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e3a8a\">• a &gt; 0 ve a ≠ 1</text>\n    <text x=\"175\" y=\"188\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e3a8a\">• Bire bir ve örten</text>\n    <text x=\"175\" y=\"218\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Örnek: 2⁵ = 32</text>\n    <text x=\"175\" y=\"242\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e3a8a\">(Taban = 2 , Üs = 5)</text>\n\n    <text x=\"360\" y=\"175\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"bold\" fill=\"#0f766e\">⇄</text>\n\n    <rect x=\"400\" y=\"78\" width=\"290\" height=\"190\" rx=\"12\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"2\"/>\n    <text x=\"545\" y=\"106\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">Logaritma Fonksiyonu (f⁻¹)</text>\n    <text x=\"545\" y=\"135\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#166534\">f⁻¹ : ℝ⁺ → ℝ ,  y = logₐ x</text>\n    <text x=\"545\" y=\"165\" text-anchor=\"middle\" font-size=\"12\" fill=\"#14532d\">• Tanım kümesi: ℝ⁺ (x &gt; 0)</text>\n    <text x=\"545\" y=\"188\" text-anchor=\"middle\" font-size=\"12\" fill=\"#14532d\">• Görüntü kümesi: ℝ</text>\n    <text x=\"545\" y=\"218\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Örnek: log₂ 32 = 5</text>\n    <text x=\"545\" y=\"242\" text-anchor=\"middle\" font-size=\"12\" fill=\"#14532d\">(Taban daima tabanda kalır!)</text>\n    </svg>"
-  },
-  {
-   "baslik": "Üstel ve Logaritmik Fonksiyonların Tersini Bulma",
-   "metin": [
-    "Bire bir ve örten bir y = f(x) fonksiyonunun tersi olan {us:f|−1}(x) kuralını bulmak için iki adım izlenir: {koyu:1. Adım:} y = f(x) eşitliğinde üstel veya logaritmik dönüşüm kullanılarak x değişkeni y cinsinden yalnız bırakılır (x = {us:f|−1}(y)). {koyu:2. Adım:} Eşitlikte x yerine {us:f|−1}(x), y yerine x yazılarak kural elde edilir.",
-    "Örneğin f: ℝ → (−1, ∞), f(x) = 2 · {us:5|x−3} − 1 üstel fonksiyonunun tersini bulalım: y = 2 · {us:5|x−3} − 1 eşitliğinde önce −1'i karşıya atıp 2'ye böleriz: {us:5|x−3} = {kesir:y+1|2}. Ardından logaritma tanımını uygularız: x − 3 = log₅({kesir:y+1|2}) ⇒ x = log₅({kesir:y+1|2}) + 3. Son adımda x ile y'yi yer değiştirdiğimizde {us:f|−1}(x) = log₅({kesir:x+1|2}) + 3 bulunur. Benzer şekilde g: (3, ∞) → ℝ, g(x) = log₄(x − 3) + 1 logaritmik fonksiyonu için y − 1 = log₄(x − 3) ⇒ x − 3 = {us:4|y−1} ⇒ {us:g|−1}(x) = {us:4|x−1} + 3 elde edilir."
-   ],
-   "gorsel": "<svg viewBox=\"0 0 720 285\" role=\"img\" aria-label=\"Üstel ve Logaritmik Fonksiyonların Tersini Bulma\">\n    <rect x=\"20\" y=\"16\" width=\"680\" height=\"44\" rx=\"10\" fill=\"#4c1d95\"/>\n    <text x=\"360\" y=\"44\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#ffffff\">Üstel ve Logaritmik Fonksiyonların Tersini (f⁻¹) Bulma Adımları</text>\n\n    <rect x=\"30\" y=\"75\" width=\"315\" height=\"195\" rx=\"12\" fill=\"#f5f3ff\" stroke=\"#8b5cf6\" stroke-width=\"2\"/>\n    <text x=\"187\" y=\"102\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#5b21b6\">Örnek 1: Üstel Fonksiyonun Tersi</text>\n    <text x=\"48\" y=\"130\" font-size=\"13\" font-weight=\"bold\" fill=\"#6d28d9\">f(x) = 2 · 5ˣ⁻³ - 1  ⇒  f⁻¹(x) = ?</text>\n    <text x=\"48\" y=\"158\" font-size=\"12\" fill=\"#4c1d95\">1. y = 2 · 5ˣ⁻³ - 1 yazılır.</text>\n    <text x=\"48\" y=\"182\" font-size=\"12\" fill=\"#4c1d95\">2. (y + 1) / 2 = 5ˣ⁻³ (Üstel terim yalnız kalır)</text>\n    <text x=\"48\" y=\"206\" font-size=\"12\" fill=\"#4c1d95\">3. x - 3 = log₅((y + 1) / 2)</text>\n    <text x=\"48\" y=\"230\" font-size=\"12\" fill=\"#4c1d95\">4. x = log₅((y + 1) / 2) + 3</text>\n    <text x=\"48\" y=\"254\" font-size=\"13\" font-weight=\"bold\" fill=\"#5b21b6\">Sonuç: f⁻¹(x) = log₅((x + 1) / 2) + 3</text>\n\n    <rect x=\"375\" y=\"75\" width=\"315\" height=\"195\" rx=\"12\" fill=\"#fdf2f8\" stroke=\"#ec4899\" stroke-width=\"2\"/>\n    <text x=\"532\" y=\"102\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#9d174d\">Örnek 2: Logaritmik Fonksiyonun Tersi</text>\n    <text x=\"393\" y=\"130\" font-size=\"13\" font-weight=\"bold\" fill=\"#be185d\">f(x) = log₄(x - 3) + 1  ⇒  f⁻¹(x) = ?</text>\n    <text x=\"393\" y=\"158\" font-size=\"12\" fill=\"#831843\">1. y = log₄(x - 3) + 1 yazılır.</text>\n    <text x=\"393\" y=\"182\" font-size=\"12\" fill=\"#831843\">2. y - 1 = log₄(x - 3) (Logaritma yalnız kalır)</text>\n    <text x=\"393\" y=\"206\" font-size=\"12\" fill=\"#831843\">3. x - 3 = 4ʸ⁻¹ (Üstel dönüşüm yapılır)</text>\n    <text x=\"393\" y=\"230\" font-size=\"12\" fill=\"#831843\">4. x = 4ʸ⁻¹ + 3</text>\n    <text x=\"393\" y=\"254\" font-size=\"13\" font-weight=\"bold\" fill=\"#9d174d\">Sonuç: f⁻¹(x) = 4ˣ⁻¹ + 3</text>\n    </svg>"
-  },
-  {
-   "baslik": "Logaritma Fonksiyonunun En Geniş Tanım Kümesi",
-   "metin": [
-    "f: ℝ⁺ → ℝ, f(x) = logₐ x fonksiyonunda logaritmanın tanım kümesi {koyu:pozitif gerçek sayılar} (ℝ⁺) olduğundan sıfırın ve negatif sayıların logaritması gerçek sayılarda tanımsızdır. Genel olarak f(x) = log_g(x) h(x) biçiminde verilen bir fonksiyonun gerçek sayılarda tanımlı olabilmesi için şu {koyu:üç koşul} aynı anda sağlanmalıdır: {koyu:I. h(x) > 0} (logaritması alınan iç ifade pozitif olmalı), {koyu:II. g(x) > 0} (taban pozitif olmalı) ve {koyu:III. g(x) ≠ 1} (taban 1'den farklı olmalı).",
-    "Örneğin f(x) = log_(x−1)(9 − x) fonksiyonunun en geniş tanım kümesi için: 9 − x > 0 ⇒ x < 9, taban için x − 1 > 0 ⇒ x > 1 ve x − 1 ≠ 1 ⇒ x ≠ 2 olmalıdır. Bu üç koşulun kesişimi alındığında en geniş tanım kümesi (1, 9) − {2} bulunur. Eğer f(x) = logₐ({us:x|2} + bx + c) biçimindeki bir fonksiyonun {koyu:her x ∈ ℝ gerçek sayısı için tanımlı} olduğu söylenirse, ikinci dereceden {us:x|2} + bx + c > 0 eşitsizliğinin daima pozitif olması, yani diskriminantının negatif ({koyu:Δ = {us:b|2} − 4ac < 0}) olması gerekir."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "Her Gerçek Sayı İçin Tanımlı Olma Şartı (Δ < 0)",
-    "metin": "a > 0, a ≠ 1 sabit taban olmak üzere f(x) = logₐ(m{us:x|2} + nx + k) fonksiyonunun {koyu:her x ∈ ℝ için tanımlı} olması demek, m{us:x|2} + nx + k > 0 eşitsizliğinin daima sağlanması demektir. Bunun için {koyu:m > 0} ve {koyu:Δ = {us:n|2} − 4mk < 0} olmalıdır."
-   },
-   "gorsel": "<svg viewBox=\"0 0 720 285\" role=\"img\" aria-label=\"Logaritma Fonksiyonunun En Geniş Tanım Kümesi\">\n    <rect x=\"20\" y=\"16\" width=\"680\" height=\"44\" rx=\"10\" fill=\"#991b1b\"/>\n    <text x=\"360\" y=\"44\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#ffffff\">f(x) = log_{g(x)} h(x) Fonksiyonunun En Geniş Tanım Kümesi Şartları</text>\n\n    <rect x=\"25\" y=\"75\" width=\"210\" height=\"105\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n    <text x=\"130\" y=\"102\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#991b1b\">I. İç Kısım Şartı</text>\n    <text x=\"130\" y=\"130\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#dc2626\">h(x) &gt; 0</text>\n    <text x=\"130\" y=\"155\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7f1d1d\">Logaritması alınan ifade</text>\n    <text x=\"130\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7f1d1d\">kesinlikle pozitif olmalıdır.</text>\n\n    <rect x=\"255\" y=\"75\" width=\"210\" height=\"105\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#f97316\" stroke-width=\"2\"/>\n    <text x=\"360\" y=\"102\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#9a3412\">II. Taban Pozitifliği</text>\n    <text x=\"360\" y=\"130\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#ea580c\">g(x) &gt; 0</text>\n    <text x=\"360\" y=\"155\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7c2d12\">Logaritma tabanı sıfır</text>\n    <text x=\"360\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7c2d12\">veya negatif olamaz.</text>\n\n    <rect x=\"485\" y=\"75\" width=\"210\" height=\"105\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#10b981\" stroke-width=\"2\"/>\n    <text x=\"590\" y=\"102\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#065f46\">III. Taban ≠ 1 Şartı</text>\n    <text x=\"590\" y=\"130\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#059669\">g(x) ≠ 1</text>\n    <text x=\"590\" y=\"155\" text-anchor=\"middle\" font-size=\"11\" fill=\"#064e3b\">Taban 1 olursa üstel</text>\n    <text x=\"590\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" fill=\"#064e3b\">fonksiyon bire bir olmaz.</text>\n\n    <rect x=\"25\" y=\"195\" width=\"670\" height=\"75\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"2\"/>\n    <text x=\"360\" y=\"220\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Örnek Uygulama: f(x) = log_{x-1}(9 - x) En Geniş Tanım Kümesi</text>\n    <text x=\"360\" y=\"242\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e3a8a\">1) 9 - x &gt; 0 ⇒ x &lt; 9   |   2) x - 1 &gt; 0 ⇒ x &gt; 1   |   3) x - 1 ≠ 1 ⇒ x ≠ 2</text>\n    <text x=\"360\" y=\"260\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">Çözüm Kümesi: ÇK = (1, 9) - {2}</text>\n    </svg>"
-  },
-  {
-   "baslik": "Logaritma Fonksiyonunun Grafiği ve Artanlık-Azalanlık Durumu",
-   "metin": [
-    "Bir fonksiyonun grafiği ile ters fonksiyonunun grafiği analitik düzlemde {koyu:y = x (birinci açıortay) doğrusuna göre simetriktir}. Dolayısıyla f(x) = {us:a|x} üstel fonksiyonunun grafiği üzerindeki (0, 1) ve (1, a) noktalarının y = x doğrusuna göre simetriği alındığında, ters fonksiyon olan {us:f|−1}(x) = logₐ x logaritma fonksiyonunun grafiğinin daima {koyu:(1, 0)} ve {koyu:(a, 1)} noktalarından geçtiği görülür. Tanım kümesi ℝ⁺ olduğu için y = logₐ x grafiği y ekseninin soluna geçmez ve y eksenini (x = 0) kesmez.",
-    "Üstel fonksiyonda olduğu gibi logaritma fonksiyonunun artan veya azalan olmasını da {koyu:taban (a)} belirler: {koyu:1. Taban 1'den büyükse (a > 1):} f(x) = logₐ x fonksiyonu {koyu:artan} bir fonksiyondur (x değerleri büyüdükçe logₐ x değerleri de büyür; örneğin y = log₂ x). {koyu:2. Taban 0 ile 1 arasındaysa (0 < a < 1):} f(x) = logₐ x fonksiyonu {koyu:azalan} bir fonksiyondur (x değerleri büyüdükçe logₐ x değerleri küçülür; örneğin y = log₁/₂ x)."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Özellik",
-     "Artan Logaritma (a > 1)",
-     "Azalan Logaritma (0 < a < 1)"
-    ],
-    "satirlar": [
-     [
-      "Tanım ve Görüntü Kümesi",
-      "f: ℝ⁺ → ℝ (Bire bir ve örten)",
-      "f: ℝ⁺ → ℝ (Bire bir ve örten)"
-     ],
-     [
-      "Eksenleri Kestiği Nokta",
-      "x eksenini (1, 0) noktasında keser; y eksenini kesmez.",
-      "x eksenini (1, 0) noktasında keser; y eksenini kesmez."
-     ],
-     [
-      "Karakteristik Noktaları",
-      "({kesir:1|a}, −1), (1, 0) ve (a, 1) noktalarından geçer.",
-      "({kesir:1|a}, −1), (1, 0) ve (a, 1) noktalarından geçer."
-     ],
-     [
-      "Değişim Yönü",
-      "x₁ < x₂ ⇒ logₐ x₁ < logₐ x₂ (Artan)",
-      "x₁ < x₂ ⇒ logₐ x₁ > logₐ x₂ (Azalan)"
-     ],
-     [
-      "Üstel Tersi İle Simetri",
-      "y = {us:a|x} artan grafiği ile y = x'e göre simetriktir.",
-      "y = {us:a|x} azalan grafiği ile y = x'e göre simetriktir."
-     ]
-    ]
-   },
-   "gorsel": "<svg viewBox=\"0 0 720 290\" role=\"img\" aria-label=\"Artan ve Azalan Logaritma Fonksiyonu Grafikleri\">\n    <rect x=\"20\" y=\"16\" width=\"680\" height=\"44\" rx=\"10\" fill=\"#0f766e\"/>\n    <text x=\"360\" y=\"44\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#ffffff\">Logaritma Fonksiyonunun Grafiği ve y = x Doğrusuna Göre Simetri</text>\n\n    <rect x=\"30\" y=\"75\" width=\"315\" height=\"200\" rx=\"12\" fill=\"#f0fdfa\" stroke=\"#14b8a6\" stroke-width=\"2\"/>\n    <text x=\"187\" y=\"98\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f766e\">a &gt; 1 İçin Artan (y = 2ˣ ve y = log₂ x)</text>\n    <line x1=\"60\" y1=\"220\" x2=\"310\" y2=\"220\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"120\" y1=\"255\" x2=\"120\" y2=\"110\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"80\" y1=\"240\" x2=\"290\" y2=\"115\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5,5\"/>\n    <path d=\"M 85 212 Q 120 190 175 115\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n    <path d=\"M 128 250 Q 150 220 285 165\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2.5\"/>\n    <circle cx=\"120\" cy=\"190\" r=\"3.5\" fill=\"#2563eb\"/>\n    <circle cx=\"155\" cy=\"220\" r=\"3.5\" fill=\"#059669\"/>\n    <text x=\"95\" y=\"188\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">(0,1)</text>\n    <text x=\"150\" y=\"236\" font-size=\"10\" font-weight=\"bold\" fill=\"#047857\">(1,0)</text>\n    <text x=\"195\" y=\"128\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">y = 2ˣ</text>\n    <text x=\"255\" y=\"160\" font-size=\"11\" font-weight=\"bold\" fill=\"#047857\">y = log₂ x</text>\n    <text x=\"275\" y=\"112\" font-size=\"10\" fill=\"#475569\">y = x</text>\n\n    <rect x=\"375\" y=\"75\" width=\"315\" height=\"200\" rx=\"12\" fill=\"#fffbeb\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n    <text x=\"532\" y=\"98\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b45309\">0 &lt; a &lt; 1 İçin Azalan (y = log_{1/2} x)</text>\n    <line x1=\"405\" y1=\"190\" x2=\"655\" y2=\"190\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"465\" y1=\"255\" x2=\"465\" y2=\"110\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <path d=\"M 475 115 Q 500 190 635 245\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.5\"/>\n    <circle cx=\"515\" cy=\"190\" r=\"3.5\" fill=\"#d97706\"/>\n    <text x=\"515\" y=\"180\" font-size=\"10\" font-weight=\"bold\" fill=\"#b45309\">(1,0)</text>\n    <text x=\"595\" y=\"225\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">y = log_{1/2} x</text>\n    <text x=\"532\" y=\"262\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">x büyüdükçe y değerleri küçülür (Azalan)</text>\n    </svg>"
-  },
-  {
-   "baslik": "10 Tabanında Logaritma (Adi Logaritma) ve Logaritmanın Tarihçesi",
-   "metin": [
-    "Onluk sayı sistemini kullandığımız için günlük hayatta, fizikte, kimyada ve mühendislikte en çok {koyu:tabanı 10 olan logaritma fonksiyonu} kullanılır. Tabanı 10 olan logaritma fonksiyonuna {koyu:10 tabanında logaritma (adi logaritma veya bayağı logaritma)} denir ve tabanındaki 10 sayısı yazılmadan {koyu:f: ℝ⁺ → ℝ, f(x) = log₁₀ x = log x} biçiminde gösterilir. Buradan log x = y ⇔ x = {us:10|y} olur. Örneğin log 10 = 1, log 1000 = log({us:10|3}) = 3, log(0,0001) = log({us:10|−4}) = −4 ve log({kok:100|3}) = log({us:10|2/3}) = {kesir:2|3} olarak hesaplanır.",
-    "'Sayıları hesaplama / oranların sayısı' anlamına gelen {koyu:logaritma} kavramı, astronomi ve denizcilikteki büyük sayıların çarpma ve bölme işlemlerini toplama ve çıkarmaya dönüştürerek kolaylaştırmak amacıyla İskoç matematikçi {koyu:John Napier} (1550-1617) tarafından icat edilmiştir ('Mirifici Logarithmorum Canonis Descriptio'). Osmanlı Devleti'nde ise 'Ayaklı Kütüphane' Müftüzade Mehmed Efendi'nin öğrencisi olan müderris {koyu:Gelenbevî İsmail Efendi} (1726-1790), logaritma üzerine müstakil eser yazmış ve Kâğıthane'de Padişah {koyu:III. Selim} huzurunda humbaracıların başarısız top atışlarındaki açı hatalarını riyazi hesaplarla düzelterek tam isabet sağlamıştır."
-   ],
-   "kutu": {
-    "tur": "bilgi",
-    "baslik": "pH Ölçeği ve 10 Tabanında Logaritma",
-    "metin": "Bir çözeltinin hidrojen iyonu derişimi [{us:H|+}] = {us:10|−pH} mol/L formülüyle, yani pH = −log[{us:H|+}] ile hesaplanır. Saf suda [{us:H|+}] = {us:10|−7} olduğundan pH = −log({us:10|−7}) = 7 (nötr) olur; pH < 7 ise asidik, pH > 7 ise baziktir."
-   },
-   "gorsel": "<svg viewBox=\"0 0 720 285\" role=\"img\" aria-label=\"10 Tabanında Logaritma ve Tarihçesi\">\n    <rect x=\"20\" y=\"16\" width=\"680\" height=\"44\" rx=\"10\" fill=\"#7c2d12\"/>\n    <text x=\"360\" y=\"44\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#ffffff\">10 Tabanında (Adi) Logaritma, pH Ölçeği ve Logaritma Tarihi</text>\n\n    <rect x=\"25\" y=\"75\" width=\"320\" height=\"195\" rx=\"12\" fill=\"#fff7ed\" stroke=\"#f97316\" stroke-width=\"2\"/>\n    <text x=\"185\" y=\"102\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#9a3412\">10 Tabanında Logaritma (log x)</text>\n    <text x=\"45\" y=\"128\" font-size=\"13\" font-weight=\"bold\" fill=\"#c2410c\">log₁₀ x = log x = y  ⇔  x = 10ʸ</text>\n    <text x=\"45\" y=\"152\" font-size=\"12\" fill=\"#7c2d12\">• log 10 = 1   |   • log 1000 = log(10³) = 3</text>\n    <text x=\"45\" y=\"174\" font-size=\"12\" fill=\"#7c2d12\">• log(0,0001) = log(10⁻⁴) = -4</text>\n    <rect x=\"42\" y=\"190\" width=\"286\" height=\"65\" rx=\"8\" fill=\"#ffedd5\"/>\n    <text x=\"185\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#9a3412\">Kimyada pH Ölçeği: pH = -log[H⁺]</text>\n    <text x=\"185\" y=\"228\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7c2d12\">0 ← Asidik (pH &lt; 7) | Nötr (7) | Bazik (pH &gt; 7) → 14</text>\n    <text x=\"185\" y=\"245\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7c2d12\">Richter Deprem Enerjisi: E = 10^(11,8 + 1,5M)</text>\n\n    <rect x=\"375\" y=\"75\" width=\"320\" height=\"195\" rx=\"12\" fill=\"#fef2f2\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n    <text x=\"535\" y=\"102\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#991b1b\">Bilim Tarihinde Öncü İsimler</text>\n    <text x=\"392\" y=\"130\" font-size=\"12\" font-weight=\"bold\" fill=\"#b91c1c\">1. John Napier (1550 - 1617)</text>\n    <text x=\"392\" y=\"148\" font-size=\"11\" fill=\"#7f1d1d\">• \"Logaritma\" terimini ve cetvellerini</text>\n    <text x=\"392\" y=\"164\" font-size=\"11\" fill=\"#7f1d1d\">büyük hesapları kolaylaştırmak için icat etti.</text>\n    <text x=\"392\" y=\"192\" font-size=\"12\" font-weight=\"bold\" fill=\"#b91c1c\">2. Gelenbevî İsmail Efendi (1726 - 1790)</text>\n    <text x=\"392\" y=\"210\" font-size=\"11\" fill=\"#7f1d1d\">• Osmanlı'da logaritma risalesi yazdı.</text>\n    <text x=\"392\" y=\"228\" font-size=\"11\" fill=\"#7f1d1d\">• Kâğıthane'de III. Selim huzurunda</text>\n    <text x=\"392\" y=\"244\" font-size=\"11\" fill=\"#7f1d1d\">humbaracıların top atış açılarını düzeltti.</text>\n    </svg>"
-  },
-  {
-   "baslik": "Euler Sayısı (e) ve Doğal Logaritma Fonksiyonu (ln x)",
-   "metin": [
-    "Matematikte π sayısı gibi çok önemli bir diğer irrasyonel sabit {koyu:Euler sayısı (e)}dir. Pozitif tam sayı n sınırsız büyüdükçe {us:(1 + {kesir:1|n})|n} ifadesinin yaklaştığı değer veya {koyu:e = {kesir:1|0!} + {kesir:1|1!} + {kesir:1|2!} + {kesir:1|3!} + … ≈ 2,7182818…} sonsuz toplamı {koyu:e sayısını} verir. Bu sabiti ilk kez İsviçreli matematikçi {koyu:Jakob Bernoulli} bileşik faiz problemlerini incelerken keşfetmiş; {koyu:Leonhard Euler} ise sayıya e harfini vermiş ve irrasyonel olduğunu kanıtlamıştır. 2 < e < 3 olduğu için y = {us:e|x} üstel fonksiyonunun grafiği analitik düzlemde {koyu:y = {us:2|x} ile y = {us:3|x} grafikleri arasında} yer alır.",
-    "Tabanı e (Euler sayısı) olan logaritma fonksiyonuna {koyu:doğal logaritma fonksiyonu} denir ve {koyu:f: ℝ⁺ → ℝ, f(x) = logₑ x = ln x} biçiminde gösterilir. Temel denklik ln x = y ⇔ x = {us:e|y} şeklindedir. Tabanı e ≈ 2,718 > 1 olduğundan f(x) = ln x {koyu:artan} bir fonksiyondur ve grafiği g(x) = {us:e|x} grafiğinin y = x doğrusuna göre simetriğidir. Tanım gereği ln 1 = 0, ln e = 1, ln({us:e|−2}) = −2 ve ln({kok:{us:e|3}|5}) = ln({us:e|3/5}) = {kesir:3|5} olur."
-   ],
-   "gorsel": "<svg viewBox=\"0 0 720 285\" role=\"img\" aria-label=\"Euler Sayısı ve Doğal Logaritma Fonksiyonu\">\n    <rect x=\"20\" y=\"16\" width=\"680\" height=\"44\" rx=\"10\" fill=\"#312e81\"/>\n    <text x=\"360\" y=\"44\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#ffffff\">Euler Sayısı (e ≈ 2,71828...) ve Doğal Logaritma Fonksiyonu (ln x)</text>\n\n    <rect x=\"25\" y=\"75\" width=\"320\" height=\"195\" rx=\"12\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\"/>\n    <text x=\"185\" y=\"102\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#312e81\">Euler Sayısı (e) Nedir?</text>\n    <text x=\"45\" y=\"128\" font-size=\"12\" font-weight=\"bold\" fill=\"#4338ca\">• (1 + 1/n)ⁿ  (n → ∞ iken yakınsadığı limit)</text>\n    <text x=\"45\" y=\"150\" font-size=\"12\" font-weight=\"bold\" fill=\"#4338ca\">• e = 1/0! + 1/1! + 1/2! + 1/3! + ... ≈ 2,71828</text>\n    <text x=\"45\" y=\"176\" font-size=\"11\" fill=\"#3730a3\">• Jakob Bernoulli bileşik faizde keşfetti;</text>\n    <text x=\"45\" y=\"194\" font-size=\"11\" fill=\"#3730a3\">Leonhard Euler \"e\" adını verip irrasyonelliğini</text>\n    <text x=\"45\" y=\"212\" font-size=\"11\" fill=\"#3730a3\">ispatladı.</text>\n    <text x=\"45\" y=\"238\" font-size=\"12\" font-weight=\"bold\" fill=\"#312e81\">• 2 &lt; e &lt; 3  ⇒  y = eˣ grafiği 2ˣ ile 3ˣ arasındadır.</text>\n\n    <rect x=\"375\" y=\"75\" width=\"320\" height=\"195\" rx=\"12\" fill=\"#ecfdf5\" stroke=\"#10b981\" stroke-width=\"2\"/>\n    <text x=\"535\" y=\"102\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#065f46\">Doğal Logaritma (f(x) = logₑ x = ln x)</text>\n    <text x=\"395\" y=\"130\" font-size=\"13\" font-weight=\"bold\" fill=\"#047857\">ln x = y  ⇔  x = eʸ  (x &gt; 0)</text>\n    <text x=\"395\" y=\"156\" font-size=\"12\" fill=\"#064e3b\">• ln 1 = 0        • ln e = 1</text>\n    <text x=\"395\" y=\"180\" font-size=\"12\" fill=\"#064e3b\">• ln(e³) = 3      • ln(1 / e²) = ln(e⁻²) = -2</text>\n    <text x=\"395\" y=\"204\" font-size=\"12\" fill=\"#064e3b\">• Tabanı e &gt; 1 olduğundan artan fonksiyondur.</text>\n    <text x=\"395\" y=\"228\" font-size=\"12\" fill=\"#064e3b\">• Grafiği y = eˣ üstel fonksiyonunun</text>\n    <text x=\"395\" y=\"248\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#065f46\">y = x doğrusuna göre simetriğidir.</text>\n    </svg>"
-  }
- ],
- "ornekler": [
-  {
-   "soru": "log₂(3 + log₃(x − 1)) = 2 denkleminde x gerçek sayısının değerini bulunuz.",
-   "cevap": "Dıştaki 2 tabanlı logaritmadan başlayarak üstel dönüşüm (y = logₐ u ⇔ u = {us:a|y}) uygularız: 3 + log₃(x − 1) = {us:2|2} = 4 olur. Buradan log₃(x − 1) = 4 − 3 = 1 elde edilir. Tekrar üstel dönüşüm yapıldığında x − 1 = {us:3|1} = 3 ⇒ {koyu:x = 4} bulunur."
-  },
-  {
-   "soru": "f: ℝ → (5, ∞), f(x) = {us:3|x+1} + 5 üstel fonksiyonunun tersi olan {us:f|−1}(x) fonksiyonunun kuralını bulunuz.",
-   "cevap": "y = {us:3|x+1} + 5 yazıp x'i yalnız bırakalım: y − 5 = {us:3|x+1} olur. Logaritma tanımından x + 1 = log₃(y − 5) ⇒ x = log₃(y − 5) − 1 elde edilir. x ile y yer değiştirildiğinde ters fonksiyon {koyu:{us:f|−1}(x) = log₃(x − 5) − 1} olarak bulunur."
-  },
-  {
-   "soru": "f(x) = log_(x−2)(−{us:x|2} + 5x) fonksiyonunun gerçek sayılardaki en geniş tanım kümesini bulunuz.",
-   "cevap": "Tanımlı olma şartlarını yazalım: {koyu:1. İç kısım pozitif olmalı:} −{us:x|2} + 5x > 0 ⇒ x(5 − x) > 0, kökler 0 ve 5 olup işaret tablosundan 0 < x < 5 bulunur. {koyu:2. Taban pozitif olmalı:} x − 2 > 0 ⇒ x > 2. {koyu:3. Taban 1 olmamalı:} x − 2 ≠ 1 ⇒ x ≠ 3. Üç koşulun ortak kesişimi alındığında en geniş tanım kümesi {koyu:(2, 5)} − {3} olur."
-  },
-  {
-   "soru": "f(x) = log₅({us:x|2} − (k − 3)x + 4) fonksiyonu her x gerçek sayısı için tanımlı olduğuna göre k'nin değer aralığını bulunuz.",
-   "cevap": "Fonksiyonun her x ∈ ℝ için tanımlı olması için {us:x|2} − (k − 3)x + 4 > 0 eşitsizliği daima sağlanmalı, yani ikinci dereceden ifadenin gerçek kökü olmamalıdır (Δ < 0). Buradan Δ = {us:[−(k−3)]|2} − 4 · 1 · 4 < 0 ⇒ {us:k|2} − 6k + 9 − 16 < 0 ⇒ {us:k|2} − 6k − 7 < 0 olur. Çarpanlarına ayırdığımızda (k − 7)(k + 1) < 0 eşitsizliğinin çözüm aralığı {koyu:(−1, 7)} olarak bulunur."
-  },
-  {
-   "soru": "log 1000 + log(0,01) + ln({us:e|4}) − ln({kesir:1|e²}) işleminin sonucu kaçtır?",
-   "cevap": "10 tabanında (adi) ve e tabanında (doğal) logaritma değerlerini ayrı ayrı bulalım: log 1000 = log({us:10|3}) = 3, log(0,01) = log({us:10|−2}) = −2, ln({us:e|4}) = 4 ve ln({kesir:1|e²}) = ln({us:e|−2}) = −2'dir. Yerine yazdığımızda 3 + (−2) + 4 − (−2) = 1 + 4 + 2 = {koyu:7} bulunur."
-  },
-  {
-   "soru": "Bir limon suyunun hidrojen iyonu derişimi [{us:H|+}] = {us:10|−2,4} mol/L ve bir sabunun hidrojen iyonu derişimi [{us:H|+}] = {us:10|−9,4} mol/L olduğuna göre bu iki maddenin pH değerlerini ve limon suyundaki [{us:H|+}] yoğunluğunun sabundakinin kaç katı olduğunu bulunuz.",
-   "cevap": "pH = −log[{us:H|+}] bağıntısından limon suyunun pH değeri −log({us:10|−2,4}) = {koyu:2,4} (asidik), sabunun pH değeri ise −log({us:10|−9,4}) = {koyu:9,4} (bazik) olur. İyon yoğunlukları oranı ise {kesir:10⁻²'⁴|10⁻⁹'⁴} = {us:10|−2,4 − (−9,4)} = {koyu:{us:10|7}} (10 milyon) kattır."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "log₁/₃ x = −4 eşitliğini sağlayan x gerçek sayısı aşağıdakilerden hangisidir?",
-   "secenekler": [
-    "{kesir:1|81}",
-    "−12",
-    "12",
-    "81",
-    "27"
-   ],
-   "dogru": 3,
-   "aciklama": "logₐ x = y ⇔ x = {us:a|y} tanımından x = {us:({kesir:1|3})|−4} = {us:3|4} = 81 bulunur."
-  },
-  {
-   "tur": "coktan",
-   "soru": "f(x) = log_(x−3)(15 − 3x) fonksiyonunun en geniş tanım kümesinde bulunan tam sayıların toplamı kaçtır?",
-   "secenekler": [
-    "0",
-    "4",
-    "7",
-    "9",
-    "12"
-   ],
-   "dogru": 0,
-   "aciklama": "Tanım şartları: 1) 15 − 3x > 0 ⇒ x < 5; 2) x − 3 > 0 ⇒ x > 3; 3) x − 3 ≠ 1 ⇒ x ≠ 4. (3, 5) aralığında 4 hariç hiçbir tam sayı bulunmadığından tam sayıların toplamı 0'dır."
-  },
-  {
-   "tur": "coktan",
-   "soru": "f: (2, ∞) → ℝ, f(x) = log₃(x − 2) + 4 fonksiyonunun tersi olan {us:f|−1}(x) aşağıdakilerden hangisidir?",
-   "secenekler": [
-    "{us:3|x−4} + 2",
-    "{us:3|x+4} − 2",
-    "{us:3|x−2} + 4",
-    "log₃(x − 4) + 2",
-    "{us:4|x−3} + 2"
-   ],
-   "dogru": 0,
-   "aciklama": "y = log₃(x − 2) + 4 ⇒ y − 4 = log₃(x − 2) ⇒ x − 2 = {us:3|y−4} ⇒ x = {us:3|y−4} + 2 olur. x ile y yer değiştirildiğinde {us:f|−1}(x) = {us:3|x−4} + 2 bulunur."
-  },
-  {
-   "tur": "coktan",
-   "soru": "log(0,001) + ln({us:e|5}) + log₇ 1 işleminin sonucu kaçtır?",
-   "secenekler": [
-    "1",
-    "2",
-    "3",
-    "8",
-    "−2"
-   ],
-   "dogru": 1,
-   "aciklama": "log(0,001) = log({us:10|−3}) = −3, ln({us:e|5}) = 5 ve log₇ 1 = 0 olduğundan toplam −3 + 5 + 0 = 2 olur."
-  },
-  {
-   "tur": "dy",
-   "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "12-matematik-2",
+  "sinif": 12,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 2,
+  "tarih": "21-25 Eylül 2026",
+  "yayin_tarihi": "2026-10-16",
+  "unite": "SAYILAR VE CEBİR",
+  "konu": "Logaritma Fonksiyonu, En Geniş Tanım Kümesi, Grafiği, 10 Tabanında ve Doğal Logaritma",
+  "ciktilar": [
+    "12.1.2.1. Logaritma fonksiyonu ile üstel fonksiyonu ilişkilendirerek problemler çözer.",
+    "12.1.2.2. 10 ve e tabanında logaritma fonksiyonunu tanımlayarak problemler çözer."
+  ],
+  "giris": "Birinci hafta dersimizde tabanı pozitif ve 1'den farklı olan bire bir ve örten f(x) = {us:a|x} üstel fonksiyonunu ve grafiğini incelemiştik. Bu haftaki dersimizde ise üstel fonksiyonun tersi olarak tanımlanan {koyu:logaritma fonksiyonunu}, üstel ve logaritmik eşitliklerin birbirine dönüştürülmesini, logaritma fonksiyonunun {koyu:en geniş tanım kümesini}, y = x doğrusuna göre simetrik olan {koyu:grafiğini}, {koyu:10 tabanında (adi) logaritmayı} ve Euler sayısı (e) tabanındaki {koyu:doğal logaritma fonksiyonunu} (ln x) öğreneceğiz.",
+  "ozet": [
+    "a ∈ ℝ⁺ − {1} olmak üzere bire bir ve örten f: ℝ → ℝ⁺, f(x) = {us:a|x} üstel fonksiyonunun tersine {koyu:a tabanında logaritma fonksiyonu} denir ve {us:f|−1}: ℝ⁺ → ℝ, {us:f|−1}(x) = logₐ x şeklinde gösterilir.",
+    "Üstel ve logaritmik ifadeler arasında y = logₐ x ⇔ x = {us:a|y} temel denkliği vardır; dönüşüm yapılırken {koyu:taban daima tabanda kalır}.",
+    "f(x) = log_g(x) h(x) fonksiyonunun gerçek sayılarda tanımlı olabilmesi için {koyu:1. h(x) > 0}, {koyu:2. g(x) > 0} ve {koyu:3. g(x) ≠ 1} koşulları birlikte sağlanmalıdır.",
+    "f(x) = {us:a|x} ile {us:f|−1}(x) = logₐ x fonksiyonlarının grafikleri {koyu:y = x doğrusuna göre simetriktir}; y = logₐ x grafiği (1, 0) noktasından geçer, a > 1 için {koyu:artan}, 0 < a < 1 için {koyu:azalandır}.",
+    "Tabanı 10 olan logaritmaya {koyu:10 tabanında (adi/bayağı) logaritma} denir ve taban yazılmadan log₁₀ x = log x biçiminde gösterilir; logaritmayı İskoç matematikçi {koyu:John Napier} icat etmiş, Osmanlı'da ise {koyu:Gelenbevî İsmail Efendi} tanıtmıştır.",
+    "Yaklaşık değeri 2,71828… olan irrasyonel {koyu:Euler sayısı (e)} tabanındaki logaritmaya {koyu:doğal logaritma} denir ve logₑ x = ln x ile gösterilir (ln e = 1, ln 1 = 0, ln({us:e|k}) = k)."
+  ],
+  "bolumler": [
     {
-     "metin": "f(x) = {us:a|x} üstel fonksiyonu ile tersi olan {us:f|−1}(x) = logₐ x fonksiyonunun grafikleri y = x doğrusuna göre simetriktir.",
-     "dogru": true,
-     "aciklama": "Doğru. Birbirinin tersi olan bütün fonksiyonların grafikleri y = x birinci açıortay doğrusuna göre simetriktir."
+      "baslik": "Üstel Fonksiyonun Tersi Olarak Logaritma Fonksiyonu",
+      "metin": [
+        "Richter ölçeğine göre deprem enerjisinin (E = {us:10|11,8 + 1,5M}) veya bir çözeltinin hidrojen iyonu derişiminden pH değerinin (pH = −log[{us:H|+}]) hesaplanmasında olduğu gibi, {us:a|y} = x üstel denkleminde bilinmeyen üs y'yi yalnız bırakabilmek için üstel fonksiyonun tersine ihtiyaç duyulur. Bir f: A → B fonksiyonunun tersinin ({us:f|−1}: B → A) fonksiyon olabilmesi için f'nin {koyu:bire bir ve örten} olması gerekir.",
+        "a ∈ ℝ⁺ − {1} olmak üzere f: ℝ → ℝ⁺, f(x) = {us:a|x} üstel fonksiyonu bire bir ve örten olduğundan tersi de bir fonksiyondur. Üstel fonksiyonun tersi olan bu fonksiyona {koyu:tabanı a olan logaritma fonksiyonu} denir ve {us:f|−1}: ℝ⁺ → ℝ, {us:f|−1}(x) = logₐ x biçiminde gösterilir ('logaritma a tabanında x' diye okunur). Logaritmanın tanımı gereğince a > 0, a ≠ 1 ve x > 0 için şu temel denklik geçerlidir: {koyu:y = logₐ x ⇔ x} = {us:a|y}."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Üstel ve Logaritmik Dönüşüm Kuralı",
+        "metin": "y = logₐ x ⇔ x = {us:a|y} dönüşümünde logaritmanın tabanı olan a, üstel ifadede de {koyu:taban} olarak kalır; logaritmanın sonucu olan y ise {koyu:üs (kuvvet)} olur. Örneğin log₂ 32 = 5 ⇔ 32 = {us:2|5} ve log₃({kesir:1|81}) = −4 ⇔ {kesir:1|81} = {us:3|−4}."
+      },
+      "tablo": {
+        "basliklar": [
+          "Üstel Biçim (x = {us:a|y})",
+          "Logaritmik Biçim (y = logₐ x)",
+          "Taban (a)",
+          "Üs / Sonuç (y)"
+        ],
+        "satirlar": [
+          [
+            "{us:10|4} = 10 000",
+            "log₁₀ 10 000 = 4",
+            "10",
+            "4"
+          ],
+          [
+            "{us:2|5} = 32",
+            "log₂ 32 = 5",
+            "2",
+            "5"
+          ],
+          [
+            "{us:5|−2} = {kesir:1|25} = 0,04",
+            "log₅(0,04) = −2",
+            "5",
+            "−2"
+          ],
+          [
+            "{us:({kesir:2|3})|−4} = {kesir:81|16}",
+            "log₂/₃({kesir:81|16}) = −4",
+            "{kesir:2|3}",
+            "−4"
+          ],
+          [
+            "{us:a|1} = a ve {us:a|0} = 1",
+            "logₐ a = 1 ve logₐ 1 = 0",
+            "a",
+            "1 ve 0"
+          ]
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 720 285\" role=\"img\" aria-label=\"Üstel Fonksiyon ve Logaritma Fonksiyonu İlişkisi\">\n    <rect x=\"20\" y=\"16\" width=\"680\" height=\"44\" rx=\"10\" fill=\"#1e3a8a\"/>\n    <text x=\"360\" y=\"44\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#ffffff\">Üstel Fonksiyonun Tersi Olarak Logaritma: y = logₐ x ⇔ x = aʸ</text>\n\n    <rect x=\"30\" y=\"78\" width=\"290\" height=\"190\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"2\"/>\n    <text x=\"175\" y=\"106\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1d4ed8\">Üstel Fonksiyon (f)</text>\n    <text x=\"175\" y=\"135\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e40af\">f : ℝ → ℝ⁺ ,  y = aˣ</text>\n    <text x=\"175\" y=\"165\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e3a8a\">• a &gt; 0 ve a ≠ 1</text>\n    <text x=\"175\" y=\"188\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e3a8a\">• Bire bir ve örten</text>\n    <text x=\"175\" y=\"218\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Örnek: 2⁵ = 32</text>\n    <text x=\"175\" y=\"242\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e3a8a\">(Taban = 2 , Üs = 5)</text>\n\n    <text x=\"360\" y=\"175\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"bold\" fill=\"#0f766e\">⇄</text>\n\n    <rect x=\"400\" y=\"78\" width=\"290\" height=\"190\" rx=\"12\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"2\"/>\n    <text x=\"545\" y=\"106\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">Logaritma Fonksiyonu (f⁻¹)</text>\n    <text x=\"545\" y=\"135\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#166534\">f⁻¹ : ℝ⁺ → ℝ ,  y = logₐ x</text>\n    <text x=\"545\" y=\"165\" text-anchor=\"middle\" font-size=\"12\" fill=\"#14532d\">• Tanım kümesi: ℝ⁺ (x &gt; 0)</text>\n    <text x=\"545\" y=\"188\" text-anchor=\"middle\" font-size=\"12\" fill=\"#14532d\">• Görüntü kümesi: ℝ</text>\n    <text x=\"545\" y=\"218\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Örnek: log₂ 32 = 5</text>\n    <text x=\"545\" y=\"242\" text-anchor=\"middle\" font-size=\"12\" fill=\"#14532d\">(Taban daima tabanda kalır!)</text>\n    </svg>"
     },
     {
-     "metin": "f(x) = log₂/₅ x fonksiyonunun tabanı pozitif olduğu için bu fonksiyon artan bir fonksiyondur.",
-     "dogru": false,
-     "aciklama": "Yanlış. Taban a = {kesir:2|5} değeri 0 < a < 1 aralığında olduğu için fonksiyon azalandır."
+      "baslik": "Üstel ve Logaritmik Fonksiyonların Tersini Bulma",
+      "metin": [
+        "Bire bir ve örten bir y = f(x) fonksiyonunun tersi olan {us:f|−1}(x) kuralını bulmak için iki adım izlenir: {koyu:1. Adım:} y = f(x) eşitliğinde üstel veya logaritmik dönüşüm kullanılarak x değişkeni y cinsinden yalnız bırakılır (x = {us:f|−1}(y)). {koyu:2. Adım:} Eşitlikte x yerine {us:f|−1}(x), y yerine x yazılarak kural elde edilir.",
+        "Örneğin f: ℝ → (−1, ∞), f(x) = 2 · {us:5|x−3} − 1 üstel fonksiyonunun tersini bulalım: y = 2 · {us:5|x−3} − 1 eşitliğinde önce −1'i karşıya atıp 2'ye böleriz: {us:5|x−3} = {kesir:y+1|2}. Ardından logaritma tanımını uygularız: x − 3 = log₅({kesir:y+1|2}) ⇒ x = log₅({kesir:y+1|2}) + 3. Son adımda x ile y'yi yer değiştirdiğimizde {us:f|−1}(x) = log₅({kesir:x+1|2}) + 3 bulunur. Benzer şekilde g: (3, ∞) → ℝ, g(x) = log₄(x − 3) + 1 logaritmik fonksiyonu için y − 1 = log₄(x − 3) ⇒ x − 3 = {us:4|y−1} ⇒ {us:g|−1}(x) = {us:4|x−1} + 3 elde edilir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 720 285\" role=\"img\" aria-label=\"Üstel ve Logaritmik Fonksiyonların Tersini Bulma\">\n    <rect x=\"20\" y=\"16\" width=\"680\" height=\"44\" rx=\"10\" fill=\"#4c1d95\"/>\n    <text x=\"360\" y=\"44\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#ffffff\">Üstel ve Logaritmik Fonksiyonların Tersini (f⁻¹) Bulma Adımları</text>\n\n    <rect x=\"30\" y=\"75\" width=\"315\" height=\"195\" rx=\"12\" fill=\"#f5f3ff\" stroke=\"#8b5cf6\" stroke-width=\"2\"/>\n    <text x=\"187\" y=\"102\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#5b21b6\">Örnek 1: Üstel Fonksiyonun Tersi</text>\n    <text x=\"48\" y=\"130\" font-size=\"13\" font-weight=\"bold\" fill=\"#6d28d9\">f(x) = 2 · 5ˣ⁻³ - 1  ⇒  f⁻¹(x) = ?</text>\n    <text x=\"48\" y=\"158\" font-size=\"12\" fill=\"#4c1d95\">1. y = 2 · 5ˣ⁻³ - 1 yazılır.</text>\n    <text x=\"48\" y=\"182\" font-size=\"12\" fill=\"#4c1d95\">2. (y + 1) / 2 = 5ˣ⁻³ (Üstel terim yalnız kalır)</text>\n    <text x=\"48\" y=\"206\" font-size=\"12\" fill=\"#4c1d95\">3. x - 3 = log₅((y + 1) / 2)</text>\n    <text x=\"48\" y=\"230\" font-size=\"12\" fill=\"#4c1d95\">4. x = log₅((y + 1) / 2) + 3</text>\n    <text x=\"48\" y=\"254\" font-size=\"13\" font-weight=\"bold\" fill=\"#5b21b6\">Sonuç: f⁻¹(x) = log₅((x + 1) / 2) + 3</text>\n\n    <rect x=\"375\" y=\"75\" width=\"315\" height=\"195\" rx=\"12\" fill=\"#fdf2f8\" stroke=\"#ec4899\" stroke-width=\"2\"/>\n    <text x=\"532\" y=\"102\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#9d174d\">Örnek 2: Logaritmik Fonksiyonun Tersi</text>\n    <text x=\"393\" y=\"130\" font-size=\"13\" font-weight=\"bold\" fill=\"#be185d\">f(x) = log₄(x - 3) + 1  ⇒  f⁻¹(x) = ?</text>\n    <text x=\"393\" y=\"158\" font-size=\"12\" fill=\"#831843\">1. y = log₄(x - 3) + 1 yazılır.</text>\n    <text x=\"393\" y=\"182\" font-size=\"12\" fill=\"#831843\">2. y - 1 = log₄(x - 3) (Logaritma yalnız kalır)</text>\n    <text x=\"393\" y=\"206\" font-size=\"12\" fill=\"#831843\">3. x - 3 = 4ʸ⁻¹ (Üstel dönüşüm yapılır)</text>\n    <text x=\"393\" y=\"230\" font-size=\"12\" fill=\"#831843\">4. x = 4ʸ⁻¹ + 3</text>\n    <text x=\"393\" y=\"254\" font-size=\"13\" font-weight=\"bold\" fill=\"#9d174d\">Sonuç: f⁻¹(x) = 4ˣ⁻¹ + 3</text>\n    </svg>"
     },
     {
-     "metin": "Euler sayısı (e ≈ 2,718), 2 ile 3 arasında irrasyonel bir sayı olduğundan y = {us:e|x} grafiği y = {us:2|x} ile y = {us:3|x} grafikleri arasında yer alır.",
-     "dogru": true,
-     "aciklama": "Doğru. 2 < e < 3 eşitsizliği gereğince y = {us:e|x} eğrisi bu iki eğrinin arasındadır."
+      "baslik": "Logaritma Fonksiyonunun En Geniş Tanım Kümesi",
+      "metin": [
+        "f: ℝ⁺ → ℝ, f(x) = logₐ x fonksiyonunda logaritmanın tanım kümesi {koyu:pozitif gerçek sayılar} (ℝ⁺) olduğundan sıfırın ve negatif sayıların logaritması gerçek sayılarda tanımsızdır. Genel olarak f(x) = log_g(x) h(x) biçiminde verilen bir fonksiyonun gerçek sayılarda tanımlı olabilmesi için şu {koyu:üç koşul} aynı anda sağlanmalıdır: {koyu:I. h(x) > 0} (logaritması alınan iç ifade pozitif olmalı), {koyu:II. g(x) > 0} (taban pozitif olmalı) ve {koyu:III. g(x) ≠ 1} (taban 1'den farklı olmalı).",
+        "Örneğin f(x) = log_(x−1)(9 − x) fonksiyonunun en geniş tanım kümesi için: 9 − x > 0 ⇒ x < 9, taban için x − 1 > 0 ⇒ x > 1 ve x − 1 ≠ 1 ⇒ x ≠ 2 olmalıdır. Bu üç koşulun kesişimi alındığında en geniş tanım kümesi (1, 9) − {2} bulunur. Eğer f(x) = logₐ({us:x|2} + bx + c) biçimindeki bir fonksiyonun {koyu:her x ∈ ℝ gerçek sayısı için tanımlı} olduğu söylenirse, ikinci dereceden {us:x|2} + bx + c > 0 eşitsizliğinin daima pozitif olması, yani diskriminantının negatif ({koyu:Δ = {us:b|2} − 4ac < 0}) olması gerekir."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Her Gerçek Sayı İçin Tanımlı Olma Şartı (Δ < 0)",
+        "metin": "a > 0, a ≠ 1 sabit taban olmak üzere f(x) = logₐ(m{us:x|2} + nx + k) fonksiyonunun {koyu:her x ∈ ℝ için tanımlı} olması demek, m{us:x|2} + nx + k > 0 eşitsizliğinin daima sağlanması demektir. Bunun için {koyu:m > 0} ve {koyu:Δ = {us:n|2} − 4mk < 0} olmalıdır."
+      },
+      "gorsel": "<svg viewBox=\"0 0 720 285\" role=\"img\" aria-label=\"Logaritma Fonksiyonunun En Geniş Tanım Kümesi\">\n    <rect x=\"20\" y=\"16\" width=\"680\" height=\"44\" rx=\"10\" fill=\"#991b1b\"/>\n    <text x=\"360\" y=\"44\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#ffffff\">f(x) = log_{g(x)} h(x) Fonksiyonunun En Geniş Tanım Kümesi Şartları</text>\n\n    <rect x=\"25\" y=\"75\" width=\"210\" height=\"105\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n    <text x=\"130\" y=\"102\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#991b1b\">I. İç Kısım Şartı</text>\n    <text x=\"130\" y=\"130\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#dc2626\">h(x) &gt; 0</text>\n    <text x=\"130\" y=\"155\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7f1d1d\">Logaritması alınan ifade</text>\n    <text x=\"130\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7f1d1d\">kesinlikle pozitif olmalıdır.</text>\n\n    <rect x=\"255\" y=\"75\" width=\"210\" height=\"105\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#f97316\" stroke-width=\"2\"/>\n    <text x=\"360\" y=\"102\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#9a3412\">II. Taban Pozitifliği</text>\n    <text x=\"360\" y=\"130\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#ea580c\">g(x) &gt; 0</text>\n    <text x=\"360\" y=\"155\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7c2d12\">Logaritma tabanı sıfır</text>\n    <text x=\"360\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7c2d12\">veya negatif olamaz.</text>\n\n    <rect x=\"485\" y=\"75\" width=\"210\" height=\"105\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#10b981\" stroke-width=\"2\"/>\n    <text x=\"590\" y=\"102\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#065f46\">III. Taban ≠ 1 Şartı</text>\n    <text x=\"590\" y=\"130\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#059669\">g(x) ≠ 1</text>\n    <text x=\"590\" y=\"155\" text-anchor=\"middle\" font-size=\"11\" fill=\"#064e3b\">Taban 1 olursa üstel</text>\n    <text x=\"590\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" fill=\"#064e3b\">fonksiyon bire bir olmaz.</text>\n\n    <rect x=\"25\" y=\"195\" width=\"670\" height=\"75\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"2\"/>\n    <text x=\"360\" y=\"220\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Örnek Uygulama: f(x) = log_{x-1}(9 - x) En Geniş Tanım Kümesi</text>\n    <text x=\"360\" y=\"242\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e3a8a\">1) 9 - x &gt; 0 ⇒ x &lt; 9   |   2) x - 1 &gt; 0 ⇒ x &gt; 1   |   3) x - 1 ≠ 1 ⇒ x ≠ 2</text>\n    <text x=\"360\" y=\"260\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">Çözüm Kümesi: ÇK = (1, 9) - {2}</text>\n    </svg>"
     },
     {
-     "metin": "y = logₐ x fonksiyonunun grafiği y eksenini daima (0, 1) noktasında keser.",
-     "dogru": false,
-     "aciklama": "Yanlış. (0, 1) noktasından geçen üstel fonksiyondur; y = logₐ x grafiği y eksenini hiç kesmez, x eksenini (1, 0) noktasında keser."
+      "baslik": "Logaritma Fonksiyonunun Grafiği ve Artanlık-Azalanlık Durumu",
+      "metin": [
+        "Bir fonksiyonun grafiği ile ters fonksiyonunun grafiği analitik düzlemde {koyu:y = x (birinci açıortay) doğrusuna göre simetriktir}. Dolayısıyla f(x) = {us:a|x} üstel fonksiyonunun grafiği üzerindeki (0, 1) ve (1, a) noktalarının y = x doğrusuna göre simetriği alındığında, ters fonksiyon olan {us:f|−1}(x) = logₐ x logaritma fonksiyonunun grafiğinin daima {koyu:(1, 0)} ve {koyu:(a, 1)} noktalarından geçtiği görülür. Tanım kümesi ℝ⁺ olduğu için y = logₐ x grafiği y ekseninin soluna geçmez ve y eksenini (x = 0) kesmez.",
+        "Üstel fonksiyonda olduğu gibi logaritma fonksiyonunun artan veya azalan olmasını da {koyu:taban (a)} belirler: {koyu:1. Taban 1'den büyükse (a > 1):} f(x) = logₐ x fonksiyonu {koyu:artan} bir fonksiyondur (x değerleri büyüdükçe logₐ x değerleri de büyür; örneğin y = log₂ x). {koyu:2. Taban 0 ile 1 arasındaysa (0 < a < 1):} f(x) = logₐ x fonksiyonu {koyu:azalan} bir fonksiyondur (x değerleri büyüdükçe logₐ x değerleri küçülür; örneğin y = log₁/₂ x)."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Özellik",
+          "Artan Logaritma (a > 1)",
+          "Azalan Logaritma (0 < a < 1)"
+        ],
+        "satirlar": [
+          [
+            "Tanım ve Görüntü Kümesi",
+            "f: ℝ⁺ → ℝ (Bire bir ve örten)",
+            "f: ℝ⁺ → ℝ (Bire bir ve örten)"
+          ],
+          [
+            "Eksenleri Kestiği Nokta",
+            "x eksenini (1, 0) noktasında keser; y eksenini kesmez.",
+            "x eksenini (1, 0) noktasında keser; y eksenini kesmez."
+          ],
+          [
+            "Karakteristik Noktaları",
+            "({kesir:1|a}, −1), (1, 0) ve (a, 1) noktalarından geçer.",
+            "({kesir:1|a}, −1), (1, 0) ve (a, 1) noktalarından geçer."
+          ],
+          [
+            "Değişim Yönü",
+            "x₁ < x₂ ⇒ logₐ x₁ < logₐ x₂ (Artan)",
+            "x₁ < x₂ ⇒ logₐ x₁ > logₐ x₂ (Azalan)"
+          ],
+          [
+            "Üstel Tersi İle Simetri",
+            "y = {us:a|x} artan grafiği ile y = x'e göre simetriktir.",
+            "y = {us:a|x} azalan grafiği ile y = x'e göre simetriktir."
+          ]
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 720 290\" role=\"img\" aria-label=\"Artan ve Azalan Logaritma Fonksiyonu Grafikleri\">\n    <rect x=\"20\" y=\"16\" width=\"680\" height=\"44\" rx=\"10\" fill=\"#0f766e\"/>\n    <text x=\"360\" y=\"44\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#ffffff\">Logaritma Fonksiyonunun Grafiği ve y = x Doğrusuna Göre Simetri</text>\n\n    <rect x=\"30\" y=\"75\" width=\"315\" height=\"200\" rx=\"12\" fill=\"#f0fdfa\" stroke=\"#14b8a6\" stroke-width=\"2\"/>\n    <text x=\"187\" y=\"98\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f766e\">a &gt; 1 İçin Artan (y = 2ˣ ve y = log₂ x)</text>\n    <line x1=\"60\" y1=\"220\" x2=\"310\" y2=\"220\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"120\" y1=\"255\" x2=\"120\" y2=\"110\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"80\" y1=\"240\" x2=\"290\" y2=\"115\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5,5\"/>\n    <path d=\"M 85 212 Q 120 190 175 115\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n    <path d=\"M 128 250 Q 150 220 285 165\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2.5\"/>\n    <circle cx=\"120\" cy=\"190\" r=\"3.5\" fill=\"#2563eb\"/>\n    <circle cx=\"155\" cy=\"220\" r=\"3.5\" fill=\"#059669\"/>\n    <text x=\"95\" y=\"188\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">(0,1)</text>\n    <text x=\"150\" y=\"236\" font-size=\"10\" font-weight=\"bold\" fill=\"#047857\">(1,0)</text>\n    <text x=\"195\" y=\"128\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">y = 2ˣ</text>\n    <text x=\"255\" y=\"160\" font-size=\"11\" font-weight=\"bold\" fill=\"#047857\">y = log₂ x</text>\n    <text x=\"275\" y=\"112\" font-size=\"10\" fill=\"#475569\">y = x</text>\n\n    <rect x=\"375\" y=\"75\" width=\"315\" height=\"200\" rx=\"12\" fill=\"#fffbeb\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n    <text x=\"532\" y=\"98\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b45309\">0 &lt; a &lt; 1 İçin Azalan (y = log_{1/2} x)</text>\n    <line x1=\"405\" y1=\"190\" x2=\"655\" y2=\"190\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"465\" y1=\"255\" x2=\"465\" y2=\"110\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <path d=\"M 475 115 Q 500 190 635 245\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.5\"/>\n    <circle cx=\"515\" cy=\"190\" r=\"3.5\" fill=\"#d97706\"/>\n    <text x=\"515\" y=\"180\" font-size=\"10\" font-weight=\"bold\" fill=\"#b45309\">(1,0)</text>\n    <text x=\"595\" y=\"225\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">y = log_{1/2} x</text>\n    <text x=\"532\" y=\"262\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">x büyüdükçe y değerleri küçülür (Azalan)</text>\n    </svg>"
     },
     {
-     "metin": "Logaritma kavramı büyük sayılarla yapılan hesaplamaları kolaylaştırmak amacıyla İskoç matematikçi John Napier tarafından icat edilmiştir.",
-     "dogru": true,
-     "aciklama": "Doğru. John Napier 20 yıl süren çalışmasıyla logaritma cetvellerini oluşturmuştur."
+      "baslik": "10 Tabanında Logaritma (Adi Logaritma) ve Logaritmanın Tarihçesi",
+      "metin": [
+        "Onluk sayı sistemini kullandığımız için günlük hayatta, fizikte, kimyada ve mühendislikte en çok {koyu:tabanı 10 olan logaritma fonksiyonu} kullanılır. Tabanı 10 olan logaritma fonksiyonuna {koyu:10 tabanında logaritma (adi logaritma veya bayağı logaritma)} denir ve tabanındaki 10 sayısı yazılmadan {koyu:f: ℝ⁺ → ℝ, f(x) = log₁₀ x = log x} biçiminde gösterilir. Buradan log x = y ⇔ x = {us:10|y} olur. Örneğin log 10 = 1, log 1000 = log({us:10|3}) = 3, log(0,0001) = log({us:10|−4}) = −4 ve log({kok:100|3}) = log({us:10|2/3}) = {kesir:2|3} olarak hesaplanır.",
+        "'Sayıları hesaplama / oranların sayısı' anlamına gelen {koyu:logaritma} kavramı, astronomi ve denizcilikteki büyük sayıların çarpma ve bölme işlemlerini toplama ve çıkarmaya dönüştürerek kolaylaştırmak amacıyla İskoç matematikçi {koyu:John Napier} (1550-1617) tarafından icat edilmiştir ('Mirifici Logarithmorum Canonis Descriptio'). Osmanlı Devleti'nde ise 'Ayaklı Kütüphane' Müftüzade Mehmed Efendi'nin öğrencisi olan müderris {koyu:Gelenbevî İsmail Efendi} (1726-1790), logaritma üzerine müstakil eser yazmış ve Kâğıthane'de Padişah {koyu:III. Selim} huzurunda humbaracıların başarısız top atışlarındaki açı hatalarını riyazi hesaplarla düzelterek tam isabet sağlamıştır."
+      ],
+      "kutu": {
+        "tur": "bilgi",
+        "baslik": "pH Ölçeği ve 10 Tabanında Logaritma",
+        "metin": "Bir çözeltinin hidrojen iyonu derişimi [{us:H|+}] = {us:10|−pH} mol/L formülüyle, yani pH = −log[{us:H|+}] ile hesaplanır. Saf suda [{us:H|+}] = {us:10|−7} olduğundan pH = −log({us:10|−7}) = 7 (nötr) olur; pH < 7 ise asidik, pH > 7 ise baziktir."
+      },
+      "gorsel": "<svg viewBox=\"0 0 720 285\" role=\"img\" aria-label=\"10 Tabanında Logaritma ve Tarihçesi\">\n    <rect x=\"20\" y=\"16\" width=\"680\" height=\"44\" rx=\"10\" fill=\"#7c2d12\"/>\n    <text x=\"360\" y=\"44\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#ffffff\">10 Tabanında (Adi) Logaritma, pH Ölçeği ve Logaritma Tarihi</text>\n\n    <rect x=\"25\" y=\"75\" width=\"320\" height=\"195\" rx=\"12\" fill=\"#fff7ed\" stroke=\"#f97316\" stroke-width=\"2\"/>\n    <text x=\"185\" y=\"102\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#9a3412\">10 Tabanında Logaritma (log x)</text>\n    <text x=\"45\" y=\"128\" font-size=\"13\" font-weight=\"bold\" fill=\"#c2410c\">log₁₀ x = log x = y  ⇔  x = 10ʸ</text>\n    <text x=\"45\" y=\"152\" font-size=\"12\" fill=\"#7c2d12\">• log 10 = 1   |   • log 1000 = log(10³) = 3</text>\n    <text x=\"45\" y=\"174\" font-size=\"12\" fill=\"#7c2d12\">• log(0,0001) = log(10⁻⁴) = -4</text>\n    <rect x=\"42\" y=\"190\" width=\"286\" height=\"65\" rx=\"8\" fill=\"#ffedd5\"/>\n    <text x=\"185\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#9a3412\">Kimyada pH Ölçeği: pH = -log[H⁺]</text>\n    <text x=\"185\" y=\"228\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7c2d12\">0 ← Asidik (pH &lt; 7) | Nötr (7) | Bazik (pH &gt; 7) → 14</text>\n    <text x=\"185\" y=\"245\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7c2d12\">Richter Deprem Enerjisi: E = 10^(11,8 + 1,5M)</text>\n\n    <rect x=\"375\" y=\"75\" width=\"320\" height=\"195\" rx=\"12\" fill=\"#fef2f2\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n    <text x=\"535\" y=\"102\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#991b1b\">Bilim Tarihinde Öncü İsimler</text>\n    <text x=\"392\" y=\"130\" font-size=\"12\" font-weight=\"bold\" fill=\"#b91c1c\">1. John Napier (1550 - 1617)</text>\n    <text x=\"392\" y=\"148\" font-size=\"11\" fill=\"#7f1d1d\">• \"Logaritma\" terimini ve cetvellerini</text>\n    <text x=\"392\" y=\"164\" font-size=\"11\" fill=\"#7f1d1d\">büyük hesapları kolaylaştırmak için icat etti.</text>\n    <text x=\"392\" y=\"192\" font-size=\"12\" font-weight=\"bold\" fill=\"#b91c1c\">2. Gelenbevî İsmail Efendi (1726 - 1790)</text>\n    <text x=\"392\" y=\"210\" font-size=\"11\" fill=\"#7f1d1d\">• Osmanlı'da logaritma risalesi yazdı.</text>\n    <text x=\"392\" y=\"228\" font-size=\"11\" fill=\"#7f1d1d\">• Kâğıthane'de III. Selim huzurunda</text>\n    <text x=\"392\" y=\"244\" font-size=\"11\" fill=\"#7f1d1d\">humbaracıların top atış açılarını düzeltti.</text>\n    </svg>"
+    },
+    {
+      "baslik": "Euler Sayısı (e) ve Doğal Logaritma Fonksiyonu (ln x)",
+      "metin": [
+        "Matematikte π sayısı gibi çok önemli bir diğer irrasyonel sabit {koyu:Euler sayısı (e)}dir. Pozitif tam sayı n sınırsız büyüdükçe {us:(1 + {kesir:1|n})|n} ifadesinin yaklaştığı değer veya {koyu:e = {kesir:1|0!} + {kesir:1|1!} + {kesir:1|2!} + {kesir:1|3!} + … ≈ 2,7182818…} sonsuz toplamı {koyu:e sayısını} verir. Bu sabiti ilk kez İsviçreli matematikçi {koyu:Jakob Bernoulli} bileşik faiz problemlerini incelerken keşfetmiş; {koyu:Leonhard Euler} ise sayıya e harfini vermiş ve irrasyonel olduğunu kanıtlamıştır. 2 < e < 3 olduğu için y = {us:e|x} üstel fonksiyonunun grafiği analitik düzlemde {koyu:y = {us:2|x} ile y = {us:3|x} grafikleri arasında} yer alır.",
+        "Tabanı e (Euler sayısı) olan logaritma fonksiyonuna {koyu:doğal logaritma fonksiyonu} denir ve {koyu:f: ℝ⁺ → ℝ, f(x) = logₑ x = ln x} biçiminde gösterilir. Temel denklik ln x = y ⇔ x = {us:e|y} şeklindedir. Tabanı e ≈ 2,718 > 1 olduğundan f(x) = ln x {koyu:artan} bir fonksiyondur ve grafiği g(x) = {us:e|x} grafiğinin y = x doğrusuna göre simetriğidir. Tanım gereği ln 1 = 0, ln e = 1, ln({us:e|−2}) = −2 ve ln({kok:{us:e|3}|5}) = ln({us:e|3/5}) = {kesir:3|5} olur."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 720 285\" role=\"img\" aria-label=\"Euler Sayısı ve Doğal Logaritma Fonksiyonu\">\n    <rect x=\"20\" y=\"16\" width=\"680\" height=\"44\" rx=\"10\" fill=\"#312e81\"/>\n    <text x=\"360\" y=\"44\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#ffffff\">Euler Sayısı (e ≈ 2,71828...) ve Doğal Logaritma Fonksiyonu (ln x)</text>\n\n    <rect x=\"25\" y=\"75\" width=\"320\" height=\"195\" rx=\"12\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\"/>\n    <text x=\"185\" y=\"102\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#312e81\">Euler Sayısı (e) Nedir?</text>\n    <text x=\"45\" y=\"128\" font-size=\"12\" font-weight=\"bold\" fill=\"#4338ca\">• (1 + 1/n)ⁿ  (n → ∞ iken yakınsadığı limit)</text>\n    <text x=\"45\" y=\"150\" font-size=\"12\" font-weight=\"bold\" fill=\"#4338ca\">• e = 1/0! + 1/1! + 1/2! + 1/3! + ... ≈ 2,71828</text>\n    <text x=\"45\" y=\"176\" font-size=\"11\" fill=\"#3730a3\">• Jakob Bernoulli bileşik faizde keşfetti;</text>\n    <text x=\"45\" y=\"194\" font-size=\"11\" fill=\"#3730a3\">Leonhard Euler \"e\" adını verip irrasyonelliğini</text>\n    <text x=\"45\" y=\"212\" font-size=\"11\" fill=\"#3730a3\">ispatladı.</text>\n    <text x=\"45\" y=\"238\" font-size=\"12\" font-weight=\"bold\" fill=\"#312e81\">• 2 &lt; e &lt; 3  ⇒  y = eˣ grafiği 2ˣ ile 3ˣ arasındadır.</text>\n\n    <rect x=\"375\" y=\"75\" width=\"320\" height=\"195\" rx=\"12\" fill=\"#ecfdf5\" stroke=\"#10b981\" stroke-width=\"2\"/>\n    <text x=\"535\" y=\"102\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#065f46\">Doğal Logaritma (f(x) = logₑ x = ln x)</text>\n    <text x=\"395\" y=\"130\" font-size=\"13\" font-weight=\"bold\" fill=\"#047857\">ln x = y  ⇔  x = eʸ  (x &gt; 0)</text>\n    <text x=\"395\" y=\"156\" font-size=\"12\" fill=\"#064e3b\">• ln 1 = 0        • ln e = 1</text>\n    <text x=\"395\" y=\"180\" font-size=\"12\" fill=\"#064e3b\">• ln(e³) = 3      • ln(1 / e²) = ln(e⁻²) = -2</text>\n    <text x=\"395\" y=\"204\" font-size=\"12\" fill=\"#064e3b\">• Tabanı e &gt; 1 olduğundan artan fonksiyondur.</text>\n    <text x=\"395\" y=\"228\" font-size=\"12\" fill=\"#064e3b\">• Grafiği y = eˣ üstel fonksiyonunun</text>\n    <text x=\"395\" y=\"248\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#065f46\">y = x doğrusuna göre simetriğidir.</text>\n    </svg>"
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "soru": "Aşağıdaki matematiksel kavram ve ifadeleri karşılıklarıyla eşleştiriniz.",
-   "ciftler": [
-    [
-     "log₁₀ x = log x",
-     "10 tabanında (adi / bayağı) logaritma fonksiyonu"
-    ],
-    [
-     "logₑ x = ln x",
-     "Euler sayısı (e ≈ 2,718) tabanında doğal logaritma fonksiyonu"
-    ],
-    [
-     "(1, 0) noktası",
-     "Her y = logₐ x logaritma grafiğinin x eksenini kestiği ortak nokta"
-    ],
-    [
-     "Gelenbevî İsmail Efendi",
-     "Osmanlı'da logaritma eseri yazan ve III. Selim huzurunda top açılarını hesaplayan âlim"
-    ],
-    [
-     "Δ < 0 ve m > 0",
-     "f(x) = logₐ(m{us:x|2} + nx + k) fonksiyonunun her gerçek sayı için tanımlı olma şartı"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
-   "cumleler": [
+  ],
+  "ornekler": [
     {
-     "metin": "Bire bir ve örten f: ℝ → ℝ⁺, f(x) = {us:a|x} üstel fonksiyonunun tersine ___ fonksiyonu denir.",
-     "cevap": "logaritma"
+      "soru": "log₂(3 + log₃(x − 1)) = 2 denkleminde x gerçek sayısının değerini bulunuz.",
+      "cevap": "Dıştaki 2 tabanlı logaritmadan başlayarak üstel dönüşüm (y = logₐ u ⇔ u = {us:a|y}) uygularız: 3 + log₃(x − 1) = {us:2|2} = 4 olur. Buradan log₃(x − 1) = 4 − 3 = 1 elde edilir. Tekrar üstel dönüşüm yapıldığında x − 1 = {us:3|1} = 3 ⇒ {koyu:x = 4} bulunur."
     },
     {
-     "metin": "Logaritma fonksiyonunun tanım kümesi ___ gerçek sayılar kümesidir (ℝ⁺).",
-     "cevap": "pozitif"
+      "soru": "f: ℝ → (5, ∞), f(x) = {us:3|x+1} + 5 üstel fonksiyonunun tersi olan {us:f|−1}(x) fonksiyonunun kuralını bulunuz.",
+      "cevap": "y = {us:3|x+1} + 5 yazıp x'i yalnız bırakalım: y − 5 = {us:3|x+1} olur. Logaritma tanımından x + 1 = log₃(y − 5) ⇒ x = log₃(y − 5) − 1 elde edilir. x ile y yer değiştirildiğinde ters fonksiyon {koyu:{us:f|−1}(x) = log₃(x − 5) − 1} olarak bulunur."
     },
     {
-     "metin": "Tabanı 10 olan log x fonksiyonuna ___ logaritma fonksiyonu adı verilir.",
-     "cevap": "adi"
+      "soru": "f(x) = log_(x−2)(−{us:x|2} + 5x) fonksiyonunun gerçek sayılardaki en geniş tanım kümesini bulunuz.",
+      "cevap": "Tanımlı olma şartlarını yazalım: {koyu:1. İç kısım pozitif olmalı:} −{us:x|2} + 5x > 0 ⇒ x(5 − x) > 0, kökler 0 ve 5 olup işaret tablosundan 0 < x < 5 bulunur. {koyu:2. Taban pozitif olmalı:} x − 2 > 0 ⇒ x > 2. {koyu:3. Taban 1 olmamalı:} x − 2 ≠ 1 ⇒ x ≠ 3. Üç koşulun ortak kesişimi alındığında en geniş tanım kümesi {koyu:(2, 5)} − {3} olur."
     },
     {
-     "metin": "Bileşik faiz problemlerini incelerken e ≈ 2,718 sabitini keşfeden matematikçi Jakob ___ olup sayıya e adını veren Leonhard Euler'dir.",
-     "cevap": "Bernoulli"
+      "soru": "f(x) = log₅({us:x|2} − (k − 3)x + 4) fonksiyonu her x gerçek sayısı için tanımlı olduğuna göre k'nin değer aralığını bulunuz.",
+      "cevap": "Fonksiyonun her x ∈ ℝ için tanımlı olması için {us:x|2} − (k − 3)x + 4 > 0 eşitsizliği daima sağlanmalı, yani ikinci dereceden ifadenin gerçek kökü olmamalıdır (Δ < 0). Buradan Δ = {us:[−(k−3)]|2} − 4 · 1 · 4 < 0 ⇒ {us:k|2} − 6k + 9 − 16 < 0 ⇒ {us:k|2} − 6k − 7 < 0 olur. Çarpanlarına ayırdığımızda (k − 7)(k + 1) < 0 eşitsizliğinin çözüm aralığı {koyu:(−1, 7)} olarak bulunur."
     },
     {
-     "metin": "Tabanı e olan ln x fonksiyonuna ___ logaritma fonksiyonu denir.",
-     "cevap": "doğal"
+      "soru": "log 1000 + log(0,01) + ln({us:e|4}) − ln({kesir:1|e²}) işleminin sonucu kaçtır?",
+      "cevap": "10 tabanında (adi) ve e tabanında (doğal) logaritma değerlerini ayrı ayrı bulalım: log 1000 = log({us:10|3}) = 3, log(0,01) = log({us:10|−2}) = −2, ln({us:e|4}) = 4 ve ln({kesir:1|e²}) = ln({us:e|−2}) = −2'dir. Yerine yazdığımızda 3 + (−2) + 4 − (−2) = 1 + 4 + 2 = {koyu:7} bulunur."
+    },
+    {
+      "soru": "Bir limon suyunun hidrojen iyonu derişimi [{us:H|+}] = {us:10|−2,4} mol/L ve bir sabunun hidrojen iyonu derişimi [{us:H|+}] = {us:10|−9,4} mol/L olduğuna göre bu iki maddenin pH değerlerini ve limon suyundaki [{us:H|+}] yoğunluğunun sabundakinin kaç katı olduğunu bulunuz.",
+      "cevap": "pH = −log[{us:H|+}] bağıntısından limon suyunun pH değeri −log({us:10|−2,4}) = {koyu:2,4} (asidik), sabunun pH değeri ise −log({us:10|−9,4}) = {koyu:9,4} (bazik) olur. İyon yoğunlukları oranı ise {kesir:10⁻²'⁴|10⁻⁹'⁴} = {us:10|−2,4 − (−9,4)} = {koyu:{us:10|7}} (10 milyon) kattır."
     }
-   ],
-   "fazla": [
-    "negatif",
-    "aritmetik"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "f(x) = {us:2|x} üstel fonksiyonu ile g(x) = log₂ x logaritma fonksiyonunun tanım ve görüntü kümelerini, eksenleri kestikleri noktaları, artanlık-azalanlık durumlarını ve grafiklerinin simetri eksenini karşılaştırarak açıklayınız.",
-   "ipuclari": [
-    "f(x) = {us:2|x} fonksiyonunun tanım ve görüntü kümesi nedir; tersi alındığında bu kümeler nasıl yer değiştirir?",
-    "Üstel fonksiyon hangi ekseni (0, 1) noktasında keser; logaritma fonksiyonu ise hangi ekseni (1, 0) noktasında keser?",
-    "Taban a = 2 > 1 olduğuna göre her iki fonksiyonun artanlık durumu ve grafiklerinin simetri doğrusu nedir?"
-   ],
-   "cevap": "f(x) = {us:2|x} üstel fonksiyonu ile g(x) = log₂ x logaritma fonksiyonu birbirinin tersi olan iki fonksiyondur (g = {us:f|−1}). Bu nedenle f(x) = {us:2|x} fonksiyonunun tanım kümesi ℝ, görüntü kümesi ℝ⁺ iken; tersi olan g(x) = log₂ x fonksiyonunun {koyu:tanım kümesi ℝ⁺, görüntü kümesi ise ℝ}'dir. f(x) = {us:2|x} grafiği y eksenini {koyu:(0, 1)} noktasında kesip x eksenini kesmezken; g(x) = log₂ x grafiği x eksenini {koyu:(1, 0)} noktasında keser ve y eksenini hiç kesmez. Her iki fonksiyonun da tabanı a = 2 > 1 olduğu için {koyu:her ikisi de artan fonksiyondur} ve analitik düzlemdeki grafikleri {koyu:y = x doğrusuna göre birbirinin simetriğidir}."
-  }
- ]
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "log₁/₃ x = −4 eşitliğini sağlayan x gerçek sayısı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "81",
+        "−12",
+        "12",
+        "{kesir:1|81}",
+        "27"
+      ],
+      "dogru": 0,
+      "aciklama": "logₐ x = y ⇔ x = {us:a|y} tanımından x = {us:({kesir:1|3})|−4} = {us:3|4} = 81 bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "f(x) = log_(x−3)(15 − 3x) fonksiyonunun en geniş tanım kümesinde bulunan tam sayıların toplamı kaçtır?",
+      "secenekler": [
+        "4",
+        "0",
+        "7",
+        "9",
+        "12"
+      ],
+      "dogru": 1,
+      "aciklama": "Tanım şartları: 1) 15 − 3x > 0 ⇒ x < 5; 2) x − 3 > 0 ⇒ x > 3; 3) x − 3 ≠ 1 ⇒ x ≠ 4. (3, 5) aralığında 4 hariç hiçbir tam sayı bulunmadığından tam sayıların toplamı 0'dır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "f: (2, ∞) → ℝ, f(x) = log₃(x − 2) + 4 fonksiyonunun tersi olan {us:f|−1}(x) aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "{us:3|x−2} + 4",
+        "{us:3|x+4} − 2",
+        "{us:3|x−4} + 2",
+        "log₃(x − 4) + 2",
+        "{us:4|x−3} + 2"
+      ],
+      "dogru": 2,
+      "aciklama": "y = log₃(x − 2) + 4 ⇒ y − 4 = log₃(x − 2) ⇒ x − 2 = {us:3|y−4} ⇒ x = {us:3|y−4} + 2 olur. x ile y yer değiştirildiğinde {us:f|−1}(x) = {us:3|x−4} + 2 bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "log(0,001) + ln({us:e|5}) + log₇ 1 işleminin sonucu kaçtır?",
+      "secenekler": [
+        "1",
+        "8",
+        "3",
+        "2",
+        "−2"
+      ],
+      "dogru": 3,
+      "aciklama": "log(0,001) = log({us:10|−3}) = −3, ln({us:e|5}) = 5 ve log₇ 1 = 0 olduğundan toplam −3 + 5 + 0 = 2 olur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "f(x) = {us:a|x} üstel fonksiyonu ile tersi olan {us:f|−1}(x) = logₐ x fonksiyonunun grafikleri y = x doğrusuna göre simetriktir.",
+          "dogru": true,
+          "aciklama": "Doğru. Birbirinin tersi olan bütün fonksiyonların grafikleri y = x birinci açıortay doğrusuna göre simetriktir."
+        },
+        {
+          "metin": "f(x) = log₂/₅ x fonksiyonunun tabanı pozitif olduğu için bu fonksiyon artan bir fonksiyondur.",
+          "dogru": false,
+          "aciklama": "Yanlış. Taban a = {kesir:2|5} değeri 0 < a < 1 aralığında olduğu için fonksiyon azalandır."
+        },
+        {
+          "metin": "Euler sayısı (e ≈ 2,718), 2 ile 3 arasında irrasyonel bir sayı olduğundan y = {us:e|x} grafiği y = {us:2|x} ile y = {us:3|x} grafikleri arasında yer alır.",
+          "dogru": true,
+          "aciklama": "Doğru. 2 < e < 3 eşitsizliği gereğince y = {us:e|x} eğrisi bu iki eğrinin arasındadır."
+        },
+        {
+          "metin": "y = logₐ x fonksiyonunun grafiği y eksenini daima (0, 1) noktasında keser.",
+          "dogru": false,
+          "aciklama": "Yanlış. (0, 1) noktasından geçen üstel fonksiyondur; y = logₐ x grafiği y eksenini hiç kesmez, x eksenini (1, 0) noktasında keser."
+        },
+        {
+          "metin": "Logaritma kavramı büyük sayılarla yapılan hesaplamaları kolaylaştırmak amacıyla İskoç matematikçi John Napier tarafından icat edilmiştir.",
+          "dogru": true,
+          "aciklama": "Doğru. John Napier 20 yıl süren çalışmasıyla logaritma cetvellerini oluşturmuştur."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki matematiksel kavram ve ifadeleri karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "log₁₀ x = log x",
+          "10 tabanında (adi / bayağı) logaritma fonksiyonu"
+        ],
+        [
+          "logₑ x = ln x",
+          "Euler sayısı (e ≈ 2,718) tabanında doğal logaritma fonksiyonu"
+        ],
+        [
+          "(1, 0) noktası",
+          "Her y = logₐ x logaritma grafiğinin x eksenini kestiği ortak nokta"
+        ],
+        [
+          "Gelenbevî İsmail Efendi",
+          "Osmanlı'da logaritma eseri yazan ve III. Selim huzurunda top açılarını hesaplayan âlim"
+        ],
+        [
+          "Δ < 0 ve m > 0",
+          "f(x) = logₐ(m{us:x|2} + nx + k) fonksiyonunun her gerçek sayı için tanımlı olma şartı"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bire bir ve örten f: ℝ → ℝ⁺, f(x) = {us:a|x} üstel fonksiyonunun tersine ___ fonksiyonu denir.",
+          "cevap": "logaritma"
+        },
+        {
+          "metin": "Logaritma fonksiyonunun tanım kümesi ___ gerçek sayılar kümesidir (ℝ⁺).",
+          "cevap": "pozitif"
+        },
+        {
+          "metin": "Tabanı 10 olan log x fonksiyonuna ___ logaritma fonksiyonu adı verilir.",
+          "cevap": "adi"
+        },
+        {
+          "metin": "Bileşik faiz problemlerini incelerken e ≈ 2,718 sabitini keşfeden matematikçi Jakob ___ olup sayıya e adını veren Leonhard Euler'dir.",
+          "cevap": "Bernoulli"
+        },
+        {
+          "metin": "Tabanı e olan ln x fonksiyonuna ___ logaritma fonksiyonu denir.",
+          "cevap": "doğal"
+        }
+      ],
+      "fazla": [
+        "negatif",
+        "aritmetik"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "f(x) = {us:2|x} üstel fonksiyonu ile g(x) = log₂ x logaritma fonksiyonunun tanım ve görüntü kümelerini, eksenleri kestikleri noktaları, artanlık-azalanlık durumlarını ve grafiklerinin simetri eksenini karşılaştırarak açıklayınız.",
+      "cevap": "f(x) = {us:2|x} üstel fonksiyonu ile g(x) = log₂ x logaritma fonksiyonu birbirinin tersi olan iki fonksiyondur (g = {us:f|−1}). Bu nedenle f(x) = {us:2|x} fonksiyonunun tanım kümesi ℝ, görüntü kümesi ℝ⁺ iken; tersi olan g(x) = log₂ x fonksiyonunun {koyu:tanım kümesi ℝ⁺, görüntü kümesi ise ℝ}'dir. f(x) = {us:2|x} grafiği y eksenini {koyu:(0, 1)} noktasında kesip x eksenini kesmezken; g(x) = log₂ x grafiği x eksenini {koyu:(1, 0)} noktasında keser ve y eksenini hiç kesmez. Her iki fonksiyonun da tabanı a = 2 > 1 olduğu için {koyu:her ikisi de artan fonksiyondur} ve analitik düzlemdeki grafikleri {koyu:y = x doğrusuna göre birbirinin simetriğidir}.",
+      "ipuclari": [
+        "f(x) = {us:2|x} fonksiyonunun tanım ve görüntü kümesi nedir; tersi alındığında bu kümeler nasıl yer değiştirir?",
+        "Üstel fonksiyon hangi ekseni (0, 1) noktasında keser; logaritma fonksiyonu ise hangi ekseni (1, 0) noktasında keser?",
+        "Taban a = 2 > 1 olduğuna göre her iki fonksiyonun artanlık durumu ve grafiklerinin simetri doğrusu nedir?"
+      ]
+    }
+  ]
 }

@@ -1,228 +1,234 @@
 {
- "ad": "6-matematik-7",
- "sinif": 6,
- "ders": "matematik",
- "ders_adi": "Matematik",
- "hafta": 7,
- "tarih": "26-30 Ekim 2026",
- "yayin_tarihi": "2026-10-28",
- "unite": "Sayılar ve Nicelikler (2)",
- "konu": "Kesir - Bölme İlişkisi, Sonlu ve Devirli Ondalık Gösterimler ile Ondalık Gösterimleri Yuvarlama",
- "ciktilar": [
-  "Kesir ile bölme işlemi arasındaki ilişkiyi kullanarak kesirleri sonlu veya devirli ondalık gösterime dönüştürür.",
-  "Devirli ondalık gösterimleri devir çizgisiyle yazar ve devirli sayıları basamaklarını açarak karşılaştırır.",
-  "Ondalık gösterimleri verilen basamağa (birler, onda birler, yüzde birler) kadar yuvarlar ve günlük hayat tahminlerinde kullanır."
- ],
- "giris": "3 tane simidi 4 arkadaş eşit olarak paylaştığında her birine düşen {kesir:3|4} simidi ondalık olarak nasıl yazarız? Peki ya 1 simidi 3 arkadaş paylaştığında ortaya çıkan {kesir:1|3} kesrini bölmeye kalktığımızda neden bölme işlemi hiç bitmez ve {koyu:0,333...} şeklinde sonsuza kadar devam eder? Bu haftaki dersimizde {koyu:kesir ile bölme işlemi arasındaki ilişkiyi}, {koyu:sonlu ve devirli ondalık gösterimleri} ve ondalık sayıları istenen basamağa {koyu:yuvarlama} kurallarını öğreneceğiz.",
- "ozet": [
-  "{koyu:Kesir - Bölme İlişkisi:} Her {kesir:a|b} kesri aynı zamanda {koyu:payın paydaya bölünmesi (a ÷ b)} demektir. Burada {koyu:a bölünen}, {koyu:b bölen}, kesir değeri ise {koyu:bölümdür}.",
-  "{koyu:Sonlu Ondalık Gösterim:} Pay paydaya bölündüğünde kalan {koyu:0 (sıfır)} oluyorsa elde edilen ondalık gösterime {koyu:sonlu ondalık gösterim} denir (ör. {kesir:3|4} = 3 ÷ 4 = {koyu:0,75}).",
-  "{koyu:Devirli Ondalık Gösterim:} Bölme işleminde kalan hiçbir zaman sıfır olmuyor ve virgülden sonraki rakamlar belli bir kurala göre sonsuza kadar tekrar ediyorsa buna {koyu:devirli ondalık gösterim} denir ve tekrar eden kısmın üzerine {koyu:devir çizgisi} konur.",
-  "{koyu:Ondalık Gösterimleri Yuvarlama:} Yuvarlanacak basamağın {koyu:hemen sağındaki ilk rakama} bakılır; bu rakam {koyu:0, 1, 2, 3, 4} ise basamak {koyu:değişmez}, {koyu:5, 6, 7, 8, 9} ise basamak {koyu:1 artırılır} ve sağdaki rakamlar silinir.",
-  "{koyu:Devirli Sayıları Karşılaştırma:} Devirli ondalık gösterimler sıralanırken veya yuvarlanırken {koyu:devir çizgisinin altındaki rakamlar birkaç kez tekrar edilerek açık hâli} yazılır ve basamaklar soldan sağa karşılaştırılır."
- ],
- "bolumler": [
-  {
-   "baslik": "1. Kesir - Bölme İlişkisi: Sonlu ve Devirli Ondalık Gösterimler",
-   "metin": [
-    "Bir kesri ondalık gösterime çevirmenin iki temel yolu vardır:\n1. {koyu:Genişletme veya Sadeleştirme Yolu:} Paydası 10, 100 veya 1000 yapılabilen kesirler genişletilir:\n• {kesir:3|5} = {kesir:6|10} = {koyu:0,6}   |   {kesir:7|25} = {kesir:28|100} = {koyu:0,28}   |   {kesir:9|8} = {kesir:1125|1000} = {koyu:1,125}.\n2. {koyu:Payı Paydaya Bölme Yolu (a ÷ b):} Paydası genişletilerek 10, 100, 1000 yapılamayan kesirlerde (örneğin paydası 3, 6, 7, 9, 11 olan sadeleşmiş kesirlerde) doğrudan {koyu:pay paydaya bölünür}:\n• {koyu:Sonlu Ondalık Örneği:} {kesir:7|4} kesri için 7’yi 4’e böleriz: 7’de 4 bir kere (1 × 4 = 4, kalan 3); bölüme virgül, kalana sıfır atarız -> 30’da 4 yedi kere (28, kalan 2) -> 20’de 4 beş kere (20, kalan 0). Sonuç: {koyu:1,75} (kalan sıfır olduğu için {koyu:sonlu ondalık}).",
-    "• {koyu:Devirli Ondalık Örneği:} {kesir:5|3} kesri için 5’i 3’e böldüğümüzde bölüm {koyu:1,666...} şeklinde sonsuza kadar devam eder. Tekrar eden {koyu:6} rakamının üzerine yatay bir çizgi ({koyu:devir çizgisi}) konularak gösterilir.\n• {koyu:Dikkat:} Devir çizgisi virgülden sonraki tüm rakamların üzerine değil, {koyu:yalnızca tekrar eden rakam veya rakam grubunun} üzerine konur!\n  - 0,4444... -> Yalnızca {koyu:4} devrediyor.\n  - 1,2777... -> 2 tekrar etmiyor, yalnızca {koyu:7} devrediyor.\n  - 3,181818... -> {koyu:18} ikilisi birlikte devrediyor."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Devirli Ondalık Sayıları Nasıl Sıralarız?",
-    "metin": "Örneğin {koyu:A = 2,34 (sadece 4 devirli)}, {koyu:B = 2,34 (34 devirli)} ve {koyu:C = 2,34 (sonlu)} sayılarını karşılaştırırken hepsini virgülden sonra 4 basamak olacak şekilde açarız:\n• A = 2,34{koyu:44}...\n• B = 2,34{koyu:34}...\n• C = 2,34{koyu:00}\nBinde birler basamağına (4 > 3 > 0) bakınca sıralamanın {koyu:A > B > C} olduğu hemen görülür!"
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 424\" role=\"img\" aria-label=\"Konu özet şeması\"><text x=\"400\" y=\"32\" font-family=\"sans-serif\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">KESİR - BÖLME İLİŞKİSİ, DEVİRLİ ONDALIK GÖSTERİM VE YUVARLAMA</text><rect x=\"20\" y=\"56\" width=\"365\" height=\"290\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"80\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. KESİR - BÖLME VE DEVİRLİ ONDALIKLAR</text><rect x=\"35\" y=\"100\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"116\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Kesir = Bölme İşlemi (a / b = a ÷ b)</text><text x=\"202\" y=\"132\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Pay bölünen, kesir çizgisi bölme, payda ise bölendir: 3/4 = 3 ÷ 4 = 0,75.</text><rect x=\"35\" y=\"150\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"166\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Sonlu Ondalık Gösterim</text><text x=\"202\" y=\"182\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Bölme işleminde kalanın 0 olduğu ondalıklar: 7/5 = 1,4  |  3/8 = 0,375.</text><rect x=\"35\" y=\"200\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"216\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Devirli (Periyodik) Ondalık Gösterim</text><text x=\"202\" y=\"232\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Bölmede kalan 0 olmaz, rakamlar tekrar eder: 1/3 = 0,333...</text><rect x=\"35\" y=\"250\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"266\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Devir Çizgisinin Kullanımı</text><text x=\"202\" y=\"282\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Sadece tekrar eden rakamların üstüne çizgi konur: 2,4555... → 2,4(5̄).</text><rect x=\"35\" y=\"300\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"316\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Paydayı 10, 100, 1000 Yaparak Çevirme</text><text x=\"202\" y=\"332\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">3/20 kesrini 5 ile genişletirsek: 15/100 = 0,15 bulunur.</text><rect x=\"400\" y=\"56\" width=\"380\" height=\"290\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"80\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">2. ONDALIK GÖSTERİMLERİ YUVARLAMA</text><rect x=\"415\" y=\"100\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"116\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">Yuvarlama Adımı: Sağdaki İlk Rakama Bak!</text><text x=\"590\" y=\"132\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Yuvarlanacak basamağın hemen SAĞINDAKİ rakam kontrol edilir:</text><rect x=\"415\" y=\"150\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"166\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">Rakam 5’ten Küçükse (0, 1, 2, 3, 4)</text><text x=\"590\" y=\"182\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Basamak DEĞİŞMEZ, sağdaki rakamlar silinir!</text><rect x=\"415\" y=\"200\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"216\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">Rakam 5 veya 5’ten Büyükse (5, 6, 7, 8, 9)</text><text x=\"590\" y=\"232\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Yuvarlanan basamak 1 ARTIRILIR, sağdaki rakamlar silinir!</text><rect x=\"415\" y=\"250\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"266\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">Örnek 1: 4,372 → Onda Birler Basamağına</text><text x=\"590\" y=\"282\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">3’ün sağında 7 var (7 ≥ 5) → 3 bir artar → 4,4 olur.</text><rect x=\"415\" y=\"300\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"316\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">Örnek 2: 4,372 → Yüzde Birler Basamağına</text><text x=\"590\" y=\"332\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">7’nin sağında 2 var (2 &lt; 5) → 7 değişmez → 4,37 olur.</text><rect x=\"20\" y=\"360\" width=\"760\" height=\"48\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"400\" y=\"380\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">DEVİRLİ SAYILARDA SIRALAMA: Devir çizgisi açılarak basamaklar alt alta hizalanır (Ör: 2,4̄ = 2,444... &gt; 2,400...).</text><text x=\"400\" y=\"398\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Bir doğal sayıyı (Birlere) yuvarlarken virgülün hemen sağındaki ONDA BİRLER basamağına bakılır!</text></svg>"
-  },
-  {
-   "baslik": "2. Ondalık Gösterimleri İstenen Basamağa Yuvarlama",
-   "metin": [
-    "Günlük hayatta alışveriş fişlerinde, yakıt hesaplarında veya uzunluk ölçümlerinde çok basamaklı ondalık gösterimleri {koyu:yaklaşık değerleriyle ifade etmek ve işlem sonucunu tahmin etmek} için {koyu:yuvarlama} yaparız.\nOndalık bir gösterimi verilen bir basamağa yuvarlarken şu 3 adım uygulanır:\n1. Önce yuvarlanması istenen basamak (birler, onda birler veya yüzde birler) belirlenir.\n2. Bu basamağın {koyu:hemen sağındaki ilk rakama} bakılır:\n• Sağdaki rakam {koyu:5’ten küçükse (0, 1, 2, 3 veya 4 ise)}: Yuvarlanan basamaktaki rakam {koyu:aynen kalır (değişmez)} ve sağındaki tüm rakamlar silinir.\n• Sağdaki rakam {koyu:5 veya 5’ten büyükse (5, 6, 7, 8 veya 9 ise)}: Yuvarlanan basamaktaki rakam {koyu:1 artırılır} ve sağındaki tüm rakamlar silinir.",
-    "{koyu:Uygulama Örneği:} {koyu:18,648} ondalık gösterimini üç farklı basamağa yuvarlayalım:\n• {koyu:Birler basamağına (en yakın doğal sayıya) yuvarlama:} Birler basamağı {koyu:8}’dir. Hemen sağında (onda birlerde) {koyu:6} vardır. 6 ≥ 5 olduğu için 8 bir artırılır -> {koyu:19} olur.\n• {koyu:Onda birler basamağına yuvarlama:} Onda birler basamağı {koyu:6}’dır. Hemen sağında {koyu:4} vardır. 4 < 5 olduğu için 6 değişmez -> {koyu:18,6} olur.\n• {koyu:Yüzde birler basamağına yuvarlama:} Yüzde birler basamağı {koyu:4}’tür. Hemen sağında {koyu:8} vardır. 8 ≥ 5 olduğu için 4 bir artırılır -> {koyu:18,65} olur."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "Devirli Sayı Yuvarlanırken Önce Devir Açılır!",
-    "metin": "Devirli bir ondalık gösterim yuvarlanırken {koyu:önce devreden rakamlar yan yana yazılır}, sonra sağdaki rakama bakılır!\n• Örneğin sadece 7 rakamı devreden {koyu:4,6777...} sayısını {koyu:yüzde birler} basamağına yuvarlarken: Yüzde birlerdeki 7’nin sağında yine {koyu:7} olduğu için (7 ≥ 5) sayı {koyu:4,68}’e yuvarlanır!"
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "11 / 6 kesrini bölme işlemi yaparak devirli ondalık gösterim şeklinde ifade ediniz ve hangi rakamın devrettiğini belirtiniz.",
-   "cevap": "11’i 6’ya bölelim: 11’de 6 bir kere (1 × 6 = 6, kalan 5). Bölüme virgül, kalana 0 koyarız: 50’de 6 sekiz kere (8 × 6 = 48, kalan 2). 20’de 6 üç kere (3 × 6 = 18, kalan 2). Kalan sürekli 2 olduğu için bölüm {koyu:1,8333...} şeklinde devam eder. Burada 8 tekrar etmez, {koyu:yalnızca 3 rakamı devreder}."
-  },
-  {
-   "soru": "34,752 ondalık gösterimini sırasıyla: a) Birler basamağına, b) Onda birler basamağına, c) Yüzde birler basamağına yuvarlayınız.",
-   "cevap": "a) {koyu:Birler basamağına:} 4’ün sağında 7 var (7 ≥ 5) -> {koyu:35}\nb) {koyu:Onda birler basamağına:} 7’nin sağında 5 var (5 ≥ 5) -> {koyu:34,8}\nc) {koyu:Yüzde birler basamağına:} 5’in sağında 2 var (2 < 5) -> {koyu:34,75} bulunur."
-  },
-  {
-   "soru": "Yüzde birler basamağına yuvarlandığında 6,48 olan üç basamaklı (binde birler basamağına kadar olan) en büyük ve en küçük ondalık gösterimleri bulunuz.",
-   "cevap": "• {koyu:En büyük değer:} 6,48_ sayısında boşluğa 5’ten küçük en büyük rakam olan {koyu:4} yazılırsa 8 değişmez -> {koyu:6,484} olur.\n• {koyu:En küçük değer:} 6,47_ sayısında 7’nin 8’e çıkması için boşluğa en az {koyu:5} yazılmalıdır -> {koyu:6,475} olur."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "Aşağıdaki kesirlerden hangisinin ondalık gösterimi 'devirli ondalık gösterim'dir?",
-   "secenekler": [
-    "3 / 4",
-    "7 / 5",
-    "5 / 9",
-    "9 / 20",
-    "11 / 25"
-   ],
-   "dogru": 2,
-   "aciklama": "3/4 = 0,75; 7/5 = 1,4; 9/20 = 0,45 ve 11/25 = 0,44 sonlu ondalık gösterimlerdir. 5/9 ise 5 ÷ 9 = 0,555... devirli ondalık gösterimdir."
-  },
-  {
-   "tur": "coktan",
-   "soru": "15 / 4 kesrinin bölme işlemi yardımıyla bulunan ondalık gösterimi aşağıdakilerden hangisidir?",
-   "secenekler": [
-    "3,25",
-    "3,5",
-    "3,75",
-    "4,25",
-    "3,4"
-   ],
-   "dogru": 2,
-   "aciklama": "15 ÷ 4 işleminde 15 = 3 × 4 + 3 olup 3/4 = 0,75 olduğundan 15/4 = 3,75 bulunur."
-  },
-  {
-   "tur": "coktan",
-   "soru": "72,386 ondalık gösteriminin 'onda birler' basamağına yuvarlanmış hâli ile 'yüzde birler' basamağına yuvarlanmış hâli sırasıyla hangi seçenekte doğru verilmiştir?",
-   "secenekler": [
-    "72,3 ve 72,38",
-    "72,4 ve 72,38",
-    "72,4 ve 72,39",
-    "72,3 ve 72,39",
-    "72,0 ve 72,40"
-   ],
-   "dogru": 2,
-   "aciklama": "Onda birlerdeki 3’ün sağında 8 olduğu için (8 ≥ 5) 72,4’e; yüzde birlerdeki 8’in sağında 6 olduğu için (6 ≥ 5) 72,39’a yuvarlanır."
-  },
-  {
-   "tur": "coktan",
-   "soru": "A = 5,6222... (yalnız 2 devirli), B = 5,6262... (62 devirli) ve C = 5,6666... (6 devirli) devirli ondalık gösterimlerinin büyükten küçüğe doğru sıralanışı nasıldır?",
-   "secenekler": [
-    "A > B > C",
-    "C > B > A",
-    "B > C > A",
-    "C > A > B",
-    "B > A > C"
-   ],
-   "dogru": 1,
-   "aciklama": "Basamakları açalım: A = 5,622..., B = 5,626..., C = 5,666... Yüzde birler ve binde birler basamaklarına bakıldığında 5,666... > 5,626... > 5,622... yani C > B > A olur."
-  },
-  {
-   "tur": "coktan",
-   "soru": "9,8★4 ondalık gösterimi onda birler basamağına yuvarlandığında 9,9 olduğuna göre, ★ yerine yazılabilecek rakamların toplamı kaçtır?",
-   "secenekler": [
-    "10",
-    "25",
-    "30",
-    "35",
-    "45"
-   ],
-   "dogru": 3,
-   "aciklama": "Onda birler basamağındaki 8’in 9’a yükselmesi için sağındaki ★ rakamının 5 veya 5’ten büyük olması gerekir: 5, 6, 7, 8, 9. Toplamları: 5 + 6 + 7 + 8 + 9 = 35."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "6-matematik-7",
+  "sinif": 6,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 7,
+  "tarih": "26-30 Ekim 2026",
+  "yayin_tarihi": "2026-10-28",
+  "unite": "Sayılar ve Nicelikler (2)",
+  "konu": "Kesir - Bölme İlişkisi, Sonlu ve Devirli Ondalık Gösterimler ile Ondalık Gösterimleri Yuvarlama",
+  "ciktilar": [
+    "Kesir ile bölme işlemi arasındaki ilişkiyi kullanarak kesirleri sonlu veya devirli ondalık gösterime dönüştürür.",
+    "Devirli ondalık gösterimleri devir çizgisiyle yazar ve devirli sayıları basamaklarını açarak karşılaştırır.",
+    "Ondalık gösterimleri verilen basamağa (birler, onda birler, yüzde birler) kadar yuvarlar ve günlük hayat tahminlerinde kullanır."
+  ],
+  "giris": "Verilen 3 tane simidi 4 arkadaş eşit olarak paylaştığında her birine düşen {kesir:3|4} simidi ondalık olarak nasıl yazarız? Peki ya 1 simidi 3 arkadaş paylaştığında ortaya çıkan {kesir:1|3} kesrini bölmeye kalktığımızda neden bölme işlemi hiç bitmez ve {koyu:0,333...} şeklinde sonsuza kadar devam eder? Bu haftaki dersimizde {koyu:kesir ile bölme işlemi arasındaki ilişkiyi}, {koyu:sonlu ve devirli ondalık gösterimleri} ve ondalık sayıları istenen basamağa {koyu:yuvarlama} kurallarını öğreneceğiz.",
+  "ozet": [
+    "{koyu:Kesir - Bölme İlişkisi:} Her {kesir:a|b} kesri aynı zamanda {koyu:payın paydaya bölünmesi (a ÷ b)} demektir. Burada {koyu:a bölünen}, {koyu:b bölen}, kesir değeri ise {koyu:bölümdür}.",
+    "{koyu:Sonlu Ondalık Gösterim:} Pay paydaya bölündüğünde kalan {koyu:0 (sıfır)} oluyorsa elde edilen ondalık gösterime {koyu:sonlu ondalık gösterim} denir (ör. {kesir:3|4} = 3 ÷ 4 = {koyu:0,75}).",
+    "{koyu:Devirli Ondalık Gösterim:} Bölme işleminde kalan hiçbir zaman sıfır olmuyor ve virgülden sonraki rakamlar belli bir kurala göre sonsuza kadar tekrar ediyorsa buna {koyu:devirli ondalık gösterim} denir ve tekrar eden kısmın üzerine {koyu:devir çizgisi} konur.",
+    "{koyu:Ondalık Gösterimleri Yuvarlama:} Yuvarlanacak basamağın {koyu:hemen sağındaki ilk rakama} bakılır; bu rakam {koyu:0, 1, 2, 3, 4} ise basamak {koyu:değişmez}, {koyu:5, 6, 7, 8, 9} ise basamak {koyu:1 artırılır} ve sağdaki rakamlar silinir.",
+    "{koyu:Devirli Sayıları Karşılaştırma:} Devirli ondalık gösterimler sıralanırken veya yuvarlanırken {koyu:devir çizgisinin altındaki rakamlar birkaç kez tekrar edilerek açık hâli} yazılır ve basamaklar soldan sağa karşılaştırılır."
+  ],
+  "bolumler": [
     {
-     "metin": "Her kesir aynı zamanda payın paydaya bölünmesi (pay ÷ payda) işlemini ifade eder.",
-     "dogru": true,
-     "aciklama": "a/b kesri a ÷ b bölme işlemine eşittir."
+      "baslik": "Kesir - Bölme İlişkisi: Sonlu",
+      "metin": [
+        "Bir kesri ondalık gösterime çevirmenin iki temel yolu vardır:\n1. {koyu:Genişletme veya Sadeleştirme Yolu:} Paydası 10, 100 veya 1000 yapılabilen kesirler genişletilir:\n• {kesir:3|5} = {kesir:6|10} = {koyu:0,6}   |   {kesir:7|25} = {kesir:28|100} = {koyu:0,28}   |   {kesir:9|8} = {kesir:1125|1000} = {koyu:1,125}.\n2. {koyu:Payı Paydaya Bölme Yolu (a ÷ b):} Paydası genişletilerek 10, 100, 1000 yapılamayan kesirlerde (örneğin paydası 3, 6, 7, 9, 11 olan sadeleşmiş kesirlerde) doğrudan {koyu:pay paydaya bölünür}:\n• {koyu:Sonlu Ondalık Örneği:} {kesir:7|4} kesri için 7’yi 4’e böleriz: 7’de 4 bir kere (1 × 4 = 4, kalan 3); bölüme virgül, kalana sıfır atarız -> 30’da 4 yedi kere (28, kalan 2) -> 20’de 4 beş kere (20, kalan 0). Sonuç: {koyu:1,75} (kalan sıfır olduğu için {koyu:sonlu ondalık})."
+      ],
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 424\" role=\"img\" aria-label=\"Konu özet şeması\"><text x=\"400\" y=\"32\" font-family=\"sans-serif\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">KESİR - BÖLME İLİŞKİSİ, DEVİRLİ ONDALIK GÖSTERİM VE YUVARLAMA</text><rect x=\"20\" y=\"56\" width=\"365\" height=\"290\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"80\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. KESİR - BÖLME VE DEVİRLİ ONDALIKLAR</text><rect x=\"35\" y=\"100\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"116\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Kesir = Bölme İşlemi (a / b = a ÷ b)</text><text x=\"202\" y=\"132\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Pay bölünen, kesir çizgisi bölme, payda ise bölendir: 3/4 = 3 ÷ 4 = 0,75.</text><rect x=\"35\" y=\"150\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"166\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Sonlu Ondalık Gösterim</text><text x=\"202\" y=\"182\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Bölme işleminde kalanın 0 olduğu ondalıklar: 7/5 = 1,4  |  3/8 = 0,375.</text><rect x=\"35\" y=\"200\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"216\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Devirli (Periyodik) Ondalık Gösterim</text><text x=\"202\" y=\"232\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Bölmede kalan 0 olmaz, rakamlar tekrar eder: 1/3 = 0,333...</text><rect x=\"35\" y=\"250\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"266\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Devir Çizgisinin Kullanımı</text><text x=\"202\" y=\"282\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Sadece tekrar eden rakamların üstüne çizgi konur: 2,4555... → 2,4(5̄).</text><rect x=\"35\" y=\"300\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"316\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Paydayı 10, 100, 1000 Yaparak Çevirme</text><text x=\"202\" y=\"332\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">3/20 kesrini 5 ile genişletirsek: 15/100 = 0,15 bulunur.</text><rect x=\"400\" y=\"56\" width=\"380\" height=\"290\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"80\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">2. ONDALIK GÖSTERİMLERİ YUVARLAMA</text><rect x=\"415\" y=\"100\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"116\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">Yuvarlama Adımı: Sağdaki İlk Rakama Bak!</text><text x=\"590\" y=\"132\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Yuvarlanacak basamağın hemen SAĞINDAKİ rakam kontrol edilir:</text><rect x=\"415\" y=\"150\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"166\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">Rakam 5’ten Küçükse (0, 1, 2, 3, 4)</text><text x=\"590\" y=\"182\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Basamak DEĞİŞMEZ, sağdaki rakamlar silinir!</text><rect x=\"415\" y=\"200\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"216\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">Rakam 5 veya 5’ten Büyükse (5, 6, 7, 8, 9)</text><text x=\"590\" y=\"232\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Yuvarlanan basamak 1 ARTIRILIR, sağdaki rakamlar silinir!</text><rect x=\"415\" y=\"250\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"266\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">Örnek 1: 4,372 → Onda Birler Basamağına</text><text x=\"590\" y=\"282\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">3’ün sağında 7 var (7 ≥ 5) → 3 bir artar → 4,4 olur.</text><rect x=\"415\" y=\"300\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"316\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">Örnek 2: 4,372 → Yüzde Birler Basamağına</text><text x=\"590\" y=\"332\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">7’nin sağında 2 var (2 &lt; 5) → 7 değişmez → 4,37 olur.</text><rect x=\"20\" y=\"360\" width=\"760\" height=\"48\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"400\" y=\"380\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">DEVİRLİ SAYILARDA SIRALAMA: Devir çizgisi açılarak basamaklar alt alta hizalanır (Ör: 2,4̄ = 2,444... &gt; 2,400...).</text><text x=\"400\" y=\"398\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Bir doğal sayıyı (Birlere) yuvarlarken virgülün hemen sağındaki ONDA BİRLER basamağına bakılır!</text></svg>"
     },
     {
-     "metin": "2,1555... devirli ondalık gösteriminde devir çizgisi hem 1 hem de 5 rakamının üzerine çizilir.",
-     "dogru": false,
-     "aciklama": "Yanlıştır; 1 rakamı tekrar etmediği için devir çizgisi yalnızca tekrar eden 5 rakamının üzerine çizilir."
+      "baslik": "Devirli Ondalık Gösterimler",
+      "metin": [
+        "{koyu:Devirli Ondalık Örneği:} {kesir:5|3} kesri için 5’i 3’e böldüğümüzde bölüm {koyu:1,666...} şeklinde sonsuza kadar devam eder. Tekrar eden {koyu:6} rakamının üzerine yatay bir çizgi ({koyu:devir çizgisi}) konularak gösterilir.\n• {koyu:Dikkat:} Devir çizgisi virgülden sonraki tüm rakamların üzerine değil, {koyu:yalnızca tekrar eden rakam veya rakam grubunun} üzerine konur!\n  - 0,4444... -> Yalnızca {koyu:4} devrediyor.\n  - 1,2777... -> 2 tekrar etmiyor, yalnızca {koyu:7} devrediyor.\n  - 3,181818... -> {koyu:18} ikilisi birlikte devrediyor."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Devirli Ondalık Sayıları Nasıl Sıralarız?",
+        "metin": "Örneğin {koyu:A = 2,34 (sadece 4 devirli)}, {koyu:B = 2,34 (34 devirli)} ve {koyu:C = 2,34 (sonlu)} sayılarını karşılaştırırken hepsini virgülden sonra 4 basamak olacak şekilde açarız:\n• A = 2,34{koyu:44}...\n• B = 2,34{koyu:34}...\n• C = 2,34{koyu:00}\nBinde birler basamağına (4 > 3 > 0) bakınca sıralamanın {koyu:A > B > C} olduğu hemen görülür!"
+      }
     },
     {
-     "metin": "14,49 ondalık gösterimi birler basamağına (en yakın doğal sayıya) yuvarlandığında 14 olur.",
-     "dogru": true,
-     "aciklama": "Birler basamağındaki 4’ün hemen sağındaki ilk rakam 4’tür (4 < 5); bu yüzden 14’e yuvarlanır."
+      "baslik": "Ondalık Gösterimleri İstenen Basamağa Yuvarlama",
+      "metin": [
+        "Günlük hayatta alışveriş fişlerinde, yakıt hesaplarında veya uzunluk ölçümlerinde çok basamaklı ondalık gösterimleri {koyu:yaklaşık değerleriyle ifade etmek ve işlem sonucunu tahmin etmek} için {koyu:yuvarlama} yaparız.\nOndalık bir gösterimi verilen bir basamağa yuvarlarken şu 3 adım uygulanır:\n1. Önce yuvarlanması istenen basamak (birler, onda birler veya yüzde birler) belirlenir.\n2. Bu basamağın {koyu:hemen sağındaki ilk rakama} bakılır:\n• Sağdaki rakam {koyu:5’ten küçükse (0, 1, 2, 3 veya 4 ise)}: Yuvarlanan basamaktaki rakam {koyu:aynen kalır (değişmez)} ve sağındaki tüm rakamlar silinir.\n• Sağdaki rakam {koyu:5 veya 5’ten büyükse (5, 6, 7, 8 veya 9 ise)}: Yuvarlanan basamaktaki rakam {koyu:1 artırılır} ve sağındaki tüm rakamlar silinir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 460 214\" role=\"img\" aria-label=\"Kesir - Bölme İlişkisi, Sonlu ve Devirli O kavram özeti şeması\"><rect x=\"90\" y=\"12\" width=\"280\" height=\"38\" rx=\"19\" class=\"g-mf\"/><text x=\"230\" y=\"36\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"800\" class=\"g-b\">Kesir - Bölme İlişkisi, Sonlu ve Devirli O</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ma\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"116\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">1. Bölüm</text><text x=\"116\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Kesir - Bölme İlişkisi: Sonlu</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ta\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"344\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">2. Bölüm</text><text x=\"344\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Devirli Ondalık Gösterimler</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ya\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"116\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-yf\">3. Bölüm</text><text x=\"116\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Ondalık Gösterimleri İstenen Bas…</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-oa\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"344\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-of\">4. Bölüm</text><text x=\"344\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Devirli Sayı Yuvarlanırken Önce…</text></svg>"
     },
     {
-     "metin": "8 / 3 kesrinin ondalık gösterimi 2,666... şeklinde devirli bir ondalık gösterimdir.",
-     "dogru": true,
-     "aciklama": "8 ÷ 3 işleminde bölüm 2 tam, kalan 2 olup 20 ÷ 3 = 6 işlemi sonsuza kadar tekrar eder."
-    },
-    {
-     "metin": "Bir ondalık gösterimi yuvarlarken sağdaki rakam 5 ise yuvarlanan basamak değiştirilmez.",
-     "dogru": false,
-     "aciklama": "Yanlıştır; sağdaki rakam 5 veya 5’ten büyükse (5, 6, 7, 8, 9) yuvarlanan basamak 1 artırılır."
+      "baslik": "Devirli Sayı Yuvarlanırken Önce Devir Açılır!",
+      "metin": [
+        "{koyu:Uygulama Örneği:} {koyu:18,648} ondalık gösterimini üç farklı basamağa yuvarlayalım:\n• {koyu:Birler basamağına (en yakın doğal sayıya) yuvarlama:} Birler basamağı {koyu:8}’dir. Hemen sağında (onda birlerde) {koyu:6} vardır. 6 ≥ 5 olduğu için 8 bir artırılır -> {koyu:19} olur.\n• {koyu:Onda birler basamağına yuvarlama:} Onda birler basamağı {koyu:6}’dır. Hemen sağında {koyu:4} vardır. 4 < 5 olduğu için 6 değişmez -> {koyu:18,6} olur.\n• {koyu:Yüzde birler basamağına yuvarlama:} Yüzde birler basamağı {koyu:4}’tür. Hemen sağında {koyu:8} vardır. 8 ≥ 5 olduğu için 4 bir artırılır -> {koyu:18,65} olur."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Devirli Sayı Yuvarlanırken Önce Devir Açılır!",
+        "metin": "Devirli bir ondalık gösterim yuvarlanırken {koyu:önce devreden rakamlar yan yana yazılır}, sonra sağdaki rakama bakılır!\n• Örneğin sadece 7 rakamı devreden {koyu:4,6777...} sayısını {koyu:yüzde birler} basamağına yuvarlarken: Yüzde birlerdeki 7’nin sağında yine {koyu:7} olduğu için (7 ≥ 5) sayı {koyu:4,68}’e yuvarlanır!"
+      }
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "soru": "Aşağıdaki kesirleri ve yuvarlama işlemlerini doğru sonuçlarıyla eşleştiriniz.",
-   "ciftler": [
-    [
-     "3 / 8 kesrinin ondalık gösterimi",
-     "0,375 (Sonlu ondalık gösterim)"
-    ],
-    [
-     "2 / 3 kesrinin ondalık gösterimi",
-     "0,666... (Devirli ondalık gösterim)"
-    ],
-    [
-     "8,364 sayısının onda birlere yuvarlanışı",
-     "8,4"
-    ],
-    [
-     "8,364 sayısının yüzde birlere yuvarlanışı",
-     "8,36"
-    ],
-    [
-     "8,364 sayısının birler basamağına yuvarlanışı",
-     "8"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
-   "cumleler": [
+  ],
+  "ornekler": [
     {
-     "metin": "Bir kesrin payı paydasına bölündüğünde kalan sıfır olmuyorsa ve virgülden sonraki rakamlar tekrar ediyorsa buna ___ ondalık gösterim denir.",
-     "cevap": "devirli"
+      "soru": "Verilen 11 / 6 kesrini bölme işlemi yaparak devirli ondalık gösterim şeklinde ifade ediniz ve hangi rakamın devrettiğini belirtiniz.",
+      "cevap": "11’i 6’ya bölelim: 11’de 6 bir kere (1 × 6 = 6, kalan 5). Bölüme virgül, kalana 0 koyarız: 50’de 6 sekiz kere (8 × 6 = 48, kalan 2). 20’de 6 üç kere (3 × 6 = 18, kalan 2). Kalan sürekli 2 olduğu için bölüm {koyu:1,8333...} şeklinde devam eder. Burada 8 tekrar etmez, {koyu:yalnızca 3 rakamı devreder}."
     },
     {
-     "metin": "Devirli ondalık gösterimlerde yalnızca tekrar eden rakamların üzerine ___ çizgisi konur.",
-     "cevap": "devir"
+      "soru": "Verilen 34,752 ondalık gösterimini sırasıyla: a) Birler basamağına, b) Onda birler basamağına, c) Yüzde birler basamağına yuvarlayınız.",
+      "cevap": "a) {koyu:Birler basamağına:} 4’ün sağında 7 var (7 ≥ 5) -> {koyu:35}\nb) {koyu:Onda birler basamağına:} 7’nin sağında 5 var (5 ≥ 5) -> {koyu:34,8}\nc) {koyu:Yüzde birler basamağına:} 5’in sağında 2 var (2 < 5) -> {koyu:34,75} bulunur."
     },
     {
-     "metin": "Ondalık bir gösterimi en yakın doğal sayıya yuvarlamak, onu ___ basamağına yuvarlamak demektir.",
-     "cevap": "birler"
+      "soru": "Yüzde birler basamağına yuvarlandığında 6,48 olan üç basamaklı (binde birler basamağına kadar olan) en büyük ve en küçük ondalık gösterimleri bulunuz.",
+      "cevap": "{koyu:En büyük değer:} 6,48_ sayısında boşluğa 5’ten küçük en büyük rakam olan {koyu:4} yazılırsa 8 değişmez -> {koyu:6,484} olur.\n• {koyu:En küçük değer:} 6,47_ sayısında 7’nin 8’e çıkması için boşluğa en az {koyu:5} yazılmalıdır -> {koyu:6,475} olur."
     },
     {
-     "metin": "Yuvarlanacak basamağın hemen sağındaki rakam 5 veya 5’ten büyükse yuvarlanan basamaktaki rakam ___ artırılır.",
-     "cevap": "bir"
+      "soru": "Verilen 9,8★4 ondalık gösterimi onda birler basamağına yuvarlandığında 9,9 olduğuna göre, ★ yerine yazılabilecek rakamların toplamı kaçtır?",
+      "cevap": "Doğru yanıt: 35. Onda birler basamağındaki 8’in 9’a yükselmesi için sağındaki ★ rakamının 5 veya 5’ten büyük olması gerekir: 5, 6, 7, 8, 9. Toplamları: 5 + 6 + 7 + 8 + 9 = 35."
     },
     {
-     "metin": "9 / 5 kesrinin ondalık gösterimi ___’dir.",
-     "cevap": "1,8"
+      "soru": "‘Kesir - Bölme İlişkisi: Sonlu’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
+      "cevap": "Bir kesri ondalık gösterime çevirmenin iki temel yolu vardır:\n1. {koyu:Genişletme veya Sadeleştirme Yolu:} Paydası 10, 100 veya 1000 yapılabilen kesirler genişletilir:\n• {kesir:3|5} = {kesir:6|10} = {koyu:0,6}   |   {kesir:7|25} = {kesir:28|100} = {koyu:0,28}   |   {kesir:9|8} = {kesir:1125|1000} = {koyu:1,125}.\n2. {koyu:Payı Paydaya Bölme Yolu (a ÷ b):} Paydası genişletilerek 10, 100, 1000 yapılamayan kesirlerde (örneğin paydası 3, 6, 7, 9, 11 olan sadeleşmiş kesirlerde) doğrudan {koyu:pay paydaya bölünür}:\n• {koyu:Sonlu Ondalık Örneği:} {kesir:7|4} kesri için 7’yi 4’e böleriz: 7’de 4 bir kere (1 × 4 = 4, kalan 3); bölüme virgül, kalana sıfır atarız -> 30’da 4 yedi kere (28, kalan 2) -> 20’de 4 beş kere (20, kalan 0). Sonuç: {koyu:1,75} (kalan sıfır olduğu için {koyu:sonlu ondalık})."
+    },
+    {
+      "soru": "‘Devirli Ondalık Gösterimler’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
+      "cevap": "{koyu:Devirli Ondalık Örneği:} {kesir:5|3} kesri için 5’i 3’e böldüğümüzde bölüm {koyu:1,666...} şeklinde sonsuza kadar devam eder. Tekrar eden {koyu:6} rakamının üzerine yatay bir çizgi ({koyu:devir çizgisi}) konularak gösterilir.\n• {koyu:Dikkat:} Devir çizgisi virgülden sonraki tüm rakamların üzerine değil, {koyu:yalnızca tekrar eden rakam veya rakam grubunun} üzerine konur!\n  - 0,4444... -> Yalnızca {koyu:4} devrediyor.\n  - 1,2777... -> 2 tekrar etmiyor, yalnızca {koyu:7} devrediyor.\n  - 3,181818... -> {koyu:18} ikilisi birlikte devrediyor."
     }
-   ],
-   "fazla": [
-    "iki",
-    "onlar"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Marketten kilogramı 24,85 TL olan elmadan 1 kg ve fiyatı 15,28 TL olan ekmekten 1 adet alan Kerem, ödeyeceği toplam tutarı fiyatları önce 'onda birler basamağına', sonra 'birler basamağına' yuvarlayarak iki farklı şekilde tahmin ediyor. Her iki tahmini ve gerçek sonucu bularak karşılaştırınız.",
-   "ipuclari": [
-    "1. İpucu: 24,85 ve 15,28 sayılarını önce onda birler basamağına (24,9 ve 15,3), sonra birler basamağına (25 ve 15) yuvarlayınız.",
-    "2. İpucu: Gerçek toplamı (24,85 + 15,28 = 40,13 TL) bularak hangi tahminin gerçeğe daha yakın olduğunu belirtiniz."
-   ],
-   "cevap": "1. Gerçek Sonuç: 24,85 + 15,28 = 40,13 TL.\n2. Onda Birler Basamağına Yuvarlayarak Tahmin:\n• 24,85 -> 8’in sağında 5 var -> 24,9 TL\n• 15,28 -> 2’nin sağında 8 var -> 15,3 TL\n• Tahmini Toplam: 24,9 + 15,3 = 40,2 TL.\n3. Birler Basamağına (Doğal Sayıya) Yuvarlayarak Tahmin:\n• 24,85 -> 4’ün sağında 8 var -> 25 TL\n• 15,28 -> 5’in sağında 2 var -> 15 TL\n• Tahmini Toplam: 25 + 15 = 40 TL.\nKarşılaştırma: Onda birler basamağına yuvarlanarak yapılan tahmin (40,20 TL), gerçek sonuca (40,13 TL) sadece 0,07 TL farkla daha yakındır."
-  }
- ]
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki kesirlerden hangisinin ondalık gösterimi 'devirli ondalık gösterim'dir?",
+      "secenekler": [
+        "5 / 9",
+        "7 / 5",
+        "9 / 20",
+        "3 / 4"
+      ],
+      "dogru": 0,
+      "aciklama": "3/4 = 0,75; 7/5 = 1,4; 9/20 = 0,45 ve 11/25 = 0,44 sonlu ondalık gösterimlerdir. 5/9 ise 5 ÷ 9 = 0,555... devirli ondalık gösterimdir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Verilen 15 / 4 kesrinin bölme işlemi yardımıyla bulunan ondalık gösterimi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "3,25",
+        "3,75",
+        "4,25",
+        "3,5"
+      ],
+      "dogru": 1,
+      "aciklama": "15 ÷ 4 işleminde 15 = 3 × 4 + 3 olup 3/4 = 0,75 olduğundan 15/4 = 3,75 bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Verilen 72,386 ondalık gösteriminin 'onda birler' basamağına yuvarlanmış hâli ile 'yüzde birler' basamağına yuvarlanmış hâli sırasıyla hangi seçenekte doğru verilmiştir?",
+      "secenekler": [
+        "72,3 ve 72,38",
+        "72,4 ve 72,38",
+        "72,4 ve 72,39",
+        "72,3 ve 72,39"
+      ],
+      "dogru": 2,
+      "aciklama": "Onda birlerdeki 3’ün sağında 8 olduğu için (8 ≥ 5) 72,4’e; yüzde birlerdeki 8’in sağında 6 olduğu için (6 ≥ 5) 72,39’a yuvarlanır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "A = 5,6222... (yalnız 2 devirli), B = 5,6262... (62 devirli) ve C = 5,6666... (6 devirli) devirli ondalık gösterimlerinin büyükten küçüğe doğru sıralanışı nasıldır?",
+      "secenekler": [
+        "A > B > C",
+        "B > C > A",
+        "C > A > B",
+        "C > B > A"
+      ],
+      "dogru": 3,
+      "aciklama": "Basamakları açalım: A = 5,622..., B = 5,626..., C = 5,666... Yüzde birler ve binde birler basamaklarına bakıldığında 5,666... > 5,626... > 5,622... yani C > B > A olur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Her kesir aynı zamanda payın paydaya bölünmesi (pay ÷ payda) işlemini ifade eder.",
+          "dogru": true,
+          "aciklama": "a/b kesri a ÷ b bölme işlemine eşittir."
+        },
+        {
+          "metin": "Verilen 2,1555... devirli ondalık gösteriminde devir çizgisi hem 1 hem de 5 rakamının üzerine çizilir.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; 1 rakamı tekrar etmediği için devir çizgisi yalnızca tekrar eden 5 rakamının üzerine çizilir."
+        },
+        {
+          "metin": "Verilen 14,49 ondalık gösterimi birler basamağına (en yakın doğal sayıya) yuvarlandığında 14 olur.",
+          "dogru": true,
+          "aciklama": "Birler basamağındaki 4’ün hemen sağındaki ilk rakam 4’tür (4 < 5); bu yüzden 14’e yuvarlanır."
+        },
+        {
+          "metin": "Verilen 8 / 3 kesrinin ondalık gösterimi 2,666... şeklinde devirli bir ondalık gösterimdir.",
+          "dogru": true,
+          "aciklama": "8 ÷ 3 işleminde bölüm 2 tam, kalan 2 olup 20 ÷ 3 = 6 işlemi sonsuza kadar tekrar eder."
+        },
+        {
+          "metin": "Bir ondalık gösterimi yuvarlarken sağdaki rakam 5 ise yuvarlanan basamak değiştirilmez.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; sağdaki rakam 5 veya 5’ten büyükse (5, 6, 7, 8, 9) yuvarlanan basamak 1 artırılır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kesirleri ve yuvarlama işlemlerini doğru sonuçlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "3 / 8 kesrinin ondalık gösterimi",
+          "0,375 (Sonlu ondalık gösterim)"
+        ],
+        [
+          "2 / 3 kesrinin ondalık gösterimi",
+          "0,666... (Devirli ondalık gösterim)"
+        ],
+        [
+          "8,364 sayısının onda birlere yuvarlanışı",
+          "8,4"
+        ],
+        [
+          "8,364 sayısının yüzde birlere yuvarlanışı",
+          "8,36"
+        ],
+        [
+          "8,364 sayısının birler basamağına yuvarlanışı",
+          "8"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir kesrin payı paydasına bölündüğünde kalan sıfır olmuyorsa ve virgülden sonraki rakamlar tekrar ediyorsa buna ___ ondalık gösterim denir.",
+          "cevap": "devirli"
+        },
+        {
+          "metin": "Devirli ondalık gösterimlerde yalnızca tekrar eden rakamların üzerine ___ çizgisi konur.",
+          "cevap": "devir"
+        },
+        {
+          "metin": "Ondalık bir gösterimi en yakın doğal sayıya yuvarlamak, onu ___ basamağına yuvarlamak demektir.",
+          "cevap": "birler"
+        },
+        {
+          "metin": "Yuvarlanacak basamağın hemen sağındaki rakam 5 veya 5’ten büyükse yuvarlanan basamaktaki rakam ___ artırılır.",
+          "cevap": "bir"
+        },
+        {
+          "metin": "Verilen 9 / 5 kesrinin ondalık gösterimi ___’dir.",
+          "cevap": "1,8"
+        }
+      ],
+      "fazla": [
+        "iki",
+        "onlar"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Marketten kilogramı 24,85 TL olan elmadan 1 kg ve fiyatı 15,28 TL olan ekmekten 1 adet alan Kerem, ödeyeceği toplam tutarı fiyatları önce 'onda birler basamağına', sonra 'birler basamağına' yuvarlayarak iki farklı şekilde tahmin ediyor. Her iki tahmini ve gerçek sonucu bularak karşılaştırınız.",
+      "cevap": "1. Gerçek Sonuç: 24,85 + 15,28 = 40,13 TL.\n2. Onda Birler Basamağına Yuvarlayarak Tahmin:\n• 24,85 -> 8’in sağında 5 var -> 24,9 TL\n• 15,28 -> 2’nin sağında 8 var -> 15,3 TL\n• Tahmini Toplam: 24,9 + 15,3 = 40,2 TL.\n3. Birler Basamağına (Doğal Sayıya) Yuvarlayarak Tahmin:\n• 24,85 -> 4’ün sağında 8 var -> 25 TL\n• 15,28 -> 5’in sağında 2 var -> 15 TL\n• Tahmini Toplam: 25 + 15 = 40 TL.\nKarşılaştırma: Onda birler basamağına yuvarlanarak yapılan tahmin (40,20 TL), gerçek sonuca (40,13 TL) sadece 0,07 TL farkla daha yakındır.",
+      "ipuclari": [
+        "1. İpucu: 24,85 ve 15,28 sayılarını önce onda birler basamağına (24,9 ve 15,3), sonra birler basamağına (25 ve 15) yuvarlayınız.",
+        "2. İpucu: Gerçek toplamı (24,85 + 15,28 = 40,13 TL) bularak hangi tahminin gerçeğe daha yakın olduğunu belirtiniz."
+      ]
+    }
+  ]
 }

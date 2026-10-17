@@ -28,7 +28,7 @@ def gorsel_2():
     ic = _kutu(10, 10, 680, 200, "#eff6ff", "#2563eb", 12, 2)
     ic += _metin(350, 34, "DOĞU VE BATI BİLİM HAVZALARI (HORASAN-MÂVERÂÜNNEHİR, MISIR, ENDÜLÜS)", 12, "#1e3a8a", "bold")
     cols = [
-        (25, "Horasan & Mâverâünnehir", "Buhara, Semerkant, Merv, Belh", "Buhârî, Mâtürîdî, İbn Sînâ,", "Fârâbî, Hârizmî, Uluğ Bey", "Türk-İslam rönesans merkezi"),
+        (25, "Horasan &amp; Mâverâünnehir", "Buhara, Semerkant, Merv, Belh", "Buhârî, Mâtürîdî, İbn Sînâ,", "Fârâbî, Hârizmî, Uluğ Bey", "Türk-İslam rönesans merkezi"),
         (248, "Mısır ve Kuzey Afrika", "Kahire, İskenderiye, Kayrevan", "el-Ezher Camii ve Üniversitesi", "Fâtımî, Eyyûbî, Memlûk, Osmanlı", "Zeytûne ve Karaviyyîn"),
         (471, "Endülüs Havzası", "Kurtuba, Gırnata, İşbîliye", "Kurtuba Camii, el-Hamrâ Sarayı", "İbn Rüşd, Zehrâvî, İbn Hazm", "Avrupa'ya bilimin geçiş köprüsü")
     ]

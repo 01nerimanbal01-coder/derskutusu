@@ -1,249 +1,240 @@
 {
- "ad": "12-kimya-6",
- "sinif": 12,
- "ders": "kimya",
- "ders_adi": "Kimya",
- "hafta": 6,
- "tarih": "19-23 Ekim 2026",
- "yayin_tarihi": "2026-10-21",
- "unite": "12.1. KİMYA VE ELEKTRİK",
- "konu": "Elektrot Potansiyelleri ve Redoks Tepkimelerinin İstemliliği",
- "ciktilar": [
-  "Standart Hidrojen Elektrodunun (SHE) referans kabul edilmesini ve standart elektrot potansiyellerini açıklar.",
-  "Standart indirgenme/yükseltgenme potansiyellerini kullanarak elementlerin aktiflik sıralamasını belirler.",
-  "Redoks tepkimelerinin istemliliğini (kendiliğinden gerçekleşip gerçekleşmeyeceğini) standart hücre potansiyeli (E°_hücre) üzerinden yorumlar."
- ],
- "giris": "Bir çinko çubuğu bakır(II) sülfat çözeltisine daldırdığımızda çinkonun kendiliğinden aşındığını ve çözeltinin mavi renginin açıldığını görürüz; fakat bakır çubuğu çinko sülfat çözeltisine daldırdığımızda hiçbir değişim olmaz. Peki bir redoks tepkimesinin kendiliğinden ({koyu:istemli}) gerçekleşip gerçekleşmeyeceğini önceden nasıl bilebiliriz? Bu haftaki dersimizde {koyu:Standart Elektrot Potansiyellerini (E°)} ve redoks tepkimelerinin {koyu:istemlilik koşulunu} öğreneceğiz.",
- "ozet": [
-  "{koyu:Standart Hidrojen Elektrodu (SHE):} Tek bir yarı hücrenin potansiyeli tek başına ölçülemediği için 25 °C, 1 atm basınç ve 1 M H+ çözeltisindeki hidrojen yarı hücresinin potansiyeli referans olarak {koyu:E° = 0,00 Volt} kabul edilmiştir.",
-  "{koyu:Standart Elektrot Potansiyeli Kuralları:} Bir yarı tepkime ters çevrilirse E° değerinin {koyu:işareti değişir} ({koyu:E°_yüks = -E°_ind}); yarı tepkime herhangi bir katsayıyla çarpılır veya bölünürse {koyu:E° değeri DEĞİŞMEZ!}",
-  "{koyu:Aktiflik Sıralaması:} Yükseltgenme potansiyeli (E°_yüks) büyük (veya indirgenme potansiyeli E°_ind küçük) olan metal {koyu:daha aktiftir}; galvanik hücrede {koyu:anot} olur.",
-  "{koyu:Redoks İstemliliği:} Net bir redoks tepkimesinde {koyu:E°_tepkime = E°_yüks + E°_ind > 0} ise tepkime {koyu:istemlidir} (kendiliğinden gerçekleşir); {koyu:E°_tepkime < 0} ise tepkime {koyu:istemsizdir}.",
-  "{koyu:Kapta Çözelti Saklama:} X metalinden yapılmış bir kapta Y+ iyonları içeren bir çözeltinin saklanabilmesi için X metalinin Y’den {koyu:daha pasif} olması (E°_yüks(X) < E°_yüks(Y)) gerekir."
- ],
- "bolumler": [
-  {
-   "baslik": "1. Standart Hidrojen Elektrodu (SHE) ve Standart Elektrot Potansiyeli",
-   "metin": [
-    "Elektrokimyasal bir hücrede tek bir elektrodun mutlak potansiyelini ölçmek imkânsızdır; voltmetre yalnızca iki yarı hücre arasındaki {koyu:potansiyel farkını} ölçebilir. Bu nedenle IUPAC, standart koşullarda (25 °C sıcaklık, 1 M H+ asit çözeltisi ve 1 atm basınçta H2 gazı, platin elektrot) çalışan {koyu:Standart Hidrojen Elektrodunun (SHE)} hem indirgenme hem yükseltgenme potansiyelini referans olarak {koyu:0,00 V} kabul etmiştir:\n• {koyu:2H+(suda, 1 M) + 2e- <=> H2(g, 1 atm)    E° = 0,00 V}",
-    "Diğer tüm elementlerin standart indirgenme potansiyelleri (E°_ind) SHE ile oluşturdukları pilin gerilimi ölçülerek belirlenmiştir:\n• {koyu:Aktif Metaller (Li, K, Ca, Na, Mg, Al, Zn, Cr, Fe, Ni, Sn, Pb):} Elektron verme eğilimleri hidrojenden büyüktür; standart indirgenme potansiyelleri {koyu:negatif (E°_ind < 0)}, yükseltgenme potansiyelleri ise {koyu:pozitiftir (E°_yüks > 0)}. Asitlerle (H+) tepkimeye girerek {koyu:H2 gazı} çıkarırlar.\n• {koyu:Soy ve Yarı Soy Metaller (Cu, Hg, Ag, Pt, Au):} Elektron verme eğilimleri hidrojenden küçüktür; standart indirgenme potansiyelleri {koyu:pozitiftir (E°_ind > 0)}. Yapılarında oksijen bulunmayan HCl, HBr gibi asitlerle H2 gazı çıkaramazlar."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "Yarı Tepkime Katsayıyla Çarpıldığında E° Değişmez!",
-    "metin": "Entalpi (ΔH) madde miktarına bağlı olduğu için denklem 2 ile çarpıldığında ΔH da 2 ile çarpılırdı. Ancak {koyu:Standart Elektrot Potansiyeli (E°)} birim yük başına düşen enerji olduğu için madde miktarına bağlı değildir! Denklem 2 veya 3 ile çarpıldığında {koyu:E° kesinlikle çarpılmaz, sabit kalır}; yalnız denklem ters çevrilirse işareti değişir."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 200\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"25\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Standart Hidrojen Elektrodu (SHE) ve Elektrot Potansiyelleri</text><rect x=\"25\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><rect x=\"25\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#2563eb\"/><rect x=\"25\" y=\"60\" width=\"300\" height=\"10\" fill=\"#2563eb\"/><text x=\"175.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Referans Elektrot: SHE (E° = 0,00 V)</text><text x=\"37\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• 25 °C, 1 atm H_2 gazı ve 1 M H+ çözeltisi</text><text x=\"37\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• 2H+(suda) + 2e-  <=>  H_2(g)   E° = 0,00 V</text><text x=\"37\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Aktif metallerin (Zn, Mg, Na, Fe) yükseltgenme</text><text x=\"37\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  potansiyeli E°_yüks > 0, indirgenme E°_ind < 0</text><text x=\"37\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Soy metallerin (Cu, Ag, Hg, Pt, Au) E°_ind > 0</text><rect x=\"355\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"1.6\"/><rect x=\"355\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#059669\"/><rect x=\"355\" y=\"60\" width=\"300\" height=\"10\" fill=\"#059669\"/><text x=\"505.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">E° Değerinin Özellikleri (Önemli!)</text><text x=\"367\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Yarı tepkime ters çevrilirse E° işaret değiştirir:</text><text x=\"367\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  E°_yükseltgenme = - E°_indirgenme</text><text x=\"367\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Yarı tepkime bir katsayı ile çarpılırsa veya</text><text x=\"367\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  bölünürse E° DEĞİŞMEZ! (Madde miktarına bağlı</text><text x=\"367\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  olmayan yoğun bir özelliktir).</text></svg>"
-  },
-  {
-   "baslik": "2. Redoks Tepkimelerinin İstemliliği ve Standart Hücre Potansiyeli",
-   "metin": [
-    "Bir redoks tepkimesinin sabit sıcaklık ve basınçta dışarıdan hiçbir etki olmadan kendiliğinden gerçekleşmesine {koyu:istemli tepkime} denir. Verilen bir redoks tepkimesinin istemli olup olmadığını anlamak için tepkimedeki yükseltgenme ve indirgenme yarı tepkimelerinin standart potansiyelleri toplanır:\n• {koyu:E°_hücre (veya E°_tepkime) = E°_yükseltgenme(Anot) + E°_indirgenme(Katot)}",
-    "Hesaplanan {koyu:E°_tepkime} değerinin işaretine göre şu karar verilir:\n1. Eğer {koyu:E°_tepkime > 0 (pozitif)} ise: Redoks tepkimesi {koyu:istemlidir}, yani belirtilen yönde kendiliğinden gerçekleşir (galvanik hücre / pil çalışır ve elektrik üretir).\n2. Eğer {koyu:E°_tepkime < 0 (negatif)} ise: Redoks tepkimesi {koyu:istemsizdir}, yani belirtilen yönde kendiliğinden gerçekleşmez (bu tepkime ancak dışarıdan E° değerinden daha büyük bir gerilim uygulanarak elektrolizle gerçekleştirilebilir)."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Galvanik Pilde Anot ve Katot Seçimi",
-    "metin": "İki metal yarı hücresinden bir galvanik pil kurulduğunda pilin kendiliğinden çalışması (E°_pil > 0 olması) için:\n• {koyu:E°_yükseltgenme değeri büyük (E°_ind küçük) olan elektrot ANOT} (yükseltgenir, kütlesi azalır),\n• {koyu:E°_indirgenme değeri büyük olan elektrot ise KATOT} (indirgenme gerçekleşir) olur."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 200\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"25\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#7c2d12\" text-anchor=\"middle\">Redoks Tepkimelerinin İstemliliği ve Kapta Saklama Koşulu</text><rect x=\"25\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"1.6\"/><rect x=\"25\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#d97706\"/><rect x=\"25\" y=\"60\" width=\"300\" height=\"10\" fill=\"#d97706\"/><text x=\"175.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Standart Hücre Potansiyeli ve İstemlilik</text><text x=\"37\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• E°_hücre = E°_yüks(Anot) + E°_ind(Katot)</text><text x=\"37\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• E°_hücre > 0 ise tepkime İSTEMLİDİR (kendiliğinden</text><text x=\"37\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  gerçekleşir, galvanik pil çalışır).</text><text x=\"37\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• E°_hücre < 0 ise tepkime İSTEMSİZDİR (kendiliğinden</text><text x=\"37\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  gerçekleşmez, dışarıdan elektrik enerjisi gerekir).</text><rect x=\"355\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"1.6\"/><rect x=\"355\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#7c3aed\"/><rect x=\"355\" y=\"60\" width=\"300\" height=\"10\" fill=\"#7c3aed\"/><text x=\"505.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Metalik Aktiflik ve Kap Aşınması</text><text x=\"367\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• E°_yüks değeri büyük olan metal DAHA AKTİFTİR.</text><text x=\"367\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Aktif metal, pasif metalin iyonunu indirger,</text><text x=\"367\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  kendisi yükseltgenerek aşınır (çözünür)!</text><text x=\"367\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• X metalinden yapılmış kapta Y+ çözeltisi</text><text x=\"367\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  saklanabilmesi için X pasif olmalıdır (Aktiflik: Y > X).</text></svg>"
-  },
-  {
-   "baslik": "3. Metalik Aktiflik, Çubuk Aşınması ve Kapta Çözelti Saklama",
-   "metin": [
-    "Standart yükseltgenme potansiyeli (E°_yüks) büyük olan metalin elektron verme isteği yani {koyu:metalik aktifliği (indirgenlik gücü)} daha büyüktür. İstemlilik kuralını günlük laboratuvar sorularına doğrudan şu pratik kuralla uygulayabiliriz:\n• {koyu:Kural:} Nötr (katı) hâldeki metal, çözeltideki katyonun metalinden {koyu:daha aktif ise} tepkime {koyu:istemlidir (gerçekleşir)}!",
-    "Örneğin {koyu:Zn(k) + Cu2+(suda) -> Zn2+(suda) + Cu(k)} tepkimesinde nötr metal {koyu:Zn}, iyon hâlindeki metal {koyu:Cu}’dur. Zn metali Cu metalinden daha aktif olduğu için:\n• Tepkime kendiliğinden gerçekleşir ({koyu:E° > 0}).\n• Çözeltiye daldırılan {koyu:Zn çubuk aşınır}.\n• {koyu:Zn metalinden yapılmış bir kapta CuSO4 çözeltisi SAKLANAMAZ} (kap delinir)!\nTersine, {koyu:Cu metalinden yapılmış bir kapta ZnSO4 çözeltisi güvenle saklanabilir}; çünkü nötr hâldeki Cu, Zn’den pasiftir ve tepkime vermez ({koyu:E° < 0})."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Saklanabilir mi? Aşınır mı? Hızlı Çözüm Anahtarı",
-    "metin": "Metalik aktiflik {koyu:X > Y} ise:\n• X(k) + Y2+(suda) => {koyu:Tepkime OLUR} (E° > 0, X çubuğu aşınır, X kabında Y2+ çözeltisi {koyu:saklanamaz}).\n• Y(k) + X2+(suda) => {koyu:Tepkime OLMAZ} (E° < 0, Y çubuğu aşınmaz, Y kabında X2+ çözeltisi {koyu:saklanabilir})."
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Standart indirgenme potansiyelleri:\nZn2+(suda) + 2e- -> Zn(k)   E° = -0,76 V\nCu2+(suda) + 2e- -> Cu(k)   E° = +0,34 V\nolduğuna göre Zn–Cu galvanik pilinin standart pil potansiyeli (E°_pil) kaç volttur?",
-   "cevap": "İndirgenme potansiyeli küçük olan Zn (-0,76 V < +0,34 V) daha aktiftir ve {koyu:anot} olur; yarı tepkimesi ters çevrilerek yükseltgenme yazılır: E°_yüks(Zn) = +0,76 V. Cu ise {koyu:katot} olur: E°_ind(Cu) = +0,34 V.\nE°_pil = E°_yüks(Anot) + E°_ind(Katot) = 0,76 + 0,34 = {koyu:+1,10 V} bulunur."
-  },
-  {
-   "soru": "Al3+(suda) + 3e- -> Al(k) (E° = -1,66 V) ve Ni2+(suda) + 2e- -> Ni(k) (E° = -0,25 V) yarı tepkimeleri veriliyor.\n2Al(k) + 3Ni2+(suda) -> 2Al3+(suda) + 3Ni(k) tepkimesinin standart potansiyeli (E°) kaç V’tur ve tepkime istemli midir?",
-   "cevap": "Tepkimede Al(k) yükseltgenmekte, Ni2+(suda) indirgenmektedir. Denklemdeki 2 ve 3 katsayıları E° değerlerini {koyu:değiştirmez}:\nE°_tepkime = E°_yüks(Al) + E°_ind(Ni) = (+1,66 V) + (-0,25 V) = {koyu:+1,41 V}. E° > 0 olduğu için tepkime {koyu:istemlidir (kendiliğinden gerçekleşir)}."
-  },
-  {
-   "soru": "X, Y ve Z metallerinin standart indirgenme potansiyelleri sırasıyla E°(X2+/X) = -0,44 V, E°(Y2+/Y) = +0,34 V ve E°(Z2+/Z) = -2,37 V’tur. Bu metallerin aktiflik sıralaması nasıldır ve hangileri HCl çözeltisiyle H2 gazı açığa çıkarır?",
-   "cevap": "İndirgenme potansiyeli en küçük olan metalin yükseltgenme eğilimi (aktifliği) en büyüktür: {koyu:Z > X > Y}. Hidrojenin standart potansiyeli 0,00 V olduğundan indirgenme potansiyeli negatif olan (hidrojenden aktif olan) {koyu:Z ve X metalleri} HCl ile tepkimeye girerek H2 gazı çıkarır; Y (+0,34 V, yarı soy metal) ise HCl ile H2 gazı çıkarmaz."
-  },
-  {
-   "soru": "Metalik aktiflik sıralaması Mg > Zn > Fe > Cu olduğuna göre, Fe (demir) metalinden yapılmış bir kapta MgSO4, ZnSO4 ve CuSO4 çözeltilerinden hangileri saklanamaz?",
-   "cevap": "Fe kabının aşınması (çözeltinin saklanamaması) için Fe metalinin çözeltideki katyondan {koyu:daha aktif} olması gerekir. Fe metali yalnızca Cu’dan aktiftir (Fe > Cu). Bu nedenle Fe + CuSO4 tepkimesi istemli olarak gerçekleşir, kap delinir ve {koyu:CuSO4 çözeltisi Fe kapta saklanamaz}. MgSO4 ve ZnSO4 ise saklanabilir."
-  },
-  {
-   "soru": "Ag+(suda) + e- -> Ag(k) yarı tepkimesinin standart potansiyeli E° = +0,80 V olduğuna göre, 2Ag(k) -> 2Ag+(suda) + 2e- yarı tepkimesinin standart potansiyeli kaç volttur?",
-   "cevap": "Tepkime ters çevrildiği için E° değerinin işareti değişir; ancak 2 katsayısıyla çarpılması E° değerini değiştirmez. Dolayısıyla yarı tepkimenin standart potansiyeli {koyu:E° = -0,80 V} olur."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "IUPAC tarafından standart koşullarda (25 °C, 1 atm, 1 M) elektrot potansiyeli 0,00 V kabul edilen referans elektrot aşağıdakilerden hangisidir?",
-   "secenekler": [
-    "Standart Bakır Elektrodu",
-    "Standart Çinko Elektrodu",
-    "Standart Hidrojen Elektrodu (SHE)",
-    "Standart Gümüş Elektrodu",
-    "Standart Lityum Elektrodu"
-   ],
-   "dogru": 2,
-   "aciklama": "Elektrot potansiyellerinin ölçümünde referans olarak Standart Hidrojen Elektrodu (SHE) seçilmiş ve potansiyeli E° = 0,00 V kabul edilmiştir."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Standart indirgenme potansiyelleri:\nMg2+(suda) + 2e- -> Mg(k)   E° = -2,37 V\nAg+(suda) + e- -> Ag(k)    E° = +0,80 V\nolduğuna göre Mg(k) + 2Ag+(suda) -> Mg2+(suda) + 2Ag(k) tepkimesinin standart hücre potansiyeli (E°_hücre) kaç volttur?",
-   "secenekler": [
-    "+1,57",
-    "+3,17",
-    "+3,97",
-    "-1,57",
-    "-3,17"
-   ],
-   "dogru": 1,
-   "aciklama": "Mg yükseltgenir (E°_yüks = +2,37 V) ve Ag+ indirgenir (E°_ind = +0,80 V; 2 ile çarpılması E°’yi değiştirmez). E°_hücre = 2,37 + 0,80 = +3,17 V bulunur."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Bir redoks tepkimesinin standart potansiyeli E°_tepkime = -0,65 V olarak hesaplandığına göre bu tepkime için aşağıdakilerden hangisi doğrudur?",
-   "secenekler": [
-    "Standart koşullarda kendiliğinden (istemli) gerçekleşir.",
-    "Galvanik bir pil olarak elektrik enerjisi üretir.",
-    "Standart koşullarda belirtilen yönde istemsizdir, kendiliğinden gerçekleşmez.",
-    "Tepkime dengeye ulaşmıştır.",
-    "Tepkimenin tersi de istemsizdir."
-   ],
-   "dogru": 2,
-   "aciklama": "E°_tepkime < 0 (negatif) olan redoks tepkimeleri belirtilen yönde istemsizdir ve kendiliğinden gerçekleşmez (ters yönde istemlidir)."
-  },
-  {
-   "tur": "coktan",
-   "soru": "X, Y ve Z metallerinin standart yükseltgenme potansiyelleri arasında X > Y > Z ilişkisi vardır. Buna göre aşağıdaki kap ve çözelti çiftlerinden hangisinde zamanla kapta aşınma (delinme) gözlenir?",
-   "secenekler": [
-    "Z metalinden yapılmış kapta Y(NO3)2 çözeltisi",
-    "Y metalinden yapılmış kapta X(NO3)2 çözeltisi",
-    "X metalinden yapılmış kapta Z(NO3)2 çözeltisi",
-    "Z metalinden yapılmış kapta X(NO3)2 çözeltisi",
-    "Y metalinden yapılmış kapta Y(NO3)2 çözeltisi"
-   ],
-   "dogru": 2,
-   "aciklama": "Kabın aşınması için kap metalinin çözeltideki iyonun metalinden daha aktif olması gerekir. Aktiflik X > Y > Z olduğundan en aktif metal olan X kabı, Z2+ iyonlarını indirgeyerek aşınır."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Aşağıdaki metallerden hangisinin standart indirgenme potansiyeli (E°_ind) sıfırdan büyüktür (pozitiftir)?",
-   "secenekler": [
-    "Na (Sodyum)",
-    "Mg (Magnezyum)",
-    "Zn (Çinko)",
-    "Fe (Demir)",
-    "Cu (Bakır)"
-   ],
-   "dogru": 4,
-   "aciklama": "Hidrojenden daha pasif olan yarı soy ve tam soy metallerin (Cu, Hg, Ag, Pt, Au) standart indirgenme potansiyelleri pozitiftir (+0,34 V)."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "12-kimya-6",
+  "sinif": 12,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 6,
+  "tarih": "19-23 Ekim 2026",
+  "yayin_tarihi": "2026-10-21",
+  "unite": "12.1. KİMYA VE ELEKTRİK",
+  "konu": "Elektrot Potansiyelleri ve Redoks Tepkimelerinin İstemliliği",
+  "ciktilar": [
+    "Standart Hidrojen Elektrodunun (SHE) referans kabul edilmesini ve standart elektrot potansiyellerini açıklar.",
+    "Standart indirgenme/yükseltgenme potansiyellerini kullanarak elementlerin aktiflik sıralamasını belirler.",
+    "Redoks tepkimelerinin istemliliğini (kendiliğinden gerçekleşip gerçekleşmeyeceğini) standart hücre potansiyeli (E°_hücre) üzerinden yorumlar."
+  ],
+  "giris": "Bir çinko çubuğu bakır(II) sülfat çözeltisine daldırdığımızda çinkonun kendiliğinden aşındığını ve çözeltinin mavi renginin açıldığını görürüz; fakat bakır çubuğu çinko sülfat çözeltisine daldırdığımızda hiçbir değişim olmaz. Peki bir redoks tepkimesinin kendiliğinden ({koyu:istemli}) gerçekleşip gerçekleşmeyeceğini önceden nasıl bilebiliriz? Bu haftaki dersimizde {koyu:Standart Elektrot Potansiyellerini (E°)} ve redoks tepkimelerinin {koyu:istemlilik koşulunu} öğreneceğiz.",
+  "ozet": [
+    "{koyu:Standart Hidrojen Elektrodu (SHE):} Tek bir yarı hücrenin potansiyeli tek başına ölçülemediği için 25 °C, 1 atm basınç ve 1 M H+ çözeltisindeki hidrojen yarı hücresinin potansiyeli referans olarak {koyu:E° = 0,00 Volt} kabul edilmiştir.",
+    "{koyu:Standart Elektrot Potansiyeli Kuralları:} Bir yarı tepkime ters çevrilirse E° değerinin {koyu:işareti değişir} ({koyu:E°_yüks = -E°_ind}); yarı tepkime herhangi bir katsayıyla çarpılır veya bölünürse {koyu:E° değeri DEĞİŞMEZ!}",
+    "{koyu:Aktiflik Sıralaması:} Yükseltgenme potansiyeli (E°_yüks) büyük (veya indirgenme potansiyeli E°_ind küçük) olan metal {koyu:daha aktiftir}; galvanik hücrede {koyu:anot} olur.",
+    "{koyu:Redoks İstemliliği:} Net bir redoks tepkimesinde {koyu:E°_tepkime = E°_yüks + E°_ind > 0} ise tepkime {koyu:istemlidir} (kendiliğinden gerçekleşir); {koyu:E°_tepkime < 0} ise tepkime {koyu:istemsizdir}.",
+    "{koyu:Kapta Çözelti Saklama:} X metalinden yapılmış bir kapta Y+ iyonları içeren bir çözeltinin saklanabilmesi için X metalinin Y’den {koyu:daha pasif} olması (E°_yüks(X) < E°_yüks(Y)) gerekir."
+  ],
+  "bolumler": [
     {
-     "metin": "Bir yarı tepkime herhangi bir pozitif tam sayıyla çarpıldığında standart elektrot potansiyeli (E°) de o sayıyla çarpılır.",
-     "dogru": false,
-     "aciklama": "Yanlıştır; E° madde miktarına bağlı olmayan yoğun bir özelliktir, katsayıyla çarpıldığında değişmez."
+      "baslik": "1. Standart Hidrojen Elektrodu (SHE) ve Standart Elektrot Potansiyeli",
+      "metin": [
+        "Elektrokimyasal bir hücrede tek bir elektrodun mutlak potansiyelini ölçmek imkânsızdır; voltmetre yalnızca iki yarı hücre arasındaki {koyu:potansiyel farkını} ölçebilir. Bu nedenle IUPAC, standart koşullarda (25 °C sıcaklık, 1 M H+ asit çözeltisi ve 1 atm basınçta H2 gazı, platin elektrot) çalışan {koyu:Standart Hidrojen Elektrodunun (SHE)} hem indirgenme hem yükseltgenme potansiyelini referans olarak {koyu:0,00 V} kabul etmiştir:\n• {koyu:2H+(suda, 1 M) + 2e- <=> H2(g, 1 atm)    E° = 0,00 V}",
+        "Diğer tüm elementlerin standart indirgenme potansiyelleri (E°_ind) SHE ile oluşturdukları pilin gerilimi ölçülerek belirlenmiştir:\n• {koyu:Aktif Metaller (Li, K, Ca, Na, Mg, Al, Zn, Cr, Fe, Ni, Sn, Pb):} Elektron verme eğilimleri hidrojenden büyüktür; standart indirgenme potansiyelleri {koyu:negatif (E°_ind < 0)}, yükseltgenme potansiyelleri ise {koyu:pozitiftir (E°_yüks > 0)}. Asitlerle (H+) tepkimeye girerek {koyu:H2 gazı} çıkarırlar.\n• {koyu:Soy ve Yarı Soy Metaller (Cu, Hg, Ag, Pt, Au):} Elektron verme eğilimleri hidrojenden küçüktür; standart indirgenme potansiyelleri {koyu:pozitiftir (E°_ind > 0)}. Yapılarında oksijen bulunmayan HCl, HBr gibi asitlerle H2 gazı çıkaramazlar."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Yarı Tepkime Katsayıyla Çarpıldığında E° Değişmez!",
+        "metin": "Entalpi (ΔH) madde miktarına bağlı olduğu için denklem 2 ile çarpıldığında ΔH da 2 ile çarpılırdı. Ancak {koyu:Standart Elektrot Potansiyeli (E°)} birim yük başına düşen enerji olduğu için madde miktarına bağlı değildir! Denklem 2 veya 3 ile çarpıldığında {koyu:E° kesinlikle çarpılmaz, sabit kalır}; yalnız denklem ters çevrilirse işareti değişir."
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 200\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"25\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Standart Hidrojen Elektrodu (SHE) ve Elektrot Potansiyelleri</text><rect x=\"25\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><rect x=\"25\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#2563eb\"/><rect x=\"25\" y=\"60\" width=\"300\" height=\"10\" fill=\"#2563eb\"/><text x=\"175.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Referans Elektrot: SHE (E° = 0,00 V)</text><text x=\"37\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• 25 °C, 1 atm H_2 gazı ve 1 M H+ çözeltisi</text><text x=\"37\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• 2H+(suda) + 2e-  &lt;=>  H_2(g)   E° = 0,00 V</text><text x=\"37\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Aktif metallerin (Zn, Mg, Na, Fe) yükseltgenme</text><text x=\"37\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  potansiyeli E°_yüks > 0, indirgenme E°_ind &lt; 0</text><text x=\"37\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Soy metallerin (Cu, Ag, Hg, Pt, Au) E°_ind > 0</text><rect x=\"355\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"1.6\"/><rect x=\"355\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#059669\"/><rect x=\"355\" y=\"60\" width=\"300\" height=\"10\" fill=\"#059669\"/><text x=\"505.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">E° Değerinin Özellikleri (Önemli!)</text><text x=\"367\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Yarı tepkime ters çevrilirse E° işaret değiştirir:</text><text x=\"367\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  E°_yükseltgenme = - E°_indirgenme</text><text x=\"367\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Yarı tepkime bir katsayı ile çarpılırsa veya</text><text x=\"367\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  bölünürse E° DEĞİŞMEZ! (Madde miktarına bağlı</text><text x=\"367\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  olmayan yoğun bir özelliktir).</text></svg>"
     },
     {
-     "metin": "Bir yarı tepkime ters çevrildiğinde standart elektrot potansiyelinin (E°) sayısal değeri aynı kalır, yalnızca işareti değişir.",
-     "dogru": true,
-     "aciklama": "E°_yükseltgenme = -E°_indirgenme eşitliği her zaman geçerlidir."
+      "baslik": "2. Redoks Tepkimelerinin İstemliliği ve Standart Hücre Potansiyeli",
+      "metin": [
+        "Bir redoks tepkimesinin sabit sıcaklık ve basınçta dışarıdan hiçbir etki olmadan kendiliğinden gerçekleşmesine {koyu:istemli tepkime} denir. Verilen bir redoks tepkimesinin istemli olup olmadığını anlamak için tepkimedeki yükseltgenme ve indirgenme yarı tepkimelerinin standart potansiyelleri toplanır:\n• {koyu:E°_hücre (veya E°_tepkime) = E°_yükseltgenme(Anot) + E°_indirgenme(Katot)}",
+        "Hesaplanan {koyu:E°_tepkime} değerinin işaretine göre şu karar verilir:\n1. Eğer {koyu:E°_tepkime > 0 (pozitif)} ise: Redoks tepkimesi {koyu:istemlidir}, yani belirtilen yönde kendiliğinden gerçekleşir (galvanik hücre / pil çalışır ve elektrik üretir).\n2. Eğer {koyu:E°_tepkime < 0 (negatif)} ise: Redoks tepkimesi {koyu:istemsizdir}, yani belirtilen yönde kendiliğinden gerçekleşmez (bu tepkime ancak dışarıdan E° değerinden daha büyük bir gerilim uygulanarak elektrolizle gerçekleştirilebilir)."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Galvanik Pilde Anot ve Katot Seçimi",
+        "metin": "İki metal yarı hücresinden bir galvanik pil kurulduğunda pilin kendiliğinden çalışması (E°_pil > 0 olması) için:\n• {koyu:E°_yükseltgenme değeri büyük (E°_ind küçük) olan elektrot ANOT} (yükseltgenir, kütlesi azalır),\n• {koyu:E°_indirgenme değeri büyük olan elektrot ise KATOT} (indirgenme gerçekleşir) olur."
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 200\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"25\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#7c2d12\" text-anchor=\"middle\">Redoks Tepkimelerinin İstemliliği ve Kapta Saklama Koşulu</text><rect x=\"25\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"1.6\"/><rect x=\"25\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#d97706\"/><rect x=\"25\" y=\"60\" width=\"300\" height=\"10\" fill=\"#d97706\"/><text x=\"175.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Standart Hücre Potansiyeli ve İstemlilik</text><text x=\"37\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• E°_hücre = E°_yüks(Anot) + E°_ind(Katot)</text><text x=\"37\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• E°_hücre > 0 ise tepkime İSTEMLİDİR (kendiliğinden</text><text x=\"37\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  gerçekleşir, galvanik pil çalışır).</text><text x=\"37\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• E°_hücre &lt; 0 ise tepkime İSTEMSİZDİR (kendiliğinden</text><text x=\"37\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  gerçekleşmez, dışarıdan elektrik enerjisi gerekir).</text><rect x=\"355\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"1.6\"/><rect x=\"355\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#7c3aed\"/><rect x=\"355\" y=\"60\" width=\"300\" height=\"10\" fill=\"#7c3aed\"/><text x=\"505.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Metalik Aktiflik ve Kap Aşınması</text><text x=\"367\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• E°_yüks değeri büyük olan metal DAHA AKTİFTİR.</text><text x=\"367\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Aktif metal, pasif metalin iyonunu indirger,</text><text x=\"367\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  kendisi yükseltgenerek aşınır (çözünür)!</text><text x=\"367\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• X metalinden yapılmış kapta Y+ çözeltisi</text><text x=\"367\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  saklanabilmesi için X pasif olmalıdır (Aktiflik: Y > X).</text></svg>"
     },
     {
-     "metin": "Standart hücre potansiyeli E°_hücre > 0 olan elektrokimyasal hücrelerde redoks tepkimesi istemlidir.",
-     "dogru": true,
-     "aciklama": "Pozitif E°_hücre değeri tepkimenin kendiliğinden gerçekleştiğini gösterir."
-    },
-    {
-     "metin": "Standart yükseltgenme potansiyeli en büyük olan metal, en kuvvetli yükseltgen maddedir.",
-     "dogru": false,
-     "aciklama": "Yanlıştır; yükseltgenme potansiyeli büyük olan metal kendisi kolay yükseltgenir, dolayısıyla karşısındakini indirgediği için en kuvvetli “indirgen” maddedir."
-    },
-    {
-     "metin": "Aktif bir metalden yapılmış çubuk, kendisinden daha pasif bir metalin tuz çözeltisine daldırıldığında çubuk zamanla aşınır.",
-     "dogru": true,
-     "aciklama": "Aktif metal elektron vererek yükseltgenir ve çözeltiye geçerek aşınır."
+      "baslik": "3. Metalik Aktiflik, Çubuk Aşınması ve Kapta Çözelti Saklama",
+      "metin": [
+        "Standart yükseltgenme potansiyeli (E°_yüks) büyük olan metalin elektron verme isteği yani {koyu:metalik aktifliği (indirgenlik gücü)} daha büyüktür. İstemlilik kuralını günlük laboratuvar sorularına doğrudan şu pratik kuralla uygulayabiliriz:\n• {koyu:Kural:} Nötr (katı) hâldeki metal, çözeltideki katyonun metalinden {koyu:daha aktif ise} tepkime {koyu:istemlidir (gerçekleşir)}!",
+        "Örneğin {koyu:Zn(k) + Cu2+(suda) -> Zn2+(suda) + Cu(k)} tepkimesinde nötr metal {koyu:Zn}, iyon hâlindeki metal {koyu:Cu}’dur. Zn metali Cu metalinden daha aktif olduğu için:\n• Tepkime kendiliğinden gerçekleşir ({koyu:E° > 0}).\n• Çözeltiye daldırılan {koyu:Zn çubuk aşınır}.\n• {koyu:Zn metalinden yapılmış bir kapta CuSO4 çözeltisi SAKLANAMAZ} (kap delinir)!\nTersine, {koyu:Cu metalinden yapılmış bir kapta ZnSO4 çözeltisi güvenle saklanabilir}; çünkü nötr hâldeki Cu, Zn’den pasiftir ve tepkime vermez ({koyu:E° < 0})."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Saklanabilir mi? Aşınır mı? Hızlı Çözüm Anahtarı",
+        "metin": "Metalik aktiflik {koyu:X > Y} ise:\n• X(k) + Y2+(suda) => {koyu:Tepkime OLUR} (E° > 0, X çubuğu aşınır, X kabında Y2+ çözeltisi {koyu:saklanamaz}).\n• Y(k) + X2+(suda) => {koyu:Tepkime OLMAZ} (E° < 0, Y çubuğu aşınmaz, Y kabında X2+ çözeltisi {koyu:saklanabilir})."
+      }
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "soru": "Aşağıdaki elektrokimyasal kavramları ve durumları doğru karşılıklarıyla eşleştiriniz.",
-   "ciftler": [
-    [
-     "E° = 0,00 V",
-     "Standart Hidrojen Elektrodunun (SHE) referans potansiyeli"
-    ],
-    [
-     "E°_hücre > 0",
-     "Kendiliğinden gerçekleşen (istemli) redoks tepkimesi"
-    ],
-    [
-     "E°_hücre < 0",
-     "Kendiliğinden gerçekleşmeyen (istemsiz) redoks tepkimesi"
-    ],
-    [
-     "E°_yükseltgenme değeri büyük olan metal",
-     "Galvanik hücrede anot olan aktif metal"
-    ],
-    [
-     "E°_indirgenme değeri > 0 olan metaller",
-     "Cu, Hg, Ag, Pt ve Au (Soy metaller)"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
-   "cumleler": [
+  ],
+  "ornekler": [
     {
-     "metin": "Elektrokimyasal pillerde yükseltgenme yarı tepkimesinin gerçekleştiği elektroda ___ denir.",
-     "cevap": "anot"
+      "soru": "Standart indirgenme potansiyelleri:\nZn2+(suda) + 2e- -> Zn(k)   E° = -0,76 V\nCu2+(suda) + 2e- -> Cu(k)   E° = +0,34 V\nolduğuna göre Zn–Cu galvanik pilinin standart pil potansiyeli (E°_pil) kaç volttur?",
+      "cevap": "İndirgenme potansiyeli küçük olan Zn (-0,76 V < +0,34 V) daha aktiftir ve {koyu:anot} olur; yarı tepkimesi ters çevrilerek yükseltgenme yazılır: E°_yüks(Zn) = +0,76 V. Cu ise {koyu:katot} olur: E°_ind(Cu) = +0,34 V.\nE°_pil = E°_yüks(Anot) + E°_ind(Katot) = 0,76 + 0,34 = {koyu:+1,10 V} bulunur."
     },
     {
-     "metin": "Standart koşullarda E°_hücre değeri sıfırdan büyük olan redoks tepkimeleri ___ olarak gerçekleşir.",
-     "cevap": "istemli"
+      "soru": "Al3+(suda) + 3e- -> Al(k) (E° = -1,66 V) ve Ni2+(suda) + 2e- -> Ni(k) (E° = -0,25 V) yarı tepkimeleri veriliyor.\n2Al(k) + 3Ni2+(suda) -> 2Al3+(suda) + 3Ni(k) tepkimesinin standart potansiyeli (E°) kaç V’tur ve tepkime istemli midir?",
+      "cevap": "Tepkimede Al(k) yükseltgenmekte, Ni2+(suda) indirgenmektedir. Denklemdeki 2 ve 3 katsayıları E° değerlerini {koyu:değiştirmez}:\nE°_tepkime = E°_yüks(Al) + E°_ind(Ni) = (+1,66 V) + (-0,25 V) = {koyu:+1,41 V}. E° > 0 olduğu için tepkime {koyu:istemlidir (kendiliğinden gerçekleşir)}."
     },
     {
-     "metin": "Elektron verme eğilimi hidrojeninkinden büyük olan metallere ___ metaller denir.",
-     "cevap": "aktif"
+      "soru": "X, Y ve Z metallerinin standart indirgenme potansiyelleri sırasıyla E°(X2+/X) = -0,44 V, E°(Y2+/Y) = +0,34 V ve E°(Z2+/Z) = -2,37 V’tur. Bu metallerin aktiflik sıralaması nasıldır ve hangileri HCl çözeltisiyle H2 gazı açığa çıkarır?",
+      "cevap": "İndirgenme potansiyeli en küçük olan metalin yükseltgenme eğilimi (aktifliği) en büyüktür: {koyu:Z > X > Y}. Hidrojenin standart potansiyeli 0,00 V olduğundan indirgenme potansiyeli negatif olan (hidrojenden aktif olan) {koyu:Z ve X metalleri} HCl ile tepkimeye girerek H2 gazı çıkarır; Y (+0,34 V, yarı soy metal) ise HCl ile H2 gazı çıkarmaz."
     },
     {
-     "metin": "X metalinden yapılmış bir kapta Y+ çözeltisinin saklanabilmesi için X metalinin Y metalinden daha ___ olması gerekir.",
-     "cevap": "pasif"
+      "soru": "Metalik aktiflik sıralaması Mg > Zn > Fe > Cu olduğuna göre, Fe (demir) metalinden yapılmış bir kapta MgSO4, ZnSO4 ve CuSO4 çözeltilerinden hangileri saklanamaz?",
+      "cevap": "Fe kabının aşınması (çözeltinin saklanamaması) için Fe metalinin çözeltideki katyondan {koyu:daha aktif} olması gerekir. Fe metali yalnızca Cu’dan aktiftir (Fe > Cu). Bu nedenle Fe + CuSO4 tepkimesi istemli olarak gerçekleşir, kap delinir ve {koyu:CuSO4 çözeltisi Fe kapta saklanamaz}. MgSO4 ve ZnSO4 ise saklanabilir."
     },
     {
-     "metin": "İndirgenme yarı tepkimesi ters çevrilerek yükseltgenme yarı tepkimesi yazıldığında E° değerinin ___ değişir.",
-     "cevap": "işareti"
+      "soru": "Ag+(suda) + e- -> Ag(k) yarı tepkimesinin standart potansiyeli E° = +0,80 V olduğuna göre, 2Ag(k) -> 2Ag+(suda) + 2e- yarı tepkimesinin standart potansiyeli kaç volttur?",
+      "cevap": "Tepkime ters çevrildiği için E° değerinin işareti değişir; ancak 2 katsayısıyla çarpılması E° değerini değiştirmez. Dolayısıyla yarı tepkimenin standart potansiyeli {koyu:E° = -0,80 V} olur."
+    },
+    {
+      "soru": "Aşağıdaki metallerden hangisinin standart indirgenme potansiyeli (E°_ind) sıfırdan büyüktür (pozitiftir)?",
+      "cevap": "Doğru yanıt: Cu (Bakır). Hidrojenden daha pasif olan yarı soy ve tam soy metallerin (Cu, Hg, Ag, Pt, Au) standart indirgenme potansiyelleri pozitiftir (+0,34 V)."
     }
-   ],
-   "fazla": [
-    "katot",
-    "istemsiz"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Standart indirgenme potansiyelleri:\nFe2+(suda) + 2e- -> Fe(k)   E° = -0,44 V\nCu2+(suda) + 2e- -> Cu(k)   E° = +0,34 V\nolarak veriliyor. Buna göre; 1) Demir (Fe) bir çubuk CuSO4 çözeltisine daldırıldığında ne olacağını ve 2) Bakır (Cu) bir kapta FeSO4 çözeltisinin saklanıp saklanamayacağını E° hesaplaması yaparak açıklayınız.",
-   "ipuclari": [
-    "1. İpucu: Fe(k) + Cu2+(suda) -> Fe2+(suda) + Cu(k) tepkimesinin E° değerini bularak işaretine bakınız.",
-    "2. İpucu: Cu(k) + Fe2+(suda) -> Cu2+(suda) + Fe(k) tepkimesinin E° değerini bularak saklanabilirliği yorumlayınız."
-   ],
-   "cevap": "1. Demir çubuk CuSO4 çözeltisine daldırıldığında olası tepkime Fe(k) + Cu2+(suda) -> Fe2+(suda) + Cu(k) şeklindedir. Bu tepkimenin standart potansiyeli E° = E°_yüks(Fe) + E°_ind(Cu) = (+0,44 V) + (+0,34 V) = +0,78 V olur. E° > 0 olduğu için tepkime istemlidir; demir çubuk kendiliğinden aşınır ve üzerinde Cu metali toplanır.\n2. Bakır kapta FeSO4 çözeltisi için olası tepkime Cu(k) + Fe2+(suda) -> Cu2+(suda) + Fe(k) olup E° = E°_yüks(Cu) + E°_ind(Fe) = (-0,34 V) + (-0,44 V) = -0,78 V bulunur. E° < 0 (istemsiz) olduğu için bakır kap Fe2+ iyonlarıyla tepkime vermez; dolayısıyla FeSO4 çözeltisi bakır kapta güvenle saklanabilir."
-  }
- ]
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "IUPAC tarafından standart koşullarda (25 °C, 1 atm, 1 M) elektrot potansiyeli 0,00 V kabul edilen referans elektrot aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Standart Hidrojen Elektrodu (SHE)",
+        "Standart Çinko Elektrodu",
+        "Standart Bakır Elektrodu",
+        "Standart Gümüş Elektrodu",
+        "Standart Lityum Elektrodu (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)"
+      ],
+      "dogru": 0,
+      "aciklama": "Elektrot potansiyellerinin ölçümünde referans olarak Standart Hidrojen Elektrodu (SHE) seçilmiş ve potansiyeli E° = 0,00 V kabul edilmiştir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Standart indirgenme potansiyelleri:\nMg2+(suda) + 2e- -> Mg(k)   E° = -2,37 V\nAg+(suda) + e- -> Ag(k)    E° = +0,80 V\nolduğuna göre Mg(k) + 2Ag+(suda) -> Mg2+(suda) + 2Ag(k) tepkimesinin standart hücre potansiyeli (E°_hücre) kaç volttur?",
+      "secenekler": [
+        "+1,57",
+        "+3,17",
+        "+3,97",
+        "-1,57",
+        "-3,17"
+      ],
+      "dogru": 1,
+      "aciklama": "Mg yükseltgenir (E°_yüks = +2,37 V) ve Ag+ indirgenir (E°_ind = +0,80 V; 2 ile çarpılması E°’yi değiştirmez). E°_hücre = 2,37 + 0,80 = +3,17 V bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir redoks tepkimesinin standart potansiyeli E°_tepkime = -0,65 V olarak hesaplandığına göre bu tepkime için aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Standart koşullarda kendiliğinden (istemli) gerçekleşir (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)",
+        "Galvanik bir pil olarak elektrik enerjisi üretir.",
+        "Standart koşullarda belirtilen yönde istemsizdir, kendiliğinden gerçekleşmez.",
+        "Tepkime dengeye ulaşmıştır.",
+        "Tepkimenin tersi de istemsizdir."
+      ],
+      "dogru": 2,
+      "aciklama": "E°_tepkime < 0 (negatif) olan redoks tepkimeleri belirtilen yönde istemsizdir ve kendiliğinden gerçekleşmez (ters yönde istemlidir)."
+    },
+    {
+      "tur": "coktan",
+      "soru": "X, Y ve Z metallerinin standart yükseltgenme potansiyelleri arasında X > Y > Z ilişkisi vardır. Buna göre aşağıdaki kap ve çözelti çiftlerinden hangisinde zamanla kapta aşınma (delinme) gözlenir?",
+      "secenekler": [
+        "Z metalinden yapılmış kapta Y(NO3)2 çözeltisi",
+        "Y metalinden yapılmış kapta X(NO3)2 çözeltisi",
+        "Z metalinden yapılmış kapta X(NO3)2 çözeltisi",
+        "X metalinden yapılmış kapta Z(NO3)2 çözeltisi",
+        "Y metalinden yapılmış kapta Y(NO3)2 çözeltisi"
+      ],
+      "dogru": 3,
+      "aciklama": "Kabın aşınması için kap metalinin çözeltideki iyonun metalinden daha aktif olması gerekir. Aktiflik X > Y > Z olduğundan en aktif metal olan X kabı, Z2+ iyonlarını indirgeyerek aşınır."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Bir yarı tepkime herhangi bir pozitif tam sayıyla çarpıldığında standart elektrot potansiyeli (E°) de o sayıyla çarpılır.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; E° madde miktarına bağlı olmayan yoğun bir özelliktir, katsayıyla çarpıldığında değişmez."
+        },
+        {
+          "metin": "Bir yarı tepkime ters çevrildiğinde standart elektrot potansiyelinin (E°) sayısal değeri aynı kalır, münhasıran işareti değişir.",
+          "dogru": true,
+          "aciklama": "E°_yükseltgenme = -E°_indirgenme eşitliği her zaman geçerlidir."
+        },
+        {
+          "metin": "Standart hücre potansiyeli E°_hücre > 0 olan elektrokimyasal hücrelerde redoks tepkimesi istemlidir.",
+          "dogru": true,
+          "aciklama": "Pozitif E°_hücre değeri tepkimenin kendiliğinden gerçekleştiğini gösterir."
+        },
+        {
+          "metin": "Standart yükseltgenme potansiyeli en büyük olan metal, en kuvvetli yükseltgen maddedir.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; yükseltgenme potansiyeli büyük olan metal kendisi kolay yükseltgenir, dolayısıyla karşısındakini indirgediği için en kuvvetli “indirgen” maddedir."
+        },
+        {
+          "metin": "Aktif bir metalden yapılmış çubuk, kendisinden daha pasif bir metalin tuz çözeltisine daldırıldığında çubuk zamanla aşınır.",
+          "dogru": true,
+          "aciklama": "Aktif metal elektron vererek yükseltgenir ve çözeltiye geçerek aşınır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki elektrokimyasal kavramları ve durumları doğru karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "E° = 0,00 V",
+          "Standart Hidrojen Elektrodunun (SHE) referans potansiyeli"
+        ],
+        [
+          "E°_hücre > 0",
+          "Kendiliğinden gerçekleşen (istemli) redoks tepkimesi"
+        ],
+        [
+          "E°_hücre < 0",
+          "Kendiliğinden gerçekleşmeyen (istemsiz) redoks tepkimesi"
+        ],
+        [
+          "E°_yükseltgenme değeri büyük olan metal",
+          "Galvanik hücrede anot olan aktif metal"
+        ],
+        [
+          "E°_indirgenme değeri > 0 olan metaller",
+          "Cu, Hg, Ag, Pt ve Au (Soy metaller)"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Elektrokimyasal pillerde yükseltgenme yarı tepkimesinin gerçekleştiği elektroda ___ denir.",
+          "cevap": "anot"
+        },
+        {
+          "metin": "Standart koşullarda E°_hücre değeri sıfırdan büyük olan redoks tepkimeleri ___ olarak gerçekleşir.",
+          "cevap": "istemli"
+        },
+        {
+          "metin": "Elektron verme eğilimi hidrojeninkinden büyük olan metallere ___ metaller denir.",
+          "cevap": "aktif"
+        },
+        {
+          "metin": "X metalinden yapılmış bir kapta Y+ çözeltisinin saklanabilmesi için X metalinin Y metalinden daha ___ olması gerekir.",
+          "cevap": "pasif"
+        },
+        {
+          "metin": "İndirgenme yarı tepkimesi ters çevrilerek yükseltgenme yarı tepkimesi yazıldığında E° değerinin ___ değişir.",
+          "cevap": "işareti"
+        }
+      ],
+      "fazla": [
+        "katot",
+        "istemsiz"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Standart indirgenme potansiyelleri:\nFe2+(suda) + 2e- -> Fe(k)   E° = -0,44 V\nCu2+(suda) + 2e- -> Cu(k)   E° = +0,34 V\nolarak veriliyor. Buna göre; 1) Demir (Fe) bir çubuk CuSO4 çözeltisine daldırıldığında ne olacağını ve 2) Bakır (Cu) bir kapta FeSO4 çözeltisinin saklanıp saklanamayacağını E° hesaplaması yaparak açıklayınız.",
+      "cevap": "1. Demir çubuk CuSO4 çözeltisine daldırıldığında olası tepkime Fe(k) + Cu2+(suda) -> Fe2+(suda) + Cu(k) şeklindedir. Bu tepkimenin standart potansiyeli E° = E°_yüks(Fe) + E°_ind(Cu) = (+0,44 V) + (+0,34 V) = +0,78 V olur. E° > 0 olduğu için tepkime istemlidir; demir çubuk kendiliğinden aşınır ve üzerinde Cu metali toplanır.\n2. Bakır kapta FeSO4 çözeltisi için olası tepkime Cu(k) + Fe2+(suda) -> Cu2+(suda) + Fe(k) olup E° = E°_yüks(Cu) + E°_ind(Fe) = (-0,34 V) + (-0,44 V) = -0,78 V bulunur. E° < 0 (istemsiz) olduğu için bakır kap Fe2+ iyonlarıyla tepkime vermez; dolayısıyla FeSO4 çözeltisi bakır kapta güvenle saklanabilir.",
+      "ipuclari": [
+        "1. İpucu: Fe(k) + Cu2+(suda) -> Fe2+(suda) + Cu(k) tepkimesinin E° değerini bularak işaretine bakınız.",
+        "2. İpucu: Cu(k) + Fe2+(suda) -> Cu2+(suda) + Fe(k) tepkimesinin E° değerini bularak saklanabilirliği yorumlayınız."
+      ]
+    }
+  ]
 }

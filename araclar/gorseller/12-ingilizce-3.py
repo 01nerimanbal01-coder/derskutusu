@@ -11,8 +11,8 @@ def gorsel_1():
     ic = _kutu(10, 10, 680, 200, "#eff6ff", "#2563eb", 12, 2)
     ic += _metin(350, 34, "THEME 2: FRIENDSHIP — DESCRIBING PERSONAL QUALITIES", 14, "#1e3a8a", "bold")
     cols = [
-        (25, "#f0fdf4", "#16a34a", "#166534", "Positive Qualities (Olumlu)", "• reliable / trustworthy (güvenilir)", "• generous (cömert) & sincere (içten)", "• supportive & understanding", "• humble / modest (alçakgönüllü)"),
-        (362, "#fef2f2", "#ef4444", "#991b1b", "Negative Qualities (Olumsuz)", "• arrogant / conceited (kibirli)", "• stubborn / obstinate (inatçı)", "• jealous / envious (kıskanç)", "• stingy / mean (cimri) & bad-tempered")
+        (25, "#f0fdf4", "#16a34a", "#166534", "Positive Qualities (Olumlu)", "• reliable / trustworthy (güvenilir)", "• generous (cömert) &amp; sincere (içten)", "• supportive &amp; understanding", "• humble / modest (alçakgönüllü)"),
+        (362, "#fef2f2", "#ef4444", "#991b1b", "Negative Qualities (Olumsuz)", "• arrogant / conceited (kibirli)", "• stubborn / obstinate (inatçı)", "• jealous / envious (kıskanç)", "• stingy / mean (cimri) &amp; bad-tempered")
     ]
     for x, bg, st, tc, b, s1, s2, s3, s4 in cols:
         ic += _kutu(x, 48, 312, 146, bg, st, 10, 1.8)
@@ -25,7 +25,7 @@ def gorsel_1():
 
 def gorsel_2():
     ic = _kutu(10, 10, 680, 195, "#fffbeb", "#f59e0b", 12, 2)
-    ic += _metin(350, 34, "FRIENDSHIP IDIOMS & PHRASAL VERBS", 14, "#92400e", "bold")
+    ic += _metin(350, 34, "FRIENDSHIP IDIOMS &amp; PHRASAL VERBS", 14, "#92400e", "bold")
     items = [
         (25, "get on well with", "biriyle iyi geçinmek", "(have a good relationship)"),
         (192, "count on / rely on", "birine güvenmek,", "bel bağlamak"),
@@ -41,7 +41,7 @@ def gorsel_2():
 
 def gorsel_3():
     ic = _kutu(10, 10, 680, 200, "#fdf4ff", "#a855f7", 12, 2)
-    ic += _metin(350, 34, "RELATIVE CLAUSES: DEFINING FRIEND & PERSON QUALITIES", 14, "#6b21a8", "bold")
+    ic += _metin(350, 34, "RELATIVE CLAUSES: DEFINING FRIEND &amp; PERSON QUALITIES", 14, "#6b21a8", "bold")
     rows = [
         (50, "who / that", "İnsanları niteler (Özne/Nesne)", "A true friend is someone who supports you in hard times."),
         (100, "whose", "İyelik / sahiplik bildirir (+ noun)", "I admire people whose actions match their words."),

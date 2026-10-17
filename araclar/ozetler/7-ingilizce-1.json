@@ -45,7 +45,8 @@
       "kutu": {
         "tur": "ipucu",
         "metin": "Kişilik sonucunu metinde anlatılan davranışla destekle."
-      }
+      },
+      "gorsel": "<svg viewBox=\"0 0 460 214\" role=\"img\" aria-label=\"Dış Görünüş, Kişilik ve Karşılaştırma kavram özeti şeması\"><rect x=\"90\" y=\"12\" width=\"280\" height=\"38\" rx=\"19\" class=\"g-mf\"/><text x=\"230\" y=\"36\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"800\" class=\"g-b\">Dış Görünüş, Kişilik ve Karşılaştırma</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ma\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"116\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">1. Bölüm</text><text x=\"116\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Üç farklı soru</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ta\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"344\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">2. Bölüm</text><text x=\"344\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Dış görünüş sözcükleri</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ya\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"116\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-yf\">3. Bölüm</text><text x=\"116\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Kişiliği davranıştan çıkarma</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-oa\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"344\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-of\">4. Bölüm</text><text x=\"344\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">İki kişiyi karşılaştırma</text></svg>"
     },
     {
       "baslik": "İki kişiyi karşılaştırma",
@@ -102,24 +103,24 @@
       "tur": "coktan",
       "soru": "Cevap “She likes reading poems.” olduğuna göre uygun soru hangisidir?",
       "secenekler": [
-        "What is she like?",
-        "What does she look like?",
         "What does she like?",
+        "What does she look like?",
+        "What is she like?",
         "How old is she?"
       ],
-      "dogru": 2,
+      "dogru": 0,
       "aciklama": "Cevap sevdiği etkinliği belirtir."
     },
     {
       "tur": "coktan",
       "soru": "Bir öğrenci “My friend gives presents and likes sharing.” diyor. Hangi sıfat bu davranışı karşılar?",
       "secenekler": [
-        "Generous",
         "Stubborn",
+        "Generous",
         "Selfish",
         "Punctual"
       ],
-      "dogru": 0,
+      "dogru": 1,
       "aciklama": "Paylaşma ve hediye verme generous ile ilişkilidir."
     },
     {
@@ -128,15 +129,27 @@
       "secenekler": [
         "good → gooder",
         "outgoing → outgoinger",
-        "tidy → tidyer",
-        "slim → slimmer"
+        "slim → slimmer",
+        "tidy → tidyer"
       ],
-      "dogru": 3,
+      "dogru": 2,
       "aciklama": "Slim karşılaştırmada slimmer olur."
     },
     {
+      "tur": "coktan",
+      "soru": "‘İki kişiyi karşılaştırma’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "“more taller” yerine “taller”; “generouser” yerine “more generous” kullan."
+      ],
+      "dogru": 3,
+      "aciklama": "İki kişiyi karşılaştırma bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
       "tur": "dy",
-      "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
           "metin": "“She has wavy hair.” kişilik hakkında bilgi verir.",
@@ -162,7 +175,7 @@
     },
     {
       "tur": "eslestir",
-      "yonerge": "İlişkili kavram ve açıklamaları eşleştiriniz.",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
           "straight",
@@ -184,7 +197,7 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
           "metin": "Tall sıfatının karşılaştırma biçimi ___ olur.",
@@ -200,26 +213,18 @@
         }
       ],
       "fazla": [
-        "than"
+        "than",
+        "varsayım"
       ]
     },
     {
       "tur": "ogretici",
       "soru": "Bir metin kişinin boyunu ve saçını anlatıyor; davranışlarından söz etmiyor. Kişiliği hakkında sorulan soruyu nasıl değerlendirirsin?",
+      "cevap": "Verilen metinde kişilik hakkında yeterli bilgi yoktur. Görünüşten kişilik tahmini yapmak yerine bilginin verilmediği belirtilmelidir.",
       "ipuclari": [
         "Görünüş ve kişilik bilgilerini ayır.",
         "Metinde cevap için kanıt bulunup bulunmadığını kontrol et."
-      ],
-      "cevap": "Verilen metinde kişilik hakkında yeterli bilgi yoktur. Görünüşten kişilik tahmini yapmak yerine bilginin verilmediği belirtilmelidir."
-    },
-    {
-      "tur": "ogretici",
-      "soru": "“My friend is honest because …” cümlesinin sonuna hangi davranış eklenebilir?",
-      "ipuclari": [
-        "Honest dürüst demektir.",
-        "Gerekçe görünüşe değil davranışa dayanmalı."
-      ],
-      "cevap": "“… she tells the truth.” eklenebilir. Doğruyu söyleme davranışı dürüstlük sıfatını destekler."
+      ]
     }
   ],
   "ozet": [

@@ -12,8 +12,8 @@ GORSELLER = {
   <text x="32" y="95" font-size="11" fill="#1e3a8a">• 610 yılında ilk vahiy ("Oku!")</text>
   <text x="40" y="111" font-size="11" fill="#1e3a8a">ile başlayan ilim seferberliği.</text>
   <text x="32" y="133" font-size="11" fill="#1e3a8a">• Kur'an ve Sünnet'in anlaşılması</text>
-  <text x="40" y="149" font-size="11" fill="#1e3a8a">için <tspan font-weight="700">Tefsir, Hadis, Fıkıh ve</tspan></text>
-  <text x="40" y="165" font-size="11" fill="#1e3a8a"><tspan font-weight="700">Kelam</tspan> ilimleri doğdu.</text>
+  <text x="40" y="149" font-size="11" fill="#1e3a8a">için &lt;tspan font-weight="700">Tefsir, Hadis, Fıkıh ve&lt;/tspan></text>
+  <text x="40" y="165" font-size="11" fill="#1e3a8a">&lt;tspan font-weight="700">Kelam&lt;/tspan> ilimleri doğdu.</text>
   <text x="32" y="187" font-size="11" fill="#1d4ed8">• Dil, edebiyat ve İslam tarihi</text>
   <text x="40" y="203" font-size="11" fill="#1d4ed8">(Siyer/Megazi) çalışmaları gelişti.</text>
   <!-- Arrow 1 -->
@@ -39,7 +39,7 @@ GORSELLER = {
   <text x="547" y="95" font-size="11" fill="#78350f">• VIII–XIII. yüzyıllar arasında</text>
   <text x="555" y="111" font-size="11" fill="#78350f">tıp, astronomi, cebir, optik ve</text>
   <text x="555" y="127" font-size="11" fill="#78350f">kimyada özgün buluşlar yapıldı.</text>
-  <text x="547" y="149" font-size="11" fill="#78350f">• <tspan font-weight="700">Endülüs (Kurtuba)</tspan> ve Sicilya</text>
+  <text x="547" y="149" font-size="11" fill="#78350f">• &lt;tspan font-weight="700">Endülüs (Kurtuba)&lt;/tspan> ve Sicilya</text>
   <text x="555" y="165" font-size="11" fill="#78350f">üzerinden Avrupa'ya aktarıldı.</text>
   <text x="547" y="187" font-size="11" font-weight="700" fill="#92400e">• Batı'da Rönesans ve Reform</text>
   <text x="555" y="203" font-size="11" fill="#92400e">hareketlerine öncülük etti.</text>
@@ -99,22 +99,22 @@ GORSELLER = {
   <!-- 1. Darülerkam & Suffe -->
   <rect x="20" y="48" width="350" height="184" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
   <text x="195" y="70" text-anchor="middle" font-size="12.5" font-weight="800" fill="#065f46">MESCİT – CAMİ MERKEZLİ EĞİTİM</text>
-  <text x="34" y="94" font-size="11" fill="#064e3b">• <tspan font-weight="700">Darülerkâm (Mekke):</tspan> İslam'ın ilk yıllarında Hz. Erkâm'ın</text>
+  <text x="34" y="94" font-size="11" fill="#064e3b">• &lt;tspan font-weight="700">Darülerkâm (Mekke):&lt;/tspan> İslam'ın ilk yıllarında Hz. Erkâm'ın</text>
   <text x="44" y="110" font-size="11" fill="#064e3b">evi Müslümanların ilk eğitim ve tebliğ mekânı olmuştur.</text>
-  <text x="34" y="132" font-size="11" fill="#064e3b">• <tspan font-weight="700">Mescid-i Nebi ve Suffe (Medine):</tspan> Hicret sonrası inşa</text>
-  <text x="44" y="148" font-size="11" fill="#064e3b">edilen Peygamber Mescidi'ne bitişik <tspan font-weight="700">Suffe</tspan>, İslam'ın ilk</text>
-  <text x="44" y="164" font-size="11" fill="#064e3b">yatılı eğitim kurumudur (Öğrencilerine <tspan font-weight="700">Ashab-ı Suffe</tspan> denir).</text>
-  <text x="34" y="186" font-size="11" fill="#064e3b">• <tspan font-weight="700">Ders Halkaları ve Külliye:</tspan> Camilerde âlimlerin etrafında</text>
+  <text x="34" y="132" font-size="11" fill="#064e3b">• &lt;tspan font-weight="700">Mescid-i Nebi ve Suffe (Medine):&lt;/tspan> Hicret sonrası inşa</text>
+  <text x="44" y="148" font-size="11" fill="#064e3b">edilen Peygamber Mescidi'ne bitişik &lt;tspan font-weight="700">Suffe&lt;/tspan>, İslam'ın ilk</text>
+  <text x="44" y="164" font-size="11" fill="#064e3b">yatılı eğitim kurumudur (Öğrencilerine &lt;tspan font-weight="700">Ashab-ı Suffe&lt;/tspan> denir).</text>
+  <text x="34" y="186" font-size="11" fill="#064e3b">• &lt;tspan font-weight="700">Ders Halkaları ve Külliye:&lt;/tspan> Camilerde âlimlerin etrafında</text>
   <text x="44" y="202" font-size="11" fill="#064e3b">ders halkaları kurulmuş; Osmanlı'da cami merkezli</text>
-  <text x="44" y="218" font-size="11" fill="#064e3b"><tspan font-weight="700">külliyeler</tspan> mahallenin eğitim ve sosyal kalbi olmuştur.</text>
+  <text x="44" y="218" font-size="11" fill="#064e3b">&lt;tspan font-weight="700">külliyeler&lt;/tspan> mahallenin eğitim ve sosyal kalbi olmuştur.</text>
   <!-- 2. Mektep (Küttab / Sıbyan Mektebi) -->
   <rect x="390" y="48" width="350" height="184" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
   <text x="565" y="70" text-anchor="middle" font-size="12.5" font-weight="800" fill="#92400e">MEKTEP (KÜTTAB / SIBYAN MEKTEBİ)</text>
-  <text x="404" y="94" font-size="11" fill="#78350f">• <tspan font-weight="700">Seviye:</tspan> İlkokul düzeyinde okuma-yazma, Kur'an-ı Kerim</text>
+  <text x="404" y="94" font-size="11" fill="#78350f">• &lt;tspan font-weight="700">Seviye:&lt;/tspan> İlkokul düzeyinde okuma-yazma, Kur'an-ı Kerim</text>
   <text x="414" y="110" font-size="11" fill="#78350f">ve temel dinî bilgilerin öğretildiği kurumlardır.</text>
-  <text x="404" y="132" font-size="11" fill="#78350f">• <tspan font-weight="700">Bedir Esirleri Uygulaması:</tspan> Hz. Peygamber'in 10 Müslüman</text>
+  <text x="404" y="132" font-size="11" fill="#78350f">• &lt;tspan font-weight="700">Bedir Esirleri Uygulaması:&lt;/tspan> Hz. Peygamber'in 10 Müslüman</text>
   <text x="414" y="148" font-size="11" fill="#78350f">çocuğa okuma-yazma öğreten esirleri serbest bırakması.</text>
-  <text x="404" y="170" font-size="11" fill="#78350f">• <tspan font-weight="700">Hz. Ömer Dönemi:</tspan> Mektepler yaygınlaştı ve öğretmenlere</text>
+  <text x="404" y="170" font-size="11" fill="#78350f">• &lt;tspan font-weight="700">Hz. Ömer Dönemi:&lt;/tspan> Mektepler yaygınlaştı ve öğretmenlere</text>
   <text x="414" y="186" font-size="11" fill="#78350f">devlet hazinesinden maaş bağlandı.</text>
   <text x="404" y="206" font-size="11" font-weight="700" fill="#92400e">• Osmanlı Geleneği: Okula başlayan çocuklar için</text>
   <text x="414" y="220" font-size="11" font-weight="700" fill="#b45309">\"Âmin Alayı\" (Bed-i Besmele Cemiyeti) düzenlenirdi.</text>
@@ -139,9 +139,9 @@ GORSELLER = {
   <rect x="203" y="48" width="170" height="192" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
   <rect x="203" y="48" width="170" height="26" rx="8" fill="#059669"/>
   <text x="288" y="66" text-anchor="middle" font-size="11.5" font-weight="800" fill="#ffffff">2. BÜYÜK SELÇUKLU</text>
-  <text x="213" y="92" font-size="10.5" fill="#065f46">• Vezir <tspan font-weight="700">Nizamülmülk</tspan></text>
-  <text x="221" y="106" font-size="10.5" fill="#065f46">tarafından <tspan font-weight="700">1067'de Bağdat'ta</tspan></text>
-  <text x="221" y="120" font-size="10.5" fill="#065f46"><tspan font-weight="700" fill="#047857">Nizamiye Medresesi</tspan> açıldı.</text>
+  <text x="213" y="92" font-size="10.5" fill="#065f46">• Vezir &lt;tspan font-weight="700">Nizamülmülk&lt;/tspan></text>
+  <text x="221" y="106" font-size="10.5" fill="#065f46">tarafından &lt;tspan font-weight="700">1067'de Bağdat'ta&lt;/tspan></text>
+  <text x="221" y="120" font-size="10.5" fill="#065f46">&lt;tspan font-weight="700" fill="#047857">Nizamiye Medresesi&lt;/tspan> açıldı.</text>
   <text x="213" y="142" font-size="10.5" fill="#065f46">• Dinî ilimlerin yanında</text>
   <text x="221" y="156" font-size="10.5" fill="#065f46">felsefe, matematik, edebiyat</text>
   <text x="221" y="170" font-size="10.5" fill="#065f46">ve astronomi okutuldu.</text>
@@ -163,10 +163,10 @@ GORSELLER = {
   <rect x="570" y="48" width="170" height="192" rx="10" fill="#f3e8ff" stroke="#a855f7" stroke-width="2"/>
   <rect x="570" y="48" width="170" height="26" rx="8" fill="#7c3aed"/>
   <text x="655" y="66" text-anchor="middle" font-size="11.5" font-weight="800" fill="#ffffff">4. ENDÜLÜS VE OSMANLI</text>
-  <text x="580" y="92" font-size="10.5" fill="#581c87">• <tspan font-weight="700">Endülüs:</tspan> Kurtuba, Gırnata,</text>
+  <text x="580" y="92" font-size="10.5" fill="#581c87">• &lt;tspan font-weight="700">Endülüs:&lt;/tspan> Kurtuba, Gırnata,</text>
   <text x="588" y="106" font-size="10.5" fill="#581c87">İşbiliye medreselerinde</text>
   <text x="588" y="120" font-size="10.5" fill="#581c87">gayrimüslimler de okudu.</text>
-  <text x="580" y="142" font-size="10.5" fill="#581c87">• <tspan font-weight="700">Osmanlı:</tspan> İlk medrese</text>
+  <text x="580" y="142" font-size="10.5" fill="#581c87">• &lt;tspan font-weight="700">Osmanlı:&lt;/tspan> İlk medrese</text>
   <text x="588" y="156" font-size="10.5" font-weight="700" fill="#6b21a8">İznik'te (Orhan Gazi)</text>
   <text x="688" y="156" font-size="10.5" fill="#581c87">açıldı.</text>
   <text x="580" y="176" font-size="10.5" font-weight="700" fill="#6b21a8">• Fatih Sahn-ı Seman ve</text>
@@ -181,22 +181,22 @@ GORSELLER = {
   <rect x="20" y="48" width="350" height="184" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
   <rect x="20" y="48" width="350" height="28" rx="8" fill="#2563eb"/>
   <text x="195" y="67" text-anchor="middle" font-size="13" font-weight="800" fill="#ffffff">DARÜLKURRA (DARÜLHUFFAZ)</text>
-  <text x="34" y="96" font-size="11" fill="#1e3a8a">• <tspan font-weight="700">Amacı:</tspan> Uzmanlık derecesinde <tspan font-weight="700">Kur'an-ı Kerim okuma</tspan></text>
-  <text x="44" y="112" font-size="11" fill="#1e3a8a"><tspan font-weight="700">(kıraat / tecvit) ilmini öğretmek</tspan> ve <tspan font-weight="700">hafız</tspan> yetiştirmek.</text>
-  <text x="34" y="136" font-size="11" fill="#1e3a8a">• <tspan font-weight="700">Adlandırma:</tspan> Selçuklularda genellikle <tspan font-weight="700">\"Darülhuffaz\"</tspan>,</text>
-  <text x="44" y="152" font-size="11" fill="#1e3a8a">Osmanlılarda ise <tspan font-weight="700">\"Darülkurra\"</tspan> olarak adlandırılmıştır.</text>
-  <text x="34" y="176" font-size="11" fill="#1e3a8a">• <tspan font-weight="700">Yaygınlığı:</tspan> Evliya Çelebi'ye göre Osmanlı'da tüm</text>
+  <text x="34" y="96" font-size="11" fill="#1e3a8a">• &lt;tspan font-weight="700">Amacı:&lt;/tspan> Uzmanlık derecesinde &lt;tspan font-weight="700">Kur'an-ı Kerim okuma&lt;/tspan></text>
+  <text x="44" y="112" font-size="11" fill="#1e3a8a">&lt;tspan font-weight="700">(kıraat / tecvit) ilmini öğretmek&lt;/tspan> ve &lt;tspan font-weight="700">hafız&lt;/tspan> yetiştirmek.</text>
+  <text x="34" y="136" font-size="11" fill="#1e3a8a">• &lt;tspan font-weight="700">Adlandırma:&lt;/tspan> Selçuklularda genellikle &lt;tspan font-weight="700">\"Darülhuffaz\"&lt;/tspan>,</text>
+  <text x="44" y="152" font-size="11" fill="#1e3a8a">Osmanlılarda ise &lt;tspan font-weight="700">\"Darülkurra\"&lt;/tspan> olarak adlandırılmıştır.</text>
+  <text x="34" y="176" font-size="11" fill="#1e3a8a">• &lt;tspan font-weight="700">Yaygınlığı:&lt;/tspan> Evliya Çelebi'ye göre Osmanlı'da tüm</text>
   <text x="44" y="192" font-size="11" fill="#1e3a8a">selatin camilerinin bünyesinde darülkurra bulunurdu</text>
   <text x="44" y="208" font-size="11" fill="#1e40af">(Örn: Amasya Sultan Bayezid Darülkurrası).</text>
   <!-- Right: Darülhadis -->
   <rect x="390" y="48" width="350" height="184" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
   <rect x="390" y="48" width="350" height="28" rx="8" fill="#059669"/>
   <text x="565" y="67" text-anchor="middle" font-size="13" font-weight="800" fill="#ffffff">DARÜLHADİS (HADİS İHTİSAS KURUMU)</text>
-  <text x="404" y="96" font-size="11" fill="#065f46">• <tspan font-weight="700">Amacı:</tspan> Hz. Peygamber'in hadislerini araştırmak, öğretmek</text>
-  <text x="414" y="112" font-size="11" fill="#065f46">ve <tspan font-weight="700">muhaddis (hadis uzmanı)</tspan> yetiştirmek.</text>
-  <text x="404" y="136" font-size="11" fill="#065f46">• <tspan font-weight="700">İlk Darülhadis:</tspan> Şam'da Atabeg <tspan font-weight="700">Nureddin Zengi</tspan></text>
-  <text x="414" y="152" font-size="11" fill="#065f46">tarafından kurulan <tspan font-weight="700">Darülhadisin-Nuriye</tspan>'dir.</text>
-  <text x="404" y="176" font-size="11" fill="#065f46">• <tspan font-weight="700">Anadolu'daki Örnekleri:</tspan> Anadolu'da ilk olarak</text>
+  <text x="404" y="96" font-size="11" fill="#065f46">• &lt;tspan font-weight="700">Amacı:&lt;/tspan> Hz. Peygamber'in hadislerini araştırmak, öğretmek</text>
+  <text x="414" y="112" font-size="11" fill="#065f46">ve &lt;tspan font-weight="700">muhaddis (hadis uzmanı)&lt;/tspan> yetiştirmek.</text>
+  <text x="404" y="136" font-size="11" fill="#065f46">• &lt;tspan font-weight="700">İlk Darülhadis:&lt;/tspan> Şam'da Atabeg &lt;tspan font-weight="700">Nureddin Zengi&lt;/tspan></text>
+  <text x="414" y="152" font-size="11" fill="#065f46">tarafından kurulan &lt;tspan font-weight="700">Darülhadisin-Nuriye&lt;/tspan>'dir.</text>
+  <text x="404" y="176" font-size="11" fill="#065f46">• &lt;tspan font-weight="700">Anadolu'daki Örnekleri:&lt;/tspan> Anadolu'da ilk olarak</text>
   <text x="414" y="192" font-size="11" font-weight="700" fill="#047857">Çankırı Taş Mescit (Cemaleddin Ferruh Darülhadisi),</text>
   <text x="414" y="208" font-size="11" fill="#065f46">Sivas Gök Medrese ve Konya İnce Minareli Medrese.</text>
 </svg>''',
@@ -210,10 +210,10 @@ GORSELLER = {
   <text x="135" y="67" text-anchor="middle" font-size="12.5" font-weight="800" fill="#ffffff">1. KÜTÜPHANE</text>
   <text x="32" y="94" font-size="10.5" fill="#78350f">• İlk kütüphaneler Emeviler</text>
   <text x="40" y="108" font-size="10.5" fill="#78350f">döneminde mescitlerde doğdu.</text>
-  <text x="32" y="128" font-size="10.5" fill="#78350f">• <tspan font-weight="700">794'te Bağdat'ta ilk kâğıt</tspan></text>
-  <text x="40" y="142" font-size="10.5" fill="#78350f"><tspan font-weight="700">fabrikasının</tspan> kurulmasıyla</text>
+  <text x="32" y="128" font-size="10.5" fill="#78350f">• &lt;tspan font-weight="700">794'te Bağdat'ta ilk kâğıt&lt;/tspan></text>
+  <text x="40" y="142" font-size="10.5" fill="#78350f">&lt;tspan font-weight="700">fabrikasının&lt;/tspan> kurulmasıyla</text>
   <text x="40" y="156" font-size="10.5" fill="#78350f">kitap sayısı hızla arttı.</text>
-  <text x="32" y="176" font-size="10.5" fill="#78350f">• Endülüs başkenti <tspan font-weight="700">Kurtuba'da</tspan></text>
+  <text x="32" y="176" font-size="10.5" fill="#78350f">• Endülüs başkenti &lt;tspan font-weight="700">Kurtuba'da&lt;/tspan></text>
   <text x="40" y="190" font-size="10.5" font-weight="700" fill="#92400e">70 kütüphane</text>
   <text x="115" y="190" font-size="10.5" fill="#78350f">ve yüz binlerce</text>
   <text x="40" y="204" font-size="10.5" fill="#78350f">yazma eser bulunuyordu.</text>
@@ -224,8 +224,8 @@ GORSELLER = {
   <text x="277" y="94" font-size="10.5" fill="#5b21b6">• Gök cisimlerinin hareketlerini</text>
   <text x="285" y="108" font-size="10.5" fill="#5b21b6">gözlemleyen astronomi merkezi.</text>
   <text x="277" y="128" font-size="10.5" fill="#5b21b6">• İlk rasathaneler Halife Memun</text>
-  <text x="285" y="142" font-size="10.5" fill="#5b21b6">zamanında Bağdat (<tspan font-weight="700">Şemmasiye</tspan>)</text>
-  <text x="285" y="156" font-size="10.5" fill="#5b21b6">ve Şam'da (<tspan font-weight="700">Kasiyun</tspan>) kuruldu.</text>
+  <text x="285" y="142" font-size="10.5" fill="#5b21b6">zamanında Bağdat (&lt;tspan font-weight="700">Şemmasiye&lt;/tspan>)</text>
+  <text x="285" y="156" font-size="10.5" fill="#5b21b6">ve Şam'da (&lt;tspan font-weight="700">Kasiyun&lt;/tspan>) kuruldu.</text>
   <text x="277" y="176" font-size="10.5" font-weight="700" fill="#6d28d9">• Meşhur Rasathaneler:</text>
   <text x="285" y="190" font-size="10" fill="#5b21b6">- Meraga (Nasîrüddin Tûsî)</text>
   <text x="285" y="204" font-size="10" fill="#5b21b6">- Semerkant (Uluğ Bey)</text>
@@ -235,12 +235,12 @@ GORSELLER = {
   <rect x="510" y="48" width="230" height="28" rx="8" fill="#dc2626"/>
   <text x="625" y="67" text-anchor="middle" font-size="12.5" font-weight="800" fill="#ffffff">3. ŞİFAHANE (BİMARİSTAN)</text>
   <text x="522" y="94" font-size="10.5" fill="#7f1d1d">• Hastaların ücretsiz tedavi</text>
-  <text x="530" y="108" font-size="10.5" fill="#7f1d1d">edildiği ve <tspan font-weight="700">uygulamalı tıp eğitimi</tspan></text>
+  <text x="530" y="108" font-size="10.5" fill="#7f1d1d">edildiği ve &lt;tspan font-weight="700">uygulamalı tıp eğitimi&lt;/tspan></text>
   <text x="530" y="122" font-size="10.5" fill="#7f1d1d">verilen sağlık kurumlarıdır.</text>
   <text x="522" y="142" font-size="10.5" fill="#7f1d1d">• Bimaristan, Darüşşifa, Darüssıhha,</text>
   <text x="530" y="156" font-size="10.5" fill="#7f1d1d">Maristan adlarıyla da anılmıştır.</text>
   <text x="522" y="176" font-size="10.5" font-weight="700" fill="#991b1b">• Önemli Örnekler:</text>
-  <text x="530" y="190" font-size="10" fill="#7f1d1d">- Kayseri <tspan font-weight="700">Gevher Nesibe</tspan> (1206)</text>
+  <text x="530" y="190" font-size="10" fill="#7f1d1d">- Kayseri &lt;tspan font-weight="700">Gevher Nesibe&lt;/tspan> (1206)</text>
   <text x="530" y="204" font-size="10" fill="#7f1d1d">- Divriği Turan Melek, Amasya,</text>
   <text x="530" y="218" font-size="10" fill="#7f1d1d">Edirne II. Bayezid (müzikle tedavi!).</text>
 </svg>'''

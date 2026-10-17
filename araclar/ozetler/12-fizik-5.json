@@ -1,230 +1,279 @@
 {
- "ad": "12-fizik-5",
- "sinif": 12,
- "ders": "fizik",
- "ders_adi": "Fizik",
- "hafta": 5,
- "tarih": "12-16 Ekim 2026",
- "yayin_tarihi": "2026-10-14",
- "unite": "1. ÜNİTE: ÇEMBERSEL HAREKET",
- "konu": "Kütle Çekim Kuvveti, Çekim İvmesi, Uydu Hareketleri, Bağlanma-Kurtulma Enerjisi ve Kepler Yasaları",
- "ciktilar": [
-  "Newton'un Evrensel Kütle Çekim Yasası'nı ve gezegenin içinden dışına doğru kütle çekim ivmesinin (g) değişimini analiz eder.",
-  "Gezegen etrafında dolanan uyduların çizgisel hızını, potansiyel-kinetik-toplam enerjisini ile bağlanma ve kurtulma enerjilerini hesaplar.",
-  "Kepler'in Yörüngeler, Alanlar ve Periyotlar yasalarını açısal momentumun ve mekanik enerjinin korunumuyla ilişkilendirir."
- ],
- "giris": "Ay'ı Dünya etrafındaki yörüngesinde tutan kuvvet ile dalından kopan elmayı yere düşüren kuvvet aynı evrensel yasaya dayanır: {koyu:Evrensel Kütle Çekim Kuvveti}. Çembersel Hareket ünitesinin bu son bölümünde; {koyu:Isaac Newton}'un kütle çekim yasasını, bir gezegenin merkezinden sonsuza uzanan {koyu:çekim alanı ivmesini}, haberleşme uydularının yörünge hızı ile {koyu:bağlanma-kurtulma enerjilerini} ve {koyu:Johannes Kepler}'in gezegenlerin hareketini açıklayan üç temel yasasını inceleyeceğiz.",
- "ozet": [
-  "Newton'un Evrensel Kütle Çekim Yasası'na göre aralarında {koyu:d} uzaklığı bulunan {koyu:m1} ve {koyu:m2} kütleli iki cisim birbirini eşit büyüklükte ve zıt yönlü {koyu:F = G . m1 . m2 / d²} kuvvetiyle çeker.",
-  "Yarıçapı {koyu:R} ve kütlesi {koyu:M} olan homojen bir gezegenin merkezinde çekim ivmesi sıfırdır ({koyu:g = 0}); merkezden yüzeye kadar {koyu:r} ile doğru orantılı artar, yüzeyde maksimum olur ({koyu:g = G . M / R²}) ve yüzeyden uzaklaştıkça {koyu:r²} ile ters orantılı azalır.",
-  "Gezegen etrafında {koyu:r} yarıçaplı yörüngede dolanan bir uydunun çizgisel hızı {koyu:v = Kök(G . M / r)} olup {koyu:uydunun kendi kütlesine (m) bağlı değildir}.",
-  "Yörüngedeki bir uydunun potansiyel enerjisi {koyu:Ep = -G.M.m/r}, kinetik enerjisi {koyu:Ek = +G.M.m/(2r)}, toplam enerjisi {koyu:Etop = -G.M.m/(2r)}, bağlanma enerjisi {koyu:Ebağ = +G.M.m/(2r)} ve yüzeyden kurtulma (kaçış) enerjisi {koyu:Ekurt = +G.M.m/R}'dir.",
-  "{koyu:Kepler Yasaları}; Yörüngeler Yasası (odaklarından birinde Güneş bulunan elips), Alanlar Yasası (eşit sürede eşit alanlar tarama ve açısal momentum korunumu) ve Periyotlar Yasası ({koyu:R³ / T² = Sabit}) olmak üzere üç tanedir."
- ],
- "bolumler": [
-  {
-   "baslik": "1. Newton'un Evrensel Kütle Çekim Yasası",
-   "metin": [
-    "Evrende kütlesi olan her cisim, diğer tüm kütlelere çekim kuvveti uygular. Kütleleri {koyu:m1} ve {koyu:m2}, kütle merkezleri arasındaki uzaklık {koyu:d} olan iki cismin birbirine uyguladığı kütle çekim kuvvetinin büyüklüğü {koyu:F = G . (m1 . m2) / d²} bağıntısıyla hesaplanır. Burada {koyu:G = 6,67 x 10⁻¹¹ N.m²/kg²} evrensel çekim sabitidir.",
-    "Kütle çekim kuvveti bir {koyu:etki-tepki kuvvet çiftidir}: Cisimlerin kütleleri ne kadar farklı olursa olsun (örneğin Dünya ile Ay), birbirlerine uyguladıkları çekim kuvvetlerinin {koyu:büyüklükleri birbirine eşit, yönleri ise zıttır} ({koyu:|F12| = |F21|}, vektörel olarak {koyu:F12 = -F21})."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "Vektörel Eşitlik Hatasına Dikkat!",
-    "metin": "Sorularda 'Dünya ve Ay'ın birbirine uyguladığı kütle çekim kuvvetleri eşittir ({koyu:F1 = F2})' denirse {koyu:yanlıştır}; çünkü kuvvet vektöreldir ve yönleri zıttır ({koyu:F1 = -F2}). Doğru ifade {koyu:'Kuvvetlerin büyüklükleri eşittir'} şeklindedir."
-   },
-   "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"14\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">KEPLER YASALARI: GEZEGENLERİN GÜNEŞ ETRAFINDAKİ HAREKETİ</text><rect x=\"20\" y=\"44\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#EFF6FF\" stroke=\"#2563EB\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"44\" width=\"205\" height=\"30\" rx=\"10\" fill=\"#2563EB\"/><rect x=\"20\" y=\"62\" width=\"205\" height=\"12\" fill=\"#2563EB\"/><text x=\"122.5\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">1. YÖRÜNGE YASASI</text><text x=\"32\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Her gezegen, odaklarından</text><text x=\"32\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  birinde Güneş bulunan</text><text x=\"32\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">  ELİPTİK bir yörüngede</text><text x=\"32\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">  dolanır.</text><text x=\"32\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">• Yörünge tam çember değil,</text><text x=\"32\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  iki odaklı (F1, F2) elipstir.</text><text x=\"32\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">• Güneş'e uzaklık yıl</text><text x=\"32\" y=\"218\" font-size=\"10.5\" fill=\"#1E293B\">  boyunca değişir.</text><rect x=\"237\" y=\"44\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#ECFDF5\" stroke=\"#059669\" stroke-width=\"1.8\"/><rect x=\"237\" y=\"44\" width=\"205\" height=\"30\" rx=\"10\" fill=\"#059669\"/><rect x=\"237\" y=\"62\" width=\"205\" height=\"12\" fill=\"#059669\"/><text x=\"339.5\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">2. ALANLAR YASASI</text><text x=\"249\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Gezegeni Güneş'e birleştiren</text><text x=\"249\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  yarıçap vektörü, eşit zaman</text><text x=\"249\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">  aralıklarında EŞİT ALANLAR</text><text x=\"249\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">  tarar (Delta_t1 = Delta_t2</text><text x=\"249\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  ise A1 = A2).</text><text x=\"249\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">• Güneş'e yaklaştıkça çizgisel</text><text x=\"249\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">  hız ve kinetik enerji ARTAR!</text><text x=\"249\" y=\"218\" font-size=\"10.5\" fill=\"#1E293B\">• Açısal momentum KORUNUR.</text><rect x=\"455\" y=\"44\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#F5F3FF\" stroke=\"#7C3AED\" stroke-width=\"1.8\"/><rect x=\"455\" y=\"44\" width=\"205\" height=\"30\" rx=\"10\" fill=\"#7C3AED\"/><rect x=\"455\" y=\"62\" width=\"205\" height=\"12\" fill=\"#7C3AED\"/><text x=\"557.5\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">3. PERİYOTLAR YASASI</text><text x=\"467\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Aynı yıldız etrafında</text><text x=\"467\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  dolanan tüm gezegenler için</text><text x=\"467\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">  ortalama yörünge yarıçapının</text><text x=\"467\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">  küpünün, dolanım periyodunun</text><text x=\"467\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  karesine oranı SABİTTİR:</text><text x=\"467\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  R^3 / T^2 = Sabit</text><text x=\"467\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">• Güneş'ten uzaklaştıkça</text><text x=\"467\" y=\"218\" font-size=\"10.5\" fill=\"#1E293B\">  periyot (T) büyür.</text></svg>"
-  },
-  {
-   "baslik": "2. Kütle Çekim Alanı ve Çekim İvmesi (g)",
-   "metin": [
-    "Kütlesi {koyu:M} ve yarıçapı {koyu:R} olan bir gezegenin yüzeyindeki birim kütleye (1 kg) etki eden kütle çekim kuvvetine {koyu:çekim alanı şiddeti (yer çekimi ivmesi)} denir. Gezegen yüzeyinde ağırlık çekim kuvvetine eşitlenirse ({koyu:m . g = G . M . m / R²}) yüzeydeki çekim ivmesi {koyu:g = G . M / R²} bulunur. Eğer gezegenin ortalama özkütlesi {koyu:d} biliniyorsa, küre hacmi yerine yazılarak {koyu:g = (4/3) . pi . G . d . R} (kısaca {koyu:KADER} formülü) elde edilir.",
-    "Gezegenin {koyu:merkezinde (r = 0)} çekim ivmesi sıfırdır ({koyu:g = 0}). Merkezden yüzeye doğru çıkıldıkça ({koyu:r <= R}) çekim ivmesi merkeze olan uzaklık {koyu:r ile doğru orantılı} olarak doğrusal artar ve yüzeyde ({koyu:r = R}) en büyük değerine ulaşır. Yüzeyden dışarı doğru uzaklaştıkça ({koyu:r > R}) ise merkeze olan uzaklığın {koyu:karesiyle ters orantılı} ({koyu:g' = G . M / r²}) olarak parabolik biçimde azalır."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Yüzeyden Uzaklaşırken Merkezden Uzaklık Alınır!",
-    "metin": "Yarıçapı {koyu:R} olan Dünya yüzeyinden {koyu:h = 2R} kadar yükseğe çıkıldığında, merkeze olan toplam uzaklık {koyu:r = R + 2R = 3R} olur! Dolayısıyla çekim ivmesi 4'te birine değil, {koyu:(3R)² = 9R²} olduğu için {koyu:g / 9} değerine düşer."
-   },
-   "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"14\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">NEWTON'UN EVRENSEL KÜTLE ÇEKİM YASASI VE ÇEKİM İVMESİ (g)</text><rect x=\"20\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#FEF3C7\" stroke=\"#D97706\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#D97706\"/><rect x=\"20\" y=\"62\" width=\"310\" height=\"12\" fill=\"#D97706\"/><text x=\"175.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">KÜTLE ÇEKİM KUVVETİ (F = G.m1.m2 / d^2)</text><text x=\"32\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Evrendeki her iki kütle birbirini kütlelerinin</text><text x=\"32\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  çarpımıyla doğru, merkezleri arasındaki uzaklığın</text><text x=\"32\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">  karesiyle ters orantılı kuvvetle çeker.</text><text x=\"32\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• Etki-tepki çiftidir: Büyüklükleri EŞİT, yönleri ZITTIR</text><text x=\"32\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  (|F_12| = |F_21|, kütleler farklı olsa bile!).</text><text x=\"32\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">• G = 6,67 x 10^(-11) N.m^2/kg^2 (Evrensel çekim sabiti).</text><rect x=\"350\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#FEF2F2\" stroke=\"#DC2626\" stroke-width=\"1.8\"/><rect x=\"350\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#DC2626\"/><rect x=\"350\" y=\"62\" width=\"310\" height=\"12\" fill=\"#DC2626\"/><text x=\"505.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">ÇEKİM ALANI İVMESİ (g = G.M / R^2)</text><text x=\"362\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Gezegenin merkezinden yüzeyine (r &lt;= R) kadar:</text><text x=\"362\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  Çekim ivmesi uzaklıkla DOĞRU orantılı artar</text><text x=\"362\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">  (Merkezde r = 0 iken g = 0; yüzeyde g_max = G.M / R^2).</text><text x=\"362\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">  Kürede g = (4/3).pi.G.d.r ('KADER' formülü).</text><text x=\"362\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">• Yüzeyden dışarı doğru uzaklaştıkça (r &gt; R):</text><text x=\"362\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  g = G.M / r^2 (Uzaklığın karesiyle TERS orantılı azalır).</text></svg>"
-  },
-  {
-   "baslik": "3. Uyduların Yörünge Hızı ve Dolanım Periyodu",
-   "metin": [
-    "Kütlesi {koyu:M} olan bir gezegenin merkezinden {koyu:r} uzaklıktaki çembersel yörüngede dolanan {koyu:m} kütleli bir uyduya etki eden kütle çekim kuvveti, uydunun çembersel hareket yapmasını sağlayan {koyu:merkezcil kuvvet} görevini görür: {koyu:G . M . m / r² = m . v² / r}.",
-    "Eşitliğin iki yanındaki uydu kütlesi {koyu:m} sadeleştiğinde uydunun yörüngedeki çizgisel dolanım hızı {koyu:v = Kök(G . M / r)} olarak bulunur. Görüldüğü gibi uydunun hızı {koyu:kendi kütlesine (m) bağlı değildir}; yalnız gezegenin kütlesine ({koyu:M}) ve yörünge yarıçapına ({koyu:r}) bağlıdır. Uydu gezegenden daha uzak bir yörüngeye ({koyu:r} artarsa) yerleştirildiğinde çizgisel hızı ({koyu:v}) ve açısal hızı ({koyu:w}) {koyu:azalır}, bir tam tur süresi olan dolanım periyodu ({koyu:T}) ise {koyu:artar}."
-   ],
-   "kutu": {
-    "tur": "bilgi",
-    "baslik": "Türksat Haberleşme (Jeosenkron) Uyduları",
-    "metin": "Haberleşme ve televizyon uyduları Dünya'nın kendi ekseni etrafındaki dönüş periyoduyla ({koyu:T = 24 saat}) eş zamanlı dönecekleri belirli bir {koyu:r} yarıçapına yerleştirilir; böylece Dünya'daki çanak antenlere göre gökyüzünde hep sabit bir noktada dururlar."
-   },
-   "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"14\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">UYDULARIN DOLANIM HIZI VE KÜTLE ÇEKİM POTANSİYEL ENERJİSİ</text><rect x=\"20\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#ECFEFF\" stroke=\"#0891B2\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#0891B2\"/><rect x=\"20\" y=\"62\" width=\"310\" height=\"12\" fill=\"#0891B2\"/><text x=\"175.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">UYDUNUN ÇİZGİSEL HIZI (v = Kök(G.M / r))</text><text x=\"32\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Kütle çekim kuvveti merkezcil kuvvete eşitlenir:</text><text x=\"32\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  G.M.m / r^2 = m.v^2 / r  =&gt;  v = Kök(G.M / r)</text><text x=\"32\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• DİKKAT: Uydunun yörüngedeki dolanım hızı (v),</text><text x=\"32\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">  uydunun kendi kütlesine (m) BAĞLI DEĞİLDİR!</text><text x=\"32\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">• Yörünge yarıçapı (r) arttıkça çizgisel hız (v)</text><text x=\"32\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  ve açısal hız (w) AZALIR, periyot (T) ARTAR.</text><rect x=\"350\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#ECFDF5\" stroke=\"#059669\" stroke-width=\"1.8\"/><rect x=\"350\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#059669\"/><rect x=\"350\" y=\"62\" width=\"310\" height=\"12\" fill=\"#059669\"/><text x=\"505.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">BAĞLANMA VE KURTULMA (KAÇIŞ) ENERJİSİ</text><text x=\"362\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Potansiyel Enerji: E_p = - G.M.m / r</text><text x=\"362\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">• Kinetik Enerji: E_k = + G.M.m / (2r)</text><text x=\"362\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Toplam Mekanik Enerji: E_top = - G.M.m / (2r)</text><text x=\"362\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• Bağlanma Enerjisi: E_bağ = + G.M.m / (2r) (Yörüngeden</text><text x=\"362\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  koparmak için gereken enerji).</text><text x=\"362\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">• Kurtulma Enerjisi: E_kurt = + G.M.m / R (Yüzeyden</text><text x=\"362\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">  çekim alanından tamamen çıkarmak için gereken enerji).</text></svg>"
-  },
-  {
-   "baslik": "4. Kütle Çekim Potansiyel Enerjisi, Bağlanma ve Kurtulma Enerjisi",
-   "metin": [
-    "Kütle çekim alanında potansiyel enerjinin sıfır olduğu referans noktası {koyu:sonsuz} kabul edilir. Bu nedenle aralarında {koyu:r} uzaklığı bulunan {koyu:M} ve {koyu:m} kütleli sistemin {koyu:kütle çekim potansiyel enerjisi} negatif işaretlidir: {koyu:Ep = - G . M . m / r}. Yörüngede {koyu:v = Kök(G.M/r)} hızıyla dolanan uydunun {koyu:kinetik enerjisi} ise {koyu:Ek = (1/2)m.v² = + G . M . m / (2r)} olur.",
-    "Uydunun yörüngedeki {koyu:toplam mekanik enerjisi} {koyu:Etop = Ep + Ek = - G . M . m / (2r)} değerine eşittir. Yörüngede dolanan bir uyduyu gezegenin çekim alanından koparıp sonsuza göndermek (toplam enerjisini sıfır yapmak) için verilmesi gereken en küçük enerjiye {koyu:bağlanma enerjisi} denir ve {koyu:Ebağ = |Etop| = + G . M . m / (2r)} kadardır. Gezegen yüzeyinde durgun haldeki bir roketi çekim alanından tamamen kurtarmak için verilmesi gereken minimum kinetik enerjiye ise {koyu:kurtulma (kaçış) enerjisi} denir: {koyu:Ekurt = |Ep(yüzey)| = + G . M . m / R}."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Enerjiler Arasındaki Altın Oran",
-    "metin": "{koyu:r} yarıçaplı yörüngede dolanan bir uydu için büyüklük ilişkisi her zaman şöyledir: {koyu:Ek = Ebağ = -Etop = -Ep / 2}. Uydu daha üst bir yörüngeye çıkarıldığında ({koyu:r} arttığında) {koyu:Ek} ve {koyu:Ebağ} azalır; ancak önündeki eksi işaretinden dolayı {koyu:Ep} ve {koyu:Etop} artar!"
-   }
-  },
-  {
-   "baslik": "5. Kepler Yasaları: Yörüngeler ve Alanlar Yasası",
-   "metin": [
-    "Alman astronom {koyu:Johannes Kepler}, gezegenlerin Güneş etrafındaki hareketini üç temel yasayla açıklamıştır:\n1) {koyu:Yörüngeler Yasası:} Her gezegen, odaklarından birinde Güneş bulunan {koyu:eliptik (elips biçiminde)} bir yörüngede dolanır. Bu nedenle gezegenin Güneş'e olan uzaklığı yıl boyunca sabit kalmaz; bazen yaklaşır (günberi), bazen uzaklaşır (günöte).",
-    "2) {koyu:Alanlar Yasası:} Gezegeni Güneş'e birleştiren yarıçap vektörü, {koyu:eşit zaman aralıklarında eşit alanlar tarar} ({koyu:Delta_t1 = Delta_t2} ise {koyu:A1 = A2}). Gezegene etki eden kütle çekim kuvvetinin uzantısı dönme merkezi olan Güneş'ten geçtiği için {koyu:net tork sıfırdır} ve gezegenin {koyu:açısal momentumu (L = m . v . r) korunur}. Dolayısıyla gezegen Güneş'e yaklaştıkça ({koyu:r} azaldıkça) eşit sürede aynı alanı tarayabilmek için {koyu:çizgisel hızı (v), açısal hızı (w) ve kinetik enerjisi artar}; potansiyel enerjisi ve eylemsizlik momenti ({koyu:I = m.r²}) ise azalır."
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "baslik": "Eliptik Yörüngede Korunan İki Büyüklük",
-    "metin": "Bir gezegen eliptik yörüngede Güneş'e yaklaşırken veya uzaklaşırken {koyu:toplam mekanik enerjisi (Etop)} ve {koyu:açısal momentumu (L)} hem büyüklük hem yön olarak {koyu:daima sabit kalır (korunur)}."
-   },
-   "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"14\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">ELİPTİK YÖRÜNGEDE VE YARIÇAP DEĞİŞİMİNDE BÜYÜKLÜKLERİN DEĞİŞİMİ</text><rect x=\"25\" y=\"44\" width=\"630\" height=\"40\" rx=\"8\" fill=\"#EFF6FF\" stroke=\"#2563EB\" stroke-width=\"1.5\"/><text x=\"40\" y=\"60\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563EB\">ELİPTİK YÖRÜNGEDE GÜNEŞ'E YAKLAŞIRKEN</text><text x=\"40\" y=\"76\" font-size=\"10.5\" fill=\"#1E293B\">Çizgisel hız (v) ve kinetik enerji ARTAR; potansiyel enerji AZALIR; toplam enerji ve açısal momentum (L) DEĞİŞMEZ!</text><rect x=\"25\" y=\"92\" width=\"630\" height=\"40\" rx=\"8\" fill=\"#ECFDF5\" stroke=\"#059669\" stroke-width=\"1.5\"/><text x=\"40\" y=\"108\" font-size=\"11\" font-weight=\"bold\" fill=\"#059669\">ELİPTİK YÖRÜNGEDE EYLEMSİZLİK MOMENTİ (I)</text><text x=\"40\" y=\"124\" font-size=\"10.5\" fill=\"#1E293B\">Gezegen Güneş'e yaklaştıkça r azaldığı için eylemsizlik momenti (I = m.r^2) AZALIR, açısal hız (w) ARTAR.</text><rect x=\"25\" y=\"140\" width=\"630\" height=\"40\" rx=\"8\" fill=\"#FEF3C7\" stroke=\"#D97706\" stroke-width=\"1.5\"/><text x=\"40\" y=\"156\" font-size=\"11\" font-weight=\"bold\" fill=\"#D97706\">UYDU DAHA ÜST YÖRÜNGEYE ÇIKARILIRSA (r ARTARSA)</text><text x=\"40\" y=\"172\" font-size=\"10.5\" fill=\"#1E293B\">Çizgisel hız (v) ve kinetik enerji (E_k) AZALIR; ancak başında eksi (-) olduğu için E_p ve E_top ARTAR!</text><rect x=\"25\" y=\"188\" width=\"630\" height=\"40\" rx=\"8\" fill=\"#F5F3FF\" stroke=\"#7C3AED\" stroke-width=\"1.5\"/><text x=\"40\" y=\"204\" font-size=\"11\" font-weight=\"bold\" fill=\"#7C3AED\">HABERLEŞME UYDULARI (YER SABİT / JEOSENKRON)</text><text x=\"40\" y=\"220\" font-size=\"10.5\" fill=\"#1E293B\">Dünya ile aynı periyotta (T = 24 saat) dönerler ve yerden bakıldığında gökyüzünde hep aynı noktada sabit görünürler.</text></svg>"
-  },
-  {
-   "baslik": "6. Kepler'in 3. Yasası: Periyotlar Yasası",
-   "metin": [
-    "3) {koyu:Periyotlar Yasası:} Aynı merkezî gök cismi (örneğin Güneş) etrafında dolanan bütün gezegenler için, ortalama yörünge yarıçapının küpünün ({koyu:R³}) dolanım periyodunun karesine ({koyu:T²}) oranı sabittir: {koyu:R1³ / T1² = R2³ / T2² = G . M / (4 . pi²) = Sabit}.",
-    "Bu yasaya göre Güneş'e yakın olan gezegenlerin (Merkür, Venüs) dolanım periyodu (yıl süresi) kısa, Güneş'ten uzak olan gezegenlerin (Jüpiter, Satürn, Neptün) dolanım periyodu ise çok daha uzundur."
-   ],
-   "kutu": {
-    "tur": "bilgi",
-    "baslik": "Periyotlar Yasası Hesaplama Kısayolu",
-    "metin": "Aynı gezegen etrafında dolanan iki uydunun yörünge yarıçapları oranı {koyu:r1 / r2 = 1 / 4} ise, küplerinin karekökü alınarak periyotları oranı doğrudan {koyu:T1 / T2 = Kök((1/4)³) = Kök(1/64) = 1 / 8} bulunur."
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Yarıçapı R olan homojen Dünya'nın yüzeyindeki çekim ivmesi g kadardır. Dünya'nın merkezinden R/2 uzaklıktaki K noktasındaki çekim ivmesinin (gK), Dünya yüzeyinden R kadar yüksekteki L noktasındaki çekim ivmesine (gL) oranı gK / gL kaçtır?",
-   "cevap": "K noktası gezegenin içinde ({koyu:rK = R/2}) olduğundan çekim ivmesi yarıçapla doğru orantılıdır: {koyu:gK = g / 2}. L noktası ise yüzeyden R kadar yüksekte, yani merkezden toplam {koyu:rL = R + R = 2R} uzaklıktadır; dışarıda çekim ivmesi uzaklığın karesiyle ters orantılı olduğundan {koyu:gL = g / (2)² = g / 4} olur. Buradan oran {koyu:gK / gL = (g / 2) / (g / 4) = 2} bulunur."
-  },
-  {
-   "soru": "Dünya etrafında r ve 4r yarıçaplı çembersel yörüngelerde dolanan m ve 2m kütleli X ve Y uydularının çizgisel hızlarının büyüklükleri oranı vX / vY ve dolanım periyotları oranı TX / TY kaçtır?",
-   "cevap": "Uyduların çizgisel hızı {koyu:v = Kök(G.M/r)} olup uyduların kendi kütlelerine (m ve 2m) bağlı değildir. Yarıçapların kareköküyle ters orantılı olduğundan {koyu:vX / vY = Kök(4r / r) = 2} bulunur. Kepler'in Periyotlar Yasası'na göre {koyu:(TX / TY)² = (r / 4r)³ = 1 / 64} olduğundan {koyu:TX / TY = 1 / 8} elde edilir."
-  },
-  {
-   "soru": "Dünya etrafında çembersel bir yörüngede dolanan bir uydunun kinetik enerjisi Ek = 4 x 10^8 Joule olduğuna göre, bu uydunun kütle çekim potansiyel enerjisi (Ep), toplam mekanik enerjisi (Etop) ve bağlanma enerjisi (Ebağ) kaç Joule'dür?",
-   "cevap": "Yörüngedeki bir uydu için {koyu:Ek = +G.M.m/(2r) = 4 x 10^8 J} verildiğine göre:\n1) Potansiyel enerji: {koyu:Ep = -2 . Ek = -8 x 10^8 J}.\n2) Toplam mekanik enerji: {koyu:Etop = -Ek = -4 x 10^8 J}.\n3) Bağlanma enerjisi: {koyu:Ebağ = |Etop| = +Ek = +4 x 10^8 J} olur."
-  },
-  {
-   "soru": "Güneş etrafında eliptik yörüngede dolanan Dünya, Güneş'e en uzak konumdan (günöte) en yakın konuma (günberi) gelirken açısal momentumu (L), eylemsizlik momenti (I), çizgisel hızı (v) ve toplam mekanik enerjisi (Etop) nasıl değişir?",
-   "cevap": "Kütle çekim kuvveti Güneş merkezinden geçtiği için net dış tork sıfırdır; bu yüzden {koyu:açısal momentum (L) ve toplam mekanik enerji (Etop) değişmez (korunur)}. Güneş'e yaklaşırken yarıçap {koyu:r} azaldığı için {koyu:eylemsizlik momenti (I = m.r²) azalır}, açısal momentumun korunması için {koyu:çizgisel hız (v) ve açısal hız (w) artar}."
-  },
-  {
-   "soru": "Özkütleleri oranı dX / dY = 2/3 ve yarıçapları oranı RX / RY = 3/2 olan homojen küresel X ve Y gezegenlerinin yüzeylerindeki çekim ivmeleri oranı gX / gY kaçtır?",
-   "cevap": "Gezegen yüzeyindeki çekim ivmesi özkütle ve yarıçap cinsinden {koyu:g = (4/3) . pi . G . d . R} ('KADER') bağıntısıyla bulunur. Sabitler sadeleştirildiğinde {koyu:gX / gY = (dX . RX) / (dY . RY) = (2/3) . (3/2) = 1} olarak hesaplanır."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "Güneş etrafında eliptik bir yörüngede dolanmakta olan bir gezegen, Güneş'e doğru yaklaşırken gezegene ait aşağıdaki fiziksel büyüklüklerden hangisi azalır?",
-   "secenekler": [
-    "Çizgisel hızının büyüklüğü",
-    "Kinetik enerjisi",
-    "Kütle çekim potansiyel enerjisi",
-    "Açısal momentumunun büyüklüğü",
-    "Toplam mekanik enerjisi"
-   ],
-   "dogru": 2,
-   "aciklama": "Gezegen Güneş'e yaklaştıkça r azalır; v ve Ek artar, L ve Etop korunur (değişmez), Ep = -G.M.m/r ise önünde eksi işareti olduğu için azalır."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Kütlesi M, yarıçapı R olan Dünya'nın yüzeyinde yer çekimi ivmesinin büyüklüğü g kadardır. Buna göre Dünya yüzeyinden 3R kadar yüksekteki bir noktada çekim ivmesi kaç g olur?",
-   "secenekler": [
-    "g / 3",
-    "g / 4",
-    "g / 9",
-    "g / 12",
-    "g / 16"
-   ],
-   "dogru": 4,
-   "aciklama": "Yüzeyden 3R yüksekteki noktanın Dünya merkezine olan toplam uzaklığı r = R + 3R = 4R olur. Çekim ivmesi r² ile ters orantılı olduğundan g' = g / (4)² = g / 16 bulunur."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "12-fizik-5",
+  "sinif": 12,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 5,
+  "tarih": "12-16 Ekim",
+  "yayin_tarihi": "2026-10-16",
+  "unite": "1. ÜNİTE: ÇEMBERSEL HAREKET",
+  "konu": "Açısal Momentum - Tork İlişkisi ve Açısal Momentumun Korunumu (12.1.3.3 & 12.1.3.4)",
+  "ciktilar": [
+    "Açısal momentumu çizgisel momentumla ilişkilendirerek eylemsizlik momenti ve açısal hız cinsinden ifade eder.",
+    "Açısal ivme, net tork ve eylemsizlik momenti arasındaki matematiksel ilişkiyi Newton'un hareket yasalarıyla açıklar.",
+    "Dışarıdan net bir tork etki etmediğinde açısal momentumun korunduğunu günlük hayat örnekleriyle analiz eder."
+  ],
+  "giris": "Çamaşır makinesi tamburundan kendi ekseni etrafında dönen stres çarkına, buz pistinde hızla dönen patenciden Güneş etrafında dolanan Dünya'ya kadar dönme hareketi yapan tüm sistemlerde {koyu:açısal momentum} tanımlanır. Çembersel hareketin bu bölümünde; çizgisel momentumun torku olan {koyu:açısal momentumu}, net tork ile {koyu:açısal ivme} arasındaki bağıntıyı ve dış tork sıfır olduğunda geçerli olan {koyu:açısal momentumun korunumu} ilkesini inceleyeceğiz.",
+  "ozet": [
+    "Belirli bir nokta veya eksen etrafında dönen cismin konum vektörü ({koyu:r}) ile çizgisel momentum vektörünün ({koyu:P = m . v}) vektörel çarpımına {koyu:açısal momentum (L)} denir; büyüklüğü {koyu:L = m . v . r = I . w} olup SI birimi {koyu:kg . m²/s}'dir.",
+    "Açısal momentum ({koyu:L}), açısal hız ({koyu:w}) ve tork ({koyu:τ}) vektörel niceliklerdir; yönleri {koyu:sağ el kuralı} ile bulunur (dört parmak dönme yönünü, başparmak vektör yönünü gösterir).",
+    "Birim zamandaki açısal hız değişimine {koyu:açısal ivme (α = Δw / Δt)} denir; SI birimi {koyu:rad/s²} olup çizgisel ivme ile arasında {koyu:a = α . r} ilişkisi vardır.",
+    "Dönen bir cisme etki eden net tork, eylemsizlik momenti ile açısal ivmenin çarpımına ve birim zamandaki açısal momentum değişimine eşittir: {koyu:τ_net = I . α = ΔL / Δt}.",
+    "Sisteme dışarıdan etki eden net tork sıfır ise ({koyu:τ_dış = 0}) açısal momentum korunur: {koyu:L_ilk = L_son} yani {koyu:I₁ . w₁ = I₂ . w₂}. Eylemsizlik momenti ({koyu:I}) azaldığında açısal hız ({koyu:w}) aynı oranda artar."
+  ],
+  "bolumler": [
     {
-     "metin": "Gezegen etrafında r yarıçaplı çembersel yörüngede dolanan bir uydunun çizgisel hızı, uydunun kendi kütlesine bağlı değildir.",
-     "dogru": true,
-     "aciklama": "v = Kök(G.M/r) formülünde uydunun kütlesi (m) sadeleşir; aynı yörüngedeki farklı kütleli uydular eşit hızla dolanır."
+      "baslik": "1. Açısal Momentum ve Çizgisel Momentum İlişkisi",
+      "metin": [
+        "Öteleme hareketi yapan {koyu:m} kütleli ve {koyu:v} hızlı bir cismin çizgisel momentumu {koyu:P = m . v} (birimi {koyu:kg . m/s}) olarak tanımlanır. Belirli bir nokta etrafında dönen noktasal bir cismin konum vektörü ({koyu:r}) ile çizgisel momentum vektörünün ({koyu:P}) vektörel çarpımına ise {koyu:açısal momentum (L)} denir ve {koyu:çizgisel momentumun torku} olarak da ifade edilir.",
+        "Yarıçap vektörü {koyu:r} ile çizgisel momentum vektörü {koyu:P} birbirine dik olduğunda açısal momentumun büyüklüğü {koyu:L = r . P = m . v . r} bağıntısıyla hesaplanır. Çizgisel hız yerine {koyu:v = w . r} yazıldığında {koyu:L = m . w . r²} elde edilir; noktasal cismin eylemsizlik momenti {koyu:I = m . r²} olduğundan açısal momentum {koyu:L = I . w} şeklinde gösterilir. Açısal momentumun SI'daki birimi {koyu:kg . m²/s} (veya {koyu:J . s}) olup yönü {koyu:sağ el kuralı} ile bulunur: Sağ elin dört parmağı dönme yönünde kıvrıldığında açılan başparmak {koyu:açısal momentum (L)} ve {koyu:açısal hız (w)} vektörlerinin ortak yönünü gösterir."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Açısal Momentum Vektöreldir!",
+        "metin": "Özdeş iki disk eşit büyüklükteki açısal hızlarla {koyu:zıt yönlerde} döndürülürse açısal momentumlarının büyüklükleri eşit olur ancak yönleri zıt olduğu için {koyu:açısal momentum vektörleri birbirine eşit değildir} ({koyu:L₁ = -L₂})."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"13.5\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">AÇISAL MOMENTUM VE ÇİZGİSEL MOMENTUM İLİŞKİSİ</text><rect x=\"20\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#EFF6FF\" stroke=\"#2563EB\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#2563EB\"/><rect x=\"20\" y=\"62\" width=\"310\" height=\"12\" fill=\"#2563EB\"/><text x=\"175.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">ÇİZGİSEL MOMENTUMUN TORKU (L = r x P)</text><text x=\"32\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Dönen noktasal cismin konum vektörü (r) ile</text><text x=\"32\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  çizgisel momentumunun (P = m.v) çarpımıdır.</text><text x=\"32\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Büyüklük bağıntısı: L = m . v . r</text><text x=\"32\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• SI birimi: kg . m^2 / s (veya J . s)</text><text x=\"32\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">• Yarıçap (r), hız (v) ve L birbirine diktir.</text><text x=\"32\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">• Yönü SAĞ EL KURALI ile bulunur.</text><rect x=\"350\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#ECFDF5\" stroke=\"#059669\" stroke-width=\"1.8\"/><rect x=\"350\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#059669\"/><rect x=\"350\" y=\"62\" width=\"310\" height=\"12\" fill=\"#059669\"/><text x=\"505.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">SAĞ EL KURALI VE EYLEMSİZLİK MOMENTİ</text><text x=\"362\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Dört parmak: Cismin dönme yönü</text><text x=\"362\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">• Açılan başparmak: Açısal momentum (L) yönü</text><text x=\"362\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• v = w . r yazılırsa: L = m . w . r^2 elde edilir.</text><text x=\"362\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• I = m . r^2 olduğundan: L = I . w olur.</text><text x=\"362\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">• Açısal momentum (L) ile açısal hız (w) vektörü</text><text x=\"362\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  daima AYNI YÖNLÜDÜR.</text></svg>"
     },
     {
-     "metin": "Dünya'nın kütlesi Ay'ın kütlesinden yaklaşık 81 kat büyük olduğu için Dünya'nın Ay'a uyguladığı çekim kuvveti, Ay'ın Dünya'ya uyguladığı çekim kuvvetinden büyüktür.",
-     "dogru": false,
-     "aciklama": "Kütle çekim kuvveti etki-tepki çiftidir; kütleler farklı olsa bile birbirlerine uyguladıkları çekim kuvvetlerinin büyüklükleri birbirine eşittir."
+      "baslik": "2. Açısal İvme, Tork ve Eylemsizlik Momenti İlişkisi",
+      "metin": [
+        "Çizgisel harekette birim zamandaki hız değişimine çizgisel ivme ({koyu:a = Δv / Δt}) denildiği gibi, dönme hareketinde de birim zamandaki açısal hız değişimine {koyu:açısal ivme (α)} denir ve {koyu:α = Δw / Δt} ile hesaplanır. Açısal ivmenin SI birimi {koyu:radyan/saniye² (rad/s²)} olup teğetsel çizgisel ivme büyüklüğü ile arasında {koyu:a = α . r} bağıntısı vardır.",
+        "Newton'un İkinci Hareket Yasası ({koyu:F_net = m . a}) dönme hareketine uyarlandığında net kuvvetin yerini {koyu:net tork (τ_net)}, kütlenin yerini {koyu:eylemsizlik momenti (I)} ve çizgisel ivmenin yerini {koyu:açısal ivme (α)} alır. Tork bağıntısında {koyu:τ = F . r = m . a . r} yazılıp {koyu:a = α . r} yerine konulduğunda {koyu:τ = m . r² . α}, buradan da temel dönme dinamiği denklemi olan {koyu:τ_net = I . α} elde edilir."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Net Tork ve Açısal Momentum Değişimi",
+        "metin": "Tork denkleminde {koyu:α = Δw / Δt} yerine yazılırsa {koyu:τ_net = I . (Δw / Δt) = Δ(I . w) / Δt = ΔL / Δt} bulunur. Yani bir sisteme etki eden {koyu:net dış tork, birim zamandaki açısal momentum değişimine eşittir}."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"13.5\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">AÇISAL İVME, NET TORK VE EYLEMSİZLİK MOMENTİ</text><rect x=\"20\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#FEF3C7\" stroke=\"#D97706\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#D97706\"/><rect x=\"20\" y=\"62\" width=\"310\" height=\"12\" fill=\"#D97706\"/><text x=\"175.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">AÇISAL İVME (alfa = Delta_w / Delta_t)</text><text x=\"32\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Birim zamandaki açısal hız değişimidir.</text><text x=\"32\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">• Sembolü: alfa, SI birimi: rad / s^2</text><text x=\"32\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Çizgisel ivme ile ilişkisi: a = alfa . r</text><text x=\"32\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• Dönme hızı artarken alfa ile w aynı yönlü,</text><text x=\"32\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  dönme hızı azalırken alfa ile w zıt yönlüdür.</text><text x=\"32\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">• Sabit açısal hızda açısal ivme sıfırdır.</text><rect x=\"350\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#FEF2F2\" stroke=\"#DC2626\" stroke-width=\"1.8\"/><rect x=\"350\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#DC2626\"/><rect x=\"350\" y=\"62\" width=\"310\" height=\"12\" fill=\"#DC2626\"/><text x=\"505.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">DÖNME HAREKETİNDE NEWTON'UN 2. YASASI</text><text x=\"362\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Ötelemede F_net = m . a bağıntısının dönme</text><text x=\"362\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  hareketindeki karşılığı: Tork_net = I . alfa</text><text x=\"362\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Tork = F . r = m . a . r = m . (alfa . r) . r</text><text x=\"362\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• Tork = (m . r^2) . alfa  =&gt;  Tork_net = I . alfa</text><text x=\"362\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">• Net tork, birim zamandaki açısal momentum</text><text x=\"362\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  değişimine eşittir: Tork_net = Delta_L / Delta_t</text></svg>"
     },
     {
-     "metin": "Homojen küresel bir gezegenin tam merkezinde kütle çekim ivmesi sıfırdır.",
-     "dogru": true,
-     "aciklama": "Gezegenin merkezinde her yönden çekim kuvvetleri birbirini sıfırladığı için r = 0 noktasında g = 0 olur."
+      "baslik": "3. Açısal Momentumun Korunumu İlkesi",
+      "metin": [
+        "Dönen bir cisme veya sisteme dışarıdan etki eden net tork sıfır olduğunda ({koyu:τ_dış = 0}), birim zamandaki açısal momentum değişimi de sıfır olur ({koyu:ΔL = 0}). Bu durumda sistemin ilk açısal momentumu son açısal momentumuna eşit kalır; buna {koyu:açısal momentumun korunumu ilkesi} denir ve matematiksel olarak {koyu:L_ilk = L_son} veya {koyu:I₁ . w₁ = I₂ . w₂} biçiminde yazılır.",
+        "Dış torkun sıfır olduğu bir sistemde kütle dağılımı değişerek eylemsizlik momenti ({koyu:I}) azalırsa, çarpımın sabit kalması için açısal hız ({koyu:w}) artar ve birim zamanda atılan tur sayısı (frekans) büyür. Tersine kütleler dönme ekseninden uzaklaşıp eylemsizlik momenti ({koyu:I}) artarsa açısal hız ({koyu:w}) azalır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Durum (τ_dış = 0 iken)",
+          "Eylemsizlik Momenti (I)",
+          "Açısal Hız (w)",
+          "Açısal Momentum (L)"
+        ],
+        "satirlar": [
+          [
+            "Buz patencisi kollarını kapatırsa",
+            "Azalır (r küçülür)",
+            "Artar",
+            "Değişmez (Korunur)"
+          ],
+          [
+            "Buz patencisi kollarını açarsa",
+            "Artar (r büyür)",
+            "Azalır",
+            "Değişmez (Korunur)"
+          ],
+          [
+            "Tramplen sporcusu havada büzülürse",
+            "Azalır",
+            "Artar",
+            "Değişmez (Korunur)"
+          ],
+          [
+            "Dünya Güneş'e yaklaşırsa (günberi)",
+            "Azalır",
+            "Artar",
+            "Değişmez (Korunur)"
+          ]
+        ]
+      },
+      "kutu": {
+        "tur": "bilgi",
+        "baslik": "Topaç, Bisiklet ve Jiroskop Dengesi",
+        "metin": "Durgun haldeyken devrilen topaç ve bisikletin dönerken devrilmeden dik durması, açısal momentum vektörünün yönünü koruma eğiliminden kaynaklanır. Gemilerde, uçaklarda, İHA'larda ve akıllı telefonlarda yön bulmak için kullanılan {koyu:jiroskoplar} bu ilkeyle çalışır."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"13.5\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">AÇISAL MOMENTUMUN KORUNUMU (Tork_dış = 0 =&gt; L_ilk = L_son)</text><rect x=\"20\" y=\"44\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#EFF6FF\" stroke=\"#2563EB\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"44\" width=\"205\" height=\"30\" rx=\"10\" fill=\"#2563EB\"/><rect x=\"20\" y=\"62\" width=\"205\" height=\"12\" fill=\"#2563EB\"/><text x=\"122.5\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">KORUNUM İLKESİ</text><text x=\"32\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Dönen sisteme dışarıdan</text><text x=\"32\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  etki eden net tork sıfır</text><text x=\"32\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">  ise (Tork_net = 0):</text><text x=\"32\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• Delta_L = 0 olur ve</text><text x=\"32\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  L_ilk = L_son kalır.</text><text x=\"32\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">• I_1 . w_1 = I_2 . w_2</text><text x=\"32\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">• Hem büyüklük hem yön</text><text x=\"32\" y=\"218\" font-size=\"10.5\" fill=\"#1E293B\">  korunur.</text><rect x=\"237\" y=\"44\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#ECFDF5\" stroke=\"#059669\" stroke-width=\"1.8\"/><rect x=\"237\" y=\"44\" width=\"205\" height=\"30\" rx=\"10\" fill=\"#059669\"/><rect x=\"237\" y=\"62\" width=\"205\" height=\"12\" fill=\"#059669\"/><text x=\"339.5\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">BUZ PATENCİSİ ÖRNEĞİ</text><text x=\"249\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Kollar açıkken: Kütle</text><text x=\"249\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  eksenden uzaktır, I büyük,</text><text x=\"249\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">  açısal hız (w) küçüktür.</text><text x=\"249\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• Kollar kapatıldığında:</text><text x=\"249\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  Yarıçap azalır, I küçülür,</text><text x=\"249\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  açısal hız (w) ARTAR!</text><text x=\"249\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">• Açısal momentum (L)</text><text x=\"249\" y=\"218\" font-size=\"10.5\" fill=\"#1E293B\">  sabit kalır.</text><rect x=\"455\" y=\"44\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#F5F3FF\" stroke=\"#7C3AED\" stroke-width=\"1.8\"/><rect x=\"455\" y=\"44\" width=\"205\" height=\"30\" rx=\"10\" fill=\"#7C3AED\"/><rect x=\"455\" y=\"62\" width=\"205\" height=\"12\" fill=\"#7C3AED\"/><text x=\"557.5\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">GEZEGEN VE SPORCULAR</text><text x=\"467\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Tramplenden atlayan</text><text x=\"467\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  sporcu vücudunu toplayıp</text><text x=\"467\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">  I'yı azaltarak hızlı döner.</text><text x=\"467\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• Dünya Güneş'e yaklaşırken</text><text x=\"467\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  r ve I azalır; çizgisel ve</text><text x=\"467\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  açısal hız ARTAR.</text><text x=\"467\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">• Topaç ve jiroskop eksenini</text><text x=\"467\" y=\"218\" font-size=\"10.5\" fill=\"#1E293B\">  L korunumuyla sabit tutar.</text></svg>"
+    },
+    {
+      "baslik": "4. Günlük Hayatta ve Astronomide Açısal Momentumun Korunumu",
+      "metin": [
+        "Buz pistinde kendi ekseni etrafında dönen bir patenciye buzun uyguladığı sürtünme ihmal edildiğinde net dış tork sıfırdır. Patenci kollarını açtığında kütlesinin bir kısmı dönme ekseninden uzaklaştığı için {koyu:eylemsizlik momenti (I) büyür ve açısal hızı (w) küçülür}; kollarını göğsüne doğru kapattığında ise {koyu:eylemsizlik momenti küçülür ve çok daha yüksek açısal hızla döner}. Aynı ilke havada takla atan cimnastikçilerin, tramplenden atlayan yüzücülerin ve dört ayak üzerine düşen kedilerin vücutlarını büzüp açarak dönüş hızlarını kontrol etmelerinde de görülür.",
+        "Güneş etrafında eliptik yörüngede dolanan Dünya'ya etki eden kütle çekim kuvvetinin doğrultusu dönme merkezi olan Güneş'ten geçtiği için {koyu:tork oluşturmaz (τ = 0)} ve Dünya'nın açısal momentumu korunur. Dünya Güneş'e yaklaştığında yarıçap ({koyu:r}) ve eylemsizlik momenti ({koyu:I = m . r²}) azaldığından {koyu:açısal hızı (w) ve çizgisel hızı (v) artar}."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Kutuplardan Ekvator'a Giden Cisim Soruları",
+        "metin": "Dünya üzerindeki bir cisim Kutuplardan Ekvator'a götürüldüğünde Dünya ile birlikte döndüğü için {koyu:açısal hızı (w) değişmez}; ancak dönme eksenine dik uzaklığı ({koyu:r}) arttığı için {koyu:eylemsizlik momenti (I) ve açısal momentumu (L = I . w) artar}."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"13.5\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">AÇISAL MOMENTUM KORUNUMUNDA NİCELİKLERİN DEĞİŞİM ÖZETİ</text><rect x=\"25\" y=\"44\" width=\"630\" height=\"40\" rx=\"8\" fill=\"#EFF6FF\" stroke=\"#2563EB\" stroke-width=\"1.5\"/><text x=\"40\" y=\"60\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563EB\">DIŞ TORK SIFIR İKEN (Tork_dış = 0)</text><text x=\"40\" y=\"76\" font-size=\"10.5\" fill=\"#1E293B\">Açısal momentum vektörü (L) hem yön hem büyüklük olarak DEĞİŞMEZ (korunur).</text><rect x=\"25\" y=\"92\" width=\"630\" height=\"40\" rx=\"8\" fill=\"#ECFDF5\" stroke=\"#059669\" stroke-width=\"1.5\"/><text x=\"40\" y=\"108\" font-size=\"11\" font-weight=\"bold\" fill=\"#059669\">KÜTLE DÖNME EKSENİNE YAKLAŞIRSA (r AZALIRSA)</text><text x=\"40\" y=\"124\" font-size=\"10.5\" fill=\"#1E293B\">Eylemsizlik momenti (I = m.r^2) AZALIR; L = I.w korunduğu için açısal hız (w) ARTAR.</text><rect x=\"25\" y=\"140\" width=\"630\" height=\"40\" rx=\"8\" fill=\"#FEF3C7\" stroke=\"#D97706\" stroke-width=\"1.5\"/><text x=\"40\" y=\"156\" font-size=\"11\" font-weight=\"bold\" fill=\"#D97706\">DÖNME KİNETİK ENERJİSİ (E_k = 1/2 . I . w^2 = 1/2 . L . w)</text><text x=\"40\" y=\"172\" font-size=\"10.5\" fill=\"#1E293B\">Buz patencisi kollarını kapattığında L sabitken w arttığı için dönme kinetik enerjisi ARTAR.</text><rect x=\"25\" y=\"188\" width=\"630\" height=\"40\" rx=\"8\" fill=\"#F5F3FF\" stroke=\"#7C3AED\" stroke-width=\"1.5\"/><text x=\"40\" y=\"204\" font-size=\"11\" font-weight=\"bold\" fill=\"#7C3AED\">KUTUPLARDAN EKVATOR'A GİDEN CİSİM</text><text x=\"40\" y=\"220\" font-size=\"10.5\" fill=\"#1E293B\">Dünya'nın açısal hızı (w) sabittir; Ekvator'da dönme eksenine uzaklık (r) arttığı için I ve L ARTAR.</text></svg>"
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "soru": "Kütle çekim ve Kepler yasalarıyla ilgili kavramları matematiksel bağıntılarıyla eşleştiriniz.",
-   "ciftler": [
-    [
-     "Evrensel Kütle Çekim Kuvveti",
-     "F = G . m1 . m2 / d²"
-    ],
-    [
-     "Uydunun Yörünge Çizgisel Hızı",
-     "v = Kök(G . M / r)"
-    ],
-    [
-     "Kepler'in Periyotlar Yasası",
-     "R³ / T² = Sabit"
-    ],
-    [
-     "Uydunun Bağlanma Enerjisi",
-     "Ebağ = + G . M . m / (2r)"
-    ],
-    [
-     "Yüzeyden Kurtulma (Kaçış) Enerjisi",
-     "Ekurt = + G . M . m / R"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
-   "cumleler": [
+  ],
+  "ornekler": [
     {
-     "metin": "Kepler'in ___ Yasası'na göre gezegeni Güneş'e birleştiren yarıçap vektörü eşit zaman aralıklarında eşit alanlar tarar.",
-     "cevap": "Alanlar"
+      "soru": "Sürtünmesiz yatay düzlemde 2 m uzunluğundaki ipin ucuna bağlı 3 kg kütleli noktasal bir cisim, sabit 4 rad/s açısal hız büyüklüğü ile çembersel hareket yapmaktadır. Cismin eylemsizlik momenti (I) ve açısal momentumunun büyüklüğü (L) kaçtır?",
+      "cevap": "Noktasal cismin eylemsizlik momenti {koyu:I = m . r² = 3 . (2)² = 12 kg.m²} olarak bulunur. Açısal momentumun büyüklüğü ise {koyu:L = I . w = 12 . 4 = 48 kg.m²/s} (veya çizgisel hız {koyu:v = w . r = 8 m/s} bulunarak {koyu:L = m . v . r = 3 . 8 . 2 = 48 kg.m²/s}) elde edilir."
     },
     {
-     "metin": "Gezegen yüzeyindeki durgun bir cismi gezegenin çekim alanından tamamen koparıp sonsuza göndermek için gereken en küçük enerjiye ___ enerjisi denir.",
-     "cevap": "kurtulma"
+      "soru": "Birbirine zincirle bağlı K ve L dişlilerinin yarıçapları sırasıyla r ve 4r, kütleleri ise m ve 3m'dir. L dişlisi saat yönünde sabit w açısal hızıyla döndürüldüğünde K ve L dişlilerinin açısal momentumlarının yönlerini ve büyüklük ilişkisini belirleyiniz.",
+      "cevap": "Zincirle bağlı dişliler {koyu:aynı yönde} (saat yönünde) döner; sağ el kuralına göre dört parmak saat yönünde kıvrıldığında başparmak {koyu:sayfa düzleminden içeriye (-z)} doğruyu gösterir, yani yönleri aynıdır. Zincirin değdiği noktaların çizgisel hızları ({koyu:v}) eşit büyüklükte olduğundan {koyu:L = m . v . r} bağıntısına göre {koyu:L_K = m . v . r} ve {koyu:L_L = 3m . v . 4r = 12 m . v . r} olur; dolayısıyla {koyu:L_L > L_K} bulunur."
     },
     {
-     "metin": "Bir uydu Dünya'dan daha uzak bir yörüngeye çıkarıldığında çizgisel hızı azalırken toplam mekanik enerjisi ___.",
-     "cevap": "artar"
+      "soru": "Eylemsizlik momenti I = 5 kg.m² olan bir çark başlangıçta durgun haldeyken sabit bir net tork etkisiyle 4 saniyede açısal hızını 20 rad/s değerine çıkarıyor. Çarkın açısal ivmesi (α) ve çarka uygulanan net tork (τ_net) kaçtır?",
+      "cevap": "Birim zamandaki açısal hız değişiminden açısal ivme {koyu:α = Δw / Δt = (20 - 0) / 4 = 5 rad/s²} bulunur. Dönme dinamiği bağıntısından net tork {koyu:τ_net = I . α = 5 . 5 = 25 N.m} olarak hesaplanır."
+    },
+    {
+      "soru": "Düşey eksen etrafında sürtünmesizce dönen bir tabure üzerindeki öğrenci, kollarını açtığında toplam eylemsizlik momenti 6 kg.m² ve açısal hızı 2 rad/s olmaktadır. Öğrenci kollarını kendine doğru çektiğinde eylemsizlik momenti 2 kg.m² değerine düştüğüne göre son açısal hızı kaç rad/s olur?",
+      "cevap": "Dışarıdan etki eden net tork sıfır ({koyu:τ_dış = 0}) olduğu için açısal momentum korunur: {koyu:I₁ . w₁ = I₂ . w₂}. Verilen değerler yerine yazılırsa {koyu:6 . 2 = 2 . w₂} eşitliğinden öğrencinin son açısal hızı {koyu:w₂ = 6 rad/s} bulunur."
+    },
+    {
+      "soru": "Bir önceki soruda kolları açıkken 6 kg.m² eylemsizlik momenti ve 2 rad/s açısal hızla dönen öğrencinin kollarını kapattıktan sonra (I₂ = 2 kg.m², w₂ = 6 rad/s) dönme kinetik enerjisinin nasıl değiştiğini hesaplayınız.",
+      "cevap": "İlk durumda dönme kinetik enerjisi {koyu:E_k1 = (1/2) . I₁ . w₁² = (1/2) . 6 . (2)² = 12 J} iken, kollarını kapattığında {koyu:E_k2 = (1/2) . I₂ . w₂² = (1/2) . 2 . (6)² = 36 J} olur. Açısal momentum ({koyu:L = 12 kg.m²/s}) korunduğu halde öğrenci kollarını içeri çekerken kas kuvvetiyle iş yaptığı için dönme kinetik enerjisi {koyu:12 J'den 36 J'e artmıştır}."
+    },
+    {
+      "soru": "Bir dönme dolaba uygulanan 40 N.m büyüklüğündeki sabit net tork, 5 saniye boyunca etki etmektedir. Bu sürede dönme dolabın açısal momentumundaki değişim (ΔL) kaç kg.m²/s olur?",
+      "cevap": "Net tork ile açısal momentum değişimi arasındaki {koyu:τ_net = ΔL / Δt} bağıntısından {koyu:ΔL = τ_net . Δt = 40 . 5 = 200 kg.m²/s} olarak bulunur."
     }
-   ],
-   "fazla": [
-    "azalır",
-    "Yörüngeler"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Dünya etrafında r yarıçaplı yörüngede dolanan bir uydu, roket motorları ateşlenerek 2r yarıçaplı daha üst bir yörüngeye çıkarılıyor. Uydunun çizgisel hızı (v), periyodu (T), kinetik enerjisi (Ek), potansiyel enerjisi (Ep) ve toplam enerjisi (Etop) nasıl değişir? Nedenleriyle açıklayınız.",
-   "ipuclari": [
-    "1. İpucu: v = Kök(G.M/r) ve R³/T² = Sabit formüllerinde r arttığında v ve T'nin nasıl değiştiğini belirleyiniz.",
-    "2. İpucu: Ep = -G.M.m/r ve Etop = -G.M.m/(2r) ifadelerindeki negatif (-) işaretin r artarken değeri nasıl etkilediğine dikkat ediniz."
-   ],
-   "cevap": "Yörünge yarıçapı {koyu:r}'den {koyu:2r}'ye çıktığında: 1) {koyu:v = Kök(G.M/r)} gereği çizgisel hız {koyu:azalır}, 2) {koyu:R³/T² = Sabit} gereği dolanım periyodu (T) {koyu:artar}, 3) Hız azaldığı için kinetik enerji ({koyu:Ek = +G.M.m/2r}) {koyu:azalır}, 4) Başlarında eksi (-) işareti bulunduğu için kütle çekim potansiyel enerjisi ({koyu:Ep = -G.M.m/r}) ve toplam mekanik enerji ({koyu:Etop = -G.M.m/2r}) sıfıra yaklaşarak {koyu:artar} (zaten üst yörüngeye çıkmak için dışarıdan roketle enerji verilmiştir)."
-  }
- ]
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Sürtünmesiz yatay buz pistinde kendi düşey ekseni etrafında dönmekte olan bir buz patencisi, açık olan kollarını yavaşça göğsüne doğru kapatmaktadır. Bu süreçte patenciye ait niceliklerden hangisinin büyüklüğü artar?",
+      "secenekler": [
+        "Açısal hızı",
+        "Açısal momentumu",
+        "Dönme periyodu",
+        "Eylemsizlik momenti",
+        "Etki eden net dış tork"
+      ],
+      "dogru": 0,
+      "aciklama": "Patenci kollarını kapattığında eylemsizlik momenti (I) azalır, dış tork sıfır olduğu için açısal momentum (L = I.w) korunur ve açısal hızı (w) artar; açısal hız arttığı için periyodu azalır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Sabit bir eksen etrafında dönen katı bir cisme dışarıdan etki eden net tork sıfır (τ_net = 0) ise bu cisim için aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Açısal ivmesi sabit ve sıfırdan farklıdır.",
+        "Açısal momentum vektörü korunur.",
+        "Açısal hızı zamanla düzgün artar.",
+        "Çizgisel momentumu sıfırdır.",
+        "Merkezcil ivmesi sıfırdır."
+      ],
+      "dogru": 1,
+      "aciklama": "τ_net = ΔL / Δt = I . α bağıntısına göre net tork sıfır olduğunda açısal ivme sıfırdır (α = 0) ve açısal momentum vektörü (L) hem yön hem büyüklük olarak korunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Eylemsizlik momenti 4 kg.m² olan homojen bir tekerleğe dönme eksenine göre 12 N.m büyüklüğünde net tork uygulandığında tekerleğin açısal ivmesi kaç rad/s² olur?",
+      "secenekler": [
+        "2",
+        "4",
+        "3",
+        "6",
+        "8"
+      ],
+      "dogru": 2,
+      "aciklama": "τ_net = I . α bağıntısından 12 = 4 . α yazılırsa açısal ivme α = 3 rad/s² bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Güneş etrafında eliptik yörüngede dolanan Dünya, Güneş'e yaklaştığı konumlara gelirken Dünya'nın eylemsizlik momenti (I), açısal hızı (w) ve açısal momentumu (L) nasıl değişir?",
+      "secenekler": [
+        "I değişmez, w artar, L artar",
+        "I artar, w azalır, L değişmez",
+        "I azalır, w azalır, L azalır",
+        "I azalır, w artar, L değişmez",
+        "I azalır, w artar, L artar"
+      ],
+      "dogru": 3,
+      "aciklama": "Kütle çekim kuvveti Güneş merkezinden geçtiği için tork oluşturmaz ve L değişmez. Yarıçap (r) azaldığı için I = m.r² azalır, L = I.w korunduğundan w artar."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Dönme hareketi yapan bir cismin açısal momentum vektörü ile açısal hız vektörü aynı yönlüdür.",
+          "dogru": true,
+          "aciklama": "L = I . w bağıntısında eylemsizlik momenti (I) pozitif skaler olduğundan L ve w vektörleri sağ el kuralıyla bulunan aynı yöne sahiptir."
+        },
+        {
+          "metin": "Zıt yönlerde eşit büyüklükteki açısal hızlarla dönen özdeş iki diskin açısal momentumları birbirine eşittir.",
+          "dogru": false,
+          "aciklama": "Açısal momentum vektörel bir niceliktir; zıt yönde dönen özdeş disklerin açısal momentum büyüklükleri eşit olsa da yönleri zıt olduğu için vektörleri eşit değildir."
+        },
+        {
+          "metin": "Bir sisteme etki eden net dış tork, birim zamandaki açısal momentum değişimine eşittir.",
+          "dogru": true,
+          "aciklama": "τ_net = ΔL / Δt bağıntısı gereği birim zamandaki açısal momentum değişimi net torku verir."
+        },
+        {
+          "metin": "Tramplenden atlayan bir yüzücü havada vücudunu büzerek topladığında eylemsizlik momenti büyür ve dönüş hızı yavaşlar.",
+          "dogru": false,
+          "aciklama": "Sporcu vücudunu topladığında kütle dönme eksenine yaklaşır, eylemsizlik momenti (I) küçülür ve açısal hızı (w) artar."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Dönme hareketindeki fiziksel büyüklükleri matematiksel bağıntıları veya SI birimleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Açısal Momentumun Büyüklüğü",
+          "L = I . w = m . v . r"
+        ],
+        [
+          "Net Tork ve Açısal İvme İlişkisi",
+          "τ_net = I . α"
+        ],
+        [
+          "Net Tork ve Açısal Momentum İlişkisi",
+          "τ_net = ΔL / Δt"
+        ],
+        [
+          "Açısal Momentumun SI Birimi",
+          "kg . m² / s"
+        ],
+        [
+          "Açısal İvmenin SI Birimi",
+          "rad / s²"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Belirli bir eksen etrafında dönen cismin açısal momentumunun yönü ___ kuralı ile bulunur.",
+          "cevap": "sağ el"
+        },
+        {
+          "metin": "Dönme hareketinde birim zamandaki açısal hız değişimine ___ ivme denir.",
+          "cevap": "açısal"
+        },
+        {
+          "metin": "Dışarıdan net bir ___ uygulanmadığı sürece dönen bir sistemin açısal momentumu korunur.",
+          "cevap": "tork"
+        },
+        {
+          "metin": "Buz patencisi kollarını kapattığında ___ momenti azalırken açısal hızı artar.",
+          "cevap": "eylemsizlik"
+        }
+      ],
+      "fazla": [
+        "merkezcil",
+        "kuvvet"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Helikopterlerin gövde üstündeki ana pervanesinin yanında kuyruk kısmında düşey düzlemde dönen ikinci bir küçük pervane bulunmasının nedenini açısal momentumun korunumu ilkesiyle açıklayınız.",
+      "cevap": "Havada asılı duran bir helikopterin üstteki ana pervanesi bir yönde hızla döndürüldüğünde belirli bir açısal momentum kazanır. Eğer kuyruk pervanesi olmasaydı, {koyu:açısal momentumun korunumu} gereği toplam açısal momentumu korumak için helikopterin gövdesi ana pervaneye {koyu:zıt yönde dönmeye} başlardı. Kuyruktaki küçük pervane, gövdeye ters yönde dengeleyici bir {koyu:dış tork} uygulayarak gövdenin kendi etrafında dönmesini engeller ve helikopterin kararlı uçmasını sağlar.",
+      "ipuclari": [
+        "İlk ipucu: Dış torkun sıfır olduğu bir sistemde toplam açısal momentumun sıfır kalması için parçaların nasıl dönmesi gerektiğini düşününüz.",
+        "İkinci ipucu: Kuyruk pervanesinin oluşturduğu itme kuvvetinin helikopter gövdesi üzerinde nasıl bir dengeleyici tork ürettiğini değerlendiriniz."
+      ]
+    }
+  ]
 }

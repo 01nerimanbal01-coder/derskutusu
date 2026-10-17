@@ -1,121 +1,12 @@
-def _svg(w, h, icerik):
-    return f'<svg viewBox="0 0 {w} {h}" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;">{icerik}</svg>'
-
-def _kart(x, y, w, h, baslik, satirlar, renk="#0284c7", bg="#f0f9ff"):
-    s = f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="10" fill="{bg}" stroke="{renk}" stroke-width="2"/>'
-    s += f'<rect x="{x}" y="{y}" width="{w}" height="30" rx="10" fill="{renk}"/>'
-    s += f'<text x="{x+w/2}" y="{y+20}" font-family="sans-serif" font-size="12.5" font-weight="bold" fill="#ffffff" text-anchor="middle">{baslik}</text>'
-    for i, st in enumerate(satirlar):
-        s += f'<text x="{x+12}" y="{y+50+i*20}" font-family="sans-serif" font-size="11.5" fill="#1e293b">{st}</text>'
-    return s
-
-def gorsel_1():
-    ic = '<rect x="0" y="0" width="760" height="250" rx="12" fill="#f8fafc"/>'
-    ic += '<text x="380" y="28" font-family="sans-serif" font-size="15" font-weight="bold" fill="#0f172a" text-anchor="middle">Kelam İlminde Üç Kesin Bilgi Kaynağı (Esbâb-ı İlim)</text>'
-    ic += _kart(20, 45, 230, 185, "1. Havâss-ı Selîme (Sağlam Duyular)", [
-        "• Kusursuz işleyen beş duyu organı",
-        "• Görme, işitme, tatma, koklama, dokunma",
-        "• Maddi ve fiziksel âlemi algılar",
-        "• Gözlem ve deneyin temel aracıdır",
-        "• Zorunlu (zarûrî) bilgi sağlar"
-    ], "#0284c7", "#f0f9ff")
-    ic += _kart(265, 45, 230, 185, "2. Haber-i Sâdık (Doğru Haber)", [
-        "• Yalan ihtimali taşımayan kesin haber",
-        "• a) Mütevâtir Haber: Yalan üzere",
-        "  birleşmesi imkânsız topluluk haberi",
-        "• b) Peygamber Haberi: Mucize ile",
-        "  desteklenen vahiy (Gayb bilgisi)"
-    ], "#059669", "#ecfdf5")
-    ic += _kart(510, 45, 230, 185, "3. Akl-ı Selîm (Sağlam Akıl)", [
-        "• Önyargı ve taklitten arınmış akıl",
-        "• Duyu verilerini ve haberi işler",
-        "• Bedîhî (apaçık) ilkelerle hükmeder",
-        "• Nazar ve istidlâl (akıl yürütme) yapar",
-        "• Dini sorumluluğun (teklîf) şartıdır"
-    ], "#7c3aed", "#f5f3ff")
-    return _svg(760, 250, ic)
-
-def gorsel_2():
-    ic = '<rect x="0" y="0" width="760" height="240" rx="12" fill="#f8fafc"/>'
-    ic += '<text x="380" y="28" font-family="sans-serif" font-size="15" font-weight="bold" fill="#0f172a" text-anchor="middle">Kelam Epistemolojisinde Bilginin Türleri: Kadîm ve Hâdis Bilgi</text>'
-    ic += _kart(20, 45, 230, 175, "Kadîm Bilgi (Allah\'ın İlmi)", [
-        "• Ezelî ve ebedîdir, sonradan olmaz",
-        "• Vasıtasız, küllî ve mutlak bilgidir",
-        "• Artma, eksilme ve unutma olmaz",
-        "• Gaybı ve şehâdeti eksiksiz kuşatır",
-        "• Varlığın sebebidir"
-    ], "#0f766e", "#f0fdfa")
-    ic += _kart(265, 45, 230, 175, "Zarûrî (Zorunlu) Hâdis Bilgi", [
-        "• İnsanda çaba olmadan oluşan bilgi",
-        "• Duyu verileri (ateşin yakması vb.)",
-        "• Bedîhî aklî ilkeler (Bütün > Parça)",
-        "• İç gözlem (açlık, sevinç, acı)",
-        "• Mütevâtir haberle oluşan bilgi"
-    ], "#d97706", "#fffbeb")
-    ic += _kart(510, 45, 230, 175, "Kesbî / İstidlâlî (Kazanılmış) Bilgi", [
-        "• Nazar ve tefekkürle elde edilen bilgi",
-        "• Öncüllerden sonuca ulaşma (İstidlâl)",
-        "• Eserden müessire (Evrenden Allah\'a)",
-        "• Peygamber haberi (mucize deliliyle)",
-        "• Kelamcıların temel yöntemi"
-    ], "#2563eb", "#eff6ff")
-    return _svg(760, 240, ic)
-
-def gorsel_3():
-    ic = '<rect x="0" y="0" width="760" height="240" rx="12" fill="#f8fafc"/>'
-    ic += '<text x="380" y="28" font-family="sans-serif" font-size="15" font-weight="bold" fill="#0f172a" text-anchor="middle">Kelam Ontolojisinde (Varlık Anlayışında) Varlık Tasnifi</text>'
-    ic += _kart(20, 45, 350, 175, "Kadîm / Vâcibü\'l-Vücûd (Zorunlu Varlık: Allah)", [
-        "• Varlığı kendindendir (li-zâtihî), başkasına muhtaç değildir",
-        "• Başlangıcı (ezelî) ve sonu (ebedî) yoktur; yokluğu düşünülemez",
-        "• Zamandan, mekândan ve maddeden münezzehtir",
-        "• Tüm mümkün/hâdis varlıkların yegâne yaratıcısıdır",
-        "• Eş\'arî ve Mâtürîdîlere göre zâtı ve sıfatlarıyla kadîmdir"
-    ], "#1d4ed8", "#eff6ff")
-    ic += _kart(390, 45, 350, 175, "Hâdis / Mümkünü\'l-Vücûd (Sonradan Olan: Âlem)", [
-        "• Allah\'ın yaratmasıyla yokluktan varlığa çıkan her şey (Mâsivâ)",
-        "• Varlığı ile yokluğu eşit olup var olmak için Yaratıcıya muhtaçtır",
-        "• Bir başlangıcı ve sonu vardır; değişim ve dönüşüm içindedir",
-        "• Mütehayyiz (yer kaplayan: cevher/cisim) ve Araz\'dan oluşur",
-        "• Hudûs delili: Âlem hâdistir, her hâdisin bir muhdisi (Allah) vardır"
-    ], "#15803d", "#f0fdf4")
-    return _svg(760, 240, ic)
-
-def gorsel_4():
-    ic = '<rect x="0" y="0" width="760" height="240" rx="12" fill="#f8fafc"/>'
-    ic += '<text x="380" y="28" font-family="sans-serif" font-size="15" font-weight="bold" fill="#0f172a" text-anchor="middle">Hâdis Varlığın (Âlemin) Yapı Taşları: Cevher, Cisim ve Araz</text>'
-    ic += _kart(20, 45, 230, 175, "Cevher (Atom / Cüz\'ün lâ yetecezzâ)", [
-        "• Maddenin bölünemeyen en küçük yapı taşı",
-        "• Boşlukta yer kaplar (Mütehayyiz)",
-        "• Kendi başına varlığını sürdürür",
-        "• Arazları (nitelikleri) üzerinde taşır",
-        "• Cevher-i ferd olarak da adlandırılır"
-    ], "#9333ea", "#faf5ff")
-    ic += _kart(265, 45, 230, 175, "Cisim (Birleşik Maddi Varlık)", [
-        "• En az iki veya daha fazla cevherin",
-        "  bir araya gelmesiyle oluşan varlık",
-        "• En, boy ve derinlik (üç boyut) taşır",
-        "• Duyularla algılanan maddi nesneler",
-        "• Sonlu ve sınırlı yapıya sahiptir"
-    ], "#0284c7", "#f0f9ff")
-    ic += _kart(510, 45, 230, 175, "Araz (Nitelik ve Haller)", [
-        "• Kendi başına boşlukta yer kaplayamaz",
-        "• Var olmak için cevher/cisme muhtaçtır",
-        "• Renk, tat, koku, hareket, sükûn, ses",
-        "• Sürekli yenilenir (iki zamanda baki kalmaz)",
-        "• Değişimin ve hudûsun en açık kanıtıdır"
-    ], "#be123c", "#fff1f2")
-    return _svg(760, 240, ic)
-
 GORSELLER = {
-    "b1": gorsel_1(),
-    "b2": gorsel_2(),
-    "b3": gorsel_3(),
-    "b4": gorsel_4()
+    "b1": '<svg viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;font-family:\'Segoe UI\',sans-serif;"><rect width="680" height="250" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/><text x="340" y="26" font-size="13.5" font-weight="bold" fill="#0F172A" text-anchor="middle">İSLAM DİNİNİN DÖRT TEMEL BOYUTU VE KÖK İLİM OLARAK KELAM</text><rect x="20" y="44" width="310" height="190" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.8"/><rect x="20" y="44" width="310" height="30" rx="10" fill="#2563EB"/><rect x="20" y="62" width="310" height="12" fill="#2563EB"/><text x="175.0" y="64" font-size="11.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">İSLAM DİNİNİN DÖRT ESASI</text><text x="32" y="92" font-size="10.5" fill="#1E293B">1. İMAN (İtikat): Tevhid, nübüvvet ve ahiret</text><text x="32" y="110" font-size="10.5" fill="#1E293B">   başta olmak üzere inanç esasları (Kök/Temel).</text><text x="32" y="128" font-size="10.5" fill="#1E293B">2. AMEL (İbadet): Namaz, oruç, zekât, hac gibi</text><text x="32" y="146" font-size="10.5" fill="#1E293B">   kulluk görevleri.</text><text x="32" y="164" font-size="10.5" fill="#1E293B">3. MUAMELAT: Alım-satım, aile, miras, adalet</text><text x="32" y="182" font-size="10.5" fill="#1E293B">   gibi sosyal ve hukuki ilişkiler.</text><text x="32" y="200" font-size="10.5" fill="#1E293B">4. AHLAK: Doğruluk ve merhamet gibi erdemler.</text><rect x="350" y="44" width="310" height="190" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="1.8"/><rect x="350" y="44" width="310" height="30" rx="10" fill="#059669"/><rect x="350" y="62" width="310" height="12" fill="#059669"/><text x="505.0" y="64" font-size="11.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">KELAM İLMİNİN MERKEZÎ KONUMU</text><text x="362" y="92" font-size="10.5" fill="#1E293B">• Ebu Hanife inanç esaslarını inceleyen ilme</text><text x="362" y="110" font-size="10.5" fill="#1E293B">  \'EL-FIKHU\'L-EKBER\' (En Büyük Fıkıh) demiştir.</text><text x="362" y="128" font-size="10.5" fill="#1E293B">• İmam Gazâlî \'el-Mustasfâ\' adlı eserinde</text><text x="362" y="146" font-size="10.5" fill="#1E293B">  kelamı \'KÜLLİ İLİM\', tefsir, hadis ve fıkhı</text><text x="362" y="164" font-size="10.5" fill="#1E293B">  ise \'CÜZİ İLİMLER\' olarak sınıflandırmıştır.</text><text x="362" y="182" font-size="10.5" fill="#1E293B">• Teftâzânî, konusunun yüceliğinden dolayı</text><text x="362" y="200" font-size="10.5" fill="#1E293B">  kelamı \'EŞREFÜ\'L-ULÛM\' olarak nitelemiştir.</text></svg>',
+    "b2": '<svg viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;font-family:\'Segoe UI\',sans-serif;"><rect width="680" height="250" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/><text x="340" y="26" font-size="13.5" font-weight="bold" fill="#0F172A" text-anchor="middle">KELAM İLMİNİN TEFSİR VE HADİS İLİMLERİYLE KARŞILIKLI İLİŞKİSİ</text><rect x="20" y="44" width="310" height="190" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="1.8"/><rect x="20" y="44" width="310" height="30" rx="10" fill="#059669"/><rect x="20" y="62" width="310" height="12" fill="#059669"/><text x="175.0" y="64" font-size="11.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">KELAM ↔ TEFSİR İLİŞKİSİ</text><text x="32" y="92" font-size="10.5" fill="#1E293B">• Kelam, Kur\'an-ı Kerim\'in Allah kelamı (mucize)</text><text x="32" y="110" font-size="10.5" fill="#1E293B">  olduğunu aklî delillerle ispatlayarak tefsirin</text><text x="32" y="128" font-size="10.5" fill="#1E293B">  çalışma zeminini kurar.</text><text x="32" y="146" font-size="10.5" fill="#1E293B">• Müfessir, inanç ayetlerini ve müteşâbih</text><text x="32" y="164" font-size="10.5" fill="#1E293B">  ifadeleri yorumlarken kelamın tevhid ve</text><text x="32" y="182" font-size="10.5" fill="#1E293B">  tenzih ilkelerini ölçüt alır.</text><text x="32" y="200" font-size="10.5" fill="#1E293B">• Kelamcı da tefsir verilerinden yararlanır.</text><rect x="350" y="44" width="310" height="190" rx="10" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.8"/><rect x="350" y="44" width="310" height="30" rx="10" fill="#7C3AED"/><rect x="350" y="62" width="310" height="12" fill="#7C3AED"/><text x="505.0" y="64" font-size="11.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">KELAM ↔ HADİS İLİŞKİSİ</text><text x="362" y="92" font-size="10.5" fill="#1E293B">• Kelam, Hz. Muhammed\'in hak peygamber</text><text x="362" y="110" font-size="10.5" fill="#1E293B">  olduğunu (nübüvveti) kanıtlayarak sünnetin</text><text x="362" y="128" font-size="10.5" fill="#1E293B">  dini delil olma vasfını temellendirir.</text><text x="362" y="146" font-size="10.5" fill="#1E293B">• Muhaddis, hadislerin metin tenkidini yaparken</text><text x="362" y="164" font-size="10.5" fill="#1E293B">  kelamın tevhid ilkelerine uygunluğu gözetir.</text><text x="362" y="182" font-size="10.5" fill="#1E293B">• Hadis ilmi de kelama sahih naklî delilleri</text><text x="362" y="200" font-size="10.5" fill="#1E293B">  tespit ederek sunar.</text></svg>',
+    "b3": '<svg viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;font-family:\'Segoe UI\',sans-serif;"><rect width="680" height="250" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/><text x="340" y="26" font-size="13.5" font-weight="bold" fill="#0F172A" text-anchor="middle">KELAM İLMİNİN FIKIH VE İSLAM MEZHEPLERİ TARİHİ İLE İLİŞKİSİ</text><rect x="25" y="44" width="630" height="40" rx="8" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.5"/><text x="40" y="60" font-size="11" font-weight="bold" fill="#2563EB">KELAM İLMİNİN FIKIH İLMİNE KATKISI</text><text x="40" y="76" font-size="10.5" fill="#1E293B">Dini emir ve yasakların muhatabı olan mükellefin akıl ve hür irade sahibi olduğunu kanıtlayarak hukuki sorumluluğu temellendirir.</text><rect x="25" y="92" width="630" height="40" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="1.5"/><text x="40" y="108" font-size="11" font-weight="bold" fill="#059669">FIKIH İLMİNİN KELAM İLMİNE KATKISI</text><text x="40" y="124" font-size="10.5" fill="#1E293B">İman-amel bütünlüğü, dini hükümlerin uygulanışı ve usul yöntemleri konusunda kelami meselelere katkıda bulunur.</text><rect x="25" y="140" width="630" height="40" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/><text x="40" y="156" font-size="11" font-weight="bold" fill="#D97706">İSLAM MEZHEPLERİ TARİHİNİN YÖNTEMİ</text><text x="40" y="172" font-size="10.5" fill="#1E293B">İtikadi ve siyasi fırkaların hangi tarihsel, sosyal ve kültürel şartlarda doğduğunu objektif ve tasvirî olarak inceler.</text><rect x="25" y="188" width="630" height="40" rx="8" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.5"/><text x="40" y="204" font-size="11" font-weight="bold" fill="#7C3AED">KELAM İLE MEZHEPLER TARİHİ ARASINDAKİ FARK</text><text x="40" y="220" font-size="10.5" fill="#1E293B">Mezhepler tarihi \'olanı olduğu gibi\' betimlerken; kelam ilmi normatif/savunmacı yöntemle hak inancı ispatlar ve batılı çürütür.</text></svg>',
 }
 
+
 def uygula(v):
-    hedefler = [0, 1, 2, 4]
-    anahtarlar = ["b1", "b2", "b3", "b4"]
-    for idx, k in zip(hedefler, anahtarlar):
-        if idx < len(v.get("bolumler", [])):
-            v["bolumler"][idx]["gorsel"] = GORSELLER[k]
+    for i, b in enumerate(v.get('bolumler', [])):
+        k = f'b{i+1}'
+        if k in GORSELLER:
+            b['gorsel'] = GORSELLER[k]

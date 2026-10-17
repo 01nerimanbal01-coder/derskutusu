@@ -1,338 +1,338 @@
 {
- "ad": "11. Sınıf Coğrafya — 2. Hafta Konu Özeti",
- "sinif": "11",
- "ders": "cografya",
- "ders_adi": "Coğrafya",
- "hafta": 2,
- "tarih": "21-25 Eylül 2026",
- "yayin_tarihi": "2026-10-16",
- "unite": "1. Ünite: Coğrafyanın Doğası — 2. Ünite: Mekânsal Bilgi Teknolojileri",
- "konu": "Mekânsal Sorunlara Coğrafi Çözümler (Sünger Şehirler, Mumbai, Müsilaj) ve Web Tabanlı CBS Uygulamaları",
- "ciktilar": [
-  "COĞ.11.1.1. Mekânsal sorunların çözümünde coğrafya biliminin katkılarını yapılandırabilme",
-  "COĞ.11.2.1. Web tabanlı CBS aracılığı ile harita uygulamaları yapabilme"
- ],
- "giris": "Kuraklık, kentsel taşkınlar, gecekondulaşma, vahşi çöp depolama ve denizlerdeki müsilaj gibi mekânsal sorunların kalıcı çözümü, doğal ve beşerî süreçlerin konumsal verilerle birlikte analiz edilmesini gerektirir. Günümüzde bulut bilişim ve genel ağ teknolojileriyle birleşen Web Tabanlı Coğrafi Bilgi Sistemleri (Web CBS), bu mekânsal analizleri ve harita uygulamalarını uzmanların ötesinde tüm kullanıcıların erişimine açmıştır.",
- "ozet": [
-  "{koyu:Kuraklık}, kırsal alanlarda tarım, hayvancılık, balıkçılık ve ormancılığı zayıflatarak {koyu:kentlere göçü} hızlandırır; kentlerde artan nüfus ve sanayi ise su kaynakları üzerindeki baskıyı büyütür.",
-  "Geleneksel {koyu:gri altyapı} (suyu kanalizasyonla hızla uzaklaştırma) yerine doğayı taklit eden {koyu:yeşil altyapıyı} benimseyen {koyu:Sünger Şehir} modeli, yağmur suyunu düştüğü yerde emip depolayarak hem taşkınları önler hem de su kıtlığına çözüm üretir.",
-  "{koyu:Mumbai (Hindistan)} örneğinde hızlı göçle oluşan {koyu:Dharavi} gecekondulaşması, {koyu:Deonar} katı atık alanı ve muson sellerine karşı {koyu:CBS destekli taşkın haritaları} ve {koyu:mangrov ormanlarının korunması} uygulanmaktadır.",
-  "Denizlerde su sıcaklığının artışı, durağan akıntı ve evsel-sanayi atıklarının etkisiyle oluşan {koyu:müsilaj (deniz salyası)}, suda çözünmüş oksijeni azaltarak canlı ölümlerine yol açar; coğrafya bilimi uydu görüntüleri ve CBS ile riskli alanları ve arıtma tesisi yerlerini belirler.",
-  "{koyu:Gaziantep arazi varlığı projesinde} olduğu gibi {koyu:uzaktan algılama (uydu görüntüleri)} ve yer doğrulama verileri kullanılarak tarım, orman-mera ve tarım dışı alanların dağılımı zaman ve iş gücü tasarrufuyla tespit edilir.",
-  "Bilgisayar tabanlı CBS ile genel ağ ve {koyu:bulut bilişim} teknolojilerinin bütünleşmesiyle 1990'lı yıllarda ortaya çıkan {koyu:Web Tabanlı CBS}, mekânsal verilere tarayıcı ve mobil cihazlarla her yerden anlık erişim sağlar.",
-  "Web tabanlı CBS uygulamalarının üç temel bileşeni {koyu:kullanıcı (istemci)}, {koyu:genel ağ} ve {koyu:sunucu}dur; veri işleme, çözümleme ve depolama işlemlerinin büyük bölümü sunucu üzerinde gerçekleşir.",
-  "Web CBS'de her mekânsal veri kümesi {koyu:katman} ({koyu:vektör} veya {koyu:raster} formatında) olarak temsil edilir; vektör katmanlara ait sözel ve sayısal detaylar {koyu:öz nitelik tablosu} içinde tutulur ve sorgulanabilir."
- ],
- "bolumler": [
-  {
-   "baslik": "Kuraklığın Kırsal-Kentsel Etkileri ve Sünger Şehir Modeli",
-   "metin": [
-    "Yavaş ilerleyen ancak geniş coğrafyaları etkileyen {koyu:kuraklık}, kırsal ve kentsel mekânları birbirine bağlayan çok boyutlu bir sorundur. Kırsal kesimde toprak neminin azalması tarımsal verimi düşürür, meraların zayıflaması hayvancılığı ve yaylacılığı geriletir, su seviyesinin çekilmesi balık habitatlarını daraltır ve ormanları yangın ile zararlılara açık hâle getirir. Kırsal geçim kaynaklarının zayıflaması {koyu:kırsaldan kente göçü} hızlandırır; kentlerdeki plansız büyüme ise su talebini artırarak gıda arz güvenliğini ve yaşam kalitesini tehdit eder.",
-    "Birleşmiş Milletler 2030 Sürdürülebilir Kalkınma Gündemi'nin 11. Amacı ({koyu:Sürdürülebilir Şehirler ve Topluluklar}) doğrultusunda, yağmur suyunu kapalı kanalizasyon borularıyla hızla uzaklaştıran geleneksel {koyu:gri altyapı} anlayışı yerini doğanın su döngüsünü taklit eden {koyu:yeşil altyapı} stratejilerine bırakmaktadır.",
-    "Çin'de sel felaketleriyle mücadele için geliştirilen {koyu:Sünger Şehirler} modeli, suyu atık olarak değil değerli bir kaynak olarak görür. Bu modelin beş temel bileşeni şunlardır: 1) Kentsel dönüşüm ve tasarımın {koyu:erken aşamasında geçirimli yüzeyleri ve yeşil dokuyu} plana dâhil etmek, 2) Yağmur suyunu yüzey akışına geçmeden {koyu:kaynağında yönetmek}, 3) {koyu:Yüzey suyunu hasat ederek} bitkilerle doğal yoldan filtreleyip yeniden kullanmak, 4) {koyu:Kirliliği doğa tabanlı çözümlerle} iyileştirmek ve 5) Doğal havza akışını taklit eden {koyu:sürdürülebilir kentsel drenaj sistemi} kurmak."
-   ],
-   "kutu": {
-    "tur": "onemli",
-    "baslik": "Gri Altyapıdan Yeşil Altyapıya (Sünger Şehir)",
-    "metin": "Geleneksel gri altyapı yağmur suyunu beton yüzeylerden kanalizasyonla hızla şehir dışına atmaya çalışırken; sünger şehir (yeşil altyapı) geçirgen zeminler ve yağmur bahçeleriyle suyu düştüğü yerde emip depolayarak hem taşkını hem kuraklığı önler."
-   },
-   "gorsel": "<svg viewBox=\"0 0 480 204\" role=\"img\" aria-label=\"Sünger şehir modelinin beş temel bileşeni\"><text x=\"240\" y=\"20\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" class=\"g-y\">Sünger Şehir Modelinin (Yeşil Altyapı) 5 Temel Bileşeni</text><rect x=\"14\" y=\"32\" width=\"144\" height=\"76\" rx=\"8\" class=\"g-ya\"/><text x=\"86\" y=\"49\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" class=\"g-yf\">1 · Erken Tasarım</text><text x=\"86\" y=\"65\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">Kentsel dönüşümde</text><text x=\"86\" y=\"79\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">geçirgen ve yeşil dokuyu</text><text x=\"86\" y=\"93\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">baştan plana katmak</text><rect x=\"168\" y=\"32\" width=\"144\" height=\"76\" rx=\"8\" class=\"g-ma\"/><text x=\"240\" y=\"49\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" class=\"g-mf\">2 · Kaynağında Yönetim</text><text x=\"240\" y=\"65\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">Yağmur suyunu yüzey</text><text x=\"240\" y=\"79\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">akışına geçmeden düştüğü</text><text x=\"240\" y=\"93\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">yerde tutmak</text><rect x=\"322\" y=\"32\" width=\"144\" height=\"76\" rx=\"8\" class=\"g-sa\"/><text x=\"394\" y=\"49\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" class=\"g-sf\">3 · Su Hasadı</text><text x=\"394\" y=\"65\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">Yüzey suyunu biriktirip</text><text x=\"394\" y=\"79\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">bitkilerle filtreleyerek</text><text x=\"394\" y=\"93\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">yeniden kullanmak</text><rect x=\"44\" y=\"120\" width=\"184\" height=\"74\" rx=\"8\" class=\"g-ta\"/><text x=\"136\" y=\"138\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" class=\"g-tf\">4 · Doğa Tabanlı Arıtım</text><text x=\"136\" y=\"154\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">Kirli yüzey sularını düşük</text><text x=\"136\" y=\"168\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">maliyetli ekolojik yöntemlerle</text><text x=\"136\" y=\"182\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">iyileştirmek</text><rect x=\"252\" y=\"120\" width=\"184\" height=\"74\" rx=\"8\" class=\"g-ya\"/><text x=\"344\" y=\"138\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" class=\"g-yf\">5 · Doğal Yeşil Drenaj</text><text x=\"344\" y=\"154\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">Doğal havza akışını taklit</text><text x=\"344\" y=\"168\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">eden sürdürülebilir drenaj</text><text x=\"344\" y=\"182\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">zinciri kurmak</text></svg>"
-  },
-  {
-   "baslik": "Kentsel, Tarımsal ve Denizel Mekânsal Sorun Vaka Analizleri",
-   "metin": [
-    "Mekânsal sorunların çözümünde coğrafya bilimi; şehir planlama, çevre mühendisliği, sosyoloji ve biyoloji gibi disiplinlerden gelen verileri konum bazında birleştirir. Örneğin 20 milyonu aşan metropol nüfusuyla Hindistan'ın finans ve ticaret merkezi olan {koyu:Mumbai}, hızlı göç nedeniyle Asya'nın en büyük gecekondu bölgelerinden {koyu:Dharavi} ve dev atık alanı {koyu:Deonar} çevresinde ağır altyapı ve sağlık sorunları yaşamaktadır. Alçak rakımlı ve muson iklimli kentte sel riskini azaltmak için {koyu:CBS destekli taşkın risk haritaları} üretilmekte, taşkın alanlarında yapılaşma sınırlandırılmakta ve kıyıdaki {koyu:mangrov ormanları} korunarak sel ile erozyon önlenmektedir.",
-    "Türkiye'de evsel, hafriyat, mermer ocağı ve hayvancılık atıklarının {koyu:vahşi (düzensiz) depolanması} karşısında CBS ile en uygun düzenli depolama alanları ve aktarma istasyonları haritalanmakta; hayvancılığın yoğun olduğu yerlerde {koyu:biyogaz tesisleri} kurularak atıklar yenilenebilir enerjiye dönüştürülmektedir. Benzer biçimde {koyu:Gaziantep Tarımsal Alanların Belirlenmesi Projesi'nde} çiftçi beyanı veya maliyetli arazi ölçümü yerine {koyu:iki farklı döneme ait uydu görüntüleri (uzaktan algılama)} ve yer doğrulama verileri kullanılarak arazi varlığı (%47 tarım alanı, %24 orman-mera, %29 tarım dışı alan) il ve ilçe bazında hızla sınıflandırılmıştır.",
-    "Denizlerde ise yaz aylarında su sıcaklığının ani artışı, durağan su akıntısı ve arıtılmamış evsel-sanayi atıklarının (azot-fosfor) fazlalığı alg ve fitoplankton patlamasına yol açarak {koyu:müsilaj (deniz salyası)} oluşturur. Su yüzeyini kaplayan müsilaj fotosentezi engelleyip {koyu:çözünmüş oksijeni} düşürerek toplu balık ölümlerine, balıkçılık ve turizm kayıplarına neden olur. Coğrafya bilimi uydu görüntüleri ve CBS ile müsilajın yayılımını haritalar ve {koyu:atık su arıtma tesislerinin yer seçimine} bilimsel temel sunar."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Vaka / Mekânsal Sorun",
-     "Doğal ve Beşerî Nedenler",
-     "Coğrafya ve CBS Temelli Çözüm Yaklaşımı"
-    ],
-    "satirlar": [
-     [
-      "Mumbai Metropolü (Hindistan)",
-      "Alçak kıyı ve muson yağışları; hızlı göç, Dharavi gecekonduları, Deonar çöplüğü",
-      "CBS taşkın risk haritaları, drenaj yenileme, mangrov ormanlarının korunması"
-     ],
-     [
-      "Gaziantep Arazi Tespiti",
-      "Beyana dayalı rekolte hatası, saha çalışmasının zaman ve maliyet yükü",
-      "Uzaktan algılama (uydu görüntüleri) ve yer doğrulama ile tarım/mera sınıflaması"
-     ],
-     [
-      "Atık Yönetimi",
-      "Nüfus artışı, tüketim, vahşi depolama, mermer ve hayvancılık atıkları",
-      "CBS ile düzenli depolama ve biyogaz tesisi yer seçimi"
-     ],
-     [
-      "Müsilaj (Deniz Salyası)",
-      "Su sıcaklığı artışı, durağan akıntı, evsel ve sanayi atık deşarjı",
-      "Uydu/CBS ile yayılım haritalama, arıtma tesisi yer seçimi, atık kontrolü"
-     ]
-    ]
-   }
-  },
-  {
-   "baslik": "Bilgisayar Tabanlı CBS'den Web Tabanlı CBS'ye Geçiş ve Bulut Bilişim",
-   "metin": [
-    "Tıpkı Gaziantep Zeugma Müzesi'ndeki {koyu:Çingene Kızı mozaiğinin} binlerce küçük renkli taş parçasının ({koyu:tessera}) sabırla birleştirilmesiyle oluşması gibi, yeryüzündeki doğal ve beşerî unsurların bilgisi de binlerce mekânsal veri parçasından oluşur. Bilgisayar teknolojisi ile haritacılığın birleşmesi sonucunda ortaya çıkan {koyu:bilgisayar tabanlı Coğrafi Bilgi Sistemleri (CBS)}, güçlü analiz yeteneklerine sahip olsa da yüksek donanım maliyeti, lisans ücretleri ve ileri uzmanlık gerektirmesi nedeniyle toplum genelinde yaygınlaşamamıştır.",
-    "{koyu:1990'lı yıllardan} itibaren genel ağın yaygınlaşması ve veriler ile yazılımların sanal sunucularda depolanıp tarayıcı üzerinden işlenmesini sağlayan {koyu:bulut bilişim} teknolojilerinin gelişmesi, CBS alanında devrim yaratmıştır. Bilgisayar tabanlı CBS ile web teknolojilerinin bütünleşmesi sonucunda {koyu:Web Tabanlı CBS (Web CBS)} uygulamaları doğmuştur.",
-    "Web tabanlı CBS sayesinde basılı gezi rehberleri ve kâğıt haritalar yerini akıllı telefon, tablet ve bilgisayar ekranlarındaki {koyu:dijital haritalara} bırakmıştır. Kullanıcılar artık anlık konumlarını görebilmekte, mesafe ve alternatif güzergâh hesaplayabilmekte, yol üzerindeki sağlık kuruluşu, müze, yakıt istasyonu veya tarihî mekânların bilgilerine tek dokunuşla ulaşabilmektedir."
-   ],
-   "kutu": {
-    "tur": "tanim",
-    "baslik": "Bulut Bilişim ve Web CBS",
-    "metin": "Bulut bilişim; veri, yazılım ve uygulamaların yerel bir bilgisayara kurulmadan genel ağ bulutu üzerindeki sunucularda depolanıp tarayıcı aracılığıyla işlenmesini sağlayan teknolojidir ve Web CBS'nin altyapısını oluşturur."
-   }
-  },
-  {
-   "baslik": "Web Tabanlı CBS Uygulamalarının Temel Bileşenleri ve İşleyişi",
-   "metin": [
-    "Web tabanlı CBS uygulamalarının çalışma mimarisi üç temel bileşenden oluşur: {koyu:Kullanıcı (İstemci)}, {koyu:Genel Ağ} ve {koyu:Sunucu}. Bu mimari, kullanıcı ile veri tabanı arasında kesintisiz ve çift yönlü bir iletişim kurar.",
-    "İşleyiş sırası şöyledir: 1) {koyu:Kullanıcı (istemci)}, bilgisayar veya mobil cihazındaki bir {koyu:web tarayıcısı} ya da uygulama arayüzü üzerinden gitmek istediği yer, görmek istediği katman veya yapmak istediği sorgu için bir {koyu:komut (istek)} gönderir. 2) Bu komut {koyu:genel ağ} üzerinden bulut ortamındaki {koyu:sunucuya} iletilir. 3) {koyu:Sunucu}, komutu işler, mekânsal veriyi çözümler ve oluşturduğu cevabı {koyu:harita, grafik veya tablo} olarak yine genel ağ üzerinden kullanıcının ekranına geri gönderir.",
-    "Web tabanlı CBS'de veri toplama, depolama ve çözümleme gibi ağır işlemlerin büyük çoğunluğu {koyu:sunucu} tarafından gerçekleştirildiği için, kullanıcının cihazında yüksek işlemci gücü veya özel CBS yazılımı bulunmasına gerek yoktur."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Web CBS İletişim Zinciri",
-    "metin": "Kullanıcı (İstemci / Tarayıcı) → Komut Gönderimi → Genel Ağ → Sunucu (Veri İşleme, Çözümleme ve Depolama) → Genel Ağ → Harita / Veri Görüntüleme."
-   },
-   "gorsel": "<svg viewBox=\"0 0 480 202\" role=\"img\" aria-label=\"Web tabanlı CBS uygulamalarının temel bileşenleri\"><text x=\"240\" y=\"20\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" class=\"g-y\">Web Tabanlı CBS Uygulamalarının Çalışma Mimarisi</text><rect x=\"16\" y=\"38\" width=\"132\" height=\"106\" rx=\"10\" class=\"g-ma\"/><text x=\"82\" y=\"58\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" class=\"g-mf\">KULLANICI (İstemci)</text><text x=\"82\" y=\"76\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">• Web Tarayıcısı</text><text x=\"82\" y=\"92\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">• Akıllı Telefon / Tablet</text><text x=\"82\" y=\"108\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">• Veri Girişi / Sorgu</text><text x=\"82\" y=\"124\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">• Harita Görüntüleme</text><rect x=\"184\" y=\"54\" width=\"112\" height=\"74\" rx=\"10\" class=\"g-sa\"/><text x=\"240\" y=\"80\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" class=\"g-sf\">GENEL AĞ</text><text x=\"240\" y=\"98\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">Web Teknolojileri</text><text x=\"240\" y=\"113\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">ve Bulut İletişimi</text><rect x=\"332\" y=\"38\" width=\"132\" height=\"106\" rx=\"10\" class=\"g-ya\"/><text x=\"398\" y=\"58\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" class=\"g-yf\">SUNUCU (Bulut)</text><text x=\"398\" y=\"76\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">• Veri Depolama</text><text x=\"398\" y=\"92\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">• Mekânsal Çözümleme</text><text x=\"398\" y=\"108\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">• Katmanlar (Vektör/Raster)</text><text x=\"398\" y=\"124\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">• Öz Nitelik Tablosu</text><path d=\"M 150 74 L 180 74\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><polygon points=\"183,74 176,70 176,78\" class=\"g-mf\"/><text x=\"166\" y=\"67\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"700\" class=\"g-mf\">Komut</text><path d=\"M 298 74 L 328 74\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><polygon points=\"331,74 324,70 324,78\" class=\"g-mf\"/><text x=\"314\" y=\"67\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"700\" class=\"g-mf\">İstek</text><path d=\"M 330 108 L 300 108\" fill=\"none\" class=\"g-ys\" stroke-width=\"2\"/><polygon points=\"297,108 304,104 304,112\" class=\"g-yf\"/><text x=\"314\" y=\"121\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"700\" class=\"g-yf\">Yanıt</text><path d=\"M 182 108 L 152 108\" fill=\"none\" class=\"g-ys\" stroke-width=\"2\"/><polygon points=\"149,108 156,104 156,112\" class=\"g-yf\"/><text x=\"166\" y=\"121\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"700\" class=\"g-yf\">Harita</text><rect x=\"16\" y=\"156\" width=\"448\" height=\"36\" rx=\"8\" class=\"g-ta\"/><text x=\"240\" y=\"172\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" class=\"g-tf\">Katman Yapısı: Vektör (Nokta, Çizgi, Poligon + Öz Nitelik Tablosu) · Raster (Uydu Görüntüsü)</text><text x=\"240\" y=\"186\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">Çıktı Formatları: Etkileşimli Harita · Grafik · İstatistiksel Tablo</text></svg>"
-  },
-  {
-   "baslik": "Katman Yapısı, Vektör-Raster Formatları ve Öz Nitelik Tablosu",
-   "metin": [
-    "Web tabanlı CBS uygulamalarında yeryüzüne ait her bir mekânsal veri kümesi (örneğin ulaşım ağı, idari sınırlar, akarsular, deprem noktaları veya uydu görüntüsü) ayrı bir {koyu:katman} olarak temsil edilir. Kullanıcılar ihtiyaçlarına göre bu katmanları açıp kapatabilir veya üst üste çakıştırarak mekânsal ilişkileri analiz edebilir.",
-    "Katmanlar CBS ortamında iki temel veri formatında tutulur: {koyu:Vektör veri formatı} (nokta, çizgi ve poligon/alan sembolleriyle gösterilen kuyular, yollar, il sınırları vb.) ve {koyu:raster veri formatı} (piksellerden/hücrelerden oluşan uydu görüntüleri, hava fotoğrafları ve sayısal yükselti modelleri).",
-    "Vektör veri formatındaki katmanlara ait sözel ve sayısal detaylar {koyu:öz nitelik tablosu} içerisinde yer alır. Örneğin bir okul noktasına tıklandığında açılan öğrenci sayısı, adres ve yapım yılı bilgileri öz nitelik tablosundan gelir. Kullanıcılar kendilerine tanımlanan yetkiler çerçevesinde öz nitelik tablosuna {koyu:veri girişi} yapabilir, verileri güncelleyebilir, {koyu:sorgulama} yapabilir ve sonuçları harita, grafik veya tablo biçiminde görüntüleyebilir."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Vektör Katman ve Öz Nitelik Tablosu İlişkisi",
-    "metin": "Harita üzerindeki konumların (nokta, çizgi, alan) 'nerede' olduğunu vektör katman gösterirken, o konuma ait 'ne, ne kadar, hangi özellikte' sorularının yanıtını öz nitelik tablosu barındırır."
-   }
-  },
-  {
-   "baslik": "Bilgisayar Tabanlı CBS ile Web Tabanlı CBS'nin Karşılaştırılması",
-   "metin": [
-    "Mekânsal planlama ve coğrafi araştırmalarda hem bilgisayar (masaüstü) tabanlı CBS hem de web tabanlı CBS önemli işlevler üstlenir; ancak hedef kitleleri ve teknik kapasiteleri farklıdır. Bilgisayar tabanlı CBS, karmaşık jeoistatistiksel modellemeler ve ileri düzey mühendislik analizleri için üstün güç sunarken yüksek donanım, lisans ücreti ve uzman personel gerektirir.",
-    "Buna karşılık {koyu:Web Tabanlı CBS}, masaüstü CBS'ye kıyasla daha sınırlı ve temel analiz imkânları sunsa da {koyu:dünyanın her yerinden mobil cihazlarla anlık erişim}, düşük maliyet (çoğunlukla ücretsiz kullanım), düşük teknik bilgi ihtiyacı ve anlık güncellenen {koyu:yaşayan atlas} verilerine ulaşım üstünlüğü sağlar.",
-    "Bu sayede öğrencilerden karar vericilere kadar geniş kitleler, masaüstü bilgisayarlara bağımlı kalmadan tematik haritaları okuyabilmekte, ölçeğe göre {koyu:detay} ve {koyu:genelleme} düzeylerini değiştirerek haritadan çıkarım yapabilmekte ve kendi tematik haritalarını bağımsız biçimde üretebilmektedir."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Karşılaştırma Ölçütü",
-     "Bilgisayar (Masaüstü) Tabanlı CBS",
-     "Web Tabanlı CBS Uygulamaları"
-    ],
-    "satirlar": [
-     [
-      "Erişim ve Cihaz Bağımlılığı",
-      "Yazılımın kurulu olduğu bilgisayarla sınırlıdır",
-      "Genel ağ olan her yerden telefon, tablet ve tarayıcıyla erişilir"
-     ],
-     [
-      "Veri Depolama ve İşleme",
-      "Yerel bilgisayar donanımında gerçekleştirilir",
-      "Bulut bilişim altyapısındaki sunucularda gerçekleştirilir"
-     ],
-     [
-      "Hedef Kitle ve Teknik Bilgi",
-      "İleri düzey CBS eğitimi almış uzmanlar",
-      "Geniş kitleler, öğrenciler, gezginler ve karar vericiler"
-     ],
-     [
-      "Analiz Kapasitesi",
-      "Çok güçlü, karmaşık ve ileri düzey mekânsal analizler",
-      "Daha temel ve hızlı sorgulama, görüntüleme ve haritalama"
-     ],
-     [
-      "Maliyet ve Güncelleme",
-      "Yüksek donanım ve lisans maliyeti; manuel güncelleme",
-      "Ücretsiz veya düşük maliyetli; anlık merkezi güncelleme"
-     ]
-    ]
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Kentsel su yönetiminde geleneksel 'gri altyapı' ile 'sünger şehir (yeşil altyapı)' yaklaşımı arasındaki temel farkı ve sünger şehir modelinin kuraklık ile sel sorunlarına nasıl aynı anda çözüm ürettiğini açıklayınız.",
-   "cevap": "Geleneksel gri altyapı yağmur suyunu bir atık gibi görerek geçirimsiz beton yüzeylerden kapalı kanalizasyon ağlarıyla hızla şehir dışına tahliye etmeyi amaçlar. Sünger şehir (yeşil altyapı) yaklaşımı ise geçirgen zeminler, yeşil alanlar ve doğal drenaj sistemleriyle yağmur suyunu düştüğü yerde bir sünger gibi emer ve depolar. Böylece yüzey akışı azaldığı için sel ve taşkınlar önlenir; depolanıp bitkilerle filtrelenen yağmur suyu ise kurak dönemlerde yeniden kullanılarak su kıtlığına çözüm sağlar."
-  },
-  {
-   "soru": "Hindistan'ın Mumbai metropolünde görülen başlıca mekânsal sorunları, bu sorunların doğal-beşerî nedenlerini ve çözümünde CBS ile coğrafyanın nasıl kullanıldığını açıklayınız.",
-   "cevap": "Mumbai'de hızlı göç ve yetersiz konut nedeniyle Dharavi gibi dev gecekondu bölgeleri, Deonar çöplük alanında atık-sağlık sorunları ve muson yağmurları ile alçak rakım nedeniyle sık sık sel felaketleri yaşanmaktadır. Coğrafya bilimi ve CBS yardımıyla taşkın risk haritaları üretilerek riskli alanlarda yapılaşma sınırlandırılmakta, drenaj altyapısı yenilenmekte, uydu destekli izleme yapılmakta ve kıyıdaki mangrov ormanları korunarak sel ve erozyon riski azaltılmaktadır."
-  },
-  {
-   "soru": "Denizlerimizde görülen müsilaj (deniz salyası) sorununun oluşumunda etkili olan doğal ve beşerî faktörler nelerdir? Coğrafya bilimi bu sorunun çözümüne nasıl katkı sağlar?",
-   "cevap": "Müsilaj oluşumunda su sıcaklığının yaz aylarında ani yükselmesi ve deniz akıntılarının durağanlığı doğal faktörler; arıtılmamış evsel, tarımsal ve sanayi atıklarının denize bırakılması ise beşerî faktörlerdir. Coğrafya bilimi, uydu görüntüleri ve CBS kullanarak müsilajın yoğunlaştığı ve yayıldığı alanları haritalar, öncelikli müdahale bölgelerini belirler ve yeni atık su arıtma tesislerinin en uygun konumlara kurulması için yer seçimi analizi yapar."
-  },
-  {
-   "soru": "Gaziantep İlindeki Tarımsal Alanların Belirlenmesi Projesi'nde geleneksel çiftçi beyanı ve arazi çalışması yerine neden uzaktan algılama (uydu görüntüleri) ve CBS tercih edilmiştir?",
-   "cevap": "Çiftçi beyanına dayalı rekolte ve arazi tespitleri hata payı taşırken, tüm ili kapsayan doğrudan saha çalışmaları çok yüksek zaman, iş gücü ve maliyet gerektirir. İki farklı döneme ait uydu görüntülerinin yer doğrulama verileriyle birlikte CBS ortamında sınıflandırılması sayesinde Gaziantep'teki tarım (%47), orman-mera (%24) ve tarım dışı (%29) alanların dağılımı kısa sürede, ekonomik ve doğru biçimde haritalanmıştır."
-  },
-  {
-   "soru": "Web tabanlı CBS uygulamalarının üç temel bileşenini yazarak bir kullanıcının harita üzerinde yaptığı sorgunun nasıl sonuçlandığını adım adım açıklayınız.",
-   "cevap": "Web tabanlı CBS'nin üç temel bileşeni kullanıcı (istemci), genel ağ ve sunucudur. Kullanıcı, bilgisayar veya akıllı telefonundaki web tarayıcısı üzerinden bir komut (sorgu) gönderir; bu komut genel ağ aracılığıyla bulut sunucusuna ulaşır. Verileri depolayan ve işleyen sunucu, komutu çözümleyerek cevabı harita, tablo veya grafik formatında yine genel ağ üzerinden kullanıcının ekranına gönderir."
-  },
-  {
-   "soru": "Web tabanlı CBS'de 'katman' ve 'öz nitelik tablosu' kavramları ne anlama gelir? Vektör ve raster veri formatlarını birer örnekle ayırt ediniz.",
-   "cevap": "Katman, aynı konuya ait mekânsal verilerin (örneğin akarsular, kara yolları veya hastaneler) harita üzerinde üst üste çakıştırılabilen her bir veri kümesidir. Nokta, çizgi ve poligonlarla gösterilen verilere vektör veri (örneğin il sınırları veya okul konumları), piksellerden oluşan görüntülere ise raster veri (örneğin uydu görüntüleri) denir. Vektör katmanlardaki unsurlara ait isim, nüfus, kapasite gibi sözel ve sayısal bilgilerin tutulduğu veri tablosuna ise öz nitelik tablosu adı verilir."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "Aşağıdaki mekânsal sorun ve bu sorunu doğrudan inceleyen coğrafya alt dalı eşleştirmelerinden hangisi yanlıştır?",
-   "secenekler": [
-    "Harran Ovası'nda bilinçsiz sulama sonucu oluşan tuzlanma ve verim kaybı — Toprak Coğrafyası",
-    "Akdeniz iklim bölgesinde yaz yangınlarının bitki ve hayvan türlerini tehdit etmesi — Biyocoğrafya",
-    "Doğu Anadolu'daki akarsu debilerinin düşmesinin sulama ve enerji üretimini etkilemesi — Hidrografya",
-    "Kırsaldan büyükşehirlere genç nüfus göçü nedeniyle kırsalda yaşlı nüfus oranının artması — Jeomorfoloji",
-    "Zonguldak'ta kömür madenciliğinin gerilemesine bağlı olarak işsizliğin artması — Ekonomik Coğrafya"
-   ],
-   "dogru": 3,
-   "aciklama": "Göç ve nüfusun yaş yapısındaki değişimler Jeomorfoloji (yer şekilleri bilimi) değil, Nüfus Coğrafyası tarafından incelenir. Jeomorfoloji, Artvin'de dağlık ve engebeli arazi yapısının ulaşımı zorlaştırması gibi yer şekli konularını inceler."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Şehirlerde yağmur suyunu kapalı kanalizasyon ağlarıyla hızla uzaklaştırmayı hedefleyen geleneksel 'gri altyapı' yerine, suyu düştüğü yerde geçirgen yüzeyler ve yeşil alanlarla emip depolayan, bitkilerle filtreleyerek yeniden kullanan kentsel su yönetimi modeli aşağıdakilerden hangisidir?",
-   "secenekler": [
-    "Sünger Şehir Modeli",
-    "Sıcaklık Terselmesi Modeli",
-    "Büyük Ova Koruma Modeli",
-    "Vahşi Depolama Modeli",
-    "Merkezî İş Alanı Modeli"
-   ],
-   "dogru": 0,
-   "aciklama": "Çin'de sel felaketleriyle mücadele için geliştirilen ve BM Sürdürülebilir Şehirler hedefiyle uyumlu olan Sünger Şehirler yaklaşımı, doğayı taklit eden yeşil altyapıyla yağmur suyunu kaynağında tutup yeniden değerlendirir."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Web tabanlı Coğrafi Bilgi Sistemleri (Web CBS) ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
-   "secenekler": [
-    "Temel bileşenlerini kullanıcı (istemci), genel ağ ve sunucu oluşturur.",
-    "Veri depolama, işleme ve çözümleme işlemlerinin büyük bölümü sunucu tarafından gerçekleştirilir.",
-    "Vektör veri formatındaki katmanlara ait detaylar öz nitelik tablosu içerisinde yer alır.",
-    "Yalnızca yüksek işlemci gücüne sahip masaüstü bilgisayarlarda ve ücretli lisansla çalışır.",
-    "Bulut bilişim ve genel ağ teknolojileri sayesinde mobil cihazlardan anlık erişime olanak tanır."
-   ],
-   "dogru": 3,
-   "aciklama": "Yüksek donanım, masaüstü bilgisayar bağımlılığı ve yüksek lisans ücreti bilgisayar tabanlı CBS'nin özelliğidir. Web tabanlı CBS ise bulut bilişim sayesinde akıllı telefon ve tabletlerden ücretsiz veya düşük maliyetle kullanılabilir."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Deniz yüzeyinde oluşan yoğun, yapışkan ve peltemsi tabaka olan müsilaj (deniz salyası) ile ilgili;\nI. Su sıcaklığının ani artışı, durağan akıntı ve aşırı evsel-sanayi atıkları fitoplankton çoğalmasını tetikler.\nII. Sucul ortamda fotosentezi hızlandırarak sudaki çözünmüş oksijen miktarını en üst seviyeye çıkarır.\nIII. Uydu görüntüleri ve CBS kullanılarak yoğunlaştığı alanlar haritalanabilir ve arıtma tesisleri için yer seçimi yapılabilir.\nyargılarından hangileri doğrudur?",
-   "secenekler": [
-    "Yalnız I",
-    "Yalnız II",
-    "I ve III",
-    "II ve III",
-    "I, II ve III"
-   ],
-   "dogru": 2,
-   "aciklama": "Müsilaj su yüzeyini kaplayarak fotosentezi kısmen veya tamamen durdurur ve sudaki çözünmüş oksijen oranını düşürerek toplu balık ölümlerine yol açar (II yanlış, I ve III doğru)."
-  },
-  {
-   "tur": "dy",
-   "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "11. Sınıf Coğrafya — 2. Hafta Konu Özeti",
+  "sinif": 11,
+  "ders": "cografya",
+  "ders_adi": "Coğrafya",
+  "hafta": 2,
+  "tarih": "21-25 Eylül 2026",
+  "yayin_tarihi": "2026-10-16",
+  "unite": "1. Ünite: Coğrafyanın Doğası — 2. Ünite: Mekânsal Bilgi Teknolojileri",
+  "konu": "Mekânsal Sorunlara Coğrafi Çözümler (Sünger Şehirler, Mumbai, Müsilaj) ve Web Tabanlı CBS Uygulamaları",
+  "ciktilar": [
+    "COĞ.11.1.1. Mekânsal sorunların çözümünde coğrafya biliminin katkılarını yapılandırabilme",
+    "COĞ.11.2.1. Web tabanlı CBS aracılığı ile harita uygulamaları yapabilme"
+  ],
+  "giris": "Kuraklık, kentsel taşkınlar, gecekondulaşma, vahşi çöp depolama ve denizlerdeki müsilaj gibi mekânsal sorunların kalıcı çözümü, doğal ve beşerî süreçlerin konumsal verilerle birlikte analiz edilmesini gerektirir. Günümüzde bulut bilişim ve genel ağ teknolojileriyle birleşen Web Tabanlı Coğrafi Bilgi Sistemleri (Web CBS), bu mekânsal analizleri ve harita uygulamalarını uzmanların ötesinde tüm kullanıcıların erişimine açmıştır.",
+  "ozet": [
+    "{koyu:Kuraklık}, kırsal alanlarda tarım, hayvancılık, balıkçılık ve ormancılığı zayıflatarak {koyu:kentlere göçü} hızlandırır; kentlerde artan nüfus ve sanayi ise su kaynakları üzerindeki baskıyı büyütür.",
+    "Geleneksel {koyu:gri altyapı} (suyu kanalizasyonla hızla uzaklaştırma) yerine doğayı taklit eden {koyu:yeşil altyapıyı} benimseyen {koyu:Sünger Şehir} modeli, yağmur suyunu düştüğü yerde emip depolayarak hem taşkınları önler hem de su kıtlığına çözüm üretir.",
+    "{koyu:Mumbai (Hindistan)} örneğinde hızlı göçle oluşan {koyu:Dharavi} gecekondulaşması, {koyu:Deonar} katı atık alanı ve muson sellerine karşı {koyu:CBS destekli taşkın haritaları} ve {koyu:mangrov ormanlarının korunması} uygulanmaktadır.",
+    "Denizlerde su sıcaklığının artışı, durağan akıntı ve evsel-sanayi atıklarının etkisiyle oluşan {koyu:müsilaj (deniz salyası)}, suda çözünmüş oksijeni azaltarak canlı ölümlerine yol açar; coğrafya bilimi uydu görüntüleri ve CBS ile riskli alanları ve arıtma tesisi yerlerini belirler.",
+    "{koyu:Gaziantep arazi varlığı projesinde} olduğu gibi {koyu:uzaktan algılama (uydu görüntüleri)} ve yer doğrulama verileri kullanılarak tarım, orman-mera ve tarım dışı alanların dağılımı zaman ve iş gücü tasarrufuyla tespit edilir.",
+    "Bilgisayar tabanlı CBS ile genel ağ ve {koyu:bulut bilişim} teknolojilerinin bütünleşmesiyle 1990'lı yıllarda ortaya çıkan {koyu:Web Tabanlı CBS}, mekânsal verilere tarayıcı ve mobil cihazlarla her yerden anlık erişim sağlar.",
+    "Web tabanlı CBS uygulamalarının üç temel bileşeni {koyu:kullanıcı (istemci)}, {koyu:genel ağ} ve {koyu:sunucu}dur; veri işleme, çözümleme ve depolama işlemlerinin büyük bölümü sunucu üzerinde gerçekleşir.",
+    "Web CBS'de her mekânsal veri kümesi {koyu:katman} ({koyu:vektör} veya {koyu:raster} formatında) olarak temsil edilir; vektör katmanlara ait sözel ve sayısal detaylar {koyu:öz nitelik tablosu} içinde tutulur ve sorgulanabilir."
+  ],
+  "bolumler": [
     {
-     "metin": "Kuraklık yalnızca kırsal alanlardaki tarım ve hayvancılığı etkiler; kentlerdeki su yönetimi ve göç süreçleri üzerinde bir etkisi yoktur.",
-     "dogru": false,
-     "aciklama": "Kuraklık kırsal geçim kaynaklarını zayıflatarak kente göçü hızlandırır ve kentlerdeki su kaynakları ile gıda arz güvenliği üzerinde doğrudan baskı oluşturur."
+      "baslik": "Kuraklığın Kırsal-Kentsel Etkileri ve Sünger Şehir Modeli",
+      "metin": [
+        "Yavaş ilerleyen ancak geniş coğrafyaları etkileyen {koyu:kuraklık}, kırsal ve kentsel mekânları birbirine bağlayan çok boyutlu bir sorundur. Kırsal kesimde toprak neminin azalması tarımsal verimi düşürür, meraların zayıflaması hayvancılığı ve yaylacılığı geriletir, su seviyesinin çekilmesi balık habitatlarını daraltır ve ormanları yangın ile zararlılara açık hâle getirir. Kırsal geçim kaynaklarının zayıflaması {koyu:kırsaldan kente göçü} hızlandırır; kentlerdeki plansız büyüme ise su talebini artırarak gıda arz güvenliğini ve yaşam kalitesini tehdit eder.",
+        "Birleşmiş Milletler 2030 Sürdürülebilir Kalkınma Gündemi'nin 11. Amacı ({koyu:Sürdürülebilir Şehirler ve Topluluklar}) doğrultusunda, yağmur suyunu kapalı kanalizasyon borularıyla hızla uzaklaştıran geleneksel {koyu:gri altyapı} anlayışı yerini doğanın su döngüsünü taklit eden {koyu:yeşil altyapı} stratejilerine bırakmaktadır.",
+        "Çin'de sel felaketleriyle mücadele için geliştirilen {koyu:Sünger Şehirler} modeli, suyu atık olarak değil değerli bir kaynak olarak görür. Bu modelin beş temel bileşeni şunlardır: 1) Kentsel dönüşüm ve tasarımın {koyu:erken aşamasında geçirimli yüzeyleri ve yeşil dokuyu} plana dâhil etmek, 2) Yağmur suyunu yüzey akışına geçmeden {koyu:kaynağında yönetmek}, 3) {koyu:Yüzey suyunu hasat ederek} bitkilerle doğal yoldan filtreleyip yeniden kullanmak, 4) {koyu:Kirliliği doğa tabanlı çözümlerle} iyileştirmek ve 5) Doğal havza akışını taklit eden {koyu:sürdürülebilir kentsel drenaj sistemi} kurmak."
+      ],
+      "kutu": {
+        "tur": "onemli",
+        "baslik": "Gri Altyapıdan Yeşil Altyapıya (Sünger Şehir)",
+        "metin": "Geleneksel gri altyapı yağmur suyunu beton yüzeylerden kanalizasyonla hızla şehir dışına atmaya çalışırken; sünger şehir (yeşil altyapı) geçirgen zeminler ve yağmur bahçeleriyle suyu düştüğü yerde emip depolayarak hem taşkını hem kuraklığı önler."
+      },
+      "gorsel": "<svg viewBox=\"0 0 480 204\" role=\"img\" aria-label=\"Sünger şehir modelinin beş temel bileşeni\"><text x=\"240\" y=\"20\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" class=\"g-y\">Sünger Şehir Modelinin (Yeşil Altyapı) 5 Temel Bileşeni</text><rect x=\"14\" y=\"32\" width=\"144\" height=\"76\" rx=\"8\" class=\"g-ya\"/><text x=\"86\" y=\"49\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" class=\"g-yf\">1 · Erken Tasarım</text><text x=\"86\" y=\"65\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">Kentsel dönüşümde</text><text x=\"86\" y=\"79\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">geçirgen ve yeşil dokuyu</text><text x=\"86\" y=\"93\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">baştan plana katmak</text><rect x=\"168\" y=\"32\" width=\"144\" height=\"76\" rx=\"8\" class=\"g-ma\"/><text x=\"240\" y=\"49\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" class=\"g-mf\">2 · Kaynağında Yönetim</text><text x=\"240\" y=\"65\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">Yağmur suyunu yüzey</text><text x=\"240\" y=\"79\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">akışına geçmeden düştüğü</text><text x=\"240\" y=\"93\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">yerde tutmak</text><rect x=\"322\" y=\"32\" width=\"144\" height=\"76\" rx=\"8\" class=\"g-sa\"/><text x=\"394\" y=\"49\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" class=\"g-sf\">3 · Su Hasadı</text><text x=\"394\" y=\"65\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">Yüzey suyunu biriktirip</text><text x=\"394\" y=\"79\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">bitkilerle filtreleyerek</text><text x=\"394\" y=\"93\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">yeniden kullanmak</text><rect x=\"44\" y=\"120\" width=\"184\" height=\"74\" rx=\"8\" class=\"g-ta\"/><text x=\"136\" y=\"138\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" class=\"g-tf\">4 · Doğa Tabanlı Arıtım</text><text x=\"136\" y=\"154\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">Kirli yüzey sularını düşük</text><text x=\"136\" y=\"168\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">maliyetli ekolojik yöntemlerle</text><text x=\"136\" y=\"182\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">iyileştirmek</text><rect x=\"252\" y=\"120\" width=\"184\" height=\"74\" rx=\"8\" class=\"g-ya\"/><text x=\"344\" y=\"138\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" class=\"g-yf\">5 · Doğal Yeşil Drenaj</text><text x=\"344\" y=\"154\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">Doğal havza akışını taklit</text><text x=\"344\" y=\"168\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">eden sürdürülebilir drenaj</text><text x=\"344\" y=\"182\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">zinciri kurmak</text></svg>"
     },
     {
-     "metin": "Mumbai metropolünde muson yağmurlarının yol açtığı sel ve erozyon riskini azaltmak için kıyıdaki mangrov ormanlarının korunması doğa temelli bir önlemdir.",
-     "dogru": true,
-     "aciklama": "Mumbai'de CBS destekli taşkın haritalarının yanı sıra mangrov ormanlarının korunmasıyla sel ve kıyı erozyonu riski azaltılmaktadır."
+      "baslik": "Kentsel, Tarımsal ve Denizel Mekânsal Sorun Vaka Analizleri",
+      "metin": [
+        "Mekânsal sorunların çözümünde coğrafya bilimi; şehir planlama, çevre mühendisliği, sosyoloji ve biyoloji gibi disiplinlerden gelen verileri konum bazında birleştirir. Örneğin 20 milyonu aşan metropol nüfusuyla Hindistan'ın finans ve ticaret merkezi olan {koyu:Mumbai}, hızlı göç nedeniyle Asya'nın en büyük gecekondu bölgelerinden {koyu:Dharavi} ve dev atık alanı {koyu:Deonar} çevresinde ağır altyapı ve sağlık sorunları yaşamaktadır. Alçak rakımlı ve muson iklimli kentte sel riskini azaltmak için {koyu:CBS destekli taşkın risk haritaları} üretilmekte, taşkın alanlarında yapılaşma sınırlandırılmakta ve kıyıdaki {koyu:mangrov ormanları} korunarak sel ile erozyon önlenmektedir.",
+        "Türkiye'de evsel, hafriyat, mermer ocağı ve hayvancılık atıklarının {koyu:vahşi (düzensiz) depolanması} karşısında CBS ile en uygun düzenli depolama alanları ve aktarma istasyonları haritalanmakta; hayvancılığın yoğun olduğu yerlerde {koyu:biyogaz tesisleri} kurularak atıklar yenilenebilir enerjiye dönüştürülmektedir. Benzer biçimde {koyu:Gaziantep Tarımsal Alanların Belirlenmesi Projesi'nde} çiftçi beyanı veya maliyetli arazi ölçümü yerine {koyu:iki farklı döneme ait uydu görüntüleri (uzaktan algılama)} ve yer doğrulama verileri kullanılarak arazi varlığı (%47 tarım alanı, %24 orman-mera, %29 tarım dışı alan) il ve ilçe bazında hızla sınıflandırılmıştır.",
+        "Denizlerde ise yaz aylarında su sıcaklığının ani artışı, durağan su akıntısı ve arıtılmamış evsel-sanayi atıklarının (azot-fosfor) fazlalığı alg ve fitoplankton patlamasına yol açarak {koyu:müsilaj (deniz salyası)} oluşturur. Su yüzeyini kaplayan müsilaj fotosentezi engelleyip {koyu:çözünmüş oksijeni} düşürerek toplu balık ölümlerine, balıkçılık ve turizm kayıplarına neden olur. Coğrafya bilimi uydu görüntüleri ve CBS ile müsilajın yayılımını haritalar ve {koyu:atık su arıtma tesislerinin yer seçimine} bilimsel temel sunar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Vaka / Mekânsal Sorun",
+          "Doğal ve Beşerî Nedenler",
+          "Coğrafya ve CBS Temelli Çözüm Yaklaşımı"
+        ],
+        "satirlar": [
+          [
+            "Mumbai Metropolü (Hindistan)",
+            "Alçak kıyı ve muson yağışları; hızlı göç, Dharavi gecekonduları, Deonar çöplüğü",
+            "CBS taşkın risk haritaları, drenaj yenileme, mangrov ormanlarının korunması"
+          ],
+          [
+            "Gaziantep Arazi Tespiti",
+            "Beyana dayalı rekolte hatası, saha çalışmasının zaman ve maliyet yükü",
+            "Uzaktan algılama (uydu görüntüleri) ve yer doğrulama ile tarım/mera sınıflaması"
+          ],
+          [
+            "Atık Yönetimi",
+            "Nüfus artışı, tüketim, vahşi depolama, mermer ve hayvancılık atıkları",
+            "CBS ile düzenli depolama ve biyogaz tesisi yer seçimi"
+          ],
+          [
+            "Müsilaj (Deniz Salyası)",
+            "Su sıcaklığı artışı, durağan akıntı, evsel ve sanayi atık deşarjı",
+            "Uydu/CBS ile yayılım haritalama, arıtma tesisi yer seçimi, atık kontrolü"
+          ]
+        ]
+      }
     },
     {
-     "metin": "Hayvancılık faaliyetlerinin yoğun olduğu bölgelerde kurulan biyogaz tesisleri, atık kaynaklı çevre kirliliğini azaltırken yenilenebilir enerji üretimi sağlar.",
-     "dogru": true,
-     "aciklama": "Biyogaz tesisleri organik hayvancılık atıklarını değerlendirerek hem çevre kirliliğini önler hem de enerji üretir."
+      "baslik": "Bilgisayar Tabanlı CBS'den Web Tabanlı CBS'ye Geçiş ve Bulut Bilişim",
+      "metin": [
+        "Tıpkı Gaziantep Zeugma Müzesi'ndeki {koyu:Çingene Kızı mozaiğinin} binlerce küçük renkli taş parçasının ({koyu:tessera}) sabırla birleştirilmesiyle oluşması gibi, yeryüzündeki doğal ve beşerî unsurların bilgisi de binlerce mekânsal veri parçasından oluşur. Bilgisayar teknolojisi ile haritacılığın birleşmesi sonucunda ortaya çıkan {koyu:bilgisayar tabanlı Coğrafi Bilgi Sistemleri (CBS)}, güçlü analiz yeteneklerine sahip olsa da yüksek donanım maliyeti, lisans ücretleri ve ileri uzmanlık gerektirmesi nedeniyle toplum genelinde yaygınlaşamamıştır.",
+        "{koyu:1990'lı yıllardan} itibaren genel ağın yaygınlaşması ve veriler ile yazılımların sanal sunucularda depolanıp tarayıcı üzerinden işlenmesini sağlayan {koyu:bulut bilişim} teknolojilerinin gelişmesi, CBS alanında devrim yaratmıştır. Bilgisayar tabanlı CBS ile web teknolojilerinin bütünleşmesi sonucunda {koyu:Web Tabanlı CBS (Web CBS)} uygulamaları doğmuştur.",
+        "Web tabanlı CBS sayesinde basılı gezi rehberleri ve kâğıt haritalar yerini akıllı telefon, tablet ve bilgisayar ekranlarındaki {koyu:dijital haritalara} bırakmıştır. Kullanıcılar artık anlık konumlarını görebilmekte, mesafe ve alternatif güzergâh hesaplayabilmekte, yol üzerindeki sağlık kuruluşu, müze, yakıt istasyonu veya tarihî mekânların bilgilerine tek dokunuşla ulaşabilmektedir."
+      ],
+      "kutu": {
+        "tur": "tanim",
+        "baslik": "Bulut Bilişim ve Web CBS",
+        "metin": "Bulut bilişim; veri, yazılım ve uygulamaların yerel bir bilgisayara kurulmadan genel ağ bulutu üzerindeki sunucularda depolanıp tarayıcı aracılığıyla işlenmesini sağlayan teknolojidir ve Web CBS'nin altyapısını oluşturur."
+      }
     },
     {
-     "metin": "Web tabanlı CBS uygulamalarında her bir mekânsal veri kümesi katman olarak temsil edilir ve bu katmanlar raster veya vektör formatında olabilir.",
-     "dogru": true,
-     "aciklama": "Web CBS'de mekânsal veriler raster (piksel) veya vektör (nokta, çizgi, poligon) katmanlar hâlinde sunulur."
+      "baslik": "Web Tabanlı CBS Uygulamalarının Temel Bileşenleri ve İşleyişi",
+      "metin": [
+        "Web tabanlı CBS uygulamalarının çalışma mimarisi üç temel bileşenden oluşur: {koyu:Kullanıcı (İstemci)}, {koyu:Genel Ağ} ve {koyu:Sunucu}. Bu mimari, kullanıcı ile veri tabanı arasında kesintisiz ve çift yönlü bir iletişim kurar.",
+        "İşleyiş sırası şöyledir: 1) {koyu:Kullanıcı (istemci)}, bilgisayar veya mobil cihazındaki bir {koyu:web tarayıcısı} ya da uygulama arayüzü üzerinden gitmek istediği yer, görmek istediği katman veya yapmak istediği sorgu için bir {koyu:komut (istek)} gönderir. 2) Bu komut {koyu:genel ağ} üzerinden bulut ortamındaki {koyu:sunucuya} iletilir. 3) {koyu:Sunucu}, komutu işler, mekânsal veriyi çözümler ve oluşturduğu cevabı {koyu:harita, grafik veya tablo} olarak yine genel ağ üzerinden kullanıcının ekranına geri gönderir.",
+        "Web tabanlı CBS'de veri toplama, depolama ve çözümleme gibi ağır işlemlerin büyük çoğunluğu {koyu:sunucu} tarafından gerçekleştirildiği için, kullanıcının cihazında yüksek işlemci gücü veya özel CBS yazılımı bulunmasına gerek yoktur."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Web CBS İletişim Zinciri",
+        "metin": "Kullanıcı (İstemci / Tarayıcı) → Komut Gönderimi → Genel Ağ → Sunucu (Veri İşleme, Çözümleme ve Depolama) → Genel Ağ → Harita / Veri Görüntüleme."
+      },
+      "gorsel": "<svg viewBox=\"0 0 480 202\" role=\"img\" aria-label=\"Web tabanlı CBS uygulamalarının temel bileşenleri\"><text x=\"240\" y=\"20\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" class=\"g-y\">Web Tabanlı CBS Uygulamalarının Çalışma Mimarisi</text><rect x=\"16\" y=\"38\" width=\"132\" height=\"106\" rx=\"10\" class=\"g-ma\"/><text x=\"82\" y=\"58\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" class=\"g-mf\">KULLANICI (İstemci)</text><text x=\"82\" y=\"76\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">• Web Tarayıcısı</text><text x=\"82\" y=\"92\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">• Akıllı Telefon / Tablet</text><text x=\"82\" y=\"108\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">• Veri Girişi / Sorgu</text><text x=\"82\" y=\"124\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">• Harita Görüntüleme</text><rect x=\"184\" y=\"54\" width=\"112\" height=\"74\" rx=\"10\" class=\"g-sa\"/><text x=\"240\" y=\"80\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" class=\"g-sf\">GENEL AĞ</text><text x=\"240\" y=\"98\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">Web Teknolojileri</text><text x=\"240\" y=\"113\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">ve Bulut İletişimi</text><rect x=\"332\" y=\"38\" width=\"132\" height=\"106\" rx=\"10\" class=\"g-ya\"/><text x=\"398\" y=\"58\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" class=\"g-yf\">SUNUCU (Bulut)</text><text x=\"398\" y=\"76\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">• Veri Depolama</text><text x=\"398\" y=\"92\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">• Mekânsal Çözümleme</text><text x=\"398\" y=\"108\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">• Katmanlar (Vektör/Raster)</text><text x=\"398\" y=\"124\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">• Öz Nitelik Tablosu</text><path d=\"M 150 74 L 180 74\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><polygon points=\"183,74 176,70 176,78\" class=\"g-mf\"/><text x=\"166\" y=\"67\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"700\" class=\"g-mf\">Komut</text><path d=\"M 298 74 L 328 74\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><polygon points=\"331,74 324,70 324,78\" class=\"g-mf\"/><text x=\"314\" y=\"67\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"700\" class=\"g-mf\">İstek</text><path d=\"M 330 108 L 300 108\" fill=\"none\" class=\"g-ys\" stroke-width=\"2\"/><polygon points=\"297,108 304,104 304,112\" class=\"g-yf\"/><text x=\"314\" y=\"121\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"700\" class=\"g-yf\">Yanıt</text><path d=\"M 182 108 L 152 108\" fill=\"none\" class=\"g-ys\" stroke-width=\"2\"/><polygon points=\"149,108 156,104 156,112\" class=\"g-yf\"/><text x=\"166\" y=\"121\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"700\" class=\"g-yf\">Harita</text><rect x=\"16\" y=\"156\" width=\"448\" height=\"36\" rx=\"8\" class=\"g-ta\"/><text x=\"240\" y=\"172\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" class=\"g-tf\">Katman Yapısı: Vektör (Nokta, Çizgi, Poligon + Öz Nitelik Tablosu) · Raster (Uydu Görüntüsü)</text><text x=\"240\" y=\"186\" text-anchor=\"middle\" font-size=\"9.5\" class=\"g-y\">Çıktı Formatları: Etkileşimli Harita · Grafik · İstatistiksel Tablo</text></svg>"
     },
     {
-     "metin": "Web tabanlı CBS uygulamaları, karmaşık ve ileri düzey mühendislik analizlerinde bilgisayar tabanlı CBS'den çok daha güçlüdür.",
-     "dogru": false,
-     "aciklama": "Web tabanlı CBS erişim kolaylığı sağlar ancak bilgisayar tabanlı CBS'deki güçlü ve karmaşık analizlere göre daha sınırlı ve temel analiz imkânları sunar."
+      "baslik": "Katman Yapısı, Vektör-Raster Formatları ve Öz Nitelik Tablosu",
+      "metin": [
+        "Web tabanlı CBS uygulamalarında yeryüzüne ait her bir mekânsal veri kümesi (örneğin ulaşım ağı, idari sınırlar, akarsular, deprem noktaları veya uydu görüntüsü) ayrı bir {koyu:katman} olarak temsil edilir. Kullanıcılar ihtiyaçlarına göre bu katmanları açıp kapatabilir veya üst üste çakıştırarak mekânsal ilişkileri analiz edebilir.",
+        "Katmanlar CBS ortamında iki temel veri formatında tutulur: {koyu:Vektör veri formatı} (nokta, çizgi ve poligon/alan sembolleriyle gösterilen kuyular, yollar, il sınırları vb.) ve {koyu:raster veri formatı} (piksellerden/hücrelerden oluşan uydu görüntüleri, hava fotoğrafları ve sayısal yükselti modelleri).",
+        "Vektör veri formatındaki katmanlara ait sözel ve sayısal detaylar {koyu:öz nitelik tablosu} içerisinde yer alır. Örneğin bir okul noktasına tıklandığında açılan öğrenci sayısı, adres ve yapım yılı bilgileri öz nitelik tablosundan gelir. Kullanıcılar kendilerine tanımlanan yetkiler çerçevesinde öz nitelik tablosuna {koyu:veri girişi} yapabilir, verileri güncelleyebilir, {koyu:sorgulama} yapabilir ve sonuçları harita, grafik veya tablo biçiminde görüntüleyebilir."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Vektör Katman ve Öz Nitelik Tablosu İlişkisi",
+        "metin": "Harita üzerindeki konumların (nokta, çizgi, alan) 'nerede' olduğunu vektör katman gösterirken, o konuma ait 'ne, ne kadar, hangi özellikte' sorularının yanıtını öz nitelik tablosu barındırır."
+      }
+    },
+    {
+      "baslik": "Bilgisayar Tabanlı CBS ile Web Tabanlı CBS'nin Karşılaştırılması",
+      "metin": [
+        "Mekânsal planlama ve coğrafi araştırmalarda hem bilgisayar (masaüstü) tabanlı CBS hem de web tabanlı CBS önemli işlevler üstlenir; ancak hedef kitleleri ve teknik kapasiteleri farklıdır. Bilgisayar tabanlı CBS, karmaşık jeoistatistiksel modellemeler ve ileri düzey mühendislik analizleri için üstün güç sunarken yüksek donanım, lisans ücreti ve uzman personel gerektirir.",
+        "Buna karşılık {koyu:Web Tabanlı CBS}, masaüstü CBS'ye kıyasla daha sınırlı ve temel analiz imkânları sunsa da {koyu:dünyanın her yerinden mobil cihazlarla anlık erişim}, düşük maliyet (çoğunlukla ücretsiz kullanım), düşük teknik bilgi ihtiyacı ve anlık güncellenen {koyu:yaşayan atlas} verilerine ulaşım üstünlüğü sağlar.",
+        "Bu sayede öğrencilerden karar vericilere kadar geniş kitleler, masaüstü bilgisayarlara bağımlı kalmadan tematik haritaları okuyabilmekte, ölçeğe göre {koyu:detay} ve {koyu:genelleme} düzeylerini değiştirerek haritadan çıkarım yapabilmekte ve kendi tematik haritalarını bağımsız biçimde üretebilmektedir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Karşılaştırma Ölçütü",
+          "Bilgisayar (Masaüstü) Tabanlı CBS",
+          "Web Tabanlı CBS Uygulamaları"
+        ],
+        "satirlar": [
+          [
+            "Erişim ve Cihaz Bağımlılığı",
+            "Yazılımın kurulu olduğu bilgisayarla sınırlıdır",
+            "Genel ağ olan her yerden telefon, tablet ve tarayıcıyla erişilir"
+          ],
+          [
+            "Veri Depolama ve İşleme",
+            "Yerel bilgisayar donanımında gerçekleştirilir",
+            "Bulut bilişim altyapısındaki sunucularda gerçekleştirilir"
+          ],
+          [
+            "Hedef Kitle ve Teknik Bilgi",
+            "İleri düzey CBS eğitimi almış uzmanlar",
+            "Geniş kitleler, öğrenciler, gezginler ve karar vericiler"
+          ],
+          [
+            "Analiz Kapasitesi",
+            "Çok güçlü, karmaşık ve ileri düzey mekânsal analizler",
+            "Daha temel ve hızlı sorgulama, görüntüleme ve haritalama"
+          ],
+          [
+            "Maliyet ve Güncelleme",
+            "Yüksek donanım ve lisans maliyeti; manuel güncelleme",
+            "Ücretsiz veya düşük maliyetli; anlık merkezi güncelleme"
+          ]
+        ]
+      }
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "soru": "Aşağıdaki kavram veya yerleri ilgili oldukları coğrafi açıklama ile eşleştiriniz.",
-   "ciftler": [
-    [
-     "Sünger Şehir",
-     "Yağmur suyunu geçirgen yüzeylerle kaynağında emip depolayan yeşil altyapı modeli"
-    ],
-    [
-     "Öz nitelik tablosu",
-     "Vektör katmanlardaki mekânsal unsurlara ait sözel ve sayısal detayların tutulduğu tablo"
-    ],
-    [
-     "Bulut bilişim",
-     "Veri ve yazılımların sanal sunucularda depolanıp tarayıcı üzerinden işlenmesi teknolojisi"
-    ],
-    [
-     "Müsilaj",
-     "Alg ve planktonların aşırı çoğalmasıyla deniz yüzeyini kaplayan, oksijeni azaltan tabaka"
-    ],
-    [
-     "Dharavi (Mumbai)",
-     "Hızlı kentleşme ve göç sonucu Hindistan'da oluşan Asya'nın en büyük gecekondu bölgelerinden biri"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
-   "cumleler": [
+  ],
+  "ornekler": [
     {
-     "metin": "Sünger şehir modelinde kapalı kanalizasyon borularına dayalı geleneksel ___ altyapı yerine doğayı taklit eden yeşil altyapı tercih edilir.",
-     "cevap": "gri"
+      "soru": "Kentsel su yönetiminde geleneksel 'gri altyapı' ile 'sünger şehir (yeşil altyapı)' yaklaşımı arasındaki temel farkı ve sünger şehir modelinin kuraklık ile sel sorunlarına nasıl aynı anda çözüm ürettiğini açıklayınız.",
+      "cevap": "Geleneksel gri altyapı yağmur suyunu bir atık gibi görerek geçirimsiz beton yüzeylerden kapalı kanalizasyon ağlarıyla hızla şehir dışına tahliye etmeyi amaçlar. Sünger şehir (yeşil altyapı) yaklaşımı ise geçirgen zeminler, yeşil alanlar ve doğal drenaj sistemleriyle yağmur suyunu düştüğü yerde bir sünger gibi emer ve depolar. Böylece yüzey akışı azaldığı için sel ve taşkınlar önlenir; depolanıp bitkilerle filtrelenen yağmur suyu ise kurak dönemlerde yeniden kullanılarak su kıtlığına çözüm sağlar."
     },
     {
-     "metin": "Gaziantep'teki tarım, orman ve mera alanlarının sınırlarını kısa sürede belirlemek için ___ görüntüleri ve yer doğrulama verileri kullanılmıştır.",
-     "cevap": "uydu"
+      "soru": "Hindistan'ın Mumbai metropolünde görülen başlıca mekânsal sorunları, bu sorunların doğal-beşerî nedenlerini ve çözümünde CBS ile coğrafyanın nasıl kullanıldığını açıklayınız.",
+      "cevap": "Mumbai'de hızlı göç ve yetersiz konut nedeniyle Dharavi gibi dev gecekondu bölgeleri, Deonar çöplük alanında atık-sağlık sorunları ve muson yağmurları ile alçak rakım nedeniyle sık sık sel felaketleri yaşanmaktadır. Coğrafya bilimi ve CBS yardımıyla taşkın risk haritaları üretilerek riskli alanlarda yapılaşma sınırlandırılmakta, drenaj altyapısı yenilenmekte, uydu destekli izleme yapılmakta ve kıyıdaki mangrov ormanları korunarak sel ve erozyon riski azaltılmaktadır."
     },
     {
-     "metin": "Web tabanlı CBS uygulamalarının temel bileşenlerini kullanıcı (istemci), genel ağ ve ___ oluşturur.",
-     "cevap": "sunucu"
+      "soru": "Denizlerimizde görülen müsilaj (deniz salyası) sorununun oluşumunda etkili olan doğal ve beşerî faktörler nelerdir? Coğrafya bilimi bu sorunun çözümüne nasıl katkı sağlar?",
+      "cevap": "Müsilaj oluşumunda su sıcaklığının yaz aylarında ani yükselmesi ve deniz akıntılarının durağanlığı doğal faktörler; arıtılmamış evsel, tarımsal ve sanayi atıklarının denize bırakılması ise beşerî faktörlerdir. Coğrafya bilimi, uydu görüntüleri ve CBS kullanarak müsilajın yoğunlaştığı ve yayıldığı alanları haritalar, öncelikli müdahale bölgelerini belirler ve yeni atık su arıtma tesislerinin en uygun konumlara kurulması için yer seçimi analizi yapar."
     },
     {
-     "metin": "Web tabanlı CBS'de ulaşım ağları, idari sınırlar ve akarsular gibi her bir mekânsal veri kümesi ayrı bir ___ olarak temsil edilir.",
-     "cevap": "katman"
+      "soru": "Gaziantep İlindeki Tarımsal Alanların Belirlenmesi Projesi'nde geleneksel çiftçi beyanı ve arazi çalışması yerine neden uzaktan algılama (uydu görüntüleri) ve CBS tercih edilmiştir?",
+      "cevap": "Çiftçi beyanına dayalı rekolte ve arazi tespitleri hata payı taşırken, tüm ili kapsayan doğrudan saha çalışmaları çok yüksek zaman, iş gücü ve maliyet gerektirir. İki farklı döneme ait uydu görüntülerinin yer doğrulama verileriyle birlikte CBS ortamında sınıflandırılması sayesinde Gaziantep'teki tarım (%47), orman-mera (%24) ve tarım dışı (%29) alanların dağılımı kısa sürede, ekonomik ve doğru biçimde haritalanmıştır."
     },
     {
-     "metin": "Mozaik ustalarının Çingene Kızı mozaiğini oluştururken kullandıkları küçük renkli taş parçalarına ___ adı verilir.",
-     "cevap": "tessera"
+      "soru": "Web tabanlı CBS uygulamalarının üç temel bileşenini yazarak bir kullanıcının harita üzerinde yaptığı sorgunun nasıl sonuçlandığını adım adım açıklayınız.",
+      "cevap": "Web tabanlı CBS'nin üç temel bileşeni kullanıcı (istemci), genel ağ ve sunucudur. Kullanıcı, bilgisayar veya akıllı telefonundaki web tarayıcısı üzerinden bir komut (sorgu) gönderir; bu komut genel ağ aracılığıyla bulut sunucusuna ulaşır. Verileri depolayan ve işleyen sunucu, komutu çözümleyerek cevabı harita, tablo veya grafik formatında yine genel ağ üzerinden kullanıcının ekranına gönderir."
+    },
+    {
+      "soru": "Web tabanlı CBS'de 'katman' ve 'öz nitelik tablosu' kavramları ne anlama gelir? Vektör ve raster veri formatlarını birer örnekle ayırt ediniz.",
+      "cevap": "Katman, aynı konuya ait mekânsal verilerin (örneğin akarsular, kara yolları veya hastaneler) harita üzerinde üst üste çakıştırılabilen her bir veri kümesidir. Nokta, çizgi ve poligonlarla gösterilen verilere vektör veri (örneğin il sınırları veya okul konumları), piksellerden oluşan görüntülere ise raster veri (örneğin uydu görüntüleri) denir. Vektör katmanlardaki unsurlara ait isim, nüfus, kapasite gibi sözel ve sayısal bilgilerin tutulduğu veri tablosuna ise öz nitelik tablosu adı verilir."
     }
-   ],
-   "fazla": [
-    "obruk",
-    "mültezim"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Yaşadığınız şehirde şiddetli yağışlar sonrasında cadde ve alt geçitlerde su baskınları yaşandığını, yaz aylarında ise baraj doluluk oranlarının düştüğünü varsayınız. Bir coğrafyacı olarak bu ikili mekânsal sorunu çözmek için 'Sünger Şehir' yaklaşımından ve 'Web Tabanlı CBS' uygulamalarından nasıl yararlanacağınızı açıklayınız.",
-   "ipuclari": [
-    "Önce Web Tabanlı CBS katmanlarını (topografya, eğim, mevcut drenaj ve su basan noktalar) kullanarak sorunun konum ve dağılışını belirleyiniz.",
-    "Ardından geçirimsiz asfalt/beton yüzeylerin yüzey akışını nasıl artırdığını açıklayınız.",
-    "Son olarak Sünger Şehir modelinin bileşenlerini (geçirgen yüzey, yağmur suyu hasadı, yeşil drenaj) bu riskli alanlara nasıl uygulayacağınızı belirtiniz."
-   ],
-   "cevap": "İlk aşamada Web Tabanlı CBS üzerinde kentin eğim, yükselti, mevcut yağmur suyu hatları ve geçmişte su baskını yaşanan noktaları ayrı katmanlar hâlinde üst üste çakıştırarak taşkın duyarlılık haritasını oluştururum; ayrıca vatandaşların mobil cihazlardan anlık su baskını veri girişi yapmasını sağlarım. İkinci aşamada, belirlenen bu riskli alt havzalarda geleneksel gri altyapı yerine Sünger Şehir uygulamalarını devreye sokarım: Asfalt ve beton otopark/kaldırımları geçirgen zemin malzemeleriyle değiştirir, yol kenarlarına çöküntü yağmur bahçeleri ve yeşil çatı sistemleri kurarım. Böylece yağmur suyu yüzey akışına geçip alt geçitleri basmak yerine kaynağında toprağa sızar ve sarnıçlarda hasat edilir; bitkilerle doğal olarak filtrelenen bu su yaz kuraklığında park-bahçe sulamasında yeniden kullanılarak barajlar üzerindeki su baskısı azaltılır."
-  }
- ]
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki mekânsal sorun ve bu sorunu doğrudan inceleyen coğrafya alt dalı eşleştirmelerinden hangisi yanlıştır?",
+      "secenekler": [
+        "Kırsaldan büyükşehirlere genç nüfus göçü nedeniyle kırsalda yaşlı nüfus oranının artması — Jeomorfoloji",
+        "Akdeniz iklim bölgesinde yaz yangınlarının bitki ve hayvan türlerini tehdit etmesi — Biyocoğrafya",
+        "Doğu Anadolu'daki akarsu debilerinin düşmesinin sulama ve enerji üretimini etkilemesi — Hidrografya",
+        "Harran Ovası'nda bilinçsiz sulama sonucu oluşan tuzlanma ve verim kaybı — Toprak Coğrafyası",
+        "Zonguldak'ta kömür madenciliğinin gerilemesine bağlı olarak işsizliğin artması — Ekonomik Coğrafya"
+      ],
+      "dogru": 0,
+      "aciklama": "Göç ve nüfusun yaş yapısındaki değişimler Jeomorfoloji (yer şekilleri bilimi) değil, Nüfus Coğrafyası tarafından incelenir. Jeomorfoloji, Artvin'de dağlık ve engebeli arazi yapısının ulaşımı zorlaştırması gibi yer şekli konularını inceler."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Şehirlerde yağmur suyunu kapalı kanalizasyon ağlarıyla hızla uzaklaştırmayı hedefleyen geleneksel 'gri altyapı' yerine, suyu düştüğü yerde geçirgen yüzeyler ve yeşil alanlarla emip depolayan, bitkilerle filtreleyerek yeniden kullanan kentsel su yönetimi modeli aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Sıcaklık Terselmesi Modeli",
+        "Sünger Şehir Modeli",
+        "Büyük Ova Koruma Modeli",
+        "Vahşi Depolama Modeli",
+        "Merkezî İş Alanı Modeli"
+      ],
+      "dogru": 1,
+      "aciklama": "Çin'de sel felaketleriyle mücadele için geliştirilen ve BM Sürdürülebilir Şehirler hedefiyle uyumlu olan Sünger Şehirler yaklaşımı, doğayı taklit eden yeşil altyapıyla yağmur suyunu kaynağında tutup yeniden değerlendirir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Web tabanlı Coğrafi Bilgi Sistemleri (Web CBS) ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+      "secenekler": [
+        "Temel bileşenlerini kullanıcı (istemci), genel ağ ve sunucu oluşturur.",
+        "Veri depolama, işleme ve çözümleme işlemlerinin büyük bölümü sunucu tarafından gerçekleştirilir.",
+        "Münhasıran yüksek işlemci gücüne sahip masaüstü bilgisayarlarda ve ücretli lisansla çalışır.",
+        "Vektör veri formatındaki katmanlara ait detaylar öz nitelik tablosu içerisinde yer alır.",
+        "Bulut bilişim ve genel ağ teknolojileri sayesinde mobil cihazlardan anlık erişime olanak tanır."
+      ],
+      "dogru": 2,
+      "aciklama": "Yüksek donanım, masaüstü bilgisayar bağımlılığı ve yüksek lisans ücreti bilgisayar tabanlı CBS'nin özelliğidir. Web tabanlı CBS ise bulut bilişim sayesinde akıllı telefon ve tabletlerden ücretsiz veya düşük maliyetle kullanılabilir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Deniz yüzeyinde oluşan yoğun, yapışkan ve peltemsi tabaka olan müsilaj (deniz salyası) ile ilgili;\nI. Su sıcaklığının ani artışı, durağan akıntı ve aşırı evsel-sanayi atıkları fitoplankton çoğalmasını tetikler.\nII. Sucul ortamda fotosentezi hızlandırarak sudaki çözünmüş oksijen miktarını en üst seviyeye çıkarır.\nIII. Uydu görüntüleri ve CBS kullanılarak yoğunlaştığı alanlar haritalanabilir ve arıtma tesisleri için yer seçimi yapılabilir.\nyargılarından hangileri doğrudur?",
+      "secenekler": [
+        "Yalnız I",
+        "Yalnız II",
+        "II ve III",
+        "I ve III",
+        "I, II ve III"
+      ],
+      "dogru": 3,
+      "aciklama": "Müsilaj su yüzeyini kaplayarak fotosentezi kısmen veya tamamen durdurur ve sudaki çözünmüş oksijen oranını düşürerek toplu balık ölümlerine yol açar (II yanlış, I ve III doğru)."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Kuraklık münhasıran kırsal alanlardaki tarım ve hayvancılığı etkiler; kentlerdeki su yönetimi ve göç süreçleri üzerinde bir etkisi yoktur.",
+          "dogru": false,
+          "aciklama": "Kuraklık kırsal geçim kaynaklarını zayıflatarak kente göçü hızlandırır ve kentlerdeki su kaynakları ile gıda arz güvenliği üzerinde doğrudan baskı oluşturur."
+        },
+        {
+          "metin": "Mumbai metropolünde muson yağmurlarının yol açtığı sel ve erozyon riskini azaltmak için kıyıdaki mangrov ormanlarının korunması doğa temelli bir önlemdir.",
+          "dogru": true,
+          "aciklama": "Mumbai'de CBS destekli taşkın haritalarının yanı sıra mangrov ormanlarının korunmasıyla sel ve kıyı erozyonu riski azaltılmaktadır."
+        },
+        {
+          "metin": "Hayvancılık faaliyetlerinin yoğun olduğu bölgelerde kurulan biyogaz tesisleri, atık kaynaklı çevre kirliliğini azaltırken yenilenebilir enerji üretimi sağlar.",
+          "dogru": true,
+          "aciklama": "Biyogaz tesisleri organik hayvancılık atıklarını değerlendirerek hem çevre kirliliğini önler hem de enerji üretir."
+        },
+        {
+          "metin": "Web tabanlı CBS uygulamalarında her bir mekânsal veri kümesi katman olarak temsil edilir ve bu katmanlar raster veya vektör formatında olabilir.",
+          "dogru": true,
+          "aciklama": "Web CBS'de mekânsal veriler raster (piksel) veya vektör (nokta, çizgi, poligon) katmanlar hâlinde sunulur."
+        },
+        {
+          "metin": "Web tabanlı CBS uygulamaları, karmaşık ve ileri düzey mühendislik analizlerinde bilgisayar tabanlı CBS'den çok daha güçlüdür.",
+          "dogru": false,
+          "aciklama": "Web tabanlı CBS erişim kolaylığı sağlar ancak bilgisayar tabanlı CBS'deki güçlü ve karmaşık analizlere göre daha sınırlı ve temel analiz imkânları sunar."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavram veya yerleri ilgili oldukları coğrafi açıklama ile eşleştiriniz.",
+      "ciftler": [
+        [
+          "Sünger Şehir",
+          "Yağmur suyunu geçirgen yüzeylerle kaynağında emip depolayan yeşil altyapı modeli"
+        ],
+        [
+          "Öz nitelik tablosu",
+          "Vektör katmanlardaki mekânsal unsurlara ait sözel ve sayısal detayların tutulduğu tablo"
+        ],
+        [
+          "Bulut bilişim",
+          "Veri ve yazılımların sanal sunucularda depolanıp tarayıcı üzerinden işlenmesi teknolojisi"
+        ],
+        [
+          "Müsilaj",
+          "Alg ve planktonların aşırı çoğalmasıyla deniz yüzeyini kaplayan, oksijeni azaltan tabaka"
+        ],
+        [
+          "Dharavi (Mumbai)",
+          "Hızlı kentleşme ve göç sonucu Hindistan'da oluşan Asya'nın en büyük gecekondu bölgelerinden biri"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Sünger şehir modelinde kapalı kanalizasyon borularına dayalı geleneksel ___ altyapı yerine doğayı taklit eden yeşil altyapı tercih edilir.",
+          "cevap": "gri"
+        },
+        {
+          "metin": "Gaziantep'teki tarım, orman ve mera alanlarının sınırlarını kısa sürede belirlemek için ___ görüntüleri ve yer doğrulama verileri kullanılmıştır.",
+          "cevap": "uydu"
+        },
+        {
+          "metin": "Web tabanlı CBS uygulamalarının temel bileşenlerini kullanıcı (istemci), genel ağ ve ___ oluşturur.",
+          "cevap": "sunucu"
+        },
+        {
+          "metin": "Web tabanlı CBS'de ulaşım ağları, idari sınırlar ve akarsular gibi her bir mekânsal veri kümesi ayrı bir ___ olarak temsil edilir.",
+          "cevap": "katman"
+        },
+        {
+          "metin": "Mozaik ustalarının Çingene Kızı mozaiğini oluştururken kullandıkları küçük renkli taş parçalarına ___ adı verilir.",
+          "cevap": "tessera"
+        }
+      ],
+      "fazla": [
+        "obruk",
+        "mültezim"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Yaşadığınız şehirde şiddetli yağışlar sonrasında cadde ve alt geçitlerde su baskınları yaşandığını, yaz aylarında ise baraj doluluk oranlarının düştüğünü varsayınız. Bir coğrafyacı olarak bu ikili mekânsal sorunu çözmek için 'Sünger Şehir' yaklaşımından ve 'Web Tabanlı CBS' uygulamalarından nasıl yararlanacağınızı açıklayınız.",
+      "cevap": "İlk aşamada Web Tabanlı CBS üzerinde kentin eğim, yükselti, mevcut yağmur suyu hatları ve geçmişte su baskını yaşanan noktaları ayrı katmanlar hâlinde üst üste çakıştırarak taşkın duyarlılık haritasını oluştururum; ayrıca vatandaşların mobil cihazlardan anlık su baskını veri girişi yapmasını sağlarım. İkinci aşamada, belirlenen bu riskli alt havzalarda geleneksel gri altyapı yerine Sünger Şehir uygulamalarını devreye sokarım: Asfalt ve beton otopark/kaldırımları geçirgen zemin malzemeleriyle değiştirir, yol kenarlarına çöküntü yağmur bahçeleri ve yeşil çatı sistemleri kurarım. Böylece yağmur suyu yüzey akışına geçip alt geçitleri basmak yerine kaynağında toprağa sızar ve sarnıçlarda hasat edilir; bitkilerle doğal olarak filtrelenen bu su yaz kuraklığında park-bahçe sulamasında yeniden kullanılarak barajlar üzerindeki su baskısı azaltılır.",
+      "ipuclari": [
+        "Önce Web Tabanlı CBS katmanlarını (topografya, eğim, mevcut drenaj ve su basan noktalar) kullanarak sorunun konum ve dağılışını belirleyiniz.",
+        "Ardından geçirimsiz asfalt/beton yüzeylerin yüzey akışını nasıl artırdığını açıklayınız.",
+        "Son olarak Sünger Şehir modelinin bileşenlerini (geçirgen yüzey, yağmur suyu hasadı, yeşil drenaj) bu riskli alanlara nasıl uygulayacağınızı belirtiniz."
+      ]
+    }
+  ]
 }

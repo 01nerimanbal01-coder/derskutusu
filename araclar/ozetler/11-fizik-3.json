@@ -1,300 +1,317 @@
 {
- "ad": "11-fizik-3",
- "sinif": 11,
- "ders": "fizik",
- "ders_adi": "Fizik",
- "hafta": 3,
- "tarih": "28 Eylül - 2 Ekim 2026",
- "yayin_tarihi": "2026-10-17",
- "unite": "KUVVET VE HAREKET",
- "konu": "Serbest Düşme ve İki Boyutta Sabit İvmeli Hareket (Yatay ve Eğik Atış)",
- "ciktilar": [
-  "FİZ.11.1.2. Serbest düşme hareketi ile ilgili kanıt kullanabilme",
-  "FİZ.11.1.3. İki boyutta sabit ivmeli hareket ile ilgili tümevarımsal akıl yürütebilme"
- ],
- "giris": "Dalından kopan bir elmanın düşey doğrultuda yere düşmesi ile bir basketbolcunun potaya gönderdiği topun havada çizdiği parabolik yörünge aynı temel fizik yasasıyla, yani {koyu:yer çekimi ivmesiyle (g)} yönetilir. Bu dersimizde hava direncinin ihmal edildiği ortamda bir boyutta {koyu:serbest düşme} hareketinin kanıtlarını inceleyecek; ardından Galilei'nin {koyu:hareketlerin bağımsızlığı ilkesinden} yararlanarak iki boyutta sabit ivmeli hareket olan {koyu:yatay atış ve eğik atış} hareketlerini çözümleyeceğiz.",
- "ozet": [
-  "Hava direncinin ihmal edildiği ortamda belirli bir yükseklikten ilk hızsız (v₀ = 0) bırakılan cisimlerin yalnız yer çekimi kuvveti etkisinde yaptığı sabit ivmeli harekete serbest düşme denir.",
-  "Serbest düşme ivmesi (g ≈ 9,8 m/s², işlemlerde 10 m/s²) cismin kütlesinden bağımsızdır; vakum ortamında tüy ile demir bilye aynı anda yere düşer.",
-  "Serbest düşmede t sürede kazanılan hız v = g · t, düşülen yükseklik h = {kesir:1|2} · g · {us:t|2} ve zamansız hız bağıntısı {us:v|2} = 2 · g · h ile hesaplanır (ardışık saniyelerde 5 m, 15 m, 25 m, 35 m... yol alınır).",
-  "İki boyutta sabit ivmeli harekette (yatay ve eğik atış) hareket iki bağımsız bileşene ayrılır: Yatayda net kuvvet sıfır olduğu için sabit hızlı hareket (x = v₀x · t), düşeyde ise g ivmesiyle sabit ivmeli hareket yapılır.",
-  "Yatay atışta uçuş süresi yalnızca bırakıldığı yüksekliğe (h = {kesir:1|2} · g · {us:t|2}) ve g'ye bağlıdır; yatay ilk hız (v₀) uçuş süresini değiştirmez, yalnızca yatay menzili (x = v₀ · t) artırır.",
-  "Eğik atışta tepe noktasında düşey hız sıfırlanır (v_y = 0) ancak yatay hız (v₀x) korunduğu için cismin hızı sıfır olmaz; aynı ilk hızla atılan cisimlerde 45° açıda menzil maksimum, birbirini 90°'ye tamamlayan açılarda ise menziller eşittir."
- ],
- "bolumler": [
-  {
-   "baslik": "1. Serbest Düşme Hareketi ve Deneysel Kanıtları",
-   "metin": [
-    "Hava direncinin (sürtünmesinin) ihmal edildiği bir ortamda, yerden belirli bir h yüksekliğinden {koyu:ilk hızsız (v₀ = 0)} bırakılan bir cismin yalnız {koyu:yer çekimi kuvveti (G = m · g)} etkisinde yerin merkezine doğru yaptığı düzgün hızlanan doğrusal harekete {koyu:serbest düşme hareketi} denir.",
-    "Newton'un İkinci Hareket Yasası'na göre serbest düşen cisme etki eden net kuvvet cismin ağırlığıdır: {koyu:F_net = m · a ⇒ m · g = m · a ⇒ a = g}. Görüldüğü gibi kütle (m) denklemin her iki tarafından sadeleşir! Bu durum, Galileo Galilei'nin Pisa Kulesi ve vakum tüpü deneyleriyle kanıtladığı en temel fizik gerçeğini ortaya koyar: {koyu:Hava sürtünmesiz ortamda aynı yükseklikten serbest bırakılan bir kuş tüyü ile bir kurşun gülle, kütleleri ne olursa olsun aynı g ivmesiyle hızlanır ve aynı anda yere çarpar.}",
-    "İşlemlerde yer çekimi ivmesi genellikle {koyu:g = 10 {kesir:m|{us:s|2}}} alınır. Bu durumda serbest düşmeye bırakılan bir cismin hızı her saniye 10 m/s artar (10, 20, 30, 40 m/s...) ve ardışık her bir saniye içinde aldığı yollar Galileo'nun tek sayılar kuralına ({koyu:h, 3h, 5h, 7h...}) uygun olarak {koyu:5 m, 15 m, 25 m, 35 m, 45 m...} şeklinde büyür."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Fiziksel Bağıntı",
-     "Denklemi",
-     "g = 10 m/s² İçin Pratik Hâli"
-    ],
-    "satirlar": [
-     [
-      "Herhangi bir t anındaki hız",
-      "v = g · t",
-      "v = 10 · t"
-     ],
-     [
-      "t sürede düşülen toplam yükseklik",
-      "h = {kesir:1|2} · g · {us:t|2}",
-      "h = 5 · {us:t|2}"
-     ],
-     [
-      "Zamansız hız denklemi",
-      "{us:v|2} = 2 · g · h",
-      "{us:v|2} = 20 · h"
-     ]
-    ]
-   },
-   "kutu": {
-    "tur": "bilgi",
-    "baslik": "Apollo 15 Ay Deneyi Kanıtı (1971)",
-    "metin": "Astronot David Scott, atmosferi olmayan Ay yüzeyinde bir elindeki çekiç ile diğer elindeki şahin tüyünü aynı anda serbest bırakmış ve her ikisinin de Ay yüzeyine tam aynı anda düştüğünü tüm dünyaya canlı yayında kanıtlamıştır."
-   },
-   "gorsel": "<svg viewBox=\"0 0 680 260\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\"><rect width=\"680\" height=\"260\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"10\" width=\"648\" height=\"28\" rx=\"7\" fill=\"#1d4ed8\"/><text x=\"340\" y=\"29\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#ffffff\">SERBEST DÜŞME HAREKETİ (g = 10 m/s² İKEN HIZ VE YOL TABLOSU)</text><rect x=\"24\" y=\"48\" width=\"300\" height=\"196\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><text x=\"174\" y=\"68\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#1e40af\" font-weight=\"700\">Düşey Konum ve Hız (h = 5t²)</text><line x1=\"64\" y1=\"88\" x2=\"64\" y2=\"230\" stroke=\"#2563eb\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"64\" cy=\"88\" r=\"5\" fill=\"#dc2626\" stroke=\"#991b1b\" stroke-width=\"1.5\"/><text x=\"82\" y=\"92\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">t = 0 s  →  v = 0 m/s  |  h = 0 m</text><circle cx=\"64\" cy=\"122\" r=\"5\" fill=\"#dc2626\" stroke=\"#991b1b\" stroke-width=\"1.5\"/><text x=\"82\" y=\"126\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">t = 1 s  →  v = 10 m/s  |  Δh₁ = 5 m (h = 5 m)</text><circle cx=\"64\" cy=\"158\" r=\"5\" fill=\"#dc2626\" stroke=\"#991b1b\" stroke-width=\"1.5\"/><text x=\"82\" y=\"162\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">t = 2 s  →  v = 20 m/s  |  Δh₂ = 15 m (h = 20 m)</text><circle cx=\"64\" cy=\"196\" r=\"5\" fill=\"#dc2626\" stroke=\"#991b1b\" stroke-width=\"1.5\"/><text x=\"82\" y=\"200\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">t = 3 s  →  v = 30 m/s  |  Δh₃ = 25 m (h = 45 m)</text><circle cx=\"64\" cy=\"230\" r=\"5\" fill=\"#dc2626\" stroke=\"#991b1b\" stroke-width=\"1.5\"/><text x=\"82\" y=\"234\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">t = 4 s  →  v = 40 m/s  |  Δh₄ = 35 m (h = 80 m)</text><rect x=\"344\" y=\"48\" width=\"312\" height=\"196\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"1.8\"/><text x=\"500\" y=\"68\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#047857\" font-weight=\"700\">Serbest Düşme Denklemleri (v₀ = 0)</text><rect x=\"360\" y=\"82\" width=\"280\" height=\"32\" rx=\"6\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"1.4\"/><text x=\"372\" y=\"102\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">1. Hız Denklemi:</text><text x=\"628\" y=\"102\" text-anchor=\"end\" font-size=\"9.8\" fill=\"#059669\" font-weight=\"700\">v = g · t</text><rect x=\"360\" y=\"120\" width=\"280\" height=\"32\" rx=\"6\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.4\"/><text x=\"372\" y=\"140\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">2. Alınan Yol (Yükseklik):</text><text x=\"628\" y=\"140\" text-anchor=\"end\" font-size=\"9.8\" fill=\"#0284c7\" font-weight=\"700\">h = (1/2) · g · t²</text><rect x=\"360\" y=\"158\" width=\"280\" height=\"32\" rx=\"6\" fill=\"#f3e8ff\" stroke=\"#7c3aed\" stroke-width=\"1.4\"/><text x=\"372\" y=\"178\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">3. Zamansız Hız Denklemi:</text><text x=\"628\" y=\"178\" text-anchor=\"end\" font-size=\"9.8\" fill=\"#7c3aed\" font-weight=\"700\">v² = 2 · g · h</text><rect x=\"360\" y=\"196\" width=\"280\" height=\"32\" rx=\"6\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.4\"/><text x=\"372\" y=\"216\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">4. Ardışık Saniye Yolları:</text><text x=\"628\" y=\"216\" text-anchor=\"end\" font-size=\"9.8\" fill=\"#d97706\" font-weight=\"700\">h, 3h, 5h, 7h... (5m, 15m, 25m...)</text></svg>"
-  },
-  {
-   "baslik": "2. İki Boyutta Sabit İvmeli Hareket: Hareketlerin Bağımsızlığı İlkesi",
-   "metin": [
-    "Yatay veya eğik olarak havaya fırlatılan bir cisim hem yatay eksende (x) yol alır hem de düşey eksende (y) yükselip alçalır. Galileo'nun ortaya koyduğu {koyu:Hareketlerin Bağımsızlığı İlkesine} göre iki boyutta gerçekleşen bu hareket, birbirini hiç etkilemeyen iki ayrı tek boyutlu hareketin bileşimi olarak incelenir:",
-    "• {koyu:1. Yatay Doğrultudaki Hareket (x Ekseni):} Hava direnci ihmal edildiğinde cisme yatay doğrultuda hiçbir kuvvet etki etmez ({koyu:F_x = 0}). Dolayısıyla yatay ivme sıfırdır ({koyu:a_x = 0}) ve cismin yatay hız bileşeni hareket boyunca {koyu:hiç değişmez (v_x = v₀x = sabit)}. Cisim yatayda {koyu:sabit hızlı (düzgün doğrusal) hareket} yapar ve yatayda aldığı yol (menzil) {koyu:x = v₀x · t} bağıntısıyla bulunur.",
-    "• {koyu:2. Düşey Doğrultudaki Hareket (y Ekseni):} Düşeyde cisme daima yerin merkezine (-y yönüne) doğru sabit {koyu:yer çekimi kuvveti (G = m · g)} etki eder. Bu nedenle cisim düşey eksende {koyu:g ivmesiyle sabit ivmeli hareket} (serbest düşme veya düşey atış) yapar.",
-    "• {koyu:Ortak Köprü (Zaman — t):} Yatay hareket ile düşey hareketi birbirine bağlayan tek ortak skaler büyüklük {koyu:geçen süredir (t_yatay = t_düşey = t_uçuş)}."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "İvme Vektörü Hareket Boyunca Sabittir!",
-    "metin": "Serbest düşme, yatay atış ve eğik atış hareketlerinin tamamında cisim havada olduğu sürece (tepe noktası dâhil!) ivmesi daima yerin merkezine doğru ve {koyu:a = g = 10 {kesir:m|{us:s|2}}} büyüklüğündedir."
-   },
-   "gorsel": "<svg viewBox=\"0 0 680 260\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\"><rect width=\"680\" height=\"260\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"10\" width=\"648\" height=\"28\" rx=\"7\" fill=\"#0f766e\"/><text x=\"340\" y=\"29\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#ffffff\">İKİ BOYUTTA HAREKETİN TEMEL İLKESİ: BAĞIMSIZLIK İLKESİ</text><rect x=\"26\" y=\"48\" width=\"304\" height=\"156\" rx=\"10\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/><rect x=\"26\" y=\"48\" width=\"304\" height=\"32\" rx=\"10\" fill=\"#0284c7\" stroke=\"#0284c7\" stroke-width=\"1\"/><text x=\"178\" y=\"69\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#ffffff\" font-weight=\"700\">1. YATAY BİLEŞEN (x Ekseni)</text><text x=\"38\" y=\"100\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\">• Yatay doğrultuda net kuvvet sıfırdır (F_x = 0).</text><text x=\"38\" y=\"120\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\">• Yatay ivme sıfırdır (a_x = 0).</text><text x=\"38\" y=\"140\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">• Yatay hız hareket boyunca SABİTTİR (v_x = v₀x).</text><text x=\"38\" y=\"160\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\">• Yatayda Düzgün Doğrusal Hareket yapılır:</text><text x=\"38\" y=\"180\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">  x = v₀x · t   ve   x_menzil = v₀x · t_uçuş</text><rect x=\"350\" y=\"48\" width=\"304\" height=\"156\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"350\" y=\"48\" width=\"304\" height=\"32\" rx=\"10\" fill=\"#d97706\" stroke=\"#d97706\" stroke-width=\"1\"/><text x=\"502\" y=\"69\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#ffffff\" font-weight=\"700\">2. DÜŞEY BİLEŞEN (y Ekseni)</text><text x=\"362\" y=\"100\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\">• Düşeyde yalnız yer çekimi kuvveti etki eder (G = m·g).</text><text x=\"362\" y=\"120\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">• Düşey ivme sabit ve aşağı yönlüdür (a_y = g).</text><text x=\"362\" y=\"140\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\">• Düşey hız her saniye g kadar değişir.</text><text x=\"362\" y=\"160\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\">• Düşeyde Sabit İvmeli Hareket yapılır:</text><text x=\"362\" y=\"180\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">  v_y = v₀y ∓ g·t   |   h = v₀y·t ∓ (1/2)g·t²</text><rect x=\"26\" y=\"214\" width=\"628\" height=\"32\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"1.5\"/><text x=\"340\" y=\"234\" text-anchor=\"middle\" font-size=\"9.8\" fill=\"#065f46\" font-weight=\"700\">Yatay ve düşey hareketleri birbirine bağlayan tek ortak fiziksel nicelik UÇUŞ SÜRESİDİR (t)!</text></svg>"
-  },
-  {
-   "baslik": "3. Yatay Atış Hareketi ve Matematiksel Modeli",
-   "metin": [
-    "Yerden belirli bir {koyu:h} yüksekliğinden yere paralel bir {koyu:v₀} ilk hızıyla fırlatılan cismin yaptığı iki boyutlu harekete {koyu:yatay atış hareketi} denir. Cisim fırlatıldığı anda düşey ilk hızı sıfırdır ({koyu:v₀y = 0}), yatay hızı ise {koyu:v_x = v₀} değerindedir.",
-    "• {koyu:Düşey Hareket (Serbest Düşme):} Cismin ilk düşey hızı sıfır olduğu için düşeydeki hareketi tamamen serbest düşmedir. Bu nedenle havada kalma (uçuş) süresi yalnızca bırakıldığı {koyu:h yüksekliğine} ve {koyu:g yer çekimi ivmesine} bağlıdır: {koyu:h = {kesir:1|2} · g · {us:t|2}}. Yatay {koyu:v₀} hızının artırılması uçuş süresini {koyu:kesinlikle değiştirmez}!",
-    "• {koyu:Yatay Menzil (x):} Cismin havada kaldığı t_uçuş süresi boyunca yatayda sabit v₀ hızıyla aldığı yoldur: {koyu:x = v₀ · t_uçuş}.",
-    "• {koyu:Herhangi Bir t Anındaki ve Yere Çarpma Anındaki Hız (v):} Cismin t anındaki yatay hızı {koyu:v_x = v₀}, düşey hızı ise {koyu:v_y = g · t} olduğundan bileşke hızı Pisagor bağıntısıyla {koyu:{us:v|2} = {us:v_x|2} + {us:v_y|2}} olarak hesaplanır."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "Klasik Deney: Aynı Anda Bırakılan ve Yatay Atılan İki Bilye",
-    "metin": "Aynı yükseklikten aynı anda K bilyesi serbest bırakılıp L bilyesi yatay olarak fırlatılırsa, her ikisinin de düşey ilk hızı sıfır olduğu için {koyu:yere tam aynı anda çarparlar} (t_K = t_L); ancak L bilyesinin yatay hızı olduğu için yere daha büyük bir süratle çarpar."
-   },
-   "gorsel": "<svg viewBox=\"0 0 680 255\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\"><rect width=\"680\" height=\"255\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"10\" width=\"648\" height=\"28\" rx=\"7\" fill=\"#6d28d9\"/><text x=\"340\" y=\"29\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#ffffff\">YATAY ATIŞ HAREKETİ ANALİZİ</text><rect x=\"26\" y=\"48\" width=\"310\" height=\"192\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#7c3aed\" stroke-width=\"1.8\"/><text x=\"181\" y=\"68\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#6d28d9\" font-weight=\"700\">Yatay Atış Yörüngesi</text><rect x=\"54\" y=\"90\" width=\"32\" height=\"118\" rx=\"2\" fill=\"#cbd5e1\" stroke=\"#64748b\" stroke-width=\"1.5\"/><circle cx=\"86\" cy=\"90\" r=\"6\" fill=\"#dc2626\" stroke=\"#991b1b\" stroke-width=\"1.5\"/><line x1=\"86\" y1=\"90\" x2=\"146\" y2=\"90\" stroke=\"#2563eb\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><text x=\"120\" y=\"82\" text-anchor=\"middle\" font-size=\"9\" fill=\"#1d4ed8\" font-weight=\"700\">v₀ (yatay)</text><path d=\"M 86 90 Q 190 95 270 208\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.5\" stroke-dasharray=\"5,4\"/><line x1=\"54\" y1=\"208\" x2=\"310\" y2=\"208\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"44\" y=\"152\" text-anchor=\"middle\" font-size=\"11\" fill=\"#dc2626\" font-weight=\"700\">h</text><text x=\"178\" y=\"224\" text-anchor=\"middle\" font-size=\"9.8\" fill=\"#1e40af\" font-weight=\"700\">x (Menzil) = v₀ · t</text><rect x=\"352\" y=\"48\" width=\"302\" height=\"192\" rx=\"10\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.8\"/><text x=\"503\" y=\"68\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#6d28d9\" font-weight=\"700\">Yatay Atış Özellikleri</text><text x=\"366\" y=\"92\" text-anchor=\"start\" font-size=\"9\" fill=\"#1e293b\">• İlk düşey hız sıfırdır (v₀y = 0).</text><text x=\"366\" y=\"112\" text-anchor=\"start\" font-size=\"9\" fill=\"#1e293b\">• Uçuş süresi yalnız h yüksekliğine ve g&#x27;ye bağlıdır:</text><text x=\"366\" y=\"132\" text-anchor=\"start\" font-size=\"9\" fill=\"#1e293b\" font-weight=\"700\">  h = (1/2) · g · t²   (v₀ hızı süreyi etkilemez!)</text><text x=\"366\" y=\"152\" text-anchor=\"start\" font-size=\"9\" fill=\"#1e293b\">• Aynı yükseklikten serbest bırakılan cisimle</text><text x=\"366\" y=\"172\" text-anchor=\"start\" font-size=\"9\" fill=\"#1e293b\" font-weight=\"700\">  yatay atılan cisim AYNI ANDA yere çarpar.</text><text x=\"366\" y=\"192\" text-anchor=\"start\" font-size=\"9\" fill=\"#1e293b\">• Yere çarpma hızı Pisagor bağıntısıyla bulunur:</text><text x=\"366\" y=\"212\" text-anchor=\"start\" font-size=\"9\" fill=\"#1e293b\" font-weight=\"700\">  v² = v_x² + v_y²   (v_x = v₀,  v_y = g · t)</text></svg>"
-  },
-  {
-   "baslik": "4. Eğik Atış Hareketi: Yükseklik, Uçuş Süresi ve Menzil",
-   "metin": [
-    "Yatay düzlemle {koyu:α} açısı yapacak şekilde {koyu:v₀} ilk hızıyla fırlatılan cismin yaptığı harekete {koyu:eğik atış hareketi} denir. Çözüme her zaman ilk hız vektörünü yatay ve düşey bileşenlerine ayırarak başlarız:",
-    "• {koyu:İlk Hız Bileşenleri:} Yatay ilk hız {koyu:v₀x = v₀ · cos α} (hareket boyunca sabit kalır); düşey ilk hız {koyu:v₀y = v₀ · sin α} (yukarı çıkarken her saniye g kadar azalır, inerken g kadar artar).",
-    "• {koyu:Çıkış ve Uçuş Süresi:} Cisim maksimum yüksekliğe (tepe noktasına) çıktığında düşey hızı sıfır olur ({koyu:v_y = 0}). Bu nedenle çıkış süresi {koyu:t_çıkış = {kesir:v₀y|g}} dir. Atıldığı yatay düzleme geri düşen cisim için çıkış süresi iniş süresine eşittir ve toplam uçuş süresi {koyu:t_uçuş = 2 · t_çıkış = {kesir:2 · v₀y|g}} olur.",
-    "• {koyu:Maksimum Yükseklik (h_max):} Cismin çıkabildiği en büyük düşey yükseklik {koyu:h_max = {kesir:1|2} · g · {us:t_çıkış|2} = {kesir:{us:v₀y|2}|2 · g}} bağıntısıyla bulunur.",
-    "• {koyu:Yatay Menzil (x_menzil):} Cismin uçuş süresi boyunca yatayda aldığı toplam yoldur: {koyu:x_menzil = v₀x · t_uçuş}."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Tepe Noktasında Hız Sıfır Değildir!",
-    "metin": "Eğik atışta yörüngenin en üst noktasında (T tepe noktasında) yalnızca {koyu:düşey hız sıfırdır (v_y = 0)}; cisim yatay hızını koruduğu için tepe noktasındaki hızı minimumdur ve {koyu:v_min = v₀x = v₀ · cos α} değerine eşittir."
-   },
-   "gorsel": "<svg viewBox=\"0 0 680 255\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\"><rect width=\"680\" height=\"255\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"10\" width=\"648\" height=\"28\" rx=\"7\" fill=\"#b45309\"/><text x=\"340\" y=\"29\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#ffffff\">EĞİK ATIŞ HAREKETİ VE ÖZEL AÇI KURALLARI</text><rect x=\"24\" y=\"48\" width=\"312\" height=\"192\" rx=\"10\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"1.8\"/><text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" fill=\"#b45309\" font-weight=\"700\">Eğik Atış Yörüngesi ve Tepe Noktası (T)</text><line x1=\"44\" y1=\"204\" x2=\"316\" y2=\"204\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M 56 204 Q 180 42 304 204\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.5\"/><circle cx=\"180\" cy=\"123\" r=\"5\" fill=\"#dc2626\" stroke=\"#991b1b\" stroke-width=\"1.5\"/><line x1=\"180\" y1=\"123\" x2=\"224\" y2=\"123\" stroke=\"#2563eb\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><text x=\"202\" y=\"114\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#1d4ed8\" font-weight=\"700\">v_T = v₀x (v_y = 0)</text><line x1=\"180\" y1=\"123\" x2=\"180\" y2=\"204\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"198\" y=\"168\" text-anchor=\"start\" font-size=\"9.5\" fill=\"#dc2626\" font-weight=\"700\">h_max</text><text x=\"180\" y=\"222\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#92400e\" font-weight=\"700\">x_menzil = v₀x · t_uçuş</text><rect x=\"352\" y=\"48\" width=\"304\" height=\"192\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.8\"/><text x=\"504\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" fill=\"#15803d\" font-weight=\"700\">Eğik Atış Formülleri ve Özel Durumlar</text><text x=\"366\" y=\"92\" text-anchor=\"start\" font-size=\"8.9\" fill=\"#1e293b\">• Hız Bileşenleri: v₀x = v₀·cosα  |  v₀y = v₀·sinα</text><text x=\"366\" y=\"112\" text-anchor=\"start\" font-size=\"8.9\" fill=\"#1e293b\">• Çıkış ve Uçuş Süresi: t_ç = v₀y / g  |  t_u = 2·t_ç</text><text x=\"366\" y=\"132\" text-anchor=\"start\" font-size=\"8.9\" fill=\"#1e293b\">• Maksimum Yükseklik: h_max = v₀y² / (2·g)</text><text x=\"366\" y=\"152\" text-anchor=\"start\" font-size=\"8.9\" fill=\"#1e293b\">• Tepe noktasında düşey hız sıfırdır (v_y = 0),</text><text x=\"366\" y=\"172\" text-anchor=\"start\" font-size=\"8.9\" fill=\"#1e293b\" font-weight=\"700\">  ancak cismin hızı sıfır DEĞİLDİR (v_min = v₀x)!</text><text x=\"366\" y=\"192\" text-anchor=\"start\" font-size=\"8.9\" fill=\"#1e293b\" font-weight=\"700\">• α = 45° iken yatay menzil MAKSİMUM olur.</text><text x=\"366\" y=\"212\" text-anchor=\"start\" font-size=\"8.9\" fill=\"#1e293b\" font-weight=\"700\">• α + β = 90° ve v₀ eşit ise menziller EŞİTTİR (x₁ = x₂).</text></svg>"
-  },
-  {
-   "baslik": "5. Eğik Atışta Özel Açı Durumları (45° ve Tümler Açılar)",
-   "metin": [
-    "Aynı büyüklükteki {koyu:v₀} ilk hızıyla farklı açılarla fırlatılan cisimlerin menzil ve maksimum yükseklikleri karşılaştırıldığında iki önemli matematiksel özellik ortaya çıkar:",
-    "1. {koyu:Maksimum Menzil Açısı (α = 45°):} Hava sürtünmesiz ortamda belirli bir v₀ hızıyla atılan cismin yatayda en uzağa gidebilmesi (maksimum menzil) için atış açısı {koyu:α = 45°} olmalıdır. Ayrıca α = 45° iken yatay menzil, maksimum yüksekliğin tam dört katıdır ({koyu:x_menzil = 4 · h_max}).",
-    "2. {koyu:Tümler Açılar Kuralı (α + β = 90°):} Aynı büyüklükteki {koyu:v₀} ilk hızıyla atılan iki cismin atış açılarının toplamı {koyu:90°} ise (örneğin {koyu:30° ve 60°} veya {koyu:20° ve 70°}), bu iki cismin {koyu:yatay menzilleri birbirine eşittir (x₁ = x₂)}. Ancak dikey açıyla (örneğin 60° ile) atılan cismin düşey ilk hızı daha büyük olduğu için {koyu:daha yükseğe çıkar (h₁ > h₂)} ve {koyu:havada daha uzun süre kalır (t₁ > t₂)}."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Hareket Türü",
-     "Yatay Hız (v_x)",
-     "Düşey Hız (v_y)",
-     "İvme (a)",
-     "Uçuş Süresini Belirleyen Unsur"
-    ],
-    "satirlar": [
-     [
-      "Serbest Düşme",
-      "0",
-      "0'dan başlayıp g·t artar",
-      "g (aşağı yönlü)",
-      "Yalnız h yüksekliği ve g"
-     ],
-     [
-      "Yatay Atış",
-      "v₀ (Sabit)",
-      "0'dan başlayıp g·t artar",
-      "g (aşağı yönlü)",
-      "Yalnız h yüksekliği ve g"
-     ],
-     [
-      "Eğik Atış",
-      "v₀·cos α (Sabit)",
-      "Önce azalır, T'de 0 olur, sonra artar",
-      "g (aşağı yönlü)",
-      "Düşey ilk hız bileşeni (v₀y) ve g"
-     ]
-    ]
-   },
-   "gorsel": ""
-  },
-  {
-   "baslik": "6. Gündelik Yaşam ve Spor Uygulamalarında İki Boyutlu Hareket",
-   "metin": [
-    "İki boyutta sabit ivmeli hareket ilkeleri; spor bilimlerinden havacılığa, savunma teknolojilerinden afet yardım operasyonlarına kadar pek çok alanda doğrudan kullanılır:",
-    "• {koyu:İnsani Yardım Uçakları (Yatay Atış):} Sabit irtifada yatay uçan bir yardım uçağından bırakılan yardım paketi, uçağın yatay hızına sahip olduğu için {koyu:yatay atış hareketi} yapar. Hava direnci ihmal edilirse paket yere düşene kadar hep uçağın tam düşey hizasında (altında) bulunur; hedefi tutturmak için paket hedefin tam üzerinden değil, {koyu:x = v_uçak · t_iniş} kadar gerisinden bırakılmalıdır.",
-    "• {koyu:Atletizm ve Top Sporları (Eğik Atış):} Uzun atlama, gülle ve cirit atma, futbol kalecisinin degaj vuruşu veya okçulukta sporcular menzili maksimize etmek için atış açısını 45° civarında tutmaya çalışırlar."
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "baslik": "Soru Çözümünde 3 Adımlı Strateji",
-    "metin": "1) Hareketi yatay (x) ve düşey (y) olarak ikiye ayırın.\n2) Düşey eksendeki yüksekliği veya düşey hızı kullanarak {koyu:uçuş süresini (t)} bulun.\n3) Bulduğunuz t süresini yatay eksendeki {koyu:x = v_x · t} denkleminde yerine yazın."
-   },
-   "gorsel": ""
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Hava direncinin ihmal edildiği ortamda yerden 80 m yükseklikten serbest bırakılan bir cisim kaç saniyede yere çarpar ve yere çarpma hızı kaç m/s olur? (g = 10 m/s²)",
-   "cevap": "Serbest düşmede yükseklik denklemi {koyu:h = {kesir:1|2} · g · {us:t|2} = 5 · {us:t|2}} dir.\n80 = 5 · {us:t|2} ⇒ {us:t|2} = 16 ⇒ {koyu:t = 4 s} bulunur.\nYere çarpma hızı ise {koyu:v = g · t = 10 · 4 = 40 m/s} olur."
-  },
-  {
-   "soru": "Serbest düşmeye bırakılan bir cisim hareketinin son saniyesi içinde 35 m yol alarak yere çarptığına göre, cisim toplam kaç metre yükseklikten bırakılmıştır? (g = 10 m/s²)",
-   "cevap": "Serbest düşen cisim ardışık saniyelerde sırasıyla {koyu:5 m, 15 m, 25 m, 35 m} yol alır. Son saniyede 35 m yol aldığına göre cisim {koyu:t = 4 s} hareket etmiştir. Toplam yükseklik {koyu:h = 5 + 15 + 25 + 35 = 80 m} (veya h = 5 · {us:4|2} = 80 m) bulunur."
-  },
-  {
-   "soru": "Yerden 45 m yükseklikteki bir kuleden yatay doğrultuda v₀ = 40 m/s ilk hızla fırlatılan bir taş; a) Kaç saniyede yere düşer? b) Yatayda kaç metre uzağa (menzile) düşer? c) Yere kaç m/s hızla çarpar? (g = 10 m/s²)",
-   "cevap": "a) Düşeyde serbest düşme yapılır: {koyu:h = 5 · {us:t|2} ⇒ 45 = 5 · {us:t|2} ⇒ {us:t|2} = 9 ⇒ t = 3 s}.\nb) Yatay menzil: {koyu:x = v₀ · t = 40 · 3 = 120 m}.\nc) Yere çarparken yatay hız {koyu:v_x = 40 m/s}, düşey hız {koyu:v_y = g · t = 10 · 3 = 30 m/s} dir. Bileşke hız 3-4-5 dik üçgeninden {koyu:v = 50 m/s} bulunur."
-  },
-  {
-   "soru": "Hava sürtünmesiz ortamda yerden v₀ = 50 m/s ilk hızla ve yatayla 37° açı yapacak biçimde eğik olarak atılan bir cismin; a) Uçuş süresini, b) Çıkabileceği maksimum yüksekliği (h_max), c) Yatay menzilini bulunuz. (g = 10 m/s², sin 37° = 0,6; cos 37° = 0,8)",
-   "cevap": "Önce hız bileşenlerini bulalım:\n• Yatay hız: {koyu:v₀x = 50 · cos 37° = 50 · 0,8 = 40 m/s}\n• Düşey ilk hız: {koyu:v₀y = 50 · sin 37° = 50 · 0,6 = 30 m/s}\na) Çıkış süresi {koyu:t_çıkış = {kesir:v₀y|g} = {kesir:30|10} = 3 s}; toplam uçuş süresi {koyu:t_uçuş = 2 · 3 = 6 s}.\nb) Maksimum yükseklik: {koyu:h_max = 5 · {us:t_çıkış|2} = 5 · {us:3|2} = 45 m}.\nc) Yatay menzil: {koyu:x_menzil = v₀x · t_uçuş = 40 · 6 = 240 m}."
-  },
-  {
-   "soru": "Aynı v₀ büyüklüğündeki hızla K cismi yatayla 25°, L cismi 45°, M cismi ise 65° açıyla eğik olarak atılıyor. Cisimlerin yatay menzilleri (x_K, x_L, x_M) arasındaki büyüklük ilişkisini bulunuz.",
-   "cevap": "Hava direncinin ihmal edildiği ortamda 45° açı ile atılan L cisminin menzili maksimumdur ({koyu:x_L en büyük}). K ve M cisimlerinin atış açılarının toplamı {koyu:25° + 65° = 90°} (tümler açılar) olduğu için yatay menzilleri birbirine eşittir ({koyu:x_K = x_M}). Dolayısıyla sıralama: {koyu:x_L > x_K = x_M} olur."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "Hava direncinin ihmal edildiği bir ortamda aynı yükseklikten aynı anda serbest bırakılan 1 kg kütleli K demir bilyesi ile 5 kg kütleli L demir güllesi için aşağıdakilerden hangisi {koyu:doğrudur}?",
-   "secenekler": [
-    "L güllesi daha ağır olduğu için yere daha önce çarpar.",
-    "K bilyesinin ivmesi L güllesinin ivmesinden büyüktür.",
-    "Her ikisi de aynı g ivmesiyle hızlanır ve aynı anda, eşit hızla yere çarpar.",
-    "Cisimler sabit hızla hareket ederek yere iner."
-   ],
-   "dogru": 2,
-   "aciklama": "Hava sürtünmesiz ortamda serbest düşme ivmesi (g) cismin kütlesinden bağımsızdır; bu nedenle K ve L cisimleri aynı anda ve eşit büyüklükteki hızla (v = g·t) yere çarpar."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Yerden 20 m yükseklikteki bir masanın kenarından yatay doğrultuda 15 m/s hızla fırlatılan bir bilye yatayda kaç metre uzağa düşer? (g = 10 m/s², sürtünmeler önemsizdir.)",
-   "secenekler": [
-    "15 m",
-    "20 m",
-    "30 m",
-    "45 m"
-   ],
-   "dogru": 2,
-   "aciklama": "Düşeyde h = 5·t² ⇒ 20 = 5·t² ⇒ t² = 4 ⇒ t = 2 s bulunur. Yatay menzil ise x = v₀ · t = 15 · 2 = 30 m olur."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "11-fizik-3",
+  "sinif": 11,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 3,
+  "tarih": "28 Eylül - 2 Ekim 2026",
+  "yayin_tarihi": "2026-10-17",
+  "unite": "KUVVET VE HAREKET",
+  "konu": "Serbest Düşme ve İki Boyutta Sabit İvmeli Hareket (Yatay ve Eğik Atış)",
+  "ciktilar": [
+    "FİZ.11.1.2. Serbest düşme hareketi ile ilgili kanıt kullanabilme",
+    "FİZ.11.1.3. İki boyutta sabit ivmeli hareket ile ilgili tümevarımsal akıl yürütebilme"
+  ],
+  "giris": "Dalından kopan bir elmanın düşey doğrultuda yere düşmesi ile bir basketbolcunun potaya gönderdiği topun havada çizdiği parabolik yörünge aynı temel fizik yasasıyla, yani {koyu:yer çekimi ivmesiyle (g)} yönetilir. Bu dersimizde hava direncinin ihmal edildiği ortamda bir boyutta {koyu:serbest düşme} hareketinin kanıtlarını inceleyecek; ardından Galilei'nin {koyu:hareketlerin bağımsızlığı ilkesinden} yararlanarak iki boyutta sabit ivmeli hareket olan {koyu:yatay atış ve eğik atış} hareketlerini çözümleyeceğiz.",
+  "ozet": [
+    "Hava direncinin ihmal edildiği ortamda belirli bir yükseklikten ilk hızsız (v₀ = 0) bırakılan cisimlerin yalnız yer çekimi kuvveti etkisinde yaptığı sabit ivmeli harekete serbest düşme denir.",
+    "Serbest düşme ivmesi (g ≈ 9,8 m/s², işlemlerde 10 m/s²) cismin kütlesinden bağımsızdır; vakum ortamında tüy ile demir bilye aynı anda yere düşer.",
+    "Serbest düşmede t sürede kazanılan hız v = g · t, düşülen yükseklik h = {kesir:1|2} · g · {us:t|2} ve zamansız hız bağıntısı {us:v|2} = 2 · g · h ile hesaplanır (ardışık saniyelerde 5 m, 15 m, 25 m, 35 m... yol alınır).",
+    "İki boyutta sabit ivmeli harekette (yatay ve eğik atış) hareket iki bağımsız bileşene ayrılır: Yatayda net kuvvet sıfır olduğu için sabit hızlı hareket (x = v₀x · t), düşeyde ise g ivmesiyle sabit ivmeli hareket yapılır.",
+    "Yatay atışta uçuş süresi yalnızca bırakıldığı yüksekliğe (h = {kesir:1|2} · g · {us:t|2}) ve g'ye bağlıdır; yatay ilk hız (v₀) uçuş süresini değiştirmez, yalnızca yatay menzili (x = v₀ · t) artırır.",
+    "Eğik atışta tepe noktasında düşey hız sıfırlanır (v_y = 0) ancak yatay hız (v₀x) korunduğu için cismin hızı sıfır olmaz; aynı ilk hızla atılan cisimlerde 45° açıda menzil maksimum, birbirini 90°'ye tamamlayan açılarda ise menziller eşittir."
+  ],
+  "bolumler": [
     {
-     "metin": "Eğik atış hareketi yapan bir cismin yörüngesinin en üst (tepe) noktasında anlık hızı ve ivmesi sıfır olur.",
-     "dogru": false,
-     "aciklama": "Yanlış! Tepe noktasında yalnızca düşey hız (v_y) sıfırdır; yatay hız (v₀x) ve yer çekimi ivmesi (g) sıfır değildir!"
-    }
-   ]
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
-   "ifadeler": [
+      "baslik": "1. Serbest Düşme Hareketi ve Deneysel Kanıtları",
+      "metin": [
+        "Hava direncinin (sürtünmesinin) ihmal edildiği bir ortamda, yerden belirli bir h yüksekliğinden {koyu:ilk hızsız (v₀ = 0)} bırakılan bir cismin yalnız {koyu:yer çekimi kuvveti (G = m · g)} etkisinde yerin merkezine doğru yaptığı düzgün hızlanan doğrusal harekete {koyu:serbest düşme hareketi} denir.",
+        "Newton'un İkinci Hareket Yasası'na göre serbest düşen cisme etki eden net kuvvet cismin ağırlığıdır: {koyu:F_net = m · a ⇒ m · g = m · a ⇒ a = g}. Görüldüğü gibi kütle (m) denklemin her iki tarafından sadeleşir! Bu durum, Galileo Galilei'nin Pisa Kulesi ve vakum tüpü deneyleriyle kanıtladığı en temel fizik gerçeğini ortaya koyar: {koyu:Hava sürtünmesiz ortamda aynı yükseklikten serbest bırakılan bir kuş tüyü ile bir kurşun gülle, kütleleri ne olursa olsun aynı g ivmesiyle hızlanır ve aynı anda yere çarpar.}",
+        "İşlemlerde yer çekimi ivmesi genellikle {koyu:g = 10 {kesir:m|{us:s|2}}} alınır. Bu durumda serbest düşmeye bırakılan bir cismin hızı her saniye 10 m/s artar (10, 20, 30, 40 m/s...) ve ardışık her bir saniye içinde aldığı yollar Galileo'nun tek sayılar kuralına ({koyu:h, 3h, 5h, 7h...}) uygun olarak {koyu:5 m, 15 m, 25 m, 35 m, 45 m...} şeklinde büyür."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Fiziksel Bağıntı",
+          "Denklemi",
+          "g = 10 m/s² İçin Pratik Hâli"
+        ],
+        "satirlar": [
+          [
+            "Herhangi bir t anındaki hız",
+            "v = g · t",
+            "v = 10 · t"
+          ],
+          [
+            "t sürede düşülen toplam yükseklik",
+            "h = {kesir:1|2} · g · {us:t|2}",
+            "h = 5 · {us:t|2}"
+          ],
+          [
+            "Zamansız hız denklemi",
+            "{us:v|2} = 2 · g · h",
+            "{us:v|2} = 20 · h"
+          ]
+        ]
+      },
+      "kutu": {
+        "tur": "bilgi",
+        "baslik": "Apollo 15 Ay Deneyi Kanıtı (1971)",
+        "metin": "Astronot David Scott, atmosferi olmayan Ay yüzeyinde bir elindeki çekiç ile diğer elindeki şahin tüyünü aynı anda serbest bırakmış ve her ikisinin de Ay yüzeyine tam aynı anda düştüğünü tüm dünyaya canlı yayında kanıtlamıştır."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 260\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\"><rect width=\"680\" height=\"260\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"10\" width=\"648\" height=\"28\" rx=\"7\" fill=\"#1d4ed8\"/><text x=\"340\" y=\"29\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#ffffff\">SERBEST DÜŞME HAREKETİ (g = 10 m/s² İKEN HIZ VE YOL TABLOSU)</text><rect x=\"24\" y=\"48\" width=\"300\" height=\"196\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><text x=\"174\" y=\"68\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#1e40af\" font-weight=\"700\">Düşey Konum ve Hız (h = 5t²)</text><line x1=\"64\" y1=\"88\" x2=\"64\" y2=\"230\" stroke=\"#2563eb\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"64\" cy=\"88\" r=\"5\" fill=\"#dc2626\" stroke=\"#991b1b\" stroke-width=\"1.5\"/><text x=\"82\" y=\"92\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">t = 0 s  →  v = 0 m/s  |  h = 0 m</text><circle cx=\"64\" cy=\"122\" r=\"5\" fill=\"#dc2626\" stroke=\"#991b1b\" stroke-width=\"1.5\"/><text x=\"82\" y=\"126\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">t = 1 s  →  v = 10 m/s  |  Δh₁ = 5 m (h = 5 m)</text><circle cx=\"64\" cy=\"158\" r=\"5\" fill=\"#dc2626\" stroke=\"#991b1b\" stroke-width=\"1.5\"/><text x=\"82\" y=\"162\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">t = 2 s  →  v = 20 m/s  |  Δh₂ = 15 m (h = 20 m)</text><circle cx=\"64\" cy=\"196\" r=\"5\" fill=\"#dc2626\" stroke=\"#991b1b\" stroke-width=\"1.5\"/><text x=\"82\" y=\"200\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">t = 3 s  →  v = 30 m/s  |  Δh₃ = 25 m (h = 45 m)</text><circle cx=\"64\" cy=\"230\" r=\"5\" fill=\"#dc2626\" stroke=\"#991b1b\" stroke-width=\"1.5\"/><text x=\"82\" y=\"234\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">t = 4 s  →  v = 40 m/s  |  Δh₄ = 35 m (h = 80 m)</text><rect x=\"344\" y=\"48\" width=\"312\" height=\"196\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"1.8\"/><text x=\"500\" y=\"68\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#047857\" font-weight=\"700\">Serbest Düşme Denklemleri (v₀ = 0)</text><rect x=\"360\" y=\"82\" width=\"280\" height=\"32\" rx=\"6\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"1.4\"/><text x=\"372\" y=\"102\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">1. Hız Denklemi:</text><text x=\"628\" y=\"102\" text-anchor=\"end\" font-size=\"9.8\" fill=\"#059669\" font-weight=\"700\">v = g · t</text><rect x=\"360\" y=\"120\" width=\"280\" height=\"32\" rx=\"6\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.4\"/><text x=\"372\" y=\"140\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">2. Alınan Yol (Yükseklik):</text><text x=\"628\" y=\"140\" text-anchor=\"end\" font-size=\"9.8\" fill=\"#0284c7\" font-weight=\"700\">h = (1/2) · g · t²</text><rect x=\"360\" y=\"158\" width=\"280\" height=\"32\" rx=\"6\" fill=\"#f3e8ff\" stroke=\"#7c3aed\" stroke-width=\"1.4\"/><text x=\"372\" y=\"178\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">3. Zamansız Hız Denklemi:</text><text x=\"628\" y=\"178\" text-anchor=\"end\" font-size=\"9.8\" fill=\"#7c3aed\" font-weight=\"700\">v² = 2 · g · h</text><rect x=\"360\" y=\"196\" width=\"280\" height=\"32\" rx=\"6\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.4\"/><text x=\"372\" y=\"216\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">4. Ardışık Saniye Yolları:</text><text x=\"628\" y=\"216\" text-anchor=\"end\" font-size=\"9.8\" fill=\"#d97706\" font-weight=\"700\">h, 3h, 5h, 7h... (5m, 15m, 25m...)</text></svg>"
+    },
     {
-     "metin": "Yatay atış hareketinde cismin yatay fırlatılma hızı (v₀) iki katına çıkarılırsa, cismin havada kalma (uçuş) süresi değişmez ancak yatay menzili iki katına çıkar.",
-     "dogru": true,
-     "aciklama": "Doğru! Yatay atışta uçuş süresi yalnızca bırakıldığı düşey yüksekliğe (h) ve g'ye bağlıdır; yatay hız süreyi etkilemez, menzili (x = v₀·t) doğru orantılı artırır."
-    }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "soru": "g = 10 m/s² olan sürtünmesiz ortamda aşağıdaki hareket durumlarını karşılık gelen fiziksel değerlerle eşleştiriniz.",
-   "ciftler": [
-    [
-     "Serbest düşen cismin 3. saniye sonundaki hızı",
-     "30 m/s"
-    ],
-    [
-     "Serbest düşen cismin ilk 3 saniyede aldığı toplam yol",
-     "45 m"
-    ],
-    [
-     "Serbest düşen cismin yalnız 3. saniye içinde aldığı yol",
-     "25 m"
-    ],
-    [
-     "Eğik atışta maksimum yatay menzil sağlayan atış açısı",
-     "45°"
-    ],
-    [
-     "Düşey ilk hızı 20 m/s olan eğik atışta toplam uçuş süresi",
-     "4 s"
-    ]
-   ],
-   "aciklama": "Serbest düşme ve eğik atışta g = 10 m/s² için hız her saniye 10 m/s değişir ve ardışık saniyelerde 5 m, 15 m, 25 m... yol alınır."
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Cümlelerdeki boşlukları uygun kelimelerle tamamlayınız.",
-   "cumleler": [
+      "baslik": "2. İki Boyutta Sabit İvmeli Hareket: Hareketlerin Bağımsızlığı İlkesi",
+      "metin": [
+        "Yatay veya eğik olarak havaya fırlatılan bir cisim hem yatay eksende (x) yol alır hem de düşey eksende (y) yükselip alçalır. Galileo'nun ortaya koyduğu {koyu:Hareketlerin Bağımsızlığı İlkesine} göre iki boyutta gerçekleşen bu hareket, birbirini hiç etkilemeyen iki ayrı tek boyutlu hareketin bileşimi olarak incelenir:",
+        "{koyu:1. Yatay Doğrultudaki Hareket (x Ekseni):} Hava direnci ihmal edildiğinde cisme yatay doğrultuda hiçbir kuvvet etki etmez ({koyu:F_x = 0}). Dolayısıyla yatay ivme sıfırdır ({koyu:a_x = 0}) ve cismin yatay hız bileşeni hareket boyunca {koyu:hiç değişmez (v_x = v₀x = sabit)}. Cisim yatayda {koyu:sabit hızlı (düzgün doğrusal) hareket} yapar ve yatayda aldığı yol (menzil) {koyu:x = v₀x · t} bağıntısıyla bulunur.",
+        "{koyu:2. Düşey Doğrultudaki Hareket (y Ekseni):} Düşeyde cisme daima yerin merkezine (-y yönüne) doğru sabit {koyu:yer çekimi kuvveti (G = m · g)} etki eder. Bu nedenle cisim düşey eksende {koyu:g ivmesiyle sabit ivmeli hareket} (serbest düşme veya düşey atış) yapar.",
+        "{koyu:Ortak Köprü (Zaman — t):} Yatay hareket ile düşey hareketi birbirine bağlayan tek ortak skaler büyüklük {koyu:geçen süredir (t_yatay = t_düşey = t_uçuş)}."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "baslik": "İvme Vektörü Hareket Boyunca Sabittir!",
+        "metin": "Serbest düşme, yatay atış ve eğik atış hareketlerinin tamamında cisim havada olduğu sürece (tepe noktası dâhil!) ivmesi daima yerin merkezine doğru ve {koyu:a = g = 10 {kesir:m|{us:s|2}}} büyüklüğündedir."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 260\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\"><rect width=\"680\" height=\"260\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"10\" width=\"648\" height=\"28\" rx=\"7\" fill=\"#0f766e\"/><text x=\"340\" y=\"29\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#ffffff\">İKİ BOYUTTA HAREKETİN TEMEL İLKESİ: BAĞIMSIZLIK İLKESİ</text><rect x=\"26\" y=\"48\" width=\"304\" height=\"156\" rx=\"10\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/><rect x=\"26\" y=\"48\" width=\"304\" height=\"32\" rx=\"10\" fill=\"#0284c7\" stroke=\"#0284c7\" stroke-width=\"1\"/><text x=\"178\" y=\"69\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#ffffff\" font-weight=\"700\">1. YATAY BİLEŞEN (x Ekseni)</text><text x=\"38\" y=\"100\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\">• Yatay doğrultuda net kuvvet sıfırdır (F_x = 0).</text><text x=\"38\" y=\"120\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\">• Yatay ivme sıfırdır (a_x = 0).</text><text x=\"38\" y=\"140\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">• Yatay hız hareket boyunca SABİTTİR (v_x = v₀x).</text><text x=\"38\" y=\"160\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\">• Yatayda Düzgün Doğrusal Hareket yapılır:</text><text x=\"38\" y=\"180\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">  x = v₀x · t   ve   x_menzil = v₀x · t_uçuş</text><rect x=\"350\" y=\"48\" width=\"304\" height=\"156\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"350\" y=\"48\" width=\"304\" height=\"32\" rx=\"10\" fill=\"#d97706\" stroke=\"#d97706\" stroke-width=\"1\"/><text x=\"502\" y=\"69\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#ffffff\" font-weight=\"700\">2. DÜŞEY BİLEŞEN (y Ekseni)</text><text x=\"362\" y=\"100\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\">• Düşeyde yalnız yer çekimi kuvveti etki eder (G = m·g).</text><text x=\"362\" y=\"120\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">• Düşey ivme sabit ve aşağı yönlüdür (a_y = g).</text><text x=\"362\" y=\"140\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\">• Düşey hız her saniye g kadar değişir.</text><text x=\"362\" y=\"160\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\">• Düşeyde Sabit İvmeli Hareket yapılır:</text><text x=\"362\" y=\"180\" text-anchor=\"start\" font-size=\"9.2\" fill=\"#1e293b\" font-weight=\"700\">  v_y = v₀y ∓ g·t   |   h = v₀y·t ∓ (1/2)g·t²</text><rect x=\"26\" y=\"214\" width=\"628\" height=\"32\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"1.5\"/><text x=\"340\" y=\"234\" text-anchor=\"middle\" font-size=\"9.8\" fill=\"#065f46\" font-weight=\"700\">Yatay ve düşey hareketleri birbirine bağlayan tek ortak fiziksel nicelik UÇUŞ SÜRESİDİR (t)!</text></svg>"
+    },
     {
-     "metin": "İki boyutta sabit ivmeli harekette cisme yatay doğrultuda net kuvvet etki etmediği için cisim yatay eksende ___ hızlı hareket yapar.",
-     "cevap": "sabit"
-    }
-   ],
-   "fazla": [
-    "düzgün hızlanan",
-    "değişken ivmeli"
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Cümlelerdeki boşlukları uygun kelimelerle tamamlayınız.",
-   "cumleler": [
+      "baslik": "3. Yatay Atış Hareketi ve Matematiksel Modeli",
+      "metin": [
+        "Yerden belirli bir {koyu:h} yüksekliğinden yere paralel bir {koyu:v₀} ilk hızıyla fırlatılan cismin yaptığı iki boyutlu harekete {koyu:yatay atış hareketi} denir. Cisim fırlatıldığı anda düşey ilk hızı sıfırdır ({koyu:v₀y = 0}), yatay hızı ise {koyu:v_x = v₀} değerindedir.",
+        "{koyu:Düşey Hareket (Serbest Düşme):} Cismin ilk düşey hızı sıfır olduğu için düşeydeki hareketi tamamen serbest düşmedir. Bu nedenle havada kalma (uçuş) süresi yalnızca bırakıldığı {koyu:h yüksekliğine} ve {koyu:g yer çekimi ivmesine} bağlıdır: {koyu:h = {kesir:1|2} · g · {us:t|2}}. Yatay {koyu:v₀} hızının artırılması uçuş süresini {koyu:kesinlikle değiştirmez}!",
+        "{koyu:Yatay Menzil (x):} Cismin havada kaldığı t_uçuş süresi boyunca yatayda sabit v₀ hızıyla aldığı yoldur: {koyu:x = v₀ · t_uçuş}.",
+        "{koyu:Herhangi Bir t Anındaki ve Yere Çarpma Anındaki Hız (v):} Cismin t anındaki yatay hızı {koyu:v_x = v₀}, düşey hızı ise {koyu:v_y = g · t} olduğundan bileşke hızı Pisagor bağıntısıyla {koyu:{us:v|2} = {us:v_x|2} + {us:v_y|2}} olarak hesaplanır."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Klasik Deney: Aynı Anda Bırakılan ve Yatay Atılan İki Bilye",
+        "metin": "Aynı yükseklikten aynı anda K bilyesi serbest bırakılıp L bilyesi yatay olarak fırlatılırsa, her ikisinin de düşey ilk hızı sıfır olduğu için {koyu:yere tam aynı anda çarparlar} (t_K = t_L); ancak L bilyesinin yatay hızı olduğu için yere daha büyük bir süratle çarpar."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 255\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\"><rect width=\"680\" height=\"255\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"10\" width=\"648\" height=\"28\" rx=\"7\" fill=\"#6d28d9\"/><text x=\"340\" y=\"29\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#ffffff\">YATAY ATIŞ HAREKETİ ANALİZİ</text><rect x=\"26\" y=\"48\" width=\"310\" height=\"192\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#7c3aed\" stroke-width=\"1.8\"/><text x=\"181\" y=\"68\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#6d28d9\" font-weight=\"700\">Yatay Atış Yörüngesi</text><rect x=\"54\" y=\"90\" width=\"32\" height=\"118\" rx=\"2\" fill=\"#cbd5e1\" stroke=\"#64748b\" stroke-width=\"1.5\"/><circle cx=\"86\" cy=\"90\" r=\"6\" fill=\"#dc2626\" stroke=\"#991b1b\" stroke-width=\"1.5\"/><line x1=\"86\" y1=\"90\" x2=\"146\" y2=\"90\" stroke=\"#2563eb\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><text x=\"120\" y=\"82\" text-anchor=\"middle\" font-size=\"9\" fill=\"#1d4ed8\" font-weight=\"700\">v₀ (yatay)</text><path d=\"M 86 90 Q 190 95 270 208\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.5\" stroke-dasharray=\"5,4\"/><line x1=\"54\" y1=\"208\" x2=\"310\" y2=\"208\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"44\" y=\"152\" text-anchor=\"middle\" font-size=\"11\" fill=\"#dc2626\" font-weight=\"700\">h</text><text x=\"178\" y=\"224\" text-anchor=\"middle\" font-size=\"9.8\" fill=\"#1e40af\" font-weight=\"700\">x (Menzil) = v₀ · t</text><rect x=\"352\" y=\"48\" width=\"302\" height=\"192\" rx=\"10\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.8\"/><text x=\"503\" y=\"68\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#6d28d9\" font-weight=\"700\">Yatay Atış Özellikleri</text><text x=\"366\" y=\"92\" text-anchor=\"start\" font-size=\"9\" fill=\"#1e293b\">• İlk düşey hız sıfırdır (v₀y = 0).</text><text x=\"366\" y=\"112\" text-anchor=\"start\" font-size=\"9\" fill=\"#1e293b\">• Uçuş süresi yalnız h yüksekliğine ve g&#x27;ye bağlıdır:</text><text x=\"366\" y=\"132\" text-anchor=\"start\" font-size=\"9\" fill=\"#1e293b\" font-weight=\"700\">  h = (1/2) · g · t²   (v₀ hızı süreyi etkilemez!)</text><text x=\"366\" y=\"152\" text-anchor=\"start\" font-size=\"9\" fill=\"#1e293b\">• Aynı yükseklikten serbest bırakılan cisimle</text><text x=\"366\" y=\"172\" text-anchor=\"start\" font-size=\"9\" fill=\"#1e293b\" font-weight=\"700\">  yatay atılan cisim AYNI ANDA yere çarpar.</text><text x=\"366\" y=\"192\" text-anchor=\"start\" font-size=\"9\" fill=\"#1e293b\">• Yere çarpma hızı Pisagor bağıntısıyla bulunur:</text><text x=\"366\" y=\"212\" text-anchor=\"start\" font-size=\"9\" fill=\"#1e293b\" font-weight=\"700\">  v² = v_x² + v_y²   (v_x = v₀,  v_y = g · t)</text></svg>"
+    },
     {
-     "metin": "Aynı ilk hız büyüklüğüyle eğik olarak atılan iki cismin atış açılarının toplamı ___ derece ise yatay menzilleri birbirine eşittir.",
-     "cevap": "90"
+      "baslik": "4. Eğik Atış Hareketi: Yükseklik, Uçuş Süresi ve Menzil",
+      "metin": [
+        "Yatay düzlemle {koyu:α} açısı yapacak şekilde {koyu:v₀} ilk hızıyla fırlatılan cismin yaptığı harekete {koyu:eğik atış hareketi} denir. Çözüme her zaman ilk hız vektörünü yatay ve düşey bileşenlerine ayırarak başlarız:",
+        "{koyu:İlk Hız Bileşenleri:} Yatay ilk hız {koyu:v₀x = v₀ · cos α} (hareket boyunca sabit kalır); düşey ilk hız {koyu:v₀y = v₀ · sin α} (yukarı çıkarken her saniye g kadar azalır, inerken g kadar artar).",
+        "{koyu:Çıkış ve Uçuş Süresi:} Cisim maksimum yüksekliğe (tepe noktasına) çıktığında düşey hızı sıfır olur ({koyu:v_y = 0}). Bu nedenle çıkış süresi {koyu:t_çıkış} = {kesir:v₀y|g} dir. Atıldığı yatay düzleme geri düşen cisim için çıkış süresi iniş süresine eşittir ve toplam uçuş süresi {koyu:t_uçuş = 2 · t_çıkış} = {kesir:2 · v₀y|g} olur.",
+        "{koyu:Maksimum Yükseklik (h_max):} Cismin çıkabildiği en büyük düşey yükseklik {koyu:h_max = {kesir:1|2} · g · {us:t_çıkış|2} = {kesir:{us:v₀y|2}|2 · g}} bağıntısıyla bulunur.",
+        "{koyu:Yatay Menzil (x_menzil):} Cismin uçuş süresi boyunca yatayda aldığı toplam yoldur: {koyu:x_menzil = v₀x · t_uçuş}."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Tepe Noktasında Hız Sıfır Değildir!",
+        "metin": "Eğik atışta yörüngenin en üst noktasında (T tepe noktasında) yalnızca {koyu:düşey hız sıfırdır (v_y = 0)}; cisim yatay hızını koruduğu için tepe noktasındaki hızı minimumdur ve {koyu:v_min = v₀x = v₀ · cos α} değerine eşittir."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 255\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\"><rect width=\"680\" height=\"255\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"10\" width=\"648\" height=\"28\" rx=\"7\" fill=\"#b45309\"/><text x=\"340\" y=\"29\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#ffffff\">EĞİK ATIŞ HAREKETİ VE ÖZEL AÇI KURALLARI</text><rect x=\"24\" y=\"48\" width=\"312\" height=\"192\" rx=\"10\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"1.8\"/><text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" fill=\"#b45309\" font-weight=\"700\">Eğik Atış Yörüngesi ve Tepe Noktası (T)</text><line x1=\"44\" y1=\"204\" x2=\"316\" y2=\"204\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M 56 204 Q 180 42 304 204\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.5\"/><circle cx=\"180\" cy=\"123\" r=\"5\" fill=\"#dc2626\" stroke=\"#991b1b\" stroke-width=\"1.5\"/><line x1=\"180\" y1=\"123\" x2=\"224\" y2=\"123\" stroke=\"#2563eb\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><text x=\"202\" y=\"114\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#1d4ed8\" font-weight=\"700\">v_T = v₀x (v_y = 0)</text><line x1=\"180\" y1=\"123\" x2=\"180\" y2=\"204\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"198\" y=\"168\" text-anchor=\"start\" font-size=\"9.5\" fill=\"#dc2626\" font-weight=\"700\">h_max</text><text x=\"180\" y=\"222\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#92400e\" font-weight=\"700\">x_menzil = v₀x · t_uçuş</text><rect x=\"352\" y=\"48\" width=\"304\" height=\"192\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.8\"/><text x=\"504\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" fill=\"#15803d\" font-weight=\"700\">Eğik Atış Formülleri ve Özel Durumlar</text><text x=\"366\" y=\"92\" text-anchor=\"start\" font-size=\"8.9\" fill=\"#1e293b\">• Hız Bileşenleri: v₀x = v₀·cosα  |  v₀y = v₀·sinα</text><text x=\"366\" y=\"112\" text-anchor=\"start\" font-size=\"8.9\" fill=\"#1e293b\">• Çıkış ve Uçuş Süresi: t_ç = v₀y / g  |  t_u = 2·t_ç</text><text x=\"366\" y=\"132\" text-anchor=\"start\" font-size=\"8.9\" fill=\"#1e293b\">• Maksimum Yükseklik: h_max = v₀y² / (2·g)</text><text x=\"366\" y=\"152\" text-anchor=\"start\" font-size=\"8.9\" fill=\"#1e293b\">• Tepe noktasında düşey hız sıfırdır (v_y = 0),</text><text x=\"366\" y=\"172\" text-anchor=\"start\" font-size=\"8.9\" fill=\"#1e293b\" font-weight=\"700\">  ancak cismin hızı sıfır DEĞİLDİR (v_min = v₀x)!</text><text x=\"366\" y=\"192\" text-anchor=\"start\" font-size=\"8.9\" fill=\"#1e293b\" font-weight=\"700\">• α = 45° iken yatay menzil MAKSİMUM olur.</text><text x=\"366\" y=\"212\" text-anchor=\"start\" font-size=\"8.9\" fill=\"#1e293b\" font-weight=\"700\">• α + β = 90° ve v₀ eşit ise menziller EŞİTTİR (x₁ = x₂).</text></svg>"
+    },
+    {
+      "baslik": "5. Eğik Atışta Özel Açı Durumları (45° ve Tümler Açılar)",
+      "metin": [
+        "Aynı büyüklükteki {koyu:v₀} ilk hızıyla farklı açılarla fırlatılan cisimlerin menzil ve maksimum yükseklikleri karşılaştırıldığında iki önemli matematiksel özellik ortaya çıkar:",
+        "1. {koyu:Maksimum Menzil Açısı (α = 45°):} Hava sürtünmesiz ortamda belirli bir v₀ hızıyla atılan cismin yatayda en uzağa gidebilmesi (maksimum menzil) için atış açısı {koyu:α = 45°} olmalıdır. Ayrıca α = 45° iken yatay menzil, maksimum yüksekliğin tam dört katıdır ({koyu:x_menzil = 4 · h_max}).",
+        "2. {koyu:Tümler Açılar Kuralı (α + β = 90°):} Aynı büyüklükteki {koyu:v₀} ilk hızıyla atılan iki cismin atış açılarının toplamı {koyu:90°} ise (örneğin {koyu:30° ve 60°} veya {koyu:20° ve 70°}), bu iki cismin {koyu:yatay menzilleri birbirine eşittir (x₁ = x₂)}. Ancak dikey açıyla (örneğin 60° ile) atılan cismin düşey ilk hızı daha büyük olduğu için {koyu:daha yükseğe çıkar (h₁ > h₂)} ve {koyu:havada daha uzun süre kalır (t₁ > t₂)}."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Hareket Türü",
+          "Yatay Hız (v_x)",
+          "Düşey Hız (v_y)",
+          "İvme (a)",
+          "Uçuş Süresini Belirleyen Unsur"
+        ],
+        "satirlar": [
+          [
+            "Serbest Düşme",
+            "0",
+            "0'dan başlayıp g·t artar",
+            "g (aşağı yönlü)",
+            "Yalnız h yüksekliği ve g"
+          ],
+          [
+            "Yatay Atış",
+            "v₀ (Sabit)",
+            "0'dan başlayıp g·t artar",
+            "g (aşağı yönlü)",
+            "Yalnız h yüksekliği ve g"
+          ],
+          [
+            "Eğik Atış",
+            "v₀·cos α (Sabit)",
+            "Önce azalır, T'de 0 olur, sonra artar",
+            "g (aşağı yönlü)",
+            "Düşey ilk hız bileşeni (v₀y) ve g"
+          ]
+        ]
+      },
+      "gorsel": ""
+    },
+    {
+      "baslik": "6. Gündelik Yaşam ve Spor Uygulamalarında İki Boyutlu Hareket",
+      "metin": [
+        "İki boyutta sabit ivmeli hareket ilkeleri; spor bilimlerinden havacılığa, savunma teknolojilerinden afet yardım operasyonlarına kadar pek çok alanda doğrudan kullanılır:",
+        "{koyu:İnsani Yardım Uçakları (Yatay Atış):} Sabit irtifada yatay uçan bir yardım uçağından bırakılan yardım paketi, uçağın yatay hızına sahip olduğu için {koyu:yatay atış hareketi} yapar. Hava direnci ihmal edilirse paket yere düşene kadar hep uçağın tam düşey hizasında (altında) bulunur; hedefi tutturmak için paket hedefin tam üzerinden değil, {koyu:x = v_uçak · t_iniş} kadar gerisinden bırakılmalıdır.",
+        "{koyu:Atletizm ve Top Sporları (Eğik Atış):} Uzun atlama, gülle ve cirit atma, futbol kalecisinin degaj vuruşu veya okçulukta sporcular menzili maksimize etmek için atış açısını 45° civarında tutmaya çalışırlar."
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "baslik": "Soru Çözümünde 3 Adımlı Strateji",
+        "metin": "Hareketi yatay (x) ve düşey (y) olarak ikiye ayırın.\n2) Düşey eksendeki yüksekliği veya düşey hızı kullanarak {koyu:uçuş süresini (t)} bulun.\n3) Bulduğunuz t süresini yatay eksendeki {koyu:x = v_x · t} denkleminde yerine yazın."
+      },
+      "gorsel": ""
     }
-   ],
-   "fazla": [
-    "45",
-    "180"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Yerden 125 m yükseklikte, yatay doğrultuda 60 m/s sabit hızla uçan bir insani yardım uçağından bırakılan yardım paketinin hedefe tam isabet etmesi için hedefin yatayda kaç metre gerisinden bırakılması gerektiğini adım adım hesaplayınız. (g = 10 m/s²)",
-   "ipuclari": [
-    "1. Adım: Paketin uçağa göre serbest bırakıldığında yere göre yatay atış hareketi yaptığını belirleyin.",
-    "2. Adım: h = 125 m yüksekliğinden düşey hareketle uçuş süresini (t) bulun.",
-    "3. Adım: Yatay menzil bağıntısıyla (x = v₀ · t) yatay mesafeyi hesaplayın."
-   ],
-   "cevap": "1) Uçaktan serbest bırakılan paket, uçağın yatay hızına ({koyu:v₀ = 60 m/s}) sahip olduğu için yere göre yatay atış hareketi yapar.\n2) Düşeyde serbest düşme denklemi uygulanır: {koyu:h = {kesir:1|2} · g · {us:t|2} ⇒ 125 = 5 · {us:t|2} ⇒ {us:t|2} = 25 ⇒ t = 5 s}.\n3) Paket 5 saniye boyunca yatayda sabit 60 m/s hızla ilerleyeceği için hedefin {koyu:x = v₀ · t = 60 · 5 = 300 metre} gerisinden bırakılmalıdır."
-  }
- ]
+  ],
+  "ornekler": [
+    {
+      "soru": "Hava direncinin ihmal edildiği ortamda yerden 80 m yükseklikten serbest bırakılan bir cisim kaç saniyede yere çarpar ve yere çarpma hızı kaç m/s olur? (g = 10 m/s²)",
+      "cevap": "Serbest düşmede yükseklik denklemi {koyu:h = {kesir:1|2} · g · {us:t|2} = 5 · {us:t|2}} dir.\n80 = 5 · {us:t|2} ⇒ {us:t|2} = 16 ⇒ {koyu:t = 4 s} bulunur.\nYere çarpma hızı ise {koyu:v = g · t = 10 · 4 = 40 m/s} olur."
+    },
+    {
+      "soru": "Serbest düşmeye bırakılan bir cisim hareketinin son saniyesi içinde 35 m yol alarak yere çarptığına göre, cisim toplam kaç metre yükseklikten bırakılmıştır? (g = 10 m/s²)",
+      "cevap": "Serbest düşen cisim ardışık saniyelerde sırasıyla {koyu:5 m, 15 m, 25 m, 35 m} yol alır. Son saniyede 35 m yol aldığına göre cisim {koyu:t = 4 s} hareket etmiştir. Toplam yükseklik {koyu:h = 5 + 15 + 25 + 35 = 80 m} (veya h = 5 · {us:4|2} = 80 m) bulunur."
+    },
+    {
+      "soru": "Yerden 45 m yükseklikteki bir kuleden yatay doğrultuda v₀ = 40 m/s ilk hızla fırlatılan bir taş; a) Kaç saniyede yere düşer? b) Yatayda kaç metre uzağa (menzile) düşer? c) Yere kaç m/s hızla çarpar? (g = 10 m/s²)",
+      "cevap": "a) Düşeyde serbest düşme yapılır: {koyu:h = 5 · {us:t|2} ⇒ 45 = 5 · {us:t|2} ⇒ {us:t|2} = 9 ⇒ t = 3 s}.\nb) Yatay menzil: {koyu:x = v₀ · t = 40 · 3 = 120 m}.\nc) Yere çarparken yatay hız {koyu:v_x = 40 m/s}, düşey hız {koyu:v_y = g · t = 10 · 3 = 30 m/s} dir. Bileşke hız 3-4-5 dik üçgeninden {koyu:v = 50 m/s} bulunur."
+    },
+    {
+      "soru": "Hava sürtünmesiz ortamda yerden v₀ = 50 m/s ilk hızla ve yatayla 37° açı yapacak biçimde eğik olarak atılan bir cismin; a) Uçuş süresini, b) Çıkabileceği maksimum yüksekliği (h_max), c) Yatay menzilini bulunuz. (g = 10 m/s², sin 37° = 0,6; cos 37° = 0,8)",
+      "cevap": "Önce hız bileşenlerini bulalım:\n• Yatay hız: {koyu:v₀x = 50 · cos 37° = 50 · 0,8 = 40 m/s}\n• Düşey ilk hız: {koyu:v₀y = 50 · sin 37° = 50 · 0,6 = 30 m/s}\na) Çıkış süresi {koyu:t_çıkış = {kesir:v₀y|g} = {kesir:30|10} = 3 s}; toplam uçuş süresi {koyu:t_uçuş = 2 · 3 = 6 s}.\nb) Maksimum yükseklik: {koyu:h_max = 5 · {us:t_çıkış|2} = 5 · {us:3|2} = 45 m}.\nc) Yatay menzil: {koyu:x_menzil = v₀x · t_uçuş = 40 · 6 = 240 m}."
+    },
+    {
+      "soru": "Aynı v₀ büyüklüğündeki hızla K cismi yatayla 25°, L cismi 45°, M cismi ise 65° açıyla eğik olarak atılıyor. Cisimlerin yatay menzilleri (x_K, x_L, x_M) arasındaki büyüklük ilişkisini bulunuz.",
+      "cevap": "Hava direncinin ihmal edildiği ortamda 45° açı ile atılan L cisminin menzili maksimumdur ({koyu:x_L en büyük}). K ve M cisimlerinin atış açılarının toplamı {koyu:25° + 65° = 90°} (tümler açılar) olduğu için yatay menzilleri birbirine eşittir ({koyu:x_K = x_M}). Dolayısıyla sıralama: {koyu:x_L > x_K = x_M} olur."
+    },
+    {
+      "soru": "‘Serbest Düşme Hareketi ve Deneysel Kanıtları’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
+      "cevap": "Hava direncinin (sürtünmesinin) ihmal edildiği bir ortamda, yerden belirli bir h yüksekliğinden {koyu:ilk hızsız (v₀ = 0)} bırakılan bir cismin yalnız {koyu:yer çekimi kuvveti (G = m · g)} etkisinde yerin merkezine doğru yaptığı düzgün hızlanan doğrusal harekete {koyu:serbest düşme hareketi} denir. Newton'un İkinci Hareket Yasası'na göre serbest düşen cisme etki eden net kuvvet cismin ağırlığıdır: {koyu:F_net = m · a ⇒ m · g = m · a ⇒ a = g}. Görüldüğü gibi kütle (m) denklemin her iki tarafından sadeleşir! Bu durum, Galileo Galilei'nin Pisa Kulesi ve vakum tüpü deneyleriyle kanıtladığı en temel fizik gerçeğini ortaya koyar: {koyu:Hava sürtünmesiz ortamda aynı yükseklikten serbest bırakılan bir kuş tüyü ile bir kurşun gülle, kütleleri ne olursa olsun aynı g ivmesiyle hızlanır ve aynı anda yere çarpar.}"
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Hava direncinin ihmal edildiği bir ortamda aynı yükseklikten aynı anda serbest bırakılan 1 kg kütleli K demir bilyesi ile 5 kg kütleli L demir güllesi için aşağıdakilerden hangisi {koyu:doğrudur}?",
+      "secenekler": [
+        "Her ikisi de aynı g ivmesiyle hızlanır ve aynı anda, eşit hızla yere çarpar.",
+        "K bilyesinin ivmesi L güllesinin ivmesinden büyüktür.",
+        "L güllesi daha ağır olduğu için yere daha önce çarpar (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)",
+        "Cisimler sabit hızla hareket ederek yere iner.",
+        "Münhasıran dış görünüşe dayalı tesadüfi bir değişimdir."
+      ],
+      "dogru": 0,
+      "aciklama": "Hava sürtünmesiz ortamda serbest düşme ivmesi (g) cismin kütlesinden bağımsızdır; bu nedenle K ve L cisimleri aynı anda ve eşit büyüklükteki hızla (v = g·t) yere çarpar."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Yerden 20 m yükseklikteki bir masanın kenarından yatay doğrultuda 15 m/s hızla fırlatılan bir bilye yatayda kaç metre uzağa düşer? (g = 10 m/s², sürtünmeler önemsizdir.)",
+      "secenekler": [
+        "15 m",
+        "30 m",
+        "20 m",
+        "45 m",
+        "Münhasıran dış görünüşe dayalı tesadüfi bir değişimdir."
+      ],
+      "dogru": 1,
+      "aciklama": "Düşeyde h = 5·t² ⇒ 20 = 5·t² ⇒ t² = 4 ⇒ t = 2 s bulunur. Yatay menzil ise x = v₀ · t = 15 · 2 = 30 m olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "‘Yatay Atış Hareketi ve Matematiksel Modeli’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Aynı yükseklikten aynı anda K bilyesi serbest bırakılıp L bilyesi yatay olarak fırlatılırsa, her ikisinin de düşey ilk hızı sıfır olduğu için {koyu:yere tam aynı anda çarparlar} (t_K = t_L); ancak L bilyesinin yatay hızı olduğu için yere daha büyük bir süratle çarpar.",
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum)",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 2,
+      "aciklama": "Yatay Atış Hareketi ve Matematiksel Modeli bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "‘Eğik Atış Hareketi: Yükseklik, Uçuş Süresi ve Menzil’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme, bağlam dışı yorum, bağlam dışı yorum)",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Eğik atışta yörüngenin en üst noktasında münhasıran {koyu:düşey hız sıfırdır (v_y = 0)}; cisim yatay hızını koruduğu için tepe noktasındaki hızı minimumdur ve {koyu:v_min = v₀x = v₀ · cos α} değerine eşittir.",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 3,
+      "aciklama": "Eğik Atış Hareketi: Yükseklik, Uçuş Süresi ve Menzil bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Eğik atış hareketi yapan bir cismin yörüngesinin en üst (tepe) noktasında anlık hızı ve ivmesi sıfır olur.",
+          "dogru": false,
+          "aciklama": "Yanlış! Tepe noktasında yalnızca düşey hız (v_y) sıfırdır; yatay hız (v₀x) ve yer çekimi ivmesi (g) sıfır değildir!"
+        },
+        {
+          "metin": "Yatay atış hareketinde cismin yatay fırlatılma hızı (v₀) iki katına çıkarılırsa, cismin havada kalma (uçuş) süresi değişmez ancak yatay menzili iki katına çıkar.",
+          "dogru": true,
+          "aciklama": "Doğru! Yatay atışta uçuş süresi yalnızca bırakıldığı düşey yüksekliğe (h) ve g'ye bağlıdır; yatay hız süreyi etkilemez, menzili (x = v₀·t) doğru orantılı artırır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "g = 10 m/s² olan sürtünmesiz ortamda aşağıdaki hareket durumlarını karşılık gelen fiziksel değerlerle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Serbest düşen cismin 3. saniye sonundaki hızı",
+          "30 m/s"
+        ],
+        [
+          "Serbest düşen cismin ilk 3 saniyede aldığı toplam yol",
+          "45 m"
+        ],
+        [
+          "Serbest düşen cismin yalnız 3. saniye içinde aldığı yol",
+          "25 m"
+        ],
+        [
+          "Eğik atışta maksimum yatay menzil sağlayan atış açısı",
+          "45°"
+        ],
+        [
+          "Düşey ilk hızı 20 m/s olan eğik atışta toplam uçuş süresi",
+          "4 s"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "İki boyutta sabit ivmeli harekette cisme yatay doğrultuda net kuvvet etki etmediği için cisim yatay eksende ___ hızlı hareket yapar.",
+          "cevap": "sabit"
+        },
+        {
+          "metin": "Aynı ilk hız büyüklüğüyle eğik olarak atılan iki cismin atış açılarının toplamı ___ derece ise yatay menzilleri birbirine eşittir.",
+          "cevap": "90"
+        }
+      ],
+      "fazla": [
+        "düzgün hızlanan",
+        "değişken ivmeli",
+        "45",
+        "180"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Yerden 125 m yükseklikte, yatay doğrultuda 60 m/s sabit hızla uçan bir insani yardım uçağından bırakılan yardım paketinin hedefe tam isabet etmesi için hedefin yatayda kaç metre gerisinden bırakılması gerektiğini adım adım hesaplayınız. (g = 10 m/s²)",
+      "cevap": "1) Uçaktan serbest bırakılan paket, uçağın yatay hızına ({koyu:v₀ = 60 m/s}) sahip olduğu için yere göre yatay atış hareketi yapar.\n2) Düşeyde serbest düşme denklemi uygulanır: {koyu:h = {kesir:1|2} · g · {us:t|2} ⇒ 125 = 5 · {us:t|2} ⇒ {us:t|2} = 25 ⇒ t = 5 s}.\n3) Paket 5 saniye boyunca yatayda sabit 60 m/s hızla ilerleyeceği için hedefin {koyu:x = v₀ · t = 60 · 5 = 300 metre} gerisinden bırakılmalıdır.",
+      "ipuclari": [
+        "1. Adım: Paketin uçağa göre serbest bırakıldığında yere göre yatay atış hareketi yaptığını belirleyin.",
+        "2. Adım: h = 125 m yüksekliğinden düşey hareketle uçuş süresini (t) bulun.",
+        "3. Adım: Yatay menzil bağıntısıyla (x = v₀ · t) yatay mesafeyi hesaplayın."
+      ]
+    }
+  ]
 }

@@ -30,7 +30,7 @@ def _kutu(x, y, g, yk, r_ark, r_ken, baslik, satirlar, r_bas="#0f172a"):
 
 
 def gorsel_1():
-    """İslam'da Dünya ve Ahiret Dengesi (Kasas, 77 & Bakara, 201)"""
+    """İslam'da Dünya ve Ahiret Dengesi (Kasas, 77 &amp; Bakara, 201)"""
     g, y = 740, 260
     s = _baslik(g, "İSLAM'DA DÜNYA VE AHİRET DENGESİ: İKİ KANATLI KUŞ MİSALİ", "#0f766e")
     s += _kutu(20, 52, 220, 190, "#eff6ff", "#3b82f6", "DÜNYA HAYATI (Tarla)", [

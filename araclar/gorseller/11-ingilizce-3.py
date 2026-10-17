@@ -30,7 +30,7 @@ def _kutu(x, y, g, yk, r_ark, r_ken, baslik, satirlar, r_bas="#0f172a"):
 
 
 def gorsel_1():
-    """Future Continuous Tense (will be + V-ing) Structure & Usage"""
+    """Future Continuous Tense (will be + V-ing) Structure &amp; Usage"""
     g, y = 740, 260
     s = _baslik(g, "FUTURE CONTINUOUS TENSE: WILL BE + V-ING", "#1d4ed8")
     s += _kutu(20, 52, 340, 190, "#eff6ff", "#3b82f6", "GRAMMAR STRUCTURE (YAPI)", [
@@ -41,7 +41,7 @@ def gorsel_1():
         "(?) WILL + Subject + BE + V-ing?",
         "    Ex: What will you be doing this time next year?"
     ], "#1e40af")
-    s += _kutu(380, 52, 340, 190, "#f0fdf4", "#16a34a", "TIME EXPRESSIONS & USAGE", [
+    s += _kutu(380, 52, 340, 190, "#f0fdf4", "#16a34a", "TIME EXPRESSIONS &amp; USAGE", [
         "• Gelecekte belirli bir anda devam ediyor olacak eylemler:",
         "• This time tomorrow / next week / next year",
         "• At 9 o'clock tomorrow morning",
@@ -59,13 +59,13 @@ def gorsel_2():
     s += _kutu(16, 52, 168, 195, "#fef2f2", "#ef4444", "WILL + V1", [
         "• Spontaneous decisions",
         "  (Anlık kararlar)",
-        "• Promises & Offers",
+        "• Promises &amp; Offers",
         "• Predictions with",
         "  think / hope / believe",
         "Ex: 'I'll answer the phone.'"
     ], "#991b1b")
     s += _kutu(196, 52, 168, 195, "#fff7ed", "#f97316", "BE GOING TO + V1", [
-        "• Prior plans & intentions",
+        "• Prior plans &amp; intentions",
         "  (Önceden planlanan niyet)",
         "• Predictions based on",
         "  present evidence (kanıt)",
@@ -76,7 +76,7 @@ def gorsel_2():
         "• Fixed personal",
         "  arrangements",
         "  (Kesinleşmiş randevu)",
-        "• Time & place are set",
+        "• Time &amp; place are set",
         "Ex: 'I am meeting the HR",
         "manager at 3 p.m. today.'"
     ], "#854d0e")
@@ -92,7 +92,7 @@ def gorsel_2():
 
 
 def gorsel_3():
-    """Job Interview Questions & Professional Responses"""
+    """Job Interview Questions &amp; Professional Responses"""
     g, y = 740, 260
     s = _baslik(g, "JOB INTERVIEW: KEY QUESTIONS AND PROFESSIONAL RESPONSES", "#6d28d9")
     s += _kutu(20, 52, 340, 190, "#f5f3ff", "#8b5cf6", "INTERVIEWER'S QUESTIONS (Mülakat Soruları)", [
@@ -122,7 +122,7 @@ def gorsel_4():
         "• Contact Information (Ad, Telefon, E-posta, Adres)",
         "• Education Background (Mezun olunan okullar, GPA)",
         "• Work / Internship Experience (İş ve staj deneyimi)",
-        "• Hard & Soft Skills (Yabancı dil, yazılım, iletişim)",
+        "• Hard &amp; Soft Skills (Yabancı dil, yazılım, iletişim)",
         "• References ('Available upon request')"
     ], "#166534")
     s += _kutu(380, 52, 340, 180, "#ecfeff", "#06b6d4", "LETTER OF INTENT (COVER LETTER)", [

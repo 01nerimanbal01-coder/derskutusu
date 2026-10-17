@@ -90,23 +90,23 @@ GORSELLER = {
   <rect x="20" y="48" width="350" height="184" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
   <rect x="20" y="48" width="350" height="28" rx="8" fill="#2563eb"/>
   <text x="195" y="67" text-anchor="middle" font-size="13" font-weight="800" fill="#ffffff">AKLISELİM (SAĞLIKLI AKIL)</text>
-  <text x="34" y="96" font-size="11" fill="#1e3a8a">• <tspan font-weight="700">Tanım:</tspan> İnsanı diğer canlılardan ayıran, dinî sorumluluğun</text>
+  <text x="34" y="96" font-size="11" fill="#1e3a8a">• &lt;tspan font-weight="700">Tanım:&lt;/tspan> İnsanı diğer canlılardan ayıran, dinî sorumluluğun</text>
   <text x="44" y="112" font-size="11" fill="#1e3a8a">(mükellefiyetin) ön şartı olan düşünme ve anlama gücüdür.</text>
-  <text x="34" y="134" font-size="11" fill="#1e3a8a">• <tspan font-weight="700">Vahiy – Akıl Uyumu:</tspan> Kur'an ve Sünnet aklı rehber</text>
+  <text x="34" y="134" font-size="11" fill="#1e3a8a">• &lt;tspan font-weight="700">Vahiy – Akıl Uyumu:&lt;/tspan> Kur'an ve Sünnet aklı rehber</text>
   <text x="44" y="150" font-size="11" fill="#1e3a8a">kılar; aklıselim ise vahyin ilkelerini kavrayıp yorumlar.</text>
-  <text x="34" y="172" font-size="11" fill="#1e3a8a">• <tspan font-weight="700">Medeniyete Katkısı:</tspan> Yeni karşılaşılan hukuki ve sosyal</text>
-  <text x="44" y="188" font-size="11" fill="#1e3a8a">sorunların <tspan font-weight="700">kıyas, istihsan ve içtihat</tspan> yoluyla çözülmesini;</text>
+  <text x="34" y="172" font-size="11" fill="#1e3a8a">• &lt;tspan font-weight="700">Medeniyete Katkısı:&lt;/tspan> Yeni karşılaşılan hukuki ve sosyal</text>
+  <text x="44" y="188" font-size="11" fill="#1e3a8a">sorunların &lt;tspan font-weight="700">kıyas, istihsan ve içtihat&lt;/tspan> yoluyla çözülmesini;</text>
   <text x="44" y="204" font-size="11" fill="#1e3a8a">kelam, felsefe ve mantık ilimlerinin gelişmesini sağlamıştır.</text>
   <!-- Right: Havassıselime -->
   <rect x="390" y="48" width="350" height="184" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
   <rect x="390" y="48" width="350" height="28" rx="8" fill="#059669"/>
   <text x="565" y="67" text-anchor="middle" font-size="13" font-weight="800" fill="#ffffff">SALİM DUYULAR (HAVASSISELİME)</text>
-  <text x="404" y="96" font-size="11" fill="#065f46">• <tspan font-weight="700">Tanım:</tspan> İşlevini sağlıklı biçimde yerine getiren beş duyu</text>
+  <text x="404" y="96" font-size="11" fill="#065f46">• &lt;tspan font-weight="700">Tanım:&lt;/tspan> İşlevini sağlıklı biçimde yerine getiren beş duyu</text>
   <text x="414" y="112" font-size="11" fill="#065f46">(görme, işitme, koklama, tatma, dokunma) organıdır.</text>
-  <text x="404" y="134" font-size="11" fill="#065f46">• <tspan font-weight="700">Kur'an Dayanağı (Nahl, 78):</tspan> \"Şükredesiniz diye size</text>
+  <text x="404" y="134" font-size="11" fill="#065f46">• &lt;tspan font-weight="700">Kur'an Dayanağı (Nahl, 78):&lt;/tspan> \"Şükredesiniz diye size</text>
   <text x="414" y="150" font-size="11" fill="#065f46">kulaklar, gözler ve kalpler (akıllar) verdi.\"</text>
-  <text x="404" y="172" font-size="11" fill="#065f46">• <tspan font-weight="700">Medeniyete Katkısı:</tspan> Maddenin nitelik ve niceliğini</text>
-  <text x="414" y="188" font-size="11" fill="#065f46">tanımayı, <tspan font-weight="700">deney ve gözlem metodunu</tspan> kullanarak fizik, kimya,</text>
+  <text x="404" y="172" font-size="11" fill="#065f46">• &lt;tspan font-weight="700">Medeniyete Katkısı:&lt;/tspan> Maddenin nitelik ve niceliğini</text>
+  <text x="414" y="188" font-size="11" fill="#065f46">tanımayı, &lt;tspan font-weight="700">deney ve gözlem metodunu&lt;/tspan> kullanarak fizik, kimya,</text>
   <text x="414" y="204" font-size="11" fill="#065f46">tıp, astronomi ve estetik sanatların doğmasını sağlamıştır.</text>
 </svg>''',
 
@@ -156,41 +156,41 @@ GORSELLER = {
   <rect x="20" y="48" width="170" height="155" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
   <rect x="20" y="48" width="170" height="26" rx="8" fill="#2563eb"/>
   <text x="105" y="66" text-anchor="middle" font-size="11.5" font-weight="800" fill="#ffffff">1. YUNAN-ROMA TERKİBİ</text>
-  <text x="30" y="92" font-size="10.5" fill="#1e3a8a">• <tspan font-weight="700">Coğrafya:</tspan> Akdeniz Havzası</text>
+  <text x="30" y="92" font-size="10.5" fill="#1e3a8a">• &lt;tspan font-weight="700">Coğrafya:&lt;/tspan> Akdeniz Havzası</text>
   <text x="38" y="108" font-size="10.5" fill="#1e3a8a">(Anadolu, Yunanistan, İtalya)</text>
-  <text x="30" y="128" font-size="10.5" fill="#1e3a8a">• <tspan font-weight="700">Dil:</tspan> Grekçe ve Latince</text>
-  <text x="30" y="148" font-size="10.5" fill="#1e40af">• <tspan font-weight="700">Katkısı:</tspan> Felsefe, mantık,</text>
+  <text x="30" y="128" font-size="10.5" fill="#1e3a8a">• &lt;tspan font-weight="700">Dil:&lt;/tspan> Grekçe ve Latince</text>
+  <text x="30" y="148" font-size="10.5" fill="#1e40af">• &lt;tspan font-weight="700">Katkısı:&lt;/tspan> Felsefe, mantık,</text>
   <text x="38" y="164" font-size="10.5" fill="#1e40af">tıp, geometri ve astronomi</text>
   <text x="38" y="180" font-size="10.5" fill="#1e40af">mirası tercüme edildi.</text>
 
   <rect x="203" y="48" width="170" height="155" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
   <rect x="203" y="48" width="170" height="26" rx="8" fill="#059669"/>
   <text x="288" y="66" text-anchor="middle" font-size="11.5" font-weight="800" fill="#ffffff">2. SAMİ VE İRAN TERKİBİ</text>
-  <text x="213" y="92" font-size="10.5" fill="#065f46">• <tspan font-weight="700">Coğrafya:</tspan> Nil'den</text>
+  <text x="213" y="92" font-size="10.5" fill="#065f46">• &lt;tspan font-weight="700">Coğrafya:&lt;/tspan> Nil'den</text>
   <text x="221" y="108" font-size="10.5" fill="#065f46">Maveraünnehir'e (Amuderya)</text>
   <text x="221" y="124" font-size="10.5" fill="#065f46">Mezopotamya ve İran.</text>
-  <text x="213" y="144" font-size="10.5" fill="#065f46">• <tspan font-weight="700">Konum:</tspan> İslam'ın doğduğu</text>
+  <text x="213" y="144" font-size="10.5" fill="#065f46">• &lt;tspan font-weight="700">Konum:&lt;/tspan> İslam'ın doğduğu</text>
   <text x="221" y="160" font-size="10.5" font-weight="700" fill="#047857">Hicaz'a doğrudan komşu!</text>
-  <text x="213" y="180" font-size="10.5" fill="#065f46">• <tspan font-weight="700">Katkısı:</tspan> Devlet yönetimi</text>
+  <text x="213" y="180" font-size="10.5" fill="#065f46">• &lt;tspan font-weight="700">Katkısı:&lt;/tspan> Devlet yönetimi</text>
   <text x="221" y="194" font-size="10.5" fill="#065f46">(divan) ve edebiyat.</text>
 
   <rect x="386" y="48" width="170" height="155" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
   <rect x="386" y="48" width="170" height="26" rx="8" fill="#d97706"/>
   <text x="471" y="66" text-anchor="middle" font-size="11.5" font-weight="800" fill="#ffffff">3. HİNDU TERKİBİ</text>
-  <text x="396" y="92" font-size="10.5" fill="#78350f">• <tspan font-weight="700">Coğrafya:</tspan> Hindistan</text>
+  <text x="396" y="92" font-size="10.5" fill="#78350f">• &lt;tspan font-weight="700">Coğrafya:&lt;/tspan> Hindistan</text>
   <text x="404" y="108" font-size="10.5" fill="#78350f">alt kıtası ve çevresi.</text>
-  <text x="396" y="128" font-size="10.5" fill="#78350f">• <tspan font-weight="700">Dil:</tspan> Sanskritçe</text>
-  <text x="396" y="148" font-size="10.5" fill="#92400e">• <tspan font-weight="700">Katkısı:</tspan> Onluk sayı sistemi</text>
+  <text x="396" y="128" font-size="10.5" fill="#78350f">• &lt;tspan font-weight="700">Dil:&lt;/tspan> Sanskritçe</text>
+  <text x="396" y="148" font-size="10.5" fill="#92400e">• &lt;tspan font-weight="700">Katkısı:&lt;/tspan> Onluk sayı sistemi</text>
   <text x="404" y="164" font-size="10.5" fill="#92400e">(Hint rakamları), astronomi</text>
   <text x="404" y="180" font-size="10.5" fill="#92400e">(Sindhind) ve Kelile ve Dimne.</text>
 
   <rect x="570" y="48" width="170" height="155" rx="10" fill="#f3e8ff" stroke="#a855f7" stroke-width="2"/>
   <rect x="570" y="48" width="170" height="26" rx="8" fill="#7c3aed"/>
   <text x="655" y="66" text-anchor="middle" font-size="11.5" font-weight="800" fill="#ffffff">4. UZAK DOĞU TERKİBİ</text>
-  <text x="580" y="92" font-size="10.5" fill="#581c87">• <tspan font-weight="700">Coğrafya:</tspan> Çin, komşu</text>
+  <text x="580" y="92" font-size="10.5" fill="#581c87">• &lt;tspan font-weight="700">Coğrafya:&lt;/tspan> Çin, komşu</text>
   <text x="588" y="108" font-size="10.5" fill="#581c87">bölgeler ve İç Asya havzası.</text>
-  <text x="580" y="136" font-size="10.5" fill="#6b21a8">• <tspan font-weight="700">Katkısı:</tspan> 751 Talas Savaşı</text>
-  <text x="588" y="152" font-size="10.5" fill="#6b21a8">sonrası <tspan font-weight="700">kâğıt üretimi</tspan>,</text>
+  <text x="580" y="136" font-size="10.5" fill="#6b21a8">• &lt;tspan font-weight="700">Katkısı:&lt;/tspan> 751 Talas Savaşı</text>
+  <text x="588" y="152" font-size="10.5" fill="#6b21a8">sonrası &lt;tspan font-weight="700">kâğıt üretimi&lt;/tspan>,</text>
   <text x="588" y="168" font-size="10.5" fill="#6b21a8">matbaa, pusula ve seramik</text>
   <text x="588" y="184" font-size="10.5" fill="#6b21a8">teknikleri öğrenildi.</text>
 

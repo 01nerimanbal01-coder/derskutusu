@@ -115,7 +115,7 @@ def gorsel_4():
         '<text x="380" y="30" fill="#10b981" font-size="16" font-weight="700" '
         'text-anchor="middle">1. ÜNİTE KELİME VE FİİL HAZİNESİ ÖZETİ</text>'
     )
-    ic += _kart(25, 50, 340, 175, "#059669", "Ünitede Geçen Önemli Mu'tel Fiiller", [
+    ic += _kart(25, 50, 340, 175, "#059669", "Bu bölümde Geçen Önemli Mu'tel Fiiller", [
         "• Kâle - Yekûlu - Kul (Ecvef): Söyledi - Söyler - De!",
         "• Kâne - Yekûnu - Kün (Ecvef): Oldu - Olur - Ol!",
         "• Câe - Yecîu - Ci' (Ecvef + Mehmûz): Geldi - Gelir - Gel!",

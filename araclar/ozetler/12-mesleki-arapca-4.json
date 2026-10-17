@@ -1,205 +1,250 @@
 {
- "ad": "12. Sınıf Mesleki Arapça — 4. Hafta Konu Anlatımı",
- "sinif": 12,
- "ders": "mesleki-arapca",
- "ders_adi": "Mesleki Arapça",
- "hafta": 4,
- "tarih": "5-9 Ekim 2026",
- "yayin_tarihi": "2026-10-17",
- "unite": "1. Ünite: التَّوْحيد والشِّرْك (Tevhit ve Şirk)",
- "konu": "1. Ünite: Tevhit ve Şirk — 4. Ders: İhlâs ve Şirk Kavramları, Tevhit Metinleri ve Mu’tel Fiillerin (Misal, Ecvef, Nâkıs) Çekimi",
- "ciktilar": [
-  "MARP12.1.4: Birinci ünitenin dördüncü dersinde yer alan Tevhit ({ar:التَّوْحِيد}), İhlâs ({ar:الْإِخْلَاص}) ve Şirk ({ar:الشِّرْك}) kavramlarıyla ilgili Arapça metinleri okur, tahlil eder ve yorumlar.",
-  "Kur'an-ı Kerim'de tevhit ve şirki konu alan ayetleri (İhlâs Suresi, Nisâ Suresi 48, Lokmân Suresi 13, Zümer Suresi 3) Arapça dil yapılarıyla birlikte açıklar.",
-  "Mesleki Arapça metinlerinde sıkça geçen mu'tel fiillerin (Misal, Ecvef ve Nâkıs fiillerin) mazi, muzâri ve emir çekimlerindeki illet harfi değişimlerini (i'lâl ve hazif kurallarını) cümle içinde uygular."
- ],
- "giris": "Mesleki Arapça dersimizin birinci ünitesi olan 'Tevhit ve Şirk' ({ar:التَّوْحِيدُ وَالشِّرْكُ}) ünitesini bu hafta dördüncü ders ve genel ünite değerlendirmesiyle tamamlıyoruz. İslam akaidinde 'Tevhit' ve 'İhlâs' kavramları Arapça olarak nasıl tanımlanır? Allah Teâlâ'nın 'en büyük zulüm' ({ar:ظُلْمٌ عَظِيمٌ}) olarak nitelendirdiği ve tövbe edilmeden ölünürse bağışlamayacağını bildirdiği 'Şirk' ({ar:الشِّرْك}) kaç kısma ayrılır? Ayrıca Arapça dini metinlerde her satırda karşımıza çıkan {ar:وَجَدَ}, {ar:قَالَ}, {ar:كَانَ}, {ar:دَعَا} ve {ar:هَدَى} gibi mu'tel (illetli) fiiller mazi, muzâri ve emir kiplerinde çekimlenirken hangi ses değişimlerine uğrar? Bu hafta ünitemizin tüm metin ve dil bilgisi kazanımlarını bütünleştireceğiz.",
- "ozet": [
-  "Arapçada 'Tevhit' ({ar:التَّوْحِيدُ}); Allah'ı zatında, sıfatlarında ve fiillerinde birlemek ve yalnız O'na ibadet etmektir ({ar:إِفْرَادُ اللّٰهِ بِالْعِبَادَةِ}); 'İhlâs' ({ar:الْإِخْلَاصُ}) ise dini ve ibadeti şirkten ve gösterişten (riyadan) arındırarak sadece Allah için halis kılmaktır.",
-  "'Şirk' ({ar:الشِّرْكُ}); Allah'a zatında, sıfatlarında veya ibadetinde ortak koşmaktır ({ar:اِتِّخَاذُ شَرِيكٍ لِلّٰهِ}) ve Lokmân Suresi 13. ayette 'en büyük zulüm' ({ar:إِنَّ الشِّرْكَ لَظُلْمٌ عَظِيمٌ}) olarak tanımlanmıştır.",
-  "İslam akaidinde şirk; insanı dinden çıkaran ve tövbesiz ölünürse affedilmeyen 'Büyük Şirk' ({ar:الشِّرْكُ الْأَكْبَرُ}) ile ibadetlere gösteriş karıştırmak anlamına gelen 'Küçük Şirk / Riya' ({ar:الشِّرْكُ الْأَصْغَرُ / الرِّيَاءُ}) olmak üzere ikiye ayrılır.",
-  "İlk harfi vav olan 'Misal Fiiller' ({ar:وَجَدَ، وَصَلَ، وَعَدَ}) muzâri ve emir kipine aktarılırken başlarındaki 'vav' harfi düşer ({ar:يَجِدُ - جِدْ / يَصِلُ - صِلْ}).",
-  "Orta harfi illetli olan 'Ecvef Fiiller' ({ar:قَالَ، كَانَ، بَاعَ، نَامَ}), cemi müennes ve muhatap/mütekellim mazi zamirleriyle çekimlenirken ve emir kipinde orta illet harfini düşürür ({ar:قُلْتُ - قُلْ / كُنْتُ - كُنْ}).",
-  "Son harfi illetli olan 'Nâkıs Fiiller' ({ar:دَعَا، هَدَى، رَضِيَ}), emir kipinde (ve cezm halinde) sondaki illet harfinin düşmesiyle ({ar:اُدْعُ، اِهْدِ، اِرْضَ}) çekimlenir."
- ],
- "bolumler": [
-  {
-   "baslik": "1. et-Tevhîd ve el-İhlâs Kavramları (Metin Tahlili)",
-   "metin": [
-    "Sözlükte 'bir şeyin tek olduğuna hükmetmek, birlemek' anlamına gelen {ar:التَّوْحِيدُ} (et-Tevhîd) kelimesi, {ar:وَحَّدَ - يُوَحِّدُ - تَوْحِيدٌ} (tef'îl bâbı) fiilinin mastarıdır. İslami ıstılahta tevhit Arapça olarak şöyle tanımlanır:\n{ar:التَّوْحِيدُ هُوَ الْإِيمَانُ بِأَنَّ اللّٰهَ وَاحِدٌ لَا شَرِيكَ لَهُ فِي ذَاتِهِ وَصِفَاتِهِ وَأَفْعَالِهِ، وَإِفْرَادُهُ بِالْعِبَادَةِ.}\n(Tevhit; Allah'ın zatında, sıfatlarında ve fiillerinde bir olduğuna, hiçbir ortağı bulunmadığına iman etmek ve ibadette yalnız O'nu birlemektir.) Tevhit inancına sahip mümine Arapçada {ar:الْمُوَحِّدُ} (el-Muvahhid) denir.",
-    "Tevhit ile ayrılmaz bir bütün olan diğer temel kavram {ar:الْإِخْلَاصُ} (el-İhlâs) kavramıdır. {ar:أَخْلَصَ - يُخْلِصُ - إِخْلَاصٌ} (if'âl bâbı) fiilinden türeyen ihlâs; 'bir şeyi karışıklıklardan arındırıp saf ve tertemiz hale getirmek' demektir. Dinî terim olarak ise:\n{ar:الْإِخْلَاصُ هُوَ تَصْفِيَةُ الْعَمَلِ وَالْعِبَادَةِ مِنَ الشِّرْكِ وَالرِّيَاءِ، وَقَصْدُ وَجْهِ اللّٰهِ تَعَالَى وَحْدَهُ.}\n(İhlâs; ameli ve ibadeti şirkten ve gösterişten arındırmak ve yalnızca Yüce Allah'ın rızasını/cemalini kastetmektir.)",
-    "Kur'an-ı Kerim'de tevhit ve ihlâsın en veciz ifadesi İhlâs Suresi ve Zümer Suresi 2-3. ayetlerdir: {ar:فَاعْبُدِ اللّٰهَ مُخْلِصًا لَهُ الدِّينَ * أَلَا لِلّٰهِ الدِّينُ الْخَالِصُ} — 'Öyleyse dini yalnız Allah'a halis kılarak (samimiyetle) O'na kulluk et! İyi bilin ki halis din yalnız Allah'ındır.' (Zümer, 39/2-3)."
-   ],
-   "kutu": {
-    "tur": "kavram",
-    "baslik": "Tevhidin Üç Boyutu (Aksâmü't-Tevhîd)",
-    "metin": "Mesleki Arapça akaid metinlerinde tevhit üç boyutta incelenir:\n1) {ar:تَوْحِيدُ الرُّبُوبِيَّةِ}: Yaratma, rızık verme ve kâinatı yönetmede yalnız Allah'ı Rab kabul etmek.\n2) {ar:تَوْحِيدُ الْأُلُوهِيَّةِ / الْعِبَادَةِ}: Namaz, dua, kurban ve tevekkül gibi tüm ibadetleri yalnız Allah'a yöneltmek.\n3) {ar:تَوْحِيدُ الْأَسْمَاءِ وَالصِّفَاتِ}: Allah'ı en güzel isim ve sıfatlarıyla (Esmaülhüsna) eşsiz olarak tanımak."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#38bdf8\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">ET-TEVHÎD, EL-İHLÂS VE EŞ-ŞİRK KAVRAMLARI</text><rect x=\"25\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#0284c7\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#0284c7\"/><text x=\"195\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">et-Tevhîd ve el-İhlâs (Allah'ı Birlemek)</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• et-Tevhîd: İfrâdu'llâhi bi'l-ibâde (İbadette</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  yalnızca Allah'ı birlemek ve eş koşmamak)</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• el-İhlâs: Dini ve ibadeti riyadan, şirkten</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  arındırarak yalnız Allah için halis kılmak</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• el-Muvahhid: Allah'ın birliğine inanan mümin</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Kelimetü't-Tevhîd: Lâ ilâhe illallâh</text><rect x=\"395\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#10b981\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#10b981\"/><text x=\"565\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">eş-Şirk ve Türleri (Ortak Koşmak)</text><text x=\"407\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• eş-Şirk: İttihâzü şerîkin lillâh (Allah'a zatında,</text><text x=\"407\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  sıfatlarında veya ibadetinde ortak koşmak)</text><text x=\"407\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• eş-Şirkü'l-Ekber: İnsanı dinden çıkaran büyük şirk</text><text x=\"407\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• eş-Şirkü'l-Asğar (er-Riyâ): Gösteriş için ibadet</text><text x=\"407\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• 'İnne'ş-şirke le-zulmün azîm' (Lokmân 13):</text><text x=\"407\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  Şüphesiz şirk çok büyük bir zulümdür!</text></svg>"
-  },
-  {
-   "baslik": "2. eş-Şirk ve Türleri: eş-Şirkü'l-Ekber ve eş-Şirkü'l-Asğar",
-   "metin": [
-    "Tevhit kavramının tam zıddı {ar:الشِّرْكُ} (eş-Şirk) kavramıdır. {ar:أَشْرَكَ - يُشْرِكُ - إِشْرَاكٌ / شِرْكٌ} fiilinden gelen şirk; 'ortak kılmak, eş koşmak' demektir. Allah'a ortak koşan kimseye {ar:الْمُشْرِكُ} (el-Müşrik), tapınılan putlara ise {ar:الْأَصْنَامُ} (el-Esnâm - tekili {ar:صَنَمٌ}) veya {ar:الْأَوْثَانُ} (el-Evsân - tekili {ar:وَثَنٌ}) adı verilir.",
-    "Kur'an-ı Kerim'de Hz. Lokmân'ın (a.s.) oğluna verdiği ilk ve en önemli öğüt şirkin mahiyetini ortaya koyar: {ar:يَا بُنَيَّ لَا تُشْرِكْ بِاللّٰهِ إِنَّ الشِّرْكَ لَظُلْمٌ عَظِيمٌ} — 'Yavrucuğum! Allah'a ortak koşma! Çünkü şirk gerçekten çok büyük bir zulümdür.' (Lokmân, 31/13). Nisâ Suresi 48. ayette ise tövbe edilmeden ölündüğü takdirde şirkin asla bağışlanmayacağı bildirilir: {ar:إِنَّ اللّٰهَ لَا يَغْفِرُ أَنْ يُشْرَكَ بِهِ وَيَغْفِرُ مَا دُونَ ذٰلِكَ لِمَنْ يَشَاءُ} — 'Şüphesiz Allah, kendisine ortak koşulmasını bağışlamaz; bunun dışındaki günahları ise dilediği kimseler için bağışlar.'",
-    "Mesleki Arapça metinlerinde şirk iki kısımda incelenir:\n1) {ar:الشِّرْكُ الْأَكْبَرُ} (Büyük Şirk): Allah'tan başka bir varlığı ilah kabul etmek, putlara tapmak veya Allah'tan başkasına ibadet etmektir. Sahibini İslam dairesinden çıkarır ({ar:يُخْرِجُ صَاحِبَهُ مِنَ الْمِلَّةِ}) ve bütün amellerini boşa çıkarır.\n2) {ar:الشِّرْكُ الْأَصْغَرُ} (Küçük Şirk / Gizli Şirk): İnsanların övgüsünü kazanmak ve gösteriş yapmak için ibadet etmektir ki buna {ar:الرِّيَاءُ} (er-Riyâ) denir. Hz. Peygamber (s.a.v.) müminler için en çok korktuğu şeyin küçük şirk (riya) olduğunu bildirmiştir ({ar:إِنَّ أَخْوَفَ مَا أَخَافُ عَلَيْكُمُ الشِّرْكُ الْأَصْغَرُ: الرِّيَاءُ})."
-   ],
-   "kutu": {
-    "tur": "onemli",
-    "baslik": "Zıt Anlamlı Kavram Eşleştirmeleri (el-Mütezâddât)",
-    "metin": "• {ar:التَّوْحِيدُ} (Tevhit / Birleme) $\\longleftrightarrow$ {ar:الشِّرْكُ} (Şirk / Ortak koşma)\n• {ar:الْإِيمَانُ} (İman) $\\longleftrightarrow$ {ar:الْكُفْرُ} (Küfür / İnkâr)\n• {ar:الْإِخْلَاصُ} (İhlâs / Samimiyet) $\\longleftrightarrow$ {ar:الرِّيَاءُ} (Riya / Gösteriş)\n• {ar:الْمُوَحِّدُ} (Muvahhid) $\\longleftrightarrow$ {ar:الْمُشْرِكُ} (Müşrik)\n• {ar:الْهِدَايَةُ} (Hidayet) $\\longleftrightarrow$ {ar:الضَّلَالَةُ} (Dalâlet / Sapıklık)"
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#f59e0b\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">KUR'AN'DA TEVHİT VE ŞİRK AYETLERİ (NİSÂ 48 VE LOKMÂN 13)</text><rect x=\"25\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#d97706\"/><text x=\"195\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Nisâ Suresi 48 ve 116. Ayetler</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• 'İnnallâhe lâ yağfiru en yüşrake bihî'</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  (Şüphesiz Allah kendisine ortak koşulmasını bağışlamaz)</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• 'Ve yağfiru mâ dûne zâlike li-men yeşâ''</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  (Bunun dışındaki günahları dilediği kimse için bağışlar)</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Tövbe edilmeden ölünürse şirk affedilmez</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Tevhit ise cennetin ve mağfiretin anahtarıdır</text><rect x=\"395\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#8b5cf6\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#8b5cf6\"/><text x=\"565\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">İhlâs Suresi ve Zümer Suresi 3. Ayet</text><text x=\"407\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• 'Kul hüvallâhu ehad, Allâhü's-Samed'</text><text x=\"407\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  (De ki: O Allah birdir; Allah Samed'dir)</text><text x=\"407\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• 'Lem yelid ve lem yûled ve lem yekün lehû küfüven ehad'</text><text x=\"407\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  (Doğurmamış ve doğmamıştır; hiçbir dengi yoktur)</text><text x=\"407\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• 'Elâ lillâhi'd-dînü'l-hâlis' (Zümer 3):</text><text x=\"407\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  (İyi bilin ki halis din yalnız Allah'ındır)</text></svg>"
-  },
-  {
-   "baslik": "3. Dil Bilgisi (el-Kavâid): Misal ve Ecvef Fiillerin Çekimi",
-   "metin": [
-    "Geçen hafta asli harfleri arasında illet harfi ({ar:ا، و، ي}) bulunan fiillere 'Mu'tel Fiil' ({ar:الْفِعْلُ الْمُعْتَلُّ}) dendiğini ve dört kısma (Misal, Ecvef, Nâkıs, Lefîf) ayrıldığını öğrenmiştik. Bu hafta mu'tel fiillerin mazi, muzâri ve emir çekimlerinde meydana gelen ses değişimlerini (i'lâl ve hazif kurallarını) inceliyoruz:\n1) Misal Fiillerin Çekimi ({ar:الْمِثَالُ الْوَاوِيُّ}): İlk harfi 'vav' ({ar:و}) olan {ar:وَجَدَ} (buldu), {ar:وَصَلَ} (ulaştı), {ar:وَعَدَ} (söz verdi), {ar:وَهَبَ} (bağışladı) ve {ar:وَلَدَ} (doğurdu) gibi fiiller mazi çekiminde sahih fiil gibi çekimlenir, hiçbir harf düşmez ({ar:وَجَدَ - وَجَدَا - وَجَدُوا ... وَجَدْتُ}). Ancak bu fiiller muzâri ve emir kipine aktarılırken baştaki 'vav' harfi DÜŞER:\n• {ar:وَجَدَ} (Mazi) $\\rightarrow$ {ar:يَجِدُ} (Muzâri - buluyor) $\\rightarrow$ {ar:جِدْ!} (Emir - Bul!)\n• {ar:وَصَلَ} (Mazi) $\\rightarrow$ {ar:يَصِلُ} (Muzâri - ulaşıyor) $\\rightarrow$ {ar:صِلْ!} (Emir - Ulaş!)\n• {ar:وَلَدَ} (Mazi) $\\rightarrow$ {ar:يَلِدُ} (Muzâri - doğuruyor) $\\rightarrow$ {ar:لَمْ يَلِدْ} (Cezm hali - Doğurmadı, İhlâs 3).",
-    "2) Ecvef Fiillerin Çekimi ({ar:الْأَجْوَفُ}): Orta harfi illetli olan {ar:قَالَ} (dedi - aslı {ar:قَوَلَ}), {ar:كَانَ} (oldu), {ar:بَاعَ} (sattı - aslı {ar:بَيَعَ}), {ar:صَامَ} (oruç tuttu) ve {ar:خَافَ} (korktu) fiillerinde:\n• Mazi çekiminde 'hünne' ({ar:هُنَّ}) zamirinden itibaren son harf sâkin olduğu için iki sâkin yan yana gelmesin diye ortadaki elif DÜŞER: {ar:قَالَ - قَالَا - قَالُوا - قَالَتْ - قَالَتَا - قُلْنَ - قُلْتَ - قُلْتُمَا - قُلْتُمْ - قُلْتِ - قُلْتُمَا - قُلْتُنَّ - قُلْتُ - قُلْنَا}.\n• Muzâri çekiminde illet harfi aslına (vav veya yâ'ya) döner: {ar:قَالَ -> يَقُولُ} / {ar:كَانَ -> يَكُونُ} / {ar:بَاعَ -> يَبِيعُ} / {ar:خَافَ -> يَخَافُ}.\n• Emir ve meczum (cezm) halinde ise son harf cezm olduğu için ortadaki illet harfi yine DÜŞER: {ar:قَالَ -> قُلْ!} (De!) / {ar:كَانَ -> كُنْ!} (Ol! - {ar:لَمْ يَكُنْ}) / {ar:بَاعَ -> بِعْ!} (Sat!) / {ar:صَامَ -> صُمْ!} (Oruç tut!)."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Kur'an'dan Ecvef ve Misal Fiil Örnekleri",
-    "metin": "İhlâs Suresi'nde her iki kuralın en güzel örnekleri yer alır:\n• {ar:قُلْ هُوَ اللّٰهُ أَحَدٌ}: {ar:قُلْ} emir fiili, ecvef olan {ar:قَالَ - يَقُولُ} fiilinin ortasındaki vav'ın düşmesiyle oluşmuştur.\n• {ar:لَمْ يَلِدْ}: Misal fiil olan {ar:وَلَدَ} fiilinin muzârisinde ({ar:يَلِدُ}) baştaki vav düşmüştür.\n• {ar:لَمْ يَكُنْ}: Ecvef olan {ar:كَانَ - يَكُونُ} fiili {ar:لَمْ} ile cezm olunca ortadaki vav düşmüştür."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#a855f7\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">MU'TEL FİİLLERİN MAZİ, MUZÂRİ VE EMİR ÇEKİM ÖZELLİKLERİ</text><rect x=\"25\" y=\"50\" width=\"225\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#6366f1\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"225\" height=\"32\" rx=\"12\" fill=\"#6366f1\"/><text x=\"137\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Misal Fiil Çekimi</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• İlk harfi illetli: Vecede</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• Mazi: Vecede - Vecedâ - Vecedû</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Muzâri çekiminde başındaki</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  'vav' harfi düşer:</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">  Vecede -> Yecidu (Emir: Cid!)</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  Vasale -> Yasilu (Emir: Sil!)</text><rect x=\"268\" y=\"50\" width=\"225\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#ec4899\" stroke-width=\"2\"/><rect x=\"268\" y=\"50\" width=\"225\" height=\"32\" rx=\"12\" fill=\"#ec4899\"/><text x=\"380\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Ecvef Fiil Çekimi</text><text x=\"280\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Orta harfi illetli: Kâle, Bâa</text><text x=\"280\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• Mazi cemide orta harf düşer:</text><text x=\"280\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">  Kâle ... Kulne / Kulte / Kultü</text><text x=\"280\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Muzâri: Yekûlu / Yebîu / Yenâmu</text><text x=\"280\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Emirde illet harfi düşer:</text><text x=\"280\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  Kâle -> Kul! / Bâa -> Bi'!</text><rect x=\"510\" y=\"50\" width=\"225\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#14b8a6\" stroke-width=\"2\"/><rect x=\"510\" y=\"50\" width=\"225\" height=\"32\" rx=\"12\" fill=\"#14b8a6\"/><text x=\"622\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Nâkıs Fiil Çekimi</text><text x=\"522\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Son harfi illetli: Deâ, Hedâ</text><text x=\"522\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• Mazi: Deâ - Deavâ - Deav</text><text x=\"522\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Muzâri: Yed'û / Yehdî / Yerda</text><text x=\"522\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Emir sigasında sondaki illet</text><text x=\"522\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">  harfi düşer (illet harfi hazfi):</text><text x=\"522\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  Deâ -&gt; Ud'u! / Hedâ -&gt; İhdi!</text></svg>"
-  },
-  {
-   "baslik": "4. Nâkıs Fiillerin Çekimi ve Cezm/Emir Durumu",
-   "metin": [
-    "Son harfi illetli olan mu'tel fiillere 'Nâkıs Fiil' ({ar:الْفِعْلُ النَّاقِصُ}) denir. Ünitemizdeki dini metinlerde en çok geçen nâkıs fiiller şunlardır:\n• {ar:دَعَا - يَدْعُو} (Dua etti, çağırdı, davet etti)\n• {ar:عَفَا - يَعْفُو} (Affetti, bağışladı)\n• {ar:هَدَى - يَهْدِي} (Hidayet verdi, doğru yolu gösterdi)\n• {ar:قَضَى - يَقْضِي} (Hükmetti, yerine getirdi)\n• {ar:رَضِيَ - يَرْضَى} (Razı oldu, hoşnut oldu)\n• {ar:خَشِيَ - يَخْشَى} (Saygıyla korktu, haşyet duydu)",
-    "Nâkıs fiillerin çekimindeki temel kurallar şunlardır:\n1) Mazi Çekimi: Cemî müzekker ({ar:هُمْ}) sigasında cemi vav'ı geldiğinde sondaki illet harfi düşer: {ar:دَعَا - دَعَوَا - دَعَوْا} / {ar:هَدَى - هَدَيَا - هَدَوْا} / {ar:رَضِيَ - رَضِيَا - رَضُوا} ({ar:رَضِيَ اللّٰهُ عَنْهُمْ وَرَضُوا عَنْهُ}).\n2) Muzâri Çekimi: Merfû halinde sondaki illet harfi (vav, yâ veya elif-i maksûre) korunur: {ar:الْمُؤْمِنُ يَدْعُو اللّٰهَ وَحْدَهُ} (Mümin yalnız Allah'a dua eder).\n3) Emir ve Cezm Hali: Nâkıs bir fiil emir kipine çevrildiğinde veya başına cezm edatı ({ar:لَمْ، لَا النَّاهِيَة}) geldiğinde, cezm alameti olarak SONDAKİ İLLET HARFİ DÜŞER (hazfu harfi'l-ille):\n• {ar:دَعَا - يَدْعُو} $\\rightarrow$ Emir: {ar:اُدْعُ!} (Dua et / Davet et! - Örn: {ar:اُدْعُ إِلَى سَبِيلِ رَبِّكَ})\n• {ar:هَدَى - يَهْدِي} $\\rightarrow$ Emir: {ar:اِهْدِ!} (Hidayet ver! - Örn: {ar:اِهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ})\n• {ar:عَفَا - يَعْفُو} $\\rightarrow$ Emir: {ar:اُعْفُ!} (Affet! - Örn: {ar:فَاعْفُ عَنَّا})."
-   ],
-   "kutu": {
-    "tur": "bilgi",
-    "baslik": "Hem Mehmûz Hem Mu'tel Fiiller: {ar:جَاءَ} ve {ar:شَاءَ}",
-    "metin": "Kur'an'da çok sık geçen {ar:جَاءَ - يَجِيءُ} (geldi) ve {ar:شَاءَ - يَشَاءُ} (diledi) fiilleri; ortalarında illet harfi (elif) bulunduğu için 'Ecvef', son harfleri hemze ({ar:ء}) olduğu için aynı zamanda 'Mehmûzü'l-Lâm' fiillerdir ({ar:مَنْ يَشَاءُ} - dilediği kimse)."
-   }
-  },
-  {
-   "baslik": "5. Örnek Mesleki Arapça Diyalog ve Metin Uygulaması",
-   "metin": [
-    "Aşağıdaki örnek Arapça metin, birinci ünitede öğrendiğimiz tüm kavram ve fiilleri bir arada içermektedir:\n• {ar:أَرْسَلَ اللّٰهُ جَمِيعَ الْأَنْبِيَاءِ وَالرُّسُلِ لِدَعْوَةِ النَّاسِ إِلَى التَّوْحِيدِ وَنَبْذِ الشِّرْكِ.}\n(Allah, bütün nebileri ve resulleri insanları tevhide davet etmek ve şirki terk ettirmek için göndermiştir.)\n• {ar:قَالَ اللّٰهُ تَعَالَى: وَاعْبُدُوا اللّٰهَ وَلَا تُشْرِكُوا بِهِ شَيْئًا.}\n(Yüce Allah şöyle buyurdu: Allah'a ibadet edin ve O'na hiçbir şeyi ortak koşmayın! - Nisâ, 4/36.)\n• {ar:الْمُسْلِمُ الْمُوَحِّدُ يَدْعُو رَبَّهُ بِإِخْلَاصٍ، وَلَا يَخَافُ إِلَّا اللّٰهَ، وَيَتَوَكَّلُ عَلَيْهِ فِي كُلِّ أُمُورِهِ.}\n(Tevhit ehli Müslüman, Rabbine ihlasla dua eder, Allah'tan başkasından korkmaz ve bütün işlerinde O'na tevekkül eder.)"
-   ],
-   "kutu": {
-    "tur": "kavram",
-    "baslik": "Metindeki Mu'tel Fiillerin Analizi",
-    "metin": "• {ar:قَالَ}: Ecvef mazi fiil.\n• {ar:يَدْعُو}: Nâkıs muzâri fiil (mazi: {ar:دَعَا}).\n• {ar:يَخَافُ}: Ecvef muzâri fiil (mazi: {ar:خَافَ}).\n• {ar:وَلَا تُشْرِكُوا}: Nehiy (yasaklama) fiili, sonundaki nûn düşerek cezm olmuştur."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#10b981\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">1. ÜNİTE KELİME VE FİİL HAZİNESİ ÖZETİ</text><rect x=\"25\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#059669\"/><text x=\"195\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Ünitede Geçen Önemli Mu'tel Fiiller</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Kâle - Yekûlu - Kul (Ecvef): Söyledi - Söyler - De!</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• Kâne - Yekûnu - Kün (Ecvef): Oldu - Olur - Ol!</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Câe - Yecîu - Ci' (Ecvef + Mehmûz): Geldi - Gelir - Gel!</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Şâe - Yeşâu (Ecvef + Mehmûz): Diledi - Diler</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Deâ - Yed'û - Ud'u (Nâkıs): Dua etti / Çağırdı</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Hedâ - Yehdî - İhdi (Nâkıs): Hidayet verdi / Yol gösterdi</text><rect x=\"395\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#0ea5e9\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#0ea5e9\"/><text x=\"565\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Tevhit ve Şirk Ünitesi Temel Terimleri</text><text x=\"407\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• et-Tevhîd (Birleme) x eş-Şirk (Ortak koşma)</text><text x=\"407\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• el-İhlâs (Samimiyet) x er-Riyâ (Gösteriş)</text><text x=\"407\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• el-Muvahhid / el-Mü'min x el-Müşrik / el-Kâfir</text><text x=\"407\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• el-İbâde (Kulluk), ed-Duâ (Yakarış), et-Tevekkül</text><text x=\"407\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• el-Esnâm / el-Evsân (Putlar)</text><text x=\"407\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• el-Mağfire (Bağışlanma), ez-Zulmü'l-Azîm (Büyük zulüm)</text></svg>"
-  },
-  {
-   "baslik": "6. Birinci Ünite Genel Değerlendirme: Tevhit ve Şirk",
-   "metin": [
-    "Birinci ünite boyunca İslam'ın en temel esası olan Tevhit ilkesini, Esmaülhüsna'yı, İhlâs ve Şirk kavramlarını özgün Arapça ayet ve hadis metinleri üzerinden inceledik.",
-    "Dil bilgisi (kavâid) bölümünde ise Arapça fiilleri aksâm-ı seb'a (yedi kısım) çerçevesinde Sahih (Sâlim, Mehmûz, Mudâaf) ve Mu'tel (Misal, Ecvef, Nâkıs, Lefîf) olarak sınıflandırdık ve çekim kurallarını öğrendik.",
-    "Bu kazanımlar, gelecek haftalarda başlayacağımız ikinci ünite metinlerini ve Kur'an-ı Kerim ayetlerini sözlük ve gramer yapısıyla çözümlememizde en sağlam temelimiz olacaktır."
-   ],
-   "kutu": {
-    "tur": "ozet",
-    "baslik": "Bölüm Özeti: İhlâs-Şirk ve Mu'tel Fiil Çekimleri",
-    "metin": "1. {ar:التَّوْحِيد}: İbadette Allah'ı birlemek; {ar:الْإِخْلَاص}: Ameli riyadan arındırmaktır.\n2. {ar:الشِّرْك}: Büyük şirk ({ar:الشِّرْكُ الْأَكْبَر}) ve küçük şirk/riya ({ar:الشِّرْكُ الْأَصْغَر}) olarak ikiye ayrılır.\n3. Misal fiilde muzâride vav düşer ({ar:وَجَدَ -> يَجِدُ}); Ecvefte emirde orta harf düşer ({ar:قَالَ -> قُلْ}).\n4. Nâkıs fiilde emir ve cezm halinde sondaki illet harfi düşer ({ar:دَعَا -> اُدْعُ / هَدَى -> اِهْدِ})."
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Mesleki Arapçada {ar:التَّوْحِيدُ} (Tevhit) ve {ar:الشِّرْكُ} (Şirk) kavramları nasıl tanımlanır? Lokmân Suresi 13. ayette şirk nasıl nitelendirilmiştir?",
-   "cevap": "{ar:التَّوْحِيدُ هُوَ إِفْرَادُ اللّٰهِ بِالْعِبَادَةِ} (Tevhit; ibadette yalnızca Allah'ı birlemektir). {ar:الشِّرْكُ هُوَ اِتِّخَاذُ شَرِيكٍ لِلّٰهِ فِي ذَاتِهِ أَوْ صِفَاتِهِ أَوْ عِبَادَتِهِ} (Şirk; Allah'a zatında, sıfatlarında veya ibadetinde ortak koşmaktır). Lokmân Suresi 13. ayette {ar:إِنَّ الشِّرْكَ لَظُلْمٌ عَظِيمٌ} ('Şüphesiz şirk çok büyük bir zulümdür') buyrulmuştur."
-  },
-  {
-   "soru": "{ar:الشِّرْكُ الْأَكْبَرُ} (Büyük Şirk) ile {ar:الشِّرْكُ الْأَصْغَرُ} (Küçük Şirk) arasındaki farkı Arapça terimleriyle açıklayınız.",
-   "cevap": "{ar:الشِّرْكُ الْأَكْبَرُ} (Büyük Şirk), Allah'tan başkasına tapmak ve ibadet etmektir; kişiyi dinden çıkarır ve tövbesiz ölünürse affedilmez (Nisâ, 4/48). {ar:الشِّرْكُ الْأَصْغَرُ} (Küçük Şirk) ise ibadetlere gösteriş karıştırmaktır ki buna {ar:الرِّيَاءُ} (riya) denir; zıddı ise {ar:الْإِخْلَاصُ} (ihlas)tır."
-  },
-  {
-   "soru": "Aşağıdaki mu'tel fiillerin çeşitlerini (Misal, Ecvef, Nâkıs) belirterek muzâri ve emir sigalarını yazınız: {ar:وَصَلَ}, {ar:قَالَ}, {ar:دَعَا}.",
-   "cevap": "1) {ar:وَصَلَ}: İlk harfi vav olduğu için **Misal** fiildir. Muzârisi: {ar:يَصِلُ}, Emri: {ar:صِلْ!} (baştaki vav düşer).\n2) {ar:قَالَ}: Orta harfi elif (illetli) olduğu için **Ecvef** fiildir. Muzârisi: {ar:يَقُولُ}, Emri: {ar:قُلْ!} (ortadaki illet harfi düşer).\n3) {ar:دَعَا}: Son harfi illetli olduğu için **Nâkıs** fiildir. Muzârisi: {ar:يَدْعُو}, Emri: {ar:اُدْعُ!} (sondaki illet harfi düşer)."
-  },
-  {
-   "soru": "İhlâs Suresi'nde geçen {ar:قُلْ}, {ar:لَمْ يَلِدْ} ve {ar:لَمْ يَكُنْ} fiillerinin mazi köklerini ve uğradıkları ses değişimlerini açıklayınız.",
-   "cevap": "• {ar:قُلْ}: Mazi kökü ecvef olan {ar:قَالَ} fiilidir; emir kipinde ortadaki illet harfi düşmüştür.\n• {ar:لَمْ يَلِدْ}: Mazi kökü misal olan {ar:وَلَدَ} fiilidir; muzâriye geçerken başındaki 'vav' harfi düşmüştür.\n• {ar:لَمْ يَكُنْ}: Mazi kökü ecvef olan {ar:كَانَ} ({ar:يَكُونُ}) fiilidir; {ar:لَمْ} ile cezm olunca ortadaki 'vav' harfi düşmüştür."
-  },
-  {
-   "soru": "{ar:فَاعْبُدِ اللّٰهَ مُخْلِصًا لَهُ الدِّينَ * أَلَا لِلّٰهِ الدِّينُ الْخَالِصُ} (Zümer, 39/2-3) ayetini Türkçeye tercüme ediniz.",
-   "cevap": "'Öyleyse dini yalnızca Allah'a halis kılarak (samimiyetle ve şirkten arındırarak) O'na ibadet et! İyi bilin ki halis (saf ve katışıksız) din yalnız Allah'ındır.'"
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "dogru_yanlis",
-   "soru": "Arapçada ibadetleri gösterişten (riyadan) ve şirkten arındırarak yalnızca Allah rızası için yapmaya {ar:الْإِخْلَاصُ} (el-İhlâs) denir.",
-   "cevap": "Doğru",
-   "aciklama": "{ar:الْإِخْلَاصُ} (İhlâs) samimiyet ve katışıksız bağlılık demektir; zıddı {ar:الرِّيَاءُ} (riya/gösteriş)tir."
-  },
-  {
-   "tur": "dogru_yanlis",
-   "soru": "Son harfi illetli olan Nâkıs fiiller ({ar:دَعَا، هَدَى}) emir kipine çevrildiğinde sondaki illet harfi korunur, hiçbir harf düşmez.",
-   "cevap": "Yanlış",
-   "aciklama": "Nâkıs fiillerin emir ve cezm hallerinde sondaki illet harfi düşer ({ar:دَعَا -> اُدْعُ} ve {ar:هَدَى -> اِهْدِ})."
-  },
-  {
-   "tur": "coktan_secmeli",
-   "soru": "Lokmân Suresi 13. ayette geçen {ar:يَا بُنَيَّ لَا تُشْرِكْ بِاللّٰهِ إِنَّ الشِّرْكَ لَ__________} ayetinde boş bırakılan yere aşağıdakilerden hangisi gelmelidir?",
-   "secenekler": [
-    "{ar:ظُلْمٌ عَظِيمٌ}",
-    "{ar:فَوْزٌ كَبِيرٌ}",
-    "{ar:دِينٌ خَالِصٌ}",
-    "{ar:صِرَاطٌ مُسْتَقِيمٌ}"
-   ],
-   "cevap": "{ar:ظُلْمٌ عَظِيمٌ}",
-   "aciklama": "Lokmân Suresi 13. ayette şirk 'çok büyük bir zulüm' ({ar:إِنَّ الشِّرْكَ لَظُلْمٌ عَظِيمٌ}) olarak tanımlanmıştır."
-  },
-  {
-   "tur": "coktan_secmeli",
-   "soru": "Ecvef bir fiil olan {ar:كَانَ - يَكُونُ} (oldu - olur) fiilinin müfred müzekker muhatap EMİR sigası ('Ol!') aşağıdakilerden hangisidir?",
-   "secenekler": [
-    "{ar:كُنْ}",
-    "{ar:قُلْ}",
-    "{ar:صِلْ}",
-    "{ar:اُدْعُ}"
-   ],
-   "cevap": "{ar:كُنْ}",
-   "aciklama": "{ar:كَانَ - يَكُونُ} fiilinin emri ortadaki vav'ın düşmesiyle {ar:كُنْ} ('Ol!' - {ar:كُنْ فَيَكُونُ}) şeklinde gelir."
-  },
-  {
-   "tur": "bosluk_doldurma",
-   "soru": "Hz. Peygamber (s.a.v.) bir hadis-i şerifinde ibadetlere gösteriş karıştırmayı ({ar:الرِّيَاءُ}) 'küçük şirk' anlamında {ar:الشِّرْكُ __________} olarak isimlendirmiştir.",
-   "cevap": "الْأَصْغَرُ",
-   "aciklama": "Gösteriş (riya), hadislerde 'küçük şirk' ({ar:الشِّرْكُ الْأَصْغَرُ}) olarak nitelendirilmiştir."
-  },
-  {
-   "tur": "bosluk_doldurma",
-   "soru": "Fâtiha Suresi'nde geçen {ar:اِهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ} ayetindeki {ar:اِهْدِ} emir fiilinin mazi kökü nâkıs bir fiil olan __________ fiilidir.",
-   "cevap": "هَدَى",
-   "aciklama": "{ar:اِهْدِ} ('Bize doğru yolu göster / hidayet et!') emir fiili, nâkıs olan {ar:هَدَى - يَهْدِي} fiilinden türemiştir."
-  },
-  {
-   "tur": "eslestirme",
-   "soru": "Aşağıdaki Arapça kavram ve fiilleri açıklamalarıyla eşleştiriniz.",
-   "eslestirmeler": [
+  "ad": "12. Sınıf Mesleki Arapça — 4. Hafta Konu Anlatımı",
+  "sinif": 12,
+  "ders": "mesleki-arapca",
+  "ders_adi": "Mesleki Arapça",
+  "hafta": 4,
+  "tarih": "5-9 Ekim 2026",
+  "yayin_tarihi": "2026-10-17",
+  "unite": "1. Ünite: التَّوْحيد والشِّرْك (Tevhit ve Şirk)",
+  "konu": "1. Ünite: Tevhit ve Şirk — 4. Ders: İhlâs ve Şirk Kavramları, Tevhit Metinleri ve Mu’tel Fiillerin (Misal, Ecvef, Nâkıs) Çekimi",
+  "ciktilar": [
+    "MARP12.1.4: Birinci ünitenin dördüncü dersinde yer alan Tevhit ({ar:التَّوْحِيد}), İhlâs ({ar:الْإِخْلَاص}) ve Şirk ({ar:الشِّرْك}) kavramlarıyla ilgili Arapça metinleri okur, tahlil eder ve yorumlar.",
+    "Kur'an-ı Kerim'de tevhit ve şirki konu alan ayetleri (İhlâs Suresi, Nisâ Suresi 48, Lokmân Suresi 13, Zümer Suresi 3) Arapça dil yapılarıyla birlikte açıklar.",
+    "Mesleki Arapça metinlerinde sıkça geçen mu'tel fiillerin (Misal, Ecvef ve Nâkıs fiillerin) mazi, muzâri ve emir çekimlerindeki illet harfi değişimlerini (i'lâl ve hazif kurallarını) cümle içinde uygular."
+  ],
+  "giris": "Mesleki Arapça dersimizin birinci ünitesi olan 'Tevhit ve Şirk' ({ar:التَّوْحِيدُ وَالشِّرْكُ}) ünitesini bu hafta dördüncü ders ve genel ünite değerlendirmesiyle tamamlıyoruz. İslam akaidinde 'Tevhit' ve 'İhlâs' kavramları Arapça olarak nasıl tanımlanır? Allah Teâlâ'nın 'en büyük zulüm' ({ar:ظُلْمٌ عَظِيمٌ}) olarak nitelendirdiği ve tövbe edilmeden ölünürse bağışlamayacağını bildirdiği 'Şirk' ({ar:الشِّرْك}) kaç kısma ayrılır? Ayrıca Arapça dini metinlerde her satırda karşımıza çıkan {ar:وَجَدَ}, {ar:قَالَ}, {ar:كَانَ}, {ar:دَعَا} ve {ar:هَدَى} gibi mu'tel (illetli) fiiller mazi, muzâri ve emir kiplerinde çekimlenirken hangi ses değişimlerine uğrar? Bu hafta ünitemizin tüm metin ve dil bilgisi kazanımlarını bütünleştireceğiz.",
+  "ozet": [
+    "Arapçada 'Tevhit' ({ar:التَّوْحِيدُ}); Allah'ı zatında, sıfatlarında ve fiillerinde birlemek ve yalnız O'na ibadet etmektir ({ar:إِفْرَادُ اللّٰهِ بِالْعِبَادَةِ}); 'İhlâs' ({ar:الْإِخْلَاصُ}) ise dini ve ibadeti şirkten ve gösterişten (riyadan) arındırarak sadece Allah için halis kılmaktır.",
+    "'Şirk' ({ar:الشِّرْكُ}); Allah'a zatında, sıfatlarında veya ibadetinde ortak koşmaktır ({ar:اِتِّخَاذُ شَرِيكٍ لِلّٰهِ}) ve Lokmân Suresi 13. ayette 'en büyük zulüm' ({ar:إِنَّ الشِّرْكَ لَظُلْمٌ عَظِيمٌ}) olarak tanımlanmıştır.",
+    "İslam akaidinde şirk; insanı dinden çıkaran ve tövbesiz ölünürse affedilmeyen 'Büyük Şirk' ({ar:الشِّرْكُ الْأَكْبَرُ}) ile ibadetlere gösteriş karıştırmak anlamına gelen 'Küçük Şirk / Riya' ({ar:الشِّرْكُ الْأَصْغَرُ / الرِّيَاءُ}) olmak üzere ikiye ayrılır.",
+    "İlk harfi vav olan 'Misal Fiiller' ({ar:وَجَدَ، وَصَلَ، وَعَدَ}) muzâri ve emir kipine aktarılırken başlarındaki 'vav' harfi düşer ({ar:يَجِدُ - جِدْ / يَصِلُ - صِلْ}).",
+    "Orta harfi illetli olan 'Ecvef Fiiller' ({ar:قَالَ، كَانَ، بَاعَ، نَامَ}), cemi müennes ve muhatap/mütekellim mazi zamirleriyle çekimlenirken ve emir kipinde orta illet harfini düşürür ({ar:قُلْتُ - قُلْ / كُنْتُ - كُنْ}).",
+    "Son harfi illetli olan 'Nâkıs Fiiller' ({ar:دَعَا، هَدَى، رَضِيَ}), emir kipinde (ve cezm halinde) sondaki illet harfinin düşmesiyle ({ar:اُدْعُ، اِهْدِ، اِرْضَ}) çekimlenir."
+  ],
+  "bolumler": [
     {
-     "sol": "{ar:الْمُوَحِّدُ}",
-     "sag": "Allah'ın birliğine (tevhide) iman eden mümin"
+      "baslik": "1. et-Tevhîd ve el-İhlâs Kavramları (Metin Tahlili)",
+      "metin": [
+        "Sözlükte 'bir şeyin tek olduğuna hükmetmek, birlemek' anlamına gelen {ar:التَّوْحِيدُ} (et-Tevhîd) kelimesi, {ar:وَحَّدَ - يُوَحِّدُ - تَوْحِيدٌ} (tef'îl bâbı) fiilinin mastarıdır. İslami ıstılahta tevhit Arapça olarak şöyle tanımlanır:\n{ar:التَّوْحِيدُ هُوَ الْإِيمَانُ بِأَنَّ اللّٰهَ وَاحِدٌ لَا شَرِيكَ لَهُ فِي ذَاتِهِ وَصِفَاتِهِ وَأَفْعَالِهِ، وَإِفْرَادُهُ بِالْعِبَادَةِ.}\n(Tevhit; Allah'ın zatında, sıfatlarında ve fiillerinde bir olduğuna, hiçbir ortağı bulunmadığına iman etmek ve ibadette yalnız O'nu birlemektir.) Tevhit inancına sahip mümine Arapçada {ar:الْمُوَحِّدُ} (el-Muvahhid) denir.",
+        "Tevhit ile ayrılmaz bir bütün olan diğer temel kavram {ar:الْإِخْلَاصُ} (el-İhlâs) kavramıdır. {ar:أَخْلَصَ - يُخْلِصُ - إِخْلَاصٌ} (if'âl bâbı) fiilinden türeyen ihlâs; 'bir şeyi karışıklıklardan arındırıp saf ve tertemiz hale getirmek' demektir. Dinî terim olarak ise:\n{ar:الْإِخْلَاصُ هُوَ تَصْفِيَةُ الْعَمَلِ وَالْعِبَادَةِ مِنَ الشِّرْكِ وَالرِّيَاءِ، وَقَصْدُ وَجْهِ اللّٰهِ تَعَالَى وَحْدَهُ.}\n(İhlâs; ameli ve ibadeti şirkten ve gösterişten arındırmak ve yalnızca Yüce Allah'ın rızasını/cemalini kastetmektir.)",
+        "Kur'an-ı Kerim'de tevhit ve ihlâsın en veciz ifadesi İhlâs Suresi ve Zümer Suresi 2-3. ayetlerdir: {ar:فَاعْبُدِ اللّٰهَ مُخْلِصًا لَهُ الدِّينَ * أَلَا لِلّٰهِ الدِّينُ الْخَالِصُ} — 'Öyleyse dini yalnız Allah'a halis kılarak (samimiyetle) O'na kulluk et! İyi bilin ki halis din yalnız Allah'ındır.' (Zümer, 39/2-3)."
+      ],
+      "kutu": {
+        "tur": "kavram",
+        "baslik": "Tevhidin Üç Boyutu (Aksâmü't-Tevhîd)",
+        "metin": "Mesleki Arapça akaid metinlerinde tevhit üç boyutta incelenir:\n1) {ar:تَوْحِيدُ الرُّبُوبِيَّةِ}: Yaratma, rızık verme ve kâinatı yönetmede yalnız Allah'ı Rab kabul etmek.\n2) {ar:تَوْحِيدُ الْأُلُوهِيَّةِ / الْعِبَادَةِ}: Namaz, dua, kurban ve tevekkül gibi tüm ibadetleri yalnız Allah'a yöneltmek.\n3) {ar:تَوْحِيدُ الْأَسْمَاءِ وَالصِّفَاتِ}: Allah'ı en güzel isim ve sıfatlarıyla (Esmaülhüsna) eşsiz olarak tanımak."
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#38bdf8\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">ET-TEVHÎD, EL-İHLÂS VE EŞ-ŞİRK KAVRAMLARI</text><rect x=\"25\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#0284c7\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#0284c7\"/><text x=\"195\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">et-Tevhîd ve el-İhlâs (Allah'ı Birlemek)</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• et-Tevhîd: İfrâdu'llâhi bi'l-ibâde (İbadette</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  yalnızca Allah'ı birlemek ve eş koşmamak)</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• el-İhlâs: Dini ve ibadeti riyadan, şirkten</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  arındırarak yalnız Allah için halis kılmak</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• el-Muvahhid: Allah'ın birliğine inanan mümin</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Kelimetü't-Tevhîd: Lâ ilâhe illallâh</text><rect x=\"395\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#10b981\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#10b981\"/><text x=\"565\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">eş-Şirk ve Türleri (Ortak Koşmak)</text><text x=\"407\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• eş-Şirk: İttihâzü şerîkin lillâh (Allah'a zatında,</text><text x=\"407\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  sıfatlarında veya ibadetinde ortak koşmak)</text><text x=\"407\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• eş-Şirkü'l-Ekber: İnsanı dinden çıkaran büyük şirk</text><text x=\"407\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• eş-Şirkü'l-Asğar (er-Riyâ): Gösteriş için ibadet</text><text x=\"407\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• 'İnne'ş-şirke le-zulmün azîm' (Lokmân 13):</text><text x=\"407\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  Şüphesiz şirk çok büyük bir zulümdür!</text></svg>"
     },
     {
-     "sol": "{ar:الْأَصْنَامُ / الْأَوْثَانُ}",
-     "sag": "Müşriklerin Allah'tan başka taptıkları putlar"
+      "baslik": "2. eş-Şirk ve Türleri: eş-Şirkü'l-Ekber ve eş-Şirkü'l-Asğar",
+      "metin": [
+        "Tevhit kavramının tam zıddı {ar:الشِّرْكُ} (eş-Şirk) kavramıdır. {ar:أَشْرَكَ - يُشْرِكُ - إِشْرَاكٌ / شِرْكٌ} fiilinden gelen şirk; 'ortak kılmak, eş koşmak' demektir. Allah'a ortak koşan kimseye {ar:الْمُشْرِكُ} (el-Müşrik), tapınılan putlara ise {ar:الْأَصْنَامُ} (el-Esnâm - tekili {ar:صَنَمٌ}) veya {ar:الْأَوْثَانُ} (el-Evsân - tekili {ar:وَثَنٌ}) adı verilir.",
+        "Kur'an-ı Kerim'de Hz. Lokmân'ın (a.s.) oğluna verdiği ilk ve en önemli öğüt şirkin mahiyetini ortaya koyar: {ar:يَا بُنَيَّ لَا تُشْرِكْ بِاللّٰهِ إِنَّ الشِّرْكَ لَظُلْمٌ عَظِيمٌ} — 'Yavrucuğum! Allah'a ortak koşma! Çünkü şirk gerçekten çok büyük bir zulümdür.' (Lokmân, 31/13). Nisâ Suresi 48. ayette ise tövbe edilmeden ölündüğü takdirde şirkin asla bağışlanmayacağı bildirilir: {ar:إِنَّ اللّٰهَ لَا يَغْفِرُ أَنْ يُشْرَكَ بِهِ وَيَغْفِرُ مَا دُونَ ذٰلِكَ لِمَنْ يَشَاءُ} — 'Şüphesiz Allah, kendisine ortak koşulmasını bağışlamaz; bunun dışındaki günahları ise dilediği kimseler için bağışlar.'",
+        "Mesleki Arapça metinlerinde şirk iki kısımda incelenir:\n1) {ar:الشِّرْكُ الْأَكْبَرُ} (Büyük Şirk): Allah'tan başka bir varlığı ilah kabul etmek, putlara tapmak veya Allah'tan başkasına ibadet etmektir. Sahibini İslam dairesinden çıkarır ({ar:يُخْرِجُ صَاحِبَهُ مِنَ الْمِلَّةِ}) ve bütün amellerini boşa çıkarır.\n2) {ar:الشِّرْكُ الْأَصْغَرُ} (Küçük Şirk / Gizli Şirk): İnsanların övgüsünü kazanmak ve gösteriş yapmak için ibadet etmektir ki buna {ar:الرِّيَاءُ} (er-Riyâ) denir. Hz. Peygamber (s.a.v.) müminler için en çok korktuğu şeyin küçük şirk (riya) olduğunu bildirmiştir ({ar:إِنَّ أَخْوَفَ مَا أَخَافُ عَلَيْكُمُ الشِّرْكُ الْأَصْغَرُ: الرِّيَاءُ})."
+      ],
+      "kutu": {
+        "tur": "onemli",
+        "baslik": "Zıt Anlamlı Kavram Eşleştirmeleri (el-Mütezâddât)",
+        "metin": "{ar:التَّوْحِيدُ} (Tevhit / Birleme) $\\longleftrightarrow$ {ar:الشِّرْكُ} (Şirk / Ortak koşma)\n• {ar:الْإِيمَانُ} (İman) $\\longleftrightarrow$ {ar:الْكُفْرُ} (Küfür / İnkâr)\n• {ar:الْإِخْلَاصُ} (İhlâs / Samimiyet) $\\longleftrightarrow$ {ar:الرِّيَاءُ} (Riya / Gösteriş)\n• {ar:الْمُوَحِّدُ} (Muvahhid) $\\longleftrightarrow$ {ar:الْمُشْرِكُ} (Müşrik)\n• {ar:الْهِدَايَةُ} (Hidayet) $\\longleftrightarrow$ {ar:الضَّلَالَةُ} (Dalâlet / Sapıklık)"
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#f59e0b\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">KUR'AN'DA TEVHİT VE ŞİRK AYETLERİ (NİSÂ 48 VE LOKMÂN 13)</text><rect x=\"25\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#d97706\"/><text x=\"195\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Nisâ Suresi 48 ve 116. Ayetler</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• 'İnnallâhe lâ yağfiru en yüşrake bihî'</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  (Şüphesiz Allah kendisine ortak koşulmasını bağışlamaz)</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• 'Ve yağfiru mâ dûne zâlike li-men yeşâ''</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  (Bunun dışındaki günahları dilediği kimse için bağışlar)</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Tövbe edilmeden ölünürse şirk affedilmez</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Tevhit ise cennetin ve mağfiretin anahtarıdır</text><rect x=\"395\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#8b5cf6\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#8b5cf6\"/><text x=\"565\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">İhlâs Suresi ve Zümer Suresi 3. Ayet</text><text x=\"407\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• 'Kul hüvallâhu ehad, Allâhü's-Samed'</text><text x=\"407\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  (De ki: O Allah birdir; Allah Samed'dir)</text><text x=\"407\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• 'Lem yelid ve lem yûled ve lem yekün lehû küfüven ehad'</text><text x=\"407\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  (Doğurmamış ve doğmamıştır; hiçbir dengi yoktur)</text><text x=\"407\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• 'Elâ lillâhi'd-dînü'l-hâlis' (Zümer 3):</text><text x=\"407\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  (İyi bilin ki halis din yalnız Allah'ındır)</text></svg>"
     },
     {
-     "sol": "{ar:وَجَدَ -> يَجِدُ -> جِدْ}",
-     "sag": "Muzâri ve emirde ilk harfi (vav) düşen Misal fiil"
+      "baslik": "3. Dil Bilgisi (el-Kavâid): Misal ve Ecvef Fiillerin Çekimi",
+      "metin": [
+        "Geçen hafta asli harfleri arasında illet harfi ({ar:ا، و، ي}) bulunan fiillere 'Mu'tel Fiil' ({ar:الْفِعْلُ الْمُعْتَلُّ}) dendiğini ve dört kısma (Misal, Ecvef, Nâkıs, Lefîf) ayrıldığını öğrenmiştik. Bu hafta mu'tel fiillerin mazi, muzâri ve emir çekimlerinde meydana gelen ses değişimlerini (i'lâl ve hazif kurallarını) inceliyoruz:\n1) Misal Fiillerin Çekimi ({ar:الْمِثَالُ الْوَاوِيُّ}): İlk harfi 'vav' ({ar:و}) olan {ar:وَجَدَ} (buldu), {ar:وَصَلَ} (ulaştı), {ar:وَعَدَ} (söz verdi), {ar:وَهَبَ} (bağışladı) ve {ar:وَلَدَ} (doğurdu) gibi fiiller mazi çekiminde sahih fiil gibi çekimlenir, hiçbir harf düşmez ({ar:وَجَدَ - وَجَدَا - وَجَدُوا ... وَجَدْتُ}). Ancak bu fiiller muzâri ve emir kipine aktarılırken baştaki 'vav' harfi DÜŞER:\n• {ar:وَجَدَ} (Mazi) $\\rightarrow$ {ar:يَجِدُ} (Muzâri - buluyor) $\\rightarrow$ {ar:جِدْ!} (Emir - Bul!)\n• {ar:وَصَلَ} (Mazi) $\\rightarrow$ {ar:يَصِلُ} (Muzâri - ulaşıyor) $\\rightarrow$ {ar:صِلْ!} (Emir - Ulaş!)\n• {ar:وَلَدَ} (Mazi) $\\rightarrow$ {ar:يَلِدُ} (Muzâri - doğuruyor) $\\rightarrow$ {ar:لَمْ يَلِدْ} (Cezm hali - Doğurmadı, İhlâs 3).",
+        "2) Ecvef Fiillerin Çekimi ({ar:الْأَجْوَفُ}): Orta harfi illetli olan {ar:قَالَ} (dedi - aslı {ar:قَوَلَ}), {ar:كَانَ} (oldu), {ar:بَاعَ} (sattı - aslı {ar:بَيَعَ}), {ar:صَامَ} (oruç tuttu) ve {ar:خَافَ} (korktu) fiillerinde:\n• Mazi çekiminde 'hünne' ({ar:هُنَّ}) zamirinden itibaren son harf sâkin olduğu için iki sâkin yan yana gelmesin diye ortadaki elif DÜŞER: {ar:قَالَ - قَالَا - قَالُوا - قَالَتْ - قَالَتَا - قُلْنَ - قُلْتَ - قُلْتُمَا - قُلْتُمْ - قُلْتِ - قُلْتُمَا - قُلْتُنَّ - قُلْتُ - قُلْنَا}.\n• Muzâri çekiminde illet harfi aslına (vav veya yâ'ya) döner: {ar:قَالَ -> يَقُولُ} / {ar:كَانَ -> يَكُونُ} / {ar:بَاعَ -> يَبِيعُ} / {ar:خَافَ -> يَخَافُ}.\n• Emir ve meczum (cezm) halinde ise son harf cezm olduğu için ortadaki illet harfi yine DÜŞER: {ar:قَالَ -> قُلْ!} (De!) / {ar:كَانَ -> كُنْ!} (Ol! - {ar:لَمْ يَكُنْ}) / {ar:بَاعَ -> بِعْ!} (Sat!) / {ar:صَامَ -> صُمْ!} (Oruç tut!)."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Kur'an'dan Ecvef ve Misal Fiil Örnekleri",
+        "metin": "İhlâs Suresi'nde her iki kuralın en güzel örnekleri yer alır:\n• {ar:قُلْ هُوَ اللّٰهُ أَحَدٌ}: {ar:قُلْ} emir fiili, ecvef olan {ar:قَالَ - يَقُولُ} fiilinin ortasındaki vav'ın düşmesiyle oluşmuştur.\n• {ar:لَمْ يَلِدْ}: Misal fiil olan {ar:وَلَدَ} fiilinin muzârisinde ({ar:يَلِدُ}) baştaki vav düşmüştür.\n• {ar:لَمْ يَكُنْ}: Ecvef olan {ar:كَانَ - يَكُونُ} fiili {ar:لَمْ} ile cezm olunca ortadaki vav düşmüştür."
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#a855f7\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">MU'TEL FİİLLERİN MAZİ, MUZÂRİ VE EMİR ÇEKİM ÖZELLİKLERİ</text><rect x=\"25\" y=\"50\" width=\"225\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#6366f1\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"225\" height=\"32\" rx=\"12\" fill=\"#6366f1\"/><text x=\"137\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Misal Fiil Çekimi</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• İlk harfi illetli: Vecede</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• Mazi: Vecede - Vecedâ - Vecedû</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Muzâri çekiminde başındaki</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  'vav' harfi düşer:</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">  Vecede -> Yecidu (Emir: Cid!)</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  Vasale -> Yasilu (Emir: Sil!)</text><rect x=\"268\" y=\"50\" width=\"225\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#ec4899\" stroke-width=\"2\"/><rect x=\"268\" y=\"50\" width=\"225\" height=\"32\" rx=\"12\" fill=\"#ec4899\"/><text x=\"380\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Ecvef Fiil Çekimi</text><text x=\"280\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Orta harfi illetli: Kâle, Bâa</text><text x=\"280\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• Mazi cemide orta harf düşer:</text><text x=\"280\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">  Kâle ... Kulne / Kulte / Kultü</text><text x=\"280\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Muzâri: Yekûlu / Yebîu / Yenâmu</text><text x=\"280\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Emirde illet harfi düşer:</text><text x=\"280\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  Kâle -> Kul! / Bâa -> Bi'!</text><rect x=\"510\" y=\"50\" width=\"225\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#14b8a6\" stroke-width=\"2\"/><rect x=\"510\" y=\"50\" width=\"225\" height=\"32\" rx=\"12\" fill=\"#14b8a6\"/><text x=\"622\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Nâkıs Fiil Çekimi</text><text x=\"522\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Son harfi illetli: Deâ, Hedâ</text><text x=\"522\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• Mazi: Deâ - Deavâ - Deav</text><text x=\"522\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Muzâri: Yed'û / Yehdî / Yerda</text><text x=\"522\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Emir sigasında sondaki illet</text><text x=\"522\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">  harfi düşer (illet harfi hazfi):</text><text x=\"522\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  Deâ -&gt; Ud'u! / Hedâ -&gt; İhdi!</text></svg>"
     },
     {
-     "sol": "{ar:دَعَا -> يَدْعُو -> اُدْعُ}",
-     "sag": "Emir kipinde son illet harfi düşen Nâkıs fiil"
+      "baslik": "4. Nâkıs Fiillerin Çekimi ve Cezm/Emir Durumu",
+      "metin": [
+        "Son harfi illetli olan mu'tel fiillere 'Nâkıs Fiil' ({ar:الْفِعْلُ النَّاقِصُ}) denir. Ünitemizdeki dini metinlerde en çok geçen nâkıs fiiller şunlardır:\n• {ar:دَعَا - يَدْعُو} (Dua etti, çağırdı, davet etti)\n• {ar:عَفَا - يَعْفُو} (Affetti, bağışladı)\n• {ar:هَدَى - يَهْدِي} (Hidayet verdi, doğru yolu gösterdi)\n• {ar:قَضَى - يَقْضِي} (Hükmetti, yerine getirdi)\n• {ar:رَضِيَ - يَرْضَى} (Razı oldu, hoşnut oldu)\n• {ar:خَشِيَ - يَخْشَى} (Saygıyla korktu, haşyet duydu)",
+        "Nâkıs fiillerin çekimindeki temel kurallar şunlardır:\n1) Mazi Çekimi: Cemî müzekker ({ar:هُمْ}) sigasında cemi vav'ı geldiğinde sondaki illet harfi düşer: {ar:دَعَا - دَعَوَا - دَعَوْا} / {ar:هَدَى - هَدَيَا - هَدَوْا} / {ar:رَضِيَ - رَضِيَا - رَضُوا} ({ar:رَضِيَ اللّٰهُ عَنْهُمْ وَرَضُوا عَنْهُ}).\n2) Muzâri Çekimi: Merfû halinde sondaki illet harfi (vav, yâ veya elif-i maksûre) korunur: {ar:الْمُؤْمِنُ يَدْعُو اللّٰهَ وَحْدَهُ} (Mümin yalnız Allah'a dua eder).\n3) Emir ve Cezm Hali: Nâkıs bir fiil emir kipine çevrildiğinde veya başına cezm edatı ({ar:لَمْ، لَا النَّاهِيَة}) geldiğinde, cezm alameti olarak SONDAKİ İLLET HARFİ DÜŞER (hazfu harfi'l-ille):\n• {ar:دَعَا - يَدْعُو} $\\rightarrow$ Emir: {ar:اُدْعُ!} (Dua et / Davet et! - Örn: {ar:اُدْعُ إِلَى سَبِيلِ رَبِّكَ})\n• {ar:هَدَى - يَهْدِي} $\\rightarrow$ Emir: {ar:اِهْدِ!} (Hidayet ver! - Örn: {ar:اِهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ})\n• {ar:عَفَا - يَعْفُو} $\\rightarrow$ Emir: {ar:اُعْفُ!} (Affet! - Örn: {ar:فَاعْفُ عَنَّا})."
+      ],
+      "kutu": {
+        "tur": "bilgi",
+        "baslik": "Hem Mehmûz Hem Mu'tel Fiiller: {ar:جَاءَ} ve {ar:شَاءَ}",
+        "metin": "Kur'an'da çok sık geçen {ar:جَاءَ - يَجِيءُ} (geldi) ve {ar:شَاءَ - يَشَاءُ} (diledi) fiilleri; ortalarında illet harfi (elif) bulunduğu için 'Ecvef', son harfleri hemze ({ar:ء}) olduğu için aynı zamanda 'Mehmûzü'l-Lâm' fiillerdir ({ar:مَنْ يَشَاءُ} - dilediği kimse)."
+      }
+    },
+    {
+      "baslik": "5. Örnek Mesleki Arapça Diyalog ve Metin Uygulaması",
+      "metin": [
+        "Aşağıdaki örnek Arapça metin, birinci bu bölümde öğrendiğimiz tüm kavram ve fiilleri bir arada içermektedir:\n• {ar:أَرْسَلَ اللّٰهُ جَمِيعَ الْأَنْبِيَاءِ وَالرُّسُلِ لِدَعْوَةِ النَّاسِ إِلَى التَّوْحِيدِ وَنَبْذِ الشِّرْكِ.}\n(Allah, bütün nebileri ve resulleri insanları tevhide davet etmek ve şirki terk ettirmek için göndermiştir.)\n• {ar:قَالَ اللّٰهُ تَعَالَى: وَاعْبُدُوا اللّٰهَ وَلَا تُشْرِكُوا بِهِ شَيْئًا.}\n(Yüce Allah şöyle buyurdu: Allah'a ibadet edin ve O'na hiçbir şeyi ortak koşmayın! - Nisâ, 4/36.)\n• {ar:الْمُسْلِمُ الْمُوَحِّدُ يَدْعُو رَبَّهُ بِإِخْلَاصٍ، وَلَا يَخَافُ إِلَّا اللّٰهَ، وَيَتَوَكَّلُ عَلَيْهِ فِي كُلِّ أُمُورِهِ.}\n(Tevhit ehli Müslüman, Rabbine ihlasla dua eder, Allah'tan başkasından korkmaz ve bütün işlerinde O'na tevekkül eder.)"
+      ],
+      "kutu": {
+        "tur": "kavram",
+        "baslik": "Metindeki Mu'tel Fiillerin Analizi",
+        "metin": "{ar:قَالَ}: Ecvef mazi fiil.\n• {ar:يَدْعُو}: Nâkıs muzâri fiil (mazi: {ar:دَعَا}).\n• {ar:يَخَافُ}: Ecvef muzâri fiil (mazi: {ar:خَافَ}).\n• {ar:وَلَا تُشْرِكُوا}: Nehiy (yasaklama) fiili, sonundaki nûn düşerek cezm olmuştur."
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#10b981\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">1. ÜNİTE KELİME VE FİİL HAZİNESİ ÖZETİ</text><rect x=\"25\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#059669\"/><text x=\"195\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Bu bölümde Geçen Önemli Mu'tel Fiiller</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Kâle - Yekûlu - Kul (Ecvef): Söyledi - Söyler - De!</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• Kâne - Yekûnu - Kün (Ecvef): Oldu - Olur - Ol!</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Câe - Yecîu - Ci' (Ecvef + Mehmûz): Geldi - Gelir - Gel!</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Şâe - Yeşâu (Ecvef + Mehmûz): Diledi - Diler</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Deâ - Yed'û - Ud'u (Nâkıs): Dua etti / Çağırdı</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Hedâ - Yehdî - İhdi (Nâkıs): Hidayet verdi / Yol gösterdi</text><rect x=\"395\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#0ea5e9\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#0ea5e9\"/><text x=\"565\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Tevhit ve Şirk Ünitesi Temel Terimleri</text><text x=\"407\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• et-Tevhîd (Birleme) x eş-Şirk (Ortak koşma)</text><text x=\"407\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• el-İhlâs (Samimiyet) x er-Riyâ (Gösteriş)</text><text x=\"407\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• el-Muvahhid / el-Mü'min x el-Müşrik / el-Kâfir</text><text x=\"407\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• el-İbâde (Kulluk), ed-Duâ (Yakarış), et-Tevekkül</text><text x=\"407\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• el-Esnâm / el-Evsân (Putlar)</text><text x=\"407\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• el-Mağfire (Bağışlanma), ez-Zulmü'l-Azîm (Büyük zulüm)</text></svg>"
+    },
+    {
+      "baslik": "6. Birinci Ünite Genel Değerlendirme: Tevhit ve Şirk",
+      "metin": [
+        "Birinci ünite boyunca İslam'ın en temel esası olan Tevhit ilkesini, Esmaülhüsna'yı, İhlâs ve Şirk kavramlarını özgün Arapça ayet ve hadis metinleri üzerinden inceledik.",
+        "Dil bilgisi (kavâid) bölümünde ise Arapça fiilleri aksâm-ı seb'a (yedi kısım) çerçevesinde Sahih (Sâlim, Mehmûz, Mudâaf) ve Mu'tel (Misal, Ecvef, Nâkıs, Lefîf) olarak sınıflandırdık ve çekim kurallarını öğrendik.",
+        "Bu kazanımlar, gelecek haftalarda başlayacağımız ikinci ünite metinlerini ve Kur'an-ı Kerim ayetlerini sözlük ve gramer yapısıyla çözümlememizde en sağlam temelimiz olacaktır."
+      ],
+      "kutu": {
+        "tur": "ozet",
+        "baslik": "Bölüm Özeti: İhlâs-Şirk ve Mu'tel Fiil Çekimleri",
+        "metin": "Verilen 1. {ar:التَّوْحِيد}: İbadette Allah'ı birlemek; {ar:الْإِخْلَاص}: Ameli riyadan arındırmaktır.\n2. {ar:الشِّرْك}: Büyük şirk ({ar:الشِّرْكُ الْأَكْبَر}) ve küçük şirk/riya ({ar:الشِّرْكُ الْأَصْغَر}) olarak ikiye ayrılır.\n3. Misal fiilde muzâride vav düşer ({ar:وَجَدَ -> يَجِدُ}); Ecvefte emirde orta harf düşer ({ar:قَالَ -> قُلْ}).\n4. Nâkıs fiilde emir ve cezm halinde sondaki illet harfi düşer ({ar:دَعَا -> اُدْعُ / هَدَى -> اِهْدِ})."
+      }
     }
-   ],
-   "aciklama": "Tevhit ve şirk ünitesi hem akaid terimlerini hem de mu'tel fiil çekimlerini öğretir."
-  },
-  {
-   "tur": "klasik",
-   "soru": "{ar:إِنَّ اللّٰهَ لَا يَغْفِرُ أَنْ يُشْرَكَ بِهِ وَيَغْفِرُ مَا دُونَ ذٰلِكَ لِمَنْ يَشَاءُ} (Nisâ, 4/48) ayetini Türkçeye çevirerek ayetteki {ar:يَشَاءُ} fiilinin aksâm-ı seb'a'daki türünü belirtiniz.",
-   "cevap": "Tercümesi: 'Şüphesiz Allah, kendisine ortak koşulmasını (şirki) bağışlamaz; bunun dışındaki günahları ise dilediği kimseler için bağışlar.'\n{ar:يَشَاءُ} fiilinin mazisi {ar:شَاءَ} olup ortası illetli olduğu için **Ecvef**, son harfi hemze olduğu için aynı zamanda **Mehmûz** bir fiildir."
-  }
- ]
+  ],
+  "ornekler": [
+    {
+      "soru": "Mesleki Arapçada {ar:التَّوْحِيدُ} (Tevhit) ve {ar:الشِّرْكُ} (Şirk) kavramları nasıl tanımlanır? Lokmân Suresi 13. ayette şirk nasıl nitelendirilmiştir?",
+      "cevap": "{ar:التَّوْحِيدُ هُوَ إِفْرَادُ اللّٰهِ بِالْعِبَادَةِ} (Tevhit; ibadette yalnızca Allah'ı birlemektir). {ar:الشِّرْكُ هُوَ اِتِّخَاذُ شَرِيكٍ لِلّٰهِ فِي ذَاتِهِ أَوْ صِفَاتِهِ أَوْ عِبَادَتِهِ} (Şirk; Allah'a zatında, sıfatlarında veya ibadetinde ortak koşmaktır). Lokmân Suresi 13. ayette {ar:إِنَّ الشِّرْكَ لَظُلْمٌ عَظِيمٌ} ('Şüphesiz şirk çok büyük bir zulümdür') buyrulmuştur."
+    },
+    {
+      "soru": "{ar:الشِّرْكُ الْأَكْبَرُ} (Büyük Şirk) ile {ar:الشِّرْكُ الْأَصْغَرُ} (Küçük Şirk) arasındaki farkı Arapça terimleriyle açıklayınız.",
+      "cevap": "{ar:الشِّرْكُ الْأَكْبَرُ} (Büyük Şirk), Allah'tan başkasına tapmak ve ibadet etmektir; kişiyi dinden çıkarır ve tövbesiz ölünürse affedilmez (Nisâ, 4/48). {ar:الشِّرْكُ الْأَصْغَرُ} (Küçük Şirk) ise ibadetlere gösteriş karıştırmaktır ki buna {ar:الرِّيَاءُ} (riya) denir; zıddı ise {ar:الْإِخْلَاصُ} (ihlas)tır."
+    },
+    {
+      "soru": "Aşağıdaki mu'tel fiillerin çeşitlerini (Misal, Ecvef, Nâkıs) belirterek muzâri ve emir sigalarını yazınız: {ar:وَصَلَ}, {ar:قَالَ}, {ar:دَعَا}.",
+      "cevap": "1) {ar:وَصَلَ}: İlk harfi vav olduğu için **Misal** fiildir. Muzârisi: {ar:يَصِلُ}, Emri: {ar:صِلْ!} (baştaki vav düşer).\n2) {ar:قَالَ}: Orta harfi elif (illetli) olduğu için **Ecvef** fiildir. Muzârisi: {ar:يَقُولُ}, Emri: {ar:قُلْ!} (ortadaki illet harfi düşer).\n3) {ar:دَعَا}: Son harfi illetli olduğu için **Nâkıs** fiildir. Muzârisi: {ar:يَدْعُو}, Emri: {ar:اُدْعُ!} (sondaki illet harfi düşer)."
+    },
+    {
+      "soru": "İhlâs Suresi'nde geçen {ar:قُلْ}, {ar:لَمْ يَلِدْ} ve {ar:لَمْ يَكُنْ} fiillerinin mazi köklerini ve uğradıkları ses değişimlerini açıklayınız.",
+      "cevap": "{ar:قُلْ}: Mazi kökü ecvef olan {ar:قَالَ} fiilidir; emir kipinde ortadaki illet harfi düşmüştür.\n• {ar:لَمْ يَلِدْ}: Mazi kökü misal olan {ar:وَلَدَ} fiilidir; muzâriye geçerken başındaki 'vav' harfi düşmüştür.\n• {ar:لَمْ يَكُنْ}: Mazi kökü ecvef olan {ar:كَانَ} ({ar:يَكُونُ}) fiilidir; {ar:لَمْ} ile cezm olunca ortadaki 'vav' harfi düşmüştür."
+    },
+    {
+      "soru": "{ar:فَاعْبُدِ اللّٰهَ مُخْلِصًا لَهُ الدِّينَ * أَلَا لِلّٰهِ الدِّينُ الْخَالِصُ} (Zümer, 39/2-3) ayetini Türkçeye tercüme ediniz.",
+      "cevap": "'Öyleyse dini yalnızca Allah'a halis kılarak (samimiyetle ve şirkten arındırarak) O'na ibadet et! İyi bilin ki halis (saf ve katışıksız) din yalnız Allah'ındır.'"
+    },
+    {
+      "soru": "‘et-Tevhîd ve el-İhlâs Kavramları (Metin Tahlili)’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
+      "cevap": "Sözlükte 'bir şeyin tek olduğuna hükmetmek, birlemek' anlamına gelen {ar:التَّوْحِيدُ} (et-Tevhîd) kelimesi, {ar:وَحَّدَ - يُوَحِّدُ - تَوْحِيدٌ} (tef'îl bâbı) fiilinin mastarıdır. İslami ıstılahta tevhit Arapça olarak şöyle tanımlanır:\n{ar:التَّوْحِيدُ هُوَ الْإِيمَانُ بِأَنَّ اللّٰهَ وَاحِدٌ لَا شَرِيكَ لَهُ فِي ذَاتِهِ وَصِفَاتِهِ وَأَفْعَالِهِ، وَإِفْرَادُهُ بِالْعِبَادَةِ.}\n(Tevhit; Allah'ın zatında, sıfatlarında ve fiillerinde bir olduğuna, hiçbir ortağı bulunmadığına iman etmek ve ibadette yalnız O'nu birlemektir.) Tevhit inancına sahip mümine Arapçada {ar:الْمُوَحِّدُ} (el-Muvahhid) denir. Tevhit ile ayrılmaz bir bütün olan diğer temel kavram {ar:الْإِخْلَاصُ} (el-İhlâs) kavramıdır. {ar:أَخْلَصَ - يُخْلِصُ - إِخْلَاصٌ} (if'âl bâbı) fiilinden türeyen ihlâs; 'bir şeyi karışıklıklardan arındırıp saf ve tertemiz hale getirmek' demektir. Dinî terim olarak ise:\n{ar:الْإِخْلَاصُ هُوَ تَصْفِيَةُ الْعَمَلِ وَالْعِبَادَةِ مِنَ الشِّرْكِ وَالرِّيَاءِ، وَقَصْدُ وَجْهِ اللّٰهِ تَعَالَى وَحْدَهُ.}\n(İhlâs; ameli ve ibadeti şirkten ve gösterişten arındırmak ve yalnızca Yüce Allah'ın rızasını/cemalini kastetmektir.)"
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Lokmân Suresi 13. ayette geçen {ar:يَا بُنَيَّ لَا تُشْرِكْ بِاللّٰهِ إِنَّ الشِّرْكَ لَ} ___ ___ ___ {ar:_} ayetinde boş bırakılan yere aşağıdakilerden hangisi gelmelidir?",
+      "secenekler": [
+        "{ar:ظُلْمٌ عَظِيمٌ}",
+        "{ar:فَوْزٌ كَبِيرٌ}",
+        "{ar:دِينٌ خَالِصٌ}",
+        "{ar:صِرَاطٌ مُسْتَقِيمٌ}",
+        "Münhasıran dış görünüşe dayalı tesadüfi bir değişimdir."
+      ],
+      "dogru": 0,
+      "aciklama": "Lokmân Suresi 13. ayette şirk 'çok büyük bir zulüm' ({ar:إِنَّ الشِّرْكَ لَظُلْمٌ عَظِيمٌ}) olarak tanımlanmıştır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Ecvef bir fiil olan {ar:كَانَ - يَكُونُ} (oldu - olur) fiilinin müfred müzekker muhatap EMİR sigası ('Ol!') aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "{ar:قُلْ}",
+        "{ar:كُنْ}",
+        "{ar:صِلْ}",
+        "{ar:اُدْعُ}",
+        "Münhasıran dış görünüşe dayalı tesadüfi bir değişimdir."
+      ],
+      "dogru": 1,
+      "aciklama": "{ar:كَانَ - يَكُونُ} fiilinin emri ortadaki vav'ın düşmesiyle {ar:كُنْ} ('Ol!' - {ar:كُنْ فَيَكُونُ}) şeklinde gelir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "‘Dil Bilgisi (el-Kavâid): Misal ve Ecvef Fiillerin Çekimi’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "İhlâs Suresi'nde her iki kuralın en güzel örnekleri yer alır:\n• {ar:قُلْ هُوَ اللّٰهُ أَحَدٌ}: {ar:قُلْ} emir fiili, ecvef olan {ar:قَالَ - يَقُولُ} fiilinin ortasındaki vav'ın düşmesiyle oluşmuştur.",
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme, bağlam dışı yorum, bağlam dışı yorum)",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 2,
+      "aciklama": "Dil Bilgisi (el-Kavâid): Misal ve Ecvef Fiillerin Çekimi bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "‘Nâkıs Fiillerin Çekimi ve Cezm/Emir Durumu’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum)",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Kur'an'da çok sık geçen {ar:جَاءَ - يَجِيءُ} (geldi) ve {ar:شَاءَ - يَشَاءُ} (diledi) fiilleri; ortalarında illet harfi (elif) bulunduğu için 'Ecvef', son harfleri hemze ({ar:ء}) olduğu için aynı zamanda 'Mehmûzü'l-Lâm' fiillerdir.",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 3,
+      "aciklama": "Nâkıs Fiillerin Çekimi ve Cezm/Emir Durumu bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Arapçada ibadetleri gösterişten (riyadan) ve şirkten arındırarak münhasıran Allah rızası için yapmaya {ar:الْإِخْلَاصُ} (el-İhlâs) denir.",
+          "dogru": true,
+          "aciklama": "{ar:الْإِخْلَاصُ} (İhlâs) samimiyet ve katışıksız bağlılık demektir; zıddı {ar:الرِّيَاءُ} (riya/gösteriş)tir."
+        },
+        {
+          "metin": "Son harfi illetli olan Nâkıs fiiller ({ar:دَعَا، هَدَى}) emir kipine çevrildiğinde sondaki illet harfi korunur, hiçbir harf düşmez.",
+          "dogru": false,
+          "aciklama": "Nâkıs fiillerin emir ve cezm hallerinde sondaki illet harfi düşer ({ar:دَعَا -> اُدْعُ} ve {ar:هَدَى -> اِهْدِ})."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki Arapça kavram ve fiilleri açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "et-Tevhîd ve el-İhlâs Kavramları (Metin Tahlili)",
+          "Tevhidin Üç Boyutu (Aksâmü't-Tevhîd)"
+        ],
+        [
+          "eş-Şirk ve Türleri: eş-Şirkü'l-Ekber ve eş-Şirkü'l-Asğar",
+          "Zıt Anlamlı Kavram Eşleştirmeleri (el-Mütezâddât)"
+        ],
+        [
+          "Dil Bilgisi (el-Kavâid): Misal ve Ecvef Fiillerin Çekimi",
+          "Kur'an'dan Ecvef ve Misal Fiil Örnekleri"
+        ],
+        [
+          "Nâkıs Fiillerin Çekimi ve Cezm/Emir Durumu",
+          "Hem Mehmûz Hem Mu'tel Fiiller: {ar:جَاءَ} ve {ar:شَاءَ}"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Hz. Peygamber (s.a.v.) bir hadis-i şerifinde ibadetlere gösteriş karıştırmayı ({ar:الرِّيَاءُ}) 'küçük şirk' anlamında {ar:الشِّرْكُ} ___ olarak isimlendirmiştir.",
+          "cevap": "الْأَصْغَرُ"
+        },
+        {
+          "metin": "Fâtiha Suresi'nde geçen {ar:اِهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ} ayetindeki {ar:اِهْدِ} emir fiilinin mazi kökü nâkıs bir fiil olan ___ fiilidir.",
+          "cevap": "هَدَى"
+        }
+      ],
+      "fazla": [
+        "varsayım",
+        "rastlantı"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "{ar:إِنَّ اللّٰهَ لَا يَغْفِرُ أَنْ يُشْرَكَ بِهِ وَيَغْفِرُ مَا دُونَ ذٰلِكَ لِمَنْ يَشَاءُ} (Nisâ, 4/48) ayetini Türkçeye çevirerek ayetteki {ar:يَشَاءُ} fiilinin aksâm-ı seb'a'daki türünü belirtiniz.",
+      "cevap": "Tercümesi: 'Şüphesiz Allah, kendisine ortak koşulmasını (şirki) bağışlamaz; bunun dışındaki günahları ise dilediği kimseler için bağışlar.'\n{ar:يَشَاءُ} fiilinin mazisi {ar:شَاءَ} olup ortası illetli olduğu için **Ecvef**, son harfi hemze olduğu için aynı zamanda **Mehmûz** bir fiildir.",
+      "ipuclari": [
+        "1. Ünite: Tevhit ve Şirk — 4. Ders: İhlâs ve Şirk Kavramları, Tevhit Metinleri ve Mu’tel Fiillerin (Misal, Ecvef, Nâkıs) Çekimi kapsamındaki temel kavramları hatırlayınız.",
+        "Açıklamanızı somut bir örnekle destekleyiniz."
+      ]
+    }
+  ]
 }

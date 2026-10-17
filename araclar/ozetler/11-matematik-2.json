@@ -1,336 +1,336 @@
 {
- "ad": "11-matematik-2",
- "sinif": 11,
- "ders": "matematik",
- "ders_adi": "Matematik",
- "hafta": 2,
- "tarih": "21-25 Eylül 2026",
- "yayin_tarihi": "2026-10-16",
- "unite": "1. Tema: İstatistiksel Araştırma Süreci",
- "konu": "İki Nicel Değişkenli Verilerin Analizi: Serpme Diyagramı ve Korelasyon Katsayısı",
- "ciktilar": [
-  "MAT.11.1.1. İki nicel değişkenli veri ile çalışabilme ve iki nicel değişken arasındaki ilişkililiğe dayalı karar verebilme."
- ],
- "giris": "İki nicel değişkenli verileri topladıktan ve analize hazır hâle getirdikten sonra değişkenler arasında gerçekten bir ilişki olup olmadığını nasıl belirleriz? Bu haftaki dersimizde eşleşmiş veri çiftlerini {koyu:serpme diyagramı (saçılım grafiği)} ile görselleştirmeyi, ilişkinin yönünü ve gücünü {koyu:bölgelere göre sayım oranı (BSO)} ve {koyu:korelasyon katsayısı (r)} yardımıyla yorumlamayı ve korelasyon ile {koyu:nedensellik} arasındaki kritik farkı inceliyoruz.",
- "ozet": [
-  "{koyu:Serpme Diyagramı (Saçılım Grafiği):} İki nicel değişkene ait eşleşmiş `(x, y)` veri çiftlerinin dik koordinat düzleminde noktalar hâlinde gösterilmesiyle oluşan grafiktir.",
-  "{koyu:İlişkinin Yönü:} Değişkenlerden biri artarken diğeri de artıyorsa (veya ikisi birlikte azalıyorsa) {koyu:pozitif yönlü ilişki}; biri artarken diğeri azalıyorsa {koyu:negatif yönlü ilişki} vardır. Noktalar rastgele dağılmışsa {koyu:ilişki yoktur}.",
-  "{koyu:İlişkinin Gücü:} Serpme diyagramındaki noktalar doğrusal bir eğilim çizgisine ne kadar yakın ve sıkı dizilmişse ilişki o kadar {koyu:güçlüdür}; çizgiden uzaklaşıp dağıldıkça ilişki {koyu:orta} veya {koyu:zayıf} düzeye iner.",
-  "{koyu:Korelasyon Katsayısı (r):} İki nicel değişken arasındaki doğrusal ilişkinin yönünü ve gücünü gösteren, {koyu:-1 ile +1 arasında} (`-1 <= r <= 1`) değer alan bir orandır.",
-  "{koyu:Korelasyon Katsayısının Yorumu:} `r = 1` pozitif mükemmel, `0,70 <= r < 1` pozitif güçlü, `0,30 <= r < 0,70` pozitif orta, `0 < r < 0,30` pozitif zayıf ilişkiyi; negatif karşılıkları ise negatif yönlü aynı güçteki ilişkileri gösterir (`r = 0` doğrusal ilişki yok).",
-  "{koyu:Korelasyon ve Nedensellik:} İki değişken arasında güçlü bir korelasyon bulunması, birinin diğerinin doğrudan sebebi olduğunu ({koyu:neden-sonuç ilişkisi}) kanıtlamaz; üçüncü bir {koyu:gizli değişken} her iki değişkeni aynı anda etkiliyor olabilir."
- ],
- "bolumler": [
-  {
-   "baslik": "İki Nicel Değişkenli Verilerde Veri Analizi ve Serpme Diyagramı",
-   "metin": [
-    "İki nicel değişkenli istatistiksel araştırmalarda {koyu:veri analizi}, toplanıp düzenlenen ham verilerin incelenerek anlamlı sonuçlara dönüştürülmesi sürecidir. Tek nicel değişkenli verilerde kullanılan nokta grafiği, histogram veya kutu grafiği iki sayısal değişkenin birlikte nasıl değiştiğini göstermek için yeterli değildir. Bu amaçla kullanılan temel görselleştirme aracı {koyu:serpme diyagramıdır} ({koyu:dağılım grafiği} veya {koyu:saçılım grafiği}).",
-    "Serpme diyagramında her gözlem birimine ait iki nicel ölçüm, dik koordinat sisteminde sıralı ikili `{koyu:(x, y)}` olarak tek bir noktayla temsil edilir. Yatay eksene (`x`) birinci nicel değişken, dikey eksene (`y`) ikinci nicel değişken yerleştirilir. Grafikte oluşan nokta bulutunun sergilediği desen, iki değişken arasında bir ilişki bulunup bulunmadığını görsel olarak ortaya koyar."
-   ],
-   "kutu": {
-    "tur": "tanim",
-    "baslik": "Serpme Diyagramı (Saçılım Grafiği) Nedir?",
-    "metin": "İki nicel değişken arasındaki ilişkililiği, değişimin yönünü ve eğilimini incelemek amacıyla veri çiftlerinin dik koordinat düzleminde `{koyu:(x, y)}` noktaları olarak işaretlenmesiyle elde edilen grafiğe {koyu:serpme diyagramı} denir."
-   }
-  },
-  {
-   "baslik": "Serpme Diyagramında İlişkinin Yönü: Pozitif, Negatif ve İlişkisiz Dağılım",
-   "metin": [
-    "Serpme diyagramındaki noktaların oluşturduğu eğilim incelendiğinde ilişkinin yönü hakkında üç temel durumla karşılaşılır: Birincisi {koyu:pozitif yönlü ilişkidir}; `x` ve `y` değerlerinin ikisi birlikte artıyor veya ikisi birlikte azalıyorsa noktalar sol alttan sağ üste doğru yükselen bir şerit oluşturur. Örneğin bir ülkenin yıllara göre ihracat ve ithalat miktarları veya çalışma süresi ile çözülen soru sayısı arasında pozitif yönlü ilişki görülür.",
-    "İkincisi {koyu:negatif yönlü ilişkidir}; değişkenlerden biri artarken diğeri azalıyorsa noktalar sol üstten sağ alta doğru alçalan bir eğilim gösterir. Örneğin istihdam oranı arttıkça işsizlik oranının azalması negatif yönlü bir ilişkidir. Üçüncüsü ise {koyu:ilişki olmaması} durumudur; noktalar hiçbir doğrusal eğilim veya desen oluşturmadan düzlemde rastgele ve dağınık biçimde yer alıyorsa iki nicel değişken arasında doğrusal bir ilişki yoktur denir."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Eğilim Yönünü Hızlı Okuma",
-    "metin": "• Soldan sağa gidildikçe nokta bulutu {koyu:yukarı çıkıyorsa}: {koyu:Pozitif yönlü ilişki} (Aynı yönlü değişim)\n• Soldan sağa gidildikçe nokta bulutu {koyu:aşağı iniyorsa}: {koyu:Negatif yönlü ilişki} (Zıt yönlü değişim)\n• Nokta bulutu {koyu:rastgele dağılmışsa}: {koyu:İlişki yok}"
-   },
-   "gorsel": "<svg viewBox=\"0 0 700 260\" role=\"img\" aria-label=\"Serpme Diyagramında İlişkinin Yönü\">\n    <rect x=\"20\" y=\"15\" width=\"660\" height=\"230\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n    <text x=\"350\" y=\"40\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">SERPME DİYAGRAMINDA (SAÇILIM GRAFİĞİ) İLİŞKİNİN YÖNÜ</text>\n    <rect x=\"35\" y=\"58\" width=\"200\" height=\"170\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n    <text x=\"135\" y=\"80\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\">POZİTİF YÖNLÜ İLİŞKİ</text>\n    <line x1=\"65\" y1=\"190\" x2=\"205\" y2=\"190\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"65\" y1=\"190\" x2=\"65\" y2=\"95\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"75\" y1=\"180\" x2=\"195\" y2=\"105\" stroke=\"#22c55e\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n    <circle cx=\"82\" cy=\"175\" r=\"4\" fill=\"#16a34a\"/>\n    <circle cx=\"100\" cy=\"162\" r=\"4\" fill=\"#16a34a\"/>\n    <circle cx=\"118\" cy=\"154\" r=\"4\" fill=\"#16a34a\"/>\n    <circle cx=\"136\" cy=\"140\" r=\"4\" fill=\"#16a34a\"/>\n    <circle cx=\"155\" cy=\"130\" r=\"4\" fill=\"#16a34a\"/>\n    <circle cx=\"174\" cy=\"118\" r=\"4\" fill=\"#16a34a\"/>\n    <circle cx=\"190\" cy=\"108\" r=\"4\" fill=\"#16a34a\"/>\n    <text x=\"135\" y=\"212\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#166534\">x ve y birlikte artar (r &gt; 0)</text>\n\n    <rect x=\"250\" y=\"58\" width=\"200\" height=\"170\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n    <text x=\"350\" y=\"80\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#b91c1c\">NEGATİF YÖNLÜ İLİŞKİ</text>\n    <line x1=\"280\" y1=\"190\" x2=\"420\" y2=\"190\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"280\" y1=\"190\" x2=\"280\" y2=\"95\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"290\" y1=\"105\" x2=\"410\" y2=\"180\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n    <circle cx=\"295\" cy=\"110\" r=\"4\" fill=\"#dc2626\"/>\n    <circle cx=\"312\" cy=\"122\" r=\"4\" fill=\"#dc2626\"/>\n    <circle cx=\"330\" cy=\"130\" r=\"4\" fill=\"#dc2626\"/>\n    <circle cx=\"350\" cy=\"144\" r=\"4\" fill=\"#dc2626\"/>\n    <circle cx=\"368\" cy=\"155\" r=\"4\" fill=\"#dc2626\"/>\n    <circle cx=\"386\" cy=\"166\" r=\"4\" fill=\"#dc2626\"/>\n    <circle cx=\"404\" cy=\"176\" r=\"4\" fill=\"#dc2626\"/>\n    <text x=\"350\" y=\"212\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#991b1b\">Biri artarken diğeri azalır (r &lt; 0)</text>\n\n    <rect x=\"465\" y=\"58\" width=\"200\" height=\"170\" rx=\"10\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <text x=\"565\" y=\"80\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\">İLİŞKİ YOK</text>\n    <line x1=\"495\" y1=\"190\" x2=\"635\" y2=\"190\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"495\" y1=\"190\" x2=\"495\" y2=\"95\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <circle cx=\"515\" cy=\"115\" r=\"4\" fill=\"#475569\"/>\n    <circle cx=\"540\" cy=\"170\" r=\"4\" fill=\"#475569\"/>\n    <circle cx=\"560\" cy=\"125\" r=\"4\" fill=\"#475569\"/>\n    <circle cx=\"585\" cy=\"160\" r=\"4\" fill=\"#475569\"/>\n    <circle cx=\"610\" cy=\"112\" r=\"4\" fill=\"#475569\"/>\n    <circle cx=\"620\" cy=\"172\" r=\"4\" fill=\"#475569\"/>\n    <circle cx=\"530\" cy=\"142\" r=\"4\" fill=\"#475569\"/>\n    <text x=\"565\" y=\"212\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#334155\">Rastgele dağılım (r ≈ 0)</text>\n    </svg>"
-  },
-  {
-   "baslik": "Eğilim Çizgisi, İlişkinin Gücü ve Bölgelere Göre Sayım Oranı (BSO)",
-   "metin": [
-    "İki nicel değişken arasındaki ilişkinin {koyu:gücü}, serpme diyagramındaki noktaların varsayılan bir {koyu:doğrusal eğilim çizgisine} ne kadar yakın ve sıkı dizildiğiyle belirlenir. Noktalar bir doğru üzerinde veya doğruya çok yakın ve sıkı bir küme hâlinde dizilmişse ilişki {koyu:güçlüdür}. Noktalar eğilim çizgisinden kısmen uzaklaşmış ancak yönünü belli ediyorsa ilişki {koyu:orta düzeydedir}; çizgiden çok uzak ve geniş bir alana yayılmışsa ilişki {koyu:zayıftır}.",
-    "Serpme diyagramında ilişkinin yönünü ve gücünü değerlendirirken kullanılan pratik yöntemlerden biri de {koyu:Bölgelere Göre Sayım Oranı (BSO)} yaklaşımıdır. Veri noktalarının yatay ve dikey merkez (ortanca/ortalama) doğrularıyla koordinat düzlemi dört bölgeye ayrıldığında; noktaların büyük çoğunluğu {koyu:I. ve III. bölgelerde} toplanıyorsa pozitif ilişki, {koyu:II. ve IV. bölgelerde} toplanıyorsa negatif ilişki, dört bölgeye yaklaşık eşit dağılıyorsa ilişkisizlik söz konusudur."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Nokta Bulutunun Görünümü",
-     "İlişkinin Yönü",
-     "İlişkinin Gücü"
-    ],
-    "satirlar": [
-     [
-      "Sol alttan sağ üste doğru bir doğruya çok sıkı dizilmiş noktalar",
-      "Pozitif (+)",
-      "Güçlü İlişki"
-     ],
-     [
-      "Sol alttan sağ üste yükselen ancak kısmen aralıklı noktalar",
-      "Pozitif (+)",
-      "Orta İlişki"
-     ],
-     [
-      "Sol üstten sağ alta doğru bir doğruya çok sıkı dizilmiş noktalar",
-      "Negatif (-)",
-      "Güçlü İlişki"
-     ],
-     [
-      "Sol üstten sağ alta inen ancak oldukça geniş ve seyrek noktalar",
-      "Negatif (-)",
-      "Zayıf İlişki"
-     ],
-     [
-      "Belirli bir yönelim göstermeden her yöne rastgele dağılmış noktalar",
-      "Yön Yok",
-      "İlişki Yok"
-     ]
-    ]
-   },
-   "gorsel": "<svg viewBox=\"0 0 700 250\" role=\"img\" aria-label=\"İlişkinin Gücü ve Eğilim Çizgisi\">\n    <rect x=\"20\" y=\"15\" width=\"660\" height=\"225\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n    <text x=\"350\" y=\"42\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">SERPME DİYAGRAMINDA İLİŞKİNİN GÜCÜ (EĞİLİM ÇİZGİSİNE YAKINLIK)</text>\n    <rect x=\"40\" y=\"62\" width=\"195\" height=\"155\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n    <text x=\"137\" y=\"84\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">GÜÇLÜ İLİŞKİ (0,70 ≤ |r| &lt; 1)</text>\n    <line x1=\"70\" y1=\"180\" x2=\"205\" y2=\"105\" stroke=\"#93c5fd\" stroke-width=\"2\"/>\n    <circle cx=\"80\" cy=\"173\" r=\"4\" fill=\"#1d4ed8\"/>\n    <circle cx=\"102\" cy=\"164\" r=\"4\" fill=\"#1d4ed8\"/>\n    <circle cx=\"125\" cy=\"148\" r=\"4\" fill=\"#1d4ed8\"/>\n    <circle cx=\"148\" cy=\"138\" r=\"4\" fill=\"#1d4ed8\"/>\n    <circle cx=\"172\" cy=\"122\" r=\"4\" fill=\"#1d4ed8\"/>\n    <circle cx=\"194\" cy=\"112\" r=\"4\" fill=\"#1d4ed8\"/>\n    <text x=\"137\" y=\"202\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" fill=\"#1e40af\">Çizgiye çok yakın ve sıkı</text>\n\n    <rect x=\"252\" y=\"62\" width=\"195\" height=\"155\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/>\n    <text x=\"350\" y=\"84\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#b45309\">ORTA İLİŞKİ (0,30 ≤ |r| &lt; 0,70)</text>\n    <line x1=\"282\" y1=\"180\" x2=\"417\" y2=\"105\" stroke=\"#fcd34d\" stroke-width=\"2\"/>\n    <circle cx=\"290\" cy=\"165\" r=\"4\" fill=\"#d97706\"/>\n    <circle cx=\"312\" cy=\"175\" r=\"4\" fill=\"#d97706\"/>\n    <circle cx=\"335\" cy=\"138\" r=\"4\" fill=\"#d97706\"/>\n    <circle cx=\"360\" cy=\"155\" r=\"4\" fill=\"#d97706\"/>\n    <circle cx=\"382\" cy=\"115\" r=\"4\" fill=\"#d97706\"/>\n    <circle cx=\"406\" cy=\"128\" r=\"4\" fill=\"#d97706\"/>\n    <text x=\"350\" y=\"202\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" fill=\"#92400e\">Çizgiden kısmen uzaklaşmış</text>\n\n    <rect x=\"465\" y=\"62\" width=\"195\" height=\"155\" rx=\"10\" fill=\"#fdf2f8\" stroke=\"#ec4899\" stroke-width=\"1.5\"/>\n    <text x=\"562\" y=\"84\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#be185d\">ZAYIF İLİŞKİ (0 &lt; |r| &lt; 0,30)</text>\n    <line x1=\"495\" y1=\"180\" x2=\"630\" y2=\"105\" stroke=\"#f9a8d4\" stroke-width=\"2\"/>\n    <circle cx=\"500\" cy=\"145\" r=\"4\" fill=\"#db2777\"/>\n    <circle cx=\"525\" cy=\"182\" r=\"4\" fill=\"#db2777\"/>\n    <circle cx=\"548\" cy=\"112\" r=\"4\" fill=\"#db2777\"/>\n    <circle cx=\"572\" cy=\"168\" r=\"4\" fill=\"#db2777\"/>\n    <circle cx=\"595\" cy=\"105\" r=\"4\" fill=\"#db2777\"/>\n    <circle cx=\"620\" cy=\"142\" r=\"4\" fill=\"#db2777\"/>\n    <text x=\"562\" y=\"202\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" fill=\"#9d174d\">Çizgiden uzak ve seyrek</text>\n    </svg>"
-  },
-  {
-   "baslik": "Korelasyon Analizi ve Korelasyon Katsayısı (r)",
-   "metin": [
-    "Serpme diyagramı görsel bir fikir verse de ilişkinin yönünü ve gücünü kesin ve nesnel biçimde ifade etmek için {koyu:korelasyon analizi} yapılır ve {koyu:korelasyon katsayısı (r)} hesaplanır. İstatistik yazılımları veya elektronik tablolama programlarıyla hesaplanan korelasyon katsayısı bir orandır ve daima {koyu:-1 ile +1 arasında} (`-1 <= r <= 1`) değer alır.",
-    "Korelasyon katsayısının {koyu:işareti (+ veya -)} ilişkinin yönünü, {koyu:mutlak değeri (`|r|`)} ise ilişkinin gücünü gösterir. `r > 0` ise değişkenler arasında pozitif korelasyon, `r < 0` ise negatif korelasyon vardır. `|r|` değeri `1`'e yaklaştıkça doğrusal ilişki güçlenir; `0`'a yaklaştıkça zayıflar. Noktaların tamamı tam bir doğru üzerindeyse `r = +1` ({koyu:pozitif mükemmel ilişki}) veya `r = -1` ({koyu:negatif mükemmel ilişki}) olur; aralarında doğrusal ilişki olmayan değişkenlerde ise `r = 0`'dır."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Korelasyon Katsayısının (r) Temel Özellikleri",
-    "metin": "1. Korelasyon katsayısı `-1 <= r <= 1` aralığının dışında (`1,2` veya `-1,5` gibi) bir değer {koyu:alamaz}.\n2. İki korelasyon katsayısının gücü karşılaştırılırken işaretlerine değil {koyu:mutlak değerlerine (`|r|`)} bakılır. Örneğin `r = -0,85` olan bir ilişki, `r = +0,60` olan bir ilişkiden {koyu:daha güçlüdür}."
-   }
-  },
-  {
-   "baslik": "Korelasyon Katsayısı (r) Aralıklarının Sınıflandırılması",
-   "metin": [
-    "İki nicel değişken arasındaki doğrusal ilişkinin gücü, korelasyon katsayısı `r`'nin bulunduğu aralığa göre standart ölçütlerle yorumlanır. Pozitif yönlü ilişkilerde `0 < r < 0,30` aralığı {koyu:zayıf ilişki}, `0,30 <= r < 0,70` aralığı {koyu:orta ilişki}, `0,70 <= r < 1` aralığı {koyu:güçlü ilişki} ve `r = 1` değeri {koyu:pozitif mükemmel ilişki} olarak adlandırılır.",
-    "Aynı sınıflandırma simetrik olarak negatif yönlü ilişkiler için de geçerlidir: `-0,30 < r < 0` aralığı {koyu:negatif zayıf ilişki}, `-0,70 <= r <= -0,30` aralığı {koyu:negatif orta ilişki}, `-1 < r <= -0,70` aralığı {koyu:negatif güçlü ilişki} ve `r = -1` değeri {koyu:negatif mükemmel ilişki} olarak yorumlanır. `r = 0` olduğunda ise iki değişken arasında doğrusal bir ilişki bulunmadığına karar verilir."
-   ],
-   "tablo": {
-    "basliklar": [
-     "İlişkinin Gücü",
-     "Negatif Yönlü İlişki Aralığı",
-     "Pozitif Yönlü İlişki Aralığı"
-    ],
-    "satirlar": [
-     [
-      "Mükemmel İlişki",
-      "r = -1",
-      "r = 1"
-     ],
-     [
-      "Güçlü İlişki",
-      "-1 < r <= -0,70",
-      "0,70 <= r < 1"
-     ],
-     [
-      "Orta İlişki",
-      "-0,70 < r <= -0,30",
-      "0,30 <= r < 0,70"
-     ],
-     [
-      "Zayıf İlişki",
-      "-0,30 < r < 0",
-      "0 < r < 0,30"
-     ],
-     [
-      "İlişki Yok",
-      "r = 0",
-      "r = 0"
-     ]
-    ]
-   },
-   "gorsel": "<svg viewBox=\"0 0 700 245\" role=\"img\" aria-label=\"Korelasyon Katsayısı (r) Cetveli\">\n    <rect x=\"20\" y=\"15\" width=\"660\" height=\"220\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n    <text x=\"350\" y=\"42\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">KORELASYON KATSAYISI (r) SAYI DOĞRUSU CETVELİ (-1 ≤ r ≤ 1)</text>\n    <rect x=\"50\" y=\"85\" width=\"90\" height=\"45\" fill=\"#dc2626\"/>\n    <rect x=\"140\" y=\"85\" width=\"120\" height=\"45\" fill=\"#f87171\"/>\n    <rect x=\"260\" y=\"85\" width=\"90\" height=\"45\" fill=\"#fca5a5\"/>\n    <rect x=\"350\" y=\"85\" width=\"90\" height=\"45\" fill=\"#86efac\"/>\n    <rect x=\"440\" y=\"85\" width=\"120\" height=\"45\" fill=\"#4ade80\"/>\n    <rect x=\"560\" y=\"85\" width=\"90\" height=\"45\" fill=\"#16a34a\"/>\n\n    <text x=\"95\" y=\"112\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#ffffff\">Güçlü (-)</text>\n    <text x=\"200\" y=\"112\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#ffffff\">Orta (-)</text>\n    <text x=\"305\" y=\"112\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#7f1d1d\">Zayıf (-)</text>\n    <text x=\"395\" y=\"112\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#14532d\">Zayıf (+)</text>\n    <text x=\"500\" y=\"112\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#14532d\">Orta (+)</text>\n    <text x=\"605\" y=\"112\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#ffffff\">Güçlü (+)</text>\n\n    <text x=\"50\" y=\"150\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#991b1b\">-1</text>\n    <text x=\"140\" y=\"150\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#991b1b\">-0,70</text>\n    <text x=\"260\" y=\"150\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#991b1b\">-0,30</text>\n    <text x=\"350\" y=\"150\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">0</text>\n    <text x=\"440\" y=\"150\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#166534\">0,30</text>\n    <text x=\"560\" y=\"150\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#166534\">0,70</text>\n    <text x=\"650\" y=\"150\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#166534\">+1</text>\n\n    <text x=\"65\" y=\"175\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#b91c1c\">Negatif Mükemmel</text>\n    <text x=\"350\" y=\"175\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#475569\">İlişki Yok</text>\n    <text x=\"635\" y=\"175\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#15803d\">Pozitif Mükemmel</text>\n    <text x=\"350\" y=\"205\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\">Not: |r| değeri 1'e yaklaştıkça doğrusal ilişki güçlenir, 0'a yaklaştıkça zayıflar.</text>\n    </svg>"
-  },
-  {
-   "baslik": "Korelasyon Nedensellik (Neden-Sonuç) Demek Değildir!",
-   "metin": [
-    "İstatistiksel araştırma sonuçlarını yorumlarken dikkat edilmesi gereken en önemli ilke şudur: {koyu:Korelasyon analizi iki değişken arasında istatistiksel bir birliktelik olduğunu gösterir ancak birinin diğerinin doğrudan sebebi olduğunu (nedensellik) kanıtlamaz!} İki değişken birbiriyle yüksek oranda ilişkili görünse bile bu durum her zaman doğrudan bir neden-sonuç ilişkisi taşımayabilir.",
-    "Ders kitabımızdaki örnekte olduğu gibi, bir ülkede güneşli gün sayısı arttığında mutluluk endeksi oranlarının da artması, güneşin insanları doğrudan mutlu ettiğini tek başına ispatlamaz. Bu birliktelik; ekonomik refah, dışarıda geçirilen sürenin artması veya düşük suç oranı gibi üçüncü bir {koyu:gizli değişkenin (karıştırıcı faktörün)} hem güneşli bölge tercihini hem de mutluluğu etkilemesinden kaynaklanabilir. Benzer şekilde ekonomik büyüme oranlarındaki değişimi yalnızca iç göç oranlarıyla açıklamak da hatalıdır; çünkü ekonomik büyümeyi etkileyen pek çok başka faktör vardır."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "Gizli Değişken ve Yanıltıcı Birliktelik Uyarısı",
-    "metin": "İki nicel değişken arasında güçlü bir korelasyon (`|r| >= 0,70`) bulunduğunda hemen {koyu:\"X değişkeni Y değişkeninin nedenidir.\"} hükmü verilmemelidir. Ortamdaki {koyu:gizli değişkenler} ve bağlam mutlaka eleştirel gözle değerlendirilmelidir."
-   },
-   "gorsel": "<svg viewBox=\"0 0 700 245\" role=\"img\" aria-label=\"Korelasyon ve Gizli Değişken İlişkisi\">\n    <rect x=\"20\" y=\"15\" width=\"660\" height=\"220\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n    <text x=\"350\" y=\"42\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">KORELASYON ≠ NEDENSELLİK (GİZLİ DEĞİŞKEN ETKİSİ)</text>\n    <rect x=\"235\" y=\"58\" width=\"230\" height=\"54\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n    <text x=\"350\" y=\"80\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#b45309\">GİZLİ (KARIŞTIRICI) DEĞİŞKEN</text>\n    <text x=\"350\" y=\"99\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10.5\" fill=\"#92400e\">Ekonomik Refah / Açık Hava Süresi</text>\n\n    <path d=\"M 275 112 L 175 145\" stroke=\"#d97706\" stroke-width=\"2\"/>\n    <path d=\"M 425 112 L 525 145\" stroke=\"#d97706\" stroke-width=\"2\"/>\n\n    <rect x=\"55\" y=\"148\" width=\"210\" height=\"62\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n    <text x=\"160\" y=\"172\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">1. NİCEL DEĞİŞKEN (X)</text>\n    <text x=\"160\" y=\"193\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10.5\" fill=\"#1e40af\">Güneşli Gün Sayısı</text>\n\n    <rect x=\"435\" y=\"148\" width=\"210\" height=\"62\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n    <text x=\"540\" y=\"172\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\">2. NİCEL DEĞİŞKEN (Y)</text>\n    <text x=\"540\" y=\"193\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10.5\" fill=\"#166534\">Mutluluk Endeksi Oranı</text>\n\n    <line x1=\"270\" y1=\"179\" x2=\"430\" y2=\"179\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/>\n    <text x=\"350\" y=\"171\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#dc2626\">Gözlenen Korelasyon</text>\n    <text x=\"350\" y=\"198\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#991b1b\">(Doğrudan Neden-Sonuç Değildir!)</text>\n    </svg>"
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Bir serpme diyagramında yatay eksende öğrencilerin günlük televizyon izleme süresi (saat), dikey eksende ise okudukları sayfa sayısı gösterilmiştir. Noktalar sol üstten sağ alta doğru sıkı bir şerit hâlinde dizildiğine göre ilişkinin yönünü ve gücünü yorumlayınız.",
-   "cevap": "Noktalar sol üstten sağ alta doğru alçaldığı için değişkenlerden biri artarken diğeri azalmaktadır; yani {koyu:negatif yönlü} bir ilişki vardır. Noktalar eğilim çizgisine yakın ve sıkı bir şerit oluşturduğu için bu ilişki {koyu:negatif yönlü güçlü bir ilişkidir}."
-  },
-  {
-   "soru": "Üç farklı araştırmada hesaplanan korelasyon katsayıları sırasıyla r_1 = -0,82, r_2 = 0,65 ve r_3 = -0,24 olarak bulunmuştur. Bu üç ilişkiyi yön ve güç bakımından tanımlayarak en güçlüden en zayıfa doğru sıralayınız.",
-   "cevap": "• `r_1 = -0,82`: `-1 < r <= -0,70` aralığında olduğundan {koyu:negatif güçlü ilişki}\n• `r_2 = 0,65`: `0,30 <= r < 0,70` aralığında olduğundan {koyu:pozitif orta ilişki}\n• `r_3 = -0,24`: `-0,30 < r < 0` aralığında olduğundan {koyu:negatif zayıf ilişki}\nİlişkinin gücü `|r|` mutlak değerine göre sıralandığından en güçlüden en zayıfa sıralama: {koyu:`|r_1| (0,82) > |r_2| (0,65) > |r_3| (0,24)`} şeklindedir."
-  },
-  {
-   "soru": "Bir ülkenin 2015-2025 yılları arasındaki iç göç oranları (%) ile ekonomik büyüme oranları (%) serpme diyagramına aktarıldığında noktaların belirli bir doğru etrafında toplanmayıp dağınık durduğu ve r değerinin 0'a çok yakın olduğu görülmüştür. Bu durum nasıl yorumlanır?",
-   "cevap": "Noktaların belirli bir eğilim oluşturmadan dağınık durması ve korelasyon katsayısının `0`'a çok yakın olması, incelenen dönemde o ülkenin iç göç oranları ile ekonomik büyüme oranları arasında {koyu:doğrusal bir ilişki olmadığını} (veya çok zayıf/önemsiz olduğunu) gösterir."
-  },
-  {
-   "soru": "Rize'deki tarım arazilerinde topraktaki tuzluluk oranı (%) ile yetiştirilen ürün çeşidi miktarı arasındaki korelasyon katsayısı r = -0,78 olarak hesaplanmıştır. Bu sonucu bağlama uygun olarak yorumlayınız.",
-   "cevap": "`r = -0,78` değeri `-1 < r <= -0,70` aralığında yer aldığı için iki değişken arasında {koyu:negatif yönlü ve güçlü} bir doğrusal ilişki vardır. Buna göre topraktaki tuzluluk oranı arttıkça arazide yetiştirilebilen ürün çeşidi miktarının güçlü bir eğilimle azaldığı söylenebilir."
-  },
-  {
-   "soru": "Bir öğrenci yaptığı hesaplama sonucunda iki nicel değişken arasındaki korelasyon katsayısını r = -1,15 bulduğunu söylüyor. Öğrencinin bulduğu sonuç doğru olabilir mi? Neden?",
-   "cevap": "Hayır, doğru olamaz. Çünkü korelasyon katsayısı `r` tanımı gereği yalnızca {koyu:`-1` ile `+1` kapalı aralığında (`-1 <= r <= 1`)} değer alabilir. `-1`'den küçük veya `+1`'den büyük bir değer işlem hatası yapıldığını gösterir."
-  },
-  {
-   "soru": "Bir sahil kentinde yaz aylarında dondurma satış miktarı ile denizde boğulma vakaları sayısı arasında r = 0,84 gibi güçlü pozitif bir korelasyon bulunmuştur. \"Dondurma yemek boğulmaya neden olur.\" çıkarımı neden yanlıştır?",
-   "cevap": "{koyu:Korelasyon nedensellik (neden-sonuç) anlamına gelmez.} Burada hem dondurma satışlarını hem de denize giren insan sayısını (dolayısıyla boğulma vakalarını) aynı anda artıran {koyu:hava sıcaklığı / yaz mevsimi} adlı bir {koyu:gizli değişken} vardır. İki değişken arasındaki yüksek korelasyon bu gizli değişkenden kaynaklanmaktadır."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "İki nicel değişkenli bir veri kümesinde değişkenler arasındaki ilişkiyi görsel olarak incelemek için kullanılan en uygun grafik türü aşağıdakilerden hangisidir?",
-   "secenekler": [
-    "Daire (Pasta) Grafiği",
-    "Kutu Grafiği",
-    "Serpme Diyagramı (Saçılım Grafiği)",
-    "Kök-Yaprak Gösterimi",
-    "Sıklık Çokgeni"
-   ],
-   "dogru": 2,
-   "aciklama": "İki nicel değişkene ait eşleşmiş (x, y) veri çiftleri arasındaki ilişkiyi, yönü ve gücü görselleştirmek için serpme diyagramı (saçılım grafiği) kullanılır."
-  },
-  {
-   "tur": "coktan",
-   "soru": "İki nicel değişken arasındaki korelasyon katsayısı r = -0,76 olarak hesaplanmıştır. Bu iki değişken arasındaki ilişki aşağıdakilerden hangisiyle ifade edilir?",
-   "secenekler": [
-    "Pozitif yönlü güçlü ilişki",
-    "Negatif yönlü zayıf ilişki",
-    "Negatif yönlü orta ilişki",
-    "Negatif yönlü güçlü ilişki",
-    "Negatif mükemmel ilişki"
-   ],
-   "dogru": 3,
-   "aciklama": "-1 < r <= -0,70 aralığındaki korelasyon katsayıları negatif yönlü güçlü ilişkiyi ifade eder."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Aşağıdaki sayılardan hangisi iki nicel değişken arasındaki korelasyon katsayısı (r) OLAMAZ?",
-   "secenekler": [
-    "-1",
-    "-0,92",
-    "0",
-    "0,48",
-    "1,05"
-   ],
-   "dogru": 4,
-   "aciklama": "Korelasyon katsayısı r her zaman -1 <= r <= 1 aralığında değer alır; 1,05 sayısı 1'den büyük olduğu için korelasyon katsayısı olamaz."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Beş farklı veri grubuna ait korelasyon katsayıları aşağıda verilmiştir. Hangi veri grubundaki iki nicel değişken arasındaki doğrusal ilişki EN GÜÇLÜDÜR?",
-   "secenekler": [
-    "r = 0,72",
-    "r = -0,89",
-    "r = 0,81",
-    "r = -0,45",
-    "r = 0,15"
-   ],
-   "dogru": 1,
-   "aciklama": "Doğrusal ilişkinin gücü korelasyon katsayısının mutlak değerine (|r|) göre belirlenir. |-0,89| = 0,89 değeri 1'e en yakın olduğu için en güçlü ilişki B seçeneğindedir."
-  },
-  {
-   "tur": "dy",
-   "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "11-matematik-2",
+  "sinif": 11,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 2,
+  "tarih": "21-25 Eylül 2026",
+  "yayin_tarihi": "2026-10-16",
+  "unite": "1. Tema: İstatistiksel Araştırma Süreci",
+  "konu": "İki Nicel Değişkenli Verilerin Analizi: Serpme Diyagramı ve Korelasyon Katsayısı",
+  "ciktilar": [
+    "MAT.11.1.1. İki nicel değişkenli veri ile çalışabilme ve iki nicel değişken arasındaki ilişkililiğe dayalı karar verebilme."
+  ],
+  "giris": "İki nicel değişkenli verileri topladıktan ve analize hazır hâle getirdikten sonra değişkenler arasında gerçekten bir ilişki olup olmadığını nasıl belirleriz? Bu haftaki dersimizde eşleşmiş veri çiftlerini {koyu:serpme diyagramı (saçılım grafiği)} ile görselleştirmeyi, ilişkinin yönünü ve gücünü {koyu:bölgelere göre sayım oranı (BSO)} ve {koyu:korelasyon katsayısı (r)} yardımıyla yorumlamayı ve korelasyon ile {koyu:nedensellik} arasındaki kritik farkı inceliyoruz.",
+  "ozet": [
+    "{koyu:Serpme Diyagramı (Saçılım Grafiği):} İki nicel değişkene ait eşleşmiş `(x, y)` veri çiftlerinin dik koordinat düzleminde noktalar hâlinde gösterilmesiyle oluşan grafiktir.",
+    "{koyu:İlişkinin Yönü:} Değişkenlerden biri artarken diğeri de artıyorsa (veya ikisi birlikte azalıyorsa) {koyu:pozitif yönlü ilişki}; biri artarken diğeri azalıyorsa {koyu:negatif yönlü ilişki} vardır. Noktalar rastgele dağılmışsa {koyu:ilişki yoktur}.",
+    "{koyu:İlişkinin Gücü:} Serpme diyagramındaki noktalar doğrusal bir eğilim çizgisine ne kadar yakın ve sıkı dizilmişse ilişki o kadar {koyu:güçlüdür}; çizgiden uzaklaşıp dağıldıkça ilişki {koyu:orta} veya {koyu:zayıf} düzeye iner.",
+    "{koyu:Korelasyon Katsayısı (r):} İki nicel değişken arasındaki doğrusal ilişkinin yönünü ve gücünü gösteren, {koyu:-1 ile +1 arasında} (`-1 <= r <= 1`) değer alan bir orandır.",
+    "{koyu:Korelasyon Katsayısının Yorumu:} `r = 1` pozitif mükemmel, `0,70 <= r < 1` pozitif güçlü, `0,30 <= r < 0,70` pozitif orta, `0 < r < 0,30` pozitif zayıf ilişkiyi; negatif karşılıkları ise negatif yönlü aynı güçteki ilişkileri gösterir (`r = 0` doğrusal ilişki yok).",
+    "{koyu:Korelasyon ve Nedensellik:} İki değişken arasında güçlü bir korelasyon bulunması, birinin diğerinin doğrudan sebebi olduğunu ({koyu:neden-sonuç ilişkisi}) kanıtlamaz; üçüncü bir {koyu:gizli değişken} her iki değişkeni aynı anda etkiliyor olabilir."
+  ],
+  "bolumler": [
     {
-     "metin": "Serpme diyagramında değişkenlerden biri artarken diğeri de artıyorsa değişkenler arasında pozitif yönlü ilişki vardır.",
-     "dogru": true,
-     "aciklama": "İki nicel değişkenin birlikte artması veya birlikte azalması pozitif yönlü ilişkiyi (pozitif korelasyonu) gösterir."
+      "baslik": "İki Nicel Değişkenli Verilerde Veri Analizi ve Serpme Diyagramı",
+      "metin": [
+        "İki nicel değişkenli istatistiksel araştırmalarda {koyu:veri analizi}, toplanıp düzenlenen ham verilerin incelenerek anlamlı sonuçlara dönüştürülmesi sürecidir. Tek nicel değişkenli verilerde kullanılan nokta grafiği, histogram veya kutu grafiği iki sayısal değişkenin birlikte nasıl değiştiğini göstermek için yeterli değildir. Bu amaçla kullanılan temel görselleştirme aracı {koyu:serpme diyagramıdır} ({koyu:dağılım grafiği} veya {koyu:saçılım grafiği}).",
+        "Serpme diyagramında her gözlem birimine ait iki nicel ölçüm, dik koordinat sisteminde sıralı ikili `{koyu:(x, y)}` olarak tek bir noktayla temsil edilir. Yatay eksene (`x`) birinci nicel değişken, dikey eksene (`y`) ikinci nicel değişken yerleştirilir. Grafikte oluşan nokta bulutunun sergilediği desen, iki değişken arasında bir ilişki bulunup bulunmadığını görsel olarak ortaya koyar."
+      ],
+      "kutu": {
+        "tur": "tanim",
+        "baslik": "Serpme Diyagramı (Saçılım Grafiği) Nedir?",
+        "metin": "İki nicel değişken arasındaki ilişkililiği, değişimin yönünü ve eğilimini incelemek amacıyla veri çiftlerinin dik koordinat düzleminde `{koyu:(x, y)}` noktaları olarak işaretlenmesiyle elde edilen grafiğe {koyu:serpme diyagramı} denir."
+      }
     },
     {
-     "metin": "Korelasyon katsayısı r = 0,55 olan iki değişken arasındaki ilişki orta düzeyde ve pozitif yönlüdür.",
-     "dogru": true,
-     "aciklama": "0,30 <= r < 0,70 aralığı pozitif yönlü orta ilişki olarak sınıflandırılır."
+      "baslik": "Serpme Diyagramında İlişkinin Yönü: Pozitif, Negatif ve İlişkisiz Dağılım",
+      "metin": [
+        "Serpme diyagramındaki noktaların oluşturduğu eğilim incelendiğinde ilişkinin yönü hakkında üç temel durumla karşılaşılır: Birincisi {koyu:pozitif yönlü ilişkidir}; `x` ve `y` değerlerinin ikisi birlikte artıyor veya ikisi birlikte azalıyorsa noktalar sol alttan sağ üste doğru yükselen bir şerit oluşturur. Örneğin bir ülkenin yıllara göre ihracat ve ithalat miktarları veya çalışma süresi ile çözülen soru sayısı arasında pozitif yönlü ilişki görülür.",
+        "İkincisi {koyu:negatif yönlü ilişkidir}; değişkenlerden biri artarken diğeri azalıyorsa noktalar sol üstten sağ alta doğru alçalan bir eğilim gösterir. Örneğin istihdam oranı arttıkça işsizlik oranının azalması negatif yönlü bir ilişkidir. Üçüncüsü ise {koyu:ilişki olmaması} durumudur; noktalar hiçbir doğrusal eğilim veya desen oluşturmadan düzlemde rastgele ve dağınık biçimde yer alıyorsa iki nicel değişken arasında doğrusal bir ilişki yoktur denir."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Eğilim Yönünü Hızlı Okuma",
+        "metin": "Soldan sağa gidildikçe nokta bulutu {koyu:yukarı çıkıyorsa}: {koyu:Pozitif yönlü ilişki} (Aynı yönlü değişim)\n• Soldan sağa gidildikçe nokta bulutu {koyu:aşağı iniyorsa}: {koyu:Negatif yönlü ilişki} (Zıt yönlü değişim)\n• Nokta bulutu {koyu:rastgele dağılmışsa}: {koyu:İlişki yok}"
+      },
+      "gorsel": "<svg viewBox=\"0 0 700 260\" role=\"img\" aria-label=\"Serpme Diyagramında İlişkinin Yönü\">\n    <rect x=\"20\" y=\"15\" width=\"660\" height=\"230\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n    <text x=\"350\" y=\"40\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">SERPME DİYAGRAMINDA (SAÇILIM GRAFİĞİ) İLİŞKİNİN YÖNÜ</text>\n    <rect x=\"35\" y=\"58\" width=\"200\" height=\"170\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n    <text x=\"135\" y=\"80\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\">POZİTİF YÖNLÜ İLİŞKİ</text>\n    <line x1=\"65\" y1=\"190\" x2=\"205\" y2=\"190\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"65\" y1=\"190\" x2=\"65\" y2=\"95\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"75\" y1=\"180\" x2=\"195\" y2=\"105\" stroke=\"#22c55e\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n    <circle cx=\"82\" cy=\"175\" r=\"4\" fill=\"#16a34a\"/>\n    <circle cx=\"100\" cy=\"162\" r=\"4\" fill=\"#16a34a\"/>\n    <circle cx=\"118\" cy=\"154\" r=\"4\" fill=\"#16a34a\"/>\n    <circle cx=\"136\" cy=\"140\" r=\"4\" fill=\"#16a34a\"/>\n    <circle cx=\"155\" cy=\"130\" r=\"4\" fill=\"#16a34a\"/>\n    <circle cx=\"174\" cy=\"118\" r=\"4\" fill=\"#16a34a\"/>\n    <circle cx=\"190\" cy=\"108\" r=\"4\" fill=\"#16a34a\"/>\n    <text x=\"135\" y=\"212\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#166534\">x ve y birlikte artar (r &gt; 0)</text>\n\n    <rect x=\"250\" y=\"58\" width=\"200\" height=\"170\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n    <text x=\"350\" y=\"80\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#b91c1c\">NEGATİF YÖNLÜ İLİŞKİ</text>\n    <line x1=\"280\" y1=\"190\" x2=\"420\" y2=\"190\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"280\" y1=\"190\" x2=\"280\" y2=\"95\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"290\" y1=\"105\" x2=\"410\" y2=\"180\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n    <circle cx=\"295\" cy=\"110\" r=\"4\" fill=\"#dc2626\"/>\n    <circle cx=\"312\" cy=\"122\" r=\"4\" fill=\"#dc2626\"/>\n    <circle cx=\"330\" cy=\"130\" r=\"4\" fill=\"#dc2626\"/>\n    <circle cx=\"350\" cy=\"144\" r=\"4\" fill=\"#dc2626\"/>\n    <circle cx=\"368\" cy=\"155\" r=\"4\" fill=\"#dc2626\"/>\n    <circle cx=\"386\" cy=\"166\" r=\"4\" fill=\"#dc2626\"/>\n    <circle cx=\"404\" cy=\"176\" r=\"4\" fill=\"#dc2626\"/>\n    <text x=\"350\" y=\"212\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#991b1b\">Biri artarken diğeri azalır (r &lt; 0)</text>\n\n    <rect x=\"465\" y=\"58\" width=\"200\" height=\"170\" rx=\"10\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <text x=\"565\" y=\"80\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\">İLİŞKİ YOK</text>\n    <line x1=\"495\" y1=\"190\" x2=\"635\" y2=\"190\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"495\" y1=\"190\" x2=\"495\" y2=\"95\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <circle cx=\"515\" cy=\"115\" r=\"4\" fill=\"#475569\"/>\n    <circle cx=\"540\" cy=\"170\" r=\"4\" fill=\"#475569\"/>\n    <circle cx=\"560\" cy=\"125\" r=\"4\" fill=\"#475569\"/>\n    <circle cx=\"585\" cy=\"160\" r=\"4\" fill=\"#475569\"/>\n    <circle cx=\"610\" cy=\"112\" r=\"4\" fill=\"#475569\"/>\n    <circle cx=\"620\" cy=\"172\" r=\"4\" fill=\"#475569\"/>\n    <circle cx=\"530\" cy=\"142\" r=\"4\" fill=\"#475569\"/>\n    <text x=\"565\" y=\"212\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#334155\">Rastgele dağılım (r ≈ 0)</text>\n    </svg>"
     },
     {
-     "metin": "Korelasyon katsayısı r = -0,80 olan bir ilişki, r = +0,50 olan bir ilişkiden daha zayıftır.",
-     "dogru": false,
-     "aciklama": "Eksi işareti yalnızca ilişkinin ters (negatif) yönlü olduğunu gösterir; |-0,80| > |0,50| olduğu için r = -0,80 ilişkisi daha güçlüdür."
+      "baslik": "Eğilim Çizgisi, İlişkinin Gücü ve Bölgelere Göre Sayım Oranı (BSO)",
+      "metin": [
+        "İki nicel değişken arasındaki ilişkinin {koyu:gücü}, serpme diyagramındaki noktaların varsayılan bir {koyu:doğrusal eğilim çizgisine} ne kadar yakın ve sıkı dizildiğiyle belirlenir. Noktalar bir doğru üzerinde veya doğruya çok yakın ve sıkı bir küme hâlinde dizilmişse ilişki {koyu:güçlüdür}. Noktalar eğilim çizgisinden kısmen uzaklaşmış ancak yönünü belli ediyorsa ilişki {koyu:orta düzeydedir}; çizgiden çok uzak ve geniş bir alana yayılmışsa ilişki {koyu:zayıftır}.",
+        "Serpme diyagramında ilişkinin yönünü ve gücünü değerlendirirken kullanılan pratik yöntemlerden biri de {koyu:Bölgelere Göre Sayım Oranı (BSO)} yaklaşımıdır. Veri noktalarının yatay ve dikey merkez (ortanca/ortalama) doğrularıyla koordinat düzlemi dört bölgeye ayrıldığında; noktaların büyük çoğunluğu {koyu:I. ve III. bölgelerde} toplanıyorsa pozitif ilişki, {koyu:II. ve IV. bölgelerde} toplanıyorsa negatif ilişki, dört bölgeye yaklaşık eşit dağılıyorsa ilişkisizlik söz konusudur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Nokta Bulutunun Görünümü",
+          "İlişkinin Yönü",
+          "İlişkinin Gücü"
+        ],
+        "satirlar": [
+          [
+            "Sol alttan sağ üste doğru bir doğruya çok sıkı dizilmiş noktalar",
+            "Pozitif (+)",
+            "Güçlü İlişki"
+          ],
+          [
+            "Sol alttan sağ üste yükselen ancak kısmen aralıklı noktalar",
+            "Pozitif (+)",
+            "Orta İlişki"
+          ],
+          [
+            "Sol üstten sağ alta doğru bir doğruya çok sıkı dizilmiş noktalar",
+            "Negatif (-)",
+            "Güçlü İlişki"
+          ],
+          [
+            "Sol üstten sağ alta inen ancak oldukça geniş ve seyrek noktalar",
+            "Negatif (-)",
+            "Zayıf İlişki"
+          ],
+          [
+            "Belirli bir yönelim göstermeden her yöne rastgele dağılmış noktalar",
+            "Yön Yok",
+            "İlişki Yok"
+          ]
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 700 250\" role=\"img\" aria-label=\"İlişkinin Gücü ve Eğilim Çizgisi\">\n    <rect x=\"20\" y=\"15\" width=\"660\" height=\"225\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n    <text x=\"350\" y=\"42\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">SERPME DİYAGRAMINDA İLİŞKİNİN GÜCÜ (EĞİLİM ÇİZGİSİNE YAKINLIK)</text>\n    <rect x=\"40\" y=\"62\" width=\"195\" height=\"155\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n    <text x=\"137\" y=\"84\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">GÜÇLÜ İLİŞKİ (0,70 ≤ |r| &lt; 1)</text>\n    <line x1=\"70\" y1=\"180\" x2=\"205\" y2=\"105\" stroke=\"#93c5fd\" stroke-width=\"2\"/>\n    <circle cx=\"80\" cy=\"173\" r=\"4\" fill=\"#1d4ed8\"/>\n    <circle cx=\"102\" cy=\"164\" r=\"4\" fill=\"#1d4ed8\"/>\n    <circle cx=\"125\" cy=\"148\" r=\"4\" fill=\"#1d4ed8\"/>\n    <circle cx=\"148\" cy=\"138\" r=\"4\" fill=\"#1d4ed8\"/>\n    <circle cx=\"172\" cy=\"122\" r=\"4\" fill=\"#1d4ed8\"/>\n    <circle cx=\"194\" cy=\"112\" r=\"4\" fill=\"#1d4ed8\"/>\n    <text x=\"137\" y=\"202\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" fill=\"#1e40af\">Çizgiye çok yakın ve sıkı</text>\n\n    <rect x=\"252\" y=\"62\" width=\"195\" height=\"155\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/>\n    <text x=\"350\" y=\"84\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#b45309\">ORTA İLİŞKİ (0,30 ≤ |r| &lt; 0,70)</text>\n    <line x1=\"282\" y1=\"180\" x2=\"417\" y2=\"105\" stroke=\"#fcd34d\" stroke-width=\"2\"/>\n    <circle cx=\"290\" cy=\"165\" r=\"4\" fill=\"#d97706\"/>\n    <circle cx=\"312\" cy=\"175\" r=\"4\" fill=\"#d97706\"/>\n    <circle cx=\"335\" cy=\"138\" r=\"4\" fill=\"#d97706\"/>\n    <circle cx=\"360\" cy=\"155\" r=\"4\" fill=\"#d97706\"/>\n    <circle cx=\"382\" cy=\"115\" r=\"4\" fill=\"#d97706\"/>\n    <circle cx=\"406\" cy=\"128\" r=\"4\" fill=\"#d97706\"/>\n    <text x=\"350\" y=\"202\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" fill=\"#92400e\">Çizgiden kısmen uzaklaşmış</text>\n\n    <rect x=\"465\" y=\"62\" width=\"195\" height=\"155\" rx=\"10\" fill=\"#fdf2f8\" stroke=\"#ec4899\" stroke-width=\"1.5\"/>\n    <text x=\"562\" y=\"84\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#be185d\">ZAYIF İLİŞKİ (0 &lt; |r| &lt; 0,30)</text>\n    <line x1=\"495\" y1=\"180\" x2=\"630\" y2=\"105\" stroke=\"#f9a8d4\" stroke-width=\"2\"/>\n    <circle cx=\"500\" cy=\"145\" r=\"4\" fill=\"#db2777\"/>\n    <circle cx=\"525\" cy=\"182\" r=\"4\" fill=\"#db2777\"/>\n    <circle cx=\"548\" cy=\"112\" r=\"4\" fill=\"#db2777\"/>\n    <circle cx=\"572\" cy=\"168\" r=\"4\" fill=\"#db2777\"/>\n    <circle cx=\"595\" cy=\"105\" r=\"4\" fill=\"#db2777\"/>\n    <circle cx=\"620\" cy=\"142\" r=\"4\" fill=\"#db2777\"/>\n    <text x=\"562\" y=\"202\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" fill=\"#9d174d\">Çizgiden uzak ve seyrek</text>\n    </svg>"
     },
     {
-     "metin": "İki nicel değişken arasında güçlü bir korelasyon bulunması, birinci değişkenin ikinci değişkenin kesin nedeni olduğunu kanıtlar.",
-     "dogru": false,
-     "aciklama": "Korelasyon nedensellik (neden-sonuç) demek değildir; üçüncü bir gizli değişken her iki değişkeni birlikte etkiliyor olabilir."
+      "baslik": "Korelasyon Analizi ve Korelasyon Katsayısı (r)",
+      "metin": [
+        "Serpme diyagramı görsel bir fikir verse de ilişkinin yönünü ve gücünü kesin ve nesnel biçimde ifade etmek için {koyu:korelasyon analizi} yapılır ve {koyu:korelasyon katsayısı (r)} hesaplanır. İstatistik yazılımları veya elektronik tablolama programlarıyla hesaplanan korelasyon katsayısı bir orandır ve daima {koyu:-1 ile +1 arasında} (`-1 <= r <= 1`) değer alır.",
+        "Korelasyon katsayısının {koyu:işareti (+ veya -)} ilişkinin yönünü, {koyu:mutlak değeri (`|r|`)} ise ilişkinin gücünü gösterir. `r > 0` ise değişkenler arasında pozitif korelasyon, `r < 0` ise negatif korelasyon vardır. `|r|` değeri `1`'e yaklaştıkça doğrusal ilişki güçlenir; `0`'a yaklaştıkça zayıflar. Noktaların tamamı tam bir doğru üzerindeyse `r = +1` ({koyu:pozitif mükemmel ilişki}) veya `r = -1` ({koyu:negatif mükemmel ilişki}) olur; aralarında doğrusal ilişki olmayan değişkenlerde ise `r = 0`'dır."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Korelasyon Katsayısının (r) Temel Özellikleri",
+        "metin": "Korelasyon katsayısı `-1 <= r <= 1` aralığının dışında (`1,2` veya `-1,5` gibi) bir değer {koyu:alamaz}.\n2. İki korelasyon katsayısının gücü karşılaştırılırken işaretlerine değil {koyu:mutlak değerlerine (`|r|`)} bakılır. Örneğin `r = -0,85` olan bir ilişki, `r = +0,60` olan bir ilişkiden {koyu:daha güçlüdür}."
+      }
     },
     {
-     "metin": "Serpme diyagramındaki tüm noktalar sağa doğru alçalan tek bir doğru üzerinde bulunuyorsa korelasyon katsayısı r = -1'dir.",
-     "dogru": true,
-     "aciklama": "Noktaların tamamının negatif eğimli bir doğru üzerinde dizilmesi negatif mükemmel ilişkiyi (r = -1) ifade eder."
+      "baslik": "Korelasyon Katsayısı (r) Aralıklarının Sınıflandırılması",
+      "metin": [
+        "İki nicel değişken arasındaki doğrusal ilişkinin gücü, korelasyon katsayısı `r`'nin bulunduğu aralığa göre standart ölçütlerle yorumlanır. Pozitif yönlü ilişkilerde `0 < r < 0,30` aralığı {koyu:zayıf ilişki}, `0,30 <= r < 0,70` aralığı {koyu:orta ilişki}, `0,70 <= r < 1` aralığı {koyu:güçlü ilişki} ve `r = 1` değeri {koyu:pozitif mükemmel ilişki} olarak adlandırılır.",
+        "Aynı sınıflandırma simetrik olarak negatif yönlü ilişkiler için de geçerlidir: `-0,30 < r < 0` aralığı {koyu:negatif zayıf ilişki}, `-0,70 <= r <= -0,30` aralığı {koyu:negatif orta ilişki}, `-1 < r <= -0,70` aralığı {koyu:negatif güçlü ilişki} ve `r = -1` değeri {koyu:negatif mükemmel ilişki} olarak yorumlanır. `r = 0` olduğunda ise iki değişken arasında doğrusal bir ilişki bulunmadığına karar verilir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "İlişkinin Gücü",
+          "Negatif Yönlü İlişki Aralığı",
+          "Pozitif Yönlü İlişki Aralığı"
+        ],
+        "satirlar": [
+          [
+            "Mükemmel İlişki",
+            "r = -1",
+            "r = 1"
+          ],
+          [
+            "Güçlü İlişki",
+            "-1 < r <= -0,70",
+            "0,70 <= r < 1"
+          ],
+          [
+            "Orta İlişki",
+            "-0,70 < r <= -0,30",
+            "0,30 <= r < 0,70"
+          ],
+          [
+            "Zayıf İlişki",
+            "-0,30 < r < 0",
+            "0 < r < 0,30"
+          ],
+          [
+            "İlişki Yok",
+            "r = 0",
+            "r = 0"
+          ]
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 700 245\" role=\"img\" aria-label=\"Korelasyon Katsayısı (r) Cetveli\">\n    <rect x=\"20\" y=\"15\" width=\"660\" height=\"220\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n    <text x=\"350\" y=\"42\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">KORELASYON KATSAYISI (r) SAYI DOĞRUSU CETVELİ (-1 ≤ r ≤ 1)</text>\n    <rect x=\"50\" y=\"85\" width=\"90\" height=\"45\" fill=\"#dc2626\"/>\n    <rect x=\"140\" y=\"85\" width=\"120\" height=\"45\" fill=\"#f87171\"/>\n    <rect x=\"260\" y=\"85\" width=\"90\" height=\"45\" fill=\"#fca5a5\"/>\n    <rect x=\"350\" y=\"85\" width=\"90\" height=\"45\" fill=\"#86efac\"/>\n    <rect x=\"440\" y=\"85\" width=\"120\" height=\"45\" fill=\"#4ade80\"/>\n    <rect x=\"560\" y=\"85\" width=\"90\" height=\"45\" fill=\"#16a34a\"/>\n\n    <text x=\"95\" y=\"112\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#ffffff\">Güçlü (-)</text>\n    <text x=\"200\" y=\"112\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#ffffff\">Orta (-)</text>\n    <text x=\"305\" y=\"112\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#7f1d1d\">Zayıf (-)</text>\n    <text x=\"395\" y=\"112\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#14532d\">Zayıf (+)</text>\n    <text x=\"500\" y=\"112\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#14532d\">Orta (+)</text>\n    <text x=\"605\" y=\"112\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#ffffff\">Güçlü (+)</text>\n\n    <text x=\"50\" y=\"150\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#991b1b\">-1</text>\n    <text x=\"140\" y=\"150\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#991b1b\">-0,70</text>\n    <text x=\"260\" y=\"150\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#991b1b\">-0,30</text>\n    <text x=\"350\" y=\"150\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">0</text>\n    <text x=\"440\" y=\"150\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#166534\">0,30</text>\n    <text x=\"560\" y=\"150\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#166534\">0,70</text>\n    <text x=\"650\" y=\"150\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#166534\">+1</text>\n\n    <text x=\"65\" y=\"175\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#b91c1c\">Negatif Mükemmel</text>\n    <text x=\"350\" y=\"175\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#475569\">İlişki Yok</text>\n    <text x=\"635\" y=\"175\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#15803d\">Pozitif Mükemmel</text>\n    <text x=\"350\" y=\"205\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\">Not: |r| değeri 1'e yaklaştıkça doğrusal ilişki güçlenir, 0'a yaklaştıkça zayıflar.</text>\n    </svg>"
+    },
+    {
+      "baslik": "Korelasyon Nedensellik (Neden-Sonuç) Demek Değildir!",
+      "metin": [
+        "İstatistiksel araştırma sonuçlarını yorumlarken dikkat edilmesi gereken en önemli ilke şudur: {koyu:Korelasyon analizi iki değişken arasında istatistiksel bir birliktelik olduğunu gösterir ancak birinin diğerinin doğrudan sebebi olduğunu (nedensellik) kanıtlamaz!} İki değişken birbiriyle yüksek oranda ilişkili görünse bile bu durum her zaman doğrudan bir neden-sonuç ilişkisi taşımayabilir.",
+        "İncelenen örnekte olduğu gibi, bir ülkede güneşli gün sayısı arttığında mutluluk endeksi oranlarının da artması, güneşin insanları doğrudan mutlu ettiğini tek başına ispatlamaz. Bu birliktelik; ekonomik refah, dışarıda geçirilen sürenin artması veya düşük suç oranı gibi üçüncü bir {koyu:gizli değişkenin (karıştırıcı faktörün)} hem güneşli bölge tercihini hem de mutluluğu etkilemesinden kaynaklanabilir. Benzer şekilde ekonomik büyüme oranlarındaki değişimi yalnızca iç göç oranlarıyla açıklamak da hatalıdır; çünkü ekonomik büyümeyi etkileyen pek çok başka faktör vardır."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Gizli Değişken ve Yanıltıcı Birliktelik Uyarısı",
+        "metin": "İki nicel değişken arasında güçlü bir korelasyon (`|r| >= 0,70`) bulunduğunda hemen {koyu:\"X değişkeni Y değişkeninin nedenidir.\"} hükmü verilmemelidir. Ortamdaki {koyu:gizli değişkenler} ve bağlam mutlaka eleştirel gözle değerlendirilmelidir."
+      },
+      "gorsel": "<svg viewBox=\"0 0 700 245\" role=\"img\" aria-label=\"Korelasyon ve Gizli Değişken İlişkisi\">\n    <rect x=\"20\" y=\"15\" width=\"660\" height=\"220\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n    <text x=\"350\" y=\"42\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">KORELASYON ≠ NEDENSELLİK (GİZLİ DEĞİŞKEN ETKİSİ)</text>\n    <rect x=\"235\" y=\"58\" width=\"230\" height=\"54\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n    <text x=\"350\" y=\"80\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#b45309\">GİZLİ (KARIŞTIRICI) DEĞİŞKEN</text>\n    <text x=\"350\" y=\"99\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10.5\" fill=\"#92400e\">Ekonomik Refah / Açık Hava Süresi</text>\n\n    <path d=\"M 275 112 L 175 145\" stroke=\"#d97706\" stroke-width=\"2\"/>\n    <path d=\"M 425 112 L 525 145\" stroke=\"#d97706\" stroke-width=\"2\"/>\n\n    <rect x=\"55\" y=\"148\" width=\"210\" height=\"62\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n    <text x=\"160\" y=\"172\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">1. NİCEL DEĞİŞKEN (X)</text>\n    <text x=\"160\" y=\"193\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10.5\" fill=\"#1e40af\">Güneşli Gün Sayısı</text>\n\n    <rect x=\"435\" y=\"148\" width=\"210\" height=\"62\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n    <text x=\"540\" y=\"172\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\">2. NİCEL DEĞİŞKEN (Y)</text>\n    <text x=\"540\" y=\"193\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10.5\" fill=\"#166534\">Mutluluk Endeksi Oranı</text>\n\n    <line x1=\"270\" y1=\"179\" x2=\"430\" y2=\"179\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/>\n    <text x=\"350\" y=\"171\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#dc2626\">Gözlenen Korelasyon</text>\n    <text x=\"350\" y=\"198\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#991b1b\">(Doğrudan Neden-Sonuç Değildir!)</text>\n    </svg>"
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "soru": "Aşağıdaki korelasyon katsayısı değerlerini ve kavramları açıklamalarıyla eşleştiriniz.",
-   "ciftler": [
-    [
-     "r = 1",
-     "Pozitif yönlü mükemmel doğrusal ilişki"
-    ],
-    [
-     "r = -0,84",
-     "Negatif yönlü güçlü doğrusal ilişki"
-    ],
-    [
-     "r = 0,45",
-     "Pozitif yönlü orta düzeyde doğrusal ilişki"
-    ],
-    [
-     "r = 0",
-     "İki nicel değişken arasında doğrusal ilişki olmaması"
-    ],
-    [
-     "Gizli Değişken",
-     "İki değişkeni aynı anda etkileyerek yanıltıcı korelasyon oluşturan üçüncü faktör"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
-   "cumleler": [
+  ],
+  "ornekler": [
     {
-     "metin": "İki nicel değişkene ait sıralı ikililerin koordinat düzleminde noktalarla gösterildiği grafiğe ___ diyagramı denir.",
-     "cevap": "serpme"
+      "soru": "Bir serpme diyagramında yatay eksende öğrencilerin günlük televizyon izleme süresi (saat), dikey eksende ise okudukları sayfa sayısı gösterilmiştir. Noktalar sol üstten sağ alta doğru sıkı bir şerit hâlinde dizildiğine göre ilişkinin yönünü ve gücünü yorumlayınız.",
+      "cevap": "Noktalar sol üstten sağ alta doğru alçaldığı için değişkenlerden biri artarken diğeri azalmaktadır; yani {koyu:negatif yönlü} bir ilişki vardır. Noktalar eğilim çizgisine yakın ve sıkı bir şerit oluşturduğu için bu ilişki {koyu:negatif yönlü güçlü bir ilişkidir}."
     },
     {
-     "metin": "Nicel değişkenlerden biri artarken diğerinin azaldığı ilişki türüne ___ korelasyon adı verilir.",
-     "cevap": "negatif"
+      "soru": "Üç farklı araştırmada hesaplanan korelasyon katsayıları sırasıyla r_1 = -0,82, r_2 = 0,65 ve r_3 = -0,24 olarak bulunmuştur. Bu üç ilişkiyi yön ve güç bakımından tanımlayarak en güçlüden en zayıfa doğru sıralayınız.",
+      "cevap": "`r_1 = -0,82`: `-1 < r <= -0,70` aralığında olduğundan {koyu:negatif güçlü ilişki}\n• `r_2 = 0,65`: `0,30 <= r < 0,70` aralığında olduğundan {koyu:pozitif orta ilişki}\n• `r_3 = -0,24`: `-0,30 < r < 0` aralığında olduğundan {koyu:negatif zayıf ilişki}\nİlişkinin gücü `|r|` mutlak değerine göre sıralandığından en güçlüden en zayıfa sıralama: {koyu:`|r_1| (0,82) > |r_2| (0,65) > |r_3| (0,24)`} şeklindedir."
     },
     {
-     "metin": "Korelasyon katsayısı r = 0,18 olan iki değişken arasında pozitif yönlü ___ bir ilişki vardır.",
-     "cevap": "zayıf"
+      "soru": "Bir ülkenin 2015-2025 yılları arasındaki iç göç oranları (%) ile ekonomik büyüme oranları (%) serpme diyagramına aktarıldığında noktaların belirli bir doğru etrafında toplanmayıp dağınık durduğu ve r değerinin 0'a çok yakın olduğu görülmüştür. Bu durum nasıl yorumlanır?",
+      "cevap": "Noktaların belirli bir eğilim oluşturmadan dağınık durması ve korelasyon katsayısının `0`'a çok yakın olması, incelenen dönemde o ülkenin iç göç oranları ile ekonomik büyüme oranları arasında {koyu:doğrusal bir ilişki olmadığını} (veya çok zayıf/önemsiz olduğunu) gösterir."
     },
     {
-     "metin": "Korelasyon katsayısı r = 0,70 ile 1 arasında olduğunda iki değişken arasındaki ilişki ___ olarak nitelendirilir.",
-     "cevap": "güçlü"
+      "soru": "Rize'deki tarım arazilerinde topraktaki tuzluluk oranı (%) ile yetiştirilen ürün çeşidi miktarı arasındaki korelasyon katsayısı r = -0,78 olarak hesaplanmıştır. Bu sonucu bağlama uygun olarak yorumlayınız.",
+      "cevap": "`r = -0,78` değeri `-1 < r <= -0,70` aralığında yer aldığı için iki değişken arasında {koyu:negatif yönlü ve güçlü} bir doğrusal ilişki vardır. Buna göre topraktaki tuzluluk oranı arttıkça arazide yetiştirilebilen ürün çeşidi miktarının güçlü bir eğilimle azaldığı söylenebilir."
     },
     {
-     "metin": "Korelasyon analizi iki değişken arasındaki istatistiksel birlikteliği ölçer ancak doğrudan bir ___ ilişkisi olduğunu kanıtlamaz.",
-     "cevap": "nedensellik"
+      "soru": "Bir öğrenci yaptığı hesaplama sonucunda iki nicel değişken arasındaki korelasyon katsayısını r = -1,15 bulduğunu söylüyor. Öğrencinin bulduğu sonuç doğru olabilir mi? Neden?",
+      "cevap": "Hayır, doğru olamaz. Çünkü korelasyon katsayısı `r` tanımı gereği yalnızca {koyu:`-1` ile `+1` kapalı aralığında (`-1 <= r <= 1`)} değer alabilir. `-1`'den küçük veya `+1`'den büyük bir değer işlem hatası yapıldığını gösterir."
+    },
+    {
+      "soru": "Bir sahil kentinde yaz aylarında dondurma satış miktarı ile denizde boğulma vakaları sayısı arasında r = 0,84 gibi güçlü pozitif bir korelasyon bulunmuştur. \"Dondurma yemek boğulmaya neden olur.\" çıkarımı neden yanlıştır?",
+      "cevap": "{koyu:Korelasyon nedensellik (neden-sonuç) anlamına gelmez.} Burada hem dondurma satışlarını hem de denize giren insan sayısını (dolayısıyla boğulma vakalarını) aynı anda artıran {koyu:hava sıcaklığı / yaz mevsimi} adlı bir {koyu:gizli değişken} vardır. İki değişken arasındaki yüksek korelasyon bu gizli değişkenden kaynaklanmaktadır."
     }
-   ],
-   "fazla": [
-    "pozitif",
-    "kategorik"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "\"Türkiye'de istihdam oranı (%) ile işsizlik oranı (%) arasında bir ilişki var mıdır?\" araştırma sorusunu serpme diyagramı, korelasyon katsayısı ve nedensellik kavramları çerçevesinde nasıl analiz edip yorumlayacağınızı açıklayınız.",
-   "ipuclari": [
-    "Son 10 yıla ait eşleşmiş (istihdam oranı, işsizlik oranı) veri çiftlerinin serpme diyagramına nasıl aktarılacağını ve noktaların yönünü belirtiniz.",
-    "Hesaplanacak korelasyon katsayısının (r) işaretini ve hangi aralıkta çıkmasının bekleneceğini yorumlayınız.",
-    "İşsizlik ve istihdamı etkileyen eğitim politikaları, yatırımlar ve teşvikler gibi diğer ekonomik faktörleri nedensellik bağlamında değerlendiriniz."
-   ],
-   "cevap": "Öncelikle güvenilir resmî kaynaklardan (TÜİK vb.) son 10 yıla ait yıllık {koyu:istihdam ve işsizlik oranları} eşleşmiş olarak tabloya kaydedilir ve her yıla ait `(x, y)` çifti {koyu:serpme diyagramında} işaretlenir. İstihdam oranı arttıkça işsizlik oranı azaldığı için diyagramdaki noktalar sol üstten sağ alta doğru alçalan bir eğilim gösterir; yani değişkenler arasında {koyu:negatif yönlü güçlü bir korelasyon} (`-1 < r <= -0,70`) bulunur. Bununla birlikte sonuçlar yorumlanırken {koyu:nedensellik} boyutuna dikkat edilmeli; işsizliğin düşmesinde üretim teşvikleri, yatırımlar ve eğitim sisteminin iş gücü piyasasına uyumu gibi temel ekonomik etkenlerin rol oynadığı vurgulanmalıdır."
-  }
- ]
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "İki nicel değişkenli bir veri kümesinde değişkenler arasındaki ilişkiyi görsel olarak incelemek için kullanılan en uygun grafik türü aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Serpme Diyagramı",
+        "Kutu Grafiği",
+        "Daire (Pasta) Grafiği",
+        "Kök-Yaprak Gösterimi",
+        "Sıklık Çokgeni"
+      ],
+      "dogru": 0,
+      "aciklama": "İki nicel değişkene ait eşleşmiş (x, y) veri çiftleri arasındaki ilişkiyi, yönü ve gücü görselleştirmek için serpme diyagramı (saçılım grafiği) kullanılır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "İki nicel değişken arasındaki korelasyon katsayısı r = -0,76 olarak hesaplanmıştır. Bu iki değişken arasındaki ilişki aşağıdakilerden hangisiyle ifade edilir?",
+      "secenekler": [
+        "Pozitif yönlü güçlü ilişki",
+        "Negatif yönlü güçlü ilişki",
+        "Negatif yönlü orta ilişki",
+        "Negatif yönlü zayıf ilişki",
+        "Negatif mükemmel ilişki"
+      ],
+      "dogru": 1,
+      "aciklama": "-1 < r <= -0,70 aralığındaki korelasyon katsayıları negatif yönlü güçlü ilişkiyi ifade eder."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki sayılardan hangisi iki nicel değişken arasındaki korelasyon katsayısı (r) OLAMAZ?",
+      "secenekler": [
+        "-1",
+        "-0,92",
+        "1,05",
+        "0,48",
+        "0"
+      ],
+      "dogru": 2,
+      "aciklama": "Korelasyon katsayısı r her zaman -1 <= r <= 1 aralığında değer alır; 1,05 sayısı 1'den büyük olduğu için korelasyon katsayısı olamaz."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Beş farklı veri grubuna ait korelasyon katsayıları aşağıda verilmiştir. Hangi veri grubundaki iki nicel değişken arasındaki doğrusal ilişki EN GÜÇLÜDÜR?",
+      "secenekler": [
+        "r = 0,72",
+        "r = -0,45",
+        "r = 0,81",
+        "r = -0,89",
+        "r = 0,15"
+      ],
+      "dogru": 3,
+      "aciklama": "Doğrusal ilişkinin gücü korelasyon katsayısının mutlak değerine (|r|) göre belirlenir. |-0,89| = 0,89 değeri 1'e en yakın olduğu için en güçlü ilişki B seçeneğindedir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Serpme diyagramında değişkenlerden biri artarken diğeri de artıyorsa değişkenler arasında pozitif yönlü ilişki vardır.",
+          "dogru": true,
+          "aciklama": "İki nicel değişkenin birlikte artması veya birlikte azalması pozitif yönlü ilişkiyi (pozitif korelasyonu) gösterir."
+        },
+        {
+          "metin": "Korelasyon katsayısı r = 0,55 olan iki değişken arasındaki ilişki orta düzeyde ve pozitif yönlüdür.",
+          "dogru": true,
+          "aciklama": "0,30 <= r < 0,70 aralığı pozitif yönlü orta ilişki olarak sınıflandırılır."
+        },
+        {
+          "metin": "Korelasyon katsayısı r = -0,80 olan bir ilişki, r = +0,50 olan bir ilişkiden daha zayıftır.",
+          "dogru": false,
+          "aciklama": "Eksi işareti yalnızca ilişkinin ters (negatif) yönlü olduğunu gösterir; |-0,80| > |0,50| olduğu için r = -0,80 ilişkisi daha güçlüdür."
+        },
+        {
+          "metin": "İki nicel değişken arasında güçlü bir korelasyon bulunması, birinci değişkenin ikinci değişkenin net nedeni olduğunu kanıtlar.",
+          "dogru": false,
+          "aciklama": "Korelasyon nedensellik (neden-sonuç) demek değildir; üçüncü bir gizli değişken her iki değişkeni birlikte etkiliyor olabilir."
+        },
+        {
+          "metin": "Serpme diyagramındaki tüm noktalar sağa doğru alçalan tek bir doğru üzerinde bulunuyorsa korelasyon katsayısı r = -1'dir.",
+          "dogru": true,
+          "aciklama": "Noktaların tamamının negatif eğimli bir doğru üzerinde dizilmesi negatif mükemmel ilişkiyi (r = -1) ifade eder."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki korelasyon katsayısı değerlerini ve kavramları açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "r = 1",
+          "Pozitif yönlü mükemmel doğrusal ilişki"
+        ],
+        [
+          "r = -0,84",
+          "Negatif yönlü güçlü doğrusal ilişki"
+        ],
+        [
+          "r = 0,45",
+          "Pozitif yönlü orta düzeyde doğrusal ilişki"
+        ],
+        [
+          "r = 0",
+          "İki nicel değişken arasında doğrusal ilişki olmaması"
+        ],
+        [
+          "Gizli Değişken",
+          "İki değişkeni aynı anda etkileyerek yanıltıcı korelasyon oluşturan üçüncü faktör"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "İki nicel değişkene ait sıralı ikililerin koordinat düzleminde noktalarla gösterildiği grafiğe ___ diyagramı denir.",
+          "cevap": "serpme"
+        },
+        {
+          "metin": "Nicel değişkenlerden biri artarken diğerinin azaldığı ilişki türüne ___ korelasyon adı verilir.",
+          "cevap": "negatif"
+        },
+        {
+          "metin": "Korelasyon katsayısı r = 0,18 olan iki değişken arasında pozitif yönlü ___ bir ilişki vardır.",
+          "cevap": "zayıf"
+        },
+        {
+          "metin": "Korelasyon katsayısı r = 0,70 ile 1 arasında olduğunda iki değişken arasındaki ilişki ___ olarak nitelendirilir.",
+          "cevap": "güçlü"
+        },
+        {
+          "metin": "Korelasyon analizi iki değişken arasındaki istatistiksel birlikteliği ölçer ancak doğrudan bir ___ ilişkisi olduğunu kanıtlamaz.",
+          "cevap": "nedensellik"
+        }
+      ],
+      "fazla": [
+        "pozitif",
+        "kategorik"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "\"Türkiye'de istihdam oranı (%) ile işsizlik oranı (%) arasında bir ilişki var mıdır?\" araştırma sorusunu serpme diyagramı, korelasyon katsayısı ve nedensellik kavramları çerçevesinde nasıl analiz edip yorumlayacağınızı açıklayınız.",
+      "cevap": "Öncelikle güvenilir resmî kaynaklardan (TÜİK vb.) son 10 yıla ait yıllık {koyu:istihdam ve işsizlik oranları} eşleşmiş olarak tabloya kaydedilir ve her yıla ait `(x, y)` çifti {koyu:serpme diyagramında} işaretlenir. İstihdam oranı arttıkça işsizlik oranı azaldığı için diyagramdaki noktalar sol üstten sağ alta doğru alçalan bir eğilim gösterir; yani değişkenler arasında {koyu:negatif yönlü güçlü bir korelasyon} (`-1 < r <= -0,70`) bulunur. Bununla birlikte sonuçlar yorumlanırken {koyu:nedensellik} boyutuna dikkat edilmeli; işsizliğin düşmesinde üretim teşvikleri, yatırımlar ve eğitim sisteminin iş gücü piyasasına uyumu gibi temel ekonomik etkenlerin rol oynadığı vurgulanmalıdır.",
+      "ipuclari": [
+        "Son 10 yıla ait eşleşmiş (istihdam oranı, işsizlik oranı) veri çiftlerinin serpme diyagramına nasıl aktarılacağını ve noktaların yönünü belirtiniz.",
+        "Hesaplanacak korelasyon katsayısının (r) işaretini ve hangi aralıkta çıkmasının bekleneceğini yorumlayınız.",
+        "İşsizlik ve istihdamı etkileyen eğitim politikaları, yatırımlar ve teşvikler gibi diğer ekonomik faktörleri nedensellik bağlamında değerlendiriniz."
+      ]
+    }
+  ]
 }

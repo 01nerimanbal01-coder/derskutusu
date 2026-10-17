@@ -40,7 +40,7 @@
       "metin": [
         "Sistemin çevreden ısı aldığı değişim endotermiktir. Sistem enerji alırken çevresinin enerjisi azalır. Uygun koşullarda çevrede sıcaklık düşmesi gözlenebilir.",
         "Buzun erimesi ve suyun buharlaşması endotermik fiziksel değişim örnekleridir. Buz erirken enerjiyi çevresinden alır; hâl değişimi sırasında mutlaka yeni bir madde oluşması gerekmez.",
-        "Ders kitabındaki deneyde amonyum klorürün suda çözünmesi de ısı alan bir olay olarak incelenir. Bu örnekte gözlenen soğuma, ısı alışverişinin yönünü değerlendirmeye yardım eder."
+        "İncelenen deneyde amonyum klorürün suda çözünmesi de ısı alan bir olay olarak incelenir. Bu örnekte gözlenen soğuma, ısı alışverişinin yönünü değerlendirmeye yardım eder."
       ],
       "kutu": {
         "tur": "kural",
@@ -53,7 +53,7 @@
       "metin": [
         "Sistemin çevreye ısı verdiği değişim ekzotermiktir. Sistem enerji kaybederken çevresinin enerjisi artar. Uygun koşullarda çevrede sıcaklık yükselmesi gözlenebilir.",
         "Odunun yanması, suyun donması ve su buharının yoğunlaşması ısı veren olaylara örnektir. Yanma kimyasal; donma ve yoğunlaşma fiziksel değişimdir.",
-        "Ders kitabındaki deneyde sodyum hidroksitin suda çözünmesi, sıcaklık artışı üzerinden ısı veren bir olay olarak incelenir. Çözünmelerin tamamının aynı yönde ısı alışverişi yaptığını söyleyemeyiz."
+        "İncelenen deneyde sodyum hidroksitin suda çözünmesi, sıcaklık artışı üzerinden ısı veren bir olay olarak incelenir. Çözünmelerin tamamının aynı yönde ısı alışverişi yaptığını söyleyemeyiz."
       ],
       "kutu": {
         "tur": "kural",
@@ -66,7 +66,7 @@
         "Araştırma sorusu, incelenecek enerji değişimini açıkça belirtmelidir. Örneğin iki farklı çözünme olayında sıcaklığın nasıl değiştiği karşılaştırılabilir.",
         "Başlangıç sıcaklığı, su miktarı, kullanılan kap, ölçüm zamanı ve madde miktarı gibi koşullar kaydedilir. Karşılaştırmada hangi değişkenin değiştirildiği, hangilerinin aynı tutulduğu belirtilir.",
         "Başlangıç ve son sıcaklıklar termometreyle ölçülür; gözlemler bir tabloya yazılır. Sonuç, yalnız “ısındı” veya “soğudu” demekle bırakılmaz; sistem ve çevre arasındaki ısı alışverişiyle açıklanır.",
-        "Kitaptaki kimyasal deneyler öğretmen rehberliğinde ve uygun laboratuvar güvenliğiyle yürütülür. Buradaki örneklerde hazır ölçüm verilerini yorumlayacağız."
+        "İncelenen kimyasal deneyler öğretmen rehberliğinde ve uygun laboratuvar güvenliğiyle yürütülür. Buradaki örneklerde hazır ölçüm verilerini yorumlayacağız."
       ],
       "kutu": {
         "tur": "dikkat",
@@ -146,19 +146,32 @@
       "secenekler": [
         "İkisi de hâl değişimidir.",
         "İkisi de kimyasal değişimdir.",
-        "İkisi de endotermik değişimdir.",
         "İkisi de ekzotermik değişimdir.",
+        "İkisi de endotermik değişimdir.",
         "İkisinde de enerji alışverişi yoktur."
       ],
-      "dogru": 3,
+      "dogru": 2,
       "aciklama": "Biri fiziksel, diğeri kimyasal olsa da ikisi de çevreye ısı verir."
     },
     {
+      "tur": "coktan",
+      "soru": "‘Ekzotermik değişim: sistem ısı verir’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Ekzotermik değişimde ısı akışı sistemden çevreye doğrudur.",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 3,
+      "aciklama": "Ekzotermik değişim: sistem ısı verir bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
       "tur": "dy",
-      "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
-          "metin": "Sıcaklık değişimi tek başına yeni madde oluştuğunu kanıtlar.",
+          "metin": "Sıcaklık değişimi müstakil olarak yeni madde oluştuğunu kanıtlar.",
           "dogru": false,
           "aciklama": "Fiziksel değişimlerde de enerji ve sıcaklık değişimi olabilir."
         },
@@ -175,13 +188,13 @@
         {
           "metin": "Bütün çözünme olayları aynı yönde ısı alışverişi yapar.",
           "dogru": false,
-          "aciklama": "Kitaptaki iki farklı çözünme örneğinin biri ısı alır, diğeri ısı verir."
+          "aciklama": "İncelenen iki farklı çözünme örneğinin biri ısı alır, diğeri ısı verir."
         }
       ]
     },
     {
       "tur": "eslestir",
-      "yonerge": "İlişkili kavram ve açıklamaları eşleştiriniz.",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
           "İncelenmek üzere seçilen bölüm",
@@ -203,7 +216,7 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
           "metin": "Buzun erimesi, madde türü açısından ___ değişimdir.",
@@ -219,26 +232,24 @@
         }
       ],
       "fazla": [
-        "endotermik"
+        "endotermik",
+        "varsayım"
       ]
     },
     {
       "tur": "ogretici",
       "soru": "“Kap ısındı.” gözlemi, sistem belirtilmeden neden eksik bir açıklama olur?",
+      "cevap": "Önce sistem olarak hangi olayın incelendiği belirtilmelidir. Kabın ısınması, incelenen süreçten veya dışarıdaki başka bir kaynaktan enerji almasıyla ilişkili olabilir. Koşullar ve ısı akışı açıklanmalıdır.",
       "ipuclari": [
         "İncelenen olay ile onun çevresini ayırınız.",
         "Kap hangi süreç nedeniyle enerji almış olabilir?"
-      ],
-      "cevap": "Önce sistem olarak hangi olayın incelendiği belirtilmelidir. Kabın ısınması, incelenen süreçten veya dışarıdaki başka bir kaynaktan enerji almasıyla ilişkili olabilir. Koşullar ve ısı akışı açıklanmalıdır."
-    },
-    {
-      "tur": "ogretici",
-      "soru": "Bir raporda yalnız “son sıcaklık 18 °C” yazıyor. Bu bilgiyle sıcaklığın arttığı veya azaldığı söylenebilir mi?",
-      "ipuclari": [
-        "Son değeri hangi değerle karşılaştırmanız gerekir?",
-        "Aynı son sıcaklığa farklı başlangıçlardan ulaşılabilir mi?"
-      ],
-      "cevap": "Söylenemez. Başlangıç sıcaklığı da bilinmelidir. Ayrıca sıcaklık değişiminin incelenen süreçle ilişkilendirilmesi için deney koşulları kaydedilmelidir."
+      ]
     }
+  ],
+  "ozet": [
+    "Fiziksel ve kimyasal olaylar sırasında enerji alışverişi olabilir. Buzun erimesinde, suyun buharlaşmasında veya odunun yanmasında enerji değişiminin etkileri gözlenir.",
+    "İncelenen olayın veya maddenin seçilen bölümüne sistem denir. Sistem dışında kalan ve onunla etkileşen bölüm çevredir.",
+    "Sistemin çevreden ısı aldığı değişim endotermiktir. Sistem enerji alırken çevresinin enerjisi azalır. Uygun koşullarda çevrede sıcaklık düşmesi gözlenebilir.",
+    "Sistemin çevreye ısı verdiği değişim ekzotermiktir. Sistem enerji kaybederken çevresinin enerjisi artar. Uygun koşullarda çevrede sıcaklık yükselmesi gözlenebilir."
   ]
 }

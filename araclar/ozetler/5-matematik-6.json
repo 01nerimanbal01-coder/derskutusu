@@ -1,255 +1,268 @@
 {
- "ad": "5-matematik-6",
- "sinif": 5,
- "ders": "matematik",
- "ders_adi": "Matematik",
- "hafta": 6,
- "tarih": "19-23 Ekim 2026",
- "yayin_tarihi": "2026-10-21",
- "unite": "Geometrik Şekiller",
- "konu": "Çokgenlerin Kenar ve Açı Özellikleri: Üçgen ve Dörtgen Çeşitleri ile Çokgen Deneyimleri",
- "ciktilar": [
-  "Çokgenlerin temel elemanları (kenar, köşe, iç açı ve köşegen) ile ilgili edindiği deneyimleri gözden geçirir.",
-  "Çokgenlerin (özellikle üçgenlerin ve özel dörtgenlerin) kenar uzunlukları ve iç açı özelliklerine dair çıkarımlar yapar.",
-  "Düzgün çokgen kavramını tanımlar ve elde ettiği çıkarımları farklı çokgen örnekleri üzerinden değerlendirir."
- ],
- "giris": "Geçen haftaki dersimizde ardışık kesişen doğrulardan yararlanarak düzlemde kapalı bölgeler olan {koyu:çokgenleri} ve {koyu:çemberi} oluşturmuştuk. Şimdi ise oluşturduğumuz bu çokgenlerin mutfağına giriyor; onların {koyu:kenar uzunlukları} ve {koyu:iç açı ölçüleri} arasındaki büyüleyici uyumu keşfediyoruz! Neden bir üçgende iki tane geniş açı olamaz? Hangi dörtgenin tüm kenarları eşit olduğu hâlde açıları dik değildir? Bal arıları peteklerini neden düzgün altıgen şeklinde yapar? Bu dersimizde çokgen deneyimimizi yansıtarak üçgenleri, dörtgenleri ve düzgün çokgenleri tüm özellikleriyle inceleyeceğiz.",
- "ozet": [
-  "Her çokgende {koyu:kenar sayısı, köşe sayısı ve iç açı sayısı} birbirine eşittir; üçgenlerin köşegeni yoktur, dörtgenlerin ise {koyu:2 tane köşegeni} vardır.",
-  "Üçgenler açılarına göre {koyu:dar açılı, dik açılı ve geniş açılı üçgen}; kenarlarına göre ise {koyu:eşkenar, ikizkenar ve çeşitkenar üçgen} olarak sınıflandırılır.",
-  "Bir üçgende {koyu:eşit uzunluktaki kenarların karşısındaki açıların ölçüleri de birbirine eşittir}; eşkenar üçgenin üç kenarı eşit ve her bir iç açısı {koyu:60°}'dir.",
-  "Özel dörtgenlerden {koyu:kare ve dikdörtgenin} tüm iç açıları {koyu:90° (dik açı)}'dir; {koyu:paralelkenar ve eşkenar dörtgende} ise karşılıklı kenarlar paralel ve karşılıklı açılar birbirine eşittir.",
-  "Bütün kenar uzunlukları birbirine eşit {koyu:ve} bütün iç açılarının ölçüleri birbirine eşit olan çokgenlere {koyu:düzgün çokgen} denir ({koyu:eşkenar üçgen, kare, düzgün beşgen, düzgün altıgen}).",
-  "{koyu:Dikdörtgen} (kenarları eşit olmadığı için) ve {koyu:eşkenar dörtgen} (açıları eşit olmak zorunda olmadığı için) birer düzgün çokgen {koyu:değildir}."
- ],
- "bolumler": [
-  {
-   "baslik": "1. Çokgenlerin Temel Elemanları Üzerine Deneyimlerimiz",
-   "metin": [
-    "En az üç doğru parçasının uç uca eklenmesiyle oluşan, kenarları birbirini kesmeyen kapalı düzlemsel şekillere {koyu:çokgen} denir. Çokgenler sahip oldukları {koyu:kenar sayısına} (veya köşe sayısına) göre isimlendirilir: 3 kenarlıysa {koyu:üçgen}, 4 kenarlıysa {koyu:dörtgen}, 5 kenarlıysa {koyu:beşgen}, 6 kenarlıysa {koyu:altıgen}, 8 kenarlıysa {koyu:sekizgen} adını alır.",
-    "Yaptığımız çizim ve katlama etkinliklerinden şu temel çıkarıma ulaşırız: {koyu:Her çokgende kenar sayısı, köşe sayısı ve iç açı sayısı birbirine eşittir.} Örneğin bir beşgenin 5 kenarı, 5 köşesi ve 5 iç açısı vardır.",
-    "Bir çokgende {koyu:komşu olmayan} iki köşeyi birleştiren doğru parçasına ise {koyu:köşegen} denir. Üçgenin tüm köşeleri birbirine komşu olduğu için {koyu:üçgenin hiç köşegeni yoktur (0)}. Dörtgenlerin {koyu:2}, beşgenlerin {koyu:5}, altıgenlerin ise {koyu:9} köşegeni bulunur."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Bir Köşeden Çizilebilen Köşegen Sayısı",
-    "metin": "Kenar sayısı n olan bir çokgenin sadece 1 köşesinden (kendisine ve iki komşu köşesine köşegen çizilemeyeceği için) n - 3 tane köşegen çizilebilir. Bu köşegenler çokgeni n - 2 tane üçgene ayırır!"
-   },
-   "gorsel": "<svg viewBox=\"0 0 760 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"250\" rx=\"12\" fill=\"#f8fafc\"/><text x=\"380\" y=\"28\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">Çokgenlerde Kenar Sayısı, Köşe Sayısı ve İç Açı Sayısı İlişkisi</text><rect x=\"20\" y=\"45\" width=\"170\" height=\"185\" rx=\"10\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"2\"/><polygon points=\"95,70 45,155 145,155\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><text x=\"105\" y=\"182\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\" text-anchor=\"middle\">Üçgen</text><text x=\"105\" y=\"200\" font-family=\"sans-serif\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">3 Kenar • 3 Köşe</text><text x=\"105\" y=\"218\" font-family=\"sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">3 İç Açı • 0 Köşegen</text><rect x=\"203\" y=\"45\" width=\"170\" height=\"185\" rx=\"10\" fill=\"#ffffff\" stroke=\"#059669\" stroke-width=\"2\"/><polygon points=\"235,75 315,75 325,155 225,155\" fill=\"#dcfce7\" stroke=\"#059669\" stroke-width=\"2.5\"/><text x=\"288\" y=\"182\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#059669\" text-anchor=\"middle\">Dörtgen</text><text x=\"288\" y=\"200\" font-family=\"sans-serif\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">4 Kenar • 4 Köşe</text><text x=\"288\" y=\"218\" font-family=\"sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">4 İç Açı • 2 Köşegen</text><rect x=\"386\" y=\"45\" width=\"170\" height=\"185\" rx=\"10\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"2\"/><polygon points=\"460,68 510,105 492,158 428,158 410,105\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"471\" y=\"182\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#d97706\" text-anchor=\"middle\">Beşgen</text><text x=\"471\" y=\"200\" font-family=\"sans-serif\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">5 Kenar • 5 Köşe</text><text x=\"471\" y=\"218\" font-family=\"sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">5 İç Açı • 5 Köşegen</text><rect x=\"570\" y=\"45\" width=\"170\" height=\"185\" rx=\"10\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"2\"/><polygon points=\"625,70 675,70 700,112 675,155 625,155 600,112\" fill=\"#f3e8ff\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><text x=\"655\" y=\"182\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#7c3aed\" text-anchor=\"middle\">Altıgen</text><text x=\"655\" y=\"200\" font-family=\"sans-serif\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">6 Kenar • 6 Köşe</text><text x=\"655\" y=\"218\" font-family=\"sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">6 İç Açı • 9 Köşegen</text></svg>"
-  },
-  {
-   "baslik": "2. Açılarına Göre Üçgen Çeşitleri ve Açı Çıkarımları",
-   "metin": [
-    "Üçgenlerin iç açılarını açıölçer (iletki) veya gönye yardımıyla ölçtüğümüzde, üç iç açının ölçüsü toplamının daima {koyu:180°} olduğunu görürüz. Üçgenler en büyük iç açılarının türüne göre üçe ayrılır:\n1. {koyu:Dar Açılı Üçgen:} Üç iç açısının ölçüsü de 90°'den küçük (dar açı) olan üçgendir (Örneğin açıları 50°, 60°, 70° olan üçgen).\n2. {koyu:Dik Açılı Üçgen:} İç açılarından birinin ölçüsü tam {koyu:90°} (dik açı) olan üçgendir.\n3. {koyu:Geniş Açılı Üçgen:} İç açılarından birinin ölçüsü 90° ile 180° arasında (geniş açı) olan üçgendir (Örneğin açıları 110°, 40°, 30° olan üçgen).",
-    "Önemli bir çıkarım: Bir üçgende {koyu:en az iki tane dar açı} bulunmak zorundadır! Çünkü bir üçgende iki tane dik açı (90° + 90° = 180°) veya iki tane geniş açı olsaydı üçüncü açıya yer kalmaz ve doğru parçaları birleşip kapalı bir üçgen oluşturamazdı."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "Altın Çıkarım: Tek Dik veya Tek Geniş Açı!",
-    "metin": "Bir üçgenin iç açılarından en fazla bir tanesi dik açı (90°) veya en fazla bir tanesi geniş açı (>90°) olabilir. Dik açılı veya geniş açılı bir üçgenin diğer iki açısı mutlaka dar açıdır."
-   },
-   "gorsel": "<svg viewBox=\"0 0 760 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"250\" rx=\"12\" fill=\"#f8fafc\"/><text x=\"380\" y=\"28\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">Açılarına ve Kenarlarına Göre Üçgen Çeşitleri</text><rect x=\"20\" y=\"45\" width=\"350\" height=\"185\" rx=\"10\" fill=\"#f0f9ff\" stroke=\"#0284c7\" stroke-width=\"2\"/><rect x=\"20\" y=\"45\" width=\"350\" height=\"30\" rx=\"10\" fill=\"#0284c7\"/><text x=\"195.0\" y=\"65\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Açılarına Göre Üçgenler</text><text x=\"32\" y=\"95\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Dar Açılı Üçgen: Üç iç açısı da 90°'den küçüktür</text><text x=\"32\" y=\"115\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  (Örn: 50°, 60°, 70°)</text><text x=\"32\" y=\"135\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Dik Açılı Üçgen: Bir iç açısı tam 90°'dir</text><text x=\"32\" y=\"155\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  (Diğer iki açısı dar açıdır)</text><text x=\"32\" y=\"175\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Geniş Açılı Üçgen: Bir iç açısı 90°'den büyüktür</text><text x=\"32\" y=\"195\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  (Bir üçgende en fazla 1 dik veya 1 geniş açı olur!)</text><rect x=\"390\" y=\"45\" width=\"350\" height=\"185\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"390\" y=\"45\" width=\"350\" height=\"30\" rx=\"10\" fill=\"#059669\"/><text x=\"565.0\" y=\"65\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Kenarlarına Göre Üçgenler</text><text x=\"402\" y=\"95\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Eşkenar Üçgen: Üç kenar uzunluğu birbirine eşittir</text><text x=\"402\" y=\"115\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  (Üç iç açısı da eşittir ve her biri 60°'dir)</text><text x=\"402\" y=\"135\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• İkizkenar Üçgen: İki kenar uzunluğu birbirine eşittir</text><text x=\"402\" y=\"155\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  (Eşit kenarları gören iki taban açısı da eşittir)</text><text x=\"402\" y=\"175\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Çeşitkenar Üçgen: Üç kenar uzunluğu da farklıdır</text><text x=\"402\" y=\"195\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  (Üç iç açısının ölçüsü de birbirinden farklıdır)</text></svg>"
-  },
-  {
-   "baslik": "3. Kenarlarına Göre Üçgen Çeşitleri ve Kenar-Açı İlişkisi",
-   "metin": [
-    "Üçgenlerin kenar uzunluklarını cetvel veya pergel ile karşılaştırdığımızda üç farklı durumla karşılaşırız:\n1. {koyu:Eşkenar Üçgen:} Üç kenarının uzunluğu da birbirine eşit olan üçgendir ({uzunluk:AB} = {uzunluk:BC} = {uzunluk:AC}). Eşkenar üçgenin üç iç açısının ölçüsü de birbirine eşittir ve her biri {koyu:60°}'dir (180° ÷ 3 = 60°). Dolayısıyla her eşkenar üçgen aynı zamanda {koyu:dar açılı bir üçgendir}.\n2. {koyu:İkizkenar Üçgen:} Herhangi iki kenarının uzunluğu birbirine eşit olan üçgendir. İkizkenar üçgende {koyu:eşit kenarların karşısında bulunan iki taban açısının ölçüsü de birbirine eşittir}. İkizkenar üçgenler dar açılı, dik açılı (45°-45°-90°) veya geniş açılı olabilir.\n3. {koyu:Çeşitkenar Üçgen:} Üç kenarının uzunluğu da birbirinden farklı olan üçgendir. Kenar uzunlukları farklı olduğu için {koyu:üç iç açısının ölçüsü de birbirinden farklıdır}.",
-    "Katlama etkinliklerinde bir ikizkenar üçgeni tepe açısından tabana doğru ortadan ikiye katladığımızda, eşit olan iki kenarın ve iki taban açısının tam üst üste çakıştığını gözlemleriz."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Eşkenar Üçgen Geniş veya Dik Açılı Olabilir mi?",
-    "metin": "Hayır! Eşkenar üçgenin iç açıları daima 60°, 60°, 60° olduğu için dik açılı eşkenar üçgen veya geniş açılı eşkenar üçgen çizilemez."
-   },
-   "gorsel": "<svg viewBox=\"0 0 760 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"250\" rx=\"12\" fill=\"#f8fafc\"/><text x=\"380\" y=\"28\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">Özel Dörtgenlerin Kenar ve Açı Özellikleri</text><rect x=\"20\" y=\"45\" width=\"230\" height=\"185\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/><rect x=\"20\" y=\"45\" width=\"230\" height=\"30\" rx=\"10\" fill=\"#2563eb\"/><text x=\"135.0\" y=\"65\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Kare ve Dikdörtgen</text><text x=\"32\" y=\"95\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Karşılıklı kenarları paraleldir</text><text x=\"32\" y=\"115\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bütün iç açıları 90° (dik açı)</text><text x=\"32\" y=\"135\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Karede 4 kenar uzunluğu eşittir</text><text x=\"32\" y=\"155\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Dikdörtgende karşılıklı kenarlar</text><text x=\"32\" y=\"175\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  birbirine eşittir</text><text x=\"32\" y=\"195\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Köşegen uzunlukları birbirine eşittir</text><rect x=\"265\" y=\"45\" width=\"230\" height=\"185\" rx=\"10\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"265\" y=\"45\" width=\"230\" height=\"30\" rx=\"10\" fill=\"#d97706\"/><text x=\"380.0\" y=\"65\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Paralelkenar ve Eşkenar Dörtgen</text><text x=\"277\" y=\"95\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Karşılıklı kenarları paraleldir</text><text x=\"277\" y=\"115\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Karşılıklı açı ölçüleri eşittir</text><text x=\"277\" y=\"135\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Eşkenar dörtgende 4 kenar eşittir</text><text x=\"277\" y=\"155\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Paralelkenarda karşılıklı kenarlar</text><text x=\"277\" y=\"175\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  birbirine eşittir</text><text x=\"277\" y=\"195\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Açıları 90° olmak zorunda değildir</text><rect x=\"510\" y=\"45\" width=\"230\" height=\"185\" rx=\"10\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"2\"/><rect x=\"510\" y=\"45\" width=\"230\" height=\"30\" rx=\"10\" fill=\"#7c3aed\"/><text x=\"625.0\" y=\"65\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Yamuk</text><text x=\"522\" y=\"95\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• En az bir çift karşılıklı kenarı</text><text x=\"522\" y=\"115\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  birbirine paralel olan dörtgendir</text><text x=\"522\" y=\"135\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• İkizkenar yamukta paralel olmayan</text><text x=\"522\" y=\"155\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  yan kenarlar birbirine eşittir</text><text x=\"522\" y=\"175\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Dik yamukta iki açısı 90°'dir</text><text x=\"522\" y=\"195\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• 2 tane köşegeni vardır</text></svg>"
-  },
-  {
-   "baslik": "4. Özel Dörtgenlerin Kenar ve Açı Özellikleri",
-   "metin": [
-    "Dört kenarı, dört köşesi, dört iç açısı ve iki köşegeni olan çokgenlere {koyu:dörtgen} denir. Dörtgenlerin iç açılarının ölçüleri toplamı {koyu:360°}'dir. Günlük yaşamda en sık karşılaştığımız özel dörtgenlerin kenar ve açı özellikleri şunlardır:\n• {koyu:Dikdörtgen:} Karşılıklı kenarları birbirine paralel ve eşit uzunluktadır. Dört iç açısının ölçüsü de {koyu:90° (dik açı)}'dir. İki köşegeninin uzunluğu birbirine eşittir.",
-    "• {koyu:Kare:} Dört kenar uzunluğu da birbirine eşit olan ve dört iç açısı da {koyu:90°} olan özel bir dikdörtgendir. Köşegen uzunlukları eşittir ve köşegenler birbirini dik (90°) keser.\n• {koyu:Paralelkenar:} Karşılıklı kenarları paralel ve eşit uzunluktadır. {koyu:Karşılıklı iç açılarının ölçüleri birbirine eşittir} (iki dar, iki geniş açısı olabilir; ardışık iki açısının toplamı 180°'dir).\n• {koyu:Eşkenar Dörtgen:} Dört kenar uzunluğu da birbirine eşit olan paralelkenardır. Karşılıklı açıları birbirine eşittir.\n• {koyu:Yamuk:} En az bir çift karşılıklı kenarı birbirine paralel olan dörtgendir."
-   ],
-   "kutu": {
-    "tur": "bilgi",
-    "baslik": "Kare ile Eşkenar Dörtgenin Benzerliği ve Farkı",
-    "metin": "Her ikisinin de 4 kenar uzunluğu birbirine eşittir ve karşılıklı kenarları paraleldir. Ancak karenin bütün açıları 90° olmak zorundayken, eşkenar dörtgenin açıları dar ve geniş açı olabilir."
-   }
-  },
-  {
-   "baslik": "5. Düzgün Çokgenler ve Özelliklerinin Değerlendirilmesi",
-   "metin": [
-    "Bir çokgenin {koyu:düzgün çokgen} olarak adlandırılabilmesi için {koyu:iki şartı aynı anda} sağlaması gerekir:\n1. {koyu:Bütün kenar uzunlukları} birbirine eşit olmalıdır.\n2. {koyu:Bütün iç açılarının ölçüleri} birbirine eşit olmalıdır.",
-    "Bu kurala göre:\n• 3 kenarlı düzgün çokgenin özel adı {koyu:Eşkenar Üçgen}'dir (tüm kenarları eşit, tüm açıları 60°).\n• 4 kenarlı düzgün çokgenin özel adı {koyu:Kare}'dir (tüm kenarları eşit, tüm açıları 90°).\n• 5 kenarlı düzgün çokgene {koyu:Düzgün Beşgen} (her iç açısı 108°), 6 kenarlı düzgün çokgene ise {koyu:Düzgün Altıgen} (her iç açısı 120°) denir.",
-    "Çok önemli bir değerlendirme: Sadece kenarlarının eşit olması veya sadece açılarının eşit olması bir çokgeni düzgün çokgen yapmaya yetmez! Örneğin {koyu:dikdörtgenin} tüm açıları 90°'dir ama tüm kenarları eşit değildir; {koyu:eşkenar dörtgenin} ise tüm kenarları eşittir ama tüm açıları eşit değildir. Bu yüzden dikdörtgen ve eşkenar dörtgen {koyu:düzgün çokgen değildir}."
-   ],
-   "kutu": {
-    "tur": "tanim",
-    "baslik": "Düzgün Çokgenin İki Şartı",
-    "metin": "Eşit Kenar Uzunlukları + Eşit İç Açı Ölçüleri = Düzgün Çokgen (Eşkenar üçgen, kare, düzgün beşgen, düzgün altıgen, düzgün sekizgen...)."
-   },
-   "gorsel": "<svg viewBox=\"0 0 760 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"240\" rx=\"12\" fill=\"#f8fafc\"/><text x=\"380\" y=\"28\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">Düzgün Çokgenler ve Günlük Yaşamda Çokgen Modelleri</text><rect x=\"20\" y=\"45\" width=\"350\" height=\"175\" rx=\"10\" fill=\"#f0fdfa\" stroke=\"#0f766e\" stroke-width=\"2\"/><rect x=\"20\" y=\"45\" width=\"350\" height=\"30\" rx=\"10\" fill=\"#0f766e\"/><text x=\"195.0\" y=\"65\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Düzgün Çokgen Nedir?</text><text x=\"32\" y=\"95\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bütün kenar uzunlukları birbirine eşit VE</text><text x=\"32\" y=\"115\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bütün iç açılarının ölçüleri birbirine eşit olan çokgendir</text><text x=\"32\" y=\"135\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Eşkenar Üçgen = 3 kenarlı düzgün çokgen (60°)</text><text x=\"32\" y=\"155\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Kare = 4 kenarlı düzgün çokgen (90°)</text><text x=\"32\" y=\"175\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Düzgün Beşgen (108°) ve Düzgün Altıgen (120°)</text><rect x=\"390\" y=\"45\" width=\"350\" height=\"175\" rx=\"10\" fill=\"#fff1f2\" stroke=\"#be123c\" stroke-width=\"2\"/><rect x=\"390\" y=\"45\" width=\"350\" height=\"30\" rx=\"10\" fill=\"#be123c\"/><text x=\"565.0\" y=\"65\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Dikkat: Her Eşit Kenarlı Çokgen Düzgün müdür?</text><text x=\"402\" y=\"95\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Dikdörtgenin açıları eşit (90°) ama kenarları eşit değil -> Düzgün DEĞİL</text><text x=\"402\" y=\"115\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Eşkenar dörtgenin kenarları eşit ama açıları eşit değil -> Düzgün DEĞİL</text><text x=\"402\" y=\"135\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bal peteği: Doğadaki en güzel düzgün altıgen modelidir</text><text x=\"402\" y=\"155\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Trafik levhaları: Üçgen (uyarı), Sekizgen (DUR levhası)</text><text x=\"402\" y=\"175\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Futbol topu yüzeyinde düzgün beşgen ve altıgenler kullanılır</text></svg>"
-  },
-  {
-   "baslik": "6. Günlük Yaşamda, Doğada ve Sanatta Çokgen Deneyimleri",
-   "metin": [
-    "Edindiğimiz çokgen deneyimlerini çevremize yansıttığımızda doğanın ve mimarinin çokgenlerle örülü olduğunu görürüz. Örneğin bal arıları petek gözlerini {koyu:düzgün altıgen} biçiminde inşa ederler; çünkü düzlemi arada hiç boşluk bırakmadan ve en az balmumu harcayarak en geniş hacimle kaplayan şekil düzgün altıgendir.",
-    "Trafik işaret levhalarında da çokgenlerin kenar ve açı özellikleri mesaj verir: {koyu:Eşkenar üçgen} levhalar uyarı, {koyu:düzgün sekizgen} levha \"DUR\" (STOP), {koyu:kare ve dikdörtgen} levhalar ise bilgilendirme amacıyla kullanılır. Geleneksel Türk-İslam sanatındaki {koyu:kündekârî} ahşap işçiliğinde ve cami çinilerinde üçgen, kare, eşkenar dörtgen, altıgen ve sekizgenlerin kusursuz uyumuyla geometrik desenler oluşturulmuştur."
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "baslik": "İnşaatta Neden Üçgen Kafes Kirişler Kullanılır?",
-    "metin": "Köprülerde, çatı makaslarında ve vinç kulelerinde dörtgen yerine 'üçgen' bölmeler kullanılır. Çünkü dörtgen çerçeveler köşelerinden bastırıldığında kolayca esneyip paralelkenara dönüşebilirken, üçgenin kenar uzunlukları sabit kaldıkça açıları asla bozulmaz (en sağlam çokgendir)."
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Kenar uzunlukları 8 cm, 8 cm ve 12 cm olan bir ABC üçgeninin iç açıları 48°, 48° ve 84° olarak ölçülmüştür. Bu üçgenin hem kenarlarına hem de açılarına göre çeşidini belirleyiniz.",
-   "cevap": "Üçgenin iki kenar uzunluğu (8 cm ve 8 cm) ile bu kenarları gören iki açısı (48° ve 48°) birbirine eşit olduğu için kenarlarına göre 'İkizkenar Üçgen'dir. Üç iç açısının ölçüsü de (48°, 48° ve 84°) 90°'den küçük olduğu için açılarına göre 'Dar Açılı Üçgen'dir. Dolayısıyla bu üçgen 'dar açılı ikizkenar üçgen'dir."
-  },
-  {
-   "soru": "'Her eşkenar dörtgen bir düzgün çokgendir.' ifadesi doğru mudur? Nedenini çokgen özelliklerine göre açıklayınız.",
-   "cevap": "Yanlıştır. Bir çokgenin 'düzgün çokgen' olabilmesi için hem bütün kenar uzunluklarının hem de bütün iç açılarının birbirine eşit olması gerekir. Eşkenar dörtgenin dört kenar uzunluğu birbirine eşittir; ancak iç açılarının tamamı birbirine eşit olmak zorunda değildir (iki dar, iki geniş açısı olabilir). Dört kenarlı düzgün çokgen yalnızca 'kare'dir."
-  },
-  {
-   "soru": "Bir çokgenin köşe sayısı ile iç açı sayısının toplamı 12'dir. Bu çokgenin adını, kenar sayısını ve bir köşesinden çizilebilecek köşegen sayısını bulunuz.",
-   "cevap": "Bir çokgende köşe sayısı ile iç açı sayısı birbirine eşittir. Toplamları 12 olduğuna göre 12 ÷ 2 = 6 köşesi ve 6 iç açısı vardır. Kenar sayısı da 6 olduğu için bu çokgen bir 'Altıgen'dir. Bir köşesinden çizilebilecek köşegen sayısı ise n - 3 = 6 - 3 = 3 tanedir."
-  },
-  {
-   "soru": "KLM dik açılı üçgeninde m(K̂) = 90° ve m(L̂) = 35° olduğuna göre, M açısının ölçüsü kaç derecedir ve bu üçgen kenarlarına göre hangi tür üçgendir?",
-   "cevap": "Üçgenin iç açıları toplamı 180°'dir. Bilinen iki açının toplamı 90° + 35° = 125°'dir. M açısının ölçüsü: 180° - 125° = 55° olur. Üçgenin üç iç açısı da (90°, 35°, 55°) birbirinden farklı olduğu için üç kenar uzunluğu da birbirinden farklıdır; dolayısıyla kenarlarına göre 'Çeşitkenar Üçgen'dir."
-  },
-  {
-   "soru": "Dikdörtgen ve paralelkenarın ortak özelliklerinden iki tanesini ve farklı özelliklerinden bir tanesini yazınız.",
-   "cevap": "Ortak özellikleri: 1) Her ikisinin de karşılıklı kenarları birbirine paralel ve eşit uzunluktadır. 2) Her ikisinin de karşılıklı iç açılarının ölçüleri birbirine eşittir ve 2'şer köşegenleri vardır. Farklı özelliği: Dikdörtgenin bütün iç açıları 90° (dik açı) olmak zorundayken, paralelkenarın iç açıları 90° olmak zorunda değildir."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "Aşağıdaki çokgenlerden hangisi hem bütün kenar uzunlukları hem de bütün iç açılarının ölçüleri birbirine eşit olan bir 'düzgün çokgen'dir?",
-   "secenekler": [
-    "Çeşitkenar üçgen",
-    "Dikdörtgen",
-    "Eşkenar dörtgen",
-    "Kare",
-    "Paralelkenar"
-   ],
-   "dogru": 3,
-   "aciklama": "Karenin hem 4 kenar uzunluğu birbirine eşittir hem de 4 iç açısı 90° olup birbirine eşittir; bu nedenle 4 kenarlı düzgün çokgendir."
-  },
-  {
-   "tur": "coktan",
-   "soru": "İç açılarının ölçüleri 110°, 35° ve 35° olan bir üçgenin açılarına ve kenarlarına göre çeşidi aşağıdakilerden hangisidir?",
-   "secenekler": [
-    "Dar açılı ikizkenar üçgen",
-    "Geniş açılı ikizkenar üçgen",
-    "Geniş açılı çeşitkenar üçgen",
-    "Dik açılı ikizkenar üçgen",
-    "Dar açılı eşkenar üçgen"
-   ],
-   "dogru": 1,
-   "aciklama": "Bir açısı 110° (>90°) olduğu için 'geniş açılı', iki açısı birbirine eşit (35° ve 35°) olduğu için bu açıları gören iki kenarı da eşit olup 'ikizkenar' üçgendir."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Çokgenlerin kenar, köşe ve köşegen özellikleri ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
-   "secenekler": [
-    "Beşgenin 5 kenarı, 5 köşesi ve 5 iç açısı vardır.",
-    "Üçgenin komşu olmayan köşesi bulunmadığı için köşegeni yoktur.",
-    "Dörtgenlerin toplam 2 tane köşegeni vardır.",
-    "Bir üçgende aynı anda iki tane geniş açı bulunabilir.",
-    "Eşkenar üçgenin her bir iç açısının ölçüsü 60 derecedir."
-   ],
-   "dogru": 3,
-   "aciklama": "Üçgenin iç açıları toplamı 180° olduğu için bir üçgende en fazla 1 tane geniş açı veya en fazla 1 tane dik açı bulunabilir."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "5-matematik-6",
+  "sinif": 5,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 6,
+  "tarih": "19-23 Ekim 2026",
+  "yayin_tarihi": "2026-10-21",
+  "unite": "Geometrik Şekiller",
+  "konu": "Çokgenlerin Kenar ve Açı Özellikleri: Üçgen ve Dörtgen Çeşitleri ile Çokgen Deneyimleri",
+  "ciktilar": [
+    "Çokgenlerin temel elemanları (kenar, köşe, iç açı ve köşegen) ile ilgili edindiği deneyimleri gözden geçirir.",
+    "Çokgenlerin (özellikle üçgenlerin ve özel dörtgenlerin) kenar uzunlukları ve iç açı özelliklerine dair çıkarımlar yapar.",
+    "Düzgün çokgen kavramını tanımlar ve elde ettiği çıkarımları farklı çokgen örnekleri üzerinden değerlendirir."
+  ],
+  "giris": "Geçen haftaki dersimizde ardışık kesişen doğrulardan yararlanarak düzlemde kapalı bölgeler olan {koyu:çokgenleri} ve {koyu:çemberi} oluşturmuştuk. Şimdi ise oluşturduğumuz bu çokgenlerin mutfağına giriyor; onların {koyu:kenar uzunlukları} ve {koyu:iç açı ölçüleri} arasındaki büyüleyici uyumu keşfediyoruz! Neden bir üçgende iki tane geniş açı olamaz? Hangi dörtgenin tüm kenarları eşit olduğu hâlde açıları dik değildir? Bal arıları peteklerini neden düzgün altıgen şeklinde yapar? Bu dersimizde çokgen deneyimimizi yansıtarak üçgenleri, dörtgenleri ve düzgün çokgenleri tüm özellikleriyle inceleyeceğiz.",
+  "ozet": [
+    "Her çokgende {koyu:kenar sayısı, köşe sayısı ve iç açı sayısı} birbirine eşittir; üçgenlerin köşegeni yoktur, dörtgenlerin ise {koyu:2 tane köşegeni} vardır.",
+    "Üçgenler açılarına göre {koyu:dar açılı, dik açılı ve geniş açılı üçgen}; kenarlarına göre ise {koyu:eşkenar, ikizkenar ve çeşitkenar üçgen} olarak sınıflandırılır.",
+    "Bir üçgende {koyu:eşit uzunluktaki kenarların karşısındaki açıların ölçüleri de birbirine eşittir}; eşkenar üçgenin üç kenarı eşit ve her bir iç açısı {koyu:60°}'dir.",
+    "Özel dörtgenlerden {koyu:kare ve dikdörtgenin} tüm iç açıları {koyu:90° (dik açı)}'dir; {koyu:paralelkenar ve eşkenar dörtgende} ise karşılıklı kenarlar paralel ve karşılıklı açılar birbirine eşittir.",
+    "Bütün kenar uzunlukları birbirine eşit {koyu:ve} bütün iç açılarının ölçüleri birbirine eşit olan çokgenlere {koyu:düzgün çokgen} denir ({koyu:eşkenar üçgen, kare, düzgün beşgen, düzgün altıgen}).",
+    "{koyu:Dikdörtgen} (kenarları eşit olmadığı için) ve {koyu:eşkenar dörtgen} (açıları eşit olmak zorunda olmadığı için) birer düzgün çokgen {koyu:değildir}."
+  ],
+  "bolumler": [
     {
-     "metin": "Her çokgende kenar sayısı, köşe sayısı ve iç açı sayısı birbirine eşittir.",
-     "dogru": true,
-     "aciklama": "Doğrudur; n kenarlı bir çokgenin n köşesi ve n iç açısı vardır."
+      "baslik": "1. Çokgenlerin Temel Elemanları Üzerine Deneyimlerimiz",
+      "metin": [
+        "En az üç doğru parçasının uç uca eklenmesiyle oluşan, kenarları birbirini kesmeyen kapalı düzlemsel şekillere {koyu:çokgen} denir. Çokgenler sahip oldukları {koyu:kenar sayısına} (veya köşe sayısına) göre isimlendirilir: 3 kenarlıysa {koyu:üçgen}, 4 kenarlıysa {koyu:dörtgen}, 5 kenarlıysa {koyu:beşgen}, 6 kenarlıysa {koyu:altıgen}, 8 kenarlıysa {koyu:sekizgen} adını alır.",
+        "Yaptığımız çizim ve katlama etkinliklerinden şu temel çıkarıma ulaşırız: {koyu:Her çokgende kenar sayısı, köşe sayısı ve iç açı sayısı birbirine eşittir.} Örneğin bir beşgenin 5 kenarı, 5 köşesi ve 5 iç açısı vardır.",
+        "Bir çokgende {koyu:komşu olmayan} iki köşeyi birleştiren doğru parçasına ise {koyu:köşegen} denir. Üçgenin tüm köşeleri birbirine komşu olduğu için {koyu:üçgenin hiç köşegeni yoktur (0)}. Dörtgenlerin {koyu:2}, beşgenlerin {koyu:5}, altıgenlerin ise {koyu:9} köşegeni bulunur."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Bir Köşeden Çizilebilen Köşegen Sayısı",
+        "metin": "Kenar sayısı n olan bir çokgenin sadece 1 köşesinden (kendisine ve iki komşu köşesine köşegen çizilemeyeceği için) n - 3 tane köşegen çizilebilir. Bu köşegenler çokgeni n - 2 tane üçgene ayırır!"
+      },
+      "gorsel": "<svg viewBox=\"0 0 760 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"250\" rx=\"12\" fill=\"#f8fafc\"/><text x=\"380\" y=\"28\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">Çokgenlerde Kenar Sayısı, Köşe Sayısı ve İç Açı Sayısı İlişkisi</text><rect x=\"20\" y=\"45\" width=\"170\" height=\"185\" rx=\"10\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"2\"/><polygon points=\"95,70 45,155 145,155\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><text x=\"105\" y=\"182\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\" text-anchor=\"middle\">Üçgen</text><text x=\"105\" y=\"200\" font-family=\"sans-serif\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">3 Kenar • 3 Köşe</text><text x=\"105\" y=\"218\" font-family=\"sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">3 İç Açı • 0 Köşegen</text><rect x=\"203\" y=\"45\" width=\"170\" height=\"185\" rx=\"10\" fill=\"#ffffff\" stroke=\"#059669\" stroke-width=\"2\"/><polygon points=\"235,75 315,75 325,155 225,155\" fill=\"#dcfce7\" stroke=\"#059669\" stroke-width=\"2.5\"/><text x=\"288\" y=\"182\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#059669\" text-anchor=\"middle\">Dörtgen</text><text x=\"288\" y=\"200\" font-family=\"sans-serif\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">4 Kenar • 4 Köşe</text><text x=\"288\" y=\"218\" font-family=\"sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">4 İç Açı • 2 Köşegen</text><rect x=\"386\" y=\"45\" width=\"170\" height=\"185\" rx=\"10\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"2\"/><polygon points=\"460,68 510,105 492,158 428,158 410,105\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"471\" y=\"182\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#d97706\" text-anchor=\"middle\">Beşgen</text><text x=\"471\" y=\"200\" font-family=\"sans-serif\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">5 Kenar • 5 Köşe</text><text x=\"471\" y=\"218\" font-family=\"sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">5 İç Açı • 5 Köşegen</text><rect x=\"570\" y=\"45\" width=\"170\" height=\"185\" rx=\"10\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"2\"/><polygon points=\"625,70 675,70 700,112 675,155 625,155 600,112\" fill=\"#f3e8ff\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><text x=\"655\" y=\"182\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#7c3aed\" text-anchor=\"middle\">Altıgen</text><text x=\"655\" y=\"200\" font-family=\"sans-serif\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">6 Kenar • 6 Köşe</text><text x=\"655\" y=\"218\" font-family=\"sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">6 İç Açı • 9 Köşegen</text></svg>"
     },
     {
-     "metin": "Dikdörtgenin bütün iç açıları 90° olduğu için dikdörtgen bir düzgün çokgendir.",
-     "dogru": false,
-     "aciklama": "Yanlıştır; dikdörtgenin açıları eşit olsa da bütün kenar uzunlukları birbirine eşit olmadığı için düzgün çokgen değildir."
+      "baslik": "2. Açılarına Göre Üçgen Çeşitleri ve Açı Çıkarımları",
+      "metin": [
+        "Üçgenlerin iç açılarını açıölçer (iletki) veya gönye yardımıyla ölçtüğümüzde, üç iç açının ölçüsü toplamının daima {koyu:180°} olduğunu görürüz. Üçgenler en büyük iç açılarının türüne göre üçe ayrılır:\n1. {koyu:Dar Açılı Üçgen:} Üç iç açısının ölçüsü de 90°'den küçük (dar açı) olan üçgendir (Örneğin açıları 50°, 60°, 70° olan üçgen).\n2. {koyu:Dik Açılı Üçgen:} İç açılarından birinin ölçüsü tam {koyu:90°} (dik açı) olan üçgendir.\n3. {koyu:Geniş Açılı Üçgen:} İç açılarından birinin ölçüsü 90° ile 180° arasında (geniş açı) olan üçgendir (Örneğin açıları 110°, 40°, 30° olan üçgen).",
+        "Önemli bir çıkarım: Bir üçgende {koyu:en az iki tane dar açı} bulunmak zorundadır! Çünkü bir üçgende iki tane dik açı (90° + 90° = 180°) veya iki tane geniş açı olsaydı üçüncü açıya yer kalmaz ve doğru parçaları birleşip kapalı bir üçgen oluşturamazdı."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Altın Çıkarım: Tek Dik veya Tek Geniş Açı!",
+        "metin": "Bir üçgenin iç açılarından en fazla bir tanesi dik açı (90°) veya en fazla bir tanesi geniş açı (>90°) olabilir. Dik açılı veya geniş açılı bir üçgenin diğer iki açısı mutlaka dar açıdır."
+      },
+      "gorsel": "<svg viewBox=\"0 0 760 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"250\" rx=\"12\" fill=\"#f8fafc\"/><text x=\"380\" y=\"28\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">Açılarına ve Kenarlarına Göre Üçgen Çeşitleri</text><rect x=\"20\" y=\"45\" width=\"350\" height=\"185\" rx=\"10\" fill=\"#f0f9ff\" stroke=\"#0284c7\" stroke-width=\"2\"/><rect x=\"20\" y=\"45\" width=\"350\" height=\"30\" rx=\"10\" fill=\"#0284c7\"/><text x=\"195.0\" y=\"65\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Açılarına Göre Üçgenler</text><text x=\"32\" y=\"95\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Dar Açılı Üçgen: Üç iç açısı da 90°'den küçüktür</text><text x=\"32\" y=\"115\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  (Örn: 50°, 60°, 70°)</text><text x=\"32\" y=\"135\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Dik Açılı Üçgen: Bir iç açısı tam 90°'dir</text><text x=\"32\" y=\"155\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  (Diğer iki açısı dar açıdır)</text><text x=\"32\" y=\"175\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Geniş Açılı Üçgen: Bir iç açısı 90°'den büyüktür</text><text x=\"32\" y=\"195\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  (Bir üçgende en fazla 1 dik veya 1 geniş açı olur!)</text><rect x=\"390\" y=\"45\" width=\"350\" height=\"185\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"390\" y=\"45\" width=\"350\" height=\"30\" rx=\"10\" fill=\"#059669\"/><text x=\"565.0\" y=\"65\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Kenarlarına Göre Üçgenler</text><text x=\"402\" y=\"95\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Eşkenar Üçgen: Üç kenar uzunluğu birbirine eşittir</text><text x=\"402\" y=\"115\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  (Üç iç açısı da eşittir ve her biri 60°'dir)</text><text x=\"402\" y=\"135\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• İkizkenar Üçgen: İki kenar uzunluğu birbirine eşittir</text><text x=\"402\" y=\"155\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  (Eşit kenarları gören iki taban açısı da eşittir)</text><text x=\"402\" y=\"175\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Çeşitkenar Üçgen: Üç kenar uzunluğu da farklıdır</text><text x=\"402\" y=\"195\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  (Üç iç açısının ölçüsü de birbirinden farklıdır)</text></svg>"
     },
     {
-     "metin": "İkizkenar bir üçgende eşit uzunluktaki kenarların karşısında bulunan açıların ölçüleri de birbirine eşittir.",
-     "dogru": true,
-     "aciklama": "Doğrudur; ikizkenar üçgenin taban açıları birbirine eşittir."
+      "baslik": "3. Kenarlarına Göre Üçgen Çeşitleri ve Kenar-Açı İlişkisi",
+      "metin": [
+        "Üçgenlerin kenar uzunluklarını cetvel veya pergel ile karşılaştırdığımızda üç farklı durumla karşılaşırız:\n1. {koyu:Eşkenar Üçgen:} Üç kenarının uzunluğu da birbirine eşit olan üçgendir ({uzunluk:AB} = {uzunluk:BC} = {uzunluk:AC}). Eşkenar üçgenin üç iç açısının ölçüsü de birbirine eşittir ve her biri {koyu:60°}'dir (180° ÷ 3 = 60°). Dolayısıyla her eşkenar üçgen aynı zamanda {koyu:dar açılı bir üçgendir}.\n2. {koyu:İkizkenar Üçgen:} Herhangi iki kenarının uzunluğu birbirine eşit olan üçgendir. İkizkenar üçgende {koyu:eşit kenarların karşısında bulunan iki taban açısının ölçüsü de birbirine eşittir}. İkizkenar üçgenler dar açılı, dik açılı (45°-45°-90°) veya geniş açılı olabilir.\n3. {koyu:Çeşitkenar Üçgen:} Üç kenarının uzunluğu da birbirinden farklı olan üçgendir. Kenar uzunlukları farklı olduğu için {koyu:üç iç açısının ölçüsü de birbirinden farklıdır}.",
+        "Katlama etkinliklerinde bir ikizkenar üçgeni tepe açısından tabana doğru ortadan ikiye katladığımızda, eşit olan iki kenarın ve iki taban açısının tam üst üste çakıştığını gözlemleriz."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Eşkenar Üçgen Geniş veya Dik Açılı Olabilir mi?",
+        "metin": "Hayır! Eşkenar üçgenin iç açıları daima 60°, 60°, 60° olduğu için dik açılı eşkenar üçgen veya geniş açılı eşkenar üçgen çizilemez."
+      },
+      "gorsel": "<svg viewBox=\"0 0 760 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"250\" rx=\"12\" fill=\"#f8fafc\"/><text x=\"380\" y=\"28\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">Özel Dörtgenlerin Kenar ve Açı Özellikleri</text><rect x=\"20\" y=\"45\" width=\"230\" height=\"185\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/><rect x=\"20\" y=\"45\" width=\"230\" height=\"30\" rx=\"10\" fill=\"#2563eb\"/><text x=\"135.0\" y=\"65\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Kare ve Dikdörtgen</text><text x=\"32\" y=\"95\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Karşılıklı kenarları paraleldir</text><text x=\"32\" y=\"115\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bütün iç açıları 90° (dik açı)</text><text x=\"32\" y=\"135\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Karede 4 kenar uzunluğu eşittir</text><text x=\"32\" y=\"155\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Dikdörtgende karşılıklı kenarlar</text><text x=\"32\" y=\"175\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  birbirine eşittir</text><text x=\"32\" y=\"195\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Köşegen uzunlukları birbirine eşittir</text><rect x=\"265\" y=\"45\" width=\"230\" height=\"185\" rx=\"10\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"265\" y=\"45\" width=\"230\" height=\"30\" rx=\"10\" fill=\"#d97706\"/><text x=\"380.0\" y=\"65\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Paralelkenar ve Eşkenar Dörtgen</text><text x=\"277\" y=\"95\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Karşılıklı kenarları paraleldir</text><text x=\"277\" y=\"115\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Karşılıklı açı ölçüleri eşittir</text><text x=\"277\" y=\"135\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Eşkenar dörtgende 4 kenar eşittir</text><text x=\"277\" y=\"155\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Paralelkenarda karşılıklı kenarlar</text><text x=\"277\" y=\"175\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  birbirine eşittir</text><text x=\"277\" y=\"195\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Açıları 90° olmak zorunda değildir</text><rect x=\"510\" y=\"45\" width=\"230\" height=\"185\" rx=\"10\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"2\"/><rect x=\"510\" y=\"45\" width=\"230\" height=\"30\" rx=\"10\" fill=\"#7c3aed\"/><text x=\"625.0\" y=\"65\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Yamuk</text><text x=\"522\" y=\"95\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• En az bir çift karşılıklı kenarı</text><text x=\"522\" y=\"115\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  birbirine paralel olan dörtgendir</text><text x=\"522\" y=\"135\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• İkizkenar yamukta paralel olmayan</text><text x=\"522\" y=\"155\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  yan kenarlar birbirine eşittir</text><text x=\"522\" y=\"175\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Dik yamukta iki açısı 90°'dir</text><text x=\"522\" y=\"195\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• 2 tane köşegeni vardır</text></svg>"
     },
     {
-     "metin": "Bir dörtgenin sadece bir çift karşılıklı kenarı birbirine paralel ise bu dörtgene yamuk denir.",
-     "dogru": true,
-     "aciklama": "Doğrudur; en az bir çift karşılıklı kenarı paralel olan dörtgene yamuk denir."
+      "baslik": "4. Özel Dörtgenlerin Kenar ve Açı Özellikleri",
+      "metin": [
+        "Dört kenarı, dört köşesi, dört iç açısı ve iki köşegeni olan çokgenlere {koyu:dörtgen} denir. Dörtgenlerin iç açılarının ölçüleri toplamı {koyu:360°}'dir. Günlük yaşamda en sık karşılaştığımız özel dörtgenlerin kenar ve açı özellikleri şunlardır:\n• {koyu:Dikdörtgen:} Karşılıklı kenarları birbirine paralel ve eşit uzunluktadır. Dört iç açısının ölçüsü de {koyu:90° (dik açı)}'dir. İki köşegeninin uzunluğu birbirine eşittir.",
+        "{koyu:Kare:} Dört kenar uzunluğu da birbirine eşit olan ve dört iç açısı da {koyu:90°} olan özel bir dikdörtgendir. Köşegen uzunlukları eşittir ve köşegenler birbirini dik (90°) keser.\n• {koyu:Paralelkenar:} Karşılıklı kenarları paralel ve eşit uzunluktadır. {koyu:Karşılıklı iç açılarının ölçüleri birbirine eşittir} (iki dar, iki geniş açısı olabilir; ardışık iki açısının toplamı 180°'dir).\n• {koyu:Eşkenar Dörtgen:} Dört kenar uzunluğu da birbirine eşit olan paralelkenardır. Karşılıklı açıları birbirine eşittir.\n• {koyu:Yamuk:} En az bir çift karşılıklı kenarı birbirine paralel olan dörtgendir."
+      ],
+      "kutu": {
+        "tur": "bilgi",
+        "baslik": "Kare ile Eşkenar Dörtgenin Benzerliği ve Farkı",
+        "metin": "Her ikisinin de 4 kenar uzunluğu birbirine eşittir ve karşılıklı kenarları paraleldir. Ancak karenin bütün açıları 90° olmak zorundayken, eşkenar dörtgenin açıları dar ve geniş açı olabilir."
+      }
+    },
+    {
+      "baslik": "5. Düzgün Çokgenler ve Özelliklerinin Değerlendirilmesi",
+      "metin": [
+        "Bir çokgenin {koyu:düzgün çokgen} olarak adlandırılabilmesi için {koyu:iki şartı aynı anda} sağlaması gerekir:\n1. {koyu:Bütün kenar uzunlukları} birbirine eşit olmalıdır.\n2. {koyu:Bütün iç açılarının ölçüleri} birbirine eşit olmalıdır.",
+        "Bu kurala göre:\n• 3 kenarlı düzgün çokgenin özel adı {koyu:Eşkenar Üçgen}'dir (tüm kenarları eşit, tüm açıları 60°).\n• 4 kenarlı düzgün çokgenin özel adı {koyu:Kare}'dir (tüm kenarları eşit, tüm açıları 90°).\n• 5 kenarlı düzgün çokgene {koyu:Düzgün Beşgen} (her iç açısı 108°), 6 kenarlı düzgün çokgene ise {koyu:Düzgün Altıgen} (her iç açısı 120°) denir.",
+        "Çok önemli bir değerlendirme: Sadece kenarlarının eşit olması veya sadece açılarının eşit olması bir çokgeni düzgün çokgen yapmaya yetmez! Örneğin {koyu:dikdörtgenin} tüm açıları 90°'dir ama tüm kenarları eşit değildir; {koyu:eşkenar dörtgenin} ise tüm kenarları eşittir ama tüm açıları eşit değildir. Bu yüzden dikdörtgen ve eşkenar dörtgen {koyu:düzgün çokgen değildir}."
+      ],
+      "kutu": {
+        "tur": "tanim",
+        "baslik": "Düzgün Çokgenin İki Şartı",
+        "metin": "Eşit Kenar Uzunlukları + Eşit İç Açı Ölçüleri = Düzgün Çokgen (Eşkenar üçgen, kare, düzgün beşgen, düzgün altıgen, düzgün sekizgen...)."
+      },
+      "gorsel": "<svg viewBox=\"0 0 760 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"240\" rx=\"12\" fill=\"#f8fafc\"/><text x=\"380\" y=\"28\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">Düzgün Çokgenler ve Günlük Yaşamda Çokgen Modelleri</text><rect x=\"20\" y=\"45\" width=\"350\" height=\"175\" rx=\"10\" fill=\"#f0fdfa\" stroke=\"#0f766e\" stroke-width=\"2\"/><rect x=\"20\" y=\"45\" width=\"350\" height=\"30\" rx=\"10\" fill=\"#0f766e\"/><text x=\"195.0\" y=\"65\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Düzgün Çokgen Nedir?</text><text x=\"32\" y=\"95\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bütün kenar uzunlukları birbirine eşit VE</text><text x=\"32\" y=\"115\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bütün iç açılarının ölçüleri birbirine eşit olan çokgendir</text><text x=\"32\" y=\"135\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Eşkenar Üçgen = 3 kenarlı düzgün çokgen (60°)</text><text x=\"32\" y=\"155\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Kare = 4 kenarlı düzgün çokgen (90°)</text><text x=\"32\" y=\"175\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Düzgün Beşgen (108°) ve Düzgün Altıgen (120°)</text><rect x=\"390\" y=\"45\" width=\"350\" height=\"175\" rx=\"10\" fill=\"#fff1f2\" stroke=\"#be123c\" stroke-width=\"2\"/><rect x=\"390\" y=\"45\" width=\"350\" height=\"30\" rx=\"10\" fill=\"#be123c\"/><text x=\"565.0\" y=\"65\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Dikkat: Her Eşit Kenarlı Çokgen Düzgün müdür?</text><text x=\"402\" y=\"95\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Dikdörtgenin açıları eşit (90°) ama kenarları eşit değil -> Düzgün DEĞİL</text><text x=\"402\" y=\"115\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Eşkenar dörtgenin kenarları eşit ama açıları eşit değil -> Düzgün DEĞİL</text><text x=\"402\" y=\"135\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bal peteği: Doğadaki en güzel düzgün altıgen modelidir</text><text x=\"402\" y=\"155\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Trafik levhaları: Üçgen (uyarı), Sekizgen (DUR levhası)</text><text x=\"402\" y=\"175\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Futbol topu yüzeyinde düzgün beşgen ve altıgenler kullanılır</text></svg>"
+    },
+    {
+      "baslik": "6. Günlük Yaşamda, Doğada ve Sanatta Çokgen Deneyimleri",
+      "metin": [
+        "Edindiğimiz çokgen deneyimlerini çevremize yansıttığımızda doğanın ve mimarinin çokgenlerle örülü olduğunu görürüz. Örneğin bal arıları petek gözlerini {koyu:düzgün altıgen} biçiminde inşa ederler; çünkü düzlemi arada hiç boşluk bırakmadan ve en az balmumu harcayarak en geniş hacimle kaplayan şekil düzgün altıgendir.",
+        "Trafik işaret levhalarında da çokgenlerin kenar ve açı özellikleri mesaj verir: {koyu:Eşkenar üçgen} levhalar uyarı, {koyu:düzgün sekizgen} levha \"DUR\" (STOP), {koyu:kare ve dikdörtgen} levhalar ise bilgilendirme amacıyla kullanılır. Geleneksel Türk-İslam sanatındaki {koyu:kündekârî} ahşap işçiliğinde ve cami çinilerinde üçgen, kare, eşkenar dörtgen, altıgen ve sekizgenlerin kusursuz uyumuyla geometrik desenler oluşturulmuştur."
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "baslik": "İnşaatta Neden Üçgen Kafes Kirişler Kullanılır?",
+        "metin": "Köprülerde, çatı makaslarında ve vinç kulelerinde dörtgen yerine 'üçgen' bölmeler kullanılır. Çünkü dörtgen çerçeveler köşelerinden bastırıldığında kolayca esneyip paralelkenara dönüşebilirken, üçgenin kenar uzunlukları sabit kaldıkça açıları asla bozulmaz (en sağlam çokgendir)."
+      }
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "soru": "Aşağıdaki geometrik şekilleri temel özellikleriyle eşleştiriniz.",
-   "ciftler": [
-    [
-     "Eşkenar Üçgen",
-     "Üç kenarı eşit ve her iç açısı 60° olan üçgen"
-    ],
-    [
-     "Dik Açılı Üçgen",
-     "Bir iç açısının ölçüsü 90° olan üçgen"
-    ],
-    [
-     "Kare",
-     "Dört kenarı eşit ve dört açısı 90° olan düzgün dörtgen"
-    ],
-    [
-     "Paralelkenar",
-     "Karşılıklı kenarları paralel ve karşılıklı açıları eşit dörtgen"
-    ],
-    [
-     "Düzgün Altıgen",
-     "Bal peteği modelinde görülen 6 eş kenarlı ve 6 eş açılı çokgen"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
-   "cumleler": [
+  ],
+  "ornekler": [
     {
-     "metin": "Bir çokgende komşu olmayan iki köşeyi birleştiren doğru parçasına ___ denir.",
-     "cevap": "köşegen"
+      "soru": "Kenar uzunlukları 8 cm, 8 cm ve 12 cm olan bir ABC üçgeninin iç açıları 48°, 48° ve 84° olarak ölçülmüştür. Bu üçgenin hem kenarlarına hem de açılarına göre çeşidini belirleyiniz.",
+      "cevap": "Üçgenin iki kenar uzunluğu (8 cm ve 8 cm) ile bu kenarları gören iki açısı (48° ve 48°) birbirine eşit olduğu için kenarlarına göre 'İkizkenar Üçgen'dir. Üç iç açısının ölçüsü de (48°, 48° ve 84°) 90°'den küçük olduğu için açılarına göre 'Dar Açılı Üçgen'dir. Dolayısıyla bu üçgen 'dar açılı ikizkenar üçgen'dir."
     },
     {
-     "metin": "Üç kenar uzunluğu ve üç iç açısının ölçüsü de birbirinden farklı olan üçgenlere ___ üçgen denir.",
-     "cevap": "çeşitkenar"
+      "soru": "'Her eşkenar dörtgen bir düzgün çokgendir.' ifadesi doğru mudur? Nedenini çokgen özelliklerine göre açıklayınız.",
+      "cevap": "Yanlıştır. Bir çokgenin 'düzgün çokgen' olabilmesi için hem bütün kenar uzunluklarının hem de bütün iç açılarının birbirine eşit olması gerekir. Eşkenar dörtgenin dört kenar uzunluğu birbirine eşittir; ancak iç açılarının tamamı birbirine eşit olmak zorunda değildir (iki dar, iki geniş açısı olabilir). Dört kenarlı düzgün çokgen yalnızca 'kare'dir."
     },
     {
-     "metin": "Bütün kenar uzunlukları ve bütün iç açılarının ölçüleri birbirine eşit olan çokgenlere ___ çokgen denir.",
-     "cevap": "düzgün"
+      "soru": "Bir çokgenin köşe sayısı ile iç açı sayısının toplamı 12'dir. Bu çokgenin adını, kenar sayısını ve bir köşesinden çizilebilecek köşegen sayısını bulunuz.",
+      "cevap": "Bir çokgende köşe sayısı ile iç açı sayısı birbirine eşittir. Toplamları 12 olduğuna göre 12 ÷ 2 = 6 köşesi ve 6 iç açısı vardır. Kenar sayısı da 6 olduğu için bu çokgen bir 'Altıgen'dir. Bir köşesinden çizilebilecek köşegen sayısı ise n - 3 = 6 - 3 = 3 tanedir."
     },
     {
-     "metin": "Hiç köşegeni olmayan tek çokgen ___dir.",
-     "cevap": "üçgen"
+      "soru": "KLM dik açılı üçgeninde m(K̂) = 90° ve m(L̂) = 35° olduğuna göre, M açısının ölçüsü kaç derecedir ve bu üçgen kenarlarına göre hangi tür üçgendir?",
+      "cevap": "Üçgenin iç açıları toplamı 180°'dir. Bilinen iki açının toplamı 90° + 35° = 125°'dir. M açısının ölçüsü: 180° - 125° = 55° olur. Üçgenin üç iç açısı da (90°, 35°, 55°) birbirinden farklı olduğu için üç kenar uzunluğu da birbirinden farklıdır; dolayısıyla kenarlarına göre 'Çeşitkenar Üçgen'dir."
+    },
+    {
+      "soru": "Dikdörtgen ve paralelkenarın ortak özelliklerinden iki tanesini ve farklı özelliklerinden bir tanesini yazınız.",
+      "cevap": "Ortak özellikleri: 1) Her ikisinin de karşılıklı kenarları birbirine paralel ve eşit uzunluktadır. 2) Her ikisinin de karşılıklı iç açılarının ölçüleri birbirine eşittir ve 2'şer köşegenleri vardır. Farklı özelliği: Dikdörtgenin bütün iç açıları 90° (dik açı) olmak zorundayken, paralelkenarın iç açıları 90° olmak zorunda değildir."
+    },
+    {
+      "soru": "‘Çokgenlerin Temel Elemanları Üzerine Deneyimlerimiz’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
+      "cevap": "En az üç doğru parçasının uç uca eklenmesiyle oluşan, kenarları birbirini kesmeyen kapalı düzlemsel şekillere {koyu:çokgen} denir. Çokgenler sahip oldukları {koyu:kenar sayısına} (veya köşe sayısına) göre isimlendirilir: 3 kenarlıysa {koyu:üçgen}, 4 kenarlıysa {koyu:dörtgen}, 5 kenarlıysa {koyu:beşgen}, 6 kenarlıysa {koyu:altıgen}, 8 kenarlıysa {koyu:sekizgen} adını alır. Yaptığımız çizim ve katlama etkinliklerinden şu temel çıkarıma ulaşırız: {koyu:Her çokgende kenar sayısı, köşe sayısı ve iç açı sayısı birbirine eşittir.} Örneğin bir beşgenin 5 kenarı, 5 köşesi ve 5 iç açısı vardır."
     }
-   ],
-   "fazla": [
-    "çember",
-    "ikizkenar"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Bir marangoz dikdörtgen şeklinde yaptığı ahşap kitaplık çerçevesinin sağa-sola sallandığını ve paralelkenara dönüştüğünü fark ediyor. Çerçevenin açılarının bozulmaması ve sağlam durması için arka yüzüne tek bir çıta çakacaktır. Bu çıtayı nereye çakmalıdır ve hangi çokgenin özelliğinden yararlanmış olur?",
-   "ipuclari": [
-    "1. İpucu: Dikdörtgenin karşılıklı iki köşesini birleştiren doğru parçasının adını düşününüz.",
-    "2. İpucu: Bu çıta çakıldığında dikdörtgenin hangi iki çokgene bölündüğünü ve bu çokgenin neden esnemediğini açıklayınız."
-   ],
-   "cevap": "Marangoz çıtayı dikdörtgen çerçevenin komşu olmayan iki köşesini birleştirecek şekilde, yani 'köşegen' boyunca çapraz olarak çakmalıdır. Köşegen çakıldığında dikdörtgen çerçeve iki tane 'dik açılı üçgene' ayrılır. Dörtgenler köşelerinden kuvvet uygulandığında kenar uzunlukları değişmeden açılarını değiştirip esneyebilirken, üçgenlerin kenar uzunlukları sabit kaldığı sürece iç açıları asla değişmez. Böylece üçgenin sağlamlık (rijitlik) özelliğinden yararlanılarak kitaplık sabitlenmiş olur."
-  }
- ]
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki çokgenlerden hangisi hem bütün kenar uzunlukları hem de bütün iç açılarının ölçüleri birbirine eşit olan bir 'düzgün çokgen'dir?",
+      "secenekler": [
+        "Kare",
+        "Dikdörtgen",
+        "Eşkenar dörtgen",
+        "Çeşitkenar üçgen"
+      ],
+      "dogru": 0,
+      "aciklama": "Karenin hem 4 kenar uzunluğu birbirine eşittir hem de 4 iç açısı 90° olup birbirine eşittir; bu nedenle 4 kenarlı düzgün çokgendir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "İç açılarının ölçüleri 110°, 35° ve 35° olan bir üçgenin açılarına ve kenarlarına göre çeşidi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Dar açılı ikizkenar üçgen",
+        "Geniş açılı ikizkenar üçgen",
+        "Dik açılı ikizkenar üçgen",
+        "Geniş açılı çeşitkenar üçgen"
+      ],
+      "dogru": 1,
+      "aciklama": "Bir açısı 110° (>90°) olduğu için 'geniş açılı', iki açısı birbirine eşit (35° ve 35°) olduğu için bu açıları gören iki kenarı da eşit olup 'ikizkenar' üçgendir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Çokgenlerin kenar, köşe ve köşegen özellikleri ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+      "secenekler": [
+        "Beşgenin 5 kenarı, 5 köşesi ve 5 iç açısı vardır.",
+        "Üçgenin komşu olmayan köşesi bulunmadığı için köşegeni yoktur.",
+        "Bir üçgende aynı anda iki tane geniş açı bulunabilir.",
+        "Dörtgenlerin toplam 2 tane köşegeni vardır."
+      ],
+      "dogru": 2,
+      "aciklama": "Üçgenin iç açıları toplamı 180° olduğu için bir üçgende en fazla 1 tane geniş açı veya en fazla 1 tane dik açı bulunabilir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "‘Özel Dörtgenlerin Kenar ve Açı Özellikleri’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Her ikisinin de 4 kenar uzunluğu birbirine eşittir ve karşılıklı kenarları paraleldir."
+      ],
+      "dogru": 3,
+      "aciklama": "Özel Dörtgenlerin Kenar ve Açı Özellikleri bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Her çokgende kenar sayısı, köşe sayısı ve iç açı sayısı birbirine eşittir.",
+          "dogru": true,
+          "aciklama": "Doğrudur; n kenarlı bir çokgenin n köşesi ve n iç açısı vardır."
+        },
+        {
+          "metin": "Dikdörtgenin bütün iç açıları 90° olduğu için dikdörtgen bir düzgün çokgendir.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; dikdörtgenin açıları eşit olsa da bütün kenar uzunlukları birbirine eşit olmadığı için düzgün çokgen değildir."
+        },
+        {
+          "metin": "İkizkenar bir üçgende eşit uzunluktaki kenarların karşısında bulunan açıların ölçüleri de birbirine eşittir.",
+          "dogru": true,
+          "aciklama": "Doğrudur; ikizkenar üçgenin taban açıları birbirine eşittir."
+        },
+        {
+          "metin": "Bir dörtgenin salt bir çift karşılıklı kenarı birbirine paralel ise bu dörtgene yamuk denir.",
+          "dogru": true,
+          "aciklama": "Doğrudur; en az bir çift karşılıklı kenarı paralel olan dörtgene yamuk denir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki geometrik şekilleri temel özellikleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Eşkenar Üçgen",
+          "Üç kenarı eşit ve her iç açısı 60° olan üçgen"
+        ],
+        [
+          "Dik Açılı Üçgen",
+          "Bir iç açısının ölçüsü 90° olan üçgen"
+        ],
+        [
+          "Kare",
+          "Dört kenarı eşit ve dört açısı 90° olan düzgün dörtgen"
+        ],
+        [
+          "Paralelkenar",
+          "Karşılıklı kenarları paralel ve karşılıklı açıları eşit dörtgen"
+        ],
+        [
+          "Düzgün Altıgen",
+          "Bal peteği modelinde görülen 6 eş kenarlı ve 6 eş açılı çokgen"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir çokgende komşu olmayan iki köşeyi birleştiren doğru parçasına ___ denir.",
+          "cevap": "köşegen"
+        },
+        {
+          "metin": "Üç kenar uzunluğu ve üç iç açısının ölçüsü de birbirinden farklı olan üçgenlere ___ üçgen denir.",
+          "cevap": "çeşitkenar"
+        },
+        {
+          "metin": "Bütün kenar uzunlukları ve bütün iç açılarının ölçüleri birbirine eşit olan çokgenlere ___ çokgen denir.",
+          "cevap": "düzgün"
+        },
+        {
+          "metin": "Hiç köşegeni olmayan tek çokgen ___dir.",
+          "cevap": "üçgen"
+        }
+      ],
+      "fazla": [
+        "çember",
+        "ikizkenar"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir marangoz dikdörtgen şeklinde yaptığı ahşap kitaplık çerçevesinin sağa-sola sallandığını ve paralelkenara dönüştüğünü fark ediyor. Çerçevenin açılarının bozulmaması ve sağlam durması için arka yüzüne tek bir çıta çakacaktır. Bu çıtayı nereye çakmalıdır ve hangi çokgenin özelliğinden yararlanmış olur?",
+      "cevap": "Marangoz çıtayı dikdörtgen çerçevenin komşu olmayan iki köşesini birleştirecek şekilde, yani 'köşegen' boyunca çapraz olarak çakmalıdır. Köşegen çakıldığında dikdörtgen çerçeve iki tane 'dik açılı üçgene' ayrılır. Dörtgenler köşelerinden kuvvet uygulandığında kenar uzunlukları değişmeden açılarını değiştirip esneyebilirken, üçgenlerin kenar uzunlukları sabit kaldığı sürece iç açıları asla değişmez. Böylece üçgenin sağlamlık (rijitlik) özelliğinden yararlanılarak kitaplık sabitlenmiş olur.",
+      "ipuclari": [
+        "1. İpucu: Dikdörtgenin karşılıklı iki köşesini birleştiren doğru parçasının adını düşününüz.",
+        "2. İpucu: Bu çıta çakıldığında dikdörtgenin hangi iki çokgene bölündüğünü ve bu çokgenin neden esnemediğini açıklayınız."
+      ]
+    }
+  ]
 }

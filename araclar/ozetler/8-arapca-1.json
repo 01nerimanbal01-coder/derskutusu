@@ -22,7 +22,8 @@
       "kutu": {
         "tur": "bilgi",
         "metin": "Kulüp adı, {ar:نادي} sözcüğünden sonraki alanla belirginleşir."
-      }
+      },
+      "gorsel": "<svg viewBox=\"0 0 460 214\" role=\"img\" aria-label=\"Kulüpler ve Kısa Diyaloglar kavram özeti şeması\"><rect x=\"90\" y=\"12\" width=\"280\" height=\"38\" rx=\"19\" class=\"g-mf\"/><text x=\"230\" y=\"36\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"800\" class=\"g-b\">Kulüpler ve Kısa Diyaloglar</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ma\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"116\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">1. Bölüm</text><text x=\"116\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Kulüp adlarını tanı</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ta\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"344\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">2. Bölüm</text><text x=\"344\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Sevmek, seçmek ve tercih etmek</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ya\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"116\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-yf\">3. Bölüm</text><text x=\"116\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Neden ve sonuç arasında bağ kur</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-oa\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"344\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-of\">4. Bölüm</text><text x=\"344\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Soru sözcüğüne uygun cevap ver</text></svg>"
     },
     {
       "baslik": "Sevmek, seçmek ve tercih etmek",
@@ -114,24 +115,24 @@
       "tur": "coktan",
       "soru": "{ar:أُحِبُّ الرَّسْمَ لٰكِنْ أُفَضِّلُ نادي التِّكْنولوجيا} cümlesine göre hangi kulüp tercih ediliyor?",
       "secenekler": [
-        "Resim",
-        "Müzik",
         "Teknoloji",
+        "Müzik",
+        "Resim",
         "Temizlik"
       ],
-      "dogru": 2,
+      "dogru": 0,
       "aciklama": "{ar:أُفَضِّلُ} sonrasında teknoloji kulübü belirtilmiştir."
     },
     {
       "tur": "coktan",
       "soru": "Bir konuşmada {ar:مَنْ} ile soru soruluyor. Hangi tür bilgi beklenir?",
       "secenekler": [
-        "Kişi",
         "Saat",
+        "Kişi",
         "Neden",
         "Yöntem"
       ],
-      "dogru": 0,
+      "dogru": 1,
       "aciklama": "{ar:مَنْ} kim sorusudur."
     },
     {
@@ -140,15 +141,27 @@
       "secenekler": [
         "1.00",
         "1.15",
-        "1.45",
-        "1.30"
+        "1.30",
+        "1.45"
       ],
-      "dogru": 3,
+      "dogru": 2,
       "aciklama": "{ar:وَالنِّصْف} buçuk anlamındadır."
     },
     {
+      "tur": "coktan",
+      "soru": "‘Soru sözcüğüne uygun cevap ver’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Kim sorusuna kişi, neden sorusuna gerekçe, ne zaman sorusuna zaman bilgisi ver."
+      ],
+      "dogru": 3,
+      "aciklama": "Soru sözcüğüne uygun cevap ver bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
       "tur": "dy",
-      "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
           "metin": "{ar:لٰكِنْ} karşıtlık kurabilir.",
@@ -174,7 +187,7 @@
     },
     {
       "tur": "eslestir",
-      "yonerge": "İlişkili kavram ve açıklamaları eşleştiriniz.",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
           "{ar:نادي الرَّسْم}",
@@ -196,7 +209,7 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
           "metin": "{ar:مَتى} Türkçede ___ sorusuna karşılık gelir.",
@@ -212,26 +225,18 @@
         }
       ],
       "fazla": [
-        "kim"
+        "kim",
+        "varsayım"
       ]
     },
     {
       "tur": "ogretici",
       "soru": "Bir öğrenci {ar:أُحِبُّ} gördüğü her cümleyi “Bu kulübü seçiyorum.” diye çeviriyor. Hangi ayrımı kaçırıyor?",
+      "cevap": "{ar:أُحِبُّ} severim demektir; seçim için {ar:أَخْتارُ}, tercih için {ar:أُفَضِّلُ} kullanılır. Sevilen etkinlik ile seçilen kulüp farklı olabilir.",
       "ipuclari": [
         "Sevmek ile seçmek fiillerini ayır.",
         "Cümlenin devamında karşıtlık olup olmadığına bak."
-      ],
-      "cevap": "{ar:أُحِبُّ} severim demektir; seçim için {ar:أَخْتارُ}, tercih için {ar:أُفَضِّلُ} kullanılır. Sevilen etkinlik ile seçilen kulüp farklı olabilir."
-    },
-    {
-      "tur": "ogretici",
-      "soru": "“İkiye çeyrek var.” ifadesinde saat neden iki olarak anılırken dijital gösterim 1.45 olur?",
-      "ipuclari": [
-        "{ar:إِلّا رُبْعًا} yaklaşan saate kalan süreyi belirtir.",
-        "İkiye ulaşmak için on beş dakika kalmıştır."
-      ],
-      "cevap": "Çeyrek kala ifadesi yaklaşan saati söyler. Bu nedenle {ar:السّاعَةُ الثّانِيَةُ إِلّا رُبْعًا} saat 1.45’i belirtir."
+      ]
     }
   ],
   "ozet": [

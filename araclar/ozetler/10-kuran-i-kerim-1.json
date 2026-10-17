@@ -20,7 +20,8 @@
       "kutu": {
         "tur": "kural",
         "metin": "Rehberlikten yararlanmak için mesajın ne söylediğini anlamaya çalışmak gerekir."
-      }
+      },
+      "gorsel": "<svg viewBox=\"0 0 460 214\" role=\"img\" aria-label=\"Kur’an-ı Kerim’i Anlayarak Okumak kavram özeti şeması\"><rect x=\"90\" y=\"12\" width=\"280\" height=\"38\" rx=\"19\" class=\"g-mf\"/><text x=\"230\" y=\"36\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"800\" class=\"g-b\">Kur’an-ı Kerim’i Anlayarak Okumak</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ma\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"116\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">1. Bölüm</text><text x=\"116\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Gönderiliş amacı ve rehberlik</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ta\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"344\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">2. Bölüm</text><text x=\"344\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Anlayarak okuma neyi gerektirir?</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ya\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"116\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-yf\">3. Bölüm</text><text x=\"116\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Düşünme ve sorumluluk</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-oa\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"344\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-of\">4. Bölüm</text><text x=\"344\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Bağlam ve bütünlük</text></svg>"
     },
     {
       "baslik": "Anlayarak okuma neyi gerektirir?",
@@ -110,13 +111,13 @@
       "tur": "coktan",
       "soru": "Elif, okuduğu bölümdeki sözcükleri açıklayabiliyor. Ancak bölümün insan hayatına niçin rehberlik ettiğini açıklamakta zorlanıyor. Araştırmasını ilerletmek için hangi soruya cevap aramalıdır?",
       "secenekler": [
-        "Bu sözcükleri hangi sırayla öğrenmiş olabilirim?",
-        "Bu bölümde hangi sözcükleri daha kolay okuyabilirim?",
         "Bu mesaj karar verirken bana nasıl yol gösterebilir?",
+        "Bu bölümde hangi sözcükleri daha kolay okuyabilirim?",
+        "Bu sözcükleri hangi sırayla öğrenmiş olabilirim?",
         "Bu bölümü daha hızlı okuyarak anlamına nasıl ulaşabilirim?",
         "Bu sözcükleri seslendirirken hangi harflere dikkat etmeliyim?"
       ],
-      "dogru": 2,
+      "dogru": 0,
       "aciklama": "Elif’in eksikliği sözcük bilgisi veya seslendirme değil, mesajın yol gösterici yönünü kavramadır. Kararlarla ilgili soru bu araştırma ihtiyacını karşılar."
     },
     {
@@ -124,30 +125,43 @@
       "soru": "Bir inceleme kartında “Bu uygulama Hz. Peygamber’in döneminden sonra ortaya çıkmıştır.” bilgisi bulunuyor. Uygulamanın bidat olarak değerlendirilip değerlendirilemeyeceğini araştıran öğrenci, kartı hangi bilgiyle tamamlamalıdır?",
       "secenekler": [
         "Uygulamanın hangi bölgelerde yaygınlaştığıyla",
-        "Uygulamayı hangi yaş gruplarının benimsediğiyle",
-        "Uygulamanın toplumda ne kadar sürdüğüyle",
         "Uygulamanın dinî bir delile dayanıp dayanmadığıyla",
+        "Uygulamanın toplumda ne kadar sürdüğüyle",
+        "Uygulamayı hangi yaş gruplarının benimsediğiyle",
         "Uygulamayı aktaranların birbirini tanıyıp tanımadığıyla"
       ],
-      "dogru": 3,
+      "dogru": 1,
       "aciklama": "Bir uygulamanın sonradan ortaya çıkması, bidat tanımı için yeterli değildir. Dinî bir delile dayanıp dayanmadığı da incelenir. Diğer bilgiler bu ölçütün yerini tutmaz."
     },
     {
       "tur": "coktan",
       "soru": "Eren, defterine iki not alıyor: “Kur’an’ın mesajları bütün insanlara yöneliktir.” ve “Ayetler yorumlanırken indirildikleri dönemin şartları dikkate alınır.” Bu notları birlikte değerlendiren hangi sonuç uygundur?",
       "secenekler": [
-        "Dönemin şartlarını bilmek, evrensel mesajı doğru anlamaya yardımcı olur.",
-        "Dönemin şartlarını bilmek, mesajın geçerliliğini o döneme bağlamayı gerektirir.",
         "Evrensel mesajı anlamak, bugünün şartlarını indiriliş şartlarının yerine koymayı gerektirir.",
+        "Dönemin şartlarını bilmek, mesajın geçerliliğini o döneme bağlamayı gerektirir.",
+        "Dönemin şartlarını bilmek, evrensel mesajı doğru anlamaya yardımcı olur.",
         "Evrensel mesajı anlamak, dönemle ilgili açıklamaları yorumun dışında tutmaya dayanır.",
         "Dönemin şartlarını bilmek, aynı şartların oluşmasını bekleyerek mesajı uygulamayı gerektirir."
       ],
-      "dogru": 0,
+      "dogru": 2,
       "aciklama": "Evrensellik ile indiriliş şartlarını incelemek birbiriyle çelişmez. Şartlar doğru anlamaya yardımcı olur; mesajın rehberliğini geçmişle sınırlandırmaz."
     },
     {
+      "tur": "coktan",
+      "soru": "‘Bağlam ve bütünlük’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Bağlam; bir ayetin ele aldığı konu bütünlüğü ile indirildiği dönemin şartları ve sebepleridir.",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 3,
+      "aciklama": "Bağlam ve bütünlük bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
       "tur": "dy",
-      "yonerge": "Öğrencilerin okuma kayıtlarından çıkardıkları sonuçları değerlendiriniz.",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
           "metin": "Duru, öğrendiği bir mesajın günlük hayattaki karşılığını açıklayabiliyor; bazı sözcükleri okurken yardıma ihtiyaç duyuyor. Bu kayıt, mesajla hayat arasında bağ kurabildiğini ve seslendirmede desteğe ihtiyaç duyduğunu gösterir.",
@@ -163,7 +177,7 @@
     },
     {
       "tur": "eslestir",
-      "yonerge": "Öğrencinin araştırma taslağındaki yanlış notları, onları düzelten doğru bilgilerle eşleştiriniz.",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
           "İndiriliş tek anda tamamlanmıştır.",
@@ -185,7 +199,7 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Araştırma notunu tamamlayınız. Bir kelime artacak.",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
           "metin": "Bir öğrenci, insanın bilgiye dayanarak karar vermesi gerektiğini öğrenmiştir. Duyduğu bir iddiayı aktarırken ___ taşıdığını fark eder.",
@@ -201,26 +215,18 @@
         }
       ],
       "fazla": [
-        "hız"
+        "hız",
+        "varsayım"
       ]
     },
     {
       "tur": "ogretici",
       "soru": "Bir okuma planında “Metni özenle seslendireceğim.” ve “Mesajını kendi cümlelerimle açıklayacağım.” adımları var. Öğrenci zaman kazanmak için ikinci adımı kaldırmak istiyor. İkinci adımın birinci adımdan farklı işlevini gerekçesiyle açıklayınız.",
+      "cevap": "Özenli seslendirme okuma çalışmasını destekler. Mesajı kendi cümleleriyle açıklamak ise öğrencinin onu anlayıp anlamadığını fark etmesine yardımcı olur. Anlayarak okuma için iki adım birlikte sürdürülmelidir.",
       "ipuclari": [
         "Doğru seslendirme ile mesajı açıklama hangi farklı yönleri gösterir?",
         "İki çalışmanın birbirini nasıl tamamladığını düşün."
-      ],
-      "cevap": "Özenli seslendirme okuma çalışmasını destekler. Mesajı kendi cümleleriyle açıklamak ise öğrencinin onu anlayıp anlamadığını fark etmesine yardımcı olur. Anlayarak okuma için iki adım birlikte sürdürülmelidir."
-    },
-    {
-      "tur": "ogretici",
-      "soru": "İnceleme kaydı, iki öğrencinin aynı ayet metnini okuduğunu doğruluyor. Öğrencilerin açıklamaları ise farklı. Bir arkadaşları “Açıklamalar farklıysa okudukları metinler de farklıdır.” sonucuna varıyor. Bu sonucu kayıtla karşılaştırarak değerlendiriniz. Farkın nedenini araştırmak için hangi yönleri inceleyebilirsiniz?",
-      "ipuclari": [
-        "Kayıt, okunan metinler hakkında neyi doğruluyor?",
-        "Öğrencilerin yorum yaparken hangi bilgilerden yararlandığını karşılaştır."
-      ],
-      "cevap": "Kayıt aynı metnin okunduğunu doğruladığından bu sonuç çıkarılamaz. Açıklamaların hangi bağlam bilgilerine, dönem şartlarına ve Hz. Peygamber’in açıklamalarına dayandığı karşılaştırılabilir. Verilen bilgiler, farklılığın nedenini veya hangi açıklamanın doğru olduğunu tek başına göstermez."
+      ]
     }
   ],
   "yazan": "Codex",
@@ -230,5 +236,11 @@
     "kapsam": "6 bölüm, 6 çözümlü örnek, 8 etkinlik (3 çoktan, 1 D/Y, 1 eşleştirme, 1 boşluk, 2 öğretici), giriş, çıktılar ve SVG baştan sona okundu; kitap PDF s.15-22 okundu.",
     "kaynak": "MEB 10. sınıf Kur’an-ı Kerim ders kitabı (03-ARACLAR/_metin/kitap-10-kuran-i-kerim-2026-ilk40.txt, PDF s.15-22 = basılı s.14-21) kendim okundu: Tema 1.1 'Kur’an-ı Kerim’i Anlayarak Okumak' (s.16-20), Bilgi Görseli 1.1, Etkinlik 1-2, bidat/hurafe kenar kutuları, Öğrenme Günlüğü. Dosyadaki 6 bölüm, 6 ",
     "durum": "Baştan okundu; 18 düzeltme işlendi (yüksek 0, orta 4, düşük 14); 2 bulgu reddedildi."
-  }
+  },
+  "ozet": [
+    "İslam inancına göre Kur’an, Cebrail aracılığıyla Hz. Muhammed’e Allah tarafından indirilmiş ilahi bir kitaptır. Onu okumak ibadet sayılır; mesajları ise insanlara yol gösteren ilkelerdir.",
+    "Anlayarak okumada sözcükleri seslendirme ile anlam üzerinde düşünme birbirini tamamlar. Ağır, açık ve özenli okuma, mesajı düşünmeye elverişli bir ortam sağlar.",
+    "Kur’an, insanı düşünüp öğüt almaya yöneltir. İnsan, duyduğu bir iddiayı bilgiye dayanmadan kabul etmemeli; bilgi kaynaklarını doğru kullanmalıdır.",
+    "Bir ayeti yorumlarken ele aldığı konu, çevresindeki açıklamalar, indirildiği dönemin şartları ve indiriliş sebepleri dikkate alınır. Böylece bir parça, ait olduğu bütünden koparılmaz."
+  ]
 }

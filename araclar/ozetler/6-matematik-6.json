@@ -1,498 +1,504 @@
 {
- "sinif": 6,
- "ders": "matematik",
- "hafta": 6,
- "tarih": "19-23 Ekim 2026",
- "yayin_tarihi": "2026-10-14",
- "unite": "Sayılar ve Nicelikler (2)",
- "konu": "Ondalık Gösterimleri Çözümleme ve Kesir-Bölme İlişkisine Giriş",
- "ciktilar": [
-  "MAT.6.1.5. Gerçek yaşam durumlarında ondalık gösterimlerin basamak değerlerini kesirlerden yararlanarak yorumlayabilme",
-  "MAT.6.1.6. Kesir ve bölme işlemi arasındaki ilişkiye yönelik tümevarımsal akıl yürütebilme"
- ],
- "giris": "Geçen hafta ondalık gösterimlerde onda birler, yüzde birler ve binde birler basamaklarını tanıdın; 2,357 gibi bir sayıyı 2 + {kesir:3|10} + {kesir:5|100} + {kesir:7|1000} biçiminde çözümledin. Bu hafta önce çözümlemeyi tersine çevirecek, bir sayıyı farklı yollarla yazacak ve basamak değerlerini para ile ölçü birimleri üzerinden yorumlayacaksın. Sonra eşit paylaşım problemlerinden yola çıkarak kesir ile bölme işlemi arasındaki bağı keşfetmeye başlayacaksın.",
- "bolumler": [
-  {
-   "baslik": "Çözümlenmiş toplamdan ondalık gösterime",
-   "metin": [
-    "Geçen hafta ondalık gösterimi kesirlerin toplamına açtın; şimdi tersini yap. 3 + {kesir:4|10} + {kesir:7|1000} toplamı hangi sayıdır? Birler basamağına 3, onda birler basamağına 4 yazarsın. Toplamda yüzde birlik kesir yoktur; bu basamağa 0 koymalısın, yoksa 7 yüzde birler basamağına kayar. Binde birler basamağına 7 gelir ve sayı 3,407 olur. Boş kalan her basamağa 0 yazmak, rakamları doğru yerde tutmanın tek yoludur.",
-    "Toplamdaki terimler karışık sırada da verilebilir: {kesir:5|100} + 2 + {kesir:8|10}. Önce her terimi basamağına yerleştir: 2 birler, 8 onda birler, 5 yüzde birler. Sayı 2,85’tir. 40 + {kesir:9|100} toplamında ise birler ve onda birler basamakları boştur: 40,09. Tek terimli bir toplam da olabilir: {kesir:6|1000} sayısının ondalık gösterimi 0,006’dır; onda birler ve yüzde birler basamaklarına sıfır gelir.",
-    "Basamak tablosu bu işte en iyi yardımcındır. Tablonun sütunlarına onlar, birler, onda birler, yüzde birler ve binde birler yazıp her kesri kendi sütununa yerleştirirsen boş kalan sütunlar sana sıfırların yerini gösterir. Sonucu her zaman sağlamayla kontrol et: bulduğun sayıyı yeniden çözümle ve verilen toplamı elde edip etmediğine bak."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Çözümlenmiş toplam",
-     "Ondalık gösterim"
-    ],
-    "satirlar": [
-     [
-      "3 + {kesir:4|10} + {kesir:7|1000}",
-      "3,407"
-     ],
-     [
-      "{kesir:5|100} + 2 + {kesir:8|10}",
-      "2,85"
-     ],
-     [
-      "40 + {kesir:9|100}",
-      "40,09"
-     ],
-     [
-      "{kesir:6|1000}",
-      "0,006"
-     ],
-     [
-      "1 + {kesir:2|10} + {kesir:5|100} + {kesir:0|1000}",
-      "1,250"
-     ]
-    ]
-   },
-   "kutular": [
+  "sinif": 6,
+  "ders": "matematik",
+  "hafta": 6,
+  "tarih": "19-23 Ekim 2026",
+  "yayin_tarihi": "2026-10-14",
+  "unite": "Sayılar ve Nicelikler (2)",
+  "konu": "Ondalık Gösterimleri Çözümleme ve Kesir-Bölme İlişkisine Giriş",
+  "ciktilar": [
+    "MAT.6.1.5. Gerçek yaşam durumlarında ondalık gösterimlerin basamak değerlerini kesirlerden yararlanarak yorumlayabilme",
+    "MAT.6.1.6. Kesir ve bölme işlemi arasındaki ilişkiye yönelik tümevarımsal akıl yürütebilme"
+  ],
+  "giris": "Geçen hafta ondalık gösterimlerde onda birler, yüzde birler ve binde birler basamaklarını tanıdın; 2,357 gibi bir sayıyı 2 + {kesir:3|10} + {kesir:5|100} + {kesir:7|1000} biçiminde çözümledin. Bu hafta önce çözümlemeyi tersine çevirecek, bir sayıyı farklı yollarla yazacak ve basamak değerlerini para ile ölçü birimleri üzerinden yorumlayacaksın. Sonra eşit paylaşım problemlerinden yola çıkarak kesir ile bölme işlemi arasındaki bağı keşfetmeye başlayacaksın.",
+  "bolumler": [
     {
-     "tur": "dikkat",
-     "baslik": "Boş basamağa 0 yaz",
-     "metin": "3 + {kesir:4|10} + {kesir:7|1000} toplamını 3,47 yazmak yanlıştır; yüzde birler basamağı boş olduğundan 0 ile doldurulur: 3,407."
+      "baslik": "Çözümlenmiş toplamdan ondalık gösterime",
+      "metin": [
+        "Geçen hafta ondalık gösterimi kesirlerin toplamına açtın; şimdi tersini yap. 3 + {kesir:4|10} + {kesir:7|1000} toplamı hangi sayıdır? Birler basamağına 3, onda birler basamağına 4 yazarsın. Toplamda yüzde birlik kesir yoktur; bu basamağa 0 koymalısın, yoksa 7 yüzde birler basamağına kayar. Binde birler basamağına 7 gelir ve sayı 3,407 olur. Boş kalan her basamağa 0 yazmak, rakamları doğru yerde tutmanın tek yoludur.",
+        "Toplamdaki terimler karışık sırada da verilebilir: {kesir:5|100} + 2 + {kesir:8|10}. Önce her terimi basamağına yerleştir: 2 birler, 8 onda birler, 5 yüzde birler. Sayı 2,85’tir. 40 + {kesir:9|100} toplamında ise birler ve onda birler basamakları boştur: 40,09. Tek terimli bir toplam da olabilir: {kesir:6|1000} sayısının ondalık gösterimi 0,006’dır; onda birler ve yüzde birler basamaklarına sıfır gelir.",
+        "Basamak tablosu bu işte en iyi yardımcındır. Tablonun sütunlarına onlar, birler, onda birler, yüzde birler ve binde birler yazıp her kesri kendi sütununa yerleştirirsen boş kalan sütunlar sana sıfırların yerini gösterir. Sonucu her zaman sağlamayla kontrol et: bulduğun sayıyı yeniden çözümle ve verilen toplamı elde edip etmediğine bak."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Çözümlenmiş toplam",
+          "Ondalık gösterim"
+        ],
+        "satirlar": [
+          [
+            "3 + {kesir:4|10} + {kesir:7|1000}",
+            "3,407"
+          ],
+          [
+            "{kesir:5|100} + 2 + {kesir:8|10}",
+            "2,85"
+          ],
+          [
+            "40 + {kesir:9|100}",
+            "40,09"
+          ],
+          [
+            "{kesir:6|1000}",
+            "0,006"
+          ],
+          [
+            "1 + {kesir:2|10} + {kesir:5|100} + {kesir:0|1000}",
+            "1,250"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Boş basamağa 0 yaz",
+          "metin": "Verilen 3 + {kesir:4|10} + {kesir:7|1000} toplamını 3,47 yazmak yanlıştır; yüzde birler basamağı boş olduğundan 0 ile doldurulur: 3,407."
+        },
+        {
+          "tur": "ipucu",
+          "metin": "Her terimi basamak tablosundaki sütununa yerleştir; boş kalan sütunlar sıfırların yerini söyler."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 460 214\" role=\"img\" aria-label=\"Ondalık Gösterimleri Çözümleme ve Kesir-Bö kavram özeti şeması\"><rect x=\"90\" y=\"12\" width=\"280\" height=\"38\" rx=\"19\" class=\"g-mf\"/><text x=\"230\" y=\"36\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"800\" class=\"g-b\">Ondalık Gösterimleri Çözümleme ve Kesir-Bö</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ma\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"116\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">1. Bölüm</text><text x=\"116\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Çözümlenmiş toplamdan ondalık gö…</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ta\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"344\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">2. Bölüm</text><text x=\"344\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Aynı sayıyı farklı yollarla çözü…</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ya\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"116\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-yf\">3. Bölüm</text><text x=\"116\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Para ve ölçü birimleriyle basama…</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-oa\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"344\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-of\">4. Bölüm</text><text x=\"344\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Eşit paylaşım: bölmenin sonucu b…</text></svg>"
     },
     {
-     "tur": "ipucu",
-     "metin": "Her terimi basamak tablosundaki sütununa yerleştir; boş kalan sütunlar sıfırların yerini söyler."
+      "baslik": "Aynı sayıyı farklı yollarla çözümlemek",
+      "metin": [
+        "Bir ondalık gösterim yalnız tek bir biçimde çözümlenmez. 0,75 sayısını basamak değerleriyle {kesir:7|10} + {kesir:5|100} diye yazarsın. {kesir:7|10} kesrini 10 ile genişletirsen {kesir:70|100} olur; o zaman 0,75 = {kesir:70|100} + {kesir:5|100} = {kesir:75|100} biçiminde tek kesirle de yazılabilir. Bir adım daha atıp yüzde birlikleri binde birliğe çevirirsen {kesir:750|1000} elde edersin. Bütün bu yazımlar aynı sayıyı anlatır.",
+        "Bu esneklik sondaki sıfırların anlamını açıklar. 0,5 = {kesir:5|10}, 0,50 = {kesir:50|100} ve 0,500 = {kesir:500|1000} kesirleri birbirine denktir; her biri yarımdır. Ondalık kısmın sonuna sıfır eklemek ya da sondaki sıfırı silmek sayının değerini değiştirmez, yalnız kaç basamakla yazıldığını değiştirir. Buna karşılık virgülün hemen sağına sıfır eklemek sayıyı değiştirir: 0,05 = {kesir:5|100}, yarımın onda biridir.",
+        "Farklı çözümlemeler iki ondalık gösterimi karşılaştırırken işe yarar. 0,8 mi büyük, 0,75 mi? Virgülden sonraki kısımları doğal sayı gibi karşılaştırıp “75 büyüktür” demek yaygın bir yanılgıdır. Her iki sayıyı paydası 100 olan kesirle yaz: 0,8 = {kesir:80|100} ve 0,75 = {kesir:75|100}. 80 yüzde birlik, 75 yüzde birlikten çoktur; 0,8 daha büyüktür. Basamak sayıları eşit olmayan ondalık gösterimleri karşılaştırırken önce aynı basamak sayısına tamamla: 0,80 ile 0,75."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Sayı",
+          "Basamak değerleriyle",
+          "Tek kesirle"
+        ],
+        "satirlar": [
+          [
+            "0,75",
+            "{kesir:7|10} + {kesir:5|100}",
+            "{kesir:75|100}"
+          ],
+          [
+            "0,5",
+            "{kesir:5|10}",
+            "{kesir:50|100} = {kesir:500|1000}"
+          ],
+          [
+            "2,35",
+            "2 + {kesir:3|10} + {kesir:5|100}",
+            "{kesir:235|100}"
+          ],
+          [
+            "0,125",
+            "{kesir:1|10} + {kesir:2|100} + {kesir:5|1000}",
+            "{kesir:125|1000}"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Sondaki sıfır",
+          "metin": "Ondalık kısmın sonuna sıfır eklemek sayıyı değiştirmez: 0,5 = 0,50 = 0,500, çünkü {kesir:5|10} = {kesir:50|100} = {kesir:500|1000}. Virgülün hemen sağına eklenen sıfır ise sayıyı değiştirir: 0,05 ≠ 0,5."
+        },
+        {
+          "tur": "dikkat",
+          "metin": "Verilen 0,75 ile 0,8’i karşılaştırırken “75 büyüktür” diye düşünme. İkisini de yüzde birlikle yaz: {kesir:75|100} ile {kesir:80|100}; 75 yüzde birlik daha azdır, yani 0,75 küçüktür."
+        }
+      ]
+    },
+    {
+      "baslik": "Para ve ölçü birimleriyle basamak değerlerini yorumlamak",
+      "metin": [
+        "Ondalık gösterimler en çok para ve ölçümlerde karşına çıkar; basamak değerlerini orada kendi cümlelerinle açıklayabilmelisin. 1 lira 100 kuruş olduğundan liranın {kesir:1|100}’ü 1 kuruş, {kesir:1|10}’u 10 kuruştur. 24,35 TL fiyatı 24 + {kesir:3|10} + {kesir:5|100} lira diye çözümlenir: 24 lira, 3 tane 10 kuruş ve 5 tane 1 kuruş, yani 24 lira 35 kuruş. Fiyat etiketlerinde virgülden sonra iki basamak yazılmasının nedeni budur: en küçük para birimi liranın yüzde biridir.",
+        "Uzunlukta 1 metre 100 santimetre ve 1000 milimetredir. Boyun 1,62 m ise bu 1 + {kesir:6|10} + {kesir:2|100} metredir: 1 metre, 6 desimetre ve 2 santimetre, yani 1 metre 62 santimetre. Bir kartonun kalınlığı 0,005 m olarak verilmişse bu {kesir:5|1000} metre, yani 5 milimetredir. Burada onda birler ve yüzde birler basamaklarındaki sıfırlar kalınlığın 1 santimetreden bile küçük olduğunu söyler.",
+        "Kütle ve hacimde binde birler basamağı sık kullanılır; çünkü 1 kilogram 1000 gram, 1 litre 1000 mililitredir. 0,750 kg yazan bir paket {kesir:7|10} + {kesir:5|100} + {kesir:0|1000} kilogramdır: 700 gram, 50 gram ve 0 gram, toplam 750 gram. 2,4 kg ise 2 kilogram 400 gramdır; çünkü {kesir:4|10} kg = 400 g. 0,330 litrelik bir kutu içecek {kesir:330|1000} litre, yani 330 mililitredir. Birimi bilmek, her basamağın kaç gram ya da kaç mililitre ettiğini anında görmeni sağlar.",
+        "Zamanda da aynı mantık işler. Yüzme yarışında 27,45 saniyelik bir derece 27 + {kesir:4|10} + {kesir:5|100} saniyedir; yani 27 tam saniye ile saniyenin yüzde kırk beşi. İki yarışmacı 27,45 ve 27,5 saniyede yüzmüşse ikinci dereceyi 27,50 olarak yazıp karşılaştır: 45 yüzde birlik, 50 yüzde birlikten az olduğundan 27,45 saniyelik derece daha iyidir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Ölçüm",
+          "Çözümleme",
+          "Anlamı"
+        ],
+        "satirlar": [
+          [
+            "24,35 TL",
+            "24 + {kesir:3|10} + {kesir:5|100} lira",
+            "24 lira 35 kuruş"
+          ],
+          [
+            "1,62 m",
+            "1 + {kesir:6|10} + {kesir:2|100} metre",
+            "1 metre 62 santimetre"
+          ],
+          [
+            "0,750 kg",
+            "{kesir:7|10} + {kesir:5|100} + {kesir:0|1000} kilogram",
+            "750 gram"
+          ],
+          [
+            "0,330 L",
+            "{kesir:3|10} + {kesir:3|100} + {kesir:0|1000} litre",
+            "330 mililitre"
+          ],
+          [
+            "27,45 s",
+            "27 + {kesir:4|10} + {kesir:5|100} saniye",
+            "27 saniye ile saniyenin {kesir:45|100}’ü"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Birimler ve basamaklar",
+          "metin": "{kesir:1|100} lira 1 kuruş, {kesir:1|100} metre 1 santimetre, {kesir:1|1000} metre 1 milimetre, {kesir:1|1000} kilogram 1 gram, {kesir:1|1000} litre 1 mililitredir."
+        },
+        {
+          "tur": "ipucu",
+          "metin": "Bir ölçümdeki basamak değerini açıklarken önce birimin kaça bölündüğünü hatırla: 100’e bölünen birimde yüzde birler, 1000’e bölünen birimde binde birler basamağı anlam kazanır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 460 214\" role=\"img\" aria-label=\"Ondalık Gösterimleri Çözümleme ve Kesir-Bö kavram özeti şeması\"><rect x=\"90\" y=\"12\" width=\"280\" height=\"38\" rx=\"19\" class=\"g-mf\"/><text x=\"230\" y=\"36\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"800\" class=\"g-b\">Ondalık Gösterimleri Çözümleme ve Kesir-Bö</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ma\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"116\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">1. Bölüm</text><text x=\"116\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Çözümlenmiş toplamdan ondalık gö…</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ta\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"344\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">2. Bölüm</text><text x=\"344\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Aynı sayıyı farklı yollarla çözü…</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ya\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"116\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-yf\">3. Bölüm</text><text x=\"116\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Para ve ölçü birimleriyle basama…</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-oa\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"344\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-of\">4. Bölüm</text><text x=\"344\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Eşit paylaşım: bölmenin sonucu b…</text></svg>"
+    },
+    {
+      "baslik": "Eşit paylaşım: bölmenin sonucu bir kesirdir",
+      "metin": [
+        "Bir çikolatayı 4 arkadaş eşit paylaşmak istiyor. Bu bir bölme problemidir: 1 ÷ 4. Sonuç doğal sayı değildir; çikolata 4 eş parçaya bölünür ve herkes bir parça, yani çikolatanın {kesir:1|4}’ünü alır. Demek ki 1 ÷ 4 = {kesir:1|4}. Bölme işleminin sonucu doğal sayı olmadığında kesir olarak yazılır.",
+        "Şimdi 3 çikolatayı 4 kişiye paylaştır: 3 ÷ 4. Her çikolatayı 4 eş parçaya bölersen 12 parça olur ve herkese 3 parça düşer. Her parça bir çikolatanın {kesir:1|4}’ü olduğundan herkesin payı 3 tane {kesir:1|4}, yani {kesir:3|4} çikolatadır: 3 ÷ 4 = {kesir:3|4}. 2 litre suyu 5 bardağa eşit paylaştırırsan her bardağa 2 ÷ 5 = {kesir:2|5} litre düşer. Her seferinde bölünen pay, bölen payda olur.",
+        "Paylaşılan miktar kişi sayısından büyükse bölüm 1’den büyük çıkar. 7 ekmeği 3 kişi paylaşırsa önce herkes 2 tam ekmek alır, artan 1 ekmek 3 eş parçaya bölünür ve herkese {kesir:1|3} ekmek daha düşer: 7 ÷ 3 = {kesir:7|3} = 2 tam {kesir:1|3}. Burada 2 bölüm, 1 kalandır; kalanın bölene oranı olan {kesir:1|3} kesir kısmını verir.",
+        "Bu gözlemleri genelleyebilirsin: iki doğal sayının bölümü, bölünen pay ve bölen payda olmak üzere bir kesirle gösterilir; a ÷ b = {kesir:a|b}. Tersi de doğrudur: {kesir:3|5} kesrini 3 ÷ 5 işlemi olarak okuyabilirsin. Payda sıfır olamaz; çünkü sıfıra bölme tanımlı değildir. Kesir çizgisi ile bölme işareti aynı işi yapar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Paylaşım",
+          "Bölme işlemi",
+          "Her birine düşen pay"
+        ],
+        "satirlar": [
+          [
+            "1 çikolata, 4 kişi",
+            "1 ÷ 4",
+            "{kesir:1|4} çikolata"
+          ],
+          [
+            "3 çikolata, 4 kişi",
+            "3 ÷ 4",
+            "{kesir:3|4} çikolata"
+          ],
+          [
+            "2 litre su, 5 bardak",
+            "2 ÷ 5",
+            "{kesir:2|5} litre"
+          ],
+          [
+            "7 ekmek, 3 kişi",
+            "7 ÷ 3",
+            "{kesir:7|3} = 2 tam {kesir:1|3} ekmek"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Kesir ve bölme",
+          "metin": "İki doğal sayının bölümü bir kesirle gösterilir: a ÷ b = {kesir:a|b}. Bölünen pay, bölen paydadır; payda sıfır olamaz."
+        },
+        {
+          "tur": "ipucu",
+          "metin": "Paylaşım problemini şekille çöz: her bütünü kişi sayısı kadar eş parçaya böl ve herkese her bütünden bir parça ver. Parça sayısı payı, parçanın büyüklüğü paydayı verir."
+        }
+      ]
+    },
+    {
+      "baslik": "Paydası 10, 100 ve 1000 olan kesirlerde bölme",
+      "metin": [
+        "Kesir ile bölme arasındaki bağ, ondalık gösterimlerle birleşince güçlü bir araç olur. 3 metrelik bir kurdeleyi 10 eş parçaya kesersen her parça 3 ÷ 10 = {kesir:3|10} metredir. {kesir:3|10} kesrinin ondalık gösterimini zaten biliyorsun: 0,3. Öyleyse 3 ÷ 10 = 0,3 metre, yani 30 santimetredir. Bölme işlemi, paydası 10 olan bir kesir ve bir ondalık gösterim: üçü de aynı miktarı söyler.",
+        "Aynı yol 100 ve 1000 için de geçerlidir. 23 ÷ 100 = {kesir:23|100} = {kesir:2|10} + {kesir:3|100} = 0,23. 235 ÷ 100 işleminde pay paydadan büyüktür; {kesir:235|100} = {kesir:200|100} + {kesir:35|100} = 2 + {kesir:35|100} = 2,35. 1 kilogram şekeri 1000 eş pakete bölersen her pakete 1 ÷ 1000 = {kesir:1|1000} = 0,001 kilogram, yani 1 gram düşer. 45 ÷ 1000 işleminin sonucu {kesir:45|1000} = {kesir:4|100} + {kesir:5|1000} = 0,045’tir.",
+        "Bölenin 10, 100 ya da 1000 olduğu bölmelerde sonucu basamak değerlerinden okursun: virgülün sağında bölendeki sıfır sayısı kadar basamak bulunur. Dikkat etmen gereken nokta sıfırlardır: 45 ÷ 1000 işleminde virgülün sağında üç basamak olmalıdır; 45 iki rakamlı olduğu için başa bir sıfır gelir ve sonuç 0,045 olur, 0,45 değil. Sağlama için sonucu yeniden çözümle: 0,045 = {kesir:4|100} + {kesir:5|1000} = {kesir:40|1000} + {kesir:5|1000} = {kesir:45|1000}."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Bölme işlemi",
+          "Kesir",
+          "Ondalık gösterim"
+        ],
+        "satirlar": [
+          [
+            "3 ÷ 10",
+            "{kesir:3|10}",
+            "0,3"
+          ],
+          [
+            "23 ÷ 100",
+            "{kesir:23|100}",
+            "0,23"
+          ],
+          [
+            "235 ÷ 100",
+            "{kesir:235|100} = 2 tam {kesir:35|100}",
+            "2,35"
+          ],
+          [
+            "1 ÷ 1000",
+            "{kesir:1|1000}",
+            "0,001"
+          ],
+          [
+            "45 ÷ 1000",
+            "{kesir:45|1000}",
+            "0,045"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "10, 100, 1000’e bölme",
+          "metin": "Bir doğal sayıyı 10, 100 ya da 1000’e bölmek, paydası 10, 100 ya da 1000 olan bir kesir verir; bu kesrin ondalık gösterimini basamak değerlerinden okursun: 7 ÷ 10 = {kesir:7|10} = 0,7 ve 7 ÷ 100 = {kesir:7|100} = 0,07."
+        },
+        {
+          "tur": "dikkat",
+          "metin": "Virgülün sağındaki basamak sayısı bölendeki sıfır sayısı kadardır. 45 ÷ 1000 = 0,045; eksik kalan basamağı başa sıfır koyarak tamamla."
+        }
+      ]
+    },
+    {
+      "baslik": "Paydayı 10, 100 ya da 1000 yapmak",
+      "metin": [
+        "Peki 3 ÷ 4 gibi bir bölmenin sonucunu ondalık gösterimle nasıl yazarsın? Sonuç {kesir:3|4} kesridir, ama paydası 10, 100 ya da 1000 değildir. Çözüm, önceki yıllardan tanıdığın genişletmedir: kesrin payını ve paydasını aynı sayıyla çarparsan kesrin değeri değişmez. 4 × 25 = 100 olduğundan {kesir:3|4} kesrini 25 ile genişletirsen {kesir:75|100} elde edersin; bu da 0,75’tir. Demek ki 3 ÷ 4 = {kesir:3|4} = 0,75. 3 lirayı 4 kişi paylaşırsa herkese 0,75 lira, yani 75 kuruş düşer.",
+        "Hangi sayıyla genişleteceğini payda söyler. Payda 2 ise 5 ile genişletip 10 yaparsın: {kesir:1|2} = {kesir:5|10} = 0,5. Payda 5 ise 2 ile: {kesir:1|5} = {kesir:2|10} = 0,2. Payda 4, 20, 25 ya da 50 ise 100’e ulaşırsın: {kesir:7|20} = {kesir:35|100} = 0,35 ve {kesir:9|25} = {kesir:36|100} = 0,36. Payda 8 ise 125 ile genişletip 1000’e çıkarsın: {kesir:3|8} = {kesir:375|1000} = 0,375 ve {kesir:1|8} = {kesir:125|1000} = 0,125.",
+        "Ondalık gösterime geçmek kesirleri karşılaştırmayı kolaylaştırır. {kesir:3|4} ile {kesir:7|10} kesirlerinden hangisi büyüktür? {kesir:3|4} = 0,75 ve {kesir:7|10} = 0,70 olduğundan {kesir:3|4} daha büyüktür. Payları ve paydaları farklı iki kesri ondalık gösterime çevirip karşılaştırmak, ortak payda bulmakla aynı işi görür; çünkü ondalık gösterim zaten paydası 10, 100 ya da 1000 olan bir kesirdir.",
+        "Her kesir bu yolla yazılamaz. {kesir:1|3} kesrinin paydasını 10, 100 ya da 1000 yapacak bir çarpan yoktur; çünkü bu sayıların hiçbiri 3’e tam bölünmez, rakamları toplamı 1’dir. {kesir:2|7} için de 7’nin katı olan bir 10, 100 ya da 1000 bulamazsın. Böyle kesirlerin ondalık gösterimini bulmak için gelecek hafta payı paydaya doğrudan bölmeyi öğrenecek ve bölmenin bitip bitmediğini gözleyeceksin."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Kesir",
+          "Genişletme çarpanı",
+          "Paydası 10, 100 ya da 1000 olan kesir",
+          "Ondalık gösterim"
+        ],
+        "satirlar": [
+          [
+            "{kesir:1|2}",
+            "5",
+            "{kesir:5|10}",
+            "0,5"
+          ],
+          [
+            "{kesir:3|4}",
+            "25",
+            "{kesir:75|100}",
+            "0,75"
+          ],
+          [
+            "{kesir:1|5}",
+            "2",
+            "{kesir:2|10}",
+            "0,2"
+          ],
+          [
+            "{kesir:7|20}",
+            "5",
+            "{kesir:35|100}",
+            "0,35"
+          ],
+          [
+            "{kesir:9|25}",
+            "4",
+            "{kesir:36|100}",
+            "0,36"
+          ],
+          [
+            "{kesir:3|8}",
+            "125",
+            "{kesir:375|1000}",
+            "0,375"
+          ],
+          [
+            "{kesir:13|50}",
+            "2",
+            "{kesir:26|100}",
+            "0,26"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Paydaya bak",
+          "metin": "Payda 2 ya da 5 ise 10’a, payda 4, 20, 25 ya da 50 ise 100’e, payda 8 ise 1000’e genişlet. Çarpanı bulmak için paydayı kaçla çarparsan 10, 100 ya da 1000 ettiğini sor."
+        },
+        {
+          "tur": "bilgi",
+          "metin": "Paydası 3, 6, 7, 9 gibi sayılar olan sadeleşmiş kesirlerde paydayı 10, 100 ya da 1000 yapamazsın. Bu kesirlerin ondalık gösterimini gelecek hafta payı paydaya bölerek inceleyeceksin."
+        }
+      ]
     }
-   ]
-  },
-  {
-   "baslik": "Aynı sayıyı farklı yollarla çözümlemek",
-   "metin": [
-    "Bir ondalık gösterim yalnız tek bir biçimde çözümlenmez. 0,75 sayısını basamak değerleriyle {kesir:7|10} + {kesir:5|100} diye yazarsın. {kesir:7|10} kesrini 10 ile genişletirsen {kesir:70|100} olur; o zaman 0,75 = {kesir:70|100} + {kesir:5|100} = {kesir:75|100} biçiminde tek kesirle de yazılabilir. Bir adım daha atıp yüzde birlikleri binde birliğe çevirirsen {kesir:750|1000} elde edersin. Bütün bu yazımlar aynı sayıyı anlatır.",
-    "Bu esneklik sondaki sıfırların anlamını açıklar. 0,5 = {kesir:5|10}, 0,50 = {kesir:50|100} ve 0,500 = {kesir:500|1000} kesirleri birbirine denktir; her biri yarımdır. Ondalık kısmın sonuna sıfır eklemek ya da sondaki sıfırı silmek sayının değerini değiştirmez, yalnız kaç basamakla yazıldığını değiştirir. Buna karşılık virgülün hemen sağına sıfır eklemek sayıyı değiştirir: 0,05 = {kesir:5|100}, yarımın onda biridir.",
-    "Farklı çözümlemeler iki ondalık gösterimi karşılaştırırken işe yarar. 0,8 mi büyük, 0,75 mi? Virgülden sonraki kısımları doğal sayı gibi karşılaştırıp “75 büyüktür” demek yaygın bir yanılgıdır. Her iki sayıyı paydası 100 olan kesirle yaz: 0,8 = {kesir:80|100} ve 0,75 = {kesir:75|100}. 80 yüzde birlik, 75 yüzde birlikten çoktur; 0,8 daha büyüktür. Basamak sayıları eşit olmayan ondalık gösterimleri karşılaştırırken önce aynı basamak sayısına tamamla: 0,80 ile 0,75."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Sayı",
-     "Basamak değerleriyle",
-     "Tek kesirle"
-    ],
-    "satirlar": [
-     [
-      "0,75",
-      "{kesir:7|10} + {kesir:5|100}",
-      "{kesir:75|100}"
-     ],
-     [
-      "0,5",
-      "{kesir:5|10}",
-      "{kesir:50|100} = {kesir:500|1000}"
-     ],
-     [
-      "2,35",
-      "2 + {kesir:3|10} + {kesir:5|100}",
-      "{kesir:235|100}"
-     ],
-     [
-      "0,125",
-      "{kesir:1|10} + {kesir:2|100} + {kesir:5|1000}",
-      "{kesir:125|1000}"
-     ]
-    ]
-   },
-   "kutular": [
+  ],
+  "ornekler": [
     {
-     "tur": "kural",
-     "baslik": "Sondaki sıfır",
-     "metin": "Ondalık kısmın sonuna sıfır eklemek sayıyı değiştirmez: 0,5 = 0,50 = 0,500, çünkü {kesir:5|10} = {kesir:50|100} = {kesir:500|1000}. Virgülün hemen sağına eklenen sıfır ise sayıyı değiştirir: 0,05 ≠ 0,5."
+      "soru": "Verilen 4 + {kesir:7|100} + {kesir:2|1000} toplamının ondalık gösterimini bul. Beste cevabı 4,72 olarak yazdı. Beste’nin hatasını açıkla.",
+      "cevap": "Terimleri basamaklarına yerleştir: birler 4, onda birler boş, yüzde birler 7, binde birler 2. Boş basamağa 0 yazılır: 4,072. Beste onda birler basamağını atlayınca 7 ve 2 birer basamak sola kaydı; 4,72 sayısı 4 + {kesir:7|10} + {kesir:2|100} demektir ve verilen toplamdan farklıdır. Sağlama: 4,072 = 4 + {kesir:0|10} + {kesir:7|100} + {kesir:2|1000}."
     },
     {
-     "tur": "dikkat",
-     "metin": "0,75 ile 0,8’i karşılaştırırken “75 büyüktür” diye düşünme. İkisini de yüzde birlikle yaz: {kesir:75|100} ile {kesir:80|100}; 75 yüzde birlik daha azdır, yani 0,75 küçüktür."
+      "soru": "Verilen 0,375 sayısını üç farklı biçimde yaz: basamak değerlerinin toplamı olarak, paydası 1000 olan tek bir kesir olarak ve paydası 100 olan bir kesir ile binde birlik bir kesrin toplamı olarak.",
+      "cevap": "Basamak değerleriyle: 0,375 = {kesir:3|10} + {kesir:7|100} + {kesir:5|1000}. Tek kesirle: {kesir:3|10} = {kesir:300|1000} ve {kesir:7|100} = {kesir:70|1000} olduğundan toplam {kesir:375|1000}’dir. Üçüncü biçim: {kesir:3|10} + {kesir:7|100} = {kesir:30|100} + {kesir:7|100} = {kesir:37|100}; böylece 0,375 = {kesir:37|100} + {kesir:5|1000}. Üç yazım da aynı sayıyı anlatır."
+    },
+    {
+      "soru": "Bir market etiketinde bir peynir paketi için “kütle 0,480 kg, fiyat 36,25 TL” yazıyor. Kütleyi gram, fiyatı lira ve kuruş olarak basamak değerleriyle açıkla.",
+      "cevap": "0,480 kg = {kesir:4|10} + {kesir:8|100} + {kesir:0|1000} kilogramdır. 1 kg 1000 g olduğundan {kesir:4|10} kg = 400 g, {kesir:8|100} kg = 80 g ve {kesir:0|1000} kg = 0 g eder; paket 480 gramdır. 36,25 TL = 36 + {kesir:2|10} + {kesir:5|100} liradır; {kesir:1|10} lira 10 kuruş, {kesir:1|100} lira 1 kuruş olduğundan ondalık kısım 20 + 5 = 25 kuruştur. Fiyat 36 lira 25 kuruştur."
+    },
+    {
+      "soru": "Verilen 5 litre meyve suyu 8 eş sürahiye eşit olarak paylaştırılacak. Her sürahiye düşen miktarı önce bölme işlemi ve kesir olarak, sonra ondalık gösterimle yaz; sonucu mililitre cinsinden söyle.",
+      "cevap": "Paylaşım 5 ÷ 8 işlemidir ve sonucu {kesir:5|8} litredir. Paydayı 1000 yapmak için kesri 125 ile genişlet: 5 × 125 = 625 ve 8 × 125 = 1000 olduğundan {kesir:5|8} = {kesir:625|1000} = 0,625. Her sürahiye 0,625 litre düşer; 1 litre 1000 mililitre olduğundan bu 625 mililitredir. Sağlama: 8 × 625 = 5000 mililitre, yani 5 litre."
+    },
+    {
+      "soru": "Cem, 45 ÷ 1000 işleminin sonucunu 0,45 buldu. Cem’in hatasını basamak değerleriyle açıkla ve doğru sonucu yaz.",
+      "cevap": "45 ÷ 1000 = {kesir:45|1000}’dir; paydası 1000 olduğundan virgülün sağında üç basamak bulunmalıdır. {kesir:45|1000} = {kesir:4|100} + {kesir:5|1000} olduğundan 4 yüzde birler, 5 binde birler basamağına yazılır ve onda birler basamağına 0 gelir: 0,045. Cem’in yazdığı 0,45 sayısı {kesir:45|100}, yani 45 ÷ 100 işleminin sonucudur ve doğru sonucun 10 katıdır."
+    },
+    {
+      "soru": "Deniz “{kesir:7|20} kesrinin paydasını 10 yapamıyorum, demek ki bu kesrin ondalık gösterimi yok.” diyor. Deniz’i değerlendir; sonra {kesir:7|20}, {kesir:9|25}, {kesir:3|8} ve {kesir:2|3} kesirlerinden hangilerinin paydasının genişletmeyle 10, 100 ya da 1000 yapılabileceğini belirle ve yapılabilenlerin ondalık gösterimlerini yaz.",
+      "cevap": "Deniz’in yargısı yanlıştır; payda 10 yapılamıyorsa 100 ya da 1000 denenir. 20 × 5 = 100 olduğundan {kesir:7|20} = {kesir:35|100} = 0,35. 25 × 4 = 100 olduğundan {kesir:9|25} = {kesir:36|100} = 0,36. 8 × 125 = 1000 olduğundan {kesir:3|8} = {kesir:375|1000} = 0,375. {kesir:2|3} için ise 10, 100 ve 1000 sayılarından hiçbiri 3’e tam bölünmediğinden böyle bir çarpan yoktur; bu kesrin ondalık gösterimi genişletmeyle yazılamaz. Onu gelecek hafta payı paydaya bölerek inceleyeceksin."
     }
-   ]
-  },
-  {
-   "baslik": "Para ve ölçü birimleriyle basamak değerlerini yorumlamak",
-   "metin": [
-    "Ondalık gösterimler en çok para ve ölçümlerde karşına çıkar; basamak değerlerini orada kendi cümlelerinle açıklayabilmelisin. 1 lira 100 kuruş olduğundan liranın {kesir:1|100}’ü 1 kuruş, {kesir:1|10}’u 10 kuruştur. 24,35 TL fiyatı 24 + {kesir:3|10} + {kesir:5|100} lira diye çözümlenir: 24 lira, 3 tane 10 kuruş ve 5 tane 1 kuruş, yani 24 lira 35 kuruş. Fiyat etiketlerinde virgülden sonra iki basamak yazılmasının nedeni budur: en küçük para birimi liranın yüzde biridir.",
-    "Uzunlukta 1 metre 100 santimetre ve 1000 milimetredir. Boyun 1,62 m ise bu 1 + {kesir:6|10} + {kesir:2|100} metredir: 1 metre, 6 desimetre ve 2 santimetre, yani 1 metre 62 santimetre. Bir kartonun kalınlığı 0,005 m olarak verilmişse bu {kesir:5|1000} metre, yani 5 milimetredir. Burada onda birler ve yüzde birler basamaklarındaki sıfırlar kalınlığın 1 santimetreden bile küçük olduğunu söyler.",
-    "Kütle ve hacimde binde birler basamağı sık kullanılır; çünkü 1 kilogram 1000 gram, 1 litre 1000 mililitredir. 0,750 kg yazan bir paket {kesir:7|10} + {kesir:5|100} + {kesir:0|1000} kilogramdır: 700 gram, 50 gram ve 0 gram, toplam 750 gram. 2,4 kg ise 2 kilogram 400 gramdır; çünkü {kesir:4|10} kg = 400 g. 0,330 litrelik bir kutu içecek {kesir:330|1000} litre, yani 330 mililitredir. Birimi bilmek, her basamağın kaç gram ya da kaç mililitre ettiğini anında görmeni sağlar.",
-    "Zamanda da aynı mantık işler. Yüzme yarışında 27,45 saniyelik bir derece 27 + {kesir:4|10} + {kesir:5|100} saniyedir; yani 27 tam saniye ile saniyenin yüzde kırk beşi. İki yarışmacı 27,45 ve 27,5 saniyede yüzmüşse ikinci dereceyi 27,50 olarak yazıp karşılaştır: 45 yüzde birlik, 50 yüzde birlikten az olduğundan 27,45 saniyelik derece daha iyidir."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Ölçüm",
-     "Çözümleme",
-     "Anlamı"
-    ],
-    "satirlar": [
-     [
-      "24,35 TL",
-      "24 + {kesir:3|10} + {kesir:5|100} lira",
-      "24 lira 35 kuruş"
-     ],
-     [
-      "1,62 m",
-      "1 + {kesir:6|10} + {kesir:2|100} metre",
-      "1 metre 62 santimetre"
-     ],
-     [
-      "0,750 kg",
-      "{kesir:7|10} + {kesir:5|100} + {kesir:0|1000} kilogram",
-      "750 gram"
-     ],
-     [
-      "0,330 L",
-      "{kesir:3|10} + {kesir:3|100} + {kesir:0|1000} litre",
-      "330 mililitre"
-     ],
-     [
-      "27,45 s",
-      "27 + {kesir:4|10} + {kesir:5|100} saniye",
-      "27 saniye ile saniyenin {kesir:45|100}’ü"
-     ]
-    ]
-   },
-   "kutular": [
+  ],
+  "etkinlikler": [
     {
-     "tur": "bilgi",
-     "baslik": "Birimler ve basamaklar",
-     "metin": "{kesir:1|100} lira 1 kuruş, {kesir:1|100} metre 1 santimetre, {kesir:1|1000} metre 1 milimetre, {kesir:1|1000} kilogram 1 gram, {kesir:1|1000} litre 1 mililitredir."
+      "tur": "coktan",
+      "soru": "{kesir:6|10} + {kesir:4|1000} toplamının ondalık gösterimi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "0,604",
+        "0,64",
+        "6,004",
+        "0,064"
+      ],
+      "dogru": 0,
+      "aciklama": "6 onda birler, 4 binde birler basamağındadır; yüzde birler basamağı boş olduğundan 0 yazılır: 0,604. 0,64 yazmak 4’ü yüzde birler basamağına kaydırır."
     },
     {
-     "tur": "ipucu",
-     "metin": "Bir ölçümdeki basamak değerini açıklarken önce birimin kaça bölündüğünü hatırla: 100’e bölünen birimde yüzde birler, 1000’e bölünen birimde binde birler basamağı anlam kazanır."
+      "tur": "coktan",
+      "soru": "Aşağıdakilerden hangisi 0,75 sayısına eşit {koyu:değildir}?",
+      "secenekler": [
+        "{kesir:75|100}",
+        "{kesir:7|10} + {kesir:5|1000}",
+        "{kesir:7|10} + {kesir:5|100}",
+        "{kesir:750|1000}"
+      ],
+      "dogru": 1,
+      "aciklama": "0,75 = {kesir:7|10} + {kesir:5|100} = {kesir:75|100} = {kesir:750|1000}’dir. {kesir:7|10} + {kesir:5|1000} toplamı ise 0,705’tir; burada 5 binde birler basamağındadır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Verilen 3 ekmek 4 kişiye eşit paylaştırılıyor. Bir kişiye düşen pay aşağıdakilerden hangisiyle {koyu:gösterilemez}?",
+      "secenekler": [
+        "3 ÷ 4 işleminin sonucu",
+        "{kesir:3|4} ekmek",
+        "{kesir:4|3} ekmek",
+        "0,75 ekmek"
+      ],
+      "dogru": 2,
+      "aciklama": "Paylaşım 3 ÷ 4 işlemidir; bölünen pay, bölen payda olduğundan sonuç {kesir:3|4} ekmektir ve 25 ile genişletilince {kesir:75|100} = 0,75 bulunur. {kesir:4|3} ise 4 ekmeğin 3 kişiye paylaştırılmasıdır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "‘Eşit paylaşım: bölmenin sonucu bir kesirdir’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Bir çikolatayı 4 arkadaş eşit paylaşmak istiyor."
+      ],
+      "dogru": 3,
+      "aciklama": "Eşit paylaşım: bölmenin sonucu bir kesirdir bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Verilen 0,5 ile 0,50 aynı sayıyı gösterir.",
+          "dogru": true,
+          "aciklama": "{kesir:5|10} = {kesir:50|100} olduğundan ikisi de yarımdır; sondaki sıfır değeri değiştirmez."
+        },
+        {
+          "metin": "Verilen 2 + {kesir:3|100} toplamının ondalık gösterimi 2,3’tür.",
+          "dogru": false,
+          "aciklama": "Onda birler basamağı boş olduğundan 0 yazılır: 2,03. 2,3 sayısı 2 + {kesir:3|10} demektir."
+        },
+        {
+          "metin": "Verilen 1 ÷ 8 işleminin sonucu {kesir:1|8} kesriyle gösterilir.",
+          "dogru": true,
+          "aciklama": "Bölünen pay, bölen paydadır: 1 ÷ 8 = {kesir:1|8}; 125 ile genişletilince {kesir:125|1000} = 0,125 bulunur."
+        },
+        {
+          "metin": "Verilen 7 ÷ 100 işleminin sonucu 0,7’dir.",
+          "dogru": false,
+          "aciklama": "7 ÷ 100 = {kesir:7|100} = 0,07’dir; 0,7 sayısı {kesir:7|10}, yani 7 ÷ 10 işleminin sonucudur."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "3 ÷ 10",
+          "0,3"
+        ],
+        [
+          "3 ÷ 100",
+          "0,03"
+        ],
+        [
+          "3 ÷ 4",
+          "0,75"
+        ],
+        [
+          "3 ÷ 1000",
+          "0,003"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Kesir çizgisi bir ___ işareti gibi okunabilir; {kesir:3|5} = 3 ÷ 5.",
+          "cevap": "bölme"
+        },
+        {
+          "metin": "Ondalık kısmın sonuna sıfır eklemek sayının ___ değiştirmez.",
+          "cevap": "değerini"
+        },
+        {
+          "metin": "{kesir:1|4} kesrini 25 ile ___ {kesir:25|100} = 0,25 elde edilir.",
+          "cevap": "genişletince"
+        }
+      ],
+      "fazla": [
+        "sadeleştirince",
+        "varsayım"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Ela, 0,8 ile 0,75 sayılarını karşılaştırırken “75, 8’den büyük olduğu için 0,75 daha büyüktür.” diyor. Basamak değerlerini kullanarak Ela’nın yargısını değerlendir.",
+      "cevap": "Ela virgülden sonraki kısımları doğal sayı gibi karşılaştırıyor; oysa 8 onda birlik, 75 ise yüzde birlik sayar. 0,8 = {kesir:8|10} = {kesir:80|100} ve 0,75 = {kesir:75|100} olduğundan 80 yüzde birlik, 75 yüzde birlikten çoktur: 0,8 daha büyüktür. Basamak sayıları farklı ondalık gösterimleri karşılaştırmadan önce 0,80 ile 0,75 gibi aynı basamak sayısına tamamlamak bu hatayı önler.",
+      "ipuclari": [
+        "İki sayıyı da paydası 100 olan kesirle yaz.",
+        "Virgülden sonraki kısımları doğal sayı gibi karşılaştırmak neden yanıltır?"
+      ]
     }
-   ]
-  },
-  {
-   "baslik": "Eşit paylaşım: bölmenin sonucu bir kesirdir",
-   "metin": [
-    "Bir çikolatayı 4 arkadaş eşit paylaşmak istiyor. Bu bir bölme problemidir: 1 ÷ 4. Sonuç doğal sayı değildir; çikolata 4 eş parçaya bölünür ve herkes bir parça, yani çikolatanın {kesir:1|4}’ünü alır. Demek ki 1 ÷ 4 = {kesir:1|4}. Bölme işleminin sonucu doğal sayı olmadığında kesir olarak yazılır.",
-    "Şimdi 3 çikolatayı 4 kişiye paylaştır: 3 ÷ 4. Her çikolatayı 4 eş parçaya bölersen 12 parça olur ve herkese 3 parça düşer. Her parça bir çikolatanın {kesir:1|4}’ü olduğundan herkesin payı 3 tane {kesir:1|4}, yani {kesir:3|4} çikolatadır: 3 ÷ 4 = {kesir:3|4}. 2 litre suyu 5 bardağa eşit paylaştırırsan her bardağa 2 ÷ 5 = {kesir:2|5} litre düşer. Her seferinde bölünen pay, bölen payda olur.",
-    "Paylaşılan miktar kişi sayısından büyükse bölüm 1’den büyük çıkar. 7 ekmeği 3 kişi paylaşırsa önce herkes 2 tam ekmek alır, artan 1 ekmek 3 eş parçaya bölünür ve herkese {kesir:1|3} ekmek daha düşer: 7 ÷ 3 = {kesir:7|3} = 2 tam {kesir:1|3}. Burada 2 bölüm, 1 kalandır; kalanın bölene oranı olan {kesir:1|3} kesir kısmını verir.",
-    "Bu gözlemleri genelleyebilirsin: iki doğal sayının bölümü, bölünen pay ve bölen payda olmak üzere bir kesirle gösterilir; a ÷ b = {kesir:a|b}. Tersi de doğrudur: {kesir:3|5} kesrini 3 ÷ 5 işlemi olarak okuyabilirsin. Payda sıfır olamaz; çünkü sıfıra bölme tanımlı değildir. Kesir çizgisi ile bölme işareti aynı işi yapar."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Paylaşım",
-     "Bölme işlemi",
-     "Her birine düşen pay"
-    ],
-    "satirlar": [
-     [
-      "1 çikolata, 4 kişi",
-      "1 ÷ 4",
-      "{kesir:1|4} çikolata"
-     ],
-     [
-      "3 çikolata, 4 kişi",
-      "3 ÷ 4",
-      "{kesir:3|4} çikolata"
-     ],
-     [
-      "2 litre su, 5 bardak",
-      "2 ÷ 5",
-      "{kesir:2|5} litre"
-     ],
-     [
-      "7 ekmek, 3 kişi",
-      "7 ÷ 3",
-      "{kesir:7|3} = 2 tam {kesir:1|3} ekmek"
-     ]
-    ]
-   },
-   "kutular": [
-    {
-     "tur": "tanim",
-     "baslik": "Kesir ve bölme",
-     "metin": "İki doğal sayının bölümü bir kesirle gösterilir: a ÷ b = {kesir:a|b}. Bölünen pay, bölen paydadır; payda sıfır olamaz."
-    },
-    {
-     "tur": "ipucu",
-     "metin": "Paylaşım problemini şekille çöz: her bütünü kişi sayısı kadar eş parçaya böl ve herkese her bütünden bir parça ver. Parça sayısı payı, parçanın büyüklüğü paydayı verir."
-    }
-   ]
-  },
-  {
-   "baslik": "Paydası 10, 100 ve 1000 olan kesirlerde bölme",
-   "metin": [
-    "Kesir ile bölme arasındaki bağ, ondalık gösterimlerle birleşince güçlü bir araç olur. 3 metrelik bir kurdeleyi 10 eş parçaya kesersen her parça 3 ÷ 10 = {kesir:3|10} metredir. {kesir:3|10} kesrinin ondalık gösterimini zaten biliyorsun: 0,3. Öyleyse 3 ÷ 10 = 0,3 metre, yani 30 santimetredir. Bölme işlemi, paydası 10 olan bir kesir ve bir ondalık gösterim: üçü de aynı miktarı söyler.",
-    "Aynı yol 100 ve 1000 için de geçerlidir. 23 ÷ 100 = {kesir:23|100} = {kesir:2|10} + {kesir:3|100} = 0,23. 235 ÷ 100 işleminde pay paydadan büyüktür; {kesir:235|100} = {kesir:200|100} + {kesir:35|100} = 2 + {kesir:35|100} = 2,35. 1 kilogram şekeri 1000 eş pakete bölersen her pakete 1 ÷ 1000 = {kesir:1|1000} = 0,001 kilogram, yani 1 gram düşer. 45 ÷ 1000 işleminin sonucu {kesir:45|1000} = {kesir:4|100} + {kesir:5|1000} = 0,045’tir.",
-    "Bölenin 10, 100 ya da 1000 olduğu bölmelerde sonucu basamak değerlerinden okursun: virgülün sağında bölendeki sıfır sayısı kadar basamak bulunur. Dikkat etmen gereken nokta sıfırlardır: 45 ÷ 1000 işleminde virgülün sağında üç basamak olmalıdır; 45 iki rakamlı olduğu için başa bir sıfır gelir ve sonuç 0,045 olur, 0,45 değil. Sağlama için sonucu yeniden çözümle: 0,045 = {kesir:4|100} + {kesir:5|1000} = {kesir:40|1000} + {kesir:5|1000} = {kesir:45|1000}."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Bölme işlemi",
-     "Kesir",
-     "Ondalık gösterim"
-    ],
-    "satirlar": [
-     [
-      "3 ÷ 10",
-      "{kesir:3|10}",
-      "0,3"
-     ],
-     [
-      "23 ÷ 100",
-      "{kesir:23|100}",
-      "0,23"
-     ],
-     [
-      "235 ÷ 100",
-      "{kesir:235|100} = 2 tam {kesir:35|100}",
-      "2,35"
-     ],
-     [
-      "1 ÷ 1000",
-      "{kesir:1|1000}",
-      "0,001"
-     ],
-     [
-      "45 ÷ 1000",
-      "{kesir:45|1000}",
-      "0,045"
-     ]
-    ]
-   },
-   "kutular": [
-    {
-     "tur": "kural",
-     "baslik": "10, 100, 1000’e bölme",
-     "metin": "Bir doğal sayıyı 10, 100 ya da 1000’e bölmek, paydası 10, 100 ya da 1000 olan bir kesir verir; bu kesrin ondalık gösterimini basamak değerlerinden okursun: 7 ÷ 10 = {kesir:7|10} = 0,7 ve 7 ÷ 100 = {kesir:7|100} = 0,07."
-    },
-    {
-     "tur": "dikkat",
-     "metin": "Virgülün sağındaki basamak sayısı bölendeki sıfır sayısı kadardır. 45 ÷ 1000 = 0,045; eksik kalan basamağı başa sıfır koyarak tamamla."
-    }
-   ]
-  },
-  {
-   "baslik": "Paydayı 10, 100 ya da 1000 yapmak",
-   "metin": [
-    "Peki 3 ÷ 4 gibi bir bölmenin sonucunu ondalık gösterimle nasıl yazarsın? Sonuç {kesir:3|4} kesridir, ama paydası 10, 100 ya da 1000 değildir. Çözüm, önceki yıllardan tanıdığın genişletmedir: kesrin payını ve paydasını aynı sayıyla çarparsan kesrin değeri değişmez. 4 × 25 = 100 olduğundan {kesir:3|4} kesrini 25 ile genişletirsen {kesir:75|100} elde edersin; bu da 0,75’tir. Demek ki 3 ÷ 4 = {kesir:3|4} = 0,75. 3 lirayı 4 kişi paylaşırsa herkese 0,75 lira, yani 75 kuruş düşer.",
-    "Hangi sayıyla genişleteceğini payda söyler. Payda 2 ise 5 ile genişletip 10 yaparsın: {kesir:1|2} = {kesir:5|10} = 0,5. Payda 5 ise 2 ile: {kesir:1|5} = {kesir:2|10} = 0,2. Payda 4, 20, 25 ya da 50 ise 100’e ulaşırsın: {kesir:7|20} = {kesir:35|100} = 0,35 ve {kesir:9|25} = {kesir:36|100} = 0,36. Payda 8 ise 125 ile genişletip 1000’e çıkarsın: {kesir:3|8} = {kesir:375|1000} = 0,375 ve {kesir:1|8} = {kesir:125|1000} = 0,125.",
-    "Ondalık gösterime geçmek kesirleri karşılaştırmayı kolaylaştırır. {kesir:3|4} ile {kesir:7|10} kesirlerinden hangisi büyüktür? {kesir:3|4} = 0,75 ve {kesir:7|10} = 0,70 olduğundan {kesir:3|4} daha büyüktür. Payları ve paydaları farklı iki kesri ondalık gösterime çevirip karşılaştırmak, ortak payda bulmakla aynı işi görür; çünkü ondalık gösterim zaten paydası 10, 100 ya da 1000 olan bir kesirdir.",
-    "Her kesir bu yolla yazılamaz. {kesir:1|3} kesrinin paydasını 10, 100 ya da 1000 yapacak bir çarpan yoktur; çünkü bu sayıların hiçbiri 3’e tam bölünmez, rakamları toplamı 1’dir. {kesir:2|7} için de 7’nin katı olan bir 10, 100 ya da 1000 bulamazsın. Böyle kesirlerin ondalık gösterimini bulmak için gelecek hafta payı paydaya doğrudan bölmeyi öğrenecek ve bölmenin bitip bitmediğini gözleyeceksin."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Kesir",
-     "Genişletme çarpanı",
-     "Paydası 10, 100 ya da 1000 olan kesir",
-     "Ondalık gösterim"
-    ],
-    "satirlar": [
-     [
-      "{kesir:1|2}",
-      "5",
-      "{kesir:5|10}",
-      "0,5"
-     ],
-     [
-      "{kesir:3|4}",
-      "25",
-      "{kesir:75|100}",
-      "0,75"
-     ],
-     [
-      "{kesir:1|5}",
-      "2",
-      "{kesir:2|10}",
-      "0,2"
-     ],
-     [
-      "{kesir:7|20}",
-      "5",
-      "{kesir:35|100}",
-      "0,35"
-     ],
-     [
-      "{kesir:9|25}",
-      "4",
-      "{kesir:36|100}",
-      "0,36"
-     ],
-     [
-      "{kesir:3|8}",
-      "125",
-      "{kesir:375|1000}",
-      "0,375"
-     ],
-     [
-      "{kesir:13|50}",
-      "2",
-      "{kesir:26|100}",
-      "0,26"
-     ]
-    ]
-   },
-   "kutular": [
-    {
-     "tur": "ipucu",
-     "baslik": "Paydaya bak",
-     "metin": "Payda 2 ya da 5 ise 10’a, payda 4, 20, 25 ya da 50 ise 100’e, payda 8 ise 1000’e genişlet. Çarpanı bulmak için paydayı kaçla çarparsan 10, 100 ya da 1000 ettiğini sor."
-    },
-    {
-     "tur": "bilgi",
-     "metin": "Paydası 3, 6, 7, 9 gibi sayılar olan sadeleşmiş kesirlerde paydayı 10, 100 ya da 1000 yapamazsın. Bu kesirlerin ondalık gösterimini gelecek hafta payı paydaya bölerek inceleyeceksin."
-    }
-   ]
-  }
- ],
- "ornekler": [
-  {
-   "soru": "4 + {kesir:7|100} + {kesir:2|1000} toplamının ondalık gösterimini bul. Beste cevabı 4,72 olarak yazdı. Beste’nin hatasını açıkla.",
-   "cevap": "Terimleri basamaklarına yerleştir: birler 4, onda birler boş, yüzde birler 7, binde birler 2. Boş basamağa 0 yazılır: 4,072. Beste onda birler basamağını atlayınca 7 ve 2 birer basamak sola kaydı; 4,72 sayısı 4 + {kesir:7|10} + {kesir:2|100} demektir ve verilen toplamdan farklıdır. Sağlama: 4,072 = 4 + {kesir:0|10} + {kesir:7|100} + {kesir:2|1000}."
-  },
-  {
-   "soru": "0,375 sayısını üç farklı biçimde yaz: basamak değerlerinin toplamı olarak, paydası 1000 olan tek bir kesir olarak ve paydası 100 olan bir kesir ile binde birlik bir kesrin toplamı olarak.",
-   "cevap": "Basamak değerleriyle: 0,375 = {kesir:3|10} + {kesir:7|100} + {kesir:5|1000}. Tek kesirle: {kesir:3|10} = {kesir:300|1000} ve {kesir:7|100} = {kesir:70|1000} olduğundan toplam {kesir:375|1000}’dir. Üçüncü biçim: {kesir:3|10} + {kesir:7|100} = {kesir:30|100} + {kesir:7|100} = {kesir:37|100}; böylece 0,375 = {kesir:37|100} + {kesir:5|1000}. Üç yazım da aynı sayıyı anlatır."
-  },
-  {
-   "soru": "Bir market etiketinde bir peynir paketi için “kütle 0,480 kg, fiyat 36,25 TL” yazıyor. Kütleyi gram, fiyatı lira ve kuruş olarak basamak değerleriyle açıkla.",
-   "cevap": "0,480 kg = {kesir:4|10} + {kesir:8|100} + {kesir:0|1000} kilogramdır. 1 kg 1000 g olduğundan {kesir:4|10} kg = 400 g, {kesir:8|100} kg = 80 g ve {kesir:0|1000} kg = 0 g eder; paket 480 gramdır. 36,25 TL = 36 + {kesir:2|10} + {kesir:5|100} liradır; {kesir:1|10} lira 10 kuruş, {kesir:1|100} lira 1 kuruş olduğundan ondalık kısım 20 + 5 = 25 kuruştur. Fiyat 36 lira 25 kuruştur."
-  },
-  {
-   "soru": "5 litre meyve suyu 8 eş sürahiye eşit olarak paylaştırılacak. Her sürahiye düşen miktarı önce bölme işlemi ve kesir olarak, sonra ondalık gösterimle yaz; sonucu mililitre cinsinden söyle.",
-   "cevap": "Paylaşım 5 ÷ 8 işlemidir ve sonucu {kesir:5|8} litredir. Paydayı 1000 yapmak için kesri 125 ile genişlet: 5 × 125 = 625 ve 8 × 125 = 1000 olduğundan {kesir:5|8} = {kesir:625|1000} = 0,625. Her sürahiye 0,625 litre düşer; 1 litre 1000 mililitre olduğundan bu 625 mililitredir. Sağlama: 8 × 625 = 5000 mililitre, yani 5 litre."
-  },
-  {
-   "soru": "Cem, 45 ÷ 1000 işleminin sonucunu 0,45 buldu. Cem’in hatasını basamak değerleriyle açıkla ve doğru sonucu yaz.",
-   "cevap": "45 ÷ 1000 = {kesir:45|1000}’dir; paydası 1000 olduğundan virgülün sağında üç basamak bulunmalıdır. {kesir:45|1000} = {kesir:4|100} + {kesir:5|1000} olduğundan 4 yüzde birler, 5 binde birler basamağına yazılır ve onda birler basamağına 0 gelir: 0,045. Cem’in yazdığı 0,45 sayısı {kesir:45|100}, yani 45 ÷ 100 işleminin sonucudur ve doğru sonucun 10 katıdır."
-  },
-  {
-   "soru": "Deniz “{kesir:7|20} kesrinin paydasını 10 yapamıyorum, demek ki bu kesrin ondalık gösterimi yok.” diyor. Deniz’i değerlendir; sonra {kesir:7|20}, {kesir:9|25}, {kesir:3|8} ve {kesir:2|3} kesirlerinden hangilerinin paydasının genişletmeyle 10, 100 ya da 1000 yapılabileceğini belirle ve yapılabilenlerin ondalık gösterimlerini yaz.",
-   "cevap": "Deniz’in yargısı yanlıştır; payda 10 yapılamıyorsa 100 ya da 1000 denenir. 20 × 5 = 100 olduğundan {kesir:7|20} = {kesir:35|100} = 0,35. 25 × 4 = 100 olduğundan {kesir:9|25} = {kesir:36|100} = 0,36. 8 × 125 = 1000 olduğundan {kesir:3|8} = {kesir:375|1000} = 0,375. {kesir:2|3} için ise 10, 100 ve 1000 sayılarından hiçbiri 3’e tam bölünmediğinden böyle bir çarpan yoktur; bu kesrin ondalık gösterimi genişletmeyle yazılamaz. Onu gelecek hafta payı paydaya bölerek inceleyeceksin."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "{kesir:6|10} + {kesir:4|1000} toplamının ondalık gösterimi aşağıdakilerden hangisidir?",
-   "secenekler": [
-    "0,64",
-    "0,604",
-    "6,004",
-    "0,064"
-   ],
-   "dogru": 1,
-   "aciklama": "6 onda birler, 4 binde birler basamağındadır; yüzde birler basamağı boş olduğundan 0 yazılır: 0,604. 0,64 yazmak 4’ü yüzde birler basamağına kaydırır."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Aşağıdakilerden hangisi 0,75 sayısına eşit {koyu:değildir}?",
-   "secenekler": [
-    "{kesir:75|100}",
-    "{kesir:750|1000}",
-    "{kesir:7|10} + {kesir:5|100}",
-    "{kesir:7|10} + {kesir:5|1000}"
-   ],
-   "dogru": 3,
-   "aciklama": "0,75 = {kesir:7|10} + {kesir:5|100} = {kesir:75|100} = {kesir:750|1000}’dir. {kesir:7|10} + {kesir:5|1000} toplamı ise 0,705’tir; burada 5 binde birler basamağındadır."
-  },
-  {
-   "tur": "coktan",
-   "soru": "3 ekmek 4 kişiye eşit paylaştırılıyor. Bir kişiye düşen pay aşağıdakilerden hangisiyle {koyu:gösterilemez}?",
-   "secenekler": [
-    "3 ÷ 4 işleminin sonucu",
-    "{kesir:3|4} ekmek",
-    "{kesir:4|3} ekmek",
-    "0,75 ekmek"
-   ],
-   "dogru": 2,
-   "aciklama": "Paylaşım 3 ÷ 4 işlemidir; bölünen pay, bölen payda olduğundan sonuç {kesir:3|4} ekmektir ve 25 ile genişletilince {kesir:75|100} = 0,75 bulunur. {kesir:4|3} ise 4 ekmeğin 3 kişiye paylaştırılmasıdır."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadeler doğru mu, yanlış mı?",
-   "ifadeler": [
-    {
-     "metin": "0,5 ile 0,50 aynı sayıyı gösterir.",
-     "dogru": true,
-     "aciklama": "{kesir:5|10} = {kesir:50|100} olduğundan ikisi de yarımdır; sondaki sıfır değeri değiştirmez."
-    },
-    {
-     "metin": "2 + {kesir:3|100} toplamının ondalık gösterimi 2,3’tür.",
-     "dogru": false,
-     "aciklama": "Onda birler basamağı boş olduğundan 0 yazılır: 2,03. 2,3 sayısı 2 + {kesir:3|10} demektir."
-    },
-    {
-     "metin": "1 ÷ 8 işleminin sonucu {kesir:1|8} kesriyle gösterilir.",
-     "dogru": true,
-     "aciklama": "Bölünen pay, bölen paydadır: 1 ÷ 8 = {kesir:1|8}; 125 ile genişletilince {kesir:125|1000} = 0,125 bulunur."
-    },
-    {
-     "metin": "7 ÷ 100 işleminin sonucu 0,7’dir.",
-     "dogru": false,
-     "aciklama": "7 ÷ 100 = {kesir:7|100} = 0,07’dir; 0,7 sayısı {kesir:7|10}, yani 7 ÷ 10 işleminin sonucudur."
-    }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "yonerge": "Bölme işlemlerini sonuçlarının ondalık gösterimleriyle eşleştir.",
-   "ciftler": [
-    [
-     "3 ÷ 10",
-     "0,3"
-    ],
-    [
-     "3 ÷ 100",
-     "0,03"
-    ],
-    [
-     "3 ÷ 4",
-     "0,75"
-    ],
-    [
-     "3 ÷ 1000",
-     "0,003"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
-   "cumleler": [
-    {
-     "metin": "Kesir çizgisi bir ___ işareti gibi okunabilir; {kesir:3|5} = 3 ÷ 5.",
-     "cevap": "bölme"
-    },
-    {
-     "metin": "Ondalık kısmın sonuna sıfır eklemek sayının ___ değiştirmez.",
-     "cevap": "değerini"
-    },
-    {
-     "metin": "{kesir:1|4} kesrini 25 ile ___ {kesir:25|100} = 0,25 elde edilir.",
-     "cevap": "genişletince"
-    }
-   ],
-   "fazla": [
-    "sadeleştirince"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Ela, 0,8 ile 0,75 sayılarını karşılaştırırken “75, 8’den büyük olduğu için 0,75 daha büyüktür.” diyor. Basamak değerlerini kullanarak Ela’nın yargısını değerlendir.",
-   "ipuclari": [
-    "İki sayıyı da paydası 100 olan kesirle yaz.",
-    "Virgülden sonraki kısımları doğal sayı gibi karşılaştırmak neden yanıltır?"
-   ],
-   "cevap": "Ela virgülden sonraki kısımları doğal sayı gibi karşılaştırıyor; oysa 8 onda birlik, 75 ise yüzde birlik sayar. 0,8 = {kesir:8|10} = {kesir:80|100} ve 0,75 = {kesir:75|100} olduğundan 80 yüzde birlik, 75 yüzde birlikten çoktur: 0,8 daha büyüktür. Basamak sayıları farklı ondalık gösterimleri karşılaştırmadan önce 0,80 ile 0,75 gibi aynı basamak sayısına tamamlamak bu hatayı önler."
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Dört arkadaş 3 lirayı eşit paylaşıyor. Her birine düşen parayı bölme işlemi, kesir, ondalık gösterim ve kuruş olarak bul. Aynı yöntemle 5 arkadaşın 2 lirayı paylaşmasını da çöz.",
-   "ipuclari": [
-    "Paylaşımı bölme işlemi olarak yaz, sonucu kesirle göster.",
-    "Kesrin paydasını 100 yapınca kuruşu doğrudan okursun."
-   ],
-   "cevap": "3 lirayı 4 kişi paylaşırsa her birine 3 ÷ 4 = {kesir:3|4} lira düşer. 25 ile genişletince {kesir:3|4} = {kesir:75|100} = 0,75 lira olur; {kesir:1|100} lira 1 kuruş olduğundan bu 75 kuruştur. Sağlama: 4 × 75 = 300 kuruş, yani 3 lira. 2 lirayı 5 kişi paylaşırsa her birine 2 ÷ 5 = {kesir:2|5} lira düşer; 20 ile genişletince {kesir:40|100} = 0,40 lira, yani 40 kuruş. Sağlama: 5 × 40 = 200 kuruş, yani 2 lira."
-  }
- ],
- "ozet": [
-  "Çözümlenmiş toplamdan sayıya dönerken her terimi basamağına yerleştir ve boş kalan basamağa 0 yaz: 3 + {kesir:4|10} + {kesir:7|1000} = 3,407.",
-  "Bir sayı farklı yollarla çözümlenebilir: 0,75 = {kesir:7|10} + {kesir:5|100} = {kesir:75|100} = {kesir:750|1000}. Sondaki sıfır değeri değiştirmez (0,5 = 0,50), virgülün hemen sağındaki sıfır değiştirir (0,05).",
-  "Para ve ölçü birimleri basamak değerlerini somutlaştırır: 24,35 TL 24 lira 35 kuruş, 1,62 m 1 metre 62 santimetre, 0,750 kg 750 gramdır.",
-  "İki doğal sayının bölümü bir kesirdir: a ÷ b = {kesir:a|b}. 3 çikolatayı 4 kişiye paylaştırmak 3 ÷ 4 = {kesir:3|4} demektir; payda sıfır olamaz.",
-  "Bölen 10, 100 ya da 1000 ise sonucu basamak değerlerinden okursun: 45 ÷ 1000 = {kesir:45|1000} = 0,045. Başka paydalarda kesri genişleterek paydayı 10, 100 ya da 1000 yapar, sonra ondalık gösterimi yazarsın: {kesir:3|8} = {kesir:375|1000} = 0,375.",
-  "Paydası 3, 7 gibi sayılar olan sadeleşmiş kesirlerde payda 10, 100 ya da 1000 yapılamaz; bunların ondalık gösterimi gelecek hafta bölme işlemiyle incelenir."
- ]
+  ],
+  "ozet": [
+    "Çözümlenmiş toplamdan sayıya dönerken her terimi basamağına yerleştir ve boş kalan basamağa 0 yaz: 3 + {kesir:4|10} + {kesir:7|1000} = 3,407.",
+    "Bir sayı farklı yollarla çözümlenebilir: 0,75 = {kesir:7|10} + {kesir:5|100} = {kesir:75|100} = {kesir:750|1000}. Sondaki sıfır değeri değiştirmez (0,5 = 0,50), virgülün hemen sağındaki sıfır değiştirir (0,05).",
+    "Para ve ölçü birimleri basamak değerlerini somutlaştırır: 24,35 TL 24 lira 35 kuruş, 1,62 m 1 metre 62 santimetre, 0,750 kg 750 gramdır.",
+    "İki doğal sayının bölümü bir kesirdir: a ÷ b = {kesir:a|b}. 3 çikolatayı 4 kişiye paylaştırmak 3 ÷ 4 = {kesir:3|4} demektir; payda sıfır olamaz.",
+    "Bölen 10, 100 ya da 1000 ise sonucu basamak değerlerinden okursun: 45 ÷ 1000 = {kesir:45|1000} = 0,045. Başka paydalarda kesri genişleterek paydayı 10, 100 ya da 1000 yapar, sonra ondalık gösterimi yazarsın: {kesir:3|8} = {kesir:375|1000} = 0,375.",
+    "Paydası 3, 7 gibi sayılar olan sadeleşmiş kesirlerde payda 10, 100 ya da 1000 yapılamaz; bunların ondalık gösterimi gelecek hafta bölme işlemiyle incelenir."
+  ]
 }

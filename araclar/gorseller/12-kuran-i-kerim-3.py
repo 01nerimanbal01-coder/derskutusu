@@ -13,7 +13,7 @@ def gorsel_1():
     cols = [
         (25, "1. Ashâb-ı Kehf", "İnanç İmtihanı", "Tevhidi korumak için", "mağaraya sığınan gençler"),
         (192, "2. Bahçe Sahibi", "Mal ve Servet İmtihanı", "Şükürsüzlük ve kibre", "karşı ahiret bilinci"),
-        (359, "3. Hz. Musa & Hızır", "İlim İmtihanı", "Bilginin sınırları ve", "ilahi hikmete teslimiyet"),
+        (359, "3. Hz. Musa &amp; Hızır", "İlim İmtihanı", "Bilginin sınırları ve", "ilahi hikmete teslimiyet"),
         (526, "4. Hz. Zülkarneyn", "İktidar ve Güç İmtihanı", "Gücü adalet ve mazlumları", "korumak için kullanma")
     ]
     for x, b, s1, s2, s3 in cols:

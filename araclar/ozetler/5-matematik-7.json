@@ -1,228 +1,234 @@
 {
- "ad": "5-matematik-7",
- "sinif": 5,
- "ders": "matematik",
- "ders_adi": "Matematik",
- "hafta": 7,
- "tarih": "26-30 Ekim 2026",
- "yayin_tarihi": "2026-10-28",
- "unite": "Geometrik Şekiller",
- "konu": "Üçgenlerin Kenar ve Açı Özellikleri ile Pergel ve Cetvel Kullanarak Üçgen İnşası",
- "ciktilar": [
-  "Çemberin yarıçap özelliğinden yararlanarak pergel ve çizgili/ölçüsüz cetvel yardımıyla eşkenar, ikizkenar ve çeşitkenar üçgenler inşa eder.",
-  "Üçgenleri hem kenar uzunluklarına hem de açı ölçülerine göre bir arada sınıflandırır (örneğin ikizkenar dik üçgen, çeşitkenar geniş açılı üçgen).",
-  "Üçgenin iç açılarının ölçüleri toplamının 180° olduğu bilgisini kullanarak verilmeyen açı ölçülerini hesaplar."
- ],
- "giris": "Geçtiğimiz hafta çokgenlerin temel elemanlarını ve üçgen çeşitlerini tanımıştık. Peki, elimizde açıölçer olmadan yalnızca bir {koyu:pergel} ve bir {koyu:cetvel} kullanarak üç kenarı da birbirine tam eşit olan bir {koyu:eşkenar üçgeni} veya {koyu:ikizkenar üçgeni} hatasız olarak nasıl inşa edebiliriz? İşte burada imdadımıza {koyu:çemberin yarıçaplarının eşitliği} yetişiyor! Bu haftaki dersimizde pergel ve cetvelle üçgen inşa etmenin adımlarını öğrenecek ve üçgenlerin kenar-açı ilişkilerini derinlemesine çözeceğiz.",
- "ozet": [
-  "{koyu:Çemberin Yarıçap İlkesi:} Bir çemberin merkezinden çember yayı üzerindeki bütün noktalara çizilen {koyu:yarıçap doğru parçalarının uzunlukları birbirine eşittir} ({koyu:r}).",
-  "{koyu:Pergel ve Cetvelle Eşkenar Üçgen İnşası:} Önce {parca:AB} doğru parçası çizilir; pergel {uzunluk:AB} kadar açılıp A ve B merkezli iki çember yayı çizilir; yayların kesişim noktası C ile birleştirildiğinde {koyu:{uzunluk:AB} = {uzunluk:AC} = {uzunluk:BC}} olan {koyu:eşkenar üçgen} elde edilir.",
-  "{koyu:Pergel ve Cetvelle İkizkenar Üçgen İnşası:} {parca:AB} tabanı çizildikten sonra pergel {uzunluk:AB}’den farklı bir uzunlukta açılır ve açıklığı hiç değiştirilmeden A ve B merkezli iki yay çizilerek kesişim noktası (C) birleştirilir ({koyu:{uzunluk:AC} = {uzunluk:BC}}).",
-  "{koyu:Üçgenin İç Açıları Toplamı:} Hangi türde olursa olsun {koyu:bütün üçgenlerin iç açılarının ölçüleri toplamı 180°}’dir.",
-  "{koyu:Kenar ve Açı Birleşimi:} {koyu:İkizkenar} ve {koyu:çeşitkenar} üçgenler hem dar açılı hem dik açılı hem de geniş açılı olabilir; ancak {koyu:eşkenar üçgen} her iç açısı {koyu:60°} olduğu için {koyu:yalnızca dar açılı} olabilir!"
- ],
- "bolumler": [
-  {
-   "baslik": "1. Pergel ve Cetvel Yardımıyla Üçgenlerin İnşası",
-   "metin": [
-    "Yalnızca cetvel kullanarak üçüncü köşenin yerini göz kararı bulmaya çalıştığımızda kenar uzunlukları tam eşit olmayabilir. Bu yüzden geometrik inşalarda {koyu:pergel} kullanılır:\n1. {koyu:Eşkenar Üçgen İnşası (Bütün Kenarlar Eşit):}\n• {koyu:1. Adım:} Cetvelle örneğin 5 cm uzunluğunda bir {parca:AB} doğru parçası çizilir.\n• {koyu:2. Adım:} Pergelin sivri ucu A noktasına, kalem ucu B noktasına konularak pergel {uzunluk:AB} = 5 cm kadar açılır ve bir çember yayı çizilir.\n• {koyu:3. Adım:} Pergelin açıklığı {koyu:hiç bozulmadan} sivri ucu B noktasına konulur ve ilk yayı kesen ikinci bir çember yayı çizilir.\n• {koyu:4. Adım:} İki yayın kesiştiği {koyu:C noktası}, hem A merkezli hem de B merkezli çemberin üzerinde olduğu için {koyu:{uzunluk:AC} = {uzunluk:AB} = {uzunluk:BC} = 5 cm} olur! C noktası A ve B köşeleriyle birleştirildiğinde kusursuz bir {koyu:ABC eşkenar üçgeni} inşa edilmiş olur.",
-    "2. {koyu:İkizkenar ve Çeşitkenar Üçgen İnşası:}\n• {koyu:İkizkenar Üçgen İçin:} {parca:AB} tabanı (ör. 4 cm) çizildikten sonra pergel eşit olması istenen yan kenar uzunluğu kadar (ör. 6 cm) açılır. A ve B noktalarından aynı açıklıkla (6 cm) iki yay çizilip kesişim noktası C ile birleştirilir ({uzunluk:AC} = {uzunluk:BC} = 6 cm).\n• {koyu:Çeşitkenar Üçgen İçin:} {parca:AB} tabanı (ör. 6 cm) çizilir; A merkezli yay için pergel 5 cm açılır, B merkezli yay için pergel 4 cm açılır. Kesişim noktası C ile birleştirildiğinde kenarları {koyu:6 cm, 5 cm ve 4 cm} olan bir {koyu:çeşitkenar üçgen} oluşur."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "İki Çemberin Merkezleri ve Kesişim Noktası",
-    "metin": "Sorularda {koyu:eş yarıçaplı iki çember birbirinin merkezinden geçecek şekilde} çizilmişse, çemberlerin merkezleri (A ve B) ile kesişim noktası (C) birleştirildiğinde oluşan ABC üçgeni her zaman {koyu:eşkenar üçgendir}! Çünkü üç kenar da çemberlerin yarıçapına (r) eşittir."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 424\" role=\"img\" aria-label=\"Konu özet şeması\"><text x=\"400\" y=\"32\" font-family=\"sans-serif\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">PERGEL VE CETVEL İLE EŞKENAR, İKİZKENAR VE ÇEŞİTKENAR ÜÇGEN İNŞASI</text><rect x=\"20\" y=\"56\" width=\"365\" height=\"290\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"80\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. PERGEL VE CETVELLE ÜÇGEN İNŞASI</text><text x=\"202\" y=\"100\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">(Çemberin Yarıçaplarının Eşitliği İlkesinden Yararlanma)</text><rect x=\"35\" y=\"114\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"130\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. Adım: Taban Doğru Parçasını Çizme</text><text x=\"202\" y=\"146\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Cetvel ile belirlenen uzunlukta [AB] doğru parçası çizilir.</text><rect x=\"35\" y=\"164\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"180\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">2. Adım: A Merkezli Çember Yayı Çizme</text><text x=\"202\" y=\"196\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Pergel ikinci kenar uzunluğu kadar açılıp A merkezli yay çizilir.</text><rect x=\"35\" y=\"214\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"230\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">3. Adım: B Merkezli Çember Yayı Çizme</text><text x=\"202\" y=\"246\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Pergel üçüncü kenar uzunluğu kadar açılıp B merkezli yay çizilir.</text><rect x=\"35\" y=\"264\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"280\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">4. Adım: Kesişim Noktasını (C) Birleştirme</text><text x=\"202\" y=\"296\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">İki yayın kesiştiği C noktası A ve B ile birleştirilip ABC üçgeni oluşur!</text><rect x=\"35\" y=\"312\" width=\"335\" height=\"26\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"202\" y=\"329\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Eşkenar Üçgende pergel açıklığı hiç değiştirilmez (|AB|=|AC|=|BC|)!</text><rect x=\"400\" y=\"56\" width=\"380\" height=\"290\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"80\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">2. ÜÇGENLERDE KENAR - AÇI İLİŞKİSİ TABLOSU</text><rect x=\"415\" y=\"100\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"116\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">Eşkenar Üçgen</text><text x=\"590\" y=\"132\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">3 kenarı eşit • 3 açısı da 60° (Sadece DAR AÇILI olur!)</text><rect x=\"415\" y=\"150\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"166\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">İkizkenar Üçgen</text><text x=\"590\" y=\"182\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">2 kenarı ve taban açıları eşit (Dar, Dik veya Geniş açılı olabilir)</text><rect x=\"415\" y=\"200\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"216\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">Çeşitkenar Üçgen</text><text x=\"590\" y=\"232\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">3 kenarı ve 3 açısı farklı (Dar, Dik veya Geniş açılı olabilir)</text><rect x=\"415\" y=\"250\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"266\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">İkizkenar Dik Üçgen</text><text x=\"590\" y=\"282\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Açıları: 90° - 45° - 45° (Dik kenar uzunlukları birbirine eşit)</text><rect x=\"415\" y=\"300\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"316\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">Üçgenin İç Açıları Toplamı</text><text x=\"590\" y=\"332\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Her üçgenin iç açılarının ölçüleri toplamı 180°’dir!</text><rect x=\"20\" y=\"360\" width=\"760\" height=\"48\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"400\" y=\"380\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">ALTIN KURAL: &quot;Dik açılı eşkenar üçgen&quot; veya &quot;Geniş açılı eşkenar üçgen&quot; ÇİZİLEMEZ; çünkü eşkenar üçgenin her açısı 60°’dir!</text><text x=\"400\" y=\"398\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Çember merkezinden yay üzerindeki tüm noktalara çizilen yarıçaplar (r) birbirine eşittir.</text></svg>"
-  },
-  {
-   "baslik": "2. Üçgenlerde Kenar ve Açı Özelliklerinin Birlikte Yorumlanması",
-   "metin": [
-    "Bir üçgenin iç açılarının ölçüleri toplamı daima {koyu:180°}’dir ({olcu:A} + {olcu:B} + {olcu:C} = 180°). Üçgenlerin kenar özellikleriyle açı özelliklerini birleştirdiğimizde şu önemli sonuçlara ulaşırız:\n1. {koyu:Eşkenar Üçgen:} Üç kenar uzunluğu da birbirine eşittir. Üç iç açısının ölçüsü de birbirine eşit olduğundan {koyu:180° ÷ 3 = 60°}’dir. Bütün açıları 60° (dar açı) olduğu için eşkenar üçgen {koyu:her zaman dar açılı üçgendir}. {koyu:“Dik açılı eşkenar üçgen”} veya {koyu:“geniş açılı eşkenar üçgen”} kesinlikle {koyu:çizilemez}!",
-    "2. {koyu:İkizkenar Üçgen:} İki kenar uzunluğu birbirine eşittir ve {koyu:eşit kenarların karşısındaki taban açılarının ölçüleri de birbirine eşittir}.\n• Tepe açısı 90°’den küçükse (ör. 40° - 70° - 70°) {koyu:dar açılı ikizkenar üçgen},\n• Tepe açısı 90° ise {koyu:taban açıları (180° - 90°) ÷ 2 = 45°} olur ve buna {koyu:ikizkenar dik üçgen (90° - 45° - 45°)} denir,\n• Tepe açısı 90°’den büyükse (ör. 120° - 30° - 30°) {koyu:geniş açılı ikizkenar üçgen} olur.\n3. {koyu:Çeşitkenar Üçgen:} Üç kenar uzunluğu ve üç iç açısının ölçüsü de birbirinden farklıdır. Dar açılı (50° - 60° - 70°), dik açılı (90° - 60° - 30°) veya geniş açılı (110° - 40° - 30°) olabilir."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "İkizkenar Üçgende Taban Açıları Dik veya Geniş Açı Olabilir mi?",
-    "metin": "Bir üçgende en fazla {koyu:1 tane dik açı} veya {koyu:1 tane geniş açı} bulunabilir! Bu nedenle ikizkenar bir üçgenin {koyu:birbirine eşit olan iki taban açısı her zaman dar açı (< 90°) olmak zorundadır}; dik veya geniş olabilecek açı yalnızca {koyu:tepe açısıdır}!"
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Bir ABC ikizkenar üçgeninde |AB| = |AC|’dir. Tepe açısı olan A açısının ölçüsü 50° olduğuna göre B ve C taban açılarının ölçüleri kaçar derecedir?",
-   "cevap": "|AB| = |AC| olduğuna göre bu eşit kenarların karşısındaki {aci:B} ve {aci:C} taban açılarının ölçüleri birbirine eşittir. Üçgenin iç açıları toplamı 180° olduğundan:\n180° - 50° = 130° (iki taban açısının toplamı).\n130° ÷ 2 = {koyu:65°} ({olcu:B} = {olcu:C} = 65°) bulunur."
-  },
-  {
-   "soru": "Pergelini 7 cm açan Zeynep, önce A noktasını merkez alarak bir yay çiziyor, ardından pergel açıklığını değiştirmeden A noktasına 5 cm uzaklıktaki B noktasını merkez alarak ilk yayı C noktasında kesen ikinci bir yay çiziyor. Köşeleri birleştirildiğinde oluşan ABC üçgeninin çevresi kaç cm ve çeşidi nedir?",
-   "cevap": "Taban uzunluğu {uzunluk:AB} = 5 cm’dir. A ve B merkezli yaylar 7 cm yarıçapla çizildiği için {uzunluk:AC} = 7 cm ve {uzunluk:BC} = 7 cm olur. İki kenarı eşit (7 cm, 7 cm, 5 cm) olduğu için üçgen {koyu:ikizkenar üçgendir}. Çevresi ise 7 + 7 + 5 = {koyu:19 cm} bulunur."
-  },
-  {
-   "soru": "Bir ikizkenar dik üçgenin dar açılarından birinin ölçüsü kaç derecedir?",
-   "cevap": "İkizkenar dik üçgenin tepe açısı {koyu:90°}’dir. Geriye kalan iki dar açı birbirine eşit olduğu için: (180° - 90°) ÷ 2 = 90° ÷ 2 = {koyu:45°} bulunur."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "Aşağıdaki üçgen çeşitlerinden hangisinin çizilmesi geometrik olarak imkânsızdır?",
-   "secenekler": [
-    "Dar açılı eşkenar üçgen",
-    "Dik açılı ikizkenar üçgen",
-    "Geniş açılı ikizkenar üçgen",
-    "Geniş açılı eşkenar üçgen",
-    "Dik açılı çeşitkenar üçgen"
-   ],
-   "dogru": 3,
-   "aciklama": "Eşkenar üçgenin her bir iç açısı 60° (dar açı) olmak zorundadır; bu nedenle geniş açılı veya dik açılı eşkenar üçgen çizilemez."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Bir KLM üçgeninin iki iç açısının ölçüleri 65° ve 50°’dir. Buna göre KLM üçgeninin kenarlarına ve açılarına göre çeşidi aşağıdakilerden hangisidir?",
-   "secenekler": [
-    "Dar açılı ikizkenar üçgen",
-    "Dar açılı çeşitkenar üçgen",
-    "Geniş açılı ikizkenar üçgen",
-    "Dik açılı çeşitkenar üçgen",
-    "Dar açılı eşkenar üçgen"
-   ],
-   "dogru": 0,
-   "aciklama": "Üçüncü açıyı bulalım: 180° - (65° + 50°) = 180° - 115° = 65°. Açıları 65°, 65° ve 50° olduğu için iki açısı eşittir (ikizkenar) ve tüm açıları 90°’den küçüktür (dar açılı)."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Uzunluğu 6 cm olan [AB] doğru parçasının uç noktalarına pergelin sivri ucunu sırasıyla koyup, pergel açıklığını 6 cm olarak ayarlayarak çizdiğimiz iki yayın kesişim noktasını (C) A ve B ile birleştirirsek hangi üçgeni elde ederiz?",
-   "secenekler": [
-    "Çeşitkenar üçgen",
-    "İkizkenar dik üçgen",
-    "Eşkenar üçgen",
-    "Geniş açılı üçgen",
-    "Dik açılı üçgen"
-   ],
-   "dogru": 2,
-   "aciklama": "|AB| = 6 cm ve pergel açıklığı (yarıçap) da 6 cm olduğu için |AC| = 6 cm ve |BC| = 6 cm olur; üç kenarı da 6 cm olan eşkenar üçgen oluşur."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Tepe açısının ölçüsü 110° olan bir ikizkenar üçgenin birbirine eşit olan taban açılarından her birinin ölçüsü kaç derecedir?",
-   "secenekler": [
-    "30°",
-    "35°",
-    "40°",
-    "45°",
-    "70°"
-   ],
-   "dogru": 1,
-   "aciklama": "Üçgenin iç açıları toplamı 180°’dir. 180° - 110° = 70°; iki taban açısı eşit olduğundan 70° ÷ 2 = 35° bulunur."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Merkezleri A ve B noktaları olan iki farklı çember C noktasında kesişmektedir. A merkezli çemberin yarıçapı 8 cm, B merkezli çemberin yarıçapı 5 cm ve |AB| = 9 cm olduğuna göre ABC üçgeninin kenarlarına göre çeşidi nedir?",
-   "secenekler": [
-    "Eşkenar üçgen",
-    "İkizkenar üçgen",
-    "Çeşitkenar üçgen",
-    "Düzgün çokgen",
-    "Dörtgen"
-   ],
-   "dogru": 2,
-   "aciklama": "C noktası her iki çemberin üzerinde olduğundan |AC| = 8 cm, |BC| = 5 cm ve |AB| = 9 cm’dir. Kenar uzunlukları 8 cm, 5 cm ve 9 cm olup üçü de farklı olduğu için çeşitkenar üçgendir."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "5-matematik-7",
+  "sinif": 5,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 7,
+  "tarih": "26-30 Ekim 2026",
+  "yayin_tarihi": "2026-10-28",
+  "unite": "Geometrik Şekiller",
+  "konu": "Üçgenlerin Kenar ve Açı Özellikleri ile Pergel ve Cetvel Kullanarak Üçgen İnşası",
+  "ciktilar": [
+    "Çemberin yarıçap özelliğinden yararlanarak pergel ve çizgili/ölçüsüz cetvel yardımıyla eşkenar, ikizkenar ve çeşitkenar üçgenler inşa eder.",
+    "Üçgenleri hem kenar uzunluklarına hem de açı ölçülerine göre bir arada sınıflandırır (örneğin ikizkenar dik üçgen, çeşitkenar geniş açılı üçgen).",
+    "Üçgenin iç açılarının ölçüleri toplamının 180° olduğu bilgisini kullanarak verilmeyen açı ölçülerini hesaplar."
+  ],
+  "giris": "Geçtiğimiz hafta çokgenlerin temel elemanlarını ve üçgen çeşitlerini tanımıştık. Peki, elimizde açıölçer olmadan yalnızca bir {koyu:pergel} ve bir {koyu:cetvel} kullanarak üç kenarı da birbirine tam eşit olan bir {koyu:eşkenar üçgeni} veya {koyu:ikizkenar üçgeni} hatasız olarak nasıl inşa edebiliriz? İşte burada imdadımıza {koyu:çemberin yarıçaplarının eşitliği} yetişiyor! Bu haftaki dersimizde pergel ve cetvelle üçgen inşa etmenin adımlarını öğrenecek ve üçgenlerin kenar-açı ilişkilerini derinlemesine çözeceğiz.",
+  "ozet": [
+    "{koyu:Çemberin Yarıçap İlkesi:} Bir çemberin merkezinden çember yayı üzerindeki bütün noktalara çizilen {koyu:yarıçap doğru parçalarının uzunlukları birbirine eşittir} ({koyu:r}).",
+    "{koyu:Pergel ve Cetvelle Eşkenar Üçgen İnşası:} Önce {parca:AB} doğru parçası çizilir; pergel {uzunluk:AB} kadar açılıp A ve B merkezli iki çember yayı çizilir; yayların kesişim noktası C ile birleştirildiğinde {koyu:{uzunluk:AB} = {uzunluk:AC} = {uzunluk:BC}} olan {koyu:eşkenar üçgen} elde edilir.",
+    "{koyu:Pergel ve Cetvelle İkizkenar Üçgen İnşası:} {parca:AB} tabanı çizildikten sonra pergel {uzunluk:AB}’den farklı bir uzunlukta açılır ve açıklığı hiç değiştirilmeden A ve B merkezli iki yay çizilerek kesişim noktası (C) birleştirilir ({koyu:{uzunluk:AC} = {uzunluk:BC}}).",
+    "{koyu:Üçgenin İç Açıları Toplamı:} Hangi türde olursa olsun {koyu:bütün üçgenlerin iç açılarının ölçüleri toplamı 180°}’dir.",
+    "{koyu:Kenar ve Açı Birleşimi:} {koyu:İkizkenar} ve {koyu:çeşitkenar} üçgenler hem dar açılı hem dik açılı hem de geniş açılı olabilir; ancak {koyu:eşkenar üçgen} her iç açısı {koyu:60°} olduğu için {koyu:yalnızca dar açılı} olabilir!"
+  ],
+  "bolumler": [
     {
-     "metin": "Bütün üçgenlerin iç açılarının ölçüleri toplamı 180 derecedir.",
-     "dogru": true,
-     "aciklama": "Her üçgenin üç iç açısının ölçüleri toplamı daima 180°’dir."
+      "baslik": "Pergel",
+      "metin": [
+        "Yalnızca cetvel kullanarak üçüncü köşenin yerini göz kararı bulmaya çalıştığımızda kenar uzunlukları tam eşit olmayabilir. Bu yüzden geometrik inşalarda {koyu:pergel} kullanılır:\n1. {koyu:Eşkenar Üçgen İnşası (Bütün Kenarlar Eşit):}\n• {koyu:1. Adım:} Cetvelle örneğin 5 cm uzunluğunda bir {parca:AB} doğru parçası çizilir.\n• {koyu:2. Adım:} Pergelin sivri ucu A noktasına, kalem ucu B noktasına konularak pergel {uzunluk:AB} = 5 cm kadar açılır ve bir çember yayı çizilir.\n• {koyu:3. Adım:} Pergelin açıklığı {koyu:hiç bozulmadan} sivri ucu B noktasına konulur ve ilk yayı kesen ikinci bir çember yayı çizilir.\n• {koyu:4. Adım:} İki yayın kesiştiği {koyu:C noktası}, hem A merkezli hem de B merkezli çemberin üzerinde olduğu için {koyu:{uzunluk:AC} = {uzunluk:AB} = {uzunluk:BC} = 5 cm} olur! C noktası A ve B köşeleriyle birleştirildiğinde kusursuz bir {koyu:ABC eşkenar üçgeni} inşa edilmiş olur."
+      ],
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 424\" role=\"img\" aria-label=\"Konu özet şeması\"><text x=\"400\" y=\"32\" font-family=\"sans-serif\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">PERGEL VE CETVEL İLE EŞKENAR, İKİZKENAR VE ÇEŞİTKENAR ÜÇGEN İNŞASI</text><rect x=\"20\" y=\"56\" width=\"365\" height=\"290\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"80\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. PERGEL VE CETVELLE ÜÇGEN İNŞASI</text><text x=\"202\" y=\"100\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">(Çemberin Yarıçaplarının Eşitliği İlkesinden Yararlanma)</text><rect x=\"35\" y=\"114\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"130\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. Adım: Taban Doğru Parçasını Çizme</text><text x=\"202\" y=\"146\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Cetvel ile belirlenen uzunlukta [AB] doğru parçası çizilir.</text><rect x=\"35\" y=\"164\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"180\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">2. Adım: A Merkezli Çember Yayı Çizme</text><text x=\"202\" y=\"196\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Pergel ikinci kenar uzunluğu kadar açılıp A merkezli yay çizilir.</text><rect x=\"35\" y=\"214\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"230\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">3. Adım: B Merkezli Çember Yayı Çizme</text><text x=\"202\" y=\"246\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Pergel üçüncü kenar uzunluğu kadar açılıp B merkezli yay çizilir.</text><rect x=\"35\" y=\"264\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"280\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">4. Adım: Kesişim Noktasını (C) Birleştirme</text><text x=\"202\" y=\"296\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">İki yayın kesiştiği C noktası A ve B ile birleştirilip ABC üçgeni oluşur!</text><rect x=\"35\" y=\"312\" width=\"335\" height=\"26\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"202\" y=\"329\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Eşkenar Üçgende pergel açıklığı hiç değiştirilmez (|AB|=|AC|=|BC|)!</text><rect x=\"400\" y=\"56\" width=\"380\" height=\"290\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"80\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">2. ÜÇGENLERDE KENAR - AÇI İLİŞKİSİ TABLOSU</text><rect x=\"415\" y=\"100\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"116\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">Eşkenar Üçgen</text><text x=\"590\" y=\"132\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">3 kenarı eşit • 3 açısı da 60° (Sadece DAR AÇILI olur!)</text><rect x=\"415\" y=\"150\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"166\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">İkizkenar Üçgen</text><text x=\"590\" y=\"182\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">2 kenarı ve taban açıları eşit (Dar, Dik veya Geniş açılı olabilir)</text><rect x=\"415\" y=\"200\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"216\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">Çeşitkenar Üçgen</text><text x=\"590\" y=\"232\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">3 kenarı ve 3 açısı farklı (Dar, Dik veya Geniş açılı olabilir)</text><rect x=\"415\" y=\"250\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"266\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">İkizkenar Dik Üçgen</text><text x=\"590\" y=\"282\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Açıları: 90° - 45° - 45° (Dik kenar uzunlukları birbirine eşit)</text><rect x=\"415\" y=\"300\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"590\" y=\"316\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">Üçgenin İç Açıları Toplamı</text><text x=\"590\" y=\"332\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Her üçgenin iç açılarının ölçüleri toplamı 180°’dir!</text><rect x=\"20\" y=\"360\" width=\"760\" height=\"48\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"400\" y=\"380\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">ALTIN KURAL: &quot;Dik açılı eşkenar üçgen&quot; veya &quot;Geniş açılı eşkenar üçgen&quot; ÇİZİLEMEZ; çünkü eşkenar üçgenin her açısı 60°’dir!</text><text x=\"400\" y=\"398\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Çember merkezinden yay üzerindeki tüm noktalara çizilen yarıçaplar (r) birbirine eşittir.</text></svg>"
     },
     {
-     "metin": "Bir ikizkenar üçgenin birbirine eşit olan iki taban açısı da 95° (geniş açı) olabilir.",
-     "dogru": false,
-     "aciklama": "Yanlıştır; iki açı 95° olursa toplamları 190° eder ve 180°’yi aşar. Bir üçgende yalnızca 1 tane geniş açı bulunabilir."
+      "baslik": "Cetvel Yardımıyla Üçgenlerin İnşası",
+      "metin": [
+        "2. {koyu:İkizkenar ve Çeşitkenar Üçgen İnşası:}\n• {koyu:İkizkenar Üçgen İçin:} {parca:AB} tabanı (ör. 4 cm) çizildikten sonra pergel eşit olması istenen yan kenar uzunluğu kadar (ör. 6 cm) açılır. A ve B noktalarından aynı açıklıkla (6 cm) iki yay çizilip kesişim noktası C ile birleştirilir ({uzunluk:AC} = {uzunluk:BC} = 6 cm).\n• {koyu:Çeşitkenar Üçgen İçin:} {parca:AB} tabanı (ör. 6 cm) çizilir; A merkezli yay için pergel 5 cm açılır, B merkezli yay için pergel 4 cm açılır. Kesişim noktası C ile birleştirildiğinde kenarları {koyu:6 cm, 5 cm ve 4 cm} olan bir {koyu:çeşitkenar üçgen} oluşur."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "İki Çemberin Merkezleri ve Kesişim Noktası",
+        "metin": "Sorularda {koyu:eş yarıçaplı iki çember birbirinin merkezinden geçecek şekilde} çizilmişse, çemberlerin merkezleri (A ve B) ile kesişim noktası (C) birleştirildiğinde oluşan ABC üçgeni her zaman {koyu:eşkenar üçgendir}! Çünkü üç kenar da çemberlerin yarıçapına (r) eşittir."
+      }
     },
     {
-     "metin": "Pergel ve cetvel kullanarak üçgen inşa ederken çemberin yarıçap uzunluklarının birbirine eşit olması özelliğinden yararlanılır.",
-     "dogru": true,
-     "aciklama": "Pergel açıklığı çemberin yarıçapını (r) belirler ve merkezden yaya çizilen her doğru parçası bu yarıçapa eşittir."
+      "baslik": "Üçgenlerde Kenar",
+      "metin": [
+        "Bir üçgenin iç açılarının ölçüleri toplamı daima {koyu:180°}’dir ({olcu:A} + {olcu:B} + {olcu:C} = 180°). Üçgenlerin kenar özellikleriyle açı özelliklerini birleştirdiğimizde şu önemli sonuçlara ulaşırız:\n1. {koyu:Eşkenar Üçgen:} Üç kenar uzunluğu da birbirine eşittir. Üç iç açısının ölçüsü de birbirine eşit olduğundan {koyu:180° ÷ 3 = 60°}’dir. Bütün açıları 60° (dar açı) olduğu için eşkenar üçgen {koyu:her zaman dar açılı üçgendir}. {koyu:“Dik açılı eşkenar üçgen”} veya {koyu:“geniş açılı eşkenar üçgen”} kesinlikle {koyu:çizilemez}!"
+      ],
+      "gorsel": "<svg viewBox=\"0 0 460 214\" role=\"img\" aria-label=\"Üçgenlerin Kenar ve Açı Özellikleri ile Pe kavram özeti şeması\"><rect x=\"90\" y=\"12\" width=\"280\" height=\"38\" rx=\"19\" class=\"g-mf\"/><text x=\"230\" y=\"36\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"800\" class=\"g-b\">Üçgenlerin Kenar ve Açı Özellikleri ile Pe</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ma\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"116\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">1. Bölüm</text><text x=\"116\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Pergel</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ta\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"344\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">2. Bölüm</text><text x=\"344\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Cetvel Yardımıyla Üçgenlerin İnş…</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ya\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"116\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-yf\">3. Bölüm</text><text x=\"116\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Üçgenlerde Kenar</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-oa\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"344\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-of\">4. Bölüm</text><text x=\"344\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Açı Özelliklerinin Birlikte Yoru…</text></svg>"
     },
     {
-     "metin": "İkizkenar dik üçgenin iç açılarının ölçüleri 90°, 45° ve 45°’dir.",
-     "dogru": true,
-     "aciklama": "Dik açı 90° olup kalan 90° iki eşit taban açısına 45° ve 45° olarak paylaşılır."
-    },
-    {
-     "metin": "Kenar uzunlukları 4 cm, 5 cm ve 6 cm olan bir üçgenin üç iç açısının ölçüsü birbirine eşittir.",
-     "dogru": false,
-     "aciklama": "Yanlıştır; kenar uzunlukları farklı olan çeşitkenar üçgenin üç iç açısının ölçüsü de birbirinden farklıdır."
+      "baslik": "Açı Özelliklerinin Birlikte Yorumlanması",
+      "metin": [
+        "2. {koyu:İkizkenar Üçgen:} İki kenar uzunluğu birbirine eşittir ve {koyu:eşit kenarların karşısındaki taban açılarının ölçüleri de birbirine eşittir}.\n• Tepe açısı 90°’den küçükse (ör. 40° - 70° - 70°) {koyu:dar açılı ikizkenar üçgen},\n• Tepe açısı 90° ise {koyu:taban açıları (180° - 90°) ÷ 2 = 45°} olur ve buna {koyu:ikizkenar dik üçgen (90° - 45° - 45°)} denir,\n• Tepe açısı 90°’den büyükse (ör. 120° - 30° - 30°) {koyu:geniş açılı ikizkenar üçgen} olur.\n3. {koyu:Çeşitkenar Üçgen:} Üç kenar uzunluğu ve üç iç açısının ölçüsü de birbirinden farklıdır. Dar açılı (50° - 60° - 70°), dik açılı (90° - 60° - 30°) veya geniş açılı (110° - 40° - 30°) olabilir."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "İkizkenar Üçgende Taban Açıları Dik veya Geniş Açı Olabilir mi?",
+        "metin": "Bir üçgende en fazla {koyu:1 tane dik açı} veya {koyu:1 tane geniş açı} bulunabilir! Bu nedenle ikizkenar bir üçgenin {koyu:birbirine eşit olan iki taban açısı her zaman dar açı (< 90°) olmak zorundadır}; dik veya geniş olabilecek açı yalnızca {koyu:tepe açısıdır}!"
+      }
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "soru": "Aşağıdaki üçgenleri kenar ve açı özelliklerine göre doğru tanımlarıyla eşleştiriniz.",
-   "ciftler": [
-    [
-     "Açıları 60° - 60° - 60° olan üçgen",
-     "Dar açılı eşkenar üçgen"
-    ],
-    [
-     "Açıları 90° - 45° - 45° olan üçgen",
-     "Dik açılı ikizkenar üçgen"
-    ],
-    [
-     "Açıları 120° - 30° - 30° olan üçgen",
-     "Geniş açılı ikizkenar üçgen"
-    ],
-    [
-     "Açıları 90° - 60° - 30° olan üçgen",
-     "Dik açılı çeşitkenar üçgen"
-    ],
-    [
-     "Açıları 50° - 60° - 70° olan üçgen",
-     "Dar açılı çeşitkenar üçgen"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
-   "cumleler": [
+  ],
+  "ornekler": [
     {
-     "metin": "Çemberin merkezinden çember üzerindeki herhangi bir noktaya çizilen doğru parçasına ___ denir.",
-     "cevap": "yarıçap"
+      "soru": "Bir ABC ikizkenar üçgeninde |AB| = |AC|’dir. Tepe açısı olan A açısının ölçüsü 50° olduğuna göre B ve C taban açılarının ölçüleri kaçar derecedir?",
+      "cevap": "|AB| = |AC| olduğuna göre bu eşit kenarların karşısındaki {aci:B} ve {aci:C} taban açılarının ölçüleri birbirine eşittir. Üçgenin iç açıları toplamı 180° olduğundan:\n180° - 50° = 130° (iki taban açısının toplamı).\n130° ÷ 2 = {koyu:65°} ({olcu:B} = {olcu:C} = 65°) bulunur."
     },
     {
-     "metin": "Bütün kenar uzunlukları birbirine eşit ve her bir iç açısı 60° olan üçgene ___ üçgen denir.",
-     "cevap": "eşkenar"
+      "soru": "Pergelini 7 cm açan Zeynep, önce A noktasını merkez alarak bir yay çiziyor, ardından pergel açıklığını değiştirmeden A noktasına 5 cm uzaklıktaki B noktasını merkez alarak ilk yayı C noktasında kesen ikinci bir yay çiziyor. Köşeleri birleştirildiğinde oluşan ABC üçgeninin çevresi kaç cm ve çeşidi nedir?",
+      "cevap": "Taban uzunluğu {uzunluk:AB} = 5 cm’dir. A ve B merkezli yaylar 7 cm yarıçapla çizildiği için {uzunluk:AC} = 7 cm ve {uzunluk:BC} = 7 cm olur. İki kenarı eşit (7 cm, 7 cm, 5 cm) olduğu için üçgen {koyu:ikizkenar üçgendir}. Çevresi ise 7 + 7 + 5 = {koyu:19 cm} bulunur."
     },
     {
-     "metin": "Bir üçgende eşit uzunluktaki iki kenarın karşısında bulunan açıların ölçüleri de birbirine ___.",
-     "cevap": "eşittir"
+      "soru": "Bir ikizkenar dik üçgenin dar açılarından birinin ölçüsü kaç derecedir?",
+      "cevap": "İkizkenar dik üçgenin tepe açısı {koyu:90°}’dir. Geriye kalan iki dar açı birbirine eşit olduğu için: (180° - 90°) ÷ 2 = 90° ÷ 2 = {koyu:45°} bulunur."
     },
     {
-     "metin": "Üçgen inşasında çember yayları çizerek kenar uzunluklarını eşit taşımak için kullandığımız geometrik araca ___ denir.",
-     "cevap": "pergel"
+      "soru": "Merkezleri A ve B noktaları olan iki farklı çember C noktasında kesişmektedir. A merkezli çemberin yarıçapı 8 cm, B merkezli çemberin yarıçapı 5 cm ve |AB| = 9 cm olduğuna göre ABC üçgeninin kenarlarına göre çeşidi nedir?",
+      "cevap": "Doğru yanıt: Çeşitkenar üçgen. C noktası her iki çemberin üzerinde olduğundan |AC| = 8 cm, |BC| = 5 cm ve |AB| = 9 cm’dir. Kenar uzunlukları 8 cm, 5 cm ve 9 cm olup üçü de farklı olduğu için çeşitkenar üçgendir."
     },
     {
-     "metin": "Bir üçgenin iç açılarından biri 100° ise bu üçgen açılarına göre ___ açılı üçgendir.",
-     "cevap": "geniş"
+      "soru": "‘Pergel’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
+      "cevap": "Yalnızca cetvel kullanarak üçüncü köşenin yerini göz kararı bulmaya çalıştığımızda kenar uzunlukları tam eşit olmayabilir. Bu yüzden geometrik inşalarda {koyu:pergel} kullanılır:\n1. {koyu:Eşkenar Üçgen İnşası (Bütün Kenarlar Eşit):}\n• {koyu:1. Adım:} Cetvelle örneğin 5 cm uzunluğunda bir {parca:AB} doğru parçası çizilir.\n• {koyu:2. Adım:} Pergelin sivri ucu A noktasına, kalem ucu B noktasına konularak pergel {uzunluk:AB} = 5 cm kadar açılır ve bir çember yayı çizilir.\n• {koyu:3. Adım:} Pergelin açıklığı {koyu:hiç bozulmadan} sivri ucu B noktasına konulur ve ilk yayı kesen ikinci bir çember yayı çizilir.\n• {koyu:4. Adım:} İki yayın kesiştiği {koyu:C noktası}, hem A merkezli hem de B merkezli çemberin üzerinde olduğu için {koyu:{uzunluk:AC} = {uzunluk:AB} = {uzunluk:BC} = 5 cm} olur! C noktası A ve B köşeleriyle birleştirildiğinde kusursuz bir {koyu:ABC eşkenar üçgeni} inşa edilmiş olur."
+    },
+    {
+      "soru": "‘Cetvel Yardımıyla Üçgenlerin İnşası’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
+      "cevap": "2. {koyu:İkizkenar ve Çeşitkenar Üçgen İnşası:}\n• {koyu:İkizkenar Üçgen İçin:} {parca:AB} tabanı (ör. 4 cm) çizildikten sonra pergel eşit olması istenen yan kenar uzunluğu kadar (ör. 6 cm) açılır. A ve B noktalarından aynı açıklıkla (6 cm) iki yay çizilip kesişim noktası C ile birleştirilir ({uzunluk:AC} = {uzunluk:BC} = 6 cm).\n• {koyu:Çeşitkenar Üçgen İçin:} {parca:AB} tabanı (ör. 6 cm) çizilir; A merkezli yay için pergel 5 cm açılır, B merkezli yay için pergel 4 cm açılır. Kesişim noktası C ile birleştirildiğinde kenarları {koyu:6 cm, 5 cm ve 4 cm} olan bir {koyu:çeşitkenar üçgen} oluşur."
     }
-   ],
-   "fazla": [
-    "dar",
-    "köşegen"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Kenar uzunlukları 6 cm olan bir eşkenar üçgeni yalnızca pergel ve cetvel kullanarak nasıl inşa edeceğinizi 4 adımda açıklayınız.",
-   "ipuclari": [
-    "1. İpucu: İlk olarak cetvelle 6 cm’lik [AB] doğru parçasını çiziniz.",
-    "2. İpucu: Pergeli 6 cm açarak A ve B noktalarından çember yayları çizip kesişim noktasını (C) birleştiriniz."
-   ],
-   "cevap": "1. Adım: Cetvel yardımıyla düzlemde 6 cm uzunluğunda bir [AB] doğru parçası çizilir.\n2. Adım: Pergelin sivri ucu A noktasına, kalem ucu B noktasına getirilerek pergel tam 6 cm açılır ve A merkezli bir çember yayı çizilir.\n3. Adım: Pergelin 6 cm’lik açıklığı hiç bozulmadan sivri ucu B noktasına konulur ve ilk yayı kesen B merkezli ikinci bir çember yayı çizilir.\n4. Adım: İki yayın kesiştiği C noktası cetvel yardımıyla A ve B noktalarıyla birleştirilir. Çemberin yarıçapları eşit olduğundan |AB| = |AC| = |BC| = 6 cm olan ABC eşkenar üçgeni inşa edilmiş olur."
-  }
- ]
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki üçgen çeşitlerinden hangisinin çizilmesi geometrik olarak imkânsızdır?",
+      "secenekler": [
+        "Geniş açılı eşkenar üçgen",
+        "Dik açılı ikizkenar üçgen",
+        "Geniş açılı ikizkenar üçgen",
+        "Dar açılı eşkenar üçgen"
+      ],
+      "dogru": 0,
+      "aciklama": "Eşkenar üçgenin her bir iç açısı 60° (dar açı) olmak zorundadır; bu nedenle geniş açılı veya dik açılı eşkenar üçgen çizilemez."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir KLM üçgeninin iki iç açısının ölçüleri 65° ve 50°’dir. Buna göre KLM üçgeninin kenarlarına ve açılarına göre çeşidi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Dar açılı çeşitkenar üçgen",
+        "Dar açılı ikizkenar üçgen",
+        "Dik açılı çeşitkenar üçgen",
+        "Geniş açılı ikizkenar üçgen"
+      ],
+      "dogru": 1,
+      "aciklama": "Üçüncü açıyı bulalım: 180° - (65° + 50°) = 180° - 115° = 65°. Açıları 65°, 65° ve 50° olduğu için iki açısı eşittir (ikizkenar) ve tüm açıları 90°’den küçüktür (dar açılı)."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Uzunluğu 6 cm olan [AB] doğru parçasının uç noktalarına pergelin sivri ucunu sırasıyla koyup, pergel açıklığını 6 cm olarak ayarlayarak çizdiğimiz iki yayın kesişim noktasını (C) A ve B ile birleştirirsek hangi üçgeni elde ederiz?",
+      "secenekler": [
+        "Çeşitkenar üçgen",
+        "İkizkenar dik üçgen",
+        "Eşkenar üçgen",
+        "Geniş açılı üçgen"
+      ],
+      "dogru": 2,
+      "aciklama": "|AB| = 6 cm ve pergel açıklığı (yarıçap) da 6 cm olduğu için |AC| = 6 cm ve |BC| = 6 cm olur; üç kenarı da 6 cm olan eşkenar üçgen oluşur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Tepe açısının ölçüsü 110° olan bir ikizkenar üçgenin birbirine eşit olan taban açılarından her birinin ölçüsü kaç derecedir?",
+      "secenekler": [
+        "30°",
+        "40°",
+        "45°",
+        "35°"
+      ],
+      "dogru": 3,
+      "aciklama": "Üçgenin iç açıları toplamı 180°’dir. 180° - 110° = 70°; iki taban açısı eşit olduğundan 70° ÷ 2 = 35° bulunur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Bütün üçgenlerin iç açılarının ölçüleri toplamı 180 derecedir.",
+          "dogru": true,
+          "aciklama": "Her üçgenin üç iç açısının ölçüleri toplamı daima 180°’dir."
+        },
+        {
+          "metin": "Bir ikizkenar üçgenin birbirine eşit olan iki taban açısı da 95° (geniş açı) olabilir.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; iki açı 95° olursa toplamları 190° eder ve 180°’yi aşar. Bir üçgende yalnızca 1 tane geniş açı bulunabilir."
+        },
+        {
+          "metin": "Pergel ve cetvel kullanarak üçgen inşa ederken çemberin yarıçap uzunluklarının birbirine eşit olması özelliğinden yararlanılır.",
+          "dogru": true,
+          "aciklama": "Pergel açıklığı çemberin yarıçapını (r) belirler ve merkezden yaya çizilen her doğru parçası bu yarıçapa eşittir."
+        },
+        {
+          "metin": "İkizkenar dik üçgenin iç açılarının ölçüleri 90°, 45° ve 45°’dir.",
+          "dogru": true,
+          "aciklama": "Dik açı 90° olup kalan 90° iki eşit taban açısına 45° ve 45° olarak paylaşılır."
+        },
+        {
+          "metin": "Kenar uzunlukları 4 cm, 5 cm ve 6 cm olan bir üçgenin üç iç açısının ölçüsü birbirine eşittir.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; kenar uzunlukları farklı olan çeşitkenar üçgenin üç iç açısının ölçüsü de birbirinden farklıdır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki üçgenleri kenar ve açı özelliklerine göre doğru tanımlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Açıları 60° - 60° - 60° olan üçgen",
+          "Dar açılı eşkenar üçgen"
+        ],
+        [
+          "Açıları 90° - 45° - 45° olan üçgen",
+          "Dik açılı ikizkenar üçgen"
+        ],
+        [
+          "Açıları 120° - 30° - 30° olan üçgen",
+          "Geniş açılı ikizkenar üçgen"
+        ],
+        [
+          "Açıları 90° - 60° - 30° olan üçgen",
+          "Dik açılı çeşitkenar üçgen"
+        ],
+        [
+          "Açıları 50° - 60° - 70° olan üçgen",
+          "Dar açılı çeşitkenar üçgen"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Çemberin merkezinden çember üzerindeki herhangi bir noktaya çizilen doğru parçasına ___ denir.",
+          "cevap": "yarıçap"
+        },
+        {
+          "metin": "Bütün kenar uzunlukları birbirine eşit ve her bir iç açısı 60° olan üçgene ___ üçgen denir.",
+          "cevap": "eşkenar"
+        },
+        {
+          "metin": "Bir üçgende eşit uzunluktaki iki kenarın karşısında bulunan açıların ölçüleri de birbirine ___.",
+          "cevap": "eşittir"
+        },
+        {
+          "metin": "Üçgen inşasında çember yayları çizerek kenar uzunluklarını eşit taşımak için kullandığımız geometrik araca ___ denir.",
+          "cevap": "pergel"
+        },
+        {
+          "metin": "Bir üçgenin iç açılarından biri 100° ise bu üçgen açılarına göre ___ açılı üçgendir.",
+          "cevap": "geniş"
+        }
+      ],
+      "fazla": [
+        "dar",
+        "köşegen"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Kenar uzunlukları 6 cm olan bir eşkenar üçgeni yalnızca pergel ve cetvel kullanarak nasıl inşa edeceğinizi 4 adımda açıklayınız.",
+      "cevap": "1. Adım: Cetvel yardımıyla düzlemde 6 cm uzunluğunda bir [AB] doğru parçası çizilir.\n2. Adım: Pergelin sivri ucu A noktasına, kalem ucu B noktasına getirilerek pergel tam 6 cm açılır ve A merkezli bir çember yayı çizilir.\n3. Adım: Pergelin 6 cm’lik açıklığı hiç bozulmadan sivri ucu B noktasına konulur ve ilk yayı kesen B merkezli ikinci bir çember yayı çizilir.\n4. Adım: İki yayın kesiştiği C noktası cetvel yardımıyla A ve B noktalarıyla birleştirilir. Çemberin yarıçapları eşit olduğundan |AB| = |AC| = |BC| = 6 cm olan ABC eşkenar üçgeni inşa edilmiş olur.",
+      "ipuclari": [
+        "1. İpucu: İlk olarak cetvelle 6 cm’lik [AB] doğru parçasını çiziniz.",
+        "2. İpucu: Pergeli 6 cm açarak A ve B noktalarından çember yayları çizip kesişim noktasını (C) birleştiriniz."
+      ]
+    }
+  ]
 }

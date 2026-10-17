@@ -48,7 +48,7 @@ def gorsel_2():
         '<rect x="40" y="42" width="600" height="48" rx="8" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>'
         '<text x="340" y="71" font-family="sans-serif" font-size="15" font-weight="bold" fill="#b45309" text-anchor="middle">'
         'ΔH°_tepkime = Σ n . ΔH°_f(Ürünler)  −  Σ m . ΔH°_f(Girenler)</text>'
-        + _kart(40, 102, 285, 92, "Ekzotermik Tepkime (ΔH° < 0)", [
+        + _kart(40, 102, 285, 92, "Ekzotermik Tepkime (ΔH° &lt; 0)", [
             "• Σ ΔH°_f(Ürünler) < Σ ΔH°_f(Girenler)",
             "• Ortama ısı verilir; düşük enerjili",
             "  ürünler enerji bakımından daha kararlıdır."

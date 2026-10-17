@@ -24,7 +24,8 @@
       "kutu": {
         "tur": "ipucu",
         "metin": "Not alırken her sözcüğü yazmak yerine amacınla ilgili bilgileri seç."
-      }
+      },
+      "gorsel": "<svg viewBox=\"0 0 460 214\" role=\"img\" aria-label=\"Metni Anlama ve Fiilimsilere Giriş kavram özeti şeması\"><rect x=\"90\" y=\"12\" width=\"280\" height=\"38\" rx=\"19\" class=\"g-mf\"/><text x=\"230\" y=\"36\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"800\" class=\"g-b\">Metni Anlama ve Fiilimsilere Giriş</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ma\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"116\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">1. Bölüm</text><text x=\"116\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Okuma ve dinleme amacını belirle</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ta\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"344\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">2. Bölüm</text><text x=\"344\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Bilinmeyen sözcüğe bağlamdan ulaş</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ya\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"116\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-yf\">3. Bölüm</text><text x=\"116\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Konu, ana düşünce ve önemli bilgi</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-oa\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"344\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-of\">4. Bölüm</text><text x=\"344\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Cümleler arasındaki anlam ilişki…</text></svg>"
     },
     {
       "baslik": "Bilinmeyen sözcüğe bağlamdan ulaş",
@@ -128,43 +129,55 @@
   "etkinlikler": [
     {
       "tur": "coktan",
-      "soru": "Okuma kulübünün kuralı: “Önerdiğin kitabın adını ve önerme nedenini yazarsan notun panoda yer alabilir.” Ada’nın notu: “Önerim: Kayıp Defter.” Ada, notunun bu kurala uyması için hangi bilgiyi eklemelidir?",
+      "soru": "Okuma kulübünün kuralı: “Önerdiğin eserin adını ve önerme nedenini yazarsan notun panoda yer alabilir.” Ada’nın notu: “Önerim: Kayıp Defter.” Ada, notunun bu kurala uyması için hangi bilgiyi eklemelidir?",
       "secenekler": [
-        "Kitabın hangi yazar tarafından yazıldığını",
-        "Kitabı okumaya hangi gün başladığını",
         "Kitabı hangi özelliği için önerdiğini",
-        "Kitabın toplam kaç sayfadan oluştuğunu"
+        "Kitabı okumaya hangi gün başladığını",
+        "eserin hangi yazar tarafından yazıldığını",
+        "eserin toplam kaç sayfadan oluştuğunu"
       ],
-      "dogru": 2,
-      "aciklama": "Kural, kitabın adını ve önerme nedenini birlikte istiyor. Ada kitabın adını yazmış; notuna önerme nedenini ekleyerek koşulu tamamlayabilir. Diğer bilgiler bu koşulun yerini tutmaz."
+      "dogru": 0,
+      "aciklama": "Kural, eserin adını ve önerme nedenini birlikte istiyor. Ada eserin adını yazmış; notuna önerme nedenini ekleyerek koşulu tamamlayabilir. Diğer bilgiler bu koşulun yerini tutmaz."
     },
     {
       "tur": "coktan",
-      "soru": "“Mina katalogdaki kitabı buldu. Ardından okuma fişine kitabın adını yazdı.” Bu iki cümle, olayların sırası korunarak fiilimsiyle nasıl birleştirilir?",
+      "soru": "“Mina katalogdaki kitabı buldu. Ardından okuma fişine eserin adını yazdı.” Bu iki cümle, olayların sırası korunarak fiilimsiyle nasıl birleştirilir?",
       "secenekler": [
-        "Mina katalogdaki kitabı bulmak için okuma fişine kitabın adını yazdı.",
-        "Mina katalogdaki kitabı bulamadan okuma fişine kitabın adını yazdı.",
-        "Mina katalogdaki kitabı ararken okuma fişine kitabın adını yazdı.",
-        "Mina katalogdaki kitabı bulunca okuma fişine kitabın adını yazdı."
+        "Mina katalogdaki kitabı bulmak için okuma fişine eserin adını yazdı.",
+        "Mina katalogdaki kitabı bulunca okuma fişine eserin adını yazdı.",
+        "Mina katalogdaki kitabı ararken okuma fişine eserin adını yazdı.",
+        "Mina katalogdaki kitabı bulamadan okuma fişine eserin adını yazdı."
       ],
-      "dogru": 3,
-      "aciklama": "“Bulunca” zarf-fiili, kitaba ulaşmanın ardından yazma işinin yapıldığını belirtir. “Bulmak için” bulmayı amaç olarak gösterir; “bulamadan” kitabın bulunmadığını, “ararken” ise arama ile yazmanın aynı zamanda sürdüğünü anlatır."
+      "dogru": 1,
+      "aciklama": "“Bulunca” zarf-fiili, kitaba ulaşmanın ardından yazma işinin yapıldığını belirtir. “Bulmak için” bulmayı amaç olarak gösterir; “bulamadan” eserin bulunmadığını, “ararken” ise arama ile yazmanın aynı zamanda sürdüğünü anlatır."
     },
     {
       "tur": "coktan",
       "soru": "Bir öğrenci şu soruya yanıt arıyor: “Kullanılmış kâğıtların yeniden değerlendirilmesi ağaç kesimini nasıl etkiler?” Öğrenci, bu soruyu yanıtlamak için öncelikle hangi içerikten yararlanmalıdır?",
       "secenekler": [
-        "Ağaçtan ve kullanılmış kâğıttan üretimde ağaç kullanımını karşılaştıran araştırma",
-        "Kullanılmış kâğıtların yeniden işlenmesinde geçen süreleri karşılaştıran araştırma",
         "Farklı ağaç türlerinden elde edilen kâğıtların dayanıklılığını karşılaştıran araştırma",
+        "Kullanılmış kâğıtların yeniden işlenmesinde geçen süreleri karşılaştıran araştırma",
+        "Ağaçtan ve kullanılmış kâğıttan üretimde ağaç kullanımını karşılaştıran araştırma",
         "Farklı iş alanlarında tüketilen kâğıtların miktarlarını karşılaştıran araştırma"
       ],
-      "dogru": 0,
+      "dogru": 2,
       "aciklama": "Soruda yeniden değerlendirmenin ağaç kesimine etkisi araştırılıyor. İki üretim yolunda kullanılan ağaç miktarını karşılaştırmak bu soruya doğrudan veri sağlar. Süre, dayanıklılık ve tüketim alanları farklı araştırma sorularına yanıt verir."
     },
     {
+      "tur": "coktan",
+      "soru": "‘Cümleler arasındaki anlam ilişkileri’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "“İçin” sözcüğü müstakil olarak ilişkiyi belirlemez; cümlenin bütününü oku."
+      ],
+      "dogru": 3,
+      "aciklama": "Cümleler arasındaki anlam ilişkileri bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
       "tur": "dy",
-      "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
           "metin": "Bir sözcüğün anlamı tahmin edildikten sonra sözlükten kontrol edilebilir.",
@@ -190,7 +203,7 @@
     },
     {
       "tur": "eslestir",
-      "yonerge": "İlişkili kavram ve açıklamaları eşleştiriniz.",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
           "İsim-fiil",
@@ -212,7 +225,7 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Verilen ifadeleri uygun boşluklara yerleştiriniz. Bir ifade artacak.",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
           "metin": "Bir metnin ne hakkında olduğu onun ___ olarak adlandırılır.",
@@ -228,26 +241,18 @@
         }
       ],
       "fazla": [
-        "ana düşüncesi"
+        "ana düşüncesi",
+        "varsayım"
       ]
     },
     {
       "tur": "ogretici",
       "soru": "Bir dinleyici konuşmanın her sözcüğünü yazmaya çalışırken önemli açıklamaları kaçırıyor. Not alma biçimini nasıl değiştirebilir?",
+      "cevap": "Önemli düşünceleri ve amacına uygun bilgileri kısa notlarla kaydetmelidir. Böylece konuşmayı izlemek ve bilgiler arasında bağ kurmak kolaylaşır.",
       "ipuclari": [
         "Dinleme amacını belirle.",
         "Ana bilgiyle ayrıntıyı ayır."
-      ],
-      "cevap": "Önemli düşünceleri ve amacına uygun bilgileri kısa notlarla kaydetmelidir. Böylece konuşmayı izlemek ve bilgiler arasında bağ kurmak kolaylaşır."
-    },
-    {
-      "tur": "ogretici",
-      "soru": "“Kitabı bitirdim; oysaki önemli yerlerini not ettim.” cümlesindeki bağlantı neden uygun değildir?",
-      "ipuclari": [
-        "İki yargı arasında karşıtlık var mı?",
-        "“Oysaki”nin görevini hatırla."
-      ],
-      "cevap": "Cümlede karşıtlık kurulmuyor. “Kitabı bitirdim ve önemli yerlerini not ettim.” biçiminde ekleme ilişkisi kurulabilir."
+      ]
     }
   ],
   "ozet": [

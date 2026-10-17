@@ -26,7 +26,7 @@
       "baslik": "Tertil ve okumada özen",
       "metin": [
         "Tertil, tecvit kurallarına uyarak tane tane, acele etmeden okumaktır. Kur’an’ın doğru seslendirilmesi ve anlamına dikkat edilmesi birlikte düşünülür.",
-        "Ders kitabı; abdestli olmayı, temiz yerde bulunmayı, kıbleye yönelmeyi, euzübesmeleyle başlamayı ve Allah’ın rızasını gözetmeyi tavsiye eder. Okuma sırasında konuşma ve gülme gibi dikkati dağıtan davranışlardan kaçınılır."
+        "öğretim materyali; abdestli olmayı, temiz yerde bulunmayı, kıbleye yönelmeyi, euzübesmeleyle başlamayı ve Allah’ın rızasını gözetmeyi tavsiye eder. Okuma sırasında konuşma ve gülme gibi dikkati dağıtan davranışlardan kaçınılır."
       ],
       "kutu": {
         "tur": "ipucu",
@@ -111,24 +111,24 @@
       "tur": "coktan",
       "soru": "Bir okuma kaydında Fatiha’dan Nâs’a kadar bütün surelerin tamamlandığı belirtiliyor. Bu tamamlanma hangi kavramla adlandırılır?",
       "secenekler": [
-        "Hafız",
-        "Tertil",
         "Hatim",
+        "Tertil",
+        "Hafız",
         "Hizip"
       ],
-      "dogru": 2,
+      "dogru": 0,
       "aciklama": "Hatim, Kur’an’ın baştan sona okunup tamamlanmasıdır."
     },
     {
       "tur": "coktan",
       "soru": "Mescitte bir okuyucu sesli okurken katılanlar Mushaflarından takip ediyor. Hangi ayrıntı bu etkinliğin mukabele olduğunu gösterir?",
       "secenekler": [
-        "Sesli okuma ile takip etmenin birlikte yürütülmesi",
         "Okuyucunun mutlaka ezberden okuması",
-        "Bütün katılımcıların aynı yaşta olması",
+        "Sesli okuma ile takip etmenin birlikte yürütülmesi",
+        "Bütün katılımcıların aynı yaşta olması (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)",
         "Okumanın tek günde bitirilmesi"
       ],
-      "dogru": 0,
+      "dogru": 1,
       "aciklama": "Mukabele, okuyuşun Mushaflardan takip edilmesine dayanır."
     },
     {
@@ -137,15 +137,27 @@
       "secenekler": [
         "Hatim",
         "Tilavet",
-        "Mukabele",
-        "Hafız"
+        "Hafız",
+        "Mukabele"
       ],
-      "dogru": 3,
+      "dogru": 2,
       "aciklama": "Hafız, Kur’an’ın tamamını ezberleyen kişiyi belirtir."
     },
     {
+      "tur": "coktan",
+      "soru": "‘Mukabele: okuma ve takip’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Mukabele okuma–takip düzenini; hatim ise bütün Kur’an’ın tamamlanmasını anlatır."
+      ],
+      "dogru": 3,
+      "aciklama": "Mukabele: okuma ve takip bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
       "tur": "dy",
-      "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
           "metin": "Hatim yalnız ezberden yapılabilir.",
@@ -171,7 +183,7 @@
     },
     {
       "tur": "eslestir",
-      "yonerge": "İlişkili kavram ve açıklamaları eşleştiriniz.",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
           "Tilavet",
@@ -193,7 +205,7 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
           "metin": "Acele etmeden tane tane okuma usulü ___ olarak adlandırılır.",
@@ -209,26 +221,24 @@
         }
       ],
       "fazla": [
-        "cüz"
+        "cüz",
+        "varsayım"
       ]
     },
     {
       "tur": "ogretici",
       "soru": "Bir öğrenci “Mukabele her gün yapılıyorsa ilk gün mutlaka hatim tamamlanmıştır.” diyor. Bu çıkarımı hangi bilgiyle değerlendirebilirsiniz?",
+      "cevap": "Mukabele yapılması, Kur’an’ın tamamının o gün okunduğunu göstermez. Hatim ancak baştan sona bütününün okunmasıyla tamamlanır.",
       "ipuclari": [
         "Mukabele uygulamanın nasıl yapıldığını belirtir.",
         "Hatimde tamamlanan metnin kapsamını düşün."
-      ],
-      "cevap": "Mukabele yapılması, Kur’an’ın tamamının o gün okunduğunu göstermez. Hatim ancak baştan sona bütününün okunmasıyla tamamlanır."
-    },
-    {
-      "tur": "ogretici",
-      "soru": "Bir okuyucu ezbere bildiği ayetleri Mushaf’a bakarak okuyor. Bu davranış onun hafız olmadığını kanıtlar mı?",
-      "ipuclari": [
-        "Hafızlık, kişinin bildiği metnin kapsamıyla ilgilidir.",
-        "Kitap, mukabele okuyucusuna yüzünden okumayı da tavsiye eder."
-      ],
-      "cevap": "Kanıtlamaz. Hafız kişi Mushaf’a bakarak da okuyabilir; hafızlık Kur’an’ın tamamını ezberlemiş olmayı ifade eder."
+      ]
     }
+  ],
+  "ozet": [
+    "Tilavet, Kur’an’ı tecvit kurallarına uygun biçimde ve anlamını düşünerek okumayı ifade eder. Kur’an, Müslümanlar için hayat rehberi olduğu için okumanın anlam üzerinde düşünme boyutu önemlidir.",
+    "Tertil, tecvit kurallarına uyarak tane tane, acele etmeden okumaktır. Kur’an’ın doğru seslendirilmesi ve anlamına dikkat edilmesi birlikte düşünülür.",
+    "Hatim, Kur’an’ı Fatiha suresinden Nâs suresine kadar yüzünden veya ezberden okuyup tamamlamaktır. Bu kavramda belirleyici olan, bütününün okunmasıdır.",
+    "Mukabelede bir okuyucu Kur’an’ı sesli okur; diğerleri Mushaflarından okuyuşu takip eder. Özellikle ramazanda yapılan bu uygulama, Hz. Muhammed’in Cebrail ile karşılıklı okumasına dayanır."
   ]
 }

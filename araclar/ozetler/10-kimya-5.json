@@ -1,214 +1,242 @@
 {
- "ad": "10-kimya-5",
- "sinif": 10,
- "ders": "kimya",
- "ders_adi": "Kimya",
- "hafta": 5,
- "tarih": "12-16 Ekim 2026",
- "yayin_tarihi": "2026-10-14",
- "unite": "ETKİLEŞİM",
- "konu": "Mol Kavramı: Avogadro Sayısı, Atomik Kütle Birimi, Mol Kütlesi ve Mol Hesaplamaları",
- "ciktilar": [
-  "KİM.10.1.4.a — Mol kavramını, Avogadro sayısını, atomik kütle birimini (akb) ve mol kütlesini (M_A) tanecik-kütle ilişkisi üzerinden açıklar.",
-  "KİM.10.1.4.b — Element ve bileşiklerin mol sayısı, kütle, tanecik sayısı ve normal/standart koşullardaki gaz hacmi arasında nicel dönüşümler yapar.",
-  "KİM.10.1.4.c — İzotop atomların doğadaki bulunma yüzdelerini kullanarak ortalama atom kütlesini hesaplar."
- ],
- "giris": "Bir damla suda yaklaşık 1,67 sekstilyon (1,67 . 10²¹) su molekülü bulunur; böylesine hayal sınırlarını aşan sayıdaki atom ve molekülleri laboratuvarda tek tek saymak imkânsızdır. Günlük yaşamda yumurtaları 'düzine' (12 adet), kâğıtları 'top' (500 adet) ile gruplayarak saydığımız gibi, kimyacılar da gözle görülemeyen mikroskobik tanecikleri laboratuvarda tartılabilir makroskobik kütlelere bağlamak için 'mol' adı verilen evrensel bir sayma birimi kullanırlar. Bu hafta kimyasal hesaplamaların kalbi olan mol kavramını, Avogadro sayısını, atomik kütle birimini ve mol dönüşüm bağıntılarını öğreneceğiz.",
- "ozet": [
-  "12 gram karbon-12 (12C) izotopunun içerdiği atom sayısına Avogadro sayısı (N_A = 6,02 . 10²³) ve bu sayıdaki tanecik topluluğuna 1 mol denir.",
-  "1 tane 12C atomunun kütlesinin 12'de birine 1 atomik kütle birimi (1 akb) denir; 1 gram = N_A akb (6,02 . 10²³ akb) eşitliği mikroskobik ve makroskobik kütle birimleri arasındaki köprüdür.",
-  "Maddenin 1 molünün gram cinsinden kütlesine mol kütlesi (M_A) denir ve birimi g/mol'dür.",
-  "Mol sayısı (n); kütle (n = m / M_A), tanecik sayısı (n = N / N_A) ve gaz hacmi (NK'da n = V / 22,4; Oda koşullarında n = V / 24,5) bağıntılarıyla hesaplanır.",
-  "1 mol bileşikteki toplam atomların mol sayısı, bileşiğin 1 formülündeki atom sayısı ile bileşiğin mol sayısının çarpımına eşittir.",
-  "Doğada birden fazla izotopu bulunan elementlerin ortalama atom kütlesi, izotopların kütle numaraları ile doğadaki bolluk yüzdelerinin ağırlıklı ortalaması alınarak hesaplanır."
- ],
- "bolumler": [
-  {
-   "baslik": "Mol Kavramı ve Avogadro Sayısı (N_A)",
-   "metin": [
-    "Uluslararası Birimler Sisteminde (SI) {koyu:madde miktarının} birimi {koyu:mol} olarak tanımlanır. Günlük hayatta 1 düzine hangi nesne olursa olsun 12 adedi ifade ediyorsa, kimyada da {koyu:1 mol} hangi tanecik türünden (atom, molekül, iyon, elektron veya proton) bahsedilirse bahsedilsin tam olarak {koyu:6,02 . 10²³ tane} taneciği ifade eder. İtalyan bilim insanı Amedeo Avogadro'nun onuruna bu devasa sayıya {koyu:Avogadro sayısı} denir ve {koyu:N_A} (veya N0) sembolüyle gösterilir.\n\nBilimsel tanımda referans olarak doğada en kararlı izotoplardan biri olan {koyu:karbon-12 (12C)} izotopu seçilmiştir: Tam 12 gram 12C izotopunda bulunan karbon atomu sayısı 6,02 . 10²³ adettir ve bu miktar 1 mol olarak kabul edilir. Örneğin 1 mol He elementi N_A tane helyum atomu içerirken, 1 mol H2O bileşiği N_A tane su molekülü içerir."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Molekül Моlü ile Atom Molünü Ayırt Etme",
-    "metin": "1 mol H2SO4 bileşiği denildiğinde 1 mol molekül (N_A tane H2SO4 molekülü) anlaşılır. Ancak 1 tane H2SO4 molekülünde 2 hidrojen, 1 kükürt ve 4 oksijen olmak üzere 7 atom bulunduğundan, 1 mol H2SO4 bileşiği toplam 7 mol atom (7 . N_A tane atom) içerir!"
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 245\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"245\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#1a5276\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Mol Kavramı ve Avogadro Sayısı (NA) (10.1.4)</text><rect x=\"18\" y=\"54\" width=\"314\" height=\"175\" rx=\"10\" fill=\"#eaf2f8\" stroke=\"#1a5276\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#1a5276\"/><text x=\"175\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Günlük Hayattan Kimyaya Sayma Birimleri</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• 1 çift = 2 adet  |  1 düzine = 12 adet</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• Atom ve moleküller çok küçük olduğu için</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">  tek tek sayılamaz; 'mol' paketiyle ifade edilir.</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• 1 mol = 6,02 × 10²³ adet tanecik içerir.</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Bu sayıya Avogadro Sayısı (NA veya N0) denir.</text><rect x=\"348\" y=\"54\" width=\"314\" height=\"175\" rx=\"10\" fill=\"#e8f8f5\" stroke=\"#117864\" stroke-width=\"1.6\"/><rect x=\"348\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#117864\"/><text x=\"505\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">1 Mol Taneciğin Operasyonel Tanımı</text><text x=\"360\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Standart referans izotop: Karbon-12 (¹²C).</text><text x=\"360\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• Tam 12 gram ¹²C izotopunun içerdiği atom</text><text x=\"360\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">  sayısı kadar (6,02 × 10²³ tane) tanecik içeren</text><text x=\"360\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  madde miktarına 1 MOL denir.</text><text x=\"360\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Mol sayısı 'n' sembolü ile gösterilir.</text></svg>"
-  },
-  {
-   "baslik": "Atomik Kütle Birimi (akb), Bağıl Atom Kütlesi ve Mol Kütlesi (M_A)",
-   "metin": [
-    "Tek bir atomun kütlesi gram cinsinden yaklaşık 10^-24 gram mertebesinde olduğu için tekil atom ve moleküllerin kütlelerini ifade ederken gram yerine çok daha küçük bir birim olan {koyu:atomik kütle birimi (akb)} (veya Dalton, Da) kullanılır. Tanım olarak {koyu:1 tane 12C atomunun kütlesinin 1/12'sine 1 akb} denir; dolayısıyla 1 tane 12C atomunun kütlesi 12 akb'dir. 1 mol (yani N_A tane) 12C atomu ise 12 gram geldiğine göre: N_A . (12 akb) = 12 gram eşitliğinden {koyu:1 gram = N_A akb} ve {koyu:1 akb = (1 / N_A) gram} dönüşümü elde edilir.\n\nBir maddenin {koyu:1 molünün} (6,02 . 10²³ tanesinin) gram cinsinden kütlesine ise {koyu:mol kütlesi (M_A)} denir ve birimi {koyu:g/mol}'dür. Örneğin O = 16 verildiğinde; {koyu:1 tane O atomu = 16 akb = (16 / N_A) gram} iken, {koyu:1 mol O atomu = 16 gram = 16 . N_A akb} olur. Bileşiklerin mol kütlesi, formüldeki elementlerin atom kütlelerinin sayıca toplanmasıyla bulunur (örneğin H = 1, O = 16 için H2O'nun mol kütlesi M_A = 2 . 1 + 16 = 18 g/mol'dür)."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "'1 Tane' ve '1 Mol' İfadelerine Çok Dikkat Edin!",
-    "metin": "Sorularda '1 tane su molekülü 18 gramdır' ifadesi YANLIŞTIR! 1 tane H2O molekülü yalnızca 18 akb (yani 18 / N_A gram) kütleye sahiptir; 18 gram olan 1 mol (6,02 . 10²³ tane) H2O molekülüdür."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 245\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"245\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#1e8449\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Bağıl Atom Kütlesi, Atomik Kütle Birimi (akb) ve Mol Kütlesi (MA)</text><rect x=\"18\" y=\"54\" width=\"314\" height=\"175\" rx=\"10\" fill=\"#e9f7ef\" stroke=\"#1e8449\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#1e8449\"/><text x=\"175\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Atomik Kütle Birimi (akb / u)</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• 1 tane ¹²C atomunun kütlesinin 1/12'sine</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  1 atomik kütle birimi (1 akb) denir.</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• 1 tane ¹⁶O atomunun kütlesi = 16 akb'dir.</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• 1 tane H2O molekülünün kütlesi = 18 akb'dir.</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Dönüşüm: 1 gram = NA akb = 6,02 × 10²³ akb!</text><rect x=\"348\" y=\"54\" width=\"314\" height=\"175\" rx=\"10\" fill=\"#fef9e7\" stroke=\"#b9770e\" stroke-width=\"1.6\"/><rect x=\"348\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#b9770e\"/><text x=\"505\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Mol Kütlesi (MA — g/mol)</text><text x=\"360\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• 1 mol (6,02 × 10²³ tane) maddenin gram</text><text x=\"360\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  cinsinden kütlesine MOL KÜTLESİ (MA) denir.</text><text x=\"360\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• 1 mol O atomu = 16 g/mol</text><text x=\"360\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• 1 mol H2O molekülü = 2(1) + 16 = 18 g/mol</text><text x=\"360\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• 1 mol CaCO3 = 40 + 12 + 3(16) = 100 g/mol.</text></svg>"
-  },
-  {
-   "baslik": "İzotop Atomlar ve Ortalama Atom Kütlesi Hesabı",
-   "metin": [
-    "Periyodik tabloya baktığımızda birçok elementin atom kütlesinin tam sayı değil, virgüllü (ondalıklı) sayılar olduğunu görürüz (örneğin Klor: 35,5; Bakır: 63,5). Bunun nedeni, doğada pek çok elementin proton sayıları aynı fakat nötron sayıları (dolayısıyla kütle numaraları) farklı olan {koyu:izotop atomlar} hâlinde bulunmasıdır. Periyodik tabloda yazan değer, bu izotopların doğada bulunma (bolluk) yüzdeleri dikkate alınarak hesaplanan {koyu:ortalama atom kütlesidir}.\n\nBir elementin doğadaki izotoplarının kütle numaraları A1, A2 ve doğada bulunma yüzdeleri %Y1, %Y2 ise ortalama atom kütlesi {koyu:Ortalama Atom Kütlesi = (A1 . Y1 + A2 . Y2) / 100} bağıntısıyla hesaplanır. Hesaplanan ortalama atom kütlesi her zaman en hafif izotop ile en ağır izotopun kütle numaraları arasında bir değer alır ve doğada bolluk yüzdesi daha yüksek olan izotopa daha yakındır."
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "baslik": "Klorun Atom Kütlesi Neden 35,5'tir?",
-    "metin": "Klor doğada yaklaşık %75 oranında 35Cl ve %25 oranında 37Cl izotopları hâlinde bulunur. Ortalama atom kütlesi = (35 . 75 + 37 . 25) / 100 = 35,5 akb (veya g/mol) olarak bulunur."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 240\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"240\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#6c3483\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Mol Sayısı (n), Kütle (m) ve Tanecik Sayısı (N) Dönüşüm Bağıntıları</text><rect x=\"18\" y=\"54\" width=\"314\" height=\"170\" rx=\"10\" fill=\"#f5eef8\" stroke=\"#6c3483\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#6c3483\"/><text x=\"175\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">1. Tanecik Sayısı İle Mol İlişkisi</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• n = N / NA</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  (Mol sayısı = Tanecik sayısı / Avogadro sayısı)</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• N = n · NA</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• Örnek: 3,01 × 10²³ tane He atomu</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">  n = (3,01 × 10²³) / (6,02 × 10²³) = 0,5 moldür.</text><rect x=\"348\" y=\"54\" width=\"314\" height=\"170\" rx=\"10\" fill=\"#fdedec\" stroke=\"#922b21\" stroke-width=\"1.6\"/><rect x=\"348\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#922b21\"/><text x=\"505\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">2. Kütle İle Mol İlişkisi</text><text x=\"360\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• n = m / MA</text><text x=\"360\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  (Mol sayısı = Verilen kütle [g] / Mol kütlesi [g/mol])</text><text x=\"360\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• m = n · MA</text><text x=\"360\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• Örnek: 0,5 mol H2O (MA = 18 g/mol) kütlesi</text><text x=\"360\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">  m = 0,5 · 18 = 9 gramdır.</text></svg>"
-  },
-  {
-   "baslik": "Mol Sayısı — Kütle — Tanecik Sayısı — Gaz Hacmi Dönüşümleri",
-   "metin": [
-    "Kimyasal hesaplamalarda {koyu:mol sayısı (n)} tüm niceliklerin kesiştiği merkez istasyondur. Mol sayısını bulmak için üç temel bağıntı kullanılır:\n1) {koyu:Kütle - Mol İlişkisi}: Verilen kütle (m, gram) mol kütlesine (M_A, g/mol) bölünür: {koyu:n = m / M_A}.\n2) {koyu:Tanecik Sayısı - Mol İlişkisi}: Verilen tanecik sayısı (N), Avogadro sayısına (N_A) bölünür: {koyu:n = N / N_A}.\n\n3) {koyu:Gaz Hacmi - Mol İlişkisi}: Avogadro Yasası'na göre aynı sıcaklık ve basınç altında tüm ideal gazların eşit mol sayıları eşit hacim kaplar. {koyu:Normal Koşullarda (NK veya NŞA: 0 °C sıcaklık ve 1 atm basınç)} 1 mol gaz {koyu:22,4 litre} hacim kaplar ve {koyu:n = V / 22,4} bağıntısı kullanılır. {koyu:Standart (Oda) Koşullarında (25 °C sıcaklık ve 1 atm basınç)} ise 1 mol gaz {koyu:24,5 litre} hacim kaplar ve {koyu:n = V / 24,5} bağıntısı uygulanır."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "22,4 Litre Kuralı Yalnızca Gazlar İçin Geçerlidir!",
-    "metin": "Normal koşullarda (0 °C, 1 atm) 1 mol maddenin 22,4 L hacim kaplaması YALNIZCA GAZ fazındaki maddeler için geçerlidir. Örneğin 0 °C'de su (H2O) katı/sıvı hâlde olduğundan 'NK'da 1 mol H2O sıvısı 22,4 L hacim kaplar' ifadesi kesinlikle yanlıştır!"
-   }
-  },
-  {
-   "baslik": "Bileşiklerin Mol Analizi ve Karışım Problemleri",
-   "metin": [
-    "Bir bileşiğin mol sayısı bilindiğinde, o bileşiğin yapısındaki her bir elementin mol sayısı, kütlesi ve atom sayısı ayrı ayrı analiz edilebilir. Genel olarak {koyu:n mol AxBy bileşiğinde}: n . x mol A atomu ve n . y mol B atomu olmak üzere toplam {koyu:n . (x + y) mol atom} bulunur. Örneğin 0,5 mol C3H8 (propan) gazında; 0,5 . 3 = 1,5 mol C atomu ve 0,5 . 8 = 4 mol H atomu olmak üzere toplam 5,5 mol atom (5,5 . N_A tane atom) vardır.\n\nİki veya daha fazla gazdan oluşan {koyu:karışım problemlerinde} ise her bileşenin mol sayısı ayrı ayrı (x mol ve y mol şeklinde) adlandırılarak toplam mol sayısı, toplam kütle veya toplam atom sayısı üzerinden iki bilinmeyenli denklem kurulur. Böylece karışımın molce yüzdesi ile kütlece yüzdesi kolayca hesaplanır."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Akb — Gram — Mol Dönüşüm Özeti",
-    "metin": "Herhangi bir X maddesinin mol kütlesi M_A g/mol ise:\n• 1 tane X taneciği = M_A akb = (M_A / N_A) gram\n• 1 mol X taneciği = N_A tane X = M_A gram = (M_A . N_A) akb"
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 235\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"235\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#2874a6\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Bileşiklerin 1 Molündeki Atom Mol Sayısı Analizi</text><rect x=\"18\" y=\"54\" width=\"314\" height=\"165\" rx=\"10\" fill=\"#eaf2f8\" stroke=\"#2874a6\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#2874a6\"/><text x=\"175\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">1 Mol CH4 (Metan) Molekülü Analizi</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• 1 mol (NA tane) CH4 molekülü içerir.</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• 1 mol C atomu (12 gram) içerir.</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• 4 mol H atomu (4 gram) içerir.</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• Toplam 1 + 4 = 5 mol (5·NA tane) atom içerir.</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Toplam kütlesi MA = 12 + 4 = 16 gramdır.</text><rect x=\"348\" y=\"54\" width=\"314\" height=\"165\" rx=\"10\" fill=\"#e8f8f5\" stroke=\"#117864\" stroke-width=\"1.6\"/><rect x=\"348\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#117864\"/><text x=\"505\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Aynı Sayıda Tanecik İçeren Örnekler</text><text x=\"360\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Eşit molde alınan farklı maddelerin içerdiği</text><text x=\"360\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  molekül sayıları eşittir ancak kütleleri farklıdır!</text><text x=\"360\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Örn: 1 mol H2 = 2 g iken 1 mol O2 = 32 gramdır;</text><text x=\"360\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  kütle oranı (2/32 = 1/16) doğrudan taneciklerin</text><text x=\"360\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">  bağıl kütleleri oranına eşittir.</text></svg>"
-  },
-  {
-   "baslik": "Mol Kavramının Endüstri, Eczacılık ve Günlük Yaşamdaki Önemi",
-   "metin": [
-    "Mol kavramı, kimya laboratuvarlarından ilaç endüstrisine, gübre üretiminden çevre mühendisliğinde hava kalitesi ölçümlerine kadar her yerde mikroskobik dünya ile terazi arasındaki köprüdür. Bir ilaç fabrikasında sentezlenen etken maddenin hangi oranda tepkimeye gireceği molekül sayılarıyla (mol oranlarıyla) belirlenir; ancak kimyager bu molekülleri {koyu:mol kütlesi (M_A)} sayesinde gram veya kilogram cinsinden tartarak reaktöre koyar.\n\nBenzer biçimde atmosferdeki sera gazı (CO2, CH4) emisyonları veya içme suyundaki mineral derişimleri analiz edilirken ölçülen kütle ve hacim değerleri mol sayısına dönüştürülerek standart güvenlik sınırlarıyla karşılaştırılır."
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "baslik": "23 Ekim Dünya Mol Günü",
-    "metin": "Avogadro sayısına (6,02 . 10²³) atıfla her yıl 10. ayın (Ekim) 23. günü sabah 06:02 ile akşam 18:02 saatleri arası kimya dünyasında 'Dünya Mol Günü' olarak kutlanmaktadır."
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "22 gram CO2 gazı için; a) Kaç moldür? b) Kaç tane molekül içerir? c) Toplam kaç mol atom içerir? d) Normal koşullarda (NK) kaç litre hacim kaplar? (C: 12, O: 16 g/mol, Avogadro sayısı: N_A)",
-   "cevap": "Önce CO2 bileşiğinin mol kütlesini (M_A) bulalım:\nM_A(CO2) = 12 + 2 . 16 = 44 g/mol.\na) Mol sayısı: n = m / M_A = 22 / 44 = 0,5 mol CO2.\nb) Molekül sayısı: N = n . N_A = 0,5 . N_A tane CO2 molekülü.\nc) 1 mol CO2'de (1 C + 2 O = 3 mol atom) bulunduğuna göre, 0,5 mol CO2'de 0,5 . 3 = 1,5 mol atom bulunur.\nd) NK'da hacim: V = n . 22,4 = 0,5 . 22,4 = 11,2 litre hacim kaplar."
-  },
-  {
-   "soru": "Yapısında toplam 1,2 . N_A tane atom bulunduran SO3 gazı kaç gramdır? (S: 32, O: 16 g/mol)",
-   "cevap": "Önce toplam atomun mol sayısını bulalım:\nn_atom = (1,2 . N_A) / N_A = 1,2 mol atom.\n1 mol SO3 bileşiğinde (1 mol S + 3 mol O) toplam 4 mol atom vardır.\nBileşiğin mol sayısı n olsun: n . 4 = 1,2 => n = 0,3 mol SO3 bileşiği vardır.\nSO3'ün mol kütlesi: M_A(SO3) = 32 + 3 . 16 = 80 g/mol.\nKütle: m = n . M_A = 0,3 . 80 = 24 gram bulunur."
-  },
-  {
-   "soru": "Bakır (Cu) elementinin doğada iki kararlı izotopu bulunmaktadır: 63Cu izotopunun doğada bulunma bolluğu %70, 65Cu izotopunun doğada bulunma bolluğu ise %30'dur. Buna göre bakırın ortalama atom kütlesi kaç akb'dir?",
-   "cevap": "Ortalama Atom Kütlesi = (A1 . %Y1 + A2 . %Y2) / 100 bağıntısını uygulayalım:\nOrtalama Atom Kütlesi = (63 . 70 + 65 . 30) / 100 = (4410 + 1950) / 100 = 6360 / 100 = 63,6 akb (veya g/mol) bulunur."
-  },
-  {
-   "soru": "Normal koşullarda 5,6 litre hacim kaplayan C2H6 gazı ile kaç mol CH4 gazının içerdiği hidrojen atomu sayıları birbirine eşittir?",
-   "cevap": "NK'da 5,6 litre C2H6 gazının mol sayısı:\nn(C2H6) = 5,6 / 22,4 = 0,25 mol.\n0,25 mol C2H6 gazındaki hidrojen atomu mol sayısı: n_H = 0,25 . 6 = 1,5 mol H atomu.\nCH4 gazının mol sayısına x mol dersek, içerdiği hidrojen atomu mol sayısı 4x mol olur:\n4x = 1,5 => x = 1,5 / 4 = 0,375 mol CH4 gazı gerekir."
-  },
-  {
-   "soru": "1 tane CH4 molekülünün kütlesini a) akb cinsinden, b) gram cinsinden ifade ediniz. (C: 12, H: 1 g/mol, Avogadro sayısı: N_A)",
-   "cevap": "CH4'ün mol kütlesi M_A = 12 + 4 . 1 = 16 g/mol'dür.\na) 1 tane CH4 molekülünün kütlesi akb cinsinden doğrudan M_A değerine eşittir: 16 akb.\nb) 1 gram = N_A akb olduğundan 1 akb = (1 / N_A) gramdır. O hâlde 1 tane CH4 molekülü (16 / N_A) gramdır."
-  }
- ],
- "etkinlikler": [
-  {
-   "soru": "0,4 mol N2O5 bileşiği ile ilgili aşağıdaki ifadelerden hangisi yanlıştır? (N: 14, O: 16 g/mol, Avogadro sayısı: N_A)",
-   "secenekler": [
-    "0,8 mol azot (N) atomu içerir.",
-    "2 . N_A tane oksijen (O) atomu içerir.",
-    "Toplam 2,8 mol atom içerir.",
-    "Kütlesi 43,2 gramdır.",
-    "0,4 tane N2O5 molekülü içerir."
-   ],
-   "dogru": 4,
-   "aciklama": "0,4 mol N2O5 bileşiği 0,4 tane değil, 0,4 . N_A tane molekül içerir. M_A(N2O5) = 2.14 + 5.16 = 108 g/mol olup kütlesi 0,4 . 108 = 43,2 gramdır.",
-   "tur": "coktan"
-  },
-  {
-   "soru": "Atom kütlesi 24 g/mol olan magnezyum (Mg) elementi için '24 akb Mg' ifadesi aşağıdakilerden hangisine karşılık gelir?",
-   "secenekler": [
-    "1 mol Mg atomunun kütlesi",
-    "1 tane Mg atomunun kütlesi",
-    "N_A tane Mg atomunun kütlesi",
-    "24 gram Mg atomunun kütlesi",
-    "24 mol Mg atomunun kütlesi"
-   ],
-   "dogru": 1,
-   "aciklama": "M_A = 24 g/mol olan Mg için 1 tane Mg atomunun kütlesi 24 akb (yani 24 / N_A gram), 1 mol Mg atomunun kütlesi ise 24 gramdır.",
-   "tur": "coktan"
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "10-kimya-5",
+  "sinif": 10,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 5,
+  "tarih": "12-16 Ekim 2026",
+  "yayin_tarihi": "2026-10-14",
+  "unite": "ETKİLEŞİM",
+  "konu": "Mol Kavramı: Avogadro Sayısı, Atomik Kütle Birimi, Mol Kütlesi ve Mol Hesaplamaları",
+  "ciktilar": [
+    "KİM.10.1.4.a — Mol kavramını, Avogadro sayısını, atomik kütle birimini (akb) ve mol kütlesini (M_A) tanecik-kütle ilişkisi üzerinden açıklar.",
+    "KİM.10.1.4.b — Element ve bileşiklerin mol sayısı, kütle, tanecik sayısı ve normal/standart koşullardaki gaz hacmi arasında nicel dönüşümler yapar.",
+    "KİM.10.1.4.c — İzotop atomların doğadaki bulunma yüzdelerini kullanarak ortalama atom kütlesini hesaplar."
+  ],
+  "giris": "Bir damla suda yaklaşık 1,67 sekstilyon (1,67 . 10²¹) su molekülü bulunur; böylesine hayal sınırlarını aşan sayıdaki atom ve molekülleri laboratuvarda tek tek saymak imkânsızdır. Günlük yaşamda yumurtaları 'düzine' (12 adet), kâğıtları 'top' (500 adet) ile gruplayarak saydığımız gibi, kimyacılar da gözle görülemeyen mikroskobik tanecikleri laboratuvarda tartılabilir makroskobik kütlelere bağlamak için 'mol' adı verilen evrensel bir sayma birimi kullanırlar. Bu hafta kimyasal hesaplamaların kalbi olan mol kavramını, Avogadro sayısını, atomik kütle birimini ve mol dönüşüm bağıntılarını öğreneceğiz.",
+  "ozet": [
+    "12 gram karbon-12 (12C) izotopunun içerdiği atom sayısına Avogadro sayısı (N_A = 6,02 . 10²³) ve bu sayıdaki tanecik topluluğuna 1 mol denir.",
+    "1 tane 12C atomunun kütlesinin 12'de birine 1 atomik kütle birimi (1 akb) denir; 1 gram = N_A akb (6,02 . 10²³ akb) eşitliği mikroskobik ve makroskobik kütle birimleri arasındaki köprüdür.",
+    "Maddenin 1 molünün gram cinsinden kütlesine mol kütlesi (M_A) denir ve birimi g/mol'dür.",
+    "Mol sayısı (n); kütle (n = m / M_A), tanecik sayısı (n = N / N_A) ve gaz hacmi (NK'da n = V / 22,4; Oda koşullarında n = V / 24,5) bağıntılarıyla hesaplanır.",
+    "1 mol bileşikteki toplam atomların mol sayısı, bileşiğin 1 formülündeki atom sayısı ile bileşiğin mol sayısının çarpımına eşittir.",
+    "Doğada birden fazla izotopu bulunan elementlerin ortalama atom kütlesi, izotopların kütle numaraları ile doğadaki bolluk yüzdelerinin ağırlıklı ortalaması alınarak hesaplanır."
+  ],
+  "bolumler": [
     {
-     "metin": "1 gram kütle, Avogadro sayısı (6,02 . 10²³) kadar atomik kütle birimine (akb) eşittir.",
-     "dogru": true,
-     "aciklama": "1 akb = (1 / N_A) gram olduğundan içler dışlar çarpımıyla 1 gram = N_A akb eşitliği elde edilir."
+      "baslik": "Mol Kavramı ve Avogadro Sayısı (N_A)",
+      "metin": [
+        "Uluslararası Birimler Sisteminde (SI) {koyu:madde miktarının} birimi {koyu:mol} olarak tanımlanır. Günlük hayatta 1 düzine hangi nesne olursa olsun 12 adedi ifade ediyorsa, kimyada da {koyu:1 mol} hangi tanecik türünden (atom, molekül, iyon, elektron veya proton) bahsedilirse bahsedilsin tam olarak {koyu:6,02 . 10²³ tane} taneciği ifade eder. İtalyan bilim insanı Amedeo Avogadro'nun onuruna bu devasa sayıya {koyu:Avogadro sayısı} denir ve {koyu:N_A} (veya N0) sembolüyle gösterilir.\n\nBilimsel tanımda referans olarak doğada en kararlı izotoplardan biri olan {koyu:karbon-12 (12C)} izotopu seçilmiştir: Tam 12 gram 12C izotopunda bulunan karbon atomu sayısı 6,02 . 10²³ adettir ve bu miktar 1 mol olarak kabul edilir. Örneğin 1 mol He elementi N_A tane helyum atomu içerirken, 1 mol H2O bileşiği N_A tane su molekülü içerir."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Molekül Моlü ile Atom Molünü Ayırt Etme",
+        "metin": "Verilen 1 mol H2SO4 bileşiği denildiğinde 1 mol molekül (N_A tane H2SO4 molekülü) anlaşılır. Ancak 1 tane H2SO4 molekülünde 2 hidrojen, 1 kükürt ve 4 oksijen olmak üzere 7 atom bulunduğundan, 1 mol H2SO4 bileşiği toplam 7 mol atom (7 . N_A tane atom) içerir!"
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 245\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"245\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#1a5276\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Mol Kavramı ve Avogadro Sayısı (NA) (10.1.4)</text><rect x=\"18\" y=\"54\" width=\"314\" height=\"175\" rx=\"10\" fill=\"#eaf2f8\" stroke=\"#1a5276\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#1a5276\"/><text x=\"175\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Günlük Hayattan Kimyaya Sayma Birimleri</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• 1 çift = 2 adet  |  1 düzine = 12 adet</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• Atom ve moleküller çok küçük olduğu için</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">  tek tek sayılamaz; 'mol' paketiyle ifade edilir.</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• 1 mol = 6,02 × 10²³ adet tanecik içerir.</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Bu sayıya Avogadro Sayısı (NA veya N0) denir.</text><rect x=\"348\" y=\"54\" width=\"314\" height=\"175\" rx=\"10\" fill=\"#e8f8f5\" stroke=\"#117864\" stroke-width=\"1.6\"/><rect x=\"348\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#117864\"/><text x=\"505\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">1 Mol Taneciğin Operasyonel Tanımı</text><text x=\"360\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Standart referans izotop: Karbon-12 (¹²C).</text><text x=\"360\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• Tam 12 gram ¹²C izotopunun içerdiği atom</text><text x=\"360\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">  sayısı kadar (6,02 × 10²³ tane) tanecik içeren</text><text x=\"360\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  madde miktarına 1 MOL denir.</text><text x=\"360\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Mol sayısı 'n' sembolü ile gösterilir.</text></svg>"
     },
     {
-     "metin": "Normal koşullarda (0 °C ve 1 atm) bulunan 1 mol saf demir (Fe) katısı 22,4 litre hacim kaplar.",
-     "dogru": false,
-     "aciklama": "Normal koşullarda 1 mol maddenin 22,4 L hacim kaplaması yalnızca gazlar için geçerlidir; katı ve sıvılar için bu bağıntı kullanılamaz."
-    }
-   ]
-  },
-  {
-   "soru": "Mol kavramına ait büyüklükleri ve sembolleri doğru tanımlarıyla eşleştiriniz.",
-   "aciklama": "N_A, akb, M_A ve molar gaz hacimleri mol hesaplamalarının temel sabitleridir.",
-   "tur": "eslestir",
-   "ciftler": [
-    [
-     "Avogadro sayısı (N_A)",
-     "12 gram karbon-12 izotopundaki atom sayısı (6,02 . 10²³)"
-    ],
-    [
-     "Atomik kütle birimi (1 akb)",
-     "1 tane karbon-12 atomunun kütlesinin 12'de biri"
-    ],
-    [
-     "Mol kütlesi (M_A)",
-     "Bir maddenin 1 molünün gram cinsinden kütlesi (g/mol)"
-    ],
-    [
-     "24,5 Litre",
-     "Standart (oda) koşullarında (25 °C, 1 atm) 1 mol gazın hacmi"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
-   "cumleler": [
-    {
-     "metin": "Normal koşullarda (0 °C sıcaklık ve 1 atm basınçta) 1 mol ideal gaz ___ litre hacim kaplar.",
-     "cevap": "22,4"
+      "baslik": "Atomik Kütle Birimi (akb), Bağıl Atom Kütlesi ve Mol Kütlesi (M_A)",
+      "metin": [
+        "Tek bir atomun kütlesi gram cinsinden yaklaşık 10^-24 gram mertebesinde olduğu için tekil atom ve moleküllerin kütlelerini ifade ederken gram yerine çok daha küçük bir birim olan {koyu:atomik kütle birimi (akb)} (veya Dalton, Da) kullanılır. Tanım olarak {koyu:1 tane 12C atomunun kütlesinin 1/12'sine 1 akb} denir; dolayısıyla 1 tane 12C atomunun kütlesi 12 akb'dir. 1 mol (yani N_A tane) 12C atomu ise 12 gram geldiğine göre: N_A . (12 akb) = 12 gram eşitliğinden {koyu:1 gram = N_A akb} ve {koyu:1 akb = (1 / N_A) gram} dönüşümü elde edilir.\n\nBir maddenin {koyu:1 molünün} (6,02 . 10²³ tanesinin) gram cinsinden kütlesine ise {koyu:mol kütlesi (M_A)} denir ve birimi {koyu:g/mol}'dür. Örneğin O = 16 verildiğinde; {koyu:1 tane O atomu = 16 akb = (16 / N_A) gram} iken, {koyu:1 mol O atomu = 16 gram = 16 . N_A akb} olur. Bileşiklerin mol kütlesi, formüldeki elementlerin atom kütlelerinin sayıca toplanmasıyla bulunur (örneğin H = 1, O = 16 için H2O'nun mol kütlesi M_A = 2 . 1 + 16 = 18 g/mol'dür)."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "'1 Tane' ve '1 Mol' İfadelerine Çok Dikkat Edin!",
+        "metin": "Sorularda '1 tane su molekülü 18 gramdır' ifadesi YANLIŞTIR! 1 tane H2O molekülü yalnızca 18 akb (yani 18 / N_A gram) kütleye sahiptir; 18 gram olan 1 mol (6,02 . 10²³ tane) H2O molekülüdür."
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 245\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"245\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#1e8449\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Bağıl Atom Kütlesi, Atomik Kütle Birimi (akb) ve Mol Kütlesi (MA)</text><rect x=\"18\" y=\"54\" width=\"314\" height=\"175\" rx=\"10\" fill=\"#e9f7ef\" stroke=\"#1e8449\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#1e8449\"/><text x=\"175\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Atomik Kütle Birimi (akb / u)</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• 1 tane ¹²C atomunun kütlesinin 1/12'sine</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  1 atomik kütle birimi (1 akb) denir.</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• 1 tane ¹⁶O atomunun kütlesi = 16 akb'dir.</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• 1 tane H2O molekülünün kütlesi = 18 akb'dir.</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Dönüşüm: 1 gram = NA akb = 6,02 × 10²³ akb!</text><rect x=\"348\" y=\"54\" width=\"314\" height=\"175\" rx=\"10\" fill=\"#fef9e7\" stroke=\"#b9770e\" stroke-width=\"1.6\"/><rect x=\"348\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#b9770e\"/><text x=\"505\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Mol Kütlesi (MA — g/mol)</text><text x=\"360\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• 1 mol (6,02 × 10²³ tane) maddenin gram</text><text x=\"360\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  cinsinden kütlesine MOL KÜTLESİ (MA) denir.</text><text x=\"360\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• 1 mol O atomu = 16 g/mol</text><text x=\"360\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• 1 mol H2O molekülü = 2(1) + 16 = 18 g/mol</text><text x=\"360\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• 1 mol CaCO3 = 40 + 12 + 3(16) = 100 g/mol.</text></svg>"
     },
     {
-     "metin": "Doğada birden fazla izotopu bulunan bir elementin izotop kütle numaraları ile bolluk yüzdelerinin ağırlıklı ortalamasına ___ atom kütlesi denir.",
-     "cevap": "ortalama"
+      "baslik": "İzotop Atomlar ve Ortalama Atom Kütlesi Hesabı",
+      "metin": [
+        "Periyodik tabloya baktığımızda birçok elementin atom kütlesinin tam sayı değil, virgüllü (ondalıklı) sayılar olduğunu görürüz (örneğin Klor: 35,5; Bakır: 63,5). Bunun nedeni, doğada pek çok elementin proton sayıları aynı fakat nötron sayıları (dolayısıyla kütle numaraları) farklı olan {koyu:izotop atomlar} hâlinde bulunmasıdır. Periyodik tabloda yazan değer, bu izotopların doğada bulunma (bolluk) yüzdeleri dikkate alınarak hesaplanan {koyu:ortalama atom kütlesidir}.\n\nBir elementin doğadaki izotoplarının kütle numaraları A1, A2 ve doğada bulunma yüzdeleri %Y1, %Y2 ise ortalama atom kütlesi {koyu:Ortalama Atom Kütlesi = (A1 . Y1 + A2 . Y2) / 100} bağıntısıyla hesaplanır. Hesaplanan ortalama atom kütlesi her zaman en hafif izotop ile en ağır izotopun kütle numaraları arasında bir değer alır ve doğada bolluk yüzdesi daha yüksek olan izotopa daha yakındır."
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "baslik": "Klorun Atom Kütlesi Neden 35,5'tir?",
+        "metin": "Klor doğada yaklaşık %75 oranında 35Cl ve %25 oranında 37Cl izotopları hâlinde bulunur. Ortalama atom kütlesi = (35 . 75 + 37 . 25) / 100 = 35,5 akb (veya g/mol) olarak bulunur."
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 240\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"240\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#6c3483\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Mol Sayısı (n), Kütle (m) ve Tanecik Sayısı (N) Dönüşüm Bağıntıları</text><rect x=\"18\" y=\"54\" width=\"314\" height=\"170\" rx=\"10\" fill=\"#f5eef8\" stroke=\"#6c3483\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#6c3483\"/><text x=\"175\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">1. Tanecik Sayısı İle Mol İlişkisi</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• n = N / NA</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  (Mol sayısı = Tanecik sayısı / Avogadro sayısı)</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• N = n · NA</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• Örnek: 3,01 × 10²³ tane He atomu</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">  n = (3,01 × 10²³) / (6,02 × 10²³) = 0,5 moldür.</text><rect x=\"348\" y=\"54\" width=\"314\" height=\"170\" rx=\"10\" fill=\"#fdedec\" stroke=\"#922b21\" stroke-width=\"1.6\"/><rect x=\"348\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#922b21\"/><text x=\"505\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">2. Kütle İle Mol İlişkisi</text><text x=\"360\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• n = m / MA</text><text x=\"360\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  (Mol sayısı = Verilen kütle [g] / Mol kütlesi [g/mol])</text><text x=\"360\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• m = n · MA</text><text x=\"360\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• Örnek: 0,5 mol H2O (MA = 18 g/mol) kütlesi</text><text x=\"360\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">  m = 0,5 · 18 = 9 gramdır.</text></svg>"
+    },
+    {
+      "baslik": "Mol Sayısı — Kütle — Tanecik Sayısı — Gaz Hacmi Dönüşümleri",
+      "metin": [
+        "Kimyasal hesaplamalarda {koyu:mol sayısı (n)} tüm niceliklerin kesiştiği merkez istasyondur. Mol sayısını bulmak için üç temel bağıntı kullanılır:\n1) {koyu:Kütle - Mol İlişkisi}: Verilen kütle (m, gram) mol kütlesine (M_A, g/mol) bölünür: {koyu:n = m / M_A}.\n2) {koyu:Tanecik Sayısı - Mol İlişkisi}: Verilen tanecik sayısı (N), Avogadro sayısına (N_A) bölünür: {koyu:n = N / N_A}.\n\n3) {koyu:Gaz Hacmi - Mol İlişkisi}: Avogadro Yasası'na göre aynı sıcaklık ve basınç altında tüm ideal gazların eşit mol sayıları eşit hacim kaplar. {koyu:Normal Koşullarda (NK veya NŞA: 0 °C sıcaklık ve 1 atm basınç)} 1 mol gaz {koyu:22,4 litre} hacim kaplar ve {koyu:n = V / 22,4} bağıntısı kullanılır. {koyu:Standart (Oda) Koşullarında (25 °C sıcaklık ve 1 atm basınç)} ise 1 mol gaz {koyu:24,5 litre} hacim kaplar ve {koyu:n = V / 24,5} bağıntısı uygulanır."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "22,4 Litre Kuralı Yalnızca Gazlar İçin Geçerlidir!",
+        "metin": "Normal koşullarda (0 °C, 1 atm) 1 mol maddenin 22,4 L hacim kaplaması YALNIZCA GAZ fazındaki maddeler için geçerlidir. Örneğin 0 °C'de su (H2O) katı/sıvı hâlde olduğundan 'NK'da 1 mol H2O sıvısı 22,4 L hacim kaplar' ifadesi kesinlikle yanlıştır!"
+      }
+    },
+    {
+      "baslik": "Bileşiklerin Mol Analizi ve Karışım Problemleri",
+      "metin": [
+        "Bir bileşiğin mol sayısı bilindiğinde, o bileşiğin yapısındaki her bir elementin mol sayısı, kütlesi ve atom sayısı ayrı ayrı analiz edilebilir. Genel olarak {koyu:n mol AxBy bileşiğinde}: n . x mol A atomu ve n . y mol B atomu olmak üzere toplam {koyu:n . (x + y) mol atom} bulunur. Örneğin 0,5 mol C3H8 (propan) gazında; 0,5 . 3 = 1,5 mol C atomu ve 0,5 . 8 = 4 mol H atomu olmak üzere toplam 5,5 mol atom (5,5 . N_A tane atom) vardır.\n\nİki veya daha fazla gazdan oluşan {koyu:karışım problemlerinde} ise her bileşenin mol sayısı ayrı ayrı (x mol ve y mol şeklinde) adlandırılarak toplam mol sayısı, toplam kütle veya toplam atom sayısı üzerinden iki bilinmeyenli denklem kurulur. Böylece karışımın molce yüzdesi ile kütlece yüzdesi kolayca hesaplanır."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Akb — Gram — Mol Dönüşüm Özeti",
+        "metin": "Herhangi bir X maddesinin mol kütlesi M_A g/mol ise:\n• 1 tane X taneciği = M_A akb = (M_A / N_A) gram\n• 1 mol X taneciği = N_A tane X = M_A gram = (M_A . N_A) akb"
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 235\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"235\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#2874a6\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Bileşiklerin 1 Molündeki Atom Mol Sayısı Analizi</text><rect x=\"18\" y=\"54\" width=\"314\" height=\"165\" rx=\"10\" fill=\"#eaf2f8\" stroke=\"#2874a6\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#2874a6\"/><text x=\"175\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">1 Mol CH4 (Metan) Molekülü Analizi</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• 1 mol (NA tane) CH4 molekülü içerir.</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• 1 mol C atomu (12 gram) içerir.</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• 4 mol H atomu (4 gram) içerir.</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• Toplam 1 + 4 = 5 mol (5·NA tane) atom içerir.</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Toplam kütlesi MA = 12 + 4 = 16 gramdır.</text><rect x=\"348\" y=\"54\" width=\"314\" height=\"165\" rx=\"10\" fill=\"#e8f8f5\" stroke=\"#117864\" stroke-width=\"1.6\"/><rect x=\"348\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#117864\"/><text x=\"505\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Aynı Sayıda Tanecik İçeren Örnekler</text><text x=\"360\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Eşit molde alınan farklı maddelerin içerdiği</text><text x=\"360\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  molekül sayıları eşittir ancak kütleleri farklıdır!</text><text x=\"360\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Örn: 1 mol H2 = 2 g iken 1 mol O2 = 32 gramdır;</text><text x=\"360\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  kütle oranı (2/32 = 1/16) doğrudan taneciklerin</text><text x=\"360\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">  bağıl kütleleri oranına eşittir.</text></svg>"
+    },
+    {
+      "baslik": "Mol Kavramının Endüstri, Eczacılık ve Günlük Yaşamdaki Önemi",
+      "metin": [
+        "Mol kavramı, kimya laboratuvarlarından ilaç endüstrisine, gübre üretiminden çevre mühendisliğinde hava kalitesi ölçümlerine kadar her yerde mikroskobik dünya ile terazi arasındaki köprüdür. Bir ilaç fabrikasında sentezlenen etken maddenin hangi oranda tepkimeye gireceği molekül sayılarıyla (mol oranlarıyla) belirlenir; ancak kimyager bu molekülleri {koyu:mol kütlesi (M_A)} sayesinde gram veya kilogram cinsinden tartarak reaktöre koyar.\n\nBenzer biçimde atmosferdeki sera gazı (CO2, CH4) emisyonları veya içme suyundaki mineral derişimleri analiz edilirken ölçülen kütle ve hacim değerleri mol sayısına dönüştürülerek standart güvenlik sınırlarıyla karşılaştırılır."
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "baslik": "23 Ekim Dünya Mol Günü",
+        "metin": "Avogadro sayısına (6,02 . 10²³) atıfla her yıl 10. ayın (Ekim) 23. günü sabah 06:02 ile akşam 18:02 saatleri arası kimya dünyasında 'Dünya Mol Günü' olarak kutlanmaktadır."
+      }
     }
-   ],
-   "fazla": [
-    "kavram",
-    "ilke"
-   ]
-  },
-  {
-   "soru": "Bir kimya öğrencisi laboratuvarda '16 akb CH4', '16 gram CH4' ve 'Normal koşullarda 11,2 L CH4 gazı' yazılı üç örnek kartını kütlelerine göre küçükten büyüğe doğru sıralamak istiyor. Her bir karttaki CH4 miktarını gram ve mol cinsinden hesaplayarak doğru sıralamayı açıklayınız. (C: 12, H: 1 g/mol, Avogadro sayısı: N_A)",
-   "ipucu": "CH4'ün mol kütlesinin M_A = 16 g/mol olduğunu ve 1 akb = (1 / N_A) gram eşitliğini kullanınız.",
-   "tur": "ogretici",
-   "cevap": "CH4 bileşiğinin mol kütlesi M_A = 12 + 4 . 1 = 16 g/mol'dür.\n1. Kart (16 akb CH4): 1 tane CH4 molekülünü ifade eder; mol sayısı (1 / N_A) mol, kütlesi ise (16 / N_A) gramdır (en küçük kütle).\n2. Kart (16 gram CH4): n = 16 / 16 = 1 mol CH4 gazıdır ve kütlesi 16 gramdır (en büyük kütle).\n3. Kart (NK'da 11,2 L CH4 gazı): n = 11,2 / 22,4 = 0,5 mol CH4 gazıdır; kütlesi m = 0,5 . 16 = 8 gramdır.\nKütlelerine göre küçükten büyüğe sıralama: 16 akb CH4 (16/N_A g) < NK'da 11,2 L CH4 (8 g) < 16 gram CH4 (16 g).",
-   "ipuclari": [
-    "Konunun temel kavramlarını ve tanımlarını hatırlayınız.",
-    "Sebep-sonuç ilişkisini kurarak değerlendiriniz."
-   ]
-  }
- ]
+  ],
+  "ornekler": [
+    {
+      "soru": "Verilen 22 gram CO2 gazı için; a) Kaç moldür? b) Kaç tane molekül içerir? c) Toplam kaç mol atom içerir? d) Normal koşullarda (NK) kaç litre hacim kaplar? (C: 12, O: 16 g/mol, Avogadro sayısı: N_A)",
+      "cevap": "Önce CO2 bileşiğinin mol kütlesini (M_A) bulalım:\nM_A(CO2) = 12 + 2 . 16 = 44 g/mol.\na) Mol sayısı: n = m / M_A = 22 / 44 = 0,5 mol CO2.\nb) Molekül sayısı: N = n . N_A = 0,5 . N_A tane CO2 molekülü.\nc) 1 mol CO2'de (1 C + 2 O = 3 mol atom) bulunduğuna göre, 0,5 mol CO2'de 0,5 . 3 = 1,5 mol atom bulunur.\nd) NK'da hacim: V = n . 22,4 = 0,5 . 22,4 = 11,2 litre hacim kaplar."
+    },
+    {
+      "soru": "Yapısında toplam 1,2 . N_A tane atom bulunduran SO3 gazı kaç gramdır? (S: 32, O: 16 g/mol)",
+      "cevap": "Önce toplam atomun mol sayısını bulalım:\nn_atom = (1,2 . N_A) / N_A = 1,2 mol atom.\n1 mol SO3 bileşiğinde (1 mol S + 3 mol O) toplam 4 mol atom vardır.\nBileşiğin mol sayısı n olsun: n . 4 = 1,2 => n = 0,3 mol SO3 bileşiği vardır.\nSO3'ün mol kütlesi: M_A(SO3) = 32 + 3 . 16 = 80 g/mol.\nKütle: m = n . M_A = 0,3 . 80 = 24 gram bulunur."
+    },
+    {
+      "soru": "Bakır (Cu) elementinin doğada iki kararlı izotopu bulunmaktadır: 63Cu izotopunun doğada bulunma bolluğu %70, 65Cu izotopunun doğada bulunma bolluğu ise %30'dur. Buna göre bakırın ortalama atom kütlesi kaç akb'dir?",
+      "cevap": "Ortalama Atom Kütlesi = (A1 . %Y1 + A2 . %Y2) / 100 bağıntısını uygulayalım:\nOrtalama Atom Kütlesi = (63 . 70 + 65 . 30) / 100 = (4410 + 1950) / 100 = 6360 / 100 = 63,6 akb (veya g/mol) bulunur."
+    },
+    {
+      "soru": "Normal koşullarda 5,6 litre hacim kaplayan C2H6 gazı ile kaç mol CH4 gazının içerdiği hidrojen atomu sayıları birbirine eşittir?",
+      "cevap": "NK'da 5,6 litre C2H6 gazının mol sayısı:\nn(C2H6) = 5,6 / 22,4 = 0,25 mol.\n0,25 mol C2H6 gazındaki hidrojen atomu mol sayısı: n_H = 0,25 . 6 = 1,5 mol H atomu.\nCH4 gazının mol sayısına x mol dersek, içerdiği hidrojen atomu mol sayısı 4x mol olur:\n4x = 1,5 => x = 1,5 / 4 = 0,375 mol CH4 gazı gerekir."
+    },
+    {
+      "soru": "Verilen 1 tane CH4 molekülünün kütlesini a) akb cinsinden, b) gram cinsinden ifade ediniz. (C: 12, H: 1 g/mol, Avogadro sayısı: N_A)",
+      "cevap": "CH4'ün mol kütlesi M_A = 12 + 4 . 1 = 16 g/mol'dür.\na) 1 tane CH4 molekülünün kütlesi akb cinsinden doğrudan M_A değerine eşittir: 16 akb.\nb) 1 gram = N_A akb olduğundan 1 akb = (1 / N_A) gramdır. O hâlde 1 tane CH4 molekülü (16 / N_A) gramdır."
+    },
+    {
+      "soru": "‘Mol Kavramı ve Avogadro Sayısı (N_A)’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
+      "cevap": "Uluslararası Birimler Sisteminde (SI) {koyu:madde miktarının} birimi {koyu:mol} olarak tanımlanır. Günlük hayatta 1 düzine hangi nesne olursa olsun 12 adedi ifade ediyorsa, kimyada da {koyu:1 mol} hangi tanecik türünden (atom, molekül, iyon, elektron veya proton) bahsedilirse bahsedilsin tam olarak {koyu:6,02 . 10²³ tane} taneciği ifade eder. İtalyan bilim insanı Amedeo Avogadro'nun onuruna bu devasa sayıya {koyu:Avogadro sayısı} denir ve {koyu:N_A} (veya N0) sembolüyle gösterilir.\n\nBilimsel tanımda referans olarak doğada en kararlı izotoplardan biri olan {koyu:karbon-12 (12C)} izotopu seçilmiştir: Tam 12 gram 12C izotopunda bulunan karbon atomu sayısı 6,02 . 10²³ adettir ve bu miktar 1 mol olarak kabul edilir. Örneğin 1 mol He elementi N_A tane helyum atomu içerirken, 1 mol H2O bileşiği N_A tane su molekülü içerir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Verilen 0,4 mol N2O5 bileşiği ile ilgili aşağıdaki ifadelerden hangisi yanlıştır? (N: 14, O: 16 g/mol, Avogadro sayısı: N_A)",
+      "secenekler": [
+        "0,4 tane N2O5 molekülü içerir.",
+        "2 . N_A tane oksijen (O) atomu içerir.",
+        "Toplam 2,8 mol atom içerir.",
+        "Kütlesi 43,2 gramdır.",
+        "0,8 mol azot (N) atomu içerir."
+      ],
+      "dogru": 0,
+      "aciklama": "0,4 mol N2O5 bileşiği 0,4 tane değil, 0,4 . N_A tane molekül içerir. M_A(N2O5) = 2.14 + 5.16 = 108 g/mol olup kütlesi 0,4 . 108 = 43,2 gramdır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Atom kütlesi 24 g/mol olan magnezyum (Mg) elementi için '24 akb Mg' ifadesi aşağıdakilerden hangisine karşılık gelir?",
+      "secenekler": [
+        "1 mol Mg atomunun kütlesi",
+        "1 tane Mg atomunun kütlesi",
+        "N_A tane Mg atomunun kütlesi",
+        "24 gram Mg atomunun kütlesi",
+        "24 mol Mg atomunun kütlesi"
+      ],
+      "dogru": 1,
+      "aciklama": "M_A = 24 g/mol olan Mg için 1 tane Mg atomunun kütlesi 24 akb (yani 24 / N_A gram), 1 mol Mg atomunun kütlesi ise 24 gramdır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "‘İzotop Atomlar ve Ortalama Atom Kütlesi Hesabı’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Klor doğada yaklaşık %75 oranında 35Cl ve %25 oranında 37Cl izotopları hâlinde bulunur.",
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 2,
+      "aciklama": "İzotop Atomlar ve Ortalama Atom Kütlesi Hesabı bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "‘Mol Sayısı — Kütle — Tanecik Sayısı — Gaz Hacmi Dönüşümleri’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Normal koşullarda (0 °C, 1 atm) 1 mol maddenin 22,4 L hacim kaplaması Münhasıran GAZ fazındaki maddeler için geçerlidir.",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 3,
+      "aciklama": "Mol Sayısı — Kütle — Tanecik Sayısı — Gaz Hacmi Dönüşümleri bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Verilen 1 gram kütle, Avogadro sayısı (6,02 . 10²³) kadar atomik kütle birimine (akb) eşittir.",
+          "dogru": true,
+          "aciklama": "1 akb = (1 / N_A) gram olduğundan içler dışlar çarpımıyla 1 gram = N_A akb eşitliği elde edilir."
+        },
+        {
+          "metin": "Normal koşullarda (0 °C ve 1 atm) bulunan 1 mol saf demir (Fe) katısı 22,4 litre hacim kaplar.",
+          "dogru": false,
+          "aciklama": "Normal koşullarda 1 mol maddenin 22,4 L hacim kaplaması yalnızca gazlar için geçerlidir; katı ve sıvılar için bu bağıntı kullanılamaz."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Mol kavramına ait büyüklükleri ve sembolleri doğru tanımlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Avogadro sayısı (N_A)",
+          "12 gram karbon-12 izotopundaki atom sayısı (6,02 . 10²³)"
+        ],
+        [
+          "Atomik kütle birimi (1 akb)",
+          "1 tane karbon-12 atomunun kütlesinin 12'de biri"
+        ],
+        [
+          "Mol kütlesi (M_A)",
+          "Bir maddenin 1 molünün gram cinsinden kütlesi (g/mol)"
+        ],
+        [
+          "24,5 Litre",
+          "Standart (oda) koşullarında (25 °C, 1 atm) 1 mol gazın hacmi"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Normal koşullarda (0 °C sıcaklık ve 1 atm basınçta) 1 mol ideal gaz ___ litre hacim kaplar.",
+          "cevap": "22,4"
+        },
+        {
+          "metin": "Doğada birden fazla izotopu bulunan bir elementin izotop kütle numaraları ile bolluk yüzdelerinin ağırlıklı ortalamasına ___ atom kütlesi denir.",
+          "cevap": "ortalama"
+        }
+      ],
+      "fazla": [
+        "kavram",
+        "ilke"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir kimya öğrencisi laboratuvarda '16 akb CH4', '16 gram CH4' ve 'Normal koşullarda 11,2 L CH4 gazı' yazılı üç örnek kartını kütlelerine göre küçükten büyüğe doğru sıralamak istiyor. Her bir karttaki CH4 miktarını gram ve mol cinsinden hesaplayarak doğru sıralamayı açıklayınız. (C: 12, H: 1 g/mol, Avogadro sayısı: N_A)",
+      "cevap": "CH4 bileşiğinin mol kütlesi M_A = 12 + 4 . 1 = 16 g/mol'dür.\n1. Kart (16 akb CH4): 1 tane CH4 molekülünü ifade eder; mol sayısı (1 / N_A) mol, kütlesi ise (16 / N_A) gramdır (en küçük kütle).\n2. Kart (16 gram CH4): n = 16 / 16 = 1 mol CH4 gazıdır ve kütlesi 16 gramdır (en büyük kütle).\n3. Kart (NK'da 11,2 L CH4 gazı): n = 11,2 / 22,4 = 0,5 mol CH4 gazıdır; kütlesi m = 0,5 . 16 = 8 gramdır.\nKütlelerine göre küçükten büyüğe sıralama: 16 akb CH4 (16/N_A g) < NK'da 11,2 L CH4 (8 g) < 16 gram CH4 (16 g).",
+      "ipuclari": [
+        "Konunun temel kavramlarını ve tanımlarını hatırlayınız.",
+        "Sebep-sonuç ilişkisini kurarak değerlendiriniz."
+      ]
+    }
+  ]
 }

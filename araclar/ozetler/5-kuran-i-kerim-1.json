@@ -103,7 +103,7 @@
     },
     {
       "soru": "İki öğrenci okuma öncesinde abdestli olmaya özen göstermeyi yalnız el temizliği olarak açıklıyor. Açıklamaya hangi anlam eklenmelidir?",
-      "cevap": "Abdestin manevi temizlik ve Kur’an’a saygı boyutu da belirtilmelidir. Kitapta hazırlık bu boyutları birlikte taşıyan bir davranış olarak ele alınır."
+      "cevap": "Abdestin manevi temizlik ve Kur’an’a saygı boyutu da belirtilmelidir. metinde hazırlık bu boyutları birlikte taşıyan bir davranış olarak ele alınır."
     }
   ],
   "etkinlikler": [
@@ -111,12 +111,12 @@
       "tur": "coktan",
       "soru": "Selin, anne babaya iyi davranma öğüdünü okuyor. Ardından evdeki konuşmalarında daha saygılı olmaya dikkat ediyor. Bu iki davranış arasındaki ilişki hangisidir?",
       "secenekler": [
-        "Surelerin sırasını öğrenme",
         "Okuduğu öğüdü hayatına yansıtma",
+        "Surelerin sırasını öğrenme",
         "Harflerin biçimini karşılaştırma",
         "Okuma süresini ölçme"
       ],
-      "dogru": 1,
+      "dogru": 0,
       "aciklama": "Selin, okuduğu öğüdün anlamını davranışıyla ilişkilendiriyor."
     },
     {
@@ -124,11 +124,11 @@
       "soru": "Bir okuma hazırlığında önce Allah’a sığınmayı anlatan ifade söyleniyor. Ardından hangi ifade gelir?",
       "secenekler": [
         "Sure adlarını sayma",
-        "Okunan sayfayı tekrar etme",
         "Besmele söyleme",
+        "Okunan sayfayı tekrar etme",
         "Ayet sayısını bildirme"
       ],
-      "dogru": 2,
+      "dogru": 1,
       "aciklama": "İstiazenin ardından besmele söylenerek okumaya başlanır."
     },
     {
@@ -136,16 +136,28 @@
       "soru": "Eren, Kur’an okunurken arkadaşının sözünü duymak için okumayı dinlemeyi bırakıyor. Okuma adabına uygun davranması için hangi değişiklik gerekir?",
       "secenekler": [
         "Konuşmasını daha hızlı sürdürmesi",
-        "Kitabın kapağını incelemesi",
-        "Okuma bitmeden başka işe geçmesi",
-        "Dikkatini yeniden okumaya vermesi"
+        "eserin kapağını incelemesi",
+        "Dikkatini yeniden okumaya vermesi",
+        "Okuma bitmeden başka işe geçmesi"
       ],
-      "dogru": 3,
+      "dogru": 2,
       "aciklama": "Kur’an okunurken saygılı ve dikkatli dinlemek adabın bir parçasıdır."
     },
     {
+      "tur": "coktan",
+      "soru": "‘Okumaya hazırlanma’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Hazırlık ile saygı arasında bağ vardır; hazırlığı yalnız dış görünüş olarak düşünme."
+      ],
+      "dogru": 3,
+      "aciklama": "Okumaya hazırlanma bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
       "tur": "dy",
-      "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
           "metin": "Kur’an’ı öğrenmede anlam üzerinde düşünmeye de yer verilir.",
@@ -160,7 +172,7 @@
         {
           "metin": "Kur’an okumak, Müslümanlar için bir ibadettir.",
           "dogru": true,
-          "aciklama": "Kitapta okumanın ibadet yönü açıklanır."
+          "aciklama": "metinde okumanın ibadet yönü açıklanır."
         },
         {
           "metin": "Okuma öncesi hazırlık ile saygı arasında ilişki yoktur.",
@@ -171,7 +183,7 @@
     },
     {
       "tur": "eslestir",
-      "yonerge": "İlişkili kavram ve açıklamaları eşleştiriniz.",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
           "İstiaze",
@@ -193,7 +205,7 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
           "metin": "Kur’an’ın kitap düzenindeki ilk suresi ___ suresidir.",
@@ -209,26 +221,24 @@
         }
       ],
       "fazla": [
-        "mahreç"
+        "mahreç",
+        "varsayım"
       ]
     },
     {
       "tur": "ogretici",
       "soru": "Bir öğrenci, Kur’an’ın doğruluk öğüdünü anladığını söylüyor; fakat yanlış verdiği bilgiyi düzeltmiyor. Okuma ile davranış arasındaki bağı nasıl kurabilir?",
+      "cevap": "Yanlış verdiği bilgiyi düzeltip doğru bilgiyi açıklayabilir. Böylece anlamını öğrendiği doğruluk ilkesini davranışına yansıtır.",
       "ipuclari": [
         "Öğüt, sözlerin doğruluğuyla ilişkilidir.",
         "Yanlış bilginin sürmesine izin vermek yerine yapılabilecek davranışı düşün."
-      ],
-      "cevap": "Yanlış verdiği bilgiyi düzeltip doğru bilgiyi açıklayabilir. Böylece anlamını öğrendiği doğruluk ilkesini davranışına yansıtır."
-    },
-    {
-      "tur": "ogretici",
-      "soru": "Abdestli olmaya özen gösterme ve okunurken sessizce dinleme farklı zamanlarda yapılır. Bu iki davranışın ortak yönü nedir?",
-      "ipuclari": [
-        "Biri okumadan önceki hazırlıkla, diğeri dinlemeyle ilgilidir.",
-        "Her ikisinin Kur’an’a karşı tutumu nasıl gösterdiğini düşün."
-      ],
-      "cevap": "Her ikisi de Kur’an’a duyulan saygının davranışla gösterilmesidir; hazırlık ve dinleme adabı birbirini tamamlar."
+      ]
     }
+  ],
+  "ozet": [
+    "İslam inancına göre Kur’an-ı Kerim, Allah’ın Cebrail aracılığıyla Hz. Muhammed’e bildirdiği vahiylerden oluşur. İslam’ın temel kaynağıdır ve Arapça olarak indirilmiştir.",
+    "Müslümanlar için Kur’an okumak ibadettir. Hz. Muhammed, Kur’an’ın öğrenilmesini ve başkalarına öğretilmesini teşvik etmiştir.",
+    "Kur’an’da adalet, doğruluk ve iyilik öğütlenir. Anne babaya iyi davranmak ve insanlarla güzel konuşmak da bu öğütler arasındadır.",
+    "Okuma adabı, Kur’an’a duyulan saygının davranışlara yansımasıdır. Okurken ve Kur’an’a dokunurken abdestli olmaya özen göstermek bu saygının bir parçasıdır."
   ]
 }

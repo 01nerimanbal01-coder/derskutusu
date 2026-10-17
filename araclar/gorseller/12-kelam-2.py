@@ -182,7 +182,7 @@ def gorsel_5():
 def gorsel_6():
     """Kelam İlminin Yöntemleri ve Başlıca Klasik Eserleri"""
     W, H = 720, 330
-    s = _baslik(W, H, "YÖNTEM & ESER", "Kelam İlminin Yöntemi ve Temel Klasik Eserleri", RENK["kirmizi"])
+    s = _baslik(W, H, "YÖNTEM &amp; ESER", "Kelam İlminin Yöntemi ve Temel Klasik Eserleri", RENK["kirmizi"])
     yontemler = [
         ("Tümevarım", "Tekil olgulardan genel ilkeye ulaşma", RENK["mavi"]),
         ("Temsil (Kıyas)", "Görünenden (şâhid) görünmeyene (gâib) استدلال", RENK["yesil"]),

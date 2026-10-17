@@ -117,13 +117,13 @@
       "tur": "coktan",
       "soru": "Hava direncinin olmadığı bir ortamda kütleleri farklı iki cisim aynı yükseklikten ilk hızsız bırakılıyor. Kütleler değiştirilip diğer koşullar korunursa hangi büyüklük aynı kalır?",
       "secenekler": [
-        "Cisimlerin kütlesi",
-        "Cisimlerin ağırlığı",
         "Cisimlerin düşme ivmesi",
+        "Cisimlerin ağırlığı",
+        "Cisimlerin kütlesi",
         "Cisimlerin hacmi",
         "Cisimlerin yoğunluğu"
       ],
-      "dogru": 2,
+      "dogru": 0,
       "aciklama": "Aynı yerde hava direnci yoksa serbest düşme ivmesi kütleden bağımsızdır."
     },
     {
@@ -131,12 +131,12 @@
       "soru": "Aşağı yön pozitifken bir cismin hızı 2 saniyede 6 m/s değerinden 26 m/s değerine çıkıyor. Ortalama ivmesi kaç m/s² olur?",
       "secenekler": [
         "3",
-        "6",
-        "8",
         "10",
+        "8",
+        "6",
         "20"
       ],
-      "dogru": 3,
+      "dogru": 1,
       "aciklama": "Hız değişimi 20 m/s, süre 2 s olduğundan ivme {kesir:20|2} = 10 m/s² olur."
     },
     {
@@ -144,17 +144,30 @@
       "soru": "Yukarı atılan bir cisim en üst noktada anlık olarak duruyor. Hava direnci ihmal edildiğinde hangi açıklama doğrudur?",
       "secenekler": [
         "Hızı ve ivmesi birlikte sıfır olur.",
-        "Hızı sıfır, ivmesi aşağı yönlü olur.",
         "Hızı sıfır, ivmesi yukarı yönlü olur.",
+        "Hızı sıfır, ivmesi aşağı yönlü olur.",
         "Hızı aşağı, ivmesi sıfır olur.",
         "Hızı ve ivmesi yukarı yönlü olur."
       ],
-      "dogru": 1,
+      "dogru": 2,
       "aciklama": "Anlık hız sıfır olsa da yer çekimi aşağı yönlü ivme oluşturmayı sürdürür."
     },
     {
+      "tur": "coktan",
+      "soru": "‘Kütleleri farklı cisimler’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Kütleleri karşılaştırmadan önce ortam, bırakılma yüksekliği ve ilk hız koşullarını kontrol ediniz.",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 3,
+      "aciklama": "Kütleleri farklı cisimler bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
       "tur": "dy",
-      "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
           "metin": "Sabit ivmeli düşmede hız büyüklüğü değişebilir.",
@@ -180,7 +193,7 @@
     },
     {
       "tur": "eslestir",
-      "yonerge": "İlişkili kavram ve açıklamaları eşleştiriniz.",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
           "g",
@@ -202,7 +215,7 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
           "metin": "Dünya yüzeyine yakın serbest düşmede ivme ___ yönlüdür.",
@@ -218,26 +231,24 @@
         }
       ],
       "fazla": [
-        "yukarı"
+        "yukarı",
+        "varsayım"
       ]
     },
     {
       "tur": "ogretici",
       "soru": "Kütlenin düşme ivmesine etkisini araştırırken bırakılma yüksekliğini de değiştirirseniz sonuç neden belirsizleşir?",
+      "cevap": "Kütleyle birlikte yükseklik de değişmiş olur. Gözlenen hareket farkının hangi değişimle ilişkili olduğunu ayırmak zorlaşır. Kütle dışında başlangıç ve ortam koşulları aynı tutulmalıdır.",
       "ipuclari": [
         "Bir karşılaştırmada hangi etkeni değiştirmek istediğinizi belirleyiniz.",
         "Birden fazla koşul değişirse gözlenen farkın kaynağını ayırabilir misiniz?"
-      ],
-      "cevap": "Kütleyle birlikte yükseklik de değişmiş olur. Gözlenen hareket farkının hangi değişimle ilişkili olduğunu ayırmak zorlaşır. Kütle dışında başlangıç ve ortam koşulları aynı tutulmalıdır."
-    },
-    {
-      "tur": "ogretici",
-      "soru": "Bir cismin sürati 10 m/s, diğerinin 20 m/s iken ivmeleri aynı olabilir mi?",
-      "ipuclari": [
-        "İvme tek bir hız değerinden mi, hız değişiminden mi bulunur?",
-        "Cisimlerin farklı süreler boyunca düşmesini düşününüz."
-      ],
-      "cevap": "Olabilir. Aynı yerde farklı anlarda bırakılan cisimler farklı süratlere sahipken aynı g ivmesiyle hareket edebilir. İvme, hızın değerinden değil değişiminden belirlenir."
+      ]
     }
+  ],
+  "ozet": [
+    "Yalnız yer çekiminin etkisiyle hareket eden cisim serbest düşme hareketi yapar. Hava direncinin ihmal edilmesi, hareketi bu modelle incelememizi sağlar.",
+    "Yer çekiminin oluşturduğu ivme g ile gösterilir. Yönü Dünya’nın merkezine doğrudur; bulunduğumuz yerde aşağı yön olarak ifade edilir.",
+    "İvme, hızdaki değişimin geçen süreye oranıdır. Hareket aynı doğrultuda incelenirken yön seçimi tutarlı tutulmalıdır.",
+    "Hava direncinin olmadığı aynı ortamda, aynı yükseklikten aynı anda ve ilk hızsız bırakılan cisimler aynı ivmeyle düşer. Kütlelerinin farklı olması tek başına düşme sürelerini değiştirmez."
   ]
 }

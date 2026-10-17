@@ -1,249 +1,253 @@
 {
- "sinif": 8,
- "ders": "matematik",
- "hafta": 4,
- "tarih": "5-9 Ekim 2026",
- "yayin_tarihi": "2026-10-12",
- "unite": "Sayılar ve İşlemler",
- "konu": "Sayıların Ondalık Gösterimini Çözümleme",
- "ciktilar": [
-  "M.8.1.2.3. Sayıların ondalık gösterimlerini 10’un tam sayı kuvvetlerini kullanarak çözümler.",
-  "M.8.1.2.4. Verilen bir sayıyı 10’un farklı tam sayı kuvvetlerini kullanarak ifade eder."
- ],
- "giris": "Geçen hafta üssü sıfır ve negatif olan ifadeleri, ayrıca üslü ifadelerle işlem kurallarını öğrendin. Bu hafta o bilgiyi ondalık sayılara uygulayacak, bir sayının basamaklarını 10’un tam sayı kuvvetleriyle yazacak ve aynı sayıyı 10’un farklı kuvvetleriyle ifade edeceksin.",
- "bolumler": [
-  {
-   "baslik": "Ondalık gösterimin çözümlenmesi",
-   "metin": [
-    "Ondalık gösterimdeki her rakam, bulunduğu basamağın değerini taşır. Örneğin 4,358 sayısında virgülün solundaki 4 birler basamağındadır; virgülün sağındaki 3, 5 ve 8 ise sırasıyla onda birler, yüzde birler ve binde birler basamağındadır.",
-    "Basamakların değeri virgülden sağa doğru her adımda 10’a bölünerek küçülür: birler basamağının değeri 1, onda birler basamağının değeri {kesir:1|10}, yüzde birler basamağının değeri {kesir:1|100}, binde birler basamağının değeri {kesir:1|1000}’dir. Bir rakamın sayıya katkısı, rakamla bulunduğu basamağın değerinin çarpımıdır. Buna göre 4,358 = 4 · 1 + 3 · {kesir:1|10} + 5 · {kesir:1|100} + 8 · {kesir:1|1000} yazılır.",
-    "Bir sayıyı, her rakamını basamak değeriyle çarpıp elde ettiğin çarpımların toplamı olarak yazmak, o sayının ondalık gösterimini çözümlemektir. Çözümleme, sayıyı oluşturan parçaları ayrı ayrı gösterir; parçaları toplayınca yine aynı sayıyı bulursun."
-   ],
-   "kutu": {
-    "tur": "tanim",
-    "baslik": "Çözümleme",
-    "metin": "Ondalık gösterimdeki her rakamı basamak değeriyle çarpıp bu çarpımları toplayarak sayıyı yazmaya çözümleme denir."
-   }
-  },
-  {
-   "baslik": "Basamak değerlerini 10’un kuvvetleriyle yazmak",
-   "metin": [
-    "Basamak değerleri 10’un tam sayı kuvvetleriyle de yazılabilir. Birler basamağının değeri 1 = {us:10|0}’dır. Geçen haftaki kurala göre {us:10|−1} = {kesir:1|{us:10|1}} = {kesir:1|10}, {us:10|−2} = {kesir:1|{us:10|2}} = {kesir:1|100} ve {us:10|−3} = {kesir:1|{us:10|3}} = {kesir:1|1000} olur.",
-    "Bu eşitlikleri çözümlemede yerlerine yazınca 4,358 = 4 · {us:10|0} + 3 · {us:10|−1} + 5 · {us:10|−2} + 8 · {us:10|−3} elde edilir. Virgülden sağa doğru ilerledikçe üs −1, −2, −3 diye azalır; virgülün solunda ise onlar basamağı {us:10|1} ile, yüzler basamağı {us:10|2} ile yazılır.",
-    "Örneğin 82,53 sayısında 8 onlar, 2 birler, 5 onda birler, 3 yüzde birler basamağındadır. Çözümlemesi 82,53 = 8 · {us:10|1} + 2 · {us:10|0} + 5 · {us:10|−1} + 3 · {us:10|−2} biçimindedir. Terimleri toplayarak sınayabilirsin: 80 + 2 + 0,5 + 0,03 = 82,53."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "metin": "Birler basamağı {us:10|0} ile eşleşir. Bir basamak sola gidince üs 1 artar, bir basamak sağa gidince üs 1 azalır."
-   },
-   "gorsel": "<svg viewBox=\"0 0 440 292\" role=\"img\" aria-label=\"4,358 sayısının çözümlenmesi: birler basamağındaki 4 rakamının basamak değeri 1 ve 10’un kuvveti 10 üssü 0; onda birler basamağındaki 3 için 1 bölü 10 ve 10 üssü eksi 1; yüzde birler basamağındaki 5 için 1 bölü 100 ve 10 üssü eksi 2; binde birler basamağındaki 8 için 1 bölü 1000 ve 10 üssü eksi 3. Sonuç: 4,358 eşittir 4 çarpı 10 üssü 0 artı 3 çarpı 10 üssü eksi 1 artı 5 çarpı 10 üssü eksi 2 artı 8 çarpı 10 üssü eksi 3.\"><rect x=\"100\" y=\"8\" width=\"72\" height=\"206\" rx=\"14\" class=\"g-ya\"/><rect x=\"100\" y=\"8\" width=\"72\" height=\"206\" rx=\"14\" class=\"g-ys\" stroke-width=\"1.8\"/><rect x=\"115\" y=\"20\" width=\"42\" height=\"42\" rx=\"10\" class=\"g-z\"/><rect x=\"115\" y=\"20\" width=\"42\" height=\"42\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"136\" y=\"49\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" class=\"g-yf\">4</text><text x=\"136\" y=\"96\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" class=\"g-yf\">Birler</text><text x=\"131.8\" y=\"147.9\" font-size=\"17\" font-weight=\"700\" class=\"g-yf\">1</text><text x=\"122.0\" y=\"196.3\" font-size=\"18\" font-weight=\"800\" class=\"g-yf\">10</text><text x=\"142.5\" y=\"188.0\" font-size=\"13.0\" font-weight=\"800\" class=\"g-yf\">0</text><rect x=\"194\" y=\"8\" width=\"72\" height=\"206\" rx=\"14\" class=\"g-ta\"/><rect x=\"194\" y=\"8\" width=\"72\" height=\"206\" rx=\"14\" class=\"g-ts\" stroke-width=\"1.8\"/><rect x=\"209\" y=\"20\" width=\"42\" height=\"42\" rx=\"10\" class=\"g-z\"/><rect x=\"209\" y=\"20\" width=\"42\" height=\"42\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"230\" y=\"49\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" class=\"g-tf\">3</text><text x=\"230\" y=\"88\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" class=\"g-tf\">Onda</text><text x=\"230\" y=\"103\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" class=\"g-tf\">birler</text><text x=\"226.2\" y=\"138.0\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">1</text><line x1=\"218.9\" y1=\"142.0\" x2=\"241.1\" y2=\"142.0\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"221.9\" y=\"160.0\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">10</text><text x=\"212.7\" y=\"196.3\" font-size=\"18\" font-weight=\"800\" class=\"g-tf\">10</text><text x=\"233.1\" y=\"188.0\" font-size=\"13.0\" font-weight=\"800\" class=\"g-tf\">−1</text><rect x=\"270\" y=\"8\" width=\"72\" height=\"206\" rx=\"14\" class=\"g-ta\"/><rect x=\"270\" y=\"8\" width=\"72\" height=\"206\" rx=\"14\" class=\"g-ts\" stroke-width=\"1.8\"/><rect x=\"285\" y=\"20\" width=\"42\" height=\"42\" rx=\"10\" class=\"g-z\"/><rect x=\"285\" y=\"20\" width=\"42\" height=\"42\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"306\" y=\"49\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" class=\"g-tf\">5</text><text x=\"306\" y=\"88\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" class=\"g-tf\">Yüzde</text><text x=\"306\" y=\"103\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" class=\"g-tf\">birler</text><text x=\"302.2\" y=\"138.0\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">1</text><line x1=\"290.6\" y1=\"142.0\" x2=\"321.4\" y2=\"142.0\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"293.6\" y=\"160.0\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">100</text><text x=\"288.1\" y=\"196.3\" font-size=\"18\" font-weight=\"800\" class=\"g-tf\">10</text><text x=\"308.6\" y=\"188.0\" font-size=\"13.0\" font-weight=\"800\" class=\"g-tf\">−2</text><rect x=\"346\" y=\"8\" width=\"72\" height=\"206\" rx=\"14\" class=\"g-ta\"/><rect x=\"346\" y=\"8\" width=\"72\" height=\"206\" rx=\"14\" class=\"g-ts\" stroke-width=\"1.8\"/><rect x=\"361\" y=\"20\" width=\"42\" height=\"42\" rx=\"10\" class=\"g-z\"/><rect x=\"361\" y=\"20\" width=\"42\" height=\"42\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"382\" y=\"49\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" class=\"g-tf\">8</text><text x=\"382\" y=\"88\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" class=\"g-tf\">Binde</text><text x=\"382\" y=\"103\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" class=\"g-tf\">birler</text><text x=\"378.2\" y=\"138.0\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">1</text><line x1=\"362.2\" y1=\"142.0\" x2=\"401.8\" y2=\"142.0\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"365.2\" y=\"160.0\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">1000</text><text x=\"364.1\" y=\"196.3\" font-size=\"18\" font-weight=\"800\" class=\"g-tf\">10</text><text x=\"384.6\" y=\"188.0\" font-size=\"13.0\" font-weight=\"800\" class=\"g-tf\">−3</text><text x=\"182\" y=\"52\" text-anchor=\"middle\" font-size=\"30\" font-weight=\"800\" class=\"g-y\">,</text><text x=\"8\" y=\"47\" text-anchor=\"start\" font-size=\"11.5\" font-weight=\"700\" class=\"g-s\">Rakam</text><text x=\"8\" y=\"101\" text-anchor=\"start\" font-size=\"11.5\" font-weight=\"700\" class=\"g-s\">Basamak</text><text x=\"8\" y=\"138\" text-anchor=\"start\" font-size=\"11.5\" font-weight=\"700\" class=\"g-s\">Basamak</text><text x=\"8\" y=\"152\" text-anchor=\"start\" font-size=\"11.5\" font-weight=\"700\" class=\"g-s\">değeri</text><text x=\"8\" y=\"186\" text-anchor=\"start\" font-size=\"11.5\" font-weight=\"700\" class=\"g-s\">10’un</text><text x=\"8\" y=\"200\" text-anchor=\"start\" font-size=\"11.5\" font-weight=\"700\" class=\"g-s\">kuvveti</text><text x=\"60.3\" y=\"249.2\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">4,358 = 4 ·  </text><text x=\"144.9\" y=\"249.2\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"162.1\" y=\"242.3\" font-size=\"10.8\" font-weight=\"700\" class=\"g-y\">0</text><text x=\"168.3\" y=\"249.2\" font-size=\"15\" font-weight=\"700\" class=\"g-y\"> + 3 · </text><text x=\"209.1\" y=\"249.2\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"226.3\" y=\"242.3\" font-size=\"10.8\" font-weight=\"700\" class=\"g-y\">−1</text><text x=\"238.2\" y=\"249.2\" font-size=\"15\" font-weight=\"700\" class=\"g-y\"> + 5 · </text><text x=\"279.0\" y=\"249.2\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"296.2\" y=\"242.3\" font-size=\"10.8\" font-weight=\"700\" class=\"g-y\">−2</text><text x=\"309.0\" y=\"249.2\" font-size=\"15\" font-weight=\"700\" class=\"g-y\"> + 8 · </text><text x=\"349.8\" y=\"249.2\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"367.0\" y=\"242.3\" font-size=\"10.8\" font-weight=\"700\" class=\"g-y\">−3</text><rect x=\"14\" y=\"266\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ya\"/><rect x=\"14\" y=\"266\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ys\" stroke-width=\"1.6\"/><text x=\"35\" y=\"278\" text-anchor=\"start\" font-size=\"12.5\" font-weight=\"600\" class=\"g-y\">üssü sıfır</text><rect x=\"150\" y=\"266\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ta\"/><rect x=\"150\" y=\"266\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"171\" y=\"278\" text-anchor=\"start\" font-size=\"12.5\" font-weight=\"600\" class=\"g-y\">üssü negatif</text></svg>"
-  },
-  {
-   "baslik": "Sıfır rakamlı basamaklar ve çözümlemeden sayıya dönüş",
-   "metin": [
-    "Bir basamaktaki rakam 0 ise o basamağın terimi 0 olur. Örneğin 705,3 sayısında onlar basamağındaki rakam 0’dır: 705,3 = 7 · {us:10|2} + 0 · {us:10|1} + 5 · {us:10|0} + 3 · {us:10|−1}. Değeri 0 olan terim toplamı etkilemediğinden yazılmayabilir: 705,3 = 7 · {us:10|2} + 5 · {us:10|0} + 3 · {us:10|−1}.",
-    "Çözümlenmiş yazılıştan sayıya dönerken her terimin üssü, rakamın hangi basamakta bulunduğunu söyler. Yazılmayan her üs için o basamağa 0 yazarsın. Örneğin 3 · {us:10|3} + 8 · {us:10|1} + 6 · {us:10|0} + 2 · {us:10|−2} yazılışında {us:10|2} ve {us:10|−1} terimleri yoktur; bu basamaklara 0 gelir ve sayı 3086,02 olur.",
-    "Rakamları yan yana dizmek yetmez; her rakamın hangi basamağa geldiğine bakmalısın. Örneğin 3 · {us:10|2} + 5 · {us:10|0} toplamı 35 değil 305’tir, çünkü onlar basamağında 0 vardır. Terimleri toplayarak sınadığında 300 + 5 = 305 bulursun."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "metin": "Çözümlemede bulunmayan bir üs, o basamağa 0 yazılacağını gösterir; basamağı atlayıp rakamları bitiştirme."
-   }
-  },
-  {
-   "baslik": "Bir sayıyı 10’un kuvvetiyle çarpmak virgülü kaydırır",
-   "metin": [
-    "Bir sayıyı {us:10|1} ile, yani 10 ile çarpınca virgül bir basamak sağa kayar: 36,52 · {us:10|1} = 365,2. Üs 3 ise {us:10|3} = 1000 olduğundan virgül üç basamak sağa kayar: 0,3652 · {us:10|3} = 365,2. Demek ki 36,52 · {us:10|1} = 0,3652 · {us:10|3} = 365,2’dir.",
-    "Üs negatifse virgül sola kayar. Örneğin {us:10|−1} = {kesir:1|10} olduğundan 2764,3 · {us:10|−1} = 2764,3 · {kesir:1|10} = 276,43 bulunur; virgül bir basamak sola gitmiştir. Öte yandan 2,7643 · {us:10|2} işleminde virgül iki basamak sağa gider ve sonuç 276,43 olur. Böylece 2764,3 · {us:10|−1} = 2,7643 · {us:10|2} = 276,43’tür.",
-    "Kayma yönünü üssün işareti, kayma miktarını üssün büyüklüğü belirler: üs pozitifse virgül sağa, negatifse sola gider ve üs kaçsa virgül o kadar basamak ilerler. Virgülün ilerleyeceği yerde rakam kalmamışsa sıfır ekleyerek basamak açarsın: 7,5 · {us:10|3} = 7500."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "metin": "Bir sayıyı 10’un pozitif kuvvetiyle çarpınca virgül sağa, negatif kuvvetiyle çarpınca sola kayar; kayma miktarı üssün büyüklüğü kadar basamaktır."
-   },
-   "gorsel": "<svg viewBox=\"0 0 440 242\" role=\"img\" aria-label=\"Üssü pozitif olan 10 kuvvetiyle çarpmak virgülü sağa, negatif olan kuvvetle çarpmak sola kaydırır. 36,52 çarpı 10 üssü 1 işleminde virgül 1 basamak sağa gider; 0,3652 çarpı 10 üssü 3 işleminde virgül 3 basamak sağa gider; ikisi de 365,2 eder. 2764,3 çarpı 10 üssü eksi 1 işleminde virgül 1 basamak sola gider; 2,7643 çarpı 10 üssü 2 işleminde virgül 2 basamak sağa gider; ikisi de 276,43 eder.\"><rect x=\"8\" y=\"8\" width=\"424\" height=\"108\" rx=\"14\" class=\"g-z\"/><rect x=\"8\" y=\"8\" width=\"424\" height=\"108\" rx=\"14\" class=\"g-c\" stroke-width=\"1.8\"/><text x=\"24.0\" y=\"44.0\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">36,52 · </text><text x=\"84.5\" y=\"44.0\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"103.9\" y=\"36.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-y\">1</text><rect x=\"152\" y=\"24\" width=\"150\" height=\"28\" rx=\"14\" class=\"g-z\"/><rect x=\"152\" y=\"24\" width=\"150\" height=\"28\" rx=\"14\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"227\" y=\"42.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" class=\"g-mf\">virgül 1 basamak sağa</text><text x=\"24.0\" y=\"90.0\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">0,3652 · </text><text x=\"94.4\" y=\"90.0\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"113.7\" y=\"82.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-y\">3</text><rect x=\"152\" y=\"70\" width=\"150\" height=\"28\" rx=\"14\" class=\"g-z\"/><rect x=\"152\" y=\"70\" width=\"150\" height=\"28\" rx=\"14\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"227\" y=\"88.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" class=\"g-mf\">virgül 3 basamak sağa</text><path d=\"M318 28q10 0 10 10v18q0 10 10 10q-10 0 -10 10v18q0 10 -10 10\" class=\"g-c\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"348.0\" y=\"73.0\" font-size=\"17\" font-weight=\"800\" class=\"g-y\">= 365,2</text><rect x=\"8\" y=\"126\" width=\"424\" height=\"108\" rx=\"14\" class=\"g-z\"/><rect x=\"8\" y=\"126\" width=\"424\" height=\"108\" rx=\"14\" class=\"g-c\" stroke-width=\"1.8\"/><text x=\"24.0\" y=\"161.9\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">2764,3 · </text><text x=\"94.4\" y=\"161.9\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"113.7\" y=\"154.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-y\">−1</text><rect x=\"152\" y=\"142\" width=\"150\" height=\"28\" rx=\"14\" class=\"g-z\"/><rect x=\"152\" y=\"142\" width=\"150\" height=\"28\" rx=\"14\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"227\" y=\"160.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" class=\"g-tf\">virgül 1 basamak sola</text><text x=\"24.0\" y=\"207.9\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">2,7643 · </text><text x=\"94.4\" y=\"207.9\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"113.7\" y=\"200.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-y\">2</text><rect x=\"152\" y=\"188\" width=\"150\" height=\"28\" rx=\"14\" class=\"g-z\"/><rect x=\"152\" y=\"188\" width=\"150\" height=\"28\" rx=\"14\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"227\" y=\"206.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" class=\"g-mf\">virgül 2 basamak sağa</text><path d=\"M318 146q10 0 10 10v18q0 10 10 10q-10 0 -10 10v18q0 10 -10 10\" class=\"g-c\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"348.0\" y=\"190.9\" font-size=\"17\" font-weight=\"800\" class=\"g-y\">= 276,43</text></svg>"
-  },
-  {
-   "baslik": "Aynı sayıyı 10’un farklı kuvvetleriyle yazmak",
-   "metin": [
-    "a · {us:10|n} biçimindeki bir sayıyı 10’un başka bir kuvvetiyle yazarken a ile n birlikte değişir; çarpımın değeri aynı kalmalıdır. Üs 1 artarsa a’daki virgül 1 basamak sola, üs 1 azalırsa 1 basamak sağa gider. Çünkü katsayıyı 10 kat küçültüp 10’un kuvvetini 10 kat büyütürsen çarpım değişmez.",
-    "Örnek olarak 365,2 sayısına bak: 0,3652 · {us:10|3} = 3,652 · {us:10|2} = 36,52 · {us:10|1} = 365,2 · {us:10|0} = 3652 · {us:10|−1} yazılışlarının hepsi 365,2’ye eşittir. Soldan sağa gidildikçe üs 1’er azalır ve katsayıdaki virgül 1’er basamak sağa kayar.",
-    "Hangi yazılışın seçileceği soruda belirtilir. Örneğin 82,53 sayısı {us:10|2} kuvvetiyle yazılacaksa a = 0,8253 olur; {us:10|−2} kuvvetiyle yazılacaksa a = 8253 olur."
-   ],
-   "kutu": {
-    "tur": "bilgi",
-    "metin": "a · {us:10|n} yazılışında n değiştiğinde a’nın değeri de değişir; ikisinin çarpımı aynı sayıyı vermelidir."
-   },
-   "gorsel": "<svg viewBox=\"0 0 440 272\" role=\"img\" aria-label=\"365,2 sayısının 10’un farklı kuvvetleriyle yazılışları: 0,3652 çarpı 10 üssü 3, 3,652 çarpı 10 üssü 2, 36,52 çarpı 10 üssü 1, 365,2 çarpı 10 üssü 0 ve 3652 çarpı 10 üssü eksi 1. Hepsi 365,2’ye eşittir. Üs 1 azaldıkça katsayıdaki virgül 1 basamak sağa kayar.\"><defs><marker id=\"okM1\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-s\"/></marker></defs><rect x=\"10\" y=\"14\" width=\"58\" height=\"28\" rx=\"14\" class=\"g-z\"/><rect x=\"10\" y=\"14\" width=\"58\" height=\"28\" rx=\"14\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"39\" y=\"32.5\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-mf\">n = 3</text><rect x=\"82\" y=\"11\" width=\"196\" height=\"34\" rx=\"10\" class=\"g-ma\"/><rect x=\"82\" y=\"11\" width=\"196\" height=\"34\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"131.6\" y=\"34.0\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">0,3652 · </text><text x=\"202.0\" y=\"34.0\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"221.3\" y=\"26.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-y\">3</text><text x=\"294\" y=\"34\" text-anchor=\"start\" font-size=\"17\" font-weight=\"800\" class=\"g-y\">= 365,2</text><line x1=\"180\" y1=\"47\" x2=\"180\" y2=\"63\" class=\"g-c\" stroke-width=\"1.8\" marker-end=\"url(#okM1)\"/><text x=\"194\" y=\"59\" text-anchor=\"start\" font-size=\"12\" font-weight=\"600\" class=\"g-s\">virgül sağa, üs 1 azalır</text><rect x=\"10\" y=\"68\" width=\"58\" height=\"28\" rx=\"14\" class=\"g-z\"/><rect x=\"10\" y=\"68\" width=\"58\" height=\"28\" rx=\"14\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"39\" y=\"86.5\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-mf\">n = 2</text><rect x=\"82\" y=\"65\" width=\"196\" height=\"34\" rx=\"10\" class=\"g-ma\"/><rect x=\"82\" y=\"65\" width=\"196\" height=\"34\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"136.5\" y=\"88.0\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">3,652 · </text><text x=\"197.0\" y=\"88.0\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"216.4\" y=\"80.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-y\">2</text><text x=\"294\" y=\"88\" text-anchor=\"start\" font-size=\"17\" font-weight=\"800\" class=\"g-y\">= 365,2</text><line x1=\"180\" y1=\"101\" x2=\"180\" y2=\"117\" class=\"g-c\" stroke-width=\"1.8\" marker-end=\"url(#okM1)\"/><text x=\"194\" y=\"113\" text-anchor=\"start\" font-size=\"12\" font-weight=\"600\" class=\"g-s\">virgül sağa, üs 1 azalır</text><rect x=\"10\" y=\"122\" width=\"58\" height=\"28\" rx=\"14\" class=\"g-z\"/><rect x=\"10\" y=\"122\" width=\"58\" height=\"28\" rx=\"14\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"39\" y=\"140.5\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-mf\">n = 1</text><rect x=\"82\" y=\"119\" width=\"196\" height=\"34\" rx=\"10\" class=\"g-ma\"/><rect x=\"82\" y=\"119\" width=\"196\" height=\"34\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"137.0\" y=\"141.9\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">36,52 · </text><text x=\"197.5\" y=\"141.9\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"216.9\" y=\"134.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-y\">1</text><text x=\"294\" y=\"142\" text-anchor=\"start\" font-size=\"17\" font-weight=\"800\" class=\"g-y\">= 365,2</text><line x1=\"180\" y1=\"155\" x2=\"180\" y2=\"171\" class=\"g-c\" stroke-width=\"1.8\" marker-end=\"url(#okM1)\"/><text x=\"194\" y=\"167\" text-anchor=\"start\" font-size=\"12\" font-weight=\"600\" class=\"g-s\">virgül sağa, üs 1 azalır</text><rect x=\"10\" y=\"176\" width=\"58\" height=\"28\" rx=\"14\" class=\"g-z\"/><rect x=\"10\" y=\"176\" width=\"58\" height=\"28\" rx=\"14\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"39\" y=\"194.5\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-yf\">n = 0</text><rect x=\"82\" y=\"173\" width=\"196\" height=\"34\" rx=\"10\" class=\"g-ya\"/><rect x=\"82\" y=\"173\" width=\"196\" height=\"34\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"136.5\" y=\"195.9\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">365,2 · </text><text x=\"197.0\" y=\"195.9\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"216.4\" y=\"188.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-y\">0</text><text x=\"294\" y=\"196\" text-anchor=\"start\" font-size=\"17\" font-weight=\"800\" class=\"g-y\">= 365,2</text><line x1=\"180\" y1=\"209\" x2=\"180\" y2=\"225\" class=\"g-c\" stroke-width=\"1.8\" marker-end=\"url(#okM1)\"/><text x=\"194\" y=\"221\" text-anchor=\"start\" font-size=\"12\" font-weight=\"600\" class=\"g-s\">virgül sağa, üs 1 azalır</text><rect x=\"10\" y=\"230\" width=\"58\" height=\"28\" rx=\"14\" class=\"g-z\"/><rect x=\"10\" y=\"230\" width=\"58\" height=\"28\" rx=\"14\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"39\" y=\"248.5\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-tf\">n = −1</text><rect x=\"82\" y=\"227\" width=\"196\" height=\"34\" rx=\"10\" class=\"g-ta\"/><rect x=\"82\" y=\"227\" width=\"196\" height=\"34\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"135.9\" y=\"249.9\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">3652 · </text><text x=\"191.3\" y=\"249.9\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"210.7\" y=\"242.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-y\">−1</text><text x=\"294\" y=\"250\" text-anchor=\"start\" font-size=\"17\" font-weight=\"800\" class=\"g-y\">= 365,2</text></svg>"
-  },
-  {
-   "baslik": "Eksik üssü ve eksik katsayıyı bulmak",
-   "metin": [
-    "İki ifade eşit olacaksa ve birinde katsayı ya da üs eksikse virgülün kaç basamak kaydığına bak. Örneğin 3,6 · {us:10|5} = ? · {us:10|3} eşitliğinde üs 5’ten 3’e, yani 2 azalmıştır; katsayıdaki virgül 2 basamak sağa gitmelidir. Buna göre aranan katsayı 360’tır.",
-    "Katsayı verilip üs aranıyorsa aynı mantıkla düşün: 0,045 · {us:10|8} = 45 · {us:10|n} eşitliğinde katsayıdaki virgül 3 basamak sağa gitmiştir; bu yüzden üs 3 azalır ve n = 5 bulunur. Sınamak için iki yanı da hesapla: ikisi de 4 500 000 eder.",
-    "Yalnız bir tarafı değiştirmek sayıyı değiştirir. Örneğin 6 · {us:10|4} = 60 000 iken katsayıdaki virgülü kaydırıp 0,6 · {us:10|4} yazarsan 6000 elde edersin; sayı aynı kalsın istiyorsan üssü de {us:10|5} yapmalısın: 0,6 · {us:10|5} = 60 000."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "metin": "Katsayı küçülürse üs büyür, katsayı büyürse üs küçülür; ikisi aynı yönde değişirse sayı değişir."
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Ondalık gösterimi 72,308 olan sayıyı 10’un kuvvetlerini kullanarak çözümle.",
-   "cevap": "Basamaklar sırasıyla onlar, birler, onda birler, yüzde birler ve binde birlerdir: 72,308 = 7 · {us:10|1} + 2 · {us:10|0} + 3 · {us:10|−1} + 0 · {us:10|−2} + 8 · {us:10|−3}. Yüzde birler basamağındaki rakam 0 olduğundan o terim yazılmayabilir: 72,308 = 7 · {us:10|1} + 2 · {us:10|0} + 3 · {us:10|−1} + 8 · {us:10|−3}."
-  },
-  {
-   "soru": "Çözümlenmiş yazılışı 9 · {us:10|2} + 4 · {us:10|0} + 5 · {us:10|−2} + 6 · {us:10|−3} olan sayının ondalık gösterimini yaz.",
-   "cevap": "Yüzler, birler, yüzde birler ve binde birler basamaklarında sırasıyla 9, 4, 5 ve 6 vardır. Onlar basamağıyla onda birler basamağının terimi yazılmamıştır; bu basamaklara 0 gelir. Sayı 904,056’dır."
-  },
-  {
-   "soru": "Şu işlemlerin sonuçlarını bul ve virgülün hangi yöne kaç basamak kaydığını belirt: 0,0073 · {us:10|4} ve 4560 · {us:10|−3}.",
-   "cevap": "Birincide üs pozitiftir; virgül dört basamak sağa gider: 0,0073 · {us:10|4} = 73. İkincide üs negatiftir; virgül üç basamak sola gider: 4560 · {us:10|−3} = 4,56."
-  },
-  {
-   "soru": "Ondalık gösterimi 0,56 olan sayıyı a · {us:10|−2}, a · {us:10|2} ve a · {us:10|−3} biçimlerinde yaz; her durumda a değerini bul.",
-   "cevap": "Başlangıç olarak 0,56 = 0,56 · {us:10|0} yazılır. Üs 0’dan −2’ye, yani 2 azaldığı için virgül 2 basamak sağa gider: 0,56 = 56 · {us:10|−2}. Üs 0’dan 2’ye, yani 2 arttığı için virgül 2 basamak sola gider: 0,56 = 0,0056 · {us:10|2}. Üs 0’dan −3’e, yani 3 azaldığı için virgül 3 basamak sağa gider: 0,56 = 560 · {us:10|−3}."
-  },
-  {
-   "soru": "Şu eşitliği sağlayan n tam sayısını bul: 2,9 · {us:10|7} = 290 · {us:10|n}.",
-   "cevap": "Katsayı 2,9’dan 290’a geçerken virgül 2 basamak sağa kaymıştır. Çarpımın değişmemesi için üs 2 azalmalıdır: n = 7 − 2 = 5. Sınama: 2,9 · {us:10|7} = 29 000 000 ve 290 · {us:10|5} = 29 000 000’dur."
-  },
-  {
-   "soru": "Ondalık gösterimi 36,051 olan sayının çözümlenmiş yazılışı 3 · {us:10|a} + 6 · {us:10|b} + 5 · {us:10|c} + 1 · {us:10|d} biçimindedir. a + b + c + d toplamı kaçtır?",
-   "cevap": "Sayıda 3 onlar, 6 birler, 5 yüzde birler ve 1 binde birler basamağındadır; onda birler basamağındaki 0’ın terimi yazılmamıştır. Buna göre a = 1, b = 0, c = −2 ve d = −3 olur. Toplam 1 + 0 + (−2) + (−3) = −4’tür."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "Aşağıdaki üslü ifadelerden hangisi 0,0001 sayısına eşittir?",
-   "secenekler": [
-    "{us:10|−3}",
-    "{us:10|4}",
-    "{us:10|−4}",
-    "{us:10|−5}"
-   ],
-   "dogru": 2,
-   "aciklama": "Virgülden sonra 1 rakamı dördüncü basamaktadır: 0,0001 = {kesir:1|10 000} = {kesir:1|{us:10|4}} = {us:10|−4}. Üssü, virgülden sonraki sıfırların sayısı değil, 1 rakamının bulunduğu basamağın sırası belirler."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Bir öğrenci 23,07 sayısını 2 · {us:10|1} + 3 · {us:10|0} + 7 · {us:10|−1} biçiminde çözümlemiştir. Bu çözümlemeyle ilgili aşağıdakilerden hangisi doğrudur?",
-   "secenekler": [
-    "Yüzde birler basamağındaki 7 için {us:10|−1} yerine {us:10|−2} yazılmalıdır.",
-    "Birler basamağındaki 3 için {us:10|0} yerine {us:10|1} yazılmalıdır.",
-    "Onlar basamağındaki 2 için {us:10|1} yerine {us:10|2} yazılmalıdır.",
-    "Çözümlemede hata yoktur; terimlerin toplamı 23,07 sayısına eşittir."
-   ],
-   "dogru": 0,
-   "aciklama": "Bu sayıda onda birler basamağındaki rakam 0’dır; 7 ise yüzde birler basamağındadır. Doğru çözümleme 2 · {us:10|1} + 3 · {us:10|0} + 7 · {us:10|−2} biçimindedir. Öğrencinin yazdığı terimlerin toplamı 23,7 eder."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Aşağıdakilerden hangisi 36,4 · {us:10|2} ifadesiyle aynı sayıyı gösterir?",
-   "secenekler": [
-    "3,64 · {us:10|1}",
-    "364 · {us:10|3}",
-    "0,364 · {us:10|2}",
-    "3,64 · {us:10|3}"
-   ],
-   "dogru": 3,
-   "aciklama": "İfadenin değeri 36,4 · {us:10|2} = 3640’tır. Katsayıdaki virgül 1 basamak sola kayınca üs 1 artmalıdır: 3,64 · {us:10|3} = 3640 bulunur."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Her yargı için doğru ya da yanlış kararını ver; yanlış bulduklarının açıklamasını oku.",
-   "ifadeler": [
+  "sinif": 8,
+  "ders": "matematik",
+  "hafta": 4,
+  "tarih": "5-9 Ekim 2026",
+  "yayin_tarihi": "2026-10-12",
+  "unite": "Sayılar ve İşlemler",
+  "konu": "Sayıların Ondalık Gösterimini Çözümleme",
+  "ciktilar": [
+    "M.8.1.2.3. Sayıların ondalık gösterimlerini 10’un tam sayı kuvvetlerini kullanarak çözümler.",
+    "M.8.1.2.4. Verilen bir sayıyı 10’un farklı tam sayı kuvvetlerini kullanarak ifade eder."
+  ],
+  "giris": "Geçen hafta üssü sıfır ve negatif olan ifadeleri, ayrıca üslü ifadelerle işlem kurallarını öğrendin. Bu hafta o bilgiyi ondalık sayılara uygulayacak, bir sayının basamaklarını 10’un tam sayı kuvvetleriyle yazacak ve aynı sayıyı 10’un farklı kuvvetleriyle ifade edeceksin.",
+  "bolumler": [
     {
-     "metin": "Ondalık gösterimi 50,208 olan sayının çözümlenmiş yazılışında {us:10|0} ve {us:10|−2} terimleri 0 olduğundan yazılmayabilir.",
-     "dogru": true,
-     "aciklama": "Çözümleme şöyledir: 50,208 = 5 · {us:10|1} + 0 · {us:10|0} + 2 · {us:10|−1} + 0 · {us:10|−2} + 8 · {us:10|−3}. Değeri 0 olan terimler toplamı değiştirmez."
+      "baslik": "Ondalık gösterimin çözümlenmesi",
+      "metin": [
+        "Ondalık gösterimdeki her rakam, bulunduğu basamağın değerini taşır. Örneğin 4,358 sayısında virgülün solundaki 4 birler basamağındadır; virgülün sağındaki 3, 5 ve 8 ise sırasıyla onda birler, yüzde birler ve binde birler basamağındadır.",
+        "Basamakların değeri virgülden sağa doğru her adımda 10’a bölünerek küçülür: birler basamağının değeri 1, onda birler basamağının değeri {kesir:1|10}, yüzde birler basamağının değeri {kesir:1|100}, binde birler basamağının değeri {kesir:1|1000}’dir. Bir rakamın sayıya katkısı, rakamla bulunduğu basamağın değerinin çarpımıdır. Buna göre 4,358 = 4 · 1 + 3 · {kesir:1|10} + 5 · {kesir:1|100} + 8 · {kesir:1|1000} yazılır.",
+        "Bir sayıyı, her rakamını basamak değeriyle çarpıp elde ettiğin çarpımların toplamı olarak yazmak, o sayının ondalık gösterimini çözümlemektir. Çözümleme, sayıyı oluşturan parçaları ayrı ayrı gösterir; parçaları toplayınca yine aynı sayıyı bulursun."
+      ],
+      "kutu": {
+        "tur": "tanim",
+        "baslik": "Çözümleme",
+        "metin": "Ondalık gösterimdeki her rakamı basamak değeriyle çarpıp bu çarpımları toplayarak sayıyı yazmaya çözümleme denir."
+      }
     },
     {
-     "metin": "Bir sayıyı {us:10|−2} ile çarpınca virgül sağa doğru iki basamak ilerler.",
-     "dogru": false,
-     "aciklama": "Çünkü {us:10|−2} = {kesir:1|100} olduğundan çarpınca virgül iki basamak sola kayar. Örneğin 45 · {us:10|−2} = 0,45’tir."
+      "baslik": "Basamak değerlerini 10’un kuvvetleriyle yazmak",
+      "metin": [
+        "Basamak değerleri 10’un tam sayı kuvvetleriyle de yazılabilir. Birler basamağının değeri 1 = {us:10|0}’dır. Geçen haftaki kurala göre {us:10|−1} = {kesir:1|{us:10|1}} = {kesir:1|10}, {us:10|−2} = {kesir:1|{us:10|2}} = {kesir:1|100} ve {us:10|−3} = {kesir:1|{us:10|3}} = {kesir:1|1000} olur.",
+        "Bu eşitlikleri çözümlemede yerlerine yazınca 4,358 = 4 · {us:10|0} + 3 · {us:10|−1} + 5 · {us:10|−2} + 8 · {us:10|−3} elde edilir. Virgülden sağa doğru ilerledikçe üs −1, −2, −3 diye azalır; virgülün solunda ise onlar basamağı {us:10|1} ile, yüzler basamağı {us:10|2} ile yazılır.",
+        "Örneğin 82,53 sayısında 8 onlar, 2 birler, 5 onda birler, 3 yüzde birler basamağındadır. Çözümlemesi 82,53 = 8 · {us:10|1} + 2 · {us:10|0} + 5 · {us:10|−1} + 3 · {us:10|−2} biçimindedir. Terimleri toplayarak sınayabilirsin: 80 + 2 + 0,5 + 0,03 = 82,53."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "metin": "Birler basamağı {us:10|0} ile eşleşir. Bir basamak sola gidince üs 1 artar, bir basamak sağa gidince üs 1 azalır."
+      },
+      "gorsel": "<svg viewBox=\"0 0 440 292\" role=\"img\" aria-label=\"4,358 sayısının çözümlenmesi: birler basamağındaki 4 rakamının basamak değeri 1 ve 10’un kuvveti 10 üssü 0; onda birler basamağındaki 3 için 1 bölü 10 ve 10 üssü eksi 1; yüzde birler basamağındaki 5 için 1 bölü 100 ve 10 üssü eksi 2; binde birler basamağındaki 8 için 1 bölü 1000 ve 10 üssü eksi 3. Sonuç: 4,358 eşittir 4 çarpı 10 üssü 0 artı 3 çarpı 10 üssü eksi 1 artı 5 çarpı 10 üssü eksi 2 artı 8 çarpı 10 üssü eksi 3.\"><rect x=\"100\" y=\"8\" width=\"72\" height=\"206\" rx=\"14\" class=\"g-ya\"/><rect x=\"100\" y=\"8\" width=\"72\" height=\"206\" rx=\"14\" class=\"g-ys\" stroke-width=\"1.8\"/><rect x=\"115\" y=\"20\" width=\"42\" height=\"42\" rx=\"10\" class=\"g-z\"/><rect x=\"115\" y=\"20\" width=\"42\" height=\"42\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"136\" y=\"49\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" class=\"g-yf\">4</text><text x=\"136\" y=\"96\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" class=\"g-yf\">Birler</text><text x=\"131.8\" y=\"147.9\" font-size=\"17\" font-weight=\"700\" class=\"g-yf\">1</text><text x=\"122.0\" y=\"196.3\" font-size=\"18\" font-weight=\"800\" class=\"g-yf\">10</text><text x=\"142.5\" y=\"188.0\" font-size=\"13.0\" font-weight=\"800\" class=\"g-yf\">0</text><rect x=\"194\" y=\"8\" width=\"72\" height=\"206\" rx=\"14\" class=\"g-ta\"/><rect x=\"194\" y=\"8\" width=\"72\" height=\"206\" rx=\"14\" class=\"g-ts\" stroke-width=\"1.8\"/><rect x=\"209\" y=\"20\" width=\"42\" height=\"42\" rx=\"10\" class=\"g-z\"/><rect x=\"209\" y=\"20\" width=\"42\" height=\"42\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"230\" y=\"49\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" class=\"g-tf\">3</text><text x=\"230\" y=\"88\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" class=\"g-tf\">Onda</text><text x=\"230\" y=\"103\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" class=\"g-tf\">birler</text><text x=\"226.2\" y=\"138.0\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">1</text><line x1=\"218.9\" y1=\"142.0\" x2=\"241.1\" y2=\"142.0\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"221.9\" y=\"160.0\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">10</text><text x=\"212.7\" y=\"196.3\" font-size=\"18\" font-weight=\"800\" class=\"g-tf\">10</text><text x=\"233.1\" y=\"188.0\" font-size=\"13.0\" font-weight=\"800\" class=\"g-tf\">−1</text><rect x=\"270\" y=\"8\" width=\"72\" height=\"206\" rx=\"14\" class=\"g-ta\"/><rect x=\"270\" y=\"8\" width=\"72\" height=\"206\" rx=\"14\" class=\"g-ts\" stroke-width=\"1.8\"/><rect x=\"285\" y=\"20\" width=\"42\" height=\"42\" rx=\"10\" class=\"g-z\"/><rect x=\"285\" y=\"20\" width=\"42\" height=\"42\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"306\" y=\"49\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" class=\"g-tf\">5</text><text x=\"306\" y=\"88\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" class=\"g-tf\">Yüzde</text><text x=\"306\" y=\"103\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" class=\"g-tf\">birler</text><text x=\"302.2\" y=\"138.0\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">1</text><line x1=\"290.6\" y1=\"142.0\" x2=\"321.5\" y2=\"142.0\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"293.6\" y=\"160.0\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">100</text><text x=\"288.1\" y=\"196.3\" font-size=\"18\" font-weight=\"800\" class=\"g-tf\">10</text><text x=\"308.6\" y=\"188.0\" font-size=\"13.0\" font-weight=\"800\" class=\"g-tf\">−2</text><rect x=\"346\" y=\"8\" width=\"72\" height=\"206\" rx=\"14\" class=\"g-ta\"/><rect x=\"346\" y=\"8\" width=\"72\" height=\"206\" rx=\"14\" class=\"g-ts\" stroke-width=\"1.8\"/><rect x=\"361\" y=\"20\" width=\"42\" height=\"42\" rx=\"10\" class=\"g-z\"/><rect x=\"361\" y=\"20\" width=\"42\" height=\"42\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"382\" y=\"49\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" class=\"g-tf\">8</text><text x=\"382\" y=\"88\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" class=\"g-tf\">Binde</text><text x=\"382\" y=\"103\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" class=\"g-tf\">birler</text><text x=\"378.2\" y=\"138.0\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">1</text><line x1=\"362.2\" y1=\"142.0\" x2=\"401.8\" y2=\"142.0\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"365.2\" y=\"160.0\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">1000</text><text x=\"364.1\" y=\"196.3\" font-size=\"18\" font-weight=\"800\" class=\"g-tf\">10</text><text x=\"384.6\" y=\"188.0\" font-size=\"13.0\" font-weight=\"800\" class=\"g-tf\">−3</text><text x=\"182\" y=\"52\" text-anchor=\"middle\" font-size=\"30\" font-weight=\"800\" class=\"g-y\">,</text><text x=\"8\" y=\"47\" text-anchor=\"start\" font-size=\"11.5\" font-weight=\"700\" class=\"g-s\">Rakam</text><text x=\"8\" y=\"101\" text-anchor=\"start\" font-size=\"11.5\" font-weight=\"700\" class=\"g-s\">Basamak</text><text x=\"8\" y=\"138\" text-anchor=\"start\" font-size=\"11.5\" font-weight=\"700\" class=\"g-s\">Basamak</text><text x=\"8\" y=\"152\" text-anchor=\"start\" font-size=\"11.5\" font-weight=\"700\" class=\"g-s\">değeri</text><text x=\"8\" y=\"186\" text-anchor=\"start\" font-size=\"11.5\" font-weight=\"700\" class=\"g-s\">10’un</text><text x=\"8\" y=\"200\" text-anchor=\"start\" font-size=\"11.5\" font-weight=\"700\" class=\"g-s\">kuvveti</text><text x=\"60.3\" y=\"249.2\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">4,358 = 4 ·  </text><text x=\"144.9\" y=\"249.2\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"162.1\" y=\"242.3\" font-size=\"10.8\" font-weight=\"700\" class=\"g-y\">0</text><text x=\"168.3\" y=\"249.2\" font-size=\"15\" font-weight=\"700\" class=\"g-y\"> + 3 · </text><text x=\"209.1\" y=\"249.2\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"226.3\" y=\"242.3\" font-size=\"10.8\" font-weight=\"700\" class=\"g-y\">−1</text><text x=\"238.2\" y=\"249.2\" font-size=\"15\" font-weight=\"700\" class=\"g-y\"> + 5 · </text><text x=\"279.0\" y=\"249.2\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"296.2\" y=\"242.3\" font-size=\"10.8\" font-weight=\"700\" class=\"g-y\">−2</text><text x=\"309.0\" y=\"249.2\" font-size=\"15\" font-weight=\"700\" class=\"g-y\"> + 8 · </text><text x=\"349.8\" y=\"249.2\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"367.0\" y=\"242.3\" font-size=\"10.8\" font-weight=\"700\" class=\"g-y\">−3</text><rect x=\"14\" y=\"266\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ya\"/><rect x=\"14\" y=\"266\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ys\" stroke-width=\"1.6\"/><text x=\"35\" y=\"278\" text-anchor=\"start\" font-size=\"12.5\" font-weight=\"600\" class=\"g-y\">üssü sıfır</text><rect x=\"150\" y=\"266\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ta\"/><rect x=\"150\" y=\"266\" width=\"14\" height=\"14\" rx=\"4\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"171\" y=\"278\" text-anchor=\"start\" font-size=\"12.5\" font-weight=\"600\" class=\"g-y\">üssü negatif</text></svg>"
     },
     {
-     "metin": "Şu iki ifade aynı sayıyı gösterir: 6,4 · {us:10|3} ve 640 · {us:10|1}.",
-     "dogru": true,
-     "aciklama": "İki ifade de 6400’e eşittir; katsayıdaki virgül 2 basamak sağa kaydığında üs 2 azalmıştır."
+      "baslik": "Sıfır rakamlı basamaklar ve çözümlemeden sayıya dönüş",
+      "metin": [
+        "Bir basamaktaki rakam 0 ise o basamağın terimi 0 olur. Örneğin 705,3 sayısında onlar basamağındaki rakam 0’dır: 705,3 = 7 · {us:10|2} + 0 · {us:10|1} + 5 · {us:10|0} + 3 · {us:10|−1}. Değeri 0 olan terim toplamı etkilemediğinden yazılmayabilir: 705,3 = 7 · {us:10|2} + 5 · {us:10|0} + 3 · {us:10|−1}.",
+        "Çözümlenmiş yazılıştan sayıya dönerken her terimin üssü, rakamın hangi basamakta bulunduğunu söyler. Yazılmayan her üs için o basamağa 0 yazarsın. Örneğin 3 · {us:10|3} + 8 · {us:10|1} + 6 · {us:10|0} + 2 · {us:10|−2} yazılışında {us:10|2} ve {us:10|−1} terimleri yoktur; bu basamaklara 0 gelir ve sayı 3086,02 olur.",
+        "Rakamları yan yana dizmek yetmez; her rakamın hangi basamağa geldiğine bakmalısın. Örneğin 3 · {us:10|2} + 5 · {us:10|0} toplamı 35 değil 305’tir, çünkü onlar basamağında 0 vardır. Terimleri toplayarak sınadığında 300 + 5 = 305 bulursun."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "metin": "Çözümlemede bulunmayan bir üs, o basamağa 0 yazılacağını gösterir; basamağı atlayıp rakamları bitiştirme."
+      }
     },
     {
-     "metin": "Çözümlemede virgülden sağa doğru gidildikçe 10’un kuvvetlerinin üsleri 1, 2, 3 diye artar.",
-     "dogru": false,
-     "aciklama": "Virgülün sağındaki basamaklarda üsler −1, −2, −3 diye azalır; birler basamağının üssü 0’dır."
+      "baslik": "Bir sayıyı 10’un kuvvetiyle çarpmak virgülü kaydırır",
+      "metin": [
+        "Bir sayıyı {us:10|1} ile, yani 10 ile çarpınca virgül bir basamak sağa kayar: 36,52 · {us:10|1} = 365,2. Üs 3 ise {us:10|3} = 1000 olduğundan virgül üç basamak sağa kayar: 0,3652 · {us:10|3} = 365,2. Demek ki 36,52 · {us:10|1} = 0,3652 · {us:10|3} = 365,2’dir.",
+        "Üs negatifse virgül sola kayar. Örneğin {us:10|−1} = {kesir:1|10} olduğundan 2764,3 · {us:10|−1} = 2764,3 · {kesir:1|10} = 276,43 bulunur; virgül bir basamak sola gitmiştir. Öte yandan 2,7643 · {us:10|2} işleminde virgül iki basamak sağa gider ve sonuç 276,43 olur. Böylece 2764,3 · {us:10|−1} = 2,7643 · {us:10|2} = 276,43’tür.",
+        "Kayma yönünü üssün işareti, kayma miktarını üssün büyüklüğü belirler: üs pozitifse virgül sağa, negatifse sola gider ve üs kaçsa virgül o kadar basamak ilerler. Virgülün ilerleyeceği yerde rakam kalmamışsa sıfır ekleyerek basamak açarsın: 7,5 · {us:10|3} = 7500."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "metin": "Bir sayıyı 10’un pozitif kuvvetiyle çarpınca virgül sağa, negatif kuvvetiyle çarpınca sola kayar; kayma miktarı üssün büyüklüğü kadar basamaktır."
+      },
+      "gorsel": "<svg viewBox=\"0 0 440 242\" role=\"img\" aria-label=\"Üssü pozitif olan 10 kuvvetiyle çarpmak virgülü sağa, negatif olan kuvvetle çarpmak sola kaydırır. 36,52 çarpı 10 üssü 1 işleminde virgül 1 basamak sağa gider; 0,3652 çarpı 10 üssü 3 işleminde virgül 3 basamak sağa gider; ikisi de 365,2 eder. 2764,3 çarpı 10 üssü eksi 1 işleminde virgül 1 basamak sola gider; 2,7643 çarpı 10 üssü 2 işleminde virgül 2 basamak sağa gider; ikisi de 276,43 eder.\"><rect x=\"8\" y=\"8\" width=\"424\" height=\"108\" rx=\"14\" class=\"g-z\"/><rect x=\"8\" y=\"8\" width=\"424\" height=\"108\" rx=\"14\" class=\"g-c\" stroke-width=\"1.8\"/><text x=\"24.0\" y=\"44.0\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">36,52 · </text><text x=\"84.5\" y=\"44.0\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"103.9\" y=\"36.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-y\">1</text><rect x=\"152\" y=\"24\" width=\"150\" height=\"28\" rx=\"14\" class=\"g-z\"/><rect x=\"152\" y=\"24\" width=\"150\" height=\"28\" rx=\"14\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"227\" y=\"42.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" class=\"g-mf\">virgül 1 basamak sağa</text><text x=\"24.0\" y=\"90.0\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">0,3652 · </text><text x=\"94.4\" y=\"90.0\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"113.7\" y=\"82.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-y\">3</text><rect x=\"152\" y=\"70\" width=\"150\" height=\"28\" rx=\"14\" class=\"g-z\"/><rect x=\"152\" y=\"70\" width=\"150\" height=\"28\" rx=\"14\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"227\" y=\"88.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" class=\"g-mf\">virgül 3 basamak sağa</text><path d=\"M318 28q10 0 10 10v18q0 10 10 10q-10 0 -10 10v18q0 10 -10 10\" class=\"g-c\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"348.0\" y=\"73.0\" font-size=\"17\" font-weight=\"800\" class=\"g-y\">= 365,2</text><rect x=\"8\" y=\"126\" width=\"424\" height=\"108\" rx=\"14\" class=\"g-z\"/><rect x=\"8\" y=\"126\" width=\"424\" height=\"108\" rx=\"14\" class=\"g-c\" stroke-width=\"1.8\"/><text x=\"24.0\" y=\"161.9\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">2764,3 · </text><text x=\"94.4\" y=\"161.9\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"113.7\" y=\"154.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-y\">−1</text><rect x=\"152\" y=\"142\" width=\"150\" height=\"28\" rx=\"14\" class=\"g-z\"/><rect x=\"152\" y=\"142\" width=\"150\" height=\"28\" rx=\"14\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"227\" y=\"160.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" class=\"g-tf\">virgül 1 basamak sola</text><text x=\"24.0\" y=\"207.9\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">2,7643 · </text><text x=\"94.4\" y=\"207.9\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"113.7\" y=\"200.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-y\">2</text><rect x=\"152\" y=\"188\" width=\"150\" height=\"28\" rx=\"14\" class=\"g-z\"/><rect x=\"152\" y=\"188\" width=\"150\" height=\"28\" rx=\"14\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"227\" y=\"206.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" class=\"g-mf\">virgül 2 basamak sağa</text><path d=\"M318 146q10 0 10 10v18q0 10 10 10q-10 0 -10 10v18q0 10 -10 10\" class=\"g-c\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"348.0\" y=\"190.9\" font-size=\"17\" font-weight=\"800\" class=\"g-y\">= 276,43</text></svg>"
+    },
+    {
+      "baslik": "Aynı sayıyı 10’un farklı kuvvetleriyle yazmak",
+      "metin": [
+        "a · {us:10|n} biçimindeki bir sayıyı 10’un başka bir kuvvetiyle yazarken a ile n birlikte değişir; çarpımın değeri aynı kalmalıdır. Üs 1 artarsa a’daki virgül 1 basamak sola, üs 1 azalırsa 1 basamak sağa gider. Çünkü katsayıyı 10 kat küçültüp 10’un kuvvetini 10 kat büyütürsen çarpım değişmez.",
+        "Örnek olarak 365,2 sayısına bak: 0,3652 · {us:10|3} = 3,652 · {us:10|2} = 36,52 · {us:10|1} = 365,2 · {us:10|0} = 3652 · {us:10|−1} yazılışlarının hepsi 365,2’ye eşittir. Soldan sağa gidildikçe üs 1’er azalır ve katsayıdaki virgül 1’er basamak sağa kayar.",
+        "Hangi yazılışın seçileceği soruda belirtilir. Örneğin 82,53 sayısı {us:10|2} kuvvetiyle yazılacaksa a = 0,8253 olur; {us:10|−2} kuvvetiyle yazılacaksa a = 8253 olur."
+      ],
+      "kutu": {
+        "tur": "bilgi",
+        "metin": "a · {us:10|n} yazılışında n değiştiğinde a’nın değeri de değişir; ikisinin çarpımı aynı sayıyı vermelidir."
+      },
+      "gorsel": "<svg viewBox=\"0 0 440 272\" role=\"img\" aria-label=\"365,2 sayısının 10’un farklı kuvvetleriyle yazılışları: 0,3652 çarpı 10 üssü 3, 3,652 çarpı 10 üssü 2, 36,52 çarpı 10 üssü 1, 365,2 çarpı 10 üssü 0 ve 3652 çarpı 10 üssü eksi 1. Hepsi 365,2’ye eşittir. Üs 1 azaldıkça katsayıdaki virgül 1 basamak sağa kayar.\"><defs><marker id=\"okM1\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-s\"/></marker></defs><rect x=\"10\" y=\"14\" width=\"58\" height=\"28\" rx=\"14\" class=\"g-z\"/><rect x=\"10\" y=\"14\" width=\"58\" height=\"28\" rx=\"14\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"39\" y=\"32.5\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-mf\">n = 3</text><rect x=\"82\" y=\"11\" width=\"196\" height=\"34\" rx=\"10\" class=\"g-ma\"/><rect x=\"82\" y=\"11\" width=\"196\" height=\"34\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"131.6\" y=\"34.0\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">0,3652 · </text><text x=\"202.0\" y=\"34.0\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"221.3\" y=\"26.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-y\">3</text><text x=\"294\" y=\"34\" text-anchor=\"start\" font-size=\"17\" font-weight=\"800\" class=\"g-y\">= 365,2</text><line x1=\"180\" y1=\"47\" x2=\"180\" y2=\"63\" class=\"g-c\" stroke-width=\"1.8\" marker-end=\"url(#okM1)\"/><text x=\"194\" y=\"59\" text-anchor=\"start\" font-size=\"12\" font-weight=\"600\" class=\"g-s\">virgül sağa, üs 1 azalır</text><rect x=\"10\" y=\"68\" width=\"58\" height=\"28\" rx=\"14\" class=\"g-z\"/><rect x=\"10\" y=\"68\" width=\"58\" height=\"28\" rx=\"14\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"39\" y=\"86.5\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-mf\">n = 2</text><rect x=\"82\" y=\"65\" width=\"196\" height=\"34\" rx=\"10\" class=\"g-ma\"/><rect x=\"82\" y=\"65\" width=\"196\" height=\"34\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"136.5\" y=\"88.0\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">3,652 · </text><text x=\"197.0\" y=\"88.0\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"216.4\" y=\"80.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-y\">2</text><text x=\"294\" y=\"88\" text-anchor=\"start\" font-size=\"17\" font-weight=\"800\" class=\"g-y\">= 365,2</text><line x1=\"180\" y1=\"101\" x2=\"180\" y2=\"117\" class=\"g-c\" stroke-width=\"1.8\" marker-end=\"url(#okM1)\"/><text x=\"194\" y=\"113\" text-anchor=\"start\" font-size=\"12\" font-weight=\"600\" class=\"g-s\">virgül sağa, üs 1 azalır</text><rect x=\"10\" y=\"122\" width=\"58\" height=\"28\" rx=\"14\" class=\"g-z\"/><rect x=\"10\" y=\"122\" width=\"58\" height=\"28\" rx=\"14\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"39\" y=\"140.5\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-mf\">n = 1</text><rect x=\"82\" y=\"119\" width=\"196\" height=\"34\" rx=\"10\" class=\"g-ma\"/><rect x=\"82\" y=\"119\" width=\"196\" height=\"34\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"137.0\" y=\"141.9\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">36,52 · </text><text x=\"197.5\" y=\"141.9\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"216.9\" y=\"134.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-y\">1</text><text x=\"294\" y=\"142\" text-anchor=\"start\" font-size=\"17\" font-weight=\"800\" class=\"g-y\">= 365,2</text><line x1=\"180\" y1=\"155\" x2=\"180\" y2=\"171\" class=\"g-c\" stroke-width=\"1.8\" marker-end=\"url(#okM1)\"/><text x=\"194\" y=\"167\" text-anchor=\"start\" font-size=\"12\" font-weight=\"600\" class=\"g-s\">virgül sağa, üs 1 azalır</text><rect x=\"10\" y=\"176\" width=\"58\" height=\"28\" rx=\"14\" class=\"g-z\"/><rect x=\"10\" y=\"176\" width=\"58\" height=\"28\" rx=\"14\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"39\" y=\"194.5\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-yf\">n = 0</text><rect x=\"82\" y=\"173\" width=\"196\" height=\"34\" rx=\"10\" class=\"g-ya\"/><rect x=\"82\" y=\"173\" width=\"196\" height=\"34\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"136.5\" y=\"195.9\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">365,2 · </text><text x=\"197.0\" y=\"195.9\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"216.4\" y=\"188.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-y\">0</text><text x=\"294\" y=\"196\" text-anchor=\"start\" font-size=\"17\" font-weight=\"800\" class=\"g-y\">= 365,2</text><line x1=\"180\" y1=\"209\" x2=\"180\" y2=\"225\" class=\"g-c\" stroke-width=\"1.8\" marker-end=\"url(#okM1)\"/><text x=\"194\" y=\"221\" text-anchor=\"start\" font-size=\"12\" font-weight=\"600\" class=\"g-s\">virgül sağa, üs 1 azalır</text><rect x=\"10\" y=\"230\" width=\"58\" height=\"28\" rx=\"14\" class=\"g-z\"/><rect x=\"10\" y=\"230\" width=\"58\" height=\"28\" rx=\"14\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"39\" y=\"248.5\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-tf\">n = −1</text><rect x=\"82\" y=\"227\" width=\"196\" height=\"34\" rx=\"10\" class=\"g-ta\"/><rect x=\"82\" y=\"227\" width=\"196\" height=\"34\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"135.9\" y=\"249.9\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">3652 · </text><text x=\"191.3\" y=\"249.9\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">10</text><text x=\"210.7\" y=\"242.1\" font-size=\"12.2\" font-weight=\"700\" class=\"g-y\">−1</text><text x=\"294\" y=\"250\" text-anchor=\"start\" font-size=\"17\" font-weight=\"800\" class=\"g-y\">= 365,2</text></svg>"
+    },
+    {
+      "baslik": "Eksik üssü ve eksik katsayıyı bulmak",
+      "metin": [
+        "İki ifade eşit olacaksa ve birinde katsayı ya da üs eksikse virgülün kaç basamak kaydığına bak. Örneğin 3,6 · {us:10|5} = ? · {us:10|3} eşitliğinde üs 5’ten 3’e, yani 2 azalmıştır; katsayıdaki virgül 2 basamak sağa gitmelidir. Buna göre aranan katsayı 360’tır.",
+        "Katsayı verilip üs aranıyorsa aynı mantıkla düşün: 0,045 · {us:10|8} = 45 · {us:10|n} eşitliğinde katsayıdaki virgül 3 basamak sağa gitmiştir; bu yüzden üs 3 azalır ve n = 5 bulunur. Sınamak için iki yanı da hesapla: ikisi de 4 500 000 eder.",
+        "Yalnız bir tarafı değiştirmek sayıyı değiştirir. Örneğin 6 · {us:10|4} = 60 000 iken katsayıdaki virgülü kaydırıp 0,6 · {us:10|4} yazarsan 6000 elde edersin; sayı aynı kalsın istiyorsan üssü de {us:10|5} yapmalısın: 0,6 · {us:10|5} = 60 000."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "metin": "Katsayı küçülürse üs büyür, katsayı büyürse üs küçülür; ikisi aynı yönde değişirse sayı değişir."
+      }
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "yonerge": "İşlemleri sonuçlarıyla eşleştir.",
-   "ciftler": [
-    [
-     "6,03 · {us:10|2}",
-     "603"
-    ],
-    [
-     "6030 · {us:10|−2}",
-     "60,3"
-    ],
-    [
-     "0,603 · {us:10|−1}",
-     "0,0603"
-    ],
-    [
-     "6,03 · {us:10|−3}",
-     "0,00603"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
-   "cumleler": [
+  ],
+  "ornekler": [
     {
-     "metin": "Çözümlemede her basamağın değeri, 10’un tam sayı ___ ile yazılır.",
-     "cevap": "kuvveti"
+      "soru": "Ondalık gösterimi 72,308 olan sayıyı 10’un kuvvetlerini kullanarak çözümle.",
+      "cevap": "Basamaklar sırasıyla onlar, birler, onda birler, yüzde birler ve binde birlerdir: 72,308 = 7 · {us:10|1} + 2 · {us:10|0} + 3 · {us:10|−1} + 0 · {us:10|−2} + 8 · {us:10|−3}. Yüzde birler basamağındaki rakam 0 olduğundan o terim yazılmayabilir: 72,308 = 7 · {us:10|1} + 2 · {us:10|0} + 3 · {us:10|−1} + 8 · {us:10|−3}."
     },
     {
-     "metin": "Katsayıdaki virgül bir basamak sağa kayarsa üs 1 ___.",
-     "cevap": "azalır"
+      "soru": "Çözümlenmiş yazılışı 9 · {us:10|2} + 4 · {us:10|0} + 5 · {us:10|−2} + 6 · {us:10|−3} olan sayının ondalık gösterimini yaz.",
+      "cevap": "Yüzler, birler, yüzde birler ve binde birler basamaklarında sırasıyla 9, 4, 5 ve 6 vardır. Onlar basamağıyla onda birler basamağının terimi yazılmamıştır; bu basamaklara 0 gelir. Sayı 904,056’dır."
     },
     {
-     "metin": "Virgülün sağındaki basamakların değerleri 10’un ___ üslü ifadeleriyle yazılır.",
-     "cevap": "negatif"
+      "soru": "Şu işlemlerin sonuçlarını bul ve virgülün hangi yöne kaç basamak kaydığını belirt: 0,0073 · {us:10|4} ve 4560 · {us:10|−3}.",
+      "cevap": "Birincide üs pozitiftir; virgül dört basamak sağa gider: 0,0073 · {us:10|4} = 73. İkincide üs negatiftir; virgül üç basamak sola gider: 4560 · {us:10|−3} = 4,56."
+    },
+    {
+      "soru": "Ondalık gösterimi 0,56 olan sayıyı a · {us:10|−2}, a · {us:10|2} ve a · {us:10|−3} biçimlerinde yaz; her durumda a değerini bul.",
+      "cevap": "Başlangıç olarak 0,56 = 0,56 · {us:10|0} yazılır. Üs 0’dan −2’ye, yani 2 azaldığı için virgül 2 basamak sağa gider: 0,56 = 56 · {us:10|−2}. Üs 0’dan 2’ye, yani 2 arttığı için virgül 2 basamak sola gider: 0,56 = 0,0056 · {us:10|2}. Üs 0’dan −3’e, yani 3 azaldığı için virgül 3 basamak sağa gider: 0,56 = 560 · {us:10|−3}."
+    },
+    {
+      "soru": "Şu eşitliği sağlayan n tam sayısını bul: 2,9 · {us:10|7} = 290 · {us:10|n}.",
+      "cevap": "Katsayı 2,9’dan 290’a geçerken virgül 2 basamak sağa kaymıştır. Çarpımın değişmemesi için üs 2 azalmalıdır: n = 7 − 2 = 5. Sınama: 2,9 · {us:10|7} = 29 000 000 ve 290 · {us:10|5} = 29 000 000’dur."
+    },
+    {
+      "soru": "Ondalık gösterimi 36,051 olan sayının çözümlenmiş yazılışı 3 · {us:10|a} + 6 · {us:10|b} + 5 · {us:10|c} + 1 · {us:10|d} biçimindedir. a + b + c + d toplamı kaçtır?",
+      "cevap": "Sayıda 3 onlar, 6 birler, 5 yüzde birler ve 1 binde birler basamağındadır; onda birler basamağındaki 0’ın terimi yazılmamıştır. Buna göre a = 1, b = 0, c = −2 ve d = −3 olur. Toplam 1 + 0 + (−2) + (−3) = −4’tür."
     }
-   ],
-   "fazla": [
-    "artar"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Birler basamağındaki rakamın neden {us:10|0} ile çarpıldığını, 10’un kuvvetlerindeki örüntüden yararlanarak açıkla.",
-   "ipuclari": [
-    "Önce {us:10|2} ile {us:10|1} değerlerini yaz; üs azalırken değerin nasıl değiştiğine bak.",
-    "Üs 0’a ulaştığında değerin ne olacağını bul."
-   ],
-   "cevap": "Birler basamağının değeri 1’dir. Önce {us:10|2} = 100 ve {us:10|1} = 10 yazılır; üs 1 azaldıkça değer 10’a bölünür ve üs 0 olunca 10 ÷ 10 = 1 bulunur. Yani {us:10|0} = 1’dir ve birler basamağındaki rakam 1 ile çarpıldığı için {us:10|0} ile çarpılır. Basamak sola geçince değer 10 kat büyür, üs 1 artar; sağa geçince değer onda birine iner, üs 1 azalır."
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Ali’nin sayısı 4 · {us:10|2} + 7 · {us:10|−1}, Elif’in sayısı 7 · {us:10|2} + 4 · {us:10|−1} biçiminde yazılmıştır. İki sayıyı da ondalık gösterimle yaz ve hangisinin daha büyük olduğunu gerekçesiyle belirt.",
-   "ipuclari": [
-    "Eksik basamaklara 0 yazarak her sayıyı ondalık gösterime çevir.",
-    "Sayıları soldan sağa, en büyük basamaktan başlayarak karşılaştır."
-   ],
-   "cevap": "Ali’nin sayısı 400,7; Elif’in sayısı 700,4’tür. Yüzler basamağında Ali’de 4, Elif’te 7 vardır ve 7 > 4 olduğundan Elif’in sayısı daha büyüktür. İki sayıda da 4 ve 7 rakamları bulunsa bile bir rakamın değeri, hangi basamakta olduğuna, yani 10’un hangi kuvvetiyle çarpıldığına bağlıdır."
-  }
- ],
- "ozet": [
-  "Ondalık gösterimi basamak değerlerinin toplamı biçiminde yazmak çözümlemedir; birler basamağı {us:10|0} ile, virgülün sağındaki basamaklar {us:10|−1}, {us:10|−2}, {us:10|−3} gibi negatif üslü kuvvetlerle yazılır.",
-  "Çözümlemede değeri 0 olan terim yazılmayabilir; çözümlenmiş yazılıştan sayıya dönerken bulunmayan üslere karşılık gelen basamaklara 0 yazılır.",
-  "Bir sayıyı 10’un kuvvetiyle çarpınca virgül kayar: üs pozitifse sağa, negatifse sola, üssün büyüklüğü kadar basamak.",
-  "Aynı sayı a · {us:10|n} biçiminde 10’un farklı kuvvetleriyle yazılabilir; üs 1 artarsa a’daki virgül 1 basamak sola, üs 1 azalırsa 1 basamak sağa kayar."
- ]
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki üslü ifadelerden hangisi 0,0001 sayısına eşittir?",
+      "secenekler": [
+        "{us:10|−4}",
+        "{us:10|4}",
+        "{us:10|−3}",
+        "{us:10|−5}"
+      ],
+      "dogru": 0,
+      "aciklama": "Virgülden sonra 1 rakamı dördüncü basamaktadır: 0,0001 = {kesir:1|10 000} = {kesir:1|{us:10|4}} = {us:10|−4}. Üssü, virgülden sonraki sıfırların sayısı değil, 1 rakamının bulunduğu basamağın sırası belirler."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir öğrenci 23,07 sayısını 2 · {us:10|1} + 3 · {us:10|0} + 7 · {us:10|−1} biçiminde çözümlemiştir. Bu çözümlemeyle ilgili aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Birler basamağındaki 3 için {us:10|0} yerine {us:10|1} yazılmalıdır.",
+        "Yüzde birler basamağındaki 7 için {us:10|−1} yerine {us:10|−2} yazılmalıdır.",
+        "Onlar basamağındaki 2 için {us:10|1} yerine {us:10|2} yazılmalıdır.",
+        "Çözümlemede hata yoktur; terimlerin toplamı 23,07 sayısına eşittir."
+      ],
+      "dogru": 1,
+      "aciklama": "Bu sayıda onda birler basamağındaki rakam 0’dır; 7 ise yüzde birler basamağındadır. Doğru çözümleme 2 · {us:10|1} + 3 · {us:10|0} + 7 · {us:10|−2} biçimindedir. Öğrencinin yazdığı terimlerin toplamı 23,7 eder."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdakilerden hangisi 36,4 · {us:10|2} ifadesiyle aynı sayıyı gösterir?",
+      "secenekler": [
+        "3,64 · {us:10|1}",
+        "364 · {us:10|3}",
+        "3,64 · {us:10|3}",
+        "0,364 · {us:10|2}"
+      ],
+      "dogru": 2,
+      "aciklama": "İfadenin değeri 36,4 · {us:10|2} = 3640’tır. Katsayıdaki virgül 1 basamak sola kayınca üs 1 artmalıdır: 3,64 · {us:10|3} = 3640 bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "‘Bir sayıyı 10’un kuvvetiyle çarpmak virgülü kaydırır’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Bir sayıyı 10’un pozitif kuvvetiyle çarpınca virgül sağa, negatif kuvvetiyle çarpınca sola kayar; kayma miktarı üssün büyüklüğü kadar basamaktır."
+      ],
+      "dogru": 3,
+      "aciklama": "Bir sayıyı 10’un kuvvetiyle çarpmak virgülü kaydırır bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Ondalık gösterimi 50,208 olan sayının çözümlenmiş yazılışında {us:10|0} ve {us:10|−2} terimleri 0 olduğundan yazılmayabilir.",
+          "dogru": true,
+          "aciklama": "Çözümleme şöyledir: 50,208 = 5 · {us:10|1} + 0 · {us:10|0} + 2 · {us:10|−1} + 0 · {us:10|−2} + 8 · {us:10|−3}. Değeri 0 olan terimler toplamı değiştirmez."
+        },
+        {
+          "metin": "Bir sayıyı {us:10|−2} ile çarpınca virgül sağa doğru iki basamak ilerler.",
+          "dogru": false,
+          "aciklama": "Çünkü {us:10|−2} = {kesir:1|100} olduğundan çarpınca virgül iki basamak sola kayar. Örneğin 45 · {us:10|−2} = 0,45’tir."
+        },
+        {
+          "metin": "Şu iki ifade aynı sayıyı gösterir: 6,4 · {us:10|3} ve 640 · {us:10|1}.",
+          "dogru": true,
+          "aciklama": "İki ifade de 6400’e eşittir; katsayıdaki virgül 2 basamak sağa kaydığında üs 2 azalmıştır."
+        },
+        {
+          "metin": "Çözümlemede virgülden sağa doğru gidildikçe 10’un kuvvetlerinin üsleri 1, 2, 3 diye artar.",
+          "dogru": false,
+          "aciklama": "Virgülün sağındaki basamaklarda üsler −1, −2, −3 diye azalır; birler basamağının üssü 0’dır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "6,03 · {us:10|2}",
+          "603"
+        ],
+        [
+          "6030 · {us:10|−2}",
+          "60,3"
+        ],
+        [
+          "0,603 · {us:10|−1}",
+          "0,0603"
+        ],
+        [
+          "6,03 · {us:10|−3}",
+          "0,00603"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Çözümlemede her basamağın değeri, 10’un tam sayı ___ ile yazılır.",
+          "cevap": "kuvveti"
+        },
+        {
+          "metin": "Katsayıdaki virgül bir basamak sağa kayarsa üs 1 ___.",
+          "cevap": "azalır"
+        },
+        {
+          "metin": "Virgülün sağındaki basamakların değerleri 10’un ___ üslü ifadeleriyle yazılır.",
+          "cevap": "negatif"
+        }
+      ],
+      "fazla": [
+        "artar",
+        "varsayım"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Birler basamağındaki rakamın neden {us:10|0} ile çarpıldığını, 10’un kuvvetlerindeki örüntüden yararlanarak açıkla.",
+      "cevap": "Birler basamağının değeri 1’dir. Önce {us:10|2} = 100 ve {us:10|1} = 10 yazılır; üs 1 azaldıkça değer 10’a bölünür ve üs 0 olunca 10 ÷ 10 = 1 bulunur. Yani {us:10|0} = 1’dir ve birler basamağındaki rakam 1 ile çarpıldığı için {us:10|0} ile çarpılır. Basamak sola geçince değer 10 kat büyür, üs 1 artar; sağa geçince değer onda birine iner, üs 1 azalır.",
+      "ipuclari": [
+        "Önce {us:10|2} ile {us:10|1} değerlerini yaz; üs azalırken değerin nasıl değiştiğine bak.",
+        "Üs 0’a ulaştığında değerin ne olacağını bul."
+      ]
+    }
+  ],
+  "ozet": [
+    "Ondalık gösterimi basamak değerlerinin toplamı biçiminde yazmak çözümlemedir; birler basamağı {us:10|0} ile, virgülün sağındaki basamaklar {us:10|−1}, {us:10|−2}, {us:10|−3} gibi negatif üslü kuvvetlerle yazılır.",
+    "Çözümlemede değeri 0 olan terim yazılmayabilir; çözümlenmiş yazılıştan sayıya dönerken bulunmayan üslere karşılık gelen basamaklara 0 yazılır.",
+    "Bir sayıyı 10’un kuvvetiyle çarpınca virgül kayar: üs pozitifse sağa, negatifse sola, üssün büyüklüğü kadar basamak.",
+    "Aynı sayı a · {us:10|n} biçiminde 10’un farklı kuvvetleriyle yazılabilir; üs 1 artarsa a’daki virgül 1 basamak sola, üs 1 azalırsa 1 basamak sağa kayar."
+  ]
 }

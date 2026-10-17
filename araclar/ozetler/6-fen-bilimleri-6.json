@@ -1,474 +1,480 @@
 {
- "sinif": 6,
- "ders": "fen-bilimleri",
- "hafta": 6,
- "tarih": "19-23 Ekim 2026",
- "yayin_tarihi": "2026-10-14",
- "unite": "Kuvvetin Etkisinde Hareket",
- "konu": "Sabit Süratli ve Sabit Hızlı Hareket: Sürat, Birimleri ve Yol-Zaman Grafiği",
- "ciktilar": [
-  "FB.6.2.3. Sürat ve hız kavramlarını karşılaştırabilme"
- ],
- "giris": "Geçen hafta dengelenmiş kuvvetlerin cismin hareketini değiştirmediğini, dengelenmemiş kuvvetlerin ise cismi harekete geçirdiğini ya da hızlandırıp yavaşlattığını deneyle gördük. Bu hafta hareketin kendisini ölçmeye başlıyoruz: bir cismin ne kadar çabuk yol aldığını anlatan sürati hesaplayacak, birimlerini tanıyacak, sabit süratli hareketi yol-zaman grafiğiyle gösterecek ve sürate yön eklenince ortaya çıkan hız kavramıyla tanışacağız.",
- "bolumler": [
-  {
-   "baslik": "Hareket, alınan yol ve geçen süre",
-   "metin": [
-    "Bir cismin çevresindeki cisimlere göre yeri zamanla değişiyorsa cisim hareket ediyor demektir. Yürüyen bir insan, yuvarlanan bir top ve uçan bir kuş hareketlidir; sınıfta duran bir masa hareketsizdir. Hareketi incelemek için iki şeyi ölçeriz: cismin ne kadar yol aldığını ve bu sırada ne kadar süre geçtiğini.",
-    "Cismin hareket ederken izlediği yolun toplam uzunluğuna alınan yol denir. Alınan yol bir uzunluk olduğundan metre (m) ya da kilometre (km) ile ölçülür; kısa yollar için santimetre (cm) de kullanılır. Hareketin başından sonuna kadar geçen zamana geçen süre denir ve saniye (s), dakika (min) ya da saat (h) ile ölçülür. Süreyi kronometre ya da saatle ölçeriz.",
-    "Peki iki hareketliden hangisi daha çabuktur? Aynı yolu daha kısa sürede alan ya da aynı sürede daha çok yol alan cisim daha çabuktur. Elif 100 m'yi 20 saniyede, Can aynı yolu 25 saniyede koşarsa Elif daha çabuktur. Ama Elif 100 m'yi 20 saniyede, Can 150 m'yi 25 saniyede koşmuşsa hangisinin daha çabuk olduğunu anlamak için bir hesap yapmamız gerekir. Bu hesap bizi sürat kavramına götürür."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Ölçülen büyüklük",
-     "Ne anlatır?",
-     "Birimleri"
-    ],
-    "satirlar": [
-     [
-      "Alınan yol",
-      "İzlenen yolun toplam uzunluğu",
-      "cm, m, km"
-     ],
-     [
-      "Geçen süre",
-      "Hareketin başından sonuna kadar geçen zaman",
-      "s, min, h"
-     ],
-     [
-      "Sürat",
-      "Birim zamanda alınan yol",
-      "m/s, km/h"
-     ]
-    ]
-   },
-   "kutu": {
-    "tur": "tanim",
-    "baslik": "Alınan yol ve geçen süre",
-    "metin": "Alınan yol, cismin hareket ederken izlediği yolun uzunluğudur; m ya da km ile ölçülür. Geçen süre, bu yol alınırken geçen zamandır; s, min ya da h ile ölçülür."
-   }
-  },
-  {
-   "baslik": "Sürat nedir, nasıl hesaplanır?",
-   "metin": [
-    "Sürat, bir cismin birim zamanda aldığı yoldur; yani cismin 1 saniyede ya da 1 saatte kaç metre ya da kaç kilometre yol aldığını söyler. Sürati bulmak için alınan yolu geçen süreye böleriz: sürat = alınan yol / geçen süre. Elif 100 m'yi 20 saniyede koştuğuna göre sürati 100 m / 20 s = 5 m/s'dir; Can 150 m'yi 25 saniyede koştuğuna göre sürati 150 m / 25 s = 6 m/s'dir. Demek ki Can her saniyede 6 m, Elif 5 m yol almıştır; Can daha süratlidir.",
-    "Bu bağıntı öteki büyüklükleri bulmak için de kullanılır. Sürati ve geçen süreyi biliyorsak alınan yol, sürat ile sürenin çarpımıdır: alınan yol = sürat × geçen süre. Sürati 5 m/s olan Elif 40 saniyede 5 m/s × 40 s = 200 m yol alır. Alınan yolu ve sürati biliyorsak geçen süre, yolun sürate bölümüdür: geçen süre = alınan yol / sürat. Elif 300 m'lik yolu 300 m / 5 m/s = 60 saniyede koşar.",
-    "Hesap yaparken yol ve süre birimlerinin birbiriyle uyumlu olmasına dikkat ederiz: yol metre, süre saniye ise sürat m/s çıkar; yol kilometre, süre saat ise sürat km/h çıkar. Sonucu yazarken sayının yanına birimini mutlaka ekleriz; “sürati 5” demek eksik, “sürati 5 m/s” demek doğrudur. Aşağıdaki tabloda farklı hareketliler için sürat hesabı yapılmıştır."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Hareketli",
-     "Alınan yol",
-     "Geçen süre",
-     "Sürat"
-    ],
-    "satirlar": [
-     [
-      "Elif (koşu)",
-      "100 m",
-      "20 s",
-      "100 m / 20 s = 5 m/s"
-     ],
-     [
-      "Can (koşu)",
-      "150 m",
-      "25 s",
-      "150 m / 25 s = 6 m/s"
-     ],
-     [
-      "Bisikletli",
-      "240 m",
-      "30 s",
-      "240 m / 30 s = 8 m/s"
-     ],
-     [
-      "Otobüs",
-      "180 km",
-      "3 h",
-      "180 km / 3 h = 60 km/h"
-     ],
-     [
-      "Yürüyen öğrenci",
-      "90 m",
-      "60 s",
-      "90 m / 60 s = 1,5 m/s"
-     ]
-    ]
-   },
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Sürat bağıntısı",
-    "metin": "sürat = alınan yol / geçen süre. Buradan alınan yol = sürat × geçen süre ve geçen süre = alınan yol / sürat bulunur."
-   },
-   "kutular": [
+  "sinif": 6,
+  "ders": "fen-bilimleri",
+  "hafta": 6,
+  "tarih": "19-23 Ekim 2026",
+  "yayin_tarihi": "2026-10-14",
+  "unite": "Kuvvetin Etkisinde Hareket",
+  "konu": "Sabit Süratli ve Sabit Hızlı Hareket: Sürat, Birimleri ve Yol-Zaman Grafiği",
+  "ciktilar": [
+    "FB.6.2.3. Sürat ve hız kavramlarını karşılaştırabilme"
+  ],
+  "giris": "Geçen hafta dengelenmiş kuvvetlerin cismin hareketini değiştirmediğini, dengelenmemiş kuvvetlerin ise cismi harekete geçirdiğini ya da hızlandırıp yavaşlattığını deneyle gördük. Bu hafta hareketin kendisini ölçmeye başlıyoruz: bir cismin ne kadar çabuk yol aldığını anlatan sürati hesaplayacak, birimlerini tanıyacak, sabit süratli hareketi yol-zaman grafiğiyle gösterecek ve sürate yön eklenince ortaya çıkan hız kavramıyla tanışacağız.",
+  "bolumler": [
     {
-     "tur": "ipucu",
-     "baslik": "Birimden kontrol",
-     "metin": "Sonucun birimi, hangi birimleri kullandığımızı gösterir: metreyi saniyeye böldüysek m/s, kilometreyi saate böldüysek km/h yazarız. Sayıyı yazıp birimi unutmak cevabı eksik bırakır."
-    }
-   ]
-  },
-  {
-   "baslik": "Sürat birimleri: m/s ve km/h",
-   "metin": [
-    "Süratin birimi, yol biriminin zaman birimine bölünmesiyle oluşur. En çok kullanılan iki birim m/s (metre bölü saniye) ve km/h (kilometre bölü saat) birimleridir. m/s kısa yollar ve kısa süreler için uygundur: sınıfta yürüyen bir arkadaşımızın, koşan bir atletin ya da yuvarlanan bir topun sürati m/s ile ifade edilir.",
-    "km/h ise uzun yolculuklar için uygundur: otomobil, tren ve uçak süratleri km/h ile verilir. Araçların göstergelerinde ve yol kenarındaki sürat sınırı levhalarında bu birim kullanılır. Uluslararası sistemde saat h harfiyle gösterildiğinden birim km/h yazılır; bazı kaynaklarda aynı birim km/sa biçiminde de yazılır.",
-    "Günlük yaşamda karşılaştığımız bazı hareketlilerin yaklaşık süratleri aşağıdaki tabloda verilmiştir. Sayılar, hareketlinin her saniyede ya da her saatte ne kadar yol aldığını söyler: 50 km/h ile giden bir otomobil, bu süratini korursa 1 saatte 50 km yol alır. Aynı sürat farklı birimlerle farklı sayılarla yazıldığından süratleri karşılaştırırken birimlerin aynı olmasına dikkat ederiz."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Hareketli",
-     "Yaklaşık sürati"
-    ],
-    "satirlar": [
-     [
-      "Yürüyen insan",
-      "1 m/s"
-     ],
-     [
-      "Bisikletli",
-      "5 m/s"
-     ],
-     [
-      "Şehir içinde otomobil",
-      "50 km/h"
-     ],
-     [
-      "Yüksek hızlı tren",
-      "250 km/h"
-     ],
-     [
-      "Yolcu uçağı",
-      "900 km/h"
-     ]
-    ]
-   },
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "Birim olmadan sürat olmaz",
-    "metin": "“Arabanın sürati 50.” demek anlamsızdır; 50 m/s ile 50 km/h çok farklı süratlerdir. Sürati her zaman sayı ve birimle birlikte yazalım: 50 km/h."
-   },
-   "kutular": [
-    {
-     "tur": "bilgi",
-     "baslik": "Aynı sürat, farklı sayılar",
-     "metin": "1 m/s ile yürüyen biri 1 saatte, yani 3.600 saniyede 3.600 m, yani 3,6 km yol alır; süratinin km/h ile değeri 3,6 km/h'tir. Aynı sürat, birime göre farklı sayılarla yazılır. Bu dönüşümleri bu hafta yapmayacağız; birimlerin farklı olduğunu bilmek yeter."
-    }
-   ]
-  },
-  {
-   "baslik": "Sabit süratli hareket",
-   "metin": [
-    "Bir cisim eşit zaman aralıklarında eşit yollar alıyorsa sürati değişmiyor demektir; böyle harekete sabit süratli hareket denir. Düz bir koridorda her saniye 2 m yürüyen bir öğrenci, yürüyen merdiven, fabrikadaki yürüyen bant ve raylarda aynı süratle ilerleyen tren sabit süratli hareket eder. Sabit süratli harekette hangi zaman aralığını ölçersek ölçelim aynı sürat değerini buluruz.",
-    "Sabit süratli hareketi sınıfta inceleyebiliriz. Pilli bir oyuncak arabayı düz bir zeminde çalıştırır, her saniyenin sonunda bulunduğu yeri işaretler ve işaretler arasındaki uzaklıkları cetvelle ölçeriz. Aşağıdaki tabloda böyle bir ölçümün verileri var: araba her saniyede 20 cm yol alıyor. 0-1 s, 1-2 s, 2-3 s ve 3-4 s aralıklarında alınan yollar eşit olduğundan hareket sabit süratlidir. Sürati, toplam yolu toplam süreye bölerek buluruz: 80 cm / 4 s = 20 cm/s, yani 0,2 m/s.",
-    "Her hareket sabit süratli değildir. Duraktan kalkan bir otobüs ilk saniyelerde az, sonraki saniyelerde daha çok yol alır; sürati artmaktadır. Fren yapan bir bisiklet ise her saniye bir öncekinden daha az yol alır; sürati azalmaktadır. Böyle hareketlerde eşit zaman aralıklarında eşit yol alınmaz. Geçen haftayla bağlantı kuralım: cisme etki eden kuvvetler dengelenmişse cisim süratini korur; süratin artması ya da azalması için dengelenmemiş bir kuvvet gerekir."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Zaman (s)",
-     "Toplam alınan yol (cm)",
-     "O saniyede alınan yol (cm)"
-    ],
-    "satirlar": [
-     [
-      "0",
-      "0",
-      "–"
-     ],
-     [
-      "1",
-      "20",
-      "20"
-     ],
-     [
-      "2",
-      "40",
-      "20"
-     ],
-     [
-      "3",
-      "60",
-      "20"
-     ],
-     [
-      "4",
-      "80",
-      "20"
-     ]
-    ]
-   },
-   "kutu": {
-    "tur": "tanim",
-    "baslik": "Sabit süratli hareket",
-    "metin": "Eşit zaman aralıklarında eşit yollar alan cismin hareketi sabit süratlidir. Sabit süratli harekette alınan yol, geçen süreyle orantılı olarak artar: süre iki katına çıkınca alınan yol da iki katına çıkar."
-   },
-   "kutular": [
-    {
-     "tur": "hatirla",
-     "baslik": "Kuvvetle bağlantı",
-     "metin": "Dengelenmiş kuvvetlerin etkisindeki hareketli cisim süratini korur. Süratin değişmesi için cisme dengelenmemiş bir kuvvet etki etmelidir."
-    }
-   ]
-  },
-  {
-   "baslik": "Yol-zaman grafiği",
-   "metin": [
-    "Hareketi bir tabloyla gösterebildiğimiz gibi bir grafikle de gösterebiliriz. Yol-zaman grafiğinde yatay eksene zamanı (s), düşey eksene alınan yolu (m ya da cm) yazarız. Tablodaki her satır grafikte bir nokta olur: oyuncak araba için (1 s, 20 cm), (2 s, 40 cm), (3 s, 60 cm) ve (4 s, 80 cm) noktalarını işaretleriz. Noktaları birleştirdiğimizde başlangıç noktasından çıkan dümdüz bir çizgi elde ederiz.",
-    "Sabit süratli hareketin yol-zaman grafiği her zaman böyle, başlangıç noktasından çıkan bir doğrudur; çünkü yol, zamanla düzgün biçimde artar. Grafikten sürati de okuyabiliriz: doğru üzerindeki herhangi bir noktanın yol değerini zaman değerine böleriz. (4 s, 80 cm) noktası için 80 cm / 4 s = 20 cm/s bulunur; (2 s, 40 cm) noktası da 40 cm / 2 s = 20 cm/s sonucunu verir.",
-    "Aynı grafikte iki hareketliyi karşılaştırdığımızda çizgisi daha dik olanın sürati daha büyüktür; çünkü aynı sürede daha çok yol almıştır. Her saniyede 30 cm yol alan ikinci bir araba 4 saniyede 120 cm yol alır ve çizgisi birinci arabanınkinden daha dik olur. Duran bir cismin aldığı yol değişmediğinden grafiği zaman eksenine paralel, yatay bir çizgidir. Çizgi dümdüz değil de kıvrılıyorsa hareket sabit süratli değildir."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Zaman (s)",
-     "1. arabanın yolu (cm)",
-     "2. arabanın yolu (cm)"
-    ],
-    "satirlar": [
-     [
-      "1",
-      "20",
-      "30"
-     ],
-     [
-      "2",
-      "40",
-      "60"
-     ],
-     [
-      "3",
-      "60",
-      "90"
-     ],
-     [
-      "4",
-      "80",
-      "120"
-     ]
-    ]
-   },
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Grafiği okuma",
-    "metin": "Yol-zaman grafiğinde çizgi başlangıç noktasından çıkıyorsa ve dümdüzse hareket sabit süratlidir. Sürati bulmak için doğru üzerindeki bir noktanın yolunu zamanına bölelim; çizgi ne kadar dikse sürat o kadar büyüktür."
-   },
-   "kutular": [
-    {
-     "tur": "bilgi",
-     "baslik": "Sürat-zaman grafiği",
-     "metin": "Sabit süratli hareketin sürat-zaman grafiği de çizilebilir. Sürat değişmediğinden bu grafik, zaman eksenine paralel yatay bir çizgidir; oyuncak araba için bu çizgi 20 cm/s düzeyinde uzanır."
-    }
-   ]
-  },
-  {
-   "baslik": "Hız: sürate yön eklenince",
-   "metin": [
-    "Bir arkadaşımız “Bisikletle 5 m/s süratle gidiyorum.” dediğinde ne kadar çabuk gittiğini anlarız ama nereye doğru gittiğini bilemeyiz. “Kuzeye doğru 5 m/s ile gidiyorum.” dediğinde ise hem çabukluğunu hem yönünü öğreniriz. Çabukluğun yanına yönün de eklenmesiyle ortaya çıkan bu kavrama hız denir. Hızı söylerken her zaman yönü de söyleriz: doğuya 3 m/s, güneye 70 km/h gibi.",
-    "Sürat ile hızın ortak özellikleri çoktur. İkisi de cismin ne kadar çabuk hareket ettiğini anlatır; ikisi de alınan yol ile geçen süre kullanılarak bulunur; ikisi de aynı birimlerle, m/s ya da km/h ile ifade edilir; ikisinde de değer büyüdükçe cisim daha çabuk hareket eder. Düz bir yolda yön değiştirmeden giden bir cismin süratinin değeri ile hızının büyüklüğü eşittir.",
-    "Aralarındaki temel fark yöndür. Süratin yönü yoktur; yalnızca bir sayı ve birimden oluşur. Hızın ise yönü vardır; hız, yönlü bir büyüklüktür. Bu yüzden yön değişince sürat aynı kalsa bile hız değişir. Günlük konuşmada “hız” ve “sürat” sözcükleri çoğu zaman birbirinin yerine kullanılır; fen dersinde ise ikisini birbirinden ayırırız. Gelecek hafta bu iki kavramı yer değiştirme kavramıyla birlikte ayrıntılı olarak karşılaştıracak, sabit süratli hareket ile sabit hızlı hareketi birbirinden ayıracağız."
-   ],
-   "tablo": {
-    "basliklar": [
-     "İfade",
-     "Sürat mi, hız mı?",
-     "Neden?"
-    ],
-    "satirlar": [
-     [
-      "Top 3 m/s ile yuvarlanıyor.",
-      "Sürat",
-      "Yalnızca çabukluk verilmiş"
-     ],
-     [
-      "Otobüs kuzeye 60 km/h ile gidiyor.",
-      "Hız",
-      "Çabuklukla birlikte yön verilmiş"
-     ],
-     [
-      "Koşucunun sürati 7 m/s.",
-      "Sürat",
-      "Yön belirtilmemiş"
-     ],
-     [
-      "Uçak batıya 900 km/h ile uçuyor.",
-      "Hız",
-      "Yön belirtilmiş"
-     ]
-    ]
-   },
-   "kutu": {
-    "tur": "tanim",
-    "baslik": "Hız",
-    "metin": "Hız, cismin çabukluğunu yönüyle birlikte anlatan büyüklüktür. Sürat gibi m/s ya da km/h ile ölçülür; süratten farkı, bir yönünün olmasıdır."
-   },
-   "kutular": [
-    {
-     "tur": "dikkat",
-     "baslik": "Benzer ama aynı değil",
-     "metin": "Sürat ve hız aynı birimle ölçülür ve ikisi de çabukluğu anlatır; ama sürat yönsüz, hız yönlüdür. “5 m/s” bir sürat, “doğuya 5 m/s” bir hızdır."
-    }
-   ]
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Bir öğrenci okul bahçesindeki 200 m'lik düz koşu yolunu 40 saniyede koşuyor. Öğrencinin süratini bulunuz ve bu değerin ne anlama geldiğini açıklayınız.",
-   "cevap": "Sürat, alınan yolun geçen süreye bölünmesiyle bulunur: sürat = 200 m / 40 s = 5 m/s. Bu değer, öğrencinin her saniyede 5 m yol aldığı anlamına gelir."
-  },
-  {
-   "soru": "Bir otobüs 240 km'lik yolu 4 saatte, bir otomobil 350 km'lik yolu 5 saatte alıyor. Hangisi daha süratlidir? Hesaplayarak gösteriniz.",
-   "cevap": "Otobüsün sürati 240 km / 4 h = 60 km/h, otomobilin sürati 350 km / 5 h = 70 km/h bulunur. Otomobil her saatte 70 km, otobüs 60 km yol aldığından otomobil daha süratlidir. Otomobilin daha uzun yol almış olması tek başına yeterli değildir; süratleri karşılaştırmak için yolun süreye bölünmesi gerekir."
-  },
-  {
-   "soru": "Sürati 4 m/s olan bir bisikletli bu süratini koruyor. Bisikletli 2 dakikada kaç metre yol alır? 600 m'lik yolu kaç saniyede tamamlar?",
-   "cevap": "Önce süreyi saniyeye çeviririz: 2 dakika = 2 × 60 s = 120 s. Alınan yol = sürat × geçen süre = 4 m/s × 120 s = 480 m. Geçen süre = alınan yol / sürat = 600 m / 4 m/s = 150 s olur; yani bisikletli 600 m'lik yolu 150 saniyede, 2,5 dakikada tamamlar."
-  },
-  {
-   "soru": "Bir oyuncak arabanın aldığı yol şöyle ölçülmüştür: 0 s'de 0 m, 2 s'de 6 m, 4 s'de 12 m, 6 s'de 18 m, 8 s'de 24 m. Arabanın hareketi sabit süratli midir? Sürati kaç m/s'dir? Aynı biçimde devam ederse 10. saniyede toplam kaç m yol almış olur?",
-   "cevap": "Her 2 saniyelik aralıkta alınan yol 6 m'dir: 0-2 s'de 6 m, 2-4 s'de 12 m − 6 m = 6 m, 4-6 s'de 18 m − 12 m = 6 m, 6-8 s'de 24 m − 18 m = 6 m. Eşit zaman aralıklarında eşit yol alındığından hareket sabit süratlidir. Sürat = 24 m / 8 s = 3 m/s. Aynı süratle devam ederse 10 saniyede 3 m/s × 10 s = 30 m yol almış olur."
-  },
-  {
-   "soru": "Aynı yol-zaman grafiğinde K aracının doğrusu (5 s, 100 m), L aracının doğrusu (5 s, 60 m) noktasından geçiyor. İki aracın süratini bulunuz. Grafikte hangi aracın çizgisi daha diktir?",
-   "cevap": "Sürat, doğru üzerindeki bir noktanın yol değerinin zaman değerine bölünmesiyle bulunur. K aracı için 100 m / 5 s = 20 m/s, L aracı için 60 m / 5 s = 12 m/s. K aracı aynı sürede daha çok yol aldığından sürati daha büyüktür ve grafikteki çizgisi daha diktir."
-  },
-  {
-   "soru": "Bir öğrenci “Sürat ile hız aynı şeydir; ikisi de m/s ile ölçülür.” diyor. Başka bir öğrenci ise “Hızı olan bir cismin sürati yoktur.” diyor. İki düşünceyi de değerlendiriniz.",
-   "cevap": "Birinci öğrenci bir benzerliğe dayanıyor: sürat ile hız gerçekten aynı birimlerle ölçülür ve ikisi de çabukluğu anlatır. Ama aynı şey değildirler; hızın yönü vardır, süratin yoktur. “5 m/s” bir sürat, “doğuya 5 m/s” bir hızdır. İkinci öğrenci de yanılıyor: hareket eden her cismin hem sürati hem hızı vardır. Düz bir yolda yön değiştirmeden giden cismin süratinin değeri, hızının büyüklüğüne eşittir; hız yalnızca bu değere bir yön ekler."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "Bir araç 150 km'lik yolu 3 saatte alıyor. Aracın sürati kaç km/h'tir?",
-   "secenekler": [
-    "30 km/h",
-    "50 km/h",
-    "150 km/h",
-    "450 km/h"
-   ],
-   "dogru": 1,
-   "aciklama": "Sürat, alınan yolun geçen süreye bölünmesiyle bulunur: 150 km / 3 h = 50 km/h. Yolu süreyle çarpmak (450) ya da yolu olduğu gibi yazmak (150) yanlıştır."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Aşağıdaki hareketlilerden hangisinin hareketi sabit süratlidir?",
-   "secenekler": [
-    "Duraktan kalkıp gittikçe hızlanan otobüs",
-    "Fren yapıp yavaşlayarak duran bisiklet",
-    "Her saniyede 1 m yol alan yürüyen merdiven",
-    "Elden bırakılıp yere düşen top"
-   ],
-   "dogru": 2,
-   "aciklama": "Eşit zaman aralıklarında eşit yol alan cismin hareketi sabit süratlidir; yürüyen merdiven her saniye aynı yolu alır. Hızlanan otobüs, yavaşlayan bisiklet ve düşen top eşit sürelerde eşit yol almaz."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Sabit süratli hareket eden bir cismin yol-zaman grafiğindeki çizgisi için aşağıdakilerden hangisi doğrudur?",
-   "secenekler": [
-    "Başlangıç noktasından çıkan dümdüz bir çizgidir.",
-    "Zaman eksenine paralel yatay bir çizgidir.",
-    "Gittikçe dikleşen kıvrımlı bir çizgidir.",
-    "Zaman eksenine dik, dikey bir çizgidir."
-   ],
-   "dogru": 0,
-   "aciklama": "Sabit süratli harekette yol zamanla düzgün artar; grafik başlangıç noktasından çıkan bir doğrudur. Yatay çizgi duran cismi, kıvrımlı çizgi sürati değişen cismi gösterir."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadeler doğru mu, yanlış mı?",
-   "ifadeler": [
-    {
-     "metin": "Sürat, alınan yolun geçen süreye bölünmesiyle bulunur.",
-     "dogru": true,
-     "aciklama": "Sürat birim zamanda alınan yoldur; sürat = alınan yol / geçen süre."
+      "baslik": "Hareket, alınan yol ve geçen süre",
+      "metin": [
+        "Bir cismin çevresindeki cisimlere göre yeri zamanla değişiyorsa cisim hareket ediyor demektir. Yürüyen bir insan, yuvarlanan bir top ve uçan bir kuş hareketlidir; sınıfta duran bir masa hareketsizdir. Hareketi incelemek için iki şeyi ölçeriz: cismin ne kadar yol aldığını ve bu sırada ne kadar süre geçtiğini.",
+        "Cismin hareket ederken izlediği yolun toplam uzunluğuna alınan yol denir. Alınan yol bir uzunluk olduğundan metre (m) ya da kilometre (km) ile ölçülür; kısa yollar için santimetre (cm) de kullanılır. Hareketin başından sonuna kadar geçen zamana geçen süre denir ve saniye (s), dakika (min) ya da saat (h) ile ölçülür. Süreyi kronometre ya da saatle ölçeriz.",
+        "Peki iki hareketliden hangisi daha çabuktur? Aynı yolu daha kısa sürede alan ya da aynı sürede daha çok yol alan cisim daha çabuktur. Elif 100 m'yi 20 saniyede, Can aynı yolu 25 saniyede koşarsa Elif daha çabuktur. Ama Elif 100 m'yi 20 saniyede, Can 150 m'yi 25 saniyede koşmuşsa hangisinin daha çabuk olduğunu anlamak için bir hesap yapmamız gerekir. Bu hesap bizi sürat kavramına götürür."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Ölçülen büyüklük",
+          "Ne anlatır?",
+          "Birimleri"
+        ],
+        "satirlar": [
+          [
+            "Alınan yol",
+            "İzlenen yolun toplam uzunluğu",
+            "cm, m, km"
+          ],
+          [
+            "Geçen süre",
+            "Hareketin başından sonuna kadar geçen zaman",
+            "s, min, h"
+          ],
+          [
+            "Sürat",
+            "Birim zamanda alınan yol",
+            "m/s, km/h"
+          ]
+        ]
+      },
+      "kutu": {
+        "tur": "tanim",
+        "baslik": "Alınan yol ve geçen süre",
+        "metin": "Alınan yol, cismin hareket ederken izlediği yolun uzunluğudur; m ya da km ile ölçülür. Geçen süre, bu yol alınırken geçen zamandır; s, min ya da h ile ölçülür."
+      },
+      "gorsel": "<svg viewBox=\"0 0 460 214\" role=\"img\" aria-label=\"Sabit Süratli ve Sabit Hızlı Hareket: Süra kavram özeti şeması\"><rect x=\"90\" y=\"12\" width=\"280\" height=\"38\" rx=\"19\" class=\"g-mf\"/><text x=\"230\" y=\"36\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"800\" class=\"g-b\">Sabit Süratli ve Sabit Hızlı Hareket: Süra</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ma\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"116\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">1. Bölüm</text><text x=\"116\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Hareket, alınan yol ve geçen süre</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ta\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"344\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">2. Bölüm</text><text x=\"344\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Sürat nedir, nasıl hesaplanır?</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ya\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"116\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-yf\">3. Bölüm</text><text x=\"116\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Sürat birimleri: m/s ve km/h</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-oa\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"344\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-of\">4. Bölüm</text><text x=\"344\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Sabit süratli hareket</text></svg>"
     },
     {
-     "metin": "Süratin birimi yalnızca km/h'tir.",
-     "dogru": false,
-     "aciklama": "Sürat km/h ile de m/s ile de ifade edilebilir; birim, yolun ve zamanın ölçüldüğü birimlere bağlıdır."
+      "baslik": "Sürat nedir, nasıl hesaplanır?",
+      "metin": [
+        "Sürat, bir cismin birim zamanda aldığı yoldur; yani cismin 1 saniyede ya da 1 saatte kaç metre ya da kaç kilometre yol aldığını söyler. Sürati bulmak için alınan yolu geçen süreye böleriz: sürat = alınan yol / geçen süre. Elif 100 m'yi 20 saniyede koştuğuna göre sürati 100 m / 20 s = 5 m/s'dir; Can 150 m'yi 25 saniyede koştuğuna göre sürati 150 m / 25 s = 6 m/s'dir. Demek ki Can her saniyede 6 m, Elif 5 m yol almıştır; Can daha süratlidir.",
+        "Bu bağıntı öteki büyüklükleri bulmak için de kullanılır. Sürati ve geçen süreyi biliyorsak alınan yol, sürat ile sürenin çarpımıdır: alınan yol = sürat × geçen süre. Sürati 5 m/s olan Elif 40 saniyede 5 m/s × 40 s = 200 m yol alır. Alınan yolu ve sürati biliyorsak geçen süre, yolun sürate bölümüdür: geçen süre = alınan yol / sürat. Elif 300 m'lik yolu 300 m / 5 m/s = 60 saniyede koşar.",
+        "Hesap yaparken yol ve süre birimlerinin birbiriyle uyumlu olmasına dikkat ederiz: yol metre, süre saniye ise sürat m/s çıkar; yol kilometre, süre saat ise sürat km/h çıkar. Sonucu yazarken sayının yanına birimini mutlaka ekleriz; “sürati 5” demek eksik, “sürati 5 m/s” demek doğrudur. Aşağıdaki tabloda farklı hareketliler için sürat hesabı yapılmıştır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Hareketli",
+          "Alınan yol",
+          "Geçen süre",
+          "Sürat"
+        ],
+        "satirlar": [
+          [
+            "Elif (koşu)",
+            "100 m",
+            "20 s",
+            "100 m / 20 s = 5 m/s"
+          ],
+          [
+            "Can (koşu)",
+            "150 m",
+            "25 s",
+            "150 m / 25 s = 6 m/s"
+          ],
+          [
+            "Bisikletli",
+            "240 m",
+            "30 s",
+            "240 m / 30 s = 8 m/s"
+          ],
+          [
+            "Otobüs",
+            "180 km",
+            "3 h",
+            "180 km / 3 h = 60 km/h"
+          ],
+          [
+            "Yürüyen öğrenci",
+            "90 m",
+            "60 s",
+            "90 m / 60 s = 1,5 m/s"
+          ]
+        ]
+      },
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Sürat bağıntısı",
+        "metin": "sürat = alınan yol / geçen süre. Buradan alınan yol = sürat × geçen süre ve geçen süre = alınan yol / sürat bulunur."
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Birimden kontrol",
+          "metin": "Sonucun birimi, hangi birimleri kullandığımızı gösterir: metreyi saniyeye böldüysek m/s, kilometreyi saate böldüysek km/h yazarız. Sayıyı yazıp birimi unutmak cevabı eksik bırakır."
+        }
+      ]
     },
     {
-     "metin": "Sabit süratli harekette eşit zaman aralıklarında eşit yol alınır.",
-     "dogru": true,
-     "aciklama": "Sabit süratli hareketin tanımı budur; sürat değişmediği için her saniyede aynı yol alınır."
+      "baslik": "Sürat birimleri: m/s ve km/h",
+      "metin": [
+        "Süratin birimi, yol biriminin zaman birimine bölünmesiyle oluşur. En çok kullanılan iki birim m/s (metre bölü saniye) ve km/h (kilometre bölü saat) birimleridir. m/s kısa yollar ve kısa süreler için uygundur: sınıfta yürüyen bir arkadaşımızın, koşan bir atletin ya da yuvarlanan bir topun sürati m/s ile ifade edilir.",
+        "km/h ise uzun yolculuklar için uygundur: otomobil, tren ve uçak süratleri km/h ile verilir. Araçların göstergelerinde ve yol kenarındaki sürat sınırı levhalarında bu birim kullanılır. Uluslararası sistemde saat h harfiyle gösterildiğinden birim km/h yazılır; bazı kaynaklarda aynı birim km/sa biçiminde de yazılır.",
+        "Günlük yaşamda karşılaştığımız bazı hareketlilerin yaklaşık süratleri aşağıdaki tabloda verilmiştir. Sayılar, hareketlinin her saniyede ya da her saatte ne kadar yol aldığını söyler: 50 km/h ile giden bir otomobil, bu süratini korursa 1 saatte 50 km yol alır. Aynı sürat farklı birimlerle farklı sayılarla yazıldığından süratleri karşılaştırırken birimlerin aynı olmasına dikkat ederiz."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Hareketli",
+          "Yaklaşık sürati"
+        ],
+        "satirlar": [
+          [
+            "Yürüyen insan",
+            "1 m/s"
+          ],
+          [
+            "Bisikletli",
+            "5 m/s"
+          ],
+          [
+            "Şehir içinde otomobil",
+            "50 km/h"
+          ],
+          [
+            "Yüksek hızlı tren",
+            "250 km/h"
+          ],
+          [
+            "Yolcu uçağı",
+            "900 km/h"
+          ]
+        ]
+      },
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Birim olmadan sürat olmaz",
+        "metin": "“Arabanın sürati 50.” demek anlamsızdır; 50 m/s ile 50 km/h çok farklı süratlerdir. Sürati her zaman sayı ve birimle birlikte yazalım: 50 km/h."
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Aynı sürat, farklı sayılar",
+          "metin": "Verilen 1 m/s ile yürüyen biri 1 saatte, yani 3.600 saniyede 3.600 m, yani 3,6 km yol alır; süratinin km/h ile değeri 3,6 km/h'tir. Aynı sürat, birime göre farklı sayılarla yazılır. Bu dönüşümleri bu hafta yapmayacağız; birimlerin farklı olduğunu bilmek yeter."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 460 214\" role=\"img\" aria-label=\"Sabit Süratli ve Sabit Hızlı Hareket: Süra kavram özeti şeması\"><rect x=\"90\" y=\"12\" width=\"280\" height=\"38\" rx=\"19\" class=\"g-mf\"/><text x=\"230\" y=\"36\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"800\" class=\"g-b\">Sabit Süratli ve Sabit Hızlı Hareket: Süra</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ma\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"116\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">1. Bölüm</text><text x=\"116\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Hareket, alınan yol ve geçen süre</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ta\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"344\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">2. Bölüm</text><text x=\"344\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Sürat nedir, nasıl hesaplanır?</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ya\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"116\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-yf\">3. Bölüm</text><text x=\"116\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Sürat birimleri: m/s ve km/h</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-oa\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"344\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-of\">4. Bölüm</text><text x=\"344\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Sabit süratli hareket</text></svg>"
     },
     {
-     "metin": "Sürat ile hız arasında hiçbir benzerlik yoktur.",
-     "dogru": false,
-     "aciklama": "İkisi de çabukluğu anlatır ve aynı birimlerle ölçülür; farkları yalnızca hızın yönünün olmasıdır."
+      "baslik": "Sabit süratli hareket",
+      "metin": [
+        "Bir cisim eşit zaman aralıklarında eşit yollar alıyorsa sürati değişmiyor demektir; böyle harekete sabit süratli hareket denir. Düz bir koridorda her saniye 2 m yürüyen bir öğrenci, yürüyen merdiven, fabrikadaki yürüyen bant ve raylarda aynı süratle ilerleyen tren sabit süratli hareket eder. Sabit süratli harekette hangi zaman aralığını ölçersek ölçelim aynı sürat değerini buluruz.",
+        "Sabit süratli hareketi sınıfta inceleyebiliriz. Pilli bir oyuncak arabayı düz bir zeminde çalıştırır, her saniyenin sonunda bulunduğu yeri işaretler ve işaretler arasındaki uzaklıkları cetvelle ölçeriz. Aşağıdaki tabloda böyle bir ölçümün verileri var: araba her saniyede 20 cm yol alıyor. 0-1 s, 1-2 s, 2-3 s ve 3-4 s aralıklarında alınan yollar eşit olduğundan hareket sabit süratlidir. Sürati, toplam yolu toplam süreye bölerek buluruz: 80 cm / 4 s = 20 cm/s, yani 0,2 m/s.",
+        "Her hareket sabit süratli değildir. Duraktan kalkan bir otobüs ilk saniyelerde az, sonraki saniyelerde daha çok yol alır; sürati artmaktadır. Fren yapan bir bisiklet ise her saniye bir öncekinden daha az yol alır; sürati azalmaktadır. Böyle hareketlerde eşit zaman aralıklarında eşit yol alınmaz. Geçen haftayla bağlantı kuralım: cisme etki eden kuvvetler dengelenmişse cisim süratini korur; süratin artması ya da azalması için dengelenmemiş bir kuvvet gerekir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Zaman (s)",
+          "Toplam alınan yol (cm)",
+          "O saniyede alınan yol (cm)"
+        ],
+        "satirlar": [
+          [
+            "0",
+            "0",
+            "–"
+          ],
+          [
+            "1",
+            "20",
+            "20"
+          ],
+          [
+            "2",
+            "40",
+            "20"
+          ],
+          [
+            "3",
+            "60",
+            "20"
+          ],
+          [
+            "4",
+            "80",
+            "20"
+          ]
+        ]
+      },
+      "kutu": {
+        "tur": "tanim",
+        "baslik": "Sabit süratli hareket",
+        "metin": "Eşit zaman aralıklarında eşit yollar alan cismin hareketi sabit süratlidir. Sabit süratli harekette alınan yol, geçen süreyle orantılı olarak artar: süre iki katına çıkınca alınan yol da iki katına çıkar."
+      },
+      "kutular": [
+        {
+          "tur": "hatirla",
+          "baslik": "Kuvvetle bağlantı",
+          "metin": "Dengelenmiş kuvvetlerin etkisindeki hareketli cisim süratini korur. Süratin değişmesi için cisme dengelenmemiş bir kuvvet etki etmelidir."
+        }
+      ]
+    },
+    {
+      "baslik": "Yol-zaman grafiği",
+      "metin": [
+        "Hareketi bir tabloyla gösterebildiğimiz gibi bir grafikle de gösterebiliriz. Yol-zaman grafiğinde yatay eksene zamanı (s), düşey eksene alınan yolu (m ya da cm) yazarız. Tablodaki her satır grafikte bir nokta olur: oyuncak araba için (1 s, 20 cm), (2 s, 40 cm), (3 s, 60 cm) ve (4 s, 80 cm) noktalarını işaretleriz. Noktaları birleştirdiğimizde başlangıç noktasından çıkan dümdüz bir çizgi elde ederiz.",
+        "Sabit süratli hareketin yol-zaman grafiği her zaman böyle, başlangıç noktasından çıkan bir doğrudur; çünkü yol, zamanla düzgün biçimde artar. Grafikten sürati de okuyabiliriz: doğru üzerindeki herhangi bir noktanın yol değerini zaman değerine böleriz. (4 s, 80 cm) noktası için 80 cm / 4 s = 20 cm/s bulunur; (2 s, 40 cm) noktası da 40 cm / 2 s = 20 cm/s sonucunu verir.",
+        "Aynı grafikte iki hareketliyi karşılaştırdığımızda çizgisi daha dik olanın sürati daha büyüktür; çünkü aynı sürede daha çok yol almıştır. Her saniyede 30 cm yol alan ikinci bir araba 4 saniyede 120 cm yol alır ve çizgisi birinci arabanınkinden daha dik olur. Duran bir cismin aldığı yol değişmediğinden grafiği zaman eksenine paralel, yatay bir çizgidir. Çizgi dümdüz değil de kıvrılıyorsa hareket sabit süratli değildir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Zaman (s)",
+          "1. arabanın yolu (cm)",
+          "2. arabanın yolu (cm)"
+        ],
+        "satirlar": [
+          [
+            "1",
+            "20",
+            "30"
+          ],
+          [
+            "2",
+            "40",
+            "60"
+          ],
+          [
+            "3",
+            "60",
+            "90"
+          ],
+          [
+            "4",
+            "80",
+            "120"
+          ]
+        ]
+      },
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Grafiği okuma",
+        "metin": "Yol-zaman grafiğinde çizgi başlangıç noktasından çıkıyorsa ve dümdüzse hareket sabit süratlidir. Sürati bulmak için doğru üzerindeki bir noktanın yolunu zamanına bölelim; çizgi ne kadar dikse sürat o kadar büyüktür."
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Sürat-zaman grafiği",
+          "metin": "Sabit süratli hareketin sürat-zaman grafiği de çizilebilir. Sürat değişmediğinden bu grafik, zaman eksenine paralel yatay bir çizgidir; oyuncak araba için bu çizgi 20 cm/s düzeyinde uzanır."
+        }
+      ]
+    },
+    {
+      "baslik": "Hız: sürate yön eklenince",
+      "metin": [
+        "Bir arkadaşımız “Bisikletle 5 m/s süratle gidiyorum.” dediğinde ne kadar çabuk gittiğini anlarız ama nereye doğru gittiğini bilemeyiz. “Kuzeye doğru 5 m/s ile gidiyorum.” dediğinde ise hem çabukluğunu hem yönünü öğreniriz. Çabukluğun yanına yönün de eklenmesiyle ortaya çıkan bu kavrama hız denir. Hızı söylerken her zaman yönü de söyleriz: doğuya 3 m/s, güneye 70 km/h gibi.",
+        "Sürat ile hızın ortak özellikleri çoktur. İkisi de cismin ne kadar çabuk hareket ettiğini anlatır; ikisi de alınan yol ile geçen süre kullanılarak bulunur; ikisi de aynı birimlerle, m/s ya da km/h ile ifade edilir; ikisinde de değer büyüdükçe cisim daha çabuk hareket eder. Düz bir yolda yön değiştirmeden giden bir cismin süratinin değeri ile hızının büyüklüğü eşittir.",
+        "Aralarındaki temel fark yöndür. Süratin yönü yoktur; yalnızca bir sayı ve birimden oluşur. Hızın ise yönü vardır; hız, yönlü bir büyüklüktür. Bu yüzden yön değişince sürat aynı kalsa bile hız değişir. Günlük konuşmada “hız” ve “sürat” sözcükleri çoğu zaman birbirinin yerine kullanılır; fen dersinde ise ikisini birbirinden ayırırız. Gelecek hafta bu iki kavramı yer değiştirme kavramıyla birlikte ayrıntılı olarak karşılaştıracak, sabit süratli hareket ile sabit hızlı hareketi birbirinden ayıracağız."
+      ],
+      "tablo": {
+        "basliklar": [
+          "İfade",
+          "Sürat mi, hız mı?",
+          "Neden?"
+        ],
+        "satirlar": [
+          [
+            "Top 3 m/s ile yuvarlanıyor.",
+            "Sürat",
+            "Yalnızca çabukluk verilmiş"
+          ],
+          [
+            "Otobüs kuzeye 60 km/h ile gidiyor.",
+            "Hız",
+            "Çabuklukla birlikte yön verilmiş"
+          ],
+          [
+            "Koşucunun sürati 7 m/s.",
+            "Sürat",
+            "Yön belirtilmemiş"
+          ],
+          [
+            "Uçak batıya 900 km/h ile uçuyor.",
+            "Hız",
+            "Yön belirtilmiş"
+          ]
+        ]
+      },
+      "kutu": {
+        "tur": "tanim",
+        "baslik": "Hız",
+        "metin": "Hız, cismin çabukluğunu yönüyle birlikte anlatan büyüklüktür. Sürat gibi m/s ya da km/h ile ölçülür; süratten farkı, bir yönünün olmasıdır."
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Benzer ama aynı değil",
+          "metin": "Sürat ve hız aynı birimle ölçülür ve ikisi de çabukluğu anlatır; ama sürat yönsüz, hız yönlüdür. “5 m/s” bir sürat, “doğuya 5 m/s” bir hızdır."
+        }
+      ]
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "yonerge": "Kavramları açıklamalarıyla eşleştiriniz.",
-   "ciftler": [
-    [
-     "Alınan yol",
-     "İzlenen yolun toplam uzunluğu"
-    ],
-    [
-     "Sürat",
-     "Birim zamanda alınan yol"
-    ],
-    [
-     "Hız",
-     "Çabukluğu yönüyle birlikte anlatan büyüklük"
-    ],
-    [
-     "Sabit süratli hareket",
-     "Eşit zaman aralıklarında eşit yol alınan hareket"
-    ],
-    [
-     "km/h",
-     "Uzun yolculuklarda kullanılan sürat birimi"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
-   "cumleler": [
+  ],
+  "ornekler": [
     {
-     "metin": "Sürat, alınan yolun geçen ___ bölünmesiyle bulunur.",
-     "cevap": "süreye"
+      "soru": "Bir öğrenci okul bahçesindeki 200 m'lik düz koşu yolunu 40 saniyede koşuyor. Öğrencinin süratini bulunuz ve bu değerin ne anlama geldiğini açıklayınız.",
+      "cevap": "Sürat, alınan yolun geçen süreye bölünmesiyle bulunur: sürat = 200 m / 40 s = 5 m/s. Bu değer, öğrencinin her saniyede 5 m yol aldığı anlamına gelir."
     },
     {
-     "metin": "Yol-zaman grafiğinde çizgisi daha ___ olan cismin sürati daha büyüktür.",
-     "cevap": "dik"
+      "soru": "Bir otobüs 240 km'lik yolu 4 saatte, bir otomobil 350 km'lik yolu 5 saatte alıyor. Hangisi daha süratlidir? Hesaplayarak gösteriniz.",
+      "cevap": "Otobüsün sürati 240 km / 4 h = 60 km/h, otomobilin sürati 350 km / 5 h = 70 km/h bulunur. Otomobil her saatte 70 km, otobüs 60 km yol aldığından otomobil daha süratlidir. Otomobilin daha uzun yol almış olması tek başına yeterli değildir; süratleri karşılaştırmak için yolun süreye bölünmesi gerekir."
     },
     {
-     "metin": "Hızın süratten farkı, hızın bir ___ olmasıdır.",
-     "cevap": "yönünün"
+      "soru": "Sürati 4 m/s olan bir bisikletli bu süratini koruyor. Bisikletli 2 dakikada kaç metre yol alır? 600 m'lik yolu kaç saniyede tamamlar?",
+      "cevap": "Önce süreyi saniyeye çeviririz: 2 dakika = 2 × 60 s = 120 s. Alınan yol = sürat × geçen süre = 4 m/s × 120 s = 480 m. Geçen süre = alınan yol / sürat = 600 m / 4 m/s = 150 s olur; yani bisikletli 600 m'lik yolu 150 saniyede, 2,5 dakikada tamamlar."
+    },
+    {
+      "soru": "Bir oyuncak arabanın aldığı yol şöyle ölçülmüştür: 0 s'de 0 m, 2 s'de 6 m, 4 s'de 12 m, 6 s'de 18 m, 8 s'de 24 m. Arabanın hareketi sabit süratli midir? Sürati kaç m/s'dir? Aynı biçimde devam ederse 10. saniyede toplam kaç m yol almış olur?",
+      "cevap": "Her 2 saniyelik aralıkta alınan yol 6 m'dir: 0-2 s'de 6 m, 2-4 s'de 12 m − 6 m = 6 m, 4-6 s'de 18 m − 12 m = 6 m, 6-8 s'de 24 m − 18 m = 6 m. Eşit zaman aralıklarında eşit yol alındığından hareket sabit süratlidir. Sürat = 24 m / 8 s = 3 m/s. Aynı süratle devam ederse 10 saniyede 3 m/s × 10 s = 30 m yol almış olur."
+    },
+    {
+      "soru": "Aynı yol-zaman grafiğinde K aracının doğrusu (5 s, 100 m), L aracının doğrusu (5 s, 60 m) noktasından geçiyor. İki aracın süratini bulunuz. Grafikte hangi aracın çizgisi daha diktir?",
+      "cevap": "Sürat, doğru üzerindeki bir noktanın yol değerinin zaman değerine bölünmesiyle bulunur. K aracı için 100 m / 5 s = 20 m/s, L aracı için 60 m / 5 s = 12 m/s. K aracı aynı sürede daha çok yol aldığından sürati daha büyüktür ve grafikteki çizgisi daha diktir."
+    },
+    {
+      "soru": "Bir öğrenci “Sürat ile hız aynı şeydir; ikisi de m/s ile ölçülür.” diyor. Başka bir öğrenci ise “Hızı olan bir cismin sürati yoktur.” diyor. İki düşünceyi de değerlendiriniz.",
+      "cevap": "Birinci öğrenci bir benzerliğe dayanıyor: sürat ile hız gerçekten aynı birimlerle ölçülür ve ikisi de çabukluğu anlatır. Ama aynı şey değildirler; hızın yönü vardır, süratin yoktur. “5 m/s” bir sürat, “doğuya 5 m/s” bir hızdır. İkinci öğrenci de yanılıyor: hareket eden her cismin hem sürati hem hızı vardır. Düz bir yolda yön değiştirmeden giden cismin süratinin değeri, hızının büyüklüğüne eşittir; hız yalnızca bu değere bir yön ekler."
     }
-   ],
-   "fazla": [
-    "yatay"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Ayşe evden okula kadar olan 600 m'lik yolu 10 dakikada, kardeşi Ali ise aynı yolu 8 dakikada yürüyor. İkisinin süratini m/s cinsinden bulunuz. Bir arkadaşları “Ayşe daha uzun süre yürüdüğü için daha süratlidir.” diyor. Bu düşünceyi değerlendiriniz.",
-   "ipuclari": [
-    "Dakikayı saniyeye çevirmeyi unutmayalım: 1 dakika = 60 saniye.",
-    "Aynı yolu daha kısa sürede alan mı, daha uzun sürede alan mı daha süratlidir?"
-   ],
-   "cevap": "Ayşe için 10 dakika = 600 s, sürat = 600 m / 600 s = 1 m/s. Ali için 8 dakika = 480 s, sürat = 600 m / 480 s = 1,25 m/s. Ali her saniyede daha çok yol aldığından daha süratlidir. Arkadaşlarının düşüncesi yanlıştır: aynı yolu daha uzun sürede almak daha yavaş olmak demektir; sürat, yolun süreye bölünmesiyle bulunur ve süre büyüdükçe sürat küçülür."
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Bir öğrenci oyuncak arabasının aldığı yolu her saniye ölçüyor: 0 s'de 0 cm, 1 s'de 15 cm, 2 s'de 30 cm, 3 s'de 45 cm, 4 s'de 50 cm. Öğrenci “Araba sabit süratli hareket etti; sürati 50 cm / 4 s = 12,5 cm/s.” diyor. Verileri inceleyerek öğrencinin yorumunu değerlendiriniz. Yol-zaman grafiği nasıl görünür?",
-   "ipuclari": [
-    "Her saniyede alınan yolu ayrı ayrı hesaplayalım: aralıklar eşit mi?",
-    "Grafikte noktalar tek bir doğru üzerinde mi kalır?"
-   ],
-   "cevap": "Her saniyede alınan yollar 15 cm, 15 cm, 15 cm ve 5 cm'dir. İlk 3 saniyede eşit yollar alınmıştır; bu bölümde hareket sabit süratlidir ve sürat 45 cm / 3 s = 15 cm/s'dir. Son saniyede ise yalnızca 5 cm alınmıştır; araba yavaşlamıştır. Bu yüzden hareketin tamamı sabit süratli değildir; 12,5 cm/s değeri bütün yolculuk için bulunan bir değerdir, ama araba hiçbir saniyede bu süratle gitmemiştir. Yol-zaman grafiğinde ilk üç nokta başlangıçtan çıkan bir doğru üzerindedir; 4. saniyedeki nokta bu doğrunun altında kalır ve çizgi orada yataya doğru kıvrılır."
-  }
- ],
- "ozet": [
-  "Alınan yol, cismin izlediği yolun toplam uzunluğudur (m, km); geçen süre bu sırada geçen zamandır (s, min, h).",
-  "Sürat, birim zamanda alınan yoldur: sürat = alınan yol / geçen süre. Buradan alınan yol = sürat × geçen süre ve geçen süre = alınan yol / sürat bulunur.",
-  "Sürat birimleri m/s ve km/h'tir; sürat her zaman sayı ve birimle birlikte yazılır ve farklı birimdeki süratler doğrudan karşılaştırılmaz.",
-  "Eşit zaman aralıklarında eşit yol alan cisim sabit süratli hareket eder; yol-zaman grafiği başlangıç noktasından çıkan bir doğrudur ve çizgi ne kadar dikse sürat o kadar büyüktür.",
-  "Sürat ile hız aynı birimlerle ölçülür ve ikisi de çabukluğu anlatır; farkları, süratin yönsüz, hızın yönlü olmasıdır."
- ]
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir araç 150 km'lik yolu 3 saatte alıyor. Aracın sürati kaç km/h'tir?",
+      "secenekler": [
+        "50 km/h",
+        "30 km/h",
+        "150 km/h",
+        "450 km/h"
+      ],
+      "dogru": 0,
+      "aciklama": "Sürat, alınan yolun geçen süreye bölünmesiyle bulunur: 150 km / 3 h = 50 km/h. Yolu süreyle çarpmak (450) ya da yolu olduğu gibi yazmak (150) yanlıştır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki hareketlilerden hangisinin hareketi sabit süratlidir?",
+      "secenekler": [
+        "Duraktan kalkıp gittikçe hızlanan otobüs",
+        "Her saniyede 1 m yol alan yürüyen merdiven",
+        "Fren yapıp yavaşlayarak duran bisiklet",
+        "Elden bırakılıp yere düşen top"
+      ],
+      "dogru": 1,
+      "aciklama": "Eşit zaman aralıklarında eşit yol alan cismin hareketi sabit süratlidir; yürüyen merdiven her saniye aynı yolu alır. Hızlanan otobüs, yavaşlayan bisiklet ve düşen top eşit sürelerde eşit yol almaz."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Sabit süratli hareket eden bir cismin yol-zaman grafiğindeki çizgisi için aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Gittikçe dikleşen kıvrımlı bir çizgidir.",
+        "Zaman eksenine paralel yatay bir çizgidir.",
+        "Başlangıç noktasından çıkan dümdüz bir çizgidir.",
+        "Zaman eksenine dik, dikey bir çizgidir."
+      ],
+      "dogru": 2,
+      "aciklama": "Sabit süratli harekette yol zamanla düzgün artar; grafik başlangıç noktasından çıkan bir doğrudur. Yatay çizgi duran cismi, kıvrımlı çizgi sürati değişen cismi gösterir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "‘Sabit süratli hareket’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Eşit zaman aralıklarında eşit yollar alan cismin hareketi sabit süratlidir."
+      ],
+      "dogru": 3,
+      "aciklama": "Sabit süratli hareket bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Sürat, alınan yolun geçen süreye bölünmesiyle bulunur.",
+          "dogru": true,
+          "aciklama": "Sürat birim zamanda alınan yoldur; sürat = alınan yol / geçen süre."
+        },
+        {
+          "metin": "Süratin birimi münhasıran km/h'tir.",
+          "dogru": false,
+          "aciklama": "Sürat km/h ile de m/s ile de ifade edilebilir; birim, yolun ve zamanın ölçüldüğü birimlere bağlıdır."
+        },
+        {
+          "metin": "Sabit süratli harekette eşit zaman aralıklarında eşit yol alınır.",
+          "dogru": true,
+          "aciklama": "Sabit süratli hareketin tanımı budur; sürat değişmediği için her saniyede aynı yol alınır."
+        },
+        {
+          "metin": "Sürat ile hız arasında hiçbir benzerlik yoktur.",
+          "dogru": false,
+          "aciklama": "İkisi de çabukluğu anlatır ve aynı birimlerle ölçülür; farkları yalnızca hızın yönünün olmasıdır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Alınan yol",
+          "İzlenen yolun toplam uzunluğu"
+        ],
+        [
+          "Sürat",
+          "Birim zamanda alınan yol"
+        ],
+        [
+          "Hız",
+          "Çabukluğu yönüyle birlikte anlatan büyüklük"
+        ],
+        [
+          "Sabit süratli hareket",
+          "Eşit zaman aralıklarında eşit yol alınan hareket"
+        ],
+        [
+          "km/h",
+          "Uzun yolculuklarda kullanılan sürat birimi"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Sürat, alınan yolun geçen ___ bölünmesiyle bulunur.",
+          "cevap": "süreye"
+        },
+        {
+          "metin": "Yol-zaman grafiğinde çizgisi daha ___ olan cismin sürati daha büyüktür.",
+          "cevap": "dik"
+        },
+        {
+          "metin": "Hızın süratten farkı, hızın bir ___ olmasıdır.",
+          "cevap": "yönünün"
+        }
+      ],
+      "fazla": [
+        "yatay",
+        "varsayım"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Ayşe evden okula kadar olan 600 m'lik yolu 10 dakikada, kardeşi Ali ise aynı yolu 8 dakikada yürüyor. İkisinin süratini m/s cinsinden bulunuz. Bir arkadaşları “Ayşe daha uzun süre yürüdüğü için daha süratlidir.” diyor. Bu düşünceyi değerlendiriniz.",
+      "cevap": "Ayşe için 10 dakika = 600 s, sürat = 600 m / 600 s = 1 m/s. Ali için 8 dakika = 480 s, sürat = 600 m / 480 s = 1,25 m/s. Ali her saniyede daha çok yol aldığından daha süratlidir. Arkadaşlarının düşüncesi yanlıştır: aynı yolu daha uzun sürede almak daha yavaş olmak demektir; sürat, yolun süreye bölünmesiyle bulunur ve süre büyüdükçe sürat küçülür.",
+      "ipuclari": [
+        "Dakikayı saniyeye çevirmeyi unutmayalım: 1 dakika = 60 saniye.",
+        "Aynı yolu daha kısa sürede alan mı, daha uzun sürede alan mı daha süratlidir?"
+      ]
+    }
+  ],
+  "ozet": [
+    "Alınan yol, cismin izlediği yolun toplam uzunluğudur (m, km); geçen süre bu sırada geçen zamandır (s, min, h).",
+    "Sürat, birim zamanda alınan yoldur: sürat = alınan yol / geçen süre. Buradan alınan yol = sürat × geçen süre ve geçen süre = alınan yol / sürat bulunur.",
+    "Sürat birimleri m/s ve km/h'tir; sürat her zaman sayı ve birimle birlikte yazılır ve farklı birimdeki süratler doğrudan karşılaştırılmaz.",
+    "Eşit zaman aralıklarında eşit yol alan cisim sabit süratli hareket eder; yol-zaman grafiği başlangıç noktasından çıkan bir doğrudur ve çizgi ne kadar dikse sürat o kadar büyüktür.",
+    "Sürat ile hız aynı birimlerle ölçülür ve ikisi de çabukluğu anlatır; farkları, süratin yönsüz, hızın yönlü olmasıdır."
+  ]
 }

@@ -187,7 +187,7 @@ def gorsel_6():
         ("Cebrail (as):", "Peygamberlere vahiy getirmekle görevli melektir."),
         ("Mikâil (as):", "Tabiat olaylarını ve canlıların rızıklarını düzenlemekle görevlidir."),
         ("İsrafil (as):", "Sûr'a üfleyerek kıyameti ve yeniden dirilişi (ba's) başlatmakla görevlidir."),
-        ("Azrail (as) & Kirâmen Kâtibîn:", "Azrail can almakla; Kirâmen Kâtibîn ise insanların amellerini yazmakla görevlidir."),
+        ("Azrail (as) &amp; Kirâmen Kâtibîn:", "Azrail can almakla; Kirâmen Kâtibîn ise insanların amellerini yazmakla görevlidir."),
     ]
     for i, (m, g) in enumerate(melekler):
         yy = 214 + i * 21

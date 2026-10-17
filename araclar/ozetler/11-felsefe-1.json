@@ -117,13 +117,13 @@
       "tur": "coktan",
       "soru": "Bir görüş, bir kıyının yalnız insanların dinlenmesine katkı sağladığı için korunmasını savunuyor. Bu gerekçede hangi yaklaşım öne çıkar?",
       "secenekler": [
-        "Canlı merkezci yaklaşım",
-        "Çevre merkezci yaklaşım",
         "İnsan merkezci yaklaşım",
+        "Çevre merkezci yaklaşım",
+        "Canlı merkezci yaklaşım",
         "Doğanın içsel değerini temel alma",
         "İnsan yararından bağımsız değer verme"
       ],
-      "dogru": 2,
+      "dogru": 0,
       "aciklama": "Koruma gerekçesi insanın yararına dayandırılmıştır."
     },
     {
@@ -131,12 +131,12 @@
       "soru": "Bir değerlendirme, canlıları tek tek gözetmenin yanında toprağı, suyu ve ekolojik ilişkileri de ahlaki sorumluluk kapsamına alıyor. Hangi yaklaşım buna en yakındır?",
       "secenekler": [
         "Yalnız insan merkezci yaklaşım",
-        "Yalnız ekonomik yarar yaklaşımı",
-        "Doğayı sadece araç sayan yaklaşım",
+        "Çevre merkezci yaklaşım",
+        "Doğayı salt araç sayan yaklaşım",
         "Yalnız bireysel çıkar yaklaşımı",
-        "Çevre merkezci yaklaşım"
+        "Yalnız ekonomik yarar yaklaşımı"
       ],
-      "dogru": 4,
+      "dogru": 1,
       "aciklama": "Canlı-cansız doğanın bütününü kapsaması çevre merkezci yaklaşıma uygundur."
     },
     {
@@ -144,17 +144,30 @@
       "soru": "Aşağıdaki sorulardan hangisi çevre sorununa doğrudan ahlaki gerekçelendirme açısından yaklaşır?",
       "secenekler": [
         "Göldeki su seviyesi kaç metredir?",
-        "Ormanın korunması neden yükümlülüğümüzdür?",
         "Bölgenin yıllık yağış miktarı ne kadardır?",
+        "Ormanın korunması neden yükümlülüğümüzdür?",
         "Kıyının uzunluğu kaç kilometredir?",
         "Alandaki ağaçların sayısı kaçtır?"
       ],
-      "dogru": 1,
+      "dogru": 2,
       "aciklama": "Yükümlülüğün gerekçesini sorgulamak çevre etiğiyle ilgilidir; diğerleri ölçülebilir olgulara yönelir."
     },
     {
+      "tur": "coktan",
+      "soru": "‘İnsan merkezci yaklaşım’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "İnsan merkezci olmak, her durumda çevrenin yok edilmesini savunmak anlamına gelmez.",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 3,
+      "aciklama": "İnsan merkezci yaklaşım bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
       "tur": "dy",
-      "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
           "metin": "İnsan merkezci yaklaşım, insan yararını gerekçe göstererek çevreyi korumayı savunabilir.",
@@ -180,7 +193,7 @@
     },
     {
       "tur": "eslestir",
-      "yonerge": "İlişkili kavram ve açıklamaları eşleştiriniz.",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
           "İnsana sağladığı yarar üzerinden değer",
@@ -202,7 +215,7 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
           "metin": "___ yaklaşım, insanın yararını merkeze alır.",
@@ -218,26 +231,24 @@
         }
       ],
       "fazla": [
-        "Yalnız ekonomik"
+        "Yalnız ekonomik",
+        "varsayım"
       ]
     },
     {
       "tur": "ogretici",
       "soru": "Aynı su kaynağını korumayı savunan iki kişinin farklı etik görüşleri olup olmadığını anlamak için hangi ek soruyu sorarsınız?",
+      "cevap": "“Bu kaynağı hangi nedenle korumalıyız?” sorusu sorulabilir. İnsan yararı, canlıların kendi değeri veya ekosistemin bütünü farklı yaklaşımları gösterebilir.",
       "ipuclari": [
         "Koruma davranışı ile koruma gerekçesini ayırınız.",
         "Değer kime veya neye yükleniyor?"
-      ],
-      "cevap": "“Bu kaynağı hangi nedenle korumalıyız?” sorusu sorulabilir. İnsan yararı, canlıların kendi değeri veya ekosistemin bütünü farklı yaklaşımları gösterebilir."
-    },
-    {
-      "tur": "ogretici",
-      "soru": "“Doğal kaynaklar bugün yaşayanlara yetiyor; geleceği düşünmeye gerek yok.” yargısı hangi sorumluluğu dışarıda bırakır?",
-      "ipuclari": [
-        "Sorumluluğun yalnız bugünkü insanlarla sınırlı olup olmadığını düşününüz.",
-        "Kaynaklardan kimler daha sonra yararlanacak?"
-      ],
-      "cevap": "Gelecek kuşaklara karşı sorumluluğu ve nesiller arası eşitliği dışarıda bırakır. Kaynak kullanımının uzun dönemdeki etkileri de değerlendirilmelidir."
+      ]
     }
+  ],
+  "ozet": [
+    "Çevre, insanın yaşamını kuşatan doğal, yapay, sosyal ve kültürel koşulları kapsar. İnsan doğadan etkilenir; aynı zamanda faaliyetleriyle çevresini değiştirir.",
+    "Çevre etiği, insanın çevreyle ilişkisini ve çevreye karşı ahlaki sorumluluğunu inceleyen uygulamalı etik alanıdır. Doğayı hangi gerekçeyle korumamız gerektiğini sorgular.",
+    "Bir varlığın başka bir amaca hizmet etmesi bakımından değerli görülmesi araçsal değerle ilişkilidir. Örneğin bir ormanın insanlara sağladığı yararlar üzerinden korunmasını savunmak bu gerekçeyi kullanır.",
+    "İnsan merkezci yaklaşım, değerlendirmede insanın ihtiyaçlarını ve yararını merkeze alır. Doğanın değeri, insan yaşamına sağladığı katkıyla ilişkilendirilir."
   ]
 }

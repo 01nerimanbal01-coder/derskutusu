@@ -1,238 +1,240 @@
 {
- "ad": "12-matematik-6",
- "sinif": 12,
- "ders": "matematik",
- "ders_adi": "Matematik",
- "hafta": 6,
- "tarih": "19-23 Ekim 2026",
- "yayin_tarihi": "2026-10-21",
- "unite": "SAYILAR VE CEBİR",
- "konu": "Üstel ve Logaritmik Fonksiyonlarla Gerçek Hayat Durumlarını Modelleme",
- "ciktilar": [
-  "Üstel büyüme (nüfus artışı, bakteri çoğalması, bileşik faiz) ve üstel azalma (radyoaktif yarılanma, soğuma) süreçlerini üstel fonksiyonlarla modeller.",
-  "Deprem büyüklüğü (Richter ölçeği), çözeltilerin asitlik derecesi (pH ölçeği) ve ses düzeyi (desibel) gibi çok geniş aralıklı nicelikleri logaritmik fonksiyonlarla hesaplar.",
-  "Üstel bir modelde bilinmeyen zaman (t) değişkenini logaritma alma işlemiyle çözer."
- ],
- "giris": "Doğada ve bilimde birçok nicelik doğrusal (sabit farklarla) değil, mevcut miktarıyla orantılı olarak {koyu:katlanarak (üstel)} değişir. Bir bakteri kültürünün her 20 dakikada ikiye katlanması, fosillerin yaşının Karbon-14 izotopuyla belirlenmesi ya da depremlerin Richter ölçeğiyle ölçülmesi doğrudan {koyu:üstel ve logaritmik fonksiyonların} gerçek hayat uygulamalarıdır. Bu haftaki dersimizde üstel ve logaritmik modelleri kurmayı ve bu modeller üzerinden problem çözmeyi öğreneceğiz.",
- "ozet": [
-  "{koyu:Üstel Büyüme Modeli:} Başlangıç miktarı N0 olan bir nicelik birim zamanda r oranında artıyorsa {koyu:N(t) = N0 . {us:(1 + r)|t}} veya sürekli büyümede {koyu:N(t) = N0 . {us:e|k.t}} (k > 0) fonksiyonuyla modellenir.",
-  "{koyu:Radyoaktif Yarılanma (Yarı Ömür) Modeli:} Başlangıç kütlesi M0 ve yarı ömrü T olan radyoaktif bir maddenin t süre sonunda kalan kütlesi {koyu:M(t) = M0 . {us:(1/2)|t/T}} formülüyle hesaplanır.",
-  "{koyu:Richter Deprem Ölçeği:} Standart sismograf genliği I0 ve depremin maksimum genliği (yoğunluğu) I iken depremin büyüklüğü {koyu:M = log({kesir:I|I0})} bağıntısıyla bulunur. Büyüklükteki her 1 birimlik artış sarsıntı genliğini {koyu:10 katına} çıkarır.",
-  "{koyu:pH (Asitlik-Bazlık) Ölçeği:} Bir sulu çözeltideki hidrojen iyonu molar derişimi [H+] iken {koyu:pH = -log[H+]} yani {koyu:[H+] = {us:10|-pH}} eşitliği geçerlidir.",
-  "{koyu:Ses Şiddeti Düzeyi (Desibel - dB):} İşitme eşiği I0 = {us:10|-12} W/{us:m|2} ve ses şiddeti I iken ses düzeyi {koyu:L = 10 . log({kesir:I|I0})} desibel (dB) olarak tanımlanır."
- ],
- "bolumler": [
-  {
-   "baslik": "1. Üstel Büyüme ve Üstel Bozunma (Azalma) Modelleri",
-   "metin": [
-    "Bir niceliğin zamana (t) bağlı değişim hızı o andaki miktarıyla doğru orantılıysa bu süreç {koyu:üstel fonksiyonla} modellenir:\n1. {koyu:Üstel Büyüme (Nüfus, Bakteri Üremesi ve Bileşik Faiz):}\n• Başlangıçtaki birey sayısı N0 olan bir popülasyon her dönemde %r oranında artıyorsa t dönem sonraki nüfus: {koyu:N(t) = N0 . {us:(1 + r)|t}}.\n• Her T sürede bir iki katına çıkan bir bakteri kültüründe t süre sonraki bakteri sayısı: {koyu:N(t) = N0 . {us:2|t/T}}.\n• Sürekli üstel büyüme modelinde ise doğal logaritma tabanı (e ≈ 2,718) kullanılarak {koyu:N(t) = N0 . {us:e|k.t}} (k > 0 büyüme sabiti) bağıntısı yazılır.",
-    "2. {koyu:Üstel Azalma (Radyoaktif Bozunma, İlaç Atılımı ve Soğuma):}\n• Radyoaktif bir elementin kütlesinin yarıya inmesi için geçen süreye {koyu:yarı ömür (T)} denir. Başlangıç kütlesi M0 olan maddenin t süre sonunda bozunmadan kalan kütlesi:\n{koyu:M(t) = M0 . {us:({kesir:1|2})|t/T}} veya sürekli bozunma sabiti λ ile {koyu:M(t) = M0 . {us:e|-λ.t}} formülüyle hesaplanır.\n• {koyu:Newton’ın Soğuma Yasası:} Başlangıç sıcaklığı T0 olan bir cisim, sabit T_ortam sıcaklığındaki bir ortama bırakıldığında t süre sonraki sıcaklığı {koyu:T(t) = T_ortam + (T0 - T_ortam) . {us:e|-k.t}} bağıntısıyla modellenir."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Üstel Denklemde Zamanı (t) Bulmak",
-    "metin": "Üstel büyüme veya yarılanma sorularında {koyu:miktar verilip geçen süre (t) sorulduğunda}, eşitliğin her iki tarafı başlangıç miktarına (N0) bölündükten sonra {koyu:uygun tabanda logaritma} alınarak üsteki t yalnız bırakılır:\n• {us:e|k.t} = A  =>  k . t = ln A  =>  {koyu:t = {kesir:ln A|k}}"
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 200\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"25\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Üstel Büyüme ve Üstel Bozunma (Azalma) Modelleri</text><rect x=\"25\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><rect x=\"25\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#2563eb\"/><rect x=\"25\" y=\"60\" width=\"300\" height=\"10\" fill=\"#2563eb\"/><text x=\"175.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Üstel Büyüme (Nüfus, Bakteri, Bileşik Faiz)</text><text x=\"37\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Genel Model: N(t) = N_0 . e^(k.t)  (k > 0)</text><text x=\"37\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Periyotlu Artış: N(t) = N_0 . (1 + r)^t</text><text x=\"37\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bakteri Bölünmesi: N(t) = N_0 . 2^(t/T)</text><text x=\"37\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bileşik Faiz: A(t) = P . (1 + r/n)^(n.t)</text><text x=\"37\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Zaman ilerledikçe artış hızı katlanarak büyür.</text><rect x=\"355\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"1.6\"/><rect x=\"355\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#059669\"/><rect x=\"355\" y=\"60\" width=\"300\" height=\"10\" fill=\"#059669\"/><text x=\"505.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Üstel Azalma (Radyoaktif Yarılanma / Soğuma)</text><text x=\"367\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Genel Model: M(t) = M_0 . e^(-k.t)  (k > 0)</text><text x=\"367\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Yarı Ömür (T_1/2) Modeli: M(t) = M_0 . (1/2)^(t / T)</text><text x=\"367\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Karbon-14 (C-14) ile arkeolojik yaş tayini</text><text x=\"367\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• İlaç etken maddesinin kandan atılım hızı</text><text x=\"367\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Newton’ın Soğuma Yasası: T(t) = T_ortam + (T_0 - T_ortam).e^(-k.t)</text></svg>"
-  },
-  {
-   "baslik": "2. Logaritmik Ölçekler: Richter Deprem Ölçeği, pH ve Desibel",
-   "metin": [
-    "Çok küçük değerlerden ({us:10|-12} gibi) çok büyük değerlere ({us:10|9} gibi) kadar uzanan fiziksel ve kimyasal büyüklükleri daha kolay ifade edebilmek için {koyu:10 tabanlı logaritmik ölçekler} kullanılır:\n1. {koyu:Richter Deprem Ölçeği:} 1935’te Charles Richter tarafından tanımlanan ölçeğe göre, depremin sismograftaki genliği (yoğunluğu) {koyu:I} ve standart referans genlik {koyu:I0} olmak üzere depremin büyüklüğü ({koyu:M}):\n• {koyu:M = log({kesir:I|I0})}\nİki depremin büyüklükleri M1 ve M2 (M1 > M2) ise yoğunlukları (sarsıntı genlikleri) oranı {koyu:{kesir:I1|I2} = {us:10|M1 - M2}} olur.",
-    "2. {koyu:Kimyada pH Ölçeği:} Sulu çözeltilerin asitlik veya bazlık derecesini gösteren pH değeri, çözeltideki hidrojen iyonu molar derişiminin ([H+], mol/L) eksi logaritmasıdır:\n• {koyu:pH = -log[H+]}  <=>  {koyu:[H+] = {us:10|-pH}}\n25 °C’de pH + pOH = 14 olup; {koyu:pH < 7 ise asidik}, {koyu:pH = 7 ise nötr}, {koyu:pH > 7 ise baziktir}. pH değerinin 1 birim azalması asitliğin ([H+] derişiminin) {koyu:10 kat artması} demektir.",
-    "3. {koyu:Ses Şiddeti Düzeyi (Desibel - dB):} İnsan kulağının duyabildiği en düşük ses şiddeti (işitme eşiği) {koyu:I0 = {us:10|-12} W/{us:m|2}} kabul edilir. Şiddeti {koyu:I} (W/{us:m|2}) olan bir sesin desibel cinsinden düzeyi ({koyu:L}):\n• {koyu:L = 10 . log({kesir:I|I0})} (dB) formülüyle hesaplanır."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "Richter ve Desibelde Kat Artışına Dikkat!",
-    "metin": "• Deprem büyüklüğü {koyu:6,0’dan 8,0’a} çıktığında fark 8 - 6 = 2 olduğundan deprem yoğunluğu 2 kat değil, {koyu:{us:10|2} = 100 kat} artar!\n• Ses düzeyi {koyu:50 dB’den 80 dB’ye} çıktığında fark 30 dB olduğundan 10 . log(I2/I1) = 30 => log(I2/I1) = 3 => ses şiddeti {koyu:{us:10|3} = 1000 kat} artar!"
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 202\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"25\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#7c2d12\" text-anchor=\"middle\">Logaritmik Ölçeklerle Gerçek Hayat Modellemesi (Richter, pH, Desibel)</text><rect x=\"18\" y=\"42\" width=\"205\" height=\"145\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"42\" width=\"205\" height=\"28\" rx=\"8\" fill=\"#dc2626\"/><rect x=\"18\" y=\"60\" width=\"205\" height=\"10\" fill=\"#dc2626\"/><text x=\"120.5\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">1. Richter Deprem Ölçeği</text><text x=\"30\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bağıntı: M = log(I / I_0)</text><text x=\"30\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• M: Deprem büyüklüğü</text><text x=\"30\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• I: Deprem yoğunluğu (genlik)</text><text x=\"30\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Büyüklük 1 birim artarsa</text><text x=\"30\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  sarsıntı şiddeti 10 kat artar!</text><rect x=\"237\" y=\"42\" width=\"205\" height=\"145\" rx=\"8\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"1.6\"/><rect x=\"237\" y=\"42\" width=\"205\" height=\"28\" rx=\"8\" fill=\"#d97706\"/><rect x=\"237\" y=\"60\" width=\"205\" height=\"10\" fill=\"#d97706\"/><text x=\"339.5\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">2. Kimyada pH Ölçeği</text><text x=\"249\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bağıntı: pH = -log[H+]</text><text x=\"249\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• [H+]: Hidrojen iyonu molar</text><text x=\"249\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  derişimi (mol/L)</text><text x=\"249\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• [H+] = 10^(-pH) M</text><text x=\"249\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• pH < 7 asit, pH > 7 baz</text><rect x=\"456\" y=\"42\" width=\"205\" height=\"145\" rx=\"8\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"1.6\"/><rect x=\"456\" y=\"42\" width=\"205\" height=\"28\" rx=\"8\" fill=\"#7c3aed\"/><rect x=\"456\" y=\"60\" width=\"205\" height=\"10\" fill=\"#7c3aed\"/><text x=\"558.5\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">3. Ses Şiddeti (Desibel)</text><text x=\"468\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bağıntı: L = 10 . log(I / I_0)</text><text x=\"468\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• L: Ses düzeyi (dB)</text><text x=\"468\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• I_0 = 10^(-12) W/m² (eşik)</text><text x=\"468\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Ses düzeyi 10 dB artarsa</text><text x=\"468\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  ses şiddeti 10 katına çıkar!</text></svg>"
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Bir laboratuvardaki bakteri kültürünün sayısı her 30 dakikada bir 2 katına çıkmaktadır. Başlangıçta 500 bakteri bulunan bu kültürde 4 saat sonunda kaç bakteri bulunur?",
-   "cevap": "4 saat = 240 dakikadır. Yarılanma/ikiye katlanma periyodu T = 30 dakika olduğundan bölünme sayısı {kesir:t|T} = {kesir:240|30} = 8 olur. Üstel büyüme modelinden: N(8) = 500 . {us:2|8} = 500 . 256 = {koyu:128.000 bakteri} bulunur."
-  },
-  {
-   "soru": "Yarı ömrü 15 yıl olan radyoaktif bir maddeden başlangıçta 160 gram alınmaktadır. Kaç yıl sonra bu maddeden geriye bozunmadan 5 gram kalır?",
-   "cevap": "Yarılanma modelini yazalım: M(t) = M0 . {us:(1/2)|t/T} => 5 = 160 . {us:(1/2)|t/15} => {kesir:5|160} = {kesir:1|32} = {us:(1/2)|5} = {us:(1/2)|t/15}. Tabanlar eşit olduğundan üsler eşitlenir: {kesir:t|15} = 5 => {koyu:t = 75 yıl} bulunur."
-  },
-  {
-   "soru": "Richter ölçeğine göre büyüklüğü 7,4 olan bir depremin yoğunluğu (genliği), büyüklüğü 5,4 olan bir depremin yoğunluğunun kaç katıdır?",
-   "cevap": "{kesir:I1|I2} = {us:10|M1 - M2} bağıntısında M1 = 7,4 ve M2 = 5,4 yazılırsa: {kesir:I1|I2} = {us:10|7,4 - 5,4} = {us:10|2} = {koyu:100 katıdır}."
-  },
-  {
-   "soru": "Hidrojen iyonu derişimi [H+] = 2 . {us:10|-4} mol/L olan bir limon suyu çözeltisinin pH değeri kaçtır? (log 2 ≈ 0,3 alınız.)",
-   "cevap": "pH = -log[H+] = -log(2 . {us:10|-4}) = -(log 2 + log {us:10|-4}) = -(0,3 - 4) = -(-3,7) = {koyu:3,7} bulunur."
-  },
-  {
-   "soru": "Ses şiddeti I = {us:10|-5} W/{us:m|2} olan bir elektrikli süpürgenin ses şiddeti düzeyi kaç desibeldir (dB)? (I0 = {us:10|-12} W/{us:m|2})",
-   "cevap": "L = 10 . log({kesir:I|I0}) = 10 . log({kesir:{us:10|-5}|{us:10|-12}}) = 10 . log({us:10|7}) = 10 . 7 = {koyu:70 dB} bulunur."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "Nüfusu P(t) = 200.000 . e^(0,05.t) üstel fonksiyonuyla modellenen bir şehrin nüfusu kaç yıl sonra başlangıç nüfusunun 3 katına çıkar?",
-   "secenekler": [
-    "5 . ln 3",
-    "10 . ln 3",
-    "20 . ln 3",
-    "50 . ln 3",
-    "20 . log 3"
-   ],
-   "dogru": 2,
-   "aciklama": "Başlangıç nüfusu 200.000’dir; 3 katına çıkması için e^(0,05.t) = 3 olmalıdır. Her iki tarafın doğal logaritması alınırsa 0,05 . t = ln 3 => (1/20) . t = ln 3 => t = 20 . ln 3 yıl bulunur."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Richter ölçeğine göre büyüklüğü 6,7 olan bir depremin sarsıntı yoğunluğu (genliği), büyüklüğü 4,7 olan bir depremin yoğunluğunun kaç katıdır?",
-   "secenekler": [
-    "2",
-    "20",
-    "100",
-    "200",
-    "1000"
-   ],
-   "dogru": 2,
-   "aciklama": "Büyüklük farkı 6,7 - 4,7 = 2,0 olduğundan yoğunluk oranı I1 / I2 = 10^(6,7 - 4,7) = 10² = 100 kat olur."
-  },
-  {
-   "tur": "coktan",
-   "soru": "pH değeri 5 olan bir kahve çözeltisinin hidrojen iyonu derişimi ([H+]), pH değeri 8 olan bir deniz suyu çözeltisinin hidrojen iyonu derişiminin kaç katıdır?",
-   "secenekler": [
-    "3",
-    "30",
-    "100",
-    "1000",
-    "1/1000"
-   ],
-   "dogru": 3,
-   "aciklama": "pH = 5 için [H+]_1 = 10^(-5) M ve pH = 8 için [H+]_2 = 10^(-8) M’dir. Oranları 10^(-5) / 10^(-8) = 10³ = 1000 kat olur."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Bir ortamda çalışan tek bir makinenin ses düzeyi 60 dB’dir. Özdeş 100 makine aynı anda çalıştırıldığında ses şiddeti 100 katına çıktığına göre yeni ses düzeyi kaç dB olur?",
-   "secenekler": [
-    "62",
-    "80",
-    "160",
-    "600",
-    "6000"
-   ],
-   "dogru": 1,
-   "aciklama": "L_yeni = 10 . log(100 . I / I0) = 10 . log(100) + 10 . log(I / I0) = 10 . 2 + 60 = 20 + 60 = 80 dB bulunur."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Başlangıçta 96 gram olan radyoaktif bir izotoptan 24 gün sonra geriye 6 gram kaldığına göre bu izotopun yarı ömrü (T) kaç gündür?",
-   "secenekler": [
-    "4",
-    "6",
-    "8",
-    "12",
-    "16"
-   ],
-   "dogru": 1,
-   "aciklama": "6 = 96 . (1/2)^(24/T) => 6/96 = 1/16 = (1/2)⁴ = (1/2)^(24/T) => 24/T = 4 => T = 6 gün bulunur."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "12-matematik-6",
+  "sinif": 12,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 6,
+  "tarih": "19-23 Ekim 2026",
+  "yayin_tarihi": "2026-10-21",
+  "unite": "SAYILAR VE CEBİR",
+  "konu": "Üstel ve Logaritmik Fonksiyonlarla Gerçek Hayat Durumlarını Modelleme",
+  "ciktilar": [
+    "Üstel büyüme (nüfus artışı, bakteri çoğalması, bileşik faiz) ve üstel azalma (radyoaktif yarılanma, soğuma) süreçlerini üstel fonksiyonlarla modeller.",
+    "Deprem büyüklüğü (Richter ölçeği), çözeltilerin asitlik derecesi (pH ölçeği) ve ses düzeyi (desibel) gibi çok geniş aralıklı nicelikleri logaritmik fonksiyonlarla hesaplar.",
+    "Üstel bir modelde bilinmeyen zaman (t) değişkenini logaritma alma işlemiyle çözer."
+  ],
+  "giris": "Doğada ve bilimde birçok nicelik doğrusal (sabit farklarla) değil, mevcut miktarıyla orantılı olarak {koyu:katlanarak (üstel)} değişir. Bir bakteri kültürünün her 20 dakikada ikiye katlanması, fosillerin yaşının Karbon-14 izotopuyla belirlenmesi ya da depremlerin Richter ölçeğiyle ölçülmesi doğrudan {koyu:üstel ve logaritmik fonksiyonların} gerçek hayat uygulamalarıdır. Bu haftaki dersimizde üstel ve logaritmik modelleri kurmayı ve bu modeller üzerinden problem çözmeyi öğreneceğiz.",
+  "ozet": [
+    "{koyu:Üstel Büyüme Modeli:} Başlangıç miktarı N0 olan bir nicelik birim zamanda r oranında artıyorsa {koyu:N(t) = N0 . {us:(1 + r)|t}} veya sürekli büyümede {koyu:N(t) = N0 . {us:e|k.t}} (k > 0) fonksiyonuyla modellenir.",
+    "{koyu:Radyoaktif Yarılanma (Yarı Ömür) Modeli:} Başlangıç kütlesi M0 ve yarı ömrü T olan radyoaktif bir maddenin t süre sonunda kalan kütlesi {koyu:M(t) = M0 . {us:(1/2)|t/T}} formülüyle hesaplanır.",
+    "{koyu:Richter Deprem Ölçeği:} Standart sismograf genliği I0 ve depremin maksimum genliği (yoğunluğu) I iken depremin büyüklüğü {koyu:M = log({kesir:I|I0})} bağıntısıyla bulunur. Büyüklükteki her 1 birimlik artış sarsıntı genliğini {koyu:10 katına} çıkarır.",
+    "{koyu:pH (Asitlik-Bazlık) Ölçeği:} Bir sulu çözeltideki hidrojen iyonu molar derişimi [H+] iken {koyu:pH = -log[H+]} yani {koyu:[H+]} = {us:10|-pH} eşitliği geçerlidir.",
+    "{koyu:Ses Şiddeti Düzeyi (Desibel - dB):} İşitme eşiği I0 = {us:10|-12} W/{us:m|2} ve ses şiddeti I iken ses düzeyi {koyu:L = 10 . log({kesir:I|I0})} desibel (dB) olarak tanımlanır."
+  ],
+  "bolumler": [
     {
-     "metin": "N(t) = N0 . e^(k.t) üstel modelinde k > 0 ise üstel büyüme, k < 0 ise üstel azalma gerçekleşir.",
-     "dogru": true,
-     "aciklama": "Üs pozitif olduğunda fonksiyon artan (büyüme), negatif olduğunda azalan (bozunma) olur."
+      "baslik": "Üstel Büyüme",
+      "metin": [
+        "Bir niceliğin zamana (t) bağlı değişim hızı o andaki miktarıyla doğru orantılıysa bu süreç {koyu:üstel fonksiyonla} modellenir:\n1. {koyu:Üstel Büyüme (Nüfus, Bakteri Üremesi ve Bileşik Faiz):}\n• Başlangıçtaki birey sayısı N0 olan bir popülasyon her dönemde %r oranında artıyorsa t dönem sonraki nüfus: {koyu:N(t) = N0 . {us:(1 + r)|t}}.\n• Her T sürede bir iki katına çıkan bir bakteri kültüründe t süre sonraki bakteri sayısı: {koyu:N(t) = N0 . {us:2|t/T}}.\n• Sürekli üstel büyüme modelinde ise doğal logaritma tabanı (e ≈ 2,718) kullanılarak {koyu:N(t) = N0 . {us:e|k.t}} (k > 0 büyüme sabiti) bağıntısı yazılır."
+      ],
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 200\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"25\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Üstel Büyüme ve Üstel Bozunma (Azalma) Modelleri</text><rect x=\"25\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><rect x=\"25\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#2563eb\"/><rect x=\"25\" y=\"60\" width=\"300\" height=\"10\" fill=\"#2563eb\"/><text x=\"175.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Üstel Büyüme (Nüfus, Bakteri, Bileşik Faiz)</text><text x=\"37\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Genel Model: N(t) = N_0 . e^(k.t)  (k > 0)</text><text x=\"37\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Periyotlu Artış: N(t) = N_0 . (1 + r)^t</text><text x=\"37\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bakteri Bölünmesi: N(t) = N_0 . 2^(t/T)</text><text x=\"37\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bileşik Faiz: A(t) = P . (1 + r/n)^(n.t)</text><text x=\"37\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Zaman ilerledikçe artış hızı katlanarak büyür.</text><rect x=\"355\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"1.6\"/><rect x=\"355\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#059669\"/><rect x=\"355\" y=\"60\" width=\"300\" height=\"10\" fill=\"#059669\"/><text x=\"505.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Üstel Azalma (Radyoaktif Yarılanma / Soğuma)</text><text x=\"367\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Genel Model: M(t) = M_0 . e^(-k.t)  (k > 0)</text><text x=\"367\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Yarı Ömür (T_1/2) Modeli: M(t) = M_0 . (1/2)^(t / T)</text><text x=\"367\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Karbon-14 (C-14) ile arkeolojik yaş tayini</text><text x=\"367\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• İlaç etken maddesinin kandan atılım hızı</text><text x=\"367\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Newton’ın Soğuma Yasası: T(t) = T_ortam + (T_0 - T_ortam).e^(-k.t)</text></svg>"
     },
     {
-     "metin": "Richter ölçeğine göre 8 büyüklüğündeki bir deprem, 4 büyüklüğündeki bir depremden 2 kat daha şiddetlidir.",
-     "dogru": false,
-     "aciklama": "Yanlıştır; Richter ölçeği logaritmiktir, 8 ile 4 arasındaki yoğunluk farkı 10^(8-4) = 10⁴ = 10.000 kattır."
+      "baslik": "Üstel Bozunma (Azalma) Modelleri",
+      "metin": [
+        "2. {koyu:Üstel Azalma (Radyoaktif Bozunma, İlaç Atılımı ve Soğuma):}\n• Radyoaktif bir elementin kütlesinin yarıya inmesi için geçen süreye {koyu:yarı ömür (T)} denir. Başlangıç kütlesi M0 olan maddenin t süre sonunda bozunmadan kalan kütlesi:\n{koyu:M(t) = M0 . {us:({kesir:1|2})|t/T}} veya sürekli bozunma sabiti λ ile {koyu:M(t) = M0 . {us:e|-λ.t}} formülüyle hesaplanır.\n• {koyu:Newton’ın Soğuma Yasası:} Başlangıç sıcaklığı T0 olan bir cisim, sabit T_ortam sıcaklığındaki bir ortama bırakıldığında t süre sonraki sıcaklığı {koyu:T(t) = T_ortam + (T0 - T_ortam) . {us:e|-k.t}} bağıntısıyla modellenir."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Üstel Denklemde Zamanı (t) Bulmak",
+        "metin": "Üstel büyüme veya yarılanma sorularında {koyu:miktar verilip geçen süre (t) sorulduğunda}, eşitliğin her iki tarafı başlangıç miktarına (N0) bölündükten sonra {koyu:uygun tabanda logaritma} alınarak üsteki t yalnız bırakılır:\n• {us:e|k.t} = A  =>  k . t = ln A  =>  {koyu:t} = {kesir:ln A|k}"
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 202\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"25\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#7c2d12\" text-anchor=\"middle\">Logaritmik Ölçeklerle Gerçek Hayat Modellemesi (Richter, pH, Desibel)</text><rect x=\"18\" y=\"42\" width=\"205\" height=\"145\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"42\" width=\"205\" height=\"28\" rx=\"8\" fill=\"#dc2626\"/><rect x=\"18\" y=\"60\" width=\"205\" height=\"10\" fill=\"#dc2626\"/><text x=\"120.5\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">1. Richter Deprem Ölçeği</text><text x=\"30\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bağıntı: M = log(I / I_0)</text><text x=\"30\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• M: Deprem büyüklüğü</text><text x=\"30\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• I: Deprem yoğunluğu (genlik)</text><text x=\"30\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Büyüklük 1 birim artarsa</text><text x=\"30\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  sarsıntı şiddeti 10 kat artar!</text><rect x=\"237\" y=\"42\" width=\"205\" height=\"145\" rx=\"8\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"1.6\"/><rect x=\"237\" y=\"42\" width=\"205\" height=\"28\" rx=\"8\" fill=\"#d97706\"/><rect x=\"237\" y=\"60\" width=\"205\" height=\"10\" fill=\"#d97706\"/><text x=\"339.5\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">2. Kimyada pH Ölçeği</text><text x=\"249\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bağıntı: pH = -log[H+]</text><text x=\"249\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• [H+]: Hidrojen iyonu molar</text><text x=\"249\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  derişimi (mol/L)</text><text x=\"249\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• [H+] = 10^(-pH) M</text><text x=\"249\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• pH &lt; 7 asit, pH > 7 baz</text><rect x=\"456\" y=\"42\" width=\"205\" height=\"145\" rx=\"8\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"1.6\"/><rect x=\"456\" y=\"42\" width=\"205\" height=\"28\" rx=\"8\" fill=\"#7c3aed\"/><rect x=\"456\" y=\"60\" width=\"205\" height=\"10\" fill=\"#7c3aed\"/><text x=\"558.5\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">3. Ses Şiddeti (Desibel)</text><text x=\"468\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bağıntı: L = 10 . log(I / I_0)</text><text x=\"468\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• L: Ses düzeyi (dB)</text><text x=\"468\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• I_0 = 10^(-12) W/m² (eşik)</text><text x=\"468\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Ses düzeyi 10 dB artarsa</text><text x=\"468\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  ses şiddeti 10 katına çıkar!</text></svg>"
     },
     {
-     "metin": "Bir çözeltide hidrojen iyonu derişimi [H+] arttıkça çözeltinin pH değeri küçülür ve asitliği artar.",
-     "dogru": true,
-     "aciklama": "pH = -log[H+] tanımındaki eksi işaretinden dolayı [H+] arttıkça pH azalır."
+      "baslik": "Logaritmik Ölçekler: Richter Deprem Ölçeği, pH ve Desibel — Temel İlkeler",
+      "metin": [
+        "Çok küçük değerlerden ({us:10|-12} gibi) çok büyük değerlere ({us:10|9} gibi) kadar uzanan fiziksel ve kimyasal büyüklükleri daha kolay ifade edebilmek için {koyu:10 tabanlı logaritmik ölçekler} kullanılır:\n1. {koyu:Richter Deprem Ölçeği:} 1935’te Charles Richter tarafından tanımlanan ölçeğe göre, depremin sismograftaki genliği (yoğunluğu) {koyu:I} ve standart referans genlik {koyu:I0} olmak üzere depremin büyüklüğü ({koyu:M}):\n• {koyu:M = log({kesir:I|I0})}\nİki depremin büyüklükleri M1 ve M2 (M1 > M2) ise yoğunlukları (sarsıntı genlikleri) oranı {koyu:{kesir:I1|I2} = {us:10|M1 - M2}} olur."
+      ],
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 202\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"25\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#7c2d12\" text-anchor=\"middle\">Logaritmik Ölçeklerle Gerçek Hayat Modellemesi (Richter, pH, Desibel)</text><rect x=\"18\" y=\"42\" width=\"205\" height=\"145\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"42\" width=\"205\" height=\"28\" rx=\"8\" fill=\"#dc2626\"/><rect x=\"18\" y=\"60\" width=\"205\" height=\"10\" fill=\"#dc2626\"/><text x=\"120.5\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">1. Richter Deprem Ölçeği</text><text x=\"30\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bağıntı: M = log(I / I_0)</text><text x=\"30\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• M: Deprem büyüklüğü</text><text x=\"30\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• I: Deprem yoğunluğu (genlik)</text><text x=\"30\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Büyüklük 1 birim artarsa</text><text x=\"30\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  sarsıntı şiddeti 10 kat artar!</text><rect x=\"237\" y=\"42\" width=\"205\" height=\"145\" rx=\"8\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"1.6\"/><rect x=\"237\" y=\"42\" width=\"205\" height=\"28\" rx=\"8\" fill=\"#d97706\"/><rect x=\"237\" y=\"60\" width=\"205\" height=\"10\" fill=\"#d97706\"/><text x=\"339.5\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">2. Kimyada pH Ölçeği</text><text x=\"249\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bağıntı: pH = -log[H+]</text><text x=\"249\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• [H+]: Hidrojen iyonu molar</text><text x=\"249\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  derişimi (mol/L)</text><text x=\"249\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• [H+] = 10^(-pH) M</text><text x=\"249\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• pH &lt; 7 asit, pH > 7 baz</text><rect x=\"456\" y=\"42\" width=\"205\" height=\"145\" rx=\"8\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"1.6\"/><rect x=\"456\" y=\"42\" width=\"205\" height=\"28\" rx=\"8\" fill=\"#7c3aed\"/><rect x=\"456\" y=\"60\" width=\"205\" height=\"10\" fill=\"#7c3aed\"/><text x=\"558.5\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">3. Ses Şiddeti (Desibel)</text><text x=\"468\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bağıntı: L = 10 . log(I / I_0)</text><text x=\"468\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• L: Ses düzeyi (dB)</text><text x=\"468\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• I_0 = 10^(-12) W/m² (eşik)</text><text x=\"468\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Ses düzeyi 10 dB artarsa</text><text x=\"468\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  ses şiddeti 10 katına çıkar!</text></svg>"
     },
     {
-     "metin": "İşitme eşiğindeki (I = I0) bir sesin desibel ölçeğindeki ses şiddeti düzeyi 0 dB’dir.",
-     "dogru": true,
-     "aciklama": "L = 10 . log(I0 / I0) = 10 . log(1) = 10 . 0 = 0 dB olur."
-    },
-    {
-     "metin": "Radyoaktif yarılanma sürecinde maddenin tamamı iki yarı ömür sonunda tamamen yok olur (0 grama düşer).",
-     "dogru": false,
-     "aciklama": "Yanlıştır; iki yarı ömür sonunda başlangıç kütlesinin (1/2)² = 1/4’ü kalır."
+      "baslik": "Richter ve Desibelde Kat Artışına Dikkat!",
+      "metin": [
+        "2. {koyu:Kimyada pH Ölçeği:} Sulu çözeltilerin asitlik veya bazlık derecesini gösteren pH değeri, çözeltideki hidrojen iyonu molar derişiminin ([H+], mol/L) eksi logaritmasıdır:\n• {koyu:pH = -log[H+]}  <=>  {koyu:[H+]} = {us:10|-pH}\n25 °C’de pH + pOH = 14 olup; {koyu:pH < 7 ise asidik}, {koyu:pH = 7 ise nötr}, {koyu:pH > 7 ise baziktir}. pH değerinin 1 birim azalması asitliğin ([H+] derişiminin) {koyu:10 kat artması} demektir.",
+        "3. {koyu:Ses Şiddeti Düzeyi (Desibel - dB):} İnsan kulağının duyabildiği en düşük ses şiddeti (işitme eşiği) {koyu:I0 = {us:10|-12} W/{us:m|2}} kabul edilir. Şiddeti {koyu:I} (W/{us:m|2}) olan bir sesin desibel cinsinden düzeyi ({koyu:L}):\n• {koyu:L = 10 . log({kesir:I|I0})} (dB) formülüyle hesaplanır."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Richter ve Desibelde Kat Artışına Dikkat!",
+        "metin": "Deprem büyüklüğü {koyu:6,0’dan 8,0’a} çıktığında fark 8 - 6 = 2 olduğundan deprem yoğunluğu 2 kat değil, {koyu:{us:10|2} = 100 kat} artar!\n• Ses düzeyi {koyu:50 dB’den 80 dB’ye} çıktığında fark 30 dB olduğundan 10 . log(I2/I1) = 30 => log(I2/I1) = 3 => ses şiddeti {koyu:{us:10|3} = 1000 kat} artar!"
+      }
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "soru": "Aşağıdaki gerçek hayat modellerini doğru matematiksel bağıntılarıyla eşleştiriniz.",
-   "ciftler": [
-    [
-     "M = log(I / I0)",
-     "Richter deprem büyüklüğü ölçeği"
-    ],
-    [
-     "pH = -log[H+]",
-     "Çözeltilerin asitlik-bazlık ölçeği"
-    ],
-    [
-     "L = 10 . log(I / I0)",
-     "Desibel (dB) cinsinden ses şiddeti düzeyi"
-    ],
-    [
-     "M(t) = M0 . (1/2)^(t / T)",
-     "Radyoaktif yarı ömür (bozunma) modeli"
-    ],
-    [
-     "T(t) = T_ortam + (T0 - T_ortam) . e^(-k.t)",
-     "Newton’ın soğuma yasası modeli"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
-   "cumleler": [
+  ],
+  "ornekler": [
     {
-     "metin": "Radyoaktif bir maddenin kütlesinin yarıya inmesi için geçen süreye ___ ömür denir.",
-     "cevap": "yarı"
+      "soru": "Bir laboratuvardaki bakteri kültürünün sayısı her 30 dakikada bir 2 katına çıkmaktadır. Başlangıçta 500 bakteri bulunan bu kültürde 4 saat sonunda kaç bakteri bulunur?",
+      "cevap": "4 saat = 240 dakikadır. Yarılanma/ikiye katlanma periyodu T = 30 dakika olduğundan bölünme sayısı {kesir:t|T} = {kesir:240|30} = 8 olur. Üstel büyüme modelinden: N(8) = 500 . {us:2|8} = 500 . 256 = {koyu:128.000 bakteri} bulunur."
     },
     {
-     "metin": "Depremlerin aletsel büyüklüğünü ölçmek için kullanılan 10 tabanlı logaritmik ölçeğe ___ ölçeği denir.",
-     "cevap": "Richter"
+      "soru": "Yarı ömrü 15 yıl olan radyoaktif bir maddeden başlangıçta 160 gram alınmaktadır. Kaç yıl sonra bu maddeden geriye bozunmadan 5 gram kalır?",
+      "cevap": "Yarılanma modelini yazalım: M(t) = M0 . {us:(1/2)|t/T} => 5 = 160 . {us:(1/2)|t/15} => {kesir:5|160} = {kesir:1|32} = {us:(1/2)|5} = {us:(1/2)|t/15}. Tabanlar eşit olduğundan üsler eşitlenir: {kesir:t|15} = 5 => {koyu:t = 75 yıl} bulunur."
     },
     {
-     "metin": "25 °C’de pH değeri 7’den küçük olan sulu çözeltiler ___ özellik gösterir.",
-     "cevap": "asidik"
+      "soru": "Richter ölçeğine göre büyüklüğü 7,4 olan bir depremin yoğunluğu (genliği), büyüklüğü 5,4 olan bir depremin yoğunluğunun kaç katıdır?",
+      "cevap": "{kesir:I1|I2} = {us:10|M1 - M2} bağıntısında M1 = 7,4 ve M2 = 5,4 yazılırsa: {kesir:I1|I2} = {us:10|7,4 - 5,4} = {us:10|2} = {koyu:100 katıdır}."
     },
     {
-     "metin": "Ses şiddeti düzeyinin birimi ___ (dB) olarak adlandırılır.",
-     "cevap": "desibel"
+      "soru": "Hidrojen iyonu derişimi [H+] = 2 . {us:10|-4} mol/L olan bir limon suyu çözeltisinin pH değeri kaçtır? (log 2 ≈ 0,3 alınız.)",
+      "cevap": "pH = -log[H+] = -log(2 . {us:10|-4}) = -(log 2 + log {us:10|-4}) = -(0,3 - 4) = -(-3,7) = {koyu:3,7} bulunur."
     },
     {
-     "metin": "e tabanlı üstel bir denklemde üsteki bilinmeyeni bulmak için eşitliğin her iki tarafının ___ (ln) logaritması alınır.",
-     "cevap": "doğal"
+      "soru": "Ses şiddeti I = {us:10|-5} W/{us:m|2} olan bir elektrikli süpürgenin ses şiddeti düzeyi kaç desibeldir (dB)? (I0 = {us:10|-12} W/{us:m|2})",
+      "cevap": "L = 10 . log({kesir:I|I0}) = 10 . log({kesir:{us:10|-5}|{us:10|-12}}) = 10 . log({us:10|7}) = 10 . 7 = {koyu:70 dB} bulunur."
+    },
+    {
+      "soru": "Başlangıçta 96 gram olan radyoaktif bir izotoptan 24 gün sonra geriye 6 gram kaldığına göre bu izotopun yarı ömrü (T) kaç gündür?",
+      "cevap": "Doğru yanıt: 6. 6 = 96 . (1/2)^(24/T) => 6/96 = 1/16 = (1/2)⁴ = (1/2)^(24/T) => 24/T = 4 => T = 6 gün bulunur."
     }
-   ],
-   "fazla": [
-    "bazik",
-    "aritmetik"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Bir arkeolojik kazıda bulunan ahşap bir eserdeki Karbon-14 (C-14) oranının, canlı bir ağaçtaki C-14 oranının %25’ine (1/4’üne) düştüğü ölçülmüştür. C-14 izotopunun yarı ömrü T = 5730 yıl olduğuna göre bu ahşap eserin yaşını üstel azalma modeliyle adım adım hesaplayınız.",
-   "ipuclari": [
-    "1. İpucu: M(t) = M0 . (1/2)^(t / 5730) modelinde M(t) / M0 = 1/4 yazınız.",
-    "2. İpucu: 1/4 = (1/2)² eşitliğinden üsleri eşitleyerek t süresini bulunuz."
-   ],
-   "cevap": "Radyoaktif yarılanma modeline göre kalan miktar bağıntısı M(t) = M0 . (1/2)^(t / T) şeklindedir. Soruda kalan C-14 miktarının başlangıç miktarına oranı M(t) / M0 = %25 = 1/4 ve yarı ömür T = 5730 yıl olarak verilmiştir. Değerleri yerine yazalım: 1/4 = (1/2)^(t / 5730) => (1/2)² = (1/2)^(t / 5730). Tabanlar eşit olduğundan üsler birbirine eşitlenir: t / 5730 = 2 => t = 2 . 5730 = 11.460 yıl bulunur. Dolayısıyla bulunan ahşap eser yaklaşık 11.460 yıllıktır."
-  }
- ]
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Nüfusu P(t) = 200.000 . e^(0,05.t) üstel fonksiyonuyla modellenen bir şehrin nüfusu kaç yıl sonra başlangıç nüfusunun 3 katına çıkar?",
+      "secenekler": [
+        "20 . ln 3",
+        "10 . ln 3",
+        "5 . ln 3",
+        "50 . ln 3",
+        "20 . log 3"
+      ],
+      "dogru": 0,
+      "aciklama": "Başlangıç nüfusu 200.000’dir; 3 katına çıkması için e^(0,05.t) = 3 olmalıdır. Her iki tarafın doğal logaritması alınırsa 0,05 . t = ln 3 => (1/20) . t = ln 3 => t = 20 . ln 3 yıl bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Richter ölçeğine göre büyüklüğü 6,7 olan bir depremin sarsıntı yoğunluğu (genliği), büyüklüğü 4,7 olan bir depremin yoğunluğunun kaç katıdır?",
+      "secenekler": [
+        "2",
+        "100",
+        "20",
+        "200",
+        "1000"
+      ],
+      "dogru": 1,
+      "aciklama": "Büyüklük farkı 6,7 - 4,7 = 2,0 olduğundan yoğunluk oranı I1 / I2 = 10^(6,7 - 4,7) = 10² = 100 kat olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "pH değeri 5 olan bir kahve çözeltisinin hidrojen iyonu derişimi ([H+]), pH değeri 8 olan bir deniz suyu çözeltisinin hidrojen iyonu derişiminin kaç katıdır?",
+      "secenekler": [
+        "3",
+        "30",
+        "1000",
+        "100",
+        "1/1000"
+      ],
+      "dogru": 2,
+      "aciklama": "pH = 5 için [H+]_1 = 10^(-5) M ve pH = 8 için [H+]_2 = 10^(-8) M’dir. Oranları 10^(-5) / 10^(-8) = 10³ = 1000 kat olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir ortamda çalışan tek bir makinenin ses düzeyi 60 dB’dir. Özdeş 100 makine aynı anda çalıştırıldığında ses şiddeti 100 katına çıktığına göre yeni ses düzeyi kaç dB olur?",
+      "secenekler": [
+        "62",
+        "600",
+        "160",
+        "80",
+        "6000"
+      ],
+      "dogru": 3,
+      "aciklama": "L_yeni = 10 . log(100 . I / I0) = 10 . log(100) + 10 . log(I / I0) = 10 . 2 + 60 = 20 + 60 = 80 dB bulunur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "N(t) = N0 . e^(k.t) üstel modelinde k > 0 ise üstel büyüme, k < 0 ise üstel azalma gerçekleşir.",
+          "dogru": true,
+          "aciklama": "Üs pozitif olduğunda fonksiyon artan (büyüme), negatif olduğunda azalan (bozunma) olur."
+        },
+        {
+          "metin": "Richter ölçeğine göre 8 büyüklüğündeki bir deprem, 4 büyüklüğündeki bir depremden 2 kat daha şiddetlidir.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; Richter ölçeği logaritmiktir, 8 ile 4 arasındaki yoğunluk farkı 10^(8-4) = 10⁴ = 10.000 kattır."
+        },
+        {
+          "metin": "Bir çözeltide hidrojen iyonu derişimi [H+] arttıkça çözeltinin pH değeri küçülür ve asitliği artar.",
+          "dogru": true,
+          "aciklama": "pH = -log[H+] tanımındaki eksi işaretinden dolayı [H+] arttıkça pH azalır."
+        },
+        {
+          "metin": "İşitme eşiğindeki (I = I0) bir sesin desibel ölçeğindeki ses şiddeti düzeyi 0 dB’dir.",
+          "dogru": true,
+          "aciklama": "L = 10 . log(I0 / I0) = 10 . log(1) = 10 . 0 = 0 dB olur."
+        },
+        {
+          "metin": "Radyoaktif yarılanma sürecinde maddenin tamamı iki yarı ömür sonunda tamamen yok olur (0 grama düşer).",
+          "dogru": false,
+          "aciklama": "Yanlıştır; iki yarı ömür sonunda başlangıç kütlesinin (1/2)² = 1/4’ü kalır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki gerçek hayat modellerini doğru matematiksel bağıntılarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "M = log(I / I0)",
+          "Richter deprem büyüklüğü ölçeği"
+        ],
+        [
+          "pH = -log[H+]",
+          "Çözeltilerin asitlik-bazlık ölçeği"
+        ],
+        [
+          "L = 10 . log(I / I0)",
+          "Desibel (dB) cinsinden ses şiddeti düzeyi"
+        ],
+        [
+          "M(t) = M0 . (1/2)^(t / T)",
+          "Radyoaktif yarı ömür (bozunma) modeli"
+        ],
+        [
+          "T(t) = T_ortam + (T0 - T_ortam) . e^(-k.t)",
+          "Newton’ın soğuma yasası modeli"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Radyoaktif bir maddenin kütlesinin yarıya inmesi için geçen süreye ___ ömür denir.",
+          "cevap": "yarı"
+        },
+        {
+          "metin": "Depremlerin aletsel büyüklüğünü ölçmek için kullanılan 10 tabanlı logaritmik ölçeğe ___ ölçeği denir.",
+          "cevap": "Richter"
+        },
+        {
+          "metin": "Verilen 25 °C’de pH değeri 7’den küçük olan sulu çözeltiler ___ özellik gösterir.",
+          "cevap": "asidik"
+        },
+        {
+          "metin": "Ses şiddeti düzeyinin birimi ___ (dB) olarak adlandırılır.",
+          "cevap": "desibel"
+        },
+        {
+          "metin": "e tabanlı üstel bir denklemde üsteki bilinmeyeni bulmak için eşitliğin her iki tarafının ___ (ln) logaritması alınır.",
+          "cevap": "doğal"
+        }
+      ],
+      "fazla": [
+        "bazik",
+        "aritmetik"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir arkeolojik kazıda bulunan ahşap bir eserdeki Karbon-14 (C-14) oranının, canlı bir ağaçtaki C-14 oranının %25’ine (1/4’üne) düştüğü ölçülmüştür. C-14 izotopunun yarı ömrü T = 5730 yıl olduğuna göre bu ahşap eserin yaşını üstel azalma modeliyle adım adım hesaplayınız.",
+      "cevap": "Radyoaktif yarılanma modeline göre kalan miktar bağıntısı M(t) = M0 . (1/2)^(t / T) şeklindedir. Soruda kalan C-14 miktarının başlangıç miktarına oranı M(t) / M0 = %25 = 1/4 ve yarı ömür T = 5730 yıl olarak verilmiştir. Değerleri yerine yazalım: 1/4 = (1/2)^(t / 5730) => (1/2)² = (1/2)^(t / 5730). Tabanlar eşit olduğundan üsler birbirine eşitlenir: t / 5730 = 2 => t = 2 . 5730 = 11.460 yıl bulunur. Dolayısıyla bulunan ahşap eser yaklaşık 11.460 yıllıktır.",
+      "ipuclari": [
+        "1. İpucu: M(t) = M0 . (1/2)^(t / 5730) modelinde M(t) / M0 = 1/4 yazınız.",
+        "2. İpucu: 1/4 = (1/2)² eşitliğinden üsleri eşitleyerek t süresini bulunuz."
+      ]
+    }
+  ]
 }

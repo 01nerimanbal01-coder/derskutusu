@@ -46,18 +46,18 @@ def _gorsel_2():
 
     <rect x="28" y="54" width="300" height="154" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="1.8"/>
     <text x="178" y="75" text-anchor="middle" font-size="12" font-weight="bold" fill="#b45309">RIZIK VE ER-REZZAK</text>
-    <text x="44" y="98" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#92400e">er-Rezzak:</tspan> Tüm canlıların rızkını yaratan Allah (cc).</text>
-    <text x="44" y="118" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#92400e">Maddi Rızık:</tspan> Yiyecek, içecek, giyecek, hava, su.</text>
-    <text x="44" y="138" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#92400e">Manevi Rızık:</tspan> Akıl, iman, ilim, sevgi, huzur.</text>
+    <text x="44" y="98" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#92400e">er-Rezzak:&lt;/tspan> Tüm canlıların rızkını yaratan Allah (cc).</text>
+    <text x="44" y="118" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#92400e">Maddi Rızık:&lt;/tspan> Yiyecek, içecek, giyecek, hava, su.</text>
+    <text x="44" y="138" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#92400e">Manevi Rızık:&lt;/tspan> Akıl, iman, ilim, sevgi, huzur.</text>
     <rect x="44" y="154" width="268" height="38" rx="6" fill="#fef3c7"/>
     <text x="178" y="171" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#78350f">Ölçü: Rızkı helal yoldan ve emekle aramak,</text>
     <text x="178" y="185" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#78350f">başarı için hileden kaçınıp gayret göstermek.</text>
 
     <rect x="352" y="54" width="300" height="154" rx="10" fill="#ffffff" stroke="#0d9488" stroke-width="1.8"/>
     <text x="502" y="75" text-anchor="middle" font-size="12" font-weight="bold" fill="#0f766e">SABIR (ES-SABÛR), ÖMÜR VE ECEL</text>
-    <text x="368" y="98" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#115e59">es-Sabûr:</tspan> Sabredenlere güç veren Yüce Allah.</text>
-    <text x="368" y="118" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#115e59">Ömür:</tspan> Doğumdan ölüme kadar yaşanan süre.</text>
-    <text x="368" y="138" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#115e59">Ecel:</tspan> Ömrün sona erdiği takdir edilmiş an.</text>
+    <text x="368" y="98" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#115e59">es-Sabûr:&lt;/tspan> Sabredenlere güç veren Yüce Allah.</text>
+    <text x="368" y="118" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#115e59">Ömür:&lt;/tspan> Doğumdan ölüme kadar yaşanan süre.</text>
+    <text x="368" y="138" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#115e59">Ecel:&lt;/tspan> Ömrün sona erdiği takdir edilmiş an.</text>
     <rect x="368" y="154" width="268" height="38" rx="6" fill="#ccfbf1"/>
     <text x="502" y="171" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#134e4a">Ölçü: Sağlığı korumak, hastalıkta tedavi olmak</text>
     <text x="502" y="185" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#134e4a">ve ömrü salih amellerle değerlendirmek.</text>
@@ -78,8 +78,8 @@ def _gorsel_3():
     <text x="56" y="115" font-size="10" font-weight="bold" fill="#1e40af">tedbirler eksiksiz alınır.</text>
     <text x="44" y="136" font-size="10" fill="#1e293b">2. Çalışma ve gayret aşamasını kapsar.</text>
     <text x="44" y="157" font-size="10" fill="#1e293b">3. Gerekli çabadan sonra sonuç Allah'a (cc)</text>
-    <text x="56" y="172" font-size="10" fill="#1e293b">bırakılır: <tspan font-weight="bold">"Önce deveni bağla, sonra</tspan></text>
-    <text x="56" y="186" font-size="10" font-weight="bold" fill="#1d4ed8">Allah'a tevekkül et!"</tspan></text>
+    <text x="56" y="172" font-size="10" fill="#1e293b">bırakılır: &lt;tspan font-weight="bold">"Önce deveni bağla, sonra&lt;/tspan></text>
+    <text x="56" y="186" font-size="10" font-weight="bold" fill="#1d4ed8">Allah'a tevekkül et!"</text>
 
     <!-- Ok -->
     <line x1="320" y1="130" x2="355" y2="130" stroke="#475569" stroke-width="2.5"/>
@@ -88,11 +88,11 @@ def _gorsel_3():
     <!-- Sağ: Teslimiyet ve Rıza -->
     <rect x="372" y="54" width="280" height="154" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
     <text x="512" y="76" text-anchor="middle" font-size="13" font-weight="bold" fill="#15803d">TESLİMİYET VE RIZA (Sonuç Aşaması)</text>
-    <text x="388" y="100" font-size="10" fill="#1e293b">1. Süreç, çalışma tamamlanıp <tspan font-weight="bold" fill="#166534">sonuç ortaya</tspan></text>
+    <text x="388" y="100" font-size="10" fill="#1e293b">1. Süreç, çalışma tamamlanıp &lt;tspan font-weight="bold" fill="#166534">sonuç ortaya&lt;/tspan></text>
     <text x="400" y="115" font-size="10" font-weight="bold" fill="#166534">çıktıktan sonra başlar.</text>
     <text x="388" y="136" font-size="10" fill="#1e293b">2. Kişi sonucun Allah'tan (cc) geldiğine inanır</text>
     <text x="400" y="151" font-size="10" fill="#1e293b">ve isyan etmeden gönülden razı olur.</text>
-    <text x="388" y="172" font-size="10" fill="#1e293b">3. <tspan font-weight="bold" fill="#15803d">Hz. Eyyüb (as):</tspan> Dua, sabır ve teslimiyetle</text>
+    <text x="388" y="172" font-size="10" fill="#1e293b">3. &lt;tspan font-weight="bold" fill="#15803d">Hz. Eyyüb (as):&lt;/tspan> Dua, sabır ve teslimiyetle</text>
     <text x="400" y="186" font-size="10" fill="#1e293b">ağır imtihanı gönül huzuruyla aşmıştır.</text>
     """
     return svg(w, h, ic, "Tevekkül ve Teslimiyet Arasındaki Temel Farklar")
@@ -116,10 +116,10 @@ def _gorsel_4():
     <!-- Sağ: Kur'an'da Sahih Kader Bilinci -->
     <rect x="357" y="52" width="295" height="152" rx="10" fill="#ffffff" stroke="#059669" stroke-width="1.8"/>
     <text x="504" y="73" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#047857">KUR'AN'A GÖRE SAHİH KADER BİLİNCİ</text>
-    <text x="371" y="95" font-size="10" fill="#1e293b">✓ <tspan font-weight="bold" fill="#065f46">İnsan, 3:</tspan> "Şüphesiz biz ona doğru yolu</text>
+    <text x="371" y="95" font-size="10" fill="#1e293b">✓ &lt;tspan font-weight="bold" fill="#065f46">İnsan, 3:&lt;/tspan> "Şüphesiz biz ona doğru yolu</text>
     <text x="383" y="110" font-size="9.5" fill="#334155">gösterdik; ister şükredici olur ister nankör."</text>
-    <text x="371" y="130" font-size="10" fill="#1e293b">✓ <tspan font-weight="bold" fill="#065f46">Hidayet ve Hayır:</tspan> Doğru yolu ve iyiliği seçmek.</text>
-    <text x="371" y="150" font-size="10" fill="#1e293b">✓ <tspan font-weight="bold" fill="#065f46">Dalalet ve Şer:</tspan> Kötülüğe sapmaktan kaçınmak.</text>
+    <text x="371" y="130" font-size="10" fill="#1e293b">✓ &lt;tspan font-weight="bold" fill="#065f46">Hidayet ve Hayır:&lt;/tspan> Doğru yolu ve iyiliği seçmek.</text>
+    <text x="371" y="150" font-size="10" fill="#1e293b">✓ &lt;tspan font-weight="bold" fill="#065f46">Dalalet ve Şer:&lt;/tspan> Kötülüğe sapmaktan kaçınmak.</text>
     <text x="371" y="170" font-size="10" fill="#1e293b">✓ Seçimlerinin sorumluluğunu üstlenmek.</text>
     """
     return svg(w, h, ic, "Yanlış Kader Anlayışı ile Kur'an'daki Sahih Kader Bilincinin Karşılaştırılması")

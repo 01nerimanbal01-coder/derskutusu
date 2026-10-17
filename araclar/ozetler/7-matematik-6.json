@@ -1,288 +1,275 @@
 {
- "ad": "7-matematik-6",
- "sinif": 7,
- "ders": "matematik",
- "ders_adi": "Matematik",
- "hafta": 6,
- "tarih": "19-23 Ekim 2026",
- "yayin_tarihi": "2026-10-21",
- "unite": "SAYILAR VE NİCELİKLER (1)",
- "konu": "Rasyonel Sayılarla İşlemler ve Problem Çözme",
- "ciktilar": [
-  "Rasyonel sayılarla toplama, çıkarma, çarpma ve bölme işlemlerini özelliklerini kullanarak yapar.",
-  "Rasyonel sayıların karesini ve küpünü hesaplar; çok adımlı işlemleri işlem önceliğine göre yürütür.",
-  "Gerçek yaşam durumlarında karşılaşılan rasyonel sayı problemlerini uygun stratejilerle çözer."
- ],
- "giris": "Tam sayılar ve kesirlerin birleşimiyle oluşan rasyonel sayılar kümesi, günlük hayatta sıcaklık değişimlerinden finansal hesaplamalara, tarif ölçülerinden mühendislik tasarımlarına kadar her alanda karşımıza çıkar. Bu hafta rasyonel sayılarla dört işlem yapmanın temel kurallarını, işlem özelliklerini, rasyonel sayıların karesi ile küpünü, çok adımlı merdivenli işlemleri ve gerçek yaşam problemlerini çözme stratejilerini adım adım öğreneceğiz.",
- "ozet": [
-  "Rasyonel sayılarla toplama ve çıkarma yapılırken paydalar eşit değilse önce paydalar eşitlenir; ortak payda aynen yazılıp paylar arasında tam sayı kurallarına göre işlem yapılır.",
-  "Bir rasyonel sayının toplamaya göre tersi alınırken yalnızca sayının işareti değiştirilir; toplamaya göre etkisiz eleman 0'dır.",
-  "Rasyonel sayılarla çarpma işleminde paylar kendi arasında, paydalar kendi arasında çarpılır; çarpmaya göre etkisiz eleman 1, yutan eleman 0'dır.",
-  "Sıfırdan farklı bir rasyonel sayının çarpmaya göre tersi alınırken işareti değiştirilmeden pay ile paydasının yeri değiştirilir; bölme işleminde birinci sayı aynen yazılıp ikinci sayı ters çevrilerek çarpılır.",
-  "Negatif rasyonel sayıların karesi (2. kuvveti) daima pozitif, küpü (3. kuvveti) ise daima negatiftir.",
-  "Çok adımlı işlemlerde işlem önceliği sırası (üslü ifadeler, parantez içi, çarpma-bölme, toplama-çıkarma) ve ana kesir çizgisinin konumu belirleyicidir."
- ],
- "bolumler": [
-  {
-   "baslik": "1. Rasyonel Sayılarla Toplama ve Çıkarma İşlemi",
-   "metin": [
-    "Rasyonel sayılarla toplama ve çıkarma işlemi yapabilmek için kesirlerin paydalarının eşit olması gerekir. Paydalar eşit değilse genişletme veya sadeleştirme yardımıyla paydalar en küçük ortak katta eşitlenir. Ortak payda sonucun paydasına aynen yazılır, paylar ise tam sayılarda toplama ve çıkarma kurallarına dikkat edilerek toplanır veya çıkarılır. Tam sayılı kesirler işlem yapılmadan önce bileşik kesre çevrilirse işaret hatalarının önüne geçilir.",
-    "Rasyonel sayılarla toplama işleminin {koyu:değişme}, {koyu:birleşme}, {koyu:etkisiz eleman} ve {koyu:ters eleman} özellikleri vardır. Toplama işleminin etkisiz (birim) elemanı {koyu:0}'dır. Bir {kesir:a|b} rasyonel sayısının toplamaya göre tersi {koyu:-}{kesir:a|b} sayısıdır; çünkü bir sayı ile toplamaya göre tersinin toplamı daima 0'a eşittir."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "Negatif Tam Sayılı Kesirlerde İşaret Tuzağı",
-    "metin": "Önünde eksi işareti bulunan tam sayılı bir kesirde eksi işareti hem tam kısma hem de kesir kısmına aittir. Örneğin -2 tam 1/3 sayısı (-2) + (-1/3) = -7/3 demektir; asla (-2) + (1/3) olarak düşünülmemelidir!"
-   },
-   "gorsel": "<svg viewBox=\"0 0 680 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"10\" y=\"10\" width=\"660\" height=\"220\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"340.0\" y=\"38\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">RASYONEL SAYILARDA TOPLAMA VE ÇIKARMA İŞLEMİ</text><rect x=\"30\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"127.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#1d4ed8\" text-anchor=\"middle\">1. Eşit Paydalar</text><line x1=\"42\" y1=\"92\" x2=\"213\" y2=\"92\" stroke=\"#3b82f6\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"127.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Paylar toplanır/çıkarılır</text><text x=\"127.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Ortak payda aynen yazılır</text><text x=\"127.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">(-2/7) + (-3/7) = -5/7</text><text x=\"127.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">İşaret kurallarına dikkat!</text><rect x=\"242\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"2\"/><text x=\"339.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\" text-anchor=\"middle\">2. Farklı Paydalar</text><line x1=\"254\" y1=\"92\" x2=\"425\" y2=\"92\" stroke=\"#22c55e\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"339.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Paydalar EKOK ile eşitlenir</text><text x=\"339.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Genişletme işlemi yapılır</text><text x=\"339.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">(3/4) - (5/6) = (9-10)/12</text><text x=\"339.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Sonuç: -1/12 (en sade hal)</text><rect x=\"454\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\"/><text x=\"551.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#b45309\" text-anchor=\"middle\">3. İşlem Özellikleri</text><line x1=\"466\" y1=\"92\" x2=\"637\" y2=\"92\" stroke=\"#f59e0b\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"551.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Değişme ve Birleşme var</text><text x=\"551.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Etkisiz eleman: 0</text><text x=\"551.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Toplama göre ters: -a/b</text><text x=\"551.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">(a/b) + (-a/b) = 0</text></svg>"
-  },
-  {
-   "baslik": "2. Rasyonel Sayılarla Çarpma ve Bölme İşlemi",
-   "metin": [
-    "Rasyonel sayılarla çarpma işlemi yapılırken payda eşitlemeye gerek yoktur. Paylar kendi arasında çarpılarak paya, paydalar kendi arasında çarpılarak paydaya yazılır. İşlem kolaylığı için çarpmadan önce pay ile payda arasındaki ortak çarpanlar sadeleştirilir. İşaret belirlenirken tam sayılardaki kural geçerlidir: Aynı işaretli iki rasyonel sayının çarpımı veya bölümü {koyu:pozitif (+)}, zıt işaretli iki rasyonel sayının çarpımı veya bölümü {koyu:negatif (-)} olur.",
-    "Çarpma işleminin etkisiz elemanı {koyu:1}, yutan elemanı ise {koyu:0}'dır. Sıfırdan farklı bir {kesir:a|b} rasyonel sayısının {koyu:çarpmaya göre tersi}, işareti korunarak pay ve paydasının yer değiştirilmiş hali olan {kesir:b|a} sayısıdır. Rasyonel sayılarla bölme işlemi yapılırken birinci rasyonel sayı aynen yazılır, ikinci rasyonel sayı çarpmaya göre ters çevrilerek birinci sayı ile çarpılır."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Toplamaya ve Çarpmaya Göre Ters Karşılaştırması",
-    "metin": "Toplamaya göre ters alınırken SADECE İŞARET değişir (-3/4 -> +3/4). Çarpmaya göre ters alınırken İŞARET DEĞİŞMEZ, pay ile payda yer değiştirir (-3/4 -> -4/3). 0 sayısının çarpmaya göre tersi tanımsızdır."
-   },
-   "gorsel": "<svg viewBox=\"0 0 680 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"10\" y=\"10\" width=\"660\" height=\"220\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"340.0\" y=\"38\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">RASYONEL SAYILARDA ÇARPMA VE BÖLME İŞLEMİ</text><rect x=\"30\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#fae8ff\" stroke=\"#d946ef\" stroke-width=\"2\"/><text x=\"127.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\" text-anchor=\"middle\">Çarpma Kuralları</text><line x1=\"42\" y1=\"92\" x2=\"213\" y2=\"92\" stroke=\"#d946ef\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"127.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Pay x Pay / Payda x Payda</text><text x=\"127.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Önce sadeleştirme yap!</text><text x=\"127.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Aynı işaretliler: (+)</text><text x=\"127.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Zıt işaretliler: (-)</text><rect x=\"242\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/><text x=\"339.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0369a1\" text-anchor=\"middle\">Çarpmaya Göre Ters</text><line x1=\"254\" y1=\"92\" x2=\"425\" y2=\"92\" stroke=\"#0284c7\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"339.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Pay ve payda yer değiştirir</text><text x=\"339.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">İşaret ASLA değişmez!</text><text x=\"339.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">-3/5 tersi -> -5/3</text><text x=\"339.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">0 sayısının tersi YOKTUR</text><rect x=\"454\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#ffe4e6\" stroke=\"#f43f5e\" stroke-width=\"2\"/><text x=\"551.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#be123c\" text-anchor=\"middle\">Bölme İşlemi</text><line x1=\"466\" y1=\"92\" x2=\"637\" y2=\"92\" stroke=\"#f43f5e\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"551.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">1. sayı aynen yazılır</text><text x=\"551.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">2. sayı ters çevrilip çarpılır</text><text x=\"551.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">(a/b) : (c/d) = (a/b) . (d/c)</text><text x=\"551.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Ana kesir çizgisi hizası!</text></svg>"
-  },
-  {
-   "baslik": "3. Rasyonel Sayıların Karesi ve Küpü",
-   "metin": [
-    "Bir rasyonel sayının kendisiyle çarpımı o sayının {koyu:karesini} (2. kuvvetini), kendisiyle üç kez tekrarlı çarpımı ise {koyu:küpünü} (3. kuvvetini) verir. Rasyonel bir sayının kuvveti alınırken hem payın hem de paydanın ayrı ayrı kuvveti alınır. Tam sayılı kesirlerin veya ondalık gösterimlerin kuvveti alınırken sayı önce bileşik kesre çevrilmelidir.",
-    "Pozitif rasyonel sayıların hem karesi hem küpü pozitiftir. Negatif rasyonel sayıların ise {koyu:karesi daima pozitif}, {koyu:küpü daima negatiftir}. Örneğin (-{kesir:2|3}) sayısının karesi +{kesir:4|9} iken, küpü -{kesir:8|27} olur."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Parantezin Yeri ve Önemi",
-    "metin": "Kuvvet parantezin dışında ise işaret de kuvvete dahildir: (-1/2)² = +1/4. Ancak kuvvet sadece payın veya kesrin üzerinde ise eksi işareti etkilenmez."
-   },
-   "gorsel": "<svg viewBox=\"0 0 680 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"10\" y=\"10\" width=\"660\" height=\"220\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"340.0\" y=\"38\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">RASYONEL SAYILARIN KUVVETLERİ VE ÇOK ADIMLI İŞLEMLER</text><rect x=\"30\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#ede9fe\" stroke=\"#8b5cf6\" stroke-width=\"2\"/><text x=\"127.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#6d28d9\" text-anchor=\"middle\">Karesi ve Küpü</text><line x1=\"42\" y1=\"92\" x2=\"213\" y2=\"92\" stroke=\"#8b5cf6\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"127.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Negatifin çift kuvveti (+)</text><text x=\"127.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">(-2/3)² = +4/9</text><text x=\"127.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Negatifin tek kuvveti (-)</text><text x=\"127.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">(-2/3)³ = -8/27</text><rect x=\"242\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#fef9c3\" stroke=\"#eab308\" stroke-width=\"2\"/><text x=\"339.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#a16207\" text-anchor=\"middle\">İşlem Önceliği</text><line x1=\"254\" y1=\"92\" x2=\"425\" y2=\"92\" stroke=\"#eab308\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"339.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">1. Üslü ifadeler</text><text x=\"339.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">2. Parantez içi işlemler</text><text x=\"339.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">3. Çarpma veya bölme</text><text x=\"339.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">4. Toplama veya çıkarma</text><rect x=\"454\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#dcfce7\" stroke=\"#10b981\" stroke-width=\"2\"/><text x=\"551.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#047857\" text-anchor=\"middle\">Merdivenli Kesirler</text><line x1=\"466\" y1=\"92\" x2=\"637\" y2=\"92\" stroke=\"#10b981\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"551.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">En alt/iç basamaktan başla</text><text x=\"551.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Ana kesir çizgisini belirle</text><text x=\"551.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Üstteki pay, alttaki payda</text><text x=\"551.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Adım adım sadeleştir</text></svg>"
-  },
-  {
-   "baslik": "4. Çok Adımlı İşlemler ve Merdivenli Kesirler",
-   "metin": [
-    "Birden fazla işlemin bir arada bulunduğu çok adımlı rasyonel sayı ifadelerinde {koyu:işlem önceliği} kurallarına uyulur: Önce üslü ifadelerin değeri bulunur, ardından parantez içi işlemler yapılır, daha sonra çarpma veya bölme işlemleri soldan sağa sırayla yürütülür, en son toplama ve çıkarma işlemleri tamamlanır.",
-    "Kesir çizgilerinin üst üste yer aldığı çok adımlı (merdivenli) işlemlerde en önemli adım {koyu:ana kesir çizgisini} tespit etmektir. Ana kesir çizgisi daima eşittir (=) sembolünün veya işlem işaretlerinin tam hizasındaki en uzun çizgidir. Ana kesir çizgisinin üstü birinci sayı (pay), altı ise ikinci sayı (payda) olarak kabul edilir ve işlemler en içteki/en alttaki basamaktan başlanarak adım adım çözülür."
-   ],
-   "kutu": {
-    "tur": "bilgi",
-    "baslik": "Ana Kesir Çizgisi Farkı",
-    "metin": "(2 / 3) / 4 işleminde ana kesir çizgisi alttadır ve sonuç (2/3) . (1/4) = 2/12 = 1/6 olur. Oysa 2 / (3 / 4) işleminde ana kesir çizgisi üsttedir ve sonuç 2 . (4/3) = 8/3 çıkar!"
-   }
-  },
-  {
-   "baslik": "5. Rasyonel Sayılarla Problem Çözme Stratejileri",
-   "metin": [
-    "Gerçek yaşam problemlerinde bir bütünün belirtilen kesir kadarını bulmak için bütün ile kesir {koyu:çarpılır}. Bir kesrin kesir kadarı (örneğin kalanın {kesir:2|5}'si) sorulduğunda da ilgili iki kesir birbiriyle çarpılır. Buna karşılık, kesir kadarı verilen bir bütünün tamamını bulmak için verilen miktar kesre {koyu:bölünür}.",
-    "Harcama, yol, su deposu veya miras paylaşımı gibi problemlerde 'kalanın belli bir kesri' ifadesine çok dikkat edilmelidir. Önce bütünden (1 tamdan) ilk harcanan kesir çıkarılarak kalan kesir bulunur; ardından ikinci harcama bu kalan kesir üzerinden çarpma işlemiyle hesaplanır."
-   ],
-   "kutu": {
-    "tur": "tanim",
-    "baslik": "Birim Kesir Modellemesi",
-    "metin": "Karmaşık kesir problemlerinde paydaların ortak katı kadar kutucuk (birim parça) çizerek modelleme yapmak, denkleme gerek kalmadan sonucu görsel olarak bulmayı sağlar."
-   },
-   "gorsel": "<svg viewBox=\"0 0 680 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"10\" y=\"10\" width=\"660\" height=\"220\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"340.0\" y=\"38\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">RASYONEL SAYI PROBLEMLERİ ÇÖZÜM STRATEJİLERİ</text><rect x=\"30\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#ffedd5\" stroke=\"#f97316\" stroke-width=\"2\"/><text x=\"127.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#c2410c\" text-anchor=\"middle\">Bütünden Parçaya</text><line x1=\"42\" y1=\"92\" x2=\"213\" y2=\"92\" stroke=\"#f97316\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"127.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Bütünün kesir kadarı:</text><text x=\"127.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Sayı kesir ile ÇARPILIR</text><text x=\"127.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">120 TL'nin 3/4'ü:</text><text x=\"127.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">120 . (3/4) = 90 TL</text><rect x=\"242\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"2\"/><text x=\"339.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#4338ca\" text-anchor=\"middle\">Parçadan Bütüne</text><line x1=\"254\" y1=\"92\" x2=\"425\" y2=\"92\" stroke=\"#6366f1\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"339.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Kesir kadarı verilen bütün:</text><text x=\"339.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Sayı kesre BÖLÜNÜR</text><text x=\"339.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">2/5'i 40 olan sayı:</text><text x=\"339.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">40 : (2/5) = 100</text><rect x=\"454\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"2\"/><text x=\"551.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">Kalanın Kalanı</text><line x1=\"466\" y1=\"92\" x2=\"637\" y2=\"92\" stroke=\"#64748b\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"551.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Önce 1'den çıkarıp kalanı bul</text><text x=\"551.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Kalan kesirle yeni kesri çarp</text><text x=\"551.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">1/3'ü, sonra kalanın 1/2'si:</text><text x=\"551.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">(2/3) . (1/2) = 1/3</text></svg>"
-  },
-  {
-   "baslik": "6. Ondalık Gösterimlerle Rasyonel İşlemler",
-   "metin": [
-    "Rasyonel sayılarla işlem yaparken bazı sayılar ondalık veya devirli ondalık gösterim biçiminde verilebilir. Bu durumda ondalık gösterimleri rasyonel sayıya ({kesir:a|b} biçimine) dönüştürerek işlem yapmak hem sadeleştirme kolaylığı sağlar hem de virgül kaydırma hatalarını önler.",
-    "Devirli ondalık gösterimler rasyonel sayıya çevrilirken paya (tüm sayı - devretmeyen kısım), paydaya ise virgülden sonraki devreden basamak sayısı kadar 9, devretmeyen basamak sayısı kadar 0 yazılır. Örneğin 0,333... devirli sayısı {kesir:3|9} yani sadeleşmiş haliyle {kesir:1|3} olarak işlemlere dahil edilir."
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "baslik": "Hızlı Eşdeğerlikler",
-    "metin": "0,25 = 1/4 | 0,5 = 1/2 | 0,75 = 3/4 | 0,2 = 1/5 | 0,125 = 1/8 eşitliklerini ezbere bilmek rasyonel sayı işlemlerinde büyük hız kazandırır."
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "(-{kesir:3|4}) + ({kesir:5|6}) - (-{kesir:1|12}) işleminin sonucu kaçtır?",
-   "cevap": "Paydalar 12'de eşitlenir. İlk kesir 3 ile, ikinci kesir 2 ile genişletilir; iki eksi yan yana geldiği için + olur: (-{kesir:9|12}) + ({kesir:10|12}) + ({kesir:1|12}) = {kesir:-9+10+1|12} = {kesir:2|12}. Sadeleştirilirse sonuç {kesir:1|6} bulunur."
-  },
-  {
-   "soru": "-1{kesir:2|3} sayısının toplamaya göre tersi A, çarpmaya göre tersi B olduğuna göre A . B çarpımı kaçtır?",
-   "cevap": "Önce tam sayılı kesri bileşik kesre çevirelim: -1{kesir:2|3} = -{kesir:5|3}. Bu sayının toplamaya göre tersi A = +{kesir:5|3}, çarpmaya göre tersi ise B = -{kesir:3|5} olur. İkisini çarparsak: ({kesir:5|3}) . (-{kesir:3|5}) = -{kesir:15|15} = -1 bulunur."
-  },
-  {
-   "soru": "(-{kesir:1|2})³ : (-{kesir:3|4})² işleminin sonucu kaçtır?",
-   "cevap": "Önce üslü ifadelerin değerlerini bulalım: (-{kesir:1|2})³ = -{kesir:1|8} ve (-{kesir:3|4})² = +{kesir:9|16}. Şimdi bölme işlemini yapalım: (-{kesir:1|8}) : ({kesir:9|16}) = (-{kesir:1|8}) . ({kesir:16|9}). 16 ile 8 sadeleşir (2 kalır), sonuç -{kesir:2|9} olur."
-  },
-  {
-   "soru": "1 - {kesir:1|1 + {kesir:1|2}} çok adımlı işleminin sonucunu bulunuz.",
-   "cevap": "En alttaki basamaktan başlayalım: 1 + {kesir:1|2} = {kesir:3|2}. Şimdi 1'i {kesir:3|2}'ye bölelim: 1 : ({kesir:3|2}) = {kesir:2|3}. En son baştaki çıkarma işlemini yapalım: 1 - {kesir:2|3} = {kesir:1|3} bulunur."
-  },
-  {
-   "soru": "Bir su deposunun önce {kesir:2|5}'si, daha sonra kalan suyun {kesir:1|3}'i kullanılıyor. Depoda geriye 24 litre su kaldığına göre deponun tamamı kaç litre su alır?",
-   "cevap": "Deponun {kesir:2|5}'si kullanılınca geriye 1 - {kesir:2|5} = {kesir:3|5}'i kalır. Kalanın {kesir:1|3}'i kullanılırsa: ({kesir:3|5}) . ({kesir:1|3}) = {kesir:1|5}'i daha kullanılmış olur. Toplam kalan: {kesir:3|5} - {kesir:1|5} = {kesir:2|5}'tir. {kesir:2|5}'si 24 litre ise tamamı 24 : ({kesir:2|5}) = 24 . ({kesir:5|2}) = 60 litredir."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "(-{kesir:2|5}) - (-{kesir:3|10}) işleminin sonucu aşağıdakilerden hangisidir?",
-   "secenekler": [
-    "-{kesir:7|10}",
-    "-{kesir:1|10}",
-    "{kesir:1|10}",
-    "{kesir:1|5}",
-    "{kesir:7|10}"
-   ],
-   "dogru": 1,
-   "aciklama": "İki eksi yan yana geldiğinde artıya dönüşür ve ilk kesir 2 ile genişletilir: (-4/10) + (3/10) = -1/10."
-  },
-  {
-   "tur": "coktan",
-   "soru": "0,75 rasyonel sayısının çarpmaya göre tersi ile toplamaya göre tersinin toplamı kaçtır?",
-   "secenekler": [
-    "-{kesir:7|12}",
-    "{kesir:1|12}",
-    "{kesir:7|12}",
-    "{kesir:25|12}",
-    "0"
-   ],
-   "dogru": 2,
-   "aciklama": "0,75 = 3/4'tür. Çarpmaya göre tersi 4/3, toplamaya göre tersi -3/4'tür. Toplamları: (4/3) + (-3/4) = (16 - 9)/12 = 7/12."
-  },
-  {
-   "tur": "coktan",
-   "soru": "(-{kesir:2|3})² - (-{kesir:1|3})³ işleminin sonucu kaçtır?",
-   "secenekler": [
-    "{kesir:11|27}",
-    "{kesir:13|27}",
-    "-{kesir:11|27}",
-    "-{kesir:13|27}",
-    "{kesir:5|9}"
-   ],
-   "dogru": 1,
-   "aciklama": "(-2/3)² = 4/9 = 12/27 ve (-1/3)³ = -1/27'dir. (12/27) - (-1/27) = 13/27 bulunur."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Bir telin ucundan {kesir:1|6}'i kesildiğinde telin orta noktası eski durumuna göre 5 cm kaymaktadır. Buna göre telin kesilmeden önceki boyu kaç santimetredir?",
-   "secenekler": [
-    "30",
-    "45",
-    "60",
-    "75",
-    "90"
-   ],
-   "dogru": 2,
-   "aciklama": "Orta nokta kesilen miktarın yarısı kadar kayar. Orta nokta 5 cm kaydığına göre kesilen parça 10 cm'dir. 1/6'i 10 cm olan telin tamamı 10 . 6 = 60 cm'dir."
-  },
-  {
-   "tur": "coktan",
-   "soru": "(1 + {kesir:1|2}) . (1 + {kesir:1|3}) . (1 + {kesir:1|4}) . (1 + {kesir:1|5}) çarpımının sonucu kaçtır?",
-   "secenekler": [
-    "2",
-    "{kesir:5|2}",
-    "3",
-    "{kesir:7|2}",
-    "6"
-   ],
-   "dogru": 2,
-   "aciklama": "Parantez içleri yapılırsa (3/2) . (4/3) . (5/4) . (6/5) elde edilir. Çapraz sadeleştirmeler sonucunda geriye 6/2 = 3 kalır."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "7-matematik-6",
+  "sinif": 7,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 6,
+  "tarih": "19-23 Ekim 2026",
+  "yayin_tarihi": "2026-10-21",
+  "unite": "SAYILAR VE NİCELİKLER (1)",
+  "konu": "Rasyonel Sayılarla İşlemler ve Problem Çözme",
+  "ciktilar": [
+    "Rasyonel sayılarla toplama, çıkarma, çarpma ve bölme işlemlerini özelliklerini kullanarak yapar.",
+    "Rasyonel sayıların karesini ve küpünü hesaplar; çok adımlı işlemleri işlem önceliğine göre yürütür.",
+    "Gerçek yaşam durumlarında karşılaşılan rasyonel sayı problemlerini uygun stratejilerle çözer."
+  ],
+  "giris": "Tam sayılar ve kesirlerin birleşimiyle oluşan rasyonel sayılar kümesi, günlük hayatta sıcaklık değişimlerinden finansal hesaplamalara, tarif ölçülerinden mühendislik tasarımlarına kadar her alanda karşımıza çıkar. Bu hafta rasyonel sayılarla dört işlem yapmanın temel kurallarını, işlem özelliklerini, rasyonel sayıların karesi ile küpünü, çok adımlı merdivenli işlemleri ve gerçek yaşam problemlerini çözme stratejilerini adım adım öğreneceğiz.",
+  "ozet": [
+    "Rasyonel sayılarla toplama ve çıkarma yapılırken paydalar eşit değilse önce paydalar eşitlenir; ortak payda aynen yazılıp paylar arasında tam sayı kurallarına göre işlem yapılır.",
+    "Bir rasyonel sayının toplamaya göre tersi alınırken yalnızca sayının işareti değiştirilir; toplamaya göre etkisiz eleman 0'dır.",
+    "Rasyonel sayılarla çarpma işleminde paylar kendi arasında, paydalar kendi arasında çarpılır; çarpmaya göre etkisiz eleman 1, yutan eleman 0'dır.",
+    "Sıfırdan farklı bir rasyonel sayının çarpmaya göre tersi alınırken işareti değiştirilmeden pay ile paydasının yeri değiştirilir; bölme işleminde birinci sayı aynen yazılıp ikinci sayı ters çevrilerek çarpılır.",
+    "Negatif rasyonel sayıların karesi (2. kuvveti) daima pozitif, küpü (3. kuvveti) ise daima negatiftir.",
+    "Çok adımlı işlemlerde işlem önceliği sırası (üslü ifadeler, parantez içi, çarpma-bölme, toplama-çıkarma) ve ana kesir çizgisinin konumu belirleyicidir."
+  ],
+  "bolumler": [
     {
-     "metin": "Rasyonel sayılarla toplama işleminde etkisiz (birim) eleman 0'dır.",
-     "dogru": true,
-     "aciklama": "Bir rasyonel sayının 0 ile toplamı kendisini verir."
+      "baslik": "1. Rasyonel Sayılarla Toplama ve Çıkarma İşlemi",
+      "metin": [
+        "Rasyonel sayılarla toplama ve çıkarma işlemi yapabilmek için kesirlerin paydalarının eşit olması gerekir. Paydalar eşit değilse genişletme veya sadeleştirme yardımıyla paydalar en küçük ortak katta eşitlenir. Ortak payda sonucun paydasına aynen yazılır, paylar ise tam sayılarda toplama ve çıkarma kurallarına dikkat edilerek toplanır veya çıkarılır. Tam sayılı kesirler işlem yapılmadan önce bileşik kesre çevrilirse işaret hatalarının önüne geçilir.",
+        "Rasyonel sayılarla toplama işleminin {koyu:değişme}, {koyu:birleşme}, {koyu:etkisiz eleman} ve {koyu:ters eleman} özellikleri vardır. Toplama işleminin etkisiz (birim) elemanı {koyu:0}'dır. Bir {kesir:a|b} rasyonel sayısının toplamaya göre tersi {koyu:-}{kesir:a|b} sayısıdır; çünkü bir sayı ile toplamaya göre tersinin toplamı daima 0'a eşittir."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Negatif Tam Sayılı Kesirlerde İşaret Tuzağı",
+        "metin": "Önünde eksi işareti bulunan tam sayılı bir kesirde eksi işareti hem tam kısma hem de kesir kısmına aittir. Örneğin -2 tam 1/3 sayısı (-2) + (-1/3) = -7/3 demektir; asla (-2) + (1/3) olarak düşünülmemelidir!"
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"10\" y=\"10\" width=\"660\" height=\"220\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"340.0\" y=\"38\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">RASYONEL SAYILARDA TOPLAMA VE ÇIKARMA İŞLEMİ</text><rect x=\"30\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"127.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#1d4ed8\" text-anchor=\"middle\">1. Eşit Paydalar</text><line x1=\"42\" y1=\"92\" x2=\"213\" y2=\"92\" stroke=\"#3b82f6\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"127.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Paylar toplanır/çıkarılır</text><text x=\"127.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Ortak payda aynen yazılır</text><text x=\"127.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">(-2/7) + (-3/7) = -5/7</text><text x=\"127.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">İşaret kurallarına dikkat!</text><rect x=\"242\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"2\"/><text x=\"339.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\" text-anchor=\"middle\">2. Farklı Paydalar</text><line x1=\"254\" y1=\"92\" x2=\"425\" y2=\"92\" stroke=\"#22c55e\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"339.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Paydalar EKOK ile eşitlenir</text><text x=\"339.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Genişletme işlemi yapılır</text><text x=\"339.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">(3/4) - (5/6) = (9-10)/12</text><text x=\"339.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Sonuç: -1/12 (en sade hal)</text><rect x=\"454\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\"/><text x=\"551.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#b45309\" text-anchor=\"middle\">3. İşlem Özellikleri</text><line x1=\"466\" y1=\"92\" x2=\"637\" y2=\"92\" stroke=\"#f59e0b\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"551.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Değişme ve Birleşme var</text><text x=\"551.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Etkisiz eleman: 0</text><text x=\"551.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Toplama göre ters: -a/b</text><text x=\"551.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">(a/b) + (-a/b) = 0</text></svg>"
     },
     {
-     "metin": "-{kesir:4|7} rasyonel sayısının çarpmaya göre tersi +{kesir:7|4} sayısıdır.",
-     "dogru": false,
-     "aciklama": "Çarpmaya göre ters alınırken işaret değişmez; doğru cevap -7/4 olmalıdır."
+      "baslik": "2. Rasyonel Sayılarla Çarpma ve Bölme İşlemi",
+      "metin": [
+        "Rasyonel sayılarla çarpma işlemi yapılırken payda eşitlemeye gerek yoktur. Paylar kendi arasında çarpılarak paya, paydalar kendi arasında çarpılarak paydaya yazılır. İşlem kolaylığı için çarpmadan önce pay ile payda arasındaki ortak çarpanlar sadeleştirilir. İşaret belirlenirken tam sayılardaki kural geçerlidir: Aynı işaretli iki rasyonel sayının çarpımı veya bölümü {koyu:pozitif (+)}, zıt işaretli iki rasyonel sayının çarpımı veya bölümü {koyu:negatif (-)} olur.",
+        "Çarpma işleminin etkisiz elemanı {koyu:1}, yutan elemanı ise {koyu:0}'dır. Sıfırdan farklı bir {kesir:a|b} rasyonel sayısının {koyu:çarpmaya göre tersi}, işareti korunarak pay ve paydasının yer değiştirilmiş hali olan {kesir:b|a} sayısıdır. Rasyonel sayılarla bölme işlemi yapılırken birinci rasyonel sayı aynen yazılır, ikinci rasyonel sayı çarpmaya göre ters çevrilerek birinci sayı ile çarpılır."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Toplamaya ve Çarpmaya Göre Ters Karşılaştırması",
+        "metin": "Toplamaya göre ters alınırken SADECE İŞARET değişir (-3/4 -> +3/4). Çarpmaya göre ters alınırken İŞARET DEĞİŞMEZ, pay ile payda yer değiştirir (-3/4 -> -4/3). 0 sayısının çarpmaya göre tersi tanımsızdır."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"10\" y=\"10\" width=\"660\" height=\"220\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"340.0\" y=\"38\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">RASYONEL SAYILARDA ÇARPMA VE BÖLME İŞLEMİ</text><rect x=\"30\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#fae8ff\" stroke=\"#d946ef\" stroke-width=\"2\"/><text x=\"127.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\" text-anchor=\"middle\">Çarpma Kuralları</text><line x1=\"42\" y1=\"92\" x2=\"213\" y2=\"92\" stroke=\"#d946ef\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"127.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Pay x Pay / Payda x Payda</text><text x=\"127.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Önce sadeleştirme yap!</text><text x=\"127.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Aynı işaretliler: (+)</text><text x=\"127.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Zıt işaretliler: (-)</text><rect x=\"242\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/><text x=\"339.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0369a1\" text-anchor=\"middle\">Çarpmaya Göre Ters</text><line x1=\"254\" y1=\"92\" x2=\"425\" y2=\"92\" stroke=\"#0284c7\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"339.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Pay ve payda yer değiştirir</text><text x=\"339.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">İşaret ASLA değişmez!</text><text x=\"339.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">-3/5 tersi -> -5/3</text><text x=\"339.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">0 sayısının tersi YOKTUR</text><rect x=\"454\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#ffe4e6\" stroke=\"#f43f5e\" stroke-width=\"2\"/><text x=\"551.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#be123c\" text-anchor=\"middle\">Bölme İşlemi</text><line x1=\"466\" y1=\"92\" x2=\"637\" y2=\"92\" stroke=\"#f43f5e\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"551.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">1. sayı aynen yazılır</text><text x=\"551.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">2. sayı ters çevrilip çarpılır</text><text x=\"551.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">(a/b) : (c/d) = (a/b) . (d/c)</text><text x=\"551.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Ana kesir çizgisi hizası!</text></svg>"
     },
     {
-     "metin": "Negatif bir rasyonel sayının küpü (3. kuvveti) daima negatiftir.",
-     "dogru": true,
-     "aciklama": "Negatif sayıların tek kuvvetleri negatiftir."
+      "baslik": "3. Rasyonel Sayıların Karesi ve Küpü",
+      "metin": [
+        "Bir rasyonel sayının kendisiyle çarpımı o sayının {koyu:karesini} (2. kuvvetini), kendisiyle üç kez tekrarlı çarpımı ise {koyu:küpünü} (3. kuvvetini) verir. Rasyonel bir sayının kuvveti alınırken hem payın hem de paydanın ayrı ayrı kuvveti alınır. Tam sayılı kesirlerin veya ondalık gösterimlerin kuvveti alınırken sayı önce bileşik kesre çevrilmelidir.",
+        "Pozitif rasyonel sayıların hem karesi hem küpü pozitiftir. Negatif rasyonel sayıların ise {koyu:karesi daima pozitif}, {koyu:küpü daima negatiftir}. Örneğin (-{kesir:2|3}) sayısının karesi +{kesir:4|9} iken, küpü -{kesir:8|27} olur."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Parantezin Yeri ve Önemi",
+        "metin": "Kuvvet parantezin dışında ise işaret de kuvvete dahildir: (-1/2)² = +1/4. Ancak kuvvet sadece payın veya kesrin üzerinde ise eksi işareti etkilenmez."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"10\" y=\"10\" width=\"660\" height=\"220\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"340.0\" y=\"38\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">RASYONEL SAYILARIN KUVVETLERİ VE ÇOK ADIMLI İŞLEMLER</text><rect x=\"30\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#ede9fe\" stroke=\"#8b5cf6\" stroke-width=\"2\"/><text x=\"127.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#6d28d9\" text-anchor=\"middle\">Karesi ve Küpü</text><line x1=\"42\" y1=\"92\" x2=\"213\" y2=\"92\" stroke=\"#8b5cf6\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"127.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Negatifin çift kuvveti (+)</text><text x=\"127.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">(-2/3)² = +4/9</text><text x=\"127.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Negatifin tek kuvveti (-)</text><text x=\"127.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">(-2/3)³ = -8/27</text><rect x=\"242\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#fef9c3\" stroke=\"#eab308\" stroke-width=\"2\"/><text x=\"339.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#a16207\" text-anchor=\"middle\">İşlem Önceliği</text><line x1=\"254\" y1=\"92\" x2=\"425\" y2=\"92\" stroke=\"#eab308\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"339.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">1. Üslü ifadeler</text><text x=\"339.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">2. Parantez içi işlemler</text><text x=\"339.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">3. Çarpma veya bölme</text><text x=\"339.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">4. Toplama veya çıkarma</text><rect x=\"454\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#dcfce7\" stroke=\"#10b981\" stroke-width=\"2\"/><text x=\"551.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#047857\" text-anchor=\"middle\">Merdivenli Kesirler</text><line x1=\"466\" y1=\"92\" x2=\"637\" y2=\"92\" stroke=\"#10b981\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"551.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">En alt/iç basamaktan başla</text><text x=\"551.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Ana kesir çizgisini belirle</text><text x=\"551.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Üstteki pay, alttaki payda</text><text x=\"551.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Adım adım sadeleştir</text></svg>"
     },
     {
-     "metin": "0 rasyonel sayısının çarpmaya göre tersi yine 0'dır.",
-     "dogru": false,
-     "aciklama": "0 sayısının çarpmaya göre tersi tanımsızdır (yoktur)."
+      "baslik": "4. Çok Adımlı İşlemler ve Merdivenli Kesirler",
+      "metin": [
+        "Birden fazla işlemin bir arada bulunduğu çok adımlı rasyonel sayı ifadelerinde {koyu:işlem önceliği} kurallarına uyulur: Önce üslü ifadelerin değeri bulunur, ardından parantez içi işlemler yapılır, daha sonra çarpma veya bölme işlemleri soldan sağa sırayla yürütülür, en son toplama ve çıkarma işlemleri tamamlanır.",
+        "Kesir çizgilerinin üst üste yer aldığı çok adımlı (merdivenli) işlemlerde en önemli adım {koyu:ana kesir çizgisini} tespit etmektir. Ana kesir çizgisi daima eşittir (=) sembolünün veya işlem işaretlerinin tam hizasındaki en uzun çizgidir. Ana kesir çizgisinin üstü birinci sayı (pay), altı ise ikinci sayı (payda) olarak kabul edilir ve işlemler en içteki/en alttaki basamaktan başlanarak adım adım çözülür."
+      ],
+      "kutu": {
+        "tur": "bilgi",
+        "baslik": "Ana Kesir Çizgisi Farkı",
+        "metin": "(2 / 3) / 4 işleminde ana kesir çizgisi alttadır ve sonuç (2/3) . (1/4) = 2/12 = 1/6 olur. Oysa 2 / (3 / 4) işleminde ana kesir çizgisi üsttedir ve sonuç 2 . (4/3) = 8/3 çıkar!"
+      }
     },
     {
-     "metin": "Bir sayıyı {kesir:1|2}'ye bölmek, o sayıyı 2 ile çarpmakla aynı sonucu verir.",
-     "dogru": true,
-     "aciklama": "Bölme işleminde ikinci kesir ters çevrilip çarpıldığı için 1/2 ters çevrilince 2 olur."
+      "baslik": "5. Rasyonel Sayılarla Problem Çözme Stratejileri",
+      "metin": [
+        "Gerçek yaşam problemlerinde bir bütünün belirtilen kesir kadarını bulmak için bütün ile kesir {koyu:çarpılır}. Bir kesrin kesir kadarı (örneğin kalanın {kesir:2|5}'si) sorulduğunda da ilgili iki kesir birbiriyle çarpılır. Buna karşılık, kesir kadarı verilen bir bütünün tamamını bulmak için verilen miktar kesre {koyu:bölünür}.",
+        "Harcama, yol, su deposu veya miras paylaşımı gibi problemlerde 'kalanın belli bir kesri' ifadesine çok dikkat edilmelidir. Önce bütünden (1 tamdan) ilk harcanan kesir çıkarılarak kalan kesir bulunur; ardından ikinci harcama bu kalan kesir üzerinden çarpma işlemiyle hesaplanır."
+      ],
+      "kutu": {
+        "tur": "tanim",
+        "baslik": "Birim Kesir Modellemesi",
+        "metin": "Karmaşık kesir problemlerinde paydaların ortak katı kadar kutucuk (birim parça) çizerek modelleme yapmak, denkleme gerek kalmadan sonucu görsel olarak bulmayı sağlar."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"10\" y=\"10\" width=\"660\" height=\"220\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"340.0\" y=\"38\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">RASYONEL SAYI PROBLEMLERİ ÇÖZÜM STRATEJİLERİ</text><rect x=\"30\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#ffedd5\" stroke=\"#f97316\" stroke-width=\"2\"/><text x=\"127.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#c2410c\" text-anchor=\"middle\">Bütünden Parçaya</text><line x1=\"42\" y1=\"92\" x2=\"213\" y2=\"92\" stroke=\"#f97316\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"127.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Bütünün kesir kadarı:</text><text x=\"127.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Sayı kesir ile ÇARPILIR</text><text x=\"127.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">120 TL'nin 3/4'ü:</text><text x=\"127.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">120 . (3/4) = 90 TL</text><rect x=\"242\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"2\"/><text x=\"339.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#4338ca\" text-anchor=\"middle\">Parçadan Bütüne</text><line x1=\"254\" y1=\"92\" x2=\"425\" y2=\"92\" stroke=\"#6366f1\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"339.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Kesir kadarı verilen bütün:</text><text x=\"339.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Sayı kesre BÖLÜNÜR</text><text x=\"339.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">2/5'i 40 olan sayı:</text><text x=\"339.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">40 : (2/5) = 100</text><rect x=\"454\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"2\"/><text x=\"551.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">Kalanın Kalanı</text><line x1=\"466\" y1=\"92\" x2=\"637\" y2=\"92\" stroke=\"#64748b\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"551.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Önce 1'den çıkarıp kalanı bul</text><text x=\"551.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Kalan kesirle yeni kesri çarp</text><text x=\"551.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">1/3'ü, sonra kalanın 1/2'si:</text><text x=\"551.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">(2/3) . (1/2) = 1/3</text></svg>"
+    },
+    {
+      "baslik": "6. Ondalık Gösterimlerle Rasyonel İşlemler",
+      "metin": [
+        "Rasyonel sayılarla işlem yaparken bazı sayılar ondalık veya devirli ondalık gösterim biçiminde verilebilir. Bu durumda ondalık gösterimleri rasyonel sayıya ({kesir:a|b} biçimine) dönüştürerek işlem yapmak hem sadeleştirme kolaylığı sağlar hem de virgül kaydırma hatalarını önler.",
+        "Devirli ondalık gösterimler rasyonel sayıya çevrilirken paya (tüm sayı - devretmeyen kısım), paydaya ise virgülden sonraki devreden basamak sayısı kadar 9, devretmeyen basamak sayısı kadar 0 yazılır. Örneğin 0,333... devirli sayısı {kesir:3|9} yani sadeleşmiş haliyle {kesir:1|3} olarak işlemlere dahil edilir."
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "baslik": "Hızlı Eşdeğerlikler",
+        "metin": "Verilen 0,25 = 1/4 | 0,5 = 1/2 | 0,75 = 3/4 | 0,2 = 1/5 | 0,125 = 1/8 eşitliklerini ezbere bilmek rasyonel sayı işlemlerinde büyük hız kazandırır."
+      }
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "soru": "Aşağıdaki rasyonel sayı kavramlarını ve işlemleri karşılıklarıyla eşleştiriniz.",
-   "ciftler": [
-    [
-     "-{kesir:3|5} sayısının toplamaya göre tersi",
-     "+{kesir:3|5}"
-    ],
-    [
-     "-{kesir:3|5} sayısının çarpmaya göre tersi",
-     "-{kesir:5|3}"
-    ],
-    [
-     "(-{kesir:2|3})² ifadesinin değeri",
-     "+{kesir:4|9}"
-    ],
-    [
-     "Rasyonel sayılarda çarpma işleminin etkisiz elemanı",
-     "1"
-    ],
-    [
-     "Rasyonel sayılarda çarpma işleminin yutan elemanı",
-     "0"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
-   "cumleler": [
+  ],
+  "ornekler": [
     {
-     "metin": "Bir rasyonel sayı ile toplamaya göre tersinin toplamı daima ___ sayısına eşittir.",
-     "cevap": "sıfır"
+      "soru": "(-{kesir:3|4}) + ({kesir:5|6}) - (-{kesir:1|12}) işleminin sonucu kaçtır?",
+      "cevap": "Paydalar 12'de eşitlenir. İlk kesir 3 ile, ikinci kesir 2 ile genişletilir; iki eksi yan yana geldiği için + olur: (-{kesir:9|12}) + ({kesir:10|12}) + ({kesir:1|12}) = {kesir:-9+10+1|12} = {kesir:2|12}. Sadeleştirilirse sonuç {kesir:1|6} bulunur."
     },
     {
-     "metin": "Bir rasyonel sayı ile çarpmaya göre tersinin çarpımı daima ___ sayısına eşittir.",
-     "cevap": "bir"
+      "soru": "-1{kesir:2|3} sayısının toplamaya göre tersi A, çarpmaya göre tersi B olduğuna göre A . B çarpımı kaçtır?",
+      "cevap": "Önce tam sayılı kesri bileşik kesre çevirelim: -1{kesir:2|3} = -{kesir:5|3}. Bu sayının toplamaya göre tersi A = +{kesir:5|3}, çarpmaya göre tersi ise B = -{kesir:3|5} olur. İkisini çarparsak: ({kesir:5|3}) . (-{kesir:3|5}) = -{kesir:15|15} = -1 bulunur."
     },
     {
-     "metin": "Negatif bir rasyonel sayının karesi alındığında sonuç daima ___ işaretli olur.",
-     "cevap": "pozitif"
+      "soru": "(-{kesir:1|2})³ : (-{kesir:3|4})² işleminin sonucu kaçtır?",
+      "cevap": "Önce üslü ifadelerin değerlerini bulalım: (-{kesir:1|2})³ = -{kesir:1|8} ve (-{kesir:3|4})² = +{kesir:9|16}. Şimdi bölme işlemini yapalım: (-{kesir:1|8}) : ({kesir:9|16}) = (-{kesir:1|8}) . ({kesir:16|9}). 16 ile 8 sadeleşir (2 kalır), sonuç -{kesir:2|9} olur."
     },
     {
-     "metin": "Çok adımlı kesir işlemlerinde pay ve paydayı ayıran en belirgin çizgiye ___ kesir çizgisi denir.",
-     "cevap": "ana"
+      "soru": "Verilen 1 - {kesir:1|1 + {kesir:1|2}} çok adımlı işleminin sonucunu bulunuz.",
+      "cevap": "En alttaki basamaktan başlayalım: 1 + {kesir:1|2} = {kesir:3|2}. Şimdi 1'i {kesir:3|2}'ye bölelim: 1 : ({kesir:3|2}) = {kesir:2|3}. En son baştaki çıkarma işlemini yapalım: 1 - {kesir:2|3} = {kesir:1|3} bulunur."
     },
     {
-     "metin": "Rasyonel sayılarla bölme işleminde birinci sayı aynen yazılır, ikinci sayı ___ çevrilerek çarpılır.",
-     "cevap": "ters"
+      "soru": "Bir su deposunun önce {kesir:2|5}'si, daha sonra kalan suyun {kesir:1|3}'i kullanılıyor. Depoda geriye 24 litre su kaldığına göre deponun tamamı kaç litre su alır?",
+      "cevap": "Deponun {kesir:2|5}'si kullanılınca geriye 1 - {kesir:2|5} = {kesir:3|5}'i kalır. Kalanın {kesir:1|3}'i kullanılırsa: ({kesir:3|5}) . ({kesir:1|3}) = {kesir:1|5}'i daha kullanılmış olur. Toplam kalan: {kesir:3|5} - {kesir:1|5} = {kesir:2|5}'tir. {kesir:2|5}'si 24 litre ise tamamı 24 : ({kesir:2|5}) = 24 . ({kesir:5|2}) = 60 litredir."
+    },
+    {
+      "soru": "(1 + {kesir:1|2}) . (1 + {kesir:1|3}) . (1 + {kesir:1|4}) . (1 + {kesir:1|5}) çarpımının sonucu kaçtır?",
+      "cevap": "Doğru yanıt: 3. Parantez içleri yapılırsa (3/2) . (4/3) . (5/4) . (6/5) elde edilir. Çapraz sadeleştirmeler sonucunda geriye 6/2 = 3 kalır."
     }
-   ],
-   "fazla": [
-    "negatif",
-    "ortak"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Bir öğrenci harçlığının önce {kesir:1|4}'ü ile kitap, sonra kalan parasının {kesir:2|3}'si ile defter alıyor. Öğrencinin geriye 45 TL'si kaldığına göre başlangıçtaki harçlığı kaç TL'dir? Adım adım bulunuz.",
-   "ipuclari": [
-    "1. İpucu: Bütünden (1 tamdan) 1/4'ü çıkararak kitap aldıktan sonra kalan kesri (3/4) bulunuz.",
-    "2. İpucu: Kalan kesir (3/4) ile 2/3'ü çarparak deftere harcanan kesri ve en son geriye kalan kesri hesaplayıp 45 TL'ye eşitleyiniz."
-   ],
-   "cevap": "Kitap alındıktan sonra paranın 1 - (1/4) = 3/4'ü kalır. Defter için kalanın 2/3'si yani (3/4) . (2/3) = 2/4 = 1/2'si harcanır. Geriye (3/4) - (2/4) = 1/4'ü kalır. Paranın 1/4'ü 45 TL olduğuna göre tamamı 45 . 4 = 180 TL'dir."
-  }
- ]
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "(-{kesir:2|5}) - (-{kesir:3|10}) işleminin sonucu aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "-{kesir:1|10}",
+        "{kesir:1|10}",
+        "{kesir:1|5}",
+        "-{kesir:7|10}"
+      ],
+      "dogru": 0,
+      "aciklama": "İki eksi yan yana geldiğinde artıya dönüşür ve ilk kesir 2 ile genişletilir: (-4/10) + (3/10) = -1/10."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Verilen 0,75 rasyonel sayısının çarpmaya göre tersi ile toplamaya göre tersinin toplamı kaçtır?",
+      "secenekler": [
+        "-{kesir:7|12}",
+        "{kesir:7|12}",
+        "{kesir:25|12}",
+        "{kesir:1|12}"
+      ],
+      "dogru": 1,
+      "aciklama": "0,75 = 3/4'tür. Çarpmaya göre tersi 4/3, toplamaya göre tersi -3/4'tür. Toplamları: (4/3) + (-3/4) = (16 - 9)/12 = 7/12."
+    },
+    {
+      "tur": "coktan",
+      "soru": "(-{kesir:2|3})² - (-{kesir:1|3})³ işleminin sonucu kaçtır?",
+      "secenekler": [
+        "{kesir:11|27}",
+        "-{kesir:11|27}",
+        "{kesir:13|27}",
+        "-{kesir:13|27}"
+      ],
+      "dogru": 2,
+      "aciklama": "(-2/3)² = 4/9 = 12/27 ve (-1/3)³ = -1/27'dir. (12/27) - (-1/27) = 13/27 bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir telin ucundan {kesir:1|6}'i kesildiğinde telin orta noktası eski durumuna göre 5 cm kaymaktadır. Buna göre telin kesilmeden önceki boyu kaç santimetredir?",
+      "secenekler": [
+        "30",
+        "45",
+        "75",
+        "60"
+      ],
+      "dogru": 3,
+      "aciklama": "Orta nokta kesilen miktarın yarısı kadar kayar. Orta nokta 5 cm kaydığına göre kesilen parça 10 cm'dir. 1/6'i 10 cm olan telin tamamı 10 . 6 = 60 cm'dir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Rasyonel sayılarla toplama işleminde etkisiz (birim) eleman 0'dır.",
+          "dogru": true,
+          "aciklama": "Bir rasyonel sayının 0 ile toplamı kendisini verir."
+        },
+        {
+          "metin": "-{kesir:4|7} rasyonel sayısının çarpmaya göre tersi +{kesir:7|4} sayısıdır.",
+          "dogru": false,
+          "aciklama": "Çarpmaya göre ters alınırken işaret değişmez; doğru cevap -7/4 olmalıdır."
+        },
+        {
+          "metin": "Negatif bir rasyonel sayının küpü (3. kuvveti) daima negatiftir.",
+          "dogru": true,
+          "aciklama": "Negatif sayıların tek kuvvetleri negatiftir."
+        },
+        {
+          "metin": "Verilen 0 rasyonel sayısının çarpmaya göre tersi yine 0'dır.",
+          "dogru": false,
+          "aciklama": "0 sayısının çarpmaya göre tersi tanımsızdır (yoktur)."
+        },
+        {
+          "metin": "Bir sayıyı {kesir:1|2}'ye bölmek, o sayıyı 2 ile çarpmakla aynı sonucu verir.",
+          "dogru": true,
+          "aciklama": "Bölme işleminde ikinci kesir ters çevrilip çarpıldığı için 1/2 ters çevrilince 2 olur."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki rasyonel sayı kavramlarını ve işlemleri karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "-{kesir:3|5} sayısının toplamaya göre tersi",
+          "+{kesir:3|5}"
+        ],
+        [
+          "-{kesir:3|5} sayısının çarpmaya göre tersi",
+          "-{kesir:5|3}"
+        ],
+        [
+          "(-{kesir:2|3})² ifadesinin değeri",
+          "+{kesir:4|9}"
+        ],
+        [
+          "Rasyonel sayılarda çarpma işleminin etkisiz elemanı",
+          "1"
+        ],
+        [
+          "Rasyonel sayılarda çarpma işleminin yutan elemanı",
+          "0"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir rasyonel sayı ile toplamaya göre tersinin toplamı daima ___ sayısına eşittir.",
+          "cevap": "sıfır"
+        },
+        {
+          "metin": "Bir rasyonel sayı ile çarpmaya göre tersinin çarpımı daima ___ sayısına eşittir.",
+          "cevap": "bir"
+        },
+        {
+          "metin": "Negatif bir rasyonel sayının karesi alındığında sonuç daima ___ işaretli olur.",
+          "cevap": "pozitif"
+        },
+        {
+          "metin": "Çok adımlı kesir işlemlerinde pay ve paydayı ayıran en belirgin çizgiye ___ kesir çizgisi denir.",
+          "cevap": "ana"
+        },
+        {
+          "metin": "Rasyonel sayılarla bölme işleminde birinci sayı aynen yazılır, ikinci sayı ___ çevrilerek çarpılır.",
+          "cevap": "ters"
+        }
+      ],
+      "fazla": [
+        "negatif",
+        "ortak"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir öğrenci harçlığının önce {kesir:1|4}'ü ile kitap, sonra kalan parasının {kesir:2|3}'si ile defter alıyor. Öğrencinin geriye 45 TL'si kaldığına göre başlangıçtaki harçlığı kaç TL'dir? Adım adım bulunuz.",
+      "cevap": "Kitap alındıktan sonra paranın 1 - (1/4) = 3/4'ü kalır. Defter için kalanın 2/3'si yani (3/4) . (2/3) = 2/4 = 1/2'si harcanır. Geriye (3/4) - (2/4) = 1/4'ü kalır. Paranın 1/4'ü 45 TL olduğuna göre tamamı 45 . 4 = 180 TL'dir.",
+      "ipuclari": [
+        "1. İpucu: Bütünden (1 tamdan) 1/4'ü çıkararak kitap aldıktan sonra kalan kesri (3/4) bulunuz.",
+        "2. İpucu: Kalan kesir (3/4) ile 2/3'ü çarparak deftere harcanan kesri ve en son geriye kalan kesri hesaplayıp 45 TL'ye eşitleyiniz."
+      ]
+    }
+  ]
 }

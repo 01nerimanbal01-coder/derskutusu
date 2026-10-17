@@ -15,7 +15,7 @@ def ciz():
         (146, 'Positive Concepts (Olumlu Kavramlar)', 'freedom of speech • gender equality • tolerance • conscience'),
         (194, 'Violations & Problems (Hak İhlalleri)', 'racism • discrimination • prejudice • inequality • exploitation'),
         (242, 'Disadvantaged Groups (Dezavantajlı Gruplar)', 'refugees • disabled / physically challenged • minority groups'),
-        (290, 'Writing a Human Rights Motto (Slogan)', '"All human beings are born free and equal in dignity!"'),
+        (290, 'Writing a Human Rights Motto (Özdeyiş)', '"All human beings are born free and equal in dignity!"'),
     ]
     for y, b, a in kelimeler:
         ic.append(P.kutu(35, y, 335, 42, '#ffffff', R['orta']))

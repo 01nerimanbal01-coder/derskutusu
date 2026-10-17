@@ -20,7 +20,8 @@
       "kutu": {
         "tur": "dikkat",
         "metin": "Gece ve gündüzün oluşmasıyla mevsimlerin oluşmasını birbirine karıştırma."
-      }
+      },
+      "gorsel": "<svg viewBox=\"0 0 460 214\" role=\"img\" aria-label=\"Mevsimlerin Oluşumu kavram özeti şeması\"><rect x=\"90\" y=\"12\" width=\"280\" height=\"38\" rx=\"19\" class=\"g-mf\"/><text x=\"230\" y=\"36\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"800\" class=\"g-b\">Mevsimlerin Oluşumu</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ma\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"116\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">1. Bölüm</text><text x=\"116\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Dönme ve dolanma farklı hareketl…</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ta\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"344\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">2. Bölüm</text><text x=\"344\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Eksen eğikliği ne demektir?</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ya\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"116\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-yf\">3. Bölüm</text><text x=\"116\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Işın açısı, alan ve enerji</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-oa\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"344\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-of\">4. Bölüm</text><text x=\"344\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Yarım kürelerde karşıt mevsimler</text></svg>"
     },
     {
       "baslik": "Eksen eğikliği ne demektir?",
@@ -95,7 +96,7 @@
       "cevap": "Kış beklenir. Eksen eğikliği nedeniyle yarım küreler aynı anda Güneş ışınlarını farklı açılarla alır."
     },
     {
-      "soru": "21 Aralık günü Türkiye’de yaz başladığını belirten takvim kartını düzeltiniz.",
+      "soru": "Tarihî 21 Aralık günü Türkiye’de yaz başladığını belirten takvim kartını düzeltiniz.",
       "cevap": "Türkiye kuzey yarım kürededir; 21 Aralık kış başlangıcıdır. Bu tarihte kuzey yarım kürede en uzun gece yaşanır."
     },
     {
@@ -112,12 +113,12 @@
       "tur": "coktan",
       "soru": "Bir deneyde ışık enerjisi sabit tutulup aydınlanan alan büyütülüyor. Birim yüzeye düşen enerji nasıl değişir?",
       "secenekler": [
-        "Artar; enerji yayıldığı alanla birlikte büyür.",
         "Azalır; aynı enerji daha geniş alana dağılır.",
+        "Artar; enerji yayıldığı alanla birlikte büyür.",
         "Değişmez; demetteki toplam enerji aynı kalır.",
         "Belirlenemez; ışınların düşme açısı verilmemiştir."
       ],
-      "dogru": 1,
+      "dogru": 0,
       "aciklama": "B. Toplam ışık enerjisi sabittir. Bu enerji daha geniş alana dağıldığında birim yüzeye düşen enerji azalır. Toplam enerjinin değişmemesi, birim yüzeye düşen enerjinin de aynı kaldığı anlamına gelmez. Enerji ve alanla ilgili verilen bilgiler bu karşılaştırma için yeterlidir."
     },
     {
@@ -125,28 +126,40 @@
       "soru": "Bir bilgi kartında “Kuzey yarım kürede en uzun gündüz; güney yarım kürede kış başlangıcı” yazıyor. Hangi tarih anlatılır?",
       "secenekler": [
         "21 Mart",
-        "23 Eylül",
+        "21 Haziran",
         "21 Aralık",
-        "21 Haziran"
+        "23 Eylül"
       ],
-      "dogru": 3,
+      "dogru": 1,
       "aciklama": "21 Haziran kuzeyde yaz, güneyde kış başlangıcıdır."
     },
     {
       "tur": "coktan",
       "soru": "Mevsimleri açıklayan bir modele hangi iki özellik birlikte eklenmelidir?",
       "secenekler": [
-        "Eksen eğikliği ve Güneş çevresinde dolanma",
-        "Kendi ekseninde dönme ve Güneş çevresinde dolanma",
         "Eksen eğikliği ve Güneş’e uzaklık değişimi",
+        "Kendi ekseninde dönme ve Güneş çevresinde dolanma",
+        "Eksen eğikliği ve Güneş çevresinde dolanma",
         "Küresel şekil ve kendi ekseninde dönme"
       ],
-      "dogru": 0,
+      "dogru": 2,
       "aciklama": "A. Eksen eğikliği ile Güneş çevresindeki dolanma, yıl boyunca ışınların düşme açısının değişmesini açıklar. Dönme ve dolanmayı seçmek eksen eğikliğini dışarıda bırakır. Güneş’e uzaklık değişimi mevsimlerin nedeni değildir. Küresel şekil ile günlük dönme de yıllık mevsim döngüsünü açıklamaz."
     },
     {
+      "tur": "coktan",
+      "soru": "‘Yarım kürelerde karşıt mevsimler’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "“Güneş’e yaklaştığımız için her yerde yaz olur.” çıkarımı doğru değildir."
+      ],
+      "dogru": 3,
+      "aciklama": "Yarım kürelerde karşıt mevsimler bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
       "tur": "dy",
-      "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
           "metin": "Türkiye güney yarım kürededir.",
@@ -159,7 +172,7 @@
           "aciklama": "Bu durumda birim yüzeye daha çok enerji düşer."
         },
         {
-          "metin": "21 Mart ve 23 Eylül’de öğle ışınları Ekvator’a dik gelir.",
+          "metin": "Tarihî 21 Mart ve 23 Eylül’de öğle ışınları Ekvator’a dik gelir.",
           "dogru": true,
           "aciklama": "Bu tarihler ekinokstur."
         },
@@ -172,7 +185,7 @@
     },
     {
       "tur": "eslestir",
-      "yonerge": "İlişkili kavram ve açıklamaları eşleştiriniz.",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
           "21 Haziran",
@@ -194,7 +207,7 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
           "metin": "Dünya’yı kuzey ve güney yarım kürelere ayıran hayalî çizgi ___ olarak adlandırılır.",
@@ -210,26 +223,18 @@
         }
       ],
       "fazla": [
-        "dönence"
+        "dönence",
+        "varsayım"
       ]
     },
     {
       "tur": "ogretici",
       "soru": "Bir yüzeyin daha çok ısınmasını “Üzerine daha fazla ışın çizilmiş.” diye açıklamak yeterli midir?",
+      "cevap": "Modelde eşit ışık enerjisinin hangi alana dağıldığı incelenmelidir. Daha dar alana dağılan enerji, birim yüzeye daha fazla enerji aktarır.",
       "ipuclari": [
         "Şemadaki ok sayısı her zaman enerji ölçüsü değildir.",
         "Işın açısına ve enerjinin yayıldığı alana bak."
-      ],
-      "cevap": "Modelde eşit ışık enerjisinin hangi alana dağıldığı incelenmelidir. Daha dar alana dağılan enerji, birim yüzeye daha fazla enerji aktarır."
-    },
-    {
-      "tur": "ogretici",
-      "soru": "Türkiye’de 23 Eylül’de başlayan mevsimle aynı tarihte güney yarım kürede başlayan mevsim neden farklıdır?",
-      "ipuclari": [
-        "Türkiye’nin hangi yarım kürede olduğunu belirle.",
-        "İki yarım kürenin mevsimlerinin karşıtlığını kullan."
-      ],
-      "cevap": "Türkiye’de sonbahar, güney yarım kürede ilkbahar başlar. Eksen eğikliği ve dolanma hareketi, iki yarım kürenin yıl içindeki ışın alma koşullarını farklılaştırır."
+      ]
     }
   ],
   "ozet": [

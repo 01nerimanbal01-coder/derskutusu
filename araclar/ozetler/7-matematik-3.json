@@ -1,250 +1,254 @@
 {
- "sinif": 7,
- "ders": "matematik",
- "hafta": 3,
- "tarih": "28 Eylül-2 Ekim 2026",
- "yayin_tarihi": "2026-10-12",
- "unite": "Sayılar ve Nicelikler (1)",
- "konu": "Rasyonel Sayılar ve Farklı Temsilleri",
- "ciktilar": [
-  "MAT.7.1.2. Gerçek yaşam durumlarında rasyonel sayıların ondalık gösterimlerini yansıtabilme"
- ],
- "giris": "Geçen hafta rasyonel sayıları kesirle yazmayı, sayı doğrusunda yerleştirmeyi ve aynı sayının farklı kesirlerle gösterilebildiğini öğrendin. Bu hafta aynı sayıları bölme işlemiyle ondalık gösterime çevirecek, sonucun sonlu mu devirli mi çıkacağını paydaya bakarak kestirmeyi öğreneceksin.",
- "bolumler": [
-  {
-   "baslik": "Payı paydaya bölerek ondalık gösterim bulmak",
-   "metin": [
-    "Kesir çizgisi bölme işareti gibi okunur: {kesir:a|b} sayısı, a’nın b’ye bölümüdür. Bu yüzden bir rasyonel sayının ondalık gösterimini bulmak için payı paydaya bölersin. Pay paydadan küçükse bölümün tam kısmı 0 olur; bölüme virgül koyar, kalanın yanına sıfır ekleyerek bölmeyi sürdürürsün.",
-    "Paydası 5 olan {kesir:1|5} sayısında 10 ÷ 5 = 2 bulunur ve kalan 0 olur; bölme burada biter, sonuç 0,2 çıkar. Paydası 4 olan {kesir:1|4} sayısında ise 10 ÷ 4 işlemi 2 verir ve kalan 2 olur; sonra 20 ÷ 4 = 5 bulunur. Sonuç 0,25’tir.",
-    "Paydası 3 olan {kesir:1|3} sayısında durum farklıdır. Önce 10 ÷ 3 işlemi 3 verir ve kalan 1 olur; kalanın yanına sıfır eklediğinde yine 10 ÷ 3 işlemiyle karşılaşırsın. Bölme hiç bitmez ve bölümde 3 rakamı tekrar edip durur: 0,333…"
-   ],
-   "kutu": {
-    "tur": "bilgi",
-    "metin": "Kalan 0 olunca bölme biter. Kalan 0 olmuyorsa bölme sürer ve bölümdeki rakamlar tekrar eder."
-   },
-   "gorsel": "<svg viewBox=\"0 0 440 246\" role=\"img\" aria-label=\"Payı paydaya bölme: 1 bölü 5 için 10 bölü 5 eşittir 2, kalan 0; bölme biter ve sonuç 0,2 sonlu ondalık gösterimdir. 1 bölü 3 için 10 bölü 3 eşittir 3, kalan 1; yine 10 bölü 3 gelir, kalan hep 1 kalır, bölme sürer ve sonuç 0,333… devirli ondalık gösterimdir.\"><defs><marker id=\"okW3a\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-mf\"/></marker><marker id=\"okW3b\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-tf\"/></marker></defs><rect x=\"8\" y=\"8\" width=\"206\" height=\"230\" rx=\"14\" class=\"g-ma\"/><rect x=\"8\" y=\"8\" width=\"206\" height=\"230\" rx=\"14\" class=\"g-ms\" stroke-width=\"2\"/><rect x=\"16\" y=\"18\" width=\"190\" height=\"24\" rx=\"12\" class=\"g-z\"/><rect x=\"16\" y=\"18\" width=\"190\" height=\"24\" rx=\"12\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"111\" y=\"34.5\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-mf\">Sonlu ondalık gösterim</text><text x=\"66\" y=\"65.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" class=\"g-mf\">1</text><line x1=\"58.0\" y1=\"68\" x2=\"74.0\" y2=\"68\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"66\" y=\"85.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" class=\"g-mf\">5</text><text x=\"88\" y=\"74\" font-size=\"16\" font-weight=\"700\" class=\"g-y\">= 1 ÷ 5</text><rect x=\"22\" y=\"98\" width=\"178\" height=\"26\" rx=\"8\" class=\"g-z\"/><rect x=\"22\" y=\"98\" width=\"178\" height=\"26\" rx=\"8\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"111\" y=\"116\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" class=\"g-mf\">10 ÷ 5 = 2, kalan 0</text><line x1=\"111\" y1=\"128\" x2=\"111\" y2=\"152\" class=\"g-ms\" stroke-width=\"2.2\" marker-end=\"url(#okW3a)\"/><text x=\"111\" y=\"178\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Kalan 0: bölme biter</text><rect x=\"59\" y=\"192\" width=\"104\" height=\"32\" rx=\"16\" class=\"g-z\"/><rect x=\"59\" y=\"192\" width=\"104\" height=\"32\" rx=\"16\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"111\" y=\"214\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-mf\">0,2</text><rect x=\"226\" y=\"8\" width=\"206\" height=\"230\" rx=\"14\" class=\"g-ta\"/><rect x=\"226\" y=\"8\" width=\"206\" height=\"230\" rx=\"14\" class=\"g-ts\" stroke-width=\"2\"/><rect x=\"234\" y=\"18\" width=\"190\" height=\"24\" rx=\"12\" class=\"g-z\"/><rect x=\"234\" y=\"18\" width=\"190\" height=\"24\" rx=\"12\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"329\" y=\"34.5\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-tf\">Devirli ondalık gösterim</text><text x=\"284\" y=\"65.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" class=\"g-tf\">1</text><line x1=\"276.0\" y1=\"68\" x2=\"292.0\" y2=\"68\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"284\" y=\"85.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" class=\"g-tf\">3</text><text x=\"306\" y=\"74\" font-size=\"16\" font-weight=\"700\" class=\"g-y\">= 1 ÷ 3</text><rect x=\"240\" y=\"98\" width=\"178\" height=\"26\" rx=\"8\" class=\"g-z\"/><rect x=\"240\" y=\"98\" width=\"178\" height=\"26\" rx=\"8\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"329\" y=\"116\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" class=\"g-tf\">10 ÷ 3 = 3, kalan 1</text><rect x=\"240\" y=\"130\" width=\"178\" height=\"26\" rx=\"8\" class=\"g-z\"/><rect x=\"240\" y=\"130\" width=\"178\" height=\"26\" rx=\"8\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"329\" y=\"148\" text-anchor=\"middle\" font-size=\"14\" class=\"g-y\">yine 10 ÷ 3, kalan 1</text><text x=\"329\" y=\"178\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" class=\"g-tf\">Kalan hep 1: bölme sürer</text><rect x=\"277\" y=\"192\" width=\"104\" height=\"32\" rx=\"16\" class=\"g-z\"/><rect x=\"277\" y=\"192\" width=\"104\" height=\"32\" rx=\"16\" class=\"g-ts\" stroke-width=\"2\"/><text x=\"329\" y=\"214\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">0,333…</text></svg>"
-  },
-  {
-   "baslik": "Sonlu ve devirli ondalık gösterim",
-   "metin": [
-    "Bölme, kalan 0 olunca bitiyorsa elde edilen ondalık gösterime sonlu ondalık gösterim denir; 0,2 ve 0,25 buna örnektir. Bölme bitmiyor ve rakamlar belli bir düzenle tekrar ediyorsa elde edilen gösterime devirli ondalık gösterim denir; 0,333… ve 0,2727… buna örnektir.",
-    "Tekrar eden rakam ya da rakam grubuna devreden kısım denir ve üzerine çizgi çekilerek gösterilir. Örneğin 0,333… sayısı 0,3̅ biçiminde, 0,2727… sayısı 0,2̅7̅ biçiminde yazılır. Çizginin altındaki rakamlar sonsuza kadar tekrar eder.",
-    "Tekrar, virgülden hemen sonra başlamak zorunda değildir. Örneğin {kesir:5|6} = 0,8333… sayısında 8 yalnız bir kez yazılır, ondan sonra yalnız 3 tekrar eder; bu yüzden gösterim 0,83̅ olur. Tekrara girmeyen 8’e devretmeyen kısım denir."
-   ],
-   "kutu": {
-    "tur": "tanim",
-    "baslik": "Devir işareti",
-    "metin": "Devreden rakamların üzerine çekilen çizgidir. Çizginin altındaki rakamlar tekrar eder; çizgi dışında kalan rakamlar devretmeyen kısmı oluşturur."
-   },
-   "gorsel": "<svg viewBox=\"0 0 440 250\" role=\"img\" aria-label=\"0,333… sayısı 0,3 üzerinde devir işaretiyle, 0,2727… sayısı 0,27 üzerinde devir işaretiyle yazılır. 0,8333… sayısında 8 devretmeyen rakamdır, 3 devreden rakamdır ve devir işareti yalnız 3’ün üzerine çizilir.\"><defs><marker id=\"okW3d\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-s\"/></marker></defs><text x=\"14\" y=\"17\" font-size=\"12.5\" font-weight=\"700\" class=\"g-s\">Açık yazılış</text><text x=\"236\" y=\"17\" font-size=\"12.5\" font-weight=\"700\" class=\"g-s\">Devir işaretiyle</text><rect x=\"15\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-z\"/><rect x=\"15\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-c\" stroke-width=\"1.8\"/><text x=\"27\" y=\"61\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-y\">0</text><text x=\"47\" y=\"61\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"700\" class=\"g-y\">,</text><rect x=\"55\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"55\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"67\" y=\"61\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">3</text><rect x=\"81\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"81\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"93\" y=\"61\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">3</text><rect x=\"107\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"107\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"119\" y=\"61\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">3</text><text x=\"145\" y=\"61\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"700\" class=\"g-s\">…</text><line x1=\"196\" y1=\"53\" x2=\"216\" y2=\"53\" class=\"g-c\" stroke-width=\"2\" marker-end=\"url(#okW3d)\"/><rect x=\"237\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-z\"/><rect x=\"237\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-c\" stroke-width=\"1.8\"/><text x=\"249\" y=\"61\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-y\">0</text><text x=\"269\" y=\"61\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"700\" class=\"g-y\">,</text><rect x=\"277\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"277\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"289\" y=\"61\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">3</text><line x1=\"279\" y1=\"29\" x2=\"299\" y2=\"29\" class=\"g-ts\" stroke-width=\"3\" stroke-linecap=\"round\"/><rect x=\"15\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-z\"/><rect x=\"15\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-c\" stroke-width=\"1.8\"/><text x=\"27\" y=\"123\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-y\">0</text><text x=\"47\" y=\"123\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"700\" class=\"g-y\">,</text><rect x=\"55\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"55\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"67\" y=\"123\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">2</text><rect x=\"81\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"81\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"93\" y=\"123\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">7</text><rect x=\"107\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"107\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"119\" y=\"123\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">2</text><rect x=\"133\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"133\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"145\" y=\"123\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">7</text><text x=\"171\" y=\"123\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"700\" class=\"g-s\">…</text><line x1=\"196\" y1=\"115\" x2=\"216\" y2=\"115\" class=\"g-c\" stroke-width=\"2\" marker-end=\"url(#okW3d)\"/><rect x=\"237\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-z\"/><rect x=\"237\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-c\" stroke-width=\"1.8\"/><text x=\"249\" y=\"123\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-y\">0</text><text x=\"269\" y=\"123\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"700\" class=\"g-y\">,</text><rect x=\"277\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"277\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"289\" y=\"123\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">2</text><rect x=\"303\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"303\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"315\" y=\"123\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">7</text><line x1=\"279\" y1=\"91\" x2=\"325\" y2=\"91\" class=\"g-ts\" stroke-width=\"3\" stroke-linecap=\"round\"/><rect x=\"15\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-z\"/><rect x=\"15\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-c\" stroke-width=\"1.8\"/><text x=\"27\" y=\"185\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-y\">0</text><text x=\"47\" y=\"185\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"700\" class=\"g-y\">,</text><rect x=\"55\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ma\"/><rect x=\"55\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"67\" y=\"185\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-mf\">8</text><rect x=\"81\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"81\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"93\" y=\"185\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">3</text><rect x=\"107\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"107\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"119\" y=\"185\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">3</text><rect x=\"133\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"133\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"145\" y=\"185\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">3</text><text x=\"171\" y=\"185\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"700\" class=\"g-s\">…</text><line x1=\"196\" y1=\"177\" x2=\"216\" y2=\"177\" class=\"g-c\" stroke-width=\"2\" marker-end=\"url(#okW3d)\"/><rect x=\"237\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-z\"/><rect x=\"237\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-c\" stroke-width=\"1.8\"/><text x=\"249\" y=\"185\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-y\">0</text><text x=\"269\" y=\"185\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"700\" class=\"g-y\">,</text><rect x=\"277\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ma\"/><rect x=\"277\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"289\" y=\"185\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-mf\">8</text><rect x=\"303\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"303\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"315\" y=\"185\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">3</text><line x1=\"305\" y1=\"153\" x2=\"325\" y2=\"153\" class=\"g-ts\" stroke-width=\"3\" stroke-linecap=\"round\"/><rect x=\"14\" y=\"224\" width=\"16\" height=\"16\" rx=\"4\" class=\"g-ta\"/><rect x=\"14\" y=\"224\" width=\"16\" height=\"16\" rx=\"4\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"38\" y=\"237\" font-size=\"12.5\" class=\"g-y\">devreden rakam</text><rect x=\"166\" y=\"224\" width=\"16\" height=\"16\" rx=\"4\" class=\"g-ma\"/><rect x=\"166\" y=\"224\" width=\"16\" height=\"16\" rx=\"4\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"190\" y=\"237\" font-size=\"12.5\" class=\"g-y\">devretmeyen rakam</text></svg>"
-  },
-  {
-   "baslik": "Paydanın asal çarpanları neyi belirler?",
-   "metin": [
-    "Bir rasyonel sayının ondalık gösteriminin sonlu mu devirli mi olacağını bölme yapmadan da kestirebilirsin; bunun için paydaya bakarsın. Önce sayıyı en sade hâle getirir, sonra paydayı asal çarpanlarına ayırırsın.",
-    "Payda en sade hâldeyken asal çarpanlarının hepsi 2 ya da 5 ise ondalık gösterim sonludur. Paydası 20 olan {kesir:3|20} sayısında 20 = 2 · 2 · 5 olduğundan sonuç 0,15’tir. Paydada 2 ile 5’ten farklı bir asal çarpan kalıyorsa ondalık gösterim devirlidir; 3 ve 7 bu çarpanlara örnektir. Paydası 6 olan {kesir:5|6} sayısında 6 = 2 · 3 olduğundan sonuç 0,8333… çıkar.",
-    "Sadeleştirmeyi atlama. Örneğin {kesir:72|15} sayısında payda 15 = 3 · 5 olduğundan devirli bekleyebilirsin; oysa sayı {kesir:24|5} biçiminde sadeleşir, paydada yalnız 5 kalır ve gösterim sonludur: 4,8. Paydası aynı olan {kesir:92|15} ise sadeleşmez; paydasında 3 kaldığı için gösterimi devirlidir: 6,1333…"
-   ],
-   "kutu": {
-    "tur": "kural",
-    "metin": "Paydayı en sade hâlde asal çarpanlarına ayır: çarpanların hepsi 2 ya da 5 ise gösterim sonlu, bunlardan farklı bir çarpan varsa gösterim devirlidir."
-   },
-   "gorsel": "<svg viewBox=\"0 0 440 254\" role=\"img\" aria-label=\"En sade hâlde paydada yalnız 2 ve 5 asal çarpanı varsa ondalık gösterim sonludur: 72 bölü 15 sadeleşince 24 bölü 5 olur ve 4,8 bulunur; 3 bölü 20 için 20 eşittir 2 çarpı 2 çarpı 5 ve sonuç 0,15’tir. Paydada başka bir asal çarpan varsa devirlidir: 92 bölü 15 için 15 eşittir 3 çarpı 5 ve sonuç 6,1333…; 5 bölü 6 için 6 eşittir 2 çarpı 3 ve sonuç 0,8333…’tür.\"><rect x=\"8\" y=\"8\" width=\"206\" height=\"46\" rx=\"12\" class=\"g-ma\"/><rect x=\"8\" y=\"8\" width=\"206\" height=\"46\" rx=\"12\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"111\" y=\"28\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">En sade hâlde paydada</text><text x=\"111\" y=\"46\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">yalnız 2 ve 5 varsa: sonlu</text><rect x=\"226\" y=\"8\" width=\"206\" height=\"46\" rx=\"12\" class=\"g-ta\"/><rect x=\"226\" y=\"8\" width=\"206\" height=\"46\" rx=\"12\" class=\"g-ts\" stroke-width=\"2\"/><text x=\"329\" y=\"28\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">En sade hâlde paydada</text><text x=\"329\" y=\"46\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">başka çarpan varsa: devirli</text><rect x=\"8\" y=\"62\" width=\"206\" height=\"88\" rx=\"12\" class=\"g-ma\"/><rect x=\"8\" y=\"62\" width=\"206\" height=\"88\" rx=\"12\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"38\" y=\"95.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-mf\">72</text><line x1=\"25.7\" y1=\"98\" x2=\"50.3\" y2=\"98\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"38\" y=\"114.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-mf\">15</text><text x=\"64\" y=\"103\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">=</text><text x=\"94\" y=\"95.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-mf\">24</text><line x1=\"81.7\" y1=\"98\" x2=\"106.3\" y2=\"98\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"94\" y=\"114.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-mf\">5</text><text x=\"22\" y=\"138\" font-size=\"13\" class=\"g-y\">Sadeleşince payda 5</text><rect x=\"140\" y=\"82\" width=\"60\" height=\"30\" rx=\"15\" class=\"g-z\"/><rect x=\"140\" y=\"82\" width=\"60\" height=\"30\" rx=\"15\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"170\" y=\"103\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" class=\"g-mf\">4,8</text><rect x=\"8\" y=\"158\" width=\"206\" height=\"88\" rx=\"12\" class=\"g-ma\"/><rect x=\"8\" y=\"158\" width=\"206\" height=\"88\" rx=\"12\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"38\" y=\"191.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-mf\">3</text><line x1=\"25.7\" y1=\"194\" x2=\"50.3\" y2=\"194\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"38\" y=\"210.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-mf\">20</text><text x=\"22\" y=\"234\" font-size=\"13\" class=\"g-y\">Payda: 20 = 2 · 2 · 5</text><rect x=\"140\" y=\"178\" width=\"60\" height=\"30\" rx=\"15\" class=\"g-z\"/><rect x=\"140\" y=\"178\" width=\"60\" height=\"30\" rx=\"15\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"170\" y=\"199\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" class=\"g-mf\">0,15</text><rect x=\"226\" y=\"62\" width=\"206\" height=\"88\" rx=\"12\" class=\"g-ta\"/><rect x=\"226\" y=\"62\" width=\"206\" height=\"88\" rx=\"12\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"256\" y=\"95.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">92</text><line x1=\"243.7\" y1=\"98\" x2=\"268.3\" y2=\"98\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"256\" y=\"114.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">15</text><text x=\"240\" y=\"138\" font-size=\"13\" class=\"g-y\">Payda: 15 = 3 · 5</text><rect x=\"342\" y=\"82\" width=\"76\" height=\"30\" rx=\"15\" class=\"g-z\"/><rect x=\"342\" y=\"82\" width=\"76\" height=\"30\" rx=\"15\" class=\"g-ts\" stroke-width=\"2\"/><text x=\"380\" y=\"103\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" class=\"g-tf\">6,1333…</text><rect x=\"226\" y=\"158\" width=\"206\" height=\"88\" rx=\"12\" class=\"g-ta\"/><rect x=\"226\" y=\"158\" width=\"206\" height=\"88\" rx=\"12\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"256\" y=\"191.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">5</text><line x1=\"248.3\" y1=\"194\" x2=\"263.6\" y2=\"194\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"256\" y=\"210.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">6</text><text x=\"240\" y=\"234\" font-size=\"13\" class=\"g-y\">Payda: 6 = 2 · 3</text><rect x=\"342\" y=\"178\" width=\"76\" height=\"30\" rx=\"15\" class=\"g-z\"/><rect x=\"342\" y=\"178\" width=\"76\" height=\"30\" rx=\"15\" class=\"g-ts\" stroke-width=\"2\"/><text x=\"380\" y=\"199\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" class=\"g-tf\">0,8333…</text></svg>"
-  },
-  {
-   "baslik": "Paydayı 10’un kuvvetine getirmek",
-   "metin": [
-    "Paydası yalnız 2 ve 5 asal çarpanlarından oluşan bir rasyonel sayının ondalık gösterimini bölme yapmadan da bulabilirsin. Pay ve paydayı aynı sayıyla çarparak paydayı 10, 100, 1000 gibi 10’un bir kuvveti yaparsın. Payda 10 ise virgülden sonra bir, 100 ise iki, 1000 ise üç basamak olur.",
-    "Paydası 20 olan {kesir:7|20} sayısında 20 = {us:2|2} · 5’tir; eksik kalan bir 5 çarpanı için pay ve payda 5 ile çarpılır: {kesir:7|20} = {kesir:35|100} = 0,35. Paydası 8 olan {kesir:5|8} sayısında 8 = {us:2|3} olduğundan pay ve payda {us:5|3} = 125 ile çarpılır: {kesir:5|8} = {kesir:625|1000} = 0,625.",
-    "Tam sayılı kesirlerde tam kısım olduğu gibi kalır, yalnız kesirli kısım dönüştürülür. Örneğin 2 {kesir:3|4} sayısında {kesir:3|4} = {kesir:75|100} = 0,75 olduğundan sayı 2,75’tir."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "metin": "Paydadaki 2’lerin ve 5’lerin sayısını eşitle: eksik olan asal çarpanı gereken kadar pay ve paydaya çarpan olarak ekle. Payda böylece 10’un kuvveti olur."
-   },
-   "gorsel": "<svg viewBox=\"0 0 440 232\" role=\"img\" aria-label=\"Paydayı 10’un kuvvetine getirme: 7 bölü 20, pay ve payda 5 ile çarpılınca 35 bölü 100 olur ve 0,35 bulunur; 5 bölü 8, pay ve payda 125 ile çarpılınca 625 bölü 1000 olur ve 0,625 bulunur; tam sayılı kesir 2 tam 3 bölü 4, kesirli kısım 25 ile genişleyince 2 tam 75 bölü 100 olur ve 2,75 bulunur. Payda 100 iki, payda 1000 üç basamak verir.\"><defs><marker id=\"okW3c\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-tf\"/></marker></defs><text x=\"34\" y=\"41.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">7</text><line x1=\"20.5\" y1=\"44\" x2=\"47.5\" y2=\"44\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"34\" y=\"62.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">20</text><line x1=\"78\" y1=\"44\" x2=\"150\" y2=\"44\" class=\"g-ts\" stroke-width=\"2.4\" marker-end=\"url(#okW3c)\"/><text x=\"114\" y=\"31\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">5 ile çarp</text><text x=\"114\" y=\"66\" text-anchor=\"middle\" font-size=\"12\" class=\"g-s\">pay ve payda</text><text x=\"196\" y=\"41.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">35</text><line x1=\"177.2\" y1=\"44\" x2=\"214.8\" y2=\"44\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"196\" y=\"62.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">100</text><text x=\"258\" y=\"50\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"700\" class=\"g-y\">=</text><rect x=\"274\" y=\"27\" width=\"74\" height=\"34\" rx=\"17\" class=\"g-z\"/><rect x=\"274\" y=\"27\" width=\"74\" height=\"34\" rx=\"17\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"311\" y=\"50\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-mf\">0,35</text><text x=\"357\" y=\"49\" font-size=\"12\" class=\"g-s\">iki basamak</text><text x=\"34\" y=\"113.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">5</text><line x1=\"25.7\" y1=\"116\" x2=\"42.3\" y2=\"116\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"34\" y=\"134.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">8</text><line x1=\"78\" y1=\"116\" x2=\"150\" y2=\"116\" class=\"g-ts\" stroke-width=\"2.4\" marker-end=\"url(#okW3c)\"/><text x=\"114\" y=\"103\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">125 ile çarp</text><text x=\"114\" y=\"138\" text-anchor=\"middle\" font-size=\"12\" class=\"g-s\">pay ve payda</text><text x=\"196\" y=\"113.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">625</text><line x1=\"171.9\" y1=\"116\" x2=\"220.1\" y2=\"116\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"196\" y=\"134.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">1000</text><text x=\"258\" y=\"122\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"700\" class=\"g-y\">=</text><rect x=\"274\" y=\"99\" width=\"74\" height=\"34\" rx=\"17\" class=\"g-z\"/><rect x=\"274\" y=\"99\" width=\"74\" height=\"34\" rx=\"17\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"311\" y=\"122\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-mf\">0,625</text><text x=\"357\" y=\"121\" font-size=\"12\" class=\"g-s\">üç basamak</text><text x=\"18\" y=\"194\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"700\" class=\"g-mf\">2</text><text x=\"44\" y=\"185.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">3</text><line x1=\"35.7\" y1=\"188\" x2=\"52.3\" y2=\"188\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"44\" y=\"206.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">4</text><line x1=\"78\" y1=\"188\" x2=\"150\" y2=\"188\" class=\"g-ts\" stroke-width=\"2.4\" marker-end=\"url(#okW3c)\"/><text x=\"114\" y=\"175\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">25 ile çarp</text><text x=\"114\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" class=\"g-s\">pay ve payda</text><text x=\"178\" y=\"194\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"700\" class=\"g-mf\">2</text><text x=\"210\" y=\"185.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">75</text><line x1=\"191.2\" y1=\"188\" x2=\"228.8\" y2=\"188\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"210\" y=\"206.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">100</text><text x=\"258\" y=\"194\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"700\" class=\"g-y\">=</text><rect x=\"274\" y=\"171\" width=\"74\" height=\"34\" rx=\"17\" class=\"g-z\"/><rect x=\"274\" y=\"171\" width=\"74\" height=\"34\" rx=\"17\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"311\" y=\"194\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-mf\">2,75</text><text x=\"357\" y=\"193\" font-size=\"12\" class=\"g-s\">iki basamak</text></svg>"
-  },
-  {
-   "baslik": "Sonlu ondalık gösterimden rasyonel sayıya",
-   "metin": [
-    "Sonlu bir ondalık gösterimin kesir karşılığını, payda olarak 10, 100, 1000 gibi sayılar kullanarak yazabilirsin. Virgülü yok sayarak okuduğun sayıyı paya yazarsın. Paydaya ise virgülden sonra kaç basamak varsa o kadar sıfırı bulunan 10’un kuvvetini yazarsın.",
-    "Örneğin 0,6 sayısında virgülden sonra bir basamak vardır; sayı {kesir:6|10} olur ve 2 ile sadeleşince {kesir:3|5} bulunur. Aynı yolla 1,32 sayısında iki basamak olduğundan sayı {kesir:132|100} olur ve 4 ile sadeleşince {kesir:33|25} elde edilir.",
-    "Sayı negatifse eksi işareti kesrin önünde kalır: −0,08 = −{kesir:8|100} = −{kesir:2|25}. Bulduğun kesri payı paydaya bölerek yeniden ondalık gösterime çevirir ve sonucu kontrol edersin."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "metin": "Virgülden sonra bir basamak varsa payda 10, iki basamak varsa 100, üç basamak varsa 1000 olur. Kesri yazdıktan sonra sadeleştirmeyi unutma."
-   }
-  },
-  {
-   "baslik": "Her rasyonel sayı ondalık biçimde yazılabilir",
-   "metin": [
-    "Payı paydaya bölme işlemi her rasyonel sayıyla yapılabilir ve sonuç ya sonlu ya da devirli bir ondalık gösterim olur. Demek ki ondalık biçimde yazılamayan bir rasyonel sayı yoktur; kimi sayılar sonlu, kimi sayılar devirli bir gösterim verir.",
-    "Bu gösterimler ölçümlerde de karşına çıkar. El sabununun kütlesi {kesir:185|2} g ise bu kütle 92,5 g olarak yazılır; madenî paranın kalınlığı {kesir:1|4} cm ise 0,25 cm olur. İlk ikisi sonlu ondalık gösterimdir. Bir küp şekerin kütlesi {kesir:16|6} g ise sayı önce {kesir:8|3} biçiminde sadeleşir ve ondalık gösterimi 2,6̅ olur; bu devirli bir gösterimdir.",
-    "Kesir ve ondalık gösterim aynı sayının iki farklı yazılışıdır; ikisi de sayı doğrusunda tek bir noktayı gösterir. Ondalık gösterimi devirli olan sayılar da rasyonel sayıdır; bunları kesre çevirmeyi gelecek hafta öğreneceksin."
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "metin": "Hangi rasyonel sayıyı seçersen seç, payı paydaya bölerek onu ondalık biçimde yazabilirsin; sonuç sonlu ya da devirli çıkar."
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Bir ipin uzunluğu {kesir:7|8} metredir. Bu uzunluğu ondalık gösterimle yaz.",
-   "cevap": "Payı paydaya bölersin: 7 ÷ 8 işleminde bölümün tam kısmı 0 olur. Virgülden sonra 70 ÷ 8 = 8 kalan 6, 60 ÷ 8 = 7 kalan 4 ve 40 ÷ 8 = 5 kalan 0 bulunur. Kalan 0 olduğu için gösterim sonludur: 0,875 m."
-  },
-  {
-   "soru": "Bir çıtanın uzunluğu {kesir:7|12} metredir. Bu uzunluğu ondalık gösterimle yaz; devreden ve devretmeyen rakamları belirt.",
-   "cevap": "Bölmede virgülden sonra 70 ÷ 12 = 5 kalan 10, 100 ÷ 12 = 8 kalan 4 ve 40 ÷ 12 = 3 kalan 4 bulunur. Kalan 4 yinelendiği için 3 rakamı sürekli tekrar eder: 0,58333… = 0,583̅. Devretmeyen rakamlar 5 ve 8, devreden rakam 3’tür."
-  },
-  {
-   "soru": "Şu sayılardan hangilerinin ondalık gösterimi sonludur: {kesir:1|12}, {kesir:1|14}, {kesir:1|16} ve {kesir:1|20}?",
-   "cevap": "Paydaları asal çarpanlarına ayır: 12 = 2 · 2 · 3, 14 = 2 · 7, 16 = 2 · 2 · 2 · 2 ve 20 = 2 · 2 · 5. Yalnız 16 ile 20’nin paydasında 2 ve 5 dışında asal çarpan yoktur. Bu yüzden {kesir:1|16} ile {kesir:1|20} sonlu, {kesir:1|12} ile {kesir:1|14} devirlidir."
-  },
-  {
-   "soru": "Paydayı 10’un kuvvetine getirerek {kesir:27|40} sayısının ondalık gösterimini bul.",
-   "cevap": "Payda 40 = {us:2|3} · 5’tir. Paydayı 10’un kuvveti yapmak için 5 çarpanından iki tane daha gerekir; pay ve payda 25 ile çarpılır. Sonuç: {kesir:27|40} = {kesir:675|1000} = 0,675."
-  },
-  {
-   "soru": "Bir kuyunun deniz seviyesine göre konumu −2,45 m olarak ölçülmüştür. Bu sayıyı payı ve paydası tam sayı olan en sade kesirle yaz.",
-   "cevap": "Virgülden sonra iki basamak olduğundan payda 100 olur: −2,45 = −{kesir:245|100}. Pay ve payda 5 ile sadeleşince −{kesir:49|20} bulunur."
-  },
-  {
-   "soru": "Paydası 30 olan {kesir:a|30} rasyonel sayısının ondalık gösterimi sonludur. a, 1’den 30’a kadar (30 dâhil) doğal sayılardan biri olduğuna göre a kaç farklı değer alabilir?",
-   "cevap": "Payda 30 = 2 · 3 · 5 olduğundan paydada 3 çarpanı var. Gösterimin sonlu olması için bu 3’ün sadeleşmesi gerekir; bu da a’nın 3’ün katı olmasıyla olur. Bu koşula uyan sayılar 3, 6, 9, …, 30’dur ve 10 tanedir; yani a, 10 farklı değer alabilir."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "Aşağıdaki rasyonel sayılardan hangisinin ondalık gösterimi sonludur?",
-   "secenekler": [
-    "{kesir:9|15}",
-    "{kesir:7|12}",
-    "{kesir:4|15}",
-    "{kesir:5|21}"
-   ],
-   "dogru": 0,
-   "aciklama": "Paydası 15 olan {kesir:9|15} sayısı {kesir:3|5} biçiminde sadeleşir; paydada yalnız 5 kaldığı için gösterim sonludur (0,6). Öbürlerinin paydalarında 3 çarpanı kalır."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Bir öğrenci {kesir:3|8} sayısının ondalık gösterimini bulmak için bölme yapıp 2,666… sonucuna ulaşmıştır. Bu öğrencinin hatası aşağıdakilerden hangisidir?",
-   "secenekler": [
-    "Paydayı 10’un kuvvetine çevirmeden bölmüştür.",
-    "Sayıyı en sade hâle getirmeden bölme yapmıştır.",
-    "Bölmede kalanın yanına sıfır eklemeyi unutmuştur.",
-    "Payı paydaya değil, paydayı paya bölmüştür."
-   ],
-   "dogru": 3,
-   "aciklama": "Ondalık gösterim için payı paydaya bölmek gerekir: 3 ÷ 8 = 0,375. Öğrencinin bulduğu 2,666… sonucu 8 ÷ 3 işleminden gelir; yani öğrenci işlemi ters kurmuştur."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Tam sayılı kesir olarak yazılmış 4 {kesir:3|20} sayısının ondalık gösterimi aşağıdakilerden hangisidir?",
-   "secenekler": [
-    "0,15",
-    "0,35",
-    "4,15",
-    "4,3"
-   ],
-   "dogru": 2,
-   "aciklama": "Kesirli kısımda {kesir:3|20} = {kesir:15|100} = 0,15’tir; tam kısım olduğu gibi kalır ve sayı 4,15 olur."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin her birine doğru ya da yanlış de; yanlış olanların açıklamasını oku.",
-   "ifadeler": [
+  "sinif": 7,
+  "ders": "matematik",
+  "hafta": 3,
+  "tarih": "28 Eylül-2 Ekim 2026",
+  "yayin_tarihi": "2026-10-12",
+  "unite": "Sayılar ve Nicelikler (1)",
+  "konu": "Rasyonel Sayılar ve Farklı Temsilleri",
+  "ciktilar": [
+    "MAT.7.1.2. Gerçek yaşam durumlarında rasyonel sayıların ondalık gösterimlerini yansıtabilme"
+  ],
+  "giris": "Geçen hafta rasyonel sayıları kesirle yazmayı, sayı doğrusunda yerleştirmeyi ve aynı sayının farklı kesirlerle gösterilebildiğini öğrendin. Bu hafta aynı sayıları bölme işlemiyle ondalık gösterime çevirecek, sonucun sonlu mu devirli mi çıkacağını paydaya bakarak kestirmeyi öğreneceksin.",
+  "bolumler": [
     {
-     "metin": "Paydası 7 olan {kesir:3|7} sayısının ondalık gösterimi devirlidir.",
-     "dogru": true,
-     "aciklama": "Paydadaki 7, 2 ve 5 dışında bir asal çarpandır; bölme bitmez ve rakamlar tekrar eder."
+      "baslik": "Payı paydaya bölerek ondalık gösterim bulmak",
+      "metin": [
+        "Kesir çizgisi bölme işareti gibi okunur: {kesir:a|b} sayısı, a’nın b’ye bölümüdür. Bu yüzden bir rasyonel sayının ondalık gösterimini bulmak için payı paydaya bölersin. Pay paydadan küçükse bölümün tam kısmı 0 olur; bölüme virgül koyar, kalanın yanına sıfır ekleyerek bölmeyi sürdürürsün.",
+        "Paydası 5 olan {kesir:1|5} sayısında 10 ÷ 5 = 2 bulunur ve kalan 0 olur; bölme burada biter, sonuç 0,2 çıkar. Paydası 4 olan {kesir:1|4} sayısında ise 10 ÷ 4 işlemi 2 verir ve kalan 2 olur; sonra 20 ÷ 4 = 5 bulunur. Sonuç 0,25’tir.",
+        "Paydası 3 olan {kesir:1|3} sayısında durum farklıdır. Önce 10 ÷ 3 işlemi 3 verir ve kalan 1 olur; kalanın yanına sıfır eklediğinde yine 10 ÷ 3 işlemiyle karşılaşırsın. Bölme hiç bitmez ve bölümde 3 rakamı tekrar edip durur: 0,333…"
+      ],
+      "kutu": {
+        "tur": "bilgi",
+        "metin": "Kalan 0 olunca bölme biter. Kalan 0 olmuyorsa bölme sürer ve bölümdeki rakamlar tekrar eder."
+      },
+      "gorsel": "<svg viewBox=\"0 0 440 246\" role=\"img\" aria-label=\"Payı paydaya bölme: 1 bölü 5 için 10 bölü 5 eşittir 2, kalan 0; bölme biter ve sonuç 0,2 sonlu ondalık gösterimdir. 1 bölü 3 için 10 bölü 3 eşittir 3, kalan 1; yine 10 bölü 3 gelir, kalan hep 1 kalır, bölme sürer ve sonuç 0,333… devirli ondalık gösterimdir.\"><defs><marker id=\"okW3a\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-mf\"/></marker><marker id=\"okW3b\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-tf\"/></marker></defs><rect x=\"8\" y=\"8\" width=\"206\" height=\"230\" rx=\"14\" class=\"g-ma\"/><rect x=\"8\" y=\"8\" width=\"206\" height=\"230\" rx=\"14\" class=\"g-ms\" stroke-width=\"2\"/><rect x=\"16\" y=\"18\" width=\"190\" height=\"24\" rx=\"12\" class=\"g-z\"/><rect x=\"16\" y=\"18\" width=\"190\" height=\"24\" rx=\"12\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"111\" y=\"34.5\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-mf\">Sonlu ondalık gösterim</text><text x=\"66\" y=\"65.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" class=\"g-mf\">1</text><line x1=\"58.0\" y1=\"68\" x2=\"74.0\" y2=\"68\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"66\" y=\"85.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" class=\"g-mf\">5</text><text x=\"88\" y=\"74\" font-size=\"16\" font-weight=\"700\" class=\"g-y\">= 1 ÷ 5</text><rect x=\"22\" y=\"98\" width=\"178\" height=\"26\" rx=\"8\" class=\"g-z\"/><rect x=\"22\" y=\"98\" width=\"178\" height=\"26\" rx=\"8\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"111\" y=\"116\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" class=\"g-mf\">10 ÷ 5 = 2, kalan 0</text><line x1=\"111\" y1=\"128\" x2=\"111\" y2=\"152\" class=\"g-ms\" stroke-width=\"2.2\" marker-end=\"url(#okW3a)\"/><text x=\"111\" y=\"178\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">Kalan 0: bölme biter</text><rect x=\"59\" y=\"192\" width=\"104\" height=\"32\" rx=\"16\" class=\"g-z\"/><rect x=\"59\" y=\"192\" width=\"104\" height=\"32\" rx=\"16\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"111\" y=\"214\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-mf\">0,2</text><rect x=\"226\" y=\"8\" width=\"206\" height=\"230\" rx=\"14\" class=\"g-ta\"/><rect x=\"226\" y=\"8\" width=\"206\" height=\"230\" rx=\"14\" class=\"g-ts\" stroke-width=\"2\"/><rect x=\"234\" y=\"18\" width=\"190\" height=\"24\" rx=\"12\" class=\"g-z\"/><rect x=\"234\" y=\"18\" width=\"190\" height=\"24\" rx=\"12\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"329\" y=\"34.5\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" class=\"g-tf\">Devirli ondalık gösterim</text><text x=\"284\" y=\"65.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" class=\"g-tf\">1</text><line x1=\"276.0\" y1=\"68\" x2=\"292.0\" y2=\"68\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"284\" y=\"85.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" class=\"g-tf\">3</text><text x=\"306\" y=\"74\" font-size=\"16\" font-weight=\"700\" class=\"g-y\">= 1 ÷ 3</text><rect x=\"240\" y=\"98\" width=\"178\" height=\"26\" rx=\"8\" class=\"g-z\"/><rect x=\"240\" y=\"98\" width=\"178\" height=\"26\" rx=\"8\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"329\" y=\"116\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" class=\"g-tf\">10 ÷ 3 = 3, kalan 1</text><rect x=\"240\" y=\"130\" width=\"178\" height=\"26\" rx=\"8\" class=\"g-z\"/><rect x=\"240\" y=\"130\" width=\"178\" height=\"26\" rx=\"8\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"329\" y=\"148\" text-anchor=\"middle\" font-size=\"14\" class=\"g-y\">yine 10 ÷ 3, kalan 1</text><text x=\"329\" y=\"178\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" class=\"g-tf\">Kalan hep 1: bölme sürer</text><rect x=\"277\" y=\"192\" width=\"104\" height=\"32\" rx=\"16\" class=\"g-z\"/><rect x=\"277\" y=\"192\" width=\"104\" height=\"32\" rx=\"16\" class=\"g-ts\" stroke-width=\"2\"/><text x=\"329\" y=\"214\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">0,333…</text></svg>"
     },
     {
-     "metin": "Paydası 18 olan {kesir:5|18} sayısında 2 çarpanı bulunduğu için ondalık gösterimi sonludur.",
-     "dogru": false,
-     "aciklama": "Payda 18 = 2 · 3 · 3 olduğundan paydada 3 çarpanı da vardır; gösterim devirlidir (0,2777…)."
+      "baslik": "Sonlu ve devirli ondalık gösterim",
+      "metin": [
+        "Bölme, kalan 0 olunca bitiyorsa elde edilen ondalık gösterime sonlu ondalık gösterim denir; 0,2 ve 0,25 buna örnektir. Bölme bitmiyor ve rakamlar belli bir düzenle tekrar ediyorsa elde edilen gösterime devirli ondalık gösterim denir; 0,333… ve 0,2727… buna örnektir.",
+        "Tekrar eden rakam ya da rakam grubuna devreden kısım denir ve üzerine çizgi çekilerek gösterilir. Örneğin 0,333… sayısı 0,3̅ biçiminde, 0,2727… sayısı 0,2̅7̅ biçiminde yazılır. Çizginin altındaki rakamlar sonsuza kadar tekrar eder.",
+        "Tekrar, virgülden hemen sonra başlamak zorunda değildir. Örneğin {kesir:5|6} = 0,8333… sayısında 8 yalnız bir kez yazılır, ondan sonra yalnız 3 tekrar eder; bu yüzden gösterim 0,83̅ olur. Tekrara girmeyen 8’e devretmeyen kısım denir."
+      ],
+      "kutu": {
+        "tur": "tanim",
+        "baslik": "Devir işareti",
+        "metin": "Devreden rakamların üzerine çekilen çizgidir. Çizginin altındaki rakamlar tekrar eder; çizgi dışında kalan rakamlar devretmeyen kısmı oluşturur."
+      },
+      "gorsel": "<svg viewBox=\"0 0 440 250\" role=\"img\" aria-label=\"0,333… sayısı 0,3 üzerinde devir işaretiyle, 0,2727… sayısı 0,27 üzerinde devir işaretiyle yazılır. 0,8333… sayısında 8 devretmeyen rakamdır, 3 devreden rakamdır ve devir işareti yalnız 3’ün üzerine çizilir.\"><defs><marker id=\"okW3d\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-s\"/></marker></defs><text x=\"14\" y=\"17\" font-size=\"12.5\" font-weight=\"700\" class=\"g-s\">Açık yazılış</text><text x=\"236\" y=\"17\" font-size=\"12.5\" font-weight=\"700\" class=\"g-s\">Devir işaretiyle</text><rect x=\"15\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-z\"/><rect x=\"15\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-c\" stroke-width=\"1.8\"/><text x=\"27\" y=\"61\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-y\">0</text><text x=\"47\" y=\"61\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"700\" class=\"g-y\">,</text><rect x=\"55\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"55\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"67\" y=\"61\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">3</text><rect x=\"81\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"81\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"93\" y=\"61\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">3</text><rect x=\"107\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"107\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"119\" y=\"61\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">3</text><text x=\"145\" y=\"61\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"700\" class=\"g-s\">…</text><line x1=\"196\" y1=\"53\" x2=\"216\" y2=\"53\" class=\"g-c\" stroke-width=\"2\" marker-end=\"url(#okW3d)\"/><rect x=\"237\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-z\"/><rect x=\"237\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-c\" stroke-width=\"1.8\"/><text x=\"249\" y=\"61\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-y\">0</text><text x=\"269\" y=\"61\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"700\" class=\"g-y\">,</text><rect x=\"277\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"277\" y=\"36\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"289\" y=\"61\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">3</text><line x1=\"279\" y1=\"29\" x2=\"299\" y2=\"29\" class=\"g-ts\" stroke-width=\"3\" stroke-linecap=\"round\"/><rect x=\"15\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-z\"/><rect x=\"15\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-c\" stroke-width=\"1.8\"/><text x=\"27\" y=\"123\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-y\">0</text><text x=\"47\" y=\"123\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"700\" class=\"g-y\">,</text><rect x=\"55\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"55\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"67\" y=\"123\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">2</text><rect x=\"81\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"81\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"93\" y=\"123\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">7</text><rect x=\"107\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"107\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"119\" y=\"123\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">2</text><rect x=\"133\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"133\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"145\" y=\"123\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">7</text><text x=\"171\" y=\"123\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"700\" class=\"g-s\">…</text><line x1=\"196\" y1=\"115\" x2=\"216\" y2=\"115\" class=\"g-c\" stroke-width=\"2\" marker-end=\"url(#okW3d)\"/><rect x=\"237\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-z\"/><rect x=\"237\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-c\" stroke-width=\"1.8\"/><text x=\"249\" y=\"123\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-y\">0</text><text x=\"269\" y=\"123\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"700\" class=\"g-y\">,</text><rect x=\"277\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"277\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"289\" y=\"123\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">2</text><rect x=\"303\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"303\" y=\"98\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"315\" y=\"123\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">7</text><line x1=\"279\" y1=\"91\" x2=\"325\" y2=\"91\" class=\"g-ts\" stroke-width=\"3\" stroke-linecap=\"round\"/><rect x=\"15\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-z\"/><rect x=\"15\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-c\" stroke-width=\"1.8\"/><text x=\"27\" y=\"185\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-y\">0</text><text x=\"47\" y=\"185\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"700\" class=\"g-y\">,</text><rect x=\"55\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ma\"/><rect x=\"55\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"67\" y=\"185\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-mf\">8</text><rect x=\"81\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"81\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"93\" y=\"185\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">3</text><rect x=\"107\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"107\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"119\" y=\"185\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">3</text><rect x=\"133\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"133\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"145\" y=\"185\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">3</text><text x=\"171\" y=\"185\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"700\" class=\"g-s\">…</text><line x1=\"196\" y1=\"177\" x2=\"216\" y2=\"177\" class=\"g-c\" stroke-width=\"2\" marker-end=\"url(#okW3d)\"/><rect x=\"237\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-z\"/><rect x=\"237\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-c\" stroke-width=\"1.8\"/><text x=\"249\" y=\"185\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-y\">0</text><text x=\"269\" y=\"185\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"700\" class=\"g-y\">,</text><rect x=\"277\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ma\"/><rect x=\"277\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"289\" y=\"185\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-mf\">8</text><rect x=\"303\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ta\"/><rect x=\"303\" y=\"160\" width=\"24\" height=\"34\" rx=\"6\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"315\" y=\"185\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-tf\">3</text><line x1=\"305\" y1=\"153\" x2=\"325\" y2=\"153\" class=\"g-ts\" stroke-width=\"3\" stroke-linecap=\"round\"/><rect x=\"14\" y=\"224\" width=\"16\" height=\"16\" rx=\"4\" class=\"g-ta\"/><rect x=\"14\" y=\"224\" width=\"16\" height=\"16\" rx=\"4\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"38\" y=\"237\" font-size=\"12.5\" class=\"g-y\">devreden rakam</text><rect x=\"166\" y=\"224\" width=\"16\" height=\"16\" rx=\"4\" class=\"g-ma\"/><rect x=\"166\" y=\"224\" width=\"16\" height=\"16\" rx=\"4\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"190\" y=\"237\" font-size=\"12.5\" class=\"g-y\">devretmeyen rakam</text></svg>"
     },
     {
-     "metin": "Devir işaretiyle yazılan 0,83̅ sayısında 8 rakamı devretmeyen kısımdadır.",
-     "dogru": true,
-     "aciklama": "Devir işareti yalnız 3’ün üzerindedir; 8 bir kez yazılır ve tekrar etmez."
+      "baslik": "Paydanın asal çarpanları neyi belirler?",
+      "metin": [
+        "Bir rasyonel sayının ondalık gösteriminin sonlu mu devirli mi olacağını bölme yapmadan da kestirebilirsin; bunun için paydaya bakarsın. Önce sayıyı en sade hâle getirir, sonra paydayı asal çarpanlarına ayırırsın.",
+        "Payda en sade hâldeyken asal çarpanlarının hepsi 2 ya da 5 ise ondalık gösterim sonludur. Paydası 20 olan {kesir:3|20} sayısında 20 = 2 · 2 · 5 olduğundan sonuç 0,15’tir. Paydada 2 ile 5’ten farklı bir asal çarpan kalıyorsa ondalık gösterim devirlidir; 3 ve 7 bu çarpanlara örnektir. Paydası 6 olan {kesir:5|6} sayısında 6 = 2 · 3 olduğundan sonuç 0,8333… çıkar.",
+        "Sadeleştirmeyi atlama. Örneğin {kesir:72|15} sayısında payda 15 = 3 · 5 olduğundan devirli bekleyebilirsin; oysa sayı {kesir:24|5} biçiminde sadeleşir, paydada yalnız 5 kalır ve gösterim sonludur: 4,8. Paydası aynı olan {kesir:92|15} ise sadeleşmez; paydasında 3 kaldığı için gösterimi devirlidir: 6,1333…"
+      ],
+      "kutu": {
+        "tur": "kural",
+        "metin": "Paydayı en sade hâlde asal çarpanlarına ayır: çarpanların hepsi 2 ya da 5 ise gösterim sonlu, bunlardan farklı bir çarpan varsa gösterim devirlidir."
+      },
+      "gorsel": "<svg viewBox=\"0 0 440 254\" role=\"img\" aria-label=\"En sade hâlde paydada yalnız 2 ve 5 asal çarpanı varsa ondalık gösterim sonludur: 72 bölü 15 sadeleşince 24 bölü 5 olur ve 4,8 bulunur; 3 bölü 20 için 20 eşittir 2 çarpı 2 çarpı 5 ve sonuç 0,15’tir. Paydada başka bir asal çarpan varsa devirlidir: 92 bölü 15 için 15 eşittir 3 çarpı 5 ve sonuç 6,1333…; 5 bölü 6 için 6 eşittir 2 çarpı 3 ve sonuç 0,8333…’tür.\"><rect x=\"8\" y=\"8\" width=\"206\" height=\"46\" rx=\"12\" class=\"g-ma\"/><rect x=\"8\" y=\"8\" width=\"206\" height=\"46\" rx=\"12\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"111\" y=\"28\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">En sade hâlde paydada</text><text x=\"111\" y=\"46\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">yalnız 2 ve 5 varsa: sonlu</text><rect x=\"226\" y=\"8\" width=\"206\" height=\"46\" rx=\"12\" class=\"g-ta\"/><rect x=\"226\" y=\"8\" width=\"206\" height=\"46\" rx=\"12\" class=\"g-ts\" stroke-width=\"2\"/><text x=\"329\" y=\"28\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">En sade hâlde paydada</text><text x=\"329\" y=\"46\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">başka çarpan varsa: devirli</text><rect x=\"8\" y=\"62\" width=\"206\" height=\"88\" rx=\"12\" class=\"g-ma\"/><rect x=\"8\" y=\"62\" width=\"206\" height=\"88\" rx=\"12\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"38\" y=\"95.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-mf\">72</text><line x1=\"25.7\" y1=\"98\" x2=\"50.3\" y2=\"98\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"38\" y=\"114.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-mf\">15</text><text x=\"64\" y=\"103\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">=</text><text x=\"94\" y=\"95.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-mf\">24</text><line x1=\"81.7\" y1=\"98\" x2=\"106.3\" y2=\"98\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"94\" y=\"114.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-mf\">5</text><text x=\"22\" y=\"138\" font-size=\"13\" class=\"g-y\">Sadeleşince payda 5</text><rect x=\"140\" y=\"82\" width=\"60\" height=\"30\" rx=\"15\" class=\"g-z\"/><rect x=\"140\" y=\"82\" width=\"60\" height=\"30\" rx=\"15\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"170\" y=\"103\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" class=\"g-mf\">4,8</text><rect x=\"8\" y=\"158\" width=\"206\" height=\"88\" rx=\"12\" class=\"g-ma\"/><rect x=\"8\" y=\"158\" width=\"206\" height=\"88\" rx=\"12\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"38\" y=\"191.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-mf\">3</text><line x1=\"25.7\" y1=\"194\" x2=\"50.3\" y2=\"194\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"38\" y=\"210.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-mf\">20</text><text x=\"22\" y=\"234\" font-size=\"13\" class=\"g-y\">Payda: 20 = 2 · 2 · 5</text><rect x=\"140\" y=\"178\" width=\"60\" height=\"30\" rx=\"15\" class=\"g-z\"/><rect x=\"140\" y=\"178\" width=\"60\" height=\"30\" rx=\"15\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"170\" y=\"199\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" class=\"g-mf\">0,15</text><rect x=\"226\" y=\"62\" width=\"206\" height=\"88\" rx=\"12\" class=\"g-ta\"/><rect x=\"226\" y=\"62\" width=\"206\" height=\"88\" rx=\"12\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"256\" y=\"95.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">92</text><line x1=\"243.7\" y1=\"98\" x2=\"268.3\" y2=\"98\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"256\" y=\"114.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">15</text><text x=\"240\" y=\"138\" font-size=\"13\" class=\"g-y\">Payda: 15 = 3 · 5</text><rect x=\"342\" y=\"82\" width=\"76\" height=\"30\" rx=\"15\" class=\"g-z\"/><rect x=\"342\" y=\"82\" width=\"76\" height=\"30\" rx=\"15\" class=\"g-ts\" stroke-width=\"2\"/><text x=\"380\" y=\"103\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" class=\"g-tf\">6,1333…</text><rect x=\"226\" y=\"158\" width=\"206\" height=\"88\" rx=\"12\" class=\"g-ta\"/><rect x=\"226\" y=\"158\" width=\"206\" height=\"88\" rx=\"12\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"256\" y=\"191.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">5</text><line x1=\"248.3\" y1=\"194\" x2=\"263.6\" y2=\"194\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"256\" y=\"210.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">6</text><text x=\"240\" y=\"234\" font-size=\"13\" class=\"g-y\">Payda: 6 = 2 · 3</text><rect x=\"342\" y=\"178\" width=\"76\" height=\"30\" rx=\"15\" class=\"g-z\"/><rect x=\"342\" y=\"178\" width=\"76\" height=\"30\" rx=\"15\" class=\"g-ts\" stroke-width=\"2\"/><text x=\"380\" y=\"199\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" class=\"g-tf\">0,8333…</text></svg>"
     },
     {
-     "metin": "Ondalık gösterimle yazılamayan rasyonel sayılar da vardır.",
-     "dogru": false,
-     "aciklama": "Payı paydaya bölünce her rasyonel sayı sonlu ya da devirli bir ondalık gösterim verir."
+      "baslik": "Paydayı 10’un kuvvetine getirmek",
+      "metin": [
+        "Paydası yalnız 2 ve 5 asal çarpanlarından oluşan bir rasyonel sayının ondalık gösterimini bölme yapmadan da bulabilirsin. Pay ve paydayı aynı sayıyla çarparak paydayı 10, 100, 1000 gibi 10’un bir kuvveti yaparsın. Payda 10 ise virgülden sonra bir, 100 ise iki, 1000 ise üç basamak olur.",
+        "Paydası 20 olan {kesir:7|20} sayısında 20 = {us:2|2} · 5’tir; eksik kalan bir 5 çarpanı için pay ve payda 5 ile çarpılır: {kesir:7|20} = {kesir:35|100} = 0,35. Paydası 8 olan {kesir:5|8} sayısında 8 = {us:2|3} olduğundan pay ve payda {us:5|3} = 125 ile çarpılır: {kesir:5|8} = {kesir:625|1000} = 0,625.",
+        "Tam sayılı kesirlerde tam kısım olduğu gibi kalır, yalnız kesirli kısım dönüştürülür. Örneğin 2 {kesir:3|4} sayısında {kesir:3|4} = {kesir:75|100} = 0,75 olduğundan sayı 2,75’tir."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "metin": "Paydadaki 2’lerin ve 5’lerin sayısını eşitle: eksik olan asal çarpanı gereken kadar pay ve paydaya çarpan olarak ekle. Payda böylece 10’un kuvveti olur."
+      },
+      "gorsel": "<svg viewBox=\"0 0 440 232\" role=\"img\" aria-label=\"Paydayı 10’un kuvvetine getirme: 7 bölü 20, pay ve payda 5 ile çarpılınca 35 bölü 100 olur ve 0,35 bulunur; 5 bölü 8, pay ve payda 125 ile çarpılınca 625 bölü 1000 olur ve 0,625 bulunur; tam sayılı kesir 2 tam 3 bölü 4, kesirli kısım 25 ile genişleyince 2 tam 75 bölü 100 olur ve 2,75 bulunur. Payda 100 iki, payda 1000 üç basamak verir.\"><defs><marker id=\"okW3c\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-tf\"/></marker></defs><text x=\"34\" y=\"41.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">7</text><line x1=\"20.5\" y1=\"44\" x2=\"47.5\" y2=\"44\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"34\" y=\"62.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">20</text><line x1=\"78\" y1=\"44\" x2=\"150\" y2=\"44\" class=\"g-ts\" stroke-width=\"2.4\" marker-end=\"url(#okW3c)\"/><text x=\"114\" y=\"31\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">5 ile çarp</text><text x=\"114\" y=\"66\" text-anchor=\"middle\" font-size=\"12\" class=\"g-s\">pay ve payda</text><text x=\"196\" y=\"41.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">35</text><line x1=\"177.2\" y1=\"44\" x2=\"214.8\" y2=\"44\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"196\" y=\"62.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">100</text><text x=\"258\" y=\"50\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"700\" class=\"g-y\">=</text><rect x=\"274\" y=\"27\" width=\"74\" height=\"34\" rx=\"17\" class=\"g-z\"/><rect x=\"274\" y=\"27\" width=\"74\" height=\"34\" rx=\"17\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"311\" y=\"50\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-mf\">0,35</text><text x=\"357\" y=\"49\" font-size=\"12\" class=\"g-s\">iki basamak</text><text x=\"34\" y=\"113.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">5</text><line x1=\"25.7\" y1=\"116\" x2=\"42.3\" y2=\"116\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"34\" y=\"134.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">8</text><line x1=\"78\" y1=\"116\" x2=\"150\" y2=\"116\" class=\"g-ts\" stroke-width=\"2.4\" marker-end=\"url(#okW3c)\"/><text x=\"114\" y=\"103\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">125 ile çarp</text><text x=\"114\" y=\"138\" text-anchor=\"middle\" font-size=\"12\" class=\"g-s\">pay ve payda</text><text x=\"196\" y=\"113.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">625</text><line x1=\"171.9\" y1=\"116\" x2=\"220.1\" y2=\"116\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"196\" y=\"134.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">1000</text><text x=\"258\" y=\"122\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"700\" class=\"g-y\">=</text><rect x=\"274\" y=\"99\" width=\"74\" height=\"34\" rx=\"17\" class=\"g-z\"/><rect x=\"274\" y=\"99\" width=\"74\" height=\"34\" rx=\"17\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"311\" y=\"122\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-mf\">0,625</text><text x=\"357\" y=\"121\" font-size=\"12\" class=\"g-s\">üç basamak</text><text x=\"18\" y=\"194\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"700\" class=\"g-mf\">2</text><text x=\"44\" y=\"185.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">3</text><line x1=\"35.7\" y1=\"188\" x2=\"52.3\" y2=\"188\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"44\" y=\"206.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">4</text><line x1=\"78\" y1=\"188\" x2=\"150\" y2=\"188\" class=\"g-ts\" stroke-width=\"2.4\" marker-end=\"url(#okW3c)\"/><text x=\"114\" y=\"175\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" class=\"g-tf\">25 ile çarp</text><text x=\"114\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" class=\"g-s\">pay ve payda</text><text x=\"178\" y=\"194\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"700\" class=\"g-mf\">2</text><text x=\"210\" y=\"185.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">75</text><line x1=\"191.2\" y1=\"188\" x2=\"228.8\" y2=\"188\" class=\"g-ms\" stroke-width=\"1.6\"/><text x=\"210\" y=\"206.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" class=\"g-mf\">100</text><text x=\"258\" y=\"194\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"700\" class=\"g-y\">=</text><rect x=\"274\" y=\"171\" width=\"74\" height=\"34\" rx=\"17\" class=\"g-z\"/><rect x=\"274\" y=\"171\" width=\"74\" height=\"34\" rx=\"17\" class=\"g-ms\" stroke-width=\"2\"/><text x=\"311\" y=\"194\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" class=\"g-mf\">2,75</text><text x=\"357\" y=\"193\" font-size=\"12\" class=\"g-s\">iki basamak</text></svg>"
+    },
+    {
+      "baslik": "Sonlu ondalık gösterimden rasyonel sayıya",
+      "metin": [
+        "Sonlu bir ondalık gösterimin kesir karşılığını, payda olarak 10, 100, 1000 gibi sayılar kullanarak yazabilirsin. Virgülü yok sayarak okuduğun sayıyı paya yazarsın. Paydaya ise virgülden sonra kaç basamak varsa o kadar sıfırı bulunan 10’un kuvvetini yazarsın.",
+        "Örneğin 0,6 sayısında virgülden sonra bir basamak vardır; sayı {kesir:6|10} olur ve 2 ile sadeleşince {kesir:3|5} bulunur. Aynı yolla 1,32 sayısında iki basamak olduğundan sayı {kesir:132|100} olur ve 4 ile sadeleşince {kesir:33|25} elde edilir.",
+        "Sayı negatifse eksi işareti kesrin önünde kalır: −0,08 = −{kesir:8|100} = −{kesir:2|25}. Bulduğun kesri payı paydaya bölerek yeniden ondalık gösterime çevirir ve sonucu kontrol edersin."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "metin": "Virgülden sonra bir basamak varsa payda 10, iki basamak varsa 100, üç basamak varsa 1000 olur. Kesri yazdıktan sonra sadeleştirmeyi unutma."
+      }
+    },
+    {
+      "baslik": "Her rasyonel sayı ondalık biçimde yazılabilir",
+      "metin": [
+        "Payı paydaya bölme işlemi her rasyonel sayıyla yapılabilir ve sonuç ya sonlu ya da devirli bir ondalık gösterim olur. Demek ki ondalık biçimde yazılamayan bir rasyonel sayı yoktur; kimi sayılar sonlu, kimi sayılar devirli bir gösterim verir.",
+        "Bu gösterimler ölçümlerde de karşına çıkar. El sabununun kütlesi {kesir:185|2} g ise bu kütle 92,5 g olarak yazılır; madenî paranın kalınlığı {kesir:1|4} cm ise 0,25 cm olur. İlk ikisi sonlu ondalık gösterimdir. Bir küp şekerin kütlesi {kesir:16|6} g ise sayı önce {kesir:8|3} biçiminde sadeleşir ve ondalık gösterimi 2,6̅ olur; bu devirli bir gösterimdir.",
+        "Kesir ve ondalık gösterim aynı sayının iki farklı yazılışıdır; ikisi de sayı doğrusunda tek bir noktayı gösterir. Ondalık gösterimi devirli olan sayılar da rasyonel sayıdır; bunları kesre çevirmeyi gelecek hafta öğreneceksin."
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "metin": "Hangi rasyonel sayıyı seçersen seç, payı paydaya bölerek onu ondalık biçimde yazabilirsin; sonuç sonlu ya da devirli çıkar."
+      }
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "yonerge": "Kavramları açıklamalarıyla eşleştir.",
-   "ciftler": [
-    [
-     "Sonlu ondalık gösterim",
-     "Bölmenin kalansız bittiği yazılış"
-    ],
-    [
-     "Devirli ondalık gösterim",
-     "Rakamların sonsuza kadar tekrar ettiği yazılış"
-    ],
-    [
-     "Devir işareti",
-     "Tekrar eden rakamların üzerine çekilen çizgi"
-    ],
-    [
-     "Devretmeyen kısım",
-     "Virgülden sonra tekrara girmeyen ilk rakamlar"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
-   "cumleler": [
+  ],
+  "ornekler": [
     {
-     "metin": "Bir rasyonel sayının kesirle ve ondalık gösterimle yazılışları, sayı doğrusunda aynı ___ karşılık gelir.",
-     "cevap": "noktaya"
+      "soru": "Bir ipin uzunluğu {kesir:7|8} metredir. Bu uzunluğu ondalık gösterimle yaz.",
+      "cevap": "Payı paydaya bölersin: 7 ÷ 8 işleminde bölümün tam kısmı 0 olur. Virgülden sonra 70 ÷ 8 = 8 kalan 6, 60 ÷ 8 = 7 kalan 4 ve 40 ÷ 8 = 5 kalan 0 bulunur. Kalan 0 olduğu için gösterim sonludur: 0,875 m."
     },
     {
-     "metin": "Bölmede kalan hiçbir adımda 0 olmuyorsa sayının ondalık gösterimi ___ olur.",
-     "cevap": "devirli"
+      "soru": "Bir çıtanın uzunluğu {kesir:7|12} metredir. Bu uzunluğu ondalık gösterimle yaz; devreden ve devretmeyen rakamları belirt.",
+      "cevap": "Bölmede virgülden sonra 70 ÷ 12 = 5 kalan 10, 100 ÷ 12 = 8 kalan 4 ve 40 ÷ 12 = 3 kalan 4 bulunur. Kalan 4 yinelendiği için 3 rakamı sürekli tekrar eder: 0,58333… = 0,583̅. Devretmeyen rakamlar 5 ve 8, devreden rakam 3’tür."
     },
     {
-     "metin": "Paydası 1000 olan kesirde virgülden sonra üç basamak bulunur; basamak sayısı paydadaki ___ sayısına eşittir.",
-     "cevap": "sıfır"
+      "soru": "Şu sayılardan hangilerinin ondalık gösterimi sonludur: {kesir:1|12}, {kesir:1|14}, {kesir:1|16} ve {kesir:1|20}?",
+      "cevap": "Paydaları asal çarpanlarına ayır: 12 = 2 · 2 · 3, 14 = 2 · 7, 16 = 2 · 2 · 2 · 2 ve 20 = 2 · 2 · 5. Yalnız 16 ile 20’nin paydasında 2 ve 5 dışında asal çarpan yoktur. Bu yüzden {kesir:1|16} ile {kesir:1|20} sonlu, {kesir:1|12} ile {kesir:1|14} devirlidir."
+    },
+    {
+      "soru": "Paydayı 10’un kuvvetine getirerek {kesir:27|40} sayısının ondalık gösterimini bul.",
+      "cevap": "Payda 40 = {us:2|3} · 5’tir. Paydayı 10’un kuvveti yapmak için 5 çarpanından iki tane daha gerekir; pay ve payda 25 ile çarpılır. Sonuç: {kesir:27|40} = {kesir:675|1000} = 0,675."
+    },
+    {
+      "soru": "Bir kuyunun deniz seviyesine göre konumu −2,45 m olarak ölçülmüştür. Bu sayıyı payı ve paydası tam sayı olan en sade kesirle yaz.",
+      "cevap": "Virgülden sonra iki basamak olduğundan payda 100 olur: −2,45 = −{kesir:245|100}. Pay ve payda 5 ile sadeleşince −{kesir:49|20} bulunur."
+    },
+    {
+      "soru": "Paydası 30 olan {kesir:a|30} rasyonel sayısının ondalık gösterimi sonludur. a, 1’den 30’a kadar (30 dâhil) doğal sayılardan biri olduğuna göre a kaç farklı değer alabilir?",
+      "cevap": "Payda 30 = 2 · 3 · 5 olduğundan paydada 3 çarpanı var. Gösterimin sonlu olması için bu 3’ün sadeleşmesi gerekir; bu da a’nın 3’ün katı olmasıyla olur. Bu koşula uyan sayılar 3, 6, 9, …, 30’dur ve 10 tanedir; yani a, 10 farklı değer alabilir."
     }
-   ],
-   "fazla": [
-    "devreden"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Zeynep, {kesir:3|11} sayısının ondalık gösterimini bulurken 30 ÷ 11 = 2 kalan 8 ve 80 ÷ 11 = 7 kalan 3 işlemlerini yapmış, 0,27 yazıp bölmeyi bitirmiştir. Bölmeye devam etmesi gerekir mi? Gerekçeni yaz ve sayının doğru ondalık gösterimini ver.",
-   "ipuclari": [
-    "Bölmede ulaştığın son kalana bak; kalan 0 oldu mu?",
-    "Son kalanın yanına sıfır ekle ve ortaya çıkan işlemi daha önce yapılan işlemlerle karşılaştır."
-   ],
-   "cevap": "Evet, devam etmelidir; son kalan 3’tür, 0 değildir. Kalanın yanına sıfır eklenince 30 ÷ 11 işlemi yeniden ortaya çıkar ve bu işlem daha önce 2 rakamını vermiştir. Böylece 2 ile 7 rakamları sürekli tekrar eder; doğru gösterim 0,2727… = 0,2̅7̅ olur."
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Şu üç gösterimin aynı sayıyı temsil ettiğini iki farklı yoldan göster: {kesir:9|25}, 0,36 ve {kesir:36|100}.",
-   "ipuclari": [
-    "Bir yolda payı paydaya bölmeyi dene.",
-    "Öbür yolda 0,36’yı kesre çevirip sadeleştirmeyi dene."
-   ],
-   "cevap": "Birinci yol: 9 ÷ 25 işlemi 0,36 verir; yani {kesir:9|25} = 0,36 olur. İkinci yol: 0,36 sayısında iki basamak olduğundan {kesir:36|100} yazılır; pay ve payda 4 ile sadeleşince {kesir:9|25} bulunur. Üç gösterim de sayı doğrusunda tek bir noktayı gösterir."
-  }
- ],
- "ozet": [
-  "Bir rasyonel sayının ondalık gösterimi, payı paydaya bölerek bulunur.",
-  "Bölme kalansız bitiyorsa gösterim sonlu, bitmeyip rakamlar tekrar ediyorsa devirlidir; devreden rakamların üzerine çizgi çekilir.",
-  "Sayı en sade hâle getirilir; paydada yalnız 2 ve 5 asal çarpanları varsa gösterim sonlu, başka bir asal çarpan varsa devirlidir.",
-  "Paydası 2 ve 5 çarpanlarından oluşan sayılarda pay ve payda uygun sayıyla çarpılarak payda 10’un kuvveti yapılır; sonlu ondalık gösterim ise paydası 10’un kuvveti olan kesre çevrilip sadeleştirilir.",
-  "Her rasyonel sayı, payı paydaya bölünerek ondalık biçimde yazılabilir; sonuç sonlu ya da devirli olur."
- ]
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki rasyonel sayılardan hangisinin ondalık gösterimi sonludur?",
+      "secenekler": [
+        "{kesir:9|15}",
+        "{kesir:7|12}",
+        "{kesir:4|15}",
+        "{kesir:5|21}"
+      ],
+      "dogru": 0,
+      "aciklama": "Paydası 15 olan {kesir:9|15} sayısı {kesir:3|5} biçiminde sadeleşir; paydada yalnız 5 kaldığı için gösterim sonludur (0,6). Öbürlerinin paydalarında 3 çarpanı kalır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir öğrenci {kesir:3|8} sayısının ondalık gösterimini bulmak için bölme yapıp 2,666… sonucuna ulaşmıştır. Bu öğrencinin hatası aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Paydayı 10’un kuvvetine çevirmeden bölmüştür.",
+        "Payı paydaya değil, paydayı paya bölmüştür.",
+        "Bölmede kalanın yanına sıfır eklemeyi unutmuştur.",
+        "Sayıyı en sade hâle getirmeden bölme yapmıştır."
+      ],
+      "dogru": 1,
+      "aciklama": "Ondalık gösterim için payı paydaya bölmek gerekir: 3 ÷ 8 = 0,375. Öğrencinin bulduğu 2,666… sonucu 8 ÷ 3 işleminden gelir; yani öğrenci işlemi ters kurmuştur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Tam sayılı kesir olarak yazılmış 4 {kesir:3|20} sayısının ondalık gösterimi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "0,15",
+        "0,35",
+        "4,15",
+        "4,3"
+      ],
+      "dogru": 2,
+      "aciklama": "Kesirli kısımda {kesir:3|20} = {kesir:15|100} = 0,15’tir; tam kısım olduğu gibi kalır ve sayı 4,15 olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "‘Paydayı 10’un kuvvetine getirmek’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Paydadaki 2’lerin ve 5’lerin sayısını eşitle: eksik olan asal çarpanı gereken kadar pay ve paydaya çarpan olarak ekle."
+      ],
+      "dogru": 3,
+      "aciklama": "Paydayı 10’un kuvvetine getirmek bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Paydası 7 olan {kesir:3|7} sayısının ondalık gösterimi devirlidir.",
+          "dogru": true,
+          "aciklama": "Paydadaki 7, 2 ve 5 dışında bir asal çarpandır; bölme bitmez ve rakamlar tekrar eder."
+        },
+        {
+          "metin": "Paydası 18 olan {kesir:5|18} sayısında 2 çarpanı bulunduğu için ondalık gösterimi sonludur.",
+          "dogru": false,
+          "aciklama": "Payda 18 = 2 · 3 · 3 olduğundan paydada 3 çarpanı da vardır; gösterim devirlidir (0,2777…)."
+        },
+        {
+          "metin": "Devir işaretiyle yazılan 0,83̅ sayısında 8 rakamı devretmeyen kısımdadır.",
+          "dogru": true,
+          "aciklama": "Devir işareti yalnız 3’ün üzerindedir; 8 bir kez yazılır ve tekrar etmez."
+        },
+        {
+          "metin": "Ondalık gösterimle yazılamayan rasyonel sayılar da vardır.",
+          "dogru": false,
+          "aciklama": "Payı paydaya bölünce her rasyonel sayı sonlu ya da devirli bir ondalık gösterim verir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Sonlu ondalık gösterim",
+          "Bölmenin kalansız bittiği yazılış"
+        ],
+        [
+          "Devirli ondalık gösterim",
+          "Rakamların sonsuza kadar tekrar ettiği yazılış"
+        ],
+        [
+          "Devir işareti",
+          "Tekrar eden rakamların üzerine çekilen çizgi"
+        ],
+        [
+          "Devretmeyen kısım",
+          "Virgülden sonra tekrara girmeyen ilk rakamlar"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir rasyonel sayının kesirle ve ondalık gösterimle yazılışları, sayı doğrusunda aynı ___ karşılık gelir.",
+          "cevap": "noktaya"
+        },
+        {
+          "metin": "Bölmede kalan hiçbir adımda 0 olmuyorsa sayının ondalık gösterimi ___ olur.",
+          "cevap": "devirli"
+        },
+        {
+          "metin": "Paydası 1000 olan kesirde virgülden sonra üç basamak bulunur; basamak sayısı paydadaki ___ sayısına eşittir.",
+          "cevap": "sıfır"
+        }
+      ],
+      "fazla": [
+        "devreden",
+        "varsayım"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Zeynep, {kesir:3|11} sayısının ondalık gösterimini bulurken 30 ÷ 11 = 2 kalan 8 ve 80 ÷ 11 = 7 kalan 3 işlemlerini yapmış, 0,27 yazıp bölmeyi bitirmiştir. Bölmeye devam etmesi gerekir mi? Gerekçeni yaz ve sayının doğru ondalık gösterimini ver.",
+      "cevap": "Evet, devam etmelidir; son kalan 3’tür, 0 değildir. Kalanın yanına sıfır eklenince 30 ÷ 11 işlemi yeniden ortaya çıkar ve bu işlem daha önce 2 rakamını vermiştir. Böylece 2 ile 7 rakamları sürekli tekrar eder; doğru gösterim 0,2727… = 0,2̅7̅ olur.",
+      "ipuclari": [
+        "Bölmede ulaştığın son kalana bak; kalan 0 oldu mu?",
+        "Son kalanın yanına sıfır ekle ve ortaya çıkan işlemi daha önce yapılan işlemlerle karşılaştır."
+      ]
+    }
+  ],
+  "ozet": [
+    "Bir rasyonel sayının ondalık gösterimi, payı paydaya bölerek bulunur.",
+    "Bölme kalansız bitiyorsa gösterim sonlu, bitmeyip rakamlar tekrar ediyorsa devirlidir; devreden rakamların üzerine çizgi çekilir.",
+    "Sayı en sade hâle getirilir; paydada yalnız 2 ve 5 asal çarpanları varsa gösterim sonlu, başka bir asal çarpan varsa devirlidir.",
+    "Paydası 2 ve 5 çarpanlarından oluşan sayılarda pay ve payda uygun sayıyla çarpılarak payda 10’un kuvveti yapılır; sonlu ondalık gösterim ise paydası 10’un kuvveti olan kesre çevrilip sadeleştirilir.",
+    "Her rasyonel sayı, payı paydaya bölünerek ondalık biçimde yazılabilir; sonuç sonlu ya da devirli olur."
+  ]
 }

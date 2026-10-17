@@ -1,214 +1,264 @@
 {
- "ad": "11-fizik-5",
- "sinif": 11,
- "ders": "fizik",
- "ders_adi": "Fizik",
- "hafta": 5,
- "tarih": "12-16 Ekim 2026",
- "yayin_tarihi": "2026-10-14",
- "unite": "KUVVET VE HAREKET",
- "konu": "İtme ve Çizgisel Momentum: İtme-Momentum Değişimi İlişkisi ve Grafik Analizi",
- "ciktilar": [
-  "FİZ.11.1.4.a — İtme (I) ve çizgisel momentum (P) kavramlarını vektörel özellikleri ve SI birimleriyle açıklar; kinetik enerji ile momentum arasındaki bağıntıyı kurar.",
-  "FİZ.11.1.4.b — Newton'un İkinci Hareket Yasası'ndan yararlanarak bir cisme uygulanan net itmenin cismin çizgisel momentum değişimine eşit olduğunu (I = Delta_P) çıkarır.",
-  "FİZ.11.1.4.c — Net kuvvet-zaman (F-t) ve momentum-zaman (P-t) grafiklerini analiz ederek günlük yaşam ve mühendislik güvenlik problemlerini çözer."
- ],
- "giris": "Aynı hızla gelen bir tenis topunu elimizle kolayca durdurabilirken, aynı hızla ilerleyen ağır bir kamyonu durdurmanın neden çok büyük bir kuvvet ve zaman gerektirdiğini hiç düşündünüz mü? Ya da otomobillerdeki hava yastıklarının ve katlanabilir tamponların kaza anında hayat kurtarmasının arkasındaki fizik yasası nedir? Bir cismin yalnız hızını veya yalnız kütlesini bilmek onun hareket etkisini tanımlamaya yetmez; kütle ile hızın çarpımı olan 'çizgisel momentum' ve kuvvetin zamanla çarpımı olan 'itme' kavramlarına ihtiyaç duyarız. Bu hafta itme ve çizgisel momentum arasındaki matematiksel ve grafiksel köprüyü inceleyeceğiz.",
- "ozet": [
-  "Bir cisme etki eden net kuvvet (F_net) ile kuvvetin etki süresinin (Delta_t) çarpımına İtme (I = F_net . Delta_t) denir; vektöreldir ve SI birimi N . s'dir.",
-  "Bir cismin kütlesi (m) ile hız vektörünün (v) çarpımına Çizgisel Momentum (P = m . v) denir; vektöreldir, yönü hız vektörüyle aynıdır ve SI birimi kg . m/s'dir (1 N . s = 1 kg . m/s).",
-  "Newton'un 2. Yasası'ndan (F_net = m . a) türetilen İtme-Momentum Teoremine göre, bir cisme uygulanan net itme o cismin çizgisel momentum değişimine eşittir: I = Delta_P = P_son - P_ilk.",
-  "Momentum değişimi (Delta_P = P_son - P_ilk) hesaplanırken skaler çıkarma değil, mutlaka yönler dikkate alınarak VEKTÖREL çıkarma yapılır.",
-  "Net kuvvet-zaman (F-t) grafiğinin zaman ekseniyle sınırladığı cebirsel alan İtmeyi (I) ve Momentum Değişimini (Delta_P); Momentum-zaman (P-t) grafiğinin eğimi ise Net Kuvveti (F_net) verir.",
-  "Çizgisel momentum büyüklüğü (P) ile öteleme kinetik enerjisi (E_k) arasında E_k = P² / (2 . m) bağıntısı vardır."
- ],
- "bolumler": [
-  {
-   "baslik": "İtme (I) ve Çizgisel Momentum (P) Kavramları",
-   "metin": [
-    "Fizikte kuvvetin hareket üzerindeki etkisini incelerken yalnız kuvvetin büyüklüğü değil, o kuvvetin cisme {koyu:ne kadar süre boyunca etki ettiği} de belirleyicidir. Bir cisme etki eden net kuvvet ({koyu:F_net}) ile kuvvetin uygulanma süresinin ({koyu:Delta_t}) çarpımına {koyu:İtme} denir ve {koyu:I} sembolüyle gösterilir: {koyu:I = F_net . Delta_t}. Zaman skaler ve pozitif bir büyüklük olduğundan, itme {koyu:vektörel bir büyüklüktür} ve yönü daima cisme uygulanan net kuvvetin yönüyle aynıdır. Uluslararası Birimler Sisteminde (SI) kuvvetin birimi Newton (N), zamanın birimi saniye (s) olduğundan itmenin birimi {koyu:Newton . saniye (N . s)} olur.\n\nHareket hâlindeki bir cismin kütlesi ({koyu:m}) ile hız vektörünün ({koyu:v}) çarpımına ise o cismin {koyu:Çizgisel Momentumu (hareket miktarı)} denir ve {koyu:P} sembolüyle gösterilir: {koyu:P = m . v}. Kütle skaler ve pozitif olduğundan çizgisel momentum da {koyu:vektörel bir büyüklüktür} ve yönü her an cismin {koyu:hız vektörünün yönüyle aynıdır}. SI'da kütlenin birimi kg, hızın birimi m/s olduğundan çizgisel momentumun birimi {koyu:kg . m/s}'dir."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Birim Eşdeğerliği: 1 N . s = 1 kg . m/s",
-    "metin": "Newton'un temel yasası F = m . a'ya göre 1 N = 1 kg . m/s²'dir. Bu ifadeyi s (saniye) ile çarptığımızda 1 N . s = (1 kg . m/s²) . s = 1 kg . m/s elde edilir. Yani İtme birimi ile Çizgisel Momentum birimi boyutsal olarak birbirine tamamen eşittir!"
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 310\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect x=\"10\" y=\"10\" width=\"740\" height=\"290\" rx=\"12\" fill=\"#f0f9ff\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"10\" width=\"740\" height=\"32\" rx=\"12\" fill=\"#0284c7\"/><rect x=\"10\" y=\"28\" width=\"740\" height=\"14\" fill=\"#0284c7\"/><text x=\"380.0\" y=\"31\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"13\" font-weight=\"700\">İtme (I) ve Çizgisel Momentum (P) Kavramlarının Karşılaştırılması</text><rect x=\"30\" y=\"55\" width=\"335\" height=\"230\" rx=\"10\" fill=\"#fff\" stroke=\"#38bdf8\" stroke-width=\"1.6\"/><rect x=\"30\" y=\"55\" width=\"335\" height=\"30\" rx=\"10\" fill=\"#0284c7\"/><text x=\"197\" y=\"75\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"12\" font-weight=\"700\">1. İTME (Impulse — Sembol: I)</text><text x=\"197\" y=\"106\" text-anchor=\"middle\" fill=\"#0369a1\" font-size=\"14\" font-weight=\"700\">I = F_net . Delta_t</text><text x=\"48\" y=\"136\" fill=\"#1e293b\" font-size=\"10.5\">• Kuvvet ile kuvvetin etki süresinin çarpımıdır.</text><text x=\"48\" y=\"158\" fill=\"#1e293b\" font-size=\"10.5\">• VEKTÖREL büyüklüktür; yönü F_net ile aynıdır.</text><text x=\"48\" y=\"180\" fill=\"#1e293b\" font-size=\"10.5\">• SI Birimi: Newton . saniye (N . s)</text><rect x=\"48\" y=\"200\" width=\"299\" height=\"66\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0284c7\"/><text x=\"197\" y=\"224\" text-anchor=\"middle\" fill=\"#0369a1\" font-size=\"10.5\" font-weight=\"700\">Örnek: Raketin tenis topuna 0,02 saniye</text><text x=\"197\" y=\"244\" text-anchor=\"middle\" fill=\"#0369a1\" font-size=\"10.5\" font-weight=\"700\">boyunca uyguladığı kuvvetin etkisi.</text><rect x=\"395\" y=\"55\" width=\"335\" height=\"230\" rx=\"10\" fill=\"#fff\" stroke=\"#34d399\" stroke-width=\"1.6\"/><rect x=\"395\" y=\"55\" width=\"335\" height=\"30\" rx=\"10\" fill=\"#059669\"/><text x=\"562\" y=\"75\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"12\" font-weight=\"700\">2. ÇİZGİSEL MOMENTUM (Sembol: P)</text><text x=\"562\" y=\"106\" text-anchor=\"middle\" fill=\"#065f46\" font-size=\"14\" font-weight=\"700\">P = m . v</text><text x=\"413\" y=\"136\" fill=\"#1e293b\" font-size=\"10.5\">• Kütle ile hız vektörünün çarpımıdır (Hareket miktarı).</text><text x=\"413\" y=\"158\" fill=\"#1e293b\" font-size=\"10.5\">• VEKTÖREL büyüklüktür; yönü hız (v) ile aynıdır.</text><text x=\"413\" y=\"180\" fill=\"#1e293b\" font-size=\"10.5\">• SI Birimi: kg . m/s  (1 N . s = 1 kg . m/s)</text><rect x=\"413\" y=\"200\" width=\"299\" height=\"66\" rx=\"8\" fill=\"#d1fae5\" stroke=\"#059669\"/><text x=\"562\" y=\"224\" text-anchor=\"middle\" fill=\"#065f46\" font-size=\"10.5\" font-weight=\"700\">Kinetik Enerji ile İlişkisi:</text><text x=\"562\" y=\"246\" text-anchor=\"middle\" fill=\"#047857\" font-size=\"11.5\" font-weight=\"700\">E_k = P² / (2 . m)</text></svg>"
-  },
-  {
-   "baslik": "İtme - Çizgisel Momentum Değişimi Teoremi (I = Delta_P)",
-   "metin": [
-    "İtme ile çizgisel momentum arasındaki doğrudan ilişkiyi {koyu:Newton'un İkinci Hareket Yasası} üzerinden kolayca türetebiliriz. Kütlesi m olan bir cisme Delta_t süresi boyunca sabit bir F_net kuvveti etki ettiğinde cismin hızı v_ilk değerinden v_son değerine değişsin. İvmenin tanımı olan {koyu:a = Delta_v / Delta_t = (v_son - v_ilk) / Delta_t} bağıntısını {koyu:F_net = m . a} denkleminde yerine yazalım:\n\nF_net = m . ((v_son - v_ilk) / Delta_t)\nDenklemin her iki tarafını Delta_t ile çarptığımızda:\n{koyu:F_net . Delta_t = m . v_son - m . v_ilk}\nEşitliğin sol tarafı net itmeyi ({koyu:I}), sağ tarafı ise son momentum ile ilk momentum arasındaki farkı yani {koyu:momentum değişimini (Delta_P)} verir. Böylece mekaniğin en güçlü ilkelerinden biri olan {koyu:İtme - Momentum Teoremi} elde edilir: {koyu:I_net = Delta_P = P_son - P_ilk}. Yani bir cisme uygulanan net itme, o cismin çizgisel momentumundaki vektörel değişime eşittir."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "Çok Önemli Uyarı: Momentum Değişimi VEKTÖREL Hesaplanır!",
-    "metin": "Kütlesi m olan bir top yatay +v hızıyla (P_ilk = +m.v) duvara dik çarpıp aynı büyüklükteki hızla geri döndüğünde (-v yönünde, P_son = -m.v), momentum değişimi SIFIR DEĞİLDİR!\nDelta_P = P_son - P_ilk = (-m.v) - (+m.v) = -2.m.v olur (büyüklüğü 2.m.v'dir!)."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 310\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect x=\"10\" y=\"10\" width=\"740\" height=\"290\" rx=\"12\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"10\" width=\"740\" height=\"32\" rx=\"12\" fill=\"#7c3aed\"/><rect x=\"10\" y=\"28\" width=\"740\" height=\"14\" fill=\"#7c3aed\"/><text x=\"380.0\" y=\"31\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"13\" font-weight=\"700\">İtme - Momentum Değişimi Teoremi: I = Delta_P = P_son - P_ilk</text><rect x=\"30\" y=\"55\" width=\"335\" height=\"230\" rx=\"10\" fill=\"#fff\" stroke=\"#c4b5fd\" stroke-width=\"1.5\"/><text x=\"197\" y=\"78\" text-anchor=\"middle\" fill=\"#5b21b6\" font-size=\"12\" font-weight=\"700\">Newton'un 2. Yasasından Türetim</text><rect x=\"46\" y=\"95\" width=\"303\" height=\"34\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#8b5cf6\"/><text x=\"197\" y=\"117\" text-anchor=\"middle\" fill=\"#4c1d95\" font-size=\"11\" font-weight=\"700\">1) F_net = m . a   ve   a = (v_son - v_ilk) / Delta_t</text><rect x=\"46\" y=\"137\" width=\"303\" height=\"34\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#8b5cf6\"/><text x=\"197\" y=\"159\" text-anchor=\"middle\" fill=\"#4c1d95\" font-size=\"11\" font-weight=\"700\">2) F_net = m . (v_son - v_ilk) / Delta_t</text><rect x=\"46\" y=\"179\" width=\"303\" height=\"34\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#8b5cf6\"/><text x=\"197\" y=\"201\" text-anchor=\"middle\" fill=\"#4c1d95\" font-size=\"11\" font-weight=\"700\">3) F_net . Delta_t = m . v_son - m . v_ilk</text><rect x=\"46\" y=\"221\" width=\"303\" height=\"34\" rx=\"6\" fill=\"#ede9fe\" stroke=\"#8b5cf6\"/><text x=\"197\" y=\"243\" text-anchor=\"middle\" fill=\"#4c1d95\" font-size=\"11\" font-weight=\"700\">4) I = P_son - P_ilk = Delta_P</text><rect x=\"395\" y=\"55\" width=\"335\" height=\"230\" rx=\"10\" fill=\"#fff\" stroke=\"#c4b5fd\" stroke-width=\"1.5\"/><text x=\"562\" y=\"78\" text-anchor=\"middle\" fill=\"#dc2626\" font-size=\"12\" font-weight=\"700\">DİKKAT: Duvara Çarpıp Geri Dönen Top!</text><rect x=\"650\" y=\"95\" width=\"18\" height=\"105\" fill=\"#94a3b8\" stroke=\"#475569\"/><circle cx=\"480\" cy=\"120\" r=\"12\" fill=\"#0284c7\"/><line x1=\"496\" y1=\"120\" x2=\"625\" y2=\"120\" stroke=\"#0284c7\" stroke-width=\"2.5\"/><text x=\"560\" y=\"112\" text-anchor=\"middle\" fill=\"#0284c7\" font-size=\"10.5\" font-weight=\"700\">P_ilk = +m.v (Sağa)</text><circle cx=\"620\" cy=\"175\" r=\"12\" fill=\"#dc2626\"/><line x1=\"604\" y1=\"175\" x2=\"475\" y2=\"175\" stroke=\"#dc2626\" stroke-width=\"2.5\"/><text x=\"545\" y=\"167\" text-anchor=\"middle\" fill=\"#dc2626\" font-size=\"10.5\" font-weight=\"700\">P_son = -m.v (Sola)</text><rect x=\"413\" y=\"208\" width=\"299\" height=\"62\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#dc2626\"/><text x=\"562\" y=\"230\" text-anchor=\"middle\" fill=\"#991b1b\" font-size=\"10.5\" font-weight=\"700\">Vektörel Fark: Delta_P = P_son - P_ilk</text><text x=\"562\" y=\"252\" text-anchor=\"middle\" fill=\"#b91c1c\" font-size=\"11.5\" font-weight=\"700\">Delta_P = (-m.v) - (+m.v) = -2.m.v  (Sıfır DEĞİL!)</text></svg>"
-  },
-  {
-   "baslik": "Kuvvet-Zaman (F-t) ve Momentum-Zaman (P-t) Grafiklerinin Analizi",
-   "metin": [
-    "Bir cisme etki eden net kuvvet her zaman sabit olmayabilir; zamanla düzgün artan veya azalan kuvvetlerin uyguladığı itmeyi bulmak için {koyu:Net Kuvvet - Zaman (F - t) grafiği} kullanılır. I = F . Delta_t çarpım bağıntısından anlaşılacağı üzere, {koyu:F-t grafiği ile yatay zaman ekseni arasında kalan cebirsel alan} cisme uygulanan {koyu:net itmeyi (I)} ve dolayısıyla {koyu:momentum değişimini (Delta_P)} verir. Zaman ekseninin üstündeki alanlar pozitif (+I), altındaki alanlar ise negatif (-I) alınır.\n\n{koyu:Momentum - Zaman (P - t) grafiğinde} ise P = m . v olduğundan ve kütle (m) sabit bir sayı olduğundan, P-t grafiğinin şekli cismin {koyu:hız-zaman (v-t) grafiğiyle birebir aynıdır}! P-t grafiğinin {koyu:eğimi} hesaplandığında: Eğim = Delta_P / Delta_t = I / Delta_t = {koyu:F_net} bulunur. Yani {koyu:momentum-zaman grafiğinin eğimi cisme etki eden net kuvveti} verir; P-t grafiğini kütle (m) değerine böldüğümüzde hız-zaman (v-t) grafiğine geçiş yaparız."
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "baslik": "Atış Hareketlerinde İtme Pratiği",
-    "metin": "Hava direncinin ihmal edildiği serbest düşme, yatay atış ve eğik atış hareketlerinde cisme havada etki eden tek kuvvet cismin kendi AĞIRLIĞIDIR (F_net = G = m . g, aşağı yönlü). Dolayısıyla havada t_uçuş süresi kadar kalan bir atış cisminin momentum değişimi, ilk veya son hızını hesaplamaya hiç gerek kalmadan doğrudan I = Delta_P = m . g . t_uçuş bağıntısıyla saniyeler içinde bulunur!"
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 310\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect x=\"10\" y=\"10\" width=\"740\" height=\"290\" rx=\"12\" fill=\"#f0fdfa\" stroke=\"#0d9488\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"10\" width=\"740\" height=\"32\" rx=\"12\" fill=\"#0d9488\"/><rect x=\"10\" y=\"28\" width=\"740\" height=\"14\" fill=\"#0d9488\"/><text x=\"380.0\" y=\"31\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"13\" font-weight=\"700\">Grafik Analizi: Kuvvet-Zaman (F-t) Alanı ve Momentum-Zaman (P-t) Eğimi</text><rect x=\"30\" y=\"55\" width=\"335\" height=\"230\" rx=\"10\" fill=\"#fff\" stroke=\"#5eead4\" stroke-width=\"1.5\"/><text x=\"197\" y=\"76\" text-anchor=\"middle\" fill=\"#0f766e\" font-size=\"12\" font-weight=\"700\">1. Net Kuvvet - Zaman (F - t) Grafiği</text><line x1=\"70\" y1=\"210\" x2=\"320\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"70\" y1=\"95\" x2=\"70\" y2=\"235\" stroke=\"#334155\" stroke-width=\"2\"/><polygon points=\"70,210 70,125 200,125 270,210\" fill=\"#99f6e4\" stroke=\"#0d9488\" stroke-width=\"2\"/><text x=\"165\" y=\"175\" text-anchor=\"middle\" fill=\"#0f766e\" font-size=\"11.5\" font-weight=\"700\">ALAN = İTME (I) = Delta_P</text><text x=\"197\" y=\"252\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">F-t grafiğinin zaman ekseniyle sınırladığı</text><text x=\"197\" y=\"268\" text-anchor=\"middle\" fill=\"#0f766e\" font-size=\"10.5\" font-weight=\"700\">cebirsel ALAN, İtme ve Momentum Değişimini verir.</text><rect x=\"395\" y=\"55\" width=\"335\" height=\"230\" rx=\"10\" fill=\"#fff\" stroke=\"#5eead4\" stroke-width=\"1.5\"/><text x=\"562\" y=\"76\" text-anchor=\"middle\" fill=\"#0f766e\" font-size=\"12\" font-weight=\"700\">2. Momentum - Zaman (P - t) Grafiği</text><line x1=\"435\" y1=\"210\" x2=\"685\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"435\" y1=\"95\" x2=\"435\" y2=\"235\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"435\" y1=\"190\" x2=\"645\" y2=\"110\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"565\" y=\"182\" text-anchor=\"middle\" fill=\"#1d4ed8\" font-size=\"11\" font-weight=\"700\">EĞİM = Delta_P / Delta_t = F_net</text><text x=\"562\" y=\"252\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">P-t grafiğinin EĞİMİ cisme etki eden</text><text x=\"562\" y=\"268\" text-anchor=\"middle\" fill=\"#1d4ed8\" font-size=\"10.5\" font-weight=\"700\">Net Kuvveti (F_net) verir (P-t ile v-t şekilce aynıdır!).</text></svg>"
-  },
-  {
-   "baslik": "Çizgisel Momentum (P) ile Kinetik Enerji (E_k) Arasındaki İlişki",
-   "metin": [
-    "Bir cismin öteleme kinetik enerjisi {koyu:E_k = (1/2) . m . v²} skaler bir büyüklük iken, çizgisel momentumunun büyüklüğü {koyu:P = m . v} şeklindedir. Kinetik enerji formülünü kütle (m) ile çarpıp tekrar kütle (m) değerine böldüğümüzde:\nE_k = (1 / (2 . m)) . (m² . v²) = {koyu:P² / (2 . m)} (veya {koyu:P = kök(2 . m . E_k)}) bağıntısı elde edilir.\n\nBu bağıntı bize çok önemli bir sonuç gösterir: Kütlesi sabit bir cismin çizgisel momentumu {koyu:2 katına} çıkarılırsa, kinetik enerjisi momentumun karesiyle orantılı olduğu için {koyu:4 katına} çıkar! Ayrıca kinetik enerji ile momentum grafiği çizildiğinde (E_k - P grafiği) parabolik bir eğri elde edilir."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Hız, Momentum ve Kinetik Enerji Özeti",
-    "metin": "Kütlesi m olan cismin hızı v -> 2v yapılırsa:\n• Çizgisel momentumu: P -> 2P (2 katına çıkar)\n• Kinetik enerjisi: E_k -> 4 E_k (4 katına çıkar)."
-   }
-  },
-  {
-   "baslik": "Günlük Yaşam ve Mühendislikte İtme: Etki Süresinin (Delta_t) Kuvvete Etkisi",
-   "metin": [
-    "İtme-momentum teoremi olan {koyu:F_ort . Delta_t = Delta_P} bağıntısı, otomotiv güvenliğinden spor ekipmanı tasarımına kadar hayat kurtaran mühendislik çözümlerinin temelidir. Belirli bir m kütlesine ve v hızına sahip olan bir cisim (örneğin kaza anında duran bir otomobil içindeki sürücü veya yüksekten düşen bir sporcu) durduğunda, ilk momentumu P = m.v ve son momentumu 0 olduğundan {koyu:momentum değişimi (Delta_P = m.v) sabittir}.\n\nDelta_P sabit iken {koyu:F_ort = Delta_P / Delta_t} bağıntısına göre durma (etkileşim) süresi olan {koyu:Delta_t ne kadar uzatılırsa, cisme etki eden ortalama darbe kuvveti (F_ort) o kadar küçülür}! Örneğin:\n• {koyu:Otomobil Hava Yastıkları (Airbag) ve Emniyet Kemeri}: Kaza anında sürücünün direksiyona 0,01 saniyede çarpması yerine hava yastığına gömülerek 0,20 saniyede durmasını sağlar; süre 20 kat uzadığı için sürücüye etki eden yıkıcı kuvvet 20 kat azalır!\n• {koyu:Katlanabilir (Akordeon) Araç Tamponları}: Çarpışma anında kontrollü şekilde bükülüp ezilerek çarpışma süresini uzatır ve kabine iletilen kuvveti düşürür.\n• {koyu:Spor ve Günlük Yaşam}: Kalecinin sert gelen topu tutarken ellerini geriye doğru çekmesi, yüksek atlama sporcularının kalın sünger minder üzerine düşmesi, boks eldivenlerinin dolgulu olması ve porselen tabakların balonlu naylona sarılması hep {koyu:Delta_t süresini artırıp F kuvvetini azaltma} ilkesine dayanır."
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "baslik": "Ters Durum: Kuvveti veya Hızı Artırmak İçin Süreyi Uzatmak",
-    "metin": "Bazen de amaç kuvveti azaltmak değil, cisme olabildiğince BÜYÜK bir momentum kazandırmaktır: Uzun namlulu tüfeklerde barut gazının mermiyi itme süresi (Delta_t) daha uzun olduğu için mermi namludan çok daha yüksek hızla (ve momentumla) çıkar; tenisçinin veya futbolcunun topa vurduktan sonra raketi/ayağını topun arkasından savurmaya devam etmesi de temas süresini (Delta_t) artırarak topa daha büyük momentum kazandırır."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 310\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect x=\"10\" y=\"10\" width=\"740\" height=\"290\" rx=\"12\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"10\" width=\"740\" height=\"32\" rx=\"12\" fill=\"#d97706\"/><rect x=\"10\" y=\"28\" width=\"740\" height=\"14\" fill=\"#d97706\"/><text x=\"380.0\" y=\"31\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"13\" font-weight=\"700\">Mühendislik ve Güvenlik: Delta_P Sabitken Etki Süresini (Delta_t) Artırmak</text><rect x=\"36\" y=\"56\" width=\"688\" height=\"54\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.5\"/><text x=\"380\" y=\"78\" text-anchor=\"middle\" fill=\"#92400e\" font-size=\"13\" font-weight=\"700\">Temel İlke:  Delta_P (Momentum Değişimi) SABİT iken;  Delta_t ARTARSA  ==&gt;  F_ort AZALIR!</text><text x=\"380\" y=\"98\" text-anchor=\"middle\" fill=\"#b45309\" font-size=\"10.5\">Çarpışma süresini uzatan esnek yüzeyler, cisme etki eden yıkıcı darbe kuvvetini küçültür.</text><rect x=\"26\" y=\"124\" width=\"168\" height=\"160\" rx=\"10\" fill=\"#fff\" stroke=\"#0284c7\" stroke-width=\"1.5\"/><rect x=\"26\" y=\"124\" width=\"168\" height=\"26\" rx=\"10\" fill=\"#0284c7\"/><text x=\"110\" y=\"142\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"10.5\" font-weight=\"700\">Otomobil Hava Yastığı</text><text x=\"110\" y=\"182\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10\">Kaza anında şişerek sürücünün</text><text x=\"110\" y=\"200\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10\">durma süresini (Delta_t) uzatır;</text><text x=\"110\" y=\"218\" text-anchor=\"middle\" fill=\"#0284c7\" font-size=\"10\" font-weight=\"700\">darbe kuvvetini (F) azaltır.</text><rect x=\"206\" y=\"124\" width=\"168\" height=\"160\" rx=\"10\" fill=\"#fff\" stroke=\"#16a34a\" stroke-width=\"1.5\"/><rect x=\"206\" y=\"124\" width=\"168\" height=\"26\" rx=\"10\" fill=\"#16a34a\"/><text x=\"290\" y=\"142\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"10.5\" font-weight=\"700\">Katlanabilir Araç Tamponu</text><text x=\"290\" y=\"182\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10\">Çarpışmada ezilerek enerji</text><text x=\"290\" y=\"200\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10\">sönümler ve etkileşim</text><text x=\"290\" y=\"218\" text-anchor=\"middle\" fill=\"#16a34a\" font-size=\"10\" font-weight=\"700\">süresini artırır.</text><rect x=\"386\" y=\"124\" width=\"168\" height=\"160\" rx=\"10\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-width=\"1.5\"/><rect x=\"386\" y=\"124\" width=\"168\" height=\"26\" rx=\"10\" fill=\"#7c3aed\"/><text x=\"470\" y=\"142\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"10.5\" font-weight=\"700\">Kaleci Eldiveni &amp; Minder</text><text x=\"470\" y=\"182\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10\">Topu tutarken elleri geriye</text><text x=\"470\" y=\"200\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10\">çekmek veya sünger minder</text><text x=\"470\" y=\"218\" text-anchor=\"middle\" fill=\"#7c3aed\" font-size=\"10\" font-weight=\"700\">etki süresini uzatır.</text><rect x=\"566\" y=\"124\" width=\"168\" height=\"160\" rx=\"10\" fill=\"#fff\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><rect x=\"566\" y=\"124\" width=\"168\" height=\"26\" rx=\"10\" fill=\"#dc2626\"/><text x=\"650\" y=\"142\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"10.5\" font-weight=\"700\">Boks Eldiveni &amp; Kask</text><text x=\"650\" y=\"182\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10\">Yumruğun veya darbenin</text><text x=\"650\" y=\"200\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10\">temas süresini uzatarak</text><text x=\"650\" y=\"218\" text-anchor=\"middle\" fill=\"#dc2626\" font-size=\"10\" font-weight=\"700\">maksimum kuvveti düşürür.</text></svg>"
-  },
-  {
-   "baslik": "İki Boyutta Momentum Değişimi Uygulamaları",
-   "metin": [
-    "Cisim yatay bir düzlemde veya eğik bir yüzeyde açılı çarparak yön değiştirdiğinde, momentum değişimi {koyu:Delta_P = P_son + (-P_ilk)} vektörel toplamıyla bulunur. Yani {koyu:ilk momentum vektörü (P_ilk) ters çevrilir (-P_ilk)} ve son momentum vektörünün ({koyu:P_son}) ucuna eklenir (veya başlangıç noktaları birleştirilerek aradaki açıya göre Pisagor / özel üçgen kuralları uygulanır).\n\nÖrneğin önce doğu yönünde 30 kg.m/s momentumla giden bir cisim, bir kuvvet etkisiyle kuzey yönünde 40 kg.m/s momentumla hareket etmeye başlarsa;(-P_ilk) batı yönünde 30, P_son kuzey yönünde 40 olduğundan 3-4-5 dik üçgeninden momentum değişiminin büyüklüğü {koyu:|Delta_P| = 50 kg.m/s} (kuzeybatı yönünde) bulunur."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Vektörel Çıkarma Kuralı",
-    "metin": "Delta_P = P_son - P_ilk işlemini yaparken 'Son vektörü aynen bırak, İlk vektörü ters çevir ve topla!' kuralını uygulamak işlem hatasını tamamen ortadan kaldırır."
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Sürtünmesiz yatay düzlemde +x yönünde 10 m/s hızla hareket eden 0,5 kg kütleli bir futbol topuna, futbolcu vurarak topun -x yönünde 20 m/s hızla geri dönmesini sağlıyor. Futbolcunun ayağının topla temas süresi 0,05 saniye olduğuna göre; a) Topa uygulanan itmeyi, b) Futbolcunun topa uyguladığı ortalama kuvveti bulunuz.",
-   "cevap": "Verilenler: m = 0,5 kg, v_ilk = +10 m/s, v_son = -20 m/s, Delta_t = 0,05 s.\nİlk momentum: P_ilk = m . v_ilk = 0,5 . (+10) = +5 kg.m/s.\nSon momentum: P_son = m . v_son = 0,5 . (-20) = -10 kg.m/s.\na) İtme momentum değişimine eşittir: I = Delta_P = P_son - P_ilk = (-10) - (+5) = -15 N.s (-x yönünde 15 N.s).\nb) I = F_ort . Delta_t => -15 = F_ort . 0,05 => F_ort = -15 / 0,05 = -300 N (-x yönünde 300 N büyüklüğünde kuvvet)."
-  },
-  {
-   "soru": "Hava direncinin önemsenmediği bir ortamda yerden 80 metre yükseklikten yatay 15 m/s hızla atılan 2 kg kütleli bir cismin yere çarpana kadar geçen sürede çizgisel momentum değişimi (Delta_P) kaç kg.m/s'dir? (g = 10 m/s²)",
-   "cevap": "Atış hareketlerinde cisme havada yalnız yer çekimi kuvveti (ağırlığı: G = m . g) etki eder.\nÖnce h = (1/2) . g . t² bağıntısından uçuş süresini bulalım:\n80 = (1/2) . 10 . t² => 5 . t² = 80 => t² = 16 => t = 4 saniye.\nYatay hızın (15 m/s) itmeye hiçbir etkisi yoktur! İtme = Momentum değişimi:\nDelta_P = I = F_net . t = (m . g) . t = (2 . 10) . 4 = 80 N.s (veya 80 kg.m/s, aşağı yönlü)."
-  },
-  {
-   "soru": "Kütlesi 4 kg olan bir cismin çizgisel momentumunun büyüklüğü 24 kg.m/s olduğuna göre bu cismin kinetik enerjisi kaç Joule'dür?",
-   "cevap": "Kinetik enerji ile çizgisel momentum arasındaki E_k = P² / (2 . m) bağıntısını kullanalım:\nE_k = (24)² / (2 . 4) = 576 / 8 = 72 Joule bulunur.\n(Alternatif: P = m . v => 24 = 4 . v => v = 6 m/s; E_k = (1/2) . 4 . 6² = 2 . 36 = 72 J.)"
-  },
-  {
-   "soru": "t = 0 anında ilk momentumu +10 kg.m/s olan 2 kg kütleli bir cisme etki eden net kuvvet-zaman (F-t) grafiğinde; 0-4 s aralığında sabit F = +15 N, 4-6 s aralığında ise sabit F = -10 N kuvvet uygulanmaktadır. Cismin t = 6 s anındaki son momentumu ve hızı nedir?",
-   "cevap": "F-t grafiğinin altındaki cebirsel alan toplam itmeyi (Delta_P) verir:\n• 0-4 s alanı: I1 = (+15) . 4 = +60 N.s\n• 4-6 s (2 s süre) alanı: I2 = (-10) . 2 = -20 N.s\nToplam itme (momentum değişimi): Delta_P = +60 - 20 = +40 kg.m/s.\nSon momentum: P_son = P_ilk + Delta_P = 10 + 40 = +50 kg.m/s.\nSon hız: P_son = m . v_son => 50 = 2 . v_son => v_son = +25 m/s bulunur."
-  },
-  {
-   "soru": "Beton zemine düşen bir cam bardağın kırıldığı, aynı yükseklikten kalın bir halı üzerine düşen özdeş bardağın ise kırılmadığı gözlemleniyor. Bu durumu İtme-Momentum Teoremi ile açıklayınız.",
-   "cevap": "Aynı yükseklikten bırakılan özdeş iki bardak yere aynı hızla çarpar ve durur; dolayısıyla her iki durumda da bardağın momentum değişimi (Delta_P = m . v) birbirine eşittir. Ancak I = F . Delta_t = Delta_P bağıntısına göre; beton zeminde durma süresi (Delta_t) çok kısa olduğu için bardağa etki eden ortalama kuvvet (F) çok büyük olur ve bardak kırılır. Kalın halı ise esneyerek durma süresini (Delta_t) uzatır, böylece bardağa etki eden maksimum kuvveti kırılma sınırının altına düşürür."
-  }
- ],
- "etkinlikler": [
-  {
-   "soru": "İtme ve çizgisel momentum kavramlarıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
-   "secenekler": [
-    "İtme vektörel bir büyüklüktür ve yönü net kuvvetin yönüyle aynıdır.",
-    "Çizgisel momentumun yönü cismin hız vektörünün yönüyle aynıdır.",
-    "Bir cisme uygulanan net itme, cismin çizgisel momentum değişimine eşittir.",
-    "Net kuvvet-zaman (F-t) grafiğinin eğimi momentum değişimini verir.",
-    "N . s (Newton.saniye) birimi kg . m/s birimine eşdeğerdir."
-   ],
-   "dogru": 3,
-   "aciklama": "Net kuvvet-zaman (F-t) grafiğinin eğimi değil, zaman ekseniyle sınırladığı ALAN itmeyi ve momentum değişimini verir.",
-   "tur": "coktan"
-  },
-  {
-   "soru": "Kütlesi sabit bir cismin çizgisel momentumunun büyüklüğü 3 katına çıkarılırsa, bu cismin öteleme kinetik enerjisi nasıl değişir?",
-   "secenekler": [
-    "3 katına çıkar",
-    "6 katına çıkar",
-    "9 katına çıkar",
-    "Değişmez",
-    "kök(3) katına çıkar"
-   ],
-   "dogru": 2,
-   "aciklama": "E_k = P² / (2 . m) bağıntısına göre kütle sabitken kinetik enerji momentumun karesiyle doğru orantılıdır. Momentum 3 katına çıkarsa kinetik enerji 3² = 9 katına çıkar.",
-   "tur": "coktan"
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "11-fizik-5",
+  "sinif": 11,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 5,
+  "tarih": "12-16 Ekim",
+  "yayin_tarihi": "2026-10-16",
+  "unite": "KUVVET VE HAREKET",
+  "konu": "Newton'ın Hareket Yasaları ve Serbest Cisim Diyagramları (FİZ.11.1.4)",
+  "ciktilar": [
+    "FİZ.11.1.4. Newton'ın Hareket Yasaları ile ilgili tümevarımsal akıl yürütebilme.",
+    "Bir cisme etki eden kuvvetleri serbest cisim diyagramı üzerinde doğru yön ve büyüklüklerle gösterir.",
+    "Yatay, düşey ve eğik düzlemlerde tekli veya birbirine bağlı cisim sistemlerinin ivmesini ve ip gerilmelerini hesaplar."
+  ],
+  "giris": "Klasik mekaniğin temelini oluşturan {koyu:Newton'ın Hareket Yasaları}, kuvvet ile hareket arasındaki neden-sonuç ilişkisini matematiksel olarak modeller. Bir cismin neden durduğunu, sabit hızla ilerlediğini ya da hızlandığını anlamak için önce cisme etki eden tüm dış kuvvetleri {koyu:serbest cisim diyagramında} göstermek, ardından {koyu:eylemsizlik, temel yasa ve etki-tepki} ilkelerini uygulamak gerekir.",
+  "ozet": [
+    "{koyu:Newton'ın Birinci Yasası (Eylemsizlik):} Bir cisme etki eden net kuvvet sıfır ise ({koyu:F_net = 0}), cisim duruyorsa durmaya, hareket hâlindeyse {koyu:sabit hızla (a = 0)} hareketine devam eder.",
+    "{koyu:Newton'ın İkinci Yasası (Dinamiğin Temel Prensibi):} Bir cisme etki eden net kuvvet sıfırdan farklı ise cisim net kuvvet yönünde ivmelenir: {koyu:F_net = m · a}.",
+    "{koyu:Newton'ın Üçüncü Yasası (Etki-Tepki):} Etkileşen iki cisim birbirine eşit büyüklükte ve zıt yönde kuvvet uygular ({koyu:F₁₂ = −F₂₁}); bu kuvvetler {koyu:farklı cisimler üzerinde} olduğundan birbirini dengelemez.",
+    "{koyu:Serbest Cisim Diyagramı (SCD)}, incelenen cismin çevresinden soyutlanarak {koyu:cismin kendisine dışarıdan etki eden} kuvvet vektörlerinin (ağırlık G, normal kuvvet N, ip gerilmesi T, sürtünme f_s) gösterildiği şemadır.",
+    "Eğik düzlem üzerindeki m kütleli cismin ağırlığının eğik düzleme paralel bileşeni {koyu:G_x = m · g · sin(α)}, dik bileşeni ise {koyu:G_y = m · g · cos(α)} olup sürtünmesiz eğik düzlemde ivme kütleden bağımsız olarak {koyu:a = g · sin(α)} olur.",
+    "İple birbirine bağlı cisim sistemlerinde önce tüm sistem için {koyu:a} = {kesir:F_net(toplam)|m_toplam} bağıntısıyla ortak ivme bulunur, ardından tek bir kütlenin diyagramından {koyu:ip gerilmesi (T)} hesaplanır."
+  ],
+  "bolumler": [
     {
-     "metin": "Momentum-zaman (P-t) grafiğinin eğimi, cisme etki eden net kuvveti (F_net) verir.",
-     "dogru": true,
-     "aciklama": "F_net = Delta_P / Delta_t bağıntısına göre P-t grafiğinin eğimi net kuvvete eşittir."
+      "baslik": "1. Newton'ın Birinci Hareket Yasası: Eylemsizlik",
+      "metin": [
+        "Maddelerin mevcut hareket durumlarını (durgunluk veya sabit hızlı hareket) koruma eğilimine {koyu:eylemsizlik} adı verilir. {koyu:Newton'ın Birinci Hareket Yasası}'na göre, bir cisme etki eden dış kuvvetlerin bileşkesi (net kuvvet) sıfır ise ({koyu:∑F = F_net = 0}) cismin ivmesi sıfırdır ({koyu:a = 0}). Bu durumda durmakta olan bir cisim durmaya devam eder; başlangıçta ilk hızı olan bir cisim ise doğrultusunu ve süratini değiştirmeden {koyu:sabit hızlı (düzgün doğrusal) hareketini} sürdürür. Bir cismin eylemsizliğinin ölçüsü onun {koyu:kütlesidir (m)}; kütlesi büyük olan cisimlerin hareket durumunu değiştirmek daha zordur."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Net Kuvvet Sıfır İken Hareket Olabilir!",
+        "metin": "{koyu:F_net = 0} olması cismin mutlaka durduğu anlamına gelmez! Uzay boşluğunda veya sürtünmesiz ortamda {koyu:sabit hızla (v = sabit)} ilerleyen bir cisme etki eden net kuvvet de sıfırdır."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"14\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">NEWTON'IN HAREKET YASALARI (DİNAMİĞİN TEMEL İLKELERİ)</text><rect x=\"20\" y=\"44\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#ECFDF5\" stroke=\"#059669\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"44\" width=\"205\" height=\"30\" rx=\"10\" fill=\"#059669\"/><rect x=\"20\" y=\"62\" width=\"205\" height=\"12\" fill=\"#059669\"/><text x=\"122.5\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">1. EYLEMSİZLİK YASASI</text><text x=\"32\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Net kuvvet sıfır ise:</text><text x=\"32\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  ΣF = 0  =>  a = 0</text><text x=\"32\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Duran cisim durmaya</text><text x=\"32\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">  devam eder (v = 0).</text><text x=\"32\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">• Hareketli cisim sabit</text><text x=\"32\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  hızla (düzgün doğrusal)</text><text x=\"32\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">  hareketini sürdürür.</text><text x=\"32\" y=\"218\" font-size=\"10.5\" fill=\"#1E293B\">• Kütle, eylemsizliğin ölçüsüdür.</text><rect x=\"237\" y=\"44\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#EFF6FF\" stroke=\"#2563EB\" stroke-width=\"1.8\"/><rect x=\"237\" y=\"44\" width=\"205\" height=\"30\" rx=\"10\" fill=\"#2563EB\"/><rect x=\"237\" y=\"62\" width=\"205\" height=\"12\" fill=\"#2563EB\"/><text x=\"339.5\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">2. TEMEL YASA (Fnet = m·a)</text><text x=\"249\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Net kuvvet sıfırdan farklı</text><text x=\"249\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  ise cisim ivmeli hareket</text><text x=\"249\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">  yapar: Fnet = m · a</text><text x=\"249\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• İvme (a), net kuvvetle</text><text x=\"249\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  aynı yönlü ve doğru</text><text x=\"249\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  orantılıdır.</text><text x=\"249\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">• Sabit kuvvette ivme,</text><text x=\"249\" y=\"218\" font-size=\"10.5\" fill=\"#1E293B\">  kütle ile ters orantılıdır.</text><rect x=\"455\" y=\"44\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#F5F3FF\" stroke=\"#7C3AED\" stroke-width=\"1.8\"/><rect x=\"455\" y=\"44\" width=\"205\" height=\"30\" rx=\"10\" fill=\"#7C3AED\"/><rect x=\"455\" y=\"62\" width=\"205\" height=\"12\" fill=\"#7C3AED\"/><text x=\"557.5\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">3. ETKİ-TEPKİ YASASI</text><text x=\"467\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Her etki kuvvetine eşit</text><text x=\"467\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  büyüklükte ve zıt yönde</text><text x=\"467\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">  bir tepki kuvveti vardır:</text><text x=\"467\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">  F₁₂ = -F₂₁</text><text x=\"467\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">• Etki ve tepki kuvvetleri</text><text x=\"467\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  FARKLI cisimler üzerindedir.</text><text x=\"467\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">• Bu nedenle birbirini</text><text x=\"467\" y=\"218\" font-size=\"10.5\" fill=\"#1E293B\">  dengelemez (bileşkesi alınmaz).</text></svg>"
     },
     {
-     "metin": "Otomobillerdeki hava yastıkları (airbag), kaza anında sürücünün toplam momentum değişimini (Delta_P) sıfıra indirmek için tasarlanmıştır.",
-     "dogru": false,
-     "aciklama": "Sürücü v hızından 0 hızına durduğu için toplam momentum değişimi (Delta_P = m.v) değişmez! Hava yastığı durma süresini (Delta_t) uzatarak sürücüye etki eden ortalama darbe kuvvetini (F) azaltır."
-    }
-   ]
-  },
-  {
-   "soru": "İtme ve çizgisel momentuma ait bağıntı ve grafik özelliklerini doğru karşılıklarıyla eşleştiriniz.",
-   "aciklama": "Temel denklemler ve grafik özellikleri itme-momentum problemlerinin çözüm anahtarıdır.",
-   "tur": "eslestir",
-   "ciftler": [
-    [
-     "I = F_net . Delta_t",
-     "Cisme uygulanan net itme bağıntısı (N . s)"
-    ],
-    [
-     "P = m . v",
-     "Cismin çizgisel momentum bağıntısı (kg . m/s)"
-    ],
-    [
-     "E_k = P² / (2 . m)",
-     "Kinetik enerji ile çizgisel momentum arasındaki ilişki"
-    ],
-    [
-     "Kuvvet-zaman (F-t) grafiğinin altındaki alan",
-     "Net itme (I) ve çizgisel momentum değişimi (Delta_P)"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
-   "cumleler": [
-    {
-     "metin": "Hava direncinin ihmal edildiği bir ortamda eğik olarak atılan bir cisme uçuş süresince etki eden itmenin yönü daima yerin merkezine (___) doğrudur.",
-     "cevap": "aşağı"
+      "baslik": "2. Newton'ın İkinci Hareket Yasası: Dinamiğin Temel Prensibi",
+      "metin": [
+        "Bir cisme etki eden net kuvvet sıfırdan farklı olduğunda cismin hızı değişir, yani cisim {koyu:ivmeli hareket} yapar. {koyu:Newton'ın İkinci Hareket Yasası}'na göre bir cismin kazandığı ivme ({koyu:a}), cisme etki eden net kuvvet ({koyu:F_net}) ile doğru orantılı ve her durumda net kuvvetle {koyu:aynı yönlüdür}; cismin kütlesi ({koyu:m}) ile ters orantılıdır. Bu ilişki matematiksel olarak {koyu:F_net = m · a} bağıntısıyla modellenir. SI birim sisteminde kütle birimi kilogram ({koyu:kg}), ivme birimi {koyu:m/s²} alındığında kuvvet birimi {koyu:Newton (N = kg·m/s²)} olur. Farklı kuvvetlerin uygulandığı bir cisim için çizilen {koyu:F_net – a grafiğinin eğimi} ({kesir:F_net|a} = m) cismin sabit kütlesini verir."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Ağırlık (G) Bir Kuvvettir",
+        "metin": "Bir gezegenin kütle çekim alanında bulunan m kütleli cisme uyguladığı çekim kuvvetine {koyu:ağırlık} denir ve {koyu:G = m · g} bağıntısıyla hesaplanır (Dünya yüzeyinde g ≈ 10 m/s² alınır)."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"14\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">SERBEST CİSİM DİYAGRAMI (SCD) VE TEMEL KUVVETLER</text><rect x=\"20\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#ECFEFF\" stroke=\"#0891B2\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#0891B2\"/><rect x=\"20\" y=\"62\" width=\"310\" height=\"12\" fill=\"#0891B2\"/><text x=\"175.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">SERBEST CİSİM DİYAGRAMI KURALLARI</text><text x=\"32\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Cisim noktasal bir kütle veya sade bir kutu olarak</text><text x=\"32\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  temsil edilir; çevre nesnelerden soyutlanır.</text><text x=\"32\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Sadece CİSMİN KENDİSİNE etki eden dış kuvvet</text><text x=\"32\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">  vektörleri (G, N, F, T, fs) diyagramda gösterilir.</text><text x=\"32\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">• Cismin başka yüzeylere uyguladığı etki kuvvetleri</text><text x=\"32\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  veya m·a (net kuvvet) ayrı bir vektör olarak çizilmez.</text><rect x=\"350\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#FEF3C7\" stroke=\"#D97706\" stroke-width=\"1.8\"/><rect x=\"350\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#D97706\"/><rect x=\"350\" y=\"62\" width=\"310\" height=\"12\" fill=\"#D97706\"/><text x=\"505.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">YATAY VE EĞİK DÜZLEMDE KUVVETLER</text><text x=\"362\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Ağırlık (G = m·g): Daima yerin merkezine (düşey</text><text x=\"362\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  aşağı) doğrudur.</text><text x=\"362\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Normal Kuvvet (N): Yüzeyin cisme dik olarak</text><text x=\"362\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">  uyguladığı tepki kuvvetidir (Yatayda N = m·g).</text><text x=\"362\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">• Eğik düzlemde (eğim α): Yüzeye paralel bileşen</text><text x=\"362\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  Gx = m·g·sinα; yüzeye dik bileşen Gy = m·g·cosα.</text></svg>"
     },
     {
-     "metin": "Kütlesi 2 kg olan bir top yatay duvara 10 m/s hızla dik çarpıp aynı hız büyüklüğüyle (10 m/s) geri dönerse, momentum değişiminin büyüklüğü ___ kg.m/s olur.",
-     "cevap": "40"
+      "baslik": "3. Newton'ın Üçüncü Hareket Yasası: Etki-Tepki Yasası",
+      "metin": [
+        "Doğada kuvvetler tek başına değil, etkileşen iki cisim arasında çiftler hâlinde bulunur. {koyu:Newton'ın Üçüncü Hareket Yasası}'na göre A cismi B cismine bir {koyu:etki kuvveti (F_AB)} uyguladığında, B cismi de A cismine aynı anda, {koyu:eşit büyüklükte ve zıt yönde} bir {koyu:tepki kuvveti (F_BA = −F_AB)} uygular. Etki ve tepki kuvvetlerinin büyüklükleri birbirine eşittir ({koyu:{uzunluk:F_AB} = {uzunluk:F_BA}}); kütlelerin farklı olması bu eşitliği değiştirmez (örneğin Dünya'nın Ay'a uyguladığı çekim kuvveti ile Ay'ın Dünya'ya uyguladığı çekim kuvveti eşit büyüklüktedir). En kritik kural şudur: Etki ve tepki kuvvetleri {koyu:iki farklı cisim üzerine} etki ettiği için bileşkeleri alınamaz ve {koyu:birbirini dengelemez}."
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "baslik": "Masadaki Cisimde G ve N Etki-Tepki Çifti Değildir",
+        "metin": "Yatay masada duran bir cisme etki eden ağırlık ({koyu:G}, Dünya'nın cisme çekimi) ile yüzeyin normal kuvveti ({koyu:N}, masanın cisme tepkisi) {koyu:aynı cisim üzerinde} olduğundan birbirini dengeler ancak etki-tepki çifti değildir; G'nin tepkisi cismin Dünya'yı çekmesidir."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 260\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"260\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"14\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">EĞİK DÜZLEM VE BİRBİRİNE BAĞLI CİSİM SİSTEMLERİ</text><rect x=\"25\" y=\"44\" width=\"630\" height=\"42\" rx=\"8\" fill=\"#ECFDF5\" stroke=\"#059669\" stroke-width=\"1.5\"/><text x=\"40\" y=\"60\" font-size=\"11\" font-weight=\"bold\" fill=\"#059669\">1. SÜRTÜNMESİZ EĞİK DÜZLEMDE İVME</text><text x=\"40\" y=\"77\" font-size=\"10.5\" fill=\"#1E293B\">Eğik düzlemdeki cismi aşağı çeken net kuvvet Fnet = m·g·sinα olduğundan ivme kütleden bağımsızdır: a = g·sinα.</text><rect x=\"25\" y=\"94\" width=\"630\" height=\"42\" rx=\"8\" fill=\"#EFF6FF\" stroke=\"#2563EB\" stroke-width=\"1.5\"/><text x=\"40\" y=\"110\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563EB\">2. SÜRTÜNMELİ YATAY DÜZLEMDE HAREKET</text><text x=\"40\" y=\"127\" font-size=\"10.5\" fill=\"#1E293B\">Yatay F kuvvetiyle çekilen cisimde fs = k·m·g sürtünmesi varsa: Fnet = F - k·m·g = m·a bağıntısı uygulanır.</text><rect x=\"25\" y=\"144\" width=\"630\" height=\"42\" rx=\"8\" fill=\"#F5F3FF\" stroke=\"#7C3AED\" stroke-width=\"1.5\"/><text x=\"40\" y=\"160\" font-size=\"11\" font-weight=\"bold\" fill=\"#7C3AED\">3. İPLE BAĞLI CİSİMLERDE SİSTEM İVMESİ</text><text x=\"40\" y=\"177\" font-size=\"10.5\" fill=\"#1E293B\">Birlikte hareket eden cisimlerin ivme büyüklüğü ortaktır: a_sistem = Fnet_toplam / m_toplam.</text><rect x=\"25\" y=\"194\" width=\"630\" height=\"42\" rx=\"8\" fill=\"#FEF3C7\" stroke=\"#D97706\" stroke-width=\"1.5\"/><text x=\"40\" y=\"210\" font-size=\"11\" font-weight=\"bold\" fill=\"#D97706\">4. İP GERİLMESİ (T) HESABI</text><text x=\"40\" y=\"227\" font-size=\"10.5\" fill=\"#1E293B\">Sistem ivmesi bulunduktan sonra tek bir cisim için serbest cisim diyagramı yazılıp T gerilmesi hesaplanır.</text></svg>"
+    },
+    {
+      "baslik": "4. Serbest Cisim Diyagramı (SCD) Çizim İlkeleri",
+      "metin": [
+        "Dinamik problemlerini hatasız çözmenin ilk adımı {koyu:Serbest Cisim Diyagramı (SCD)} oluşturmaktır. Serbest cisim diyagramında incelenen cisim çevresindeki ip, makara veya yüzeylerden yalıtılarak noktasal bir kütle ya da sade bir kutu olarak çizilir ve {koyu:cismin kendisine dışarıdan etki eden gerçek kuvvet vektörleri} gösterilir. Bu kuvvetler; daima düşey aşağı yönlü olan {koyu:ağırlık (G = m·g)}, temas yüzeyinden cisme doğru dik yönlü olan {koyu:normal kuvvet (N)}, ip boyunca cisimden dışarı doğru çeken {koyu:ip gerilme kuvveti (T)}, uygulanan dış kuvvet ({koyu:F}) ve harekete/zorlamaya ters yönlü olan {koyu:sürtünme kuvvetidir (f_s)}."
+      ],
+      "kutu": {
+        "tur": "bilgi",
+        "baslik": "Diyagramda Gösterilmemesi Gerekenler",
+        "metin": "Serbest cisim diyagramında {koyu:net kuvvet (m·a)} veya bileşenlerine ayrılmış kuvvetin hem kendisi hem bileşenleri aynı anda ayrı birer kuvvetmiş gibi çizilmez; iç kuvvetler diyagramda yer almaz."
+      }
+    },
+    {
+      "baslik": "5. Eğik Düzlem Üzerinde Hareket Analizi",
+      "metin": [
+        "Yatayla {koyu:α} açısı yapan bir eğik düzlem üzerindeki m kütleli cismin ağırlığı ({koyu:G = m·g}) dikey doğrultudadır. Hareketi analiz etmek için koordinat eksenlerinden biri eğik düzleme paralel (x ekseni), diğeri eğik düzleme dik (y ekseni) seçilir. Ağırlık vektörü bileşenlerine ayrıldığında, cismi eğik düzlemden aşağı doğru kaydırmaya çalışan paralel bileşen {koyu:G_x = m · g · sin(α)}, cismi yüzeye bastıran dik bileşen ise {koyu:G_y = m · g · cos(α)} olur. Eğik düzleme dik doğrultuda hareket olmadığından yüzeyin normal tepki kuvveti {koyu:N = m · g · cos(α)} değerine eşittir. Sürtünmesiz eğik düzlemde serbest bırakılan cismin ivmesi {koyu:m · g · sin(α) = m · a} denkleminden kütleden bağımsız olarak {koyu:a = g · sin(α)} bulunur."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Sürtünmeli Eğik Düzlemde Net Kuvvet",
+        "metin": "Kinetik sürtünme katsayısı k olan eğik düzlemde aşağı kayan cisme etki eden sürtünme kuvveti {koyu:f_s = k · N = k · m · g · cos(α)} olup ivme {koyu:a = g · (sinα − k·cosα)} bağıntısıyla bulunur."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"14\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">ATWOOD ALETİ VE MAKARA SİSTEMLERİNDE DİNAMİK ANALİZ</text><rect x=\"20\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#EFF6FF\" stroke=\"#2563EB\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#2563EB\"/><rect x=\"20\" y=\"62\" width=\"310\" height=\"12\" fill=\"#2563EB\"/><text x=\"175.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">SABİT MAKARADA İKİ KÜTLE (m₁ &gt; m₂)</text><text x=\"32\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Sürtünmesiz sabit makaraya asılı m₁ ve m₂ kütleli</text><text x=\"32\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  cisimlerden m₁ &gt; m₂ ise sistem m₁ yönünde ivmelenir.</text><text x=\"32\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Net kuvvet: Fnet = m₁·g - m₂·g = (m₁ - m₂)·g</text><text x=\"32\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• Sistemin ortak ivmesi:</text><text x=\"32\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  a = [(m₁ - m₂) / (m₁ + m₂)] · g</text><text x=\"32\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">• İp gerilmesi T, m₂·g den büyük, m₁·g den küçüktür.</text><rect x=\"350\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#ECFDF5\" stroke=\"#059669\" stroke-width=\"1.8\"/><rect x=\"350\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#059669\"/><rect x=\"350\" y=\"62\" width=\"310\" height=\"12\" fill=\"#059669\"/><text x=\"505.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">MASA ÜZERİNDEKİ CİSİM VE SARKAN KÜTLE</text><text x=\"362\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Sürtünmesiz yatay masadaki m₁ kütlesi, makaradan</text><text x=\"362\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  sarkan m₂ kütlesine iple bağlı olsun.</text><text x=\"362\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Sistemi harekete geçiren net kuvvet sarkan cismin</text><text x=\"362\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">  ağırlığıdır: Fnet = m₂·g</text><text x=\"362\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">• Ortak ivme: a = (m₂·g) / (m₁ + m₂)</text><text x=\"362\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">• Yataydaki m₁ cismi için ip gerilmesi: T = m₁ · a.</text></svg>"
+    },
+    {
+      "baslik": "6. Birbirine Bağlı Cisimler ve Makara Sistemleri",
+      "metin": [
+        "Esnek olmayan bir iple birbirine bağlanarak birlikte hareket eden kütle sistemlerinde, tüm cisimlerin {koyu:ivme büyüklükleri (a) birbirine eşittir} ve aynı ipin her noktasındaki {koyu:gerilme kuvveti (T)} aynıdır. Bu tür sistemlerde çözüm iki adımda yapılır: İlk adımda tüm sistem tek bir kütleymiş gibi düşünülerek ip gerilmeleri (iç kuvvetler) birbirini götürür ve {koyu:a} = {kesir:F_net(sistem)|m_toplam} bağıntısıyla ortak ivme hesaplanır. İkinci adımda ise kütlelerden yalnız biri seçilip kendi serbest cisim diyagramına {koyu:F_net = m · a} yazılarak aradaki {koyu:ip gerilmesi (T)} bulunur."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Atwood Aletinde İvme Formülü",
+        "metin": "Sürtünmesiz sabit makaranın iki ucuna asılı m₁ ve m₂ (m₁ > m₂) kütleli sistemde ortak ivme {koyu:a = {kesir:m₁ − m₂|m₁ + m₂} · g} bağıntısıyla hesaplanır."
+      }
     }
-   ],
-   "fazla": [
-    "kavram",
-    "ilke"
-   ]
-  },
-  {
-   "soru": "70 kg kütleli bir otomobil sürücüsü 20 m/s (72 km/sa) hızla giderken gerçekleşen bir çarpışma testinde; A durumunda emniyet kemeri ve hava yastığı olmadığı için direksiyona çarparak 0,02 saniyede duruyor, B durumunda ise hava yastığı sayesinde 0,20 saniyede duruyor. Her iki durumda sürücünün momentum değişimini ve sürücüye etki eden ortalama kuvvetleri hesaplayarak güvenlik farkını değerlendiriniz.",
-   "ipucu": "Önce Delta_P = m . (v_son - v_ilk) büyüklüğünü bulunuz, ardından A ve B süreleri için F = Delta_P / Delta_t değerlerini hesaplayınız.",
-   "tur": "ogretici",
-   "cevap": "1) Momentum Değişimi: Her iki durumda da sürücü 20 m/s hızdan 0'a durduğu için momentum değişiminin büyüklüğü eşittir: |Delta_P| = m . v = 70 . 20 = 1400 kg.m/s.\n2) A Durumu (Hava yastıksız, Delta_t = 0,02 s): F_A = 1400 / 0,02 = 70.000 Newton (yaklaşık 7 tonluk ölümcül bir kuvvet!).\n3) B Durumu (Hava yastıklı, Delta_t = 0,20 s): F_B = 1400 / 0,20 = 7.000 Newton.\nDeğerlendirme: Hava yastığı durma süresini 10 kat uzatarak sürücüye etki eden darbe kuvvetini 70.000 N'dan 7.000 N'a (10'da birine) düşürmüş ve hayat kurtarmıştır.",
-   "ipuclari": [
-    "Konunun temel kavramlarını ve tanımlarını hatırlayınız.",
-    "Sebep-sonuç ilişkisini kurarak değerlendiriniz."
-   ]
-  }
- ]
+  ],
+  "ornekler": [
+    {
+      "soru": "Sürtünmesiz yatay düzlemde durmakta olan 4 kg kütleli bir cisme yatay doğrultuda aynı yönlü 18 N ve 10 N, zıt yönlü 8 N büyüklüğünde üç kuvvet uygulanıyor. Cismin ivmesi kaç m/s² dir?",
+      "cevap": "Cisme etki eden net kuvvet {koyu:F_net = 18 + 10 − 8 = 20 N} olur. Newton'ın ikinci yasasından ({koyu:F_net = m · a}) {koyu:20 = 4 · a} ve {koyu:a = 5 m/s²} (18 N ve 10 N kuvvetlerinin yönünde) bulunur."
+    },
+    {
+      "soru": "Kinetik sürtünme katsayısının k = 0,25 olduğu yatay düzlemdeki 6 kg kütleli bir sandığa yatay 39 N kuvvet uygulanıyor. Sandığın ivmesini hesaplayınız (g = 10 m/s²).",
+      "cevap": "Yatay düzlemde normal kuvvet {koyu:N = m · g = 6 · 10 = 60 N} ve sürtünme kuvveti {koyu:f_s = k · N = 0,25 · 60 = 15 N} olur. Net kuvvet {koyu:F_net = F − f_s = 39 − 15 = 24 N} olduğundan {koyu:a = {kesir:F_net|m} = {kesir:24|6} = 4 m/s²} bulunur."
+    },
+    {
+      "soru": "Eğim açısı 37° olan sürtünmesiz bir eğik düzlemin üst noktasından serbest bırakılan 5 kg kütleli cismin ivmesi ve yüzeyin cisme uyguladığı normal kuvvet kaçtır? (g = 10 m/s², sin37° = 0,6; cos37° = 0,8)",
+      "cevap": "Sürtünmesiz eğik düzlemde ivme kütleden bağımsızdır: {koyu:a = g · sin37° = 10 · 0,6 = 6 m/s²}. Yüzeyin normal tepki kuvveti ise {koyu:N = m · g · cos37° = 5 · 10 · 0,8 = 40 N} olarak hesaplanır."
+    },
+    {
+      "soru": "Sürtünmesiz yatay düzlemde iple birbirine bağlı m₁ = 2 kg ve m₂ = 3 kg kütleli iki cisimden öndeki m₂ cismine yatay F = 30 N kuvvet uygulanarak sistem çekiliyor. Sistemin ivmesi ve cisimler arasındaki ip gerilmesi (T) kaçtır?",
+      "cevap": "Toplam kütle {koyu:m_toplam = 2 + 3 = 5 kg} olduğundan sistemin ortak ivmesi {koyu:a = {kesir:F_net|m_toplam} = {kesir:30|5} = 6 m/s²} olur. Arkadaki m₁ = 2 kg cismine etki eden tek yatay kuvvet T olduğundan {koyu:T = m₁ · a = 2 · 6 = 12 N} bulunur."
+    },
+    {
+      "soru": "Sürtünmesiz sabit bir makaranın iki ucuna m₁ = 7 kg ve m₂ = 3 kg kütleli iki cisim asılarak serbest bırakılıyor. Sistemin ivmesini ve ipteki T gerilme kuvvetini bulunuz (g = 10 m/s²).",
+      "cevap": "Net kuvvet {koyu:F_net = m₁·g − m₂·g = 70 − 30 = 40 N} ve toplam kütle {koyu:7 + 3 = 10 kg} olduğundan ortak ivme {koyu:a = {kesir:40|10} = 4 m/s²} dir. Yukarı hızlanan m₂ = 3 kg cismi için {koyu:T − m₂·g = m₂·a} → {koyu:T − 30 = 3 · 4 = 12} → {koyu:T = 42 N} bulunur."
+    },
+    {
+      "soru": "Dünya, kütlesi kendisinden çok daha küçük olan bir elmayı kendine doğru çekerken elma da Dünya'yı çeker mi? Bu iki kuvvetin büyüklüklerini Newton'ın 3. yasasına göre karşılaştırınız.",
+      "cevap": "Evet, Newton'ın {koyu:Etki-Tepki Yasası} gereği Dünya'nın elmaya uyguladığı çekim kuvveti ile elmanın Dünya'ya uyguladığı çekim kuvveti {koyu:büyüklükçe birbirine eşittir ve zıt yönlüdür}. Ancak elmanın kütlesi çok küçük olduğundan ({koyu:a = F/m}) büyük bir ivmeyle yere düşer, Dünya'nın kütlesi devasa olduğundan ivmesi hissedilemeyecek kadar küçüktür."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir cisme etki eden net kuvvet sıfır (F_net = 0) olduğunda cismin hareket durumu ile ilgili aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Cisim duruyorsa durur, ilk hızı varsa sabit hızla hareketini sürdürür.",
+        "Cisim sabit bir ivmeyle hızlanmaya devam eder.",
+        "Cismin hızı düzgün olarak azalarak sıfırlanır.",
+        "Cismin kütlesi zamanla azalarak eylemsizliği kaybolur.",
+        "Cisim net kuvvet yönünde parabolik yörünge izler."
+      ],
+      "dogru": 0,
+      "aciklama": "Newton'ın 1. yasasına (Eylemsizlik) göre net kuvvet sıfır olduğunda ivme sıfırdır; duran cisim durmaya, hareketli cisim sabit hızla ilerlemeye devam eder."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Sürtünmesiz yatay düzlemde iple birbirine bağlı m₁ = 3 kg ve m₂ = 5 kg kütleli iki blok, öndeki m₂ bloğuna uygulanan yatay 40 N kuvvetle çekilmektedir. Blokları birbirine bağlayan ipteki gerilme kuvveti kaç Newton'dır?",
+      "secenekler": [
+        "10",
+        "15",
+        "20",
+        "25",
+        "30"
+      ],
+      "dogru": 1,
+      "aciklama": "Sistemin ivmesi a = F / (m₁ + m₂) = 40 / (3 + 5) = 5 m/s² dir. Arkadaki m₁ = 3 kg kütleli bloğu çeken T ip gerilmesi T = m₁ · a = 3 · 5 = 15 N olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Yatayla 30° açı yapan sürtünmesiz eğik düzlem üzerinden serbest bırakılan m ve 3m kütleli iki cismin eğik düzlem üzerindeki ivmelerinin büyüklükleri oranı (a₁ / a₂) kaçtır?",
+      "secenekler": [
+        "1/9",
+        "1/3",
+        "1",
+        "3",
+        "9"
+      ],
+      "dogru": 2,
+      "aciklama": "Sürtünmesiz eğik düzlemde ivme a = g · sin(α) olup kütleden bağımsızdır; bu nedenle her iki cismin ivmesi de eşit ve oranları 1'dir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Newton'ın Üçüncü Hareket Yasası (Etki-Tepki) ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+      "secenekler": [
+        "Etki ve tepki kuvvetlerinin büyüklükleri birbirine eşittir.",
+        "Etki ve tepki kuvvetleri zıt yönlü iki vektördür.",
+        "Etki ve tepki kuvvetleri aynı doğrultu üzerindedir.",
+        "Etki ve tepki kuvvetleri aynı cisim üzerine etki ederek birbirini dengeler.",
+        "Etki ve tepki kuvvetleri etkileşen iki farklı cisim üzerinde ortaya çıkar."
+      ],
+      "dogru": 3,
+      "aciklama": "Etki ve tepki kuvvetleri iki farklı cisim üzerine etki eder; aynı cisim üzerinde olmadıkları için bileşkeleri alınamaz ve birbirini dengelemez."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Bir cisme etki eden net kuvvet vektörü ile cismin kazandığı ivme vektörü aynı yönlüdür.",
+          "dogru": true,
+          "aciklama": "F_net = m · a bağıntısında kütle (m) pozitif skaler olduğundan F_net ve a vektörleri aynı yönlüdür."
+        },
+        {
+          "metin": "Serbest cisim diyagramında cisme etki eden kuvvetlerin yanı sıra m·a net kuvvet vektörü de ayrı bir ok olarak çizilmelidir.",
+          "dogru": false,
+          "aciklama": "Serbest cisim diyagramında cismin kendisine uygulanan gerçek dış kuvvetler çizilir; m·a bu kuvvetlerin sonucudur, ayrı bir kuvvet olarak eklenmez."
+        },
+        {
+          "metin": "Eğik düzlem üzerindeki bir cisme yüzeyin uyguladığı normal kuvvetin büyüklüğü m·g·cos(α) ifadesine eşittir.",
+          "dogru": true,
+          "aciklama": "Başka düşey/dik kuvvet yoksa eğik düzlemde N = G_y = m·g·cos(α) olur."
+        },
+        {
+          "metin": "Sürtünmesiz sabit makaraya asılı 6 kg ve 4 kg kütleli iki cisim serbest bırakıldığında ipteki gerilme kuvveti 60 N olur.",
+          "dogru": false,
+          "aciklama": "İvme a = (60-40)/(6+4) = 2 m/s² ve ip gerilmesi T = 4·(10+2) = 48 N olur (40 N ile 60 N arasındadır)."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Dinamik kavramlarını ve yasalarını doğru matematiksel model veya açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Eylemsizlik Yasası",
+          "Net kuvvet sıfır (∑F = 0) iken cismin hız vektörünün sabit kalması"
+        ],
+        [
+          "Dinamiğin Temel Yasası",
+          "Net kuvvetin kütle ile ivmenin çarpımına eşit olması (F_net = m · a)"
+        ],
+        [
+          "Etki-Tepki Yasası",
+          "Farklı iki cismin birbirine eşit büyüklükte ve zıt yönde kuvvet uygulaması (F₁₂ = −F₂₁)"
+        ],
+        [
+          "Eğik Düzlem Paralel Bileşeni",
+          "Ağırlığın cismi eğik düzlemden aşağı kaydıran m · g · sin(α) bileşeni"
+        ],
+        [
+          "Serbest Cisim Diyagramı",
+          "İncelenen cisme dışarıdan etki eden tüm kuvvet vektörlerinin gösterildiği şema"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Maddelerin mevcut hareket durumlarını koruma eğilimine ___ adı verilir.",
+          "cevap": "eylemsizlik"
+        },
+        {
+          "metin": "Bir cisme uygulanan net kuvvetin cismin ivmesine oranı (F_net / a) cismin ___ değerini verir.",
+          "cevap": "kütle"
+        },
+        {
+          "metin": "Temas yüzeyinin üzerindeki cisme yüzeye dik doğrultuda uyguladığı tepki kuvvetine ___ kuvvet denir.",
+          "cevap": "normal"
+        },
+        {
+          "metin": "Uluslararası Birim Sisteminde (SI) kg · m/s² çarpımına karşılık gelen kuvvet birimi ___ olarak adlandırılır.",
+          "cevap": "Newton"
+        }
+      ],
+      "fazla": [
+        "Joule",
+        "momentum"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Yatay bir yolda sabit hızla ilerleyen otobüs ani fren yaptığında ayakta duran yolcuların neden ileriye doğru savrulduğunu ve emniyet kemerinin işlevini Newton'ın Birinci Hareket Yasası ile açıklayınız.",
+      "cevap": "Otobüs sabit hızla ilerlerken yolcular da otobüsle aynı hızda hareket etmektedir. Otobüs ani fren yaptığında tekerleklere etki eden sürtünme kuvveti otobüsü yavaşlatır; ancak yolcular {koyu:Newton'ın Birinci Yasası (Eylemsizlik)} gereği mevcut hızlarını koruma eğiliminde olduklarından ileriye doğru savrulurlar. {koyu:Emniyet kemeri}, yolcuya geriye doğru net bir kuvvet uygulayarak yolcunun araçla birlikte güvenli biçimde yavaşlamasını sağlar.",
+      "ipuclari": [
+        "Yolcuların fren anından önceki hız durumunu ve eylemsizlik eğilimini düşününüz.",
+        "Cisimlerin hızını değiştirmek için dış bir net kuvvete ihtiyaç duyulduğunu hatırlayınız."
+      ]
+    }
+  ]
 }

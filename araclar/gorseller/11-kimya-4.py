@@ -50,7 +50,7 @@ def gorsel_1():
         [
             "• Gaz fazındaki serbest atomlar birleşerek",
             "  kovalent bağ oluştururken dışarıya aynı miktarda",
-            "  enerji açığa çıkar (Isı veren / ΔH < 0).",
+            "  enerji açığa çıkar (Isı veren / ΔH &lt; 0).",
             "• Denklem: 2X(g) → X2(g) + ısı   (ΔH = -E kJ/mol)",
             "• Serbest radikallerden/atomlardan bağ oluşumu",
             "  her zaman EKZOTERMİKTİR.",
@@ -72,8 +72,8 @@ def gorsel_2():
         "Aynı Atomlar Arasında Çoklu Bağlar",
         [
             "• Karbon-karbon bağlarının karşılaştırması:",
-            "  Tekli (C-C) < İkili (C=C) < Üçlü (C≡C)",
-            "• Bağ Enerjisi (kJ/mol): 347 < 614 < 839",
+            "  Tekli (C-C) &lt; İkili (C=C) &lt; Üçlü (C≡C)",
+            "• Bağ Enerjisi (kJ/mol): 347 &lt; 614 < 839",
             "• Bağ Uzunluğu (pm): 154 pm > 134 pm > 120 pm",
             "• KURAL: Bağ sayısı (derecesi) arttıkça atomlar",
             "  birbirine yaklaşır; bağ uzunluğu KISALIR,",
@@ -86,8 +86,8 @@ def gorsel_2():
         "Atom Yarıçapı ve Bağ Enerjisi İlişkisi",
         [
             "• Halojen hidrojenürlerin (H-X) karşılaştırması:",
-            "  Atom yarıçapı: F < Cl < Br < I",
-            "• Bağ uzunluğu: H-F < H-Cl < H-Br < H-I",
+            "  Atom yarıçapı: F &lt; Cl &lt; Br &lt; I",
+            "• Bağ uzunluğu: H-F &lt; H-Cl &lt; H-Br < H-I",
             "• Bağ enerjisi (kJ/mol): H-F (565) > H-Cl (431)",
             "  > H-Br (364) > H-I (297)",
             "• KURAL: Bağ yapan atomların yarıçapı küçüldükçe",
@@ -124,7 +124,7 @@ def gorsel_3():
     )
     ic += _kart(
         395, 116, 345, 132,
-        "Durum 2: E_oluşan > E_kırılan  (ΔH < 0)",
+        "Durum 2: E_oluşan > E_kırılan  (ΔH &lt; 0)",
         [
             "• Ürünlerdeki yeni bağlar oluşurken açığa çıkan enerji,",
             "  girenlerdeki bağları kırmak için harcanan enerjiden",

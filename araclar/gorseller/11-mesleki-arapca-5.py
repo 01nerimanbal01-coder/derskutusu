@@ -19,105 +19,88 @@ def _kart(x, y, w, h, baslik, satirlar, renk="#059669", bg="#ECFDF5"):
     return b
 
 
-def gorsel_1():
-    w, h = 680, 250
-    ic = (
-        '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">'
-        'MESLEKİ ARAPÇA: İBADET VE TAHARET (TEMİZLİK) KAVRAMLARI</text>'
+def _bant(y, b, m, r, bg):
+    return (
+        f'<rect x="25" y="{y}" width="630" height="42" rx="8" fill="{bg}" stroke="{r}" stroke-width="1.5"/>'
+        f'<text x="40" y="{y+16}" font-size="11" font-weight="bold" fill="{r}">{b}</text>'
+        f'<text x="40" y="{y+33}" font-size="10.5" fill="#1E293B">{m}</text>'
     )
-    ic += _kart(20, 44, 310, 190, "EL-İBADETÜ VE ET-TAHARETÜ", [
-        "• el-İbâdetü (tekil) / el-İbâdâtü (çoğul): İbadet(ler).",
-        "• et-Tahâretü: Maddi ve manevi temizlik.",
-        "• Hadis: 'et-Tuhûru şatru'l-îmân'",
-        "  (Temizlik imanın yarısıdır).",
-        "• Tahâret minel-hades: Abdestsizlik ve cünüplükten",
-        "  arınma (Hükmi temizlik: Abdest, Gusül, Teyemmüm).",
-        "• Tahâret minen-necâse: Beden, elbise ve mekan temizliği."
+
+
+def gorsel_1():
+    w, h = 680, 260
+    ic = '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">أَرْكَانُ الْإِيمَانِ السِّتَّةُ — İMANIN ALTI ŞARTI (ESASI)</text>'
+    adimlar = [
+        ("1-2. الإِيمَانُ بِاللّٰهِ وَمَلَائِكَتِهِ (Allah'a ve Meleklerine İman)", "آمَنْتُ بِاللّٰهِ التَّوْحِيدِ، وَبِمَلَائِكَتِهِ الْكِرَامِ (جبريل، ميكائيل، إسرافيل، ملك الموت).", "#059669", "#ECFDF5"),
+        ("3-4. وَكُتُبِهِ وَرُسُلِهِ (İlahi Kitaplarına ve Peygamberlerine İman)", "الكُتُبُ السَّمَاوِيَّةُ (التَّوْرَاة، الزَّبُور، الإِنْجِيل، القُرْآن) وَالأَنْبِيَاءُ وَالرُّسُلُ.", "#2563EB", "#EFF6FF"),
+        ("5. وَالْيَوْمِ الْآخِرِ (Ahiret Gününe İman)", "الإِيمَانُ بِالْبَعْثِ بَعْدَ الْمَوْتِ، وَالْحِسَابِ، وَالْمِيزَانِ، وَالْجَنَّةِ وَالنَّارِ.", "#7C3AED", "#F5F3FF"),
+        ("6. وَبِالْقَدَرِ خَيْرِهِ وَشَرِّهِ (Kaza ve Kadere İman)", "الإِيمَانُ بِالْقَضَاءِ وَالْقَدَرِ أَنَّ خَيْرَهُ وَشَرَّهُ مِنَ اللّٰهِ تَعَالَى.", "#D97706", "#FEF3C7")
+    ]
+    for i, (b, m, r, bg) in enumerate(adimlar):
+        ic += _bant(44 + i * 50, b, m, r, bg)
+    return _svg(w, h, ic)
+
+def gorsel_2():
+    w, h = 680, 250
+    ic = '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">الْمَلَائِكَةُ الْأَرْبَعَةُ وَوَظَائِفُهُمْ — DÖRT BÜYÜK MELEK VE GÖREVLERİ</text>'
+    ic += _kart(20, 44, 310, 190, "جِبْرِيلُ وَمِيكَائِيلُ (CİBRİL VE MİKÂİL)", [
+        "• جِبْرِيلُ (عليه السلام) — Cebrâil (a.s.):",
+        "  مَلَكُ الْوَحْيِ: يُبَلِّغُ الْوَحْيَ مِنَ اللّٰهِ إِلَى الرُّسُلِ.",
+        "  (Vahiy meleğidir; ilahi vahyi peygamberlere iletir.)",
+        "• مِيكَائِيلُ (عليه السلام) — Mikâil (a.s.):",
+        "  مَلَكٌ مُوَكَّلٌ بِالْأَرْزَاقِ وَالْأَمْطَارِ وَالْحَوَادِثِ الطَّبِيعِيَّةِ.",
+        "  (Rızıklar, yağmurlar ve tabiat olaylarıyla görevlidir.)"
     ], "#059669", "#ECFDF5")
-    ic += _kart(350, 44, 310, 190, "SULAR VE TEMİZLENME YOLLARI", [
-        "• el-Mâu't-Tahûr: Kendisi temiz ve temizleyici su.",
-        "• el-Vudûu: Abdest (Namaz için temel temizlik).",
-        "• el-Guslü: Boy abdesti (Bütün bedeni yıkamak).",
-        "• et-Teyemmümü: Su bulunmadığında veya suyu kullanma",
-        "  imkanı olmadığında temiz toprakla yapılan temizlik.",
-        "• el-Meshu ale'l-huffeyn: Mestler üzerine mesh etmek."
+    ic += _kart(350, 44, 310, 190, "إِسْرَافِيلُ وَمَلَكُ الْمَوْتِ (İSRAFİL VE AZRAİL)", [
+        "• إِسْرَافِيلُ (عليه السلام) — İsrâfil (a.s.):",
+        "  مَلَكٌ مُوَكَّلٌ بِالنَّفْخِ فِي الصُّورِ يَوْمَ الْقِيَامَةِ.",
+        "  (Kıyamet ve diriliş için Sûr'a üflemekle görevlidir.)",
+        "• مَلَكُ الْمَوْتِ / عَزْرَائِيلُ — Ölüm Meleği (Azrâil):",
+        "  مَلَكٌ مُوَكَّلٌ بِقَبْضِ الْأَرْوَاحِ عِنْدَ انْتِهَاءِ الْأَجَلِ.",
+        "  (Eceli gelenlerin ruhunu kabzetmekle görevlidir.)"
     ], "#2563EB", "#EFF6FF")
     return _svg(w, h, ic)
 
-
-def gorsel_2():
-    w, h = 680, 260
-    ic = (
-        '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">'
-        'FERÂİDU\'L-VUDÛ (ABDESTİN FARZLARI - MAİDE SURESİ, 6)</text>'
-    )
-    farzlar = [
-        ("1. GASLÜ'L-VECHİ (YÜZÜ YIKAMAK)", "Alın saç bitiminden çene altına ve iki kulak yumuşağı arasına kadar yüzü bir kez yıkamak.", "#059669", "#ECFDF5"),
-        ("2. GASLÜ'L-YEDEYNİ İLE'L-MİRFEKAYNİ (KOLLARI YIKAMAK)", "İki eli dirseklerle (el-mirfekayn) birlikte bir kez yıkamak.", "#2563EB", "#EFF6FF"),
-        ("3. MESHU Bİ-RUB'İ'R-RE'Sİ (BAŞI MESH ETMEK)", "Başın (er-re's) en az dörtte birini ıslak elle bir kez mesh etmek (sıvazlamak).", "#7C3AED", "#F5F3FF"),
-        ("4. GASLÜ'R-RİCLEYNİ İLE'L-KA'BEYNİ (AYAKLARI YIKAMAK)", "İki ayağı topuk kemikleriyle (el-ka'beyn) birlikte bir kez yıkamak.", "#D97706", "#FEF3C7")
-    ]
-    for i, (b, m, r, bg) in enumerate(farzlar):
-        y = 44 + i * 50
-        ic += (
-            f'<rect x="25" y="{y}" width="630" height="42" rx="8" fill="{bg}" stroke="{r}" stroke-width="1.5"/>'
-            f'<text x="40" y="{y+16}" font-size="11" font-weight="bold" fill="{r}">{b}</text>'
-            f'<text x="40" y="{y+33}" font-size="10.5" fill="#1E293B">{m}</text>'
-        )
-    return _svg(w, h, ic)
-
-
 def gorsel_3():
     w, h = 680, 250
-    ic = (
-        '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">'
-        'GUSLÜN VE TEYEMMÜMÜN FARZLARI (ARAPÇA FIKIH TERİMLERİ)</text>'
-    )
-    ic += _kart(20, 44, 310, 190, "FERÂİDU'L-GUSLİ (GUSLÜN 3 FARZI)", [
-        "1. el-Madmadatu (Mazmaza):",
-        "   Ağza bolca su alıp çalkalamak.",
-        "2. el-İstinşâku (İstinşak):",
-        "   Buruna su çekip temizlemek.",
-        "3. Gaslü cemîi'l-bedeni:",
-        "   İğne ucu kadar kuru yer kalmayacak şekilde",
-        "   bütün bedeni yıkamak."
-    ], "#0891B2", "#ECFEFF")
-    ic += _kart(350, 44, 310, 190, "FERÂİDU'T-TEYEMMÜMİ (TEYEMMÜMÜN 2 FARZI)", [
-        "1. en-Niyyetü: Allah rızası ve ibadet için niyet etmek.",
-        "2. ed-Darbetâni (İki Vuruş ve Mesh):",
-        "   • Birinci vuruş: Elleri temiz toprağa (es-saîdü't-tayyib)",
-        "     vurup yüzün tamamını mesh etmek.",
-        "   • İkinci vuruş: Elleri tekrar toprağa vurup kolları",
-        "     dirseklerle beraber mesh etmek.",
-        "• Suyu görünce veya kullanıma güç yetince teyemmüm bozulur."
+    ic = '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">الْكُتُبُ السَّمَاوِيَّةُ وَالرُّسُلُ — İLAHİ KİTAPLAR VE PEYGAMBERLER</text>'
+    ic += _kart(20, 44, 310, 190, "الْكُتُبُ الْأَرْبَعَةُ (DÖRT BÜYÜK İLAHİ METİN)", [
+        "• التَّوْرَاةُ: أُنْزِلَتْ عَلَى مُوسَى (عليه السلام).",
+        "  (Tevrat: Hz. Musa'ya indirilmiştir.)",
+        "• الزَّبُورُ: أُنْزِلَ عَلَى دَاوُدَ (عليه السلام).",
+        "  (Zebur: Hz. Davud'a indirilmiştir.)",
+        "• الْإِنْجِيلُ: أُنْزِلَ عَلَى عِيسَى (عليه السلام).",
+        "  (İncil: Hz. İsa'ya indirilmiştir.)",
+        "• الْقُرْآنُ الْكَرِيمُ: أُنْزِلَ عَلَى مُحَمَّدٍ (صلى الله عليه وسلم)."
+    ], "#7C3AED", "#F5F3FF")
+    ic += _kart(350, 44, 310, 190, "صِفَاتُ الرُّسُلِ الْوَاجِبَةُ (PEYGAMBER SIFATLARI)", [
+        "• الصِّدْقُ (es-Sıdk): Doğruluk (Yalan söylememek).",
+        "• الْأَمَانَةُ (el-Emâne): Güvenilir olmak.",
+        "• التَّبْلِيغُ (et-Teblîğ): İlahi mesajları eksiksiz iletmek.",
+        "• الْفَطَانَةُ (el-Fetâne): Üstün akıl ve zekâ sahibi olmak.",
+        "• الْعِصْمَةُ (el-İsme): Günah işlemekten korunmuş olmak.",
+        "• خَاتَمُ النَّبِيِّينَ: Son peygamber Hz. Muhammed'dir."
     ], "#D97706", "#FEF3C7")
     return _svg(w, h, ic)
 
-
 def gorsel_4():
     w, h = 680, 250
-    ic = (
-        '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">'
-        'CÜMLE KALIPLARI VE DİL BİLGİSİ: YECİBÜ ALÂ VE EN + MUZARİ (MASDAR-I MÜEVVEL)</text>'
-    )
-    ic += _kart(20, 44, 310, 190, "GEREKLİLİK KALIPLARI (YECİBÜ / YÜSTüHABBÜ)", [
-        "• Yecibü ale'l-müslimi en + (mansub muzari fiil):",
-        "  'Müslümanın ... yapması gerekir / farzdır.'",
-        "• Örn: Yecibü ale'l-müslimi en yetevaddaa kable's-salâti.",
-        "  (Müslümanın namazdan önce abdest alması gerekir).",
-        "• Yüstehabbü / Yüsennü: Müstehaptır / Sünnettir.",
-        "• Yecûzü: Caizdir / La yecûzü: Caiz değildir."
-    ], "#7C3AED", "#F5F3FF")
-    ic += _kart(350, 44, 310, 190, "TEMEL FİİLLER VE ORGAN İSİMLERİ", [
-        "• Fiiller: Gasele - Yagsilü (Yıkamak) | Meseha - Yemsehu",
-        "  (Mesh etmek) | Tevaddaa - Yetevaddau (Abdest almak)",
-        "  | İğtesele (Gusletmek) | Teyemmeme (Teyemmüm etmek).",
-        "• Organlar: el-Vech (Yüz), el-Yed / el-Yedeyn (El / İki el),",
-        "  el-Mirfek (Dirsek), er-Re's (Baş), el-Üzün (Kulak),",
-        "  er-Ricl / er-Ricleyn (Ayak / İki ayak), el-Ka'b (Topuk)."
+    ic = '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">أَسْمَاءُ اللّٰهِ الْحُسْنَى وَالتَّعْبِيرَاتُ الْعَقَدِيَّةُ</text>'
+    ic += _kart(20, 44, 310, 190, "أَسْمَاءُ اللّٰهِ الْحُسْنَى (ESMA-İ HÜSNA)", [
+        "• الرَّحْمٰنُ / الرَّحِيمُ: Çok merhametli ve bağışlayıcı.",
+        "• الْمَلِكُ / الْقُدُّوسُ: Mülkün sahibi / Eksiklikten uzak.",
+        "• السَّلَامُ / الْمُؤْمِنُ: Esenlik veren / Güven veren.",
+        "• الْعَزِيزُ / الْحَكِيمُ: Mutlak galip / Hikmet sahibi.",
+        "• الْخَالِقُ / الْبَارِئُ / الْمُصَوِّرُ: Yaratan ve şekil veren."
+    ], "#0891B2", "#ECFEFF")
+    ic += _kart(350, 44, 310, 190, "تَعْبِيرَاتٌ مُهِمَّةٌ (ÖNEMLİ ARAPÇA KALIPLAR)", [
+        "• أَرْكَانُ الْإِيمَانِ سِتَّةٌ (İmanın şartları altıdır).",
+        "• التَّصْدِيقُ بِالْقَلْبِ وَالْإِقْرَارُ بِاللِّسَانِ (Kalple tasdik, dille ikrar).",
+        "• الْيَوْمُ الْآخِرُ وَالْبَعْثُ بَعْدَ الْمَوْتِ (Ahiret günü ve diriliş).",
+        "• الْقَضَاءُ وَالْقَدَرُ (Kaza ve kader).",
+        "• لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِنْ رُسُلِهِ (Elçileri ayırmayız)."
     ], "#059669", "#ECFDF5")
     return _svg(w, h, ic)
-
 
 GORSELLER = {
     "b1": gorsel_1(),

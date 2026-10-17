@@ -47,9 +47,9 @@ def gorsel_3():
     ic = _kutu(10, 10, 680, 205, "#fffbeb", "#f59e0b", 12, 2)
     ic += _metin(350, 34, "FEN, DOĞA BİLİMLERİ VE TIP ALANINDA ÖNCÜ MÜSLÜMAN ÂLİMLER", 13, "#92400e", "bold")
     cols = [
-        (25, "Matematik & Astronomi", "Hârizmî (Cebir ve 0 rakamı)", "Ömer Hayyam, البيروني (Bîrûnî)", "Uluğ Bey, Ali Kuşçu,", "Ferganî, Battânî"),
+        (25, "Matematik &amp; Astronomi", "Hârizmî (Cebir ve 0 rakamı)", "Ömer Hayyam, البيروني (Bîrûnî)", "Uluğ Bey, Ali Kuşçu,", "Ferganî, Battânî"),
         (248, "Tıp ve Eczacılık", "İbn Sînâ (el-Kânûn fi't-Tıb)", "Ebû Bekir er-Râzî (Çiçek-Kızamık)", "Zehrâvî (Cerrahi Aletler)", "İbnü'n-Nefîs (Küçük Kan Dolaşımı), Akşemseddin"),
-        (471, "Fizik, Kimya & Mühendislik", "İbnü'l-Heysem (Optik-Kitâbü'l-Menâzır)", "Câbir b. Hayyân (Kimyanın Babası)", "Cezerî (Sibernetik ve Robotik)", "Hazînî (Hassas Teraziler)")
+        (471, "Fizik, Kimya &amp; Mühendislik", "İbnü'l-Heysem (Optik-Kitâbü'l-Menâzır)", "Câbir b. Hayyân (Kimyanın Babası)", "Cezerî (Sibernetik ve Robotik)", "Hazînî (Hassas Teraziler)")
     ]
     for x, b, s1, s2, s3, s4 in cols:
         ic += _kutu(x, 48, 204, 152, "#ffffff", "#f59e0b", 9, 1.5)

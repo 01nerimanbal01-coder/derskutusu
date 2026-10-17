@@ -9,7 +9,7 @@ GORSELLER = {
   <rect x="20" y="48" width="170" height="165" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
   <rect x="20" y="48" width="170" height="26" rx="8" fill="#2563eb"/>
   <text x="105" y="66" text-anchor="middle" font-size="12" font-weight="800" fill="#ffffff">1. PANGEA ULTIMA</text>
-  <text x="30" y="92" font-size="10.5" fill="#1e3a8a">• <tspan font-weight="700">Atlas Okyanusu</tspan> kapanır.</text>
+  <text x="30" y="92" font-size="10.5" fill="#1e3a8a">• &lt;tspan font-weight="700">Atlas Okyanusu&lt;/tspan> kapanır.</text>
   <text x="30" y="110" font-size="10.5" fill="#1e3a8a">• Amerika kıtaları tekrar</text>
   <text x="38" y="124" font-size="10.5" fill="#1e3a8a">Afrika ve Avrupa ile</text>
   <text x="38" y="138" font-size="10.5" fill="#1e3a8a">çarpışarak birleşir.</text>
@@ -22,7 +22,7 @@ GORSELLER = {
   <text x="288" y="66" text-anchor="middle" font-size="12" font-weight="800" fill="#ffffff">2. NOVOPANGEA</text>
   <text x="213" y="92" font-size="10.5" fill="#065f46">• Atlas Okyanusu genişlemeye</text>
   <text x="221" y="106" font-size="10.5" fill="#065f46">devam eder.</text>
-  <text x="213" y="124" font-size="10.5" fill="#065f46">• <tspan font-weight="700">Büyük Okyanus (Pasifik)</tspan></text>
+  <text x="213" y="124" font-size="10.5" fill="#065f46">• &lt;tspan font-weight="700">Büyük Okyanus (Pasifik)&lt;/tspan></text>
   <text x="221" y="138" font-size="10.5" fill="#065f46">tamamen kapanır.</text>
   <text x="213" y="158" font-size="10.5" fill="#047857">• Amerika kıtaları Doğu</text>
   <text x="221" y="172" font-size="10.5" fill="#047857">Asya ve Avustralya ile</text>
@@ -31,8 +31,8 @@ GORSELLER = {
   <rect x="386" y="48" width="170" height="165" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
   <rect x="386" y="48" width="170" height="26" rx="8" fill="#d97706"/>
   <text x="471" y="66" text-anchor="middle" font-size="12" font-weight="800" fill="#ffffff">3. AURICA</text>
-  <text x="396" y="92" font-size="10.5" fill="#78350f">• Hem <tspan font-weight="700">Atlas</tspan> hem de</text>
-  <text x="404" y="106" font-size="10.5" fill="#78350f"><tspan font-weight="700">Büyük Okyanus</tspan> kapanır.</text>
+  <text x="396" y="92" font-size="10.5" fill="#78350f">• Hem &lt;tspan font-weight="700">Atlas&lt;/tspan> hem de</text>
+  <text x="404" y="106" font-size="10.5" fill="#78350f">&lt;tspan font-weight="700">Büyük Okyanus&lt;/tspan> kapanır.</text>
   <text x="396" y="124" font-size="10.5" fill="#78350f">• Asya'nın ortasından geçen</text>
   <text x="404" y="138" font-size="10.5" fill="#78350f">yeni bir okyanus açılır.</text>
   <text x="396" y="158" font-size="10.5" fill="#92400e">• Tüm kıtalar Ekvator</text>
@@ -44,7 +44,7 @@ GORSELLER = {
   <text x="655" y="66" text-anchor="middle" font-size="12" font-weight="800" fill="#ffffff">4. AMASIA</text>
   <text x="580" y="92" font-size="10.5" fill="#581c87">• Antarktika dışındaki tüm</text>
   <text x="588" y="106" font-size="10.5" fill="#581c87">kıtalar kuzeye göç eder.</text>
-  <text x="580" y="124" font-size="10.5" fill="#581c87">• <tspan font-weight="700">Kuzey Buz Denizi</tspan></text>
+  <text x="580" y="124" font-size="10.5" fill="#581c87">• &lt;tspan font-weight="700">Kuzey Buz Denizi&lt;/tspan></text>
   <text x="588" y="138" font-size="10.5" fill="#581c87">kapanır.</text>
   <text x="580" y="158" font-size="10.5" fill="#6b21a8">• Amerika ve Asya kıtaları</text>
   <text x="588" y="172" font-size="10.5" fill="#6b21a8">Kuzey Kutbu çevresinde</text>
@@ -83,13 +83,13 @@ GORSELLER = {
   <!-- Right: Sera Gazları -->
   <rect x="390" y="45" width="350" height="215" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
   <text x="565" y="66" text-anchor="middle" font-size="12.5" font-weight="800" fill="#991b1b">ANTROPOJENİK SERA GAZLARI VE KAYNAKLARI</text>
-  <text x="404" y="92" font-size="11" fill="#7f1d1d">• <tspan font-weight="700">Karbondioksit (CO₂):</tspan> Kömür, petrol, doğal gaz (fosil yakıt)</text>
+  <text x="404" y="92" font-size="11" fill="#7f1d1d">• &lt;tspan font-weight="700">Karbondioksit (CO₂):&lt;/tspan> Kömür, petrol, doğal gaz (fosil yakıt)</text>
   <text x="414" y="108" font-size="11" fill="#7f1d1d">yakımı, sanayi, termik santraller ve ormansızlaşma (%75+ pay).</text>
-  <text x="404" y="130" font-size="11" fill="#7f1d1d">• <tspan font-weight="700">Metan (CH₄):</tspan> Çeltik (pirinç) tarımı, hayvancılık (gübre),</text>
+  <text x="404" y="130" font-size="11" fill="#7f1d1d">• &lt;tspan font-weight="700">Metan (CH₄):&lt;/tspan> Çeltik (pirinç) tarımı, hayvancılık (gübre),</text>
   <text x="414" y="146" font-size="11" fill="#7f1d1d">katı atık çöplükleri, bataklıklar ve eriyen permafrost.</text>
-  <text x="404" y="168" font-size="11" fill="#7f1d1d">• <tspan font-weight="700">Diazotmonoksit (N₂O):</tspan> Tarımda aşırı azotlu yapay gübre</text>
+  <text x="404" y="168" font-size="11" fill="#7f1d1d">• &lt;tspan font-weight="700">Diazotmonoksit (N₂O):&lt;/tspan> Tarımda aşırı azotlu yapay gübre</text>
   <text x="414" y="184" font-size="11" fill="#7f1d1d">kullanımı, fosil yakıtlar ve biyokütle yakımı.</text>
-  <text x="404" y="206" font-size="11" fill="#7f1d1d">• <tspan font-weight="700">Florlu Gazlar (CFC, HFC, SF₆):</tspan> Soğutucular, klimalar,</text>
+  <text x="404" y="206" font-size="11" fill="#7f1d1d">• &lt;tspan font-weight="700">Florlu Gazlar (CFC, HFC, SF₆):&lt;/tspan> Soğutucular, klimalar,</text>
   <text x="414" y="222" font-size="11" fill="#7f1d1d">aerosoller ve elektrik iletim ekipmanları (En yüksek ısınma</text>
   <text x="414" y="238" font-size="11" fill="#7f1d1d">potansiyeline ve binlerce yıllık atmosfer ömrüne sahiptir).</text>
 </svg>''',
@@ -105,7 +105,7 @@ GORSELLER = {
   <text x="40" y="112" font-size="11" font-weight="700" fill="#713f12">üst güvenlik sınırıdır.</text>
   <text x="32" y="134" font-size="11" fill="#713f12">• Şiddetli sıcak hava dalgaları ve</text>
   <text x="40" y="150" font-size="11" fill="#713f12">ani sağanak yağışlar artar.</text>
-  <text x="32" y="172" font-size="11" fill="#713f12">• Mercan resiflerinin <tspan font-weight="700">%70–90'ı</tspan></text>
+  <text x="32" y="172" font-size="11" fill="#713f12">• Mercan resiflerinin &lt;tspan font-weight="700">%70–90'ı&lt;/tspan></text>
   <text x="40" y="188" font-size="11" fill="#713f12">beyazlaşma riskiyle karşılaşır.</text>
   <text x="32" y="210" font-size="11" fill="#713f12">• Kutup buzullarında erime hızlanır</text>
   <text x="40" y="226" font-size="11" fill="#713f12">ancak geri dönüş henüz mümkündür.</text>
@@ -113,7 +113,7 @@ GORSELLER = {
   <rect x="265" y="48" width="230" height="200" rx="10" fill="#ffedd5" stroke="#f97316" stroke-width="2"/>
   <rect x="265" y="48" width="230" height="30" rx="8" fill="#ea580c"/>
   <text x="380" y="68" text-anchor="middle" font-size="13" font-weight="800" fill="#ffffff">+2,0 °C SENARYOSU (Yüksek Risk)</text>
-  <text x="277" y="96" font-size="11" fill="#7c2d12">• Mercan resiflerinin <tspan font-weight="700">%99'undan</tspan></text>
+  <text x="277" y="96" font-size="11" fill="#7c2d12">• Mercan resiflerinin &lt;tspan font-weight="700">%99'undan&lt;/tspan></text>
   <text x="285" y="112" font-size="11" font-weight="700" fill="#7c2d12">fazlası tamamen yok olur.</text>
   <text x="277" y="134" font-size="11" fill="#7c2d12">• Kuzey Kutbu yaz aylarında</text>
   <text x="285" y="150" font-size="11" fill="#7c2d12">on yılda bir tamamen buzsuz kalır.</text>
@@ -131,7 +131,7 @@ GORSELLER = {
   <text x="530" y="150" font-size="11" fill="#7f1d1d">kıyı deltaları ve ada ülkeleri batar.</text>
   <text x="522" y="172" font-size="11" fill="#7f1d1d">• Tropikal ve subtropikal kuşakta</text>
   <text x="530" y="188" font-size="11" fill="#7f1d1d">tarımsal üretim çöker, kıtlık yaşanır.</text>
-  <text x="522" y="210" font-size="11" fill="#7f1d1d">• Yüz milyonlarca <tspan font-weight="700">iklim mültecisi</tspan></text>
+  <text x="522" y="210" font-size="11" fill="#7f1d1d">• Yüz milyonlarca &lt;tspan font-weight="700">iklim mültecisi&lt;/tspan></text>
   <text x="530" y="226" font-size="11" fill="#7f1d1d">ve kitlesel biyoçeşitlilik kaybı oluşur.</text>
 </svg>''',
 
@@ -155,15 +155,15 @@ GORSELLER = {
   <!-- Right: Deniz Seviyesi, Mercan, Kentsel Isı Adası -->
   <rect x="390" y="48" width="350" height="212" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
   <text x="565" y="70" text-anchor="middle" font-size="12.5" font-weight="800" fill="#92400e">OKYANUS, KIYI VE KENT EKOSİSTEMLERİ</text>
-  <text x="404" y="96" font-size="11" fill="#78350f">• <tspan font-weight="700">Deniz Seviyesi Yükselmesi:</tspan> Kara buzullarının erimesi +</text>
+  <text x="404" y="96" font-size="11" fill="#78350f">• &lt;tspan font-weight="700">Deniz Seviyesi Yükselmesi:&lt;/tspan> Kara buzullarının erimesi +</text>
   <text x="414" y="112" font-size="11" fill="#78350f">ısınan okyanus suyunun genleşmesi → Kıyı erozyonu, tatlı su</text>
   <text x="414" y="128" font-size="11" fill="#78350f">akiferlerine tuzlu su karışması (tuzlanma), ada ülkeleri riski.</text>
-  <text x="404" y="152" font-size="11" fill="#78350f">• <tspan font-weight="700">Okyanus Asitlenmesi ve Mercan Beyazlaşması:</tspan></text>
+  <text x="404" y="152" font-size="11" fill="#78350f">• &lt;tspan font-weight="700">Okyanus Asitlenmesi ve Mercan Beyazlaşması:&lt;/tspan></text>
   <text x="414" y="168" font-size="11" fill="#78350f">Okyanusların aşırı CO₂ soğurması pH değerini düşürür;</text>
   <text x="414" y="184" font-size="11" fill="#78350f">mercan resifleri beyazlaşarak deniz biyoçeşitliliği çöker.</text>
-  <text x="404" y="208" font-size="11" fill="#78350f">• <tspan font-weight="700">Kentsel Isı Adası:</tspan> Beton ve asfalt yüzeylerin ısıyı</text>
+  <text x="404" y="208" font-size="11" fill="#78350f">• &lt;tspan font-weight="700">Kentsel Isı Adası:&lt;/tspan> Beton ve asfalt yüzeylerin ısıyı</text>
   <text x="414" y="224" font-size="11" fill="#78350f">hapsetmesi, yeşil alan azlığı ve hava kirliliği nedeniyle</text>
-  <text x="414" y="240" font-size="11" fill="#78350f">şehir merkezlerinin kırsal çevreden <tspan font-weight="700">3–8 °C daha sıcak</tspan> olması.</text>
+  <text x="414" y="240" font-size="11" fill="#78350f">şehir merkezlerinin kırsal çevreden &lt;tspan font-weight="700">3–8 °C daha sıcak&lt;/tspan> olması.</text>
 </svg>''',
 
     "b5": '''<svg viewBox="0 0 760 250" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:760px;display:block;margin:14px auto;font-family:system-ui,-apple-system,sans-serif;">
@@ -172,22 +172,22 @@ GORSELLER = {
   <!-- Left: Nedenler & Türkiye -->
   <rect x="20" y="48" width="350" height="184" rx="10" fill="#ffedd5" stroke="#f97316" stroke-width="2"/>
   <text x="195" y="70" text-anchor="middle" font-size="12.5" font-weight="800" fill="#9a3412">ÇÖLLEŞMENİN NEDENLERİ VE TÜRKİYE</text>
-  <text x="34" y="94" font-size="11" fill="#7c2d12">• <tspan font-weight="700">Tanım:</tspan> Kurak, yarı kurak ve az yağışlı bölgelerde iklim</text>
+  <text x="34" y="94" font-size="11" fill="#7c2d12">• &lt;tspan font-weight="700">Tanım:&lt;/tspan> Kurak, yarı kurak ve az yağışlı bölgelerde iklim</text>
   <text x="44" y="110" font-size="11" fill="#7c2d12">değişikliği ve insan faaliyetleriyle toprağın üretkenliğini yitirmesi.</text>
-  <text x="34" y="132" font-size="11" fill="#7c2d12">• <tspan font-weight="700">Beşerî Etkenler:</tspan> Ormansızlaşma, meralarda aşırı otlatma,</text>
-  <text x="44" y="148" font-size="11" fill="#7c2d12">vahşi (salma) sulama sonucu <tspan font-weight="700">toprak tuzlanması</tspan>, anız yakma.</text>
+  <text x="34" y="132" font-size="11" fill="#7c2d12">• &lt;tspan font-weight="700">Beşerî Etkenler:&lt;/tspan> Ormansızlaşma, meralarda aşırı otlatma,</text>
+  <text x="44" y="148" font-size="11" fill="#7c2d12">vahşi (salma) sulama sonucu &lt;tspan font-weight="700">toprak tuzlanması&lt;/tspan>, anız yakma.</text>
   <text x="34" y="172" font-size="11" font-weight="700" fill="#c2410c">• Türkiye'de En Yüksek Çölleşme Riski:</text>
-  <text x="44" y="190" font-size="11" fill="#9a3412">- <tspan font-weight="700">İç Anadolu</tspan> (Konya Havzası - Karapınar, Tuz Gölü çevresi)</text>
-  <text x="44" y="206" font-size="11" fill="#9a3412">- <tspan font-weight="700">Güneydoğu Anadolu</tspan> ve <tspan font-weight="700">Iğdır Ovası</tspan></text>
+  <text x="44" y="190" font-size="11" fill="#9a3412">- &lt;tspan font-weight="700">İç Anadolu&lt;/tspan> (Konya Havzası - Karapınar, Tuz Gölü çevresi)</text>
+  <text x="44" y="206" font-size="11" fill="#9a3412">- &lt;tspan font-weight="700">Güneydoğu Anadolu&lt;/tspan> ve &lt;tspan font-weight="700">Iğdır Ovası&lt;/tspan></text>
   <!-- Right: Mücadele & Büyük Yeşil Duvar -->
   <rect x="390" y="48" width="350" height="184" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
   <text x="565" y="70" text-anchor="middle" font-size="12.5" font-weight="800" fill="#065f46">ÇÖLLEŞMEYLE KÜRESEL MÜCADELE</text>
-  <text x="404" y="94" font-size="11" fill="#064e3b">• <tspan font-weight="700">BM Çölleşme ile Mücadele Sözleşmesi (UNCCD - 1994):</tspan></text>
+  <text x="404" y="94" font-size="11" fill="#064e3b">• &lt;tspan font-weight="700">BM Çölleşme ile Mücadele Sözleşmesi (UNCCD - 1994):&lt;/tspan></text>
   <text x="414" y="110" font-size="11" fill="#065f46">17 Haziran "Dünya Çölleşme ve Kuraklıkla Mücadele Günü" ilan</text>
   <text x="414" y="126" font-size="11" fill="#065f46">edilmiştir (Türkiye 1998'de taraf olmuştur).</text>
-  <text x="404" y="148" font-size="11" fill="#064e3b">• <tspan font-weight="700">Afrika Büyük Yeşil Duvar Projesi (2007):</tspan></text>
-  <text x="414" y="164" font-size="11" fill="#065f46">Sahra Çölü'nün güneydeki <tspan font-weight="700">Sahel Kuşağı'na</tspan> ilerlemesini</text>
-  <text x="414" y="180" font-size="11" fill="#065f46">durdurmak için Senegal'den Cibuti'ye <tspan font-weight="700">8.000 km uzunluğunda</tspan></text>
+  <text x="404" y="148" font-size="11" fill="#064e3b">• &lt;tspan font-weight="700">Afrika Büyük Yeşil Duvar Projesi (2007):&lt;/tspan></text>
+  <text x="414" y="164" font-size="11" fill="#065f46">Sahra Çölü'nün güneydeki &lt;tspan font-weight="700">Sahel Kuşağı'na&lt;/tspan> ilerlemesini</text>
+  <text x="414" y="180" font-size="11" fill="#065f46">durdurmak için Senegal'den Cibuti'ye &lt;tspan font-weight="700">8.000 km uzunluğunda&lt;/tspan></text>
   <text x="414" y="196" font-size="11" fill="#065f46">ve 15 km genişliğinde ağaçlandırma koridoru oluşturulmaktadır.</text>
   <text x="404" y="216" font-size="11" font-weight="700" fill="#047857">• Çözüm: Damla sulama, kurakçıl tarım, mera ıslahı ve ağaçlandırma.</text>
 </svg>''',
@@ -251,4 +251,3 @@ def uygula(v):
     for i, k in enumerate(["b1", "b2", "b3", "b4", "b5", "b6"]):
         if i < len(v.get("bolumler", [])) and k in GORSELLER:
             v["bolumler"][i]["gorsel"] = GORSELLER[k]
-

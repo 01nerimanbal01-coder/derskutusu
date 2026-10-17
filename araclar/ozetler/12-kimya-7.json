@@ -1,0 +1,233 @@
+{
+  "sinif": 12,
+  "hafta": 7,
+  "ders": "kimya",
+  "unite": "Kimya ve Elektrik",
+  "konu": "Kimyasallardan Elektrik Üretimi: Pil Potansiyeli, Pil Ömrü ve Lityum İyon Pilleri (12.1.4)",
+  "tarih": "2026-10-26",
+  "ciktilar": [
+    "Galvanik pillerde elektrotların aktiflik farkı ile standart pil potansiyeli arasındaki ilişkiyi açıklar.",
+    "Pil potansiyelini etkileyen faktörler ile pil ömrünü (kapasitesini) etkileyen faktörleri ayırt eder.",
+    "Lityum iyon pillerinin anot, katot ve elektrolit yapısını, yarı tepkimelerini ve kullanım avantajlarını açıklar."
+  ],
+  "giris": "Taşınabilir elektronik cihazlardan elektrikli otomobillere kadar modern yaşamın temel enerji kaynağı elektrokimyasal pillerdir. Bir galvanik pilin ürettiği voltaj, tıpkı bir şelalede suyun aktığı yükseklik farkı gibi anot ile katot arasındaki elektrokimyasal potansiyel farkına bağlıdır. Bu bölümde elektrotların aktiflik farkının pil potansiyeline etkisini, pil ömrünü belirleyen faktörleri ve günümüz teknolojisinin vazgeçilmezi olan lityum iyon pillerinin çalışma ilkelerini inceleyeceğiz.",
+  "bolumler": [
+    {
+      "baslik": "Galvanik Pillerde Potansiyel Farkı",
+      "metin": [
+        "Galvanik pillerde elektrik enerjisinin üretilmesi, şelaledeki suyun yüksek potansiyelden alçak potansiyele doğru akışına benzer; anot ile katot yarı hücreleri arasındaki potansiyel farkı ne kadar büyükse pil o kadar yüksek voltaj üretir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#1e293b\">GALVANİK PİLLERDE AKTİFLİK FARKI, PİL POTANSİYELİ VE PİL ÖMRÜ</text>\n\n  <!-- Sol Kutu: Aktiflik Farkı ve Voltaj Karşılaştırması -->\n  <rect x=\"18\" y=\"45\" width=\"330\" height=\"198\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"183\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1d4ed8\">AKTİFLİK FARKI ARTTIKÇA E°(pil) ARTAR</text>\n  <line x1=\"32\" y1=\"76\" x2=\"334\" y2=\"76\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/>\n\n  <!-- Bar 1: Zn-Sn vs Al-Sn -->\n  <text x=\"32\" y=\"98\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">1) Zn - Sn Pili vs. Al - Sn Pili:</text>\n  <rect x=\"36\" y=\"106\" width=\"95\" height=\"20\" rx=\"4\" fill=\"#60a5fa\"/>\n  <text x=\"138\" y=\"120\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e293b\">Zn-Sn: 0,627 V</text>\n  <rect x=\"36\" y=\"130\" width=\"190\" height=\"20\" rx=\"4\" fill=\"#2563eb\"/>\n  <text x=\"234\" y=\"144\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1d4ed8\">Al-Sn: 1,526 V</text>\n\n  <!-- Bar 2: Cr-Ag vs Mg-Ag -->\n  <text x=\"32\" y=\"170\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">2) Cr - Ag Pili vs. Mg - Ag Pili:</text>\n  <rect x=\"36\" y=\"178\" width=\"110\" height=\"20\" rx=\"4\" fill=\"#34d399\"/>\n  <text x=\"154\" y=\"192\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e293b\">Cr-Ag: 1,54 V</text>\n  <rect x=\"36\" y=\"202\" width=\"215\" height=\"20\" rx=\"4\" fill=\"#059669\"/>\n  <text x=\"258\" y=\"216\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#065f46\">Mg-Ag: 3,17 V</text>\n  <text x=\"183\" y=\"236\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">(Şelale yüksekliği arttıkça potansiyel farkı büyür)</text>\n\n  <!-- Sağ Kutu: Pil Potansiyeli vs Pil Ömrü -->\n  <rect x=\"364\" y=\"45\" width=\"318\" height=\"198\" rx=\"10\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"523\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#b45309\">PİL POTANSİYELİ VE PİL ÖMRÜ ETKENLERİ</text>\n  <line x1=\"378\" y1=\"76\" x2=\"668\" y2=\"76\" stroke=\"#fcd34d\" stroke-width=\"1.5\"/>\n  <text x=\"380\" y=\"98\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">• Pilin büyüklüğü, elektrot kütlesi/yüzeyi,</text>\n  <text x=\"388\" y=\"114\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">çözelti hacmi (Derişim ve T sabitken):</text>\n  <rect x=\"384\" y=\"122\" width=\"278\" height=\"42\" rx=\"6\" fill=\"#fef3c7\" stroke=\"#f59e0b\"/>\n  <text x=\"523\" y=\"139\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">→ Pil Potansiyelini (Voltajı) DEĞİŞTİRMEZ!</text>\n  <text x=\"523\" y=\"157\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">→ Pil Ömrünü (Kapasitesini) UZATIR!</text>\n  <text x=\"380\" y=\"186\" font-size=\"10.5\" fill=\"#78350f\">• Sıcaklık artışı: İstenmeyen tepkimeleri hızlandırıp</text>\n  <text x=\"388\" y=\"202\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b91c1c\">pil ömrünü AZALTIR.</text>\n  <text x=\"380\" y=\"226\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#065f46\">• Atık piller geri kazanım kutularında toplanmalıdır.</text>\n</svg>"
+    },
+    {
+      "baslik": "Pil Ömrü",
+      "metin": [
+        "{koyu:Aktiflik Farkı ve Standart Pil Potansiyeli:} İki elektrot arasındaki aktiflik (indirgenme/yükseltgenme potansiyeli) farkı arttıkça standart pil potansiyeli ({koyu:E°pil}) büyür. Standart indirgenme potansiyelleri {koyu:Mg²⁺/Mg = -2,37 V}, {koyu:Al³⁺/Al = -1,66 V}, {koyu:Zn²⁺/Zn = -0,763 V}, {koyu:Cr³⁺/Cr = -0,74 V}, {koyu:Sn²⁺/Sn = -0,136 V} ve {koyu:Ag⁺/Ag = +0,80 V} olduğunda; aktiflik farkı daha büyük olan {koyu:Al - Sn pilinin potansiyeli (1,526 V)}, {koyu:Zn - Sn pilinin potansiyelinden (0,627 V)} büyüktür. Benzer biçimde {koyu:Mg - Ag pilinin potansiyeli (3,17 V)}, {koyu:Cr - Ag pilinin potansiyelinden (1,54 V)} daha yüksektir.",
+        "{koyu:Pil Potansiyelini Değiştirmeyip Pil Ömrünü Uzatan Faktörler:} Sıcaklık ve çözelti derişimleri sabit tutulduğunda; {koyu:pilin büyüklüğü, elektrotların kütlesi, elektrotların temas yüzeyi ve çözelti hacmi pil potansiyelini (voltajını) kesinlikle değiştirmez}; ancak bu niceliklerin artırılması {koyu:pil ömrünü (kapasitesini) uzatır}.",
+        "{koyu:Sıcaklığın ve Çevresel Etkenlerin Rolü:} Sıcaklık artışı, pil içerisindeki istenmeyen yan tepkimelerin hızını artırarak {koyu:pil ömrünü azaltır}. Kullanım ömrü dolan atık piller ağır metaller içerdiğinden çöpe veya doğaya atılmamalı, geri kazanım kutularında toplanmalıdır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">LİTYUM İYON PİLİ YAPISI VE TEPKİMELERİ (E° ≈ 3,4 V)</text>\n\n  <!-- Sol Şema: Anot - Elektrolit - Katot -->\n  <rect x=\"18\" y=\"44\" width=\"320\" height=\"200\" rx=\"10\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"2\"/>\n  <!-- Anot -->\n  <rect x=\"32\" y=\"68\" width=\"82\" height=\"135\" rx=\"6\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <text x=\"73\" y=\"92\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#f8fafc\">ANOT (-)</text>\n  <text x=\"73\" y=\"112\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#93c5fd\">Grafit</text>\n  <text x=\"73\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" fill=\"#e2e8f0\">Li(k) →</text>\n  <text x=\"73\" y=\"150\" text-anchor=\"middle\" font-size=\"10\" fill=\"#e2e8f0\">Li⁺ + e⁻</text>\n  <text x=\"73\" y=\"182\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#fde047\">E°=-3,040 V</text>\n\n  <!-- Elektrolit -->\n  <rect x=\"118\" y=\"68\" width=\"110\" height=\"135\" rx=\"4\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n  <text x=\"173\" y=\"90\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">ELEKTROLİT</text>\n  <text x=\"173\" y=\"108\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#0c4a6e\">Susuz organik</text>\n  <text x=\"173\" y=\"122\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#0c4a6e\">çözücüde LiPF₆</text>\n  <line x1=\"128\" y1=\"152\" x2=\"216\" y2=\"152\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n  <polygon points=\"220,152 212,147 212,157\" fill=\"#0284c7\"/>\n  <text x=\"173\" y=\"145\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">Li⁺ göçü</text>\n\n  <!-- Katot -->\n  <rect x=\"232\" y=\"68\" width=\"92\" height=\"135\" rx=\"6\" fill=\"#1e3a8a\" stroke=\"#1d4ed8\" stroke-width=\"2\"/>\n  <text x=\"278\" y=\"92\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#f8fafc\">KATOT (+)</text>\n  <text x=\"278\" y=\"112\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#fde047\">CoO₂</text>\n  <text x=\"278\" y=\"135\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#e2e8f0\">Kobalt(IV) oksit</text>\n  <text x=\"278\" y=\"160\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#86efac\">LiCoO₂(k)</text>\n  <text x=\"278\" y=\"176\" text-anchor=\"middle\" font-size=\"9\" fill=\"#dcfce7\">oluşur</text>\n\n  <text x=\"178\" y=\"226\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">Net: Li(k) + CoO₂(k) → LiCoO₂(k)  (≈ 3,4 V)</text>\n\n  <!-- Sağ Kutu: 4 Temel Avantaj -->\n  <rect x=\"354\" y=\"44\" width=\"328\" height=\"200\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">LİTYUM İYON PİLLERİNİN 4 AVANTAJI</text>\n  <line x1=\"368\" y1=\"76\" x2=\"668\" y2=\"76\" stroke=\"#86efac\" stroke-width=\"1.5\"/>\n  <text x=\"370\" y=\"102\" font-size=\"11\" fill=\"#14532d\">1) Mol kütlesi çok küçük (hafif), ürettiği enerji</text>\n  <text x=\"384\" y=\"118\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">ve elektrokimyasal potansiyeli en büyüktür.</text>\n  <text x=\"370\" y=\"144\" font-size=\"11\" fill=\"#14532d\">2) Kullanım ve çevrim ömrü uzundur.</text>\n  <text x=\"370\" y=\"170\" font-size=\"11\" fill=\"#14532d\">3) Tekrar şarj edilebilen çevreci pillerdir.</text>\n  <text x=\"370\" y=\"196\" font-size=\"11\" fill=\"#14532d\">4) Geniş bir sıcaklık aralığında çalışabilir:</text>\n  <rect x=\"384\" y=\"206\" width=\"268\" height=\"26\" rx=\"5\" fill=\"#dcfce7\" stroke=\"#22c55e\"/>\n  <text x=\"518\" y=\"224\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#14532d\">Çalışma Aralığı: 10 °C ile 55 °C arası</text>\n</svg>"
+    },
+    {
+      "baslik": "Lityum İyon Pilleri",
+      "metin": [
+        "Standart indirgenme potansiyeli en küçük ({koyu:E° = -3,040 V}), dolayısıyla elektron verme (yükseltgenme) eğilimi ve elektrokimyasal potansiyeli en büyük olan metal {koyu:lityumdur (Li)}. Bu üstün özelliği sayesinde lityum, cep telefonları, dizüstü bilgisayarlar ve elektrikli araçlarda kullanılan {koyu:lityum iyon pillerinin} temel bileşenidir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">LİTYUM İYON PİLİ YAPISI VE TEPKİMELERİ (E° ≈ 3,4 V)</text>\n\n  <!-- Sol Şema: Anot - Elektrolit - Katot -->\n  <rect x=\"18\" y=\"44\" width=\"320\" height=\"200\" rx=\"10\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"2\"/>\n  <!-- Anot -->\n  <rect x=\"32\" y=\"68\" width=\"82\" height=\"135\" rx=\"6\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <text x=\"73\" y=\"92\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#f8fafc\">ANOT (-)</text>\n  <text x=\"73\" y=\"112\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#93c5fd\">Grafit</text>\n  <text x=\"73\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" fill=\"#e2e8f0\">Li(k) →</text>\n  <text x=\"73\" y=\"150\" text-anchor=\"middle\" font-size=\"10\" fill=\"#e2e8f0\">Li⁺ + e⁻</text>\n  <text x=\"73\" y=\"182\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#fde047\">E°=-3,040 V</text>\n\n  <!-- Elektrolit -->\n  <rect x=\"118\" y=\"68\" width=\"110\" height=\"135\" rx=\"4\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n  <text x=\"173\" y=\"90\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">ELEKTROLİT</text>\n  <text x=\"173\" y=\"108\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#0c4a6e\">Susuz organik</text>\n  <text x=\"173\" y=\"122\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#0c4a6e\">çözücüde LiPF₆</text>\n  <line x1=\"128\" y1=\"152\" x2=\"216\" y2=\"152\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n  <polygon points=\"220,152 212,147 212,157\" fill=\"#0284c7\"/>\n  <text x=\"173\" y=\"145\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">Li⁺ göçü</text>\n\n  <!-- Katot -->\n  <rect x=\"232\" y=\"68\" width=\"92\" height=\"135\" rx=\"6\" fill=\"#1e3a8a\" stroke=\"#1d4ed8\" stroke-width=\"2\"/>\n  <text x=\"278\" y=\"92\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#f8fafc\">KATOT (+)</text>\n  <text x=\"278\" y=\"112\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#fde047\">CoO₂</text>\n  <text x=\"278\" y=\"135\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#e2e8f0\">Kobalt(IV) oksit</text>\n  <text x=\"278\" y=\"160\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#86efac\">LiCoO₂(k)</text>\n  <text x=\"278\" y=\"176\" text-anchor=\"middle\" font-size=\"9\" fill=\"#dcfce7\">oluşur</text>\n\n  <text x=\"178\" y=\"226\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">Net: Li(k) + CoO₂(k) → LiCoO₂(k)  (≈ 3,4 V)</text>\n\n  <!-- Sağ Kutu: 4 Temel Avantaj -->\n  <rect x=\"354\" y=\"44\" width=\"328\" height=\"200\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">LİTYUM İYON PİLLERİNİN 4 AVANTAJI</text>\n  <line x1=\"368\" y1=\"76\" x2=\"668\" y2=\"76\" stroke=\"#86efac\" stroke-width=\"1.5\"/>\n  <text x=\"370\" y=\"102\" font-size=\"11\" fill=\"#14532d\">1) Mol kütlesi çok küçük (hafif), ürettiği enerji</text>\n  <text x=\"384\" y=\"118\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">ve elektrokimyasal potansiyeli en büyüktür.</text>\n  <text x=\"370\" y=\"144\" font-size=\"11\" fill=\"#14532d\">2) Kullanım ve çevrim ömrü uzundur.</text>\n  <text x=\"370\" y=\"170\" font-size=\"11\" fill=\"#14532d\">3) Tekrar şarj edilebilen çevreci pillerdir.</text>\n  <text x=\"370\" y=\"196\" font-size=\"11\" fill=\"#14532d\">4) Geniş bir sıcaklık aralığında çalışabilir:</text>\n  <rect x=\"384\" y=\"206\" width=\"268\" height=\"26\" rx=\"5\" fill=\"#dcfce7\" stroke=\"#22c55e\"/>\n  <text x=\"518\" y=\"224\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#14532d\">Çalışma Aralığı: 10 °C ile 55 °C arası</text>\n</svg>"
+    },
+    {
+      "baslik": "Lityum İyon Pilleri — Uygulama ve Analiz",
+      "metin": [
+        "{koyu:Anot, Katot ve Elektrolit Yapısı:} Lityum iyon pillerinde {koyu:anot olarak grafit}, {koyu:katot olarak kobalt(IV) oksit (CoO₂)} ve elektrolit olarak {koyu:susuz organik çözücüde çözünmüş lityum tuzu (LiPF₆)} kullanılır.",
+        "{koyu:Yarı Tepkimeler ve Net Pil Tepkimesi:} Pilin deşarjı (kullanımı) sırasında anotta {koyu:Li(k) → Li⁺ + e⁻} yükseltgenme yarı tepkimesi gerçekleşirken, oluşan {koyu:Li⁺} iyonları elektrolit üzerinden katoda göç eder ve katotta {koyu:Li⁺ + CoO₂(k) + e⁻ → LiCoO₂(k)} [lityum kobalt(III) oksit] indirgenme yarı tepkimesi meydana gelir. Net pil tepkimesi {koyu:Li(k) + CoO₂(k) → LiCoO₂(k)} olup yaklaşık {koyu:3,4 V} potansiyel üretir.",
+        "{koyu:Lityum İyon Pillerinin 4 Temel Avantajı:} (1) Ürettiği enerjinin büyük, mol kütlesinin küçük olması (hafiflik), (2) kullanım ve çevrim ömrünün uzun olması, (3) tekrar şarj edilebilen çevreci piller olması ve (4) {koyu:10 °C ile 55 °C} gibi geniş bir sıcaklık aralığında güvenle çalışabilmesidir."
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Standart indirgenme potansiyelleri E°(Al³⁺/Al) = -1,66 V, E°(Zn²⁺/Zn) = -0,763 V ve E°(Sn²⁺/Sn) = -0,136 V olarak veriliyor. Buna göre Al - Sn ve Zn - Sn galvanik pillerinin standart pil potansiyellerini hesaplayarak karşılaştırınız.",
+      "cevap": "Her iki pilde de indirgenme potansiyeli daha büyük olan Sn (-0,136 V) katot, Al ve Zn ise anottur. 1) Al - Sn pilinde: E°pil = +1,66 + (-0,136) = 1,524 V (standart değerle 1,526 V). 2) Zn - Sn pilinde: E°pil = +0,763 + (-0,136) = 0,627 V. Al ile Sn arasındaki aktiflik farkı Zn ile Sn arasındaki farktan daha büyük olduğu için Al - Sn pilinin potansiyeli Zn - Sn pilinden büyüktür."
+    },
+    {
+      "soru": "Standart indirgenme potansiyelleri E°(Mg²⁺/Mg) = -2,37 V, E°(Cr³⁺/Cr) = -0,74 V ve E°(Ag⁺/Ag) = +0,80 V olduğuna göre Mg - Ag ve Cr - Ag pillerinin standart potansiyelleri kaç volttur?",
+      "cevap": "Ag⁺/Ag yarı hücresinin indirgenme potansiyeli (+0,80 V) en büyük olduğundan her iki pilde de Ag elektrot katot, Mg ve Cr elektrotlar ise anottur. 1) Mg - Ag pilinde: E°pil = +2,37 + 0,80 = 3,17 V bulunur. 2) Cr - Ag pilinde: E°pil = +0,74 + 0,80 = 1,54 V bulunur."
+    },
+    {
+      "soru": "Sıcaklık ve çözelti derişimleri sabit tutularak bir galvanik pilde kullanılan elektrotların kütlesi ve temas yüzeyi iki katına çıkarılırsa pilin başlangıç potansiyeli ve pil ömrü nasıl değişir?",
+      "cevap": "Sıcaklık ve derişim sabitken elektrot kütlesinin, elektrot temas yüzeyinin veya çözelti hacminin artırılması standart pil potansiyelini (üretilen voltajı) DEĞİŞTİRMEZ; ancak birim zamanda veya toplamda tepkimeye girebilecek madde miktarını ve kapasiteyi artırdığı için pil ömrünü UZATIR."
+    },
+    {
+      "soru": "Lityum iyon pillerinde anot, katot ve elektrolit olarak hangi maddeler kullanılır? Bu pilin ürettiği yaklaşık potansiyel kaç volttur?",
+      "cevap": "Lityum iyon pillerinde anot olarak grafit, katot olarak kobalt(IV) oksit (CoO₂) ve elektrolit olarak susuz organik çözücüde çözünmüş lityum tuzu (LiPF₆) kullanılır. Bu pil yaklaşık 3,4 V potansiyel üretir."
+    },
+    {
+      "soru": "Bir lityum iyon pilinin kullanımı (deşarjı) sırasında anotta ve katotta gerçekleşen yarı tepkimeler ile net pil tepkimesini yazınız.",
+      "cevap": "1) Anot (yükseltgenme) yarı tepkimesi: Li(k) → Li⁺ + e⁻. 2) Katot (indirgenme) yarı tepkimesi: Li⁺ + CoO₂(k) + e⁻ → LiCoO₂(k) [lityum kobalt(III) oksit]. 3) Net pil tepkimesi: Li(k) + CoO₂(k) → LiCoO₂(k)."
+    },
+    {
+      "soru": "Lityum iyon pillerinin taşınabilir elektronik cihazlarda ve elektrikli araçlarda yaygın olarak tercih edilmesini sağlayan dört temel avantajı belirtiniz.",
+      "cevap": "1) Lityumun mol kütlesinin küçük (hafif), ürettiği enerjinin ve elektrokimyasal potansiyelinin çok büyük olması, 2) Kullanım ve çevrim ömrünün uzun olması, 3) Tekrar şarj edilebilen çevreci piller olması, 4) 10 °C ile 55 °C gibi geniş bir sıcaklık aralığında çalışabilmesidir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Sıcaklık ve çözelti derişimleri sabit tutulan bir galvanik pilde aşağıdakilerden hangisinin değiştirilmesi pilin başlangıç potansiyelini (voltajını) değiştirir?",
+      "secenekler": [
+        "Anot ve katot olarak kullanılan metallerin cinsinin değiştirilmesi",
+        "Elektrotların çözeltiye batan temas yüzeyinin genişletilmesi",
+        "Yarı hücrelerdeki çözelti hacimlerinin iki katına çıkarılması",
+        "Elektrotların kütlesinin artırılması",
+        "Pilin dış boyutlarının büyütülmesi"
+      ],
+      "dogru": 0,
+      "aciklama": "Elektrot kütlesi, temas yüzeyi, çözelti hacmi ve pilin büyüklüğü pil ömrünü etkiler fakat pil potansiyelini değiştirmez. Elektrot metallerinin cinsi (aktiflik farkı) ise doğrudan pil potansiyelini belirler."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Lityum iyon pilleri ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+      "secenekler": [
+        "Anot olarak grafit, katot olarak kobalt(IV) oksit (CoO₂) kullanılır.",
+        "Elektrolit olarak sulu NaCl çözeltisi kullanılır.",
+        "Net pil tepkimesi Li(k) + CoO₂(k) → LiCoO₂(k) şeklindedir.",
+        "Yaklaşık 3,4 V elektrik potansiyeli üretir.",
+        "10 °C ile 55 °C sıcaklık aralığında çalışabilen şarj edilebilir pillerdir."
+      ],
+      "dogru": 1,
+      "aciklama": "Lityum iyon pillerinde su kullanılmaz; elektrolit olarak susuz organik çözücüde çözünmüş lityum tuzu (LiPF₆) kullanılır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Standart indirgenme potansiyelleri E°(Mg²⁺/Mg) = -2,37 V, E°(Al³⁺/Al) = -1,66 V, E°(Zn²⁺/Zn) = -0,763 V ve E°(Ag⁺/Ag) = +0,80 V olarak veriliyor. Buna göre aşağıdaki galvanik pil çiftlerinden hangisinin standart pil potansiyeli en büyüktür?",
+      "secenekler": [
+        "Zn - Ag pili",
+        "Al - Ag pili",
+        "Mg - Ag pili",
+        "Mg - Zn pili",
+        "Al - Zn pili"
+      ],
+      "dogru": 2,
+      "aciklama": "İndirgenme potansiyeli en küçük olan Mg (-2,37 V) ile en büyük olan Ag (+0,80 V) arasındaki aktiflik farkı en fazladır; Mg - Ag pilinin potansiyeli 2,37 + 0,80 = 3,17 V ile en büyüktür."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Pillerin kullanım ömrü ve çevresel etkileriyle ilgili aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Sıcaklığın aşırı artırılması pil içindeki istenmeyen tepkimeleri yavaşlatarak pil ömrünü uzatır.",
+        "Pilin boyutunun büyütülmesi pil ömrünü kısaltır.",
+        "Standart indirgenme potansiyeli en küçük (-3,040 V) olan metal gümüştür.",
+        "Sıcaklık artışı pil içindeki istenmeyen tepkimelerin hızını artırarak pil ömrünü azaltır.",
+        "Atık piller evsel çöplerle birlikte toprağa gömülerek imha edilmelidir."
+      ],
+      "dogru": 3,
+      "aciklama": "Sıcaklık artışı pil içindeki istenmeyen yan tepkimelerin hızını artırarak pil ömrünü azaltır; atık piller ise özel geri kazanım kutularında toplanmalıdır."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Galvanik bir pilde anot ve katot elektrotların aktiflik farkı arttıkça üretilen standart pil potansiyeli de artar.",
+          "dogru": true,
+          "aciklama": "Elektrotların potansiyel farkı büyüdükçe pilin ürettiği voltaj artar."
+        },
+        {
+          "metin": "Sıcaklık ve derişim sabitken elektrot kütlesinin artırılması pil potansiyelini iki katına çıkarır.",
+          "dogru": false,
+          "aciklama": "Elektrot kütlesi pil potansiyelini değiştirmez, yalnızca pil ömrünü uzatır."
+        },
+        {
+          "metin": "Standart indirgenme potansiyeli en küçük (-3,040 V), yükseltgenme eğilimi en büyük olan metal lityumdur.",
+          "dogru": true,
+          "aciklama": "Lityum (E° = -3,040 V) elektrokimyasal potansiyeli en yüksek metaldir."
+        },
+        {
+          "metin": "Lityum iyon pillerinin katodunda gerçekleşen tepkime sonucunda lityum kobalt(III) oksit (LiCoO₂) bileşiği oluşur.",
+          "dogru": true,
+          "aciklama": "Katotta Li⁺ + CoO₂(k) + e⁻ → LiCoO₂(k) tepkimesi gerçekleşir."
+        },
+        {
+          "metin": "Lityum iyon pilleri münhasıran bir kez kullanılıp atılan, şarj edilemeyen pillerdir.",
+          "dogru": false,
+          "aciklama": "Lityum iyon pilleri defalarca şarj edilebilen, uzun ömürlü ve çevreci pillerdir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Lityum iyon pilleri ve galvanik pillerle ilgili aşağıdaki bileşenleri görev veya özellikleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Grafit",
+          "Lityum iyon pillerinde anot olarak kullanılan karbon allotropu"
+        ],
+        [
+          "Kobalt(IV) oksit (CoO₂)",
+          "Lityum iyon pillerinde katot olarak kullanılan metal oksit"
+        ],
+        [
+          "LiPF₆ (Susuz organik çözücüde)",
+          "Lityum iyon pillerinde Li⁺ iyonlarının göçünü sağlayan elektrolit"
+        ],
+        [
+          "Lityum (Li)",
+          "Standart indirgenme potansiyeli -3,040 V ile en küçük olan hafif metal"
+        ],
+        [
+          "3,4 V",
+          "Li(k) + CoO₂(k) → LiCoO₂(k) net pil tepkimesinin ürettiği yaklaşık potansiyel"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Galvanik pillerde elektrotlar arasındaki ___ farkı arttıkça pil potansiyeli büyür.",
+          "cevap": "aktiflik"
+        },
+        {
+          "metin": "Derişim ve sıcaklık sabitken çözelti hacminin artırılması pil potansiyelini değiştirmez ancak ___ uzatır.",
+          "cevap": "pil ömrünü"
+        },
+        {
+          "metin": "Lityum iyon pillerinde anot olarak ___ elektrot kullanılır.",
+          "cevap": "grafit"
+        },
+        {
+          "metin": "Lityum iyon pillerinde katot yarı hücresinde indirgenme sonucunda ___ bileşiği oluşur.",
+          "cevap": "LiCoO₂"
+        },
+        {
+          "metin": "Lityum iyon pilleri 10 °C ile ___ °C arasındaki geniş sıcaklık aralığında çalışabilir.",
+          "cevap": "55"
+        }
+      ],
+      "fazla": [
+        "platin",
+        "100"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Standart indirgenme potansiyelleri E°(Al³⁺/Al) = -1,66 V, E°(Zn²⁺/Zn) = -0,763 V ve E°(Sn²⁺/Sn) = -0,136 V olarak verilen metallerden oluşturulan Al - Sn ve Zn - Sn pillerinden hangisinin daha yüksek voltaj ürettiğini adım adım açıklayınız.",
+      "cevap": "Her iki pilde de Sn²⁺/Sn (-0,136 V) katottur. Al - Sn pilinde Al anot olduğundan E°pil = +1,66 + (-0,136) = 1,524 V (≈1,526 V) olur. Zn - Sn pilinde Zn anot olduğundan E°pil = +0,763 + (-0,136) = 0,627 V olur. Al metalinin aktifliği Zn'den daha büyük olduğu için Al ile Sn arasındaki potansiyel farkı daha fazladır ve Al - Sn pili (1,526 V) daha yüksek voltaj üretir.",
+      "ipuclari": [
+        "Her iki pil çiftinde de indirgenme potansiyeli daha küçük olan metali anot (ters çevrilecek), daha büyük olan Sn metalini katot olarak belirleyiniz.",
+        "Al - Sn ve Zn - Sn pilleri için E°pil = E°(anot yükseltgenme) + E°(katot indirgenme) değerlerini ayrı ayrı hesaplayınız.",
+        "Bulduğunuz potansiyel değerlerini elektrotların aktiflik farkıyla ilişkilendirerek karşılaştırınız."
+      ]
+    }
+  ],
+  "ozet": [
+    "Galvanik pillerde anot ile katot arasındaki aktiflik (potansiyel) farkı ne kadar büyükse üretilen standart pil potansiyeli (E°pil) o kadar yüksektir (örneğin Mg-Ag pili 3,17 V iken Cr-Ag pili 1,54 V üretir).",
+    "Sıcaklık ve derişim sabitken pilin büyüklüğü, elektrot kütlesi, temas yüzeyi ve çözelti hacmi pil potansiyelini değiştirmez, yalnızca pil ömrünü (kapasitesini) uzatır.",
+    "Sıcaklık artışı pil içindeki istenmeyen tepkimeleri hızlandırarak pil ömrünü azaltır; atık piller doğaya atılmayıp geri kazanım kutularında toplanmalıdır.",
+    "Standart indirgenme potansiyeli en küçük (-3,040 V) olan lityum metalinin kullanıldığı lityum iyon pillerinde anot grafit, katot CoO₂ ve elektrolit susuz organik çözücüdeki LiPF₆ tuzudur.",
+    "Lityum iyon pilleri Li(k) + CoO₂(k) → LiCoO₂(k) net tepkimesiyle yaklaşık 3,4 V üretir; hafif olması, uzun ömürlü ve şarj edilebilir olması, ayrıca 10 °C - 55 °C aralığında çalışabilmesi en önemli avantajlarıdır."
+  ],
+  "ders_adi": "Kimya",
+  "yayin_tarihi": "2026-10-16"
+}

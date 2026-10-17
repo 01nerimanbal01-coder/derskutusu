@@ -162,7 +162,7 @@ def gorsel_5():
     W, H = 720, 320
     s = _baslik(W, H, "HZ. İSA (AS)", "Hz. İsa'nın Mucizeleri, İncil, Havariler ve 'Ahmet' Müjdesi", RENK["lacivert"])
     cards = [
-        ("Babasız Doğum & Beşikte Konuşma", "Hz. Âdem gibi 'Ol!' (Kün) emriyle babasız yaratıldı; beşikteyken 'Ben Allah'ın kuluyum, bana kitap verdi' diyerek annesini temize çıkardı.", RENK["mavi"], RENK["acik_mavi"]),
+        ("Babasız Doğum &amp; Beşikte Konuşma", "Hz. Âdem gibi 'Ol!' (Kün) emriyle babasız yaratıldı; beşikteyken 'Ben Allah'ın kuluyum, bana kitap verdi' diyerek annesini temize çıkardı.", RENK["mavi"], RENK["acik_mavi"]),
         ("Allah'ın İzniyle Gösterdiği Mucizeler", "Çamurdan kuş şekli yapıp üfleyince canlanması, doğuştan kör olanları ve alaca (cüzzam) hastalarını iyileştirmesi, ölüleri diriltmesi.", RENK["yesil"], RENK["acik_yesil"]),
         ("İncil ve 'Ahmet' Müjdesi (Saf 6)", "Tevrat'ı doğrulayıcı olarak İncil verildi; kendisinden sonra gelecek ismi 'Ahmet' (Hz. Muhammed) olan son peygamberi müjdeledi.", RENK["turuncu"], RENK["acik_turuncu"]),
         ("Havariler (Ensârullah)", "'Allah yolunda kim bana yardımcı olacak?' çağrısına 'Allah yolunun yardımcıları biziz!' diyerek iman eden 12 samimi dostu.", RENK["mor"], RENK["acik_mor"]),

@@ -83,7 +83,7 @@ def gorsel_2():
         "Korelasyon (Birlikte Değişim)",
         [
             "• İki nicel değişkenin (X ve Y) birlikte artma",
-            "  veya azalma eğilimini gösterir (-1 <= r <= +1).",
+            "  veya azalma eğilimini gösterir (-1 ≤ r ≤ +1).",
             "• Ancak r'nin yüksek çıkması (örn. r = +0,88),",
             "  X'in doğrudan Y'nin sebebi olduğu anlamına",
             "  GELMEZ!",

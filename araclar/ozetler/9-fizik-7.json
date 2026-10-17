@@ -1,228 +1,238 @@
 {
- "ad": "9-fizik-7",
- "sinif": 9,
- "ders": "fizik",
- "ders_adi": "Fizik",
- "hafta": 7,
- "tarih": "26-30 Ekim 2026",
- "yayin_tarihi": "2026-10-28",
- "unite": "KUVVET VE HAREKET",
- "konu": "Vektörler: Kartezyen Koordinat Sisteminde Gösterim, Eşit-Zıt Vektörler ve Bileşke Vektör Hesabı",
- "ciktilar": [
-  "İki ve üç boyutlu kartezyen koordinat sisteminde vektörleri çizer; eşit vektör, zıt vektör ve bir vektörün skalerle çarpımı kavramlarını açıklar.",
-  "Aynı doğrultulu veya farklı doğrultulu vektörlerin bileşkesini uç uca ekleme, paralelkenar ve dik bileşenlerine ayırma yöntemleriyle belirler.",
-  "Aralarında özel açılar (0°, 60°, 90°, 120°, 180°) bulunan vektörlerin bileşke büyüklüğünü hesaplar ve gerçek yaşam kuvvet durumlarıyla ilişkilendirir."
- ],
- "giris": "Geçen hafta fiziksel nicelikleri {koyu:skaler} (yalnızca sayı ve birimle ifade edilen) ve {koyu:vektörel} (sayı ve birimin yanında doğrultu ve yön belirten) nicelikler olarak sınıflandırmıştık. Bir uçağa etkiyen rüzgâr kuvvetini, bir köprü halatındaki gerilmeyi veya bir geminin rotasını hesaplarken skaler toplama ({koyu:3 + 4 = 7}) yapamayız; çünkü kuvvet ve hız gibi vektörel niceliklerin toplamı aralarındaki {koyu:açıya ve yöne} bağlıdır! Bu haftaki dersimizde vektörlerin kartezyen koordinat sisteminde gösterimini ve birden fazla vektörün yaptığı etkiyi tek başına yapabilen {koyu:bileşke vektörü (R)} bulma yöntemlerini öğreneceğiz.",
- "ozet": [
-  "{koyu:Kartezyen Koordinat Sisteminde Vektör:} Başlangıç noktası orijin {koyu:(0, 0)} seçilen bir vektör, bitiş (uç) noktasının koordinatlarıyla iki boyutta {koyu:A(x, y)} veya üç boyutta {koyu:A(x, y, z)} şeklinde gösterilir; büyüklüğü Pisagor bağıntısıyla {koyu:|A| = {kok:x² + y²}} olarak bulunur.",
-  "{koyu:Eşit, Zıt ve Skalerle Çarpılan Vektörler:} Doğrultusu, yönü ve büyüklüğü aynı olan vektörlere {koyu:eşit vektörler (K = L)}; büyüklüğü ve doğrultusu aynı olup yönleri tam zıt (180°) olanlara {koyu:zıt vektörler (K = -M)} denir. Bir vektör negatif bir sayıyla çarpılırsa yönü 180° döner.",
-  "{koyu:Uç Uca Ekleme ve Paralelkenar Yöntemi:} Vektörler yön ve büyüklükleri korunarak uç uca eklendiğinde, ilk vektörün başlangıcından son vektörün bitişine çizilen vektör {koyu:bileşke vektördür (R = A + B)}. Paralelkenar yönteminde ise başlangıç noktaları birleştirilir ve ortak köşeden çıkan köşegen {koyu:R}’yi verir.",
-  "{koyu:Vektör Çıkarma ve Dik Bileşenler:} {koyu:A - B} işlemi {koyu:A + (-B)} demektir; yani {koyu:B} vektörü ters çevrilip {koyu:A} ile toplanır. Yatayla {koyu:θ} açısı yapan {koyu:A} vektörünün dik bileşenleri {koyu:Ax = A·cosθ} ve {koyu:Ay = A·sinθ} formülleriyle hesaplanır.",
-  "{koyu:Özel Açılar ve Sınır Değerler:} İki vektörün bileşkesi {koyu:|A - B| ≤ R ≤ A + B} aralığındadır. Büyüklükleri eşit ({koyu:F}) olan iki vektör arasındaki açı {koyu:0° ise R = 2F}, {koyu:60° ise R = F{kok:3}}, {koyu:90° ise R = F{kok:2}}, {koyu:120° ise R = F} ve {koyu:180° ise R = 0} olur."
- ],
- "bolumler": [
-  {
-   "baslik": "1. Kartezyen Koordinat Sisteminde Vektörler, Eşit-Zıt Vektörler ve Skalerle Çarpım",
-   "metin": [
-    "Bir vektörü matematiksel olarak kusursuz biçimde tanımlamak için birbirine dik eksenlerden oluşan {koyu:kartezyen koordinat sistemi} kullanılır. İki boyutlu düzlemde yatay eksen {koyu:x (apsis)}, düşey eksen {koyu:y (ordinat)} eksenidir; üç boyutlu uzayda ise bunlara derinlik ekseni olan {koyu:z (kot)} ekseni eklenir. Başlangıç noktası orijin {koyu:O(0, 0)} (üç boyutta {koyu:O(0, 0, 0)}) kabul edilen bir vektör, uç noktasının koordinatlarıyla {koyu:A(x, y)} veya {koyu:A(x, y, z)} biçiminde ifade edilir. Örneğin uç noktası {koyu:(3, 4)} olan {koyu:A(3, 4)} vektörünün büyüklüğü (şiddeti), dik üçgende Pisagor bağıntısıyla {koyu:|A| = {kok:3² + 4²} = 5 birim} olarak hesaplanır. Vektörler uzayda doğrultusu, yönü ve büyüklüğü değiştirilmeden {koyu:paralel olarak istenilen yere taşınabilir}.",
-    "İki vektörün {koyu:eşit vektörler (K = L)} olabilmesi için doğrultularının, yönlerinin ve büyüklüklerinin (şiddetlerinin) bire bir aynı olması şarttır; başlangıç noktalarının farklı olması eşitliği bozmaz. Doğrultuları ve büyüklükleri eşit, fakat yönleri birbirine tam zıt (aralarındaki açı 180°) olan vektörlere {koyu:zıt (negatif) vektörler} denir ve {koyu:K = -M} şeklinde gösterilir (bu durumda büyüklükleri eşittir: {koyu:|K| = |M|}). Bir {koyu:A} vektörü sıfırdan farklı bir {koyu:k} gerçek sayısı (skaler) ile çarpıldığında elde edilen {koyu:k·A} vektörünün büyüklüğü {koyu:|k|·|A|} olur; eğer {koyu:k > 0} ise vektörün yönü değişmez, eğer {koyu:k < 0} ise vektörün yönü {koyu:180° (tam zıt yöne)} döner."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "Kavram Yanılgısı Uyarısı: K = -L İle |K| = |L| Farkı!",
-    "metin": "K ve L zıt vektörler olduğunda vektörel olarak K = -L yazılır; K = L YAZILAMAZ (çünkü yönleri zıttır!). Ancak mutlak değer (uzunluk/büyüklük) işareti içine alındığında yön ortadan kalktığı için |K| = |L| eşitliği DOĞRUDUR."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 424\" role=\"img\" aria-label=\"Konu özet şeması\"><text x=\"400\" y=\"32\" font-family=\"sans-serif\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">VEKTÖRLER: KARTEZYEN KOORDİNAT SİSTEMİ VE BİLEŞKE VEKTÖR (R)</text><rect x=\"20\" y=\"56\" width=\"365\" height=\"290\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"80\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. KARTEZYEN SİSTEMDE VEKTÖR VE ÖZELLİKLERİ</text><rect x=\"35\" y=\"100\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">2B (x, y) ve 3B (x, y, z) Kartezyen Gösterim</text><text x=\"202\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Başlangıcı orijin (0, 0) olan vektör uç nokta koordinatlarıyla A(x, y) yazılır.</text><rect x=\"35\" y=\"150\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Eşit Vektörler ve Zıt (Negatif) Vektörler</text><text x=\"202\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">K = L (yön ve büyüklük aynı) | K = -M (büyüklük aynı, yön tam zıt: 180°).</text><rect x=\"35\" y=\"200\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Bir Vektörün Skaler (Gerçek Sayı) ile Çarpımı</text><text x=\"202\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">k &gt; 0 ise yön değişmez | k &lt; 0 ise yön 180° döner; büyüklük |k| katına çıkar.</text><rect x=\"35\" y=\"250\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Vektörlerin Taşınabilirliği İlkesi</text><text x=\"202\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Doğrultusu, yönü ve büyüklüğü korunarak vektör uzayda paralel taşınabilir.</text><rect x=\"35\" y=\"300\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Vektörün Dik Bileşenlerine Ayrılması (Ax, Ay)</text><text x=\"202\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Ax = A · cosθ (yatay bileşen)  |  Ay = A · sinθ (düşey bileşen).</text><rect x=\"400\" y=\"56\" width=\"380\" height=\"290\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"80\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">2. BİLEŞKE VEKTÖR (R = A + B) YÖNTEMLERİ</text><rect x=\"415\" y=\"100\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">1. Uç Uca Ekleme (Çokgen) Yöntemi</text><text x=\"590\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Birinin bitişine diğerinin başlangıcı eklenir; ilk başlangıçtan son uca R çizilir.</text><rect x=\"415\" y=\"150\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">2. Paralelkenar Yöntemi</text><text x=\"590\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Başlangıç noktaları birleştirilir; paralelkenarın ortak köşeden çıkan köşegeni R’dir.</text><rect x=\"415\" y=\"200\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Aynı Yönlü (0°) ve Zıt Yönlü (180°) Vektörler</text><text x=\"590\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">θ = 0° ise R_max = A + B  |  θ = 180° ise R_min = |A - B|.</text><rect x=\"415\" y=\"250\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Dik Vektörler (θ = 90° — Pisagor Bağıntısı)</text><text x=\"590\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">A ⊥ B ise bileşke karesi: R² = A² + B² (Örn: 3-4-5, 6-8-10, 5-12-13).</text><rect x=\"415\" y=\"300\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Eşit Büyüklükteki İki Vektörün Özel Açıları (A = B)</text><text x=\"590\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">θ = 0° ise R = 2A | θ = 60° ise R² = 3A² | θ = 90° ise R² = 2A² | θ = 120° ise R = A!</text><rect x=\"20\" y=\"360\" width=\"760\" height=\"48\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"400\" y=\"380\" font-family=\"sans-serif\" font-size=\"10.3\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">ÖNEMLİ KURAL: İki vektörün bileşkesinin büyüklüğü daima |A - B| ≤ R ≤ A + B aralığındadır; açı büyüdükçe R küçülür!</text><text x=\"400\" y=\"398\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Vektör çıkarmada A - B = A + (-B) eşitliği kullanılır; yani çıkan vektör (B) ters çevrilip A ile toplanır.</text></svg>"
-  },
-  {
-   "baslik": "2. Vektörlerin Toplanması (Bileşke Vektör R), Çıkarılması ve Dik Bileşenler",
-   "metin": [
-    "İki veya daha fazla vektörün bir cisim üzerinde yaptığı etkiyi tek başına yapabilen vektöre {koyu:bileşke vektör} denir ve {koyu:R} sembolüyle gösterilir ({koyu:R = A + B + ...}). Bileşke vektörü bulmak için üç temel yöntem kullanılır: {koyu:1) Uç Uca Ekleme (Çokgen) Yöntemi:} İlk vektörün bitiş (ok) noktasına ikinci vektörün başlangıç noktası (yönü ve büyüklüğü bozulmadan) eklenir. İlk vektörün başlangıç noktasından son vektörün bitiş noktasına çizilen vektör bileşke vektör {koyu:R}’dir. Uç uca eklenen vektörler başladığı noktaya geri dönerse (kapalı çokgen oluşursa) bileşke sıfırdır ({koyu:R = 0}). {koyu:2) Paralelkenar Yöntemi:} İki vektörün başlangıç noktaları aynı noktada birleştirilir ve uçlarından vektörlere paralel kesikli çizgiler çizilerek şekil paralelkenara tamamlanır; ortak başlangıç noktasından çıkan köşegen {koyu:R}’yi verir. Vektörlerde çıkarma işlemi ise çıkan vektörün ters çevrilip toplanmasıdır: {koyu:A - B = A + (-B)}.",
-    "{koyu:3) Dik Bileşenlerine Ayırma Yöntemi:} Kartezyen düzlemde yatay (+x) ekseniyle {koyu:θ} açısı yapan bir {koyu:A} vektörünün uç noktasından x ve y eksenlerine dikmeler indirilerek yatay bileşeni {koyu:Ax = A · cosθ} ve düşey bileşeni {koyu:Ay = A · sinθ} bulunur. Birden fazla vektör toplanırken tüm yatay bileşenler kendi arasında ({koyu:Rx = ΣAx}), tüm düşey bileşenler kendi arasında ({koyu:Ry = ΣAy}) cebirsel olarak toplanır ve bileşkenin büyüklüğü Pisagor bağıntısıyla {koyu:R = {kok:Rx² + Ry²}} olarak hesaplanır. Ayrıca büyüklükleri {koyu:A} ve {koyu:B} olan iki vektörün bileşkesi aralarındaki açıya göre {koyu:|A - B| ≤ R ≤ A + B} aralığında değer alır: Açı {koyu:0° (aynı yönlü)} iken {koyu:R_max = A + B}, açı {koyu:180° (zıt yönlü)} iken {koyu:R_min = |A - B|}, açı {koyu:90° (dik)} iken {koyu:R = {kok:A² + B²}} olur. Vektörler arasındaki açı büyüdükçe bileşke vektörün büyüklüğü küçülür."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Soru Çözüm Pratiği: Eşit Büyüklükteki (F, F) İki Vektörde Özel Açılar",
-    "metin": "Büyüklükleri birbirine eşit ve F olan iki vektörün başlangıç noktaları birleştirildiğinde bileşke R tam açıortay doğrusu üzerindedir ve büyüklüğü:\n• θ = 0° ise R = 2F  |  • θ = 60° ise R = F{kok:3}  |  • θ = 90° ise R = F{kok:2}  |  • θ = 120° ise R = F  |  • θ = 180° ise R = 0"
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "İki boyutlu kartezyen koordinat sisteminde başlangıç noktaları orijin (0, 0) olan K(4, -2) ve L(2, 10) vektörleri veriliyor. Bu iki vektörün bileşkesi olan R = K + L vektörünün koordinatlarını ve büyüklüğünü (|R|) bulunuz.",
-   "cevap": "Kartezyen koordinatları verilen vektörler toplanırken x bileşenleri kendi arasında, y bileşenleri kendi arasında toplanır:\n• Rx = Kx + Lx = 4 + 2 = 6 birim.\n• Ry = Ky + Ly = -2 + 10 = 8 birim.\nBileşke vektör R(6, 8) olur. Büyüklüğü Pisagor bağıntısıyla: |R| = {kok:Rx² + Ry²} = {kok:6² + 8²} = {kok:36 + 64} = {kok:100} = 10 birimdir."
-  },
-  {
-   "soru": "Yatay düzlemdeki bir cisme aynı anda etki eden F₁ = 10 N büyüklüğündeki kuvvet +x ekseniyle 37° açı yapmakta, F₂ = 4 N büyüklüğündeki kuvvet ise -x yönünde uygulanmaktadır. Bileşke kuvvetin (R) büyüklüğünü bulunuz. (cos37° = 0,8; sin37° = 0,6)",
-   "cevap": "Önce F₁ = 10 N kuvvetini dik bileşenlerine ayıralım:\n• F₁x = F₁ · cos37° = 10 · 0,8 = +8 N (+x yönünde).\n• F₁y = F₁ · sin37° = 10 · 0,6 = +6 N (+y yönünde).\nF₂ = 4 N kuvveti doğrudan -x yönünde olduğu için F₂x = -4 N ve F₂y = 0’dır.\nToplam bileşenler: Rx = +8 - 4 = +4 N ve Ry = +6 + 0 = +6 N... (Eğer F₂ = 2 N -x yönünde olsaydı Rx = 6 N olurdu; mevcut değerlerle R = {kok:4² + 6²} = {kok:52} = 2{kok:13} N bulunur)."
-  },
-  {
-   "soru": "Büyüklükleri 7 N ve 15 N olan iki kuvvetin bileşkesinin (R) alabileceği en büyük ve en küçük tam sayı değerleri nelerdir? Bu iki kuvvet birbirine dik (90°) olsaydı bileşke kaç N olurdu? (8-15-17 özel üçgenini hatırlayınız)",
-   "cevap": "İki vektörün bileşkesi |F₁ - F₂| ≤ R ≤ F₁ + F₂ aralığındadır:\n• En küçük değer (θ = 180°, zıt yönlü): R_min = |15 - 7| = 8 N.\n• En büyük değer (θ = 0°, aynı yönlü): R_max = 15 + 7 = 22 N.\n• Dik olsalardı (θ = 90°): R = {kok:7² + 15²} = {kok:49 + 225} = {kok:274} N olurdu (Eğer kuvvetler 8 N ve 15 N olsaydı dik durumda {kok:8² + 15²} = 17 N olurdu)."
-  }
- ],
- "etkinlikler": [
-  {
-   "soru": "İki boyutlu kartezyen koordinat sisteminde başlangıç noktaları orijin O(0, 0) olan A(-3, 5) ve B(6, -1) vektörlerinin bileşkesi olan R = A + B vektörünün büyüklüğü kaç birimdir?",
-   "secenekler": [
-    "3",
-    "4",
-    "5",
-    "7",
-    "10"
-   ],
-   "aciklama": "Rx = -3 + 6 = 3 birim ve Ry = 5 + (-1) = 4 birimdir. R(3, 4) vektörünün büyüklüğü Pisagor bağıntısıyla |R| = {kok:3² + 4²} = 5 birim bulunur.",
-   "tur": "coktan",
-   "dogru": 2
-  },
-  {
-   "soru": "Başlangıç noktaları aynı noktada bulunan ve büyüklükleri eşit (F₁ = F₂ = 12 N) olan iki kuvvet arasındaki açı 120°’dir. Bu iki kuvvetin bileşkesinin büyüklüğü kaç N’dir?",
-   "secenekler": [
-    "6",
-    "12",
-    "12{kok:2}",
-    "12{kok:3}",
-    "24"
-   ],
-   "aciklama": "Büyüklükleri eşit (F) olan iki vektör arasındaki açı 120° olduğunda bileşke vektörün büyüklüğü vektörlerden birinin büyüklüğüne eşit olur: R = F = 12 N.",
-   "tur": "coktan",
-   "dogru": 1
-  },
-  {
-   "soru": "Büyüklükleri 6 N ve 10 N olan iki farklı kuvvetin bileşkesinin büyüklüğü (R) aşağıdakilerden hangisi olamaz?",
-   "secenekler": [
-    "3 N",
-    "4 N",
-    "10 N",
-    "14 N",
-    "16 N"
-   ],
-   "aciklama": "İki vektörün bileşkesi |10 - 6| ≤ R ≤ 10 + 6, yani 4 N ≤ R ≤ 16 N aralığında olmak zorundadır; dolayısıyla 3 N olamaz.",
-   "tur": "coktan",
-   "dogru": 0
-  },
-  {
-   "soru": "Kartezyen koordinat düzleminde +x ekseni ile 53° açı yapan 20 N büyüklüğündeki F kuvvetinin yatay (Fx) ve düşey (Fy) bileşenlerinin büyüklükleri aşağıdakilerin hangisinde sırasıyla doğru verilmiştir? (cos53° = 0,6; sin53° = 0,8)",
-   "secenekler": [
-    "Fx = 10 N, Fy = 10 N",
-    "Fx = 16 N, Fy = 12 N",
-    "Fx = 12 N, Fy = 16 N",
-    "Fx = 12 N, Fy = 20 N",
-    "Fx = 8 N, Fy = 12 N"
-   ],
-   "aciklama": "Yatay bileşen Fx = F · cos53° = 20 · 0,6 = 12 N; düşey bileşen Fy = F · sin53° = 20 · 0,8 = 16 N olarak bulunur.",
-   "tur": "coktan",
-   "dogru": 2
-  },
-  {
-   "soru": "Aynı düzlemde bulunan K, L ve M vektörleri uç uca eklendiğinde M vektörünün bitiş noktası K vektörünün başlangıç noktasıyla çakışmaktadır (kapalı üçgen oluşturmaktadır). Buna göre K + L + M toplamı aşağıdakilerden hangisine eşittir?",
-   "secenekler": [
-    "2K",
-    "2M",
-    "-L",
-    "0 (Sıfır vektörü)",
-    "3K"
-   ],
-   "aciklama": "Uç uca eklenen vektörler başladığı noktaya geri dönerek kapalı bir çokgen oluşturuyorsa bileşke vektör sıfırdır (R = K + L + M = 0).",
-   "tur": "coktan",
-   "dogru": 3
-  },
-  {
-   "ifadeler": [
+  "ad": "9-fizik-7",
+  "sinif": 9,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 7,
+  "tarih": "26-30 Ekim 2026",
+  "yayin_tarihi": "2026-10-28",
+  "unite": "KUVVET VE HAREKET",
+  "konu": "Vektörler: Kartezyen Koordinat Sisteminde Gösterim, Eşit-Zıt Vektörler ve Bileşke Vektör Hesabı",
+  "ciktilar": [
+    "İki ve üç boyutlu kartezyen koordinat sisteminde vektörleri çizer; eşit vektör, zıt vektör ve bir vektörün skalerle çarpımı kavramlarını açıklar.",
+    "Aynı doğrultulu veya farklı doğrultulu vektörlerin bileşkesini uç uca ekleme, paralelkenar ve dik bileşenlerine ayırma yöntemleriyle belirler.",
+    "Aralarında özel açılar (0°, 60°, 90°, 120°, 180°) bulunan vektörlerin bileşke büyüklüğünü hesaplar ve gerçek yaşam kuvvet durumlarıyla ilişkilendirir."
+  ],
+  "giris": "Geçen hafta fiziksel nicelikleri {koyu:skaler} (yalnızca sayı ve birimle ifade edilen) ve {koyu:vektörel} (sayı ve birimin yanında doğrultu ve yön belirten) nicelikler olarak sınıflandırmıştık. Bir uçağa etkiyen rüzgâr kuvvetini, bir köprü halatındaki gerilmeyi veya bir geminin rotasını hesaplarken skaler toplama ({koyu:3 + 4 = 7}) yapamayız; çünkü kuvvet ve hız gibi vektörel niceliklerin toplamı aralarındaki {koyu:açıya ve yöne} bağlıdır! Bu haftaki dersimizde vektörlerin kartezyen koordinat sisteminde gösterimini ve birden fazla vektörün yaptığı etkiyi tek başına yapabilen {koyu:bileşke vektörü (R)} bulma yöntemlerini öğreneceğiz.",
+  "ozet": [
+    "{koyu:Kartezyen Koordinat Sisteminde Vektör:} Başlangıç noktası orijin {koyu:(0, 0)} seçilen bir vektör, bitiş (uç) noktasının koordinatlarıyla iki boyutta {koyu:A(x, y)} veya üç boyutta {koyu:A(x, y, z)} şeklinde gösterilir; büyüklüğü Pisagor bağıntısıyla {koyu:|A|} = {kok:x² + y²} olarak bulunur.",
+    "{koyu:Eşit, Zıt ve Skalerle Çarpılan Vektörler:} Doğrultusu, yönü ve büyüklüğü aynı olan vektörlere {koyu:eşit vektörler (K = L)}; büyüklüğü ve doğrultusu aynı olup yönleri tam zıt (180°) olanlara {koyu:zıt vektörler (K = -M)} denir. Bir vektör negatif bir sayıyla çarpılırsa yönü 180° döner.",
+    "{koyu:Uç Uca Ekleme ve Paralelkenar Yöntemi:} Vektörler yön ve büyüklükleri korunarak uç uca eklendiğinde, ilk vektörün başlangıcından son vektörün bitişine çizilen vektör {koyu:bileşke vektördür (R = A + B)}. Paralelkenar yönteminde ise başlangıç noktaları birleştirilir ve ortak köşeden çıkan köşegen {koyu:R}’yi verir.",
+    "{koyu:Vektör Çıkarma ve Dik Bileşenler:} {koyu:A - B} işlemi {koyu:A + (-B)} demektir; yani {koyu:B} vektörü ters çevrilip {koyu:A} ile toplanır. Yatayla {koyu:θ} açısı yapan {koyu:A} vektörünün dik bileşenleri {koyu:Ax = A·cosθ} ve {koyu:Ay = A·sinθ} formülleriyle hesaplanır.",
+    "{koyu:Özel Açılar ve Sınır Değerler:} İki vektörün bileşkesi {koyu:|A - B| ≤ R ≤ A + B} aralığındadır. Büyüklükleri eşit ({koyu:F}) olan iki vektör arasındaki açı {koyu:0° ise R = 2F}, {koyu:60° ise R = F{kok:3}}, {koyu:90° ise R = F{kok:2}}, {koyu:120° ise R = F} ve {koyu:180° ise R = 0} olur."
+  ],
+  "bolumler": [
     {
-     "metin": "Doğrultusu, yönü ve büyüklüğü değiştirilmeden bir vektör kartezyen düzlemde paralel olarak taşınabilir.",
-     "dogru": true,
-     "aciklama": "Bir vektör negatif sayıyla (-2) çarpıldığında yönü 180° döner. Ayrıca A - B ile B - A birbirinin zıt vektörleridir."
+      "baslik": "Kartezyen Koordinat Sisteminde Vektörler, Eşit-Zıt Vektörler",
+      "metin": [
+        "Bir vektörü matematiksel olarak kusursuz biçimde tanımlamak için birbirine dik eksenlerden oluşan {koyu:kartezyen koordinat sistemi} kullanılır. İki boyutlu düzlemde yatay eksen {koyu:x (apsis)}, düşey eksen {koyu:y (ordinat)} eksenidir; üç boyutlu uzayda ise bunlara derinlik ekseni olan {koyu:z (kot)} ekseni eklenir. Başlangıç noktası orijin {koyu:O(0, 0)} (üç boyutta {koyu:O(0, 0, 0)}) kabul edilen bir vektör, uç noktasının koordinatlarıyla {koyu:A(x, y)} veya {koyu:A(x, y, z)} biçiminde ifade edilir. Örneğin uç noktası {koyu:(3, 4)} olan {koyu:A(3, 4)} vektörünün büyüklüğü (şiddeti), dik üçgende Pisagor bağıntısıyla {koyu:|A| = {kok:3² + 4²} = 5 birim} olarak hesaplanır. Vektörler uzayda doğrultusu, yönü ve büyüklüğü değiştirilmeden {koyu:paralel olarak istenilen yere taşınabilir}."
+      ],
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 424\" role=\"img\" aria-label=\"Konu özet şeması\"><text x=\"400\" y=\"32\" font-family=\"sans-serif\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">VEKTÖRLER: KARTEZYEN KOORDİNAT SİSTEMİ VE BİLEŞKE VEKTÖR (R)</text><rect x=\"20\" y=\"56\" width=\"365\" height=\"290\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"80\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. KARTEZYEN SİSTEMDE VEKTÖR VE ÖZELLİKLERİ</text><rect x=\"35\" y=\"100\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">2B (x, y) ve 3B (x, y, z) Kartezyen Gösterim</text><text x=\"202\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Başlangıcı orijin (0, 0) olan vektör uç nokta koordinatlarıyla A(x, y) yazılır.</text><rect x=\"35\" y=\"150\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Eşit Vektörler ve Zıt (Negatif) Vektörler</text><text x=\"202\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">K = L (yön ve büyüklük aynı) | K = -M (büyüklük aynı, yön tam zıt: 180°).</text><rect x=\"35\" y=\"200\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Bir Vektörün Skaler (Gerçek Sayı) ile Çarpımı</text><text x=\"202\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">k &gt; 0 ise yön değişmez | k &lt; 0 ise yön 180° döner; büyüklük |k| katına çıkar.</text><rect x=\"35\" y=\"250\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Vektörlerin Taşınabilirliği İlkesi</text><text x=\"202\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Doğrultusu, yönü ve büyüklüğü korunarak vektör uzayda paralel taşınabilir.</text><rect x=\"35\" y=\"300\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Vektörün Dik Bileşenlerine Ayrılması (Ax, Ay)</text><text x=\"202\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Ax = A · cosθ (yatay bileşen)  |  Ay = A · sinθ (düşey bileşen).</text><rect x=\"400\" y=\"56\" width=\"380\" height=\"290\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"80\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">2. BİLEŞKE VEKTÖR (R = A + B) YÖNTEMLERİ</text><rect x=\"415\" y=\"100\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">1. Uç Uca Ekleme (Çokgen) Yöntemi</text><text x=\"590\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Birinin bitişine diğerinin başlangıcı eklenir; ilk başlangıçtan son uca R çizilir.</text><rect x=\"415\" y=\"150\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">2. Paralelkenar Yöntemi</text><text x=\"590\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Başlangıç noktaları birleştirilir; paralelkenarın ortak köşeden çıkan köşegeni R’dir.</text><rect x=\"415\" y=\"200\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Aynı Yönlü (0°) ve Zıt Yönlü (180°) Vektörler</text><text x=\"590\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">θ = 0° ise R_max = A + B  |  θ = 180° ise R_min = |A - B|.</text><rect x=\"415\" y=\"250\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Dik Vektörler (θ = 90° — Pisagor Bağıntısı)</text><text x=\"590\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">A ⊥ B ise bileşke karesi: R² = A² + B² (Örn: 3-4-5, 6-8-10, 5-12-13).</text><rect x=\"415\" y=\"300\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Eşit Büyüklükteki İki Vektörün Özel Açıları (A = B)</text><text x=\"590\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">θ = 0° ise R = 2A | θ = 60° ise R² = 3A² | θ = 90° ise R² = 2A² | θ = 120° ise R = A!</text><rect x=\"20\" y=\"360\" width=\"760\" height=\"48\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"400\" y=\"380\" font-family=\"sans-serif\" font-size=\"10.3\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">ÖNEMLİ KURAL: İki vektörün bileşkesinin büyüklüğü daima |A - B| ≤ R ≤ A + B aralığındadır; açı büyüdükçe R küçülür!</text><text x=\"400\" y=\"398\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Vektör çıkarmada A - B = A + (-B) eşitliği kullanılır; yani çıkan vektör (B) ters çevrilip A ile toplanır.</text></svg>"
     },
     {
-     "metin": "Bir A vektörü -2 sayısı ile çarpıldığında yönü değişmez, yalnızca büyüklüğü 2 katına çıkar.",
-     "dogru": false,
-     "aciklama": "Bir vektör negatif sayıyla (-2) çarpıldığında yönü 180° döner. Ayrıca A - B ile B - A birbirinin zıt vektörleridir."
+      "baslik": "Skalerle Çarpım",
+      "metin": [
+        "İki vektörün {koyu:eşit vektörler (K = L)} olabilmesi için doğrultularının, yönlerinin ve büyüklüklerinin (şiddetlerinin) bire bir aynı olması şarttır; başlangıç noktalarının farklı olması eşitliği bozmaz. Doğrultuları ve büyüklükleri eşit, fakat yönleri birbirine tam zıt (aralarındaki açı 180°) olan vektörlere {koyu:zıt (negatif) vektörler} denir ve {koyu:K = -M} şeklinde gösterilir (bu durumda büyüklükleri eşittir: {koyu:|K| = |M|}). Bir {koyu:A} vektörü sıfırdan farklı bir {koyu:k} gerçek sayısı (skaler) ile çarpıldığında elde edilen {koyu:k·A} vektörünün büyüklüğü {koyu:|k|·|A|} olur; eğer {koyu:k > 0} ise vektörün yönü değişmez, eğer {koyu:k < 0} ise vektörün yönü {koyu:180° (tam zıt yöne)} döner."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Kavram Yanılgısı Uyarısı: K = -L İle |K| = |L| Farkı!",
+        "metin": "K ve L zıt vektörler olduğunda vektörel olarak K = -L yazılır; K = L YAZILAMAZ (çünkü yönleri zıttır!). Ancak mutlak değer (uzunluk/büyüklük) işareti içine alındığında yön ortadan kalktığı için |K| = |L| eşitliği DOĞRUDUR."
+      }
     },
     {
-     "metin": "Başlangıç noktaları ortak olan iki vektör arasındaki açı arttıkça bileşke vektörün büyüklüğü azalır.",
-     "dogru": true,
-     "aciklama": "Bir vektör negatif sayıyla (-2) çarpıldığında yönü 180° döner. Ayrıca A - B ile B - A birbirinin zıt vektörleridir."
+      "baslik": "Vektörlerin Toplanması (Bileşke Vektör R), Çıkarılması",
+      "metin": [
+        "İki veya daha fazla vektörün bir cisim üzerinde yaptığı etkiyi tek başına yapabilen vektöre {koyu:bileşke vektör} denir ve {koyu:R} sembolüyle gösterilir ({koyu:R = A + B + ...}). Bileşke vektörü bulmak için üç temel yöntem kullanılır: {koyu:1) Uç Uca Ekleme (Çokgen) Yöntemi:} İlk vektörün bitiş (ok) noktasına ikinci vektörün başlangıç noktası (yönü ve büyüklüğü bozulmadan) eklenir. İlk vektörün başlangıç noktasından son vektörün bitiş noktasına çizilen vektör bileşke vektör {koyu:R}’dir. Uç uca eklenen vektörler başladığı noktaya geri dönerse (kapalı çokgen oluşursa) bileşke sıfırdır ({koyu:R = 0}). {koyu:2) Paralelkenar Yöntemi:} İki vektörün başlangıç noktaları aynı noktada birleştirilir ve uçlarından vektörlere paralel kesikli çizgiler çizilerek şekil paralelkenara tamamlanır; ortak başlangıç noktasından çıkan köşegen {koyu:R}’yi verir. Vektörlerde çıkarma işlemi ise çıkan vektörün ters çevrilip toplanmasıdır: {koyu:A - B = A + (-B)}."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 460 214\" role=\"img\" aria-label=\"Vektörler: Kartezyen Koordinat Sisteminde kavram özeti şeması\"><rect x=\"90\" y=\"12\" width=\"280\" height=\"38\" rx=\"19\" class=\"g-mf\"/><text x=\"230\" y=\"36\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"800\" class=\"g-b\">Vektörler: Kartezyen Koordinat Sisteminde</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ma\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"116\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">1. Bölüm</text><text x=\"116\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Kartezyen Koordinat Sisteminde V…</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ta\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"344\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">2. Bölüm</text><text x=\"344\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Skalerle Çarpım</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ya\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"116\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-yf\">3. Bölüm</text><text x=\"116\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Vektörlerin Toplanması (Bileşke…</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-oa\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"344\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-of\">4. Bölüm</text><text x=\"344\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Dik Bileşenler</text></svg>"
     },
     {
-     "metin": "Birbirine dik (90°) olan 6 N ve 8 N büyüklüğündeki iki kuvvetin bileşkesi 10 N’dir.",
-     "dogru": true,
-     "aciklama": "Bir vektör negatif sayıyla (-2) çarpıldığında yönü 180° döner. Ayrıca A - B ile B - A birbirinin zıt vektörleridir."
-    },
-    {
-     "metin": "Vektörlerde çıkarma işleminde A - B vektörü ile B - A vektörünün yönleri aynıdır.",
-     "dogru": false,
-     "aciklama": "Bir vektör negatif sayıyla (-2) çarpıldığında yönü 180° döner. Ayrıca A - B ile B - A birbirinin zıt vektörleridir."
+      "baslik": "Dik Bileşenler",
+      "metin": [
+        "{koyu:3) Dik Bileşenlerine Ayırma Yöntemi:} Kartezyen düzlemde yatay (+x) ekseniyle {koyu:θ} açısı yapan bir {koyu:A} vektörünün uç noktasından x ve y eksenlerine dikmeler indirilerek yatay bileşeni {koyu:Ax = A · cosθ} ve düşey bileşeni {koyu:Ay = A · sinθ} bulunur. Birden fazla vektör toplanırken tüm yatay bileşenler kendi arasında ({koyu:Rx = ΣAx}), tüm düşey bileşenler kendi arasında ({koyu:Ry = ΣAy}) cebirsel olarak toplanır ve bileşkenin büyüklüğü Pisagor bağıntısıyla {koyu:R} = {kok:Rx² + Ry²} olarak hesaplanır. Ayrıca büyüklükleri {koyu:A} ve {koyu:B} olan iki vektörün bileşkesi aralarındaki açıya göre {koyu:|A - B| ≤ R ≤ A + B} aralığında değer alır: Açı {koyu:0° (aynı yönlü)} iken {koyu:R_max = A + B}, açı {koyu:180° (zıt yönlü)} iken {koyu:R_min = |A - B|}, açı {koyu:90° (dik)} iken {koyu:R} = {kok:A² + B²} olur. Vektörler arasındaki açı büyüdükçe bileşke vektörün büyüklüğü küçülür."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Soru Çözüm Pratiği: Eşit Büyüklükteki (F, F) İki Vektörde Özel Açılar",
+        "metin": "Büyüklükleri birbirine eşit ve F olan iki vektörün başlangıç noktaları birleştirildiğinde bileşke R tam açıortay doğrusu üzerindedir ve büyüklüğü:\n• θ = 0° ise R = 2F  |  • θ = 60° ise R = F{kok:3}  |  • θ = 90° ise R = F{kok:2}  |  • θ = 120° ise R = F  |  • θ = 180° ise R = 0"
+      }
     }
-   ],
-   "tur": "dy",
-   "yonerge": "Vektörler ve özellikleri ile ilgili aşağıdaki ifadelerin Doğru (D) mu yoksa Yanlış (Y) mı olduğunu belirleyiniz."
-  },
-  {
-   "soru": "Büyüklükleri birbirine eşit ve 10 N olan iki vektörün (F₁ = F₂ = 10 N) aralarındaki açıya göre oluşturdukları bileşke vektör büyüklüklerini (R) eşleştiriniz.",
-   "ciftler": [
-    [
-     "Aralarındaki açı θ = 0° (Aynı yönlü)",
-     "R = 20 N"
-    ],
-    [
-     "Aralarındaki açı θ = 60°",
-     "R = 10{kok:3} N"
-    ],
-    [
-     "Aralarındaki açı θ = 90° (Dik)",
-     "R = 10{kok:2} N"
-    ],
-    [
-     "Aralarındaki açı θ = 120°",
-     "R = 10 N"
-    ],
-    [
-     "Aralarındaki açı θ = 180° (Zıt yönlü)",
-     "R = 0 N"
-    ]
-   ],
-   "tur": "eslestir"
-  },
-  {
-   "cumleler": [
+  ],
+  "ornekler": [
     {
-     "metin": "Birden fazla vektörün yaptığı etkiyi tek başına yapabilen vektöre ___ vektör denir ve R ile gösterilir.",
-     "cevap": "bileşke"
+      "soru": "İki boyutlu kartezyen koordinat sisteminde başlangıç noktaları orijin (0, 0) olan K(4, -2) ve L(2, 10) vektörleri veriliyor. Bu iki vektörün bileşkesi olan R = K + L vektörünün koordinatlarını ve büyüklüğünü (|R|) bulunuz.",
+      "cevap": "Kartezyen koordinatları verilen vektörler toplanırken x bileşenleri kendi arasında, y bileşenleri kendi arasında toplanır:\n• Rx = Kx + Lx = 4 + 2 = 6 birim.\n• Ry = Ky + Ly = -2 + 10 = 8 birim.\nBileşke vektör R(6, 8) olur. Büyüklüğü Pisagor bağıntısıyla: |R| = {kok:Rx² + Ry²} = {kok:6² + 8²} = {kok:36 + 64} = {kok:100} = 10 birimdir."
     },
     {
-     "metin": "Doğrultuları ve büyüklükleri aynı, yönleri birbirine tam ters (180°) olan iki vektöre ___ vektörler denir.",
-     "cevap": "zıt"
+      "soru": "Yatay düzlemdeki bir cisme aynı anda etki eden F₁ = 10 N büyüklüğündeki kuvvet +x ekseniyle 37° açı yapmakta, F₂ = 4 N büyüklüğündeki kuvvet ise -x yönünde uygulanmaktadır. Bileşke kuvvetin (R) büyüklüğünü bulunuz. (cos37° = 0,8; sin37° = 0,6)",
+      "cevap": "Önce F₁ = 10 N kuvvetini dik bileşenlerine ayıralım:\n• F₁x = F₁ · cos37° = 10 · 0,8 = +8 N (+x yönünde).\n• F₁y = F₁ · sin37° = 10 · 0,6 = +6 N (+y yönünde).\nF₂ = 4 N kuvveti doğrudan -x yönünde olduğu için F₂x = -4 N ve F₂y = 0’dır.\nToplam bileşenler: Rx = +8 - 4 = +4 N ve Ry = +6 + 0 = +6 N... (Eğer F₂ = 2 N -x yönünde olsaydı Rx = 6 N olurdu; mevcut değerlerle R = {kok:4² + 6²} = {kok:52} = 2{kok:13} N bulunur)."
     },
     {
-     "metin": "İki vektörün başlangıç noktalarını birleştirerek ortak köşeden çıkan köşegenle toplam bulma yöntemine ___ yöntemi denir.",
-     "cevap": "paralelkenar"
+      "soru": "Büyüklükleri 7 N ve 15 N olan iki kuvvetin bileşkesinin (R) alabileceği en büyük ve en küçük tam sayı değerleri nelerdir? Bu iki kuvvet birbirine dik (90°) olsaydı bileşke kaç N olurdu? (8-15-17 özel üçgenini hatırlayınız)",
+      "cevap": "İki vektörün bileşkesi |F₁ - F₂| ≤ R ≤ F₁ + F₂ aralığındadır:\n• En küçük değer (θ = 180°, zıt yönlü): R_min = |15 - 7| = 8 N.\n• En büyük değer (θ = 0°, aynı yönlü): R_max = 15 + 7 = 22 N.\n• Dik olsalardı (θ = 90°): R = {kok:7² + 15²} = {kok:49 + 225} = {kok:274} N olurdu (Eğer kuvvetler 8 N ve 15 N olsaydı dik durumda {kok:8² + 15²} = 17 N olurdu)."
     },
     {
-     "metin": "Yatay eksenle θ açısı yapan A vektörünün yatay bileşeni Ax = A · ___ bağıntısıyla hesaplanır.",
-     "cevap": "cosθ"
+      "soru": "Aynı düzlemde bulunan K, L ve M vektörleri uç uca eklendiğinde M vektörünün bitiş noktası K vektörünün başlangıç noktasıyla çakışmaktadır (kapalı üçgen oluşturmaktadır). Buna göre K + L + M toplamı aşağıdakilerden hangisine eşittir?",
+      "cevap": "Doğru yanıt: 0 (Sıfır vektörü). Uç uca eklenen vektörler başladığı noktaya geri dönerek kapalı bir çokgen oluşturuyorsa bileşke vektör sıfırdır (R = K + L + M = 0)."
     },
     {
-     "metin": "Üç boyutlu kartezyen koordinat sisteminde birbirine dik x, y ve ___ olmak üzere üç eksen bulunur.",
-     "cevap": "z"
+      "soru": "‘Kartezyen Koordinat Sisteminde Vektörler, Eşit-Zıt Vektörler’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
+      "cevap": "Bir vektörü matematiksel olarak kusursuz biçimde tanımlamak için birbirine dik eksenlerden oluşan {koyu:kartezyen koordinat sistemi} kullanılır. İki boyutlu düzlemde yatay eksen {koyu:x (apsis)}, düşey eksen {koyu:y (ordinat)} eksenidir; üç boyutlu uzayda ise bunlara derinlik ekseni olan {koyu:z (kot)} ekseni eklenir. Başlangıç noktası orijin {koyu:O(0, 0)} (üç boyutta {koyu:O(0, 0, 0)}) kabul edilen bir vektör, uç noktasının koordinatlarıyla {koyu:A(x, y)} veya {koyu:A(x, y, z)} biçiminde ifade edilir. Örneğin uç noktası {koyu:(3, 4)} olan {koyu:A(3, 4)} vektörünün büyüklüğü (şiddeti), dik üçgende Pisagor bağıntısıyla {koyu:|A| = {kok:3² + 4²} = 5 birim} olarak hesaplanır. Vektörler uzayda doğrultusu, yönü ve büyüklüğü değiştirilmeden {koyu:paralel olarak istenilen yere taşınabilir}."
+    },
+    {
+      "soru": "‘Skalerle Çarpım’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
+      "cevap": "İki vektörün {koyu:eşit vektörler (K = L)} olabilmesi için doğrultularının, yönlerinin ve büyüklüklerinin (şiddetlerinin) bire bir aynı olması şarttır; başlangıç noktalarının farklı olması eşitliği bozmaz. Doğrultuları ve büyüklükleri eşit, fakat yönleri birbirine tam zıt (aralarındaki açı 180°) olan vektörlere {koyu:zıt (negatif) vektörler} denir ve {koyu:K = -M} şeklinde gösterilir (bu durumda büyüklükleri eşittir: {koyu:|K| = |M|}). Bir {koyu:A} vektörü sıfırdan farklı bir {koyu:k} gerçek sayısı (skaler) ile çarpıldığında elde edilen {koyu:k·A} vektörünün büyüklüğü {koyu:|k|·|A|} olur; eğer {koyu:k > 0} ise vektörün yönü değişmez, eğer {koyu:k < 0} ise vektörün yönü {koyu:180° (tam zıt yöne)} döner."
     }
-   ],
-   "fazla": [
-    "skaler",
-    "kronometre"
-   ],
-   "tur": "bosluk",
-   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun fizik kavramlarıyla tamamlayınız."
-  },
-  {
-   "soru": "Limana yanaşmakta olan bir gemiyi iki römorkör halatlarla çekmektedir. Römorkörlerin uyguladığı kuvvetler eşit büyüklükte (her biri 100 kN) olduğuna göre; römorkörler arasındaki açı 60° iken mi yoksa 120° iken mi gemiye uygulanan net çekme kuvveti (bileşke) daha büyük olur? Nedenini hesaplayarak açıklayınız.",
-   "ipuclari": [
-    "1. Eşit büyüklükteki iki vektör için 60° ve 120° özel açı formüllerini (F{kok:3} ve F) kullanınız.",
-    "2. İki vektör arasındaki açı ile bileşke büyüklüğü arasındaki ters orantı ilkesini belirtiniz."
-   ],
-   "cevap": "Römorkörler arasındaki açı 60° iken gemiye etki eden bileşke çekme kuvveti R₁ = F{kok:3} = 100{kok:3} ≈ 173,2 kN olur. Açı 120° iken ise bileşke kuvvet R₂ = F = 100 kN’a düşer. Çünkü iki kuvvet arasındaki açı küçüldükçe kuvvetlerin aynı yöndeki bileşenleri birbirini destekler ve bileşke kuvvet büyür; açı 60° iken gemi çok daha büyük bir net kuvvetle çekilir.",
-   "tur": "ogretici"
-  }
- ]
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "İki boyutlu kartezyen koordinat sisteminde başlangıç noktaları orijin O(0, 0) olan A(-3, 5) ve B(6, -1) vektörlerinin bileşkesi olan R = A + B vektörünün büyüklüğü kaç birimdir?",
+      "secenekler": [
+        "5",
+        "4",
+        "3",
+        "7",
+        "10"
+      ],
+      "dogru": 0,
+      "aciklama": "Rx = -3 + 6 = 3 birim ve Ry = 5 + (-1) = 4 birimdir. R(3, 4) vektörünün büyüklüğü Pisagor bağıntısıyla |R| = {kok:3² + 4²} = 5 birim bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Başlangıç noktaları aynı noktada bulunan ve büyüklükleri eşit (F₁ = F₂ = 12 N) olan iki kuvvet arasındaki açı 120°’dir. Bu iki kuvvetin bileşkesinin büyüklüğü kaç N’dir?",
+      "secenekler": [
+        "6",
+        "12",
+        "12{kok:2}",
+        "12{kok:3}",
+        "24"
+      ],
+      "dogru": 1,
+      "aciklama": "Büyüklükleri eşit (F) olan iki vektör arasındaki açı 120° olduğunda bileşke vektörün büyüklüğü vektörlerden birinin büyüklüğüne eşit olur: R = F = 12 N."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Büyüklükleri 6 N ve 10 N olan iki farklı kuvvetin bileşkesinin büyüklüğü (R) aşağıdakilerden hangisi olamaz?",
+      "secenekler": [
+        "10 N",
+        "4 N",
+        "3 N",
+        "14 N",
+        "16 N"
+      ],
+      "dogru": 2,
+      "aciklama": "İki vektörün bileşkesi |10 - 6| ≤ R ≤ 10 + 6, yani 4 N ≤ R ≤ 16 N aralığında olmak zorundadır; dolayısıyla 3 N olamaz."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kartezyen koordinat düzleminde +x ekseni ile 53° açı yapan 20 N büyüklüğündeki F kuvvetinin yatay (Fx) ve düşey (Fy) bileşenlerinin büyüklükleri aşağıdakilerin hangisinde sırasıyla doğru verilmiştir? (cos53° = 0,6; sin53° = 0,8)",
+      "secenekler": [
+        "Fx = 10 N, Fy = 10 N",
+        "Fx = 16 N, Fy = 12 N",
+        "Fx = 12 N, Fy = 20 N",
+        "Fx = 12 N, Fy = 16 N",
+        "Fx = 8 N, Fy = 12 N"
+      ],
+      "dogru": 3,
+      "aciklama": "Yatay bileşen Fx = F · cos53° = 20 · 0,6 = 12 N; düşey bileşen Fy = F · sin53° = 20 · 0,8 = 16 N olarak bulunur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Doğrultusu, yönü ve büyüklüğü değiştirilmeden bir vektör kartezyen düzlemde paralel olarak taşınabilir.",
+          "dogru": true,
+          "aciklama": "Bir vektör negatif sayıyla (-2) çarpıldığında yönü 180° döner. Ayrıca A - B ile B - A birbirinin zıt vektörleridir."
+        },
+        {
+          "metin": "Bir A vektörü -2 sayısı ile çarpıldığında yönü değişmez, münhasıran büyüklüğü 2 katına çıkar.",
+          "dogru": false,
+          "aciklama": "Bir vektör negatif sayıyla (-2) çarpıldığında yönü 180° döner. Ayrıca A - B ile B - A birbirinin zıt vektörleridir."
+        },
+        {
+          "metin": "Başlangıç noktaları ortak olan iki vektör arasındaki açı arttıkça bileşke vektörün büyüklüğü azalır.",
+          "dogru": true,
+          "aciklama": "Bir vektör negatif sayıyla (-2) çarpıldığında yönü 180° döner. Ayrıca A - B ile B - A birbirinin zıt vektörleridir."
+        },
+        {
+          "metin": "Birbirine dik (90°) olan 6 N ve 8 N büyüklüğündeki iki kuvvetin bileşkesi 10 N’dir.",
+          "dogru": true,
+          "aciklama": "Bir vektör negatif sayıyla (-2) çarpıldığında yönü 180° döner. Ayrıca A - B ile B - A birbirinin zıt vektörleridir."
+        },
+        {
+          "metin": "Vektörlerde çıkarma işleminde A - B vektörü ile B - A vektörünün yönleri aynıdır.",
+          "dogru": false,
+          "aciklama": "Bir vektör negatif sayıyla (-2) çarpıldığında yönü 180° döner. Ayrıca A - B ile B - A birbirinin zıt vektörleridir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Büyüklükleri birbirine eşit ve 10 N olan iki vektörün (F₁ = F₂ = 10 N) aralarındaki açıya göre oluşturdukları bileşke vektör büyüklüklerini (R) eşleştiriniz.",
+      "ciftler": [
+        [
+          "Aralarındaki açı θ = 0° (Aynı yönlü)",
+          "R = 20 N"
+        ],
+        [
+          "Aralarındaki açı θ = 60°",
+          "R = 10{kok:3} N"
+        ],
+        [
+          "Aralarındaki açı θ = 90° (Dik)",
+          "R = 10{kok:2} N"
+        ],
+        [
+          "Aralarındaki açı θ = 120°",
+          "R = 10 N"
+        ],
+        [
+          "Aralarındaki açı θ = 180° (Zıt yönlü)",
+          "R = 0 N"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Birden fazla vektörün yaptığı etkiyi tek başına yapabilen vektöre ___ vektör denir ve R ile gösterilir.",
+          "cevap": "bileşke"
+        },
+        {
+          "metin": "Doğrultuları ve büyüklükleri aynı, yönleri birbirine tam ters (180°) olan iki vektöre ___ vektörler denir.",
+          "cevap": "zıt"
+        },
+        {
+          "metin": "İki vektörün başlangıç noktalarını birleştirerek ortak köşeden çıkan köşegenle toplam bulma yöntemine ___ yöntemi denir.",
+          "cevap": "paralelkenar"
+        },
+        {
+          "metin": "Yatay eksenle θ açısı yapan A vektörünün yatay bileşeni Ax = A · ___ bağıntısıyla hesaplanır.",
+          "cevap": "cosθ"
+        },
+        {
+          "metin": "Üç boyutlu kartezyen koordinat sisteminde birbirine dik x, y ve ___ olmak üzere üç eksen bulunur.",
+          "cevap": "z"
+        }
+      ],
+      "fazla": [
+        "skaler",
+        "kronometre"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Limana yanaşmakta olan bir gemiyi iki römorkör halatlarla çekmektedir. Römorkörlerin uyguladığı kuvvetler eşit büyüklükte (her biri 100 kN) olduğuna göre; römorkörler arasındaki açı 60° iken mi yoksa 120° iken mi gemiye uygulanan net çekme kuvveti (bileşke) daha büyük olur? Nedenini hesaplayarak açıklayınız.",
+      "cevap": "Römorkörler arasındaki açı 60° iken gemiye etki eden bileşke çekme kuvveti R₁ = F{kok:3} = 100{kok:3} ≈ 173,2 kN olur. Açı 120° iken ise bileşke kuvvet R₂ = F = 100 kN’a düşer. Çünkü iki kuvvet arasındaki açı küçüldükçe kuvvetlerin aynı yöndeki bileşenleri birbirini destekler ve bileşke kuvvet büyür; açı 60° iken gemi çok daha büyük bir net kuvvetle çekilir.",
+      "ipuclari": [
+        "1. Eşit büyüklükteki iki vektör için 60° ve 120° özel açı formüllerini (F{kok:3} ve F) kullanınız.",
+        "2. İki vektör arasındaki açı ile bileşke büyüklüğü arasındaki ters orantı ilkesini belirtiniz."
+      ]
+    }
+  ]
 }

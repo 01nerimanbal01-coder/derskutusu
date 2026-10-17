@@ -1,159 +1,100 @@
-# -*- coding: utf-8 -*-
-"""11. Sınıf Kimya — 5. Hafta Görselleri
-Konu: Tepkime Isılarının Toplanabilirliği (Hess Yasası) ve Kimyasal Tepkimelerde Çarpışma Teorisi
-"""
-
-
 def _svg(w, h, icerik):
     return (
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" '
-        f'width="100%" style="max-width:{w}px;height:auto;display:block;'
-        f'margin:14px auto;font-family:\'Segoe UI\',system-ui,sans-serif;">'
-        f"{icerik}</svg>"
+        f'<svg viewBox="0 0 {w} {h}" xmlns="http://www.w3.org/2000/svg" '
+        f'style="width:100%;height:auto;display:block;font-family:\'Segoe UI\',sans-serif;">'
+        f'<rect width="{w}" height="{h}" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>'
+        f'{icerik}</svg>'
     )
 
 
-def _kart(x, y, w, h, baslik, renk="#7c3aed", arka="#f5f3ff"):
+def _kart(x, y, w, h, baslik, satirlar, renk="#059669", bg="#ECFDF5"):
+    b = (
+        f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="10" fill="{bg}" stroke="{renk}" stroke-width="1.8"/>'
+        f'<rect x="{x}" y="{y}" width="{w}" height="30" rx="10" fill="{renk}"/>'
+        f'<rect x="{x}" y="{y+18}" width="{w}" height="12" fill="{renk}"/>'
+        f'<text x="{x+w/2}" y="{y+20}" font-size="11.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">{baslik}</text>'
+    )
+    for i, s in enumerate(satirlar):
+        b += f'<text x="{x+12}" y="{y+48+i*18}" font-size="10.5" fill="#1E293B">{s}</text>'
+    return b
+
+
+def _bant(y, b, m, r, bg):
     return (
-        f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="12" '
-        f'fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        f'<rect x="{x}" y="{y}" width="{w}" height="32" rx="12" fill="{renk}"/>'
-        f'<rect x="{x}" y="{y+18}" width="{w}" height="14" fill="{renk}"/>'
-        f'<text x="{x+w/2}" y="{y+21}" text-anchor="middle" fill="#fff" '
-        f'font-size="13" font-weight="700">{baslik}</text>'
+        f'<rect x="25" y="{y}" width="630" height="42" rx="8" fill="{bg}" stroke="{r}" stroke-width="1.5"/>'
+        f'<text x="40" y="{y+16}" font-size="11" font-weight="bold" fill="{r}">{b}</text>'
+        f'<text x="40" y="{y+33}" font-size="10.5" fill="#1E293B">{m}</text>'
     )
 
 
 def gorsel_1():
-    """Hess Yasası (Tepkime Isılarının Toplanabilirliği) 3 Altın Kural."""
-    w, h = 760, 310
-    s = _kart(10, 10, w - 20, h - 20, "Hess Yasası: Tepkime Entalpilerinin (Delta_H) Toplanabilirliği Kuralları", "#7c3aed", "#f5f3ff")
-
-    kurallar = [
-        ("1. Tepkime Ters Çevrilirse", "Girenler ve ürünler yer", "değiştirdiğinde Delta_H", "İŞARET DEĞİŞTİRİR!", "A -> B   (Delta_H = -100 kJ)", "B -> A   (Delta_H = +100 kJ)", "#dc2626", "#fef2f2"),
-        ("2. Katsayı İle Çarpılır/Bölünürse", "Denklem hangi pozitif sayıyla", "(k) çarpılır veya bölünürse,", "Delta_H da k ile ÇARPILIR!", "A -> B   (Delta_H = -100 kJ)", "2A -> 2B (Delta_H = -200 kJ)", "#0284c7", "#f0f9ff"),
-        ("3. Ara Basamaklar Toplanırsa", "Ara tepkimeler taraf tarafa", "toplandığında net tepkimenin", "entalpisi CEBİRSEL TOPLAMDIR:", "Delta_H_net = Delta_H1 + Delta_H2", "(Zıt taraftaki eşit türler sadeleşir)", "#16a34a", "#f0fdf4"),
-    ]
-    for i, (bas, a1, a2, a3, ex1, ex2, r, bg) in enumerate(kurallar):
-        x = 28 + i * 240
-        s += f'<rect x="{x}" y="55" width="224" height="230" rx="10" fill="{bg}" stroke="{r}" stroke-width="1.6"/>'
-        s += f'<rect x="{x}" y="55" width="224" height="28" rx="10" fill="{r}"/>'
-        s += f'<text x="{x+112}" y="74" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">{bas}</text>'
-        s += f'<text x="{x+112}" y="106" text-anchor="middle" fill="#1e293b" font-size="10.2">{a1}</text>'
-        s += f'<text x="{x+112}" y="124" text-anchor="middle" fill="#1e293b" font-size="10.2">{a2}</text>'
-        s += f'<text x="{x+112}" y="144" text-anchor="middle" fill="{r}" font-size="10.5" font-weight="700">{a3}</text>'
-        s += f'<rect x="{x+12}" y="166" width="200" height="96" rx="8" fill="#fff" stroke="{r}"/>'
-        s += f'<text x="{x+112}" y="198" text-anchor="middle" fill="#334155" font-size="10" font-weight="700">{ex1}</text>'
-        s += f'<text x="{x+112}" y="226" text-anchor="middle" fill="{r}" font-size="10" font-weight="700">{ex2}</text>'
-
-    return _svg(w, h, s)
-
+    w, h = 680, 250
+    ic = '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">BAĞ KIRILMASI VE BAĞ OLUŞUMUNDA ENERJİ DEĞİŞİMİ</text>'
+    ic += _kart(20, 44, 310, 190, "BAĞ KIRILMASI (ENDOTERMİK OLAY)", [
+        "• Gaz fazındaki bir molekülde 1 mol kovalent bağı",
+        "  kırmak için dışarıdan enerji (ısı) verilmelidir.",
+        "• Örnek: H₂(g) + 436 kJ/mol  ->  2H(g)  (ΔH = +436 kJ)",
+        "• Örnek: O₂(g) + 498 kJ/mol  ->  2O(g)  (ΔH = +498 kJ)",
+        "• Bağ enerjisi ne kadar büyükse bağ o kadar sağlam",
+        "  ve molekül o kadar kararlıdır."
+    ], "#DC2626", "#FEF2F2")
+    ic += _kart(350, 44, 310, 190, "BAĞ OLUŞUMU (EKZOTERMİK OLAY)", [
+        "• Gaz halindeki serbest atomlar kararlı hale geçmek",
+        "  için aralarında kimyasal bağ kurarken ısı açığa çıkar.",
+        "• Örnek: 2H(g)  ->  H₂(g) + 436 kJ/mol  (ΔH = -436 kJ)",
+        "• Örnek: 2N(g)  ->  N₂(g) + 946 kJ/mol  (ΔH = -946 kJ)",
+        "• Aynı iki atom arasındaki bağ sayısı arttıkça",
+        "  (C-C &lt; C=C &lt; C≡C) bağ kısalır ve bağ enerjisi artar."
+    ], "#2563EB", "#EFF6FF")
+    return _svg(w, h, ic)
 
 def gorsel_2():
-    """Hess Yasası Enerji Diyagramı (C + O2 -> CO2 Doğrudan ve İki Basamaklı Yol)."""
-    w, h = 760, 310
-    s = _kart(10, 10, w - 20, h - 20, "Hess Yasası Enerji Diyagramı: Entalpi Yoldan Bağımsız Bir Hal Fonksiyonudur", "#0284c7", "#f0f9ff")
-
-    # Sol: Enerji basamakları
-    s += '<rect x="30" y="55" width="380" height="230" rx="10" fill="#fff" stroke="#7dd3fc" stroke-width="1.5"/>'
-    # Üst seviye: C(k) + O2(g)
-    s += '<line x1="60" y1="85" x2="360" y2="85" stroke="#1e293b" stroke-width="3"/>'
-    s += '<text x="210" y="76" text-anchor="middle" fill="#1e293b" font-size="11" font-weight="700">Başlangıç: C(k) + O2(g)</text>'
-
-    # Orta seviye: CO(g) + 1/2 O2(g)
-    s += '<line x1="210" y1="165" x2="375" y2="165" stroke="#d97706" stroke-width="2.5"/>'
-    s += '<text x="292" y="156" text-anchor="middle" fill="#b45309" font-size="10" font-weight="700">Ara: CO(g) + 1/2 O2(g)</text>'
-
-    # Alt seviye: CO2(g)
-    s += '<line x1="60" y1="245" x2="360" y2="245" stroke="#16a34a" stroke-width="3"/>'
-    s += '<text x="210" y="264" text-anchor="middle" fill="#15803d" font-size="11" font-weight="700">Sonuç: CO2(g)</text>'
-
-    # Oklar
-    s += '<line x1="110" y1="88" x2="110" y2="240" stroke="#dc2626" stroke-width="3"/>'
-    s += '<text x="115" y="170" fill="#dc2626" font-size="10.5" font-weight="700">Delta_H_net = -393,5 kJ</text>'
-
-    s += '<line x1="285" y1="88" x2="285" y2="140" stroke="#0284c7" stroke-width="2.2"/>'
-    s += '<text x="292" y="118" fill="#0284c7" font-size="9.8" font-weight="700">Delta_H1 = -110,5 kJ</text>'
-
-    s += '<line x1="285" y1="168" x2="285" y2="240" stroke="#7c3aed" stroke-width="2.2"/>'
-    s += '<text x="292" y="210" fill="#7c3aed" font-size="9.8" font-weight="700">Delta_H2 = -283,0 kJ</text>'
-
-    # Sağ: Açıklama
-    s += '<rect x="428" y="55" width="302" height="230" rx="10" fill="#fff" stroke="#7dd3fc" stroke-width="1.5"/>'
-    s += '<text x="579" y="80" text-anchor="middle" fill="#0369a1" font-size="12" font-weight="700">Neden Toplam Değişmez?</text>'
-    s += '<text x="579" y="110" text-anchor="middle" fill="#334155" font-size="10.2">Entalpi (H) bir HAL FONKSİYONUDUR;</text>'
-    s += '<text x="579" y="128" text-anchor="middle" fill="#334155" font-size="10.2">izlenen yola veya basamak sayısına değil,</text>'
-    s += '<text x="579" y="146" text-anchor="middle" fill="#0369a1" font-size="10.2" font-weight="700">yalnız ilk ve son duruma bağlıdır.</text>'
-    s += '<rect x="444" y="168" width="270" height="96" rx="8" fill="#e0f2fe" stroke="#0284c7"/>'
-    s += '<text x="579" y="194" text-anchor="middle" fill="#1e293b" font-size="10.5" font-weight="700">Delta_H_net = Delta_H1 + Delta_H2</text>'
-    s += '<text x="579" y="218" text-anchor="middle" fill="#dc2626" font-size="11" font-weight="700">-393,5 kJ = (-110,5) + (-283,0)</text>'
-    s += '<text x="579" y="242" text-anchor="middle" fill="#475569" font-size="9.8">(Germain Henri Hess, 1840)</text>'
-
-    return _svg(w, h, s)
-
+    w, h = 680, 250
+    ic = '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">BAĞ ENERJİLERİYLE TEPKİME ENTALPİSİNİN HESAPLANMASI</text>'
+    ic += _kart(20, 44, 640, 190, "ΔH°_tepkime = Σ ΔH(Kırılan Bağlar)  -  Σ ΔH(Oluşan Bağlar)", [
+        "• Tepkimeye giren taneciklerdeki bağlar KIRILIR (+, endotermik); ürünlerdeki bağlar OLUŞUR (-, ekzotermik).",
+        "• Formül: ΔH° = [ Girenlerdeki kırılan bağ enerjileri toplamı ] - [ Ürünlerdeki oluşan bağ enerjileri toplamı ]",
+        "• EĞER Σ(Kırılan) &gt; Σ(Oluşan) ise ΔH &gt; 0 (Tepkime endotermiktir).",
+        "• EĞER Σ(Oluşan) &gt; Σ(Kırılan) ise ΔH &lt; 0 (Tepkime ekzotermiktir).",
+        "• Örnek: H₂(g) + Cl₂(g) -> 2HCl(g) tepkimesinde (H-H: 436, Cl-Cl: 242, H-Cl: 431 kJ/mol):",
+        "  ΔH° = (1·436 + 1·242) - (2·431) = 678 - 862 = -184 kJ bulunur."
+    ], "#059669", "#ECFDF5")
+    return _svg(w, h, ic)
 
 def gorsel_3():
-    """Çarpışma Teorisi ve Etkin Çarpışmanın 2 Şartı."""
-    w, h = 760, 310
-    s = _kart(10, 10, w - 20, h - 20, "Kimyasal Tepkimelerde Hız: Çarpışma Teorisi ve Etkin Çarpışma Şartları", "#0d9488", "#f0fdfa")
-
-    sartlar = [
-        ("1. Şart: Uygun Geometrik Doğrultu", "Tanecikler bağların kopup yeni", "bağların oluşabileceği doğru", "açı ve doğrultuda çarpışmalıdır.", "(Merkez-merkez uygun yönelim)", "#0d9488", "#ccfbf1"),
-        ("2. Şart: Yeterli Kinetik Enerji (E_a)", "Çarpışan taneciklerin toplam", "kinetik enerjisi en az Eşik Enerjisi", "(Aktifleşme Enerjisi, E_a) kadar", "olmalıdır (E_a daima POZİTİFTİR!).", "#d97706", "#fef3c7"),
-        ("Sonuç: Aktifleşmiş Kompleks", "İki şartı sağlayan ETKİN ÇARPIŞMA", "sonucunda yüksek enerjili ve", "kararsız ara durum olan", "Aktifleşmiş Kompleks oluşur.", "#7c3aed", "#f5f3ff"),
-    ]
-    for i, (bas, a1, a2, a3, a4, r, bg) in enumerate(sartlar):
-        x = 28 + i * 240
-        s += f'<rect x="{x}" y="58" width="224" height="225" rx="10" fill="{bg}" stroke="{r}" stroke-width="1.6"/>'
-        s += f'<rect x="{x}" y="58" width="224" height="28" rx="10" fill="{r}"/>'
-        s += f'<text x="{x+112}" y="77" text-anchor="middle" fill="#fff" font-size="10.5" font-weight="700">{bas}</text>'
-        s += f'<text x="{x+112}" y="118" text-anchor="middle" fill="#1e293b" font-size="10.2">{a1}</text>'
-        s += f'<text x="{x+112}" y="138" text-anchor="middle" fill="#1e293b" font-size="10.2">{a2}</text>'
-        s += f'<text x="{x+112}" y="158" text-anchor="middle" fill="#1e293b" font-size="10.2">{a3}</text>'
-        s += f'<text x="{x+112}" y="188" text-anchor="middle" fill="{r}" font-size="10.2" font-weight="700">{a4}</text>'
-
-    return _svg(w, h, s)
-
+    w, h = 680, 250
+    ic = '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">STANDART MOLAR OLUŞUM ENTALPİSİ (ΔH°f) KURALLARI</text>'
+    ic += _kart(20, 44, 310, 190, "STANDART KOŞULLAR VE TANIM", [
+        "• Standart koşullar: 25 °C (298 K) sıcaklık ve 1 atm basınç.",
+        "• 1 mol bileşiğin, standart şartlarda kendi elementlerinin",
+        "  en kararlı allotroplarından oluşması sırasındaki ısı",
+        "  değişimine Standart Molar Oluşum Entalpisi (ΔH°f) denir.",
+        "• Örnek: C(grafit) + O₂(g) -> CO₂(g)  ΔH°f = -393,5 kJ/mol.",
+        "• CO(g) + 1/2 O₂(g) -> CO₂(g) tepkimesi ΔH°f DEĞİLDİR",
+        "  (çünkü girenlerde element değil CO bileşiği vardır!)."
+    ], "#7C3AED", "#F5F3FF")
+    ic += _kart(350, 44, 310, 190, "KARARLI ELEMENTLERDE ΔH°f = 0 KURALI", [
+        "• Standart şartlarda (25 °C, 1 atm) doğadaki en kararlı",
+        "  fiziksel halinde bulunan elementlerin oluşum entalpisi",
+        "  SIFIR kabul edilir: ΔH°f = 0 kJ/mol.",
+        "• Örnek (ΔH°f = 0 olanlar): H₂(g), O₂(g), N₂(g), Fe(k),",
+        "  Hg(s), Br₂(s), I₂(k), C(grafit).",
+        "• Kararsız allotrop veya farklı fiziksel hallerde sıfır",
+        "  değildir: O₃(g) ≠ 0, C(elmas) ≠ 0, H₂O(g) ≠ H₂O(s)."
+    ], "#D97706", "#FEF3C7")
+    return _svg(w, h, ic)
 
 def gorsel_4():
-    """Potansiyel Enerji (PE) - Tepkime Koordinatı Grafiği (E_ai, E_ag ve Delta_H İlişkisi)."""
-    w, h = 760, 310
-    s = _kart(10, 10, w - 20, h - 20, "Potansiyel Enerji Grafiği: İleri/Geri Aktifleşme Enerjisi ve Delta_H", "#15803d", "#f0fdf4")
-
-    # Sol: PE Grafiği
-    s += '<rect x="30" y="55" width="350" height="230" rx="10" fill="#fff" stroke="#86efac" stroke-width="1.5"/>'
-    s += '<line x1="65" y1="245" x2="350" y2="245" stroke="#334155" stroke-width="2"/>'
-    s += '<line x1="65" y1="75" x2="65" y2="245" stroke="#334155" stroke-width="2"/>'
-    # Eğri (Ekzotermik örnek)
-    s += '<path d="M65,165 L115,165 Q185,60 245,215 L325,215" fill="none" stroke="#16a34a" stroke-width="3"/>'
-    s += '<circle cx="182" cy="112" r="5" fill="#dc2626"/>'
-    s += '<text x="182" y="98" text-anchor="middle" fill="#dc2626" font-size="9.5" font-weight="700">Aktifleşmiş Kompleks (Tepe)</text>'
-    s += '<text x="90" y="156" text-anchor="middle" fill="#1e293b" font-size="9.5" font-weight="700">Girenler</text>'
-    s += '<text x="295" y="206" text-anchor="middle" fill="#1e293b" font-size="9.5" font-weight="700">Ürünler</text>'
-    # E_ai ve E_ag okları
-    s += '<line x1="150" y1="112" x2="150" y2="165" stroke="#0284c7" stroke-width="2" stroke-dasharray="3,2"/>'
-    s += '<text x="130" y="142" fill="#0284c7" font-size="9.5" font-weight="700">E_ai</text>'
-    s += '<line x1="215" y1="112" x2="215" y2="215" stroke="#7c3aed" stroke-width="2" stroke-dasharray="3,2"/>'
-    s += '<text x="235" y="165" fill="#7c3aed" font-size="9.5" font-weight="700">E_ag</text>'
-
-    # Sağ: Formüller
-    s += '<rect x="398" y="55" width="332" height="230" rx="10" fill="#fff" stroke="#86efac" stroke-width="1.5"/>'
-    s += '<text x="564" y="78" text-anchor="middle" fill="#166534" font-size="12" font-weight="700">PE Grafiği Temel Bağıntıları</text>'
-
-    formuller = [
-        ("1) E_ai = PE(Tepe) - PE(Girenler)", "İleri aktifleşme enerjisi (Daima E_ai > 0)"),
-        ("2) E_ag = PE(Tepe) - PE(Ürünler)", "Geri aktifleşme enerjisi (Daima E_ag > 0)"),
-        ("3) Delta_H = E_ai - E_ag", "E_ai < E_ag ise Ekzotermik (Delta_H < 0)"),
-        ("4) Delta_H = PE(Ürünler) - PE(Girenler)", "E_ai > E_ag ise Endotermik (Delta_H > 0)"),
-    ]
-    for i, (f1, f2) in enumerate(formuller):
-        y = 92 + i * 45
-        s += f'<rect x="412" y="{y}" width="304" height="38" rx="6" fill="#f0fdf4" stroke="#22c55e"/>'
-        s += f'<text x="422" y="{y+16}" fill="#15803d" font-size="10.2" font-weight="700">{f1}</text>'
-        s += f'<text x="422" y="{y+31}" fill="#334155" font-size="9.5">{f2}</text>'
-
-    return _svg(w, h, s)
-
+    w, h = 680, 250
+    ic = '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">OLUŞUM ENTALPİLERİYLE TEPKİME ENTALPİSİ HESABI</text>'
+    ic += _kart(20, 44, 640, 190, "ΔH°_tepkime = Σ n · ΔH°f(Ürünler)  -  Σ m · ΔH°f(Girenler)", [
+        "• DİKKAT: Bağ enerjisinde (Kırılan/Giren - Oluşan/Ürün) alınırken, oluşum entalpisinde (ÜRÜNLER - GİRENLER) alınır!",
+        "• Denkleştirilmiş tepkimede her maddenin ΔH°f değeri kendi stokiyometrik katsayısıyla (mol sayısıyla) çarpılır.",
+        "• Tepkimede yer alan kararlı elementlerin (O₂(g), N₂(g), Al(k) vb.) ΔH°f değeri 0 alınır.",
+        "• Örnek: CH₄(g) + 2O₂(g) -> CO₂(g) + 2H₂O(s) tepkimesinde:",
+        "  ΔH°_tepkime = [ 1·ΔH°f(CO₂) + 2·ΔH°f(H₂O) ] - [ 1·ΔH°f(CH₄) + 2·0 ]"
+    ], "#0891B2", "#ECFEFF")
+    return _svg(w, h, ic)
 
 GORSELLER = {
     "b1": gorsel_1(),
@@ -164,8 +105,7 @@ GORSELLER = {
 
 
 def uygula(v):
-    eş = [(0, "b1"), (1, "b2"), (2, "b3"), (4, "b4")]
-    bolumler = v.get("bolumler", [])
-    for idx, anahtar in eş:
-        if idx < len(bolumler):
-            bolumler[idx]["gorsel"] = GORSELLER[anahtar]
+    harita = {0: "b1", 1: "b2", 2: "b3", 4: "b4"}
+    for idx, anahtar in harita.items():
+        if idx < len(v.get("bolumler", [])):
+            v["bolumler"][idx]["gorsel"] = GORSELLER[anahtar]

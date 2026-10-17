@@ -119,7 +119,7 @@ def gorsel_4():
     s += _kutu(380, 52, 340, 180, "#fff7ed", "#f97316", "BİTİŞ ÇİZGİSİNE VARIŞ SIRALAMASI", [
         "• Eylemsizlik Momentleri: I_halka > I_disk > I_küre",
         "• Tabandaki Öteleme Hızları: v_küre > v_disk > v_halka",
-        "• İniş Süreleri: t_küre < t_disk < t_halka",
+        "• İniş Süreleri: t_küre &lt; t_disk &lt; t_halka",
         "• Sonuç: Eğik düzlemden aynı anda bırakılan içi dolu",
         "  KÜRE 1., DİSK (SİLİNDİR) 2., HALKA (ÇEMBER) 3. olur!"
     ], "#9a3412")

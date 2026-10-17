@@ -1,91 +1,13 @@
-def _svg(w, h, ic):
-    return f'<svg viewBox="0 0 {w} {h}" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block">{ic}</svg>'
-
-def _kutu(x, y, w, h, dolgu="#f8fafc", kenar="#cbd5e1", r=10, kalinlik=1.5):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{kenar}" stroke-width="{kalinlik}"/>'
-
-def _metin(x, y, icerik, boyut=12, renk="#1e293b", kalin="normal", hiza="middle"):
-    return f'<text x="{x}" y="{y}" font-family="Inter,system-ui,sans-serif" font-size="{boyut}" fill="{renk}" font-weight="{kalin}" text-anchor="{hiza}">{icerik}</text>'
-
-def gorsel_1():
-    ic = _kutu(10, 10, 680, 210, "#fffbeb", "#f59e0b", 12, 2)
-    ic += _metin(350, 34, "1923-1960 CUMHURİYET DÖNEMİ HİKÂYE ANLAYIŞLARI", 14, "#92400e", "bold")
-    cols = [
-        (25, "#fef2f2", "#ef4444", "#991b1b", "Millî-Dinî Duyarlılık", "Anadolu, Kurtuluş Savaşı", "Doğu-Batı çatışması, halk", "Yakup Kadri, Reşat Nuri,", "Refik Halit, Aka Gündüz"),
-        (248, "#eff6ff", "#3b82f6", "#1e40af", "Toplumcu Gerçekçilik", "Köylü-işçi, ağa-köylü", "Göç, geçim sıkıntısı, tezli", "Sabahattin Ali, Sadri Ertem,", "Orhan Kemal, Kemal Tahir"),
-        (471, "#f0fdf4", "#22c55e", "#166534", "Bireyin İç Dünyası", "Psikoloji, yalnızlık, bunalım", "İç konuşma, bilinç akışı", "Peyami Safa, A. H. Tanpınar,", "Tarık Buğra, Samiha Ayverdi")
-    ]
-    for x, bg, st, tc, b, s1, s2, s3, s4 in cols:
-        ic += _kutu(x, 48, 204, 156, bg, st, 10, 1.8)
-        ic += _metin(x+102, 72, b, 12, tc, "bold")
-        ic += _metin(x+102, 100, s1, 11, "#334155")
-        ic += _metin(x+102, 122, s2, 11, "#334155")
-        ic += _kutu(x+12, 138, 180, 52, "#ffffff", st, 6, 1)
-        ic += _metin(x+102, 158, s3, 10, tc, "bold")
-        ic += _metin(x+102, 176, s4, 10, "#475569")
-    return _svg(700, 230, ic)
-
-def gorsel_2():
-    ic = _kutu(10, 10, 680, 195, "#f8fafc", "#64748b", 12, 2)
-    ic += _metin(350, 34, "OLAY HİKÂYESİ (MAUPASSANT) VE DURUM HİKÂYESİ (ÇEHOV) KARŞILAŞTIRMASI", 13, "#1e293b", "bold")
-    ic += _kutu(28, 48, 310, 142, "#eff6ff", "#2563eb", 10, 1.8)
-    ic += _metin(183, 70, "Olay Hikâyesi (Klasik Vaka)", 12, "#1d4ed8", "bold")
-    ic += _metin(183, 94, "• Serim - Düğüm - Çözüm planına sıkı bağlıdır", 11, "#334155")
-    ic += _metin(183, 116, "• Merak ve heyecan unsuru ön plandadır", 11, "#334155")
-    ic += _metin(183, 138, "• Beklenmedik çarpıcı bir sonla biter", 11, "#334155")
-    ic += _metin(183, 164, "Temsilciler: Ömer Seyfettin, Refik Halit, Sabahattin Ali", 10, "#1e40af", "bold")
-
-    ic += _kutu(362, 48, 310, 142, "#fdf4ff", "#a855f7", 10, 1.8)
-    ic += _metin(517, 70, "Durum (Kesit) Hikâyesi", 12, "#7e22ce", "bold")
-    ic += _metin(517, 94, "• Hayatın sıradan bir kesiti ve atmosfer anlatılır", 11, "#334155")
-    ic += _metin(517, 116, "• Merak unsuru geri planda; duygu ve izlenim öndedir", 11, "#334155")
-    ic += _metin(517, 138, "• Bitmemişlik hissi verir; yorumu okura bırakır", 11, "#334155")
-    ic += _metin(517, 164, "Temsilciler: Memduh Şevket Esendal, Sait Faik Abasıyanık", 10, "#6b21a8", "bold")
-    return _svg(700, 215, ic)
-
-def gorsel_3():
-    ic = _kutu(10, 10, 680, 190, "#f0fdf4", "#16a34a", 12, 2)
-    ic += _metin(350, 34, "HİKÂYEDE MODERN ANLATIM TEKNİKLERİ", 14, "#166534", "bold")
-    items = [
-        (25, "İç Konuşma", "Kahramanın kendi", "kendisiyle konuşur gibi", "mantıklı iç diyaloğu"),
-        (192, "Bilinç Akışı", "Düşüncelerin mantık", "sırası olmadan, çağrışımlarla", "kesik akması"),
-        (359, "İç Çözümleme", "Anlatıcının kahramanın", "psikolojisini dışarıdan", "açıklaması"),
-        (526, "Geriye Dönüş", "Zaman akışını kırıp", "geçmişteki olayları", "hatırlama (Flashback)")
-    ]
-    for x, b, s1, s2, s3 in items:
-        ic += _kutu(x, 48, 150, 135, "#ffffff", "#22c55e", 9, 1.5)
-        ic += _metin(x+75, 72, b, 12, "#15803d", "bold")
-        ic += _metin(x+75, 102, s1, 11, "#334155")
-        ic += _metin(x+75, 124, s2, 11, "#334155")
-        ic += _metin(x+75, 146, s3, 11, "#166534", "bold")
-    return _svg(700, 210, ic)
-
-def gorsel_4():
-    ic = _kutu(10, 10, 680, 195, "#eff6ff", "#2563eb", 12, 2)
-    ic += _metin(350, 34, "CÜMLENİN ÖGELERİ: TEMEL VE YARDIMCI ÖGELER (YÖNTEM: YÖN)", 13, "#1e3a8a", "bold")
-    ic += _kutu(25, 48, 200, 138, "#dbeafe", "#1d4ed8", 9, 1.8)
-    ic += _metin(125, 72, "1. TEMEL ÖGELER", 12, "#1e40af", "bold")
-    ic += _metin(125, 98, "Yüklem: Yargıyı bildirir", 11, "#1e293b", "bold")
-    ic += _metin(125, 122, "Özne: Yükleme sorulan", 11, "#334155")
-    ic += _metin(125, 142, "'Kim? / Ne?' sorusu", 11, "#1d4ed8", "bold")
-    ic += _metin(125, 166, "(Gerçek, Gizli, Sözde)", 10, "#475569")
-
-    ic += _kutu(245, 48, 430, 138, "#ffffff", "#3b82f6", 9, 1.8)
-    ic += _metin(460, 70, "2. YARDIMCI ÖGELER", 12, "#1e40af", "bold")
-    ic += _metin(460, 94, "• Belirtili Nesne: Neyi, Kimi? | Belirtisiz Nesne: Ne? (Özneden sonra)", 11, "#334155")
-    ic += _metin(460, 118, "• Yer Tamlayıcısı (Dolaylı Tümleç): Kime, Kimde, Kimden / Nereye, Nerede, Nereden?", 11, "#334155")
-    ic += _metin(460, 142, "• Zarf Tümleci: Nasıl, Ne zaman, Niçin, Ne kadar, Kim ile, Ne ile?", 11, "#334155")
-    ic += _metin(460, 166, "Altın Kural: Önce Yüklem -> Sonra Özne -> Sonra Nesne ve Tümleçler (Y-Ö-N)", 11, "#b91c1c", "bold")
-    return _svg(700, 215, ic)
-
 GORSELLER = {
-    "b1": gorsel_1(),
-    "b2": gorsel_2(),
-    "b3": gorsel_3(),
-    "b4": gorsel_4(),
+    "b1": '<svg viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;font-family:\'Segoe UI\',sans-serif;"><rect width="680" height="250" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/><text x="340" y="26" font-size="13.5" font-weight="bold" fill="#0F172A" text-anchor="middle">1960 SONRASI TÜRK HİKÂYECİLİĞİNDE YÖNELİMLER</text><rect x="20" y="44" width="205" height="190" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.8"/><rect x="20" y="44" width="205" height="30" rx="10" fill="#2563EB"/><rect x="20" y="62" width="205" height="12" fill="#2563EB"/><text x="122.5" y="64" font-size="11.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">TOPLUMCU GERÇEKÇİ</text><text x="32" y="92" font-size="10.5" fill="#1E293B">• Köyden kente ve Almanya\'ya</text><text x="32" y="110" font-size="10.5" fill="#1E293B">  işçi göçü, gecekondu,</text><text x="32" y="128" font-size="10.5" fill="#1E293B">  kadın ve işçi sorunları.</text><text x="32" y="146" font-size="10.5" fill="#1E293B">• Temsilciler: Tomris Uyar</text><text x="32" y="164" font-size="10.5" fill="#1E293B">  (Ormanların Gümbürtüsü),</text><text x="32" y="182" font-size="10.5" fill="#1E293B">  Füruzan (Parasız Yatılı),</text><text x="32" y="200" font-size="10.5" fill="#1E293B">  Tarık Dursun K., Bekir Yıldız.</text><rect x="237" y="44" width="205" height="190" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="1.8"/><rect x="237" y="44" width="205" height="30" rx="10" fill="#059669"/><rect x="237" y="62" width="205" height="12" fill="#059669"/><text x="339.5" y="64" font-size="11.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">MODERNİST / POSTMODERNİST</text><text x="249" y="92" font-size="10.5" fill="#1E293B">• Bireyin yalnızlığı, bunalımı,</text><text x="249" y="110" font-size="10.5" fill="#1E293B">  yabancılaşma; bilinç akışı,</text><text x="249" y="128" font-size="10.5" fill="#1E293B">  iç konuşma, üst kurmaca.</text><text x="249" y="146" font-size="10.5" fill="#1E293B">• Temsilciler: Oğuz Atay,</text><text x="249" y="164" font-size="10.5" fill="#1E293B">  Bilge Karasu, Yusuf Atılgan,</text><text x="249" y="182" font-size="10.5" fill="#1E293B">  Ferit Edgü, Nezihe Meriç,</text><text x="249" y="200" font-size="10.5" fill="#1E293B">  Adalet Ağaoğlu, Orhan Duru.</text><rect x="455" y="44" width="205" height="190" rx="10" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.8"/><rect x="455" y="44" width="205" height="30" rx="10" fill="#7C3AED"/><rect x="455" y="62" width="205" height="12" fill="#7C3AED"/><text x="557.5" y="64" font-size="11.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">BİREYİN İÇ DÜNYASI VE MİLLÎ-DİNÎ</text><text x="467" y="92" font-size="10.5" fill="#1E293B">• Modernleşmenin bireyde</text><text x="467" y="110" font-size="10.5" fill="#1E293B">  açtığı ruhsal çatışmalar,</text><text x="467" y="128" font-size="10.5" fill="#1E293B">  gelenek-modernlik, tasavvuf.</text><text x="467" y="146" font-size="10.5" fill="#1E293B">• Temsilciler: Rasim Özdenören</text><text x="467" y="164" font-size="10.5" fill="#1E293B">  (Çözülme, Çok Sesli Bir Ölüm),</text><text x="467" y="182" font-size="10.5" fill="#1E293B">  Mustafa Kutlu (Uzun Hikâye),</text><text x="467" y="200" font-size="10.5" fill="#1E293B">  Sevinç Çokum, Bahaeddin Özkişi.</text></svg>',
+    "b2": '<svg viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;font-family:\'Segoe UI\',sans-serif;"><rect width="680" height="250" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/><text x="340" y="26" font-size="13.5" font-weight="bold" fill="#0F172A" text-anchor="middle">1960 SONRASI ÖNCÜ HİKÂYECİLER VE BAŞLICA ESERLERİ</text><rect x="20" y="44" width="310" height="190" rx="10" fill="#ECFEFF" stroke="#0891B2" stroke-width="1.8"/><rect x="20" y="44" width="310" height="30" rx="10" fill="#0891B2"/><rect x="20" y="62" width="310" height="12" fill="#0891B2"/><text x="175.0" y="64" font-size="11.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">MODERNİST VE TOPLUMCU YAZARLAR</text><text x="32" y="92" font-size="10.5" fill="#1E293B">• Oğuz Atay: Korkuyu Beklerken (Tahta At)</text><text x="32" y="110" font-size="10.5" fill="#1E293B">• Bilge Karasu: Troya\'da Ölüm Vardı, Göçmüş Kediler</text><text x="32" y="128" font-size="10.5" fill="#1E293B">  Bahçesi, Kısmet Büfesi (Üst kurmaca tekniği)</text><text x="32" y="146" font-size="10.5" fill="#1E293B">• Nezihe Meriç: Bozbulanık, Topal Koşma, Menekşeli Bilinç</text><text x="32" y="164" font-size="10.5" fill="#1E293B">• Tomris Uyar: İpek ve Bakır, Yürekte Bukağı, Yaza Yolculuk</text><text x="32" y="182" font-size="10.5" fill="#1E293B">• Füruzan: Parasız Yatılı, Kuşatma, Benim Sinemalarım</text><text x="32" y="200" font-size="10.5" fill="#1E293B">• Orhan Duru: Ağır İşçiler, Sarmal (\'Bilim kurgu\' terimi)</text><rect x="350" y="44" width="310" height="190" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="1.8"/><rect x="350" y="44" width="310" height="30" rx="10" fill="#D97706"/><rect x="350" y="62" width="310" height="12" fill="#D97706"/><text x="505.0" y="64" font-size="11.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">MİLLÎ-DİNÎ DUYARLILIK VE İÇ DÜNYA YAZARLARI</text><text x="362" y="92" font-size="10.5" fill="#1E293B">• Rasim Özdenören: Hastalar ve Işıklar, Çözülme,</text><text x="362" y="110" font-size="10.5" fill="#1E293B">  Çok Sesli Bir Ölüm, Çarpılmışlar, Denize Açılan Kapı</text><text x="362" y="128" font-size="10.5" fill="#1E293B">• Mustafa Kutlu: Ortadaki Adam, Gönül İşi, Yokuşa Akan</text><text x="362" y="146" font-size="10.5" fill="#1E293B">  Sular, Yoksulluk İçimizde, Ya Tahammül Ya Sefer, Uzun Hikâye</text><text x="362" y="164" font-size="10.5" fill="#1E293B">• Sevinç Çokum: Eğik Ağaçlar, Bölüşmek, Makina, Rozalya Ana</text><text x="362" y="182" font-size="10.5" fill="#1E293B">• Yusuf Atılgan: Bodur Minareden Öte</text><text x="362" y="200" font-size="10.5" fill="#1E293B">• Ferit Edgü: Kaçkınlar, Bozgun, Av, Bir Gemide, Çığlık</text></svg>',
+    "b3": '<svg viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;font-family:\'Segoe UI\',sans-serif;"><rect width="680" height="250" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/><text x="340" y="26" font-size="13.5" font-weight="bold" fill="#0F172A" text-anchor="middle">MODERNİST VE POSTMODERNİST HİKÂYEDE ANLATIM TEKNİKLERİ</text><rect x="25" y="44" width="630" height="40" rx="8" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.5"/><text x="40" y="60" font-size="11" font-weight="bold" fill="#2563EB">İÇ KONUŞMA (MONOLOG) VE BİLİNÇ AKIŞI</text><text x="40" y="76" font-size="10.5" fill="#1E293B">Kahramanın zihninden geçenlerin aracısız, çağrışımlarla ve mantık sırası olmadan aktarılmasıdır.</text><rect x="25" y="92" width="630" height="40" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="1.5"/><text x="40" y="108" font-size="11" font-weight="bold" fill="#059669">ÜST KURMACA (ANLATI İÇİNDE ANLATI)</text><text x="40" y="124" font-size="10.5" fill="#1E293B">Bilge Karasu\'nun \'Tepe\' hikâyesinde olduğu gibi hikâye içinde başka bir masal veya kurmacaya yer verilmesidir.</text><rect x="25" y="140" width="630" height="40" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/><text x="40" y="156" font-size="11" font-weight="bold" fill="#D97706">GERİYE DÖNÜŞ (FLASHBACK)</text><text x="40" y="172" font-size="10.5" fill="#1E293B">Kronolojik zaman akışının kırılarak kahramanın geçmişteki anılarına ve olaylarına dönülmesidir.</text><rect x="25" y="188" width="630" height="40" rx="8" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.5"/><text x="40" y="204" font-size="11" font-weight="bold" fill="#7C3AED">METİNLERARASILIK, İRONİ VE PARODİ</text><text x="40" y="220" font-size="10.5" fill="#1E293B">Oğuz Atay ve Orhan Duru gibi yazarların başka metinlere göndermeler yaparak eleştirel ve alaycı bir dil kurmasıdır.</text></svg>',
+    "b4": '<svg viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;font-family:\'Segoe UI\',sans-serif;"><rect width="680" height="250" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/><text x="340" y="26" font-size="13.5" font-weight="bold" fill="#0F172A" text-anchor="middle">RASİM ÖZDENÖREN VE MUSTAFA KUTLU\'NUN HİKÂYECİLİĞİ</text><rect x="20" y="44" width="310" height="190" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.8"/><rect x="20" y="44" width="310" height="30" rx="10" fill="#2563EB"/><rect x="20" y="62" width="310" height="12" fill="#2563EB"/><text x="175.0" y="64" font-size="11.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">RASİM ÖZDENÖREN (1940-2022)</text><text x="32" y="92" font-size="10.5" fill="#1E293B">• Bireyin iç dünyasını, ruhsal çatışmalarını ve</text><text x="32" y="110" font-size="10.5" fill="#1E293B">  modern kentin getirdiği yabancılaşmayı işledi.</text><text x="32" y="128" font-size="10.5" fill="#1E293B">• Geleneksel aile yapısının dağılmasını (Çözülme)</text><text x="32" y="146" font-size="10.5" fill="#1E293B">  sezdirici ve şiirsel bir üslupla anlattı.</text><text x="32" y="164" font-size="10.5" fill="#1E293B">• Hikâye: Hastalar ve Işıklar, Çözülme, Çok Sesli</text><text x="32" y="182" font-size="10.5" fill="#1E293B">  Bir Ölüm, Çarpılmışlar, Kuyu, Hışırtı, Ansızın Yola Çıkmak.</text><rect x="350" y="44" width="310" height="190" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="1.8"/><rect x="350" y="44" width="310" height="30" rx="10" fill="#059669"/><rect x="350" y="62" width="310" height="12" fill="#059669"/><text x="505.0" y="64" font-size="11.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">MUSTAFA KUTLU (1947-...)</text><text x="362" y="92" font-size="10.5" fill="#1E293B">• Doğu-İslam kıssa ve mesnevi geleneğini modern</text><text x="362" y="110" font-size="10.5" fill="#1E293B">  hikâye ile birleştirerek \'uzun hikâye\' tarzını kurdu.</text><text x="362" y="128" font-size="10.5" fill="#1E293B">• Kasaba hayatını, sanayileşme ve köyden kente</text><text x="362" y="146" font-size="10.5" fill="#1E293B">  göçün insanımızdaki etkilerini samimi dille işledi.</text><text x="362" y="164" font-size="10.5" fill="#1E293B">• Hikâye: Ortadaki Adam, Gönül İşi, Yoksulluk İçimizde,</text><text x="362" y="182" font-size="10.5" fill="#1E293B">  Ya Tahammül Ya Sefer, Bu Böyledir, Sır, Uzun Hikâye.</text></svg>',
 }
 
+
 def uygula(v):
-    for i, k in enumerate(["b1", "b2", "b3", "b4"]):
-        if i < len(v.get("bolumler", [])):
-            v["bolumler"][i]["gorsel"] = GORSELLER[k]
+    for i, b in enumerate(v.get('bolumler', [])):
+        k = f'b{i+1}'
+        if k in GORSELLER:
+            b['gorsel'] = GORSELLER[k]

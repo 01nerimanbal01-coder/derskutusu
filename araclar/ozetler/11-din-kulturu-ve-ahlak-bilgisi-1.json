@@ -119,26 +119,26 @@
       "tur": "coktan",
       "soru": "Bir gözlem defterinde üç kayıt var: K — Dalından kopan yaprak yere düşüyor. L — Bir canlı doğduktan sonra büyüyor. M — Ortak kurallara uyulan bir toplulukta işler düzenli yürüyor. Bu kayıtlar sünnetullah kapsamındaki yasa türleriyle nasıl eşleştirilir?",
       "secenekler": [
-        "K: biyolojik, L: fiziksel, M: toplumsal",
+        "K: fiziksel, L: biyolojik, M: toplumsal",
         "K: fiziksel, L: toplumsal, M: biyolojik",
         "K: toplumsal, L: biyolojik, M: fiziksel",
-        "K: fiziksel, L: biyolojik, M: toplumsal",
+        "K: biyolojik, L: fiziksel, M: toplumsal",
         "K: biyolojik, L: toplumsal, M: fiziksel"
       ],
-      "dogru": 3,
+      "dogru": 0,
       "aciklama": "K yer çekimiyle, L canlının gelişimiyle, M toplumdaki düzenle ilgilidir. Bu nedenle sıralama fiziksel, biyolojik ve toplumsal yasalardır."
     },
     {
       "tur": "coktan",
       "soru": "Bir proje yarışmasında iki ekip de bir ay çalışıyor. K ekibi ölçüm sonuçlarını değiştirerek birinci oluyor. L ekibi bulgularını olduğu gibi sunuyor ve ikinci oluyor. Ekipler, derecelerinden ayrı olarak “Dürüst yöntem kullanma” ölçütüyle değerlendiriliyor. Bu ölçüte göre hangi kayıt doğrudur?",
       "secenekler": [
-        "K: uygun değil; L: uygun.",
         "K: uygun; L: uygun değil.",
+        "K: uygun değil; L: uygun.",
         "K: uygun; L: uygun.",
         "K: uygun değil; L: uygun değil.",
         "K: bilgi yetersiz; L: bilgi yetersiz."
       ],
-      "dogru": 0,
+      "dogru": 1,
       "aciklama": "K ekibi verileri değiştirdiği için dürüst yöntem ölçütünü karşılamaz. L ekibi bulgularını olduğu gibi sunduğu için bu ölçütü karşılar. İki ekibin de emek vermesi ya da yarışmadaki dereceleri bu farkı ortadan kaldırmaz."
     },
     {
@@ -155,8 +155,21 @@
       "aciklama": "Rızık yalnız yiyecek veya kazanç değildir. Barınma maddi bir imkân, huzur manevi bir nimettir; ikisi de rızık kapsamındadır."
     },
     {
+      "tur": "coktan",
+      "soru": "‘Ömür, ecel, sağlık ve hastalık’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Ömür ile eceli ayırırken “yaşanan süre” ve “sürenin sonu” ayrımını kullanınız.",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 3,
+      "aciklama": "Ömür, ecel, sağlık ve hastalık bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
       "tur": "dy",
-      "yonerge": "Bir canlının gelişimi için iki açıklama yazılıyor: K — Bu gelişmenin Allah’ın bilgisi ve takdiriyle bir ölçüye bağlı olması. L — Gelişmenin zamanı geldiğinde gerçekleşmesi. Kader ve kaza açısından yorumları değerlendiriniz.",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
           "metin": "L açıklamasına “kader”, K açıklamasına “kaza” başlığı verilmelidir.",
@@ -172,7 +185,7 @@
     },
     {
       "tur": "eslestir",
-      "yonerge": "Hidayetle ilgili üç açıklamayı ilgili olanla eşleştiriniz.",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
           "Doğru yolu gösteren rehberliği gönderen",
@@ -190,7 +203,7 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Bir kişinin sağlığıyla ilgili notu, kavramlar arasındaki ilişkiye göre tamamlayınız. Bir kelime artacak.",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
           "metin": "Kişi, kendisine verilen bir nimet olan ___ durumunu korumaya özen gösteriyor.",
@@ -206,26 +219,18 @@
         }
       ],
       "fazla": [
-        "ecel"
+        "ecel",
+        "varsayım"
       ]
     },
     {
       "tur": "ogretici",
       "soru": "Bir yorumda “Hastalanan kişi de başkasının hakkını isteyerek yiyen kişi de kötü bir tercih yapmıştır.” deniyor. Bu iki durumu hayır ve şer konusu açısından aynı şekilde değerlendirmek neden hatalıdır?",
+      "cevap": "Başkasının hakkını isteyerek yemek zararlı bir tercihtir ve şer kapsamında değerlendirilir. Hastalanmak ise tek başına böyle bir tercih yapıldığını göstermez. Hastalık ve güçlükler imtihan kapsamında da değerlendirilir; kişinin kötü davrandığı sonucu yalnız hastalanmasından çıkarılamaz.",
       "ipuclari": [
         "Her iki durumda da kişinin isteyerek seçtiği bir davranıştan söz edilebilir mi?",
         "Yaşanan güçlük ile yapılan davranışı ayrı ayrı inceleyiniz."
-      ],
-      "cevap": "Başkasının hakkını isteyerek yemek zararlı bir tercihtir ve şer kapsamında değerlendirilir. Hastalanmak ise tek başına böyle bir tercih yapıldığını göstermez. Hastalık ve güçlükler imtihan kapsamında da değerlendirilir; kişinin kötü davrandığı sonucu yalnız hastalanmasından çıkarılamaz."
-    },
-    {
-      "tur": "ogretici",
-      "soru": "Bir öğrenci, hazırlıklarını tamamlayıp Allah’a güvenmeyi anlatan kart ile sonuç ortaya çıktıktan sonra Allah’ın takdirini gönülden kabul etmeyi anlatan kartı aynı başlık altında topluyor: “Sonuçtan sonra beklemek”. Bu başlık neden yetersizdir? Tevekkül, teslimiyet ve rıza kavramlarını kullanarak açıklayınız.",
-      "ipuclari": [
-        "İki kartın işin hangi aşamasını anlattığına bakınız.",
-        "Güvenmek ve gönülden kabul etmek, hareketsiz beklemekle aynı anlama gelir mi?"
-      ],
-      "cevap": "İlk kart, hazırlık ve çaba sürecindeki güveni anlattığı için tevekkülle ilişkilidir. İkinci kart, sonucun Allah’tan geldiğini kabullenmeyi anlattığı için teslimiyetle; bu durumu isyan etmeden, gönül huzuruyla karşılamayı anlattığı için rızayla ilişkilidir. Başlık hem ilk karttaki çalışma sürecini dışarıda bırakır hem de bağlılık ve kabullenişi hareketsiz beklemeye indirger."
+      ]
     }
   ],
   "yazan": "Codex · Hesap E",
@@ -236,5 +241,11 @@
     "kapsam": "Tamamı okundu: giriş, 6 bölüm (6 kutu, 2 SVG), 6 çözümlü örnek, 8 etkinlik (3 çoktan seçmeli, 1 doğru-yanlış, 1 eşleştirme, 1 boşluk doldurma, 2 öğretici); ciktilar, unite, konu, tarih alanları.",
     "kaynak": "Kitap: 03-ARACLAR/_metin/kitap-11-din-kulturu-2026-ilk35.txt PDF sayfa 12-28 (kitap s.11-27; 1.1 İnsan ve Kader konusunun tamamı) satır satır okundu; 02-KAYNAKLAR/OZET-1-HAFTA-LISTESI.md satır 82 (1. Hafta 14-18 Eylül, DKAB.11.1.1, ünite ve konu adı) ile tarih, ünite, konu ve çıktı eşleşiyor. 4/5-gr",
     "durum": "Baştan okundu; 12 düzeltme işlendi (yüksek 0, orta 3, düşük 9); 2 bulgu reddedildi."
-  }
+  },
+  "ozet": [
+    "İslam inancında kader, Allah’ın her şeyi bilmesi ve bir ölçü içinde takdir etmesidir. Kaza, takdir edilenin zamanı geldiğinde gerçekleşmesidir. Bu iki kavram aynı inancın birbiriyle ilişkili yönlerini anlatır.",
+    "Rızık, Allah’ın canlılara verdiği maddi ve manevi nimetleri kapsar. İslam’da insanın rızkını helal yollarla araması ve emek vermesi esastır. Yiyecek ve barınma maddi; sevgi ve huzur manevi rızık örnekleridir.",
+    "Sabır, hoşa gitmeyen ve zorlayıcı olaylarla karşılaşıldığında Allah’a sığınarak dayanıklılık ve kararlılık göstermektir. Bir sorunu çözmek için çalışmayı bırakmak anlamına gelmez.",
+    "Ömür, canlının yaşadığı süreyi; ecel ise yaşamın sona erdiği zamanı ifade eder. Biri süreyi, diğeri bu sürenin sonunu belirtir."
+  ]
 }

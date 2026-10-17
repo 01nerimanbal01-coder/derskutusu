@@ -21,7 +21,8 @@
       "kutu": {
         "tur": "ipucu",
         "metin": "Metni yalnız tek tek sözcükleri çevirerek değil, anlam bütünlüğü kurarak oku."
-      }
+      },
+      "gorsel": "<svg viewBox=\"0 0 460 214\" role=\"img\" aria-label=\"İman Esaslarını Arapça Metinde Tanıma kavram özeti şeması\"><rect x=\"90\" y=\"12\" width=\"280\" height=\"38\" rx=\"19\" class=\"g-mf\"/><text x=\"230\" y=\"36\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"800\" class=\"g-b\">İman Esaslarını Arapça Metinde Tanıma</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ma\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"116\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">1. Bölüm</text><text x=\"116\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Okumaya başlıktan hazırlan</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ta\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"344\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">2. Bölüm</text><text x=\"344\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Altı iman esasını tanı</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ya\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"116\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-yf\">3. Bölüm</text><text x=\"116\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Allah’a iman ve tevhit</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-oa\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"344\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-of\">4. Bölüm</text><text x=\"344\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Melek, kitap ve peygamber kavram…</text></svg>"
     },
     {
       "baslik": "Altı iman esasını tanı",
@@ -51,7 +52,7 @@
       "baslik": "Melek, kitap ve peygamber kavramları",
       "metin": [
         "{ar:المَلائِكَة} melekler demektir. Ders metninde meleklerin Allah’ın emirlerini yerine getirmesi ve farklı görevleri anlatılır. {ar:جِبْريل} Cebrail, vahiy ile ilişkili melek olarak açıklanır.",
-        "{ar:الكُتُب السَّماوِيَّة} ilahî kitaplardır. Kitapta Tevrat–Hz. Musa, Zebur–Hz. Davud, İncil–Hz. İsa, Kur’an-ı Kerim–Hz. Muhammed ilişkileri verilir. Arapça kitap adları {ar:التَّوْراة}، {ar:الزَّبور}، {ar:الإِنْجيل} ve {ar:القُرْآن الكَريم} biçimindedir.",
+        "{ar:الكُتُب السَّماوِيَّة} ilahî kitaplardır. Bu konuda Tevrat–Hz. Musa, Zebur–Hz. Davud, İncil–Hz. İsa, Kur’an-ı Kerim–Hz. Muhammed ilişkileri verilir. Arapça kitap adları {ar:التَّوْراة}، {ar:الزَّبور}، {ar:الإِنْجيل} ve {ar:القُرْآن الكَريم} biçimindedir.",
         "{ar:الرُّسُل} peygamberler demektir. Metinde peygamberlerin insanlara ilahî mesajı bildirmeleri anlatılır. {ar:الرِّسالَة} elçilik/peygamberlik görevi, {ar:الوَحْي} vahiy anlamıyla bu konuyla ilişkilidir."
       ],
       "kutu": {
@@ -97,7 +98,7 @@
       "cevap": "Cebrail, vahiy ile ilişkili melek olarak tanıtılır. Biri melek adı, diğeri ilahî bildirimin adıdır."
     },
     {
-      "soru": "{ar:الزَّبور} için kitapta hangi peygamberle ilişki kurulmuştur?",
+      "soru": "{ar:الزَّبور} için bu konuda hangi peygamberle ilişki kurulmuştur?",
       "cevap": "Hz. Davud ile. Bu eşleştirme ilahî kitaplara iman bölümünde yer alır."
     },
     {
@@ -114,13 +115,13 @@
       "tur": "coktan",
       "soru": "Bir kavram listesinde {ar:الرُّسُل} yazıyor. Hangi karşılık uygundur?",
       "secenekler": [
-        "Melekler",
-        "Kitaplar",
         "Peygamberler",
+        "Kitaplar (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)",
+        "Melekler",
         "Kalpler",
         "Diller"
       ],
-      "dogru": 2,
+      "dogru": 0,
       "aciklama": "{ar:الرُّسُل} peygamberler anlamındadır."
     },
     {
@@ -128,30 +129,43 @@
       "soru": "“Ölümden sonra diriliş” açıklaması hangi ifadeyle eşleşir?",
       "secenekler": [
         "{ar:أَرْكان الإيمان}",
-        "{ar:الكُتُب السَّماوِيَّة}",
-        "{ar:القَضاء وَالقَدَر}",
         "{ar:البَعْث بَعْد المَوْت}",
+        "{ar:القَضاء وَالقَدَر}",
+        "{ar:الكُتُب السَّماوِيَّة}",
         "{ar:الإيمان بِالمَلائِكَة}"
       ],
-      "dogru": 3,
+      "dogru": 1,
       "aciklama": "{ar:البَعْث} diriliş; {ar:بَعْد المَوْت} ölümden sonra anlamındadır."
     },
     {
       "tur": "coktan",
       "soru": "Metni okumadan önce başlık ve bilinen kavramları incelemenin temel katkısı nedir?",
       "secenekler": [
-        "Metnin konusuna ilişkin ön bilgi oluşturmak",
-        "Bütün bilinmeyen sözcükleri tahminsiz çevirmek",
         "Metindeki her cümleyi ezberlemek",
+        "Bütün bilinmeyen sözcükleri tahminsiz çevirmek",
+        "Metnin konusuna ilişkin ön bilgi oluşturmak",
         "Metni okumadan bütün soruları yanıtlamak",
         "Kaynağı inceleme gereğini ortadan kaldırmak"
       ],
-      "dogru": 0,
+      "dogru": 2,
       "aciklama": "Başlık ve kavramlar okumaya hazırlık sağlar; ayrıntılar yine metinden öğrenilir."
     },
     {
+      "tur": "coktan",
+      "soru": "‘Melek, kitap ve peygamber kavramları’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Kitap adını, peygamber adını ve melek adını birbirinden ayır.",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 3,
+      "aciklama": "Melek, kitap ve peygamber kavramları bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
       "tur": "dy",
-      "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
           "metin": "{ar:التَّوْحيد} Allah’ın birliğiyle ilgili kavramdır.",
@@ -177,7 +191,7 @@
     },
     {
       "tur": "eslestir",
-      "yonerge": "İlişkili kavram ve açıklamaları eşleştiriniz.",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
           "{ar:التَّوْراة}",
@@ -199,7 +213,7 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
           "metin": "{ar:المَلائِكَة} sözcüğü ___ anlamındadır.",
@@ -215,26 +229,18 @@
         }
       ],
       "fazla": [
-        "kitap"
+        "kitap",
+        "varsayım"
       ]
     },
     {
       "tur": "ogretici",
       "soru": "Aynı metinde {ar:الإيمان} sözcüğü altı kez geçiyor. Hangi esasın anlatıldığını ayırmak için nereye bakmalısın?",
+      "cevap": "{ar:الإيمان} sonrasındaki Allah, melekler, kitaplar, peygamberler, ahiret veya kader ifadesine bakılmalıdır.",
       "ipuclari": [
         "Ortak başlangıç her ifadede aynıdır.",
         "İnanılan konuyu adlandıran bölümü bul."
-      ],
-      "cevap": "{ar:الإيمان} sonrasındaki Allah, melekler, kitaplar, peygamberler, ahiret veya kader ifadesine bakılmalıdır."
-    },
-    {
-      "tur": "ogretici",
-      "soru": "Bir öğrenci {ar:الكُتُب} sözcüğünü bilmiyor; başlıkta ve açıklamada Tevrat, Zebur, İncil, Kur’an adlarını görüyor. Nasıl bir anlam tahmini yapabilir?",
-      "ipuclari": [
-        "Verilen örneklerin ortak yönünü belirle.",
-        "Tahminini sözlükten kontrol et."
-      ],
-      "cevap": "Örneklerin kitap adları olması, sözcüğün “kitaplar” anlamına geldiğini düşündürür. Bu tahmin sözlükle doğrulanır."
+      ]
     }
   ],
   "ozet": [

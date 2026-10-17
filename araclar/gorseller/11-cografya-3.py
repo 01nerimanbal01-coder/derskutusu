@@ -113,7 +113,7 @@ def gorsel_3():
         s += Yazi(x + kw // 2, y + 20, bas, 9.2, "#ffffff", "middle", True)
         s += Yazi(x + kw // 2, y + 64, m1, 9, "#1e293b", "middle", True)
         s += Yazi(x + kw // 2, y + 88, m2, 8.8, "#475569", "middle", False)
-        if i < 2:
+        if i &lt; 2:
             s += Ok(x + kw, y + 67, x + kw + gap, y + 67, "#64748b", 2)
 
     s += Kutu(28, 198, W - 56, 36, "#eef2ff", "#4338ca", 1.5, 8)

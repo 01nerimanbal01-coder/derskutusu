@@ -104,13 +104,13 @@
       "tur": "coktan",
       "soru": "Bir dik üçgende θ açısının karşı dik kenarı 20 birim, komşu dik kenarı 21 birim, hipotenüsü 29 birimdir. cos θ kaçtır?",
       "secenekler": [
-        "{kesir:20|29}",
         "{kesir:21|29}",
+        "{kesir:20|29}",
         "{kesir:20|21}",
         "{kesir:21|20}",
         "{kesir:29|21}"
       ],
-      "dogru": 1,
+      "dogru": 0,
       "aciklama": "Kosinüs, komşu dik kenarın hipotenüse oranıdır."
     },
     {
@@ -118,30 +118,43 @@
       "soru": "Bir öğrenci dar açı için sin α = 0,6 buluyor. cos α değerini hesaplamak için {us:sin|2} α + {us:cos|2} α = 1 kullanıyor. Hangi sonuca ulaşır?",
       "secenekler": [
         "0,36",
-        "0,4",
+        "0,8",
         "0,6",
         "0,64",
-        "0,8"
+        "0,4"
       ],
-      "dogru": 4,
+      "dogru": 1,
       "aciklama": "{us:cos|2} α = 1 − 0,36 = 0,64. Dar açı için pozitif kök 0,8’dir."
     },
     {
       "tur": "coktan",
       "soru": "Bir rampanın yatay ilerlemesi 14 m, dikey yükselmesi 4 m’dir. Rampanın zeminle yaptığı açı β ise tan β kaçtır?",
       "secenekler": [
-        "{kesir:2|7}",
-        "{kesir:7|2}",
         "{kesir:2|9}",
+        "{kesir:7|2}",
+        "{kesir:2|7}",
         "{kesir:7|9}",
         "{kesir:9|7}"
       ],
-      "dogru": 0,
+      "dogru": 2,
       "aciklama": "Tanjant, dikey yükselmenin yatay ilerlemeye oranıdır: {kesir:4|14} = {kesir:2|7}."
     },
     {
+      "tur": "coktan",
+      "soru": "‘Tümler açılar ve özel açılar’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Özel açı değerlerini üçgen çizerek yeniden elde edebilirsiniz.",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 3,
+      "aciklama": "Tümler açılar ve özel açılar bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
       "tur": "dy",
-      "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
           "metin": "Dar açı değişmeden üçgen büyütülürse sinüs değeri artar.",
@@ -167,7 +180,7 @@
     },
     {
       "tur": "eslestir",
-      "yonerge": "İlişkili kavram ve açıklamaları eşleştiriniz.",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
           "sin α",
@@ -189,7 +202,7 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Sayıları uygun boşluklara yerleştiriniz. Bir sayı artacak.",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
           "metin": "Bir dar açı için {us:sin|2} α + {us:cos|2} α = ___ olur.",
@@ -205,26 +218,18 @@
         }
       ],
       "fazla": [
-        "2"
+        "2",
+        "varsayım"
       ]
     },
     {
       "tur": "ogretici",
       "soru": "Bir öğrenci, iki dik kenarı eşit bir dik üçgende sin45° = 1 yazıyor. Hangi iki uzunluğu karıştırmış olabilir?",
+      "cevap": "Hipotenüs yerine komşu dik kenarı kullanarak tan45°yi hesaplamış olabilir. Dik kenarlar 1 ise hipotenüs {kok:2}’dir; sin45° = {kesir:1|{kok:2}} = {kesir:{kok:2}|2} olur.",
       "ipuclari": [
         "Eşit olanlar iki dik kenardır.",
         "Hipotenüsü Pisagor teoremiyle bulunuz."
-      ],
-      "cevap": "Hipotenüs yerine komşu dik kenarı kullanarak tan45°yi hesaplamış olabilir. Dik kenarlar 1 ise hipotenüs {kok:2}’dir; sin45° = {kesir:1|{kok:2}} = {kesir:{kok:2}|2} olur."
-    },
-    {
-      "tur": "ogretici",
-      "soru": "α dar açı ve tan α = {kesir:5|12}. sin α nasıl bulunur?",
-      "ipuclari": [
-        "Karşı ve komşu dik kenarları 5k ve 12k alınız.",
-        "Hipotenüsü hesaplayıp sinüs oranını kurunuz."
-      ],
-      "cevap": "Hipotenüs {kok:25k²+144k²} = 13k olur. Sinüs karşı/hipotenüs olduğundan sin α = {kesir:5|13}’tür."
+      ]
     }
   ],
   "ozet": [

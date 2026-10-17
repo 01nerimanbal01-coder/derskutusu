@@ -1,234 +1,272 @@
 {
- "ad": "12-kimya-3",
- "sinif": 12,
- "ders": "kimya",
- "ders_adi": "Kimya",
- "hafta": 3,
- "tarih": "28 Eylül - 2 Ekim 2026",
- "yayin_tarihi": "2026-10-17",
- "unite": "1. ÜNİTE: KİMYA VE ELEKTRİK",
- "konu": "Standart Elektrot Potansiyelleri, Aktiflik, İstemlilik, Nernst Eşitliği ve Derişim Pilleri",
- "ciktilar": [
-  "12.1.3.1. Standart yarı hücre indirgenme potansiyellerini standart hidrojen elektrodu ile ilişkilendirir.",
-  "12.1.3.2. Metallerin aktiflik sırasını standart indirgenme potansiyelleri ile ilişkilendirir.",
-  "12.1.3.3. Standart hücre potansiyelini hesaplayarak redoks tepkimelerinin istemliliğini tahmin eder.",
-  "12.1.3.4. Standart olmayan koşullarda elektrot potansiyellerini (Nernst eşitliği ve derişim pilleri) hesaplar."
- ],
- "giris": "Geçen hafta elektrokimyasal hücrelerin (galvanik pillerin) çalışma ilkesini ve potansiyeli {koyu:0,00 V} kabul edilen {koyu:Standart Hidrojen Elektrodunu (SHE)} tanımıştık. Bu hafta yarı hücrelerin {koyu:standart indirgenme potansiyellerinden ({us:E|°})} yararlanarak anot ve katodun belirlenmesini, {koyu:standart hücre potansiyeli ({us:E|°}_hücre)} ve {koyu:istemlilik} hesabını, metallerin {koyu:aktiflik sıralamasını ve saklama kabı} problemlerini, {koyu:pil gerilimini etkileyen faktörleri (Le Chatelier ilkesi)}, {koyu:Nernst eşitliğini} ve {koyu:derişim pillerini} inceleyeceğiz.",
- "ozet": [
-  "IUPAC kabulüne göre yarı hücre potansiyelleri {koyu:standart indirgenme potansiyeli ({us:E|°}_ind)} olarak tablolanır; indirgenme potansiyeli {koyu:küçük} (yükseltgenme potansiyeli büyük) olan yarı hücre {koyu:anot}, indirgenme potansiyeli {koyu:büyük} olan yarı hücre ise {koyu:katot} olur.",
-  "Standart hücre potansiyeli {koyu:{us:E|°}_hücre = {us:E|°}_yüks(Anot) + {us:E|°}_ind(Katot)} bağıntısıyla hesaplanır; yarı tepkime ters çevrilirse {koyu:{us:E|°}}'nin işareti değişir, ancak yarı tepkime bir sayıyla çarpılır veya bölünürse {koyu:{us:E|°} değeri DEĞİŞMEZ}.",
-  "Hesaplanan {koyu:{us:E|°}_hücre > 0} ise redoks tepkimesi {koyu:istemlidir (kendiliğinden gerçekleşir)}; {koyu:{us:E|°}_hücre < 0} ise tepkime istemsizdir.",
-  "Yükseltgenme potansiyeli {koyu:{us:E|°}_yüks > 0} olan metallere {koyu:aktif metaller} (asitlerle H₂ gazı çıkarırlar), {koyu:{us:E|°}_yüks < 0} olan Cu, Hg, Ag, Pt, Au metallerine ise {koyu:soy metaller} denir; aktif bir metal kendisinden pasif metalin tuz çözeltisini saklayamaz (kap aşınır).",
-  "Galvanik pil tepkimeleri {koyu:ekzotermik denge tepkimeleridir}; katot derişimini artırmak, anot derişimini azaltmak veya sıcaklığı düşürmek dengeyi ürünlere kaydırdığı için {koyu:pil gerilimini (E_pil) artırır}.",
-  "Çözelti derişimlerinin 1 M'dan farklı olduğu koşullarda pil gerilimi {koyu:Nernst eşitliği} ({koyu:E_pil = {us:E|°}_pil - {kesir:0,0592|n} · log Q}) ile bulunur; aynı elektrotların farklı derişimli çözeltileriyle kurulan {koyu:derişim pillerinde} ise derişimi {koyu:küçük (seyreltik)} olan yarı hücre {koyu:anot} olur."
- ],
- "bolumler": [
-  {
-   "baslik": "1. Standart Elektrot Potansiyeli (E°) ve Hücre Geriliminin Hesaplanması",
-   "metin": [
-    "Standart koşullarda ({koyu:25 °C [298 K] sıcaklık, 1 atm basınç ve 1 M çözelti derişimi}) bir yarı hücrenin {koyu:Standart Hidrojen Elektroduna (SHE, {us:E|°} = 0,00 V)} karşı ölçülen potansiyeline {koyu:standart elektrot potansiyeli ({us:E|°})} denir. Uluslararası Temel ve Uygulamalı Kimya Birliği ({koyu:IUPAC}) kararına göre elementlerin potansiyelleri standart olarak {koyu:indirgenme yarı tepkimesi potansiyeli ({us:E|°}_ind)} şeklinde listelenir.",
-    "İki yarı hücre birleştirilerek bir elektrokimyasal pil oluşturulduğunda:\n• {koyu:Standart indirgenme potansiyeli ({us:E|°}_ind) KÜÇÜK olan} (yani yükseltgenme potansiyeli {koyu:{us:E|°}_yüks BÜYÜK olan}) elektrot daha aktiftir; elektron vererek yükseltgenir ve {koyu:ANOT} olur.\n• {koyu:Standart indirgenme potansiyeli ({us:E|°}_ind) BÜYÜK olan} yarı hücredeki katyonlar ise elektron alarak indirgenir ve bu yarı hücre {koyu:KATOT} olur.\n• {koyu:Standart Hücre Potansiyeli ({us:E|°}_hücre / {us:E|°}_pil):}\n  {koyu:{us:E|°}_hücre = {us:E|°}_yükseltgenme (Anot) + {us:E|°}_indirgenme (Katot)}\n  (Veya doğrudan indirgenme potansiyelleriyle: {koyu:{us:E|°}_hücre = {us:E|°}_ind(Katot) - {us:E|°}_ind(Anot)})."
-   ],
-   "kutu": {
-    "tur": "uyari",
-    "baslik": "Kritik Kural: Katsayı İle Çarpmak E° Değerini Değiştirmez!",
-    "metin": "Standart elektrot potansiyeli ({koyu:{us:E|°}}), madde miktarına bağlı olmayan {koyu:yeğin (yoğun / intansif)} bir özelliktir:\n1) Bir yarı tepkime {koyu:ters çevrilirse} {koyu:{us:E|°}} değerinin {koyu:işareti değişir} ({koyu:{us:E|°}_yüks = -{us:E|°}_ind}).\n2) Alınan-verilen elektron sayılarını eşitlemek için yarı tepkime 2 veya 3 gibi bir {koyu:katsayı ile çarpıldığında {us:E|°} değeri KESİNLİKLE ÇARPILMAZ, AYNEN KALIR}!"
-   },
-   "gorsel": "<svg viewBox=\"0 0 740 265\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:740px;display:block;margin:14px auto;background:#fff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><rect x=\"0\" y=\"0\" width=\"740\" height=\"38\" rx=\"10\" fill=\"#1d4ed8\"/><rect x=\"0\" y=\"20\" width=\"740\" height=\"18\" fill=\"#1d4ed8\"/><text x=\"370\" y=\"25\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">STANDART ELEKTROT POTANSİYELİ (E°) VE PİL GERİLİMİ KURALLARI</text><rect x=\"20\" y=\"52\" width=\"340\" height=\"195\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.8\"/><text x=\"190\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">STANDART HÜCRE POTANSİYELİ (E°_hücre)</text><line x1=\"30\" y1=\"82\" x2=\"350\" y2=\"82\" stroke=\"#3b82f6\" stroke-width=\"1\"/><text x=\"190\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Referans Elektrot: SHE (2H⁺ + 2e⁻ -> H₂, E° = 0,00 V)</text><text x=\"190\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• İndirgenme potansiyeli KÜÇÜK (yükseltgenme potansiyeli</text><text x=\"190\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  BÜYÜK) olan elektrot ANOT, diğeri KATOT olur.</text><text x=\"190\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• E°_hücre = E°_yüks (Anot) + E°_ind (Katot)</text><text x=\"190\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Veya: E°_hücre = E°_ind (Katot) - E°_ind (Anot)</text><text x=\"190\" y=\"190\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• E°_hücre > 0 ise tepkime İSTEMLİDİR (Galvanik pil).</text><rect x=\"380\" y=\"52\" width=\"340\" height=\"195\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.8\"/><text x=\"550\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#14532d\" text-anchor=\"middle\">YARI TEPKİME İŞLEMLERİNİN E° DEĞERİNE ETKİSİ</text><line x1=\"390\" y1=\"82\" x2=\"710\" y2=\"82\" stroke=\"#16a34a\" stroke-width=\"1\"/><text x=\"550\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">1. Yarı tepkime TERS ÇEVRİLİRSE E° değerinin</text><text x=\"550\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   İŞARETİ DEĞİŞİR (E°_yüks = -E°_ind).</text><text x=\"550\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">2. Yarı tepkime bir katsayı ile ÇARPILIR veya</text><text x=\"550\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   BÖLÜNÜRSE E° değeri DEĞİŞMEZ! (Çünkü E° madde</text><text x=\"550\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   miktarına bağlı olmayan yeğin bir özelliktir).</text><text x=\"550\" y=\"190\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">3. İki yarı tepkime toplanırsa E° değerleri toplanır.</text></svg>"
-  },
-  {
-   "baslik": "2. Metallerin Aktiflik Sırası, İstemlilik ve Saklama Kabı Problemleri",
-   "metin": [
-    "Metallerin kimyasal tepkimeye girme yani {koyu:elektron verme (yükseltgenme) eğilimine metalik aktiflik}; ametallerin elektron alma (indirgenme) eğilimine ise {koyu:ametalik aktiflik} denir:\n• {koyu:Yükseltgenme potansiyeli ({us:E|°}_yüks) büyük olan metal}, diğer metalden daha {koyu:aktiftir} ve daha kuvvetli {koyu:indirgen} özellik gösterir.\n• {koyu:İndirgenme potansiyeli ({us:E|°}_ind) büyük olan katyon veya ametal} ise elektron almaya daha isteklidir ve daha kuvvetli {koyu:yükseltgendir}.",
-    "Bir redoks tepkimesinin sabit sıcaklık ve basınçta kendiliğinden gerçekleşip gerçekleşmeyeceği ({koyu:istemliliği}), tepkimenin {koyu:{us:E|°}_hücre} işaretinden anlaşılır:\n• {koyu:{us:E|°}_hücre > 0} ise tepkime {koyu:istemlidir (kendiliğinden gerçekleşir)}.\n• {koyu:{us:E|°}_hücre < 0} ise tepkime {koyu:istemsizdir} (ancak dışarıdan elektrik enerjisi verilerek, yani elektrolizle gerçekleştirilebilir).\n{koyu:Saklama Kabı ve Metal Çubuk Kuralı:} {koyu:X} metalinden yapılmış bir kaba {koyu:Y²⁺} iyonları içeren bir sulu çözelti konulduğunda; eğer {koyu:X metali Y metalinden daha aktifse (Aktiflik: X > Y)}, X atomları elektron verip çözeltiye geçerken ({koyu:X(k) + Y²⁺(suda) → X²⁺(suda) + Y(k)}) kap {koyu:delinir/aşınır} ve bu çözelti X kabında {koyu:SAKLANAMAZ}! Çözeltinin saklanabilmesi için kap metalinin çözeltideki katyondan {koyu:daha pasif (X < Y)} olması gerekir."
-   ],
-   "kutu": {
-    "tur": "bilgi",
-    "baslik": "Aktif Metaller, Yarı Soy Metaller ve Tam Soy Metaller",
-    "metin": "• {koyu:Aktif Metaller ({us:E|°}_yüks > 0,00 V):} Li, K, Ba, Ca, Na, Mg, Al, Zn, Cr, Fe, Ni, Sn, Pb. Asit çözeltileriyle (H⁺ ile) tepkimeye girerek {koyu:H₂ gazı} açığa çıkarırlar.\n• {koyu:Yarı Soy Metaller (Cu, Hg, Ag — {us:E|°}_yüks < 0):} HCl gibi oksijensiz asitlerle tepkime vermezler; yalnız yükseltgen {koyu:HNO₃ ve H₂SO₄} ile tepkimeye girip {koyu:NO, NO₂ veya SO₂} gazı çıkarırlar ({koyu:asla H₂ gazı çıkarmazlar!}).\n• {koyu:Tam Soy Metaller (Au ve Pt):} Hiçbir tek asitle tepkime vermezler; yalnızca {koyu:kral suyu} (3 hacim HCl + 1 hacim HNO₃) ile çözünürler."
-   },
-   "gorsel": "<svg viewBox=\"0 0 740 260\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:740px;display:block;margin:14px auto;background:#fff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><rect x=\"0\" y=\"0\" width=\"740\" height=\"38\" rx=\"10\" fill=\"#0f766e\"/><rect x=\"0\" y=\"20\" width=\"740\" height=\"18\" fill=\"#0f766e\"/><text x=\"370\" y=\"25\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">ELEKTROKİMYASAL AKTİFLİK SIRASI VE İSTEMLİLİK TESTİ</text><rect x=\"20\" y=\"52\" width=\"340\" height=\"190\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#10b981\" stroke-width=\"1.8\"/><text x=\"190\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#065f46\" text-anchor=\"middle\">METALİK AKTİFLİK VE YARI SOY / TAM SOY METALLER</text><line x1=\"30\" y1=\"82\" x2=\"350\" y2=\"82\" stroke=\"#10b981\" stroke-width=\"1\"/><text x=\"190\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Elektron verme eğilimi (E°_yüks) büyük olan metal</text><text x=\"190\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  daha AKTİFTİR (En aktifler: Li, K, Ba, Ca, Na, Mg, Al, Zn, Fe).</text><text x=\"190\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• H₂'den aktif metaller (E°_yüks > 0) asitlerle H₂ gazı çıkarır.</text><text x=\"190\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Yarı Soy Metaller (Cu, Hg, Ag): E°_yüks < 0; yalnız</text><text x=\"190\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  HNO₃ ve H₂SO₄ ile tepkime verir (H₂ gazı çıkarmaz!).</text><text x=\"190\" y=\"190\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Tam Soy Metaller (Au, Pt): Asitlerle tepkime vermez (Kral suyu hariç).</text><rect x=\"380\" y=\"52\" width=\"340\" height=\"190\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#ef4444\" stroke-width=\"1.8\"/><text x=\"550\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#991b1b\" text-anchor=\"middle\">METAL ÇUBUK / SAKLAMA KABI KURALI</text><line x1=\"390\" y1=\"82\" x2=\"710\" y2=\"82\" stroke=\"#ef4444\" stroke-width=\"1\"/><text x=\"550\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• X(k) metali, Y²⁺(suda) çözeltisine daldırıldığında:</text><text x=\"550\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Eğer X metali Y'den AKTİFSE (X > Y):</text><text x=\"550\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  - Kendiliğinden X(k) + Y²⁺ -> X²⁺ + Y(k) tepkimesi olur.</text><text x=\"550\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  - X çubuğu/kabı AŞINIR ve çözelti X kabında SAKLANAMAZ!</text><text x=\"550\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Eğer X metali Y'den PASİFSE (X < Y):</text><text x=\"550\" y=\"190\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  - Tepkime OLMAZ, aşınma olmaz ve çözelti SAKLANABİLİR!</text></svg>"
-  },
-  {
-   "baslik": "3. Hücre Potansiyelini (E_pil) Etkileyen Faktörler (Le Chatelier Yorumu)",
-   "metin": [
-    "Elektrokimyasal pil tepkimeleri, elektrik enerjisi üreten {koyu:ekzotermik (ısı veren) birer denge tepkimesidir}:\n{koyu:Anot(k) + Katotⁿ⁺(suda) ⇌ Anotⁿ⁺(suda) + Katot(k) + ISI}\n{koyu:Le Chatelier İlkesine} göre dışarıdan yapılan bir etki;\n• Dengeyi {koyu:ürünler yönüne (sağa)} kaydırıyorsa hücre potansiyeli ({koyu:E_pil}) {koyu:ARTAR},\n• Dengeyi {koyu:girenler yönüne (sola)} kaydırıyorsa hücre potansiyeli ({koyu:E_pil}) {koyu:AZALIR}!",
-    "Buna göre pil gerilimini değiştiren ve değiştirmeyen etkiler şunlardır:\n• {koyu:1. Anot Yarı Hücresinin Derişimi:} Anot kabındaki {koyu:Anotⁿ⁺} iyonu ürünlerde yer alır. Anot kabına {koyu:saf su eklemek} veya {koyu:Anotⁿ⁺ iyonlarını çöktüren bir madde (örn: Na₂S) eklemek} ürün derişimini azaltır, denge {koyu:sağa (ürünlere)} kayar ve {koyu:E_pil ARTAR}. Anot kabında {koyu:Anotⁿ⁺} tuzu çözmek ise E_pil'i azaltır.\n• {koyu:2. Katot Yarı Hücresinin Derişimi:} Katot kabındaki {koyu:Katotⁿ⁺} iyonu girenlerde yer alır. Katot kabında çözünür {koyu:Katotⁿ⁺ tuzu çözmek} (veya asit pilinde asit eklemek) giren derişimini artırır, denge {koyu:sağa (ürünlere)} kayar ve {koyu:E_pil ARTAR}. Katot kabına saf su eklemek ise E_pil'i azaltır.\n• {koyu:3. Sıcaklık Etkisi:} Pil tepkimesi ekzotermik (ısı ürünlerde) olduğu için {koyu:sıcaklık düşürülürse (pil soğutulursa)} denge sağa kayar ve {koyu:E_pil ARTAR}; sıcaklık artırılırsa E_pil azalır.\n• {koyu:4. Pil Gerilimini (E_pil) DEĞİŞTİRMEYENler:} Elektrotların kütlesini, boyutunu, temas yüzeyini veya çözelti derişimini değiştirmeden yalnız çözelti hacmini artırmak {koyu:pil gerilimini (E_pil) değiştirmez} (ancak pilin ömrünü/kapasitesini etkileyebilir)."
-   ],
-   "gorsel": "<svg viewBox=\"0 0 740 260\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:740px;display:block;margin:14px auto;background:#fff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><rect x=\"0\" y=\"0\" width=\"740\" height=\"38\" rx=\"10\" fill=\"#6d28d9\"/><rect x=\"0\" y=\"20\" width=\"740\" height=\"18\" fill=\"#6d28d9\"/><text x=\"370\" y=\"25\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">PİL POTANSİYELİNİ ETKİLEYEN FAKTÖRLER (DENGE YORUMU)</text><rect x=\"20\" y=\"52\" width=\"340\" height=\"190\" rx=\"8\" fill=\"#f5f3ff\" stroke=\"#8b5cf6\" stroke-width=\"1.8\"/><text x=\"190\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#5b21b6\" text-anchor=\"middle\">PİL TEPKİMESİ BİR DENGE TEPKİMESİDİR!</text><line x1=\"30\" y1=\"82\" x2=\"350\" y2=\"82\" stroke=\"#8b5cf6\" stroke-width=\"1\"/><text x=\"190\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Anot(k) + Katot^n+(suda) <=> Anot^n+(suda) + Katot(k) + ISI</text><text x=\"190\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• KURAL: Yapılan etki dengeyi ÜRÜNLERE (sağa)</text><text x=\"190\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  kaydırırsa E_pil ARTAR; GİRENLERE (sola) kaydırırsa</text><text x=\"190\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  E_pil AZALIR!</text><text x=\"190\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Elektrotların kütlesini/yüzey alanını veya çözelti</text><text x=\"190\" y=\"190\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  hacmini (derişimi değiştirmeden) artırmak E_pil'i DEĞİŞTİRMEZ!</text><rect x=\"380\" y=\"52\" width=\"340\" height=\"190\" rx=\"8\" fill=\"#fdf4ff\" stroke=\"#d946ef\" stroke-width=\"1.8\"/><text x=\"550\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#86198f\" text-anchor=\"middle\">PİL GERİLİMİNİ ARTIRAN ETKİLER (Sağa Kaydıranlar)</text><line x1=\"390\" y1=\"82\" x2=\"710\" y2=\"82\" stroke=\"#d946ef\" stroke-width=\"1\"/><text x=\"550\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">1. KATOT yarı hücresindeki katyon derişimini ARTIRMAK</text><text x=\"550\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   (Katot kabına tuz eklemek veya su buharlaştırmak).</text><text x=\"550\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">2. ANOT yarı hücresindeki katyon derişimini AZALTMAK</text><text x=\"550\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   (Anot kabına saf su eklemek veya iyonları çöktürmek).</text><text x=\"550\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">3. Sıcaklığı AZALTMAK (Pil tepkimeleri ekzotermiktir,</text><text x=\"550\" y=\"190\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   soğutulduğunda denge ürünlere kayar ve E_pil artar).</text></svg>"
-  },
-  {
-   "baslik": "4. Standart Olmayan Koşullarda Pil Potansiyeli: Nernst Eşitliği",
-   "metin": [
-    "Yarı hücrelerdeki çözelti derişimlerinin {koyu:1 M'dan farklı} olduğu durumlarda hücre potansiyeli ({koyu:E_pil}), Alman kimyacı {koyu:Walther Nernst} tarafından geliştirilen {koyu:Nernst Eşitliği} ile hesaplanır (25 °C sıcaklıkta):\n{koyu:E_pil = {us:E|°}_pil - {kesir:0,0592|n} · log Q}   (Sorularda işlem kolaylığı için genellikle {koyu:0,0592 ≈ 0,06} alınır).",
-    "Bu denklemde yer alan terimler:\n• {koyu:{us:E|°}_pil:} Standart (1 M) koşullardaki hücre potansiyeli (Volt).\n• {koyu:n:} Denkleştirilmiş net pil tepkimesinde alınan veya verilen toplam elektron ({koyu:{us:e|-}}) mol sayısı.\n• {koyu:Q (Tepkime Kesri / Denge Kesri):} Saf katılar ve sıvılar denge kesrine yazılmaz; yalnızca gazların kısmi basıncı ve sulu çözeltilerin molar derişimleri katsayıları üs olacak biçimde yazılır:\n  {koyu:Q = {kesir:{us:[Ürünler (Anot İyonu)]|a}|{us:[Girenler (Katot İyonu)]|b}}}"
-   ],
-   "kutu": {
-    "tur": "onemli",
-    "baslik": "Dikkat: Katsayılar Logaritma İçinde ÜS Olarak Yazılır!",
-    "metin": "Örneğin net tepkimesi {koyu:Zn(k) + 2Ag⁺(suda) → Zn²⁺(suda) + 2Ag(k)} olan bir pilde {koyu:n = 2} dir ve {koyu:Ag⁺} iyonunun katsayısı {koyu:2} olduğu için denge kesri {koyu:Q = {kesir:[Zn²⁺]|{us:[Ag⁺]|2}}} şeklinde karesi alınarak yazılır!"
-   },
-   "gorsel": "<svg viewBox=\"0 0 740 250\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:740px;display:block;margin:14px auto;background:#fff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><rect x=\"0\" y=\"0\" width=\"740\" height=\"38\" rx=\"10\" fill=\"#b91c1c\"/><rect x=\"0\" y=\"20\" width=\"740\" height=\"18\" fill=\"#b91c1c\"/><text x=\"370\" y=\"25\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">NERNST EŞİTLİĞİ VE DERİŞİM PİLLERİ (25 °C)</text><rect x=\"20\" y=\"52\" width=\"340\" height=\"180\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#ef4444\" stroke-width=\"1.8\"/><text x=\"190\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#991b1b\" text-anchor=\"middle\">NERNST EŞİTLİĞİ (Standart Olmayan Koşullar)</text><line x1=\"30\" y1=\"82\" x2=\"350\" y2=\"82\" stroke=\"#ef4444\" stroke-width=\"1\"/><text x=\"190\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Çözelti derişimleri 1 M'dan farklı olduğunda</text><text x=\"190\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  hücre potansiyeli Nernst eşitliği ile hesaplanır:</text><text x=\"190\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• E_pil = E°_pil - (0,0592 / n) · log Q</text><text x=\"190\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  (Sorularda genellikle 0,0592 yerine 0,06 alınır).</text><text x=\"190\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• n: Alınan/verilen e⁻ sayısı  |  Q = [Ürünler] / [Girenler]</text><rect x=\"380\" y=\"52\" width=\"340\" height=\"180\" rx=\"8\" fill=\"#fff7ed\" stroke=\"#f97316\" stroke-width=\"1.8\"/><text x=\"550\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#9a3412\" text-anchor=\"middle\">DERİŞİM PİLLERİ (Aynı Tür Elektrotlar, Farklı Derişim)</text><line x1=\"390\" y1=\"82\" x2=\"710\" y2=\"82\" stroke=\"#f97316\" stroke-width=\"1\"/><text x=\"550\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Elektrotlar aynı metalden olduğu için E°_pil = 0 V'tur.</text><text x=\"550\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Derişimi KÜÇÜK (seyreltik) olan kap ANOT,</text><text x=\"550\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  derişimi BÜYÜK (derişik) olan kap KATOT olur!</text><text x=\"550\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Zamanla anot derişimi artar, katot derişimi azalır;</text><text x=\"550\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  derişimler eşitlendiğinde (M1 = M2) pil DURUR (E = 0).</text></svg>"
-  },
-  {
-   "baslik": "5. Derişim Pilleri (Aynı Elektrotlu Hücreler)",
-   "metin": [
-    "Her iki yarı hücresinde de {koyu:aynı metal elektrotların} ve {koyu:aynı tür iyon içeren ancak derişimleri birbirinden farklı} olan çözeltilerin kullanıldığı galvanik hücrelere {koyu:derişim pili} denir (Örn: Bir yarı hücrede Cu elektrot ve {koyu:0,01 M CuSO₄}, diğer yarı hücrede yine Cu elektrot ve {koyu:1 M CuSO₄} çözeltisi).\n• Elektrotlar aynı metalden yapıldığı için standart potansiyel farkı sıfırdır: {koyu:{us:E|°}_pil = 0,00 V}.\n• Pilin çalışmasını sağlayan tek itici güç {koyu:iki yarı hücre arasındaki derişim farkıdır}!",
-    "{koyu:Derişim Pillerinde Anot ve Katot Kuralı:}\nSistem derişimleri eşitlemeye çalışacağı için;\n• Derişimi {koyu:KÜÇÜK (seyreltik)} olan yarı hücrede derişimi artırmak için elektrot çözünür (yükseltgenme olur) -> {koyu:SEYRELTİK KAP = ANOT}!\n• Derişimi {koyu:BÜYÜK (derişik)} olan yarı hücrede derişimi azaltmak için katyonlar indirgenir -> {koyu:DERİŞİK KAP = KATOT}!\nZamanla anot kabının derişimi artar, katot kabının derişimi azalır. İki yarı hücredeki derişimler birbirine eşitlendiği anda ({koyu:M₁ = M₂}) pil gerilimi sıfırlanır ({koyu:E_pil = 0 V}) ve pil çalışmayı durdurur."
-   ]
-  },
-  {
-   "baslik": "6. Derişim Pillerinde Nernst Hesabı ve Pratik Özet",
-   "metin": [
-    "İyon yükleri eşit olan bir derişim pilinde {koyu:{us:E|°}_pil = 0 V} olduğundan Nernst eşitliği şu çok sade hâli alır:\n{koyu:E_pil = 0 - {kesir:0,06|n} · log({kesir:[Anot (Seyreltik)]|[Katot (Derişik)]}) = {kesir:0,06|n} · log({kesir:[Derişik]|[Seyreltik]})}",
-    "Bu bağıntıdan görüldüğü üzere bir derişim pilinde iki yarı hücre arasındaki {koyu:derişim farkı ne kadar büyütülürse} (yani anot kabına su eklenip daha da seyreltilirse veya katot kabında tuz çözülüp daha da derişik hâle getirilirse) {koyu:pilin başlangıç gerilimi (E_pil) o kadar ARTAR}!"
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "baslik": "Sınav İpucu: 'KİMYA' ve 'SEYRELTİK ANOT' Kodlaması",
-    "metin": "1) {koyu:K}atotta {koyu:İ}ndirgenme, {koyu:A}notta {koyu:Y}ükseltgenme ({koyu:KİMYA}).\n2) Farklı metallerde: {koyu:Aktif olan (E°_yüks büyük olan) = ANOT}.\n3) Aynı metallerde (Derişim pilinde): {koyu:Derişimi küçük (Seyreltik) olan = ANOT}."
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "25 °C'ta standart indirgenme potansiyelleri;\n• Zn²⁺(suda) + 2e⁻ → Zn(k)   E° = -0,76 V\n• Ag⁺(suda) + e⁻ → Ag(k)     E° = +0,80 V\nolarak verilmiştir. Standart Zn - Ag galvanik hücresinde;\na) Anot ve katot elektrotları belirleyiniz.\nb) Net pil denklemini yazınız ve standart pil potansiyelini (E°_pil) hesaplayınız.",
-   "cevap": "a) İndirgenme potansiyeli küçük olan {koyu:Zn (-0,76 V < +0,80 V)} daha aktiftir; bu nedenle {koyu:Zn elektrot ANOT}, {koyu:Ag elektrot ise KATOT} olur.\nb) • Anot (Yükseltgenme): {koyu:Zn(k) → Zn²⁺(suda) + 2e⁻   (E°_yüks = +0,76 V)}\n   • Katot (İndirgenme, 2 ile genişletilir ancak E° çarpılmaz!): {koyu:2Ag⁺(suda) + 2e⁻ → 2Ag(k)   (E°_ind = +0,80 V)}\n   • Net Pil Denklemi: {koyu:Zn(k) + 2Ag⁺(suda) ⇌ Zn²⁺(suda) + 2Ag(k)}\n   • Standart Pil Gerilimi: {koyu:E°_pil = +0,76 + 0,80 = +1,56 V} bulunur."
-  },
-  {
-   "soru": "X, Y ve Z metallerinin standart indirgenme potansiyelleri sırasıyla E°(X²⁺/X) = -2,37 V, E°(Y²⁺/Y) = -0,44 V ve E°(Z²⁺/Z) = +0,34 V'tur. Buna göre;\na) Metallerin elektron verme eğilimlerini (aktifliklerini) sıralayınız.\nb) Y metalinden yapılmış bir kapta XSO₄ sulu çözeltisi mi yoksa ZSO₄ sulu çözeltisi mi güvenle saklanabilir?",
-   "cevap": "a) İndirgenme potansiyeli en küçük (yükseltgenme potansiyeli en büyük) olan metal en aktiftir: {koyu:+2,37 V > +0,44 V > -0,34 V} olduğundan metalik aktiflik sırası {koyu:X > Y > Z} olur.\nb) Bir çözeltinin saklanabilmesi için kap metali ({koyu:Y}) çözeltideki katyondan pasif olmalı, yani tepkime vermemelidir. {koyu:Y > Z} olduğu için Y kabı Z²⁺ iyonlarıyla tepkime verir ve aşınır ({koyu:ZSO₄ saklanamaz}). Ancak {koyu:Y < X} olduğu için Y metali X²⁺ iyonlarını indirgeyemez; dolayısıyla Y kabında {koyu:XSO₄ çözeltisi güvenle saklanabilir}."
-  },
-  {
-   "soru": "Net pil tepkimesi 'Mg(k) + Cu²⁺(suda) ⇌ Mg²⁺(suda) + Cu(k) + Isı' olan bir elektrokimyasal pilde aşağıdaki işlemler ayrı ayrı uygulanırsa pil gerilimi (E_pil) nasıl değişir?\n1. Katot (Cu) yarı hücresine saf su eklemek,\n2. Anot (Mg) yarı hücresine saf su eklemek,\n3. Sıcaklığı artırmak,\n4. Mg elektrodun kütlesini iki katına çıkarmak.",
-   "cevap": "{koyu:1. Katot kabına saf su eklemek:} Girenlerdeki {koyu:[Cu²⁺]} derişimini azaltır, denge girenlere (sola) kayar ve {koyu:E_pil AZALIR}.\n{koyu:2. Anot kabına saf su eklemek:} Ürünlerdeki {koyu:[Mg²⁺]} derişimini azaltır, denge ürünlere (sağa) kayar ve {koyu:E_pil ARTAR}.\n{koyu:3. Sıcaklığı artırmak:} Ekzotermik tepkimede dengeyi girenlere (sola) kaydırır ve {koyu:E_pil AZALIR}.\n{koyu:4. Mg elektrot kütlesini artırmak:} Katı kütlesi dengeyi etkilemediği için {koyu:E_pil DEĞİŞMEZ}."
-  },
-  {
-   "soru": "Standart pil potansiyeli E°_pil = 1,10 V olan 'Zn(k) + Cu²⁺(suda) ⇌ Zn²⁺(suda) + Cu(k)' pilinde 25 °C'ta [Zn²⁺] = 0,01 M ve [Cu²⁺] = 1 M olduğuna göre pilin başlangıç potansiyeli (E_pil) kaç Volt olur? (Nernst sabiti 0,06 alınız.)",
-   "cevap": "Tepkimede alınan-verilen elektron sayısı {koyu:n = 2} dir.\nDenge kesri: {koyu:Q = {kesir:[Zn²⁺]|[Cu²⁺]} = {kesir:0,01|1} = {us:10|-2}}.\nNernst eşitliğinde yerine yazalım:\n{koyu:E_pil = {us:E|°}_pil - {kesir:0,06|n} · log Q = 1,10 - {kesir:0,06|2} · log({us:10|-2})}\n{koyu:log({us:10|-2}) = -2} olduğundan:\n{koyu:E_pil = 1,10 - 0,03 · (-2) = 1,10 + 0,06 = 1,16 V} bulunur."
-  },
-  {
-   "soru": "1. yarı hücresinde Ag elektrot ve 0,001 M AgNO₃ çözeltisi, 2. yarı hücresinde ise Ag elektrot ve 0,1 M AgNO₃ çözeltisi bulunan bir derişim pilinde anot ve katot kaplarını belirleyerek 25 °C'taki pil gerilimini hesaplayınız. (Ag⁺ + e⁻ → Ag, Nernst sabiti: 0,06)",
-   "cevap": "• Derişim pilinde seyreltik olan {koyu:1. kap (0,001 M = {us:10|-3} M) ANOT}, derişik olan {koyu:2. kap (0,1 M = {us:10|-1} M) ise KATOT} olur.\n• Alınan-verilen elektron sayısı {koyu:n = 1} ve {koyu:{us:E|°}_pil = 0,00 V} tur:\n{koyu:E_pil = {kesir:0,06|1} · log({kesir:[Katot]|[Anot]}) = 0,06 · log({kesir:{us:10|-1}|{us:10|-3}}) = 0,06 · log({us:10|2}) = 0,06 · 2 = 0,12 V} bulunur."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "25 °C'ta standart indirgenme potansiyelleri;\n• Al³⁺(suda) + 3e⁻ → Al(k)   E° = -1,66 V\n• Ni²⁺(suda) + 2e⁻ → Ni(k)   E° = -0,25 V\nolarak verildiğine göre, standart Al - Ni elektrokimyasal hücresinin başlangıç gerilimi (E°_pil) kaç Volt'tur?",
-   "secenekler": [
-    "1,41 V",
-    "1,91 V",
-    "2,57 V",
-    "3,82 V",
-    "0,83 V"
-   ],
-   "dogru": 0,
-   "aciklama": "İndirgenme potansiyeli küçük olan {koyu:Al (-1,66 V)} anot ({koyu:{us:E|°}_yüks = +1,66 V}), {koyu:Ni (-0,25 V)} ise katottur. Katsayılarla çarpmak {koyu:{us:E|°}}'yi değiştirmez: {koyu:{us:E|°}_pil = +1,66 + (-0,25) = 1,41 V}."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Aşağıdaki metallerden hangisi 1 M HCl (hidroklorik asit) sulu çözeltisine atıldığında H₂ (hidrojen) gazı açığa ÇIKARMAZ?",
-   "secenekler": [
-    "Çinko (Zn)",
-    "Magnezyum (Mg)",
-    "Demir (Fe)",
-    "Bakır (Cu)",
-    "Alüminyum (Al)"
-   ],
-   "dogru": 3,
-   "aciklama": "{koyu:Bakır (Cu)}, standart yükseltgenme potansiyeli negatif ({koyu:{us:E|°}_yüks = -0,34 V < 0}) olan bir {koyu:yarı soy metaldir}; HCl ile tepkime vermez ve H₂ gazı çıkarmaz."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "12-kimya-2",
+  "sinif": 12,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 3,
+  "tarih": "21-25 Eylül 2026",
+  "yayin_tarihi": "2026-10-16",
+  "unite": "12.1. KİMYA VE ELEKTRİK",
+  "konu": "12.1.2. Elektrotlar ve Elektrokimyasal Hücreler: Yarı Hücre, Anot, Katot ve Tuz Köprüsü",
+  "ciktilar": [
+    "12.1.1.3. İndirgenme-yükseltgenme tepkimelerini denkleştirir.",
+    "12.1.1.4. İndirgenme-yükseltgenme tepkimeleri ile elektrik enerjisi arasındaki ilişkiyi açıklar.",
+    "12.1.2.1. Elektrot ve elektrokimyasal hücre kavramlarını açıklar."
+  ],
+  "giris": "İstemli bir indirgenme-yükseltgenme (redoks) tepkimesinde elektron alışverişinin bir dış devre üzerinden dolaylı olarak gerçekleştirilmesiyle kimyasal enerjiyi elektrik enerjisine dönüştüren düzeneklere **elektrokimyasal hücre (galvanik pil)** denir. Bu haftaki dersimizde elektrot, elektrolit, yarı hücre, **anot** (yükseltgenme yarı hücresi), **katot** (indirgenme yarı hücresi) ve **tuz köprüsü** kavramlarını inceliyoruz.",
+  "ozet": [
+    "Redoks tepkimeleri {koyu:alınan ve verilen toplam elektron sayılarının eşit olması} ilkesine göre {koyu:yükseltgenme basamağı değişim yöntemi} veya {koyu:yarı tepkime yöntemi} kullanılarak denkleştirilir.",
+    "Bir redoks tepkimesinde birden fazla element yükseltgenebilir veya indirgenebilir (örneğin As₂S₃ bileşiğinde hem As hem de S yükseltgenerek 1 mol As₂S₃ toplam 10 mol elektron verir).",
+    "İndirgen ve yükseltgen maddeler aynı kapta {koyu:doğrudan temasla} tepkimeye girdiğinde elektrik enerjisi elde edilemezken, {koyu:John Frederic Daniell}'in tasarladığı gibi iki ayrı yarı hücre iletken tel ve tuz köprüsüyle bağlandığında ({koyu:Daniell pili}) kimyasal enerji elektrik enerjisine dönüşür.",
+    "Kendiliğinden gerçekleşen {koyu:istemli redoks tepkimelerinde} kimyasal enerji elektrik enerjisine dönüşürken, kendiliğinden gerçekleşmeyen {koyu:istemsiz redoks tepkimelerinde} dışarıdan elektrik enerjisi harcanarak kimyasal değişim sağlanır.",
+    "Galvanik hücrede yükseltgenmenin olduğu elektrot {koyu:anot (− kutup)}, indirgenmenin olduğu elektrot {koyu:katot (+ kutup)} olup dış devrede elektronlar {koyu:anottan katoda} doğru akar; tepkimeye girmeyen Pt, Au ve grafit gibi iletkenlere {koyu:inert elektrot} denir.",
+    "Ters U borusu şeklindeki {koyu:tuz köprüsünde} bulunan doygun tuz çözeltisindeki {koyu:anyonlar anot kabına, katyonlar ise katot kabına} göç ederek yarı hücrelerdeki yük denkliğini korur; yarı hücre potansiyelleri ise potansiyeli {koyu:0,00 V} kabul edilen {koyu:Standart Hidrojen Elektroda (SHE)} göre ölçülür."
+  ],
+  "bolumler": [
     {
-     "metin": "Bir yarı tepkimede alınan-verilen elektron sayısını eşitlemek için tepkime 2 ile çarpıldığında standart elektrot potansiyeli (E°) değeri de 2 ile çarpılır.",
-     "dogru": false,
-     "aciklama": "Bu ifade {koyu:yanlıştır}. Standart elektrot potansiyeli ({koyu:{us:E|°}}) madde miktarına bağlı olmayan yeğin bir özelliktir; yarı tepkime herhangi bir sayıyla çarpıldığında {koyu:{us:E|°} değeri değişmez}."
-    }
-   ]
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
-   "ifadeler": [
-    {
-     "metin": "Aynı metal elektrotların farklı derişimli çözeltilere daldırılmasıyla kurulan derişim pillerinde, çözelti derişimi küçük (seyreltik) olan yarı hücre anot olarak davranır.",
-     "dogru": true,
-     "aciklama": "Bu ifade {koyu:doğrudur}. Derişim pilinde derişimleri eşitlemek için seyreltik kapta yükseltgenme olur (anot), derişik kapta indirgenme olur (katot)."
-    }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "soru": "Elektrokimyasal kavramları ve etkileri doğru sonuçlarla eşleştiriniz.",
-   "ciftler": [
-    [
-     "E°_hücre > 0 olan redoks tepkimesi",
-     "İstemlidir (Kendiliğinden gerçekleşir)"
-    ],
-    [
-     "Anot yarı hücresine sabit sıcaklıkta saf su eklenmesi",
-     "Dengeyi ürünlere kaydırır ve pil gerilimini (E_pil) artırır"
-    ],
-    [
-     "Katot yarı hücresine sabit sıcaklıkta saf su eklenmesi",
-     "Dengeyi girenlere kaydırır ve pil gerilimini (E_pil) azaltır"
-    ],
-    [
-     "Nernst Eşitliği",
-     "Derişimlerin 1 M'dan farklı olduğu koşullarda pil gerilimini hesaplama bağıntısı"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Cümlelerdeki boşlukları uygun kelimelerle tamamlayınız.",
-   "cumleler": [
-    {
-     "metin": "Standart indirgenme potansiyellerinin belirlenmesinde potansiyeli 0,00 V kabul edilen referans elektroda Standart ___ Elektrodu (SHE) denir.",
-     "cevap": "Hidrojen"
+      "baslik": "Redoks Tepkimeleri, Elektrik Enerjisi ve İstemlilik",
+      "metin": [
+        "Redoks tepkimelerinde elektron alışverişi aynı kap içinde {koyu:doğrudan temasla} veya iki ayrı kap arasında {koyu:dolaylı yoldan} gerçekleşebilir. Bir beherglastaki 1 M CuSO₄ çözeltisine Zn metali batırıldığında Zn metali 2 elektron vererek yükseltgenir, çözeltideki {us:Cu|2+} iyonları ise bu elektronları alarak indirgenir; Zn çubuk üzerinde kızılımsı kahverengi Cu katısı birikirken çözeltinin mavi rengi kaybolur. Ancak elektron alışverişi doğrudan temasla gerçekleştiği için bu düzenekten elektrik enerjisi elde edilemez. İngiliz bilim insanı {koyu:John Frederic Daniell}, Zn levhayı ZnSO₄ çözeltisine, Cu levhayı CuSO₄ çözeltisine batırıp iki yarı hücreyi iletken tel ve tuz köprüsüyle bağlayarak {koyu:Daniell pilini} (galvanik hücre) kurmuş ve dış devreden geçen elektronlarla kullanılabilir elektrik enerjisi üretmiştir.",
+        "Başladıktan sonra dışarıdan bir etki olmaksızın kendiliğinden devam eden tepkimelere {koyu:istemli tepkime} denir (örneğin H₂(g) + {kesir:1|2}O₂(g) → H₂O(s) tepkimesi ve pil tepkimeleri). {koyu:İstemli redoks tepkimelerinde kimyasal enerji elektrik enerjisine dönüşür.} Kendiliğinden gerçekleşmeyen, gerçekleşmesi için dışarıdan sürekli enerji verilmesi gereken tepkimelere ise {koyu:istemsiz tepkime} denir (örneğin suyun H₂O(s) → H₂(g) + {kesir:1|2}O₂(g) şeklinde ayrışması). {koyu:İstemsiz redoks tepkimelerinde elektrik enerjisi harcanarak kimyasal enerjiye dönüştürülür.}"
+      ],
+      "kutu": {
+        "tur": "bilgi",
+        "baslik": "Diş Dolgusu ve Alüminyum Folyo Neden Elektrik Çarpması Hissedilir?",
+        "metin": "Ağızdaki metal diş dolgusu ile yanlışlıkla ısırılan alüminyum folyo {koyu:iki farklı metal elektrot}, tükürük salgısı ise {koyu:elektrolit} görevi görerek ağız içinde küçük bir {koyu:galvanik hücre (pil)} oluşturur; oluşan elektrik akımı diş kökündeki sinirler tarafından ağrı olarak beyne iletilir."
+      },
+      "gorsel": "<svg viewBox=\"0 0 740 265\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:740px;display:block;margin:14px auto;background:#fff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><rect x=\"0\" y=\"0\" width=\"740\" height=\"38\" rx=\"10\" fill=\"#1d4ed8\"/><rect x=\"0\" y=\"20\" width=\"740\" height=\"18\" fill=\"#1d4ed8\"/><text x=\"370\" y=\"25\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">STANDART ELEKTROT POTANSİYELİ (E°) VE PİL GERİLİMİ KURALLARI</text><rect x=\"20\" y=\"52\" width=\"340\" height=\"195\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.8\"/><text x=\"190\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">STANDART HÜCRE POTANSİYELİ (E°_hücre)</text><line x1=\"30\" y1=\"82\" x2=\"350\" y2=\"82\" stroke=\"#3b82f6\" stroke-width=\"1\"/><text x=\"190\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Referans Elektrot: SHE (2H⁺ + 2e⁻ -> H₂, E° = 0,00 V)</text><text x=\"190\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• İndirgenme potansiyeli KÜÇÜK (yükseltgenme potansiyeli</text><text x=\"190\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  BÜYÜK) olan elektrot ANOT, diğeri KATOT olur.</text><text x=\"190\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• E°_hücre = E°_yüks (Anot) + E°_ind (Katot)</text><text x=\"190\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Veya: E°_hücre = E°_ind (Katot) - E°_ind (Anot)</text><text x=\"190\" y=\"190\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• E°_hücre > 0 ise tepkime İSTEMLİDİR (Galvanik pil).</text><rect x=\"380\" y=\"52\" width=\"340\" height=\"195\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.8\"/><text x=\"550\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#14532d\" text-anchor=\"middle\">YARI TEPKİME İŞLEMLERİNİN E° DEĞERİNE ETKİSİ</text><line x1=\"390\" y1=\"82\" x2=\"710\" y2=\"82\" stroke=\"#16a34a\" stroke-width=\"1\"/><text x=\"550\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">1. Yarı tepkime TERS ÇEVRİLİRSE E° değerinin</text><text x=\"550\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   İŞARETİ DEĞİŞİR (E°_yüks = -E°_ind).</text><text x=\"550\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">2. Yarı tepkime bir katsayı ile ÇARPILIR veya</text><text x=\"550\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   BÖLÜNÜRSE E° değeri DEĞİŞMEZ! (Çünkü E° madde</text><text x=\"550\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   miktarına bağlı olmayan yeğin bir özelliktir).</text><text x=\"550\" y=\"190\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">3. İki yarı tepkime toplanırsa E° değerleri toplanır.</text></svg>"
     },
     {
-     "metin": "Elektrokimyasal pil tepkimeleri ___ (ısı veren) tepkimeler olduğu için sıcaklık düşürüldüğünde pil potansiyeli artar.",
-     "cevap": "ekzotermik"
-    }
-   ],
-   "fazla": [
-    "Oksijen",
-    "endotermik"
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Cümlelerdeki boşlukları uygun kelimelerle tamamlayınız.",
-   "cumleler": [
-    {
-     "metin": "X metali Y metalinden daha aktif ise, X metalinden yapılmış bir kapta Y²⁺ iyonları içeren sulu çözelti ___.",
-     "cevap": "saklanamaz"
+      "baslik": "Elektrot, Elektrolit, Tuz Köprüsü ve Galvanik Hücre Yapısı",
+      "metin": [
+        "Bir metalin kendi katyonunu içeren çözeltiye daldırılmasıyla oluşturulan düzeneğe {koyu:yarı hücre}; iki yarı hücrenin iletken bir tel ve tuz köprüsüyle birbirine bağlanmasıyla kurulan ve kimyasal enerjiyi elektrik enerjisine çeviren düzeneğe ise {koyu:galvanik hücre (elektrokimyasal pil)} denir. Serbest iyon içererek elektrik akımını ileten çözeltilere {koyu:elektrolit}, elektrolit içine batırılan metal veya grafit çubuklara {koyu:elektrot} adı verilir. İndirgenme-yükseltgenme tepkimesine girmeyen, yalnızca elektron iletimini sağlayan {koyu:platin (Pt), altın (Au) ve grafit} gibi etkisiz iletkenlere ise {koyu:inert (soy) elektrot} denir.",
+        "Galvanik hücrede {koyu:yükseltgenmenin gerçekleştiği elektroda anot}, {koyu:indirgenmenin gerçekleştiği elektroda ise katot} adı verilir. Pil çalışırken negatif yüklü elektronlar anotta açığa çıktığı için {koyu:anot '-' işaretiyle}, katot ise {koyu:'+' işaretiyle} gösterilir ve dış devrede {koyu:elektron akışı her zaman anottan katoda doğrudur}. İçinde KNO₃, NaCl, KCl gibi suda çok çözünen tuzların doygun çözeltisi bulunan ve uçları gözenekli malzemeyle kapatılmış ters U borusuna {koyu:tuz köprüsü} denir. Tuz köprüsündeki {koyu:anyonlar (− yüklü iyonlar) anot bölmesine}, {koyu:katyonlar (+ yüklü iyonlar) ise katot bölmesine} göç ederek yük denkliğini sağlar ve devreyi tamamlar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Bileşen / Kutup",
+          "Gerçekleşen Olay ve İşareti",
+          "Zamanla Gözlenen Değişimler"
+        ],
+        "satirlar": [
+          [
+            "Anot Yarı Hücresi",
+            "Yükseltgenme olur; '-' kutuptur.",
+            "Elektrot kütlesi azalır (aşınır); çözeltideki katyon derişimi artar; tuz köprüsünden anyonlar gelir."
+          ],
+          [
+            "Katot Yarı Hücresi",
+            "İndirgenme olur; '+' kutuptur.",
+            "Elektrot üzerinde metal birikir (inert/gaz değilse kütle artar); çözeltideki katyon derişimi azalır; tuz köprüsünden katyonlar gelir."
+          ],
+          [
+            "Dış İletken Tel ve Voltmetre",
+            "Elektron iletimi sağlar.",
+            "Elektronlar her zaman anottan katoda doğru akar; pil potansiyeli zamanla azalır."
+          ],
+          [
+            "Tuz Köprüsü (KNO₃, NaCl, KCl)",
+            "İyon göçüyle yük denkliğini korur.",
+            "Anyonlar (−) anoda, katyonlar (+) katoda geçerek çözeltilerin elektriksel nötrlüğünü korur."
+          ]
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 740 260\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:740px;display:block;margin:14px auto;background:#fff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><rect x=\"0\" y=\"0\" width=\"740\" height=\"38\" rx=\"10\" fill=\"#0f766e\"/><rect x=\"0\" y=\"20\" width=\"740\" height=\"18\" fill=\"#0f766e\"/><text x=\"370\" y=\"25\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">ELEKTROKİMYASAL AKTİFLİK SIRASI VE İSTEMLİLİK TESTİ</text><rect x=\"20\" y=\"52\" width=\"340\" height=\"190\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#10b981\" stroke-width=\"1.8\"/><text x=\"190\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#065f46\" text-anchor=\"middle\">METALİK AKTİFLİK VE YARI SOY / TAM SOY METALLER</text><line x1=\"30\" y1=\"82\" x2=\"350\" y2=\"82\" stroke=\"#10b981\" stroke-width=\"1\"/><text x=\"190\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Elektron verme eğilimi (E°_yüks) büyük olan metal</text><text x=\"190\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  daha AKTİFTİR (En aktifler: Li, K, Ba, Ca, Na, Mg, Al, Zn, Fe).</text><text x=\"190\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• H₂'den aktif metaller (E°_yüks > 0) asitlerle H₂ gazı çıkarır.</text><text x=\"190\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Yarı Soy Metaller (Cu, Hg, Ag): E°_yüks &lt; 0; yalnız</text><text x=\"190\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  HNO₃ ve H₂SO₄ ile tepkime verir (H₂ gazı çıkarmaz!).</text><text x=\"190\" y=\"190\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Tam Soy Metaller (Au, Pt): Asitlerle tepkime vermez (Kral suyu hariç).</text><rect x=\"380\" y=\"52\" width=\"340\" height=\"190\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#ef4444\" stroke-width=\"1.8\"/><text x=\"550\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#991b1b\" text-anchor=\"middle\">METAL ÇUBUK / SAKLAMA KABI KURALI</text><line x1=\"390\" y1=\"82\" x2=\"710\" y2=\"82\" stroke=\"#ef4444\" stroke-width=\"1\"/><text x=\"550\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• X(k) metali, Y²⁺(suda) çözeltisine daldırıldığında:</text><text x=\"550\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Eğer X metali Y'den AKTİFSE (X > Y):</text><text x=\"550\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  - Kendiliğinden X(k) + Y²⁺ -> X²⁺ + Y(k) tepkimesi olur.</text><text x=\"550\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  - X çubuğu/kabı AŞINIR ve çözelti X kabında SAKLANAMAZ!</text><text x=\"550\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Eğer X metali Y'den PASİFSE (X &lt; Y):</text><text x=\"550\" y=\"190\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  - Tepkime OLMAZ, aşınma olmaz ve çözelti SAKLANABİLİR!</text></svg>"
     },
     {
-     "metin": "Bir derişim pilinde iki yarı hücredeki çözelti derişimleri birbirine eşitlendiğinde pil potansiyeli ___ Volt olur.",
-     "cevap": "sıfır"
+      "baslik": "Cu-Ag ve Zn-Cu Pillerinde Zamanla Meydana Gelen Değişimler",
+      "metin": [
+        "Birinci örnek olarak {koyu:Cu / {us:Cu|2+} ve Ag / {us:Ag|+} yarı hücrelerinden} oluşan ve doygun KNO₃ tuz köprüsü içeren galvanik hücreyi inceleyelim: Cu metalinin yükseltgenme eğilimi Ag metalinden büyük olduğu için {koyu:Cu elektrot anot (−)}, {koyu:Ag elektrot ise katot (+)} olur. Anotta Cu(k) → {us:Cu|2+}(suda) + 2e⁻ yükseltgenmesi, katotta ise 2{us:Ag|+}(suda) + 2e⁻ → 2Ag(k) indirgenmesi gerçekleşir. Pil çalışırken zamanla {koyu:Cu metalinin kütlesi azalır}, {koyu:Ag metalinin kütlesi artar}, {koyu:{us:Cu|2+} iyon derişimi artar}, {koyu:{us:Ag|+} iyon derişimi azalır}, tuz köprüsündeki {us:NO₃|−} anyonları Cu yarı hücresine, {us:K|+} katyonları Ag yarı hücresine geçer ve {koyu:pil potansiyeli zamanla azalır}.",
+        "İkinci örnek olan {koyu:Zn / ZnSO₄ ve Cu / CuSO₄ (Daniell pili)} düzeneğinde ise Zn metali Cu metalinden daha aktif olduğundan {koyu:Zn elektrot anot (−)}, {koyu:Cu elektrot katot (+)} olur. Anotta Zn(k) → {us:Zn|2+}(suda) + 2e⁻ yarı tepkimesiyle Zn çubuk aşınır ve [{us:Zn|2+}] derişimi artar; dış devreden Cu elektroda gelen elektronlarla katotta {us:Cu|2+}(suda) + 2e⁻ → Cu(k) yarı tepkimesi gerçekleşir, Cu elektrodun kütlesi artarken [{us:Cu|2+}] derişimi azalır. KCl içeren tuz köprüsünde {us:Cl|−} iyonları anot (Zn) kabına, {us:K|+} iyonları katot (Cu) kabına göç eder."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 740 260\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:740px;display:block;margin:14px auto;background:#fff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><rect x=\"0\" y=\"0\" width=\"740\" height=\"38\" rx=\"10\" fill=\"#6d28d9\"/><rect x=\"0\" y=\"20\" width=\"740\" height=\"18\" fill=\"#6d28d9\"/><text x=\"370\" y=\"25\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">PİL POTANSİYELİNİ ETKİLEYEN FAKTÖRLER (DENGE YORUMU)</text><rect x=\"20\" y=\"52\" width=\"340\" height=\"190\" rx=\"8\" fill=\"#f5f3ff\" stroke=\"#8b5cf6\" stroke-width=\"1.8\"/><text x=\"190\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#5b21b6\" text-anchor=\"middle\">PİL TEPKİMESİ BİR DENGE TEPKİMESİDİR!</text><line x1=\"30\" y1=\"82\" x2=\"350\" y2=\"82\" stroke=\"#8b5cf6\" stroke-width=\"1\"/><text x=\"190\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Anot(k) + Katot^n+(suda) &lt;=> Anot^n+(suda) + Katot(k) + ISI</text><text x=\"190\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• KURAL: Yapılan etki dengeyi ÜRÜNLERE (sağa)</text><text x=\"190\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  kaydırırsa E_pil ARTAR; GİRENLERE (sola) kaydırırsa</text><text x=\"190\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  E_pil AZALIR!</text><text x=\"190\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Elektrotların kütlesini/yüzey alanını veya çözelti</text><text x=\"190\" y=\"190\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  hacmini (derişimi değiştirmeden) artırmak E_pil'i DEĞİŞTİRMEZ!</text><rect x=\"380\" y=\"52\" width=\"340\" height=\"190\" rx=\"8\" fill=\"#fdf4ff\" stroke=\"#d946ef\" stroke-width=\"1.8\"/><text x=\"550\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#86198f\" text-anchor=\"middle\">PİL GERİLİMİNİ ARTIRAN ETKİLER (Sağa Kaydıranlar)</text><line x1=\"390\" y1=\"82\" x2=\"710\" y2=\"82\" stroke=\"#d946ef\" stroke-width=\"1\"/><text x=\"550\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">1. KATOT yarı hücresindeki katyon derişimini ARTIRMAK</text><text x=\"550\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   (Katot kabına tuz eklemek veya su buharlaştırmak).</text><text x=\"550\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">2. ANOT yarı hücresindeki katyon derişimini AZALTMAK</text><text x=\"550\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   (Anot kabına saf su eklemek veya iyonları çöktürmek).</text><text x=\"550\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">3. Sıcaklığı AZALTMAK (Pil tepkimeleri ekzotermiktir,</text><text x=\"550\" y=\"190\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   soğutulduğunda denge ürünlere kayar ve E_pil artar).</text></svg>"
+    },
+    {
+      "baslik": "Standart Pil Potansiyeli (E°pil) ve Standart Hidrojen Elektrot (SHE)",
+      "metin": [
+        "Net pil tepkimesinin potansiyeli; çözeltilerin derişimine, sıcaklığa ve gaz elektrot varsa gazın basıncına bağlıdır. {koyu:25 °C sıcaklıkta, iyon derişimleri 1 M (1 mol/L) ve gaz basıncı 1 atm} alınarak oluşturulan pile {koyu:standart pil}, bu pilin başlangıç potansiyeline ise {koyu:standart pil potansiyeli (E°pil)} denir ve {koyu:E°pil = E°yükseltgenme + E°indirgenme} bağıntısıyla hesaplanır.",
+        "Yükseltgenme ve indirgenme yarı tepkimeleri tek başına gerçekleşemediğinden yarı hücre potansiyelleri referans bir elektroda göre ölçülür. Tıpkı rakım ölçümlerinde deniz seviyesinin 0 m kabul edilmesi gibi, elektrokimyada referans olarak seçilen {koyu:Standart Hidrojen Elektrodun (SHE)} potansiyeli {koyu:E° = 0,00 V} kabul edilmiştir. SHE; {koyu:1 M {us:H|+} iyonu içeren asit çözeltisine daldırılmış inert bir platin (Pt) elektrot ve 25 °C'ta 1 atm basınçla gönderilen H₂ gazından} oluşur. SHE anot olduğunda H₂(g) → 2{us:H|+}(suda) + 2e⁻ (E° = 0,00 V), katot olduğunda ise 2{us:H|+}(suda) + 2e⁻ → H₂(g) (E° = 0,00 V) yarı tepkimesi gerçekleşir."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Zn - SHE Pilinde Gözlenen Değişimler",
+        "metin": "Standart çinko (Zn) elektrot ile Standart Hidrojen Elektrot (SHE) bağlandığında pil potansiyeli {koyu:0,763 V} ölçülür. Pil çalışırken {koyu:Zn elektrot (anot) aşınıp kütlesi azalırken}, SHE bölmesindeki {koyu:Pt levha (katot) üzerinde H₂ gazı kabarcıkları} oluşur ve Pt elektrodun kütlesi değişmez."
+      },
+      "gorsel": "<svg viewBox=\"0 0 740 250\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:740px;display:block;margin:14px auto;background:#fff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><rect x=\"0\" y=\"0\" width=\"740\" height=\"38\" rx=\"10\" fill=\"#b91c1c\"/><rect x=\"0\" y=\"20\" width=\"740\" height=\"18\" fill=\"#b91c1c\"/><text x=\"370\" y=\"25\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">NERNST EŞİTLİĞİ VE DERİŞİM PİLLERİ (25 °C)</text><rect x=\"20\" y=\"52\" width=\"340\" height=\"180\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#ef4444\" stroke-width=\"1.8\"/><text x=\"190\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#991b1b\" text-anchor=\"middle\">NERNST EŞİTLİĞİ (Standart Olmayan Koşullar)</text><line x1=\"30\" y1=\"82\" x2=\"350\" y2=\"82\" stroke=\"#ef4444\" stroke-width=\"1\"/><text x=\"190\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Çözelti derişimleri 1 M'dan farklı olduğunda</text><text x=\"190\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  hücre potansiyeli Nernst eşitliği ile hesaplanır:</text><text x=\"190\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• E_pil = E°_pil - (0,0592 / n) · log Q</text><text x=\"190\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  (Sorularda genellikle 0,0592 yerine 0,06 alınır).</text><text x=\"190\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• n: Alınan/verilen e⁻ sayısı  |  Q = [Ürünler] / [Girenler]</text><rect x=\"380\" y=\"52\" width=\"340\" height=\"180\" rx=\"8\" fill=\"#fff7ed\" stroke=\"#f97316\" stroke-width=\"1.8\"/><text x=\"550\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#9a3412\" text-anchor=\"middle\">DERİŞİM PİLLERİ (Aynı Tür Elektrotlar, Farklı Derişim)</text><line x1=\"390\" y1=\"82\" x2=\"710\" y2=\"82\" stroke=\"#f97316\" stroke-width=\"1\"/><text x=\"550\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Elektrotlar aynı metalden olduğu için E°_pil = 0 V'tur.</text><text x=\"550\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Derişimi KÜÇÜK (seyreltik) olan kap ANOT,</text><text x=\"550\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  derişimi BÜYÜK (derişik) olan kap KATOT olur!</text><text x=\"550\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Zamanla anot derişimi artar, katot derişimi azalır;</text><text x=\"550\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  derişimler eşitlendiğinde (M1 = M2) pil DURUR (E = 0).</text></svg>"
     }
-   ],
-   "fazla": [
-    "saklanabilir",
-    "bir"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Bir elektrokimyasal pil problemini çözerken izlenecek 3 adımı değerlendiriniz.",
-   "ipuclari": [
-    "1. Adım: Anot ve Katodu Belirle: Yükseltgenme potansiyeli (E°_yüks) büyük (indirgenme potansiyeli küçük) olan metal ANOT, diğeri KATOT olur.",
-    "2. Adım: Standart Pil Potansiyelini (E°_pil) Bul: E°_pil = E°_yüks(Anot) + E°_ind(Katot) işlemini yap (katsayılarla E°'yi çarpma!).",
-    "3. Adım: Derişim 1 M Değilse Nernst Uygula: E_pil = E°_pil - (0,06 / n) · log([Anot^a] / [Katot^b]) denklemini kullan."
-   ],
-   "cevap": "1) Aktif metali anot, pasif metali katot seç.\n2) Katsayılardan bağımsız olarak {koyu:{us:E|°}_pil = {us:E|°}_yüks(Anot) + {us:E|°}_ind(Katot)} toplamını bul.\n3) Standart olmayan derişimlerde Nernst eşitliğinde katsayıları iyon derişimlerine {koyu:üs} olarak yazmayı unutma."
-  }
- ]
+  ],
+  "ornekler": [
+    {
+      "soru": "H₂S(suda) + HNO₃(suda) → S(k) + NO(g) + H₂O(s) redoks tepkimesini yükseltgenme basamağı değişim yöntemini kullanarak en küçük tam sayılarla denkleştiriniz.",
+      "cevap": "H₂S bileşiğindeki {us:S|2−} atomu {us:S|0}'a yükseltgenerek 2 elektron verir; HNO₃ bileşiğindeki {us:N|5+} atomu ise NO'daki {us:N|2+}'ya indirgenerek 3 elektron alır. Alınan ve verilen elektronları eşitlemek için H₂S ve S'yi 3 ile, HNO₃ ve NO'yu 2 ile çarparız (6e⁻). Son adımda H ve O atomlarını eşitlemek için H₂O'nun önüne 4 yazdığımızda denklem {koyu:3H₂S + 2HNO₃ → 3S + 2NO + 4H₂O} olarak denkleşir."
+    },
+    {
+      "soru": "As₂S₃(k) + HNO₃(suda) + H₂O(s) → H₃AsO₄(suda) + S(k) + NO(g) tepkimesinde 1 mol As₂S₃ toplam kaç mol elektron verir ve tepkime en küçük tam sayılarla denkleştirildiğinde H₂O'nun katsayısı kaç olur?",
+      "cevap": "As₂S₃ içinde As'nin yükseltgenme basamağı +3, S'nin ise −2'dir. Ürünlerde {us:As|5+} ve {us:S|0} oluştuğundan: 2 tane As atomu (+3 → +5) toplam 2 × 2 = 4e⁻ verir; 3 tane S atomu (−2 → 0) toplam 3 × 2 = 6e⁻ verir. Böylece {koyu:1 mol As₂S₃ toplam 10 mol elektron verir}. HNO₃ içindeki {us:N|5+} ise {us:N|2+}'ya 3e⁻ alır. Katsayılar 3 ve 10 ile eşitlendiğinde 3As₂S₃ + 10HNO₃ + {koyu:4}H₂O → 6H₃AsO₄ + 9S + 10NO olur; H₂O'nun katsayısı {koyu:4}'tür."
+    },
+    {
+      "soru": "P(k) + HNO₃(suda) + H₂O(s) → H₃PO₄(suda) + NO(g) tepkimesini yarı tepkime yöntemiyle denkleştiriniz.",
+      "cevap": "Yükseltgenme yarı tepkimesi {us:P|0} → H₃{us:P|5+}O₄ + 5e⁻ ve indirgenme yarı tepkimesi H{us:N|5+}O₃ + 3e⁻ → {us:N|2+}O şeklinde yazılır. Elektron sayılarını 15e⁻'de eşitlemek için ilk yarı tepkime 3 ile, ikinci yarı tepkime 5 ile çarpılıp toplanır: 3P + 5HNO₃ → 3H₃PO₄ + 5NO. Ürünlerde 9 H ve 17 O bulunduğundan girenlerdeki H₂O'nun önüne 2 yazılarak {koyu:3P + 5HNO₃ + 2H₂O → 3H₃PO₄ + 5NO} elde edilir."
+    },
+    {
+      "soru": "Bi(k) + H₂SO₄(suda) → Bi₂(SO₄)₃(suda) + SO₂(g) + H₂O(s) tepkimesini en küçük tam sayılarla denkleştirerek H₂SO₄'ün katsayısını bulunuz.",
+      "cevap": "Bizmut {us:Bi|0}'dan Bi₂(SO₄)₃ içindeki {us:Bi|3+}'ya yükseltgenir (1 Bi atomu 3e⁻ verir). Kükürt ise H₂SO₄ içindeki {us:S|6+}'dan SO₂ içindeki {us:S|4+}'ya indirgenir (1 S atomu 2e⁻ alır). Elektron denkliği için Bi 2 ile (Bi₂(SO₄)₃ katsayısı 1), SO₂ ise 3 ile çarpılır (6e⁻). Ürünlerde toplam 3 (tuzda) + 3 (SO₂'de) = 6 tane S atomu bulunduğundan H₂SO₄'ün katsayısı {koyu:6}, H₂O'nun katsayısı da 6 olur: {koyu:2Bi + 6H₂SO₄ → Bi₂(SO₄)₃ + 3SO₂ + 6H₂O}."
+    },
+    {
+      "soru": "Cu(k) / {us:Cu|2+}(suda) ve Ag(k) / {us:Ag|+}(suda) yarı hücrelerinden ve KNO₃ tuz köprüsünden oluşan bir galvanik hücrede Cu elektrot anot, Ag elektrot katottur. Pil çalışırken zamanla elektrot kütlelerinde, iyon derişimlerinde ve tuz köprüsündeki iyon göçünde hangi değişimler gerçekleşir?",
+      "cevap": "Anotta Cu(k) → {us:Cu|2+}(suda) + 2e⁻ yükseltgenmesi olduğundan {koyu:Cu elektrodun kütlesi azalır ve [{us:Cu|2+}] derişimi artar}. Katotta {us:Ag|+}(suda) + e⁻ → Ag(k) indirgenmesi olduğundan {koyu:Ag elektrodun kütlesi artar ve [{us:Ag|+}] derişimi azalır}. Dış devrede elektronlar Cu'dan Ag'ye akarken, tuz köprüsündeki {koyu:{us:NO₃|−} anyonları anot (Cu) kabına}, {koyu:{us:K|+} katyonları ise katot (Ag) kabına} göç eder."
+    },
+    {
+      "soru": "Standart Hidrojen Elektrot (SHE) hangi bileşenlerden oluşur, standart potansiyeli kaç volttur ve neden referans elektrot olarak kullanılır?",
+      "cevap": "Yarı pil tepkimeleri tek başına gerçekleşemediğinden yarı hücre potansiyellerini ölçmek için referans bir elektroda ihtiyaç duyulur. {koyu:Standart Hidrojen Elektrot (SHE)}; 25 °C sıcaklıkta {koyu:1 M {us:H|+} iyonu içeren asit çözeltisine daldırılmış inert bir platin (Pt) elektrot} ve çözeltiye {koyu:1 atm basınçta gönderilen H₂ gazından} oluşur. Tıpkı deniz seviyesinin 0 m kabul edilmesi gibi SHE'nin standart yükseltgenme ve indirgenme potansiyeli {koyu:E° = 0,00 V} kabul edilmiştir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "KClO₃(k) + SO₂(g) + H₂O(s) → KCl(suda) + H₂SO₄(suda) redoks tepkimesi en küçük tam sayılarla denkleştirildiğinde SO₂ ve H₂O bileşiklerinin katsayıları sırasıyla aşağıdakilerden hangisi olur?",
+      "secenekler": [
+        "3 ve 3",
+        "2 ve 2",
+        "3 ve 2",
+        "1 ve 1",
+        "6 ve 3"
+      ],
+      "dogru": 0,
+      "aciklama": "KClO₃'teki {us:Cl|5+} atomu KCl'deki {us:Cl|−}'ye 6e⁻ alarak indirgenir; SO₂'deki {us:S|4+} ise H₂SO₄'teki {us:S|6+}'ya 2e⁻ vererek yükseltgenir. Elektron eşitliği için SO₂ ve H₂SO₄ 3 ile çarpılır; H denkliği için H₂O'nun katsayısı da 3 olur: 3SO₂ + KClO₃ + 3H₂O → 3H₂SO₄ + KCl."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Zn / ZnSO₄ ve Cu / CuSO₄ yarı hücrelerinden oluşan bir Daniell pilinde (Zn anot, Cu katot) pil çalışırken aşağıdakilerden hangisi gerçekleşmez?",
+      "secenekler": [
+        "Dış devrede elektronlar Zn elektrottan Cu elektroda doğru akar.",
+        "Tuz köprüsündeki katyonlar Zn elektrodun bulunduğu anot bölmesine göç eder.",
+        "Zamanla Zn elektrodun kütlesi azalırken Cu elektrodun kütlesi artar.",
+        "Anot bölmesindeki {us:Zn|2+} iyon derişimi zamanla artar.",
+        "Pil potansiyeli zamanla azalır."
+      ],
+      "dogru": 1,
+      "aciklama": "Tuz köprüsündeki anyonlar (−) anot bölmesine (Zn kabına), katyonlar (+) ise katot bölmesine (Cu kabına) göç eder; katyonların anoda geçtiği ifadesi yanlıştır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki tepkimelerden hangisi bir indirgenme-yükseltgenme (redoks) tepkimesi değildir?",
+      "secenekler": [
+        "KClO₃(k) → KCl(k) + {kesir:3|2}O₂(g)",
+        "Cu(k) + 2H₂SO₄(suda) → CuSO₄(suda) + SO₂(g) + 2H₂O(s)",
+        "CaCO₃(k) → CaO(k) + CO₂(g)",
+        "3H₂S(suda) + 2HNO₃(suda) → 3S(k) + 2NO(g) + 4H₂O(s)",
+        "Zn(k) + {us:Cu|2+}(suda) → {us:Zn|2+}(suda) + Cu(k)"
+      ],
+      "dogru": 2,
+      "aciklama": "CaCO₃(k) → CaO(k) + CO₂(g) tepkimesinde Ca (+2), C (+4) ve O (−2) elementlerinin hiçbirinin yükseltgenme basamağı değişmemiştir; bu nedenle redoks tepkimesi değildir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir elektrokimyasal hücrede indirgenme-yükseltgenme tepkimesine doğrudan katılmayan, yalnızca elektrik akımını (elektronları) iletmek amacıyla kullanılan platin (Pt), altın (Au) veya grafit çubuklara ne ad verilir?",
+      "secenekler": [
+        "Elektrolit",
+        "Tuz köprüsü",
+        "Yarı hücre",
+        "İnert elektrot",
+        "Anyon"
+      ],
+      "dogru": 3,
+      "aciklama": "Tepkimeye girmeyip yalnızca elektron iletimini sağlayan platin, altın ve grafit gibi etkisiz maddelere inert elektrot denir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Başladıktan sonra dışarıdan bir etki olmaksızın kendiliğinden gerçekleşen istemli redoks tepkimelerinde kimyasal enerji elektrik enerjisine dönüşür.",
+          "dogru": true,
+          "aciklama": "Doğru. Galvanik hücrelerde (pillerde) gerçekleşen istemli redoks tepkimeleri kimyasal enerjiyi elektrik enerjisine çevirir."
+        },
+        {
+          "metin": "Galvanik bir hücrede yükseltgenme olayı katotta, indirgenme olayı ise anotta gerçekleşir.",
+          "dogru": false,
+          "aciklama": "Yanlış. Her zaman yükseltgenme anotta, indirgenme ise katotta gerçekleşir."
+        },
+        {
+          "metin": "Bir beherglastaki CuSO₄ çözeltisine Zn çubuk doğrudan batırıldığında elektron alışverişi aynı kapta doğrudan temasla gerçekleşir.",
+          "dogru": true,
+          "aciklama": "Doğru. Aynı kapta doğrudan temasla gerçekleşen bu redoks tepkimesinde dış devre olmadığı için elektrik akımı elde edilmez."
+        },
+        {
+          "metin": "Standart Hidrojen Elektrodun (SHE) 25 °C sıcaklık, 1 M {us:H|+} derişimi ve 1 atm H₂ basıncındaki potansiyeli 1,00 V olarak kabul edilmiştir.",
+          "dogru": false,
+          "aciklama": "Yanlış. Referans elektrot olan Standart Hidrojen Elektrodun (SHE) standart potansiyeli E° = 0,00 V kabul edilmiştir."
+        },
+        {
+          "metin": "Tuz köprüsü, anot ve katot yarı hücrelerinin yük denkliğini koruyarak devrenin tamamlanmasını sağlar.",
+          "dogru": true,
+          "aciklama": "Doğru. Tuz köprüsündeki anyonlar anoda, katyonlar katoda göç ederek yük denkliğini korur."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki elektrokimyasal kavramları tanımlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Anot (− kutup)",
+          "Galvanik hücrede yükseltgenmenin gerçekleştiği ve elektronların çıktığı elektrot"
+        ],
+        [
+          "Katot (+ kutup)",
+          "Galvanik hücrede indirgenmenin gerçekleştiği ve elektronların ulaştığı elektrot"
+        ],
+        [
+          "Elektrolit",
+          "Serbest iyonlar içererek elektrik akımını ileten sulu çözelti"
+        ],
+        [
+          "Tuz köprüsü",
+          "İçinde doygun tuz çözeltisi bulunan ve yarı hücrelerde yük denkliğini koruyan U borusu"
+        ],
+        [
+          "Standart Hidrojen Elektrot (SHE)",
+          "Potansiyeli 0,00 V kabul edilen referans elektrot (1 M {us:H|+}}, 1 atm H₂, Pt)"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir metalin kendi katyonunu içeren çözeltiye daldırılması ile hazırlanan düzeneğe ___ hücre denir.",
+          "cevap": "yarı"
+        },
+        {
+          "metin": "İki yarı hücrenin iletken tel ve tuz köprüsüyle bağlanmasıyla oluşturulan elektrokimyasal pile ___ hücre adı verilir.",
+          "cevap": "galvanik"
+        },
+        {
+          "metin": "Galvanik bir hücrede dış devredeki elektron akışı her zaman ___ kutbundan katot kutbuna doğrudur.",
+          "cevap": "anot"
+        },
+        {
+          "metin": "Kendiliğinden gerçekleşmeyen ve dışarıdan elektrik enerjisi harcanarak yürütülen tepkimelere ___ tepkime denir.",
+          "cevap": "istemsiz"
+        }
+      ],
+      "fazla": [
+        "katot",
+        "yalıtkan"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Verilen 1 M CuSO₄ çözeltisi bulunan tek bir beherglasa Zn çubuk daldırılması ile Zn/ZnSO₄ ve Cu/CuSO₄ yarı hücrelerinin iletken tel ve tuz köprüsüyle bağlanması (Daniell pili) arasındaki temel farkı elektron aktarımı ve enerji dönüşümü açısından açıklayınız.",
+      "cevap": "Her iki düzenekte de gerçekleşen istemli redoks tepkimesi {koyu:Zn(k) + {us:Cu|2+}(suda) → {us:Zn|2+}(suda) + Cu(k)} olup Zn yükseltgenir, {us:Cu|2+} indirgenir. Ancak tek beherglasta Zn çubuk doğrudan CuSO₄ çözeltisine batırıldığında elektron alışverişi {koyu:doğrudan temasla} çözelti içinde gerçekleşir ve kimyasal enerji yalnızca ısıya dönüşür; elektrik akımı elde edilemez. {koyu:Daniell pilinde} ise yükseltgenme (anot: Zn) ve indirgenme (katot: Cu) iki ayrı yarı hücreye ayrılmıştır; elektronlar dış devredeki {koyu:iletken tel üzerinden anottan katoda} akarken kullanılabilir {koyu:elektrik enerjisi} üretilir, {koyu:tuz köprüsü} ise anyonları anoda ve katyonları katoda göndererek yük denkliğini korur.",
+      "ipuclari": [
+        "Her iki düzenekte de gerçekleşen net redoks tepkimesi (Zn + {us:Cu|2+} → {us:Zn|2+} + Cu) aynı mıdır?",
+        "Tek kapta elektronlar Zn'den {us:Cu|2+} iyonlarına nasıl geçer; Daniell pilinde ise hangi yolu izler?",
+        "Tuz köprüsü kaldırılırsa Daniell pilinde elektrik üretimi neden durur?"
+      ]
+    }
+  ],
+  "kazanim": "12.1.2.1. Elektrot ve elektrokimyasal hücre kavramlarını açıklar."
 }

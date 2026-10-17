@@ -142,7 +142,7 @@ def gorsel_4():
 def gorsel_5():
     """Muda'af ve Sâlim Fiil Örnekleri"""
     W, H = 720, 320
-    s = _baslik(W, H, "MUDA'AF & SÂLİM", "Muda'af (المُضَعَّف) ve Sâlim (السَّالِم) Fiil Örnekleri", RENK["lacivert"])
+    s = _baslik(W, H, "MUDA'AF &amp; SÂLİM", "Muda'af (المُضَعَّف) ve Sâlim (السَّالِم) Fiil Örnekleri", RENK["lacivert"])
     boxes = [
         ("المُضَعَّف (Muda'af Fiiller)", "2. ve 3. harfi aynı olup şeddelenenler", [
             ("مَدَّ (أَصْلُهُ: مَدَدَ)", "medde — uzattı"),

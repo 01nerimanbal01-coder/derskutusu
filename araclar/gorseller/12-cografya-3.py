@@ -90,7 +90,7 @@ def gorsel_3():
     s += _kutu(380, 52, 340, 185, "#f0fdf4", "#16a34a", "SAKİN ŞEHİR (CITTASLOW) HAREKETİ", [
         "• 1999'da İtalya'da doğan; hızlı tüketim ve küreselleşmeye",
         "  karşı yerel kimliği, geleneksel mimariyi, organik tarımı",
-        "  ve yaşam kalitesini koruyan şehirler ağıdır (Nüfus < 50.000).",
+        "  ve yaşam kalitesini koruyan şehirler ağıdır (Nüfus &lt; 50.000).",
         "• Türkiye'nin İlk Sakin Şehri: SEFERİHİSAR (İzmir - 2009).",
         "• Diğer Örnekler: Akyaka, Gökçeada, Vize, Perşembe,",
         "  Halfeti, Şavşat, Eğirdir, Uzundere, Ahlat, Foça, Safranbolu."

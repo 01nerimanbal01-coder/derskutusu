@@ -19,122 +19,104 @@ def _kart(x, y, w, h, baslik, satirlar, renk="#059669", bg="#ECFDF5"):
     return b
 
 
+def _bant(y, b, m, r, bg):
+    return (
+        f'<rect x="25" y="{y}" width="630" height="42" rx="8" fill="{bg}" stroke="{r}" stroke-width="1.5"/>'
+        f'<text x="40" y="{y+16}" font-size="11" font-weight="bold" fill="{r}">{b}</text>'
+        f'<text x="40" y="{y+33}" font-size="10.5" fill="#1E293B">{m}</text>'
+    )
+
+
 def gorsel_1():
     w, h = 680, 250
-    ic = (
-        '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">'
-        'HZ. PEYGAMBER (S.A.V.) DÖNEMİNDE TEFSİR VE BEYAN GÖREVİ</text>'
-    )
-    ic += _kart(20, 44, 310, 190, "İLK MÜFESSİR: HZ. MUHAMMED (S.A.V.)", [
-        "• Nahl Suresi 44. Ayet: 'İnsanlara, kendilerine",
-        "  indirileni açıklayasın (li-tübeyyine) diye sana da",
-        "  Zikr'i (Kur'an'ı) indirdik.'",
-        "• Sahabiler ana dilleri Arapça olduğu için ayetlerin",
-        "  çoğunu doğrudan anlıyor; yalnızca kapalı veya",
-        "  hüküm içeren ayetleri Hz. Peygamber'e soruyorlardı.",
-        "• Bu dönemde Kur'an baştan sona değil, ihtiyaç kadar tefsir edildi."
+    ic = '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">HZ. PEYGAMBER VE SAHABE DÖNEMİNDE TEFSİRİN KAYNAKLARI</text>'
+    ic += _kart(20, 44, 310, 190, "HZ. PEYGAMBER\'İN TEBYÎN GÖREVİ", [
+        "• Kur'an-ı Kerim'in ilk ve en yetkin müfessiri bizzat",
+        "  Hz. Muhammed'dir (s.a.v.) (Nahl Suresi, 44).",
+        "• Mücmel (kapalı/özet) ayetleri açıklamış (namaz, hac).",
+        "• Umum bildiren ayetleri tahsis etmiş (Zulüm -> Şirk).",
+        "• Müşkil (anlaşılması güç) lafızları beyan etmiştir",
+        "  (Beyaz ve siyah iplik -> Fecrin aydınlığı ve gece)."
     ], "#059669", "#ECFDF5")
-    ic += _kart(350, 44, 310, 190, "TEFSİRü'N-NEBİ'NİN DÖRT BEYAN ŞEKLİ", [
-        "1. Mücmeli Tebyin: Namaz, hac, zekat gibi özlü emirlerin",
-        "   uygulanışını bizzat göstererek açıklaması.",
-        "2. Müphemi Tayin: 'Orta namaz' -> İkindi namazı;",
-        "   'Zulüm' -> Şirk (Lokman, 13) olarak açıklaması.",
-        "3. Umumun Tahsisi: Genel hükmün istisnasını bildirmesi.",
-        "4. Müşkili Tavzih: 'Ak iplik - kara iplik' ifadesini",
-        "   fecrin aydınlığı ve gecenin karanlığı olarak açıklaması."
+    ic += _kart(350, 44, 310, 190, "SAHABE TEFSİRİNİN 4 TEMEL KAYNAĞI", [
+        "1. Kur'an'ın Kur'an'la Tefsiri (En sağlam kaynak).",
+        "2. Hz. Peygamber'in Sünneti ve Hadisleri.",
+        "3. Sahabenin İçtihadı ve Rey (Akıl yürütme) gücü.",
+        "4. Arap Dili, Cahiliye Şiiri ve Esbâb-ı Nüzûl bilgisi.",
+        "• Öne çıkan 4 büyük müfessir sahabi: Abdullah b. Abbas,",
+        "  Abdullah b. Mes'ud, Hz. Ali ve Übey b. Kâ'b."
     ], "#2563EB", "#EFF6FF")
     return _svg(w, h, ic)
-
 
 def gorsel_2():
     w, h = 680, 250
-    ic = (
-        '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">'
-        'SAHABE DÖNEMİNDE TEFSİR KAYNAKLARI VE ÖNDE GELEN MÜFESSİR SAHABİLER</text>'
-    )
-    ic += _kart(20, 44, 310, 190, "SAHABENİN DÖRT TEFSİR KAYNAĞI", [
-        "1. Kur'an'ın Kur'an ile Tefsiri (En güvenilir kaynak).",
-        "2. Hz. Peygamber'in (s.a.v.) Sünneti ve açıklamaları.",
-        "3. İçtihat ve Kuvvetli Arap Dili / Şiiri Bilgisi",
-        "   (Esbab-ı nüzule bizzat şahit olmalarının avantajı).",
-        "4. Ehl-i Kitap Kültüründen (İsrâiliyyât) Sınırlı Bilgiler",
-        "   (Yalnız kıssaların teferruatında, inanca aykırı olmayacak şekilde)."
+    ic = '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">SAHABE DÖNEMİNİN ÖNDE GELEN MÜFESSİRLERİ</text>'
+    ic += _kart(20, 44, 310, 190, "ABDULLAH B. ABBAS VE İBN MES\'UD", [
+        "• Abdullah b. Abbas (r.a.): Hz. Peygamber'in",
+        "  'Allah'ım ona dinde derin anlayış ver ve tevili öğret'",
+        "  duasına mazhar olmuştur. 'Tercümânü'l-Kur'an' ve",
+        "  'Habrü'l-Ümme' unvanlarıyla Mekke ekolünü kurdu.",
+        "• Abdullah b. Mes'ud (r.a.): İlk Müslümanlardan olup",
+        "  yetmişten fazla sureyi bizzat Resulullah'ın ağzından",
+        "  öğrenmiş ve Kûfe (Irak) tefsir ekolünü kurmuştur."
     ], "#7C3AED", "#F5F3FF")
-    ic += _kart(350, 44, 310, 190, "EN ÇOK TEFSİR RİVAYET EDEN SAHABİLER", [
-        "• Abdullah bin Abbas (r.a.): 'Tercümânü'l-Kur'an' ve",
-        "  'Habrü'l-Ümme' (Hz. Peygamber'in özel duasına mazhar).",
-        "• Abdullah bin Mes'ud (r.a.): Kûfe ekolünün kurucusu.",
-        "• Übey bin Ka'b (r.a.): Medine ekolünün ve kıraatin öncüsü.",
-        "• Hz. Ali (r.a.): Dört Halife içinde en çok rivayeti olan.",
-        "• Hz. Aişe, Zeyd bin Sabit, Ebu Musa el-Eş'ari ve",
-        "  Abdullah bin Ömer (r.a.)."
+    ic += _kart(350, 44, 310, 190, "ÜBEY B. KÂ\'B VE HZ. ALİ", [
+        "• Übey b. Kâ'b (r.a.): Vahiy kâtiplerinin önde geleni",
+        "  ve 'Seyyidü'l-Kurrâ' (Kârîlerin efendisi) unvanlı",
+        "  sahabidir; Medine tefsir ekolünün kurucusudur.",
+        "• Hz. Ali (r.a.): Hulefâ-yi Râşidîn içinde kendisinden",
+        "  en çok tefsir rivayeti nakledilen sahabidir; ayetlerin",
+        "  nerede ve ne zaman indiğini en iyi bilenlerdendir."
     ], "#D97706", "#FEF3C7")
     return _svg(w, h, ic)
 
-
 def gorsel_3():
     w, h = 680, 250
-    ic = (
-        '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">'
-        'TABİÎN DÖNEMİNDE ÜÇ BÜYÜK TEFSİR EKOLÜ (MEKKE, MEDİNE, KÛFE)</text>'
-    )
+    ic = '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">TÂBİÎN DÖNEMİ ÜÇ BÜYÜK TEFSİR MEDRESESİ (EKOLÜ)</text>'
     ic += _kart(20, 44, 205, 190, "1. MEKKE EKOLÜ", [
-        "• Sahabi Hocası:",
-        "  ABDULLAH BİN ABBAS",
-        "  (Tercümânü'l-Kur'an).",
-        "• Tabiîn Temsilcileri:",
-        "  - Mücahid bin Cebr",
-        "  - Said bin Cübeyr",
+        "• Kurucu Sahabi:",
+        "  Abdullah b. Abbas (r.a.)",
+        "• Tâbiîn Temsilcileri:",
+        "  - Mücâhid b. Cebr",
+        "  - Atâ b. Ebî Rebâh",
         "  - İkrime",
-        "  - Ata bin Ebi Rabah",
-        "  - Tavus bin Keysan."
+        "  - Saîd b. Cübeyr",
+        "  - Tâvûs b. Keysân"
     ], "#059669", "#ECFDF5")
     ic += _kart(237, 44, 205, 190, "2. MEDİNE EKOLÜ", [
-        "• Sahabi Hocası:",
-        "  ÜBEY BİN KA'B",
-        "  (Seyyidü'l-Kurrâ).",
-        "• Tabiîn Temsilcileri:",
-        "  - Ebu'l-Aliye er-Riyahi",
-        "  - Muhammed bin Ka'b",
-        "    el-Kurazi",
-        "  - Zeyd bin Eslem",
-        "• Rivayet ve kıraat ağırlıklıdır."
+        "• Kurucu Sahabi:",
+        "  Übey b. Kâ'b (r.a.)",
+        "• Tâbiîn Temsilcileri:",
+        "  - Ebu'l-Âliye er-Riyâhî",
+        "  - Muhammed b. Kâ'b el-Kurazî",
+        "  - Zeyd b. Eslem",
+        "• Sünnet ve kıraat mirasını",
+        "  titizlikle korumuştur."
     ], "#2563EB", "#EFF6FF")
     ic += _kart(455, 44, 205, 190, "3. KÛFE (IRAK) EKOLÜ", [
-        "• Sahabi Hocası:",
-        "  ABDULLAH BİN MES'UD.",
-        "• Tabiîn Temsilcileri:",
-        "  - Alkame bin Kays",
-        "  - Mesruk",
-        "  - Esved bin Yezid",
-        "  - İbrahim en-ehaî",
-        "  - Katâde ve Hasan-ı Basrî.",
-        "• Re'y ve fıkhi içtihat güçlüdür."
-    ], "#9333EA", "#FAF5FF")
+        "• Kurucu Sahabi:",
+        "  Abdullah b. Mes'ud (r.a.)",
+        "• Tâbiîn Temsilcileri:",
+        "  - Alkame b. Kays",
+        "  - Mesrûk b. Ecda'",
+        "  - Katâde b. Diâme",
+        "  - Hasan-ı Basrî",
+        "• Rey ve fıkhî tefsir güçlüdür."
+    ], "#7C3AED", "#F5F3FF")
     return _svg(w, h, ic)
-
 
 def gorsel_4():
-    w, h = 680, 250
-    ic = (
-        '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">'
-        'TEDVİN DÖNEMİNE GEÇİŞ VE İLK TAM KUR\'AN TEFSİRLERİ</text>'
-    )
+    w, h = 680, 260
+    ic = '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">TEFSİR TARİHİNİN GELİŞİM AŞAMALARI (ŞİFAHÎ DÖNEMDEN TEDVİNE)</text>'
     adimlar = [
-        ("1. ŞİFAHİ (SÖZLÜ) DÖNEMDEN YAZIYA GEÇİŞ", "Hz. Peygamber ve Sahabe döneminde şifahi olan tefsir, Tabiîn ve Etbau't-Tabiîn döneminde hadis babları içinde yazılmaya başlandı.", "#0891B2", "#ECFEFF"),
-        ("2. İLK TAM MUSHAF TEFSİRİ: MUKATİL BİN SÜLEYMAN (Ö. 150/767)", "'et-Tefsîru'l-Kebîr' adlı eseriyle Kur'an'ı Fatiha'dan Nas Suresine kadar baştan sona tefsir eden İLK müfessirdir.", "#059669", "#ECFDF5"),
-        ("3. DİL BİLİMSEL TEFSİR: FERRA VE EBU UBEYDE", "Ferra'nın 'Meâni'l-Kur'an' ve Ebu Ubeyde'nin 'Mecâzü'l-Kur'an' eserleri filolojik (dil bilimsel) tefsirin ilk örnekleridir.", "#D97706", "#FEF3C7"),
-        ("4. RİVAYET TEFSİRİNİN ZİRVESİ: TABERÎ (Ö. 310/923)", "İbn Cerîr et-Taberî'nin 'Câmiu'l-Beyân' (Taberî Tefsiri) adlı eseri klasik rivayet tefsirlerinin en büyük şaheseridir.", "#2563EB", "#EFF6FF")
+        ("1. HZ. PEYGAMBER DÖNEMİ (NÜZÛL VE TEBYÎN)", "Ayetlerin doğrudan vahyin muhatabı olan Resulullah (s.a.v.) tarafından sözlü ve uygulamalı olarak açıklanması.", "#059669", "#ECFDF5"),
+        ("2. SAHABE DÖNEMİ (NÜZÛL ORTAMINA ŞAHİTLİK)", "Ayetlerin iniş sebeplerini (esbâb-ı nüzûl) ve Arap dilinin inceliklerini bilen sahabilerin Kur'an'ı açıklaması.", "#2563EB", "#EFF6FF"),
+        ("3. TÂBİÎN DÖNEMİ (TEFSİR MEDRESELERİ VE GENİŞLEME)", "Mekke, Medine ve Kûfe ekollerinin kurulması; Kur'an'ın baştan sona tefsir edilmesi ve görüş ayrılıklarının başlaması.", "#7C3AED", "#F5F3FF"),
+        ("4. TEDVİN DÖNEMİ (YAZILI ESERLERE GEÇİŞ — HİCRİ 2. YÜZYIL)", "Şifahî (sözlü) nakillerin hadis cüzleri içinde ve ardından müstakil tefsir kitaplarında (Mukâtil, Taberî vb.) toplanması.", "#D97706", "#FEF3C7")
     ]
     for i, (b, m, r, bg) in enumerate(adimlar):
-        y = 44 + i * 48
-        ic += (
-            f'<rect x="25" y="{y}" width="630" height="40" rx="8" fill="{bg}" stroke="{r}" stroke-width="1.5"/>'
-            f'<text x="40" y="{y+16}" font-size="11" font-weight="bold" fill="{r}">{b}</text>'
-            f'<text x="40" y="{y+32}" font-size="10.5" fill="#1E293B">{m}</text>'
-        )
+        ic += _bant(44 + i * 50, b, m, r, bg)
     return _svg(w, h, ic)
-
 
 GORSELLER = {
     "b1": gorsel_1(),

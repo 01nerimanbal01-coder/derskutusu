@@ -1,214 +1,264 @@
 {
- "ad": "11-matematik-5",
- "sinif": 11,
- "ders": "matematik",
- "ders_adi": "Matematik",
- "hafta": 5,
- "tarih": "12-16 Ekim 2026",
- "yayin_tarihi": "2026-10-14",
- "unite": "SAYILAR VE NİCELİKLER",
- "konu": "Yönlü Açılar, Açı Ölçü Birimleri (Derece ve Radyan), Esas Ölçü ve Birim Çember",
- "ciktilar": [
-  "MAT.11.1.1.a — Yönlü açıları başlangıç kenarı, bitim kenarı ve dönme yönü (pozitif ve negatif yön) kavramlarıyla açıklar.",
-  "MAT.11.1.1.b — Açı ölçü birimleri olan derece (dakika, saniye) ve radyan arasındaki dönüşümleri yapar; verilen bir açının esas ölçüsünü hesaplar.",
-  "MAT.11.1.1.c — Analitik düzlemde birim çember denklemini (x² + y² = 1) oluşturarak yönlü açıların birim çember üzerindeki bitim noktası koordinatlarını (cos alfa, sin alfa) belirler."
- ],
- "giris": "Dönme dolabın kabinlerinin yerden yüksekliği, alternatif akımın gerilim dalgaları, kalp atışlarımızı gösteren EKG grafikleri ve gezegenlerin yörünge hareketleri belirli zaman aralıklarında kendini tekrar eden periyodik olaylardır. Geometride üçgenlerin iç açılarıyla sınırlı kaldığımızda 0° ile 180° arasındaki açılar yeterli olurken; dönme hareketlerini ve periyodik dalgaları modellemek için binlerce derecelik dönmeleri ve dönme yönünü tanımlamamız gerekir. Bu hafta trigonometrinin temelini oluşturan yönlü açıları, derece-radyan dönüşümlerini, esas ölçüyü ve birim çemberi öğreneceğiz.",
- "ozet": [
-  "Başlangıç noktaları ortak iki ışından birinin başlangıç kenarı, diğerinin bitim kenarı olarak alındığı açılara yönlü açı denir; saatin dönme yönünün tersi pozitif (+), saatin dönme yönü ise negatif (-) yöndür.",
-  "Bir tam çember yayının 360 eş parçasından birini gören merkez açıya 1 derece (1°), yarıçap uzunluğundaki yayı gören merkez açıya ise 1 radyan (1 rad) denir.",
-  "Derece ve radyan arasındaki temel dönüşüm bağıntısı D / 180 = R / pi şeklindedir; 180° = pi radyan ve 360° = 2.pi radyandır. Ayrıca 1° = 60' (dakika) = 3600'' (saniye) alt birimlerine ayrılır.",
-  "Bir yönlü açının [0°, 360°) veya [0, 2.pi) aralığındaki karşılığına o açının esas ölçüsü denir; esas ölçü hiçbir zaman negatif olamaz.",
-  "Analitik düzlemde merkezi başlangıç noktası O(0,0) ve yarıçapı r = 1 birim olan çembere birim çember denir ve denklemi x² + y² = 1 şeklindedir.",
-  "Standart konumdaki alfa açısının birim çemberi kestiği P(x, y) noktasının apsisi x = cos(alfa), ordinatı y = sin(alfa) olarak tanımlanır ve cos²(alfa) + sin²(alfa) = 1 özdeşliği her zaman sağlanır."
- ],
- "bolumler": [
-  {
-   "baslik": "Yönlü Açılar: Başlangıç Kenarı, Bitim Kenarı ve Açı Yönleri",
-   "metin": [
-    "Düzlemde başlangıç noktaları ortak olan iki ışının birleşimine açı denir. Bir açıyı oluşturan iki ışından biri {koyu:başlangıç kenarı}, diğeri ise {koyu:bitim kenarı} olarak seçildiğinde ve başlangıç kenarından bitim kenarına doğru olan dönme yönü belirtildiğinde elde edilen açıya {koyu:yönlü açı} adı verilir. Örneğin başlangıç noktası O, başlangıç kenarı [OA ve bitim kenarı [OB olan yönlü açı AOB açısı olarak adlandırılır.\n\nTrigonometri ve fizikte yönlü açıların dönme yönü evrensel bir kabulle ikiye ayrılır:\n1) {koyu:Pozitif (+) Yön}: Saatin yelkovanının dönme yönünün {koyu:tersi} olan yöndür.\n2) {koyu:Negatif (-) Yön}: Saatin yelkovanının dönme yönüyle {koyu:aynı} olan yöndür.\nAnalitik düzlemde köşesi orijinde O(0,0) ve başlangıç kenarı yatay Ox ekseninin pozitif kısmında bulunan yönlü açılara {koyu:standart konumdaki açılar} denir."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Kenarların Sırası Yönü Değiştirir",
-    "metin": "AOB yönlü açısında başlangıç kenarı [OA ve bitim kenarı [OB iken; BOA yönlü açısında başlangıç kenarı [OB ve bitim kenarı [OA olur. Bu iki açının mutlak büyüklüğü eşit ancak işaretleri (yönleri) birbirinin tersidir!"
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 310\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect x=\"10\" y=\"10\" width=\"740\" height=\"290\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"10\" width=\"740\" height=\"32\" rx=\"12\" fill=\"#2563eb\"/><rect x=\"10\" y=\"28\" width=\"740\" height=\"14\" fill=\"#2563eb\"/><text x=\"380.0\" y=\"31\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"13\" font-weight=\"700\">Yönlü Açılar: Başlangıç Kenarı, Bitim Kenarı ve Açı Yönleri</text><rect x=\"30\" y=\"55\" width=\"335\" height=\"230\" rx=\"10\" fill=\"#fff\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/><text x=\"197\" y=\"78\" text-anchor=\"middle\" fill=\"#16a34a\" font-size=\"12.5\" font-weight=\"700\">1. Pozitif (+) Yönlü Açı (Saat Yönünün Tersi)</text><line x1=\"85\" y1=\"210\" x2=\"295\" y2=\"210\" stroke=\"#1e293b\" stroke-width=\"2.5\"/><line x1=\"85\" y1=\"210\" x2=\"245\" y2=\"105\" stroke=\"#16a34a\" stroke-width=\"2.5\"/><path d=\"M165,210 A80,80 0 0,0 148,168\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2.5\"/><polygon points=\"145,165 156,169 149,176\" fill=\"#16a34a\"/><text x=\"220\" y=\"228\" fill=\"#1e293b\" font-size=\"10.5\" font-weight=\"700\">[OA (Başlangıç Kenarı)</text><text x=\"195\" y=\"102\" fill=\"#16a34a\" font-size=\"10.5\" font-weight=\"700\">[OB (Bitim Kenarı)</text><text x=\"197\" y=\"262\" text-anchor=\"middle\" fill=\"#15803d\" font-size=\"10.5\" font-weight=\"700\">Saatin dönme yönünün TERSİ (+) yöndür.</text><rect x=\"395\" y=\"55\" width=\"335\" height=\"230\" rx=\"10\" fill=\"#fff\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/><text x=\"562\" y=\"78\" text-anchor=\"middle\" fill=\"#dc2626\" font-size=\"12.5\" font-weight=\"700\">2. Negatif (-) Yönlü Açı (Saat Yönü)</text><line x1=\"450\" y1=\"120\" x2=\"660\" y2=\"120\" stroke=\"#1e293b\" stroke-width=\"2.5\"/><line x1=\"450\" y1=\"120\" x2=\"610\" y2=\"225\" stroke=\"#dc2626\" stroke-width=\"2.5\"/><path d=\"M530,120 A80,80 0 0,1 513,162\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.5\"/><polygon points=\"510,165 521,161 514,154\" fill=\"#dc2626\"/><text x=\"585\" y=\"110\" fill=\"#1e293b\" font-size=\"10.5\" font-weight=\"700\">[OA (Başlangıç Kenarı)</text><text x=\"570\" y=\"242\" fill=\"#dc2626\" font-size=\"10.5\" font-weight=\"700\">[OB (Bitim Kenarı)</text><text x=\"562\" y=\"262\" text-anchor=\"middle\" fill=\"#b91c1c\" font-size=\"10.5\" font-weight=\"700\">Saatin dönme yönüyle AYNI yön (-) yöndür.</text></svg>"
-  },
-  {
-   "baslik": "Açı Ölçü Birimleri: Derece, Dakika, Saniye ve Radyan",
-   "metin": [
-    "Bir açının ölçüsünü ifade etmek için günlük yaşamda ve bilimde en yaygın kullanılan iki birim {koyu:derece} ve {koyu:radyan} birimleridir.\n1) {koyu:Derece (D)}: Bir çemberin çevresi 360 eş parçaya bölündüğünde, bu eş yaylardan birini gören merkez açının ölçüsüne {koyu:1 derece (1°)} denir. Çok hassas astronomi, denizcilik ve harita ölçümlerinde derecenin alt birimleri olan {koyu:dakika (')} ve {koyu:saniye ('')} kullanılır: {koyu:1° = 60'} (altmış dakika) ve {koyu:1' = 60''} (altmış saniye) olup buradan {koyu:1° = 3600''} eşitliği elde edilir.\n\n2) {koyu:Radyan (R)}: Bir çemberde {koyu:yarıçap uzunluğuna (r) eşit uzunluktaki yayı} gören merkez açının ölçüsüne {koyu:1 radyan (1 rad)} denir. Bir çemberin tam çevresi C = 2 . pi . r olduğundan, tam çemberin içinde yarıçap uzunluğundan 2.pi tane vardır; dolayısıyla tam açı {koyu:360° = 2.pi radyan} ve doğru açı {koyu:180° = pi radyan} olur. Derece (D) ve radyan (R) arasında geçiş yapmak için {koyu:D / 180 = R / pi} temel dönüşüm orantısı kullanılır."
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "baslik": "En Sık Kullanılan Özel Açıların Radyan Karşılıkları",
-    "metin": "pi = 180° kabul ederek zihinden hızlıca dönüştürebilirsiniz:\n• 30° = pi / 6   • 45° = pi / 4   • 60° = pi / 3\n• 90° = pi / 2   • 120° = 2.pi / 3   • 135° = 3.pi / 4\n• 150° = 5.pi / 6   • 180° = pi   • 270° = 3.pi / 2   • 360° = 2.pi"
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 310\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect x=\"10\" y=\"10\" width=\"740\" height=\"290\" rx=\"12\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"10\" width=\"740\" height=\"32\" rx=\"12\" fill=\"#7c3aed\"/><rect x=\"10\" y=\"28\" width=\"740\" height=\"14\" fill=\"#7c3aed\"/><text x=\"380.0\" y=\"31\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"13\" font-weight=\"700\">Açı Ölçü Birimleri: Derece - Radyan Dönüşümü ve Alt Birimler</text><rect x=\"30\" y=\"55\" width=\"700\" height=\"58\" rx=\"10\" fill=\"#ede9fe\" stroke=\"#7c3aed\" stroke-width=\"1.6\"/><text x=\"380\" y=\"80\" text-anchor=\"middle\" fill=\"#5b21b6\" font-size=\"14\" font-weight=\"700\">Temel Dönüşüm Orantısı:   D / 180  =  R / pi     (Tam Çember: 360° = 2.pi radyan,  180° = pi radyan)</text><text x=\"380\" y=\"101\" text-anchor=\"middle\" fill=\"#4c1d95\" font-size=\"10.5\">Derece Alt Birimleri:  1° = 60' (dakika) = 3600'' (saniye)   |   1' = 60'' (saniye)</text><rect x=\"30\" y=\"130\" width=\"108\" height=\"150\" rx=\"10\" fill=\"#fff\" stroke=\"#0284c7\" stroke-width=\"1.5\"/><rect x=\"30\" y=\"130\" width=\"108\" height=\"28\" rx=\"10\" fill=\"#0284c7\"/><text x=\"84\" y=\"149\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"12\" font-weight=\"700\">30°</text><text x=\"84\" y=\"198\" text-anchor=\"middle\" fill=\"#0284c7\" font-size=\"13\" font-weight=\"700\">pi / 6 rad</text><text x=\"84\" y=\"245\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"9.5\">180° = pi</text><rect x=\"148\" y=\"130\" width=\"108\" height=\"150\" rx=\"10\" fill=\"#fff\" stroke=\"#0d9488\" stroke-width=\"1.5\"/><rect x=\"148\" y=\"130\" width=\"108\" height=\"28\" rx=\"10\" fill=\"#0d9488\"/><text x=\"202\" y=\"149\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"12\" font-weight=\"700\">45°</text><text x=\"202\" y=\"198\" text-anchor=\"middle\" fill=\"#0d9488\" font-size=\"13\" font-weight=\"700\">pi / 4 rad</text><text x=\"202\" y=\"245\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"9.5\">180° = pi</text><rect x=\"266\" y=\"130\" width=\"108\" height=\"150\" rx=\"10\" fill=\"#fff\" stroke=\"#16a34a\" stroke-width=\"1.5\"/><rect x=\"266\" y=\"130\" width=\"108\" height=\"28\" rx=\"10\" fill=\"#16a34a\"/><text x=\"320\" y=\"149\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"12\" font-weight=\"700\">60°</text><text x=\"320\" y=\"198\" text-anchor=\"middle\" fill=\"#16a34a\" font-size=\"13\" font-weight=\"700\">pi / 3 rad</text><text x=\"320\" y=\"245\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"9.5\">180° = pi</text><rect x=\"384\" y=\"130\" width=\"108\" height=\"150\" rx=\"10\" fill=\"#fff\" stroke=\"#d97706\" stroke-width=\"1.5\"/><rect x=\"384\" y=\"130\" width=\"108\" height=\"28\" rx=\"10\" fill=\"#d97706\"/><text x=\"438\" y=\"149\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"12\" font-weight=\"700\">90°</text><text x=\"438\" y=\"198\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"13\" font-weight=\"700\">pi / 2 rad</text><text x=\"438\" y=\"245\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"9.5\">180° = pi</text><rect x=\"502\" y=\"130\" width=\"108\" height=\"150\" rx=\"10\" fill=\"#fff\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><rect x=\"502\" y=\"130\" width=\"108\" height=\"28\" rx=\"10\" fill=\"#dc2626\"/><text x=\"556\" y=\"149\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"12\" font-weight=\"700\">180°</text><text x=\"556\" y=\"198\" text-anchor=\"middle\" fill=\"#dc2626\" font-size=\"13\" font-weight=\"700\">pi rad</text><text x=\"556\" y=\"245\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"9.5\">180° = pi</text><rect x=\"620\" y=\"130\" width=\"108\" height=\"150\" rx=\"10\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-width=\"1.5\"/><rect x=\"620\" y=\"130\" width=\"108\" height=\"28\" rx=\"10\" fill=\"#7c3aed\"/><text x=\"674\" y=\"149\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"12\" font-weight=\"700\">270°</text><text x=\"674\" y=\"198\" text-anchor=\"middle\" fill=\"#7c3aed\" font-size=\"13\" font-weight=\"700\">3.pi / 2 rad</text><text x=\"674\" y=\"245\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"9.5\">180° = pi</text></svg>"
-  },
-  {
-   "baslik": "Yönlü Bir Açının Esas Ölçüsünün Bulunması",
-   "metin": [
-    "Bir dönme hareketinde çember etrafında birden fazla tam tur (360° veya 2.pi radyan) atıldığında açının bitim kenarı yine aynı konuma gelir. k bir tam sayı olmak üzere, ölçüsü beta olan bir açının {koyu:beta = alfa + k . 360°} (veya radyan cinsinden {koyu:beta = alfa + k . 2.pi}) yazılışında {koyu:0° <= alfa < 360°} (veya {koyu:0 <= alfa < 2.pi}) şartını sağlayan alfa açısına verilen açının {koyu:esas ölçüsü} denir. Esas ölçü bitim kenarının çember üzerindeki gerçek konumunu gösterir ve {koyu:asla negatif olamaz}!\n\nEsas ölçüyü bulmak için üç pratik kural uygulanır:\n1) {koyu:Pozitif Derecelerde}: Verilen açı 360°'ye bölünür; bölme işlemindeki {koyu:kalan} doğrudan esas ölçüdür.\n2) {koyu:Negatif Derecelerde}: Açının mutlak değeri (pozitifmiş gibi) 360°'ye bölünür; bulunan kalan {koyu:360°'den çıkarılır} (veya negatif açıya pozitif olana kadar 360°'nin katları eklenir).\n3) {koyu:Radyan Cinsinden Kesirli Açılarda ((A . pi) / B)}: Paydaki sayı (A), {koyu:paydanın 2 katına (2B)} bölünür! Bulunan kalan (K), pi'nin yeni katsayısı olarak paya yazılır ve eski payda (B) aynen korunur: {koyu:(K . pi) / B}. Eğer açı negatif ise bulunan kesir 2.pi'den çıkarılır."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "Radyanda Bölen Neden Paydanın 2 Katıdır (2B)?",
-    "metin": "Çünkü tam çember pi değil, 2.pi radyandır! Örneğin 19.pi / 4 açısında 2.pi'nin katlarını (8.pi / 4'ün katlarını) atmak için 19'u 4'e değil, 4'ün iki katı olan 8'e böleriz: 19 = 2 . 8 + 3 olduğundan kalan 3'tür ve esas ölçü 3.pi / 4 olur."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 310\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect x=\"10\" y=\"10\" width=\"740\" height=\"290\" rx=\"12\" fill=\"#f0fdfa\" stroke=\"#0d9488\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"10\" width=\"740\" height=\"32\" rx=\"12\" fill=\"#0d9488\"/><rect x=\"10\" y=\"28\" width=\"740\" height=\"14\" fill=\"#0d9488\"/><text x=\"380.0\" y=\"31\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"13\" font-weight=\"700\">Açının Esas Ölçüsü: [0°, 360°) ve [0, 2.pi) Aralığına İndirgeme</text><rect x=\"28\" y=\"58\" width=\"224\" height=\"225\" rx=\"10\" fill=\"#ccfbf1\" stroke=\"#0d9488\" stroke-width=\"1.6\"/><rect x=\"28\" y=\"58\" width=\"224\" height=\"28\" rx=\"10\" fill=\"#0d9488\"/><text x=\"140\" y=\"77\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"11\" font-weight=\"700\">1. Pozitif Derecede Esas Ölçü</text><text x=\"140\" y=\"112\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">Açı 360°'ye bölünür; kalan</text><text x=\"140\" y=\"130\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">değer esas ölçüdür:</text><text x=\"140\" y=\"156\" text-anchor=\"middle\" fill=\"#0d9488\" font-size=\"10\" font-weight=\"700\">alfa = beta + k . 360° (0° &lt;= alfa &lt; 360°)</text><rect x=\"40\" y=\"180\" width=\"200\" height=\"82\" rx=\"8\" fill=\"#fff\" stroke=\"#0d9488\"/><text x=\"140\" y=\"225\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\" font-weight=\"700\">Örnek: 1120° = 3 . 360° + 40° => 40°</text><rect x=\"268\" y=\"58\" width=\"224\" height=\"225\" rx=\"10\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><rect x=\"268\" y=\"58\" width=\"224\" height=\"28\" rx=\"10\" fill=\"#dc2626\"/><text x=\"380\" y=\"77\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"11\" font-weight=\"700\">2. Negatif Derecede Esas Ölçü</text><text x=\"380\" y=\"112\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">Mutlak değerce 360°'ye bölünür;</text><text x=\"380\" y=\"130\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">kalan 360°'den çıkarılır!</text><text x=\"380\" y=\"156\" text-anchor=\"middle\" fill=\"#dc2626\" font-size=\"10\" font-weight=\"700\">Örnek: -800° -> 800 = 2.360 + 80</text><rect x=\"280\" y=\"180\" width=\"200\" height=\"82\" rx=\"8\" fill=\"#fff\" stroke=\"#dc2626\"/><text x=\"380\" y=\"225\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\" font-weight=\"700\">Esas ölçü: 360° - 80° = 280°</text><rect x=\"508\" y=\"58\" width=\"224\" height=\"225\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><rect x=\"508\" y=\"58\" width=\"224\" height=\"28\" rx=\"10\" fill=\"#2563eb\"/><text x=\"620\" y=\"77\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"11\" font-weight=\"700\">3. Radyan Cinsinden (A . pi / B)</text><text x=\"620\" y=\"112\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">Pay (A), paydanın 2 katına (2B)</text><text x=\"620\" y=\"130\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\">bölünür; kalan paya yazılır!</text><text x=\"620\" y=\"156\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"10\" font-weight=\"700\">Örnek: 23.pi / 4 -> 23 : 8 => Kalan 7</text><rect x=\"520\" y=\"180\" width=\"200\" height=\"82\" rx=\"8\" fill=\"#fff\" stroke=\"#2563eb\"/><text x=\"620\" y=\"225\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10.2\" font-weight=\"700\">Esas ölçü: 7.pi / 4 radyan</text></svg>"
-  },
-  {
-   "baslik": "Analitik Düzlemde Birim Çember ve Denklemi",
-   "metin": [
-    "Analitik düzlemde merkezi başlangıç noktası olan {koyu:orijinde O(0, 0)} bulunan ve yarıçapı {koyu:r = 1 birim} olan çembere {koyu:birim çember} (veya trigonometrik çember) denir. Birim çember eksenleri dört ana noktada keser: A(1, 0), B(0, 1), A'(-1, 0) ve B'(0, -1).\n\nBirim çember üzerinde alınan herhangi bir {koyu:P(x, y)} noktasının orijine olan uzaklığı her zaman yarıçapa yani 1 birime eşittir. P noktasından x eksenine dikme indirildiğinde oluşan dik üçgende dik kenarlar |x| ve |y|, hipotenüs ise 1 birimdir. Pisagor teoremi uygulandığında birim çemberin denklemi {koyu:x² + y² = 1} olarak elde edilir. Dolayısıyla bir (x, y) noktasının birim çember üzerinde bulunabilmesi için koordinatlarının kareleri toplamının mutlaka {koyu:1'e eşit olması} gerekir."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Birim Çember Üzerindeki Noktaların Sınırları",
-    "metin": "x² + y² = 1 denklemini sağlayan hiçbir gerçek (x, y) noktasının apsisi veya ordinatı 1'den büyük veya -1'den küçük olamaz: -1 <= x <= 1 ve -1 <= y <= 1."
-   }
-  },
-  {
-   "baslik": "Birim Çember Üzerinde Kosinüs ve Sinüs Eksenleri",
-   "metin": [
-    "Standart konumdaki pozitif yönlü bir {koyu:alfa} açısının bitim kenarının birim çemberi kestiği nokta {koyu:P(x, y)} olsun. Trigonometride bu P noktasının birinci bileşenine (apsisine) alfa açısının {koyu:kosinüsü}, ikinci bileşenine (ordinatına) ise alfa açısının {koyu:sinüsü} denir. Bu nedenle yatay Ox ekseni {koyu:kosinüs ekseni}, dikey Oy ekseni ise {koyu:sinüs ekseni} olarak adlandırılır ve bitim noktası {koyu:P(cos(alfa), sin(alfa))} şeklinde gösterilir.\n\nx = cos(alfa) ve y = sin(alfa) değerlerini birim çember denklemi olan x² + y² = 1 içinde yerine yazdığımızda, trigonometrinin en temel özdeşliği olan {koyu:cos²(alfa) + sin²(alfa) = 1} bağıntısına ulaşırız. Ayrıca analitik düzlemin dört bölgesindeki işaretlere göre; 1. bölgede (0° < alfa < 90°) hem cos hem sin pozitif (+, +); 2. bölgede (90° < alfa < 180°) cos negatif, sin pozitif (-, +); 3. bölgede (180° < alfa < 270°) her ikisi de negatif (-, -) ve 4. bölgede (270° < alfa < 360°) cos pozitif, sin negatif (+, -) işaretlidir."
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "baslik": "Negatif Açının Bitim Noktası",
-    "metin": "Bir P noktasının koordinatlarını P(cos(alfa), sin(alfa)) olarak yazabilmemiz için alfa açısının Ox ekseninin pozitif yönünden başlayarak POZİTİF YÖNDE taranmış esas ölçü olması gerekir."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 320\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect x=\"10\" y=\"10\" width=\"740\" height=\"300\" rx=\"12\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"10\" width=\"740\" height=\"32\" rx=\"12\" fill=\"#d97706\"/><rect x=\"10\" y=\"28\" width=\"740\" height=\"14\" fill=\"#d97706\"/><text x=\"380.0\" y=\"31\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"13\" font-weight=\"700\">Birim Çember (x² + y² = 1) ve P(cos alfa, sin alfa) Noktası</text><rect x=\"30\" y=\"52\" width=\"330\" height=\"242\" rx=\"10\" fill=\"#fff\" stroke=\"#fcd34d\" stroke-width=\"1.5\"/><line x1=\"75\" y1=\"175\" x2=\"315\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"195\" y1=\"65\" x2=\"195\" y2=\"280\" stroke=\"#64748b\" stroke-width=\"1.5\"/><circle cx=\"195\" cy=\"175\" r=\"82\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><line x1=\"195\" y1=\"175\" x2=\"258\" y2=\"122\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><line x1=\"258\" y1=\"122\" x2=\"258\" y2=\"175\" stroke=\"#16a34a\" stroke-width=\"1.5\" stroke-dasharray=\"4,2\"/><circle cx=\"258\" cy=\"122\" r=\"4.5\" fill=\"#dc2626\"/><text x=\"266\" y=\"116\" fill=\"#dc2626\" font-size=\"10.5\" font-weight=\"700\">P(cos a, sin a)</text><text x=\"283\" y=\"189\" fill=\"#1e293b\" font-size=\"9.5\">A(1,0)</text><text x=\"160\" y=\"89\" fill=\"#1e293b\" font-size=\"9.5\">B(0,1)</text><text x=\"77\" y=\"189\" fill=\"#1e293b\" font-size=\"9.5\">A'(-1,0)</text><text x=\"201\" y=\"271\" fill=\"#1e293b\" font-size=\"9.5\">B'(0,-1)</text><rect x=\"380\" y=\"52\" width=\"350\" height=\"242\" rx=\"10\" fill=\"#fff\" stroke=\"#fcd34d\" stroke-width=\"1.5\"/><text x=\"555\" y=\"75\" text-anchor=\"middle\" fill=\"#92400e\" font-size=\"12\" font-weight=\"700\">Birim Çemberin Temel Bağıntıları</text><rect x=\"394\" y=\"90\" width=\"322\" height=\"40\" rx=\"6\" fill=\"#fffbeb\" stroke=\"#f59e0b\"/><text x=\"404\" y=\"106\" fill=\"#b45309\" font-size=\"10.5\" font-weight=\"700\">1. Birim Çember Denklemi:</text><text x=\"404\" y=\"122\" fill=\"#1e293b\" font-size=\"9.8\">Merkezi O(0,0) ve yarıçapı r = 1 br olan çember: x² + y² = 1</text><rect x=\"394\" y=\"138\" width=\"322\" height=\"40\" rx=\"6\" fill=\"#fffbeb\" stroke=\"#f59e0b\"/><text x=\"404\" y=\"154\" fill=\"#b45309\" font-size=\"10.5\" font-weight=\"700\">2. Bitim Noktası Koordinatları:</text><text x=\"404\" y=\"170\" fill=\"#1e293b\" font-size=\"9.8\">P(x, y) = P(cos(alfa), sin(alfa)) -> Apsis = cos, Ordinat = sin</text><rect x=\"394\" y=\"186\" width=\"322\" height=\"40\" rx=\"6\" fill=\"#fffbeb\" stroke=\"#f59e0b\"/><text x=\"404\" y=\"202\" fill=\"#b45309\" font-size=\"10.5\" font-weight=\"700\">3. Temel Pisagor Özdeşliği:</text><text x=\"404\" y=\"218\" fill=\"#1e293b\" font-size=\"9.8\">cos²(alfa) + sin²(alfa) = 1   (-1 &lt;= sin(alfa), cos(alfa) &lt;= 1)</text><rect x=\"394\" y=\"234\" width=\"322\" height=\"40\" rx=\"6\" fill=\"#fffbeb\" stroke=\"#f59e0b\"/><text x=\"404\" y=\"250\" fill=\"#b45309\" font-size=\"10.5\" font-weight=\"700\">4. Bölgelerde İşaretler (A-S-T-C):</text><text x=\"404\" y=\"266\" fill=\"#1e293b\" font-size=\"9.8\">1. Bölge (+,+), 2. Bölge (-,+), 3. Bölge (-,-), 4. Bölge (+,-)</text></svg>"
-  },
-  {
-   "baslik": "Yönlü Açılar ve Birim Çemberin Mühendislik Uygulamaları",
-   "metin": [
-    "Yönlü açılar, radyan birimi ve birim çember; robot kollarının eklem dönüş açılarının programlanmasında, uçak ve gemi navigasyon sistemlerinde, bilgisayar grafiklerinde (oyun motorlarında 2B ve 3B döndürme matrislerinde) ve alternatif akım elektrik mühendisliğinde doğrudan kullanılır.\n\nÖrneğin bir rüzgâr türbininin kanat ucundaki bir noktanın yerden yüksekliği zamana bağlı olarak birim çember üzerindeki {koyu:sinüs fonksiyonu} ile modellenirken, yatay konumu {koyu:kosinüs fonksiyonu} ile takip edilir."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Saniye ve Dakika Toplama-Çıkarma İpucu",
-    "metin": "Derece-dakika-saniye toplamalarında saniye veya dakika 60'ı geçerse içinden 60 çıkarılıp bir üst birime +1 eklenir. Çıkarma işleminde ise komşu birimden 1° = 60' veya 1' = 60'' bozdurularak işlem yapılır."
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Bir ABC üçgeninde m(A) = 48° 35' 42'' ve m(B) = 64° 40' 38'' olduğuna göre m(A) + m(B) toplamını derece, dakika ve saniye cinsinden bulunuz.",
-   "cevap": "Alt birimleri alt alta toplayalım:\n• Saniye: 42'' + 38'' = 80'' = 1' 20'' (20'' yazılır, 1' dakikaya elde olarak eklenir).\n• Dakika: 35' + 40' + 1' (elde) = 76' = 1° 16' (16' yazılır, 1° dereceye elde olarak eklenir).\n• Derece: 48° + 64° + 1° (elde) = 113°.\nSonuç: m(A) + m(B) = 113° 16' 20'' bulunur."
-  },
-  {
-   "soru": "a) 240° kaç radyandır? b) (7.pi) / 12 radyan kaç derecedir?",
-   "cevap": "a) D / 180 = R / pi bağıntısından: R = (240 . pi) / 180. Pay ve paydayı 60 ile sadeleştirirsek R = (4.pi) / 3 radyan bulunur.\nb) Radyanı dereceye çevirirken pi yerine 180° yazarız:\n(7 . 180°) / 12 = 7 . 15° = 105° bulunur."
-  },
-  {
-   "soru": "Ölçüleri a) 1510° ve b) -1200° olan yönlü açıların esas ölçülerini derece cinsinden bulunuz.",
-   "cevap": "a) Pozitif açı 1510°'yi 360°'ye bölelim: 1510 = 4 . 360 + 70. Kalan 70 olduğundan esas ölçü 70°'dir.\nb) Negatif açı -1200° için önce 1200'ü 360'a bölelim: 1200 = 3 . 360 + 120. Açımız negatif olduğu için kalanı 360°'den çıkarırız: 360° - 120° = 240° bulunur."
-  },
-  {
-   "soru": "Ölçüleri a) (37.pi) / 5 radyan ve b) (-29.pi) / 6 radyan olan açıların esas ölçülerini radyan cinsinden bulunuz.",
-   "cevap": "a) Paydaki 37'yi paydanın 2 katına (2 . 5 = 10'a) bölelim: 37 = 3 . 10 + 7 (Kalan = 7). O hâlde esas ölçü (7.pi) / 5 radyandır.\nb) 29'u paydanın 2 katına (2 . 6 = 12'ye) bölelim: 29 = 2 . 12 + 5 (Kalan = 5). Açımız negatif olduğu için (-5.pi) / 6 ifadesini 2.pi'den çıkarırız:\n2.pi - (5.pi) / 6 = (12.pi - 5.pi) / 6 = (7.pi) / 6 radyan bulunur."
-  },
-  {
-   "soru": "Analitik düzlemin 2. bölgesinde bulunan P(m, kök(5) / 3) noktası birim çember üzerinde olduğuna göre m değeri kaçtır?",
-   "cevap": "Birim çember üzerindeki her P(x, y) noktası x² + y² = 1 denklemini sağlar:\nm² + (kök(5) / 3)² = 1 => m² + 5 / 9 = 1 => m² = 1 - 5 / 9 = 4 / 9.\nBuradan m = 2/3 veya m = -2/3 bulunur. P noktası analitik düzlemin 2. bölgesinde (-, +) olduğundan apsisi negatiftir; dolayısıyla m = -2 / 3 olur."
-  }
- ],
- "etkinlikler": [
-  {
-   "soru": "Ölçüsü -950° olan yönlü bir açının esas ölçüsü kaç derecedir?",
-   "secenekler": [
-    "130°",
-    "150°",
-    "210°",
-    "230°",
-    "250°"
-   ],
-   "dogru": 0,
-   "aciklama": "950 sayısı 360'a bölündüğünde 950 = 2 . 360 + 230 elde edilir (kalan 230). Açı negatif olduğu için esas ölçü 360° - 230° = 130° olur.",
-   "tur": "coktan"
-  },
-  {
-   "soru": "Ölçüsü (43.pi) / 6 radyan olan açının esas ölçüsü kaç radyandır?",
-   "secenekler": [
-    "pi / 6",
-    "5.pi / 6",
-    "7.pi / 6",
-    "11.pi / 6",
-    "pi / 3"
-   ],
-   "dogru": 2,
-   "aciklama": "Paydaki 43 sayısı, paydanın 2 katı olan 12'ye bölünür: 43 = 3 . 12 + 7. Kalan 7 olduğundan esas ölçü (7.pi) / 6 radyandır.",
-   "tur": "coktan"
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "11-matematik-5",
+  "sinif": 11,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 5,
+  "tarih": "12-16 Ekim",
+  "yayin_tarihi": "2026-10-16",
+  "unite": "GEOMETRİK ŞEKİLLER",
+  "konu": "Dörtgenlerin Özellikleri: Açı, Kenar ve Köşegen Bağıntıları (MAT.11.2.1)",
+  "ciktilar": [
+    "MAT.11.2.1. Üçgenlerde açı, benzerlik ve alan özelliklerinden yola çıkarak dörtgenlerin açı, kenar, köşegen, simetri ve alan özelliklerine ilişkin muhakeme yapabilme.",
+    "Dörtgenlerde iç ve dış açılar toplamını, ardışık ve karşılıklı iç açıortayların oluşturduğu açıları hesaplar.",
+    "Köşegenleri dik kesişen dörtgenlerde kenar uzunlukları bağıntısını, Varignon orta noktalar paralelkenarını ve alan bağıntılarını problem çözümlerinde uygular."
+  ],
+  "giris": "Üçgenlerdeki açı, Pisagor, benzerlik ve alan teoremleri, {koyu:dörtgenlerin geometrik özelliklerini} keşfetmenin temel anahtarıdır. Herhangi bir dörtgeni bir köşegeni boyunca iki üçgene ayırdığımızda, dörtgenlerin {koyu:iç açıları toplamından} kenar orta noktalarının oluşturduğu {koyu:Varignon paralelkenarına} ve köşegen-alan bağıntılarına kadar tüm kurallar tümevarımsal ve tümdengelimsel muhakemeyle kolayca elde edilir.",
+  "ozet": [
+    "Herhangi bir dörtgen bir köşegeniyle iki üçgene ayrıldığından {koyu:iç açılarının ölçüleri toplamı 360°} ve {koyu:dış açılarının ölçüleri toplamı da 360°} dir.",
+    "ABCD dörtgeninde {koyu:ardışık iki köşenin} (A ve B) iç açıortayları arasındaki açının ölçüsü {koyu:{kesir:{olcu:C} + {olcu:D}|2}}; {koyu:karşılıklı iki köşenin} (A ve C) iç açıortayları arasındaki dar açının ölçüsü ise {koyu:{kesir:{uzunluk:{olcu:B} - {olcu:D}}|2}} bağıntısıyla bulunur.",
+    "Köşegenleri birbirine dik olan ({koyu:{parca:AC} ⊥ {parca:BD}}) dışbükey veya içbükey dörtgenlerde karşılıklı kenar uzunluklarının kareleri toplamı birbirine eşittir: {koyu:{us:a|2} + {us:c|2} = {us:b|2} + {us:d|2}}.",
+    "Bir dörtgenin kenarlarının orta noktaları (K, L, M, N) ardışık birleştirildiğinde oluşan KLMN dörtgeni daima bir {koyu:paralelkenardır (Varignon Teoremi)} ve çevresi köşegen uzunlukları toplamına ({koyu:{uzunluk:AC} + {uzunluk:BD}}) eşittir.",
+    "Köşegen uzunlukları {koyu:{uzunluk:AC} = e} ve {koyu:{uzunluk:BD} = f} olan dörtgenin alanı, köşegenler arasındaki açı α olmak üzere {koyu:Alan(ABCD) = {kesir:1|2} · e · f · sin(α)} formülüyle; köşegenler dik kesişiyorsa {koyu:{kesir:e · f|2}} formülüyle hesaplanır.",
+    "Köşegenlerin dörtgeni ayırdığı dört üçgensel bölgenin alanları sırasıyla {koyu:S₁, S₂, S₃, S₄} ise karşılıklı alanların çarpımı birbirine eşittir ({koyu:S₁ · S₃ = S₂ · S₄}) ve orta noktalar paralelkenarının alanı tüm dörtgenin alanının yarısıdır."
+  ],
+  "bolumler": [
     {
-     "metin": "Saatin yelkovanının dönme yönünün tersi olan yön, pozitif (+) yön olarak kabul edilir.",
-     "dogru": true,
-     "aciklama": "Trigonometride saat yönünün tersi pozitif (+), saat yönü ise negatif (-) yöndür."
+      "baslik": "1. Dörtgen Kavramı, Dışbükey/İçbükey Dörtgenler ve Açı Toplamları",
+      "metin": [
+        "Aynı düzlemde doğrusal olmayan dört noktayı ardışık olarak birleştiren doğru parçalarının oluşturduğu kapalı geometrik şekle {koyu:dörtgen} denir. Her bir iç açısının ölçüsü 180° den küçük olan ve her iki köşegeni de dörtgenin iç bölgesinde kalan dörtgenlere {koyu:dışbükey (konveks) dörtgen}; iç açılarından birinin ölçüsü 180° den büyük olan ve köşegenlerinden biri dış bölgede kalan dörtgenlere ise {koyu:içbükey (konkav) dörtgen} adı verilir. Bir dışbükey dörtgende bir köşeden çizilen köşegen dörtgeni {koyu:iki üçgene} ayırır. Bir üçgenin iç açıları toplamı 180° olduğundan dörtgenin {koyu:iç açıları toplamı 2 · 180° = 360°} olur. Benzer biçimde dörtgenin {koyu:dış açıları ölçüleri toplamı da 360°} dir."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "İçbükey Dörtgende (Bumerang) Açı Kuralı",
+        "metin": "D köşesi içe bükülmüş bir ABCD içbükey dörtgeninde, D köşesindeki dış bölgede oluşan dar/geniş açı, içerideki diğer üç dar açının toplamına eşittir: {koyu:{olcu:ADC} (dış) = {olcu:A} + {olcu:B} + {olcu:C}}."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"14\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">DIŞBÜKEY VE İÇBÜKEY DÖRTGENLER İLE AÇI ÖZELLİKLERİ</text><rect x=\"20\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#EFF6FF\" stroke=\"#2563EB\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#2563EB\"/><rect x=\"20\" y=\"62\" width=\"310\" height=\"12\" fill=\"#2563EB\"/><text x=\"175.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">DIŞBÜKEY (KONVEKS) VE İÇBÜKEY DÖRTGEN</text><text x=\"32\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Dışbükey (Konveks): Her bir iç açısının ölçüsü</text><text x=\"32\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  180° den küçük olan ve köşegenlerinin ikisi de</text><text x=\"32\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">  iç bölgede kesişen dörtgendir.</text><text x=\"32\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• İçbükey (Konkav): En az bir iç açısının ölçüsü</text><text x=\"32\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  180° den büyük olan dörtgendir.</text><text x=\"32\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">• İçbükey dörtgende şalvar (bumerang) kuralı:</text><text x=\"32\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">  Girintili dış açı = α + β + θ toplamına eşittir.</text><rect x=\"350\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#ECFDF5\" stroke=\"#059669\" stroke-width=\"1.8\"/><rect x=\"350\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#059669\"/><rect x=\"350\" y=\"62\" width=\"310\" height=\"12\" fill=\"#059669\"/><text x=\"505.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">İÇ VE DIŞ AÇILAR TOPLAMI (360°)</text><text x=\"362\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Bir köşeden çizilen köşegen dörtgeni 2 üçgene ayırır.</text><text x=\"362\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">• İç açılar toplamı: (4 - 2) · 180° = 2 · 180° = 360°.</text><text x=\"362\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• m(A) + m(B) + m(C) + m(D) = 360°.</text><text x=\"362\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• Dış açılar toplamı da tüm çokgenlerde olduğu</text><text x=\"362\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  gibi 360° ye eşittir:</text><text x=\"362\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  m(A') + m(B') + m(C') + m(D') = 360°.</text></svg>"
     },
     {
-     "metin": "Analitik düzlemde P(3/4, 1/4) noktası birim çember üzerinde yer alır.",
-     "dogru": false,
-     "aciklama": "Birim çember üzerindeki noktanın koordinatlarının kareleri toplamı 1 olmalıdır. (3/4)² + (1/4)² = 9/16 + 1/16 = 10/16 != 1 olduğundan bu nokta birim çember üzerinde değildir (3/5, 4/5 noktası birim çember üzerindedir)."
-    }
-   ]
-  },
-  {
-   "soru": "Aşağıdaki açı ve birim çember kavramlarını doğru karşılıklarıyla eşleştiriniz.",
-   "aciklama": "Derece-radyan dönüşümü ve birim çember koordinatları trigonometrik fonksiyonların temelini oluşturur.",
-   "tur": "eslestir",
-   "ciftler": [
-    [
-     "150° açısının radyan karşılığı",
-     "(5.pi) / 6 radyan"
-    ],
-    [
-     "1° (Bir derece)",
-     "60' (dakika) = 3600'' (saniye)"
-    ],
-    [
-     "Birim çember denklemi",
-     "x² + y² = 1"
-    ],
-    [
-     "Birim çemberde P(x, y) bitim noktası",
-     "P(cos(alfa), sin(alfa))"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
-   "cumleler": [
-    {
-     "metin": "Bir çemberde yarıçap uzunluğuna eşit uzunluktaki yayı gören merkez açının ölçüsüne 1 ___ denir.",
-     "cevap": "radyan"
+      "baslik": "2. Dörtgenlerde Açıortayların Oluşturduğu Açılar",
+      "metin": [
+        "Bir dışbükey ABCD dörtgeninde açıortayların kesişimiyle oluşan açılar, üçgende açı toplamı özelliğinden yararlanılarak iki temel kuralla hesaplanır. Birincisi, {koyu:ardışık (komşu) iki iç açının} (örneğin A ve B köşelerinin) açıortayları E noktasında kesiştiğinde, oluşan {aci:AEB} açısının ölçüsü diğer iki köşedeki iç açıların aritmetik ortalamasına eşittir: {koyu:{olcu:AEB} = {kesir:{olcu:C} + {olcu:D}|2}}. İkincisi ise {koyu:karşılıklı iki iç açının} (örneğin A ve C köşelerinin) açıortayları E noktasında kesiştiğinde, açıortaylar arasındaki {koyu:dar açının ölçüsü (α)}, diğer iki köşedeki iç açıların farkının mutlak değerinin yarısına eşittir: {koyu:α = {kesir:{uzunluk:{olcu:B} - {olcu:D}}|2}}."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Komşu Açıortaylar ile Karşılıklı Açıortaylar",
+        "metin": "Komşu iki köşenin açıortayları kesiştiğinde diğer iki açı {koyu:toplanıp ikiye bölünür}; karşılıklı iki köşenin açıortayları kesiştiğinde ise diğer iki açının {koyu:farkı alınıp ikiye bölünür}."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"14\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">DÖRTGENDE AÇIORTAYLARIN OLUŞTURDUĞU AÇILAR</text><rect x=\"20\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#F5F3FF\" stroke=\"#7C3AED\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#7C3AED\"/><rect x=\"20\" y=\"62\" width=\"310\" height=\"12\" fill=\"#7C3AED\"/><text x=\"175.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">1. ARDIŞIK İKİ İÇ AÇIORTAYIN AÇISI</text><text x=\"32\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• ABCD dörtgeninde komşu A ve B açılarının</text><text x=\"32\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  iç açıortayları E noktasında kesişsin.</text><text x=\"32\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Açıortaylar arasındaki açının ölçüsü, diğer iki</text><text x=\"32\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">  köşedeki iç açıların aritmetik ortalamasıdır:</text><text x=\"32\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">• m(AEB) = [ m(C) + m(D) ] / 2</text><text x=\"32\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">• Örnek: m(C) = 110° ve m(D) = 70° ise</text><text x=\"32\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">  m(AEB) = (110° + 70°) / 2 = 90° bulunur.</text><rect x=\"350\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#FEF3C7\" stroke=\"#D97706\" stroke-width=\"1.8\"/><rect x=\"350\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#D97706\"/><rect x=\"350\" y=\"62\" width=\"310\" height=\"12\" fill=\"#D97706\"/><text x=\"505.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">2. KARŞILIKLI İKİ İÇ AÇIORTAYIN AÇISI</text><text x=\"362\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• ABCD dörtgeninde karşılıklı A ve C açılarının</text><text x=\"362\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  iç açıortayları arasındaki dar açının ölçüsü α olsun.</text><text x=\"362\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Bu dar açı, diğer iki karşılıklı açının farkının</text><text x=\"362\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">  mutlak değerinin yarısına eşittir:</text><text x=\"362\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">• α = | m(B) - m(D) | / 2</text><text x=\"362\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">• Örnek: m(B) = 130° ve m(D) = 80° ise</text><text x=\"362\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">  α = |130° - 80°| / 2 = 25° bulunur.</text></svg>"
     },
     {
-     "metin": "Standart konumdaki bir alfa açısının birim çemberi kestiği noktanın apsisi cos(alfa), ordinatı ise ___ değerini verir.",
-     "cevap": "sin(alfa)"
+      "baslik": "3. Köşegenleri Dik Kesişen Dörtgenlerde Kenar Bağıntısı",
+      "metin": [
+        "ABCD dörtgeninde {parca:AC} ve {parca:BD} köşegenleri birbirine dik kesişiyorsa ({koyu:{parca:AC} ⊥ {parca:BD}}), köşegenlerin kesim noktası P olmak üzere dört adet dik üçgen oluşur. Bu dört dik üçgende {koyu:Pisagor teoremi} yazılıp taraf tarafa toplandığında, karşılıklı kenar uzunluklarının kareleri toplamının birbirine eşit olduğu görülür: {koyu:{us:a|2} + {us:c|2} = {us:b|2} + {us:d|2}} (veya {koyu:{us:{uzunluk:AB}|2} + {us:{uzunluk:CD}|2} = {us:{uzunluk:BC}|2} + {us:{uzunluk:AD}|2}}). Bu önemli özellik hem dışbükey dörtgenlerde hem de köşegen doğrultuları dik kesişen içbükey dörtgenlerde (C köşesi [AB] nin karşı tarafına katlandığında da) aynen geçerlidir."
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "baslik": "Dik Kesişen Köşegenli Özel Dörtgenler",
+        "metin": "Özel dörtgenlerden {koyu:kare, eşkenar dörtgen ve deltoid}in köşegenleri her durumda birbirini dik keser; dolayısıyla bu dörtgenlerde dik köşegen bağıntıları doğrudan uygulanır."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"14\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">DİK KESİŞEN KÖŞEGENLER VE KENAR ORTA NOKTALARI (VARİGNON)</text><rect x=\"20\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#ECFEFF\" stroke=\"#0891B2\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#0891B2\"/><rect x=\"20\" y=\"62\" width=\"310\" height=\"12\" fill=\"#0891B2\"/><text x=\"175.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">KÖŞEGENLERİ DİK KESİŞEN DÖRTGENLER</text><text x=\"32\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• [AC] ⊥ [BD] olan bir ABCD dörtgeninde karşılıklı</text><text x=\"32\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  kenarların uzunluklarının kareleri toplamı eşittir:</text><text x=\"32\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• a² + c² = b² + d²</text><text x=\"32\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• İspat, dik kesişen köşegenlerin oluşturduğu dört</text><text x=\"32\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  dik üçgende Pisagor teoremi uygulanarak yapılır.</text><text x=\"32\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">• İçbükey dörtgende de köşegen doğrultuları dik</text><text x=\"32\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">  kesişiyorsa aynı a² + c² = b² + d² bağıntısı geçerlidir.</text><rect x=\"350\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#ECFDF5\" stroke=\"#059669\" stroke-width=\"1.8\"/><rect x=\"350\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#059669\"/><rect x=\"350\" y=\"62\" width=\"310\" height=\"12\" fill=\"#059669\"/><text x=\"505.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">ORTA NOKTALAR TEOREMİ (VARİGNON)</text><text x=\"362\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Herhangi bir dörtgenin kenarlarının orta noktaları</text><text x=\"362\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  (K, L, M, N) birleştirildiğinde PARALELKENAR oluşur.</text><text x=\"362\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Çevre(KLMN) = |AC| + |BD| (köşegenler toplamı).</text><text x=\"362\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• |AC| = |BD| ise KLMN bir EŞKENAR DÖRTGEN olur.</text><text x=\"362\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">• [AC] ⊥ [BD] ise KLMN bir DİKDÖRTGEN olur.</text><text x=\"362\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">• Hem |AC| = |BD| hem [AC] ⊥ [BD] ise KARE olur.</text></svg>"
+    },
+    {
+      "baslik": "4. Orta Noktalar Dörtgeni (Varignon Paralelkenarı) ve Benzerlik",
+      "metin": [
+        "Herhangi bir ABCD dörtgeninin [AB], [BC], [CD] ve [DA] kenarlarının orta noktaları sırasıyla K, L, M ve N olarak alınıp birleştirildiğinde, {koyu:üçgende orta taban teoremi} gereği [KL] ve [MN] doğru parçaları [AC] köşegenine paralel ve onun yarısı uzunluğunda ({koyu:{uzunluk:KL} = {uzunluk:MN} = {kesir:{uzunluk:AC}|2}}); [LM] ve [KN] doğru parçaları ise [BD] köşegenine paralel ve onun yarısı uzunluğunda ({koyu:{uzunluk:LM} = {uzunluk:KN} = {kesir:{uzunluk:BD}|2}}) olur. Bu nedenle KLMN orta noktalar dörtgeni daima bir {koyu:paralelkenardır (Varignon Teoremi)} ve çevresi köşegen uzunlukları toplamına eşittir: {koyu:Çevre(KLMN) = {uzunluk:AC} + {uzunluk:BD}}."
+      ],
+      "kutu": {
+        "tur": "bilgi",
+        "baslik": "KLMN Orta Noktalar Paralelkenarının Özel Halleri",
+        "metin": "ABCD dörtgeninde: 1) {koyu:{uzunluk:AC} = {uzunluk:BD}} ise KLMN bir {koyu:eşkenar dörtgen} olur; 2) {koyu:{parca:AC} ⊥ {parca:BD}} ise KLMN bir {koyu:dikdörtgen} olur; 3) Hem {koyu:{uzunluk:AC} = {uzunluk:BD}} hem de {koyu:{parca:AC} ⊥ {parca:BD}} ise KLMN bir {koyu:kare} olur."
+      }
+    },
+    {
+      "baslik": "5. Genel Dörtgenlerde Köşegenler Yardımıyla Alan Hesabı",
+      "metin": [
+        "Bir ABCD dörtgeninin alanı, üçgenlerin sinüslü alan formülünden yararlanılarak köşegen uzunlukları ve köşegenler arasındaki açının sinüsü ile hesaplanır. Köşegen uzunlukları {koyu:{uzunluk:AC} = e}, {koyu:{uzunluk:BD} = f} ve köşegenlerin kesişim açısı {koyu:α} olmak üzere dörtgenin alanı {koyu:Alan(ABCD) = {kesir:1|2} · e · f · sin(α)} bağıntısıyla bulunur. Eğer dörtgenin köşegenleri birbirine dik kesişiyorsa ({koyu:α = 90°} ve {koyu:sin(90°) = 1}), alan formülü {koyu:Alan(ABCD) = {kesir:{uzunluk:AC} · {uzunluk:BD}|2}} şeklini alır; yani dik kesişen köşegenli bir dörtgenin alanı, köşegen uzunlukları çarpımının yarısına eşittir."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Köşegenleri Dik Kesişen Dörtgenin Alanı",
+        "metin": "Kare, eşkenar dörtgen, deltoid veya köşegenleri dik kesişen herhangi bir yamuk/dörtgenin alanı {koyu:köşegenlerin çarpımının yarısına ({kesir:e · f|2})} eşittir."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"14\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">GENEL DÖRTGENLERDE ALAN BAĞINTILARI</text><rect x=\"20\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#EFF6FF\" stroke=\"#2563EB\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#2563EB\"/><rect x=\"20\" y=\"62\" width=\"310\" height=\"12\" fill=\"#2563EB\"/><text x=\"175.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">KÖŞEGENLERLE ALAN HESABI</text><text x=\"32\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Köşegen uzunlukları |AC| = e ve |BD| = f olan</text><text x=\"32\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  ve köşegenleri arasındaki açı α olan dörtgenin alanı:</text><text x=\"32\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Alan(ABCD) = (1/2) · |AC| · |BD| · sin(α)</text><text x=\"32\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• Köşegenler dik kesişiyorsa (α = 90°, sin90° = 1):</text><text x=\"32\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">• Alan(ABCD) = (|AC| · |BD|) / 2</text><text x=\"32\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">• Orta noktalar paralelkenarı: Alan(KLMN) = Alan(ABCD) / 2.</text><rect x=\"350\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#F5F3FF\" stroke=\"#7C3AED\" stroke-width=\"1.8\"/><rect x=\"350\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#7C3AED\"/><rect x=\"350\" y=\"62\" width=\"310\" height=\"12\" fill=\"#7C3AED\"/><text x=\"505.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">KÖŞEGENLERİN AYIRDIĞI ÜÇGEN ALANLARI</text><text x=\"362\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Köşegenlerin kesişmesiyle oluşan 4 üçgenin alanları</text><text x=\"362\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  sırasıyla S₁, S₂, S₃ ve S₄ olsun.</text><text x=\"362\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Karşılıklı üçgenlerin alanları çarpımı birbirine eşittir:</text><text x=\"362\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• S₁ · S₃ = S₂ · S₄</text><text x=\"362\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">• Kenar orta noktalarında köşelerde kalan 4 küçük</text><text x=\"362\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  üçgen için: A₁ + A₃ = A₂ + A₄ = Alan(ABCD) / 4.</text></svg>"
+    },
+    {
+      "baslik": "6. Köşegenlerin ve Orta Noktaların Ayırdığı Alan Oranları",
+      "metin": [
+        "Bir dörtgende [AC] ve [BD] köşegenleri çizildiğinde dörtgen dört üçgensel bölgeye ayrılır. Yükseklikleri ortak olan üçgenlerin alanları taban uzunluklarıyla doğru orantılı olduğundan, sırasıyla oluşan {koyu:S₁, S₂, S₃ ve S₄} alanları arasında {koyu:S₁ · S₃ = S₂ · S₄} (karşılıklı üçgenlerin alanları çarpımı birbirine eşittir) bağıntısı vardır. Öte yandan kenar orta noktalarının birleştirilmesiyle oluşan {koyu:KLMN paralelkenarının alanı}, tüm ABCD dörtgeninin alanının tam yarısına eşittir ({koyu:Alan(KLMN)} = {kesir:Alan(ABCD)|2}). Köşelerde kalan dört küçük üçgenin alanları A₁, A₂, A₃, A₄ ise karşılıklı olanların toplamı birbirine ve tüm alanın dörtte birine eşittir ({koyu:A₁ + A₃ = A₂ + A₄} = {kesir:Alan(ABCD)|4})."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Benzerlik Oranı ve Alanlar Oranı (1/4)",
+        "metin": "Köşelerdeki üçgenler (örneğin ΔAKN ile ΔABD) arasında {koyu:1/2 benzerlik oranı} bulunduğu için alanları oranı benzerlik oranının karesinden {koyu:{us:(1/2)|2} = 1/4} olur."
+      }
     }
-   ],
-   "fazla": [
-    "kavram",
-    "ilke"
-   ]
-  },
-  {
-   "soru": "Standart konumdaki pozitif yönlü 120°'lik açının birim çemberi kestiği P noktasının koordinatlarını, 2. bölgede oluşturacağı 30°-60°-90° özel dik üçgeninden yararlanarak adım adım bulunuz.",
-   "ipucu": "120°'lik açının negatif x ekseniyle 60°'lik açı yaptığını ve 2. bölgede apsisin negatif (-), ordinatın pozitif (+) olduğunu kullanınız.",
-   "tur": "ogretici",
-   "cevap": "1) Standart konumdaki 120°'lik açının bitim kenarı analitik düzlemin 2. bölgesindedir ve yatay negatif Ox ekseniyle 180° - 120° = 60°'lik bir açı yapar.\n2) P noktasından x eksenine dikme indirildiğinde hipotenüsü birim çember yarıçapı (r = 1 br) olan bir 30°-60°-90° dik üçgeni oluşur.\n3) 90°'nin karşısı 1 birim ise, 30°'nin karşısı (yatay uzunluk) 1/2 birim, 60°'nin karşısı (dikey uzunluk) ise kök(3)/2 birimdir.\n4) Nokta 2. bölgede (-, +) olduğu için apsis negatif, ordinat pozitiftir: P(cos 120°, sin 120°) = P(-1/2, kök(3)/2) bulunur.",
-   "ipuclari": [
-    "Konunun temel kavramlarını ve tanımlarını hatırlayınız.",
-    "Sebep-sonuç ilişkisini kurarak değerlendiriniz."
-   ]
-  }
- ]
+  ],
+  "ornekler": [
+    {
+      "soru": "Dışbükey bir ABCD dörtgeninde m(C) = 130° ve m(D) = 80° olduğuna göre, A ve B köşelerine ait iç açıortayların kesişimiyle oluşan AEB açısının ölçüsü kaç derecedir?",
+      "cevap": "Ardışık A ve B köşelerinin iç açıortayları arasındaki açı, diğer iki köşedeki iç açıların aritmetik ortalamasıdır: {koyu:{olcu:AEB} = {kesir:{olcu:C} + {olcu:D}|2} = {kesir:130° + 80°|2} = {kesir:210°|2} = 105°} bulunur."
+    },
+    {
+      "soru": "Bir ABCD dörtgeninde karşılıklı A ve C köşelerinin iç açıortayları arasındaki dar açının ölçüsü 30° ve m(B) = 140° ise m(D) açısının alabileceği dar açı değeri kaç derecedir?",
+      "cevap": "Karşılıklı açıortaylar arasındaki dar açı kuralından {koyu:30° = {kesir:{uzunluk:140° - {olcu:D}}|2}} yazılır. Buradan {koyu:{uzunluk:140° - {olcu:D}} = 60°} ve dar açı değeri {koyu:{olcu:D} = 140° - 60° = 80°} olarak hesaplanır."
+    },
+    {
+      "soru": "Köşegenleri birbirine dik kesişen bir ABCD dörtgeninde |AB| = 6 cm, |BC| = 8 cm ve |CD| = 9 cm olduğuna göre |AD| uzunluğu kaç cm'dir?",
+      "cevap": "Köşegenleri dik kesişen dörtgenlerde karşılıklı kenarların kareleri toplamı birbirine eşittir: {koyu:{us:{uzunluk:AB}|2} + {us:{uzunluk:CD}|2} = {us:{uzunluk:BC}|2} + {us:{uzunluk:AD}|2}}. Değerler yerine yazılırsa {koyu:{us:6|2} + {us:9|2} = {us:8|2} + {us:{uzunluk:AD}|2}} → {koyu:36 + 81 = 64 + {us:{uzunluk:AD}|2}} → {koyu:{us:{uzunluk:AD}|2} = 53} ve {koyu:{uzunluk:AD} = {kok:53} cm} bulunur."
+    },
+    {
+      "soru": "Köşegen uzunlukları |AC| = 12 cm ve |BD| = 16 cm olan bir ABCD dörtgeninin kenarlarının orta noktaları birleştirilerek oluşturulan KLMN dörtgeninin çevresi kaç cm'dir?",
+      "cevap": "Orta taban teoremi (Varignon paralelkenarı) gereği KLMN dörtgeninin çevresi ABCD dörtgeninin köşegen uzunlukları toplamına eşittir: {koyu:Çevre(KLMN) = {uzunluk:AC} + {uzunluk:BD} = 12 + 16 = 28 cm} bulunur."
+    },
+    {
+      "soru": "Köşegen uzunlukları 10 cm ve 12{kok:3} cm olan ve köşegenleri arasındaki dar açının ölçüsü 60° olan dışbükey bir dörtgenin alanı kaç cm² dir?",
+      "cevap": "Köşegenlerle alan bağıntısından {koyu:Alan = {kesir:1|2} · {uzunluk:AC} · {uzunluk:BD} · sin(60°)} yazılır. {koyu:sin(60°) = {kesir:{kok:3}|2}} olduğundan {koyu:Alan = {kesir:1|2} · 10 · 12{kok:3} · {kesir:{kok:3}|2} = 30 · 3 = 90 cm²} olarak bulunur."
+    },
+    {
+      "soru": "Bir ABCD dörtgeninde köşegenlerin ayırdığı dört üçgensel bölgeden ardışık üçünün alanları sırasıyla 6 cm², 12 cm² ve 18 cm² olduğuna göre dördüncü üçgenin alanı kaç cm² dir?",
+      "cevap": "Köşegenlerin ayırdığı karşılıklı üçgenlerin alanları çarpımı birbirine eşittir ({koyu:S₁ · S₃ = S₂ · S₄}). Buradan {koyu:6 · 18 = 12 · S₄} → {koyu:108 = 12 · S₄} ve {koyu:S₄ = 9 cm²} olarak elde edilir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Dışbükey bir ABCD dörtgeninde iç açılardan m(A) = 85°, m(B) = 105° ve m(C) = 95° olduğuna göre D köşesindeki dış açının ölçüsü kaç derecedir?",
+      "secenekler": [
+        "105°",
+        "85°",
+        "95°",
+        "75°",
+        "115°"
+      ],
+      "dogru": 0,
+      "aciklama": "Dörtgenin iç açıları toplamı 360° dir: 85° + 105° + 95° + m(D) = 360° -> 285° + m(D) = 360° -> m(D) = 75°. D köşesindeki dış açı ise 180° - 75° = 105° olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Köşegenleri birbirine dik olan bir ABCD dörtgeninde |AB| = 5 cm, |BC| = 7 cm ve |AD| = 4 cm ise |CD| uzunluğu kaç cm'dir?",
+      "secenekler": [
+        "6",
+        "2{kok:10}",
+        "3{kok:5}",
+        "7",
+        "{kok:38}"
+      ],
+      "dogru": 1,
+      "aciklama": "a² + c² = b² + d² bağıntısından 5² + |CD|² = 7² + 4² -> 25 + |CD|² = 49 + 16 = 65 -> |CD|² = 40 -> |CD| = 2{kok:10} cm bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Köşegenleri birbirine dik kesişen ve köşegen uzunlukları birbirine eşit (|AC| = |BD| = 14 cm) olan bir ABCD dörtgeninin kenarlarının orta noktaları birleştirildiğinde oluşan KLMN dörtgeni aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Çevresi 14 cm olan bir eşkenar dörtgen",
+        "Alanı 98 cm² olan bir yamuk",
+        "Çevresi 28 cm olan bir kare",
+        "Kenarları 14 cm olan bir dikdörtgen",
+        "Çevresi 56 cm olan bir kare"
+      ],
+      "dogru": 2,
+      "aciklama": "Köşegenler eşit ve dik olduğundan kenarları |AC|/2 = 7 cm olan ve açıları 90° olan KLMN dörtgeni bir karedir; çevresi ise 4 · 7 = 28 cm'dir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kenarlarının orta noktaları birleştirilerek oluşturulan KLMN paralelkenarının alanı 36 cm² olan bir ABCD dörtgeninde, köşegenlerden |AC| = 12 cm ve [AC] ⊥ [BD] olduğuna göre |BD| köşegeninin uzunluğu kaç cm'dir?",
+      "secenekler": [
+        "6",
+        "8",
+        "9",
+        "12",
+        "15"
+      ],
+      "dogru": 3,
+      "aciklama": "Alan(ABCD) = 2 · Alan(KLMN) = 2 · 36 = 72 cm² dir. Köşegenler dik kesiştiğinden Alan(ABCD) = (|AC| · |BD|) / 2 -> 72 = (12 · |BD|) / 2 -> |BD| = 12 cm bulunur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Dışbükey bir dörtgenin hem iç açılarının ölçüleri toplamı hem de dış açılarının ölçüleri toplamı 360° ye eşittir.",
+          "dogru": true,
+          "aciklama": "Dörtgen bir köşegenle iki üçgene ayrıldığından iç açıları toplamı 2·180° = 360° ve dış açıları toplamı da 360° dir."
+        },
+        {
+          "metin": "Bir dörtgende ardışık iki köşenin iç açıortayları arasındaki açının ölçüsü, diğer iki iç açının farkının yarısına eşittir.",
+          "dogru": false,
+          "aciklama": "Ardışık açıortaylarda diğer iki iç açının toplamının yarısı alınır; farkın yarısı karşılıklı açıortaylar içindir."
+        },
+        {
+          "metin": "Herhangi bir dörtgenin kenarlarının orta noktaları ardışık birleştirildiğinde oluşan dörtgenin çevresi, dörtgenin köşegen uzunlukları toplamına eşittir.",
+          "dogru": true,
+          "aciklama": "Üçgende orta taban teoremi gereği Çevre(KLMN) = |AC| + |BD| olur."
+        },
+        {
+          "metin": "Köşegenlerin dörtgeni ayırdığı dört üçgensel bölgede karşılıklı üçgenlerin alanları toplamı birbirine eşittir.",
+          "dogru": false,
+          "aciklama": "Köşegenlerin ayırdığı dört üçgende karşılıklı olanların alanları toplamı değil, alanları çarpımı (S₁ · S₃ = S₂ · S₄) birbirine eşittir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Dörtgenlerle ilgili geometrik durumları doğru bağıntı veya sonuçlarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "İç açılar toplamı",
+          "(4 - 2) · 180° = 360°"
+        ],
+        [
+          "Komşu iki iç açıortayın kesişim açısı",
+          "[m(C) + m(D)] / 2"
+        ],
+        [
+          "Karşılıklı iki iç açıortayın kesişim dar açısı",
+          "|m(B) - m(D)| / 2"
+        ],
+        [
+          "Dik kesişen köşegenlerde kenar bağıntısı",
+          "a² + c² = b² + d²"
+        ],
+        [
+          "Orta noktalar paralelkenarının alanı",
+          "Alan(ABCD) / 2"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Her bir iç açısının ölçüsü 180° den küçük olan ve köşegenleri iç bölgede kesişen dörtgenlere ___ dörtgen denir.",
+          "cevap": "dışbükey"
+        },
+        {
+          "metin": "En az bir iç açısının ölçüsü 180° den büyük olan dörtgenlere ___ dörtgen adı verilir.",
+          "cevap": "içbükey"
+        },
+        {
+          "metin": "Bir dörtgenin kenarlarının orta noktalarının birleştirilmesiyle oluşan dörtgen daima bir ___ belirtir.",
+          "cevap": "paralelkenar"
+        },
+        {
+          "metin": "Köşegenleri birbirine dik kesişen bir dörtgenin kenar orta noktaları birleştirildiğinde oluşan özel dörtgen ___ olur.",
+          "cevap": "dikdörtgen"
+        }
+      ],
+      "fazla": [
+        "yamuk",
+        "beşgen"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Herhangi bir ABCD dörtgeninin kenar orta noktalarının birleştirilmesiyle oluşan KLMN dörtgeninin neden daima bir paralelkenar olduğunu üçgende benzerlik ve orta taban teoremiyle açıklayınız.",
+      "cevap": "[AC] köşegeni çizildiğinde ΔABC üçgeninde K ve L kenar orta noktalar olduğundan [KL] doğru parçası {koyu:orta taban} olur; dolayısıyla {koyu:[KL] // [AC]} ve {koyu:{uzunluk:KL} = {kesir:{uzunluk:AC}|2}} dir. Aynı şekilde ΔADC üçgeninde [MN] orta taban olduğundan {koyu:[MN] // [AC]} ve {koyu:{uzunluk:MN} = {kesir:{uzunluk:AC}|2}} olur. Karşılıklı [KL] ve [MN] kenarları birbirine hem paralel hem de eşit uzunlukta olduğundan KLMN dörtgeni {koyu:paralelkenardır}.",
+      "ipuclari": [
+        "Dörtgenin bir köşegenini çizerek oluşan iki üçgende orta taban özelliğini yazınız.",
+        "Karşılıklı kenarların köşegenle olan paralellik ve (1/2) uzunluk oranını karşılaştırınız."
+      ]
+    }
+  ]
 }

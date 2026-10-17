@@ -30,10 +30,10 @@ GORSELLER = {
   <rect x="475" y="60" width="260" height="145" rx="10" fill="#f3e8ff" stroke="#9333ea" stroke-width="2.5"/>
   <text x="605" y="84" text-anchor="middle" font-size="13" font-weight="800" fill="#581c87">AZOTLU ORGANİK BAZ</text>
   <text x="490" y="108" font-size="11" font-weight="700" fill="#6b21a8">1. Pürinler (Çift Halkalı - Büyük):</text>
-  <text x="500" y="125" font-size="11" fill="#4c1d95">• <tspan font-weight="700">Adenin (A)</tspan> ve <tspan font-weight="700">Guanin (G)</tspan> (DNA ve RNA ortak)</text>
+  <text x="500" y="125" font-size="11" fill="#4c1d95">• &lt;tspan font-weight="700">Adenin (A)&lt;/tspan> ve &lt;tspan font-weight="700">Guanin (G)&lt;/tspan> (DNA ve RNA ortak)</text>
   <text x="490" y="148" font-size="11" font-weight="700" fill="#6b21a8">2. Pirimidinler (Tek Halkalı - Küçük):</text>
-  <text x="500" y="165" font-size="11" fill="#4c1d95">• <tspan font-weight="700">Sitozin (C)</tspan> (Ortak), <tspan font-weight="700">Timin (T)</tspan> (Yalnız DNA),</text>
-  <text x="500" y="182" font-size="11" fill="#4c1d95">• <tspan font-weight="700">Urasil (U)</tspan> (Yalnız RNA)</text>
+  <text x="500" y="165" font-size="11" fill="#4c1d95">• &lt;tspan font-weight="700">Sitozin (C)&lt;/tspan> (Ortak), &lt;tspan font-weight="700">Timin (T)&lt;/tspan> (Yalnız DNA),</text>
+  <text x="500" y="182" font-size="11" fill="#4c1d95">• &lt;tspan font-weight="700">Urasil (U)&lt;/tspan> (Yalnız RNA)</text>
   <!-- Nükleozit Braket -->
   <path d="M 255 52 L 255 42 L 735 42 L 735 52" fill="none" stroke="#64748b" stroke-width="2"/>
   <text x="495" y="56" text-anchor="middle" font-size="11" font-weight="800" fill="#334155">NÜKLEOZİT = Baz + 5C Şeker (Fosfat eklendiğinde NÜKLEOTİT olur)</text>
@@ -126,10 +126,10 @@ GORSELLER = {
   <text x="625" y="67" text-anchor="middle" font-size="12.5" font-weight="800" fill="#ffffff">3. RİBOZOMAL RNA (rRNA)</text>
   <ellipse cx="625" cy="100" rx="28" ry="13" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
   <text x="625" y="125" text-anchor="middle" font-size="10.5" font-weight="700" fill="#92400e">Protein + rRNA = Ribozom</text>
-  <text x="522" y="145" font-size="11" fill="#1e293b">• Ökaryotlarda <tspan font-weight="700">çekirdekçikte</tspan></text>
+  <text x="522" y="145" font-size="11" fill="#1e293b">• Ökaryotlarda &lt;tspan font-weight="700">çekirdekçikte&lt;/tspan></text>
   <text x="530" y="161" font-size="11" fill="#1e293b">sentezlenir; ribozom yapısına katılır.</text>
-  <text x="522" y="181" font-size="11" fill="#1e293b">• Amino asitler arasında <tspan font-weight="700">peptit</tspan></text>
-  <text x="530" y="197" font-size="11" font-weight="700" fill="#92400e">bağlarının kurulmasını</tspan> katalizler.</text>
+  <text x="522" y="181" font-size="11" fill="#1e293b">• Amino asitler arasında &lt;tspan font-weight="700">peptit&lt;/tspan></text>
+  <text x="530" y="197" font-size="11" font-weight="700" fill="#92400e">bağlarının kurulmasını katalizler.</text>
   <text x="522" y="219" font-size="11" font-weight="700" fill="#b91c1c">• Hücredeki oranı: ~%80 (En fazla)</text>
   <text x="522" y="237" font-size="10" font-weight="700" fill="#b45309">• Katlanma bölgelerinde H bağı içerir!</text>
 </svg>''',
@@ -140,21 +140,21 @@ GORSELLER = {
   <!-- DNA Box -->
   <rect x="20" y="45" width="350" height="198" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
   <text x="195" y="68" text-anchor="middle" font-size="13" font-weight="800" fill="#1e3a8a">DNA (DEOKSİRİBONÜKLEİK ASİT)</text>
-  <text x="34" y="92" font-size="11" fill="#1e293b">• <tspan font-weight="700">Özel Bazı:</tspan> Timin (T)  |  <tspan font-weight="700">Şekeri:</tspan> Deoksiriboz (C₅H₁₀O₄)</text>
-  <text x="34" y="112" font-size="11" fill="#1e293b">• <tspan font-weight="700">Yapısı:</tspan> Çift polinükleotit zincirli sarmal (A=T, G=C)</text>
-  <text x="34" y="132" font-size="11" fill="#1e293b">• <tspan font-weight="700">Sentezi:</tspan> Kendini yarı korunumlu eşleyebilir (<tspan font-weight="700">Replikasyon</tspan>)</text>
-  <text x="34" y="152" font-size="11" fill="#1e293b">• <tspan font-weight="700">Enzimleri:</tspan> Sentez: DNA Polimeraz | Yıkım: DNAaz</text>
-  <text x="34" y="172" font-size="11" fill="#1e293b">• <tspan font-weight="700">Bulunduğu Yer:</tspan> Ökaryotlarda çekirdek, mitokondri, kloroplast;</text>
+  <text x="34" y="92" font-size="11" fill="#1e293b">• &lt;tspan font-weight="700">Özel Bazı:&lt;/tspan> Timin (T)  |  &lt;tspan font-weight="700">Şekeri:&lt;/tspan> Deoksiriboz (C₅H₁₀O₄)</text>
+  <text x="34" y="112" font-size="11" fill="#1e293b">• &lt;tspan font-weight="700">Yapısı:&lt;/tspan> Çift polinükleotit zincirli sarmal (A=T, G=C)</text>
+  <text x="34" y="132" font-size="11" fill="#1e293b">• &lt;tspan font-weight="700">Sentezi:&lt;/tspan> Kendini yarı korunumlu eşleyebilir (&lt;tspan font-weight="700">Replikasyon&lt;/tspan>)</text>
+  <text x="34" y="152" font-size="11" fill="#1e293b">• &lt;tspan font-weight="700">Enzimleri:&lt;/tspan> Sentez: DNA Polimeraz | Yıkım: DNAaz</text>
+  <text x="34" y="172" font-size="11" fill="#1e293b">• &lt;tspan font-weight="700">Bulunduğu Yer:&lt;/tspan> Ökaryotlarda çekirdek, mitokondri, kloroplast;</text>
   <text x="44" y="188" font-size="11" fill="#1e293b">prokaryotlarda sitoplazma.</text>
   <text x="34" y="210" font-size="11" font-weight="700" fill="#1d4ed8">• Görevi: Kalıtsal bilgiyi taşır ve hücre yönetimini sağlar.</text>
   <!-- RNA Box -->
   <rect x="390" y="45" width="350" height="198" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
   <text x="565" y="68" text-anchor="middle" font-size="13" font-weight="800" fill="#166534">RNA (RİBONÜKLEİK ASİT)</text>
-  <text x="404" y="92" font-size="11" fill="#1e293b">• <tspan font-weight="700">Özel Bazı:</tspan> Urasil (U)  |  <tspan font-weight="700">Şekeri:</tspan> Riboz (C₅H₁₀O₅)</text>
-  <text x="404" y="112" font-size="11" fill="#1e293b">• <tspan font-weight="700">Yapısı:</tspan> Tek polinükleotit zincirli (A=U veya G=C zorunlu değil)</text>
-  <text x="404" y="132" font-size="11" fill="#1e293b">• <tspan font-weight="700">Sentezi:</tspan> Kendini eşleyemez; DNA üzerinden sentezlenir (<tspan font-weight="700">Transkripsiyon</tspan>)</text>
-  <text x="404" y="152" font-size="11" fill="#1e293b">• <tspan font-weight="700">Enzimleri:</tspan> Sentez: RNA Polimeraz | Yıkım: RNAaz</text>
-  <text x="404" y="172" font-size="11" fill="#1e293b">• <tspan font-weight="700">Bulunduğu Yer:</tspan> Çekirdek, çekirdekçik, sitoplazma, ribozom,</text>
+  <text x="404" y="92" font-size="11" fill="#1e293b">• &lt;tspan font-weight="700">Özel Bazı:&lt;/tspan> Urasil (U)  |  &lt;tspan font-weight="700">Şekeri:&lt;/tspan> Riboz (C₅H₁₀O₅)</text>
+  <text x="404" y="112" font-size="11" fill="#1e293b">• &lt;tspan font-weight="700">Yapısı:&lt;/tspan> Tek polinükleotit zincirli (A=U veya G=C zorunlu değil)</text>
+  <text x="404" y="132" font-size="11" fill="#1e293b">• &lt;tspan font-weight="700">Sentezi:&lt;/tspan> Kendini eşleyemez; DNA üzerinden sentezlenir (&lt;tspan font-weight="700">Transkripsiyon&lt;/tspan>)</text>
+  <text x="404" y="152" font-size="11" fill="#1e293b">• &lt;tspan font-weight="700">Enzimleri:&lt;/tspan> Sentez: RNA Polimeraz | Yıkım: RNAaz</text>
+  <text x="404" y="172" font-size="11" fill="#1e293b">• &lt;tspan font-weight="700">Bulunduğu Yer:&lt;/tspan> Çekirdek, çekirdekçik, sitoplazma, ribozom,</text>
   <text x="414" y="188" font-size="11" fill="#1e293b">mitokondri ve kloroplast.</text>
   <text x="404" y="210" font-size="11" font-weight="700" fill="#15803d">• Görevi: Protein sentezinde doğrudan görev alır (3 çeşidi birlikte).</text>
 </svg>''',
@@ -207,10 +207,10 @@ GORSELLER = {
   <rect x="20" y="48" width="230" height="28" rx="8" fill="#dc2626"/>
   <text x="135" y="67" text-anchor="middle" font-size="12.5" font-weight="800" fill="#ffffff">1. HELİKAZ ENZİMİ</text>
   <text x="32" y="94" font-size="11" fill="#7f1d1d">• Replikasyon orijininden itibaren</text>
-  <text x="40" y="110" font-size="11" fill="#7f1d1d">iki iplik arasındaki <tspan font-weight="700">zayıf hidrojen</tspan></text>
+  <text x="40" y="110" font-size="11" fill="#7f1d1d">iki iplik arasındaki &lt;tspan font-weight="700">zayıf hidrojen&lt;/tspan></text>
   <text x="40" y="126" font-size="11" font-weight="700" fill="#7f1d1d">bağlarını koparır.</text>
   <text x="32" y="148" font-size="11" fill="#7f1d1d">• DNA çift sarmalını fermuar gibi</text>
-  <text x="40" y="164" font-size="11" fill="#7f1d1d">açarak <tspan font-weight="700">replikasyon çatalını</tspan> oluşturur</text>
+  <text x="40" y="164" font-size="11" fill="#7f1d1d">açarak &lt;tspan font-weight="700">replikasyon çatalını&lt;/tspan> oluşturur</text>
   <text x="40" y="180" font-size="10.5" fill="#991b1b">(ATP harcanır).</text>
 
   <rect x="265" y="48" width="230" height="145" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
@@ -228,8 +228,8 @@ GORSELLER = {
   <text x="625" y="67" text-anchor="middle" font-size="12.5" font-weight="800" fill="#ffffff">3. DNA LİGAZ ENZİMİ</text>
   <text x="522" y="94" font-size="11" fill="#14532d">• Kesintili iplikteki (Okazaki</text>
   <text x="530" y="110" font-size="11" fill="#14532d">parçalarındaki) DNA parçacıkları</text>
-  <text x="530" y="126" font-size="11" fill="#14532d">arasında <tspan font-weight="700">fosfodiester (ester) bağı</tspan></text>
-  <text x="530" y="142" font-size="11" font-weight="700" fill="#14532d">kurarak</tspan> parçaları birleştirir.</text>
+  <text x="530" y="126" font-size="11" fill="#14532d">arasında &lt;tspan font-weight="700">fosfodiester (ester) bağı&lt;/tspan></text>
+  <text x="530" y="142" font-size="11" font-weight="700" fill="#14532d">kurarak parçaları birleştirir.</text>
   <text x="522" y="164" font-size="11" fill="#166534">• Yeni DNA zincirinin kesintisiz</text>
   <text x="530" y="180" font-size="11" fill="#166534">bütünlüğünü tamamlar (ATP harcanır).</text>
 
@@ -245,4 +245,3 @@ def uygula(v):
     for i, k in enumerate(["b1", "b2", "b3", "b4", "b5", "b6"]):
         if i < len(v.get("bolumler", [])) and k in GORSELLER:
             v["bolumler"][i]["gorsel"] = GORSELLER[k]
-

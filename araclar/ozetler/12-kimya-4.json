@@ -1,210 +1,285 @@
 {
- "ad": "12. Sınıf Kimya — 4. Hafta Konu Anlatımı",
- "sinif": 12,
- "ders": "kimya",
- "ders_adi": "Kimya",
- "hafta": 4,
- "tarih": "5-9 Ekim 2026",
- "yayin_tarihi": "2026-10-17",
- "unite": "1. ÜNİTE: KİMYA VE ELEKTRİK",
- "konu": "Pil Potansiyeline Etki Eden Faktörler, Lityum İyon Pilleri, Elektroliz, Faraday Yasaları ve Korozyondan Korunma",
- "ciktilar": [
-  "12.1.4.3. Pil potansiyeline etki eden faktörleri (derişim, sıcaklık, basınç) Le Chatelier ilkesi üzerinden yorumlar ve lityum-iyon pillerin çalışma yapısını açıklar.",
-  "12.1.6.1. Elektrik enerjisi ile istemsiz redoks tepkimelerinin gerçekleşmesini (elektroliz) ve Faraday yasalarını kullanarak anot/katotta toplanan madde miktarlarını hesaplar.",
-  "12.1.7.1. Korozyon olayını elektrokimyasal temelde açıklar; metalleri korozyondan korumak için uygulanan elektrolitik kaplama ve katodik koruma (kurban elektrot) yöntemlerini değerlendirir."
- ],
- "giris": "Bir elektrokimyasal pilin ürettiği gerilim ($E_{\\text{pil}}$) her zaman sabit midir, yoksa yarı hücrelere su eklenmesi, sıcaklık değişimi veya gaz basıncı bu potansiyeli nasıl etkiler? Cep telefonlarımızda ve elektrikli otomobillerde kullandığımız lityum-iyon piller şarj edilirken elektrik enerjisi kimyasal enerjiye nasıl dönüşür? Michael Faraday'ın keşfettiği elektroliz yasalarıyla bir elektrottan tam olarak kaç gram gümüş veya bakır elde edileceğini nasıl hesaplarız? Gemi gövdelerini ve yer altı boru hatlarını paslanmadan (korozyondan) koruyan 'kurban elektrot' nedir? Bu hafta Kimya ve Elektrik ünitesinin son ve en kapsamlı konularını inceleyeceğiz.",
- "ozet": [
-  "Pil tepkimeleri ekzotermik denge tepkimeleridir; Le Chatelier ilkesine göre dengeyi ürünler yönüne (sağa) kaydıran her etki (katot derişimini artırmak, anot derişimini azaltmak, sıcaklığı düşürmek) pil potansiyelini ($E_{\\text{pil}}$) artırır.",
-  "Elektrotların kütlesi, yüzey alanı, boyutu veya çözelti hacminin (derişim sabit kalmak şartıyla) değiştirilmesi pil potansiyelini ($E_{\\text{pil}}$) değiştirmez; sadece pilin ömrünü etkiler.",
-  "Kendiliğinden gerçekleşmeyen (istemsiz, $E^\\circ < 0$) redoks tepkimelerinin dışarıdan elektrik enerjisi verilerek gerçekleştirilmesine 'elektroliz' denir; elektroliz hücresinde de anotta yükseltgenme, katotta indirgenme gerçekleşir ancak anot $(+)$, katot $(-)$ kutuptur.",
-  "Faraday'ın Birinci Yasasına göre elektrolizde açığa çıkan madde miktarı devreden geçen elektrik yükü ($Q = I \\cdot t$) ile doğru orantılıdır; $1\\text{ mol}$ elektron yükü $1\\text{ Faraday}$ ($1\\text{ F} \\approx 96500\\text{ Coulomb}$) kabul edilir ve kütle $m = \\frac{I \\cdot t \\cdot M_A}{96500 \\cdot z}$ formülüyle hesaplanır.",
-  "Seri bağlı elektroliz kaplarından eşit miktarda elektrik yükü ($Q$) ve eşit mol sayısında elektron ($n_{e^-}$) geçer; dolayısıyla kaplarda toplanan maddelerin eşdeğer gram sayıları birbirine eşittir ($n_1 \\cdot z_1 = n_2 \\cdot z_2$).",
-  "Metallerin ortam etkisiyle elektrokimyasal olarak yükseltgenip aşınmasına 'korozyon' denir; korozyonu önlemek için boyama, galvanizleme, elektrolitik kaplama veya korunacak metale kendisinden daha aktif bir metal (kurban elektrot) bağlayarak 'katodik koruma' yapılır."
- ],
- "bolumler": [
-  {
-   "baslik": "1. Pil Potansiyeline Etki Eden Faktörler ve Lityum-İyon Pilleri",
-   "metin": [
-    "Galvanik pillerde gerçekleşen redoks tepkimeleri, aynı zamanda ekzotermik (ısı veren) birer denge tepkimesidir:\n$$\\text{A(k)} + \\text{B}^{n+}\\text{(suda)} \\rightleftharpoons \\text{A}^{n+}\\text{(suda)} + \\text{B(k)} + \\text{Isı}$$\nBurada $\\text{A}$ anot elektrodu, $\\text{B}$ ise katot elektrodunu temsil eder. Pil potansiyeline ($E_{\\text{pil}}$) etki eden faktörler 'Le Chatelier İlkesi' ile kolayca yorumlanır: Yapılan bir etki pil dengesini ürünler yönüne (sağa) kaydırıyorsa pil potansiyeli ($E_{\\text{pil}}$) artar; girenler yönüne (sola) kaydırıyorsa pil potansiyeli ($E_{\\text{pil}}$) azalır.",
-    "1) Derişim Etkisi: Katot yarı hücresindeki $\\text{B}^{n+}$ iyon derişimi artırılırsa veya anot yarı hücresine saf su eklenerek (ya da $\\text{A}^{n+}$ iyonlarını suda çözünmeyen bir katı halinde çöktüren $\\text{Na}_2\\text{S}, \\text{NaOH}$ gibi bir madde eklenerek) $\\text{A}^{n+}$ derişimi azaltılırsa denge ürünlere kayar ve $E_{\\text{pil}}$ artar. Tersine anot derişimini artırmak veya katot derişimini azaltmak $E_{\\text{pil}}$'i düşürür.\n2) Sıcaklık Etkisi: Pil tepkimeleri ekzotermik olduğundan sıcaklık düşürülürse denge ürünlere kayar ve $E_{\\text{pil}}$ artar; sıcaklık artırılırsa denge girenlere kayar ve $E_{\\text{pil}}$ azalır.\n3) Basınç Etkisi: Yalnızca hidrojen elektrodu ($\\text{SHE}$) gibi gaz içeren pillerde etkilidir; gaz ürünlerde ise basıncı azaltmak, girenlerde ise basıncı artırmak dengeyi sağa kaydırarak $E_{\\text{pil}}$'i artırır.\n4) Elektrot Kütlesi ve Yüzey Alanı: Elektrotların kütlesi, kalınlığı veya yüzey alanı pil potansiyelini ($E_{\\text{pil}}$) kesinlikle değiştirmez!",
-    "Günümüzde cep telefonları, dizüstü bilgisayarlar ve elektrikli araçlarda en yaygın kullanılan sekonder (şarj edilebilir) piller 'Lityum-İyon (Li-ion) Pilleri'dir. Lityum, standart indirgenme potansiyeli en düşük ($E^\\circ = -3{,}04\\text{ V}$), yani yükseltgenme eğilimi en yüksek ve en hafif metal olduğu için maksimum gerilim ($\\approx 3{,}6\\text{ V}$) üretir. Bu pillerde anot olarak lityum atomları barındıran grafit, katot olarak lityum-kobalt/demir oksit ($\\text{LiCoO}_2$ veya $\\text{LiFePO}_4$), elektrolit olarak ise susuz organik çözücü veya katı polimer kullanılır."
-   ],
-   "kutu": {
-    "tur": "onemli",
-    "baslik": "Lityum-İyon Pillerinin Avantajları",
-    "metin": "Lityum-iyon piller; hafif olmaları, birim kütle başına çok yüksek enerji yoğunluğu sağlamaları, 'hafıza etkisi' göstermemeleri, tekrar tekrar şarj edilebilmeleri ve toksik ağır metaller (kurşun, kadmiyum, cıva) içermedikleri için çevreye daha az zarar vermeleri sebebiyle modern teknolojinin temel enerji kaynağıdır."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#38bdf8\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">PİL POTANSİYELİNE ETKİ EDEN FAKTÖRLER (LE CHATELIER İLKESİ)</text><rect x=\"25\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#0284c7\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#0284c7\"/><text x=\"195\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Pil potansiyelini (E_pil) Artıran Etkiler</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Net pil tepkimesi: A(k) + B⁺(suda) ⇌ A⁺(suda) + B(k) + ısı</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• Katot yarı hücresindeki B⁺ derişimini artırmak</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Anot yarı hücresindeki A⁺ derişimini azaltmak (su eklemek)</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Anot yarı hücresine A⁺ iyonlarını çöktüren madde eklemek</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Ekzotermik pil tepkimesinde sıcaklığı düşürmek</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Dengeyi ürünler yönüne (sağa) kaydıran her etki E_pil'i artırır</text><rect x=\"395\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#10b981\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#10b981\"/><text x=\"565\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Pil Potansiyelini Değiştirmeyen / Azaltanlar</text><text x=\"407\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Elektrotların kütlesi, boyutu ve temas yüzeyi</text><text x=\"407\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  pil potansiyelini (E_pil) DEĞİŞTİRMEZ!</text><text x=\"407\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Anot derişimini artırmak veya katot derişimini</text><text x=\"407\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  azaltmak dengeyi girenlere kaydırır (E_pil azalır)</text><text x=\"407\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Sıcaklığı artırmak dengeyi sola kaydırır (E_pil azalır)</text><text x=\"407\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Pil çalıştıkça E_pil azalır; E_pil = 0 olunca pil biter</text></svg>"
-  },
-  {
-   "baslik": "2. Elektroliz ve Elektrolitik Hücrelerin Çalışma İlkesi",
-   "metin": [
-    "Galvanik hücrelerde istemli bir kimyasal tepkimeden elektrik enerjisi üretilirken; 'elektrolitik hücrelerde' bunun tam tersi gerçekleşir: Kendiliğinden gerçekleşmeyen (istemsiz, $\\Delta G > 0$ ve $E^\\circ_{\\text{hücre}} < 0$) bir redoks tepkimesi, dışarıdan doğru akım üreteci (güç kaynağı) yardımıyla elektrik enerjisi verilerek zorla gerçekleştirilir. Bu olaya 'elektroliz' denir.",
-    "Bir bileşiğin elektroliz edilebilmesi için elektrik akımını iyon hareketiyle iletmesi, yani 'sıvı (eriyik/ergimiş)' halde veya 'sulu çözelti' halinde olması gerekir. Elektroliz kabına daldırılan elektrotlardan üretecin pozitif $(+)$ kutbuna bağlanan elektrot 'anot', negatif $(-)$ kutbuna bağlanan elektrot ise 'katot'tur. Ancak unutulmamalıdır ki hem pillerde hem de elektrolizde 'Kimya' kuralı değişmez: Anotta daima yükseltgenme, katotta daima indirgenme gerçekleşir! Elektrolit içindeki pozitif yüklü iyonlar (katyonlar) $(-)$ yüklü katoda giderek indirgenir; negatif yüklü iyonlar (anyonlar) ise $(+)$ yüklü anoda giderek yükseltgenir.",
-    "Örneğin erimiş sodyum klorür ($\\text{NaCl(s)}$) tuzunun elektrolizinde ortamda yalnız $\\text{Na}^+$ ve $\\text{Cl}^-$ iyonları bulunur:\n• Katotta $(-)$ indirgenme: $\\text{Na}^+\\text{(s)} + e^- \\rightarrow \\text{Na(s)}$ (metalik sodyum toplanır)\n• Anotta $(+)$ yükseltgenme: $2\\text{Cl}^-\\text{(s)} \\rightarrow \\text{Cl}_2\\text{(g)} + 2e^-$ (klor gazı açığa çıkar)."
-   ],
-   "kutu": {
-    "tur": "kavram",
-    "baslik": "Sulu Çözeltilerin Elektrolizinde Öncelik Kuralı",
-    "metin": "Eğer elektroliz kabında birden fazla katyon ve anyon varsa (örneğin sulu çözeltilerde sudan gelen $\\text{H}^+$ ve $\\text{OH}^-$ iyonları da bulunur):\n• Katotta: İndirgenme eğilimi (potansiyeli) EN BÜYÜK olan katyon (pasif metal veya $\\text{H}^+$) ilk önce indirgenir.\n• Anotta: Yükseltgenme eğilimi (potansiyeli) EN BÜYÜK olan anyon ilk önce yükseltgenir."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#f59e0b\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">GALVANİK HÜCRE (PİL) İLE ELEKTROLİTİK HÜCRE KARŞILAŞTIRMASI</text><rect x=\"25\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#d97706\"/><text x=\"195\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Galvanik Hücre (Elektrokimyasal Pil)</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Kimyasal enerjiyi elektrik enerjisine dönüştürür</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• İstemsiz değil, İSTEMLİ redoks tepkimesidir (E° > 0)</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Anot negatif (-), katot pozitif (+) kutuptur</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Anotta yükseltgenme, katotta indirgenme olur</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Tuz köprüsü ile yük denkliği sağlanır</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Örnek: Daniell pili, lityum-iyon piller</text><rect x=\"395\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#8b5cf6\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#8b5cf6\"/><text x=\"565\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Elektrolitik Hücre (Elektroliz Kabı)</text><text x=\"407\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Elektrik enerjisini kimyasal enerjiye dönüştürür</text><text x=\"407\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• İSTEMSİZ redoks tepkimesi dış üreteçle gerçekleştirilir</text><text x=\"407\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Anot pozitif (+), katot negatif (-) kutuptur</text><text x=\"407\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Yine anotta yükseltgenme, katotta indirgenme olur</text><text x=\"407\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Katyonlar (-) katoda, anyonlar (+) anoda gider</text><text x=\"407\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Örnek: Suyun elektrolizi, erimiş tuzların elektrolizi</text></svg>"
-  },
-  {
-   "baslik": "3. Suyun Elektrolizi (Hoffman Voltametresi)",
-   "metin": [
-    "Saf su elektriği çok zayıf ilettiği için, suyun elektrolizinde iletkenliği artırmak amacıyla suya az miktarda sülfürik asit ($\\text{H}_2\\text{SO}_4$) gibi bir elektrolit damlatılır ve işlem 'Hoffman voltametresi' adı verilen özel düzenekte gerçekleştirilir.",
-    "Suyun elektrolizinde gerçekleşen yarı tepkimeler ve net tepkime şöyledir:\n• Anot $(+)$ yarı tepkimesi: $\\text{H}_2\\text{O(s)} \\rightarrow \\frac{1}{2}\\text{O}_2\\text{(g)} + 2\\text{H}^+\\text{(suda)} + 2e^-$\n• Katot $(-)$ yarı tepkimesi: $2\\text{H}_2\\text{O(s)} + 2e^- \\rightarrow \\text{H}_2\\text{(g)} + 2\\text{OH}^-\\text{(suda)}$\n• Net elektroliz tepkimesi: $\\text{H}_2\\text{O(s)} + \\text{enerji} \\rightarrow \\text{H}_2\\text{(g)} + \\frac{1}{2}\\text{O}_2\\text{(g)}$",
-    "Net denklemden açıkça görüldüğü üzere; aynı sıcaklık ve basınç koşullarında devreden geçen aynı elektrik yüküyle katotta toplanan hidrojen gazının ($\\text{H}_2$) mol sayısı ve hacmi ($2V$), anotta toplanan oksijen gazının ($\\text{O}_2$) mol sayısı ve hacminin ($V$) tam iki katıdır ($V_{\\text{H}_2} = 2 \\cdot V_{\\text{O}_2}$). Ayrıca devreden geçen her $2\\text{ mol}$ elektron ($2\\text{ F}$) için katotta $1\\text{ mol } \\text{H}_2$ gazı, anotta ise $0{,}5\\text{ mol } \\text{O}_2$ gazı açığa çıkar."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Sulu Tuz Çözeltilerinde Pratik Sıralama",
-    "metin": "Aktif metallerin (1A, 2A grubu ve $\\text{Al}, \\text{Zn}, \\text{Fe}$ gibi $\\text{H}_2$'den aktif metallerin) sulu çözeltileri elektroliz edildiğinde, katotta metal katyonu yerine suyun indirgenmesiyle $\\text{H}_2\\text{(g)}$ açığa çıkar. Anotta ise $\\text{SO}_4^{2-}, \\text{NO}_3^-$ gibi köklü iyonlar varsa bunlar yerine suyun yükseltgenmesiyle $\\text{O}_2\\text{(g)}$ açığa çıkar."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#a855f7\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">FARADAY ELEKTROLİZ YASALARI VE HESAPLAMALARI</text><rect x=\"25\" y=\"50\" width=\"225\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#6366f1\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"225\" height=\"32\" rx=\"12\" fill=\"#6366f1\"/><text x=\"137\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">1. Temel Bağıntılar</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Q = I · t</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  Q: Yük (Coulomb, C)</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">  I: Akım şiddeti (Amper, A)</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  t: Süre (Saniye, s)</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• 1 mol e⁻ = 1 Faraday (F)</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• 1 F ≈ 96500 Coulomb</text><rect x=\"268\" y=\"50\" width=\"225\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#ec4899\" stroke-width=\"2\"/><rect x=\"268\" y=\"50\" width=\"225\" height=\"32\" rx=\"12\" fill=\"#ec4899\"/><text x=\"380\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">2. Kütle Hesabı (m)</text><text x=\"280\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• n(e⁻) = Q / 96500 = (I · t) / 96500</text><text x=\"280\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• Xⁿ⁺ + n e⁻ -> X(k)</text><text x=\"280\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Toplanan madde kütlesi:</text><text x=\"280\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  m = (I · t · M_A) / (96500 · z)</text><text x=\"280\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• M_A: Mol kütlesi</text><text x=\"280\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• z: Alınan/verilen e⁻ sayısı (tesir)</text><rect x=\"510\" y=\"50\" width=\"225\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#14b8a6\" stroke-width=\"2\"/><rect x=\"510\" y=\"50\" width=\"225\" height=\"32\" rx=\"12\" fill=\"#14b8a6\"/><text x=\"622\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">3. Seri Bağlı Kaplar</text><text x=\"522\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Seri bağlı elektroliz kaplarından</text><text x=\"522\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  geçen elektrik yükü (Q) ve</text><text x=\"522\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">  devreden geçen e⁻ mol sayısı</text><text x=\"522\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  BİRBİRİNE EŞİTTİR!</text><text x=\"522\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• n₁ · z₁ = n₂ · z₂</text><text x=\"522\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• (m₁/M_A1)·z₁ = (m₂/M_A2)·z₂</text></svg>"
-  },
-  {
-   "baslik": "4. Faraday Elektroliz Yasaları ve Nicel Hesaplamalar",
-   "metin": [
-    "İngiliz bilim insanı Michael Faraday, elektroliz olayındaki nicel ilişkileri iki temel yasayla açıklamıştır:\n1) Faraday'ın Birinci Yasası: Bir elektroliz devresinde anot veya katotta açığa çıkan (veya harcanan) madde miktarı, devreden geçen elektrik yükü miktarı ($Q$) ile doğru orantılıdır. Elektrik yükü, akım şiddeti ($I$, Amper) ile akımın geçiş süresinin ($t$, saniye) çarpımına eşittir:\n$$Q = I \\cdot t \\quad (\\text{Coulomb} = \\text{Amper} \\times \\text{saniye})$$\nKimyada $1\\text{ mol}$ elektronun ($6{,}02 \\times 10^{23}$ tane elektronun) taşıdığı toplam elektrik yüküne '$1\\text{ Faraday}$' ($1\\text{ F}$) denir ve hesaplamalarda $1\\text{ F} = 1\\text{ mol } e^- \\approx 96500\\text{ Coulomb}$ olarak alınır.",
-    "2) Faraday'ın İkinci Yasası: Farklı elektrolitlerden eşit miktarda elektrik yükü geçirildiğinde, elektrotlarda toplanan maddelerin kütleleri bu maddelerin 'eşdeğer kütleleri' ($M_A / z$) ile doğru orantılıdır. Burada $M_A$ elementin mol kütlesi, $z$ ise bir iyonun aldığı veya verdiği elektron sayısıdır (tesir değerliği). Devreden geçen elektronun mol sayısı $n_{e^-} = \\frac{Q}{96500} = \\frac{I \\cdot t}{96500}$ bulunduktan sonra, katotta $\\text{X}^{z+} + z\\,e^- \\rightarrow \\text{X(k)}$ denklemine göre toplanan katının mol sayısı $n_X = \\frac{n_{e^-}}{z}$ ve kütlesi ($m$) şu genel formülle hesaplanır:\n$$m = \\frac{I \\cdot t \\cdot M_A}{96500 \\cdot z}$$",
-    "Seri Bağlı Elektroliz Kapları: Birden fazla elektroliz kabı birbirine seri bağlandığında, bütün kaplardan aynı sürede eşit miktarda elektrik yükü ($Q_1 = Q_2$) ve eşit mol sayısında elektron ($n_{e^-,1} = n_{e^-,2}$) geçer. Dolayısıyla seri bağlı kapların katotlarında toplanan metallerin mol sayıları ($n_1, n_2$) ile tesir değerliklerinin ($z_1, z_2$) çarpımı birbirine eşittir:\n$$n_1 \\cdot z_1 = n_2 \\cdot z_2 \\implies \\frac{m_1}{M_{A1}} \\cdot z_1 = \\frac{m_2}{M_{A2}} \\cdot z_2$$"
-   ],
-   "kutu": {
-    "tur": "onemli",
-    "baslik": "Birim Dönüşümü Uyarısı",
-    "metin": "$Q = I \\cdot t$ bağıntısında süre ($t$) mutlaka 'saniye' ($\\text{s}$) cinsinden yazılmalıdır! Sorularda süre dakika veya saat olarak verildiğinde $1\\text{ dakika} = 60\\text{ s}$ ve $1\\text{ saat} = 3600\\text{ s}$ dönüşümü yapılmalıdır (Örneğin $96{,}5\\text{ s}$ veya $965\\text{ s}$ sayıları $96500$ ile kolayca sadeleşir)."
-   }
-  },
-  {
-   "baslik": "5. Korozyon, Elektrolitik Kaplama ve Katodik Koruma (Kurban Elektrot)",
-   "metin": [
-    "Metallerin veya alaşımların içinde bulundukları ortamın (oksijen, nem, asidik yağmurlar, tuzlu su) etkisiyle elektrokimyasal tepkimeler sonucunda yükseltgenerek aşınmasına ve metalik özelliklerini kaybetmesine 'korozyon' denir. Günlük hayatta en bilinen örnekleri demirin paslanması ($\\text{Fe}_2\\text{O}_3 \\cdot n\\text{H}_2\\text{O}$), gümüşün kararması ve bakırın yeşil bir tabaka oluşturmasıdır. Korozyon ülke ekonomilerinde her yıl milyarlarca liralık maddi kayba ve güvenlik risklerine yol açar.",
-    "Metalleri korozyondan korumak için; 1) Metali boyamak veya plastik/emaye ile kaplayarak hava ve nemle temasını kesmek, 2) Metali korozyona dayanıklı başka bir metalle kaplamak (örneğin demiri çinko ile kaplamaya 'galvanizleme' denir), 3) Elektrolitik kaplama yapmak ve 4) Katodik koruma (kurban elektrot) uygulamak gibi yöntemler kullanılır.",
-    "Elektrolitik Kaplama: Metal bir eşyanın (örneğin demir bir çatalın) aşınmasını önlemek veya estetik görünüm kazandırmak için elektroliz yöntemiyle gümüş, altın, krom veya nikel ile kaplanmasıdır. Bu işlemde kaplanacak olan eşya (çatal) üretecin $(-)$ kutbuna, yani KATODA bağlanır; kaplama maddesi olan metal (gümüş çubuk) ANODA $(+)$ bağlanır; elektrolit çözeltide ise kaplayacak metalin iyonları ($\\text{Ag}^+$) bulunur. Anottaki gümüş yükseltgenip çözeltiye geçerken, çözeltideki $\\text{Ag}^+$ iyonları katottaki çatalın yüzeyinde indirgenerek pürüzsüz bir tabaka oluşturur.",
-    "Katodik Koruma ve Kurban Elektrot: Toprak altındaki doğalgaz/petrol boru hatları, su tankları, iskele ayakları ve gemi gövdeleri gibi boyanması veya kaplanması yetersiz kalan dev çelik yapıları korozyondan korumak için 'katodik koruma' yöntemi uygulanır. Bu yöntemde korunmak istenen demir/çelik yapıya, kendisinden DAHA AKTİF (yükseltgenme potansiyeli demirden daha büyük) olan magnezyum ($\\text{Mg}$), çinko ($\\text{Zn}$) veya alüminyum ($\\text{Al}$) gibi bir metal doğrudan veya iletken telle bağlanır. Oluşan elektrokimyasal hücrede aktif metal ANOT olur ve demirin yerine kendisi yükseltgenerek zamanla aşınır; bu yüzden bu aktif metale 'Kurban Elektrot' denir. Korunmak istenen demir boru veya gemi gövdesi ise KATOT durumuna geçtiği için yükseltgenemez ve korozyondan tamamen korunmuş olur."
-   ],
-   "kutu": {
-    "tur": "kavram",
-    "baslik": "Kurban Elektrot Seçim Kuralı",
-    "metin": "Bir metali katodik koruma ile korozyondan korumak için seçilecek 'kurban elektrot', korunacak metalden mutlaka DAHA AKTİF olmalıdır (yani yükseltgenme potansiyeli daha büyük veya standart indirgenme potansiyeli daha küçük olmalıdır)."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#10b981\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">KOROZYON VE KOROZYONDAN KORUNMA YÖNTEMLERİ</text><rect x=\"25\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#059669\"/><text x=\"195\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Korozyon ve Elektrolitik Kaplama</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Korozyon: Metallerin ortam etkisiyle elektrokimyasal</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  olarak yükseltgenip aşınmasıdır (Demirin paslanması)</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Boyama ve Galvanizleme (çinko ile kaplama) korur</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Elektrolitik Kaplama: Kaplama yapılacak eşya</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">  KATODA (-), kaplayacak metal ANODA (+) bağlanır</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Çözeltide kaplayacak metalin iyonları bulunur</text><rect x=\"395\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#0ea5e9\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#0ea5e9\"/><text x=\"565\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Katodik Koruma (Kurban Elektrot)</text><text x=\"407\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Gemi gövdeleri, köprü ayakları ve yer altı boru</text><text x=\"407\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  hatlarını korozyondan korumak için uygulanır</text><text x=\"407\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Korunacak metale, kendisinden DAHA AKTİF (E° yükseltgenme</text><text x=\"407\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  potansiyeli daha büyük) bir metal bağlanır</text><text x=\"407\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Aktif metal (Mg, Zn, Al) anot olup kendi yükseltgenir;</text><text x=\"407\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  buna 'Kurban Elektrot' denir; ana metal katot olup korunur</text></svg>"
-  },
-  {
-   "baslik": "6. Kimya ve Elektrik Ünitesi Genel Değerlendirme",
-   "metin": [
-    "Kimya ve Elektrik ünitesi boyunca incelediğimiz redoks tepkimeleri, aktiflik, galvanik piller, elektroliz ve korozyon konuları tek bir temel ilke etrafında birleşir: 'Elektron alışverişi ve metallerin yükseltgenme eğilimi'.",
-    "Galvanik hücrelerde aktif metalden pasif metale doğru kendiliğinden gerçekleşen elektron akışı bize taşınabilir elektrik enerjisi sağlarken; elektrolitik hücrelerde dışarıdan verdiğimiz elektrik enerjisi doğadaki bileşiklerden saf metaller ($\\text{Na, Mg, Al, Cu}$), hidrojen ve klor gazları üretmemizi ve eşyaları kaplamamızı sağlar.",
-    "Korozyon ve katodik koruma bilgisi ise köprülerden gemilere, enerji hatlarından pillerin geri dönüşümüne kadar hem mühendislik güvenliğini hem de doğal kaynakların sürdürülebilir kullanımını mümkün kılar."
-   ],
-   "kutu": {
-    "tur": "ozet",
-    "baslik": "Bölüm Özeti: Elektroliz ve Korozyon",
-    "metin": "1. Pil dengesini ürünlere kaydıran etkiler $E_{\\text{pil}}$'i artırır; elektrot boyutu $E_{\\text{pil}}$'i değiştirmez.\n2. Elektrolizde $Q = I \\cdot t$, $1\\text{ F} = 96500\\text{ C}$ ve $m = \\frac{I \\cdot t \\cdot M_A}{96500 \\cdot z}$'dir.\n3. Elektrolitik kaplamada kaplanacak eşya KATODA $(-)$ bağlanır.\n4. Katodik korumada korunacak metale kendisinden daha aktif bir 'kurban elektrot' bağlanır."
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Net tepkimesi $\\text{Zn(k)} + \\text{Cu}^{2+}\\text{(suda)} \\rightleftharpoons \\text{Zn}^{2+}\\text{(suda)} + \\text{Cu(k)} + \\text{Isı}$ olan bir Daniell pilinde: a) $\\text{Zn}$ yarı hücresine sabit sıcaklıkta saf su eklenirse, b) Sıcaklık artırılırsa, c) $\\text{Cu}$ elektrodun yüzey alanı artırılırsa pil potansiyeli ($E_{\\text{pil}}$) nasıl değişir?",
-   "cevap": "a) $\\text{Zn}$ (anot) yarı hücresine saf su eklendiğinde $[\\text{Zn}^{2+}]$ derişimi azalır; Le Chatelier ilkesine göre denge ürünler yönüne (sağa) kayar ve $E_{\\text{pil}}$ ARTAR.\nb) Pil tepkimesi ekzotermik olduğundan sıcaklık artırıldığında denge girenler yönüne (sola) kayar ve $E_{\\text{pil}}$ AZALIR.\nc) Elektrotların kütlesi ve yüzey alanı pil potansiyelini DEĞİŞTİRMEZ."
-  },
-  {
-   "soru": "Ergimiş $\\text{CaCl}_2$ tuzu $9{,}65\\text{ Amper}$lik sabit akımla $200\\text{ saniye}$ süreyle elektroliz ediliyor. Katotta kaç gram kalsiyum ($\\text{Ca}$) metali toplanır ve anotta normal koşullarda (NŞA) kaç litre $\\text{Cl}_2$ gazı açığa çıkar? ($\\text{Ca} = 40\\text{ g/mol}$, $1\\text{ F} = 96500\\text{ C}$)",
-   "cevap": "Devreden geçen yük: $Q = I \\cdot t = 9{,}65 \\cdot 200 = 1930\\text{ C}$. Geçen elektronun mol sayısı: $n_{e^-} = \\frac{1930}{96500} = 0{,}02\\text{ mol } e^-$.\nKatotta: $\\text{Ca}^{2+} + 2e^- \\rightarrow \\text{Ca(k)}$ tepkimesine göre $0{,}02\\text{ mol } e^-$ geçtiğinde $0{,}01\\text{ mol Ca}$ toplanır; kütlesi $m = 0{,}01 \\cdot 40 = 0{,}4\\text{ gram Ca}$ olur.\nAnotta: $2\\text{Cl}^- \\rightarrow \\text{Cl}_2\\text{(g)} + 2e^-$ tepkimesine göre $0{,}01\\text{ mol } \\text{Cl}_2$ gazı oluşur; NŞA'daki hacmi $V = 0{,}01 \\cdot 22{,}4 = 0{,}224\\text{ Litre}$ olur."
-  },
-  {
-   "soru": "Seri bağlı iki elektroliz kabından birincisinde erimiş $\\text{AlCl}_3$, ikincisinde ise erimiş $\\text{MgCl}_2$ tuzu bulunmaktadır. Birinci kabın katodunda $5{,}4\\text{ gram Al}$ metali toplandığında, ikinci kabın katodunda kaç gram $\\text{Mg}$ metali toplanır? ($\\text{Al} = 27\\text{ g/mol}$, $\\text{Mg} = 24\\text{ g/mol}$)",
-   "cevap": "Seri bağlı kaplarda $n_1 \\cdot z_1 = n_2 \\cdot z_2$ bağıntısı geçerlidir. $\\text{Al}^{3+}$ için $z_1 = 3$ ve $n_{\\text{Al}} = 5{,}4 / 27 = 0{,}2\\text{ mol}$'dür. Devreden geçen elektron miktarı $n_{e^-} = 0{,}2 \\cdot 3 = 0{,}6\\text{ mol}$'dür. İkinci kapta $\\text{Mg}^{2+}$ için $z_2 = 2$ olduğundan $n_{\\text{Mg}} \\cdot 2 = 0{,}6 \\implies n_{\\text{Mg}} = 0{,}3\\text{ mol}$ olur. Toplanan magnezyum kütlesi: $m_{\\text{Mg}} = 0{,}3 \\cdot 24 = 7{,}2\\text{ gram}$ bulunur."
-  },
-  {
-   "soru": "Hoffman voltametresinde bir miktar su elektroliz edildiğinde anotta normal koşullarda $4{,}48\\text{ L}$ gaz toplandığı görülüyor. Buna göre katotta hangi gazdan kaç litre toplanmıştır ve devreden kaç Faradaylık elektrik yükü geçmiştir?",
-   "cevap": "Suyun elektrolizinde anotta $\\text{O}_2$, katotta ise onun iki katı hacimde $\\text{H}_2$ gazı toplanır. Anotta $4{,}48\\text{ L}$ ($4{,}48 / 22{,}4 = 0{,}2\\text{ mol}$) $\\text{O}_2$ gazı toplandığına göre, katotta $2 \\times 4{,}48 = 8{,}96\\text{ L}$ ($0{,}4\\text{ mol}$) $\\text{H}_2$ gazı toplanmıştır. $2\\text{H}^+ + 2e^- \\rightarrow \\text{H}_2$ denklemine göre $0{,}4\\text{ mol } \\text{H}_2$ için devreden $2 \\times 0{,}4 = 0{,}8\\text{ mol } e^-$, yani $0{,}8\\text{ Faraday}$ yük geçmiştir."
-  },
-  {
-   "soru": "Demirden ($\\text{Fe}$) yapılmış bir yer altı su borusunu korozyondan korumak için katodik koruma yapılacaktır. Metallerin aktiflik sırası $\\text{Mg} > \\text{Zn} > \\text{Fe} > \\text{Cu} > \\text{Ag}$ olduğuna göre, hangi metaller 'kurban elektrot' olarak seçilebilir ve kurban elektrot sistemi nasıl korur?",
-   "cevap": "Kurban elektrot olarak korunacak metalden ($\\text{Fe}$) daha aktif olan metaller seçilmelidir; bu nedenle $\\text{Mg}$ ve $\\text{Zn}$ metalleri kurban elektrot olarak kullanılabilir ($\\text{Cu}$ ve $\\text{Ag}$ kullanılamaz). $\\text{Mg}$ veya $\\text{Zn}$ demir boruya bağlandığında anot görevi üstlenerek demirin yerine kendisi yükseltgenir; demir boru ise katot durumuna geçerek korozyondan korunur."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "dogru_yanlis",
-   "soru": "Bir elektrokimyasal pilde anot veya katot elektrodun kütlesini ve yüzey alanını artırmak pilin başlangıç potansiyelini ($E_{\\text{pil}}$) artırır.",
-   "cevap": "Yanlış",
-   "aciklama": "Elektrotların kütlesi ve yüzey alanı pil potansiyelini ($E_{\\text{pil}}$) değiştirmez, yalnızca pilin kullanım süresini etkiler."
-  },
-  {
-   "tur": "dogru_yanlis",
-   "soru": "Elektroliz yöntemiyle demir bir anahtar gümüşle kaplanmak istendiğinde, demir anahtar elektroliz kabının katot $(-)$ kutbuna bağlanmalıdır.",
-   "cevap": "Doğru",
-   "aciklama": "Elektrolitik kaplamada kaplanacak eşya daima katoda $(-)$ bağlanır ki çözeltideki metal katyonları eşyanın yüzeyinde indirgenerek biriksin."
-  },
-  {
-   "tur": "coktan_secmeli",
-   "soru": "Suyun Hoffman voltametresinde elektrolizi ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
-   "secenekler": [
-    "Katotta hidrojen gazı ($\\text{H}_2$), anotta oksijen gazı ($\\text{O}_2$) açığa çıkar.",
-    "İletkenliği artırmak için suya az miktarda elektrolit eklenir.",
-    "Anotta toplanan gaz hacmi, katotta toplanan gaz hacminin iki katıdır.",
-    "Elektrik enerjisi kimyasal enerjiye dönüşür."
-   ],
-   "cevap": "Anotta toplanan gaz hacmi, katotta toplanan gaz hacminin iki katıdır.",
-   "aciklama": "Suyun ($\\text{H}_2\\text{O}$) elektrolizinde katotta toplanan $\\text{H}_2$ gazının hacmi ($2V$), anotta toplanan $\\text{O}_2$ gazının hacminin ($V$) iki katıdır."
-  },
-  {
-   "tur": "coktan_secmeli",
-   "soru": "Erimiş $\\text{AgNO}_3$ tuzunun elektrolizinde devreden $0{,}5\\text{ Faraday}$lık elektrik yükü geçirildiğinde katotta kaç gram gümüş ($\\text{Ag}$) metali toplanır? ($\\text{Ag} = 108\\text{ g/mol}$)",
-   "secenekler": [
-    "27",
-    "54",
-    "108",
-    "216"
-   ],
-   "cevap": "54",
-   "aciklama": "$0{,}5\\text{ F} = 0{,}5\\text{ mol } e^-$ demektir. $\\text{Ag}^+ + e^- \\rightarrow \\text{Ag(k)}$ tepkimesine göre $0{,}5\\text{ mol Ag}$ toplanır; $m = 0{,}5 \\times 108 = 54\\text{ gram}$ olur."
-  },
-  {
-   "tur": "bosluk_doldurma",
-   "soru": "Kimyada $1\\text{ mol}$ elektronun taşıdığı yaklaşık $96500\\text{ Coulomb}$luk elektrik yüküne $1$ __________ denir.",
-   "cevap": "Faraday",
-   "aciklama": "$1\\text{ mol}$ elektronun yükü $1\\text{ Faraday}$ ($1\\text{ F} \\approx 96500\\text{ C}$) olarak tanımlanır."
-  },
-  {
-   "tur": "bosluk_doldurma",
-   "soru": "Gemi gövdelerini ve yer altı boru hatlarını korozyondan korumak amacıyla bu yapılara bağlanan ve kendisi anot olarak yükseltgenen daha aktif metale __________ elektrot denir.",
-   "cevap": "kurban",
-   "aciklama": "Katodik korumada ana metalin yerine yükseltgenerek aşınan aktif metale kurban elektrot denir."
-  },
-  {
-   "tur": "eslestirme",
-   "soru": "Aşağıdaki elektrokimyasal kavramları açıklamalarıyla eşleştiriniz.",
-   "eslestirmeler": [
+  "ad": "12-kimya-2",
+  "sinif": 12,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 4,
+  "tarih": "21-25 Eylül 2026",
+  "yayin_tarihi": "2026-10-16",
+  "unite": "12.1. KİMYA VE ELEKTRİK",
+  "konu": "12.1.2. Elektrokimyasal Hücrelerin Çalışma İlkesi (Daniell Pili), Tuz Köprüsünün İşlevi ve Pil Şeması Gösterimi",
+  "ciktilar": [
+    "12.1.1.3. İndirgenme-yükseltgenme tepkimelerini denkleştirir.",
+    "12.1.1.4. İndirgenme-yükseltgenme tepkimeleri ile elektrik enerjisi arasındaki ilişkiyi açıklar.",
+    "12.1.2.1. Elektrot ve elektrokimyasal hücre kavramlarını açıklar."
+  ],
+  "giris": "Çinko ($Zn$) ve bakır ($Cu$) yarı hücrelerinden oluşan **Daniell pili** üzerinde elektronların dış devredeki akış yönünü, elektrot kütlelerindeki ve çözelti derişimlerindeki değişimleri, **tuz köprüsündeki** anyon ve katyon göçünü ve standart **IUPAC pil şeması** ($\\text{Anot} \\mid \\text{Anot çözeltisi} \\parallel \\text{Katot çözeltisi} \\mid \\text{Katot}$) gösterimini inceliyoruz.",
+  "ozet": [
+    "Redoks tepkimeleri {koyu:alınan ve verilen toplam elektron sayılarının eşit olması} ilkesine göre {koyu:yükseltgenme basamağı değişim yöntemi} veya {koyu:yarı tepkime yöntemi} kullanılarak denkleştirilir.",
+    "Bir redoks tepkimesinde birden fazla element yükseltgenebilir veya indirgenebilir (örneğin As₂S₃ bileşiğinde hem As hem de S yükseltgenerek 1 mol As₂S₃ toplam 10 mol elektron verir).",
+    "İndirgen ve yükseltgen maddeler aynı kapta {koyu:doğrudan temasla} tepkimeye girdiğinde elektrik enerjisi elde edilemezken, {koyu:John Frederic Daniell}'in tasarladığı gibi iki ayrı yarı hücre iletken tel ve tuz köprüsüyle bağlandığında ({koyu:Daniell pili}) kimyasal enerji elektrik enerjisine dönüşür.",
+    "Kendiliğinden gerçekleşen {koyu:istemli redoks tepkimelerinde} kimyasal enerji elektrik enerjisine dönüşürken, kendiliğinden gerçekleşmeyen {koyu:istemsiz redoks tepkimelerinde} dışarıdan elektrik enerjisi harcanarak kimyasal değişim sağlanır.",
+    "Galvanik hücrede yükseltgenmenin olduğu elektrot {koyu:anot (− kutup)}, indirgenmenin olduğu elektrot {koyu:katot (+ kutup)} olup dış devrede elektronlar {koyu:anottan katoda} doğru akar; tepkimeye girmeyen Pt, Au ve grafit gibi iletkenlere {koyu:inert elektrot} denir.",
+    "Ters U borusu şeklindeki {koyu:tuz köprüsünde} bulunan doygun tuz çözeltisindeki {koyu:anyonlar anot kabına, katyonlar ise katot kabına} göç ederek yarı hücrelerdeki yük denkliğini korur; yarı hücre potansiyelleri ise potansiyeli {koyu:0,00 V} kabul edilen {koyu:Standart Hidrojen Elektroda (SHE)} göre ölçülür."
+  ],
+  "bolumler": [
     {
-     "sol": "Elektroliz",
-     "sag": "İstemsiz redoks tepkimesinin elektrik enerjisiyle gerçekleştirilmesi"
+      "baslik": "Redoks Tepkimeleri, Elektrik Enerjisi ve İstemlilik",
+      "metin": [
+        "Redoks tepkimelerinde elektron alışverişi aynı kap içinde {koyu:doğrudan temasla} veya iki ayrı kap arasında {koyu:dolaylı yoldan} gerçekleşebilir. Bir beherglastaki 1 M CuSO₄ çözeltisine Zn metali batırıldığında Zn metali 2 elektron vererek yükseltgenir, çözeltideki {us:Cu|2+} iyonları ise bu elektronları alarak indirgenir; Zn çubuk üzerinde kızılımsı kahverengi Cu katısı birikirken çözeltinin mavi rengi kaybolur. Ancak elektron alışverişi doğrudan temasla gerçekleştiği için bu düzenekten elektrik enerjisi elde edilemez. İngiliz bilim insanı {koyu:John Frederic Daniell}, Zn levhayı ZnSO₄ çözeltisine, Cu levhayı CuSO₄ çözeltisine batırıp iki yarı hücreyi iletken tel ve tuz köprüsüyle bağlayarak {koyu:Daniell pilini} (galvanik hücre) kurmuş ve dış devreden geçen elektronlarla kullanılabilir elektrik enerjisi üretmiştir.",
+        "Başladıktan sonra dışarıdan bir etki olmaksızın kendiliğinden devam eden tepkimelere {koyu:istemli tepkime} denir (örneğin H₂(g) + {kesir:1|2}O₂(g) → H₂O(s) tepkimesi ve pil tepkimeleri). {koyu:İstemli redoks tepkimelerinde kimyasal enerji elektrik enerjisine dönüşür.} Kendiliğinden gerçekleşmeyen, gerçekleşmesi için dışarıdan sürekli enerji verilmesi gereken tepkimelere ise {koyu:istemsiz tepkime} denir (örneğin suyun H₂O(s) → H₂(g) + {kesir:1|2}O₂(g) şeklinde ayrışması). {koyu:İstemsiz redoks tepkimelerinde elektrik enerjisi harcanarak kimyasal enerjiye dönüştürülür.}"
+      ],
+      "kutu": {
+        "tur": "bilgi",
+        "baslik": "Diş Dolgusu ve Alüminyum Folyo Neden Elektrik Çarpması Hissedilir?",
+        "metin": "Ağızdaki metal diş dolgusu ile yanlışlıkla ısırılan alüminyum folyo {koyu:iki farklı metal elektrot}, tükürük salgısı ise {koyu:elektrolit} görevi görerek ağız içinde küçük bir {koyu:galvanik hücre (pil)} oluşturur; oluşan elektrik akımı diş kökündeki sinirler tarafından ağrı olarak beyne iletilir."
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#38bdf8\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">PİL POTANSİYELİNE ETKİ EDEN FAKTÖRLER (LE CHATELIER İLKESİ)</text><rect x=\"25\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#0284c7\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#0284c7\"/><text x=\"195\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Pil potansiyelini (E_pil) Artıran Etkiler</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Net pil tepkimesi: A(k) + B⁺(suda) ⇌ A⁺(suda) + B(k) + ısı</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• Katot yarı hücresindeki B⁺ derişimini artırmak</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Anot yarı hücresindeki A⁺ derişimini azaltmak (su eklemek)</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Anot yarı hücresine A⁺ iyonlarını çöktüren madde eklemek</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Ekzotermik pil tepkimesinde sıcaklığı düşürmek</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Dengeyi ürünler yönüne (sağa) kaydıran her etki E_pil'i artırır</text><rect x=\"395\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#10b981\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#10b981\"/><text x=\"565\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Pil Potansiyelini Değiştirmeyen / Azaltanlar</text><text x=\"407\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Elektrotların kütlesi, boyutu ve temas yüzeyi</text><text x=\"407\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  pil potansiyelini (E_pil) DEĞİŞTİRMEZ!</text><text x=\"407\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Anot derişimini artırmak veya katot derişimini</text><text x=\"407\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  azaltmak dengeyi girenlere kaydırır (E_pil azalır)</text><text x=\"407\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Sıcaklığı artırmak dengeyi sola kaydırır (E_pil azalır)</text><text x=\"407\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Pil çalıştıkça E_pil azalır; E_pil = 0 olunca pil biter</text></svg>"
     },
     {
-     "sol": "Korozyon",
-     "sag": "Metallerin ortam etkisiyle yükseltgenerek aşınması ve paslanması"
+      "baslik": "Elektrot, Elektrolit, Tuz Köprüsü ve Galvanik Hücre Yapısı",
+      "metin": [
+        "Bir metalin kendi katyonunu içeren çözeltiye daldırılmasıyla oluşturulan düzeneğe {koyu:yarı hücre}; iki yarı hücrenin iletken bir tel ve tuz köprüsüyle birbirine bağlanmasıyla kurulan ve kimyasal enerjiyi elektrik enerjisine çeviren düzeneğe ise {koyu:galvanik hücre (elektrokimyasal pil)} denir. Serbest iyon içererek elektrik akımını ileten çözeltilere {koyu:elektrolit}, elektrolit içine batırılan metal veya grafit çubuklara {koyu:elektrot} adı verilir. İndirgenme-yükseltgenme tepkimesine girmeyen, yalnızca elektron iletimini sağlayan {koyu:platin (Pt), altın (Au) ve grafit} gibi etkisiz iletkenlere ise {koyu:inert (soy) elektrot} denir.",
+        "Galvanik hücrede {koyu:yükseltgenmenin gerçekleştiği elektroda anot}, {koyu:indirgenmenin gerçekleştiği elektroda ise katot} adı verilir. Pil çalışırken negatif yüklü elektronlar anotta açığa çıktığı için {koyu:anot '-' işaretiyle}, katot ise {koyu:'+' işaretiyle} gösterilir ve dış devrede {koyu:elektron akışı her zaman anottan katoda doğrudur}. İçinde KNO₃, NaCl, KCl gibi suda çok çözünen tuzların doygun çözeltisi bulunan ve uçları gözenekli malzemeyle kapatılmış ters U borusuna {koyu:tuz köprüsü} denir. Tuz köprüsündeki {koyu:anyonlar (− yüklü iyonlar) anot bölmesine}, {koyu:katyonlar (+ yüklü iyonlar) ise katot bölmesine} göç ederek yük denkliğini sağlar ve devreyi tamamlar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Bileşen / Kutup",
+          "Gerçekleşen Olay ve İşareti",
+          "Zamanla Gözlenen Değişimler"
+        ],
+        "satirlar": [
+          [
+            "Anot Yarı Hücresi",
+            "Yükseltgenme olur; '-' kutuptur.",
+            "Elektrot kütlesi azalır (aşınır); çözeltideki katyon derişimi artar; tuz köprüsünden anyonlar gelir."
+          ],
+          [
+            "Katot Yarı Hücresi",
+            "İndirgenme olur; '+' kutuptur.",
+            "Elektrot üzerinde metal birikir (inert/gaz değilse kütle artar); çözeltideki katyon derişimi azalır; tuz köprüsünden katyonlar gelir."
+          ],
+          [
+            "Dış İletken Tel ve Voltmetre",
+            "Elektron iletimi sağlar.",
+            "Elektronlar her zaman anottan katoda doğru akar; pil potansiyeli zamanla azalır."
+          ],
+          [
+            "Tuz Köprüsü (KNO₃, NaCl, KCl)",
+            "İyon göçüyle yük denkliğini korur.",
+            "Anyonlar (−) anoda, katyonlar (+) katoda geçerek çözeltilerin elektriksel nötrlüğünü korur."
+          ]
+        ]
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#f59e0b\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">GALVANİK HÜCRE (PİL) İLE ELEKTROLİTİK HÜCRE KARŞILAŞTIRMASI</text><rect x=\"25\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#d97706\"/><text x=\"195\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Galvanik Hücre (Elektrokimyasal Pil)</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Kimyasal enerjiyi elektrik enerjisine dönüştürür</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• İstemsiz değil, İSTEMLİ redoks tepkimesidir (E° > 0)</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Anot negatif (-), katot pozitif (+) kutuptur</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Anotta yükseltgenme, katotta indirgenme olur</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Tuz köprüsü ile yük denkliği sağlanır</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Örnek: Daniell pili, lityum-iyon piller</text><rect x=\"395\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#8b5cf6\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#8b5cf6\"/><text x=\"565\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Elektrolitik Hücre (Elektroliz Kabı)</text><text x=\"407\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Elektrik enerjisini kimyasal enerjiye dönüştürür</text><text x=\"407\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• İSTEMSİZ redoks tepkimesi dış üreteçle gerçekleştirilir</text><text x=\"407\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Anot pozitif (+), katot negatif (-) kutuptur</text><text x=\"407\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Yine anotta yükseltgenme, katotta indirgenme olur</text><text x=\"407\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Katyonlar (-) katoda, anyonlar (+) anoda gider</text><text x=\"407\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Örnek: Suyun elektrolizi, erimiş tuzların elektrolizi</text></svg>"
     },
     {
-     "sol": "Katodik Koruma",
-     "sag": "Metali kendisinden daha aktif bir kurban elektrot bağlayarak koruma"
+      "baslik": "Cu-Ag ve Zn-Cu Pillerinde Zamanla Meydana Gelen Değişimler",
+      "metin": [
+        "Birinci örnek olarak {koyu:Cu / {us:Cu|2+} ve Ag / {us:Ag|+} yarı hücrelerinden} oluşan ve doygun KNO₃ tuz köprüsü içeren galvanik hücreyi inceleyelim: Cu metalinin yükseltgenme eğilimi Ag metalinden büyük olduğu için {koyu:Cu elektrot anot (−)}, {koyu:Ag elektrot ise katot (+)} olur. Anotta Cu(k) → {us:Cu|2+}(suda) + 2e⁻ yükseltgenmesi, katotta ise 2{us:Ag|+}(suda) + 2e⁻ → 2Ag(k) indirgenmesi gerçekleşir. Pil çalışırken zamanla {koyu:Cu metalinin kütlesi azalır}, {koyu:Ag metalinin kütlesi artar}, {koyu:{us:Cu|2+} iyon derişimi artar}, {koyu:{us:Ag|+} iyon derişimi azalır}, tuz köprüsündeki {us:NO₃|−} anyonları Cu yarı hücresine, {us:K|+} katyonları Ag yarı hücresine geçer ve {koyu:pil potansiyeli zamanla azalır}.",
+        "İkinci örnek olan {koyu:Zn / ZnSO₄ ve Cu / CuSO₄ (Daniell pili)} düzeneğinde ise Zn metali Cu metalinden daha aktif olduğundan {koyu:Zn elektrot anot (−)}, {koyu:Cu elektrot katot (+)} olur. Anotta Zn(k) → {us:Zn|2+}(suda) + 2e⁻ yarı tepkimesiyle Zn çubuk aşınır ve [{us:Zn|2+}] derişimi artar; dış devreden Cu elektroda gelen elektronlarla katotta {us:Cu|2+}(suda) + 2e⁻ → Cu(k) yarı tepkimesi gerçekleşir, Cu elektrodun kütlesi artarken [{us:Cu|2+}] derişimi azalır. KCl içeren tuz köprüsünde {us:Cl|−} iyonları anot (Zn) kabına, {us:K|+} iyonları katot (Cu) kabına göç eder."
+      ],
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#a855f7\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">FARADAY ELEKTROLİZ YASALARI VE HESAPLAMALARI</text><rect x=\"25\" y=\"50\" width=\"225\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#6366f1\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"225\" height=\"32\" rx=\"12\" fill=\"#6366f1\"/><text x=\"137\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">1. Temel Bağıntılar</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Q = I · t</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  Q: Yük (Coulomb, C)</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">  I: Akım şiddeti (Amper, A)</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  t: Süre (Saniye, s)</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• 1 mol e⁻ = 1 Faraday (F)</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• 1 F ≈ 96500 Coulomb</text><rect x=\"268\" y=\"50\" width=\"225\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#ec4899\" stroke-width=\"2\"/><rect x=\"268\" y=\"50\" width=\"225\" height=\"32\" rx=\"12\" fill=\"#ec4899\"/><text x=\"380\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">2. Kütle Hesabı (m)</text><text x=\"280\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• n(e⁻) = Q / 96500 = (I · t) / 96500</text><text x=\"280\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• Xⁿ⁺ + n e⁻ -> X(k)</text><text x=\"280\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Toplanan madde kütlesi:</text><text x=\"280\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  m = (I · t · M_A) / (96500 · z)</text><text x=\"280\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• M_A: Mol kütlesi</text><text x=\"280\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• z: Alınan/verilen e⁻ sayısı (tesir)</text><rect x=\"510\" y=\"50\" width=\"225\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#14b8a6\" stroke-width=\"2\"/><rect x=\"510\" y=\"50\" width=\"225\" height=\"32\" rx=\"12\" fill=\"#14b8a6\"/><text x=\"622\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">3. Seri Bağlı Kaplar</text><text x=\"522\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Seri bağlı elektroliz kaplarından</text><text x=\"522\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  geçen elektrik yükü (Q) ve</text><text x=\"522\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">  devreden geçen e⁻ mol sayısı</text><text x=\"522\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  BİRBİRİNE EŞİTTİR!</text><text x=\"522\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• n₁ · z₁ = n₂ · z₂</text><text x=\"522\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• (m₁/M_A1)·z₁ = (m₂/M_A2)·z₂</text></svg>"
     },
     {
-     "sol": "Lityum-İyon Pil",
-     "sag": "Yüksek enerji yoğunluklu, hafif ve şarj edilebilir sekonder pil"
+      "baslik": "Standart Pil Potansiyeli (E°pil) ve Standart Hidrojen Elektrot (SHE)",
+      "metin": [
+        "Net pil tepkimesinin potansiyeli; çözeltilerin derişimine, sıcaklığa ve gaz elektrot varsa gazın basıncına bağlıdır. {koyu:25 °C sıcaklıkta, iyon derişimleri 1 M (1 mol/L) ve gaz basıncı 1 atm} alınarak oluşturulan pile {koyu:standart pil}, bu pilin başlangıç potansiyeline ise {koyu:standart pil potansiyeli (E°pil)} denir ve {koyu:E°pil = E°yükseltgenme + E°indirgenme} bağıntısıyla hesaplanır.",
+        "Yükseltgenme ve indirgenme yarı tepkimeleri tek başına gerçekleşemediğinden yarı hücre potansiyelleri referans bir elektroda göre ölçülür. Tıpkı rakım ölçümlerinde deniz seviyesinin 0 m kabul edilmesi gibi, elektrokimyada referans olarak seçilen {koyu:Standart Hidrojen Elektrodun (SHE)} potansiyeli {koyu:E° = 0,00 V} kabul edilmiştir. SHE; {koyu:1 M {us:H|+} iyonu içeren asit çözeltisine daldırılmış inert bir platin (Pt) elektrot ve 25 °C'ta 1 atm basınçla gönderilen H₂ gazından} oluşur. SHE anot olduğunda H₂(g) → 2{us:H|+}(suda) + 2e⁻ (E° = 0,00 V), katot olduğunda ise 2{us:H|+}(suda) + 2e⁻ → H₂(g) (E° = 0,00 V) yarı tepkimesi gerçekleşir."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Zn - SHE Pilinde Gözlenen Değişimler",
+        "metin": "Standart çinko (Zn) elektrot ile Standart Hidrojen Elektrot (SHE) bağlandığında pil potansiyeli {koyu:0,763 V} ölçülür. Pil çalışırken {koyu:Zn elektrot (anot) aşınıp kütlesi azalırken}, SHE bölmesindeki {koyu:Pt levha (katot) üzerinde H₂ gazı kabarcıkları} oluşur ve Pt elektrodun kütlesi değişmez."
+      },
+      "gorsel": "<svg viewBox=\"0 0 720 285\" role=\"img\" aria-label=\"Standart Pil Potansiyeli ve Standart Hidrojen Elektrot\">\n    <rect x=\"20\" y=\"16\" width=\"680\" height=\"44\" rx=\"10\" fill=\"#312e81\"/>\n    <text x=\"360\" y=\"44\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#ffffff\">Standart Pil Potansiyeli (E°pil) ve Standart Hidrojen Elektrot (SHE)</text>\n\n    <rect x=\"25\" y=\"75\" width=\"320\" height=\"195\" rx=\"12\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\"/>\n    <text x=\"185\" y=\"102\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#312e81\">Standart Koşullar ve E°pil</text>\n    <text x=\"42\" y=\"128\" font-size=\"12\" fill=\"#3730a3\">• Sıcaklık: 25 °C   |   Basınç: 1 atm</text>\n    <text x=\"42\" y=\"150\" font-size=\"12\" fill=\"#3730a3\">• Çözelti iyon derişimi: 1 M (1 mol/L)</text>\n    <rect x=\"42\" y=\"166\" width=\"286\" height=\"40\" rx=\"8\" fill=\"#e0e7ff\"/>\n    <text x=\"185\" y=\"191\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#312e81\">E°pil = E°yükseltgenme + E°indirgenme</text>\n    <text x=\"42\" y=\"228\" font-size=\"11\" fill=\"#3730a3\">• Pil potansiyeli derişime, sıcaklığa ve</text>\n    <text x=\"42\" y=\"246\" font-size=\"11\" fill=\"#3730a3\">  gaz elektrot varsa gaz basıncına bağlıdır.</text>\n\n    <rect x=\"375\" y=\"75\" width=\"320\" height=\"195\" rx=\"12\" fill=\"#fff7ed\" stroke=\"#f97316\" stroke-width=\"2\"/>\n    <text x=\"535\" y=\"102\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#9a3412\">Referans: Standart Hidrojen Elektrot (SHE)</text>\n    <text x=\"392\" y=\"126\" font-size=\"11\" fill=\"#7c2d12\">• 1 M H⁺ asit çözeltisine daldırılmış inert</text>\n    <text x=\"392\" y=\"144\" font-size=\"11\" fill=\"#7c2d12\">  Pt elektrot ve 1 atm H₂(g) (25 °C) içerir.</text>\n    <text x=\"392\" y=\"168\" font-size=\"12\" font-weight=\"bold\" fill=\"#c2410c\">• Deniz seviyesinin 0 m kabul edilmesi gibi</text>\n    <text x=\"392\" y=\"186\" font-size=\"12\" font-weight=\"bold\" fill=\"#c2410c\">  SHE potansiyeli E° = 0,00 V kabul edilir:</text>\n    <text x=\"392\" y=\"212\" font-size=\"11\" fill=\"#7c2d12\">• Anot ise: H₂(g) → 2H⁺(suda) + 2e⁻ (E° = 0,00 V)</text>\n    <text x=\"392\" y=\"232\" font-size=\"11\" fill=\"#7c2d12\">• Katot ise: 2H⁺(suda) + 2e⁻ → H₂(g) (E° = 0,00 V)</text>\n    <text x=\"392\" y=\"254\" font-size=\"11\" font-weight=\"bold\" fill=\"#9a3412\">• Zn-SHE pilinde E°pil = 0,763 V (Zn anot, Pt katot)</text>\n    </svg>"
+    },
+    {
+      "baslik": "1. Standart Hidrojen Elektrodu (SHE) ve Standart Elektrot Potansiyeli",
+      "metin": [
+        "Elektrokimyasal bir hücrede tek bir elektrodun mutlak potansiyelini ölçmek imkânsızdır; voltmetre yalnızca iki yarı hücre arasındaki {koyu:potansiyel farkını} ölçebilir. Bu nedenle IUPAC, standart koşullarda (25 °C sıcaklık, 1 M H+ asit çözeltisi ve 1 atm basınçta H2 gazı, platin elektrot) çalışan {koyu:Standart Hidrojen Elektrodunun (SHE)} hem indirgenme hem yükseltgenme potansiyelini referans olarak {koyu:0,00 V} kabul etmiştir:\n• {koyu:2H+(suda, 1 M) + 2e- <=> H2(g, 1 atm)    E° = 0,00 V}",
+        "Diğer tüm elementlerin standart indirgenme potansiyelleri (E°_ind) SHE ile oluşturdukları pilin gerilimi ölçülerek belirlenmiştir:\n• {koyu:Aktif Metaller (Li, K, Ca, Na, Mg, Al, Zn, Cr, Fe, Ni, Sn, Pb):} Elektron verme eğilimleri hidrojenden büyüktür; standart indirgenme potansiyelleri {koyu:negatif (E°_ind < 0)}, yükseltgenme potansiyelleri ise {koyu:pozitiftir (E°_yüks > 0)}. Asitlerle (H+) tepkimeye girerek {koyu:H2 gazı} çıkarırlar.\n• {koyu:Soy ve Yarı Soy Metaller (Cu, Hg, Ag, Pt, Au):} Elektron verme eğilimleri hidrojenden küçüktür; standart indirgenme potansiyelleri {koyu:pozitiftir (E°_ind > 0)}. Yapılarında oksijen bulunmayan HCl, HBr gibi asitlerle H2 gazı çıkaramazlar."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Yarı Tepkime Katsayıyla Çarpıldığında E° Değişmez!",
+        "metin": "Entalpi (ΔH) madde miktarına bağlı olduğu için denklem 2 ile çarpıldığında ΔH da 2 ile çarpılırdı. Ancak {koyu:Standart Elektrot Potansiyeli (E°)} birim yük başına düşen enerji olduğu için madde miktarına bağlı değildir! Denklem 2 veya 3 ile çarpıldığında {koyu:E° kesinlikle çarpılmaz, sabit kalır}; yalnız denklem ters çevrilirse işareti değişir."
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#10b981\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">KOROZYON VE KOROZYONDAN KORUNMA YÖNTEMLERİ</text><rect x=\"25\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#059669\"/><text x=\"195\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Korozyon ve Elektrolitik Kaplama</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Korozyon: Metallerin ortam etkisiyle elektrokimyasal</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  olarak yükseltgenip aşınmasıdır (Demirin paslanması)</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Boyama ve Galvanizleme (çinko ile kaplama) korur</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Elektrolitik Kaplama: Kaplama yapılacak eşya</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">  KATODA (-), kaplayacak metal ANODA (+) bağlanır</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Çözeltide kaplayacak metalin iyonları bulunur</text><rect x=\"395\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#0ea5e9\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#0ea5e9\"/><text x=\"565\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Katodik Koruma (Kurban Elektrot)</text><text x=\"407\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Gemi gövdeleri, köprü ayakları ve yer altı boru</text><text x=\"407\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  hatlarını korozyondan korumak için uygulanır</text><text x=\"407\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Korunacak metale, kendisinden DAHA AKTİF (E° yükseltgenme</text><text x=\"407\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  potansiyeli daha büyük) bir metal bağlanır</text><text x=\"407\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Aktif metal (Mg, Zn, Al) anot olup kendi yükseltgenir;</text><text x=\"407\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  buna 'Kurban Elektrot' denir; ana metal katot olup korunur</text></svg>"
     }
-   ],
-   "aciklama": "Elektrokimya ilkeleri enerji depolamadan metal kaplamaya kadar geniş bir uygulama alanına sahiptir."
-  },
-  {
-   "tur": "klasik",
-   "soru": "Galvanik hücre (pil) ile elektrolitik hücre (elektroliz kabı) arasındaki üç temel farkı belirtiniz.",
-   "cevap": "1) Galvanik hücrede kimyasal enerji elektrik enerjisine dönüşürken, elektrolitik hücrede elektrik enerjisi kimyasal enerjiye dönüşür.\n2) Galvanik hücrede tepkime istemlidir ($E^\\circ > 0$), elektrolitik hücrede ise tepkime istemsizdir ($E^\\circ < 0$).\n3) Galvanik hücrede anot $(-)$, katot $(+)$ kutup iken; elektrolitik hücrede anot $(+)$, katot $(-)$ kutuptur."
-  }
- ]
+  ],
+  "ornekler": [
+    {
+      "soru": "H₂S(suda) + HNO₃(suda) → S(k) + NO(g) + H₂O(s) redoks tepkimesini yükseltgenme basamağı değişim yöntemini kullanarak en küçük tam sayılarla denkleştiriniz.",
+      "cevap": "H₂S bileşiğindeki {us:S|2−} atomu {us:S|0}'a yükseltgenerek 2 elektron verir; HNO₃ bileşiğindeki {us:N|5+} atomu ise NO'daki {us:N|2+}'ya indirgenerek 3 elektron alır. Alınan ve verilen elektronları eşitlemek için H₂S ve S'yi 3 ile, HNO₃ ve NO'yu 2 ile çarparız (6e⁻). Son adımda H ve O atomlarını eşitlemek için H₂O'nun önüne 4 yazdığımızda denklem {koyu:3H₂S + 2HNO₃ → 3S + 2NO + 4H₂O} olarak denkleşir."
+    },
+    {
+      "soru": "As₂S₃(k) + HNO₃(suda) + H₂O(s) → H₃AsO₄(suda) + S(k) + NO(g) tepkimesinde 1 mol As₂S₃ toplam kaç mol elektron verir ve tepkime en küçük tam sayılarla denkleştirildiğinde H₂O'nun katsayısı kaç olur?",
+      "cevap": "As₂S₃ içinde As'nin yükseltgenme basamağı +3, S'nin ise −2'dir. Ürünlerde {us:As|5+} ve {us:S|0} oluştuğundan: 2 tane As atomu (+3 → +5) toplam 2 × 2 = 4e⁻ verir; 3 tane S atomu (−2 → 0) toplam 3 × 2 = 6e⁻ verir. Böylece {koyu:1 mol As₂S₃ toplam 10 mol elektron verir}. HNO₃ içindeki {us:N|5+} ise {us:N|2+}'ya 3e⁻ alır. Katsayılar 3 ve 10 ile eşitlendiğinde 3As₂S₃ + 10HNO₃ + {koyu:4}H₂O → 6H₃AsO₄ + 9S + 10NO olur; H₂O'nun katsayısı {koyu:4}'tür."
+    },
+    {
+      "soru": "P(k) + HNO₃(suda) + H₂O(s) → H₃PO₄(suda) + NO(g) tepkimesini yarı tepkime yöntemiyle denkleştiriniz.",
+      "cevap": "Yükseltgenme yarı tepkimesi {us:P|0} → H₃{us:P|5+}O₄ + 5e⁻ ve indirgenme yarı tepkimesi H{us:N|5+}O₃ + 3e⁻ → {us:N|2+}O şeklinde yazılır. Elektron sayılarını 15e⁻'de eşitlemek için ilk yarı tepkime 3 ile, ikinci yarı tepkime 5 ile çarpılıp toplanır: 3P + 5HNO₃ → 3H₃PO₄ + 5NO. Ürünlerde 9 H ve 17 O bulunduğundan girenlerdeki H₂O'nun önüne 2 yazılarak {koyu:3P + 5HNO₃ + 2H₂O → 3H₃PO₄ + 5NO} elde edilir."
+    },
+    {
+      "soru": "Bi(k) + H₂SO₄(suda) → Bi₂(SO₄)₃(suda) + SO₂(g) + H₂O(s) tepkimesini en küçük tam sayılarla denkleştirerek H₂SO₄'ün katsayısını bulunuz.",
+      "cevap": "Bizmut {us:Bi|0}'dan Bi₂(SO₄)₃ içindeki {us:Bi|3+}'ya yükseltgenir (1 Bi atomu 3e⁻ verir). Kükürt ise H₂SO₄ içindeki {us:S|6+}'dan SO₂ içindeki {us:S|4+}'ya indirgenir (1 S atomu 2e⁻ alır). Elektron denkliği için Bi 2 ile (Bi₂(SO₄)₃ katsayısı 1), SO₂ ise 3 ile çarpılır (6e⁻). Ürünlerde toplam 3 (tuzda) + 3 (SO₂'de) = 6 tane S atomu bulunduğundan H₂SO₄'ün katsayısı {koyu:6}, H₂O'nun katsayısı da 6 olur: {koyu:2Bi + 6H₂SO₄ → Bi₂(SO₄)₃ + 3SO₂ + 6H₂O}."
+    },
+    {
+      "soru": "Cu(k) / {us:Cu|2+}(suda) ve Ag(k) / {us:Ag|+}(suda) yarı hücrelerinden ve KNO₃ tuz köprüsünden oluşan bir galvanik hücrede Cu elektrot anot, Ag elektrot katottur. Pil çalışırken zamanla elektrot kütlelerinde, iyon derişimlerinde ve tuz köprüsündeki iyon göçünde hangi değişimler gerçekleşir?",
+      "cevap": "Anotta Cu(k) → {us:Cu|2+}(suda) + 2e⁻ yükseltgenmesi olduğundan {koyu:Cu elektrodun kütlesi azalır ve [{us:Cu|2+}] derişimi artar}. Katotta {us:Ag|+}(suda) + e⁻ → Ag(k) indirgenmesi olduğundan {koyu:Ag elektrodun kütlesi artar ve [{us:Ag|+}] derişimi azalır}. Dış devrede elektronlar Cu'dan Ag'ye akarken, tuz köprüsündeki {koyu:{us:NO₃|−} anyonları anot (Cu) kabına}, {koyu:{us:K|+} katyonları ise katot (Ag) kabına} göç eder."
+    },
+    {
+      "soru": "Standart Hidrojen Elektrot (SHE) hangi bileşenlerden oluşur, standart potansiyeli kaç volttur ve neden referans elektrot olarak kullanılır?",
+      "cevap": "Yarı pil tepkimeleri tek başına gerçekleşemediğinden yarı hücre potansiyellerini ölçmek için referans bir elektroda ihtiyaç duyulur. {koyu:Standart Hidrojen Elektrot (SHE)}; 25 °C sıcaklıkta {koyu:1 M {us:H|+} iyonu içeren asit çözeltisine daldırılmış inert bir platin (Pt) elektrot} ve çözeltiye {koyu:1 atm basınçta gönderilen H₂ gazından} oluşur. Tıpkı deniz seviyesinin 0 m kabul edilmesi gibi SHE'nin standart yükseltgenme ve indirgenme potansiyeli {koyu:E° = 0,00 V} kabul edilmiştir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "KClO₃(k) + SO₂(g) + H₂O(s) → KCl(suda) + H₂SO₄(suda) redoks tepkimesi en küçük tam sayılarla denkleştirildiğinde SO₂ ve H₂O bileşiklerinin katsayıları sırasıyla aşağıdakilerden hangisi olur?",
+      "secenekler": [
+        "3 ve 3",
+        "2 ve 2",
+        "3 ve 2",
+        "1 ve 1",
+        "6 ve 3"
+      ],
+      "dogru": 0,
+      "aciklama": "KClO₃'teki {us:Cl|5+} atomu KCl'deki {us:Cl|−}'ye 6e⁻ alarak indirgenir; SO₂'deki {us:S|4+} ise H₂SO₄'teki {us:S|6+}'ya 2e⁻ vererek yükseltgenir. Elektron eşitliği için SO₂ ve H₂SO₄ 3 ile çarpılır; H denkliği için H₂O'nun katsayısı da 3 olur: 3SO₂ + KClO₃ + 3H₂O → 3H₂SO₄ + KCl."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Zn / ZnSO₄ ve Cu / CuSO₄ yarı hücrelerinden oluşan bir Daniell pilinde (Zn anot, Cu katot) pil çalışırken aşağıdakilerden hangisi gerçekleşmez?",
+      "secenekler": [
+        "Dış devrede elektronlar Zn elektrottan Cu elektroda doğru akar.",
+        "Tuz köprüsündeki katyonlar Zn elektrodun bulunduğu anot bölmesine göç eder.",
+        "Zamanla Zn elektrodun kütlesi azalırken Cu elektrodun kütlesi artar.",
+        "Anot bölmesindeki {us:Zn|2+} iyon derişimi zamanla artar.",
+        "Pil potansiyeli zamanla azalır."
+      ],
+      "dogru": 1,
+      "aciklama": "Tuz köprüsündeki anyonlar (−) anot bölmesine (Zn kabına), katyonlar (+) ise katot bölmesine (Cu kabına) göç eder; katyonların anoda geçtiği ifadesi yanlıştır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki tepkimelerden hangisi bir indirgenme-yükseltgenme (redoks) tepkimesi değildir?",
+      "secenekler": [
+        "KClO₃(k) → KCl(k) + {kesir:3|2}O₂(g)",
+        "Cu(k) + 2H₂SO₄(suda) → CuSO₄(suda) + SO₂(g) + 2H₂O(s)",
+        "CaCO₃(k) → CaO(k) + CO₂(g)",
+        "3H₂S(suda) + 2HNO₃(suda) → 3S(k) + 2NO(g) + 4H₂O(s)",
+        "Zn(k) + {us:Cu|2+}(suda) → {us:Zn|2+}(suda) + Cu(k)"
+      ],
+      "dogru": 2,
+      "aciklama": "CaCO₃(k) → CaO(k) + CO₂(g) tepkimesinde Ca (+2), C (+4) ve O (−2) elementlerinin hiçbirinin yükseltgenme basamağı değişmemiştir; bu nedenle redoks tepkimesi değildir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir elektrokimyasal hücrede indirgenme-yükseltgenme tepkimesine doğrudan katılmayan, yalnızca elektrik akımını (elektronları) iletmek amacıyla kullanılan platin (Pt), altın (Au) veya grafit çubuklara ne ad verilir?",
+      "secenekler": [
+        "Elektrolit",
+        "Tuz köprüsü",
+        "Yarı hücre",
+        "İnert elektrot",
+        "Anyon"
+      ],
+      "dogru": 3,
+      "aciklama": "Tepkimeye girmeyip yalnızca elektron iletimini sağlayan platin, altın ve grafit gibi etkisiz maddelere inert elektrot denir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Başladıktan sonra dışarıdan bir etki olmaksızın kendiliğinden gerçekleşen istemli redoks tepkimelerinde kimyasal enerji elektrik enerjisine dönüşür.",
+          "dogru": true,
+          "aciklama": "Doğru. Galvanik hücrelerde (pillerde) gerçekleşen istemli redoks tepkimeleri kimyasal enerjiyi elektrik enerjisine çevirir."
+        },
+        {
+          "metin": "Galvanik bir hücrede yükseltgenme olayı katotta, indirgenme olayı ise anotta gerçekleşir.",
+          "dogru": false,
+          "aciklama": "Yanlış. Her zaman yükseltgenme anotta, indirgenme ise katotta gerçekleşir."
+        },
+        {
+          "metin": "Bir beherglastaki CuSO₄ çözeltisine Zn çubuk doğrudan batırıldığında elektron alışverişi aynı kapta doğrudan temasla gerçekleşir.",
+          "dogru": true,
+          "aciklama": "Doğru. Aynı kapta doğrudan temasla gerçekleşen bu redoks tepkimesinde dış devre olmadığı için elektrik akımı elde edilmez."
+        },
+        {
+          "metin": "Standart Hidrojen Elektrodun (SHE) 25 °C sıcaklık, 1 M {us:H|+} derişimi ve 1 atm H₂ basıncındaki potansiyeli 1,00 V olarak kabul edilmiştir.",
+          "dogru": false,
+          "aciklama": "Yanlış. Referans elektrot olan Standart Hidrojen Elektrodun (SHE) standart potansiyeli E° = 0,00 V kabul edilmiştir."
+        },
+        {
+          "metin": "Tuz köprüsü, anot ve katot yarı hücrelerinin yük denkliğini koruyarak devrenin tamamlanmasını sağlar.",
+          "dogru": true,
+          "aciklama": "Doğru. Tuz köprüsündeki anyonlar anoda, katyonlar katoda göç ederek yük denkliğini korur."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki elektrokimyasal kavramları tanımlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Anot (− kutup)",
+          "Galvanik hücrede yükseltgenmenin gerçekleştiği ve elektronların çıktığı elektrot"
+        ],
+        [
+          "Katot (+ kutup)",
+          "Galvanik hücrede indirgenmenin gerçekleştiği ve elektronların ulaştığı elektrot"
+        ],
+        [
+          "Elektrolit",
+          "Serbest iyonlar içererek elektrik akımını ileten sulu çözelti"
+        ],
+        [
+          "Tuz köprüsü",
+          "İçinde doygun tuz çözeltisi bulunan ve yarı hücrelerde yük denkliğini koruyan U borusu"
+        ],
+        [
+          "Standart Hidrojen Elektrot (SHE)",
+          "Potansiyeli 0,00 V kabul edilen referans elektrot (1 M {us:H|+}}, 1 atm H₂, Pt)"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir metalin kendi katyonunu içeren çözeltiye daldırılması ile hazırlanan düzeneğe ___ hücre denir.",
+          "cevap": "yarı"
+        },
+        {
+          "metin": "İki yarı hücrenin iletken tel ve tuz köprüsüyle bağlanmasıyla oluşturulan elektrokimyasal pile ___ hücre adı verilir.",
+          "cevap": "galvanik"
+        },
+        {
+          "metin": "Galvanik bir hücrede dış devredeki elektron akışı her zaman ___ kutbundan katot kutbuna doğrudur.",
+          "cevap": "anot"
+        },
+        {
+          "metin": "Kendiliğinden gerçekleşmeyen ve dışarıdan elektrik enerjisi harcanarak yürütülen tepkimelere ___ tepkime denir.",
+          "cevap": "istemsiz"
+        }
+      ],
+      "fazla": [
+        "katot",
+        "yalıtkan"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Verilen 1 M CuSO₄ çözeltisi bulunan tek bir beherglasa Zn çubuk daldırılması ile Zn/ZnSO₄ ve Cu/CuSO₄ yarı hücrelerinin iletken tel ve tuz köprüsüyle bağlanması (Daniell pili) arasındaki temel farkı elektron aktarımı ve enerji dönüşümü açısından açıklayınız.",
+      "cevap": "Her iki düzenekte de gerçekleşen istemli redoks tepkimesi {koyu:Zn(k) + {us:Cu|2+}(suda) → {us:Zn|2+}(suda) + Cu(k)} olup Zn yükseltgenir, {us:Cu|2+} indirgenir. Ancak tek beherglasta Zn çubuk doğrudan CuSO₄ çözeltisine batırıldığında elektron alışverişi {koyu:doğrudan temasla} çözelti içinde gerçekleşir ve kimyasal enerji yalnızca ısıya dönüşür; elektrik akımı elde edilemez. {koyu:Daniell pilinde} ise yükseltgenme (anot: Zn) ve indirgenme (katot: Cu) iki ayrı yarı hücreye ayrılmıştır; elektronlar dış devredeki {koyu:iletken tel üzerinden anottan katoda} akarken kullanılabilir {koyu:elektrik enerjisi} üretilir, {koyu:tuz köprüsü} ise anyonları anoda ve katyonları katoda göndererek yük denkliğini korur.",
+      "ipuclari": [
+        "Her iki düzenekte de gerçekleşen net redoks tepkimesi (Zn + {us:Cu|2+} → {us:Zn|2+} + Cu) aynı mıdır?",
+        "Tek kapta elektronlar Zn'den {us:Cu|2+} iyonlarına nasıl geçer; Daniell pilinde ise hangi yolu izler?",
+        "Tuz köprüsü kaldırılırsa Daniell pilinde elektrik üretimi neden durur?"
+      ]
+    }
+  ],
+  "kazanim": "12.1.2.1. Elektrot ve elektrokimyasal hücre kavramlarını açıklar."
 }

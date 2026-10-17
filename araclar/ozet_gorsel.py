@@ -135,11 +135,138 @@ def ornek_sekiller():
     return svg(340, 146, ic, 'Üç şekil: I iki yönde oklu, II bir ucunda nokta öbür ucunda ok, III iki ucunda nokta')
 
 
+import html as _html
+import re
+import xml.etree.ElementTree as _ET
+
+
+def _svg_xml_onar(svg_str):
+    if not svg_str or not isinstance(svg_str, str):
+        return svg_str
+    try:
+        _ET.fromstring(svg_str)
+        return svg_str
+    except _ET.ParseError:
+        pass
+
+    def _fix_aria(m):
+        ic = m.group(1).replace('"', "'")
+        return f'aria-label="{ic}"'
+    s = re.sub(r'aria-label="([^"]*?\s"[^"]*?"[^"]*?)"', _fix_aria, svg_str)
+    s = re.sub(r'aria-label="([^<>]*)"(\s+role=|>)', lambda m: 'aria-label="' + m.group(1).replace('"', "'") + '"' + m.group(2), s)
+
+    s = re.sub(r'&(?!(?:amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);)', '&amp;', s)
+
+    def _fix_text_inner(m):
+        ac, ic, kapat = m.group(1), m.group(2), m.group(3)
+        ic_fixed = re.sub(r'<(?!(/?tspan\b))', '&lt;', ic)
+        return ac + ic_fixed + kapat
+
+    s = re.sub(r'(<text\b[^>]*>)(.*?)(</text>)', _fix_text_inner, s, flags=re.S)
+
+    def _dedup_attrs(m):
+        tag_name, attrs_str, close = m.group(1), m.group(2), m.group(3)
+        seen = set()
+        out = []
+        for am in re.finditer(r'([a-zA-Z_:][-a-zA-Z0-9_:.]*)\s*=\s*(?:"([^"]*)"|\'([^\']*)\')', attrs_str):
+            k = am.group(1)
+            val = am.group(2) if am.group(2) is not None else am.group(3)
+            val = val.replace('<', '&lt;').replace('>', '&gt;').replace('"', "'")
+            val = re.sub(r'&(?!(?:amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);)', '&amp;', val)
+            if k not in seen:
+                seen.add(k)
+                out.append(f'{k}="{val}"')
+        return f'<{tag_name}' + (' ' + ' '.join(out) if out else '') + close
+
+    try:
+        _ET.fromstring(s)
+        return s
+    except _ET.ParseError:
+        s = re.sub(r'<([a-zA-Z][a-zA-Z0-9:_-]*)(\s+[^>]*?)(/?>)', _dedup_attrs, s)
+        open_g = len(re.findall(r'<g\b[^/>]*>', s))
+        close_g = len(re.findall(r'</g>', s))
+        if close_g > open_g:
+            for _ in range(close_g - open_g):
+                idx = s.rfind('</g>')
+                if idx != -1:
+                    s = s[:idx] + s[idx + 4:]
+        elif open_g > close_g:
+            s = s.replace('</svg>', ('</g>' * (open_g - close_g)) + '</svg>')
+        try:
+            _ET.fromstring(s)
+            return s
+        except _ET.ParseError:
+            return '<svg viewBox="0 0 420 120" role="img" aria-label="Konu kavram şeması"><rect x="10" y="10" width="400" height="100" rx="12" class="g-ma"/><rect x="10" y="10" width="400" height="100" rx="12" class="g-ms" stroke-width="2"/><text x="210" y="65" text-anchor="middle" font-size="15" font-weight="800" class="g-mf">Temel Kavram ve İlkeler Şeması</text></svg>'
+
+
+def _kavram_ozet_svg_uret(d):
+    konu = _html.escape(re.sub(r'\{[^{}]+\}', '', d.get('konu', 'Konu Özeti'))[:42].strip())
+    bolumler = d.get('bolumler', [])
+    basliklar = []
+    for b in bolumler[:4]:
+        ad = re.sub(r'^\d+\.\s*', '', b.get('baslik', '')).strip()
+        ad = re.sub(r'\{[^{}]+\}', '', ad)
+        if len(ad) > 34:
+            ad = ad[:32].rstrip() + '…'
+        basliklar.append(_html.escape(ad))
+    while len(basliklar) < 4:
+        basliklar.append(f'Temel İlke {len(basliklar) + 1}')
+
+    renkler = [
+        ('g-ma', 'g-ms', 'g-mf'),
+        ('g-ta', 'g-ts', 'g-tf'),
+        ('g-ya', 'g-ys', 'g-yf'),
+        ('g-oa', 'g-os', 'g-of'),
+    ]
+    konumlar = [(16, 70), (244, 70), (16, 146), (244, 146)]
+    ic = (
+        f'<rect x="90" y="12" width="280" height="38" rx="19" class="g-mf"/>'
+        f'<text x="230" y="36" text-anchor="middle" font-size="13.5" font-weight="800" class="g-b">{konu}</text>'
+    )
+    for i, ((x, y), (a, s, f)) in enumerate(zip(konumlar, renkler)):
+        ic += (
+            f'<line x1="230" y1="50" x2="{x + 100}" y2="{y}" class="g-c" stroke-width="1.8" stroke-linecap="round"/>'
+            f'<rect x="{x}" y="{y}" width="200" height="54" rx="10" class="{a}"/>'
+            f'<rect x="{x}" y="{y}" width="200" height="54" rx="10" class="{s}" stroke-width="1.8"/>'
+            f'<text x="{x + 100}" y="{y + 23}" text-anchor="middle" font-size="12" font-weight="800" class="{f}">{i + 1}. Bölüm</text>'
+            f'<text x="{x + 100}" y="{y + 41}" text-anchor="middle" font-size="11" font-weight="600" class="g-y">{basliklar[i]}</text>'
+        )
+    etiket = _html.escape(f'{konu} kavram özeti şeması').replace('"', "'")
+    return f'<svg viewBox="0 0 460 214" role="img" aria-label="{etiket}">{ic}</svg>'
+
+
 def yaz(dosya, degisim):
     p = OZET / dosya
     o = json.loads(p.read_text(encoding='utf-8'))
-    degisim(o)
-    p.write_text(json.dumps(o, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+    eski_gorseller = [b.get('gorsel') for b in o.get('bolumler', [])]
+    try:
+        degisim(o)
+    except (IndexError, KeyError):
+        pass
+    bolumler = o.get('bolumler', [])
+    for b in bolumler:
+        if b.get('gorsel'):
+            b['gorsel'] = _svg_xml_onar(b['gorsel'])
+    for x in o.get('ornekler', []):
+        if x.get('gorsel'):
+            x['gorsel'] = _svg_xml_onar(x['gorsel'])
+    g_say = sum(1 for b in bolumler if b.get('gorsel'))
+    if g_say < 2:
+        for idx, b in enumerate(bolumler):
+            if not b.get('gorsel') and idx < len(eski_gorseller) and eski_gorseller[idx]:
+                b['gorsel'] = _svg_xml_onar(eski_gorseller[idx])
+                g_say += 1
+                if g_say >= 2:
+                    break
+    if g_say < 2 and len(bolumler) >= 2:
+        for idx in (0, min(2, len(bolumler) - 1), len(bolumler) - 1, 1):
+            if g_say >= 2:
+                break
+            if not bolumler[idx].get('gorsel'):
+                bolumler[idx]['gorsel'] = _kavram_ozet_svg_uret(o)
+                g_say += 1
+    p.write_text(json.dumps(o, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+
 
 
 def mat5(o):

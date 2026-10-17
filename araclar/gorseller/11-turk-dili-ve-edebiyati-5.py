@@ -1,138 +1,107 @@
-# -*- coding: utf-8 -*-
-"""11. Sınıf Türk Dili ve Edebiyatı — 5. Hafta Görselleri
-Konu: 1. Tema: Bir Diyeceğim Var! — Yazma Süreci (Bilgilendirici/Tartışmacı Metin) ve Dil Bilgisi (Cümlenin Ögeleri)
-"""
-
-
 def _svg(w, h, icerik):
     return (
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" '
-        f'width="100%" style="max-width:{w}px;height:auto;display:block;'
-        f'margin:14px auto;font-family:\'Segoe UI\',system-ui,sans-serif;">'
-        f"{icerik}</svg>"
+        f'<svg viewBox="0 0 {w} {h}" xmlns="http://www.w3.org/2000/svg" '
+        f'style="width:100%;height:auto;display:block;font-family:\'Segoe UI\',sans-serif;">'
+        f'<rect width="{w}" height="{h}" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>'
+        f'{icerik}</svg>'
     )
 
 
-def _kart(x, y, w, h, baslik, renk="#be123c", arka="#fff1f2"):
+def _kart(x, y, w, h, baslik, satirlar, renk="#059669", bg="#ECFDF5"):
+    b = (
+        f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="10" fill="{bg}" stroke="{renk}" stroke-width="1.8"/>'
+        f'<rect x="{x}" y="{y}" width="{w}" height="30" rx="10" fill="{renk}"/>'
+        f'<rect x="{x}" y="{y+18}" width="{w}" height="12" fill="{renk}"/>'
+        f'<text x="{x+w/2}" y="{y+20}" font-size="11.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">{baslik}</text>'
+    )
+    for i, s in enumerate(satirlar):
+        b += f'<text x="{x+12}" y="{y+48+i*18}" font-size="10.5" fill="#1E293B">{s}</text>'
+    return b
+
+
+def _bant(y, b, m, r, bg):
     return (
-        f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="12" '
-        f'fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        f'<rect x="{x}" y="{y}" width="{w}" height="32" rx="12" fill="{renk}"/>'
-        f'<rect x="{x}" y="{y+18}" width="{w}" height="14" fill="{renk}"/>'
-        f'<text x="{x+w/2}" y="{y+21}" text-anchor="middle" fill="#fff" '
-        f'font-size="13" font-weight="700">{baslik}</text>'
+        f'<rect x="25" y="{y}" width="630" height="42" rx="8" fill="{bg}" stroke="{r}" stroke-width="1.5"/>'
+        f'<text x="40" y="{y+16}" font-size="11" font-weight="bold" fill="{r}">{b}</text>'
+        f'<text x="40" y="{y+33}" font-size="10.5" fill="#1E293B">{m}</text>'
     )
 
 
 def gorsel_1():
-    """'Bir Diyeceğim Var!' Temasında Yazma Süreci Aşamaları."""
-    w, h = 760, 310
-    s = _kart(10, 10, w - 20, h - 20, "'Bir Diyeceğim Var!' Temasında Tartışmacı ve Bilgilendirici Metin Yazma Süreci", "#be123c", "#fff1f2")
-
-    adimlar = [
-        ("1. Hazırlık &amp; Konu", "Toplumsal veya kültürel", "bir sorun belirlenir;", "hedef kitle ve tez", "(ana düşünce) seçilir.", "#be123c", "#ffe4e6"),
-        ("2. Planlama &amp; Taslak", "Giriş (sorun), Gelişme", "(kanıt ve argümanlar)", "ve Sonuç (çözüm çağrısı)", "bölümleri kurgulanır.", "#0284c7", "#e0f2fe"),
-        ("3. Düşünceyi Geliştirme", "Tanık gösterme, sayısal", "veriler, örnekleme ve", "karşılaştırma yolları", "etkin biçimde kullanılır.", "#16a34a", "#dcfce7"),
-        ("4. Gözden Geçirme", "Yazım, noktalama ve", "cümlenin ögeleri kontrol", "edilerek metin okurla", "paylaşılır.", "#7c3aed", "#f5f3ff"),
-    ]
-    for i, (bas, a1, a2, a3, a4, r, bg) in enumerate(adimlar):
-        x = 26 + i * 180
-        s += f'<rect x="{x}" y="58" width="168" height="225" rx="10" fill="{bg}" stroke="{r}" stroke-width="1.6"/>'
-        s += f'<rect x="{x}" y="58" width="168" height="28" rx="10" fill="{r}"/>'
-        s += f'<text x="{x+84}" y="77" text-anchor="middle" fill="#fff" font-size="10.5" font-weight="700">{bas}</text>'
-        s += f'<text x="{x+84}" y="122" text-anchor="middle" fill="#1e293b" font-size="10.2">{a1}</text>'
-        s += f'<text x="{x+84}" y="142" text-anchor="middle" fill="#1e293b" font-size="10.2">{a2}</text>'
-        s += f'<text x="{x+84}" y="162" text-anchor="middle" fill="#1e293b" font-size="10.2">{a3}</text>'
-        s += f'<text x="{x+84}" y="182" text-anchor="middle" fill="{r}" font-size="10.2" font-weight="700">{a4}</text>'
-
-    return _svg(w, h, s)
-
+    w, h = 680, 250
+    ic = '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">SÖZLÜ İLETİŞİM SÜRECİ VE BAŞLICA İLETİŞİM ENGELLERİ</text>'
+    ic += _kart(20, 44, 310, 190, "YARGILAYICI VE BASKICI ENGELLER", [
+        "• Emir vermek ve yönlendirmek ('Hemen şunu yap!').",
+        "• Uyarmak ve gözdağı vermek ('Yoksa kötü olur!').",
+        "• Suçlamak, eleştirmek ve yargılamak ('Hep senin yüzünden').",
+        "• Alay etmek, lakap takmak ve utandırmak.",
+        "• Ahlak dersi vermek ('Senin yerinde olsam...').",
+        "• Bu tutumlar karşı tarafta savunma ve direnç yaratır."
+    ], "#DC2626", "#FEF2F2")
+    ic += _kart(350, 44, 310, 190, "DİNLEME VE ALGILAMA KAYNAKLI ENGELLER", [
+        "• Önyargılı yaklaşmak ve niyet okumak.",
+        "• Empati kurmamak (Kendini muhatabın yerine koymamak).",
+        "• Söz kesmek ve dinliyormuş gibi görünmek.",
+        "• Konuyu saptırmak veya işi şakaya vurmak.",
+        "• Sosyal statü, eğitim ve söz varlığı farkını (Karagöz",
+        "  ve Hacivat'ta olduğu gibi) dikkate almamak."
+    ], "#D97706", "#FEF3C7")
+    return _svg(w, h, ic)
 
 def gorsel_2():
-    """Makale, Fıkra (Köşe Yazısı) ve Deneme Türlerinin Karşılaştırılması."""
-    w, h = 760, 310
-    s = _kart(10, 10, w - 20, h - 20, "Öğretici/Tartışmacı Metin Türleri: Makale, Fıkra (Köşe Yazısı) ve Deneme", "#1d4ed8", "#eff6ff")
-
-    turler = [
-        ("MAKALE", "Bilimsel ve Nesnel Yazı", "• Tezi kanıtlama zorunluluğu VAR", "• Ciddi, resmi ve nesnel üslup", "• Dipnot, kaynakça ve istatistik", "• Açıklayıcı ve tartışmacı anlatım", "#1d4ed8", "#dbeafe"),
-        ("FIKRA (Köşe Yazısı)", "Güncel Gazete/Dergi Yazısı", "• Kanıtlama zorunluluğu YOK", "• Güncel toplumsal-siyasi konular", "• Samimi, kıvrak ve güncel dil", "• Gazete ve dergi sütunlarında", "#0d9488", "#ccfbf1"),
-        ("DENEME", "Yazarın Kendisiyle Konuşması", "• Kanıtlama zorunluluğu YOK", "• Özgürce seçilen her konu ('Ben')", "• İçten, öznel ve sanatsal üslup", "• Söyleşi/Sohbetten farkı: İçedönük", "#7c3aed", "#f5f3ff"),
-    ]
-    for i, (bas, alt, m1, m2, m3, m4, r, bg) in enumerate(turler):
-        x = 28 + i * 240
-        s += f'<rect x="{x}" y="55" width="224" height="230" rx="10" fill="{bg}" stroke="{r}" stroke-width="1.6"/>'
-        s += f'<rect x="{x}" y="55" width="224" height="28" rx="10" fill="{r}"/>'
-        s += f'<text x="{x+112}" y="74" text-anchor="middle" fill="#fff" font-size="11.5" font-weight="700">{bas}</text>'
-        s += f'<text x="{x+112}" y="100" text-anchor="middle" fill="{r}" font-size="10.5" font-weight="700">{alt}</text>'
-        s += f'<text x="{x+20}" y="132" fill="#1e293b" font-size="10">{m1}</text>'
-        s += f'<text x="{x+20}" y="156" fill="#1e293b" font-size="10">{m2}</text>'
-        s += f'<text x="{x+20}" y="180" fill="#1e293b" font-size="10">{m3}</text>'
-        s += f'<text x="{x+20}" y="204" fill="{r}" font-size="10" font-weight="700">{m4}</text>'
-
-    return _svg(w, h, s)
-
+    w, h = 680, 250
+    ic = '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">İLETİŞİM ENGELLERİNİ AŞMANIN ANAHTARI: BEN DİLİ VE AKTİF DİNLEME</text>'
+    ic += _kart(20, 44, 310, 190, "SEN DİLİ YERİNE 'BEN DİLİ' KULLANMAK", [
+        "• Sen Dili (Engelleyici): Kişiliği hedef alır, suçlayıcıdır",
+        "  ve öfke uyandırır ('Çok sorumsuzsun, hep gecikiyorsun!').",
+        "• Ben Dili (Yapıcı): Davranışın konuşmacı üzerindeki",
+        "  somut etkisini ve duyguyu açıklar ('Geç kaldığında",
+        "  meraklanıyorum ve çalışmamız aksıyor').",
+        "• Ben dili empatiyi güçlendirir ve çatışmayı çözer."
+    ], "#059669", "#ECFDF5")
+    ic += _kart(350, 44, 310, 190, "AKTİF (ETKİN) DİNLEME VE BEDEN DİLİ", [
+        "• Göz teması kurmak ve muhataba odaklanmak.",
+        "• Söz kesmeden, savunmaya geçmeden dinlemek.",
+        "• Baş hareketleri ve kısa geri bildirimlerle ('Anlıyorum')",
+        "  dinlediğini hissettirmek.",
+        "• Ses tonu, vurgu, tonlama ve jest/mimikleri",
+        "  sözlü mesajla uyumlu ve samimi kullanmak."
+    ], "#2563EB", "#EFF6FF")
+    return _svg(w, h, ic)
 
 def gorsel_3():
-    """Dil Bilgisi: Cümlenin Temel ve Yardımcı Ögeleri Şeması (YÖN Kuralı)."""
-    w, h = 760, 320
-    s = _kart(10, 10, w - 20, h - 20, "Cümlenin Ögeleri: Temel Ögeler, Yardımcı Ögeler ve YÖN Bulma Sırası", "#047857", "#ecfdf5")
-
-    # Sol: Temel Ögeler
-    s += '<rect x="28" y="55" width="280" height="190" rx="10" fill="#fff" stroke="#10b981" stroke-width="1.6"/>'
-    s += '<rect x="28" y="55" width="280" height="28" rx="10" fill="#059669"/>'
-    s += '<text x="168" y="74" text-anchor="middle" fill="#fff" font-size="11.5" font-weight="700">1. TEMEL ÖGELER (Önce Yüklem, Sonra Özne!)</text>'
-    s += '<text x="44" y="104" fill="#065f46" font-size="11" font-weight="700">• YÜKLEM (Cümlenin Kalbi):</text>'
-    s += '<text x="44" y="122" fill="#334155" font-size="10">Yargıyı bildirir; çekimli fiil veya ek-fiil</text>'
-    s += '<text x="44" y="138" fill="#334155" font-size="10">almış isim/söz öbeğidir.</text>'
-    s += '<text x="44" y="168" fill="#065f46" font-size="11" font-weight="700">• ÖZNE (İşi Yapan / Olan):</text>'
-    s += '<text x="44" y="186" fill="#334155" font-size="10">Yükleme sorulan &quot;Kim?&quot; ve &quot;Ne?&quot;</text>'
-    s += '<text x="44" y="202" fill="#334155" font-size="10">sorularına yanıt verir (Gerçek, Gizli, Sözde).</text>'
-
-    # Sağ: Yardımcı Ögeler
-    s += '<rect x="326" y="55" width="406" height="190" rx="10" fill="#fff" stroke="#10b981" stroke-width="1.6"/>'
-    s += '<rect x="326" y="55" width="406" height="28" rx="10" fill="#0d9488"/>'
-    s += '<text x="529" y="74" text-anchor="middle" fill="#fff" font-size="11.5" font-weight="700">2. YARDIMCI ÖGELER (Nesne ve Tümleçler)</text>'
-
-    yardimci = [
-        ("Belirtili Nesne:", "Neyi, Kimi, Nereyi? (-ı/-i/-u/-ü belirtme eki alır)"),
-        ("Belirtisiz Nesne:", "Özneyi bulduktan sonra sorulan 'Ne?' sorusu"),
-        ("Dolaylı Tümleç (Yer Tamlayıcısı):", "Kime, Kimde, Kimden / Nereye, Nerede, Nereden? (-e, -de, -den)"),
-        ("Zarf Tümleci:", "Ne zaman, Nasıl, Niçin, Ne kadar, Ne ile, Kim ile?"),
+    w, h = 680, 260
+    ic = '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">SÖZLÜ İLETİŞİM ENGELLERİNİ KONU ALAN DRAMA SÜRECİ</text>'
+    adimlar = [
+        ("1. HAZIRLIK VE ISINMA AŞAMASI", "Konunun (günlük hayattaki iletişim engellerinin) belirlenmesi, dramatik durumun ve çatışmanın kurgulanması, rol dağılımı.", "#059669", "#ECFDF5"),
+        ("2. CANLANDIRMA (DOĞAÇLAMA VE ROL OYNAMA)", "Farklı bakış açılarını deneyimleyerek iletişim engellerinin ve çözüm yollarının ses tonu, vurgu ve beden diliyle sergilenmesi.", "#2563EB", "#EFF6FF"),
+        ("3. DEĞERLENDİRME VE TARTIŞMA AŞAMASI", "Canlandırma sonrasında yaşanan iletişim kazalarının, duyguların ve öz/akran değerlendirme ölçütlerinin paylaşılması.", "#7C3AED", "#F5F3FF"),
+        ("4. GELENEKSEL TİYATRO (KARAGÖZ) İLE BAĞLANTI", "Karagöz (halk dili, yanlış anlamalar) ile Hacivat (aydın/süslü dil) arasındaki iletişim çatışmalarının dramatik analizi.", "#D97706", "#FEF3C7")
     ]
-    for i, (b, ac) in enumerate(yardimci):
-        y = 95 + i * 36
-        s += f'<text x="340" y="{y+12}" fill="#0f766e" font-size="10.2" font-weight="700">{b}</text>'
-        s += f'<text x="340" y="{y+26}" fill="#334155" font-size="9.5">{ac}</text>'
-
-    s += '<rect x="28" y="255" width="704" height="38" rx="8" fill="#fef3c7" stroke="#d97706"/>'
-    s += '<text x="380" y="279" text-anchor="middle" fill="#92400e" font-size="11" font-weight="700">Altın Kural (YÖN Sırası): Önce 1. Yüklem, 2. Özne, 3. Nesne/Tümleçler bulunur; tamlamalar ve deyimler BÖLÜNMEZ!</text>'
-
-    return _svg(w, h, s)
-
+    for i, (b, m, r, bg) in enumerate(adimlar):
+        ic += _bant(44 + i * 50, b, m, r, bg)
+    return _svg(w, h, ic)
 
 def gorsel_4():
-    """Cümlede Vurgu ve Cümle Dışı Unsurlar (Ara Söz, Bağlaç, Ünlem)."""
-    w, h = 760, 310
-    s = _kart(10, 10, w - 20, h - 20, "Cümlede Vurgu Kuralları ve Ara Söz / Cümle Dışı Unsurlar", "#d97706", "#fffbeb")
-
-    kutular = [
-        ("Fiil Cümlesinde Vurgu", "Yüklemden HEMEN ÖNCEKİ", "öge vurgulanır:", "&quot;Kitabı dün KÜTÜPHANEDEN aldım.&quot;", "(Vurgu: Dolaylı Tümleçte)", "#d97706", "#fef3c7"),
-        ("İsim Cümlesinde Vurgu", "Yüklemin KENDİSİNDEDİR:", "&quot;En güçlü iletişim aracı", "SAMİMİYETTİR.&quot;", "(Vurgu: Yüklemde)", "#0284c7", "#e0f2fe"),
-        ("Mi / de / Soru Vurgusu", "'mi' soru eki ve 'de' bağlacı", "kendinden önceki ögeye", "vurguyu çeker.", "(Soru kelimesi vurgulanır)", "#7c3aed", "#f5f3ff"),
-        ("Ara Söz ve Cümle Dışı Unsur", "İki virgül/kısa çizgi arasındaki", "ara sözler bir ögenin açıklayıcısı", "veya cümle dışı unsurdur.", "(Bağlaç ve ünlemler öge olmaz!)", "#16a34a", "#dcfce7"),
-    ]
-    for i, (bas, a1, a2, a3, a4, r, bg) in enumerate(kutular):
-        x = 26 + i * 180
-        s += f'<rect x="{x}" y="58" width="168" height="225" rx="10" fill="{bg}" stroke="{r}" stroke-width="1.5"/>'
-        s += f'<rect x="{x}" y="58" width="168" height="28" rx="10" fill="{r}"/>'
-        s += f'<text x="{x+84}" y="77" text-anchor="middle" fill="#fff" font-size="10.2" font-weight="700">{bas}</text>'
-        s += f'<text x="{x+84}" y="118" text-anchor="middle" fill="#1e293b" font-size="10">{a1}</text>'
-        s += f'<text x="{x+84}" y="138" text-anchor="middle" fill="#1e293b" font-size="10">{a2}</text>'
-        s += f'<text x="{x+84}" y="162" text-anchor="middle" fill="{r}" font-size="9.8" font-weight="700">{a3}</text>'
-        s += f'<text x="{x+84}" y="195" text-anchor="middle" fill="#475569" font-size="9.5">{a4}</text>'
-
-    return _svg(w, h, s)
-
+    w, h = 680, 250
+    ic = '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">DRAMATİK METİNLERDE YAPI UNSURLARI VE FİİLİMSİLER</text>'
+    ic += _kart(20, 44, 310, 190, "DRAMATİK METNİN YAPI UNSURLARI", [
+        "• Dramatik Örgü: Olayların sebep-sonuç içinde akışı.",
+        "• Çatışma: Karşıt duygu, düşünce veya statülerin",
+        "  (aydın-halk, eski-yeni, hayal-gerçek) karşılaşması.",
+        "• Kişiler (Tipler ve Karakterler): Karagöz, Hacivat,",
+        "  Çelebi vb. sosyal statülerini dilleriyle yansıtırlar.",
+        "• Mekân (Yer) ve Zaman: Olayın geçtiği çevre ve süre."
+    ], "#7C3AED", "#F5F3FF")
+    ic += _kart(350, 44, 310, 190, "KONUŞMA VE METİNDE FİİLİMSİLER (EYLEMSİLER)", [
+        "• İsim-Fiil (Ad-Eylem): -ma/-me, -ış/-iş, -mak/-mek",
+        "  (ör. 'beklemek için', 'konuşmaya bırakalım').",
+        "• Sıfat-Fiil (Ortaç): -an/-en, -ası, -mez, -ar, -dik,",
+        "  -ecek, -miş (ör. 'yazılmış bir ferman', 'oturanlar').",
+        "• Zarf-Fiil (Bağ-Fiil / Ulaç): -ıp, -arak, -ınca,",
+        "  -ken, -dıkça (ör. 'evden çıkarak', 'geçerken')."
+    ], "#0891B2", "#ECFEFF")
+    return _svg(w, h, ic)
 
 GORSELLER = {
     "b1": gorsel_1(),
@@ -143,8 +112,7 @@ GORSELLER = {
 
 
 def uygula(v):
-    eş = [(0, "b1"), (1, "b2"), (2, "b3"), (4, "b4")]
-    bolumler = v.get("bolumler", [])
-    for idx, anahtar in eş:
-        if idx < len(bolumler):
-            bolumler[idx]["gorsel"] = GORSELLER[anahtar]
+    harita = {0: "b1", 1: "b2", 2: "b3", 4: "b4"}
+    for idx, anahtar in harita.items():
+        if idx < len(v.get("bolumler", [])):
+            v["bolumler"][idx]["gorsel"] = GORSELLER[anahtar]

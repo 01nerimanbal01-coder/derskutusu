@@ -1,270 +1,286 @@
 {
- "ad": "9. Sınıf Coğrafya - 5. Hafta Özeti",
- "sinif": 9,
- "ders": "cografya",
- "ders_adi": "Coğrafya",
- "hafta": 5,
- "tarih": "12-16 Ekim 2026",
- "yayin_tarihi": "2026-10-14",
- "unite": "MEKÂNSAL BİLGİ TEKNOLOJİLERİ",
- "konu": "Mekânın Aynası Haritalar: Harita Okuma, Mekânsal İlişkileri Çözümleme ve Harita Uygulamaları",
- "ciktilar": [
-  "Haritaya ait bileşenlerden (başlık, lejant, ölçek, yön oku, koordinat ağı) yararlanarak farklı türdeki haritaları okur.",
-  "Haritaya ait bileşenlerden yararlanarak haritadaki doğal ve beşerî olay, olgu ve mekânlar arası ilişkileri çözümler.",
-  "Haritada yer alan olay, olgu veya mekânların özellik, konum, dağılış ve ilişkileri ile değişim ve harita türüne ilişkin çıkarım yapar."
- ],
- "giris": "Geçen hafta haritanın temel bileşenlerini, projeksiyon yöntemlerini ve ölçek türlerini tanımıştık. Bu haftaki dersimizde bu bilgileri pratiğe dökerek 'harita okuryazarlığı' ve 'harita uygulamaları' üzerine odaklanacağız. Fiziki, topografya (izohips) ve tematik haritaları okuyarak yeryüzü şekillerini tanıyacak, uzunluk ve eğim hesaplamaları yapacak ve doğal ortam ile beşerî faaliyetler arasındaki mekânsal ilişkileri çözümleyeceğiz.",
- "ozet": [
-  "Harita okuma; başlık, lejant, ölçek, yön oku ve koordinat sisteminden yararlanarak haritadaki mekânsal verileri anlamlandırma ve yorumlama sürecidir.",
-  "Fiziki haritalarda kullanılan renklendirme yöntemi bitki örtüsünü veya idari sınırları değil, deniz seviyesinden itibaren yükselti ve derinlik basamaklarını gösterir (0-500 m yeşil, 500-1000 m sarı, 1000-1500 m turuncu, 1500 m üzeri kahverengi).",
-  "İzohips (eş yükselti) haritalarında eğrilerin sıklaştığı yerlerde eğim fazla, seyrekleştiği yerlerde eğim azdır; V şeklindeki büklümlerin sivri ucu yüksek yeri gösteriyorsa vadi, alçak yeri gösteriyorsa sırttır.",
-  "Harita üzerinde gerçek uzunluk 'GU = Harita Uzunluğu × Ölçek Paydası' formülüyle; iki nokta arasındaki eğim ise 'Eğim (%) = (Yükselti Farkı / Yatay Uzaklık) × 100' bağıntısıyla hesaplanır.",
-  "Mekânsal dağılış haritalarında (noktalama, koroplet/dereceli renklendirme, akış/çizgi haritaları) yer şekilleri ve iklim gibi doğal unsurlar ile nüfus, yerleşme, ulaşım ve ekonomik faaliyetler arasındaki ilişkiler çözümlenir."
- ],
- "bolumler": [
-  {
-   "baslik": "1. Harita Okuma ve Mekânsal İlişkileri Çözümleme (COĞ.9.2.1)",
-   "metin": [
-    "{koyu:Harita okuma}, bir haritada sembol, renk, çizgi ve sayılarla kodlanmış coğrafi bilgileri harita bileşenleri yardımıyla çözüp yorumlama becerisidir. Bir haritayı incelerken ilk olarak {koyu:başlığa} bakılarak haritanın konusu ve alanı anlaşılır; ardından {koyu:lejant (harita anahtarı)} incelenerek kullanılan sembol ve renklerin neyi temsil ettiği öğrenilir. {koyu:Koordinat ağı} yardımıyla mutlak konum, {koyu:yön oku} ile coğrafi yönler ve {koyu:ölçek} ile mesafe ve alan büyüklükleri belirlenir.",
-    "Harita okumanın bir üst basamağı {koyu:mekânsal ilişkileri çözümleme ve çıkarım yapmadır}. Örneğin bir bölgenin fiziki haritası ile nüfus dağılış haritası karşılaştırıldığında; yükseltinin ve engebenin fazla olduğu dağlık alanlarda ulaşımın zorlaştığı ve nüfusun seyrekleştiği, buna karşılık akarsu boylarındaki alüvyal ovalarda tarım ve yerleşmenin yoğunlaştığı çıkarımına ulaşılır. Farklı yıllara ait haritaların karşılaştırılması (örneğin Aral Gölü veya şehirleşme haritaları) ise {koyu:mekânsal değişimi} ortaya koyar."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Fiziki Haritalarda Renklerin Anlamı Tuzağı!",
-    "metin": "Fiziki haritalarda yeşil renk 'orman veya çayır alanlarını', sarı renk ise 'çöl veya bozkırları' GÖSTERMEZ! Fiziki haritalardaki tüm renkler yalnızca YÜKSELTİ BASAMAKLARINI ifade eder (0-200 m koyu yeşil, 200-500 m açık yeşil, 500-1000 m sarı, 1000-1500 m turuncu, 1500 m üzeri kahverengi). Örneğin Konya Ovası da Bafra Ovası da ovadır; ancak Bafra Ovası 0-200 m'de olduğu için yeşil, Konya Ovası ~1000 m yükseltide olduğu için sarı-turuncu renkle gösterilir!"
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 240\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"240\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#1a5276\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Harita Okuma ve Uygulama Süreci (COĞ.9.2.1)</text><rect x=\"18\" y=\"54\" width=\"206\" height=\"170\" rx=\"10\" fill=\"#eaf2f8\" stroke=\"#1a5276\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"206\" height=\"28\" rx=\"10\" fill=\"#1a5276\"/><text x=\"121\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">1. Harita Bileşenlerini Okuma</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Başlık: Haritanın kullanım amacı</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• Lejant: Sembol, renk ve işaretler</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Ölçek: Küçültme oranı ve uzunluk</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• Koordinat Ağı: Mutlak konum</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Yön Oku: Coğrafi yön tayini</text><rect x=\"237\" y=\"54\" width=\"206\" height=\"170\" rx=\"10\" fill=\"#e8f8f5\" stroke=\"#117864\" stroke-width=\"1.6\"/><rect x=\"237\" y=\"54\" width=\"206\" height=\"28\" rx=\"10\" fill=\"#117864\"/><text x=\"340\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">2. İlişkileri Çözümleme</text><text x=\"249\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Fiziki yapı (yükselti, eğim, akarsu)</text><text x=\"249\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  ile beşerî dağılış (yerleşme,</text><text x=\"249\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">  ulaşım, tarım) arasındaki</text><text x=\"249\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  nedensellik bağını kurma.</text><text x=\"249\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Mekânsal örüntüyü fark etme.</text><rect x=\"456\" y=\"54\" width=\"206\" height=\"170\" rx=\"10\" fill=\"#fef9e7\" stroke=\"#b9770e\" stroke-width=\"1.6\"/><rect x=\"456\" y=\"54\" width=\"206\" height=\"28\" rx=\"10\" fill=\"#b9770e\"/><text x=\"559\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">3. Çıkarım ve Tahmin</text><text x=\"468\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Farklı yıllara ait haritalardan</text><text x=\"468\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  mekânsal değişimi yorumlama.</text><text x=\"468\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Afet riski, arazi kullanımı</text><text x=\"468\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  veya güzergâh seçimi için</text><text x=\"468\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">  coğrafi çıkarımda bulunma.</text></svg>"
-  },
-  {
-   "baslik": "2. İzohips (Eş Yükselti) Yöntemi ve Temel Özellikleri",
-   "metin": [
-    "Deniz seviyesinden (0 metre) itibaren aynı yükseltiye sahip noktaların birleştirilmesiyle elde edilen iç içe kapalı eğrilere {koyu:izohips (eş yükselti eğrisi)}, deniz ve göllerdeki aynı derinlik noktalarını birleştiren eğrilere ise {koyu:izobat (eş derinlik eğrisi)} denir. İzohips haritalarının temel ilkeleri şunlardır: • İç içe kapalı eğrilerdir ve birbirlerini {koyu:asla kesmezler}. • En dıştaki eğri en alçak yeri, en içteki eğri en yüksek yeri gösterir (kapalı çukurlar hariç). • Deniz kıyısı {koyu:kıyı çizgisi} olup yükseltisi her zaman {koyu:0 metredir}.",
-    "• Ardışık iki izohips arasındaki yükselti farkına {koyu:eküidistans (eş yükselti aralığı)} denir ve haritanın tamamında sabittir. Haritanın ölçeği büyüdükçe (ayrıntı arttıkça) eküidistans değeri küçülür (örneğin 10 m veya 20 m); ölçek küçüldükçe eküidistans büyür (örneğin 250 m veya 500 m). • İzohipslerin birbirine {koyu:yaklaştığı (sıklaştığı)} yerlerde yamaç dik ve {koyu:eğim fazladır}; birbirinden {koyu:uzaklaştığı (seyrekleştiği)} yerlerde ise {koyu:eğim azdır}, kıta sahanlığı geniştir."
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "baslik": "Akarsu İle İzohips İlişkisi",
-    "metin": "Bir akarsuyun her iki yakasında (sağında ve solunda) bulunan ilk komşu izohips eğrilerinin yükseltileri birbirine EŞİTTİR! Ayrıca birbirini çevrelemeyen komşu iki halka (iki tepeyi çevreleyen dıştaki ilk halkalar) da aynı yükselti değerine sahiptir."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 250\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#1e8449\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Fiziki Haritalarda Renk Basamakları ve İzohips (Eş Yükselti) İlkeleri</text><rect x=\"18\" y=\"54\" width=\"314\" height=\"180\" rx=\"10\" fill=\"#e9f7ef\" stroke=\"#1e8449\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#1e8449\"/><text x=\"175\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Renklendirme Yöntemi (Yükselti Basamakları)</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• 0 - 500 m: Yeşil ve tonları (Alçak ovalar)</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• 500 - 1000 m: Sarı (Platolar ve orta yükselti)</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• 1000 - 1500 m: Turuncu (Yüksek platolar)</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• 1500 m ve üzeri: Kahverengi (Sıradağlar)</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Denizlerde açık maviden koyu maviye derinlik artar.</text><text x=\"30\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">• Dikkat: Renkler bitki örtüsünü DEĞİL yükseltiyi gösterir!</text><rect x=\"348\" y=\"54\" width=\"314\" height=\"180\" rx=\"10\" fill=\"#eaf2f8\" stroke=\"#2874a6\" stroke-width=\"1.6\"/><rect x=\"348\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#2874a6\"/><text x=\"505\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">İzohips (Eş Yükselti) Haritalarını Yorumlama</text><text x=\"360\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Eğrilerin sıklaştığı yerde EĞİM FAZLA (dik yamaç),</text><text x=\"360\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  seyrekleştiği yerde EĞİM AZDIR (yatay/düzlük).</text><text x=\"360\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Akarsuyun her iki yamacındaki komşu iki izohipsin</text><text x=\"360\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  yükseltisi birbirine eşittir.</text><text x=\"360\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• V şeklindeki büklümlerin sivri ucu yüksek yeri</text><text x=\"360\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">  gösteriyorsa VADİ, alçak yeri gösteriyorsa SIRTTIR.</text></svg>"
-  },
-  {
-   "baslik": "3. Topografya Haritalarında Yer Şekillerinin Tanınması",
-   "metin": [
-    "Topografya (izohips) haritalarında yeryüzü şekilleri eğrilerin uzanış biçiminden tanınır: • {koyu:Vadi ve Sırt}: İzohipslerin yaptığı '∧' veya '∨' biçimindeki büklümlerin sivri ucu {koyu:yükseltinin arttığı yönü} gösteriyorsa {koyu:vadi} (akarsu yatağı); sivri ucu {koyu:yükseltinin azaldığı yönü} gösteriyorsa {koyu:sırt} (iki yamacı ayıran su bölümü çizgisi) oluşur. • {koyu:Tepe (Doruk) ve Boyun}: En içteki küçük halka {koyu:tepeyi}, nokta veya üçgen işareti {koyu:doruğu (zirveyi)}, iki tepe arasında kalan geçit düzlüğü ise {koyu:boyunu} gösterir.",
-    "• {koyu:Kapalı Çukur (Çanak)}: Krater, kaldera veya obruk gibi çukurluklar, yükseltinin azaldığı yöne doğru çizilen {koyu:ok işaretleriyle (→)} gösterilir; okun başladığı eğriden bittiği eğriye kadar yükselti azalır. • {koyu:Falez (Yalıyar), Delta ve Haliç}: İzohipslerin deniz kıyısında birbirine çok yaklaşarak çakıştığı dik kıyılara {koyu:falez}; akarsuyun kıyıda denize doğru oluşturduğu üçgen çıkıntıya {koyu:delta ovası}; okyanus kıyılarında gelgit etkisiyle akarsu ağzının karaya doğru aşınmasıyla oluşan girintiye ise {koyu:haliç} denir."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "Vadi ile Sırtı Ayırt Etmenin En Kolay Yolu",
-    "metin": "Eğer izohipslerin V büklümünün ortasından bir akarsu çizgisi geçiyorsa orası kesinlikle VADİDİR! Akarsu çizgisi verilmemişse eğrilerin sayısal değerlerine bakılır: V'nin sivri ucu daha yüksek değerli eğriye doğru bakıyorsa VADİ, daha alçak değerli eğriye doğru bakıyorsa SIRTTIR."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 245\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"245\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#6c3483\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Topografya Haritalarında Yer Şekilleri: Vadi, Sırt, Boyun, Çukur ve Delta</text><rect x=\"18\" y=\"54\" width=\"314\" height=\"175\" rx=\"10\" fill=\"#f5eef8\" stroke=\"#6c3483\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#6c3483\"/><text x=\"175\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Tepe, Boyun, Çanak ve Falez</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Tepe (Doruk): İç içe kapalı eğrilerin merkezi.</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• Boyun: İki tepe arasında kalan geçit alanı.</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Kapalı Çukur (Çanak): İçe doğru ok (→) işaretiyle</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  gösterilen krater veya obruk çukurlukları.</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Falez (Yalıyar): İzohipslerin kıyıda üst üste çakışması.</text><rect x=\"348\" y=\"54\" width=\"314\" height=\"175\" rx=\"10\" fill=\"#fdedec\" stroke=\"#922b21\" stroke-width=\"1.6\"/><rect x=\"348\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#922b21\"/><text x=\"505\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Delta Ovası ve Haliç Ayrımı</text><text x=\"360\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Delta Ovası: Akarsuyun taşıdığı alüvyonlarla kıyı</text><text x=\"360\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  çizgisinin denize doğru üçgen çıkıntı yapmasıdır.</text><text x=\"360\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Haliç: Gelgit genliği yüksek okyanus kıyılarında</text><text x=\"360\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  akarsu ağzının karaya doğru girinti yapmasıdır.</text><text x=\"360\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Delta olan kıyıda haliç, haliç olan kıyıda delta olmaz!</text></svg>"
-  },
-  {
-   "baslik": "4. İzohips Haritalarından Profil Çıkarma Uygulaması",
-   "metin": [
-    "Bir izohips haritası üzerinde belirlenen iki nokta (örneğin A ile B noktası) arasına çekilen doğru boyunca yer şekillerinin yandan görünüşünün grafiğe aktarılmasına {koyu:profil çıkarma} denir. Profil çıkarılırken; doğrunun kestiği her izohips eğrisinin yükselti değeri yatay ve dikey eksenli grafik kağıdına işaretlenir ve noktalar birleştirilir.",
-    "Bir profil grafiğini doğru okumak için {koyu:başlangıç yükseltisine}, {koyu:ulaşılan en yüksek zirve değerine}, {koyu:geçilen tepe ve vadi sayısına} ve {koyu:bitiş noktasının yükseltisine} (örneğin deniz kıyısında bitiyorsa 0 metreye inmesine) dikkat edilir. İzohipslerin sık olduğu kesimlerde profil çizgisi dik bir eğimle yükselir; seyrek olduğu kesimlerde ise yataya yakın uzanır."
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "baslik": "Profil Sorularında 3 Kontrol Noktası",
-    "metin": "1) Doğrunun başladığı (A) ve bittiği (B) noktaların yükseltisi kaç metredir?\n2) Doğru boyunca kaç tane tepe (zirve) ve kaç tane akarsu vadisi geçilmiştir?\n3) En yüksek zirve hangi izohips değerinin biraz üzerindedir?"
-   }
-  },
-  {
-   "baslik": "5. Haritalarda Uzunluk ve Eğim Hesaplamaları",
-   "metin": [
-    "Harita uygulamalarında iki merkez arasındaki kuş uçuşu {koyu:Gerçek Uzunluk (GU)}, harita üzerindeki uzunluk ({koyu:HU}) ile ölçek paydasının ({koyu:ÖP}) çarpılmasıyla bulunur: {koyu:GU = HU × ÖP}. İşlem sonunda santimetre (cm) olarak çıkan değer, {koyu:5 sıfır silinerek kilometreye (km)} veya {koyu:2 sıfır silinerek metreye (m)} çevrilir ({koyu:1 km = 1000 m = 100.000 cm}).",
-    "Bir yamacın veya yolun diklik derecesini ifade eden {koyu:eğim} ise iki nokta arasındaki {koyu:yükselti farkının (h)}, {koyu:yatay uzaklığa (L, gerçek uzunluk)} bölünmesiyle hesaplanır: • Yüzde olarak eğim: {koyu:Eğim (%) = (h / L) × 100} • Binde olarak eğim: {koyu:Eğim (‰) = (h / L) × 1000}. Eğim hesaplamasında en önemli kural, {koyu:yükselti farkı (h) ile yatay uzaklığın (L) mutlaka aynı uzunluk birimine (genellikle metreye) çevrilmesidir}!"
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Adım Adım Eğim Hesaplama Örneği",
-    "metin": "Soru: Deniz kıyısındaki (0 m) K noktası ile 600 m yükseltideki L noktası arasındaki yatay uzaklık 12 km'dir. K-L noktaları arasındaki eğim yüzde (%) kaçtır?\nÇözüm:\n• Yükselti farkı: h = 600 - 0 = 600 m.\n• Yatay uzaklık (metreye çevrilir!): L = 12 km = 12.000 m.\n• Eğim (%) = (h / L) × 100 = (600 / 12.000) × 100 = 60.000 / 12.000 = %5 bulunur."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 235\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"235\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#b9770e\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Harita Uygulamaları: Uzunluk, Eğim Hesaplama ve Mekânsal Dağılış Yorumu</text><rect x=\"18\" y=\"54\" width=\"314\" height=\"165\" rx=\"10\" fill=\"#fef9e7\" stroke=\"#b9770e\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#b9770e\"/><text x=\"175\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Uzunluk ve Eğim Uygulamaları</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Gerçek Uzunluk (GU) = Harita Uzunluğu × Ölçek Paydası</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• Eğim (%) = (Yükselti Farkı / Yatay Uzaklık) × 100</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Eğim (‰) = (Yükselti Farkı / Yatay Uzaklık) × 1000</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• Dikkat: Eğim hesabında yükselti farkı (h) ile yatay</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">  uzaklık (L) mutlaka AYNI BİRİME (metre) çevrilir!</text><rect x=\"348\" y=\"54\" width=\"314\" height=\"165\" rx=\"10\" fill=\"#e8f8f5\" stroke=\"#117864\" stroke-width=\"1.6\"/><rect x=\"348\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#117864\"/><text x=\"505\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Tematik ve Koroplet/Noktalama Haritaları</text><text x=\"360\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Noktalama Yöntemi: Nüfus, tarım ürünü veya sanayi</text><text x=\"360\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  tesislerinin yoğunluk ve dağılışını noktalarla gösterir.</text><text x=\"360\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Koroplet (Dereceli Renklendirme): İdari sınırlar</text><text x=\"360\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  içinde oran/yoğunluk verilerini renk tonlarıyla sunar.</text><text x=\"360\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Akış (Çizgi) Haritaları: Göç, ticaret ve ulaşım yönü.</text></svg>"
-  },
-  {
-   "baslik": "6. Tematik Dağılış Haritalarında Yöntemler: Koroplet, Noktalama ve Akış",
-   "metin": [
-    "Coğrafi olay ve olguların mekânsal dağılışını görselleştirmek için özel {koyu:tematik harita yöntemleri} kullanılır: • {koyu:Koroplet (Dereceli Renklendirme) Haritaları}: İl veya ülke gibi idari sınırlar içindeki oransal verileri (aritmetik nüfus yoğunluğu, okuryazar oranı, kişi başına gelir) açıktan koyuya giden renk tonlarıyla gösterir. • {koyu:İzoplet (Eş Değer) Haritaları}: Eş sıcaklık ({koyu:izoterm}), eş basınç ({koyu:izobar}) veya eş yağış ({koyu:izohiyet}) gibi sürekli verileri eğrilerle gösterir.",
-    "• {koyu:Noktalama Haritaları}: Nüfus miktarı, buğday üretimi veya küçükbaş hayvan sayısı gibi mutlak miktar verilerini, her bir noktanın belirli bir değeri temsil ettiği noktalarla gösterir; noktaların sıklaştığı yerlerde yoğunluk fazladır. • {koyu:Akış (Çizgi) ve Oransal Sembol Haritaları}: Göç, ticaret, turizm veya enerji nakil hatlarının yönünü ve miktarını kalınlığı değişen oklarla gösterir."
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "baslik": "Hangi Veriye Hangi Harita Yöntemi?",
-    "metin": "• İllere göre nüfus yoğunluğu veya oran -> Koroplet (Dereceli renklendirme) haritası.\n• Kırsal yerleşmelerin veya tarım ürününün alansal kümelenmesi -> Noktalama haritası.\n• İller arası göç veya petrol taşımacılığı yönü -> Akış (Çizgi) haritası."
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "1/400.000 ölçekli bir haritada iki şehir arasındaki uzaklık 6 cm olarak ölçülmüştür. Bu iki şehir arasındaki kuş uçuşu gerçek uzaklık kaç kilometredir?",
-   "cevap": "Gerçek Uzunluk (GU) = Harita Uzunluğu × Ölçek Paydası\nGU = 6 cm × 400.000 = 2.400.000 cm.\nSantimetreden kilometreye geçmek için 5 sıfır silinir: 2.400.000 cm = 24 km bulunur."
-  },
-  {
-   "soru": "1/200.000 ölçekli bir topografya haritasında A noktası (200 m) ile B noktası (1000 m) arasındaki harita uzunluğu 4 cm'dir. A ile B arasındaki eğim binde (‰) kaçtır?",
-   "cevap": "1) Önce yatay gerçek uzaklık (L) bulunur: L = 4 × 200.000 = 800.000 cm = 8.000 m.\n2) Yükselti farkı (h): 1000 - 200 = 800 m.\n3) Eğim (‰) = (h / L) × 1000 = (800 / 8.000) × 1000 = ‰100 bulunur."
-  },
-  {
-   "soru": "Fiziki Türkiye haritasında Çukurova'nın yeşil, Konya Ovası'nın sarı, Erzurum-Kars Platosu'nun ise kahverengi tonlarla gösterilmesinin temel nedeni nedir?",
-   "cevap": "Fiziki haritalarda renkler yer şeklinin türünü veya bitki örtüsünü değil, deniz seviyesinden olan yükselti basamaklarını gösterir. Çukurova 0-200 m yükseltide olduğu için yeşil, Konya Ovası yaklaşık 1000 m yükseltide olduğu için sarı, Erzurum-Kars Platosu ise 1500 m'nin üzerinde olduğu için kahverengi ile gösterilir."
-  },
-  {
-   "soru": "Bir izohips haritasında akarsuyun denize döküldüğü yerde 'delta ovası' oluştuğunu nasıl anlarız ve bu kıyının özellikleri hakkında hangi çıkarımlarda bulunabiliriz?",
-   "cevap": "Kıyı çizgisinin akarsu ağzında denize doğru üçgen benzeri bir çıkıntı yapmasından delta ovası oluştuğunu anlarız. Bu durum; kıyının sığ olduğunu (kıta sahanlığının geniş olduğunu), kıyıda güçlü akıntı ve yüksek gelgit genliğinin bulunmadığını ve akarsuyun bol alüvyon taşıdığını gösterir."
-  },
-  {
-   "soru": "Bir ülkenin fiziki haritası ile demir yolu ulaşım ağı haritasını karşılaştırarak nasıl bir mekânsal ilişki çözümlemesi yapabilirsiniz?",
-   "cevap": "İki harita çakıştırıldığında demir yolu hatlarının yüksek ve dik sıradağları doğrudan aşmak yerine akarsu vadilerini, boyun (geçit) noktalarını ve eğimin az olduğu ova/plato düzlüklerini takip ettiği görülür. Böylece yer şekillerinin ulaşım güzergâhlarını doğrudan yönlendirdiği çıkarımına ulaşılır."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "Bir izohips (eş yükselti) haritası incelendiğinde aşağıda verilen çıkarımlardan hangisine ulaşılamaz?",
-   "secenekler": [
-    "Eğrilerin sıklaştığı yamaçlarda eğimin daha fazla olduğuna",
-    "Akarsuyun akış yönüne ve oluşturduğu vadiye",
-    "Bölgedeki tepelerin, sırtların ve boyun noktalarının konumuna",
-    "Bölgede yetiştirilen tarım ürünlerinin türüne ve yıllık yağış miktarına",
-    "Ardışık iki izohips arasındaki yükselti farkına (eküidistans değerine)"
-   ],
-   "dogru": 3,
-   "aciklama": "İzohips (topografya) haritaları yer şekillerini, yükseltiyi ve eğimi gösterir; bölgedeki tarım ürünü çeşitliliği veya yıllık yağış miktarı topografya haritasından doğrudan okunamaz (bunun için tematik iklim ve tarım haritaları gerekir)."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Deniz seviyesinden 300 metre yükseltide bulunan X merkezi ile 1500 metre yükseltide bulunan Y merkezi arasındaki kuş uçuşu yatay uzaklık 6 kilometredir. Buna göre X-Y merkezleri arasındaki eğim yüzde (%) kaçtır?",
-   "secenekler": [
-    "%10",
-    "%15",
-    "%20",
-    "%25",
-    "%30"
-   ],
-   "dogru": 2,
-   "aciklama": "Yükselti farkı h = 1500 - 300 = 1200 m'dir. Yatay uzaklık L = 6 km = 6000 m'dir. Eğim (%) = (h / L) × 100 = (1200 / 6000) × 100 = %20 bulunur."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "9. Sınıf Coğrafya - 5. Hafta Özeti",
+  "sinif": 9,
+  "ders": "cografya",
+  "ders_adi": "Coğrafya",
+  "hafta": 5,
+  "tarih": "12-16 Ekim 2026",
+  "yayin_tarihi": "2026-10-14",
+  "unite": "MEKÂNSAL BİLGİ TEKNOLOJİLERİ",
+  "konu": "Mekânın Aynası Haritalar: Harita Okuma, Mekânsal İlişkileri Çözümleme ve Harita Uygulamaları",
+  "ciktilar": [
+    "Haritaya ait bileşenlerden (başlık, lejant, ölçek, yön oku, koordinat ağı) yararlanarak farklı türdeki haritaları okur.",
+    "Haritaya ait bileşenlerden yararlanarak haritadaki doğal ve beşerî olay, olgu ve mekânlar arası ilişkileri çözümler.",
+    "Haritada yer alan olay, olgu veya mekânların özellik, konum, dağılış ve ilişkileri ile değişim ve harita türüne ilişkin çıkarım yapar."
+  ],
+  "giris": "Geçen hafta haritanın temel bileşenlerini, projeksiyon yöntemlerini ve ölçek türlerini tanımıştık. Bu haftaki dersimizde bu bilgileri pratiğe dökerek 'harita okuryazarlığı' ve 'harita uygulamaları' üzerine odaklanacağız. Fiziki, topografya (izohips) ve tematik haritaları okuyarak yeryüzü şekillerini tanıyacak, uzunluk ve eğim hesaplamaları yapacak ve doğal ortam ile beşerî faaliyetler arasındaki mekânsal ilişkileri çözümleyeceğiz.",
+  "ozet": [
+    "Harita okuma; başlık, lejant, ölçek, yön oku ve koordinat sisteminden yararlanarak haritadaki mekânsal verileri anlamlandırma ve yorumlama sürecidir.",
+    "Fiziki haritalarda kullanılan renklendirme yöntemi bitki örtüsünü veya idari sınırları değil, deniz seviyesinden itibaren yükselti ve derinlik basamaklarını gösterir (0-500 m yeşil, 500-1000 m sarı, 1000-1500 m turuncu, 1500 m üzeri kahverengi).",
+    "İzohips (eş yükselti) haritalarında eğrilerin sıklaştığı yerlerde eğim fazla, seyrekleştiği yerlerde eğim azdır; V şeklindeki büklümlerin sivri ucu yüksek yeri gösteriyorsa vadi, alçak yeri gösteriyorsa sırttır.",
+    "Harita üzerinde gerçek uzunluk 'GU = Harita Uzunluğu × Ölçek Paydası' formülüyle; iki nokta arasındaki eğim ise 'Eğim (%) = (Yükselti Farkı / Yatay Uzaklık) × 100' bağıntısıyla hesaplanır.",
+    "Mekânsal dağılış haritalarında (noktalama, koroplet/dereceli renklendirme, akış/çizgi haritaları) yer şekilleri ve iklim gibi doğal unsurlar ile nüfus, yerleşme, ulaşım ve ekonomik faaliyetler arasındaki ilişkiler çözümlenir."
+  ],
+  "bolumler": [
     {
-     "metin": "Fiziki haritalarda kullanılan yeşil renk ormanlık alanları, kahverengi ise kurak alanları temsil eder.",
-     "dogru": false,
-     "aciklama": "Fiziki haritalardaki renkler yalnızca yükselti basamaklarını gösterir (yeşil: 0-500 m, kahverengi: 1500 m üzeri)."
+      "baslik": "1. Harita Okuma ve Mekânsal İlişkileri Çözümleme (COĞ.9.2.1)",
+      "metin": [
+        "{koyu:Harita okuma}, bir haritada sembol, renk, çizgi ve sayılarla kodlanmış coğrafi bilgileri harita bileşenleri yardımıyla çözüp yorumlama becerisidir. Bir haritayı incelerken ilk olarak {koyu:başlığa} bakılarak haritanın konusu ve alanı anlaşılır; ardından {koyu:lejant (harita anahtarı)} incelenerek kullanılan sembol ve renklerin neyi temsil ettiği öğrenilir. {koyu:Koordinat ağı} yardımıyla mutlak konum, {koyu:yön oku} ile coğrafi yönler ve {koyu:ölçek} ile mesafe ve alan büyüklükleri belirlenir.",
+        "Harita okumanın bir üst basamağı {koyu:mekânsal ilişkileri çözümleme ve çıkarım yapmadır}. Örneğin bir bölgenin fiziki haritası ile nüfus dağılış haritası karşılaştırıldığında; yükseltinin ve engebenin fazla olduğu dağlık alanlarda ulaşımın zorlaştığı ve nüfusun seyrekleştiği, buna karşılık akarsu boylarındaki alüvyal ovalarda tarım ve yerleşmenin yoğunlaştığı çıkarımına ulaşılır. Farklı yıllara ait haritaların karşılaştırılması (örneğin Aral Gölü veya şehirleşme haritaları) ise {koyu:mekânsal değişimi} ortaya koyar."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Fiziki Haritalarda Renklerin Anlamı Tuzağı!",
+        "metin": "Fiziki haritalarda yeşil renk 'orman veya çayır alanlarını', sarı renk ise 'çöl veya bozkırları' GÖSTERMEZ! Fiziki haritalardaki tüm renkler yalnızca YÜKSELTİ BASAMAKLARINI ifade eder (0-200 m koyu yeşil, 200-500 m açık yeşil, 500-1000 m sarı, 1000-1500 m turuncu, 1500 m üzeri kahverengi). Örneğin Konya Ovası da Bafra Ovası da ovadır; ancak Bafra Ovası 0-200 m'de olduğu için yeşil, Konya Ovası ~1000 m yükseltide olduğu için sarı-turuncu renkle gösterilir!"
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 240\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"240\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#1a5276\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Harita Okuma ve Uygulama Süreci (COĞ.9.2.1)</text><rect x=\"18\" y=\"54\" width=\"206\" height=\"170\" rx=\"10\" fill=\"#eaf2f8\" stroke=\"#1a5276\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"206\" height=\"28\" rx=\"10\" fill=\"#1a5276\"/><text x=\"121\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">1. Harita Bileşenlerini Okuma</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Başlık: Haritanın kullanım amacı</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• Lejant: Sembol, renk ve işaretler</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Ölçek: Küçültme oranı ve uzunluk</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• Koordinat Ağı: Mutlak konum</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Yön Oku: Coğrafi yön tayini</text><rect x=\"237\" y=\"54\" width=\"206\" height=\"170\" rx=\"10\" fill=\"#e8f8f5\" stroke=\"#117864\" stroke-width=\"1.6\"/><rect x=\"237\" y=\"54\" width=\"206\" height=\"28\" rx=\"10\" fill=\"#117864\"/><text x=\"340\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">2. İlişkileri Çözümleme</text><text x=\"249\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Fiziki yapı (yükselti, eğim, akarsu)</text><text x=\"249\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  ile beşerî dağılış (yerleşme,</text><text x=\"249\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">  ulaşım, tarım) arasındaki</text><text x=\"249\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  nedensellik bağını kurma.</text><text x=\"249\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Mekânsal örüntüyü fark etme.</text><rect x=\"456\" y=\"54\" width=\"206\" height=\"170\" rx=\"10\" fill=\"#fef9e7\" stroke=\"#b9770e\" stroke-width=\"1.6\"/><rect x=\"456\" y=\"54\" width=\"206\" height=\"28\" rx=\"10\" fill=\"#b9770e\"/><text x=\"559\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">3. Çıkarım ve Tahmin</text><text x=\"468\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Farklı yıllara ait haritalardan</text><text x=\"468\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  mekânsal değişimi yorumlama.</text><text x=\"468\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Afet riski, arazi kullanımı</text><text x=\"468\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  veya güzergâh seçimi için</text><text x=\"468\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">  coğrafi çıkarımda bulunma.</text></svg>"
     },
     {
-     "metin": "İzohips haritalarında V şeklindeki büklümlerin sivri ucu yükseltinin arttığı yönü gösteriyorsa orada bir 'vadi' yer alır.",
-     "dogru": true,
-     "aciklama": "Sivri uç yüksek yeri gösteriyorsa vadi, alçak yeri gösteriyorsa sırt oluşur."
+      "baslik": "2. İzohips (Eş Yükselti) Yöntemi ve Temel Özellikleri",
+      "metin": [
+        "Deniz seviyesinden (0 metre) itibaren aynı yükseltiye sahip noktaların birleştirilmesiyle elde edilen iç içe kapalı eğrilere {koyu:izohips (eş yükselti eğrisi)}, deniz ve göllerdeki aynı derinlik noktalarını birleştiren eğrilere ise {koyu:izobat (eş derinlik eğrisi)} denir. İzohips haritalarının temel ilkeleri şunlardır: • İç içe kapalı eğrilerdir ve birbirlerini {koyu:asla kesmezler}. • En dıştaki eğri en alçak yeri, en içteki eğri en yüksek yeri gösterir (kapalı çukurlar hariç). • Deniz kıyısı {koyu:kıyı çizgisi} olup yükseltisi her zaman {koyu:0 metredir}.",
+        "Ardışık iki izohips arasındaki yükselti farkına {koyu:eküidistans (eş yükselti aralığı)} denir ve haritanın tamamında sabittir. Haritanın ölçeği büyüdükçe (ayrıntı arttıkça) eküidistans değeri küçülür (örneğin 10 m veya 20 m); ölçek küçüldükçe eküidistans büyür (örneğin 250 m veya 500 m). • İzohipslerin birbirine {koyu:yaklaştığı (sıklaştığı)} yerlerde yamaç dik ve {koyu:eğim fazladır}; birbirinden {koyu:uzaklaştığı (seyrekleştiği)} yerlerde ise {koyu:eğim azdır}, kıta sahanlığı geniştir."
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "baslik": "Akarsu İle İzohips İlişkisi",
+        "metin": "Bir akarsuyun her iki yakasında (sağında ve solunda) bulunan ilk komşu izohips eğrilerinin yükseltileri birbirine EŞİTTİR! Ayrıca birbirini çevrelemeyen komşu iki halka (iki tepeyi çevreleyen dıştaki ilk halkalar) da aynı yükselti değerine sahiptir."
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 250\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#1e8449\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Fiziki Haritalarda Renk Basamakları ve İzohips (Eş Yükselti) İlkeleri</text><rect x=\"18\" y=\"54\" width=\"314\" height=\"180\" rx=\"10\" fill=\"#e9f7ef\" stroke=\"#1e8449\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#1e8449\"/><text x=\"175\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Renklendirme Yöntemi (Yükselti Basamakları)</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• 0 - 500 m: Yeşil ve tonları (Alçak ovalar)</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• 500 - 1000 m: Sarı (Platolar ve orta yükselti)</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• 1000 - 1500 m: Turuncu (Yüksek platolar)</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• 1500 m ve üzeri: Kahverengi (Sıradağlar)</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Denizlerde açık maviden koyu maviye derinlik artar.</text><text x=\"30\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">• Dikkat: Renkler bitki örtüsünü DEĞİL yükseltiyi gösterir!</text><rect x=\"348\" y=\"54\" width=\"314\" height=\"180\" rx=\"10\" fill=\"#eaf2f8\" stroke=\"#2874a6\" stroke-width=\"1.6\"/><rect x=\"348\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#2874a6\"/><text x=\"505\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">İzohips (Eş Yükselti) Haritalarını Yorumlama</text><text x=\"360\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Eğrilerin sıklaştığı yerde EĞİM FAZLA (dik yamaç),</text><text x=\"360\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  seyrekleştiği yerde EĞİM AZDIR (yatay/düzlük).</text><text x=\"360\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Akarsuyun her iki yamacındaki komşu iki izohipsin</text><text x=\"360\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  yükseltisi birbirine eşittir.</text><text x=\"360\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• V şeklindeki büklümlerin sivri ucu yüksek yeri</text><text x=\"360\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">  gösteriyorsa VADİ, alçak yeri gösteriyorsa SIRTTIR.</text></svg>"
     },
     {
-     "metin": "Haritanın ölçeği büyüdükçe izohipsler arasındaki yükselti farkı (eküidistans değeri) küçülür.",
-     "dogru": true,
-     "aciklama": "Büyük ölçekli haritalarda ayrıntı fazla olduğu için izohipsler daha sık (küçük yükselti farklarıyla) geçirilir."
+      "baslik": "3. Topografya Haritalarında Yer Şekillerinin Tanınması",
+      "metin": [
+        "Topografya (izohips) haritalarında yeryüzü şekilleri eğrilerin uzanış biçiminden tanınır: • {koyu:Vadi ve Sırt}: İzohipslerin yaptığı '∧' veya '∨' biçimindeki büklümlerin sivri ucu {koyu:yükseltinin arttığı yönü} gösteriyorsa {koyu:vadi} (akarsu yatağı); sivri ucu {koyu:yükseltinin azaldığı yönü} gösteriyorsa {koyu:sırt} (iki yamacı ayıran su bölümü çizgisi) oluşur. • {koyu:Tepe (Doruk) ve Boyun}: En içteki küçük halka {koyu:tepeyi}, nokta veya üçgen işareti {koyu:doruğu (zirveyi)}, iki tepe arasında kalan geçit düzlüğü ise {koyu:boyunu} gösterir.",
+        "{koyu:Kapalı Çukur (Çanak)}: Krater, kaldera veya obruk gibi çukurluklar, yükseltinin azaldığı yöne doğru çizilen {koyu:ok işaretleriyle (→)} gösterilir; okun başladığı eğriden bittiği eğriye kadar yükselti azalır. • {koyu:Falez (Yalıyar), Delta ve Haliç}: İzohipslerin deniz kıyısında birbirine çok yaklaşarak çakıştığı dik kıyılara {koyu:falez}; akarsuyun kıyıda denize doğru oluşturduğu üçgen çıkıntıya {koyu:delta ovası}; okyanus kıyılarında gelgit etkisiyle akarsu ağzının karaya doğru aşınmasıyla oluşan girintiye ise {koyu:haliç} denir."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Vadi ile Sırtı Ayırt Etmenin En Kolay Yolu",
+        "metin": "Eğer izohipslerin V büklümünün ortasından bir akarsu çizgisi geçiyorsa orası kesinlikle VADİDİR! Akarsu çizgisi verilmemişse eğrilerin sayısal değerlerine bakılır: V'nin sivri ucu daha yüksek değerli eğriye doğru bakıyorsa VADİ, daha alçak değerli eğriye doğru bakıyorsa SIRTTIR."
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 245\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"245\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#6c3483\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Topografya Haritalarında Yer Şekilleri: Vadi, Sırt, Boyun, Çukur ve Delta</text><rect x=\"18\" y=\"54\" width=\"314\" height=\"175\" rx=\"10\" fill=\"#f5eef8\" stroke=\"#6c3483\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#6c3483\"/><text x=\"175\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Tepe, Boyun, Çanak ve Falez</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Tepe (Doruk): İç içe kapalı eğrilerin merkezi.</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• Boyun: İki tepe arasında kalan geçit alanı.</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Kapalı Çukur (Çanak): İçe doğru ok (→) işaretiyle</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  gösterilen krater veya obruk çukurlukları.</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Falez (Yalıyar): İzohipslerin kıyıda üst üste çakışması.</text><rect x=\"348\" y=\"54\" width=\"314\" height=\"175\" rx=\"10\" fill=\"#fdedec\" stroke=\"#922b21\" stroke-width=\"1.6\"/><rect x=\"348\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#922b21\"/><text x=\"505\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Delta Ovası ve Haliç Ayrımı</text><text x=\"360\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Delta Ovası: Akarsuyun taşıdığı alüvyonlarla kıyı</text><text x=\"360\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  çizgisinin denize doğru üçgen çıkıntı yapmasıdır.</text><text x=\"360\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Haliç: Gelgit genliği yüksek okyanus kıyılarında</text><text x=\"360\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  akarsu ağzının karaya doğru girinti yapmasıdır.</text><text x=\"360\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Delta olan kıyıda haliç, haliç olan kıyıda delta olmaz!</text></svg>"
+    },
+    {
+      "baslik": "4. İzohips Haritalarından Profil Çıkarma Uygulaması",
+      "metin": [
+        "Bir izohips haritası üzerinde belirlenen iki nokta (örneğin A ile B noktası) arasına çekilen doğru boyunca yer şekillerinin yandan görünüşünün grafiğe aktarılmasına {koyu:profil çıkarma} denir. Profil çıkarılırken; doğrunun kestiği her izohips eğrisinin yükselti değeri yatay ve dikey eksenli grafik kağıdına işaretlenir ve noktalar birleştirilir.",
+        "Bir profil grafiğini doğru okumak için {koyu:başlangıç yükseltisine}, {koyu:ulaşılan en yüksek zirve değerine}, {koyu:geçilen tepe ve vadi sayısına} ve {koyu:bitiş noktasının yükseltisine} (örneğin deniz kıyısında bitiyorsa 0 metreye inmesine) dikkat edilir. İzohipslerin sık olduğu kesimlerde profil çizgisi dik bir eğimle yükselir; seyrek olduğu kesimlerde ise yataya yakın uzanır."
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "baslik": "Profil Sorularında 3 Kontrol Noktası",
+        "metin": "Doğrunun başladığı (A) ve bittiği (B) noktaların yükseltisi kaç metredir?\n2) Doğru boyunca kaç tane tepe (zirve) ve kaç tane akarsu vadisi geçilmiştir?\n3) En yüksek zirve hangi izohips değerinin biraz üzerindedir?"
+      }
+    },
+    {
+      "baslik": "5. Haritalarda Uzunluk ve Eğim Hesaplamaları",
+      "metin": [
+        "Harita uygulamalarında iki merkez arasındaki kuş uçuşu {koyu:Gerçek Uzunluk (GU)}, harita üzerindeki uzunluk ({koyu:HU}) ile ölçek paydasının ({koyu:ÖP}) çarpılmasıyla bulunur: {koyu:GU = HU × ÖP}. İşlem sonunda santimetre (cm) olarak çıkan değer, {koyu:5 sıfır silinerek kilometreye (km)} veya {koyu:2 sıfır silinerek metreye (m)} çevrilir ({koyu:1 km = 1000 m = 100.000 cm}).",
+        "Bir yamacın veya yolun diklik derecesini ifade eden {koyu:eğim} ise iki nokta arasındaki {koyu:yükselti farkının (h)}, {koyu:yatay uzaklığa (L, gerçek uzunluk)} bölünmesiyle hesaplanır: • Yüzde olarak eğim: {koyu:Eğim (%) = (h / L) × 100} • Binde olarak eğim: {koyu:Eğim (‰) = (h / L) × 1000}. Eğim hesaplamasında en önemli kural, {koyu:yükselti farkı (h) ile yatay uzaklığın (L) mutlaka aynı uzunluk birimine (genellikle metreye) çevrilmesidir}!"
+      ],
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Adım Adım Eğim Hesaplama Örneği",
+        "metin": "Soru: Deniz kıyısındaki (0 m) K noktası ile 600 m yükseltideki L noktası arasındaki yatay uzaklık 12 km'dir. K-L noktaları arasındaki eğim yüzde (%) kaçtır?\nÇözüm:\n• Yükselti farkı: h = 600 - 0 = 600 m.\n• Yatay uzaklık (metreye çevrilir!): L = 12 km = 12.000 m.\n• Eğim (%) = (h / L) × 100 = (600 / 12.000) × 100 = 60.000 / 12.000 = %5 bulunur."
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 235\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"235\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#b9770e\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Harita Uygulamaları: Uzunluk, Eğim Hesaplama ve Mekânsal Dağılış Yorumu</text><rect x=\"18\" y=\"54\" width=\"314\" height=\"165\" rx=\"10\" fill=\"#fef9e7\" stroke=\"#b9770e\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#b9770e\"/><text x=\"175\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Uzunluk ve Eğim Uygulamaları</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Gerçek Uzunluk (GU) = Harita Uzunluğu × Ölçek Paydası</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• Eğim (%) = (Yükselti Farkı / Yatay Uzaklık) × 100</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Eğim (‰) = (Yükselti Farkı / Yatay Uzaklık) × 1000</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• Dikkat: Eğim hesabında yükselti farkı (h) ile yatay</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">  uzaklık (L) mutlaka AYNI BİRİME (metre) çevrilir!</text><rect x=\"348\" y=\"54\" width=\"314\" height=\"165\" rx=\"10\" fill=\"#e8f8f5\" stroke=\"#117864\" stroke-width=\"1.6\"/><rect x=\"348\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#117864\"/><text x=\"505\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Tematik ve Koroplet/Noktalama Haritaları</text><text x=\"360\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Noktalama Yöntemi: Nüfus, tarım ürünü veya sanayi</text><text x=\"360\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  tesislerinin yoğunluk ve dağılışını noktalarla gösterir.</text><text x=\"360\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Koroplet (Dereceli Renklendirme): İdari sınırlar</text><text x=\"360\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  içinde oran/yoğunluk verilerini renk tonlarıyla sunar.</text><text x=\"360\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Akış (Çizgi) Haritaları: Göç, ticaret ve ulaşım yönü.</text></svg>"
+    },
+    {
+      "baslik": "6. Tematik Dağılış Haritalarında Yöntemler: Koroplet, Noktalama ve Akış",
+      "metin": [
+        "Coğrafi olay ve olguların mekânsal dağılışını görselleştirmek için özel {koyu:tematik harita yöntemleri} kullanılır: • {koyu:Koroplet (Dereceli Renklendirme) Haritaları}: İl veya ülke gibi idari sınırlar içindeki oransal verileri (aritmetik nüfus yoğunluğu, okuryazar oranı, kişi başına gelir) açıktan koyuya giden renk tonlarıyla gösterir. • {koyu:İzoplet (Eş Değer) Haritaları}: Eş sıcaklık ({koyu:izoterm}), eş basınç ({koyu:izobar}) veya eş yağış ({koyu:izohiyet}) gibi sürekli verileri eğrilerle gösterir.",
+        "{koyu:Noktalama Haritaları}: Nüfus miktarı, buğday üretimi veya küçükbaş hayvan sayısı gibi mutlak miktar verilerini, her bir noktanın belirli bir değeri temsil ettiği noktalarla gösterir; noktaların sıklaştığı yerlerde yoğunluk fazladır. • {koyu:Akış (Çizgi) ve Oransal Sembol Haritaları}: Göç, ticaret, turizm veya enerji nakil hatlarının yönünü ve miktarını kalınlığı değişen oklarla gösterir."
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "baslik": "Hangi Veriye Hangi Harita Yöntemi?",
+        "metin": "İllere göre nüfus yoğunluğu veya oran -> Koroplet (Dereceli renklendirme) haritası.\n• Kırsal yerleşmelerin veya tarım ürününün alansal kümelenmesi -> Noktalama haritası.\n• İller arası göç veya petrol taşımacılığı yönü -> Akış (Çizgi) haritası."
+      }
     }
-   ]
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
-   "ifadeler": [
+  ],
+  "ornekler": [
     {
-     "metin": "Bir akarsuyun her iki yamacında yer alan ilk komşu izohipslerin yükselti değerleri birbirine eşittir.",
-     "dogru": true,
-     "aciklama": "Akarsu yatağından her iki yana doğru yükselti simetrik basamaklarla artar."
+      "soru": "Verilen 1/400.000 ölçekli bir haritada iki şehir arasındaki uzaklık 6 cm olarak ölçülmüştür. Bu iki şehir arasındaki kuş uçuşu gerçek uzaklık kaç kilometredir?",
+      "cevap": "Gerçek Uzunluk (GU) = Harita Uzunluğu × Ölçek Paydası\nGU = 6 cm × 400.000 = 2.400.000 cm.\nSantimetreden kilometreye geçmek için 5 sıfır silinir: 2.400.000 cm = 24 km bulunur."
     },
     {
-     "metin": "Bir kıyıda hem delta ovası hem de haliç aynı anda oluşabilir.",
-     "dogru": false,
-     "aciklama": "Delta ovası gelgitin az olduğu iç denizlerde birikmeyle, haliç ise gelgitin güçlü olduğu okyanus kıyılarında aşınmayla oluşur; aynı kıyıda birlikte bulunamazlar."
+      "soru": "Verilen 1/200.000 ölçekli bir topografya haritasında A noktası (200 m) ile B noktası (1000 m) arasındaki harita uzunluğu 4 cm'dir. A ile B arasındaki eğim binde (‰) kaçtır?",
+      "cevap": "1) Önce yatay gerçek uzaklık (L) bulunur: L = 4 × 200.000 = 800.000 cm = 8.000 m.\n2) Yükselti farkı (h): 1000 - 200 = 800 m.\n3) Eğim (‰) = (h / L) × 1000 = (800 / 8.000) × 1000 = ‰100 bulunur."
     },
     {
-     "metin": "İzohipslerin deniz kıyısında üst üste çakışacak kadar sıklaştığı dik kıyılarda falez (yalıyar) oluşur.",
-     "dogru": true,
-     "aciklama": "Eğrilerin kıyıda sıklaşması kıyı derinliğinin fazla, kıta sahanlığının dar olduğunu ve falez oluştuğunu gösterir."
+      "soru": "Fiziki Türkiye haritasında Çukurova'nın yeşil, Konya Ovası'nın sarı, Erzurum-Kars Platosu'nun ise kahverengi tonlarla gösterilmesinin temel nedeni nedir?",
+      "cevap": "Fiziki haritalarda renkler yer şeklinin türünü veya bitki örtüsünü değil, deniz seviyesinden olan yükselti basamaklarını gösterir. Çukurova 0-200 m yükseltide olduğu için yeşil, Konya Ovası yaklaşık 1000 m yükseltide olduğu için sarı, Erzurum-Kars Platosu ise 1500 m'nin üzerinde olduğu için kahverengi ile gösterilir."
+    },
+    {
+      "soru": "Bir izohips haritasında akarsuyun denize döküldüğü yerde 'delta ovası' oluştuğunu nasıl anlarız ve bu kıyının özellikleri hakkında hangi çıkarımlarda bulunabiliriz?",
+      "cevap": "Kıyı çizgisinin akarsu ağzında denize doğru üçgen benzeri bir çıkıntı yapmasından delta ovası oluştuğunu anlarız. Bu durum; kıyının sığ olduğunu (kıta sahanlığının geniş olduğunu), kıyıda güçlü akıntı ve yüksek gelgit genliğinin bulunmadığını ve akarsuyun bol alüvyon taşıdığını gösterir."
+    },
+    {
+      "soru": "Bir ülkenin fiziki haritası ile demir yolu ulaşım ağı haritasını karşılaştırarak nasıl bir mekânsal ilişki çözümlemesi yapabilirsiniz?",
+      "cevap": "İki harita çakıştırıldığında demir yolu hatlarının yüksek ve dik sıradağları doğrudan aşmak yerine akarsu vadilerini, boyun (geçit) noktalarını ve eğimin az olduğu ova/plato düzlüklerini takip ettiği görülür. Böylece yer şekillerinin ulaşım güzergâhlarını doğrudan yönlendirdiği çıkarımına ulaşılır."
+    },
+    {
+      "soru": "‘Harita Okuma ve Mekânsal İlişkileri Çözümleme (COĞ.9.2.1)’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
+      "cevap": "{koyu:Harita okuma}, bir haritada sembol, renk, çizgi ve sayılarla kodlanmış coğrafi bilgileri harita bileşenleri yardımıyla çözüp yorumlama becerisidir. Bir haritayı incelerken ilk olarak {koyu:başlığa} bakılarak haritanın konusu ve alanı anlaşılır; ardından {koyu:lejant (harita anahtarı)} incelenerek kullanılan sembol ve renklerin neyi temsil ettiği öğrenilir. {koyu:Koordinat ağı} yardımıyla mutlak konum, {koyu:yön oku} ile coğrafi yönler ve {koyu:ölçek} ile mesafe ve alan büyüklükleri belirlenir. Harita okumanın bir üst basamağı {koyu:mekânsal ilişkileri çözümleme ve çıkarım yapmadır}. Örneğin bir bölgenin fiziki haritası ile nüfus dağılış haritası karşılaştırıldığında; yükseltinin ve engebenin fazla olduğu dağlık alanlarda ulaşımın zorlaştığı ve nüfusun seyrekleştiği, buna karşılık akarsu boylarındaki alüvyal ovalarda tarım ve yerleşmenin yoğunlaştığı çıkarımına ulaşılır. Farklı yıllara ait haritaların karşılaştırılması (örneğin Aral Gölü veya şehirleşme haritaları) ise {koyu:mekânsal değişimi} ortaya koyar."
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "soru": "Aşağıdaki yer şekillerini ve harita kavramlarını açıklamalarıyla eşleştiriniz.",
-   "ciftler": [
-    [
-     "Boyun",
-     "İzohips haritalarında birbirinden ayrı iki tepe arasında kalan geçit düzlüğü"
-    ],
-    [
-     "Kapalı Çukur (Çanak)",
-     "İzohips haritalarında yükseltinin azaldığı yöne doğru ok (→) işaretiyle gösterilen çukurluk"
-    ],
-    [
-     "Eküidistans",
-     "Topografya haritasında ardışık iki izohips eğrisi arasındaki sabit yükselti farkı"
-    ],
-    [
-     "Koroplet Haritası",
-     "İdari sınırlar içindeki nüfus yoğunluğu gibi oransal verileri renk tonlarıyla gösteren tematik harita"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kelimelerle tamamlayınız.",
-   "cumleler": [
+  ],
+  "etkinlikler": [
     {
-     "metin": "Deniz seviyesinden itibaren aynı yükseltiye sahip noktaların birleştirilmesiyle çizilen eğrilere ___ denir.",
-     "cevap": "izohips"
+      "tur": "coktan",
+      "soru": "Bir izohips (eş yükselti) haritası incelendiğinde aşağıda verilen çıkarımlardan hangisine ulaşılamaz?",
+      "secenekler": [
+        "Bölgede yetiştirilen tarım ürünlerinin türüne ve yıllık yağış miktarına",
+        "Akarsuyun akış yönüne ve oluşturduğu vadiye",
+        "Bölgedeki tepelerin, sırtların ve boyun noktalarının konumuna",
+        "Eğrilerin sıklaştığı yamaçlarda eğimin daha fazla olduğuna",
+        "Ardışık iki izohips arasındaki yükselti farkına (eküidistans değerine)"
+      ],
+      "dogru": 0,
+      "aciklama": "İzohips (topografya) haritaları yer şekillerini, yükseltiyi ve eğimi gösterir; bölgedeki tarım ürünü çeşitliliği veya yıllık yağış miktarı topografya haritasından doğrudan okunamaz (bunun için tematik iklim ve tarım haritaları gerekir)."
     },
     {
-     "metin": "Akarsuyun taşıdığı alüvyonları deniz kıyısında biriktirmesiyle oluşan üçgen biçimli çıkıntıya ___ ovası denir.",
-     "cevap": "delta"
+      "tur": "coktan",
+      "soru": "Deniz seviyesinden 300 metre yükseltide bulunan X merkezi ile 1500 metre yükseltide bulunan Y merkezi arasındaki kuş uçuşu yatay uzaklık 6 kilometredir. Buna göre X-Y merkezleri arasındaki eğim yüzde (%) kaçtır?",
+      "secenekler": [
+        "%10",
+        "%20",
+        "%15",
+        "%25",
+        "%30"
+      ],
+      "dogru": 1,
+      "aciklama": "Yükselti farkı h = 1500 - 300 = 1200 m'dir. Yatay uzaklık L = 6 km = 6000 m'dir. Eğim (%) = (h / L) × 100 = (1200 / 6000) × 100 = %20 bulunur."
     },
     {
-     "metin": "Haritada kullanılan özel işaretlerin, renklerin ve sembollerin ne anlama geldiğini gösteren bölüme ___ (harita anahtarı) denir.",
-     "cevap": "lejant"
+      "tur": "coktan",
+      "soru": "‘Topografya Haritalarında Yer Şekillerinin Tanınması’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Eğer izohipslerin V büklümünün ortasından bir akarsu çizgisi geçiyorsa orası bütünüyle VADİDİR! Akarsu çizgisi verilmemişse eğrilerin sayısal değerlerine bakılır: V'nin sivri ucu daha yüksek değerli eğriye doğru bakıyorsa VADİ, daha alçak değerli eğriye doğru bakıyorsa SIRTTIR.",
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum)",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 2,
+      "aciklama": "Topografya Haritalarında Yer Şekillerinin Tanınması bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "‘İzohips Haritalarından Profil Çıkarma Uygulaması’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme, bağlam dışı yorum, bağlam dışı yorum)",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "1) Doğrunun başladığı (A) ve bittiği (B) noktaların yükseltisi kaç metredir?\n2) Doğru boyunca kaç tane tepe (zirve) ve kaç tane akarsu vadisi geçilmiştir?\n3) En yüksek zirve hangi izohips değerinin biraz üzerindedir?.",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 3,
+      "aciklama": "İzohips Haritalarından Profil Çıkarma Uygulaması bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Fiziki haritalarda kullanılan yeşil renk ormanlık alanları, kahverengi ise kurak alanları temsil eder.",
+          "dogru": false,
+          "aciklama": "Fiziki haritalardaki renkler yalnızca yükselti basamaklarını gösterir (yeşil: 0-500 m, kahverengi: 1500 m üzeri)."
+        },
+        {
+          "metin": "İzohips haritalarında V şeklindeki büklümlerin sivri ucu yükseltinin arttığı yönü gösteriyorsa orada bir 'vadi' yer alır.",
+          "dogru": true,
+          "aciklama": "Sivri uç yüksek yeri gösteriyorsa vadi, alçak yeri gösteriyorsa sırt oluşur."
+        },
+        {
+          "metin": "Haritanın ölçeği büyüdükçe izohipsler arasındaki yükselti farkı (eküidistans değeri) küçülür.",
+          "dogru": true,
+          "aciklama": "Büyük ölçekli haritalarda ayrıntı fazla olduğu için izohipsler daha sık (küçük yükselti farklarıyla) geçirilir."
+        },
+        {
+          "metin": "Bir akarsuyun her iki yamacında yer alan ilk komşu izohipslerin yükselti değerleri birbirine eşittir.",
+          "dogru": true,
+          "aciklama": "Akarsu yatağından her iki yana doğru yükselti simetrik basamaklarla artar."
+        },
+        {
+          "metin": "Bir kıyıda hem delta ovası hem de haliç aynı anda oluşabilir.",
+          "dogru": false,
+          "aciklama": "Delta ovası gelgitin az olduğu iç denizlerde birikmeyle, haliç ise gelgitin güçlü olduğu okyanus kıyılarında aşınmayla oluşur; aynı kıyıda birlikte bulunamazlar."
+        },
+        {
+          "metin": "İzohipslerin deniz kıyısında üst üste çakışacak kadar sıklaştığı dik kıyılarda falez (yalıyar) oluşur.",
+          "dogru": true,
+          "aciklama": "Eğrilerin kıyıda sıklaşması kıyı derinliğinin fazla, kıta sahanlığının dar olduğunu ve falez oluştuğunu gösterir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki yer şekillerini ve harita kavramlarını açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Boyun",
+          "İzohips haritalarında birbirinden ayrı iki tepe arasında kalan geçit düzlüğü"
+        ],
+        [
+          "Kapalı Çukur (Çanak)",
+          "İzohips haritalarında yükseltinin azaldığı yöne doğru ok (→) işaretiyle gösterilen çukurluk"
+        ],
+        [
+          "Eküidistans",
+          "Topografya haritasında ardışık iki izohips eğrisi arasındaki sabit yükselti farkı"
+        ],
+        [
+          "Koroplet Haritası",
+          "İdari sınırlar içindeki nüfus yoğunluğu gibi oransal verileri renk tonlarıyla gösteren tematik harita"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Deniz seviyesinden itibaren aynı yükseltiye sahip noktaların birleştirilmesiyle çizilen eğrilere ___ denir.",
+          "cevap": "izohips"
+        },
+        {
+          "metin": "Akarsuyun taşıdığı alüvyonları deniz kıyısında biriktirmesiyle oluşan üçgen biçimli çıkıntıya ___ ovası denir.",
+          "cevap": "delta"
+        },
+        {
+          "metin": "Haritada kullanılan özel işaretlerin, renklerin ve sembollerin ne anlama geldiğini gösteren bölüme ___ (harita anahtarı) denir.",
+          "cevap": "lejant"
+        },
+        {
+          "metin": "İzohips haritalarında V şeklindeki büklümlerin sivri ucu yükseltinin azaldığı (alçak) yönü gösteriyorsa bu yer şekline ___ denir.",
+          "cevap": "sırt"
+        },
+        {
+          "metin": "Eğim hesaplanırken iki nokta arasındaki yükselti farkı (h), ___ uzaklığa (L) bölünür.",
+          "cevap": "yatay"
+        },
+        {
+          "metin": "Göç, ticaret veya ulaşım hareketlerinin yönünü ve hacmini oklarla gösteren tematik haritalara ___ haritası denir.",
+          "cevap": "akış"
+        }
+      ],
+      "fazla": [
+        "izobat",
+        "haliç",
+        "vadi",
+        "dikey"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir bölgenin 1/100.000 ölçekli izohips haritasını kullanarak yeni bir kara yolu güzergâhı belirlemek isteyen bir mühendis, haritayı adım adım nasıl okumalı ve hangi mekânsal ilişkileri çözümlemelidir?",
+      "cevap": "1. Adım (Harita Bileşenlerini Okuma): Mühendis önce ölçeğe (1 cm = 1 km) ve izohipsler arası yükselti farkına (eküidistans) bakarak arazinin diklik ve büyüklük ölçeğini kavrar.\n2. Adım (Yer Şekilleri İle Ulaşım İlişkisini Çözümleme): Yol yapım maliyetini düşürmek ve güvenliği sağlamak için izohipslerin sıklaştığı dik yamaçlar yerine, eğrilerin seyrekleştiği düzlükleri, akarsu vadilerini ve dağları aşmak için iki tepe arasındaki 'boyun' noktalarını güzergâh olarak seçer.\n3. Adım (Uzunluk ve Eğim Hesabı): GU = HU × Ölçek Paydası ile yolun gerçek uzunluğunu, Eğim (%) = (h / L) × 100 formülüyle de yolun standartlara uygun eğimde olup olmadığını hesaplar.",
+      "ipuclari": [
+        "1. İpucu: Lejant, ölçek ve eküidistans değerini okuyarak bölgenin genel yükselti ve mesafe özelliklerini belirleyiniz.",
+        "2. İpucu: Eğimin fazla olduğu sık izohipsli yamaçlardan ve dik falezlerden kaçınarak eğimin az olduğu seyrek izohipsli alanları, akarsu vadilerini ve iki tepe arasındaki 'boyun' geçitlerini seçiniz.",
+        "3. İpucu: Seçilen güzergâhın harita uzunluğunu ölçekle çarparak gerçek uzunluğunu ve eğim formülüyle yolun eğim yüzdesini hesaplayınız."
+      ]
     }
-   ],
-   "fazla": [
-    "izobat",
-    "haliç"
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kelimelerle tamamlayınız.",
-   "cumleler": [
-    {
-     "metin": "İzohips haritalarında V şeklindeki büklümlerin sivri ucu yükseltinin azaldığı (alçak) yönü gösteriyorsa bu yer şekline ___ denir.",
-     "cevap": "sırt"
-    },
-    {
-     "metin": "Eğim hesaplanırken iki nokta arasındaki yükselti farkı (h), ___ uzaklığa (L) bölünür.",
-     "cevap": "yatay"
-    },
-    {
-     "metin": "Göç, ticaret veya ulaşım hareketlerinin yönünü ve hacmini oklarla gösteren tematik haritalara ___ haritası denir.",
-     "cevap": "akış"
-    }
-   ],
-   "fazla": [
-    "vadi",
-    "dikey"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Bir bölgenin 1/100.000 ölçekli izohips haritasını kullanarak yeni bir kara yolu güzergâhı belirlemek isteyen bir mühendis, haritayı adım adım nasıl okumalı ve hangi mekânsal ilişkileri çözümlemelidir?",
-   "ipuclari": [
-    "1. İpucu: Lejant, ölçek ve eküidistans değerini okuyarak bölgenin genel yükselti ve mesafe özelliklerini belirleyiniz.",
-    "2. İpucu: Eğimin fazla olduğu sık izohipsli yamaçlardan ve dik falezlerden kaçınarak eğimin az olduğu seyrek izohipsli alanları, akarsu vadilerini ve iki tepe arasındaki 'boyun' geçitlerini seçiniz.",
-    "3. İpucu: Seçilen güzergâhın harita uzunluğunu ölçekle çarparak gerçek uzunluğunu ve eğim formülüyle yolun eğim yüzdesini hesaplayınız."
-   ],
-   "cevap": "1. Adım (Harita Bileşenlerini Okuma): Mühendis önce ölçeğe (1 cm = 1 km) ve izohipsler arası yükselti farkına (eküidistans) bakarak arazinin diklik ve büyüklük ölçeğini kavrar.\n2. Adım (Yer Şekilleri İle Ulaşım İlişkisini Çözümleme): Yol yapım maliyetini düşürmek ve güvenliği sağlamak için izohipslerin sıklaştığı dik yamaçlar yerine, eğrilerin seyrekleştiği düzlükleri, akarsu vadilerini ve dağları aşmak için iki tepe arasındaki 'boyun' noktalarını güzergâh olarak seçer.\n3. Adım (Uzunluk ve Eğim Hesabı): GU = HU × Ölçek Paydası ile yolun gerçek uzunluğunu, Eğim (%) = (h / L) × 100 formülüyle de yolun standartlara uygun eğimde olup olmadığını hesaplar."
-  }
- ]
+  ]
 }

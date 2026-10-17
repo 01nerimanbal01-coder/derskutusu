@@ -145,19 +145,19 @@ def _gorsel_4():
     <!-- Sol: Olumlu Kısaltmalar -->
     <rect x="28" y="52" width="300" height="148" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.8"/>
     <text x="178" y="73" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#1d4ed8">Affirmative Reductions (Olumlu)</text>
-    <text x="44" y="96" font-size="10.5" fill="#1e293b">• <tspan font-weight="bold">will</tspan> /wɪl/ → <tspan font-weight="bold" fill="#1d4ed8">/l/</tspan> : "I'll /aɪl/ send my CV."</text>
-    <text x="44" y="119" font-size="10.5" fill="#1e293b">• <tspan font-weight="bold">am</tspan> /æm/ → <tspan font-weight="bold" fill="#1d4ed8">/m/</tspan> : "I'm /aɪm/ going to study."</text>
-    <text x="44" y="142" font-size="10.5" fill="#1e293b">• <tspan font-weight="bold">is</tspan> /ɪz/ → <tspan font-weight="bold" fill="#1d4ed8">/z/</tspan> : "He's /hiːz/ going to call."</text>
-    <text x="44" y="165" font-size="10.5" fill="#1e293b">• <tspan font-weight="bold">are</tspan> /ɑː/ → <tspan font-weight="bold" fill="#1d4ed8">/ə/</tspan> : "They're /ðeə/ ready."</text>
+    <text x="44" y="96" font-size="10.5" fill="#1e293b">• &lt;tspan font-weight="bold">will&lt;/tspan> /wɪl/ → &lt;tspan font-weight="bold" fill="#1d4ed8">/l/&lt;/tspan> : "I'll /aɪl/ send my CV."</text>
+    <text x="44" y="119" font-size="10.5" fill="#1e293b">• &lt;tspan font-weight="bold">am&lt;/tspan> /æm/ → &lt;tspan font-weight="bold" fill="#1d4ed8">/m/&lt;/tspan> : "I'm /aɪm/ going to study."</text>
+    <text x="44" y="142" font-size="10.5" fill="#1e293b">• &lt;tspan font-weight="bold">is&lt;/tspan> /ɪz/ → &lt;tspan font-weight="bold" fill="#1d4ed8">/z/&lt;/tspan> : "He's /hiːz/ going to call."</text>
+    <text x="44" y="165" font-size="10.5" fill="#1e293b">• &lt;tspan font-weight="bold">are&lt;/tspan> /ɑː/ → &lt;tspan font-weight="bold" fill="#1d4ed8">/ə/&lt;/tspan> : "They're /ðeə/ ready."</text>
 
     <!-- Sağ: Olumsuz Kısaltmalarda /t/ Düşmesi -->
     <rect x="352" y="52" width="300" height="148" rx="10" fill="#fff1f2" stroke="#f43f5e" stroke-width="1.8"/>
     <text x="502" y="73" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#be123c">Negative Contractions (Unreleased /t/)</text>
-    <text x="368" y="96" font-size="10.5" fill="#1e293b">• <tspan font-weight="bold">won't</tspan> /wəʊnt/ → <tspan font-weight="bold" fill="#be123c">/wəʊn/</tspan></text>
+    <text x="368" y="96" font-size="10.5" fill="#1e293b">• &lt;tspan font-weight="bold">won't&lt;/tspan> /wəʊnt/ → &lt;tspan font-weight="bold" fill="#be123c">/wəʊn/&lt;/tspan></text>
     <text x="380" y="112" font-size="9.5" fill="#475569">"I won't be late for the interview."</text>
-    <text x="368" y="135" font-size="10.5" fill="#1e293b">• <tspan font-weight="bold">isn't</tspan> /ɪznt/ → <tspan font-weight="bold" fill="#be123c">/ɪzn/</tspan></text>
+    <text x="368" y="135" font-size="10.5" fill="#1e293b">• &lt;tspan font-weight="bold">isn't&lt;/tspan> /ɪznt/ → &lt;tspan font-weight="bold" fill="#be123c">/ɪzn/&lt;/tspan></text>
     <text x="380" y="151" font-size="9.5" fill="#475569">"She isn't going to quit her job."</text>
-    <text x="368" y="174" font-size="10.5" fill="#1e293b">• <tspan font-weight="bold">aren't</tspan> /ɑːnt/ → <tspan font-weight="bold" fill="#be123c">/ɑːn/</tspan> ("We aren't sure.")</text>
+    <text x="368" y="174" font-size="10.5" fill="#1e293b">• &lt;tspan font-weight="bold">aren't&lt;/tspan> /ɑːnt/ → &lt;tspan font-weight="bold" fill="#be123c">/ɑːn/&lt;/tspan> ("We aren't sure.")</text>
     """
     return svg(w, h, ic, "Connected Speech and Phonetic Reductions in Future Forms")
 
@@ -172,21 +172,21 @@ def _gorsel_5():
     <rect x="28" y="52" width="295" height="156" rx="10" fill="#ffffff" stroke="#0284c7" stroke-width="1.8"/>
     <rect x="28" y="52" width="295" height="28" rx="8" fill="#0284c7"/>
     <text x="175" y="70" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#ffffff">CURRICULUM VITAE (CV) — Leo Tarek</text>
-    <text x="42" y="98" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#0369a1">Profession:</tspan> Physician (MD)</text>
-    <text x="42" y="117" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#0369a1">Education:</tspan> Faculty of Medicine</text>
-    <text x="42" y="136" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#0369a1">Experience:</tspan> 6 years of clinical practice</text>
-    <text x="42" y="155" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#0369a1">Skills:</tspan> Fluent in English &amp; Spanish</text>
-    <text x="42" y="174" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#0369a1">Format:</tspan> Structured bullet-point table</text>
+    <text x="42" y="98" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#0369a1">Profession:&lt;/tspan> Physician (MD)</text>
+    <text x="42" y="117" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#0369a1">Education:&lt;/tspan> Faculty of Medicine</text>
+    <text x="42" y="136" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#0369a1">Experience:&lt;/tspan> 6 years of clinical practice</text>
+    <text x="42" y="155" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#0369a1">Skills:&lt;/tspan> Fluent in English &amp; Spanish</text>
+    <text x="42" y="174" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#0369a1">Format:&lt;/tspan> Structured bullet-point table</text>
 
     <!-- Sağ: Letter of Intent (Mila Chris) -->
     <rect x="357" y="52" width="295" height="156" rx="10" fill="#ffffff" stroke="#059669" stroke-width="1.8"/>
     <rect x="357" y="52" width="295" height="28" rx="8" fill="#059669"/>
     <text x="504" y="70" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#ffffff">LETTER OF INTENT — Mila Chris</text>
-    <text x="371" y="98" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#047857">Salutation:</tspan> "Dear Sir or Madam,"</text>
-    <text x="371" y="117" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#047857">Purpose:</tspan> Applying for Nutritionist post</text>
-    <text x="371" y="136" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#047857">Body:</tspan> Explains passion, qualifications &amp;</text>
+    <text x="371" y="98" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#047857">Salutation:&lt;/tspan> "Dear Sir or Madam,"</text>
+    <text x="371" y="117" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#047857">Purpose:&lt;/tspan> Applying for Nutritionist post</text>
+    <text x="371" y="136" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#047857">Body:&lt;/tspan> Explains passion, qualifications &amp;</text>
     <text x="381" y="151" font-size="9.5" fill="#475569">how she will contribute to the clinic</text>
-    <text x="371" y="170" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#047857">Sign-off:</tspan> "I look forward to hearing</text>
+    <text x="371" y="170" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#047857">Sign-off:&lt;/tspan> "I look forward to hearing</text>
     <text x="381" y="185" font-size="9.5" fill="#475569">from you. Sincerely, Mila Chris"</text>
     """
     return svg(w, h, ic, "Comparison of a CV and a Formal Letter of Intent")
@@ -200,10 +200,10 @@ def _gorsel_6():
 
     <rect x="40" y="54" width="600" height="150" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="1.8"/>
     <text x="60" y="78" font-size="11.5" font-weight="bold" fill="#5b21b6">Dear Self / Dear Future Me,</text>
-    <text x="60" y="100" font-size="10.5" fill="#1e293b">1. <tspan font-weight="bold" fill="#6d28d9">Future Hopes (will):</tspan> "I hope you <tspan font-weight="bold">will</tspan> always follow your dreams and stay curious."</text>
-    <text x="60" y="122" font-size="10.5" fill="#1e293b">2. <tspan font-weight="bold" fill="#6d28d9">Concrete Plans (be going to):</tspan> "I <tspan font-weight="bold">am going to</tspan> study hard and gain experience <tspan font-weight="bold">under my belt</tspan>."</text>
-    <text x="60" y="144" font-size="10.5" fill="#1e293b">3. <tspan font-weight="bold" fill="#6d28d9">Emotional Resilience Idioms:</tspan> "When you face difficulties, <tspan font-weight="bold">put on a brave face</tspan> and</text>
-    <text x="76" y="160" font-size="10.5" fill="#1e293b">always <tspan font-weight="bold">look at the bright side</tspan>!"</text>
+    <text x="60" y="100" font-size="10.5" fill="#1e293b">1. &lt;tspan font-weight="bold" fill="#6d28d9">Future Hopes (will):&lt;/tspan> "I hope you &lt;tspan font-weight="bold">will&lt;/tspan> always follow your dreams and stay curious."</text>
+    <text x="60" y="122" font-size="10.5" fill="#1e293b">2. &lt;tspan font-weight="bold" fill="#6d28d9">Concrete Plans (be going to):&lt;/tspan> "I &lt;tspan font-weight="bold">am going to&lt;/tspan> study hard and gain experience &lt;tspan font-weight="bold">under my belt&lt;/tspan>."</text>
+    <text x="60" y="144" font-size="10.5" fill="#1e293b">3. &lt;tspan font-weight="bold" fill="#6d28d9">Emotional Resilience Idioms:&lt;/tspan> "When you face difficulties, &lt;tspan font-weight="bold">put on a brave face&lt;/tspan> and</text>
+    <text x="76" y="160" font-size="10.5" fill="#1e293b">always &lt;tspan font-weight="bold">look at the bright side&lt;/tspan>!"</text>
     <text x="520" y="186" text-anchor="middle" font-size="11" font-weight="bold" fill="#5b21b6">With love, Present Me</text>
     """
     return svg(w, h, ic, "CLIL Psychology: Template for Writing a Note to Your Future Self")

@@ -102,7 +102,7 @@ def gorsel_2():
     s += Kutu(26, 150, 304, 86, "#ecfdf5", "#059669", 1.5, 8)
     s += Yazi(178, 170, "İlişkinin YÖNÜNÜ Belirleyen: İşaret (+ / -)", 9.6, "#047857", "middle", True)
     s += Yazi(178, 192, "• r > 0 ise: Aynı yönlü (Pozitif) ilişki", 9, "#1e293b", "middle", False)
-    s += Yazi(178, 212, "• r < 0 ise: Ters yönlü (Negatif) ilişki", 9, "#1e293b", "middle", False)
+    s += Yazi(178, 212, "• r &lt; 0 ise: Ters yönlü (Negatif) ilişki", 9, "#1e293b", "middle", False)
 
     s += Kutu(350, 150, 304, 86, "#eff6ff", "#2563eb", 1.5, 8)
     s += Yazi(502, 170, "İlişkinin GÜCÜNÜ Belirleyen: |r| Mutlak Değeri", 9.6, "#1d4ed8", "middle", True)

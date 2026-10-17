@@ -38,7 +38,7 @@
       "baslik": "İlkenin uygulamadaki karşılığını bul",
       "metin": [
         "Kur’an’da namaz emredilir; nasıl kılınacağı sünnetle açıklanır. Zekâtın hangi mallardan ne ölçüde verileceği ve hac ibadetinin uygulanışı da sünnetin açıklayıcı rolünü gösterir.",
-        "Ders kitabında “orta namaz” ifadesinin Hz. Muhammed tarafından ikindi namazı olarak açıklandığı da anlatılır. Böylece hem uygulama hem bir ifadenin anlaşılması konusunda sünnetin yol gösterdiği görülür."
+        "konu anlatımında “orta namaz” ifadesinin Hz. Muhammed tarafından ikindi namazı olarak açıklandığı da anlatılır. Böylece hem uygulama hem bir ifadenin anlaşılması konusunda sünnetin yol gösterdiği görülür."
       ],
       "kutu": {
         "tur": "ipucu",
@@ -101,24 +101,24 @@
       "tur": "coktan",
       "soru": "Bir öğrenci kardeşinin yanlışını incitmeden anlatıyor. Hangi davranış öne çıkar?",
       "secenekler": [
-        "İsraftan kaçınma",
-        "Temizliğe özen",
         "Şefkatli yaklaşım",
+        "Temizliğe özen",
+        "İsraftan kaçınma",
         "Hakkını savunma"
       ],
-      "dogru": 2,
+      "dogru": 0,
       "aciklama": "Uyarırken incitmemeye özen göstermek şefkatle ilişkilidir."
     },
     {
       "tur": "coktan",
       "soru": "Kur’an’da emredilen zekâtın uygulama ayrıntıları araştırılıyor. Hangi kaynağın açıklayıcı rolüne başvurulur?",
       "secenekler": [
-        "Sünnetin",
         "Kişisel alışkanlıkların",
+        "Sünnetin",
         "Yalnız kelime anlamlarının",
         "Yalnız kıssaların tarihlerinin"
       ],
-      "dogru": 0,
+      "dogru": 1,
       "aciklama": "Sünnet, hangi mallardan ne ölçüde zekât verileceğini açıklar."
     },
     {
@@ -127,15 +127,27 @@
       "secenekler": [
         "Tutumlu olmayı",
         "Temizliğe özen göstermeyi",
-        "İnsanlarla selamlaşmayı",
-        "Dürüst olmayı"
+        "Dürüst olmayı",
+        "İnsanlarla selamlaşmayı"
       ],
-      "dogru": 3,
+      "dogru": 2,
       "aciklama": "Hatasını gizlemeden doğru bilgiyi vermesi dürüstlüktür."
     },
     {
+      "tur": "coktan",
+      "soru": "‘Öğüdü kararına yansıt’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "“İyi davranırım.” yerine hangi durumda ne yapacağını açıkla."
+      ],
+      "dogru": 3,
+      "aciklama": "Öğüdü kararına yansıt bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
       "tur": "dy",
-      "yonerge": "Yargıları değerlendiriniz.",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
           "metin": "Bir davranış hem ahlak hem sosyal hayatla ilişkili olabilir.",
@@ -150,7 +162,7 @@
         {
           "metin": "Sünnet ibadetlerin uygulanışına rehberlik eder.",
           "dogru": true,
-          "aciklama": "Namaz, zekât ve hac kitapta verilen örneklerdir."
+          "aciklama": "Namaz, zekât ve hac metinde verilen örneklerdir."
         },
         {
           "metin": "Somut davranış örneğinde ne yapıldığı açıkça belirtilir.",
@@ -161,7 +173,7 @@
     },
     {
       "tur": "eslestir",
-      "yonerge": "İlişkili ifadeleri eşleştiriniz.",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
           "Allah’a inanma",
@@ -183,7 +195,7 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Boşlukları tamamlayınız. Bir sözcük artacak.",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
           "metin": "Bir ilkenin günlük hayatta görünmesi onu ___ ile olur.",
@@ -199,7 +211,8 @@
         }
       ],
       "fazla": [
-        "israf"
+        "israf",
+        "varsayım"
       ]
     },
     {
@@ -209,15 +222,6 @@
       "ipuclari": [
         "Öğütle çelişen davranışı bul.",
         "Aynı durumda yapılabilecek somut değişikliği söyle."
-      ]
-    },
-    {
-      "tur": "ogretici",
-      "soru": "Kur’an ve sünnetin rehberliğini özetleyen bir cümlede yalnız kaynak adları yazılmış. Anlamı geliştirmek için ne eklenebilir?",
-      "cevap": "Bu kaynakların inanç, ibadet ve günlük davranışlara nasıl yol gösterdiği kısa bir örnekle eklenebilir.",
-      "ipuclari": [
-        "Kaynakların adından başka işlevlerini düşün.",
-        "İlke ile uygulama ilişkisini bir örnekle bağla."
       ]
     }
   ],

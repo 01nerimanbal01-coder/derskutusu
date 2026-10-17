@@ -1,276 +1,292 @@
 {
- "ad": "11. Sınıf Matematik - 4. Hafta Özeti",
- "sinif": 11,
- "ders": "matematik",
- "ders_adi": "Matematik",
- "hafta": 4,
- "tarih": "5-9 Ekim 2026",
- "yayin_tarihi": "2026-10-17",
- "unite": "İSTATİSTİKSEL ARAŞTIRMA SÜRECİ",
- "konu": "Başkaları Tarafından Oluşturulan İki Nicel Değişkenli Verileri İnceleme ve İstatistiksel Sonuçları Tartışma",
- "ciktilar": [
-  "MAT.11.1.2. Başkaları tarafından oluşturulan iki nicel değişkenli verilerin ilişkililiğine dayalı istatistiksel sonuç veya yorumları tartışabilme",
-  "İki nicel değişkenli verilere dayalı istatistiksel sonuç ve yorumlara yönelik istatistiksel temellendirme yapar.",
-  "Veri analizlerindeki yanlılıkları, korelasyon-nedensellik yanılgılarını ve ekstrapolasyon hatalarını tespit ederek iddiaları kabul eder veya çürütür."
- ],
- "giris": "Günlük yaşamda haber bültenlerinde, sosyal medyada, ekonomi raporlarında ve bilimsel makalelerde her gün iki nicel değişken arasındaki ilişkiye dayanan yüzlerce istatistiksel iddiayla karşılaşırız. Ancak {koyu:her istatistiksel grafik veya korelasyon iddiası bilimsel olarak doğru mudur?} Bu haftaki dersimizde, {koyu:başkaları tarafından oluşturulan iki nicel değişkenli veri analizlerini eleştirel bir gözle incelemeyi}, istatistiksel temellendirme yapmayı, {koyu:örneklem yanlılığı, gizli değişken ve aralık dışı tahmin (ekstrapolasyon) hatalarını} tespit ederek sunulan sonuçları bilimsel kanıtlarla kabul etmeyi veya çürütmeyi öğreneceğiz.",
- "ozet": [
-  "Başkaları tarafından oluşturulan iki nicel değişkenli verilerin tartışılması üç aşamada yürütülür: 1) İstatistiksel temellendirme yapma, 2) Hata veya yanlılıkları tespit etme, 3) Sonuç veya yorumu kanıtlarla kabul etme ya da çürütme.",
-  "İki nicel değişken arasında güçlü bir korelasyonun (|r|'nin 1'e yakın olması) bulunması, bir değişkenin diğerinin doğrudan nedeni olduğunu kanıtlamaz ('Korelasyon nedensellik değildir').",
-  "Hem açıklayıcı hem de yanıt değişkenini aynı anda etkileyerek aralarında sahte (zahiri) bir ilişki varmış gibi görünmesine yol açan üçüncü değişkene 'gizli (karıştırıcı) değişken' denir.",
-  "Evreni temsil etmeyen dar veya tek yönlü bir gruptan veri toplanmasına 'seçim (örneklem) yanlılığı'; veri setindeki aykırı (uç) değerlerin kasıtlı olarak gizlenmesine ise 'veri ayıklama yanlılığı' denir.",
-  "Gözlemlenen veri aralığının [x_min, x_max] içindeki bir değer için doğrusal modelle tahmin yapmaya 'interpolasyon' (güvenilir), veri aralığının çok dışındaki değerler için tahmin yapmaya ise 'ekstrapolasyon' (hataya açık) denir.",
-  "Serpilme diyagramlarında eksenlerin sıfırdan başlatılmaması, ölçeklerin daraltılıp genişletilmesi veya doğrusal olmayan (eğrisel) verilere doğrusal model dayatılması en sık karşılaşılan istatistiksel hatalardır."
- ],
- "bolumler": [
-  {
-   "baslik": "1. İstatistiksel Sonuç ve Yorumları Temellendirme Ölçütleri",
-   "metin": [
-    "Medyada, reklamlarda veya araştırma raporlarında başkaları tarafından oluşturulmuş iki nicel değişkenli bir veri analiziyle karşılaştığımızda, sunulan sonucu körü körüne kabul etmek yerine önce {koyu:istatistiksel temellendirme} yapmamız gerekir.",
-    "Sağlam bir istatistiksel temellendirme için şu dört temel soru sorulur: 1) {koyu:Veri Kaynağı ve Örneklem}: Veriler kim tarafından, hangi yöntemle ve kaç birimlik ({koyu:n}) bir örneklemden toplanmıştır? Örneklem ana kütleyi (evreni) tarafsız biçimde temsil ediyor mu? 2) {koyu:Görsel ve Sayısal Tutarlılık}: Sunulan serpilme diyagramındaki noktaların dağılımı ile rapor edilen korelasyon katsayısı ({koyu:r}) birbirini doğruluyor mu?",
-    "3) {koyu:Doğrusal Uygunluk}: Değişkenler arasındaki ilişki gerçekten doğrusal mı, yoksa kuadratik/logaritmik (eğrisel) bir ilişkiye zorla doğru mu uydurulmuş? 4) {koyu:Bağlamsal Anlamlılık}: Elde edilen matematiksel model gerçek yaşam bağlamıyla ve bilimsel gerçeklerle örtüşüyor mu?"
-   ],
-   "kutu": {
-    "tur": "onemli",
-    "baslik": "Türkiye Yüzyılı Maarif Modeli Süreç Bileşenleri (MAT.11.1.2)",
-    "metin": "Bu konuda bir istatistiksel iddiayı incelerken sırasıyla: a) İstatistiksel temellendirme yapmalı, b) Varsa hata veya yanlılıkları tespit etmeli, c) Kanıtlara dayanarak iddiayı kabul etmeli ya da çürütmeliyiz."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 265\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:0 auto;font-family:'Segoe UI',Roboto,sans-serif\"><rect x=\"5\" y=\"5\" width=\"750\" height=\"255\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"380\" y=\"28\" fill=\"#0f172a\" font-size=\"14.5\" font-weight=\"bold\" text-anchor=\"middle\">BAŞKALARI TARAFINDAN OLUŞTURULAN VERİLERİ TARTIŞMANIN 3 ADIMI (MAT.11.1.2)</text><rect x=\"20\" y=\"42\" width=\"230\" height=\"198\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/><rect x=\"20\" y=\"42\" width=\"230\" height=\"30\" rx=\"10\" fill=\"#2563eb\"/><rect x=\"20\" y=\"64\" width=\"230\" height=\"8\" fill=\"#2563eb\"/><text x=\"135.0\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">1. İstatistiksel Temellendirme</text><text x=\"32\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Veri kaynağı güvenilir mi?</text><text x=\"32\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">• Örneklem büyüklüğü (n) ve</text><text x=\"32\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">  temsil gücü yeterli mi?</text><text x=\"32\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">• Serpilme diyagramı ve r değeri</text><text x=\"32\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">  iddia edilen yön/güç ile</text><text x=\"32\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">  gerçekten uyumlu mu?</text><rect x=\"265\" y=\"42\" width=\"230\" height=\"198\" rx=\"10\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"265\" y=\"42\" width=\"230\" height=\"30\" rx=\"10\" fill=\"#d97706\"/><rect x=\"265\" y=\"64\" width=\"230\" height=\"8\" fill=\"#d97706\"/><text x=\"380.0\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">2. Hata ve Yanlılık Tespiti</text><text x=\"277\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Seçim yanlılığı var mı?</text><text x=\"277\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">• Eksen ölçekleriyle oynanarak</text><text x=\"277\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">  görsel yanıltma yapılmış mı?</text><text x=\"277\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">• Korelasyon, sebep-sonuç</text><text x=\"277\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">  (nedensellik) sanılmış mı?</text><text x=\"277\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">• Aralık dışı tahmin hatası var mı?</text><rect x=\"510\" y=\"42\" width=\"230\" height=\"198\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"510\" y=\"42\" width=\"230\" height=\"30\" rx=\"10\" fill=\"#059669\"/><rect x=\"510\" y=\"64\" width=\"230\" height=\"8\" fill=\"#059669\"/><text x=\"625.0\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">3. Kabul Etme veya Çürütme</text><text x=\"522\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Yöntem bilimsel, örneklem</text><text x=\"522\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">  temsili ve r yorumu doğruysa</text><text x=\"522\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">  sonuç KABUL EDİLİR.</text><text x=\"522\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">• Yanlı örneklem, gizli değişken</text><text x=\"522\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">  veya model hatası varsa</text><text x=\"522\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">  kanıtlarla ÇÜRÜTÜLÜR.</text></svg>"
-  },
-  {
-   "baslik": "2. Korelasyon ve Nedensellik Yanılgısı (Gizli Değişken Etkisi)",
-   "metin": [
-    "İki nicel değişkenli verilerin yorumlanmasında yapılan en büyük ve en yaygın hata, {koyu:ilişkililik (korelasyon) ile nedenselliği (sebep-sonuç ilişkisini) birbirine karıştırmaktır}. İstatistik biliminin altın kuralı şudur: {koyu:'Korelasyon, nedensellik anlamına gelmez!'}",
-    "İki değişken (X ve Y) arasında çok güçlü bir pozitif veya negatif korelasyon (örneğin r = +0,92) bulunsa bile bu durum X'in Y'ye sebep olduğunu kanıtlamaz. Çoğu zaman hem X hem de Y değişkenini aynı anda etkileyen üçüncü bir {koyu:gizli (karıştırıcı / ortak) değişken (Z)} vardır ve bu duruma {koyu:sahte (zahiri) korelasyon} denir.",
-    "{koyu:Klasik Örnek}: Bir sahil kentinde yapılan araştırmada 'günlük dondurma satış miktarı (X)' ile 'denizde boğulma vakası sayısı (Y)' arasında r = +0,87 gibi çok güçlü bir pozitif korelasyon bulunmuştur. Buradan hareketle 'Dondurma yemek boğulmaya neden olur!' sonucunu çıkarmak tamamen hatalıdır. Çünkü her iki değişkeni de aynı anda artıran gerçek neden {koyu:hava sıcaklığı ve plaja giden insan sayısıdır (gizli değişken Z)}. Bu tür bir iddia, gizli değişken kanıtıyla kolayca {koyu:çürütülür}."
-   ],
-   "kutu": {
-    "tur": "bilgi",
-    "baslik": "Ters Nedensellik ve Tesadüfi Korelasyon",
-    "metin": "Bazen sebep ile sonuç yer değiştirmiş olabilir (ters nedensellik) veya tamamen birbiriyle ilgisiz iki zaman serisi (örneğin 'dünyadaki korsan sayısı' ile 'küresel ortalama sıcaklık') tesadüfen yüksek korelasyon gösterebilir. Bilimsel mekanizma olmadan nedensellik kurulamaz!"
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 265\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:0 auto;font-family:'Segoe UI',Roboto,sans-serif\"><rect x=\"5\" y=\"5\" width=\"750\" height=\"255\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"380\" y=\"28\" fill=\"#0f172a\" font-size=\"14.5\" font-weight=\"bold\" text-anchor=\"middle\">EN YAYGIN İSTATİSTİKSEL YANILGI: KORELASYON NEDENSELLİK DEĞİLDİR!</text><rect x=\"20\" y=\"42\" width=\"345\" height=\"198\" rx=\"10\" fill=\"#f0f9ff\" stroke=\"#0284c7\" stroke-width=\"2\"/><rect x=\"20\" y=\"42\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#0284c7\"/><rect x=\"20\" y=\"64\" width=\"345\" height=\"8\" fill=\"#0284c7\"/><text x=\"192.5\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">Korelasyon (Birlikte Değişim)</text><text x=\"32\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• İki nicel değişkenin (X ve Y) birlikte artma</text><text x=\"32\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">  veya azalma eğilimini gösterir (-1 <= r <= +1).</text><text x=\"32\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">• Ancak r'nin yüksek çıkması (örn. r = +0,88),</text><text x=\"32\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">  X'in doğrudan Y'nin sebebi olduğu anlamına</text><text x=\"32\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">  GELMEZ!</text><text x=\"32\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">• Örnek: Dondurma satışı (X) ile vantilatör</text><text x=\"32\" y=\"199\" fill=\"#1e293b\" font-size=\"11.5\">  satışı (Y) arasında güçlü pozitif korelasyon vardır.</text><rect x=\"395\" y=\"42\" width=\"345\" height=\"198\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/><rect x=\"395\" y=\"42\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#dc2626\"/><rect x=\"395\" y=\"64\" width=\"345\" height=\"8\" fill=\"#dc2626\"/><text x=\"567.5\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">Gizli / Karıştırıcı Değişken (Z) Etkisi</text><text x=\"407\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Hem X hem de Y değişkenini aynı anda etkileyen</text><text x=\"407\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">  üçüncü değişkene 'gizli (karıştırıcı) değişken' denir.</text><text x=\"407\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">• Dondurma satışı vantilatör satışına sebep olmaz;</text><text x=\"407\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">  her ikisini de artıran gerçek neden 'Hava Sıcaklığı'</text><text x=\"407\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">  (Z gizli değişkeni) artışıdır!</text><text x=\"407\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">• Gizli değişken göz ardı edilerek kurulan</text><text x=\"407\" y=\"199\" fill=\"#1e293b\" font-size=\"11.5\">  sebep-sonuç iddiaları istatistiksel olarak ÇÜRÜTÜLÜR.</text></svg>"
-  },
-  {
-   "baslik": "3. Örneklem Yanlılığı, Aykırı Değerler ve Veri Manipülasyonu",
-   "metin": [
-    "Başkaları tarafından sunulan istatistiksel sonuçlarda dikkatle aranması gereken ikinci hata grubu {koyu:yanlılık (bias)} ve {koyu:veri manipülasyonudur}:",
-    "1) {koyu:Seçim / Örneklem Yanlılığı}: Araştırmanın sadece belirli bir alt gruptan (gönüllülerden, tek bir mahalleden, sadece profesyonel sporculardan vb.) alınan verilerle yapılıp tüm topluma genellenmesidir. 2) {koyu:Yetersiz Örneklem Büyüklüğü}: Yalnızca 4–5 veri çiftine bakarak güçlü bir korelasyon iddiasında bulunmak istatistiksel olarak güvenilir değildir.",
-    "3) {koyu:Aykırı Değer (Uç Değer) Manipülasyonu}: Veri setinin genel eğiliminden çok uzakta kalan tek bir {koyu:aykırı değer (outlier)}, korelasyon katsayısını (r) ve regresyon doğrusunun eğimini tek başına değiştirebilir. Araştırmacının işine gelmeyen verileri silmesi ({koyu:cımbızlama / cherry-picking}) veya ölçüm hatası olan bir uç değeri düzeltmeden modele katması sonucu geçersiz kılar.",
-    "4) {koyu:Grafik ve Eksen Ölçeği Yanıltmaları}: Serpilme diyagramında eksenlerin koparılarak (sıfırdan başlatılmayarak) çok dar bir aralıkta çizilmesi veya yatay/dikey ölçek oranlarının bozulması, çok zayıf bir eğimi görsel olarak çok dik ve güçlüymüş gibi gösterebilir."
-   ],
-   "kutu": {
-    "tur": "uyari",
-    "baslik": "Simpson Paradoksu (Alt Grup Yanılgısı)",
-    "metin": "Bazen iki nicel değişken arasında alt grupların her birinde pozitif korelasyon varken, tüm gruplar tek bir tabloda birleştirildiğinde korelasyonun yönü negatife dönebilir! Buna istatistikte 'Simpson Paradoksu' denir ve verilerin homojen olmayan alt gruplardan oluştuğunu gösterir."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 265\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:0 auto;font-family:'Segoe UI',Roboto,sans-serif\"><rect x=\"5\" y=\"5\" width=\"750\" height=\"255\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"380\" y=\"28\" fill=\"#0f172a\" font-size=\"14.5\" font-weight=\"bold\" text-anchor=\"middle\">ÖRNEKLEM YANLILIĞI, AYKIRI DEĞERLER VE GRAFİKSEL MANİPÜLASYON</text><rect x=\"20\" y=\"42\" width=\"345\" height=\"198\" rx=\"10\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"2\"/><rect x=\"20\" y=\"42\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#7c3aed\"/><rect x=\"20\" y=\"64\" width=\"345\" height=\"8\" fill=\"#7c3aed\"/><text x=\"192.5\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">Örneklem Yanlılığı ve Aykırı Değer Etkisi</text><text x=\"32\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Seçim Yanlılığı: Sadece spor kulübü üyelerinden</text><text x=\"32\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">  veri toplayıp tüm toplum için 'yaş ile koşu hızı'</text><text x=\"32\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">  modeli kurmak yanlıdır (temsil gücü yoktur).</text><text x=\"32\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">• Yetersiz Örneklem: 3-4 gözlemle genel yasa</text><text x=\"32\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">  iddia edilemez.</text><text x=\"32\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">• Aykırı Değer (Outlier): Tek bir uç nokta r'yi</text><text x=\"32\" y=\"199\" fill=\"#1e293b\" font-size=\"11.5\">  yapay olarak yükseltebilir veya sıfıra çekebilir.</text><rect x=\"395\" y=\"42\" width=\"345\" height=\"198\" rx=\"10\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"395\" y=\"42\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#d97706\"/><rect x=\"395\" y=\"64\" width=\"345\" height=\"8\" fill=\"#d97706\"/><text x=\"567.5\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">Eksen Kesme ve Ölçek Manipülasyonu</text><text x=\"407\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Serpilme diyagramında dikey ekseni 0'dan</text><text x=\"407\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">  başlatmayıp çok dar bir aralıkta (örn. 98,1 - 98,5)</text><text x=\"407\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">  kesmek, çok önemsiz bir değişimi dev bir</text><text x=\"407\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">  artışmış gibi gösterir.</text><text x=\"407\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">• Yatay ekseni aşırı sıkıştırmak doğrunun eğimini</text><text x=\"407\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">  olduğundan çok dik gösterir.</text><text x=\"407\" y=\"199\" fill=\"#1e293b\" font-size=\"11.5\">• İncelemede ilk iş eksen birimlerini kontrol etmektir!</text></svg>"
-  },
-  {
-   "baslik": "4. Doğrusal Olmayan İlişkilerde Korelasyon Katsayısı Yanılgısı",
-   "metin": [
-    "Pearson korelasyon katsayısı ({koyu:r}), yalnızca iki nicel değişken arasındaki {koyu:doğrusal} ilişkinin gücünü ve yönünü ölçer. Eğer iki değişken arasında çok güçlü ancak {koyu:eğrisel (parabolik / U veya ters-U biçiminde)} bir ilişki varsa, korelasyon katsayısı {koyu:r ≈ 0} çıkabilir!",
-    "{koyu:Örnek}: Bir ürünün 'satış fiyatı (X)' ile 'toplam kârı (Y)' arasındaki ilişkiyi düşünelim: Fiyat çok düşükken kâr azdır, fiyat optimum düzeye çıktıkça kâr maksimuma ulaşır, fiyat aşırı pahalı yapıldığında ise satışlar duracağı için kâr tekrar sıfıra düşer (ters parabol). Bu veriler için r ≈ 0 hesaplayan bir kişinin {koyu:'Fiyat ile kâr arasında hiçbir ilişki yoktur'} yorumu {koyu:hatalıdır ve çürütülmelidir}; çünkü aralarında doğrusal olmayan çok güçlü bir ilişki vardır."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Neden Önce Serpilme Diyagramına Bakılmalıdır?",
-    "metin": "Yalnızca r sayısına bakarak yorum yapmak tehlikelidir (Anscombe Dörtlüsü örneğinde olduğu gibi çok farklı dört dağılım aynı r değerini verebilir). Bu yüzden her zaman önce serpilme diyagramı incelenerek ilişkinin doğrusal olup olmadığı kontrol edilmelidir."
-   }
-  },
-  {
-   "baslik": "5. Doğrusal Modelle Tahmin: İnterpolasyon ve Ekstrapolasyon",
-   "metin": [
-    "İki nicel değişken arasında güçlü bir doğrusal ilişki saptandığında oluşturulan en uygun doğru (regresyon doğrusu) denklemi {koyu:y = a + b · x} ile bilinmeyen değerler için tahmin yapılabilir. Ancak tahminin yapıldığı bölge son derece kritiktir:",
-    "1) {koyu:İnterpolasyon (Aralık İçi Tahmin)}: Eldeki verilerin en küçük ve en büyük değerleri arasındaki ({koyu:[x_min, x_max] aralığı içindeki}) bir x değeri için y tahmini yapmaktır. Doğrusal ilişki güçlü ise interpolasyon sonuçları {koyu:yüksek güvenilirliğe sahiptir ve kabul edilir}.",
-    "2) {koyu:Ekstrapolasyon (Aralık Dışı Tahmin)}: Gözlemlenen veri aralığının {koyu:dışındaki (x < x_min veya x > x_max)} değerler için doğrusal modelin aynen devam edeceğini varsayarak tahmin yapmaktır. Uzak ekstrapolasyon çoğu zaman {koyu:fiziksel ve biyolojik gerçekliğe aykırı saçma sonuçlar üretir}. Örneğin 1–10 yaş arası çocuklarda yaş (x) ile boy (y, cm) arasında kurulan {koyu:y = 70 + 6x} doğrusal modelini kullanarak 60 yaşındaki bir insanın boyunun 70 + 6(60) = 430 cm olacağını iddia etmek {koyu:ekstrapolasyon hatasıdır ve çürütülür}."
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "baslik": "Negatif Değer ve Sınır İhlali Kontrolü",
-    "metin": "Ekstrapolasyon hatasını yakalamanın en pratik yolu sınır değerleri denemektir: Eğer bir doğrusal model belirli bir x değerinden sonra boy, kütle, fiyat veya süre gibi negatif olamayacak büyüklükleri negatif (-) tahmin ediyorsa, model o aralıkta geçersizdir!"
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 265\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:0 auto;font-family:'Segoe UI',Roboto,sans-serif\"><rect x=\"5\" y=\"5\" width=\"750\" height=\"255\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"380\" y=\"28\" fill=\"#0f172a\" font-size=\"14.5\" font-weight=\"bold\" text-anchor=\"middle\">DOĞRUSAL MODELDE TAHMİN SINIRLARI: İNTERPOLASYON VE EKSTRAPOLASYON</text><rect x=\"20\" y=\"42\" width=\"345\" height=\"198\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"20\" y=\"42\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#059669\"/><rect x=\"20\" y=\"64\" width=\"345\" height=\"8\" fill=\"#059669\"/><text x=\"192.5\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">İnterpolasyon (Aralık İçi Tahmin - Güvenilir)</text><text x=\"32\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Gözlemlenen en küçük ve en büyük veri aralığının</text><text x=\"32\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">  [x_min, x_max] İÇİNDEKİ bir değer için doğrusal</text><text x=\"32\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">  regresyon denklemiyle (y = a + bx) tahmin yapmaktır.</text><text x=\"32\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">• Örnek: 5-15 yaş arası çocukların boy verisinden</text><text x=\"32\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">  10 yaşındaki bir çocuğun boyunu tahmin etmek.</text><text x=\"32\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">• Model güçlü (|r| yüksek) ise KABUL EDİLİR.</text><rect x=\"395\" y=\"42\" width=\"345\" height=\"198\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/><rect x=\"395\" y=\"42\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#dc2626\"/><rect x=\"395\" y=\"64\" width=\"345\" height=\"8\" fill=\"#dc2626\"/><text x=\"567.5\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">Ekstrapolasyon (Aralık Dışı Tahmin - Riskli!)</text><text x=\"407\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Gözlemlenen veri aralığının [x_min, x_max] ÇOK</text><text x=\"407\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">  DIŞINDAKİ bir değer için aynı doğrusal eğilimin</text><text x=\"407\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">  sonsuza dek süreceğini varsaymaktır.</text><text x=\"407\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">• Örnek: 0-15 yaş boy artış modelini (y = 50 + 6x)</text><text x=\"407\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">  kullanarak 50 yaşındaki kişinin 350 cm olacağını</text><text x=\"407\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">  iddia etmek! Bu tür iddialar ÇÜRÜTÜLÜR.</text></svg>"
-  },
-  {
-   "baslik": "6. İstatistiksel İddiaları Kabul Etme veya Çürütme Rehberi",
-   "metin": [
-    "Bir araştırma raporundaki istatistiksel sonucu tartışırken şu karar şemasını uygularız: • {koyu:Ne Zaman Kabul Edilir?}: Örneklem yeterince büyük ve yansız (rastgele) seçilmişse, serpilme diyagramı doğrusal bir yönelim gösteriyorsa, r katsayısı doğru yorumlanmışsa, nedensellik iddiası deneysel/bilimsel kanıtla desteklenmişse ve tahminler veri aralığı içinde (interpolasyon) yapılmışsa sonuç {koyu:kabul edilir}.",
-    "• {koyu:Ne Zaman Çürütülür?}: Seçim yanlılığı varsa, salt korelasyondan doğrudan sebep-sonuç çıkarılmışsa (gizli değişken göz ardı edilmişse), eğrisel veriye doğrusal model zorlanmışsa veya veri aralığının çok dışında (ekstrapolasyon) gerçek dışı tahmin yapılmışsa iddia {koyu:bilimsel gerekçeleriyle çürütülür}."
-   ],
-   "kutu": {
-    "tur": "bilgi",
-    "baslik": "Bilgi ve Finansal Okuryazarlık Bağlantısı",
-    "metin": "Yatırım tavsiyelerinde, reklamlarda ('Kullananların %95'inde 3 günde etki!') veya ekonomik tahminlerde sunulan iki değişkenli grafikleri bu ölçütlerle sorgulamak, modern dünyada bilinçli ve sorumlu karar vermenin anahtarıdır."
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Bir araştırmacı, 20 farklı ilçede görev yapan itfaiye aracı sayısı (X) ile yangınlarda oluşan maddi hasar tutarı (Y, milyon TL) arasındaki korelasyon katsayısını r = +0,85 olarak hesaplamış ve raporunda 'Yangın yerine daha az itfaiye aracı gönderilirse maddi hasar azalır' sonucunu paylaşmıştır. Bu istatistiksel yorumu temellendirerek kabul veya çürütme açısından tartışınız.",
-   "cevap": "1) Hata/Yanlılık Tespiti: Araştırmacı, iki nicel değişken arasındaki güçlü pozitif korelasyonu (r = +0,85) doğrudan 'nedensellik (sebep-sonuç)' olarak yorumlama hatasına düşmüştür.\n2) Gizli Değişken Analizi: İtfaiye araçları hasara sebep olmaz; burada hem gönderilen itfaiye aracı sayısını (X) hem de oluşan maddi hasarı (Y) aynı anda artıran üçüncü bir 'gizli (karıştırıcı) değişken (Z)' vardır: 'Yangının büyüklüğü ve şiddeti'. Büyük yangınlara daha çok itfaiye aracı sevk edilir ve büyük yangınlar daha çok hasar bırakır.\n3) Karar (Çürütme): Araştırmacının yorumu gizli değişkenin göz ardı edilmesi ve korelasyon-nedensellik yanılgısı nedeniyle ÇÜRÜTÜLÜR."
-  },
-  {
-   "soru": "Bir tarım mühendisi, mısır tarlalarında dekara verilen azotlu gübre miktarı (x, kg) ile elde edilen ürün miktarı (y, kg) arasında [0, 30] kg gübre aralığında yaptığı gözlemlerle y = 400 + 15x doğrusal modelini (r = +0,94) oluşturmuştur. Bir çiftçi bu modele dayanarak 'Dekara 200 kg gübre atarsam 400 + 15(200) = 3400 kg mısır alırım' iddiasında bulunuyor. Çiftçinin bu yorumunu istatistiksel olarak değerlendiriniz.",
-   "cevap": "1) İstatistiksel Temellendirme: Mühendisin modeli yalnızca [0, 30] kg gübre aralığındaki verilerle oluşturulmuştur ve bu aralıkta güçlü pozitif doğrusal ilişki (r = +0,94) geçerlidir (örneğin x = 20 kg için yapılan interpolasyon tahmini güvenilirdir).\n2) Hata Tespiti (Ekstrapolasyon): Çiftçinin öne sürdüğü x = 200 kg değeri, gözlemlenen [0, 30] kg veri aralığının çok dışındadır (aşırı ekstrapolasyon). Gerçekte aşırı gübreleme toprağı zehirleyerek bitkiyi yakar ve verimi sıfıra düşürür (ilişki belirli bir noktadan sonra doğrusal olmaktan çıkıp azalan eğrisel yapıya döner).\n3) Karar (Çürütme): Çiftçinin iddiası, modelin geçerlilik aralığı dışında (ekstrapolasyon) yapılması nedeniyle ÇÜRÜTÜLÜR."
-  },
-  {
-   "soru": "Bir spor salonu sahibi, yalnızca kendi salonuna haftada en az 5 gün gelen 15 profesyonel vücut geliştirme sporcusunun 'yaş (X)' ve 'kaldırdıkları maksimum ağırlık (Y)' verilerini toplayarak 'Türkiye'de insanların yaşı arttıkça kaldırdıkları ağırlık artmaktadır' sonucunu yayınlamıştır. Bu araştırmadaki istatistiksel yanlılıkları belirleyiniz.",
-   "cevap": "Bu araştırmada iki temel istatistiksel hata vardır:\n1) Seçim (Örneklem) Yanlılığı: Veri yalnızca spor salonuna haftada 5 gün gelen profesyonel sporculardan toplanmıştır; bu grup tüm Türkiye nüfusunu (evreni) kesinlikle temsil etmez.\n2) Yetersiz Örneklem Büyüklüğü ve Yaş Aralığı Kısıtı: Yalnızca n = 15 kişilik dar bir örneklem kullanılmıştır. Bu nedenlerle araştırmacının Türkiye geneline yaptığı yorum istatistiksel olarak geçersizdir ve ÇÜRÜTÜLÜR."
-  },
-  {
-   "soru": "Bir araştırmada öğrencilerin 'sınav kaygı düzeyi puanı (X: 0 ile 100 arası)' ile 'sınav başarısı puanı (Y: 0 ile 100 arası)' arasındaki doğrusal korelasyon katsayısı r = -0,03 olarak bulunmuş ve 'Sınav kaygısı ile sınav başarısı arasında hiçbir ilişki yoktur' denilmiştir. Ancak serpilme diyagramına bakıldığında noktaların ters-U (parabol) şeklinde dizildiği görülmektedir. Bu yorumu değerlendiriniz.",
-   "cevap": "Korelasyon katsayısı (r) yalnızca DOĞRUSAL ilişkinin gücünü ölçer. Serpilme diyagramındaki ters-U (parabolik) dağılım; çok düşük kaygıda (umursamama) başarının düşük olduğunu, orta düzey kaygıda motivasyonla başarının zirveye çıktığını, aşırı yüksek kaygıda ise panik nedeniyle başarının tekrar düştüğünü göstermektedir. Yani iki değişken arasında çok güçlü ancak doğrusal olmayan (eğrisel) bir ilişki vardır. Bu nedenle 'hiçbir ilişki yoktur' yorumu hatalıdır ve ÇÜRÜTÜLÜR."
-  },
-  {
-   "soru": "İkinci el otomobil piyasasında aynı marka ve modeldeki 250 aracın 'kullanım kilometresi (x, bin km: [10, 200] aralığında)' ile 'satış fiyatı (y, bin TL)' verileri rastgele örnekleme ile toplanmış, r = -0,91 bulunmuş ve y = 1200 - 4x doğrusal modeli elde edilmiştir. Bu modele dayanarak 80 bin km'deki bir aracın yaklaşık 880 bin TL olacağı yorumu kabul edilir mi? Açıklayınız.",
-   "cevap": "1) Örneklem ve Yöntem: n = 250 araçlık rastgele örneklem yeterince büyüktür ve temsil gücü yüksektir.\n2) Korelasyon ve Model: r = -0,91 değeri çok güçlü negatif doğrusal ilişkiyi doğrulamaktadır (kilometre arttıkça aşınma nedeniyle fiyatın düşmesi gerçek yaşam bağlamına ve nedenselliğe uygundur).\n3) Tahmin Bölgesi (İnterpolasyon): x = 80 bin km değeri, gözlemlenen [10, 200] bin km veri aralığının tam içindedir (interpolasyon) ve y = 1200 - 4(80) = 880 bin TL verir.\nSonuç: Tüm bilimsel ve istatistiksel ölçütler sağlandığı için bu yorum KABUL EDİLİR."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "Bir araştırmada şehirlerdeki 'leylek yuvası sayısı (X)' ile 'yeni doğan bebek sayısı (Y)' arasında pozitif bir korelasyon (r = +0,78) bulunmuştur. Bu veriden hareketle 'Leylekler bebek doğumlarını artırmaktadır' iddiasında bulunan bir kişiye verilecek en doğru istatistiksel yanıt aşağıdakilerden hangisidir?",
-   "secenekler": [
-    "Korelasyon katsayısı pozitif olduğu için iddia bilimsel olarak kesinlikle doğrudur.",
-    "İki değişken arasındaki korelasyon nedensellik anlamına gelmez; her iki değişkeni de etkileyen gizli değişken yerleşim yerinin yüzölçümü ve nüfus büyüklüğüdür.",
-    "Korelasyon katsayısı +1'den büyük olmadığı için hiçbir yorum yapılamaz.",
-    "Bu durum interpolasyon tahmininin ne kadar güvenilir olduğunu kanıtlar.",
-    "Leylek yuvası sayısı bağımlı değişken, bebek sayısı ise bağımsız değişkendir."
-   ],
-   "dogru": 1,
-   "aciklama": "İki nicel değişken arasında korelasyon bulunması sebep-sonuç (nedensellik) kanıtı değildir. Burada hem bina/çatı (dolayısıyla yuva) sayısını hem de doğum sayısını artıran gizli değişken nüfus ve yüzölçümü büyüklüğüdür."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Bir fidanın dikildikten sonraki ilk 12 ay boyunca boyu (y, cm) her ay ölçülmüş ve geçen süre (x, ay; 1 <= x <= 12) ile boy arasında y = 20 + 5x doğrusal modeli elde edilmiştir. Aşağıdaki tahminlerden hangisi 'ekstrapolasyon (aralık dışı tahmin) hatasına' örnektir?",
-   "secenekler": [
-    "Fidanın 4. aydaki boyunun 40 cm olarak tahmin edilmesi",
-    "Fidanın 6. aydaki boyunun 50 cm olarak tahmin edilmesi",
-    "Fidanın 10. aydaki boyunun 70 cm olarak tahmin edilmesi",
-    "Fidanın 20 yıl (240 ay) sonraki boyunun 1220 cm (12,2 metre) olacağının iddia edilmesi",
-    "Fidanın 8. aydaki boyunun 60 cm olarak tahmin edilmesi"
-   ],
-   "dogru": 3,
-   "aciklama": "Model yalnızca [1, 12] ay aralığındaki verilerle kurulmuştur. 4, 6, 8 ve 10. aylar aralık içi tahmin (interpolasyon) iken, 240. ay veri aralığının çok dışında bir ekstrapolasyondur ve büyüme hızı sabit kalmayacağı için hatalıdır."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "İki nicel değişkenli verilerin incelenmesiyle ilgili aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "11. Sınıf Matematik - 4. Hafta Özeti",
+  "sinif": 11,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 4,
+  "tarih": "5-9 Ekim 2026",
+  "yayin_tarihi": "2026-10-17",
+  "unite": "İSTATİSTİKSEL ARAŞTIRMA SÜRECİ",
+  "konu": "Başkaları Tarafından Oluşturulan İki Nicel Değişkenli Verileri İnceleme ve İstatistiksel Sonuçları Tartışma",
+  "ciktilar": [
+    "MAT.11.1.2. Başkaları tarafından oluşturulan iki nicel değişkenli verilerin ilişkililiğine dayalı istatistiksel sonuç veya yorumları tartışabilme",
+    "İki nicel değişkenli verilere dayalı istatistiksel sonuç ve yorumlara yönelik istatistiksel temellendirme yapar.",
+    "Veri analizlerindeki yanlılıkları, korelasyon-nedensellik yanılgılarını ve ekstrapolasyon hatalarını tespit ederek iddiaları kabul eder veya çürütür."
+  ],
+  "giris": "Günlük yaşamda haber bültenlerinde, sosyal medyada, ekonomi raporlarında ve bilimsel makalelerde her gün iki nicel değişken arasındaki ilişkiye dayanan yüzlerce istatistiksel iddiayla karşılaşırız. Ancak {koyu:her istatistiksel grafik veya korelasyon iddiası bilimsel olarak doğru mudur?} Bu haftaki dersimizde, {koyu:başkaları tarafından oluşturulan iki nicel değişkenli veri analizlerini eleştirel bir gözle incelemeyi}, istatistiksel temellendirme yapmayı, {koyu:örneklem yanlılığı, gizli değişken ve aralık dışı tahmin (ekstrapolasyon) hatalarını} tespit ederek sunulan sonuçları bilimsel kanıtlarla kabul etmeyi veya çürütmeyi öğreneceğiz.",
+  "ozet": [
+    "Başkaları tarafından oluşturulan iki nicel değişkenli verilerin tartışılması üç aşamada yürütülür: 1) İstatistiksel temellendirme yapma, 2) Hata veya yanlılıkları tespit etme, 3) Sonuç veya yorumu kanıtlarla kabul etme ya da çürütme.",
+    "İki nicel değişken arasında güçlü bir korelasyonun (|r|'nin 1'e yakın olması) bulunması, bir değişkenin diğerinin doğrudan nedeni olduğunu kanıtlamaz ('Korelasyon nedensellik değildir').",
+    "Hem açıklayıcı hem de yanıt değişkenini aynı anda etkileyerek aralarında sahte (zahiri) bir ilişki varmış gibi görünmesine yol açan üçüncü değişkene 'gizli (karıştırıcı) değişken' denir.",
+    "Evreni temsil etmeyen dar veya tek yönlü bir gruptan veri toplanmasına 'seçim (örneklem) yanlılığı'; veri setindeki aykırı (uç) değerlerin kasıtlı olarak gizlenmesine ise 'veri ayıklama yanlılığı' denir.",
+    "Gözlemlenen veri aralığının [x_min, x_max] içindeki bir değer için doğrusal modelle tahmin yapmaya 'interpolasyon' (güvenilir), veri aralığının çok dışındaki değerler için tahmin yapmaya ise 'ekstrapolasyon' (hataya açık) denir.",
+    "Serpilme diyagramlarında eksenlerin sıfırdan başlatılmaması, ölçeklerin daraltılıp genişletilmesi veya doğrusal olmayan (eğrisel) verilere doğrusal model dayatılması en sık karşılaşılan istatistiksel hatalardır."
+  ],
+  "bolumler": [
     {
-     "metin": "İki nicel değişken arasındaki korelasyon katsayısının r = +0,95 çıkması, birinci değişkenin ikinci değişkenin doğrudan sebebi olduğunu kesin olarak kanıtlar.",
-     "dogru": false,
-     "aciklama": "Yanlıştır; korelasyon katsayısı ne kadar yüksek olursa olsun tek başına nedenselliği (sebep-sonuç ilişkisini) kanıtlamaz."
+      "baslik": "1. İstatistiksel Sonuç ve Yorumları Temellendirme Ölçütleri",
+      "metin": [
+        "Medyada, reklamlarda veya araştırma raporlarında başkaları tarafından oluşturulmuş iki nicel değişkenli bir veri analiziyle karşılaştığımızda, sunulan sonucu körü körüne kabul etmek yerine önce {koyu:istatistiksel temellendirme} yapmamız gerekir.",
+        "Sağlam bir istatistiksel temellendirme için şu dört temel soru sorulur: 1) {koyu:Veri Kaynağı ve Örneklem}: Veriler kim tarafından, hangi yöntemle ve kaç birimlik ({koyu:n}) bir örneklemden toplanmıştır? Örneklem ana kütleyi (evreni) tarafsız biçimde temsil ediyor mu? 2) {koyu:Görsel ve Sayısal Tutarlılık}: Sunulan serpilme diyagramındaki noktaların dağılımı ile rapor edilen korelasyon katsayısı ({koyu:r}) birbirini doğruluyor mu?",
+        "3) {koyu:Doğrusal Uygunluk}: Değişkenler arasındaki ilişki gerçekten doğrusal mı, yoksa kuadratik/logaritmik (eğrisel) bir ilişkiye zorla doğru mu uydurulmuş? 4) {koyu:Bağlamsal Anlamlılık}: Elde edilen matematiksel model gerçek yaşam bağlamıyla ve bilimsel gerçeklerle örtüşüyor mu?"
+      ],
+      "kutu": {
+        "tur": "onemli",
+        "baslik": "Türkiye Yüzyılı Maarif Modeli Süreç Bileşenleri (MAT.11.1.2)",
+        "metin": "Bu konuda bir istatistiksel iddiayı incelerken sırasıyla: a) İstatistiksel temellendirme yapmalı, b) Varsa hata veya yanlılıkları tespit etmeli, c) Kanıtlara dayanarak iddiayı kabul etmeli ya da çürütmeliyiz."
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 265\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:0 auto;font-family:'Segoe UI',Roboto,sans-serif\"><rect x=\"5\" y=\"5\" width=\"750\" height=\"255\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"380\" y=\"28\" fill=\"#0f172a\" font-size=\"14.5\" font-weight=\"bold\" text-anchor=\"middle\">BAŞKALARI TARAFINDAN OLUŞTURULAN VERİLERİ TARTIŞMANIN 3 ADIMI (MAT.11.1.2)</text><rect x=\"20\" y=\"42\" width=\"230\" height=\"198\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/><rect x=\"20\" y=\"42\" width=\"230\" height=\"30\" rx=\"10\" fill=\"#2563eb\"/><rect x=\"20\" y=\"64\" width=\"230\" height=\"8\" fill=\"#2563eb\"/><text x=\"135.0\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">1. İstatistiksel Temellendirme</text><text x=\"32\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Veri kaynağı güvenilir mi?</text><text x=\"32\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">• Örneklem büyüklüğü (n) ve</text><text x=\"32\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">  temsil gücü yeterli mi?</text><text x=\"32\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">• Serpilme diyagramı ve r değeri</text><text x=\"32\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">  iddia edilen yön/güç ile</text><text x=\"32\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">  gerçekten uyumlu mu?</text><rect x=\"265\" y=\"42\" width=\"230\" height=\"198\" rx=\"10\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"265\" y=\"42\" width=\"230\" height=\"30\" rx=\"10\" fill=\"#d97706\"/><rect x=\"265\" y=\"64\" width=\"230\" height=\"8\" fill=\"#d97706\"/><text x=\"380.0\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">2. Hata ve Yanlılık Tespiti</text><text x=\"277\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Seçim yanlılığı var mı?</text><text x=\"277\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">• Eksen ölçekleriyle oynanarak</text><text x=\"277\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">  görsel yanıltma yapılmış mı?</text><text x=\"277\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">• Korelasyon, sebep-sonuç</text><text x=\"277\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">  (nedensellik) sanılmış mı?</text><text x=\"277\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">• Aralık dışı tahmin hatası var mı?</text><rect x=\"510\" y=\"42\" width=\"230\" height=\"198\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"510\" y=\"42\" width=\"230\" height=\"30\" rx=\"10\" fill=\"#059669\"/><rect x=\"510\" y=\"64\" width=\"230\" height=\"8\" fill=\"#059669\"/><text x=\"625.0\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">3. Kabul Etme veya Çürütme</text><text x=\"522\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Yöntem bilimsel, örneklem</text><text x=\"522\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">  temsili ve r yorumu doğruysa</text><text x=\"522\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">  sonuç KABUL EDİLİR.</text><text x=\"522\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">• Yanlı örneklem, gizli değişken</text><text x=\"522\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">  veya model hatası varsa</text><text x=\"522\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">  kanıtlarla ÇÜRÜTÜLÜR.</text></svg>"
     },
     {
-     "metin": "Gözlemlenen veri aralığının [x_min, x_max] içindeki bir değer için doğrusal regresyon modeliyle yapılan tahmine 'interpolasyon' denir.",
-     "dogru": true,
-     "aciklama": "Doğrudur; aralık içi tahmin interpolasyon, aralık dışı tahmin ise ekstrapolasyondur."
+      "baslik": "2. Korelasyon ve Nedensellik Yanılgısı (Gizli Değişken Etkisi)",
+      "metin": [
+        "İki nicel değişkenli verilerin yorumlanmasında yapılan en büyük ve en yaygın hata, {koyu:ilişkililik (korelasyon) ile nedenselliği (sebep-sonuç ilişkisini) birbirine karıştırmaktır}. İstatistik biliminin altın kuralı şudur: {koyu:'Korelasyon, nedensellik anlamına gelmez!'}",
+        "İki değişken (X ve Y) arasında çok güçlü bir pozitif veya negatif korelasyon (örneğin r = +0,92) bulunsa bile bu durum X'in Y'ye sebep olduğunu kanıtlamaz. Çoğu zaman hem X hem de Y değişkenini aynı anda etkileyen üçüncü bir {koyu:gizli (karıştırıcı / ortak) değişken (Z)} vardır ve bu duruma {koyu:sahte (zahiri) korelasyon} denir.",
+        "{koyu:Klasik Örnek}: Bir sahil kentinde yapılan araştırmada 'günlük dondurma satış miktarı (X)' ile 'denizde boğulma vakası sayısı (Y)' arasında r = +0,87 gibi çok güçlü bir pozitif korelasyon bulunmuştur. Buradan hareketle 'Dondurma yemek boğulmaya neden olur!' sonucunu çıkarmak tamamen hatalıdır. Çünkü her iki değişkeni de aynı anda artıran gerçek neden {koyu:hava sıcaklığı ve plaja giden insan sayısıdır (gizli değişken Z)}. Bu tür bir iddia, gizli değişken kanıtıyla kolayca {koyu:çürütülür}."
+      ],
+      "kutu": {
+        "tur": "bilgi",
+        "baslik": "Ters Nedensellik ve Tesadüfi Korelasyon",
+        "metin": "Bazen sebep ile sonuç yer değiştirmiş olabilir (ters nedensellik) veya tamamen birbiriyle ilgisiz iki zaman serisi (örneğin 'dünyadaki korsan sayısı' ile 'küresel ortalama sıcaklık') tesadüfen yüksek korelasyon gösterebilir. Bilimsel mekanizma olmadan nedensellik kurulamaz!"
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 265\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:0 auto;font-family:'Segoe UI',Roboto,sans-serif\"><rect x=\"5\" y=\"5\" width=\"750\" height=\"255\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"380\" y=\"28\" fill=\"#0f172a\" font-size=\"14.5\" font-weight=\"bold\" text-anchor=\"middle\">EN YAYGIN İSTATİSTİKSEL YANILGI: KORELASYON NEDENSELLİK DEĞİLDİR!</text><rect x=\"20\" y=\"42\" width=\"345\" height=\"198\" rx=\"10\" fill=\"#f0f9ff\" stroke=\"#0284c7\" stroke-width=\"2\"/><rect x=\"20\" y=\"42\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#0284c7\"/><rect x=\"20\" y=\"64\" width=\"345\" height=\"8\" fill=\"#0284c7\"/><text x=\"192.5\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">Korelasyon (Birlikte Değişim)</text><text x=\"32\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• İki nicel değişkenin (X ve Y) birlikte artma</text><text x=\"32\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">  veya azalma eğilimini gösterir (-1 ≤ r ≤ +1).</text><text x=\"32\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">• Ancak r'nin yüksek çıkması (örn. r = +0,88),</text><text x=\"32\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">  X'in doğrudan Y'nin sebebi olduğu anlamına</text><text x=\"32\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">  GELMEZ!</text><text x=\"32\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">• Örnek: Dondurma satışı (X) ile vantilatör</text><text x=\"32\" y=\"199\" fill=\"#1e293b\" font-size=\"11.5\">  satışı (Y) arasında güçlü pozitif korelasyon vardır.</text><rect x=\"395\" y=\"42\" width=\"345\" height=\"198\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/><rect x=\"395\" y=\"42\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#dc2626\"/><rect x=\"395\" y=\"64\" width=\"345\" height=\"8\" fill=\"#dc2626\"/><text x=\"567.5\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">Gizli / Karıştırıcı Değişken (Z) Etkisi</text><text x=\"407\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Hem X hem de Y değişkenini aynı anda etkileyen</text><text x=\"407\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">  üçüncü değişkene 'gizli (karıştırıcı) değişken' denir.</text><text x=\"407\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">• Dondurma satışı vantilatör satışına sebep olmaz;</text><text x=\"407\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">  her ikisini de artıran gerçek neden 'Hava Sıcaklığı'</text><text x=\"407\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">  (Z gizli değişkeni) artışıdır!</text><text x=\"407\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">• Gizli değişken göz ardı edilerek kurulan</text><text x=\"407\" y=\"199\" fill=\"#1e293b\" font-size=\"11.5\">  sebep-sonuç iddiaları istatistiksel olarak ÇÜRÜTÜLÜR.</text></svg>"
     },
     {
-     "metin": "Hem açıklayıcı hem de yanıt değişkenini aynı anda etkileyerek sahte korelasyon oluşmasına yol açan üçüncü değişkene 'gizli (karıştırıcı) değişken' denir.",
-     "dogru": true,
-     "aciklama": "Doğrudur; örneğin dondurma satışı ile güneş yanığı vakalarını aynı anda artıran hava sıcaklığı bir gizli değişkendir."
+      "baslik": "3. Örneklem Yanlılığı, Aykırı Değerler ve Veri Manipülasyonu",
+      "metin": [
+        "Başkaları tarafından sunulan istatistiksel sonuçlarda dikkatle aranması gereken ikinci hata grubu {koyu:yanlılık (bias)} ve {koyu:veri manipülasyonudur}:",
+        "1) {koyu:Seçim / Örneklem Yanlılığı}: Araştırmanın sadece belirli bir alt gruptan (gönüllülerden, tek bir mahalleden, sadece profesyonel sporculardan vb.) alınan verilerle yapılıp tüm topluma genellenmesidir. 2) {koyu:Yetersiz Örneklem Büyüklüğü}: Yalnızca 4–5 veri çiftine bakarak güçlü bir korelasyon iddiasında bulunmak istatistiksel olarak güvenilir değildir.",
+        "3) {koyu:Aykırı Değer (Uç Değer) Manipülasyonu}: Veri setinin genel eğiliminden çok uzakta kalan tek bir {koyu:aykırı değer (outlier)}, korelasyon katsayısını (r) ve regresyon doğrusunun eğimini tek başına değiştirebilir. Araştırmacının işine gelmeyen verileri silmesi ({koyu:cımbızlama / cherry-picking}) veya ölçüm hatası olan bir uç değeri düzeltmeden modele katması sonucu geçersiz kılar.",
+        "4) {koyu:Grafik ve Eksen Ölçeği Yanıltmaları}: Serpilme diyagramında eksenlerin koparılarak (sıfırdan başlatılmayarak) çok dar bir aralıkta çizilmesi veya yatay/dikey ölçek oranlarının bozulması, çok zayıf bir eğimi görsel olarak çok dik ve güçlüymüş gibi gösterebilir."
+      ],
+      "kutu": {
+        "tur": "uyari",
+        "baslik": "Simpson Paradoksu (Alt Grup Yanılgısı)",
+        "metin": "Bazen iki nicel değişken arasında alt grupların her birinde pozitif korelasyon varken, tüm gruplar tek bir tabloda birleştirildiğinde korelasyonun yönü negatife dönebilir! Buna istatistikte 'Simpson Paradoksu' denir ve verilerin homojen olmayan alt gruplardan oluştuğunu gösterir."
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 265\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:0 auto;font-family:'Segoe UI',Roboto,sans-serif\"><rect x=\"5\" y=\"5\" width=\"750\" height=\"255\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"380\" y=\"28\" fill=\"#0f172a\" font-size=\"14.5\" font-weight=\"bold\" text-anchor=\"middle\">ÖRNEKLEM YANLILIĞI, AYKIRI DEĞERLER VE GRAFİKSEL MANİPÜLASYON</text><rect x=\"20\" y=\"42\" width=\"345\" height=\"198\" rx=\"10\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"2\"/><rect x=\"20\" y=\"42\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#7c3aed\"/><rect x=\"20\" y=\"64\" width=\"345\" height=\"8\" fill=\"#7c3aed\"/><text x=\"192.5\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">Örneklem Yanlılığı ve Aykırı Değer Etkisi</text><text x=\"32\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Seçim Yanlılığı: Sadece spor kulübü üyelerinden</text><text x=\"32\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">  veri toplayıp tüm toplum için 'yaş ile koşu hızı'</text><text x=\"32\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">  modeli kurmak yanlıdır (temsil gücü yoktur).</text><text x=\"32\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">• Yetersiz Örneklem: 3-4 gözlemle genel yasa</text><text x=\"32\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">  iddia edilemez.</text><text x=\"32\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">• Aykırı Değer (Outlier): Tek bir uç nokta r'yi</text><text x=\"32\" y=\"199\" fill=\"#1e293b\" font-size=\"11.5\">  yapay olarak yükseltebilir veya sıfıra çekebilir.</text><rect x=\"395\" y=\"42\" width=\"345\" height=\"198\" rx=\"10\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"395\" y=\"42\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#d97706\"/><rect x=\"395\" y=\"64\" width=\"345\" height=\"8\" fill=\"#d97706\"/><text x=\"567.5\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">Eksen Kesme ve Ölçek Manipülasyonu</text><text x=\"407\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Serpilme diyagramında dikey ekseni 0'dan</text><text x=\"407\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">  başlatmayıp çok dar bir aralıkta (örn. 98,1 - 98,5)</text><text x=\"407\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">  kesmek, çok önemsiz bir değişimi dev bir</text><text x=\"407\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">  artışmış gibi gösterir.</text><text x=\"407\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">• Yatay ekseni aşırı sıkıştırmak doğrunun eğimini</text><text x=\"407\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">  olduğundan çok dik gösterir.</text><text x=\"407\" y=\"199\" fill=\"#1e293b\" font-size=\"11.5\">• İncelemede ilk iş eksen birimlerini kontrol etmektir!</text></svg>"
+    },
+    {
+      "baslik": "4. Doğrusal Olmayan İlişkilerde Korelasyon Katsayısı Yanılgısı",
+      "metin": [
+        "Pearson korelasyon katsayısı ({koyu:r}), yalnızca iki nicel değişken arasındaki {koyu:doğrusal} ilişkinin gücünü ve yönünü ölçer. Eğer iki değişken arasında çok güçlü ancak {koyu:eğrisel (parabolik / U veya ters-U biçiminde)} bir ilişki varsa, korelasyon katsayısı {koyu:r ≈ 0} çıkabilir!",
+        "{koyu:Örnek}: Bir ürünün 'satış fiyatı (X)' ile 'toplam kârı (Y)' arasındaki ilişkiyi düşünelim: Fiyat çok düşükken kâr azdır, fiyat optimum düzeye çıktıkça kâr maksimuma ulaşır, fiyat aşırı pahalı yapıldığında ise satışlar duracağı için kâr tekrar sıfıra düşer (ters parabol). Bu veriler için r ≈ 0 hesaplayan bir kişinin {koyu:'Fiyat ile kâr arasında hiçbir ilişki yoktur'} yorumu {koyu:hatalıdır ve çürütülmelidir}; çünkü aralarında doğrusal olmayan çok güçlü bir ilişki vardır."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Neden Önce Serpilme Diyagramına Bakılmalıdır?",
+        "metin": "Yalnızca r sayısına bakarak yorum yapmak tehlikelidir (Anscombe Dörtlüsü örneğinde olduğu gibi çok farklı dört dağılım aynı r değerini verebilir). Bu yüzden her zaman önce serpilme diyagramı incelenerek ilişkinin doğrusal olup olmadığı kontrol edilmelidir."
+      }
+    },
+    {
+      "baslik": "5. Doğrusal Modelle Tahmin: İnterpolasyon ve Ekstrapolasyon",
+      "metin": [
+        "İki nicel değişken arasında güçlü bir doğrusal ilişki saptandığında oluşturulan en uygun doğru (regresyon doğrusu) denklemi {koyu:y = a + b · x} ile bilinmeyen değerler için tahmin yapılabilir. Ancak tahminin yapıldığı bölge son derece kritiktir:",
+        "1) {koyu:İnterpolasyon (Aralık İçi Tahmin)}: Eldeki verilerin en küçük ve en büyük değerleri arasındaki ({koyu:[x_min, x_max] aralığı içindeki}) bir x değeri için y tahmini yapmaktır. Doğrusal ilişki güçlü ise interpolasyon sonuçları {koyu:yüksek güvenilirliğe sahiptir ve kabul edilir}.",
+        "2) {koyu:Ekstrapolasyon (Aralık Dışı Tahmin)}: Gözlemlenen veri aralığının {koyu:dışındaki (x < x_min veya x > x_max)} değerler için doğrusal modelin aynen devam edeceğini varsayarak tahmin yapmaktır. Uzak ekstrapolasyon çoğu zaman {koyu:fiziksel ve biyolojik gerçekliğe aykırı saçma sonuçlar üretir}. Örneğin 1–10 yaş arası çocuklarda yaş (x) ile boy (y, cm) arasında kurulan {koyu:y = 70 + 6x} doğrusal modelini kullanarak 60 yaşındaki bir insanın boyunun 70 + 6(60) = 430 cm olacağını iddia etmek {koyu:ekstrapolasyon hatasıdır ve çürütülür}."
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "baslik": "Negatif Değer ve Sınır İhlali Kontrolü",
+        "metin": "Ekstrapolasyon hatasını yakalamanın en pratik yolu sınır değerleri denemektir: Eğer bir doğrusal model belirli bir x değerinden sonra boy, kütle, fiyat veya süre gibi negatif olamayacak büyüklükleri negatif (-) tahmin ediyorsa, model o aralıkta geçersizdir!"
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 265\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:0 auto;font-family:'Segoe UI',Roboto,sans-serif\"><rect x=\"5\" y=\"5\" width=\"750\" height=\"255\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"380\" y=\"28\" fill=\"#0f172a\" font-size=\"14.5\" font-weight=\"bold\" text-anchor=\"middle\">DOĞRUSAL MODELDE TAHMİN SINIRLARI: İNTERPOLASYON VE EKSTRAPOLASYON</text><rect x=\"20\" y=\"42\" width=\"345\" height=\"198\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"20\" y=\"42\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#059669\"/><rect x=\"20\" y=\"64\" width=\"345\" height=\"8\" fill=\"#059669\"/><text x=\"192.5\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">İnterpolasyon (Aralık İçi Tahmin - Güvenilir)</text><text x=\"32\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Gözlemlenen en küçük ve en büyük veri aralığının</text><text x=\"32\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">  [x_min, x_max] İÇİNDEKİ bir değer için doğrusal</text><text x=\"32\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">  regresyon denklemiyle (y = a + bx) tahmin yapmaktır.</text><text x=\"32\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">• Örnek: 5-15 yaş arası çocukların boy verisinden</text><text x=\"32\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">  10 yaşındaki bir çocuğun boyunu tahmin etmek.</text><text x=\"32\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">• Model güçlü (|r| yüksek) ise KABUL EDİLİR.</text><rect x=\"395\" y=\"42\" width=\"345\" height=\"198\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/><rect x=\"395\" y=\"42\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#dc2626\"/><rect x=\"395\" y=\"64\" width=\"345\" height=\"8\" fill=\"#dc2626\"/><text x=\"567.5\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">Ekstrapolasyon (Aralık Dışı Tahmin - Riskli!)</text><text x=\"407\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Gözlemlenen veri aralığının [x_min, x_max] ÇOK</text><text x=\"407\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">  DIŞINDAKİ bir değer için aynı doğrusal eğilimin</text><text x=\"407\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">  sonsuza dek süreceğini varsaymaktır.</text><text x=\"407\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">• Örnek: 0-15 yaş boy artış modelini (y = 50 + 6x)</text><text x=\"407\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">  kullanarak 50 yaşındaki kişinin 350 cm olacağını</text><text x=\"407\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">  iddia etmek! Bu tür iddialar ÇÜRÜTÜLÜR.</text></svg>"
+    },
+    {
+      "baslik": "6. İstatistiksel İddiaları Kabul Etme veya Çürütme Rehberi",
+      "metin": [
+        "Bir araştırma raporundaki istatistiksel sonucu tartışırken şu karar şemasını uygularız: • {koyu:Ne Zaman Kabul Edilir?}: Örneklem yeterince büyük ve yansız (rastgele) seçilmişse, serpilme diyagramı doğrusal bir yönelim gösteriyorsa, r katsayısı doğru yorumlanmışsa, nedensellik iddiası deneysel/bilimsel kanıtla desteklenmişse ve tahminler veri aralığı içinde (interpolasyon) yapılmışsa sonuç {koyu:kabul edilir}.",
+        "{koyu:Ne Zaman Çürütülür?}: Seçim yanlılığı varsa, salt korelasyondan doğrudan sebep-sonuç çıkarılmışsa (gizli değişken göz ardı edilmişse), eğrisel veriye doğrusal model zorlanmışsa veya veri aralığının çok dışında (ekstrapolasyon) gerçek dışı tahmin yapılmışsa iddia {koyu:bilimsel gerekçeleriyle çürütülür}."
+      ],
+      "kutu": {
+        "tur": "bilgi",
+        "baslik": "Bilgi ve Finansal Okuryazarlık Bağlantısı",
+        "metin": "Yatırım tavsiyelerinde, reklamlarda ('Kullananların %95'inde 3 günde etki!') veya ekonomik tahminlerde sunulan iki değişkenli grafikleri bu ölçütlerle sorgulamak, modern dünyada bilinçli ve sorumlu karar vermenin anahtarıdır."
+      }
     }
-   ]
-  },
-  {
-   "tur": "dy",
-   "yonerge": "İstatistiksel yanlılık ve grafik yorumlarıyla ilgili aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
-   "ifadeler": [
+  ],
+  "ornekler": [
     {
-     "metin": "İki değişken arasındaki korelasyon katsayısı r = 0 ise bu iki değişken arasında eğrisel (parabolik) bir ilişki de olamaz.",
-     "dogru": false,
-     "aciklama": "Yanlıştır; r = 0 yalnızca doğrusal ilişki olmadığını gösterir, değişkenler arasında çok güçlü bir parabolik (U veya ters-U) ilişki bulunabilir."
+      "soru": "Bir araştırmacı, 20 farklı ilçede görev yapan itfaiye aracı sayısı (X) ile yangınlarda oluşan maddi hasar tutarı (Y, milyon TL) arasındaki korelasyon katsayısını r = +0,85 olarak hesaplamış ve raporunda 'Yangın yerine daha az itfaiye aracı gönderilirse maddi hasar azalır' sonucunu paylaşmıştır. Bu istatistiksel yorumu temellendirerek kabul veya çürütme açısından değerlendiriniz.",
+      "cevap": "1) Hata/Yanlılık Tespiti: Araştırmacı, iki nicel değişken arasındaki güçlü pozitif korelasyonu (r = +0,85) doğrudan 'nedensellik (sebep-sonuç)' olarak yorumlama hatasına düşmüştür.\n2) Gizli Değişken Analizi: İtfaiye araçları hasara sebep olmaz; burada hem gönderilen itfaiye aracı sayısını (X) hem de oluşan maddi hasarı (Y) aynı anda artıran üçüncü bir 'gizli (karıştırıcı) değişken (Z)' vardır: 'Yangının büyüklüğü ve şiddeti'. Büyük yangınlara daha çok itfaiye aracı sevk edilir ve büyük yangınlar daha çok hasar bırakır.\n3) Karar (Çürütme): Araştırmacının yorumu gizli değişkenin göz ardı edilmesi ve korelasyon-nedensellik yanılgısı nedeniyle ÇÜRÜTÜLÜR."
     },
     {
-     "metin": "Veri setindeki genel dağılımdan çok uzakta bulunan tek bir aykırı (uç) değer, korelasyon katsayısını ve regresyon doğrusunun eğimini önemli ölçüde değiştirebilir.",
-     "dogru": true,
-     "aciklama": "Doğrudur; Pearson korelasyon katsayısı ve en küçük kareler doğrusu aykırı değerlere karşı oldukça hassastır."
+      "soru": "Bir tarım mühendisi, mısır tarlalarında dekara verilen azotlu gübre miktarı (x, kg) ile elde edilen ürün miktarı (y, kg) arasında [0, 30] kg gübre aralığında yaptığı gözlemlerle y = 400 + 15x doğrusal modelini (r = +0,94) oluşturmuştur. Bir çiftçi bu modele dayanarak 'Dekara 200 kg gübre atarsam 400 + 15(200) = 3400 kg mısır alırım' iddiasında bulunuyor. Çiftçinin bu yorumunu istatistiksel olarak değerlendiriniz.",
+      "cevap": "1) İstatistiksel Temellendirme: Mühendisin modeli yalnızca [0, 30] kg gübre aralığındaki verilerle oluşturulmuştur ve bu aralıkta güçlü pozitif doğrusal ilişki (r = +0,94) geçerlidir (örneğin x = 20 kg için yapılan interpolasyon tahmini güvenilirdir).\n2) Hata Tespiti (Ekstrapolasyon): Çiftçinin öne sürdüğü x = 200 kg değeri, gözlemlenen [0, 30] kg veri aralığının çok dışındadır (aşırı ekstrapolasyon). Gerçekte aşırı gübreleme toprağı zehirleyerek bitkiyi yakar ve verimi sıfıra düşürür (ilişki belirli bir noktadan sonra doğrusal olmaktan çıkıp azalan eğrisel yapıya döner).\n3) Karar (Çürütme): Çiftçinin iddiası, modelin geçerlilik aralığı dışında (ekstrapolasyon) yapılması nedeniyle ÇÜRÜTÜLÜR."
     },
     {
-     "metin": "Bir araştırmada evreni temsil etmeyen, sadece araştırmacının kolay ulaştığı tek tip bir gruptan veri toplanmasına 'örneklem (seçim) yanlılığı' denir.",
-     "dogru": true,
-     "aciklama": "Doğrudur; yanlı örneklemden elde edilen sonuçlar tüm evrene genellenemez."
+      "soru": "Bir spor salonu sahibi, yalnızca kendi salonuna haftada en az 5 gün gelen 15 profesyonel vücut geliştirme sporcusunun 'yaş (X)' ve 'kaldırdıkları maksimum ağırlık (Y)' verilerini toplayarak 'Türkiye'de insanların yaşı arttıkça kaldırdıkları ağırlık artmaktadır' sonucunu yayınlamıştır. Bu araştırmadaki istatistiksel yanlılıkları belirleyiniz.",
+      "cevap": "Bu araştırmada iki temel istatistiksel hata vardır:\n1) Seçim (Örneklem) Yanlılığı: Veri yalnızca spor salonuna haftada 5 gün gelen profesyonel sporculardan toplanmıştır; bu grup tüm Türkiye nüfusunu (evreni) kesinlikle temsil etmez.\n2) Yetersiz Örneklem Büyüklüğü ve Yaş Aralığı Kısıtı: Yalnızca n = 15 kişilik dar bir örneklem kullanılmıştır. Bu nedenlerle araştırmacının Türkiye geneline yaptığı yorum istatistiksel olarak geçersizdir ve ÇÜRÜTÜLÜR."
+    },
+    {
+      "soru": "Bir araştırmada öğrencilerin 'sınav kaygı düzeyi puanı (X: 0 ile 100 arası)' ile 'sınav başarısı puanı (Y: 0 ile 100 arası)' arasındaki doğrusal korelasyon katsayısı r = -0,03 olarak bulunmuş ve 'Sınav kaygısı ile sınav başarısı arasında hiçbir ilişki yoktur' denilmiştir. Ancak serpilme diyagramına bakıldığında noktaların ters-U (parabol) şeklinde dizildiği görülmektedir. Bu yorumu değerlendiriniz.",
+      "cevap": "Korelasyon katsayısı (r) yalnızca DOĞRUSAL ilişkinin gücünü ölçer. Serpilme diyagramındaki ters-U (parabolik) dağılım; çok düşük kaygıda (umursamama) başarının düşük olduğunu, orta düzey kaygıda motivasyonla başarının zirveye çıktığını, aşırı yüksek kaygıda ise panik nedeniyle başarının tekrar düştüğünü göstermektedir. Yani iki değişken arasında çok güçlü ancak doğrusal olmayan (eğrisel) bir ilişki vardır. Bu nedenle 'hiçbir ilişki yoktur' yorumu hatalıdır ve ÇÜRÜTÜLÜR."
+    },
+    {
+      "soru": "İkinci el otomobil piyasasında aynı marka ve modeldeki 250 aracın 'kullanım kilometresi (x, bin km: [10, 200] aralığında)' ile 'satış fiyatı (y, bin TL)' verileri rastgele örnekleme ile toplanmış, r = -0,91 bulunmuş ve y = 1200 - 4x doğrusal modeli elde edilmiştir. Bu modele dayanarak 80 bin km'deki bir aracın yaklaşık 880 bin TL olacağı yorumu kabul edilir mi? Açıklayınız.",
+      "cevap": "1) Örneklem ve Yöntem: n = 250 araçlık rastgele örneklem yeterince büyüktür ve temsil gücü yüksektir.\n2) Korelasyon ve Model: r = -0,91 değeri çok güçlü negatif doğrusal ilişkiyi doğrulamaktadır (kilometre arttıkça aşınma nedeniyle fiyatın düşmesi gerçek yaşam bağlamına ve nedenselliğe uygundur).\n3) Tahmin Bölgesi (İnterpolasyon): x = 80 bin km değeri, gözlemlenen [10, 200] bin km veri aralığının tam içindedir (interpolasyon) ve y = 1200 - 4(80) = 880 bin TL verir.\nSonuç: Tüm bilimsel ve istatistiksel ölçütler sağlandığı için bu yorum KABUL EDİLİR."
+    },
+    {
+      "soru": "‘İstatistiksel Sonuç ve Yorumları Temellendirme Ölçütleri’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
+      "cevap": "Medyada, reklamlarda veya araştırma raporlarında başkaları tarafından oluşturulmuş iki nicel değişkenli bir veri analiziyle karşılaştığımızda, sunulan sonucu körü körüne kabul etmek yerine önce {koyu:istatistiksel temellendirme} yapmamız gerekir. Sağlam bir istatistiksel temellendirme için şu dört temel soru sorulur: 1) {koyu:Veri Kaynağı ve Örneklem}: Veriler kim tarafından, hangi yöntemle ve kaç birimlik ({koyu:n}) bir örneklemden toplanmıştır? Örneklem ana kütleyi (evreni) tarafsız biçimde temsil ediyor mu? 2) {koyu:Görsel ve Sayısal Tutarlılık}: Sunulan serpilme diyagramındaki noktaların dağılımı ile rapor edilen korelasyon katsayısı ({koyu:r}) birbirini doğruluyor mu?"
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "soru": "İstatistiksel sonuçların tartışılmasında kullanılan aşağıdaki kavramları karşılık gelen tanımlarla eşleştiriniz.",
-   "ciftler": [
-    [
-     "Gizli (Karıştırıcı) Değişken",
-     "İki değişkeni aynı anda etkileyerek aralarında sahte bir ilişki varmış gibi gösteren üçüncü değişken"
-    ],
-    [
-     "İnterpolasyon",
-     "Gözlemlenen veri aralığının [x_min, x_max] içindeki bir değer için doğrusal modelle tahmin yapma"
-    ],
-    [
-     "Ekstrapolasyon",
-     "Gözlemlenen veri aralığının dışındaki değerler için doğrusal eğilimin süreceğini varsayarak tahmin yapma"
-    ],
-    [
-     "Seçim (Örneklem) Yanlılığı",
-     "Ana kütleyi temsil etmeyen dar veya tek yönlü bir alt gruptan veri toplanması hatası"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
-   "cumleler": [
+  ],
+  "etkinlikler": [
     {
-     "metin": "İstatistik biliminin temel ilkesine göre iki değişken arasındaki ___ (ilişkililik), nedensellik anlamına gelmez.",
-     "cevap": "korelasyon"
+      "tur": "coktan",
+      "soru": "Bir araştırmada şehirlerdeki 'leylek yuvası sayısı (X)' ile 'yeni doğan bebek sayısı (Y)' arasında pozitif bir korelasyon (r = +0,78) bulunmuştur. Bu veriden hareketle 'Leylekler bebek doğumlarını artırmaktadır' iddiasında bulunan bir kişiye verilecek en doğru istatistiksel yanıt aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "İki değişken arasındaki korelasyon nedensellik anlamına gelmez; her iki değişkeni de etkileyen gizli değişken yerleşim yerinin yüzölçümü ve nüfus büyüklüğüdür.",
+        "Korelasyon katsayısı pozitif olduğu için iddia bilimsel olarak bütünüyle doğrudur (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)",
+        "Korelasyon katsayısı +1'den büyük olmadığı için hiçbir yorum yapılamaz.",
+        "Bu durum interpolasyon tahmininin ne kadar güvenilir olduğunu kanıtlar.",
+        "Leylek yuvası sayısı bağımlı değişken, bebek sayısı ise bağımsız değişkendir."
+      ],
+      "dogru": 0,
+      "aciklama": "İki nicel değişken arasında korelasyon bulunması sebep-sonuç (nedensellik) kanıtı değildir. Burada hem bina/çatı (dolayısıyla yuva) sayısını hem de doğum sayısını artıran gizli değişken nüfus ve yüzölçümü büyüklüğüdür."
     },
     {
-     "metin": "Veri setinin genel eğiliminden çok uzakta kalan ve doğrusal modeli çarpıtabilen noktalara ___ (uç) değer denir.",
-     "cevap": "aykırı"
+      "tur": "coktan",
+      "soru": "Bir fidanın dikildikten sonraki ilk 12 ay boyunca boyu (y, cm) her ay ölçülmüş ve geçen süre (x, ay; 1 <= x <= 12) ile boy arasında y = 20 + 5x doğrusal modeli elde edilmiştir. Aşağıdaki tahminlerden hangisi 'ekstrapolasyon (aralık dışı tahmin) hatasına' örnektir?",
+      "secenekler": [
+        "Fidanın 4. aydaki boyunun 40 cm olarak tahmin edilmesi",
+        "Fidanın 20 yıl (240 ay) sonraki boyunun 1220 cm (12,2 metre) olacağının iddia edilmesi",
+        "Fidanın 10. aydaki boyunun 70 cm olarak tahmin edilmesi (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)",
+        "Fidanın 6. aydaki boyunun 50 cm olarak tahmin edilmesi",
+        "Fidanın 8. aydaki boyunun 60 cm olarak tahmin edilmesi"
+      ],
+      "dogru": 1,
+      "aciklama": "Model yalnızca [1, 12] ay aralığındaki verilerle kurulmuştur. 4, 6, 8 ve 10. aylar aralık içi tahmin (interpolasyon) iken, 240. ay veri aralığının çok dışında bir ekstrapolasyondur ve büyüme hızı sabit kalmayacağı için hatalıdır."
     },
     {
-     "metin": "Gözlemlenen veri aralığının çok dışındaki bir değer için doğrusal modelle tahmin yapmaya ___ denir.",
-     "cevap": "ekstrapolasyon"
+      "tur": "coktan",
+      "soru": "‘Örneklem Yanlılığı, Aykırı Değerler ve Veri Manipülasyonu’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Bazen iki nicel değişken arasında alt grupların her birinde pozitif korelasyon varken, tüm gruplar tek bir tabloda birleştirildiğinde korelasyonun yönü negatife dönebilir! Buna istatistikte 'Simpson Paradoksu' denir ve verilerin homojen olmayan alt gruplardan oluştuğunu gösterir.",
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum)",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 2,
+      "aciklama": "Örneklem Yanlılığı, Aykırı Değerler ve Veri Manipülasyonu bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "‘Doğrusal Olmayan İlişkilerde Korelasyon Katsayısı Yanılgısı’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Münhasıran r sayısına bakarak yorum yapmak tehlikelidir.",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 3,
+      "aciklama": "Doğrusal Olmayan İlişkilerde Korelasyon Katsayısı Yanılgısı bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "İki nicel değişken arasındaki korelasyon katsayısının r = +0,95 çıkması, birinci değişkenin ikinci değişkenin doğrudan sebebi olduğunu net olarak kanıtlar.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; korelasyon katsayısı ne kadar yüksek olursa olsun tek başına nedenselliği (sebep-sonuç ilişkisini) kanıtlamaz."
+        },
+        {
+          "metin": "Gözlemlenen veri aralığının [x_min, x_max] içindeki bir değer için doğrusal regresyon modeliyle yapılan tahmine 'interpolasyon' denir.",
+          "dogru": true,
+          "aciklama": "Doğrudur; aralık içi tahmin interpolasyon, aralık dışı tahmin ise ekstrapolasyondur."
+        },
+        {
+          "metin": "Hem açıklayıcı hem de yanıt değişkenini aynı anda etkileyerek sahte korelasyon oluşmasına yol açan üçüncü değişkene 'gizli (karıştırıcı) değişken' denir.",
+          "dogru": true,
+          "aciklama": "Doğrudur; örneğin dondurma satışı ile güneş yanığı vakalarını aynı anda artıran hava sıcaklığı bir gizli değişkendir."
+        },
+        {
+          "metin": "İki değişken arasındaki korelasyon katsayısı r = 0 ise bu iki değişken arasında eğrisel (parabolik) bir ilişki de olamaz.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; r = 0 yalnızca doğrusal ilişki olmadığını gösterir, değişkenler arasında çok güçlü bir parabolik (U veya ters-U) ilişki bulunabilir."
+        },
+        {
+          "metin": "Veri setindeki genel dağılımdan çok uzakta bulunan tek bir aykırı (uç) değer, korelasyon katsayısını ve regresyon doğrusunun eğimini önemli ölçüde değiştirebilir.",
+          "dogru": true,
+          "aciklama": "Doğrudur; Pearson korelasyon katsayısı ve en küçük kareler doğrusu aykırı değerlere karşı oldukça hassastır."
+        },
+        {
+          "metin": "Bir araştırmada evreni temsil etmeyen, salt araştırmacının kolay ulaştığı tek tip bir gruptan veri toplanmasına 'örneklem (seçim) yanlılığı' denir.",
+          "dogru": true,
+          "aciklama": "Doğrudur; yanlı örneklemden elde edilen sonuçlar tüm evrene genellenemez."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "İstatistiksel sonuçların tartışılmasında kullanılan aşağıdaki kavramları karşılık gelen tanımlarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Gizli (Karıştırıcı) Değişken",
+          "İki değişkeni aynı anda etkileyerek aralarında sahte bir ilişki varmış gibi gösteren üçüncü değişken"
+        ],
+        [
+          "İnterpolasyon",
+          "Gözlemlenen veri aralığının [x_min, x_max] içindeki bir değer için doğrusal modelle tahmin yapma"
+        ],
+        [
+          "Ekstrapolasyon",
+          "Gözlemlenen veri aralığının dışındaki değerler için doğrusal eğilimin süreceğini varsayarak tahmin yapma"
+        ],
+        [
+          "Seçim (Örneklem) Yanlılığı",
+          "Ana kütleyi temsil etmeyen dar veya tek yönlü bir alt gruptan veri toplanması hatası"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "İstatistik biliminin temel ilkesine göre iki değişken arasındaki ___ (ilişkililik), nedensellik anlamına gelmez.",
+          "cevap": "korelasyon"
+        },
+        {
+          "metin": "Veri setinin genel eğiliminden çok uzakta kalan ve doğrusal modeli çarpıtabilen noktalara ___ (uç) değer denir.",
+          "cevap": "aykırı"
+        },
+        {
+          "metin": "Gözlemlenen veri aralığının çok dışındaki bir değer için doğrusal modelle tahmin yapmaya ___ denir.",
+          "cevap": "ekstrapolasyon"
+        },
+        {
+          "metin": "Başkaları tarafından oluşturulan istatistiksel bir iddiayı incelerken verilerin güvenilirliğini ve model uyumunu kanıtlamaya istatistiksel ___ denir.",
+          "cevap": "temellendirme"
+        },
+        {
+          "metin": "Korelasyon katsayısı r yalnızca ___ ilişkilerin yönünü ve gücünü ölçer; eğrisel ilişkileri ölçemez.",
+          "cevap": "doğrusal"
+        },
+        {
+          "metin": "Bilimsel yönteme, rastgele örnekleme ve geçerli aralığa dayanmayan hatalı istatistiksel iddialar kanıtlarla ___.",
+          "cevap": "çürütülür"
+        }
+      ],
+      "fazla": [
+        "interpolasyon",
+        "medyan",
+        "eğrisel",
+        "onaylanır"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir gazete haberinde 'Yapılan araştırmaya göre evinde daha fazla kitap bulunan öğrencilerin matematik netleri daha yüksektir (r = +0,82); öyleyse belediyeler her eve bir kamyon kitap dağıtırsa tüm öğrenciler matematikten tam puan alır!' yorumu yer almaktadır. Bu iddiayı MAT.11.1.2 süreç bileşenlerine (temellendirme, hata/yanlılık tespiti, kabul/çürütme) göre adım adım değerlendiriniz.",
+      "cevap": "1) İstatistiksel Temellendirme: Evdeki kitap sayısı (X) ile matematik başarısı (Y) arasında r = +0,82'lik güçlü pozitif doğrusal bir birliktelik vardır; yani kitap sayısı çok olan evlerdeki öğrencilerin başarı ortalaması gerçekten daha yüksektir. 2) Hata ve Yanlılık Tespiti: Haberde iki temel hata yapılmıştır: Birincisi, korelasyon doğrudan nedensellik sanılmış ve gizli değişkenler (ailenin eğitime verdiği değer, okuma alışkanlığı, sosyoekonomik imkanlar ve öğrencinin çalışma süresi) göz ardı edilmiştir. İkincisi, 'bir kamyon kitapla tam puan alınacağı' iddiası aşırı bir ekstrapolasyon (aralık dışı tahmin) hatasıdır. 3) Çürütme: Kitapların okunmadan sadece evde bulunması başarıyı doğrudan artırmayacağından gazetenin vardığı nedensel sonuç bilimsel olarak ÇÜRÜTÜLÜR.",
+      "ipuclari": [
+        "1. Adım: Kitap sayısı ile başarı arasındaki pozitif korelasyonun (r = +0,82) ne anlama geldiğini temellendiriniz.",
+        "2. Adım: Kitapların tek başına evde durmasının başarı üretmeyeceğini, buradaki gizli değişkenleri (ailenin eğitim/okuma kültürü, çalışma alışkanlığı) ve ekstrapolasyon hatasını tespit ediniz.",
+        "3. Adım: Korelasyon-nedensellik yanılgısı nedeniyle 'kitap dağıtmakla herkesin tam puan alacağı' iddiasını çürütünüz."
+      ]
     }
-   ],
-   "fazla": [
-    "interpolasyon",
-    "medyan"
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
-   "cumleler": [
-    {
-     "metin": "Başkaları tarafından oluşturulan istatistiksel bir iddiayı incelerken verilerin güvenilirliğini ve model uyumunu kanıtlamaya istatistiksel ___ denir.",
-     "cevap": "temellendirme"
-    },
-    {
-     "metin": "Korelasyon katsayısı r yalnızca ___ ilişkilerin yönünü ve gücünü ölçer; eğrisel ilişkileri ölçemez.",
-     "cevap": "doğrusal"
-    },
-    {
-     "metin": "Bilimsel yönteme, rastgele örnekleme ve geçerli aralığa dayanmayan hatalı istatistiksel iddialar kanıtlarla ___.",
-     "cevap": "çürütülür"
-    }
-   ],
-   "fazla": [
-    "eğrisel",
-    "onaylanır"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Bir gazete haberinde 'Yapılan araştırmaya göre evinde daha fazla kitap bulunan öğrencilerin matematik netleri daha yüksektir (r = +0,82); öyleyse belediyeler her eve bir kamyon kitap dağıtırsa tüm öğrenciler matematikten tam puan alır!' yorumu yer almaktadır. Bu iddiayı MAT.11.1.2 süreç bileşenlerine (temellendirme, hata/yanlılık tespiti, kabul/çürütme) göre adım adım tartışınız.",
-   "ipuclari": [
-    "1. Adım: Kitap sayısı ile başarı arasındaki pozitif korelasyonun (r = +0,82) ne anlama geldiğini temellendiriniz.",
-    "2. Adım: Kitapların tek başına evde durmasının başarı üretmeyeceğini, buradaki gizli değişkenleri (ailenin eğitim/okuma kültürü, çalışma alışkanlığı) ve ekstrapolasyon hatasını tespit ediniz.",
-    "3. Adım: Korelasyon-nedensellik yanılgısı nedeniyle 'kitap dağıtmakla herkesin tam puan alacağı' iddiasını çürütünüz."
-   ],
-   "cevap": "1) İstatistiksel Temellendirme: Evdeki kitap sayısı (X) ile matematik başarısı (Y) arasında r = +0,82'lik güçlü pozitif doğrusal bir birliktelik vardır; yani kitap sayısı çok olan evlerdeki öğrencilerin başarı ortalaması gerçekten daha yüksektir. 2) Hata ve Yanlılık Tespiti: Haberde iki temel hata yapılmıştır: Birincisi, korelasyon doğrudan nedensellik sanılmış ve gizli değişkenler (ailenin eğitime verdiği değer, okuma alışkanlığı, sosyoekonomik imkanlar ve öğrencinin çalışma süresi) göz ardı edilmiştir. İkincisi, 'bir kamyon kitapla tam puan alınacağı' iddiası aşırı bir ekstrapolasyon (aralık dışı tahmin) hatasıdır. 3) Çürütme: Kitapların okunmadan sadece evde bulunması başarıyı doğrudan artırmayacağından gazetenin vardığı nedensel sonuç bilimsel olarak ÇÜRÜTÜLÜR."
-  }
- ]
+  ]
 }

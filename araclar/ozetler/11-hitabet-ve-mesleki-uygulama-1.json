@@ -20,7 +20,8 @@
       "kutu": {
         "tur": "bilgi",
         "metin": "Din hizmeti yalnız camide namaz kıldırmakla sınırlı değildir."
-      }
+      },
+      "gorsel": "<svg viewBox=\"0 0 460 214\" role=\"img\" aria-label=\"Ülkemizdeki Din Hizmetleri kavram özeti şeması\"><rect x=\"90\" y=\"12\" width=\"280\" height=\"38\" rx=\"19\" class=\"g-mf\"/><text x=\"230\" y=\"36\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"800\" class=\"g-b\">Ülkemizdeki Din Hizmetleri</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ma\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"116\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">1. Bölüm</text><text x=\"116\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Din hizmetlerinin kapsamı</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ta\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"344\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">2. Bölüm</text><text x=\"344\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Müftü ve vaizin görevleri</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ya\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"116\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-yf\">3. Bölüm</text><text x=\"116\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Cami ve Kur’an kursu görevlileri</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-oa\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"344\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-of\">4. Bölüm</text><text x=\"344\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Görevlilerin yetişmesi ve yeterl…</text></svg>"
     },
     {
       "baslik": "Müftü ve vaizin görevleri",
@@ -110,26 +111,26 @@
       "tur": "coktan",
       "soru": "Bir görevli hafızlık eğitimi veriyor, Kur’an okumayı ve temel dinî bilgileri öğretiyor. Hangi meslek doğrudan öne çıkmaktadır?",
       "secenekler": [
-        "Müftü",
+        "Kur’an kursu öğreticisi",
         "Vaiz",
         "İmam-hatip",
-        "Müezzin-kayyım",
-        "Kur’an kursu öğreticisi"
+        "Müezzin-kayyım (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)",
+        "Müftü"
       ],
-      "dogru": 4,
+      "dogru": 0,
       "aciklama": "Kur’an kursu öğreticisinin başlıca alanı Kur’an ve temel dinî bilgi eğitimidir."
     },
     {
       "tur": "coktan",
       "soru": "Bir inceleme raporunda “Hizmet hangi ihtiyaca cevap veriyor ve kimlere ulaşıyor?” soruları bulunuyor. Bu sorular hangi iki unsuru belirler?",
       "secenekler": [
-        "Amaç ve hedef kitle",
         "Bina rengi ve büyüklüğü",
+        "Amaç ve hedef kitle",
         "Takvim ve kitap sayısı",
         "Kadro adı ve oda sayısı",
         "Yazı tipi ve kâğıt ölçüsü"
       ],
-      "dogru": 0,
+      "dogru": 1,
       "aciklama": "İlk soru amacı, ikinci soru yararlanan grubu belirlemeye yöneliktir."
     },
     {
@@ -146,8 +147,21 @@
       "aciklama": "Yöntemin muhatabın gelişim özelliklerine ve ihtiyaçlarına uygun olması gerekir."
     },
     {
+      "tur": "coktan",
+      "soru": "‘Görevlilerin yetişmesi ve yeterlilik’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Bilmek, uygulayabilmek ve insanlarla doğru ilişki kurmak birlikte önemlidir.",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 3,
+      "aciklama": "Görevlilerin yetişmesi ve yeterlilik bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
       "tur": "dy",
-      "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
           "metin": "Din hizmetleri dijital yayınlarla da sunulabilir.",
@@ -173,7 +187,7 @@
     },
     {
       "tur": "eslestir",
-      "yonerge": "İlişkili kavram ve açıklamaları eşleştiriniz.",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
           "Müftü",
@@ -195,7 +209,7 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
           "metin": "Bir hizmetten yararlanması amaçlanan grup ___ olarak adlandırılır.",
@@ -211,26 +225,24 @@
         }
       ],
       "fazla": [
-        "rekabet"
+        "rekabet",
+        "varsayım"
       ]
     },
     {
       "tur": "ogretici",
       "soru": "Bir hizmeti yalnız cami binasını fotoğraflayarak tanıtmak neden yeterli değildir?",
+      "cevap": "Bina, hizmetin nerede yapıldığını gösterir; ne yapıldığını, kim için ve nasıl sunulduğunu tek başına açıklamaz. Bu unsurlar da incelenmelidir.",
       "ipuclari": [
         "Hizmetin amacı ve yapılan faaliyeti düşün.",
         "Görevli, hedef kitle ve yöntem bilgisi gerekir."
-      ],
-      "cevap": "Bina, hizmetin nerede yapıldığını gösterir; ne yapıldığını, kim için ve nasıl sunulduğunu tek başına açıklamaz. Bu unsurlar da incelenmelidir."
-    },
-    {
-      "tur": "ogretici",
-      "soru": "Din görevlisinin örnek davranışı ile anlattığı bilgi arasında nasıl bir ilişki bulunmalıdır?",
-      "ipuclari": [
-        "Bilgi aktarımının güvenle bağını düşün.",
-        "Söz ve uygulamanın tutarlılığını açıkla."
-      ],
-      "cevap": "Anlattığı değerleri kendi davranışlarında da göstermesi, güvenilirliği ve rehberliği destekler. Bilgi, mesleki beceri ve örnek kişilik birlikte değerlendirilir."
+      ]
     }
+  ],
+  "ozet": [
+    "Din hizmetleri, toplumun dinî konularda bilgilendirilmesi, ibadet yerlerinin yönetimi ve ilgili faaliyetlerin yürütülmesini kapsar. Ülkemizde bu hizmetler kamu hizmeti olarak düzenlenir; Diyanet İşleri Başkanlığı temel yürütücü kurumdur.",
+    "Müftü, dinî meselelerde açıklama ve fetva verme yetkinliğine sahip görevlidir. İl ve ilçelerde din hizmetlerinin düzenlenmesi, cami ve Kur’an kurslarının işleyişi ve görevlilerin çalışmalarının yönetilmesiyle ilgilenir.",
+    "İmam-hatip; namaz kıldırma, hutbe ve vaaz verme, cami içi eğitim ve irşat, dinî günlerde program ve cenazeyle ilgili hizmetlerde görev alır. Caminin düzeni ve temizliği de sorumlulukları arasındadır.",
+    "Okullardaki din eğitimi Millî Eğitim Bakanlığının çalışma alanındadır. İmam hatip liseleri ve ilahiyat fakülteleri, din hizmetlerinde görev alacak insan kaynağının yetişmesine katkı sağlar. Diyanet akademilerinde meslek öncesi ve hizmet içi eğitimler yürütülür."
   ]
 }

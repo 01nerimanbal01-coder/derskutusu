@@ -1,360 +1,377 @@
 {
- "ad": "9-matematik-3",
- "sinif": 9,
- "ders": "matematik",
- "ders_adi": "Matematik",
- "hafta": 3,
- "tarih": "28 Eylül - 2 Ekim 2026",
- "yayin_tarihi": "2026-10-17",
- "unite": "SAYILAR",
- "konu": "Gerçek Sayıların Üslü ve Köklü Gösterimleri ile Gerçek Sayı Aralıkları",
- "ciktilar": [
-  "9.1.1. Gerçek sayıların üslü ve köklü gösterimleriyle yapılan işlemlere dair muhakeme yapabilme",
-  "9.1.2. Gerçek sayı aralıklarının gösteriminde ve aralıklarla ilgili işlemlerde küme sembol ve işlemlerinden yararlanabilme"
- ],
- "giris": "Gerçek sayıların üslü ve köklü gösterimleri yalnızca işlem yapmaya değil, bilimsel ve matematiksel önermelerin doğruluğunu muhakeme etmeye de olanak tanır. Bu haftanın ilk bölümünde üslü ve köklü ifadelerle ilgili önermeleri cebirsel kanıt ve aksine örnek yöntemleriyle doğrulamayı ve paydada yer alan köklü ifadeleri eşlenik çarpımıyla rasyonelleştirmeyi tamamlıyoruz. İkinci bölümde ise sayı kümeleri arasındaki kapsama ilişkilerini küme sembolleriyle ifade ediyor, gerçek sayı doğrusu üzerindeki sınırlı ve sınırsız aralıkları tanımlıyor ve aralıklarla birleşim, kesişim, fark ile tümleyen işlemlerini inceliyoruz.",
- "ozet": [
-  "1. Üslü ve Köklü Gösterimlerle İlgili Muhakeme ve Eşlenik İşlemleri: Gerçek sayıların üslü ve köklü gösterimleri arasında rasyonel üs bağıntısı köprü kurar: a > 0, m bir tam sayı ve n ≥ 2 bir doğal sayı olmak üzere {koyu:{us:a|2/3} = {kok:{us:a|2}|3}} eşitliği geçerlidir.",
-  "2. Sayı Kümeleri ve Küme Sembolleri: Gerçek sayılar ve alt kümeleri arasındaki ilişkileri göstermek için küme dili ve sembolleri kullanılır.",
-  "3. Sınırlı Gerçek Sayı Aralıkları: Açık, Kapalı ve Yarı Açık Aralıklar: İki gerçek sayı arasındaki tüm gerçek sayıları tek tek liste yöntemiyle yazmak imkânsızdır; çünkü iki gerçek sayı arasında sonsuz tane gerçek sayı bulunur.",
-  "4. Sınırsız Gerçek Sayı Aralıkları: Bir gerçek sayıdan büyük olan tüm gerçek sayıların veya bir gerçek sayıdan küçük olan tüm gerçek sayıların oluşturduğu kümeler bir yönden sınırlı, diğer yönden ise sonsuza uzanan sınırsız aralıklardır.",
-  "5. Gerçek Sayı Aralıklarıyla Küme İşlemleri: Birleşim, Kesişim ve Fark: Gerçek sayı aralıkları gerçek sayılar kümesinin birer alt kümesi olduğundan, aralıklar üzerinde birleşim (∪), kesişim (∩) ve fark (\\) işlemleri doğrudan uygulanabilir.",
-  "6. Bir Aralığın Tümleyeni ve Gerçek Yaşam Modellemesi: Gerçek sayılar kümesi R = (-∞, ∞) evrensel küme kabul edildiğinde, bir A aralığında bulunmayan tüm gerçek sayıların oluşturduğu kümeye A aralığının tümleyeni denir ve A' = R \\ A ile gösterilir."
- ],
- "bolumler": [
-  {
-   "baslik": "1. Üslü ve Köklü Gösterimlerle İlgili Muhakeme ve Eşlenik İşlemleri",
-   "metin": "Gerçek sayıların üslü ve köklü gösterimleri arasında {koyu:rasyonel üs bağıntısı} köprü kurar: {koyu:a > 0}, {koyu:m} bir tam sayı ve {koyu:n ≥ 2} bir doğal sayı olmak üzere {koyu:{us:a|2/3} = {kok:{us:a|2}|3}} eşitliği geçerlidir. Köklü ifadelerde kök derecesi olan {koyu:n} sayısının tek veya çift olması kritik önem taşır: {koyu:n tek} ise {kok:{us:a|3}|3} = a olurken, {koyu:n çift} ise sonuç negatif olamayacağından {koyu:{kok:{us:a|2}} = |a|} (mutlak değer a) olur. Paydasında köklü ifade bulunan kesirlerde paydayı rasyonel sayıya dönüştürmek için {koyu:eşlenik çarpımı} kullanılır; iki kare farkı özdeşliği gereğince {koyu:({kok:a} - {kok:b}) · ({kok:a} + {kok:b}) = a - b} çarpımı kökleri ortadan kaldırır. Matematiksel bir önermenin doğruluğunu sorgularken önerme her gerçek sayı için geçerliyse {koyu:cebirsel kanıt} yapılır; en az bir sayı değeri için bile sağlamıyorsa {koyu:aksine örnek} verilerek önermenin yanlış olduğu ispatlanır.",
-   "ornekler": [
+  "ad": "9-matematik-3",
+  "sinif": 9,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 3,
+  "tarih": "28 Eylül - 2 Ekim 2026",
+  "yayin_tarihi": "2026-10-17",
+  "unite": "SAYILAR",
+  "konu": "Gerçek Sayıların Üslü ve Köklü Gösterimleri ile Gerçek Sayı Aralıkları",
+  "ciktilar": [
+    "9.1.1. Gerçek sayıların üslü ve köklü gösterimleriyle yapılan işlemlere dair muhakeme yapabilme",
+    "9.1.2. Gerçek sayı aralıklarının gösteriminde ve aralıklarla ilgili işlemlerde küme sembol ve işlemlerinden yararlanabilme"
+  ],
+  "giris": "Gerçek sayıların üslü ve köklü gösterimleri yalnızca işlem yapmaya değil, bilimsel ve matematiksel önermelerin doğruluğunu muhakeme etmeye de olanak tanır. Bu haftanın ilk bölümünde üslü ve köklü ifadelerle ilgili önermeleri cebirsel kanıt ve aksine örnek yöntemleriyle doğrulamayı ve paydada yer alan köklü ifadeleri eşlenik çarpımıyla rasyonelleştirmeyi tamamlıyoruz. İkinci bölümde ise sayı kümeleri arasındaki kapsama ilişkilerini küme sembolleriyle ifade ediyor, gerçek sayı doğrusu üzerindeki sınırlı ve sınırsız aralıkları tanımlıyor ve aralıklarla birleşim, kesişim, fark ile tümleyen işlemlerini inceliyoruz.",
+  "ozet": [
+    "1. Üslü ve Köklü Gösterimlerle İlgili Muhakeme ve Eşlenik İşlemleri: Gerçek sayıların üslü ve köklü gösterimleri arasında rasyonel üs bağıntısı köprü kurar: a > 0, m bir tam sayı ve n ≥ 2 bir doğal sayı olmak üzere {koyu:{us:a|2/3} = {kok:{us:a|2}|3}} eşitliği geçerlidir.",
+    "2. Sayı Kümeleri ve Küme Sembolleri: Gerçek sayılar ve alt kümeleri arasındaki ilişkileri göstermek için küme dili ve sembolleri kullanılır.",
+    "3. Sınırlı Gerçek Sayı Aralıkları: Açık, Kapalı ve Yarı Açık Aralıklar: İki gerçek sayı arasındaki tüm gerçek sayıları tek tek liste yöntemiyle yazmak imkânsızdır; çünkü iki gerçek sayı arasında sonsuz tane gerçek sayı bulunur.",
+    "4. Sınırsız Gerçek Sayı Aralıkları: Bir gerçek sayıdan büyük olan tüm gerçek sayıların veya bir gerçek sayıdan küçük olan tüm gerçek sayıların oluşturduğu kümeler bir yönden sınırlı, diğer yönden ise sonsuza uzanan sınırsız aralıklardır.",
+    "5. Gerçek Sayı Aralıklarıyla Küme İşlemleri: Birleşim, Kesişim ve Fark: Gerçek sayı aralıkları gerçek sayılar kümesinin birer alt kümesi olduğundan, aralıklar üzerinde birleşim (∪), kesişim (∩) ve fark (\\) işlemleri doğrudan uygulanabilir.",
+    "6. Bir Aralığın Tümleyeni ve Gerçek Yaşam Modellemesi: Gerçek sayılar kümesi R = (-∞, ∞) evrensel küme kabul edildiğinde, bir A aralığında bulunmayan tüm gerçek sayıların oluşturduğu kümeye A aralığının tümleyeni denir ve A' = R \\ A ile gösterilir."
+  ],
+  "bolumler": [
     {
-     "baslik": "Eşlenik ile Teleskopik Toplam",
-     "aciklama": "{kesir:1|{kok:2}+1} + {kesir:1|{kok:3}+{kok:2}} + {kesir:1|2+{kok:3}} işleminde her kesir kendi paydasının eşleniği ile genişletilirse paydalar 2-1=1, 3-2=1 ve 4-3=1 olur. İfade ({kok:2}-1) + ({kok:3}-{kok:2}) + (2-{kok:3}) şekline dönüşür; ara terimler birbirini götürür ve sonuç 2 - 1 = 1 bulunur."
+      "baslik": "1. Üslü ve Köklü Gösterimlerle İlgili Muhakeme ve Eşlenik İşlemleri",
+      "metin": "Gerçek sayıların üslü ve köklü gösterimleri arasında {koyu:rasyonel üs bağıntısı} köprü kurar: {koyu:a > 0}, {koyu:m} bir tam sayı ve {koyu:n ≥ 2} bir doğal sayı olmak üzere {koyu:{us:a|2/3} = {kok:{us:a|2}|3}} eşitliği geçerlidir. Köklü ifadelerde kök derecesi olan {koyu:n} sayısının tek veya çift olması kritik önem taşır: {koyu:n tek} ise {kok:{us:a|3}|3} = a olurken, {koyu:n çift} ise sonuç negatif olamayacağından {koyu:{kok:{us:a|2}} = |a|} (mutlak değer a) olur. Paydasında köklü ifade bulunan kesirlerde paydayı rasyonel sayıya dönüştürmek için {koyu:eşlenik çarpımı} kullanılır; iki kare farkı özdeşliği gereğince {koyu:({kok:a} - {kok:b}) · ({kok:a} + {kok:b}) = a - b} çarpımı kökleri ortadan kaldırır. Matematiksel bir önermenin doğruluğunu sorgularken önerme her gerçek sayı için geçerliyse {koyu:cebirsel kanıt} yapılır; en az bir sayı değeri için bile sağlamıyorsa {koyu:aksine örnek} verilerek önermenin yanlış olduğu ispatlanır.",
+      "ornekler": [
+        {
+          "baslik": "Eşlenik ile Teleskopik Toplam",
+          "aciklama": "{kesir:1|{kok:2}+1} + {kesir:1|{kok:3}+{kok:2}} + {kesir:1|2+{kok:3}} işleminde her kesir kendi paydasının eşleniği ile genişletilirse paydalar 2-1=1, 3-2=1 ve 4-3=1 olur. İfade ({kok:2}-1) + ({kok:3}-{kok:2}) + (2-{kok:3}) şekline dönüşür; ara terimler birbirini götürür ve sonuç 2 - 1 = 1 bulunur."
+        },
+        {
+          "baslik": "Aksine Örnek ile Önerme Çürütme",
+          "aciklama": "\"Her a, b pozitif gerçek sayısı için {kok:a + b} = {kok:a} + {kok:b} olur.\" önermesini inceleyelim. a = 9 ve b = 16 seçilirse sol taraf {kok:9 + 16} = {kok:25} = 5 iken sağ taraf {kok:9} + {kok:16} = 3 + 4 = 7 olur. 5 ≠ 7 olduğundan bu tek aksine örnek önermenin yanlış olduğunu kanıtlar."
+        }
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Çift Dereceli Kökte Mutlak Değer Tuzağı",
+        "metin": "x < 0 negatif bir gerçek sayı iken {kok:{us:x|2}} ifadesi x'e değil, |x| = -x'e eşittir! Örneğin x = -4 için {kok:{us:(-4)|2}} = {kok:16} = 4 = -(-4) olur."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\">\n  <defs>\n    <linearGradient id=\"bg9m3_1\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n      <stop offset=\"0%\" stop-color=\"#eff6ff\"/>\n      <stop offset=\"100%\" stop-color=\"#eef2ff\"/>\n    </linearGradient>\n  </defs>\n  <rect width=\"680\" height=\"280\" rx=\"16\" fill=\"url(#bg9m3_1)\" stroke=\"#bfdbfe\" stroke-width=\"2\"/>\n  <text x=\"340\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" fill=\"#1e3a8a\">ÜSLÜ VE KÖKLÜ İFADELERDE MUHAKEME VE EŞLENİK İŞLEMLERİ</text>\n\n  <!-- Left Card: Rasyonel Kuvvet - Kök İlişkisi -->\n  <rect x=\"20\" y=\"48\" width=\"200\" height=\"212\" rx=\"12\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/>\n  <rect x=\"20\" y=\"48\" width=\"200\" height=\"34\" rx=\"12\" fill=\"#2563eb\"/>\n  <text x=\"120\" y=\"70\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">1. RASYONEL ÜS ↔ KÖK</text>\n  <rect x=\"36\" y=\"96\" width=\"168\" height=\"54\" rx=\"8\" fill=\"#dbeafe\" stroke=\"#60a5fa\"/>\n  <text x=\"120\" y=\"128\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"800\" fill=\"#1e40af\">a^(m/n)  ↔  Kök Gösterimi</text>\n  <text x=\"120\" y=\"170\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\">Mutlak Değer Kuralı:</text>\n  <text x=\"120\" y=\"192\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#dc2626\" font-weight=\"700\">n çift ⇒ (aⁿ)^(1/n) = |a|</text>\n  <text x=\"120\" y=\"212\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#059669\" font-weight=\"700\">n tek  ⇒ (aⁿ)^(1/n) = a</text>\n  <text x=\"120\" y=\"242\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#475569\">Örn: ((-5)²)^(1/2) = |-5| = 5</text>\n\n  <!-- Middle Card: Paydayı Rasyonel Yapma (Eşlenik) -->\n  <rect x=\"240\" y=\"48\" width=\"200\" height=\"212\" rx=\"12\" fill=\"#ffffff\" stroke=\"#8b5cf6\" stroke-width=\"2\"/>\n  <rect x=\"240\" y=\"48\" width=\"200\" height=\"34\" rx=\"12\" fill=\"#7c3aed\"/>\n  <text x=\"340\" y=\"70\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">2. EŞLENİK ÇARPIMI</text>\n  <rect x=\"256\" y=\"96\" width=\"168\" height=\"46\" rx=\"8\" fill=\"#f3e8ff\" stroke=\"#c084fc\"/>\n  <text x=\"340\" y=\"116\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#5b21b6\">(a^(1/2) - b^(1/2))·(a^(1/2) + b^(1/2))</text>\n  <text x=\"340\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" fill=\"#6d28d9\">= a - b  (∈ Q)</text>\n  <text x=\"340\" y=\"164\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\">Teleskopik Toplam Örneği:</text>\n  <text x=\"340\" y=\"186\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">Paydayı eşlenikle çarpma:</text>\n  <text x=\"340\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7c3aed\" font-weight=\"700\">Payda: (a - b) ∈ Q olur!</text>\n  <text x=\"340\" y=\"238\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#059669\" font-weight=\"700\">Ara terimler birbirini götürür!</text>\n\n  <!-- Right Card: Önermeleri Doğrulama / Çürütme -->\n  <rect x=\"460\" y=\"48\" width=\"200\" height=\"212\" rx=\"12\" fill=\"#ffffff\" stroke=\"#10b981\" stroke-width=\"2\"/>\n  <rect x=\"460\" y=\"48\" width=\"200\" height=\"34\" rx=\"12\" fill=\"#059669\"/>\n  <text x=\"560\" y=\"70\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">3. MATEMATİKSEL MUHAKEME</text>\n  <rect x=\"474\" y=\"96\" width=\"172\" height=\"68\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#6ee7b7\"/>\n  <text x=\"560\" y=\"115\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#065f46\">Doğru Önerme ⇒ Cebirsel Kanıt</text>\n  <text x=\"560\" y=\"133\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#047857\">Kurallar ve özdeşliklerle</text>\n  <text x=\"560\" y=\"149\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#047857\">her gerçek sayı için ispatlanır.</text>\n  <rect x=\"474\" y=\"176\" width=\"172\" height=\"68\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#fca5a5\"/>\n  <text x=\"560\" y=\"195\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#991b1b\">Yanlış Önerme ⇒ Aksine Örnek</text>\n  <text x=\"560\" y=\"213\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#b91c1c\">(a+b)^(1/2) = a^(1/2)+b^(1/2) yanlış!</text>\n  <text x=\"560\" y=\"231\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#b91c1c\">Çünkü (9+16)^(1/2)=5 ≠ 3+4=7</text>\n</svg>"
     },
     {
-     "baslik": "Aksine Örnek ile Önerme Çürütme",
-     "aciklama": "\"Her a, b pozitif gerçek sayısı için {kok:a + b} = {kok:a} + {kok:b} olur.\" önermesini inceleyelim. a = 9 ve b = 16 seçilirse sol taraf {kok:9 + 16} = {kok:25} = 5 iken sağ taraf {kok:9} + {kok:16} = 3 + 4 = 7 olur. 5 ≠ 7 olduğundan bu tek aksine örnek önermenin yanlış olduğunu kanıtlar."
-    }
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "Çift Dereceli Kökte Mutlak Değer Tuzağı",
-    "metin": "x < 0 negatif bir gerçek sayı iken {kok:{us:x|2}} ifadesi x'e değil, |x| = -x'e eşittir! Örneğin x = -4 için {kok:{us:(-4)|2}} = {kok:16} = 4 = -(-4) olur."
-   },
-   "gorsel": "<svg viewBox=\"0 0 680 280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\">\n  <defs>\n    <linearGradient id=\"bg9m3_1\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n      <stop offset=\"0%\" stop-color=\"#eff6ff\"/>\n      <stop offset=\"100%\" stop-color=\"#eef2ff\"/>\n    </linearGradient>\n  </defs>\n  <rect width=\"680\" height=\"280\" rx=\"16\" fill=\"url(#bg9m3_1)\" stroke=\"#bfdbfe\" stroke-width=\"2\"/>\n  <text x=\"340\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" fill=\"#1e3a8a\">ÜSLÜ VE KÖKLÜ İFADELERDE MUHAKEME VE EŞLENİK İŞLEMLERİ</text>\n\n  <!-- Left Card: Rasyonel Kuvvet - Kök İlişkisi -->\n  <rect x=\"20\" y=\"48\" width=\"200\" height=\"212\" rx=\"12\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/>\n  <rect x=\"20\" y=\"48\" width=\"200\" height=\"34\" rx=\"12\" fill=\"#2563eb\"/>\n  <text x=\"120\" y=\"70\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">1. RASYONEL ÜS ↔ KÖK</text>\n  <rect x=\"36\" y=\"96\" width=\"168\" height=\"54\" rx=\"8\" fill=\"#dbeafe\" stroke=\"#60a5fa\"/>\n  <text x=\"120\" y=\"128\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"800\" fill=\"#1e40af\">a^(m/n)  ↔  Kök Gösterimi</text>\n  <text x=\"120\" y=\"170\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\">Mutlak Değer Kuralı:</text>\n  <text x=\"120\" y=\"192\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#dc2626\" font-weight=\"700\">n çift ⇒ (aⁿ)^(1/n) = |a|</text>\n  <text x=\"120\" y=\"212\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#059669\" font-weight=\"700\">n tek  ⇒ (aⁿ)^(1/n) = a</text>\n  <text x=\"120\" y=\"242\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#475569\">Örn: ((-5)²)^(1/2) = |-5| = 5</text>\n\n  <!-- Middle Card: Paydayı Rasyonel Yapma (Eşlenik) -->\n  <rect x=\"240\" y=\"48\" width=\"200\" height=\"212\" rx=\"12\" fill=\"#ffffff\" stroke=\"#8b5cf6\" stroke-width=\"2\"/>\n  <rect x=\"240\" y=\"48\" width=\"200\" height=\"34\" rx=\"12\" fill=\"#7c3aed\"/>\n  <text x=\"340\" y=\"70\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">2. EŞLENİK ÇARPIMI</text>\n  <rect x=\"256\" y=\"96\" width=\"168\" height=\"46\" rx=\"8\" fill=\"#f3e8ff\" stroke=\"#c084fc\"/>\n  <text x=\"340\" y=\"116\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#5b21b6\">(a^(1/2) - b^(1/2))·(a^(1/2) + b^(1/2))</text>\n  <text x=\"340\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" fill=\"#6d28d9\">= a - b  (∈ Q)</text>\n  <text x=\"340\" y=\"164\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\">Teleskopik Toplam Örneği:</text>\n  <text x=\"340\" y=\"186\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">Paydayı eşlenikle çarpma:</text>\n  <text x=\"340\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7c3aed\" font-weight=\"700\">Payda: (a - b) ∈ Q olur!</text>\n  <text x=\"340\" y=\"238\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#059669\" font-weight=\"700\">Ara terimler birbirini götürür!</text>\n\n  <!-- Right Card: Önermeleri Doğrulama / Çürütme -->\n  <rect x=\"460\" y=\"48\" width=\"200\" height=\"212\" rx=\"12\" fill=\"#ffffff\" stroke=\"#10b981\" stroke-width=\"2\"/>\n  <rect x=\"460\" y=\"48\" width=\"200\" height=\"34\" rx=\"12\" fill=\"#059669\"/>\n  <text x=\"560\" y=\"70\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">3. MATEMATİKSEL MUHAKEME</text>\n  <rect x=\"474\" y=\"96\" width=\"172\" height=\"68\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#6ee7b7\"/>\n  <text x=\"560\" y=\"115\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#065f46\">Doğru Önerme ⇒ Cebirsel Kanıt</text>\n  <text x=\"560\" y=\"133\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#047857\">Kurallar ve özdeşliklerle</text>\n  <text x=\"560\" y=\"149\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#047857\">her gerçek sayı için ispatlanır.</text>\n  <rect x=\"474\" y=\"176\" width=\"172\" height=\"68\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#fca5a5\"/>\n  <text x=\"560\" y=\"195\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#991b1b\">Yanlış Önerme ⇒ Aksine Örnek</text>\n  <text x=\"560\" y=\"213\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#b91c1c\">(a+b)^(1/2) = a^(1/2)+b^(1/2) yanlış!</text>\n  <text x=\"560\" y=\"231\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#b91c1c\">Çünkü (9+16)^(1/2)=5 ≠ 3+4=7</text>\n</svg>"
-  },
-  {
-   "baslik": "2. Sayı Kümeleri ve Küme Sembolleri",
-   "metin": "Gerçek sayılar ve alt kümeleri arasındaki ilişkileri göstermek için {koyu:küme dili ve sembolleri} kullanılır. Sayı kümeleri en dar kümeden en geniş kümeye doğru birbirinin alt kümesi olacak biçimde sıralanır: {koyu:Doğal sayılar kümesi} (N = {0, 1, 2, 3, ...}), {koyu:tam sayılar kümesi} (Z = {..., -2, -1, 0, 1, 2, ...}), a ve b tam sayı ve b ≠ 0 olmak üzere {kesir:a|b} biçiminde yazılabilen {koyu:rasyonel sayılar kümesi (Q)} ve virgülden sonraki basamakları düzensiz olarak sonsuza kadar devam eden {koyu:irrasyonel sayılar kümesi (Q')} ({kok:2}, {kok:5}, π, e gibi). Rasyonel ve irrasyonel sayıların birleşimi {koyu:gerçek (reel) sayılar kümesini (R = Q ∪ Q')} oluşturur ve bu iki küme ayrık olduğundan kesişimleri boş kümedir ({koyu:Q ∩ Q' = ∅}). Bir elemanın kümeye ait olması {koyu:∈} (elemanıdır), ait olmaması {koyu:∉} (elemanı değildir) ve bir kümenin başka bir kümenin içinde yer alması {koyu:⊂} (alt kümesidir) sembolüyle gösterilir.",
-   "tablo": {
-    "basliklar": [
-     "Sembol / Gösterim",
-     "Okunuşu ve Anlamı",
-     "Matematiksel Örnek"
-    ],
-    "satirlar": [
-     [
-      "∈ ve ∉",
-      "Elemanıdır / Elemanı değildir",
-      "-5 ∈ Z, ancak -5 ∉ N; {kok:3} ∈ Q', ancak {kok:3} ∉ Q"
-     ],
-     [
-      "⊂ ve ⊆",
-      "Alt kümesidir / Kapsanır",
-      "N ⊂ Z ⊂ Q ⊂ R ve Q' ⊂ R"
-     ],
-     [
-      "∪ (Birleşim)",
-      "İki kümenin tüm elemanlarının oluşturduğu küme",
-      "Q ∪ Q' = R (Gerçek sayılar kümesi)"
-     ],
-     [
-      "∩ (Kesişim)",
-      "İki kümenin ortak elemanlarının oluşturduğu küme",
-      "Q ∩ Q' = ∅ ve Z ∩ N = N"
-     ],
-     [
-      "\\ veya - (Fark)",
-      "Birinci kümede olup ikinci kümede olmayan elemanlar",
-      "R \\ Q = Q' ve N \\ {0} = {us:Z|+}"
-     ],
-     [
-      "A' (Tümleyen)",
-      "Evrensel kümede (R) olup A kümesinde olmayanlar",
-      "Q' = R \\ Q (Rasyonel olmayan gerçek sayılar)"
-     ]
-    ]
-   },
-   "kutu": {
-    "tur": "bilgi",
-    "baslik": "Gerçek Sayı Doğrusunun Sürekliliği",
-    "metin": "Tam sayılar veya doğal sayılar sayı doğrusunda aralıklı noktalar hâlinde dizilirken, gerçek sayılar (R) sayı doğrusundaki boşlukların tamamını kesintisiz biçimde doldurur; sayı doğrusundaki her noktaya tam olarak bir gerçek sayı karşılık gelir."
-   },
-   "gorsel": "<svg viewBox=\"0 0 680 280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\">\n  <rect width=\"680\" height=\"280\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <text x=\"340\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">SAYI KÜMELERİ HİYERARŞİSİ VE KÜME SEMBOLLERİ</text>\n\n  <!-- Nested Venn Diagram on Left -->\n  <rect x=\"24\" y=\"48\" width=\"330\" height=\"212\" rx=\"14\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"189\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" fill=\"#1e3a8a\">R (Gerçek Sayılar) = Q ∪ Q'</text>\n\n  <!-- Q Circle/Box -->\n  <rect x=\"38\" y=\"80\" width=\"205\" height=\"166\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"2\"/>\n  <text x=\"140\" y=\"98\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1d4ed8\">Q (Rasyonel: a/b, 0,75, -3/4)</text>\n\n  <!-- Z Box -->\n  <rect x=\"52\" y=\"108\" width=\"176\" height=\"126\" rx=\"10\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.8\"/>\n  <text x=\"140\" y=\"126\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#4338ca\">Z (Tam Sayılar: ..., -2, -1, 0, 1...)</text>\n\n  <!-- N Box -->\n  <rect x=\"68\" y=\"138\" width=\"144\" height=\"84\" rx=\"8\" fill=\"#fae8ff\" stroke=\"#a855f7\" stroke-width=\"1.8\"/>\n  <text x=\"140\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#7e22ce\">N (Doğal: 0, 1, 2, 3...)</text>\n\n  <!-- N+ Box -->\n  <rect x=\"84\" y=\"166\" width=\"112\" height=\"44\" rx=\"6\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.5\"/>\n  <text x=\"140\" y=\"186\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" fill=\"#92400e\">N⁺ = Z⁺ (Sayma)</text>\n  <text x=\"140\" y=\"201\" text-anchor=\"middle\" font-size=\"10\" fill=\"#b45309\">{1, 2, 3, ...}</text>\n\n  <!-- Q' Box -->\n  <rect x=\"253\" y=\"80\" width=\"88\" height=\"166\" rx=\"12\" fill=\"#ffe4e6\" stroke=\"#f43f5e\" stroke-width=\"2\"/>\n  <text x=\"297\" y=\"105\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#be123c\">Q'</text>\n  <text x=\"297\" y=\"123\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" fill=\"#e11d48\">(İrrasyonel)</text>\n  <text x=\"297\" y=\"148\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">2^(1/2), 3^(1/2), 5^(1/2)</text>\n  <text x=\"297\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">-7^(1/2), 4^(1/3)</text>\n  <text x=\"297\" y=\"192\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">π ≈ 3,1415...</text>\n  <text x=\"297\" y=\"214\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">e ≈ 2,7182...</text>\n  <text x=\"297\" y=\"236\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"700\" fill=\"#be123c\">Q ∩ Q' = ∅</text>\n\n  <!-- Right Side: Symbols Reference Table -->\n  <rect x=\"372\" y=\"48\" width=\"284\" height=\"212\" rx=\"14\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"2\"/>\n  <rect x=\"372\" y=\"48\" width=\"284\" height=\"32\" rx=\"14\" fill=\"#1e293b\"/>\n  <text x=\"514\" y=\"69\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">TEMEL KÜME SEMBOLLERİ</text>\n\n  <text x=\"388\" y=\"102\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">∈ / ∉</text>\n  <text x=\"444\" y=\"102\" font-size=\"11.5\" fill=\"#334155\">Elemanıdır / Elemanı değildir</text>\n\n  <text x=\"388\" y=\"128\" font-size=\"13\" font-weight=\"800\" fill=\"#7c3aed\">⊂ / ⊆</text>\n  <text x=\"444\" y=\"128\" font-size=\"11.5\" fill=\"#334155\">Alt kümesidir (N ⊂ Z ⊂ Q ⊂ R)</text>\n\n  <text x=\"388\" y=\"154\" font-size=\"13\" font-weight=\"800\" fill=\"#059669\">∪</text>\n  <text x=\"444\" y=\"154\" font-size=\"11.5\" fill=\"#334155\">Birleşim (en az birinde olanlar)</text>\n\n  <text x=\"388\" y=\"180\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\">∩</text>\n  <text x=\"444\" y=\"180\" font-size=\"11.5\" fill=\"#334155\">Kesişim (her ikisinde ortak olanlar)</text>\n\n  <text x=\"388\" y=\"206\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\">\\ veya -</text>\n  <text x=\"444\" y=\"206\" font-size=\"11.5\" fill=\"#334155\">Fark (A\\B: A'da olup B'de olmayan)</text>\n\n  <text x=\"388\" y=\"232\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">A'</text>\n  <text x=\"444\" y=\"232\" font-size=\"11.5\" fill=\"#334155\">Tümleyen (R \\ A: A dışındaki gerçek s.)</text>\n\n  <text x=\"388\" y=\"252\" font-size=\"13\" font-weight=\"800\" fill=\"#64748b\">∅</text>\n  <text x=\"444\" y=\"252\" font-size=\"11.5\" fill=\"#334155\">Boş küme (hiç elemanı olmayan küme)</text>\n</svg>"
-  },
-  {
-   "baslik": "3. Sınırlı Gerçek Sayı Aralıkları: Açık, Kapalı ve Yarı Açık Aralıklar",
-   "metin": "İki gerçek sayı arasındaki tüm gerçek sayıları tek tek liste yöntemiyle yazmak imkânsızdır; çünkü iki gerçek sayı arasında sonsuz tane gerçek sayı bulunur. Bu nedenle gerçek sayı doğrusu üzerindeki kesintisiz sayı kümelerini ifade etmek için {koyu:aralık gösterimi} kullanılır. Alt sınırı {koyu:a} ve üst sınırı {koyu:b} ({koyu:a < b}) olan aralıklar {koyu:sınırlı aralıklar} olarak adlandırılır. Sınır noktasının kümeye dâhil olup olmamasına göre dört tür sınırlı aralık vardır: Sınır noktaları kümeye dâhil değilse {koyu:açık parantez ( )} kullanılır ve sayı doğrusunda uç nokta {koyu:içi boş daire (○)} ile gösterilir. Sınır noktaları kümeye dâhil ise {koyu:köşeli parantez [ ]} kullanılır ve sayı doğrusunda uç nokta {koyu:içi dolu daire (●)} ile gösterilir.",
-   "tablo": {
-    "basliklar": [
-     "Aralık Türü",
-     "Gösterim",
-     "Ortak Özellik Yöntemi",
-     "Uç Noktaların Durumu"
-    ],
-    "satirlar": [
-     [
-      "Açık Aralık",
-      "(a, b)",
-      "{x | a < x < b, x ∈ R}",
-      "a ∉ (a, b) ve b ∉ (a, b) — her iki uç açık (○ — ○)"
-     ],
-     [
-      "Kapalı Aralık",
-      "[a, b]",
-      "{x | a ≤ x ≤ b, x ∈ R}",
-      "a ∈ [a, b] ve b ∈ [a, b] — her iki uç kapalı (● — ●)"
-     ],
-     [
-      "Yarı Açık Aralık",
-      "[a, b)",
-      "{x | a ≤ x < b, x ∈ R}",
-      "a ∈ [a, b) ancak b ∉ [a, b) — sol kapalı, sağ açık (● — ○)"
-     ],
-     [
-      "Yarı Açık Aralık",
-      "(a, b]",
-      "{x | a < x ≤ b, x ∈ R}",
-      "a ∉ (a, b] ancak b ∈ (a, b] — sol açık, sağ kapalı (○ — ●)"
-     ]
-    ]
-   },
-   "ornekler": [
-    {
-     "baslik": "Aralıktaki Tam Sayıların Sayısı",
-     "aciklama": "A = (-3, 4] yarı açık aralığı {x | -3 < x ≤ 4, x ∈ R} kümesini belirtir. Bu aralıktaki gerçek sayıların sayısı sonsuzdur; ancak aralıktaki tam sayılar A ∩ Z = {-2, -1, 0, 1, 2, 3, 4} olup toplam 7 tanedir (-3 açık uç olduğu için alınmaz, 4 kapalı uç olduğu için alınır)."
-    }
-   ],
-   "kutu": {
-    "tur": "tanim",
-    "baslik": "Aralık Kavramı",
-    "metin": "Gerçek sayı doğrusu üzerinde birbirinden farklı iki nokta arasındaki (uç noktaların dâhil olduğu veya olmadığı) tüm gerçek sayıların oluşturduğu alt kümeye gerçek sayı aralığı denir."
-   },
-   "gorsel": "<svg viewBox=\"0 0 680 300\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\">\n  <rect width=\"680\" height=\"300\" rx=\"16\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <text x=\"340\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\">SINIRLI GERÇEK SAYI ARALIKLARI (AÇIK, KAPALI VE YARI AÇIK)</text>\n\n  <!-- Row 1: Açık Aralık (a, b) -->\n  <rect x=\"20\" y=\"42\" width=\"640\" height=\"54\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#93c5fd\"/>\n  <text x=\"36\" y=\"65\" font-size=\"13\" font-weight=\"800\" fill=\"#1d4ed8\">1. Açık Aralık: (a, b)</text>\n  <text x=\"36\" y=\"84\" font-size=\"11.5\" fill=\"#334155\">{x | a &lt; x &lt; b, x ∈ R}  (a ve b DÂHİL DEĞİL)</text>\n  <line x1=\"350\" y1=\"69\" x2=\"620\" y2=\"69\" stroke=\"#94a3b8\" stroke-width=\"2.5\"/>\n  <line x1=\"415\" y1=\"69\" x2=\"555\" y2=\"69\" stroke=\"#2563eb\" stroke-width=\"5\"/>\n  <circle cx=\"415\" cy=\"69\" r=\"6\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"3\"/>\n  <circle cx=\"555\" cy=\"69\" r=\"6\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"3\"/>\n  <text x=\"415\" y=\"90\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e40af\">a</text>\n  <text x=\"555\" y=\"90\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e40af\">b</text>\n\n  <!-- Row 2: Kapalı Aralık [a, b] -->\n  <rect x=\"20\" y=\"106\" width=\"640\" height=\"54\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#6ee7b7\"/>\n  <text x=\"36\" y=\"129\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\">2. Kapalı Aralık: [a, b]</text>\n  <text x=\"36\" y=\"148\" font-size=\"11.5\" fill=\"#334155\">{x | a ≤ x ≤ b, x ∈ R}  (a ve b DÂHİL)</text>\n  <line x1=\"350\" y1=\"133\" x2=\"620\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"2.5\"/>\n  <line x1=\"415\" y1=\"133\" x2=\"555\" y2=\"133\" stroke=\"#059669\" stroke-width=\"5\"/>\n  <circle cx=\"415\" cy=\"133\" r=\"6\" fill=\"#059669\" stroke=\"#059669\" stroke-width=\"3\"/>\n  <circle cx=\"555\" cy=\"133\" r=\"6\" fill=\"#059669\" stroke=\"#059669\" stroke-width=\"3\"/>\n  <text x=\"415\" y=\"154\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#065f46\">a</text>\n  <text x=\"555\" y=\"154\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#065f46\">b</text>\n\n  <!-- Row 3: Yarı Açık Aralık [a, b) -->\n  <rect x=\"20\" y=\"170\" width=\"640\" height=\"54\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#fcd34d\"/>\n  <text x=\"36\" y=\"193\" font-size=\"13\" font-weight=\"800\" fill=\"#b45309\">3. Yarı Açık Aralık: [a, b)</text>\n  <text x=\"36\" y=\"212\" font-size=\"11.5\" fill=\"#334155\">{x | a ≤ x &lt; b, x ∈ R}  (a dâhil, b hariç)</text>\n  <line x1=\"350\" y1=\"197\" x2=\"620\" y2=\"197\" stroke=\"#94a3b8\" stroke-width=\"2.5\"/>\n  <line x1=\"415\" y1=\"197\" x2=\"555\" y2=\"197\" stroke=\"#d97706\" stroke-width=\"5\"/>\n  <circle cx=\"415\" cy=\"197\" r=\"6\" fill=\"#d97706\" stroke=\"#d97706\" stroke-width=\"3\"/>\n  <circle cx=\"555\" cy=\"197\" r=\"6\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"3\"/>\n  <text x=\"415\" y=\"218\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#92400e\">a</text>\n  <text x=\"555\" y=\"218\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#92400e\">b</text>\n\n  <!-- Row 4: Yarı Açık Aralık (a, b] -->\n  <rect x=\"20\" y=\"234\" width=\"640\" height=\"54\" rx=\"10\" fill=\"#f3e8ff\" stroke=\"#d8b4fe\"/>\n  <text x=\"36\" y=\"257\" font-size=\"13\" font-weight=\"800\" fill=\"#6d28d9\">4. Yarı Açık Aralık: (a, b]</text>\n  <text x=\"36\" y=\"276\" font-size=\"11.5\" fill=\"#334155\">{x | a &lt; x ≤ b, x ∈ R}  (a hariç, b dâhil)</text>\n  <line x1=\"350\" y1=\"261\" x2=\"620\" y2=\"261\" stroke=\"#94a3b8\" stroke-width=\"2.5\"/>\n  <line x1=\"415\" y1=\"261\" x2=\"555\" y2=\"261\" stroke=\"#7c3aed\" stroke-width=\"5\"/>\n  <circle cx=\"415\" cy=\"261\" r=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"3\"/>\n  <circle cx=\"555\" cy=\"261\" r=\"6\" fill=\"#7c3aed\" stroke=\"#7c3aed\" stroke-width=\"3\"/>\n  <text x=\"415\" y=\"282\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#5b21b6\">a</text>\n  <text x=\"555\" y=\"282\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#5b21b6\">b</text>\n</svg>"
-  },
-  {
-   "baslik": "4. Sınırsız Gerçek Sayı Aralıkları",
-   "metin": "Bir gerçek sayıdan büyük olan tüm gerçek sayıların veya bir gerçek sayıdan küçük olan tüm gerçek sayıların oluşturduğu kümeler bir yönden sınırlı, diğer yönden ise sonsuza uzanan {koyu:sınırsız aralıklar}dır. Sayı doğrusunun sağ ucunda {koyu:artı sonsuz (+∞ veya ∞)}, sol ucunda ise {koyu:eksi sonsuz (-∞)} sembolü kullanılır. {koyu:Sonsuz (∞ ve -∞) bir gerçek sayı değildir}; yalnızca sayıların sınırsız biçimde büyüdüğünü veya küçüldüğünü gösteren bir semboldür. Bu nedenle aralık gösteriminde {koyu:-∞ ve ∞ sembollerinin bulunduğu taraf daima açık parantez ( ) ile yazılır}, hiçbir zaman köşeli parantez kullanılmaz. Tüm gerçek sayılar kümesi de her iki yönden sınırsız aralık olarak {koyu:R = (-∞, ∞)} biçiminde ifade edilir.",
-   "tablo": {
-    "basliklar": [
-     "Sınırsız Aralık",
-     "Ortak Özellik Gösterimi",
-     "Sözel Anlamı ve Sayı Doğrusu Yönü"
-    ],
-    "satirlar": [
-     [
-      "(a, ∞)",
-      "{x | x > a, x ∈ R}",
-      "a'dan büyük tüm gerçek sayılar (a noktasında içi boş daire, sağa doğru ok)"
-     ],
-     [
-      "[a, ∞)",
-      "{x | x ≥ a, x ∈ R}",
-      "a ve a'dan büyük tüm gerçek sayılar (a noktasında içi dolu daire, sağa doğru ok)"
-     ],
-     [
-      "(-∞, b)",
-      "{x | x < b, x ∈ R}",
-      "b'den küçük tüm gerçek sayılar (b noktasında içi boş daire, sola doğru ok)"
-     ],
-     [
-      "(-∞, b]",
-      "{x | x ≤ b, x ∈ R}",
-      "b ve b'den küçük tüm gerçek sayılar (b noktasında içi dolu daire, sola doğru ok)"
-     ],
-     [
-      "(-∞, ∞)",
-      "R (Tüm gerçek sayılar)",
-      "Gerçek sayı doğrusunun tamamı (her iki yöne sonsuza uzanan doğru)"
-     ]
-    ]
-   },
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Sonsuz Sembolünde Parantez Kuralı",
-    "metin": "-∞ ve +∞ birer gerçek sayı olmadığı için hiçbir kümeye eleman olarak dâhil edilemez. Dolayısıyla [-∞, 5] veya [3, ∞] gibi gösterimler matematiksel olarak yanlıştır; doğrusu (-∞, 5] ve [3, ∞) şeklindedir."
-   },
-   "gorsel": "<svg viewBox=\"0 0 680 300\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\">\n  <rect width=\"680\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <text x=\"340\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">SINIRSIZ GERÇEK SAYI ARALIKLARI (+∞ VE -∞ UZANIMLI)</text>\n\n  <!-- Row 1: (a, +∞) -->\n  <rect x=\"20\" y=\"42\" width=\"640\" height=\"54\" rx=\"10\" fill=\"#ffffff\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/>\n  <text x=\"36\" y=\"65\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">(a, ∞)  →  {x | x &gt; a, x ∈ R}</text>\n  <text x=\"36\" y=\"84\" font-size=\"11\" fill=\"#475569\">a'dan büyük tüm gerçek sayılar (a hariç)</text>\n  <line x1=\"340\" y1=\"69\" x2=\"625\" y2=\"69\" stroke=\"#cbd5e1\" stroke-width=\"2.5\"/>\n  <line x1=\"430\" y1=\"69\" x2=\"620\" y2=\"69\" stroke=\"#2563eb\" stroke-width=\"5\"/>\n  <polygon points=\"628,69 614,62 614,76\" fill=\"#2563eb\"/>\n  <circle cx=\"430\" cy=\"69\" r=\"6\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"3\"/>\n  <text x=\"430\" y=\"89\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e40af\">a</text>\n  <text x=\"642\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#2563eb\">+∞</text>\n\n  <!-- Row 2: [a, +∞) -->\n  <rect x=\"20\" y=\"106\" width=\"640\" height=\"54\" rx=\"10\" fill=\"#ffffff\" stroke=\"#6ee7b7\" stroke-width=\"1.5\"/>\n  <text x=\"36\" y=\"129\" font-size=\"13\" font-weight=\"800\" fill=\"#059669\">[a, ∞)  →  {x | x ≥ a, x ∈ R}</text>\n  <text x=\"36\" y=\"148\" font-size=\"11\" fill=\"#475569\">a ve a'dan büyük tüm gerçek sayılar (a dâhil)</text>\n  <line x1=\"340\" y1=\"133\" x2=\"625\" y2=\"133\" stroke=\"#cbd5e1\" stroke-width=\"2.5\"/>\n  <line x1=\"430\" y1=\"133\" x2=\"620\" y2=\"133\" stroke=\"#059669\" stroke-width=\"5\"/>\n  <polygon points=\"628,133 614,126 614,140\" fill=\"#059669\"/>\n  <circle cx=\"430\" cy=\"133\" r=\"6\" fill=\"#059669\" stroke=\"#059669\" stroke-width=\"3\"/>\n  <text x=\"430\" y=\"153\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#065f46\">a</text>\n  <text x=\"642\" y=\"137\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#059669\">+∞</text>\n\n  <!-- Row 3: (-∞, b) -->\n  <rect x=\"20\" y=\"170\" width=\"640\" height=\"54\" rx=\"10\" fill=\"#ffffff\" stroke=\"#fca5a5\" stroke-width=\"1.5\"/>\n  <text x=\"36\" y=\"193\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\">(-∞, b)  →  {x | x &lt; b, x ∈ R}</text>\n  <text x=\"36\" y=\"212\" font-size=\"11\" fill=\"#475569\">b'den küçük tüm gerçek sayılar (b hariç)</text>\n  <line x1=\"355\" y1=\"197\" x2=\"635\" y2=\"197\" stroke=\"#cbd5e1\" stroke-width=\"2.5\"/>\n  <line x1=\"360\" y1=\"197\" x2=\"540\" y2=\"197\" stroke=\"#dc2626\" stroke-width=\"5\"/>\n  <polygon points=\"352,197 366,190 366,204\" fill=\"#dc2626\"/>\n  <circle cx=\"540\" cy=\"197\" r=\"6\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"3\"/>\n  <text x=\"540\" y=\"217\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#991b1b\">b</text>\n  <text x=\"336\" y=\"201\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\">-∞</text>\n\n  <!-- Row 4: (-∞, b] -->\n  <rect x=\"20\" y=\"234\" width=\"640\" height=\"54\" rx=\"10\" fill=\"#ffffff\" stroke=\"#d8b4fe\" stroke-width=\"1.5\"/>\n  <text x=\"36\" y=\"257\" font-size=\"13\" font-weight=\"800\" fill=\"#7c3aed\">(-∞, b]  →  {x | x ≤ b, x ∈ R}</text>\n  <text x=\"36\" y=\"276\" font-size=\"11\" fill=\"#475569\">b ve b'den küçük tüm gerçek sayılar (b dâhil) | Sonsuz tarafı DAİMA açık: ( veya )</text>\n  <line x1=\"355\" y1=\"261\" x2=\"635\" y2=\"261\" stroke=\"#cbd5e1\" stroke-width=\"2.5\"/>\n  <line x1=\"360\" y1=\"261\" x2=\"540\" y2=\"261\" stroke=\"#7c3aed\" stroke-width=\"5\"/>\n  <polygon points=\"352,261 366,254 366,268\" fill=\"#7c3aed\"/>\n  <circle cx=\"540\" cy=\"261\" r=\"6\" fill=\"#7c3aed\" stroke=\"#7c3aed\" stroke-width=\"3\"/>\n  <text x=\"540\" y=\"281\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#5b21b6\">b</text>\n  <text x=\"336\" y=\"265\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#7c3aed\">-∞</text>\n</svg>"
-  },
-  {
-   "baslik": "5. Gerçek Sayı Aralıklarıyla Küme İşlemleri: Birleşim, Kesişim ve Fark",
-   "metin": "Gerçek sayı aralıkları gerçek sayılar kümesinin birer alt kümesi olduğundan, aralıklar üzerinde {koyu:birleşim (∪)}, {koyu:kesişim (∩)} ve {koyu:fark (\\)} işlemleri doğrudan uygulanabilir. Bu işlemleri hatasız yapmanın en etkili yolu her iki aralığı aynı sayı doğrusu üzerinde alt alta çizmektir. {koyu:Birleşim (A ∪ B)}, sayı doğrusunda A veya B aralıklarından en az biri tarafından taranan tüm noktaları kapsar (ortak bölgesi olan iki aralığın birleşimi en küçük alt sınırdan en büyük üst sınıra uzanan tek bir aralıktır). {koyu:Kesişim (A ∩ B)}, her iki aralıkta aynı anda bulunan ortak noktaların kümesidir (büyük alt sınır ile küçük üst sınır arasındaki bölge). {koyu:Fark (A \\ B)} ise A aralığında bulunup B aralığında bulunmayan elemanlardan oluşur.",
-   "ornekler": [
-    {
-     "baslik": "A = [-2, 4) ve B = (1, 6] Aralıklarında İşlemler",
-     "aciklama": "• Birleşim: En sol sınır -2 (A'da kapalı), en sağ sınır 6 (B'de kapalı) olup aradaki tüm sayılar tarandığından A ∪ B = [-2, 6] olur.\n• Kesişim: Ortak bölge 1 ile 4 arasıdır. 1 sayısı B'de olmadığı için kesişimde de yoktur (açık); 4 sayısı A'da olmadığı için kesişimde de yoktur (açık). Dolayısıyla A ∩ B = (1, 4) bulunur.\n• Fark (A \\ B): [-2, 4) aralığından (1, 6] aralığını çıkardığımızda -2'den 1'e kadar olan kısım kalır. Dikkat edilirse 1 sayısı A'da vardır ama B'de yoktur (1 ∉ B); dolayısıyla 1 sayısı A'dan çıkarılamaz ve fark kümesinde kalır: A \\ B = [-2, 1]."
-    }
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Fark İşleminde Sınır Noktası Kuralı",
-    "metin": "A \\ B fark kümesini bulurken iç sınır noktasına dikkat edin: Çıkarılan B kümesinde sınır noktası AÇIK ise (B'de yoksa) o nokta silinemediği için A \\ B kümesinde KAPALI olur; B kümesinde KAPALI ise (B'de varsa) silindiği için A \\ B kümesinde AÇIK olur!"
-   },
-   "gorsel": "<svg viewBox=\"0 0 680 290\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\">\n  <rect width=\"680\" height=\"290\" rx=\"16\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <text x=\"340\" y=\"28\" text-anchor=\"middle\" font-size=\"15.5\" font-weight=\"800\" fill=\"#0f172a\">GERÇEK SAYI ARALIKLARINDA KÜME İŞLEMLERİ: A = [-2, 4) VE B = (1, 6]</text>\n\n  <!-- Number line reference grid -->\n  <!-- Positions: -2->180, 1->330, 4->480, 6->580 -->\n  <line x1=\"180\" y1=\"45\" x2=\"180\" y2=\"265\" stroke=\"#e2e8f0\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/>\n  <line x1=\"330\" y1=\"45\" x2=\"330\" y2=\"265\" stroke=\"#e2e8f0\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/>\n  <line x1=\"480\" y1=\"45\" x2=\"480\" y2=\"265\" stroke=\"#e2e8f0\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/>\n  <line x1=\"580\" y1=\"45\" x2=\"580\" y2=\"265\" stroke=\"#e2e8f0\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/>\n\n  <text x=\"180\" y=\"44\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\">-2</text>\n  <text x=\"330\" y=\"44\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\">1</text>\n  <text x=\"480\" y=\"44\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\">4</text>\n  <text x=\"580\" y=\"44\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\">6</text>\n\n  <!-- A = [-2, 4) -->\n  <text x=\"24\" y=\"72\" font-size=\"12.5\" font-weight=\"800\" fill=\"#2563eb\">A = [-2, 4)</text>\n  <line x1=\"140\" y1=\"68\" x2=\"630\" y2=\"68\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <line x1=\"180\" y1=\"68\" x2=\"480\" y2=\"68\" stroke=\"#2563eb\" stroke-width=\"5\"/>\n  <circle cx=\"180\" cy=\"68\" r=\"5.5\" fill=\"#2563eb\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n  <circle cx=\"480\" cy=\"68\" r=\"5.5\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n\n  <!-- B = (1, 6] -->\n  <text x=\"24\" y=\"112\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\">B = (1, 6]</text>\n  <line x1=\"140\" y1=\"108\" x2=\"630\" y2=\"108\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <line x1=\"330\" y1=\"108\" x2=\"580\" y2=\"108\" stroke=\"#d97706\" stroke-width=\"5\"/>\n  <circle cx=\"330\" cy=\"108\" r=\"5.5\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"2.5\"/>\n  <circle cx=\"580\" cy=\"108\" r=\"5.5\" fill=\"#d97706\" stroke=\"#d97706\" stroke-width=\"2.5\"/>\n\n  <!-- A ∪ B = [-2, 6] -->\n  <text x=\"24\" y=\"156\" font-size=\"12.5\" font-weight=\"800\" fill=\"#059669\">A ∪ B = [-2, 6]</text>\n  <line x1=\"140\" y1=\"152\" x2=\"630\" y2=\"152\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <line x1=\"180\" y1=\"152\" x2=\"580\" y2=\"152\" stroke=\"#059669\" stroke-width=\"5\"/>\n  <circle cx=\"180\" cy=\"152\" r=\"5.5\" fill=\"#059669\" stroke=\"#059669\" stroke-width=\"2.5\"/>\n  <circle cx=\"580\" cy=\"152\" r=\"5.5\" fill=\"#059669\" stroke=\"#059669\" stroke-width=\"2.5\"/>\n\n  <!-- A ∩ B = (1, 4) -->\n  <text x=\"24\" y=\"200\" font-size=\"12.5\" font-weight=\"800\" fill=\"#7c3aed\">A ∩ B = (1, 4)</text>\n  <line x1=\"140\" y1=\"196\" x2=\"630\" y2=\"196\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <line x1=\"330\" y1=\"196\" x2=\"480\" y2=\"196\" stroke=\"#7c3aed\" stroke-width=\"5\"/>\n  <circle cx=\"330\" cy=\"196\" r=\"5.5\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/>\n  <circle cx=\"480\" cy=\"196\" r=\"5.5\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/>\n\n  <!-- A \\ B = [-2, 1] -->\n  <text x=\"24\" y=\"244\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\">A \\ B = [-2, 1]</text>\n  <line x1=\"140\" y1=\"240\" x2=\"630\" y2=\"240\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <line x1=\"180\" y1=\"240\" x2=\"330\" y2=\"240\" stroke=\"#dc2626\" stroke-width=\"5\"/>\n  <circle cx=\"180\" cy=\"240\" r=\"5.5\" fill=\"#dc2626\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n  <circle cx=\"330\" cy=\"240\" r=\"5.5\" fill=\"#dc2626\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n  <text x=\"490\" y=\"244\" font-size=\"11\" font-weight=\"700\" fill=\"#991b1b\">Dikkat: 1 ∈ A ve 1 ∉ B ⇒ 1 ∈ A\\B (Kapalı!)</text>\n\n  <text x=\"340\" y=\"278\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\">Fark ve tümleyen işlemlerinde sınır noktası çıkarılan kümede AÇIK ise sonuçta KAPALI, KAPALI ise sonuçta AÇIK olur!</text>\n</svg>"
-  },
-  {
-   "baslik": "6. Bir Aralığın Tümleyeni ve Gerçek Yaşam Modellemesi",
-   "metin": "Gerçek sayılar kümesi {koyu:R = (-∞, ∞)} evrensel küme kabul edildiğinde, bir A aralığında bulunmayan tüm gerçek sayıların oluşturduğu kümeye {koyu:A aralığının tümleyeni} denir ve {koyu:A' = R \\ A} ile gösterilir. Bir aralığın tümleyeni alınırken sayı doğrusunda o aralığın dışında kalan bölgeler alınır; A aralığına dâhil olan (kapalı) sınır noktaları tümleyende dâhil olmaz (açık olur), A aralığına dâhil olmayan (açık) sınır noktaları ise tümleyende dâhil olur (kapalı olur). Gerçek yaşamda sıcaklık toleransları, laboratuvar güvenlik sınırları, ilaç dozaj aralıkları ve mühendislik hata payları gerçek sayı aralıkları ve bunların tümleyenleriyle modellenir.",
-   "ornekler": [
-    {
-     "baslik": "Tümleyen Alma Örnekleri",
-     "aciklama": "• A = [-3, 5) yarı açık aralığının tümleyeni: -3 sayısı A'da olduğu için A' kümesinde olmaz (açık); 5 sayısı A'da olmadığı için A' kümesinde olur (kapalı). Böylece A' = (-∞, -3) ∪ [5, ∞) bulunur.\n• B = (-∞, 2] sınırsız aralığının tümleyeni: 2'den küçük veya 2'ye eşit olmayan sayılar 2'den büyük sayılardır; yani B' = (2, ∞) olur."
+      "baslik": "2. Sayı Kümeleri ve Küme Sembolleri",
+      "metin": "Gerçek sayılar ve alt kümeleri arasındaki ilişkileri göstermek için {koyu:küme dili ve sembolleri} kullanılır. Sayı kümeleri en dar kümeden en geniş kümeye doğru birbirinin alt kümesi olacak biçimde sıralanır: {koyu:Doğal sayılar kümesi} (N = {0, 1, 2, 3, ...}), {koyu:tam sayılar kümesi} (Z = {..., -2, -1, 0, 1, 2, ...}), a ve b tam sayı ve b ≠ 0 olmak üzere {kesir:a|b} biçiminde yazılabilen {koyu:rasyonel sayılar kümesi (Q)} ve virgülden sonraki basamakları düzensiz olarak sonsuza kadar devam eden {koyu:irrasyonel sayılar kümesi (Q')} ({kok:2}, {kok:5}, π, e gibi). Rasyonel ve irrasyonel sayıların birleşimi {koyu:gerçek (reel) sayılar kümesini (R = Q ∪ Q')} oluşturur ve bu iki küme ayrık olduğundan kesişimleri boş kümedir ({koyu:Q ∩ Q' = ∅}). Bir elemanın kümeye ait olması {koyu:∈} (elemanıdır), ait olmaması {koyu:∉} (elemanı değildir) ve bir kümenin başka bir kümenin içinde yer alması {koyu:⊂} (alt kümesidir) sembolüyle gösterilir.",
+      "tablo": {
+        "basliklar": [
+          "Sembol / Gösterim",
+          "Okunuşu ve Anlamı",
+          "Matematiksel Örnek"
+        ],
+        "satirlar": [
+          [
+            "∈ ve ∉",
+            "Elemanıdır / Elemanı değildir",
+            "-5 ∈ Z, ancak -5 ∉ N; {kok:3} ∈ Q', ancak {kok:3} ∉ Q"
+          ],
+          [
+            "⊂ ve ⊆",
+            "Alt kümesidir / Kapsanır",
+            "N ⊂ Z ⊂ Q ⊂ R ve Q' ⊂ R"
+          ],
+          [
+            "∪ (Birleşim)",
+            "İki kümenin tüm elemanlarının oluşturduğu küme",
+            "Q ∪ Q' = R (Gerçek sayılar kümesi)"
+          ],
+          [
+            "∩ (Kesişim)",
+            "İki kümenin ortak elemanlarının oluşturduğu küme",
+            "Q ∩ Q' = ∅ ve Z ∩ N = N"
+          ],
+          [
+            "\\ veya - (Fark)",
+            "Birinci kümede olup ikinci kümede olmayan elemanlar",
+            "R \\ Q = Q' ve N \\ {0} = {us:Z|+}"
+          ],
+          [
+            "A' (Tümleyen)",
+            "Evrensel kümede (R) olup A kümesinde olmayanlar",
+            "Q' = R \\ Q (Rasyonel olmayan gerçek sayılar)"
+          ]
+        ]
+      },
+      "kutu": {
+        "tur": "bilgi",
+        "baslik": "Gerçek Sayı Doğrusunun Sürekliliği",
+        "metin": "Tam sayılar veya doğal sayılar sayı doğrusunda aralıklı noktalar hâlinde dizilirken, gerçek sayılar (R) sayı doğrusundaki boşlukların tamamını kesintisiz biçimde doldurur; sayı doğrusundaki her noktaya tam olarak bir gerçek sayı karşılık gelir."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\">\n  <rect width=\"680\" height=\"280\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <text x=\"340\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">SAYI KÜMELERİ HİYERARŞİSİ VE KÜME SEMBOLLERİ</text>\n\n  <!-- Nested Venn Diagram on Left -->\n  <rect x=\"24\" y=\"48\" width=\"330\" height=\"212\" rx=\"14\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"189\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" fill=\"#1e3a8a\">R (Gerçek Sayılar) = Q ∪ Q'</text>\n\n  <!-- Q Circle/Box -->\n  <rect x=\"38\" y=\"80\" width=\"205\" height=\"166\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"2\"/>\n  <text x=\"140\" y=\"98\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1d4ed8\">Q (Rasyonel: a/b, 0,75, -3/4)</text>\n\n  <!-- Z Box -->\n  <rect x=\"52\" y=\"108\" width=\"176\" height=\"126\" rx=\"10\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.8\"/>\n  <text x=\"140\" y=\"126\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#4338ca\">Z (Tam Sayılar: ..., -2, -1, 0, 1...)</text>\n\n  <!-- N Box -->\n  <rect x=\"68\" y=\"138\" width=\"144\" height=\"84\" rx=\"8\" fill=\"#fae8ff\" stroke=\"#a855f7\" stroke-width=\"1.8\"/>\n  <text x=\"140\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#7e22ce\">N (Doğal: 0, 1, 2, 3...)</text>\n\n  <!-- N+ Box -->\n  <rect x=\"84\" y=\"166\" width=\"112\" height=\"44\" rx=\"6\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.5\"/>\n  <text x=\"140\" y=\"186\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" fill=\"#92400e\">N⁺ = Z⁺ (Sayma)</text>\n  <text x=\"140\" y=\"201\" text-anchor=\"middle\" font-size=\"10\" fill=\"#b45309\">{1, 2, 3, ...}</text>\n\n  <!-- Q' Box -->\n  <rect x=\"253\" y=\"80\" width=\"88\" height=\"166\" rx=\"12\" fill=\"#ffe4e6\" stroke=\"#f43f5e\" stroke-width=\"2\"/>\n  <text x=\"297\" y=\"105\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#be123c\">Q'</text>\n  <text x=\"297\" y=\"123\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" fill=\"#e11d48\">(İrrasyonel)</text>\n  <text x=\"297\" y=\"148\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">2^(1/2), 3^(1/2), 5^(1/2)</text>\n  <text x=\"297\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">-7^(1/2), 4^(1/3)</text>\n  <text x=\"297\" y=\"192\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">π ≈ 3,1415...</text>\n  <text x=\"297\" y=\"214\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">e ≈ 2,7182...</text>\n  <text x=\"297\" y=\"236\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"700\" fill=\"#be123c\">Q ∩ Q' = ∅</text>\n\n  <!-- Right Side: Symbols Reference Table -->\n  <rect x=\"372\" y=\"48\" width=\"284\" height=\"212\" rx=\"14\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"2\"/>\n  <rect x=\"372\" y=\"48\" width=\"284\" height=\"32\" rx=\"14\" fill=\"#1e293b\"/>\n  <text x=\"514\" y=\"69\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">TEMEL KÜME SEMBOLLERİ</text>\n\n  <text x=\"388\" y=\"102\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">∈ / ∉</text>\n  <text x=\"444\" y=\"102\" font-size=\"11.5\" fill=\"#334155\">Elemanıdır / Elemanı değildir</text>\n\n  <text x=\"388\" y=\"128\" font-size=\"13\" font-weight=\"800\" fill=\"#7c3aed\">⊂ / ⊆</text>\n  <text x=\"444\" y=\"128\" font-size=\"11.5\" fill=\"#334155\">Alt kümesidir (N ⊂ Z ⊂ Q ⊂ R)</text>\n\n  <text x=\"388\" y=\"154\" font-size=\"13\" font-weight=\"800\" fill=\"#059669\">∪</text>\n  <text x=\"444\" y=\"154\" font-size=\"11.5\" fill=\"#334155\">Birleşim (en az birinde olanlar)</text>\n\n  <text x=\"388\" y=\"180\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\">∩</text>\n  <text x=\"444\" y=\"180\" font-size=\"11.5\" fill=\"#334155\">Kesişim (her ikisinde ortak olanlar)</text>\n\n  <text x=\"388\" y=\"206\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\">\\ veya -</text>\n  <text x=\"444\" y=\"206\" font-size=\"11.5\" fill=\"#334155\">Fark (A\\B: A'da olup B'de olmayan)</text>\n\n  <text x=\"388\" y=\"232\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">A'</text>\n  <text x=\"444\" y=\"232\" font-size=\"11.5\" fill=\"#334155\">Tümleyen (R \\ A: A dışındaki gerçek s.)</text>\n\n  <text x=\"388\" y=\"252\" font-size=\"13\" font-weight=\"800\" fill=\"#64748b\">∅</text>\n  <text x=\"444\" y=\"252\" font-size=\"11.5\" fill=\"#334155\">Boş küme (hiç elemanı olmayan küme)</text>\n</svg>"
     },
     {
-     "baslik": "Gerçek Yaşam Problemi: Sera Sıcaklık Kontrolü",
-     "aciklama": "Bir serada A bitkisi [15, 26] °C aralığında, B bitkisi ise (20, 32) °C aralığında sağlıklı yetişmektedir. Her iki bitkinin aynı serada birlikte yetişebileceği sıcaklık aralığı iki kümenin kesişimi olan A ∩ B = [15, 26] ∩ (20, 32) = (20, 26] °C aralığıdır."
-    }
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "baslik": "Tümleyenin Tümleyeni",
-    "metin": "Her A gerçek sayı aralığı için A ∪ A' = R = (-∞, ∞), A ∩ A' = ∅ ve (A')' = A eşitlikleri daima geçerlidir."
-   },
-   "gorsel": "<svg viewBox=\"0 0 680 260\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\">\n  <rect width=\"680\" height=\"260\" rx=\"16\" fill=\"#fefce8\" stroke=\"#fde047\" stroke-width=\"2\"/>\n  <text x=\"340\" y=\"30\" text-anchor=\"middle\" font-size=\"15.5\" font-weight=\"800\" fill=\"#854d0e\">GERÇEK YAŞAM PROBLEMLERİNDE ARALIK MODELLEMESİ VE TÜMLEYEN</text>\n\n  <!-- Left Box: Sıcaklık / Tolerans Aralığı -->\n  <rect x=\"24\" y=\"48\" width=\"305\" height=\"192\" rx=\"12\" fill=\"#ffffff\" stroke=\"#eab308\" stroke-width=\"2\"/>\n  <rect x=\"24\" y=\"48\" width=\"305\" height=\"32\" rx=\"12\" fill=\"#ca8a04\"/>\n  <text x=\"176\" y=\"69\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">LABORATUVAR SICAKLIK ARALIĞI</text>\n  <text x=\"176\" y=\"98\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\">İdeal Sıcaklık: 20 °C (± 3 °C tolerans)</text>\n  <text x=\"176\" y=\"120\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#059669\">Güvenli Aralık: A = [17, 23]</text>\n  <line x1=\"54\" y1=\"150\" x2=\"298\" y2=\"150\" stroke=\"#cbd5e1\" stroke-width=\"2.5\"/>\n  <line x1=\"110\" y1=\"150\" x2=\"242\" y2=\"150\" stroke=\"#059669\" stroke-width=\"5\"/>\n  <circle cx=\"110\" cy=\"150\" r=\"5.5\" fill=\"#059669\"/>\n  <circle cx=\"242\" cy=\"150\" r=\"5.5\" fill=\"#059669\"/>\n  <text x=\"110\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#065f46\">17 °C</text>\n  <text x=\"242\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#065f46\">23 °C</text>\n  <text x=\"176\" y=\"198\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">Tam sayı değer sayısı: 23 - 17 + 1 = 7</text>\n  <text x=\"176\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#dc2626\">Alarm Aralığı (A'): (-∞, 17) ∪ (23, ∞)</text>\n\n  <!-- Right Box: Tümleyen Kuralı Özeti -->\n  <rect x=\"351\" y=\"48\" width=\"305\" height=\"192\" rx=\"12\" fill=\"#ffffff\" stroke=\"#f97316\" stroke-width=\"2\"/>\n  <rect x=\"351\" y=\"48\" width=\"305\" height=\"32\" rx=\"12\" fill=\"#ea580c\"/>\n  <text x=\"503\" y=\"69\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">TÜMLEYEN (A' = R \\ A) DÖNÜŞÜM TABLOSU</text>\n  <text x=\"368\" y=\"102\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">• A = [a, b]  ⇒  A' = (-∞, a) ∪ (b, ∞)</text>\n  <text x=\"368\" y=\"128\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">• A = (a, b)  ⇒  A' = (-∞, a] ∪ [b, ∞)</text>\n  <text x=\"368\" y=\"154\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">• A = [a, b)  ⇒  A' = (-∞, a) ∪ [b, ∞)</text>\n  <text x=\"368\" y=\"180\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">• A = [a, ∞)  ⇒  A' = (-∞, a)</text>\n  <text x=\"368\" y=\"206\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">• A = (-∞, b) ⇒  A' = [b, ∞)</text>\n  <text x=\"503\" y=\"228\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" fill=\"#c2410c\">Kural: [ ↔ (  ve  ] ↔ )  (Sınır yön değiştirir!)</text>\n</svg>"
-  }
- ],
- "ornekler": [
-  {
-   "soru": "{kesir:2|{kok:5} - {kok:3}} + {kesir:2|{kok:5} + {kok:3}} işleminin sonucunu paydaları rasyonelleştirerek bulunuz.",
-   "cevap": "Birinci kesri ({kok:5}+{kok:3}), ikinci kesri ({kok:5}-{kok:3}) eşleniği ile genişletirsek ortak payda 5 - 3 = 2 olur. İfade {kesir:2({kok:5}+{kok:3})|2} + {kesir:2({kok:5}-{kok:3})|2} = ({kok:5}+{kok:3}) + ({kok:5}-{kok:3}) = 2{kok:5} bulunur."
-  },
-  {
-   "soru": "x < 0 < y olmak üzere {kok:{us:x|2}} + {kok:{us:y|3}|3} - {kok:{us:(x-y)|2}} ifadesinin en sade biçimini bulunuz.",
-   "cevap": "Çift dereceli köklerden ifadeler mutlak değer içinde, tek dereceli kökten aynen çıkar: |x| + y - |x - y|. x < 0 olduğundan |x| = -x ve x - y < 0 olduğundan |x - y| = -(x - y) = -x + y olur. Yerine yazılırsa: (-x) + y - (-x + y) = -x + y + x - y = 0 bulunur."
-  },
-  {
-   "soru": "Gerçek sayılar kümesinde A = [-3, 5) ve B = (1, 7] aralıkları veriliyor. A ∪ B ve A ∩ B kümelerini aralık gösterimiyle yazınız.",
-   "cevap": "Sayı doğrusunda her iki küme çizildiğinde en küçük alt sınır -3 (kapalı) ve en büyük üst sınır 7 (kapalı) olduğundan A ∪ B = [-3, 7] olur. Ortak bölgenin sınırları ise 1 (B kümesinde açık olduğundan kesişimde açık) ve 5 (A kümesinde açık olduğundan kesişimde açık) olup A ∩ B = (1, 5) bulunur."
-  },
-  {
-   "soru": "Gerçek sayılar kümesinde A = [-2, 4] ve B = (1, 6) aralıkları için A \\ B (A fark B) kümesini bulunuz.",
-   "cevap": "[-2, 4] aralığından (1, 6) aralığının elemanları çıkarıldığında -2 ile 1 arasındaki sayılar kalır. 1 sınır noktası A kümesinde vardır (1 ∈ A) ancak B kümesinde açık uç olduğundan yoktur (1 ∉ B); dolayısıyla 1 sayısı A kümesinden silinemez ve fark kümesinde kapalı uç olur: A \\ B = [-2, 1]."
-  },
-  {
-   "soru": "Gerçek sayılar kümesinde M = (-4, 3] yarı açık aralığının tümleyeni olan M' = R \\ M kümesini bulunuz.",
-   "cevap": "M = (-4, 3] aralığının dışında kalan gerçek sayılar -4 ve -4'ten küçük sayılar ile 3'ten büyük sayılardır. -4 sayısı M'de açık olduğu için M' kümesinde kapalı, 3 sayısı M'de kapalı olduğu için M' kümesinde açık olur: M' = (-∞, -4] ∪ (3, ∞)."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "Gerçek sayılar kümesinde tanımlı A = [-4, 3) ve B = (0, 5] aralıkları veriliyor. Buna göre A \\ B (A fark B) kümesi aşağıdakilerden hangisidir?",
-   "secenekler": [
-    "[-4, 0]",
-    "[-4, 0)",
-    "(0, 3)",
-    "[-4, 5]"
-   ],
-   "dogru": 0,
-   "aciklama": "A = [-4, 3) aralığından B = (0, 5] aralığının elemanları çıkarıldığında -4 ile 0 arasındaki sayılar kalır. -4 sayısı A'da kapalı olduğundan sonuçta kapalıdır. 0 sayısı ise A kümesinde vardır (0 ∈ A) fakat B kümesinde açık uç olduğundan yoktur (0 ∉ B); dolayısıyla 0 sayısı A'dan çıkarılamaz ve fark kümesinde kalır: A \\ B = [-4, 0]."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Gerçek sayılar kümesinde K = (-2, 6] aralığının tümleyeni olan K' = R \\ K kümesi aşağıdakilerden hangisidir?",
-   "secenekler": [
-    "(-∞, -2] ∪ (6, ∞)",
-    "(-∞, -2) ∪ [6, ∞)",
-    "(-∞, -2) ∪ (6, ∞)",
-    "[-2, 6)"
-   ],
-   "dogru": 0,
-   "aciklama": "K = (-2, 6] aralığında -2 elemanı yoktur (-2 ∉ K), bu yüzden tümleyen kümesinde -2 yer alır (kapalı uç: -2]). 6 elemanı K kümesinde vardır (6 ∈ K), bu yüzden tümleyende yer almaz (açık uç: (6). Dolayısıyla K' = (-∞, -2] ∪ (6, ∞) olur."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
-   "ifadeler": [
+      "baslik": "3. Sınırlı Gerçek Sayı Aralıkları: Açık, Kapalı ve Yarı Açık Aralıklar",
+      "metin": "İki gerçek sayı arasındaki tüm gerçek sayıları tek tek liste yöntemiyle yazmak imkânsızdır; çünkü iki gerçek sayı arasında sonsuz tane gerçek sayı bulunur. Bu nedenle gerçek sayı doğrusu üzerindeki kesintisiz sayı kümelerini ifade etmek için {koyu:aralık gösterimi} kullanılır. Alt sınırı {koyu:a} ve üst sınırı {koyu:b} ({koyu:a < b}) olan aralıklar {koyu:sınırlı aralıklar} olarak adlandırılır. Sınır noktasının kümeye dâhil olup olmamasına göre dört tür sınırlı aralık vardır: Sınır noktaları kümeye dâhil değilse {koyu:açık parantez ( )} kullanılır ve sayı doğrusunda uç nokta {koyu:içi boş daire (○)} ile gösterilir. Sınır noktaları kümeye dâhil ise {koyu:köşeli parantez [ ]} kullanılır ve sayı doğrusunda uç nokta {koyu:içi dolu daire (●)} ile gösterilir.",
+      "tablo": {
+        "basliklar": [
+          "Aralık Türü",
+          "Gösterim",
+          "Ortak Özellik Yöntemi",
+          "Uç Noktaların Durumu"
+        ],
+        "satirlar": [
+          [
+            "Açık Aralık",
+            "(a, b)",
+            "{x | a < x < b, x ∈ R}",
+            "a ∉ (a, b) ve b ∉ (a, b) — her iki uç açık (○ — ○)"
+          ],
+          [
+            "Kapalı Aralık",
+            "[a, b]",
+            "{x | a ≤ x ≤ b, x ∈ R}",
+            "a ∈ [a, b] ve b ∈ [a, b] — her iki uç kapalı (● — ●)"
+          ],
+          [
+            "Yarı Açık Aralık",
+            "[a, b)",
+            "{x | a ≤ x < b, x ∈ R}",
+            "a ∈ [a, b) ancak b ∉ [a, b) — sol kapalı, sağ açık (● — ○)"
+          ],
+          [
+            "Yarı Açık Aralık",
+            "(a, b]",
+            "{x | a < x ≤ b, x ∈ R}",
+            "a ∉ (a, b] ancak b ∈ (a, b] — sol açık, sağ kapalı (○ — ●)"
+          ]
+        ]
+      },
+      "ornekler": [
+        {
+          "baslik": "Aralıktaki Tam Sayıların Sayısı",
+          "aciklama": "A = (-3, 4] yarı açık aralığı {x | -3 < x ≤ 4, x ∈ R} kümesini belirtir. Bu aralıktaki gerçek sayıların sayısı sonsuzdur; ancak aralıktaki tam sayılar A ∩ Z = {-2, -1, 0, 1, 2, 3, 4} olup toplam 7 tanedir (-3 açık uç olduğu için alınmaz, 4 kapalı uç olduğu için alınır)."
+        }
+      ],
+      "kutu": {
+        "tur": "tanim",
+        "baslik": "Aralık Kavramı",
+        "metin": "Gerçek sayı doğrusu üzerinde birbirinden farklı iki nokta arasındaki (uç noktaların dâhil olduğu veya olmadığı) tüm gerçek sayıların oluşturduğu alt kümeye gerçek sayı aralığı denir."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 300\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\">\n  <rect width=\"680\" height=\"300\" rx=\"16\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <text x=\"340\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\">SINIRLI GERÇEK SAYI ARALIKLARI (AÇIK, KAPALI VE YARI AÇIK)</text>\n\n  <!-- Row 1: Açık Aralık (a, b) -->\n  <rect x=\"20\" y=\"42\" width=\"640\" height=\"54\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#93c5fd\"/>\n  <text x=\"36\" y=\"65\" font-size=\"13\" font-weight=\"800\" fill=\"#1d4ed8\">1. Açık Aralık: (a, b)</text>\n  <text x=\"36\" y=\"84\" font-size=\"11.5\" fill=\"#334155\">{x | a &lt; x &lt; b, x ∈ R}  (a ve b DÂHİL DEĞİL)</text>\n  <line x1=\"350\" y1=\"69\" x2=\"620\" y2=\"69\" stroke=\"#94a3b8\" stroke-width=\"2.5\"/>\n  <line x1=\"415\" y1=\"69\" x2=\"555\" y2=\"69\" stroke=\"#2563eb\" stroke-width=\"5\"/>\n  <circle cx=\"415\" cy=\"69\" r=\"6\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"3\"/>\n  <circle cx=\"555\" cy=\"69\" r=\"6\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"3\"/>\n  <text x=\"415\" y=\"90\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e40af\">a</text>\n  <text x=\"555\" y=\"90\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e40af\">b</text>\n\n  <!-- Row 2: Kapalı Aralık [a, b] -->\n  <rect x=\"20\" y=\"106\" width=\"640\" height=\"54\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#6ee7b7\"/>\n  <text x=\"36\" y=\"129\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\">2. Kapalı Aralık: [a, b]</text>\n  <text x=\"36\" y=\"148\" font-size=\"11.5\" fill=\"#334155\">{x | a ≤ x ≤ b, x ∈ R}  (a ve b DÂHİL)</text>\n  <line x1=\"350\" y1=\"133\" x2=\"620\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"2.5\"/>\n  <line x1=\"415\" y1=\"133\" x2=\"555\" y2=\"133\" stroke=\"#059669\" stroke-width=\"5\"/>\n  <circle cx=\"415\" cy=\"133\" r=\"6\" fill=\"#059669\" stroke=\"#059669\" stroke-width=\"3\"/>\n  <circle cx=\"555\" cy=\"133\" r=\"6\" fill=\"#059669\" stroke=\"#059669\" stroke-width=\"3\"/>\n  <text x=\"415\" y=\"154\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#065f46\">a</text>\n  <text x=\"555\" y=\"154\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#065f46\">b</text>\n\n  <!-- Row 3: Yarı Açık Aralık [a, b) -->\n  <rect x=\"20\" y=\"170\" width=\"640\" height=\"54\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#fcd34d\"/>\n  <text x=\"36\" y=\"193\" font-size=\"13\" font-weight=\"800\" fill=\"#b45309\">3. Yarı Açık Aralık: [a, b)</text>\n  <text x=\"36\" y=\"212\" font-size=\"11.5\" fill=\"#334155\">{x | a ≤ x &lt; b, x ∈ R}  (a dâhil, b hariç)</text>\n  <line x1=\"350\" y1=\"197\" x2=\"620\" y2=\"197\" stroke=\"#94a3b8\" stroke-width=\"2.5\"/>\n  <line x1=\"415\" y1=\"197\" x2=\"555\" y2=\"197\" stroke=\"#d97706\" stroke-width=\"5\"/>\n  <circle cx=\"415\" cy=\"197\" r=\"6\" fill=\"#d97706\" stroke=\"#d97706\" stroke-width=\"3\"/>\n  <circle cx=\"555\" cy=\"197\" r=\"6\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"3\"/>\n  <text x=\"415\" y=\"218\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#92400e\">a</text>\n  <text x=\"555\" y=\"218\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#92400e\">b</text>\n\n  <!-- Row 4: Yarı Açık Aralık (a, b] -->\n  <rect x=\"20\" y=\"234\" width=\"640\" height=\"54\" rx=\"10\" fill=\"#f3e8ff\" stroke=\"#d8b4fe\"/>\n  <text x=\"36\" y=\"257\" font-size=\"13\" font-weight=\"800\" fill=\"#6d28d9\">4. Yarı Açık Aralık: (a, b]</text>\n  <text x=\"36\" y=\"276\" font-size=\"11.5\" fill=\"#334155\">{x | a &lt; x ≤ b, x ∈ R}  (a hariç, b dâhil)</text>\n  <line x1=\"350\" y1=\"261\" x2=\"620\" y2=\"261\" stroke=\"#94a3b8\" stroke-width=\"2.5\"/>\n  <line x1=\"415\" y1=\"261\" x2=\"555\" y2=\"261\" stroke=\"#7c3aed\" stroke-width=\"5\"/>\n  <circle cx=\"415\" cy=\"261\" r=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"3\"/>\n  <circle cx=\"555\" cy=\"261\" r=\"6\" fill=\"#7c3aed\" stroke=\"#7c3aed\" stroke-width=\"3\"/>\n  <text x=\"415\" y=\"282\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#5b21b6\">a</text>\n  <text x=\"555\" y=\"282\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#5b21b6\">b</text>\n</svg>"
+    },
     {
-     "metin": "Gerçek sayı aralıklarında sonsuz (-∞ veya ∞) sembolünün bulunduğu uç her zaman açık parantez ile gösterilir.",
-     "dogru": true,
-     "aciklama": "Sonsuz bir gerçek sayı olmadığı için kümeye dâhil edilemez; bu nedenle daima (-∞, a veya b, ∞) şeklinde açık parantez kullanılır."
-    }
-   ]
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
-   "ifadeler": [
+      "baslik": "4. Sınırsız Gerçek Sayı Aralıkları",
+      "metin": "Bir gerçek sayıdan büyük olan tüm gerçek sayıların veya bir gerçek sayıdan küçük olan tüm gerçek sayıların oluşturduğu kümeler bir yönden sınırlı, diğer yönden ise sonsuza uzanan {koyu:sınırsız aralıklar}dır. Sayı doğrusunun sağ ucunda {koyu:artı sonsuz (+∞ veya ∞)}, sol ucunda ise {koyu:eksi sonsuz (-∞)} sembolü kullanılır. {koyu:Sonsuz (∞ ve -∞) bir gerçek sayı değildir}; yalnızca sayıların sınırsız biçimde büyüdüğünü veya küçüldüğünü gösteren bir semboldür. Bu nedenle aralık gösteriminde {koyu:-∞ ve ∞ sembollerinin bulunduğu taraf daima açık parantez ( ) ile yazılır}, hiçbir zaman köşeli parantez kullanılmaz. Tüm gerçek sayılar kümesi de her iki yönden sınırsız aralık olarak {koyu:R = (-∞, ∞)} biçiminde ifade edilir.",
+      "tablo": {
+        "basliklar": [
+          "Sınırsız Aralık",
+          "Ortak Özellik Gösterimi",
+          "Sözel Anlamı ve Sayı Doğrusu Yönü"
+        ],
+        "satirlar": [
+          [
+            "(a, ∞)",
+            "{x | x > a, x ∈ R}",
+            "a'dan büyük tüm gerçek sayılar (a noktasında içi boş daire, sağa doğru ok)"
+          ],
+          [
+            "[a, ∞)",
+            "{x | x ≥ a, x ∈ R}",
+            "a ve a'dan büyük tüm gerçek sayılar (a noktasında içi dolu daire, sağa doğru ok)"
+          ],
+          [
+            "(-∞, b)",
+            "{x | x < b, x ∈ R}",
+            "b'den küçük tüm gerçek sayılar (b noktasında içi boş daire, sola doğru ok)"
+          ],
+          [
+            "(-∞, b]",
+            "{x | x ≤ b, x ∈ R}",
+            "b ve b'den küçük tüm gerçek sayılar (b noktasında içi dolu daire, sola doğru ok)"
+          ],
+          [
+            "(-∞, ∞)",
+            "R (Tüm gerçek sayılar)",
+            "Gerçek sayı doğrusunun tamamı (her iki yöne sonsuza uzanan doğru)"
+          ]
+        ]
+      },
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Sonsuz Sembolünde Parantez Kuralı",
+        "metin": "-∞ ve +∞ birer gerçek sayı olmadığı için hiçbir kümeye eleman olarak dâhil edilemez. Dolayısıyla [-∞, 5] veya [3, ∞] gibi gösterimler matematiksel olarak yanlıştır; doğrusu (-∞, 5] ve [3, ∞) şeklindedir."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 300\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\">\n  <rect width=\"680\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <text x=\"340\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">SINIRSIZ GERÇEK SAYI ARALIKLARI (+∞ VE -∞ UZANIMLI)</text>\n\n  <!-- Row 1: (a, +∞) -->\n  <rect x=\"20\" y=\"42\" width=\"640\" height=\"54\" rx=\"10\" fill=\"#ffffff\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/>\n  <text x=\"36\" y=\"65\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">(a, ∞)  →  {x | x &gt; a, x ∈ R}</text>\n  <text x=\"36\" y=\"84\" font-size=\"11\" fill=\"#475569\">a'dan büyük tüm gerçek sayılar (a hariç)</text>\n  <line x1=\"340\" y1=\"69\" x2=\"625\" y2=\"69\" stroke=\"#cbd5e1\" stroke-width=\"2.5\"/>\n  <line x1=\"430\" y1=\"69\" x2=\"620\" y2=\"69\" stroke=\"#2563eb\" stroke-width=\"5\"/>\n  <polygon points=\"628,69 614,62 614,76\" fill=\"#2563eb\"/>\n  <circle cx=\"430\" cy=\"69\" r=\"6\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"3\"/>\n  <text x=\"430\" y=\"89\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e40af\">a</text>\n  <text x=\"642\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#2563eb\">+∞</text>\n\n  <!-- Row 2: [a, +∞) -->\n  <rect x=\"20\" y=\"106\" width=\"640\" height=\"54\" rx=\"10\" fill=\"#ffffff\" stroke=\"#6ee7b7\" stroke-width=\"1.5\"/>\n  <text x=\"36\" y=\"129\" font-size=\"13\" font-weight=\"800\" fill=\"#059669\">[a, ∞)  →  {x | x ≥ a, x ∈ R}</text>\n  <text x=\"36\" y=\"148\" font-size=\"11\" fill=\"#475569\">a ve a'dan büyük tüm gerçek sayılar (a dâhil)</text>\n  <line x1=\"340\" y1=\"133\" x2=\"625\" y2=\"133\" stroke=\"#cbd5e1\" stroke-width=\"2.5\"/>\n  <line x1=\"430\" y1=\"133\" x2=\"620\" y2=\"133\" stroke=\"#059669\" stroke-width=\"5\"/>\n  <polygon points=\"628,133 614,126 614,140\" fill=\"#059669\"/>\n  <circle cx=\"430\" cy=\"133\" r=\"6\" fill=\"#059669\" stroke=\"#059669\" stroke-width=\"3\"/>\n  <text x=\"430\" y=\"153\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#065f46\">a</text>\n  <text x=\"642\" y=\"137\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#059669\">+∞</text>\n\n  <!-- Row 3: (-∞, b) -->\n  <rect x=\"20\" y=\"170\" width=\"640\" height=\"54\" rx=\"10\" fill=\"#ffffff\" stroke=\"#fca5a5\" stroke-width=\"1.5\"/>\n  <text x=\"36\" y=\"193\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\">(-∞, b)  →  {x | x &lt; b, x ∈ R}</text>\n  <text x=\"36\" y=\"212\" font-size=\"11\" fill=\"#475569\">b'den küçük tüm gerçek sayılar (b hariç)</text>\n  <line x1=\"355\" y1=\"197\" x2=\"635\" y2=\"197\" stroke=\"#cbd5e1\" stroke-width=\"2.5\"/>\n  <line x1=\"360\" y1=\"197\" x2=\"540\" y2=\"197\" stroke=\"#dc2626\" stroke-width=\"5\"/>\n  <polygon points=\"352,197 366,190 366,204\" fill=\"#dc2626\"/>\n  <circle cx=\"540\" cy=\"197\" r=\"6\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"3\"/>\n  <text x=\"540\" y=\"217\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#991b1b\">b</text>\n  <text x=\"336\" y=\"201\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\">-∞</text>\n\n  <!-- Row 4: (-∞, b] -->\n  <rect x=\"20\" y=\"234\" width=\"640\" height=\"54\" rx=\"10\" fill=\"#ffffff\" stroke=\"#d8b4fe\" stroke-width=\"1.5\"/>\n  <text x=\"36\" y=\"257\" font-size=\"13\" font-weight=\"800\" fill=\"#7c3aed\">(-∞, b]  →  {x | x ≤ b, x ∈ R}</text>\n  <text x=\"36\" y=\"276\" font-size=\"11\" fill=\"#475569\">b ve b'den küçük tüm gerçek sayılar (b dâhil) | Sonsuz tarafı DAİMA açık: ( veya )</text>\n  <line x1=\"355\" y1=\"261\" x2=\"635\" y2=\"261\" stroke=\"#cbd5e1\" stroke-width=\"2.5\"/>\n  <line x1=\"360\" y1=\"261\" x2=\"540\" y2=\"261\" stroke=\"#7c3aed\" stroke-width=\"5\"/>\n  <polygon points=\"352,261 366,254 366,268\" fill=\"#7c3aed\"/>\n  <circle cx=\"540\" cy=\"261\" r=\"6\" fill=\"#7c3aed\" stroke=\"#7c3aed\" stroke-width=\"3\"/>\n  <text x=\"540\" y=\"281\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#5b21b6\">b</text>\n  <text x=\"336\" y=\"265\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#7c3aed\">-∞</text>\n</svg>"
+    },
     {
-     "metin": "A = [-1, 4] ve B = (2, 7) aralıklarının kesişimi A ∩ B = [2, 4] kapalı aralığıdır.",
-     "dogru": false,
-     "aciklama": "2 sayısı B = (2, 7) aralığına dâhil olmadığı için (2 ∉ B) kesişim kümesine de dâhil olamaz. Doğru kesişim kümesi A ∩ B = (2, 4] yarı açık aralığıdır."
-    }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "soru": "Aşağıdaki gerçek sayı kümelerini ve aralık işlemlerini doğru karşılıklarıyla eşleştiriniz.",
-   "ciftler": [
-    [
-     "{x | -3 ≤ x < 5, x ∈ R}",
-     "[-3, 5) yarı açık aralığı"
-    ],
-    [
-     "{x | x > 4, x ∈ R}",
-     "(4, ∞) sınırsız açık aralığı"
-    ],
-    [
-     "[-1, 3] ∩ (1, 6)",
-     "(1, 3] yarı açık aralığı"
-    ],
-    [
-     "[2, ∞) aralığının tümleyeni",
-     "(-∞, 2) sınırsız açık aralığı"
-    ],
-    [
-     "Q ∪ Q' (Rasyonel ve irrasyonel birleşimi)",
-     "R = (-∞, ∞) gerçek sayılar kümesi"
-    ]
-   ],
-   "aciklama": "Eşitsizlikte ≤ veya ≥ varsa köşeli parantez [ ], < veya > varsa açık parantez ( ) kullanılır; tümleyende sınırın açıklık-kapalılık durumu tersine döner."
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Cümlelerdeki boşlukları uygun kelimelerle tamamlayınız.",
-   "cumleler": [
+      "baslik": "5. Gerçek Sayı Aralıklarıyla Küme İşlemleri: Birleşim, Kesişim ve Fark",
+      "metin": "Gerçek sayı aralıkları gerçek sayılar kümesinin birer alt kümesi olduğundan, aralıklar üzerinde {koyu:birleşim (∪)}, {koyu:kesişim (∩)} ve {koyu:fark (\\)} işlemleri doğrudan uygulanabilir. Bu işlemleri hatasız yapmanın en etkili yolu her iki aralığı aynı sayı doğrusu üzerinde alt alta çizmektir. {koyu:Birleşim (A ∪ B)}, sayı doğrusunda A veya B aralıklarından en az biri tarafından taranan tüm noktaları kapsar (ortak bölgesi olan iki aralığın birleşimi en küçük alt sınırdan en büyük üst sınıra uzanan tek bir aralıktır). {koyu:Kesişim (A ∩ B)}, her iki aralıkta aynı anda bulunan ortak noktaların kümesidir (büyük alt sınır ile küçük üst sınır arasındaki bölge). {koyu:Fark (A \\ B)} ise A aralığında bulunup B aralığında bulunmayan elemanlardan oluşur.",
+      "ornekler": [
+        {
+          "baslik": "A = [-2, 4) ve B = (1, 6] Aralıklarında İşlemler",
+          "aciklama": "Birleşim: En sol sınır -2 (A'da kapalı), en sağ sınır 6 (B'de kapalı) olup aradaki tüm sayılar tarandığından A ∪ B = [-2, 6] olur.\n• Kesişim: Ortak bölge 1 ile 4 arasıdır. 1 sayısı B'de olmadığı için kesişimde de yoktur (açık); 4 sayısı A'da olmadığı için kesişimde de yoktur (açık). Dolayısıyla A ∩ B = (1, 4) bulunur.\n• Fark (A \\ B): [-2, 4) aralığından (1, 6] aralığını çıkardığımızda -2'den 1'e kadar olan kısım kalır. Dikkat edilirse 1 sayısı A'da vardır ama B'de yoktur (1 ∉ B); dolayısıyla 1 sayısı A'dan çıkarılamaz ve fark kümesinde kalır: A \\ B = [-2, 1]."
+        }
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Fark İşleminde Sınır Noktası Kuralı",
+        "metin": "A \\ B fark kümesini bulurken iç sınır noktasına dikkat edin: Çıkarılan B kümesinde sınır noktası AÇIK ise (B'de yoksa) o nokta silinemediği için A \\ B kümesinde KAPALI olur; B kümesinde KAPALI ise (B'de varsa) silindiği için A \\ B kümesinde AÇIK olur!"
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 290\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\">\n  <rect width=\"680\" height=\"290\" rx=\"16\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <text x=\"340\" y=\"28\" text-anchor=\"middle\" font-size=\"15.5\" font-weight=\"800\" fill=\"#0f172a\">GERÇEK SAYI ARALIKLARINDA KÜME İŞLEMLERİ: A = [-2, 4) VE B = (1, 6]</text>\n\n  <!-- Number line reference grid -->\n  <!-- Positions: -2->180, 1->330, 4->480, 6->580 -->\n  <line x1=\"180\" y1=\"45\" x2=\"180\" y2=\"265\" stroke=\"#e2e8f0\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/>\n  <line x1=\"330\" y1=\"45\" x2=\"330\" y2=\"265\" stroke=\"#e2e8f0\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/>\n  <line x1=\"480\" y1=\"45\" x2=\"480\" y2=\"265\" stroke=\"#e2e8f0\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/>\n  <line x1=\"580\" y1=\"45\" x2=\"580\" y2=\"265\" stroke=\"#e2e8f0\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/>\n\n  <text x=\"180\" y=\"44\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\">-2</text>\n  <text x=\"330\" y=\"44\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\">1</text>\n  <text x=\"480\" y=\"44\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\">4</text>\n  <text x=\"580\" y=\"44\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\">6</text>\n\n  <!-- A = [-2, 4) -->\n  <text x=\"24\" y=\"72\" font-size=\"12.5\" font-weight=\"800\" fill=\"#2563eb\">A = [-2, 4)</text>\n  <line x1=\"140\" y1=\"68\" x2=\"630\" y2=\"68\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <line x1=\"180\" y1=\"68\" x2=\"480\" y2=\"68\" stroke=\"#2563eb\" stroke-width=\"5\"/>\n  <circle cx=\"180\" cy=\"68\" r=\"5.5\" fill=\"#2563eb\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n  <circle cx=\"480\" cy=\"68\" r=\"5.5\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n\n  <!-- B = (1, 6] -->\n  <text x=\"24\" y=\"112\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\">B = (1, 6]</text>\n  <line x1=\"140\" y1=\"108\" x2=\"630\" y2=\"108\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <line x1=\"330\" y1=\"108\" x2=\"580\" y2=\"108\" stroke=\"#d97706\" stroke-width=\"5\"/>\n  <circle cx=\"330\" cy=\"108\" r=\"5.5\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"2.5\"/>\n  <circle cx=\"580\" cy=\"108\" r=\"5.5\" fill=\"#d97706\" stroke=\"#d97706\" stroke-width=\"2.5\"/>\n\n  <!-- A ∪ B = [-2, 6] -->\n  <text x=\"24\" y=\"156\" font-size=\"12.5\" font-weight=\"800\" fill=\"#059669\">A ∪ B = [-2, 6]</text>\n  <line x1=\"140\" y1=\"152\" x2=\"630\" y2=\"152\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <line x1=\"180\" y1=\"152\" x2=\"580\" y2=\"152\" stroke=\"#059669\" stroke-width=\"5\"/>\n  <circle cx=\"180\" cy=\"152\" r=\"5.5\" fill=\"#059669\" stroke=\"#059669\" stroke-width=\"2.5\"/>\n  <circle cx=\"580\" cy=\"152\" r=\"5.5\" fill=\"#059669\" stroke=\"#059669\" stroke-width=\"2.5\"/>\n\n  <!-- A ∩ B = (1, 4) -->\n  <text x=\"24\" y=\"200\" font-size=\"12.5\" font-weight=\"800\" fill=\"#7c3aed\">A ∩ B = (1, 4)</text>\n  <line x1=\"140\" y1=\"196\" x2=\"630\" y2=\"196\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <line x1=\"330\" y1=\"196\" x2=\"480\" y2=\"196\" stroke=\"#7c3aed\" stroke-width=\"5\"/>\n  <circle cx=\"330\" cy=\"196\" r=\"5.5\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/>\n  <circle cx=\"480\" cy=\"196\" r=\"5.5\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/>\n\n  <!-- A \\ B = [-2, 1] -->\n  <text x=\"24\" y=\"244\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\">A \\ B = [-2, 1]</text>\n  <line x1=\"140\" y1=\"240\" x2=\"630\" y2=\"240\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <line x1=\"180\" y1=\"240\" x2=\"330\" y2=\"240\" stroke=\"#dc2626\" stroke-width=\"5\"/>\n  <circle cx=\"180\" cy=\"240\" r=\"5.5\" fill=\"#dc2626\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n  <circle cx=\"330\" cy=\"240\" r=\"5.5\" fill=\"#dc2626\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n  <text x=\"490\" y=\"244\" font-size=\"11\" font-weight=\"700\" fill=\"#991b1b\">Dikkat: 1 ∈ A ve 1 ∉ B ⇒ 1 ∈ A\\B (Kapalı!)</text>\n\n  <text x=\"340\" y=\"278\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\">Fark ve tümleyen işlemlerinde sınır noktası çıkarılan kümede AÇIK ise sonuçta KAPALI, KAPALI ise sonuçta AÇIK olur!</text>\n</svg>"
+    },
     {
-     "metin": "Uç noktalarının her ikisi de kümeye dâhil olan [a, b] biçimindeki gerçek sayı aralığına ___ aralık denir.",
-     "cevap": "kapalı"
+      "baslik": "6. Bir Aralığın Tümleyeni ve Gerçek Yaşam Modellemesi",
+      "metin": "Gerçek sayılar kümesi {koyu:R = (-∞, ∞)} evrensel küme kabul edildiğinde, bir A aralığında bulunmayan tüm gerçek sayıların oluşturduğu kümeye {koyu:A aralığının tümleyeni} denir ve {koyu:A' = R \\ A} ile gösterilir. Bir aralığın tümleyeni alınırken sayı doğrusunda o aralığın dışında kalan bölgeler alınır; A aralığına dâhil olan (kapalı) sınır noktaları tümleyende dâhil olmaz (açık olur), A aralığına dâhil olmayan (açık) sınır noktaları ise tümleyende dâhil olur (kapalı olur). Gerçek yaşamda sıcaklık toleransları, laboratuvar güvenlik sınırları, ilaç dozaj aralıkları ve mühendislik hata payları gerçek sayı aralıkları ve bunların tümleyenleriyle modellenir.",
+      "ornekler": [
+        {
+          "baslik": "Tümleyen Alma Örnekleri",
+          "aciklama": "A = [-3, 5) yarı açık aralığının tümleyeni: -3 sayısı A'da olduğu için A' kümesinde olmaz (açık); 5 sayısı A'da olmadığı için A' kümesinde olur (kapalı). Böylece A' = (-∞, -3) ∪ [5, ∞) bulunur.\n• B = (-∞, 2] sınırsız aralığının tümleyeni: 2'den küçük veya 2'ye eşit olmayan sayılar 2'den büyük sayılardır; yani B' = (2, ∞) olur."
+        },
+        {
+          "baslik": "Gerçek Yaşam Problemi: Sera Sıcaklık Kontrolü",
+          "aciklama": "Bir serada A bitkisi [15, 26] °C aralığında, B bitkisi ise (20, 32) °C aralığında sağlıklı yetişmektedir. Her iki bitkinin aynı serada birlikte yetişebileceği sıcaklık aralığı iki kümenin kesişimi olan A ∩ B = [15, 26] ∩ (20, 32) = (20, 26] °C aralığıdır."
+        }
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "baslik": "Tümleyenin Tümleyeni",
+        "metin": "Her A gerçek sayı aralığı için A ∪ A' = R = (-∞, ∞), A ∩ A' = ∅ ve (A')' = A eşitlikleri daima geçerlidir."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 260\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\">\n  <rect width=\"680\" height=\"260\" rx=\"16\" fill=\"#fefce8\" stroke=\"#fde047\" stroke-width=\"2\"/>\n  <text x=\"340\" y=\"30\" text-anchor=\"middle\" font-size=\"15.5\" font-weight=\"800\" fill=\"#854d0e\">GERÇEK YAŞAM PROBLEMLERİNDE ARALIK MODELLEMESİ VE TÜMLEYEN</text>\n\n  <!-- Left Box: Sıcaklık / Tolerans Aralığı -->\n  <rect x=\"24\" y=\"48\" width=\"305\" height=\"192\" rx=\"12\" fill=\"#ffffff\" stroke=\"#eab308\" stroke-width=\"2\"/>\n  <rect x=\"24\" y=\"48\" width=\"305\" height=\"32\" rx=\"12\" fill=\"#ca8a04\"/>\n  <text x=\"176\" y=\"69\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">LABORATUVAR SICAKLIK ARALIĞI</text>\n  <text x=\"176\" y=\"98\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\">İdeal Sıcaklık: 20 °C (± 3 °C tolerans)</text>\n  <text x=\"176\" y=\"120\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#059669\">Güvenli Aralık: A = [17, 23]</text>\n  <line x1=\"54\" y1=\"150\" x2=\"298\" y2=\"150\" stroke=\"#cbd5e1\" stroke-width=\"2.5\"/>\n  <line x1=\"110\" y1=\"150\" x2=\"242\" y2=\"150\" stroke=\"#059669\" stroke-width=\"5\"/>\n  <circle cx=\"110\" cy=\"150\" r=\"5.5\" fill=\"#059669\"/>\n  <circle cx=\"242\" cy=\"150\" r=\"5.5\" fill=\"#059669\"/>\n  <text x=\"110\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#065f46\">17 °C</text>\n  <text x=\"242\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#065f46\">23 °C</text>\n  <text x=\"176\" y=\"198\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">Tam sayı değer sayısı: 23 - 17 + 1 = 7</text>\n  <text x=\"176\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#dc2626\">Alarm Aralığı (A'): (-∞, 17) ∪ (23, ∞)</text>\n\n  <!-- Right Box: Tümleyen Kuralı Özeti -->\n  <rect x=\"351\" y=\"48\" width=\"305\" height=\"192\" rx=\"12\" fill=\"#ffffff\" stroke=\"#f97316\" stroke-width=\"2\"/>\n  <rect x=\"351\" y=\"48\" width=\"305\" height=\"32\" rx=\"12\" fill=\"#ea580c\"/>\n  <text x=\"503\" y=\"69\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">TÜMLEYEN (A' = R \\ A) DÖNÜŞÜM TABLOSU</text>\n  <text x=\"368\" y=\"102\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">• A = [a, b]  ⇒  A' = (-∞, a) ∪ (b, ∞)</text>\n  <text x=\"368\" y=\"128\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">• A = (a, b)  ⇒  A' = (-∞, a] ∪ [b, ∞)</text>\n  <text x=\"368\" y=\"154\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">• A = [a, b)  ⇒  A' = (-∞, a) ∪ [b, ∞)</text>\n  <text x=\"368\" y=\"180\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">• A = [a, ∞)  ⇒  A' = (-∞, a)</text>\n  <text x=\"368\" y=\"206\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">• A = (-∞, b) ⇒  A' = [b, ∞)</text>\n  <text x=\"503\" y=\"228\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"700\" fill=\"#c2410c\">Kural: [ ↔ (  ve  ] ↔ )  (Sınır yön değiştirir!)</text>\n</svg>"
     }
-   ],
-   "fazla": [
-    "açık",
-    "birleşim"
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Cümlelerdeki boşlukları uygun kelimelerle tamamlayınız.",
-   "cumleler": [
+  ],
+  "ornekler": [
     {
-     "metin": "Matematiksel bir önermenin yanlış olduğunu ispatlamak için önermeyi sağlamayan tek bir ___ bulmak yeterlidir.",
-     "cevap": "aksine örnek"
+      "soru": "{kesir:2|{kok:5} - {kok:3}} + {kesir:2|{kok:5} + {kok:3}} işleminin sonucunu paydaları rasyonelleştirerek bulunuz.",
+      "cevap": "Birinci kesri ({kok:5}+{kok:3}), ikinci kesri ({kok:5}-{kok:3}) eşleniği ile genişletirsek ortak payda 5 - 3 = 2 olur. İfade {kesir:2({kok:5}+{kok:3})|2} + {kesir:2({kok:5}-{kok:3})|2} = ({kok:5}+{kok:3}) + ({kok:5}-{kok:3}) = 2{kok:5} bulunur."
+    },
+    {
+      "soru": "x < 0 < y olmak üzere {kok:{us:x|2}} + {kok:{us:y|3}|3} - {kok:{us:(x-y)|2}} ifadesinin en sade biçimini bulunuz.",
+      "cevap": "Çift dereceli köklerden ifadeler mutlak değer içinde, tek dereceli kökten aynen çıkar: |x| + y - |x - y|. x < 0 olduğundan |x| = -x ve x - y < 0 olduğundan |x - y| = -(x - y) = -x + y olur. Yerine yazılırsa: (-x) + y - (-x + y) = -x + y + x - y = 0 bulunur."
+    },
+    {
+      "soru": "Gerçek sayılar kümesinde A = [-3, 5) ve B = (1, 7] aralıkları veriliyor. A ∪ B ve A ∩ B kümelerini aralık gösterimiyle yazınız.",
+      "cevap": "Sayı doğrusunda her iki küme çizildiğinde en küçük alt sınır -3 (kapalı) ve en büyük üst sınır 7 (kapalı) olduğundan A ∪ B = [-3, 7] olur. Ortak bölgenin sınırları ise 1 (B kümesinde açık olduğundan kesişimde açık) ve 5 (A kümesinde açık olduğundan kesişimde açık) olup A ∩ B = (1, 5) bulunur."
+    },
+    {
+      "soru": "Gerçek sayılar kümesinde A = [-2, 4] ve B = (1, 6) aralıkları için A \\ B (A fark B) kümesini bulunuz.",
+      "cevap": "[-2, 4] aralığından (1, 6) aralığının elemanları çıkarıldığında -2 ile 1 arasındaki sayılar kalır. 1 sınır noktası A kümesinde vardır (1 ∈ A) ancak B kümesinde açık uç olduğundan yoktur (1 ∉ B); dolayısıyla 1 sayısı A kümesinden silinemez ve fark kümesinde kapalı uç olur: A \\ B = [-2, 1]."
+    },
+    {
+      "soru": "Gerçek sayılar kümesinde M = (-4, 3] yarı açık aralığının tümleyeni olan M' = R \\ M kümesini bulunuz.",
+      "cevap": "M = (-4, 3] aralığının dışında kalan gerçek sayılar -4 ve -4'ten küçük sayılar ile 3'ten büyük sayılardır. -4 sayısı M'de açık olduğu için M' kümesinde kapalı, 3 sayısı M'de kapalı olduğu için M' kümesinde açık olur: M' = (-∞, -4] ∪ (3, ∞)."
+    },
+    {
+      "soru": "‘Üslü ve Köklü Gösterimlerle İlgili Muhakeme ve Eşlenik İşlemleri’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
+      "cevap": "G e"
     }
-   ],
-   "fazla": [
-    "açık",
-    "birleşim"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Gerçek sayılar kümesinde M = (-3, 5] ve N = [1, 8) aralıkları veriliyor.\na) M ∪ N ve M ∩ N kümelerini aralık olarak yazınız.\nb) M \\ N kümesini bulunuz ve bu kümede kaç tane tam sayı olduğunu hesaplayınız.",
-   "ipuclari": [
-    "1. Adım: Sayı doğrusunda -3, 1, 5 ve 8 noktalarını işaretleyerek M = (-3, 5] ve N = [1, 8) aralıklarını gösteriniz.",
-    "2. Adım: Birleşim için en sol sınır (-3, açık) ile en sağ sınırı (8, açık); kesişim için ortak bölgenin sınırlarını (1 kapalı, 5 kapalı) belirleyiniz.",
-    "3. Adım: M \\ N fark kümesinde 1 sınır noktası N kümesine dâhil olduğu için (1 ∈ N) fark kümesinde açık uç olacağına dikkat ediniz."
-   ],
-   "cevap": "a) İki aralığın birleşimi en küçük alt sınır -3 (açık) ile en büyük üst sınır 8 (açık) arasındaki tüm gerçek sayılardır: M ∪ N = (-3, 8). Ortak bölge ise 1 (her iki kümede de var, kapalı) ile 5 (her iki kümede de var, kapalı) arasıdır: M ∩ N = [1, 5].\nb) M = (-3, 5] kümesinden N = [1, 8) kümesini çıkardığımızda -3 ile 1 arasındaki kısım kalır. 1 sayısı N kümesinin elemanı olduğu için (1 ∈ N) M kümesinden silinir ve açık uç olur: M \\ N = (-3, 1). Bu aralıktaki tam sayılar {-2, -1, 0} olup toplam 3 tanedir."
-  }
- ]
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Gerçek sayılar kümesinde tanımlı A = [-4, 3) ve B = (0, 5] aralıkları veriliyor. Buna göre A \\ B (A fark B) kümesi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "[-4, 0]",
+        "[-4, 0)",
+        "(0, 3)",
+        "[-4, 5]",
+        "Münhasıran dış görünüşe dayalı tesadüfi bir değişimdir."
+      ],
+      "dogru": 0,
+      "aciklama": "A = [-4, 3) aralığından B = (0, 5] aralığının elemanları çıkarıldığında -4 ile 0 arasındaki sayılar kalır. -4 sayısı A'da kapalı olduğundan sonuçta kapalıdır. 0 sayısı ise A kümesinde vardır (0 ∈ A) fakat B kümesinde açık uç olduğundan yoktur (0 ∉ B); dolayısıyla 0 sayısı A'dan çıkarılamaz ve fark kümesinde kalır: A \\ B = [-4, 0]."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Gerçek sayılar kümesinde K = (-2, 6] aralığının tümleyeni olan K' = R \\ K kümesi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "(-∞, -2) ∪ [6, ∞)",
+        "(-∞, -2] ∪ (6, ∞)",
+        "(-∞, -2) ∪ (6, ∞)",
+        "[-2, 6)",
+        "Münhasıran dış görünüşe dayalı tesadüfi bir değişimdir."
+      ],
+      "dogru": 1,
+      "aciklama": "K = (-2, 6] aralığında -2 elemanı yoktur (-2 ∉ K), bu yüzden tümleyen kümesinde -2 yer alır (kapalı uç: -2]). 6 elemanı K kümesinde vardır (6 ∈ K), bu yüzden tümleyende yer almaz (açık uç: (6). Dolayısıyla K' = (-∞, -2] ∪ (6, ∞) olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "‘Sınırlı Gerçek Sayı Aralıkları: Açık, Kapalı ve Yarı Açık Aralıklar’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Gerçek sayı doğrusu üzerinde birbirinden farklı iki nokta arasındaki tüm gerçek sayıların oluşturduğu alt kümeye gerçek sayı aralığı denir.",
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 2,
+      "aciklama": "Sınırlı Gerçek Sayı Aralıkları: Açık, Kapalı ve Yarı Açık Aralıklar bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "‘Sınırsız Gerçek Sayı Aralıkları’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "-∞ ve +∞ birer gerçek sayı olmadığı için hiçbir kümeye eleman olarak dâhil edilemez.",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 3,
+      "aciklama": "Sınırsız Gerçek Sayı Aralıkları bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Gerçek sayı aralıklarında sonsuz (-∞ veya ∞) sembolünün bulunduğu uç daima açık parantez ile gösterilir.",
+          "dogru": true,
+          "aciklama": "Sonsuz bir gerçek sayı olmadığı için kümeye dâhil edilemez; bu nedenle daima (-∞, a veya b, ∞) şeklinde açık parantez kullanılır."
+        },
+        {
+          "metin": "A = [-1, 4] ve B = (2, 7) aralıklarının kesişimi A ∩ B = [2, 4] kapalı aralığıdır.",
+          "dogru": false,
+          "aciklama": "2 sayısı B = (2, 7) aralığına dâhil olmadığı için (2 ∉ B) kesişim kümesine de dâhil olamaz. Doğru kesişim kümesi A ∩ B = (2, 4] yarı açık aralığıdır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki gerçek sayı kümelerini ve aralık işlemlerini doğru karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "{x | -3 ≤ x < 5, x ∈ R}",
+          "[-3, 5) yarı açık aralığı"
+        ],
+        [
+          "{x | x > 4, x ∈ R}",
+          "(4, ∞) sınırsız açık aralığı"
+        ],
+        [
+          "[-1, 3] ∩ (1, 6)",
+          "(1, 3] yarı açık aralığı"
+        ],
+        [
+          "[2, ∞) aralığının tümleyeni",
+          "(-∞, 2) sınırsız açık aralığı"
+        ],
+        [
+          "Q ∪ Q' (Rasyonel ve irrasyonel birleşimi)",
+          "R = (-∞, ∞) gerçek sayılar kümesi"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Uç noktalarının her ikisi de kümeye dâhil olan [a, b] biçimindeki gerçek sayı aralığına ___ aralık denir.",
+          "cevap": "kapalı"
+        },
+        {
+          "metin": "Matematiksel bir önermenin yanlış olduğunu ispatlamak için önermeyi sağlamayan tek bir ___ bulmak yeterlidir.",
+          "cevap": "aksine örnek"
+        }
+      ],
+      "fazla": [
+        "açık",
+        "birleşim",
+        "açık",
+        "birleşim"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Gerçek sayılar kümesinde M = (-3, 5] ve N = [1, 8) aralıkları veriliyor.\na) M ∪ N ve M ∩ N kümelerini aralık olarak yazınız.\nb) M \\ N kümesini bulunuz ve bu kümede kaç tane tam sayı olduğunu hesaplayınız.",
+      "cevap": "a) İki aralığın birleşimi en küçük alt sınır -3 (açık) ile en büyük üst sınır 8 (açık) arasındaki tüm gerçek sayılardır: M ∪ N = (-3, 8). Ortak bölge ise 1 (her iki kümede de var, kapalı) ile 5 (her iki kümede de var, kapalı) arasıdır: M ∩ N = [1, 5].\nb) M = (-3, 5] kümesinden N = [1, 8) kümesini çıkardığımızda -3 ile 1 arasındaki kısım kalır. 1 sayısı N kümesinin elemanı olduğu için (1 ∈ N) M kümesinden silinir ve açık uç olur: M \\ N = (-3, 1). Bu aralıktaki tam sayılar {-2, -1, 0} olup toplam 3 tanedir.",
+      "ipuclari": [
+        "1. Adım: Sayı doğrusunda -3, 1, 5 ve 8 noktalarını işaretleyerek M = (-3, 5] ve N = [1, 8) aralıklarını gösteriniz.",
+        "2. Adım: Birleşim için en sol sınır (-3, açık) ile en sağ sınırı (8, açık); kesişim için ortak bölgenin sınırlarını (1 kapalı, 5 kapalı) belirleyiniz.",
+        "3. Adım: M \\ N fark kümesinde 1 sınır noktası N kümesine dâhil olduğu için (1 ∈ N) fark kümesinde açık uç olacağına dikkat ediniz."
+      ]
+    }
+  ]
 }

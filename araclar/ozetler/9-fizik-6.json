@@ -1,288 +1,279 @@
 {
- "ad": "9-fizik-6",
- "sinif": 9,
- "ders": "fizik",
- "ders_adi": "Fizik",
- "hafta": 6,
- "tarih": "19-23 Ekim 2026",
- "yayin_tarihi": "2026-10-21",
- "unite": "KUVVET VE HAREKET",
- "konu": "Skaler ve Vektörel Nicelikler",
- "ciktilar": [
-  "Fiziksel nicelikleri skaler ve vektörel nicelikler olarak sınıflandırır ve karşılaştırır.",
-  "Bir vektörün dört temel elemanını (başlangıç noktası, doğrultu, yön, büyüklük/şiddet) belirler; eşit ve zıt vektörleri ayırt eder.",
-  "Vektörlerin bir skalerle çarpımını ve aynı/zıt yönlü veya dik vektörlerin bileşkesini (toplamını) hesaplar."
- ],
- "giris": "Marketten '3 kilogram elma' aldığımızda veya havanın '25 derece' olduğunu söylediğimizde hiçbir yön belirtmemize gerek kalmaz. Ancak bir masayı ittiğimizde veya bir uçağın hareketini tarif ettiğimizde yalnızca büyüklüğü söylemek yetmez; hangi yöne doğru kuvvet uygulandığını veya hareket edildiğini de mutlaka belirtmemiz gerekir. Bu hafta 'Kuvvet ve Hareket' ünitemizde fiziksel nicelikleri 'skaler' ve 'vektörel' olarak karşılaştıracak, vektörlerin özelliklerini ve bileşke vektör hesaplamalarını öğreneceğiz.",
- "ozet": [
-  "Yalnızca sayı (büyüklük) ve birim ile eksiksiz ifade edilebilen yönsüz niceliklere 'skaler nicelik' denir (kütle, zaman, sıcaklık, uzunluk, alınan yol, sürat, enerji, iş, güç, basınç).",
-  "Sayı ve birimin yanında doğrultu ve yön bilgisinin de belirtilmesi gereken niceliklere 'vektörel nicelik' denir (kuvvet, ağırlık, konum, yer değiştirme, hız, ivme, elektrik alan).",
-  "Bir vektörün dört temel elemanı vardır: 1. Başlangıç (uygulama) noktası, 2. Doğrultu, 3. Yön, 4. Büyüklük (şiddet).",
-  "Yönleri, doğrultuları ve büyüklükleri tamamen aynı olan vektörlere 'eşit vektörler'; doğrultuları ve büyüklükleri aynı, yönleri birbirine ters olan vektörlere ise 'zıt vektörler' denir.",
-  "Bir vektör pozitif bir sayıyla çarpılırsa yönü değişmez, negatif bir sayıyla çarpılırsa yönü 180° ters döner.",
-  "Birden fazla vektörün yaptığı etkiyi tek başına yapabilen vektöre 'bileşke vektör (R)' denir; aynı yönlü vektörler toplanır, zıt yönlü vektörler çıkarılır."
- ],
- "bolumler": [
-  {
-   "baslik": "1. Skaler ve Vektörel Niceliklerin Karşılaştırılması",
-   "metin": [
-    "Fizikte ölçülebilir büyüklükler yön bilgisine ihtiyaç duyup duymamalarına göre iki gruba ayrılır. Yalnızca bir {koyu:sayı (ölçü değeri)} ve {koyu:birim} kullanıldığında tam olarak anlaşılan, yönü olmayan büyüklüklere {koyu:skaler nicelikler} denir. Skaler nicelikler kendi aralarında doğrudan aritmetik kurallarla toplanır ve çıkarılır (3 kg + 2 kg = 5 kg). Fizikteki {koyu:7 temel büyüklüğün tamamı} (kütle, ışık şiddeti, sıcaklık, akım şiddeti, madde miktarı, uzunluk, zaman) ile {koyu:alınan yol, sürat, iş, güç, enerji, hacim, özkütle ve basınç} skaler niceliklerdir.",
-    "Sayı ve birimin yanı sıra {koyu:başlangıç noktası, doğrultu ve yönünün} de bilinmesi zorunlu olan büyüklüklere ise {koyu:vektörel nicelikler} denir. Örneğin 'Araca 50 N kuvvet uygulandı' cümlesi aracın nereye gideceğini anlamamız için yeterli değildir; 'Doğu yönünde 50 N kuvvet uygulandı' denilmelidir. {koyu:Kuvvet, ağırlık, konum, yer değiştirme, hız, ivme, momentum, tork, elektrik alan ve manyetik alan} başlıca vektörel niceliklerdir."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "Sık Karıştırılan İkililer!",
-    "metin": "• Kütle (m) SKALER — Ağırlık (G) VEKTÖRELDİR.\n• Alınan Yol (x) SKALER — Yer Değiştirme (Δx) VEKTÖRELDİR.\n• Sürat (v) SKALER — Hız (v) VEKTÖRELDİR.\n• Basınç (P) SKALER — Basınç Kuvveti (F) VEKTÖRELDİR."
-   },
-   "gorsel": "<svg viewBox=\"0 0 680 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"10\" y=\"10\" width=\"660\" height=\"220\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"340.0\" y=\"38\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">SKALER VE VEKTÖREL NİCELİKLERİN KARŞILAŞTIRILMASI</text><rect x=\"30\" y=\"56\" width=\"300\" height=\"160\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"180.0\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#1d4ed8\" text-anchor=\"middle\">Skaler Nicelikler (Yönsüz)</text><line x1=\"42\" y1=\"92\" x2=\"318\" y2=\"92\" stroke=\"#3b82f6\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"180.0\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">• Sadece sayı ve birim ile tam ifade edilir</text><text x=\"180.0\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">• Doğrultu ve yön bilgisi içermez</text><text x=\"180.0\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">• Kütle (kg), Zaman (s), Sıcaklık (K), Uzunluk (m)</text><text x=\"180.0\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">• Alınan yol, Sürat, Enerji, İş, Güç, Basınç</text><rect x=\"350\" y=\"56\" width=\"300\" height=\"160\" rx=\"12\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"2\"/><text x=\"500.0\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\" text-anchor=\"middle\">Vektörel Nicelikler (Yönlü)</text><line x1=\"362\" y1=\"92\" x2=\"638\" y2=\"92\" stroke=\"#22c55e\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"500.0\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">• Sayı, birim + DOĞRULTU ve YÖN gerekir</text><text x=\"500.0\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">• Sembolün üzerine ok işareti konur</text><text x=\"500.0\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">• Kuvvet (F), Ağırlık (G), Yer değiştirme (Δx)</text><text x=\"500.0\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">• Konum (x), Hız (v), İvme (a), Momentum (p)</text></svg>"
-  },
-  {
-   "baslik": "2. Vektörlerin Gösterimi ve Dört Temel Elemanı",
-   "metin": [
-    "Vektörel bir nicelik sembolle gösterilirken harfin üzerine küçük bir sağa ok işareti konulur (örneğin kuvvet için F vektörü). Vektörler geometrik olarak yönlü doğru parçalarıyla (oklarla) modellenir ve her vektörün {koyu:dört temel elemanı} vardır: 1. {koyu:Başlangıç (Uygulama) Noktası:} Vektörün başladığı, etki ettiği noktadır. 2. {koyu:Doğrultu:} Vektörün üzerinde bulunduğu sonsuz doğrudur (örneğin Doğu-Batı doğrultusu veya yatay x-doğrultusu).",
-    "3. {koyu:Yön:} Vektörün ok ucunun gösterdiği taraftır (aynı doğrultu üzerinde birbirine zıt iki yön bulunur; örneğin Doğu yönü veya Batı yönü). 4. {koyu:Büyüklük (Şiddet):} Vektörün sayısal değeridir ve çizilen okun uzunluğu ile doğru orantılıdır. Bir A vektörünün büyüklüğü mutlak değer içinde {koyu:|A|} veya ok işareti olmadan yalnızca {koyu:A} harfiyle gösterilir ve büyüklük daima sıfır veya pozitiftir."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Doğrultu ve Yön Aynı Şey Değildir!",
-    "metin": "Doğu'ya giden bir araç ile Batı'ya giden bir aracın YÖNLERİ zıttır, ancak DOĞRULTULARI (Doğu-Batı doğrultusu) aynıdır! Yönleri aynı olan iki vektörün doğrultuları kesinlikle aynıdır; fakat doğrultuları aynı olan iki vektörün yönleri zıt olabilir."
-   },
-   "gorsel": "<svg viewBox=\"0 0 680 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"10\" y=\"10\" width=\"660\" height=\"220\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"340.0\" y=\"38\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">BİR VEKTÖRÜN DÖRT TEMEL ELEMANI</text><rect x=\"30\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#fae8ff\" stroke=\"#d946ef\" stroke-width=\"2\"/><text x=\"127.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\" text-anchor=\"middle\">1. Başlangıç Noktası</text><line x1=\"42\" y1=\"92\" x2=\"213\" y2=\"92\" stroke=\"#d946ef\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"127.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Vektörün uygulama noktası</text><text x=\"127.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Okun başladığı nokta (K)</text><text x=\"127.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">2. Doğrultu (Taşıyıcı Doğru)</text><text x=\"127.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Doğu-Batı veya x-ekseni</text><rect x=\"242\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/><text x=\"339.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0369a1\" text-anchor=\"middle\">3. Yön</text><line x1=\"254\" y1=\"92\" x2=\"425\" y2=\"92\" stroke=\"#0284c7\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"339.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Ok ucunun gösterdiği taraf</text><text x=\"339.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Aynı doğrultuda iki zıt yön</text><text x=\"339.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">(Örn: +x yönü veya Doğu)</text><text x=\"339.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Ok ucu yönü temsil eder</text><rect x=\"454\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\"/><text x=\"551.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#b45309\" text-anchor=\"middle\">4. Büyüklük (Şiddet)</text><line x1=\"466\" y1=\"92\" x2=\"637\" y2=\"92\" stroke=\"#f59e0b\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"551.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Vektörün sayısal değeri</text><text x=\"551.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Okun boyu ile doğru orantılı</text><text x=\"551.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">|A| veya A ile gösterilir</text><text x=\"551.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Büyüklük daima ≥ 0 (pozitif)</text></svg>"
-  },
-  {
-   "baslik": "3. Eşit Vektörler ve Zıt (Ters) Vektörler",
-   "metin": [
-    "İki vektörün birbirine {koyu:eşit vektörler (K = L)} olabilmesi için hem {koyu:büyüklüklerinin (şiddetlerinin)} eşit olması hem de {koyu:doğrultu ve yönlerinin birebir aynı} olması şarttır. Başlangıç noktaları farklı yerlerde olsa bile yönü ve boyu aynı olan vektörler eşittir. Ancak yönleri farklı olan iki vektörün boyları eşit olsa bile bu vektörler eşit değildir ({koyu:K ≠ L}), sadece büyüklükleri eşittir ({koyu:|K| = |L|}).",
-    "Doğrultuları ve büyüklükleri (boyları) birbirine eşit, ancak {koyu:yönleri birbirine tam zıt (180° ters)} olan iki vektöre ise {koyu:zıt (ters) vektörler} denir. K vektörü ile M vektörü zıt vektörler ise {koyu:K = -M} veya {koyu:M = -K} şeklinde yazılır; büyüklükleri ise birbirine eşittir ({koyu:|K| = |M|})."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Mutlak Değer (Büyüklük) Tuzağı",
-    "metin": "Sorularda K ve M zıt vektörler olduğunda 'K = -M' ifadesi DOĞRUDUR; ancak '|K| = -|M|' ifadesi YANLIŞTIR! Çünkü mutlak değer büyüklük demektir ve negatif olamaz; doğrusu '|K| = |M|' şeklindedir."
-   },
-   "gorsel": "<svg viewBox=\"0 0 680 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"10\" y=\"10\" width=\"660\" height=\"220\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"340.0\" y=\"38\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">EŞİT VEKTÖRLER, ZIT VEKTÖRLER VE SKALERLE ÇARPIM</text><rect x=\"30\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#ede9fe\" stroke=\"#8b5cf6\" stroke-width=\"2\"/><text x=\"127.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#6d28d9\" text-anchor=\"middle\">Eşit Vektörler (K = L)</text><line x1=\"42\" y1=\"92\" x2=\"213\" y2=\"92\" stroke=\"#8b5cf6\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"127.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Yönleri AYNI olmalı</text><text x=\"127.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Doğrultuları AYNI olmalı</text><text x=\"127.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Büyüklükleri EŞİT olmalı</text><text x=\"127.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">|K| = |L| her zaman K = L demek değildir!</text><rect x=\"242\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#ffe4e6\" stroke=\"#f43f5e\" stroke-width=\"2\"/><text x=\"339.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#be123c\" text-anchor=\"middle\">Zıt Vektörler (K = -M)</text><line x1=\"254\" y1=\"92\" x2=\"425\" y2=\"92\" stroke=\"#f43f5e\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"339.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Doğrultuları AYNI</text><text x=\"339.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Büyüklükleri EŞİT (|K| = |M|)</text><text x=\"339.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Yönleri birbirine ZIT (180°)</text><text x=\"339.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">-K vektörü K’nin tersidir</text><rect x=\"454\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#dcfce7\" stroke=\"#10b981\" stroke-width=\"2\"/><text x=\"551.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#047857\" text-anchor=\"middle\">Skalerle Çarpma (c . A)</text><line x1=\"466\" y1=\"92\" x2=\"637\" y2=\"92\" stroke=\"#10b981\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"551.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">c &gt; 0 ise yön değişmez</text><text x=\"551.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">c &lt; 0 ise yön 180° ters döner</text><text x=\"551.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Büyüklük |c| katına çıkar</text><text x=\"551.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Örn: -2A (zıt yönlü, 2 kat boy)</text></svg>"
-  },
-  {
-   "baslik": "4. Bir Vektörün Skaler (Gerçek) Sayı ile Çarpılması",
-   "metin": [
-    "Bir A vektörü sıfırdan farklı bir c gerçek (skaler) sayısı ile çarpıldığında yeni bir vektör elde edilir ve bu vektörün büyüklüğü {koyu:|c| . |A|} kadar olur. Çarpılan skaler sayının işareti vektörün yönünü belirler:",
-    "Eğer {koyu:c > 0 (pozitif)} ise elde edilen yeni vektörün yönü A vektörü ile {koyu:aynıdır} (örneğin 3A vektörü, A ile aynı yönlü ve boyu 3 katı olan vektördür). Eğer {koyu:c < 0 (negatif)} ise elde edilen vektörün doğrultusu değişmez ancak {koyu:yönü 180° ters döner} (örneğin -2A vektörü, A'ya zıt yönlü ve boyu A'nın 2 katı olan vektördür)."
-   ],
-   "kutu": {
-    "tur": "tanim",
-    "baslik": "Birim Kareli Düzlemde Vektör Okuma",
-    "metin": "Birim kareli düzlemde verilen vektörlerin boyları kare bölmeleri sayılarak (veya köşegen ise Pisagor bağıntısıyla) karşılaştırılır."
-   }
-  },
-  {
-   "baslik": "5. Vektörlerin Toplanması ve Bileşke Vektör (R)",
-   "metin": [
-    "İki veya daha fazla vektörün bir cisim üzerinde yaptığı etkiyi tek başına yapabilen vektöre {koyu:bileşke vektör (toplam vektör)} denir ve genellikle {koyu:R} sembolüyle gösterilir. Aynı doğrultu üzerindeki (tek boyuttaki) vektörlerin bileşkesi bulunurken: 1. {koyu:Aynı yönlü vektörlerin} büyüklükleri toplanır ({koyu:R = F1 + F2}) ve bileşke vektör bu vektörlerle aynı yönde olur. 2. {koyu:Zıt yönlü vektörlerin} büyüklükleri birbirinden çıkarılır ({koyu:R = |F1 - F2|}) ve bileşke vektör {koyu:büyüklüğü fazla olan vektörün yönünde} olur.",
-    "Eğer bir cisme etki eden zıt yönlü iki kuvvetin büyüklükleri birbirine eşitse bileşke kuvvet sıfır olur ({koyu:R = 0}). Bileşke kuvvetin sıfır olduğu bu duruma {koyu:dengelenmiş kuvvetler etkisindeki durum} denir. Bir sistemi dengede tutan (bileşkeyi sıfırlayan), yani bileşke vektörle eşit büyüklükte ve zıt yönlü olan kuvvete ise {koyu:dengeleyici kuvvet (-R)} adı verilir."
-   ],
-   "kutu": {
-    "tur": "bilgi",
-    "baslik": "İki Vektörün Bileşkesinin Alabileceği Değer Aralığı",
-    "metin": "Büyüklükleri F1 ve F2 olan iki vektörün bileşkesi (R), vektörler aynı yönlü olduğunda en büyük (F1 + F2), zıt yönlü olduğunda ise en küçük (|F1 - F2|) değerini alır: |F1 - F2| ≤ R ≤ F1 + F2."
-   },
-   "gorsel": "<svg viewBox=\"0 0 680 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"10\" y=\"10\" width=\"660\" height=\"220\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"340.0\" y=\"38\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">TEK BOYUTTA VE İKİ BOYUTTA VEKTÖRLERİN TOPLANMASI</text><rect x=\"30\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#ffedd5\" stroke=\"#f97316\" stroke-width=\"2\"/><text x=\"127.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#c2410c\" text-anchor=\"middle\">Aynı Yönlü Vektörler</text><line x1=\"42\" y1=\"92\" x2=\"213\" y2=\"92\" stroke=\"#f97316\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"127.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Büyüklükler toplanır:</text><text x=\"127.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">R = F1 + F2</text><text x=\"127.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Bileşke (R) aynı yöndedir</text><text x=\"127.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Maksimum bileşke elde edilir</text><rect x=\"242\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"2\"/><text x=\"339.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#4338ca\" text-anchor=\"middle\">Zıt Yönlü Vektörler</text><line x1=\"254\" y1=\"92\" x2=\"425\" y2=\"92\" stroke=\"#6366f1\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"339.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Büyüklükler çıkarılır:</text><text x=\"339.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">R = |F1 - F2|</text><text x=\"339.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Bileşke BÜYÜK olanın yönünde</text><text x=\"339.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Eşit ve zıtsa R = 0 (Denge!)</text><rect x=\"454\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"2\"/><text x=\"551.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">Uç Uca &amp; Dik Vektörler</text><line x1=\"466\" y1=\"92\" x2=\"637\" y2=\"92\" stroke=\"#64748b\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"551.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Birinin bitimine diğeri eklenir</text><text x=\"551.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">İlk başlangıçtan son bitime R</text><text x=\"551.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Aralarında 90° varsa Pisagor:</text><text x=\"551.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">R² = F1² + F2² (Örn: 3-4-5)</text></svg>"
-  },
-  {
-   "baslik": "6. İki Boyutta Vektörlerin Toplanması: Uç Uca Ekleme ve Dik Vektörler",
-   "metin": [
-    "Farklı doğrultulardaki vektörler toplanırken {koyu:uç uca ekleme yöntemi} veya {koyu:paralelkenar yöntemi} kullanılır. Uç uca ekleme yönteminde birinci vektörün bittiği noktaya (ok ucuna), ikinci vektörün başlangıç noktası yönü ve büyüklüğü değiştirilmeden taşınır. İlk vektörün başlangıç noktasından son vektörün bitiş noktasına (ok ucuna) çizilen vektör {koyu:bileşke vektörü (R)} verir.",
-    "Aralarında {koyu:90° (dik açı)} bulunan iki vektörün bileşkesinin büyüklüğü ise dik üçgende {koyu:Pisagor bağıntısı} kullanılarak hesaplanır: {koyu:R² = F1² + F2²}. Özellikle {koyu:3-4-5}, {koyu:6-8-10} ve {koyu:5-12-13} özel dik üçgenleri fizik problemlerinde büyük kolaylık sağlar (örneğin birbirine dik 6 N ve 8 N büyüklüğündeki iki kuvvetin bileşkesi 10 N'dur)."
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "baslik": "Kapalı Çokgen Kuralı",
-    "metin": "Uç uca eklenen vektörlerin en sonuncusunun ok ucu, ilk vektörün başlangıç noktasına geri dönüyorsa (kapalı bir şekil oluşuyorsa) bu vektörlerin bileşkesi sıfırdır (R = 0)!"
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Kütle, ağırlık, sürat, hız, alınan yol, yer değiştirme, sıcaklık ve kuvvet niceliklerini skaler ve vektörel olarak sınıflandırınız.",
-   "cevap": "Skaler nicelikler (yönsüz): Kütle, sürat, alınan yol, sıcaklık. Vektörel nicelikler (yönlü): Ağırlık, hız, yer değiştirme, kuvvet."
-  },
-  {
-   "soru": "Yatay ve sürtünmesiz düzlemdeki bir K cismine Doğu yönünde 15 N ve 10 N, Batı yönünde ise 18 N büyüklüğünde üç kuvvet aynı anda etki etmektedir. Bileşke kuvvetin (R) ve dengeleyici kuvvetin yönünü ve büyüklüğünü bulunuz.",
-   "cevap": "Doğu yönündeki kuvvetlerin toplamı: 15 + 10 = 25 N (Doğu). Batı yönündeki kuvvet: 18 N (Batı). Zıt yönlü oldukları için çıkarılır: R = 25 - 18 = 7 N ve büyük olanın yönünde yani Doğu yönündedir. Dengeleyici kuvvet ise bileşkeye eşit büyüklükte ve zıt yönlü olduğu için Batı yönünde 7 N'dur."
-  },
-  {
-   "soru": "Aynı düzlemde bulunan K vektörü Kuzey yönünde 4 birim, L vektörü ise Güney yönünde 8 birimdir. Buna göre K, L ve (-2K) vektörleri arasındaki eşitlik bağıntısını yazınız.",
-   "cevap": "K vektörü Kuzey yönünde 4 birim ise, (-2K) vektörü K'ye zıt yönde (Güney yönünde) ve 2 . 4 = 8 birim büyüklüğündedir. L vektörü de Güney yönünde 8 birim olduğuna göre L = -2K (veya K = -L/2) bağıntısı vardır."
-  },
-  {
-   "soru": "Aynı noktaya etki eden ve aralarında 90° açı bulunan iki kuvvetten biri Doğu yönünde 12 N, diğeri Kuzey yönünde 5 N büyüklüğündedir. Bileşke kuvvetin büyüklüğü kaç N'dur?",
-   "cevap": "Doğu ile Kuzey yönleri birbirine diktir (90°). Pisagor bağıntısına göre: R² = 12² + 5² = 144 + 25 = 169 => R = 13 N bulunur (5-12-13 özel dik üçgeni)."
-  },
-  {
-   "soru": "Büyüklükleri 7 N ve 11 N olan iki kuvvetin bileşkesinin alabileceği en küçük ve en büyük tam sayı değerleri kaç N'dur?",
-   "cevap": "İki kuvvet zıt yönlü olduğunda bileşke en küçük değerini alır: R_min = |11 - 7| = 4 N. İki kuvvet aynı yönlü olduğunda ise bileşke en büyük değerini alır: R_max = 11 + 7 = 18 N."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "Aşağıdaki fiziksel nicelik çiftlerinden hangisinin her ikisi de VEKTÖREL niceliktir?",
-   "secenekler": [
-    "Kütle - Zaman",
-    "Alınan yol - Sürat",
-    "Kuvvet - Yer değiştirme",
-    "Sıcaklık - Enerji",
-    "Hız - Kütle"
-   ],
-   "dogru": 2,
-   "aciklama": "Kuvvet ve yer değiştirme yönlü (vektörel) niceliklerdir; kütle, zaman, alınan yol, sürat, sıcaklık ve enerji ise skalerdir."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Aşağıdakilerden hangisi bir vektörün dört temel elemanından biri DEĞİLDİR?",
-   "secenekler": [
-    "Başlangıç (uygulama) noktası",
-    "Doğrultu",
-    "Yön",
-    "Büyüklük (şiddet)",
-    "Cisim sıcaklığı"
-   ],
-   "dogru": 4,
-   "aciklama": "Bir vektörün elemanları başlangıç noktası, doğrultu, yön ve büyüklüktür."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Yatay düzlemde Doğu yönünde 6 birimlik K vektörü ile Batı yönünde 6 birimlik L vektörü veriliyor. Bu iki vektör için aşağıdakilerden hangisi DOĞRUDUR?",
-   "secenekler": [
-    "Yönleri aynıdır.",
-    "Eşit vektörlerdir (K = L).",
-    "Doğrultuları birbirine diktir.",
-    "Zıt vektörlerdir (K = -L) ve büyüklükleri eşittir (|K| = |L|).",
-    "Toplamları (bileşkesi) Doğu yönünde 12 birimdir."
-   ],
-   "dogru": 3,
-   "aciklama": "Doğu ve Batı aynı doğrultu üzerinde iki zıt yöndür; boyları da 6 birim olduğundan K ve L zıt vektörlerdir (K = -L) ve bileşkeleri sıfırdır."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Sürtünmesiz yatay düzlemde duran bir koliyi Ali Doğu yönünde 25 N, Burak Doğu yönünde 15 N, Can ise Batı yönünde 30 N kuvvetle çekmektedir. Koliye etki eden bileşke kuvvetin yönü ve büyüklüğü nedir?",
-   "secenekler": [
-    "Doğu yönünde 10 N",
-    "Batı yönünde 10 N",
-    "Doğu yönünde 70 N",
-    "Batı yönünde 30 N",
-    "Doğu yönünde 40 N"
-   ],
-   "dogru": 0,
-   "aciklama": "Doğu yönünde toplam 25 + 15 = 40 N, Batı yönünde 30 N kuvvet vardır. 40 - 30 = 10 N Doğu yönünde bileşke kuvvet oluşur."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Aynı düzlemde uç uca eklenen K, L, M ve N vektörlerinden son vektör olan N'nin ok ucu, ilk vektör olan K'nin başlangıç noktasıyla çakışmaktadır. Buna göre K + L + M + N toplam vektörü kaçtır?",
-   "secenekler": [
-    "2K",
-    "2N",
-    "-K",
-    "0 (Sıfır vektörü)",
-    "4K"
-   ],
-   "dogru": 3,
-   "aciklama": "Uç uca eklenen vektörler kapalı bir çokgen oluşturup başladığı noktaya dönüyorsa bileşke vektör sıfırdır (R = 0)."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "9-fizik-6",
+  "sinif": 9,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 6,
+  "tarih": "19-23 Ekim 2026",
+  "yayin_tarihi": "2026-10-21",
+  "unite": "KUVVET VE HAREKET",
+  "konu": "Skaler ve Vektörel Nicelikler",
+  "ciktilar": [
+    "Fiziksel nicelikleri skaler ve vektörel nicelikler olarak sınıflandırır ve karşılaştırır.",
+    "Bir vektörün dört temel elemanını (başlangıç noktası, doğrultu, yön, büyüklük/şiddet) belirler; eşit ve zıt vektörleri ayırt eder.",
+    "Vektörlerin bir skalerle çarpımını ve aynı/zıt yönlü veya dik vektörlerin bileşkesini (toplamını) hesaplar."
+  ],
+  "giris": "Marketten '3 kilogram elma' aldığımızda veya havanın '25 derece' olduğunu söylediğimizde hiçbir yön belirtmemize gerek kalmaz. Ancak bir masayı ittiğimizde veya bir uçağın hareketini tarif ettiğimizde yalnızca büyüklüğü söylemek yetmez; hangi yöne doğru kuvvet uygulandığını veya hareket edildiğini de mutlaka belirtmemiz gerekir. Bu hafta 'Kuvvet ve Hareket' ünitemizde fiziksel nicelikleri 'skaler' ve 'vektörel' olarak karşılaştıracak, vektörlerin özelliklerini ve bileşke vektör hesaplamalarını öğreneceğiz.",
+  "ozet": [
+    "Yalnızca sayı (büyüklük) ve birim ile eksiksiz ifade edilebilen yönsüz niceliklere 'skaler nicelik' denir (kütle, zaman, sıcaklık, uzunluk, alınan yol, sürat, enerji, iş, güç, basınç).",
+    "Sayı ve birimin yanında doğrultu ve yön bilgisinin de belirtilmesi gereken niceliklere 'vektörel nicelik' denir (kuvvet, ağırlık, konum, yer değiştirme, hız, ivme, elektrik alan).",
+    "Bir vektörün dört temel elemanı vardır: 1. Başlangıç (uygulama) noktası, 2. Doğrultu, 3. Yön, 4. Büyüklük (şiddet).",
+    "Yönleri, doğrultuları ve büyüklükleri tamamen aynı olan vektörlere 'eşit vektörler'; doğrultuları ve büyüklükleri aynı, yönleri birbirine ters olan vektörlere ise 'zıt vektörler' denir.",
+    "Bir vektör pozitif bir sayıyla çarpılırsa yönü değişmez, negatif bir sayıyla çarpılırsa yönü 180° ters döner.",
+    "Birden fazla vektörün yaptığı etkiyi tek başına yapabilen vektöre 'bileşke vektör (R)' denir; aynı yönlü vektörler toplanır, zıt yönlü vektörler çıkarılır."
+  ],
+  "bolumler": [
     {
-     "metin": "Fizikteki yedi temel büyüklüğün (kütle, uzunluk, zaman, sıcaklık, akım şiddeti, ışık şiddeti, madde miktarı) tamamı skalerdir.",
-     "dogru": true,
-     "aciklama": "Temel büyüklüklerin hiçbirinde yön bilgisi aranmaz."
+      "baslik": "1. Skaler ve Vektörel Niceliklerin Karşılaştırılması",
+      "metin": [
+        "Fizikte ölçülebilir büyüklükler yön bilgisine ihtiyaç duyup duymamalarına göre iki gruba ayrılır. Yalnızca bir {koyu:sayı (ölçü değeri)} ve {koyu:birim} kullanıldığında tam olarak anlaşılan, yönü olmayan büyüklüklere {koyu:skaler nicelikler} denir. Skaler nicelikler kendi aralarında doğrudan aritmetik kurallarla toplanır ve çıkarılır (3 kg + 2 kg = 5 kg). Fizikteki {koyu:7 temel büyüklüğün tamamı} (kütle, ışık şiddeti, sıcaklık, akım şiddeti, madde miktarı, uzunluk, zaman) ile {koyu:alınan yol, sürat, iş, güç, enerji, hacim, özkütle ve basınç} skaler niceliklerdir.",
+        "Sayı ve birimin yanı sıra {koyu:başlangıç noktası, doğrultu ve yönünün} de bilinmesi zorunlu olan büyüklüklere ise {koyu:vektörel nicelikler} denir. Örneğin 'Araca 50 N kuvvet uygulandı' cümlesi aracın nereye gideceğini anlamamız için yeterli değildir; 'Doğu yönünde 50 N kuvvet uygulandı' denilmelidir. {koyu:Kuvvet, ağırlık, konum, yer değiştirme, hız, ivme, momentum, tork, elektrik alan ve manyetik alan} başlıca vektörel niceliklerdir."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Sık Karıştırılan İkililer!",
+        "metin": "Kütle (m) SKALER — Ağırlık (G) VEKTÖRELDİR.\n• Alınan Yol (x) SKALER — Yer Değiştirme (Δx) VEKTÖRELDİR.\n• Sürat (v) SKALER — Hız (v) VEKTÖRELDİR.\n• Basınç (P) SKALER — Basınç Kuvveti (F) VEKTÖRELDİR."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"10\" y=\"10\" width=\"660\" height=\"220\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"340.0\" y=\"38\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">SKALER VE VEKTÖREL NİCELİKLERİN KARŞILAŞTIRILMASI</text><rect x=\"30\" y=\"56\" width=\"300\" height=\"160\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"180.0\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#1d4ed8\" text-anchor=\"middle\">Skaler Nicelikler (Yönsüz)</text><line x1=\"42\" y1=\"92\" x2=\"318\" y2=\"92\" stroke=\"#3b82f6\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"180.0\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">• Sadece sayı ve birim ile tam ifade edilir</text><text x=\"180.0\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">• Doğrultu ve yön bilgisi içermez</text><text x=\"180.0\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">• Kütle (kg), Zaman (s), Sıcaklık (K), Uzunluk (m)</text><text x=\"180.0\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">• Alınan yol, Sürat, Enerji, İş, Güç, Basınç</text><rect x=\"350\" y=\"56\" width=\"300\" height=\"160\" rx=\"12\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"2\"/><text x=\"500.0\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\" text-anchor=\"middle\">Vektörel Nicelikler (Yönlü)</text><line x1=\"362\" y1=\"92\" x2=\"638\" y2=\"92\" stroke=\"#22c55e\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"500.0\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">• Sayı, birim + DOĞRULTU ve YÖN gerekir</text><text x=\"500.0\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">• Sembolün üzerine ok işareti konur</text><text x=\"500.0\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">• Kuvvet (F), Ağırlık (G), Yer değiştirme (Δx)</text><text x=\"500.0\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">• Konum (x), Hız (v), İvme (a), Momentum (p)</text></svg>"
     },
     {
-     "metin": "Büyüklükleri eşit olan iki vektörün yönleri farklı olsa bile bu iki vektör birbirine eşittir.",
-     "dogru": false,
-     "aciklama": "İki vektörün eşit olması için hem büyüklüklerinin hem de yönlerinin aynı olması şarttır."
+      "baslik": "2. Vektörlerin Gösterimi ve Dört Temel Elemanı",
+      "metin": [
+        "Vektörel bir nicelik sembolle gösterilirken harfin üzerine küçük bir sağa ok işareti konulur (örneğin kuvvet için F vektörü). Vektörler geometrik olarak yönlü doğru parçalarıyla (oklarla) modellenir ve her vektörün {koyu:dört temel elemanı} vardır: 1. {koyu:Başlangıç (Uygulama) Noktası:} Vektörün başladığı, etki ettiği noktadır. 2. {koyu:Doğrultu:} Vektörün üzerinde bulunduğu sonsuz doğrudur (örneğin Doğu-Batı doğrultusu veya yatay x-doğrultusu).",
+        "3. {koyu:Yön:} Vektörün ok ucunun gösterdiği taraftır (aynı doğrultu üzerinde birbirine zıt iki yön bulunur; örneğin Doğu yönü veya Batı yönü). 4. {koyu:Büyüklük (Şiddet):} Vektörün sayısal değeridir ve çizilen okun uzunluğu ile doğru orantılıdır. Bir A vektörünün büyüklüğü mutlak değer içinde {koyu:|A|} veya ok işareti olmadan yalnızca {koyu:A} harfiyle gösterilir ve büyüklük daima sıfır veya pozitiftir."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Doğrultu ve Yön Aynı Şey Değildir!",
+        "metin": "Doğu'ya giden bir araç ile Batı'ya giden bir aracın YÖNLERİ zıttır, ancak DOĞRULTULARI (Doğu-Batı doğrultusu) aynıdır! Yönleri aynı olan iki vektörün doğrultuları kesinlikle aynıdır; fakat doğrultuları aynı olan iki vektörün yönleri zıt olabilir."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"10\" y=\"10\" width=\"660\" height=\"220\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"340.0\" y=\"38\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">BİR VEKTÖRÜN DÖRT TEMEL ELEMANI</text><rect x=\"30\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#fae8ff\" stroke=\"#d946ef\" stroke-width=\"2\"/><text x=\"127.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\" text-anchor=\"middle\">1. Başlangıç Noktası</text><line x1=\"42\" y1=\"92\" x2=\"213\" y2=\"92\" stroke=\"#d946ef\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"127.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Vektörün uygulama noktası</text><text x=\"127.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Okun başladığı nokta (K)</text><text x=\"127.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">2. Doğrultu (Taşıyıcı Doğru)</text><text x=\"127.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Doğu-Batı veya x-ekseni</text><rect x=\"242\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/><text x=\"339.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0369a1\" text-anchor=\"middle\">3. Yön</text><line x1=\"254\" y1=\"92\" x2=\"425\" y2=\"92\" stroke=\"#0284c7\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"339.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Ok ucunun gösterdiği taraf</text><text x=\"339.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Aynı doğrultuda iki zıt yön</text><text x=\"339.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">(Örn: +x yönü veya Doğu)</text><text x=\"339.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Ok ucu yönü temsil eder</text><rect x=\"454\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\"/><text x=\"551.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#b45309\" text-anchor=\"middle\">4. Büyüklük (Şiddet)</text><line x1=\"466\" y1=\"92\" x2=\"637\" y2=\"92\" stroke=\"#f59e0b\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"551.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Vektörün sayısal değeri</text><text x=\"551.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Okun boyu ile doğru orantılı</text><text x=\"551.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">|A| veya A ile gösterilir</text><text x=\"551.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Büyüklük daima ≥ 0 (pozitif)</text></svg>"
     },
     {
-     "metin": "Bir vektör negatif bir gerçek sayıyla (-1, -2 gibi) çarpıldığında yönü 180° ters döner.",
-     "dogru": true,
-     "aciklama": "Negatif skalerle çarpım vektörün doğrultusunu korur ancak yönünü ters çevirir."
+      "baslik": "3. Eşit Vektörler ve Zıt (Ters) Vektörler",
+      "metin": [
+        "İki vektörün birbirine {koyu:eşit vektörler (K = L)} olabilmesi için hem {koyu:büyüklüklerinin (şiddetlerinin)} eşit olması hem de {koyu:doğrultu ve yönlerinin birebir aynı} olması şarttır. Başlangıç noktaları farklı yerlerde olsa bile yönü ve boyu aynı olan vektörler eşittir. Ancak yönleri farklı olan iki vektörün boyları eşit olsa bile bu vektörler eşit değildir ({koyu:K ≠ L}), sadece büyüklükleri eşittir ({koyu:|K| = |L|}).",
+        "Doğrultuları ve büyüklükleri (boyları) birbirine eşit, ancak {koyu:yönleri birbirine tam zıt (180° ters)} olan iki vektöre ise {koyu:zıt (ters) vektörler} denir. K vektörü ile M vektörü zıt vektörler ise {koyu:K = -M} veya {koyu:M = -K} şeklinde yazılır; büyüklükleri ise birbirine eşittir ({koyu:|K| = |M|})."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Mutlak Değer (Büyüklük) Tuzağı",
+        "metin": "Sorularda K ve M zıt vektörler olduğunda 'K = -M' ifadesi DOĞRUDUR; ancak '|K| = -|M|' ifadesi YANLIŞTIR! Çünkü mutlak değer büyüklük demektir ve negatif olamaz; doğrusu '|K| = |M|' şeklindedir."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"10\" y=\"10\" width=\"660\" height=\"220\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"340.0\" y=\"38\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">EŞİT VEKTÖRLER, ZIT VEKTÖRLER VE SKALERLE ÇARPIM</text><rect x=\"30\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#ede9fe\" stroke=\"#8b5cf6\" stroke-width=\"2\"/><text x=\"127.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#6d28d9\" text-anchor=\"middle\">Eşit Vektörler (K = L)</text><line x1=\"42\" y1=\"92\" x2=\"213\" y2=\"92\" stroke=\"#8b5cf6\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"127.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Yönleri AYNI olmalı</text><text x=\"127.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Doğrultuları AYNI olmalı</text><text x=\"127.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Büyüklükleri EŞİT olmalı</text><text x=\"127.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">|K| = |L| her zaman K = L demek değildir!</text><rect x=\"242\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#ffe4e6\" stroke=\"#f43f5e\" stroke-width=\"2\"/><text x=\"339.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#be123c\" text-anchor=\"middle\">Zıt Vektörler (K = -M)</text><line x1=\"254\" y1=\"92\" x2=\"425\" y2=\"92\" stroke=\"#f43f5e\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"339.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Doğrultuları AYNI</text><text x=\"339.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Büyüklükleri EŞİT (|K| = |M|)</text><text x=\"339.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Yönleri birbirine ZIT (180°)</text><text x=\"339.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">-K vektörü K’nin tersidir</text><rect x=\"454\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#dcfce7\" stroke=\"#10b981\" stroke-width=\"2\"/><text x=\"551.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#047857\" text-anchor=\"middle\">Skalerle Çarpma (c . A)</text><line x1=\"466\" y1=\"92\" x2=\"637\" y2=\"92\" stroke=\"#10b981\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"551.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">c &gt; 0 ise yön değişmez</text><text x=\"551.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">c &lt; 0 ise yön 180° ters döner</text><text x=\"551.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Büyüklük |c| katına çıkar</text><text x=\"551.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Örn: -2A (zıt yönlü, 2 kat boy)</text></svg>"
     },
     {
-     "metin": "Birbirine dik olan 3 N ve 4 N büyüklüğündeki iki kuvvetin bileşkesinin büyüklüğü 7 N'dur.",
-     "dogru": false,
-     "aciklama": "Dik vektörlerde Pisagor bağıntısı uygulanır: R² = 3² + 4² = 25 => R = 5 N olur (aynı yönlü olsalardı 7 N olurdu)."
+      "baslik": "4. Bir Vektörün Skaler (Gerçek) Sayı ile Çarpılması",
+      "metin": [
+        "Bir A vektörü sıfırdan farklı bir c gerçek (skaler) sayısı ile çarpıldığında yeni bir vektör elde edilir ve bu vektörün büyüklüğü {koyu:|c| . |A|} kadar olur. Çarpılan skaler sayının işareti vektörün yönünü belirler:",
+        "Eğer {koyu:c > 0 (pozitif)} ise elde edilen yeni vektörün yönü A vektörü ile {koyu:aynıdır} (örneğin 3A vektörü, A ile aynı yönlü ve boyu 3 katı olan vektördür). Eğer {koyu:c < 0 (negatif)} ise elde edilen vektörün doğrultusu değişmez ancak {koyu:yönü 180° ters döner} (örneğin -2A vektörü, A'ya zıt yönlü ve boyu A'nın 2 katı olan vektördür)."
+      ],
+      "kutu": {
+        "tur": "tanim",
+        "baslik": "Birim Kareli Düzlemde Vektör Okuma",
+        "metin": "Birim kareli düzlemde verilen vektörlerin boyları kare bölmeleri sayılarak (veya köşegen ise Pisagor bağıntısıyla) karşılaştırılır."
+      }
     },
     {
-     "metin": "Bir cisme etki eden bileşke kuvvet sıfır ise cisim dengelenmiş kuvvetler etkisindedir.",
-     "dogru": true,
-     "aciklama": "Net kuvvetin (R) sıfır olduğu durumlara dengelenmiş kuvvetler durumu denir."
+      "baslik": "5. Vektörlerin Toplanması ve Bileşke Vektör (R)",
+      "metin": [
+        "İki veya daha fazla vektörün bir cisim üzerinde yaptığı etkiyi tek başına yapabilen vektöre {koyu:bileşke vektör (toplam vektör)} denir ve genellikle {koyu:R} sembolüyle gösterilir. Aynı doğrultu üzerindeki (tek boyuttaki) vektörlerin bileşkesi bulunurken: 1. {koyu:Aynı yönlü vektörlerin} büyüklükleri toplanır ({koyu:R = F1 + F2}) ve bileşke vektör bu vektörlerle aynı yönde olur. 2. {koyu:Zıt yönlü vektörlerin} büyüklükleri birbirinden çıkarılır ({koyu:R = |F1 - F2|}) ve bileşke vektör {koyu:büyüklüğü fazla olan vektörün yönünde} olur.",
+        "Eğer bir cisme etki eden zıt yönlü iki kuvvetin büyüklükleri birbirine eşitse bileşke kuvvet sıfır olur ({koyu:R = 0}). Bileşke kuvvetin sıfır olduğu bu duruma {koyu:dengelenmiş kuvvetler etkisindeki durum} denir. Bir sistemi dengede tutan (bileşkeyi sıfırlayan), yani bileşke vektörle eşit büyüklükte ve zıt yönlü olan kuvvete ise {koyu:dengeleyici kuvvet (-R)} adı verilir."
+      ],
+      "kutu": {
+        "tur": "bilgi",
+        "baslik": "İki Vektörün Bileşkesinin Alabileceği Değer Aralığı",
+        "metin": "Büyüklükleri F1 ve F2 olan iki vektörün bileşkesi (R), vektörler aynı yönlü olduğunda en büyük (F1 + F2), zıt yönlü olduğunda ise en küçük (|F1 - F2|) değerini alır: |F1 - F2| ≤ R ≤ F1 + F2."
+      },
+      "gorsel": "<svg viewBox=\"0 0 680 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;\"><rect x=\"10\" y=\"10\" width=\"660\" height=\"220\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"340.0\" y=\"38\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">TEK BOYUTTA VE İKİ BOYUTTA VEKTÖRLERİN TOPLANMASI</text><rect x=\"30\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#ffedd5\" stroke=\"#f97316\" stroke-width=\"2\"/><text x=\"127.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#c2410c\" text-anchor=\"middle\">Aynı Yönlü Vektörler</text><line x1=\"42\" y1=\"92\" x2=\"213\" y2=\"92\" stroke=\"#f97316\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"127.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Büyüklükler toplanır:</text><text x=\"127.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">R = F1 + F2</text><text x=\"127.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Bileşke (R) aynı yöndedir</text><text x=\"127.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Maksimum bileşke elde edilir</text><rect x=\"242\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"2\"/><text x=\"339.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#4338ca\" text-anchor=\"middle\">Zıt Yönlü Vektörler</text><line x1=\"254\" y1=\"92\" x2=\"425\" y2=\"92\" stroke=\"#6366f1\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"339.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Büyüklükler çıkarılır:</text><text x=\"339.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">R = |F1 - F2|</text><text x=\"339.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Bileşke BÜYÜK olanın yönünde</text><text x=\"339.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Eşit ve zıtsa R = 0 (Denge!)</text><rect x=\"454\" y=\"56\" width=\"195\" height=\"160\" rx=\"12\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"2\"/><text x=\"551.5\" y=\"82\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">Uç Uca &amp; Dik Vektörler</text><line x1=\"466\" y1=\"92\" x2=\"637\" y2=\"92\" stroke=\"#64748b\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/><text x=\"551.5\" y=\"114\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Birinin bitimine diğeri eklenir</text><text x=\"551.5\" y=\"136\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">İlk başlangıçtan son bitime R</text><text x=\"551.5\" y=\"158\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">Aralarında 90° varsa Pisagor:</text><text x=\"551.5\" y=\"180\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">R² = F1² + F2² (Örn: 3-4-5)</text></svg>"
+    },
+    {
+      "baslik": "6. İki Boyutta Vektörlerin Toplanması: Uç Uca Ekleme ve Dik Vektörler",
+      "metin": [
+        "Farklı doğrultulardaki vektörler toplanırken {koyu:uç uca ekleme yöntemi} veya {koyu:paralelkenar yöntemi} kullanılır. Uç uca ekleme yönteminde birinci vektörün bittiği noktaya (ok ucuna), ikinci vektörün başlangıç noktası yönü ve büyüklüğü değiştirilmeden taşınır. İlk vektörün başlangıç noktasından son vektörün bitiş noktasına (ok ucuna) çizilen vektör {koyu:bileşke vektörü (R)} verir.",
+        "Aralarında {koyu:90° (dik açı)} bulunan iki vektörün bileşkesinin büyüklüğü ise dik üçgende {koyu:Pisagor bağıntısı} kullanılarak hesaplanır: {koyu:R² = F1² + F2²}. Özellikle {koyu:3-4-5}, {koyu:6-8-10} ve {koyu:5-12-13} özel dik üçgenleri fizik problemlerinde büyük kolaylık sağlar (örneğin birbirine dik 6 N ve 8 N büyüklüğündeki iki kuvvetin bileşkesi 10 N'dur)."
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "baslik": "Kapalı Çokgen Kuralı",
+        "metin": "Uç uca eklenen vektörlerin en sonuncusunun ok ucu, ilk vektörün başlangıç noktasına geri dönüyorsa (kapalı bir şekil oluşuyorsa) bu vektörlerin bileşkesi sıfırdır (R = 0)!"
+      }
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "soru": "Aşağıdaki kavramları açıklamalarıyla eşleştiriniz.",
-   "ciftler": [
-    [
-     "Skaler Nicelik",
-     "Yalnızca sayı ve birimle ifade edilen yönsüz büyüklük (kütle, sıcaklık)"
-    ],
-    [
-     "Vektörel Nicelik",
-     "Sayı ve birimin yanında yön ve doğrultu gerektiren büyüklük (kuvvet, hız)"
-    ],
-    [
-     "Eşit Vektörler",
-     "Yönleri, doğrultuları ve büyüklükleri tamamen aynı olan vektörler"
-    ],
-    [
-     "Bileşke Vektör (R)",
-     "Birden fazla vektörün yaptığı etkiyi tek başına yapabilen toplam vektör"
-    ],
-    [
-     "Dengeleyici Kuvvet (-R)",
-     "Bileşke kuvvetle eşit büyüklükte ve zıt yönlü olup sistemi dengeleyen kuvvet"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
-   "cumleler": [
+  ],
+  "ornekler": [
     {
-     "metin": "Madde miktarının ölçüsü olan kütle skaler bir nicelik iken, kütleye etki eden yer çekimi kuvveti olan ___ vektörel bir niceliktir.",
-     "cevap": "ağırlık"
+      "soru": "Kütle, ağırlık, sürat, hız, alınan yol, yer değiştirme, sıcaklık ve kuvvet niceliklerini skaler ve vektörel olarak sınıflandırınız.",
+      "cevap": "Skaler nicelikler (yönsüz): Kütle, sürat, alınan yol, sıcaklık. Vektörel nicelikler (yönlü): Ağırlık, hız, yer değiştirme, kuvvet."
     },
     {
-     "metin": "Bir vektörün sayısal değerine o vektörün ___ (veya şiddeti) denir.",
-     "cevap": "büyüklüğü"
+      "soru": "Yatay ve sürtünmesiz düzlemdeki bir K cismine Doğu yönünde 15 N ve 10 N, Batı yönünde ise 18 N büyüklüğünde üç kuvvet aynı anda etki etmektedir. Bileşke kuvvetin (R) ve dengeleyici kuvvetin yönünü ve büyüklüğünü bulunuz.",
+      "cevap": "Doğu yönündeki kuvvetlerin toplamı: 15 + 10 = 25 N (Doğu). Batı yönündeki kuvvet: 18 N (Batı). Zıt yönlü oldukları için çıkarılır: R = 25 - 18 = 7 N ve büyük olanın yönünde yani Doğu yönündedir. Dengeleyici kuvvet ise bileşkeye eşit büyüklükte ve zıt yönlü olduğu için Batı yönünde 7 N'dur."
     },
     {
-     "metin": "Doğrultuları ve büyüklükleri aynı, yönleri birbirine ters olan iki vektöre ___ vektörler denir.",
-     "cevap": "zıt"
+      "soru": "Aynı düzlemde bulunan K vektörü Kuzey yönünde 4 birim, L vektörü ise Güney yönünde 8 birimdir. Buna göre K, L ve (-2K) vektörleri arasındaki eşitlik bağıntısını yazınız.",
+      "cevap": "K vektörü Kuzey yönünde 4 birim ise, (-2K) vektörü K'ye zıt yönde (Güney yönünde) ve 2 . 4 = 8 birim büyüklüğündedir. L vektörü de Güney yönünde 8 birim olduğuna göre L = -2K (veya K = -L/2) bağıntısı vardır."
     },
     {
-     "metin": "Aynı doğrultuda ve zıt yönde olan iki vektörün bileşkesi daima ___ olan vektörün yönündedir.",
-     "cevap": "büyük"
+      "soru": "Aynı noktaya etki eden ve aralarında 90° açı bulunan iki kuvvetten biri Doğu yönünde 12 N, diğeri Kuzey yönünde 5 N büyüklüğündedir. Bileşke kuvvetin büyüklüğü kaç N'dur?",
+      "cevap": "Doğu ile Kuzey yönleri birbirine diktir (90°). Pisagor bağıntısına göre: R² = 12² + 5² = 144 + 25 = 169 => R = 13 N bulunur (5-12-13 özel dik üçgeni)."
     },
     {
-     "metin": "Farklı doğrultudaki vektörleri toplarken birinin bitiş noktasına diğerinin başlangıç noktasını taşıma işlemine ___ ekleme yöntemi denir.",
-     "cevap": "uç uca"
+      "soru": "Büyüklükleri 7 N ve 11 N olan iki kuvvetin bileşkesinin alabileceği en küçük ve en büyük tam sayı değerleri kaç N'dur?",
+      "cevap": "İki kuvvet zıt yönlü olduğunda bileşke en küçük değerini alır: R_min = |11 - 7| = 4 N. İki kuvvet aynı yönlü olduğunda ise bileşke en büyük değerini alır: R_max = 11 + 7 = 18 N."
+    },
+    {
+      "soru": "Aynı düzlemde uç uca eklenen K, L, M ve N vektörlerinden son vektör olan N'nin ok ucu, ilk vektör olan K'nin başlangıç noktasıyla çakışmaktadır. Buna göre K + L + M + N toplam vektörü kaçtır?",
+      "cevap": "Doğru yanıt: 0 (Sıfır vektörü). Uç uca eklenen vektörler kapalı bir çokgen oluşturup başladığı noktaya dönüyorsa bileşke vektör sıfırdır (R = 0)."
     }
-   ],
-   "fazla": [
-    "sürat",
-    "küçük"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "'Alınan yol ve sürat' ile 'yer değiştirme ve hız' kavramlarını bir atletin 400 metrelik dairesel pistte başladığı noktaya geri dönerek 1 tam turu 50 saniyede tamamlaması örneği üzerinden skaler ve vektörel açıdan karşılaştırınız.",
-   "ipuclari": [
-    "1. İpucu: Atletin aldığı toplam yolu (400 m) ve ilk-son konum arasındaki yönlü mesafeyi (yer değiştirmeyi = 0) bulunuz.",
-    "2. İpucu: Sürati (Yol / Zaman) ve hızı (Yer değiştirme / Zaman) hesaplayarak neden farklı çıktıklarını açıklayınız."
-   ],
-   "cevap": "Atlet dairesel pistte başladığı noktaya geri döndüğü için skaler olan 'alınan yol' 400 metredir ve skaler olan 'sürati' 400 / 50 = 8 m/s'dir. Ancak başladığı nokta ile bitirdiği nokta aynı olduğu için vektörel olan 'yer değiştirmesi' sıfırdır (Δx = 0) ve buna bağlı olarak vektörel olan 'ortalama hızı' da 0 / 50 = 0 m/s'dir."
-  }
- ]
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki fiziksel nicelik çiftlerinden hangisinin her ikisi de VEKTÖREL niceliktir?",
+      "secenekler": [
+        "Kuvvet - Yer değiştirme",
+        "Alınan yol - Sürat",
+        "Kütle - Zaman",
+        "Sıcaklık - Enerji",
+        "Hız - Kütle"
+      ],
+      "dogru": 0,
+      "aciklama": "Kuvvet ve yer değiştirme yönlü (vektörel) niceliklerdir; kütle, zaman, alınan yol, sürat, sıcaklık ve enerji ise skalerdir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdakilerden hangisi bir vektörün dört temel elemanından biri DEĞİLDİR?",
+      "secenekler": [
+        "Başlangıç (uygulama) noktası",
+        "Cisim sıcaklığı",
+        "Yön",
+        "Büyüklük (şiddet)",
+        "Doğrultu"
+      ],
+      "dogru": 1,
+      "aciklama": "Bir vektörün elemanları başlangıç noktası, doğrultu, yön ve büyüklüktür."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Yatay düzlemde Doğu yönünde 6 birimlik K vektörü ile Batı yönünde 6 birimlik L vektörü veriliyor. Bu iki vektör için aşağıdakilerden hangisi DOĞRUDUR?",
+      "secenekler": [
+        "Yönleri aynıdır.",
+        "Eşit vektörlerdir (K = L).",
+        "Zıt vektörlerdir (K = -L) ve büyüklükleri eşittir (|K| = |L|).",
+        "Doğrultuları birbirine diktir.",
+        "Toplamları (bileşkesi) Doğu yönünde 12 birimdir."
+      ],
+      "dogru": 2,
+      "aciklama": "Doğu ve Batı aynı doğrultu üzerinde iki zıt yöndür; boyları da 6 birim olduğundan K ve L zıt vektörlerdir (K = -L) ve bileşkeleri sıfırdır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Sürtünmesiz yatay düzlemde duran bir koliyi Ali Doğu yönünde 25 N, Burak Doğu yönünde 15 N, Can ise Batı yönünde 30 N kuvvetle çekmektedir. Koliye etki eden bileşke kuvvetin yönü ve büyüklüğü nedir?",
+      "secenekler": [
+        "Batı yönünde 30 N",
+        "Batı yönünde 10 N",
+        "Doğu yönünde 70 N",
+        "Doğu yönünde 10 N",
+        "Doğu yönünde 40 N"
+      ],
+      "dogru": 3,
+      "aciklama": "Doğu yönünde toplam 25 + 15 = 40 N, Batı yönünde 30 N kuvvet vardır. 40 - 30 = 10 N Doğu yönünde bileşke kuvvet oluşur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Fizikteki yedi temel büyüklüğün (kütle, uzunluk, zaman, sıcaklık, akım şiddeti, ışık şiddeti, madde miktarı) tamamı skalerdir.",
+          "dogru": true,
+          "aciklama": "Temel büyüklüklerin hiçbirinde yön bilgisi aranmaz."
+        },
+        {
+          "metin": "Büyüklükleri eşit olan iki vektörün yönleri farklı olsa bile bu iki vektör birbirine eşittir.",
+          "dogru": false,
+          "aciklama": "İki vektörün eşit olması için hem büyüklüklerinin hem de yönlerinin aynı olması şarttır."
+        },
+        {
+          "metin": "Bir vektör negatif bir gerçek sayıyla (-1, -2 gibi) çarpıldığında yönü 180° ters döner.",
+          "dogru": true,
+          "aciklama": "Negatif skalerle çarpım vektörün doğrultusunu korur ancak yönünü ters çevirir."
+        },
+        {
+          "metin": "Birbirine dik olan 3 N ve 4 N büyüklüğündeki iki kuvvetin bileşkesinin büyüklüğü 7 N'dur.",
+          "dogru": false,
+          "aciklama": "Dik vektörlerde Pisagor bağıntısı uygulanır: R² = 3² + 4² = 25 => R = 5 N olur (aynı yönlü olsalardı 7 N olurdu)."
+        },
+        {
+          "metin": "Bir cisme etki eden bileşke kuvvet sıfır ise cisim dengelenmiş kuvvetler etkisindedir.",
+          "dogru": true,
+          "aciklama": "Net kuvvetin (R) sıfır olduğu durumlara dengelenmiş kuvvetler durumu denir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Skaler Nicelik",
+          "Yalnızca sayı ve birimle ifade edilen yönsüz büyüklük (kütle, sıcaklık)"
+        ],
+        [
+          "Vektörel Nicelik",
+          "Sayı ve birimin yanında yön ve doğrultu gerektiren büyüklük (kuvvet, hız)"
+        ],
+        [
+          "Eşit Vektörler",
+          "Yönleri, doğrultuları ve büyüklükleri tamamen aynı olan vektörler"
+        ],
+        [
+          "Bileşke Vektör (R)",
+          "Birden fazla vektörün yaptığı etkiyi tek başına yapabilen toplam vektör"
+        ],
+        [
+          "Dengeleyici Kuvvet (-R)",
+          "Bileşke kuvvetle eşit büyüklükte ve zıt yönlü olup sistemi dengeleyen kuvvet"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Madde miktarının ölçüsü olan kütle skaler bir nicelik iken, kütleye etki eden yer çekimi kuvveti olan ___ vektörel bir niceliktir.",
+          "cevap": "ağırlık"
+        },
+        {
+          "metin": "Bir vektörün sayısal değerine o vektörün ___ (veya şiddeti) denir.",
+          "cevap": "büyüklüğü"
+        },
+        {
+          "metin": "Doğrultuları ve büyüklükleri aynı, yönleri birbirine ters olan iki vektöre ___ vektörler denir.",
+          "cevap": "zıt"
+        },
+        {
+          "metin": "Aynı doğrultuda ve zıt yönde olan iki vektörün bileşkesi daima ___ olan vektörün yönündedir.",
+          "cevap": "büyük"
+        },
+        {
+          "metin": "Farklı doğrultudaki vektörleri toplarken birinin bitiş noktasına diğerinin başlangıç noktasını taşıma işlemine ___ ekleme yöntemi denir.",
+          "cevap": "uç uca"
+        }
+      ],
+      "fazla": [
+        "sürat",
+        "küçük"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "'Alınan yol ve sürat' ile 'yer değiştirme ve hız' kavramlarını bir atletin 400 metrelik dairesel pistte başladığı noktaya geri dönerek 1 tam turu 50 saniyede tamamlaması örneği üzerinden skaler ve vektörel açıdan karşılaştırınız.",
+      "cevap": "Atlet dairesel pistte başladığı noktaya geri döndüğü için skaler olan 'alınan yol' 400 metredir ve skaler olan 'sürati' 400 / 50 = 8 m/s'dir. Ancak başladığı nokta ile bitirdiği nokta aynı olduğu için vektörel olan 'yer değiştirmesi' sıfırdır (Δx = 0) ve buna bağlı olarak vektörel olan 'ortalama hızı' da 0 / 50 = 0 m/s'dir.",
+      "ipuclari": [
+        "1. İpucu: Atletin aldığı toplam yolu (400 m) ve ilk-son konum arasındaki yönlü mesafeyi (yer değiştirmeyi = 0) bulunuz.",
+        "2. İpucu: Sürati (Yol / Zaman) ve hızı (Yer değiştirme / Zaman) hesaplayarak neden farklı çıktıklarını açıklayınız."
+      ]
+    }
+  ]
 }

@@ -1,0 +1,235 @@
+{
+  "sinif": 12,
+  "hafta": 7,
+  "ders": "biyoloji",
+  "unite": "Genden Proteine",
+  "konu": "DNA'nın Kendini Eşlemesi (Replikasyon) ve Aziz Sancar'ın Bilime Katkısı (12.1.1.4)",
+  "tarih": "2026-10-26",
+  "ciktilar": [
+    "DNA'nın yarı korunumlu (semikonservatif) eşlenme mekanizmasını Meselson ve Stahl deneyleriyle açıklar.",
+    "Prokaryot ve ökaryot hücrelerde replikasyon orijini farkını ve replikasyonda görevli temel enzimlerin (helikaz, DNA polimeraz, DNA ligaz) işlevlerini açıklar.",
+    "Prof. Dr. Aziz Sancar'ın DNA onarım mekanizmaları üzerine yaptığı çalışmaları ve örnek bilim insanı kimliğini değerlendirir."
+  ],
+  "giris": "Hücre bölünmesi öncesinde kalıtsal bilginin yeni hücrelere eksiksiz ve hatasız aktarılabilmesi için DNA molekülünün kendisinin bir kopyasını oluşturması gerekir. 'Replikasyon' adı verilen bu süreçte görev alan özel enzimler mükemmel bir uyum içinde çalışır. Bu bölümde DNA'nın yarı korunumlu eşlenmesini, replikasyonda görevli enzimleri ve DNA onarım mekanizmalarını aydınlatarak Nobel Ödülü kazanan Prof. Dr. Aziz Sancar'ın bilime katkılarını inceleyeceğiz.",
+  "bolumler": [
+    {
+      "baslik": "DNA'nın Yarı Korunumlu Eşlenmesi (Replikasyon)",
+      "metin": [
+        "Bir DNA molekülünün hücre bölünmesi öncesinde kendisiyle aynı genetik bilgiye sahip iki yeni DNA molekülü oluşturmasına {koyu:replikasyon (DNA eşlenmesi)} denir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#1e293b\">DNA'NIN YARI KORUNUMLU EŞLENMESİ VE GÖREVLİ 3 TEMEL ENZİM</text>\n\n  <!-- Sol Kutu: Yarı Korunumlu Eşlenme ve Orijin -->\n  <rect x=\"16\" y=\"42\" width=\"318\" height=\"202\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"175\" y=\"64\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">MESELSON - STAHL (YARI KORUNUMLU)</text>\n  <line x1=\"30\" y1=\"72\" x2=\"320\" y2=\"72\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/>\n  <!-- Ata DNA -->\n  <line x1=\"45\" y1=\"92\" x2=\"45\" y2=\"142\" stroke=\"#1d4ed8\" stroke-width=\"4\"/>\n  <line x1=\"57\" y1=\"92\" x2=\"57\" y2=\"142\" stroke=\"#1d4ed8\" stroke-width=\"4\"/>\n  <text x=\"51\" y=\"158\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#1e3a8a\">Ata DNA</text>\n  <line x1=\"72\" y1=\"117\" x2=\"102\" y2=\"117\" stroke=\"#475569\" stroke-width=\"2\"/>\n  <polygon points=\"106,117 98,113 98,121\" fill=\"#475569\"/>\n  <!-- 2 Yeni DNA -->\n  <line x1=\"122\" y1=\"86\" x2=\"122\" y2=\"120\" stroke=\"#1d4ed8\" stroke-width=\"4\"/>\n  <line x1=\"132\" y1=\"86\" x2=\"132\" y2=\"120\" stroke=\"#dc2626\" stroke-width=\"4\"/>\n  <line x1=\"122\" y1=\"128\" x2=\"122\" y2=\"162\" stroke=\"#1d4ed8\" stroke-width=\"4\"/>\n  <line x1=\"132\" y1=\"128\" x2=\"132\" y2=\"162\" stroke=\"#dc2626\" stroke-width=\"4\"/>\n  <text x=\"232\" y=\"102\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\">1 Eski (Kalıp) Zincir</text>\n  <text x=\"232\" y=\"120\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">+ 1 Yeni Zincir</text>\n  <text x=\"232\" y=\"140\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">(¹⁵N ve ¹⁴N E. coli deneyi)</text>\n\n  <rect x=\"28\" y=\"172\" width=\"294\" height=\"60\" rx=\"6\" fill=\"#dbeafe\" stroke=\"#3b82f6\"/>\n  <text x=\"175\" y=\"190\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\">Replikasyon Orijini Sayısı:</text>\n  <text x=\"175\" y=\"207\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#1e3a8a\">• Prokaryot (Halkasal DNA): TEK replikasyon orijini</text>\n  <text x=\"175\" y=\"223\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#1e3a8a\">• Ökaryot (Doğrusal DNA): ÇOK SAYIDA orijin</text>\n\n  <!-- Sağ Kutu: Görevli 3 Enzim -->\n  <rect x=\"348\" y=\"42\" width=\"336\" height=\"202\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"516\" y=\"64\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">REPLİKASYONDA GÖREVLİ ENZİMLER</text>\n  <line x1=\"362\" y1=\"72\" x2=\"670\" y2=\"72\" stroke=\"#86efac\" stroke-width=\"1.5\"/>\n\n  <rect x=\"360\" y=\"82\" width=\"312\" height=\"46\" rx=\"6\" fill=\"#dcfce7\" stroke=\"#22c55e\"/>\n  <text x=\"370\" y=\"100\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">1. Helikaz:</text>\n  <text x=\"370\" y=\"116\" font-size=\"10\" fill=\"#166534\">Zayıf hidrojen bağlarını koparıp sarmalı açar (ATP harcanmaz).</text>\n\n  <rect x=\"360\" y=\"135\" width=\"312\" height=\"46\" rx=\"6\" fill=\"#dcfce7\" stroke=\"#22c55e\"/>\n  <text x=\"370\" y=\"153\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">2. DNA Polimeraz:</text>\n  <text x=\"370\" y=\"169\" font-size=\"10\" fill=\"#166534\">Kalıp zincirin karşısına uygun nükleotitleri ekler, yeni zinciri kurar.</text>\n\n  <rect x=\"360\" y=\"188\" width=\"312\" height=\"46\" rx=\"6\" fill=\"#dcfce7\" stroke=\"#22c55e\"/>\n  <text x=\"370\" y=\"206\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">3. DNA Ligaz:</text>\n  <text x=\"370\" y=\"222\" font-size=\"10\" fill=\"#166534\">DNA parçacıklarını fosfodiester bağıyla birleştirir (ATP harcar).</text>\n</svg>"
+    },
+    {
+      "baslik": "Görevli Enzimler",
+      "metin": [
+        "{koyu:Yarı Korunumlu (Semikonservatif) Eşlenme:} Matthew Meselson ve Franklin Stahl, ağır azot ({koyu:¹⁵N}) ve normal azot ({koyu:¹⁴N}) izotopları içeren besi yerlerinde E. coli bakterilerini çoğaltarak yaptıkları deneylerle DNA'nın {koyu:yarı korunumlu} eşlendiğini kanıtlamıştır. Bu modele göre ata DNA'nın iki zinciri birbirinden ayrılır, her bir zincir kalıp görevi görür ve oluşan her yeni DNA molekülünün {koyu:bir zinciri eski (kalıp), diğer zinciri ise yeni sentezlenen zincirdir}.",
+        "{koyu:Replikasyon Orijini:} DNA eşlenmesinin başladığı özel nükleotit dizilerine {koyu:replikasyon orijini} adı verilir. {koyu:Prokaryot} hücrelerin halkasal DNA'sında {koyu:tek bir replikasyon orijini} bulunurken, {koyu:ökaryot} hücrelerin çok uzun ve doğrusal DNA'larında {koyu:çok sayıda replikasyon orijini} bulunur. Çok sayıda orijinden aynı anda başlayan eşlenme sayesinde ökaryot DNA'sı kısa sürede kopyalanır.",
+        "{koyu:Replikasyonda Görev Alan 3 Temel Enzim:}• {koyu:Helikaz:} İki DNA zinciri arasındaki zayıf hidrojen bağlarını kopararak çift sarmalı fermuar gibi açar ve replikasyon çatalını oluşturur (bu işlemde ATP harcanmaz).",
+        "{koyu:DNA Polimeraz:} Açılan kalıp zincirlerin karşısına A-T ve G-C eşlenme kuralına göre uygun serbest deoksiribonükleotitleri ekleyerek yeni DNA zincirini sentezler ve eşlenme hatalarını denetler.",
+        "{koyu:DNA Ligaz:} Kesintili olarak sentezlenen DNA parçacıklarını birbirine uç uca {koyu:fosfodiester bağlarıyla} birleştirerek yeni DNA zincirinin bütünlüğünü sağlar (ATP harcar)."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">PROF. DR. AZİZ SANCAR VE DNA ONARIM MEKANİZMASI</text>\n\n  <!-- Sol Kutu: Bilimsel Keşifler -->\n  <rect x=\"18\" y=\"45\" width=\"340\" height=\"198\" rx=\"10\" fill=\"#fefce8\" stroke=\"#ca8a04\" stroke-width=\"2\"/>\n  <text x=\"188\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#a16207\">2015 NOBEL KİMYA ÖDÜLÜ ÇALIŞMALARI</text>\n  <line x1=\"32\" y1=\"76\" x2=\"344\" y2=\"76\" stroke=\"#fde047\" stroke-width=\"1.5\"/>\n  <text x=\"32\" y=\"100\" font-size=\"11\" font-weight=\"bold\" fill=\"#713f12\">• Nükleotit Kesip Çıkarma Onarımı:</text>\n  <text x=\"40\" y=\"118\" font-size=\"10.5\" fill=\"#854d0e\">UV (morötesi) ışınları ve kanserojen maddelerle</text>\n  <text x=\"40\" y=\"134\" font-size=\"10.5\" fill=\"#854d0e\">hasar gören DNA'nın hücreler tarafından nasıl</text>\n  <text x=\"40\" y=\"150\" font-size=\"10.5\" fill=\"#854d0e\">onarıldığını ve genetik bilginin korunduğunu haritaladı.</text>\n  <text x=\"32\" y=\"176\" font-size=\"11\" font-weight=\"bold\" fill=\"#713f12\">• Biyolojik Saat (Sirkadiyen Ritim):</text>\n  <text x=\"40\" y=\"194\" font-size=\"10.5\" fill=\"#854d0e\">Canlılardaki biyolojik saat genleri ve kanser</text>\n  <text x=\"40\" y=\"210\" font-size=\"10.5\" fill=\"#854d0e\">kemoterapisinin zamanlaması üzerine öncü çalışmalar yaptı.</text>\n\n  <!-- Sağ Kutu: Bilim İnsanı Kimliği ve Vatanseverliği -->\n  <rect x=\"374\" y=\"45\" width=\"308\" height=\"198\" rx=\"10\" fill=\"#fff1f2\" stroke=\"#e11d48\" stroke-width=\"2\"/>\n  <text x=\"528\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#be123c\">ÖRNEK BİLİM İNSANI KİMLİĞİ</text>\n  <line x1=\"388\" y1=\"76\" x2=\"668\" y2=\"76\" stroke=\"#fda4af\" stroke-width=\"1.5\"/>\n  <text x=\"390\" y=\"102\" font-size=\"11\" fill=\"#881337\">• Mardin'in Savur ilçesinde doğdu; azim ve</text>\n  <text x=\"398\" y=\"118\" font-size=\"11\" fill=\"#881337\">kararlılıkla dünya çapında başarılara ulaştı.</text>\n  <text x=\"390\" y=\"144\" font-size=\"11\" fill=\"#881337\">• Günde 18 saate varan disiplinli çalışma</text>\n  <text x=\"398\" y=\"160\" font-size=\"11\" fill=\"#881337\">ahlakı, sabır ve bilimsel merak duygusu.</text>\n  <rect x=\"390\" y=\"176\" width=\"276\" height=\"52\" rx=\"6\" fill=\"#ffe4e6\" stroke=\"#f43f5e\"/>\n  <text x=\"528\" y=\"196\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#9f1239\">Vatanseverlik ve Cumhuriyet Bilinci:</text>\n  <text x=\"528\" y=\"214\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#881337\">Nobel Ödülü madalyasını ve sertifikasını</text>\n  <text x=\"528\" y=\"226\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#be123c\">Anıtkabir'e armağan etmiştir.</text>\n</svg>"
+    },
+    {
+      "baslik": "Prof. Dr. Aziz Sancar'ın Biyoloji Bilimine Katkısı",
+      "metin": [
+        "1946 yılında Mardin'in Savur ilçesinde doğan Türk bilim insanı {koyu:Prof. Dr. Aziz Sancar}, moleküler biyoloji ve biyokimya alanında yaptığı çığır açıcı çalışmalarla dünya bilim tarihine adını yazdırmıştır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">PROF. DR. AZİZ SANCAR VE DNA ONARIM MEKANİZMASI</text>\n\n  <!-- Sol Kutu: Bilimsel Keşifler -->\n  <rect x=\"18\" y=\"45\" width=\"340\" height=\"198\" rx=\"10\" fill=\"#fefce8\" stroke=\"#ca8a04\" stroke-width=\"2\"/>\n  <text x=\"188\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#a16207\">2015 NOBEL KİMYA ÖDÜLÜ ÇALIŞMALARI</text>\n  <line x1=\"32\" y1=\"76\" x2=\"344\" y2=\"76\" stroke=\"#fde047\" stroke-width=\"1.5\"/>\n  <text x=\"32\" y=\"100\" font-size=\"11\" font-weight=\"bold\" fill=\"#713f12\">• Nükleotit Kesip Çıkarma Onarımı:</text>\n  <text x=\"40\" y=\"118\" font-size=\"10.5\" fill=\"#854d0e\">UV (morötesi) ışınları ve kanserojen maddelerle</text>\n  <text x=\"40\" y=\"134\" font-size=\"10.5\" fill=\"#854d0e\">hasar gören DNA'nın hücreler tarafından nasıl</text>\n  <text x=\"40\" y=\"150\" font-size=\"10.5\" fill=\"#854d0e\">onarıldığını ve genetik bilginin korunduğunu haritaladı.</text>\n  <text x=\"32\" y=\"176\" font-size=\"11\" font-weight=\"bold\" fill=\"#713f12\">• Biyolojik Saat (Sirkadiyen Ritim):</text>\n  <text x=\"40\" y=\"194\" font-size=\"10.5\" fill=\"#854d0e\">Canlılardaki biyolojik saat genleri ve kanser</text>\n  <text x=\"40\" y=\"210\" font-size=\"10.5\" fill=\"#854d0e\">kemoterapisinin zamanlaması üzerine öncü çalışmalar yaptı.</text>\n\n  <!-- Sağ Kutu: Bilim İnsanı Kimliği ve Vatanseverliği -->\n  <rect x=\"374\" y=\"45\" width=\"308\" height=\"198\" rx=\"10\" fill=\"#fff1f2\" stroke=\"#e11d48\" stroke-width=\"2\"/>\n  <text x=\"528\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#be123c\">ÖRNEK BİLİM İNSANI KİMLİĞİ</text>\n  <line x1=\"388\" y1=\"76\" x2=\"668\" y2=\"76\" stroke=\"#fda4af\" stroke-width=\"1.5\"/>\n  <text x=\"390\" y=\"102\" font-size=\"11\" fill=\"#881337\">• Mardin'in Savur ilçesinde doğdu; azim ve</text>\n  <text x=\"398\" y=\"118\" font-size=\"11\" fill=\"#881337\">kararlılıkla dünya çapında başarılara ulaştı.</text>\n  <text x=\"390\" y=\"144\" font-size=\"11\" fill=\"#881337\">• Günde 18 saate varan disiplinli çalışma</text>\n  <text x=\"398\" y=\"160\" font-size=\"11\" fill=\"#881337\">ahlakı, sabır ve bilimsel merak duygusu.</text>\n  <rect x=\"390\" y=\"176\" width=\"276\" height=\"52\" rx=\"6\" fill=\"#ffe4e6\" stroke=\"#f43f5e\"/>\n  <text x=\"528\" y=\"196\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#9f1239\">Vatanseverlik ve Cumhuriyet Bilinci:</text>\n  <text x=\"528\" y=\"214\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#881337\">Nobel Ödülü madalyasını ve sertifikasını</text>\n  <text x=\"528\" y=\"226\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#be123c\">Anıtkabir'e armağan etmiştir.</text>\n</svg>"
+    },
+    {
+      "baslik": "Bilim İnsanı Kimliği",
+      "metin": [
+        "{koyu:DNA Onarım Mekanizmaları ve 2015 Nobel Ödülü:} Hücrelerdeki DNA molekülleri güneşten gelen {koyu:morötesi (UV) ışınlar}, radyasyon ve kanserojen kimyasal maddeler nedeniyle sürekli hasara uğrar. Prof. Dr. Aziz Sancar, hasar gören nükleotit dizilerinin hücreler tarafından nasıl tanınıp kesilerek çıkarıldığını ve doğru nükleotitlerle onarıldığını ({koyu:nükleotit kesip çıkarma onarımı}) moleküler düzeyde haritalandırmıştır. Genetik bilginin korunmasını ve kanserin anlaşılmasını sağlayan bu keşfiyle {koyu:2015 Nobel Kimya Ödülü}'ne layık görülmüştür.",
+        "{koyu:Biyolojik Saat (Sirkadiyen Ritim) Çalışmaları:} Aziz Sancar ayrıca canlılarda uyku-uyanıklık ve metabolizma döngülerini düzenleyen {koyu:biyolojik saat (sirkadiyen ritim)} genlerini ve DNA onarım hızının günün saatlerine göre değişimini inceleyerek kanser tedavisinde en uygun ilaç uygulama zamanlarının belirlenmesine öncülük etmiştir.",
+        "{koyu:Örnek Bilim İnsanı Kimliği ve Vatanseverliği:} Bilimsel merakı, pes etmeyen azmi, günde 18 saate varan disiplinli çalışma ahlakı ve gençlere bilimi sevdirme çabasıyla örnek bir bilim insanı olan Sancar, kazandığı Nobel Ödülü madalyasını ve sertifikasını Cumhuriyet'e olan minnetinin bir göstergesi olarak {koyu:Anıtkabir'e} bağışlamıştır."
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Meselson ve Stahl'ın E. coli bakterileriyle yaptıkları deneyde, ağır azotlu (¹⁵N¹⁵N) DNA'ya sahip bir bakteri normal azotlu (¹⁴N) besi yerinde art arda 2 kez bölünmeye bırakılırsa oluşan DNA moleküllerinin melez (¹⁵N¹⁴N) ve normal (¹⁴N¹⁴N) olma oranları ne olur?",
+      "cevap": "1. bölünme sonunda yarı korunumlu eşlenmeyle 2 adet %100 melez (¹⁵N¹⁴N) DNA oluşur. 2. bölünme sonunda toplam 2² = 4 adet DNA molekülü meydana gelir. Bunların 2 tanesi ata ¹⁵N zincirlerini taşıdığı için melez (¹⁵N¹⁴N), diğer 2 tanesi ise tamamen yeni ¹⁴N zincirlerinden oluştuğu için normal (¹⁴N¹⁴N) DNA'dır. Yani %50 melez, %50 normal DNA oluşur."
+    },
+    {
+      "soru": "Prokaryot bir bakteri hücresi ile ökaryot bir insan hücresinin DNA replikasyonunu replikasyon orijini sayısı ve DNA'nın şekli bakımından karşılaştırınız.",
+      "cevap": "Prokaryot hücrelerde DNA halkasal yapıda olup eşlenme TEK bir replikasyon orijininden başlayarak iki yönde ilerler. Ökaryot hücrelerde ise DNA doğrusal ve çok daha uzundur; ancak ÇOK SAYIDA replikasyon orijini bulunduğu için eşlenme yüzlerce noktadan aynı anda başlar ve kısa sürede tamamlanır."
+    },
+    {
+      "soru": "DNA replikasyonunda görev alan helikaz, DNA polimeraz ve DNA ligaz enzimlerinin temel görevlerini sırasıyla açıklayınız.",
+      "cevap": "1) Helikaz: İki DNA zinciri arasındaki zayıf hidrojen bağlarını kopararak çift sarmalı fermuar gibi açar (ATP harcanmaz). 2) DNA polimeraz: Açılan kalıp zincirlerin karşısına A-T ve G-C kuralına uygun serbest deoksiribonükleotitleri ekleyerek yeni DNA zincirini sentezler. 3) DNA ligaz: Kesintili sentezlenen DNA parçacıklarını birbirine fosfodiester bağlarıyla birleştirerek zincir bütünlüğünü sağlar (ATP harcar)."
+    },
+    {
+      "soru": "Replikasyon sırasında ortamda bulunan hangi maddelerin miktarı azalır, hangilerinin miktarı artar?",
+      "cevap": "Yeni DNA zincirleri sentezlenirken ortamdaki serbest deoksiribonükleotit (adenin, timin, guanin, sitozin), deoksiriboz şekeri, fosfat ve ATP miktarı AZALIR; kurulan fosfodiester bağları sonucunda açığa çıkan su (H₂O) molekülü ve yeni DNA miktarı ise ARTAR."
+    },
+    {
+      "soru": "Prof. Dr. Aziz Sancar'ın 2015 Nobel Kimya Ödülü'nü kazanmasını sağlayan bilimsel çalışmasının konusunu ve biyolojik önemini açıklayınız.",
+      "cevap": "Prof. Dr. Aziz Sancar, morötesi (UV) ışınlar ve kanserojen maddeler etkisiyle hasar gören DNA moleküllerinin hücreler tarafından 'nükleotit kesip çıkarma onarımı' mekanizmasıyla nasıl tamir edildiğini haritalandırmıştır. Bu mekanizma genetik bilginin bozulmadan korunmasını sağlar ve kanser oluşumunun önlenmesinde kritik rol oynar."
+    },
+    {
+      "soru": "Prof. Dr. Aziz Sancar'ın çalışma hayatından ve kişiliğinden çıkarılabilecek bilimsel etik ve değerler nelerdir?",
+      "cevap": "Bilimsel merak duygusu, başarısızlıklar karşısında pes etmeyen kararlılık, günde 18 saate varan disiplinli çalışma ahlakı, genç araştırmacılara rehberlik etme sorumluluğu ve Nobel madalyasını Anıtkabir'e bağışlamasıyla simgeleşen güçlü vatanseverlik ve vefa bilincidir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "DNA'nın kendini eşlemesi (replikasyon) sırasında iki zincir arasındaki zayıf hidrojen bağlarını kopararak çift sarmalı açan enzim aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Helikaz",
+        "DNA polimeraz",
+        "DNA ligaz",
+        "Katalaz",
+        "Amilaz"
+      ],
+      "dogru": 0,
+      "aciklama": "DNA çift sarmalındaki zayıf hidrojen bağlarını kopararak zincirleri birbirinden ayıran enzim helikazdır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kesintili olarak sentezlenen DNA parçacıklarını birbirine fosfodiester bağlarıyla birleştirerek yeni DNA zincirinin bütünlüğünü sağlayan enzim aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Helikaz",
+        "DNA ligaz",
+        "DNA polimeraz",
+        "Pepsinojen",
+        "Lipaz"
+      ],
+      "dogru": 1,
+      "aciklama": "DNA parçacıkları arasında fosfodiester bağı kurarak zincirleri uç uca birleştiren enzim DNA ligazdır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Ökaryot hücrelerin DNA moleküllerinin prokaryotlara göre çok daha uzun olmasına rağmen replikasyonun kısa sürede tamamlanabilmesinin temel nedeni aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Ökaryot DNA'sının halkasal yapıda olması",
+        "Ökaryotlarda replikasyon sırasında katiyen enzim kullanılmaması",
+        "Ökaryot DNA'sında çok sayıda replikasyon orijini bulunması",
+        "Ökaryotlarda hidrojen bağlarının koparılmadan eşlenmenin gerçekleşmesi",
+        "Ökaryot hücrelerde timin yerine urasil bazının kullanılması"
+      ],
+      "dogru": 2,
+      "aciklama": "Ökaryotların doğrusal DNA'larında çok sayıda replikasyon orijini bulunduğu için eşlenme birçok noktadan aynı anda başlar ve hızla tamamlanır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Prof. Dr. Aziz Sancar'a 2015 Nobel Kimya Ödülü'nü kazandıran temel araştırma konusu aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Bakterilerde antibiyotik direncinin keşfedilmesi",
+        "Bitkilerde fotosentez hızını etkileyen pigmentlerin sentezi (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)",
+        "Yapay hücre zarının laboratuvar ortamında üretilmesi",
+        "UV ışınları ve kanserojenlerle hasar gören DNA'nın hücreler tarafından nasıl onarıldığının haritalandırılması",
+        "Virüslerin kristal yapısının X-ışınlarıyla görüntülenmesi"
+      ],
+      "dogru": 3,
+      "aciklama": "Prof. Dr. Aziz Sancar, hasar gören DNA'nın nükleotit kesip çıkarma mekanizmasıyla hücreler tarafından nasıl onarıldığını haritalandıran çalışmalarıyla 2015 Nobel Kimya Ödülü'nü kazanmıştır."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Meselson ve Stahl'ın E. coli bakterileriyle yaptıkları deneyler, DNA'nın yarı korunumlu (semikonservatif) olarak eşlendiğini kanıtlamıştır.",
+          "dogru": true,
+          "aciklama": "¹⁵N ve ¹⁴N izotoplarıyla yapılan deneyler her yeni DNA'nın bir eski bir yeni zincirden oluştuğunu göstermiştir."
+        },
+        {
+          "metin": "Prokaryot hücrelerin halkasal DNA'sında yüzlerce replikasyon orijini bulunur.",
+          "dogru": false,
+          "aciklama": "Prokaryotların halkasal DNA'sında yalnızca tek bir replikasyon orijini bulunur."
+        },
+        {
+          "metin": "DNA polimeraz enzimi, açılan kalıp zincirlerin karşısına uygun serbest deoksiribonükleotitleri ekleyerek yeni DNA zincirini sentezler.",
+          "dogru": true,
+          "aciklama": "Yeni DNA zincirinin sentezinden ve nükleotit eşleşmesinden sorumlu enzim DNA polimerazdır."
+        },
+        {
+          "metin": "Helikaz enzimi DNA parçacıklarını birbirine fosfodiester bağlarıyla yapıştırır.",
+          "dogru": false,
+          "aciklama": "Helikaz hidrojen bağlarını koparır; DNA parçacıklarını fosfodiester bağlarıyla birleştiren enzim DNA ligazdır."
+        },
+        {
+          "metin": "Prof. Dr. Aziz Sancar, DNA onarımının yanı sıra biyolojik saat (sirkadiyen ritim) üzerine de önemli bilimsel çalışmalar yapmıştır.",
+          "dogru": true,
+          "aciklama": "Sancar, sirkadiyen ritim (biyolojik saat) genleri ve kanser tedavisinin zamanlaması üzerine öncü araştırmalar yürütmüştür."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "DNA replikasyonu ve onarımıyla ilgili aşağıdaki kavramları açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Helikaz",
+          "DNA'nın iki zinciri arasındaki zayıf hidrojen bağlarını kopararak sarmalı açan enzim"
+        ],
+        [
+          "DNA Polimeraz",
+          "Kalıp zincirin karşısına uygun deoksiribonükleotitleri ekleyerek yeni zinciri sentezleyen enzim"
+        ],
+        [
+          "DNA Ligaz",
+          "DNA parçacıklarını fosfodiester bağlarıyla uç uca birleştiren enzim"
+        ],
+        [
+          "Replikasyon Orijini",
+          "DNA molekülünde eşlenmenin başladığı özel başlangıç bölgesi"
+        ],
+        [
+          "Prof. Dr. Aziz Sancar",
+          "DNA onarım mekanizmalarını haritalandırarak 2015 Nobel Kimya Ödülü'nü kazanan Türk bilim insanı"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Oluşan her yeni DNA molekülünün bir eski bir de yeni zincir taşıması olayına ___ eşlenme denir.",
+          "cevap": "yarı korunumlu"
+        },
+        {
+          "metin": "Prokaryotların halkasal DNA molekülünde ___ replikasyon orijini bulunur.",
+          "cevap": "tek"
+        },
+        {
+          "metin": "Replikasyon sırasında zayıf hidrojen bağlarını koparan ___ enzimi ATP harcamaz.",
+          "cevap": "helikaz"
+        },
+        {
+          "metin": "Yeni sentezlenen DNA parçacıklarını fosfodiester bağlarıyla birbirine bağlayan enzim ___ enzimidir.",
+          "cevap": "DNA ligaz"
+        },
+        {
+          "metin": "Prof. Dr. Aziz Sancar, kazandığı Nobel Ödülü madalyasını ve sertifikasını ___ Müzesi'ne bağışlamıştır.",
+          "cevap": "Anıtkabir"
+        }
+      ],
+      "fazla": [
+        "DNA polimeraz",
+        "tam korunumlu"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Normal azotlu (¹⁴N¹⁴N) bir DNA molekülü, ağır azot (¹⁵N) bulunan bir ortamda art arda 3 kez eşleniyor. Eşlenmeler sonucunda oluşan toplam DNA sayısını, melez (¹⁴N¹⁵N) DNA sayısını ve ağır (¹⁵N¹⁵N) DNA sayısını adım adım hesaplayınız.",
+      "cevap": "1) 3 kez eşlenme sonucunda toplam 2³ = 8 adet DNA molekülü oluşur. 2) Ata DNA'ya ait 2 adet ¹⁴N zinciri değişmeden kalıp görevi görür ve ortamdaki ¹⁵N'lerle eşleşerek 2 adet melez (¹⁴N¹⁵N) DNA oluşturur. 3) Geriye kalan 8 - 2 = 6 adet DNA molekülü ise tamamen ortamdaki ağır azotlardan sentezlendiği için ağır (¹⁵N¹⁵N) DNA'dır.",
+      "ipuclari": [
+        "n = 3 kez eşlenme sonunda oluşan toplam DNA sayısını 2ⁿ formülüyle hesaplayınız.",
+        "Başlangıçtaki normal DNA'nın 2 adet ¹⁴N zinciri korunduğu için bunların ortamdan ¹⁵N alarak oluşturduğu melez DNA sayısını belirleyiniz.",
+        "Toplam DNA sayısından melez DNA sayısını çıkararak ağır (¹⁵N¹⁵N) DNA sayısını bulunuz."
+      ]
+    }
+  ],
+  "ozet": [
+    "Meselson ve Stahl'ın ¹⁵N ve ¹⁴N izotoplarıyla yaptıkları deneyler, DNA'nın yarı korunumlu (semikonservatif) eşlendiğini; yani her yeni DNA'nın bir eski (kalıp) ve bir yeni zincirden oluştuğunu kanıtlamıştır.",
+    "Eşlenmenin başladığı özel bölgelere replikasyon orijini denir; prokaryotların halkasal DNA'sında tek, ökaryotların doğrusal DNA'larında ise çok sayıda replikasyon orijini bulunur.",
+    "Replikasyonda helikaz enzimi zayıf hidrojen bağlarını kopararak sarmalı açar; DNA polimeraz enzimi kalıp zincirlerin karşısına uygun deoksiribonükleotitleri ekleyerek yeni zinciri sentezler.",
+    "DNA ligaz enzimi ise kesintili olarak sentezlenen DNA parçacıklarını fosfodiester bağlarıyla uç uca birleştirerek DNA zincirinin bütünlüğünü sağlar.",
+    "Prof. Dr. Aziz Sancar, UV ışınları ve kanserojenlerle hasar gören DNA'nın hücreler tarafından nasıl onarıldığını (nükleotit kesip çıkarma onarımı) haritalandırarak 2015 Nobel Kimya Ödülü'nü kazanmış ve madalyasını Anıtkabir'e bağışlamıştır."
+  ],
+  "ders_adi": "Biyoloji",
+  "yayin_tarihi": "2026-10-16"
+}

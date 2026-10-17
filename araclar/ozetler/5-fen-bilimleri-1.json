@@ -28,7 +28,7 @@
       "metin": [
         "Gözlük, eldiven, koruyucu elbise ve maske işaretleri kullanılacak koruyucu aracı bildirir. Hangi aracın gerekli olduğu, yapılacak etkinliğe göre belirlenir; bir koruyucu araç diğer bütün önlemlerin yerini tutmaz.",
         "Sıcak cisim, elektrik, kesici veya delici cisim ve kırılabilir cam uyarıları farklı tehlikelere dikkat çeker. Elektrikli araçlara ıslak elle dokunulmaz. Çatlak veya kırık cam kap kullanılmaz.",
-        "Kitaptaki madde uyarıları; yanıcı, yakıcı, aşındırıcı, çevreye zararlı, zehirli, patlayıcı, tahriş edici ve radyoaktif maddeleri ayırt eder. Bu işaretler, maddelerle gelişigüzel işlem yapılmaması gerektiğini gösterir."
+        "metindeki madde uyarıları; yanıcı, yakıcı, aşındırıcı, çevreye zararlı, zehirli, patlayıcı, tahriş edici ve radyoaktif maddeleri ayırt eder. Bu işaretler, maddelerle gelişigüzel işlem yapılmaması gerektiğini gösterir."
       ],
       "kutu": {
         "tur": "ipucu",
@@ -41,7 +41,7 @@
       "metin": [
         "Kimyasal maddelerin tadına bakılmaz ve maddeler koklanmaz. Yanıcı maddeler ateşten uzak tutulur. Kesici araçlarda ve kırılabilir eşyaların taşınmasında dikkatli davranılır; gerektiğinde öğretmenden yardım alınır.",
         "Sıcak cisim uyarısı olan yerde doğrudan temas edilmez. Cam malzemeler aşırı ısıya veya ani sıcaklık değişimine maruz bırakılmaz. Kullanılacak aracın durumunu kontrol etmek çalışmanın bir parçasıdır.",
-        "Beherglas, dereceli silindir ve deney tüpü laboratuvarda karşılaşılabilecek araçlardır. Kitapta termometre, büyüteç, mikroskop, kronometre, dinamometre, terazi, pil, bağlantı kablosu ve anahtar gibi araçlar da tanıtılır. Aracı tanımak, onu izinsiz kullanabileceğimiz anlamına gelmez."
+        "Beherglas, dereceli silindir ve deney tüpü laboratuvarda karşılaşılabilecek araçlardır. metinde termometre, büyüteç, mikroskop, kronometre, dinamometre, terazi, pil, bağlantı kablosu ve anahtar gibi araçlar da tanıtılır. Aracı tanımak, onu izinsiz kullanabileceğimiz anlamına gelmez."
       ],
       "kutu": {
         "tur": "dikkat",
@@ -52,7 +52,7 @@
       "baslik": "Beklenmedik bir durumda",
       "metin": [
         "Yangın, sızıntı veya elektrik arızası görülürse sakin kalınır ve durum hemen öğretmene ya da laboratuvar sorumlusuna bildirilir. Öğrenci kendi başına arızayı gidermeye çalışmaz.",
-        "Güvenle yapılabiliyorsa tehlikeli alandan uzaklaşılır ve önceden öğrenilen acil durum kuralları izlenir. Kitabın vurguladığı ortak davranış, tehlikeyi zamanında bildirmek ve sorumlunun yönlendirmesine uymaktır."
+        "Güvenle yapılabiliyorsa tehlikeli alandan uzaklaşılır ve önceden öğrenilen acil durum kuralları izlenir. eserin vurguladığı ortak davranış, tehlikeyi zamanında bildirmek ve sorumlunun yönlendirmesine uymaktır."
       ],
       "kutu": {
         "tur": "kural",
@@ -103,12 +103,12 @@
       "tur": "coktan",
       "soru": "Bir öğrenci deney tüpünde çatlak olduğunu fark ediyor. Hangi davranış güvenlik kuralına uygundur?",
       "secenekler": [
-        "Tüpü daha az doldurarak kullanmak",
-        "Çatlağı eliyle kapatarak taşımak",
         "Tüpü kullanmayıp öğretmene bildirmek",
+        "Çatlağı eliyle kapatarak taşımak",
+        "Tüpü daha az doldurarak kullanmak",
         "Tüpü ısıtıp sağlamlığını denemek"
       ],
-      "dogru": 2,
+      "dogru": 0,
       "aciklama": "Çatlak cam araçlar kullanılmaz; öğretmenin yönlendirmesi beklenir."
     },
     {
@@ -129,15 +129,27 @@
       "secenekler": [
         "Lavaboya dökülmeli.",
         "Kâğıt çöpüne konulmalı.",
-        "Başka maddeye karıştırılmalı.",
-        "Uygun atık kabı öğretmenden öğrenilmeli."
+        "Uygun atık kabı öğretmenden öğrenilmeli.",
+        "Başka maddeye karıştırılmalı (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)"
       ],
-      "dogru": 3,
+      "dogru": 2,
       "aciklama": "Kimyasal atıklar atık yönetimi kurallarına göre uzaklaştırılır."
     },
     {
+      "tur": "coktan",
+      "soru": "‘Beklenmedik bir durumda’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Tehlikeyi fark et → öğretmene bildir → güvenli yönlendirmeyi izle."
+      ],
+      "dogru": 3,
+      "aciklama": "Beklenmedik bir durumda bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
       "tur": "dy",
-      "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
           "metin": "Kimyasalın tadına bakmak onu tanımak için kullanılabilir.",
@@ -163,7 +175,7 @@
     },
     {
       "tur": "eslestir",
-      "yonerge": "İlişkili kavram ve açıklamaları eşleştiriniz.",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
           "Gözlük kullan",
@@ -185,7 +197,7 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
           "metin": "Bir arıza fark edildiğinde durum ___ bildirilir.",
@@ -201,26 +213,18 @@
         }
       ],
       "fazla": [
-        "koklanarak"
+        "koklanarak",
+        "varsayım"
       ]
     },
     {
       "tur": "ogretici",
       "soru": "Bir öğrenci “Deneye başlamadan kuralları öğrenmeye gerek yok; sorun çıkarsa bakarım.” diyor. Güvenli hazırlık açısından bu düşünceyi açıklayınız.",
+      "cevap": "Kurallar ve acil durum yolu çalışmaya başlamadan öğrenilir. Böylece riskli davranışlar önlenebilir ve beklenmedik durumda öğretmenin yönlendirmesi izlenebilir.",
       "ipuclari": [
         "Acil durumda bilgi aramak ile önceden hazırlanmak aynı mıdır?",
         "Kuralların yalnız kaza sonrasında değil öncesinde de işe yaradığını düşününüz."
-      ],
-      "cevap": "Kurallar ve acil durum yolu çalışmaya başlamadan öğrenilir. Böylece riskli davranışlar önlenebilir ve beklenmedik durumda öğretmenin yönlendirmesi izlenebilir."
-    },
-    {
-      "tur": "ogretici",
-      "soru": "Aynı masada bir pil ve kırık cam bulunuyor. İkisini sıradan çöpe atmak yerine hangi ortak davranış seçilmelidir?",
-      "ipuclari": [
-        "Kitabın atık ayırma kuralını hatırlayınız.",
-        "Kırık cama dokunmadan sorumlu kişiye haber veriniz."
-      ],
-      "cevap": "Atıkların uygun biçimde ayrılması için öğretmene bildirilir. Pil ve kırık cam sıradan çöpe atılmaz; öğrenci kırık camı kendi başına toplamaya çalışmaz."
+      ]
     }
   ],
   "ozet": [

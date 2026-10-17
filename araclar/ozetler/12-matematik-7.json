@@ -1,0 +1,269 @@
+{
+  "sinif": 12,
+  "hafta": 7,
+  "ders": "matematik",
+  "unite": "Diziler",
+  "konu": "Gerçek Sayı Dizileri (12.2.1.1 & 12.2.1.2)",
+  "tarih": "2026-10-26",
+  "ciktilar": [
+    "Dizi kavramını fonksiyonlarla ilişkilendirerek açıklar ve genel terimi verilen bir dizinin terimlerini bulur.",
+    "Sonlu dizi, sabit dizi ve eşit dizileri tanımlayarak bunlarla ilgili işlemler yapar.",
+    "İndirgemeli dizileri, Fibonacci sayı dizisini, üçgensel ve karesel sayı dizilerini örneklerle inceler."
+  ],
+  "giris": "Doğadaki pek çok örüntü ve matematiksel sıralama, pozitif tam sayılar kümesinden gerçek sayılar kümesine tanımlanan özel fonksiyonlarla modellenir. Ayçiçeğinin tohum diziliminden salyangoz kabuğundaki sarmallara, çokgensel sayı dizilerinden finansal hesaplamalara kadar uzanan bu yapıya 'gerçek sayı dizisi' adı verilir. Bu bölümde dizi kavramını, dizilerin genel terimini, sonlu, sabit ve eşit dizileri; ayrıca indirgemeli diziler ile Fibonacci, üçgensel ve karesel sayı dizilerini inceleyeceğiz.",
+  "bolumler": [
+    {
+      "baslik": "Dizi Kavramı ve Genel Terim",
+      "metin": [
+        "Tanım kümesi pozitif tam sayılar kümesi <b>Z⁺ = {1, 2, 3, ..., n, ...}</b> olan her fonksiyona {koyu:dizi} denir. Görüntü kümesi gerçek sayılar kümesinin ({koyu:R}) alt kümesi olan dizilere ise {koyu:gerçek sayı dizisi} adı verilir.",
+        "{koyu:Gösterim ve Terimler:} {koyu:f : Z⁺ → R} fonksiyonunda her {koyu:n ∈ Z⁺} için {koyu:f(n) = aₙ} gösterimi kullanılır. Burada {koyu:n} sayısına dizinin {koyu:indisi}, {koyu:aₙ} ifadesine ise dizinin {koyu:n. terimi} ya da {koyu:genel terimi} denir. Dizi, terimleri parantez içinde küçük harflerle {koyu:(aₙ) = (a₁, a₂, a₃, ..., aₙ, ...)} biçiminde yazılır.",
+        "{koyu:Her Fonksiyon Dizi Belirtmez:} Bir kuralın gerçek sayı dizisi belirtmesi için {koyu:her n ∈ Z⁺} değerine karşılık mutlaka bir gerçek sayı üretmesi gerekir. Örneğin {koyu:(n + 1) / (n - 3)} ifadesi {koyu:n = 3} için tanımsız olduğundan gerçek sayı dizisi belirtmez. Benzer şekilde <b>{kok:n - 4}</b> ifadesi <b>n ∈ {1, 2, 3}</b> değerleri için gerçek sayı olmadığından gerçek sayı dizisi oluşturmaz.",
+        "{koyu:Genel Terimin Önemi:} Sadece ilk birkaç terimi verilen bir sayı grubunun (örneğin {koyu:2, 4, 6, ...}) genel terimi verilmedikçe devam eden terimleri kesin olarak bilinemez; bu nedenle bir diziyi tek ve kesin biçimde belirleyen kural onun {koyu:genel terimidir (aₙ)}."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">GERÇEK SAYI DİZİSİ: f : Z⁺ → R, f(n) = aₙ</text>\n  <!-- Tanım Kümesi Z+ -->\n  <ellipse cx=\"145\" cy=\"140\" rx=\"85\" ry=\"90\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"145\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Tanım Kümesi (Z⁺)</text>\n  <text x=\"145\" y=\"86\" text-anchor=\"middle\" font-size=\"11\" fill=\"#3b82f6\">(Pozitif Tam Sayılar / İndis)</text>\n  <circle cx=\"145\" cy=\"112\" r=\"14\" fill=\"#dbeafe\" stroke=\"#2563eb\"/>\n  <text x=\"145\" y=\"117\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">1</text>\n  <circle cx=\"145\" cy=\"147\" r=\"14\" fill=\"#dbeafe\" stroke=\"#2563eb\"/>\n  <text x=\"145\" y=\"152\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">2</text>\n  <circle cx=\"145\" cy=\"182\" r=\"14\" fill=\"#dbeafe\" stroke=\"#2563eb\"/>\n  <text x=\"145\" y=\"187\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">3</text>\n  <circle cx=\"145\" cy=\"214\" r=\"14\" fill=\"#dbeafe\" stroke=\"#2563eb\"/>\n  <text x=\"145\" y=\"219\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">n</text>\n\n  <!-- Görüntü Kümesi R -->\n  <ellipse cx=\"385\" cy=\"140\" rx=\"95\" ry=\"90\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"385\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Görüntü Kümesi (⊂ R)</text>\n  <text x=\"385\" y=\"86\" text-anchor=\"middle\" font-size=\"11\" fill=\"#16a34a\">(Dizinin Terimleri)</text>\n  <rect x=\"335\" y=\"99\" width=\"100\" height=\"24\" rx=\"6\" fill=\"#dcfce7\" stroke=\"#16a34a\"/>\n  <text x=\"385\" y=\"116\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#14532d\">f(1) = a₁</text>\n  <rect x=\"335\" y=\"134\" width=\"100\" height=\"24\" rx=\"6\" fill=\"#dcfce7\" stroke=\"#16a34a\"/>\n  <text x=\"385\" y=\"151\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#14532d\">f(2) = a₂</text>\n  <rect x=\"335\" y=\"169\" width=\"100\" height=\"24\" rx=\"6\" fill=\"#dcfce7\" stroke=\"#16a34a\"/>\n  <text x=\"385\" y=\"186\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#14532d\">f(3) = a₃</text>\n  <rect x=\"335\" y=\"201\" width=\"100\" height=\"24\" rx=\"6\" fill=\"#bbf7d0\" stroke=\"#15803d\"/>\n  <text x=\"385\" y=\"218\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#14532d\">f(n) = aₙ</text>\n\n  <!-- Oklar -->\n  <line x1=\"162\" y1=\"112\" x2=\"330\" y2=\"112\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-dasharray=\"4,3\"/>\n  <polygon points=\"333,112 325,108 325,116\" fill=\"#475569\"/>\n  <line x1=\"162\" y1=\"147\" x2=\"330\" y2=\"147\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-dasharray=\"4,3\"/>\n  <polygon points=\"333,147 325,143 325,151\" fill=\"#475569\"/>\n  <line x1=\"162\" y1=\"182\" x2=\"330\" y2=\"182\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-dasharray=\"4,3\"/>\n  <polygon points=\"333,182 325,178 325,186\" fill=\"#475569\"/>\n  <line x1=\"162\" y1=\"214\" x2=\"330\" y2=\"214\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <polygon points=\"333,214 325,210 325,218\" fill=\"#1e293b\"/>\n  <text x=\"248\" y=\"207\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">Genel Terim</text>\n\n  <!-- Sağ Bilgi Kutusu -->\n  <rect x=\"500\" y=\"55\" width=\"182\" height=\"175\" rx=\"8\" fill=\"#fff1f2\" stroke=\"#e11d48\" stroke-width=\"1.5\"/>\n  <text x=\"591\" y=\"76\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#be123c\">DİZİ OLMA ŞARTI</text>\n  <line x1=\"512\" y1=\"84\" x2=\"670\" y2=\"84\" stroke=\"#fda4af\" stroke-width=\"1\"/>\n  <text x=\"512\" y=\"104\" font-size=\"10.5\" fill=\"#881337\">• (n+1)/(n-3) ifadesi:</text>\n  <text x=\"518\" y=\"120\" font-size=\"10\" fill=\"#9f1239\">n = 3 ∈ Z⁺ için tanımsız</text>\n  <text x=\"518\" y=\"134\" font-size=\"10\" font-weight=\"bold\" fill=\"#be123c\">→ Dizi belirtmez!</text>\n  <text x=\"512\" y=\"158\" font-size=\"10.5\" fill=\"#881337\">• Kök içinde (n-4) ifadesi:</text>\n  <text x=\"518\" y=\"174\" font-size=\"10\" fill=\"#9f1239\">n ∈ {1,2,3} için ∉ R</text>\n  <text x=\"518\" y=\"188\" font-size=\"10\" font-weight=\"bold\" fill=\"#be123c\">→ Gerçek dizi belirtmez!</text>\n  <text x=\"591\" y=\"216\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0f172a\">Her n ∈ Z⁺ için aₙ ∈ R olmalı!</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Bir dizi kuralında indis olan n yerine yalnızca pozitif tam sayılar (1, 2, 3, ...) yazılabilir; 0, negatif sayılar veya kesirli sayılar dizinin indis kümesinde yer almaz!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Rasyonel biçimde verilen aₙ = P(n) / Q(n) ifadelerinin gerçek sayı dizisi belirtmesi için paydayı sıfır yapan Q(n) = 0 denkleminin köklerinden hiçbirinin pozitif tam sayı (Z⁺) olmaması gerekir."
+        }
+      ]
+    },
+    {
+      "baslik": "Sonlu Dizi, Sabit Dizi ve Eşit Diziler",
+      "metin": [
+        "Diziler tanım kümelerinin eleman sayısına veya terimlerinin aldığı değerlere göre özel isimler alır:",
+        "{koyu:Sonlu Dizi:} {koyu:k ∈ Z⁺} olmak üzere <b>Aₖ = {1, 2, 3, ..., k}</b> sonlu kümesinden gerçek sayılar kümesi {koyu:R}'ye tanımlanan her fonksiyona {koyu:k terimli sonlu dizi} denir ve {koyu:(a₁, a₂, a₃, ..., aₖ)} şeklinde gösterilir. Tanım kümesi tüm {koyu:Z⁺} olan dizilere ise {koyu:sonsuz dizi} denir.",
+        "{koyu:Sabit Dizi:} Bütün terimleri birbirine eşit olan diziye {koyu:sabit dizi} adı verilir. Her {koyu:n ∈ Z⁺} ve {koyu:c ∈ R} için {koyu:aₙ = c} olduğundan sabit dizi {koyu:(c, c, c, ..., c, ...)} biçimindedir. Rasyonel biçimdeki {koyu:aₙ = (p·n + r) / (s·n + t)} dizisinin sabit dizi olması için {koyu:n}'li terimlerin katsayıları oranı ile sabit terimlerin oranı birbirine eşit olmalıdır: {koyu:p / s = r / t}.",
+        "{koyu:Eşit Diziler:} Karşılıklı bütün terimleri birbirine eşit olan, yani her {koyu:n ∈ Z⁺} için {koyu:aₙ = bₙ} koşulunu sağlayan {koyu:(aₙ)} ve {koyu:(bₙ)} dizilerine {koyu:eşit diziler} denir ve {koyu:(aₙ) = (bₙ)} olarak yazılır. Örneğin genel terimleri {koyu:aₙ = (-1)ⁿ} ve {koyu:bₙ = cos(n·π)} olan iki dizinin tüm terimleri {koyu:(-1, 1, -1, 1, ...)} olduğundan bu iki dizi birbirine eşittir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">SONLU DİZİ, SABİT DİZİ VE EŞİT DİZİLER</text>\n\n  <!-- Kart 1: Sonlu Dizi -->\n  <rect x=\"18\" y=\"48\" width=\"212\" height=\"192\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"2\"/>\n  <text x=\"124\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">1. SONLU DİZİ</text>\n  <line x1=\"32\" y1=\"82\" x2=\"216\" y2=\"82\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/>\n  <text x=\"124\" y=\"104\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">k ∈ Z⁺ olmak üzere;</text>\n  <rect x=\"34\" y=\"114\" width=\"180\" height=\"28\" rx=\"6\" fill=\"#dbeafe\"/>\n  <text x=\"124\" y=\"133\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e40af\">Aₖ = {1, 2, 3, ..., k}</text>\n  <text x=\"124\" y=\"160\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#1e3a8a\">kümesinden R'ye tanımlı</text>\n  <text x=\"124\" y=\"176\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#1e3a8a\">f : Aₖ → R fonksiyonuna</text>\n  <text x=\"124\" y=\"194\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">k terimli sonlu dizi denir.</text>\n  <text x=\"124\" y=\"222\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#0f172a\">(a₁, a₂, a₃, ..., aₖ)</text>\n\n  <!-- Kart 2: Sabit Dizi -->\n  <rect x=\"244\" y=\"48\" width=\"212\" height=\"192\" rx=\"10\" fill=\"#fefce8\" stroke=\"#eab308\" stroke-width=\"2\"/>\n  <text x=\"350\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#a16207\">2. SABİT DİZİ</text>\n  <line x1=\"258\" y1=\"82\" x2=\"442\" y2=\"82\" stroke=\"#fde047\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"104\" text-anchor=\"middle\" font-size=\"11\" fill=\"#713f12\">Her n ∈ Z⁺ için c ∈ R:</text>\n  <rect x=\"264\" y=\"114\" width=\"172\" height=\"28\" rx=\"6\" fill=\"#fef08a\"/>\n  <text x=\"350\" y=\"133\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#854d0e\">aₙ = c = (c, c, c, ...)</text>\n  <text x=\"350\" y=\"160\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#713f12\">aₙ = (p·n + r) / (s·n + t)</text>\n  <text x=\"350\" y=\"178\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#713f12\">ifadesi sabit dizi ise:</text>\n  <rect x=\"284\" y=\"190\" width=\"132\" height=\"34\" rx=\"6\" fill=\"#fde047\" stroke=\"#ca8a04\"/>\n  <text x=\"350\" y=\"212\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#713f12\">p / s = r / t = c</text>\n\n  <!-- Kart 3: Eşit Diziler -->\n  <rect x=\"470\" y=\"48\" width=\"212\" height=\"192\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"2\"/>\n  <text x=\"576\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">3. EŞİT DİZİLER</text>\n  <line x1=\"484\" y1=\"82\" x2=\"668\" y2=\"82\" stroke=\"#86efac\" stroke-width=\"1.5\"/>\n  <text x=\"576\" y=\"104\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">Her n ∈ Z⁺ için:</text>\n  <rect x=\"490\" y=\"114\" width=\"172\" height=\"28\" rx=\"6\" fill=\"#dcfce7\"/>\n  <text x=\"576\" y=\"133\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">aₙ = bₙ  ⇔  (aₙ) = (bₙ)</text>\n  <text x=\"576\" y=\"162\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#14532d\">Örnek:</text>\n  <text x=\"576\" y=\"180\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">aₙ = (-1)ⁿ</text>\n  <text x=\"576\" y=\"198\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">bₙ = cos(n·π)</text>\n  <text x=\"576\" y=\"220\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#0f172a\">(-1, 1, -1, 1, ...) → aₙ = bₙ</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "aₙ = (-1)ⁿ dizisinin terimleri sadece -1 ve 1 değerlerini alsa da terimleri birbirine eşit olmadığı için bu dizi kesinlikle sabit dizi değildir!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "aₙ = (p·n + r) / (s·n + t) sabit dizisinde p / s = r / t oranı aynı zamanda dizinin tüm terimlerinin eşit olduğu sabit sayıya (a₁ = a₁₀₀ = p / s) eşittir."
+        }
+      ]
+    },
+    {
+      "baslik": "İndirgemeli Diziler, Fibonacci, Üçgensel ve Karesel Sayı Dizileri",
+      "metin": [
+        "Bazı dizilerde genel terim doğrudan {koyu:n} cinsinden verilmek yerine, her terim kendinden önceki terimlerle ilişkilendirilerek tanımlanır:",
+        "{koyu:İndirgemeli Dizi:} Her terimi kendinden önceki bir veya birkaç terim cinsinden tanımlanan dizilere {koyu:indirgemeli dizi}, bu kuralı veren eşitliğe ise {koyu:indirgeme bağıntısı} denir. Başlangıç terimi (örneğin {koyu:a₁}) verildiğinde, indirgeme bağıntısı (örneğin {koyu:aₙ₊₁ - aₙ = f(n)} veya {koyu:aₙ₊₁ / aₙ = g(n)}) alt alta yazılıp {koyu:taraf tarafa toplama} ya da {koyu:taraf tarafa çarpma} yapılarak istenen terim veya genel terim bulunur.",
+        "{koyu:Fibonacci Sayı Dizisi:} İtalyan matematikçi Leonardo Fibonacci'nin ünlü tavşan problemiyle ortaya koyduğu, doğada ayçiçeği çekirdeklerinde, çam kozalağında ve salyangoz kabuğunda gözlenen özel bir indirgemeli dizidir. İlk iki terimi {koyu:F₁ = 1, F₂ = 1} olan ve {koyu:n ≥ 3} için {koyu:Fₙ = Fₙ₋₁ + Fₙ₋₂} indirgeme bağıntısıyla tanımlanan {koyu:(1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ...)} dizisidir.",
+        "{koyu:Üçgensel Sayı Dizisi:} Eşkenar üçgen oluşturacak biçimde dizilen nokta sayılarını gösteren, {koyu:1}'den {koyu:n}'ye kadar olan ardışık doğal sayıların toplamıyla elde edilen dizidir: {koyu:aₙ = 1 + 2 + 3 + ... + n = n·(n + 1) / 2}. İlk terimleri {koyu:(1, 3, 6, 10, 15, 21, ...)} şeklindedir ve {koyu:aₙ = aₙ₋₁ + n} indirgeme bağıntısını sağlar.",
+        "{koyu:Karesel Sayı Dizisi:} Kare oluşturacak biçimde dizilen nokta sayılarını gösteren, {koyu:1}'den başlayan ardışık {koyu:n} tane tek doğal sayının toplamıyla elde edilen dizidir: {koyu:bₙ = 1 + 3 + 5 + ... + (2n - 1) = n²}. İlk terimleri {koyu:(1, 4, 9, 16, 25, ...)} olup {koyu:bₙ = bₙ₋₁ + 2n - 1} bağıntısını sağlar. Ayrıca {koyu:ardışık iki üçgensel sayının toplamı daima bir karesel sayı verir: aₙ₋₁ + aₙ = n² = bₙ}."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#1e293b\">FİBONACCİ, ÜÇGENSEL VE KARESEL SAYI DİZİLERİ</text>\n\n  <!-- Sol Kutu: Fibonacci -->\n  <rect x=\"16\" y=\"42\" width=\"215\" height=\"202\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"123\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#6b21a8\">FİBONACCİ DİZİSİ</text>\n  <text x=\"123\" y=\"84\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#7e22ce\">F₁ = 1, F₂ = 1</text>\n  <rect x=\"30\" y=\"94\" width=\"186\" height=\"26\" rx=\"6\" fill=\"#f3e8ff\"/>\n  <text x=\"123\" y=\"112\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">Fₙ = Fₙ₋₁ + Fₙ₋₂ (n ≥ 3)</text>\n  <text x=\"123\" y=\"138\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#3b0764\">1, 1, 2, 3, 5, 8, 13, 21, 34...</text>\n  <text x=\"123\" y=\"162\" text-anchor=\"middle\" font-size=\"10\" fill=\"#6b21a8\">• İndirgemeli dizi örneğidir.</text>\n  <text x=\"123\" y=\"180\" text-anchor=\"middle\" font-size=\"10\" fill=\"#6b21a8\">• Ayçiçeği, çam kozalağı,</text>\n  <text x=\"123\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill=\"#6b21a8\">  salyangoz kabuğunda görülür.</text>\n  <text x=\"123\" y=\"222\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#581c87\">Her terim önceki 2 terimin toplamı</text>\n\n  <!-- Orta Kutu: Üçgensel Sayılar -->\n  <rect x=\"243\" y=\"42\" width=\"215\" height=\"202\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n  <text x=\"350\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#c2410c\">ÜÇGENSEL SAYILAR</text>\n  <rect x=\"258\" y=\"74\" width=\"184\" height=\"26\" rx=\"6\" fill=\"#ffedd5\"/>\n  <text x=\"350\" y=\"92\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#9a3412\">aₙ = n·(n + 1) / 2</text>\n  <!-- Nokta modelleri -->\n  <circle cx=\"280\" cy=\"135\" r=\"4.5\" fill=\"#ea580c\"/>\n  <text x=\"280\" y=\"158\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#7c2d12\">a₁=1</text>\n\n  <circle cx=\"335\" cy=\"122\" r=\"4.5\" fill=\"#ea580c\"/>\n  <circle cx=\"327\" cy=\"135\" r=\"4.5\" fill=\"#ea580c\"/>\n  <circle cx=\"343\" cy=\"135\" r=\"4.5\" fill=\"#ea580c\"/>\n  <text x=\"335\" y=\"158\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#7c2d12\">a₂=3</text>\n\n  <circle cx=\"405\" cy=\"112\" r=\"4\" fill=\"#ea580c\"/>\n  <circle cx=\"397\" cy=\"124\" r=\"4\" fill=\"#ea580c\"/>\n  <circle cx=\"413\" cy=\"124\" r=\"4\" fill=\"#ea580c\"/>\n  <circle cx=\"389\" cy=\"136\" r=\"4\" fill=\"#ea580c\"/>\n  <circle cx=\"405\" cy=\"136\" r=\"4\" fill=\"#ea580c\"/>\n  <circle cx=\"421\" cy=\"136\" r=\"4\" fill=\"#ea580c\"/>\n  <text x=\"405\" y=\"158\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#7c2d12\">a₃=6</text>\n\n  <text x=\"350\" y=\"184\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#9a3412\">(1, 3, 6, 10, 15, 21, ...)</text>\n  <text x=\"350\" y=\"206\" text-anchor=\"middle\" font-size=\"10\" fill=\"#7c2d12\">1'den n'ye ardışık doğal</text>\n  <text x=\"350\" y=\"222\" text-anchor=\"middle\" font-size=\"10\" fill=\"#7c2d12\">sayıların toplamıdır.</text>\n\n  <!-- Sağ Kutu: Karesel Sayılar -->\n  <rect x=\"470\" y=\"42\" width=\"214\" height=\"202\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#0d9488\" stroke-width=\"2\"/>\n  <text x=\"577\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#0f766e\">KARESEL SAYILAR</text>\n  <rect x=\"485\" y=\"74\" width=\"184\" height=\"26\" rx=\"6\" fill=\"#ccfbf1\"/>\n  <text x=\"577\" y=\"92\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#115e59\">bₙ = 1+3+...+(2n-1) = n²</text>\n  <!-- Kare nokta modelleri -->\n  <circle cx=\"508\" cy=\"134\" r=\"4.5\" fill=\"#0d9488\"/>\n  <text x=\"508\" y=\"158\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#134e4a\">b₁=1</text>\n\n  <circle cx=\"555\" cy=\"121\" r=\"4.5\" fill=\"#0d9488\"/>\n  <circle cx=\"569\" cy=\"121\" r=\"4.5\" fill=\"#0d9488\"/>\n  <circle cx=\"555\" cy=\"135\" r=\"4.5\" fill=\"#0d9488\"/>\n  <circle cx=\"569\" cy=\"135\" r=\"4.5\" fill=\"#0d9488\"/>\n  <text x=\"562\" y=\"158\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#134e4a\">b₂=4</text>\n\n  <circle cx=\"614\" cy=\"112\" r=\"3.8\" fill=\"#0d9488\"/><circle cx=\"626\" cy=\"112\" r=\"3.8\" fill=\"#0d9488\"/><circle cx=\"638\" cy=\"112\" r=\"3.8\" fill=\"#0d9488\"/>\n  <circle cx=\"614\" cy=\"124\" r=\"3.8\" fill=\"#0d9488\"/><circle cx=\"626\" cy=\"124\" r=\"3.8\" fill=\"#0d9488\"/><circle cx=\"638\" cy=\"124\" r=\"3.8\" fill=\"#0d9488\"/>\n  <circle cx=\"614\" cy=\"136\" r=\"3.8\" fill=\"#0d9488\"/><circle cx=\"626\" cy=\"136\" r=\"3.8\" fill=\"#0d9488\"/><circle cx=\"638\" cy=\"136\" r=\"3.8\" fill=\"#0d9488\"/>\n  <text x=\"626\" y=\"158\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#134e4a\">b₃=9</text>\n\n  <text x=\"577\" y=\"184\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#115e59\">(1, 4, 9, 16, 25, 36, ...)</text>\n  <text x=\"577\" y=\"206\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0f766e\">Bağıntı: aₙ₋₁ + aₙ = n² = bₙ</text>\n  <text x=\"577\" y=\"222\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#134e4a\">(Ardışık 2 üçgensel toplamı = karesel)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "İndirgeme bağıntısı verilen bir dizide başlangıç terimi (a₁ gibi) verilmeden dizinin terimleri sayısal olarak hesaplanamaz."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "n. üçgensel sayı ile (n+1). üçgensel sayının toplamı (n+1). karesel sayıya eşittir: Örneğin a₃ + a₄ = 6 + 10 = 16 = 4² = b₄."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Genel terimi aₙ = (3n - 11) / (n + 1) olan gerçek sayı dizisinin kaçıncı terimi 1'dir ve bu dizinin kaç terimi negatiftir?",
+      "cevap": "1) aₙ = 1 olması için (3n - 11) / (n + 1) = 1 denklemi çözülür: 3n - 11 = n + 1 ⇒ 2n = 12 ⇒ n = 6 bulunur. Yani dizinin 6. terimi (a₆) 1'dir. 2) Terimlerin negatif olması için (3n - 11) / (n + 1) < 0 olmalıdır. n ∈ Z⁺ olduğundan payda (n + 1) daima pozitiftir. O hâlde pay negatif olmalıdır: 3n - 11 < 0 ⇒ n < 11/3 ≈ 3,66. Pozitif tam sayı olan n değerleri 1, 2 ve 3'tür; dolayısıyla dizinin 3 terimi (a₁, a₂, a₃) negatiftir."
+    },
+    {
+      "soru": "A = {1, 2, 3, 4, 5} kümesi üzerinde tanımlı aₙ = n² - 4n sonlu dizisinin terimlerinin toplamı kaçtır?",
+      "cevap": "5 terimli sonlu dizinin terimleri n = 1, 2, 3, 4, 5 yazılarak sırasıyla bulunur: a₁ = 1² - 4(1) = -3, a₂ = 2² - 4(2) = -4, a₃ = 3² - 4(3) = -3, a₄ = 4² - 4(4) = 0 ve a₅ = 5² - 4(5) = 5. Sonlu dizi (-3, -4, -3, 0, 5) olup terimlerinin toplamı: (-3) + (-4) + (-3) + 0 + 5 = -5 bulunur."
+    },
+    {
+      "soru": "Genel terimi aₙ = (6n + k - 2) / (2n + 4) olan (aₙ) dizisi sabit dizi olduğuna göre k + a₂₀ toplamı kaçtır?",
+      "cevap": "Rasyonel biçimdeki dizinin sabit dizi olması için n'li terimlerin katsayıları oranı ile sabit terimlerin oranı eşit olmalıdır: 6 / 2 = (k - 2) / 4 ⇒ 3 = (k - 2) / 4 ⇒ k - 2 = 12 ⇒ k = 14 bulunur. Sabit dizinin tüm terimleri katsayılar oranına (6 / 2 = 3) eşit olduğundan a₂₀ = 3'tür. Buradan k + a₂₀ = 14 + 3 = 17 elde edilir."
+    },
+    {
+      "soru": "İlk terimi a₁ = 4 olan bir (aₙ) dizisinde her n ∈ Z⁺ için aₙ₊₁ - aₙ = 2n + 1 indirgeme bağıntısı verildiğine göre a₁₀ terimi kaçtır?",
+      "cevap": "İndirgeme bağıntısında n yerine 1'den 9'a kadar değerler yazılıp taraf tarafa toplanır: n=1 için a₂ - a₁ = 3, n=2 için a₃ - a₂ = 5, ..., n=9 için a₁₀ - a₉ = 19. Eşitlikler taraf tarafa toplandığında ardışık terimler birbirini götürür ve a₁₀ - a₁ = 3 + 5 + 7 + ... + 19 elde edilir. Sağ taraf 1 eksik tek sayılar toplamıdır: 1 + 3 + 5 + ... + 19 = 10² = 100 olduğundan 3 + 5 + ... + 19 = 99 olur. a₁ = 4 yerine yazılırsa a₁₀ - 4 = 99 ⇒ a₁₀ = 103 bulunur."
+    },
+    {
+      "soru": "(Fₙ) Fibonacci sayı dizisinde F₉ = 34 ve F₁₁ = 89 olduğuna göre F₈ terimi kaçtır?",
+      "cevap": "Fibonacci sayı dizisinde her terim kendinden önceki iki terimin toplamına eşittir (Fₙ₊₂ = Fₙ₊₁ + Fₙ). Buna göre F₁₁ = F₁₀ + F₉ bağıntısından 89 = F₁₀ + 34 ⇒ F₁₀ = 55 bulunur. Ardından F₁₀ = F₉ + F₈ bağıntısında değerler yerine yazılırsa 55 = 34 + F₈ ⇒ F₈ = 21 elde edilir."
+    },
+    {
+      "soru": "Üçgensel sayı dizisinin 8. terimi ile 9. teriminin toplamı, karesel sayı dizisinin kaçıncı terimine eşittir ve değeri kaçtır?",
+      "cevap": "Üçgensel sayı dizisinin genel terimi aₙ = n(n + 1) / 2'dir. 8. terim a₈ = 8·9 / 2 = 36 ve 9. terim a₉ = 9·10 / 2 = 45'tir. İkisinin toplamı a₈ + a₉ = 36 + 45 = 81 = 9² olup karesel sayı dizisinin (bₙ = n²) 9. terimine (b₉ = 81) eşittir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Aşağıda kuralı verilen ifadelerden hangisi bir gerçek sayı dizisinin genel terimi olabilir?",
+      "secenekler": [
+        "cₙ = (4n - 1) / (2n + 3)",
+        "bₙ = {kok:n - 3}",
+        "aₙ = (2n + 1) / (n - 4)",
+        "dₙ = log(n - 2)",
+        "eₙ = 1 / (n² - 9)"
+      ],
+      "dogru": 0,
+      "aciklama": "cₙ = (4n - 1) / (2n + 3) ifadesinin paydasını sıfır yapan n = -3/2 değeri pozitif tam sayı (Z⁺) olmadığından her n ∈ Z⁺ için tanımlı bir gerçek sayıdır. Diğer seçenekler sırasıyla n=4, n∈{1,2}, n∈{1,2} ve n=3 için gerçek sayı belirtmez."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Genel terimi aₙ = (4n - 12) / (n + 2) olan bir gerçek sayı dizisinin kaç terimi negatiftir?",
+      "secenekler": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "dogru": 1,
+      "aciklama": "n ∈ Z⁺ için payda (n + 2) daima pozitiftir. Kesrin negatif olması için 4n - 12 < 0 ⇒ n < 3 olmalıdır. Pozitif tam sayılarda n < 3 koşulunu sağlayan yalnızca n = 1 ve n = 2 (toplam 2 terim) vardır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Genel terimi aₙ = (3n + m) / (n + 5) olan (aₙ) dizisi sabit dizi olduğuna göre m + a₁₀ toplamı kaçtır?",
+      "secenekler": [
+        "12",
+        "15",
+        "18",
+        "20",
+        "23"
+      ],
+      "dogru": 2,
+      "aciklama": "Sabit dizide katsayılar oranı eşittir: 3 / 1 = m / 5 ⇒ m = 15. Sabit dizinin tüm terimleri 3 / 1 = 3 olduğundan a₁₀ = 3'tür. Buradan m + a₁₀ = 15 + 3 = 18 bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Üçgensel sayı dizisinin 10. terimi (a₁₀) ile karesel sayı dizisinin 6. teriminin (b₆) toplamı kaçtır?",
+      "secenekler": [
+        "81",
+        "86",
+        "96",
+        "91",
+        "101"
+      ],
+      "dogru": 3,
+      "aciklama": "Üçgensel sayı dizisinin 10. terimi a₁₀ = 10·11 / 2 = 55'tir. Karesel sayı dizisinin 6. terimi b₆ = 6² = 36'dır. Toplamları 55 + 36 = 91 olur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Her gerçek sayı dizisinin tanım kümesi pozitif tam sayılar kümesi (Z⁺) veya onun Aₖ = {1, 2, ..., k} biçimindeki bir alt kümesidir.",
+          "dogru": true,
+          "aciklama": "Sonsuz dizilerin tanım kümesi Z⁺, sonlu dizilerin tanım kümesi ise Aₖ = {1, 2, ..., k} kümesidir."
+        },
+        {
+          "metin": "Genel terimi aₙ = (-1)ⁿ olan dizi bir sabit dizidir.",
+          "dogru": false,
+          "aciklama": "aₙ = (-1)ⁿ dizisinin terimleri (-1, 1, -1, 1, ...) şeklinde değiştiği için sabit dizi değildir."
+        },
+        {
+          "metin": "aₙ = (-1)ⁿ dizisi ile bₙ = cos(n·π) dizisi birbirine eşit dizilerdir.",
+          "dogru": true,
+          "aciklama": "Her n ∈ Z⁺ için (-1)ⁿ = cos(n·π) olduğundan karşılıklı tüm terimleri eşittir."
+        },
+        {
+          "metin": "Fibonacci sayı dizisinde 7. terim (F₇) 13'tür.",
+          "dogru": true,
+          "aciklama": "Fibonacci dizisinin terimleri sırasıyla 1, 1, 2, 3, 5, 8, 13, ... olduğundan 7. terim 13'tür."
+        },
+        {
+          "metin": "Ardışık iki karesel sayının toplamı daima bir üçgensel sayı verir.",
+          "dogru": false,
+          "aciklama": "Tam tersine, ardışık iki üçgensel sayının toplamı (aₙ₋₁ + aₙ = n²) daima bir karesel sayı verir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki dizi türlerini karşılık gelen genel terim veya tanımlarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Gerçek Sayı Dizisi",
+          "Tanım kümesi Z⁺, görüntü kümesi R'nin alt kümesi olan fonksiyon"
+        ],
+        [
+          "Sonlu Dizi",
+          "Tanım kümesi Aₖ = {1, 2, 3, ..., k} olan k terimli dizi"
+        ],
+        [
+          "Sabit Dizi",
+          "Her n ∈ Z⁺ için aₙ = c biçiminde tüm terimleri birbirine eşit olan dizi"
+        ],
+        [
+          "Üçgensel Sayı Dizisi",
+          "Genel terimi aₙ = n·(n + 1) / 2 olan ardışık doğal sayılar toplamı dizisi"
+        ],
+        [
+          "Karesel Sayı Dizisi",
+          "Genel terimi bₙ = n² olan ardışık tek doğal sayılar toplamı dizisi"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir dizide f(n) = aₙ ifadesine dizinin n. terimi veya ___ denir.",
+          "cevap": "genel terimi"
+        },
+        {
+          "metin": "Her n ∈ Z⁺ için aₙ = bₙ koşulunu sağlayan iki diziye ___ adı verilir.",
+          "cevap": "eşit diziler"
+        },
+        {
+          "metin": "Her terimi kendinden önceki bir veya birkaç terim cinsinden yazılan dizilere ___ denir.",
+          "cevap": "indirgemeli dizi"
+        },
+        {
+          "metin": "İlk iki terimi 1 olan ve Fₙ = Fₙ₋₁ + Fₙ₋₂ bağıntısıyla tanımlanan dizi ___ sayı dizisidir.",
+          "cevap": "Fibonacci"
+        },
+        {
+          "metin": "Verilen 1'den n'ye kadar olan ardışık doğal sayıların toplamıyla elde edilen diziye ___ sayı dizisi denir.",
+          "cevap": "üçgensel"
+        }
+      ],
+      "fazla": [
+        "aritmetik",
+        "geometrik"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "İlk terimi a₁ = 2 olan bir (aₙ) dizisinde her n ∈ Z⁺ için aₙ₊₁ = (n + 1) / n · aₙ indirgeme bağıntısı veriliyor. Buna göre dizinin 15. terimini (a₁₅) adım adım bulunuz.",
+      "cevap": "İndirgeme bağıntısı aₙ₊₁ / aₙ = (n + 1) / n şeklinde yazılıp n = 1'den n = 14'e kadar değerler verilirse: (a₂/a₁) · (a₃/a₂) · (a₄/a₃) · ... · (a₁₅/a₁₄) = (2/1) · (3/2) · (4/3) · ... · (15/14) olur. Çarpımda çapraz terimler sadeleşir ve a₁₅ / a₁ = 15 / 1 kalır. a₁ = 2 olduğundan a₁₅ = 15 · 2 = 30 bulunur.",
+      "ipuclari": [
+        "Verilen bağıntıyı aₙ₊₁ / aₙ = (n + 1) / n biçiminde oran olarak yazınız.",
+        "n = 1, 2, 3, ..., 14 değerlerini sırasıyla yazarak elde ettiğiniz 14 eşitliği taraf tarafa çarpınız.",
+        "Pay ve paydadaki sadeleştirmeleri yaptıktan sonra a₁₅ / a₁ = 15 / 1 eşitliğinde a₁ = 2 değerini yerine koyunuz."
+      ]
+    }
+  ],
+  "ozet": [
+    "Tanım kümesi pozitif tam sayılar kümesi Z⁺ = {1, 2, 3, ...} ve görüntü kümesi gerçek sayılar kümesinin alt kümesi olan fonksiyonlara gerçek sayı dizisi denir; f(n) = aₙ dizinin genel terimidir.",
+    "Bir ifadenin gerçek sayı dizisi belirtmesi için her n ∈ Z⁺ değerine karşılık tanımsız olmayan bir gerçek sayı üretmesi şarttır.",
+    "Aₖ = {1, 2, ..., k} kümesinde tanımlı dizilere sonlu dizi; tüm terimleri aynı olan diziye (aₙ = c) sabit dizi; her n ∈ Z⁺ için aₙ = bₙ olan dizilere eşit diziler denir.",
+    "Her terimi kendinden önceki terimlere bağlı tanımlanan dizilere indirgemeli dizi denir; F₁ = 1, F₂ = 1 ve Fₙ = Fₙ₋₁ + Fₙ₋₂ kuralıyla oluşan (1, 1, 2, 3, 5, 8, 13, ...) dizisi Fibonacci dizisidir.",
+    "Genel terimi aₙ = n(n+1)/2 olan (1, 3, 6, 10, ...) dizisi üçgensel sayı dizisi; genel terimi bₙ = n² olan (1, 4, 9, 16, ...) dizisi karesel sayı dizisidir ve ardışık iki üçgensel sayının toplamı bir karesel sayı verir."
+  ],
+  "ders_adi": "Matematik",
+  "yayin_tarihi": "2026-10-16"
+}

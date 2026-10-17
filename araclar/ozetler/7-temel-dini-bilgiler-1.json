@@ -111,24 +111,24 @@
       "tur": "coktan",
       "soru": "Hz. Muhammed, Kur’an’da geçen “orta namaz” ifadesinin ikindi namazı olduğunu söylemiştir. Bu örnek sünnetin hangi işlevini gösterir?",
       "secenekler": [
-        "Bir ibadetin uygulanışını davranışla göstermesini",
-        "İnsanlarla ilişkilerde güzel ahlaka örnek olmasını",
         "Bir ayetteki ifadenin anlamını açıklığa kavuşturmasını",
+        "İnsanlarla ilişkilerde güzel ahlaka örnek olmasını",
+        "Bir ibadetin uygulanışını davranışla göstermesini",
         "Geçmiş toplumların yaşadıklarını kıssalarla aktarmasını"
       ],
-      "dogru": 2,
+      "dogru": 0,
       "aciklama": "C. Burada bir ifadenin hangi namaza karşılık geldiği açıklanmıştır. Namazın hareketleri gösterilmemiş, günlük bir davranış ya da geçmiş toplumlara ait bir kıssa anlatılmamıştır. Örnek, sünnetin ayetlerin anlaşılmasına katkısını gösterir."
     },
     {
       "tur": "coktan",
       "soru": "Ece’nin küçük kardeşi, çizdiği şekli beğenmeyince kâğıdı değiştirmek istiyor. Kâğıdın arka yüzü boş. Ece hem şefkatli davranmak hem israfı önlemek istiyor. Hangi davranış iki amaca da uygundur?",
       "secenekler": [
-        "Arka yüzde çizmesine sakin biçimde yardım etmek",
         "Üzülmemesi için her denemede yeni kâğıt vermek",
+        "Arka yüzde çizmesine sakin biçimde yardım etmek",
         "Arka yüzü kullanmasını sabırsız bir sesle istemek",
         "Başka uğraş önerip kullanılabilir kâğıdı çöpe atmak"
       ],
-      "dogru": 0,
+      "dogru": 1,
       "aciklama": "A. Sakin biçimde yardım etmek şefkatli davranmayı, boş yüzü kullanmak israfı önlemeyi sağlar. Yeni kâğıt vermek ve kullanılabilir kâğıdı atmak israfı önlemez; sabırsız bir üslup ise şefkat amacına uygun değildir."
     },
     {
@@ -136,16 +136,28 @@
       "soru": "Bir öğrenci, sünnetin sahabilerin uygulamalarını onaylamayı da kapsadığını göstermek istiyor. Hangi tür kayıt bu araştırmada doğrudan kanıt olarak kullanılabilir?",
       "secenekler": [
         "Hz. Muhammed’in bir davranışla ilgili öğüt vermesini anlatan kayıt",
-        "Hz. Muhammed’in bir sahabinin uygulamasını uygun bulduğunu anlatan kayıt",
         "Hz. Muhammed’in bir ibadeti yaparak öğretmesini anlatan kayıt",
+        "Hz. Muhammed’in bir sahabinin uygulamasını uygun bulduğunu anlatan kayıt",
         "Bir sahabinin kendi davranışı hakkında görüş bildirmesini anlatan kayıt"
       ],
-      "dogru": 1,
+      "dogru": 2,
       "aciklama": "B. Bir sahabinin uygulamasının Hz. Muhammed tarafından uygun bulunması onaylamadır. Öğüt verme söz, yaparak öğretme davranış boyutudur. Sahabinin kendi görüşü, Hz. Muhammed’in o uygulamaya onay verdiğini tek başına göstermez."
     },
     {
+      "tur": "coktan",
+      "soru": "‘Okuma, anlama ve hayata yansıtma’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Bir ilkeyi bilmekle onu uygulamak ayrı aşamalardır; öğrenmede ikisine de yer ver."
+      ],
+      "dogru": 3,
+      "aciklama": "Okuma, anlama ve hayata yansıtma bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
       "tur": "dy",
-      "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
           "metin": "Sünnetin rehberliği ahlaki davranışlara da uzanır.",
@@ -171,7 +183,7 @@
     },
     {
       "tur": "eslestir",
-      "yonerge": "İlişkili kavram ve açıklamaları eşleştiriniz.",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
           "Hükmün bildirilmesi",
@@ -193,7 +205,7 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
           "metin": "Sünnet; söz, davranış ve Hz. Muhammed’in verdiği ___ boyutlarını kapsar.",
@@ -209,26 +221,18 @@
         }
       ],
       "fazla": [
-        "ayrılık"
+        "ayrılık",
+        "varsayım"
       ]
     },
     {
       "tur": "ogretici",
       "soru": "Bir öğrenci adaleti yalnız ailesi için istediğini, başkalarının haklarını önemsemediğini söylüyor. Kur’an ve sünnetin rehberliği açısından hangi eksikliği görmelidir?",
+      "cevap": "Adaleti yalnız kendi yakınlarıyla sınırlamaktadır. Başkalarının da hakkını gözeterek öğrendiği ilkeyi ilişkilerine yansıtmalıdır.",
       "ipuclari": [
         "Adaletin kimin hakkını korumayı gerektirdiğini düşün.",
         "İlkeyi yalnız kişisel yarara göre sınırlamanın sonucuna bak."
-      ],
-      "cevap": "Adaleti yalnız kendi yakınlarıyla sınırlamaktadır. Başkalarının da hakkını gözeterek öğrendiği ilkeyi ilişkilerine yansıtmalıdır."
-    },
-    {
-      "tur": "ogretici",
-      "soru": "Bir özette Kur’an ve sünnetin tanımları doğru, fakat günlük hayata etkisi yok. Özeti tek bir örnekle nasıl güçlendirebilirsiniz?",
-      "ipuclari": [
-        "Önce Kur’an’ın öğütlediği ahlaki bir ilke seç.",
-        "Bu ilkenin gözlenebilir bir davranışını ekle."
-      ],
-      "cevap": "Örneğin “Doğruluk öğüdünü benimseyen kişi, kendisine yarar sağlasa bile yanlış bilgiyi düzeltir.” cümlesi eklenebilir. Böylece ilke ile davranış bağı görünür olur."
+      ]
     }
   ],
   "yazan": "Codex · kaynak ve soru kalite düzeltmesi · 02.10.2026",
@@ -240,5 +244,11 @@
     "kapsam": "Üst alanlar (sinif 7, ders, hafta 1, tarih, unite, konu, ciktilar, giris, yazan); 6 bölüm (12 paragraf, 6 kutu, 2 SVG görsel); giriş; 6 çözümlü örnek; 8 etkinlik (3 çoktan seçmeli = 12 seçenek, 1 D/Y = 4 ifade, 1 eşleştirme = 4 çift, 1 boşluk = 3 cümle + 1 fazla sözcük, 2 öğretici = 4 ipucu + 2 ceva",
     "kaynak": "Kitap: MEB Ortaokul ve İmam Hatip Ortaokulu Temel Dinî Bilgiler (İslam 1) 2026 (03-ARACLAR/_metin/kitap-ortaokul-temel-dini-bilgiler-islam1-2026-ilk35.txt): içindekiler (PDF s.8), 1. Ünite kapağı (PDF s.15-16), 1.1 Kur’an ve Sünnetin Hayatımdaki Yeri basılı s.16-21 = PDF s.17-22 satır satır okundu (",
     "durum": "Baştan okundu; 13 düzeltme işlendi (yüksek 0, orta 7, düşük 6); 6 bulgu reddedildi."
-  }
+  },
+  "ozet": [
+    "İslam inancına göre Kur’an-ı Kerim, Allah’ın Hz. Muhammed’e vahyettiği son ilahi kitaptır. Sünnet ise Hz. Muhammed’in sözlerini, davranışlarını ve sahabilerin uygulamalarına verdiği onayı kapsar.",
+    "Kur’an’da iman, ibadet, ahlak ve toplumsal hayatla ilgili hükümler bulunur. Allah’a, meleklere ve ahirete inanma iman alanıyla; namaz, oruç ve zekât ibadet alanıyla ilişkilidir.",
+    "Kur’an’da bazı hükümler genel olarak bildirilir; bunların uygulanışı Hz. Muhammed’in sünnetiyle açıklanır. Namazın nasıl kılınacağı ve rekâtları buna örnektir.",
+    "Kur’an okumak Müslümanlar için ibadettir. Okunan ayetlerin anlamını düşünmek ve verilen öğütleri kavramak da önemlidir."
+  ]
 }

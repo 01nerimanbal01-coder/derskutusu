@@ -110,8 +110,8 @@ def gorsel_4():
         "• x = log_a(b) sayısının hangi iki tam sayı arasında",
         "  olduğunu bulmak için b sayısı a'nın ardışık iki",
         "  tam sayı kuvveti arasına sıkıştırılır:",
-        "• Örnek: x = log_3(50) için 3^3 = 27 < 50 < 81 = 3^4",
-        "  olduğundan 3 < log_3(50) < 4 bulunur."
+        "• Örnek: x = log_3(50) için 3^3 = 27 &lt; 50 &lt; 81 = 3^4",
+        "  olduğundan 3 &lt; log_3(50) &lt; 4 bulunur."
     ], "#86198f")
     return _svg(g, y, s)
 

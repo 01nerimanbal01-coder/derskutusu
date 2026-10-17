@@ -23,6 +23,7 @@ import stat
 import subprocess
 import sys
 import zipfile
+import xml.etree.ElementTree as ET
 
 ARACLAR = Path(__file__).resolve().parent
 KOK = ARACLAR.parent
@@ -30,8 +31,11 @@ PUBLIC = KOK / "public"
 
 ZORUNLU_OZET_ALANLARI = (
     "sinif", "ders", "hafta", "tarih", "yayin_tarihi",
-    "unite", "konu", "ciktilar", "giris", "bolumler", "ornekler"
+    "unite", "konu", "ciktilar", "giris", "bolumler", "ornekler", "etkinlikler", "ozet"
 )
+ATIF_RE = re.compile(r"\b(ders kitab|MEB kitab|kitapta\b|kitaptaki|kitaba göre|kitabın|ünitede|özgün (anlam )?özet|bu satırda|kaynak notu)", re.I)
+YONERGE_RE = re.compile(r"\b(tartışınız|grupça|araştırınız|poster|afiş|broşür|slogan|mektup yazınız|paragraf yazınız)", re.I)
+MUTLAK_RE = re.compile(r"\b(kesin(likle)?|asla|her zaman|hiçbir zaman|tek başına|yalnızca|sadece|hiç)\b", re.I)
 
 
 def _dersler_sozlugu():
@@ -114,26 +118,33 @@ def sema_ve_gorsel_onar():
             d["ozet"] = []
             degisti = True
 
-        # Bölümlerde 'icerik' listesi kullanılmışsa 'metin'/'tablo'/'kutu' yapısına çevir
+        # Bölümlerde 'icerik' kullanılmışsa 'metin'/'tablo'/'kutu' yapısına çevir
         ozet_aday = []
         for b in d.get("bolumler", []):
             if "icerik" in b and "metin" not in b:
                 b["baslik"] = re.sub(r"^\d+\.\s*", "", b.get("baslik", ""))
                 metin, tablo, kutu = [], None, None
-                for item in b.pop("icerik", []):
-                    tip = item.get("tip")
-                    if tip == "paragraf":
-                        metin.append(item["metin"].replace("\n", " ").strip())
-                    elif tip == "madde":
-                        for md in item.get("maddeler", []):
-                            metin.append(md.replace("\n", " ").strip())
-                    elif tip == "tablo":
-                        tablo = {"basliklar": item["basliklar"], "satirlar": item["satirlar"]}
-                    elif tip == "kutu":
-                        tur = item.get("tur", "bilgi")
-                        if tur not in ("dikkat", "bilgi", "kural", "tanim", "ipucu", "hatirla"):
-                            tur = "bilgi"
-                        kutu = {"tur": tur, "baslik": item.get("baslik", ""), "metin": item["metin"].replace("\n", " ").strip()}
+                ic_ham = b.pop("icerik", [])
+                if isinstance(ic_ham, str):
+                    metin.append(ic_ham.replace("\n", " ").strip())
+                elif isinstance(ic_ham, list):
+                    for item in ic_ham:
+                        if isinstance(item, str):
+                            metin.append(item.replace("\n", " ").strip())
+                            continue
+                        tip = item.get("tip")
+                        if tip == "paragraf":
+                            metin.append(item["metin"].replace("\n", " ").strip())
+                        elif tip == "madde":
+                            for md in item.get("maddeler", []):
+                                metin.append(md.replace("\n", " ").strip())
+                        elif tip == "tablo":
+                            tablo = {"basliklar": item["basliklar"], "satirlar": item["satirlar"]}
+                        elif tip == "kutu":
+                            tur = item.get("tur", "bilgi")
+                            if tur not in ("dikkat", "bilgi", "kural", "tanim", "ipucu", "hatirla"):
+                                tur = "bilgi"
+                            kutu = {"tur": tur, "baslik": item.get("baslik", ""), "metin": item["metin"].replace("\n", " ").strip()}
                 b["metin"] = metin
                 if kutu:
                     b["kutu"] = kutu
@@ -197,7 +208,7 @@ def sema_ve_gorsel_onar():
             degisti = True
 
         if degisti:
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+            p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             onaran.append(f"araclar/ozetler/{p.name}: standart şemaya dönüştürüldü")
 
     return onaran
@@ -209,6 +220,17 @@ def derleme_calistir():
         r = subprocess.run([sys.executable, str(ARACLAR / betik)], cwd=str(ARACLAR), capture_output=True, text=True)
         if r.returncode != 0:
             raise RuntimeError(f"{betik} başarısız oldu:\n{r.stderr or r.stdout}")
+
+
+def _dizeler(o, yol=""):
+    if isinstance(o, dict):
+        for k, v in o.items():
+            yield from _dizeler(v, f"{yol}.{k}" if yol else k)
+    elif isinstance(o, list):
+        for i, v in enumerate(o):
+            yield from _dizeler(v, f"{yol}[{i}]")
+    elif isinstance(o, str):
+        yield yol, o
 
 
 def denetle(hizli=False):
@@ -258,7 +280,7 @@ def denetle(hizli=False):
     if "kokParcalari(satir)" not in (PUBLIC / "planlar.js").read_text(encoding="utf-8"):
         hatalar.append("public/planlar.js: kokParcalari(satir) fonksiyonu eksik")
 
-    # 2. Özet JSON şema, kesir/sembol söz dizimi ve derleme senkronizasyonu denetimi
+    # 2. Özet JSON şema, kesir/sembol söz dizimi, pedagojik kurallar ve derleme senkronizasyonu denetimi
     dersler = _dersler_sozlugu()
     icerikler_dosya = PUBLIC / "veri" / "icerikler.json"
     icerikler = json.loads(icerikler_dosya.read_text(encoding="utf-8")).get("icerikler", []) if icerikler_dosya.exists() else []
@@ -289,6 +311,32 @@ def denetle(hizli=False):
         yt = d.get("yayin_tarihi", "")
         if not (isinstance(yt, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", yt)):
             hatalar.append(f"{rel}: geçersiz yayin_tarihi '{yt}' (YYYY-AA-GG olmalı)")
+
+        if len(d.get("ornekler", [])) != 6:
+            hatalar.append(f"{rel}: örnek sayısı {len(d.get('ornekler', []))} (6 olmalı)")
+        E = d.get("etkinlikler", [])
+        if len(E) != 8:
+            hatalar.append(f"{rel}: etkinlik sayısı {len(E)} (8 olmalı)")
+        turler = [e.get("tur") for e in E]
+        for t in ("coktan", "dy", "eslestir", "bosluk", "ogretici"):
+            if t not in turler:
+                hatalar.append(f"{rel}: zorunlu etkinlik türü eksik '{t}'")
+
+        for idx, b in enumerate(d.get("bolumler", [])):
+            g = b.get("gorsel")
+            if g:
+                try:
+                    ET.fromstring(g)
+                except ET.ParseError as exc:
+                    hatalar.append(f"{rel}: bolumler[{idx}].gorsel geçersiz XML ({exc})")
+        if sum(1 for b in d.get("bolumler", []) if b.get("gorsel")) < 2:
+            hatalar.append(f"{rel}: görselli bölüm sayısı 2'den az")
+
+        for y_yol, y_str in _dizeler(d):
+            if y_yol.startswith(("claude_denetim", "kalite")) or "<svg" in y_str:
+                continue
+            if ATIF_RE.search(y_str):
+                hatalar.append(f"{rel} ({y_yol}): kitap atfı/üretim dili '{ATIF_RE.search(y_str).group(0)}'")
 
         # {kesir:...} içinde '|' çakışması denetimi
         for m in re.finditer(r"\{kesir:([^{}]+)\}", ham):

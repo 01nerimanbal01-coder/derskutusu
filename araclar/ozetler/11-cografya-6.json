@@ -1,249 +1,240 @@
 {
- "ad": "11-cografya-6",
- "sinif": 11,
- "ders": "cografya",
- "ders_adi": "Coğrafya",
- "hafta": 6,
- "tarih": "19-23 Ekim 2026",
- "yayin_tarihi": "2026-10-21",
- "unite": "DOĞAL SİSTEMLER VE SÜREÇLER",
- "konu": "Su Kaynakları ve Web Tabanlı CBS Uygulamaları",
- "ciktilar": [
-  "Yeryüzündeki su kaynaklarını (okyanuslar, denizler, göller, akarsular, buzullar ve yer altı suları) özelliklerine göre sınıflandırır.",
-  "Göllerin oluşum türlerini, akarsu rejimlerini ve yer altı su kaynaklarının (yamaç, karstik, artezyen, fay, gayzer) yapısını açıklar.",
-  "Web tabanlı Coğrafi Bilgi Sistemleri (CBS) aracılığıyla mekânsal veri katmanlarını kullanarak harita uygulamaları ve sorgulamalar yapar."
- ],
- "giris": "Mavi Gezegen olarak adlandırılan Dünya’mızın yüzeyinin yaklaşık %71’i sularla kaplıdır; ancak bu devasa su kütlesinin yalnızca %2,5’i canlıların doğrudan kullanabileceği tatlı sulardan oluşur. Su kaynaklarının yeryüzündeki dağılışını, oluşum mekanizmalarını bilmek ve bu kaynakları {koyu:Web Tabanlı Coğrafi Bilgi Sistemleri (CBS)} ile izleyip haritalamak sürdürülebilir su yönetimi için vazgeçilmezdir. Bu haftaki dersimizde hem {koyu:yeryüzündeki su kaynaklarını} sınıflandıracak hem de {koyu:Web CBS uygulamalarını} inceleyeceğiz.",
- "ozet": [
-  "{koyu:Suların Oransal Dağılımı:} Dünya’daki toplam suyun {koyu:%97,5’i tuzlu su} (okyanus ve denizler), yalnızca {koyu:%2,5’i tatlı sudur}. Tatlı suların ise %68,7’si buzullarda, %30,1’i yer altı sularında ve %1,2’si yüzey tatlı sularında (göller, akarsular) bulunur.",
-  "{koyu:Okyanuslar ve Denizler:} Büyük (Pasifik), Atlas (Atlantik) ve Hint Okyanusu ana okyanuslardır; denizler ise {koyu:kenar denizler} ve {koyu:iç denizler} olarak ikiye ayrılır.",
-  "{koyu:Göller:} Doğal göller ({koyu:tektonik, karstik, volkanik, buzul/sirk ve set gölleri}) ile yapay göller (barajlar) olarak sınıflandırılır; gideğeni (ayağı) olan göllerin suları tatlı, gideğeni olmayan kapalı havza göllerinin suları tuzlu/sodalıdır.",
-  "{koyu:Yer Altı Suları ve Kaynaklar:} Akifer adı verilen geçirgen tabakalarda biriken sular; {koyu:vadi/yamaç, karstik (voklüz), artezyen} (soğuk sular) ile {koyu:fay ve gayzer} (sıcak/jeotermal sular) kaynakları şeklinde yüzeye çıkar.",
-  "{koyu:Web Tabanlı CBS Uygulamaları:} İnternet tarayıcısı üzerinden nokta, çizgi, poligon (vektör) ve uydu görüntüsü (raster) katmanlarını birleştirerek mekânsal sorgulama, tampon bölge (buffer) analizi ve tematik harita üretme sistemidir."
- ],
- "bolumler": [
-  {
-   "baslik": "1. Yeryüzündeki Su Kaynakları: Okyanuslar, Denizler, Göller ve Akarsular",
-   "metin": [
-    "Hidrosferi (su küreyi) oluşturan suların %97,5’i okyanus ve denizlerdeki tuzlu sulardan, %2,5’i ise tatlı sulardan meydana gelir. Tatlı suların en büyük bölümü (%68,7) Antarktika ve Grönland başta olmak üzere {koyu:buzullarda} donmuş hâldedir; ikinci sırada (%30,1) {koyu:yer altı suları}, üçüncü sırada ise (%1,2) {koyu:göller, bataklıklar ve akarsular} yer alır.\n• {koyu:Okyanuslar ve Denizler:} Yüz ölçümü en büyük ve en derin okyanus {koyu:Büyük Okyanus (Pasifik)}, ikincisi {koyu:Atlas Okyanusu (Atlantik)}, üçüncüsü ise {koyu:Hint Okyanusu}’dur. Okyanuslara geniş boğazlarla bağlanan denizlere {koyu:kenar deniz} (Manş Denizi, Kuzey Denizi), kıta içlerine sokulmuş ve dar boğazlarla okyanusa bağlanan denizlere ise {koyu:iç deniz} (Akdeniz, Karadeniz, Kızıldeniz, Baltık Denizi) denir.",
-    "• {koyu:Göller:} Oluşumlarına göre {koyu:tektonik} (Hazar, Baykal, Tuz, Beyşehir, İznik), {koyu:karstik} (Salda, Kestel, Avlan), {koyu:volkanik/krater/kaldera/maar} (Nemrut, Meke, Acıgöl), {koyu:buzul/sirk} (Kaçkar ve Cilo dağlarındaki göller) ve {koyu:set gölleri} (alüvyal set: Eymir, Mogan, Bafa; heyelan set: Tortum, Sera, Abant, Yedigöller; kıyı set/lagün: Büyükçekmece, Küçükçekmece, Terkos; volkanik/lav set: Van, Çıldır, Erçek) olarak ayrılır. Sularını bir {koyu:gideğen (göl ayağı)} aracılığıyla dışarı boşaltan göllerin suları {koyu:tatlı} (Beyşehir, Eğirdir), gideğeni olmayan kapalı havza göllerinin suları ise {koyu:tuzlu, acı veya sodalıdır} (Tuz Gölü, Van Gölü, Burdur Gölü).\n• {koyu:Akarsular:} Sularını denize ulaştırabilen akarsular {koyu:açık havza} (Fırat, Dicle, Kızılırmak, Amazon), ulaştıramayanlar ise {koyu:kapalı havza} (Aras, Kura, Akarçay) özelliği gösterir."
-   ],
-   "kutu": {
-    "tur": "bilgi",
-    "baslik": "Akarsu Rejimi ve Debi",
-    "metin": "Akarsuyun herhangi bir kesitinden saniyede geçen su miktarına {koyu:debi (akım, m³/sn)} denir. Akarsuyun akımında yıl içinde görülen değişim düzenine ise {koyu:rejim} adı verilir; Ekvatoral ve ılıman okyanusal iklim akarsuları (Amazon, Kongo, Thames) {koyu:düzenli rejimli}, Muson ve Akdeniz iklimi akarsuları ise {koyu:düzensiz rejimlidir}."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 200\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"25\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Yeryüzündeki Su Kaynaklarının Dağılımı ve Sınıflandırılması</text><rect x=\"25\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><rect x=\"25\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#2563eb\"/><rect x=\"25\" y=\"60\" width=\"300\" height=\"10\" fill=\"#2563eb\"/><text x=\"175.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Dünya’daki Suların Oransal Dağılımı</text><text x=\"37\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Tuzlu Sular (Okyanus ve Denizler): %97,5</text><text x=\"37\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Tatlı Sular: Yalnızca %2,5</text><text x=\"37\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Tatlı suların %68,7’si kutup ve dağ buzullarında,</text><text x=\"37\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  %30,1’i yer altı sularında,</text><text x=\"37\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  %1,2’si yüzey sularında (göl, akarsu, bataklık)</text><rect x=\"355\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"1.6\"/><rect x=\"355\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#059669\"/><rect x=\"355\" y=\"60\" width=\"300\" height=\"10\" fill=\"#059669\"/><text x=\"505.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Yüzey ve Yer Altı Su Kaynakları</text><text x=\"367\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Okyanuslar: Pasifik (Büyük), Atlantik, Hint</text><text x=\"367\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Göller: Doğal (tektonik, karstik, volkanik, set)</text><text x=\"367\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  ve Yapay (baraj) göller</text><text x=\"367\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Akarsular: Açık ve kapalı havza akarsuları</text><text x=\"367\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Kaynaklar: Yamaç, karstik (voklüz), fay, artezyen, gayzer</text></svg>"
-  },
-  {
-   "baslik": "2. Yer Altı Suları ve Kaynak Türleri",
-   "metin": [
-    "Yağışlarla yeryüzüne düşen suların geçirgen (kumlu, çakıllı, kalkerli) tabakalardan sızarak geçirimsiz (killi) bir tabaka üzerinde birikmesiyle {koyu:yer altı suları} oluşur. Yer altı suyunu tutan gözenekli kayaç katmanlarına {koyu:akifer} denir. Yer altı sularının yeryüzüne çıktığı noktalara {koyu:kaynak (pınar)} adı verilir:",
-    "1. {koyu:Yamaç (Vadi) Kaynağı:} Vadilerin yamaçlarının yer altı su tablasını kesmesiyle oluşan soğuk su kaynaklarıdır.\n2. {koyu:Karstik Kaynak (Voklüz):} Kalker (kireç taşı) gibi eriyebilen kayaçların içindeki mağara ve boşluklarda biriken bol kireçli soğuk suların yüzeye çıkmasıdır (Akdeniz Bölgesi’nde yaygındır).\n3. {koyu:Artezyen Kaynağı:} İki geçirimsiz tabaka arasında sıkışmış basınçlı yer altı suyunun, insanlar tarafından {koyu:sondajla delinerek} yüzeye fışkırarak çıkmasıdır (soğuk sudur, tarımsal sulamada kullanılır).\n4. {koyu:Fay Kaynağı:} Kırıklı (faylı) jeolojik yapılarda derinlerden gelen, sıcaklığı yıl boyu değişmeyen ve mineralce zengin olan {koyu:sıcak (termal/kaplıca)} sulardır.\n5. {koyu:Gayzer Kaynağı:} Aktif volkanik bölgelerde (İzlanda, ABD Yellowstone, Yeni Zelanda) belirli aralıklarla buharla birlikte fışkıran sıcak su kaynaklarıdır (Türkiye’de aktif volkan olmadığı için gayzer yoktur)."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "Artezyen ile Gayzeri Karıştırmayın!",
-    "metin": "Her ikisinde de su fışkırarak çıkar; ancak {koyu:artezyen} insan müdahalesiyle (sondajla) açılan {koyu:soğuk} bir kaynak iken, {koyu:gayzer} aktif volkanik alanlarda kendiliğinden fışkıran {koyu:sıcak} bir kaynaktır."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 200\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"25\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#7c2d12\" text-anchor=\"middle\">Yer Altı Su Kaynakları ve Web Tabanlı CBS Uygulamaları</text><rect x=\"25\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"1.6\"/><rect x=\"25\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#d97706\"/><rect x=\"25\" y=\"60\" width=\"300\" height=\"10\" fill=\"#d97706\"/><text x=\"175.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Kaynak Türleri ve Özellikleri</text><text x=\"37\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Artezyen: İki geçirimsiz tabaka arasındaki basınçlı</text><text x=\"37\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  suyun sondajla fışkırarak çıkması (soğuk su)</text><text x=\"37\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Fay Kaynağı: Kırık hatlarından çıkan sıcak ve</text><text x=\"37\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  mineralce zengin jeotermal su</text><text x=\"37\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Gayzer: Aktif volkanik bölgelerde fışkıran sıcak su</text><rect x=\"355\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"1.6\"/><rect x=\"355\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#7c3aed\"/><rect x=\"355\" y=\"60\" width=\"300\" height=\"10\" fill=\"#7c3aed\"/><text x=\"505.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Web Tabanlı CBS ile Harita Uygulamaları</text><text x=\"367\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Veri Katmanları: Nokta, çizgi, poligon ve raster</text><text x=\"367\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Tematik Haritalama: Su havzaları, baraj doluluk</text><text x=\"367\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  oranları, kuraklık ve taşkın risk analizi</text><text x=\"367\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Sorgulama, tampon bölge (buffer) ve çakıştırma</text><text x=\"367\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bulut tabanlı anlık paylaşım ve karar destek</text></svg>"
-  },
-  {
-   "baslik": "3. Web Tabanlı CBS (Coğrafi Bilgi Sistemleri) Uygulamaları",
-   "metin": [
-    "{koyu:Web Tabanlı Coğrafi Bilgi Sistemleri (Web CBS)}, masaüstü CBS yazılımlarına ihtiyaç duymadan internet tarayıcıları veya mobil cihazlar üzerinden mekânsal verilerin görüntülenmesini, sorgulanmasını, analiz edilmesini ve paylaşılmasını sağlayan bulut tabanlı sistemlerdir (ATLAS, TUCBS, Google Earth Engine, ArcGIS Online vb.).",
-    "Web CBS’de yeryüzü bilgileri üst üste çakıştırılabilen {koyu:katmanlar (layers)} hâlinde tutulur:\n• {koyu:Vektör Veri Katmanları:} {koyu:Nokta} (su kaynakları, kuyular, meteoroloji istasyonları), {koyu:Çizgi} (akarsular, su boru hatları, fay hatları) ve {koyu:Poligon/Alan} (göller, su toplama havzaları, baraj alanları) olarak modellenir.\n• {koyu:Raster (Hücresel) Veri Katmanları:} Uydu görüntüleri, hava fotoğrafları ve Sayısal Yükselti Modelleri (SYM/DEM) piksellerden oluşur.\nWeb CBS aracılığıyla bir su havzasında {koyu:tampon bölge (buffer) analizi} yapılarak baraj koruma kuşakları belirlenebilir, uydu görüntülerinden göl yüzey alanlarının yıllara göre küçülmesi (kuraklık analizi) hesaplanabilir ve taşkın risk haritaları anlık olarak kamuoyuyla paylaşılabilir."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Vektör Veri Temsili Özeti",
-    "metin": "• {koyu:Nokta:} Pınar, artezyen kuyusu, baraj kapağı\n• {koyu:Çizgi:} Akarsu ağı, sulama kanalı, kıyı çizgisi\n• {koyu:Alan (Poligon):} Göl yüzeyi, akarsu havzası, buzul alanı"
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Dünya’daki tatlı suların en büyük kısmı hangi su kaynağında bulunmaktadır ve yüzey sularının tatlı sular içindeki payı nedir?",
-   "cevap": "Dünya’daki toplam suyun %2,5’ini oluşturan tatlı suların en büyük kısmı ({koyu:%68,7’si}) {koyu:kutup ve yüksek dağ buzullarında} bulunmaktadır. İkinci sırada yer altı suları (%30,1), üçüncü sırada ise {koyu:%1,2’lik payla yüzey tatlı suları} (göller, bataklıklar ve akarsular) gelir."
-  },
-  {
-   "soru": "Bir gölün suyunun tatlı veya tuzlu/sodalı olmasını belirleyen en temel faktör nedir? Türkiye’den birer örnek veriniz.",
-   "cevap": "En temel faktör gölün bir {koyu:gideğeninin (göl ayağının) olup olmamasıdır}. Gideğeni olan göller sularını yenilediği için {koyu:tatlı} (Beyşehir ve Eğirdir Gölleri); gideğeni olmayan kapalı havza gölleri ise buharlaşmayla mineraller biriktiği için {koyu:tuzlu veya sodalıdır} (Tuz Gölü ve Van Gölü)."
-  },
-  {
-   "soru": "Fay kaynaklarının sularının sıcak ve mineral bakımından zengin olmasının nedeni nedir?",
-   "cevap": "Fay kaynaklarında sular yer kabuğundaki derin kırık (fay) hatları boyunca magmaya yakın sıcak katmanlara kadar iner; burada {koyu:jeotermal ısıyla ısınır ve geçtikleri kayaçlardaki mineralleri çözerek} yüzeye sıcak ve şifalı (kaplıca/ılıca) su olarak çıkar."
-  },
-  {
-   "soru": "Web tabanlı bir CBS uygulamasında Türkiye’deki su kaynaklarını haritalayan bir araştırmacı; “Van Gölü”, “Kızılırmak Nehri” ve “Afyonkarahisar’daki bir jeotermal kuyu” verilerini hangi vektör veri tipleriyle göstermelidir?",
-   "cevap": "• {koyu:Van Gölü:} Belirli bir yüz ölçümü ve sınırı olduğu için {koyu:Poligon (Alan)},\n• {koyu:Kızılırmak Nehri:} Uzunluk boyunca uzandığı için {koyu:Çizgi (Hat)},\n• {koyu:Jeotermal Kuyu:} Tek bir koordinat konumu belirttiği için {koyu:Nokta} veri tipiyle gösterilmelidir."
-  },
-  {
-   "soru": "Bir içme suyu barajının çevresindeki 1000 metrelik mesafede yapılaşmayı yasaklamak isteyen bir belediye, Web CBS’de hangi mekânsal analiz aracını kullanmalıdır?",
-   "cevap": "Baraj poligonunun çevresinde belirli bir mesafe (1000 m) koruma kuşağı oluşturan {koyu:Tampon Bölge (Buffer) Analizi} aracını kullanmalıdır."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "Dünya’daki tatlı su kaynakları hacimsel büyüklüklerine göre en fazla olandan en az olana doğru sıralandığında aşağıdakilerden hangisi doğru olur?",
-   "secenekler": [
-    "Göller ve akarsular > Yer altı suları > Buzullar",
-    "Yer altı suları > Buzullar > Göller ve akarsular",
-    "Buzullar > Yer altı suları > Göller ve akarsular",
-    "Buzullar > Göller ve akarsular > Yer altı suları",
-    "Akarsular > Göller > Buzullar"
-   ],
-   "dogru": 2,
-   "aciklama": "Tatlı suların %68,7’si buzullarda, %30,1’i yer altı sularında, %1,2’si ise yüzey sularında (göller, bataklıklar ve akarsular) bulunur."
-  },
-  {
-   "tur": "coktan",
-   "soru": "İki geçirimsiz tabaka arasında sıkışmış olan basınçlı yer altı suyunun sondajla delinerek yüzeye fışkırarak çıkmasıyla oluşan soğuk su kaynağı aşağıdakilerden hangisidir?",
-   "secenekler": [
-    "Gayzer kaynağı",
-    "Fay kaynağı",
-    "Voklüz (Karstik kaynak)",
-    "Artezyen kaynağı",
-    "Yamaç kaynağı"
-   ],
-   "dogru": 3,
-   "aciklama": "İki geçirimsiz tabaka arasındaki basınçlı akiferden sondajla çıkarılan soğuk su kaynağına artezyen denir."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Türkiye’de aktif volkanizma bulunmadığı için aşağıdaki su kaynaklarından hangisine doğal olarak rastlanmaz?",
-   "secenekler": [
-    "Fay kaynağı",
-    "Karstik kaynak (Voklüz)",
-    "Gayzer kaynağı",
-    "Artezyen kaynağı",
-    "Yamaç kaynağı"
-   ],
-   "dogru": 2,
-   "aciklama": "Gayzerler yalnızca aktif volkanik bölgelerde görülen aralıklı fışkıran sıcak su kaynaklarıdır; Türkiye’de aktif volkan olmadığı için gayzer yoktur."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Web tabanlı CBS uygulamalarında “akarsu kolları, sulama kanalları ve içme suyu boru hatları” aşağıdaki veri modellerinden hangisiyle temsil edilir?",
-   "secenekler": [
-    "Nokta (Point)",
-    "Çizgi (Line)",
-    "Poligon (Alan)",
-    "Piksel (Hücre)",
-    "Tablo başlığı"
-   ],
-   "dogru": 1,
-   "aciklama": "Akarsular, kanallar, yollar ve boru hatları gibi uzunluk boyutuna sahip doğrusal unsurlar vektör veri modelinde çizgi (line) katmanıyla gösterilir."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Aşağıdaki göllerden hangisi oluşumu bakımından bir “heyelan set gölü” örneğidir?",
-   "secenekler": [
-    "Tuz Gölü",
-    "Salda Gölü",
-    "Tortum Gölü",
-    "Büyükçekmece Gölü",
-    "Nemrut Gölü"
-   ],
-   "dogru": 2,
-   "aciklama": "Tortum, Sera, Abant ve Yedigöller heyelan set gölleridir. Tuz Gölü tektonik, Salda karstik, Büyükçekmece kıyı set (lagün), Nemrut ise volkanik (kaldera) gölüdür."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "11-cografya-6",
+  "sinif": 11,
+  "ders": "cografya",
+  "ders_adi": "Coğrafya",
+  "hafta": 6,
+  "tarih": "19-23 Ekim 2026",
+  "yayin_tarihi": "2026-10-21",
+  "unite": "DOĞAL SİSTEMLER VE SÜREÇLER",
+  "konu": "Su Kaynakları ve Web Tabanlı CBS Uygulamaları",
+  "ciktilar": [
+    "Yeryüzündeki su kaynaklarını (okyanuslar, denizler, göller, akarsular, buzullar ve yer altı suları) özelliklerine göre sınıflandırır.",
+    "Göllerin oluşum türlerini, akarsu rejimlerini ve yer altı su kaynaklarının (yamaç, karstik, artezyen, fay, gayzer) yapısını açıklar.",
+    "Web tabanlı Coğrafi Bilgi Sistemleri (CBS) aracılığıyla mekânsal veri katmanlarını kullanarak harita uygulamaları ve sorgulamalar yapar."
+  ],
+  "giris": "Mavi Gezegen olarak adlandırılan Dünya’mızın yüzeyinin yaklaşık %71’i sularla kaplıdır; ancak bu devasa su kütlesinin yalnızca %2,5’i canlıların doğrudan kullanabileceği tatlı sulardan oluşur. Su kaynaklarının yeryüzündeki dağılışını, oluşum mekanizmalarını bilmek ve bu kaynakları {koyu:Web Tabanlı Coğrafi Bilgi Sistemleri (CBS)} ile izleyip haritalamak sürdürülebilir su yönetimi için vazgeçilmezdir. Bu haftaki dersimizde hem {koyu:yeryüzündeki su kaynaklarını} sınıflandıracak hem de {koyu:Web CBS uygulamalarını} inceleyeceğiz.",
+  "ozet": [
+    "{koyu:Suların Oransal Dağılımı:} Dünya’daki toplam suyun {koyu:%97,5’i tuzlu su} (okyanus ve denizler), yalnızca {koyu:%2,5’i tatlı sudur}. Tatlı suların ise %68,7’si buzullarda, %30,1’i yer altı sularında ve %1,2’si yüzey tatlı sularında (göller, akarsular) bulunur.",
+    "{koyu:Okyanuslar ve Denizler:} Büyük (Pasifik), Atlas (Atlantik) ve Hint Okyanusu ana okyanuslardır; denizler ise {koyu:kenar denizler} ve {koyu:iç denizler} olarak ikiye ayrılır.",
+    "{koyu:Göller:} Doğal göller ({koyu:tektonik, karstik, volkanik, buzul/sirk ve set gölleri}) ile yapay göller (barajlar) olarak sınıflandırılır; gideğeni (ayağı) olan göllerin suları tatlı, gideğeni olmayan kapalı havza göllerinin suları tuzlu/sodalıdır.",
+    "{koyu:Yer Altı Suları ve Kaynaklar:} Akifer adı verilen geçirgen tabakalarda biriken sular; {koyu:vadi/yamaç, karstik (voklüz), artezyen} (soğuk sular) ile {koyu:fay ve gayzer} (sıcak/jeotermal sular) kaynakları şeklinde yüzeye çıkar.",
+    "{koyu:Web Tabanlı CBS Uygulamaları:} İnternet tarayıcısı üzerinden nokta, çizgi, poligon (vektör) ve uydu görüntüsü (raster) katmanlarını birleştirerek mekânsal sorgulama, tampon bölge (buffer) analizi ve tematik harita üretme sistemidir."
+  ],
+  "bolumler": [
     {
-     "metin": "Gideğeni (göl ayağı) bulunan göllerin suları dışarı boşalabildiği için genellikle tatlıdır.",
-     "dogru": true,
-     "aciklama": "Gideğen göldeki fazla suyu ve çözünmüş tuzları dışarı taşıdığı için göl suyu tatlı kalır."
+      "baslik": "1. Yeryüzündeki Su Kaynakları: Okyanuslar, Denizler, Göller ve Akarsular",
+      "metin": [
+        "Hidrosferi (su küreyi) oluşturan suların %97,5’i okyanus ve denizlerdeki tuzlu sulardan, %2,5’i ise tatlı sulardan meydana gelir. Tatlı suların en büyük bölümü (%68,7) Antarktika ve Grönland başta olmak üzere {koyu:buzullarda} donmuş hâldedir; ikinci sırada (%30,1) {koyu:yer altı suları}, üçüncü sırada ise (%1,2) {koyu:göller, bataklıklar ve akarsular} yer alır.\n• {koyu:Okyanuslar ve Denizler:} Yüz ölçümü en büyük ve en derin okyanus {koyu:Büyük Okyanus (Pasifik)}, ikincisi {koyu:Atlas Okyanusu (Atlantik)}, üçüncüsü ise {koyu:Hint Okyanusu}’dur. Okyanuslara geniş boğazlarla bağlanan denizlere {koyu:kenar deniz} (Manş Denizi, Kuzey Denizi), kıta içlerine sokulmuş ve dar boğazlarla okyanusa bağlanan denizlere ise {koyu:iç deniz} (Akdeniz, Karadeniz, Kızıldeniz, Baltık Denizi) denir.",
+        "{koyu:Göller:} Oluşumlarına göre {koyu:tektonik} (Hazar, Baykal, Tuz, Beyşehir, İznik), {koyu:karstik} (Salda, Kestel, Avlan), {koyu:volkanik/krater/kaldera/maar} (Nemrut, Meke, Acıgöl), {koyu:buzul/sirk} (Kaçkar ve Cilo dağlarındaki göller) ve {koyu:set gölleri} (alüvyal set: Eymir, Mogan, Bafa; heyelan set: Tortum, Sera, Abant, Yedigöller; kıyı set/lagün: Büyükçekmece, Küçükçekmece, Terkos; volkanik/lav set: Van, Çıldır, Erçek) olarak ayrılır. Sularını bir {koyu:gideğen (göl ayağı)} aracılığıyla dışarı boşaltan göllerin suları {koyu:tatlı} (Beyşehir, Eğirdir), gideğeni olmayan kapalı havza göllerinin suları ise {koyu:tuzlu, acı veya sodalıdır} (Tuz Gölü, Van Gölü, Burdur Gölü).\n• {koyu:Akarsular:} Sularını denize ulaştırabilen akarsular {koyu:açık havza} (Fırat, Dicle, Kızılırmak, Amazon), ulaştıramayanlar ise {koyu:kapalı havza} (Aras, Kura, Akarçay) özelliği gösterir."
+      ],
+      "kutu": {
+        "tur": "bilgi",
+        "baslik": "Akarsu Rejimi ve Debi",
+        "metin": "Akarsuyun herhangi bir kesitinden saniyede geçen su miktarına {koyu:debi (akım, m³/sn)} denir. Akarsuyun akımında yıl içinde görülen değişim düzenine ise {koyu:rejim} adı verilir; Ekvatoral ve ılıman okyanusal iklim akarsuları (Amazon, Kongo, Thames) {koyu:düzenli rejimli}, Muson ve Akdeniz iklimi akarsuları ise {koyu:düzensiz rejimlidir}."
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 200\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"25\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Yeryüzündeki Su Kaynaklarının Dağılımı ve Sınıflandırılması</text><rect x=\"25\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><rect x=\"25\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#2563eb\"/><rect x=\"25\" y=\"60\" width=\"300\" height=\"10\" fill=\"#2563eb\"/><text x=\"175.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Dünya’daki Suların Oransal Dağılımı</text><text x=\"37\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Tuzlu Sular (Okyanus ve Denizler): %97,5</text><text x=\"37\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Tatlı Sular: Yalnızca %2,5</text><text x=\"37\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Tatlı suların %68,7’si kutup ve dağ buzullarında,</text><text x=\"37\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  %30,1’i yer altı sularında,</text><text x=\"37\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  %1,2’si yüzey sularında (göl, akarsu, bataklık)</text><rect x=\"355\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"1.6\"/><rect x=\"355\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#059669\"/><rect x=\"355\" y=\"60\" width=\"300\" height=\"10\" fill=\"#059669\"/><text x=\"505.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Yüzey ve Yer Altı Su Kaynakları</text><text x=\"367\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Okyanuslar: Pasifik (Büyük), Atlantik, Hint</text><text x=\"367\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Göller: Doğal (tektonik, karstik, volkanik, set)</text><text x=\"367\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  ve Yapay (baraj) göller</text><text x=\"367\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Akarsular: Açık ve kapalı havza akarsuları</text><text x=\"367\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Kaynaklar: Yamaç, karstik (voklüz), fay, artezyen, gayzer</text></svg>"
     },
     {
-     "metin": "Fay kaynaklarının suları yağış miktarına ve mevsim sıcaklığına göre yıl içinde büyük değişim gösterir.",
-     "dogru": false,
-     "aciklama": "Yanlıştır; fay kaynakları derinlerden (magmaya yakın kuşaktan) beslendiği için debileri ve yüksek sıcaklıkları yıl boyu neredeyse sabittir."
+      "baslik": "2. Yer Altı Suları ve Kaynak Türleri",
+      "metin": [
+        "Yağışlarla yeryüzüne düşen suların geçirgen (kumlu, çakıllı, kalkerli) tabakalardan sızarak geçirimsiz (killi) bir tabaka üzerinde birikmesiyle {koyu:yer altı suları} oluşur. Yer altı suyunu tutan gözenekli kayaç katmanlarına {koyu:akifer} denir. Yer altı sularının yeryüzüne çıktığı noktalara {koyu:kaynak (pınar)} adı verilir:",
+        "1. {koyu:Yamaç (Vadi) Kaynağı:} Vadilerin yamaçlarının yer altı su tablasını kesmesiyle oluşan soğuk su kaynaklarıdır.\n2. {koyu:Karstik Kaynak (Voklüz):} Kalker (kireç taşı) gibi eriyebilen kayaçların içindeki mağara ve boşluklarda biriken bol kireçli soğuk suların yüzeye çıkmasıdır (Akdeniz Bölgesi’nde yaygındır).\n3. {koyu:Artezyen Kaynağı:} İki geçirimsiz tabaka arasında sıkışmış basınçlı yer altı suyunun, insanlar tarafından {koyu:sondajla delinerek} yüzeye fışkırarak çıkmasıdır (soğuk sudur, tarımsal sulamada kullanılır).\n4. {koyu:Fay Kaynağı:} Kırıklı (faylı) jeolojik yapılarda derinlerden gelen, sıcaklığı yıl boyu değişmeyen ve mineralce zengin olan {koyu:sıcak (termal/kaplıca)} sulardır.\n5. {koyu:Gayzer Kaynağı:} Aktif volkanik bölgelerde (İzlanda, ABD Yellowstone, Yeni Zelanda) belirli aralıklarla buharla birlikte fışkıran sıcak su kaynaklarıdır (Türkiye’de aktif volkan olmadığı için gayzer yoktur)."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Artezyen ile Gayzeri Karıştırmayın!",
+        "metin": "Her ikisinde de su fışkırarak çıkar; ancak {koyu:artezyen} insan müdahalesiyle (sondajla) açılan {koyu:soğuk} bir kaynak iken, {koyu:gayzer} aktif volkanik alanlarda kendiliğinden fışkıran {koyu:sıcak} bir kaynaktır."
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 200\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"25\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#7c2d12\" text-anchor=\"middle\">Yer Altı Su Kaynakları ve Web Tabanlı CBS Uygulamaları</text><rect x=\"25\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"1.6\"/><rect x=\"25\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#d97706\"/><rect x=\"25\" y=\"60\" width=\"300\" height=\"10\" fill=\"#d97706\"/><text x=\"175.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Kaynak Türleri ve Özellikleri</text><text x=\"37\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Artezyen: İki geçirimsiz tabaka arasındaki basınçlı</text><text x=\"37\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  suyun sondajla fışkırarak çıkması (soğuk su)</text><text x=\"37\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Fay Kaynağı: Kırık hatlarından çıkan sıcak ve</text><text x=\"37\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  mineralce zengin jeotermal su</text><text x=\"37\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Gayzer: Aktif volkanik bölgelerde fışkıran sıcak su</text><rect x=\"355\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"1.6\"/><rect x=\"355\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#7c3aed\"/><rect x=\"355\" y=\"60\" width=\"300\" height=\"10\" fill=\"#7c3aed\"/><text x=\"505.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Web Tabanlı CBS ile Harita Uygulamaları</text><text x=\"367\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Veri Katmanları: Nokta, çizgi, poligon ve raster</text><text x=\"367\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Tematik Haritalama: Su havzaları, baraj doluluk</text><text x=\"367\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  oranları, kuraklık ve taşkın risk analizi</text><text x=\"367\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Sorgulama, tampon bölge (buffer) ve çakıştırma</text><text x=\"367\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bulut tabanlı anlık paylaşım ve karar destek</text></svg>"
     },
     {
-     "metin": "Kıta içlerine sokulmuş ve okyanuslara dar boğazlarla bağlanan Akdeniz ve Karadeniz gibi denizlere iç deniz denir.",
-     "dogru": true,
-     "aciklama": "İç denizler kıta içlerinde yer alır ve boğazlarla okyanuslara bağlanır."
-    },
-    {
-     "metin": "Web tabanlı CBS uygulamalarını kullanabilmek için her kullanıcının bilgisayarına yüksek kapasiteli masaüstü yazılım kurması zorunludur.",
-     "dogru": false,
-     "aciklama": "Yanlıştır; Web CBS bulut ve internet tarayıcısı üzerinden çalışır, ek kurulum gerektirmez."
-    },
-    {
-     "metin": "Karstik kaynakların (voklüz) suları kireç (kalsiyum karbonat) bakımından zengindir.",
-     "dogru": true,
-     "aciklama": "Kalker (kireç taşı) tabakalarını eriterek akan karstik sular bol miktarda kireç içerir."
+      "baslik": "3. Web Tabanlı CBS (Coğrafi Bilgi Sistemleri) Uygulamaları",
+      "metin": [
+        "{koyu:Web Tabanlı Coğrafi Bilgi Sistemleri (Web CBS)}, masaüstü CBS yazılımlarına ihtiyaç duymadan internet tarayıcıları veya mobil cihazlar üzerinden mekânsal verilerin görüntülenmesini, sorgulanmasını, analiz edilmesini ve paylaşılmasını sağlayan bulut tabanlı sistemlerdir (ATLAS, TUCBS, Google Earth Engine, ArcGIS Online vb.).",
+        "Web CBS’de yeryüzü bilgileri üst üste çakıştırılabilen {koyu:katmanlar (layers)} hâlinde tutulur:\n• {koyu:Vektör Veri Katmanları:} {koyu:Nokta} (su kaynakları, kuyular, meteoroloji istasyonları), {koyu:Çizgi} (akarsular, su boru hatları, fay hatları) ve {koyu:Poligon/Alan} (göller, su toplama havzaları, baraj alanları) olarak modellenir.\n• {koyu:Raster (Hücresel) Veri Katmanları:} Uydu görüntüleri, hava fotoğrafları ve Sayısal Yükselti Modelleri (SYM/DEM) piksellerden oluşur.\nWeb CBS aracılığıyla bir su havzasında {koyu:tampon bölge (buffer) analizi} yapılarak baraj koruma kuşakları belirlenebilir, uydu görüntülerinden göl yüzey alanlarının yıllara göre küçülmesi (kuraklık analizi) hesaplanabilir ve taşkın risk haritaları anlık olarak kamuoyuyla paylaşılabilir."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Vektör Veri Temsili Özeti",
+        "metin": "{koyu:Nokta:} Pınar, artezyen kuyusu, baraj kapağı\n• {koyu:Çizgi:} Akarsu ağı, sulama kanalı, kıyı çizgisi\n• {koyu:Alan (Poligon):} Göl yüzeyi, akarsu havzası, buzul alanı"
+      }
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "soru": "Aşağıdaki su kaynaklarını ve CBS kavramlarını doğru açıklamalarıyla eşleştiriniz.",
-   "ciftler": [
-    [
-     "Akifer",
-     "Yer altı suyunu bünyesinde tutan geçirgen ve gözenekli kayaç tabakası"
-    ],
-    [
-     "Voklüz",
-     "Karstik arazilerde mağara ve boşluklardan yüzeye çıkan gür soğuk su kaynağı"
-    ],
-    [
-     "Fay kaynağı",
-     "Kırık hatları boyunca derinlerden yükselen mineralce zengin sıcak su kaynağı"
-    ],
-    [
-     "Tampon bölge (Buffer) analizi",
-     "Web CBS’de bir akarsu veya göl çevresinde belirli mesafede koruma kuşağı belirleme"
-    ],
-    [
-     "Raster veri",
-     "Uydu görüntüleri ve sayısal yükselti modellerini oluşturan piksel tabanlı veri katmanı"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
-   "cumleler": [
+  ],
+  "ornekler": [
     {
-     "metin": "Yeryüzündeki en geniş yüz ölçümüne ve en derin çukura (Mariana) sahip okyanus ___ Okyanus’tur.",
-     "cevap": "Büyük"
+      "soru": "Dünya’daki tatlı suların en büyük kısmı hangi su kaynağında bulunmaktadır ve yüzey sularının tatlı sular içindeki payı nedir?",
+      "cevap": "Dünya’daki toplam suyun %2,5’ini oluşturan tatlı suların en büyük kısmı ({koyu:%68,7’si}) {koyu:kutup ve yüksek dağ buzullarında} bulunmaktadır. İkinci sırada yer altı suları (%30,1), üçüncü sırada ise {koyu:%1,2’lik payla yüzey tatlı suları} (göller, bataklıklar ve akarsular) gelir."
     },
     {
-     "metin": "Sularını denize veya okyanusa ulaştıramayan akarsuların beslendiği alanlara ___ havza denir.",
-     "cevap": "kapalı"
+      "soru": "Bir gölün suyunun tatlı veya tuzlu/sodalı olmasını belirleyen en temel faktör nedir? Türkiye’den birer örnek veriniz.",
+      "cevap": "En temel faktör gölün bir {koyu:gideğeninin (göl ayağının) olup olmamasıdır}. Gideğeni olan göller sularını yenilediği için {koyu:tatlı} (Beyşehir ve Eğirdir Gölleri); gideğeni olmayan kapalı havza gölleri ise buharlaşmayla mineraller biriktiği için {koyu:tuzlu veya sodalıdır} (Tuz Gölü ve Van Gölü)."
     },
     {
-     "metin": "Dalgaların bir koyun önünü kumlarla kapatması sonucunda oluşan kıyı set göllerine ___ adı verilir.",
-     "cevap": "lagün"
+      "soru": "Fay kaynaklarının sularının sıcak ve mineral bakımından zengin olmasının nedeni nedir?",
+      "cevap": "Fay kaynaklarında sular yer kabuğundaki derin kırık (fay) hatları boyunca magmaya yakın sıcak katmanlara kadar iner; burada {koyu:jeotermal ısıyla ısınır ve geçtikleri kayaçlardaki mineralleri çözerek} yüzeye sıcak ve şifalı (kaplıca/ılıca) su olarak çıkar."
     },
     {
-     "metin": "Bir akarsuyun herhangi bir kesitinden bir saniyede geçen su hacmine ___ (akım) denir.",
-     "cevap": "debi"
+      "soru": "Web tabanlı bir CBS uygulamasında Türkiye’deki su kaynaklarını haritalayan bir araştırmacı; “Van Gölü”, “Kızılırmak Nehri” ve “Afyonkarahisar’daki bir jeotermal kuyu” verilerini hangi vektör veri tipleriyle göstermelidir?",
+      "cevap": "{koyu:Van Gölü:} Belirli bir yüz ölçümü ve sınırı olduğu için {koyu:Poligon (Alan)},\n• {koyu:Kızılırmak Nehri:} Uzunluk boyunca uzandığı için {koyu:Çizgi (Hat)},\n• {koyu:Jeotermal Kuyu:} Tek bir koordinat konumu belirttiği için {koyu:Nokta} veri tipiyle gösterilmelidir."
     },
     {
-     "metin": "Web tabanlı CBS’de göller ve su toplama havzaları gibi yüz ölçümü olan alanlar ___ (alan) vektör verisiyle gösterilir.",
-     "cevap": "poligon"
+      "soru": "Bir içme suyu barajının çevresindeki 1000 metrelik mesafede yapılaşmayı yasaklamak isteyen bir belediye, Web CBS’de hangi mekânsal analiz aracını kullanmalıdır?",
+      "cevap": "Baraj poligonunun çevresinde belirli bir mesafe (1000 m) koruma kuşağı oluşturan {koyu:Tampon Bölge (Buffer) Analizi} aracını kullanmalıdır."
+    },
+    {
+      "soru": "Aşağıdaki göllerden hangisi oluşumu bakımından bir “heyelan set gölü” örneğidir?",
+      "cevap": "Doğru yanıt: Tortum Gölü. Tortum, Sera, Abant ve Yedigöller heyelan set gölleridir. Tuz Gölü tektonik, Salda karstik, Büyükçekmece kıyı set (lagün), Nemrut ise volkanik (kaldera) gölüdür."
     }
-   ],
-   "fazla": [
-    "açık",
-    "nokta"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Kuraklık tehdidi altındaki bir göl havzasını inceleyen bir coğrafyacının; gölün su kaybını tespit etmek ve havzadaki su kaynaklarını yönetmek için Web tabanlı CBS’den nasıl yararlanabileceğini açıklayınız.",
-   "ipuclari": [
-    "1. İpucu: Farklı yıllara ait uydu görüntüleri (raster katmanı) ile göl poligonlarının nasıl karşılaştırılacağını belirtiniz.",
-    "2. İpucu: Havzadaki artezyen kuyuları (nokta), akarsular (çizgi) ve tarım alanları (poligon) katmanlarının nasıl sorgulanacağını yazınız."
-   ],
-   "cevap": "Coğrafyacı öncelikle Web tabanlı CBS’de farklı yıllara ait uydu görüntülerini (raster veri) ve göl sınırlarını (poligon veri) üst üste çakıştırarak göl yüzey alanındaki küçülmeyi haritalar. Ardından havzadaki besleyici akarsu ağını (çizgi katmanı), yer altı su kuyularını ve artezyenleri (nokta katmanı) ile sulamalı tarım alanlarını (poligon katmanı) aynı harita üzerinde sorgular. Böylece aşırı yer altı suyu çekilen bölgeleri tespit eder, göl çevresinde tampon bölge (buffer) analiziyle koruma alanları belirler ve karar vericiler için etkileşimli bir su yönetimi haritası oluşturur."
-  }
- ]
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Dünya’daki tatlı su kaynakları hacimsel büyüklüklerine göre en fazla olandan en az olana doğru sıralandığında aşağıdakilerden hangisi doğru olur?",
+      "secenekler": [
+        "Buzullar > Yer altı suları > Göller ve akarsular",
+        "Yer altı suları > Buzullar > Göller ve akarsular",
+        "Göller ve akarsular > Yer altı suları > Buzullar",
+        "Buzullar > Göller ve akarsular > Yer altı suları",
+        "Akarsular > Göller > Buzullar"
+      ],
+      "dogru": 0,
+      "aciklama": "Tatlı suların %68,7’si buzullarda, %30,1’i yer altı sularında, %1,2’si ise yüzey sularında (göller, bataklıklar ve akarsular) bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "İki geçirimsiz tabaka arasında sıkışmış olan basınçlı yer altı suyunun sondajla delinerek yüzeye fışkırarak çıkmasıyla oluşan soğuk su kaynağı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Gayzer kaynağı",
+        "Artezyen kaynağı",
+        "Voklüz (Karstik kaynak)",
+        "Fay kaynağı",
+        "Yamaç kaynağı"
+      ],
+      "dogru": 1,
+      "aciklama": "İki geçirimsiz tabaka arasındaki basınçlı akiferden sondajla çıkarılan soğuk su kaynağına artezyen denir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Türkiye’de aktif volkanizma bulunmadığı için aşağıdaki su kaynaklarından hangisine doğal olarak rastlanmaz?",
+      "secenekler": [
+        "Fay kaynağı",
+        "Karstik kaynak (Voklüz)",
+        "Gayzer kaynağı",
+        "Artezyen kaynağı",
+        "Yamaç kaynağı"
+      ],
+      "dogru": 2,
+      "aciklama": "Gayzerler yalnızca aktif volkanik bölgelerde görülen aralıklı fışkıran sıcak su kaynaklarıdır; Türkiye’de aktif volkan olmadığı için gayzer yoktur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Web tabanlı CBS uygulamalarında “akarsu kolları, sulama kanalları ve içme suyu boru hatları” aşağıdaki veri modellerinden hangisiyle temsil edilir?",
+      "secenekler": [
+        "Nokta (Point)",
+        "Piksel (Hücre)",
+        "Poligon (Alan)",
+        "Çizgi (Line)",
+        "Tablo başlığı"
+      ],
+      "dogru": 3,
+      "aciklama": "Akarsular, kanallar, yollar ve boru hatları gibi uzunluk boyutuna sahip doğrusal unsurlar vektör veri modelinde çizgi (line) katmanıyla gösterilir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Gideğeni (göl ayağı) bulunan göllerin suları dışarı boşalabildiği için genellikle tatlıdır.",
+          "dogru": true,
+          "aciklama": "Gideğen göldeki fazla suyu ve çözünmüş tuzları dışarı taşıdığı için göl suyu tatlı kalır."
+        },
+        {
+          "metin": "Fay kaynaklarının suları yağış miktarına ve mevsim sıcaklığına göre yıl içinde büyük değişim gösterir.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; fay kaynakları derinlerden (magmaya yakın kuşaktan) beslendiği için debileri ve yüksek sıcaklıkları yıl boyu neredeyse sabittir."
+        },
+        {
+          "metin": "Kıta içlerine sokulmuş ve okyanuslara dar boğazlarla bağlanan Akdeniz ve Karadeniz gibi denizlere iç deniz denir.",
+          "dogru": true,
+          "aciklama": "İç denizler kıta içlerinde yer alır ve boğazlarla okyanuslara bağlanır."
+        },
+        {
+          "metin": "Web tabanlı CBS uygulamalarını kullanabilmek için her kullanıcının bilgisayarına yüksek kapasiteli masaüstü yazılım kurması zorunludur.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; Web CBS bulut ve internet tarayıcısı üzerinden çalışır, ek kurulum gerektirmez."
+        },
+        {
+          "metin": "Karstik kaynakların (voklüz) suları kireç (kalsiyum karbonat) bakımından zengindir.",
+          "dogru": true,
+          "aciklama": "Kalker (kireç taşı) tabakalarını eriterek akan karstik sular bol miktarda kireç içerir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki su kaynaklarını ve CBS kavramlarını doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Akifer",
+          "Yer altı suyunu bünyesinde tutan geçirgen ve gözenekli kayaç tabakası"
+        ],
+        [
+          "Voklüz",
+          "Karstik arazilerde mağara ve boşluklardan yüzeye çıkan gür soğuk su kaynağı"
+        ],
+        [
+          "Fay kaynağı",
+          "Kırık hatları boyunca derinlerden yükselen mineralce zengin sıcak su kaynağı"
+        ],
+        [
+          "Tampon bölge (Buffer) analizi",
+          "Web CBS’de bir akarsu veya göl çevresinde belirli mesafede koruma kuşağı belirleme"
+        ],
+        [
+          "Raster veri",
+          "Uydu görüntüleri ve sayısal yükselti modellerini oluşturan piksel tabanlı veri katmanı"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Yeryüzündeki en geniş yüz ölçümüne ve en derin çukura (Mariana) sahip okyanus ___ Okyanus’tur.",
+          "cevap": "Büyük"
+        },
+        {
+          "metin": "Sularını denize veya okyanusa ulaştıramayan akarsuların beslendiği alanlara ___ havza denir.",
+          "cevap": "kapalı"
+        },
+        {
+          "metin": "Dalgaların bir koyun önünü kumlarla kapatması sonucunda oluşan kıyı set göllerine ___ adı verilir.",
+          "cevap": "lagün"
+        },
+        {
+          "metin": "Bir akarsuyun herhangi bir kesitinden bir saniyede geçen su hacmine ___ (akım) denir.",
+          "cevap": "debi"
+        },
+        {
+          "metin": "Web tabanlı CBS’de göller ve su toplama havzaları gibi yüz ölçümü olan alanlar ___ (alan) vektör verisiyle gösterilir.",
+          "cevap": "poligon"
+        }
+      ],
+      "fazla": [
+        "açık",
+        "nokta"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Kuraklık tehdidi altındaki bir göl havzasını inceleyen bir coğrafyacının; gölün su kaybını tespit etmek ve havzadaki su kaynaklarını yönetmek için Web tabanlı CBS’den nasıl yararlanabileceğini açıklayınız.",
+      "cevap": "Coğrafyacı öncelikle Web tabanlı CBS’de farklı yıllara ait uydu görüntülerini (raster veri) ve göl sınırlarını (poligon veri) üst üste çakıştırarak göl yüzey alanındaki küçülmeyi haritalar. Ardından havzadaki besleyici akarsu ağını (çizgi katmanı), yer altı su kuyularını ve artezyenleri (nokta katmanı) ile sulamalı tarım alanlarını (poligon katmanı) aynı harita üzerinde sorgular. Böylece aşırı yer altı suyu çekilen bölgeleri tespit eder, göl çevresinde tampon bölge (buffer) analiziyle koruma alanları belirler ve karar vericiler için etkileşimli bir su yönetimi haritası oluşturur.",
+      "ipuclari": [
+        "1. İpucu: Farklı yıllara ait uydu görüntüleri (raster katmanı) ile göl poligonlarının nasıl karşılaştırılacağını belirtiniz.",
+        "2. İpucu: Havzadaki artezyen kuyuları (nokta), akarsular (çizgi) ve tarım alanları (poligon) katmanlarının nasıl sorgulanacağını yazınız."
+      ]
+    }
+  ]
 }

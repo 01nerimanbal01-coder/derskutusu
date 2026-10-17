@@ -98,7 +98,7 @@ def gorsel_3():
     s += _kutu(380, 52, 340, 190, "#fdf4ff", "#d946ef", "AİLE, FETVA VE YURT DIŞI HİZMETLERİ", [
         "• AİLE VE DİNÎ REHBERLİK BÜROLARI (ADRB):",
         "  Aile kurumunu koruma ve danışmanlık.",
-        "• DİN İŞLERİ YÜKSEK KURULU & ALO 190 FETVA HATTI:",
+        "• DİN İŞLERİ YÜKSEK KURULU &amp; ALO 190 FETVA HATTI:",
         "  Vatandaşların dini sorularını cevaplandırma.",
         "• YURT DIŞI TEŞKİLATI: Müşavirlik ve ataşelikler",
         "  aracılığıyla yurt dışındaki vatandaşlarımıza hizmet."

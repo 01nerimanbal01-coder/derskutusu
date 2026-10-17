@@ -102,9 +102,9 @@ def _iletisim_ve_hitabet_asamalari_svg():
     <rect x="36" y="148" width="460" height="28" rx="12" fill="#d97706"/>
     <text x="266" y="166" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="800" fill="#ffffff">HİTABETİN 4 HAZIRLIK AŞAMASI</text>
 
-    <text x="52" y="194" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#78350f">1. Hedef Kitleyi Tanıma: <tspan font-weight="500" fill="#92400e">Yaş, eğitim, meslek ve sosyal ihtiyaç analizi</tspan></text>
-    <text x="52" y="216" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#78350f">2. Amaç ve Konu Seçimi: <tspan font-weight="500" fill="#92400e">Güncel, sınırları net ve faydalı konu belirleme</tspan></text>
-    <text x="52" y="238" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#78350f">3. Planlama: <tspan font-weight="500" fill="#92400e">Giriş, gelişme ve sonuç bölümlerini taslaklaştırma</tspan></text>
+    <text x="52" y="194" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#78350f">1. Hedef Kitleyi Tanıma: &lt;tspan font-weight="500" fill="#92400e">Yaş, eğitim, meslek ve sosyal ihtiyaç analizi&lt;/tspan></text>
+    <text x="52" y="216" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#78350f">2. Amaç ve Konu Seçimi: &lt;tspan font-weight="500" fill="#92400e">Güncel, sınırları net ve faydalı konu belirleme&lt;/tspan></text>
+    <text x="52" y="238" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#78350f">3. Planlama: &lt;tspan font-weight="500" fill="#92400e">Giriş, gelişme ve sonuç bölümlerini taslaklaştırma&lt;/tspan></text>
     <text x="52" y="260" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#78350f">4. Bilgi Toplama (Sahih Kaynaklar):</text>
     <text x="66" y="278" font-family="Inter,sans-serif" font-size="9.5" font-weight="600" fill="#b45309">• Kur'an ve Tefsirler • Kütübisitte • Din İşleri Yüksek Kurulu</text>
 

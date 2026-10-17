@@ -111,7 +111,7 @@ def gorsel_3():
     ic = (
         '<rect x="5" y="5" width="750" height="255" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>'
         '<text x="380" y="28" fill="#0f172a" font-size="14.5" font-weight="bold" text-anchor="middle">'
-        'KONUŞMAYI YÖNETME VE İÇERİK OLUŞTURMA SÜRECİ (TDE3.1 & TDE3.2)</text>'
+        'KONUŞMAYI YÖNETME VE İÇERİK OLUŞTURMA SÜRECİ (TDE3.1 &amp; TDE3.2)</text>'
     )
     ic += _kart(
         20, 42, 345, 198,

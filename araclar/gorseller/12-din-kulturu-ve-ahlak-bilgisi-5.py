@@ -53,7 +53,7 @@ def gorsel_2():
         'MÜSLÜMAN BİLİM İNSANLARININ FEN VE DOĞA BİLİMLERİNDEKİ ÖNCÜLÜKLERİ</text>'
     )
     alanlar = [
-        ("TIP VE ECZACILIK", "İbn Sînâ (el-Kânûn fi't-Tıb - Batı'da 600 yıl ders kitabı), Ebû Bekir er-Râzî (Çiçek-kızamık), İbnü'n-Nefîs (Küçük kan dolaşımı), Akşemseddin (Mikrop).", "#DC2626", "#FEF2F2"),
+        ("TIP VE ECZACILIK", "İbn Sînâ (el-Kânûn fi't-Tıb - Batı'da 600 yıl temel eser), Ebû Bekir er-Râzî (Çiçek-kızamık), İbnü'n-Nefîs (Küçük kan dolaşımı), Akşemseddin (Mikrop).", "#DC2626", "#FEF2F2"),
         ("MATEMATİK VE ASTRONOMİ", "Hârizmî (Cebirin kurucusu ve '0' rakamı - Kitâbü'l-Cebr), Ömer Hayyam, Uluğ Bey (Semerkant Rasathanesi), Ali Kuşçu (Risâle fi'l-Hey'e), Ферganî, Battânî.", "#2563EB", "#EFF6FF"),
         ("FİZİK, OPTİK VE MEKANİK", "İbnü'l-Heysem (Optik ilminin ve karanlık oda/kamera kurucusu - Kitâbü'l-Menâzır), Cezerî (Sibernetik ve robotik biliminin öncüsü - Kitâbü'l-Hiyel).", "#7C3AED", "#F5F3FF"),
         ("KİMYA VE BİYOLOJİ", "Câbir bin Hayyân (Modern kimyanın babası; imbik, kristalleştirme, nitrik ve sülfürik asit keşfi), Bîrûnî (Özgül ağırlık hesabı), Câhız (Kitâbü'l-Hayevân).", "#059669", "#ECFDF5")

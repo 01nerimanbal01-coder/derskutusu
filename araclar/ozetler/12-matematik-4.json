@@ -1,209 +1,266 @@
 {
- "ad": "12. Sınıf Matematik — 4. Hafta Konu Anlatımı",
- "sinif": 12,
- "ders": "matematik",
- "ders_adi": "Matematik",
- "hafta": 4,
- "tarih": "5-9 Ekim 2026",
- "yayin_tarihi": "2026-10-17",
- "unite": "SAYILAR VE CEBİR",
- "konu": "Üstel ve Logaritmik Denklemler ile Eşitsizliklerin Çözüm Kümesi ve Gerçek Hayat Uygulamaları (Richter, Desibel, pH, Nüfus ve Radyoaktif Bozunma)",
- "ciktilar": [
-  "12.1.2.4. Üstel ve logaritmik denklemlerin çözüm kümelerini logaritmanın özelliklerini ve tanım kümesi şartlarını kullanarak bulur.",
-  "12.1.2.5. Üstel ve logaritmik eşitsizliklerin çözüm kümelerini tabanın $1$'den büyük ($a > 1$) veya $0$ ile $1$ arasında ($0 < a < 1$) olma durumuna göre belirler.",
-  "12.1.2.6. Üstel ve logaritmik fonksiyonları gerçek hayat durumlarını (nüfus artışı, bakteri çoğalması, radyoaktif yarılanma, Richter deprem ölçeği, desibel ses düzeyi, pH ölçeği) modellemede ve problem çözmede kullanır."
- ],
- "giris": "Üstel ve logaritmik fonksiyonların özelliklerini öğrendikten sonra, şimdi bu fonksiyonların en heyecan verici kısmına geliyoruz: Üstel ve logaritmik denklemleri, eşitsizlikleri çözmek ve gerçek hayat problemlerini modellemek! Bir logaritmik denklemde bulduğumuz her kök neden çözüm kümesine dahil edilmeyebilir? Logaritmik bir eşitsizlikte taban $1/2$ olduğunda eşitsizlik yönü neden ters döner? Sismologlar depremin büyüklüğünü Richter ölçeğiyle, kimyagerler çözeltilerin asitliğini $\\text{pH}$ ölçeğiyle, arkeologlar ise binlerce yıllık fosillerin yaşını Karbon-14 yarılanma denklemiyle nasıl hesaplarlar? Bu hafta üstel ve logaritmik denklemlerden gerçek hayat modellerine uzanan tüm yöntemleri örneklerle inceleyeceğiz.",
- "ozet": [
-  "$a > 0$ ve $a \\neq 1$ olmak üzere üstel fonksiyon bire bir olduğundan $a^{f(x)} = a^{g(x)} \\iff f(x) = g(x)$ eşitliği geçerlidir; $a^{2x} + p \\cdot a^x + q = 0$ biçimindeki denklemlerde ise $a^x = t$ ($t > 0$) dönüşümü yapılır.",
-  "Logaritmik denklemlerde $\\log_a(f(x)) = c \\iff f(x) = a^c$ ve $\\log_a(f(x)) = \\log_a(g(x)) \\iff f(x) = g(x)$ özellikleri kullanılır; ancak bulunan her kök için mutlaka logaritmanın tanımlı olma şartları ($f(x) > 0$, $g(x) > 0$, taban $a > 0$ ve $a \\neq 1$) kontrol edilmelidir.",
-  "Üstel ve logaritmik eşitsizliklerde taban $a > 1$ ise fonksiyon artan olduğundan eşitsizlik yön değiştirmez ($\\log_a(f(x)) < \\log_a(g(x)) \\iff 0 < f(x) < g(x)$).",
-  "Eşitsizliklerde taban $0 < a < 1$ ise fonksiyon azalan olduğundan eşitsizlik YÖN DEĞİŞTİRİR ($\\log_a(f(x)) < \\log_a(g(x)) \\iff f(x) > g(x) > 0$).",
-  "Deprem büyüklüğü Richter ölçeğinde $R = \\log(I/I_0)$, ses şiddeti düzeyi desibel cinsinden $L = 10 \\cdot \\log(I/I_0)$ ve çözeltilerin asitlik derecesi $\\text{pH} = -\\log[\\text{H}^+]$ logaritmik modelleriyle hesaplanır.",
-  "Nüfus artışı, bakteri çoğalması ve bileşik faiz 'üstel büyüme' ($N(t) = N_0 \\cdot e^{kt}$ veya $A(t) = A_0(1+r)^t$) ile; radyoaktif maddelerin yarılanması ve soğuma yasası ise 'üstel azalma/bozunma' ($M(t) = M_0 \\cdot (1/2)^{t/T}$) ile modellenir."
- ],
- "bolumler": [
-  {
-   "baslik": "1. Üstel Denklemler ve Çözüm Yöntemleri",
-   "metin": [
-    "Üstel ifadelerin üssünde bilinmeyen ($x$) bulunan denklemlere 'üstel denklemler' denir. $a \\in \\mathbb{R}^+ - \\{1\\}$ olmak üzere $f(x) = a^x$ üstel fonksiyonu bire bir fonksiyon olduğundan, tabanları eşit olan iki üstel ifadenin birbirine eşit olması için üslerinin de birbirine eşit olması gerekir:\n$$a^{f(x)} = a^{g(x)} \\iff f(x) = g(x)$$",
-    "Eğer denklemin iki tarafındaki tabanlar tam sayı kuvvetleriyle birbirine eşitlenemiyorsa, logaritmanın tanımı kullanılarak üsteki bilinmeyen yalnız bırakılır:\n$$a^{f(x)} = b \\iff f(x) = \\log_a(b) \\quad (b > 0)$$\nÖrneğin $3^{2x - 1} = 5$ denkleminde $2x - 1 = \\log_3(5) \\implies 2x = 1 + \\log_3(5) = \\log_3(15) \\implies x = \\frac{1}{2}\\log_3(15)$ bulunur.",
-    "Üstel denklemlerde çok sık karşılaşılan bir diğer tip, $p \\cdot a^{2x} + q \\cdot a^x + r = 0$ biçimindeki ikinci dereceden denkleme dönüşebilen ifadelerdir. Bu durumda $a^x = t$ değişken değiştirmesi yapılarak $p \\cdot t^2 + q \\cdot t + r = 0$ denkleminin $t_1$ ve $t_2$ kökleri bulunur. Burada dikkat edilmesi gereken en önemli kural, $a > 0$ için daima $a^x = t > 0$ olmasıdır! Dolayısıyla sıfır veya negatif çıkan $t$ değerleri ($t \\le 0$) hiçbir gerçek $x$ sayısı vermeyeceğinden doğrudan elenir."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "$a^x$ ile $a^{-x}$ İçeren Denklemler",
-    "metin": "$a^x + k \\cdot a^{-x} = m$ biçimindeki denklemlerde $a^{-x} = \\frac{1}{a^x}$ yazılarak $a^x = t$ ($t > 0$) dönüşümü yapılır. Denklem $t + \\frac{k}{t} = m \\implies t^2 - m \\cdot t + k = 0$ ikinci dereceden denklemine dönüşür."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#38bdf8\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">ÜSTEL VE LOGARİTMİK DENKLEMLERİN ÇÖZÜM YÖNTEMLERİ</text><rect x=\"25\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#0284c7\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#0284c7\"/><text x=\"195\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Üstel Denklemler</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• a &gt; 0 ve a ≠ 1 olmak üzere:</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  a^f(x) = a^g(x)  &lt;=&gt;  f(x) = g(x)</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Tabanlar eşitlenemiyorsa: a^f(x) = b  &lt;=&gt;  f(x) = log_a(b)</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• a^(2x) + p·a^x + q = 0 tipinde a^x = t (t &gt; 0)</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">  değişken değiştirmesi yapılır</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Negatif t kökleri üstel fonksiyonu sağlamaz!</text><rect x=\"395\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#10b981\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#10b981\"/><text x=\"565\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Logaritmik Denklemler</text><text x=\"407\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• log_a(f(x)) = c  &lt;=&gt;  f(x) = a^c</text><text x=\"407\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• log_a(f(x)) = log_a(g(x))  &lt;=&gt;  f(x) = g(x)</text><text x=\"407\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• ALTIN KURAL (Tanım Kümesi Kontrolü):</text><text x=\"407\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  Bulunan her kök için mutlaka:</text><text x=\"407\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">  1) İç kısım: f(x) &gt; 0 ve g(x) &gt; 0</text><text x=\"407\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  2) Taban: a &gt; 0 ve a ≠ 1 şartları kontrol edilir!</text></svg>"
-  },
-  {
-   "baslik": "2. Logaritmik Denklemler ve Tanım Kümesi Kontrolü",
-   "metin": [
-    "İçinde logaritmik ifadeler barındıran denklemlere 'logaritmik denklemler' denir. Logaritmik denklemleri çözerken logaritmanın toplama-çıkarma-çarpma kuralları ve taban değiştirme özellikleri kullanılarak denklem şu iki temel biçimden birine getirilir:\n1) $\\log_a(f(x)) = c \\implies f(x) = a^c$\n2) $\\log_a(f(x)) = \\log_a(g(x)) \\implies f(x) = g(x)$",
-    "Logaritmik denklemlerde öğrenciyi hatadan koruyan ALTIN KURAL 'Tanım Kümesi Kontrolü'dür! Çünkü $\\log_a(f(x)) + \\log_a(g(x)) = \\log_a(f(x) \\cdot g(x))$ dönüşümü yapılırken tanım kümesi genişleyebilir ve cebirsel denklemi sağladığı halde logaritmayı tanımsız yapan 'yalancı kökler' ortaya çıkabilir. Bu nedenle cebirsel işlemden bulunan her $x$ kökü başlangıçtaki orijinal denklemde yerine yazılarak şu üç şartı sağlayıp sağlamadığı mutlaka kontrol edilmelidir:\n• Logaritması alınan her ifade pozitif olmalıdır: $f(x) > 0$ ve $g(x) > 0$\n• Taban pozitif olmalıdır: $a(x) > 0$\n• Taban $1$'den farklı olmalıdır: $a(x) \\neq 1$",
-    "Ayrıca $\\left(\\log_a(x)\\right)^2 + p \\cdot \\log_a(x) + q = 0$ tipindeki denklemlerde $\\log_a(x) = t$ dönüşümü yapılır. Üstel fonksiyonun aksine logaritma fonksiyonunun görüntü kümesi tüm gerçek sayılar ($\\mathbb{R}$) olduğu için, burada $t$ negatif de pozitif de sıfır da çıkabilir; her $t$ değeri için $x = a^t > 0$ kökü elde edilir. Tabanında logaritma bulunan $x^{\\log_a(x)} = c$ tipindeki denklemlerde ise her iki tarafın $a$ tabanında logaritması alınarak üs başa indirilir."
-   ],
-   "kutu": {
-    "tur": "onemli",
-    "baslik": "Kökler Çarpımı Kuralı",
-    "metin": "$a \\cdot (\\log_b x)^2 + c \\cdot \\log_b x + d = 0$ biçimindeki bir denklemin gerçek kökleri $x_1$ ve $x_2$ ise, $\\log_b x = t$ dönüşümünde kökler toplamı $t_1 + t_2 = \\log_b x_1 + \\log_b x_2 = \\log_b(x_1 \\cdot x_2) = -\\frac{c}{a}$ olduğundan, denklemin $x$ köklerinin çarpımı doğrudan $x_1 \\cdot x_2 = b^{-c/a}$ formülüyle bulunur!"
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#f59e0b\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">ÜSTEL VE LOGARİTMİK EŞİTSİZLİKLERDE TABAN KURALI</text><rect x=\"25\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#d97706\"/><text x=\"195\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Durum 1: Taban a &gt; 1 (Artan Fonksiyon)</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Fonksiyon artan olduğundan eşitsizlik</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  YÖN DEĞİŞTİRMEZ!</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Üstel: a^f(x) &lt; a^g(x)  &lt;=&gt;  f(x) &lt; g(x)</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Logaritmik: log_a(f(x)) &lt; log_a(g(x))</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">  &lt;=&gt;  0 &lt; f(x) &lt; g(x)</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Örnek: log_3(x - 2) &lt; 2  =&gt;  0 &lt; x - 2 &lt; 9  =&gt;  2 &lt; x &lt; 11</text><rect x=\"395\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#8b5cf6\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#8b5cf6\"/><text x=\"565\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Durum 2: Taban 0 &lt; a &lt; 1 (Azalan Fonksiyon)</text><text x=\"407\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Fonksiyon azalan olduğundan eşitsizlik</text><text x=\"407\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  YÖN DEĞİŞTİRİR!</text><text x=\"407\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Üstel: a^f(x) &lt; a^g(x)  &lt;=&gt;  f(x) &gt; g(x)</text><text x=\"407\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Logaritmik: log_a(f(x)) &lt; log_a(g(x))</text><text x=\"407\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">  &lt;=&gt;  f(x) &gt; g(x) &gt; 0</text><text x=\"407\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Örnek: log_(1/2)(x - 1) &gt; 3 =&gt; 0 &lt; x - 1 &lt; (1/2)³</text></svg>"
-  },
-  {
-   "baslik": "3. Üstel ve Logaritmik Eşitsizliklerin Çözüm Kümesi",
-   "metin": [
-    "Üstel ve logaritmik eşitsizlikleri çözerken dikkat edilecek en kritik nokta, fonksiyonun tabanının ($a$) $1$'den büyük mü yoksa $0$ ile $1$ arasında mı olduğudur:\nDurum 1: Taban $a > 1$ ise (Artan Fonksiyon): Üstel ve logaritmik fonksiyonlar $a > 1$ için artan olduğundan eşitsizlik YÖN DEĞİŞTİRMEZ:\n• $a^{f(x)} < a^{g(x)} \\iff f(x) < g(x)$\n• $\\log_a(f(x)) < c \\iff 0 < f(x) < a^c$\n• $\\log_a(f(x)) < \\log_a(g(x)) \\iff 0 < f(x) < g(x)$",
-    "Durum 2: Taban $0 < a < 1$ ise (Azalan Fonksiyon): Taban basit kesir olduğunda fonksiyon azalan olduğu için üstel veya logaritmik taban kaldırılırken eşitsizlik YÖN DEĞİŞTİRİR:\n• $a^{f(x)} < a^{g(x)} \\iff f(x) > g(x)$\n• $\\log_a(f(x)) < c \\iff f(x) > a^c$ (burada $a^c > 0$ olduğundan $f(x) > 0$ şartı kendiliğinden sağlanır)\n• $\\log_a(f(x)) > c \\iff 0 < f(x) < a^c$\n• $\\log_a(f(x)) < \\log_a(g(x)) \\iff f(x) > g(x) > 0$",
-    "Görülüyor ki logaritmik eşitsizliklerde en sık unutulan adım, logaritmanın iç kısmının sıfırdan büyük olma şartıdır ($f(x) > 0$). Bu yüzden her logaritmik eşitsizlik aslında iki eşitsizliğin kesişimidir: Hem eşitsizliğin kendisi çözülür hem de $f(x) > 0$ ve $g(x) > 0$ tanım kümesi aralıklarıyla ortak kesişim kümesi alınır."
-   ],
-   "kutu": {
-    "tur": "kavram",
-    "baslik": "Çift Taraflı Logaritmik Eşitsizlikler",
-    "metin": "$m < \\log_a(f(x)) < n$ biçimindeki eşitsizliklerde:\n• Eğer $a > 1$ ise: $a^m < f(x) < a^n$\n• Eğer $0 < a < 1$ ise: $a^n < f(x) < a^m$\nHer iki durumda da $a$ pozitif bir sayının kuvveti olarak $a^m > 0$ ve $a^n > 0$ olduğundan $f(x) > 0$ tanım kümesi şartı otomatik olarak sağlanmış olur."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#a855f7\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">GERÇEK HAYAT PROBLEMLERİ 1: DEPREM, SES VE pH ÖLÇEKLERİ</text><rect x=\"25\" y=\"50\" width=\"225\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#6366f1\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"225\" height=\"32\" rx=\"12\" fill=\"#6366f1\"/><text x=\"137\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Richter Ölçeği (Deprem)</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• R = log(I / I₀)</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  R: Deprem büyüklüğü</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">  I: Deprem yoğunluğu</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  I₀: Standart sarsıntı</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Büyüklüğü 1 birim artan</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  depremin şiddeti 10 kat artar</text><rect x=\"268\" y=\"50\" width=\"225\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#ec4899\" stroke-width=\"2\"/><rect x=\"268\" y=\"50\" width=\"225\" height=\"32\" rx=\"12\" fill=\"#ec4899\"/><text x=\"380\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Ses Şiddeti (Desibel - dB)</text><text x=\"280\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• L = 10 · log(I / I₀)</text><text x=\"280\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  L: Ses düzeyi (dB)</text><text x=\"280\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">  I: Ses şiddeti (W/m²)</text><text x=\"280\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  I₀ = 10⁻¹² W/m² (Eşik)</text><text x=\"280\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Ses şiddeti 10 katına çıkarsa</text><text x=\"280\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  ses düzeyi 10 dB artar</text><rect x=\"510\" y=\"50\" width=\"225\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#14b8a6\" stroke-width=\"2\"/><rect x=\"510\" y=\"50\" width=\"225\" height=\"32\" rx=\"12\" fill=\"#14b8a6\"/><text x=\"622\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">pH ve pOH Ölçeği (Kimya)</text><text x=\"522\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• pH = -log[H⁺]</text><text x=\"522\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• pOH = -log[OH⁻]</text><text x=\"522\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• 25 °C'de: pH + pOH = 14</text><text x=\"522\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• [H⁺] = 10⁻³ M ise pH = 3</text><text x=\"522\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• pH &lt; 7 asidik, pH = 7 nötr,</text><text x=\"522\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  pH &gt; 7 bazik çözeltidir</text></svg>"
-  },
-  {
-   "baslik": "4. Gerçek Hayat Uygulamaları 1: Richter, Desibel ve pH Ölçekleri",
-   "metin": [
-    "Çok küçük sayılarla çok büyük sayıları aynı tabloda anlaşılır biçimde ifade edebilmek için bilim dünyasında $10$ tabanlı (bayağı) logaritmik ölçekler kullanılır:\n1) Richter Deprem Ölçeği: Amerikalı sismolog Charles Richter tarafından 1935'te tanımlanan deprem büyüklüğü ($R$), depremin sismografta ölçülen maksimum genliğinin/yoğunluğunun ($I$), standart en küçük sarsıntı yoğunluğuna ($I_0$) oranının $10$ tabanında logaritmasıdır:\n$$R = \\log\\left(\\frac{I}{I_0}\\right)$$\nBu formüle göre büyüklüğü $R_1$ ve $R_2$ olan iki depremin şiddetleri (genlikleri) oranı $\\frac{I_1}{I_2} = 10^{R_1 - R_2}$ olur. Örneğin Richter ölçeğine göre $7$ büyüklüğündeki bir deprem, $5$ büyüklüğündeki bir depremden $10^{7 - 5} = 10^2 = 100$ kat daha şiddetlidir!",
-    "2) Ses Şiddeti Düzeyi (Desibel - dB): İnsan kulağının duyabildiği en düşük ses şiddeti eşiği $I_0 = 10^{-12}\\text{ W/m}^2$ iken, acı eşiği $1\\text{ W/m}^2$'dir. Ses şiddeti $I$ olan bir kaynağın ses düzeyi ($L$), desibel ($\\text{dB}$) cinsinden:\n$$L = 10 \\cdot \\log\\left(\\frac{I}{I_0}\\right)$$\nbağıntısıyla hesaplanır. Ses şiddeti ($I$) $10$ katına çıkarsa ses düzeyi $10\\text{ dB}$ artar; $100$ katına çıkarsa $20\\text{ dB}$ artar.",
-    "3) Çözeltilerin Asitlik ve Bazlık Derecesi (pH ve pOH): Sulu bir çözeltideki hidrojen iyonu derişimi $[\\text{H}^+]$ ($\\text{mol/L}$) olmak üzere çözeltinin $\\text{pH}$ değeri:\n$$\\text{pH} = -\\log[\\text{H}^+] \\quad \\text{ve} \\quad \\text{pOH} = -\\log[\\text{OH}^-]$$\nbağıntısıyla tanımlanır. Örneğin $[\\text{H}^+] = 2 \\times 10^{-4}\\text{ M}$ olan bir çözeltinin $\\text{pH}$ değeri $\\text{pH} = -\\log(2 \\times 10^{-4}) = 4 - \\log 2 \\approx 3{,}7$ olur."
-   ],
-   "kutu": {
-    "tur": "bilgi",
-    "baslik": "Yıldızların Parlaklığı (Kadir Ölçeği)",
-    "metin": "Astronomide gök cisimlerinin görünür parlaklığı (kadir / magnitude) da logaritmik bir ölçekle hesaplanır. Logaritma sayesinde $10^{-12}$ ile $10^{12}$ arasında değişen devasa fiziksel büyüklükler $0$ ile $14$ gibi kolay anlaşılır sayılara dönüştürülür."
-   }
-  },
-  {
-   "baslik": "5. Gerçek Hayat Uygulamaları 2: Üstel Büyüme ve Radyoaktif Bozunma",
-   "metin": [
-    "Doğadaki, ekonomideki ve demografideki pek çok değişim hızı, o andaki mevcut miktarla doğru orantılıdır ve doğal üstel fonksiyon ($e^x$) veya genel üstel fonksiyon ($a^x$) ile modellenir:\n1) Nüfus Artışı ve Bakteri Çoğalması (Üstel Büyüme): Başlangıçtaki ($t = 0$) birey sayısı $N_0$, birim zamandaki sürekli büyüme hızı sabiti $k > 0$ olmak üzere $t$ süre sonundaki nüfus veya bakteri sayısı:\n$$N(t) = N_0 \\cdot e^{k \\cdot t}$$\nbağıntısıyla bulunur. Eğer bir bakteri popülasyonu her $T$ saatte bir $2$ katına çıkıyorsa $N(t) = N_0 \\cdot 2^{t/T}$ denklemi kullanılır. Benzer şekilde ana para $A_0$, yıllık bileşik faiz oranı $r$ olmak üzere $t$ yıl sonundaki birikimli para $A(t) = A_0 \\cdot (1 + r)^t$ üstel büyüme modeline uyar.",
-    "2) Radyoaktif Bozunma ve Karbon-14 Yaş Tayini (Üstel Azalma): Radyoaktif bir elementin atom çekirdekleri zamanla kendiliğinden bozunarak kütlesini kaybeder. Başlangıç kütlesi $M_0$, bozunma sabiti $k > 0$ olmak üzere $t$ süre sonra bozunmadan kalan madde kütlesi:\n$$M(t) = M_0 \\cdot e^{-k \\cdot t}$$\ndenklemiyle hesaplanır. Radyoaktif maddenin başlangıç kütlesinin yarıya ($M_0 / 2$) inmesi için geçen süreye 'yarı ömür (yarılanma süresi)' denir ve $T_{1/2}$ ile gösterilir. Yarılanma süresi bilinen bir madde için kalan kütle doğrudan:\n$$M(t) = M_0 \\cdot \\left(\\frac{1}{2}\\right)^{\\frac{t}{T_{1/2}}}$$\nbağıntısıyla bulunur. Arkeologlar ve jeologlar, canlı dokulardaki radyoaktif Karbon-14 ($^{14}\\text{C}$, yarı ömrü yaklaşık $5730$ yıl) izotopunun kalan oranını ölçerek fosillerin ve tarihi eserlerin yaşını bu logaritmik denklemle tespit ederler.",
-    "3) Newton'un Soğuma Yasası: Sıcaklığı $T_0$ olan sıcak bir cisim, sabit $T_{\\text{ortam}}$ sıcaklığındaki bir odaya bırakıldığında $t$ dakika sonraki sıcaklığı $T(t) = T_{\\text{ortam}} + (T_0 - T_{\\text{ortam}}) \\cdot e^{-k \\cdot t}$ üstel azalma modeliyle değişir."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Yarı Ömür ($T_{1/2}$) ile Bozunma Sabiti ($k$) İlişkisi",
-    "metin": "$M(t) = M_0 \\cdot e^{-k \\cdot t}$ denkleminde $t = T_{1/2}$ yazıldığında kalan kütle $M = M_0 / 2$ olur:\n$$\\frac{M_0}{2} = M_0 \\cdot e^{-k \\cdot T_{1/2}} \\implies 2^{-1} = e^{-k \\cdot T_{1/2}} \\implies \\ln 2 = k \\cdot T_{1/2} \\implies T_{1/2} = \\frac{\\ln 2}{k}$$"
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#10b981\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">GERÇEK HAYAT PROBLEMLERİ 2: ÜSTEL BÜYÜME VE BOZUNMA</text><rect x=\"25\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#059669\"/><text x=\"195\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Nüfus Artışı ve Bileşik Faiz (Üstel Büyüme)</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Sürekli büyüme modeli: N(t) = N₀ · e^(k·t)</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  N₀: Başlangıç miktarı, k &gt; 0: Büyüme hızı sabiti</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Yıllık artış modeli: A(t) = A₀ · (1 + r)^t</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Bakteri çoğalması: Her periyotta 2 katına çıkarsa</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">  N(t) = N₀ · 2^(t / T)</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Geçen süre t'yi bulmak için her iki tarafın ln'i alınır</text><rect x=\"395\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#0ea5e9\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#0ea5e9\"/><text x=\"565\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Radyoaktif Bozunma ve Yarı Ömür (Azalma)</text><text x=\"407\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Bozunma modeli: M(t) = M₀ · e^(-k·t)</text><text x=\"407\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• Yarılanma süresi (T_1/2) modeli:</text><text x=\"407\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">  M(t) = M₀ · (1/2)^(t / T_1/2)</text><text x=\"407\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Karbon-14 (C-14) testi ile fosil yaş tayini yapılır</text><text x=\"407\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Newton'un Soğuma Yasası:</text><text x=\"407\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  T(t) = T_ortam + (T₀ - T_ortam) · e^(-k·t)</text></svg>"
-  },
-  {
-   "baslik": "6. Üstel ve Logaritmik Fonksiyonlar Ünitesi Genel Değerlendirme",
-   "metin": [
-    "Dört hafta boyunca işlediğimiz 'Üstel ve Logaritmik Fonksiyonlar' alt öğrenme alanı, 12. sınıf matematiğinin ve üniversite sınavının (AYT) en temel konularından biridir.",
-    "Denklem ve eşitsizlik sorularında başarılı olmanın sırrı; 1) Üstel ifadeyle logaritma arasındaki $a^y = x \\iff y = \\log_a x$ ters fonksiyon geçişini hızlı yapmak, 2) Logaritmik denklemlerde bulunan kökleri tanım kümesinde ($f(x) > 0, a > 0, a \\neq 1$) mutlaka denetlemek ve 3) Eşitsizliklerde taban $0 < a < 1$ olduğunda eşitsizlik yönünü değiştirmeyi unutmamaktır.",
-    "Gerçek hayat problemlerinde ise soruda verilen formülde bilinen değerleri yerine yazıp üsteki bilinmeyen zamanı ($t$) bulmak için her iki tarafın uygun tabanda ($\\log$ veya $\\ln$) logaritmasını almak tüm modelleri kolayca çözer."
-   ],
-   "kutu": {
-    "tur": "ozet",
-    "baslik": "Bölüm Özeti: Denklem, Eşitsizlik ve Uygulamalar",
-    "metin": "1. Logaritmik denklemlerde bulunan kökler için $f(x) > 0, a > 0, a \\neq 1$ şartları kontrol edilir.\n2. Eşitsizliklerde $a > 1$ ise yön değişmez; $0 < a < 1$ ise yön değişir.\n3. Richter: $R = \\log(I/I_0)$, Ses: $L = 10\\log(I/I_0)$, $\\text{pH} = -\\log[\\text{H}^+]$.\n4. Büyüme/Bozunma: $N(t) = N_0 \\cdot e^{\\pm kt}$ ve yarılanma: $M(t) = M_0 \\cdot (1/2)^{t/T}$."
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "$9^x - 10 \\cdot 3^x + 9 = 0$ üstel denkleminin gerçek sayılardaki çözüm kümesini bulunuz.",
-   "cevap": "$9^x = (3^x)^2$ olduğundan $3^x = t$ ($t > 0$) dönüşümü yapalım: $t^2 - 10t + 9 = 0 \\implies (t - 9)(t - 1) = 0$ olur. Buradan $t_1 = 9 > 0$ ve $t_2 = 1 > 0$ bulunur.\n• $3^x = 9 = 3^2 \\implies x_1 = 2$\n• $3^x = 1 = 3^0 \\implies x_2 = 0$\nÇözüm kümesi $\\text{ÇK} = \\{0, 2\\}$ olarak bulunur."
-  },
-  {
-   "soru": "$\\log_2(x - 3) + \\log_2(x + 1) = 5$ logaritmik denkleminin çözüm kümesini bulunuz.",
-   "cevap": "Önce tanım kümesi şartlarını belirleyelim: $x - 3 > 0 \\implies x > 3$ ve $x + 1 > 0 \\implies x > -1$, ortak şart $x > 3$'tür.\nLogaritmanın toplam özelliğinden: $\\log_2((x - 3)(x + 1)) = 5 \\implies x^2 - 2x - 3 = 2^5 = 32 \\implies x^2 - 2x - 35 = 0 \\implies (x - 7)(x + 5) = 0$ olur. Buradan $x_1 = 7$ ve $x_2 = -5$ bulunur. Ancak $x > 3$ tanım kümesi şartını yalnız $x = 7$ sağladığı için ($x = -5$ logaritmanın içini negatif yapar ve elenir), çözüm kümesi $\\text{ÇK} = \\{7\\}$ olur."
-  },
-  {
-   "soru": "$\\log_{\\frac{1}{3}}(2x - 4) > -2$ logaritmik eşitsizliğini sağlayan $x$ tam sayılarının toplamını bulunuz.",
-   "cevap": "1) Tanım kümesi şartı: $2x - 4 > 0 \\implies 2x > 4 \\implies x > 2$.\n2) Taban $a = \\frac{1}{3}$ olup $0 < \\frac{1}{3} < 1$ olduğundan eşitsizlik YÖN DEĞİŞTİRİR:\n$$2x - 4 < \\left(\\frac{1}{3}\\right)^{-2} \\implies 2x - 4 < 9 \\implies 2x < 13 \\implies x < 6{,}5$$\nİki aralığın kesişimi $2 < x < 6{,}5$ olur. Bu aralıktaki tam sayılar $3, 4, 5, 6$ olup toplamları $3 + 4 + 5 + 6 = 18$'dir."
-  },
-  {
-   "soru": "Richter ölçeğine göre büyüklüğü $6{,}4$ olan bir depremin yoğunluğu (şiddeti), büyüklüğü $4{,}4$ olan bir depremin yoğunluğunun kaç katıdır?",
-   "cevap": "$R = \\log(I / I_0)$ bağıntısına göre iki depremin büyüklükleri farkı:\n$$R_1 - R_2 = \\log\\left(\\frac{I_1}{I_0}\\right) - \\log\\left(\\frac{I_2}{I_0}\\right) = \\log\\left(\\frac{I_1}{I_2}\\right)$$\nBuradan $6{,}4 - 4{,}4 = 2 = \\log\\left(\\frac{I_1}{I_2}\\right) \\implies \\frac{I_1}{I_2} = 10^2 = 100$ katıdır."
-  },
-  {
-   "soru": "Bir laboratuvar kültüründeki bakteri sayısı $t$ saat sonunda $N(t) = 1000 \\cdot e^{0{,}2 \\cdot t}$ üstel fonksiyonu ile modellenmektedir. Başlangıçtaki bakteri sayısının $5$ katına çıkması için kaç saat geçmesi gerekir? ($\\ln 5 \\approx 1{,}6$ alınız.)",
-   "cevap": "Başlangıçtaki ($t = 0$) bakteri sayısı $N_0 = 1000$'dir. Bakteri sayısının $5$ katına, yani $5000$'e çıkması için:\n$$5000 = 1000 \\cdot e^{0{,}2 \\cdot t} \\implies e^{0{,}2 \\cdot t} = 5$$\nHer iki tarafın doğal logaritması ($\\ln$) alınırsa: $0{,}2 \\cdot t = \\ln 5 = 1{,}6 \\implies t = \\frac{1{,}6}{0{,}2} = 8\\text{ saat}$ geçmesi gerekir."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "dogru_yanlis",
-   "soru": "Logaritmik bir denklem çözerken cebirsel işlemler sonucunda bulunan tüm gerçek sayı kökleri her zaman çözüm kümesine dahil edilir.",
-   "cevap": "Yanlış",
-   "aciklama": "Bulunan köklerden logaritmanın içini sıfır veya negatif yapanlar tanımsızlığa yol açtığı için çözüm kümesine alınmaz."
-  },
-  {
-   "tur": "dogru_yanlis",
-   "soru": "$0 < a < 1$ olmak üzere $\\log_a(f(x)) < \\log_a(g(x))$ eşitsizliğinde taban kaldırılırken eşitsizlik yön değiştirerek $f(x) > g(x) > 0$ olur.",
-   "cevap": "Doğru",
-   "aciklama": "$0 < a < 1$ için logaritma fonksiyonu azalan olduğundan eşitsizlik yön değiştirir."
-  },
-  {
-   "tur": "coktan_secmeli",
-   "soru": "$\\log_3(x - 1) \\le 2$ eşitsizliğinin gerçek sayılardaki en geniş çözüm aralığı aşağıdakilerden hangisidir?",
-   "secenekler": [
-    "$(1, 10]$",
-    "$(-\\infty, 10]$",
-    "$[1, 10]$",
-    "$(1, 9]$"
-   ],
-   "cevap": "$(1, 10]$",
-   "aciklama": "Tanım kümesinden $x - 1 > 0 \\implies x > 1$ ve taban $3 > 1$ olduğundan $x - 1 \\le 3^2 = 9 \\implies x \\le 10$ bulunur; kesişim $(1, 10]$ aralığıdır."
-  },
-  {
-   "tur": "coktan_secmeli",
-   "soru": "Yarılanma süresi $15$ gün olan radyoaktif bir maddeden başlangıçta $160\\text{ gram}$ bulunmaktadır. $60$ gün sonunda bu maddeden bozunmadan geriye kaç gram kalır?",
-   "secenekler": [
-    "10",
-    "20",
-    "40",
-    "5"
-   ],
-   "cevap": "10",
-   "aciklama": "$M(t) = M_0 \\cdot (1/2)^{t/T}$ formülünden $M(60) = 160 \\cdot (1/2)^{60/15} = 160 \\cdot (1/2)^4 = 160 / 16 = 10\\text{ gram}$ kalır."
-  },
-  {
-   "tur": "bosluk_doldurma",
-   "soru": "Hidrojen iyonu derişimi $[\\text{H}^+] = 10^{-5}\\text{ mol/L}$ olan bir sulu çözeltinin $\\text{pH}$ değeri __________ olur.",
-   "cevap": "5",
-   "aciklama": "$\\text{pH} = -\\log[\\text{H}^+] = -\\log(10^{-5}) = 5$ bulunur."
-  },
-  {
-   "tur": "bosluk_doldurma",
-   "soru": "$2^{2x} - 5 \\cdot 2^x + 4 = 0$ üstel denkleminin gerçek köklerinin toplamı __________ olur.",
-   "cevap": "2",
-   "aciklama": "$2^x = t$ için $t^2 - 5t + 4 = 0 \\implies t_1 = 4, t_2 = 1$. Buradan $2^x = 4 \\implies x_1 = 2$ ve $2^x = 1 \\implies x_2 = 0$; toplamları $2 + 0 = 2$'dir."
-  },
-  {
-   "tur": "eslestirme",
-   "soru": "Aşağıdaki gerçek hayat modellerini ilgili matematiksel bağıntılarıyla eşleştiriniz.",
-   "eslestirmeler": [
+  "ad": "12-matematik-3",
+  "sinif": 12,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 4,
+  "tarih": "28 Eylül - 2 Ekim 2026",
+  "yayin_tarihi": "2026-10-17",
+  "unite": "SAYILAR VE CEBİR",
+  "konu": "10 ve e Tabanında Logaritma Fonksiyonu (Adi ve Doğal Logaritma), Logaritma Özellikleri ve Taban Değiştirme",
+  "ciktilar": [
+    "12.1.2.3. Logaritma fonksiyonunun özelliklerini kullanarak işlemler yapar."
+  ],
+  "giris": "Geçen hafta üstel fonksiyonun tersi olarak logaritma fonksiyonunu, en geniş tanım kümesini, grafiğini, 10 tabanında (adi) logaritma ile {koyu:e} tabanında (doğal) logaritmayı öğrenmiştik. Bu hafta ise 17. yüzyılda {koyu:John Napier} ve {koyu:Henry Briggs}'in astronomi ve denizcilikteki çok basamaklı çarpma-bölme işlemlerini toplama-çıkarmaya indirgeyerek bilim dünyasında devrim yaratan {koyu:logaritma fonksiyonunun özelliklerini}, {koyu:taban değiştirme kuralını}, zincirleme çarpımları ve {koyu:çok büyük üslü sayıların basamak sayısını bulma} yöntemlerini inceleyeceğiz.",
+  "ozet": [
+    "Tanımlı olduğu aralıkta ({koyu:a ∈ ℝ⁺ − (1)}) her tabanda 1'in logaritması sıfır ({koyu:logₐ 1 = 0}), tabanın kendisine göre logaritması ise 1'dir ({koyu:logₐ a = 1}; özel olarak {koyu:log 10 = 1} ve {koyu:ln e = 1}).",
+    "{koyu:Çarpımın logaritması}, çarpanların logaritmaları toplamına eşittir ({koyu:logₐ(x · y) = logₐ x + logₐ y}); {koyu:bölümün logaritması} ise payın logaritmasından paydanın logaritmasının çıkarılmasına eşittir ({koyu:logₐ({kesir:x|y}) = logₐ x - logₐ y}).",
+    "Logaritması alınan pozitif sayının üssü başa çarpan olarak, tabanın üssü ise başa bölen (paydaya) olarak iner: {koyu:logₐ({us:x|n}) = n · logₐ x} ve {koyu:log_{us:a|m}({us:x|n}) = {kesir:n|m} · logₐ x}.",
+    "{koyu:Taban değiştirme kuralına} göre {koyu:a} tabanındaki bir logaritma herhangi bir {koyu:c} tabanında {koyu:logₐ b = {kesir:log_c b|log_c a} = {kesir:log b|log a} = {kesir:ln b|ln a}} şeklinde yazılır; buradan {koyu:logₐ b} = {kesir:1|log_b a} ve {koyu:logₐ b · log_b c · log_c d = logₐ d} sonuçları elde edilir.",
+    "Üstünde logaritma bulunan üslü ifadelerde taban ile logaritmanın içi yer değiştirebilir: {koyu:{us:a|log_b c} = {us:c|log_b a}} ve özel olarak {koyu:{us:a|logₐ x} = x} eşitliği sağlanır.",
+    "1'den büyük bir {koyu:A} doğal sayısının kaç basamaklı olduğunu bulmak için 10 tabanında logaritması alınır; {koyu:log A}'nın tam kısmına (karakteristiğine) {koyu:1 eklenerek} sayının {koyu:basamak sayısı} bulunur."
+  ],
+  "bolumler": [
     {
-     "sol": "Richter Deprem Büyüklüğü",
-     "sag": "$R = \\log(I / I_0)$"
+      "baslik": "Logaritma Fonksiyonunun En Geniş Tanım Kümesi",
+      "metin": [
+        "f: ℝ⁺ → ℝ, f(x) = logₐ x fonksiyonunda logaritmanın tanım kümesi {koyu:pozitif gerçek sayılar} (ℝ⁺) olduğundan sıfırın ve negatif sayıların logaritması gerçek sayılarda tanımsızdır. Genel olarak f(x) = log_g(x) h(x) biçiminde verilen bir fonksiyonun gerçek sayılarda tanımlı olabilmesi için şu {koyu:üç koşul} aynı anda sağlanmalıdır: {koyu:I. h(x) > 0} (logaritması alınan iç ifade pozitif olmalı), {koyu:II. g(x) > 0} (taban pozitif olmalı) ve {koyu:III. g(x) ≠ 1} (taban 1'den farklı olmalı).",
+        "Örneğin f(x) = log_(x−1)(9 − x) fonksiyonunun en geniş tanım kümesi için: 9 − x > 0 ⇒ x < 9, taban için x − 1 > 0 ⇒ x > 1 ve x − 1 ≠ 1 ⇒ x ≠ 2 olmalıdır. Bu üç koşulun kesişimi alındığında en geniş tanım kümesi (1, 9) − {2} bulunur. Eğer f(x) = logₐ({us:x|2} + bx + c) biçimindeki bir fonksiyonun {koyu:her x ∈ ℝ gerçek sayısı için tanımlı} olduğu söylenirse, ikinci dereceden {us:x|2} + bx + c > 0 eşitsizliğinin daima pozitif olması, yani diskriminantının negatif ({koyu:Δ = {us:b|2} − 4ac < 0}) olması gerekir."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Her Gerçek Sayı İçin Tanımlı Olma Şartı (Δ < 0)",
+        "metin": "a > 0, a ≠ 1 sabit taban olmak üzere f(x) = logₐ(m{us:x|2} + nx + k) fonksiyonunun {koyu:her x ∈ ℝ için tanımlı} olması demek, m{us:x|2} + nx + k > 0 eşitsizliğinin daima sağlanması demektir. Bunun için {koyu:m > 0} ve {koyu:Δ = {us:n|2} − 4mk < 0} olmalıdır."
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#38bdf8\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">ÜSTEL VE LOGARİTMİK DENKLEMLERİN ÇÖZÜM YÖNTEMLERİ</text><rect x=\"25\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#0284c7\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#0284c7\"/><text x=\"195\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Üstel Denklemler</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• a &gt; 0 ve a ≠ 1 olmak üzere:</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  a^f(x) = a^g(x)  &lt;=&gt;  f(x) = g(x)</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Tabanlar eşitlenemiyorsa: a^f(x) = b  &lt;=&gt;  f(x) = log_a(b)</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• a^(2x) + p·a^x + q = 0 tipinde a^x = t (t &gt; 0)</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">  değişken değiştirmesi yapılır</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Negatif t kökleri üstel fonksiyonu sağlamaz!</text><rect x=\"395\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#10b981\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#10b981\"/><text x=\"565\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Logaritmik Denklemler</text><text x=\"407\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• log_a(f(x)) = c  &lt;=&gt;  f(x) = a^c</text><text x=\"407\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• log_a(f(x)) = log_a(g(x))  &lt;=&gt;  f(x) = g(x)</text><text x=\"407\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• ALTIN KURAL (Tanım Kümesi Kontrolü):</text><text x=\"407\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  Bulunan her kök için mutlaka:</text><text x=\"407\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">  1) İç kısım: f(x) &gt; 0 ve g(x) &gt; 0</text><text x=\"407\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  2) Taban: a &gt; 0 ve a ≠ 1 şartları kontrol edilir!</text></svg>"
     },
     {
-     "sol": "Ses Şiddeti Düzeyi (Desibel)",
-     "sag": "$L = 10 \\cdot \\log(I / I_0)$"
+      "baslik": "Logaritma Fonksiyonunun Grafiği ve Artanlık-Azalanlık Durumu",
+      "metin": [
+        "Bir fonksiyonun grafiği ile ters fonksiyonunun grafiği analitik düzlemde {koyu:y = x (birinci açıortay) doğrusuna göre simetriktir}. Dolayısıyla f(x) = {us:a|x} üstel fonksiyonunun grafiği üzerindeki (0, 1) ve (1, a) noktalarının y = x doğrusuna göre simetriği alındığında, ters fonksiyon olan {us:f|−1}(x) = logₐ x logaritma fonksiyonunun grafiğinin daima {koyu:(1, 0)} ve {koyu:(a, 1)} noktalarından geçtiği görülür. Tanım kümesi ℝ⁺ olduğu için y = logₐ x grafiği y ekseninin soluna geçmez ve y eksenini (x = 0) kesmez.",
+        "Üstel fonksiyonda olduğu gibi logaritma fonksiyonunun artan veya azalan olmasını da {koyu:taban (a)} belirler: {koyu:1. Taban 1'den büyükse (a > 1):} f(x) = logₐ x fonksiyonu {koyu:artan} bir fonksiyondur (x değerleri büyüdükçe logₐ x değerleri de büyür; örneğin y = log₂ x). {koyu:2. Taban 0 ile 1 arasındaysa (0 < a < 1):} f(x) = logₐ x fonksiyonu {koyu:azalan} bir fonksiyondur (x değerleri büyüdükçe logₐ x değerleri küçülür; örneğin y = log₁/₂ x)."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Özellik",
+          "Artan Logaritma (a > 1)",
+          "Azalan Logaritma (0 < a < 1)"
+        ],
+        "satirlar": [
+          [
+            "Tanım ve Görüntü Kümesi",
+            "f: ℝ⁺ → ℝ (Bire bir ve örten)",
+            "f: ℝ⁺ → ℝ (Bire bir ve örten)"
+          ],
+          [
+            "Eksenleri Kestiği Nokta",
+            "x eksenini (1, 0) noktasında keser; y eksenini kesmez.",
+            "x eksenini (1, 0) noktasında keser; y eksenini kesmez."
+          ],
+          [
+            "Karakteristik Noktaları",
+            "({kesir:1|a}, −1), (1, 0) ve (a, 1) noktalarından geçer.",
+            "({kesir:1|a}, −1), (1, 0) ve (a, 1) noktalarından geçer."
+          ],
+          [
+            "Değişim Yönü",
+            "x₁ < x₂ ⇒ logₐ x₁ < logₐ x₂ (Artan)",
+            "x₁ < x₂ ⇒ logₐ x₁ > logₐ x₂ (Azalan)"
+          ],
+          [
+            "Üstel Tersi İle Simetri",
+            "y = {us:a|x} artan grafiği ile y = x'e göre simetriktir.",
+            "y = {us:a|x} azalan grafiği ile y = x'e göre simetriktir."
+          ]
+        ]
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#f59e0b\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">ÜSTEL VE LOGARİTMİK EŞİTSİZLİKLERDE TABAN KURALI</text><rect x=\"25\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#d97706\"/><text x=\"195\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Durum 1: Taban a &gt; 1 (Artan Fonksiyon)</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Fonksiyon artan olduğundan eşitsizlik</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  YÖN DEĞİŞTİRMEZ!</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Üstel: a^f(x) &lt; a^g(x)  &lt;=&gt;  f(x) &lt; g(x)</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Logaritmik: log_a(f(x)) &lt; log_a(g(x))</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">  &lt;=&gt;  0 &lt; f(x) &lt; g(x)</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Örnek: log_3(x - 2) &lt; 2  =&gt;  0 &lt; x - 2 &lt; 9  =&gt;  2 &lt; x &lt; 11</text><rect x=\"395\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#8b5cf6\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#8b5cf6\"/><text x=\"565\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Durum 2: Taban 0 &lt; a &lt; 1 (Azalan Fonksiyon)</text><text x=\"407\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Fonksiyon azalan olduğundan eşitsizlik</text><text x=\"407\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  YÖN DEĞİŞTİRİR!</text><text x=\"407\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Üstel: a^f(x) &lt; a^g(x)  &lt;=&gt;  f(x) &gt; g(x)</text><text x=\"407\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Logaritmik: log_a(f(x)) &lt; log_a(g(x))</text><text x=\"407\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">  &lt;=&gt;  f(x) &gt; g(x) &gt; 0</text><text x=\"407\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Örnek: log_(1/2)(x - 1) &gt; 3 =&gt; 0 &lt; x - 1 &lt; (1/2)³</text></svg>"
     },
     {
-     "sol": "Asitlik Derecesi (pH)",
-     "sag": "$\\text{pH} = -\\log[\\text{H}^+]$"
+      "baslik": "1. Temel Logaritma Özdeşlikleri ve Çarpım / Bölüm Kuralları",
+      "metin": [
+        "{koyu:a ∈ ℝ⁺ − (1)} ve {koyu:x, y ∈ ℝ⁺} olmak üzere üstel fonksiyonun özelliklerinden doğrudan elde edilen temel logaritma kuralları şunlardır:\n• {koyu:1. Özdeşlik:} {koyu:{us:a|0} = 1} olduğundan her tabanda 1 sayısının logaritması sıfırdır:\n  {koyu:logₐ 1 = 0}   (Özel olarak: {koyu:log 1 = 0} ve {koyu:ln 1 = 0}).\n• {koyu:2. Özdeşlik:} {koyu:{us:a|1} = a} olduğundan her tabanın kendisine göre logaritması 1'dir:\n  {koyu:logₐ a = 1}   (Özel olarak: {koyu:log 10 = 1} ve {koyu:ln e = 1}).",
+        "{koyu:3. Çarpımın Logaritması Kuralı:} İki pozitif gerçek sayının çarpımının logaritması, bu sayıların ayrı ayrı logaritmalarının {koyu:toplamına} eşittir:\n  {koyu:logₐ(x · y) = logₐ x + logₐ y}\n  Örnek: {koyu:log₆ 12 + log₆ 3 = log₆(12 · 3) = log₆ 36 = log₆({us:6|2}) = 2}.\n• {koyu:4. Bölümün Logaritması Kuralı:} İki pozitif gerçek sayının bölümünün logaritması, payın logaritması ile paydanın logaritmasının {koyu:farkına} eşittir:\n  {koyu:logₐ({kesir:x|y}) = logₐ x - logₐ y}\n  Örnek: {koyu:log₅ 100 - log₅ 4 = log₅({kesir:100|4}) = log₅ 25 = 2}."
+      ],
+      "kutu": {
+        "tur": "uyari",
+        "baslik": "Çok Önemli Uyarı: Toplamın veya Farkın Logaritması Parçalanamaz!",
+        "metin": "Öğrencilerin en sık düştüğü kavram yanılgısı şudur:\n• {koyu:logₐ(x + y) ≠ logₐ x + logₐ y}  ve  {koyu:logₐ(x - y) ≠ logₐ x - logₐ y}!\nToplama ve çıkarma işlemleri logaritmanın {koyu:içinde} değil, {koyu:dışında} olduğunda çarpma ve bölmeye dönüşür!"
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#a855f7\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">GERÇEK HAYAT PROBLEMLERİ 1: DEPREM, SES VE pH ÖLÇEKLERİ</text><rect x=\"25\" y=\"50\" width=\"225\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#6366f1\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"225\" height=\"32\" rx=\"12\" fill=\"#6366f1\"/><text x=\"137\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Richter Ölçeği (Deprem)</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• R = log(I / I₀)</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  R: Deprem büyüklüğü</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">  I: Deprem yoğunluğu</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  I₀: Standart sarsıntı</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Büyüklüğü 1 birim artan</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  depremin şiddeti 10 kat artar</text><rect x=\"268\" y=\"50\" width=\"225\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#ec4899\" stroke-width=\"2\"/><rect x=\"268\" y=\"50\" width=\"225\" height=\"32\" rx=\"12\" fill=\"#ec4899\"/><text x=\"380\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Ses Şiddeti (Desibel - dB)</text><text x=\"280\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• L = 10 · log(I / I₀)</text><text x=\"280\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  L: Ses düzeyi (dB)</text><text x=\"280\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">  I: Ses şiddeti (W/m²)</text><text x=\"280\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  I₀ = 10⁻¹² W/m² (Eşik)</text><text x=\"280\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Ses şiddeti 10 katına çıkarsa</text><text x=\"280\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  ses düzeyi 10 dB artar</text><rect x=\"510\" y=\"50\" width=\"225\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#14b8a6\" stroke-width=\"2\"/><rect x=\"510\" y=\"50\" width=\"225\" height=\"32\" rx=\"12\" fill=\"#14b8a6\"/><text x=\"622\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">pH ve pOH Ölçeği (Kimya)</text><text x=\"522\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• pH = -log[H⁺]</text><text x=\"522\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• pOH = -log[OH⁻]</text><text x=\"522\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• 25 °C'de: pH + pOH = 14</text><text x=\"522\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• [H⁺] = 10⁻³ M ise pH = 3</text><text x=\"522\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• pH &lt; 7 asidik, pH = 7 nötr,</text><text x=\"522\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  pH &gt; 7 bazik çözeltidir</text></svg>"
     },
     {
-     "sol": "Radyoaktif Yarılanma Kütlesi",
-     "sag": "$M(t) = M_0 \\cdot (1/2)^{t/T}$"
+      "baslik": "2. Kuvvet (Üs) Kuralları ve Köklü İfadelerin Logaritması",
+      "metin": [
+        "Logaritması alınan ifadenin veya tabanın kuvveti varsa, bu üsler logaritmanın önüne katsayı olarak indirilir:\n• {koyu:1. İçerideki Sayının Üssü:} {koyu:logₐ({us:x|n}) = n · logₐ x}\n  Örnek: {koyu:ln({us:e|5}) = 5 · ln e = 5 · 1 = 5}.\n• {koyu:2. Hem Tabanın Hem İçerideki Sayının Üssü:} İçerideki sayının üssü ({koyu:n}) paya, tabanın üssü ({koyu:m}) ise paydaya gelir:\n  {koyu:log_{us:a|m}({us:x|n}) = {kesir:n|m} · logₐ x}\n  Örnek: {koyu:log₈ 16 = log_{us:2|3}({us:2|4}) = {kesir:4|3} · log₂ 2 = {kesir:4|3}}.",
+        "{koyu:Köklü İfadelerde Uygulama:} Köklü ifadeler rasyonel üslü sayıya ({koyu:{us:x|n/m} = {us:x|n/m}}) çevrilerek logaritması kolayca hesaplanır.\nÖrnek: {koyu:log_{kok:3}(9 · {kok:3|3})} ifadesinde taban {koyu:{kok:3} = {us:3|1/2}}, iç kısım ise {koyu:{us:3|2} · {us:3|1/3} = {us:3|7/3}} olduğundan:\n{koyu:log_{us:3|1/2}({us:3|7/3}) = {kesir:7/3|1/2} · log₃ 3 = {kesir:7|3} · {kesir:2|1} = {kesir:14|3}} bulunur."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 740 255\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:740px;display:block;margin:14px auto;background:#fff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><rect x=\"0\" y=\"0\" width=\"740\" height=\"38\" rx=\"10\" fill=\"#0f766e\"/><rect x=\"0\" y=\"20\" width=\"740\" height=\"18\" fill=\"#0f766e\"/><text x=\"370\" y=\"25\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">TABAN DEĞİŞTİRME KURALI VE ÖNEMLİ SONUÇLARI</text><rect x=\"20\" y=\"52\" width=\"340\" height=\"185\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#10b981\" stroke-width=\"1.8\"/><text x=\"190\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#065f46\" text-anchor=\"middle\">TABAN DEĞİŞTİRME FORMÜLÜ</text><line x1=\"30\" y1=\"82\" x2=\"350\" y2=\"82\" stroke=\"#10b981\" stroke-width=\"1\"/><text x=\"190\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• a tabanındaki log_a(b) ifadesini c tabanına çevirme:</text><text x=\"190\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">  log_a(b) = log_c(b) / log_c(a)</text><text x=\"190\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• 10 tabanında: log_a(b) = log(b) / log(a)</text><text x=\"190\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Doğal tabanda (e): log_a(b) = ln(b) / ln(a)</text><text x=\"190\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">• Ters Çevirme Sonucu: log_a(b) = 1 / log_b(a)</text><rect x=\"380\" y=\"52\" width=\"340\" height=\"185\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\" stroke-width=\"1.8\"/><text x=\"550\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#854d0e\" text-anchor=\"middle\">ZİNCİRLEME ÇARPIM VE GENİŞLETME</text><line x1=\"390\" y1=\"82\" x2=\"710\" y2=\"82\" stroke=\"#eab308\" stroke-width=\"1\"/><text x=\"550\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">1) Çarpımsal Terslik:</text><text x=\"550\" y=\"118\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   log_a(b) · log_b(a) = 1</text><text x=\"550\" y=\"136\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">2) Zincirleme Sadeleşme Kuralı:</text><text x=\"550\" y=\"154\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   log_a(b) · log_b(c) · log_c(d) = log_a(d)</text><text x=\"550\" y=\"172\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">3) Aynı Kuvvetle Genişletme / Sadeleştirme:</text><text x=\"550\" y=\"190\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">   log_a(b) = log_(a^k)(b^k)</text></svg>"
+    },
+    {
+      "baslik": "3. Taban Değiştirme Kuralı ve Zincirleme Çarpım Özdeşlikleri",
+      "metin": [
+        "Farklı tabanlarda verilen logaritmik ifadelerle işlem yapabilmek için tüm ifadeleri ortak bir tabanda buluşturan {koyu:Taban Değiştirme Kuralı} kullanılır. {koyu:a, c ∈ ℝ⁺ − (1)} ve {koyu:b ∈ ℝ⁺} olmak üzere {koyu:a} tabanındaki {koyu:logₐ b} ifadesi, {koyu:c} tabanında şöyle yazılır:\n{koyu:logₐ b = {kesir:log_c b|log_c a} = {kesir:log b|log a} = {kesir:ln b|ln a}}",
+        "Taban değiştirme kuralından türeyen ve soru çözümlerini saniyelere indiren {koyu:dört önemli sonuç} şunlardır:\n• {koyu:Sonuç 1 (Taban ile İçi Yer Değiştirme):} {koyu:c = b} seçilirse:\n  {koyu:logₐ b} = {kesir:1|log_b a}  veya  {koyu:logₐ b · log_b a = 1}  (Örn: {koyu:log₂ 5 · log₅ 2 = 1}).\n• {koyu:Sonuç 2 (Zincirleme Çarpım / Sadeleşme):} Çarpım durumundaki logaritmalarda çapraz taban ve içler birbirini götürür:\n  {koyu:logₐ b · log_b c · log_c d = logₐ d}\n  Örnek: {koyu:log₂ 5 · log₅ 7 · log₇ 8 = log₂ 8 = log₂({us:2|3}) = 3}.\n• {koyu:Sonuç 3 (Aynı Kuvveti Alma):} Tabanın ve içerideki sayının aynı kuvveti (veya kökü) alınırsa logaritmanın değeri değişmez:\n  {koyu:logₐ b = log_{us:a|n}({us:b|n})}  (Örn: {koyu:log_{kok:2}({kok:5}) = log₂ 5}).\n• {koyu:Sonuç 4 (Paydadaki Logaritmayı Paya Çıkarma):}\n  {koyu:{kesir:1|logₐ x} + {kesir:1|log_b x} = log_x a + log_x b = log_x(a · b)}."
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "baslik": "Pratik İpucu: 'Üstteki Paya, Alttaki Paydaya!'",
+        "metin": "Taban değiştirme yaparken {koyu:logₐ b} ifadesinde yazılış olarak üstte duran {koyu:b} yeni kesrin {koyu:payına} ({koyu:log_c b}), altta duran taban {koyu:a} ise yeni kesrin {koyu:paydasına} ({koyu:log_c a}) yazılır. Tersten okursak: Aynı tabanlı iki logaritmanın bölümü {koyu:{kesir:log_c b|log_c a} = logₐ b} verir!"
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#10b981\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">GERÇEK HAYAT PROBLEMLERİ 2: ÜSTEL BÜYÜME VE BOZUNMA</text><rect x=\"25\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#059669\"/><text x=\"195\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Nüfus Artışı ve Bileşik Faiz (Üstel Büyüme)</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Sürekli büyüme modeli: N(t) = N₀ · e^(k·t)</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  N₀: Başlangıç miktarı, k &gt; 0: Büyüme hızı sabiti</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Yıllık artış modeli: A(t) = A₀ · (1 + r)^t</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Bakteri çoğalması: Her periyotta 2 katına çıkarsa</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">  N(t) = N₀ · 2^(t / T)</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Geçen süre t'yi bulmak için her iki tarafın ln'i alınır</text><rect x=\"395\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#0ea5e9\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#0ea5e9\"/><text x=\"565\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Radyoaktif Bozunma ve Yarı Ömür (Azalma)</text><text x=\"407\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Bozunma modeli: M(t) = M₀ · e^(-k·t)</text><text x=\"407\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• Yarılanma süresi (T_1/2) modeli:</text><text x=\"407\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">  M(t) = M₀ · (1/2)^(t / T_1/2)</text><text x=\"407\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Karbon-14 (C-14) testi ile fosil yaş tayini yapılır</text><text x=\"407\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Newton'un Soğuma Yasası:</text><text x=\"407\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  T(t) = T_ortam + (T₀ - T_ortam) · e^(-k·t)</text></svg>"
     }
-   ],
-   "aciklama": "Logaritmik ve üstel modeller doğa bilimlerindeki ölçümlerin temelini oluşturur."
-  },
-  {
-   "tur": "klasik",
-   "soru": "$(\\ln x)^2 - 3\\ln x - 4 = 0$ denkleminin köklerinin çarpımını ($x_1 \\cdot x_2$) bulunuz.",
-   "cevap": "$\\ln x = t$ dönüşümü yapılırsa $t^2 - 3t - 4 = 0$ denkleminde kökler toplamı $t_1 + t_2 = 3$ olur. $\\ln x_1 + \\ln x_2 = \\ln(x_1 \\cdot x_2) = 3 \\implies x_1 \\cdot x_2 = e^3$ olarak bulunur."
-  }
- ]
+  ],
+  "ornekler": [
+    {
+      "soru": "log₃ 54 + log₃ 2 - log₃ 4 işleminin sonucu kaçtır?",
+      "cevap": "Tabanlar aynı (3 tabanı) olduğu için toplamada içler çarpılır, çıkarmada bölünür:\n{koyu:log₃ 54 + log₃ 2 - log₃ 4 = log₃({kesir:54 · 2|4}) = log₃({kesir:108|4}) = log₃ 27}\n{koyu:27} = {us:3|3} olduğundan:\n{koyu:log₃({us:3|3}) = 3 · log₃ 3 = 3 · 1 = 3} bulunur."
+    },
+    {
+      "soru": "log₄ 9 · log₂₇ 32 · log₂ 3 işleminin sonucunu bulunuz.",
+      "cevap": "Önce sayıları asal tabanların kuvvetleri biçiminde yazıp üsleri başa katsayı olarak çıkaralım:\n• {koyu:log₄ 9 = log_{us:2|2}({us:3|2}) = {kesir:2|2} · log₂ 3 = log₂ 3}\n• {koyu:log₂₇ 32 = log_{us:3|3}({us:2|5}) = {kesir:5|3} · log₃ 2}\nŞimdi çarpımı yazalım:\n{koyu:(log₂ 3) · ({kesir:5|3} · log₃ 2) · (log₂ 3)}\n{koyu:log₂ 3 · log₃ 2 = 1} olduğundan soru {koyu:{kesir:5|3} · log₂ 3} (veya son çarpan {koyu:log₃ 8 = 3·log₃ 2} ise tam sayı) şeklinde sadeleşir."
+    },
+    {
+      "soru": "{kesir:1|log₂ 60} + {kesir:1|log₃ 60} + {kesir:1|log₁₀ 60} işleminin sonucu kaçtır?",
+      "cevap": "Taban değiştirme kuralının tersinden {koyu:{kesir:1|logₐ b} = log_b a} özelliğini kullanalım:\n• {koyu:{kesir:1|log₂ 60} = log₆₀ 2}\n• {koyu:{kesir:1|log₃ 60} = log₆₀ 3}\n• {koyu:{kesir:1|log₁₀ 60} = log₆₀ 10}\nÜç ifadeyi topladığımızda tabanlar eşit (60 tabanı) olduğundan içler çarpılır:\n{koyu:log₆₀ 2 + log₆₀ 3 + log₆₀ 10 = log₆₀(2 · 3 · 10) = log₆₀ 60 = 1} bulunur."
+    },
+    {
+      "soru": "log 2 = x olduğuna göre log 250 ifadesinin x türünden eşitini bulunuz.",
+      "cevap": "10 tabanında 250 sayısını 10 ve 2 cinsinden yazalım ({koyu:250 = {kesir:1000|4} = {kesir:{us:10|3}|{us:2|2}}}):\n{koyu:log 250 = log({kesir:{us:10|3}|{us:2|2}}) = log({us:10|3}) - log({us:2|2}) = 3 · log 10 - 2 · log 2}\n{koyu:log 10 = 1} ve {koyu:log 2 = x} olduğundan sonuç {koyu:3 - 2x} bulunur.\n(İkinci yol: {koyu:log 250 = log(25 · 10) = 2·log 5 + 1 = 2(1 - x) + 1 = 3 - 2x})."
+    },
+    {
+      "soru": "log 3 ≈ 0,4771 olduğuna göre 9²⁰ sayısı kaç basamaklı bir doğal sayıdır?",
+      "cevap": "Sayımıza {koyu:A = {us:9|20} = {us:({us:3|2})|20} = {us:3|40}} diyelim ve 10 tabanında logaritmasını alalım:\n{koyu:log A = log({us:3|40}) = 40 · log 3 = 40 · 0,4771 = 19,084}\nBulunan {koyu:19,084} sayısının tam kısmı {koyu:19} olduğu için basamak sayısı {koyu:19 + 1 = 20 basamaklıdır}."
+    },
+    {
+      "soru": "‘Temel Logaritma Özdeşlikleri ve Çarpım / Bölüm Kuralları’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
+      "cevap": "{koyu:a ∈ ℝ⁺ − (1)} ve {koyu:x, y ∈ ℝ⁺} olmak üzere üstel fonksiyonun özelliklerinden doğrudan elde edilen temel logaritma kuralları şunlardır:\n• {koyu:1. Özdeşlik:} {koyu:{us:a|0} = 1} olduğundan her tabanda 1 sayısının logaritması sıfırdır:\n  {koyu:logₐ 1 = 0}   (Özel olarak: {koyu:log 1 = 0} ve {koyu:ln 1 = 0}).\n• {koyu:2. Özdeşlik:} {koyu:{us:a|1} = a} olduğundan her tabanın kendisine göre logaritması 1'dir:\n  {koyu:logₐ a = 1}   (Özel olarak: {koyu:log 10 = 1} ve {koyu:ln e = 1}). • {koyu:3. Çarpımın Logaritması Kuralı:} İki pozitif gerçek sayının çarpımının logaritması, bu sayıların ayrı ayrı logaritmalarının {koyu:toplamına} eşittir:\n  {koyu:logₐ(x · y) = logₐ x + logₐ y}\n  Örnek: {koyu:log₆ 12 + log₆ 3 = log₆(12 · 3) = log₆ 36 = log₆({us:6|2}) = 2}.\n• {koyu:4. Bölümün Logaritması Kuralı:} İki pozitif gerçek sayının bölümünün logaritması, payın logaritması ile paydanın logaritmasının {koyu:farkına} eşittir:\n  {koyu:logₐ({kesir:x|y}) = logₐ x - logₐ y}\n  Örnek: {koyu:log₅ 100 - log₅ 4 = log₅({kesir:100|4}) = log₅ 25 = 2}."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "log₂ 24 - log₂ 3 + log₃ 9 işleminin sonucu aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "5",
+        "4",
+        "3",
+        "6",
+        "7"
+      ],
+      "dogru": 0,
+      "aciklama": "{koyu:log₂ 24 - log₂ 3 = log₂({kesir:24|3}) = log₂ 8 = 3} ve {koyu:log₃ 9 = log₃({us:3|2}) = 2} olduğundan toplam {koyu:3 + 2 = 5} bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "{us:4|log₂ 5} + {us:e|ln 6} işleminin sonucu kaçtır?",
+      "secenekler": [
+        "16",
+        "31",
+        "26",
+        "21",
+        "36"
+      ],
+      "dogru": 1,
+      "aciklama": "{koyu:{us:4|log₂ 5} = {us:5|log₂ 4} = {us:5|2} = 25} ve {koyu:{us:e|ln 6} = 6} olduğundan {koyu:25 + 6 = 31} bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "‘Taban Değiştirme Kuralı ve Zincirleme Çarpım Özdeşlikleri’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Taban değiştirme yaparken {koyu:logₐ b} ifadesinde yazılış olarak üstte duran {koyu:b} yeni kesrin {koyu:payına} ({koyu:log_c b}), altta duran taban {koyu:a} ise yeni kesrin {koyu:paydasına} ({koyu:log_c a}) yazılır.",
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme, bağlam dışı yorum, bağlam dışı yorum)",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 2,
+      "aciklama": "Taban Değiştirme Kuralı ve Zincirleme Çarpım Özdeşlikleri bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "‘Üslü İfadenin Kuvvetinde Logaritma Bulunması Kuralları’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum)",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Bir üslü ifadenin üssünde logaritma yer alıyorsa şu iki altın kural uygulanır:\n• {koyu:Kural 1:} Üslü ifadenin tabanı ile üssündeki logaritmanın tabanı aynı ise birbirini götürür ve geriye yalnız logaritmanın içindeki sayı kalır:\n  {koyu:{us:a|logₐ x} = x}  ve  {koyu:{us:e|ln x} = x}  ve  {koyu:{us:10|log x} = x}\n  Örnek: {koyu:{us:5|log₅ 12} = 12}  |  {koyu:{us:e|ln 7} = 7}  |  {koyu:{us:10|2 + log 3} = {us:10|2} · {us:10|log 3} = 100 · 3 = 300}.",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 3,
+      "aciklama": "Üslü İfadenin Kuvvetinde Logaritma Bulunması Kuralları bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Pozitif gerçek sayılarda log_a(x + y) = log_a(x) + log_a(y) eşitliği daima doğrudur.",
+          "dogru": false,
+          "aciklama": "Bu ifade {koyu:yanlıştır}. Toplamın logaritması parçalanamaz; doğru kural çarpımın logaritmasıdır: {koyu:logₐ(x · y) = logₐ x + logₐ y}."
+        },
+        {
+          "metin": "Verilen 10 tabanında log 2 + log 5 işleminin sonucu 1'e eşittir.",
+          "dogru": true,
+          "aciklama": "Bu ifade {koyu:doğrudur}. {koyu:log 2 + log 5 = log(2 · 5) = log 10 = 1} olur."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki logaritmik ifadeleri eşit oldukları değerlerle eşleştiriniz.",
+      "ciftler": [
+        [
+          "log_a(x · y)",
+          "log_a(x) + log_a(y)"
+        ],
+        [
+          "log_a(x / y)",
+          "log_a(x) - log_a(y)"
+        ],
+        [
+          "log_(a^m)(x^n)",
+          "(n / m) · log_a(x)"
+        ],
+        [
+          "log_a(b) · log_b(c)",
+          "log_a(c)"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Tanımlı olduğu her tabanda 1 sayısının logaritması (log_a 1) daima ___ sayısına eşittir.",
+          "cevap": "0"
+        },
+        {
+          "metin": "Taban değiştirme kuralına göre log_a(b) ile log_b(a) ifadelerinin çarpımı daima ___ sayısına eşittir.",
+          "cevap": "1"
+        },
+        {
+          "metin": "Verilen 1'den büyük bir A doğal sayısının 10 tabanındaki logaritması log A = 24,63 ise A sayısı ___ basamaklıdır.",
+          "cevap": "25"
+        }
+      ],
+      "fazla": [
+        "a",
+        "10",
+        "24"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Karmaşık bir logaritma işlemini çözerken izlenecek 3 adımı değerlendiriniz.",
+      "cevap": "1) Tüm sayıları asal tabanların üslü biçimine çevir.\n2) {koyu:log_{us:a|m}({us:x|n}) = {kesir:n|m} · logₐ x} ve {koyu:{kesir:1|log_b a} = logₐ b} kurallarıyla tabanları eşitle.\n3) {koyu:logₐ x + logₐ y = logₐ(x·y)} ile tek logaritmada toplayıp sonucu bul.",
+      "ipuclari": [
+        "1. Adım: Sayıları Asal Kuvvetlere Çevir: 8 = 2³, 9 = 3², kök(5) = 5^(1/2) şeklinde yazıp üsleri log_(a^m)(x^n) = (n/m)·log_a(x) ile başa indir.",
+        "2. Adım: Tabanları Eşitle: Farklı tabanlar varsa Taban Değiştirme Kuralı (log_a(b) = log_c(b) / log_c(a)) veya 1 / log_b(a) = log_a(b) uygula.",
+        "3. Adım: Çarpım ve Bölüm Kurallarıyla Birleştir: Aynı tabanda toplama varsa içleri çarp, çıkarma varsa içleri böl."
+      ]
+    }
+  ],
+  "kazanim": "12.1.2.2. 10 ve e tabanında logaritma fonksiyonunu tanımlayarak problemler çözer.\n12.1.2.3. Logaritma fonksiyonunun özelliklerini kullanarak işlemler yapar."
 }

@@ -20,7 +20,8 @@
       "kutu": {
         "tur": "kural",
         "metin": "Metnin kaynağını, korunmasını ve açıklanmasını ayrı kavramlarla ifade et."
-      }
+      },
+      "gorsel": "<svg viewBox=\"0 0 460 214\" role=\"img\" aria-label=\"Tefsir İlminin Temel Kavramları kavram özeti şeması\"><rect x=\"90\" y=\"12\" width=\"280\" height=\"38\" rx=\"19\" class=\"g-mf\"/><text x=\"230\" y=\"36\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"800\" class=\"g-b\">Tefsir İlminin Temel Kavramları</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ma\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"116\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">1. Bölüm</text><text x=\"116\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Vahiy ve metnin korunması</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ta\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"344\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">2. Bölüm</text><text x=\"344\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Tefsir ve müfessir</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ya\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"116\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-yf\">3. Bölüm</text><text x=\"116\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Tevil ve yorumun dayanağı</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-oa\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"344\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-of\">4. Bölüm</text><text x=\"344\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Tercüme ile mealin ilişkisi</text></svg>"
     },
     {
       "baslik": "Tefsir ve müfessir",
@@ -37,7 +38,7 @@
       "baslik": "Tevil ve yorumun dayanağı",
       "metin": [
         "Tevil, bir ifadenin ilk akla gelen anlamı yerine, gerekçeye dayanarak taşıyabileceği anlamlardan birini tercih edip yorumlamaktır. Bu yorum, ayeti bağlamından koparmadan Kur’an ve sünnetle uyum içinde yapılır.",
-        "Tevil, istenen her anlamın metne yüklenmesi değildir. Kitapta tevilin muhtemel anlamlar arasında bir tercih içerdiği, bu yüzden yorumcunun delil ve bağlamdan bağımsız davranamayacağı vurgulanır."
+        "Tevil, istenen her anlamın metne yüklenmesi değildir. Bu konuda tevilin muhtemel anlamlar arasında bir tercih içerdiği, bu yüzden yorumcunun delil ve bağlamdan bağımsız davranamayacağı vurgulanır."
       ],
       "kutu": {
         "tur": "dikkat",
@@ -110,13 +111,13 @@
       "tur": "coktan",
       "soru": "Bir kütüphane kaydında eser “Ayetleri Arap dili, iniş ortamı ve ilgili rivayetlerle açıklar.” diye tanıtılıyor. Eserin türü hangisidir?",
       "secenekler": [
-        "Sözlük",
-        "Meal",
         "Tefsir",
+        "Meal",
+        "Sözlük",
         "Kronoloji",
         "Atlas"
       ],
-      "dogru": 2,
+      "dogru": 0,
       "aciklama": "Dil, bağlam ve kaynaklarla ayrıntılı açıklama tefsirin işlevidir."
     },
     {
@@ -136,18 +137,31 @@
       "tur": "coktan",
       "soru": "İki mealin kelime tercihleri farklıdır. Sağlıklı bir karşılaştırmada ilk olarak ne yapılmalıdır?",
       "secenekler": [
-        "Kısa olanı kesin doğru saymak",
+        "Kısa olanı net doğru saymak",
         "Yeni olanı kaynaksız üstün tutmak",
-        "Aynı olmayan kelimeleri silmek",
         "Anlamı ve bağlamı karşılaştırmak",
+        "Aynı olmayan kelimeleri silmek",
         "Her farkı metin değişikliği saymak"
       ],
-      "dogru": 3,
+      "dogru": 2,
       "aciklama": "Kelime farklılığı anlam ve bağlamla birlikte değerlendirilmelidir."
     },
     {
+      "tur": "coktan",
+      "soru": "‘Tercüme ile mealin ilişkisi’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Meal, anlamı başka dilde öğrenmeye yardım eder; asıl metnin yerine geçmez.",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 3,
+      "aciklama": "Tercüme ile mealin ilişkisi bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
       "tur": "dy",
-      "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
           "metin": "Tefsir çalışması dil ve bağlam bilgisi gerektirir.",
@@ -173,7 +187,7 @@
     },
     {
       "tur": "eslestir",
-      "yonerge": "İlişkili kavram ve açıklamaları eşleştiriniz.",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
           "Vahiy",
@@ -195,7 +209,7 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
           "metin": "Ayetleri dil ve bağlamıyla açıklayan ilim ___ ilmidir.",
@@ -211,26 +225,24 @@
         }
       ],
       "fazla": [
-        "kronoloji"
+        "kronoloji",
+        "varsayım"
       ]
     },
     {
       "tur": "ogretici",
       "soru": "Bir metinde “Tefsir ve meal aynı işi aynı ayrıntıyla yapar.” deniliyor. Kapsam farkını nasıl açıklarsınız?",
+      "cevap": "Meal anlamı başka dilde yaklaşık biçimde verir. Tefsir ise ayeti dil, bağlam ve ilgili kaynaklarla açıklayarak daha ayrıntılı anlama imkânı sunar.",
       "ipuclari": [
         "Meal başka dilde anlam aktarır.",
         "Tefsirin dil, bağlam ve kaynak açıklamalarını düşün."
-      ],
-      "cevap": "Meal anlamı başka dilde yaklaşık biçimde verir. Tefsir ise ayeti dil, bağlam ve ilgili kaynaklarla açıklayarak daha ayrıntılı anlama imkânı sunar."
-    },
-    {
-      "tur": "ogretici",
-      "soru": "Bir ayetin kelimesine sözlükten karşılık bulmak neden her zaman yeterli olmaz?",
-      "ipuclari": [
-        "Kelimenin cümlede hangi anlamda kullanıldığını düşün.",
-        "İndirildiği ortam ve başka açıklamalar da önemli olabilir."
-      ],
-      "cevap": "Kelime farklı bağlamlarda farklı anlamlar taşıyabilir. Cümle, iniş ortamı ve ilgili kaynaklar birlikte değerlendirilerek anlam açıklığa kavuşturulur."
+      ]
     }
+  ],
+  "ozet": [
+    "Vahiy, Allah’ın seçtiği peygambere insanlara bildirmesini istediği mesajı iletmesidir. Hz. Peygamber gelen ayetleri insanlara okumuş, yazdırmış ve yazılanları kontrol ettirmiştir. Ayetlerin ezberlenmesi de korunmasına katkı sağlamıştır.",
+    "Tefsir, açıklama ve kapalı olanı ortaya çıkarma anlamları taşır. Tefsir ilmi; ayetleri Arap dilinin özelliklerini ve indirildikleri ortamı dikkate alarak Kur’an ve sünnet çerçevesinde açıklar.",
+    "Tevil, bir ifadenin ilk akla gelen anlamı yerine, gerekçeye dayanarak taşıyabileceği anlamlardan birini tercih edip yorumlamaktır. Bu yorum, ayeti bağlamından koparmadan Kur’an ve sünnetle uyum içinde yapılır.",
+    "Tercüme, bir sözün başka bir dile aktarılmasıdır. Kur’an’ın anlamını başka bir dilde ifade eden çalışmalar için meal kavramı kullanılır. Meal, verilen anlamın asıl metni yaklaşık olarak karşılamasını ifade eder."
   ]
 }

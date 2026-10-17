@@ -27,13 +27,13 @@ def _gorsel_1():
     <!-- Sağ: Klasik Eserler -->
     <rect x="357" y="52" width="295" height="156" rx="10" fill="#fefce8" stroke="#ca8a04" stroke-width="1.8"/>
     <text x="504" y="72" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#a16207">KLASİK AKAİD LİTERATÜRÜ</text>
-    <text x="371" y="93" font-size="9.6" fill="#1e293b">• <tspan font-weight="bold">Ebu Hanife:</tspan> el-Fıkhü'l-Ekber</text>
-    <text x="371" y="110" font-size="9.6" fill="#1e293b">• <tspan font-weight="bold">Tahavi:</tspan> el-Akidetü't-Tahaviyye</text>
-    <text x="371" y="127" font-size="9.6" fill="#1e293b">• <tspan font-weight="bold">Hakim es-Semerkandi:</tspan> es-Sevadu'l-Azam</text>
-    <text x="371" y="144" font-size="9.6" fill="#1e293b">• <tspan font-weight="bold">Eşari:</tspan> el-İbane  • <tspan font-weight="bold">Nesefi:</tspan> Akaid</text>
-    <text x="371" y="161" font-size="9.6" fill="#1e293b">• <tspan font-weight="bold">Uşi:</tspan> el-Emali  • <tspan font-weight="bold">Birgivi:</tspan> el-Vasıyye</text>
-    <text x="371" y="178" font-size="9.6" fill="#1e293b">• <tspan font-weight="bold">Erzurumlu İbrahim Hakkı:</tspan> Akaid-i Din-i İslam</text>
-    <text x="371" y="195" font-size="9.6" fill="#1e293b">• <tspan font-weight="bold">Ömer Nasuhi Bilmen:</tspan> Mülahhas İlm-i Tevhit</text>
+    <text x="371" y="93" font-size="9.6" fill="#1e293b">• &lt;tspan font-weight="bold">Ebu Hanife:&lt;/tspan> el-Fıkhü'l-Ekber</text>
+    <text x="371" y="110" font-size="9.6" fill="#1e293b">• &lt;tspan font-weight="bold">Tahavi:&lt;/tspan> el-Akidetü't-Tahaviyye</text>
+    <text x="371" y="127" font-size="9.6" fill="#1e293b">• &lt;tspan font-weight="bold">Hakim es-Semerkandi:&lt;/tspan> es-Sevadu'l-Azam</text>
+    <text x="371" y="144" font-size="9.6" fill="#1e293b">• &lt;tspan font-weight="bold">Eşari:&lt;/tspan> el-İbane  • &lt;tspan font-weight="bold">Nesefi:&lt;/tspan> Akaid</text>
+    <text x="371" y="161" font-size="9.6" fill="#1e293b">• &lt;tspan font-weight="bold">Uşi:&lt;/tspan> el-Emali  • &lt;tspan font-weight="bold">Birgivi:&lt;/tspan> el-Vasıyye</text>
+    <text x="371" y="178" font-size="9.6" fill="#1e293b">• &lt;tspan font-weight="bold">Erzurumlu İbrahim Hakkı:&lt;/tspan> Akaid-i Din-i İslam</text>
+    <text x="371" y="195" font-size="9.6" fill="#1e293b">• &lt;tspan font-weight="bold">Ömer Nasuhi Bilmen:&lt;/tspan> Mülahhas İlm-i Tevhit</text>
     """
     return svg(w, h, ic, "Usulüselase Sınıflandırması ve Klasik Akaid Eserleri")
 
@@ -46,18 +46,18 @@ def _gorsel_2():
 
     <!-- 2 Sütun x 5 Satır -->
     <rect x="28" y="52" width="302" height="156" rx="10" fill="#ffffff" stroke="#22c55e" stroke-width="1.5"/>
-    <text x="42" y="74" font-size="10" fill="#1e293b">1. <tspan font-weight="bold" fill="#15803d">İman esaslarını konu edinir:</tspan> 6 temel esas.</text>
-    <text x="42" y="99" font-size="10" fill="#1e293b">2. <tspan font-weight="bold" fill="#15803d">Değişmez esaslara dayanır:</tspan> Zamana göre değişmez.</text>
-    <text x="42" y="124" font-size="10" fill="#1e293b">3. <tspan font-weight="bold" fill="#15803d">Tevhit ilkesini merkeze alır:</tspan> Allah'ın birliği.</text>
-    <text x="42" y="149" font-size="10" fill="#1e293b">4. <tspan font-weight="bold" fill="#15803d">Açık ve anlaşılırdır:</tspan> Sade ve net bir dil sunar.</text>
-    <text x="42" y="174" font-size="10" fill="#1e293b">5. <tspan font-weight="bold" fill="#15803d">Kaynağı Kur'an ve sünnettir:</tspan> Vahye dayanır.</text>
+    <text x="42" y="74" font-size="10" fill="#1e293b">1. &lt;tspan font-weight="bold" fill="#15803d">İman esaslarını konu edinir:&lt;/tspan> 6 temel esas.</text>
+    <text x="42" y="99" font-size="10" fill="#1e293b">2. &lt;tspan font-weight="bold" fill="#15803d">Değişmez esaslara dayanır:&lt;/tspan> Zamana göre değişmez.</text>
+    <text x="42" y="124" font-size="10" fill="#1e293b">3. &lt;tspan font-weight="bold" fill="#15803d">Tevhit ilkesini merkeze alır:&lt;/tspan> Allah'ın birliği.</text>
+    <text x="42" y="149" font-size="10" fill="#1e293b">4. &lt;tspan font-weight="bold" fill="#15803d">Açık ve anlaşılırdır:&lt;/tspan> Sade ve net bir dil sunar.</text>
+    <text x="42" y="174" font-size="10" fill="#1e293b">5. &lt;tspan font-weight="bold" fill="#15803d">Kaynağı Kur'an ve sünnettir:&lt;/tspan> Vahye dayanır.</text>
 
     <rect x="350" y="52" width="302" height="156" rx="10" fill="#ffffff" stroke="#22c55e" stroke-width="1.5"/>
-    <text x="364" y="74" font-size="10" fill="#1e293b">6. <tspan font-weight="bold" fill="#15803d">Bir bütündür:</tspan> Biri reddedilirse tamamı bozulur.</text>
-    <text x="364" y="99" font-size="10" fill="#1e293b">7. <tspan font-weight="bold" fill="#15803d">Kesinlik ifade eder:</tspan> Zan ve şüpheye yer yoktur.</text>
-    <text x="364" y="124" font-size="10" fill="#1e293b">8. <tspan font-weight="bold" fill="#15803d">Akıl ve fıtratla uyumludur:</tspan> Yaratılışa uygundur.</text>
-    <text x="364" y="149" font-size="10" fill="#1e293b">9. <tspan font-weight="bold" fill="#15803d">Delillendirilebilir:</tspan> Akli ve naklî kanıtları vardır.</text>
-    <text x="364" y="174" font-size="10" fill="#1e293b">10. <tspan font-weight="bold" fill="#15803d">Hayatı yönlendirir:</tspan> Ahlak ve davranışı biçimlendirir.</text>
+    <text x="364" y="74" font-size="10" fill="#1e293b">6. &lt;tspan font-weight="bold" fill="#15803d">Bir bütündür:&lt;/tspan> Biri reddedilirse tamamı bozulur.</text>
+    <text x="364" y="99" font-size="10" fill="#1e293b">7. &lt;tspan font-weight="bold" fill="#15803d">Kesinlik ifade eder:&lt;/tspan> Zan ve şüpheye yer yoktur.</text>
+    <text x="364" y="124" font-size="10" fill="#1e293b">8. &lt;tspan font-weight="bold" fill="#15803d">Akıl ve fıtratla uyumludur:&lt;/tspan> Yaratılışa uygundur.</text>
+    <text x="364" y="149" font-size="10" fill="#1e293b">9. &lt;tspan font-weight="bold" fill="#15803d">Delillendirilebilir:&lt;/tspan> Akli ve naklî kanıtları vardır.</text>
+    <text x="364" y="174" font-size="10" fill="#1e293b">10. &lt;tspan font-weight="bold" fill="#15803d">Hayatı yönlendirir:&lt;/tspan> Ahlak ve davranışı biçimlendirir.</text>
     """
     return svg(w, h, ic, "İslam Akaidinin On Temel Özelliği")
 
@@ -106,9 +106,9 @@ def _gorsel_4():
     <text x="504" y="75" text-anchor="middle" font-size="12" font-weight="bold" fill="#15803d">DİLLE İKRAR VE İKRAH DURUMU</text>
     <text x="371" y="98" font-size="10" fill="#1e293b">• İnanılan değerleri sözlü veya fiilî olarak</text>
     <text x="381" y="113" font-size="10" fill="#1e293b">dışa yansıtmaktır.</text>
-    <text x="371" y="134" font-size="10" fill="#1e293b">• Dünyada <tspan font-weight="bold" fill="#166534">Müslüman muamelesi görmek</tspan></text>
+    <text x="371" y="134" font-size="10" fill="#1e293b">• Dünyada &lt;tspan font-weight="bold" fill="#166534">Müslüman muamelesi görmek&lt;/tspan></text>
     <text x="381" y="149" font-size="10" fill="#1e293b">için gereklidir.</text>
-    <text x="371" y="170" font-size="9.5" fill="#475569">• <tspan font-weight="bold" fill="#15803d">Ammar bin Yasir (Nahl, 106):</tspan> Ölüm tehdidi</text>
+    <text x="371" y="170" font-size="9.5" fill="#475569">• &lt;tspan font-weight="bold" fill="#15803d">Ammar bin Yasir (Nahl, 106):&lt;/tspan> Ölüm tehdidi</text>
     <text x="381" y="184" font-size="9.5" fill="#475569">altında kalbi imanla dolu olan mazurdur.</text>
     """
     return svg(w, h, ic, "Kalple Tasdik, Dille İkrar ve Ammar bin Yasir Örneği")
@@ -123,18 +123,18 @@ def _gorsel_5():
     <!-- Sol: İman Çeşitleri -->
     <rect x="28" y="52" width="300" height="156" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="1.6"/>
     <text x="178" y="72" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#5b21b6">İMAN ÇEŞİTLERİ</text>
-    <text x="42" y="94" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#6d28d9">Taklidî İman:</tspan> Araştırmadan, çevreden</text>
+    <text x="42" y="94" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#6d28d9">Taklidî İman:&lt;/tspan> Araştırmadan, çevreden</text>
     <text x="52" y="108" font-size="9.5" fill="#475569">görüldüğü şekliyle yapılan iman.</text>
-    <text x="42" y="128" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#6d28d9">Tahkikî İman:</tspan> Akıl yürütme, araştırma ve</text>
+    <text x="42" y="128" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#6d28d9">Tahkikî İman:&lt;/tspan> Akıl yürütme, araştırma ve</text>
     <text x="52" y="142" font-size="9.5" fill="#475569">ilmi delillere dayalı bilinçli iman.</text>
-    <text x="42" y="162" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#6d28d9">İcmalî İman:</tspan> Esaslara topluca inanmak.</text>
-    <text x="42" y="182" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#6d28d9">Tafsilî İman:</tspan> Esaslara ayrıntılı inanmak.</text>
+    <text x="42" y="162" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#6d28d9">İcmalî İman:&lt;/tspan> Esaslara topluca inanmak.</text>
+    <text x="42" y="182" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#6d28d9">Tafsilî İman:&lt;/tspan> Esaslara ayrıntılı inanmak.</text>
 
     <!-- Sağ: Geçerlilik Şartları ve Amel -->
     <rect x="352" y="52" width="300" height="156" rx="10" fill="#ffffff" stroke="#0d9488" stroke-width="1.6"/>
     <text x="502" y="72" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#0f766e">GEÇERLİLİK ŞARTLARI VE İMAN-AMEL</text>
-    <text x="366" y="94" font-size="9.8" fill="#1e293b">1. Baskı olmadan <tspan font-weight="bold">özgür iradeyle</tspan> tercih edilmeli.</text>
-    <text x="366" y="112" font-size="9.8" fill="#1e293b">2. Azap / ölüm (<tspan font-weight="bold">yeis</tspan>) anına bırakılmamalı.</text>
+    <text x="366" y="94" font-size="9.8" fill="#1e293b">1. Baskı olmadan &lt;tspan font-weight="bold">özgür iradeyle&lt;/tspan> tercih edilmeli.</text>
+    <text x="366" y="112" font-size="9.8" fill="#1e293b">2. Azap / ölüm (&lt;tspan font-weight="bold">yeis&lt;/tspan>) anına bırakılmamalı.</text>
     <text x="366" y="130" font-size="9.8" fill="#1e293b">3. Hiçbir dinî hüküm inkâr / alay konusu edilmemeli.</text>
     <rect x="366" y="142" width="272" height="54" rx="7" fill="#ccfbf1"/>
     <text x="502" y="159" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#115e59">İman-Amel: Amel imanın cüzü değildir; büyük</text>

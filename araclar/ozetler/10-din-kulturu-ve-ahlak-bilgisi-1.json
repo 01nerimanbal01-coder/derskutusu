@@ -106,13 +106,13 @@
       "tur": "coktan",
       "soru": "Bir sergi taslağında dört kart var: K — Semerkant Rasathanesi / Astronomi; L — el-Kanun fi’t-Tıp / Tıp; M — Sahih-i Buhari / Mucitlik ve mühendislik; N — Cezeri / Hadis. Kişi, kurum ve eser adları korunacaktır. Hangi iki kartın alan etiketi yer değiştirirse dört kart da doğru olur?",
       "secenekler": [
-        "K ile L",
+        "M ile N",
         "K ile M",
         "K ile N",
         "L ile M",
-        "M ile N"
+        "K ile L"
       ],
-      "dogru": 4,
+      "dogru": 0,
       "aciklama": "Sahih-i Buhari hadis alanındaki bir eserdir; Cezeri mucit ve mühendis olarak tanıtılır. M ve N etiketleri değişmelidir. Semerkant–astronomi ve el-Kanun fi’t-Tıp–tıp eşliği zaten doğrudur."
     },
     {
@@ -142,16 +142,29 @@
       "aciklama": "Raporlarda gözlenen koşul farkı aydınlıktır. Bu farkın sonuçlara etkisi sınanmadan bir rapor hatalı ilan edilemez. Bilimsel bilgi test edilebilirliğe ve düzenli incelemeye dayanır. Verilenler ışığın kesin neden olduğunu göstermez; tarih, grup büyüklüğü ve ortalama alma da bu soruyu cevaplamaz."
     },
     {
+      "tur": "coktan",
+      "soru": "‘Kaynakların ilişkisi ve öznel bilgiler’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Kişisel kanaat, müstakil olarak herkesi bağlayan net bilgi değildir.",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 3,
+      "aciklama": "Kaynakların ilişkisi ve öznel bilgiler bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
       "tur": "dy",
-      "yonerge": "Bir öğrenci salı sabahı mavi kapaklı bir kitabı rafta görüyor. Kitabın önceki günlerdeki ödünç kayıtlarına bakmıyor. Aşağıdaki değerlendirmelerin doğruluğunu bu bilgilere göre belirleyiniz.",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
-          "metin": "Kitabın o sırada rafta bulunduğunu söylemesi gözlemine dayanır.",
+          "metin": "eserin o sırada rafta bulunduğunu söylemesi gözlemine dayanır.",
           "dogru": true,
           "aciklama": "Öğrenci o andaki konumu doğrudan görmüştür; iddiasını gözlediği zamanla sınırlar."
         },
         {
-          "metin": "Kitabın pazartesi günü de rafta bulunduğu bu gözlemle doğrulanmıştır.",
+          "metin": "eserin pazartesi günü de rafta bulunduğu bu gözlemle doğrulanmıştır.",
           "dogru": false,
           "aciklama": "Salı günkü gözlem pazartesi gününün durumunu göstermez. Önceki gün için ayrı bir kayıt veya güvenilir bilgi gerekir."
         }
@@ -159,7 +172,7 @@
     },
     {
       "tur": "eslestir",
-      "yonerge": "Araştırma sorularını doğrudan ilgili oldukları ilim dalıyla eşleştiriniz.",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
           "Kur’an’daki bir kavram, geçtiği ayetin anlamı içinde nasıl açıklanır?",
@@ -181,7 +194,7 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Örneklerin öne çıkardığı bilgi türünü boşluğa yerleştiriniz. Bir seçenek artacak.",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
           "metin": "Bir kişi kendi denemeleriyle öğrendiği bir işi her seferinde daha kolay yapıyor; sistemli araştırma yürütmüyor. Bu örnekte ___ bilgi öne çıkar.",
@@ -197,26 +210,18 @@
         }
       ],
       "fazla": [
-        "dinî"
+        "dinî",
+        "varsayım"
       ]
     },
     {
       "tur": "ogretici",
       "soru": "Bir kavram şemasında “Sadık haber → Haberiresul” ve “Selim akıl → Mütevatir haber” bağlantıları kurulmuş. Yanlış bağlantıyı nasıl düzeltirsiniz? Haber türünün neden o başlıkta yer alacağını açıklayınız.",
+      "cevap": "“Selim akıl → Mütevatir haber” bağlantısı kaldırılıp “Sadık haber → Mütevatir haber” kurulmalıdır. Mütevatir haber, birbirinden farklı çok sayıda kişinin aynı içerikle aktardığı ve hepsinin birlikte yalan söylemesi düşünülemeyen haberdir. Bu sınıflandırmada aklın alt türü değildir; haberiresul ile birlikte sadık haberin altında yer alır.",
       "ipuclari": [
         "Mütevatir haberde bilgi kişiye hangi yolla ulaşır?",
         "Şemada bir ana kaynakla onun alt türü arasında bağlantı kuruluyor."
-      ],
-      "cevap": "“Selim akıl → Mütevatir haber” bağlantısı kaldırılıp “Sadık haber → Mütevatir haber” kurulmalıdır. Mütevatir haber, birbirinden farklı çok sayıda kişinin aynı içerikle aktardığı ve hepsinin birlikte yalan söylemesi düşünülemeyen haberdir. Bu sınıflandırmada aklın alt türü değildir; haberiresul ile birlikte sadık haberin altında yer alır."
-    },
-    {
-      "tur": "ogretici",
-      "soru": "Bir öğrenci rüyasında gördüğü bahçeyi resmediyor. Arkadaşı, rüyanın öznel olmasını gerekçe göstererek bu resmin sanatsal bir anlatımda kullanılamayacağını söylüyor. Arkadaşının değerlendirmesinde hangi iki amaç birbirine karıştırılmıştır?",
-      "ipuclari": [
-        "Dış dünyadaki bir olayın gerçekleştiğini kanıtlamak ile duyguları anlatmak aynı amaç mıdır?",
-        "Sanatsal bilgi insanın daha çok hangi yönüne hitap eder ve öznel olması sanatsal anlatım için bir engel midir?"
-      ],
-      "cevap": "Bir olayın doğruluğunu kanıtlama ile duygu ve hayalleri sanat yoluyla ifade etme birbirine karıştırılmıştır. Rüya, bahçenin gerçek dünyada bulunduğuna kesin kanıt olmaz. Ancak öğrenci onu öznel bir sanatsal anlatımda kullanabilir; resim yapmak rüyayı herkes için kesin bilgi ilan etmek değildir."
+      ]
     }
   ],
   "ozet": [

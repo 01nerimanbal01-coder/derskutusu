@@ -1,228 +1,238 @@
 {
- "ad": "10-fizik-7",
- "sinif": 10,
- "ders": "fizik",
- "ders_adi": "Fizik",
- "hafta": 7,
- "tarih": "26-30 Ekim 2026",
- "yayin_tarihi": "2026-10-28",
- "unite": "KUVVET VE HAREKET",
- "konu": "Bir Boyutta Sabit İvmeli Hareket: Serbest Düşme Hareketi, Matematiksel Modeller ve Grafikler",
- "ciktilar": [
-  "Hava direncinin ihmal edildiği ortamda serbest düşme hareketini bir boyutta sabit ivmeli hareketin özel bir durumu (a = g ve v₀ = 0) olarak açıklar.",
-  "Serbest düşme hareketine ait hız (v = g·t), düşey yer değiştirme (h = ½g·t²) ve zamansız hız (v² = 2g·h) bağıntılarını kullanarak problem çözer.",
-  "Serbest düşme yapan bir cismin konum-zaman, hız-zaman ve ivme-zaman grafiklerini çizer ve yorumlar."
- ],
- "giris": "Geçen hafta yatay doğrultuda sabit ivmeli hareketin matematiksel modellerini ({koyu:v = v₀ + a·t}, {koyu:Δx = v₀·t + ½a·t²} ve {koyu:v² = v₀² + 2a·Δx}) ve hareket grafiklerini öğrenmiştik. Doğada sabit ivmeli hareketin en kusursuz ve evrensel örneği ise düşey doğrultuda gerçekleşen {koyu:serbest düşme hareketidir}! Hava direncinin (sürtünmenin) ihmal edildiği bir ortamda belirli bir yükseklikten ilk hızsız ({koyu:v₀ = 0}) bırakılan her cisim, kütlesi ne olursa olsun Dünya’nın merkezine doğru sabit {koyu:yer çekimi ivmesiyle (g)} hızlanır. Bu haftaki dersimizde Galileo’dan günümüze uzanan serbest düşme yasalarını ve pratik çözüm yöntemlerini inceleyeceğiz.",
- "ozet": [
-  "{koyu:Serbest Düşme ve Yer Çekimi İvmesi (g):} Hava direncinin ihmal edildiği ortamda belirli bir yükseklikten ilk hızsız ({koyu:v₀ = 0}) bırakılan cismin yalnızca yer çekimi kuvveti etkisinde yaptığı sabit ivmeli harekete {koyu:serbest düşme} denir. İvmesi {koyu:g ≈ 10 m/s²} (gerçekte ~9,8 m/s²) olup {koyu:cismin kütlesinden bağımsızdır}!",
-  "{koyu:Matematiksel Modeller:} Sabit ivmeli hareket denklemlerinde {koyu:v₀ = 0}, {koyu:a = g} ve {koyu:Δx = h} yazılırsa: 1) Hız denklemi: {koyu:v = g · t}, 2) Yükseklik (yol) denklemi: {koyu:h = ½ · g · t² = 5t²}, 3) Zamansız hız denklemi: {koyu:v² = 2 · g · h} elde edilir.",
-  "{koyu:Ardışık Saniyelerde Alınan Yollar (5 - 15 - 25 - 35 m):} {koyu:g = 10 m/s²} alındığında serbest düşen cisim 1. saniye içinde {koyu:5 m}, 2. saniye içinde {koyu:15 m}, 3. saniye içinde {koyu:25 m}, 4. saniye içinde {koyu:35 m} yol alır ({koyu:h - 3h - 5h - 7h} Galileo kuralı).",
-  "{koyu:Toplam Yükseklik (t Saniye Sonunda):} Cismin {koyu:t} saniye sonunda düştüğü toplam mesafe {koyu:1 s’de 5 m, 2 s’de 20 m, 3 s’de 45 m, 4 s’de 80 m, 5 s’de 125 m}’dir.",
-  "{koyu:Hareket Grafikleri:} Aşağı yön negatif (-) seçilirse; {koyu:a-t grafiği} {koyu:-g} değerinde sabit bir doğru, {koyu:v-t grafiği} orijinden başlayan ve eğimi {koyu:-g} olan bir doğru, {koyu:konum-zaman (y-t) grafiği} ise eğimi giderek artan bir paraboldür."
- ],
- "bolumler": [
-  {
-   "baslik": "1. Serbest Düşme Hareketinin Doğası ve Matematiksel Modelleri",
-   "metin": [
-    "Tarih boyunca Aristoteles’in etkisiyle ağır cisimlerin hafif cisimlerden daha hızlı düştüğüne inanılmıştı. Ancak {koyu:Galileo Galilei} yaptığı deneylerle, hava direncinin (sürtünmenin) ortadan kaldırıldığı bir ortamda aynı yükseklikten serbest bırakılan {koyu:demir bir gülle ile bir kuş tüyünün aynı anda ve aynı hızla yere çarptığını} kanıtladı! Çünkü Newton’un temel yasasına göre serbest düşen cisme yalnızca ağırlığı ({koyu:G = m · g}) etki eder: {koyu:F_net = m · a ⇒ m · g = m · a ⇒ a = g}. Görüldüğü gibi kütleler ({koyu:m}) sadeleşir ve cismin ivmesi kütlesine bağlı olmaksızın doğrudan {koyu:yer çekimi ivmesine (g)} eşit olur. Problem çözümlerinde işlem kolaylığı için genellikle {koyu:g = 10 m/s²} alınır; bunun anlamı serbest düşen bir cismin hızının her saniye {koyu:10 m/s} arttığıdır.",
-    "Bir boyutta sabit ivmeli hareket denklemlerinde ilk hız {koyu:v₀ = 0}, ivme {koyu:a = g} ve düşey yer değiştirme büyüklüğü {koyu:h} yerine yazılırsa serbest düşmenin üç temel matematiksel modeli elde edilir:\n{koyu:1) Hız-Zaman Denklemi:} {koyu:v = g · t} ({koyu:g = 10 m/s²} için {koyu:v = 10t}; örneğin 4. saniye sonunda hız {koyu:v = 40 m/s} olur).\n{koyu:2) Düşey Yol (Yükseklik) Denklemi:} {koyu:h = ½ · g · t²} ({koyu:g = 10 m/s²} için {koyu:h = 5t²}; örneğin 4 saniyede yere çarpan cisim {koyu:h = 5 · 4² = 80 m} yükseklikten bırakılmıştır). Ayrıca ortalama hızdan {koyu:h = (v / 2) · t} bağıntısı da çok pratiktir.\n{koyu:3) Zamansız Hız Denklemi:} {koyu:v² = 2 · g · h} (süre bilinmeden doğrudan düşme yüksekliği ile yere çarpma hızı arasındaki ilişkiyi verir)."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "Sınav Uyarısı: '3. Saniye Sonunda' İle '3. Saniye İçinde' Farkı!",
-    "metin": "• “Cisim 3 saniyede (3. saniye sonunda) toplam kaç metre düşer?” -> h = 5 · t² = 5 · 3² = 45 metre (5 + 15 + 25 = 45 m).\n• “Cisim YALNIZCA 3. saniye içinde (t = 2 s ile t = 3 s arasında) kaç metre düşer?” -> h₃ = 25 metre (1. sn: 5 m, 2. sn: 15 m, 3. sn: 25 m)!"
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 424\" role=\"img\" aria-label=\"Konu özet şeması\"><text x=\"400\" y=\"32\" font-family=\"sans-serif\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">BİR BOYUTTA SABİT İVMELİ HAREKET: SERBEST DÜŞME (a = g)</text><rect x=\"20\" y=\"56\" width=\"365\" height=\"290\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"80\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. SERBEST DÜŞME VE HAREKET DENKLEMLERİ</text><rect x=\"35\" y=\"100\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Serbest Düşme Nedir? (Hava Direnci İhmal)</text><text x=\"202\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">İlk hızsız (v₀ = 0) bırakılan cismin yer çekimi ivmesiyle (g) düşey hareketi.</text><rect x=\"35\" y=\"150\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Yer Çekimi İvmesi (g ≈ 10 m/s² veya 9,8 m/s²)</text><text x=\"202\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Hava sürtünmesi yoksa ivme KÜTLEDEN BAĞIMSIZDIR; her cisim aynı ivmeyle düşer!</text><rect x=\"35\" y=\"200\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Her Saniye Hız Değişimi: v = g · t</text><text x=\"202\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">t = 1 s -&gt; v = 10 m/s | t = 2 s -&gt; v = 20 m/s | t = 3 s -&gt; v = 30 m/s.</text><rect x=\"35\" y=\"250\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Alınan Düşey Yol (Yükseklik): h = ½ · g · t²</text><text x=\"202\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">t = 1 s -&gt; h = 5 m | t = 2 s -&gt; h = 20 m | t = 3 s -&gt; h = 45 m | t = 4 s -&gt; 80 m.</text><rect x=\"35\" y=\"300\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Zamansız Hız Denklemi: v² = 2 · g · h</text><text x=\"202\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Süre (t) verilmeden düşme yüksekliği (h) ile yere çarpma hızı (v) arasındaki bağ.</text><rect x=\"400\" y=\"56\" width=\"380\" height=\"290\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"80\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">2. PRATİK KURALLAR (h - 3h - 5h) VE GRAFİKLER</text><rect x=\"415\" y=\"100\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Ardışık Saniyelerde Alınan Yollar (g = 10 m/s²)</text><text x=\"590\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">1. sn: 5 m | 2. sn: 15 m | 3. sn: 25 m | 4. sn: 35 m | 5. sn: 45 m!</text><rect x=\"415\" y=\"150\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Galileo Tek Sayılar Kuralı: h, 3h, 5h, 7h...</text><text x=\"590\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Eşit zaman aralıklarında (t) alınan düşey yollar tek sayılarla orantılı artar.</text><rect x=\"415\" y=\"200\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">İvme-Zaman (a-t) Grafiği (Aşağı Yön - Seçilirse)</text><text x=\"590\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">İvme sabit ve a = -g = -10 m/s²; altında kalan alan hız değişimini (-g·t) verir.</text><rect x=\"415\" y=\"250\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Hız-Zaman (v-t) Grafiği</text><text x=\"590\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Orijinden başlayan doğrusal grafik; altında kalan üçgen alan yer değiştirmeyi verir.</text><rect x=\"415\" y=\"300\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Konum-Zaman (y-t) Grafiği (Parabolik)</text><text x=\"590\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Eğimi (hızı) her saniye artan parabolik eğri (h = ½gt²).</text><rect x=\"20\" y=\"360\" width=\"760\" height=\"48\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"400\" y=\"380\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">DİKKAT: Havası boşaltılmış (vakum) ortamda aynı yükseklikten bırakılan demir bilye ile kuş tüyü AYNI ANDA ve AYNI HIZLA yere çarpar!</text><text x=\"400\" y=\"398\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">“3. saniye sonunda toplam kaç m düştü?” -&gt; h = 5·3² = 45 m | “3. saniye İÇİNDE kaç m düştü?” -&gt; 25 m (5 - 15 - 25)!</text></svg>"
-  },
-  {
-   "baslik": "2. Pratik Tek Sayılar Kuralı (h - 3h - 5h) ve Serbest Düşme Grafikleri",
-   "metin": [
-    "İlk hızsız sabit ivmeli harekette hız-zaman ({koyu:v-t}) grafiğinin altında kalan üçgen alanlar ardışık eşit zaman dilimlerinde {koyu:h, 3h, 5h, 7h, 9h...} tek sayılarıyla orantılı olarak büyür. Serbest düşmede {koyu:g = 10 m/s²} olduğunda ilk 1 saniyede alınan yol {koyu:h = 5 m} olduğundan, ardışık her bir saniye içinde alınan yollar sırasıyla {koyu:5 m — 15 m — 25 m — 35 m — 45 m — 55 m...} şeklinde (her saniye 10 metre artarak!) ilerler. Bu kural çok hızlı problem çözmemizi sağlar: Örneğin bir cisim hareketinin {koyu:son saniyesi içinde 45 m} yol alarak yere çarpmışsa; {koyu:5, 15, 25, 35, 45} dizisinden bu cismin toplam {koyu:5 saniye} havada kaldığını, yere {koyu:50 m/s} hızla çarptığını ve toplam {koyu:5 · 5² = 125 m} yükseklikten bırakıldığını birkaç saniye içinde bulabiliriz!",
-    "Serbest düşme hareketinin grafiklerini çizerken koordinat sisteminde genellikle {koyu:yukarı yön pozitif (+), aşağı (hareket) yönü ise negatif (-)} seçilir (bazen büyüklük sorulduğunda aşağı yön + da alınabilir). Aşağı yön negatif (-) seçildiğinde:\n{koyu:1) İvme-Zaman (a-t) Grafiği:} Zaman ekseninin altında {koyu:a = -g = -10 m/s²} değerinde yatay sabit bir doğrudur. Altında kalan alan hız değişimini ({koyu:Δv = -g·t}) verir.\n{koyu:2) Hız-Zaman (v-t) Grafiği:} Orijinden (0, 0) başlayıp negatif yönde düzgün azalan ({koyu:-10, -20, -30 m/s...}) doğrusal bir grafiktir. Doğrunun eğimi yer çekimi ivmesini ({koyu:-g}), zaman ekseniyle arasında kalan üçgenin alanı ise düşey yer değiştirmeyi ({koyu:Δy = -h}) verir.\n{koyu:3) Konum-Zaman (y-t) Grafiği:} Cisim negatif yönde hızlandığı için eğimi (dikliği) zamanla artan parabolik bir eğridir ('genç K' eğrisi)."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Hızlı Tablo: g = 10 m/s² İçin Saniye Saniye Serbest Düşme",
-    "metin": "• t = 1 s  ->  Hız v = 10 m/s  |  O saniyede: 5 m   |  Toplam h = 5 m\n• t = 2 s  ->  Hız v = 20 m/s  |  O saniyede: 15 m  |  Toplam h = 20 m\n• t = 3 s  ->  Hız v = 30 m/s  |  O saniyede: 25 m  |  Toplam h = 45 m\n• t = 4 s  ->  Hız v = 40 m/s  |  O saniyede: 35 m  |  Toplam h = 80 m\n• t = 5 s  ->  Hız v = 50 m/s  |  O saniyede: 45 m  |  Toplam h = 125 m"
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Hava direncinin ihmal edildiği bir ortamda yerden 80 metre yükseklikteki bir kuleden serbest bırakılan taşın; a) Yere kaç saniyede çarpacağını, b) Yere çarpma hızının büyüklüğünü, c) Hareketinin son saniyesi içinde kaç metre yol aldığını bulunuz. (g = 10 m/s²)",
-   "cevap": "a) h = ½ · g · t² = 5t² bağıntısından: 80 = 5 · t² ⇒ t² = 16 ⇒ t = 4 saniye.\nb) Yere çarpma hızı: v = g · t = 10 · 4 = 40 m/s.\nc) 4 saniye süren harekette ardışık saniyelerde alınan yollar 5 m, 15 m, 25 m ve 35 m’dir; dolayısıyla son (4.) saniye içinde 35 metre yol almıştır."
-  },
-  {
-   "soru": "Havasız ortamda m kütleli K cismi h₁ yüksekliğinden, 3m kütleli L cismi ise h₂ yüksekliğinden aynı anda serbest bırakılıyor. K cismi yere 2t sürede, L cismi ise 3t sürede çarptığına göre h₁ / h₂ oranı ve yere çarpma hızları oranı v_K / v_L kaçtır?",
-   "cevap": "Serbest düşmede ivme (g) kütleden (m ve 3m’den) BAĞIMSIZDIR! Her iki cisim de aynı g ivmesiyle hızlanır:\n• Yükseklikler zamanın karesiyle orantılıdır (h = ½gt²): h₁ / h₂ = (2t)² / (3t)² = 4 / 9.\n• Yere çarpma hızları zamanla doğru orantılıdır (v = g·t): v_K / v_L = (g · 2t) / (g · 3t) = 2 / 3."
-  },
-  {
-   "soru": "Serbest düşmeye bırakılan bir cisim, hareketinin son saniyesi içinde 55 metre yol alarak yere çarpmaktadır. Buna göre cisim kaç saniye havada kalmıştır ve kaç metre yükseklikten bırakılmıştır? (g = 10 m/s²)",
-   "cevap": "Ardışık saniyelerde alınan yollar (2n - 1)·5 m kuralına göre 5, 15, 25, 35, 45, 55 m şeklindedir. 55 metre 6. adım olduğu için (5 · 11 = 55; 2t - 1 = 11 ⇒ t = 6) cisim toplam t = 6 saniye havada kalmıştır. Bırakıldığı toplam yükseklik: h = 5 · t² = 5 · 6² = 5 · 36 = 180 metredir."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "Hava direncinin ihmal edildiği bir ortamda belirli bir yükseklikten serbest bırakılan bir cisim yere 5 saniyede çarpmaktadır. Buna göre cismin bırakıldığı yükseklik (h) ve yere çarpma hızı (v) aşağıdakilerin hangisinde doğru verilmiştir? (g = 10 m/s²)",
-   "secenekler": [
-    "h = 80 m, v = 40 m/s",
-    "h = 100 m, v = 50 m/s",
-    "h = 125 m, v = 50 m/s",
-    "h = 125 m, v = 25 m/s",
-    "h = 250 m, v = 50 m/s"
-   ],
-   "dogru": 2,
-   "aciklama": "t = 5 s için h = ½ · g · t² = 5 · 5² = 125 metre ve yere çarpma hızı v = g · t = 10 · 5 = 50 m/s bulunur."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Havasız bir tüp içinde aynı yükseklikten aynı anda serbest bırakılan 100 gramlık demir bilye ile 2 gramlık kuş tüyü için aşağıdaki ifadelerden hangisi doğrudur?",
-   "secenekler": [
-    "Demir bilye yere kuş tüyünden 50 kat daha erken çarpar.",
-    "Demir bilyenin ivmesi kuş tüyünün ivmesinden büyüktür.",
-    "Her ikisi de aynı g yer çekimi ivmesiyle hızlanır ve aynı anda eşit hızla yere çarpar.",
-    "Kuş tüyü sabit hızla, demir bilye ise hızlanarak düşer.",
-    "Kuş tüyünün yere çarpma hızı demir bilyeden büyüktür."
-   ],
-   "dogru": 2,
-   "aciklama": "Havasız ortamda serbest düşme ivmesi (g) cismin kütlesinden bağımsızdır; bu yüzden her iki cisim aynı anda ve aynı hızla yere ulaşır."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Hava sürtünmesinin önemsiz olduğu ortamda serbest düşmeye bırakılan bir cisim, hareketinin yalnızca 4. saniyesi içinde (t = 3 s ile t = 4 s arasında) kaç metre düşer? (g = 10 m/s²)",
-   "secenekler": [
-    "20 m",
-    "25 m",
-    "35 m",
-    "45 m",
-    "80 m"
-   ],
-   "dogru": 2,
-   "aciklama": "Serbest düşen cisim ardışık saniyelerde sırasıyla 1. sn: 5 m, 2. sn: 15 m, 3. sn: 25 m ve 4. sn: 35 m yol alır (veya h₄ - h₃ = 80 - 45 = 35 m)."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Yerden h kadar yükseklikten serbest bırakılan bir cisim yere v büyüklüğünde hızla çarpmaktadır. Aynı cisim 4h yükseklikten serbest bırakılırsa yere kaç v büyüklüğünde hızla çarpar? (Hava direnci ihmal edilmektedir.)",
-   "secenekler": [
-    "v",
-    "2v",
-    "4v",
-    "8v",
-    "16v"
-   ],
-   "dogru": 1,
-   "aciklama": "Zamansız hız denklemine (v² = 2g·h) göre hızın karesi yükseklikle doğru orantılıdır. Yükseklik 4 katına (4h) çıkarsa hız {kok:4} = 2 katına (2v) çıkar."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Serbest düşmeye bırakılan bir cisim, düştüğü toplam yüksekliğin son 45 metresini 1 saniyede alarak yere çarpmaktadır. Buna göre cisim yere kaç m/s hızla çarpmıştır? (g = 10 m/s²)",
-   "secenekler": [
-    "30",
-    "40",
-    "45",
-    "50",
-    "60"
-   ],
-   "dogru": 3,
-   "aciklama": "Ardışık saniyelerde alınan yollar 5, 15, 25, 35, 45 m olduğundan son saniyede 45 m alan cisim 5 saniye düşmüştür. Yere çarpma hızı v = g·t = 10 · 5 = 50 m/s olur."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Serbest düşme hareketi ile ilgili aşağıdaki ifadelerin Doğru (D) mu yoksa Yanlış (Y) mı olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "10-fizik-7",
+  "sinif": 10,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 7,
+  "tarih": "26-30 Ekim 2026",
+  "yayin_tarihi": "2026-10-28",
+  "unite": "KUVVET VE HAREKET",
+  "konu": "Bir Boyutta Sabit İvmeli Hareket: Serbest Düşme Hareketi, Matematiksel Modeller ve Grafikler",
+  "ciktilar": [
+    "Hava direncinin ihmal edildiği ortamda serbest düşme hareketini bir boyutta sabit ivmeli hareketin özel bir durumu (a = g ve v₀ = 0) olarak açıklar.",
+    "Serbest düşme hareketine ait hız (v = g·t), düşey yer değiştirme (h = ½g·t²) ve zamansız hız (v² = 2g·h) bağıntılarını kullanarak problem çözer.",
+    "Serbest düşme yapan bir cismin konum-zaman, hız-zaman ve ivme-zaman grafiklerini çizer ve yorumlar."
+  ],
+  "giris": "Geçen hafta yatay doğrultuda sabit ivmeli hareketin matematiksel modellerini ({koyu:v = v₀ + a·t}, {koyu:Δx = v₀·t + ½a·t²} ve {koyu:v² = v₀² + 2a·Δx}) ve hareket grafiklerini öğrenmiştik. Doğada sabit ivmeli hareketin en kusursuz ve evrensel örneği ise düşey doğrultuda gerçekleşen {koyu:serbest düşme hareketidir}! Hava direncinin (sürtünmenin) ihmal edildiği bir ortamda belirli bir yükseklikten ilk hızsız ({koyu:v₀ = 0}) bırakılan her cisim, kütlesi ne olursa olsun Dünya’nın merkezine doğru sabit {koyu:yer çekimi ivmesiyle (g)} hızlanır. Bu haftaki dersimizde Galileo’dan günümüze uzanan serbest düşme yasalarını ve pratik çözüm yöntemlerini inceleyeceğiz.",
+  "ozet": [
+    "{koyu:Serbest Düşme ve Yer Çekimi İvmesi (g):} Hava direncinin ihmal edildiği ortamda belirli bir yükseklikten ilk hızsız ({koyu:v₀ = 0}) bırakılan cismin yalnızca yer çekimi kuvveti etkisinde yaptığı sabit ivmeli harekete {koyu:serbest düşme} denir. İvmesi {koyu:g ≈ 10 m/s²} (gerçekte ~9,8 m/s²) olup {koyu:cismin kütlesinden bağımsızdır}!",
+    "{koyu:Matematiksel Modeller:} Sabit ivmeli hareket denklemlerinde {koyu:v₀ = 0}, {koyu:a = g} ve {koyu:Δx = h} yazılırsa: 1) Hız denklemi: {koyu:v = g · t}, 2) Yükseklik (yol) denklemi: {koyu:h = ½ · g · t² = 5t²}, 3) Zamansız hız denklemi: {koyu:v² = 2 · g · h} elde edilir.",
+    "{koyu:Ardışık Saniyelerde Alınan Yollar (5 - 15 - 25 - 35 m):} {koyu:g = 10 m/s²} alındığında serbest düşen cisim 1. saniye içinde {koyu:5 m}, 2. saniye içinde {koyu:15 m}, 3. saniye içinde {koyu:25 m}, 4. saniye içinde {koyu:35 m} yol alır ({koyu:h - 3h - 5h - 7h} Galileo kuralı).",
+    "{koyu:Toplam Yükseklik (t Saniye Sonunda):} Cismin {koyu:t} saniye sonunda düştüğü toplam mesafe {koyu:1 s’de 5 m, 2 s’de 20 m, 3 s’de 45 m, 4 s’de 80 m, 5 s’de 125 m}’dir.",
+    "{koyu:Hareket Grafikleri:} Aşağı yön negatif (-) seçilirse; {koyu:a-t grafiği} {koyu:-g} değerinde sabit bir doğru, {koyu:v-t grafiği} orijinden başlayan ve eğimi {koyu:-g} olan bir doğru, {koyu:konum-zaman (y-t) grafiği} ise eğimi giderek artan bir paraboldür."
+  ],
+  "bolumler": [
     {
-     "metin": "Hava direncinin ihmal edildiği ortamda serbest düşen bir cismin ivmesi hareket boyunca sabittir ve yer çekimi ivmesine (g) eşittir.",
-     "dogru": true,
-     "aciklama": "Doğru; serbest düşme bir boyutta sabit ivmeli harekettir."
+      "baslik": "Serbest Düşme Hareketinin Doğası",
+      "metin": [
+        "Tarih boyunca Aristoteles’in etkisiyle ağır cisimlerin hafif cisimlerden daha hızlı düştüğüne inanılmıştı. Ancak {koyu:Galileo Galilei} yaptığı deneylerle, hava direncinin (sürtünmenin) ortadan kaldırıldığı bir ortamda aynı yükseklikten serbest bırakılan {koyu:demir bir gülle ile bir kuş tüyünün aynı anda ve aynı hızla yere çarptığını} kanıtladı! Çünkü Newton’un temel yasasına göre serbest düşen cisme yalnızca ağırlığı ({koyu:G = m · g}) etki eder: {koyu:F_net = m · a ⇒ m · g = m · a ⇒ a = g}. Görüldüğü gibi kütleler ({koyu:m}) sadeleşir ve cismin ivmesi kütlesine bağlı olmaksızın doğrudan {koyu:yer çekimi ivmesine (g)} eşit olur. Problem çözümlerinde işlem kolaylığı için genellikle {koyu:g = 10 m/s²} alınır; bunun anlamı serbest düşen bir cismin hızının her saniye {koyu:10 m/s} arttığıdır."
+      ],
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 424\" role=\"img\" aria-label=\"Konu özet şeması\"><text x=\"400\" y=\"32\" font-family=\"sans-serif\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">BİR BOYUTTA SABİT İVMELİ HAREKET: SERBEST DÜŞME (a = g)</text><rect x=\"20\" y=\"56\" width=\"365\" height=\"290\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"80\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. SERBEST DÜŞME VE HAREKET DENKLEMLERİ</text><rect x=\"35\" y=\"100\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Serbest Düşme Nedir? (Hava Direnci İhmal)</text><text x=\"202\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">İlk hızsız (v₀ = 0) bırakılan cismin yer çekimi ivmesiyle (g) düşey hareketi.</text><rect x=\"35\" y=\"150\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Yer Çekimi İvmesi (g ≈ 10 m/s² veya 9,8 m/s²)</text><text x=\"202\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Hava sürtünmesi yoksa ivme KÜTLEDEN BAĞIMSIZDIR; her cisim aynı ivmeyle düşer!</text><rect x=\"35\" y=\"200\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Her Saniye Hız Değişimi: v = g · t</text><text x=\"202\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">t = 1 s -&gt; v = 10 m/s | t = 2 s -&gt; v = 20 m/s | t = 3 s -&gt; v = 30 m/s.</text><rect x=\"35\" y=\"250\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Alınan Düşey Yol (Yükseklik): h = ½ · g · t²</text><text x=\"202\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">t = 1 s -&gt; h = 5 m | t = 2 s -&gt; h = 20 m | t = 3 s -&gt; h = 45 m | t = 4 s -&gt; 80 m.</text><rect x=\"35\" y=\"300\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Zamansız Hız Denklemi: v² = 2 · g · h</text><text x=\"202\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Süre (t) verilmeden düşme yüksekliği (h) ile yere çarpma hızı (v) arasındaki bağ.</text><rect x=\"400\" y=\"56\" width=\"380\" height=\"290\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"80\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">2. PRATİK KURALLAR (h - 3h - 5h) VE GRAFİKLER</text><rect x=\"415\" y=\"100\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Ardışık Saniyelerde Alınan Yollar (g = 10 m/s²)</text><text x=\"590\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">1. sn: 5 m | 2. sn: 15 m | 3. sn: 25 m | 4. sn: 35 m | 5. sn: 45 m!</text><rect x=\"415\" y=\"150\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Galileo Tek Sayılar Kuralı: h, 3h, 5h, 7h...</text><text x=\"590\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Eşit zaman aralıklarında (t) alınan düşey yollar tek sayılarla orantılı artar.</text><rect x=\"415\" y=\"200\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">İvme-Zaman (a-t) Grafiği (Aşağı Yön - Seçilirse)</text><text x=\"590\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">İvme sabit ve a = -g = -10 m/s²; altında kalan alan hız değişimini (-g·t) verir.</text><rect x=\"415\" y=\"250\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Hız-Zaman (v-t) Grafiği</text><text x=\"590\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Orijinden başlayan doğrusal grafik; altında kalan üçgen alan yer değiştirmeyi verir.</text><rect x=\"415\" y=\"300\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Konum-Zaman (y-t) Grafiği (Parabolik)</text><text x=\"590\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Eğimi (hızı) her saniye artan parabolik eğri (h = ½gt²).</text><rect x=\"20\" y=\"360\" width=\"760\" height=\"48\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"400\" y=\"380\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">DİKKAT: Havası boşaltılmış (vakum) ortamda aynı yükseklikten bırakılan demir bilye ile kuş tüyü AYNI ANDA ve AYNI HIZLA yere çarpar!</text><text x=\"400\" y=\"398\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">“3. saniye sonunda toplam kaç m düştü?” -&gt; h = 5·3² = 45 m | “3. saniye İÇİNDE kaç m düştü?” -&gt; 25 m (5 - 15 - 25)!</text></svg>"
     },
     {
-     "metin": "Serbest düşen bir cismin hızı zamanın karesiyle (t²) doğru orantılı olarak artar.",
-     "dogru": false,
-     "aciklama": "Yanlış; hız zamanla doğru orantılı (v = g·t), alınan yol ise zamanın karesiyle (h = ½gt²) doğru orantılıdır."
+      "baslik": "Matematiksel Modelleri",
+      "metin": [
+        "Bir boyutta sabit ivmeli hareket denklemlerinde ilk hız {koyu:v₀ = 0}, ivme {koyu:a = g} ve düşey yer değiştirme büyüklüğü {koyu:h} yerine yazılırsa serbest düşmenin üç temel matematiksel modeli elde edilir:\n{koyu:1) Hız-Zaman Denklemi:} {koyu:v = g · t} ({koyu:g = 10 m/s²} için {koyu:v = 10t}; örneğin 4. saniye sonunda hız {koyu:v = 40 m/s} olur).\n{koyu:2) Düşey Yol (Yükseklik) Denklemi:} {koyu:h = ½ · g · t²} ({koyu:g = 10 m/s²} için {koyu:h = 5t²}; örneğin 4 saniyede yere çarpan cisim {koyu:h = 5 · 4² = 80 m} yükseklikten bırakılmıştır). Ayrıca ortalama hızdan {koyu:h = (v / 2) · t} bağıntısı da çok pratiktir.\n{koyu:3) Zamansız Hız Denklemi:} {koyu:v² = 2 · g · h} (süre bilinmeden doğrudan düşme yüksekliği ile yere çarpma hızı arasındaki ilişkiyi verir)."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Sınav Uyarısı: '3. Saniye Sonunda' İle '3. Saniye İçinde' Farkı!",
+        "metin": "“Cisim 3 saniyede (3. saniye sonunda) toplam kaç metre düşer?” -> h = 5 · t² = 5 · 3² = 45 metre (5 + 15 + 25 = 45 m).\n• “Cisim YALNIZCA 3. saniye içinde (t = 2 s ile t = 3 s arasında) kaç metre düşer?” -> h₃ = 25 metre (1. sn: 5 m, 2. sn: 15 m, 3. sn: 25 m)!"
+      }
     },
     {
-     "metin": "g = 10 m/s² olan ortamda serbest bırakılan cisim 2 saniye sonunda toplam 20 metre düşer.",
-     "dogru": true,
-     "aciklama": "Doğru; h = 5 · 2² = 20 metredir."
+      "baslik": "Pratik Tek Sayılar Kuralı (h - 3h - 5h)",
+      "metin": [
+        "İlk hızsız sabit ivmeli harekette hız-zaman ({koyu:v-t}) grafiğinin altında kalan üçgen alanlar ardışık eşit zaman dilimlerinde {koyu:h, 3h, 5h, 7h, 9h...} tek sayılarıyla orantılı olarak büyür. Serbest düşmede {koyu:g = 10 m/s²} olduğunda ilk 1 saniyede alınan yol {koyu:h = 5 m} olduğundan, ardışık her bir saniye içinde alınan yollar sırasıyla {koyu:5 m — 15 m — 25 m — 35 m — 45 m — 55 m...} şeklinde (her saniye 10 metre artarak!) ilerler. Bu kural çok hızlı problem çözmemizi sağlar: Örneğin bir cisim hareketinin {koyu:son saniyesi içinde 45 m} yol alarak yere çarpmışsa; {koyu:5, 15, 25, 35, 45} dizisinden bu cismin toplam {koyu:5 saniye} havada kaldığını, yere {koyu:50 m/s} hızla çarptığını ve toplam {koyu:5 · 5² = 125 m} yükseklikten bırakıldığını birkaç saniye içinde bulabiliriz!"
+      ],
+      "gorsel": "<svg viewBox=\"0 0 460 214\" role=\"img\" aria-label=\"Bir Boyutta Sabit İvmeli Hareket: Serbest kavram özeti şeması\"><rect x=\"90\" y=\"12\" width=\"280\" height=\"38\" rx=\"19\" class=\"g-mf\"/><text x=\"230\" y=\"36\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"800\" class=\"g-b\">Bir Boyutta Sabit İvmeli Hareket: Serbest</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ma\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"116\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">1. Bölüm</text><text x=\"116\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Serbest Düşme Hareketinin Doğası</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ta\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"344\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">2. Bölüm</text><text x=\"344\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Matematiksel Modelleri</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ya\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"116\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-yf\">3. Bölüm</text><text x=\"116\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Pratik Tek Sayılar Kuralı (h - 3…</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-oa\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"344\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-of\">4. Bölüm</text><text x=\"344\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Serbest Düşme Grafikleri</text></svg>"
     },
     {
-     "metin": "Serbest düşme hareketinde hız-zaman (v-t) grafiğinin altında kalan alan cismin ivmesini verir.",
-     "dogru": false,
-     "aciklama": "Yanlış; v-t grafiğinin altında kalan alan yer değiştirmeyi (düşülen yüksekliği), eğimi ise ivmeyi verir."
-    },
-    {
-     "metin": "Eşit zaman aralıklarında serbest düşen bir cismin aldığı düşey yollar h, 3h, 5h, 7h şeklinde tek sayılarla orantılıdır.",
-     "dogru": true,
-     "aciklama": "Doğru; ilk hızsız sabit ivmeli harekette Galileo tek sayılar kuralı geçerlidir."
+      "baslik": "Serbest Düşme Grafikleri",
+      "metin": [
+        "Serbest düşme hareketinin grafiklerini çizerken koordinat sisteminde genellikle {koyu:yukarı yön pozitif (+), aşağı (hareket) yönü ise negatif (-)} seçilir (bazen büyüklük sorulduğunda aşağı yön + da alınabilir). Aşağı yön negatif (-) seçildiğinde:\n{koyu:1) İvme-Zaman (a-t) Grafiği:} Zaman ekseninin altında {koyu:a = -g = -10 m/s²} değerinde yatay sabit bir doğrudur. Altında kalan alan hız değişimini ({koyu:Δv = -g·t}) verir.\n{koyu:2) Hız-Zaman (v-t) Grafiği:} Orijinden (0, 0) başlayıp negatif yönde düzgün azalan ({koyu:-10, -20, -30 m/s...}) doğrusal bir grafiktir. Doğrunun eğimi yer çekimi ivmesini ({koyu:-g}), zaman ekseniyle arasında kalan üçgenin alanı ise düşey yer değiştirmeyi ({koyu:Δy = -h}) verir.\n{koyu:3) Konum-Zaman (y-t) Grafiği:} Cisim negatif yönde hızlandığı için eğimi (dikliği) zamanla artan parabolik bir eğridir ('genç K' eğrisi)."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Hızlı Tablo: g = 10 m/s² İçin Saniye Saniye Serbest Düşme",
+        "metin": "t = 1 s  ->  Hız v = 10 m/s  |  O saniyede: 5 m   |  Toplam h = 5 m\n• t = 2 s  ->  Hız v = 20 m/s  |  O saniyede: 15 m  |  Toplam h = 20 m\n• t = 3 s  ->  Hız v = 30 m/s  |  O saniyede: 25 m  |  Toplam h = 45 m\n• t = 4 s  ->  Hız v = 40 m/s  |  O saniyede: 35 m  |  Toplam h = 80 m\n• t = 5 s  ->  Hız v = 50 m/s  |  O saniyede: 45 m  |  Toplam h = 125 m"
+      }
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "soru": "g = 10 m/s² olan havasız bir ortamda serbest düşmeye bırakılan bir cismin aşağıdaki büyüklüklerini doğru değerleriyle eşleştiriniz.",
-   "ciftler": [
-    [
-     "1. saniye sonundaki hızı ve düştüğü toplam yükseklik",
-     "v = 10 m/s  —  h = 5 m"
-    ],
-    [
-     "2. saniye sonundaki hızı ve düştüğü toplam yükseklik",
-     "v = 20 m/s  —  h = 20 m"
-    ],
-    [
-     "3. saniye sonundaki hızı ve düştüğü toplam yükseklik",
-     "v = 30 m/s  —  h = 45 m"
-    ],
-    [
-     "Yalnızca 3. saniye içinde (2 s ile 3 s arasında) aldığı yol",
-     "Δh = 25 m"
-    ],
-    [
-     "180 metre yükseklikten bırakıldığında yere ulaşma süresi",
-     "t = 6 saniye (180 = 5t²)"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun fizik kavramlarıyla tamamlayınız.",
-   "cumleler": [
+  ],
+  "ornekler": [
     {
-     "metin": "Havasız ortamda ilk hızsız (v₀ = 0) bırakılan cisimlerin yalnızca yer çekimi etkisiyle yaptığı harekete ___ düşme denir.",
-     "cevap": "serbest"
+      "soru": "Hava direncinin ihmal edildiği bir ortamda yerden 80 metre yükseklikteki bir kuleden serbest bırakılan taşın; a) Yere kaç saniyede çarpacağını, b) Yere çarpma hızının büyüklüğünü, c) Hareketinin son saniyesi içinde kaç metre yol aldığını bulunuz. (g = 10 m/s²)",
+      "cevap": "a) h = ½ · g · t² = 5t² bağıntısından: 80 = 5 · t² ⇒ t² = 16 ⇒ t = 4 saniye.\nb) Yere çarpma hızı: v = g · t = 10 · 4 = 40 m/s.\nc) 4 saniye süren harekette ardışık saniyelerde alınan yollar 5 m, 15 m, 25 m ve 35 m’dir; dolayısıyla son (4.) saniye içinde 35 metre yol almıştır."
     },
     {
-     "metin": "Serbest düşme hareketinde cismin ivmesi cismin ___ bağımsızdır.",
-     "cevap": "kütlesinden"
+      "soru": "Havasız ortamda m kütleli K cismi h₁ yüksekliğinden, 3m kütleli L cismi ise h₂ yüksekliğinden aynı anda serbest bırakılıyor. K cismi yere 2t sürede, L cismi ise 3t sürede çarptığına göre h₁ / h₂ oranı ve yere çarpma hızları oranı v_K / v_L kaçtır?",
+      "cevap": "Serbest düşmede ivme (g) kütleden (m ve 3m’den) BAĞIMSIZDIR! Her iki cisim de aynı g ivmesiyle hızlanır:\n• Yükseklikler zamanın karesiyle orantılıdır (h = ½gt²): h₁ / h₂ = (2t)² / (3t)² = 4 / 9.\n• Yere çarpma hızları zamanla doğru orantılıdır (v = g·t): v_K / v_L = (g · 2t) / (g · 3t) = 2 / 3."
     },
     {
-     "metin": "Serbest düşen bir cismin hız-zaman (v-t) grafiğinin eğimi ___ ivmesini (g) verir.",
-     "cevap": "yer çekimi"
+      "soru": "Serbest düşmeye bırakılan bir cisim, hareketinin son saniyesi içinde 55 metre yol alarak yere çarpmaktadır. Buna göre cisim kaç saniye havada kalmıştır ve kaç metre yükseklikten bırakılmıştır? (g = 10 m/s²)",
+      "cevap": "Ardışık saniyelerde alınan yollar (2n - 1)·5 m kuralına göre 5, 15, 25, 35, 45, 55 m şeklindedir. 55 metre 6. adım olduğu için (5 · 11 = 55; 2t - 1 = 11 ⇒ t = 6) cisim toplam t = 6 saniye havada kalmıştır. Bırakıldığı toplam yükseklik: h = 5 · t² = 5 · 6² = 5 · 36 = 180 metredir."
     },
     {
-     "metin": "Zamansız hız denklemine göre serbest düşen cismin yere çarpma hızının karesi v² = ___ bağıntısıyla bulunur.",
-     "cevap": "2gh"
+      "soru": "Serbest düşmeye bırakılan bir cisim, düştüğü toplam yüksekliğin son 45 metresini 1 saniyede alarak yere çarpmaktadır. Buna göre cisim yere kaç m/s hızla çarpmıştır? (g = 10 m/s²)",
+      "cevap": "Doğru yanıt: 50. Ardışık saniyelerde alınan yollar 5, 15, 25, 35, 45 m olduğundan son saniyede 45 m alan cisim 5 saniye düşmüştür. Yere çarpma hızı v = g·t = 10 · 5 = 50 m/s olur."
     },
     {
-     "metin": "Serbest düşme yapan cismin konum-zaman grafiği doğrusal değil, eğimi giderek artan bir ___ eğrisidir.",
-     "cevap": "parabol"
+      "soru": "‘Serbest Düşme Hareketinin Doğası’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
+      "cevap": "Tarih boyunca Aristoteles’in etkisiyle ağır cisimlerin hafif cisimlerden daha hızlı düştüğüne inanılmıştı. Ancak {koyu:Galileo Galilei} yaptığı deneylerle, hava direncinin (sürtünmenin) ortadan kaldırıldığı bir ortamda aynı yükseklikten serbest bırakılan {koyu:demir bir gülle ile bir kuş tüyünün aynı anda ve aynı hızla yere çarptığını} kanıtladı! Çünkü Newton’un temel yasasına göre serbest düşen cisme yalnızca ağırlığı ({koyu:G = m · g}) etki eder: {koyu:F_net = m · a ⇒ m · g = m · a ⇒ a = g}. Görüldüğü gibi kütleler ({koyu:m}) sadeleşir ve cismin ivmesi kütlesine bağlı olmaksızın doğrudan {koyu:yer çekimi ivmesine (g)} eşit olur. Problem çözümlerinde işlem kolaylığı için genellikle {koyu:g = 10 m/s²} alınır; bunun anlamı serbest düşen bir cismin hızının her saniye {koyu:10 m/s} arttığıdır."
+    },
+    {
+      "soru": "‘Matematiksel Modelleri’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
+      "cevap": "Bir boyutta sabit ivmeli hareket denklemlerinde ilk hız {koyu:v₀ = 0}, ivme {koyu:a = g} ve düşey yer değiştirme büyüklüğü {koyu:h} yerine yazılırsa serbest düşmenin üç temel matematiksel modeli elde edilir:\n{koyu:1) Hız-Zaman Denklemi:} {koyu:v = g · t} ({koyu:g = 10 m/s²} için {koyu:v = 10t}; örneğin 4. saniye sonunda hız {koyu:v = 40 m/s} olur).\n{koyu:2) Düşey Yol (Yükseklik) Denklemi:} {koyu:h = ½ · g · t²} ({koyu:g = 10 m/s²} için {koyu:h = 5t²}; örneğin 4 saniyede yere çarpan cisim {koyu:h = 5 · 4² = 80 m} yükseklikten bırakılmıştır). Ayrıca ortalama hızdan {koyu:h = (v / 2) · t} bağıntısı da çok pratiktir.\n{koyu:3) Zamansız Hız Denklemi:} {koyu:v² = 2 · g · h} (süre bilinmeden doğrudan düşme yüksekliği ile yere çarpma hızı arasındaki ilişkiyi verir)."
     }
-   ],
-   "fazla": [
-    "sabit hızlı",
-    "kütleyle"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Derin bir kuyunun ağzından serbest bırakılan bir taşın, kuyunun tabanındaki suya çarpma sesi 3 saniye sonra duyulmaktadır. Sesin hızı çok büyük olduğu için sesin yukarı çıkma süresi ihmal edildiğine göre; a) Kuyunun derinliğini (metre), b) Taşın suya çarpma hızını ve ortalama hızını hesaplayınız. (g = 10 m/s²)",
-   "ipuclari": [
-    "1. Kuyunun derinliği için h = ½ · g · t² = 5t² formülünde t = 3 s yazınız.",
-    "2. Suya çarpma hızı için v = g · t ve ortalama hız için v_ort = (v₀ + v) / 2 bağıntısını kullanınız."
-   ],
-   "cevap": "a) Kuyunun derinliği: h = ½ · g · t² = ½ · 10 · 3² = 5 · 9 = 45 metredir (veya 5 + 15 + 25 = 45 m).\nb) Taşın suya çarpma hızı: v = g · t = 10 · 3 = 30 m/s’dir. İlk hızı v₀ = 0 olduğu için hareket boyunca ortalama hızı: v_ort = (0 + 30) / 2 = 15 m/s’dir (Sağlama: h = v_ort · t = 15 · 3 = 45 m)."
-  }
- ]
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Hava direncinin ihmal edildiği bir ortamda belirli bir yükseklikten serbest bırakılan bir cisim yere 5 saniyede çarpmaktadır. Buna göre cismin bırakıldığı yükseklik (h) ve yere çarpma hızı (v) aşağıdakilerin hangisinde doğru verilmiştir? (g = 10 m/s²)",
+      "secenekler": [
+        "h = 125 m, v = 50 m/s",
+        "h = 100 m, v = 50 m/s",
+        "h = 80 m, v = 40 m/s",
+        "h = 125 m, v = 25 m/s",
+        "h = 250 m, v = 50 m/s"
+      ],
+      "dogru": 0,
+      "aciklama": "t = 5 s için h = ½ · g · t² = 5 · 5² = 125 metre ve yere çarpma hızı v = g · t = 10 · 5 = 50 m/s bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Havasız bir tüp içinde aynı yükseklikten aynı anda serbest bırakılan 100 gramlık demir bilye ile 2 gramlık kuş tüyü için aşağıdaki ifadelerden hangisi doğrudur?",
+      "secenekler": [
+        "Demir bilye yere kuş tüyünden 50 kat daha erken çarpar (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)",
+        "Her ikisi de aynı g yer çekimi ivmesiyle hızlanır ve aynı anda eşit hızla yere çarpar.",
+        "Demir bilyenin ivmesi kuş tüyünün ivmesinden büyüktür.",
+        "Kuş tüyü sabit hızla, demir bilye ise hızlanarak düşer.",
+        "Kuş tüyünün yere çarpma hızı demir bilyeden büyüktür."
+      ],
+      "dogru": 1,
+      "aciklama": "Havasız ortamda serbest düşme ivmesi (g) cismin kütlesinden bağımsızdır; bu yüzden her iki cisim aynı anda ve aynı hızla yere ulaşır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Hava sürtünmesinin önemsiz olduğu ortamda serbest düşmeye bırakılan bir cisim, hareketinin yalnızca 4. saniyesi içinde (t = 3 s ile t = 4 s arasında) kaç metre düşer? (g = 10 m/s²)",
+      "secenekler": [
+        "20 m",
+        "25 m",
+        "35 m",
+        "45 m",
+        "80 m"
+      ],
+      "dogru": 2,
+      "aciklama": "Serbest düşen cisim ardışık saniyelerde sırasıyla 1. sn: 5 m, 2. sn: 15 m, 3. sn: 25 m ve 4. sn: 35 m yol alır (veya h₄ - h₃ = 80 - 45 = 35 m)."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Yerden h kadar yükseklikten serbest bırakılan bir cisim yere v büyüklüğünde hızla çarpmaktadır. Aynı cisim 4h yükseklikten serbest bırakılırsa yere kaç v büyüklüğünde hızla çarpar? (Hava direnci ihmal edilmektedir.)",
+      "secenekler": [
+        "v",
+        "8v",
+        "4v",
+        "2v",
+        "16v"
+      ],
+      "dogru": 3,
+      "aciklama": "Zamansız hız denklemine (v² = 2g·h) göre hızın karesi yükseklikle doğru orantılıdır. Yükseklik 4 katına (4h) çıkarsa hız {kok:4} = 2 katına (2v) çıkar."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Hava direncinin ihmal edildiği ortamda serbest düşen bir cismin ivmesi hareket boyunca sabittir ve yer çekimi ivmesine (g) eşittir.",
+          "dogru": true,
+          "aciklama": "Doğru; serbest düşme bir boyutta sabit ivmeli harekettir."
+        },
+        {
+          "metin": "Serbest düşen bir cismin hızı zamanın karesiyle (t²) doğru orantılı olarak artar.",
+          "dogru": false,
+          "aciklama": "Yanlış; hız zamanla doğru orantılı (v = g·t), alınan yol ise zamanın karesiyle (h = ½gt²) doğru orantılıdır."
+        },
+        {
+          "metin": "g = 10 m/s² olan ortamda serbest bırakılan cisim 2 saniye sonunda toplam 20 metre düşer.",
+          "dogru": true,
+          "aciklama": "Doğru; h = 5 · 2² = 20 metredir."
+        },
+        {
+          "metin": "Serbest düşme hareketinde hız-zaman (v-t) grafiğinin altında kalan alan cismin ivmesini verir.",
+          "dogru": false,
+          "aciklama": "Yanlış; v-t grafiğinin altında kalan alan yer değiştirmeyi (düşülen yüksekliği), eğimi ise ivmeyi verir."
+        },
+        {
+          "metin": "Eşit zaman aralıklarında serbest düşen bir cismin aldığı düşey yollar h, 3h, 5h, 7h şeklinde tek sayılarla orantılıdır.",
+          "dogru": true,
+          "aciklama": "Doğru; ilk hızsız sabit ivmeli harekette Galileo tek sayılar kuralı geçerlidir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "g = 10 m/s² olan havasız bir ortamda serbest düşmeye bırakılan bir cismin aşağıdaki büyüklüklerini doğru değerleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "1. saniye sonundaki hızı ve düştüğü toplam yükseklik",
+          "v = 10 m/s  —  h = 5 m"
+        ],
+        [
+          "2. saniye sonundaki hızı ve düştüğü toplam yükseklik",
+          "v = 20 m/s  —  h = 20 m"
+        ],
+        [
+          "3. saniye sonundaki hızı ve düştüğü toplam yükseklik",
+          "v = 30 m/s  —  h = 45 m"
+        ],
+        [
+          "Yalnızca 3. saniye içinde (2 s ile 3 s arasında) aldığı yol",
+          "Δh = 25 m"
+        ],
+        [
+          "180 metre yükseklikten bırakıldığında yere ulaşma süresi",
+          "t = 6 saniye (180 = 5t²)"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Havasız ortamda ilk hızsız (v₀ = 0) bırakılan cisimlerin yalnızca yer çekimi etkisiyle yaptığı harekete ___ düşme denir.",
+          "cevap": "serbest"
+        },
+        {
+          "metin": "Serbest düşme hareketinde cismin ivmesi cismin ___ bağımsızdır.",
+          "cevap": "kütlesinden"
+        },
+        {
+          "metin": "Serbest düşen bir cismin hız-zaman (v-t) grafiğinin eğimi ___ ivmesini (g) verir.",
+          "cevap": "yer çekimi"
+        },
+        {
+          "metin": "Zamansız hız denklemine göre serbest düşen cismin yere çarpma hızının karesi v² = ___ bağıntısıyla bulunur.",
+          "cevap": "2gh"
+        },
+        {
+          "metin": "Serbest düşme yapan cismin konum-zaman grafiği doğrusal değil, eğimi giderek artan bir ___ eğrisidir.",
+          "cevap": "parabol"
+        }
+      ],
+      "fazla": [
+        "sabit hızlı",
+        "kütleyle"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Derin bir kuyunun ağzından serbest bırakılan bir taşın, kuyunun tabanındaki suya çarpma sesi 3 saniye sonra duyulmaktadır. Sesin hızı çok büyük olduğu için sesin yukarı çıkma süresi ihmal edildiğine göre; a) Kuyunun derinliğini (metre), b) Taşın suya çarpma hızını ve ortalama hızını hesaplayınız. (g = 10 m/s²)",
+      "cevap": "a) Kuyunun derinliği: h = ½ · g · t² = ½ · 10 · 3² = 5 · 9 = 45 metredir (veya 5 + 15 + 25 = 45 m).\nb) Taşın suya çarpma hızı: v = g · t = 10 · 3 = 30 m/s’dir. İlk hızı v₀ = 0 olduğu için hareket boyunca ortalama hızı: v_ort = (0 + 30) / 2 = 15 m/s’dir (Sağlama: h = v_ort · t = 15 · 3 = 45 m).",
+      "ipuclari": [
+        "1. Kuyunun derinliği için h = ½ · g · t² = 5t² formülünde t = 3 s yazınız.",
+        "2. Suya çarpma hızı için v = g · t ve ortalama hız için v_ort = (v₀ + v) / 2 bağıntısını kullanınız."
+      ]
+    }
+  ]
 }

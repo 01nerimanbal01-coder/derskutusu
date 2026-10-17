@@ -32,7 +32,7 @@ def ciz():
         (150, 'İleri ve Geri Aktivasyon Enerjisi', 'E_ai = PE(Aktifleşmiş Kompleks) - PE(Girenler)  |  E_ag = PE(AK) - PE(Ürünler).'),
         (200, 'Tepkime Entalpisi (ΔH) ile İlişkisi', 'ΔH = E_ai - E_ag = PE(Ürünler) - PE(Girenler) bağıntısı her zaman geçerlidir!'),
         (250, 'Endotermik Tepkimede (ΔH > 0) Karşılaştırma', 'E_ai > E_ag ve PE(Ürünler) > PE(Girenler). Düşük sıcaklıkta girenler daha kararlıdır.'),
-        (300, 'Ekzotermik Tepkimede (ΔH < 0) Karşılaştırma', 'E_ai < E_ag ve PE(Ürünler) < PE(Girenler). E_a büyüdükçe tepkime hızı YAVAŞLAR!'),
+        (300, 'Ekzotermik Tepkimede (ΔH &lt; 0) Karşılaştırma', 'E_ai &lt; E_ag ve PE(Ürünler) < PE(Girenler). E_a büyüdükçe tepkime hızı YAVAŞLAR!'),
     ]
     for y, b, a in sag:
         ic.append(P.kutu(415, y, 350, 42, '#ffffff', '#d97706'))

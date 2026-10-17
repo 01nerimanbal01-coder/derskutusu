@@ -13,7 +13,7 @@
     "T.D.5.13. Dinlediğinin/izlediğinin anahtar kelimelerini belirlemeye yönelik çözümleme yapabilme",
     "T.D.5.17. Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme"
   ],
-  "giris": "Bu hafta dinlemeye hazırlanmayı, tahminlerini gerekçelendirmeyi ve açık bilgileri bulmayı öğreneceksin. Çalışmalar, MEB kitabındaki “Oyun Durdu!” dinleme etkinliğinin becerilerini destekleyen özgün örneklerden oluşur.",
+  "giris": "Bu hafta dinlemeye hazırlanmayı, tahminlerini gerekçelendirmeyi ve açık bilgileri bulmayı öğreneceksin. Çalışmalar, öğretim programı “Oyun Durdu!” dinleme etkinliğinin becerilerini destekleyen özgün örneklerden oluşur.",
   "bolumler": [
     {
       "baslik": "Dinlemeden önce ipuçlarını kullan",
@@ -105,12 +105,12 @@
       "tur": "coktan",
       "soru": "“Sessiz Oyun” başlığından yapılan hangi tahmin gerekçelidir?",
       "secenekler": [
-        "Oyun cuma günü biter.",
         "Oyunda konuşmadan anlaşmak gerekebilir.",
-        "Oyunda kesinlikle beş kişi vardır.",
+        "Oyun cuma günü biter.",
+        "Oyunda bütünüyle beş kişi vardır.",
         "Oyun yalnız kışın oynanır."
       ],
-      "dogru": 1,
+      "dogru": 0,
       "aciklama": "Sessiz sözü konuşmadan oynama tahminini destekler."
     },
     {
@@ -138,8 +138,20 @@
       "aciklama": "Herkes adına konuşmak, temsil etmeyi açıklar."
     },
     {
+      "tur": "coktan",
+      "soru": "‘Anahtar kelimeleri seç’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Anahtar kelime, metnin bütününü hatırlatıyor mu?"
+      ],
+      "dogru": 3,
+      "aciklama": "Anahtar kelimeleri seç bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
       "tur": "dy",
-      "yonerge": "Yargıları değerlendiriniz.",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
           "metin": "Başlık bir tahmini destekleyebilir.",
@@ -160,7 +172,7 @@
     },
     {
       "tur": "eslestir",
-      "yonerge": "İlişkili ifadeleri eşleştiriniz.",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
           "Başlamak",
@@ -178,7 +190,7 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Boşlukları tamamlayınız. Bir sözcük artacak.",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
           "metin": "Tahminin dayanağını açıklamak, ___ belirtmektir.",
@@ -194,7 +206,8 @@
         }
       ],
       "fazla": [
-        "başlık"
+        "başlık",
+        "varsayım"
       ]
     },
     {
@@ -204,14 +217,6 @@
       "ipuclari": [
         "Cümlede açıkça söylenen eylemi bul.",
         "Sonuç bilgisi verilmiş mi?"
-      ]
-    },
-    {
-      "tur": "ogretici",
-      "soru": "Bir dinleme sırasında bilmediğin sözcük yüzünden sonraki cümleleri kaçırdın. Daha işlevli bir yol öner.",
-      "cevap": "Sözcüğü kısaca not edip dinlemeyi sürdürürüm. Sonra bağlamı yeniden inceler, anlam tahminimi sözlükle denetlerim.",
-      "ipuclari": [
-        "Akışı izlemek ve kısa not almak birlikte yürütülebilir."
       ]
     }
   ],

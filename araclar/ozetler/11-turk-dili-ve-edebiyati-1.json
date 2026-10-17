@@ -40,7 +40,7 @@
       "metin": [
         "Giriş, oyuna başlangıç bölümüdür. Muhavere, Karagöz ile Hacivat’ın söyleşmesinin ve söz oyunlarının öne çıktığı bölümdür. Fasıl, asıl olayın geliştiği bölümdür. Bitiş, kısa bir konuşmayla oyunun tamamlandığı bölümdür.",
         "Kişilerin dili ve mizah incelenecekse rol paylaşarak sesli okuma uygun olabilir. Vurgu ve tonlama, bir sözün nasıl anlaşıldığını belirginleştirir.",
-        "Ders kitabındaki Yazıcı metnine geçmeden önce başlık ve metin düzeni incelenir; daha sonra konuşmalar üzerinden tahminler kontrol edilir. Bilinmeyen kelimeler önce bağlamdan tahmin edilir, ardından sözlükten doğrulanır."
+        "İncelenen Yazıcı metnine geçmeden önce başlık ve metin düzeni incelenir; daha sonra konuşmalar üzerinden tahminler kontrol edilir. Bilinmeyen kelimeler önce bağlamdan tahmin edilir, ardından sözlükten doğrulanır."
       ],
       "kutu": {
         "tur": "hatirla",
@@ -53,7 +53,7 @@
       "metin": [
         "Mektup, belirli bir kişiye veya kuruma yöneltilen yazılı iletişim türüdür. Hitap, tarih, yer, metnin bölümleri ve imza gibi unsurlar okura ipucu verir.",
         "Hitap edilen kişiyle yakınlık ve yazılış amacı dilin samimi ya da resmî olmasını etkiler. Bu nedenle bir mektubun üslubu değerlendirilirken muhatabı da göz önünde bulundurulur.",
-        "Önce sessiz okuyarak genel içerik anlaşılabilir; ardından yazılış amacını ve bunu destekleyen cümleleri belirlemek için not alarak yeniden okunabilir. Ders kitabındaki Âli’ye Mektuplar çalışması da amaç ve strateji belirlemeyi öne çıkarır."
+        "Önce sessiz okuyarak genel içerik anlaşılabilir; ardından yazılış amacını ve bunu destekleyen cümleleri belirlemek için not alarak yeniden okunabilir. İncelenen Âli’ye Mektuplar çalışması da amaç ve strateji belirlemeyi öne çıkarır."
       ],
       "kutu": {
         "tur": "bilgi",
@@ -117,20 +117,20 @@
       "tur": "coktan",
       "soru": "Okur, bir dilekçeyi hangi işlemin istendiğini öğrenmek için okuyor. Hangi bilgiye öncelikle odaklanmalıdır?",
       "secenekler": [
-        "Yazının kaç satır olduğuna",
-        "Kelimelerin alfabetik sırasına",
         "Talep ve onu açıklayan gerekçeye",
+        "Kelimelerin alfabetik sırasına",
+        "Yazının kaç satır olduğuna",
         "Bütün sözcüklerin kökenine",
         "Metnin sesli okunma süresine"
       ],
-      "dogru": 2,
+      "dogru": 0,
       "aciklama": "Okuma amacı istenen işlemi anlamaktır; talep ve gerekçe bu amaca hizmet eder."
     },
     {
       "tur": "coktan",
       "soru": "Bir öğrenci mektubun hitabını inceleyerek muhatabıyla ilgili tahminde bulunuyor. Sonraki adım için hangisi uygundur?",
       "secenekler": [
-        "Tahmini kesin bilgi kabul etmek",
+        "Tahmini net bilgi kabul etmek",
         "Metni okuyup tahmini kanıtlarla karşılaştırmak",
         "Hitap dışındaki bölümleri gereksiz saymak",
         "Bütün mektupları aynı muhataba yazılmış saymak",
@@ -145,16 +145,29 @@
       "secenekler": [
         "Giriş",
         "Muhavere",
-        "Hitap",
+        "Fasıl",
         "Sonuç",
-        "Fasıl"
+        "Hitap"
       ],
-      "dogru": 4,
+      "dogru": 2,
       "aciklama": "Asıl olayın geliştiği ve diğer tiplerin katıldığı bölüm fasıldır."
     },
     {
+      "tur": "coktan",
+      "soru": "‘Mektupta muhatap ve amaç’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Mektubu yalnız biçiminden değil, muhatabı, amacı ve kullandığı dil birlikte değerlendirilerek tanıyınız.",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 3,
+      "aciklama": "Mektupta muhatap ve amaç bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
       "tur": "dy",
-      "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
           "metin": "Okuma amacı, metinde hangi ayrıntılara odaklanılacağını etkiler.",
@@ -172,7 +185,7 @@
           "aciklama": "İletişim durumu üslubun belirlenmesinde etkilidir."
         },
         {
-          "metin": "Parantez içindeki hareket açıklamaları her zaman kişinin söylediği repliklerdir.",
+          "metin": "Parantez içindeki hareket açıklamaları daima kişinin söylediği repliklerdir.",
           "dogru": false,
           "aciklama": "Bu ifadeler çoğunlukla hareket ve söyleyişle ilgili açıklama görevindedir."
         }
@@ -180,7 +193,7 @@
     },
     {
       "tur": "eslestir",
-      "yonerge": "İlişkili kavram ve açıklamaları eşleştiriniz.",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
           "Metnin genel düzenini hızlıca inceleme",
@@ -202,7 +215,7 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
           "metin": "Karagöz oyununda asıl olay ___ bölümünde gelişir.",
@@ -218,26 +231,24 @@
         }
       ],
       "fazla": [
-        "imza"
+        "imza",
+        "varsayım"
       ]
     },
     {
       "tur": "ogretici",
       "soru": "Bir oyundaki söz şakasını anlayamayan okur, yalnız tek repliği tekrar tekrar okumak yerine ne yapabilir?",
+      "cevap": "Önceki ve sonraki replikleri birlikte okuyabilir, bağlamı inceleyebilir ve gerekiyorsa sesli okuyarak söyleyiş farkını değerlendirebilir. Bilinmeyen kelimeyi sözlükten kontrol edebilir.",
       "ipuclari": [
         "Şakanın önceki konuşmayla ilişkisini düşününüz.",
         "Kelimenin farklı anlamları veya ses benzerliği olabilir mi?"
-      ],
-      "cevap": "Önceki ve sonraki replikleri birlikte okuyabilir, bağlamı inceleyebilir ve gerekiyorsa sesli okuyarak söyleyiş farkını değerlendirebilir. Bilinmeyen kelimeyi sözlükten kontrol edebilir."
-    },
-    {
-      "tur": "ogretici",
-      "soru": "Bir metin için seçtiğiniz yöntem okuma amacınıza ulaşmanızı sağlamıyorsa nasıl davranmalısınız?",
-      "ipuclari": [
-        "Yöntem amaç için bir araçtır.",
-        "Eksik anlaşılan bölümü farklı bir biçimde incelemek mümkün mü?"
-      ],
-      "cevap": "Amacı yeniden gözden geçirip uygun başka bir yöntem seçebilir; not alarak, sessiz veya sesli biçimde ilgili bölümü yeniden okuyabilirsiniz. Sonucu metindeki kanıtlarla kontrol edersiniz."
+      ]
     }
+  ],
+  "ozet": [
+    "Okuma amacı, metinde neyi aradığımızı belirler. Bir oyundaki kişilerin konuşma biçimlerini incelemek, mektubun yazılış nedenini bulmak veya dilekçedeki talebi anlamak farklı amaçlardır.",
+    "Karagöz, tasvirlerin ışıkla bir perdeye yansıtıldığı geleneksel gölge oyunudur. Oyun metninde konuşan kişilerin adları, karşılıklı konuşmalar ve hareketleri açıklayan parantez içi ifadeler görülebilir.",
+    "Giriş, oyuna başlangıç bölümüdür. Muhavere, Karagöz ile Hacivat’ın söyleşmesinin ve söz oyunlarının öne çıktığı bölümdür. Fasıl, asıl olayın geliştiği bölümdür. Bitiş, kısa bir konuşmayla oyunun tamamlandığı bölümdür.",
+    "Mektup, belirli bir kişiye veya kuruma yöneltilen yazılı iletişim türüdür. Hitap, tarih, yer, metnin bölümleri ve imza gibi unsurlar okura ipucu verir."
   ]
 }

@@ -1,0 +1,269 @@
+{
+  "sinif": 12,
+  "hafta": 7,
+  "ders": "fizik",
+  "unite": "Çemberde Dönme ve Kütle Çekim (1. Ünite: Çembersel Hareket)",
+  "konu": "Kütle Çekim Potansiyel Enerjisi, Kurtulma ve Bağlanma Enerjisi (12.1.4.3)",
+  "tarih": "2026-10-26",
+  "ciktilar": [
+    "Kütle çekim potansiyel enerjisini kütle merkezleri arasındaki uzaklıkla ilişkilendirerek açıklar.",
+    "Bir gök cisminin yüzeyinden kurtulma enerjisini ve kurtulma hızının cismin kütlesinden bağımsız olduğunu yorumlar.",
+    "Yörüngede dolanan bir uydunun toplam mekanik enerjisini ve bağlanma enerjisini hesaplar."
+  ],
+  "giris": "Gezegenlerin etrafında dolanan uyduların yörüngede kalması veya uzay araçlarının Dünya'nın çekim alanından kurtularak derin uzaya gönderilmesi, kütle çekim kuvvetinin oluşturduğu enerji bağıntılarıyla açıklanır. Gök cisimlerinin kütle merkezleri arasındaki uzaklığa bağlı olarak değişen kütle çekim potansiyel enerjisini, kurtulma enerjisi ve kurtulma hızını, ayrıca yörüngedeki uyduların bağlanma enerjisini bu bölümde ayrıntılı olarak inceleyeceğiz.",
+  "bolumler": [
+    {
+      "baslik": "Kütle Çekim Potansiyel Enerjisi",
+      "metin": [
+        "Aralarında {koyu:d} kadar uzaklık bulunan {koyu:M} ve {koyu:m} kütleli iki gök cisminin birbirine uyguladığı kütle çekim kuvvetinden kaynaklanan depolanmış enerjiye {koyu:kütle çekim potansiyel enerjisi} denir.",
+        "{koyu:Matematiksel Bağıntı:} Kütle merkezleri arasındaki uzaklığı {koyu:d} olan {koyu:M} ve {koyu:m} kütleli iki cismin kütle çekim potansiyel enerjisi {koyu:Eₚ = -G · (M · m) / d} bağıntısıyla bulunur. Burada {koyu:G} evrensel çekim sabiti olup enerjinin SI birimi {koyu:Joule (J)}'dür.",
+        "{koyu:Negatif İşaretin Anlamı ve Sonsuzda Sıfır Olması:} Kütle çekim potansiyel enerjisi sonsuz uzaklıkta sıfır kabul edilir ({koyu:d → ∞ iken Eₚ = 0}). Cisim gezegene yaklaştıkça {koyu:d} uzaklığı azalır; formülün başındaki eksi ({koyu:-}) işaretinden dolayı {koyu:Eₚ kütle çekim potansiyel enerjisi azalır}. Cisim gezegenden uzaklaştıkça {koyu:d} artar ve {koyu:Eₚ artarak sıfıra yaklaşır}.",
+        "{koyu:Yörünge Karşılaştırma Örneği:} Aynı gezegen ({koyu:M}) etrafında {koyu:3d} yarıçaplı yörüngede dolanan {koyu:9m} kütleli {koyu:X} uydusunun potansiyel enerjisi {koyu:Eₚ(X) = -G·M·(9m)/(3d) = -3·G·Mm/d} iken, {koyu:4d} yarıçaplı yörüngede dolanan {koyu:12m} kütleli {koyu:Y} uydusunun potansiyel enerjisi {koyu:Eₚ(Y) = -G·M·(12m)/(4d) = -3·G·Mm/d} olup birbirine eşittir ({koyu:Eₚ(X) = Eₚ(Y)})."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#0f172a\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#f8fafc\">KÜTLE ÇEKİM POTANSİYEL ENERJİSİ: Eₚ = -G · (M · m) / d</text>\n\n  <!-- Gezegen M -->\n  <circle cx=\"115\" cy=\"135\" r=\"48\" fill=\"#1d4ed8\" stroke=\"#60a5fa\" stroke-width=\"3\"/>\n  <text x=\"115\" y=\"132\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\">Gezegen</text>\n  <text x=\"115\" y=\"150\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#93c5fd\">(Kütle M)</text>\n  <circle cx=\"115\" cy=\"135\" r=\"3\" fill=\"#ffffff\"/>\n\n  <!-- Uydu m -->\n  <circle cx=\"345\" cy=\"135\" r=\"22\" fill=\"#f59e0b\" stroke=\"#fde047\" stroke-width=\"2.5\"/>\n  <text x=\"345\" y=\"139\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">m</text>\n  <circle cx=\"345\" cy=\"135\" r=\"2.5\" fill=\"#0f172a\"/>\n\n  <!-- Uzaklık d çizgisi -->\n  <line x1=\"115\" y1=\"205\" x2=\"345\" y2=\"205\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n  <line x1=\"115\" y1=\"135\" x2=\"115\" y2=\"212\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\"/>\n  <line x1=\"345\" y1=\"135\" x2=\"345\" y2=\"212\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\"/>\n  <text x=\"230\" y=\"198\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#38bdf8\">Kütle merkezleri uzaklığı (d)</text>\n  <text x=\"230\" y=\"232\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#e2e8f0\">d arttıkça (uzaklaştıkça) Eₚ ARTAR, d → ∞ iken Eₚ = 0 olur.</text>\n\n  <!-- Sağ Kutu: Örnek Karşılaştırma -->\n  <rect x=\"415\" y=\"48\" width=\"265\" height=\"190\" rx=\"10\" fill=\"#1e293b\" stroke=\"#475569\" stroke-width=\"2\"/>\n  <text x=\"547\" y=\"72\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#fbbf24\">ÖRNEK YÖRÜNGE KARŞILAŞTIRMASI</text>\n  <line x1=\"430\" y1=\"82\" x2=\"665\" y2=\"82\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <text x=\"432\" y=\"106\" font-size=\"11\" fill=\"#93c5fd\">• X Uydusu: kütle = 9m, yarıçap = 3d</text>\n  <text x=\"442\" y=\"124\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">Eₚ(X) = -G·M·(9m)/(3d) = -3·G·Mm/d</text>\n  <text x=\"432\" y=\"152\" font-size=\"11\" fill=\"#6ee7b7\">• Y Uydusu: kütle = 12m, yarıçap = 4d</text>\n  <text x=\"442\" y=\"170\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">Eₚ(Y) = -G·M·(12m)/(4d) = -3·G·Mm/d</text>\n  <rect x=\"440\" y=\"186\" width=\"215\" height=\"34\" rx=\"6\" fill=\"#065f46\" stroke=\"#10b981\"/>\n  <text x=\"547\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#ecfdf5\">Sonuç: Eₚ(X) = Eₚ(Y)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Kütle çekim potansiyel enerjisi skaler bir büyüklüktür; başındaki eksi (-) işareti yön belirtmez, cismin gezegenin çekim alanına bağlı olduğunu ve enerjinin sıfırdan küçük olduğunu gösterir!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Gezegen yüzeyindeki (d = R) bir cisim daha yüksek bir yörüngeye çıkarıldığında d arttığı için kütle çekim potansiyel enerjisi (Eₚ) artar."
+        }
+      ]
+    },
+    {
+      "baslik": "Kurtulma Enerjisi ve Kurtulma Hızı",
+      "metin": [
+        "Bir gezegenin yüzeyinde duran bir cismi veya uzay aracını gezegenin kütle çekim alanından tamamen (sonsuza) çıkarmak için cisme dışarıdan enerji verilmesi gerekir.",
+        "{koyu:Kurtulma Enerjisi:} Gezegen yüzeyinde ({koyu:R} yarıçapında) duran {koyu:m} kütleli cismi gezegenin çekim alanından kurtarmak için cisme verilmesi gereken minimum kinetik enerjiye {koyu:kurtulma enerjisi} denir ve {koyu:E(kurtulma) = -Eₚ = +G · (M · m) / R} bağıntısıyla hesaplanır. Kurtulma enerjisi verilen bir cismin sonsuza ulaştığında hızı ve toplam enerjisi sıfır olur ({koyu:Eₜ = 0}).",
+        "{koyu:Kurtulma Hızı ve Kütleden Bağımsızlık:} Cisme yüzeyde verilen kinetik enerji {koyu:(1/2)·m·v² = G·M·m/R} eşitliğinden kurtulma hızı çekildiğinde {koyu:m} kütleleri sadeleşir. Bu nedenle {koyu:kurtulma hızı cismin kendi kütlesine (m) bağlı değildir}; yalnızca gök cisminin kütlesine ({koyu:M}) ve yarıçapına ({koyu:R}) bağlıdır.",
+        "{koyu:Elma ve Uzay Aracı Örneği:} Dünya yüzeyindeki bir elma ile devasa bir uzay aracının Dünya'dan kurtulma hızları birbirine eşittir (yaklaşık {koyu:40.320 km/h ≈ 11,2 km/s}); ancak kütleleri farklı olduğu için uzay aracına verilmesi gereken {koyu:kurtulma enerjisi} elmanınkinden çok daha büyüktür.",
+        "{koyu:Güneş Sisteminde Kurtulma Hızları:} Güneş sisteminde kurtulma hızı en düşük gök cismi {koyu:Ay (8.280 km/h)}, en büyük gök cismi ise {koyu:Güneş'tir (2.224.800 km/h)}. Ayrıca {koyu:Jüpiter'den kurtulma hızı (216.720 km/h)}, {koyu:Mars'tan kurtulma hızının (18.000 km/h)} yaklaşık {koyu:12 katıdır}."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">KURTULMA ENERJİSİ VE GÖK CİSİMLERİNDEN KURTULMA HIZLARI</text>\n\n  <!-- Sol Kutu: Formül ve Kütleden Bağımsızlık -->\n  <rect x=\"18\" y=\"45\" width=\"315\" height=\"198\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"175\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1d4ed8\">KURTULMA ENERJİSİ (YÜZEYDEN SONSUZA)</text>\n  <rect x=\"36\" y=\"78\" width=\"278\" height=\"32\" rx=\"6\" fill=\"#dbeafe\" stroke=\"#3b82f6\"/>\n  <text x=\"175\" y=\"99\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\">E(kurtulma) = -Eₚ = +G · (M · m) / R</text>\n  <text x=\"32\" y=\"130\" font-size=\"11\" fill=\"#1e293b\">• Sonsuzda: v(∞) = 0 ve E(toplam) = 0 olur.</text>\n  <text x=\"32\" y=\"150\" font-size=\"11\" fill=\"#1e293b\">• Kurtulma hızı cismin kütlesine (m) BAĞLI DEĞİLDİR!</text>\n  <rect x=\"34\" y=\"164\" width=\"282\" height=\"64\" rx=\"6\" fill=\"#fef2f2\" stroke=\"#ef4444\"/>\n  <text x=\"175\" y=\"184\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Elma vs. Uzay Aracı (Dünya Yüzeyinde):</text>\n  <text x=\"175\" y=\"202\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#7f1d1d\">Kurtulma Hızları EŞİT (40.320 km/h ≈ 11,2 km/s)</text>\n  <text x=\"175\" y=\"218\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#991b1b\">Kurtulma Enerjileri FARKLI (m farklı olduğu için)</text>\n\n  <!-- Sağ Kutu: Gök Cisimlerinden Kurtulma Hızları Tablosu -->\n  <rect x=\"350\" y=\"45\" width=\"332\" height=\"198\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"516\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">GÜNEŞ SİSTEMİNDE KURTULMA HIZLARI</text>\n  <line x1=\"366\" y1=\"76\" x2=\"666\" y2=\"76\" stroke=\"#86efac\" stroke-width=\"1.5\"/>\n  <text x=\"370\" y=\"98\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">• Ay (En düşük):</text>\n  <text x=\"545\" y=\"98\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">8.280 km/h</text>\n  <text x=\"370\" y=\"122\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">• Mars:</text>\n  <text x=\"545\" y=\"122\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">18.000 km/h</text>\n  <text x=\"370\" y=\"146\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">• Dünya:</text>\n  <text x=\"545\" y=\"146\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">40.320 km/h</text>\n  <text x=\"370\" y=\"170\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">• Jüpiter (Mars'ın ~12 katı):</text>\n  <text x=\"545\" y=\"170\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">216.720 km/h</text>\n  <text x=\"370\" y=\"194\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">• Güneş (En büyük):</text>\n  <text x=\"545\" y=\"194\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">2.224.800 km/h</text>\n  <rect x=\"366\" y=\"206\" width=\"300\" height=\"26\" rx=\"5\" fill=\"#dcfce7\"/>\n  <text x=\"516\" y=\"223\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#14532d\">Gök cisminin M/R oranı büyüdükçe kurtulma hızı artar.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Sorularda 'kurtulma hızı' ile 'kurtulma enerjisi' kavramlarını birbirine karıştırmayınız: Kurtulma hızı cismin kütlesine (m) bağlı değilken, kurtulma enerjisi cismin kütlesi (m) ile doğru orantılıdır!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Kütlesi büyük ve yarıçapı küçük (yoğunluğu yüksek) gezegenlerin çekim alanı daha güçlü olduğundan yüzeylerinden kurtulma hızı daha büyüktür."
+        }
+      ]
+    },
+    {
+      "baslik": "Bağlanma Enerjisi",
+      "metin": [
+        "Gezegen etrafında {koyu:r} yarıçaplı çembersel yörüngede belirli bir çizgisel hızla dolanan {koyu:m} kütleli uydunun hem kinetik enerjisi hem de kütle çekim potansiyel enerjisi vardır:",
+        "{koyu:Yörüngedeki Uydunun Toplam Mekanik Enerjisi:} Uydunun potansiyel enerjisi {koyu:Eₚ = -G·(M·m)/r} ve kinetik enerjisi {koyu:Eₖ = +(1/2)·G·(M·m)/r} olduğundan toplam mekanik enerjisi {koyu:Eₜ = Eₚ + Eₖ = -(1/2)·G·(M·m)/r} olur. Toplam enerjinin negatif ({koyu:Eₜ < 0}) olması, uydunun gezegenin çekim alanına bağlı kalarak yörüngede dolandığını gösterir.",
+        "{koyu:Bağlanma Enerjisi Tanımı:} Gezegen etrafında {koyu:r} yarıçaplı yörüngede dolanan uydunun, gezegenin çekim alanından kurtulup yörüngeden ayrılması için uydunun toplam enerjisini sıfır yapacak büyüklükte dışarıdan verilmesi gereken minimum enerjiye {koyu:bağlanma enerjisi} denir: {koyu:E(bağlanma) = -Eₜ = +(1/2)·G·(M·m)/r}.",
+        "{koyu:Yörünge Yarıçapıyla İlişkisi ve Örnek:} Gezegenden uzak yörüngelerde ({koyu:r} arttıkça) uydunun bağlanma enerjisi küçülür; yani uzak yörüngedeki uyduyu çekim alanından koparmak daha kolaydır. Örneğin aynı gezegen etrafında dolanan uydulardan toplam enerjisi {koyu:-E} olan {koyu:K} uydusunun bağlanma enerjisi {koyu:+E}, toplam enerjisi {koyu:-2E} olan {koyu:L} uydusunun bağlanma enerjisi {koyu:+2E}'dir ve bağlanma enerjileri oranı {koyu:E(K) / E(L) = 1/2} olur."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">YÖRÜNGEDEKİ UYDUNUN TOPLAM VE BAĞLANMA ENERJİSİ</text>\n\n  <!-- Sol Yörünge Şeması -->\n  <rect x=\"18\" y=\"45\" width=\"270\" height=\"198\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <circle cx=\"153\" cy=\"144\" r=\"68\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"1.8\" stroke-dasharray=\"6,4\"/>\n  <circle cx=\"153\" cy=\"144\" r=\"28\" fill=\"#2563eb\" stroke=\"#93c5fd\" stroke-width=\"2\"/>\n  <text x=\"153\" y=\"149\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#ffffff\">M</text>\n  <line x1=\"153\" y1=\"144\" x2=\"221\" y2=\"144\" stroke=\"#fbbf24\" stroke-width=\"2\"/>\n  <text x=\"187\" y=\"137\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#fbbf24\">r</text>\n  <circle cx=\"221\" cy=\"144\" r=\"10\" fill=\"#f59e0b\" stroke=\"#fef08a\" stroke-width=\"2\"/>\n  <text x=\"242\" y=\"148\" font-size=\"11\" font-weight=\"bold\" fill=\"#fde047\">m</text>\n  <text x=\"153\" y=\"66\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#e2e8f0\">r Yarıçaplı Çembersel Yörünge</text>\n  <text x=\"153\" y=\"230\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#93c5fd\">Uzak yörüngede E(bağlanma) küçülür.</text>\n\n  <!-- Sağ Enerji Bağıntıları -->\n  <rect x=\"304\" y=\"45\" width=\"378\" height=\"198\" rx=\"10\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"493\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#b45309\">UYDUNUN ENERJİ DENKLEMLERİ</text>\n  <line x1=\"320\" y1=\"76\" x2=\"666\" y2=\"76\" stroke=\"#fcd34d\" stroke-width=\"1.5\"/>\n  <text x=\"322\" y=\"98\" font-size=\"11.5\" fill=\"#78350f\">• Potansiyel Enerji:</text>\n  <text x=\"490\" y=\"98\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#92400e\">Eₚ = -G · (M · m) / r</text>\n  <text x=\"322\" y=\"122\" font-size=\"11.5\" fill=\"#78350f\">• Kinetik Enerji:</text>\n  <text x=\"490\" y=\"122\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#92400e\">Eₖ = +1/2 · G · (M · m) / r</text>\n  <text x=\"322\" y=\"146\" font-size=\"11.5\" fill=\"#78350f\">• Toplam Mekanik Enerji:</text>\n  <text x=\"490\" y=\"146\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b91c1c\">Eₜ = Eₚ + Eₖ = -1/2 · G · (M · m) / r</text>\n  <rect x=\"320\" y=\"160\" width=\"346\" height=\"34\" rx=\"6\" fill=\"#fef3c7\" stroke=\"#f59e0b\"/>\n  <text x=\"493\" y=\"182\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#78350f\">E(bağlanma) = -Eₜ = +1/2 · G · (M · m) / r</text>\n  <text x=\"493\" y=\"214\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">Örnek: Eₜ(K) = -E ⇒ E_bağ(K) = +E | Eₜ(L) = -2E ⇒ E_bağ(L) = +2E</text>\n  <text x=\"493\" y=\"232\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">Oran: E_bağ(K) / E_bağ(L) = 1 / 2</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Yüzeyde duran bir cisim için 'kurtulma enerjisi' (+G·Mm/R) kullanılırken, yörüngede dolanan bir uyduyu koparmak için 'bağlanma enerjisi' (+1/2·G·Mm/r) kullanılır!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Yörüngedeki bir uydunun enerjileri arasındaki altın oran: Eₚ = -2·Eₖ, Eₜ = -Eₖ ve E(bağlanma) = +Eₖ = -Eₜ = -Eₚ / 2'dir."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Aynı gezegen etrafında 3d yarıçaplı çembersel yörüngede dolanan 9m kütleli X uydusu ile 4d yarıçaplı çembersel yörüngede dolanan 12m kütleli Y uydusunun kütle çekim potansiyel enerjilerinin oranı Eₚ(X) / Eₚ(Y) kaçtır?",
+      "cevap": "Kütle çekim potansiyel enerjisi Eₚ = -G·(M·m)/d bağıntısıyla hesaplanır. X uydusu için Eₚ(X) = -G·M·(9m) / (3d) = -3·G·Mm/d ve Y uydusu için Eₚ(Y) = -G·M·(12m) / (4d) = -3·G·Mm/d bulunur. İki uydunun kütle çekim potansiyel enerjileri birbirine eşit olduğundan Eₚ(X) / Eₚ(Y) = 1 olur."
+    },
+    {
+      "soru": "Dünya yüzeyinde duran m kütleli bir elma ile 5000m kütleli bir uzay aracının Dünya'nın çekim alanından kurtulma hızlarını ve kurtulma enerjilerini karşılaştırınız.",
+      "cevap": "1) Kurtulma hızı yalnız Dünya'nın kütlesine (M) ve yarıçapına (R) bağlı olup cismin kütlesine (m) bağlı değildir; bu nedenle elma ile uzay aracının Dünya'dan kurtulma hızları birbirine eşittir (yaklaşık 40.320 km/h ≈ 11,2 km/s). 2) Kurtulma enerjisi ise E(kurtulma) = G·M·m/R bağıntısına göre cismin kütlesiyle doğru orantılıdır; dolayısıyla uzay aracının kurtulma enerjisi elmanın kurtulma enerjisinin 5000 katıdır."
+    },
+    {
+      "soru": "Dünya etrafında dolanan K uydusunun toplam enerjisi -E, L uydusunun toplam enerjisi ise -2E kadardır. Buna göre K ve L uydularının bağlanma enerjilerinin oranı E_bağ(K) / E_bağ(L) kaçtır?",
+      "cevap": "Bir uydunun bağlanma enerjisi, toplam mekanik enerjisinin sıfır yapılması için verilmesi gereken enerji olup E_bağ = -Eₜ bağıntısıyla bulunur. K uydusu için E_bağ(K) = -(-E) = +E ve L uydusu için E_bağ(L) = -(-2E) = +2E olur. Buradan oranları E_bağ(K) / E_bağ(L) = E / (2E) = 1/2 bulunur."
+    },
+    {
+      "soru": "Güneş sistemindeki gök cisimlerinden Ay (8.280 km/h), Mars (18.000 km/h), Dünya (40.320 km/h), Jüpiter (216.720 km/h) ve Güneş'in (2.224.800 km/h) kurtulma hızları dikkate alındığında, bir uzay aracının hangi gök cisminden ayrılması en kolay, hangisinden ayrılması en zordur?",
+      "cevap": "Kurtulma hızı en küçük olan gök cismi Ay (8.280 km/h) olduğundan uzay aracının çekim alanından ayrılması en kolay olan gök cismi Ay'dır. Kurtulma hızı en büyük olan gök cismi Güneş (2.224.800 km/h) olduğundan çekim alanından kurtulması en zor olan gök cismi Güneş'tir (gezegenler arasında ise Jüpiter'dir; Jüpiter'den kurtulma hızı Mars'ın yaklaşık 12 katıdır)."
+    },
+    {
+      "soru": "M kütleli bir gezegenin etrafında r yarıçaplı yörüngede dolanan m kütleli bir uydunun kütle çekim potansiyel enerjisi -120 MJ olduğuna göre, bu uydunun kinetik enerjisi, toplam mekanik enerjisi ve bağlanma enerjisi kaç MJ'dür?",
+      "cevap": "Yörüngedeki uydu için Eₚ = -G·Mm/r = -120 MJ'dür. 1) Kinetik enerji Eₖ = +(1/2)·G·Mm/r = -Eₚ / 2 = +60 MJ olur. 2) Toplam mekanik enerji Eₜ = Eₚ + Eₖ = -120 + 60 = -60 MJ bulunur. 3) Bağlanma enerjisi E_bağ = -Eₜ = +60 MJ'dür."
+    },
+    {
+      "soru": "Dünya etrafında r yarıçaplı yörüngede dolanan bir haberleşme uydusu daha uzak olan 2r yarıçaplı yeni bir yörüngeye çıkarılırsa uydunun kütle çekim potansiyel enerjisi, kinetik enerjisi ve bağlanma enerjisi nasıl değişir?",
+      "cevap": "Yörünge yarıçapı r'den 2r'ye çıktığında: 1) Kütle çekim potansiyel enerjisi Eₚ = -G·Mm/r bağıntısındaki eksi işaretinden dolayı ARTAR (sıfıra yaklaşır). 2) Kinetik enerjisi Eₖ = +(1/2)·G·Mm/r bağıntısına göre yarıya düşer, yani AZALIR. 3) Bağlanma enerjisi E_bağ = +(1/2)·G·Mm/r bağıntısına göre yarıya düşer, yani AZALIR."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Kütleleri M ve m olan iki gök cisminin kütle merkezleri arasındaki uzaklık d iken kütle çekim potansiyel enerjisi Eₚ'dir. Cisimler arasındaki uzaklık artırıldığında Eₚ ve sonsuzdaki değeri için ne söylenebilir?",
+      "secenekler": [
+        "Artar, sonsuzda sıfır olur.",
+        "Azalır, sonsuzda sıfır olur.",
+        "Azalır, sonsuzda sonsuz olur.",
+        "Artar, sonsuzda maksimum pozitif değer alır.",
+        "Değişmez, her yerde sabittir."
+      ],
+      "dogru": 0,
+      "aciklama": "Eₚ = -G·(M·m)/d bağıntısında başındaki eksi işaretinden dolayı d uzaklığı arttıkça Eₚ artar (negatifliği azalır) ve d → ∞ iken Eₚ = 0 olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Dünya yüzeyinde bulunan 1 kg kütleli bir demir bilye ile 2000 kg kütleli bir haberleşme uydusunun Dünya'nın çekim alanından kurtulma hızları (v₁, v₂) ve kurtulma enerjileri (E₁, E₂) arasındaki ilişki aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "v₁ = v₂ ve E₁ = E₂",
+        "v₁ = v₂ ve E₁ < E₂",
+        "v₁ < v₂ ve E₁ < E₂",
+        "v₁ > v₂ ve E₁ < E₂",
+        "v₁ < v₂ ve E₁ = E₂"
+      ],
+      "dogru": 1,
+      "aciklama": "Kurtulma hızı cismin kütlesine bağlı olmadığından v₁ = v₂ (40.320 km/h) olur. Kurtulma enerjisi ise E = G·M·m/R bağıntısına göre cismin kütlesiyle doğru orantılı olduğundan E₁ < E₂'dir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir gezegenin etrafında r yarıçaplı çembersel yörüngede dolanan m kütleli uydunun bağlanma enerjisini veren bağıntı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "-G · M · m / r",
+        "+G · M · m / r",
+        "+1/2 · G · M · m / r",
+        "-1/2 · G · M · m / r",
+        "+2 · G · M · m / r"
+      ],
+      "dogru": 2,
+      "aciklama": "Yörüngedeki uydunun toplam enerjisi Eₜ = -(1/2)·G·Mm/r olduğundan, toplam enerjiyi sıfır yapan bağlanma enerjisi E(bağlanma) = -Eₜ = +(1/2)·G·Mm/r'dir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aynı gezegen etrafında dolanan X uydusunun toplam mekanik enerjisi -3E, Y uydusunun toplam mekanik enerjisi ise -E kadardır. Buna göre X ve Y uydularının bağlanma enerjilerinin oranı E_bağ(X) / E_bağ(Y) kaçtır?",
+      "secenekler": [
+        "1/3",
+        "1/2",
+        "1",
+        "3",
+        "2"
+      ],
+      "dogru": 3,
+      "aciklama": "Bağlanma enerjisi E_bağ = -Eₜ olduğundan E_bağ(X) = +3E ve E_bağ(Y) = +E olur. Oranları 3E / E = 3 bulunur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Kütle çekim potansiyel enerjisinin SI birim sistemindeki birimi Joule'dür.",
+          "dogru": true,
+          "aciklama": "Tüm enerji türlerinde olduğu gibi kütle çekim potansiyel enerjisinin de SI birimi Joule (J)'dür."
+        },
+        {
+          "metin": "Kurtulma enerjisi verilen bir cismin sonsuza ulaştığında toplam enerjisi sıfır olur.",
+          "dogru": true,
+          "aciklama": "E(kurtulma) = -Eₚ olduğundan Eₜ = Eₚ + E(kurtulma) = 0 olur."
+        },
+        {
+          "metin": "Güneş sisteminde kurtulma hızı en yüksek olan gök cismi Ay'dır.",
+          "dogru": false,
+          "aciklama": "Ay (8.280 km/h) kurtulma hızı en düşük gök cismidir; en yüksek olan Güneş'tir (2.224.800 km/h)."
+        },
+        {
+          "metin": "Gezegen etrafında dolanan bir uydunun yörünge yarıçapı arttıkça bağlanma enerjisi küçülür.",
+          "dogru": true,
+          "aciklama": "E(bağlanma) = +(1/2)·G·Mm/r bağıntısına göre r arttıkça bağlanma enerjisi azalır."
+        },
+        {
+          "metin": "Yörüngede dolanan bir uydunun toplam mekanik enerjisi pozitif bir değerdir.",
+          "dogru": false,
+          "aciklama": "Gezegene bağlı bir uydunun toplam mekanik enerjisi Eₜ = -(1/2)·G·Mm/r olup negatiftir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki fiziksel kavramları karşılık gelen matematiksel bağıntı veya özelliklerle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Kütle Çekim Potansiyel Enerjisi",
+          "Eₚ = -G · (M · m) / d bağıntısıyla hesaplanan negatif enerji"
+        ],
+        [
+          "Kurtulma Enerjisi",
+          "Gezegen yüzeyindeki cismi sonsuza göndermek için gereken +G · (M · m) / R enerjisi"
+        ],
+        [
+          "Bağlanma Enerjisi",
+          "Yörüngedeki uyduyu çekim alanından koparmak için gereken +1/2 · G · (M · m) / r enerjisi"
+        ],
+        [
+          "Uydunun Toplam Enerjisi",
+          "Kinetik ve potansiyel enerjilerin toplamı olan -1/2 · G · (M · m) / r değeri"
+        ],
+        [
+          "Kurtulma Hızı",
+          "Cismin kendi kütlesine (m) bağlı olmayan, Dünya yüzeyinde 40.320 km/h olan hız"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "İki gök cisminin kütle merkezleri arasındaki uzaklık sonsuz olduğunda kütle çekim potansiyel enerjisi ___ olur.",
+          "cevap": "sıfır"
+        },
+        {
+          "metin": "Bir gezegenin yüzeyinde duran cismi çekim alanından çıkarmak için verilmesi gereken minimum kinetik enerjiye ___ enerjisi denir.",
+          "cevap": "kurtulma"
+        },
+        {
+          "metin": "Yörüngede dolanan bir uydunun toplam enerjisini sıfır yaparak yörüngeden ayrılmasını sağlayan enerjiye ___ enerjisi adı verilir.",
+          "cevap": "bağlanma"
+        },
+        {
+          "metin": "Bir gezegenden kurtulma hızı, fırlatılan cismin ___ bağlı değildir.",
+          "cevap": "kütlesine"
+        },
+        {
+          "metin": "Jüpiter'den kurtulma hızı (216.720 km/h), ___ gezegeninden kurtulma hızının (18.000 km/h) yaklaşık 12 katıdır.",
+          "cevap": "Mars"
+        }
+      ],
+      "fazla": [
+        "ivmesine",
+        "Venüs"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "M kütleli ve R yarıçaplı bir gezegenin yüzeyinde duran m kütleli bir cismi gezegenin çekim alanından tamamen kurtarmak için gereken enerji E₁; aynı gezegenin etrafında 2R yarıçaplı yörüngede dolanan m kütleli bir uyduyu yörüngesinden koparmak için gereken bağlanma enerjisi ise E₂'dir. Buna göre E₁ / E₂ oranını adım adım bulunuz.",
+      "cevap": "Yüzeydeki cismin kurtulma enerjisi E₁ = G·M·m / R'dir. r = 2R yarıçaplı yörüngedeki uydunun bağlanma enerjisi ise E₂ = (1/2)·G·M·m / (2R) = (1/4)·G·M·m / R olur. İki enerji oranlandığında E₁ / E₂ = 1 / (1/4) = 4 bulunur.",
+      "ipuclari": [
+        "Gezegen yüzeyinde (R) duran cisim için kurtulma enerjisi bağıntısını E₁ = G · M · m / R olarak yazınız.",
+        "r = 2R yarıçaplı yörüngede dolanan uydu için bağlanma enerjisi bağıntısını E₂ = 1/2 · G · M · m / (2R) olarak yazınız.",
+        "E₁ ve E₂ ifadelerini taraf tarafa oranlayarak ortak terimleri sadeleştiriniz."
+      ]
+    }
+  ],
+  "ozet": [
+    "Kütle merkezleri arasındaki uzaklığı d olan M ve m kütleli iki gök cisminin kütle çekim potansiyel enerjisi Eₚ = -G·(M·m)/d bağıntısıyla bulunur; sonsuzda Eₚ = 0 olup cisim gezegene yaklaştıkça Eₚ azalır.",
+    "Gezegen yüzeyinde duran m kütleli cismi çekim alanından (sonsuza) çıkarmak için verilmesi gereken minimum kinetik enerjiye kurtulma enerjisi denir: E(kurtulma) = -Eₚ = +G·(M·m)/R.",
+    "Kurtulma hızı cismin kütlesine (m) bağlı değildir; bu nedenle bir elma ile bir uzay aracının Dünya'dan kurtulma hızları eşittir (40.320 km/h), ancak kurtulma enerjileri farklıdır.",
+    "r yarıçaplı yörüngede dolanan uydunun toplam mekanik enerjisi Eₜ = Eₚ + Eₖ = -(1/2)·G·(M·m)/r olup negatiftir.",
+    "Yörüngedeki uydunun toplam enerjisini sıfır yaparak çekim alanından ayrılmasını sağlayan enerjiye bağlanma enerjisi denir: E(bağlanma) = -Eₜ = +(1/2)·G·(M·m)/r; uzak yörüngelerde bağlanma enerjisi küçülür."
+  ],
+  "ders_adi": "Fizik",
+  "yayin_tarihi": "2026-10-16"
+}

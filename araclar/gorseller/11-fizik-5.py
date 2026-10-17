@@ -1,158 +1,121 @@
-# -*- coding: utf-8 -*-
-"""11. Sınıf Fizik — 5. Hafta Görselleri
-Konu: İtme ve Çizgisel Momentum: İtme-Momentum Değişimi İlişkisi ve Grafik Analizi
-"""
-
-
 def _svg(w, h, icerik):
     return (
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" '
-        f'width="100%" style="max-width:{w}px;height:auto;display:block;'
-        f'margin:14px auto;font-family:\'Segoe UI\',system-ui,sans-serif;">'
-        f"{icerik}</svg>"
+        f'<svg viewBox="0 0 {w} {h}" xmlns="http://www.w3.org/2000/svg" '
+        f'style="width:100%;height:auto;display:block;font-family:\'Segoe UI\',sans-serif;">'
+        f'<rect width="{w}" height="{h}" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>'
+        f'{icerik}</svg>'
     )
 
 
-def _kart(x, y, w, h, baslik, renk="#0284c7", arka="#f0f9ff"):
+def _kart(x, y, w, h, baslik, satirlar, renk="#059669", bg="#ECFDF5"):
+    b = (
+        f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="10" fill="{bg}" stroke="{renk}" stroke-width="1.8"/>'
+        f'<rect x="{x}" y="{y}" width="{w}" height="30" rx="10" fill="{renk}"/>'
+        f'<rect x="{x}" y="{y+18}" width="{w}" height="12" fill="{renk}"/>'
+        f'<text x="{x+w/2}" y="{y+20}" font-size="11.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">{baslik}</text>'
+    )
+    for i, s in enumerate(satirlar):
+        b += f'<text x="{x+12}" y="{y+48+i*18}" font-size="10.5" fill="#1E293B">{s}</text>'
+    return b
+
+
+def _bant(y, b, m, r, bg):
     return (
-        f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="12" '
-        f'fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        f'<rect x="{x}" y="{y}" width="{w}" height="32" rx="12" fill="{renk}"/>'
-        f'<rect x="{x}" y="{y+18}" width="{w}" height="14" fill="{renk}"/>'
-        f'<text x="{x+w/2}" y="{y+21}" text-anchor="middle" fill="#fff" '
-        f'font-size="13" font-weight="700">{baslik}</text>'
+        f'<rect x="25" y="{y}" width="630" height="42" rx="8" fill="{bg}" stroke="{r}" stroke-width="1.5"/>'
+        f'<text x="40" y="{y+16}" font-size="11" font-weight="bold" fill="{r}">{b}</text>'
+        f'<text x="40" y="{y+33}" font-size="10.5" fill="#1E293B">{m}</text>'
     )
 
 
 def gorsel_1():
-    """İtme (I = F . Delta_t) ve Çizgisel Momentum (P = m . v) Kavramları."""
-    w, h = 760, 310
-    s = _kart(10, 10, w - 20, h - 20, "İtme (I) ve Çizgisel Momentum (P) Kavramlarının Karşılaştırılması", "#0284c7", "#f0f9ff")
-
-    # Sol: İtme
-    s += '<rect x="30" y="55" width="335" height="230" rx="10" fill="#fff" stroke="#38bdf8" stroke-width="1.6"/>'
-    s += '<rect x="30" y="55" width="335" height="30" rx="10" fill="#0284c7"/>'
-    s += '<text x="197" y="75" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">1. İTME (Impulse — Sembol: I)</text>'
-    s += '<text x="197" y="106" text-anchor="middle" fill="#0369a1" font-size="14" font-weight="700">I = F_net . Delta_t</text>'
-    s += '<text x="48" y="136" fill="#1e293b" font-size="10.5">• Kuvvet ile kuvvetin etki süresinin çarpımıdır.</text>'
-    s += '<text x="48" y="158" fill="#1e293b" font-size="10.5">• VEKTÖREL büyüklüktür; yönü F_net ile aynıdır.</text>'
-    s += '<text x="48" y="180" fill="#1e293b" font-size="10.5">• SI Birimi: Newton . saniye (N . s)</text>'
-    s += '<rect x="48" y="200" width="299" height="66" rx="8" fill="#e0f2fe" stroke="#0284c7"/>'
-    s += '<text x="197" y="224" text-anchor="middle" fill="#0369a1" font-size="10.5" font-weight="700">Örnek: Raketin tenis topuna 0,02 saniye</text>'
-    s += '<text x="197" y="244" text-anchor="middle" fill="#0369a1" font-size="10.5" font-weight="700">boyunca uyguladığı kuvvetin etkisi.</text>'
-
-    # Sağ: Çizgisel Momentum
-    s += '<rect x="395" y="55" width="335" height="230" rx="10" fill="#fff" stroke="#34d399" stroke-width="1.6"/>'
-    s += '<rect x="395" y="55" width="335" height="30" rx="10" fill="#059669"/>'
-    s += '<text x="562" y="75" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">2. ÇİZGİSEL MOMENTUM (Sembol: P)</text>'
-    s += '<text x="562" y="106" text-anchor="middle" fill="#065f46" font-size="14" font-weight="700">P = m . v</text>'
-    s += '<text x="413" y="136" fill="#1e293b" font-size="10.5">• Kütle ile hız vektörünün çarpımıdır (Hareket miktarı).</text>'
-    s += '<text x="413" y="158" fill="#1e293b" font-size="10.5">• VEKTÖREL büyüklüktür; yönü hız (v) ile aynıdır.</text>'
-    s += '<text x="413" y="180" fill="#1e293b" font-size="10.5">• SI Birimi: kg . m/s  (1 N . s = 1 kg . m/s)</text>'
-    s += '<rect x="413" y="200" width="299" height="66" rx="8" fill="#d1fae5" stroke="#059669"/>'
-    s += '<text x="562" y="224" text-anchor="middle" fill="#065f46" font-size="10.5" font-weight="700">Kinetik Enerji ile İlişkisi:</text>'
-    s += '<text x="562" y="246" text-anchor="middle" fill="#047857" font-size="11.5" font-weight="700">E_k = P² / (2 . m)</text>'
-
-    return _svg(w, h, s)
-
+    w, h = 680, 250
+    ic = '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">NEWTON\'IN HAREKET YASALARI (DİNAMİĞİN TEMEL İLKELERİ)</text>'
+    ic += _kart(20, 44, 205, 190, "1. EYLEMSİZLİK YASASI", [
+        "• Net kuvvet sıfır ise:",
+        "  ΣF = 0  =>  a = 0",
+        "• Duran cisim durmaya",
+        "  devam eder (v = 0).",
+        "• Hareketli cisim sabit",
+        "  hızla (düzgün doğrusal)",
+        "  hareketini sürdürür.",
+        "• Kütle, eylemsizliğin ölçüsüdür."
+    ], "#059669", "#ECFDF5")
+    ic += _kart(237, 44, 205, 190, "2. TEMEL YASA (Fnet = m·a)", [
+        "• Net kuvvet sıfırdan farklı",
+        "  ise cisim ivmeli hareket",
+        "  yapar: Fnet = m · a",
+        "• İvme (a), net kuvvetle",
+        "  aynı yönlü ve doğru",
+        "  orantılıdır.",
+        "• Sabit kuvvette ivme,",
+        "  kütle ile ters orantılıdır."
+    ], "#2563EB", "#EFF6FF")
+    ic += _kart(455, 44, 205, 190, "3. ETKİ-TEPKİ YASASI", [
+        "• Her etki kuvvetine eşit",
+        "  büyüklükte ve zıt yönde",
+        "  bir tepki kuvveti vardır:",
+        "  F₁₂ = -F₂₁",
+        "• Etki ve tepki kuvvetleri",
+        "  FARKLI cisimler üzerindedir.",
+        "• Bu nedenle birbirini",
+        "  dengelemez (bileşkesi alınmaz)."
+    ], "#7C3AED", "#F5F3FF")
+    return _svg(w, h, ic)
 
 def gorsel_2():
-    """İtme - Momentum Değişimi Teoremi (I = Delta_P = P_son - P_ilk) ve Vektörel Çıkarma."""
-    w, h = 760, 310
-    s = _kart(10, 10, w - 20, h - 20, "İtme - Momentum Değişimi Teoremi: I = Delta_P = P_son - P_ilk", "#7c3aed", "#f5f3ff")
-
-    # Sol: Teorem Türetimi
-    s += '<rect x="30" y="55" width="335" height="230" rx="10" fill="#fff" stroke="#c4b5fd" stroke-width="1.5"/>'
-    s += '<text x="197" y="78" text-anchor="middle" fill="#5b21b6" font-size="12" font-weight="700">Newton\'un 2. Yasasından Türetim</text>'
-
-    adimlar = [
-        "1) F_net = m . a   ve   a = (v_son - v_ilk) / Delta_t",
-        "2) F_net = m . (v_son - v_ilk) / Delta_t",
-        "3) F_net . Delta_t = m . v_son - m . v_ilk",
-        "4) I = P_son - P_ilk = Delta_P",
-    ]
-    for i, st in enumerate(adimlar):
-        y = 95 + i * 42
-        bg = "#ede9fe" if i == 3 else "#f8fafc"
-        s += f'<rect x="46" y="{y}" width="303" height="34" rx="6" fill="{bg}" stroke="#8b5cf6"/>'
-        s += f'<text x="197" y="{y+22}" text-anchor="middle" fill="#4c1d95" font-size="11" font-weight="700">{st}</text>'
-
-    # Sağ: Duvara Çarpıp Geri Dönen Top Örneği
-    s += '<rect x="395" y="55" width="335" height="230" rx="10" fill="#fff" stroke="#c4b5fd" stroke-width="1.5"/>'
-    s += '<text x="562" y="78" text-anchor="middle" fill="#dc2626" font-size="12" font-weight="700">DİKKAT: Duvara Çarpıp Geri Dönen Top!</text>'
-
-    # Duvar ve top
-    s += '<rect x="650" y="95" width="18" height="105" fill="#94a3b8" stroke="#475569"/>'
-    s += '<circle cx="480" cy="120" r="12" fill="#0284c7"/>'
-    s += '<line x1="496" y1="120" x2="625" y2="120" stroke="#0284c7" stroke-width="2.5"/>'
-    s += '<text x="560" y="112" text-anchor="middle" fill="#0284c7" font-size="10.5" font-weight="700">P_ilk = +m.v (Sağa)</text>'
-
-    s += '<circle cx="620" cy="175" r="12" fill="#dc2626"/>'
-    s += '<line x1="604" y1="175" x2="475" y2="175" stroke="#dc2626" stroke-width="2.5"/>'
-    s += '<text x="545" y="167" text-anchor="middle" fill="#dc2626" font-size="10.5" font-weight="700">P_son = -m.v (Sola)</text>'
-
-    s += '<rect x="413" y="208" width="299" height="62" rx="8" fill="#fef2f2" stroke="#dc2626"/>'
-    s += '<text x="562" y="230" text-anchor="middle" fill="#991b1b" font-size="10.5" font-weight="700">Vektörel Fark: Delta_P = P_son - P_ilk</text>'
-    s += '<text x="562" y="252" text-anchor="middle" fill="#b91c1c" font-size="11.5" font-weight="700">Delta_P = (-m.v) - (+m.v) = -2.m.v  (Sıfır DEĞİL!)</text>'
-
-    return _svg(w, h, s)
-
+    w, h = 680, 250
+    ic = '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">SERBEST CİSİM DİYAGRAMI (SCD) VE TEMEL KUVVETLER</text>'
+    ic += _kart(20, 44, 310, 190, "SERBEST CİSİM DİYAGRAMI KURALLARI", [
+        "• Cisim noktasal bir kütle veya sade bir kutu olarak",
+        "  temsil edilir; çevre nesnelerden soyutlanır.",
+        "• Sadece CİSMİN KENDİSİNE etki eden dış kuvvet",
+        "  vektörleri (G, N, F, T, fs) diyagramda gösterilir.",
+        "• Cismin başka yüzeylere uyguladığı etki kuvvetleri",
+        "  veya m·a (net kuvvet) ayrı bir vektör olarak çizilmez."
+    ], "#0891B2", "#ECFEFF")
+    ic += _kart(350, 44, 310, 190, "YATAY VE EĞİK DÜZLEMDE KUVVETLER", [
+        "• Ağırlık (G = m·g): Daima yerin merkezine (düşey",
+        "  aşağı) doğrudur.",
+        "• Normal Kuvvet (N): Yüzeyin cisme dik olarak",
+        "  uyguladığı tepki kuvvetidir (Yatayda N = m·g).",
+        "• Eğik düzlemde (eğim α): Yüzeye paralel bileşen",
+        "  Gx = m·g·sinα; yüzeye dik bileşen Gy = m·g·cosα."
+    ], "#D97706", "#FEF3C7")
+    return _svg(w, h, ic)
 
 def gorsel_3():
-    """Net Kuvvet - Zaman (F-t) ve Momentum - Zaman (P-t) Grafikleri."""
-    w, h = 760, 310
-    s = _kart(10, 10, w - 20, h - 20, "Grafik Analizi: Kuvvet-Zaman (F-t) Alanı ve Momentum-Zaman (P-t) Eğimi", "#0d9488", "#f0fdfa")
-
-    # Sol: F-t Grafiği
-    s += '<rect x="30" y="55" width="335" height="230" rx="10" fill="#fff" stroke="#5eead4" stroke-width="1.5"/>'
-    s += '<text x="197" y="76" text-anchor="middle" fill="#0f766e" font-size="12" font-weight="700">1. Net Kuvvet - Zaman (F - t) Grafiği</text>'
-    # Eksenler ve alan
-    s += '<line x1="70" y1="210" x2="320" y2="210" stroke="#334155" stroke-width="2"/>'
-    s += '<line x1="70" y1="95" x2="70" y2="235" stroke="#334155" stroke-width="2"/>'
-    s += '<polygon points="70,210 70,125 200,125 270,210" fill="#99f6e4" stroke="#0d9488" stroke-width="2"/>'
-    s += '<text x="165" y="175" text-anchor="middle" fill="#0f766e" font-size="11.5" font-weight="700">ALAN = İTME (I) = Delta_P</text>'
-    s += '<text x="197" y="252" text-anchor="middle" fill="#1e293b" font-size="10.2">F-t grafiğinin zaman ekseniyle sınırladığı</text>'
-    s += '<text x="197" y="268" text-anchor="middle" fill="#0f766e" font-size="10.5" font-weight="700">cebirsel ALAN, İtme ve Momentum Değişimini verir.</text>'
-
-    # Sağ: P-t Grafiği
-    s += '<rect x="395" y="55" width="335" height="230" rx="10" fill="#fff" stroke="#5eead4" stroke-width="1.5"/>'
-    s += '<text x="562" y="76" text-anchor="middle" fill="#0f766e" font-size="12" font-weight="700">2. Momentum - Zaman (P - t) Grafiği</text>'
-    s += '<line x1="435" y1="210" x2="685" y2="210" stroke="#334155" stroke-width="2"/>'
-    s += '<line x1="435" y1="95" x2="435" y2="235" stroke="#334155" stroke-width="2"/>'
-    s += '<line x1="435" y1="190" x2="645" y2="110" stroke="#2563eb" stroke-width="3"/>'
-    s += '<text x="565" y="182" text-anchor="middle" fill="#1d4ed8" font-size="11" font-weight="700">EĞİM = Delta_P / Delta_t = F_net</text>'
-    s += '<text x="562" y="252" text-anchor="middle" fill="#1e293b" font-size="10.2">P-t grafiğinin EĞİMİ cisme etki eden</text>'
-    s += '<text x="562" y="268" text-anchor="middle" fill="#1d4ed8" font-size="10.5" font-weight="700">Net Kuvveti (F_net) verir (P-t ile v-t şekilce aynıdır!).</text>'
-
-    return _svg(w, h, s)
-
+    w, h = 680, 260
+    ic = '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">EĞİK DÜZLEM VE BİRBİRİNE BAĞLI CİSİM SİSTEMLERİ</text>'
+    adimlar = [
+        ("1. SÜRTÜNMESİZ EĞİK DÜZLEMDE İVME", "Eğik düzlemdeki cismi aşağı çeken net kuvvet Fnet = m·g·sinα olduğundan ivme kütleden bağımsızdır: a = g·sinα.", "#059669", "#ECFDF5"),
+        ("2. SÜRTÜNMELİ YATAY DÜZLEMDE HAREKET", "Yatay F kuvvetiyle çekilen cisimde fs = k·m·g sürtünmesi varsa: Fnet = F - k·m·g = m·a bağıntısı uygulanır.", "#2563EB", "#EFF6FF"),
+        ("3. İPLE BAĞLI CİSİMLERDE SİSTEM İVMESİ", "Birlikte hareket eden cisimlerin ivme büyüklüğü ortaktır: a_sistem = Fnet_toplam / m_toplam.", "#7C3AED", "#F5F3FF"),
+        ("4. İP GERİLMESİ (T) HESABI", "Sistem ivmesi bulunduktan sonra tek bir cisim için serbest cisim diyagramı yazılıp T gerilmesi hesaplanır.", "#D97706", "#FEF3C7")
+    ]
+    for i, (b, m, r, bg) in enumerate(adimlar):
+        ic += _bant(44 + i * 50, b, m, r, bg)
+    return _svg(w, h, ic)
 
 def gorsel_4():
-    """Günlük Yaşamda İtme ve Etki Süresi: Hava Yastığı, Kask ve Tampon Tasarımı."""
-    w, h = 760, 310
-    s = _kart(10, 10, w - 20, h - 20, "Mühendislik ve Güvenlik: Delta_P Sabitken Etki Süresini (Delta_t) Artırmak", "#d97706", "#fffbeb")
-
-    s += '<rect x="36" y="56" width="688" height="54" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>'
-    s += '<text x="380" y="78" text-anchor="middle" fill="#92400e" font-size="13" font-weight="700">Temel İlke:  Delta_P (Momentum Değişimi) SABİT iken;  Delta_t ARTARSA  ==&gt;  F_ort AZALIR!</text>'
-    s += '<text x="380" y="98" text-anchor="middle" fill="#b45309" font-size="10.5">Çarpışma süresini uzatan esnek yüzeyler, cisme etki eden yıkıcı darbe kuvvetini küçültür.</text>'
-
-    uygulamalar = [
-        ("Otomobil Hava Yastığı", "Kaza anında şişerek sürücünün", "durma süresini (Delta_t) uzatır;", "darbe kuvvetini (F) azaltır.", "#0284c7"),
-        ("Katlanabilir Araç Tamponu", "Çarpışmada ezilerek enerji", "sönümler ve etkileşim", "süresini artırır.", "#16a34a"),
-        ("Kaleci Eldiveni &amp; Minder", "Topu tutarken elleri geriye", "çekmek veya sünger minder", "etki süresini uzatır.", "#7c3aed"),
-        ("Boks Eldiveni &amp; Kask", "Yumruğun veya darbenin", "temas süresini uzatarak", "maksimum kuvveti düşürür.", "#dc2626"),
-    ]
-    for i, (bas, a1, a2, a3, r) in enumerate(uygulamalar):
-        x = 26 + i * 180
-        s += f'<rect x="{x}" y="124" width="168" height="160" rx="10" fill="#fff" stroke="{r}" stroke-width="1.5"/>'
-        s += f'<rect x="{x}" y="124" width="168" height="26" rx="10" fill="{r}"/>'
-        s += f'<text x="{x+84}" y="142" text-anchor="middle" fill="#fff" font-size="10.5" font-weight="700">{bas}</text>'
-        s += f'<text x="{x+84}" y="182" text-anchor="middle" fill="#1e293b" font-size="10">{a1}</text>'
-        s += f'<text x="{x+84}" y="200" text-anchor="middle" fill="#1e293b" font-size="10">{a2}</text>'
-        s += f'<text x="{x+84}" y="218" text-anchor="middle" fill="{r}" font-size="10" font-weight="700">{a3}</text>'
-
-    return _svg(w, h, s)
-
+    w, h = 680, 250
+    ic = '<text x="340" y="26" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">ATWOOD ALETİ VE MAKARA SİSTEMLERİNDE DİNAMİK ANALİZ</text>'
+    ic += _kart(20, 44, 310, 190, "SABİT MAKARADA İKİ KÜTLE (m₁ &gt; m₂)", [
+        "• Sürtünmesiz sabit makaraya asılı m₁ ve m₂ kütleli",
+        "  cisimlerden m₁ &gt; m₂ ise sistem m₁ yönünde ivmelenir.",
+        "• Net kuvvet: Fnet = m₁·g - m₂·g = (m₁ - m₂)·g",
+        "• Sistemin ortak ivmesi:",
+        "  a = [(m₁ - m₂) / (m₁ + m₂)] · g",
+        "• İp gerilmesi T, m₂·g den büyük, m₁·g den küçüktür."
+    ], "#2563EB", "#EFF6FF")
+    ic += _kart(350, 44, 310, 190, "MASA ÜZERİNDEKİ CİSİM VE SARKAN KÜTLE", [
+        "• Sürtünmesiz yatay masadaki m₁ kütlesi, makaradan",
+        "  sarkan m₂ kütlesine iple bağlı olsun.",
+        "• Sistemi harekete geçiren net kuvvet sarkan cismin",
+        "  ağırlığıdır: Fnet = m₂·g",
+        "• Ortak ivme: a = (m₂·g) / (m₁ + m₂)",
+        "• Yataydaki m₁ cismi için ip gerilmesi: T = m₁ · a."
+    ], "#059669", "#ECFDF5")
+    return _svg(w, h, ic)
 
 GORSELLER = {
     "b1": gorsel_1(),
@@ -163,8 +126,7 @@ GORSELLER = {
 
 
 def uygula(v):
-    eş = [(0, "b1"), (1, "b2"), (2, "b3"), (4, "b4")]
-    bolumler = v.get("bolumler", [])
-    for idx, anahtar in eş:
-        if idx < len(bolumler):
-            bolumler[idx]["gorsel"] = GORSELLER[anahtar]
+    harita = {0: "b1", 1: "b2", 2: "b3", 4: "b4"}
+    for idx, anahtar in harita.items():
+        if idx < len(v.get("bolumler", [])):
+            v["bolumler"][idx]["gorsel"] = GORSELLER[anahtar]

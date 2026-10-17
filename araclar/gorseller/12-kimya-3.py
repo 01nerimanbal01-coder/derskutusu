@@ -69,7 +69,7 @@ def gorsel_2():
         "• Eğer X metali Y'den AKTİFSE (X > Y):",
         "  - Kendiliğinden X(k) + Y²⁺ -> X²⁺ + Y(k) tepkimesi olur.",
         "  - X çubuğu/kabı AŞINIR ve çözelti X kabında SAKLANAMAZ!",
-        "• Eğer X metali Y'den PASİFSE (X < Y):",
+        "• Eğer X metali Y'den PASİFSE (X &lt; Y):",
         "  - Tepkime OLMAZ, aşınma olmaz ve çözelti SAKLANABİLİR!"
     ], "#991b1b")
     return _svg(g, y, s)

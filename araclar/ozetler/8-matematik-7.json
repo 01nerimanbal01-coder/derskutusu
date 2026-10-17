@@ -1,228 +1,234 @@
 {
- "ad": "8-matematik-7",
- "sinif": 8,
- "ders": "matematik",
- "ders_adi": "Matematik",
- "hafta": 7,
- "tarih": "26-30 Ekim 2026",
- "yayin_tarihi": "2026-10-28",
- "unite": "Sayılar ve İşlemler",
- "konu": "Kareköklü İfadeler: Tam Kare Olmayan Sayıların Karekökünü Tahmin Etme ve Katsayıyı Kök İçine/Dışına Alma",
- "ciktilar": [
-  "Tam kare olmayan kareköklü bir sayının hangi iki doğal sayı arasında olduğunu belirler ve en yakın olduğu doğal sayıyı tahmin eder.",
-  "Kareköklü bir ifadeyi a{kok:b} biçiminde yazar ve a{kok:b} biçimindeki ifadede katsayıyı kök içine alır.",
-  "Katsayıları kök içine alarak kareköklü ifadeleri büyüklük-küçüklük yönünden karşılaştırır ve sıralar."
- ],
- "giris": "Geçen hafta alanı tam kare olan karesel bölgelerin bir kenar uzunluğunu tam sayı olarak bulmuştuk (örneğin {kok:36} = 6, {kok:49} = 7). Peki alanı 40 m² olan kare şeklindeki bir bahçenin bir kenar uzunluğu olan {koyu:{kok:40}} sayısı hangi iki tam sayı arasındadır ve sayı doğrusunda nereye yakındır? Bu hafta LGS’nin en temel kazanımlarından olan {koyu:tam kare olmayan kareköklü sayıların yaklaşık değerini tahmin etmeyi} ve {koyu:kareköklü ifadeleri a{kok:b} biçiminde yazıp sıralamayı} öğreniyoruz!",
- "ozet": [
-  "{koyu:Yaklaşık Değer Tahmini:} Tam kare olmayan {kok:x} sayısının hangi iki doğal sayı arasında olduğunu bulmak için {koyu:x’ten küçük en büyük tam kare} ile {koyu:x’ten büyük en küçük tam kare} belirlenir.",
-  "{koyu:Hangisine Daha Yakın?} Kök içindeki x sayısı, alt ve üst tam kare komşularından hangisine sayıca daha yakınsa karekökü de o tam sayıya daha yakındır.",
-  "{koyu:a{kok:b} Biçiminde Yazma:} Kök içindeki sayı, çarpanlarından biri {koyu:en büyük tam kare} olacak şekilde {koyu:a² · b} biçiminde yazılır; a² kök dışına {koyu:a} olarak çıkar: {koyu:{kok:a² · b} = a{kok:b}}.",
-  "{koyu:Katsayıyı Kök İçine Alma:} Kök dışındaki pozitif {koyu:a} katsayısı, {koyu:karesi alınarak (a²)} kök içindeki b sayısıyla çarpılır: {koyu:a{kok:b} = {kok:a² · b}}.",
-  "{koyu:Karşılaştırma Kuralı:} Kareköklü sayılar sıralanırken {koyu:kök dışındaki katsayılar kök içine alınır}; pozitif sayılarda kök içi büyük olan daha büyüktür (negatiflerde ise tam tersidir!)."
- ],
- "bolumler": [
-  {
-   "baslik": "1. Tam Kare Olmayan Sayıların Karekökünü Tahmin Etme",
-   "metin": [
-    "Kök içindeki sayı tam kare değilse karekökün sonucu bir doğal sayı olmaz. Böyle bir sayının sayı doğrusundaki yerini ve yaklaşık değerini 3 adımda buluruz:\n1. Kök içindeki sayıdan {koyu:küçük olan en büyük tam kare sayı} ile {koyu:büyük olan en küçük tam kare sayı} yazılır.\n2. Her iki sınırın karekökü alınarak sayının hangi iki ardışık doğal sayı arasında olduğu belirlenir.\n3. Kök içindeki sayının alt ve üst tam kare sayılara olan farklarına bakılarak {koyu:hangi doğal sayıya daha yakın olduğu} bulunur.",
-    "{koyu:Örnek 1 ({kok:43} Sayısı):}\n• 43 sayısından küçük en büyük tam kare {koyu:36}, büyük en küçük tam kare {koyu:49}’dur:\n  {kok:36} < {kok:43} < {kok:49}  =>  {koyu:6 < {kok:43} < 7} ({kok:43} sayısı {koyu:6 ile 7 arasındadır}).\n• Yakınlık kontrolü: 43 - 36 = {koyu:7 birim}  |  49 - 43 = {koyu:6 birim}.\n• 43 sayısı 49’a daha yakın (6 < 7) olduğu için {koyu:{kok:43} sayısı 7’ye daha yakındır} (buçuk noktası olan 6,5’ten büyüktür; yaklaşık {koyu:6,6}’dır)."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "LGS Sayı Doğrusu ve Cetvel Sorularında Altın Taktik!",
-    "metin": "Bir kalemin boyu veya bir çekirgenin zıplama mesafesi sorulduğunda, verilen tam sayı sınırlarını hemen {koyu:karekök içine alın}!\n• Örneğin *“Kalemin boyu 7 cm ile 8 cm arasındadır ve 8’e daha yakındır”* deniyorsa:\n  7 = {koyu:{kok:49}} ve 8 = {koyu:{kok:64}} yazılır; şıklarda {koyu:{kok:49} ile {kok:64} arasında olup 64’e daha yakın olan} (örneğin {koyu:{kok:60}}) hemen işaretlenir!"
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 424\" role=\"img\" aria-label=\"Konu özet şeması\"><text x=\"400\" y=\"32\" font-family=\"sans-serif\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">KAREKÖKLÜ İFADELER: YAKLAŞIK DEĞER TAHMİNİ VE KATSAYI İŞLEMLERİ</text><rect x=\"20\" y=\"56\" width=\"365\" height=\"290\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"80\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. TAM KARE OLMAYAN KAREKÖKÜ TAHMİN ETME</text><rect x=\"35\" y=\"100\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Hangi İki Doğal Sayı Arasında?</text><text x=\"202\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Sayının altındaki ve üstündeki en yakın tam kare sayılar belirlenir.</text><rect x=\"35\" y=\"150\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Örnek: Karekök 40 Hangi İki Tam Sayı Arasındadır?</text><text x=\"202\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">36 &lt; 40 &lt; 49  =&gt;  6 &lt; karekök(40) &lt; 7 (6 ile 7 arasındadır).</text><rect x=\"35\" y=\"200\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Hangisine Daha Yakındır? (Fark Kontrolü)</text><text x=\"202\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">40 - 36 = 4 birim  |  49 - 40 = 9 birim  =&gt;  6’ya daha yakındır!</text><rect x=\"35\" y=\"250\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Onda Birler Basamağına Kadar Tahmin</text><text x=\"202\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">karekök(40) ≈ 6,3  (Tam ortası 6,5 olduğundan 6,5’ten küçüktür).</text><rect x=\"35\" y=\"300\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Sayı Doğrusunda Gösterim Adımı</text><text x=\"202\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Önce tam sayı aralığı, sonra yakın olduğu uç belirlenerek işaretlenir.</text><rect x=\"400\" y=\"56\" width=\"380\" height=\"290\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"80\" font-family=\"sans-serif\" font-size=\"11.8\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">2. KATSAYIYI KÖK DIŞINA ÇIKARMA VE İÇİNE ALMA</text><rect x=\"415\" y=\"100\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">1. Çarpanı Kök Dışına Çıkarma (a² · b -&gt; a kök b)</text><text x=\"590\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Kök içindeki tam kare çarpan (a²), kök dışına katsayı (a) olarak çıkar.</text><rect x=\"415\" y=\"150\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Örnekler: Karekök 72 ve Karekök 48</text><text x=\"590\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">72 = 36 · 2 =&gt; 6 kök 2   |   48 = 16 · 3 =&gt; 4 kök 3.</text><rect x=\"415\" y=\"200\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">2. Katsayıyı Kök İçine Alma (a -&gt; a²)</text><text x=\"590\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Kök dışındaki pozitif katsayı (a), karesi alınarak (a²) kök içine girer.</text><rect x=\"415\" y=\"250\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Örnekler: 5 kök 3 ve 3 kök 7</text><text x=\"590\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">5² · 3 = 25 · 3 = karekök(75)  |  3² · 7 = 9 · 7 = karekök(63).</text><rect x=\"415\" y=\"300\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Kareköklü Sayılarda Sıralama Kuralı</text><text x=\"590\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Katsayılar kök içine alınır: karekök(75) &gt; 6 (karekök 36) &gt; karekök(18).</text><rect x=\"20\" y=\"360\" width=\"760\" height=\"48\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"400\" y=\"380\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">NEGATİF SIRALAMA UYARISI: Eksi (-) işareti kök içine GİRMEZ! Kök dışındaki eksi korunarak katsayının karesi alınır!</text><text x=\"400\" y=\"398\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Asal çarpan algoritmasında çift olan her iki aynı asal çarpandan biri kök dışına çıkar, tek kalanlar kök içinde çarpılır.</text></svg>"
-  },
-  {
-   "baslik": "2. Kareköklü Bir İfadeyi a{kok:b} Biçiminde Yazma ve Katsayıyı Kök İçine Alma",
-   "metin": [
-    "Tam kare olmayan pek çok sayı, bir {koyu:tam kare sayı} ile başka bir sayının çarpımı şeklinde yazılabilir:\n{koyu:A) Kök İçindeki Sayıyı a{kok:b} Biçiminde Yazma (Kök Dışına Çıkarma):}\n• {koyu:1. Yol (Tam Kare Çarpan Yöntemi):} Sayı, çarpanlarından biri tam kare olacak şekilde parçalanır:\n  - {kok:50} = {kok:25 · 2} = {koyu:5{kok:2}}\n  - {kok:72} = {kok:36 · 2} = {koyu:6{kok:2}}  (Not: {kok:72} = {kok:9 · 8} = {koyu:3{kok:8}} veya {kok:4 · 18} = {koyu:2{kok:18}} şeklinde de yazılabilir!)\n  - {kok:108} = {kok:36 · 3} = {koyu:6{kok:3}}.\n• {koyu:2. Yol (Asal Çarpan Algoritması):} Sayı asal çarpanlarına ayrılır; {koyu:ikişerli eşleşen her sayı çiftinden bir tanesi kök dışına çıkar}, eşleşmeyenler kök içinde çarpılır.",
-    "{koyu:B) Katsayıyı Kök İçine Alma (a{kok:b} = {kok:a² · b}):}\nKök dışındaki katsayı kök içine girerken {koyu:karesi alınarak} içeri girer ve içerideki sayıyla çarpılır:\n• 4{kok:3} = {kok:4² · 3} = {kok:16 · 3} = {koyu:{kok:48}}\n• 3{kok:5} = {kok:3² · 5} = {kok:9 · 5} = {koyu:{kok:45}}\n• 2{kok:10} = {kok:2² · 10} = {kok:4 · 10} = {koyu:{kok:40}}.\n{koyu:C) Kareköklü Sayıları Sıralama:} Bütün katsayılar kök içine alınır:\n• *4{kok:3}, 3{kok:5} ve 7* sayılarını sıralarken: 4{kok:3} = {koyu:{kok:48}}, 3{kok:5} = {koyu:{kok:45}}, 7 = {koyu:{kok:49}} yazılır -> {koyu:7 > 4{kok:3} > 3{kok:5}} bulunur."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "1’in Kök Dışında Gizli Olduğunu ve Negatif İşareti Unutmayın!",
-    "metin": "• {koyu:{kok:80} = a{kok:b}} eşitliğinde a ve b birer doğal sayı ise {koyu:1{kok:80}} (a=1, b=80), {koyu:2{kok:20}} (a=2, b=20) ve {koyu:4{kok:5}} (a=4, b=5) olmak üzere {koyu:3 farklı (a, b) ikilisi} yazılabilir!\n• {koyu:-5{kok:2}} ifadesinde eksi (-) işareti kök içine girmez: -5{kok:2} = {koyu:-{kok:50}} olur!"
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Alanı 90 cm² olan kare şeklindeki bir kartonun bir kenar uzunluğu hangi iki ardışık doğal sayı arasındadır ve hangisine daha yakındır?",
-   "cevap": "1. Karenin bir kenar uzunluğu {koyu:{kok:90} cm}’dir.\n2. 90 sayısından küçük en büyük tam kare {koyu:81}, büyük en küçük tam kare {koyu:100}’dür:\n{kok:81} < {kok:90} < {kok:100}  =>  {koyu:9 < {kok:90} < 10} (9 cm ile 10 cm arasındadır).\n3. Farklar: 90 - 81 = {koyu:9 birim} ve 100 - 90 = {koyu:10 birim} olduğundan 81’e daha yakındır; dolayısıyla kenar uzunluğu {koyu:9 cm’ye daha yakındır}."
-  },
-  {
-   "soru": "{kok:180} sayısını a{kok:b} biçiminde en sade hâliyle (b en küçük olacak şekilde) yazınız.",
-   "cevap": "180 sayısının en büyük tam kare çarpanı {koyu:36}’dır (180 = 36 · 5). O hâlde:\n{kok:180} = {kok:36 · 5} = {koyu:6{kok:5}} olarak yazılır (Burada a = 6 ve b = 5’tir)."
-  },
-  {
-   "soru": "x = 5{kok:2}, y = 3{kok:6} ve z = 7 sayılarını küçükten büyüğe doğru sıralayınız.",
-   "cevap": "Üç sayıyı da kök içine alalım:\n• x = 5{kok:2} = {kok:25 · 2} = {koyu:{kok:50}}\n• y = 3{kok:6} = {kok:9 · 6} = {koyu:{kok:54}}\n• z = 7 = {kok:7²} = {koyu:{kok:49}}\nKök içlerini karşılaştırdığımızda 49 < 50 < 54 olduğundan sıralama: {koyu:z < x < y} (yani {koyu:7 < 5{kok:2} < 3{kok:6}}) olur."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "{kok:115} sayısı sayı doğrusunda hangi iki ardışık tam sayı arasındadır ve hangisine daha yakındır?",
-   "secenekler": [
-    "9 ile 10 arasında, 10’a daha yakın",
-    "10 ile 11 arasında, 10’a daha yakın",
-    "10 ile 11 arasında, 11’e daha yakın",
-    "11 ile 12 arasında, 11’e daha yakın",
-    "11 ile 12 arasında, 12’ye daha yakın"
-   ],
-   "dogru": 2,
-   "aciklama": "{kok:100} < {kok:115} < {kok:121} olduğu için 10 ile 11 arasındadır. 115 - 100 = 15 birim, 121 - 115 = 6 birim olduğundan 121’e yani 11’e daha yakındır."
-  },
-  {
-   "tur": "coktan",
-   "soru": "{kok:98} kareköklü ifadesinin a{kok:b} biçimindeki yazılışı aşağıdakilerden hangisidir?",
-   "secenekler": [
-    "6{kok:3}",
-    "7{kok:2}",
-    "8{kok:2}",
-    "7{kok:3}",
-    "9{kok:2}"
-   ],
-   "dogru": 1,
-   "aciklama": "98 = 49 · 2 olduğundan {kok:98} = {kok:49 · 2} = 7{kok:2}’dir."
-  },
-  {
-   "tur": "coktan",
-   "soru": "K = 4{kok:5}, L = 6{kok:2} ve M = 5{kok:3} kareköklü sayılarının büyükten küçüğe doğru sıralanışı aşağıdakilerden hangisidir?",
-   "secenekler": [
-    "K > M > L",
-    "K > L > M",
-    "M > K > L",
-    "L > K > M",
-    "M > L > K"
-   ],
-   "dogru": 0,
-   "aciklama": "Katsayıları kök içine alırsak: K = {kok:16·5} = {kok:80}, L = {kok:36·2} = {kok:72} ve M = {kok:25·3} = {kok:75} olur. {kok:80} > {kok:75} > {kok:72} olduğundan K > M > L’dir."
-  },
-  {
-   "tur": "coktan",
-   "soru": "a ve b birer pozitif tam sayı olmak üzere {kok:72} = a{kok:b} eşitliğinde (a + b) toplamı aşağıdakilerden hangisi olamaz?",
-   "secenekler": [
-    "73 (a=1, b=72)",
-    "20 (a=2, b=18)",
-    "11 (a=3, b=8)",
-    "8 (a=6, b=2)",
-    "10 (a=4, b=6)"
-   ],
-   "dogru": 4,
-   "aciklama": "4{kok:6} = {kok:16·6} = {kok:96} eder, {kok:72} etmez! Diğer dört seçenek (1{kok:72}, 2{kok:18}, 3{kok:8} ve 6{kok:2}) {kok:72}’ye eşittir."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Sayı doğrusunda 8 noktasının üzerinde duran bir oyuncak araba, sağa doğru {kok:30} birim ilerlediğinde son konumu hangi iki ardışık doğal sayı arasında olur?",
-   "secenekler": [
-    "11 ile 12 arasında",
-    "12 ile 13 arasında",
-    "13 ile 14 arasında",
-    "14 ile 15 arasında",
-    "15 ile 16 arasında"
-   ],
-   "dogru": 2,
-   "aciklama": "{kok:25} < {kok:30} < {kok:36} olduğundan {kok:30} sayısı 5 ile 6 arasındadır (yaklaşık 5,5). 8 sayısına 5 ile 6 arasında bir değer eklendiğinde sonuç 8+5=13 ile 8+6=14 arasında (13,5) olur."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "8-matematik-7",
+  "sinif": 8,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 7,
+  "tarih": "26-30 Ekim 2026",
+  "yayin_tarihi": "2026-10-28",
+  "unite": "Sayılar ve İşlemler",
+  "konu": "Kareköklü İfadeler: Tam Kare Olmayan Sayıların Karekökünü Tahmin Etme ve Katsayıyı Kök İçine/Dışına Alma",
+  "ciktilar": [
+    "Tam kare olmayan kareköklü bir sayının hangi iki doğal sayı arasında olduğunu belirler ve en yakın olduğu doğal sayıyı tahmin eder.",
+    "Kareköklü bir ifadeyi a{kok:b} biçiminde yazar ve a{kok:b} biçimindeki ifadede katsayıyı kök içine alır.",
+    "Katsayıları kök içine alarak kareköklü ifadeleri büyüklük-küçüklük yönünden karşılaştırır ve sıralar."
+  ],
+  "giris": "Geçen hafta alanı tam kare olan karesel bölgelerin bir kenar uzunluğunu tam sayı olarak bulmuştuk (örneğin {kok:36} = 6, {kok:49} = 7). Peki alanı 40 m² olan kare şeklindeki bir bahçenin bir kenar uzunluğu olan {koyu:{kok:40}} sayısı hangi iki tam sayı arasındadır ve sayı doğrusunda nereye yakındır? Bu hafta LGS’nin en temel kazanımlarından olan {koyu:tam kare olmayan kareköklü sayıların yaklaşık değerini tahmin etmeyi} ve {koyu:kareköklü ifadeleri a{kok:b} biçiminde yazıp sıralamayı} öğreniyoruz!",
+  "ozet": [
+    "{koyu:Yaklaşık Değer Tahmini:} Tam kare olmayan {kok:x} sayısının hangi iki doğal sayı arasında olduğunu bulmak için {koyu:x’ten küçük en büyük tam kare} ile {koyu:x’ten büyük en küçük tam kare} belirlenir.",
+    "{koyu:Hangisine Daha Yakın?} Kök içindeki x sayısı, alt ve üst tam kare komşularından hangisine sayıca daha yakınsa karekökü de o tam sayıya daha yakındır.",
+    "{koyu:a{kok:b} Biçiminde Yazma:} Kök içindeki sayı, çarpanlarından biri {koyu:en büyük tam kare} olacak şekilde {koyu:a² · b} biçiminde yazılır; a² kök dışına {koyu:a} olarak çıkar: {koyu:{kok:a² · b} = a{kok:b}}.",
+    "{koyu:Katsayıyı Kök İçine Alma:} Kök dışındaki pozitif {koyu:a} katsayısı, {koyu:karesi alınarak (a²)} kök içindeki b sayısıyla çarpılır: {koyu:a{kok:b} = {kok:a² · b}}.",
+    "{koyu:Karşılaştırma Kuralı:} Kareköklü sayılar sıralanırken {koyu:kök dışındaki katsayılar kök içine alınır}; pozitif sayılarda kök içi büyük olan daha büyüktür (negatiflerde ise tam tersidir!)."
+  ],
+  "bolumler": [
     {
-     "metin": "{kok:55} sayısı 7 ile 8 doğal sayıları arasındadır ve 7’ye daha yakındır.",
-     "dogru": true,
-     "aciklama": "{kok:49} < {kok:55} < {kok:64} (7 ile 8 arasında). 55 - 49 = 6 birim ve 64 - 55 = 9 birim olduğundan 49’a yani 7’ye daha yakındır."
+      "baslik": "Tam Kare Olmayan Sayıların Karekökünü Tahmin Etme",
+      "metin": [
+        "Kök içindeki sayı tam kare değilse karekökün sonucu bir doğal sayı olmaz. Böyle bir sayının sayı doğrusundaki yerini ve yaklaşık değerini 3 adımda buluruz:\n1. Kök içindeki sayıdan {koyu:küçük olan en büyük tam kare sayı} ile {koyu:büyük olan en küçük tam kare sayı} yazılır.\n2. Her iki sınırın karekökü alınarak sayının hangi iki ardışık doğal sayı arasında olduğu belirlenir.\n3. Kök içindeki sayının alt ve üst tam kare sayılara olan farklarına bakılarak {koyu:hangi doğal sayıya daha yakın olduğu} bulunur."
+      ],
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 424\" role=\"img\" aria-label=\"Konu özet şeması\"><text x=\"400\" y=\"32\" font-family=\"sans-serif\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">KAREKÖKLÜ İFADELER: YAKLAŞIK DEĞER TAHMİNİ VE KATSAYI İŞLEMLERİ</text><rect x=\"20\" y=\"56\" width=\"365\" height=\"290\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"80\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. TAM KARE OLMAYAN KAREKÖKÜ TAHMİN ETME</text><rect x=\"35\" y=\"100\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Hangi İki Doğal Sayı Arasında?</text><text x=\"202\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Sayının altındaki ve üstündeki en yakın tam kare sayılar belirlenir.</text><rect x=\"35\" y=\"150\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Örnek: Karekök 40 Hangi İki Tam Sayı Arasındadır?</text><text x=\"202\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">36 &lt; 40 &lt; 49  =&gt;  6 &lt; karekök(40) &lt; 7 (6 ile 7 arasındadır).</text><rect x=\"35\" y=\"200\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Hangisine Daha Yakındır? (Fark Kontrolü)</text><text x=\"202\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">40 - 36 = 4 birim  |  49 - 40 = 9 birim  =&gt;  6’ya daha yakındır!</text><rect x=\"35\" y=\"250\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Onda Birler Basamağına Kadar Tahmin</text><text x=\"202\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">karekök(40) ≈ 6,3  (Tam ortası 6,5 olduğundan 6,5’ten küçüktür).</text><rect x=\"35\" y=\"300\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Sayı Doğrusunda Gösterim Adımı</text><text x=\"202\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Önce tam sayı aralığı, sonra yakın olduğu uç belirlenerek işaretlenir.</text><rect x=\"400\" y=\"56\" width=\"380\" height=\"290\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"80\" font-family=\"sans-serif\" font-size=\"11.8\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">2. KATSAYIYI KÖK DIŞINA ÇIKARMA VE İÇİNE ALMA</text><rect x=\"415\" y=\"100\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">1. Çarpanı Kök Dışına Çıkarma (a² · b -&gt; a kök b)</text><text x=\"590\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Kök içindeki tam kare çarpan (a²), kök dışına katsayı (a) olarak çıkar.</text><rect x=\"415\" y=\"150\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Örnekler: Karekök 72 ve Karekök 48</text><text x=\"590\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">72 = 36 · 2 =&gt; 6 kök 2   |   48 = 16 · 3 =&gt; 4 kök 3.</text><rect x=\"415\" y=\"200\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">2. Katsayıyı Kök İçine Alma (a -&gt; a²)</text><text x=\"590\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Kök dışındaki pozitif katsayı (a), karesi alınarak (a²) kök içine girer.</text><rect x=\"415\" y=\"250\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Örnekler: 5 kök 3 ve 3 kök 7</text><text x=\"590\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">5² · 3 = 25 · 3 = karekök(75)  |  3² · 7 = 9 · 7 = karekök(63).</text><rect x=\"415\" y=\"300\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Kareköklü Sayılarda Sıralama Kuralı</text><text x=\"590\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Katsayılar kök içine alınır: karekök(75) &gt; 6 (karekök 36) &gt; karekök(18).</text><rect x=\"20\" y=\"360\" width=\"760\" height=\"48\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"400\" y=\"380\" font-family=\"sans-serif\" font-size=\"10.2\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">NEGATİF SIRALAMA UYARISI: Eksi (-) işareti kök içine GİRMEZ! Kök dışındaki eksi korunarak katsayının karesi alınır!</text><text x=\"400\" y=\"398\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Asal çarpan algoritmasında çift olan her iki aynı asal çarpandan biri kök dışına çıkar, tek kalanlar kök içinde çarpılır.</text></svg>"
     },
     {
-     "metin": "3{kok:7} ifadesinde katsayı kök içine alındığında {kok:21} elde edilir.",
-     "dogru": false,
-     "aciklama": "Yanlıştır; 3 kök içine karesi (9) alınarak girer: 3{kok:7} = {kok:9 · 7} = {kok:63} olur."
+      "baslik": "LGS Sayı Doğrusu ve Cetvel Sorularında Altın Taktik!",
+      "metin": [
+        "{koyu:Örnek 1 ({kok:43} Sayısı):}\n• 43 sayısından küçük en büyük tam kare {koyu:36}, büyük en küçük tam kare {koyu:49}’dur:\n  {kok:36} < {kok:43} < {kok:49}  =>  {koyu:6 < {kok:43} < 7} ({kok:43} sayısı {koyu:6 ile 7 arasındadır}).\n• Yakınlık kontrolü: 43 - 36 = {koyu:7 birim}  |  49 - 43 = {koyu:6 birim}.\n• 43 sayısı 49’a daha yakın (6 < 7) olduğu için {koyu:{kok:43} sayısı 7’ye daha yakındır} (buçuk noktası olan 6,5’ten büyüktür; yaklaşık {koyu:6,6}’dır)."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "LGS Sayı Doğrusu ve Cetvel Sorularında Altın Taktik!",
+        "metin": "Bir kalemin boyu veya bir çekirgenin zıplama mesafesi sorulduğunda, verilen tam sayı sınırlarını hemen {koyu:karekök içine alın}!\n• Örneğin *“Kalemin boyu 7 cm ile 8 cm arasındadır ve 8’e daha yakındır”* deniyorsa:\n  7 = {koyu:{kok:49}} ve 8 = {koyu:{kok:64}} yazılır; şıklarda {koyu:{kok:49} ile {kok:64} arasında olup 64’e daha yakın olan} (örneğin {koyu:{kok:60}}) hemen işaretlenir!"
+      }
     },
     {
-     "metin": "{kok:128} sayısı a{kok:b} biçiminde en sade hâliyle 8{kok:2} olarak yazılır.",
-     "dogru": true,
-     "aciklama": "128 = 64 · 2 olduğundan {kok:128} = {kok:64 · 2} = 8{kok:2}’dir."
+      "baslik": "Kareköklü Bir İfadeyi a{kok:b} Biçiminde Yazma",
+      "metin": [
+        "Tam kare olmayan pek çok sayı, bir {koyu:tam kare sayı} ile başka bir sayının çarpımı şeklinde yazılabilir:\n{koyu:A) Kök İçindeki Sayıyı a{kok:b} Biçiminde Yazma (Kök Dışına Çıkarma):}\n• {koyu:1. Yol (Tam Kare Çarpan Yöntemi):} Sayı, çarpanlarından biri tam kare olacak şekilde parçalanır:\n  - {kok:50} = {kok:25 · 2} = {koyu:5{kok:2}}\n  - {kok:72} = {kok:36 · 2} = {koyu:6{kok:2}}  (Not: {kok:72} = {kok:9 · 8} = {koyu:3{kok:8}} veya {kok:4 · 18} = {koyu:2{kok:18}} şeklinde de yazılabilir!)\n  - {kok:108} = {kok:36 · 3} = {koyu:6{kok:3}}.\n• {koyu:2. Yol (Asal Çarpan Algoritması):} Sayı asal çarpanlarına ayrılır; {koyu:ikişerli eşleşen her sayı çiftinden bir tanesi kök dışına çıkar}, eşleşmeyenler kök içinde çarpılır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 460 214\" role=\"img\" aria-label=\"Kareköklü İfadeler: Tam Kare Olmayan Sayıl kavram özeti şeması\"><rect x=\"90\" y=\"12\" width=\"280\" height=\"38\" rx=\"19\" class=\"g-mf\"/><text x=\"230\" y=\"36\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"800\" class=\"g-b\">Kareköklü İfadeler: Tam Kare Olmayan Sayıl</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ma\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"116\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">1. Bölüm</text><text x=\"116\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Tam Kare Olmayan Sayıların Karek…</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ta\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"344\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">2. Bölüm</text><text x=\"344\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">LGS Sayı Doğrusu ve Cetvel Sorul…</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ya\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"116\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-yf\">3. Bölüm</text><text x=\"116\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Kareköklü Bir İfadeyi a Biçimind…</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-oa\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"344\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-of\">4. Bölüm</text><text x=\"344\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Katsayıyı Kök İçine Alma</text></svg>"
     },
     {
-     "metin": "Negatif kareköklü sayılardan -2{kok:5} sayısı, -3{kok:3} sayısından daha büyüktür.",
-     "dogru": true,
-     "aciklama": "-2{kok:5} = -{kok:20} ve -3{kok:3} = -{kok:27}’dir. Negatif sayılarda sıfıra yakın olan (-{kok:20}) daha büyüktür."
-    },
-    {
-     "metin": "{kok:2} + {kok:3} işleminin sonucu {kok:5}’e eşittir.",
-     "dogru": false,
-     "aciklama": "Yanlıştır; kareköklü ifadelerde kök içleri doğrudan toplanamaz!"
+      "baslik": "Katsayıyı Kök İçine Alma",
+      "metin": [
+        "{koyu:B) Katsayıyı Kök İçine Alma (a{kok:b} = {kok:a² · b}):}\nKök dışındaki katsayı kök içine girerken {koyu:karesi alınarak} içeri girer ve içerideki sayıyla çarpılır:\n• 4{kok:3} = {kok:4² · 3} = {kok:16 · 3} = {koyu:{kok:48}}\n• 3{kok:5} = {kok:3² · 5} = {kok:9 · 5} = {koyu:{kok:45}}\n• 2{kok:10} = {kok:2² · 10} = {kok:4 · 10} = {koyu:{kok:40}}.\n{koyu:C) Kareköklü Sayıları Sıralama:} Bütün katsayılar kök içine alınır:\n• *4{kok:3}, 3{kok:5} ve 7* sayılarını sıralarken: 4{kok:3} = {koyu:{kok:48}}, 3{kok:5} = {koyu:{kok:45}}, 7 = {koyu:{kok:49}} yazılır -> {koyu:7 > 4{kok:3} > 3{kok:5}} bulunur."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "1’in Kök Dışında Gizli Olduğunu ve Negatif İşareti Unutmayın!",
+        "metin": "{koyu:{kok:80} = a{kok:b}} eşitliğinde a ve b birer doğal sayı ise {koyu:1{kok:80}} (a=1, b=80), {koyu:2{kok:20}} (a=2, b=20) ve {koyu:4{kok:5}} (a=4, b=5) olmak üzere {koyu:3 farklı (a, b) ikilisi} yazılabilir!\n• {koyu:-5{kok:2}} ifadesinde eksi (-) işareti kök içine girmez: -5{kok:2} = {koyu:-{kok:50}} olur!"
+      }
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "soru": "Aşağıdaki kareköklü ifadeleri eşitleriyle eşleştiriniz.",
-   "ciftler": [
-    [
-     "{kok:75}",
-     "5{kok:3}"
-    ],
-    [
-     "{kok:80}",
-     "4{kok:5}"
-    ],
-    [
-     "{kok:108}",
-     "6{kok:3}"
-    ],
-    [
-     "2{kok:7}",
-     "{kok:28}"
-    ],
-    [
-     "10{kok:2}",
-     "{kok:200}"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun sayı veya ifadelerle tamamlayınız.",
-   "cumleler": [
+  ],
+  "ornekler": [
     {
-     "metin": "{kok:68} sayısı sayı doğrusunda 8 ile ___ doğal sayıları arasındadır.",
-     "cevap": "9"
+      "soru": "Alanı 90 cm² olan kare şeklindeki bir kartonun bir kenar uzunluğu hangi iki ardışık doğal sayı arasındadır ve hangisine daha yakındır?",
+      "cevap": "1. Karenin bir kenar uzunluğu {koyu:{kok:90} cm}’dir.\n2. 90 sayısından küçük en büyük tam kare {koyu:81}, büyük en küçük tam kare {koyu:100}’dür:\n{kok:81} < {kok:90} < {kok:100}  =>  {koyu:9 < {kok:90} < 10} (9 cm ile 10 cm arasındadır).\n3. Farklar: 90 - 81 = {koyu:9 birim} ve 100 - 90 = {koyu:10 birim} olduğundan 81’e daha yakındır; dolayısıyla kenar uzunluğu {koyu:9 cm’ye daha yakındır}."
     },
     {
-     "metin": "{kok:32} sayısı en yakın tam sayıya yuvarlandığında ___ doğal sayısına daha yakındır.",
-     "cevap": "6"
+      "soru": "{kok:180} sayısını a{kok:b} biçiminde en sade hâliyle (b en küçük olacak şekilde) yazınız.",
+      "cevap": "180 sayısının en büyük tam kare çarpanı {koyu:36}’dır (180 = 36 · 5). O hâlde:\n{kok:180} = {kok:36 · 5} = {koyu:6{kok:5}} olarak yazılır (Burada a = 6 ve b = 5’tir)."
     },
     {
-     "metin": "4{kok:6} ifadesinde katsayı kök içine alındığında kök içindeki sayı ___ olur.",
-     "cevap": "96"
+      "soru": "x = 5{kok:2}, y = 3{kok:6} ve z = 7 sayılarını küçükten büyüğe doğru sıralayınız.",
+      "cevap": "Üç sayıyı da kök içine alalım:\n• x = 5{kok:2} = {kok:25 · 2} = {koyu:{kok:50}}\n• y = 3{kok:6} = {kok:9 · 6} = {koyu:{kok:54}}\n• z = 7 = {kok:7²} = {koyu:{kok:49}}\nKök içlerini karşılaştırdığımızda 49 < 50 < 54 olduğundan sıralama: {koyu:z < x < y} (yani {koyu:7 < 5{kok:2} < 3{kok:6}}) olur."
     },
     {
-     "metin": "{kok:147} = a{kok:3} eşitliğinde a yerine ___ gelmelidir.",
-     "cevap": "7"
+      "soru": "Sayı doğrusunda 8 noktasının üzerinde duran bir oyuncak araba, sağa doğru {kok:30} birim ilerlediğinde son konumu hangi iki ardışık doğal sayı arasında olur?",
+      "cevap": "Doğru yanıt: 13 ile 14 arasında. {kok:25} < {kok:30} < {kok:36} olduğundan {kok:30} sayısı 5 ile 6 arasındadır (yaklaşık 5,5). 8 sayısına 5 ile 6 arasında bir değer eklendiğinde sonuç 8+5=13 ile 8+6=14 arasında (13,5) olur."
     },
     {
-     "metin": "{kok:50} ile {kok:110} arasında toplam ___ tane doğal sayı vardır.",
-     "cevap": "3"
+      "soru": "‘Tam Kare Olmayan Sayıların Karekökünü Tahmin Etme’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
+      "cevap": "Kök içindeki sayı tam kare değilse karekökün sonucu bir doğal sayı olmaz. Böyle bir sayının sayı doğrusundaki yerini ve yaklaşık değerini 3 adımda buluruz:\n1. Kök içindeki sayıdan {koyu:küçük olan en büyük tam kare sayı} ile {koyu:büyük olan en küçük tam kare sayı} yazılır.\n2. Her iki sınırın karekökü alınarak sayının hangi iki ardışık doğal sayı arasında olduğu belirlenir.\n3. Kök içindeki sayının alt ve üst tam kare sayılara olan farklarına bakılarak {koyu:hangi doğal sayıya daha yakın olduğu} bulunur."
+    },
+    {
+      "soru": "‘LGS Sayı Doğrusu ve Cetvel Sorularında Altın Taktik!’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
+      "cevap": "{koyu:Örnek 1 ({kok:43} Sayısı):}\n• 43 sayısından küçük en büyük tam kare {koyu:36}, büyük en küçük tam kare {koyu:49}’dur:\n  {kok:36} < {kok:43} < {kok:49}  =>  {koyu:6 < {kok:43} < 7} ({kok:43} sayısı {koyu:6 ile 7 arasındadır}).\n• Yakınlık kontrolü: 43 - 36 = {koyu:7 birim}  |  49 - 43 = {koyu:6 birim}.\n• 43 sayısı 49’a daha yakın (6 < 7) olduğu için {koyu:{kok:43} sayısı 7’ye daha yakındır} (buçuk noktası olan 6,5’ten büyüktür; yaklaşık {koyu:6,6}’dır)."
     }
-   ],
-   "fazla": [
-    "5",
-    "24"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "1) {kok:85} sayısının hangi iki doğal sayı arasında olduğunu ve hangisine daha yakın olduğunu bulunuz. 2) {kok:240} sayısını asal çarpan algoritması veya tam kare çarpan yöntemiyle a{kok:b} biçiminde en sade hâliyle yazınız.",
-   "ipuclari": [
-    "1. İpucu: 85 sayısının alt ve üst tam kare komşularını (81 ve 100) yazarak farklarını karşılaştırınız.",
-    "2. İpucu: 240 sayısının en büyük tam kare çarpanını (16 · 15 = 240) kullanarak kök dışına çıkarınız."
-   ],
-   "cevap": "1) {kok:85} Sayısının Yaklaşık Değeri:\n85 sayısından küçük en büyük tam kare 81, büyük en küçük tam kare 100’dür. {kok:81} < {kok:85} < {kok:100} olduğundan {kok:85} sayısı 9 ile 10 arasındadır. 85 - 81 = 4 birim ve 100 - 85 = 15 birim olduğundan 81’e çok daha yakındır; yani {kok:85} sayısı 9’a daha yakındır (yaklaşık 9,2).\n2) {kok:240} Sayısını a{kok:b} Biçiminde Yazma:\n240 = 16 · 15 olarak yazılır. 16 tam kare sayısı kök dışına 4 olarak çıkar, 15 kök içinde kalır: {kok:240} = {kok:16 · 15} = 4{kok:15} bulunur."
-  }
- ]
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "{kok:115} sayısı sayı doğrusunda hangi iki ardışık tam sayı arasındadır ve hangisine daha yakındır?",
+      "secenekler": [
+        "10 ile 11 arasında, 11’e daha yakın",
+        "10 ile 11 arasında, 10’a daha yakın",
+        "11 ile 12 arasında, 11’e daha yakın",
+        "9 ile 10 arasında, 10’a daha yakın"
+      ],
+      "dogru": 0,
+      "aciklama": "{kok:100} < {kok:115} < {kok:121} olduğu için 10 ile 11 arasındadır. 115 - 100 = 15 birim, 121 - 115 = 6 birim olduğundan 121’e yani 11’e daha yakındır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "{kok:98} kareköklü ifadesinin a{kok:b} biçimindeki yazılışı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "6{kok:3}",
+        "7{kok:2}",
+        "7{kok:3}",
+        "8{kok:2}"
+      ],
+      "dogru": 1,
+      "aciklama": "98 = 49 · 2 olduğundan {kok:98} = {kok:49 · 2} = 7{kok:2}’dir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "K = 4{kok:5}, L = 6{kok:2} ve M = 5{kok:3} kareköklü sayılarının büyükten küçüğe doğru sıralanışı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "K > L > M",
+        "M > K > L",
+        "K > M > L",
+        "L > K > M"
+      ],
+      "dogru": 2,
+      "aciklama": "Katsayıları kök içine alırsak: K = {kok:16·5} = {kok:80}, L = {kok:36·2} = {kok:72} ve M = {kok:25·3} = {kok:75} olur. {kok:80} > {kok:75} > {kok:72} olduğundan K > M > L’dir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "a ve b birer pozitif tam sayı olmak üzere {kok:72} = a{kok:b} eşitliğinde (a + b) toplamı aşağıdakilerden hangisi olamaz?",
+      "secenekler": [
+        "73 (a=1, b=72)",
+        "20 (a=2, b=18)",
+        "11 (a=3, b=8)",
+        "10 (a=4, b=6)"
+      ],
+      "dogru": 3,
+      "aciklama": "4{kok:6} = {kok:16·6} = {kok:96} eder, {kok:72} etmez! Diğer dört seçenek (1{kok:72}, 2{kok:18}, 3{kok:8} ve 6{kok:2}) {kok:72}’ye eşittir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "{kok:55} sayısı 7 ile 8 doğal sayıları arasındadır ve 7’ye daha yakındır.",
+          "dogru": true,
+          "aciklama": "{kok:49} < {kok:55} < {kok:64} (7 ile 8 arasında). 55 - 49 = 6 birim ve 64 - 55 = 9 birim olduğundan 49’a yani 7’ye daha yakındır."
+        },
+        {
+          "metin": "Verilen 3{kok:7} ifadesinde katsayı kök içine alındığında {kok:21} elde edilir.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; 3 kök içine karesi (9) alınarak girer: 3{kok:7} = {kok:9 · 7} = {kok:63} olur."
+        },
+        {
+          "metin": "{kok:128} sayısı a{kok:b} biçiminde en sade hâliyle 8{kok:2} olarak yazılır.",
+          "dogru": true,
+          "aciklama": "128 = 64 · 2 olduğundan {kok:128} = {kok:64 · 2} = 8{kok:2}’dir."
+        },
+        {
+          "metin": "Negatif kareköklü sayılardan -2{kok:5} sayısı, -3{kok:3} sayısından daha büyüktür.",
+          "dogru": true,
+          "aciklama": "-2{kok:5} = -{kok:20} ve -3{kok:3} = -{kok:27}’dir. Negatif sayılarda sıfıra yakın olan (-{kok:20}) daha büyüktür."
+        },
+        {
+          "metin": "{kok:2} + {kok:3} işleminin sonucu {kok:5}’e eşittir.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; kareköklü ifadelerde kök içleri doğrudan toplanamaz!"
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kareköklü ifadeleri eşitleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "{kok:75}",
+          "5{kok:3}"
+        ],
+        [
+          "{kok:80}",
+          "4{kok:5}"
+        ],
+        [
+          "{kok:108}",
+          "6{kok:3}"
+        ],
+        [
+          "2{kok:7}",
+          "{kok:28}"
+        ],
+        [
+          "10{kok:2}",
+          "{kok:200}"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "{kok:68} sayısı sayı doğrusunda 8 ile ___ doğal sayıları arasındadır.",
+          "cevap": "9"
+        },
+        {
+          "metin": "{kok:32} sayısı en yakın tam sayıya yuvarlandığında ___ doğal sayısına daha yakındır.",
+          "cevap": "6"
+        },
+        {
+          "metin": "Verilen 4{kok:6} ifadesinde katsayı kök içine alındığında kök içindeki sayı ___ olur.",
+          "cevap": "96"
+        },
+        {
+          "metin": "{kok:147} = a{kok:3} eşitliğinde a yerine ___ gelmelidir.",
+          "cevap": "7"
+        },
+        {
+          "metin": "{kok:50} ile {kok:110} arasında toplam ___ tane doğal sayı vardır.",
+          "cevap": "3"
+        }
+      ],
+      "fazla": [
+        "5",
+        "24"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Verilen 1) {kok:85} sayısının hangi iki doğal sayı arasında olduğunu ve hangisine daha yakın olduğunu bulunuz. 2) {kok:240} sayısını asal çarpan algoritması veya tam kare çarpan yöntemiyle a{kok:b} biçiminde en sade hâliyle yazınız.",
+      "cevap": "1) {kok:85} Sayısının Yaklaşık Değeri:\n85 sayısından küçük en büyük tam kare 81, büyük en küçük tam kare 100’dür. {kok:81} < {kok:85} < {kok:100} olduğundan {kok:85} sayısı 9 ile 10 arasındadır. 85 - 81 = 4 birim ve 100 - 85 = 15 birim olduğundan 81’e çok daha yakındır; yani {kok:85} sayısı 9’a daha yakındır (yaklaşık 9,2).\n2) {kok:240} Sayısını a{kok:b} Biçiminde Yazma:\n240 = 16 · 15 olarak yazılır. 16 tam kare sayısı kök dışına 4 olarak çıkar, 15 kök içinde kalır: {kok:240} = {kok:16 · 15} = 4{kok:15} bulunur.",
+      "ipuclari": [
+        "1. İpucu: 85 sayısının alt ve üst tam kare komşularını (81 ve 100) yazarak farklarını karşılaştırınız.",
+        "2. İpucu: 240 sayısının en büyük tam kare çarpanını (16 · 15 = 240) kullanarak kök dışına çıkarınız."
+      ]
+    }
+  ]
 }

@@ -32,14 +32,14 @@ def _baslik(W, H, etiket, baslik_metni, renk):
 
 
 def gorsel_1():
-    """Music Through the Decades (1940s - 2000s) & Forum Comments"""
+    """Music Through the Decades (1940s - 2000s) &amp; Forum Comments"""
     W, H = 720, 320
-    s = _baslik(W, H, "DECADES", "Music Through the Decades (40s – 2000s) & Inferring Ideas", RENK["mor"])
+    s = _baslik(W, H, "DECADES", "Music Through the Decades (40s – 2000s) &amp; Inferring Ideas", RENK["mor"])
     decades = [
-        ("1940s & 50s", "Jazz, Swing & Rock 'n' Roll", "Big bands, vinyl records", "Lively, nostalgic & rhythmic", RENK["turuncu"], RENK["acik_turuncu"]),
-        ("1980s", "Pop, Synth-Pop & Glam Rock", "Cassettes, synthesizers", "Energetic, flashy & danceable", RENK["mavi"], RENK["acik_mavi"]),
-        ("1990s", "Grunge, Hip-Hop & Teen Pop", "CDs, Walkman, music TV", "Emotional, rebellious & catchy", RENK["yesil"], RENK["acik_yesil"]),
-        ("2000s & Today", "R&B, EDM & Indie Streaming", "MP3 players & smartphones", "Digital, global & diverse", RENK["kirmizi"], RENK["acik_kirmizi"]),
+        ("1940s &amp; 50s", "Jazz, Swing &amp; Rock 'n' Roll", "Big bands, vinyl records", "Lively, nostalgic &amp; rhythmic", RENK["turuncu"], RENK["acik_turuncu"]),
+        ("1980s", "Pop, Synth-Pop &amp; Glam Rock", "Cassettes, synthesizers", "Energetic, flashy &amp; danceable", RENK["mavi"], RENK["acik_mavi"]),
+        ("1990s", "Grunge, Hip-Hop &amp; Teen Pop", "CDs, Walkman, music TV", "Emotional, rebellious &amp; catchy", RENK["yesil"], RENK["acik_yesil"]),
+        ("2000s &amp; Today", "R&amp;B, EDM &amp; Indie Streaming", "MP3 players &amp; smartphones", "Digital, global &amp; diverse", RENK["kirmizi"], RENK["acik_kirmizi"]),
     ]
     for i, (dec, genre, media, mood, rk, ark) in enumerate(decades):
         x = 20 + i * 172
@@ -62,9 +62,9 @@ def gorsel_1():
 
 
 def gorsel_2():
-    """Agreeing & Disagreeing Expressions"""
+    """Agreeing &amp; Disagreeing Expressions"""
     W, H = 720, 340
-    s = _baslik(W, H, "SPEAKING", "Expressing Agreement, Partial Agreement & Disagreement", RENK["mavi"])
+    s = _baslik(W, H, "SPEAKING", "Expressing Agreement, Partial Agreement &amp; Disagreement", RENK["mavi"])
     cols = [
         ("Strong Agreement (+)", RENK["yesil"], RENK["acik_yesil"], [
             "• I couldn't agree more.",
@@ -104,20 +104,20 @@ def gorsel_2():
 
 
 def gorsel_3():
-    """Analyzing Music Festival Advertisements & Posters"""
+    """Analyzing Music Festival Advertisements &amp; Görsel panos"""
     W, H = 720, 320
-    s = _baslik(W, H, "LISTENING", "Analyzing Music Festival Ads & Announcements", RENK["turuncu"])
+    s = _baslik(W, H, "LISTENING", "Analyzing Music Festival Ads &amp; Announcements", RENK["turuncu"])
     s += f'<rect x="24" y="64" width="310" height="236" rx="12" fill="{RENK["lacivert"]}" stroke="{RENK["turuncu"]}" stroke-width="2"/>'
     s += f'<text x="179" y="95" text-anchor="middle" font-size="16" font-weight="800" fill="#facc15">SUMMER SOUND FEST</text>'
     s += f'<text x="179" y="116" text-anchor="middle" font-size="11.5" fill="#cbd5e1">Live Jazz • Indie • Rock • Acoustic</text>'
     s += f'<line x1="48" y1="128" x2="310" y2="128" stroke="#475569"/>'
-    poster_rows = [
+    görsel pano_rows = [
         ("VENUE:", "City Park Open-Air Arena"),
         ("DATES:", "July 18 – 20 (Fri–Sun)"),
         ("TIMES:", "Gates open 16:00 | Concerts 18:00–23:30"),
         ("TICKETS:", "$25/day | $60 Full Pass (Students 20% off)"),
     ]
-    for i, (k, v) in enumerate(poster_rows):
+    for i, (k, v) in enumerate(görsel pano_rows):
         yy = 152 + i * 36
         s += f'<text x="44" y="{yy}" font-size="11.5" font-weight="700" fill="#38bdf8">{k}</text>'
         s += f'<text x="110" y="{yy}" font-size="11" fill="#fff">{v}</text>'
@@ -128,7 +128,7 @@ def gorsel_3():
         ("1. Where is the event? (Venue)", "Look for halls, stadiums, parks, arenas."),
         ("2. When does it take place? (Dates)", "Check day/month range and weekend dates."),
         ("3. What time does it start/end? (Times)", "Distinguish gate opening vs. main stage time."),
-        ("4. How much / Who is it for? (Tickets)", "Look for daily vs. full pass & discounts."),
+        ("4. How much / Who is it for? (Tickets)", "Look for daily vs. full pass &amp; discounts."),
     ]
     for i, (q, ans) in enumerate(q_list):
         yy = 122 + i * 44
@@ -141,7 +141,7 @@ def gorsel_3():
 def gorsel_4():
     """Quantifiers for Interpreting Survey Charts"""
     W, H = 720, 340
-    s = _baslik(W, H, "QUANTIFIERS", "Expressing Percentages & Proportions in Survey Charts", RENK["yesil"])
+    s = _baslik(W, H, "QUANTIFIERS", "Expressing Percentages &amp; Proportions in Survey Charts", RENK["yesil"])
     bars = [
         ("78%", "The (vast) majority of / Nearly four-fifths of", 420, RENK["yesil"]),
         ("56%", "Over half of / More than half of", 300, RENK["mavi"]),
@@ -168,7 +168,7 @@ def gorsel_5():
     steps = [
         ("1. Introduction", "State what the chart/survey is about", "This bar chart illustrates the music preferences of 100 12th-grade students.", RENK["mavi"], RENK["acik_mavi"]),
         ("2. Key Finding", "Highlight the most important outcome", "Overall, the vast majority of teenagers prefer listening to pop and hip-hop.", RENK["yesil"], RENK["acik_yesil"]),
-        ("3. Detailed Figures", "Give percentages & compare categories", "Over half of the students (55%) chose pop, whereas only a small fraction (8%) picked jazz.", RENK["turuncu"], RENK["acik_turuncu"]),
+        ("3. Detailed Figures", "Give percentages &amp; compare categories", "Over half of the students (55%) chose pop, whereas only a small fraction (8%) picked jazz.", RENK["turuncu"], RENK["acik_turuncu"]),
         ("4. Conclusion", "Summarize the bigger picture", "In conclusion, upbeat digital genres dominate youth music habits today.", RENK["mor"], RENK["acik_mor"]),
     ]
     for i, (st, desc, ex, rk, ark) in enumerate(steps):
@@ -187,10 +187,10 @@ def gorsel_6():
     W, H = 720, 330
     s = _baslik(W, H, "PRONUNCIATION", "Four Intonation Patterns in English", RENK["kirmizi"])
     cards = [
-        ("1. Rising Intonation (↗)", "Real Yes/No questions & uncertain question tags", "Do you play the guitar? ↗ | You like jazz, don't you? ↗", RENK["mavi"], RENK["acik_mavi"]),
-        ("2. Falling Intonation (↘)", "WH-questions, statements, commands & exclamations", "What kind of music do you like? ↘ | Turn down the volume! ↘", RENK["yesil"], RENK["acik_yesil"]),
-        ("3. Rising + Falling (↗ ↘)", "Alternatives (or), lists of items & conditionals", "Would you prefer pop ↗ or rock ↘? | Drums ↗, bass ↗, and guitar ↘.", RENK["turuncu"], RENK["acik_turuncu"]),
-        ("4. Falling + Rising (↘ ↗)", "Polite invitations & tentative suggestions", "Why don't we go to the concert tonight ↘↗?", RENK["mor"], RENK["acik_mor"]),
+        ("1. Rising Intonation (↗)", "Real Yes/No questions &amp; uncertain question tags", "Do you play the guitar? ↗ | You like jazz, don't you? ↗", RENK["mavi"], RENK["acik_mavi"]),
+        ("2. Falling Intonation (↘)", "WH-questions, statements, commands &amp; exclamations", "What kind of music do you like? ↘ | Turn down the volume! ↘", RENK["yesil"], RENK["acik_yesil"]),
+        ("3. Rising + Falling (↗ ↘)", "Alternatives (or), lists of items &amp; conditionals", "Would you prefer pop ↗ or rock ↘? | Drums ↗, bass ↗, and guitar ↘.", RENK["turuncu"], RENK["acik_turuncu"]),
+        ("4. Falling + Rising (↘ ↗)", "Polite invitations &amp; tentative suggestions", "Why don't we go to the concert tonight ↘↗?", RENK["mor"], RENK["acik_mor"]),
     ]
     for i, (title, usage, ex, rk, ark) in enumerate(cards):
         col = i % 2

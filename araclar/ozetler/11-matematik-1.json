@@ -32,7 +32,7 @@
       ],
       "kutu": {
         "tur": "dikkat",
-        "metin": "Araştırma sorusunda ilişkiyi araştırınız; sonucu kanıtlanmış gibi sunmayınız."
+        "metin": "Araştırma sorusunda ilişkiyi inceleyiniz; sonucu kanıtlanmış gibi sunmayınız."
       }
     },
     {
@@ -108,23 +108,23 @@
       "tur": "coktan",
       "soru": "Bir araştırma, araçların yakıt tüketimiyle başka bir nicel özellik arasındaki ilişkiyi inceleyecek. İkinci değişken için hangi seçenek uygundur?",
       "secenekler": [
-        "Aracın rengi",
-        "Aracın marka adı",
-        "Aracın plaka kodu",
         "Aracın aldığı yolun uzunluğu",
+        "Aracın marka adı",
+        "Aracın plaka kodu (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)",
+        "Aracın rengi",
         "Aracın yakıt türü"
       ],
-      "dogru": 3,
+      "dogru": 0,
       "aciklama": "Yol uzunluğu ölçüm sonucu nicel değer alır; diğer seçenekler kategori veya tanıtıcı kod niteliğindedir."
     },
     {
       "tur": "coktan",
       "soru": "Aynı üretim döneminde bir ilçenin tarım alanlarındaki sulama ve ürün miktarları incelenecek. Hangi soru bu araştırmayı en açık biçimde ifade eder?",
       "secenekler": [
-        "Sulama suyu her zaman yararlı mıdır?",
+        "Sulama suyu daima yararlı mıdır?",
         "İlçedeki alanlarda sulama ve ürün miktarları ilişkili midir?",
         "Bu ilçedeki en güzel tarım alanı hangisidir?",
-        "Ürün miktarı neden kesinlikle sulamaya bağlıdır?",
+        "Ürün miktarı neden bütünüyle sulamaya bağlıdır?",
         "İlçedeki bütün alanlar aynı büyüklükte midir?"
       ],
       "dogru": 1,
@@ -136,16 +136,29 @@
       "secenekler": [
         "Yalnız ilk sütunu küçükten büyüğe sıralamak",
         "İki sütunu birbirinden bağımsız sıralamak",
-        "İlk sütunu sıralayıp ikinciyi ters çevirmek",
+        "Aynı gözlemin iki değerini birlikte taşımak",
         "Eksik değerlerin hepsini sıfıra dönüştürmek",
-        "Aynı gözlemin iki değerini birlikte taşımak"
+        "İlk sütunu sıralayıp ikinciyi ters çevirmek"
       ],
-      "dogru": 4,
+      "dogru": 2,
       "aciklama": "Satırdaki iki değer aynı gözleme aittir; birlikte taşınmalıdır."
     },
     {
+      "tur": "coktan",
+      "soru": "‘Evren, örneklem ve veri toplama planı’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Evren ile örneklemi açıkça ayırınız; küçük bir grubun sonucunu kendiliğinden herkese genellemeyiniz.",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 3,
+      "aciklama": "Evren, örneklem ve veri toplama planı bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
       "tur": "dy",
-      "yonerge": "Yargıları değerlendiriniz; açıklamalarla cevabınızı karşılaştırınız.",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
           "metin": "İki nicel değişkenli araştırmada her gözlem için iki sayısal özellik birlikte kaydedilir.",
@@ -163,7 +176,7 @@
           "aciklama": "Taraflı seçim araştırmanın geçerliliğini zayıflatabilir."
         },
         {
-          "metin": "Eksik ölçümün yerine her zaman sıfır yazılabilir.",
+          "metin": "Eksik ölçümün yerine daima sıfır yazılabilir.",
           "dogru": false,
           "aciklama": "Eksik veri ile gerçek sıfır değeri aynı değildir."
         }
@@ -171,7 +184,7 @@
     },
     {
       "tur": "eslestir",
-      "yonerge": "İlişkili kavram ve açıklamaları eşleştiriniz.",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
           "Hakkında sonuç çıkarılacak bütün grup",
@@ -193,7 +206,7 @@
     },
     {
       "tur": "bosluk",
-      "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
           "metin": "Sütun başlığında değişken adıyla birlikte ölçüm ___ de belirtilir.",
@@ -209,26 +222,24 @@
         }
       ],
       "fazla": [
-        "sonuç"
+        "sonuç",
+        "varsayım"
       ]
     },
     {
       "tur": "ogretici",
       "soru": "Araştırmacı yalnız beklediği ilişkiyi gösteren kayıtları seçerse sonuç neden güvenilir olmaz?",
+      "cevap": "Seçim taraflı hâle gelir ve verinin gerçek değişebilirliği gizlenir. Kayıtlar istenen sonuca göre seçilmemeli; seçim yöntemi ve veri düzenleme kararları nesnel olmalıdır.",
       "ipuclari": [
         "Seçilen veriler bütün grubu temsil ediyor mu?",
         "Araştırmacının beklentisi veri seçimini etkiliyor mu?"
-      ],
-      "cevap": "Seçim taraflı hâle gelir ve verinin gerçek değişebilirliği gizlenir. Kayıtlar istenen sonuca göre seçilmemeli; seçim yöntemi ve veri düzenleme kararları nesnel olmalıdır."
-    },
-    {
-      "tur": "ogretici",
-      "soru": "İki sayısal sütun bulunan her tablo, iki nicel değişkenli bir ilişki araştırması için yeterli midir?",
-      "ipuclari": [
-        "Sütunlardan biri yalnız kimlik kodu olabilir mi?",
-        "İki ölçüm aynı gözleme mi ait?"
-      ],
-      "cevap": "Hayır. Sütunların gerçekten nicel değişken olması, aynı gözlemlerle eşleşmesi ve araştırma sorusunu yanıtlayacak veri içermesi gerekir. Yalnız sayılar bulunması yeterli değildir."
+      ]
     }
+  ],
+  "ozet": [
+    "Nicel değişken, sayma veya ölçme sonucunda sayısal değer alır. Okunan kitap sayısı, yağış miktarı, yakıt tüketimi ve sulama miktarı nicel değişkenlere örnektir.",
+    "Bağlam, verilerin hangi durumdan ve hangi amaçla toplandığını açıklar. Aynı sayısal değerler farklı bağlamlarda farklı anlamlar taşıyabilir.",
+    "Uygun bir soru açık bir amaç taşır, araştırmaya değerdir ve verilerle yanıtlanabilir. İncelenen grup ile iki değişken anlaşılır biçimde belirtilir.",
+    "Araştırmada hakkında sonuç çıkarılmak istenen bütün gruba evren denir. Bu gruptan veri toplamak için seçilen bölüm örneklemdir. Örneklemin seçim biçimi, sonuçların kimler için yorumlanabileceğini etkiler."
   ]
 }

@@ -1,283 +1,284 @@
 {
- "sinif": 5,
- "ders": "matematik",
- "hafta": 1,
- "tarih": "14-18 Eylül 2026",
- "unite": "Geometrik Şekiller",
- "konu": "Temel Geometrik Çizimler ve Araçları",
- "ciktilar": [
-  "MAT.5.3.1. Temel geometrik çizimler için matematiksel araç ve teknolojiden yararlanabilme"
- ],
- "giris": "Geometride her şekil birkaç temel öğeden kurulur: nokta, doğru parçası, ışın, doğru, açı, çember ve dikme. Bu hafta bu öğeleri tanıyacak, her birini hangi araçla çizeceğimizi öğreneceğiz.",
- "bolumler": [
-  {
-   "baslik": "Nokta",
-   "metin": [
-    "Noktanın eni, boyu ve derinliği yoktur. Kalemin kâğıda ya da tahtaya bir kez dokunmasıyla oluşan iz bir nokta modelidir.",
-    "Noktalar her zaman büyük harfle adlandırılır: A noktası, B noktası gibi."
-   ],
-   "gorsel": "<svg viewBox=\"0 0 320 80\" role=\"img\" aria-label=\"A ve B noktaları\"><circle cx=\"90\" cy=\"46\" r=\"11\" class=\"g-ma\"/><circle cx=\"90\" cy=\"46\" r=\"5\" class=\"g-mf\"/><text x=\"90\" y=\"26\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"700\" class=\"g-mf\">A</text><circle cx=\"230\" cy=\"58\" r=\"11\" class=\"g-ta\"/><circle cx=\"230\" cy=\"58\" r=\"5\" class=\"g-tf\"/><text x=\"230\" y=\"38\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"700\" class=\"g-tf\">B</text></svg>"
-  },
-  {
-   "baslik": "Doğru, ışın ve doğru parçası",
-   "metin": [
-    "İki nokta arasında düz biçimde hizalanmış noktaların oluşturduğu şekle doğru parçası denir. Bir noktadan başlayıp aynı hizada sonsuza kadar giden noktaların oluşturduğu şekle ışın denir. Doğru ise iki yönde de sonsuza kadar uzanır.",
-    "Uzunluğu önemli olmayan düz bir çizgi çizmek için üzerinde birim olmayan ölçüsüz cetvel, yani çizgeç kullanılır. Kalem ya da uç kutusu gibi nesnelerin düz kenarları da çizgeç yerine kullanılabilir. Doğru parçasının uzunluğu ise cetvelle ölçülür."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Öğe",
-     "Nasıl devam eder?",
-     "Gösterimi",
-     "Uzunluğu"
-    ],
-    "satirlar": [
-     [
-      "Doğru",
-      "İki yönde sınırsız uzanır.",
-      "{dogru:AB}",
-      "Ölçülemez."
-     ],
-     [
-      "Işın",
-      "Bir başlangıç noktası vardır, tek yönde sınırsız uzanır.",
-      "[AB ışını",
-      "Ölçülemez."
-     ],
-     [
-      "Doğru parçası",
-      "İki uç noktası vardır, bu noktalar arasında kalır.",
-      "[AB]",
-      "Cetvelle ölçülür: |AB|"
-     ]
-    ]
-   },
-   "gorsel": "<svg viewBox=\"0 0 420 206\" role=\"img\" aria-label=\"Doğru iki yönde, ışın A noktasından başlayıp tek yönde uzanır; doğru parçası A ile B arasında kalır\"><defs><marker id=\"okM\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-mf\"/></marker><marker id=\"okY\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-yf\"/></marker></defs><rect x=\"10\" y=\"26\" width=\"104\" height=\"28\" rx=\"14\" class=\"g-ma\"/><text x=\"62\" y=\"45\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">doğru</text><line x1=\"136\" y1=\"40\" x2=\"410\" y2=\"40\" class=\"g-ms\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#okM)\" marker-start=\"url(#okM)\"/><circle cx=\"170\" cy=\"40\" r=\"5\" class=\"g-mf\"/><text x=\"170\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">A</text><circle cx=\"330\" cy=\"40\" r=\"5\" class=\"g-mf\"/><text x=\"330\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">B</text><rect x=\"10\" y=\"98\" width=\"104\" height=\"28\" rx=\"14\" class=\"g-ya\"/><text x=\"62\" y=\"117\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" class=\"g-yf\">ışın</text><line x1=\"170\" y1=\"112\" x2=\"410\" y2=\"112\" class=\"g-ys\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#okY)\"/><circle cx=\"170\" cy=\"112\" r=\"5\" class=\"g-yf\"/><text x=\"170\" y=\"100\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">A</text><circle cx=\"330\" cy=\"112\" r=\"5\" class=\"g-yf\"/><text x=\"330\" y=\"100\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">B</text><rect x=\"10\" y=\"170\" width=\"104\" height=\"28\" rx=\"14\" class=\"g-ta\"/><text x=\"62\" y=\"189\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" class=\"g-tf\">doğru parçası</text><line x1=\"170\" y1=\"184\" x2=\"330\" y2=\"184\" class=\"g-ts\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"170\" cy=\"184\" r=\"5\" class=\"g-tf\"/><text x=\"170\" y=\"172\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">A</text><circle cx=\"330\" cy=\"184\" r=\"5\" class=\"g-tf\"/><text x=\"330\" y=\"172\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">B</text></svg>",
-   "kutu": {
-    "tur": "bilgi",
-    "metin": "Doğru parçası [AB] ya da [BA] diye gösterilir; ikisi aynı doğru parçasıdır. Işın ise başlangıç noktası önce yazılarak gösterilir: [AB ışını A noktasından başlar ve B'den geçerek uzanır. [BA ışını ise B'den başlar ve ters yöne uzanır; bu yüzden [AB ışını ile [BA ışını farklıdır."
-   }
-  },
-  {
-   "baslik": "Açı",
-   "metin": [
-    "Başlangıç noktaları aynı olan iki ışının oluşturduğu şekle açı denir. Açı, bir ışının dönme miktarı olarak da tanımlanır. Açıyı oluşturan ışınlara açının kolları, ışınların başlangıç noktasına açının köşesi denir.",
-    "Açı, köşe harfi ortada olacak biçimde üç harfle ya da yalnız köşe harfiyle adlandırılır: köşesi B olan açı {aci:ABC}, {aci:CBA} ya da B açısı diye okunur. Açının ölçüsü m({aci:ABC}) biçiminde gösterilir ve açıölçerle ölçülür."
-   ],
-   "gorsel": "<svg viewBox=\"0 0 320 196\" role=\"img\" aria-label=\"Köşesi B, kolları BA ve BC ışınları olan ABC açısı\"><defs><marker id=\"okA\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-mf\"/></marker></defs><path d=\"M60 150 L130 150 A70 70 0 0 0 113.6 104.9 Z\" class=\"g-ta\"/><path d=\"M130 150 A70 70 0 0 0 113.6 104.9\" class=\"g-ts\" stroke-width=\"2.5\"/><line x1=\"60\" y1=\"150\" x2=\"290\" y2=\"150\" class=\"g-ms\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#okA)\"/><line x1=\"60\" y1=\"150\" x2=\"205\" y2=\"28\" class=\"g-ms\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#okA)\"/><circle cx=\"60\" cy=\"150\" r=\"6\" class=\"g-tf\"/><circle cx=\"174\" cy=\"54\" r=\"5\" class=\"g-mf\"/><circle cx=\"240\" cy=\"150\" r=\"5\" class=\"g-mf\"/><text x=\"44\" y=\"172\" font-size=\"17\" font-weight=\"800\" class=\"g-tf\">B</text><text x=\"152\" y=\"50\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">A</text><text x=\"234\" y=\"176\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">C</text><text x=\"140\" y=\"126\" font-size=\"14\" font-weight=\"700\" class=\"g-tf\">ABC</text><path d=\"M140 112 L151.5 106 L163 112\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"300\" y=\"186\" text-anchor=\"end\" font-size=\"12.5\" class=\"g-s\">köşe: B · kollar: [BA ve [BC</text></svg>"
-  },
-  {
-   "baslik": "Çember",
-   "metin": [
-    "Düz bir yüzeyde merkez olarak belirlenen bir noktaya eşit uzaklıktaki noktaların oluşturduğu geometrik şekle çember denir. Merkezi çember üzerindeki bir noktaya birleştiren doğru parçasına yarıçap denir ve r ile gösterilir. Çemberin iki noktasını merkezden geçecek biçimde birleştiren doğru parçasına çap denir ve R ile gösterilir.",
-    "Çember pergelle çizilir: Pergelin kolları arasında bir açıklık oluşturulur, sivri uç bir noktaya konup sabitlenir ve kalemli uç bu noktanın çevresinde döndürülür. Sivri uç merkezde durduğunda kolların uçları arasındaki uzaklık yarıçapa eşittir. Bir çember ile iç kısmındaki bütün noktaların oluşturduğu şekle de daire denir."
-   ],
-   "gorsel": "<svg viewBox=\"0 0 340 180\" role=\"img\" aria-label=\"Merkezi O, yarıçapı r olan çember\"><circle cx=\"130\" cy=\"90\" r=\"70\" class=\"g-ma\"/><circle cx=\"130\" cy=\"90\" r=\"70\" class=\"g-ms\" stroke-width=\"3\"/><line x1=\"130\" y1=\"90\" x2=\"200\" y2=\"90\" class=\"g-ts\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"130\" cy=\"90\" r=\"5.5\" class=\"g-tf\"/><circle cx=\"200\" cy=\"90\" r=\"4.5\" class=\"g-mf\"/><text x=\"116\" y=\"84\" font-size=\"17\" font-weight=\"800\" class=\"g-tf\">O</text><text x=\"160\" y=\"80\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">r</text><text x=\"228\" y=\"70\" font-size=\"13\" class=\"g-s\">O: merkez</text><text x=\"228\" y=\"92\" font-size=\"13\" class=\"g-s\">r: yarıçap</text><text x=\"228\" y=\"114\" font-size=\"13\" class=\"g-s\">mavi çizgi: çember</text></svg>"
-  },
-  {
-   "baslik": "Dikme",
-   "metin": [
-    "Bir doğruya, dışındaki bir noktadan dik olarak çizilen doğru parçasına dikme denir. Dikme, o noktadan doğruya çizilebilecek en kısa doğru parçasıdır.",
-    "Diklik ⊥ sembolüyle gösterilir: [AB] ⊥ {dogru:CD} yazılır. Bir doğruya dışındaki bir noktadan dikme çizmek için gönye kullanılır."
-   ],
-   "gorsel": "<svg viewBox=\"0 0 330 210\" role=\"img\" aria-label=\"d doğrusunun dışındaki P noktasından d doğrusuna çizilen dikme PH; diklik sembolü; öteki doğru parçaları daha uzun\"><line x1=\"30\" y1=\"140\" x2=\"300\" y2=\"140\" class=\"g-ms\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"160\" y1=\"34\" x2=\"74\" y2=\"140\" class=\"g-c\" stroke-width=\"1.6\" stroke-dasharray=\"5 5\"/><line x1=\"160\" y1=\"34\" x2=\"248\" y2=\"140\" class=\"g-c\" stroke-width=\"1.6\" stroke-dasharray=\"5 5\"/><line x1=\"160\" y1=\"34\" x2=\"160\" y2=\"140\" class=\"g-ts\" stroke-width=\"3\" stroke-linecap=\"round\"/><rect x=\"160\" y=\"124\" width=\"16\" height=\"16\" class=\"g-ta\"/><path d=\"M160 124 H176 V140\" class=\"g-ts\" stroke-width=\"2\"/><circle cx=\"160\" cy=\"34\" r=\"5.5\" class=\"g-tf\"/><circle cx=\"160\" cy=\"140\" r=\"4.5\" class=\"g-tf\"/><text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" class=\"g-tf\">P</text><text x=\"160\" y=\"164\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" class=\"g-tf\">H</text><text x=\"292\" y=\"132\" font-size=\"16\" font-weight=\"700\" class=\"g-mf\">d</text><text x=\"196\" y=\"174\" font-size=\"14\" font-weight=\"700\" class=\"g-tf\">[PH] ⊥ d</text><text x=\"165\" y=\"200\" text-anchor=\"middle\" font-size=\"12.5\" class=\"g-s\">Kesikli çizgiler daha uzundur; dikme en kısa doğru parçasıdır.</text></svg>"
-  },
-  {
-   "baslik": "Hangi araç, ne işe yarar?",
-   "tablo": {
-    "basliklar": [
-     "Araç",
-     "Ne için kullanılır?"
-    ],
-    "satirlar": [
-     [
-      "Çizgeç (ölçüsüz cetvel)",
-      "Uzunluğu önemli olmayan düz çizgiler çizmek"
-     ],
-     [
-      "Cetvel",
-      "Doğru parçasının uzunluğunu ölçmek"
-     ],
-     [
-      "Gönye",
-      "Bir doğruya dikme çizmek"
-     ],
-     [
-      "Pergel",
-      "Çember çizmek"
-     ],
-     [
-      "Açıölçer",
-      "Açının ölçüsünü bulmak"
-     ],
-     [
-      "Dinamik matematik yazılımı",
-      "Bu çizimleri bilgisayarda ya da akıllı tahtada yapmak"
-     ]
-    ]
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "7 cm uzunluğunda bir doğru parçası çizmek için hangi araç kullanılır? Çizim nasıl yapılır?",
-   "cevap": "Uzunluk verildiği için cetvel kullanılır. Cetvelle 7 cm ölçülerek iki nokta işaretlenir ve bu iki nokta cetvelin düz kenarı boyunca birleştirilir. Oluşan doğru parçasının uzunluğu 7 cm'dir."
-  },
-  {
-   "soru": "Aşağıdaki şekillerden hangisi ışındır?",
-   "gorsel": "<svg viewBox=\"0 0 340 146\" role=\"img\" aria-label=\"Üç şekil: I iki yönde oklu, II bir ucunda nokta öbür ucunda ok, III iki ucunda nokta\"><defs><marker id=\"okO\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-of\"/></marker></defs><rect x=\"8\" y=\"13\" width=\"40\" height=\"30\" rx=\"9\" class=\"g-oa\"/><text x=\"28\" y=\"33\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-of\">I.</text><line x1=\"74\" y1=\"28\" x2=\"330\" y2=\"28\" class=\"g-os\" stroke-width=\"3\" stroke-linecap=\"round\" marker-start=\"url(#okO)\" marker-end=\"url(#okO)\"/><rect x=\"8\" y=\"63\" width=\"40\" height=\"30\" rx=\"9\" class=\"g-oa\"/><text x=\"28\" y=\"83\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-of\">II.</text><line x1=\"100\" y1=\"78\" x2=\"330\" y2=\"78\" class=\"g-os\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#okO)\"/><circle cx=\"100\" cy=\"78\" r=\"5\" class=\"g-of\"/><rect x=\"8\" y=\"113\" width=\"40\" height=\"30\" rx=\"9\" class=\"g-oa\"/><text x=\"28\" y=\"133\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-of\">III.</text><line x1=\"100\" y1=\"128\" x2=\"260\" y2=\"128\" class=\"g-os\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"128\" r=\"5\" class=\"g-of\"/><circle cx=\"260\" cy=\"128\" r=\"5\" class=\"g-of\"/></svg>",
-   "cevap": "II. şekil ışındır: Bir başlangıç noktası vardır ve tek yönde sınırsız uzanır. I. şekil doğrudur (iki yönde uzanır), III. şekil doğru parçasıdır (iki uç noktası vardır)."
-  },
-  {
-   "soru": "{aci:KLM} açısının köşesi hangi noktadır? Kolları nelerdir?",
-   "cevap": "Köşe, adın ortasındaki harftir: L noktası. Kolları [LK ve [LM ışınlarıdır."
-  },
-  {
-   "soru": "Yarıçapı 4 cm olan bir çember çizmek için pergel nasıl ayarlanır?",
-   "cevap": "Pergelin sivri ucu ile kalemli ucu arasındaki açıklık cetvel üzerinde 4 cm yapılır. Sivri uç merkez olacak noktaya konur, kalemli uç bir tur döndürülür."
-  },
-  {
-   "soru": "[AB] ile [BA] aynı mıdır? [AB ışını ile [BA ışını aynı mıdır?",
-   "cevap": "[AB] ile [BA] aynı doğru parçasıdır; uç noktaları aynıdır. [AB ışını ile [BA ışını ise farklıdır: Biri A'dan, öbürü B'den başlar ve ters yönlere uzanır."
-  },
-  {
-   "soru": "d doğrusuna, doğrunun dışındaki P noktasından bir dikme çizilecek. Hangi araç kullanılır? Dikmenin P noktasından d doğrusuna çizilebilecek öteki doğru parçalarından farkı nedir?",
-   "cevap": "Gönye kullanılır. Dikme, P noktasından d doğrusuna çizilebilecek en kısa doğru parçasıdır."
-  }
- ],
- "ozet": [
-  "Noktanın eni, boyu ve derinliği yoktur; noktalar büyük harfle adlandırılır.",
-  "Doğru parçasının iki ucu vardır; ışın bir noktadan başlayıp sonsuza gider; doğru iki yönde sonsuza uzanır.",
-  "Açı, başlangıç noktası aynı iki ışından oluşur; köşe harfi adın ortasına yazılır; ölçüsü açıölçerle bulunur.",
-  "Çember pergelle, dikme gönyeyle çizilir; dikme bir noktadan doğruya çizilen en kısa doğru parçasıdır."
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "Eni, boyu ve derinliği olmayan; kalemin kâğıda bir kez değmesiyle modellenen geometrik öğe hangisidir?",
-   "secenekler": [
-    "Doğru parçası",
-    "Nokta",
-    "Işın",
-    "Açı"
-   ],
-   "dogru": 1,
-   "aciklama": "Noktanın eni, boyu ve derinliği yoktur."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Bir noktadan başlayıp aynı hizada sonsuza kadar giden noktaların oluşturduğu şekil hangisidir?",
-   "secenekler": [
-    "Doğru parçası",
-    "Işın",
-    "Çember",
-    "Nokta"
-   ],
-   "dogru": 1,
-   "aciklama": "Işının bir başlangıç noktası vardır ve tek yönde sonsuza uzanır."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Bir doğruya dışındaki bir noktadan dikme çizmek için hangi araç kullanılır?",
-   "secenekler": [
-    "Pergel",
-    "Açıölçer",
-    "Gönye",
-    "Çizgeç"
-   ],
-   "dogru": 2,
-   "aciklama": "Dikme gönyeyle çizilir."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Köşesi B olan açı aşağıdakilerden hangisiyle adlandırılabilir?",
-   "secenekler": [
-    "{aci:BAC}",
-    "{aci:ABC}",
-    "{aci:ACB}",
-    "{aci:CAB}"
-   ],
-   "dogru": 1,
-   "aciklama": "Açı adlandırılırken köşe harfi ortaya yazılır."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadeler doğru mu, yanlış mı?",
-   "ifadeler": [
+  "sinif": 5,
+  "ders": "matematik",
+  "hafta": 1,
+  "tarih": "14-18 Eylül 2026",
+  "unite": "Geometrik Şekiller",
+  "konu": "Temel Geometrik Çizimler ve Araçları",
+  "ciktilar": [
+    "MAT.5.3.1. Temel geometrik çizimler için matematiksel araç ve teknolojiden yararlanabilme"
+  ],
+  "giris": "Geometride her şekil birkaç temel öğeden kurulur: nokta, doğru parçası, ışın, doğru, açı, çember ve dikme. Bu hafta bu öğeleri tanıyacak, her birini hangi araçla çizeceğimizi öğreneceğiz.",
+  "bolumler": [
     {
-     "metin": "[AB] ile [BA] aynı doğru parçasıdır.",
-     "dogru": true,
-     "aciklama": "Uç noktaları aynı olduğu için aynı doğru parçasıdır."
+      "baslik": "Nokta",
+      "metin": [
+        "Noktanın eni, boyu ve derinliği yoktur. Kalemin kâğıda ya da tahtaya bir kez dokunmasıyla oluşan iz bir nokta modelidir.",
+        "Noktalar her zaman büyük harfle adlandırılır: A noktası, B noktası gibi."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 320 80\" role=\"img\" aria-label=\"A ve B noktaları\"><circle cx=\"90\" cy=\"46\" r=\"11\" class=\"g-ma\"/><circle cx=\"90\" cy=\"46\" r=\"5\" class=\"g-mf\"/><text x=\"90\" y=\"26\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"700\" class=\"g-mf\">A</text><circle cx=\"230\" cy=\"58\" r=\"11\" class=\"g-ta\"/><circle cx=\"230\" cy=\"58\" r=\"5\" class=\"g-tf\"/><text x=\"230\" y=\"38\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"700\" class=\"g-tf\">B</text></svg>"
     },
     {
-     "metin": "[AB ışını ile [BA ışını aynı ışındır.",
-     "dogru": false,
-     "aciklama": "Biri A'dan, öbürü B'den başlar ve ters yönlere uzanır."
+      "baslik": "Doğru, ışın ve doğru parçası",
+      "metin": [
+        "İki nokta arasında düz biçimde hizalanmış noktaların oluşturduğu şekle doğru parçası denir. Bir noktadan başlayıp aynı hizada sonsuza kadar giden noktaların oluşturduğu şekle ışın denir. Doğru ise iki yönde de sonsuza kadar uzanır.",
+        "Uzunluğu önemli olmayan düz bir çizgi çizmek için üzerinde birim olmayan ölçüsüz cetvel, yani çizgeç kullanılır. Kalem ya da uç kutusu gibi nesnelerin düz kenarları da çizgeç yerine kullanılabilir. Doğru parçasının uzunluğu ise cetvelle ölçülür."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Öğe",
+          "Nasıl devam eder?",
+          "Gösterimi",
+          "Uzunluğu"
+        ],
+        "satirlar": [
+          [
+            "Doğru",
+            "İki yönde sınırsız uzanır.",
+            "{dogru:AB}",
+            "Ölçülemez."
+          ],
+          [
+            "Işın",
+            "Bir başlangıç noktası vardır, tek yönde sınırsız uzanır.",
+            "[AB ışını",
+            "Ölçülemez."
+          ],
+          [
+            "Doğru parçası",
+            "İki uç noktası vardır, bu noktalar arasında kalır.",
+            "[AB]",
+            "Cetvelle ölçülür: |AB|"
+          ]
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 420 206\" role=\"img\" aria-label=\"Doğru iki yönde, ışın A noktasından başlayıp tek yönde uzanır; doğru parçası A ile B arasında kalır\"><defs><marker id=\"okM\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-mf\"/></marker><marker id=\"okY\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-yf\"/></marker></defs><rect x=\"10\" y=\"26\" width=\"104\" height=\"28\" rx=\"14\" class=\"g-ma\"/><text x=\"62\" y=\"45\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" class=\"g-mf\">doğru</text><line x1=\"136\" y1=\"40\" x2=\"410\" y2=\"40\" class=\"g-ms\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#okM)\" marker-start=\"url(#okM)\"/><circle cx=\"170\" cy=\"40\" r=\"5\" class=\"g-mf\"/><text x=\"170\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">A</text><circle cx=\"330\" cy=\"40\" r=\"5\" class=\"g-mf\"/><text x=\"330\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">B</text><rect x=\"10\" y=\"98\" width=\"104\" height=\"28\" rx=\"14\" class=\"g-ya\"/><text x=\"62\" y=\"117\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" class=\"g-yf\">ışın</text><line x1=\"170\" y1=\"112\" x2=\"410\" y2=\"112\" class=\"g-ys\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#okY)\"/><circle cx=\"170\" cy=\"112\" r=\"5\" class=\"g-yf\"/><text x=\"170\" y=\"100\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">A</text><circle cx=\"330\" cy=\"112\" r=\"5\" class=\"g-yf\"/><text x=\"330\" y=\"100\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">B</text><rect x=\"10\" y=\"170\" width=\"104\" height=\"28\" rx=\"14\" class=\"g-ta\"/><text x=\"62\" y=\"189\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" class=\"g-tf\">doğru parçası</text><line x1=\"170\" y1=\"184\" x2=\"330\" y2=\"184\" class=\"g-ts\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"170\" cy=\"184\" r=\"5\" class=\"g-tf\"/><text x=\"170\" y=\"172\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">A</text><circle cx=\"330\" cy=\"184\" r=\"5\" class=\"g-tf\"/><text x=\"330\" y=\"172\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" class=\"g-y\">B</text></svg>",
+      "kutu": {
+        "tur": "bilgi",
+        "metin": "Doğru parçası [AB] ya da [BA] diye gösterilir; ikisi aynı doğru parçasıdır. Işın ise başlangıç noktası önce yazılarak gösterilir: [AB ışını A noktasından başlar ve B'den geçerek uzanır. [BA ışını ise B'den başlar ve ters yöne uzanır; bu yüzden [AB ışını ile [BA ışını farklıdır."
+      }
     },
     {
-     "metin": "Noktalar küçük harfle adlandırılır.",
-     "dogru": false,
-     "aciklama": "Noktalar her zaman büyük harfle adlandırılır."
+      "baslik": "Açı",
+      "metin": [
+        "Başlangıç noktaları aynı olan iki ışının oluşturduğu şekle açı denir. Açı, bir ışının dönme miktarı olarak da tanımlanır. Açıyı oluşturan ışınlara açının kolları, ışınların başlangıç noktasına açının köşesi denir.",
+        "Açı, köşe harfi ortada olacak biçimde üç harfle ya da yalnız köşe harfiyle adlandırılır: köşesi B olan açı {aci:ABC}, {aci:CBA} ya da B açısı diye okunur. Açının ölçüsü m({aci:ABC}) biçiminde gösterilir ve açıölçerle ölçülür."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 320 196\" role=\"img\" aria-label=\"Köşesi B, kolları BA ve BC ışınları olan ABC açısı\"><defs><marker id=\"okA\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-mf\"/></marker></defs><path d=\"M60 150 L130 150 A70 70 0 0 0 113.6 104.9 Z\" class=\"g-ta\"/><path d=\"M130 150 A70 70 0 0 0 113.6 104.9\" class=\"g-ts\" stroke-width=\"2.5\"/><line x1=\"60\" y1=\"150\" x2=\"290\" y2=\"150\" class=\"g-ms\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#okA)\"/><line x1=\"60\" y1=\"150\" x2=\"205\" y2=\"28\" class=\"g-ms\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#okA)\"/><circle cx=\"60\" cy=\"150\" r=\"6\" class=\"g-tf\"/><circle cx=\"174\" cy=\"54\" r=\"5\" class=\"g-mf\"/><circle cx=\"240\" cy=\"150\" r=\"5\" class=\"g-mf\"/><text x=\"44\" y=\"172\" font-size=\"17\" font-weight=\"800\" class=\"g-tf\">B</text><text x=\"152\" y=\"50\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">A</text><text x=\"234\" y=\"176\" font-size=\"17\" font-weight=\"700\" class=\"g-y\">C</text><text x=\"140\" y=\"126\" font-size=\"14\" font-weight=\"700\" class=\"g-tf\">ABC</text><path d=\"M140 112 L151.5 106 L163 112\" class=\"g-ts\" stroke-width=\"1.6\"/><text x=\"300\" y=\"186\" text-anchor=\"end\" font-size=\"12.5\" class=\"g-s\">köşe: B · kollar: [BA ve [BC</text></svg>"
     },
     {
-     "metin": "Çemberin iki noktasını merkezden geçerek birleştiren doğru parçasına çap denir.",
-     "dogru": true,
-     "aciklama": "Çap R ile gösterilir."
+      "baslik": "Çember",
+      "metin": [
+        "Düz bir yüzeyde merkez olarak belirlenen bir noktaya eşit uzaklıktaki noktaların oluşturduğu geometrik şekle çember denir. Merkezi çember üzerindeki bir noktaya birleştiren doğru parçasına yarıçap denir ve r ile gösterilir. Çemberin iki noktasını merkezden geçecek biçimde birleştiren doğru parçasına çap denir ve R ile gösterilir.",
+        "Çember pergelle çizilir: Pergelin kolları arasında bir açıklık oluşturulur, sivri uç bir noktaya konup sabitlenir ve kalemli uç bu noktanın çevresinde döndürülür. Sivri uç merkezde durduğunda kolların uçları arasındaki uzaklık yarıçapa eşittir. Bir çember ile iç kısmındaki bütün noktaların oluşturduğu şekle de daire denir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 340 180\" role=\"img\" aria-label=\"Merkezi O, yarıçapı r olan çember\"><circle cx=\"130\" cy=\"90\" r=\"70\" class=\"g-ma\"/><circle cx=\"130\" cy=\"90\" r=\"70\" class=\"g-ms\" stroke-width=\"3\"/><line x1=\"130\" y1=\"90\" x2=\"200\" y2=\"90\" class=\"g-ts\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"130\" cy=\"90\" r=\"5.5\" class=\"g-tf\"/><circle cx=\"200\" cy=\"90\" r=\"4.5\" class=\"g-mf\"/><text x=\"116\" y=\"84\" font-size=\"17\" font-weight=\"800\" class=\"g-tf\">O</text><text x=\"160\" y=\"80\" font-size=\"15\" font-weight=\"700\" class=\"g-tf\">r</text><text x=\"228\" y=\"70\" font-size=\"13\" class=\"g-s\">O: merkez</text><text x=\"228\" y=\"92\" font-size=\"13\" class=\"g-s\">r: yarıçap</text><text x=\"228\" y=\"114\" font-size=\"13\" class=\"g-s\">mavi çizgi: çember</text></svg>"
+    },
+    {
+      "baslik": "Dikme",
+      "metin": [
+        "Bir doğruya, dışındaki bir noktadan dik olarak çizilen doğru parçasına dikme denir. Dikme, o noktadan doğruya çizilebilecek en kısa doğru parçasıdır.",
+        "Diklik ⊥ sembolüyle gösterilir: [AB] ⊥ {dogru:CD} yazılır. Bir doğruya dışındaki bir noktadan dikme çizmek için gönye kullanılır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 330 210\" role=\"img\" aria-label=\"d doğrusunun dışındaki P noktasından d doğrusuna çizilen dikme PH; diklik sembolü; öteki doğru parçaları daha uzun\"><line x1=\"30\" y1=\"140\" x2=\"300\" y2=\"140\" class=\"g-ms\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"160\" y1=\"34\" x2=\"74\" y2=\"140\" class=\"g-c\" stroke-width=\"1.6\" stroke-dasharray=\"5 5\"/><line x1=\"160\" y1=\"34\" x2=\"248\" y2=\"140\" class=\"g-c\" stroke-width=\"1.6\" stroke-dasharray=\"5 5\"/><line x1=\"160\" y1=\"34\" x2=\"160\" y2=\"140\" class=\"g-ts\" stroke-width=\"3\" stroke-linecap=\"round\"/><rect x=\"160\" y=\"124\" width=\"16\" height=\"16\" class=\"g-ta\"/><path d=\"M160 124 H176 V140\" class=\"g-ts\" stroke-width=\"2\"/><circle cx=\"160\" cy=\"34\" r=\"5.5\" class=\"g-tf\"/><circle cx=\"160\" cy=\"140\" r=\"4.5\" class=\"g-tf\"/><text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" class=\"g-tf\">P</text><text x=\"160\" y=\"164\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" class=\"g-tf\">H</text><text x=\"292\" y=\"132\" font-size=\"16\" font-weight=\"700\" class=\"g-mf\">d</text><text x=\"196\" y=\"174\" font-size=\"14\" font-weight=\"700\" class=\"g-tf\">[PH] ⊥ d</text><text x=\"165\" y=\"200\" text-anchor=\"middle\" font-size=\"12.5\" class=\"g-s\">Kesikli çizgiler daha uzundur; dikme en kısa doğru parçasıdır.</text></svg>"
+    },
+    {
+      "baslik": "Hangi araç, ne işe yarar?",
+      "tablo": {
+        "basliklar": [
+          "Araç",
+          "Ne için kullanılır?"
+        ],
+        "satirlar": [
+          [
+            "Çizgeç (ölçüsüz cetvel)",
+            "Uzunluğu önemli olmayan düz çizgiler çizmek"
+          ],
+          [
+            "Cetvel",
+            "Doğru parçasının uzunluğunu ölçmek"
+          ],
+          [
+            "Gönye",
+            "Bir doğruya dikme çizmek"
+          ],
+          [
+            "Pergel",
+            "Çember çizmek"
+          ],
+          [
+            "Açıölçer",
+            "Açının ölçüsünü bulmak"
+          ],
+          [
+            "Dinamik matematik yazılımı",
+            "Bu çizimleri bilgisayarda ya da akıllı tahtada yapmak"
+          ]
+        ]
+      }
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "yonerge": "Araçları kullanım amaçlarıyla eşleştiriniz.",
-   "ciftler": [
-    [
-     "Pergel",
-     "Çember çizmek"
-    ],
-    [
-     "Gönye",
-     "Dikme çizmek"
-    ],
-    [
-     "Açıölçer",
-     "Açının ölçüsünü bulmak"
-    ],
-    [
-     "Çizgeç",
-     "Uzunluğu önemsiz düz çizgi çizmek"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Kelimeleri uygun boşluklara yerleştiriniz. Bir kelime artacak.",
-   "cumleler": [
+  ],
+  "ornekler": [
     {
-     "metin": "Merkez ile çember üzerindeki bir noktayı birleştiren doğru parçasına ___ denir.",
-     "cevap": "yarıçap"
+      "soru": "Verilen 7 cm uzunluğunda bir doğru parçası çizmek için hangi araç kullanılır? Çizim nasıl yapılır?",
+      "cevap": "Uzunluk verildiği için cetvel kullanılır. Cetvelle 7 cm ölçülerek iki nokta işaretlenir ve bu iki nokta cetvelin düz kenarı boyunca birleştirilir. Oluşan doğru parçasının uzunluğu 7 cm'dir."
     },
     {
-     "metin": "Açıyı oluşturan ışınların başlangıç noktasına açının ___ denir.",
-     "cevap": "köşesi"
+      "soru": "Aşağıdaki şekillerden hangisi ışındır?",
+      "cevap": "II. şekil ışındır: Bir başlangıç noktası vardır ve tek yönde sınırsız uzanır. I. şekil doğrudur (iki yönde uzanır), III. şekil doğru parçasıdır (iki uç noktası vardır).",
+      "gorsel": "<svg viewBox=\"0 0 340 146\" role=\"img\" aria-label=\"Üç şekil: I iki yönde oklu, II bir ucunda nokta öbür ucunda ok, III iki ucunda nokta\"><defs><marker id=\"okO\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" class=\"g-of\"/></marker></defs><rect x=\"8\" y=\"13\" width=\"40\" height=\"30\" rx=\"9\" class=\"g-oa\"/><text x=\"28\" y=\"33\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-of\">I.</text><line x1=\"74\" y1=\"28\" x2=\"330\" y2=\"28\" class=\"g-os\" stroke-width=\"3\" stroke-linecap=\"round\" marker-start=\"url(#okO)\" marker-end=\"url(#okO)\"/><rect x=\"8\" y=\"63\" width=\"40\" height=\"30\" rx=\"9\" class=\"g-oa\"/><text x=\"28\" y=\"83\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-of\">II.</text><line x1=\"100\" y1=\"78\" x2=\"330\" y2=\"78\" class=\"g-os\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#okO)\"/><circle cx=\"100\" cy=\"78\" r=\"5\" class=\"g-of\"/><rect x=\"8\" y=\"113\" width=\"40\" height=\"30\" rx=\"9\" class=\"g-oa\"/><text x=\"28\" y=\"133\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" class=\"g-of\">III.</text><line x1=\"100\" y1=\"128\" x2=\"260\" y2=\"128\" class=\"g-os\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"128\" r=\"5\" class=\"g-of\"/><circle cx=\"260\" cy=\"128\" r=\"5\" class=\"g-of\"/></svg>"
     },
     {
-     "metin": "Bir çember ile iç kısmındaki bütün noktaların oluşturduğu şekle ___ denir.",
-     "cevap": "daire"
+      "soru": "{aci:KLM} açısının köşesi hangi noktadır? Kolları nelerdir?",
+      "cevap": "Köşe, adın ortasındaki harftir: L noktası. Kolları [LK ve [LM ışınlarıdır."
+    },
+    {
+      "soru": "Yarıçapı 4 cm olan bir çember çizmek için pergel nasıl ayarlanır?",
+      "cevap": "Pergelin sivri ucu ile kalemli ucu arasındaki açıklık cetvel üzerinde 4 cm yapılır. Sivri uç merkez olacak noktaya konur, kalemli uç bir tur döndürülür."
+    },
+    {
+      "soru": "[AB] ile [BA] aynı mıdır? [AB ışını ile [BA ışını aynı mıdır?",
+      "cevap": "[AB] ile [BA] aynı doğru parçasıdır; uç noktaları aynıdır. [AB ışını ile [BA ışını ise farklıdır: Biri A'dan, öbürü B'den başlar ve ters yönlere uzanır."
+    },
+    {
+      "soru": "d doğrusuna, doğrunun dışındaki P noktasından bir dikme çizilecek. Hangi araç kullanılır? Dikmenin P noktasından d doğrusuna çizilebilecek öteki doğru parçalarından farkı nedir?",
+      "cevap": "Gönye kullanılır. Dikme, P noktasından d doğrusuna çizilebilecek en kısa doğru parçasıdır."
     }
-   ],
-   "fazla": [
-    "çap"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Yarıçapı 3 cm olan bir çemberi pergelle nasıl çizersiniz?",
-   "ipuclari": [
-    "Pergelin kolları arasındaki açıklığı cetvelle ayarlayın.",
-    "Sivri ucu merkez olacak noktaya koyup sabitleyin; kalemli ucu bu noktanın çevresinde döndürün."
-   ],
-   "cevap": "Pergelin iki ucu arasındaki açıklık cetvelle 3 cm yapılır. Sivri uç merkez olacak noktaya konup sabitlenir ve kalemli uç bir tur döndürülür."
-  }
- ],
- "yayin_tarihi": "2026-09-29"
+  ],
+  "ozet": [
+    "Noktanın eni, boyu ve derinliği yoktur; noktalar büyük harfle adlandırılır.",
+    "Doğru parçasının iki ucu vardır; ışın bir noktadan başlayıp sonsuza gider; doğru iki yönde sonsuza uzanır.",
+    "Açı, başlangıç noktası aynı iki ışından oluşur; köşe harfi adın ortasına yazılır; ölçüsü açıölçerle bulunur.",
+    "Çember pergelle, dikme gönyeyle çizilir; dikme bir noktadan doğruya çizilen en kısa doğru parçasıdır."
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Eni, boyu ve derinliği olmayan; kalemin kâğıda bir kez değmesiyle modellenen geometrik öğe hangisidir?",
+      "secenekler": [
+        "Nokta",
+        "Doğru parçası",
+        "Işın",
+        "Açı"
+      ],
+      "dogru": 0,
+      "aciklama": "Noktanın eni, boyu ve derinliği yoktur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir noktadan başlayıp aynı hizada sonsuza kadar giden noktaların oluşturduğu şekil hangisidir?",
+      "secenekler": [
+        "Doğru parçası",
+        "Işın",
+        "Çember",
+        "Nokta"
+      ],
+      "dogru": 1,
+      "aciklama": "Işının bir başlangıç noktası vardır ve tek yönde sonsuza uzanır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir doğruya dışındaki bir noktadan dikme çizmek için hangi araç kullanılır?",
+      "secenekler": [
+        "Pergel",
+        "Açıölçer",
+        "Gönye",
+        "Çizgeç"
+      ],
+      "dogru": 2,
+      "aciklama": "Dikme gönyeyle çizilir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Köşesi B olan açı aşağıdakilerden hangisiyle adlandırılabilir?",
+      "secenekler": [
+        "{aci:BAC}",
+        "{aci:CAB}",
+        "{aci:ACB}",
+        "{aci:ABC}"
+      ],
+      "dogru": 3,
+      "aciklama": "Açı adlandırılırken köşe harfi ortaya yazılır."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "[AB] ile [BA] aynı doğru parçasıdır.",
+          "dogru": true,
+          "aciklama": "Uç noktaları aynı olduğu için aynı doğru parçasıdır."
+        },
+        {
+          "metin": "[AB ışını ile [BA ışını aynı ışındır.",
+          "dogru": false,
+          "aciklama": "Biri A'dan, öbürü B'den başlar ve ters yönlere uzanır."
+        },
+        {
+          "metin": "Noktalar küçük harfle adlandırılır.",
+          "dogru": false,
+          "aciklama": "Noktalar her zaman büyük harfle adlandırılır."
+        },
+        {
+          "metin": "Çemberin iki noktasını merkezden geçerek birleştiren doğru parçasına çap denir.",
+          "dogru": true,
+          "aciklama": "Çap R ile gösterilir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Pergel",
+          "Çember çizmek"
+        ],
+        [
+          "Gönye",
+          "Dikme çizmek"
+        ],
+        [
+          "Açıölçer",
+          "Açının ölçüsünü bulmak"
+        ],
+        [
+          "Çizgeç",
+          "Uzunluğu önemsiz düz çizgi çizmek"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Merkez ile çember üzerindeki bir noktayı birleştiren doğru parçasına ___ denir.",
+          "cevap": "yarıçap"
+        },
+        {
+          "metin": "Açıyı oluşturan ışınların başlangıç noktasına açının ___ denir.",
+          "cevap": "köşesi"
+        },
+        {
+          "metin": "Bir çember ile iç kısmındaki bütün noktaların oluşturduğu şekle ___ denir.",
+          "cevap": "daire"
+        }
+      ],
+      "fazla": [
+        "çap",
+        "varsayım"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Yarıçapı 3 cm olan bir çemberi pergelle nasıl çizersiniz?",
+      "cevap": "Pergelin iki ucu arasındaki açıklık cetvelle 3 cm yapılır. Sivri uç merkez olacak noktaya konup sabitlenir ve kalemli uç bir tur döndürülür.",
+      "ipuclari": [
+        "Pergelin kolları arasındaki açıklığı cetvelle ayarlayın.",
+        "Sivri ucu merkez olacak noktaya koyup sabitleyin; kalemli ucu bu noktanın çevresinde döndürün."
+      ]
+    }
+  ],
+  "yayin_tarihi": "2026-09-29"
 }

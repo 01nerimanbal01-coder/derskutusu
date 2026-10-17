@@ -65,7 +65,7 @@ def gorsel_4():
     ic += _metin(350, 34, "İMANI KORUMAK VE GÜÇLENDİRMEK İÇİN TEMEL YOLLAR", 14, "#6b21a8", "bold")
     items = [
         (25, "Sahih İlim", "Kur'an ve sünnete", "dayalı tahkiki iman"),
-        (192, "İbadet & Dua", "Allah ile bağı", "canlı tutmak"),
+        (192, "İbadet &amp; Dua", "Allah ile bağı", "canlı tutmak"),
         (359, "Şirkten Sakınma", "Hurafe, batıl inanç ve", "riyadan uzak durmak"),
         (526, "Salih Çevre", "Doğru, dürüst ve", "erdemli dostlarla olmak")
     ]

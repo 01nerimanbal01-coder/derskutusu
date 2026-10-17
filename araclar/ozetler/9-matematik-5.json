@@ -1,271 +1,287 @@
 {
- "ad": "9. Sınıf Matematik - 5. Hafta Özeti",
- "sinif": 9,
- "ders": "matematik",
- "ders_adi": "Matematik",
- "hafta": 5,
- "tarih": "12-16 Ekim 2026",
- "yayin_tarihi": "2026-10-14",
- "unite": "SAYILAR",
- "konu": "Sayı Kümeleri ve İşlem Özellikleri",
- "ciktilar": [
-  "Doğal sayılar, tam sayılar, rasyonel sayılar, irrasyonel sayılar ve gerçek sayılar kümelerinin temel özelliklerine (sıralama, arada olma ve işlem özellikleri) ilişkin varsayımlarda bulunur.",
-  "Farklı sayı kümelerinde toplama, çıkarma, çarpma ve bölme işlemlerinin kapalılık, değişme, birleşme, etkisiz eleman, ters eleman ve dağılma özelliklerini inceler.",
-  "Sayı kümelerinde elde ettiği örüntülerden genellemeler yapar ve varsayımların doğruluğunu cebirsel muhakeme veya karşı örnek yardımıyla değerlendirir."
- ],
- "giris": "Matematikte kullandığımız sayılar, tarihsel süreçte sayma, borç-alacak hesabı, bütünü eş parçalara bölme ve uzunluk ölçme gibi ihtiyaçlardan doğarak doğal sayılardan gerçek sayılara kadar genişlemiştir. Bu haftaki dersimizde doğal sayılar (ℕ), tam sayılar (ℤ), rasyonel sayılar (ℚ), irrasyonel sayılar (ℚ') ve gerçek sayılar (ℝ) kümelerinin sıralama, arada olma (yoğunluk) ve dört işlem özelliklerini karşılaştırarak matematiksel muhakeme ve genelleme becerilerimizi geliştireceğiz.",
- "ozet": [
-  "Sayı kümeleri arasında ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ alt küme ilişkisi vardır; rasyonel sayılar (ℚ) ile irrasyonel sayılar (ℚ') ayrık kümeler olup birleşimleri gerçek sayılar kümesini (ℚ ∪ ℚ' = ℝ) oluşturur.",
-  "Bir kümenin herhangi iki elemanına uygulanan işlemin sonucu yine o kümenin elemanı oluyorsa küme o işleme göre kapalıdır; örneğin ℕ çıkarma işlemine göre kapalı değilken ℤ kapalıdır.",
-  "İrrasyonel sayılar kümesi (ℚ') dört işlemin hiçbirine göre kapalı değildir; çünkü iki irrasyonel sayının toplamı veya çarpımı rasyonel sayı olabilir.",
-  "Gerçek sayılarda toplama işleminin etkisiz (birim) elemanı 0, a sayısının toplama işlemine göre tersi -a'dır; çarpma işleminin etkisiz elemanı 1, yutan elemanı 0 ve sıfırdan farklı a sayısının çarpmaya göre tersi 1/a'dır.",
-  "Doğal sayılar ve tam sayılar kümesinde ardışık iki eleman arasında başka bir tam sayı bulunmazken, rasyonel (ℚ) ve gerçek (ℝ) sayılar kümesinde herhangi iki farklı sayı arasında sonsuz sayıda eleman bulunur; bu özelliğe yoğunluk (arada olma) özelliği denir.",
-  "Matematiksel bir iddianın her zaman doğru olduğunu göstermek için cebirsel ispat gerekirken, yanlış olduğunu göstermek için tek bir karşı örnek (aksi örnek) bulmak yeterlidir."
- ],
- "bolumler": [
-  {
-   "baslik": "1. Sayı Kümeleri Arasındaki İlişkiler (ℕ, ℤ, ℚ, ℚ', ℝ)",
-   "metin": [
-    "Matematikte sayılar, sahip oldukları özelliklere göre iç içe geçmiş veya ayrık kümeler hâlinde sınıflandırılır: • {koyu:Doğal Sayılar Kümesi (ℕ)}: {koyu:ℕ} (0, 1, 2, 3, ...) kümesidir; sıfır hariç pozitif doğal sayılar {koyu:ℕ⁺} (1, 2, 3, ...) (sayma sayıları) olarak adlandırılır. • {koyu:Tam Sayılar Kümesi (ℤ)}: Doğal sayılara negatif tam sayıların eklenmesiyle oluşan {koyu:ℤ} (..., -2, -1, 0, 1, 2, ...) kümesidir ve {koyu:ℤ = ℤ⁻ ∪ (0) ∪ ℤ⁺} biçiminde ifade edilir.",
-    "• {koyu:Rasyonel Sayılar Kümesi (ℚ)}: {koyu:a, b ∈ ℤ} ve {koyu:b ≠ 0} olmak üzere {koyu:a/b} biçiminde yazılabilen sayıların kümesidir. Her tam sayı paydası 1 olan bir rasyonel sayı olduğundan {koyu:ℕ ⊂ ℤ ⊂ ℚ} kapsama ilişkisi geçerlidir. • {koyu:İrrasyonel Sayılar (ℚ') ve Gerçek Sayılar (ℝ)}: İki tam sayının oranı şeklinde yazılamayan, virgülden sonraki kısmı düzensiz ve sonsuza kadar devam eden sayılara ({koyu:π, e} ve kök dışına tam çıkamayan {koyu:kök 2, kök 5} gibi sayılara) irrasyonel sayılar denir. Rasyonel ve irrasyonel sayıların birleşimi sayı doğrusunu boşluksuz dolduran {koyu:Gerçek (Reel) Sayılar Kümesini (ℝ = ℚ ∪ ℚ')} oluşturur."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Rasyonel ve İrrasyonel Sayılar Ayrıktır",
-    "metin": "Bir gerçek sayı ya rasyoneldir ya da irrasyoneldir; hem rasyonel hem irrasyonel olan hiçbir sayı yoktur. Dolayısıyla ℚ ∩ ℚ' = ∅ (boş küme) ve ℚ ∪ ℚ' = ℝ eşitlikleri her zaman geçerlidir. Devirli ondalık gösterimler (örneğin 0,333... = 1/3) a/b biçiminde yazılabildiği için rasyonel sayıdır."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 250\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#1a5276\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Sayı Kümeleri Hiyerarşisi: N ⊂ Z ⊂ Q ⊂ R ve Q ∪ Q' = R</text><rect x=\"18\" y=\"54\" width=\"152\" height=\"180\" rx=\"10\" fill=\"#e9f7ef\" stroke=\"#1e8449\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"152\" height=\"28\" rx=\"10\" fill=\"#1e8449\"/><text x=\"94\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Doğal Sayılar (N)</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• N = {0, 1, 2, 3, ...}</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• Sayma: N+ = {1, 2, ...}</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Ardışık elemanlar</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  arasında tam sayı</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">  bulunmaz (ayrık).</text><text x=\"30\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">• En küçük eleman: 0</text><rect x=\"182\" y=\"54\" width=\"152\" height=\"180\" rx=\"10\" fill=\"#eaf2f8\" stroke=\"#2874a6\" stroke-width=\"1.6\"/><rect x=\"182\" y=\"54\" width=\"152\" height=\"28\" rx=\"10\" fill=\"#2874a6\"/><text x=\"258\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Tam Sayılar (Z)</text><text x=\"194\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Z = {..., -2, -1, 0, 1, ...}</text><text x=\"194\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• Z = Z- ∪ {0} ∪ Z+</text><text x=\"194\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• N kümesini kapsar.</text><text x=\"194\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• Çıkarma işlemine</text><text x=\"194\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">  göre kapalıdır.</text><text x=\"194\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">• Yoğun değildir.</text><rect x=\"346\" y=\"54\" width=\"152\" height=\"180\" rx=\"10\" fill=\"#fef9e7\" stroke=\"#b9770e\" stroke-width=\"1.6\"/><rect x=\"346\" y=\"54\" width=\"152\" height=\"28\" rx=\"10\" fill=\"#b9770e\"/><text x=\"422\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Rasyonel Sayılar (Q)</text><text x=\"358\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• a,b ∈ Z ve b ≠ 0</text><text x=\"358\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  için a/b biçiminde</text><text x=\"358\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">  yazılabilen sayılar.</text><text x=\"358\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• İki rasyonel sayı</text><text x=\"358\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">  arasında sonsuz Q</text><text x=\"358\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">  vardır (yoğundur).</text><rect x=\"510\" y=\"54\" width=\"152\" height=\"180\" rx=\"10\" fill=\"#f5eef8\" stroke=\"#7d3c98\" stroke-width=\"1.6\"/><rect x=\"510\" y=\"54\" width=\"152\" height=\"28\" rx=\"10\" fill=\"#7d3c98\"/><text x=\"586\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Gerçek Sayılar (R)</text><text x=\"522\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• R = Q ∪ Q' (İrrasyonel)</text><text x=\"522\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• Sayı doğrusunu</text><text x=\"522\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">  boşluksuz doldurur.</text><text x=\"522\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• π, e ve kök dışına</text><text x=\"522\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">  çıkamayan sayılar</text><text x=\"522\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">  Q' kümesindedir.</text></svg>"
-  },
-  {
-   "baslik": "2. Sayı Kümelerinde Kapalılık Özelliği",
-   "metin": [
-    "Bir {koyu:A} sayı kümesinden seçilen herhangi iki elemana bir işlem uygulandığında, çıkan sonuç her zaman yine {koyu:A} kümesinin bir elemanı oluyorsa {koyu:'A kümesi bu işleme göre kapalıdır'} denir. • {koyu:Doğal Sayılar (ℕ)}: İki doğal sayının toplamı ve çarpımı daima doğal sayı olduğu için ℕ kümesi {koyu:toplama ve çarpma işlemlerine göre kapalıdır}. Ancak {koyu:3 - 7 = -4 ∉ ℕ} ve {koyu:5 ÷ 2 = 2,5 ∉ ℕ} olduğundan çıkarma ve bölme işlemlerine göre {koyu:kapalı değildir}.",
-    "• {koyu:Tam Sayılar (ℤ)}: Toplama, çıkarma ve çarpma işlemlerine göre {koyu:kapalıdır}; fakat iki tam sayının bölümü her zaman tam sayı olmadığından bölme işlemine göre {koyu:kapalı değildir}. • {koyu:Rasyonel (ℚ) ve Gerçek (ℝ) Sayılar}: Toplama, çıkarma ve çarpma işlemlerine göre kapalıdır; sıfıra bölme tanımsız olduğu için {koyu:sıfır hariç ℚ} ve {koyu:sıfır hariç ℝ} kümeleri bölme işlemine göre de kapalıdır. • {koyu:İrrasyonel Sayılar (ℚ')}: Toplama, çıkarma, çarpma ve bölme işlemlerinin {koyu:hiçbirine göre kapalı değildir}!"
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "baslik": "İrrasyonel Sayılarda Kapalılık İçin Karşı Örnekler",
-    "metin": "• Toplama karşı örneği: a = (3 + kök 2) ∈ ℚ' ve b = (3 - kök 2) ∈ ℚ' iken a + b = 6 ∈ ℚ (sonuç rasyonel oldu!).\n• Çarpma karşı örneği: a = kök 2 ∈ ℚ' ve b = kök 8 ∈ ℚ' iken a · b = kök 16 = 4 ∈ ℚ (sonuç rasyonel oldu!).\nDemek ki iki irrasyonel sayının toplamı veya çarpımı her zaman irrasyonel olmak zorunda değildir."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 240\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"240\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#117864\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Sayı Kümelerinin Kapalılık Özelliği Karşılaştırma Tablosu</text><rect x=\"18\" y=\"54\" width=\"206\" height=\"172\" rx=\"10\" fill=\"#e8f8f5\" stroke=\"#117864\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"206\" height=\"28\" rx=\"10\" fill=\"#117864\"/><text x=\"121\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Toplama (+) ve Çarpma (·)</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• N kümesi: KAPALIDIR (+ ve ·)</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• Z kümesi: KAPALIDIR (+ ve ·)</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Q kümesi: KAPALIDIR (+ ve ·)</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• R kümesi: KAPALIDIR (+ ve ·)</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Q' (İrrasyonel): KAPALI DEĞİLDİR!</text><text x=\"30\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">  Örn: (2 - kök3) + (2 + kök3) = 4 ∈ Q</text><rect x=\"237\" y=\"54\" width=\"206\" height=\"172\" rx=\"10\" fill=\"#fef9e7\" stroke=\"#b9770e\" stroke-width=\"1.6\"/><rect x=\"237\" y=\"54\" width=\"206\" height=\"28\" rx=\"10\" fill=\"#b9770e\"/><text x=\"340\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Çıkarma (-) İşlemi</text><text x=\"249\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• N kümesi: KAPALI DEĞİLDİR</text><text x=\"249\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  Karşı örnek: 3 - 7 = -4 ∉ N</text><text x=\"249\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Z kümesi: KAPALIDIR</text><text x=\"249\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• Q kümesi: KAPALIDIR</text><text x=\"249\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• R kümesi: KAPALIDIR</text><text x=\"249\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">• Q' kümesi: KAPALI DEĞİLDİR</text><rect x=\"456\" y=\"54\" width=\"206\" height=\"172\" rx=\"10\" fill=\"#fdedec\" stroke=\"#922b21\" stroke-width=\"1.6\"/><rect x=\"456\" y=\"54\" width=\"206\" height=\"28\" rx=\"10\" fill=\"#922b21\"/><text x=\"559\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Bölme (÷, Bölen ≠ 0)</text><text x=\"468\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• N kümesi: KAPALI DEĞİLDİR</text><text x=\"468\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• Z kümesi: KAPALI DEĞİLDİR</text><text x=\"468\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">  Karşı örnek: 5 ÷ 2 = 2,5 ∉ Z</text><text x=\"468\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• Q - {0}: KAPALIDIR</text><text x=\"468\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• R - {0}: KAPALIDIR</text><text x=\"468\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">• 0'a bölme tanımsızdır!</text></svg>"
-  },
-  {
-   "baslik": "3. Gerçek Sayılar Kümesinde Toplama ve Çarpma İşlemlerinin Özellikleri",
-   "metin": [
-    "Gerçek sayılar kümesinde (ℝ) yapılan cebirsel işlemler, toplama ve çarpmanın temel aksiyomlarına dayanır. Her {koyu:a, b, c ∈ ℝ} için: • {koyu:Değişme Özelliği}: {koyu:a + b = b + a} ve {koyu:a · b = b · a} (işlem sırası sonucu değiştirmez). • {koyu:Birleşme Özelliği}: {koyu:(a + b) + c = a + (b + c)} ve {koyu:(a · b) · c = a · (b · c)} (üç veya daha fazla sayıda parantez önceliği sonucu değiştirmez).",
-    "• {koyu:Etkisiz (Birim) Eleman Özelliği}: Toplama işleminin etkisiz elemanı {koyu:0}'dır ({koyu:a + 0 = 0 + a = a}); çarpma işleminin etkisiz elemanı {koyu:1}'dir ({koyu:a · 1 = 1 · a = a}). • {koyu:Ters Eleman Özelliği}: Bir {koyu:a} gerçek sayısının toplama işlemine göre tersi {koyu:-a}'dır çünkü {koyu:a + (-a) = 0} (birim eleman) olur. Sıfırdan farklı bir {koyu:a} gerçek sayısının ({koyu:a ≠ 0}) çarpma işlemine göre tersi {koyu:1/a}'dır çünkü {koyu:a · (1/a) = 1} olur; {koyu:0'ın çarpma işlemine göre tersi yoktur}. • {koyu:Yutan Eleman ve Dağılma Özelliği}: Çarpmada {koyu:0} yutan elemandır ({koyu:a · 0 = 0}); çarpma işleminin toplama ve çıkarma üzerine sağdan ve soldan dağılma özelliği vardır: {koyu:a · (b ± c) = a · b ± a · c}."
-   ],
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Ters Eleman ve Dağılma Özelliği Uygulaması",
-    "metin": "x = 3/5 gerçek sayısının toplama işlemine göre tersi A = -3/5, çarpma işlemine göre tersi B = 5/3'tür. Toplamları: A + B = (-3/5) + (5/3) = 16/15 bulunur."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 250\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#6c3483\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Gerçek Sayılarda (R) Toplama ve Çarpma İşlemlerinin Cebirsel Özellikleri</text><rect x=\"18\" y=\"54\" width=\"314\" height=\"180\" rx=\"10\" fill=\"#eaf2f8\" stroke=\"#1a5276\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#1a5276\"/><text x=\"175\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Toplama İşleminin Özellikleri (+)</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">1. Kapalılık: ∀a, b ∈ R için a + b ∈ R</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">2. Değişme: a + b = b + a</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">3. Birleşme: (a + b) + c = a + (b + c)</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">4. Etkisiz (Birim) Eleman: 0  (a + 0 = a)</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">5. Ters Eleman: a'nın toplama tersi -a'dır;</text><text x=\"30\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">   a + (-a) = 0 (Her gerçek sayının tersi vardır)</text><rect x=\"348\" y=\"54\" width=\"314\" height=\"180\" rx=\"10\" fill=\"#f5eef8\" stroke=\"#6c3483\" stroke-width=\"1.6\"/><rect x=\"348\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#6c3483\"/><text x=\"505\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Çarpma İşleminin Özellikleri (·)</text><text x=\"360\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">1. Kapalılık: ∀a, b ∈ R için a · b ∈ R</text><text x=\"360\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">2. Değişme ve Birleşme: a·b = b·a, (a·b)·c = a·(b·c)</text><text x=\"360\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">3. Etkisiz (Birim) Eleman: 1  (a · 1 = a)</text><text x=\"360\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">4. Yutan Eleman: 0  (a · 0 = 0)</text><text x=\"360\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">5. Ters Eleman: a ≠ 0 için 1/a  (a · 1/a = 1)</text><text x=\"360\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">6. Dağılma: a · (b ± c) = a·b ± a·c</text></svg>"
-  },
-  {
-   "baslik": "4. Farklı Sayı Kümelerinde Ters Elemanların Varlığı",
-   "metin": [
-    "Bir işlemin etkisiz ve ters eleman özelliklerini incelerken hangi sayı kümesinde çalıştığımız çok önemlidir. Örneğin {koyu:Doğal Sayılar Kümesinde (ℕ)} toplama işleminin etkisiz elemanı 0'dır; ancak 0 dışındaki hiçbir doğal sayının toplama işlemine göre tersi doğal sayılar kümesinde bulunmaz (örneğin 5'in toplama tersi olan {koyu:-5 ∉ ℕ}). Tam sayılar kümesine (ℤ) geçildiğinde her elemanın toplama işlemine göre tersi kümede mevcuttur.",
-    "Benzer biçimde {koyu:Tam Sayılar Kümesinde (ℤ)} çarpma işleminin etkisiz elemanı 1'dir; ancak {koyu:1} ve {koyu:-1} dışındaki hiçbir tam sayının çarpma işlemine göre tersi tam sayı değildir (örneğin 4'ün çarpmaya göre tersi olan {koyu:1/4 ∉ ℤ}). Rasyonel sayılar (ℚ) ve gerçek sayılar (ℝ) kümelerinde ise 0 hariç her elemanın çarpma işlemine göre tersi yine aynı kümenin elemanıdır."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "Tam Sayılarda Çarpmaya Göre Ters Eleman Tuzağı",
-    "metin": "Tam sayılar kümesinde (ℤ) çarpma işlemine göre tersi yine bir tam sayı olan yalnızca İKİ eleman vardır: 1 ve -1. Diğer tüm tam sayıların çarpmaya göre tersi rasyonel sayıdır (ℤ kümesinin dışındadır)!"
-   }
-  },
-  {
-   "baslik": "5. Sıralama ve Arada Olma (Yoğunluk) Özelliği",
-   "metin": [
-    "Gerçek sayılar kümesinde herhangi iki {koyu:a} ve {koyu:b} sayısı karşılaştırıldığında {koyu:a < b}, {koyu:a = b} veya {koyu:a > b} durumlarından yalnızca biri geçerlidir ({koyu:üç hâl kanunu}). Sıralama bağıntısı {koyu:geçişme özelliğine} sahiptir ({koyu:a < b} ve {koyu:b < c} ise {koyu:a < c}). Bir eşitsizliğin her iki tarafına aynı gerçek sayı eklendiğinde veya pozitif bir sayı ile çarpıldığında eşitsizlik yön değiştirmez; negatif bir sayı ile çarpıldığında veya bölündüğünde ise eşitsizlik {koyu:yön değiştirir} ({koyu:a < b} ve {koyu:c < 0} ise {koyu:a · c > b · c}).",
-    "Sayı kümelerini birbirinden ayıran en önemli yapısal farklardan biri {koyu:arada olma (yoğunluk)} özelliğidir: Doğal sayılar (ℕ) ve tam sayılar (ℤ) kümesinde ardışık iki eleman (örneğin 4 ile 5) arasında başka bir tam sayı bulunmaz. Oysa rasyonel sayılar (ℚ) ve gerçek sayılar (ℝ) kümesinde birbirinden farklı her {koyu:a} ve {koyu:b} sayısı ({koyu:a < b}) için {koyu:a < (a + b)/2 < b} koşulunu sağlayan bir aritmetik ortalama mevcuttur. Bu işlem sonsuz kez tekrarlanabildiğinden, {koyu:iki rasyonel sayı veya iki gerçek sayı arasında hem sonsuz tane rasyonel sayı hem de sonsuz tane irrasyonel sayı bulunur}."
-   ],
-   "kutu": {
-    "tur": "hatirla",
-    "baslik": "Bir Kümenin Yoğun Olması Ne Demektir?",
-    "metin": "Bir sayı kümesinin herhangi iki farklı elemanı arasında yine o kümeye ait en az bir (dolayısıyla sonsuz sayıda) eleman bulunabiliyorsa o kümeye 'yoğun küme' denir. ℚ ve ℝ kümeleri yoğun kümelerdir; ℕ ve ℤ kümeleri ise yoğun değildir."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 235\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"235\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#b9770e\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Sıralama, Arada Olma (Yoğunluk) ve Matematiksel Muhakeme Süreci</text><rect x=\"18\" y=\"54\" width=\"314\" height=\"165\" rx=\"10\" fill=\"#fef9e7\" stroke=\"#b9770e\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#b9770e\"/><text x=\"175\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Arada Olma (Yoğunluk) Özelliği</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• N ve Z kümelerinde ardışık iki tam sayı arasında</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  başka bir tam sayı yoktur (yoğun değildir).</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Q ve R kümelerinde her a < b için a < (a+b)/2 < b</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  olduğundan iki sayı arasında SONSUZ sayı vardır.</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Bu özelliğe kümenin YOĞUNLUĞU denir.</text><rect x=\"348\" y=\"54\" width=\"314\" height=\"165\" rx=\"10\" fill=\"#e9f7ef\" stroke=\"#1e8449\" stroke-width=\"1.6\"/><rect x=\"348\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#1e8449\"/><text x=\"505\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Varsayım, Genelleme ve Karşı Örnek</text><text x=\"360\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Varsayım: Sayı kümelerindeki örüntülerden yola</text><text x=\"360\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  çıkarak kurulan matematiksel iddiadır.</text><text x=\"360\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Doğrulama: Cebirsel ispatla genelleme yapılır.</text><text x=\"360\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• Çürütme (Karşı Örnek): İddianın yanlışlığını</text><text x=\"360\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">  göstermek için TEK BİR karşı örnek yeterlidir!</text></svg>"
-  },
-  {
-   "baslik": "6. Sayı Kümelerinde Muhakeme: Varsayım, Genelleme ve Karşı Örnek",
-   "metin": [
-    "Matematiksel muhakeme sürecinde sayı kümelerindeki örüntüleri inceleyerek önce bir {koyu:varsayım (hipotez)} kurarız, ardından bu varsayımın tüm elemanlar için geçerli olup olmadığını test ederek {koyu:genellemeye} ulaşırız. Örneğin {koyu:'Bir rasyonel sayı ile bir irrasyonel sayının toplamı her zaman irrasyoneldir'} varsayımını ele alalım: {koyu:a ∈ ℚ} ve {koyu:b ∈ ℚ'} iken toplamları olan {koyu:a + b = c} sayısının rasyonel olduğunu varsayarsak, {koyu:b = c - a} olur; rasyonel sayılar çıkarmaya göre kapalı olduğundan {koyu:c - a ∈ ℚ} çıkması gerekir ki bu {koyu:b ∈ ℚ'} olmasıyla çelişir! Böylece varsayımımız doğrulanır ve genel bir kurala dönüşür.",
-    "Buna karşılık {koyu:'Bir rasyonel sayı ile bir irrasyonel sayının çarpımı her zaman irrasyoneldir'} iddiasını incelediğimizde, {koyu:a = 0 ∈ ℚ} ve {koyu:b = kök 5 ∈ ℚ'} seçersek {koyu:0 · kök 5 = 0 ∈ ℚ} (rasyonel) sonucunu elde ederiz. İşte bir genellemenin yanlış olduğunu kanıtlayan bu özel duruma {koyu:karşı örnek (aksi örnek)} denir. İfadeyi doğru bir genellemeye dönüştürmek için koşulu {koyu:'Sıfırdan farklı bir rasyonel sayı ile bir irrasyonel sayının çarpımı daima irrasyoneldir'} biçiminde daraltmamız gerekir."
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "Muhakeme Sorularında Sıfır (0) ve Bir (1) Kontrolü",
-    "metin": "Sayı kümeleriyle ilgili 'Her zaman doğrudur / Kesinlikle irrasyoneldir' tarzı öncüllü sorularda varsayımı test ederken mutlaka 0 (toplamanın etkisiz, çarpmanın yutan elemanı), 1 (çarpmanın etkisiz elemanı) ve birbirinin eşleniği olan irrasyonel sayıları karşı örnek olarak deneyiniz!"
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Aşağıda verilen sayıların hangi sayı kümelerinin (ℕ, ℤ, ℚ, ℚ', ℝ) elemanı olduğunu belirleyiniz: a) -7, b) 3/8, c) kök 12, d) kök 25.",
-   "cevap": "a) -7 sayısı: ℤ, ℚ ve ℝ kümelerinin elemanıdır (ℕ ve ℚ' elemanı değildir).\nb) 3/8 sayısı: ℚ ve ℝ kümelerinin elemanıdır.\nc) kök 12 = 2 kök 3 sayısı: Kök dışına tam çıkamadığı için ℚ' (irrasyonel) ve ℝ kümelerinin elemanıdır.\nd) kök 25 = 5 sayısı: ℕ, ℤ, ℚ ve ℝ kümelerinin elemanıdır."
-  },
-  {
-   "soru": "Gerçek sayılar kümesinde x = -4/7 sayısının toplama işlemine göre tersi K, çarpma işlemine göre tersi L olduğuna göre K · L çarpımını ve K + L toplamını bulunuz.",
-   "cevap": "x = -4/7 sayısının toplamaya göre tersi K = 4/7'dir.\nÇarpmaya göre tersi L = -7/4'tür.\n• Çarpımları: K · L = (4/7) · (-7/4) = -1.\n• Toplamları: K + L = (4/7) + (-7/4) = (16 - 49) / 28 = -33/28."
-  },
-  {
-   "soru": "1/3 ile 1/2 rasyonel sayıları arasında bulunan üç farklı rasyonel sayı bulunuz ve rasyonel sayılar kümesinin yoğunluk özelliğini açıklayınız.",
-   "cevap": "Paydaları 24'te eşitlersek 1/3 = 8/24 ve 1/2 = 12/24 olur. Aralarındaki 9/24, 10/24 ve 11/24 sayıları bu aralıktaki üç rasyonel sayıdır. Paydaları istediğimiz kadar genişletebileceğimiz için iki rasyonel sayı arasında sonsuz rasyonel sayı vardır (yoğunluk özelliği)."
-  },
-  {
-   "soru": "'İki irrasyonel sayının toplamı ve çarpımı daima irrasyoneldir.' iddiasının yanlış olduğunu bir karşı örnek vererek kanıtlayınız.",
-   "cevap": "a = (4 + kök 5) ve b = (4 - kök 5) sayıları birer irrasyonel sayıdır (a, b ∈ ℚ').\n• Toplamları: a + b = (4 + kök 5) + (4 - kök 5) = 8 ∈ ℚ (rasyonel sayı).\n• Çarpımları: a · b = (4 + kök 5) · (4 - kök 5) = 16 - 5 = 11 ∈ ℚ (rasyonel sayı).\nDolayısıyla iddia yanlıştır; ℚ' kümesi toplama ve çarpmaya göre kapalı değildir."
-  },
-  {
-   "soru": "Gerçek sayılar kümesinde 3x + (2/5) ifadesinin toplama işlemine göre tersi 0 olduğuna göre x gerçek sayısının çarpma işlemine göre tersi kaçtır?",
-   "cevap": "Bir gerçek sayının toplamaya göre tersi 0 ise bu sayı 0'a eşittir:\n3x + 2/5 = 0 => 3x = -2/5 => x = -2/15.\nx = -2/15 sayısının çarpma işlemine göre tersi 1/x = -15/2 bulunur."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "Sayı kümelerinin dört işleme göre kapalılık özelliği ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
-   "secenekler": [
-    "Doğal sayılar kümesi (ℕ) toplama ve çarpma işlemlerine göre kapalıdır.",
-    "Tam sayılar kümesi (ℤ) çıkarma işlemine göre kapalıdır.",
-    "Rasyonel sayılar kümesi (ℚ) çarpma işlemine göre kapalıdır.",
-    "İrrasyonel sayılar kümesi (ℚ') toplama ve çarpma işlemlerine göre kapalıdır.",
-    "Gerçek sayılar kümesi (ℝ) toplama, çıkarma ve çarpma işlemlerine göre kapalıdır."
-   ],
-   "dogru": 3,
-   "aciklama": "İrrasyonel sayılar kümesi (ℚ') dört işlemin hiçbirine göre kapalı değildir. Örneğin (2 + kök 3) ile (2 - kök 3) irrasyonel sayılarının toplamı 4 (rasyonel), çarpımı ise 1 (rasyonel) olup sonuç ℚ' kümesinin dışına çıkar."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Sayı kümelerinin arada olma (yoğunluk) ve işlem özellikleriyle ilgili;\nI. Herhangi iki farklı rasyonel sayı arasında sonsuz tane rasyonel sayı vardır.\nII. Ardışık iki tam sayı arasında sonsuz tane irrasyonel sayı vardır.\nIII. Sıfırdan farklı bir rasyonel sayı ile bir irrasyonel sayının çarpımı daima irrasyonel sayıdır.\nyargılarından hangileri her zaman doğrudur?",
-   "secenekler": [
-    "Yalnız I",
-    "I ve II",
-    "I ve III",
-    "II ve III",
-    "I, II ve III"
-   ],
-   "dogru": 4,
-   "aciklama": "ℚ ve ℝ kümeleri yoğun olduğundan iki farklı rasyonel sayı arasında sonsuz rasyonel sayı (I doğru) ve ardışık iki tam sayı arasında sonsuz irrasyonel sayı (II doğru) bulunur. Ayrıca sıfırdan farklı bir rasyonel sayı ile bir irrasyonel sayının çarpımı daima irrasyoneldir (III doğru)."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "9. Sınıf Matematik - 5. Hafta Özeti",
+  "sinif": 9,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 5,
+  "tarih": "12-16 Ekim 2026",
+  "yayin_tarihi": "2026-10-14",
+  "unite": "SAYILAR",
+  "konu": "Sayı Kümeleri ve İşlem Özellikleri",
+  "ciktilar": [
+    "Doğal sayılar, tam sayılar, rasyonel sayılar, irrasyonel sayılar ve gerçek sayılar kümelerinin temel özelliklerine (sıralama, arada olma ve işlem özellikleri) ilişkin varsayımlarda bulunur.",
+    "Farklı sayı kümelerinde toplama, çıkarma, çarpma ve bölme işlemlerinin kapalılık, değişme, birleşme, etkisiz eleman, ters eleman ve dağılma özelliklerini inceler.",
+    "Sayı kümelerinde elde ettiği örüntülerden genellemeler yapar ve varsayımların doğruluğunu cebirsel muhakeme veya karşı örnek yardımıyla değerlendirir."
+  ],
+  "giris": "Matematikte kullandığımız sayılar, tarihsel süreçte sayma, borç-alacak hesabı, bütünü eş parçalara bölme ve uzunluk ölçme gibi ihtiyaçlardan doğarak doğal sayılardan gerçek sayılara kadar genişlemiştir. Bu haftaki dersimizde doğal sayılar (ℕ), tam sayılar (ℤ), rasyonel sayılar (ℚ), irrasyonel sayılar (ℚ') ve gerçek sayılar (ℝ) kümelerinin sıralama, arada olma (yoğunluk) ve dört işlem özelliklerini karşılaştırarak matematiksel muhakeme ve genelleme becerilerimizi geliştireceğiz.",
+  "ozet": [
+    "Sayı kümeleri arasında ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ alt küme ilişkisi vardır; rasyonel sayılar (ℚ) ile irrasyonel sayılar (ℚ') ayrık kümeler olup birleşimleri gerçek sayılar kümesini (ℚ ∪ ℚ' = ℝ) oluşturur.",
+    "Bir kümenin herhangi iki elemanına uygulanan işlemin sonucu yine o kümenin elemanı oluyorsa küme o işleme göre kapalıdır; örneğin ℕ çıkarma işlemine göre kapalı değilken ℤ kapalıdır.",
+    "İrrasyonel sayılar kümesi (ℚ') dört işlemin hiçbirine göre kapalı değildir; çünkü iki irrasyonel sayının toplamı veya çarpımı rasyonel sayı olabilir.",
+    "Gerçek sayılarda toplama işleminin etkisiz (birim) elemanı 0, a sayısının toplama işlemine göre tersi -a'dır; çarpma işleminin etkisiz elemanı 1, yutan elemanı 0 ve sıfırdan farklı a sayısının çarpmaya göre tersi 1/a'dır.",
+    "Doğal sayılar ve tam sayılar kümesinde ardışık iki eleman arasında başka bir tam sayı bulunmazken, rasyonel (ℚ) ve gerçek (ℝ) sayılar kümesinde herhangi iki farklı sayı arasında sonsuz sayıda eleman bulunur; bu özelliğe yoğunluk (arada olma) özelliği denir.",
+    "Matematiksel bir iddianın her zaman doğru olduğunu göstermek için cebirsel ispat gerekirken, yanlış olduğunu göstermek için tek bir karşı örnek (aksi örnek) bulmak yeterlidir."
+  ],
+  "bolumler": [
     {
-     "metin": "Doğal sayılar kümesi (ℕ) çıkarma işlemine göre kapalı bir kümedir.",
-     "dogru": false,
-     "aciklama": "Örneğin 2 ∈ ℕ ve 6 ∈ ℕ iken 2 - 6 = -4 ∉ ℕ olduğundan doğal sayılar kümesi çıkarmaya göre kapalı değildir."
+      "baslik": "1. Sayı Kümeleri Arasındaki İlişkiler (ℕ, ℤ, ℚ, ℚ', ℝ)",
+      "metin": [
+        "Matematikte sayılar, sahip oldukları özelliklere göre iç içe geçmiş veya ayrık kümeler hâlinde sınıflandırılır: • {koyu:Doğal Sayılar Kümesi (ℕ)}: {koyu:ℕ} (0, 1, 2, 3, ...) kümesidir; sıfır hariç pozitif doğal sayılar {koyu:ℕ⁺} (1, 2, 3, ...) (sayma sayıları) olarak adlandırılır. • {koyu:Tam Sayılar Kümesi (ℤ)}: Doğal sayılara negatif tam sayıların eklenmesiyle oluşan {koyu:ℤ} (..., -2, -1, 0, 1, 2, ...) kümesidir ve {koyu:ℤ = ℤ⁻ ∪ (0) ∪ ℤ⁺} biçiminde ifade edilir.",
+        "{koyu:Rasyonel Sayılar Kümesi (ℚ)}: {koyu:a, b ∈ ℤ} ve {koyu:b ≠ 0} olmak üzere {koyu:a/b} biçiminde yazılabilen sayıların kümesidir. Her tam sayı paydası 1 olan bir rasyonel sayı olduğundan {koyu:ℕ ⊂ ℤ ⊂ ℚ} kapsama ilişkisi geçerlidir. • {koyu:İrrasyonel Sayılar (ℚ') ve Gerçek Sayılar (ℝ)}: İki tam sayının oranı şeklinde yazılamayan, virgülden sonraki kısmı düzensiz ve sonsuza kadar devam eden sayılara ({koyu:π, e} ve kök dışına tam çıkamayan {koyu:kök 2, kök 5} gibi sayılara) irrasyonel sayılar denir. Rasyonel ve irrasyonel sayıların birleşimi sayı doğrusunu boşluksuz dolduran {koyu:Gerçek (Reel) Sayılar Kümesini (ℝ = ℚ ∪ ℚ')} oluşturur."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Rasyonel ve İrrasyonel Sayılar Ayrıktır",
+        "metin": "Bir gerçek sayı ya rasyoneldir ya da irrasyoneldir; hem rasyonel hem irrasyonel olan hiçbir sayı yoktur. Dolayısıyla ℚ ∩ ℚ' = ∅ (boş küme) ve ℚ ∪ ℚ' = ℝ eşitlikleri her zaman geçerlidir. Devirli ondalık gösterimler (örneğin 0,333... = 1/3) a/b biçiminde yazılabildiği için rasyonel sayıdır."
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 250\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#1a5276\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Sayı Kümeleri Hiyerarşisi: N ⊂ Z ⊂ Q ⊂ R ve Q ∪ Q' = R</text><rect x=\"18\" y=\"54\" width=\"152\" height=\"180\" rx=\"10\" fill=\"#e9f7ef\" stroke=\"#1e8449\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"152\" height=\"28\" rx=\"10\" fill=\"#1e8449\"/><text x=\"94\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Doğal Sayılar (N)</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• N = {0, 1, 2, 3, ...}</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• Sayma: N+ = {1, 2, ...}</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Ardışık elemanlar</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  arasında tam sayı</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">  bulunmaz (ayrık).</text><text x=\"30\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">• En küçük eleman: 0</text><rect x=\"182\" y=\"54\" width=\"152\" height=\"180\" rx=\"10\" fill=\"#eaf2f8\" stroke=\"#2874a6\" stroke-width=\"1.6\"/><rect x=\"182\" y=\"54\" width=\"152\" height=\"28\" rx=\"10\" fill=\"#2874a6\"/><text x=\"258\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Tam Sayılar (Z)</text><text x=\"194\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Z = {..., -2, -1, 0, 1, ...}</text><text x=\"194\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• Z = Z- ∪ {0} ∪ Z+</text><text x=\"194\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• N kümesini kapsar.</text><text x=\"194\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• Çıkarma işlemine</text><text x=\"194\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">  göre kapalıdır.</text><text x=\"194\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">• Yoğun değildir.</text><rect x=\"346\" y=\"54\" width=\"152\" height=\"180\" rx=\"10\" fill=\"#fef9e7\" stroke=\"#b9770e\" stroke-width=\"1.6\"/><rect x=\"346\" y=\"54\" width=\"152\" height=\"28\" rx=\"10\" fill=\"#b9770e\"/><text x=\"422\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Rasyonel Sayılar (Q)</text><text x=\"358\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• a,b ∈ Z ve b ≠ 0</text><text x=\"358\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  için a/b biçiminde</text><text x=\"358\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">  yazılabilen sayılar.</text><text x=\"358\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• İki rasyonel sayı</text><text x=\"358\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">  arasında sonsuz Q</text><text x=\"358\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">  vardır (yoğundur).</text><rect x=\"510\" y=\"54\" width=\"152\" height=\"180\" rx=\"10\" fill=\"#f5eef8\" stroke=\"#7d3c98\" stroke-width=\"1.6\"/><rect x=\"510\" y=\"54\" width=\"152\" height=\"28\" rx=\"10\" fill=\"#7d3c98\"/><text x=\"586\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Gerçek Sayılar (R)</text><text x=\"522\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• R = Q ∪ Q' (İrrasyonel)</text><text x=\"522\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• Sayı doğrusunu</text><text x=\"522\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">  boşluksuz doldurur.</text><text x=\"522\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• π, e ve kök dışına</text><text x=\"522\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">  çıkamayan sayılar</text><text x=\"522\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">  Q' kümesindedir.</text></svg>"
     },
     {
-     "metin": "Gerçek sayılar kümesinde toplama işleminin etkisiz (birim) elemanı 0, çarpma işleminin etkisiz elemanı 1'dir.",
-     "dogru": true,
-     "aciklama": "Her a ∈ ℝ için a + 0 = a ve a · 1 = a eşitlikleri sağlanır."
+      "baslik": "2. Sayı Kümelerinde Kapalılık Özelliği",
+      "metin": [
+        "Bir {koyu:A} sayı kümesinden seçilen herhangi iki elemana bir işlem uygulandığında, çıkan sonuç her zaman yine {koyu:A} kümesinin bir elemanı oluyorsa {koyu:'A kümesi bu işleme göre kapalıdır'} denir. • {koyu:Doğal Sayılar (ℕ)}: İki doğal sayının toplamı ve çarpımı daima doğal sayı olduğu için ℕ kümesi {koyu:toplama ve çarpma işlemlerine göre kapalıdır}. Ancak {koyu:3 - 7 = -4 ∉ ℕ} ve {koyu:5 ÷ 2 = 2,5 ∉ ℕ} olduğundan çıkarma ve bölme işlemlerine göre {koyu:kapalı değildir}.",
+        "{koyu:Tam Sayılar (ℤ)}: Toplama, çıkarma ve çarpma işlemlerine göre {koyu:kapalıdır}; fakat iki tam sayının bölümü her zaman tam sayı olmadığından bölme işlemine göre {koyu:kapalı değildir}. • {koyu:Rasyonel (ℚ) ve Gerçek (ℝ) Sayılar}: Toplama, çıkarma ve çarpma işlemlerine göre kapalıdır; sıfıra bölme tanımsız olduğu için {koyu:sıfır hariç ℚ} ve {koyu:sıfır hariç ℝ} kümeleri bölme işlemine göre de kapalıdır. • {koyu:İrrasyonel Sayılar (ℚ')}: Toplama, çıkarma, çarpma ve bölme işlemlerinin {koyu:hiçbirine göre kapalı değildir}!"
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "baslik": "İrrasyonel Sayılarda Kapalılık İçin Karşı Örnekler",
+        "metin": "Toplama karşı örneği: a = (3 + kök 2) ∈ ℚ' ve b = (3 - kök 2) ∈ ℚ' iken a + b = 6 ∈ ℚ (sonuç rasyonel oldu!).\n• Çarpma karşı örneği: a = kök 2 ∈ ℚ' ve b = kök 8 ∈ ℚ' iken a · b = kök 16 = 4 ∈ ℚ (sonuç rasyonel oldu!).\nDemek ki iki irrasyonel sayının toplamı veya çarpımı her zaman irrasyonel olmak zorunda değildir."
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 240\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"240\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#117864\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Sayı Kümelerinin Kapalılık Özelliği Karşılaştırma Tablosu</text><rect x=\"18\" y=\"54\" width=\"206\" height=\"172\" rx=\"10\" fill=\"#e8f8f5\" stroke=\"#117864\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"206\" height=\"28\" rx=\"10\" fill=\"#117864\"/><text x=\"121\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Toplama (+) ve Çarpma (·)</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• N kümesi: KAPALIDIR (+ ve ·)</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• Z kümesi: KAPALIDIR (+ ve ·)</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Q kümesi: KAPALIDIR (+ ve ·)</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• R kümesi: KAPALIDIR (+ ve ·)</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Q' (İrrasyonel): KAPALI DEĞİLDİR!</text><text x=\"30\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">  Örn: (2 - kök3) + (2 + kök3) = 4 ∈ Q</text><rect x=\"237\" y=\"54\" width=\"206\" height=\"172\" rx=\"10\" fill=\"#fef9e7\" stroke=\"#b9770e\" stroke-width=\"1.6\"/><rect x=\"237\" y=\"54\" width=\"206\" height=\"28\" rx=\"10\" fill=\"#b9770e\"/><text x=\"340\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Çıkarma (-) İşlemi</text><text x=\"249\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• N kümesi: KAPALI DEĞİLDİR</text><text x=\"249\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  Karşı örnek: 3 - 7 = -4 ∉ N</text><text x=\"249\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Z kümesi: KAPALIDIR</text><text x=\"249\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• Q kümesi: KAPALIDIR</text><text x=\"249\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• R kümesi: KAPALIDIR</text><text x=\"249\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">• Q' kümesi: KAPALI DEĞİLDİR</text><rect x=\"456\" y=\"54\" width=\"206\" height=\"172\" rx=\"10\" fill=\"#fdedec\" stroke=\"#922b21\" stroke-width=\"1.6\"/><rect x=\"456\" y=\"54\" width=\"206\" height=\"28\" rx=\"10\" fill=\"#922b21\"/><text x=\"559\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Bölme (÷, Bölen ≠ 0)</text><text x=\"468\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• N kümesi: KAPALI DEĞİLDİR</text><text x=\"468\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">• Z kümesi: KAPALI DEĞİLDİR</text><text x=\"468\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">  Karşı örnek: 5 ÷ 2 = 2,5 ∉ Z</text><text x=\"468\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• Q - {0}: KAPALIDIR</text><text x=\"468\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• R - {0}: KAPALIDIR</text><text x=\"468\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">• 0'a bölme tanımsızdır!</text></svg>"
     },
     {
-     "metin": "Gerçek sayılar kümesinde 0 sayısının çarpma işlemine göre tersi yine 0'dır.",
-     "dogru": false,
-     "aciklama": "1/0 tanımsız olduğu için 0 sayısının çarpma işlemine göre tersi yoktur."
+      "baslik": "3. Gerçek Sayılar Kümesinde Toplama ve Çarpma İşlemlerinin Özellikleri",
+      "metin": [
+        "Gerçek sayılar kümesinde (ℝ) yapılan cebirsel işlemler, toplama ve çarpmanın temel aksiyomlarına dayanır. Her {koyu:a, b, c ∈ ℝ} için: • {koyu:Değişme Özelliği}: {koyu:a + b = b + a} ve {koyu:a · b = b · a} (işlem sırası sonucu değiştirmez). • {koyu:Birleşme Özelliği}: {koyu:(a + b) + c = a + (b + c)} ve {koyu:(a · b) · c = a · (b · c)} (üç veya daha fazla sayıda parantez önceliği sonucu değiştirmez).",
+        "{koyu:Etkisiz (Birim) Eleman Özelliği}: Toplama işleminin etkisiz elemanı {koyu:0}'dır ({koyu:a + 0 = 0 + a = a}); çarpma işleminin etkisiz elemanı {koyu:1}'dir ({koyu:a · 1 = 1 · a = a}). • {koyu:Ters Eleman Özelliği}: Bir {koyu:a} gerçek sayısının toplama işlemine göre tersi {koyu:-a}'dır çünkü {koyu:a + (-a) = 0} (birim eleman) olur. Sıfırdan farklı bir {koyu:a} gerçek sayısının ({koyu:a ≠ 0}) çarpma işlemine göre tersi {koyu:1/a}'dır çünkü {koyu:a · (1/a) = 1} olur; {koyu:0'ın çarpma işlemine göre tersi yoktur}. • {koyu:Yutan Eleman ve Dağılma Özelliği}: Çarpmada {koyu:0} yutan elemandır ({koyu:a · 0 = 0}); çarpma işleminin toplama ve çıkarma üzerine sağdan ve soldan dağılma özelliği vardır: {koyu:a · (b ± c) = a · b ± a · c}."
+      ],
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Ters Eleman ve Dağılma Özelliği Uygulaması",
+        "metin": "x = 3/5 gerçek sayısının toplama işlemine göre tersi A = -3/5, çarpma işlemine göre tersi B = 5/3'tür. Toplamları: A + B = (-3/5) + (5/3) = 16/15 bulunur."
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 250\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#6c3483\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Gerçek Sayılarda (R) Toplama ve Çarpma İşlemlerinin Cebirsel Özellikleri</text><rect x=\"18\" y=\"54\" width=\"314\" height=\"180\" rx=\"10\" fill=\"#eaf2f8\" stroke=\"#1a5276\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#1a5276\"/><text x=\"175\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Toplama İşleminin Özellikleri (+)</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">1. Kapalılık: ∀a, b ∈ R için a + b ∈ R</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">2. Değişme: a + b = b + a</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">3. Birleşme: (a + b) + c = a + (b + c)</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">4. Etkisiz (Birim) Eleman: 0  (a + 0 = a)</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">5. Ters Eleman: a'nın toplama tersi -a'dır;</text><text x=\"30\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">   a + (-a) = 0 (Her gerçek sayının tersi vardır)</text><rect x=\"348\" y=\"54\" width=\"314\" height=\"180\" rx=\"10\" fill=\"#f5eef8\" stroke=\"#6c3483\" stroke-width=\"1.6\"/><rect x=\"348\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#6c3483\"/><text x=\"505\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Çarpma İşleminin Özellikleri (·)</text><text x=\"360\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">1. Kapalılık: ∀a, b ∈ R için a · b ∈ R</text><text x=\"360\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">2. Değişme ve Birleşme: a·b = b·a, (a·b)·c = a·(b·c)</text><text x=\"360\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">3. Etkisiz (Birim) Eleman: 1  (a · 1 = a)</text><text x=\"360\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">4. Yutan Eleman: 0  (a · 0 = 0)</text><text x=\"360\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">5. Ters Eleman: a ≠ 0 için 1/a  (a · 1/a = 1)</text><text x=\"360\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">6. Dağılma: a · (b ± c) = a·b ± a·c</text></svg>"
+    },
+    {
+      "baslik": "4. Farklı Sayı Kümelerinde Ters Elemanların Varlığı",
+      "metin": [
+        "Bir işlemin etkisiz ve ters eleman özelliklerini incelerken hangi sayı kümesinde çalıştığımız çok önemlidir. Örneğin {koyu:Doğal Sayılar Kümesinde (ℕ)} toplama işleminin etkisiz elemanı 0'dır; ancak 0 dışındaki hiçbir doğal sayının toplama işlemine göre tersi doğal sayılar kümesinde bulunmaz (örneğin 5'in toplama tersi olan {koyu:-5 ∉ ℕ}). Tam sayılar kümesine (ℤ) geçildiğinde her elemanın toplama işlemine göre tersi kümede mevcuttur.",
+        "Benzer biçimde {koyu:Tam Sayılar Kümesinde (ℤ)} çarpma işleminin etkisiz elemanı 1'dir; ancak {koyu:1} ve {koyu:-1} dışındaki hiçbir tam sayının çarpma işlemine göre tersi tam sayı değildir (örneğin 4'ün çarpmaya göre tersi olan {koyu:1/4 ∉ ℤ}). Rasyonel sayılar (ℚ) ve gerçek sayılar (ℝ) kümelerinde ise 0 hariç her elemanın çarpma işlemine göre tersi yine aynı kümenin elemanıdır."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Tam Sayılarda Çarpmaya Göre Ters Eleman Tuzağı",
+        "metin": "Tam sayılar kümesinde (ℤ) çarpma işlemine göre tersi yine bir tam sayı olan yalnızca İKİ eleman vardır: 1 ve -1. Diğer tüm tam sayıların çarpmaya göre tersi rasyonel sayıdır (ℤ kümesinin dışındadır)!"
+      }
+    },
+    {
+      "baslik": "5. Sıralama ve Arada Olma (Yoğunluk) Özelliği",
+      "metin": [
+        "Gerçek sayılar kümesinde herhangi iki {koyu:a} ve {koyu:b} sayısı karşılaştırıldığında {koyu:a < b}, {koyu:a = b} veya {koyu:a > b} durumlarından yalnızca biri geçerlidir ({koyu:üç hâl kanunu}). Sıralama bağıntısı {koyu:geçişme özelliğine} sahiptir ({koyu:a < b} ve {koyu:b < c} ise {koyu:a < c}). Bir eşitsizliğin her iki tarafına aynı gerçek sayı eklendiğinde veya pozitif bir sayı ile çarpıldığında eşitsizlik yön değiştirmez; negatif bir sayı ile çarpıldığında veya bölündüğünde ise eşitsizlik {koyu:yön değiştirir} ({koyu:a < b} ve {koyu:c < 0} ise {koyu:a · c > b · c}).",
+        "Sayı kümelerini birbirinden ayıran en önemli yapısal farklardan biri {koyu:arada olma (yoğunluk)} özelliğidir: Doğal sayılar (ℕ) ve tam sayılar (ℤ) kümesinde ardışık iki eleman (örneğin 4 ile 5) arasında başka bir tam sayı bulunmaz. Oysa rasyonel sayılar (ℚ) ve gerçek sayılar (ℝ) kümesinde birbirinden farklı her {koyu:a} ve {koyu:b} sayısı ({koyu:a < b}) için {koyu:a < (a + b)/2 < b} koşulunu sağlayan bir aritmetik ortalama mevcuttur. Bu işlem sonsuz kez tekrarlanabildiğinden, {koyu:iki rasyonel sayı veya iki gerçek sayı arasında hem sonsuz tane rasyonel sayı hem de sonsuz tane irrasyonel sayı bulunur}."
+      ],
+      "kutu": {
+        "tur": "hatirla",
+        "baslik": "Bir Kümenin Yoğun Olması Ne Demektir?",
+        "metin": "Bir sayı kümesinin herhangi iki farklı elemanı arasında yine o kümeye ait en az bir (dolayısıyla sonsuz sayıda) eleman bulunabiliyorsa o kümeye 'yoğun küme' denir. ℚ ve ℝ kümeleri yoğun kümelerdir; ℕ ve ℤ kümeleri ise yoğun değildir."
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 235\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"235\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#b9770e\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Sıralama, Arada Olma (Yoğunluk) ve Matematiksel Muhakeme Süreci</text><rect x=\"18\" y=\"54\" width=\"314\" height=\"165\" rx=\"10\" fill=\"#fef9e7\" stroke=\"#b9770e\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#b9770e\"/><text x=\"175\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Arada Olma (Yoğunluk) Özelliği</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• N ve Z kümelerinde ardışık iki tam sayı arasında</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  başka bir tam sayı yoktur (yoğun değildir).</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Q ve R kümelerinde her a &lt; b için a &lt; (a+b)/2 &lt; b</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  olduğundan iki sayı arasında SONSUZ sayı vardır.</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Bu özelliğe kümenin YOĞUNLUĞU denir.</text><rect x=\"348\" y=\"54\" width=\"314\" height=\"165\" rx=\"10\" fill=\"#e9f7ef\" stroke=\"#1e8449\" stroke-width=\"1.6\"/><rect x=\"348\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#1e8449\"/><text x=\"505\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Varsayım, Genelleme ve Karşı Örnek</text><text x=\"360\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Varsayım: Sayı kümelerindeki örüntülerden yola</text><text x=\"360\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  çıkarak kurulan matematiksel iddiadır.</text><text x=\"360\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Doğrulama: Cebirsel ispatla genelleme yapılır.</text><text x=\"360\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• Çürütme (Karşı Örnek): İddianın yanlışlığını</text><text x=\"360\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">  göstermek için TEK BİR karşı örnek yeterlidir!</text></svg>"
+    },
+    {
+      "baslik": "6. Sayı Kümelerinde Muhakeme: Varsayım, Genelleme ve Karşı Örnek",
+      "metin": [
+        "Matematiksel muhakeme sürecinde sayı kümelerindeki örüntüleri inceleyerek önce bir {koyu:varsayım (hipotez)} kurarız, ardından bu varsayımın tüm elemanlar için geçerli olup olmadığını test ederek {koyu:genellemeye} ulaşırız. Örneğin {koyu:'Bir rasyonel sayı ile bir irrasyonel sayının toplamı her zaman irrasyoneldir'} varsayımını ele alalım: {koyu:a ∈ ℚ} ve {koyu:b ∈ ℚ'} iken toplamları olan {koyu:a + b = c} sayısının rasyonel olduğunu varsayarsak, {koyu:b = c - a} olur; rasyonel sayılar çıkarmaya göre kapalı olduğundan {koyu:c - a ∈ ℚ} çıkması gerekir ki bu {koyu:b ∈ ℚ'} olmasıyla çelişir! Böylece varsayımımız doğrulanır ve genel bir kurala dönüşür.",
+        "Buna karşılık {koyu:'Bir rasyonel sayı ile bir irrasyonel sayının çarpımı her zaman irrasyoneldir'} iddiasını incelediğimizde, {koyu:a = 0 ∈ ℚ} ve {koyu:b = kök 5 ∈ ℚ'} seçersek {koyu:0 · kök 5 = 0 ∈ ℚ} (rasyonel) sonucunu elde ederiz. İşte bir genellemenin yanlış olduğunu kanıtlayan bu özel duruma {koyu:karşı örnek (aksi örnek)} denir. İfadeyi doğru bir genellemeye dönüştürmek için koşulu {koyu:'Sıfırdan farklı bir rasyonel sayı ile bir irrasyonel sayının çarpımı daima irrasyoneldir'} biçiminde daraltmamız gerekir."
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Muhakeme Sorularında Sıfır (0) ve Bir (1) Kontrolü",
+        "metin": "Sayı kümeleriyle ilgili 'Her zaman doğrudur / Kesinlikle irrasyoneldir' tarzı öncüllü sorularda varsayımı test ederken mutlaka 0 (toplamanın etkisiz, çarpmanın yutan elemanı), 1 (çarpmanın etkisiz elemanı) ve birbirinin eşleniği olan irrasyonel sayıları karşı örnek olarak deneyiniz!"
+      }
     }
-   ]
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
-   "ifadeler": [
+  ],
+  "ornekler": [
     {
-     "metin": "Rasyonel sayılar kümesi (ℚ) ile irrasyonel sayılar kümesinin (ℚ') kesişimi boş kümedir (ℚ ∩ ℚ' = ∅).",
-     "dogru": true,
-     "aciklama": "Bir gerçek sayı aynı anda hem rasyonel hem irrasyonel olamaz; bu iki küme ayrıktır."
+      "soru": "Aşağıda verilen sayıların hangi sayı kümelerinin (ℕ, ℤ, ℚ, ℚ', ℝ) elemanı olduğunu belirleyiniz: a) -7, b) 3/8, c) kök 12, d) kök 25.",
+      "cevap": "a) -7 sayısı: ℤ, ℚ ve ℝ kümelerinin elemanıdır (ℕ ve ℚ' elemanı değildir).\nb) 3/8 sayısı: ℚ ve ℝ kümelerinin elemanıdır.\nc) kök 12 = 2 kök 3 sayısı: Kök dışına tam çıkamadığı için ℚ' (irrasyonel) ve ℝ kümelerinin elemanıdır.\nd) kök 25 = 5 sayısı: ℕ, ℤ, ℚ ve ℝ kümelerinin elemanıdır."
     },
     {
-     "metin": "Tam sayılar kümesi (ℤ), herhangi iki farklı elemanı arasında sonsuz tam sayı bulunduğu için yoğun bir kümedir.",
-     "dogru": false,
-     "aciklama": "Tam sayılar kümesinde ardışık iki tam sayı (örneğin 3 ile 4) arasında başka tam sayı yoktur; ℤ yoğun değildir."
+      "soru": "Gerçek sayılar kümesinde x = -4/7 sayısının toplama işlemine göre tersi K, çarpma işlemine göre tersi L olduğuna göre K · L çarpımını ve K + L toplamını bulunuz.",
+      "cevap": "x = -4/7 sayısının toplamaya göre tersi K = 4/7'dir.\nÇarpmaya göre tersi L = -7/4'tür.\n• Çarpımları: K · L = (4/7) · (-7/4) = -1.\n• Toplamları: K + L = (4/7) + (-7/4) = (16 - 49) / 28 = -33/28."
     },
     {
-     "metin": "Bir rasyonel sayı ile bir irrasyonel sayının toplamı her zaman irrasyonel sayıdır.",
-     "dogru": true,
-     "aciklama": "Rasyonel bir sayıya irrasyonel bir sayı eklendiğinde virgülden sonraki düzensiz sonsuz açılım korunur ve sonuç daima irrasyonel olur."
+      "soru": "Verilen 1/3 ile 1/2 rasyonel sayıları arasında bulunan üç farklı rasyonel sayı bulunuz ve rasyonel sayılar kümesinin yoğunluk özelliğini açıklayınız.",
+      "cevap": "Paydaları 24'te eşitlersek 1/3 = 8/24 ve 1/2 = 12/24 olur. Aralarındaki 9/24, 10/24 ve 11/24 sayıları bu aralıktaki üç rasyonel sayıdır. Paydaları istediğimiz kadar genişletebileceğimiz için iki rasyonel sayı arasında sonsuz rasyonel sayı vardır (yoğunluk özelliği)."
+    },
+    {
+      "soru": "'İki irrasyonel sayının toplamı ve çarpımı daima irrasyoneldir.' iddiasının yanlış olduğunu bir karşı örnek vererek kanıtlayınız.",
+      "cevap": "a = (4 + kök 5) ve b = (4 - kök 5) sayıları birer irrasyonel sayıdır (a, b ∈ ℚ').\n• Toplamları: a + b = (4 + kök 5) + (4 - kök 5) = 8 ∈ ℚ (rasyonel sayı).\n• Çarpımları: a · b = (4 + kök 5) · (4 - kök 5) = 16 - 5 = 11 ∈ ℚ (rasyonel sayı).\nDolayısıyla iddia yanlıştır; ℚ' kümesi toplama ve çarpmaya göre kapalı değildir."
+    },
+    {
+      "soru": "Gerçek sayılar kümesinde 3x + (2/5) ifadesinin toplama işlemine göre tersi 0 olduğuna göre x gerçek sayısının çarpma işlemine göre tersi kaçtır?",
+      "cevap": "Bir gerçek sayının toplamaya göre tersi 0 ise bu sayı 0'a eşittir:\n3x + 2/5 = 0 => 3x = -2/5 => x = -2/15.\nx = -2/15 sayısının çarpma işlemine göre tersi 1/x = -15/2 bulunur."
+    },
+    {
+      "soru": "‘Sayı Kümeleri Arasındaki İlişkiler (ℕ, ℤ, ℚ, ℚ', ℝ)’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
+      "cevap": "Matematikte sayılar, sahip oldukları özelliklere göre iç içe geçmiş veya ayrık kümeler hâlinde sınıflandırılır: • {koyu:Doğal Sayılar Kümesi (ℕ)}: {koyu:ℕ} (0, 1, 2, 3, ...) kümesidir; sıfır hariç pozitif doğal sayılar {koyu:ℕ⁺} (1, 2, 3, ...) (sayma sayıları) olarak adlandırılır. • {koyu:Tam Sayılar Kümesi (ℤ)}: Doğal sayılara negatif tam sayıların eklenmesiyle oluşan {koyu:ℤ} (..., -2, -1, 0, 1, 2, ...) kümesidir ve {koyu:ℤ = ℤ⁻ ∪ (0) ∪ ℤ⁺} biçiminde ifade edilir. • {koyu:Rasyonel Sayılar Kümesi (ℚ)}: {koyu:a, b ∈ ℤ} ve {koyu:b ≠ 0} olmak üzere {koyu:a/b} biçiminde yazılabilen sayıların kümesidir. Her tam sayı paydası 1 olan bir rasyonel sayı olduğundan {koyu:ℕ ⊂ ℤ ⊂ ℚ} kapsama ilişkisi geçerlidir. • {koyu:İrrasyonel Sayılar (ℚ') ve Gerçek Sayılar (ℝ)}: İki tam sayının oranı şeklinde yazılamayan, virgülden sonraki kısmı düzensiz ve sonsuza kadar devam eden sayılara ({koyu:π, e} ve kök dışına tam çıkamayan {koyu:kök 2, kök 5} gibi sayılara) irrasyonel sayılar denir. Rasyonel ve irrasyonel sayıların birleşimi sayı doğrusunu boşluksuz dolduran {koyu:Gerçek (Reel) Sayılar Kümesini (ℝ = ℚ ∪ ℚ')} oluşturur."
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "soru": "Aşağıdaki cebirsel eşitlikleri gerçek sayılar kümesindeki işlem özellikleriyle eşleştiriniz.",
-   "ciftler": [
-    [
-     "a + (-a) = 0",
-     "Toplama işleminde ters eleman özelliği"
-    ],
-    [
-     "a · (b + c) = a · b + a · c",
-     "Çarpmanın toplama üzerine soldan dağılma özelliği"
-    ],
-    [
-     "(a + b) + c = a + (b + c)",
-     "Toplama işleminde birleşme özelliği"
-    ],
-    [
-     "a · 1 = 1 · a = a",
-     "Çarpma işleminde etkisiz (birim) eleman özelliği"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kelimelerle tamamlayınız.",
-   "cumleler": [
+  ],
+  "etkinlikler": [
     {
-     "metin": "Bir kümenin herhangi iki elemanına uygulanan işlemin sonucu her zaman yine o kümenin elemanı oluyorsa kümeye o işleme göre ___ küme denir.",
-     "cevap": "kapalı"
+      "tur": "coktan",
+      "soru": "Sayı kümelerinin dört işleme göre kapalılık özelliği ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+      "secenekler": [
+        "İrrasyonel sayılar kümesi (ℚ') toplama ve çarpma işlemlerine göre kapalıdır.",
+        "Tam sayılar kümesi (ℤ) çıkarma işlemine göre kapalıdır.",
+        "Rasyonel sayılar kümesi (ℚ) çarpma işlemine göre kapalıdır.",
+        "Doğal sayılar kümesi (ℕ) toplama ve çarpma işlemlerine göre kapalıdır.",
+        "Gerçek sayılar kümesi (ℝ) toplama, çıkarma ve çarpma işlemlerine göre kapalıdır."
+      ],
+      "dogru": 0,
+      "aciklama": "İrrasyonel sayılar kümesi (ℚ') dört işlemin hiçbirine göre kapalı değildir. Örneğin (2 + kök 3) ile (2 - kök 3) irrasyonel sayılarının toplamı 4 (rasyonel), çarpımı ise 1 (rasyonel) olup sonuç ℚ' kümesinin dışına çıkar."
     },
     {
-     "metin": "Rasyonel sayılar kümesi (ℚ) ile irrasyonel sayılar kümesinin (ℚ') birleşimi ___ sayılar kümesini (ℝ) oluşturur.",
-     "cevap": "gerçek"
+      "tur": "coktan",
+      "soru": "Sayı kümelerinin arada olma (yoğunluk) ve işlem özellikleriyle ilgili;\nI. Herhangi iki farklı rasyonel sayı arasında sonsuz tane rasyonel sayı vardır.\nII. Ardışık iki tam sayı arasında sonsuz tane irrasyonel sayı vardır.\nIII. Sıfırdan farklı bir rasyonel sayı ile bir irrasyonel sayının çarpımı daima irrasyonel sayıdır.\nyargılarından hangileri her zaman doğrudur?",
+      "secenekler": [
+        "Yalnız I",
+        "I, II ve III",
+        "I ve III",
+        "II ve III (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)",
+        "I ve II"
+      ],
+      "dogru": 1,
+      "aciklama": "ℚ ve ℝ kümeleri yoğun olduğundan iki farklı rasyonel sayı arasında sonsuz rasyonel sayı (I doğru) ve ardışık iki tam sayı arasında sonsuz irrasyonel sayı (II doğru) bulunur. Ayrıca sıfırdan farklı bir rasyonel sayı ile bir irrasyonel sayının çarpımı daima irrasyoneldir (III doğru)."
     },
     {
-     "metin": "İki gerçek sayı arasında sonsuz sayıda gerçek sayı bulunması özelliğine ___ (arada olma) özelliği denir.",
-     "cevap": "yoğunluk"
+      "tur": "coktan",
+      "soru": "‘Gerçek Sayılar Kümesinde Toplama ve Çarpma İşlemlerinin Özellikleri’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "x = 3/5 gerçek sayısının toplama işlemine göre tersi A = -3/5, çarpma işlemine göre tersi B = 5/3'tür.",
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 2,
+      "aciklama": "Gerçek Sayılar Kümesinde Toplama ve Çarpma İşlemlerinin Özellikleri bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "‘Farklı Sayı Kümelerinde Ters Elemanların Varlığı’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Tam sayılar kümesinde (ℤ) çarpma işlemine göre tersi yine bir tam sayı olan münhasıran İKİ eleman vardır: 1 ve -1.",
+        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+      ],
+      "dogru": 3,
+      "aciklama": "Farklı Sayı Kümelerinde Ters Elemanların Varlığı bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Doğal sayılar kümesi (ℕ) çıkarma işlemine göre kapalı bir kümedir.",
+          "dogru": false,
+          "aciklama": "Örneğin 2 ∈ ℕ ve 6 ∈ ℕ iken 2 - 6 = -4 ∉ ℕ olduğundan doğal sayılar kümesi çıkarmaya göre kapalı değildir."
+        },
+        {
+          "metin": "Gerçek sayılar kümesinde toplama işleminin etkisiz (birim) elemanı 0, çarpma işleminin etkisiz elemanı 1'dir.",
+          "dogru": true,
+          "aciklama": "Her a ∈ ℝ için a + 0 = a ve a · 1 = a eşitlikleri sağlanır."
+        },
+        {
+          "metin": "Gerçek sayılar kümesinde 0 sayısının çarpma işlemine göre tersi yine 0'dır.",
+          "dogru": false,
+          "aciklama": "1/0 tanımsız olduğu için 0 sayısının çarpma işlemine göre tersi yoktur."
+        },
+        {
+          "metin": "Rasyonel sayılar kümesi (ℚ) ile irrasyonel sayılar kümesinin (ℚ') kesişimi boş kümedir (ℚ ∩ ℚ' = ∅).",
+          "dogru": true,
+          "aciklama": "Bir gerçek sayı aynı anda hem rasyonel hem irrasyonel olamaz; bu iki küme ayrıktır."
+        },
+        {
+          "metin": "Tam sayılar kümesi (ℤ), herhangi iki farklı elemanı arasında sonsuz tam sayı bulunduğu için yoğun bir kümedir.",
+          "dogru": false,
+          "aciklama": "Tam sayılar kümesinde ardışık iki tam sayı (örneğin 3 ile 4) arasında başka tam sayı yoktur; ℤ yoğun değildir."
+        },
+        {
+          "metin": "Bir rasyonel sayı ile bir irrasyonel sayının toplamı daima irrasyonel sayıdır.",
+          "dogru": true,
+          "aciklama": "Rasyonel bir sayıya irrasyonel bir sayı eklendiğinde virgülden sonraki düzensiz sonsuz açılım korunur ve sonuç daima irrasyonel olur."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki cebirsel eşitlikleri gerçek sayılar kümesindeki işlem özellikleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "a + (-a) = 0",
+          "Toplama işleminde ters eleman özelliği"
+        ],
+        [
+          "a · (b + c) = a · b + a · c",
+          "Çarpmanın toplama üzerine soldan dağılma özelliği"
+        ],
+        [
+          "(a + b) + c = a + (b + c)",
+          "Toplama işleminde birleşme özelliği"
+        ],
+        [
+          "a · 1 = 1 · a = a",
+          "Çarpma işleminde etkisiz (birim) eleman özelliği"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir kümenin herhangi iki elemanına uygulanan işlemin sonucu her zaman yine o kümenin elemanı oluyorsa kümeye o işleme göre ___ küme denir.",
+          "cevap": "kapalı"
+        },
+        {
+          "metin": "Rasyonel sayılar kümesi (ℚ) ile irrasyonel sayılar kümesinin (ℚ') birleşimi ___ sayılar kümesini (ℝ) oluşturur.",
+          "cevap": "gerçek"
+        },
+        {
+          "metin": "İki gerçek sayı arasında sonsuz sayıda gerçek sayı bulunması özelliğine ___ (arada olma) özelliği denir.",
+          "cevap": "yoğunluk"
+        },
+        {
+          "metin": "Gerçek sayılar kümesinde çarpma işleminin ___ elemanı 0'dır.",
+          "cevap": "yutan"
+        },
+        {
+          "metin": "Matematiksel bir genellemenin her durumda doğru olmadığını kanıtlamak için verilen tek bir geçersizlik örneğine ___ örnek denir.",
+          "cevap": "karşı"
+        },
+        {
+          "metin": "Tam sayılar kümesinde (ℤ) çarpma işlemine göre tersi yine bir tam sayı olan elemanlar yalnızca 1 ve ___ sayılarıdır.",
+          "cevap": "-1"
+        }
+      ],
+      "fazla": [
+        "ayrık",
+        "doğal",
+        "birim",
+        "0"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "'Her a, b ∈ ℚ' (irrasyonel sayılar) için a · b çarpımı da irrasyoneldir.' varsayımını değerlendiriniz. 2) 'Her a ∈ ℚ ve b ∈ ℚ' için a · b çarpımı irrasyoneldir.' varsayımını doğru bir genellemeye dönüştürmek için hangi koşul eklenmelidir?",
+      "cevap": "1. Adım: İlk varsayım yanlıştır. Karşı örnek olarak a = kök 2 ∈ ℚ' ve b = kök 8 ∈ ℚ' seçilirse a · b = kök 16 = 4 ∈ ℚ (rasyonel sayı) bulunur; yani ℚ' kümesi çarpmaya göre kapalı değildir.\n2. Adım: İkinci varsayım da a = 0 seçildiğinde bozulur; çünkü 0 ∈ ℚ ve kök 3 ∈ ℚ' iken 0 · kök 3 = 0 ∈ ℚ (rasyonel) olur.\n3. Adım (Doğru Genelleme): Karşı örnek olan a = 0 durumu hariç tutularak 'Sıfırdan farklı her rasyonel sayı (sıfırdan farklı a ∈ ℚ) ile her irrasyonel sayının (b ∈ ℚ') çarpımı daima irrasyoneldir.' şeklinde doğru genellemeye ulaşılır.",
+      "ipuclari": [
+        "1. İpucu: Kök dışına çıkamayan iki irrasyonel sayının çarpımının kök dışına tam çıkabildiği bir örnek (örneğin kök 2 ile kök 8) düşününüz.",
+        "2. İpucu: İkinci varsayımda rasyonel sayı olan a yerine çarpmanın yutan elemanı olan 0 sayısını yazdığınızda sonucun hangi kümeye düştüğünü kontrol ediniz.",
+        "3. İpucu: Karşı örneği dışarıda bırakacak şekilde a rasyonel sayısına 'sıfırdan farklı olma' şartı ekleyerek genellemeyi yeniden yazınız."
+      ]
     }
-   ],
-   "fazla": [
-    "ayrık",
-    "doğal"
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kelimelerle tamamlayınız.",
-   "cumleler": [
-    {
-     "metin": "Gerçek sayılar kümesinde çarpma işleminin ___ elemanı 0'dır.",
-     "cevap": "yutan"
-    },
-    {
-     "metin": "Matematiksel bir genellemenin her durumda doğru olmadığını kanıtlamak için verilen tek bir geçersizlik örneğine ___ örnek denir.",
-     "cevap": "karşı"
-    },
-    {
-     "metin": "Tam sayılar kümesinde (ℤ) çarpma işlemine göre tersi yine bir tam sayı olan elemanlar yalnızca 1 ve ___ sayılarıdır.",
-     "cevap": "-1"
-    }
-   ],
-   "fazla": [
-    "birim",
-    "0"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "1) 'Her a, b ∈ ℚ' (irrasyonel sayılar) için a · b çarpımı da irrasyoneldir.' varsayımını değerlendiriniz. 2) 'Her a ∈ ℚ ve b ∈ ℚ' için a · b çarpımı irrasyoneldir.' varsayımını doğru bir genellemeye dönüştürmek için hangi koşul eklenmelidir?",
-   "ipuclari": [
-    "1. İpucu: Kök dışına çıkamayan iki irrasyonel sayının çarpımının kök dışına tam çıkabildiği bir örnek (örneğin kök 2 ile kök 8) düşününüz.",
-    "2. İpucu: İkinci varsayımda rasyonel sayı olan a yerine çarpmanın yutan elemanı olan 0 sayısını yazdığınızda sonucun hangi kümeye düştüğünü kontrol ediniz.",
-    "3. İpucu: Karşı örneği dışarıda bırakacak şekilde a rasyonel sayısına 'sıfırdan farklı olma' şartı ekleyerek genellemeyi yeniden yazınız."
-   ],
-   "cevap": "1. Adım: İlk varsayım yanlıştır. Karşı örnek olarak a = kök 2 ∈ ℚ' ve b = kök 8 ∈ ℚ' seçilirse a · b = kök 16 = 4 ∈ ℚ (rasyonel sayı) bulunur; yani ℚ' kümesi çarpmaya göre kapalı değildir.\n2. Adım: İkinci varsayım da a = 0 seçildiğinde bozulur; çünkü 0 ∈ ℚ ve kök 3 ∈ ℚ' iken 0 · kök 3 = 0 ∈ ℚ (rasyonel) olur.\n3. Adım (Doğru Genelleme): Karşı örnek olan a = 0 durumu hariç tutularak 'Sıfırdan farklı her rasyonel sayı (sıfırdan farklı a ∈ ℚ) ile her irrasyonel sayının (b ∈ ℚ') çarpımı daima irrasyoneldir.' şeklinde doğru genellemeye ulaşılır."
-  }
- ]
+  ]
 }

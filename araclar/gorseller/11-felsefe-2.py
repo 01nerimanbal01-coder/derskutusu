@@ -103,21 +103,21 @@ def _gorsel_3():
     <!-- İlk Çağ -->
     <rect x="30" y="54" width="300" height="154" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
     <text x="180" y="76" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1d4ed8">İLK ÇAĞ FELSEFESİ: KOZMOS VE UYUM</text>
-    <text x="45" y="98" font-size="10.5" fill="#1e293b">• <tspan font-weight="bold" fill="#1e40af">Hilozoizm (Canlıcılık):</tspan> Thales, Empedokles,</text>
+    <text x="45" y="98" font-size="10.5" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#1e40af">Hilozoizm (Canlıcılık):&lt;/tspan> Thales, Empedokles,</text>
     <text x="55" y="113" font-size="10" fill="#475569">Herakleitos — Doğa canlı bir bütündür (Arkhe).</text>
-    <text x="45" y="133" font-size="10.5" fill="#1e293b">• <tspan font-weight="bold" fill="#1e40af">Taoizm (Lao Tse):</tspan> Evrensel yasa Tao ile uyum.</text>
-    <text x="45" y="153" font-size="10.5" fill="#1e293b">• <tspan font-weight="bold" fill="#1e40af">Aristoteles:</tspan> Doğadaki varlıklar insan içindir.</text>
-    <text x="45" y="173" font-size="10.5" fill="#1e293b">• <tspan font-weight="bold" fill="#1e40af">Kynikler ve Stoacılar:</tspan> Mutluluk, doğanın</text>
+    <text x="45" y="133" font-size="10.5" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#1e40af">Taoizm (Lao Tse):&lt;/tspan> Evrensel yasa Tao ile uyum.</text>
+    <text x="45" y="153" font-size="10.5" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#1e40af">Aristoteles:&lt;/tspan> Doğadaki varlıklar insan içindir.</text>
+    <text x="45" y="173" font-size="10.5" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#1e40af">Kynikler ve Stoacılar:&lt;/tspan> Mutluluk, doğanın</text>
     <text x="55" y="188" font-size="10" fill="#475569">yasalarına uygun ve sade yaşamakla mümkündür.</text>
 
     <!-- Orta Çağ -->
     <rect x="350" y="54" width="300" height="154" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
     <text x="500" y="76" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#15803d">ORTA ÇAĞ FELSEFESİ: İLAHİ DÜZEN VE EMANET</text>
-    <text x="365" y="98" font-size="10.5" fill="#1e293b">• <tspan font-weight="bold" fill="#166534">Saint Augustinus:</tspan> Doğa, Tanrı'nın bilgeliğini</text>
+    <text x="365" y="98" font-size="10.5" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#166534">Saint Augustinus:&lt;/tspan> Doğa, Tanrı'nın bilgeliğini</text>
     <text x="375" y="113" font-size="10" fill="#475569">ve kusursuz düzenini yansıtan bir kitaptır.</text>
-    <text x="365" y="133" font-size="10.5" fill="#1e293b">• <tspan font-weight="bold" fill="#166534">Farabi ve İbni Sina:</tspan> Sudûr (taşma) öğretisiyle</text>
+    <text x="365" y="133" font-size="10.5" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#166534">Farabi ve İbni Sina:&lt;/tspan> Sudûr (taşma) öğretisiyle</text>
     <text x="375" y="148" font-size="10" fill="#475569">her varlık kozmik düzende anlamlı bir yere sahiptir.</text>
-    <text x="365" y="168" font-size="10.5" fill="#1e293b">• <tspan font-weight="bold" fill="#166534">Emanet ve Tasavvuf (Yunus Emre):</tspan> Doğa mülk</text>
+    <text x="365" y="168" font-size="10.5" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#166534">Emanet ve Tasavvuf (Yunus Emre):&lt;/tspan> Doğa mülk</text>
     <text x="375" y="183" font-size="10" fill="#475569">değil emanettir; israftan kaçınmak ahlaki ödevdir.</text>
     """
     return svg(w, h, ic, "İlk Çağ ve Orta Çağ Felsefesinde Doğa Anlayışı")
@@ -132,9 +132,9 @@ def _gorsel_4():
     <!-- Sol: 17. Yüzyıl Mekanik Doğa -->
     <rect x="28" y="54" width="290" height="154" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
     <text x="173" y="75" text-anchor="middle" font-size="12" font-weight="bold" fill="#b91c1c">17-18. YY: MEKANİK VE ARAÇSAL DOĞA</text>
-    <text x="42" y="97" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#991b1b">Francis Bacon:</tspan> "Bilgi güçtür." Bilimin amacı</text>
+    <text x="42" y="97" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#991b1b">Francis Bacon:&lt;/tspan> "Bilgi güçtür." Bilimin amacı</text>
     <text x="52" y="111" font-size="9.5" fill="#475569">doğanın sırlarını çözüp ona hükmetmektir.</text>
-    <text x="42" y="131" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#991b1b">René Descartes ve Thomas Hobbes:</tspan></text>
+    <text x="42" y="131" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#991b1b">René Descartes ve Thomas Hobbes:&lt;/tspan></text>
     <text x="52" y="145" font-size="9.5" fill="#475569">Akılcı-mekanik evren: Düşünen özne (insan)</text>
     <text x="52" y="159" font-size="9.5" fill="#475569">karşısında ruhsuz bir saat gibi işleyen madde.</text>
     <rect x="42" y="170" width="262" height="26" rx="6" fill="#fee2e2"/>
@@ -147,10 +147,10 @@ def _gorsel_4():
     <!-- Sağ: 20. Yüzyıl Eleştirileri -->
     <rect x="372" y="54" width="280" height="154" rx="10" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="2"/>
     <text x="512" y="75" text-anchor="middle" font-size="12" font-weight="bold" fill="#5b21b6">20. YY: MODERNİTE VE TEKNİK ELEŞTİRİSİ</text>
-    <text x="386" y="97" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#6d28d9">Martin Heidegger:</tspan> Modern bilim varlığı</text>
+    <text x="386" y="97" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#6d28d9">Martin Heidegger:&lt;/tspan> Modern bilim varlığı</text>
     <text x="396" y="111" font-size="9.5" fill="#475569">matematiksel fiziğe indirgemiş; doğayı devasa</text>
     <text x="396" y="125" font-size="9.5" fill="#475569">bir makine görerek ötekileştirmiştir.</text>
-    <text x="386" y="145" font-size="10" fill="#1e293b">• <tspan font-weight="bold" fill="#6d28d9">Theodor Adorno:</tspan> Doğaya egemen olma</text>
+    <text x="386" y="145" font-size="10" fill="#1e293b">• &lt;tspan font-weight="bold" fill="#6d28d9">Theodor Adorno:&lt;/tspan> Doğaya egemen olma</text>
     <text x="396" y="159" font-size="9.5" fill="#475569">çabası yabancılaşma doğurmuştur: "Durdurulamaz</text>
     <text x="396" y="173" font-size="9.5" fill="#475569">ilerlemenin laneti durdurulamaz gerilemedir."</text>
     """
@@ -184,10 +184,10 @@ def _gorsel_5():
     <!-- Sağ: Richard Routley Son İnsan Deneyi -->
     <rect x="352" y="54" width="300" height="154" rx="10" fill="#ffffff" stroke="#0284c7" stroke-width="1.8"/>
     <text x="502" y="75" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#0369a1">Richard Routley: "Son İnsan" Düşünce Deneyi</text>
-    <text x="366" y="96" font-size="9.8" fill="#334155">• Küresel felaket sonrası dünyada kalan <tspan font-weight="bold">son insan</tspan>,</text>
+    <text x="366" y="96" font-size="9.8" fill="#334155">• Küresel felaket sonrası dünyada kalan &lt;tspan font-weight="bold">son insan&lt;/tspan>,</text>
     <text x="376" y="111" font-size="9.8" fill="#334155">ölmeden önce tüm ağaçları ve canlıları yok eder.</text>
     <text x="366" y="130" font-size="9.8" fill="#334155">• Zarar görecek başka hiçbir insan kalmamıştır.</text>
-    <text x="366" y="149" font-size="9.8" fill="#334155">• <tspan font-weight="bold" fill="#b91c1c">Soru:</tspan> Bu eylem neden yine de ahlaken yanlıştır?</text>
+    <text x="366" y="149" font-size="9.8" fill="#334155">• &lt;tspan font-weight="bold" fill="#b91c1c">Soru:&lt;/tspan> Bu eylem neden yine de ahlaken yanlıştır?</text>
     <rect x="366" y="161" width="272" height="35" rx="7" fill="#e0f2fe"/>
     <text x="502" y="177" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#0c4a6e">Çıkarım: Doğanın değeri insana sağladığı yarardan</text>
     <text x="502" y="190" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#0c4a6e">ibaret değildir; doğa kendi başına içsel değer taşır.</text>
@@ -218,13 +218,13 @@ def _gorsel_6():
     <rect x="365" y="54" width="285" height="175" rx="10" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
     <text x="507" y="74" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e293b">ÇAĞDAŞ ÇEVRE ETİĞİ YAKLAŞIMLARI</text>
 
-    <text x="378" y="96" font-size="10" fill="#334155">• <tspan font-weight="bold" fill="#b91c1c">İnsan Merkezci:</tspan> Doğa araçsal değer taşır.</text>
-    <text x="378" y="116" font-size="10" fill="#334155">• <tspan font-weight="bold" fill="#854d0e">Canlı Merkezci (Paul W. Taylor):</tspan> Doğaya</text>
+    <text x="378" y="96" font-size="10" fill="#334155">• &lt;tspan font-weight="bold" fill="#b91c1c">İnsan Merkezci:&lt;/tspan> Doğa araçsal değer taşır.</text>
+    <text x="378" y="116" font-size="10" fill="#334155">• &lt;tspan font-weight="bold" fill="#854d0e">Canlı Merkezci (Paul W. Taylor):&lt;/tspan> Doğaya</text>
     <text x="388" y="130" font-size="9.5" fill="#475569">Saygı etiği; her canlı kendi iyiliğine yönelir.</text>
-    <text x="378" y="150" font-size="10" fill="#334155">• <tspan font-weight="bold" fill="#166534">Çevre Merkezci (Aldo Leopold):</tspan> Toprak etiği;</text>
+    <text x="378" y="150" font-size="10" fill="#334155">• &lt;tspan font-weight="bold" fill="#166534">Çevre Merkezci (Aldo Leopold):&lt;/tspan> Toprak etiği;</text>
     <text x="388" y="164" font-size="9.5" fill="#475569">cansız unsurlar dahil tüm ekosistem değerlidir.</text>
-    <text x="378" y="184" font-size="10" fill="#334155">• <tspan font-weight="bold" fill="#0369a1">Derin Ekoloji (Arne Naess):</tspan> Biyosferik eşitlik.</text>
-    <text x="378" y="204" font-size="10" fill="#334155">• <tspan font-weight="bold" fill="#6d28d9">Fütüristik Yaklaşım:</tspan> Gelecek kuşakların hakkı.</text>
+    <text x="378" y="184" font-size="10" fill="#334155">• &lt;tspan font-weight="bold" fill="#0369a1">Derin Ekoloji (Arne Naess):&lt;/tspan> Biyosferik eşitlik.</text>
+    <text x="378" y="204" font-size="10" fill="#334155">• &lt;tspan font-weight="bold" fill="#6d28d9">Fütüristik Yaklaşım:&lt;/tspan> Gelecek kuşakların hakkı.</text>
     """
     return svg(w, h, ic, "Çevre Etiği Yaklaşımlarının Ahlaki Kapsam Halkaları")
 

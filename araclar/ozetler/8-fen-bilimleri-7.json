@@ -1,228 +1,234 @@
 {
- "ad": "8-fen-bilimleri-7",
- "sinif": 8,
- "ders": "fen-bilimleri",
- "ders_adi": "Fen Bilimleri",
- "hafta": 7,
- "tarih": "26-30 Ekim 2026",
- "yayin_tarihi": "2026-10-28",
- "unite": "2. ÜNİTE: DNA VE GENETİK KOD",
- "konu": "Kalıtım: İnsanda Cinsiyetin Belirlenmesi, Soy Ağaçları ve Akraba Evliliğinin Genetik Sonuçları",
- "ciktilar": [
-  "İnsanda cinsiyetin eşey kromozomları (XX ve XY) ile nasıl belirlendiğini çaprazlama yaparak açıklar.",
-  "Soy ağacı (pedigri) şemalarında baskın, çekinik ve taşıyıcı (heterozigot) bireylerin genotiplerini çözümler.",
-  "Akraba evliliklerinin kalıtsal hastalıkların ortaya çıkma olasılığını neden artırdığını genetik ilkelerle tartışır."
- ],
- "giris": "Geçen hafta Mendel’in bezelye deneylerini ve tek karakter çaprazlamalarını öğrenmiştik. Bu hafta kalıtım konusunun ikinci ve en çok soru çıkan bölümüne geçiyoruz: {koyu:İnsanda doğacak bebeğin kız veya erkek olma olasılığı nasıl belirlenir?}, {koyu:soy ağacı (pedigri) sorularında anne, baba ve çocukların genotipleri nasıl bulunur?} ve {koyu:akraba evliliklerinin genetik sakıncaları nelerdir?} LGS’de her yıl karşımıza çıkan bu kritik kuralları birlikte inceleyelim!",
- "ozet": [
-  "{koyu:İnsanda Kromozom Formülü:} Sağlıklı bir insanda {koyu:46 kromozom} bulunur; bunun {koyu:44 tanesi vücut kromozomu}, {koyu:2 tanesi ise eşey (cinsiyet) kromozomudur}.",
-  "{koyu:XX ve XY Kromozomları:} Dişi bireylerde eşey kromozomları {koyu:XX (44 + XX)}, erkek bireylerde ise {koyu:XY (44 + XY)} şeklindedir. Çocuğun cinsiyetini {koyu:babadan gelen sperm hücresi (X veya Y)} belirler.",
-  "{koyu:Cinsiyet Olasılığı:} Her doğumda doğacak bebeğin kız (XX) veya erkek (XY) olma olasılığı birbirinden bağımsız olarak {koyu:daima %50 (1/2)}’dir.",
-  "{koyu:Soy Ağacı Analizi:} Çekinik bir özelliğin ({koyu:aa}) çocukta görülmesi için bu genin biri {koyu:anneden}, diğeri {koyu:babadan} gelmelidir; kendisi sağlam görünüp hastalık genini taşıyan {koyu:Aa} bireylere {koyu:taşıyıcı} denir.",
-  "{koyu:Akraba Evliliği:} Akraba olan bireylerin genetik benzerliği yüksek olduğundan, {koyu:zararlı çekinik alellerin (a ile a) bir araya gelerek hasta çocuk (aa) oluşturma ihtimali} çok daha yüksektir."
- ],
- "bolumler": [
-  {
-   "baslik": "1. İnsanda Cinsiyetin Belirlenmesi ve Soy Ağacı (Pedigri) Çözümleme",
-   "metin": [
-    "Sağlıklı bir insanın vücut hücrelerinde bulunan {koyu:2n = 46 kromozomdan} 44 tanesi saç rengi, göz rengi, kan grubu gibi vücut karakterlerini taşır; {koyu:2 tanesi} ise cinsiyeti belirleyen {koyu:eşey kromozomlarıdır (X ve Y)}:\n• {koyu:Dişi (Anne):} {koyu:44 + XX} -> Ürettiği tüm yumurta hücrelerinde {koyu:22 + X} kromozomu bulunur (anne çocuğa yalnızca X verebilir).\n• {koyu:Erkek (Baba):} {koyu:44 + XY} -> Ürettiği sperm hücrelerinin yarısı {koyu:22 + X}, diğer yarısı ise {koyu:22 + Y} kromozomu taşır.\n• {koyu:Çaprazlama (XX × XY):} Yumurta (X) ile X taşıyan sperm birleşirse {koyu:XX (Kız - %50)}, Y taşıyan sperm birleşirse {koyu:XY (Erkek - %50)} bebek dünyaya gelir. Dolayısıyla doğacak bebeğin cinsiyetini {koyu:babadan gelen kromozom} belirler!",
-    "{koyu:Soy Ağacı (Pedigri) Sorularını Çözme Taktikleri:}\nSoy ağaçlarında {koyu:daire (○) dişiyi}, {koyu:kare (□) ise erkeği} temsil eder. Çekinik genle ({koyu:a}) taşınan bir özellik veya hastalık boyalı/taralı olarak gösterildiğinde:\n1. Önce tüm {koyu:boyalı bireylerin} üzerine hemen {koyu:aa} yazılır!\n2. {koyu:aa} olan bir çocuğun iki küçük a geninden biri {koyu:annesinden}, diğeri {koyu:babasından} gelmek zorundadır. Anne ve baba boyalı değilse (sağlamsa) ikisinin de genotipi kesinlikle {koyu:Aa (heterozigot / taşıyıcı)} olur!\n3. Boyalı bir annenin ({koyu:aa}) veya babanın ({koyu:aa}) sağlam görünümlü bütün çocukları da ondan mutlaka küçük {koyu:a} alacağı için kesinlikle {koyu:Aa (taşıyıcı)} olur!"
-   ],
-   "kutu": {
-    "tur": "dikkat",
-    "baslik": "Cinsiyet Olasılığında En Çok Yapılan Hata!",
-    "metin": "Bir ailenin art arda 4 erkek (veya 4 kız) çocuğu olmuşsa bile, {koyu:5. çocuklarının kız olma ihtimali yine %50 (1/2), erkek olma ihtimali yine %50 (1/2)’dir}! Çünkü önceki doğumlar sonraki doğumların olasılığını asla etkilemez."
-   },
-   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 424\" role=\"img\" aria-label=\"Konu özet şeması\"><text x=\"400\" y=\"32\" font-family=\"sans-serif\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">KALITIM: CİNSİYETE BAĞLI KALITIM, SOY AĞAÇLARI VE AKRABA EVLİLİĞİ</text><rect x=\"20\" y=\"56\" width=\"365\" height=\"290\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"80\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. İNSANDA CİNSİYETİN BELİRLENMESİ</text><rect x=\"35\" y=\"100\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">İnsanda 46 Kromozomun Dağılımı</text><text x=\"202\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">44 Vücut Kromozomu + 2 Eşey (Cinsiyet) Kromozomu = 46.</text><rect x=\"35\" y=\"150\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Dişi (Kadın) ve Erkek Eşey Kromozomları</text><text x=\"202\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Dişi (Anne): 44 + XX   |   Erkek (Baba): 44 + XY.</text><rect x=\"35\" y=\"200\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Cinsiyet Çaprazlaması: XX  ×  XY</text><text x=\"202\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Oluşan yavrular: %50 XX (Kız) ve %50 XY (Erkek) -&gt; Olasılık 1/2!</text><rect x=\"35\" y=\"250\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Bebeğin Cinsiyetini Hangi Ebeveyn Belirler?</text><text x=\"202\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Anneden daima X gelir; Babadan X veya Y geldiği için BABA belirler!</text><rect x=\"35\" y=\"300\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Önceki Doğumlar Sonraki Doğumu Etkiler mi?</text><text x=\"202\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Hayır! 5 kız çocuktan sonra 6. çocuğun erkek olma ihtimali yine %50’dir!</text><rect x=\"400\" y=\"56\" width=\"380\" height=\"290\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"80\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">2. SOY AĞAÇLARI VE AKRABA EVLİLİĞİ</text><rect x=\"415\" y=\"100\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Soy Ağacı (Pedigri) Sembolleri</text><text x=\"590\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Daire (○) = Dişi | Kare (□) = Erkek | Boyalı = Özelliği gösteren.</text><rect x=\"415\" y=\"150\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Soy Ağacında Çekinik (aa) Bulma Taktiği</text><text x=\"590\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Sağlam anne-babadan (Aa × Aa) hasta çocuk (aa) doğabilir!</text><rect x=\"415\" y=\"200\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Taşıyıcı Birey (Heterozigot — Aa) Nedir?</text><text x=\"590\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Kendisisi sağlam görünümlü olup hastalık genini (a) taşıyan birey.</text><rect x=\"415\" y=\"250\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Akraba Evliliğinin Genetik Sakıncası</text><text x=\"590\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Çekinik hastalık genlerinin (a ile a) bir araya gelme (aa) ihtimalini artırır!</text><rect x=\"415\" y=\"300\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Kalıtsal Hastalık Örnekleri</text><text x=\"590\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Orak hücreli anemi, Akdeniz anemisi, kistik fibrozis, hemofili, renk körlüğü.</text><rect x=\"20\" y=\"360\" width=\"760\" height=\"48\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"400\" y=\"380\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">LGS UYARISI: Akraba evliliği YENİ BİR HASTALIK GENİ (MUTASYON) OLUŞTURMAZ; var olan çekinik genlerin buluşma ihtimalini artırır!</text><text x=\"400\" y=\"398\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Soy ağacında çekinik (aa) bireyin hem annesinde hem babasında mutlaka en az bir tane küçük &quot;a&quot; aleli bulunmak zorundadır!</text></svg>"
-  },
-  {
-   "baslik": "2. Kalıtsal Hastalıklar ve Akraba Evliliğinin Genetik Sonuçları",
-   "metin": [
-    "İnsanlarda görülen {koyu:orak hücreli anemi, Akdeniz anemisi (talasemi), kistik fibrozis, albinoluk, renk körlüğü ve hemofili} gibi kalıtsal hastalıkların büyük çoğunluğu {koyu:çekinik alellerle (a)} taşınır:\n• {koyu:AA:} Sağlıklı birey (hastalık genini hiç taşımaz).\n• {koyu:Aa:} {koyu:Taşıyıcı (Heterozigot)} birey — Kendisi dış görünüş (fenotip) olarak sağlıklıdır, hasta değildir; ancak çekinik hastalık genini ({koyu:a}) yapısında taşır ve çocuklarına aktarabilir.\n• {koyu:aa:} {koyu:Hasta} birey — Hem anneden hem babadan çekinik hastalık genini aldığı için hastalık ortaya çıkar.",
-    "{koyu:Akraba Evliliğinin Sakıncaları Nelerdir?}\nAralarında kan bağı bulunan kişilerin (kuzenlerin vb.) yaptığı evliliğe {koyu:akraba evliliği} denir. Akraba bireyler ortak atalardan geldikleri için {koyu:aynı çekinik hastalık genini (a) taşıyıcı (Aa) olarak bulundurma olasılıkları} akraba olmayanlara göre çok daha yüksektir. İki taşıyıcı birey ({koyu:Aa × Aa}) evlendiğinde doğacak çocukların {koyu:%25 (1/4) ihtimalle hasta (aa)}, {koyu:%50 ihtimalle taşıyıcı (Aa)} olma riski doğar. Evlilik öncesi {koyu:genetik danışmanlık ve tarama testleri} yaptırmak bu nedenle hayati önem taşır."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "LGS’nin Klasik 'Akraba Evliliği' Çeldiricisi!",
-    "metin": "• {koyu:YANLIŞ İFADE:} *“Akraba evliliği genlerin yapısını bozarak mutasyona / yeni hastalık genine yol açar.”* (Hayır! Akraba evliliği genin yapısını bozmaz!)\n• {koyu:DOĞRU İFADE:} *“Akraba evliliği, ailede zaten var olan zararlı çekinik genlerin (a ve a) çocukta bir araya gelme (homozigot çekinik - aa olma) olasılığını artırır!”*"
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Kendisisi sağlıklı görünen bir anne ve babanın ilk çocukları çekinik genle taşınan Akdeniz anemisi (aa) hastası olarak doğmuştur. Anne ve babanın genotipi nedir ve ikinci çocuklarının sağlıklı görünme olasılığı yüzde kaçtır?",
-   "cevap": "1. Çocuk {koyu:aa} olduğu için hastalık geninin birini anneden, birini babadan almıştır. Anne ve baba sağlıklı göründüğüne göre her ikisi de {koyu:Aa (heterozigot / taşıyıcı)} genotipindedir.\n2. {koyu:Aa × Aa} çaprazlamasında oluşabilecek genotipler: {koyu:AA, Aa, Aa, aa}’dır. Bunlardan {koyu:AA, Aa ve Aa} olmak üzere 4 ihtimalden 3’ü ({koyu:%75}) sağlıklı görünümlü, 1’i ({koyu:%25}) ise hasta ({koyu:aa}) olur."
-  },
-  {
-   "soru": "Sağlıklı bir erkek bireyin sperm ana hücresinde (2n) ve oluşturduğu sperm hücresinde (n) kaçar kromozom vardır ve bunların formülü nasıl yazılır?",
-   "cevap": "• {koyu:Sperm ana hücresi (2n = 46):} Vücut/üreme ana hücresi olduğu için {koyu:44 + XY} formülüyle gösterilir.\n• {koyu:Sperm hücresi (n = 23):} Mayoz bölünmeyle oluştuğu için yarı sayıda kromozom taşır; ya {koyu:22 + X} ya da {koyu:22 + Y} formülüyle gösterilir."
-  },
-  {
-   "soru": "Akraba evliliği yapan her çiftin çocuğu kesinlikle kalıtsal hasta doğar mı? Akraba olmayan çiftlerin çocuklarında da kalıtsal hastalık görülebilir mi? Açıklayınız.",
-   "cevap": "Akraba evliliği yapan çiftlerin çocukları {koyu:kesinlikle hasta doğar diyemeyiz}; ancak taşıyıcı olma ihtimalleri yüksek olduğu için hastalık {koyu:riski çok artar}. Öte yandan akraba olmayan iki kişi de tesadüfen aynı hastalığın taşıyıcısı ({koyu:Aa ve Aa}) ise onların çocuklarında da ({koyu:%25 ihtimalle}) kalıtsal hastalık görülebilir."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "Sağlıklı bir insanda cinsiyetin belirlenmesi ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
-   "secenekler": [
-    "Dişi bireylerin vücut hücrelerindeki kromozom formülü 44 + XX’tir.",
-    "Erkek bireylerin vücut hücrelerindeki kromozom formülü 44 + XY’dir.",
-    "Anne, doğacak çocuğuna yalnızca X eşey kromozomu aktarabilir.",
-    "Doğacak bebeğin cinsiyetini babadan gelen sperm hücresindeki X veya Y kromozomu belirler.",
-    "İlk üç çocuğu kız olan bir ailenin dördüncü çocuğunun erkek olma ihtimali %100’dür."
-   ],
-   "dogru": 4,
-   "aciklama": "Önceki doğumlar sonraki doğumları etkilemez; her doğumda bebeğin kız veya erkek olma olasılığı daima %50 (1/2)’dir."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Çekinik genle (a) taşınan kalıtsal bir hastalık bakımından kendileri sağlıklı görünen bir anne ve babanın hasta (aa) bir çocukları dünyaya gelmiştir. Buna göre anne ve babanın bu karakter bakımından genotipleri aşağıdakilerden hangisidir?",
-   "secenekler": [
-    "AA × AA",
-    "AA × Aa",
-    "Aa × Aa",
-    "aa × aa",
-    "AA × aa"
-   ],
-   "dogru": 2,
-   "aciklama": "Hasta çocuk (aa) küçük 'a' genlerinden birini anneden, birini babadan almıştır. Anne ve baba sağlıklı göründüğüne göre ikisi de taşıyıcı (Aa) olmak zorundadır."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Akraba evliliklerinin sakıncalı olmasının temel bilimsel nedeni aşağıdakilerden hangisidir?",
-   "secenekler": [
-    "DNA’daki organik bazların yapısını bozarak mutasyona neden olması",
-    "Kromozom sayısının 46’dan 92’ye çıkmasına yol açması",
-    "Ailede var olan zararlı çekinik genlerin (a) çocukta bir araya gelme (aa olma) olasılığını artırması",
-    "Doğacak çocukların tamamının sadece erkek olmasına neden olması",
-    "Baskın genlerin çekinik genlere dönüşmesine yol açması"
-   ],
-   "dogru": 2,
-   "aciklama": "Kan bağı olan bireylerin genetik benzerliği fazla olduğundan, aynı çekinik hastalık genini taşıma ve çocukta (aa) olarak buluşturma ihtimalleri çok daha yüksektir."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Çekinik bir hastalık geni (a) bakımından 'taşıyıcı' olan bir birey için aşağıdakilerden hangisi doğrudur?",
-   "secenekler": [
-    "Genotipi 'aa' şeklindedir ve hastadır.",
-    "Genotipi 'AA' şeklindedir ve hastalık genini hiç bulundurmaz.",
-    "Genotipi 'Aa' (heterozigot) şeklindedir; kendisi sağlıklıdır ancak hastalık genini çocuklarına aktarabilir.",
-    "Hastalık genini yalnızca çevresel etkilerle sonradan kazanmıştır.",
-    "Evlendiğinde bütün çocukları %100 hasta doğar."
-   ],
-   "dogru": 2,
-   "aciklama": "Taşıyıcı birey heterozigot (Aa) genotiplidir; baskın A geni nedeniyle kendisi sağlıklıdır ancak çekinik a genini sonraki nesillere aktarabilir."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Bir soy ağacında kulak memesinin yapışık olması (çekinik özellik: a) incelenmektedir. Annenin kulak memesi yapışık (aa), babanın ise homozigot ayrık (AA) olduğu biliniyor. Bu ailenin çocukları hakkında aşağıdakilerden hangisi kesinlikle doğrudur?",
-   "secenekler": [
-    "Çocukların tamamı yapışık kulak memeli (aa) olur.",
-    "Çocukların tamamı heterozigot ayrık kulak memeli (Aa) olur.",
-    "Çocukların yarısı homozigot baskın (AA), yarısı çekinik (aa) olur.",
-    "Kız çocuklar yapışık, erkek çocuklar ayrık kulak memeli olur.",
-    "Çocukların %25’i yapışık kulak memeli olur."
-   ],
-   "dogru": 1,
-   "aciklama": "AA × aa çaprazlamasında babadan daima A, anneden daima a geleceği için oluşan tüm çocuklar %100 Aa (heterozigot ayrık kulak memeli) olur."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
-   "ifadeler": [
+  "ad": "8-fen-bilimleri-7",
+  "sinif": 8,
+  "ders": "fen-bilimleri",
+  "ders_adi": "Fen Bilimleri",
+  "hafta": 7,
+  "tarih": "26-30 Ekim 2026",
+  "yayin_tarihi": "2026-10-28",
+  "unite": "2. ÜNİTE: DNA VE GENETİK KOD",
+  "konu": "Kalıtım: İnsanda Cinsiyetin Belirlenmesi, Soy Ağaçları ve Akraba Evliliğinin Genetik Sonuçları",
+  "ciktilar": [
+    "İnsanda cinsiyetin eşey kromozomları (XX ve XY) ile nasıl belirlendiğini çaprazlama yaparak açıklar.",
+    "Soy ağacı (pedigri) şemalarında baskın, çekinik ve taşıyıcı (heterozigot) bireylerin genotiplerini çözümler.",
+    "Akraba evliliklerinin kalıtsal hastalıkların ortaya çıkma olasılığını neden artırdığını genetik ilkelerle tartışır."
+  ],
+  "giris": "Geçen hafta Mendel’in bezelye deneylerini ve tek karakter çaprazlamalarını öğrenmiştik. Bu hafta kalıtım konusunun ikinci ve en çok soru çıkan bölümüne geçiyoruz: {koyu:İnsanda doğacak bebeğin kız veya erkek olma olasılığı nasıl belirlenir?}, {koyu:soy ağacı (pedigri) sorularında anne, baba ve çocukların genotipleri nasıl bulunur?} ve {koyu:akraba evliliklerinin genetik sakıncaları nelerdir?} LGS’de her yıl karşımıza çıkan bu kritik kuralları birlikte inceleyelim!",
+  "ozet": [
+    "{koyu:İnsanda Kromozom Formülü:} Sağlıklı bir insanda {koyu:46 kromozom} bulunur; bunun {koyu:44 tanesi vücut kromozomu}, {koyu:2 tanesi ise eşey (cinsiyet) kromozomudur}.",
+    "{koyu:XX ve XY Kromozomları:} Dişi bireylerde eşey kromozomları {koyu:XX (44 + XX)}, erkek bireylerde ise {koyu:XY (44 + XY)} şeklindedir. Çocuğun cinsiyetini {koyu:babadan gelen sperm hücresi (X veya Y)} belirler.",
+    "{koyu:Cinsiyet Olasılığı:} Her doğumda doğacak bebeğin kız (XX) veya erkek (XY) olma olasılığı birbirinden bağımsız olarak {koyu:daima %50 (1/2)}’dir.",
+    "{koyu:Soy Ağacı Analizi:} Çekinik bir özelliğin ({koyu:aa}) çocukta görülmesi için bu genin biri {koyu:anneden}, diğeri {koyu:babadan} gelmelidir; kendisi sağlam görünüp hastalık genini taşıyan {koyu:Aa} bireylere {koyu:taşıyıcı} denir.",
+    "{koyu:Akraba Evliliği:} Akraba olan bireylerin genetik benzerliği yüksek olduğundan, {koyu:zararlı çekinik alellerin (a ile a) bir araya gelerek hasta çocuk (aa) oluşturma ihtimali} çok daha yüksektir."
+  ],
+  "bolumler": [
     {
-     "metin": "Sağlıklı bir dişi bireyin yumurta hücresinde 22 + X olmak üzere toplam 23 kromozom bulunur.",
-     "dogru": true,
-     "aciklama": "44 + XX olan dişi bireyin mayozla oluşan yumurta hücresi n = 22 + X (23) kromozom taşır."
+      "baslik": "İnsanda Cinsiyetin Belirlenmesi",
+      "metin": [
+        "Sağlıklı bir insanın vücut hücrelerinde bulunan {koyu:2n = 46 kromozomdan} 44 tanesi saç rengi, göz rengi, kan grubu gibi vücut karakterlerini taşır; {koyu:2 tanesi} ise cinsiyeti belirleyen {koyu:eşey kromozomlarıdır (X ve Y)}:\n• {koyu:Dişi (Anne):} {koyu:44 + XX} -> Ürettiği tüm yumurta hücrelerinde {koyu:22 + X} kromozomu bulunur (anne çocuğa yalnızca X verebilir).\n• {koyu:Erkek (Baba):} {koyu:44 + XY} -> Ürettiği sperm hücrelerinin yarısı {koyu:22 + X}, diğer yarısı ise {koyu:22 + Y} kromozomu taşır.\n• {koyu:Çaprazlama (XX × XY):} Yumurta (X) ile X taşıyan sperm birleşirse {koyu:XX (Kız - %50)}, Y taşıyan sperm birleşirse {koyu:XY (Erkek - %50)} bebek dünyaya gelir. Dolayısıyla doğacak bebeğin cinsiyetini {koyu:babadan gelen kromozom} belirler!"
+      ],
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 424\" role=\"img\" aria-label=\"Konu özet şeması\"><text x=\"400\" y=\"32\" font-family=\"sans-serif\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">KALITIM: CİNSİYETE BAĞLI KALITIM, SOY AĞAÇLARI VE AKRABA EVLİLİĞİ</text><rect x=\"20\" y=\"56\" width=\"365\" height=\"290\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"80\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">1. İNSANDA CİNSİYETİN BELİRLENMESİ</text><rect x=\"35\" y=\"100\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">İnsanda 46 Kromozomun Dağılımı</text><text x=\"202\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">44 Vücut Kromozomu + 2 Eşey (Cinsiyet) Kromozomu = 46.</text><rect x=\"35\" y=\"150\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Dişi (Kadın) ve Erkek Eşey Kromozomları</text><text x=\"202\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Dişi (Anne): 44 + XX   |   Erkek (Baba): 44 + XY.</text><rect x=\"35\" y=\"200\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Cinsiyet Çaprazlaması: XX  ×  XY</text><text x=\"202\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Oluşan yavrular: %50 XX (Kız) ve %50 XY (Erkek) -&gt; Olasılık 1/2!</text><rect x=\"35\" y=\"250\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Bebeğin Cinsiyetini Hangi Ebeveyn Belirler?</text><text x=\"202\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Anneden daima X gelir; Babadan X veya Y geldiği için BABA belirler!</text><rect x=\"35\" y=\"300\" width=\"335\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"202\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Önceki Doğumlar Sonraki Doğumu Etkiler mi?</text><text x=\"202\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Hayır! 5 kız çocuktan sonra 6. çocuğun erkek olma ihtimali yine %50’dir!</text><rect x=\"400\" y=\"56\" width=\"380\" height=\"290\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"80\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">2. SOY AĞAÇLARI VE AKRABA EVLİLİĞİ</text><rect x=\"415\" y=\"100\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"116\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Soy Ağacı (Pedigri) Sembolleri</text><text x=\"590\" y=\"132\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Daire (○) = Dişi | Kare (□) = Erkek | Boyalı = Özelliği gösteren.</text><rect x=\"415\" y=\"150\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"166\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Soy Ağacında Çekinik (aa) Bulma Taktiği</text><text x=\"590\" y=\"182\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Sağlam anne-babadan (Aa × Aa) hasta çocuk (aa) doğabilir!</text><rect x=\"415\" y=\"200\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"216\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Taşıyıcı Birey (Heterozigot — Aa) Nedir?</text><text x=\"590\" y=\"232\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Kendisisi sağlam görünümlü olup hastalık genini (a) taşıyan birey.</text><rect x=\"415\" y=\"250\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"266\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Akraba Evliliğinin Genetik Sakıncası</text><text x=\"590\" y=\"282\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Çekinik hastalık genlerinin (a ile a) bir araya gelme (aa) ihtimalini artırır!</text><rect x=\"415\" y=\"300\" width=\"350\" height=\"42\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"590\" y=\"316\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">Kalıtsal Hastalık Örnekleri</text><text x=\"590\" y=\"332\" font-family=\"sans-serif\" font-size=\"9.2\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Orak hücreli anemi, Akdeniz anemisi, kistik fibrozis, hemofili, renk körlüğü.</text><rect x=\"20\" y=\"360\" width=\"760\" height=\"48\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"400\" y=\"380\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">LGS UYARISI: Akraba evliliği YENİ BİR HASTALIK GENİ (MUTASYON) OLUŞTURMAZ; var olan çekinik genlerin buluşma ihtimalini artırır!</text><text x=\"400\" y=\"398\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"normal\" fill=\"#334155\" text-anchor=\"middle\">Soy ağacında çekinik (aa) bireyin hem annesinde hem babasında mutlaka en az bir tane küçük &quot;a&quot; aleli bulunmak zorundadır!</text></svg>"
     },
     {
-     "metin": "İnsanda doğacak çocuğun cinsiyetini anneden gelen yumurta hücresi belirler.",
-     "dogru": false,
-     "aciklama": "Yanlıştır; anneden sadece X gelir, babadan ise X veya Y geldiği için cinsiyeti babadan gelen sperm belirler."
+      "baslik": "Soy Ağacı (Pedigri) Çözümleme",
+      "metin": [
+        "{koyu:Soy Ağacı (Pedigri) Sorularını Çözme Taktikleri:}\nSoy ağaçlarında {koyu:daire (○) dişiyi}, {koyu:kare (□) ise erkeği} temsil eder. Çekinik genle ({koyu:a}) taşınan bir özellik veya hastalık boyalı/taralı olarak gösterildiğinde:\n1. Önce tüm {koyu:boyalı bireylerin} üzerine hemen {koyu:aa} yazılır!\n2. {koyu:aa} olan bir çocuğun iki küçük a geninden biri {koyu:annesinden}, diğeri {koyu:babasından} gelmek zorundadır. Anne ve baba boyalı değilse (sağlamsa) ikisinin de genotipi kesinlikle {koyu:Aa (heterozigot / taşıyıcı)} olur!\n3. Boyalı bir annenin ({koyu:aa}) veya babanın ({koyu:aa}) sağlam görünümlü bütün çocukları da ondan mutlaka küçük {koyu:a} alacağı için kesinlikle {koyu:Aa (taşıyıcı)} olur!"
+      ],
+      "kutu": {
+        "tur": "dikkat",
+        "baslik": "Cinsiyet Olasılığında En Çok Yapılan Hata!",
+        "metin": "Bir ailenin art arda 4 erkek (veya 4 kız) çocuğu olmuşsa bile, {koyu:5. çocuklarının kız olma ihtimali yine %50 (1/2), erkek olma ihtimali yine %50 (1/2)’dir}! Çünkü önceki doğumlar sonraki doğumların olasılığını asla etkilemez."
+      }
     },
     {
-     "metin": "Soy ağacı şemalarında daire (○) sembolü dişi bireyi, kare (□) sembolü ise erkek bireyi temsil eder.",
-     "dogru": true,
-     "aciklama": "Uluslararası genetik gösterimde daire dişiyi, kare erkeği gösterir."
+      "baslik": "Kalıtsal Hastalıklar",
+      "metin": [
+        "İnsanlarda görülen {koyu:orak hücreli anemi, Akdeniz anemisi (talasemi), kistik fibrozis, albinoluk, renk körlüğü ve hemofili} gibi kalıtsal hastalıkların büyük çoğunluğu {koyu:çekinik alellerle (a)} taşınır:\n• {koyu:AA:} Sağlıklı birey (hastalık genini hiç taşımaz).\n• {koyu:Aa:} {koyu:Taşıyıcı (Heterozigot)} birey — Kendisi dış görünüş (fenotip) olarak sağlıklıdır, hasta değildir; ancak çekinik hastalık genini ({koyu:a}) yapısında taşır ve çocuklarına aktarabilir.\n• {koyu:aa:} {koyu:Hasta} birey — Hem anneden hem babadan çekinik hastalık genini aldığı için hastalık ortaya çıkar."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 460 214\" role=\"img\" aria-label=\"Kalıtım: İnsanda Cinsiyetin Belirlenmesi, kavram özeti şeması\"><rect x=\"90\" y=\"12\" width=\"280\" height=\"38\" rx=\"19\" class=\"g-mf\"/><text x=\"230\" y=\"36\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"800\" class=\"g-b\">Kalıtım: İnsanda Cinsiyetin Belirlenmesi,</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ma\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"116\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">1. Bölüm</text><text x=\"116\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">İnsanda Cinsiyetin Belirlenmesi</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ta\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"344\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">2. Bölüm</text><text x=\"344\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Soy Ağacı (Pedigri) Çözümleme</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ya\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"116\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-yf\">3. Bölüm</text><text x=\"116\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Kalıtsal Hastalıklar</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-oa\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"344\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-of\">4. Bölüm</text><text x=\"344\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Akraba Evliliğinin Genetik Sonuç…</text></svg>"
     },
     {
-     "metin": "İki taşıyıcı (Aa ve Aa) bireyin evliliğinden tamamen sağlıklı (AA) bir çocuk doğma ihtimali %25’tir.",
-     "dogru": true,
-     "aciklama": "Aa × Aa çaprazlamasında %25 AA (tam sağlıklı), %50 Aa (taşıyıcı) ve %25 aa (hasta) olasılığı vardır."
-    },
-    {
-     "metin": "Akraba olmayan insanların evliliğinden asla kalıtsal hastalıklı çocuk doğmaz.",
-     "dogru": false,
-     "aciklama": "Yanlıştır; düşük bir ihtimal de olsa akraba olmayan iki kişi de aynı çekinik genin taşıyıcısıysa hasta çocukları doğabilir."
+      "baslik": "Akraba Evliliğinin Genetik Sonuçları",
+      "metin": [
+        "{koyu:Akraba Evliliğinin Sakıncaları Nelerdir?}\nAralarında kan bağı bulunan kişilerin (kuzenlerin vb.) yaptığı evliliğe {koyu:akraba evliliği} denir. Akraba bireyler ortak atalardan geldikleri için {koyu:aynı çekinik hastalık genini (a) taşıyıcı (Aa) olarak bulundurma olasılıkları} akraba olmayanlara göre çok daha yüksektir. İki taşıyıcı birey ({koyu:Aa × Aa}) evlendiğinde doğacak çocukların {koyu:%25 (1/4) ihtimalle hasta (aa)}, {koyu:%50 ihtimalle taşıyıcı (Aa)} olma riski doğar. Evlilik öncesi {koyu:genetik danışmanlık ve tarama testleri} yaptırmak bu nedenle hayati önem taşır."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "LGS’nin Klasik 'Akraba Evliliği' Çeldiricisi!",
+        "metin": "{koyu:YANLIŞ İFADE:} *“Akraba evliliği genlerin yapısını bozarak mutasyona / yeni hastalık genine yol açar.”* (Hayır! Akraba evliliği genin yapısını bozmaz!)\n• {koyu:DOĞRU İFADE:} *“Akraba evliliği, ailede zaten var olan zararlı çekinik genlerin (a ve a) çocukta bir araya gelme (homozigot çekinik - aa olma) olasılığını artırır!”*"
+      }
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "soru": "Aşağıdaki genetik kavram ve gösterimleri açıklamalarıyla eşleştiriniz.",
-   "ciftler": [
-    [
-     "44 + XX",
-     "Sağlıklı bir dişi bireyin vücut hücresindeki kromozom formülü"
-    ],
-    [
-     "44 + XY",
-     "Sağlıklı bir erkek bireyin vücut hücresindeki kromozom formülü"
-    ],
-    [
-     "Taşıyıcı Birey (Aa)",
-     "Kendisi sağlıklı görünüp çekinik hastalık genini yapısında bulunduran birey"
-    ],
-    [
-     "Akraba Evliliği",
-     "Kan bağı olan bireyler arasında yapılan ve çekinik hastalık riskini artıran evlilik"
-    ],
-    [
-     "%50 (1/2)",
-     "Her doğumda bebeğin kız veya erkek olma olasılığı"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
-   "cumleler": [
+  ],
+  "ornekler": [
     {
-     "metin": "İnsanda bulunan 46 kromozomun 44 tanesi vücut kromozomu, 2 tanesi ise ___ (cinsiyet) kromozomudur.",
-     "cevap": "eşey"
+      "soru": "Kendisisi sağlıklı görünen bir anne ve babanın ilk çocukları çekinik genle taşınan Akdeniz anemisi (aa) hastası olarak doğmuştur. Anne ve babanın genotipi nedir ve ikinci çocuklarının sağlıklı görünme olasılığı yüzde kaçtır?",
+      "cevap": "1. Çocuk {koyu:aa} olduğu için hastalık geninin birini anneden, birini babadan almıştır. Anne ve baba sağlıklı göründüğüne göre her ikisi de {koyu:Aa (heterozigot / taşıyıcı)} genotipindedir.\n2. {koyu:Aa × Aa} çaprazlamasında oluşabilecek genotipler: {koyu:AA, Aa, Aa, aa}’dır. Bunlardan {koyu:AA, Aa ve Aa} olmak üzere 4 ihtimalden 3’ü ({koyu:%75}) sağlıklı görünümlü, 1’i ({koyu:%25}) ise hasta ({koyu:aa}) olur."
     },
     {
-     "metin": "Erkek bireylerin ürettiği sperm hücrelerinin yarısı 22 + X, diğer yarısı ise 22 + ___ kromozomu taşır.",
-     "cevap": "Y"
+      "soru": "Sağlıklı bir erkek bireyin sperm ana hücresinde (2n) ve oluşturduğu sperm hücresinde (n) kaçar kromozom vardır ve bunların formülü nasıl yazılır?",
+      "cevap": "{koyu:Sperm ana hücresi (2n = 46):} Vücut/üreme ana hücresi olduğu için {koyu:44 + XY} formülüyle gösterilir.\n• {koyu:Sperm hücresi (n = 23):} Mayoz bölünmeyle oluştuğu için yarı sayıda kromozom taşır; ya {koyu:22 + X} ya da {koyu:22 + Y} formülüyle gösterilir."
     },
     {
-     "metin": "Çekinik bir hastalığın çocukta ortaya çıkabilmesi için çocuğun genotipinin ___ (homozigot çekinik) olması gerekir.",
-     "cevap": "aa"
+      "soru": "Akraba evliliği yapan her çiftin çocuğu kesinlikle kalıtsal hasta doğar mı? Akraba olmayan çiftlerin çocuklarında da kalıtsal hastalık görülebilir mi? Açıklayınız.",
+      "cevap": "Akraba evliliği yapan çiftlerin çocukları {koyu:kesinlikle hasta doğar diyemeyiz}; ancak taşıyıcı olma ihtimalleri yüksek olduğu için hastalık {koyu:riski çok artar}. Öte yandan akraba olmayan iki kişi de tesadüfen aynı hastalığın taşıyıcısı ({koyu:Aa ve Aa}) ise onların çocuklarında da ({koyu:%25 ihtimalle}) kalıtsal hastalık görülebilir."
     },
     {
-     "metin": "Bir özelliğin nesiller boyunca aile bireylerinde nasıl aktarıldığını gösteren şemalara ___ ağacı denir.",
-     "cevap": "soy"
+      "soru": "Bir soy ağacında kulak memesinin yapışık olması (çekinik özellik: a) incelenmektedir. Annenin kulak memesi yapışık (aa), babanın ise homozigot ayrık (AA) olduğu biliniyor. Bu ailenin çocukları hakkında aşağıdakilerden hangisi kesinlikle doğrudur?",
+      "cevap": "Doğru yanıt: Çocukların tamamı heterozigot ayrık kulak memeli (Aa) olur.. AA × aa çaprazlamasında babadan daima A, anneden daima a geleceği için oluşan tüm çocuklar %100 Aa (heterozigot ayrık kulak memeli) olur."
     },
     {
-     "metin": "Kalıtsal hastalık riskini önceden belirlemek için evlilik öncesinde ___ tarama testleri yapılır.",
-     "cevap": "genetik"
+      "soru": "‘İnsanda Cinsiyetin Belirlenmesi’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
+      "cevap": "Sağlıklı bir insanın vücut hücrelerinde bulunan {koyu:2n = 46 kromozomdan} 44 tanesi saç rengi, göz rengi, kan grubu gibi vücut karakterlerini taşır; {koyu:2 tanesi} ise cinsiyeti belirleyen {koyu:eşey kromozomlarıdır (X ve Y)}:\n• {koyu:Dişi (Anne):} {koyu:44 + XX} -> Ürettiği tüm yumurta hücrelerinde {koyu:22 + X} kromozomu bulunur (anne çocuğa yalnızca X verebilir).\n• {koyu:Erkek (Baba):} {koyu:44 + XY} -> Ürettiği sperm hücrelerinin yarısı {koyu:22 + X}, diğer yarısı ise {koyu:22 + Y} kromozomu taşır.\n• {koyu:Çaprazlama (XX × XY):} Yumurta (X) ile X taşıyan sperm birleşirse {koyu:XX (Kız - %50)}, Y taşıyan sperm birleşirse {koyu:XY (Erkek - %50)} bebek dünyaya gelir. Dolayısıyla doğacak bebeğin cinsiyetini {koyu:babadan gelen kromozom} belirler!"
+    },
+    {
+      "soru": "‘Soy Ağacı (Pedigri) Çözümleme’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
+      "cevap": "{koyu:Soy Ağacı (Pedigri) Sorularını Çözme Taktikleri:}\nSoy ağaçlarında {koyu:daire (○) dişiyi}, {koyu:kare (□) ise erkeği} temsil eder. Çekinik genle ({koyu:a}) taşınan bir özellik veya hastalık boyalı/taralı olarak gösterildiğinde:\n1. Önce tüm {koyu:boyalı bireylerin} üzerine hemen {koyu:aa} yazılır!\n2. {koyu:aa} olan bir çocuğun iki küçük a geninden biri {koyu:annesinden}, diğeri {koyu:babasından} gelmek zorundadır. Anne ve baba boyalı değilse (sağlamsa) ikisinin de genotipi kesinlikle {koyu:Aa (heterozigot / taşıyıcı)} olur!\n3. Boyalı bir annenin ({koyu:aa}) veya babanın ({koyu:aa}) sağlam görünümlü bütün çocukları da ondan mutlaka küçük {koyu:a} alacağı için kesinlikle {koyu:Aa (taşıyıcı)} olur!"
     }
-   ],
-   "fazla": [
-    "AA",
-    "modifikasyon"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "1) İnsanda doğacak bebeğin kız veya erkek olma olasılığının neden her zaman %50 olduğunu çaprazlama yaparak gösteriniz. 2) Akraba evliliğinin kalıtsal hastalık riskini neden artırdığını açıklayınız.",
-   "ipuclari": [
-    "1. İpucu: Anne (XX) ve Baba (XY) eşey kromozomlarını çaprazlayarak oluşan 4 durumu yazınız.",
-    "2. İpucu: Ortak atadan gelen akraba bireylerde çekinik hastalık geninin (a) taşıyıcı (Aa) olarak bulunma ve çocukta (aa) birleşme ihtimalini belirtiniz."
-   ],
-   "cevap": "1) Cinsiyet Çaprazlaması: Annenin eşey kromozomları XX, babanın eşey kromozomları XY’dir. XX × XY çaprazlandığında oluşan yavrular: XX, XY, XX, XY olur. Görüldüğü gibi 4 ihtimalin 2’si (%50) XX (kız), 2’si (%50) XY (erkek) olduğu için her doğumda olasılık %50’dir.\n2) Akraba Evliliğinin Riski: Kalıtsal hastalıkların çoğu çekinik genle (a) taşınır. Kan bağı olan akrabaların genetik yapıları birbirine çok benzediği için aynı çekinik hastalık genini taşıyıcı (Aa) olarak bulundurma olasılıkları yüksektir. İki taşıyıcı (Aa × Aa) evlendiğinde çekinik genlerin bir araya gelerek hasta çocuk (aa) oluşturma ihtimali (%25) büyük ölçüde artar."
-  }
- ]
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Sağlıklı bir insanda cinsiyetin belirlenmesi ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+      "secenekler": [
+        "İlk üç çocuğu kız olan bir ailenin dördüncü çocuğunun erkek olma ihtimali %100’dür.",
+        "Erkek bireylerin vücut hücrelerindeki kromozom formülü 44 + XY’dir.",
+        "Anne, doğacak çocuğuna münhasıran X eşey kromozomu aktarabilir.",
+        "Dişi bireylerin vücut hücrelerindeki kromozom formülü 44 + XX’tir."
+      ],
+      "dogru": 0,
+      "aciklama": "Önceki doğumlar sonraki doğumları etkilemez; her doğumda bebeğin kız veya erkek olma olasılığı daima %50 (1/2)’dir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Çekinik genle (a) taşınan kalıtsal bir hastalık bakımından kendileri sağlıklı görünen bir anne ve babanın hasta (aa) bir çocukları dünyaya gelmiştir. Buna göre anne ve babanın bu karakter bakımından genotipleri aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "AA × AA",
+        "Aa × Aa",
+        "aa × aa",
+        "AA × Aa"
+      ],
+      "dogru": 1,
+      "aciklama": "Hasta çocuk (aa) küçük 'a' genlerinden birini anneden, birini babadan almıştır. Anne ve baba sağlıklı göründüğüne göre ikisi de taşıyıcı (Aa) olmak zorundadır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Akraba evliliklerinin sakıncalı olmasının temel bilimsel nedeni aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "DNA’daki organik bazların yapısını bozarak mutasyona neden olması (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)",
+        "Kromozom sayısının 46’dan 92’ye çıkmasına yol açması",
+        "Ailede var olan zararlı çekinik genlerin (a) çocukta bir araya gelme (aa olma) olasılığını artırması",
+        "Doğacak çocukların tamamının salt erkek olmasına neden olması"
+      ],
+      "dogru": 2,
+      "aciklama": "Kan bağı olan bireylerin genetik benzerliği fazla olduğundan, aynı çekinik hastalık genini taşıma ve çocukta (aa) olarak buluşturma ihtimalleri çok daha yüksektir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Çekinik bir hastalık geni (a) bakımından 'taşıyıcı' olan bir birey için aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Genotipi 'aa' şeklindedir ve hastadır.",
+        "Genotipi 'AA' şeklindedir ve hastalık genini katiyen bulundurmaz.",
+        "Hastalık genini münhasıran çevresel etkilerle sonradan kazanmıştır (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)",
+        "Genotipi 'Aa' (heterozigot) şeklindedir; kendisi sağlıklıdır ancak hastalık genini çocuklarına aktarabilir."
+      ],
+      "dogru": 3,
+      "aciklama": "Taşıyıcı birey heterozigot (Aa) genotiplidir; baskın A geni nedeniyle kendisi sağlıklıdır ancak çekinik a genini sonraki nesillere aktarabilir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Sağlıklı bir dişi bireyin yumurta hücresinde 22 + X olmak üzere toplam 23 kromozom bulunur.",
+          "dogru": true,
+          "aciklama": "44 + XX olan dişi bireyin mayozla oluşan yumurta hücresi n = 22 + X (23) kromozom taşır."
+        },
+        {
+          "metin": "İnsanda doğacak çocuğun cinsiyetini anneden gelen yumurta hücresi belirler.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; anneden sadece X gelir, babadan ise X veya Y geldiği için cinsiyeti babadan gelen sperm belirler."
+        },
+        {
+          "metin": "Soy ağacı şemalarında daire (○) sembolü dişi bireyi, kare (□) sembolü ise erkek bireyi temsil eder.",
+          "dogru": true,
+          "aciklama": "Uluslararası genetik gösterimde daire dişiyi, kare erkeği gösterir."
+        },
+        {
+          "metin": "İki taşıyıcı (Aa ve Aa) bireyin evliliğinden tamamen sağlıklı (AA) bir çocuk doğma ihtimali %25’tir.",
+          "dogru": true,
+          "aciklama": "Aa × Aa çaprazlamasında %25 AA (tam sağlıklı), %50 Aa (taşıyıcı) ve %25 aa (hasta) olasılığı vardır."
+        },
+        {
+          "metin": "Akraba olmayan insanların evliliğinden katiyen kalıtsal hastalıklı çocuk doğmaz.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; düşük bir ihtimal de olsa akraba olmayan iki kişi de aynı çekinik genin taşıyıcısıysa hasta çocukları doğabilir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki genetik kavram ve gösterimleri açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "44 + XX",
+          "Sağlıklı bir dişi bireyin vücut hücresindeki kromozom formülü"
+        ],
+        [
+          "44 + XY",
+          "Sağlıklı bir erkek bireyin vücut hücresindeki kromozom formülü"
+        ],
+        [
+          "Taşıyıcı Birey (Aa)",
+          "Kendisi sağlıklı görünüp çekinik hastalık genini yapısında bulunduran birey"
+        ],
+        [
+          "Akraba Evliliği",
+          "Kan bağı olan bireyler arasında yapılan ve çekinik hastalık riskini artıran evlilik"
+        ],
+        [
+          "%50 (1/2)",
+          "Her doğumda bebeğin kız veya erkek olma olasılığı"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "İnsanda bulunan 46 kromozomun 44 tanesi vücut kromozomu, 2 tanesi ise ___ (cinsiyet) kromozomudur.",
+          "cevap": "eşey"
+        },
+        {
+          "metin": "Erkek bireylerin ürettiği sperm hücrelerinin yarısı 22 + X, diğer yarısı ise 22 + ___ kromozomu taşır.",
+          "cevap": "Y"
+        },
+        {
+          "metin": "Çekinik bir hastalığın çocukta ortaya çıkabilmesi için çocuğun genotipinin ___ (homozigot çekinik) olması gerekir.",
+          "cevap": "aa"
+        },
+        {
+          "metin": "Bir özelliğin nesiller boyunca aile bireylerinde nasıl aktarıldığını gösteren şemalara ___ ağacı denir.",
+          "cevap": "soy"
+        },
+        {
+          "metin": "Kalıtsal hastalık riskini önceden belirlemek için evlilik öncesinde ___ tarama testleri yapılır.",
+          "cevap": "genetik"
+        }
+      ],
+      "fazla": [
+        "AA",
+        "modifikasyon"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "İnsanda doğacak bebeğin kız veya erkek olma olasılığının neden her zaman %50 olduğunu çaprazlama yaparak gösteriniz. 2) Akraba evliliğinin kalıtsal hastalık riskini neden artırdığını açıklayınız.",
+      "cevap": "1) Cinsiyet Çaprazlaması: Annenin eşey kromozomları XX, babanın eşey kromozomları XY’dir. XX × XY çaprazlandığında oluşan yavrular: XX, XY, XX, XY olur. Görüldüğü gibi 4 ihtimalin 2’si (%50) XX (kız), 2’si (%50) XY (erkek) olduğu için her doğumda olasılık %50’dir.\n2) Akraba Evliliğinin Riski: Kalıtsal hastalıkların çoğu çekinik genle (a) taşınır. Kan bağı olan akrabaların genetik yapıları birbirine çok benzediği için aynı çekinik hastalık genini taşıyıcı (Aa) olarak bulundurma olasılıkları yüksektir. İki taşıyıcı (Aa × Aa) evlendiğinde çekinik genlerin bir araya gelerek hasta çocuk (aa) oluşturma ihtimali (%25) büyük ölçüde artar.",
+      "ipuclari": [
+        "1. İpucu: Anne (XX) ve Baba (XY) eşey kromozomlarını çaprazlayarak oluşan 4 durumu yazınız.",
+        "2. İpucu: Ortak atadan gelen akraba bireylerde çekinik hastalık geninin (a) taşıyıcı (Aa) olarak bulunma ve çocukta (aa) birleşme ihtimalini belirtiniz."
+      ]
+    }
+  ]
 }

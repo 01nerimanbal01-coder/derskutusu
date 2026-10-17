@@ -35,10 +35,10 @@ def gorsel_1():
     W, H = 720, 320
     s = _baslik(W, H, "KAVRAMLAR", "Peygamberimize İtaat ve Bağlılıkla İlgili Temel Kavramlar", RENK["mavi"])
     cards = [
-        ("İtaat & İttiba", "Allah'ın ve Resulü'nün emir ve yasaklarına gönülden uymak; körü körüne taklit değil bilinçli bağlılıktır.", RENK["mavi"], RENK["acik_mavi"]),
+        ("İtaat &amp; İttiba", "Allah'ın ve Resulü'nün emir ve yasaklarına gönülden uymak; körü körüne taklit değil bilinçli bağlılıktır.", RENK["mavi"], RENK["acik_mavi"]),
         ("İtisam (الإعتصام)", "Günahtan korunmak; hayatı Kur'an ve sünnete göre düzenleyerek İslam'ı mutedil (dengeli) bir çizgide yaşamaktır.", RENK["yesil"], RENK["acik_yesil"]),
-        ("Sünnet & Hadis", "Sünnet Hz. Peygamber'in örnek uygulamaları ve yolu; hadis ise onun söz, fiil ve onaylarının (takrir) genel adıdır.", RENK["mor"], RENK["acik_mor"]),
-        ("Hevâ & Bid'at", "Hevâ dinî ölçüleri dikkate almadan nefsin arzusuna uymak; bid'at ise dinde sonradan uydurulan inanç ve amellerdir.", RENK["kirmizi"], RENK["acik_kirmizi"]),
+        ("Sünnet &amp; Hadis", "Sünnet Hz. Peygamber'in örnek uygulamaları ve yolu; hadis ise onun söz, fiil ve onaylarının (takrir) genel adıdır.", RENK["mor"], RENK["acik_mor"]),
+        ("Hevâ &amp; Bid'at", "Hevâ dinî ölçüleri dikkate almadan nefsin arzusuna uymak; bid'at ise dinde sonradan uydurulan inanç ve amellerdir.", RENK["kirmizi"], RENK["acik_kirmizi"]),
     ]
     for i, (title, desc, rk, ark) in enumerate(cards):
         col = i % 2
@@ -61,7 +61,7 @@ def gorsel_1():
 def gorsel_2():
     """Kur'an-ı Kerim'de Hz. Peygamber'e İtaat Ayetleri ve Nesiller"""
     W, H = 720, 320
-    s = _baslik(W, H, "KUR'AN & SÜNNET", "Peygamberimize İtaatin Kur'an'daki Delilleri ve İslam Nesilleri", RENK["yesil"])
+    s = _baslik(W, H, "KUR'AN &amp; SÜNNET", "Peygamberimize İtaatin Kur'an'daki Delilleri ve İslam Nesilleri", RENK["yesil"])
     ayetler = [
         ("Nisâ, 80", "Kim Peygamber'e itaat ederse Allah'a itaat etmiş olur.", RENK["yesil"]),
         ("Âl-i İmrân, 31", "Eğer Allah'ı seviyorsanız bana uyun ki Allah da sizi sevsin.", RENK["mavi"]),
@@ -90,7 +90,7 @@ def gorsel_3():
         ("1. Tebliğ", "Vahyi Eksiksiz İletme", "Allah'tan aldığı Kur'an ayetlerini hiçbir ekleme/çıkarma yapmadan insanlara ulaştırması.", RENK["mavi"], RENK["acik_mavi"]),
         ("2. Tebyin (Beyan)", "Mücmeli Açıklama", "Kur'an'da özetle emredilen namaz, oruç, zekât ve haccın nasıl yapılacağını uygulamalı göstermesi.", RENK["yesil"], RENK["acik_yesil"]),
         ("3. Teşri", "Hüküm Koyma", "Kur'an'da açıkça yer almayan konularda vahyin rehberliğinde helal ve haram sınırlarını belirlemesi.", RENK["mor"], RENK["acik_mor"]),
-        ("4.Tezkiye & İhya", "Toplumu Arındırma", "Kan davalarını bitirmesi, Evs-Hazrec barışını ve Muhacir-Ensar kardeşliğini (muâhât) kurması.", RENK["turuncu"], RENK["acik_turuncu"]),
+        ("4.Tezkiye &amp; İhya", "Toplumu Arındırma", "Kan davalarını bitirmesi, Evs-Hazrec barışını ve Muhacir-Ensar kardeşliğini (muâhât) kurması.", RENK["turuncu"], RENK["acik_turuncu"]),
     ]
     for i, (ad, alt, acik, rk, ark) in enumerate(cols):
         x = 20 + i * 172
@@ -110,7 +110,7 @@ def gorsel_3():
 def gorsel_4():
     """Sünnet-Vahiy Birlikteliği: Beşeriyet ve Risalet Yönü"""
     W, H = 720, 320
-    s = _baslik(W, H, "BEŞER & RESUL", "Hz. Peygamber'in Risalet (Peygamberlik) ve Beşeriyet (İnsani) Yönü", RENK["mor"])
+    s = _baslik(W, H, "BEŞER &amp; RESUL", "Hz. Peygamber'in Risalet (Peygamberlik) ve Beşeriyet (İnsani) Yönü", RENK["mor"])
     boxes = [
         ("İbadet ve Dinde İtidal (Denge) Ölçüsü", "Üç Sahabiye Verdiği Nebevi Cevap", [
             "• 'Gece hiç uyumadan namaz kılacağım, hep oruç",
@@ -164,7 +164,7 @@ def gorsel_6():
     s = _baslik(W, H, "ÖRNEK SAHABİ", "Abdullah bin Ömer'in (ra) Hayatı ve Sünnete Bağlılığı", RENK["kirmizi"])
     cards = [
         ("Kimliği ve Gazveleri", "Hz. Ömer'in oğlu, müminlerin annesi Hz. Hafsa'nın (ra) kardeşidir. 15 yaşında Hendek Savaşı'na, Mekke'nin Fethi'ne ve İstanbul kuşatmasına katıldı.", RENK["mavi"], RENK["acik_mavi"]),
-        ("İlmî Kişiliği (Müksirûn & Fakih)", "Ebû Hüreyre'den (ra) sonra en çok hadis rivayet eden 2. sahabidir. Medine'de en çok fetva veren 7 fakihten biridir.", RENK["yesil"], RENK["acik_yesil"]),
+        ("İlmî Kişiliği (Müksirûn &amp; Fakih)", "Ebû Hüreyre'den (ra) sonra en çok hadis rivayet eden 2. sahabidir. Medine'de en çok fetva veren 7 fakihten biridir.", RENK["yesil"], RENK["acik_yesil"]),
         ("Hadis Rivayetindeki Titizliği", "Hz. Peygamber'den duyduğu hadisleri tek bir kelimesini bile değiştirmeden lafzıyla olduğu gibi aktarmaya özen göstermiştir.", RENK["turuncu"], RENK["acik_turuncu"]),
         ("Sünnete Eşsiz Bağlılığı", "Hz. Peygamber'in tavsiyesi üzerine gece namazını hiç terk etmemiş; onun namaz kıldığı yerlerde namaz kılmış, selamı yaymıştır.", RENK["kirmizi"], RENK["acik_kirmizi"]),
     ]

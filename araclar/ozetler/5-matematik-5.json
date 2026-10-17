@@ -1,365 +1,371 @@
 {
- "sinif": 5,
- "ders": "matematik",
- "hafta": 5,
- "tarih": "12-16 Ekim 2026",
- "yayin_tarihi": "2026-10-14",
- "unite": "Geometrik Şekiller",
- "konu": "Çokgenler ve Çember: Ardışık Kesişen Doğrulardan Çokgenlere",
- "ciktilar": [
-  "MAT.5.3.5. Çokgenleri düzlemde ardışık olarak kesişen doğruların oluşturduğu kapalı şekiller olarak yorumlayabilme"
- ],
- "giris": "Geçen hafta iki ya da üç doğru kesiştiğinde oluşan açıları inceledin; ters açıları, tümler ve bütünler açıları tanıdın. Bu hafta doğru çizmeyi sürdürüyoruz; ama bu kez son doğru ilk doğruyu kesecek biçimde ardışık kesişen en az üç doğrunun düzlemde ne oluşturduğuna bakacaksın. Ortaya çıkan kapalı şekilleri, yani çokgenleri tanıyacak; köşelerini, kenarlarını ve açılarını adlandıracak; çokgenleri kenar sayısına göre isimlendireceksin.",
- "bolumler": [
-  {
-   "baslik": "Doğruları ardışık kesiştirmek",
-   "metin": [
-    "Düzlemde bir doğru çiz ve ona d1 adını ver. Sonra onu kesen ikinci bir doğru çiz: d2. İki doğru yalnız bir noktada kesişir ve bu kesişim düzlemi dört açı bölgesine ayırır. Fakat bu bölgelerin hiçbiri kapalı değildir; her biri bir yanından sonsuza kadar uzar. İki doğru kâğıdın hiçbir parçasını dört yandan çevreleyemez.",
-    "Şimdi üçüncü doğru d3'ü hem d2'yi hem de d1'i kesecek biçimde çiz. Kesişmeler sırayla gerçekleşir: d1 ile d2, d2 ile d3 ve son olarak d3 ile d1. Son doğru ilk doğruyu da kestiği için zincir kapanır ve ortada her yanı doğru parçalarıyla çevrili bir bölge belirir. Bu bölge bir üçgendir.",
-    "Doğruların bu biçimde birbirini sırayla kesmesine ardışık kesişme denir. Zincirin kapanması şarttır: Son doğru ilk doğruyu kesmezse bölge bir yanından açık kalır ve kapalı şekil oluşmaz. Dördüncü bir doğru eklersen zincir d1, d2, d3, d4 sırasıyla kurulur ve d4'ün d1'i kesmesiyle kapanır."
-   ],
-   "kutu": {
-    "tur": "tanim",
-    "baslik": "Ardışık kesişen doğrular",
-    "metin": "Her doğrunun kendinden sonra gelen doğruyu, son doğrunun da ilk doğruyu kestiği doğru dizisine ardışık kesişen doğrular denir. Kesişim noktaları sırayla birleştirildiğinde kapalı bir şekil ortaya çıkar."
-   }
-  },
-  {
-   "baslik": "Çokgen nedir?",
-   "metin": [
-    "Düzlemde ardışık olarak kesişen en az üç doğrunun oluşturduğu kapalı şekle çokgen denir. Ardışık doğruların kesişim noktaları çokgenin köşeleri, iki komşu köşe arasında kalan doğru parçaları çokgenin kenarlarıdır. Doğrular çokgenin dışında da uzamaya devam eder; çokgen yalnız bu kapalı parçadır.",
-    "Çokgen için neden en az üç doğru gerekir? İki doğru en çok bir noktada kesişir; bir bölgeyi çevreleyemez. Üç doğru ikişer ikişer kesiştiğinde üç kesişim noktası verir ve bu noktalar bir üçgenin köşeleri olur. Dört doğru dörtgen, beş doğru beşgen oluşturur; zincire eklenen her yeni doğru çokgene bir köşe ve bir kenar katar.",
-    "Kesişen doğruların oluşturduğu açıları geçen hafta incelemiştin. Çokgenin her köşesinde de iki kenar birleşir; bu iki kenar arasında kalan ve çokgenin içine bakan açıya çokgenin açısı denir. Üçgenin üç, dörtgenin dört açısı vardır."
-   ],
-   "kutu": {
-    "tur": "tanim",
-    "baslik": "Çokgen",
-    "metin": "Düzlemde en az üç doğrunun, son doğru ilk doğruyu kesecek biçimde ardışık kesişmesiyle oluşan kapalı şekle çokgen denir. Kesişim noktaları köşeleri, köşeler arasındaki doğru parçaları kenarlarıdır."
-   },
-   "kutular": [
+  "sinif": 5,
+  "ders": "matematik",
+  "hafta": 5,
+  "tarih": "12-16 Ekim 2026",
+  "yayin_tarihi": "2026-10-14",
+  "unite": "Geometrik Şekiller",
+  "konu": "Çokgenler ve Çember: Ardışık Kesişen Doğrulardan Çokgenlere",
+  "ciktilar": [
+    "MAT.5.3.5. Çokgenleri düzlemde ardışık olarak kesişen doğruların oluşturduğu kapalı şekiller olarak yorumlayabilme"
+  ],
+  "giris": "Geçen hafta iki ya da üç doğru kesiştiğinde oluşan açıları inceledin; ters açıları, tümler ve bütünler açıları tanıdın. Bu hafta doğru çizmeyi sürdürüyoruz; ama bu kez son doğru ilk doğruyu kesecek biçimde ardışık kesişen en az üç doğrunun düzlemde ne oluşturduğuna bakacaksın. Ortaya çıkan kapalı şekilleri, yani çokgenleri tanıyacak; köşelerini, kenarlarını ve açılarını adlandıracak; çokgenleri kenar sayısına göre isimlendireceksin.",
+  "bolumler": [
     {
-     "tur": "dikkat",
-     "metin": "Doğru iki yönde sonsuza uzar; çokgen ise sınırlı bir şekildir. Çizimde köşeler arasındaki doğru parçalarını kalınlaştırıp doğruların dışarı taşan kısımlarını silik bırakırsan çokgeni daha kolay görürsün."
+      "baslik": "Doğruları ardışık kesiştirmek",
+      "metin": [
+        "Düzlemde bir doğru çiz ve ona d1 adını ver. Sonra onu kesen ikinci bir doğru çiz: d2. İki doğru yalnız bir noktada kesişir ve bu kesişim düzlemi dört açı bölgesine ayırır. Fakat bu bölgelerin hiçbiri kapalı değildir; her biri bir yanından sonsuza kadar uzar. İki doğru kâğıdın hiçbir parçasını dört yandan çevreleyemez.",
+        "Şimdi üçüncü doğru d3'ü hem d2'yi hem de d1'i kesecek biçimde çiz. Kesişmeler sırayla gerçekleşir: d1 ile d2, d2 ile d3 ve son olarak d3 ile d1. Son doğru ilk doğruyu da kestiği için zincir kapanır ve ortada her yanı doğru parçalarıyla çevrili bir bölge belirir. Bu bölge bir üçgendir.",
+        "Doğruların bu biçimde birbirini sırayla kesmesine ardışık kesişme denir. Zincirin kapanması şarttır: Son doğru ilk doğruyu kesmezse bölge bir yanından açık kalır ve kapalı şekil oluşmaz. Dördüncü bir doğru eklersen zincir d1, d2, d3, d4 sırasıyla kurulur ve d4'ün d1'i kesmesiyle kapanır."
+      ],
+      "kutu": {
+        "tur": "tanim",
+        "baslik": "Ardışık kesişen doğrular",
+        "metin": "Her doğrunun kendinden sonra gelen doğruyu, son doğrunun da ilk doğruyu kestiği doğru dizisine ardışık kesişen doğrular denir. Kesişim noktaları sırayla birleştirildiğinde kapalı bir şekil ortaya çıkar."
+      },
+      "gorsel": "<svg viewBox=\"0 0 460 214\" role=\"img\" aria-label=\"Çokgenler ve Çember: Ardışık Kesişen Doğru kavram özeti şeması\"><rect x=\"90\" y=\"12\" width=\"280\" height=\"38\" rx=\"19\" class=\"g-mf\"/><text x=\"230\" y=\"36\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"800\" class=\"g-b\">Çokgenler ve Çember: Ardışık Kesişen Doğru</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ma\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"116\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">1. Bölüm</text><text x=\"116\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Doğruları ardışık kesiştirmek</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ta\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"344\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">2. Bölüm</text><text x=\"344\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Çokgen nedir?</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ya\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"116\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-yf\">3. Bölüm</text><text x=\"116\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Çokgen oluşmayan durumlar</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-oa\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"344\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-of\">4. Bölüm</text><text x=\"344\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Köşe, kenar ve açı</text></svg>"
+    },
+    {
+      "baslik": "Çokgen nedir?",
+      "metin": [
+        "Düzlemde ardışık olarak kesişen en az üç doğrunun oluşturduğu kapalı şekle çokgen denir. Ardışık doğruların kesişim noktaları çokgenin köşeleri, iki komşu köşe arasında kalan doğru parçaları çokgenin kenarlarıdır. Doğrular çokgenin dışında da uzamaya devam eder; çokgen yalnız bu kapalı parçadır.",
+        "Çokgen için neden en az üç doğru gerekir? İki doğru en çok bir noktada kesişir; bir bölgeyi çevreleyemez. Üç doğru ikişer ikişer kesiştiğinde üç kesişim noktası verir ve bu noktalar bir üçgenin köşeleri olur. Dört doğru dörtgen, beş doğru beşgen oluşturur; zincire eklenen her yeni doğru çokgene bir köşe ve bir kenar katar.",
+        "Kesişen doğruların oluşturduğu açıları geçen hafta incelemiştin. Çokgenin her köşesinde de iki kenar birleşir; bu iki kenar arasında kalan ve çokgenin içine bakan açıya çokgenin açısı denir. Üçgenin üç, dörtgenin dört açısı vardır."
+      ],
+      "kutu": {
+        "tur": "tanim",
+        "baslik": "Çokgen",
+        "metin": "Düzlemde en az üç doğrunun, son doğru ilk doğruyu kesecek biçimde ardışık kesişmesiyle oluşan kapalı şekle çokgen denir. Kesişim noktaları köşeleri, köşeler arasındaki doğru parçaları kenarlarıdır."
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "metin": "Doğru iki yönde sonsuza uzar; çokgen ise sınırlı bir şekildir. Çizimde köşeler arasındaki doğru parçalarını kalınlaştırıp doğruların dışarı taşan kısımlarını silik bırakırsan çokgeni daha kolay görürsün."
+        }
+      ]
+    },
+    {
+      "baslik": "Çokgen oluşmayan durumlar",
+      "metin": [
+        "Her üç doğru bir çokgen oluşturmaz. Üç doğrudan ikisi paralelse bu ikisi hiç kesişmez; zincir kapanamaz ve ortada iki yanı açık bir şerit kalır. Üç doğru aynı noktadan geçiyorsa yalnız bir kesişim noktası vardır; köşe olacak üç ayrı nokta bulunmadığından kapalı bölge de oluşmaz.",
+        "Doğru parçaları yerine eğri çizgilerle çevrili şekiller de çokgen değildir. Çember, daire ve elips kapalıdır ama sınırları doğru parçası olmadığı için çokgen sayılmaz. Yarım daire gibi bir yanı düz, bir yanı eğri olan şekiller de aynı nedenle çokgen değildir.",
+        "Kapalı olmayan şekiller de çokgen olamaz. Zikzak çizgi ya da uçları birleşmemiş bir kırık çizgi, düz parçalardan oluşsa da bir bölgeyi çevrelemez. Bir şeklin çokgen olup olmadığına karar verirken iki soru sor: Bütün kenarları doğru parçası mı? Şekil kapalı mı? İkisine de “evet” diyorsan şekil bir çokgendir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Şekil",
+          "Çokgen mi?",
+          "Nedeni"
+        ],
+        "satirlar": [
+          [
+            "Üç doğrunun ardışık kesişmesiyle oluşan kapalı şekil",
+            "Evet",
+            "Kenarları doğru parçası ve kapalı"
+          ],
+          [
+            "Çember",
+            "Hayır",
+            "Sınırı eğri çizgi"
+          ],
+          [
+            "Yarım daire",
+            "Hayır",
+            "Bir kenarı eğri"
+          ],
+          [
+            "Uçları birleşmemiş kırık çizgi",
+            "Hayır",
+            "Kapalı değil"
+          ],
+          [
+            "Beş doğru parçasıyla çevrili kapalı şekil",
+            "Evet",
+            "Kenarları doğru parçası ve kapalı"
+          ]
+        ]
+      },
+      "kutu": {
+        "tur": "dikkat",
+        "metin": "İkisi paralel olan ya da üçü aynı noktadan geçen doğrular çokgen oluşturmaz. Çokgen için doğruların hem ardışık kesişmesi hem de zincirin kapanması gerekir."
+      },
+      "gorsel": "<svg viewBox=\"0 0 460 214\" role=\"img\" aria-label=\"Çokgenler ve Çember: Ardışık Kesişen Doğru kavram özeti şeması\"><rect x=\"90\" y=\"12\" width=\"280\" height=\"38\" rx=\"19\" class=\"g-mf\"/><text x=\"230\" y=\"36\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"800\" class=\"g-b\">Çokgenler ve Çember: Ardışık Kesişen Doğru</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ma\"/><rect x=\"16\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ms\" stroke-width=\"1.8\"/><text x=\"116\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-mf\">1. Bölüm</text><text x=\"116\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Doğruları ardışık kesiştirmek</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"70\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ta\"/><rect x=\"244\" y=\"70\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ts\" stroke-width=\"1.8\"/><text x=\"344\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-tf\">2. Bölüm</text><text x=\"344\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Çokgen nedir?</text><line x1=\"230\" y1=\"50\" x2=\"116\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ya\"/><rect x=\"16\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-ys\" stroke-width=\"1.8\"/><text x=\"116\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-yf\">3. Bölüm</text><text x=\"116\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Çokgen oluşmayan durumlar</text><line x1=\"230\" y1=\"50\" x2=\"344\" y2=\"146\" class=\"g-c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-oa\"/><rect x=\"244\" y=\"146\" width=\"200\" height=\"54\" rx=\"10\" class=\"g-os\" stroke-width=\"1.8\"/><text x=\"344\" y=\"169\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" class=\"g-of\">4. Bölüm</text><text x=\"344\" y=\"187\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" class=\"g-y\">Köşe, kenar ve açı</text></svg>"
+    },
+    {
+      "baslik": "Köşe, kenar ve açı",
+      "metin": [
+        "Bir çokgenin köşelerini büyük harflerle adlandırırsın. Köşeleri A, B ve C olan üçgene ABC üçgeni denir. Kenarları {parca:AB}, {parca:BC} ve {parca:CA} doğru parçalarıdır; açıları {aci:ABC}, {aci:BCA} ve {aci:CAB} açılarıdır. Açıyı adlandırırken köşe harfinin ortaya yazıldığını geçen haftalardan hatırlıyorsun.",
+        "Çokgeni adlandırırken harfleri köşelerin sırasına göre, yani kenar boyunca komşu köşeye geçerek yazarsın. Köşeleri K, L, M, N olan dörtgen KLMN dörtgenidir; kenarları {parca:KL}, {parca:LM}, {parca:MN} ve {parca:NK} olur. Harfleri karıştırıp KMLN yazarsan {parca:KM} bir kenar olmadığı için şekli yanlış tanımlamış olursun.",
+        "Köşe, kenar ve açı sayısını birlikte düşün: Her köşede tam iki kenar birleşir ve bu iki kenar bir açı yapar. Bu yüzden bir çokgenin kenar sayısı, köşe sayısı ve açı sayısı birbirine eşittir. Altı kenarlı bir çokgenin altı köşesi ve altı açısı vardır; onu oluşturan doğru sayısı da altıdır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Eleman",
+          "ABC üçgeninde",
+          "KLMN dörtgeninde"
+        ],
+        "satirlar": [
+          [
+            "Köşeler",
+            "A, B, C",
+            "K, L, M, N"
+          ],
+          [
+            "Kenarlar",
+            "{parca:AB}, {parca:BC}, {parca:CA}",
+            "{parca:KL}, {parca:LM}, {parca:MN}, {parca:NK}"
+          ],
+          [
+            "Açılar",
+            "{aci:ABC}, {aci:BCA}, {aci:CAB}",
+            "{aci:KLM}, {aci:LMN}, {aci:MNK}, {aci:NKL}"
+          ],
+          [
+            "Sayı",
+            "3 köşe, 3 kenar, 3 açı",
+            "4 köşe, 4 kenar, 4 açı"
+          ]
+        ]
+      },
+      "kutu": {
+        "tur": "kural",
+        "baslik": "Sayılar eşittir",
+        "metin": "Bir çokgende kenar sayısı, köşe sayısı ve açı sayısı birbirine eşittir; bu sayı, çokgeni oluşturan ardışık kesişen doğruların sayısına da eşittir."
+      }
+    },
+    {
+      "baslik": "Çokgenleri kenar sayısına göre adlandırma",
+      "metin": [
+        "Çokgenler kenar sayısına göre adlandırılır. Üç kenarlı çokgen üçgen, dört kenarlı çokgen dörtgen, beş kenarlı çokgen beşgendir. Sayının sonuna gelen “-gen” eki “kenarlı” anlamını taşır; altıgen, yedigen, sekizgen, dokuzgen, ongen diye sürer. Kenar sayısı kaç olursa olsun kural aynıdır: On iki kenarlı çokgene on ikigen denir.",
+        "Çevrene bak: “Yol ver” levhası üçgen, “Dur” levhası sekizgen biçimindedir. Kapılar, pencereler ve defter sayfaları dörtgendir. Bal peteğinin gözleri ve çoğu kurşun kalemin gövdesi altıgendir. Futbol topunun üzerindeki siyah parçalar beşgen, beyaz parçalar altıgendir.",
+        "Adlandırırken yalnız kenarları say; kenarların uzunluğu ya da açıların büyüklüğü adı değiştirmez. Kenarları farklı uzunlukta olan dört kenarlı bir şekil de dörtgendir, bütün kenarları eşit olan dört kenarlı şekil de. Biçim değişse de kenar sayısı aynıysa ad aynıdır. Kenar ve açı özelliklerini gelecek hafta inceleyeceksin."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Kenar sayısı",
+          "Çokgenin adı",
+          "Köşe sayısı",
+          "Açı sayısı"
+        ],
+        "satirlar": [
+          [
+            "3",
+            "Üçgen",
+            "3",
+            "3"
+          ],
+          [
+            "4",
+            "Dörtgen",
+            "4",
+            "4"
+          ],
+          [
+            "5",
+            "Beşgen",
+            "5",
+            "5"
+          ],
+          [
+            "6",
+            "Altıgen",
+            "6",
+            "6"
+          ],
+          [
+            "7",
+            "Yedigen",
+            "7",
+            "7"
+          ],
+          [
+            "8",
+            "Sekizgen",
+            "8",
+            "8"
+          ]
+        ]
+      },
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Köşeleri saymak da yeter",
+        "metin": "Bir çokgenin adını bulmak için köşeleri de sayabilirsin; çünkü köşe sayısı kenar sayısına eşittir. Saymaya başladığın köşeyi işaretle ki onu iki kez sayma."
+      }
+    },
+    {
+      "baslik": "Doğrulardan çokgen üretme",
+      "metin": [
+        "Kareli kâğıda cetvelle üç doğru çiz; ama bu kez doğruların nerede kesişeceğine sen karar ver. Doğruları birbirine yaklaştırıp uzaklaştırdıkça ortadaki üçgen küçülür, büyür ya da biçim değiştirir; fakat kenar sayısı hep üç kalır. Dört doğruyla aynı denemeyi yaparsan ortada bir dörtgen bulursun.",
+        "Hiçbiri paralel olmayan dört doğru ikişer ikişer kesiştiğinde altı kesişim noktası oluşur. Bu noktalardan hangilerini sırayla köşe seçtiğine bağlı olarak aynı doğrulardan farklı dörtgenler; doğrulardan üçünü seçerek de üçgenler elde edersin. Yani aynı doğru takımı birden çok çokgen barındırabilir; önemli olan ardışık kesişen kapalı bir zincir seçmektir.",
+        "Dinamik matematik yazılımında doğru aracıyla üç ya da dört doğru çizip taşı aracıyla doğrulardan birini döndür. Kesişim noktaları kayar, çokgen biçim değiştirir; iki doğru paralel olduğu anda kesişim noktası kaybolur ve çokgen silinir. Bu gözlem, çokgenin doğruların ardışık kesişimine bağlı olduğunu açıkça gösterir."
+      ],
+      "kutu": {
+        "tur": "ipucu",
+        "baslik": "Çizim önerisi",
+        "metin": "Doğruları kâğıdın kenarlarına kadar uzat; kesişim noktaları kâğıdın içinde kalsın. Kesişim noktalarını hemen harflendirirsen hangi doğru parçalarının kenar olduğunu kolayca görürsün."
+      }
     }
-   ]
-  },
-  {
-   "baslik": "Çokgen oluşmayan durumlar",
-   "metin": [
-    "Her üç doğru bir çokgen oluşturmaz. Üç doğrudan ikisi paralelse bu ikisi hiç kesişmez; zincir kapanamaz ve ortada iki yanı açık bir şerit kalır. Üç doğru aynı noktadan geçiyorsa yalnız bir kesişim noktası vardır; köşe olacak üç ayrı nokta bulunmadığından kapalı bölge de oluşmaz.",
-    "Doğru parçaları yerine eğri çizgilerle çevrili şekiller de çokgen değildir. Çember, daire ve elips kapalıdır ama sınırları doğru parçası olmadığı için çokgen sayılmaz. Yarım daire gibi bir yanı düz, bir yanı eğri olan şekiller de aynı nedenle çokgen değildir.",
-    "Kapalı olmayan şekiller de çokgen olamaz. Zikzak çizgi ya da uçları birleşmemiş bir kırık çizgi, düz parçalardan oluşsa da bir bölgeyi çevrelemez. Bir şeklin çokgen olup olmadığına karar verirken iki soru sor: Bütün kenarları doğru parçası mı? Şekil kapalı mı? İkisine de “evet” diyorsan şekil bir çokgendir."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Şekil",
-     "Çokgen mi?",
-     "Nedeni"
-    ],
-    "satirlar": [
-     [
-      "Üç doğrunun ardışık kesişmesiyle oluşan kapalı şekil",
-      "Evet",
-      "Kenarları doğru parçası ve kapalı"
-     ],
-     [
-      "Çember",
-      "Hayır",
-      "Sınırı eğri çizgi"
-     ],
-     [
-      "Yarım daire",
-      "Hayır",
-      "Bir kenarı eğri"
-     ],
-     [
-      "Uçları birleşmemiş kırık çizgi",
-      "Hayır",
-      "Kapalı değil"
-     ],
-     [
-      "Beş doğru parçasıyla çevrili kapalı şekil",
-      "Evet",
-      "Kenarları doğru parçası ve kapalı"
-     ]
-    ]
-   },
-   "kutu": {
-    "tur": "dikkat",
-    "metin": "İkisi paralel olan ya da üçü aynı noktadan geçen doğrular çokgen oluşturmaz. Çokgen için doğruların hem ardışık kesişmesi hem de zincirin kapanması gerekir."
-   }
-  },
-  {
-   "baslik": "Köşe, kenar ve açı",
-   "metin": [
-    "Bir çokgenin köşelerini büyük harflerle adlandırırsın. Köşeleri A, B ve C olan üçgene ABC üçgeni denir. Kenarları {parca:AB}, {parca:BC} ve {parca:CA} doğru parçalarıdır; açıları {aci:ABC}, {aci:BCA} ve {aci:CAB} açılarıdır. Açıyı adlandırırken köşe harfinin ortaya yazıldığını geçen haftalardan hatırlıyorsun.",
-    "Çokgeni adlandırırken harfleri köşelerin sırasına göre, yani kenar boyunca komşu köşeye geçerek yazarsın. Köşeleri K, L, M, N olan dörtgen KLMN dörtgenidir; kenarları {parca:KL}, {parca:LM}, {parca:MN} ve {parca:NK} olur. Harfleri karıştırıp KMLN yazarsan {parca:KM} bir kenar olmadığı için şekli yanlış tanımlamış olursun.",
-    "Köşe, kenar ve açı sayısını birlikte düşün: Her köşede tam iki kenar birleşir ve bu iki kenar bir açı yapar. Bu yüzden bir çokgenin kenar sayısı, köşe sayısı ve açı sayısı birbirine eşittir. Altı kenarlı bir çokgenin altı köşesi ve altı açısı vardır; onu oluşturan doğru sayısı da altıdır."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Eleman",
-     "ABC üçgeninde",
-     "KLMN dörtgeninde"
-    ],
-    "satirlar": [
-     [
-      "Köşeler",
-      "A, B, C",
-      "K, L, M, N"
-     ],
-     [
-      "Kenarlar",
-      "{parca:AB}, {parca:BC}, {parca:CA}",
-      "{parca:KL}, {parca:LM}, {parca:MN}, {parca:NK}"
-     ],
-     [
-      "Açılar",
-      "{aci:ABC}, {aci:BCA}, {aci:CAB}",
-      "{aci:KLM}, {aci:LMN}, {aci:MNK}, {aci:NKL}"
-     ],
-     [
-      "Sayı",
-      "3 köşe, 3 kenar, 3 açı",
-      "4 köşe, 4 kenar, 4 açı"
-     ]
-    ]
-   },
-   "kutu": {
-    "tur": "kural",
-    "baslik": "Sayılar eşittir",
-    "metin": "Bir çokgende kenar sayısı, köşe sayısı ve açı sayısı birbirine eşittir; bu sayı, çokgeni oluşturan ardışık kesişen doğruların sayısına da eşittir."
-   }
-  },
-  {
-   "baslik": "Çokgenleri kenar sayısına göre adlandırma",
-   "metin": [
-    "Çokgenler kenar sayısına göre adlandırılır. Üç kenarlı çokgen üçgen, dört kenarlı çokgen dörtgen, beş kenarlı çokgen beşgendir. Sayının sonuna gelen “-gen” eki “kenarlı” anlamını taşır; altıgen, yedigen, sekizgen, dokuzgen, ongen diye sürer. Kenar sayısı kaç olursa olsun kural aynıdır: On iki kenarlı çokgene on ikigen denir.",
-    "Çevrene bak: “Yol ver” levhası üçgen, “Dur” levhası sekizgen biçimindedir. Kapılar, pencereler ve defter sayfaları dörtgendir. Bal peteğinin gözleri ve çoğu kurşun kalemin gövdesi altıgendir. Futbol topunun üzerindeki siyah parçalar beşgen, beyaz parçalar altıgendir.",
-    "Adlandırırken yalnız kenarları say; kenarların uzunluğu ya da açıların büyüklüğü adı değiştirmez. Kenarları farklı uzunlukta olan dört kenarlı bir şekil de dörtgendir, bütün kenarları eşit olan dört kenarlı şekil de. Biçim değişse de kenar sayısı aynıysa ad aynıdır. Kenar ve açı özelliklerini gelecek hafta inceleyeceksin."
-   ],
-   "tablo": {
-    "basliklar": [
-     "Kenar sayısı",
-     "Çokgenin adı",
-     "Köşe sayısı",
-     "Açı sayısı"
-    ],
-    "satirlar": [
-     [
-      "3",
-      "Üçgen",
-      "3",
-      "3"
-     ],
-     [
-      "4",
-      "Dörtgen",
-      "4",
-      "4"
-     ],
-     [
-      "5",
-      "Beşgen",
-      "5",
-      "5"
-     ],
-     [
-      "6",
-      "Altıgen",
-      "6",
-      "6"
-     ],
-     [
-      "7",
-      "Yedigen",
-      "7",
-      "7"
-     ],
-     [
-      "8",
-      "Sekizgen",
-      "8",
-      "8"
-     ]
-    ]
-   },
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Köşeleri saymak da yeter",
-    "metin": "Bir çokgenin adını bulmak için köşeleri de sayabilirsin; çünkü köşe sayısı kenar sayısına eşittir. Saymaya başladığın köşeyi işaretle ki onu iki kez sayma."
-   }
-  },
-  {
-   "baslik": "Doğrulardan çokgen üretme",
-   "metin": [
-    "Kareli kâğıda cetvelle üç doğru çiz; ama bu kez doğruların nerede kesişeceğine sen karar ver. Doğruları birbirine yaklaştırıp uzaklaştırdıkça ortadaki üçgen küçülür, büyür ya da biçim değiştirir; fakat kenar sayısı hep üç kalır. Dört doğruyla aynı denemeyi yaparsan ortada bir dörtgen bulursun.",
-    "Hiçbiri paralel olmayan dört doğru ikişer ikişer kesiştiğinde altı kesişim noktası oluşur. Bu noktalardan hangilerini sırayla köşe seçtiğine bağlı olarak aynı doğrulardan farklı dörtgenler; doğrulardan üçünü seçerek de üçgenler elde edersin. Yani aynı doğru takımı birden çok çokgen barındırabilir; önemli olan ardışık kesişen kapalı bir zincir seçmektir.",
-    "Dinamik matematik yazılımında doğru aracıyla üç ya da dört doğru çizip taşı aracıyla doğrulardan birini döndür. Kesişim noktaları kayar, çokgen biçim değiştirir; iki doğru paralel olduğu anda kesişim noktası kaybolur ve çokgen silinir. Bu gözlem, çokgenin doğruların ardışık kesişimine bağlı olduğunu açıkça gösterir."
-   ],
-   "kutu": {
-    "tur": "ipucu",
-    "baslik": "Çizim önerisi",
-    "metin": "Doğruları kâğıdın kenarlarına kadar uzat; kesişim noktaları kâğıdın içinde kalsın. Kesişim noktalarını hemen harflendirirsen hangi doğru parçalarının kenar olduğunu kolayca görürsün."
-   }
-  }
- ],
- "ornekler": [
-  {
-   "soru": "Bir öğrenci düzlemde iki doğru çizip kesiştiriyor ve “İki doğru kesiştiği için bir çokgen oluştu.” diyor. Bu düşünceyi değerlendir.",
-   "cevap": "Öğrenci yanılıyor. İki doğru yalnız bir noktada kesişir ve düzlemi dört açı bölgesine ayırır; bu bölgeler bir yanından açık kaldığı için kapalı şekil oluşmaz. Çokgen için en az üç doğrunun ardışık kesişmesi ve son doğrunun ilk doğruyu kesmesi gerekir. Öğrenci kesişen iki doğru çizerek dört açı elde etmiştir; çokgen değil."
-  },
-  {
-   "soru": "Düzlemde d1, d2 ve d3 doğruları çiziliyor. d1 ile d2 kesişiyor, d2 ile d3 kesişiyor; fakat d3 doğrusu d1 doğrusuna paralel. Bu üç doğru bir çokgen oluşturur mu? Nedenini açıkla.",
-   "cevap": "Oluşturmaz. Çokgen için zincirin kapanması, yani son doğrunun ilk doğruyu kesmesi gerekir. d3 ile d1 paralel olduğundan hiç kesişmez; üçüncü bir köşe ortaya çıkmaz ve bölge bir yanından açık kalır. d3'ü d1'i kesecek biçimde yeniden çizersen üç kesişim noktası oluşur ve bir üçgen elde edersin."
-  },
-  {
-   "soru": "Köşeleri sırasıyla P, R, S, T ve U olan bir çokgen çiziliyor. Bu çokgenin adı nedir? Kenarlarını ve açılarını yaz.",
-   "cevap": "Beş köşesi olduğu için beş kenarlıdır; adı beşgendir ve PRSTU beşgeni diye adlandırılır. Kenarları komşu köşeleri birleştiren doğru parçalarıdır: {parca:PR}, {parca:RS}, {parca:ST}, {parca:TU} ve {parca:UP}. Açıları, köşe harfi ortada olacak biçimde {aci:UPR}, {aci:PRS}, {aci:RST}, {aci:STU} ve {aci:TUP} açılarıdır. Beş kenar, beş köşe ve beş açı vardır; bu çokgen beş doğrunun ardışık kesişmesiyle oluşur."
-  },
-  {
-   "soru": "Aşağıdaki şekillerden hangileri çokgendir? I. Üç doğru parçasıyla çevrili kapalı şekil. II. Çember. III. Bir ucu birleşmemiş, dört doğru parçasından oluşan kırık çizgi. IV. Altı doğru parçasıyla çevrili kapalı şekil. V. Yarım daire.",
-   "cevap": "Çokgen olanlar I ve IV'tür. I, üç kenarı doğru parçası olan kapalı bir şekildir: üçgen. IV, altı kenarı doğru parçası olan kapalı bir şekildir: altıgen. II'nin sınırı eğri bir çizgidir, V'in bir kenarı eğridir; bu yüzden ikisi de çokgen değildir. III düz parçalardan oluşsa da kapalı olmadığı için bir bölgeyi çevrelemez ve çokgen sayılmaz."
-  },
-  {
-   "soru": "Bir çokgenin dokuz açısı var. Bu çokgenin kenar sayısı ve köşe sayısı kaçtır? Adı nedir? En az kaç doğrunun ardışık kesişmesiyle oluşmuştur?",
-   "cevap": "Bir çokgende açı sayısı, köşe sayısı ve kenar sayısı birbirine eşittir. Dokuz açısı varsa dokuz köşesi ve dokuz kenarı vardır; adı dokuzgendir. Her kenar bir doğrunun parçası olduğundan bu çokgen dokuz doğrunun ardışık kesişmesiyle oluşmuştur."
-  },
-  {
-   "soru": "Dört doğru çiziliyor: d1 ile d3 paralel, d2 ile d4 paralel; başka paralel çift yok. Bu dört doğru d1, d2, d3, d4 sırasıyla bir çokgen oluşturur mu? Oluşturursa bu çokgen hangisidir?",
-   "cevap": "Oluşturur. Zincirdeki ardışık çiftlere bak: d1 ile d2, d2 ile d3, d3 ile d4 ve d4 ile d1. Paralel olan çiftler d1 ile d3 ve d2 ile d4'tür; bunlar zincirde ardışık değildir. Ardışık dört çiftin hepsi kesişir, dört kesişim noktası oluşur ve zincir kapanır. Ortaya çıkan şekil dört kenarlı bir çokgen, yani dörtgendir; karşılıklı kenarları paralel olduğu için bu dörtgene paralelkenar denir."
-  }
- ],
- "etkinlikler": [
-  {
-   "tur": "coktan",
-   "soru": "Düzlemde bir çokgen oluşturmak için en az kaç doğrunun ardışık kesişmesi gerekir?",
-   "secenekler": [
-    "2 doğru",
-    "3 doğru",
-    "4 doğru",
-    "5 doğru"
-   ],
-   "dogru": 1,
-   "aciklama": "İki doğru yalnız bir noktada kesişir ve bölge çevreleyemez. Üç doğru ardışık kesişince zincir kapanır ve en az kenarlı çokgen olan üçgen oluşur."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Aşağıdaki şekillerden hangisi çokgen değildir?",
-   "secenekler": [
-    "Üç doğru parçasıyla çevrili kapalı şekil",
-    "Beş doğru parçasıyla çevrili kapalı şekil",
-    "Bir yanı düz, bir yanı eğri olan yarım daire",
-    "Dört doğru parçasıyla çevrili kapalı şekil"
-   ],
-   "dogru": 2,
-   "aciklama": "Çokgenin bütün kenarları doğru parçası olmalıdır. Yarım dairenin bir kenarı eğri olduğu için çokgen değildir; öbür üç şekil üçgen, beşgen ve dörtgendir."
-  },
-  {
-   "tur": "coktan",
-   "soru": "Sekiz köşesi olan bir çokgen için aşağıdakilerden hangisi yanlıştır?",
-   "secenekler": [
-    "Sekiz kenarı vardır",
-    "Sekiz açısı vardır",
-    "Adı sekizgendir",
-    "Yedi doğrudan oluşur"
-   ],
-   "dogru": 3,
-   "aciklama": "Köşe, kenar ve açı sayısı birbirine eşittir; sekiz köşeli çokgen sekizgendir. Her kenar bir doğrunun parçası olduğundan sekiz doğru gerekir, yedi değil."
-  },
-  {
-   "tur": "dy",
-   "yonerge": "Aşağıdaki ifadelerden hangilerinin doğru, hangilerinin yanlış olduğunu belirle.",
-   "ifadeler": [
+  ],
+  "ornekler": [
     {
-     "metin": "İki doğru kesiştiğinde bir çokgen oluşur.",
-     "dogru": false,
-     "aciklama": "İki doğru tek noktada kesişir ve kapalı bölge oluşturmaz; çokgen için en az üç doğru gerekir."
+      "soru": "Bir öğrenci düzlemde iki doğru çizip kesiştiriyor ve “İki doğru kesiştiği için bir çokgen oluştu.” diyor. Bu düşünceyi değerlendir.",
+      "cevap": "Öğrenci yanılıyor. İki doğru yalnız bir noktada kesişir ve düzlemi dört açı bölgesine ayırır; bu bölgeler bir yanından açık kaldığı için kapalı şekil oluşmaz. Çokgen için en az üç doğrunun ardışık kesişmesi ve son doğrunun ilk doğruyu kesmesi gerekir. Öğrenci kesişen iki doğru çizerek dört açı elde etmiştir; çokgen değil."
     },
     {
-     "metin": "Çemberin sınırı eğri bir çizgi olduğu için çember bir çokgen değildir.",
-     "dogru": true,
-     "aciklama": "Çokgenin bütün kenarları doğru parçası olmalıdır; çemberde doğru parçası yoktur."
+      "soru": "Düzlemde d1, d2 ve d3 doğruları çiziliyor. d1 ile d2 kesişiyor, d2 ile d3 kesişiyor; fakat d3 doğrusu d1 doğrusuna paralel. Bu üç doğru bir çokgen oluşturur mu? Nedenini açıkla.",
+      "cevap": "Oluşturmaz. Çokgen için zincirin kapanması, yani son doğrunun ilk doğruyu kesmesi gerekir. d3 ile d1 paralel olduğundan hiç kesişmez; üçüncü bir köşe ortaya çıkmaz ve bölge bir yanından açık kalır. d3'ü d1'i kesecek biçimde yeniden çizersen üç kesişim noktası oluşur ve bir üçgen elde edersin."
     },
     {
-     "metin": "Bir çokgenin köşe sayısı kenar sayısına eşittir.",
-     "dogru": true,
-     "aciklama": "Her köşede iki kenar birleşir; beşgenin beş köşesi ve beş kenarı vardır."
+      "soru": "Köşeleri sırasıyla P, R, S, T ve U olan bir çokgen çiziliyor. Bu çokgenin adı nedir? Kenarlarını ve açılarını yaz.",
+      "cevap": "Beş köşesi olduğu için beş kenarlıdır; adı beşgendir ve PRSTU beşgeni diye adlandırılır. Kenarları komşu köşeleri birleştiren doğru parçalarıdır: {parca:PR}, {parca:RS}, {parca:ST}, {parca:TU} ve {parca:UP}. Açıları, köşe harfi ortada olacak biçimde {aci:UPR}, {aci:PRS}, {aci:RST}, {aci:STU} ve {aci:TUP} açılarıdır. Beş kenar, beş köşe ve beş açı vardır; bu çokgen beş doğrunun ardışık kesişmesiyle oluşur."
     },
     {
-     "metin": "Üç doğru aynı noktadan geçiyorsa bir üçgen oluşur.",
-     "dogru": false,
-     "aciklama": "Tek kesişim noktası vardır; üç ayrı köşe bulunmadığından kapalı bölge ve üçgen oluşmaz."
+      "soru": "Aşağıdaki şekillerden hangileri çokgendir? I. Üç doğru parçasıyla çevrili kapalı şekil. II. Çember. III. Bir ucu birleşmemiş, dört doğru parçasından oluşan kırık çizgi. IV. Altı doğru parçasıyla çevrili kapalı şekil. V. Yarım daire.",
+      "cevap": "Çokgen olanlar I ve IV'tür. I, üç kenarı doğru parçası olan kapalı bir şekildir: üçgen. IV, altı kenarı doğru parçası olan kapalı bir şekildir: altıgen. II'nin sınırı eğri bir çizgidir, V'in bir kenarı eğridir; bu yüzden ikisi de çokgen değildir. III düz parçalardan oluşsa da kapalı olmadığı için bir bölgeyi çevrelemez ve çokgen sayılmaz."
+    },
+    {
+      "soru": "Bir çokgenin dokuz açısı var. Bu çokgenin kenar sayısı ve köşe sayısı kaçtır? Adı nedir? En az kaç doğrunun ardışık kesişmesiyle oluşmuştur?",
+      "cevap": "Bir çokgende açı sayısı, köşe sayısı ve kenar sayısı birbirine eşittir. Dokuz açısı varsa dokuz köşesi ve dokuz kenarı vardır; adı dokuzgendir. Her kenar bir doğrunun parçası olduğundan bu çokgen dokuz doğrunun ardışık kesişmesiyle oluşmuştur."
+    },
+    {
+      "soru": "Dört doğru çiziliyor: d1 ile d3 paralel, d2 ile d4 paralel; başka paralel çift yok. Bu dört doğru d1, d2, d3, d4 sırasıyla bir çokgen oluşturur mu? Oluşturursa bu çokgen hangisidir?",
+      "cevap": "Oluşturur. Zincirdeki ardışık çiftlere bak: d1 ile d2, d2 ile d3, d3 ile d4 ve d4 ile d1. Paralel olan çiftler d1 ile d3 ve d2 ile d4'tür; bunlar zincirde ardışık değildir. Ardışık dört çiftin hepsi kesişir, dört kesişim noktası oluşur ve zincir kapanır. Ortaya çıkan şekil dört kenarlı bir çokgen, yani dörtgendir; karşılıklı kenarları paralel olduğu için bu dörtgene paralelkenar denir."
     }
-   ]
-  },
-  {
-   "tur": "eslestir",
-   "yonerge": "Açıklamaları kavramlarla eşleştir.",
-   "ciftler": [
-    [
-     "Ardışık kesişen doğruların kesişim noktası",
-     "Köşe"
-    ],
-    [
-     "İki komşu köşe arasında kalan doğru parçası",
-     "Kenar"
-    ],
-    [
-     "Bir köşede birleşen iki kenar arasında kalan açıklık",
-     "Açı"
-    ],
-    [
-     "Ardışık kesişen en az üç doğrunun oluşturduğu kapalı şekil",
-     "Çokgen"
-    ]
-   ]
-  },
-  {
-   "tur": "bosluk",
-   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
-   "cumleler": [
+  ],
+  "etkinlikler": [
     {
-     "metin": "Düzlemde ardışık kesişen en az üç doğrunun oluşturduğu ___ şekle çokgen denir.",
-     "cevap": "kapalı"
+      "tur": "coktan",
+      "soru": "Düzlemde bir çokgen oluşturmak için en az kaç doğrunun ardışık kesişmesi gerekir?",
+      "secenekler": [
+        "3 doğru",
+        "2 doğru",
+        "4 doğru",
+        "5 doğru"
+      ],
+      "dogru": 0,
+      "aciklama": "İki doğru yalnız bir noktada kesişir ve bölge çevreleyemez. Üç doğru ardışık kesişince zincir kapanır ve en az kenarlı çokgen olan üçgen oluşur."
     },
     {
-     "metin": "Çokgenin iki komşu köşesi arasında kalan doğru parçasına ___ denir.",
-     "cevap": "kenar"
+      "tur": "coktan",
+      "soru": "Aşağıdaki şekillerden hangisi çokgen değildir?",
+      "secenekler": [
+        "Üç doğru parçasıyla çevrili kapalı şekil",
+        "Bir yanı düz, bir yanı eğri olan yarım daire",
+        "Beş doğru parçasıyla çevrili kapalı şekil",
+        "Dört doğru parçasıyla çevrili kapalı şekil"
+      ],
+      "dogru": 1,
+      "aciklama": "Çokgenin bütün kenarları doğru parçası olmalıdır. Yarım dairenin bir kenarı eğri olduğu için çokgen değildir; öbür üç şekil üçgen, beşgen ve dörtgendir."
     },
     {
-     "metin": "Yedi kenarlı çokgene ___ denir.",
-     "cevap": "yedigen"
+      "tur": "coktan",
+      "soru": "Sekiz köşesi olan bir çokgen için aşağıdakilerden hangisi yanlıştır?",
+      "secenekler": [
+        "Sekiz kenarı vardır",
+        "Sekiz açısı vardır",
+        "Yedi doğrudan oluşur",
+        "Adı sekizgendir"
+      ],
+      "dogru": 2,
+      "aciklama": "Köşe, kenar ve açı sayısı birbirine eşittir; sekiz köşeli çokgen sekizgendir. Her kenar bir doğrunun parçası olduğundan sekiz doğru gerekir, yedi değil."
+    },
+    {
+      "tur": "coktan",
+      "soru": "‘Köşe, kenar ve açı’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme)",
+        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
+        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
+        "Bir çokgende kenar sayısı, köşe sayısı ve açı sayısı birbirine eşittir; bu sayı, çokgeni oluşturan ardışık kesişen doğruların sayısına da eşittir."
+      ],
+      "dogru": 3,
+      "aciklama": "Köşe, kenar ve açı bölümünde açıklandığı üzere doğru ifade budur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "İki doğru kesiştiğinde bir çokgen oluşur.",
+          "dogru": false,
+          "aciklama": "İki doğru tek noktada kesişir ve kapalı bölge oluşturmaz; çokgen için en az üç doğru gerekir."
+        },
+        {
+          "metin": "Çemberin sınırı eğri bir çizgi olduğu için çember bir çokgen değildir.",
+          "dogru": true,
+          "aciklama": "Çokgenin bütün kenarları doğru parçası olmalıdır; çemberde doğru parçası yoktur."
+        },
+        {
+          "metin": "Bir çokgenin köşe sayısı kenar sayısına eşittir.",
+          "dogru": true,
+          "aciklama": "Her köşede iki kenar birleşir; beşgenin beş köşesi ve beş kenarı vardır."
+        },
+        {
+          "metin": "Üç doğru aynı noktadan geçiyorsa bir üçgen oluşur.",
+          "dogru": false,
+          "aciklama": "Tek kesişim noktası vardır; üç ayrı köşe bulunmadığından kapalı bölge ve üçgen oluşmaz."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Ardışık kesişen doğruların kesişim noktası",
+          "Köşe"
+        ],
+        [
+          "İki komşu köşe arasında kalan doğru parçası",
+          "Kenar"
+        ],
+        [
+          "Bir köşede birleşen iki kenar arasında kalan açıklık",
+          "Açı"
+        ],
+        [
+          "Ardışık kesişen en az üç doğrunun oluşturduğu kapalı şekil",
+          "Çokgen"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Düzlemde ardışık kesişen en az üç doğrunun oluşturduğu ___ şekle çokgen denir.",
+          "cevap": "kapalı"
+        },
+        {
+          "metin": "Çokgenin iki komşu köşesi arasında kalan doğru parçasına ___ denir.",
+          "cevap": "kenar"
+        },
+        {
+          "metin": "Yedi kenarlı çokgene ___ denir.",
+          "cevap": "yedigen"
+        }
+      ],
+      "fazla": [
+        "köşe",
+        "varsayım"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Elif üç doğru çizdi; doğruların üçü de aynı noktadan geçiyor. Elif “Üç doğru çizdim, demek ki bir üçgen oluştu.” diyor. Elif haklı mı? Çizimi nasıl düzeltirsin?",
+      "cevap": "Elif haklı değil. Üçgenin üç ayrı köşesi olmalıdır; oysa aynı noktadan geçen üç doğrunun yalnız bir kesişim noktası vardır ve kapalı bir bölge oluşmaz. Doğrulardan biri ortak noktadan geçmeyecek biçimde kaydırılırsa üç ayrı kesişim noktası ortaya çıkar, zincir kapanır ve ortada bir üçgen belirir.",
+      "ipuclari": [
+        "Üçgenin kaç köşesi olmalı? Çizimdeki kesişim noktalarını say.",
+        "Doğrulardan birini ortak noktadan geçmeyecek biçimde kaydırırsan ne olur?"
+      ]
     }
-   ],
-   "fazla": [
-    "köşe"
-   ]
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Elif üç doğru çizdi; doğruların üçü de aynı noktadan geçiyor. Elif “Üç doğru çizdim, demek ki bir üçgen oluştu.” diyor. Elif haklı mı? Çizimi nasıl düzeltirsin?",
-   "ipuclari": [
-    "Üçgenin kaç köşesi olmalı? Çizimdeki kesişim noktalarını say.",
-    "Doğrulardan birini ortak noktadan geçmeyecek biçimde kaydırırsan ne olur?"
-   ],
-   "cevap": "Elif haklı değil. Üçgenin üç ayrı köşesi olmalıdır; oysa aynı noktadan geçen üç doğrunun yalnız bir kesişim noktası vardır ve kapalı bir bölge oluşmaz. Doğrulardan biri ortak noktadan geçmeyecek biçimde kaydırılırsa üç ayrı kesişim noktası ortaya çıkar, zincir kapanır ve ortada bir üçgen belirir."
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Bir öğrenci kareli kâğıda beş doğru çizip ardışık kesiştirdi ve ortada bir beşgen elde etti. Aynı doğrulardan yalnız bazılarını kullanarak başka çokgenler de elde edebilir mi? Düşüncenin gerekçesini yaz.",
-   "ipuclari": [
-    "Beş doğrudan üçünü ya da dördünü seçersen kaç kesişim noktası kullanırsın?",
-    "Seçtiğin doğrular ardışık kesişiyor ve zincir kapanıyor mu?"
-   ],
-   "cevap": "Evet, elde edebilir. Beş doğrudan birbirine paralel olmayan ve aynı noktadan geçmeyen herhangi üçü ardışık kesişerek bir üçgen, uygun dördü ise bir dörtgen oluşturur. Beşgen için beş doğrunun hepsi gerekir. Çokgenin kenar sayısı, zincirde kullanılan doğru sayısına eşittir; önemli olan seçilen doğruların ardışık kesişmesi ve son doğrunun ilk doğruyu kesmesidir."
-  }
- ],
- "ozet": [
-  "Düzlemde ardışık olarak kesişen en az üç doğrunun oluşturduğu kapalı şekle çokgen denir; son doğru ilk doğruyu kesmeli, yani zincir kapanmalıdır.",
-  "İki doğru bölge çevreleyemez; ikisi paralel olan ya da üçü aynı noktadan geçen doğrular da çokgen oluşturmaz. Sınırı eğri olan ya da kapalı olmayan şekiller çokgen değildir.",
-  "Doğruların kesişim noktaları çokgenin köşeleri, komşu köşeler arasındaki doğru parçaları kenarları, köşelerde iki kenar arasında kalan açıklıklar açılarıdır.",
-  "Bir çokgende kenar sayısı, köşe sayısı, açı sayısı ve onu oluşturan doğru sayısı birbirine eşittir; çokgen, köşe harfleri sırayla yazılarak adlandırılır (ABC üçgeni, KLMN dörtgeni).",
-  "Çokgenler kenar sayısına göre üçgen, dörtgen, beşgen, altıgen, yedigen, sekizgen diye adlandırılır; kenarların uzunluğu ya da açıların büyüklüğü adı değiştirmez."
- ]
+  ],
+  "ozet": [
+    "Düzlemde ardışık olarak kesişen en az üç doğrunun oluşturduğu kapalı şekle çokgen denir; son doğru ilk doğruyu kesmeli, yani zincir kapanmalıdır.",
+    "İki doğru bölge çevreleyemez; ikisi paralel olan ya da üçü aynı noktadan geçen doğrular da çokgen oluşturmaz. Sınırı eğri olan ya da kapalı olmayan şekiller çokgen değildir.",
+    "Doğruların kesişim noktaları çokgenin köşeleri, komşu köşeler arasındaki doğru parçaları kenarları, köşelerde iki kenar arasında kalan açıklıklar açılarıdır.",
+    "Bir çokgende kenar sayısı, köşe sayısı, açı sayısı ve onu oluşturan doğru sayısı birbirine eşittir; çokgen, köşe harfleri sırayla yazılarak adlandırılır (ABC üçgeni, KLMN dörtgeni).",
+    "Çokgenler kenar sayısına göre üçgen, dörtgen, beşgen, altıgen, yedigen, sekizgen diye adlandırılır; kenarların uzunluğu ya da açıların büyüklüğü adı değiştirmez."
+  ]
 }
