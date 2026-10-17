@@ -1,0 +1,249 @@
+{
+ "ad": "11-kimya-6",
+ "sinif": 11,
+ "ders": "kimya",
+ "ders_adi": "Kimya",
+ "hafta": 6,
+ "tarih": "19-23 Ekim 2026",
+ "yayin_tarihi": "2026-10-21",
+ "unite": "ETKİLEŞİM",
+ "konu": "Standart Oluşum Entalpileriyle Tepkime Entalpisinin Hesaplanması",
+ "ciktilar": [
+  "Standart molar oluşum entalpisi kavramını ve elementlerin standart koşullardaki referans entalpi değerlerini açıklar.",
+  "Kimyasal tepkimelerin standart tepkime entalpilerini, ürünlerin ve girenlerin standart oluşum entalpilerini kullanarak hesaplar.",
+  "Stokiyometrik katsayılar ve maddenin fiziksel hâlinin tepkime entalpisi üzerindeki etkisini yorumlar."
+ ],
+ "giris": "Bir kimyasal tepkimenin entalpi değişimini (ΔH) her zaman laboratuvarda kalorimetre kabıyla doğrudan ölçmek mümkün olmayabilir. Bilim insanları bu zorluğu aşmak için standart koşullarda (25 °C ve 1 atm) elementlerin en kararlı hâllerinin entalpisini sıfır (0) kabul ederek her bileşik için {koyu:standart molar oluşum entalpisi} (ΔH°_f) tabloları hazırlamışlardır. Bu haftaki dersimizde, bu referans tablolarını kullanarak herhangi bir tepkimenin standart entalpi değişimini nasıl hesaplayacağımızı öğreneceğiz.",
+ "ozet": [
+  "{koyu:Standart Koşullar:} Termokimyada standart şartlar {koyu:25 °C (298 K) sıcaklık ve 1 atm basınç} olarak tanımlanır ve ΔH° üzerindeki derece (°) simgesiyle gösterilir.",
+  "{koyu:Standart Molar Oluşum Entalpisi (ΔH°_f):} Standart koşullarda {koyu:1 mol} bileşiğin, kendi elementlerinin en kararlı fiziksel hâllerinden ve allotroplarından oluşması sırasındaki entalpi değişimidir.",
+  "{koyu:Elementlerin Referans Değeri:} Standart koşullarda en kararlı fiziksel hâlinde ve allotropunda bulunan serbest elementlerin (O2(g), H2(g), N2(g), C(grafit), Fe(k), Hg(s) vb.) standart oluşum entalpisi {koyu:sıfır (ΔH°_f = 0)} kabul edilir.",
+  "{koyu:Tepkime Entalpisi Bağıntısı:} Bir kimyasal tepkimenin standart entalpi değişimi, ürünlerin oluşum entalpileri toplamından girenlerin oluşum entalpileri toplamının çıkarılmasıyla bulunur: {koyu:ΔH°_tepkime = Σ n.ΔH°_f(Ürünler) - Σ m.ΔH°_f(Girenler)}.",
+  "{koyu:Katsayı ve Fiziksel Hâl Etkisi:} Denklemdeki stokiyometrik katsayılar (mol sayıları) bileşiklerin ΔH°_f değerleriyle çarpılır; ayrıca aynı bileşiğin katı, sıvı ve gaz hâllerinin oluşum entalpileri birbirinden farklıdır."
+ ],
+ "bolumler": [
+  {
+   "baslik": "1. Standart Molar Oluşum Entalpisi (ΔH°_f) ve Kuralları",
+   "metin": [
+    "25 °C sıcaklık ve 1 atm basınçta (standart koşullarda) bir bileşiğin {koyu:1 molünün}, kendisini oluşturan {koyu:elementlerin en kararlı hâllerinden} sentezlenmesi sırasındaki ısı değişimine {koyu:standart molar oluşum (sentez) entalpisi} denir ve {koyu:ΔH°_f} (veya ΔH°_ol) ile gösterilir. Bir tepkimenin entalpisinin doğrudan standart molar oluşum entalpisine eşit olabilmesi için şu üç şartın aynı anda sağlanması gerekir:\n1. Oluşan ürün {koyu:yalnızca 1 mol bileşik} olmalıdır.\n2. Girenler {koyu:yalnızca kararlı elementlerden} oluşmalıdır (bileşiklerden başlayan tepkimelerin ΔH değeri oluşum entalpisi değildir).\n3. Tepkime 25 °C ve 1 atm’de gerçekleşmelidir.",
+    "Standart koşullarda elementlerin en kararlı doğal fiziksel hâlleri için {koyu:ΔH°_f = 0 kJ/mol} kabul edilmiştir:\n• Gaz hâlindeki kararlı elementler: H2(g), O2(g), N2(g), Cl2(g), He(g) => ΔH°_f = 0.\n• Katı ve sıvı elementler: Na(k), Fe(k), Cu(k), Br2(s), Hg(s) => ΔH°_f = 0.\n• {koyu:Allotroplar:} Karbonun en kararlı allotropu {koyu:C(grafit)} için ΔH°_f = 0 iken, {koyu:C(elmas)} için ΔH°_f ≠ 0’dır. Benzer şekilde {koyu:O2(g)} için 0 iken, {koyu:O3(ozon, g)} için 0 değildir."
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "CO(g) + 1/2 O2(g) -> CO2(g) Tepkimesinin ΔH° Değeri Oluşum Entalpisi midir?",
+    "metin": "Bu tepkimede 1 mol CO2 oluşmasına rağmen, girenlerde bulunan {koyu:CO(g) bir element değil bileşiktir}! Dolayısıyla bu tepkimenin entalpisi CO2’nin standart oluşum entalpisi {koyu:değildir}; CO(g) gazının molar yanma entalpisidir."
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 200\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"25\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Standart Oluşum Entalpisi (ΔH°_f) ve Kararlı Elementler</text><rect x=\"25\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><rect x=\"25\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#2563eb\"/><rect x=\"25\" y=\"60\" width=\"300\" height=\"10\" fill=\"#2563eb\"/><text x=\"175.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Standart Oluşum Entalpisi Tanımı</text><text x=\"37\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• 25 °C (298 K) ve 1 atm (standart koşullar)</text><text x=\"37\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• 1 mol bileşiğin kendi elementlerinin en kararlı</text><text x=\"37\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  allotrop ve fiziksel hâllerinden oluşması</text><text x=\"37\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  sırasındaki entalpi değişimidir (ΔH°_f).</text><text x=\"37\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Birimi genellikle kJ/mol’dür.</text><rect x=\"355\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"1.6\"/><rect x=\"355\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#059669\"/><rect x=\"355\" y=\"60\" width=\"300\" height=\"10\" fill=\"#059669\"/><text x=\"505.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">ΔH°_f = 0 Kabul Edilen Maddeler</text><text x=\"367\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• O_2(g), N_2(g), H_2(g), Cl_2(g)  =>  ΔH°_f = 0</text><text x=\"367\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• C(grafit, k) => 0  (C(elmas) != 0)</text><text x=\"367\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• O_3(ozon, g) != 0,  S(rombik) = 0</text><text x=\"367\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Fe(k), Cu(k), Na(k), Hg(s) => ΔH°_f = 0</text><text x=\"367\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• H_2O(s), CO(g) gibi bileşiklerin ΔH°_f != 0</text></svg>"
+  },
+  {
+   "baslik": "2. Oluşum Entalpilerinden Tepkime Entalpisinin Hesaplanması",
+   "metin": [
+    "Denkleştirilmiş bir kimyasal tepkimenin standart entalpi değişimi ({koyu:ΔH°_tepkime}), ürünlerde yer alan maddelerin standart oluşum entalpileri toplamından, girenlerde yer alan maddelerin standart oluşum entalpileri toplamının çıkarılmasıyla hesaplanır:\n• {koyu:ΔH°_tepkime = Σ n . ΔH°_f(Ürünler) - Σ m . ΔH°_f(Girenler)}",
+    "Burada {koyu:n} ve {koyu:m}, denkleştirilmiş tepkime denklemindeki ürünlerin ve girenlerin {koyu:stokiyometrik katsayılarıdır (mol sayıları)}. Hesaplama yapılırken dikkat edilmesi gereken noktalar şunlardır:\n• Denklemde serbest element (O2(g), N2(g), H2(g), Fe(k) vb.) varsa oluşum entalpisi yerine {koyu:0} yazılır.\n• Negatif oluşum entalpileri parantez içine alınarak işaret hatası yapılmamalıdır.\n• Sonuç {koyu:negatif (-)} çıkarsa tepkime {koyu:ekzotermik}, {koyu:pozitif (+)} çıkarsa {koyu:endotermiktir}."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Fiziksel Hâl ve Oluşum Entalpisi İlişkisi",
+    "metin": "Aynı maddenin katı hâlden sıvıya, sıvıdan gaza geçişi endotermiktir (ısı alır). Bu nedenle suyun standart oluşum entalpileri karşılaştırıldığında:\n• ΔH°_f[H2O(g)] = -242 kJ/mol\n• ΔH°_f[H2O(s)] = -286 kJ/mol\nTablodan değer seçilirken maddenin {koyu:fiziksel hâline (k, s, g, suda)} mutlaka dikkat edilmelidir!"
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 205\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"25\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#7c2d12\" text-anchor=\"middle\">Oluşum Entalpileri Yardımıyla Tepkime Entalpisinin Hesaplanması</text><rect x=\"40\" y=\"42\" width=\"600\" height=\"48\" rx=\"8\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"340\" y=\"71\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\" text-anchor=\"middle\">ΔH°_tepkime = Σ n . ΔH°_f(Ürünler)  −  Σ m . ΔH°_f(Girenler)</text><rect x=\"40\" y=\"102\" width=\"285\" height=\"92\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><rect x=\"40\" y=\"102\" width=\"285\" height=\"28\" rx=\"8\" fill=\"#dc2626\"/><rect x=\"40\" y=\"120\" width=\"285\" height=\"10\" fill=\"#dc2626\"/><text x=\"182.5\" y=\"121\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Ekzotermik Tepkime (ΔH° < 0)</text><text x=\"52\" y=\"150\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Σ ΔH°_f(Ürünler) < Σ ΔH°_f(Girenler)</text><text x=\"52\" y=\"169\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Ortama ısı verilir; düşük enerjili</text><text x=\"52\" y=\"188\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  ürünler enerji bakımından daha kararlıdır.</text><rect x=\"355\" y=\"102\" width=\"285\" height=\"92\" rx=\"8\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"1.6\"/><rect x=\"355\" y=\"102\" width=\"285\" height=\"28\" rx=\"8\" fill=\"#7c3aed\"/><rect x=\"355\" y=\"120\" width=\"285\" height=\"10\" fill=\"#7c3aed\"/><text x=\"497.5\" y=\"121\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Endotermik Tepkime (ΔH° > 0)</text><text x=\"367\" y=\"150\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Σ ΔH°_f(Ürünler) > Σ ΔH°_f(Girenler)</text><text x=\"367\" y=\"169\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Ortamdan ısı alınır; yüksek sıcaklıklarda</text><text x=\"367\" y=\"188\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  ürünler, düşük sıcaklıkta girenler kararlıdır.</text></svg>"
+  },
+  {
+   "baslik": "3. Stokiyometrik Mol-Isı Hesaplamaları",
+   "metin": [
+    "Standart oluşum entalpileri yardımıyla ΔH°_tepkime bulunduktan sonra, tepkimeye giren veya oluşan maddenin kütlesi (m = n . M_A) ya da mol sayısı üzerinden açığa çıkan veya harcanan ısı miktarı doğru orantıyla hesaplanır.",
+    "Örneğin 1 mol CH4 gazının yanmasından ΔH° = -890 kJ bulunmuşsa, bu tepkimede {koyu:890 kJ ısı açığa çıkar} demektir. Eğer 0,5 mol (8 gram) CH4 yakılırsa bunun yarısı olan {koyu:445 kJ ısı} açığa çıkar. Sorularda {koyu:“entalpi değişimi kaç kJ’dür?”} dendiğinde işaret (- veya +) belirtilir; {koyu:“kaç kJ ısı açığa çıkar?”} dendiğinde ise pozitif büyüklük söylenir."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "İşaret Tuzağına Dikkat!",
+    "metin": "• ΔH = -400 kJ  =>  Tepkime entalpisi {koyu:-400 kJ}’dür.\n• ΔH = -400 kJ  =>  Tepkimede {koyu:400 kJ} ısı açığa çıkar (“-400 kJ ısı açığa çıkar” ifadesi yanlıştır!)."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Standart koşullarda ΔH°_f[CH4(g)] = -75 kJ/mol, ΔH°_f[CO2(g)] = -394 kJ/mol ve ΔH°_f[H2O(s)] = -286 kJ/mol olduğuna göre:\nCH4(g) + 2O2(g) -> CO2(g) + 2H2O(s) tepkimesinin standart entalpi değişimi (ΔH°) kaç kJ’dür?",
+   "cevap": "O2(g) kararlı element olduğundan ΔH°_f[O2(g)] = 0’dır.\nΔH°_tepkime = [ΔH°_f(CO2) + 2 . ΔH°_f(H2O)] - [ΔH°_f(CH4) + 2 . ΔH°_f(O2)]\nΔH°_tepkime = [-394 + 2 . (-286)] - [-75 + 0] = (-394 - 572) + 75 = -966 + 75 = {koyu:-891 kJ} bulunur."
+  },
+  {
+   "soru": "CaCO3(k) -> CaO(k) + CO2(g) tepkimesinin standart entalpi değişimi ΔH° = +178 kJ’dür. ΔH°_f[CaO(k)] = -635 kJ/mol ve ΔH°_f[CO2(g)] = -394 kJ/mol olduğuna göre CaCO3(k) katısının standart molar oluşum entalpisi kaç kJ/mol’dür?",
+   "cevap": "ΔH°_tepkime = [ΔH°_f(CaO) + ΔH°_f(CO2)] - [ΔH°_f(CaCO3)]\n+178 = [-635 + (-394)] - ΔH°_f(CaCO3)\n178 = -1029 - ΔH°_f(CaCO3) => ΔH°_f(CaCO3) = -1029 - 178 = {koyu:-1207 kJ/mol} bulunur."
+  },
+  {
+   "soru": "N2(g) + 3H2(g) -> 2NH3(g) tepkimesinde ΔH° = -92 kJ olduğuna göre NH3(g) gazının standart molar oluşum entalpisi (ΔH°_f) kaç kJ/mol’dür?",
+   "cevap": "N2(g) ve H2(g) kararlı element olduğundan oluşum entalpileri sıfırdır. Denklemde 2 mol NH3 oluştuğuna dikkat edelim:\nΔH°_tepkime = 2 . ΔH°_f(NH3) - 0 = -92 kJ => {koyu:ΔH°_f[NH3(g)] = -46 kJ/mol} bulunur."
+  },
+  {
+   "soru": "C3H8(g) + 5O2(g) -> 3CO2(g) + 4H2O(g) tepkimesinde ΔH°_f[C3H8(g)] = -104 kJ/mol, ΔH°_f[CO2(g)] = -394 kJ/mol ve ΔH°_f[H2O(g)] = -242 kJ/mol’dür. 22 gram C3H8 gazı yeterince O2 ile yakıldığında kaç kJ ısı açığa çıkar? (C3H8 = 44 g/mol)",
+   "cevap": "Önce 1 mol C3H8’in yanma entalpisini bulalım:\nΔH° = [3.(-394) + 4.(-242)] - [-104 + 0] = (-1182 - 968) + 104 = -2150 + 104 = -2046 kJ/mol.\n22 gram C3H8, n = {kesir:22|44} = 0,5 mol’dür. 1 mol yandığında 2046 kJ ısı açığa çıkıyorsa, 0,5 mol yandığında 2046 . 0,5 = {koyu:1023 kJ ısı açığa çıkar}."
+  },
+  {
+   "soru": "Aşağıdaki tepkimelerden hangisinin standart entalpi değişimi doğrudan ürünün standart molar oluşum entalpisine (ΔH°_f) eşittir?\nI. 2H2(g) + O2(g) -> 2H2O(s)\nII. C(elmas) + O2(g) -> CO2(g)\nIII. 1/2 N2(g) + O2(g) -> NO2(g)",
+   "cevap": "I. tepkimede 2 mol ürün oluştuğu için ΔH° = 2.ΔH°_f olur. II. tepkimede karbonun en kararlı allotropu grafit yerine elmas kullanıldığı için oluşum entalpisi değildir. {koyu:Yalnızca III. tepkimede} 1 mol bileşik kendi kararlı elementlerinden oluştuğu için ΔH° = ΔH°_f[NO2(g)] olur."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Aşağıdaki maddelerden hangisinin standart koşullarda (25 °C, 1 atm) molar oluşum entalpisi (ΔH°_f) sıfır kabul edilir?",
+   "secenekler": [
+    "C(elmas, k)",
+    "O3(g)",
+    "H2O(s)",
+    "Br2(s)",
+    "I2(g)"
+   ],
+   "dogru": 3,
+   "aciklama": "Standart koşullarda bromun en kararlı hâli sıvı (Br2(s)), iyodun katı (I2(k)), karbonun grafit ve oksijenin O2(g) hâlidir. Bu nedenle yalnızca Br2(s) için ΔH°_f = 0’dır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "2SO2(g) + O2(g) -> 2SO3(g) tepkimesinde ΔH°_f[SO2(g)] = -297 kJ/mol ve ΔH°_f[SO3(g)] = -396 kJ/mol olduğuna göre bu tepkimenin standart entalpi değişimi (ΔH°) kaç kJ’dür?",
+   "secenekler": [
+    "-198",
+    "-99",
+    "+99",
+    "+198",
+    "-693"
+   ],
+   "dogru": 0,
+   "aciklama": "ΔH° = 2 . ΔH°_f(SO3) - [2 . ΔH°_f(SO2) + 0] = 2.(-396) - 2.(-297) = -792 + 594 = -198 kJ bulunur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Aşağıdaki tepkimelerden hangisinin standart entalpi değişimi ürünün standart molar oluşum entalpisine (ΔH°_f) eşittir?",
+   "secenekler": [
+    "CO(g) + 1/2 O2(g) -> CO2(g)",
+    "N2(g) + 3H2(g) -> 2NH3(g)",
+    "C(grafit) + 2H2(g) -> CH4(g)",
+    "H+(suda) + OH-(suda) -> H2O(s)",
+    "CaO(k) + CO2(g) -> CaCO3(k)"
+   ],
+   "dogru": 2,
+   "aciklama": "C(grafit) + 2H2(g) -> CH4(g) tepkimesinde 1 mol CH4 bileşiği kendi elementlerinin en kararlı hâllerinden oluşmaktadır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Fe2O3(k) + 3CO(g) -> 2Fe(k) + 3CO2(g) tepkimesinde ΔH° = -25 kJ’dür. ΔH°_f[CO(g)] = -110 kJ/mol ve ΔH°_f[CO2(g)] = -394 kJ/mol olduğuna göre Fe2O3(k) katısının standart molar oluşum entalpisi kaç kJ/mol’dür?",
+   "secenekler": [
+    "-827",
+    "-877",
+    "-510",
+    "+827",
+    "-284"
+   ],
+   "dogru": 0,
+   "aciklama": "Fe(k) için ΔH°_f = 0’dır. ΔH° = [0 + 3.(-394)] - [ΔH°_f(Fe2O3) + 3.(-110)] => -25 = -1182 - ΔH°_f(Fe2O3) + 330 => -25 = -852 - ΔH°_f(Fe2O3) => ΔH°_f(Fe2O3) = -827 kJ/mol."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Standart molar oluşum entalpisi ΔH°_f[H2O(s)] = -286 kJ/mol iken, 9 gram H2O(s) elementlerinden oluşurken kaç kJ ısı açığa çıkar? (H2O = 18 g/mol)",
+   "secenekler": [
+    "71,5",
+    "143",
+    "286",
+    "429",
+    "572"
+   ],
+   "dogru": 1,
+   "aciklama": "9 gram su n = 9 / 18 = 0,5 mol’dür. 1 mol su oluşurken 286 kJ ısı açığa çıktığına göre 0,5 mol oluşurken 286 . 0,5 = 143 kJ ısı açığa çıkar."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "Termokimyada standart koşullar 0 °C sıcaklık ve 1 atm basınç olarak kabul edilir.",
+     "dogru": false,
+     "aciklama": "Yanlıştır; termokimyada standart koşullar 25 °C (298 K) sıcaklık ve 1 atm basınçtır (0 °C gazlarda NŞA’dır)."
+    },
+    {
+     "metin": "Standart koşullarda O2(g) molekülünün oluşum entalpisi sıfır iken, allotropu olan O3(g) molekülünün oluşum entalpisi sıfırdan farklıdır.",
+     "dogru": true,
+     "aciklama": "Yalnızca en kararlı allotropun (O2(g)) oluşum entalpisi sıfır kabul edilir."
+    },
+    {
+     "metin": "Bir kimyasal tepkimenin standart entalpi değişimi ΔH° = Σ ΔH°_f(Girenler) - Σ ΔH°_f(Ürünler) formülüyle hesaplanır.",
+     "dogru": false,
+     "aciklama": "Yanlıştır; her zaman Ürünler eksi Girenler (Σ ΔH°_f(Ürünler) - Σ ΔH°_f(Girenler)) şeklinde hesaplanır."
+    },
+    {
+     "metin": "Aynı bileşiğin gaz hâlinin standart oluşum entalpisi, sıvı hâlinin standart oluşum entalpisinden daha büyüktür (daha az negatiftir).",
+     "dogru": true,
+     "aciklama": "Sıvıdan gaza geçiş endotermik olduğu için gaz hâlin potansiyel enerjisi (entalpisi) sıvı hâlden daha yüksektir."
+    },
+    {
+     "metin": "Denkleştirilmiş bir tepkimede yer alan bileşiklerin katsayıları, oluşum entalpisi hesabında o bileşiğin ΔH°_f değeri ile çarpılır.",
+     "dogru": true,
+     "aciklama": "Entalpi madde miktarına (mol sayısına) bağlı bir büyüklüktür."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "soru": "Aşağıdaki termokimyasal ifadeleri ve maddeleri doğru karşılıklarıyla eşleştiriniz.",
+   "ciftler": [
+    [
+     "25 °C (298 K) ve 1 atm",
+     "Termokimyasal standart koşullar"
+    ],
+    [
+     "C(grafit, k) ve O2(g)",
+     "ΔH°_f = 0 kJ/mol kabul edilen kararlı elementler"
+    ],
+    [
+     "Σ n.ΔH°_f(Ürünler) - Σ m.ΔH°_f(Girenler)",
+     "Standart tepkime entalpisi bağıntısı"
+    ],
+    [
+     "1 mol bileşiğin kararlı elementlerinden sentez ısı değişimi",
+     "Standart molar oluşum entalpisi"
+    ],
+    [
+     "ΔH° < 0",
+     "Ekzotermik (ısı veren) tepkime"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+   "cumleler": [
+    {
+     "metin": "Standart koşullarda 1 mol bileşiğin kendi kararlı elementlerinden oluşması sırasındaki ısı değişimine standart molar ___ entalpisi denir.",
+     "cevap": "oluşum"
+    },
+    {
+     "metin": "Karbon elementinin standart koşullarda oluşum entalpisi sıfır kabul edilen en kararlı allotropu ___ formudur.",
+     "cevap": "grafit"
+    },
+    {
+     "metin": "Tepkime entalpisi hesaplanırken ___ standart oluşum entalpileri toplamından girenlerin standart oluşum entalpileri toplamı çıkarılır.",
+     "cevap": "ürünlerin"
+    },
+    {
+     "metin": "Ürünlerin standart oluşum entalpileri toplamı girenlerinkinden küçükse tepkime ___ karakterlidir.",
+     "cevap": "ekzotermik"
+    },
+    {
+     "metin": "Bir bileşiğin oluşum entalpisi, bileşiğin katı, sıvı veya gaz gibi ___ hâline bağlı olarak değişir.",
+     "cevap": "fiziksel"
+    }
+   ],
+   "fazla": [
+    "elmas",
+    "endotermik"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "C2H4(g) + 3O2(g) -> 2CO2(g) + 2H2O(s) tepkimesinde ΔH°_f[C2H4(g)] = +52 kJ/mol, ΔH°_f[CO2(g)] = -394 kJ/mol ve ΔH°_f[H2O(s)] = -286 kJ/mol olduğuna göre tepkimenin standart entalpi değişimini (ΔH°) adım adım hesaplayınız.",
+   "ipuclari": [
+    "1. İpucu: Ürünlerdeki 2 mol CO2 ve 2 mol H2O’nun oluşum entalpileri toplamını bulunuz.",
+    "2. İpucu: Girenlerdeki O2(g) için 0, C2H4(g) için +52 kJ/mol yazarak Ürünler - Girenler işlemini yapınız."
+   ],
+   "cevap": "1. Adım (Ürünlerin toplam oluşum entalpisi): Σ ΔH°_f(Ürünler) = 2 . ΔH°_f[CO2(g)] + 2 . ΔH°_f[H2O(s)] = 2 . (-394) + 2 . (-286) = -788 - 572 = -1360 kJ.\n2. Adım (Girenlerin toplam oluşum entalpisi): O2(g) kararlı element olduğundan ΔH°_f[O2(g)] = 0’dır. Σ ΔH°_f(Girenler) = 1 . (+52) + 3 . 0 = +52 kJ.\n3. Adım (Tepkime entalpisi): ΔH°_tepkime = Σ ΔH°_f(Ürünler) - Σ ΔH°_f(Girenler) = -1360 - (+52) = -1412 kJ bulunur."
+  }
+ ]
+}
