@@ -1763,3 +1763,115 @@ Konu özetinin tamamı: https://derskutusu.com/ozet/12-temel-dini-bilgiler-5
 
 #derskutusu #12sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #tyt #ayt
 ```
+
+### `bilgi-5-arapca-6` — 5. Sınıf · arapca · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-5-arapca-6.png` (`public/sosyal/bilgi-5-arapca-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/5-arapca-6
+- **Metin:**
+```text
+Arapçada Tanışma ve Selamlaşma Adabı
+
+Arapçada iletişim es-selâmu kable’l-kelâm ilkesiyle başlar; mâ ismuke, keyfe hâluke ve hel ente kalıplarıyla tanışma diyaloğu kurulur.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/5-arapca-6
+
+#derskutusu #5sınıf #arapça #konuözeti #dersnotu #meb #ortaokul
+```
+
+### `bilgi-5-kuran-i-kerim-6` — 5. Sınıf · kuran-i-kerim · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-5-kuran-i-kerim-6.png` (`public/sosyal/bilgi-5-kuran-i-kerim-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/5-kuran-i-kerim-6
+- **Metin:**
+```text
+Kur’an Harflerini Üstün, Esre ve Ötre İle Okuma
+
+Kur’an harfleri üstün, esre ve ötre harekeleriyle seslendirilirken harfin ince, kalın veya peltek özelliğine dikkat edilir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/5-kuran-i-kerim-6
+
+#derskutusu #5sınıf #kuranıkerim #konuözeti #dersnotu #meb #ortaokul
+```
+
+### `bilgi-5-peygamberimizin-hayati-6` — 5. Sınıf · peygamberimizin-hayati · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-5-peygamberimizin-hayati-6.png` (`public/sosyal/bilgi-5-peygamberimizin-hayati-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/5-peygamberimizin-hayati-6
+- **Metin:**
+```text
+Fil Vakası, Fil Suresi ve Kutlu Doğum
+
+Allah (cc) Fil Vakası’nda Kâbe’yi ebâbîl kuşlarıyla korumuş; aynı yıl (571) âlemlere rahmet olan Hz. Muhammed (sav) dünyaya gelmiştir.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/5-peygamberimizin-hayati-6
+
+#derskutusu #5sınıf #peygamberimizinhayatı #konuözeti #dersnotu #meb #ortaokul
+```
+
+### `bilgi-5-temel-dini-bilgiler-6` — 5. Sınıf · temel-dini-bilgiler · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-5-temel-dini-bilgiler-6.png` (`public/sosyal/bilgi-5-temel-dini-bilgiler-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/5-temel-dini-bilgiler-6
+- **Metin:**
+```text
+Günlük Hayatta Mümin Kimliği: Doğruluk ve Emanet
+
+Mümin kimliği kalpteki imanın doğruluk (sıdk), emanet bilinci, selamlaşma ve güzel ahlak olarak günlük hayata yansımasıdır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/5-temel-dini-bilgiler-6
+
+#derskutusu #5sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #ortaokul
+```
+
+### `bilgi-6-arapca-6` — 6. Sınıf · arapca · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-6-arapca-6.png` (`public/sosyal/bilgi-6-arapca-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/6-arapca-6
+- **Metin:**
+```text
+Arapçada Meslekler ve Şemsî-Kamerî Harfler
+
+Arapçada meslek ve çalışma yeri mâ mihnetuhû ve ya’melu fî ile anlatılır; el takısı şemsî ve kamerî harflere göre okunur.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/6-arapca-6
+
+#derskutusu #6sınıf #arapça #konuözeti #dersnotu #meb #ortaokul
+```
+
+### `bilgi-6-kuran-i-kerim-6` — 6. Sınıf · kuran-i-kerim · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-6-kuran-i-kerim-6.png` (`public/sosyal/bilgi-6-kuran-i-kerim-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/6-kuran-i-kerim-6
+- **Metin:**
+```text
+Namazda Okunan Salli ve Bârik Duaları
+
+Salli ve Bârik duaları namazların son oturuşunda okunan, Hz. Muhammed (sav) ve ailesine rahmet ve bereket dileyen salavat dualarıdır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/6-kuran-i-kerim-6
+
+#derskutusu #6sınıf #kuranıkerim #konuözeti #dersnotu #meb #ortaokul
+```
+
+### `bilgi-6-peygamberimizin-hayati-6` — 6. Sınıf · peygamberimizin-hayati · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-6-peygamberimizin-hayati-6.png` (`public/sosyal/bilgi-6-peygamberimizin-hayati-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/6-peygamberimizin-hayati-6
+- **Metin:**
+```text
+Gençlik Yıllarında Peygamberimizin Ahlakı
+
+Peygamberimiz (sav) gençlik yıllarında iffeti, dürüst ticareti, Hilfü’l-Fudûl üyeliği ve Kâbe hakemliğiyle El-Emîn sıfatını kazanmıştır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/6-peygamberimizin-hayati-6
+
+#derskutusu #6sınıf #peygamberimizinhayatı #konuözeti #dersnotu #meb #ortaokul
+```
+
+### `bilgi-6-temel-dini-bilgiler-6` — 6. Sınıf · temel-dini-bilgiler · 6. Hafta
+- **Görsel:** `public/sosyal/bilgi-6-temel-dini-bilgiler-6.png` (`public/sosyal/bilgi-6-temel-dini-bilgiler-6.jpg`)
+- **Bağlantı:** https://derskutusu.com/ozet/6-temel-dini-bilgiler-6
+- **Metin:**
+```text
+İman-Ahlak Bütünlüğü ve Mümin Kimliğinin İlkeleri
+
+Mümin kimliği; iman, ibadet ve ihsan bütünlüğü içinde emanete sadakat ve kardeşlik ahlakını günlük hayatta yaşatmaktır.
+
+Konu özetinin tamamı: https://derskutusu.com/ozet/6-temel-dini-bilgiler-6
+
+#derskutusu #6sınıf #temeldinibilgiler #konuözeti #dersnotu #meb #ortaokul
+```
