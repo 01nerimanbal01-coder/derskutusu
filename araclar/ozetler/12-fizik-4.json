@@ -1,0 +1,210 @@
+{
+ "ad": "12. Sınıf Fizik — 4. Hafta Konu Anlatımı",
+ "sinif": 12,
+ "ders": "fizik",
+ "ders_adi": "Fizik",
+ "hafta": 4,
+ "tarih": "5-9 Ekim 2026",
+ "yayin_tarihi": "2026-10-17",
+ "unite": "1. ÜNİTE: ÇEMBERSEL HAREKET",
+ "konu": "Açısal Momentum, Açısal İvme, Tork-Açısal Momentum İlişkisi ve Açısal Momentumun Korunumu",
+ "ciktilar": [
+  "12.1.3.1. Açısal momentumun fiziksel bir nicelik olarak anlamını açıklar; çizgisel momentum, eylemsizlik momenti ve açısal hız ile ilişkisini kurar.",
+  "12.1.3.2. Açısal ivme ve tork kavramlarını kullanarak dönme hareketinin dinamiğini yorumlar ve tork ile açısal momentum değişimi arasındaki bağıntıyı analiz eder.",
+  "12.1.3.3. Açısal momentumun korunumunu günlük hayattan ve astronomiden örneklerle (buz patencisi, kule tramplen atlayıcısı, gezegen hareketleri) açıklar ve ilgili hesaplamaları yapar."
+ ],
+ "giris": "Bir buz patencisinin kolları açıkken kendi etrafında döndüğünü, ardından kollarını göğsüne doğru hızla kapattığında hiçbir dış destek almadan çok daha yüksek bir açısal hızla dönmeye başladığını mutlaka görmüşsünüzdür. Benzer şekilde Dünya, Güneş etrafındaki eliptik yörüngesinde Güneş'e yaklaştığı kış aylarında neden daha hızlı hareket eder? Doğrusal hareketteki çizgisel momentumun dönme hareketindeki karşılığı olan 'açısal momentum' nedir ve hangi şartlarda korunur? Bu hafta çembersel ve dönme hareketinin en temel dinamik yasaları olan açısal momentum, açısal ivme, net tork etkisi ve açısal momentumun korunumu ilkelerini inceleyeceğiz.",
+ "ozet": [
+  "Sabit bir eksen veya nokta etrafında dönen cisimlerin sahip olduğu çizgisel momentumun dönme eksenine göre torkuna (momentine) 'açısal momentum' denir; $\\vec{L}$ sembolü ile gösterilen vektörel bir büyüklüktür ve SI birimi $\\text{kg}\\cdot\\text{m}^2/\\text{s}$ veya $\\text{J}\\cdot\\text{s}$'dir.",
+  "Açısal momentumun büyüklüğü çizgisel momentum ($P = m \\cdot v$) cinsinden $L = r \\cdot P = m \\cdot v \\cdot r$ bağıntısıyla; eylemsizlik momenti ($I = m \\cdot r^2$) ve açısal hız ($\\omega$) cinsinden ise $L = I \\cdot \\omega$ bağıntısıyla hesaplanır.",
+  "Açısal momentum vektörünün ($\\vec{L}$) yönü 'sağ el kuralı' ile bulunur ve her zaman açısal hız vektörü ($\\vec{\\omega}$) ile aynı yönlü olup dönme düzlemine diktir.",
+  "Birim zamandaki açısal hız değişimine 'açısal ivme' ($\\vec{\\alpha} = \\Delta\\vec{\\omega}/\\Delta t$, birimi $\\text{rad/s}^2$) denir; dönen bir cisme etki eden net tork $\\vec{\\tau}_{\\text{net}} = I \\cdot \\vec{\\alpha} = \\Delta\\vec{L}/\\Delta t$ bağıntısıyla ifade edilir.",
+  "Dönen bir sisteme dışarıdan etki eden net tork sıfır ise ($\\vec{\\tau}_{\\text{dış}} = 0$), sistemin açısal momentumu hem büyüklük hem de yön olarak korunur ($\\vec{L}_{\\text{ilk}} = \\vec{L}_{\\text{son}} \\Rightarrow I_1 \\cdot \\omega_1 = I_2 \\cdot \\omega_2$).",
+  "Net dış torkun sıfır olduğu bir sistemde kütle dönme eksenine yaklaştırılırsa eylemsizlik momenti ($I$) azalır; açısal momentum ($L$) sabit kaldığı için açısal hız ($\\omega$) ve dönme kinetik enerjisi ($E_d = L^2 / 2I$) artar."
+ ],
+ "bolumler": [
+  {
+   "baslik": "1. Açısal Momentum Kavramı ve Temel Bağıntıları",
+   "metin": [
+    "Doğrusal bir yörüngede $v$ hızıyla hareket eden $m$ kütleli bir cismin hareket miktarının ölçüsü çizgisel momentumdur ($\\vec{P} = m \\cdot \\vec{v}$). Cisim sabit bir $O$ noktası veya dönme ekseni etrafında $r$ yarıçaplı çembersel bir yörüngede döndüğünde ise, çizgisel momentum vektörünün dönme merkezine göre torku 'açısal momentum' olarak tanımlanır. Açısal momentum $\\vec{L}$ sembolü ile gösterilir, vektörel bir büyüklüktür ve vektörel çarpım olarak $\\vec{L} = \\vec{r} \\times \\vec{P}$ şeklinde ifade edilir.",
+    "Çembersel harekette konum vektörü ($\\vec{r}$) ile çizgisel hız ve çizgisel momentum vektörü ($\\vec{P}$) birbirine daima dik ($90^\\circ$) olduğundan, noktasal bir cismin açısal momentumunun büyüklüğü:\n$$L = r \\cdot P = m \\cdot v \\cdot r$$\nbağıntısıyla bulunur. Çizgisel hız ile açısal hız arasındaki $v = \\omega \\cdot r$ ilişkisi bu denklemde yerine yazılırsa:\n$$L = m \\cdot (\\omega \\cdot r) \\cdot r = (m \\cdot r^2) \\cdot \\omega$$\nelde edilir. Geçen hafta öğrendiğimiz üzere $m \\cdot r^2$ ifadesi cismin dönme eksenine göre eylemsizlik momentidir ($I = m \\cdot r^2$). Böylece katı cisimler ve tüm dönen sistemler için geçerli olan genel açısal momentum formülüne ulaşılır:\n$$\\vec{L} = I \\cdot \\vec{\\omega}$$",
+    "Uluslararası Birim Sisteminde (SI) açısal momentumun birimi; $L = m \\cdot v \\cdot r$ bağıntısından $\\text{kg}\\cdot\\text{m}^2/\\text{s}$ olarak bulunur. Bu birim aynı zamanda $\\text{N}\\cdot\\text{m}\\cdot\\text{s}$ veya $\\text{Joule}\\cdot\\text{saniye}$ ($\\text{J}\\cdot\\text{s}$) birimine eşdeğerdir."
+   ],
+   "kutu": {
+    "tur": "kavram",
+    "baslik": "Açısal Momentumun Yönü: Sağ El Kuralı",
+    "metin": "Açısal momentum vektörünün ($\\vec{L}$) yönü sağ el kuralı ile belirlenir: Sağ elin dört parmağı cismin dönme yönünü (çizgisel hız $\\vec{v}$ yönünü) gösterecek ve avuç içi dönme merkezine ($O$) bakacak şekilde tutulduğunda, dört parmağa dik olarak açılan başparmak açısal momentum vektörünün ($\\vec{L}$) yönünü gösterir. $\\vec{L}$ vektörü ile açısal hız vektörü ($\\vec{\\omega}$) daima aynı yönlüdür ve dönme düzlemine diktir."
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#38bdf8\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">AÇISAL MOMENTUM (L) BAĞINTILARI VE SAĞ EL KURALI</text><rect x=\"25\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#0284c7\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#0284c7\"/><text x=\"195\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Açısal Momentum Formülleri</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Vektörel büyüklüktür, L ile gösterilir</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• SI birimi: kg·m²/s veya J·s (N·m·s)</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Çizgisel momentumla: L = r · p = m · v · r</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Eylemsizlik momentiyle: L = I · ω</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• v = ω · r ve I = m · r² bağıntıları birbirine</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  dönüştürülerek tüm dönen sistemlere uygulanır</text><rect x=\"395\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#10b981\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#10b981\"/><text x=\"565\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Açısal Momentumun Yönü (Sağ El Kuralı)</text><text x=\"407\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Dört parmak: Dönme yönünü (ω ve v) gösterir</text><text x=\"407\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• Avuç içi: Dönme merkezine (O noktasına) bakar</text><text x=\"407\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Açılan başparmak: Açısal momentumun (L) yönüdür</text><text x=\"407\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• L vektörü, dönme düzlemine daima diktir</text><text x=\"407\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Açısal hız (ω) ile açısal momentum (L)</text><text x=\"407\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  her zaman aynı yönlüdür</text></svg>"
+  },
+  {
+   "baslik": "2. Açısal İvme ve Tork - Açısal Momentum İlişkisi",
+   "metin": [
+    "Düzgün çembersel harekette cismin açısal hızının büyüklüğü sabittir. Ancak dönen bir tekerleğe veya diske dönme eksenine göre sıfırdan farklı bir net tork ($\\vec{\\tau}_{\\text{net}} \\neq 0$) uygulanırsa, cismin açısal hızı zamanla artar veya azalır. Birim zamandaki açısal hız değişimine 'açısal ivme' denir, $\\vec{\\alpha}$ (alfa) ile gösterilir ve SI birimi $\\text{radyan/saniye}^2$ ($\\text{rad/s}^2$)dir:\n$$\\vec{\\alpha} = \\frac{\\Delta\\vec{\\omega}}{\\Delta t}$$",
+    "Yarıçapı $r$ olan bir yörüngede dönen noktanın teğetsel (çizgisel) ivmesi ($a$) ile açısal ivmesi ($\\alpha$) arasında $\\Delta v = \\Delta\\omega \\cdot r$ bağıntısından dolayı $a = \\alpha \\cdot r$ ilişkisi vardır. Newton'un ikinci hareket yasası olan $F_{\\text{net}} = m \\cdot a$ ifadesinin her iki tarafı $r$ ile çarpılırsa:\n$$F_{\\text{net}} \\cdot r = m \\cdot (\\alpha \\cdot r) \\cdot r \\implies \\tau_{\\text{net}} = (m \\cdot r^2) \\cdot \\alpha \\implies \\vec{\\tau}_{\\text{net}} = I \\cdot \\vec{\\alpha}$$\nelde edilir. Bu bağıntı, dönme hareketinin temel dinamik denklemi olup doğrusal hareketteki $\\vec{F}_{\\text{net}} = m \\cdot \\vec{a}$ yasasının tam karşılığıdır.",
+    "Diğer taraftan doğrusal harekette net kuvvetin birim zamandaki çizgisel momentum değişimine eşit olması ($\\vec{F}_{\\text{net}} = \\Delta\\vec{P}/\\Delta t$) gibi, dönme hareketinde de sisteme etki eden net dış tork, birim zamandaki açısal momentum değişimine eşittir:\n$$\\vec{\\tau}_{\\text{net}} = I \\cdot \\frac{\\Delta\\vec{\\omega}}{\\Delta t} = \\frac{\\Delta(I \\cdot \\vec{\\omega})}{\\Delta t} = \\frac{\\Delta\\vec{L}}{\\Delta t}$$\nBuradan $\\vec{\\tau}_{\\text{net}} \\cdot \\Delta t = \\Delta\\vec{L} = \\vec{L}_{\\text{son}} - \\vec{L}_{\\text{ilk}}$ sonucuna ulaşılır. Eğer uygulanan net tork açısal hız vektörüyle aynı yönlü ise cismin açısal momentumu artar; zıt yönlü ise (örneğin dönen tekerleğe fren yapıldığında) açısal momentumu azalır."
+   ],
+   "kutu": {
+    "tur": "onemli",
+    "baslik": "Açısal İvmenin Yönü",
+    "metin": "Dönen bir cisim hızlanıyorsa açısal ivme vektörü ($\\vec{\\alpha}$) ve net tork vektörü ($\\vec{\\tau}_{\\text{net}}$), açısal hız vektörü ($\\vec{\\omega}$) ile aynı yönlüdür. Eğer dönen cisim yavaşlıyorsa $\\vec{\\alpha}$ ve $\\vec{\\tau}_{\\text{net}}$ vektörleri, açısal hız vektörü ($\\vec{\\omega}$) ile zıt yönlüdür."
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#f59e0b\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">TORK - AÇISAL İVME VE AÇISAL MOMENTUM İLİŞKİSİ</text><rect x=\"25\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#d97706\"/><text x=\"195\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Net Tork ve Açısal İvme (α)</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Açısal ivme (α): Birim zamandaki açısal hız</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  değişimidir -> α = Δω / Δt (rad/s²)</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Çizgisel ivme ile ilişkisi: a = α · r</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Dönme hareketinin temel dinamiği: τ_net = I · α</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Net tork sıfırdan farklıysa cisim açısal</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  ivme kazanır (hızlanır veya yavaşlar)</text><rect x=\"395\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#8b5cf6\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#8b5cf6\"/><text x=\"565\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Tork ve Açısal Momentum Değişimi</text><text x=\"407\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Çizgisel harekette: F_net = ΔP / Δt</text><text x=\"407\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• Dönme hareketinde: τ_net = ΔL / Δt</text><text x=\"407\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Birim zamandaki açısal momentum değişimi</text><text x=\"407\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  sisteme etkiyen net dış torka eşittir</text><text x=\"407\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Tork açısal hızla aynı yönlüyse L artar,</text><text x=\"407\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  zıt yönlüyse L azalır</text></svg>"
+  },
+  {
+   "baslik": "3. Açısal Momentumun Korunumu Yasası",
+   "metin": [
+    "Tork ile açısal momentum değişimi arasındaki $\\vec{\\tau}_{\\text{net}} = \\Delta\\vec{L} / \\Delta t$ bağıntısında, eğer sisteme dışarıdan etki eden net tork sıfır ise ($\\vec{\\tau}_{\\text{dış}} = 0$), açısal momentumdaki değişim de sıfır olur ($\\Delta\\vec{L} = 0$). Bu durumda sistemin ilk açısal momentumu ile son açısal momentumu hem büyüklük hem de yön bakımından birbirine eşit kalır. Fizikte bu temel ilkeye 'Açısal Momentumun Korunumu Yasası' denir:\n$$\\vec{\\tau}_{\\text{dış}} = 0 \\implies \\vec{L}_{\\text{ilk}} = \\vec{L}_{\\text{son}} \\implies I_1 \\cdot \\omega_1 = I_2 \\cdot \\omega_2$$",
+    "Bu eşitlik bize çok önemli bir fiziksel sonuç verir: Net dış torkun sıfır olduğu kapalı bir sistemde, sistemin kütle dağılımı değiştirilerek eylemsizlik momenti ($I$) azaltılırsa, açısal momentumun ($L$) sabit kalabilmesi için açısal hız ($\\omega$) aynı oranda artar; tersine eylemsizlik momenti ($I$) artırılırsa açısal hız ($\\omega$) azalır. Periyot ($T$) ve frekans ($f$) açısından bakıldığında ise $\\omega = 2\\pi f = 2\\pi / T$ olduğundan, $I$ azaldığında dönüş frekansı ($f$) artar ve dönüş periyodu ($T$) kısalır.",
+    "Dikkat edilmesi gereken çok önemli bir nokta da açısal momentumun korunduğu süreçte 'dönme kinetik enerjisinin' nasıl değiştiğidir. Dönme kinetik enerjisi $E_d = \\frac{1}{2} I \\omega^2$ bağıntısında $L = I \\cdot \\omega$ yazılırsa:\n$$E_d = \\frac{1}{2} (I \\cdot \\omega) \\cdot \\omega = \\frac{1}{2} L \\cdot \\omega = \\frac{L^2}{2I}$$\nelde edilir. Dolayısıyla $L$ sabit iken eylemsizlik momenti ($I$) azaltılırsa ($\\omega$ artarsa), sistemin dönme kinetik enerjisi ($E_d$) artar! Bu ekstra enerji yoktan var olmamış; sistem içindeki iç kuvvetlerin (örneğin kollarını kendisine çeken sporcunun kaslarının) yaptığı işten kaynaklanmıştır."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Sınav İpucu: L Korunurken Hangi Nicelikler Değişir?",
+    "metin": "Kollarını kapatan bir buz patencisinde dış tork sıfır olduğu için:\n• Açısal momentum ($\\vec{L}$): DEĞİŞMEZ (hem yönü hem büyüklüğü korunur).\n• Eylemsizlik momenti ($I$): AZALIR (kütle dönme eksenine yaklaştığı için).\n• Açısal hız ($\\omega$) ve frekans ($f$): ARTAR.\n• Dönme periyodu ($T$): AZALIR.\n• Dönme kinetik enerjisi ($E_d = \\frac{1}{2}L\\omega$): ARTAR."
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#a855f7\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">AÇISAL MOMENTUMUN KORUNUMU (τ_dış = 0)</text><rect x=\"25\" y=\"50\" width=\"225\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#6366f1\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"225\" height=\"32\" rx=\"12\" fill=\"#6366f1\"/><text x=\"137\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Korunum Şartı</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Sisteme etki eden net dış</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  tork sıfırsa: τ_net = 0</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• ΔL = 0 -> L_ilk = L_son</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• I₁ · ω₁ = I₂ · ω₂</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Açısal momentumun büyüklüğü</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  ve yönü sabit kalır</text><rect x=\"268\" y=\"50\" width=\"225\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#ec4899\" stroke-width=\"2\"/><rect x=\"268\" y=\"50\" width=\"225\" height=\"32\" rx=\"12\" fill=\"#ec4899\"/><text x=\"380\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Kollarını Kapatan Patenci</text><text x=\"280\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Kollar kapatıldığında kütle</text><text x=\"280\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  dönme eksenine yaklaşır (r ↓)</text><text x=\"280\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Eylemsizlik momenti azalır (I ↓)</text><text x=\"280\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• L sabit kaldığından açısal</text><text x=\"280\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">  hız artar (ω ↑)</text><text x=\"280\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Dönme kinetik enerjisi artar</text><rect x=\"510\" y=\"50\" width=\"225\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#14b8a6\" stroke-width=\"2\"/><rect x=\"510\" y=\"50\" width=\"225\" height=\"32\" rx=\"12\" fill=\"#14b8a6\"/><text x=\"622\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Gezegenlerin Hareketi</text><text x=\"522\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Kütle çekim kuvveti Güneş</text><text x=\"522\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">  merkezinden geçer (τ = 0)</text><text x=\"522\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Gezegen Güneş'e yaklaşırken:</text><text x=\"522\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">  r azalır -> I azalır -> v ve ω artar</text><text x=\"522\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• L = m · v · r her noktada</text><text x=\"522\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">  korunur ve eşittir</text></svg>"
+  },
+  {
+   "baslik": "4. Günlük Hayatta ve Astronomide Açısal Momentumun Korunumu",
+   "metin": [
+    "Açısal momentumun korunumu hem sporda hem canlılar dünyasında hem de gök mekaniğinde pek çok olayı açıklar:\n1) Buz Patencisi ve Bale Dansçısı: Kolları açıkken dönen patenci, kollarını vücuduna doğru topladığında kütle dönme eksenine yaklaşır ($r$ azalır), eylemsizlik momenti ($I$) küçülür ve açısal hızı ($\\omega$) artar. Durmak istediğinde ise kollarını tekrar açarak $I$'yı büyütür ve yavaşlar.",
+    "2) Tramplen Atlayıcısı ve Cimnastikçiler: Havada takla atarak suya atlayan bir yüzücü, havadayken ağırlık kuvveti doğrudan kütle merkezinden geçtiği için net tork sıfırdır ($\\tau = 0$). Sporcu havada dizlerini karnına çekip top gibi büzüldüğünde $I$ azalır, $\\omega$ artar ve kısa sürede birden fazla takla atabilir; suya girmeden hemen önce vücudunu açarak $I$'yı büyütür, dönüşünü yavaşlatır ve suya dikey olarak girer.",
+    "3) Gezegenlerin ve Uyduların Eliptik Yörünge Hareketi: Gezegenler Güneş etrafında elips şeklindeki yörüngelerde dolanır. Güneş'in gezegene uyguladığı kütle çekim kuvveti daima dönme merkezi olan Güneş'ten geçtiği için tork oluşturmaz ($\\vec{\\tau} = 0$). Bu nedenle gezegenin açısal momentumu ($L = m \\cdot v \\cdot r$) yörüngenin her noktasında korunur. Gezegen Güneş'e yaklaştığında ($r$ azaldığında) çizgisel hızı ($v$) ve açısal hızı ($\\omega$) artar; Güneş'ten uzaklaştığında ($r$ arttığında) hızı azalır.",
+    "4) Kedilerin Dört Ayak Üzerine Düşmesi ve Helikopterler: Kediler düşerken kuyruk ve bacaklarının eylemsizlik momentini değiştirerek toplam açısal momentum sıfır kalacak biçimde gövdelerini döndürüp ayakları üzerine inerler. Helikopterlerde ise üstteki büyük pervanenin dönüşüne zıt yönde gövdenin dönmesini (açısal momentum korunumunu) dengelemek için kuyruk pervanesi kullanılır."
+   ],
+   "kutu": {
+    "tur": "bilgi",
+    "baslik": "Jiroskop ve Topaçların Dengesi",
+    "metin": "Hızla dönen bir topacın, bisiklet tekerleğinin veya uçak ve gemilerde yön bulmak için kullanılan 'jiroskop' cihazlarının devrilmeden dik durabilmesi, açısal momentum vektörünün ($\\vec{L}$) dış bir tork olmadıkça yönünü koruma eğiliminden kaynaklanır."
+   }
+  },
+  {
+   "baslik": "5. Öteleme (Çizgisel) ve Dönme (Açısal) Dinamiği Analojisi",
+   "metin": [
+    "12. sınıf çembersel hareket ünitesindeki tüm dinamik formülleri ezberlemek yerine, doğrusal (öteleme) hareket ile dönme hareketi arasındaki birebir benzeşimi (analojiyi) kurmak problem çözümünü son derece kolaylaştırır.",
+    "Öteleme hareketinde hız değişimine karşı gösterilen direnç 'kütle' ($m$) iken, dönme hareketinde açısal hız değişimine karşı gösterilen direnç 'eylemsizlik momenti'dir ($I = \\sum m \\cdot r^2$). Öteleme hareketinde yer değiştirme $\\Delta x$, çizgisel hız $v$ ve çizgisel ivme $a$ iken; dönme hareketinde bunların karşılığı açısal yer değiştirme $\\Delta\\theta$, açısal hız $\\omega$ ve açısal ivme $\\alpha$'dır.",
+    "Kuvvetin ($\\vec{F}$) dönmedeki karşılığı tork ($\\vec{\\tau}$), çizgisel momentumun ($\\vec{P} = m\\vec{v}$) karşılığı ise açısal momentumdur ($\\vec{L} = I\\vec{\\omega}$). Bu benzeşim sayesinde:\n• $\\vec{F}_{\\text{net}} = m \\cdot \\vec{a} \\longleftrightarrow \\vec{\\tau}_{\\text{net}} = I \\cdot \\vec{\\alpha}$\n• $\\vec{F}_{\\text{net}} \\cdot \\Delta t = \\Delta\\vec{P} \\longleftrightarrow \\vec{\\tau}_{\\text{net}} \\cdot \\Delta t = \\Delta\\vec{L}$\n• $E_{\\text{öteleme}} = \\frac{1}{2} m v^2 = \\frac{P^2}{2m} \\longleftrightarrow E_{\\text{dönme}} = \\frac{1}{2} I \\omega^2 = \\frac{L^2}{2I}$\nbağıntıları birbirinden doğrudan türetilebilir."
+   ],
+   "kutu": {
+    "tur": "onemli",
+    "baslik": "Dünya'nın Buzullarının Erimesi Gün Süresini Nasıl Etkiler?",
+    "metin": "Kutuplardaki buzullar dönme eksenine çok yakındır ($r \\approx 0$). Küresel ısınma sonucu bu buzullar eriyip okyanuslara karışarak Ekvator'a doğru yayıldığında, su kütlesi dönme ekseninden uzaklaşır ($r$ artar). Dünya'nın eylemsizlik momenti ($I$) çok küçük bir miktar artar; açısal momentum ($L = I \\cdot \\omega$) korunduğu için Dünya'nın dönüş açısal hızı ($\\omega$) azalır ve bir günün süresi (periyot $T$) milisaniyeler mertebesinde uzar!"
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 245\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:14px auto;font-family:'Segoe UI',system-ui,sans-serif\"><rect width=\"760\" height=\"245\" rx=\"16\" fill=\"#0f172a\"/><text x=\"380\" y=\"30\" fill=\"#10b981\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">ÖTELEME VE DÖNME DİNAMİĞİ BÜYÜKLÜKLERİNİN ANALOJİSİ</text><rect x=\"25\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#059669\"/><text x=\"195\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Öteleme (Çizgisel) Hareket</text><text x=\"37\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Kütle (Eylemsizlik ölçüsü): m (kg)</text><text x=\"37\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• Çizgisel hız ve ivme: v (m/s), a (m/s²)</text><text x=\"37\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Kuvvet: F = m · a (N)</text><text x=\"37\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Çizgisel momentum: P = m · v (kg·m/s)</text><text x=\"37\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• İtme - Momentum: F · Δt = ΔP</text><text x=\"37\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Öteleme kinetik enerjisi: E_k = (1/2) · m · v²</text><rect x=\"395\" y=\"50\" width=\"340\" height=\"175\" rx=\"12\" fill=\"#1e293b\" stroke=\"#0ea5e9\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"340\" height=\"32\" rx=\"12\" fill=\"#0ea5e9\"/><text x=\"565\" y=\"71\" fill=\"#ffffff\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Dönme (Açısal) Hareket</text><text x=\"407\" y=\"102\" fill=\"#e2e8f0\" font-size=\"11.5\">• Eylemsizlik momenti: I = Σ m·r² (kg·m²)</text><text x=\"407\" y=\"121\" fill=\"#e2e8f0\" font-size=\"11.5\">• Açısal hız ve ivme: ω (rad/s), α (rad/s²)</text><text x=\"407\" y=\"140\" fill=\"#e2e8f0\" font-size=\"11.5\">• Tork (Döndürme etkisi): τ = I · α (N·m)</text><text x=\"407\" y=\"159\" fill=\"#e2e8f0\" font-size=\"11.5\">• Açısal momentum: L = I · ω (kg·m²/s)</text><text x=\"407\" y=\"178\" fill=\"#e2e8f0\" font-size=\"11.5\">• Açısal itme: τ · Δt = ΔL</text><text x=\"407\" y=\"197\" fill=\"#e2e8f0\" font-size=\"11.5\">• Dönme kinetik enerjisi: E_d = (1/2) · I · ω² = L²/(2I)</text></svg>"
+  },
+  {
+   "baslik": "6. Açısal Momentum Uygulamaları ve Problem Çözüm Stratejileri",
+   "metin": [
+    "Açısal momentum problemlerini çözerken şu adımlar izlenmelidir: 1) Öncelikle sistemin noktasal bir cisim mi yoksa belirli bir geometrik şekle sahip katı bir cisim mi (disk, küre, çubuk) olduğu belirlenir. Noktasal cisimlerde $L = m \\cdot v \\cdot r$, katı cisimlerde ise soruda parantez içinde verilen eylemsizlik momenti formülü kullanılarak $L = I \\cdot \\omega$ bağıntısı yazılır.",
+    "2) Dönen bir tabla veya disk üzerine yukarıdan düşey olarak bir oyun hamuru yapıştığında ya da disk üzerindeki bir çocuk merkeze doğru yürüdüğünde sisteme dönme eksenine göre dışarıdan etki eden net tork sıfırdır ($\\tau_{\\text{dış}} = 0$). Bu tür sorularda doğrudan $L_{\\text{ilk}} = L_{\\text{son}}$ yazılarak $(I_{\\text{tabla}} + I_{\\text{çocuk,ilk}}) \\cdot \\omega_{\\text{ilk}} = (I_{\\text{tabla}} + I_{\\text{çocuk,son}}) \\cdot \\omega_{\\text{son}}$ denklemi çözülür.",
+    "3) Birden fazla cismin farklı yönlerde döndüğü sistemlerde açısal momentumun vektörel olduğu unutulmamalı; saat yönü ve saat yönünün tersi için sağ el kuralıyla $(+)$ ve $(-)$ işaretleri belirlenerek vektörel toplam alınmalıdır."
+   ],
+   "kutu": {
+    "tur": "ozet",
+    "baslik": "Bölüm Özeti: Açısal Momentum",
+    "metin": "1. $L = r \\cdot P = m \\cdot v \\cdot r = I \\cdot \\omega$ (Birim: $\\text{kg}\\cdot\\text{m}^2/\\text{s}$ veya $\\text{J}\\cdot\\text{s}$).\n2. $\\vec{L}$ ve $\\vec{\\omega}$ aynı yönlüdür, yönü sağ el kuralıyla bulunur.\n3. $\\vec{\\tau}_{\\text{net}} = I \\cdot \\vec{\\alpha} = \\Delta\\vec{L} / \\Delta t$.\n4. $\\vec{\\tau}_{\\text{dış}} = 0$ ise açısal momentum korunur: $I_1 \\cdot \\omega_1 = I_2 \\cdot \\omega_2$."
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Kütlesi $m = 2\\text{ kg}$ olan noktasal bir cisim, sürtünmesiz yatay düzlemde $r = 3\\text{ m}$ yarıçaplı çembersel yörüngede $v = 4\\text{ m/s}$ sabit çizgisel süratle dolanmaktadır. Cismin dönme merkezine göre eylemsizlik momentini ($I$) ve açısal momentumunun büyüklüğünü ($L$) hesaplayınız.",
+   "cevap": "Noktasal cismin eylemsizlik momenti: $I = m \\cdot r^2 = 2 \\cdot 3^2 = 2 \\cdot 9 = 18\\text{ kg}\\cdot\\text{m}^2$ olur. Açısal momentumun büyüklüğü ise $L = m \\cdot v \\cdot r = 2 \\cdot 4 \\cdot 3 = 24\\text{ kg}\\cdot\\text{m}^2/\\text{s}$ (veya $\\omega = v/r = 4/3\\text{ rad/s}$ olduğundan $L = I \\cdot \\omega = 18 \\cdot (4/3) = 24\\text{ J}\\cdot\\text{s}$) olarak bulunur."
+  },
+  {
+   "soru": "Eylemsizlik momenti $I = 5\\text{ kg}\\cdot\\text{m}^2$ olan başlangıçta durgun bir tekerleğe, dönme eksenine göre sabit $\\tau = 20\\text{ N}\\cdot\\text{m}$ büyüklüğünde net tork $t = 6\\text{ s}$ boyunca uygulanıyor. Tekerleğin açısal ivmesini ($\\alpha$), $6\\text{ s}$ sonundaki açısal hızını ($\\omega$) ve kazandığı açısal momentumu ($L$) bulunuz.",
+   "cevap": "1) $\\tau_{\\text{net}} = I \\cdot \\alpha \\implies 20 = 5 \\cdot \\alpha \\implies \\alpha = 4\\text{ rad/s}^2$.\n2) Başlangıçta durgun olduğundan ($\\omega_0 = 0$), $6\\text{ s}$ sonundaki açısal hızı: $\\omega = \\alpha \\cdot t = 4 \\cdot 6 = 24\\text{ rad/s}$.\n3) Kazandığı açısal momentum: $\\Delta L = \\tau_{\\text{net}} \\cdot \\Delta t = 20 \\cdot 6 = 120\\text{ kg}\\cdot\\text{m}^2/\\text{s}$ (veya $L = I \\cdot \\omega = 5 \\cdot 24 = 120\\text{ kg}\\cdot\\text{m}^2/\\text{s}$)."
+  },
+  {
+   "soru": "Sürtünmesiz düşey bir mil etrafında $\\omega_1 = 6\\text{ rad/s}$ açısal hızla dönen bir buz patencisinin kolları açıkken eylemsizlik momenti $I_1 = 4\\text{ kg}\\cdot\\text{m}^2$'dir. Patenci kollarını göğsüne kapatarak eylemsizlik momentini $I_2 = 1{,}5\\text{ kg}\\cdot\\text{m}^2$ değerine düşürdüğünde yeni açısal hızı ($\\omega_2$) kaç $\\text{rad/s}$ olur? Dönme kinetik enerjisi nasıl değişir?",
+   "cevap": "Dış tork sıfır olduğundan açısal momentum korunur: $L_{\\text{ilk}} = L_{\\text{son}} \\implies I_1 \\cdot \\omega_1 = I_2 \\cdot \\omega_2 \\implies 4 \\cdot 6 = 1{,}5 \\cdot \\omega_2 \\implies 24 = 1{,}5 \\cdot \\omega_2 \\implies \\omega_2 = 16\\text{ rad/s}$ olur. İlk dönme kinetik enerjisi $E_1 = \\frac{1}{2} I_1 \\omega_1^2 = \\frac{1}{2} \\cdot 4 \\cdot 36 = 72\\text{ J}$ iken, son dönme kinetik enerjisi $E_2 = \\frac{1}{2} I_2 \\omega_2^2 = \\frac{1}{2} \\cdot 1{,}5 \\cdot 256 = 192\\text{ J}$ olur; yani dönme kinetik enerjisi artmıştır."
+  },
+  {
+   "soru": "Güneş etrafında eliptik yörüngede dolanan bir gezegenin Güneş'e en yakın olduğu K noktasındaki uzaklığı $r_K = 2R$, en uzak olduğu M noktasındaki uzaklığı ise $r_M = 6R$'dir. Gezegenin K ve M noktalarındaki açısal momentumlarının oranı ($L_K / L_M$) ve çizgisel süratlerinin oranı ($v_K / v_M$) kaçtır?",
+   "cevap": "Kütle çekim kuvveti dönme merkezi olan Güneş'ten geçtiği için gezegene etki eden net dış tork sıfırdır ve açısal momentum her noktada korunur: $L_K = L_M \\implies L_K / L_M = 1$'dir. $L = m \\cdot v \\cdot r$ bağıntısından $m \\cdot v_K \\cdot (2R) = m \\cdot v_M \\cdot (6R) \\implies v_K / v_M = 6 / 2 = 3$ bulunur."
+  },
+  {
+   "soru": "Yatay düzlemde sabit eksen etrafında $\\omega_0 = 10\\text{ rad/s}$ açısal hızla dönen $I_{\\text{disk}} = 8\\text{ kg}\\cdot\\text{m}^2$ eylemsizlik momentli bir diskin kenarına ($r = 1\\text{ m}$), yukarıdan düşey olarak $m = 2\\text{ kg}$ kütleli bir oyun hamuru bırakılıp yapışıyor. Ortak sistemin son açısal hızı kaç $\\text{rad/s}$ olur?",
+   "cevap": "Oyun hamuru düşey olarak bırakıldığı için dönme eksenine göre tork oluşturmaz ve açısal momentum korunur ($L_{\\text{ilk}} = L_{\\text{son}}$). Hamurun diske göre eylemsizlik momenti $I_{\\text{hamur}} = m \\cdot r^2 = 2 \\cdot 1^2 = 2\\text{ kg}\\cdot\\text{m}^2$'dir. Buradan: $I_{\\text{disk}} \\cdot \\omega_0 = (I_{\\text{disk}} + I_{\\text{hamur}}) \\cdot \\omega_{\\text{son}} \\implies 8 \\cdot 10 = (8 + 2) \\cdot \\omega_{\\text{son}} \\implies 80 = 10 \\cdot \\omega_{\\text{son}} \\implies \\omega_{\\text{son}} = 8\\text{ rad/s}$ bulunur."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "dogru_yanlis",
+   "soru": "Dönen bir cismin açısal momentum vektörü ($\\vec{L}$) ile açısal hız vektörü ($\\vec{\\omega}$) her zaman aynı yönlüdür ve dönme düzlemine diktir.",
+   "cevap": "Doğru",
+   "aciklama": "$\\vec{L} = I \\cdot \\vec{\\omega}$ bağıntısında $I$ pozitif skaler bir büyüklük olduğundan $\\vec{L}$ ile $\\vec{\\omega}$ daima aynı yönlüdür."
+  },
+  {
+   "tur": "dogru_yanlis",
+   "soru": "Güneş etrafında eliptik yörüngede dolanan Dünya, Güneş'e yaklaştıkça açısal momentumu artar.",
+   "cevap": "Yanlış",
+   "aciklama": "Kütle çekim kuvveti Güneş merkezinden geçtiği için net tork sıfırdır; bu nedenle Dünya Güneş'e yaklaşırken açısal hızı ve çizgisel hızı artar ancak açısal momentumu ($L$) değişmez (korunur)."
+  },
+  {
+   "tur": "coktan_secmeli",
+   "soru": "Aşağıdakilerden hangisi Uluslararası Birim Sisteminde (SI) açısal momentumun birimlerinden biri DEĞİLDİR?",
+   "secenekler": [
+    "$\\text{kg}\\cdot\\text{m}^2/\\text{s}$",
+    "$\\text{J}\\cdot\\text{s}$",
+    "$\\text{N}\\cdot\\text{m}\\cdot\\text{s}$",
+    "$\\text{kg}\\cdot\\text{m/s}^2$"
+   ],
+   "cevap": "$\\text{kg}\\cdot\\text{m/s}^2$",
+   "aciklama": "$\\text{kg}\\cdot\\text{m/s}^2$ kuvvet birimidir (Newton). Diğer üç seçenek açısal momentum birimidir."
+  },
+  {
+   "tur": "coktan_secmeli",
+   "soru": "Tramplenden havaya sıçrayarak suya atlayan bir yüzücü, havada vücudunu büzerek dizlerini karnına çektiğinde eylemsizlik momenti ($I$), açısal hızı ($\\omega$) ve açısal momentumu ($L$) nasıl değişir?",
+   "secenekler": [
+    "$I$ azalır, $\\omega$ artar, $L$ değişmez",
+    "$I$ artar, $\\omega$ azalır, $L$ değişmez",
+    "$I$ azalır, $\\omega$ artar, $L$ artar",
+    "$I$ değişmez, $\\omega$ artar, $L$ artar"
+   ],
+   "cevap": "$I$ azalır, $\\omega$ artar, $L$ değişmez",
+   "aciklama": "Dış tork sıfır olduğundan açısal momentum ($L$) değişmez; vücut büzüldüğünde kütle dönme merkezine yaklaştığı için $I$ azalır ve $\\omega$ artar."
+  },
+  {
+   "tur": "bosluk_doldurma",
+   "soru": "Dönen bir sisteme etki eden net dış tork, birim zamandaki __________ değişimine eşittir ($\\vec{\\tau}_{\\text{net}} = \\Delta\\vec{L}/\\Delta t$).",
+   "cevap": "açısal momentum",
+   "aciklama": "Birim zamandaki açısal momentum değişimi net dış torka eşittir."
+  },
+  {
+   "tur": "bosluk_doldurma",
+   "soru": "Birim zamandaki açısal hız değişimine __________ denir ve $\\alpha$ sembolü ile gösterilir.",
+   "cevap": "açısal ivme",
+   "aciklama": "Açısal ivme $\\alpha = \\Delta\\omega / \\Delta t$ bağıntısıyla tanımlanır ve birimi $\\text{rad/s}^2$'dir."
+  },
+  {
+   "tur": "eslestirme",
+   "soru": "Aşağıdaki dönme hareketi niceliklerini ilgili formülleriyle eşleştiriniz.",
+   "eslestirmeler": [
+    {
+     "sol": "Açısal Momentum ($L$)",
+     "sag": "$I \\cdot \\omega = m \\cdot v \\cdot r$"
+    },
+    {
+     "sol": "Net Tork ($\\tau_{\\text{net}}$)",
+     "sag": "$I \\cdot \\alpha = \\Delta L / \\Delta t$"
+    },
+    {
+     "sol": "Açısal İvme ($\\alpha$)",
+     "sag": "$\\Delta\\omega / \\Delta t = a / r$"
+    },
+    {
+     "sol": "Dönme Kinetik Enerjisi ($E_d$)",
+     "sag": "$\\frac{1}{2} I \\omega^2 = \\frac{L^2}{2I}$"
+    }
+   ],
+   "aciklama": "Dönme dinamiği formülleri eylemsizlik momenti ($I$) ve açısal hız ($\\omega$) temelinde birbirine bağlıdır."
+  },
+  {
+   "tur": "klasik",
+   "soru": "Kutuplardaki buzulların eriyerek okyanus sularıyla birlikte Ekvator bölgesine doğru yayılması Dünya'nın kendi ekseni etrafındaki dönüş periyodunu (1 günün süresini) nasıl etkiler? Açıklayınız.",
+   "cevap": "Eriyen buzullar Ekvator'a doğru yayıldığında kütle dönme ekseninden uzaklaşır ($r$ artar) ve Dünya'nın eylemsizlik momenti ($I$) artar. Dış tork sıfır olduğundan açısal momentum ($L = I \\cdot \\omega$) korunur; $I$ arttığı için açısal hız ($\\omega$) azalır ve Dünya'nın dönüş periyodu (1 günün süresi) çok küçük bir miktar uzar."
+  }
+ ]
+}
