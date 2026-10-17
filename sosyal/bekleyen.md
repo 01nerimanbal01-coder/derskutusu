@@ -2305,7 +2305,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-tarih-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-tarih-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-tarih-5.png
 
 ```
 Bunu biliyor muydunuz? 18. yüzyılda Osmanlı Devleti Lale Devri’nde kültürel, I. Mahmud ve I. Abdülhamid dönemlerinde ise Batı tarzı askerî-teknik ıslahatlara yönelmiştir.
@@ -2315,7 +2315,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-tefsir-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-tefsir-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-tefsir-5.png
 
 ```
 Bunu biliyor muydunuz? Tefsir ilmi Hz. Peygamber’in beyanıyla başlamış; Sahabe ve Tabiîn döneminde Mekke, Medine ve Kûfe tefsir ekolleriyle kurumsallaşmıştır.
@@ -2325,7 +2325,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-temel-dini-bilgiler-5
-Sıra: 2026-10-17 11:05 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-11-temel-dini-bilgiler-5.png
+Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-temel-dini-bilgiler-5.png
 
 ```
 Bunu biliyor muydunuz? İslam’da aile kurumu meşru nikâh akdi üzerine inşa edilir; huzur, sevgi, merhamet ve karşılıklı hak-sorumluluk bilinciyle korunur.
@@ -2335,7 +2335,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-biyoloji-5
-Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-biyoloji-5.png
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-12-biyoloji-5.png
 
 ```
 Bunu biliyor muydunuz? ATP hücre içinde depolanamaz ve hücreden hücreye aktarılamaz; fosforilasyon çeşitleriyle anlık üretilip tüketilir.
@@ -2345,7 +2345,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-cografya-5
-Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-cografya-5.png
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-12-cografya-5.png
 
 ```
 Bunu biliyor muydunuz? Küresel dış ticarette en ekonomik ulaşım türü deniz yoludur; Süveyş, Panama, Hürmüz ve Malakka su yolları dünya ticaretine yön verir.
@@ -2355,7 +2355,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-din-kulturu-5
-Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-din-kulturu-5.png
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-12-din-kulturu-5.png
 
 ```
 Bunu biliyor muydunuz? Hârizmî, İbn Sînâ, İbnü’l-Heysem, Bîrûnî ve İbn Haldun gibi Müslüman bilginler matematikten tıbba modern bilimin temellerini atmıştır.
@@ -2365,7 +2365,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-edebiyat-5
-Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-edebiyat-5.png
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-12-edebiyat-5.png
 
 ```
 Bunu biliyor muydunuz? Saf şiir anlayışı şiiri soylu bir sanat kabul ederek ahenk, imge ve iç musikiyi her türlü ideolojik söylemin üstünde tutmuştur.
@@ -2375,7 +2375,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-fizik-5
-Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-fizik-5.png
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-12-fizik-5.png
 
 ```
 Bunu biliyor muydunuz? Kütle çekim kuvveti uzaklığın karesiyle ters orantılıdır; Kepler’in periyotlar yasasına göre her gezegen için R³ / T² oranı sabittir.
@@ -2385,7 +2385,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-ingilizce-5
-Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-ingilizce-5.png
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-12-ingilizce-5.png
 
 ```
 Bunu biliyor muydunuz? İngilizcede the + adjective yapısı çoğul bir topluluğu anlatırken toplumsal kurallar modal + be + V3 edilgen yapısıyla ifade edilir.
@@ -2395,7 +2395,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-inkilap-tarihi-5
-Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-inkilap-tarihi-5.png
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-12-inkilap-tarihi-5.png
 
 ```
 Bunu biliyor muydunuz? Millî Mücadele’nin programı Amasya Genelgesi ile çizilmiş, Erzurum ve Sivas kongrelerinde ulusal egemenlik ve tam bağımsızlık kararlaştırılmıştır.
@@ -2405,7 +2405,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-islam-kultur-ve-medeniyeti-5
-Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-5.png
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-5.png
 
 ```
 Bunu biliyor muydunuz? İslam medeniyeti tevhid, ilim, adalet ve vakıf ruhuyla Endülüs’ten Mâverâünnehir’e uzanan geniş havzalarda insanlığa rehberlik etmiştir.
@@ -2415,7 +2415,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kelam-5
-Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-kelam-5.png
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-12-kelam-5.png
 
 ```
 Bunu biliyor muydunuz? Kelam ilminde bilginin üç nesnel kaynağı sağlam duyular, doğru haber ve selim akıldır; varlık ise Kadîm (Allah) ve Hâdis (âlem) olarak ayrılır.
@@ -2425,7 +2425,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kimya-5
-Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-kimya-5.png
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-12-kimya-5.png
 
 ```
 Bunu biliyor muydunuz? Elektrolizde açığa çıkan madde miktarı devreden geçen yükle doğru orantılıdır; metalleri korozyondan korumak için kurban elektrot kullanılır.
@@ -2435,7 +2435,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kuran-i-kerim-5
-Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-kuran-i-kerim-5.png
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-12-kuran-i-kerim-5.png
 
 ```
 Bunu biliyor muydunuz? Kehf Suresi’ndeki Hz. Musa ve Hızır kıssası, ilim yolunda tevazu ve sabrı öğretirken olayların ardındaki ilahi hikmete teslimiyeti vurgular.
@@ -2445,7 +2445,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-matematik-5
-Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-matematik-5.png
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-12-matematik-5.png
 
 ```
 Bunu biliyor muydunuz? Gerçek sayı dizilerinin tanım kümesi pozitif tam sayılardır; sabit, eşit ve indirgemeli diziler genel terim kurallarıyla modellenir.
@@ -2455,7 +2455,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-mesleki-arapca-5
-Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-mesleki-arapca-5.png
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-12-mesleki-arapca-5.png
 
 ```
 Bunu biliyor muydunuz? Mesleki Arapçada nefis tezkiyesi ve güzel ahlak metinleri, kök fiillere harf eklenerek türetilen sülâsî mezîd fiil bâblarıyla kurulur.
@@ -2465,7 +2465,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-peygamberimizin-hayati-5
-Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-peygamberimizin-hayati-5.png
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-12-peygamberimizin-hayati-5.png
 
 ```
 Bunu biliyor muydunuz? Hz. Peygamber (sav) gençlerin potansiyeline güvenerek onları öğretmen, elçi, kadı ve komutan olarak İslam toplumunun ön saflarında görevlendirmiştir.
@@ -2475,7 +2475,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-temel-dini-bilgiler-5
-Sıra: 2026-10-17 11:34 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-12-temel-dini-bilgiler-5.png
+Sıra: 2026-10-17 11:34 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-12-temel-dini-bilgiler-5.png
 
 ```
 Bunu biliyor muydunuz? Tevhid inancı iman ile salih ameli bütünleştirir ve yeryüzünün halifesi olan insana hayatın her alanında ahlaki sorumluluk yükler.
@@ -2485,7 +2485,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-5-arapca-6
-Sıra: 2026-10-17 12:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-5-arapca-6.png
+Sıra: 2026-10-17 12:03 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-5-arapca-6.png
 
 ```
 Bunu biliyor muydunuz? Arapçada iletişim es-selâmu kable’l-kelâm ilkesiyle başlar; mâ ismuke, keyfe hâluke ve hel ente kalıplarıyla tanışma diyaloğu kurulur.
@@ -2495,7 +2495,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-5-kuran-i-kerim-6
-Sıra: 2026-10-17 12:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-5-kuran-i-kerim-6.png
+Sıra: 2026-10-17 12:03 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-5-kuran-i-kerim-6.png
 
 ```
 Bunu biliyor muydunuz? Kur’an harfleri üstün, esre ve ötre harekeleriyle seslendirilirken harfin ince, kalın veya peltek özelliğine dikkat edilir.
@@ -2505,7 +2505,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-5-peygamberimizin-hayati-6
-Sıra: 2026-10-17 12:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-5-peygamberimizin-hayati-6.png
+Sıra: 2026-10-17 12:03 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-5-peygamberimizin-hayati-6.png
 
 ```
 Bunu biliyor muydunuz? Allah (cc) Fil Vakası’nda Kâbe’yi ebâbîl kuşlarıyla korumuş; aynı yıl (571) âlemlere rahmet olan Hz. Muhammed (sav) dünyaya gelmiştir.
@@ -2515,7 +2515,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-5-temel-dini-bilgiler-6
-Sıra: 2026-10-17 12:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-5-temel-dini-bilgiler-6.png
+Sıra: 2026-10-17 12:03 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-5-temel-dini-bilgiler-6.png
 
 ```
 Bunu biliyor muydunuz? Mümin kimliği kalpteki imanın doğruluk (sıdk), emanet bilinci, selamlaşma ve güzel ahlak olarak günlük hayata yansımasıdır.
@@ -2525,7 +2525,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-6-arapca-6
-Sıra: 2026-10-17 12:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-6-arapca-6.png
+Sıra: 2026-10-17 12:03 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-6-arapca-6.png
 
 ```
 Bunu biliyor muydunuz? Arapçada meslek ve çalışma yeri mâ mihnetuhû ve ya’melu fî ile anlatılır; el takısı şemsî ve kamerî harflere göre okunur.
@@ -2535,7 +2535,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-6-kuran-i-kerim-6
-Sıra: 2026-10-17 12:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-6-kuran-i-kerim-6.png
+Sıra: 2026-10-17 12:03 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-6-kuran-i-kerim-6.png
 
 ```
 Bunu biliyor muydunuz? Salli ve Bârik duaları namazların son oturuşunda okunan, Hz. Muhammed (sav) ve ailesine rahmet ve bereket dileyen salavat dualarıdır.
@@ -2545,7 +2545,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-6-peygamberimizin-hayati-6
-Sıra: 2026-10-17 12:03 · Bekleyen: facebook, instagram · Görsel: public/sosyal/bilgi-6-peygamberimizin-hayati-6.png
+Sıra: 2026-10-17 12:03 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-6-peygamberimizin-hayati-6.png
 
 ```
 Bunu biliyor muydunuz? Peygamberimiz (sav) gençlik yıllarında iffeti, dürüst ticareti, Hilfü’l-Fudûl üyeliği ve Kâbe hakemliğiyle El-Emîn sıfatını kazanmıştır.
