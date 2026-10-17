@@ -114,6 +114,7 @@ _SUB_RE = re.compile(r'[₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ₐₑₒ�
 
 def metin_hazirla(metin):
     """Karekök içi ve çarpım/eşitlik içeren matematik ifadelerinin satır ortasında bölünmesini önler."""
+    metin = metin.replace('\u0394', '\u2206')
     # √(...) içindeki boşlukları bölünmez boşluk (\u00a0) yap
     def _kok_ic(m):
         return '√(' + m.group(1).replace(' ', '\u00a0') + ')'
