@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 319 gönderi.
+Toplam 334 gönderi.
 
 ## bilgi-7-turkce-7
 Sıra: 2026-11-19 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-turkce-7.png
@@ -555,7 +555,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-edebiyat-3
-Sıra: 2026-11-29 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-edebiyat-3.png
+Sıra: 2026-11-29 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-edebiyat-3.png
 
 ```
 Bunu biliyor muydunuz? Somut olmayan kültürel mirasımız olan Karagöz gölge oyunu; mukaddime, muhavere, fasıl ve bitiş bölümlerinden oluşur ve oyunu tek başına seslendirip oynatan ustaya "hayalî (hayalbaz)" adı verilir.
@@ -565,7 +565,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-felsefe-3
-Sıra: 2026-11-29 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-felsefe-3.png
+Sıra: 2026-11-29 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-felsefe-3.png
 
 ```
 Bunu biliyor muydunuz? Çevre etiğinde antroposentrik yaklaşım merkeze yalnızca insanı koyarken, ekosentrik (çevre merkezci) yaklaşım insanı doğanın efendisi değil, ekosistemin bütününden sorumlu bir parçası olarak görür.
@@ -575,7 +575,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-fizik-3
-Sıra: 2026-11-30 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-fizik-3.png
+Sıra: 2026-11-30 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-fizik-3.png
 
 ```
 Bunu biliyor muydunuz? Hava sürtünmesinin önemsenmediği eğik atış hareketinde yatay hız bileşeni (vx) hareket boyunca hiç değişmez; atış açıları toplamı 90 derece olan (ör. 30° ve 60°) eşit süratli iki cismin yatay menzilleri birbirine eşittir.
@@ -585,7 +585,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-hitabet-ve-mesleki-uygulama-3
-Sıra: 2026-11-30 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-hitabet-ve-mesleki-uygulama-3.png
+Sıra: 2026-11-30 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-hitabet-ve-mesleki-uygulama-3.png
 
 ```
 Bunu biliyor muydunuz? 3 Mart 1924’te kurulan Diyanet İşleri Başkanlığı; merkez, taşra (il ve ilçe müftülükleri) ve yurt dışı teşkilatıyla hem cami içi ibadet ve irşat hizmetlerini hem de toplumun her kesimine yönelik manevi danışmanlık hizmetlerini yürütür.
@@ -595,7 +595,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-ingilizce-3
-Sıra: 2026-11-30 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-ingilizce-3.png
+Sıra: 2026-11-30 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-ingilizce-3.png
 
 ```
 Bunu biliyor muydunuz? İngilizcede "At 10 o’clock tomorrow" veya "This time next week" gibi gelecekteki belli bir anda sürüyor olacak işleri anlatırken "will be + fiil-ing" (Future Continuous Tense) yapısı kullanılır.
@@ -605,7 +605,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-kimya-3
-Sıra: 2026-11-30 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-kimya-3.png
+Sıra: 2026-11-30 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-kimya-3.png
 
 ```
 Bunu biliyor muydunuz? Yanma tepkimeleri genellikle ekzotermiktir (azot gazının yanması hariç); hidrokarbon yakıtlarda karbon zinciri uzadıkça polarlanabilirlik ve kaynama noktası yükselirken, mol başına açığa çıkan yanma ısısı da artar.
@@ -615,7 +615,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-kuran-i-kerim-3
-Sıra: 2026-11-30 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-kuran-i-kerim-3.png
+Sıra: 2026-11-30 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-kuran-i-kerim-3.png
 
 ```
 Bunu biliyor muydunuz? Kur’an-ı Kerim’de adalet toplumsal barışın temeli sayılır; Nisa Suresi 135. ve Maide Suresi 8. ayetlerde müminlere kendi aleyhlerine bile olsa adaletten asla ayrılmamaları emredilir.
@@ -625,7 +625,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-matematik-3
-Sıra: 2026-11-30 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-matematik-3.png
+Sıra: 2026-11-30 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-matematik-3.png
 
 ```
 Bunu biliyor muydunuz? İki nicel değişken arasındaki ilişkinin yönü ve gücü korelasyon katsayısı ile ölçülür; serpilme diyagramındaki verilere en uygun doğru (en küçük kareler doğrusu) çizilerek geleceğe yönelik tahminler yapılır.
@@ -635,7 +635,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-mesleki-arapca-3
-Sıra: 2026-12-01 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-mesleki-arapca-3.png
+Sıra: 2026-12-01 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-mesleki-arapca-3.png
 
 ```
 Bunu biliyor muydunuz? Mesleki Arapçada İslam akidesinin temelini oluşturan altı iman esası "el-imanu billahi ve melaiketihi ve kutubihi ve rusulihi ve el-yevmi el-ahiri ve el-kaderi" ifadeleriyle açıklanır.
@@ -645,7 +645,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-peygamberimizin-hayati-3
-Sıra: 2026-12-01 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-peygamberimizin-hayati-3.png
+Sıra: 2026-12-01 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-peygamberimizin-hayati-3.png
 
 ```
 Bunu biliyor muydunuz? Hicret öncesinde Yesrib (Medine) halkının kabile savaşlarını bitirecek adil bir öndere duyduğu ihtiyaç ve ilahi kitap kültürüne aşinalığı, Akabe Biatlarıyla şehrin İslam’a kucak açmasına zemin hazırlamıştır.
@@ -655,7 +655,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-tarih-3
-Sıra: 2026-12-01 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-tarih-3.png
+Sıra: 2026-12-01 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-tarih-3.png
 
 ```
 Bunu biliyor muydunuz? 1699 Karlofça Antlaşması ile Osmanlı Devleti Batı’da ilk kez geniş çaplı toprak kaybetmiş; 1718 Pasarofça Antlaşması ile başlayan süreçte ise Avrupa’nın teknik üstünlüğünü takip etme politikasına yönelmiştir.
@@ -665,7 +665,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-tefsir-3
-Sıra: 2026-12-01 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-tefsir-3.png
+Sıra: 2026-12-01 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-tefsir-3.png
 
 ```
 Bunu biliyor muydunuz? Tefsir ilminde bir ayetin hangi olay veya soru üzerine indirildiğini bilmek (Esbâb-ı Nüzûl) ve Mekkî mi yoksa Medenî mi olduğunu tespit etmek, ayetin hükmünü ve hikmetini doğru kavramak için vazgeçilmezdir.
@@ -675,7 +675,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-temel-dini-bilgiler-3
-Sıra: 2026-12-01 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-temel-dini-bilgiler-3.png
+Sıra: 2026-12-01 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-temel-dini-bilgiler-3.png
 
 ```
 Bunu biliyor muydunuz? Asr Suresi’nde insanın zaman karşısında hüsrana uğramaması için dört temel ilke bildirilir: İman etmek, salih amel (faydalı işler) yapmak, hakkı tavsiye etmek ve sabrı tavsiye etmek.
@@ -685,7 +685,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-biyoloji-3
-Sıra: 2026-12-01 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-biyoloji-3.png
+Sıra: 2026-12-01 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-biyoloji-3.png
 
 ```
 Bunu biliyor muydunuz? Canlılarda 20 çeşit amino asidi şifreleyen 61 anlamlı kodon ve 3 durdurucu kodon (UAA, UAG, UGA) bulunur; bir amino asidin birden fazla kodonla şifrelenebilmesi canlıyı nokta mutasyonlarına karşı korur.
@@ -695,7 +695,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-cografya-3
-Sıra: 2026-12-02 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-cografya-3.png
+Sıra: 2026-12-02 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-cografya-3.png
 
 ```
 Bunu biliyor muydunuz? Kentleşme sürecinde sanayi tesislerinin yerleşim alanları içinde kalmasını, hava kirliliğini ve tarım arazilerinin kaybını önlemek için şehirlerin fonksiyonel arazi kullanım planlarına göre geliştirilmesi gerekir.
@@ -705,7 +705,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-din-kulturu-3
-Sıra: 2026-12-02 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-din-kulturu-3.png
+Sıra: 2026-12-02 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-din-kulturu-3.png
 
 ```
 Bunu biliyor muydunuz? Fâtır Suresi 27-28. ayetlerde doğadaki çeşitliliğe dikkat çekilerek Allah’a karşı derin saygı duyanların âlimler olduğu vurgulanır; İslam medeniyetinde dinî ve fen bilimleri birbiriyle uyum içinde gelişmiştir.
@@ -715,7 +715,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-edebiyat-3
-Sıra: 2026-12-02 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-edebiyat-3.png
+Sıra: 2026-12-02 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-edebiyat-3.png
 
 ```
 Bunu biliyor muydunuz? Cumhuriyet Dönemi hikâyeciliğinde Ömer Seyfettin ve Refik Halit Karay çizgisindeki olay hikâyesi sürerken, Memduh Şevket Esendal ve Sait Faik Abasıyanık ile Çehov tarzı durum (kesit) hikâyesi edebiyatımıza yerleşmiştir.
@@ -725,7 +725,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-fizik-3
-Sıra: 2026-12-02 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-fizik-3.png
+Sıra: 2026-12-02 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-fizik-3.png
 
 ```
 Bunu biliyor muydunuz? Kaymadan dönerek öteleme hareketi yapan bir tekerleğin yerle temas eden en alt noktasının yere göre anlık hızı sıfır, en üst noktasının yere göre anlık hızı ise kütle merkezi hızının iki katıdır (2v).
@@ -735,7 +735,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-ingilizce-3
-Sıra: 2026-12-02 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-ingilizce-3.png
+Sıra: 2026-12-02 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-ingilizce-3.png
 
 ```
 Bunu biliyor muydunuz? İngilizcede gerçek bir dostu tanımlarken "A true friend is someone who always backs you up and whom you can count on" gibi Relative Clause (ilgi cümleciği) yapıları ve arkadaşlık deyimleri kullanılır.
@@ -745,7 +745,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-inkilap-tarihi-3
-Sıra: 2026-12-02 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-inkilap-tarihi-3.png
+Sıra: 2026-12-02 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-inkilap-tarihi-3.png
 
 ```
 Bunu biliyor muydunuz? Osmanlı Devleti I. Dünya Savaşı’nda Çanakkale ve Kut’ül Amâre’de tarihe geçen büyük zaferler kazanmış; Mustafa Kemal’in Çanakkale, Kafkas ve Suriye cephelerindeki başarıları onu Milli Mücadele’nin doğal lideri yapmıştır.
@@ -755,7 +755,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-islam-kultur-ve-medeniyeti-3
-Sıra: 2026-12-03 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-3.png
+Sıra: 2026-12-03 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-3.png
 
 ```
 Bunu biliyor muydunuz? İslam medeniyeti tek tip bir yapı değil; Hicaz’dan Endülüs’e, Mâverâünnehir’den Anadolu’ya kadar farklı kültür havzalarının tevhit inancı etrafında kaynaşmasıyla oluşmuş evrensel bir medeniyettir.
@@ -765,7 +765,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kelam-3
-Sıra: 2026-12-03 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kelam-3.png
+Sıra: 2026-12-03 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kelam-3.png
 
 ```
 Bunu biliyor muydunuz? Kelam ilminde doğru bilginin kaynakları selim akıl, sağlam duyular ve sadık haberdir; İmam Mâtürîdî ve İmam Eş’arî, nakil (vahiy) ile aklı birlikte kullanarak Ehl-i Sünnet kelam yöntemini kurmuşlardır.
@@ -775,7 +775,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kimya-3
-Sıra: 2026-12-03 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kimya-3.png
+Sıra: 2026-12-03 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kimya-3.png
 
 ```
 Bunu biliyor muydunuz? Aktif bir metalden yapılmış kapta, kendisinden daha pasif bir metalin iyonlarını içeren çözelti saklanamaz; çünkü aktif metal yükseltgenerek aşınır ve kap delinir.
@@ -785,7 +785,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kuran-i-kerim-3
-Sıra: 2026-12-03 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kuran-i-kerim-3.png
+Sıra: 2026-12-03 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kuran-i-kerim-3.png
 
 ```
 Bunu biliyor muydunuz? Kehf Suresi 9-26. ayetlerde anlatılan Ashâb-ı Kehf (Mağara Arkadaşları) kıssası, inançlarını korumak için fedakârlık yapan gençlerin Allah’ın yardımı ve rahmetiyle nasıl desteklendiğini gösterir.
@@ -795,7 +795,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-matematik-3
-Sıra: 2026-12-03 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-matematik-3.png
+Sıra: 2026-12-03 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-matematik-3.png
 
 ```
 Bunu biliyor muydunuz? Logaritma fonksiyonu çok büyük veya çok küçük sayıların çarpma ve bölme işlemlerini toplama ve çıkarmaya dönüştürerek kolaylaştırır; deprem büyüklüğü (Richter), ses şiddeti (desibel) ve pH hesaplarında kullanılır.
@@ -3192,4 +3192,154 @@ Bunu biliyor muydunuz? Hezarfen Necmeddin Okyay; imam-hatiplik görevinin yanın
 Faydalı bulduysanız arkadaşınızı etiketleyin.
 📘 11. sınıf Temel Dinî Bilgiler 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-temel-dini-bilgiler-hafta-6
 #derskutusu #temeldinibilgiler #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-biyoloji-6
+Sıra: 2026-12-04 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-biyoloji-6.png
+
+```
+Bunu biliyor muydunuz? Griffith, Avery ve Hershey-Chase deneyleri kalıtsal materyalin DNA olduğunu kanıtlamış; genetik yapı nükleotitten kromozoma doğru sıralanmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Biyoloji 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-biyoloji-hafta-6
+#derskutusu #biyoloji #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-cografya-6
+Sıra: 2026-12-04 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-cografya-6.png
+
+```
+Bunu biliyor muydunuz? Türkiye’de GSYH ve istihdamda en büyük pay hizmet sektörüne aittir; yerel dokusunu koruyan kentler ise Cittaslow (Sakin Şehir) unvanı alır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Coğrafya 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-cografya-hafta-6
+#derskutusu #coğrafya #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-din-kulturu-6
+Sıra: 2026-12-04 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-din-kulturu-6.png
+
+```
+Bunu biliyor muydunuz? Hârizmî, İbn Sînâ, İbnü’l-Heysem, Bîrûnî ve Cezerî gibi Müslüman bilginlerin özgün eserleri modern bilimin gelişimine öncülük etmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Din Kültürü ve Ahlak Bilgisi 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-din-kulturu-ve-ahlak-bilgisi-hafta-6
+#derskutusu #dinkültürü #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-edebiyat-6
+Sıra: 2026-12-04 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-edebiyat-6.png
+
+```
+Bunu biliyor muydunuz? Hikâye metinlerinde anlam katmanları mecazımürsel ve somutlaştırmalarla zenginleşir; diyalog ve iç konuşmalar noktalama işaretleriyle ayrılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Türk Dili ve Edebiyatı 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-turk-dili-ve-edebiyati-hafta-6
+#derskutusu #edebiyat #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-fizik-6
+Sıra: 2026-12-04 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-fizik-6.png
+
+```
+Bunu biliyor muydunuz? Gezegen yüzeyindeki çekim ivmesi g = G·M/R² ile, yörüngedeki uydunun dolanım hızı ise kendi kütlesinden bağımsız olarak v = √(G·M/r) ile bulunur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Fizik 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-fizik-hafta-6
+#derskutusu #fizik #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-ingilizce-6
+Sıra: 2026-12-04 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-ingilizce-6.png
+
+```
+Bunu biliyor muydunuz? İngilizcede yalın fiille amaç bildirirken “in order to / so as to + V1”, özneli tam cümleyle amaç bildirirken “so that / in order that” kullanılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf İngilizce 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-ingilizce-hafta-6
+#derskutusu #ingilizce #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-inkilap-tarihi-6
+Sıra: 2026-12-05 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-inkilap-tarihi-6.png
+
+```
+Bunu biliyor muydunuz? Mondros Ateşkes Antlaşması’nın 7. ve 24. maddeleri Osmanlı topraklarının işgaline zemin hazırlamış; ilk işgal 3 Kasım 1918’de Musul’da başlamıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf T.C. İnkılap Tarihi 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-tc-inkilap-tarihi-ve-ataturkculuk-hafta-6
+#derskutusu #inkılaptarihi #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-islam-kultur-ve-medeniyeti-6
+Sıra: 2026-12-05 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-6.png
+
+```
+Bunu biliyor muydunuz? Tevhid ilkesi İslam bilim ve sanatına bütünlük kazandırırken, insanı yalnızca Allah’a kul kılarak gerçek irade ve vicdan hürriyetine kavuşturmuştur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf İslam Kültür ve Medeniyeti 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-islam-kultur-ve-medeniyeti-hafta-6
+#derskutusu #islamkültürü #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-kelam-6
+Sıra: 2026-12-05 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kelam-6.png
+
+```
+Bunu biliyor muydunuz? Kelam ilmi dinin inanç temellerini ispatladığı için “küllî ilim” sayılır; tefsir, hadis, fıkıh ve tasavvuf ise bu temel üzerinde yükselir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Kelam 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-kelam-hafta-6
+#derskutusu #kelam #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-kimya-6
+Sıra: 2026-12-05 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kimya-6.png
+
+```
+Bunu biliyor muydunuz? Standart Hidrojen Elektrodunun potansiyeli 0,00 V kabul edilir; standart hücre potansiyeli E°_hücre > 0 olan redoks tepkimeleri istemlidir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Kimya 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-kimya-hafta-6
+#derskutusu #kimya #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-kuran-i-kerim-6
+Sıra: 2026-12-05 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kuran-i-kerim-6.png
+
+```
+Bunu biliyor muydunuz? Kur’an çevirilerine yaklaşık anlamı ifade ettiği için “meal” denir; ayetleri doğru anlamak için esbâb-ı nüzûl ve sahih tefsirlere başvurulmalıdır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Kur’an-ı Kerim 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-kuran-i-kerim-hafta-6
+#derskutusu #kuranıkerim #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-matematik-6
+Sıra: 2026-12-05 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-matematik-6.png
+
+```
+Bunu biliyor muydunuz? Nüfus artışı ve yarılanma f(t) = A₀·a^t üstel fonksiyonuyla; pH = −log[H⁺] ve Richter deprem ölçeği ise 10 tabanlı logaritmayla modellenir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Matematik 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-matematik-hafta-6
+#derskutusu #matematik #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-mesleki-arapca-6
+Sıra: 2026-12-06 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-mesleki-arapca-6.png
+
+```
+Bunu biliyor muydunuz? Arapçada fiiller kök harflerinin yapısına göre Sâlim, Mehmûz, Muda’af, Misâl, Ecvef, Nâkıs ve Lefîf olmak üzere Aksâm-ı Seb’a’ya ayrılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Mesleki Arapça 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-mesleki-arapca-hafta-6
+#derskutusu #meslekiarapça #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-peygamberimizin-hayati-6
+Sıra: 2026-12-06 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-peygamberimizin-hayati-6.png
+
+```
+Bunu biliyor muydunuz? Sünnet, Kur’an-ı Kerim’in mücmel hükümlerini açıklayan (beyan eden) ve İslam’ın hayata nasıl geçirileceğini gösteren ikinci temel kaynaktır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Peygamberimizin Hayatı 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-peygamberimizin-hayati-hafta-6
+#derskutusu #peygamberimizinhayatı #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-temel-dini-bilgiler-6
+Sıra: 2026-12-06 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-temel-dini-bilgiler-6.png
+
+```
+Bunu biliyor muydunuz? İmanın geçerli olması için yeis hâli (son nefes) gelmeden önce yapılması, iman esaslarının tamamını kapsaması ve şüphe taşımaması gerekir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Temel Dinî Bilgiler 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-temel-dini-bilgiler-hafta-6
+#derskutusu #temeldinibilgiler #12sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
