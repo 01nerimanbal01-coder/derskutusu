@@ -97,40 +97,39 @@ def duyuru_karti():
     ic += f'<rect x="6" y="4" width="348" height="28" rx="10" fill="{TUR}"/><rect x="6" y="22" width="348" height="10" fill="{TUR}"/>'
     ic += yazi(180, 24, 'İP ATLAMA ŞENLİĞİ', 15, '#fff')
     satirlar = [('Başlangıç:', ['10', '45'], 'I', 56), ('Katılım:', ['1', '250 öğrenci'], 'II', 84), ('Bilgi:', ['www', 'meb', 'gov', 'tr'], 'III', 112)]
+    # Noto Sans Bold 13.5 ile ölçülmüş genişlikler (PIL, 17.10.2026); nokta kırmızı daire olarak çizilir, numara satır sonunda.
+    gen = {'10': 15.4, '45': 15.4, '1': 7.7, '250 öğrenci': 77.6, 'www': 34.8, 'meb': 29.8, 'gov': 24.7, 'tr': 11.9}
     for etiket, parcalar, rom, y in satirlar:
         ic += yazi(22, y, etiket, 13, SOLUK, 'start')
         x = 112
-        gen = {'10': 15.5, '45': 15.5, '1': 7.8, '250 öğrenci': 84, 'www': 33, 'meb': 29, 'gov': 28, 'tr': 14}
         for k, p in enumerate(parcalar):
             ic += yazi(x, y, p, 13.5, LAC, 'start')
             x += gen[p]
             if k < len(parcalar) - 1:
-                ic += f'<circle cx="{x + 2.6:.1f}" cy="{y - 1.6}" r="2.6" fill="{KIR}"/>'
-                if k == 0:
-                    ic += f'<rect x="{x - 7:.1f}" y="{y - 32}" width="20" height="15" rx="4" fill="{KIR}"/>' + yazi(x + 3, y - 20.5, rom, 10.5, '#fff')
-                    ic += f'<line x1="{x + 2.6:.1f}" y1="{y - 17}" x2="{x + 2.6:.1f}" y2="{y - 6}" stroke="{KIR}" stroke-width="1.2"/>'
+                ic += f'<circle cx="{x + 3:.1f}" cy="{y - 1.8}" r="2.8" fill="{KIR}"/>'
                 x += 6.5
-    return svg(360, 126, ic, 'Duyuru kartı: İp Atlama Şenliği. Başlangıç: 10.45, saat ile dakika arasındaki nokta I. Katılım: 1.250 öğrenci, binlik basamaktaki nokta II. Bilgi: www.meb.gov.tr, adresteki ilk nokta III.', 32)
+        ic += f'<rect x="{x + 10:.1f}" y="{y - 12}" width="{14 + 6 * len(rom)}" height="15" rx="4" fill="{KIR}"/>' + yazi(x + 17 + 3 * len(rom), y - 1, rom, 10.5, '#fff')
+    return svg(360, 126, ic, 'Duyuru kartı: İp Atlama Şenliği. Başlangıç: 10.45, kırmızı nokta, satır sonunda I. Katılım: 1.250 öğrenci, kırmızı nokta, satır sonunda II. Bilgi: www.meb.gov.tr, kırmızı noktalar, satır sonunda III.', 32)
 
 
 def defter():
     """Defter sayfası: satır sonunda bölünmüş üç kelime (bah-çe, kurd-ele yanlış, ip-lik)."""
-    satir = [('Dün teneffüste arkadaşlarımla bah-', 1), ('çede ip atladık. İpin ucuna kurd-', 2), ('ele bağladık. Oyun bitince ip-', 3), ('liği sepete koyduk.', 0)]
+    # Satır genişlikleri Noto Sans 13 ile ölçüldü (PIL, 17.10.2026); numara kısa çizginin hemen sağında.
+    satir = [('Dün teneffüste arkadaşlarımla bah-', 1, 216.3), ('çede ip atladık. İpin ucuna kurd-', 2, 195.8), ('ele bağladık. Oyun bitince ip-', 3, 176.9), ('liği sepete koyduk.', 0, 113.8)]
     ic = kutu(4, 4, 352, 112, KUM, GRI, 6, 1.2) + f'<line x1="30" y1="4" x2="30" y2="116" stroke="{KIR}" stroke-width="1" opacity=".6"/>'
     ic += ''.join(f'<circle cx="16" cy="{y}" r="3" fill="{GRI_A}" stroke="{GRI}" stroke-width=".8"/>' for y in (30, 60, 90))
-    for i, (s, n) in enumerate(satir):
+    for i, (s, n, gen) in enumerate(satir):
         y = 32 + i * 24
         ic += f'<line x1="34" y1="{y + 6}" x2="350" y2="{y + 6}" stroke="{MAVI_A}" stroke-width="1"/>'
-        uz = ' textLength="286" lengthAdjust="spacing"' if n else ''
-        ic += duz(40, y, [s], 13, LAC, 'start', ek=uz)
+        ic += duz(40, y, [s], 13, LAC, 'start')
         if n:
-            ic += numara(340, y - 11, n, KIR, 8)
-    return svg(360, 120, ic, 'Defter sayfası, dört satır: Dün teneffüste arkadaşlarımla bah- (1) / çede ip atladık. İpin ucuna kurd- (2) / ele bağladık. Oyun bitince ip- (3) / liği sepete koyduk.', 30)
+            ic += numara(40 + gen + 13, y - 4.5, n, KIR, 8)
+    return svg(360, 120, ic, 'Defter sayfası, dört satır: Dün teneffüste arkadaşlarımla bah- (1) / çede ip atladık. İpin ucuna kurd- (2) / ele bağladık. Oyun bitince ip- (3) / liği sepete koyduk.', 34)
 
 
 def eposta():
     """Arda'nın e-postası: Kimden, Kime, Konu dolu; selam var; kapanış ve imza yok."""
-    ic = kutu(4, 4, 352, 146, '#fff', GRI, 8, 1.3) + f'<rect x="4" y="4" width="352" height="20" rx="8" fill="{GRI_A}"/><rect x="4" y="16" width="352" height="8" fill="{GRI_A}"/>'
+    ic = kutu(4, 4, 352, 164, '#fff', GRI, 8, 1.3) + f'<rect x="4" y="4" width="352" height="20" rx="8" fill="{GRI_A}"/><rect x="4" y="16" width="352" height="8" fill="{GRI_A}"/>'
     ic += ''.join(f'<circle cx="{x}" cy="14" r="3.2" fill="{c}"/>' for x, c in [(16, KIR), (27, ALTIN), (38, YES)])
     ic += yazi(180, 18.5, 'Yeni ileti', 11.5, SOLUK)
     for k, (etiket, deger) in enumerate([('Kimden:', 'arda@eposta.com'), ('Kime:', 'selin@eposta.com'), ('Konu:', 'Kedi beşiği kuralları')]):
@@ -139,8 +138,8 @@ def eposta():
         ic += yazi(74, y, deger, 12.5, LAC, 'start')
         ic += f'<line x1="14" y1="{y + 5}" x2="346" y2="{y + 5}" stroke="{GRI_A}" stroke-width="1"/>'
     ic += duz(16, 106, ['Merhaba Selin,', 'Geçen hafta oynadığımız kedi beşiği oyununun kurallarını', 'bana yazar mısın? Hafta sonu kuzenime öğretmek istiyorum.'], 12.5, LAC, 'start', 16)
-    ic += f'<rect x="286" y="128" width="60" height="16" rx="8" fill="{MAVI}"/>' + yazi(316, 139.5, 'Gönder', 11.5, '#fff')
-    return svg(360, 154, ic, 'E-posta penceresi. Kimden: arda@eposta.com. Kime: selin@eposta.com. Konu: Kedi beşiği kuralları. İleti: Merhaba Selin, Geçen hafta oynadığımız kedi beşiği oyununun kurallarını bana yazar mısın? Hafta sonu kuzenime öğretmek istiyorum. İleti burada bitiyor; kapanış ve imza yok. Gönder düğmesi.', 38)
+    ic += f'<rect x="286" y="146" width="60" height="16" rx="8" fill="{MAVI}"/>' + yazi(316, 157.5, 'Gönder', 11.5, '#fff')
+    return svg(360, 172, ic, 'E-posta penceresi. Kimden: arda@eposta.com. Kime: selin@eposta.com. Konu: Kedi beşiği kuralları. İleti: Merhaba Selin, Geçen hafta oynadığımız kedi beşiği oyununun kurallarını bana yazar mısın? Hafta sonu kuzenime öğretmek istiyorum. İleti burada bitiyor; kapanış ve imza yok. Gönder düğmesi.', 44)
 
 
 def gunluk():
@@ -182,7 +181,7 @@ def degerlendirme():
         ic += (f'<path d="M16 {y - 4} l4 4 l7 -9" fill="none" stroke="{renk}" stroke-width="2.2" stroke-linecap="round"/>' if tamam
                else f'<path d="M16 {y - 9} l10 10 M26 {y - 9} l-10 10" stroke="{renk}" stroke-width="2.2" stroke-linecap="round"/>')
         ic += yazi(38, y, olcut, 13, LAC, 'start') + duz(190, y, [notu], 12, SOLUK, 'start')
-    return svg(360, 140, ic, 'Konuşma değerlendirme kartı. Göz teması: tamam, farklı arkadaşlarına baktı. El ve kol hareketleri: tamam, anlatımı destekledi. Olayların sırası: tamam, akışa uygundu. Yüz ifadesi: eksik, duyguları yansıtmadı. Konuşmayı bitirme: eksik, sonucu söylemedi.', 35)
+    return svg(360, 140, ic, 'Konuşma değerlendirme kartı. Göz teması: tamam, farklı arkadaşlarına baktı. El ve kol hareketleri: tamam, anlatımı destekledi. Olayların sırası: tamam, akışa uygundu. Yüz ifadesi: eksik, duyguları yansıtmadı. Konuşmayı bitirme: eksik, sonucu söylemedi.', 38)
 
 
 def uygula(o):
