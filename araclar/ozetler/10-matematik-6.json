@@ -1,0 +1,288 @@
+{
+ "ad": "10-matematik-6",
+ "sinif": 10,
+ "ders": "matematik",
+ "ders_adi": "Matematik",
+ "hafta": 6,
+ "tarih": "19-23 Ekim 2026",
+ "yayin_tarihi": "2026-10-21",
+ "unite": "GEOMETRİK ŞEKİLLER",
+ "konu": "Sinüs ve Kosinüs Teoremleri",
+ "ciktilar": [
+  "Üçgende yükseklik ve dik üçgende trigonometrik oranlardan yararlanarak sinüs teoremini doğrular ve uygular.",
+  "Pisagor teoremi ve trigonometrik özdeşlikleri kullanarak kosinüs teoremini ispatlar.",
+  "Kenar ve açı elemanları verilen üçgenlerde uygun teoremi seçerek uzunluk, açı ve alan problemlerini çözer."
+ ],
+ "giris": "Dik üçgenlerde dar açıların trigonometrik oranlarını ve Pisagor bağıntısını kullanarak kenar ve açı hesaplamaları yapabiliyoruz. Peki, dik açısı bulunmayan herhangi bir dar açılı veya geniş açılı üçgende kenar uzunlukları ile açılar arasındaki ilişkiyi nasıl kurarız? Bu haftaki dersimizde, bir üçgenin içine çizilen yükseklik yardımıyla dik üçgen bilgisini tüm üçgenlere genelleyen iki temel aracı, {koyu:Sinüs Teoremi} ve {koyu:Kosinüs Teoremi}ni ispatlarıyla birlikte öğreneceğiz.",
+ "ozet": [
+  "{koyu:Sinüs Teoremi:} Bir ABC üçgeninde kenar uzunlukları a, b, c ve bu kenarların karşısındaki açılar A, B, C olmak üzere {kesir:a|sin A} = {kesir:b|sin B} = {kesir:c|sin C} = 2R eşitliği geçerlidir (R: çevrel çemberin yarıçapı).",
+  "{koyu:Sinüs Teoreminin Doğrulanması:} A köşesinden BC kenarına indirilen {uzunluk:AH} = h yüksekliği iki dik üçgende ortak dik kenardır: h = c . sin B ve h = b . sin C eşitliğinden {kesir:b|sin B} = {kesir:c|sin C} elde edilir.",
+  "{koyu:Kosinüs Teoremi:} Herhangi bir üçgende bir kenarın karesi, diğer iki kenarın kareleri toplamından bu iki kenar ile aralarındaki açının kosinüsünün çarpımının iki katının çıkarılmasına eşittir: {us:a|2} = {us:b|2} + {us:c|2} - 2.b.c.cos A.",
+  "{koyu:Pisagor ile İlişkisi:} Kosinüs teoreminde aradaki açı 90° olduğunda cos 90° = 0 olduğundan -2.b.c.cos 90° terimi sıfırlanır ve bağıntı doğrudan {us:a|2} = {us:b|2} + {us:c|2} Pisagor teoremine dönüşür.",
+  "{koyu:Bütünler Açılarda Trigonometrik Değerler:} Birbirini 180°’ye tamamlayan açılarda sin(180° - α) = sin α iken, cos(180° - α) = -cos α eşitliği geçerlidir.",
+  "{koyu:Teorem Seçim Kriteri:} İki açı ve bir kenar (AÇK) veya çevrel çember yarıçapı verildiğinde {koyu:Sinüs Teoremi}; iki kenar ve aralarındaki açı (KAK) veya üç kenar (KKK) verildiğinde {koyu:Kosinüs Teoremi} kullanılır."
+ ],
+ "bolumler": [
+  {
+   "baslik": "1. Sinüs Teoremi ve Yükseklik Yardımıyla Doğrulanması",
+   "metin": [
+    "Kenar uzunlukları a, b, c birim olan bir ABC üçgeninde A köşesinden [BC] kenarına [AH] dikmesini (h yüksekliğini) indirelim. Oluşan ABH ve ACH dik üçgenlerinde B ve C açılarının sinüs oranlarını yazalım:\n• ABH dik üçgeninde: sin B = {kesir:h|c} olduğundan h = c . sin B bulunur.\n• ACH dik üçgeninde: sin C = {kesir:h|b} olduğundan h = b . sin C bulunur.",
+    "Her iki ifadede de h yüksekliği ortak olduğundan c . sin B = b . sin C eşitliği elde edilir. Eşitliğin her iki tarafı sin B . sin C çarpımına bölündüğünde {kesir:b|sin B} = {kesir:c|sin C} bağıntısına ulaşılır. Aynı işlem C köşesinden [AB] kenarına yükseklik indirilerek tekrarlandığında {kesir:a|sin A} = {kesir:b|sin B} bulunur. Böylece her üçgende kenar uzunluklarının karşılarındaki açıların sinüslerine oranının sabit olduğu doğrulanmış olur: {koyu:{kesir:a|sin A} = {kesir:b|sin B} = {kesir:c|sin C} = 2R}. Burada R, ABC üçgeninin köşelerinden geçen {koyu:çevrel çemberin yarıçapıdır}."
+   ],
+   "kutu": {
+    "tur": "kural",
+    "baslik": "Geniş Açılı Üçgenlerde Sinüs Değeri",
+    "metin": "Birbirini 180°’ye tamamlayan (bütünler) iki açının sinüs değerleri birbirine eşittir: {koyu:sin(180° - α) = sin α}.\n• sin 120° = sin 60° = {kesir:{kok:3}|2}\n• sin 135° = sin 45° = {kesir:{kok:2}|2}\n• sin 150° = sin 30° = {kesir:1|2}"
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 205\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"25\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Üçgende Yükseklik Yardımıyla Sinüs Teoreminin Doğrulanması</text><polygon points=\"60,175 280,175 190,55\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><line x1=\"190\" y1=\"55\" x2=\"190\" y2=\"175\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/><rect x=\"190\" y=\"163\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><text x=\"190\" y=\"46\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">A</text><text x=\"45\" y=\"180\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\">B</text><text x=\"290\" y=\"180\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\">C</text><text x=\"190\" y=\"192\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"middle\">H</text><text x=\"115\" y=\"108\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e293b\">c</text><text x=\"245\" y=\"108\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e293b\">b</text><text x=\"170\" y=\"192\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e293b\">a</text><text x=\"200\" y=\"122\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">h_a</text><rect x=\"330\" y=\"42\" width=\"330\" height=\"145\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><rect x=\"330\" y=\"42\" width=\"330\" height=\"28\" rx=\"8\" fill=\"#2563eb\"/><rect x=\"330\" y=\"60\" width=\"330\" height=\"10\" fill=\"#2563eb\"/><text x=\"495.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Dik Üçgenlerden Sinüs Teoremine</text><text x=\"342\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• ABH dik üçgeninde: sin B = h_a / c  =>  h_a = c . sin B</text><text x=\"342\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• ACH dik üçgeninde: sin C = h_a / b  =>  h_a = b . sin C</text><text x=\"342\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• İki ifade eşitlenirse: c . sin B = b . sin C</text><text x=\"342\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• b / sin B = c / sin C = a / sin A = 2R</text><text x=\"342\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• (R: ABC üçgeninin çevrel çemberinin yarıçapı)</text></svg>"
+  },
+  {
+   "baslik": "2. Kosinüs Teoremi ve Pisagor Bağıntısından İspatı",
+   "metin": [
+    "Bir ABC üçgeninde iki kenar uzunluğu (a ve b) ile bu iki kenar arasındaki C açısının ölçüsü bilindiğinde c kenarını bulmak için A köşesinden [BC] kenarına [AH] dikmesini ({uzunluk:AH} = h ve {uzunluk:CH} = x) indirelim. ACH dik üçgeninde:\n• sin C = {kesir:h|b}  =>  {uzunluk:AH} = h = b . sin C\n• cos C = {kesir:x|b}  =>  {uzunluk:CH} = x = b . cos C ve geriye kalan parça {uzunluk:BH} = a - b . cos C olur.",
+    "Şimdi ABH dik üçgeninde Pisagor teoremini uygulayalım:\n{us:c|2} = {us:h|2} + {us:(a - x)|2} = {us:(b . sin C)|2} + {us:(a - b . cos C)|2}\nParantez karelerini açarsak:\n{us:c|2} = {us:b|2}.{us:sin|2}C + {us:a|2} - 2.a.b.cos C + {us:b|2}.{us:cos|2}C\n{us:b|2} ortak çarpan parantezine aldığımızda {us:b|2}.({us:sin|2}C + {us:cos|2}C) + {us:a|2} - 2.a.b.cos C elde edilir. Temel trigonometrik özdeşlik gereği {koyu:{us:sin|2}C + {us:cos|2}C = 1} olduğundan bağıntı {koyu:{us:c|2} = {us:a|2} + {us:b|2} - 2.a.b.cos C} şeklini alır. Aynı kural üçgenin diğer kenarları için de geçerlidir:\n• {koyu:{us:a|2} = {us:b|2} + {us:c|2} - 2.b.c.cos A}\n• {koyu:{us:b|2} = {us:a|2} + {us:c|2} - 2.a.c.cos B}"
+   ],
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Geniş Açılarda Kosinüs Negatiftir!",
+    "metin": "90° ile 180° arasındaki geniş açıların kosinüs değeri negatiftir: {koyu:cos(180° - α) = -cos α}.\n• cos 120° = -cos 60° = -{kesir:1|2}\n• cos 135° = -cos 45° = -{kesir:{kok:2}|2}\n• cos 150° = -cos 30° = -{kesir:{kok:3}|2}\nKosinüs teoreminde açı geniş olduğunda formüldeki eksi işareti ile kosinüsün eksi işareti çarpılarak {koyu:artı (+)} olur!"
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 205\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"25\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#065f46\" text-anchor=\"middle\">Pisagor Bağıntısından Kosinüs Teoreminin İspatı</text><polygon points=\"50,175 290,175 200,55\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2.2\"/><line x1=\"200\" y1=\"55\" x2=\"200\" y2=\"175\" stroke=\"#d97706\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/><rect x=\"200\" y=\"163\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\"/><text x=\"200\" y=\"46\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#065f46\" text-anchor=\"middle\">A</text><text x=\"35\" y=\"180\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#065f46\">B</text><text x=\"300\" y=\"180\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#065f46\">C</text><text x=\"200\" y=\"192\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#d97706\" text-anchor=\"middle\">H</text><text x=\"125\" y=\"192\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">a - x</text><text x=\"245\" y=\"192\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">x = b.cos C</text><text x=\"208\" y=\"120\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#d97706\">b.sin C</text><rect x=\"330\" y=\"42\" width=\"330\" height=\"145\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"1.6\"/><rect x=\"330\" y=\"42\" width=\"330\" height=\"28\" rx=\"8\" fill=\"#059669\"/><rect x=\"330\" y=\"60\" width=\"330\" height=\"10\" fill=\"#059669\"/><text x=\"495.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Kosinüs Teoremi Formülleri</text><text x=\"342\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• ABH’de Pisagor: c² = (b.sin C)² + (a - b.cos C)²</text><text x=\"342\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• sin²C + cos²C = 1 özdeşliği kullanıldığında:</text><text x=\"342\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• c² = a² + b² - 2.a.b.cos C</text><text x=\"342\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• a² = b² + c² - 2.b.c.cos A</text><text x=\"342\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• b² = a² + c² - 2.a.c.cos B</text></svg>"
+  },
+  {
+   "baslik": "3. Problem Çözümünde Hangi Teorem Seçilmelidir?",
+   "metin": [
+    "Geometri sorularında verilen bilgilere göre doğru teoremi seçmek işlem süresini büyük ölçüde kısaltır:\n1. {koyu:Sinüs Teoreminin Tercih Edildiği Durumlar:}\n• Üçgenin iki açısının ölçüsü ve bir kenar uzunluğu biliniyorsa ({koyu:AÇK / KAA}),\n• İki kenar uzunluğu ve bu kenarlardan birinin karşısındaki açının ölçüsü biliniyorsa ({koyu:KKA}),\n• Soruda üçgenin çevrel çemberinin yarıçapı (R) verilmiş veya isteniyorsa.",
+    "2. {koyu:Kosinüs Teoreminin Tercih Edildiği Durumlar:}\n• Üçgenin iki kenar uzunluğu ve {koyu:bu iki kenarın arasındaki açının} ölçüsü biliniyorsa ({koyu:KAK}) karşıdaki üçüncü kenarı bulmak için,\n• Üçgenin {koyu:üç kenar uzunluğu da biliniyorsa (KKK)} herhangi bir iç açının kosinüsünü veya ölçüsünü bulmak için kosinüs teoremi kullanılır."
+   ],
+   "kutu": {
+    "tur": "ipucu",
+    "baslik": "Ortak Açı ve Ters Açı Sorularında Kosinüs Teoremi",
+    "metin": "İç içe geçmiş iki üçgende ortak bir açı varsa veya iki üçgen ters açılarla kesişiyorsa; önce kenarları bilinen küçük üçgende kosinüs oranı (cos α) bulunur, ardından büyük üçgende aynı cos α değeri yerine yazılarak istenen kenar hesaplanır."
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 200\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"26\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#7c2d12\" text-anchor=\"middle\">Hangi Durumda Hangi Teorem Kullanılır? (Problem Çözme Rehberi)</text><rect x=\"25\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"1.6\"/><rect x=\"25\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#d97706\"/><rect x=\"25\" y=\"60\" width=\"300\" height=\"10\" fill=\"#d97706\"/><text x=\"175.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Sinüs Teoremi Kullanılan Durumlar</text><text x=\"37\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• İki açı ve bir kenar biliniyorsa (AÇK / KAA)</text><text x=\"37\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• İki kenar ve bunlardan birinin karşısındaki</text><text x=\"37\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  açı biliniyorsa (KKA)</text><text x=\"37\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Çevrel çemberin yarıçapı (R) soruluyorsa</text><text x=\"37\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Alan = (1/2).a.b.sin C bağıntısıyla alan hesabında</text><rect x=\"355\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"1.6\"/><rect x=\"355\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#7c3aed\"/><rect x=\"355\" y=\"60\" width=\"300\" height=\"10\" fill=\"#7c3aed\"/><text x=\"505.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Kosinüs Teoremi Kullanılan Durumlar</text><text x=\"367\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• İki kenar ve aralarındaki açı biliniyorsa (KAK)</text><text x=\"367\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  -> Karşıdaki üçüncü kenarı bulmak için</text><text x=\"367\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Üç kenar uzunluğu da biliniyorsa (KKK)</text><text x=\"367\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  -> Herhangi bir iç açının kosinüsünü bulmak için</text><text x=\"367\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Açı 90° ise cos 90° = 0 olduğundan Pisagor’a dönüşür</text></svg>"
+  },
+  {
+   "baslik": "4. Sinüs Yardımıyla Üçgenin Alan Bağıntısı",
+   "metin": [
+    "Bir ABC üçgeninde taban uzunluğu a ve bu tabana ait yükseklik h_a iken üçgenin alanı Alan(ABC) = {kesir:1|2} . a . h_a formülüyle hesaplanır. Birinci bölümde gördüğümüz üzere ACH dik üçgeninde h_a = b . sin C eşitliği geçerlidir.",
+    "Bu değeri alan formülünde yerine yazdığımızda {koyu:Sinüs Alan Teoremi} elde edilir:\n• {koyu:Alan(ABC) = {kesir:1|2} . a . b . sin C = {kesir:1|2} . b . c . sin A = {kesir:1|2} . a . c . sin B}\nSözlü ifadeyle: Bir üçgenin alanı, herhangi iki kenar uzunluğunun çarpımı ile bu iki kenar arasındaki açının sinüsünün çarpımının yarısına eşittir."
+   ],
+   "kutu": {
+    "tur": "bilgi",
+    "baslik": "Sinüs Teoremi ile Alan-Çevrel Çember İlişkisi",
+    "metin": "Sinüs teoreminden sin C = {kesir:c|2R} değeri sinüslü alan formülünde yerine yazılırsa:\n{koyu:Alan(ABC) = {kesir:a . b . c|4R}} bağıntısı elde edilir."
+   }
+  },
+  {
+   "baslik": "5. Kosinüs Teoremi ile Açı Türü (Dar, Dik, Geniş) Analizi",
+   "metin": [
+    "Kosinüs teoremi ({us:a|2} = {us:b|2} + {us:c|2} - 2.b.c.cos A), bir üçgenin yalnız kenar uzunluklarına bakarak açılarının dar, dik veya geniş olduğunu belirlememizi sağlar:\n1. Eğer {koyu:{us:a|2} = {us:b|2} + {us:c|2}} ise cos A = 0 olur ve {olcu:A} = 90° ({koyu:dik açı}) bulunur.\n2. Eğer {koyu:{us:a|2} < {us:b|2} + {us:c|2}} ise cos A > 0 olur ve {olcu:A} < 90° ({koyu:dar açı}) bulunur.\n3. Eğer {koyu:{us:a|2} > {us:b|2} + {us:c|2}} ise cos A < 0 olur ve {olcu:A} > 90° ({koyu:geniş açı}) bulunur.",
+    "Örneğin kenar uzunlukları a = 7, b = 5 ve c = 3 birim olan bir ABC üçgeninde {us:7|2} = 49 ve {us:5|2} + {us:3|2} = 25 + 9 = 34 olduğundan 49 > 34 yani A açısı geniş açıdır. Gerçekten kosinüs teoremini uygularsak: 49 = 25 + 9 - 2.5.3.cos A => 15 = -30.cos A => cos A = -{kesir:1|2} => {olcu:A} = 120° olduğu görülür."
+   ],
+   "kutu": {
+    "tur": "tanim",
+    "baslik": "Kirişler Dörtgeninde Karşılıklı Açılar",
+    "metin": "Bir çemberin içine çizilen dörtgende (kirişler dörtgeni) karşılıklı iki açının ölçüleri toplamı 180°’dir (α + β = 180°). Bu nedenle köşegen çizildiğinde bir üçgendeki açının kosinüsü cos α iken, karşı üçgendeki bütünler açının kosinüsü {koyu:-cos α} olur."
+   },
+   "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 192\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"26\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Kenar-Açı İlişkisi ve Özel Açıların Trigonometrik Değerleri</text><rect x=\"25\" y=\"42\" width=\"300\" height=\"138\" rx=\"8\" fill=\"#f0f9ff\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><rect x=\"25\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#0284c7\"/><rect x=\"25\" y=\"60\" width=\"300\" height=\"10\" fill=\"#0284c7\"/><text x=\"175.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Dar, Dik ve Geniş Açıda Kosinüs İşareti</text><text x=\"37\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• m(A) < 90° (Dar açı)  => cos A > 0  => a² < b² + c²</text><text x=\"37\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• m(A) = 90° (Dik açı)  => cos 90° = 0 => a² = b² + c²</text><text x=\"37\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• m(A) > 90° (Geniş açı)=> cos A < 0  => a² > b² + c²</text><text x=\"37\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Bütünler açılar: cos(180° - α) = -cos α</text><rect x=\"355\" y=\"42\" width=\"300\" height=\"138\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><rect x=\"355\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#16a34a\"/><rect x=\"355\" y=\"60\" width=\"300\" height=\"10\" fill=\"#16a34a\"/><text x=\"505.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Bütünler Açıların Sinüs Özelliği</text><text x=\"367\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• sin(180° - α) = sin α (Birbirini 180°’ye tamamlayan</text><text x=\"367\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  iki açının sinüs değerleri birbirine eşittir)</text><text x=\"367\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Örnek: sin 120° = sin 60° = kök(3) / 2</text><text x=\"367\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Örnek: cos 120° = -cos 60° = -1 / 2</text></svg>"
+  },
+  {
+   "baslik": "6. Günlük Hayat ve Mühendislik Uygulamaları",
+   "metin": [
+    "Sinüs ve kosinüs teoremleri; haritacılık, denizcilik, havacılık, mimarlık ve astronomide doğrudan ölçülemeyen mesafelerin hesaplanmasında ({koyu:üçgenleme / triangülasyon yöntemi}) yaygın olarak kullanılır. Örneğin aralarında bir göl veya dağ bulunan iki nokta arasındaki tünel uzunluğu, dışarıdaki bir gözlem noktasından bu iki uç noktaya olan uzaklıklar ve aradaki bakış açısı ölçülerek kosinüs teoremiyle kolayca bulunur.",
+    "Benzer şekilde sahildeki iki deniz feneri arasındaki mesafe ve bu fenerlerden denizdeki bir gemiye bakış açıları bilindiğinde, geminin kıyıya ve fenerlere olan uzaklığı sinüs teoremi yardımıyla hatasız olarak hesaplanır."
+   ],
+   "kutu": {
+    "tur": "hatirla",
+    "baslik": "Özet Hatırlatma: Özel Açı Tablosu",
+    "metin": "• {koyu:30°:} sin 30° = {kesir:1|2}, cos 30° = {kesir:{kok:3}|2}  |  {koyu:150°:} sin 150° = {kesir:1|2}, cos 150° = -{kesir:{kok:3}|2}\n• {koyu:45°:} sin 45° = {kesir:{kok:2}|2}, cos 45° = {kesir:{kok:2}|2}  |  {koyu:135°:} sin 135° = {kesir:{kok:2}|2}, cos 135° = -{kesir:{kok:2}|2}\n• {koyu:60°:} sin 60° = {kesir:{kok:3}|2}, cos 60° = {kesir:1|2}  |  {koyu:120°:} sin 120° = {kesir:{kok:3}|2}, cos 120° = -{kesir:1|2}"
+   }
+  }
+ ],
+ "ornekler": [
+  {
+   "soru": "Bir ABC üçgeninde m(B) = 30°, m(C) = 45° ve |AC| = b = 8 cm olduğuna göre |AB| = c kenarının uzunluğu kaç cm’dir?",
+   "cevap": "İki açı ve bir kenar bilindiği için {koyu:Sinüs Teoremi} uygulanır: {kesir:b|sin B} = {kesir:c|sin C} => {kesir:8|sin 30°} = {kesir:c|sin 45°}. Değerleri yerine yazalım: sin 30° = {kesir:1|2} ve sin 45° = {kesir:{kok:2}|2} olduğundan 8 . 2 = c . {kesir:2|{kok:2}} => 16 = {kesir:2c|{kok:2}} => {koyu:c = 8{kok:2} cm} bulunur."
+  },
+  {
+   "soru": "Bir ABC üçgeninde |AB| = c = 5 cm, |AC| = b = 8 cm ve m(A) = 60° olduğuna göre |BC| = a kenarının uzunluğu kaç cm’dir?",
+   "cevap": "İki kenar ve aralarındaki açı bilindiği için {koyu:Kosinüs Teoremi} uygulanır: {us:a|2} = {us:b|2} + {us:c|2} - 2.b.c.cos A => {us:a|2} = {us:8|2} + {us:5|2} - 2 . 8 . 5 . cos 60°. cos 60° = {kesir:1|2} olduğundan {us:a|2} = 64 + 25 - 80 . {kesir:1|2} = 89 - 40 = 49 => {koyu:a = 7 cm} bulunur."
+  },
+  {
+   "soru": "Kenar uzunlukları a = {kok:19} br, b = 2 br ve c = 3 br olan bir ABC üçgeninde A açısının ölçüsü kaç derecedir?",
+   "cevap": "Üç kenar uzunluğu bilindiği için A açısına göre {koyu:Kosinüs Teoremi} yazılır: {us:a|2} = {us:b|2} + {us:c|2} - 2.b.c.cos A => 19 = 4 + 9 - 2 . 2 . 3 . cos A => 19 = 13 - 12 . cos A => 6 = -12 . cos A => cos A = -{kesir:1|2} bulunur. Kosinüsü -{kesir:1|2} olan geniş açı {koyu:m(A) = 120°}dir."
+  },
+  {
+   "soru": "Bir ABC üçgeninde m(A) = 150° ve |BC| = a = 12 cm olduğuna göre bu üçgenin çevrel çemberinin yarıçapı (R) kaç cm’dir?",
+   "cevap": "Sinüs teoremine göre {kesir:a|sin A} = 2R eşitliği geçerlidir. sin 150° = sin 30° = {kesir:1|2} olduğundan {kesir:12|1/2} = 2R => 24 = 2R => {koyu:R = 12 cm} bulunur."
+  },
+  {
+   "soru": "Kenar uzunlukları |AB| = 6 cm, |BC| = 10 cm ve m(B) = 120° olan ABC üçgeninin alanı kaç {us:cm|2}dir?",
+   "cevap": "Sinüs alan formülüne göre Alan(ABC) = {kesir:1|2} . c . a . sin B = {kesir:1|2} . 6 . 10 . sin 120°. sin 120° = sin 60° = {kesir:{kok:3}|2} olduğundan Alan(ABC) = 30 . {kesir:{kok:3}|2} = {koyu:15{kok:3} {us:cm|2}} bulunur."
+  }
+ ],
+ "etkinlikler": [
+  {
+   "tur": "coktan",
+   "soru": "Bir ABC üçgeninde |BC| = a = 6{kok:3} cm ve m(A) = 60° olduğuna göre bu üçgenin çevrel çemberinin yarıçapı (R) kaç cm’dir?",
+   "secenekler": [
+    "3",
+    "3{kok:3}",
+    "6",
+    "6{kok:3}",
+    "12"
+   ],
+   "dogru": 2,
+   "aciklama": "Sinüs teoremine göre a / sin A = 2R => 6{kok:3} / ({kok:3}/2) = 12 = 2R => R = 6 cm bulunur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir ABC üçgeninde |AB| = 4 cm, |BC| = 6 cm ve m(B) = 120° olduğuna göre |AC| = b uzunluğu kaç cm’dir?",
+   "secenekler": [
+    "2{kok:7}",
+    "2{kok:13}",
+    "2{kok:19}",
+    "8",
+    "10"
+   ],
+   "dogru": 2,
+   "aciklama": "Kosinüs teoreminden b² = 4² + 6² - 2.4.6.cos 120° = 16 + 36 - 48.(-1/2) = 52 + 24 = 76 => b = {kok:76} = 2{kok:19} cm olur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir ABC üçgeninin kenar uzunlukları arasında a² = b² + c² + b.c bağıntısı bulunduğuna göre A açısının ölçüsü kaç derecedir?",
+   "secenekler": [
+    "30°",
+    "60°",
+    "120°",
+    "135°",
+    "150°"
+   ],
+   "dogru": 2,
+   "aciklama": "Kosinüs teoremi a² = b² + c² - 2.b.c.cos A ile verilen ifade karşılaştırıldığında -2.b.c.cos A = +b.c => cos A = -1/2 bulunur. Buradan m(A) = 120° elde edilir."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Bir ABC üçgeninde m(A) = 45°, m(C) = 30° ve |AB| = c = 10 cm olduğuna göre |BC| = a uzunluğu kaç cm’dir?",
+   "secenekler": [
+    "5{kok:2}",
+    "10",
+    "10{kok:2}",
+    "10{kok:3}",
+    "20"
+   ],
+   "dogru": 2,
+   "aciklama": "Sinüs teoremine göre a / sin 45° = 10 / sin 30° => a / ({kok:2}/2) = 10 / (1/2) = 20 => a = 10{kok:2} cm bulunur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "Kenar uzunlukları 5 cm, 6 cm ve 7 cm olan bir ABC üçgeninde en büyük iç açının kosinüsü kaçtır?",
+   "secenekler": [
+    "1/5",
+    "1/3",
+    "2/5",
+    "1/2",
+    "3/5"
+   ],
+   "dogru": 0,
+   "aciklama": "En büyük açı en uzun kenar olan 7 cm’nin karşısındadır: 7² = 5² + 6² - 2.5.6.cos A => 49 = 25 + 36 - 60.cos A => 60.cos A = 12 => cos A = 12/60 = 1/5 bulunur."
+  },
+  {
+   "tur": "dy",
+   "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+   "ifadeler": [
+    {
+     "metin": "Bir üçgende kenar uzunluklarının karşılarındaki açıların sinüslerine oranı çevrel çemberin çapına (2R) eşittir.",
+     "dogru": true,
+     "aciklama": "Sinüs teoremine göre a/sin A = b/sin B = c/sin C = 2R eşitliği geçerlidir."
+    },
+    {
+     "metin": "Kosinüs teoreminde iki kenar arasındaki açı 90° olduğunda teorem Pisagor bağıntısına dönüşür.",
+     "dogru": true,
+     "aciklama": "cos 90° = 0 olduğundan -2.b.c.cos 90° terimi yok olur ve a² = b² + c² kalır."
+    },
+    {
+     "metin": "Birbirini 180°’ye tamamlayan iki açının kosinüs değerleri birbirine eşittir (cos 120° = cos 60°).",
+     "dogru": false,
+     "aciklama": "Yanlıştır; bütünler açıların sinüsleri eşit, kosinüsleri ise zıt işaretlidir: cos 120° = -cos 60° = -1/2."
+    },
+    {
+     "metin": "Üç kenar uzunluğu bilinen bir üçgenin iç açılarından birinin kosinüsünü bulmak için Kosinüs Teoremi kullanılır.",
+     "dogru": true,
+     "aciklama": "KKK durumunda herhangi bir açının kosinüsü doğrudan kosinüs teoremiyle hesaplanır."
+    },
+    {
+     "metin": "Bir ABC üçgeninde a² > b² + c² eşitsizliği sağlanıyorsa A açısı dar açıdır.",
+     "dogru": false,
+     "aciklama": "Yanlıştır; a² > b² + c² ise cos A < 0 demektir ve A açısı geniş açıdır (m(A) > 90°)."
+    }
+   ]
+  },
+  {
+   "tur": "eslestir",
+   "soru": "Aşağıdaki trigonometrik bağıntıları ve değerleri doğru karşılıklarıyla eşleştiriniz.",
+   "ciftler": [
+    [
+     "a / sin A = b / sin B = c / sin C",
+     "2R (Çevrel çemberin çapı)"
+    ],
+    [
+     "a² = b² + c² - 2.b.c.cos A",
+     "Kosinüs Teoremi"
+    ],
+    [
+     "(1/2) . a . b . sin C",
+     "Üçgenin Sinüslü Alan Formülü"
+    ],
+    [
+     "sin 150°",
+     "1/2"
+    ],
+    [
+     "cos 120°",
+     "-1/2"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+   "cumleler": [
+    {
+     "metin": "Bir üçgende iki açı ve bir kenar uzunluğu verildiğinde diğer kenarı bulmak için ___ teoremi kullanılır.",
+     "cevap": "sinüs"
+    },
+    {
+     "metin": "İki kenar uzunluğu ve aralarındaki açı verildiğinde karşı kenarı bulmak için ___ teoremi uygulanır.",
+     "cevap": "kosinüs"
+    },
+    {
+     "metin": "Üçgenin üç köşesinden geçen çembere ___ çember adı verilir.",
+     "cevap": "çevrel"
+    },
+    {
+     "metin": "90° ile 180° arasındaki geniş açıların kosinüs değerleri daima ___ işaretlidir.",
+     "cevap": "negatif"
+    },
+    {
+     "metin": "Kosinüs teoreminin ispatında sin²C + cos²C = ___ temel trigonometrik özdeşliğinden yararlanılır.",
+     "cevap": "1"
+    }
+   ],
+   "fazla": [
+    "iç teğet",
+    "pozitif"
+   ]
+  },
+  {
+   "tur": "ogretici",
+   "soru": "Bir ABC üçgeninde |AB| = 3 br, |AC| = 5 br ve |BC| = 7 br olduğuna göre m(A) açısının ölçüsünü kosinüs teoremini kullanarak adım adım bulunuz.",
+   "ipuclari": [
+    "1. İpucu: A açısının karşısındaki kenar a = 7 br olduğundan a² = b² + c² - 2.b.c.cos A bağıntısını yazınız.",
+    "2. İpucu: 49 = 25 + 9 - 2.5.3.cos A denkleminden cos A değerini çekip hangi özel açıya karşılık geldiğini belirleyiniz."
+   ],
+   "cevap": "Kosinüs teoremine göre a² = b² + c² - 2.b.c.cos A formülünde a = 7, b = 5 ve c = 3 değerlerini yerine yazalım: 7² = 5² + 3² - 2 . 5 . 3 . cos A => 49 = 25 + 9 - 30 . cos A => 49 = 34 - 30 . cos A => 15 = -30 . cos A => cos A = -15/30 = -1/2 bulunur. Kosinüsü +1/2 olan dar açı 60° olduğundan, kosinüsü -1/2 olan bütünler geniş açı 180° - 60° = 120°’dir. Dolayısıyla m(A) = 120° bulunur."
+  }
+ ]
+}
