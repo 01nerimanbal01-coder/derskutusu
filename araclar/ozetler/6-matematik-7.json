@@ -1,337 +1,227 @@
 {
+ "ad": "6-matematik-7",
  "sinif": 6,
  "ders": "matematik",
+ "ders_adi": "Matematik",
  "hafta": 7,
  "tarih": "26-30 Ekim 2026",
- "yayin_tarihi": "2026-10-13",
+ "yayin_tarihi": "2026-10-28",
  "unite": "Sayılar ve Nicelikler (2)",
- "konu": "Kesir-Bölme İlişkisi",
+ "konu": "Kesir - Bölme İlişkisi, Sonlu ve Devirli Ondalık Gösterimler ile Ondalık Gösterimleri Yuvarlama",
  "ciktilar": [
-  "MAT.6.1.6. Kesir ve bölme işlemi arasındaki ilişkiye yönelik tümevarımsal akıl yürütebilme"
+  "Kesir ile bölme işlemi arasındaki ilişkiyi kullanarak kesirleri sonlu veya devirli ondalık gösterime dönüştürür.",
+  "Devirli ondalık gösterimleri devir çizgisiyle yazar ve devirli sayıları basamaklarını açarak karşılaştırır.",
+  "Ondalık gösterimleri verilen basamağa (birler, onda birler, yüzde birler) kadar yuvarlar ve günlük hayat tahminlerinde kullanır."
  ],
- "giris": "Beşinci ve altıncı haftalarda ondalık gösterimleri basamak değerlerine ayırdın; 0,75 gibi bir sayıyı {kesir:7|10} + {kesir:5|100} biçiminde, paydası 10, 100 ve 1000 olan kesirlerle yeniden yazmayı öğrendin. Geçen hafta ise kesir ile bölme işlemi arasındaki bağı keşfetmeye başladın. Bu hafta o bağı derinleştireceksin: payı paydaya bölerek kesirlerin ondalık gösterimlerini bulacak, hangi kesirlerde bölmenin bittiğini, hangilerinde sonsuza dek sürdüğünü hem kâğıt-kalemle hem hesap makinesiyle gözleyecek ve gözlemlerinden genel kurallar çıkaracaksın. Cumhuriyet Bayramı’nın da kutlandığı bu kısa haftada hesap makineni yanında bulundur.",
+ "giris": "3 tane simidi 4 arkadaş eşit olarak paylaştığında her birine düşen {kesir:3|4} simidi ondalık olarak nasıl yazarız? Peki ya 1 simidi 3 arkadaş paylaştığında ortaya çıkan {kesir:1|3} kesrini bölmeye kalktığımızda neden bölme işlemi hiç bitmez ve {koyu:0,333...} şeklinde sonsuza kadar devam eder? Bu haftaki dersimizde {koyu:kesir ile bölme işlemi arasındaki ilişkiyi}, {koyu:sonlu ve devirli ondalık gösterimleri} ve ondalık sayıları istenen basamağa {koyu:yuvarlama} kurallarını öğreneceğiz.",
+ "ozet": [
+  "{koyu:Kesir - Bölme İlişkisi:} Her {kesir:a|b} kesri aynı zamanda {koyu:payın paydaya bölünmesi (a ÷ b)} demektir. Burada {koyu:a bölünen}, {koyu:b bölen}, kesir değeri ise {koyu:bölümdür}.",
+  "{koyu:Sonlu Ondalık Gösterim:} Pay paydaya bölündüğünde kalan {koyu:0 (sıfır)} oluyorsa elde edilen ondalık gösterime {koyu:sonlu ondalık gösterim} denir (ör. {kesir:3|4} = 3 ÷ 4 = {koyu:0,75}).",
+  "{koyu:Devirli Ondalık Gösterim:} Bölme işleminde kalan hiçbir zaman sıfır olmuyor ve virgülden sonraki rakamlar belli bir kurala göre sonsuza kadar tekrar ediyorsa buna {koyu:devirli ondalık gösterim} denir ve tekrar eden kısmın üzerine {koyu:devir çizgisi} konur.",
+  "{koyu:Ondalık Gösterimleri Yuvarlama:} Yuvarlanacak basamağın {koyu:hemen sağındaki ilk rakama} bakılır; bu rakam {koyu:0, 1, 2, 3, 4} ise basamak {koyu:değişmez}, {koyu:5, 6, 7, 8, 9} ise basamak {koyu:1 artırılır} ve sağdaki rakamlar silinir.",
+  "{koyu:Devirli Sayıları Karşılaştırma:} Devirli ondalık gösterimler sıralanırken veya yuvarlanırken {koyu:devir çizgisinin altındaki rakamlar birkaç kez tekrar edilerek açık hâli} yazılır ve basamaklar soldan sağa karşılaştırılır."
+ ],
  "bolumler": [
   {
-   "baslik": "Kesir çizgisi bir bölme işaretidir",
+   "baslik": "1. Kesir - Bölme İlişkisi: Sonlu ve Devirli Ondalık Gösterimler",
    "metin": [
-    "Dört arkadaş 3 pizzayı eşit paylaşmak istiyor diyelim; sen de aralarındasın. Her pizzayı 4 eşit dilime böldüğünüzde 12 dilim olur ve herkese 3 dilim düşer. Her dilim bir pizzanın {kesir:1|4}’ü olduğundan senin payın {kesir:3|4} pizzadır. Aynı payı başka yoldan da bulabilirsin: 3 pizzayı 4 kişiye bölmek 3 ÷ 4 işlemidir. İki yol aynı sonucu verdiğine göre {kesir:3|4} = 3 ÷ 4 olmalıdır.",
-    "Bu gözlem her kesir için geçerlidir: kesir çizgisi aslında bir bölme işaretidir. Pay bölünen, payda bölendir. {kesir:1|2} = 1 ÷ 2, {kesir:7|10} = 7 ÷ 10 ve {kesir:7|4} = 7 ÷ 4 yazabilirsin. Payı paydasından büyük olan kesirlerde bölüm 1’den büyük çıkar; 7 ÷ 4 = 1,75 olduğu gibi. Paydanın sıfır olamayacağını da unutma; sıfıra bölme tanımlı değildir.",
-    "Bir kesrin ondalık gösterimi de bu bölmenin sonucudur. Paydası 10, 100 ya da 1000 olan kesirleri geçen haftalardan tanıyorsun: {kesir:7|10} = 0,7 ve {kesir:35|100} = 0,35. Paydası 4, 8, 3 ya da 7 olan bir kesirde ise ondalık gösterimi görmek için payı paydaya bölersin. Örneğin 3 ÷ 4 = 0,75 olduğundan {kesir:3|4} = 0,75’tir. Bunu 10 × 10’luk kareli kâğıtta da görebilirsin: 100 karenin {kesir:3|4}’ü 75 karedir, yani {kesir:75|100} = 0,75.",
-    "Uzunluk modeli de aynı sonucu verir. 1 metrelik bir şeridin {kesir:3|4}’ünü almak istediğinde şeridi 4 eşit parçaya bölersin; her parça 25 santimetredir ve üç parça 75 santimetre, yani 0,75 metre eder. Kesir, bölme ve ondalık gösterim böylece aynı sayının üç farklı yüzü olur."
+    "Bir kesri ondalık gösterime çevirmenin iki temel yolu vardır:\n1. {koyu:Genişletme veya Sadeleştirme Yolu:} Paydası 10, 100 veya 1000 yapılabilen kesirler genişletilir:\n• {kesir:3|5} = {kesir:6|10} = {koyu:0,6}   |   {kesir:7|25} = {kesir:28|100} = {koyu:0,28}   |   {kesir:9|8} = {kesir:1125|1000} = {koyu:1,125}.\n2. {koyu:Payı Paydaya Bölme Yolu (a ÷ b):} Paydası genişletilerek 10, 100, 1000 yapılamayan kesirlerde (örneğin paydası 3, 6, 7, 9, 11 olan sadeleşmiş kesirlerde) doğrudan {koyu:pay paydaya bölünür}:\n• {koyu:Sonlu Ondalık Örneği:} {kesir:7|4} kesri için 7’yi 4’e böleriz: 7’de 4 bir kere (1 × 4 = 4, kalan 3); bölüme virgül, kalana sıfır atarız -> 30’da 4 yedi kere (28, kalan 2) -> 20’de 4 beş kere (20, kalan 0). Sonuç: {koyu:1,75} (kalan sıfır olduğu için {koyu:sonlu ondalık}).",
+    "• {koyu:Devirli Ondalık Örneği:} {kesir:5|3} kesri için 5’i 3’e böldüğümüzde bölüm {koyu:1,666...} şeklinde sonsuza kadar devam eder. Tekrar eden {koyu:6} rakamının üzerine yatay bir çizgi ({koyu:devir çizgisi}) konularak gösterilir.\n• {koyu:Dikkat:} Devir çizgisi virgülden sonraki tüm rakamların üzerine değil, {koyu:yalnızca tekrar eden rakam veya rakam grubunun} üzerine konur!\n  - 0,4444... -> Yalnızca {koyu:4} devrediyor.\n  - 1,2777... -> 2 tekrar etmiyor, yalnızca {koyu:7} devrediyor.\n  - 3,181818... -> {koyu:18} ikilisi birlikte devrediyor."
    ],
-   "tablo": {
-    "basliklar": ["Kesir", "Bölme işlemi", "Ondalık gösterim"],
-    "satirlar": [
-     ["{kesir:1|2}", "1 ÷ 2", "0,5"],
-     ["{kesir:3|4}", "3 ÷ 4", "0,75"],
-     ["{kesir:7|10}", "7 ÷ 10", "0,7"],
-     ["{kesir:5|8}", "5 ÷ 8", "0,625"],
-     ["{kesir:7|4}", "7 ÷ 4", "1,75"]
-    ]
-   },
    "kutu": {
-    "tur": "tanim",
-    "baslik": "Kesir ve bölme",
-    "metin": "Bir kesir, payının paydasına bölünmesi demektir: {kesir:a|b} = a ÷ b (b sıfır değil). Kesrin ondalık gösterimi bu bölmenin sonucudur: {kesir:3|4} = 3 ÷ 4 = 0,75."
+    "tur": "ipucu",
+    "baslik": "Devirli Ondalık Sayıları Nasıl Sıralarız?",
+    "metin": "Örneğin {koyu:A = 2,34 (sadece 4 devirli)}, {koyu:B = 2,34 (34 devirli)} ve {koyu:C = 2,34 (sonlu)} sayılarını karşılaştırırken hepsini virgülden sonra 4 basamak olacak şekilde açarız:\n• A = 2,34{koyu:44}...\n• B = 2,34{koyu:34}...\n• C = 2,34{koyu:00}\nBинdebirler basamağına (4 > 3 > 0) bakınca sıralamanın {koyu:A > B > C} olduğu hemen görülür!"
    }
   },
   {
-   "baslik": "Kâğıt-kalemle bölmeyi sürdürmek",
+   "baslik": "2. Ondalık Gösterimleri İstenen Basamağa Yuvarlama",
    "metin": [
-    "Bölme işlemini kalan sıfır olmadığı hâlde bırakmak zorunda değilsin; bölüme virgül koyup devam edebilirsin. 3 ÷ 4 işlemine bak: 3, 4’ten küçük olduğu için bölüme 0 yazar ve hemen sağına virgül koyarsın. Sonra 3’ün sağına bir 0 ekleyip 30 elde edersin; 30 ÷ 4 = 7, kalan 2’dir. Kalanın sağına yine 0 ekler, 20 ÷ 4 = 5 bulursun ve kalan 0 olur. Bölme bitmiştir: 3 ÷ 4 = 0,75.",
-    "Aynı yolu 5 ÷ 8 için izle: 50 ÷ 8 = 6, kalan 2; 20 ÷ 8 = 2, kalan 4; 40 ÷ 8 = 5, kalan 0. Sonuç 0,625’tir. Her adımda bölüme bir basamak eklenir; kalan sıfır olduğu anda işlem biter. Bu yolla bulduğun sonucu geçen haftaki bilginle sağlayabilirsin: {kesir:5|8} kesrinin payını ve paydasını 125 ile genişletirsen {kesir:625|1000} = 0,625 elde edersin.",
-    "Şimdi 1 ÷ 3 işlemini dene. 10 ÷ 3 = 3, kalan 1. Kalanın sağına 0 ekleyince yine 10 ÷ 3 = 3 ve kalan yine 1 olur. Kaç adım ilerlersen ilerle hep aynı bölmeyi yaparsın; kalan hiçbir zaman sıfırlanmaz ve bölüme sürekli 3 eklenir: 1 ÷ 3 = 0,333… Burada üç nokta, 3 rakamının sonsuza kadar tekrar ettiğini anlatır.",
-    "5 ÷ 6 işlemi biraz farklı başlar: 50 ÷ 6 = 8, kalan 2; 20 ÷ 6 = 3, kalan 2; 20 ÷ 6 = 3, kalan 2… İlk basamak olan 8 bir kez yazılır, ardından 3 rakamı tekrar edip durur: 5 ÷ 6 = 0,8333… Kalanı izlemek, bölmeyi ne zaman bırakabileceğini de söyler: daha önce gördüğün bir kalan yeniden karşına çıktığında bundan sonrası tekrar edecektir."
+    "Günlük hayatta alışveriş fişlerinde, yakıt hesaplarında veya uzunluk ölçümlerinde çok basamaklı ondalık gösterimleri {koyu:yaklaşık değerleriyle ifade etmek ve işlem sonucunu tahmin etmek} için {koyu:yuvarlama} yaparız.\nOndalık bir gösterimi verilen bir basamağa yuvarlarken şu 3 adım uygulanır:\n1. Önce yuvarlanması istenen basamak (birler, onda birler veya yüzde birler) belirlenir.\n2. Bu basamağın {koyu:hemen sağındaki ilk rakama} bakılır:\n• Sağdaki rakam {koyu:5’ten küçükse (0, 1, 2, 3 veya 4 ise)}: Yuvarlanan basamaktaki rakam {koyu:aynen kalır (değişmez)} ve sağındaki tüm rakamlar silinir.\n• Sağdaki rakam {koyu:5 veya 5’ten büyükse (5, 6, 7, 8 veya 9 ise)}: Yuvarlanan basamaktaki rakam {koyu:1 artırılır} ve sağındaki tüm rakamlar silinir.",
+    "{koyu:Uygulama Örneği:} {koyu:18,648} ondalık gösterimini üç farklı basamağa yuvarlayalım:\n• {koyu:Birler basamağına (en yakın doğal sayıya) yuvarlama:} Birler basamağı {koyu:8}’dir. Hemen sağında (onda birlerde) {koyu:6} vardır. 6 ≥ 5 olduğu için 8 bir artırılır -> {koyu:19} olur.\n• {koyu:Onda birler basamağına yuvarlama:} Onda birler basamağı {koyu:6}’dır. Hemen sağında {koyu:4} vardır. 4 < 5 olduğu için 6 değişmez -> {koyu:18,6} olur.\n• {koyu:Yüzde birler basamağına yuvarlama:} Yüzde birler basamağı {koyu:4}’tür. Hemen sağında {koyu:8} vardır. 8 ≥ 5 olduğu için 4 bir artırılır -> {koyu:18,65} olur."
    ],
-   "kutular": [
-    {
-     "tur": "kural",
-     "baslik": "Bölmeyi sürdürme",
-     "metin": "Kalan sıfır değilse kalanın sağına 0 ekleyip bölmeye devam et. Bölüme ilk 0’ı eklediğin adımda virgül koymayı unutma; bundan sonra bulduğun her rakam virgülün sağına yazılır."
-    },
-    {
-     "tur": "ipucu",
-     "metin": "Her adımda kalanı not et. Aynı kalan ikinci kez çıktığında bölme döngüye girmiştir; o andan sonra bölüm basamakları da aynı sırayla tekrar eder."
-    }
-   ]
-  },
-  {
-   "baslik": "Sonlu ve devirli ondalık gösterimler",
-   "metin": [
-    "Payı paydasına bölünen kesirler iki gruba ayrılır. Bölme bir süre sonra sıfır kalanla bitiyorsa kesrin ondalık gösterimi sonludur; virgülden sonra belirli sayıda basamak bulunur. {kesir:1|4} = 0,25, {kesir:3|8} = 0,375 ve {kesir:7|20} = 0,35 böyledir. Bölme hiç bitmiyor, virgülden sonra aynı rakam ya da aynı rakam grubu sonsuza kadar tekrar ediyorsa gösterim devirlidir; {kesir:1|3} = 0,333… ve {kesir:2|9} = 0,222… gibi.",
-    "Devirli gösterimde tekrar eden parçaya devreden kısım denir. {kesir:1|3} için devreden kısım tek rakamdır: 3. {kesir:2|11} = 0,1818… kesrinde 18 ikilisi, {kesir:1|7} = 0,142857142857… kesrinde ise 142857 altılısı tekrar eder. Bazı kesirlerde tekrar hemen virgülden sonra başlamaz: {kesir:5|6} = 0,8333… ve {kesir:5|12} = 0,41666… gösterimlerinde önce tekrar etmeyen bir iki basamak gelir, devir ondan sonra başlar.",
-    "Peki bölme neden ya biter ya da döngüye girer? Cevap kalanlarda gizli. Bir sayıyı 7’ye böldüğünde kalan yalnız 0, 1, 2, 3, 4, 5 ya da 6 olabilir. Kalan 0 çıkarsa bölme biter. Çıkmazsa elinde en çok altı farklı kalan vardır; en geç yedinci adımda bir kalan ikinci kez karşına çıkar ve o andan sonra her şey yeniden başlar. 1 ÷ 7 işleminde kalanlar sırayla 3, 2, 6, 4, 5, 1 olur; sonra yine 3 gelir ve 142857 bloğu tekrar eder.",
-    "Üç noktayı doğru okumak önemli. 0,333… ile 0,333 aynı sayı değildir: ikincisi üç basamaklı sonlu bir sayıdır ve {kesir:1|3}’ten biraz küçüktür. Bunu 3 ile çarparak görebilirsin: 3 × 0,333 = 0,999 eder, 1 etmez. Oysa {kesir:1|3} kesrinin üç katı tam olarak 1’dir. Üç nokta, tekrarın hiç bitmediğini söyler; onu yazmayı unutursan bambaşka bir sayıdan söz etmiş olursun."
-   ],
-   "tablo": {
-    "basliklar": ["Kesir", "Ondalık gösterim", "Tür", "Devreden kısım"],
-    "satirlar": [
-     ["{kesir:1|4}", "0,25", "sonlu", "—"],
-     ["{kesir:3|8}", "0,375", "sonlu", "—"],
-     ["{kesir:1|3}", "0,333…", "devirli", "3"],
-     ["{kesir:5|6}", "0,8333…", "devirli", "3"],
-     ["{kesir:2|11}", "0,1818…", "devirli", "18"],
-     ["{kesir:1|7}", "0,142857142857…", "devirli", "142857"]
-    ]
-   },
-   "kutular": [
-    {
-     "tur": "tanim",
-     "baslik": "Sonlu ve devirli",
-     "metin": "Bölme sıfır kalanla bitiyorsa kesrin ondalık gösterimi sonludur: {kesir:3|8} = 0,375. Bölme bitmiyor, aynı rakam ya da rakam grubu sonsuza kadar tekrar ediyorsa gösterim devirlidir: {kesir:2|3} = 0,666…"
-    },
-    {
-     "tur": "dikkat",
-     "metin": "0,333… yazarken üç noktayı atlama. 0,333 sonlu bir sayıdır ve {kesir:1|3}’e eşit değildir; üç nokta tekrarın sonsuza kadar sürdüğünü gösterir."
-    }
-   ]
-  },
-  {
-   "baslik": "Hesap makinesiyle gözlem yapmak",
-   "metin": [
-    "Kâğıt-kalemle bulduğun sonuçları hesap makinesiyle kontrol et. 3 ÷ 4 tuşladığında ekranda 0,75, 5 ÷ 8 için 0,625 görürsün; bölme sonlu olduğu için ekrandaki sayı kısadır ve sonu bellidir. 1 ÷ 3 tuşladığında ise ekran 3 rakamlarıyla dolar: 0,3333333333. Makine üç nokta koymaz; tekrarı sen fark edersin.",
-    "Ekranın sınırlı olduğunu aklında tut. Çoğu hesap makinesi virgülden sonra 8, 10 ya da 12 basamak gösterir; sığmayan kısmı atarken bazıları son basamağı yuvarlar. Virgülden sonra 10 basamak gösteren bir makinede 2 ÷ 3 için 0,6666666667 görebilirsin; sondaki 7 devrin parçası değildir, ekranın yuvarlamasıdır. Aynı şekilde 1 ÷ 7 için 0,1428571429 görürsün; gerçek gösterim 0,142857142857… biçiminde sürer. Kâğıt-kalemle bölme sana örüntünün kendisini, hesap makinesi ise örüntüden bir pencereyi gösterir.",
-    "Hesap makinesinin asıl gücü hızıdır: dakikalar içinde onlarca kesri deneyip sonuçları bir tabloya yazabilirsin. Paydası 2, 4, 5, 8, 10, 16, 20 ve 25 olan kesirleri dene; hepsinin ekranda kısa, sonlu bir gösterimi olduğunu göreceksin. Paydası 3, 6, 7, 9, 11, 12 ve 15 olan, daha fazla sadeleşmeyen kesirlerde ise ekran dolar ve rakamlar tekrar eder. Aşağıdaki tablo, bir sonraki bölümde yapacağın genellemenin ham maddesidir."
-   ],
-   "tablo": {
-    "basliklar": ["Payda", "Denediğin kesir", "Ekranda gördüğün", "Gözlem"],
-    "satirlar": [
-     ["4", "{kesir:1|4}", "0,25", "sonlu"],
-     ["5", "{kesir:3|5}", "0,6", "sonlu"],
-     ["8", "{kesir:7|8}", "0,875", "sonlu"],
-     ["16", "{kesir:1|16}", "0,0625", "sonlu"],
-     ["25", "{kesir:7|25}", "0,28", "sonlu"],
-     ["3", "{kesir:2|3}", "0,6666666667", "devirli"],
-     ["6", "{kesir:1|6}", "0,1666666667", "devirli"],
-     ["7", "{kesir:1|7}", "0,1428571429", "devirli"],
-     ["9", "{kesir:4|9}", "0,4444444444", "devirli"],
-     ["11", "{kesir:3|11}", "0,2727272727", "devirli"],
-     ["12", "{kesir:7|12}", "0,5833333333", "devirli"]
-    ]
-   },
-   "kutular": [
-    {
-     "tur": "dikkat",
-     "baslik": "Son basamağa aldanma",
-     "metin": "Ekrandaki son rakam yuvarlanmış olabilir. 2 ÷ 3 için gördüğün 0,6666666667 sayısındaki 7, devreden kısım değil, ekranın sığdıramadığı basamakların yuvarlanmasıdır. Devri okurken son basamağı hesaba katma."
-    },
-    {
-     "tur": "ipucu",
-     "metin": "Gözlemlerini düzenli bir tabloya yaz: kesir, ekrandaki sonuç ve sonlu mu devirli mi olduğu. Tablodaki satırlar çoğaldıkça örüntü kendini gösterir."
-    }
-   ]
-  },
-  {
-   "baslik": "Gözle, tahmin et, sına, genelle",
-   "metin": [
-    "Tek tek örneklerden yola çıkıp hepsini kapsayan bir kurala ulaşmaya tümevarımsal akıl yürütme denir. Bu hafta yaptığın her şey bu yolun adımlarıdır: önce bölme işlemleriyle gözlem toplarsın, gözlemlerde bir örüntü sezip tahmin yürütürsün, tahminini yeni örneklerle sınarsın ve her sınamadan geçerse kuralı genellersin. Tek bir ters örnek bile tahmini çürütmeye yeter; o zaman tahminini düzeltip yeniden sınarsın.",
-    "Küçük bir örnekle başlayalım. 1 ÷ 9 = 0,111…, 2 ÷ 9 = 0,222… ve 4 ÷ 9 = 0,444… sonuçlarını gözlediğinde devreden rakamın payın kendisi olduğunu sezersin. Tahminin şudur: {kesir:7|9} = 0,777… olmalı. Hesap makinesinde 7 ÷ 9 tuşlayınca ekranda 0,7777777778 görürsün; son basamak yuvarlama, gerisi tahmininle uyumludur. Artık genelleyebilirsin: payı 1’den 8’e kadar olan dokuzda birlik kesirlerde devreden rakam payın kendisidir.",
-    "Asıl büyük soru şu: bir kesrin sonlu mu devirli mi olduğunu bölmeden önce bilebilir misin? Tablolarına dönüp paydaları karşılaştır. Sonlu çıkan kesirlerin paydaları 2, 4, 5, 8, 10, 16, 20, 25; devirli çıkanlarınki 3, 6, 7, 9, 11, 12, 15. Üçüncü haftada öğrendiğin asal çarpanlara ayırmayı kullanırsan sır çözülür: 4 = 2 × 2, 8 = 2 × 2 × 2, 20 = 2 × 2 × 5 ve 25 = 5 × 5; sonlu grubun paydalarında 2 ve 5 dışında asal çarpan yoktur. 6 = 2 × 3, 12 = 2 × 2 × 3 ve 15 = 3 × 5 ise araya 3 girer; 7 ve 11 zaten başka asal sayılardır.",
-    "Bunun nedeni geçen haftalardan tanıdığın paydalarda saklı. Sonlu bir ondalık gösterim, paydası 10, 100, 1000 gibi sayılardan biri olan bir kesirdir ve bu sayılar 10 = 2 × 5, 100 = 2 × 2 × 5 × 5 biçiminde yalnız 2 ve 5 çarpanlarından oluşur. Paydasında sadece 2 ve 5 bulunan bir kesri genişleterek bu paydalardan birine ulaşabilirsin: {kesir:3|8} = {kesir:375|1000} = 0,375. Paydada 3 varsa bu imkânsızdır; çünkü 10, 100, 1000 sayılarının rakamları toplamı 1’dir, hiçbiri 3’e bölünmez. {kesir:1|3} hiçbir zaman paydası 10, 100, 1000 gibi bir sayı olan bir kesre dönüşemez, bu yüzden bölmesi bitmez."
-   ],
-   "kutular": [
-    {
-     "tur": "kural",
-     "baslik": "Payda kuralı",
-     "metin": "Sadeleştirilmiş bir kesrin paydasının asal çarpanları yalnız 2 ve 5 ise ondalık gösterimi sonludur; paydada 3, 7, 11 gibi başka bir asal çarpan varsa gösterim devirlidir."
-    },
-    {
-     "tur": "dikkat",
-     "baslik": "Önce sadeleştir",
-     "metin": "{kesir:3|6} kesrinin paydası 6 olsa da kesir {kesir:1|2}’ye sadeleşir ve 0,5 ile sonlu çıkar; {kesir:9|12} de {kesir:3|4} = 0,75 olur. Kuralı uygulamadan önce kesri en sade biçimine getir."
-    }
-   ]
-  },
-  {
-   "baslik": "Kalanlı bölme ve paylaştırma problemleri",
-   "metin": [
-    "Payı paydasından büyük bir kesri bölerken önce bir doğal sayı bölüm, sonra ondalık kısım gelir. 7 ÷ 4 işleminde 4, 7’nin içinde 1 kez vardır ve kalan 3’tür; yani {kesir:7|4} = 1 tam {kesir:3|4} kesridir. Bölmeyi sürdürürsen 30 ÷ 4 = 7, kalan 2 ve 20 ÷ 4 = 5, kalan 0 bulursun: 7 ÷ 4 = 1,75. Kalanlı bölmedeki kalan, ondalık kısmın nereden geldiğini gösterir: {kesir:3|4} = 0,75 olduğundan 1 + 0,75 = 1,75.",
-    "Paylaştırma problemleri bu bölmelerin günlük yaşamdaki hâlidir. 7 metrelik bir kurdeleyi 4 eşit parçaya kesersen her parça 7 ÷ 4 = 1,75 metre, yani 1 metre 75 santimetre olur. 5 litre limonatayı 8 eş bardağa paylaştırırsan her bardağa 5 ÷ 8 = 0,625 litre, yani 625 mililitre düşer. Sonucu birime çevirmek, ondalık gösterimi anlamlı kılar.",
-    "Her paylaşım bu kadar temiz bitmez. 10 lirayı 3 arkadaş eşit bölüşmek istediğinde 10 ÷ 3 = 3,333… bulursun. Para en küçük birim olan kuruşla sayıldığından virgülden sonra iki basamak kullanırsın: herkese 3 lira 33 kuruş düşer, 3 × 3,33 = 9,99 lira dağıtılmış olur ve 1 kuruş artar. Devirli gösterim sana tam eşit paylaşımın kuruşla mümkün olmadığını söyler; artan kuruşu ne yapacağınıza arkadaşlarınla birlikte karar verirsin.",
-    "Benzer biçimde 2 kilogram unu 3 eş torbaya bölüştürdüğünde her torbaya 2 ÷ 3 = 0,666… kilogram, yani 666,66… gram düşer. Terazi gramın altını göstermediği için her torbaya yaklaşık 667 gram koyarsın. Devirli sonuçları günlük yaşamda yuvarlayarak kullanırsın; ancak matematikte sayının kendisi yuvarlanmış hâli değil, sonsuza dek süren gösterimdir."
-   ],
-   "kutular": [
-    {
-     "tur": "hatirla",
-     "baslik": "Kalanlı bölme",
-     "metin": "Kalanlı bölmede bölünen = bölen × bölüm + kalan eşitliği geçerlidir: 7 = 4 × 1 + 3. Kalanın bölene oranı olan {kesir:3|4}, bölümün ondalık kısmını verir: 0,75."
-    },
-    {
-     "tur": "ipucu",
-     "metin": "Sonucu yorumlarken birimi düşün. 1 lira 100 kuruş, 1 metre 100 santimetre olduğundan bu birimlerde iki ondalık basamak; 1 litre 1000 mililitre olduğundan üç ondalık basamak anlamlıdır. Devirli sonuçları bu basamak sayısına göre yuvarlarsın."
-    }
-   ]
+   "kutu": {
+    "tur": "dikkat",
+    "baslik": "Devirli Sayı Yuvarlanırken Önce Devir Açılır!",
+    "metin": "Devirli bir ondalık gösterim yuvarlanırken {koyu:önce devreden rakamlar yan yana yazılır}, sonra sağdaki rakama bakılır!\n• Örneğin sadece 7 rakamı devreden {koyu:4,6777...} sayısını {koyu:yüzde birler} basamağına yuvarlarken: Yüzde birlerdeki 7’nin sağında yine {koyu:7} olduğu için (7 ≥ 5) sayı {koyu:4,68}’e yuvarlanır!"
+   }
   }
  ],
  "ornekler": [
   {
-   "soru": "{kesir:5|8} kesrinin ondalık gösterimini kâğıt-kalemle bölme yaparak bul ve sonucu hesap makinesiyle kontrol et.",
-   "cevap": "5, 8’den küçük olduğu için bölüme 0 yazıp virgül koyarsın ve 5’in sağına 0 eklersin. 50 ÷ 8 = 6, kalan 2; 20 ÷ 8 = 2, kalan 4; 40 ÷ 8 = 5, kalan 0. Kalan sıfırlandığı için bölme biter: {kesir:5|8} = 0,625. Hesap makinesinde 5 ÷ 8 tuşladığında ekranda da 0,625 görürsün; gösterim sonludur."
+   "soru": "11 / 6 kesrini bölme işlemi yaparak devirli ondalık gösterim şeklinde ifade ediniz ve hangi rakamın devrettiğini belirtiniz.",
+   "cevap": "11’i 6’ya bölelim: 11’de 6 bir kere (1 × 6 = 6, kalan 5). Bölüme virgül, kalana 0 koyarız: 50’de 6 sekiz kere (8 × 6 = 48, kalan 2). 20’de 6 üç kere (3 × 6 = 18, kalan 2). Kalan sürekli 2 olduğu için bölüm {koyu:1,8333...} şeklinde devam eder. Burada 8 tekrar etmez, {koyu:yalnızca 3 rakamı devreder}."
   },
   {
-   "soru": "{kesir:4|9} kesrinin ondalık gösterimini bul. Bölmenin bitip bitmeyeceğini kalanlara bakarak açıkla.",
-   "cevap": "40 ÷ 9 = 4, kalan 4. Kalanın sağına 0 ekleyince yine 40 ÷ 9 = 4 ve kalan yine 4 olur. Kalan ilk adımdan sonra kendini tekrar ettiği için bölme hiç bitmez ve bölüme sürekli 4 eklenir: {kesir:4|9} = 0,444… Gösterim devirlidir, devreden rakam 4’tür. Hesap makinesinin ekranında 0,4444444444 görürsün."
+   "soru": "34,752 ondalık gösterimini sırasıyla: a) Birler basamağına, b) Onda birler basamağına, c) Yüzde birler basamağına yuvarlayınız.",
+   "cevap": "a) {koyu:Birler basamağına:} 4’ün sağında 7 var (7 ≥ 5) -> {koyu:35}\nb) {koyu:Onda birler basamağına:} 7’nin sağında 5 var (5 ≥ 5) -> {koyu:34,8}\nc) {koyu:Yüzde birler basamağına:} 5’in sağında 2 var (2 < 5) -> {koyu:34,75} bulunur."
   },
   {
-   "soru": "{kesir:1|7} kesrinin ondalık gösteriminde devreden kısmı bul. Virgülden sonraki 10. basamakta hangi rakam vardır?",
-   "cevap": "Bölmeyi sürdür: 10 ÷ 7 = 1, kalan 3; 30 ÷ 7 = 4, kalan 2; 20 ÷ 7 = 2, kalan 6; 60 ÷ 7 = 8, kalan 4; 40 ÷ 7 = 5, kalan 5; 50 ÷ 7 = 7, kalan 1. Kalan 1 başa döndüğü için bundan sonrası tekrar eder: {kesir:1|7} = 0,142857142857… Devreden kısım 142857’dir ve 6 basamaklıdır. İlk altı basamak 1, 4, 2, 8, 5, 7; yedinciden itibaren aynı sıra yeniden başlar: 7. basamak 1, 8. basamak 4, 9. basamak 2, 10. basamak 8’dir."
-  },
-  {
-   "soru": "Bölme yapmadan {kesir:7|20}, {kesir:5|12}, {kesir:9|15} ve {kesir:11|16} kesirlerinin ondalık gösterimlerinin sonlu mu devirli mi olduğunu belirle; sonra hesap makinesiyle sına.",
-   "cevap": "Önce sadeleştir, sonra paydanın asal çarpanlarına bak. {kesir:7|20} sadeleşmez; 20 = 2 × 2 × 5 olduğundan sonludur, makinede 0,35 görürsün. {kesir:5|12} sadeleşmez; 12 = 2 × 2 × 3 içinde 3 bulunduğu için devirlidir: 0,41666… {kesir:9|15} kesri {kesir:3|5}’e sadeleşir; payda 5 olduğundan sonludur: 0,6. {kesir:11|16} sadeleşmez; 16 = 2 × 2 × 2 × 2 olduğundan sonludur: 0,6875."
-  },
-  {
-   "soru": "Üç arkadaş 10 lirayı eşit paylaşmak istiyor. Her birine kaç lira düşer? Paylaşım kuruşuyla tam olarak yapılabilir mi?",
-   "cevap": "10 ÷ 3 işleminde bölüm 3, kalan 1’dir; yani herkese 3 tam {kesir:1|3} lira düşer. Bölmeyi sürdürürsen 10 ÷ 3 = 3,333… bulursun; gösterim devirlidir. Para kuruşla, yani iki ondalık basamakla sayıldığından herkese 3 lira 33 kuruş verilir. 3 × 3,33 = 9,99 lira dağıtılır ve 1 kuruş artar. Devirli sonuç, 10 liranın üçe kuruşuyla tam bölünemeyeceğini gösterir."
-  },
-  {
-   "soru": "Hesap makinesinde 1 ÷ 11 = 0,0909…, 2 ÷ 11 = 0,1818… ve 3 ÷ 11 = 0,2727… sonuçlarını gözledin. Bu gözlemlerden bir tahmin yürüt, tahminini {kesir:5|11} ve {kesir:7|11} için sına ve bulduğun kuralı yaz.",
-   "cevap": "Devreden iki basamaklı sayılar 09, 18 ve 27’dir; bunlar payın 9 katıdır: 1 × 9 = 9, 2 × 9 = 18, 3 × 9 = 27. Tahmin: devreden kısım payın 9 katıdır. Sınama: 5 × 9 = 45 olduğundan {kesir:5|11} = 0,4545… olmalı; hesap makinesinde 5 ÷ 11 için 0,4545454545 görürsün. 7 × 9 = 63 olduğundan {kesir:7|11} = 0,6363… olmalı; makine 0,6363636364 gösterir, son basamak yuvarlamadır. Tahmin iki sınamadan da geçti. Genelleme: payı 1’den 10’a kadar olan on birde birlik kesirlerde devreden kısım payın 9 katıdır ve iki basamaklıdır; {kesir:10|11} = 0,9090… ile bunu da sınayabilirsin."
+   "soru": "Yüzde birler basamağına yuvarlandığında 6,48 olan üç basamaklı (binde birler basamağına kadar olan) en büyük ve en küçük ondalık gösterimleri bulunuz.",
+   "cevap": "• {koyu:En büyük değer:} 6,48_ sayısında boşluğa 5’ten küçük en büyük rakam olan {koyu:4} yazılırsa 8 değişmez -> {koyu:6,484} olur.\n• {koyu:En küçük değer:} 6,47_ sayısında 7’nin 8’e çıkması için boşluğa en az {koyu:5} yazılmalıdır -> {koyu:6,475} olur."
   }
- ],
- "ozet": [
-  "Kesir çizgisi bir bölme işaretidir: {kesir:a|b} = a ÷ b. Bir kesrin ondalık gösterimi payın paydaya bölünmesiyle bulunur; {kesir:3|4} = 3 ÷ 4 = 0,75.",
-  "Kâğıt-kalemle bölmede kalan sıfır olana kadar kalanın sağına 0 ekleyerek devam edersin; bölüme ilk 0’ı eklediğin adımda virgül koyarsın.",
-  "Bölme sıfır kalanla bitiyorsa gösterim sonlu, aynı kalan yeniden çıkıp basamaklar tekrar ediyorsa devirlidir; devirli gösterimde üç nokta sonsuz tekrarı anlatır.",
-  "Hesap makinesi devri görmeyi hızlandırır ama ekranı sınırlıdır; son basamağı yuvarlayabilir ve üç nokta koymaz.",
-  "Tümevarımsal akıl yürütme gözle, tahmin et, sına, genelle adımlarından oluşur; sadeleştirilmiş kesrin paydasının asal çarpanları yalnız 2 ve 5 ise gösterim sonlu, başka bir asal çarpan varsa devirlidir."
  ],
  "etkinlikler": [
   {
    "tur": "coktan",
-   "soru": "Aşağıdaki kesirlerden hangisinin ondalık gösterimi devirlidir?",
+   "soru": "Aşağıdaki kesirlerden hangisinin ondalık gösterimi 'devirli ondalık gösterim'dir?",
    "secenekler": [
-    "{kesir:3|8}",
-    "{kesir:7|20}",
-    "{kesir:5|6}",
-    "{kesir:9|25}"
+    "3 / 4",
+    "7 / 5",
+    "5 / 9",
+    "9 / 20",
+    "11 / 25"
    ],
    "dogru": 2,
-   "aciklama": "Paydaları 8 = 2 × 2 × 2, 20 = 2 × 2 × 5 ve 25 = 5 × 5 olan kesirler sonludur: 0,375, 0,35 ve 0,36. {kesir:5|6} kesrinin paydası 6 = 2 × 3 olduğundan gösterimi devirlidir: 0,8333…"
+   "aciklama": "3/4 = 0,75; 7/5 = 1,4; 9/20 = 0,45 ve 11/25 = 0,44 sonlu ondalık gösterimlerdir. 5/9 ise 5 ÷ 9 = 0,555... devirli ondalık gösterimdir."
   },
   {
    "tur": "coktan",
-   "soru": "Hesap makinesinde 2 ÷ 3 işlemini yapan Mert ekranda 0,6666666667 görüyor. Bu sonuçla ilgili aşağıdakilerden hangisi doğrudur?",
+   "soru": "15 / 4 kesrinin bölme işlemi yardımıyla bulunan ondalık gösterimi aşağıdakilerden hangisidir?",
    "secenekler": [
-    "{kesir:2|3} kesrinin ondalık gösterimi 7 ile biten sonlu bir sayıdır.",
-    "Sondaki 7 ekranın yuvarlamasıdır; gösterim 0,666… biçiminde devirlidir.",
-    "Bölme işlemi onuncu basamakta sıfır kalanla bitmiştir.",
-    "Mert işlemi yanlış tuşlamıştır."
+    "3,25",
+    "3,5",
+    "3,75",
+    "4,25",
+    "3,4"
+   ],
+   "dogru": 2,
+   "aciklama": "15 ÷ 4 işleminde 15 = 3 × 4 + 3 olup 3/4 = 0,75 olduğundan 15/4 = 3,75 bulunur."
+  },
+  {
+   "tur": "coktan",
+   "soru": "72,386 ondalık gösteriminin 'onda birler' basamağına yuvarlanmış hâli ile 'yüzde birler' basamağına yuvarlanmış hâli sırasıyla hangi seçenekte doğru verilmiştir?",
+   "secenekler": [
+    "72,3 ve 72,38",
+    "72,4 ve 72,38",
+    "72,4 ve 72,39",
+    "72,3 ve 72,39",
+    "72,0 ve 72,40"
+   ],
+   "dogru": 2,
+   "aciklama": "Onda birlerdeki 3’ün sağında 8 olduğu için (8 ≥ 5) 72,4’e; yüzde birlerdeki 8’in sağında 6 olduğu için (6 ≥ 5) 72,39’a yuvarlanır."
+  },
+  {
+   "tur": "coktan",
+   "soru": "A = 5,6222... (yalnız 2 devirli), B = 5,6262... (62 devirli) ve C = 5,6666... (6 devirli) devirli ondalık gösterimlerinin büyükten küçüğe doğru sıralanışı nasıldır?",
+   "secenekler": [
+    "A > B > C",
+    "C > B > A",
+    "B > C > A",
+    "C > A > B",
+    "B > A > C"
    ],
    "dogru": 1,
-   "aciklama": "3’e bölmede kalan hep 2 çıkar; bölme bitmez ve 6 rakamı sonsuza kadar tekrar eder. Ekran sığdıramadığı basamakları atarken son basamağı yuvarladığı için 7 görünür."
+   "aciklama": "Basamakları açalım: A = 5,622..., B = 5,626..., C = 5,666... Yüzde birler ve binde birler basamaklarına bakıldığında 5,666... > 5,626... > 5,622... yani C > B > A olur."
   },
   {
    "tur": "coktan",
-   "soru": "{kesir:2|11} kesrinin ondalık gösterimi 0,1818… biçimindedir. Virgülden sonraki 12. basamakta hangi rakam bulunur?",
+   "soru": "9,8★4 ondalık gösterimi onda birler basamağına yuvarlandığında 9,9 olduğuna göre, ★ yerine yazılabilecek rakamların toplamı kaçtır?",
    "secenekler": [
-    "8",
-    "1",
-    "2",
-    "0"
+    "10",
+    "25",
+    "30",
+    "35",
+    "45"
    ],
-   "dogru": 0,
-   "aciklama": "Devreden kısım 18’dir: tek sıradaki basamaklarda 1, çift sıradaki basamaklarda 8 bulunur. 12 çift olduğundan 12. basamak 8’dir."
+   "dogru": 3,
+   "aciklama": "Onda birler basamağındaki 8’in 9’a yükselmesi için sağındaki ★ rakamının 5 veya 5’ten büyük olması gerekir: 5, 6, 7, 8, 9. Toplamları: 5 + 6 + 7 + 8 + 9 = 35."
   },
   {
    "tur": "dy",
-   "yonerge": "Aşağıdaki ifadeler doğru mu, yanlış mı?",
+   "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
    "ifadeler": [
     {
-     "metin": "Bir kesrin ondalık gösterimi, payın paydaya bölünmesiyle bulunur.",
+     "metin": "Her kesir aynı zamanda payın paydaya bölünmesi (pay ÷ payda) işlemini ifade eder.",
      "dogru": true,
-     "aciklama": "Kesir çizgisi bölme işaretidir: {kesir:3|4} = 3 ÷ 4 = 0,75."
+     "aciklama": "a/b kesri a ÷ b bölme işlemine eşittir."
     },
     {
-     "metin": "{kesir:3|6} kesrinin paydası 6 olduğu için ondalık gösterimi devirlidir.",
+     "metin": "2,1555... devirli ondalık gösteriminde devir çizgisi hem 1 hem de 5 rakamının üzerine çizilir.",
      "dogru": false,
-     "aciklama": "Kesir önce sadeleştirilir: {kesir:3|6} = {kesir:1|2} = 0,5. Gösterim sonludur."
+     "aciklama": "Yanlıştır; 1 rakamı tekrar etmediği için devir çizgisi yalnızca tekrar eden 5 rakamının üzerine çizilir."
     },
     {
-     "metin": "Bölme işleminde daha önce çıkan bir kalan yeniden ortaya çıkarsa bölüm basamakları tekrar etmeye başlar.",
+     "metin": "14,49 ondalık gösterimi birler basamağına (en yakın doğal sayıya) yuvarlandığında 14 olur.",
      "dogru": true,
-     "aciklama": "Aynı kalandan sonra aynı bölme adımları yinelenir; devirli gösterim buradan doğar."
+     "aciklama": "Birler basamağındaki 4’ün hemen sağındaki ilk rakam 4’tür (4 < 5); bu yüzden 14’e yuvarlanır."
     },
     {
-     "metin": "0,333 ile 0,333… aynı sayıyı gösterir.",
+     "metin": "8 / 3 kesrinin ondalık gösterimi 2,666... şeklinde devirli bir ondalık gösterimdir.",
+     "dogru": true,
+     "aciklama": "8 ÷ 3 işleminde bölüm 2 tam, kalan 2 olup 20 ÷ 3 = 6 işlemi sonsuza kadar tekrar eder."
+    },
+    {
+     "metin": "Bir ondalık gösterimi yuvarlarken sağdaki rakam 5 ise yuvarlanan basamak değiştirilmez.",
      "dogru": false,
-     "aciklama": "0,333 sonlu bir sayıdır ve 3 × 0,333 = 0,999 eder; 0,333… ise {kesir:1|3}’e eşittir ve üç katı tam olarak 1’dir."
-    },
-    {
-     "metin": "Sadeleştirilmiş bir kesrin paydası 25 ise ondalık gösterimi sonludur.",
-     "dogru": true,
-     "aciklama": "25 = 5 × 5 olduğundan kesir 4 ile genişletilerek paydası 100 yapılabilir: {kesir:7|25} = {kesir:28|100} = 0,28."
+     "aciklama": "Yanlıştır; sağdaki rakam 5 veya 5’ten büyükse (5, 6, 7, 8, 9) yuvarlanan basamak 1 artırılır."
     }
    ]
   },
   {
    "tur": "eslestir",
-   "yonerge": "Kesirleri ondalık gösterimleriyle eşleştir.",
+   "soru": "Aşağıdaki kesirleri ve yuvarlama işlemlerini doğru sonuçlarıyla eşleştiriniz.",
    "ciftler": [
     [
-     "{kesir:3|8}",
-     "0,375"
+     "3 / 8 kesrinin ondalık gösterimi",
+     "0,375 (Sonlu ondalık gösterim)"
     ],
     [
-     "{kesir:2|3}",
-     "0,666…"
+     "2 / 3 kesrinin ondalık gösterimi",
+     "0,666... (Devirli ondalık gösterim)"
     ],
     [
-     "{kesir:1|6}",
-     "0,1666…"
+     "8,364 sayısının onda birlere yuvarlanışı",
+     "8,4"
     ],
     [
-     "{kesir:7|20}",
-     "0,35"
+     "8,364 sayısının yüzde birlere yuvarlanışı",
+     "8,36"
     ],
     [
-     "{kesir:4|11}",
-     "0,3636…"
+     "8,364 sayısının birler basamağına yuvarlanışı",
+     "8"
     ]
    ]
   },
   {
    "tur": "bosluk",
-   "yonerge": "Kelimeleri uygun boşluklara yerleştir. Bir kelime artacak.",
+   "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
    "cumleler": [
     {
-     "metin": "Bir kesrin ondalık gösterimini bulmak için payı ___ bölersin.",
-     "cevap": "paydaya"
-    },
-    {
-     "metin": "Bölme sıfır kalanla bitiyorsa kesrin ondalık gösterimi ___ olur.",
-     "cevap": "sonlu"
-    },
-    {
-     "metin": "Virgülden sonra aynı rakam ya da rakam grubunun sürekli tekrar ettiği gösterime ___ ondalık gösterim denir.",
+     "metin": "Bir kesrin payı paydasına bölündüğünde kalan sıfır olmuyorsa ve virgülden sonraki rakamlar tekrar ediyorsa buna ___ ondalık gösterim denir.",
      "cevap": "devirli"
     },
     {
-     "metin": "Tek tek örneklerden genel bir kurala ulaşma yoluna ___ akıl yürütme denir.",
-     "cevap": "tümevarımsal"
+     "metin": "Devirli ondalık gösterimlerde yalnızca tekrar eden rakamların üzerine ___ çizgisi konur.",
+     "cevap": "devir"
+    },
+    {
+     "metin": "Ondalık bir gösterimi en yakın doğal sayıya yuvarlamak, onu ___ basamağına yuvarlamak demektir.",
+     "cevap": "birler"
+    },
+    {
+     "metin": "Yuvarlanacak basamağın hemen sağındaki rakam 5 veya 5’ten büyükse yuvarlanan basamaktaki rakam ___ artırılır.",
+     "cevap": "bir"
+    },
+    {
+     "metin": "9 / 5 kesrinin ondalık gösterimi ___’dir.",
+     "cevap": "1,8"
     }
    ],
    "fazla": [
-    "paya"
+    "iki",
+    "onlar"
    ]
   },
   {
    "tur": "ogretici",
-   "soru": "Deniz hesap makinesinde 1 ÷ 9, 2 ÷ 9 ve 3 ÷ 9 işlemlerini yapıp 0,111…, 0,222… ve 0,333… sonuçlarını gözlüyor. Deniz’in bu gözlemlerden ulaşabileceği tahmin nedir? Tahminini nasıl sınamalı ve {kesir:8|9} için ne beklemeli?",
+   "soru": "Marketten kilogramı 24,85 TL olan elmadan 1 kg ve fiyatı 15,28 TL olan ekmekten 1 adet alan Kerem, ödeyeceği toplam tutarı fiyatları önce 'onda birler basamağına', sonra 'birler basamağına' yuvarlayarak iki farklı şekilde tahmin ediyor. Her iki tahmini ve gerçek sonucu bularak karşılaştırınız.",
    "ipuclari": [
-    "Pay değişirken devreden rakamın nasıl değiştiğine bak.",
-    "Tahmin, henüz yapılmamış bir bölmeyle sınanır; makinenin son basamağı yuvarlayabileceğini unutma."
+    "1. İpucu: 24,85 ve 15,28 sayılarını önce onda birler basamağına (24,9 ve 15,3), sonra birler basamağına (25 ve 15) yuvarlayınız.",
+    "2. İpucu: Gerçek toplamı (24,85 + 15,28 = 40,13 TL) bularak hangi tahminin gerçeğe daha yakın olduğunu belirtiniz."
    ],
-   "cevap": "Üç sonuçta da devreden rakam payın kendisidir; Deniz “dokuzda birlik kesirlerde devreden rakam paydır” diye tahmin yürütebilir. Bunu sınamak için daha önce denemediği bir kesri, örneğin 5 ÷ 9 ya da 7 ÷ 9 işlemini yapmalıdır: ekranda 0,5555555556 ve 0,7777777778 görür; son basamaklar yuvarlamadır, gerisi tahminle uyuşur. {kesir:8|9} için 0,888… beklemelidir; makine 0,8888888889 gösterir. Tahmin sınamalardan geçtiğine göre payı 1’den 8’e kadar olan dokuzda birlik kesirler için genellenebilir; {kesir:9|9} = 1 olduğundan kural paydan küçük paylar içindir."
-  },
-  {
-   "tur": "ogretici",
-   "soru": "Bir arkadaşın birkaç kesri denedikten sonra “Paydası tek sayı olan kesirlerin ondalık gösterimi devirli, paydası çift sayı olanlarınki sonludur.” diyor. Bu genelleme doğru mu? Karşı örneklerle sına ve doğru kuralı yaz.",
-   "ipuclari": [
-    "Paydası 5 olan bir kesirle paydası 6 olan bir kesri dene.",
-    "Paydanın tek ya da çift olmasına değil, asal çarpanlarına bak."
-   ],
-   "cevap": "Genelleme yanlıştır; tek bir karşı örnek bile onu çürütür. {kesir:1|5} kesrinin paydası tek sayıdır ama 1 ÷ 5 = 0,2 ile sonludur. {kesir:1|6} kesrinin paydası çift sayıdır ama 1 ÷ 6 = 0,1666… ile devirlidir. Tek ya da çift olmak belirleyici değildir; belirleyici olan sadeleştirilmiş kesrin paydasındaki asal çarpanlardır. Payda yalnız 2 ve 5 çarpanlarından oluşuyorsa gösterim sonlu, paydada 3, 7, 11 gibi başka bir asal çarpan varsa devirlidir. Arkadaşın tahminini bu kuralla düzeltip yeni kesirlerle yeniden sınamalıdır."
+   "cevap": "1. Gerçek Sonuç: 24,85 + 15,28 = 40,13 TL.\n2. Onda Birler Basamağına Yuvarlayarak Tahmin:\n• 24,85 -> 8’in sağında 5 var -> 24,9 TL\n• 15,28 -> 2’nin sağında 8 var -> 15,3 TL\n• Tahmini Toplam: 24,9 + 15,3 = 40,2 TL.\n3. Birler Basamağına (Doğal Sayıya) Yuvarlayarak Tahmin:\n• 24,85 -> 4’ün sağında 8 var -> 25 TL\n• 15,28 -> 5’in sağında 2 var -> 15 TL\n• Tahmini Toplam: 25 + 15 = 40 TL.\nKarşılaştırma: Onda birler basamağına yuvarlanarak yapılan tahmin (40,20 TL), gerçek sonuca (40,13 TL) sadece 0,07 TL farkla daha yakındır."
   }
  ]
 }

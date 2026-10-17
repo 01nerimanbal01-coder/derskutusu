@@ -453,8 +453,12 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
 .tahta-cubuk { position: absolute; left: 0; right: 0; margin-inline: auto; width: max-content; bottom: 14px; z-index: 2; display: flex; gap: 4px; flex-wrap: wrap; justify-content: center; align-items: center;
   max-width: calc(100% - 20px); padding: 6px 8px; border-radius: 16px; background: rgb(17 26 46 / .94); border: 1px solid rgb(255 255 255 / .12); box-shadow: 0 12px 34px rgb(0 0 0 / .35); backdrop-filter: blur(8px); }
 .kalem-katman .tahta-cubuk { position: fixed; }
+.tahta-cubuk.dar .tahta-gizlenebilir { display: none !important; }
+.tahta-cubuk.dar [data-is="daralt"] svg { transform: rotate(180deg); }
+.tahta-tutac { width: 22px !important; cursor: grab !important; opacity: .65; }
+.tahta-tutac:active { cursor: grabbing !important; }
 .tahta-grup { display: flex; gap: 2px; align-items: center; padding: 0 4px; border-right: 1px solid rgb(255 255 255 / .14); }
-.tahta-grup:last-child { border-right: 0; }
+.tahta-grup:last-of-type { border-right: 0; }
 .tahta-cubuk button { width: 36px; height: 36px; border: 0; border-radius: 9px; background: transparent; color: #e9eef6; cursor: pointer; display: grid; place-items: center; transition: background .12s, transform .12s; }
 .tahta-cubuk button svg { width: 19px; height: 19px; }
 .tahta-cubuk button:hover { background: rgb(255 255 255 / .12); }
@@ -470,9 +474,43 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
 .tahta-cubuk .kalin i { display: block; border-radius: 50%; background: #e9eef6; }
 .tahta-cubuk .kapat { color: #ffb4ad; }
 .tahta-cubuk button:disabled { opacity: .3; cursor: default; background: transparent; }
+.tahta-altpanel { position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%); display: flex; gap: 4px; align-items: center;
+  padding: 5px 8px; border-radius: 12px; background: rgb(17 26 46 / .95); border: 1px solid rgb(255 255 255 / .15); box-shadow: 0 8px 24px rgb(0 0 0 / .3); white-space: nowrap; }
+.tahta-altpanel[hidden] { display: none; }
+.tahta-altpanel .damga-sec { width: 32px; height: 32px; font-size: 17px; font-weight: 800; background: rgb(255 255 255 / .08); border-radius: 8px; }
+.tahta-altpanel .sec-bilgi { color: #cbd5e1; font-size: 12.5px; font-weight: 600; padding: 0 6px; }
+.tahta-altpanel .sec-eylem { width: auto; height: 30px; padding: 0 10px; font-size: 12.5px; font-weight: 700; background: rgb(255 255 255 / .14); }
+.tahta-altpanel .sec-eylem.tehlike { color: #ffb4ad; background: rgb(230 33 23 / .22); }
 .tahta-metin-girdi { position: absolute; z-index: 5; min-width: 120px; max-width: min(420px, calc(100% - 24px)); padding: 4px 8px;
   border: 1.5px dashed var(--vurgu, #2451d6); border-radius: 8px; background: rgb(255 255 255 / .92); outline: none;
   box-shadow: 0 6px 18px rgb(0 0 0 / .18); resize: none; overflow: hidden; line-height: 1.25; }
+.tahta-sayac { position: absolute; top: 18px; right: 18px; z-index: 6; width: 230px; padding: 12px; border-radius: 16px;
+  background: rgb(17 26 46 / .95); color: #fff; border: 1px solid rgb(255 255 255 / .14); box-shadow: 0 12px 32px rgb(0 0 0 / .35); }
+.kalem-katman .tahta-sayac { position: fixed; top: 76px; }
+.tahta-sayac .ts-ust { display: flex; justify-content: space-between; align-items: center; font-size: 13px; font-weight: 700; color: #cbd5e1; }
+.tahta-sayac .ts-ust button { border: 0; background: transparent; color: #94a3b8; cursor: pointer; font-size: 14px; }
+.tahta-sayac .ts-ekran { font-size: 34px; font-weight: 800; text-align: center; font-variant-numeric: tabular-nums; margin: 6px 0 8px; letter-spacing: 1px; }
+.tahta-sayac .ts-ekran.bitti { color: #ff6b6b; animation: nabiz .8s infinite alternate; }
+@keyframes nabiz { from { transform: scale(1); } to { transform: scale(1.06); } }
+.tahta-sayac .ts-hazir { display: flex; gap: 4px; flex-wrap: wrap; justify-content: center; margin-bottom: 8px; }
+.tahta-sayac .ts-hazir button { border: 0; border-radius: 7px; padding: 4px 7px; font-size: 11.5px; font-weight: 700; background: rgb(255 255 255 / .12); color: #e2e8f0; cursor: pointer; }
+.tahta-sayac .ts-hazir button:hover { background: rgb(255 255 255 / .22); }
+.tahta-sayac .ts-eylem { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.tahta-sayac .ts-eylem button { height: 32px; border: 0; border-radius: 8px; font-size: 13px; font-weight: 700; cursor: pointer; background: rgb(255 255 255 / .14); color: #fff; }
+.tahta-sayac .ts-eylem .ts-ana { background: var(--vurgu, #2451d6); }
+.tahta-perde { position: absolute; left: 0; right: 0; bottom: 0; z-index: 4; background: rgb(15 23 42 / .94);
+  border-top: 3px solid var(--vurgu, #2451d6); box-shadow: 0 -8px 28px rgb(0 0 0 / .35); backdrop-filter: blur(6px); }
+.tahta-perde .tp-tutac { display: flex; justify-content: space-between; align-items: center; padding: 8px 16px;
+  background: rgb(36 81 214 / .25); color: #e2e8f0; font-size: 13px; font-weight: 700; cursor: ns-resize; user-select: none; touch-action: none; }
+.tahta-perde .tp-tutac button { border: 0; border-radius: 8px; padding: 4px 10px; background: rgb(255 255 255 / .16); color: #fff; font-size: 12px; font-weight: 700; cursor: pointer; }
+.tahta-yardim { position: absolute; inset: 0; margin: auto; width: min(520px, calc(100% - 28px)); height: max-content; max-height: calc(100% - 110px); overflow: auto;
+  z-index: 7; padding: 18px 20px; border-radius: 18px; background: rgb(17 26 46 / .96); color: #f1f5f9; border: 1px solid rgb(255 255 255 / .16); box-shadow: 0 20px 50px rgb(0 0 0 / .45); }
+.kalem-katman .tahta-yardim { position: fixed; }
+.tahta-yardim .ty-ust { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; font-size: 16px; }
+.tahta-yardim .ty-ust button { border: 0; background: rgb(255 255 255 / .12); color: #fff; width: 30px; height: 30px; border-radius: 8px; cursor: pointer; }
+.tahta-yardim ul { margin: 0; padding-left: 18px; display: grid; gap: 8px; font-size: 13.5px; line-height: 1.5; color: #cbd5e1; }
+.tahta-yardim b { color: #fff; }
+.tahta-yardim kbd { display: inline-block; padding: 1px 6px; border-radius: 5px; background: rgb(255 255 255 / .15); color: #fff; font-size: 12px; font-weight: 700; }
 .kalem-ipucu { position: fixed; left: 0; right: 0; top: 84px; margin-inline: auto; width: max-content; max-width: calc(100% - 32px); z-index: 3;
   padding: 10px 16px; border-radius: 12px; background: rgb(17 26 46 / .92); color: #fff; font-size: 14px; pointer-events: none; box-shadow: 0 10px 30px rgb(0 0 0 / .3); }
 .tahta-sayfa { padding: 0; }

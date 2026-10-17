@@ -12,7 +12,7 @@ from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'goruntule.js': '20261012-1', 'belgeler.js': '20261012-1', 'agac.js': '20261013-2', 'yazili.js': '20261010-1', 'ortak.js': '20261014-1', 'tahta.js': '20261017-2', 'etkinlik.js': '20261003-1', 'arama.js': '20261004-duzen1', 'kutuphane.js': '20261013-2', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-1'}
+BETIK_SURUMLERI = {'goruntule.js': '20261012-1', 'belgeler.js': '20261012-1', 'agac.js': '20261013-2', 'yazili.js': '20261010-1', 'ortak.js': '20261014-1', 'tahta.js': '20261017-3', 'etkinlik.js': '20261003-1', 'arama.js': '20261004-duzen1', 'kutuphane.js': '20261013-2', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-1'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
@@ -240,14 +240,16 @@ GOVDE = {
       <div class="y-kaydir" id="y-tablo"></div>
     </div>
   </section>''', ('yazili.js', 'yazili-cikti.js', 'yazili-duzen.js')),
-    'tahta.html': ('Akıllı tahta', 'Tarayıcıda çalışan akıllı tahta: hassas kalem, fosforlu kalem, cetvel, geometrik şekiller, koordinat ekseni, lazer işaretçi, kareli ve çizgili zemin, sayfalar.', '''  <section class="tahta-sayfa">
+    'tahta.html': ('Akıllı tahta', 'Tarayıcıda çalışan akıllı tahta: hassas kalem, akıllı şekil tanıma, seç-taşı, soru görseli yapıştırma, süre ölçer, cevap perdesi, koordinat ekseni ve çoklu sayfa.', '''  <section class="tahta-sayfa">
     <div class="kap tahta-ustbar">
       <h1>Akıllı tahta</h1>
       <label class="gizli" for="t-zemin">Zemin</label>
       <select id="t-zemin" aria-label="Zemin"><option value="kareli">Kareli</option><option value="cizgili">Çizgili</option><option value="noktali">Noktalı</option><option value="izometrik">İzometrik noktalı</option><option value="koordinat">Koordinat düzlemi</option><option value="birim-cember">Birim çember</option><option value="sayidogrusu">Sayı doğrusu</option><option value="muzik">Müzik dizeği (Porte)</option><option value="koyu">Koyu tahta</option><option value="">Düz beyaz</option></select>
-      <button class="dugme" type="button" id="t-onceki" aria-label="Önceki sayfa">‹</button>
+      <button class="dugme" type="button" id="t-onceki" title="Önceki sayfa" aria-label="Önceki sayfa">‹</button>
       <span id="t-sayfa" aria-live="polite">1 / 1</span>
-      <button class="dugme" type="button" id="t-sonraki" aria-label="Sonraki ya da yeni sayfa">›</button>
+      <button class="dugme" type="button" id="t-sonraki" title="Sonraki ya da yeni sayfa" aria-label="Sonraki ya da yeni sayfa">›</button>
+      <button class="dugme" type="button" id="t-cogalt" title="Bu sayfayı çoğalt">Çoğalt</button>
+      <button class="dugme" type="button" id="t-sil" title="Bu sayfayı sil">Sayfayı sil</button>
       <button class="dugme" type="button" id="t-kaydet"><svg><use href="#s-indir"/></svg>PNG</button>
       <button class="dugme ana" type="button" id="t-tam"><svg><use href="#s-buyut"/></svg>Tam ekran</button>
     </div>

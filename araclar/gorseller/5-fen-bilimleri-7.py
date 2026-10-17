@@ -51,3 +51,12 @@ def ciz():
 
 if __name__ == '__main__':
     ciz()
+
+
+def uygula(v):
+    from _taban import SON_SVG
+    SON_SVG.clear()
+    ciz()
+    svg_ic = SON_SVG.get('_son')
+    if svg_ic and v.get('bolumler'):
+        v['bolumler'][0]['gorsel'] = svg_ic
