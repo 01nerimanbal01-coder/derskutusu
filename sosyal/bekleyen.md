@@ -3195,7 +3195,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-biyoloji-6
-Sıra: 2026-12-04 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-biyoloji-6.png
+Sıra: 2026-12-04 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-biyoloji-6.png
 
 ```
 Bunu biliyor muydunuz? Griffith, Avery ve Hershey-Chase deneyleri kalıtsal materyalin DNA olduğunu kanıtlamış; genetik yapı nükleotitten kromozoma doğru sıralanmıştır.
@@ -3205,7 +3205,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-cografya-6
-Sıra: 2026-12-04 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-cografya-6.png
+Sıra: 2026-12-04 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-cografya-6.png
 
 ```
 Bunu biliyor muydunuz? Türkiye’de GSYH ve istihdamda en büyük pay hizmet sektörüne aittir; yerel dokusunu koruyan kentler ise Cittaslow (Sakin Şehir) unvanı alır.
@@ -3215,7 +3215,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-din-kulturu-6
-Sıra: 2026-12-04 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-din-kulturu-6.png
+Sıra: 2026-12-04 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-din-kulturu-6.png
 
 ```
 Bunu biliyor muydunuz? Hârizmî, İbn Sînâ, İbnü’l-Heysem, Bîrûnî ve Cezerî gibi Müslüman bilginlerin özgün eserleri modern bilimin gelişimine öncülük etmiştir.
@@ -3225,7 +3225,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-edebiyat-6
-Sıra: 2026-12-04 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-edebiyat-6.png
+Sıra: 2026-12-04 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-edebiyat-6.png
 
 ```
 Bunu biliyor muydunuz? Hikâye metinlerinde anlam katmanları mecazımürsel ve somutlaştırmalarla zenginleşir; diyalog ve iç konuşmalar noktalama işaretleriyle ayrılır.
@@ -3235,7 +3235,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-fizik-6
-Sıra: 2026-12-04 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-fizik-6.png
+Sıra: 2026-12-04 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-fizik-6.png
 
 ```
 Bunu biliyor muydunuz? Gezegen yüzeyindeki çekim ivmesi g = G·M/R² ile, yörüngedeki uydunun dolanım hızı ise kendi kütlesinden bağımsız olarak v = √(G·M/r) ile bulunur.
@@ -3245,7 +3245,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-ingilizce-6
-Sıra: 2026-12-04 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-ingilizce-6.png
+Sıra: 2026-12-04 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-ingilizce-6.png
 
 ```
 Bunu biliyor muydunuz? İngilizcede yalın fiille amaç bildirirken “in order to / so as to + V1”, özneli tam cümleyle amaç bildirirken “so that / in order that” kullanılır.
@@ -3255,7 +3255,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-inkilap-tarihi-6
-Sıra: 2026-12-05 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-inkilap-tarihi-6.png
+Sıra: 2026-12-05 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-inkilap-tarihi-6.png
 
 ```
 Bunu biliyor muydunuz? Mondros Ateşkes Antlaşması’nın 7. ve 24. maddeleri Osmanlı topraklarının işgaline zemin hazırlamış; ilk işgal 3 Kasım 1918’de Musul’da başlamıştır.
@@ -3265,7 +3265,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-islam-kultur-ve-medeniyeti-6
-Sıra: 2026-12-05 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-6.png
+Sıra: 2026-12-05 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-6.png
 
 ```
 Bunu biliyor muydunuz? Tevhid ilkesi İslam bilim ve sanatına bütünlük kazandırırken, insanı yalnızca Allah’a kul kılarak gerçek irade ve vicdan hürriyetine kavuşturmuştur.
@@ -3275,7 +3275,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kelam-6
-Sıra: 2026-12-05 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kelam-6.png
+Sıra: 2026-12-05 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kelam-6.png
 
 ```
 Bunu biliyor muydunuz? Kelam ilmi dinin inanç temellerini ispatladığı için “küllî ilim” sayılır; tefsir, hadis, fıkıh ve tasavvuf ise bu temel üzerinde yükselir.
@@ -3285,7 +3285,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kimya-6
-Sıra: 2026-12-05 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kimya-6.png
+Sıra: 2026-12-05 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kimya-6.png
 
 ```
 Bunu biliyor muydunuz? Standart Hidrojen Elektrodunun potansiyeli 0,00 V kabul edilir; standart hücre potansiyeli E°_hücre > 0 olan redoks tepkimeleri istemlidir.
@@ -3295,7 +3295,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kuran-i-kerim-6
-Sıra: 2026-12-05 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kuran-i-kerim-6.png
+Sıra: 2026-12-05 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kuran-i-kerim-6.png
 
 ```
 Bunu biliyor muydunuz? Kur’an çevirilerine yaklaşık anlamı ifade ettiği için “meal” denir; ayetleri doğru anlamak için esbâb-ı nüzûl ve sahih tefsirlere başvurulmalıdır.
@@ -3305,7 +3305,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-matematik-6
-Sıra: 2026-12-05 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-matematik-6.png
+Sıra: 2026-12-05 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-matematik-6.png
 
 ```
 Bunu biliyor muydunuz? Nüfus artışı ve yarılanma f(t) = A₀·a^t üstel fonksiyonuyla; pH = −log[H⁺] ve Richter deprem ölçeği ise 10 tabanlı logaritmayla modellenir.
@@ -3315,7 +3315,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-mesleki-arapca-6
-Sıra: 2026-12-06 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-mesleki-arapca-6.png
+Sıra: 2026-12-06 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-mesleki-arapca-6.png
 
 ```
 Bunu biliyor muydunuz? Arapçada fiiller kök harflerinin yapısına göre Sâlim, Mehmûz, Muda’af, Misâl, Ecvef, Nâkıs ve Lefîf olmak üzere Aksâm-ı Seb’a’ya ayrılır.
@@ -3325,7 +3325,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-peygamberimizin-hayati-6
-Sıra: 2026-12-06 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-peygamberimizin-hayati-6.png
+Sıra: 2026-12-06 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-peygamberimizin-hayati-6.png
 
 ```
 Bunu biliyor muydunuz? Sünnet, Kur’an-ı Kerim’in mücmel hükümlerini açıklayan (beyan eden) ve İslam’ın hayata nasıl geçirileceğini gösteren ikinci temel kaynaktır.
@@ -3335,7 +3335,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-temel-dini-bilgiler-6
-Sıra: 2026-12-06 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-temel-dini-bilgiler-6.png
+Sıra: 2026-12-06 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-temel-dini-bilgiler-6.png
 
 ```
 Bunu biliyor muydunuz? İmanın geçerli olması için yeis hâli (son nefes) gelmeden önce yapılması, iman esaslarının tamamını kapsaması ve şüphe taşımaması gerekir.
@@ -3345,7 +3345,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-5-arapca-7
-Sıra: 2026-12-07 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-arapca-7.png
+Sıra: 2026-12-07 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-arapca-7.png
 
 ```
 Bunu biliyor muydunuz? Arapçada elif, dal, zel, ra ve ze harfleri kendinden sonraki harfle birleşmez; yakın işaret ismi olarak eril için “Hâzâ”, dişil için “Hâzihî” kullanılır.
@@ -3355,7 +3355,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-5-kuran-i-kerim-7
-Sıra: 2026-12-07 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-kuran-i-kerim-7.png
+Sıra: 2026-12-07 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-kuran-i-kerim-7.png
 
 ```
 Bunu biliyor muydunuz? Kur’an okurken ra harfi üstün ve ötre harekeli olduğunda kalın, esre harekeli olduğunda ise ince sesle telaffuz edilir.
@@ -3365,7 +3365,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-5-peygamberimizin-hayati-7
-Sıra: 2026-12-07 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-peygamberimizin-hayati-7.png
+Sıra: 2026-12-07 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-peygamberimizin-hayati-7.png
 
 ```
 Bunu biliyor muydunuz? Hz. Muhammed (sav), çocukluğunun ilk dört yılını Benî Sa’d yurdunda sütannesi Hz. Halîme’nin yanında geçirmiş ve sütailesine daima vefa göstermiştir.
@@ -3375,7 +3375,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-6-arapca-7
-Sıra: 2026-12-08 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-arapca-7.png
+Sıra: 2026-12-08 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-arapca-7.png
 
 ```
 Bunu biliyor muydunuz? Harf-i tariften (el-) sonra kamerî harf gelirse lâm açıkça okunur; şemsî harf gelirse lâm okunmayıp sonraki harf şeddeli okunur.
@@ -3385,7 +3385,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-6-kuran-i-kerim-7
-Sıra: 2026-12-08 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-kuran-i-kerim-7.png
+Sıra: 2026-12-08 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-kuran-i-kerim-7.png
 
 ```
 Bunu biliyor muydunuz? Allahümme Salli ve Barik duaları Hz. Peygamber’e salavat ve bereket duasıdır; namazların son oturuşunda Ettahiyyatü’den sonra okunur.
@@ -3395,7 +3395,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-6-peygamberimizin-hayati-7
-Sıra: 2026-12-08 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-peygamberimizin-hayati-7.png
+Sıra: 2026-12-08 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-peygamberimizin-hayati-7.png
 
 ```
 Bunu biliyor muydunuz? İlk vahiy 610 yılında Hira Mağarası’nda Alak suresinin ilk beş ayetiyle inmiş; ilk Müslümanlar Hz. Hatice, Hz. Ebû Bekir, Hz. Ali ve Hz. Zeyd olmuştur.
@@ -3405,7 +3405,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-5-temel-dini-bilgiler-7
-Sıra: 2026-12-09 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-temel-dini-bilgiler-7.png
+Sıra: 2026-12-09 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-temel-dini-bilgiler-7.png
 
 ```
 Bunu biliyor muydunuz? El-Hâdî doğru yolu gösteren, es-Selâm esenlik ve güven veren, el-Vekîl ise kendisine tevekkül edenlerin işlerini en güzel şekilde yönetendir.
@@ -3415,7 +3415,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-6-temel-dini-bilgiler-7
-Sıra: 2026-12-09 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-temel-dini-bilgiler-7.png
+Sıra: 2026-12-09 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-temel-dini-bilgiler-7.png
 
 ```
 Bunu biliyor muydunuz? Sırât-ı müstakîm duası el-Hâdî ismine, selamlaşma kültürü es-Selâm ismine, tedbir alıp Allah’a güvenmek ise el-Vekîl ismine dayanır.
@@ -3425,7 +3425,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-7-arapca-7
-Sıra: 2026-12-09 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-arapca-7.png
+Sıra: 2026-12-09 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-arapca-7.png
 
 ```
 Bunu biliyor muydunuz? Arapçada alışveriş yaparken “Ürîdü ...” (İstiyorum), “Hel yûcedü ...?” (Var mı?) ve fiyat sorarken “Bikem ...?” (Kaç lira?) kalıpları kullanılır.
@@ -3435,7 +3435,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-7-kuran-i-kerim-7
-Sıra: 2026-12-09 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-kuran-i-kerim-7.png
+Sıra: 2026-12-09 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-kuran-i-kerim-7.png
 
 ```
 Bunu biliyor muydunuz? Kunut duaları Vitir namazının üçüncü rekâtında Fatiha ve zamm-ı sureden sonra tekbir alınarak rükûya gitmeden önce okunur.
