@@ -150,7 +150,7 @@ def _parcala_ic(s):
                     dugumler.append((tip, ic))
                     i = kapanis + 1
                     continue
-            m = re.match(r'[0-9A-Za-z+-]+', s[i + 1:])
+            m = re.match(r'[0-9A-Za-zçğıöşüÇĞİÖŞÜ+-]+', s[i + 1:])
             if m:
                 ic = m.group(0).replace('-', '−')
                 dugumler.append((tip, ic))
@@ -191,7 +191,7 @@ def parcala(soz):
                     dugumler.append(('sqrt', _parcala_ic(ic)))
                     i = kapanis + 1
                     continue
-            m = re.match(r'[0-9A-Za-zπ]+(?:\^\([^)]+\)|\^[0-9A-Za-z+-]+)?', s[i + 1:])
+            m = re.match(r'[0-9A-Za-zçğıöşüÇĞİÖŞÜπ]+(?:\^\([^)]+\)|\^[0-9A-Za-zçğıöşüÇĞİÖŞÜ+-]+)?', s[i + 1:])
             if m:
                 ic = m.group(0)
                 dugumler.append(('sqrt', _parcala_ic(ic)))

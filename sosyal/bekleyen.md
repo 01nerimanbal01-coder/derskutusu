@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 301 gönderi.
+Toplam 319 gönderi.
 
 ## bilgi-7-turkce-7
 Sıra: 2026-11-19 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-turkce-7.png
@@ -305,7 +305,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-peygamberimizin-hayati-3
-Sıra: 2026-11-25 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-peygamberimizin-hayati-3.png
+Sıra: 2026-11-25 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-peygamberimizin-hayati-3.png
 
 ```
 Bunu biliyor muydunuz? Peygamberimizin (s.a.v.) mensup olduğu Haşimoğulları ailesi, Mekke’de hacılara hizmet görevleri (sikâye ve rifâde) ile komşu ülkelerle yapılan İlâf ticaret antlaşmaları sayesinde büyük bir saygınlığa sahipti.
@@ -315,7 +315,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-tarih-3
-Sıra: 2026-11-25 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-tarih-3.png
+Sıra: 2026-11-25 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-tarih-3.png
 
 ```
 Bunu biliyor muydunuz? Tarih bilimi geçmişteki olayları yer, zaman ve neden-sonuç ilişkisi çerçevesinde belgelere dayanarak inceler; geçmişteki olaylar tekrarlanamadığı için tarihsel bilgi yeni belgeler bulundukça zenginleşir.
@@ -325,7 +325,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-9-temel-dini-bilgiler-3
-Sıra: 2026-11-25 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-temel-dini-bilgiler-3.png
+Sıra: 2026-11-25 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-temel-dini-bilgiler-3.png
 
 ```
 Bunu biliyor muydunuz? İslam’da iman, inanç esaslarını kalple tasdik edip dille ikrar etmektir; sahih bilgiye dayanan iman, ibadet ve salih amellerle (güzel davranışlarla) desteklendiğinde bireyin ve toplumun hayatını güzelleştirir.
@@ -335,7 +335,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-arapca-3
-Sıra: 2026-11-26 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-arapca-3.png
+Sıra: 2026-11-26 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-arapca-3.png
 
 ```
 Bunu biliyor muydunuz? Arapçada isimler sayı bakımından tekil (müfred), ikil (müsenna) ve çoğul (cem) olmak üzere üçe ayrılır; akrabaları ziyaret ederek bağları güçlü tutmaya ise sıla-i rahim denir.
@@ -345,7 +345,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-biyoloji-3
-Sıra: 2026-11-26 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-biyoloji-3.png
+Sıra: 2026-11-26 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-biyoloji-3.png
 
 ```
 Bunu biliyor muydunuz? Ağır oksijen izotopu (18O) kullanılarak yapılan deneyler, fotosentez sonucunda atmosfere verilen oksijen gazının karbondioksitten değil, suyun fotolizinden (parçalanmasından) geldiğini kanıtlamıştır.
@@ -355,7 +355,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-cografya-3
-Sıra: 2026-11-26 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-cografya-3.png
+Sıra: 2026-11-26 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-cografya-3.png
 
 ```
 Bunu biliyor muydunuz? Coğrafi Bilgi Sistemleri (CBS); afet yönetiminden şehir planlamasına, tarımdan ulaşıma kadar mekânsal verileri katmanlar hâlinde birleştirip analiz ederek doğru kararlar alınmasını sağlar.
@@ -365,7 +365,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-din-kulturu-3
-Sıra: 2026-11-26 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-din-kulturu-3.png
+Sıra: 2026-11-26 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-din-kulturu-3.png
 
 ```
 Bunu biliyor muydunuz? İslam inancında varlık âlemi iki boyuttan oluşur: Duyularımızla ve bilimsel araçlarla gözlemleyebildiğimiz şehâdet âlemi ile yalnızca vahiy yoluyla bilgisine ulaşabildiğimiz gayb âlemi.
@@ -375,7 +375,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-edebiyat-3
-Sıra: 2026-11-26 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-edebiyat-3.png
+Sıra: 2026-11-26 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-edebiyat-3.png
 
 ```
 Bunu biliyor muydunuz? Halk şiirinin her döneminde sevgi, gurbet, doğa ve kahramanlık temalarıyla söylenen türküler; bent ve kavuştak (nakarat) bölümlerinden oluşur ve ezgilerine göre usullü (kırık hava) veya usulsüz (uzun hava) olarak ikiye ayrılır.
@@ -385,7 +385,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-felsefe-3
-Sıra: 2026-11-26 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-felsefe-3.png
+Sıra: 2026-11-26 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-felsefe-3.png
 
 ```
 Bunu biliyor muydunuz? Felsefede sorular cevaplardan daha önemlidir; gündelik ve bilimsel sorulardan farklı olarak felsefi sorular kendi üzerine dönük (refleksif), eleştirel ve kavramın özüne ("Nedir?" sorusuna) yöneliktir.
@@ -395,7 +395,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-fikih-3
-Sıra: 2026-11-27 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fikih-3.png
+Sıra: 2026-11-27 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fikih-3.png
 
 ```
 Bunu biliyor muydunuz? Fıkıh ilminin ve Mecelle’nin en temel küllî kaidelerinden biri "Meşakkat teysîri celbeder" (Zorluk kolaylığı getirir) ilkesidir; yolculuk ve hastalık gibi durumlarda tanınan ruhsatlar bunun örneğidir.
@@ -405,7 +405,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-fizik-3
-Sıra: 2026-11-27 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fizik-3.png
+Sıra: 2026-11-27 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fizik-3.png
 
 ```
 Bunu biliyor muydunuz? Sabit ivmeli doğrusal harekette hız-zaman grafiğinin eğimi cisme ait ivmeyi, grafiğin zaman ekseniyle arasında kalan alan ise cismin yaptığı yer değiştirmeyi (Δx) verir.
@@ -415,7 +415,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-hadis-3
-Sıra: 2026-11-27 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-hadis-3.png
+Sıra: 2026-11-27 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-hadis-3.png
 
 ```
 Bunu biliyor muydunuz? Hadis ilminde her rivayet iki yapısal unsurdan oluşur: Hadisi aktaran râvîler silsilesine "sened (isnad)", Hz. Peygamber’e (s.a.v.) ait olan söz veya davranışın ifade edildiği bölüme ise "metin" denir.
@@ -425,7 +425,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-ingilizce-3
-Sıra: 2026-11-27 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-ingilizce-3.png
+Sıra: 2026-11-27 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-ingilizce-3.png
 
 ```
 Bunu biliyor muydunuz? İngilizcede okul rutinlerini ve alışkanlıkları ifade ederken Simple Present Tense kullanılır; olumsuz ve soru cümlelerinde ise "do / does" yardımcı fiilleri devreye girer ve asıl fiil yalın hâlde kalır.
@@ -435,7 +435,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-kimya-3
-Sıra: 2026-11-27 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kimya-3.png
+Sıra: 2026-11-27 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kimya-3.png
 
 ```
 Bunu biliyor muydunuz? Çözünme-çökelme tepkimelerinde net iyon denklemi yalnızca katı çökeltiyi oluşturan iyonlar arasında yazılır; elektron alışverişiyle yürüyen yanma ve sentez gibi birçok tepkime ise aynı zamanda birer redoks tepkimesidir.
@@ -445,7 +445,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-kuran-i-kerim-3
-Sıra: 2026-11-27 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kuran-i-kerim-3.png
+Sıra: 2026-11-27 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kuran-i-kerim-3.png
 
 ```
 Bunu biliyor muydunuz? Kur’an-ı Kerim’de "Rab" kavramı tüm varlıkları yaratıp terbiye eden ve koruyan Yüce Allah’ı ifade ederken; "iffet" kavramı insanın nefsini kötülüklerden koruyarak iffetli ve onurlu yaşamasını anlatır.
@@ -455,7 +455,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-matematik-3
-Sıra: 2026-11-28 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-matematik-3.png
+Sıra: 2026-11-28 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-matematik-3.png
 
 ```
 Bunu biliyor muydunuz? Üçgende kenarortayların kesim noktası olan ağırlık merkezi (G), kenarortay uzunluğunu tabandan itibaren 1’e 2 oranında böler; dik üçgende hipotenüse ait kenarortay ise hipotenüsün yarısına eşittir (Muhteşem Üçlü).
@@ -465,7 +465,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-peygamberimizin-hayati-3
-Sıra: 2026-11-28 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-peygamberimizin-hayati-3.png
+Sıra: 2026-11-28 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-peygamberimizin-hayati-3.png
 
 ```
 Bunu biliyor muydunuz? Taif yolculuğunda karşılaştığı ağır imtihanlara rağmen beddua yerine rahmet duası eden Peygamberimiz (s.a.v.), âlemlere rahmet olarak gönderildiğini en zor şartlarda bile yaşayarak göstermiştir.
@@ -475,7 +475,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-siyer-3
-Sıra: 2026-11-28 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-siyer-3.png
+Sıra: 2026-11-28 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-siyer-3.png
 
 ```
 Bunu biliyor muydunuz? İslam öncesi Hicaz toplumunda kabile bağına dayanan "asabiyet" anlayışı hâkimdi; kabileler arasında yıllarca süren Eyyâmü’l-Arab savaşları yaşanırken, şiir ve hitabet edebiyatın en güçlü alanıydı.
@@ -485,7 +485,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-tarih-3
-Sıra: 2026-11-28 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-tarih-3.png
+Sıra: 2026-11-28 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-tarih-3.png
 
 ```
 Bunu biliyor muydunuz? Türk tarihinde 1071 Malazgirt Zaferi "yurt açan", 1176 Miryokefalon Zaferi ise Anadolu’nun kesin olarak Türk yurdu olduğunu tescilleyen "yurt tutan" savaş olarak kabul edilir.
@@ -495,7 +495,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-10-temel-dini-bilgiler-3
-Sıra: 2026-11-28 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-temel-dini-bilgiler-3.png
+Sıra: 2026-11-28 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-temel-dini-bilgiler-3.png
 
 ```
 Bunu biliyor muydunuz? İslam’da iman ağacın köküne, ibadetler gövdesine ve dallarına, güzel ahlak ise meyvesine benzetilir; dinî bilgileri öğrenirken Kur’an ve Sünnet bütünlüğünü esas alan sahih kaynaklara başvurulur.
@@ -505,7 +505,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-akaid-3
-Sıra: 2026-11-28 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-akaid-3.png
+Sıra: 2026-11-28 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-akaid-3.png
 
 ```
 Bunu biliyor muydunuz? Akaid ilmi İslam inanç esaslarını açık ve sade bir dille ortaya koyarken; Kelam ilmi bu inanç esaslarını aklî ve naklî delillerle savunup inkârcı ve şüpheci akımlara cevap verir.
@@ -515,7 +515,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-biyoloji-3
-Sıra: 2026-11-29 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-biyoloji-3.png
+Sıra: 2026-11-29 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-biyoloji-3.png
 
 ```
 Bunu biliyor muydunuz? Bitkilerde oksin hormonunun düzensiz dağılımıyla gerçekleşen tropizma hareketleri uyaranın yönüne bağlıdır (pozitif veya negatif); küstüm otunun dokununca yapraklarını kapatması ise turgor basıncıyla gerçekleşen bir nasti hareketidir.
@@ -525,7 +525,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-cografya-3
-Sıra: 2026-11-29 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-cografya-3.png
+Sıra: 2026-11-29 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-cografya-3.png
 
 ```
 Bunu biliyor muydunuz? Coğrafya bilimini diğer bilimlerden ayıran en temel ilke "dağılış ilkesi"dir; mekânsal sorunlar incelenirken olayların nerede yoğunlaştığı (dağılış), neden ortaya çıktığı (nedensellik) ve diğer unsurlarla ilişkisi (bağlantı) birlikte değerlendirilir.
@@ -535,7 +535,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-din-kulturu-3
-Sıra: 2026-11-29 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-din-kulturu-3.png
+Sıra: 2026-11-29 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-din-kulturu-3.png
 
 ```
 Bunu biliyor muydunuz? İslam inancına göre kalp atışı veya doğduğu aile gibi insanın elinde olmayan (ıztırârî) durumlardan sorumluluk doğmaz; insan yalnızca aklı ve cüz’î iradesiyle özgürce seçtiği (ihtiyarî) davranışlarından sorumludur.
@@ -545,7 +545,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-11-dinler-tarihi-3
-Sıra: 2026-11-29 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-dinler-tarihi-3.png
+Sıra: 2026-11-29 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-dinler-tarihi-3.png
 
 ```
 Bunu biliyor muydunuz? Dinler tarihi bilimi, dinleri hak veya batıl diye yargılamadan, her dinin kendi kutsal metinlerini ve uygulamalarını esas alarak tarihsel-karşılaştırmalı ve tarafsız (betimleyici) bir metotla inceler.
@@ -3012,4 +3012,184 @@ Bunu biliyor muydunuz? Delil ve araştırmaya dayanan tahkîkî iman şüpheler 
 Faydalı bulduysanız arkadaşınızı etiketleyin.
 📘 10. sınıf Temel Dinî Bilgiler 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-temel-dini-bilgiler-hafta-6
 #derskutusu #temeldinibilgiler #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-akaid-6
+Sıra: 2026-12-01 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-akaid-6.png
+
+```
+Bunu biliyor muydunuz? İmanın asli rüknü kalp ile tasdiktir; delil ve tefekkürle güçlenen tahkîkî iman ise şüpheler karşısında sarsılmaz.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Akaid 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-akaid-hafta-6
+#derskutusu #akaid #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-biyoloji-6
+Sıra: 2026-12-01 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-biyoloji-6.png
+
+```
+Bunu biliyor muydunuz? İmpuls hızı uyaran şiddetine değil miyelin kılıfa ve akson çapına bağlıdır; uyaran şiddeti yalnızca impuls sayısını artırır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Biyoloji 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-biyoloji-hafta-6
+#derskutusu #biyoloji #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-cografya-6
+Sıra: 2026-12-01 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-cografya-6.png
+
+```
+Bunu biliyor muydunuz? Dünyadaki tatlı suların en büyük kısmı buzullarda, ikinci büyük kısmı ise yer altı sularında depolanmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Coğrafya 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-cografya-hafta-6
+#derskutusu #coğrafya #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-din-kulturu-6
+Sıra: 2026-12-01 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-din-kulturu-6.png
+
+```
+Bunu biliyor muydunuz? Bakara suresi 286. ayet, insanın yalnızca gücü nispetinde sorumlu tutulduğunu ve her bireyin kendi kazancından hesaba çekileceğini bildirir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Din Kültürü ve Ahlak Bilgisi 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-din-kulturu-ve-ahlak-bilgisi-hafta-6
+#derskutusu #dinkültürü #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-dinler-tarihi-6
+Sıra: 2026-12-01 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-dinler-tarihi-6.png
+
+```
+Bunu biliyor muydunuz? Dünya dinleri Orta Doğu, Güney Asya ve Doğu Asya olmak üzere üç ana havzada doğmuş; İslam, Hristiyanlık ve Budizm evrensel yayılış göstermiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Dinler Tarihi 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-dinler-tarihi-hafta-6
+#derskutusu #dinlertarihi #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-edebiyat-6
+Sıra: 2026-12-01 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-edebiyat-6.png
+
+```
+Bunu biliyor muydunuz? Çok modlu metinlerde açık ve örtük iletiler; dilsel, görsel ve işitsel unsurların birlikte çözümlenmesiyle tam olarak anlaşılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Türk Dili ve Edebiyatı 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-turk-dili-ve-edebiyati-hafta-6
+#derskutusu #edebiyat #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-felsefe-6
+Sıra: 2026-12-02 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-felsefe-6.png
+
+```
+Bunu biliyor muydunuz? İnsan merkezci etik doğaya araçsal değer verirken, canlı merkezci ve çevre merkezci yaklaşımlar doğanın kendinde değerini savunur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Felsefe 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-felsefe-hafta-6
+#derskutusu #felsefe #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-fizik-6
+Sıra: 2026-12-02 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-fizik-6.png
+
+```
+Bunu biliyor muydunuz? Etki ve tepki kuvvetleri farklı cisimler üzerine etki ettiği için birbirini dengelemez; serbest cisim diyagramında yalnız cisme etki eden kuvvetler çizilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Fizik 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-fizik-hafta-6
+#derskutusu #fizik #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-hitabet-ve-mesleki-uygulama-6
+Sıra: 2026-12-02 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-hitabet-ve-mesleki-uygulama-6.png
+
+```
+Bunu biliyor muydunuz? Etkili dinî hitabet; hikmet, güzel öğüt, yumuşak üslup, kolaylaştırma ve müjdeleme ilkeleri üzerine inşa edilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Hitabet ve Mesleki Uygulama 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-hitabet-ve-mesleki-uygulama-hafta-6
+#derskutusu #hitabet #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-ingilizce-6
+Sıra: 2026-12-02 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-ingilizce-6.png
+
+```
+Bunu biliyor muydunuz? Geçmişteki genel yetenekler için “could”, özel bir çaba ile tek seferde ulaşılan başarılar için “was/were able to” veya “managed to” kullanılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf İngilizce 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-ingilizce-hafta-6
+#derskutusu #ingilizce #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-kimya-6
+Sıra: 2026-12-02 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-kimya-6.png
+
+```
+Bunu biliyor muydunuz? Standart koşullarda en kararlı hâldeki elementlerin molar oluşum entalpisi sıfırdır; tepkime entalpisi ürünler eksi girenler bağıntısıyla bulunur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Kimya 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-kimya-hafta-6
+#derskutusu #kimya #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-kuran-i-kerim-6
+Sıra: 2026-12-02 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-kuran-i-kerim-6.png
+
+```
+Bunu biliyor muydunuz? Sakin mimden sonra mim gelirse İdgam-ı Misleyn, bâ gelirse İhfa-i Şefevi, diğer 26 harften biri gelirse İzhar-ı Şefevi olur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Kur’an-ı Kerim 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-kuran-i-kerim-hafta-6
+#derskutusu #kuranıkerim #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-matematik-6
+Sıra: 2026-12-03 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-matematik-6.png
+
+```
+Bunu biliyor muydunuz? Köşegenleri dik kesişen dörtgenlerde karşılıklı kenarların kareleri toplamı eşittir ve alan köşegenler çarpımının yarısına eşittir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Matematik 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-matematik-hafta-6
+#derskutusu #matematik #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-mesleki-arapca-6
+Sıra: 2026-12-03 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-mesleki-arapca-6.png
+
+```
+Bunu biliyor muydunuz? Haşr suresi 24. ayette geçen el-Hâlık, el-Bâri’ ve el-Musavvir isimleri ilahi yaratılışın takdir, var etme ve şekil verme aşamalarını ifade eder.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Mesleki Arapça 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-mesleki-arapca-hafta-6
+#derskutusu #meslekiarapça #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-peygamberimizin-hayati-6
+Sıra: 2026-12-03 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-peygamberimizin-hayati-6.png
+
+```
+Bunu biliyor muydunuz? Mescid-i Nebevî, Suffe, Muâhât ve Medine Vesikası; Medine İslam Devleti’nin idari, ilmi, sosyal ve hukuki temellerini oluşturmuştur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Peygamberimizin Hayatı 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-peygamberimizin-hayati-hafta-6
+#derskutusu #peygamberimizinhayatı #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-tarih-6
+Sıra: 2026-12-03 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-tarih-6.png
+
+```
+Bunu biliyor muydunuz? Lale Devri’nde ilk geçici elçilikler açılmış, İbrahim Müteferrika matbaasında ilk eser olarak 1729’da Vankulu Lügati basılmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Tarih 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-tarih-hafta-6
+#derskutusu #tarih #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-tefsir-6
+Sıra: 2026-12-03 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-tefsir-6.png
+
+```
+Bunu biliyor muydunuz? Sahabe döneminde Mekke, Medine ve Kûfe tefsir ekolleri doğmuş; tedvin sonrasında tefsir eserleri Rivayet ve Dirayet olmak üzere iki ana kola ayrılmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Tefsir 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-tefsir-hafta-6
+#derskutusu #tefsir #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-temel-dini-bilgiler-6
+Sıra: 2026-12-03 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-temel-dini-bilgiler-6.png
+
+```
+Bunu biliyor muydunuz? Hezarfen Necmeddin Okyay; imam-hatiplik görevinin yanında hüsn-i hat, okçuluk, ciltçilik ve çiçekli ebru (Necmeddin Ebrusu) alanlarında iz bırakmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Temel Dinî Bilgiler 6. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-temel-dini-bilgiler-hafta-6
+#derskutusu #temeldinibilgiler #11sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
