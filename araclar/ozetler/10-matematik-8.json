@@ -1,0 +1,263 @@
+{
+  "ad": "10-matematik-8",
+  "sinif": 10,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 8,
+  "tarih": "2-6 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "İSTATİSTİKSEL ARAŞTIRMA SÜRECİ",
+  "konu": "İki Kategorik Değişkenli Veriler: İki Yönlü Sıklık Tabloları, Koşullu Göreli Sıklıklar ve Kümelenmiş/Yığılmış Sütun Grafikleriyle İlişki Analizi",
+  "ciktilar": [
+    "İki kategorik değişken arasındaki ilişkililiği sorgulayan istatistiksel araştırma soruları oluşturur ve verileri iki yönlü sıklık tablosuyla özetler.",
+    "İki yönlü sıklık tablolarından yararlanarak marjinal (kenar), birleşik (ortak) ve satır/sütun koşullu göreli sıklıkları hesaplar.",
+    "Kümelenmiş ve %100 yığılmış sütun grafikleriyle görselleştirilen koşullu göreli sıklıkları karşılaştırarak iki kategorik değişken arasında ilişki olup olmadığına karar verir."
+  ],
+  "giris": "Gerçek yaşamda 'Öğrencilerin tercih ettiği yabancı dil ile katıldıkları yurt dışı programı arasında ilişki var mıdır?' veya 'Tüketicilerin yaş grubu ile alışveriş kanalı tercihi birbirine bağlı mıdır?' gibi pek çok problem iki kategorik (nitel) değişkenin birlikte incelenmesini gerektirir. İki yönlü sıklık tabloları, koşullu göreli sıklıklar ve yığılmış sütun grafikleri, bu değişkenler arasındaki istatistiksel ilişkiyi kanıta dayalı olarak ortaya koyan en güçlü veri analizi araçlarıdır.",
+  "bolumler": [
+    {
+      "baslik": "İki Kategorik Değişken ve İki Yönlü Sıklık (Çapraz) Tabloları",
+      "metin": [
+        "Gözlem birimlerinin sayısal büyüklük yerine {koyu:nitelik, grup veya kategori} bildiren özelliklerini temsil eden değişkenlere {koyu:kategorik (nitel) değişken} denir (örneğin cinsiyet, kan grubu, tercih edilen spor dalı, ulaşım türü). İki kategorik değişkenin alt kategorilerine ait gözlem sayılarını (frekanslarını) satır ve sütunlar hâlinde birlikte gösteren tablolara {koyu:iki yönlü sıklık tablosu (çapraz tablo / kontenjans tablosu)} adı verilir.",
+        "İki yönlü bir sıklık tablosunda satırların ve sütunların kesiştiği {koyu:iç hücreler}, her iki özelliği aynı anda taşıyan gözlem sayılarını ({koyu:birleşik sıklıkları}) gösterir. Tablonun en sağ sütununda ve en alt satırında yer alan toplamlar ise tek bir değişkenin alt kategorilerine ait toplamları ({koyu:marjinal / kenar sıklıkları}) verir.",
+        "Satır toplamlarının toplamı ile sütun toplamlarının toplamı daima birbirine eşittir ve sağ alt köşedeki {koyu:genel toplamı (n = örneklem hacmini)} oluşturur. Veri kümelerinin büyüklükleri farklı olduğunda doğrudan kişi sayılarını karşılaştırmak yanıltıcı olacağından, sıklıklar genel toplama veya satır/sütun toplamına bölünerek {koyu:göreli sıklıklara (oran veya yüzdelere)} dönüştürülür."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">İKİ YÖNLÜ SIKLIK TABLOSU VE GÖRELİ SIKLIK TÜRLERİ</text>\n  <rect x=\"22\" y=\"40\" width=\"320\" height=\"178\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"62\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e40af\">ÖRNEK İKİ YÖNLÜ TABLO (SPOR VE KURS TERCİHİ - n=200)</text>\n  <text x=\"34\" y=\"85\" font-size=\"11.2\" fill=\"#1e3a8a\">•                  Yüzme   Basketbol   Satır Toplamı</text>\n  <text x=\"34\" y=\"110\" font-size=\"11.2\" fill=\"#1e3a8a\">• Sabah Grubu :     48        32            80</text>\n  <text x=\"34\" y=\"135\" font-size=\"11.2\" fill=\"#1e3a8a\">• Akşam Grubu :     72        48           120</text>\n  <text x=\"34\" y=\"160\" font-size=\"11.2\" fill=\"#1e3a8a\">• Sütun Toplamı:   120        80           200 (Genel)</text>\n  <text x=\"34\" y=\"185\" font-size=\"11.2\" fill=\"#1e3a8a\">• İç hücreler (48, 32, 72, 48): Birleşik sıklıklardır.</text>\n  <rect x=\"358\" y=\"40\" width=\"320\" height=\"178\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"62\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#92400e\">MARJİNAL VE BİRLEŞİK GÖRELİ SIKLIK</text>\n  <text x=\"370\" y=\"85\" font-size=\"11.2\" fill=\"#78350f\">• Marjinal (Kenar) Göreli Sıklık = Kenar Toplamı / Genel Toplam</text>\n  <text x=\"370\" y=\"110\" font-size=\"11.2\" fill=\"#78350f\">• • Sabah grubu marjinal göreli sıklığı: 80 / 200 = %40</text>\n  <text x=\"370\" y=\"135\" font-size=\"11.2\" fill=\"#78350f\">• • Yüzme kursu marjinal göreli sıklığı: 120 / 200 = %60</text>\n  <text x=\"370\" y=\"160\" font-size=\"11.2\" fill=\"#78350f\">• Birleşik (Ortak) Göreli Sıklık = İç Hücre / Genel Toplam</text>\n  <text x=\"370\" y=\"185\" font-size=\"11.2\" fill=\"#78350f\">• • Hem sabah hem yüzme: 48 / 200 = 0,24 (%24)</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Marjinal ve birleşik göreli sıklıklarda payda daima 'Genel Toplam (n)' değeridir.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Sorularda 'tüm öğrencilerin yüzde kaçı hem A hem B özelliğine sahiptir?' denildiğinde paydaya Genel Toplam (birleşik göreli sıklık); 'A grubundakilerin yüzde kaçı B özelliğine sahiptir?' denildiğinde ise paydaya A grubunun toplamı (koşullu göreli sıklık) yazılır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "İki yönlü sıklık tablosundaki tüm iç hücrelerin birleşik göreli sıklıklarının toplamı daima 1'e (%100'e) eşittir."
+        }
+      ]
+    },
+    {
+      "baslik": "Satır ve Sütun Koşullu Göreli Sıklıkların Hesaplanması",
+      "metin": [
+        "Bir kategorik değişkenin belirli bir düzeyi (koşulu) sabit tutulduğunda, diğer değişkenin kategorilerinin bu alt grup içindeki dağılım oranına {koyu:koşullu göreli sıklık} denir. Koşulun satırdaki değişkene mi yoksa sütundaki değişkene mi konulduğuna göre iki şekilde hesaplanır:",
+        "{koyu:1. Satır Koşullu Göreli Sıklığı:} Bir satırdaki her bir iç hücre sıklığının, {koyu:ait olduğu satırın toplamına} bölünmesiyle elde edilir. Her bir satır kendi içinde bir bütün kabul edildiğinden, aynı satırdaki koşullu göreli sıklıkların toplamı {koyu:1'e (%100'e)} eşittir.",
+        "{koyu:2. Sütun Koşullu Göreli Sıklığı:} Bir sütundaki her bir iç hücre sıklığının, {koyu:ait olduğu sütunun toplamına} bölünmesiyle elde edilir. Aynı sütundaki koşullu göreli sıklıkların toplamı da {koyu:1'e (%100'e)} eşittir. Örneğin 'Sabah grubundakilerin yüzde kaçı yüzmeyi seçmiştir?' sorusu satır koşullu göreli sıklık ({kesir:48|80} = %60) iken; 'Yüzmeyi seçenlerin yüzde kaçı sabah grubundadır?' sorusu sütun koşullu göreli sıklıktır ({kesir:48|120} = %40)."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">SATIR VE SÜTUN KOŞULLU GÖRELİ SIKLIK HESABI</text>\n  <rect x=\"22\" y=\"40\" width=\"320\" height=\"178\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"62\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#166534\">SATIR KOŞULLU GÖRELİ SIKLIK (PAYDA: SATIR TOPLAMI)</text>\n  <text x=\"34\" y=\"85\" font-size=\"11.2\" fill=\"#14532d\">• Formül: Hücre Sıklığı / İlgili Satırın Toplamı</text>\n  <text x=\"34\" y=\"110\" font-size=\"11.2\" fill=\"#14532d\">• Soru: Sabah grubundakilerin (80) yüzde kaçı yüzmededir?</text>\n  <text x=\"34\" y=\"135\" font-size=\"11.2\" fill=\"#14532d\">• Hesap: 48 / 80 = 0,60 (%60 Yüzme, %40 Basketbol).</text>\n  <text x=\"34\" y=\"160\" font-size=\"11.2\" fill=\"#14532d\">• Soru: Akşam grubundakilerin (120) yüzde kaçı yüzmededir?</text>\n  <text x=\"34\" y=\"185\" font-size=\"11.2\" fill=\"#14532d\">• Hesap: 72 / 120 = 0,60 (%60 Yüzme, %40 Basketbol).</text>\n  <rect x=\"358\" y=\"40\" width=\"320\" height=\"178\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"62\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e40af\">SÜTUN KOŞULLU GÖRELİ SIKLIK (PAYDA: SÜTUN TOPLAMI)</text>\n  <text x=\"370\" y=\"85\" font-size=\"11.2\" fill=\"#1e3a8a\">• Formül: Hücre Sıklığı / İlgili Sütunun Toplamı</text>\n  <text x=\"370\" y=\"110\" font-size=\"11.2\" fill=\"#1e3a8a\">• Soru: Yüzmedekilerin (120) yüzde kaçı sabah grubundadır?</text>\n  <text x=\"370\" y=\"135\" font-size=\"11.2\" fill=\"#1e3a8a\">• Hesap: 48 / 120 = 0,40 (%40 Sabah, %60 Akşam).</text>\n  <text x=\"370\" y=\"160\" font-size=\"11.2\" fill=\"#1e3a8a\">• Soru: Basketboldakilerin (80) yüzde kaçı sabahtadır?</text>\n  <text x=\"370\" y=\"185\" font-size=\"11.2\" fill=\"#1e3a8a\">• Hesap: 32 / 80 = 0,40 (%40 Sabah, %60 Akşam).</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Cümlede '-den / -dan / içinden / arasından / olanların' eki alan grup hangisiyse paydaya o grubun toplamı yazılır!</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "'Kız öğrencilerin yüzde kaçı gözlüklüdür?' sorusu ile 'Gözlüklü öğrencilerin yüzde kaçı kızdır?' sorusu birbirine eşit değildir; ilkinde payda kızların toplamı, ikincisinde ise gözlüklülerin toplamıdır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Bağımsız değişken satırlarda yer alıyorsa satır koşullu göreli sıklıkları, sütunlarda yer alıyorsa sütun koşullu göreli sıklıkları hesaplamak karşılaştırmayı kolaylaştırır."
+        }
+      ]
+    },
+    {
+      "baslik": "Kümelenmiş ve Yığılmış Sütun Grafikleriyle İlişki (Bağımsızlık) Analizi",
+      "metin": [
+        "İki kategorik değişkenli verileri görselleştirmek için {koyu:kümelenmiş (yan yana) sütun grafiği} veya {koyu:%100 yığılmış (bölünmüş) sütun grafiği} kullanılır. Kümelenmiş sütun grafiğinde bir değişkenin her kategorisi için diğer değişkenin alt kategorileri yan yana sütunlar hâlinde çizilirken; %100 yığılmış sütun grafiğinde her bir ana kategori toplam yüksekliği %100 (veya 1,0) olan tek bir sütunla gösterilir ve sütun koşullu göreli sıklıklara göre renklendirilmiş bölmelere ayrılır.",
+        "{koyu:İki Kategorik Değişken Arasında İlişki (Bağımlılık) Kararı:} İki kategorik değişken arasında istatistiksel bir ilişki (bağımlılık) olup olmadığına karar vermek için {koyu:koşullu göreli sıklık dağılımları} karşılaştırılır.",
+        "Eğer bir değişkenin farklı kategorileri için hesaplanan {koyu:koşullu göreli sıklıklar birbirine eşit (veya çok yakın) ise}, yığılmış sütun grafiğindeki renkli bölmelerin yükseklikleri aynı hizada olur ve {koyu:iki değişken arasında ilişki yoktur (değişkenler birbirinden bağımsızdır)} denir. Eğer {koyu:koşullu göreli sıklıklar birbirinden belirgin biçimde farklılaşıyorsa}, bir değişkenin aldığı değer diğer değişkenin dağılımını etkiliyor demektir; bu durumda {koyu:iki değişken arasında istatistiksel bir ilişki (bağımlılık) vardır} sonucuna ulaşılır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">SÜTUN GRAFİKLERİ VE İLİŞKİLİLİK (BAĞIMSIZLIK) KARARI</text>\n  <rect x=\"22\" y=\"40\" width=\"320\" height=\"178\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"62\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#6b21a8\">İLİŞKİ YOKTUR (BAĞIMSIZ DEĞİŞKENLER)</text>\n  <text x=\"34\" y=\"85\" font-size=\"11.2\" fill=\"#581c87\">• Ölçüt: Koşullu göreli sıklıklar birbirine EŞİTTİR.</text>\n  <text x=\"34\" y=\"110\" font-size=\"11.2\" fill=\"#581c87\">• Örnek: Sabah grubunda yüzme %60, Akşam grubunda yüzme %60.</text>\n  <text x=\"34\" y=\"135\" font-size=\"11.2\" fill=\"#581c87\">• Yığılmış Grafik: Sütunlardaki bölme çizgileri aynı hizadadır.</text>\n  <text x=\"34\" y=\"160\" font-size=\"11.2\" fill=\"#581c87\">• Yorum: Grup saati değişse de spor tercihi oranı değişmiyor.</text>\n  <text x=\"34\" y=\"185\" font-size=\"11.2\" fill=\"#581c87\">• Karar: İki kategorik değişken arasında ilişki YOKTUR.</text>\n  <rect x=\"358\" y=\"40\" width=\"320\" height=\"178\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"62\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#9a3412\">İLİŞKİ VARDIR (BAĞIMLI DEĞİŞKENLER)</text>\n  <text x=\"370\" y=\"85\" font-size=\"11.2\" fill=\"#7c2d12\">• Ölçüt: Koşullu göreli sıklıklar belirgin olarak FARKLIDIR.</text>\n  <text x=\"370\" y=\"110\" font-size=\"11.2\" fill=\"#7c2d12\">• Örnek: Düzenli çalışanlarda başarı %85, çalışmayanlarda %25.</text>\n  <text x=\"370\" y=\"135\" font-size=\"11.2\" fill=\"#7c2d12\">• Yığılmış Grafik: Sütunlardaki bölme yükseklikleri farklıdır.</text>\n  <text x=\"370\" y=\"160\" font-size=\"11.2\" fill=\"#7c2d12\">• Yorum: Bir değişkenin kategorisi diğerinin oranını değiştirir.</text>\n  <text x=\"370\" y=\"185\" font-size=\"11.2\" fill=\"#7c2d12\">• Karar: İki kategorik değişken arasında ilişki VARDIR.</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Ham sıklıkların (kişi sayılarının) farklı olması ilişki olduğu anlamına gelmez; karar daima KOŞULLU GÖRELİ SIKLIK ile verilir!</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Tablodaki iç hücre sayıları (örneğin 48 ve 72) birbirinden farklı olsa bile, koşullu göreli sıklıklar (48/80 = %60 ve 72/120 = %60) eşit çıkıyorsa iki değişken arasında ilişki YOKTUR; ham sayılara bakarak karar vermeyiniz."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "İki satır ve iki sütundan (2x2) oluşan bir sıklık tablosunda iç hücrelerin çapraz çarpımları birbirine eşitse (a·d = b·c), koşullu göreli sıklıklar eşittir ve iki değişken birbirinden bağımsızdır."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir okuldaki 120 öğrencinin sınıf düzeyi (9. sınıf / 10. sınıf) ve seçmeli ders tercihi (Robotik / Astronomi) incelenmiştir. 9. sınıftaki 50 öğrencinin 30'u Robotik, 20'si Astronomi; 10. sınıftaki 70 öğrencinin 42'si Robotik, 28'i Astronomi dersini seçmiştir. Tüm öğrencilerin yüzde kaçı hem 10. sınıf olup hem de Robotik dersini seçmiştir?",
+      "cevap": "Hem 10. sınıf olup hem de Robotik seçen öğrenci sayısı 42'dir. Soruda 'tüm öğrencilerin yüzde kaçı' (birleşik göreli sıklık) sorulduğu için paydaya genel toplam (120) yazılır: {kesir:42|120} = {kesir:7|20} = {kesir:35|100} = %35 bulunur."
+    },
+    {
+      "soru": "Birinci örnekteki verilere göre 9. sınıf ve 10. sınıf öğrencilerinin Robotik dersini seçme koşullu göreli sıklıklarını hesaplayarak 'sınıf düzeyi ile seçmeli ders tercihi arasında ilişki olup olmadığını' belirleyiniz.",
+      "cevap": "9. sınıflar için Robotik koşullu göreli sıklığı: {kesir:30|50} = 0,60 (%60). 10. sınıflar için Robotik koşullu göreli sıklığı: {kesir:42|70} = 0,60 (%60). Her iki sınıf düzeyinde de Robotik seçme koşullu göreli sıklığı %60 (Astronomi %40) olup birbirine tam eşit olduğundan, sınıf düzeyi ile seçmeli ders tercihi arasında ilişki yoktur (bağımsızdır)."
+    },
+    {
+      "soru": "Bir ankete katılan 200 kişiden 80'i genç, 120'si yetişkindir. Gençlerin 64'ü çevrim içi alışverişi, 16'sı mağaza alışverişini; yetişkinlerin ise 36'sı çevrim içi alışverişi, 84'ü mağaza alışverişini tercih etmektedir. Çevrim içi alışverişi tercih edenlerin yüzde kaçı gençtir?",
+      "cevap": "Önce çevrim içi alışverişi tercih edenlerin toplam sayısı (sütun toplamı) bulunur: 64 + 36 = 100 kişi. Bunların içinden genç olanların sayısı 64 olduğundan sütun koşullu göreli sıklık: {kesir:64|100} = %64 olarak bulunur."
+    },
+    {
+      "soru": "Üçüncü örnekteki verilere göre yaş grubu (genç / yetişkin) ile alışveriş kanalı tercihi (çevrim içi / mağaza) arasında istatistiksel bir ilişki var mıdır? Koşullu göreli sıklıklarla açıklayınız.",
+      "cevap": "Gençlerde çevrim içi alışveriş tercihi koşullu göreli sıklığı {kesir:64|80} = %80 (mağaza %20) iken; yetişkinlerde çevrim içi alışveriş tercihi koşullu göreli sıklığı {kesir:36|120} = %30 (mağaza %70)'dir. Koşullu göreli sıklıklar (%80 ve %30) birbirinden belirgin biçimde farklı olduğu için yaş grubu ile alışveriş kanalı tercihi arasında güçlü bir ilişki vardır."
+    },
+    {
+      "soru": "İki kategorik değişkenli bir araştırmada elde edilen koşullu göreli sıklıkların %100 yığılmış sütun grafiği ile gösterilmesinin analiz açısından sağladığı kolaylığı açıklayınız.",
+      "cevap": "%100 yığılmış sütun grafiğinde farklı örneklem büyüklüğüne sahip gruplar aynı boyda (%100 yüksekliğinde) sütunlara dönüştürülür ve her alt kategorinin koşullu göreli sıklığı sütun içindeki renkli bölmelerle gösterilir. Böylece sütunlardaki renkli bölmelerin yükseklikleri yan yana karşılaştırılarak değişkenler arasında ilişki olup olmadığı tek bakışta görülür."
+    },
+    {
+      "soru": "'Lise öğrencilerinin günlük uyku süresi (7 saatten az / 7 saat ve üzeri) ile derse odaklanma düzeyi (düşük / orta / yüksek) arasında bir ilişki var mıdır?' sorusunun iki kategorik değişkenli istatistiksel araştırma sorusu ölçütlerini sağlayıp sağlamadığını değerlendiriniz.",
+      "cevap": "Araştırma sorusunda hedef kitle (lise öğrencileri) açıktır; incelenen iki değişken de (uyku süresi grubu ve odaklanma düzeyi) kategorik olarak tanımlanmıştır ve soru iki değişken arasındaki ilişkililiği veri toplayarak incelemeye yöneliktir. Dolayısıyla tüm ölçütleri sağlamaktadır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "soru": "Bir spor kulübündeki 150 üyenin 60'ı kadın, 90'ı erkektir. Kadın üyelerin 24'ü tenis, 36'sı yüzme branşını; erkek üyelerin ise 45'i tenis, 45'i yüzme branşını seçmiştir. Buna göre yüzme branşını seçen üyeler arasında kadınların koşullu göreli sıklığı kaçtır?",
+      "secenekler": [
+        "{kesir:4|15}",
+        "{kesir:2|5}",
+        "{kesir:4|9}",
+        "{kesir:1|2}",
+        "{kesir:3|5}"
+      ],
+      "dogru": 2,
+      "aciklama": "Yüzme branşını seçen toplam üye sayısı 36 (kadın) + 45 (erkek) = 81 kişidir. Yüzme seçenler içinde kadınların koşullu göreli sıklığı 36 / 81 = 4 / 9 bulunur.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "İki yönlü bir sıklık tablosunda tablonun iç hücrelerindeki bir gözlem sıklığının, tablonun sağ alt köşesindeki 'genel toplama' oranına ne ad verilir?",
+      "secenekler": [
+        "Marjinal (kenar) göreli sıklık",
+        "Birleşik (ortak) göreli sıklık",
+        "Satır koşullu göreli sıklığı",
+        "Sütun koşullu göreli sıklığı",
+        "Aritmetik ortalama sıklığı"
+      ],
+      "dogru": 1,
+      "aciklama": "İki kategorik özelliğin kesiştiği iç hücre sıklığının genel toplama oranına birleşik (ortak) göreli sıklık denir.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "A ve B gibi iki kategorik değişkene ait veriler %100 yığılmış sütun grafiği ile görselleştirildiğinde, tüm sütunlardaki alt kategori bölmelerinin yüksekliklerinin birbirine eşit olduğu görülmektedir. Bu grafiğe göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "İki yönlü tablodaki tüm iç hücrelerin kişi sayıları birbirine eşittir.",
+        "A ve B değişkenleri arasında çok güçlü bir doğrusal korelasyon vardır.",
+        "Marjinal göreli sıklıkların her biri sıfıra eşittir.",
+        "Koşullu göreli sıklıklar eşit olduğundan A ve B değişkenleri arasında ilişki yoktur.",
+        "Örneklem hacmi yetersiz olduğu için koşullu göreli sıklık hesaplanamaz."
+      ],
+      "dogru": 3,
+      "aciklama": "%100 yığılmış sütun grafiğinde bölme yüksekliklerinin eşit olması koşullu göreli sıklıkların eşit olduğunu ve iki değişken arasında istatistiksel ilişki olmadığını (bağımsız olduklarını) gösterir.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Bir araştırmada kahvaltı yapma alışkanlığı (Düzenli Yapan / Yapmayan) ile ilk derste dikkat durumu (Yüksek / Düşük) incelenmiştir. Düzenli kahvaltı yapan 80 öğrencinin 68'inde dikkat yüksek iken, kahvaltı yapmayan 40 öğrencinin 12'sinde dikkat yüksektir. Düzenli kahvaltı yapanlarda ve yapmayanlarda yüksek dikkat koşullu göreli sıklıkları sırasıyla yüzde kaçtır?",
+      "secenekler": [
+        "%85 ve %30",
+        "%68 ve %12",
+        "%50 ve %50",
+        "%80 ve %40",
+        "%75 ve %25"
+      ],
+      "dogru": 0,
+      "aciklama": "Düzenli kahvaltı yapanlarda yüksek dikkat oranı: 68 / 80 = 17 / 20 = %85. Kahvaltı yapmayanlarda yüksek dikkat oranı: 12 / 40 = 3 / 10 = %30.",
+      "tur": "coktan"
+    },
+    {
+      "ifadeler": [
+        {
+          "metin": "Kan grubu, tercih edilen müzik türü ve ulaşım aracı gibi sayısal miktar bildirmeyen değişkenlere kategorik (nitel) değişken denir.",
+          "dogru": true,
+          "aciklama": "Gözlem birimlerini nitelik veya sınıflara ayıran değişkenler kategorik değişkendir."
+        },
+        {
+          "metin": "İki yönlü bir sıklık tablosunda aynı satırdaki satır koşullu göreli sıklıkların toplamı 1'e (%100'e) eşittir.",
+          "dogru": true,
+          "aciklama": "Satır koşullu göreli sıklıkta o satırdaki her hücre satır toplamına bölündüğü için toplamları 1 olur."
+        },
+        {
+          "metin": "İki kategorik değişken arasında ilişki olup olmadığına karar verirken göreli sıklıklar yerine doğrudan ham kişi sayılarına bakmak yeterlidir.",
+          "dogru": false,
+          "aciklama": "Grup büyüklükleri farklı olabileceğinden ham sayılar yanıltıcıdır; ilişki kararı koşullu göreli sıklıklar karşılaştırılarak verilir."
+        },
+        {
+          "metin": "Satır toplamlarının veya sütun toplamlarının genel toplama bölünmesiyle elde edilen orana marjinal (kenar) göreli sıklık denir.",
+          "dogru": true,
+          "aciklama": "Tablonun kenarlarında yer alan toplamların genel toplama oranı marjinal göreli sıklıktır."
+        },
+        {
+          "metin": "Koşullu göreli sıklıkların birbirinden belirgin şekilde farklı çıkması, iki değişkenin birbirinden bağımsız olduğunu gösterir.",
+          "dogru": false,
+          "aciklama": "Koşullu göreli sıklıkların belirgin şekilde farklılaşması iki değişken arasında ilişki (bağımlılık) olduğunu gösterir."
+        }
+      ],
+      "tur": "dy"
+    },
+    {
+      "ciftler": [
+        [
+          "İki Yönlü Sıklık Tablosu",
+          "İki kategorik değişkenin alt düzeylerine ait sıklıkları satır ve sütunlarla özetleyen çapraz tablo"
+        ],
+        [
+          "Marjinal Göreli Sıklık",
+          "Tablonun kenarlarındaki satır veya sütun toplamlarının genel toplama oranı"
+        ],
+        [
+          "Birleşik Göreli Sıklık",
+          "Tablonun iç hücrelerindeki ortak gözlem sıklığının genel toplama oranı"
+        ],
+        [
+          "Koşullu Göreli Sıklık",
+          "Bir değişkenin belirli bir kategorisi altındaki gözlem sıklığının o satır veya sütun toplamına oranı"
+        ],
+        [
+          "Yığılmış Sütun Grafiği",
+          "Her sütunun %100 kabul edilerek koşullu göreli sıklıkların bölmeler hâlinde gösterildiği grafik"
+        ]
+      ],
+      "tur": "eslestir"
+    },
+    {
+      "cumleler": [
+        {
+          "metin": "İki yönlü sıklık tablosunda satır toplamlarının toplamı ile sütun toplamlarının toplamı birbirine eşittir ve ___ toplamı verir.",
+          "cevap": "genel"
+        },
+        {
+          "metin": "İki kategorik değişken arasında istatistiksel ilişki olup olmadığını belirlemek için ___ göreli sıklıklar karşılaştırılır.",
+          "cevap": "koşullu"
+        },
+        {
+          "metin": "Bir değişkenin kategorilerine göre diğer değişkenin koşullu göreli sıklıkları hiç değişmiyorsa iki değişken birbirinden ___ olarak nitelendirilir.",
+          "cevap": "bağımsız"
+        },
+        {
+          "metin": "Farklı büyüklükteki grupları karşılaştırırken sıklıkları yüzdelik oranlara dönüştürmek için ___ sıklık kavramından yararlanılır.",
+          "cevap": "göreli"
+        },
+        {
+          "metin": "Bir değişkenin alt kategorilerine ait sütunların yan yana gruplandırılarak çizildiği grafiğe ___ sütun grafiği denir.",
+          "cevap": "kümelenmiş"
+        }
+      ],
+      "fazla": [
+        "nicel",
+        "medyan"
+      ],
+      "tur": "bosluk"
+    },
+    {
+      "soru": "Bir teknoloji firmasında çalışan 100 mühendisin çalışma modeli (Uzaktan / Ofiste) ve memnuniyet düzeyi (Memnun / Kararsız) araştırılmıştır. Uzaktan çalışan 40 mühendisin 32'si memnun, 8'i kararsız; ofiste çalışan 60 mühendisin ise 30'u memnun, 30'u kararsızdır. Çalışma modeli ile memnuniyet düzeyi arasında ilişki olup olmadığını üç adımda analiz ediniz.",
+      "ipuclari": [
+        "Birinci adımda verileri 2x2 iki yönlü sıklık tablosu mantığıyla düzenleyerek satır toplamlarını belirleyiniz.",
+        "İkinci adımda uzaktan çalışanlar ve ofiste çalışanlar için 'Memnun' olma satır koşullu göreli sıklıklarını (%) hesaplayınız.",
+        "Üçüncü adımda bulduğunuz koşullu göreli sıklıkları karşılaştırarak iki değişken arasında ilişki olup olmadığına karar veriniz."
+      ],
+      "cevap": "1. Adım (Tablo ve Toplamlar): Uzaktan çalışan satır toplamı 32 + 8 = 40; ofiste çalışan satır toplamı 30 + 30 = 60; genel toplam 100 mühendistir. 2. Adım (Koşullu Göreli Sıklıklar): Uzaktan çalışanların memnuniyet koşullu göreli sıklığı {kesir:32|40} = 0,80 (%80 memnun, %20 kararsız); ofiste çalışanların memnuniyet koşullu göreli sıklığı ise {kesir:30|60} = 0,50 (%50 memnun, %50 kararsız) olarak hesaplanır. 3. Adım (İlişki Kararı): Uzaktan çalışanlarda memnuniyet oranı (%80) ofiste çalışanlara (%50) göre belirgin biçimde daha yüksek olduğundan, çalışma modeli ile memnuniyet düzeyi arasında istatistiksel bir ilişki vardır.",
+      "tur": "ogretici"
+    }
+  ],
+  "ozet": [
+    "İki kategorik (nitel) değişkene ait veriler, satır ve sütunlardan oluşan iki yönlü sıklık (çapraz) tablolarıyla özetlenir.",
+    "Tablodaki kenar toplamlarının genel toplama oranına marjinal göreli sıklık, iç hücrelerin genel toplama oranına ise birleşik göreli sıklık denir.",
+    "Bir kategorinin koşulu altında diğer değişkenin dağılımını gösteren koşullu göreli sıklık, iç hücrenin ilgili satır veya sütun toplamına bölünmesiyle bulunur.",
+    "İki kategorik değişkenli dağılımlar kümelenmiş sütun grafiği veya %100 yığılmış (bölünmüş) sütun grafiği kullanılarak görselleştirilir.",
+    "Koşullu göreli sıklıklar birbirine eşitse iki değişken arasında ilişki yoktur (bağımsızdır); belirgin biçimde farklıysa iki değişken arasında ilişki vardır."
+  ]
+}

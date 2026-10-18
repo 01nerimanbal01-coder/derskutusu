@@ -1,0 +1,263 @@
+{
+  "ad": "10-kimya-8",
+  "sinif": 10,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 8,
+  "tarih": "2-6 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "1. TEMA: ETKİLEŞİM",
+  "konu": "Kimyasal Tepkime Denklemlerinin Denkleştirilmesi ve Kütlenin/Atom Sayısının Korunumu",
+  "ciktilar": [
+    "Kimyasal tepkime denklemlerinde tepken (giren) ve ürün kavramlarını, fiziksel hâl indislerini ve tepkimede korunan/değişebilen nicelikleri açıklar.",
+    "Atom türü ve sayısının korunumu ilkesine dayanarak kimyasal tepkime denklemlerindeki tanecik sayısı tutarsızlıklarını uygun katsayılarla denkleştirir.",
+    "Yanma, sentez ve analiz gibi kimyasal tepkime denklemlerini en küçük tam sayılarla denkleştirerek tepken ve ürün katsayılarını değerlendirir."
+  ],
+  "giris": "Kimyasal değişimlerin evrensel sembol ve formüllerle gösterildiği ifadelere kimyasal tepkime denklemleri adı verilir. Doğadaki her kimyasal tepkimede atomların türü ve sayısı ile toplam kütle korunduğundan, tepkimeye giren maddelerdeki (tepkenlerdeki) her bir elementin toplam atom sayısı, ürünlerdeki aynı elementin toplam atom sayısına stokiyometrik katsayılar yardımıyla eşitlenmelidir.",
+  "bolumler": [
+    {
+      "baslik": "Kimyasal Tepkime Denklemleri ve Tepkimelerde Korunan Özellikler",
+      "metin": [
+        "Bir kimyasal tepkimede etkileşime girerek harcanan başlangıç maddelerine {koyu:tepkenler (reaktifler / girenler)}, tepkime sonucunda oluşan yeni maddelere ise {koyu:ürünler (çıkanlar)} denir. Tepkenler ok işaretinin sol tarafına, ürünler ise sağ tarafına yazılır; maddelerin fiziksel hâlleri formüllerin sağ alt köşesinde {koyu:(k)} katı, {koyu:(s)} sıvı, {koyu:(g)} gaz ve {koyu:(suda)} veya {koyu:(aq)} sulu çözelti sembolleriyle gösterilir.",
+        "Kimyasal tepkimelerde atomların elektron dizilimleri ve kimyasal bağları değişirken çekirdek yapıları değişmez. Bu nedenle bütün kimyasal tepkimelerde {koyu:1) Atomların türü (cinsi) ve sayısı, 2) Toplam kütle (Kütlenin Korunumu Kanunu), 3) Toplam proton, nötron ve elektron sayısı, 4) Çekirdek yükü ve çekirdek yapısı, 5) Toplam elektriksel yük ve toplam enerji} değişmeden korunur.",
+        "Buna karşılık bir kimyasal tepkimede {koyu:toplam mol sayısı, toplam molekül sayısı, toplam tanecik sayısı, gazların toplam hacmi ve basıncı ile maddelerin fiziksel hâli, rengi, kokusu ve elektron alışverişiyle oluşan iyon yükleri} korunmayabilir (değişebilir veya tesadüfen sabit kalabilir)."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">KİMYASAL TEPKİMELERDE KORUNAN VE DEĞİŞEBİLEN ÖZELLİKLER</text>\n  <rect x=\"22\" y=\"40\" width=\"320\" height=\"178\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"62\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e40af\">DAİMA KORUNAN ÖZELLİKLER</text>\n  <text x=\"34\" y=\"85\" font-size=\"11.2\" fill=\"#1e3a8a\">• 1. Atomların cinsi (türü) ve toplam atom sayısı.</text>\n  <text x=\"34\" y=\"110\" font-size=\"11.2\" fill=\"#1e3a8a\">• 2. Toplam kütle (m_tepkenler = m_ürünler).</text>\n  <text x=\"34\" y=\"135\" font-size=\"11.2\" fill=\"#1e3a8a\">• 3. Toplam proton, nötron ve elektron sayısı.</text>\n  <text x=\"34\" y=\"160\" font-size=\"11.2\" fill=\"#1e3a8a\">• 4. Atomların çekirdek yükü ve çekirdek yapısı.</text>\n  <text x=\"34\" y=\"185\" font-size=\"11.2\" fill=\"#1e3a8a\">• 5. Toplam elektriksel yük ve toplam enerji.</text>\n  <rect x=\"358\" y=\"40\" width=\"320\" height=\"178\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"62\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#92400e\">DEĞİŞEBİLEN ÖZELLİKLER VE GÖSTERİM</text>\n  <text x=\"370\" y=\"85\" font-size=\"11.2\" fill=\"#78350f\">• 1. Toplam mol sayısı ve toplam molekül sayısı.</text>\n  <text x=\"370\" y=\"110\" font-size=\"11.2\" fill=\"#78350f\">• 2. Toplam hacim ve basınç (gaz tepkimelerinde).</text>\n  <text x=\"370\" y=\"135\" font-size=\"11.2\" fill=\"#78350f\">• 3. Maddelerin fiziksel ve kimyasal özellikleri.</text>\n  <text x=\"370\" y=\"160\" font-size=\"11.2\" fill=\"#78350f\">• Fiziksel Hâller: (k) Katı, (s) Sıvı, (g) Gaz, (suda) Çözelti.</text>\n  <text x=\"370\" y=\"185\" font-size=\"11.2\" fill=\"#78350f\">• Gösterim: Tepkenler (Girenler) -&gt; Ürünler (Çıkanlar).</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">N₂(g) + 3H₂(g) -&gt; 2NH₃(g) tepkimesinde toplam atom sayısı (8 atom) korunurken, molekül sayısı 4'ten 2'ye düşmüştür.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Bir kimyasal tepkimede 'toplam atom sayısı' korunurken 'toplam molekül sayısı (veya toplam mol sayısı)' korunmak zorunda değildir; örneğin 2H₂ + O₂ -> 2H₂O tepkimesinde 3 mol molekül girip 2 mol molekül oluşmuştur."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Nükleer (çekirdek) tepkimelerden farklı olarak kimyasal tepkimelerde atomların çekirdek yapısı değişmediği için yeni bir element atomu oluşmaz, mevcut atomlar yeniden dizilir."
+        }
+      ]
+    },
+    {
+      "baslik": "Kimyasal Tepkime Denklemlerini Denkleştirme Kuralları (MAH Yöntemi)",
+      "metin": [
+        "Denkleştirilmemiş bir tepkime denkleminde tepken ve ürünlerdeki atom sayılarında bulunan tutarsızlığı gidermek için formüllerin önüne {koyu:stokiyometrik katsayılar} yazılır. Denkleştirme yapılırken {koyu:bileşiklerin formülü ve sağ alt köşedeki atom indisleri kesin olarak değiştirilemez}; çünkü alt indisi değiştirmek maddenin kimyasal kimliğini değiştirir (örneğin H₂O su iken, H₂O₂ hidrojen peroksittir). Formülün önüne yazılan katsayı ise o formüldeki tüm atomların sayısını çarpar.",
+        "Pratik denkleştirme sırası olarak {koyu:MAH Kuralı (Önce Metaller -> Sonra Ametaller -> Ardından Hidrojen -> En son Oksijen)} uygulanır. Denkleştirmeye genellikle {koyu:en çok sayıda atom içeren en karmaşık bileşiğin katsayısı 1 kabul edilerek} başlanır; serbest (elementel) hâldeki atom veya moleküller (O₂, N₂, H₂, Fe, Cu gibi) ise en sona bırakılır.",
+        "Bileşiklerin önüne kesirli katsayı yazılmaz; ancak {koyu:H₂, O₂, N₂, Cl₂} gibi iki atomlu (diatomik) element moleküllerinin önüne {koyu:{kesir:1|2}, {kesir:3|2}, {kesir:5|2}} gibi kesirli sayılar yazılabilir. Örneğin önüne {koyu:{kesir:7|2}} yazılan O₂ molekülünde {koyu:{kesir:7|2} × 2 = 7 tane oksijen atomu} bulunur. Eğer soru 'en küçük tam sayılarla denkleştiriniz' diyorsa, kesirli katsayının paydasından kurtulmak için tüm denklem uygun tam sayıyla (örneğin 2 ile) genişletilir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">TEPKİME DENKLEŞTİRME ADIMLARI VE 'MAH' KURALI</text>\n  <rect x=\"22\" y=\"40\" width=\"320\" height=\"178\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"62\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#166534\">MAH DENKLEŞTİRME SIRALAMASI</text>\n  <text x=\"34\" y=\"85\" font-size=\"11.2\" fill=\"#14532d\">• 1. Adım (M - Metal): Ca, Mg, Al, Fe, Na gibi metaller.</text>\n  <text x=\"34\" y=\"110\" font-size=\"11.2\" fill=\"#14532d\">• 2. Adım (A - Ametal): C, N, P, S, Cl gibi ametaller.</text>\n  <text x=\"34\" y=\"135\" font-size=\"11.2\" fill=\"#14532d\">• 3. Adım (H - Hidrojen): H atomlarının sayısı eşitlenir.</text>\n  <text x=\"34\" y=\"160\" font-size=\"11.2\" fill=\"#14532d\">• 4. Adım (O - Oksijen): En son O atomları eşitlenir.</text>\n  <text x=\"34\" y=\"185\" font-size=\"11.2\" fill=\"#14532d\">• Başlangıç: En kalabalık bileşiğin katsayısı 1 alınır.</text>\n  <rect x=\"358\" y=\"40\" width=\"320\" height=\"178\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"62\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e40af\">ALTIN KURALLAR VE KATSAYI HESABI</text>\n  <text x=\"370\" y=\"85\" font-size=\"11.2\" fill=\"#1e3a8a\">• Bileşik içindeki alt indisler DEĞİŞTİRİLEMEZ.</text>\n  <text x=\"370\" y=\"110\" font-size=\"11.2\" fill=\"#1e3a8a\">• Katsayı yalnız formülün en önüne çarpan olarak yazılır.</text>\n  <text x=\"370\" y=\"135\" font-size=\"11.2\" fill=\"#1e3a8a\">• 2 Ca(NO₃)₂ formülünde: 2 Ca, 4 N ve 12 O atomu vardır.</text>\n  <text x=\"370\" y=\"160\" font-size=\"11.2\" fill=\"#1e3a8a\">• Elementel gazların (O₂, H₂, N₂) önüne kesir (5/2) gelebilir.</text>\n  <text x=\"370\" y=\"185\" font-size=\"11.2\" fill=\"#1e3a8a\">• En küçük tam sayı istenirse tüm denklem payda ile çarpılır.</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Parantezli kök içeren bileşiklerde (örneğin Al₂(SO₄)₃) parantez dışındaki sayı parantez içindeki her atomla çarpılır.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Üç mol Mg(OH)₂ (3 Mg(OH)₂) ifadesindeki toplam atom sayısı hesaplanırken baştaki 3 katsayısı tüm bileşikle, parantez dışındaki 2 ise O ve H ile çarpılır: 3 Mg + 6 O + 6 H = 15 atom."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Tepkimenin her iki tarafında da bozulmadan aynen korunan çok atomlu iyonlar (SO₄²⁻, NO₃⁻, PO₄³⁻ gibi kökler) tek bir birim gibi düşünülerek çok daha hızlı denkleştirilebilir."
+        }
+      ]
+    },
+    {
+      "baslik": "Organik Yanma ve Asit-Baz Tepkimelerinin Denkleştirilmesi Uygulamaları",
+      "metin": [
+        "Yapısında karbon (C) ve hidrojen (H) (ve bazen oksijen) bulunduran organik bileşiklerin oksijen gazı (O₂) ile yanması sonucunda daima {koyu:karbondioksit (CO₂) ve su (H₂O)} oluşur. Bu tepkimeler denkleştirilirken sırasıyla {koyu:önce Karbon (C), sonra Hidrojen (H), en son Oksijen (O)} atomları eşitlenir.",
+        "Örneğin propan gazının (C₃H₈) yanma tepkimesi: {koyu:1 C₃H₈(g) + O₂(g) → CO₂(g) + H₂O(s)}. Tepkenlerde 3 C olduğu için CO₂'nin önüne {koyu:3}; 8 H olduğu için H₂O'nun önüne {koyu:4} yazılır. Ürünlerdeki toplam oksijen sayısı (3×2) + (4×1) = 10 O atomu olduğundan, tepkenlerdeki O₂'nin önüne {koyu:5} yazılır ve denklem {koyu:C₃H₈ + 5O₂ → 3CO₂ + 4H₂O} şeklinde denkleşir.",
+        "Tepkenlerinde oksijen içeren etil alkolün (C₂H₅OH) yanmasında ise: {koyu:1 C₂H₅OH + O₂ → 2CO₂ + 3H₂O} yazıldığında ürünlerde (2×2) + (3×1) = {koyu:7 tane O atomu} vardır. Bu 7 oksijenin {koyu:1 tanesi C₂H₅OH'ın kendi yapısında} bulunduğundan, geriye kalan 6 tane O atomu için O₂'nin önüne {koyu:3} katsayısı yazılır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">ORGANİK YANMA VE KÖK İÇEREN TEPKİMELERİN DENKLEŞTİRİLMESİ</text>\n  <rect x=\"22\" y=\"40\" width=\"320\" height=\"178\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"62\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#6b21a8\">ÖRNEK 1: HİDROKARBON YANMASI (C₃H₈)</text>\n  <text x=\"34\" y=\"85\" font-size=\"11.2\" fill=\"#581c87\">• Ham Denklem: C₃H₈ + O₂ -&gt; CO₂ + H₂O</text>\n  <text x=\"34\" y=\"110\" font-size=\"11.2\" fill=\"#581c87\">• 1. Karbon (3 C): CO₂'nin önüne 3 yazılır -&gt; 3 CO₂</text>\n  <text x=\"34\" y=\"135\" font-size=\"11.2\" fill=\"#581c87\">• 2. Hidrojen (8 H): H₂O'nun önüne 4 yazılır -&gt; 4 H₂O</text>\n  <text x=\"34\" y=\"160\" font-size=\"11.2\" fill=\"#581c87\">• 3. Oksijen: Ürünlerde 3x2 + 4x1 = 10 O atomu var.</text>\n  <text x=\"34\" y=\"185\" font-size=\"11.2\" fill=\"#581c87\">• Denk Denklem: C₃H₈ + 5 O₂ -&gt; 3 CO₂ + 4 H₂O</text>\n  <rect x=\"358\" y=\"40\" width=\"320\" height=\"178\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"62\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#9a3412\">ÖRNEK 2: OKSİJENLİ ORGANİK BİLEŞİK (C₂H₅OH)</text>\n  <text x=\"370\" y=\"85\" font-size=\"11.2\" fill=\"#7c2d12\">• Ham Denklem: C₂H₅OH + O₂ -&gt; CO₂ + H₂O</text>\n  <text x=\"370\" y=\"110\" font-size=\"11.2\" fill=\"#7c2d12\">• 1. Karbon (2 C): CO₂'nin önüne 2 yazılır -&gt; 2 CO₂</text>\n  <text x=\"370\" y=\"135\" font-size=\"11.2\" fill=\"#7c2d12\">• 2. Hidrojen (6 H): H₂O'nun önüne 3 yazılır -&gt; 3 H₂O</text>\n  <text x=\"370\" y=\"160\" font-size=\"11.2\" fill=\"#7c2d12\">• 3. Oksijen: Ürünlerde 2x2 + 3x1 = 7 O var (1'i alkolde).</text>\n  <text x=\"370\" y=\"185\" font-size=\"11.2\" fill=\"#7c2d12\">• Denk Denklem: C₂H₅OH + 3 O₂ -&gt; 2 CO₂ + 3 H₂O</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Dikkat: Yapısında oksijen bulunan bileşiklerin yanmasında bileşiğin içindeki oksijen atomunu toplamdan düşmeyi unutmayınız!</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "C₂H₅OH, CH₃OH veya C₆H₁₂O₆ gibi yapısında oksijen bulunduran bileşiklerin yanma denklemlerinde O₂'nin katsayısı belirlenirken, bileşiğin kendi içindeki oksijen atomu sayısı ürünlerdeki toplam oksijen sayısından çıkarılmalıdır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "C₂H₆ + O₂ -> CO₂ + H₂O tepkimesinde 2 CO₂ ve 3 H₂O yazıldığında ürünlerde 7 O atomu olur; O₂'nin önüne 7/2 yazılıp tüm denklem 2 ile genişletilirse en küçük tam sayılarla: 2C₂H₆ + 7O₂ -> 4CO₂ + 6H₂O elde edilir."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Demir(III) oksit katısının karbon monoksit gazıyla tepkimesini gösteren Fe₂O₃(k) + CO(g) → Fe(k) + CO₂(g) denklemini en küçük tam sayılarla denkleştiriniz.",
+      "cevap": "Fe₂O₃ bileşiğinin katsayısı 1 alınır. Tepkenlerde 2 Fe olduğu için ürünlerdeki Fe'nin önüne 2 yazılır. Oksijen ve karbonu eşitlemek için CO ve CO₂'nin katsayıları 3 alındığında tepkenlerde 1×3 + 3×1 = 6 oksijen, ürünlerde 3×2 = 6 oksijen olur. Denk denklem: Fe₂O₃(k) + 3CO(g) → 2Fe(k) + 3CO₂(g)."
+    },
+    {
+      "soru": "Bütan gazının yanma tepkimesi olan C₄H₁₀(g) + O₂(g) → CO₂(g) + H₂O(g) denklemini en küçük tam sayılarla denkleştirerek O₂'nin katsayısını bulunuz.",
+      "cevap": "C₄H₁₀'un katsayısı 1 alındığında 4 C için CO₂'nin önüne 4, 10 H için H₂O'nun önüne 5 yazılır. Ürünlerde toplam (4×2) + (5×1) = 13 O atomu olduğundan O₂'nin önüne {kesir:13|2} gelir. En küçük tam sayılar için tüm denklem 2 ile çarpılır: 2C₄H₁₀ + 13O₂ → 8CO₂ + 10H₂O. O₂'nin katsayısı 13'tür."
+    },
+    {
+      "soru": "Alüminyum hidroksit ile sülfürik asit arasındaki Al(OH)₃ + H₂SO₄ → Al₂(SO₄)₃ + H₂O tepkimesini MAH kuralına göre denkleştiriniz.",
+      "cevap": "En kalabalık bileşik olan Al₂(SO₄)₃'ün katsayısı 1 alınır. 1) Metal (Al): Ürünlerde 2 Al olduğu için Al(OH)₃'ün önüne 2 yazılır. 2) Ametal/Kök (S): Ürünlerde 3 tane SO₄ (3 S atomu) olduğu için H₂SO₄'ün önüne 3 yazılır. 3) Hidrojen ve Oksijen: Tepkenlerde 2×3 + 3×2 = 12 H atomu olduğundan H₂O'nun önüne 6 yazılır. Denklem: 2Al(OH)₃ + 3H₂SO₄ → Al₂(SO₄)₃ + 6H₂O."
+    },
+    {
+      "soru": "Denkleştirilmiş 2X + 5O₂ → 4CO₂ + 2H₂O tepkime denklemine göre X bileşiğinin basit/molekül formülünü bulunuz.",
+      "cevap": "Kimyasal tepkimelerde atom türü ve sayısı korunur. Ürünlerde 4 C, 4 H ve (4×2 + 2×1) = 10 O atomu vardır. Tepkenlerdeki 5O₂'den 10 O atomu geldiğine göre X bileşiğinde oksijen yoktur; 2 molekül X'te 4 C ve 4 H atomu bulunduğundan 1 molekül X'in formülü C₂H₂ (asetilen) olarak bulunur."
+    },
+    {
+      "soru": "Glikozun oksijenli solunum (yanma) tepkimesi olan C₆H₁₂O₆(k) + O₂(g) → CO₂(g) + H₂O(s) denklemini en küçük tam sayılarla denkleştiriniz.",
+      "cevap": "C₆H₁₂O₆'nın katsayısı 1 alınır. 6 C için CO₂'nin önüne 6, 12 H için H₂O'nun önüne 6 yazılır. Ürünlerde toplam (6×2) + (6×1) = 18 O atomu vardır. Bunun 6 tanesi glikozun yapısında bulunduğundan geriye kalan 12 O atomu için O₂'nin önüne 6 yazılır: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O."
+    },
+    {
+      "soru": "Sabit basınç ve sıcaklıkta gerçekleşen N₂(g) + 3H₂(g) → 2NH₃(g) tepkimesinde korunan ve değişen niceliklerden üçer tanesini yazınız.",
+      "cevap": "Korunan nicelikler: 1) Toplam kütle, 2) Atom türü (N ve H) ve toplam atom sayısı (2 N ve 6 H = 8 atom), 3) Toplam proton, nötron ve elektron sayısı. Değişen nicelikler: 1) Toplam mol sayısı (4 molden 2 mole azalır), 2) Toplam molekül sayısı, 3) Sabit basınç ve sıcaklıkta toplam gaz hacmi."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "soru": "Bir kimyasal tepkime sürecinde aşağıdaki niceliklerden hangisi değişebilir (korunmayabilir)?",
+      "secenekler": [
+        "Tepkimeye giren ve çıkan maddelerin toplam kütlesi",
+        "Tepkimedeki toplam molekül ve toplam mol sayısı",
+        "Atomların türü (cinsi) ve toplam atom sayısı",
+        "Sistemdeki toplam proton, nötron ve elektron sayısı",
+        "Atomların çekirdek yükleri ve çekirdek yapıları"
+      ],
+      "dogru": 1,
+      "aciklama": "Kimyasal tepkimelerde kütle, atom sayısı/türü ve atom altı tanecik sayıları daima korunurken; toplam mol ve molekül sayısı değişebilir.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "C₃H₇OH(s) + O₂(g) → CO₂(g) + H₂O(g) tepkime denklemi en küçük tam sayılarla denkleştirildiğinde O₂(g) molekülünün katsayısı kaç olur?",
+      "secenekler": [
+        "4",
+        "5",
+        "6",
+        "9",
+        "10"
+      ],
+      "dogru": 3,
+      "aciklama": "1 C₃H₇OH için 3 CO₂ ve 4 H₂O oluşur (toplam 8 H var). Ürünlerde 3×2 + 4×1 = 10 O vardır; 1 tanesi alkolde olduğu için O₂'nin önüne 9/2 gelir. Denklem 2 ile çarpıldığında (2C₃H₇OH + 9O₂ → 6CO₂ + 8H₂O) O₂'nin katsayısı 9 olur.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Denkleştirilmiş 2X(g) + 3O₂(g) → 2SO₂(g) + 2H₂O(g) kimyasal tepkime denkleminde yer alan X maddesinin formülü aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "SO₃",
+        "CS₂",
+        "H₂SO₃",
+        "H₂S",
+        "H₂SO₄"
+      ],
+      "dogru": 3,
+      "aciklama": "Ürünlerde 2 S, 4 H ve (2×2 + 2×1) = 6 O atomu vardır. Tepkenlerdeki 3O₂'den 6 O atomu geldiğine göre 2X içinde 4 H ve 2 S atomu bulunur; buradan X'in formülü H₂S olur.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Mg₃N₂(k) + H₂O(s) → Mg(OH)₂(k) + NH₃(g) tepkimesi en küçük tam sayılarla denkleştirildiğinde H₂O ve NH₃ bileşiklerinin katsayıları sırasıyla aşağıdakilerden hangisi olur?",
+      "secenekler": [
+        "3 ve 2",
+        "6 ve 2",
+        "6 ve 3",
+        "3 ve 1",
+        "2 ve 6"
+      ],
+      "dogru": 1,
+      "aciklama": "1 Mg₃N₂ alındığında 3 Mg için 3 Mg(OH)₂ ve 2 N için 2 NH₃ oluşur. Ürünlerde toplam 3×2 + 2×3 = 12 H atomu olduğundan H₂O'nun katsayısı 6 olur (6 ve 2).",
+      "tur": "coktan"
+    },
+    {
+      "ifadeler": [
+        {
+          "metin": "Kimyasal bir tepkime denklemi denkleştirilirken bileşiklerin alt indisleri değiştirilemez, yalnız formüllerin önüne katsayı yazılır.",
+          "dogru": true,
+          "aciklama": "Alt indisleri değiştirmek bileşiğin kimyasal türünü değiştireceği için denkleştirme yalnız stokiyometrik katsayılarla yapılır."
+        },
+        {
+          "metin": "Tepkime denklemlerinde (suda) veya (aq) sembolü, maddenin su içinde çözünmüş sulu çözelti hâlinde olduğunu gösterir.",
+          "dogru": true,
+          "aciklama": "(k) katı, (s) sıvı, (g) gaz ve (suda)/(aq) sulu çözelti fiziksel hâlini ifade eder."
+        },
+        {
+          "metin": "O₂, H₂ ve N₂ gibi iki atomlu element moleküllerinin önüne denkleştirme sırasında kesirli katsayı (örneğin 3/2) yazılamaz.",
+          "dogru": false,
+          "aciklama": "Bileşiklerin önüne kesirli katsayı yazılmaz ancak diatomik element moleküllerinin önüne 1/2, 3/2, 5/2 gibi kesirli katsayılar yazılabilir."
+        },
+        {
+          "metin": "Kimyasal tepkimeler denkleştirilirken MAH kuralına göre oksijen ve hidrojen atomları metallerden önce denkleştirilir.",
+          "dogru": false,
+          "aciklama": "MAH kuralına göre önce Metaller, sonra Ametaller, ardından Hidrojen ve en son Oksijen atomları denkleştirilir."
+        },
+        {
+          "metin": "İki mol Ca₃(PO₄)₂ (2 Ca₃(PO₄)₂) ifadesinde toplam 6 tane kalsiyum (Ca), 4 tane fosfor (P) ve 16 tane oksijen (O) atomu bulunur.",
+          "dogru": true,
+          "aciklama": "Baştaki 2 katsayısı tüm atomlarla, parantez dışındaki 2 ise P ve O ile çarpılır: 2×3=6 Ca, 2×2=4 P ve 2×8=16 O."
+        }
+      ],
+      "tur": "dy"
+    },
+    {
+      "ciftler": [
+        [
+          "Tepken (Reaktif)",
+          "Kimyasal tepkimeye girerek harcanan ve okun sol tarafına yazılan başlangıç maddeleri"
+        ],
+        [
+          "Ürün",
+          "Kimyasal tepkime sonucunda oluşan ve okun sağ tarafına yazılan yeni maddeler"
+        ],
+        [
+          "Stokiyometrik Katsayı",
+          "Atom sayılarını eşitlemek amacıyla kimyasal formüllerin önüne yazılan çarpan sayı"
+        ],
+        [
+          "MAH Kuralı",
+          "Denkleştirmede izlenen Metal, Ametal, Hidrojen ve Oksijen öncelik sıralaması"
+        ],
+        [
+          "(suda) / (aq)",
+          "Tepkime denkleminde maddenin suda çözünmüş (sulu çözelti) hâlde bulunduğunu gösteren indis"
+        ]
+      ],
+      "tur": "eslestir"
+    },
+    {
+      "cumleler": [
+        {
+          "metin": "Kimyasal tepkimelerde tepkenlerin toplam kütlesi ürünlerin toplam kütlesine eşittir; buna ___ Korunumu Kanunu denir.",
+          "cevap": "Kütlenin"
+        },
+        {
+          "metin": "Karbon ve hidrojenden oluşan organik bileşikler oksijenle yandığında ürün olarak karbondioksit ve ___ oluşur.",
+          "cevap": "su"
+        },
+        {
+          "metin": "Bir kimyasal tepkimede atomların elektron dizilimleri değişirken ___ yapıları ve proton sayıları değişmez.",
+          "cevap": "çekirdek"
+        },
+        {
+          "metin": "Tepkime denklemlerini denkleştirirken genellikle atom sayısı en kalabalık olan bileşiğin katsayısı ___ kabul edilir.",
+          "cevap": "bir"
+        },
+        {
+          "metin": "N₂ + 3H₂ → 2NH₃ tepkimesinde zamanla toplam atom sayısı değişmezken toplam ___ sayısı azalır.",
+          "cevap": "molekül"
+        }
+      ],
+      "fazla": [
+        "nötron",
+        "katı"
+      ],
+      "tur": "bosluk"
+    },
+    {
+      "soru": "Al₄C₃(k) + H₂O(s) → Al(OH)₃(k) + CH₄(g) tepkime denklemindeki tanecik sayısı tutarsızlığını MAH yöntemini kullanarak üç adımda gideriniz ve denkleştirilmiş denklemi yazınız.",
+      "ipuclari": [
+        "Birinci adımda Al₄C₃ bileşiğinin katsayısını 1 kabul ederek metal olan Al atomlarını (Al(OH)₃ önünde) eşitleyiniz.",
+        "İkinci adımda ametal olan C atomlarını (CH₄ önünde) eşitleyiniz.",
+        "Üçüncü adımda ürünlerdeki toplam H ve O atomu sayılarını hesaplayarak H₂O'nun katsayısını belirleyiniz."
+      ],
+      "cevap": "1. Adım (Metal - Al): Al₄C₃'ün katsayısı 1 alındığında tepkenlerde 4 Al atomu vardır; ürünlerdeki Al(OH)₃'ün önüne 4 yazılır. 2. Adım (Ametal - C): Tepkenlerde 3 C atomu bulunduğundan ürünlerdeki CH₄'ün önüne 3 yazılır. 3. Adım (Hidrojen ve Oksijen): Ürünlerde 4 Al(OH)₃'ten 12 H ve 3 CH₄'ten 12 H olmak üzere toplam 24 H atomu (ve 12 O atomu) vardır; tepkenlerdeki H₂O'nun önüne 12 yazılır. Denkleştirilmiş denklem: Al₄C₃(k) + 12H₂O(s) → 4Al(OH)₃(k) + 3CH₄(g).",
+      "tur": "ogretici"
+    }
+  ],
+  "ozet": [
+    "Kimyasal tepkime denklemlerinde okun soluna tepkenler (girenler), sağına ürünler yazılır; fiziksel hâller (k), (s), (g) ve (suda) ile belirtilir.",
+    "Kimyasal tepkimelerde atomların türü ve sayısı, toplam kütle, toplam proton/nötron/elektron sayısı ve toplam yük daima korunur.",
+    "Tepkimelerde toplam mol sayısı, toplam molekül sayısı, gaz hacmi ve maddelerin fiziksel-kimyasal özellikleri değişebilir.",
+    "Denkleştirme yapılırken bileşiklerin alt indisleri değiştirilemez; MAH (Metal -> Ametal -> Hidrojen -> Oksijen) sırasıyla formüllerin önüne katsayı yazılır.",
+    "Diatomik elementlerin (O₂, H₂, N₂) önüne kesirli katsayı gelebilir; en küçük tam sayılar istendiğinde denklem payda ile genişletilir."
+  ]
+}

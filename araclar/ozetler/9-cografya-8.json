@@ -1,0 +1,263 @@
+{
+  "ad": "9-cografya-8",
+  "sinif": 9,
+  "ders": "cografya",
+  "ders_adi": "Coğrafya",
+  "hafta": 8,
+  "tarih": "2-6 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "2. ÜNİTE: MEKÂNSAL BİLGİ TEKNOLOJİLERİ",
+  "konu": "Mekânsal Bilgi Teknolojilerinin Bileşenleri: CBS (GIS), Uzaktan Algılama (UA) ve Küresel Konumlandırma (GPS/GNSS)",
+  "ciktilar": [
+    "Mekânsal bilgi teknolojilerini oluşturan Coğrafi Bilgi Sistemleri (CBS), Uzaktan Algılama (UA) ve Küresel Konumlandırma Sistemi (GPS/GNSS) bileşenlerini tanımlar.",
+    "CBS'nin beş temel unsurunu (donanım, yazılım, veri, insan, yöntem) ve mekânsal veri modellerini (vektörel: nokta-çizgi-poligon ve raster/hücresel veri) çözümler.",
+    "GPS, Uzaktan Algılama ve CBS bileşenleri arasındaki veri akışı ilişkisini afet yönetimi, şehir planlaması, tarım ve çevre izleme örnekleri üzerinden değerlendirir."
+  ],
+  "giris": "Modern dünyada akıllı telefonlardaki navigasyon uygulamalarından orman yangınlarının uydularla anlık takibine, deprem risk haritalarından şehir planlamasına kadar pek çok alanda mekânsal bilgi teknolojilerinden yararlanılmaktadır. Küresel Konumlandırma Sistemi (GPS/GNSS), Uzaktan Algılama (UA) ve Coğrafi Bilgi Sistemleri (CBS) birbiriyle bütünleşik çalışarak yeryüzüne ait verilerin toplanmasını, analiz edilmesini ve haritalandırılmasını sağlar.",
+  "bolumler": [
+    {
+      "baslik": "Küresel Konumlandırma Sistemi (GPS/GNSS) ve Uzaktan Algılama (UA)",
+      "metin": [
+        "{koyu:Küresel Konumlandırma Sistemi (GPS / GNSS)}, Dünya yörüngesinde dolanan uydulardan gönderilen radyo sinyalleri yardımıyla yeryüzündeki herhangi bir nesnenin {koyu:enlem, boylam, yükselti (rakım) ve zaman} bilgilerini yüksek doğrulukla belirleyen teknolojidir. Bir GPS alıcısının üç boyutlu (yatay konum ve yükselti) hassas konum tespiti yapabilmesi için aynı anda {koyu:en az dört uydudan} sinyal alması gerekir. ABD'ye ait {koyu:GPS}, Rusya'ya ait {koyu:GLONASS}, Avrupa Birliği'ne ait {koyu:Galileo} ve Çin'e ait {koyu:BeiDou} küresel uydu konumlandırma sistemlerinin başlıcalarıdır.",
+        "{koyu:Uzaktan Algılama (UA)}, yeryüzündeki doğal ve beşerî unsurlarla {koyu:fiziksel temas kurmaksızın}, uçaklar, insansız hava araçları (İHA) veya yer gözlem uyduları üzerine yerleştirilen algılayıcılar (sensörler) aracılığıyla elektromanyetik enerjinin (yansıyan ışık veya yayılan ısı) kaydedilmesi ve görüntüye dönüştürülmesi teknolojisidir.",
+        "Uzaktan algılamada Güneş'ten yansıyan doğal enerjiyi kaydeden sistemlere {koyu:pasif algılayıcılar}, kendi ürettiği sinyali yeryüzüne gönderip yansımasını ölçen radar ve LiDAR gibi sistemlere ise {koyu:aktif algılayıcılar} (gece ve bulutlu havalarda bile görüntü alabilir) denir. Türkiye'nin yer gözlem ve uzaktan algılama uyduları arasında {koyu:BİLSAT, RASAT, GÖKTÜRK-1, GÖKTÜRK-2 ve İMECE} yer almaktadır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">MEKÂNSAL BİLGİ TEKNOLOJİLERİNİN ÜÇ TEMEL BİLEŞENİ</text>\n  <rect x=\"22\" y=\"42\" width=\"208\" height=\"200\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"126\" y=\"65\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e40af\">1. KÜRESEL KONUMLANDIRMA</text>\n  <text x=\"126\" y=\"82\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1d4ed8\">(GPS / GNSS)</text>\n  <text x=\"34\" y=\"106\" font-size=\"11\" fill=\"#1e3a8a\">• Dünya yörüngesindeki uydulardan</text>\n  <text x=\"34\" y=\"122\" font-size=\"11\" fill=\"#1e3a8a\">gelen radyo sinyalleriyle çalışır.</text>\n  <text x=\"34\" y=\"144\" font-size=\"11\" fill=\"#1e3a8a\">• Enlem, boylam, yükselti ve</text>\n  <text x=\"34\" y=\"160\" font-size=\"11\" fill=\"#1e3a8a\">zamanı (mutlak konumu) belirler.</text>\n  <text x=\"34\" y=\"182\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">• Hassas konum için en az 4</text>\n  <text x=\"34\" y=\"198\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">uydudan sinyal alınmalıdır.</text>\n  <text x=\"34\" y=\"220\" font-size=\"10.5\" fill=\"#3b82f6\">GPS, GLONASS, Galileo, BeiDou</text>\n  <rect x=\"246\" y=\"42\" width=\"208\" height=\"200\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"350\" y=\"65\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#92400e\">2. UZAKTAN ALGILAMA</text>\n  <text x=\"350\" y=\"82\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b45309\">(UA / Remote Sensing)</text>\n  <text x=\"258\" y=\"106\" font-size=\"11\" fill=\"#78350f\">• Yeryüzü ile fiziksel temas</text>\n  <text x=\"258\" y=\"122\" font-size=\"11\" fill=\"#78350f\">kurmadan veri toplama teknolojisi.</text>\n  <text x=\"258\" y=\"144\" font-size=\"11\" fill=\"#78350f\">• Gözlem uyduları, uçaklar ve</text>\n  <text x=\"258\" y=\"160\" font-size=\"11\" fill=\"#78350f\">İHA'lar üzerindeki algılayıcılarla</text>\n  <text x=\"258\" y=\"176\" font-size=\"11\" fill=\"#78350f\">(sensörlerle) görüntü alır.</text>\n  <text x=\"258\" y=\"198\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">• Türkiye Gözlem Uyduları:</text>\n  <text x=\"258\" y=\"216\" font-size=\"10.5\" fill=\"#92400e\">RASAT, GÖKTÜRK-1, GÖKTÜRK-2, İMECE</text>\n  <rect x=\"470\" y=\"42\" width=\"208\" height=\"200\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"574\" y=\"65\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#166534\">3. COĞRAFİ BİLGİ SİSTEMLERİ</text>\n  <text x=\"574\" y=\"82\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">(CBS / GIS)</text>\n  <text x=\"482\" y=\"106\" font-size=\"11\" fill=\"#14532d\">• Mekânsal verileri toplama,</text>\n  <text x=\"482\" y=\"122\" font-size=\"11\" fill=\"#14532d\">depolama, analiz etme ve</text>\n  <text x=\"482\" y=\"138\" font-size=\"11\" fill=\"#14532d\">görselleştirme (haritalama) sistemi.</text>\n  <text x=\"482\" y=\"160\" font-size=\"11\" fill=\"#14532d\">• Farklı veri katmanlarını (toprak,</text>\n  <text x=\"482\" y=\"176\" font-size=\"11\" fill=\"#14532d\">eğim, nüfus, ulaşım) çakıştırarak</text>\n  <text x=\"482\" y=\"192\" font-size=\"11\" fill=\"#14532d\">sorgulama ve karar verme sağlar.</text>\n  <text x=\"482\" y=\"216\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">Donanım + Yazılım + Veri + İnsan + Yöntem</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Haberleşme uyduları (TÜRKSAT 3A, 4A, 5B gibi) televizyon ve iletişim sinyali aktarır; yeryüzü fotoğrafı çeken ve mekânsal veri toplayan uydular ise RASAT, GÖKTÜRK ve İMECE gibi yer gözlem (uzaktan algılama) uydularıdır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "GPS 'Burası neresi?' sorusuna koordinat (enlem-boylam-yükselti) vererek cevap üretirken; Uzaktan Algılama 'Burada ne var ve zamanla nasıl değişiyor?' sorusuna geniş alanlı uydu ve hava görüntüleriyle cevap verir."
+        }
+      ]
+    },
+    {
+      "baslik": "Coğrafi Bilgi Sistemleri (CBS / GIS) ve Veri Modelleri",
+      "metin": [
+        "{koyu:Coğrafi Bilgi Sistemleri (CBS / GIS)}; konuma dayalı gözlemlerle elde edilen mekânsal verilerin toplanması, depolanması, güncellenmesi, sorgulanması, {koyu:katmanlar hâlinde analiz edilmesi} ve harita/grafik olarak görselleştirilmesi işlemlerini bütüncül olarak gerçekleştiren bilgi sistemidir. CBS; {koyu:Donanım, Yazılım, Veri, İnsan (Kullanıcı) ve Yöntem} olmak üzere beş temel bileşenden oluşur ve bunlar içinde elde edilmesi en zahmetli, en kritik bileşen {koyu:veridir}.",
+        "CBS'de coğrafi veriler {koyu:konumsal (grafik) veri} ve {koyu:öznitelik (sözel/sayısal tablo) verisi} olarak iki grupta tutulur. Konumsal veriler ise iki farklı modelle gösterilir: {koyu:Vektörel veri modeli}, coğrafi unsurları koordinatlara bağlı {koyu:nokta} (deprem merkez üssü, su kuyusu, okul), {koyu:çizgi} (akarsu, kara yolu, fay hattı) ve {koyu:poligon / alan} (göl, orman alanı, il sınırı) şeklinde temsil eder.",
+        "{koyu:Raster (hücresel) veri modeli} ise yeryüzünü birbirine eşit büyüklükteki kare hücreler ({koyu:pikseller}) dizisi hâlinde gösterir. Uzaktan algılama uydularından alınan görüntüler, hava fotoğrafları, taranmış haritalar ve sayısal yükselti modelleri (DEM) raster veri yapısındadır; piksel boyutu küçüldükçe görüntünün mekânsal çözünürlüğü ve detay gücü artar."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">CBS'NİN 5 UNSURU VE KATMANLI VERİ MODELİ (VEKTÖREL &amp; RASTER)</text>\n  <rect x=\"25\" y=\"42\" width=\"315\" height=\"202\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"65\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#6b21a8\">CBS (GIS) BİLEŞENLERİ</text>\n  <text x=\"40\" y=\"92\" font-size=\"12\" fill=\"#581c87\">1. Donanım: Bilgisayar, sunucu, tarayıcı, GPS alıcısı.</text>\n  <text x=\"40\" y=\"116\" font-size=\"12\" fill=\"#581c87\">2. Yazılım: Mekânsal analiz ve haritalama programları.</text>\n  <text x=\"40\" y=\"140\" font-size=\"12\" font-weight=\"bold\" fill=\"#7e22ce\">3. Veri: CBS'nin en temel ve maliyetli bileşeni!</text>\n  <text x=\"40\" y=\"164\" font-size=\"12\" fill=\"#581c87\">4. İnsan (Kullanıcı): Sistemi yöneten uzman personel.</text>\n  <text x=\"40\" y=\"188\" font-size=\"12\" fill=\"#581c87\">5. Yöntem: Kurumsal iş akışı ve analiz kuralları.</text>\n  <rect x=\"40\" y=\"202\" width=\"285\" height=\"30\" rx=\"6\" fill=\"#f3e8ff\"/>\n  <text x=\"182\" y=\"221\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">Öznitelik Tablosu: Haritadaki nesnelerin sözel/sayısal bilgisi.</text>\n  <rect x=\"355\" y=\"42\" width=\"320\" height=\"202\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n  <text x=\"515\" y=\"65\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#9a3412\">MEKÂNSAL VERİ TÜRLERİ VE KATMANLAR</text>\n  <rect x=\"372\" y=\"78\" width=\"286\" height=\"72\" rx=\"6\" fill=\"#ffffff\" stroke=\"#fdba74\"/>\n  <text x=\"382\" y=\"98\" font-size=\"12\" font-weight=\"bold\" fill=\"#c2410c\">• Vektörel Veri (Koordinat Tabanlı):</text>\n  <text x=\"388\" y=\"116\" font-size=\"11\" fill=\"#7c2d12\">- Nokta: Kuyu, tepe, okul, deprem merkez üssü.</text>\n  <text x=\"388\" y=\"131\" font-size=\"11\" fill=\"#7c2d12\">- Çizgi: Akarsu, kara yolu, fay hattı, boru hattı.</text>\n  <text x=\"388\" y=\"145\" font-size=\"11\" fill=\"#7c2d12\">- Poligon (Alan): Göl, orman, il sınırı, tarım alanı.</text>\n  <rect x=\"372\" y=\"158\" width=\"286\" height=\"72\" rx=\"6\" fill=\"#ffffff\" stroke=\"#fdba74\"/>\n  <text x=\"382\" y=\"178\" font-size=\"12\" font-weight=\"bold\" fill=\"#c2410c\">• Raster (Hücresel / Piksel) Veri:</text>\n  <text x=\"388\" y=\"196\" font-size=\"11\" fill=\"#7c2d12\">- Eşit boyutlu kare hücrelerden (piksellerden) oluşur.</text>\n  <text x=\"388\" y=\"213\" font-size=\"11\" fill=\"#7c2d12\">- Uydu görüntüleri, hava fotoğrafları, sayısal yükselti.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Klasik basılı haritalar statiktir ve üzerlerinde veri güncellemesi veya katman çakıştırma analizi yapılamaz; CBS ise farklı veri katmanlarını (eğim, jeoloji, nüfus, ulaşım) üst üste çakıştırarak dinamik sorgulama yapar."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Bir gölün haritadaki sınır çizimi 'konumsal (vektörel-poligon) veri' iken; o gölün adı, derinliği, su kalitesi ve yüz ölçümü bilgilerini içeren tablo 'öznitelik verisi'dir."
+        }
+      ]
+    },
+    {
+      "baslik": "Bileşenler Arasındaki İlişki ve Mekânsal Teknoloji Uygulamaları",
+      "metin": [
+        "Mekânsal bilgi teknolojilerinin üç bileşeni birbirini tamamlayan bir döngü içinde çalışır: {koyu:GPS/GNSS} sahadaki noktasal koordinatları ve yer kontrol noktalarını belirler; {koyu:Uzaktan Algılama} geniş alanların güncel uydu ve İHA görüntülerini (raster katmanları) sağlar; {koyu:CBS} ise hem GPS'ten hem de Uzaktan Algılamadan gelen bu verileri öznitelik tablolarıyla birleştirerek mekânsal analiz ve sentez yapar.",
+        "Örneğin bir {koyu:orman yangını} sırasında; gözlem uyduları ve İHA'lar (Uzaktan Algılama) dumanı ve termal ısı artışını tespit eder, yangın söndürme ekiplerinin ve araçlarının anlık konumu (GPS) belirlenir, CBS ortamında ise rüzgâr yönü, topoğrafya (eğim), orman sıklığı ve yol ağı katmanları çakıştırılarak yangının ilerleme yönü ve en hızlı müdahale rotası modellenir.",
+        "Benzer şekilde {koyu:şehir ve bölge planlamasında} yeni bir hastane, okul veya güneş enerjisi santrali kurulacak en uygun yerin seçimi; {koyu:tarımda} ürün rekolte tahmini ve kuraklık takibi; {koyu:çevre araştırmalarında} buzulların erimesi, göl alanlarının daralması ve kentsel büyümenin yıllar içindeki değişimi bu üç bileşenin ortak kullanımıyla gerçekleştirilir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">BİLEŞENLER ARASI ENTEGRASYON VE UYGULAMA ALANLARI</text>\n  <rect x=\"30\" y=\"48\" width=\"640\" height=\"75\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0891b2\" stroke-width=\"2\"/>\n  <text x=\"130\" y=\"80\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#155e75\">GPS / GNSS</text>\n  <text x=\"130\" y=\"98\" text-anchor=\"middle\" font-size=\"11\" fill=\"#164e63\">(Hassas Konum Verisi)</text>\n  <text x=\"235\" y=\"88\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#0891b2\">+</text>\n  <text x=\"345\" y=\"80\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#155e75\">UZAKTAN ALGILAMA</text>\n  <text x=\"345\" y=\"98\" text-anchor=\"middle\" font-size=\"11\" fill=\"#164e63\">(Güncel Uydu Görüntüsü)</text>\n  <text x=\"455\" y=\"88\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#0891b2\">→</text>\n  <text x=\"565\" y=\"80\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#0e7490\">CBS (GIS) ANALİZİ</text>\n  <text x=\"565\" y=\"98\" text-anchor=\"middle\" font-size=\"11\" fill=\"#164e63\">(Karar Destek ve Haritalama)</text>\n  <rect x=\"30\" y=\"138\" width=\"640\" height=\"104\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <text x=\"350\" y=\"160\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">GÜNLÜK HAYAT VE PLANLAMADA KULLANIM ALANLARI</text>\n  <text x=\"50\" y=\"184\" font-size=\"11.5\" fill=\"#334155\">• Afet Yönetimi: Orman yangını, sel, heyelan ve deprem risk haritalarının oluşturulması, acil müdahale rotası.</text>\n  <text x=\"50\" y=\"204\" font-size=\"11.5\" fill=\"#334155\">• Çevre ve Tarım: Ürün rekolte tahmini, kuraklık ve buzulların erimesinin izlenmesi, ormansızlaşma takibi.</text>\n  <text x=\"50\" y=\"224\" font-size=\"11.5\" fill=\"#334155\">• Şehircilik ve Ulaşım: Navigasyon, akıllı ulaşım sistemleri, yeni hastane/okul/santral için en uygun yer seçimi.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Uzaktan algılama ve GPS tek başına birer veri toplama bileşenidir; toplanan bu verilerin başka katmanlarla çakıştırılıp sorgulanması ve karar destek haritasına dönüştürülmesi CBS (GIS) aşamasında gerçekleşir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Farklı yıllara ait uydu görüntülerinin (örneğin Tuz Gölü'nün 2000 ve 2026 yıllarındaki görüntülerinin) karşılaştırılarak zamansal değişimin incelenmesinde Uzaktan Algılama ve CBS birlikte kullanılır."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Mekânsal bilgi teknolojilerini oluşturan üç temel bileşeni yazarak her birinin temel işlevini birer cümleyle açıklayınız.",
+      "cevap": "Küresel Konumlandırma Sistemi (GPS/GNSS) uydular yardımıyla yeryüzündeki bir noktanın mutlak konumunu (enlem, boylam, yükselti) belirler. Uzaktan Algılama (UA) yeryüzüyle fiziksel temas kurmadan uydular ve hava araçlarıyla görüntü ve veri toplar. Coğrafi Bilgi Sistemleri (CBS) ise toplanan mekânsal verileri katmanlar hâlinde depolayıp analiz ederek haritalandırır."
+    },
+    {
+      "soru": "CBS'de kullanılan vektörel veri modelinin üç geometrik elemanını (nokta, çizgi, poligon) birer coğrafi unsurla örneklendiriniz.",
+      "cevap": "Nokta verisi için meteoroloji istasyonu, su kuyusu veya dağ zirvesi; çizgi verisi için akarsu, kara yolu, demir yolu veya fay hattı; poligon (alan) verisi için ise göl, baraj havzası, orman alanı veya ilçe sınırları örnek verilebilir."
+    },
+    {
+      "soru": "Bir bölgede heyelan risk haritası hazırlamak isteyen bir araştırmacı CBS ortamında hangi veri katmanlarını üst üste çakıştırmalıdır?",
+      "cevap": "Araştırmacı CBS ortamında eğim (topoğrafya), kayaç ve toprak yapısı (jeoloji/litoloji), yağış miktarı, bitki örtüsü ve yer altı suyu (hidrografya) katmanlarını üst üste çakıştırarak heyelan riski yüksek alanları analiz etmelidir."
+    },
+    {
+      "soru": "Türkiye'nin uzaydaki yer gözlem (uzaktan algılama) uyduları ile haberleşme uydularını görevleri bakımından ayırt ederek örnekler veriniz.",
+      "cevap": "RASAT, GÖKTÜRK-1, GÖKTÜRK-2 ve İMECE Türkiye'nin yer gözlem (uzaktan algılama) uydularıdır ve yeryüzünden yüksek çözünürlüklü görüntü alarak haritacılık, afet ve çevre takibinde kullanılır. TÜRKSAT uyduları ise televizyon yayını ve iletişim sağlayan haberleşme uydularıdır."
+    },
+    {
+      "soru": "Vektörel veri modeli ile raster (hücresel) veri modeli arasındaki temel yapısal fark nedir?",
+      "cevap": "Vektörel veri modeli coğrafi unsurları x, y koordinatlarına dayalı nokta, çizgi ve poligonlarla keskin sınırlarla gösterirken; raster veri modeli yüzeyi eşit büyüklükteki kare hücrelerden (piksellerden) oluşan bir ızgara (matris) şeklinde temsil eder."
+    },
+    {
+      "soru": "Acil bir ambulans yönlendirme sisteminde GPS ve CBS bileşenleri nasıl bir iş birliği içinde çalışır?",
+      "cevap": "GPS bileşeni hastanın ve en yakındaki ambulansların anlık koordinatlarını tespit eder; CBS ise yol ağı, trafik yoğunluğu, yol yönleri ve hastane kapasite katmanlarını analiz ederek ambulansı en kısa sürede hedefe ulaştıracak optimum rotayı belirler."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "soru": "Yeryüzündeki doğal ve beşerî unsurlarla doğrudan fiziksel temas kurmadan, uydular veya insansız hava araçları üzerindeki algılayıcılar yardımıyla elektromanyetik yansımaları kaydederek veri toplama teknolojisi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Küresel Konumlandırma Sistemi",
+        "Uzaktan Algılama Teknolojisi",
+        "Kartografik Projeksiyon Sistemi",
+        "Öznitelik Veri Tabanı Yönetimi",
+        "Trigonometrik Nivelman Ölçümü"
+      ],
+      "dogru": 1,
+      "aciklama": "Fiziksel temas olmaksızın uydu ve hava araçlarındaki sensörlerle yeryüzünden görüntü ve veri toplama teknolojisine Uzaktan Algılama (UA) denir.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Coğrafi Bilgi Sistemleri (CBS) ortamında hazırlanan bir haritada kullanılan vektörel veri türleri ve temsil ettikleri coğrafi unsurlar ile ilgili aşağıdaki eşleştirmelerden hangisi yanlıştır?",
+      "secenekler": [
+        "Nokta verisi — Depremin merkez üssü ve su kuyuları",
+        "Çizgi verisi — Kara yolları, fay hatları ve akarsular",
+        "Poligon verisi — Göl yüzeyleri ve milli park sınırları",
+        "Çizgi verisi — İllerin idari sınırları içindeki yüz ölçümü",
+        "Nokta verisi — Elektrik direkleri ve rakım zirve noktaları"
+      ],
+      "dogru": 3,
+      "aciklama": "İllerin idari sınırları içindeki kapladığı alan (yüz ölçümü) kapalı bir bölge belirttiği için çizgi verisiyle değil, poligon (alan) verisiyle temsil edilir.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Aşağıdakilerden hangisi Türkiye'nin uzaya gönderdiği yer gözlem (uzaktan algılama) uyduları arasında yer almaz?",
+      "secenekler": [
+        "GÖKTÜRK-1",
+        "GÖKTÜRK-2",
+        "TÜRKSAT-5B",
+        "RASAT",
+        "İMECE"
+      ],
+      "dogru": 2,
+      "aciklama": "RASAT, GÖKTÜRK-1, GÖKTÜRK-2 ve İMECE yer gözlem (uzaktan algılama) uydularıdır; TÜRKSAT-5B ise iletişim ve yayıncılık amacıyla kullanılan bir haberleşme uydusudur.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Yeni kurulacak bir rüzgâr enerji santrali için en uygun yeri belirlemek isteyen bir mühendisin; rüzgâr hızı, arazi eğimi, yerleşim yerlerine uzaklık ve kuş göç yolları katmanlarını üst üste çakıştırarak sorgulama yapması hangi bileşenin temel işlevidir?",
+      "secenekler": [
+        "Coğrafi Bilgi Sistemleri (CBS)",
+        "Küresel Konumlandırma Sistemi (GPS)",
+        "Radyometrik Pasif Algılayıcılar",
+        "Jeodezik Nirengi Ağı Ölçümleri",
+        "Atmosferik Sıcaklık Sondajları"
+      ],
+      "dogru": 0,
+      "aciklama": "Farklı mekânsal veri katmanlarını üst üste çakıştırarak sorgulama, analiz etme ve yer seçimi kararı üretme Coğrafi Bilgi Sistemleri'nin (CBS/GIS) temel işlevidir.",
+      "tur": "coktan"
+    },
+    {
+      "ifadeler": [
+        {
+          "metin": "Küresel Konumlandırma Sistemi (GPS) alıcısının yatay konum ve yükseltiyi hassas olarak belirleyebilmesi için en az dört uydudan sinyal alması gerekir.",
+          "dogru": true,
+          "aciklama": "Enlem, boylam, yükselti ve zaman düzeltmesi için en az 4 uydudan sinyal alınması şarttır."
+        },
+        {
+          "metin": "Uzaktan algılama uydularından elde edilen görüntüler ve hava fotoğrafları CBS ortamında piksel tabanlı raster veri modeline örnektir.",
+          "dogru": true,
+          "aciklama": "Uydu görüntüleri ve hava fotoğrafları eşit boyutlu kare hücrelerden (piksellerden) oluşan raster verilerdir."
+        },
+        {
+          "metin": "Coğrafi Bilgi Sistemleri'ni oluşturan donanım, yazılım, veri, insan ve yöntem bileşenleri içinde elde edilmesi en kolay ve en ucuz unsur veridir.",
+          "dogru": false,
+          "aciklama": "CBS'de toplanması, doğrulanması ve güncellenmesi en maliyetli, en kritik unsur veridir."
+        },
+        {
+          "metin": "Vektörel veri modelinde akarsular, kara yolları ve enerji nakil hatları poligon (alan) verisi olarak depolanır.",
+          "dogru": false,
+          "aciklama": "Akarsu, kara yolu ve enerji nakil hatları uzunluk boyutu ön planda olan unsurlar olduğundan çizgi (line) verisi olarak depolanır."
+        },
+        {
+          "metin": "Aktif uzaktan algılama sistemleri kendi enerji sinyallerini gönderip yansımasını ölçtüğü için gece veya bulutlu havalarda da görüntü alabilir.",
+          "dogru": true,
+          "aciklama": "Radar gibi aktif algılayıcılar Güneş ışığına ihtiyaç duymadan her hava koşulunda veri toplayabilir."
+        }
+      ],
+      "tur": "dy"
+    },
+    {
+      "ciftler": [
+        [
+          "Küresel Konumlandırma (GPS)",
+          "Uydulardan gelen radyo sinyalleriyle enlem, boylam ve yükselti belirleyen sistem"
+        ],
+        [
+          "Uzaktan Algılama (UA)",
+          "Fiziksel temas kurmadan uydu ve İHA sensörleriyle yeryüzünden görüntü alma yöntemi"
+        ],
+        [
+          "Coğrafi Bilgi Sistemleri (CBS)",
+          "Mekânsal verileri katmanlar hâlinde depolayan, sorgulayan ve analiz eden sistem"
+        ],
+        [
+          "Vektörel Veri Modeli",
+          "Coğrafi unsurları koordinatlara bağlı nokta, çizgi ve poligonlarla gösteren yapı"
+        ],
+        [
+          "Raster Veri Modeli",
+          "Yeryüzü görüntüsünü birbirine eşit kare hücreler (pikseller) dizisiyle sunan yapı"
+        ]
+      ],
+      "tur": "eslestir"
+    },
+    {
+      "cumleler": [
+        {
+          "metin": "Avrupa Birliği tarafından geliştirilen küresel uydu konumlandırma sisteminin adı ___ olarak bilinir.",
+          "cevap": "Galileo"
+        },
+        {
+          "metin": "CBS ortamında haritadaki bir nesneye ait nüfus, isim ve derinlik gibi sözel ve sayısal bilgilerin tutulduğu tabloya ___ verisi denir.",
+          "cevap": "öznitelik"
+        },
+        {
+          "metin": "Vektörel veri modelinde göller, ormanlar ve idari il sınırları ___ verisi ile gösterilir.",
+          "cevap": "poligon"
+        },
+        {
+          "metin": "Türkiye'nin yüksek çözünürlüklü yerli yer gözlem uydularından biri olan ___ uzaktan algılama amacıyla görev yapmaktadır.",
+          "cevap": "İMECE"
+        },
+        {
+          "metin": "Raster veri modelinde görüntüyü oluşturan en küçük kare birime ___ adı verilir.",
+          "cevap": "piksel"
+        }
+      ],
+      "fazla": [
+        "TÜRKSAT",
+        "çizgi"
+      ],
+      "tur": "bosluk"
+    },
+    {
+      "soru": "Bir ilde meydana gelen şiddetli yağış sonrasında oluşan taşkın ve sel felaketini yönetmek için Uzaktan Algılama, GPS ve CBS bileşenlerinin nasıl koordineli kullanılacağını üç adımda açıklayınız.",
+      "ipuclari": [
+        "Birinci adımda Uzaktan Algılama bileşeninin taşkın alanını görüntülemedeki rolünü belirtiniz.",
+        "İkinci adımda GPS bileşeninin saha ekipleri ve mahsur kalan vatandaşlar açısından işlevini yazınız.",
+        "Üçüncü adımda CBS bileşeninin katmanları çakıştırarak kurtarma ve tahliye planı oluşturmasını açıklayınız."
+      ],
+      "cevap": "Birinci adımda Uzaktan Algılama uyduları ve İHA'lar aracılığıyla bulutlu havada bile görüntü alabilen aktif sensörler kullanılarak su altında kalan tarım alanları ve yerleşim yerlerinin güncel sınırları (raster görüntü olarak) tespit edilir. İkinci adımda GPS/GNSS yardımıyla sahadaki arama-kurtarma botlarının, ambulansların ve yardım bekleyen noktaların hassas koordinatları anlık olarak belirlenir. Üçüncü adımda CBS ortamında uydu görüntüleri, GPS konumları, topoğrafya (yükselti), sağlam kalan yollar ve nüfus katmanları üst üste çakıştırılarak en güvenli tahliye rotaları ve geçici barınma alanları analiz edilir.",
+      "tur": "ogretici"
+    }
+  ],
+  "ozet": [
+    "Mekânsal bilgi teknolojileri; Küresel Konumlandırma Sistemi (GPS/GNSS), Uzaktan Algılama (UA) ve Coğrafi Bilgi Sistemleri (CBS/GIS) olmak üzere üç temel bileşenden oluşur.",
+    "GPS/GNSS, Dünya yörüngesindeki en az dört uydudan alınan sinyallerle enlem, boylam, yükselti ve zaman bilgisini hassas biçimde tespit eder.",
+    "Uzaktan Algılama, fiziksel temas olmadan gözlem uyduları (RASAT, GÖKTÜRK, İMECE) ve hava araçlarındaki sensörlerle yeryüzünden görüntü ve veri toplar.",
+    "CBS; donanım, yazılım, veri, insan ve yöntem bileşenleriyle mekânsal verileri vektörel (nokta, çizgi, poligon) ve raster (piksel) katmanlar hâlinde analiz eder.",
+    "GPS ve Uzaktan Algılama ile toplanan veriler CBS ortamında çakıştırılarak afet yönetimi, şehir planlaması, ulaşım, tarım ve çevre izleme çalışmalarında karar desteği sağlar."
+  ]
+}

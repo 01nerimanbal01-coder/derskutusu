@@ -1,0 +1,258 @@
+{
+  "ad": "11-kimya-8",
+  "sinif": 11,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 8,
+  "tarih": "2-6 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "1. Tema: Etkileşim",
+  "konu": "Kimyasal Tepkimelerde Hız: Tepken ve Ürün Derişimleriyle Ortalama Tepkime Hızı ve Hızın Zamanla Değişimi",
+  "ciktilar": [
+    "Kimyasal tepkimelerin ortalama hızını birim zamanda harcanan tepken veya oluşan ürün miktarındaki değişim üzerinden matematiksel olarak ifade eder.",
+    "Tepkime denkleminin stokiyometrik katsayılarını kullanarak farklı maddelerin harcanma ve oluşma hızları arasındaki orantıyı kurar.",
+    "Tepken ve ürün derişimlerinin zamanla değişim grafiklerini yorumlayarak tepkime hızının zamanla neden azaldığını tanecik boyutuyla açıklar."
+  ],
+  "giris": "Doğadaki ve endüstrideki kimyasal değişimler çok farklı zaman ölçeklerinde gerçekleşir; bir patlama saniyenin kesirleri içinde tamamlanırken demirin paslanması aylarca sürebilir. Kimyasal kinetik, bu tepkimelerin ne kadar hızlı ilerlediğini ve tepkime sürecinde madde derişimlerinin zamanla nasıl değiştiğini inceleyen temel kimya dalıdır. Bir tepkimede birim zamanda harcanan tepken ya da oluşan ürün miktarını nicel olarak hesaplamak, hem laboratuvar analizlerinde hem de endüstriyel reaktör tasarımlarında kritik önem taşır.",
+  "bolumler": [
+    {
+      "baslik": "Ortalama Tepkime Hızı Kavramı ve Matematiksel Gösterimi",
+      "metin": [
+        "Kimyasal bir tepkimenin hızı, birim zamanda tepkimeye giren maddelerin (tepkenlerin) miktarındaki azalma veya tepkime sonucunda oluşan maddelerin (ürünlerin) miktarındaki artış olarak tanımlanır. Çözelti fazında veya sabit hacimli gaz fazında gerçekleşen tepkimelerde madde miktarı genellikle molar derişim (mol/L veya M) cinsinden ifade edilir. Belirli bir zaman aralığındaki (Δt = t₂ - t₁) toplam derişim değişiminin geçen süreye oranına ortalama tepkime hızı (r veya v) adı verilir.",
+        "Tepkime ilerledikçe tepkenlerin derişimi zamanla azaldığı için son derişim ilk derişimden küçüktür ve Δ[R] = [R]₂ - [R]₁ farkı negatif çıkar. Fiziksel olarak hız büyüklüğü negatif olamayacağından, tepkenlere göre ortalama hız bağıntısı yazılırken ifadenin önüne eksi (-) işareti konulur: r(R) = -Δ[R] / Δt. Ürünlerin derişimi ise başlangıçta sıfır olup zamanla arttığı için Δ[P] = [P]₂ - [P]₁ farkı pozitiftir ve ürünlere göre ortalama hız r(P) = +Δ[P] / Δt şeklinde gösterilir.",
+        "Uluslararası birim sisteminde (SI) tepkime hızının standart birimi mol/(L·s) veya M/s olarak kullanılır. Ancak incelenen tepkimenin doğasına ve yavaşlığına bağlı olarak miktar birimi gram, mol veya normal koşullarda litre; zaman birimi ise dakika, saat ya da yıl cinsinden seçilebilir. Hangi birim seçilirse seçilsin, ortalama hız daima ilgili zaman dilimindeki toplam madde değişiminin o süreye bölünmesiyle bulunur."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\">\n  <rect width=\"700\" height=\"260\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">Derişim - Zaman Grafiği: Tepkenlerin Azalması ve Ürünlerin Artması</text>\n  <rect x=\"35\" y=\"45\" width=\"330\" height=\"195\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <line x1=\"75\" y1=\"210\" x2=\"345\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"75\" y1=\"210\" x2=\"75\" y2=\"60\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <text x=\"210\" y=\"232\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Zaman (t, saniye)</text>\n  <text x=\"52\" y=\"135\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\" transform=\"rotate(-90 52 135)\">Derişim [M] (mol/L)</text>\n  <path d=\"M 75,75 Q 140,180 330,198\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/>\n  <text x=\"275\" y=\"188\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">[R] Tepken</text>\n  <path d=\"M 75,210 Q 140,95 330,78\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"3\"/>\n  <text x=\"275\" y=\"72\" font-size=\"11\" font-weight=\"bold\" fill=\"#16a34a\">[P] Ürün</text>\n  <rect x=\"385\" y=\"45\" width=\"280\" height=\"195\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"525\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Ortalama Tepkime Hızı Bağıntıları</text>\n  <rect x=\"405\" y=\"85\" width=\"240\" height=\"45\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#f87171\"/>\n  <text x=\"525\" y=\"105\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#991b1b\">r(R) = - Δ[R] / Δt = - ([R]₂ - [R]₁) / Δt</text>\n  <text x=\"525\" y=\"122\" text-anchor=\"middle\" font-size=\"10\" fill=\"#b91c1c\">Azalma olduğundan önüne (-) işareti konur</text>\n  <rect x=\"405\" y=\"140\" width=\"240\" height=\"45\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#4ade80\"/>\n  <text x=\"525\" y=\"160\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">r(P) = + Δ[P] / Δt = + ([P]₂ - [P]₁) / Δt</text>\n  <text x=\"525\" y=\"177\" text-anchor=\"middle\" font-size=\"10\" fill=\"#15803d\">Artma olduğundan (+) işaretiyle yazılır</text>\n  <text x=\"525\" y=\"212\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">Birim: mol / (L · s) veya M / s</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Hız Bağıntısındaki Eksi (-) İşaretinin Anlamı",
+          "metin": "Tepkenlerin hız bağıntısında yer alan eksi (-) işareti cebirsel bir negatiflik değil, maddenin zamanla harcandığını gösteren ve hız değerini pozitif yapmaya yarayan bir semboldür."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Birim Dönüşümlerine Dikkat",
+          "metin": "Sorularda madde miktarı gram veya mol olarak verilip hız birimi mol/(L·s) olarak isteniyorsa, önce mol sayısını bulup kap hacmine (L) bölerek molar derişime geçmeyi unutmayın."
+        }
+      ]
+    },
+    {
+      "baslik": "Stokiyometrik Katsayılar ve Madde Hızları Arasındaki İlişki",
+      "metin": [
+        "Denkleştirilmiş bir kimyasal tepkimede maddelerin harcanma ve oluşma hızları, tepkime denklemindeki stokiyometrik katsayılarla doğru orantılıdır. Örneğin genel bir aA + bB → cC + dD tepkimesinde, birim zamanda a mol A harcanırken b mol B harcanmakta, aynı sürede c mol C ve d mol D oluşmaktadır. Dolayısıyla maddelerin ortalama hızları arasında r(A)/a = r(B)/b = r(C)/c = r(D)/d eşitliği geçerlidir.",
+        "Farklı katsayılara sahip maddelerin bireysel harcanma veya oluşma hızları birbirinden farklı olsa da tepkimenin genel hızı tek bir değerle ifade edilir. Genel tepkime hızı, her bir maddenin ortalama hızının kendi stokiyometrik katsayısına bölünmesiyle elde edilir: r(tepkime) = - (1/a)·(Δ[A]/Δt) = - (1/b)·(Δ[B]/Δt) = + (1/c)·(Δ[C]/Δt) = + (1/d)·(Δ[D]/Δt). Bu bağıntı sayesinde tepkimedeki herhangi bir maddenin hızı bilindiğinde diğer tüm maddelerin hızları kolayca hesaplanabilir.",
+        "Örneğin amonyak sentezini gösteren N₂(g) + 3H₂(g) → 2NH₃(g) tepkimesinde katsayılar 1, 3 ve 2 şeklindedir. Hidrojen gazının ortalama harcanma hızı azot gazının harcanma hızının 3 katına, amonyak gazının oluşma hızının ise 1,5 katına eşittir. Paydalar eşitlendiğinde 6·r(tepkime) = 6·r(N₂) = 2·r(H₂) = 3·r(NH₃) tam sayı orantısı elde edilerek işlem kolaylığı sağlanır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\">\n  <rect width=\"700\" height=\"260\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">Stokiyometrik Katsayılar ve Madde Hızları Arasındaki Bağıntı</text>\n  <rect x=\"40\" y=\"45\" width=\"620\" height=\"52\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n  <text x=\"350\" y=\"68\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#b45309\">Genel Denklem: a A(g) + b B(g) → c C(g) + d D(g)</text>\n  <text x=\"350\" y=\"88\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">r(tepkime) = - (1/a)·(Δ[A]/Δt) = - (1/b)·(Δ[B]/Δt) = + (1/c)·(Δ[C]/Δt) = + (1/d)·(Δ[D]/Δt)</text>\n  <rect x=\"40\" y=\"112\" width=\"620\" height=\"130\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#10b981\" stroke-width=\"1.8\"/>\n  <text x=\"350\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#047857\">Örnek Uygulama: N₂(g) + 3 H₂(g) → 2 NH₃(g) (Haber Süreci)</text>\n  <rect x=\"60\" y=\"150\" width=\"180\" height=\"75\" rx=\"8\" fill=\"#ffffff\" stroke=\"#34d399\"/>\n  <text x=\"150\" y=\"172\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#065f46\">Azot Harcanma Hızı</text>\n  <text x=\"150\" y=\"192\" text-anchor=\"middle\" font-size=\"12\" fill=\"#047857\">r(N₂) = - Δ[N₂] / Δt</text>\n  <text x=\"150\" y=\"212\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f766e\">Katsayı: 1 (1v hız)</text>\n  <rect x=\"260\" y=\"150\" width=\"180\" height=\"75\" rx=\"8\" fill=\"#ffffff\" stroke=\"#34d399\"/>\n  <text x=\"350\" y=\"172\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#065f46\">Hidrojen Harcanma Hızı</text>\n  <text x=\"350\" y=\"192\" text-anchor=\"middle\" font-size=\"12\" fill=\"#047857\">r(H₂) = - Δ[H₂] / Δt</text>\n  <text x=\"350\" y=\"212\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f766e\">Katsayı: 3 (3v hız)</text>\n  <rect x=\"460\" y=\"150\" width=\"180\" height=\"75\" rx=\"8\" fill=\"#ffffff\" stroke=\"#34d399\"/>\n  <text x=\"550\" y=\"172\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#065f46\">Amonyak Oluşma Hızı</text>\n  <text x=\"550\" y=\"192\" text-anchor=\"middle\" font-size=\"12\" fill=\"#047857\">r(NH₃) = + Δ[NH₃] / Δt</text>\n  <text x=\"550\" y=\"212\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f766e\">Katsayı: 2 (2v hız)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Katsayıları Ters Orantılı Yazma Hatası",
+          "metin": "Katsayısı büyük olan madde birim zamanda daha fazla harcanır veya oluşur; yani N₂ + 3H₂ → 2NH₃ tepkimesinde r(H₂) = 3·r(N₂) olur, 3·r(H₂) = r(N₂) yazmak sık yapılan bir hatadır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Ortak Kat Kullanımı",
+          "metin": "Katsayıları 1, 3 ve 2 olan bir denklemde r(N₂) = v, r(H₂) = 3v ve r(NH₃) = 2v şeklinde parametrik değerler vermek kesirli işlemlerle uğraşmadan hızlı çözüm sağlar."
+        }
+      ]
+    },
+    {
+      "baslik": "Derişim-Zaman Grafikleri ve Tepkime Hızının Zamanla Değişimi",
+      "metin": [
+        "Sabit sıcaklıkta gerçekleşen bir kimyasal tepkimede tepken ve ürün derişimlerinin zamana göre grafiği çizildiğinde doğrusal olmayan eğriler elde edilir. Bunun temel nedeni tepkime hızının süreç boyunca sabit kalmayıp zamanla azalmasıdır. Tepkime başladığı anda (t = 0) ortamda bulunan tepken taneciklerinin derişimi en yüksek düzeydedir; bu nedenle birim hacimdeki tanecik sayısı ve birim zamandaki etkin çarpışma sıklığı maksimum olduğundan başlangıç hızı en büyüktür.",
+        "Zaman ilerledikçe tepken tanecikleri ürüne dönüşerek tükenmeye başlar ve ortamdaki tepken derişimi giderek düşer. Birim hacimdeki tepken taneciklerinin sayısı azaldıkça taneciklerin birbiriyle çarpışma olasılığı ve etkin çarpışma sayısı da azalır. Bunun sonucunda tepkime hızı zamanla yavaşlar ve derişim-zaman grafiğindeki eğrinin eğimi (teğetlerin dikliği) zaman ekseni boyunca giderek azalarak yataylaşır.",
+        "Ortalama hız grafik üzerinde iki farklı zaman noktası (t₁ ve t₂) arasındaki kesen doğrunun eğimine karşılık gelirken, belirli bir t anındaki anlık hız o noktadan eğriye çizilen teğetin eğimiyle bulunur. Tepkimeye giren maddelerden en az biri (sınırlayıcı bileşen) tamamen tükendiğinde veya sistem dengeye ulaştığında net derişim değişimi durur; bu andan itibaren derişim eğrileri yatay hale gelir ve tepkimenin net hızı sıfır olur."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\">\n  <rect width=\"700\" height=\"260\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">Tepkime Hızının Zamanla Azalması ve Tanecik Çarpışma Sıklığı</text>\n  <rect x=\"35\" y=\"48\" width=\"200\" height=\"190\" rx=\"10\" fill=\"#fee2e2\" stroke=\"#ef4444\" stroke-width=\"1.8\"/>\n  <text x=\"135\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#991b1b\">Başlangıç Anı (t = 0)</text>\n  <circle cx=\"85\" cy=\"115\" r=\"9\" fill=\"#dc2626\"/><circle cx=\"125\" cy=\"105\" r=\"9\" fill=\"#dc2626\"/>\n  <circle cx=\"175\" cy=\"120\" r=\"9\" fill=\"#dc2626\"/><circle cx=\"100\" cy=\"150\" r=\"9\" fill=\"#dc2626\"/>\n  <circle cx=\"150\" cy=\"145\" r=\"9\" fill=\"#dc2626\"/><circle cx=\"185\" cy=\"160\" r=\"9\" fill=\"#dc2626\"/>\n  <text x=\"135\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Tepken Derişimi En Yüksek</text>\n  <text x=\"135\" y=\"215\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7f1d1d\">Etkin çarpışma ve hız maksimum</text>\n  <rect x=\"250\" y=\"48\" width=\"200\" height=\"190\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"1.8\"/>\n  <text x=\"350\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\">Ara Zaman (t = t₁)</text>\n  <circle cx=\"295\" cy=\"115\" r=\"9\" fill=\"#dc2626\"/><circle cx=\"355\" cy=\"145\" r=\"9\" fill=\"#dc2626\"/>\n  <circle cx=\"400\" cy=\"115\" r=\"9\" fill=\"#dc2626\"/><circle cx=\"320\" cy=\"155\" r=\"9\" fill=\"#16a34a\"/>\n  <circle cx=\"385\" cy=\"160\" r=\"9\" fill=\"#16a34a\"/>\n  <text x=\"350\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Tepken Derişimi Azaldı</text>\n  <text x=\"350\" y=\"215\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">Çarpışma sıklığı ve hız düşer</text>\n  <rect x=\"465\" y=\"48\" width=\"200\" height=\"190\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#22c55e\" stroke-width=\"1.8\"/>\n  <text x=\"565\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">Tepkime Sonu (t = t_son)</text>\n  <circle cx=\"515\" cy=\"115\" r=\"9\" fill=\"#16a34a\"/><circle cx=\"565\" cy=\"110\" r=\"9\" fill=\"#16a34a\"/>\n  <circle cx=\"610\" cy=\"125\" r=\"9\" fill=\"#16a34a\"/><circle cx=\"535\" cy=\"155\" r=\"9\" fill=\"#16a34a\"/>\n  <circle cx=\"595\" cy=\"160\" r=\"9\" fill=\"#16a34a\"/>\n  <text x=\"565\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">Sınırlayıcı Bileşen Tükendi</text>\n  <text x=\"565\" y=\"215\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">Anlık tepkime hızı sıfırlanır</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Ortalama Hız ile Anlık Hız Ayrımı",
+          "metin": "Ortalama hız belirli bir zaman aralığındaki (Δt) genel değişimi verirken, anlık hız grafikte tek bir t anındaki teğetin eğimini ifade eder ve zaman ilerledikçe anlık hız sürekli düşer."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Grafik Eğiminden Hız Yorumu",
+          "metin": "Derişim-zaman grafiğinde eğrinin dik olduğu başlangıç bölgelerinde tepkime hızlıdır; eğrinin yataylaştığı bölgelerde ise tepkime yavaşlamış veya durmuştur."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Sabit hacimli 2 litrelik bir kapta gerçekleşen tepkimede X gazının mol sayısı 20 saniye içinde 1,6 molden 0,4 mole düşmektedir. Buna göre X gazının ortalama harcanma hızı kaç mol/(L·s) olur?",
+      "cevap": "Öncelikle X gazının başlangıç ve son derişimleri bulunur: [X]₁ = 1,6 / 2 = 0,8 M ve [X]₂ = 0,4 / 2 = 0,2 M. Derişim değişimi Δ[X] = 0,2 - 0,8 = -0,6 M olur. Ortalama harcanma hızı r(X) = -Δ[X] / Δt = -(-0,6 M) / 20 s = 0,03 mol/(L·s) olarak bulunur."
+    },
+    {
+      "soru": "Gaz fazında gerçekleşen 2SO₂(g) + O₂(g) → 2SO₃(g) tepkimesinde yer alan maddelerin ortalama hızları arasındaki matematiksel bağıntıyı yazınız.",
+      "cevap": "Maddelerin ortalama hızları kendi stokiyometrik katsayılarına bölünerek eşitlenir: r(tepkime) = - (1/2)·(Δ[SO₂]/Δt) = - (Δ[O₂]/Δt) = + (1/2)·(Δ[SO₃]/Δt). Katsayılar tam sayıya genişletildiğinde r(SO₂) = 2·r(O₂) = r(SO₃) eşitliği elde edilir."
+    },
+    {
+      "soru": "Sabit hacimli bir reaktörde N₂(g) + 3H₂(g) → 2NH₃(g) tepkimesine göre 30 saniyede 0,6 M NH₃ gazı oluşmaktadır. Buna göre H₂ gazının ortalama harcanma hızı kaç M/s değerindedir?",
+      "cevap": "Önce NH₃ gazının ortalama oluşma hızı hesaplanır: r(NH₃) = Δ[NH₃] / Δt = 0,6 M / 30 s = 0,02 M/s. Denklemdeki katsayılara göre r(H₂) / 3 = r(NH₃) / 2 bağıntısı vardır. Buradan r(H₂) = (3/2) · 0,02 = 0,03 M/s bulunur."
+    },
+    {
+      "soru": "Sabit sıcaklıktaki kapalı bir kapta gerçekleşen kimyasal bir tepkimenin hızı zaman ilerledikçe neden azalır? Tanecik boyutuyla açıklayınız.",
+      "cevap": "Tepkime ilerledikçe tepken maddeler harcanarak ürüne dönüşür ve birim hacimdeki tepken taneciklerinin sayısı (derişimi) azalır. Tanecik derişimi düştüğünde birim zamanda gerçekleşen etkin çarpışma sayısı azaldığı için tepkime hızı da zamanla düşer."
+    },
+    {
+      "soru": "Bir derişim-zaman grafiğinde A ve B maddelerinin derişimleri zamanla azalırken C maddesinin derişimi sıfırdan başlayarak artmaktadır. Aynı sürede A derişimi 0,4 M, B derişimi 0,8 M azalırken C derişimi 0,4 M arttığına göre en küçük tam sayılı tepkime denklemini yazınız.",
+      "cevap": "Derişimi azalan A ve B tepken, derişimi artan C ise üründür. Aynı zaman aralığındaki derişim değişimleri stokiyometrik katsayılarla doğru orantılıdır: Δ[A] : Δ[B] : Δ[C] = 0,4 : 0,8 : 0,4 = 1 : 2 : 1. Buna göre tepkime denklemi A + 2B → C şeklindedir."
+    },
+    {
+      "soru": "Kalsiyum karbonat katısının CaCO₃(k) + 2HCl(suda) → CaCl₂(suda) + CO₂(g) + H₂O(s) denklemine göre tepkimesinde 10 saniyede 20 gram CaCO₃ (MA = 100 g/mol) harcanmaktadır. Karbondioksit gazının ortalama oluşma hızı kaç mol/s olur?",
+      "cevap": "Harcanan CaCO₃ mol sayısı n = m / MA = 20 / 100 = 0,2 moldür. Denklemde CaCO₃ ve CO₂ katsayıları bire bir (1:1) olduğundan 10 saniyede 0,2 mol CO₂ gazı oluşur. Buna göre CO₂ gazının ortalama oluşma hızı r(CO₂) = 0,2 mol / 10 s = 0,02 mol/s olarak hesaplanır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Sabit hacimli 4 litrelik bir kapta gerçekleşen 2X(g) + Y(g) → 2Z(g) tepkimesinde 50 saniye sonunda 2 mol Y gazı harcandığına göre X gazının ortalama harcanma hızı kaç mol/(L·s) olur?",
+      "secenekler": [
+        "0,01 mol/(L·s) değerine eşit olarak hesaplanır",
+        "0,02 mol/(L·s) değerine eşit olarak hesaplanır",
+        "0,04 mol/(L·s) değerine eşit olarak hesaplanır",
+        "0,05 mol/(L·s) değerine eşit olarak hesaplanır",
+        "0,08 mol/(L·s) değerine eşit olarak hesaplanır"
+      ],
+      "dogru": 1,
+      "aciklama": "Harcanan Y derişimi Δ[Y] = 2 mol / 4 L = 0,5 M olur. X'in katsayısı Y'nin 2 katı olduğundan 1,0 M X harcanır. r(X) = 1,0 M / 50 s = 0,02 mol/(L·s) bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Gaz fazında gerçekleşen 4NH₃(g) + 5O₂(g) → 4NO(g) + 6H₂O(g) tepkimesindeki maddelerin ortalama harcanma ve oluşma hızları arasındaki ilişki için aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Oksijenin harcanma hızı suyun oluşma hızından daha büyüktür",
+        "Amonyağın harcanma hızı oksijenin harcanma hızına eşittir",
+        "Amonyağın harcanma hızı azot monoksitin oluşma hızına eşittir",
+        "Su buharının oluşma hızı amonyağın harcanma hızının yarısıdır",
+        "Azot monoksitin oluşma hızı su buharının oluşma hızından fazladır"
+      ],
+      "dogru": 2,
+      "aciklama": "Denklemde NH₃ ve NO gazlarının stokiyometrik katsayıları 4 olup birbirine eşittir; bu nedenle birim zamandaki ortalama hızları da birbirine eşittir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Sabit sıcaklıkta gerçekleşen tek basamaklı bir kimyasal tepkimenin hızının zaman ilerledikçe azalmasının temel nedeni aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Zaman ilerledikçe ortamdaki ürün taneciklerinin sayısının azalması",
+        "Tepkime kabının toplam hacminin zamanla kendiliğinden küçülmesi",
+        "Tepken derişiminin düşmesiyle birim zamandaki etkin çarpışmanın azalması",
+        "Tepkimenin stokiyometrik katsayılarının zaman içinde küçülmesi",
+        "Ürünlerin molar kütlesinin tepkenlerin molar kütlesinden büyük olması"
+      ],
+      "dogru": 2,
+      "aciklama": "Zamanla tepkenler harcandığı için derişimleri düşer; birim hacimdeki tanecik sayısı azalınca etkin çarpışma sıklığı ve tepkime hızı azalır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir tepkimede tepkenlerin ortalama harcanma hızı hesaplanırken bağıntının önüne eksi (-) işareti konulmasının bilimsel gerekçesi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Tepkenlerin geri yönde tepkimeye girerek yeniden oluşmasını göstermek",
+        "Tepkimenin dışarıya ısı veren ekzotermik bir değişim olduğunu belirtmek",
+        "Tepkenlerin molar kütlesinin ürünlerden daha düşük olduğunu vurgulamak",
+        "Harcanan tepkenlerin zaman aralığını negatif saniye cinsinden yazmak",
+        "Son derişim ilk derişimden küçük olduğu için hız değerini pozitif yapmak"
+      ],
+      "dogru": 4,
+      "aciklama": "Tepken derişimi azaldığından Δ[R] = [R]₂ - [R]₁ negatif çıkar; hız büyüklüğünün pozitif olması için bağıntının önüne eksi işareti konur."
+    },
+    {
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "metin": "Ortalama tepkime hızı hesaplanırken birim zamanda oluşan ürün derişimindeki artış miktarı geçen süreye bölünür.",
+          "dogru": true
+        },
+        {
+          "metin": "Denkleştirilmiş bir kimyasal tepkimede stokiyometrik katsayısı büyük olan maddenin ortalama oluşma veya harcanma hızı daha büyüktür.",
+          "dogru": true
+        },
+        {
+          "metin": "Sabit sıcaklıkta gerçekleşen bir tepkimede tepkenlerin derişimi zamanla azaldığı halde anlık tepkime hızı süreç boyunca sabit kalır.",
+          "dogru": false
+        },
+        {
+          "metin": "Derişim-zaman grafiğinde eğrinin eğiminin sıfır olup yataylaşması tepkimede net hızın sıfırlandığını veya dengenin kurulduğunu gösterir.",
+          "dogru": true
+        },
+        {
+          "metin": "Tepkenlerin ortalama hız bağıntısındaki negatif işaret hızın sıfırdan küçük bir değer aldığını ifade eder.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "ciftler": [
+        [
+          "Ortalama tepkime hızı",
+          "Belirli bir zaman aralığındaki toplam derişim değişiminin geçen süreye oranı"
+        ],
+        [
+          "Anlık tepkime hızı",
+          "Derişim-zaman grafiğinde belirli bir t anında eğriye çizilen teğetin eğimi"
+        ],
+        [
+          "Tepken (Reaktif)",
+          "Tepkime sürecinde zamanla harcanarak derişimi azalan başlangıç maddesi"
+        ],
+        [
+          "Stokiyometrik katsayı",
+          "Maddelerin harcanma ve oluşma hızları arasındaki oranı belirleyen denklem sayısı"
+        ],
+        [
+          "Sınırlayıcı bileşen",
+          "Tepkimede tamamen tükenerek tepkimenin sona ermesini ve hızın sıfırlanmasını sağlayan madde"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "cumleler": [
+        {
+          "metin": "Birim zamanda harcanan tepken veya oluşan ürün derişimindeki değişime ___ hızı adı verilir.",
+          "cevap": "ortalama tepkime"
+        },
+        {
+          "metin": "Tepkime ilerledikçe tepkenlerin derişimi azaldığından birim zamandaki ___ sayısı ve hız düşer.",
+          "cevap": "etkin çarpışma"
+        },
+        {
+          "metin": "Uluslararası birim sisteminde molar derişim ve saniye kullanıldığında tepkime hızının birimi ___ olarak yazılır.",
+          "cevap": "mol/(L·s)"
+        },
+        {
+          "metin": "Kimyasal bir tepkimede maddelerin bireysel harcanma ve oluşma hızları denklemdeki ___ ile doğru orantılıdır.",
+          "cevap": "katsayılar"
+        },
+        {
+          "metin": "Derişim-zaman grafiğinde belirli bir t anındaki anlık hızı bulmak için eğriye o noktadan çizilen ___ eğimi hesaplanır.",
+          "cevap": "teğetin"
+        }
+      ],
+      "fazla": [
+        "katalizörün",
+        "entalpi"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Sabit hacimli 5 litrelik bir reaktörde C₃H₈(g) + 5O₂(g) → 3CO₂(g) + 4H₂O(g) denklemine göre 40 saniyede 2 mol C₃H₈ gazı yakılmaktadır. Oksijenin ortalama harcanma hızını ve karbondioksitin ortalama oluşma hızını mol/(L·s) cinsinden adım adım hesaplayınız.",
+      "ipuclari": [
+        "Önce harcanan 2 mol C₃H₈ gazını 5 litrelik kap hacmine bölerek molar derişim değişimini (Δ[C₃H₈]) bulunuz.",
+        "Derişim değişimini 40 saniyeye bölerek C₃H₈ gazının ortalama harcanma hızını hesaplayınız.",
+        "Denklemdeki 1, 5 ve 3 katsayılarını kullanarak O₂ ve CO₂ gazlarının ortalama hızlarına geçiş yapınız."
+      ],
+      "cevap": "İlk adımda C₃H₈ gazının molar derişim değişimi Δ[C₃H₈] = 2 mol / 5 L = 0,4 M olarak bulunur. İkinci adımda C₃H₈ gazının ortalama harcanma hızı r(C₃H₈) = 0,4 M / 40 s = 0,01 mol/(L·s) hesaplanır. Üçüncü adımda katsayılarla doğru orantı kurularak oksijenin ortalama harcanma hızı r(O₂) = 5 · r(C₃H₈) = 5 · 0,01 = 0,05 mol/(L·s) ve karbondioksitin ortalama oluşma hızı r(CO₂) = 3 · r(C₃H₈) = 3 · 0,01 = 0,03 mol/(L·s) olarak elde edilir."
+    }
+  ],
+  "ozet": [
+    "Ortalama tepkime hızı, belirli bir zaman aralığında (Δt) harcanan tepken veya oluşan ürün derişimindeki değişimin geçen süreye oranıdır.",
+    "Tepkenlerin derişimi zamanla azaldığı için hız bağıntılarının önüne eksi (-) işareti, ürünlerin derişimi arttığı için artı (+) işareti konulur.",
+    "Tepkimedeki maddelerin ortalama harcanma ve oluşma hızları, denkleştirilmiş tepkime denklemindeki stokiyometrik katsayılarla doğru orantılıdır.",
+    "Sabit sıcaklıkta tepkime ilerledikçe tepken derişimi ve birim zamandaki etkin çarpışma sayısı azaldığından tepkime hızı zamanla düşer.",
+    "Derişim-zaman grafiklerinde iki zaman noktası arasındaki kesenin eğimi ortalama hızı, tek bir t anındaki teğetin eğimi ise anlık hızı verir."
+  ]
+}

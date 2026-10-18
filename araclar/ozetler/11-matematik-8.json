@@ -1,0 +1,258 @@
+{
+  "ad": "11-matematik-8",
+  "sinif": 11,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 8,
+  "tarih": "2-6 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "Geometrik Şekiller",
+  "konu": "Özel Dörtgenler: Eşkenar Dörtgen, Dikdörtgen, Kare ve Deltoidin Açı, Kenar, Köşegen ve Alan Özellikleri",
+  "ciktilar": [
+    "Eşkenar dörtgen, dikdörtgen, kare ve deltoidin kenar, açı ve köşegen özelliklerini paralelkenar ve ikizkenar üçgen bağıntılarıyla ilişkilendirerek açıklar.",
+    "Özel dörtgenlerin çevre ve alan bağıntılarını kullanarak geometrik uzunluk ve alan problemlerini çözer.",
+    "Paralelkenar, eşkenar dörtgen, dikdörtgen, kare ve deltoid arasındaki hiyerarşik kapsama ilişkilerini matematiksel gerekçeleriyle yorumlar."
+  ],
+  "giris": "Mimari yapılardan endüstriyel tasarıma, kristal örgülerden zemin kaplama desenlerine kadar günlük yaşamın her alanında özel dörtgenlerin simetrik özelliklerinden yararlanılır. Kenar uzunluklarının eşitliği, karşılıklı kenarların paralelliği ve iç açıların dikliği gibi ek koşullar, genel bir dörtgeni eşkenar dörtgen, dikdörtgen, kare veya deltoid gibi özel geometrik şekillere dönüştürür. Bu şekillerin köşegen ve alan özelliklerini anlamak, karmaşık geometri problemlerini dik üçgen ve ikizkenar üçgen parçalarına ayırarak çözme becerisi kazandırır.",
+  "bolumler": [
+    {
+      "baslik": "Eşkenar Dörtgen ve Dikdörtgenin Özellikleri",
+      "metin": [
+        "Bütün kenar uzunlukları birbirine eşit olan paralelkenara eşkenar dörtgen adı verilir. Eşkenar dörtgen bir paralelkenar olduğundan karşılıklı açıları eş, ardışık açıları bütünler (toplamı 180°) ve köşegenleri birbirini ortalar. Buna ek olarak eşkenar dörtgenin dört kenarı eşit (a) olduğu için köşegenler birbirini dik keser ([AC] ⊥ [BD]) ve bulundukları köşelerin iç açıortayıdır. Bir kenarı a, yüksekliği h ve köşegen uzunlukları e ile f olan eşkenar dörtgenin çevresi 4a, alanı ise Alan = a · h = (e · f) / 2 bağıntısıyla hesaplanır.",
+        "Bütün iç açılarının ölçüsü 90° olan paralelkenara ise dikdörtgen denir. Dikdörtgende karşılıklı kenar uzunlukları birbirine eşittir (|AB| = |CD| = a ve |BC| = |DA| = b). Paralelkenardan farklı olarak dikdörtgenin iki köşegen uzunluğu birbirine eşittir (|AC| = |BD| = e) ve köşegenler birbirini ortaladığı için dört eş doğru parçası oluşur; böylece köşegenler dikdörtgeni alanları birbirine eşit dört ikizkenar üçgene ayırır.",
+        "Dikdörtgende Pisagor teoremi kullanılarak köşegen uzunluğu e = {kok:a² + b²} bağıntısıyla bulunur. Çevresi 2(a + b), alanı ise komşu iki dik kenarının çarpımı olan Alan = a · b formülüyle hesaplanır. Ayrıca bir ABCD dikdörtgeninin düzleminde alınan herhangi bir P noktası için karşılıklı köşelere olan uzaklıkların kareleri toplamı birbirine eşittir: |PA|² + |PC|² = |PB|² + |PD|²."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\">\n  <rect width=\"700\" height=\"260\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">Eşkenar Dörtgen ve Dikdörtgenin Temel Geometrik Özellikleri</text>\n  <rect x=\"35\" y=\"45\" width=\"305\" height=\"195\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.8\"/>\n  <text x=\"187\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Eşkenar Dörtgen (Rhombus)</text>\n  <polygon points=\"187,82 275,130 187,178 99,130\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n  <line x1=\"187\" y1=\"82\" x2=\"187\" y2=\"178\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-dasharray=\"4,3\"/>\n  <line x1=\"99\" y1=\"130\" x2=\"275\" y2=\"130\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-dasharray=\"4,3\"/>\n  <rect x=\"187\" y=\"121\" width=\"9\" height=\"9\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.5\"/>\n  <text x=\"187\" y=\"198\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">• Dört kenar eşittir: |AB| = |BC| = |CD| = |DA| = a</text>\n  <text x=\"187\" y=\"214\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e40af\">• Köşegenler dik kesişir ([AC] ⊥ [BD]) ve açıortaydır</text>\n  <text x=\"187\" y=\"230\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">• Alan = a · h = (|AC| · |BD|) / 2</text>\n  <rect x=\"360\" y=\"45\" width=\"305\" height=\"195\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#10b981\" stroke-width=\"1.8\"/>\n  <text x=\"512\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#047857\">Dikdörtgen (Rectangle)</text>\n  <rect x=\"422\" y=\"88\" width=\"180\" height=\"85\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2.5\"/>\n  <line x1=\"422\" y1=\"88\" x2=\"602\" y2=\"173\" stroke=\"#d97706\" stroke-width=\"1.8\" stroke-dasharray=\"4,3\"/>\n  <line x1=\"602\" y1=\"88\" x2=\"422\" y2=\"173\" stroke=\"#d97706\" stroke-width=\"1.8\" stroke-dasharray=\"4,3\"/>\n  <text x=\"512\" y=\"198\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#065f46\">• Tüm iç açılar 90° ve karşılıklı kenarlar eşittir</text>\n  <text x=\"512\" y=\"214\" text-anchor=\"middle\" font-size=\"11\" fill=\"#047857\">• Köşegen uzunlukları eşittir (|AC| = |BD|) ve ortalanır</text>\n  <text x=\"512\" y=\"230\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">• Alan = a · b  |  Köşegen: e² = a² + b²</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikdörtgende Köşegenlerin Kesişim Açısı",
+          "metin": "Dikdörtgenin köşegen uzunlukları birbirine eşittir ve birbirini ortalar; ancak dikdörtgen aynı zamanda bir kare değilse köşegenler birbirini dik kesmez ve açıortay olmaz."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Eşkenar Dörtgende Öklid Bağıntısı",
+          "metin": "Eşkenar dörtgende köşegenler dik kesiştiği için oluşan dört eş dik üçgende Pisagor ((e/2)² + (f/2)² = a²) ve dikten dik indirildiğinde Öklid bağıntıları doğrudan uygulanabilir."
+        }
+      ]
+    },
+    {
+      "baslik": "Kare ve Deltoidin Açı, Köşegen ve Alan Bağıntıları",
+      "metin": [
+        "Hem dört kenar uzunluğu birbirine eşit olan hem de dört iç açısı 90° olan düzgün dörtgene kare adı verilir. Kare, dikdörtgen ve eşkenar dörtgenin tüm özelliklerini bünyesinde toplar: köşegen uzunlukları birbirine eşittir, köşegenler birbirini dik ortalar ve köşelerdeki 90°'lik açıları 45°-45° olacak şekilde iki eş parçaya böler. Bir kenarı a olan karenin köşegen uzunluğu e = a{kok:2}, çevresi 4a ve alanı Alan = a² = e² / 2 formülüyle bulunur.",
+        "Tabanları ortak olan iki farklı ikizkenar üçgenin tabanları boyunca birleştirilmesiyle oluşan dörtgene deltoid denir. Deltoidde ardışık (komşu) ikişer kenar uzunluğu birbirine eşittir (|AB| = |AD| ve |CB| = |CD|). Eşit kenarların birleştiği tepe noktalarını birleştiren köşegen, deltoidin simetri eksenidir; bu köşegen hem geçtiği köşelerin açıortayıdır hem de diğer köşegeni dik olarak iki eş parçaya böler.",
+        "Deltoidde simetri ekseni olmayan köşegenin uçlarındaki karşılıklı iki iç açının ölçüleri birbirine eşittir (m(B) = m(D)). Köşegenleri birbirine dik olduğu için deltoidin alanı, köşegen uzunluklarının çarpımının yarısına eşittir: Alan(ABCD) = (|AC| · |BD|) / 2. Eşkenar dörtgen, dört kenarı da birbirine eşit olan özel bir deltoid olarak kabul edilir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\">\n  <rect width=\"700\" height=\"260\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">Kare ve Deltoidin Açı, Köşegen ve Alan Bağıntıları</text>\n  <rect x=\"35\" y=\"45\" width=\"305\" height=\"195\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"1.8\"/>\n  <text x=\"187\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b45309\">Kare (Düzgün Dörtgen)</text>\n  <rect x=\"142\" y=\"80\" width=\"90\" height=\"90\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"2.5\"/>\n  <line x1=\"142\" y1=\"80\" x2=\"232\" y2=\"170\" stroke=\"#dc2626\" stroke-width=\"1.8\"/>\n  <line x1=\"232\" y1=\"80\" x2=\"142\" y2=\"170\" stroke=\"#dc2626\" stroke-width=\"1.8\"/>\n  <rect x=\"187\" y=\"116\" width=\"8\" height=\"8\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.5\"/>\n  <text x=\"187\" y=\"192\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">• Dört kenar eşit (a) ve dört iç açı 90°</text>\n  <text x=\"187\" y=\"209\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">• Köşegenler eşit (akök(2)), dik kesişir, 45°-45° böler</text>\n  <text x=\"187\" y=\"226\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">• Alan = a² = e² / 2  |  Çevre = 4a</text>\n  <rect x=\"360\" y=\"45\" width=\"305\" height=\"195\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#a855f7\" stroke-width=\"1.8\"/>\n  <text x=\"512\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#7e22ce\">Deltoid (Tabanları Ortak İki İkizkenar Üçgen)</text>\n  <polygon points=\"512,78 582,115 512,175 442,115\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2.5\"/>\n  <line x1=\"512\" y1=\"78\" x2=\"512\" y2=\"175\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <line x1=\"442\" y1=\"115\" x2=\"582\" y2=\"115\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-dasharray=\"4,3\"/>\n  <rect x=\"512\" y=\"107\" width=\"8\" height=\"8\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.5\"/>\n  <text x=\"512\" y=\"192\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">• Ardışık ikişer kenar eşit: |AB|=|AD| ve |BC|=|CD|</text>\n  <text x=\"512\" y=\"209\" text-anchor=\"middle\" font-size=\"11\" fill=\"#581c87\">• Simetri ekseni olan köşegen açıortaydır ve dik ortalar</text>\n  <text x=\"512\" y=\"226\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">• Alan = (|AC| · |BD|) / 2  |  m(B) = m(D)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Deltoidde Hangi Köşegenin Ortaladığına Dikkat",
+          "metin": "Deltoidde iki köşegen birbirini ortalamaz; ikizkenar üçgenlerin tepe noktalarını birleştiren ana köşegen (simetri ekseni), diğer köşegeni dik olarak iki eş parçaya böler."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Köşegenleri Dik Kesişen Dörtgenlerin Alanı",
+          "metin": "Kare, eşkenar dörtgen ve deltoidin üçünde de köşegenler birbirini dik kestiği için üçünün alanı da ortak olarak (|AC| · |BD|) / 2 formülüyle hesaplanabilir."
+        }
+      ]
+    },
+    {
+      "baslik": "Özel Dörtgenler Arasındaki Hiyerarşik İlişkiler",
+      "metin": [
+        "Özel dörtgenler tanımlanırken kullanılan özellikler genel dörtgenden kareye doğru daralan bir kapsama (hiyerarşi) yapısı oluşturur. Karşılıklı kenar çiftleri paralel olan her dörtgen bir paralelkenardır. Paralelkenarın iç açıları 90° yapıldığında dikdörtgen, kenar uzunlukları eşitlendiğinde ise eşkenar dörtgen elde edilir. Dolayısıyla her dikdörtgen ve her eşkenar dörtgen aynı zamanda bir paralelkenardır ve paralelkenarın tüm teoremlerini sağlar.",
+        "Kare ise hem iç açıları 90° olan bir eşkenar dörtgen hem de kenar uzunlukları eşit olan bir dikdörtgendir. Bu nedenle her kare aynı zamanda bir dikdörtgen, bir eşkenar dörtgen, bir paralelkenar, bir yamuk ve bir deltoiddir. Ancak bu kapsama ilişkisinin tersi genel olarak doğru değildir; örneğin her dikdörtgen bir kare değildir ve her deltoid bir paralelkenar değildir.",
+        "Herhangi bir dörtgenin kenarlarının orta noktaları ardışık olarak birleştirildiğinde oluşan orta nokta dörtgeni daima bir paralelkenardır. Eğer başlangıçtaki dörtgenin köşegenleri birbirine eşitse (örneğin dikdörtgen veya ikizkenar yamuk) orta noktaların birleşimiyle eşkenar dörtgen; köşegenleri birbirine dikse (örneğin eşkenar dörtgen veya deltoid) orta noktaların birleşimiyle dikdörtgen; hem eşit hem dikse (örneğin kare) orta noktaların birleşimiyle yine bir kare oluşur."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\">\n  <rect width=\"700\" height=\"260\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">Özel Dörtgenler Arasındaki Hiyerarşik İlişki Şeması</text>\n  <rect x=\"260\" y=\"45\" width=\"180\" height=\"36\" rx=\"8\" fill=\"#e2e8f0\" stroke=\"#475569\" stroke-width=\"1.8\"/>\n  <text x=\"350\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\">Genel Dörtgen</text>\n  <rect x=\"140\" y=\"102\" width=\"190\" height=\"38\" rx=\"8\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.8\"/>\n  <text x=\"235\" y=\"126\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">Paralelkenar</text>\n  <rect x=\"430\" y=\"102\" width=\"180\" height=\"38\" rx=\"8\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"1.8\"/>\n  <text x=\"520\" y=\"126\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#7e22ce\">Deltoid</text>\n  <rect x=\"45\" y=\"162\" width=\"170\" height=\"38\" rx=\"8\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"1.8\"/>\n  <text x=\"130\" y=\"186\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#047857\">Dikdörtgen</text>\n  <rect x=\"255\" y=\"162\" width=\"190\" height=\"38\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.8\"/>\n  <text x=\"350\" y=\"186\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">Eşkenar Dörtgen</text>\n  <rect x=\"150\" y=\"216\" width=\"200\" height=\"34\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"250\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b45309\">Kare (En Özel Dörtgen)</text>\n  <line x1=\"310\" y1=\"81\" x2=\"235\" y2=\"102\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <line x1=\"390\" y1=\"81\" x2=\"520\" y2=\"102\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <line x1=\"195\" y1=\"140\" x2=\"130\" y2=\"162\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n  <line x1=\"275\" y1=\"140\" x2=\"330\" y2=\"162\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n  <line x1=\"480\" y1=\"140\" x2=\"380\" y2=\"162\" stroke=\"#9333ea\" stroke-width=\"1.5\"/>\n  <line x1=\"130\" y1=\"200\" x2=\"210\" y2=\"216\" stroke=\"#059669\" stroke-width=\"1.5\"/>\n  <line x1=\"350\" y1=\"200\" x2=\"290\" y2=\"216\" stroke=\"#0284c7\" stroke-width=\"1.5\"/>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Kapsama Yönünü Karıştırmama",
+          "metin": "'Her kare bir dikdörtgendir ve her eşkenar dörtgen bir deltoiddir' önermeleri matematiksel olarak doğruyken, bunların karşıtı olan ifadeler doğru değildir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Orta Nokta Dörtgeninin Çevresi ve Alanı",
+          "metin": "Bir dörtgenin kenar orta noktalarını birleştirerek elde edilen paralelkenarın çevresi köşegen uzunluklarının toplamına (|AC| + |BD|), alanı ise tüm dörtgenin alanının yarısına eşittir."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Köşegen uzunlukları 12 cm ve 16 cm olan bir eşkenar dörtgenin çevresi kaç cm ve alanı kaç cm² olur?",
+      "cevap": "Eşkenar dörtgende köşegenler birbirini dik ortalar; dolayısıyla dik kenarları 6 cm ve 8 cm olan dört eş dik üçgen oluşur. Pisagor bağıntısından bir kenar uzunluğu a = {kok:6² + 8²} = 10 cm ve çevre 4a = 40 cm bulunur. Alan ise (12 · 16) / 2 = 96 cm² olarak hesaplanır."
+    },
+    {
+      "soru": "Kenar uzunlukları 9 cm ve 12 cm olan bir ABCD dikdörtgeninin köşegen uzunluğunu ve alanını hesaplayınız.",
+      "cevap": "Dikdörtgenin alanı komşu iki kenarın çarpımından Alan = 9 · 12 = 108 cm² olur. Köşegen uzunluğu ise dik üçgende Pisagor teoreminden e = {kok:9² + 12²} = {kok:81 + 144} = {kok:225} = 15 cm olarak bulunur."
+    },
+    {
+      "soru": "Köşegen uzunluğu 8{kok:2} cm olan bir karenin çevresi kaç cm ve alanı kaç cm² değerindedir?",
+      "cevap": "Bir kenarı a olan karenin köşegeni a{kok:2} olduğundan a{kok:2} = 8{kok:2} ⇒ a = 8 cm bulunur. Karenin çevresi 4a = 4 · 8 = 32 cm, alanı ise a² = 8² = 64 cm² (veya e²/2 = 128/2 = 64 cm²) olarak elde edilir."
+    },
+    {
+      "soru": "Bir ABCD deltoidinde |AB| = |AD| = 10 cm, |BC| = |CD| = 17 cm ve |BD| = 16 cm olduğuna göre deltoidin alanı kaç cm² olur?",
+      "cevap": "[AC] simetri ekseni [BD] köşegenini dik olarak 8 cm ve 8 cm şeklinde iki eş parçaya böler. Oluşan dik üçgenlerde Pisagor teoreminden [AC] köşegeninin üst parçası {kok:10² - 8²} = 6 cm, alt parçası {kok:17² - 8²} = 15 cm olur. Toplam |AC| = 6 + 15 = 21 cm olduğundan Alan = (21 · 16) / 2 = 168 cm² bulunur."
+    },
+    {
+      "soru": "Bir ABCD deltoidinde |AB| = |AD|, |BC| = |CD|, m(A) = 70° ve m(C) = 50° olduğuna göre m(B) kaç derecedir?",
+      "cevap": "Deltoidde [AC] simetri ekseni olduğundan B ve D köşelerindeki iç açıların ölçüleri birbirine eşittir: m(B) = m(D) = x. Dörtgenin iç açıları toplamı 360° olduğundan 70° + 50° + 2x = 360° ⇒ 2x = 240° ⇒ x = 120° bulunur."
+    },
+    {
+      "soru": "Bir ABCD dikdörtgeninin iç bölgesinde alınan bir P noktası için |PA| = 5 cm, |PB| = 6 cm ve |PC| = 8 cm olduğuna göre |PD| uzunluğu kaç cm olur?",
+      "cevap": "Dikdörtgenin düzlemindeki herhangi bir P noktası için karşılıklı köşelere olan uzaklıkların kareleri toplamı eşittir: |PA|² + |PC|² = |PB|² + |PD|². Değerler yerine yazılırsa 5² + 8² = 6² + |PD|² ⇒ 25 + 64 = 36 + |PD|² ⇒ |PD|² = 53 ⇒ |PD| = {kok:53} cm bulunur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Çevresi 52 cm ve köşegenlerinden birinin uzunluğu 10 cm olan bir eşkenar dörtgenin alanı kaç cm² olur?",
+      "secenekler": [
+        "100 cm² değerine eşit olarak hesaplanır",
+        "120 cm² değerine eşit olarak hesaplanır",
+        "130 cm² değerine eşit olarak hesaplanır",
+        "144 cm² değerine eşit olarak hesaplanır",
+        "240 cm² değerine eşit olarak hesaplanır"
+      ],
+      "dogru": 1,
+      "aciklama": "Çevre 52 cm ise bir kenar 13 cm'dir. Köşegenler dik ortalandığından 5-12-13 dik üçgeni oluşur ve diğer köşegen 24 cm olur. Alan = (10 · 24) / 2 = 120 cm² bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Özel dörtgenlerin köşegen ve açı özellikleri dikkate alındığında aşağıdaki ifadelerden hangisi doğrudur?",
+      "secenekler": [
+        "Dikdörtgenin köşegenleri iç açıları iki eş parçaya bölen açıortaydır",
+        "Paralelkenarın köşegen uzunlukları birbirine eşit ve diktir",
+        "Eşkenar dörtgenin köşegenleri birbirini dik ortalar ve açıortaydır",
+        "Deltoidin her iki köşegeni de birbirini iki eş parçaya böler",
+        "Eşkenar dörtgenin bütün iç açıları doksanar dereceye eşittir"
+      ],
+      "dogru": 2,
+      "aciklama": "Eşkenar dörtgende dört kenar birbirine eşit olduğu için köşegenler birbirini dik ortalar ve geçtikleri köşelerin iç açıortayı olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Köşegen uzunluklarının toplamı 14{kok:2} cm olan bir karenin alanı kaç cm² değerindedir?",
+      "secenekler": [
+        "28 cm² değerine eşit olarak bulunur",
+        "36 cm² değerine eşit olarak bulunur",
+        "49 cm² değerine eşit olarak bulunur",
+        "64 cm² değerine eşit olarak bulunur",
+        "98 cm² değerine eşit olarak bulunur"
+      ],
+      "dogru": 2,
+      "aciklama": "Karenin iki köşegeni birbirine eşittir; toplamları 14{kok:2} cm ise bir köşegen e = 7{kok:2} cm ve bir kenar a = 7 cm olur. Alan = 7² = 49 cm² bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir ABCD deltoidinde |AB| = |AD|, |BC| = |CD|, m(B) = 115° ve m(C) = 45° olduğuna göre m(A) açısının ölçüsü kaç derecedir?",
+      "secenekler": [
+        "65 derece olarak hesaplanır",
+        "70 derece olarak hesaplanır",
+        "75 derece olarak hesaplanır",
+        "80 derece olarak hesaplanır",
+        "85 derece olarak hesaplanır"
+      ],
+      "dogru": 4,
+      "aciklama": "Deltoidde |AB|=|AD| ve |BC|=|CD| olduğundan m(D) = m(B) = 115° olur. İç açılar toplamından m(A) + 115° + 45° + 115° = 360° ⇒ m(A) = 85° bulunur."
+    },
+    {
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "metin": "Eşkenar dörtgenin köşegen uzunlukları farklı olsa bile köşegenler birbirini dik olarak iki eş parçaya böler.",
+          "dogru": true
+        },
+        {
+          "metin": "Dikdörtgenin köşegen uzunlukları birbirine eşittir ve köşegenler dikdörtgeni alanları eşit dört üçgene ayırır.",
+          "dogru": true
+        },
+        {
+          "metin": "Deltoidde her iki köşegen de geçtiği köşelerin iç açılarını iki eş parçaya bölen açıortay doğrusudur.",
+          "dogru": false
+        },
+        {
+          "metin": "Kare hem dikdörtgenin hem de eşkenar dörtgenin bütün kenar, açı ve köşegen özelliklerini taşır.",
+          "dogru": true
+        },
+        {
+          "metin": "Köşegenleri birbirine dik olan bir dörtgenin kenar orta noktaları birleştirildiğinde eşkenar dörtgen oluşur.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "ciftler": [
+        [
+          "Eşkenar Dörtgen",
+          "Dört kenar uzunluğu birbirine eşit olan ve köşegenleri dik kesişen paralelkenar"
+        ],
+        [
+          "Dikdörtgen",
+          "Bütün iç açıları 90° olan ve köşegen uzunlukları birbirine eşit bulunan paralelkenar"
+        ],
+        [
+          "Kare",
+          "Hem dört kenarı birbirine eşit hem de dört iç açısı 90° olan düzgün dörtgen"
+        ],
+        [
+          "Deltoid",
+          "Tabanları ortak olan iki ikizkenar üçgenin tabanları boyunca birleşmesiyle oluşan dörtgen"
+        ],
+        [
+          "Simetri Ekseni",
+          "Deltoidde tepe noktalarını birleştiren, açıortay olan ve diğer köşegeni dik ortalayan köşegen"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "cumleler": [
+        {
+          "metin": "Eşkenar dörtgen, kare ve deltoidde köşegenler birbirini ___ olarak kestiği için alanları köşegenler çarpımının yarısıdır.",
+          "cevap": "dik"
+        },
+        {
+          "metin": "Bir kenar uzunluğu a birim olan karenin köşegen uzunluğu Pisagor bağıntısıyla ___ birim olarak bulunur.",
+          "cevap": "a{kok:2}"
+        },
+        {
+          "metin": "Dikdörtgende köşegenler birbirini ortaladığı için dikdörtgenin iç bölgesi dört ___ üçgene ayrılır.",
+          "cevap": "ikizkenar"
+        },
+        {
+          "metin": "Deltoidde eşit olmayan kenarların birleştiği karşılıklı iki köşedeki iç açıların ölçüleri birbirine ___ olur.",
+          "cevap": "eşit"
+        },
+        {
+          "metin": "Herhangi bir dörtgenin kenarlarının orta noktaları ardışık biçimde birleştirildiğinde oluşan şekil bir ___ belirtir.",
+          "cevap": "paralelkenar"
+        }
+      ],
+      "fazla": [
+        "yamuk",
+        "eşkenar"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Çevresi 40 cm olan bir ABCD eşkenar dörtgeninde [AC] köşegeninin uzunluğu 16 cm'dir. Bu eşkenar dörtgenin [BD] köşegeninin uzunluğunu, alanını ve bir kenarına ait h yüksekliğini adım adım hesaplayınız.",
+      "ipuclari": [
+        "İlk adımda eşkenar dörtgenin çevresini 4'e bölerek bir kenar uzunluğunu (a) bulunuz.",
+        "İkinci adımda köşegenlerin birbirini dik ortaladığını kullanarak dik üçgende Pisagor teoremiyle [BD] köşegenini hesaplayınız.",
+        "Üçüncü adımda köşegenlerden alanı bulup Alan = a · h eşitliğiyle yüksekliğe (h) ulaşınız."
+      ],
+      "cevap": "İlk adımda eşkenar dörtgenin dört kenarı eşit olduğundan bir kenar uzunluğu a = 40 / 4 = 10 cm bulunur. İkinci adımda köşegenler birbirini dik ortaladığı için |AC|/2 = 8 cm olur; oluşan dik üçgende (6-8-10 üçgeni) diğer köşegenin yarısı {kok:10² - 8²} = 6 cm ve tamamı |BD| = 12 cm olarak hesaplanır. Üçüncü adımda eşkenar dörtgenin alanı Alan = (16 · 12) / 2 = 96 cm² bulunur; aynı alan a · h çarpımına eşit olduğundan 10 · h = 96 ⇒ h = 9,6 cm elde edilir."
+    }
+  ],
+  "ozet": [
+    "Eşkenar dörtgen dört kenarı eşit olan paralelkenardır; köşegenleri birbirini dik ortalar, açıortaydır ve alanı a·h veya (e·f)/2 ile bulunur.",
+    "Dikdörtgen iç açıları 90° olan paralelkenardır; köşegen uzunlukları birbirine eşittir, birbirini ortalar ve alanı a·b çarpımına eşittir.",
+    "Kare hem eşkenar dörtgenin hem de dikdörtgenin tüm özelliklerini taşıyan düzgün dörtgendir; köşegeni a{kok:2}, alanı a² veya e²/2'dir.",
+    "Deltoid tabanları ortak iki ikizkenar üçgenden oluşur; simetri ekseni olan köşegen açıortaydır, diğer köşegeni dik ortalar ve alanı (e·f)/2'dir.",
+    "Özel dörtgenler hiyerarşisinde her kare aynı zamanda bir dikdörtgen, eşkenar dörtgen, paralelkenar ve deltoid olarak kabul edilir."
+  ]
+}

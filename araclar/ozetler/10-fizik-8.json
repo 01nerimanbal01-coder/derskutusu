@@ -1,0 +1,263 @@
+{
+  "ad": "10-fizik-8",
+  "sinif": 10,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 8,
+  "tarih": "2-6 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "2. TEMA: ENERJİ",
+  "konu": "Kuvvet-Yer Değiştirme Grafiği, Fiziksel Anlamda İş, Enerji ve Mekanik Güç İlişkisi",
+  "ciktilar": [
+    "Fiziksel anlamda işin gerçekleşme şartlarını açıklayarak kuvvet, yer değiştirme ve iş arasındaki matematiksel modeli (W = F·Δx) kurar.",
+    "Kuvvet-yer değiştirme (F-x) grafiğinin altında kalan alandan yararlanarak pozitif iş, negatif iş ve net işi hesaplar.",
+    "Yapılan net işin cismin kinetik enerjisindeki değişime eşit olduğunu (W_net = ΔE) ve birim zamanda yapılan işin mekanik gücü (P = W/t) verdiğini uygular."
+  ],
+  "giris": "Günlük hayatta zihinsel veya bedensel çaba gerektiren her etkinliğe iş denilse de fizik bilimine göre bir kuvvetin iş yapabilmesi için cisme kuvvet uygulanması ve cismin bu kuvvet doğrultusunda yer değiştirmesi gerekir. Kuvvet-yer değiştirme grafiklerinin altında kalan alan yapılan işi verirken, işin yapılma hızı ise mekanik güç kavramıyla açıklanır.",
+  "bolumler": [
+    {
+      "baslik": "Fiziksel Anlamda İş Kavramı ve İşin Özellikleri",
+      "metin": [
+        "Bir cisme etki eden sabit {koyu:F} kuvveti, cismi kendi doğrultusunda {koyu:Δx} kadar yer değiştirdiğinde fiziksel anlamda {koyu:iş (W)} yapmış olur ve yapılan iş {koyu:W = F · Δx} bağıntısıyla hesaplanır. Kuvvet ve yer değiştirme vektörel büyüklükler olmasına rağmen {koyu:iş skaler ve türetilmiş bir büyüklüktür}. Uluslararası Birim Sistemi'nde (SI) kuvvetin birimi {koyu:Newton (N)}, yer değiştirmenin birimi {koyu:metre (m)} alındığında işin birimi {koyu:Newton · metre = Joule (J)} olur.",
+        "Bir kuvvetin fiziksel anlamda iş yapabilmesi için kuvvet ile yer değiştirme vektörlerinin birbirine dik olmaması gerekir. {koyu:Hareket doğrultusuna dik olan kuvvetler fiziksel anlamda iş yapmaz (W = 0)}. Örneğin yatay yolda hareket eden bir araca etki eden {koyu:yer çekimi kuvveti (ağırlık, G)} ve {koyu:yüzeyin tepki (normal) kuvveti (N)} hareket doğrultusuna dik olduğundan iş yapmaz; benzer şekilde elinde çantayı sallamadan yatay yolda sabit hızla yürüyen bir kişinin çantaya uyguladığı düşey kuvvet veya sabit duvara uygulanan kuvvet (Δx = 0 olduğundan) fiziksel anlamda iş yapmaz.",
+        "Hareket yönüyle {koyu:aynı yönlü kuvvetler pozitif iş (+W)} yaparak cismin mekanik enerjisini artırırken; hareket yönüne {koyu:zıt yönlü kuvvetler (örneğin kinetik sürtünme kuvveti, F_s) negatif iş (-W)} yaparak cismin mekanik enerjisini ısı enerjisine dönüştürüp azaltır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">FİZİKSEL ANLAMDA İŞ (W = F · Δx) VE İŞ YAPMA ŞARTLARI</text>\n  <rect x=\"22\" y=\"40\" width=\"320\" height=\"178\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"62\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e40af\">İŞİN TANIMI VE BİRİMLERİ</text>\n  <text x=\"34\" y=\"85\" font-size=\"11.2\" fill=\"#1e3a8a\">• Matematiksel Model: W = F · Δx (Kuvvet x Yer değiştirme).</text>\n  <text x=\"34\" y=\"110\" font-size=\"11.2\" fill=\"#1e3a8a\">• Birim (SI): 1 Joule (J) = 1 Newton (N) · 1 metre (m).</text>\n  <text x=\"34\" y=\"135\" font-size=\"11.2\" fill=\"#1e3a8a\">• Niteliği: İş skaler ve türetilmiş bir büyüklüktür.</text>\n  <text x=\"34\" y=\"160\" font-size=\"11.2\" fill=\"#1e3a8a\">• Pozitif İş (+W): Hareketle aynı yönlü kuvvet (Enerji artar).</text>\n  <text x=\"34\" y=\"185\" font-size=\"11.2\" fill=\"#1e3a8a\">• Negatif İş (-W): Harekete zıt kuvvet / Sürtünme (Isıya dönüşür).</text>\n  <rect x=\"358\" y=\"40\" width=\"320\" height=\"178\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"62\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#92400e\">FİZİKSEL ANLAMDA İŞ YAPILMAYAN DURUMLAR</text>\n  <text x=\"370\" y=\"85\" font-size=\"11.2\" fill=\"#78350f\">• 1. Yer değiştirme sıfır ise (Δx = 0) -&gt; İş sıfırdır (W = 0).</text>\n  <text x=\"370\" y=\"110\" font-size=\"11.2\" fill=\"#78350f\">• • Örnek: Sabit duvarı iten sporcu fiziksel iş yapmaz.</text>\n  <text x=\"370\" y=\"135\" font-size=\"11.2\" fill=\"#78350f\">• 2. Kuvvet harekete dik ise (F ⊥ Δx) -&gt; İş sıfırdır (W = 0).</text>\n  <text x=\"370\" y=\"160\" font-size=\"11.2\" fill=\"#78350f\">• • Örnek: Yatay yolda ağırlık (G) ve normal kuvvet (N).</text>\n  <text x=\"370\" y=\"185\" font-size=\"11.2\" fill=\"#78350f\">• • Örnek: Sırtında çantayla düz yolda sabit hızla yürümek.</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Birden fazla kuvvet etki ettiğinde Net İş: W_net = F_net · Δx = W₁ + W₂ + ... bağıntısıyla bulunur.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Elinde yük taşıyan bir kişi merdiven çıkarak düşey doğrultuda yükselirse yer çekimine karşı fiziksel anlamda iş yapar; ancak yatay düz yolda sabit hızla yürürse uyguladığı kuvvet yer değiştirmeye dik olduğundan iş yapmaz."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Sürtünmeli yatay düzlemde F kuvvetiyle çekilen bir cisim üzerinde F kuvvetinin yaptığı iş W_F = F · Δx iken, net kuvvetin yaptığı iş W_net = (F - F_s) · Δx olur."
+        }
+      ]
+    },
+    {
+      "baslik": "Kuvvet-Yer Değiştirme (F-x) Grafiği ve İş-Enerji İlişkisi",
+      "metin": [
+        "Cisme etki eden kuvvetin konuma (yer değiştirmeye) bağlı değişimini gösteren {koyu:Kuvvet-Yer Değiştirme (F-x) grafiğinin yatay eksen ile arasında kalan alan yapılan işi (W)} verir. Bu özellik hem sabit kuvvetler (dikdörtgen alanı) hem de düzgün değişen kuvvetler (üçgen veya yamuk alanı) için geçerlidir.",
+        "Kuvvet-yer değiştirme grafiğinde yatay konum ekseninin {koyu:üstünde kalan bölgelerin alanı (+W₁) pozitif işi}, konum ekseninin {koyu:altında kalan bölgelerin alanı (-W₂) ise negatif işi} temsil eder. Cismin hareketi boyunca yapılan toplam (net) iş, bu alanların cebirsel toplamına eşittir: {koyu:W_net = W₁ - W₂}.",
+        "{koyu:İş-Enerji Teoremi:} İş yapabilme yeteneğine {koyu:enerji} denir ve yapılan iş cisme enerji olarak aktarılır. Yatay düzlemde hareket eden bir cisim üzerine yapılan {koyu:net iş, cismin kinetik enerjisindeki değişime eşittir: W_net = ΔE_k = E_son - E_ilk}. Düşey doğrultuda sabit hızla h kadar yükseltilen m kütleli bir cisim üzerinde yer çekimine karşı yapılan iş ise cismin {koyu:yer çekimi potansiyel enerjisindeki artışa (W = G · h = m · g · h)} eşittir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">KUVVET - YER DEĞİŞTİRME (F-x) GRAFİĞİ VE İŞ - ENERJİ TEOREMİ</text>\n  <rect x=\"22\" y=\"40\" width=\"320\" height=\"178\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"62\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#166534\">F - x GRAFİĞİNİN ALANI = YAPILAN İŞ (W)</text>\n  <text x=\"34\" y=\"85\" font-size=\"11.2\" fill=\"#14532d\">• Sabit Kuvvet: Dikdörtgen Alanı -&gt; W = F · x</text>\n  <text x=\"34\" y=\"110\" font-size=\"11.2\" fill=\"#14532d\">• Düzgün Artan Kuvvet: Üçgen Alanı -&gt; W = (F · x) / 2</text>\n  <text x=\"34\" y=\"135\" font-size=\"11.2\" fill=\"#14532d\">• Üst Bölge (+F): Pozitif iş (+W), kinetik enerjiyi artırır.</text>\n  <text x=\"34\" y=\"160\" font-size=\"11.2\" fill=\"#14532d\">• Alt Bölge (-F): Negatif iş (-W), kinetik enerjiyi azaltır.</text>\n  <text x=\"34\" y=\"185\" font-size=\"11.2\" fill=\"#14532d\">• Toplam (Net) İş: W_net = (+Alanlar) - (-Alanlar)</text>\n  <rect x=\"358\" y=\"40\" width=\"320\" height=\"178\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"62\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e40af\">İŞ - ENERJİ DÖNÜŞÜM İLİŞKİSİ</text>\n  <text x=\"370\" y=\"85\" font-size=\"11.2\" fill=\"#1e3a8a\">• Enerji: Bir sistemin iş yapabilme kapasitesidir (Birim: J).</text>\n  <text x=\"370\" y=\"110\" font-size=\"11.2\" fill=\"#1e3a8a\">• Yatayda Net İş: W_net = F_net · Δx = ΔE_k = E_k(son) - E_k(ilk)</text>\n  <text x=\"370\" y=\"135\" font-size=\"11.2\" fill=\"#1e3a8a\">• W_net &gt; 0 ise cisim hızlanır (Kinetik enerji artar).</text>\n  <text x=\"370\" y=\"160\" font-size=\"11.2\" fill=\"#1e3a8a\">• W_net &lt; 0 ise cisim yavaşlar (Kinetik enerji azalır).</text>\n  <text x=\"370\" y=\"185\" font-size=\"11.2\" fill=\"#1e3a8a\">• W_net = 0 ise cismin sürati ve kinetik enerjisi değişmez.</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Kuvvet-yer değiştirme grafiğinin eğimi yay sabiti gibi nicelikleri verirken, grafiğin ALANI daima İŞİ verir.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Yatay ve sürtünmesiz düzlemde yapılan iş cismin kütlesine (m) bağlı değildir; F kuvveti m ve 3m kütleli iki cismi aynı Δx kadar çekerse her iki cisim üzerinde de eşit iş (W = F·Δx) yapılır ve son kinetik enerjileri eşit olur."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Durgun hâlden harekete geçen bir cisme F-x grafiğinde 0-x aralığında +30 J, x-2x aralığında -10 J iş yapılmışsa, 2x konumundaki kinetik enerjisi 30 - 10 = 20 J olur."
+        }
+      ]
+    },
+    {
+      "baslik": "Mekanik Güç Kavramı ve Birimleri",
+      "metin": [
+        "Fizikte aynı miktardaki işin ne kadar kısa sürede yapıldığını gösteren büyüklüğe {koyu:mekanik güç (P)} adı verilir. Birim zamanda yapılan iş veya birim zamanda harcanan/aktarılan enerji olarak tanımlanan güç, {koyu:P = {kesir:W|t} = {kesir:ΔE|t}} veya sabit hızla hareket durumunda {koyu:P = {kesir:F · Δx|t} = F · v} bağıntısıyla hesaplanır.",
+        "Güç de tıpkı iş ve enerji gibi {koyu:skaler ve türetilmiş bir büyüklüktür}. SI birim sisteminde işin birimi {koyu:Joule (J)}, zamanın birimi {koyu:saniye (s)} alındığında gücün birimi {koyu:Joule / saniye = Watt (W)} olur ({koyu:1 W = 1 J/s}). Uygulamada büyük güç değerleri için {koyu:kilowatt (1 kW = 1000 W)}, {koyu:megawatt (1 MW = {us:10|6} W)} ve motor gücünü ifade etmek için {koyu:beygir gücü (1 HP ≈ 746 W)} birimleri de kullanılır.",
+        "Elektrik faturalarında sıkça karşılaşılan {koyu:kilowatt-saat (kWh)} birimi güç birimi değil, güç ile zamanın çarpımından (W = P · t) elde edilen bir {koyu:iş ve enerji birimidir} ({koyu:1 kWh = 1000 W · 3600 s = 3,6 × {us:10|6} Joule})."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">MEKANİK GÜÇ (P = W / t) VE ENERJİ TASARRUFU</text>\n  <rect x=\"22\" y=\"40\" width=\"320\" height=\"178\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"62\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#6b21a8\">GÜÇ FORMÜLÜ VE ÖZELLİKLERİ</text>\n  <text x=\"34\" y=\"85\" font-size=\"11.2\" fill=\"#581c87\">• Tanım: Birim zamanda yapılan iş veya aktarılan enerjidir.</text>\n  <text x=\"34\" y=\"110\" font-size=\"11.2\" fill=\"#581c87\">• Formül: P = W / t = (F · Δx) / t = ΔE / t</text>\n  <text x=\"34\" y=\"135\" font-size=\"11.2\" fill=\"#581c87\">• SI Birimi: Watt (W) = Joule / saniye (J / s).</text>\n  <text x=\"34\" y=\"160\" font-size=\"11.2\" fill=\"#581c87\">• Pratik Birimler: 1 kW = 1000 W | 1 HP (Beygir) ≈ 746 W.</text>\n  <text x=\"34\" y=\"185\" font-size=\"11.2\" fill=\"#581c87\">• Yorum: Aynı işi daha kısa sürede yapanın gücü daha büyüktür.</text>\n  <rect x=\"358\" y=\"40\" width=\"320\" height=\"178\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"62\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#9a3412\">GÜÇ VE ENERJİ BİRİMLERİ AYRIMI</text>\n  <text x=\"370\" y=\"85\" font-size=\"11.2\" fill=\"#7c2d12\">• Watt (W) ve Kilowatt (kW) -&gt; GÜÇ birimidir.</text>\n  <text x=\"370\" y=\"110\" font-size=\"11.2\" fill=\"#7c2d12\">• Joule (J), Kalori (cal) ve kWh -&gt; İŞ / ENERJİ birimidir.</text>\n  <text x=\"370\" y=\"135\" font-size=\"11.2\" fill=\"#7c2d12\">• Harcanan Enerji: E = P · t (Güç x Zaman).</text>\n  <text x=\"370\" y=\"160\" font-size=\"11.2\" fill=\"#7c2d12\">• 1 kWh = 1000 W x 3600 s = 3.600.000 Joule (3,6 MJ).</text>\n  <text x=\"370\" y=\"185\" font-size=\"11.2\" fill=\"#7c2d12\">• Verimlilik: Düşük güçlü ve A+++ cihazlar enerji tasarrufu sağlar.</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Aynı yükü aynı yüksekliğe çıkaran iki vinçten süreyi yarıya indirenin mekanik gücü iki kat fazladır.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Sorularda 'kilowatt (kW)' ile 'kilowatt-saat (kWh)' kavramlarını birbirine karıştırmayınız: kW güç birimidir, kWh ise güç ile zamanın çarpımı olduğundan enerji (iş) birimidir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Güç hesaplamalarında sonucun Watt (W) çıkması için iş mutlaka Joule (J) cinsinden, zaman ise dakika veya saat verilmişse saniyeye (1 dk = 60 s) çevrilerek yazılmalıdır."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Sürtünmesiz yatay düzlemde durmakta olan 4 kg kütleli bir cisme yatay doğrultuda 25 N büyüklüğünde sabit bir kuvvet uygulanarak cisim 8 metre çekiliyor. Kuvvetin yaptığı iş kaç Joule'dür?",
+      "cevap": "Fiziksel anlamda yapılan iş W = F · Δx bağıntısıyla bulunur ve yatay sürtünmesiz düzlemde kütleye bağlı değildir. Verilenler yerine konulduğunda W = 25 N · 8 m = 200 Joule iş yapılmış olur."
+    },
+    {
+      "soru": "Yatay ve sürtünmeli bir yolda durmakta olan bir sandığa yatay 40 N kuvvet uygulanarak sandık 5 metre hareket ettiriliyor. Yüzey ile sandık arasındaki sürtünme kuvveti 12 N olduğuna göre: a) Kuvvetin yaptığı işi, b) Sürtünme kuvvetinin yaptığı işi, c) Net işi hesaplayınız.",
+      "cevap": "a) Uygulanan kuvvetin yaptığı iş: W_F = F · Δx = 40 · 5 = +200 J. b) Sürtünme kuvvetinin yaptığı iş: W_s = -F_s · Δx = -12 · 5 = -60 J. c) Net iş: W_net = W_F + W_s = 200 - 60 = 140 J (veya F_net · Δx = (40 - 12) · 5 = 140 J)."
+    },
+    {
+      "soru": "Doğrusal bir yolda hareket eden cisme ait Kuvvet-Yer Değiştirme (F-x) grafiğinde; 0-4 m aralığında sabit +20 N kuvvet, 4-8 m aralığında ise doğrusal olarak +20 N'dan 0'a azalan bir kuvvet uygulanmaktadır. 0-8 m aralığında yapılan toplam iş kaç Joule'dür?",
+      "cevap": "F-x grafiğinin altındaki alan yapılan işi verir. 0-4 m aralığında dikdörtgen alanı: W₁ = 20 · 4 = 80 J. 4-8 m aralığında üçgen alanı: W₂ = {kesir:20 · (8 - 4)|2} = 40 J. Toplam yapılan iş: W_top = 80 + 40 = 120 Joule bulunur."
+    },
+    {
+      "soru": "Bir elektrikli vinç, ağırlığı 600 N olan bir yükü sabit hızla 10 saniyede 15 metre yüksekliğe çıkarıyor. Vincin bu işlem sırasındaki mekanik gücü kaç Watt'tır?",
+      "cevap": "Önce vincin yer çekimine karşı yaptığı iş hesaplanır: W = G · h = 600 N · 15 m = 9000 Joule. Mekanik güç ise yapılan işin geçen süreye oranıdır: P = {kesir:W|t} = {kesir:9000 J|10 s} = 900 Watt."
+    },
+    {
+      "soru": "Gücü 2000 Watt (2 kW) olan bir elektrikli ısıtıcı günde 3 saat çalıştırılmaktadır. Bu ısıtıcının 10 günde harcadığı elektrik enerjisi kaç kWh'tir?",
+      "cevap": "Güç P = 2000 W = 2 kW'tır. Isıtıcı 10 günde toplam t = 10 × 3 = 30 saat çalışır. Harcanan enerji E = P · t = 2 kW · 30 saat = 60 kWh olarak bulunur."
+    },
+    {
+      "soru": "Yatay düzlemde sabit hızla sırtında çantasıyla yürüyen bir öğrenci ile aynı çantayı sırtında taşıyarak üst kata merdivenle çıkan bir öğrencinin çanta üzerinde fiziksel anlamda iş yapıp yapmadığını karşılaştırınız.",
+      "cevap": "Yatay düz yolda sabit hızla yürüyen öğrencinin çantayı tutmak için uyguladığı kuvvet düşey (yukarı) yönlü, yer değiştirme ise yatay yönlüdür; kuvvet ile yer değiştirme birbirine dik (90°) olduğundan fiziksel anlamda iş yapılmaz (W = 0). Merdiven çıkan öğrencide ise hem kuvvet hem de yer değiştirmenin düşey bileşeni aynı doğrultuda olduğundan yer çekimine karşı pozitif iş yapılır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "soru": "Fizik bilimine göre aşağıdaki durumların hangisinde sözü edilen kuvvet fiziksel anlamda iş yapmaktadır?",
+      "secenekler": [
+        "Halteri başının üzerinde hareketsiz tutarak bekleyen sporcunun haltere uyguladığı kuvvet",
+        "Yatay ve düz bir koridorda sabit süratle yürüyen öğrencinin elindeki çantaya uyguladığı düşey kuvvet",
+        "Sürtünmesiz yatay düzlemde kayan cisme yatay yüzeyin uyguladığı dik tepki (normal) kuvveti",
+        "Yerde duran koliyi düşey doğrultuda yukarı kaldırarak rafa yerleştiren işçinin koliye uyguladığı kuvvet",
+        "Hareket etmeyen beton bir duvarı var gücüyle iten kişinin duvara uyguladığı yatay kuvvet"
+      ],
+      "dogru": 3,
+      "aciklama": "Koliyi yerden kaldırıp rafa yerleştiren işçinin uyguladığı düşey kuvvet ile kolinin yer değiştirmesi aynı doğrultuda olduğundan fiziksel anlamda iş yapılır.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Sürtünmeli yatay bir düzlemde durmakta olan cisme yatay 30 N büyüklüğünde kuvvet uygulanarak cisim 6 metre çekiliyor. Sürtünme kuvveti 10 N olduğuna göre, bu süreçte yapılan net iş kaç Joule'dür?",
+      "secenekler": [
+        "60",
+        "120",
+        "180",
+        "240",
+        "300"
+      ],
+      "dogru": 1,
+      "aciklama": "Net kuvvet F_net = F - F_s = 30 - 10 = 20 N'dur. Yapılan net iş W_net = F_net · Δx = 20 · 6 = 120 Joule olur.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Bir makine 3600 Joule büyüklüğündeki işi 1 dakika içinde gerçekleştirdiğine göre, bu makinenin mekanik gücü kaç Watt'tır?",
+      "secenekler": [
+        "60",
+        "120",
+        "360",
+        "600",
+        "3600"
+      ],
+      "dogru": 0,
+      "aciklama": "Zaman saniyeye çevrilir: t = 1 dk = 60 s. Mekanik güç P = W / t = 3600 J / 60 s = 60 Watt bulunur.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Sürtünmesiz yatay düzlemde durmakta olan m ve 2m kütleli K ve L cisimlerine eşit büyüklükte yatay F kuvvetleri uygulanarak her iki cisim de x kadar çekiliyor. Kuvvetlerin K ve L cisimleri üzerinde yaptığı işler W_K ve W_L olduğuna göre {kesir:W_K|W_L} oranı kaçtır?",
+      "secenekler": [
+        "{kesir:1|4}",
+        "{kesir:1|2}",
+        "1",
+        "2",
+        "4"
+      ],
+      "dogru": 2,
+      "aciklama": "Sürtünmesiz yatay düzlemde yapılan iş W = F · x olup cismin kütlesine bağlı değildir. İki cisme de aynı F kuvveti aynı x yolu boyunca uygulandığından W_K = W_L ve oran 1 olur.",
+      "tur": "coktan"
+    },
+    {
+      "ifadeler": [
+        {
+          "metin": "Kuvvet-yer değiştirme (F-x) grafiğinin yatay konum ekseni ile arasında kalan alan yapılan işi verir.",
+          "dogru": true,
+          "aciklama": "W = F · Δx bağıntısı gereği F-x grafiğinin alanı yapılan fiziksel işe eşittir."
+        },
+        {
+          "metin": "Hareket yönüne zıt yönde etki eden kinetik sürtünme kuvveti negatif iş yaparak cismin mekanik enerjisini azaltır.",
+          "dogru": true,
+          "aciklama": "Sürtünme kuvveti harekete ters yönlü olduğu için negatif iş yapar ve enerjiyi ısıya dönüştürür."
+        },
+        {
+          "metin": "Fiziksel anlamda iş, kuvvet ve yer değiştirme vektörel olduğu için yönü olan vektörel bir büyüklüktür.",
+          "dogru": false,
+          "aciklama": "İş, enerji ve güç yönü olmayan skaler ve türetilmiş büyüklüklerdir."
+        },
+        {
+          "metin": "Aynı miktardaki işi daha kısa sürede tamamlayan bir motorun mekanik gücü daha büyüktür.",
+          "dogru": true,
+          "aciklama": "P = W / t bağıntısına göre yapılan iş (W) sabitken süre (t) azaldıkça güç (P) artar."
+        },
+        {
+          "metin": "Elektrik sayaçlarında kullanılan kilowatt-saat (kWh) birimi uluslararası birim sisteminde mekanik güç birimidir.",
+          "dogru": false,
+          "aciklama": "Kilowatt (kW) güç birimidir; kilowatt-saat (kWh) ise güç ile zamanın çarpımı olduğu için enerji (iş) birimidir."
+        }
+      ],
+      "tur": "dy"
+    },
+    {
+      "ciftler": [
+        [
+          "Fiziksel İş (W)",
+          "Cisme uygulanan kuvvet ile kuvvet doğrultusundaki yer değiştirmenin çarpımı (F·Δx)"
+        ],
+        [
+          "Mekanik Güç (P)",
+          "Birim zamanda yapılan iş veya birim zamanda aktarılan enerji miktarı (W/t)"
+        ],
+        [
+          "Joule (J)",
+          "Uluslararası Birim Sistemi'nde (SI) iş ve enerjinin Newton·metre karşılığı birimi"
+        ],
+        [
+          "Watt (W)",
+          "Saniyede bir Joule iş yapıldığını ifade eden mekanik ve elektriksel güç birimi"
+        ],
+        [
+          "F-x Grafiği Alanı",
+          "Değişken veya sabit bir kuvvetin yaptığı net işi hesaplamayı sağlayan geometrik büyüklük"
+        ]
+      ],
+      "tur": "eslestir"
+    },
+    {
+      "cumleler": [
+        {
+          "metin": "Bir kuvvetin fiziksel anlamda iş yapabilmesi için kuvvet ile ___ vektörlerinin birbirine dik olmaması gerekir.",
+          "cevap": "yer değiştirme"
+        },
+        {
+          "metin": "Cisim üzerine yapılan ___ iş, cismin öteleme kinetik enerjisindeki değişime (ΔE_k) eşittir.",
+          "cevap": "net"
+        },
+        {
+          "metin": "Birim zamanda yapılan işe mekanik ___ adı verilir ve P harfi ile gösterilir.",
+          "cevap": "güç"
+        },
+        {
+          "metin": "Bir sistemin iş yapabilme kapasitesine ___ denir ve birimi iş birimiyle aynıdır.",
+          "cevap": "enerji"
+        },
+        {
+          "metin": "Hareket doğrultusuna ___ olarak etki eden ağırlık ve yüzey tepki kuvvetleri yatay yolda iş yapmaz.",
+          "cevap": "dik"
+        }
+      ],
+      "fazla": [
+        "ivme",
+        "vektörel"
+      ],
+      "tur": "bosluk"
+    },
+    {
+      "soru": "Yatay düzlemde durmakta olan 2 kg kütleli bir cisme uygulanan yatay kuvvetin konuma bağlı değişiminde; 0-5 m aralığında +40 N, 5-10 m aralığında ise -10 N kuvvet etki etmektedir. Bu hareketin tamamı 5 saniye sürdüğüne göre yapılan net işi, son kinetik enerjiyi ve ortalama gücü üç adımda hesaplayınız.",
+      "ipuclari": [
+        "Birinci adımda F-x grafiğinin 0-5 m ve 5-10 m aralıklarındaki alanlarından yararlanarak net işi (W_net) bulunuz.",
+        "İkinci adımda İş-Enerji Teoremi'ni (W_net = ΔE_k) kullanarak durgun hâlden başlayan cismin 10. metredeki kinetik enerjisini belirleyiniz.",
+        "Üçüncü adımda yapılan net işi toplam süreye (5 s) bölerek ortalama mekanik gücü (P) hesaplayınız."
+      ],
+      "cevap": "1. Adım (Net İş): 0-5 m aralığında yapılan iş W₁ = (+40 N) · 5 m = +200 J; 5-10 m aralığında yapılan iş W₂ = (-10 N) · 5 m = -50 J'dür. Net iş W_net = 200 - 50 = 150 Joule olur. 2. Adım (Son Kinetik Enerji): Cisim durgun hâlden (E_ilk = 0) harekete geçtiği için W_net = E_son - E_ilk -> E_son = 150 Joule bulunur. 3. Adım (Ortalama Güç): P = {kesir:W_net|t} = {kesir:150 J|5 s} = 30 Watt olarak elde edilir.",
+      "tur": "ogretici"
+    }
+  ],
+  "ozet": [
+    "Fiziksel anlamda iş (W = F · Δx), cisme uygulanan kuvvet ile kuvvet doğrultusundaki yer değiştirmenin çarpımına eşittir; skalerdir ve SI birimi Joule'dür (J = N·m).",
+    "Yer değiştirmenin sıfır olduğu durumlarda veya kuvvetin hareket doğrultusuna dik olduğu durumlarda fiziksel anlamda iş yapılmaz (W = 0).",
+    "Kuvvet-yer değiştirme (F-x) grafiğinin altında kalan alan yapılan işi verir; konum ekseninin üstündeki alanlar pozitif (+W), altındaki alanlar negatif (-W) iştir.",
+    "İş-Enerji Teoremi'ne göre bir cisim üzerine yapılan net iş, cismin kinetik enerjisindeki değişime eşittir (W_net = ΔE_k).",
+    "Birim zamanda yapılan işe mekanik güç (P = W / t) denir; SI birimi Watt (J/s) olup skaler bir büyüklüktür."
+  ]
+}

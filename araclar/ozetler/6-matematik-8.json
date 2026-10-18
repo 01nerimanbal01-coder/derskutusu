@@ -1,0 +1,262 @@
+{
+  "ad": "6-matematik-8",
+  "sinif": 6,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 8,
+  "tarih": "2-6 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "SAYILAR VE NİCELİKLER (2)",
+  "konu": "Gerçek Yaşam Durumlarında Kesir, Ondalık ve Yüzde Gösterimleriyle Dört İşlem İçeren Problemleri Çözme",
+  "ciktilar": [
+    "MAT.6.1.7. Gerçek yaşam problemlerinde kesir, ondalık ve yüzde gösterimlerine ait verilenler ile istenenler arasındaki işlem ilişkisini belirler.",
+    "Problemleri çözerken şekil, tablo veya şerit diyagram temsillerini kullanır; sonuca ilişkin tahminde bulunarak uygun stratejiler geliştirir.",
+    "Uyguladığı çözüm yollarını kontrol eder, daha kısa çözüm stratejilerini değerlendirir ve kullandığı stratejiyi farklı problemlere geneller."
+  ],
+  "giris": "Alışverişteki etiket indirimlerinden mutfaktaki yemek tariflerine, yakıt tüketiminden zaman yönetimine kadar günlük yaşamda kesir, ondalık ve yüzde gösterimleri çoğunlukla aynı problem içinde karşımıza çıkar. Bu dersimizde farklı sayı gösterimlerini birbirine dönüştürerek gerçek yaşam problemlerini modelleme, tahmin etme ve dört işlemle çözme stratejilerini öğreniyoruz.",
+  "bolumler": [
+    {
+      "baslik": "Farklı Gösterimleri Birbirine Dönüştürme ve Temsil Kullanımı",
+      "metin": [
+        "İçinde hem kesir hem ondalık hem de yüzde bulunan bir problemi çözmenin en etkili yolu, tüm verileri {koyu:aynı gösterim türüne} (hepsini kesre, hepsini ondalık gösterime veya hepsini yüzdeye) dönüştürmektir.",
+        "Sık kullanılan eşdeğerlikleri zihinden bilmek büyük hız kazandırır: {koyu:1/2 = 0,5 = %50} (yarım), {koyu:1/4 = 0,25 = %25} (çeyrek), {koyu:3/4 = 0,75 = %75}, {koyu:1/5 = 0,2 = %20}, {koyu:1/8 = 0,125 = %12,5} ve {koyu:1/10 = 0,1 = %10}.",
+        "Problem bağlamını görselleştirmek için {koyu:şerit diyagram (kesir modelleri)}, sayı doğrusu veya tablo temsilleri kullanılır. Örneğin bir yolun önce %40'ı (2/5'i), sonra 1/5'i gidildiğinde 5 eş parçalı bir şerit çizmek kalan kısmı (2/5) anında görmemizi sağlar."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"30\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">KESİR, ONDALIK VE YÜZDE GÖSTERİMLERİ ARASINDA DÖNÜŞÜM</text>\n  <rect x=\"35\" y=\"55\" width=\"200\" height=\"180\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/>\n  <text x=\"135\" y=\"80\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Kesir Gösterimi</text>\n  <text x=\"135\" y=\"110\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">• 1/2 (Yarım) • 1/4 (Çeyrek)</text>\n  <text x=\"135\" y=\"135\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">• 3/4 (Dörtte üç)</text>\n  <text x=\"135\" y=\"160\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">• 1/5 (Beşte bir)</text>\n  <text x=\"135\" y=\"185\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">• 3/8 (Sekizde üç)</text>\n  <text x=\"135\" y=\"215\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\">Payda 10, 100, 1000 yapılır!</text>\n  <rect x=\"250\" y=\"55\" width=\"200\" height=\"180\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/>\n  <text x=\"350\" y=\"80\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Ondalık Gösterim</text>\n  <text x=\"350\" y=\"110\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">• 1/2 = 0,5 • 1/4 = 0,25</text>\n  <text x=\"350\" y=\"135\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">• 3/4 = 0,75</text>\n  <text x=\"350\" y=\"160\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">• 1/5 = 0,2</text>\n  <text x=\"350\" y=\"185\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">• 3/8 = 0,375</text>\n  <text x=\"350\" y=\"215\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">Virgüller alt alta hizalanır!</text>\n  <rect x=\"465\" y=\"55\" width=\"200\" height=\"180\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\"/>\n  <text x=\"565\" y=\"80\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#a16207\">Yüzde Gösterimi (%)</text>\n  <text x=\"565\" y=\"110\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">• 1/2 = 50/100 = %50</text>\n  <text x=\"565\" y=\"135\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">• 1/4 = 25/100 = %25</text>\n  <text x=\"565\" y=\"160\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">• 3/4 = 75/100 = %75</text>\n  <text x=\"565\" y=\"185\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">• 1/5 = 20/100 = %20</text>\n  <text x=\"565\" y=\"215\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#854d0e\">İndirim ve zam hesabında!</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Kalanın Kesri Tuzağı!",
+          "metin": "'Parasını önce 1/3'ünü, sonra kalan parasının 1/2'sini harcadı' ifadelerinde ikinci kesir tüm paraya değil, geriye kalan 2/3'lük kısma uygulanır (2/3 × 1/2 = 1/3)."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Hangi Gösterimi Seçmeli?",
+          "metin": "Paydası 3, 6, 7, 9 olan devirli kesirlerde kesirle işlem yapmak; para, ağırlık (kg) ve uzunluk (m) sorularında ise ondalık gösterim kullanmak daha pratiktir."
+        }
+      ]
+    },
+    {
+      "baslik": "Kesir, Ondalık ve Yüzde Problemlerinde Dört İşlem Stratejileri",
+      "metin": [
+        "Bir bütünün belirtilen kesir veya yüzde kadarı bulunurken {koyu:çarpma işlemi} yapılır: Örneğin 400 TL'lik bir ürünün %15 indirim tutarı 400 × (15/100) = 60 TL, indirimli satış fiyatı ise 400 - 60 = 340 TL'dir.",
+        "Kesir veya yüzdesi verilen bir çokluğun tamamı (bütünü) bulunurken {koyu:bölme işlemi} (birim kesir üzerinden gitme) kullanılır: Örneğin 0,4'ü (yani 2/5'i) 80 litre olan bir su deposunun tamamı (80 ÷ 2) × 5 = 200 litredir.",
+        "Ondalık gösterimlerle bölme işlemi içeren parçalama/şişeleme problemlerinde (örneğin 18 litre zeytinyağını 0,75 litrelik şişelere doldurma) bölen ve bölünen 100 ile genişletilerek {koyu:1800 ÷ 75 = 24 şişe} veya kesre çevrilerek {koyu:18 ÷ (3/4) = 18 × (4/3) = 24 şişe} sonucu bulunur."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"30\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">KESİR VE ONDALIK PROBLEMLERİNDE MODELLEME STRATEJİLERİ</text>\n  <rect x=\"40\" y=\"55\" width=\"300\" height=\"180\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/>\n  <text x=\"190\" y=\"80\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Bütünden Parçaya ve Kalanın Kesri</text>\n  <text x=\"55\" y=\"108\" font-size=\"11.5\" fill=\"#334155\">• Bir bütünün kesir kadarı: Bütün × Kesir</text>\n  <text x=\"55\" y=\"130\" font-size=\"11\" fill=\"#475569\">Örnek: 240 TL'nin 3/8'i → (240 ÷ 8) × 3 = 90 TL</text>\n  <text x=\"55\" y=\"158\" font-size=\"11.5\" fill=\"#334155\">• Parçadan bütüne: Verilen sayı ÷ Kesir</text>\n  <text x=\"55\" y=\"180\" font-size=\"11\" fill=\"#475569\">Örnek: 2/5'i 60 olan sayı → (60 ÷ 2) × 5 = 150</text>\n  <text x=\"190\" y=\"212\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\">Şerit model (kesir kutuları) çizmek çözümü kolaylaştırır!</text>\n  <rect x=\"360\" y=\"55\" width=\"300\" height=\"180\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/>\n  <text x=\"510\" y=\"80\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Ondalık ve Yüzde ile Dört İşlem</text>\n  <text x=\"375\" y=\"108\" font-size=\"11.5\" fill=\"#334155\">• Toplama/Çıkarma: Virgüller alt alta gelir,</text>\n  <text x=\"385\" y=\"126\" font-size=\"11\" fill=\"#475569\">eksik basamaklara sağdan 0 eklenir.</text>\n  <text x=\"375\" y=\"152\" font-size=\"11.5\" fill=\"#334155\">• Çarpma: Virgül yokmuş gibi çarpılır, toplam</text>\n  <text x=\"385\" y=\"170\" font-size=\"11\" fill=\"#475569\">ondalık basamak sayısı kadar sola kayılır.</text>\n  <text x=\"375\" y=\"196\" font-size=\"11.5\" fill=\"#334155\">• Bölme: Bölen doğal sayı olacak şekilde</text>\n  <text x=\"385\" y=\"214\" font-size=\"11\" fill=\"#475569\">10, 100 ile genişletilir (12,6 ÷ 0,3 = 126 ÷ 3 = 42).</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Tahmin ile Sağlama",
+          "metin": "İşlemlere başlamadan önce sayıları yuvarlayarak sonucu tahmin etmek, virgül kaydırma hatalarını hemen fark etmemizi sağlar."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Kısa Yol (Bütün - Harcanan)",
+          "metin": "%30 indirim yapılan bir ürünün yeni fiyatını bulmak için önce %30'u bulup çıkarmak yerine doğrudan ürün fiyatının %70'ini (0,7 katını) hesaplayabiliriz."
+        }
+      ]
+    },
+    {
+      "baslik": "Problemi Çözme, Kontrol Etme ve Farklı Durumlara Genelleme",
+      "metin": [
+        "Çok adımlı gerçek yaşam problemlerinde önce {koyu:verilenler ve istenenler} listelenir, ardından işlem sırası planlanır. Çözüm sonunda bulunan değer problem cümlesinde yerine konularak {koyu:sağlama (kontrol)} yapılır.",
+        "Eğer seçilen strateji karmaşık işlemlere yol açıyorsa strateji değiştirilir. Örneğin `15 × 0,25` işlemini uzun uzun çarpmak yerine `0,25 = 1/4` olduğunu fark edip 15'i 4'e bölmek (3,75) çok daha hızlı bir stratejidir.",
+        "Bir problemde geliştirilen çözüm modeli (örneğin karışım oranları veya indirim-taksit hesabı) benzer yapıdaki finansal okuryazarlık ve sürdürülebilirlik (su/enerji tasarrufu) problemlerine {koyu:genellenir}."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"30\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">POLYA'NIN PROBLEM ÇÖZME ADIMLARI VE GERÇEK YAŞAM UYGULAMASI</text>\n  <rect x=\"25\" y=\"65\" width=\"150\" height=\"155\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/>\n  <text x=\"100\" y=\"92\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1d4ed8\">1. Problemi Anla</text>\n  <text x=\"100\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Verilen nicelikleri</text>\n  <text x=\"100\" y=\"136\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">(kesir, ondalık, %)</text>\n  <text x=\"100\" y=\"154\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">ve istenen hedefi</text>\n  <text x=\"100\" y=\"172\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">kendi cümlenle yaz.</text>\n  <rect x=\"192\" y=\"65\" width=\"150\" height=\"155\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/>\n  <text x=\"267\" y=\"92\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">2. Strateji Seç</text>\n  <text x=\"267\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Şekil/diyagram çiz,</text>\n  <text x=\"267\" y=\"136\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">tüm sayıları aynı</text>\n  <text x=\"267\" y=\"154\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">gösterime çevir ve</text>\n  <text x=\"267\" y=\"172\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">sonucu tahmin et.</text>\n  <rect x=\"359\" y=\"65\" width=\"150\" height=\"155\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\"/>\n  <text x=\"434\" y=\"92\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#a16207\">3. Planı Uygula</text>\n  <text x=\"434\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Belirlenen işlem</text>\n  <text x=\"434\" y=\"136\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">önceliğine göre</text>\n  <text x=\"434\" y=\"154\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">dört işlemleri adım</text>\n  <text x=\"434\" y=\"172\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">adım gerçekleştir.</text>\n  <rect x=\"526\" y=\"65\" width=\"150\" height=\"155\" rx=\"8\" fill=\"#fdf2f8\" stroke=\"#ec4899\"/>\n  <text x=\"601\" y=\"92\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#be185d\">4. Kontrol &amp; Genelle</text>\n  <text x=\"601\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Bulunan sonucu</text>\n  <text x=\"601\" y=\"136\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">tahminle kıyasla,</text>\n  <text x=\"601\" y=\"154\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">kısa yolları bul ve</text>\n  <text x=\"601\" y=\"172\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">yeni duruma genelle.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Birim Uyumu Kontrolü",
+          "metin": "Problemlerde kilogram ile gram (1 kg = 1000 g = 1,0 kg) veya lira ile kuruş (50 kr = 0,50 TL = 1/2 TL) bir arada verilmişse işlem öncesi birimler eşitlenmelidir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Genelleme Becerisi",
+          "metin": "Bir sayıyı 0,5 ile çarpmak o sayının yarısını almaktır; bir sayıyı 0,5'e bölmek ise o sayının 2 katını almaktır!"
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Harçlığı 600 TL olan Kerem, parasının %30'u ile roman, 1/4'ü ile defter almıştır. Kerem'in geriye kaç TL parası kalmıştır?",
+      "cevap": "%30 = 30/100 ve 1/4 = %25'tir. Toplam harcanan oran %30 + %25 = %55'tir. Kalan para oranı %100 - %55 = %45 olur. 600 × (45/100) = 6 × 45 = 270 TL kalmıştır."
+    },
+    {
+      "soru": "Bir zeytinyağı üreticisi 45 litre zeytinyağının 1/3'ünü sattıktan sonra, kalan yağı 0,75 litrelik şişelere tamamen dolduracaktır. Kaç adet şişe gerekir?",
+      "cevap": "Satılan miktar: 45 × (1/3) = 15 litre. Kalan yağ: 45 - 15 = 30 litre. Şişe sayısı: 30 ÷ 0,75 = 30 ÷ (3/4) = 30 × (4/3) = 40 adet şişe gerekir."
+    },
+    {
+      "soru": "Etiket fiyatı 800 TL olan bir mont sezon sonunda %25 indirime girmiştir. İndirimli fiyat üzerinden peşin ödemede 0,1 (onda bir) oranında ek indirim uygulanırsa mont kaç TL'ye alınır?",
+      "cevap": "İlk indirimli fiyat (%75'i): 800 × (3/4) = 600 TL. Ek peşin indirimi: 600 × 0,1 = 60 TL. Son ödenen tutar: 600 - 60 = 540 TL olur."
+    },
+    {
+      "soru": "Bir yürüyüş parkurunun sabah 2/5'ini, öğleden sonra ise 0,35'ini yürüyen Elif'in parkuru tamamlamak için 500 metresi kalmıştır. Parkurun tamamı kaç metredir?",
+      "cevap": "2/5 = %40 = 0,40'tır. Yürünen toplam kısım: 0,40 + 0,35 = 0,75 (yani 3/4). Kalan kısım: 1 - 3/4 = 1/4'tür. 1/4'ü 500 m ise tamamı 500 × 4 = 2000 metredir."
+    },
+    {
+      "soru": "Kilogramı 42,5 TL olan elmadan 2,4 kg ve kilogramı 35 TL olan mandalinadan 1 tam 1/2 (1,5) kg alan bir müşteri kasaya 200 TL verirse kaç TL para üstü alır?",
+      "cevap": "Elma tutarı: 42,5 × 2,4 = 102 TL. Mandalina tutarı: 35 × 1,5 = 52,5 TL. Toplam tutar: 102 + 52,5 = 154,5 TL. Para üstü: 200 - 154,5 = 45,5 TL alır."
+    },
+    {
+      "soru": "Bir su deposunun 3/8'i doludur. Depoya 70 litre daha su eklendiğinde deponun %72,5'i dolmuş oluyor. Deponun tamamı kaç litre su alır?",
+      "cevap": "3/8 = 0,375 = %37,5'tir. Eklenen 70 litrenin karşılık geldiği yüzde: %72,5 - %37,5 = %35'tir. %35'i 70 litre ise %1'i 2 litredir; tamamı (%100'ü) 200 litre su alır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir otobüs 480 km'lik yolun önce %25'ini, ardından 3/8'ini gitmiştir. Otobüsün geriye kaç kilometre yolu kalmıştır?",
+      "secenekler": [
+        "180 km",
+        "200 km",
+        "220 km",
+        "240 km"
+      ],
+      "dogru": 0,
+      "aciklama": "%25 = 1/4 = 2/8'dir. Gidilen toplam kesir: 2/8 + 3/8 = 5/8. Kalan yol: 3/8'dir. 480 × (3/8) = 60 × 3 = 180 km kalmıştır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "İçinde 27 litre süt bulunan bir güğümdeki sütün tamamı 0,45 litrelik cam şişelere doldurulacaktır. Bu iş için kaç şişe gerekir?",
+      "secenekler": [
+        "50 şişe",
+        "60 şişe",
+        "75 şişe",
+        "90 şişe"
+      ],
+      "dogru": 1,
+      "aciklama": "27 ÷ 0,45 işleminde her iki sayı 100 ile genişletilirse 2700 ÷ 45 = 60 şişe bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Etiket fiyatı 500 TL olan bir ayakkabıya önce %20 indirim yapılmış, daha sonra indirimli fiyat üzerinden 25,5 TL kargo ücreti eklenmiştir. Toplam ödeme kaç TL olur?",
+      "secenekler": [
+        "375,5 TL",
+        "405,5 TL",
+        "425,5 TL",
+        "445,5 TL"
+      ],
+      "dogru": 2,
+      "aciklama": "500 TL'nin %20 indirimli fiyatı: 500 × 0,80 = 400 TL'dir. Kargo eklenirse: 400 + 25,5 = 425,5 TL olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir top kumaşın önce 0,3'ü, sonra %45'i satıldığında geriye 15 metre kumaş kalıyor. Satılmadan önce kumaşın tamamı kaç metreydi?",
+      "secenekler": [
+        "45 metre",
+        "50 metre",
+        "55 metre",
+        "60 metre"
+      ],
+      "dogru": 3,
+      "aciklama": "0,3 = %30'dur. Satılan kısım %30 + %45 = %75'tir. Kalan %25 (yani 1/4) 15 metre ise tamamı 15 × 4 = 60 metredir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Bir sayıyı 0,25 ile çarpmak, o sayıyı 4'e bölmekle (çeyreğini bulmakla) aynı sonucu verir.",
+          "dogru": true,
+          "aciklama": "0,25 = 25/100 = 1/4 olduğu için 0,25 ile çarpmak 4'e bölmektir."
+        },
+        {
+          "metin": "Bir bütünün önce 1/5'i, sonra 0,3'ü harcanırsa geriye bütünün tam yarısı (%50'si) kalır.",
+          "dogru": true,
+          "aciklama": "1/5 = 0,2'dir; 0,2 + 0,3 = 0,5 harcanınca geriye 0,5 (%50) kalır."
+        },
+        {
+          "metin": "Pozitif bir doğal sayıyı 0,5'e böldüğümüzde elde edilen sonuç başlangıçtaki sayıdan daha küçük olur.",
+          "dogru": false,
+          "aciklama": "0,5 = 1/2'dir; bir sayıyı 1/2'ye bölmek 2 ile çarpmak demektir, sonuç büyür."
+        },
+        {
+          "metin": "Sekizde üç (3/8) kesrinin ondalık gösterimi 0,375 ve yüzde gösterimi %37,5 şeklindedir.",
+          "dogru": true,
+          "aciklama": "3/8 kesri 125 ile genişletilirse 375/1000 = 0,375 = %37,5 olur."
+        },
+        {
+          "metin": "Etiket fiyatı 200 TL olan bir ürüne %15 zam yapıldığında yeni satış fiyatı 215 TL olur.",
+          "dogru": false,
+          "aciklama": "200 TL'nin %15'i 200 × (15/100) = 30 TL'dir; zamlı fiyat 200 + 30 = 230 TL olur."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Kesir, ondalık ve yüzde işlemlerini doğru sonuçlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "120 sayısının %25'i",
+          "30"
+        ],
+        [
+          "3/5'i 45 olan sayının tamamı",
+          "75"
+        ],
+        [
+          "18 sayısının 0,5'e bölümü",
+          "36"
+        ],
+        [
+          "80 sayısının 3/8'i ile 0,25'inin toplamı",
+          "50"
+        ],
+        [
+          "150 TL'nin %20 indirimli fiyatı",
+          "120"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun sayı veya kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir problemde verilen 3/4 kesri ondalık olarak 0,75 ve yüzde olarak %___ şeklinde ifade edilir.",
+          "cevap": "75"
+        },
+        {
+          "metin": "Parçası (kesir kadarı) verilen bir çokluğun tamamını bulmak için verilen sayı kesre ___.",
+          "cevap": "bölünür"
+        },
+        {
+          "metin": "Bir sayıyı 0,125 ile çarpmak, o sayının ___ birini (1/8'ini) hesaplamak demektir.",
+          "cevap": "sekizde"
+        },
+        {
+          "metin": "Etiket fiyatı üzerinden %30 indirim yapılan bir ürün, etiket fiyatının %___ kadarına satılır.",
+          "cevap": "70"
+        },
+        {
+          "metin": "Kesir problemlerinde bütün ve parçalar arasındaki ilişkiyi görselleştirmek için şerit ___ kullanılır.",
+          "cevap": "diyagram"
+        }
+      ],
+      "fazla": [
+        "çarpılır",
+        "80"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "İçinde kesir, ondalık ve yüzde gösterimlerinin bir arada bulunduğu gerçek yaşam problemlerini çözerken hangi adımlar izlenmelidir?",
+      "ipuclari": [
+        "1. Dönüştürme: Kesir, ondalık ve yüzde verilerini işlem kolaylığına göre ortak bir gösterime çevir.",
+        "2. Modelleme ve Tahmin: Şerit diyagram/tablo çizerek verilen-istenen ilişkisini kur ve sonucu tahmin et.",
+        "3. Çözüm ve Kontrol: Dört işlemleri uygula, 'kalanın kesri' ifadelerine dikkat et ve sonucu kontrol et."
+      ],
+      "cevap": "Öncelikle problemdeki kesir, ondalık ve yüzde ifadeleri birbirine dönüştürülerek ortak bir dil oluşturulur. Şerit diyagram veya tablo ile problem modellenir, yuvarlama ile sonuç tahmin edilir. Ardından dört işlem stratejileri uygulanır ve bulunan sonucun mantıklılığı kontrol edilerek benzer problemlere genellenir."
+    }
+  ],
+  "ozet": [
+    "{koyu:Ortak Gösterime Dönüştürme:} Problemlerdeki kesir, ondalık ve yüzde verileri (örneğin 1/4 = 0,25 = %25; 2/5 = 0,4 = %40) aynı türe çevrilerek işlem yapılır.",
+    "{koyu:Görsel Temsil:} Şerit diyagram (kesir kutuları) ve tablo kullanmak, harcanan ve kalan miktarları hatasız görmeyi sağlar.",
+    "{koyu:Bütünden Parçaya / Parçadan Bütüne:} Bütünün kesir veya yüzdesini bulmak için çarpma; parçadan bütüne ulaşmak için bölme yapılır.",
+    "{koyu:Kısa Yollar:} 0,5 ile çarpmak yarısını almak, 0,25 ile çarpmak 4'e bölmek, 0,5'e bölmek ise 2 katını almaktır.",
+    "{koyu:Kontrol ve Genelleme:} Çözüm sonunda tahminle karşılaştırma yapılır ve geliştirilen strateji finansal/günlük yaşam problemlerine genellenir."
+  ]
+}

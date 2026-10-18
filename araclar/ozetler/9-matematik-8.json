@@ -1,0 +1,263 @@
+{
+  "ad": "9-matematik-8",
+  "sinif": 9,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 8,
+  "tarih": "2-6 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "NİCELİKLER VE DEĞİŞİMLER",
+  "konu": "Doğrusal Fonksiyonlar ve Nitel Özellikleri: f(x) = x Referans Fonksiyonu ve g(x) = a·f(x ± r) ± k Analizi",
+  "ciktilar": [
+    "Gerçek sayılarda tanımlı f(x) = x doğrusal referans fonksiyonundan yatay/düşey öteleme ve dikey ölçekleme ile türetilen g(x) = a·f(x ± r) ± k = ax + b fonksiyonlarını oluşturur.",
+    "Doğrusal fonksiyonların tanım ve görüntü kümesi, eğimi (değişim oranı), artanlığı-azalanlığı, sıfırı (kökü), işareti, maksimum-minimum noktaları ve bire birliğini analiz eder.",
+    "Sabit değişim oranına sahip gerçek yaşam durumlarını doğrusal fonksiyonlarla modeller; cebirsel ve grafiksel temsiller arasında geçiş yapar."
+  ],
+  "giris": "Günlük yaşamda sabit hızla ilerleyen bir aracın aldığı yol, düzenli birikim yapılan bir hesaptaki para miktarı veya sabit hızla yanan bir mumun boyu gibi pek çok durum doğrusal bir değişim gösterir. Doğrusal fonksiyonların en yalın hâli olan f(x) = x referans fonksiyonunun nitel özelliklerini ve dönüşümlerini anlamak, tüm doğrusal modelleri hem cebirsel hem de grafiksel olarak yorumlamamızı sağlar.",
+  "bolumler": [
+    {
+      "baslik": "Doğrusal Referans Fonksiyon f(x) = x ve Türetilen g(x) = a·f(x ± r) ± k Fonksiyonları",
+      "metin": [
+        "Gerçek sayılar kümesinde tanımlı {koyu:f: ℝ → ℝ, f(x) = x} fonksiyonuna {koyu:doğrusal referans fonksiyon (birim fonksiyon)} denir. Grafiği koordinat düzleminde orijinden {koyu:O(0, 0)} geçen ve I. ile III. bölgelerin açıortayı olan ({koyu:y = x}, eğimi {koyu:a = 1}) bir doğrudur. Tanım kümesi {koyu:ℝ}, görüntü kümesi {koyu:ℝ}, sıfırı (kökü) {koyu:x = 0} olup {koyu:x > 0} için pozitif, {koyu:x < 0} için negatif değer alır ve tüm gerçek sayılarda {koyu:artan ve bire bir} bir fonksiyondur.",
+        "Referans fonksiyon {koyu:f(x) = x} üzerinde yapılan cebirsel işlemlerle {koyu:a, r, k ∈ ℝ ve a ≠ 0} olmak üzere {koyu:g(x) = a · f(x ± r) ± k} biçimindeki tüm doğrusal fonksiyonlar türetilir. {koyu:f(x) = x} yerine yazıldığında bu ifade {koyu:g(x) = a(x ± r) ± k = ax + b} genel formuna dönüşür. Burada {koyu:r} parametresi grafiği yatay eksende ({koyu:f(x - r)} ise {koyu:r birim sağa}, {koyu:f(x + r)} ise {koyu:r birim sola}), {koyu:k} parametresi ise düşey eksende ({koyu:+k} ise {koyu:k birim yukarı}, {koyu:-k} ise {koyu:k birim aşağı}) öteler.",
+        "Baş katsayı olan {koyu:a (eğim / sabit değişim oranı)}, doğrunun dikliğini ve yönünü belirler. Bağımsız değişken {koyu:x} değerindeki 1 birimlik artışa karşılık bağımlı değişken {koyu:g(x)} değerindeki değişim miktarı her yerde sabittir ve {koyu:a = {kesir:g(x2) - g(x1)|x2 - x1} = {kesir:Δy|Δx}} oranına eşittir. {koyu:|a| > 1} olduğunda doğru dikleşir (y eksenine yaklaşır), {koyu:0 < |a| < 1} olduğunda yataylaşır (x eksenine yaklaşır), {koyu:a < 0} olduğunda ise grafik x eksenine göre yansıyarak yön değiştirir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">DOĞRUSAL REFERANS FONKSİYON f(x) = x VE DÖNÜŞÜMLERİ</text>\n  <rect x=\"25\" y=\"42\" width=\"310\" height=\"200\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"65\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\">REFERANS FONKSİYON: f(x) = x</text>\n  <line x1=\"60\" y1=\"145\" x2=\"295\" y2=\"145\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <line x1=\"175\" y1=\"75\" x2=\"175\" y2=\"215\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <line x1=\"105\" y1=\"215\" x2=\"245\" y2=\"75\" stroke=\"#2563eb\" stroke-width=\"3\"/>\n  <text x=\"252\" y=\"88\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1d4ed8\">f(x) = x</text>\n  <line x1=\"125\" y1=\"215\" x2=\"215\" y2=\"75\" stroke=\"#16a34a\" stroke-width=\"2.5\" stroke-dasharray=\"4,3\"/>\n  <text x=\"228\" y=\"115\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">g(x) = 2x + 1</text>\n  <text x=\"182\" y=\"158\" font-size=\"10\" fill=\"#334155\">O(0,0)</text>\n  <text x=\"180\" y=\"232\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">Tanım Kümesi: ℝ  |  Görüntü Kümesi: ℝ  |  Eğim: a = 1</text>\n  <rect x=\"350\" y=\"42\" width=\"325\" height=\"200\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"512\" y=\"65\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#92400e\">TÜRETİLEN FONKSİYON: g(x) = a·f(x ± r) ± k</text>\n  <text x=\"366\" y=\"92\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#78350f\">• f(x) = x iken g(x) = a(x - r) + k = ax + b</text>\n  <text x=\"366\" y=\"115\" font-size=\"11.5\" fill=\"#92400e\">• Yatay Öteleme (r): f(x - r) → r birim sağa;</text>\n  <text x=\"376\" y=\"131\" font-size=\"11\" fill=\"#92400e\">f(x + r) → r birim sola ötelenir.</text>\n  <text x=\"366\" y=\"153\" font-size=\"11.5\" fill=\"#92400e\">• Düşey Öteleme (k): +k → k birim yukarı;</text>\n  <text x=\"376\" y=\"169\" font-size=\"11\" fill=\"#92400e\">-k → k birim aşağı ötelenir.</text>\n  <text x=\"366\" y=\"191\" font-size=\"11.5\" fill=\"#92400e\">• Katsayı / Eğim (a): Diklik ve artan-azalanlığı</text>\n  <text x=\"376\" y=\"207\" font-size=\"11\" fill=\"#92400e\">belirler; a &lt; 0 ise x eksenine göre yansıma olur.</text>\n  <text x=\"512\" y=\"229\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">Değişim Oranı (Eğim): m = a = Δy / Δx = [g(x₂)-g(x₁)] / (x₂-x₁)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Parantez içindeki yatay öteleme işlemi işaretin tersi yönünde etki eder: f(x - 3) grafiği 3 birim SAĞA ötelerken, f(x + 3) grafiği 3 birim SOLA öteler."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "f(x) = x referans fonksiyonundan türetilen g(x) = 3·f(x - 2) + 5 fonksiyonunun kuralını bulmak için f(x - 2) yerine (x - 2) yazılır: g(x) = 3(x - 2) + 5 = 3x - 6 + 5 = 3x - 1."
+        }
+      ]
+    },
+    {
+      "baslik": "Nitel Özellikler: Eğim, Artanlık-Azalanlık, Sıfır ve İşaret İncelemesi",
+      "metin": [
+        "Bir {koyu:g(x) = ax + b} ({koyu:a ≠ 0}) doğrusal fonksiyonunun artan veya azalan olması doğrudan {koyu:a} katsayısının (eğimin) işaretine bağlıdır. Eğer {koyu:a > 0} ise {koyu:x} değerleri arttıkça {koyu:g(x)} değerleri de artar ({koyu:x₁ < x₂ iken g(x₁) < g(x₂)}); bu durumda fonksiyon {koyu:artandır} ve grafiği soldan sağa doğru yükselir. Eğer {koyu:a < 0} ise {koyu:x} değerleri arttıkça {koyu:g(x)} değerleri azalır ({koyu:x₁ < x₂ iken g(x₁) > g(x₂)}); bu durumda fonksiyon {koyu:azalandır} ve grafiği soldan sağa doğru alçalır.",
+        "Fonksiyonun değerini sıfır yapan {koyu:x} değerine ({koyu:g(x) = 0} denkleminin çözümüne) {koyu:fonksiyonun sıfırı (kökü)} denir ve grafikte doğrunun {koyu:x eksenini kestiği noktanın apsisini} gösterir: {koyu:ax + b = 0 ⇒ x₀ = -{kesir:b|a}}. Fonksiyonun {koyu:y eksenini kestiği nokta} ise {koyu:x = 0} verilerek bulunur: {koyu:g(0) = b}, yani {koyu:(0, b)} noktasıdır.",
+        "Fonksiyonun {koyu:işareti}, grafiğin x ekseninin üstünde ({koyu:g(x) > 0, pozitif}) veya altında ({koyu:g(x) < 0, negatif}) kaldığı aralıkları ifade eder. Fonksiyonun sıfırı olan {koyu:x₀ = -{kesir:b|a}} noktası sınır değerdir: {koyu:a > 0} (artan) ise {koyu:x > -{kesir:b|a}} için {koyu:g(x) > 0} (pozitif) ve {koyu:x < -{kesir:b|a}} için {koyu:g(x) < 0} (negatif) olur. {koyu:a < 0} (azalan) olduğunda ise bu işaret aralıkları yer değiştirir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">NİTEL ÖZELLİKLER: ARTANLIK-AZALANLIK, SIFIR (KÖK) VE İŞARET</text>\n  <rect x=\"25\" y=\"42\" width=\"315\" height=\"200\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"65\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#166534\">EĞİM (a) VE ARTANLIK - AZALANLIK</text>\n  <rect x=\"40\" y=\"78\" width=\"285\" height=\"65\" rx=\"6\" fill=\"#ffffff\" stroke=\"#86efac\"/>\n  <text x=\"50\" y=\"98\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">• a &gt; 0 ise ARTAN Fonksiyon:</text>\n  <text x=\"50\" y=\"116\" font-size=\"11\" fill=\"#14532d\">x₁ &lt; x₂ iken g(x₁) &lt; g(x₂) olur. Grafik soldan</text>\n  <text x=\"50\" y=\"132\" font-size=\"11\" fill=\"#14532d\">sağa yukarı yükselir (Örn: g(x) = 3x - 6).</text>\n  <rect x=\"40\" y=\"152\" width=\"285\" height=\"72\" rx=\"6\" fill=\"#ffffff\" stroke=\"#86efac\"/>\n  <text x=\"50\" y=\"172\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">• a &lt; 0 ise AZALAN Fonksiyon:</text>\n  <text x=\"50\" y=\"190\" font-size=\"11\" fill=\"#14532d\">x₁ &lt; x₂ iken g(x₁) &gt; g(x₂) olur. Grafik soldan</text>\n  <text x=\"50\" y=\"206\" font-size=\"11\" fill=\"#14532d\">sağa aşağı iner (Örn: g(x) = -2x + 8).</text>\n  <rect x=\"355\" y=\"42\" width=\"320\" height=\"200\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"515\" y=\"65\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#6b21a8\">FONKSİYONUN SIFIRI (KÖKÜ) VE İŞARETİ</text>\n  <text x=\"370\" y=\"92\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">• Fonksiyonun Sıfırı (x eksenini kestiği nokta):</text>\n  <text x=\"378\" y=\"110\" font-size=\"11.5\" fill=\"#6b21a8\">g(x) = ax + b = 0  ⇒  x₀ = -b / a</text>\n  <text x=\"370\" y=\"134\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">• y Eksenini Kestiği Nokta (x = 0 için):</text>\n  <text x=\"378\" y=\"152\" font-size=\"11.5\" fill=\"#6b21a8\">g(0) = b  ⇒  (0, b) noktası</text>\n  <rect x=\"370\" y=\"164\" width=\"290\" height=\"64\" rx=\"6\" fill=\"#f3e8ff\" stroke=\"#a855f7\"/>\n  <text x=\"515\" y=\"183\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#6b21a8\">İşaret İncelemesi (a &gt; 0 ise):</text>\n  <text x=\"515\" y=\"201\" text-anchor=\"middle\" font-size=\"11\" fill=\"#581c87\">x &gt; -b/a aralığında g(x) &gt; 0 (Pozitif, x ekseni üstü)</text>\n  <text x=\"515\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" fill=\"#581c87\">x &lt; -b/a aralığında g(x) &lt; 0 (Negatif, x ekseni altı)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Bir fonksiyonun sıfırı (x eksenini kestiği nokta) bulunurken y = g(x) = 0 eşitliği çözülür; y eksenini kestiği nokta bulunurken ise x = 0 yazılır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Ekseni kestiği noktaları (x₀, 0) ve (0, b) olarak bilinen bir doğrunun grafiği, bu iki noktanın işaretlenip cetvelle birleştirilmesiyle saniyeler içinde çizilebilir."
+        }
+      ]
+    },
+    {
+      "baslik": "Bire Birlik, Maksimum-Minimum Değerler ve Gerçek Yaşam Modellemesi",
+      "metin": [
+        "Tanım kümesi ve değer kümesi tüm gerçek sayılar olan {koyu:g: ℝ → ℝ, g(x) = ax + b (a ≠ 0)} doğrusal fonksiyonunda, tanım kümesindeki her farklı elemanın görüntüsü de birbirinden farklı olduğundan ({koyu:x₁ ≠ x₂ iken ax₁ + b ≠ ax₂ + b}) fonksiyon {koyu:bire birdir}. Aynı zamanda görüntü kümesi tüm gerçek sayılar ({koyu:G(g) = ℝ}) olduğu için uçları sonsuza uzanan bu doğrusal fonksiyonun ℝ üzerinde {koyu:maksimum (en büyük) veya minimum (en küçük) değeri yoktur}.",
+        "Ancak doğrusal fonksiyon {koyu:sınırlı ve kapalı bir gerçek sayı aralığında} ({koyu:g: [m, n] → ℝ}) tanımlanırsa, fonksiyon sürekli olarak artan veya azalan olduğu için maksimum ve minimum değerlerini {koyu:aralığın uç noktalarında} alır. {koyu:a > 0 (artan)} ise minimum değer {koyu:g(m)}, maksimum değer {koyu:g(n)} olur ve görüntü kümesi {koyu:[g(m), g(n)]} aralığıdır. {koyu:a < 0 (azalan)} ise maksimum değer {koyu:g(m)}, minimum değer {koyu:g(n)} olur ve görüntü kümesi {koyu:[g(n), g(m)]} aralığıdır.",
+        "Gerçek yaşam problemlerinde başlangıç miktarı {koyu:b (g(0) = b)} ve birim zamandaki sabit değişim hızı {koyu:a} (artış ise {koyu:+a}, azalış ise {koyu:-a}) olarak modellenir: {koyu:g(x) = ax + b}. Örneğin içinde 80 litre su bulunan bir depoya dakikada 15 litre su akıtılıyorsa {koyu:x.} dakikadaki su miktarı {koyu:g(x) = 15x + 80} fonksiyonuyla; boyu 24 cm olan ve saatte 3 cm eriyen bir mumun kalan boyu ise {koyu:h(x) = 24 - 3x} fonksiyonuyla modellenir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">TANIM ARALIĞI, MAKSİMUM-MİNİMUM VE BİRE BİR-ÖRTENLİK</text>\n  <rect x=\"25\" y=\"42\" width=\"315\" height=\"200\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"65\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#9a3412\">BİRE BİRLİK VE MAKSİMUM-MİNİMUM</text>\n  <text x=\"40\" y=\"92\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#7c2d12\">• Gerçek Sayılarda (g: ℝ → ℝ, a ≠ 0):</text>\n  <text x=\"48\" y=\"110\" font-size=\"11\" fill=\"#9a3412\">- Her farklı x'in görüntüsü farklıdır → BİRE BİR.</text>\n  <text x=\"48\" y=\"126\" font-size=\"11\" fill=\"#9a3412\">- Görüntü kümesi tüm ℝ'dir → ÖRTEN.</text>\n  <text x=\"48\" y=\"142\" font-size=\"11\" font-weight=\"bold\" fill=\"#c2410c\">- Tanım kümesi ℝ iken max ve min değeri YOKTUR.</text>\n  <text x=\"40\" y=\"168\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#7c2d12\">• Kapalı Aralıkta Tanımlı İse (g: [m, n] → ℝ):</text>\n  <text x=\"48\" y=\"186\" font-size=\"11\" fill=\"#9a3412\">- a &gt; 0 (artan) ise: Min = g(m),  Max = g(n)</text>\n  <text x=\"48\" y=\"204\" font-size=\"11\" fill=\"#9a3412\">- a &lt; 0 (azalan) ise: Max = g(m),  Min = g(n)</text>\n  <text x=\"48\" y=\"222\" font-size=\"10.5\" fill=\"#7c2d12\">Görüntü kümesi de kapalı bir aralık olur.</text>\n  <rect x=\"355\" y=\"42\" width=\"320\" height=\"200\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0891b2\" stroke-width=\"2\"/>\n  <text x=\"515\" y=\"65\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#155e75\">GERÇEK YAŞAM MODELLEMESİ</text>\n  <rect x=\"372\" y=\"80\" width=\"286\" height=\"58\" rx=\"6\" fill=\"#ffffff\" stroke=\"#67e8f9\"/>\n  <text x=\"515\" y=\"100\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0e7490\">Genel Model:  g(x) = a·x + b</text>\n  <text x=\"515\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" fill=\"#164e63\">b: Başlangıç değeri (x = 0)  |  a: Birim değişim oranı</text>\n  <text x=\"372\" y=\"158\" font-size=\"11\" fill=\"#155e75\">• Örnek 1 (Kumbara): Başlangıçta 120 TL olan ve her</text>\n  <text x=\"380\" y=\"174\" font-size=\"11\" font-weight=\"bold\" fill=\"#0e7490\">gün 30 TL eklenen kumbara → g(x) = 30x + 120</text>\n  <text x=\"372\" y=\"198\" font-size=\"11\" fill=\"#155e75\">• Örnek 2 (Su Deposu): 500 L su bulunan ve dakikada</text>\n  <text x=\"380\" y=\"214\" font-size=\"11\" font-weight=\"bold\" fill=\"#0e7490\">25 L boşalan depo → g(x) = 500 - 25x (Sıfırı: x = 20 dk)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Gerçek yaşam modellerinde (zaman, uzunluk, ağırlık, ürün adedi gibi niceliklerde) tanım kümesi tüm gerçek sayılar (ℝ) yerine genellikle negatif olmayan gerçek sayılar [0, ∞) veya problem bağlamına uygun kapalı bir aralık [0, T] olarak kısıtlanır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Azalan bir gerçek yaşam modelinde (örneğin h(x) = 24 - 3x mum probleminde) fonksiyonun sıfırı (h(x) = 0 ⇒ x = 8 saat), mumun tamamen eriyip bittiği süreyi verir."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Gerçek sayılarda tanımlı f(x) = x referans fonksiyonunun grafiği 3 birim sağa ötelendikten sonra dikey doğrultuda 2 katına çıkarılıp 1 birim yukarı ötelenirse elde edilen g(x) fonksiyonunun cebirsel kuralı ve sıfırı nedir?",
+      "cevap": "Dönüşüm adımları uygulandığında g(x) = 2 · f(x - 3) + 1 elde edilir. f(x - 3) = x - 3 olduğundan g(x) = 2(x - 3) + 1 = 2x - 6 + 1 = 2x - 5 bulunur. Fonksiyonun sıfırı için 2x - 5 = 0 eşitliğinden x = 5/2 elde edilir."
+    },
+    {
+      "soru": "Gerçek sayılarda tanımlı g(x) = -3x + 12 doğrusal fonksiyonunun eğimini, artan/azalanlığını, eksenleri kestiği noktaları ve pozitif-negatif olduğu aralıkları belirleyiniz.",
+      "cevap": "Fonksiyonun eğimi a = -3'tür; a < 0 olduğu için fonksiyon azalandır. x = 0 için y eksenini (0, 12) noktasında; g(x) = 0 için -3x + 12 = 0 ⇒ x = 4 olduğundan x eksenini (4, 0) noktasında keser (sıfırı x = 4'tür). Azalan olduğu için (-∞, 4) aralığında pozitif (g(x) > 0), (4, ∞) aralığında ise negatif (g(x) < 0) değer alır."
+    },
+    {
+      "soru": "Tanım kümesi [-2, 5] kapalı aralığı olan g: [-2, 5] → ℝ, g(x) = 4x - 3 fonksiyonunun alabileceği en küçük (minimum) ve en büyük (maksimum) değerleri bularak görüntü kümesini yazınız.",
+      "cevap": "Fonksiyonun baş katsayısı a = 4 > 0 olduğundan g(x) artan bir fonksiyondur. Bu nedenle en küçük değerini sol uç noktada: g(-2) = 4(-2) - 3 = -11; en büyük değerini ise sağ uç noktada: g(5) = 4(5) - 3 = 17 olarak alır. Görüntü kümesi [-11, 17] kapalı aralığıdır."
+    },
+    {
+      "soru": "Doğrusal bir g(x) fonksiyonunda g(1) = 7 ve g(4) = 19 olduğuna göre bu fonksiyonun değişim oranını (eğimini) ve g(x) kuralını bulunuz.",
+      "cevap": "Sabit değişim oranı (eğim) a = [g(4) - g(1)] / (4 - 1) = (19 - 7) / 3 = 12 / 3 = 4'tür. g(x) = 4x + b denkleminde g(1) = 7 yazılırsa 4(1) + b = 7 ⇒ b = 3 olur. Dolayısıyla fonksiyonun kuralı g(x) = 4x + 3'tür."
+    },
+    {
+      "soru": "f(x) = x doğrusal referans fonksiyonu kullanılarak tanımlanan h(x) = (2m - 6)x + 9 fonksiyonu gerçek sayılarda azalan bir doğrusal fonksiyon olduğuna göre m'nin alabileceği en büyük tam sayı değeri kaçtır?",
+      "cevap": "Doğrusal fonksiyonun azalan olması için x'in katsayısı (eğimi) sıfırdan küçük olmalıdır: 2m - 6 < 0 ⇒ 2m < 6 ⇒ m < 3 bulunur. Buna göre m'nin alabileceği en büyük tam sayı değeri 2'dir."
+    },
+    {
+      "soru": "Tam dolu olduğunda 60 litre yakıt alan bir otomobilin deposu, sabit hızla gidilen her 100 km yolda 6 litre yakıt tüketmektedir. Kalan yakıt miktarını gidilen yola (x yüz km) bağlı olarak modelleyiniz ve yakıtın kaç km sonra biteceğini bulunuz.",
+      "cevap": "Yüz kilometrelik birim yol x ile gösterildiğinde kalan yakıt fonksiyonu g(x) = 60 - 6x (veya km cinsinden g(s) = 60 - 0,06s) olur. Yakıtın bitmesi fonksiyonun sıfırı demektir: 60 - 6x = 0 ⇒ x = 10 yüz km, yani 1000 km sonra yakıt tamamen biter."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "soru": "Gerçek sayılarda tanımlı f(x) = x doğrusal referans fonksiyonundan türetilen g(x) = -2·f(x + 3) + 4 fonksiyonunun x eksenini kestiği noktanın apsisi (fonksiyonun sıfırı) kaçtır?",
+      "secenekler": [
+        "-2",
+        "-1",
+        "1",
+        "2",
+        "5"
+      ],
+      "dogru": 1,
+      "aciklama": "f(x) = x olduğundan f(x + 3) = x + 3 olur. Yerine yazıldığında g(x) = -2(x + 3) + 4 = -2x - 6 + 4 = -2x - 2 elde edilir. Sıfırı için -2x - 2 = 0 ⇒ x = -1 bulunur.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Tanım kümesi [-3, 4] kapalı aralığı olan g: [-3, 4] → ℝ, g(x) = -3x + 5 doğrusal fonksiyonunun görüntü kümesi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "[-4, 14]",
+        "[-7, 14]",
+        "[-7, 12]",
+        "[-4, 11]",
+        "[5, 14]"
+      ],
+      "dogru": 1,
+      "aciklama": "g(x) = -3x + 5 fonksiyonu a = -3 < 0 olduğundan azalandır. Uç noktalardaki değerleri g(-3) = -3(-3) + 5 = 14 (maksimum) ve g(4) = -3(4) + 5 = -7 (minimum) olup görüntü kümesi [-7, 14] kapalı aralığıdır.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Gerçek sayılar kümesinde tanımlı g(x) = 3x - 12 doğrusal fonksiyonunun nitel özellikleri ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+      "secenekler": [
+        "Baş katsayısı pozitif (a = 3 > 0) olduğu için artan bir fonksiyondur.",
+        "Grafiği y eksenini (0, -12) noktasında kesmektedir.",
+        "Fonksiyonun sıfırı (kökü) x = 4 gerçek sayısıdır.",
+        "(-∞, 4) açık aralığındaki tüm x değerleri için g(x) > 0 (pozitif) değer alır.",
+        "Tanım kümesindeki her farklı elemanın görüntüsü farklı olduğundan bire birdir."
+      ],
+      "dogru": 3,
+      "aciklama": "g(x) = 3x - 12 fonksiyonunun sıfırı x = 4'tür. Fonksiyon artan olduğu için x < 4 yani (-∞, 4) aralığında negatif (g(x) < 0), (4, ∞) aralığında ise pozitif (g(x) > 0) değer alır.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Dikildiğinde boyu 40 cm olan bir fidan her ay düzenli olarak 6 cm uzamaktadır. Fidanın dikildikten x ay sonraki boyunu (cm) veren doğrusal fonksiyon g(x) olduğuna göre, fidanın boyu kaçıncı ayın sonunda 112 cm olur?",
+      "secenekler": [
+        "12",
+        "10",
+        "11",
+        "14",
+        "15"
+      ],
+      "dogru": 0,
+      "aciklama": "Başlangıç boyu 40 cm ve aylık değişim oranı 6 cm olduğundan model g(x) = 6x + 40 olur. 6x + 40 = 112 ⇒ 6x = 72 ⇒ x = 12. ayın sonunda 112 cm olur.",
+      "tur": "coktan"
+    },
+    {
+      "ifadeler": [
+        {
+          "metin": "Gerçek sayılarda tanımlı f(x) = x doğrusal referans fonksiyonunun grafiği orijinden geçer ve eğimi 1'dir.",
+          "dogru": true,
+          "aciklama": "f(x) = x birim fonksiyonunun grafiği y = x doğrusudur; (0,0) noktasından geçer ve eğimi a = 1'dir."
+        },
+        {
+          "metin": "Bir g(x) = ax + b doğrusal fonksiyonunda a < 0 ise x değerleri arttıkça g(x) değerleri de artar.",
+          "dogru": false,
+          "aciklama": "a < 0 olduğunda fonksiyon azalandır; yani x değerleri arttıkça g(x) görüntü değerleri azalır."
+        },
+        {
+          "metin": "Tanım kümesi tüm gerçek sayılar (ℝ) olan ve eğimi sıfırdan farklı bir doğrusal fonksiyonun maksimum veya minimum değeri yoktur.",
+          "dogru": true,
+          "aciklama": "Tanım kümesi ℝ iken görüntü kümesi de (-∞, ∞) olduğundan en büyük veya en küçük değer bulunmaz."
+        },
+        {
+          "metin": "f(x) = x fonksiyonunun grafiği 4 birim sola ötelendiğinde elde edilen fonksiyon g(x) = x - 4 olur.",
+          "dogru": false,
+          "aciklama": "Yatay eksende 4 birim sola öteleme f(x + 4) = x + 4 fonksiyonunu verir; x - 4 ise 4 birim sağa ötelemedir."
+        },
+        {
+          "metin": "Doğrusal fonksiyonlarda bağımsız değişkendeki değişim miktarına karşılık bağımlı değişkendeki değişim oranı her aralıkta sabittir.",
+          "dogru": true,
+          "aciklama": "Doğrusal fonksiyonların karakteristik özelliği değişim oranının (eğimin: Δy/Δx = a) sabit olmasıdır."
+        }
+      ],
+      "tur": "dy"
+    },
+    {
+      "ciftler": [
+        [
+          "Referans Fonksiyon f(x) = x",
+          "Orijinden geçen, eğimi 1 olan ve diğer doğrusal fonksiyonların türetildiği temel fonksiyon"
+        ],
+        [
+          "Fonksiyonun Sıfırı (-b/a)",
+          "g(x) = ax + b fonksiyonunun değerini sıfır yapan ve grafiğin x eksenini kestiği apsis"
+        ],
+        [
+          "Sabit Değişim Oranı (a)",
+          "Bağımlı değişkendeki değişimin bağımsız değişkendeki değişime oranı olan eğim"
+        ],
+        [
+          "Artan Doğrusal Fonksiyon",
+          "Eğimi pozitif (a > 0) olan ve x büyüdükçe g(x) değerleri de büyüyen fonksiyon"
+        ],
+        [
+          "Düşey Öteleme (k)",
+          "Fonksiyon grafiğini y ekseni boyunca yukarı (+k) veya aşağı (-k) taşıyan parametre"
+        ]
+      ],
+      "tur": "eslestir"
+    },
+    {
+      "cumleler": [
+        {
+          "metin": "Gerçek sayılarda tanımlı g(x) = ax + b (a ≠ 0) doğrusal fonksiyonunda x = 0 için elde edilen b değerine grafiğin ___ eksenini kestiği nokta denir.",
+          "cevap": "düşey"
+        },
+        {
+          "metin": "Bir doğrusal fonksiyonun grafiği x ekseninin üstünde kaldığı aralıklarda ___ değer alır.",
+          "cevap": "pozitif"
+        },
+        {
+          "metin": "Tanım kümesindeki her farklı elemanın görüntüsü birbirinden farklı olan fonksiyonlara ___ fonksiyon denir.",
+          "cevap": "bire bir"
+        },
+        {
+          "metin": "Kapalı bir [m, n] aralığında tanımlı doğrusal fonksiyon, maksimum ve minimum değerlerini aralığın ___ noktalarında alır.",
+          "cevap": "uç"
+        },
+        {
+          "metin": "g(x) = -5x + 20 doğrusal fonksiyonunun sıfırı (kökü) x = ___ gerçek sayısıdır.",
+          "cevap": "dört"
+        }
+      ],
+      "fazla": [
+        "yatay",
+        "negatif"
+      ],
+      "tur": "bosluk"
+    },
+    {
+      "soru": "f(x) = x doğrusal referans fonksiyonundan türetilen g(x) = -2·f(x - 1) + 6 fonksiyonunun cebirsel kuralını, eksenleri kestiği noktaları ve işaret tablosu/aralıklarını üç adımda bulunuz.",
+      "ipuclari": [
+        "Birinci adımda f(x - 1) = x - 1 eşitliğini kullanarak g(x) fonksiyonunu ax + b biçiminde yazınız ve artan/azalanlığını belirtiniz.",
+        "İkinci adımda x = 0 vererek y eksenini kestiği noktayı ve g(x) = 0 denklemini çözerek fonksiyonun sıfırını (x eksenini kestiği noktayı) bulunuz.",
+        "Üçüncü adımda bulduğunuz sıfır noktasına ve eğimin işaretine göre g(x)'in pozitif ve negatif olduğu aralıkları yazınız."
+      ],
+      "cevap": "Birinci adımda f(x - 1) = x - 1 yerine yazılırsa g(x) = -2(x - 1) + 6 = -2x + 2 + 6 = -2x + 8 kuralı elde edilir; eğimi a = -2 < 0 olduğu için azalan bir fonksiyondur. İkinci adımda x = 0 için g(0) = 8 olduğundan y eksenini (0, 8) noktasında keser; g(x) = 0 için -2x + 8 = 0 ⇒ x = 4 olduğundan fonksiyonun sıfırı x = 4'tür ve x eksenini (4, 0) noktasında keser. Üçüncü adımda fonksiyon azalan olduğu için x < 4 yani (-∞, 4) aralığında pozitif (g(x) > 0), x > 4 yani (4, ∞) aralığında ise negatif (g(x) < 0) değer alır.",
+      "tur": "ogretici"
+    }
+  ],
+  "ozet": [
+    "Gerçek sayılarda tanımlı f(x) = x doğrusal referans fonksiyonu orijinden geçer, eğimi 1'dir, tanım ve görüntü kümesi ℝ olup bire bir ve artandır.",
+    "f(x) = x fonksiyonundan yatay öteleme (r), düşey öteleme (k) ve dikey ölçekleme/yansıma (a) ile g(x) = a·f(x ± r) ± k = ax + b doğrusal fonksiyonları türetilir.",
+    "g(x) = ax + b fonksiyonunda a sabit değişim oranıdır (eğim); a > 0 ise fonksiyon artan, a < 0 ise fonksiyon azalandır.",
+    "Fonksiyonun sıfırı (x eksenini kestiği nokta) g(x) = 0 eşitliğinden x₀ = -b/a olarak, y eksenini kestiği nokta ise g(0) = b olarak bulunur.",
+    "Tanım kümesi ℝ iken doğrusal fonksiyonun maksimum/minimum noktası yoktur; ancak kapalı bir [m, n] aralığında tanımlandığında maksimum ve minimum değerlerini uç noktalarda alır."
+  ]
+}

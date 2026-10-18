@@ -1,0 +1,265 @@
+{
+  "ad": "5-matematik-8",
+  "sinif": 5,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 8,
+  "tarih": "2-6 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "GEOMETRİK ŞEKİLLER",
+  "konu": "Kesişen Çemberler Yardımıyla Eşkenar ve İkizkenar Üçgen İnşası",
+  "ciktilar": [
+    "Düzlemde iki noktada kesişen çember çiftinin merkezleri ve kesişim noktaları arasındaki uzaklık ilişkilerini analiz eder.",
+    "Pergel ve cetvel kullanarak eş yarıçaplı kesişen çemberlerle eşkenar üçgen inşa eder.",
+    "Pergel açıklığını taban uzunluğundan farklı ayarlayarak kesişen çemberler yardımıyla ikizkenar üçgen modelleri oluşturur."
+  ],
+  "giris": "Geometri dünyasında cetvel sadece düz çizgi çizmek için kullanılırken, pergel kusursuz uzunlukları taşımamızı ve çemberler çizmemizi sağlar. Düzlemde çizilen iki çemberin birbirine göre konumları ve kesiştikleri noktalar, üçgenlerin en temel geometrik inşalarının temelini oluşturur. Bu haftaki dersimizde kesişen çember çiftinin merkezleri ve kesişim noktalarıyla eşkenar ve ikizkenar üçgenleri adım adım inşa etmeyi öğreniyoruz.",
+  "bolumler": [
+    {
+      "baslik": "Kesişen İki Çember ile Eşkenar Üçgen İnşası",
+      "metin": [
+        "Cetvelle düzlemde uzunluğu belirlenmiş bir {parca:AB} doğru parçası çizilir.",
+        "Pergelin sivri ucu A noktasına konur ve kalem ucu B noktasına gelecek şekilde pergel {uzunluk:AB} kadar (r yarıçapı) açılır. A merkezli bir çember yayı çizilir.",
+        "Pergelin açıklığı {koyu:kesinlikle bozulmadan} sivri uç B noktasına konulur ve ilk yayı kesen B merkezli ikinci bir yay çizilir. Bu iki yayın kesiştiği nokta C noktasıdır.",
+        "A noktası çemberin merkezi, C noktası çember üzerinde olduğundan {uzunluk:AC} = r olur. B noktası merkez, C noktası çember üzerinde olduğundan {uzunluk:BC} = r olur. Taban da {uzunluk:AB} = r olduğundan {koyu:{uzunluk:AB} = {uzunluk:AC} = {uzunluk:BC}} eşitliği sağlanır ve {koyu:ABC eşkenar üçgeni} inşa edilmiş olur."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"30\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">KESİŞEN İKİ ÇEMBER İLE EŞKENAR ÜÇGEN İNŞASI</text>\n  <!-- Çember A -->\n  <circle cx=\"280\" cy=\"140\" r=\"80\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <circle cx=\"280\" cy=\"140\" r=\"4\" fill=\"#1d4ed8\"/>\n  <text x=\"265\" y=\"145\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">A</text>\n  <!-- Çember B -->\n  <circle cx=\"360\" cy=\"140\" r=\"80\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <circle cx=\"360\" cy=\"140\" r=\"4\" fill=\"#b91c1c\"/>\n  <text x=\"375\" y=\"145\" font-size=\"13\" font-weight=\"bold\" fill=\"#b91c1c\">B</text>\n  <!-- Kesişim C -->\n  <circle cx=\"320\" cy=\"71\" r=\"5\" fill=\"#15803d\"/>\n  <text x=\"320\" y=\"60\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">C</text>\n  <!-- Üçgen Çizgileri -->\n  <line x1=\"280\" y1=\"140\" x2=\"360\" y2=\"140\" stroke=\"#0f172a\" stroke-width=\"2.5\"/>\n  <line x1=\"280\" y1=\"140\" x2=\"320\" y2=\"71\" stroke=\"#0f172a\" stroke-width=\"2.5\"/>\n  <line x1=\"360\" y1=\"140\" x2=\"320\" y2=\"71\" stroke=\"#0f172a\" stroke-width=\"2.5\"/>\n  <!-- Sağ Açıklama -->\n  <rect x=\"480\" y=\"55\" width=\"200\" height=\"180\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/>\n  <text x=\"580\" y=\"80\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">İnşa Prensibi</text>\n  <text x=\"495\" y=\"105\" font-size=\"11\" fill=\"#334155\">• A ve B çember merkezidir.</text>\n  <text x=\"495\" y=\"125\" font-size=\"11\" fill=\"#334155\">• Yarıçaplar r = |AB| eşittir.</text>\n  <text x=\"495\" y=\"145\" font-size=\"11\" fill=\"#334155\">• |AC| = r ve |BC| = r olur.</text>\n  <text x=\"495\" y=\"165\" font-size=\"11\" font-weight=\"bold\" fill=\"#16a34a\">• |AB| = |AC| = |BC| = r</text>\n  <text x=\"495\" y=\"190\" font-size=\"11\" fill=\"#1e3a8a\">ABC üçgeni bir</text>\n  <text x=\"495\" y=\"210\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">EŞKENAR ÜÇGENDİR!</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Yarıçapın Korunumu",
+          "metin": "Eşkenar üçgen inşasında pergel açıklığının iki yay çizimi arasında hiç değiştirilmemesi gerekir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Eşit Açı Özelliği",
+          "metin": "Eşkenar üçgenin bütün kenar uzunlukları eşit olduğu gibi bütün iç açıları da daima 60°'dir."
+        }
+      ]
+    },
+    {
+      "baslik": "Kesişen Çemberler ile İkizkenar Üçgen İnşası",
+      "metin": [
+        "Cetvelle taban olarak kullanılacak bir {parca:AB} doğru parçası (örneğin 6 cm) çizilir.",
+        "Pergel, {uzunluk:AB} uzunluğunun yarısından büyük ve bu uzunluktan farklı olacak şekilde (örneğin R = 8 cm) açılır.",
+        "A merkezli R yarıçaplı bir yay ve açıklık bozulmadan B merkezli R yarıçaplı bir yay çizilir. Yayların kesiştiği tepe noktasına C adı verilir.",
+        "Burada {koyu:{uzunluk:AC} = R} ve {koyu:{uzunluk:BC} = R} olup birbirine eşittir; taban {uzunluk:AB} = 6 cm ise yan kenarlardan farklıdır. Böylece iki kenarı eşit olan bir {koyu:ikizkenar üçgen} elde edilir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"30\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">İKİ NOKTADA KESİŞEN ÇEMBERLERLE İKİZKENAR ÜÇGEN İNŞASI</text>\n  <!-- Çember 1 -->\n  <circle cx=\"270\" cy=\"140\" r=\"95\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/>\n  <circle cx=\"270\" cy=\"140\" r=\"4\" fill=\"#1d4ed8\"/>\n  <text x=\"250\" y=\"145\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">A</text>\n  <!-- Çember 2 -->\n  <circle cx=\"370\" cy=\"140\" r=\"95\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/>\n  <circle cx=\"370\" cy=\"140\" r=\"4\" fill=\"#1d4ed8\"/>\n  <text x=\"385\" y=\"145\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">B</text>\n  <!-- Kesişim Noktaları C ve D -->\n  <circle cx=\"320\" cy=\"59\" r=\"4\" fill=\"#dc2626\"/>\n  <text x=\"320\" y=\"50\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#dc2626\">C</text>\n  <circle cx=\"320\" cy=\"221\" r=\"4\" fill=\"#dc2626\"/>\n  <text x=\"320\" y=\"240\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#dc2626\">D</text>\n  <!-- Çizgiler -->\n  <line x1=\"270\" y1=\"140\" x2=\"370\" y2=\"140\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <line x1=\"270\" y1=\"140\" x2=\"320\" y2=\"59\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <line x1=\"370\" y1=\"140\" x2=\"320\" y2=\"59\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <!-- Sağ Açıklama -->\n  <rect x=\"490\" y=\"55\" width=\"190\" height=\"180\" rx=\"8\" fill=\"#fefce8\" stroke=\"#ca8a04\"/>\n  <text x=\"585\" y=\"80\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#854d0e\">İkizkenar İnşası</text>\n  <text x=\"505\" y=\"105\" font-size=\"11\" fill=\"#334155\">• Taban: |AB| mesafesi</text>\n  <text x=\"505\" y=\"125\" font-size=\"11\" fill=\"#334155\">• Pergel R &gt; |AB|/2 açılır.</text>\n  <text x=\"505\" y=\"145\" font-size=\"11\" fill=\"#334155\">• Yan kenarlar: |AC|=|BC|=R</text>\n  <text x=\"505\" y=\"170\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Eğer R ≠ |AB| ise</text>\n  <text x=\"505\" y=\"195\" font-size=\"12\" font-weight=\"bold\" fill=\"#a16207\">ABC üçgeni bir</text>\n  <text x=\"505\" y=\"215\" font-size=\"12\" font-weight=\"bold\" fill=\"#713f12\">İKİZKENAR ÜÇGENDİR!</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Kesişme Şartı",
+          "metin": "Pergel açıklığı taban uzunluğunun yarısından küçük olursa yaylar havada kalır ve kesişme gerçekleşmez."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İki Kesişim Noktası",
+          "metin": "Çemberlerin tabanın hem üstünde (C) hem altında (D) kesiştiği iki nokta birleştirilirse [CD] doğrusu [AB] tabanının tam orta dikmesi olur."
+        }
+      ]
+    },
+    {
+      "baslik": "Çemberlerin Düzlemdeki Konumları ve Kesişim Koşulu",
+      "metin": [
+        "Düzlemde yarıçapları r₁ ve r₂ olan iki çemberin merkezleri arasındaki uzaklık 'd' olsun.",
+        "{koyu:İki Noktada Kesişme:} Merkezler arasındaki uzaklık yarıçaplar farkından büyük ve yarıçaplar toplamından küçük olduğunda ({koyu:|r₁ - r₂| < d < r₁ + r₂}) iki çember iki farklı noktada kesişir.",
+        "{koyu:Dıştan Teğet Olma:} Uzaklık tam yarıçaplar toplamına eşit olduğunda ({koyu:d = r₁ + r₂}) çemberler tek bir noktada değer.",
+        "{koyu:Ayrık Olma:} Uzaklık yarıçaplar toplamından büyük olduğunda ({koyu:d > r₁ + r₂}) çemberler kesişmez ve ortak noktaları bulunmaz."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"30\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">ÇEMBERLERİN DÜZLEMDEKİ KONUMLARI VE KESİŞİM ŞARTLARI</text>\n  <rect x=\"35\" y=\"60\" width=\"190\" height=\"175\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/>\n  <text x=\"130\" y=\"85\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">1. İki Noktada Kesişme</text>\n  <text x=\"130\" y=\"115\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Merkezler uzaklığı d ise:</text>\n  <text x=\"130\" y=\"140\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">|r₁ - r₂| &lt; d &lt; r₁ + r₂</text>\n  <text x=\"130\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">İki çember iki farklı</text>\n  <text x=\"130\" y=\"190\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">noktada kesişir.</text>\n  <text x=\"130\" y=\"215\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563eb\">Üçgen inşası yapılabilir</text>\n  <rect x=\"255\" y=\"60\" width=\"190\" height=\"175\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\"/>\n  <text x=\"350\" y=\"85\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#a16207\">2. Tek Noktada Teğet</text>\n  <text x=\"350\" y=\"115\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Dıştan teğet ise:</text>\n  <text x=\"350\" y=\"140\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#713f12\">d = r₁ + r₂</text>\n  <text x=\"350\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">Çemberler sadece bir</text>\n  <text x=\"350\" y=\"190\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">noktada dokunur.</text>\n  <text x=\"350\" y=\"215\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#ca8a04\">Tek ortak nokta</text>\n  <rect x=\"475\" y=\"60\" width=\"190\" height=\"175\" rx=\"8\" fill=\"#fdf2f8\" stroke=\"#ec4899\"/>\n  <text x=\"570\" y=\"85\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#be185d\">3. Ayrık (Kesişmeyen)</text>\n  <text x=\"570\" y=\"115\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Uzaklık büyükse:</text>\n  <text x=\"570\" y=\"140\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#9d174d\">d &gt; r₁ + r₂</text>\n  <text x=\"570\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">Çemberler birbirine</text>\n  <text x=\"570\" y=\"190\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">hiç temas etmez.</text>\n  <text x=\"570\" y=\"215\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#db2777\">Kesişim noktası yok</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Üçgen Eşitsizliği",
+          "metin": "Kesişen çemberlerin merkezleri ve kesişim noktasıyla üçgen oluşması, geometrideki üçgen eşitsizliği kuralının somut modelidir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Dinamik Geometri Yazılımları",
+          "metin": "GeoGebra gibi yazılımlarda çember merkezlerini sürüklediğinizde kesişim noktalarının hareketini gözlemleyebilirsiniz."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Uzunluğu 8 cm olan bir [AB] doğru parçası verilmiştir. Uç noktalarından 8 cm yarıçaplı iki çember yayı çizilip kesiştirildiğinde oluşan ABC üçgeninin çevresi kaç cm olur?",
+      "cevap": "Yayların yarıçapı 8 cm olduğu için |AC| = 8 cm ve |BC| = 8 cm'dir. Taban da 8 cm olduğundan üçgen eşkenardır ve çevresi 8 + 8 + 8 = 24 cm bulunur."
+    },
+    {
+      "soru": "Merkezleri arasındaki uzaklık 10 cm olan iki çemberin iki farklı noktada kesişebilmesi için yarıçapları toplamı en az kaç cm'den büyük olmalıdır?",
+      "cevap": "Kesişme şartı d < r₁ + r₂ olduğundan yarıçaplar toplamı merkezler arası uzaklık olan 10 cm'den kesinlikle büyük olmalıdır."
+    },
+    {
+      "soru": "Tabanı 5 cm olan bir ikizkenar üçgen inşa etmek için pergel kaç cm'den daha fazla açılmalıdır?",
+      "cevap": "Pergel açıklığı tabanın yarısından büyük olmalıdır: 5 / 2 = 2,5 cm'den daha fazla açılmalıdır."
+    },
+    {
+      "soru": "Eş yarıçaplı iki çember birbirinin merkezinden geçecek şekilde çizilirse merkezler ile kesişim noktasının birleşimi hangi üçgeni oluşturur?",
+      "cevap": "İki çember birbirinin merkezinden geçtiğinde merkezler arası uzaklık da yarıçapa eşittir; dolayısıyla üç kenarı eşit olan eşkenar üçgen oluşur."
+    },
+    {
+      "soru": "Yarıçapları 4 cm ve 6 cm olan iki çemberin dıştan teğet olması için merkezleri arasındaki uzaklık kaç cm olmalıdır?",
+      "cevap": "Dıştan teğet olma durumunda d = r₁ + r₂ olduğundan merkezler arası uzaklık 4 + 6 = 10 cm olmalıdır."
+    },
+    {
+      "soru": "Kesişen iki çemberin tepe noktası (C) ve alt kesişim noktası (D) birleştirildiğinde oluşan [CD] doğru parçasının taban [AB] ile ilişkisi nedir?",
+      "cevap": "[CD] doğru parçası [AB] tabanını tam ortadan iki eşit parçaya böler ve tabana diktir (kenarorta dikmedir)."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Uzunluğu 7 cm olan bir tabanın uç noktalarından 7 cm yarıçaplı iki yay kesiştirilirse hangi geometrik şekil inşa edilir?",
+      "secenekler": [
+        "Eşkenar üçgen",
+        "İkizkenar dik üçgen",
+        "Çeşitkenar üçgen",
+        "Geniş açılı üçgen"
+      ],
+      "dogru": 0,
+      "aciklama": "Üç kenarı da 7 cm olan üçgen eşkenar üçgendir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Merkezleri arasındaki uzaklık 12 cm olan iki çemberin yarıçapları 5 cm ve 7 cm'dir. Bu çemberlerin düzlemdeki konumu nasıldır?",
+      "secenekler": [
+        "İki noktada kesişir",
+        "Dıştan teğettir",
+        "Kesişmeyen ayrıktır",
+        "İç içe eş merkezlidir"
+      ],
+      "dogru": 1,
+      "aciklama": "Merkezler arası uzaklık d = 12 cm, yarıçaplar toplamı 5 + 7 = 12 cm olduğundan d = r₁ + r₂ dıştan teğettir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Taban uzunluğu 8 cm olan bir doğru parçasından ikizkenar üçgen oluşturmak için pergel açıklığı hangisi olamaz?",
+      "secenekler": [
+        "5 cm",
+        "6 cm",
+        "3 cm",
+        "7 cm"
+      ],
+      "dogru": 2,
+      "aciklama": "Pergel açıklığı tabanın yarısı olan 4 cm'den büyük olmalıdır; 3 cm açılırsa yaylar kesişmez."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir eşkenar üçgenin her bir iç açısının ölçüsü kaç derecedir?",
+      "secenekler": [
+        "45°",
+        "50°",
+        "60°",
+        "90°"
+      ],
+      "dogru": 2,
+      "aciklama": "Eşkenar üçgenin iç açıları toplamı 180° olup üç eşit açıya bölündüğünde her biri 60°'dir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Eşkenar üçgenin bütün kenar uzunlukları birbirine eşittir.",
+          "dogru": true,
+          "aciklama": "Eşkenar üçgenin üç kenarı da eşittir."
+        },
+        {
+          "metin": "Yarıçapları toplamı merkezler arası uzaklıktan küçük olan iki çember iki noktada kesişir.",
+          "dogru": false,
+          "aciklama": "Yarıçaplar toplamı uzaklıktan küçükse çemberler ayrıktır, kesişmez."
+        },
+        {
+          "metin": "Pergel yardımıyla cetvel kullanmadan uzunluklar hatasız biçimde taşınabilir.",
+          "dogru": true,
+          "aciklama": "Pergel yay çizerek eşit mesafeyi korur."
+        },
+        {
+          "metin": "Dik açılı bir eşkenar üçgen çizilebilir.",
+          "dogru": false,
+          "aciklama": "Eşkenar üçgenin her açısı 60° olmak zorundadır, dik açılı olamaz."
+        },
+        {
+          "metin": "İki çemberin kesişim noktaları taban doğru parçasının orta dikmesi üzerindedir.",
+          "dogru": true,
+          "aciklama": "Simetri ekseni kenarorta dikmedir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Çember konumları ile matematiksel şartlarını eşleştiriniz.",
+      "ciftler": [
+        [
+          "İki noktada kesişme",
+          "|r₁ - r₂| < d < r₁ + r₂"
+        ],
+        [
+          "Dıştan teğet olma",
+          "d = r₁ + r₂"
+        ],
+        [
+          "Ayrık çemberler",
+          "d > r₁ + r₂"
+        ],
+        [
+          "Eşkenar üçgen inşası",
+          "Pergel açıklığı taban uzunluğuna eşit"
+        ],
+        [
+          "İkizkenar üçgen inşası",
+          "Pergel açıklığı tabandan farklı ve yarıdan büyük"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Üç kenar uzunluğu birbirine eşit olan üçgene ___ üçgen denir.",
+          "cevap": "eşkenar"
+        },
+        {
+          "metin": "Çember çizmeye ve eşit uzunluk taşımaya yarayan araca ___ adı verilir.",
+          "cevap": "pergel"
+        },
+        {
+          "metin": "İki çemberin merkezleri arasındaki uzaklık yarıçaplar toplamına eşitse çemberler dıştan ___ olur.",
+          "cevap": "teğet"
+        },
+        {
+          "metin": "İkizkenar üçgende birbirine eşit kenarların karşısındaki taban açıları birbirine ___ olur.",
+          "cevap": "eşit"
+        },
+        {
+          "metin": "Bir eşkenar üçgenin bütün iç açıları daima ___ derecedir.",
+          "cevap": "60"
+        }
+      ],
+      "fazla": [
+        "kare",
+        "90"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Pergel ve cetvel kullanarak eşkenar üçgen inşa etme adımlarını sırasıyla açıklayınız.",
+      "ipuclari": [
+        "İlk adımda cetvelle taban doğru parçası çizilir.",
+        "İkinci adımda pergel taban kadar açılıp her iki uçtan yaylar çizilir.",
+        "Son adımda yayların kesişim noktası köşelerle birleştirilir."
+      ],
+      "cevap": "Önce cetvelle [AB] doğru parçası çizilir; pergel |AB| kadar açılıp A ve B merkezli iki yay çizilir; yayların kesiştiği C noktası cetvelle A ve B uçlarıyla birleştirilerek kusursuz bir eşkenar üçgen inşa edilir."
+    }
+  ],
+  "ozet": [
+    "{koyu:Eşkenar Üçgen İnşası:} Taban kadar açılan pergel ile iki uçtan çizilen yayların kesişim noktası tepe köşesini verir.",
+    "{koyu:İkizkenar Üçgen İnşası:} Pergel tabanın yarısından büyük ve tabandan farklı açılarak kesişen yaylarla inşa edilir.",
+    "{koyu:Kesişme Şartı:} İki çemberin kesişmesi için merkezler arası uzaklığın yarıçaplar toplamından küçük ve farkından büyük olması gerekir.",
+    "{koyu:Açı Özelliği:} Eşkenar üçgenin her açısı 60°'dir; ikizkenar üçgende ise taban açıları birbirine eşittir.",
+    "{koyu:Geometrik Doğruluk:} Cetvel düz çizgi için, pergel ise eşit uzunlukların taşınması ve yay inşası için kullanılır."
+  ]
+}
