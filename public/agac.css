@@ -44,7 +44,7 @@
   background: var(--kart-zemin, var(--yuzey)); color: var(--kart-ana, var(--metin)); border: 1px solid var(--kart-cizgi, var(--cizgi));
   text-decoration: none; transition: transform .15s, background .15s, color .15s, border-color .15s; }
 .rol-hizli-siniflar a:hover, .rol-hizli-siniflar a:focus-visible { transform: translateY(-1px); background: var(--kart-ana, var(--vurgu)); color: var(--kart-ikon-yazi, #fff); border-color: var(--kart-ana, var(--vurgu)); text-decoration: none; }
-.rol-istatistik { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; max-width: 960px; margin: 24px auto 0; padding: 16px 20px;
+.rol-istatistik { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; max-width: 980px; margin: 24px auto 0; padding: 16px 18px;
   border-radius: 18px; background: color-mix(in srgb, var(--yuzey) 88%, transparent); border: 1px solid var(--cizgi); box-shadow: 0 2px 10px rgb(15 23 42 / .03); text-align: center; }
 .rol-istatistik > div { padding: 4px 8px; border-right: 1px solid var(--cizgi); }
 .rol-istatistik > div:last-child { border-right: 0; }

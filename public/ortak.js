@@ -113,12 +113,26 @@ $$('[data-yil]').forEach((e) => { e.textContent = new Date().getFullYear(); });
   if (kart) kart.append(el('span', { sinif: 'rol-son' }, 'Son seçimin'));
 })();
 
-// Toplam ziyaret (Cloudflare Web Analytics toplu verisinden günde bir kez üretilir: araclar/ziyaret_guncelle.py)
+// Toplam ziyaret ve sayfa görüntüleme (Cloudflare Web Analytics toplu verisinden günde bir kez üretilir: araclar/ziyaret_guncelle.py)
 veri('ziyaret.json').then((z) => {
-  const yer = $('#ziyaret');
-  if (!yer || !z || !(z.toplam > 0)) return;
-  yer.textContent = `Toplam ziyaret: ${z.toplam.toLocaleString('tr-TR')}`;
-  yer.hidden = false;
+  if (!z) return;
+  const toplam = Number(z.toplam) || 0;
+  const goruntuleme = Number(z.goruntuleme) || 0;
+  if (toplam <= 0 && goruntuleme <= 0) return;
+
+  const metin = `👁️ ${toplam.toLocaleString('tr-TR')} tekil ziyaretçi · 📄 ${goruntuleme.toLocaleString('tr-TR')} sayfa görüntüleme`;
+  $$('#ziyaret, .ziyaret, [data-ziyaret]').forEach((yer) => {
+    yer.innerHTML = metin;
+    yer.classList.add('ziyaret-rozet');
+    yer.hidden = false;
+  });
+
+  $$('[data-ziyaret-sayi]').forEach((e) => {
+    e.textContent = `${toplam.toLocaleString('tr-TR')}+`;
+  });
+  $$('[data-goruntuleme-sayi]').forEach((e) => {
+    e.textContent = `${goruntuleme.toLocaleString('tr-TR')}+`;
+  });
 });
 
 ortakVeri.then(({ ayar }) => {

@@ -101,7 +101,7 @@
           <ul><li>Konu anlatımı</li><li>Etkileşimli etkinlik</li><li>Çalışma kâğıdı</li><li>Yazılıya hazırlık</li></ul>
           <span class="rol-git">Öğrenci sayfasına geç <svg aria-hidden="true"><use href="#s-ok"/></svg></span>
         </a>
-        <a class="rol-kart" data-rol="ogretmen" data-renk="yesil" href="/ogretmen.html">
+        <a class="rol-kart" id="ogretmen" data-rol="ogretmen" data-renk="yesil" href="/ogretmen.html">
           <span class="rol-simge"><svg aria-hidden="true"><use href="#s-takvim"/></svg></span>
           <h2>Öğretmenim</h2>
           <p>Okulunuza özel günlük ve yıllık planlar, ortak yazılı senaryoları, öğretim programları ve derse hazırlık dosyaları tek yerde.</p>
@@ -110,7 +110,7 @@
         </a>
       </div>
       <form class="rol-arama" action="/ara.html" role="search"><label class="gizli" for="rol-q">Sitede ara</label><input id="rol-q" name="q" type="search" placeholder="Konu, ders veya belge ara: ör. 8. sınıf kareköklü ifadeler, 10. sınıf fizik…" autocomplete="off"><button class="dugme ana" type="submit"><svg aria-hidden="true"><use href="#s-mercek"/></svg>Ara</button></form>
-      <nav class="rol-hizli-siniflar" aria-label="Sınıfa doğrudan geç">
+      <nav class="rol-hizli-siniflar" id="siniflar" aria-label="Sınıfa doğrudan geç">
         <span>Hızlı sınıf seçimi:</span>
         <a href="/ogrenci.html?sinif=5" data-renk="mor">5. Sınıf</a>
         <a href="/ogrenci.html?sinif=6" data-renk="yesil">6. Sınıf</a>
@@ -124,8 +124,9 @@
       <dl class="rol-istatistik" aria-label="Platform özeti">
         <div><dt>Müfredat uyumu</dt><dd>5–12. Sınıf</dd></div>
         <div><dt>Haftalık özet &amp; etkinlik</dt><dd>920+ Konu</dd></div>
-        <div><dt>Ünite &amp; konu ağacı</dt><dd>1.950+ Başlık</dd></div>
-        <div><dt>Üyelik &amp; ücret</dt><dd>%100 Ücretsiz</dd></div>
+        <div><dt>Tekil ziyaretçi</dt><dd><b data-ziyaret-sayi>6.800+</b></dd></div>
+        <div><dt>Sayfa görüntüleme</dt><dd><b data-goruntuleme-sayi>22.300+</b></dd></div>
+        <div><dt>Erişim &amp; kullanım</dt><dd>%100 Ücretsiz</dd></div>
       </dl>
     </div>
   </section>
