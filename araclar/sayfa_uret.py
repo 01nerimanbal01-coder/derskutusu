@@ -68,8 +68,59 @@ def reklam_yeri(ad):
     return f'<aside class="reklam" data-reklam="{yer}" aria-label="Reklam" hidden><div class="kap"><span class="reklam-etiket">Reklam</span>{birim}</div></aside>\n'
 
 
-def sayfa(ad, baslik, aciklama, govde, betikler=(), kanonik=True):
-    kan = f'<link rel="canonical" href="https://derskutusu.com/{ad}">\n' if kanonik else '<meta name="robots" content="noindex">\n'
+SOSYAL_DAVET = '''  <div class="kap"><aside class="sosyal-davet" aria-label="Sosyal medya takip çağrısı">
+    <div class="sd-sol">
+      <span class="sd-simge" aria-hidden="true"><svg><use href="#s-instagram"/></svg></span>
+      <div>
+        <strong>Günlük bilgi kartları ve yazılı serileri için Instagram'dayız!</strong>
+        <p>5–12. sınıf konu özeti kartlarını, yazılıya hazırlık karusellerini ve yeni çalışma kâğıtlarını kaçırmamak için <b>@derskutusuinfo</b> hesabımızı takip edin.</p>
+      </div>
+    </div>
+    <div class="sd-eylemler">
+      <a class="dugme sd-ig" href="https://www.instagram.com/derskutusuinfo/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#s-instagram"/></svg><span>@derskutusuinfo · Takip et</span></a>
+      <a class="dugme sd-fb" href="https://www.facebook.com/derskutusuinfo" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#s-facebook"/></svg><span>Facebook</span></a>
+    </div>
+  </aside></div>'''
+
+
+def sema_olustur(ad, baslik, aciklama, sema_ek=None):
+    import json as _j
+    kurum = {
+        '@type': 'EducationalOrganization',
+        '@id': 'https://derskutusu.com/#kurum',
+        'name': 'Ders Kutusu',
+        'url': 'https://derskutusu.com/',
+        'logo': 'https://derskutusu.com/simge-512.png',
+        'email': 'info@derskutusu.com',
+        'sameAs': [
+            'https://www.instagram.com/derskutusuinfo/',
+            'https://www.facebook.com/derskutusuinfo',
+            'https://www.youtube.com/@derskutusuinfo',
+        ],
+    }
+    graf = [kurum]
+    if sema_ek:
+        graf.extend(sema_ek if isinstance(sema_ek, list) else [sema_ek])
+    else:
+        graf.append({
+            '@type': 'WebPage',
+            '@id': f'https://derskutusu.com/{ad}#sayfa',
+            'url': f'https://derskutusu.com/{ad}',
+            'name': f'{baslik} · Ders Kutusu',
+            'description': aciklama,
+            'inLanguage': 'tr-TR',
+            'isPartOf': {'@type': 'WebSite', '@id': 'https://derskutusu.com/#site', 'name': 'Ders Kutusu', 'url': 'https://derskutusu.com/'},
+            'publisher': {'@id': 'https://derskutusu.com/#kurum'},
+        })
+    veri = _j.dumps({'@context': 'https://schema.org', '@graph': graf}, ensure_ascii=False)
+    return f'<script type="application/ld+json">{veri}</script>\n'
+
+
+def sayfa(ad, baslik, aciklama, govde, betikler=(), kanonik=True, sema_ek=None):
+    kan = (f'<link rel="canonical" href="https://derskutusu.com/{ad}">\n'
+           f'<meta property="og:url" content="https://derskutusu.com/{ad}">\n') if kanonik else '<meta name="robots" content="noindex">\n'
+    og_tip = 'article' if ad.startswith('ozet/') else 'website'
+    sema = sema_olustur(ad, baslik, aciklama, sema_ek) if kanonik else ''
     js = ''.join(f'<script src="/{b}?v={BETIK_SURUMLERI.get(b, SURUM)}"></script>\n' for b in ('ortak.js', *betikler, 'arama.js', 'tahta.js'))
     if ad == 'icerikler.html':
         govde = kutuphane_govde(govde)
@@ -87,11 +138,14 @@ def sayfa(ad, baslik, aciklama, govde, betikler=(), kanonik=True):
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="{og_tip}">
+<meta property="og:locale" content="tr_TR">
 <meta property="og:site_name" content="Ders Kutusu">
 <meta property="og:title" content="{baslik} · Ders Kutusu">
 <meta property="og:description" content="{aciklama}">
 <meta property="og:image" content="https://derskutusu.com/paylasim.png">
-<link rel="stylesheet" href="/stil.css?v={SURUM}">
+<meta name="twitter:card" content="summary_large_image">
+{sema}<link rel="stylesheet" href="/stil.css?v={SURUM}">
 </head>
 <body>
 <a class="atla" href="#icerik">İçeriğe geç</a>
@@ -260,7 +314,7 @@ GOVDE = {
       </div>
       <div class="y-kaydir" id="y-tablo"></div>
     </div>
-  </section>''', ('yazili.js', 'yazili-cikti.js', 'yazili-duzen.js')),
+  </section>\n''' + SOSYAL_DAVET, ('yazili.js', 'yazili-cikti.js', 'yazili-duzen.js')),
     'tahta.html': ('Akıllı tahta', 'Tarayıcıda çalışan akıllı tahta: hassas kalem, ekran ve ses kaydı, akıllı şekil tanıma, seç-taşı, soru görseli yapıştırma, süre ölçer, cevap perdesi, koordinat ekseni ve çoklu sayfa.', '''  <section class="tahta-sayfa">
     <div class="kap tahta-ustbar">
       <h1>Akıllı tahta</h1>
@@ -306,9 +360,9 @@ GOVDE = {
         <h2>Takip edin</h2>
         <p>Yeni içerikleri ilk siz görün. Takip etmek ve videolara yorum bırakmak da bize destek olur.</p>
         <div class="katki-sosyal">
-          <a class="dugme" data-sosyal="youtube" target="_blank" rel="noopener" hidden><svg><use href="#s-youtube"/></svg>YouTube</a>
-          <a class="dugme" data-sosyal="instagram" target="_blank" rel="noopener" hidden><svg><use href="#s-instagram"/></svg>Instagram</a>
-          <a class="dugme" data-sosyal="facebook" target="_blank" rel="noopener" hidden><svg><use href="#s-facebook"/></svg>Facebook</a>
+          <a class="dugme" href="https://www.youtube.com/@derskutusuinfo" data-sosyal="youtube" target="_blank" rel="noopener"><svg><use href="#s-youtube"/></svg>YouTube</a>
+          <a class="dugme" href="https://www.instagram.com/derskutusuinfo/" data-sosyal="instagram" target="_blank" rel="noopener"><svg><use href="#s-instagram"/></svg>Instagram</a>
+          <a class="dugme" href="https://www.facebook.com/derskutusuinfo" data-sosyal="facebook" target="_blank" rel="noopener"><svg><use href="#s-facebook"/></svg>Facebook</a>
         </div>
       </article>
       <article class="kart katki-kart genis">
@@ -445,7 +499,7 @@ GOVDE['planlar.html'] = ('Günlük planlar', 'Günlük ders planları: Okul, ö�
         </div>
       </div>
     </div>
-  </section>''', ('planlar.js',))
+  </section>\n''' + SOSYAL_DAVET, ('planlar.js',))
 
 GOVDE['kelime.html'] = ('İngilizce kelime çalışması', '5 ve 6. sınıf İngilizce kelimeleri: kartlar, sesli dinleme, test, yazma ve eşleştirme. Kelimeler MEB ders kitaplarının sözlük bölümünden.', '''  <section class="sayfa-bas kelime-bas">
     <div class="kap">

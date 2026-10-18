@@ -334,6 +334,16 @@ def sayfa_uret(o, dersler, icerikler, hafta_haritasi=None):
         '</nav>'
     )
 
+    sosyal_kutu = (
+        '      <aside class="sosyal-davet" aria-label="Sosyal medya takip çağrısı">'
+        '<div class="sd-sol"><span class="sd-simge" aria-hidden="true"><svg><use href="#s-instagram"/></svg></span><div>'
+        f'<strong>{o["sinif"]}. sınıf {e(ad)} bilgi kartları ve yazılı serileri için Instagram\'dayız!</strong>'
+        f'<p>{o["sinif"]}. sınıf konu özeti kartlarını, yazılıya hazırlık karusellerini ve yeni çalışma kâğıtlarını kaçırmamak için <b>@derskutusuinfo</b> hesabımızı takip edin.</p>'
+        '</div></div><div class="sd-eylemler">'
+        '<a class="dugme sd-ig" href="https://www.instagram.com/derskutusuinfo/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#s-instagram"/></svg><span>@derskutusuinfo · Takip et</span></a>'
+        '<a class="dugme sd-fb" href="https://www.facebook.com/derskutusuinfo" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#s-facebook"/></svg><span>Facebook</span></a>'
+        '</div></aside>'
+    )
     govde = f'''  <div class="okuma-cubuk" aria-hidden="true"><i id="okuma-ilerleme"></i></div>
   <section class="sayfa-bas ozet-bas ders-{o["ders"]}" data-ozet-kimlik="{ozet_kimlik}">
     <div class="kap">
@@ -355,18 +365,49 @@ def sayfa_uret(o, dersler, icerikler, hafta_haritasi=None):
       {kartlar_bolum}
       {etkinlik_html(o['etkinlikler'], ozet_kimlik) if o.get('etkinlikler') else ''}
 {ozet_son}
+{sosyal_kutu}
 {hafta_alt_gecis}
       {f'<section class="ozet-bolum ozet-ilgili"><h2>Bu dersin öteki kaynakları</h2><ul>{ilgili}</ul></section>' if ilgili else ''}
     </div>
   </article>'''
     baslik = f'{o["sinif"]}. Sınıf {ad} {o["hafta"]}. Hafta: {o["konu"]}'
     aciklama = f'{o["sinif"]}. sınıf {ad} {o["hafta"]}. hafta konu özeti: {o["konu"]}. Çözümlü örnekler ve cevaplar.'
+    yt = yayin_tarihi(o, dosya)
+    sema_ek = [
+        {
+            '@type': 'LearningResource',
+            '@id': f'https://derskutusu.com/ozet/{dosya}#kaynak',
+            'url': f'https://derskutusu.com/ozet/{dosya}',
+            'name': baslik,
+            'headline': baslik,
+            'description': aciklama,
+            'inLanguage': 'tr-TR',
+            'isAccessibleForFree': True,
+            'learningResourceType': ['Konu Özeti', 'Çözümlü Örnekler', 'Etkileşimli Etkinlik'],
+            'educationalLevel': f'{o["sinif"]}. Sınıf',
+            'about': [ad, o['unite'], o['konu']],
+            'datePublished': yt,
+            'author': {'@id': 'https://derskutusu.com/#kurum'},
+            'publisher': {'@id': 'https://derskutusu.com/#kurum'},
+        },
+        {
+            '@type': 'BreadcrumbList',
+            '@id': f'https://derskutusu.com/ozet/{dosya}#konum',
+            'itemListElement': [
+                {'@type': 'ListItem', 'position': 1, 'name': 'Ana sayfa', 'item': 'https://derskutusu.com/'},
+                {'@type': 'ListItem', 'position': 2, 'name': 'Öğrenci', 'item': 'https://derskutusu.com/ogrenci.html'},
+                {'@type': 'ListItem', 'position': 3, 'name': f'{o["sinif"]}. Sınıf', 'item': f'https://derskutusu.com/ogrenci.html?sinif={o["sinif"]}'},
+                {'@type': 'ListItem', 'position': 4, 'name': ad, 'item': f'https://derskutusu.com/ogrenci.html?sinif={o["sinif"]}&ders={o["ders"]}'},
+                {'@type': 'ListItem', 'position': 5, 'name': f'{o["hafta"]}. Hafta: {o["konu"]}', 'item': f'https://derskutusu.com/ozet/{dosya}'},
+            ],
+        },
+    ]
     (PUBLIC / 'ozet').mkdir(exist_ok=True)
     betik = ('etkinlik.js',)
-    (PUBLIC / 'ozet' / dosya).write_text(_sayfa.sayfa(f'ozet/{dosya}', baslik, aciklama, govde, betik), encoding='utf-8')
+    (PUBLIC / 'ozet' / dosya).write_text(_sayfa.sayfa(f'ozet/{dosya}', baslik, aciklama, govde, betik, sema_ek=sema_ek), encoding='utf-8')
     return {'sinif': o['sinif'], 'ders': o['ders'], 'tur': 'Konu anlatımı', 'kitle': 'ogrenci', 'baslik': baslik,
             'aciklama': f'{o["unite"]}: {o["konu"]}. Konu özeti, {len(o["ornekler"])} örnek ve cevapları' + (f', {len(o["etkinlikler"])} etkileşimli etkinlik' if o.get('etkinlikler') else '') + '; akıllı tahtada kalemle yazılabilir.',
-            'goruntule': f'ozet/{dosya}', 'kaynak': 'Ders Kutusu', 'hafta': o['hafta'], 'tarih': yayin_tarihi(o, dosya)}
+            'goruntule': f'ozet/{dosya}', 'kaynak': 'Ders Kutusu', 'hafta': o['hafta'], 'tarih': yt}
 
 
 def main():
