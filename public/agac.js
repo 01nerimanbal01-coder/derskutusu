@@ -92,6 +92,12 @@
       aday.sort((a, b) => [...sozcuk(b.ad)].filter((x) => w.has(x)).length - [...sozcuk(a.ad)].filter((x) => w.has(x)).length);
       aday[0].icerik.push(i);
     }
+    for (const k of konular) {
+      if (!k.icerik.length && k.haftalar?.length) {
+        const ortak = icerikler.filter((i) => i.hafta && k.haftalar.includes(Number(i.hafta)));
+        if (ortak.length) k.icerik.push(...ortak);
+      }
+    }
     return { konular, disarida };
   };
 

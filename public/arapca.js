@@ -66,7 +66,7 @@
   let odak=null;
   function controls(){
     $('#a-sinif').replaceChildren(...data.siniflar.map(g=>el('button',{type:'button',sinif:'sekme','aria-pressed':String(g.sinif===state.grade),onclick:()=>{state.grade=g.sinif;state.topic=g.temalar[0].no;odak='#a-sinif';draw();}},`${g.sinif}. sınıf`)));
-    const select=$('#a-konu');select.replaceChildren(...data.siniflar.find(g=>g.sinif===state.grade).temalar.map(t=>el('option',{value:t.no,selected:t.no===state.topic},`${t.ad} · 1. hafta (${t.kelimeler.length})`)));select.onchange=()=>{state.topic=Number(select.value);draw();};
+    const select=$('#a-konu');select.replaceChildren(...data.siniflar.find(g=>g.sinif===state.grade).temalar.map(t=>el('option',{value:t.no,selected:t.no===state.topic},`${t.ad} (${t.kelimeler.length} kelime)`)));select.onchange=()=>{state.topic=Number(select.value);draw();};
     $('#a-modlar').replaceChildren(...MODLAR.map(([m,t])=>el('button',{type:'button',sinif:'sekme','aria-pressed':String(m===state.mode),onclick:()=>{state.mode=m;odak='#a-modlar';draw();}},t)));
     // Sekmeler yeniden üretildiği için odak, basılan sekmenin yenisine geri verilir.
     if(odak){$(odak+' [aria-pressed="true"]')?.focus();odak=null;}

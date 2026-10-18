@@ -1194,8 +1194,10 @@ body.kalem-acik .kalem-katman { z-index: 95; }
   box-shadow: 0 10px 28px color-mix(in srgb, var(--ders) 10%, rgb(15 23 42 / .05)); }
 .fkart-on { background: linear-gradient(155deg, var(--yuzey) 55%, var(--ders-acik)); transform: rotateY(0); }
 .fkart-arka { background: linear-gradient(155deg, var(--ders-acik), var(--yuzey) 85%); border-color: var(--ders); transform: rotateY(180deg); }
-.fkart.cevrik .fkart-on { transform: rotateY(-180deg); }
+.fkart:not(.cevrik) .fkart-arka { pointer-events: none; }
+.fkart.cevrik .fkart-on { transform: rotateY(-180deg); pointer-events: none; }
 .fkart.cevrik .fkart-arka { transform: rotateY(0); }
+.fkart-ses.okunuyor { background: var(--ders-acik); color: var(--ders-metin); border-color: var(--ders); }
 .fkart-etiket { display: inline-block; padding: 4px 12px; border-radius: 999px; background: var(--ders); color: #fff;
   font-size: 11.5px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; }
 .fkart-arka .fkart-etiket { background: var(--yesil); }

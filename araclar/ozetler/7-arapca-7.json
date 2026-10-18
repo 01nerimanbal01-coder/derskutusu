@@ -16,7 +16,7 @@
   "giris": "Verilen 2. ünitemiz olan {koyu:Alışveriş ({ar:التَّسَوُّقُ})} ünitesinin ilk dersi olan {koyu:Bakkalda ({ar:فِي الْبَقَّالَةِ})} konusuna hoş geldiniz! Günlük hayatta en sık yaptığımız işlerden biri mahalle bakkalından veya marketten temel gıda ihtiyaçlarımızı almaktır. Bu hafta Arapçada temel gıda isimlerini, miktar/paket bildiren kelimeleri ({koyu:kîlû, ulbetün, zücâcetün}) ve fiyat sorma ({koyu:Bikem...?}) diyaloglarını öğreniyoruz.",
   "ozet": [
     "{koyu:Bakkal ve Müşteri:} {koyu:el-Bakkâletü} ({ar:الْبَقَّالَةُ} — Bakkal dükkânı), {koyu:el-Bakkâlü} ({ar:الْبَقَّالُ} — Bakkal/Satıcı), {koyu:el-Müşterî} ({ar:الْمُشْتَرِي} — Müşteri / Alıcı).",
-    "{koyu:Temel Gıda Kelimeleri:} {koyu:Hubzün} (ekmek), {koyu:halîbün} (süt), {koyu:cübnün} (peynir), {koyu:beydun} (yumurta), {koyu:zeytûnün} (zeytin), {koyu:aselün} (bal), {koyu:زُبْدَةٌ / zübdetün} (tereyağı), {koyu:sükkerun} (şeker), {koyu:şâyün} (çay).",
+    "{koyu:Temel Gıda Kelimeleri:} {koyu:Hubzün} (ekmek), {koyu:halîbün} (süt), {koyu:cübnün} (peynir), {koyu:beydun} (yumurta), {koyu:zeytûnün} (zeytin), {koyu:aselün} (bal), {koyu:{ar:زُبْدَةٌ} / zübdetün} (tereyağı), {koyu:sükkerun} (şeker), {koyu:şâyün} (çay).",
     "{koyu:İstek ve Bulunma Kalıbı:} {koyu:“Ürîdü...”} (...istiyorum) ve {koyu:“Hel yûcedü...?”} (...bulunur mu / var mı?) -> Cevap: {koyu:“Neam, yûcedü”} (Evet, var) veya {koyu:“Lâ, lâ yûcedü”} (Hayır, yok).",
     "{koyu:Fiyat Sorma Kalıbı:} {koyu:“Bikem hâzâ?”} (Bu kaç lira?) veya {koyu:“Bikem el-mecmûu?”} (Toplam kaç lira?).",
     "{koyu:Nezaket İfadeleri:} {koyu:“Min fadlike”} (Lütfen), {koyu:“Tefaddal”} (Buyur), {koyu:“Şükran”} (Teşekkür ederim), {koyu:“Bikülli sürûrin”} (Memnuniyetle)."
@@ -65,16 +65,16 @@
       "cevap": "'İstiyorum' anlamındaki {koyu:Ürîdü} fiiliyle başlayarak: {koyu:“Ürîdü kîlû cübnin ve beydan min fadlike.”} ({ar:أُرِيدُ كِيلُو جُبْنٍ وَبَيْضًا مِنْ فَضْلِكَ}) demelidir."
     },
     {
-      "soru": "'Hel yûcedü سُكَّرٌ fî’l-bakkâleti?' sorusunun Türkçe anlamı nedir ve olumlu cevabı nasıl verilir?",
+      "soru": "'Hel yûcedü {ar:سُكَّرٌ} fî’l-bakkâleti?' sorusunun Türkçe anlamı nedir ve olumlu cevabı nasıl verilir?",
       "cevap": "{koyu:Türkçe Anlamı:} “Bakkalda şeker var mı (bulunur mu)?”\n• {koyu:Olumlu Cevabı:} {koyu:“Neam, yûcedü sükkerun fî’l-bakkâleti.”} (Evet, bakkalda şeker var)."
     },
     {
-      "soru": "Bir ürünün fiyatını öğrenmek için kullanılan 'Bikem el-hubzü?' (بِكَمِ الْخُبْزُ؟) sorusunun anlamı nedir?",
+      "soru": "Bir ürünün fiyatını öğrenmek için kullanılan 'Bikem el-hubzü?' ({ar:بِكَمِ الْخُبْزُ؟}) sorusunun anlamı nedir?",
       "cevap": "{koyu:Bikem} 'kaç lira / ne kadar', {koyu:el-hubzü} ise 'ekmek' demektir. Soru {koyu:“Ekmek kaç lira?”} anlamına gelir."
     },
     {
       "soru": "Bakkalın müşteriye 'Nasıl yardımcı olabilirim / Herhangi bir hizmet?' anlamında sorduğu kalıp ifade aşağıdakilerden hangisidir?",
-      "cevap": "Doğru yanıt: Eyyü hidmetin? (أَيُّ خِدْمَةٍ؟). 'Eyyü hidmetin?' (أَيُّ خِدْمَةٍ؟) satıcının müşteriyi karşılarken kullandığı 'Nasıl yardımcı olabilirim?' ifadesidir."
+      "cevap": "Doğru yanıt: Eyyü hidmetin? ({ar:أَيُّ خِدْمَةٍ؟}). 'Eyyü hidmetin?' ({ar:أَيُّ خِدْمَةٍ؟}) satıcının müşteriyi karşılarken kullandığı 'Nasıl yardımcı olabilirim?' ifadesidir."
     },
     {
       "soru": "‘Bakkalda Satılan Temel Gıda Maddeleri’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
@@ -90,17 +90,17 @@
       "tur": "coktan",
       "soru": "Alışveriş yaparken bir ürünün fiyatını sormak için kullanılan 'Bu kaç lira / ne kadar?' anlamındaki Arapça soru kalıbı aşağıdakilerden hangisidir?",
       "secenekler": [
-        "Bikem hâzâ? (بِكَمْ هٰذَا؟)",
-        "Keyfe hâlüke? (كَيْفَ حَالُكَ؟)",
-        "Eyne’l-medresetü? (أَيْنَ الْمَدْرَسَةُ؟)",
-        "Men hâzâ? (مَنْ هٰذَا؟)"
+        "Bikem hâzâ? ({ar:بِكَمْ هٰذَا؟})",
+        "Keyfe hâlüke? ({ar:كَيْفَ حَالُكَ؟})",
+        "Eyne’l-medresetü? ({ar:أَيْنَ الْمَدْرَسَةُ؟})",
+        "Men hâzâ? ({ar:مَنْ هٰذَا؟})"
       ],
       "dogru": 0,
-      "aciklama": "'Bikem...?' (بِكَمْ) kalıbı Arapçada fiyat sormak ('Kaça / Kaç lira?') için kullanılır."
+      "aciklama": "'Bikem...?' ({ar:بِكَمْ}) kalıbı Arapçada fiyat sormak ('Kaça / Kaç lira?') için kullanılır."
     },
     {
       "tur": "coktan",
-      "soru": "'Ürîdü حَلِيبٌ (halîb) ve جُبْنٌ (cübn) ve خُبْزٌ (hubz).' diyen bir müşteri bakkaldan sırasıyla hangi ürünleri istemektedir?",
+      "soru": "'Ürîdü {ar:حَلِيبٌ} (halîb) ve {ar:جُبْنٌ} (cübn) ve {ar:خُبْزٌ} (hubz).' diyen bir müşteri bakkaldan sırasıyla hangi ürünleri istemektedir?",
       "secenekler": [
         "Çay - Şeker - Un",
         "Süt - Peynir - Ekmek",
@@ -114,42 +114,42 @@
       "tur": "coktan",
       "soru": "Müşteri: '___ yûcedü aselün?' (Bal var mı?) / Bakkal: 'Neam, yûcedü.' diyaloğunda boş bırakılan yere hangi soru edatı gelmelidir?",
       "secenekler": [
-        "Men (مَنْ)",
-        "Eyne (أَيْنَ)",
-        "Hel (هَلْ)",
-        "Metâ (مَتَى)"
+        "Men ({ar:مَنْ})",
+        "Eyne ({ar:أَيْنَ})",
+        "Hel ({ar:هَلْ})",
+        "Metâ ({ar:مَتَى})"
       ],
       "dogru": 2,
-      "aciklama": "Cevabı 'Neam' (Evet) veya 'Lâ' (Hayır) olan '-mı/-mi' sorularında 'Hel' (هَلْ) soru edatı kullanılır."
+      "aciklama": "Cevabı 'Neam' (Evet) veya 'Lâ' (Hayır) olan '-mı/-mi' sorularında 'Hel' ({ar:هَلْ}) soru edatı kullanılır."
     },
     {
       "tur": "coktan",
       "soru": "Aşağıdaki Arapça gıda kelimelerinden hangisinin Türkçe karşılığı yanlış verilmiştir?",
       "secenekler": [
-        "beydun (بَيْضٌ) — Yumurta",
-        "zeytûnün (زَيْتُونٌ) — Zeytin",
-        "aselün (عَسَلٌ) — Bal",
-        "sükkerun (سُكَّرٌ) — Peynir"
+        "beydun ({ar:بَيْضٌ}) — Yumurta",
+        "zeytûnün ({ar:زَيْتُونٌ}) — Zeytin",
+        "aselün ({ar:عَسَلٌ}) — Bal",
+        "sükkerun ({ar:سُكَّرٌ}) — Peynir"
       ],
       "dogru": 3,
-      "aciklama": "'Sükkerun' (سُكَّرٌ) peynir değil 'şeker' demektir; peynir Arapçada 'cübnün' (جُبْنٌ) kelimesidir."
+      "aciklama": "'Sükkerun' ({ar:سُكَّرٌ}) peynir değil 'şeker' demektir; peynir Arapçada 'cübnün' ({ar:جُبْنٌ}) kelimesidir."
     },
     {
       "tur": "dy",
       "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
-          "metin": "Arapçada 'el-Bakkâletü' (الْبَقَّالَةُ) bakkal dükkânı, 'el-Bakkâlü' (الْبَقَّالُ) ise bakkal (satıcı) anlamına gelir.",
+          "metin": "Arapçada 'el-Bakkâletü' ({ar:الْبَقَّالَةُ}) bakkal dükkânı, 'el-Bakkâlü' ({ar:الْبَقَّالُ}) ise bakkal (satıcı) anlamına gelir.",
           "dogru": true,
           "aciklama": "Sonunda yuvarlak te olan el-bakkâletü mekan ismini, el-bakkâlü ise meslek/satıcı ismini gösterir."
         },
         {
-          "metin": "'Ürîdü...' (أُرِيدُ) fiili Arapçada 'İstiyorum...' anlamına gelir.",
+          "metin": "'Ürîdü...' ({ar:أُرِيدُ}) fiili Arapçada 'İstiyorum...' anlamına gelir.",
           "dogru": true,
           "aciklama": "Erâde fiilinin 1. tekil şahıs (ben) çekimi olan 'Ürîdü', 'İstiyorum' demektir."
         },
         {
-          "metin": "'Ulbetü halîbin' (عُلْبَةُ حَلِيبٍ) ifadesi 'bir kutu süt' anlamına gelir.",
+          "metin": "'Ulbetü halîbin' ({ar:عُلْبَةُ حَلِيبٍ}) ifadesi 'bir kutu süt' anlamına gelir.",
           "dogru": true,
           "aciklama": "Ulbetün kutu/paket, halîb ise süt demektir."
         },
@@ -159,7 +159,7 @@
           "aciklama": "Yanlıştır; 'Bikem hâzâ?' fiyat sorar ('Bu kaç lira?'), cevabında fiyat (örneğin 'Biaşri lîrâtin' - 10 lira) söylenir."
         },
         {
-          "metin": "'Min fadlike' (مِنْ فَضْلِكَ) ifadesi alışverişte nezaket bildiren 'Lütfen' anlamında kullanılır.",
+          "metin": "'Min fadlike' ({ar:مِنْ فَضْلِكَ}) ifadesi alışverişte nezaket bildiren 'Lütfen' anlamında kullanılır.",
           "dogru": true,
           "aciklama": "'Min fadlike' (erkek için) / 'Min fadliki' (kadın için) 'Lütfen' demektir."
         }
@@ -170,23 +170,23 @@
       "soru": "Aşağıdaki Arapça kelime ve ifadeleri Türkçe karşılıklarıyla eşleştiriniz.",
       "ciftler": [
         [
-          "خُبْزٌ وَجُبْنٌ (Hubzün ve cübnün)",
+          "{ar:خُبْزٌ وَجُبْنٌ} (Hubzün ve cübnün)",
           "Ekmek ve peynir"
         ],
         [
-          "بَيْضٌ وَعَسَلٌ (Beydun ve aselün)",
+          "{ar:بَيْضٌ وَعَسَلٌ} (Beydun ve aselün)",
           "Yumurta ve bal"
         ],
         [
-          "عُلْبَةُ حَلِيبٍ (Ulbetü halîbin)",
+          "{ar:عُلْبَةُ حَلِيبٍ} (Ulbetü halîbin)",
           "Bir kutu süt"
         ],
         [
-          "هَلْ يُوجَدُ شَايٌ؟ (Hel yûcedü şâyün?)",
+          "{ar:هَلْ يُوجَدُ شَايٌ؟} (Hel yûcedü şâyün?)",
           "Çay var mı (bulunur mu)?"
         ],
         [
-          "بِكَمِ الْمَجْمُوعُ؟ (Bikemi’l-mecmûu?)",
+          "{ar:بِكَمِ الْمَجْمُوعُ؟} (Bikemi’l-mecmûu?)",
           "Toplam kaç lira (ne kadar)?"
         ]
       ]
@@ -196,7 +196,7 @@
       "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
-          "metin": "Bakkaldan bir şey isterken 'İstiyorum' anlamında '___' (أُرِيدُ) fiilini kullanırız.",
+          "metin": "Bakkaldan bir şey isterken 'İstiyorum' anlamında '___' ({ar:أُرِيدُ}) fiilini kullanırız.",
           "cevap": "Ürîdü"
         },
         {
@@ -208,11 +208,11 @@
           "cevap": "yûcedü"
         },
         {
-          "metin": "Bakkal müşteriye ürünleri uzatırken 'Buyur!' anlamında '___!' (تَفَضَّلْ) der.",
+          "metin": "Bakkal müşteriye ürünleri uzatırken 'Buyur!' anlamında '___!' ({ar:تَفَضَّلْ}) der.",
           "cevap": "Tefaddal"
         },
         {
-          "metin": "Kahvaltıda yediğimiz peynir kelimesinin Arapça karşılığı '___' (جُبْنٌ) kelimesidir.",
+          "metin": "Kahvaltıda yediğimiz peynir kelimesinin Arapça karşılığı '___' ({ar:جُبْنٌ}) kelimesidir.",
           "cevap": "cübnün"
         }
       ],

@@ -175,11 +175,20 @@ def etkinlik_html(liste, ozet_kimlik=''):
         elif tur == 'bosluk':
             kelimeler = [c['cevap'] for c in x['cumleler']] + x.get('fazla', [])
             sira = list(range(len(kelimeler))); rnd.shuffle(sira)
-            cip = ''.join(f'<button type="button" class="etk-kelime" data-k="{i}">{e(kelimeler[i])}</button>' for i in sira)
+            cip = ''.join(
+                f'<button type="button" class="etk-kelime" data-k="{i}" data-deger="{html.escape(re.sub(r"<[^>]+>", "", e(kelimeler[i])).strip(), quote=True)}">{e(kelimeler[i])}</button>'
+                for i in sira
+            )
             cumle = ''
             for c in x['cumleler']:
                 on, _, arka = c['metin'].partition('___')
-                cumle += f'<li>{e(on)}<button type="button" class="etk-bosluk-yer" data-cevap="{e(c["cevap"])}" aria-label="Boşluk"></button>{e(arka)}</li>'
+                cev_html_raw = e(c['cevap'])
+                cev_duz = html.escape(re.sub(r'<[^>]+>', '', cev_html_raw).strip(), quote=True)
+                cev_html = html.escape(cev_html_raw, quote=True)
+                cumle += (
+                    f'<li>{e(on)}<button type="button" class="etk-bosluk-yer" '
+                    f'data-cevap="{cev_duz}" data-cevap-html="{cev_html}" aria-label="Boşluk"></button>{e(arka)}</li>'
+                )
             parca.append(f'<li class="etk etk-bosluk">{bas}<div class="etk-kelimeler">{cip}</div><ol class="etk-cumleler">{cumle}</ol>'
                          '<p class="etk-uyari" hidden>Önce bütün boşlukları doldurun.</p><button type="button" class="dugme etk-kontrol">Kontrol et</button>'
                          f'{_geri()}</li>')
@@ -196,7 +205,7 @@ def etkinlik_html(liste, ozet_kimlik=''):
 
 
 def kartlar_html(o):
-    """Eşleştirme çiftleri, boşluk doldurma ve örneklerden otomatik etkileşimli kavram kartları (flashcard) üretir."""
+    """Eşleştirme çiftleri, bölüm kavram kutuları ve kısa örneklerden etkileşimli kavram kartları (flashcard) üretir."""
     kartlar = []
     gorulen = set()
     for x in o.get('etkinlikler', []):
@@ -205,21 +214,34 @@ def kartlar_html(o):
                 if sol and sag and sol not in gorulen:
                     gorulen.add(sol)
                     kartlar.append((e(sol), e(sag)))
-    for x in o.get('etkinlikler', []):
-        if x.get('tur') == 'bosluk' and len(kartlar) < 8:
-            for c in x.get('cumleler', []):
-                cev = c.get('cevap', '')
-                met = c.get('metin', '')
-                if cev and met and cev not in gorulen and len(kartlar) < 8:
-                    gorulen.add(cev)
-                    kartlar.append((e(met.replace('___', '……')), f'<b>{e(cev)}</b>'))
+    for b in o.get('bolumler', []):
+        if len(kartlar) >= 8:
+            break
+        k_tek = [b['kutu']] if b.get('kutu') else []
+        k_cok = [k for k in b.get('kutular', []) if k not in k_tek]
+        for k in k_tek + k_cok:
+            if len(kartlar) >= 8:
+                break
+            bas = (k.get('baslik') or '').strip()
+            met = (k.get('metin') or '').strip()
+            if bas and met and bas not in KUTU.values() and bas not in gorulen and len(met) <= 220:
+                gorulen.add(bas)
+                kartlar.append((e(bas), e(met)))
     for x in o.get('ornekler', []):
         if len(kartlar) >= 8:
             break
-        s, c = x.get('soru', ''), x.get('cevap', '')
-        if s and c and s not in gorulen:
+        s, c = (x.get('soru') or '').strip(), (x.get('cevap') or '').strip()
+        if s and c and s not in gorulen and len(s) <= 180 and len(c) <= 220:
             gorulen.add(s)
             kartlar.append((e(s), e(c)))
+    for x in o.get('etkinlikler', []):
+        if x.get('tur') == 'bosluk' and len(kartlar) < 8:
+            for c in x.get('cumleler', []):
+                cev = (c.get('cevap') or '').strip()
+                met = (c.get('metin') or '').strip()
+                if cev and met and cev not in gorulen and len(kartlar) < 8:
+                    gorulen.add(cev)
+                    kartlar.append((e(met.replace('___', '……')), f'<b>{e(cev)}</b>'))
     if not kartlar:
         return ''
     veri = ''.join(
@@ -230,7 +252,8 @@ def kartlar_html(o):
     return (
         '<section class="ozet-bolum ozet-kartlar-bolum" id="kartlar">'
         '<div class="etk-bas"><h2>Kavram Kartları</h2><p class="fkart-sayac"><b>1</b> / ' + str(len(kartlar)) + '</p>'
-        '<button type="button" class="dugme fkart-karistir">🔀 Karıştır</button></div>'
+        '<div class="fkart-araclar"><button type="button" class="dugme fkart-ses" hidden>🔊 Seslendir</button>'
+        '<button type="button" class="dugme fkart-karistir">🔀 Karıştır</button></div></div>'
         '<p class="etk-aciklama">Karta dokunarak arka yüzündeki açıklamayı görün; yön tuşlarıyla kartlar arasında geçiş yapın.</p>'
         '<div class="fkart-sahne">'
         '<button type="button" class="fkart" aria-label="Kartı çevir">'

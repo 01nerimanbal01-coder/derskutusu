@@ -145,8 +145,9 @@
         yerler.forEach((y) => y.addEventListener('click', () => {
           if (k.classList.contains('bitti')) return;
           if (y.dataset.kelime) {
-            k.querySelector(`.etk-kelime[data-k="${y.dataset.kelimeNo}"]`).hidden = false;
-            y.textContent = ''; delete y.dataset.kelime; delete y.dataset.kelimeNo;
+            const eski = k.querySelector(`.etk-kelime[data-k="${y.dataset.kelimeNo}"]`);
+            if (eski) eski.hidden = false;
+            y.innerHTML = ''; delete y.dataset.kelime; delete y.dataset.kelimeNo;
           }
           sec(y);
         }));
@@ -154,7 +155,10 @@
           if (k.classList.contains('bitti')) return;
           const y = hedef && !hedef.dataset.kelime ? hedef : yerler.find((x) => !x.dataset.kelime);
           if (!y) return;
-          y.textContent = w.textContent; y.dataset.kelime = w.textContent; y.dataset.kelimeNo = w.dataset.k; w.hidden = true;
+          y.innerHTML = w.innerHTML;
+          y.dataset.kelime = w.dataset.deger || w.textContent;
+          y.dataset.kelimeNo = w.dataset.k;
+          w.hidden = true;
           sec(yerler.find((x) => !x.dataset.kelime) || null);
         }));
         k.querySelector('.etk-kontrol').addEventListener('click', () => {
@@ -163,9 +167,16 @@
           k.classList.add('bitti'); k.querySelector('.etk-uyari').hidden = true; sec(null);
           let hepsi = true;
           yerler.forEach((y) => {
-            const ok = y.dataset.kelime === y.dataset.cevap;
+            const ok = y.dataset.kelime === y.dataset.cevap || y.textContent.trim() === y.dataset.cevap;
             y.classList.add(ok ? 'dogru' : 'yanlis');
-            if (!ok) { hepsi = false; y.title = 'Doğrusu: ' + y.dataset.cevap; y.insertAdjacentHTML('afterend', `<small class="etk-duzelt">${y.dataset.cevap}</small>`); }
+            if (!ok) {
+              hepsi = false;
+              const dogruHtml = y.dataset.cevapHtml || y.dataset.cevap;
+              const gecici = document.createElement('span');
+              gecici.innerHTML = dogruHtml;
+              y.title = 'Doğrusu: ' + (gecici.textContent || y.dataset.cevap);
+              y.insertAdjacentHTML('afterend', `<small class="etk-duzelt">${dogruHtml}</small>`);
+            }
             sonuc(ok);
           });
           geriBildirim(k.querySelector('.etk-geri'), hepsi, hepsi ? 'Bütün boşluklar doğru.' : 'Kırmızı boşlukların doğrusu yanlarında yazıyor.');
@@ -187,8 +198,21 @@
       guncelle();
     }
 
-    kok.querySelector('.etk-sifirla').addEventListener('click', () => { kok.querySelector('.etk-liste').innerHTML = ilkHal; kur(); });
+    kok.querySelector('.etk-sifirla').addEventListener('click', () => { kok.querySelector('.etk-liste').innerHTML = ilkHal; kur(); sesliDinleKur(kok); });
     kur();
+  }
+
+  // İngilizce metin mi kontrolü (Türkçe etiketleri ve dilbilgisi formüllerini dışlar)
+  const TR_ETIKET_RE = /\b(ipucu|cevap|örnek|ornek|dikkat|kural|not|özet|ozet|soru|çözüm|cozum|adım|adim|yapı|yapi|olumlu|olumsuz|tekil|çoğul|cogul|özne|ozne|yüklem|yuklem|nesne|zaman|fiil|isim|sıfat|sifat|zarf|bağlaç|baglac|edat|zamir|kullanılır|kullanilir|anlamı|anlami|eklenir|gelir|olur|cümle|cumle|hal|hâl|kipi|şahıs|sahis)\b/i;
+  function ingilizceOkunabilirMi(metin) {
+    if (!metin) return false;
+    const temiz = String(metin).replace(/<[^>]+>/g, ' ').replace(/[🔊📢🔈🔉]/g, '').trim();
+    if (temiz.length < 2 || temiz.length > 95) return false;
+    if (/[çğıöşüÇĞİÖŞÜ\u0600-\u06FF]/.test(temiz)) return false;
+    if (!/[a-zA-Z]{2,}/.test(temiz)) return false;
+    if (/\bV[123₁₂₃]\b|[+→=…]/.test(temiz)) return false;
+    if (TR_ETIKET_RE.test(temiz)) return false;
+    return true;
   }
 
   // 2. Kavram Kartları (Flashcards)
@@ -217,54 +241,59 @@
     const oncekiDugme = bolum.querySelector('.fkart-onceki');
     const sonrakiDugme = bolum.querySelector('.fkart-sonraki');
     const karistirDugme = bolum.querySelector('.fkart-karistir');
-
-    const isIngilizceSayfa = !!document.querySelector('.ozet.ders-ingilizce, .ozet-bas.ders-ingilizce') || location.pathname.includes('ingilizce');
-    const isArapcaSayfa = !!document.querySelector('.ozet.ders-arapca, .ozet-bas.ders-arapca') || location.pathname.includes('arapca');
-
-    function kartSesDurumunuGuncelle() {
-      if (!onMetin) return;
-      const k = deste[sira];
-      if (!k) return;
-      const metin = (k.on || '').replace(/<[^>]+>/g, ' ').replace(/[🔊📢🔈🔉]/g, '').trim();
-      const arapcaMi = isArapcaSayfa || /[\u0600-\u06FF]/.test(metin);
-      const ingilizceMi = isIngilizceSayfa || (!/[çğıöşüÇĞİÖŞÜ]/.test(metin) && /[a-zA-Z]/.test(metin));
-
-      if (arapcaMi && metin.length > 0) {
-        onMetin.classList.remove('sesli-en');
-        onMetin.classList.add('sesli-ar', 'sesli-kart');
-        onMetin.title = 'Arapça telaffuzu dinlemek için dokunun';
-        onMetin.dataset.sesDil = 'ar-SA';
-      } else if (ingilizceMi && metin.length >= 2 && metin.length <= 95) {
-        onMetin.classList.remove('sesli-ar');
-        onMetin.classList.add('sesli-en', 'sesli-kart');
-        onMetin.title = 'İngilizce telaffuzu dinlemek için dokunun';
-        onMetin.dataset.sesDil = 'en-US';
-      } else {
-        onMetin.classList.remove('sesli-ar', 'sesli-en', 'sesli-kart');
-        onMetin.removeAttribute('title');
-        delete onMetin.dataset.sesDil;
+    let sesDugme = bolum.querySelector('.fkart-ses');
+    if (!sesDugme) {
+      const araclar = bolum.querySelector('.fkart-araclar');
+      if (araclar) {
+        sesDugme = document.createElement('button');
+        sesDugme.type = 'button';
+        sesDugme.className = 'dugme fkart-ses';
+        sesDugme.hidden = true;
+        sesDugme.textContent = '🔊 Seslendir';
+        araclar.prepend(sesDugme);
       }
     }
 
-    if (onMetin) {
-      onMetin.addEventListener('click', (ev) => {
-        if (!onMetin.classList.contains('sesli-kart') && !onMetin.classList.contains('sesli-en') && !onMetin.classList.contains('sesli-ar')) return;
-        ev.stopPropagation();
-        ev.preventDefault();
-        const suAnki = deste[sira];
-        const okunacak = (onMetin.textContent || suAnki?.on || '').replace(/[🔊📢🔈🔉]/g, '').trim();
-        if (!okunacak) return;
-        const dil = onMetin.dataset.sesDil || (onMetin.classList.contains('sesli-ar') ? 'ar-SA' : 'en-US');
-        sesliOku(okunacak, dil);
-        onMetin.classList.add('okunuyor');
-        setTimeout(() => onMetin.classList.remove('okunuyor'), 1100);
-      });
-      onMetin.addEventListener('keydown', (ev) => {
-        if ((ev.key === 'Enter' || ev.key === ' ') && (onMetin.classList.contains('sesli-en') || onMetin.classList.contains('sesli-ar') || onMetin.classList.contains('sesli-kart'))) {
-          ev.preventDefault();
-          ev.stopPropagation();
-          onMetin.click();
+    const isIngilizceSayfa = !!document.querySelector('.ozet.ders-ingilizce, .ozet-bas.ders-ingilizce') || location.pathname.includes('ingilizce');
+    const isArapcaSayfa = !!document.querySelector('.ozet.ders-arapca, .ozet-bas.ders-arapca, .ozet.ders-mesleki-arapca, .ozet-bas.ders-mesleki-arapca') || location.pathname.includes('arapca');
+
+    function aktifKartSesBilgisi() {
+      const k = deste[sira];
+      if (!k) return null;
+      const cevrik = kartDugme.classList.contains('cevrik');
+      const aktifHtml = cevrik ? k.arka : k.on;
+      const yedekHtml = cevrik ? k.on : k.arka;
+      for (const htmlMetin of [aktifHtml, yedekHtml]) {
+        const duz = String(htmlMetin || '').replace(/<[^>]+>/g, ' ').replace(/[🔊📢🔈🔉]/g, '').trim();
+        const arParcalar = duz.match(/[\u0600-\u06FF\u064B-\u065F\u0670\u0640]+(?:\s+[\u0600-\u06FF\u064B-\u065F\u0670\u0640]+)*/g);
+        if (arParcalar && arParcalar.length) {
+          return { metin: arParcalar.join(' '), dil: 'ar-SA' };
         }
+        if (isIngilizceSayfa && ingilizceOkunabilirMi(duz)) {
+          return { metin: duz, dil: 'en-US' };
+        }
+      }
+      return null;
+    }
+
+    function kartSesDurumunuGuncelle() {
+      const bilgi = aktifKartSesBilgisi();
+      if (sesDugme) {
+        sesDugme.hidden = !bilgi;
+        if (bilgi) {
+          sesDugme.title = bilgi.dil === 'ar-SA' ? 'Karttaki Arapça ifadeyi seslendir' : 'Karttaki İngilizce ifadeyi seslendir';
+        }
+      }
+    }
+
+    if (sesDugme) {
+      sesDugme.addEventListener('click', (ev) => {
+        ev.stopPropagation();
+        const bilgi = aktifKartSesBilgisi();
+        if (!bilgi) return;
+        sesliOku(bilgi.metin, bilgi.dil);
+        sesDugme.classList.add('okunuyor');
+        setTimeout(() => sesDugme.classList.remove('okunuyor'), 1100);
       });
     }
 
@@ -289,13 +318,15 @@
       if (arkaMetin) arkaMetin.innerHTML = k.arka;
       sayac.innerHTML = `<b>${sira + 1}</b> / ${deste.length}`;
       [...noktalarKap.children].forEach((n, idx) => n.classList.toggle('etkin', idx === sira));
+      sesliDinleKur(kartDugme);
       kartSesDurumunuGuncelle();
     }
 
     kartDugme.addEventListener('click', (ev) => {
-      if (ev.target.closest('.ses-dugme, .sesli-ar, .sesli-en, .sesli-kart')) return;
+      if (ev.target.closest('.ses-dugme, .sesli-ar')) return;
       const cevrik = kartDugme.classList.toggle('cevrik');
       kartDugme.setAttribute('aria-pressed', cevrik ? 'true' : 'false');
+      kartSesDurumunuGuncelle();
     });
 
     oncekiDugme.addEventListener('click', () => {
@@ -546,12 +577,18 @@
   function sesliOku(metin, dil = 'en-US') {
     if (!('speechSynthesis' in window) || !metin) return;
     try {
-      const temiz = String(metin)
+      let temiz = String(metin)
         .replace(/<[^>]+>/g, ' ')
         .replace(/[\u{1F300}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '')
         .replace(/[🔊📢🔈🔉↻↺]/g, '')
         .replace(/\s+/g, ' ')
         .trim();
+      if (dil.startsWith('ar')) {
+        const arParcalar = temiz.match(/[\u0600-\u06FF\u064B-\u065F\u0670\u0640]+/g);
+        if (arParcalar && arParcalar.length) temiz = arParcalar.join(' ');
+      } else if (dil.startsWith('en')) {
+        temiz = temiz.replace(/\([^)]*[çğıöşüÇĞİÖŞÜ][^)]*\)/g, ' ').replace(/\s+/g, ' ').trim();
+      }
       if (!temiz) return;
 
       window.speechSynthesis.cancel();
@@ -614,13 +651,13 @@
       });
     });
 
-    // İngilizce ders özetlerinde kalın/italik İngilizce ifadeler ve tablo terimleri için ses düğmesi
+    // İngilizce ders özetlerinde kalın İngilizce ifadeler ve tablo terimleri için ses düğmesi
     const ingilizceSayfa = document.querySelector('.ozet.ders-ingilizce, .ozet-bas.ders-ingilizce') || location.pathname.includes('ingilizce');
     if (ingilizceSayfa) {
       kapsayici.querySelectorAll('.ozet-bolum.konu li b, .ozet-bolum.konu p b, .ozet-bolum.konu .ozet-tablo tbody td:first-child').forEach((el) => {
         if (el.dataset.sesKuruldu === '1') return;
         const testMetin = (el.textContent || '').trim();
-        if (testMetin.length < 2 || testMetin.length > 95 || /[çğıöşüÇĞİÖŞÜ]/.test(testMetin) || !/[a-zA-Z]/.test(testMetin)) return;
+        if (!ingilizceOkunabilirMi(testMetin)) return;
         el.dataset.sesKuruldu = '1';
         el.classList.add('sesli-en');
         el.title = 'İngilizce telaffuzu dinlemek için dokunun';

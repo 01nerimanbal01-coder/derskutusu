@@ -237,6 +237,45 @@ def plan_sec(adaylar):
     return sorted(adaylar, key=puan)[0]
 
 
+def ozetlerden_agac(sinif, ders, referans_haftalar):
+    ozet_klasor = Path(__file__).resolve().parent / 'ozetler'
+    dosyalar = sorted(
+        ozet_klasor.glob(f'{sinif}-{ders}-*.json'),
+        key=lambda p: int(p.stem.rsplit('-', 1)[-1]) if p.stem.rsplit('-', 1)[-1].isdigit() else 999
+    )
+    if not dosyalar:
+        return None, None
+    uniteler, sira_u, haftalar = {}, [], {}
+    for p in dosyalar:
+        o = json.loads(p.read_text(encoding='utf-8'))
+        no = int(o['hafta'])
+        ref = referans_haftalar.get(str(no), {})
+        haftalar[str(no)] = {'bas': ref.get('bas', ''), 'ad': o.get('tarih') or ref.get('ad', f'{no}. Hafta')}
+        u_ham = o.get('unite') or 'Genel'
+        u = unite_temiz(u_ham, ders == 'ingilizce') or u_ham
+        k = (o.get('konu') or u).strip()
+        ua = anahtar(u)
+        if ua not in uniteler:
+            uniteler[ua] = {'ad': u, 'konular': {}, 'sira': []}
+            sira_u.append(ua)
+        kn = uniteler[ua]
+        ka = anahtar(k)
+        if ka not in kn['konular']:
+            kn['konular'][ka] = {'ad': k, 'haftalar': []}
+            kn['sira'].append(ka)
+        if no not in kn['konular'][ka]['haftalar']:
+            kn['konular'][ka]['haftalar'].append(no)
+    kullanilan = set()
+    cikti = []
+    for ua in sira_u:
+        u = uniteler[ua]
+        cikti.append({
+            'ad': u['ad'],
+            'konular': [{'kod': kod_yap(u['konular'][ka]['ad'], kullanilan), **u['konular'][ka]} for ka in u['sira']]
+        })
+    return haftalar, cikti
+
+
 def main():
     gp = json.loads((VERI / 'gunluk-planlar.json').read_text(encoding='utf-8'))
     dersler = json.loads((VERI / 'dersler.json').read_text(encoding='utf-8'))
@@ -246,6 +285,7 @@ def main():
             gruplar.setdefault((s, p['ders']), []).append(p)
     CIKTI.mkdir(parents=True, exist_ok=True)
     dizin, yazilan = {}, set()
+    referans_haftalar = {}
     for (s, d), adaylar in sorted(gruplar.items()):
         if d not in dersler['dersler']:
             continue
@@ -255,6 +295,8 @@ def main():
             print('PLAN YOK:', yol.name)
             continue
         haftalar, uniteler = agac(json.loads(yol.read_text(encoding='utf-8')), d)
+        if not referans_haftalar and haftalar:
+            referans_haftalar = haftalar
         ad = f'{s}-{d}'
         o = {'sinif': s, 'ders': d, 'plan': p['ad'], 'haftalar': haftalar, 'uniteler': uniteler}
         metin = json.dumps(o, ensure_ascii=False, separators=(',', ':')) + '\n'
@@ -263,6 +305,25 @@ def main():
             hedef.write_text(metin, encoding='utf-8')
         yazilan.add(hedef.name)
         dizin[ad] = {'unite': len(uniteler), 'konu': sum(len(u['konular']) for u in uniteler)}
+
+    # Günlük planı olmayan ama dersler.json ve araclar/ozetler içinde bulunan dersler (ör. 9-12 İngilizce)
+    for s_str, d_list in sorted(dersler.get('siniflar', {}).items(), key=lambda x: int(x[0])):
+        s = int(s_str)
+        for d in d_list:
+            ad = f'{s}-{d}'
+            if ad in dizin or d not in dersler['dersler']:
+                continue
+            haftalar, uniteler = ozetlerden_agac(s, d, referans_haftalar)
+            if not uniteler:
+                continue
+            o = {'sinif': s, 'ders': d, 'plan': f'{ad}-ozet', 'haftalar': haftalar, 'uniteler': uniteler}
+            metin = json.dumps(o, ensure_ascii=False, separators=(',', ':')) + '\n'
+            hedef = CIKTI / f'{ad}.json'
+            if not hedef.exists() or hedef.read_text(encoding='utf-8') != metin:
+                hedef.write_text(metin, encoding='utf-8')
+            yazilan.add(hedef.name)
+            dizin[ad] = {'unite': len(uniteler), 'konu': sum(len(u['konular']) for u in uniteler)}
+
     for f in CIKTI.glob('*.json'):
         if f.name not in yazilan and f.name != 'dizin.json':
             f.unlink()
