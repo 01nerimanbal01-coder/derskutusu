@@ -1,0 +1,263 @@
+{
+  "ad": "12-matematik-10",
+  "sinif": 12,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 10,
+  "tarih": "23-27 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "GEOMETRİ: TRİGONOMETRİ",
+  "konu": "İki Açının Toplam ve Farkının Trigonometrik Oranları: sin(a±b), cos(a±b), tan(a±b), cot(a±b) Formülleri ve Geometrik Uygulamaları (12.3.1.1)",
+  "ciktilar": [
+    "İki açının toplamının ve farkının sinüs ve kosinüs değerlerine ait toplam-fark formüllerini oluşturarak işlemler yapar.",
+    "İki açının toplamının ve farkının tanjant ve kotanjant değerlerine ait toplam-fark formüllerini cebirsel işlemlerde uygular.",
+    "Toplam ve fark formüllerini dik üçgen, kare ve dikdörtgen gibi geometrik şekiller üzerindeki açıların trigonometrik oranlarını bulmada kullanır."
+  ],
+  "giris": "Bilinen özel açıların (30°, 45°, 60°) yardımıyla 15°, 75° veya 105° gibi açıların trigonometrik değerlerini tam olarak hesaplayabilmek ve karmaşık trigonometrik ifadeleri sadeleştirebilmek için toplam ve fark formülleri kullanılır. Birim çember ve kosinüs teoreminden elde edilen bu bağıntılar, hem analitik geometride iki doğru arasındaki açının bulunmasında hem de mühendislik hesaplamalarında temel araçtır.",
+  "bolumler": [
+    {
+      "baslik": "Sinüs ve Kosinüs Toplam-Fark Formülleri",
+      "metin": [
+        "Trigonometrik fonksiyonlar doğrusal (lineer) olmadığı için {koyu:sin(a + b) ≠ sin(a) + sin(b)} ve {koyu:cos(a + b) ≠ cos(a) + cos(b)} eşitsizlikleri geçerlidir. Birim çember üzerindeki iki nokta arasındaki uzaklık bağıntısı ile Kosinüs Teoremi birbirine eşitlendiğinde kosinüs ve sinüs fonksiyonlarının toplam-fark formülleri elde edilir.",
+        "{koyu:Sinüs Toplam ve Fark Formülleri}: Sinüs fonksiyonu paylaşımcı ve uyumlu bir yapı gösterir; terimlerde bir sinüs bir kosinüs çarpılır ve aradaki işaret korunur:\n• {koyu:sin(a + b) = sin(a)·cos(b) + cos(a)·sin(b)}\n• {koyu:sin(a - b) = sin(a)·cos(b) - cos(a)·sin(b)}",
+        "{koyu:Kosinüs Toplam ve Fark Formülleri}: Kosinüs fonksiyonunda önce kosinüsler, sonra sinüsler birbiriyle çarpılır ve aradaki işaret {koyu:zıt işaretliye} dönüşür:\n• {koyu:cos(a + b) = cos(a)·cos(b) - sin(a)·sin(b)}\n• {koyu:cos(a - b) = cos(a)·cos(b) + sin(a)·sin(b)}\nBu formüllerle {koyu:15° = 45° - 30°} veya {koyu:75° = 45° + 30°} dönüşümleri yapılarak özel olmayan açıların trigonometrik değerleri kolayca hesaplanır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">SİNÜS VE KOSİNÜS TOPLAM - FARK FORMÜLLERİ</text>\n  <rect x=\"25\" y=\"48\" width=\"315\" height=\"192\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\">SİNÜS FORMÜLLERİ (Paylaşımcı &amp; Aynı İşaret)</text>\n  <rect x=\"40\" y=\"88\" width=\"285\" height=\"58\" rx=\"6\" fill=\"#ffffff\" stroke=\"#60a5fa\" stroke-width=\"1.5\"/>\n  <text x=\"182\" y=\"110\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">sin(a + b) = sin(a)·cos(b) + cos(a)·sin(b)</text>\n  <text x=\"182\" y=\"132\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">sin(a - b) = sin(a)·cos(b) - cos(a)·sin(b)</text>\n  <text x=\"42\" y=\"168\" font-size=\"11\" fill=\"#1e3a8a\">• <tspan font-weight=\"bold\">sin(15°)</tspan> = sin(45° - 30°) = (kök(6) - kök(2)) / 4</text>\n  <text x=\"42\" y=\"190\" font-size=\"11\" fill=\"#1e3a8a\">• <tspan font-weight=\"bold\">sin(75°)</tspan> = sin(45° + 30°) = (kök(6) + kök(2)) / 4</text>\n  <text x=\"182\" y=\"220\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">Kodlama: \"sin·cos ± cos·sin\" (İşaret değişmez)</text>\n  <rect x=\"360\" y=\"48\" width=\"315\" height=\"192\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"517\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#166534\">KOSİNÜS FORMÜLLERİ (Bencil &amp; Zıt İşaret)</text>\n  <rect x=\"375\" y=\"88\" width=\"285\" height=\"58\" rx=\"6\" fill=\"#ffffff\" stroke=\"#4ade80\" stroke-width=\"1.5\"/>\n  <text x=\"517\" y=\"110\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#14532d\">cos(a + b) = cos(a)·cos(b) - sin(a)·sin(b)</text>\n  <text x=\"517\" y=\"132\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#14532d\">cos(a - b) = cos(a)·cos(b) + sin(a)·sin(b)</text>\n  <text x=\"377\" y=\"168\" font-size=\"11\" fill=\"#14532d\">• <tspan font-weight=\"bold\">cos(15°)</tspan> = cos(45° - 30°) = (kök(6) + kök(2)) / 4</text>\n  <text x=\"377\" y=\"190\" font-size=\"11\" fill=\"#14532d\">• <tspan font-weight=\"bold\">cos(75°)</tspan> = cos(45° + 30°) = (kök(6) - kök(2)) / 4</text>\n  <text x=\"517\" y=\"220\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">Kodlama: \"cos·cos ∓ sin·sin\" (İşaret ters döner)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Kosinüs toplam formülünde (cos(a + b)) aradaki işaret EKSİ (-), kosinüs fark formülünde (cos(a - b)) ise aradaki işaret ARTI (+) olur; sinüs formüllerinde ise işaret korunur."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Sorularda a·sin(x) + b·cos(x) biçiminde bir ifade verildiğinde ve katsayılar arasındaki oran tan(α) olarak yazıldığında ifade tek bir sinüs veya kosinüs toplam formülüne dönüştürülebilir."
+        }
+      ]
+    },
+    {
+      "baslik": "Tanjant ve Kotanjant Toplam-Fark Formülleri",
+      "metin": [
+        "Sinüs toplam-fark formüllerinin kosinüs toplam-fark formüllerine oranlanmasıyla ({koyu:tan(a ± b) = {kesir:sin(a ± b)|cos(a ± b)}}) ve pay ile paydanın {koyu:cos(a)·cos(b)} çarpımına bölünmesiyle tanjant fonksiyonunun toplam ve fark bağıntıları elde edilir.",
+        "{koyu:Tanjant Toplam ve Fark Formülleri}:\n• {koyu:tan(a + b) = {kesir:tan(a) + tan(b)|1 - tan(a)·tan(b)}}\n• {koyu:tan(a - b) = {kesir:tan(a) - tan(b)|1 + tan(a)·tan(b)}}\nPay kısmında açılar arasındaki işlem işareti korunurken, payda kısmında 1 ile tanjantlar çarpımı arasındaki işaret tersine döner.",
+        "{koyu:Kotanjant Toplam ve Fark Formülleri}: Kotanjant sorularında genellikle önce {koyu:tan(a ± b)} hesaplanıp ardından {koyu:cot(a ± b) = {kesir:1|tan(a ± b)}} çarpmaya göre tersi alınır. Doğrudan formülleri ise {koyu:cot(a + b) = {kesir:cot(a)·cot(b) - 1|cot(b) + cot(a)}} ve {koyu:cot(a - b) = {kesir:cot(a)·cot(b) + 1|cot(b) - cot(a)}} şeklindedir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">TANJANT VE KOTANJANT TOPLAM - FARK BAĞINTILARI</text>\n  <rect x=\"25\" y=\"48\" width=\"320\" height=\"192\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"185\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#92400e\">TANJANT TOPLAM VE FARK</text>\n  <rect x=\"42\" y=\"88\" width=\"286\" height=\"44\" rx=\"6\" fill=\"#ffffff\" stroke=\"#fbbf24\"/>\n  <text x=\"185\" y=\"115\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#78350f\">tan(a + b) = [tan(a) + tan(b)] / [1 - tan(a)·tan(b)]</text>\n  <rect x=\"42\" y=\"140\" width=\"286\" height=\"44\" rx=\"6\" fill=\"#ffffff\" stroke=\"#fbbf24\"/>\n  <text x=\"185\" y=\"167\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#78350f\">tan(a - b) = [tan(a) - tan(b)] / [1 + tan(a)·tan(b)]</text>\n  <text x=\"42\" y=\"206\" font-size=\"11\" fill=\"#78350f\">• <tspan font-weight=\"bold\">tan(15°)</tspan> = tan(45° - 30°) = 2 - kök(3)</text>\n  <text x=\"42\" y=\"226\" font-size=\"11\" fill=\"#78350f\">• <tspan font-weight=\"bold\">tan(75°)</tspan> = tan(45° + 30°) = 2 + kök(3)</text>\n  <rect x=\"360\" y=\"48\" width=\"315\" height=\"192\" rx=\"10\" fill=\"#fae8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"517\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#6b21a8\">ÖZEL DURUMLAR VE PRATİK İPUÇLARI</text>\n  <text x=\"378\" y=\"98\" font-size=\"11\" fill=\"#581c87\">• <tspan font-weight=\"bold\">tan(45° + a)</tspan> = (1 + tan(a)) / (1 - tan(a))</text>\n  <text x=\"378\" y=\"122\" font-size=\"11\" fill=\"#581c87\">• <tspan font-weight=\"bold\">tan(45° - a)</tspan> = (1 - tan(a)) / (1 + tan(a))</text>\n  <text x=\"378\" y=\"146\" font-size=\"11\" fill=\"#581c87\">• <tspan font-weight=\"bold\">Kotanjant Geçişi:</tspan> cot(a ± b) = 1 / tan(a ± b)</text>\n  <text x=\"378\" y=\"170\" font-size=\"11\" fill=\"#581c87\">• Eğer <tspan font-weight=\"bold\">a + b = 45°</tspan> ise:</text>\n  <text x=\"388\" y=\"190\" font-size=\"12\" font-weight=\"bold\" fill=\"#7e22ce\">(1 + tan(a)) · (1 + tan(b)) = 2</text>\n  <rect x=\"378\" y=\"202\" width=\"279\" height=\"28\" rx=\"5\" fill=\"#ffffff\" stroke=\"#c084fc\"/>\n  <text x=\"517\" y=\"220\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">tan(90°) tanımsız ise payda: 1 - tan(a)·tan(b) = 0</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "tan(45°) = 1 olduğu için sorularda sıkça karşılaşılan {kesir:1 + tan(x)|1 - tan(x)} ifadesi doğrudan tan(45° + x) açılımına; {kesir:1 - tan(x)|1 + tan(x)} ifadesi ise tan(45° - x) açılımına eşittir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Cot(a ± b) sorulduğunda kotanjant formülünü ezberlemek yerine tan(a ± b) değerini bulup pay ile paydasını yer değiştirmek işlem hatası riskini azaltır."
+        }
+      ]
+    },
+    {
+      "baslik": "Toplam ve Fark Formüllerinin Geometrik Şekillerde Uygulamaları",
+      "metin": [
+        "Kare, dikdörtgen, dik üçgen veya birim kareli zemin üzerinde verilen ve dik üçgenin içinde yer almayan bir {koyu:θ} açısının trigonometrik oranı (özellikle {koyu:tan(θ)} veya {koyu:cot(θ)}) sorulduğunda, {koyu:θ} açısı dik üçgenlerin dar açıları olan iki açının {koyu:toplamı (θ = α + β)} veya {koyu:farkı (θ = α - β)} biçiminde yazılır.",
+        "Üçgende {koyu:'komşu olmayan iki iç açının ölçüleri toplamı bir dış açının ölçüsüne eşittir'} ({koyu:dış açı = α + β}) veya doğrusal açı ({koyu:α + θ + β = 180° → θ = 180° - (α + β)}) özellikleri sıklıkla kullanılır. Bütünler açılarda {koyu:tan(180° - x) = -tan(x)} ve {koyu:cos(180° - x) = -cos(x)} olduğu unutulmamalıdır.",
+        "Dik üçgenlerdeki kenar uzunluklarından {koyu:tan(α)} ve {koyu:tan(β)} oranları kolayca okunur ve tanjant toplam veya fark formülünde yerine yazılarak istenen trigonometrik değer bulunur."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">KARE VE DİK ÜÇGEN ÜZERİNDE TOPLAM-FARK UYGULAMALARI</text>\n  <rect x=\"25\" y=\"48\" width=\"310\" height=\"192\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"70\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">Kare İçinde Açı Taşıma (θ = 90° - (α + β))</text>\n  <rect x=\"75\" y=\"85\" width=\"130\" height=\"130\" fill=\"#ffffff\" stroke=\"#1e40af\" stroke-width=\"2\"/>\n  <line x1=\"75\" y1=\"85\" x2=\"205\" y2=\"150\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <line x1=\"75\" y1=\"85\" x2=\"140\" y2=\"215\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <text x=\"62\" y=\"82\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"210\" y=\"82\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"210\" y=\"222\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"62\" y=\"222\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">D</text>\n  <text x=\"115\" y=\"102\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563eb\">α</text>\n  <text x=\"102\" y=\"120\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">θ</text>\n  <text x=\"83\" y=\"135\" font-size=\"11\" font-weight=\"bold\" fill=\"#16a34a\">β</text>\n  <text x=\"220\" y=\"120\" font-size=\"11\" fill=\"#1e3a8a\">• α + θ + β = 90°</text>\n  <text x=\"220\" y=\"142\" font-size=\"11\" fill=\"#1e3a8a\">• θ = 90° - (α + β)</text>\n  <text x=\"220\" y=\"164\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">• tan(θ) = cot(α + β)</text>\n  <text x=\"220\" y=\"186\" font-size=\"11\" fill=\"#1e3a8a\">• tan(α) = 1/2, tan(β) = 1/2</text>\n  <text x=\"220\" y=\"208\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">• tan(θ) = 3 / 4</text>\n  <rect x=\"355\" y=\"48\" width=\"320\" height=\"192\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"515\" y=\"70\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">Geometrik Çözüm Stratejisi (3 Adım)</text>\n  <text x=\"372\" y=\"98\" font-size=\"11\" fill=\"#14532d\"><tspan font-weight=\"bold\">1. Adım:</tspan> İstenen açıyı (θ), dik üçgenlerin içindeki</text>\n  <text x=\"382\" y=\"116\" font-size=\"11\" fill=\"#14532d\">dar açıların (α ve β) toplamı veya farkı olarak yaz.</text>\n  <text x=\"372\" y=\"142\" font-size=\"11\" fill=\"#14532d\"><tspan font-weight=\"bold\">2. Adım:</tspan> Dik üçgenlerden karşı/komşu oranlarıyla</text>\n  <text x=\"382\" y=\"160\" font-size=\"11\" fill=\"#14532d\">tan(α) ve tan(β) değerlerini rasyonel olarak bul.</text>\n  <text x=\"372\" y=\"186\" font-size=\"11\" fill=\"#14532d\"><tspan font-weight=\"bold\">3. Adım:</tspan> tan(α ± β) formülünde yerine koy; eğer</text>\n  <text x=\"382\" y=\"204\" font-size=\"11\" fill=\"#14532d\">sin(θ) veya cos(θ) isteniyorsa dik üçgen çiz!</text>\n  <text x=\"515\" y=\"228\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">İki iç açının toplamı komşu olmayan dış açıya eşittir.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Geometrik şekil sorularında α + θ + β = 90° eşitliği oluştuğunda θ = 90° - (α + β) olduğundan tan(θ) = tan(90° - (α + β)) = cot(α + β) = {kesir:1|tan(α + β)} dönüşümüne dikkat edilmelidir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Bir açının tanjantını toplam-fark formülüyle bulduktan sonra (örneğin tan(θ) = {kesir:3|4}) sin(θ) veya cos(θ) değeri istenirse, dar açısı θ olan bir dik üçgen çizilerek hipotenüs (3-4-5 üçgeni) yardımıyla sonuca ulaşılır."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "sin(23°)·cos(37°) + cos(23°)·sin(37°) ifadesinin eşitini toplam formülü yardımıyla hesaplayınız.",
+      "cevap": "Verilen ifade sin(a + b) = sin(a)·cos(b) + cos(a)·sin(b) toplam açılımına uymaktadır (a = 23° ve b = 37°). Buna göre ifade sin(23° + 37°) = sin(60°) değerine eşittir. Özel açılardan sin(60°) = {kok:3} / 2 bulunur."
+    },
+    {
+      "soru": "cos(70°)·cos(25°) + sin(70°)·sin(25°) ifadesinin sayısal değerini bulunuz.",
+      "cevap": "Önce kosinüsler sonra sinüsler çarpıldığı ve aradaki işaret artı (+) olduğu için bu ifade cos(a - b) = cos(a)·cos(b) + sin(a)·sin(b) fark açılımıdır. Buradan cos(70° - 25°) = cos(45°) = {kok:2} / 2 elde edilir."
+    },
+    {
+      "soru": "tan(a) = 2 ve tan(b) = 1/3 olduğuna göre tan(a + b) ve tan(a - b) değerlerini hesaplayınız.",
+      "cevap": "Toplam formülünden tan(a + b) = (tan(a) + tan(b)) / (1 - tan(a)·tan(b)) = (2 + 1/3) / (1 - 2·(1/3)) = (7/3) / (1/3) = 7 bulunur. Fark formülünden tan(a - b) = (tan(a) - tan(b)) / (1 + tan(a)·tan(b)) = (2 - 1/3) / (1 + 2/3) = (5/3) / (5/3) = 1 elde edilir."
+    },
+    {
+      "soru": "Dar açılı a ve b açıları için sin(a) = 3/5 ve cos(b) = 12/13 olduğuna göre cos(a + b) değerini hesaplayınız.",
+      "cevap": "Dar açılı dik üçgenlerden; sin(a) = 3/5 ise (3-4-5 üçgeni) cos(a) = 4/5 bulunur. cos(b) = 12/13 ise (5-12-13 üçgeni) sin(b) = 5/13 bulunur. Kosinüs toplam formülünden cos(a + b) = cos(a)·cos(b) - sin(a)·sin(b) = (4/5)·(12/13) - (3/5)·(5/13) = 48/65 - 15/65 = 33/65 elde edilir."
+    },
+    {
+      "soru": "tan(75°) değerini toplam formülünü kullanarak köklü ifade biçiminde hesaplayınız.",
+      "cevap": "75° = 45° + 30° olarak yazılır. tan(45° + 30°) = (tan(45°) + tan(30°)) / (1 - tan(45°)·tan(30°)) = (1 + 1/{kok:3}) / (1 - 1/{kok:3}) = ({kok:3} + 1) / ({kok:3} - 1). Pay ve payda ({kok:3} + 1) eşleniğiyle çarpılırsa (3 + 2{kok:3} + 1) / (3 - 1) = (4 + 2{kok:3}) / 2 = 2 + {kok:3} bulunur."
+    },
+    {
+      "soru": "ABCD karesinde E noktası [BC] kenarının, F noktası ise [CD] kenarının orta noktasıdır. m(EAF) = θ olduğuna göre tan(θ) değeri kaçtır?",
+      "cevap": "Karenin bir kenarına 2 birim diyelim; bu durumda |BE| = |EC| = |CF| = |FD| = 1 birim olur. m(BAE) = α ve m(DAF) = β dersek dik üçgenlerden tan(α) = 1/2 ve tan(β) = 1/2 bulunur. tan(α + β) = (1/2 + 1/2) / (1 - (1/2)·(1/2)) = 1 / (3/4) = 4/3'tür. Köşe açısı α + θ + β = 90° olduğundan tan(θ) = cot(α + β) = 1 / (4/3) = 3/4 bulunur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "soru": "sin(42°)·cos(18°) + cos(42°)·sin(18°) işleminin sonucu aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "1 / 2",
+        "{kok:2} / 2",
+        "{kok:3} / 2",
+        "{kok:3} / 3",
+        "1"
+      ],
+      "dogru": 2,
+      "aciklama": "İfade sin(a + b) açılımıdır: sin(42° + 18°) = sin(60°) = {kok:3} / 2 bulunur.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "(tan(52°) - tan(7°)) / (1 + tan(52°)·tan(7°)) ifadesinin sadeleştirilmiş değeri kaçtır?",
+      "secenekler": [
+        "0",
+        "1",
+        "{kok:3}",
+        "-1",
+        "1 / 2"
+      ],
+      "dogru": 1,
+      "aciklama": "Verilen kesir tan(a - b) fark formülüdür: tan(52° - 7°) = tan(45°) = 1 olur.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Dar açılı x ve y açıları için tan(x) = 1/2 ve tan(y) = 1/3 olduğuna göre x + y toplamı kaç derecedir?",
+      "secenekler": [
+        "15°",
+        "30°",
+        "45°",
+        "60°",
+        "75°"
+      ],
+      "dogru": 2,
+      "aciklama": "tan(x + y) = (tan(x) + tan(y)) / (1 - tan(x)·tan(y)) = (1/2 + 1/3) / (1 - 1/6) = (5/6) / (5/6) = 1 bulunur. Dar açılar için tan(x + y) = 1 olduğundan x + y = 45°'dir.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "(cos(50°)·cos(10°) + sin(50°)·sin(10°)) / sin(40°) ifadesinin eşiti aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "cot(40°)",
+        "tan(40°)",
+        "sin(50°)",
+        "cos(50°)",
+        "1"
+      ],
+      "dogru": 0,
+      "aciklama": "Pay kısmı cos(a - b) fark açılımından cos(50° - 10°) = cos(40°) değerine eşittir. İfade cos(40°) / sin(40°) = cot(40°) olur.",
+      "tur": "coktan"
+    },
+    {
+      "ifadeler": [
+        {
+          "metin": "Her a ve b gerçel sayısı için sin(a + b) = sin(a)·cos(b) + cos(a)·sin(b) özdeşliği geçerlidir.",
+          "dogru": true,
+          "aciklama": "Sinüs toplam formülünde terimler sin·cos + cos·sin şeklinde açılır ve işaret korunur."
+        },
+        {
+          "metin": "Kosinüs toplam formülü cos(a + b) = cos(a)·cos(b) + sin(a)·sin(b) şeklindedir.",
+          "dogru": false,
+          "aciklama": "Kosinüs toplam formülünde aradaki işaret eksi (-) olur: cos(a + b) = cos(a)·cos(b) - sin(a)·sin(b)."
+        },
+        {
+          "metin": "tan(15°) değeri tan(45° - 30°) fark formülü yardımıyla 2 - {kok:3} olarak hesaplanır.",
+          "dogru": true,
+          "aciklama": "tan(45° - 30°) = (1 - 1/{kok:3}) / (1 + 1/{kok:3}) = 2 - {kok:3} değerine eşittir."
+        },
+        {
+          "metin": "(1 + tan(x)) / (1 - tan(x)) ifadesi tan(45° + x) toplam açılımına eşittir.",
+          "dogru": true,
+          "aciklama": "tan(45°) = 1 olduğundan tan(45° + x) = (1 + tan(x)) / (1 - tan(x)) özdeşliği elde edilir."
+        },
+        {
+          "metin": "Her a ve b açısı için sin(a + b) değeri sin(a) + sin(b) toplamına eşittir.",
+          "dogru": false,
+          "aciklama": "Sinüs fonksiyonu toplama işlemi üzerine dağılmaz; sin(a + b) toplam formülüyle hesaplanır."
+        }
+      ],
+      "tur": "dy"
+    },
+    {
+      "ciftler": [
+        [
+          "sin(a)·cos(b) + cos(a)·sin(b)",
+          "sin(a + b) toplam formülünün açılımı"
+        ],
+        [
+          "cos(a)·cos(b) - sin(a)·sin(b)",
+          "cos(a + b) toplam formülünün açılımı"
+        ],
+        [
+          "cos(a)·cos(b) + sin(a)·sin(b)",
+          "cos(a - b) fark formülünün açılımı"
+        ],
+        [
+          "(tan(a) + tan(b)) / (1 - tan(a)·tan(b))",
+          "tan(a + b) toplam formülünün açılımı"
+        ],
+        [
+          "(tan(a) - tan(b)) / (1 + tan(a)·tan(b))",
+          "tan(a - b) fark formülünün açılımı"
+        ]
+      ],
+      "tur": "eslestir"
+    },
+    {
+      "cumleler": [
+        {
+          "metin": "Kosinüs fark formülünde cos(a - b) açılımı yapılırken terimler arasındaki işlem işareti ___ olur.",
+          "cevap": "artı"
+        },
+        {
+          "metin": "Sinüs fark formülü olan sin(a - b) açılımında sin(a)·cos(b) teriminden ___ çarpımı çıkarılır.",
+          "cevap": "cos(a)·sin(b)"
+        },
+        {
+          "metin": "tan(45° - x) ifadesinin açılımı (1 - tan(x)) ifadesinin ___ ifadesine bölümüne eşittir.",
+          "cevap": "1 + tan(x)"
+        },
+        {
+          "metin": "Özel açılardan yararlanılarak hesaplanan sin(75°) değeri ___ açısının kosinüs değerine eşittir.",
+          "cevap": "15°"
+        },
+        {
+          "metin": "Dar açılı a ve b için tan(a + b) tanımsız ise tan(a)·tan(b) çarpımının değeri ___ sayısına eşittir.",
+          "cevap": "1"
+        }
+      ],
+      "fazla": [
+        "eksi",
+        "0"
+      ],
+      "tur": "bosluk"
+    },
+    {
+      "soru": "sin(15°) ve cos(15°) değerlerini 45° ve 30° özel açılarını ve sinüs-kosinüs fark formüllerini kullanarak adım adım hesaplayınız.",
+      "ipuclari": [
+        "15° = 45° - 30° eşitliğini kullanarak sin(45° - 30°) ve cos(45° - 30°) fark açılımlarını yazınız.",
+        "sin(45°) = cos(45°) = {kok:2}/2, sin(30°) = 1/2 ve cos(30°) = {kok:3}/2 değerlerini formüllerde yerine koyunuz.",
+        "Paydaları eşitleyerek sonuçları ({kok:6} ∓ {kok:2}) / 4 biçiminde düzenleyiniz."
+      ],
+      "cevap": "Birinci adımda 15° = 45° - 30° yazılarak sinüs fark formülü uygulanır: sin(15°) = sin(45° - 30°) = sin(45°)·cos(30°) - cos(45°)·sin(30°). İkinci adımda özel açı değerleri yerine konur: sin(15°) = ({kok:2}/2)·({kok:3}/2) - ({kok:2}/2)·(1/2) = ({kok:6} - {kok:2}) / 4 bulunur. Üçüncü adımda kosinüs fark formülü uygulanır: cos(15°) = cos(45° - 30°) = cos(45°)·cos(30°) + sin(45°)·sin(30°) = ({kok:2}/2)·({kok:3}/2) + ({kok:2}/2)·(1/2) = ({kok:6} + {kok:2}) / 4 elde edilir.",
+      "tur": "ogretici"
+    }
+  ],
+  "ozet": [
+    "Sinüs toplam ve fark formüllerinde terimler 'sin·cos ± cos·sin' biçiminde dizilir ve aradaki işaret korunur.",
+    "Kosinüs toplam ve fark formüllerinde terimler 'cos·cos ∓ sin·sin' biçiminde dizilir ve aradaki işaret tersine döner.",
+    "Tanjant toplam ve fark formülü tan(a ± b) = (tan(a) ± tan(b)) / (1 ∓ tan(a)·tan(b)) bağıntısıyla hesaplanır.",
+    "Özel olmayan 15°, 75° ve 105° gibi açıların trigonometrik oranları 30°, 45° ve 60° açılarının toplamı veya farkı şeklinde yazılarak bulunur.",
+    "Kare, dikdörtgen ve dik üçgen üzerindeki açı sorularında istenen açı, dik üçgenlerin dar açılarının toplamı veya farkı cinsinden ifade edilerek çözülür."
+  ]
+}

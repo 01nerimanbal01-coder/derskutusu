@@ -1,0 +1,263 @@
+{
+  "ad": "9-matematik-10",
+  "sinif": 9,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 10,
+  "tarih": "23-27 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "NİCELİKLER VE DEĞİŞİMLER",
+  "konu": "Mutlak Değer Fonksiyonu m(x) = ±|ax ± b| ± c ve Nitel Özellikleri: Grafik Çizimi, Tepe Noktası, Simetri Ekseni, Tanım-Görüntü Kümesi ve Parçalı Gösterim (MAT.9.2.2)",
+  "ciktilar": [
+    "Gerçek sayılarda tanımlı f(x) = x doğrusal referans fonksiyonu ile n(x) = ±|x| ve m(x) = ±|h(x)| ± c mutlak değer fonksiyonları arasındaki cebirsel ve grafiksel benzerlik ile farklılıkları gözlemler (MAT.9.2.2.a).",
+    "Gerçek sayılarda m(x) = ±|ax ± b| ± c (a ≠ 0) şeklinde tanımlı mutlak değer fonksiyonunun nitel özelliklerini (tanım ve görüntü kümesi, tepe noktası, simetri ekseni, sıfırları, artanlık-azalanlık, maksimum-minimum ve bire birlik) tespit eder (MAT.9.2.2.b).",
+    "Tespit ettiği nitel özelliklerden ve kritik noktadan hareketle m(x) = ±|ax ± b| ± c mutlak değer fonksiyonunun iki doğrusal koldan oluşan parçalı fonksiyon gösterimine yönelik çıkarımda bulunur (MAT.9.2.2.c)."
+  ],
+  "giris": "Bir sayının sayı doğrusunda sıfıra (başlangıç noktasına) olan uzaklığı negatif olamaz ve {koyu:mutlak değer} ile ifade edilir. Gerçek sayılarda tanımlı {koyu:h(x) = ax + b} doğrusal fonksiyonunun mutlak değeri alındığında, grafiğin x ekseni altında kalan negatif kısmının x eksenine göre simetriği yukarı katlanır ve karakteristik {koyu:'V' (veya ters 'Λ') biçimli mutlak değer fonksiyonu grafiği} ortaya çıkar. Bu haftaki dersimizde doğrusal fonksiyonlarla analoji kurarak mutlak değer fonksiyonlarının tüm nitel özelliklerini ve parçalı gösterimini inceliyoruz.",
+  "bolumler": [
+    {
+      "baslik": "Doğrusal Fonksiyondan Mutlak Değer Fonksiyonuna Geçiş: n(x) = ±|x| (MAT.9.2.2.a)",
+      "metin": [
+        "Gerçek sayılarda tanımlı {koyu:f(x) = x} doğrusal referans fonksiyonunun grafiği orijinden geçen ve eğimi 1 olan bir doğrudur. Bu fonksiyonda {koyu:x ≥ 0} için çıktı değerleri pozitif veya sıfır iken, {koyu:x < 0} için çıktı değerleri negatiftir. Uzaklık ve büyüklük belirten {koyu:n(x) = |x|} mutlak değer fonksiyonunda ise negatif çıktı bulunmaz: {koyu:x ≥ 0} için {koyu:|x| = x} olarak aynen kalırken, {koyu:x < 0} için {koyu:|x| = -x} olur; yani {koyu:f(x) = x} doğrusunun x ekseni altında kalan sol kolunun x eksenine göre yansıması (simetriği) alınır.",
+        "Böylece {koyu:n(x) = |x|} fonksiyonunun grafiği, başlangıç noktası (köşesi/tepe noktası) orijin {koyu:T(0, 0)} olan, kolları yukarı doğru açık ve {koyu:y eksenine (x = 0 doğrusuna) göre simetrik} bir {koyu:'V'} harfi oluşturur. Sağ kol {koyu:y = x} (eğimi +1), sol kol ise {koyu:y = -x} (eğimi -1) ışınıdır. Fonksiyonun tanım kümesi tüm gerçek sayılar ({koyu:ℝ}), görüntü kümesi ise negatif olmayan gerçek sayılar ({koyu:[0, ∞)}}) kümesidir.",
+        "Önüne eksi işareti gelen {koyu:k(x) = -|x|} fonksiyonunda ise {koyu:n(x) = |x|} grafiğinin x eksenine göre simetriği alınır; tepe noktası yine {koyu:T(0, 0)} olup kolları aşağı doğru bakan ({koyu:ters 'Λ'} şeklinde) bir grafik elde edilir ve görüntü kümesi {koyu:(-∞, 0]} olur. Doğrusal fonksiyonlar tüm gerçek sayılarda daima artan veya daima azalan ve {koyu:bire bir} iken; mutlak değer fonksiyonları tepe noktasında yön değiştirdiği için (örneğin {koyu:| -3 | = | 3 | = 3}) gerçek sayılar kümesinde {koyu:bire bir değildir}."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">REFERANS FONKSİYON f(x) = x VE MUTLAK DEĞER n(x) = ±|x| GRAFİKLERİ</text>\n  <rect x=\"25\" y=\"45\" width=\"315\" height=\"195\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <line x1=\"45\" y1=\"145\" x2=\"320\" y2=\"145\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"182\" y1=\"55\" x2=\"182\" y2=\"230\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"112\" y1=\"215\" x2=\"252\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/>\n  <polyline points=\"112,75 182,145 252,75\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/>\n  <polyline points=\"112,215 182,145 252,215\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n  <circle cx=\"182\" cy=\"145\" r=\"4.5\" fill=\"#0f172a\"/>\n  <text x=\"265\" y=\"75\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563eb\">n(x) = |x|</text>\n  <text x=\"265\" y=\"218\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">k(x) = -|x|</text>\n  <text x=\"195\" y=\"160\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">T(0, 0)</text>\n  <rect x=\"360\" y=\"45\" width=\"315\" height=\"195\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"517\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e40af\">DOĞRUSAL FONKSİYONDAN ANALOJİ (9.2.2.a)</text>\n  <text x=\"377\" y=\"95\" font-size=\"11\" fill=\"#1e3a8a\">• f(x) = x grafiğinin x ekseni altında kalan negatif</text>\n  <text x=\"385\" y=\"111\" font-size=\"11\" fill=\"#1e3a8a\">kısmının (x &lt; 0) x eksenine göre simetriği alındığında</text>\n  <text x=\"385\" y=\"127\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">n(x) = |x| (\"V\" şekilli grafik) elde edilir.</text>\n  <text x=\"377\" y=\"152\" font-size=\"11\" fill=\"#1e3a8a\">• Tepe (Köşe) Noktası: T(0, 0) · Simetri Ekseni: x = 0</text>\n  <text x=\"377\" y=\"176\" font-size=\"11\" fill=\"#1e3a8a\">• n(x) = |x| için Tanım Kümesi: ℝ, Görüntü Kümesi: [0, ∞)</text>\n  <text x=\"377\" y=\"200\" font-size=\"11\" fill=\"#1e3a8a\">• (-∞, 0] aralığında azalan, [0, ∞) aralığında artandır;</text>\n  <text x=\"385\" y=\"216\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">gerçek sayılarda bire bir DEĞİLDİR (n(-2) = n(2) = 2).</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Doğrusal bir h(x) = ax + b fonksiyonunun mutlak değeri olan |h(x)| fonksiyonunun grafiği çizilirken; h(x) doğrusunun x ekseni üstünde kalan kısmı aynen korunur, x ekseni altında kalan kısmının ise x eksenine göre simetriği alınır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Gerçek sayılarda tanımlı bir mutlak değer fonksiyonu tüm ℝ'de bire bir değildir; ancak tanım kümesi tepe noktasının sağ kolu [r, ∞) veya sol kolu (-∞, r] olarak kısıtlandığında o aralıkta bire bir hâle gelir."
+        }
+      ]
+    },
+    {
+      "baslik": "m(x) = ±|ax + b| + c Fonksiyonunun Nitel Özellikleri (MAT.9.2.2.b)",
+      "metin": [
+        "Gerçek sayılarda {koyu:m(x) = |ax + b| + c} veya {koyu:m(x) = -|ax + b| + c} ({koyu:a, b, c ∈ ℝ} ve {koyu:a ≠ 0}) biçiminde tanımlanan genel mutlak değer fonksiyonunda en önemli referans noktası {koyu:tepe (köşe / kırılma) noktasıdır}. Mutlak değerin içini sıfır yapan x değerine {koyu:kritik nokta (tepe noktası apsisi)} denir ve {koyu:ax + b = 0 ⇒ r = -{kesir:b|a}} formülüyle bulunur. Bu değer fonksiyonda yerine yazıldığında mutlak değerli terim sıfırlanır ve tepe noktasının ordinatı {koyu:m(r) = c} olur. Böylece tepe noktası {koyu:T(r, c) = T(-{kesir:b|a}, c)} ve grafiği iki eş parçaya bölen {koyu:simetri ekseni doğrusu x = -{kesir:b|a}} olarak elde edilir.",
+        "Eğer mutlak değerin önündeki işaret pozitif ise ({koyu:m(x) = +|ax + b| + c}), grafiğin kolları {koyu:yukarı doğru ('V' şeklinde)} açıktır: Fonksiyon {koyu:(-∞, r]} aralığında {koyu:azalan}, {koyu:[r, ∞)} aralığında {koyu:artandır}; tepe noktasında en küçük ({koyu:minimum}) değerini alır ({koyu:min = c}), maksimum değeri yoktur ve {koyu:görüntü kümesi [c, ∞)} olur.",
+        "Eğer mutlak değerin önündeki işaret negatif ise ({koyu:m(x) = -|ax + b| + c}), grafiğin kolları {koyu:aşağı doğru (ters 'Λ' şeklinde)} açıktır: Fonksiyon {koyu:(-∞, r]} aralığında {koyu:artan}, {koyu:[r, ∞)} aralığında {koyu:azalandır}; tepe noktasında en büyük ({koyu:maksimum}) değerini alır ({koyu:maks = c}), minimum değeri yoktur ve {koyu:görüntü kümesi (-∞, c]} olur. Fonksiyonun {koyu:sıfırlarını (x eksenini kestiği noktaları)} bulmak için {koyu:m(x) = 0} denklemi çözülür; mutlak değerin eşiti pozitifse {koyu:2 farklı sıfırı}, sıfıra eşitse {koyu:1 sıfırı} (tepe noktası x eksenine teğet), negatifse {koyu:gerçek sıfırı (kökü) yoktur}."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">GENEL MUTLAK DEĞER FONKSİYONU m(x) = ±|ax + b| + c VE NİTEL ÖZELLİKLERİ</text>\n  <rect x=\"25\" y=\"45\" width=\"315\" height=\"195\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#166534\">TEPE NOKTASI VE SİMETRİ EKSENİ (9.2.2.b)</text>\n  <text x=\"42\" y=\"96\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#14532d\">• Mutlak değerin içini sıfır yapan apsis (r):</text>\n  <text x=\"52\" y=\"114\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">ax + b = 0  ⇒  r = -b / a</text>\n  <text x=\"42\" y=\"140\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#14532d\">• Tepe (Köşe) Noktası: T(r, c) = T(-b/a, c)</text>\n  <text x=\"42\" y=\"166\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#14532d\">• Simetri Ekseni Doğrusu: x = -b / a</text>\n  <text x=\"42\" y=\"192\" font-size=\"11\" fill=\"#14532d\">• Kolların Yönü: Mutlak değerin önündeki işaret \"+\"</text>\n  <text x=\"52\" y=\"208\" font-size=\"11\" fill=\"#14532d\">ise kollar YUKARI (V); \"-\" ise AŞAĞI (ters Λ) bakar.</text>\n  <rect x=\"360\" y=\"45\" width=\"315\" height=\"195\" rx=\"10\" fill=\"#fefce8\" stroke=\"#ca8a04\" stroke-width=\"2\"/>\n  <text x=\"517\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#854d0e\">GÖRÜNTÜ KÜMESİ, MAKS-MİN VE ARTANLIK</text>\n  <text x=\"377\" y=\"96\" font-size=\"11\" font-weight=\"bold\" fill=\"#713f12\">1) m(x) = +|ax + b| + c (Kollar Yukarı — \"V\"):</text>\n  <text x=\"385\" y=\"113\" font-size=\"10.5\" fill=\"#713f12\">• Görüntü Kümesi: [c, ∞) · Minimum değer = c</text>\n  <text x=\"385\" y=\"129\" font-size=\"10.5\" fill=\"#713f12\">• (-∞, r] aralığında AZALAN, [r, ∞) aralığında ARTAN.</text>\n  <text x=\"377\" y=\"156\" font-size=\"11\" font-weight=\"bold\" fill=\"#713f12\">2) m(x) = -|ax + b| + c (Kollar Aşağı — \"Λ\"):</text>\n  <text x=\"385\" y=\"173\" font-size=\"10.5\" fill=\"#713f12\">• Görüntü Kümesi: (-∞, c] · Maksimum değer = c</text>\n  <text x=\"385\" y=\"189\" font-size=\"10.5\" fill=\"#713f12\">• (-∞, r] aralığında ARTAN, [r, ∞) aralığında AZALAN.</text>\n  <text x=\"377\" y=\"216\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#854d0e\">Sağ kol eğimi: +|a|, Sol kol eğimi: -|a| (veya tersi)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "m(x) = |ax + b| + c fonksiyonunda tepe noktasının yönünü (kolların yukarı mı aşağı mı baktığını) x'in katsayısı olan 'a' değil, mutlak değer sembolünün DIŞINDAKİ (önündeki) '+' veya '-' işareti belirler! Örneğin m(x) = |-2x + 6| - 1 fonksiyonunda dış işaret '+' olduğu için kollar yukarı bakar."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Simetri ekseni x = r doğrusu olduğu için, tepe noktasından eşit uzaklıktaki iki apsisin görüntüleri birbirine eşittir: m(r - k) = m(r + k). Dolayısıyla grafiğin x eksenini kestiği iki nokta (sıfırlar) varsa bunların aritmetik ortalaması daima tepe noktası apsisini (r'yi) verir: (x₁ + x₂) / 2 = r."
+        }
+      ]
+    },
+    {
+      "baslik": "Mutlak Değer Fonksiyonunun Parçalı Gösterimi (MAT.9.2.2.c)",
+      "metin": [
+        "Mutlak değer tanımına göre bir {koyu:A} ifadesi; {koyu:A ≥ 0} ise mutlak değer dışına {koyu:aynen (A)} olarak, {koyu:A < 0} ise {koyu:eksi ile çarpılarak (-A)} olarak çıkar. Bu temel özellik sayesinde her {koyu:m(x) = ±|ax + b| + c} mutlak değer fonksiyonu, kritik nokta olan {koyu:x = -{kesir:b|a}} apsisinde birbirine bağlanan {koyu:iki doğrusal fonksiyondan oluşan parçalı bir fonksiyon} biçiminde yazılabilir.",
+        "Parçalı gösterimi elde etmek için üç adım izlenir: {koyu:1. Adım:} Mutlak değerin içini sıfır yapan kritik nokta ({koyu:ax + b = 0 ⇒ x = r}) bulunur. {koyu:2. Adım:} Mutlak değerin içinin pozitif olduğu aralıkta ({koyu:ax + b ≥ 0}) mutlak değer çubukları kaldırılarak ifade aynen çıkarılır ve {koyu:c} ile toplanıp düzenlenir. {koyu:3. Adım:} Mutlak değerin içinin negatif olduğu aralıkta ({koyu:ax + b < 0}) mutlak değerin içi eksi ({koyu:-}) ile çarpılarak çıkarılır ve {koyu:c} ile toplanıp sadeleştirilir.",
+        "Örneğin {koyu:m(x) = |2x - 6| + 1} fonksiyonunda kritik nokta {koyu:2x - 6 = 0 ⇒ x = 3} değeridir. {koyu:x ≥ 3} için iç kısım pozitif olduğundan {koyu:m(x) = (2x - 6) + 1 = 2x - 5} doğrusal kolu; {koyu:x < 3} için iç kısım negatif olduğundan {koyu:m(x) = -(2x - 6) + 1 = -2x + 7} doğrusal kolu elde edilir. Görüldüğü gibi sağ kolun eğimi {koyu:+2}, sol kolun eğimi {koyu:-2} olup her iki kol da {koyu:x = 3} noktasında {koyu:m(3) = 1} değerini vererek {koyu:T(3, 1)} tepe noktasında birleşir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">PARÇALI FONKSİYON GÖSTERİMİ VE ÖRNEK GRAFİK: m(x) = |x - 2| - 3</text>\n  <rect x=\"25\" y=\"45\" width=\"315\" height=\"195\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <line x1=\"45\" y1=\"135\" x2=\"320\" y2=\"135\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"140\" y1=\"55\" x2=\"140\" y2=\"230\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"190\" y1=\"55\" x2=\"190\" y2=\"230\" stroke=\"#9333ea\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/>\n  <polyline points=\"90,85 190,185 290,85\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"3\"/>\n  <circle cx=\"190\" cy=\"185\" r=\"4.5\" fill=\"#dc2626\"/>\n  <circle cx=\"115\" cy=\"135\" r=\"3.5\" fill=\"#2563eb\"/>\n  <circle cx=\"265\" cy=\"135\" r=\"3.5\" fill=\"#2563eb\"/>\n  <text x=\"195\" y=\"202\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">T(2, -3)</text>\n  <text x=\"102\" y=\"150\" font-size=\"10\" font-weight=\"bold\" fill=\"#2563eb\">-1</text>\n  <text x=\"265\" y=\"150\" font-size=\"10\" font-weight=\"bold\" fill=\"#2563eb\">5</text>\n  <text x=\"195\" y=\"70\" font-size=\"10\" font-weight=\"bold\" fill=\"#9333ea\">x = 2 (Simetri Eks.)</text>\n  <rect x=\"360\" y=\"45\" width=\"315\" height=\"195\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"517\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#6b21a8\">PARÇALI GÖSTERİM ÇIKARIMI (9.2.2.c)</text>\n  <text x=\"377\" y=\"96\" font-size=\"11\" font-weight=\"bold\" fill=\"#581c87\">Kritik Nokta (Tepe Apsisi): x - 2 = 0 ⇒ x = 2</text>\n  <text x=\"377\" y=\"122\" font-size=\"11\" fill=\"#4c1d95\">• x ≥ 2 için iç kısım (+) olduğundan aynen çıkar:</text>\n  <text x=\"390\" y=\"140\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#16a34a\">m(x) = (x - 2) - 3 = x - 5   (x ≥ 2)</text>\n  <text x=\"377\" y=\"166\" font-size=\"11\" fill=\"#4c1d95\">• x &lt; 2 için iç kısım (-) olduğundan \"-\" ile çarpılır:</text>\n  <text x=\"390\" y=\"184\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#dc2626\">m(x) = -(x - 2) - 3 = -x - 1   (x &lt; 2)</text>\n  <text x=\"377\" y=\"212\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#6b21a8\">Sıfırları (Kökleri): |x - 2| - 3 = 0 ⇒ x₁ = 5 ve x₂ = -1</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Parçalı fonksiyon yazılımda kritik nokta olan x = r değeri her iki kolda da aynı görüntüyü (m(r) = c) verdiği için '≥' (büyük eşit) sembolünü üst parçada veya alt parçada kullanmak sonucu değiştirmez; genel uzlaşı olarak 'x ≥ r' ve 'x < r' biçiminde yazılır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "m(x) = |ax + b| + c fonksiyonunun parçalı gösterimindeki iki doğrusal kolun eğimleri mutlak değerce birbirine eşit ve zıt işaretlidir (+a ve -a); kollar simetri eksenine göre aynı açıklıkla uzanır."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Gerçek sayılarda tanımlı m(x) = |x - 4| - 2 fonksiyonunun tepe noktasını, simetri eksenini, görüntü kümesini, minimum değerini ve artan-azalan olduğu aralıkları bulunuz.",
+      "cevap": "Mutlak değerin içini sıfır yapan değer x - 4 = 0 ⇒ x = 4'tür. m(4) = 0 - 2 = -2 olduğundan Tepe Noktası T(4, -2) ve simetri ekseni x = 4 doğrusudur. Mutlak değerin önündeki işaret '+' olduğundan kollar yukarı bakar: Görüntü kümesi [-2, ∞) ve minimum değeri -2'dir. Fonksiyon (-∞, 4] aralığında azalan, [4, ∞) aralığında artandır."
+    },
+    {
+      "soru": "Gerçek sayılarda tanımlı g(x) = -|2x + 6| + 8 fonksiyonunun tepe noktasını, görüntü kümesini, eksenleri kestiği noktaları (sıfırlarını ve y kesim noktasını) bulunuz.",
+      "cevap": "İç kısmı sıfır yapan apsis: 2x + 6 = 0 ⇒ x = -3. Tepe noktası T(-3, 8). Ön işaret '-' olduğu için kollar aşağı bakar, maksimum değeri 8 ve görüntü kümesi (-∞, 8] olur. y eksenini kestiği nokta (x = 0): g(0) = -|6| + 8 = 2 ⇒ (0, 2). Sıfırları (g(x) = 0): -|2x + 6| + 8 = 0 ⇒ |2x + 6| = 8. Buradan 2x + 6 = 8 ⇒ x₁ = 1 ve 2x + 6 = -8 ⇒ x₂ = -7 bulunur."
+    },
+    {
+      "soru": "f(x) = |3x - 9| + 4 mutlak değer fonksiyonunun kritik noktasını belirleyerek parçalı fonksiyon gösterimini yazınız.",
+      "cevap": "Kritik nokta: 3x - 9 = 0 ⇒ x = 3. 1) x ≥ 3 için 3x - 9 ≥ 0 olduğundan mutlak değer dışına aynen çıkar: f(x) = (3x - 9) + 4 = 3x - 5. 2) x < 3 için 3x - 9 < 0 olduğundan eksi ile çarpılarak çıkar: f(x) = -(3x - 9) + 4 = -3x + 13. Böylece parçalı gösterim: x ≥ 3 ise 3x - 5; x < 3 ise -3x + 13 şeklindedir."
+    },
+    {
+      "soru": "k(x) = |x + 1| + 5 fonksiyonunun gerçek sayılarda sıfırının (x eksenini kestiği noktanın) olup olmadığını cebirsel ve grafiksel olarak açıklayınız.",
+      "cevap": "Cebirsel olarak: k(x) = 0 eşitliğinde |x + 1| + 5 = 0 ⇒ |x + 1| = -5 elde edilir. Bir gerçek sayının mutlak değeri negatif olamayacağından denklemin çözüm kümesi boş kümedir ve fonksiyonun sıfırı yoktur. Grafiksel olarak: Tepe noktası T(-1, 5) x ekseninin üstündedir ve kollar yukarı doğru açıldığı için grafik x eksenini kesmez; daima pozitif değerlidir."
+    },
+    {
+      "soru": "Tepe noktası T(2, -6) olan ve grafiği A(0, -2) noktasından geçen m(x) = a·|x - r| + c mutlak değer fonksiyonunun kuralını ve sıfırlarını bulunuz.",
+      "cevap": "Tepe noktası T(r, c) = T(2, -6) olduğundan r = 2 ve c = -6'dır: m(x) = a·|x - 2| - 6. Grafik A(0, -2) noktasından geçtiği için m(0) = -2 olmalıdır: a·|0 - 2| - 6 = -2 ⇒ 2a = 4 ⇒ a = 2. Kural: m(x) = 2|x - 2| - 6. Sıfırları için 2|x - 2| - 6 = 0 ⇒ |x - 2| = 3 ⇒ x - 2 = 3 (x₁ = 5) veya x - 2 = -3 (x₂ = -1)."
+    },
+    {
+      "soru": "Bir otoyolda 120. kilometrede bulunan dinlenme tesisine sabit 80 km/sa hızla yaklaşmakta ve ardından tesisi geçip yoluna devam etmekte olan bir aracın t saat sonra tesise olan uzaklığını veren d(t) mutlak değer fonksiyonunu yazınız ve aracın hangi saatlerde tesise 40 km uzaklıkta olacağını bulunuz.",
+      "cevap": "Aracın t saatte aldığı yol 80t kilometredir; 120. km'deki tesise olan uzaklığı negatif olamayacağından d(t) = |120 - 80t| = |80t - 120| fonksiyonu ile modellenir. Tesise 40 km uzaklıkta olduğu anlar için |80t - 120| = 40 denklemi çözülür: 1) 80t - 120 = 40 ⇒ 80t = 160 ⇒ t₁ = 2. saat (tesisi geçtikten sonra); 2) 80t - 120 = -40 ⇒ 80t = 80 ⇒ t₂ = 1. saat (tesise varmadan önce)."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "soru": "Gerçek sayılarda tanımlı f(x) = |2x - 8| - 5 mutlak değer fonksiyonunun grafiğinin tepe (köşe) noktası ve simetri ekseni doğrusu aşağıdakilerden hangisinde doğru verilmiştir?",
+      "secenekler": [
+        "Tepe noktası T(4, -5) ve simetri ekseni x = 4 doğrusu",
+        "Tepe noktası T(-8, -5) ve simetri ekseni x = -8 doğrusu",
+        "Tepe noktası T(2, -5) ve simetri ekseni x = 2 doğrusu",
+        "Tepe noktası T(-4, 5) ve simetri ekseni x = -4 doğrusu",
+        "Tepe noktası T(4, 5) ve simetri ekseni x = -5 doğrusu"
+      ],
+      "dogru": 0,
+      "aciklama": "Mutlak değerin içini sıfır yapan apsis 2x - 8 = 0 ⇒ x = 4'tür. f(4) = 0 - 5 = -5 olduğundan tepe noktası T(4, -5) ve simetri ekseni x = 4 doğrusudur.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Gerçek sayılarda tanımlı m(x) = -|x + 3| + 7 fonksiyonunun görüntü kümesi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "[7, ∞)",
+        "(-∞, 7]",
+        "[-3, 7]",
+        "(-∞, -3]",
+        "[3, ∞)"
+      ],
+      "dogru": 1,
+      "aciklama": "Her x gerçek sayısı için |x + 3| ≥ 0 olduğundan -|x + 3| ≤ 0 ve -|x + 3| + 7 ≤ 7 olur. Fonksiyonun maksimum değeri 7 olup görüntü kümesi (-∞, 7] aralığıdır.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Gerçek sayılarda tanımlı g(x) = |x - 3| - 4 fonksiyonunun sıfırlarının (grafiğinin x eksenini kestiği noktaların apsislerinin) çarpımı kaçtır?",
+      "secenekler": [
+        "-12",
+        "-9",
+        "-7",
+        "7",
+        "12"
+      ],
+      "dogru": 2,
+      "aciklama": "g(x) = 0 için |x - 3| - 4 = 0 ⇒ |x - 3| = 4 olur. Buradan x - 3 = 4 ⇒ x₁ = 7 ve x - 3 = -4 ⇒ x₂ = -1 bulunur. Sıfırların çarpımı 7 · (-1) = -7'dir.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Gerçek sayılarda tanımlı h(x) = |2x - 4| + 3 fonksiyonunun kritik noktasına göre parçalı fonksiyon gösteriminde x < 2 aralığındaki doğrusal kuralı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "2x - 1",
+        "2x + 7",
+        "-2x + 1",
+        "-2x + 7",
+        "-2x - 1"
+      ],
+      "dogru": 3,
+      "aciklama": "x < 2 için mutlak değerin içi olan (2x - 4) negatiftir ve dışarıya eksi ile çarpılarak çıkar: h(x) = -(2x - 4) + 3 = -2x + 4 + 3 = -2x + 7.",
+      "tur": "coktan"
+    },
+    {
+      "ifadeler": [
+        {
+          "metin": "Gerçek sayılarda tanımlı n(x) = |x| fonksiyonunun grafiği y eksenine (x = 0 doğrusuna) göre simetriktir.",
+          "dogru": true,
+          "aciklama": "Her x için |-x| = |x| olduğundan n(x) = |x| grafiği tepe noktası T(0, 0)'dan geçen x = 0 doğrusuna (y eksenine) göre simetriktir."
+        },
+        {
+          "metin": "Gerçek sayılar kümesinde tanımlı f(x) = |x - 2| + 1 fonksiyonu tüm gerçek sayılarda bire bir fonksiyondur.",
+          "dogru": false,
+          "aciklama": "Mutlak değer fonksiyonunda simetrik iki farklı apsis aynı görüntüyü verir (örneğin f(1) = 2 ve f(3) = 2); bu nedenle ℝ'de bire bir değildir."
+        },
+        {
+          "metin": "m(x) = |x + 5| - 3 fonksiyonu (-∞, -5] aralığında azalan, [-5, ∞) aralığında ise artandır.",
+          "dogru": true,
+          "aciklama": "Tepe noktası T(-5, -3) olan ve kolları yukarı bakan m(x) fonksiyonu x = -5 solunda azalan, sağında ise artandır."
+        },
+        {
+          "metin": "k(x) = |3x - 6| + 4 fonksiyonunun grafiği x eksenini iki farklı noktada keser.",
+          "dogru": false,
+          "aciklama": "|3x - 6| + 4 = 0 ⇒ |3x - 6| = -4 denkleminin gerçek sayılarda çözümü yoktur; grafik tamamen x ekseninin üstündedir ve x eksenini kesmez."
+        },
+        {
+          "metin": "f(x) = -|x - 1| + 6 fonksiyonunun alabileceği en büyük (maksimum) değer 6'dır.",
+          "dogru": true,
+          "aciklama": "Kolları aşağı bakan f(x) fonksiyonu tepe noktası olan T(1, 6)'da maksimum değeri olan 6'ya ulaşır."
+        }
+      ],
+      "tur": "dy"
+    },
+    {
+      "ciftler": [
+        [
+          "T(-b/a, c)",
+          "m(x) = ±|ax + b| + c mutlak değer fonksiyonu grafiğinin tepe (köşe) noktası"
+        ],
+        [
+          "x = -b/a doğrusu",
+          "m(x) = ±|ax + b| + c grafiğini iki simetrik kola ayıran simetri ekseni"
+        ],
+        [
+          "[c, ∞) aralığı",
+          "Kolları yukarı bakan m(x) = +|ax + b| + c fonksiyonunun görüntü kümesi"
+        ],
+        [
+          "(-∞, c] aralığı",
+          "Kolları aşağı bakan m(x) = -|ax + b| + c fonksiyonunun görüntü kümesi"
+        ],
+        [
+          "Kritik Nokta",
+          "Mutlak değerin içini sıfır yapan ve parçalı gösterimde kuralın değiştiği apsis"
+        ]
+      ],
+      "tur": "eslestir"
+    },
+    {
+      "cumleler": [
+        {
+          "metin": "Gerçek sayılarda tanımlı f(x) = |x - 5| + 2 fonksiyonunun alabileceği en küçük (minimum) değer ___ sayısıdır.",
+          "cevap": "2"
+        },
+        {
+          "metin": "m(x) = |3x + 12| - 1 fonksiyonunun grafiğinin simetri ekseni x = ___ doğrusudur.",
+          "cevap": "-4"
+        },
+        {
+          "metin": "Mutlak değerin önündeki işaret negatif olan g(x) = -|ax + b| + c fonksiyonunun grafiğinin kolları ___ doğru bakar.",
+          "cevap": "aşağı"
+        },
+        {
+          "metin": "f(x) = x doğrusal referans fonksiyonunun x ekseni altında kalan kısmının x eksenine göre ___ alındığında |x| grafiği oluşur.",
+          "cevap": "simetriği"
+        },
+        {
+          "metin": "Grafiği x eksenini x₁ = -2 ve x₂ = 8 apsisli noktalarda kesen bir mutlak değer fonksiyonunun tepe noktası apsisi r = ___ olur.",
+          "cevap": "3"
+        }
+      ],
+      "fazla": [
+        "yukarı",
+        "5"
+      ],
+      "tur": "bosluk"
+    },
+    {
+      "soru": "Gerçek sayılarda tanımlı f(x) = |2x - 6| - 4 mutlak değer fonksiyonunun; a) Tepe noktasını ve simetri eksenini, b) Eksenleri kestiği noktaları (sıfırlarını ve y kesim noktasını), c) Görüntü kümesini ve artan-azalan aralıklarını, d) Parçalı fonksiyon gösterimini adım adım bulunuz.",
+      "ipuclari": [
+        "İlk olarak mutlak değerin içini sıfıra eşitleyerek (2x - 6 = 0) tepe noktasını T(r, c) ve simetri eksenini belirleyiniz.",
+        "İkinci olarak x = 0 vererek y eksenini kestiği noktayı ve f(x) = 0 denklemini çözerek sıfırlarını (x eksenini kestiği noktaları) bulunuz.",
+        "Üçüncü olarak görüntü kümesini, artan-azalan aralıklarını ve x ≥ 3 ile x < 3 durumları için parçalı fonksiyon kuralını yazınız."
+      ],
+      "cevap": "a) 2x - 6 = 0 ⇒ x = 3 kritik noktadır; f(3) = -4 olduğundan Tepe Noktası T(3, -4) ve simetri ekseni x = 3 doğrusudur. b) x = 0 için f(0) = |-6| - 4 = 2 olduğundan y eksenini (0, 2) noktasında keser. f(x) = 0 için |2x - 6| = 4 ⇒ 2x - 6 = 4 (x₁ = 5) ve 2x - 6 = -4 (x₂ = 1) noktalarında x eksenini keser. c) Kollar yukarı baktığı için minimum değeri -4, görüntü kümesi [-4, ∞) olup (-∞, 3] aralığında azalan, [3, ∞) aralığında artandır. d) Parçalı gösterimi: x ≥ 3 için f(x) = (2x - 6) - 4 = 2x - 10; x < 3 için f(x) = -(2x - 6) - 4 = -2x + 2 şeklindedir.",
+      "tur": "ogretici"
+    }
+  ],
+  "ozet": [
+    "{koyu:Doğrusal Fonksiyonla Analoji:} {koyu:h(x) = ax + b} doğrusunun x ekseni altında kalan kısmının x eksenine göre simetriği yukarı katlandığında {koyu:|h(x)|} ('V' şekilli) grafiği elde edilir.",
+    "{koyu:Tepe Noktası ve Simetri Ekseni:} {koyu:m(x) = ±|ax + b| + c} fonksiyonunda mutlak değerin içini sıfır yapan {koyu:r = -{kesir:b|a}} apsisi ile {koyu:T(-{kesir:b|a}, c)} tepe noktası ve {koyu:x = -{kesir:b|a}} simetri ekseni bulunur.",
+    "{koyu:Kolların Yönü ve Görüntü Kümesi:} Ön işaret {koyu:+} ise kollar yukarı bakar, görüntü kümesi {koyu:[c, ∞)} ve minimum değer {koyu:c}'dir; ön işaret {koyu:-} ise kollar aşağı bakar, görüntü kümesi {koyu:(-∞, c]} ve maksimum değer {koyu:c}'dir.",
+    "{koyu:Artanlık-Azalanlık ve Bire Birlik:} {koyu:m(x) = +|ax + b| + c} fonksiyonu {koyu:(-∞, r]} aralığında azalan, {koyu:[r, ∞)} aralığında artandır; gerçek sayılar kümesinde bire bir değildir.",
+    "{koyu:Parçalı Fonksiyon Gösterimi:} Kritik nokta {koyu:x = r} sınır alınarak mutlak değerin içinin pozitif ({koyu:+}) ve negatif ({koyu:-}) olduğu iki aralıkta zıt eğimli ({koyu:+a} ve {koyu:-a}) iki doğrusal kol şeklinde yazılır."
+  ]
+}

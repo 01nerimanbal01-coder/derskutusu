@@ -1,0 +1,262 @@
+{
+  "ad": "5-matematik-10",
+  "sinif": 5,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 10,
+  "tarih": "23-27 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "Sayılar ve Nicelikler (1)",
+  "konu": "Çok Basamaklı Doğal Sayılarda Basamak Değeri, Bölükler, Sayıları Çözümleme ve Büyüklük-Küçüklük Karşılaştırması (MAT.5.1.1 & MAT.5.1.2)",
+  "ciktilar": [
+    "Altıdan çok basamaklı (7, 8 ve 9 basamaklı) doğal sayıların bölüklerini, basamak adlarını, sayı ve basamak değerlerini belirler.",
+    "Çok basamaklı doğal sayıları basamak değerlerinin toplamı ve basamak birimleriyle çarpımı biçiminde çözümler.",
+    "Çok basamaklı doğal sayıları basamak sayısı ve basamaklardaki rakam örüntüleri üzerinden karşılaştırarak sıraya koyar."
+  ],
+  "giris": "Türkiye'nin nüfusu, gezegenlerin Güneş'e olan uzaklıkları veya büyük bütçe tabloları gibi günlük yaşam verilerinde karşımıza çıkan yedi, sekiz ve dokuz basamaklı sayıları geçtiğimiz hafta okuyup yazmayı öğrenmiştik. Şimdi bu çok basamaklı sayıların iç yapısına odaklanıyoruz: Bir rakamın bulunduğu basamağa göre nasıl milyonlarca kat değer kazandığını keşfediyor, sayıları basamak değerlerine göre çözümlüyor ve büyük sayıları birbiriyle karşılaştırıp sıralıyoruz.",
+  "bolumler": [
+    {
+      "baslik": "Bölükler, Basamak Adları, Sayı Değeri ve Basamak Değeri",
+      "metin": [
+        "Çok basamaklı doğal sayılar sağdan sola doğru üçer basamaklı gruplara ayrılır ve bu grupların her birine {koyu:bölük} adı verilir. Sağdan sola doğru ilk üç basamak {koyu:Birler Bölüğü} (birler, onlar, yüzler), ikinci üç basamak {koyu:Binler Bölüğü} (binler, on binler, yüz binler) ve üçüncü üç basamak ise {koyu:Milyonlar Bölüğü} (milyonlar, on milyonlar, yüz milyonlar) olarak adlandırılır.",
+        "Bir sayıda yer alan rakamın bulunduğu basamağı dikkate almadan gösterdiği kendi değerine {koyu:sayı değeri} denir. Örneğin {koyu:407 385 629} sayısındaki {koyu:8} rakamının sayı değeri {koyu:8}'dir.",
+        "Rakamın bulunduğu basamağın birimiyle çarpılması sonucunda aldığı değere ise {koyu:basamak değeri} denir. Onluk sayı sisteminde her basamağın değeri, sağındaki basamağın değerinin {koyu:10 katıdır}. Örneğin {koyu:407 385 629} sayısında on binler basamağındaki {koyu:8} rakamının basamak değeri {koyu:8 × 10 000 = 80 000}, yüz milyonlar basamağındaki {koyu:4} rakamının basamak değeri ise {koyu:4 × 100 000 000 = 400 000 000}'dur."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">ÇOK BASAMAKLI SAYILARDA BÖLÜKLER VE BASAMAK DEĞERİ</text>\n  <rect x=\"20\" y=\"42\" width=\"215\" height=\"198\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"127\" y=\"65\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">MİLYONLAR BÖLÜĞÜ</text>\n  <text x=\"127\" y=\"95\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"bold\" fill=\"#1e3a8a\">4  0  7</text>\n  <text x=\"127\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e40af\">• Yüz Milyonlar: 4 ➔ 400 000 000</text>\n  <text x=\"127\" y=\"145\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e40af\">• On Milyonlar: 0 ➔ 0</text>\n  <text x=\"127\" y=\"168\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e40af\">• Milyonlar: 7 ➔ 7 000 000</text>\n  <text x=\"127\" y=\"205\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">Bölük Değeri: 407 milyon</text>\n\n  <rect x=\"242\" y=\"42\" width=\"215\" height=\"198\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"65\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">BİNLER BÖLÜĞÜ</text>\n  <text x=\"350\" y=\"95\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"bold\" fill=\"#14532d\">3  8  5</text>\n  <text x=\"350\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" fill=\"#166534\">• Yüz Binler: 3 ➔ 300 000</text>\n  <text x=\"350\" y=\"145\" text-anchor=\"middle\" font-size=\"11\" fill=\"#166534\">• On Binler: 8 ➔ 80 000</text>\n  <text x=\"350\" y=\"168\" text-anchor=\"middle\" font-size=\"11\" fill=\"#166534\">• Binler: 5 ➔ 5 000</text>\n  <text x=\"350\" y=\"205\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">Bölük Değeri: 385 bin</text>\n\n  <rect x=\"465\" y=\"42\" width=\"215\" height=\"198\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/>\n  <text x=\"572\" y=\"65\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b45309\">BİRLER BÖLÜĞÜ</text>\n  <text x=\"572\" y=\"95\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"bold\" fill=\"#78350f\">6  2  9</text>\n  <text x=\"572\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" fill=\"#92400e\">• Yüzler: 6 ➔ 600</text>\n  <text x=\"572\" y=\"145\" text-anchor=\"middle\" font-size=\"11\" fill=\"#92400e\">• Onlar: 2 ➔ 20</text>\n  <text x=\"572\" y=\"168\" text-anchor=\"middle\" font-size=\"11\" fill=\"#92400e\">• Birler: 9 ➔ 9</text>\n  <text x=\"572\" y=\"205\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">Sayı: 407 385 629</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Sıfır (0) Rakamının Basamak ve Sayı Değeri",
+          "metin": "Sıfır (0) rakamı hangi basamakta bulunursa bulunsun hem sayı değeri hem de basamak değeri 0'dır. Ancak basamak tutucu görevindedir; silinirse sayının basamak sayısı ve değeri tamamen değişir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Birler Basamağındaki Özel Durum",
+          "metin": "Bir doğal sayının birler basamağındaki rakamın sayı değeri ile basamak değeri birbirine eşittir (örneğin birler basamağındaki 9 rakamının sayı değeri de 9, basamak değeri de 9 × 1 = 9'dur)."
+        }
+      ]
+    },
+    {
+      "baslik": "Çok Basamaklı Doğal Sayıları Çözümleme",
+      "metin": [
+        "Bir doğal sayının, rakamlarının basamak değerlerinin toplamı biçiminde yazılmasına bu sayıyı {koyu:çözümleme} denir. Çözümleme yapılırken en büyük basamaktan (en soldaki basamaktan) başlanarak birler basamağına doğru ilerlenir.",
+        "Örneğin {koyu:52 048 306} sayısını üç farklı biçimde çözümleyebiliriz:\n• {koyu:Basamak değerleri toplamı olarak:} {koyu:50 000 000 + 2 000 000 + 40 000 + 8 000 + 300 + 6}\n• {koyu:Basamak birimleri çarpımı olarak:} {koyu:(5 × 10 000 000) + (2 × 1 000 000) + (4 × 10 000) + (8 × 1 000) + (3 × 100) + (6 × 1)}\n• {koyu:Basamak isimleriyle sözel olarak:} {koyu:5 on milyonluk + 2 milyonluk + 4 on binlik + 8 binlik + 3 yüzlük + 6 birlik}.",
+        "Çözümlenmiş hâli verilen bir sayıyı standart rakam biçimine dönüştürürken, çözümlemede adı geçmeyen (atlanan) her basamağın yerine {koyu:0 (sıfır)} yazılması gerekir. Yukarıdaki örnekte yüz binler ve onlar basamağı çözümlemede yer almadığı için o basamaklara sıfır konulmuştur."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">DOĞAL SAYILARI ÇÖZÜMLEME YÖNTEMLERİ</text>\n  <rect x=\"25\" y=\"48\" width=\"650\" height=\"192\" rx=\"8\" fill=\"#faf5ff\" stroke=\"#a855f7\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"75\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#6b21a8\">Örnek Sayı: 52 048 306 (Elli iki milyon kırk sekiz bin üç yüz altı)</text>\n  <text x=\"350\" y=\"106\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#7e22ce\">1. Basamak Değerleri Toplamı Biçiminde Çözümleme:</text>\n  <text x=\"350\" y=\"128\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">50 000 000 + 2 000 000 + 40 000 + 8 000 + 300 + 6</text>\n  <text x=\"350\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#7e22ce\">2. Basamak Birimleri Çarpımı Biçiminde Çözümleme:</text>\n  <text x=\"350\" y=\"180\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">(5 × 10 000 000) + (2 × 1 000 000) + (4 × 10 000) + (8 × 1 000) + (3 × 100) + (6 × 1)</text>\n  <text x=\"350\" y=\"206\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">3. Sözel Basamak Adlarıyla Çözümleme:</text>\n  <text x=\"350\" y=\"225\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">5 on milyonluk + 2 milyonluk + 4 on binlik + 8 binlik + 3 yüzlük + 6 birlik</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Eksik Basamaklara Sıfır Koymayı Unutma!",
+          "metin": "(7 × 100 000 000) + (4 × 1 000 000) + (5 × 1 000) + (9 × 1) şeklinde çözümlenen sayıda on milyonlar, yüz binler, on binler, yüzler ve onlar basamağı yoktur; sayı 704 005 009 olarak yazılır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Aynı Rakamın Farklı Basamaklardaki Değer Farkı",
+          "metin": "Örneğin 345 300 sayısında iki tane 3 rakamı vardır. Yüz binler basamağındaki 3'ün basamak değeri 300 000, yüzler basamağındaki 3'ün basamak değeri 300'dür (biri diğerinin 1000 katıdır)."
+        }
+      ]
+    },
+    {
+      "baslik": "Çok Basamaklı Doğal Sayıları Karşılaştırma ve Sıralama",
+      "metin": [
+        "İki veya daha fazla doğal sayıyı büyüklük-küçüklük bakımından karşılaştırırken önce {koyu:basamak sayılarına} bakılır. Basamak sayısı daha fazla olan doğal sayı, basamak sayısı az olan sayıdan daha büyüktür. Örneğin 9 basamaklı {koyu:100 000 000} sayısı, 8 basamaklı {koyu:99 999 999} sayısından büyüktür ({koyu:100 000 000 > 99 999 999}).",
+        "Karşılaştırılan sayıların {koyu:basamak sayıları birbirine eşitse}, en büyük basamaktan (en soldaki basamaktan) başlanarak aynı basamaktaki rakamlar sırasıyla karşılaştırılır. Rakamların farklı olduğu ilk basamakta hangi sayının rakamı daha büyükse o sayı daha büyüktür.",
+        "Örneğin {koyu:385 472 910} ile {koyu:385 429 980} sayılarını karşılaştıralım: İkisi de 9 basamaklıdır. Milyonlar bölüğü ({koyu:385 = 385}) ve yüz binler basamağı ({koyu:4 = 4}) eşittir. On binler basamağına baktığımızda {koyu:7 > 2} olduğu için {koyu:385 472 910 > 385 429 980} sonucuna ulaşılır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">ÇOK BASAMAKLI SAYILARI KARŞILAŞTIRMA VE SIRALAMA</text>\n  <rect x=\"25\" y=\"48\" width=\"310\" height=\"190\" rx=\"8\" fill=\"#ecfeff\" stroke=\"#06b6d4\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0e7490\">1. Adım: Basamak Sayısına Bakılır</text>\n  <text x=\"180\" y=\"102\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">Basamak sayısı fazla olan doğal sayı</text>\n  <text x=\"180\" y=\"122\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0e7490\">diğerinden daha büyüktür.</text>\n  <text x=\"180\" y=\"152\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#155e75\">120 450 000  &gt;  98 750 999</text>\n  <text x=\"180\" y=\"176\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">(9 basamaklı sayı &gt; 8 basamaklı sayı)</text>\n  <text x=\"180\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0891b2\">Semboller:  &gt; (Büyüktür)   |   &lt; (Küçüktür)</text>\n\n  <rect x=\"365\" y=\"48\" width=\"310\" height=\"190\" rx=\"8\" fill=\"#fff1f2\" stroke=\"#f43f5e\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#be123c\">2. Adım: En Sol Basamaktan Başlanır</text>\n  <text x=\"520\" y=\"100\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">Basamak sayıları eşitse en büyük basamaktan</text>\n  <text x=\"520\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">(en soldan) sağa doğru rakamlar karşılaştırılır:</text>\n  <text x=\"520\" y=\"148\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#9f1239\">64 820 150  &lt;  64 890 150</text>\n  <text x=\"520\" y=\"172\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Milyonlar (64=64) ve yüz binler (8=8) eşit;</text>\n  <text x=\"520\" y=\"192\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#be123c\">on binler basamağında 2 &lt; 9 olduğu için</text>\n  <text x=\"520\" y=\"212\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">ikinci sayı daha büyüktür.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Şartlı En Büyük ve En Küçük Sayı Yazımı",
+          "metin": "Verilen rakamlarla en büyük sayı yazılırken rakamlar en soldan itibaren büyükten küçüğe dizilir. En küçük sayı yazılırken ise en başa (en sol basamağa) 0 yazılamayacağı için sıfırdan sonraki en küçük rakam başa yazılıp hemen yanına 0 konur."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Büyüktür (>) ve Küçüktür (<) Sembolleri",
+          "metin": "Sembolün açık ağzı büyük olan sayıya, sivri ucu ise küçük olan sayıya bakar. Soluna dik çizgi çekildiğinde 'b' harfine benzeyen '>' büyüktür, 'k' harfine benzeyen '<' küçüktür."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "'680 415 293' doğal sayısının bölüklerini, on milyonlar basamağındaki rakamın basamak değerini ve rakamlarının sayı değerleri toplamını bulunuz.",
+      "cevap": "Milyonlar bölüğü: 680, Binler bölüğü: 415, Birler bölüğü: 293'tür. On milyonlar basamağındaki 8 rakamının basamak değeri 80 000 000'dur. Rakamlarının sayı değerleri toplamı ise 6+8+0+4+1+5+2+9+3 = 38'dir."
+    },
+    {
+      "soru": "Çözümlenmiş biçimi '(8 × 100 000 000) + (3 × 10 000 000) + (6 × 100 000) + (9 × 1 000) + (4 × 10) + (2 × 1)' olan doğal sayıyı rakamla yazıp okunuşunu belirtiniz.",
+      "cevap": "Milyonlar, on binler ve yüzler basamağı çözümlemede olmadığı için yerlerine 0 konur: 830 609 042. Okunuşu: 'Sekiz yüz otuz milyon altı yüz dokuz bin kırk iki'dir."
+    },
+    {
+      "soru": "'74 528 190' sayısındaki 4 ve 2 rakamlarının basamak değerleri arasındaki fark kaçtır?",
+      "cevap": "Milyonlar basamağındaki 4 rakamının basamak değeri 4 000 000, on binler basamağındaki 2 rakamının basamak değeri 20 000'dir. Aralarındaki fark: 4 000 000 - 20 000 = 3 980 000 olur."
+    },
+    {
+      "soru": "'45 812 600', '450 100 000', '45 809 999' ve '45 812 090' sayılarını küçükten büyüğe doğru sembol kullanarak sıralayınız.",
+      "cevap": "450 100 000 sayısı 9 basamaklı olduğu için en büyüktür. Diğer üç sayı 8 basamaklıdır; on binler, binler ve yüzler basamakları karşılaştırıldığında sıralama: 45 809 999 < 45 812 090 < 45 812 600 < 450 100 000 olur."
+    },
+    {
+      "soru": "Rakamları birbirinden farklı, 8 basamaklı en küçük doğal sayı ile 7 basamaklı en büyük doğal sayıyı yazınız.",
+      "cevap": "Rakamları farklı 8 basamaklı en küçük doğal sayı: 10 234 567'dir. Rakamları farklı 7 basamaklı en büyük doğal sayı ise: 9 876 543'tür."
+    },
+    {
+      "soru": "'29A 450 718 > 296 890 100' karşılaştırmasının doğru olması için 'A' yerine yazılabilecek rakamlar hangileridir?",
+      "cevap": "Her iki sayı da 9 basamaklıdır; yüz milyonlar (2=2) ve on milyonlar (9=9) basamakları eşittir. İlk sayının yüz binler basamağı (4), ikinci sayının yüz binler basamağından (8) küçük olduğu için, milyonlar basamağındaki A rakamı 6'dan büyük olmalıdır. Dolayısıyla A yerine 7, 8 veya 9 yazılabilir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "'394 761 528' doğal sayısında yüz binler basamağındaki rakam ile on milyonlar basamağındaki rakamın basamak değerleri toplamı kaçtır?",
+      "secenekler": [
+        "90 700 000",
+        "97 000 000",
+        "390 700 000",
+        "90 070 000"
+      ],
+      "dogru": 0,
+      "aciklama": "On milyonlar basamağında 9 (basamak değeri 90 000 000) ve yüz binler basamağında 7 (basamak değeri 700 000) vardır. Toplamları: 90 000 000 + 700 000 = 90 700 000 olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Çözümlenmiş biçimi '6 yüz milyonluk + 4 milyonluk + 8 on binlik + 3 yüzlük + 5 birlik' olan doğal sayı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "640 800 305",
+        "604 080 305",
+        "604 800 350",
+        "64 080 305"
+      ],
+      "dogru": 1,
+      "aciklama": "Yüz milyonlarda 6, on milyonlarda 0, milyonlarda 4 (604); yüz binlerde 0, on binlerde 8, binlerde 0 (080); yüzlerde 3, onlarda 0, birlerde 5 (305) ➔ 604 080 305."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki doğal sayı karşılaştırmalarından hangisi doğrudur?",
+      "secenekler": [
+        "89 999 999 > 100 000 000",
+        "512 480 300 < 512 408 900",
+        "706 350 120 > 706 349 990",
+        "43 210 500 > 43 215 000"
+      ],
+      "dogru": 2,
+      "aciklama": "706 350 120 ile 706 349 990 sayılarının ikisi de 9 basamaklıdır; on binler basamağında 5 > 4 olduğu için 706 350 120 > 706 349 990 ifadesi doğrudur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "'705 245 810' sayısında bulunan iki adet '5' rakamının basamak değerleri arasındaki fark kaçtır?",
+      "secenekler": [
+        "4 950 000",
+        "5 005 000",
+        "4 500 000",
+        "4 995 000"
+      ],
+      "dogru": 3,
+      "aciklama": "Milyonlar basamağındaki 5'in basamak değeri 5 000 000, binler basamağındaki 5'in basamak değeri 5 000'dir. Farkları: 5 000 000 - 5 000 = 4 995 000 olur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Bir doğal sayıda yer alan rakamların sayı değerleri toplamı, o sayının rakamlarının tek tek toplanmasıyla bulunur.",
+          "dogru": true,
+          "aciklama": "Sayı değeri rakamın bulunduğu basamaktan bağımsız kendi değeridir."
+        },
+        {
+          "metin": "'84 000 500' sayısının binler bölüğündeki rakamların tamamı sıfırdan farklıdır.",
+          "dogru": false,
+          "aciklama": "'84 000 500' sayısının binler bölüğü '000' olduğu için üç rakamı da sıfırdır."
+        },
+        {
+          "metin": "Basamak sayıları farklı iki doğal sayıdan basamak sayısı fazla olan daha büyüktür.",
+          "dogru": true,
+          "aciklama": "9 basamaklı bir doğal sayı, 8 basamaklı bir doğal sayıdan büyüktür."
+        },
+        {
+          "metin": "Bir sayıyı çözümlerken sıfır (0) bulunan basamakların değeri 10 olarak yazılır.",
+          "dogru": false,
+          "aciklama": "Sıfırın basamak değeri 0 olduğu için çözümlemede sıfırlı basamaklar yazılmaz (veya 0 olarak geçilir)."
+        },
+        {
+          "metin": "Birler basamağındaki bir rakamın sayı değeri ile basamak değeri birbirine eşittir.",
+          "dogru": true,
+          "aciklama": "Birler basamağındaki rakam 1 ile çarpıldığı için sayı ve basamak değeri aynıdır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "'918 405 273' doğal sayısına göre aşağıdaki kavramları doğru değerleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Milyonlar Bölüğündeki Sayı",
+          "918"
+        ],
+        [
+          "Binler Bölüğündeki Sayı",
+          "405"
+        ],
+        [
+          "1 Rakamının Basamak Değeri",
+          "10 000 000"
+        ],
+        [
+          "4 Rakamının Basamak Değeri",
+          "400 000"
+        ],
+        [
+          "7 Rakamının Sayı Değeri",
+          "7"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavram veya sayılarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Çok basamaklı doğal sayılarda sağdan sola doğru üçer basamaklı grupların her birine ___ adı verilir.",
+          "cevap": "bölük"
+        },
+        {
+          "metin": "Bir doğal sayıyı rakamlarının basamak değerlerinin toplamı şeklinde yazmaya ___ denir.",
+          "cevap": "çözümleme"
+        },
+        {
+          "metin": "Dokuz basamaklı bir doğal sayının en solunda (en büyük basamağında) ___ milyonlar basamağı bulunur.",
+          "cevap": "yüz"
+        },
+        {
+          "metin": "Basamak sayıları eşit olan iki doğal sayıyı karşılaştırırken en ___ basamaktan başlanır.",
+          "cevap": "soldaki"
+        },
+        {
+          "metin": "Onluk sayı sisteminde her basamağın değeri, hemen sağındaki basamağın değerinin ___ katıdır.",
+          "cevap": "on"
+        }
+      ],
+      "fazla": [
+        "sağdaki",
+        "bin"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "'508 060 400' sayısını hem basamak birimleriyle çarpım biçiminde çözümleyiniz hem de bu sayıyı '508 006 900' sayısıyla adım adım karşılaştırınız.",
+      "ipuclari": [
+        "Önce 508 060 400 sayısında sıfırdan farklı rakamların (5, 8, 6, 4) bulunduğu basamakları belirleyip çarpım şeklinde yazınız.",
+        "İki sayının basamak sayılarını (ikisi de 9 basamaklı) ve milyonlar bölüklerini (508 = 508) kontrol ediniz.",
+        "Binler bölüğündeki on binler basamağını (6 ve 0) karşılaştırarak hangi sayının daha büyük olduğunu açıklayınız."
+      ],
+      "cevap": "508 060 400 sayısının çözümlenişi: (5 × 100 000 000) + (8 × 1 000 000) + (6 × 10 000) + (4 × 100) şeklindedir. Karşılaştırma yapılırken: 508 060 400 ve 508 006 900 sayılarının ikisi de 9 basamaklıdır. Milyonlar bölüğü (508 = 508) ve yüz binler basamağı (0 = 0) eşittir. On binler basamağında ilk sayıda 6, ikinci sayıda 0 bulunduğu için (6 > 0), 508 060 400 > 508 006 900 olur."
+    }
+  ],
+  "ozet": [
+    "{koyu:Bölük Yapısı:} Sağdan sola doğru üçerli basamak grupları Birler Bölüğü, Binler Bölüğü ve Milyonlar Bölüğü olarak adlandırılır.",
+    "{koyu:Sayı ve Basamak Değeri:} Sayı değeri rakamın kendi değeridir; basamak değeri ise rakamın bulunduğu basamak birimiyle (1, 10, 100, ..., 100 000 000) çarpımıdır.",
+    "{koyu:Sayıları Çözümleme:} Doğal sayılar basamak değerlerinin toplamı veya (Rakam × Basamak Birimi) toplamı biçiminde çözümlenir.",
+    "{koyu:Eksik Basamak Kuralı:} Çözümlenmiş sayı rakamla yazılırken çözümlemede yer almayan her basamağın yerine '0' konur.",
+    "{koyu:Karşılaştırma:} Önce basamak sayısına bakılır (fazla olan büyüktür); basamak sayıları eşitse en soldaki basamaktan sağa doğru rakamlar karşılaştırılır."
+  ]
+}

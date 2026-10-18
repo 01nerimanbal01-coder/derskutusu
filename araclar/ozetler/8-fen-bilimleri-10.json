@@ -1,0 +1,257 @@
+{
+  "ad": "8-fen-bilimleri-10",
+  "sinif": 8,
+  "ders": "fen-bilimleri",
+  "ders_adi": "Fen Bilimleri",
+  "hafta": 10,
+  "tarih": "23-27 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "3. Ünite: Basınç",
+  "konu": "Katı Basıncı ve Sıvı Basıncı: Katı Basıncını Etkileyen Değişkenler (Ağırlık ve Yüzey Alanı) ile Sıvı Basıncını Etkileyen Değişkenler (Derinlik ve Yoğunluk) ve Pascal Prensibi (F.8.3.1.1 & F.8.3.1.2)",
+  "ciktilar": [
+    "Katı basıncını etkileyen değişkenleri (cismin ağırlığı ve temas yüzey alanı) kontrollü deneylerle keşfeder ve basınç birimi olarak Pascal'ı tanır.",
+    "Katı basıncının günlük yaşam ve teknolojideki artırılması veya azaltılmasına yönelik uygulamalarını örneklerle açıklar.",
+    "Sıvı basıncını etkileyen değişkenleri (derinlik ve sıvı yoğunluğu) tahmin ederek test eder ve Pascal Prensibi'nin kullanım alanlarını açıklar."
+  ],
+  "giris": "Karda yürürken batmamak için geniş tabanlı kar ayakkabısı giyilmesi, bıçakların keskinleştirilmesi veya baraj duvarlarının tabana doğru kalınlaşması aynı fiziksel kavramla açıklanır: Basınç. Bu haftaki dersimizde birim yüzeye dik olarak etki eden kuvvet olan basıncı tanıyacak, katı ve sıvı basıncını etkileyen değişkenleri kontrollü deneylerle inceleyecek ve Pascal Prensibi'nin teknolojideki uygulamalarını keşfedeceğiz.",
+  "bolumler": [
+    {
+      "baslik": "Katı Basıncı ve Katı Basıncını Etkileyen Değişkenler (F.8.3.1.1)",
+      "metin": [
+        "Birim yüzeye dik olarak etki eden kuvvete {koyu:basınç} denir ve {koyu:P} harfi ile gösterilir. Uluslararası birim sisteminde kuvvet (ağırlık) birimi {koyu:Newton (N)}, yüzey alanı birimi {koyu:metrekare} ({us:m|2}) alındığında basınç birimi {koyu:Pascal (Pa)} olur. Katı cisimler ağırlıklarından dolayı temas ettikleri yüzeye basınç uygularlar. Kum veya sünger zeminde bir cismin bıraktığı izin (batma miktarının) derinliği, o cismin yüzeye uyguladığı basıncın büyüklüğünü gösterir.",
+        "{koyu:1. Cismin Ağırlığı (Uygulanan Dik Kuvvet):} Temas yüzey alanı sabit tutularak cismin ağırlığı artırıldığında (örneğin özdeş bir tuğlanın üzerine ikinci bir tuğla konulduğunda) zemindeki batma miktarı ve katı basıncı artar. Yani katı basıncı, cismin ağırlığı ile {koyu:doğru orantılıdır}. Deneylerde üst üste konulan tuğla sayısı değiştirildiğinde 'cismin ağırlığı' bağımsız değişken, 'kumda batma miktarı (katı basıncı)' bağımlı değişken, 'temas yüzey alanı' ise kontrol edilen (sabit tutulan) değişkendir.",
+        "{koyu:2. Temas Yüzey Alanı:} Cismin ağırlığı sabit tutularak zemine temas eden yüzey alanı küçültüldüğünde (örneğin yatay duran dikdörtgen prizma şeklindeki tuğla dik konuma getirildiğinde) birim yüzeye düşen kuvvet artar ve cisim kuma daha çok batar. Yani katı basıncı, cismin yere temas eden yüzey alanı ile {koyu:ters orantılıdır}."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">KATI BASINCINI ETKİLEYEN DEĞİŞKENLER (AĞIRLIK VE YÜZEY ALANI)</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">1. Ağırlık (Kuvvet) İle Doğru Orantı</text>\n  <rect x=\"65\" y=\"135\" width=\"70\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1d4ed8\" stroke-width=\"1.5\"/>\n  <text x=\"100\" y=\"160\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#ffffff\">G</text>\n  <rect x=\"215\" y=\"95\" width=\"70\" height=\"40\" fill=\"#3b82f6\" stroke=\"#1d4ed8\" stroke-width=\"1.5\"/>\n  <text x=\"250\" y=\"120\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#ffffff\">G</text>\n  <rect x=\"215\" y=\"135\" width=\"70\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1d4ed8\" stroke-width=\"1.5\"/>\n  <text x=\"250\" y=\"160\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#ffffff\">G</text>\n  <line x1=\"40\" y1=\"175\" x2=\"315\" y2=\"175\" stroke=\"#475569\" stroke-width=\"2\"/>\n  <text x=\"100\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">Yüzey: S | Ağırlık: G</text>\n  <text x=\"250\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">Yüzey: S | Ağırlık: 2G</text>\n  <text x=\"180\" y=\"222\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">Yüzey sabitken ağırlık artarsa basınç ARTAR (P₂ &gt; P₁)</text>\n\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">2. Temas Yüzey Alanı İle Ters Orantı</text>\n  <rect x=\"400\" y=\"135\" width=\"90\" height=\"40\" fill=\"#4ade80\" stroke=\"#15803d\" stroke-width=\"1.5\"/>\n  <text x=\"445\" y=\"160\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#064e3b\">G (Geniş: 2S)</text>\n  <rect x=\"565\" y=\"95\" width=\"45\" height=\"80\" fill=\"#22c55e\" stroke=\"#15803d\" stroke-width=\"1.5\"/>\n  <text x=\"587\" y=\"140\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#ffffff\">G (S)</text>\n  <line x1=\"380\" y1=\"175\" x2=\"655\" y2=\"175\" stroke=\"#475569\" stroke-width=\"2\"/>\n  <text x=\"445\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">Geniş yüzey (2S) ➔ Az iz</text>\n  <text x=\"587\" y=\"195\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">Dar yüzey (S) ➔ Derin iz</text>\n  <text x=\"520\" y=\"222\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">Ağırlık sabitken yüzey küçülürse basınç ARTAR (P_dar &gt; P_geniş)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Düzgün Katıların Düşey Kesilmesi",
+          "metin": "Homojen ve düzgün bir katı cisim (küp, dikdörtgenler prizması veya dik silindir) yukarıdan aşağıya dikey olarak kesildiğinde, parçaların ağırlığı ve taban alanı aynı oranda azaldığı için zemine uygulanan katı basıncı {koyu:değişmez}."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Katılar Kuvveti Aynen İletir",
+          "metin": "Katı cisimler kendilerine uygulanan kuvveti aynı doğrultuda ve aynı büyüklükte iletir; ancak basıncı yüzey alanına bağlı olarak değiştirerek iletir (çivinin geniş başına vurulan kuvvetin sivri uçta çok büyük basınç oluşturması gibi)."
+        }
+      ]
+    },
+    {
+      "baslik": "Katı Basıncının Günlük Yaşamda Artırılması ve Azaltılması",
+      "metin": [
+        "Günlük yaşamda ve teknolojide bazen zemine batmayı önlemek için basıncı azaltmak, bazen de kesme, delme veya zemine tutunmayı kolaylaştırmak için basıncı artırmak isteriz. Ağırlığı değiştiremediğimiz durumlarda temas yüzey alanını değiştirerek basıncı kontrol ederiz.",
+        "{koyu:Katı Basıncını Azaltmaya Yönelik Uygulamalar (Yüzey Alanı Artırılır):} Karda batmamak için geniş tabanlı kar ayakkabıları (hedik) giyilmesi, ağır yük taşıyan kamyon ve trenlerde tekerlek sayısının artırılması, iş makineleri ve tanklarda tekerlek yerine geniş palet kullanılması, traktörlerin arka tekerleklerinin geniş yapılması ve ördek, kaz, deve, fil gibi hayvanların ayak tabanlarının geniş olması basıncı azaltarak zemine batmayı engeller.",
+        "{koyu:Katı Basıncını Artırmaya Yönelik Uygulamalar (Yüzey Alanı Küçültülür):} Bıçak, makas ve baltaların ağzının bilenerek inceltilmesi, çivi, toplu iğne ve raptiyelerin uçlarının sivri yapılması, futbolcu kramponlarının altında sivri dişler bulunması, kışın araç lastiklerine zincir takılması ve tavuk gibi hayvanların gagalarının/pençelerinin sivri olması yüzey alanını küçülterek basıncı artırır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">SIVI BASINCINI ETKİLEYEN DEĞİŞKENLER (DERİNLİK VE YOĞUNLUK)</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#ecfeff\" stroke=\"#06b6d4\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0e7490\">1. Derinlik (h) İle Doğru Orantı</text>\n  <rect x=\"70\" y=\"85\" width=\"75\" height=\"105\" fill=\"#bae6fd\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n  <circle cx=\"145\" cy=\"115\" r=\"3\" fill=\"#dc2626\"/>\n  <text x=\"165\" y=\"118\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">K (h) ➔ Yakına fışkırır</text>\n  <circle cx=\"145\" cy=\"150\" r=\"3\" fill=\"#dc2626\"/>\n  <text x=\"165\" y=\"153\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">L (2h) ➔ Orta mesafeye</text>\n  <circle cx=\"145\" cy=\"180\" r=\"3\" fill=\"#dc2626\"/>\n  <text x=\"165\" y=\"183\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">M (3h) ➔ En uzağa fışkırır</text>\n  <text x=\"180\" y=\"218\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0e7490\">Derinlik arttıkça sıvı basıncı ARTAR: P_M &gt; P_L &gt; P_K</text>\n\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#a16207\">2. Sıvı Yoğunluğu (d) İle Doğru Orantı</text>\n  <rect x=\"405\" y=\"95\" width=\"75\" height=\"85\" fill=\"#bae6fd\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n  <text x=\"442\" y=\"140\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">Su (d = 1)</text>\n  <text x=\"442\" y=\"160\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0369a1\">Derinlik: h</text>\n  <rect x=\"550\" y=\"95\" width=\"75\" height=\"85\" fill=\"#fde047\" stroke=\"#ca8a04\" stroke-width=\"2\"/>\n  <text x=\"587\" y=\"140\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#854d0e\">Zeytinyağı</text>\n  <text x=\"587\" y=\"160\" text-anchor=\"middle\" font-size=\"11\" fill=\"#854d0e\">(d = 0,9) · h</text>\n  <text x=\"520\" y=\"200\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Aynı derinlikte (h) yoğunluğu büyük sıvının basıncı büyüktür:</text>\n  <text x=\"520\" y=\"220\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\">P_su &gt; P_zeytinyağı (Kabın şekli basıncı etkilemez!)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Kışın Araç Lastiklerine Zincir Takılması",
+          "metin": "Karlı ve buzlu yollarda araç tekerleklerine zincir takılması temas yüzey alanını küçültür; böylece basıncı artırarak zincirin buza saplanmasını ve aracın kaymadan yola tutunmasını sağlar."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Raptiye Örneği",
+          "metin": "Bir raptiyeye baş kısmından parmağımızla bastırdığımızda her iki uca aynı kuvvet iletilir; geniş baş kısmı parmağımıza az basınç uygularken, sivri uç kısmı panoya çok büyük basınç uygulayarak kolayca saplanır."
+        }
+      ]
+    },
+    {
+      "baslik": "Sıvı Basıncını Etkileyen Değişkenler ve Pascal Prensibi (F.8.3.1.2)",
+      "metin": [
+        "Sıvılar da ağırlıklarından ve akışkan olmalarından dolayı bulundukları kabın tabanına ve temas ettikleri tüm yan yüzeylere basınç uygular. Bir sıvının herhangi bir noktada oluşturduğu basınç iki değişkene bağlıdır: {koyu:1. Sıvının Derinliği (h):} Noktanın sıvının açık yüzeyine (üst seviyesine) olan dik uzaklığı arttıkça sıvı basıncı artar (doğru orantılıdır). Bu nedenle su dolu bir şişenin en altındaki delikten su en uzağa fışkırır ve baraj duvarları tabana doğru kalınlaşacak şekilde inşa edilir.",
+        "{koyu:2. Sıvının Yoğunluğu (d - Öz Kütlesi):} Derinlik sabit tutulduğunda, yoğunluğu (cinsi) daha büyük olan sıvının uyguladığı basınç daha büyüktür (doğru orantılıdır). Örneğin eşit derinlikteki su (d = 1 {kesir:g|cm³}) dolu kabın tabanındaki sıvı basıncı, zeytinyağı (d = 0,9 {kesir:g|cm³}) dolu kabın tabanındaki sıvı basıncından büyüktür.",
+        "Sıvı basıncı; {koyu:kabın şekline}, {koyu:kabın genişliğine (kesit alanına)} ve {koyu:kaptaki toplam sıvı miktarına (hacmine)} bağlı değildir. Farklı şekillerdeki bileşik kaplara aynı cins sıvı aynı yüksekliğe kadar doldurulduğunda tüm kapların tabanlarındaki sıvı basınçları birbirine eşit olur. Öte yandan Fransız bilim insanı Blaise Pascal'ın keşfettiği {koyu:Pascal Prensibi}'ne göre; kapalı bir kaptaki sıvıya uygulanan basınç, sıvı tarafından kabın iç yüzeyinin her noktasına {koyu:aynı büyüklükte ve her yönde} iletilir. Su cendereleri, hidrolik fren sistemleri, hidrolik liftler, berber koltukları, itfaiye merdivenleri ve damperli kamyonlar Pascal Prensibi ile çalışır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">PASCAL PRENSİBİ VE GÜNLÜK HAYATTAKİ UYGULAMALARI</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#faf5ff\" stroke=\"#a855f7\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#7e22ce\">Pascal Prensibi (Su Cenderesi)</text>\n  <text x=\"180\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">Kapalı kaptaki sıvıya uygulanan basınç,</text>\n  <text x=\"180\" y=\"114\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">sıvı tarafından her yöne EŞİT büyüklükte iletilir.</text>\n  <rect x=\"55\" y=\"135\" width=\"45\" height=\"65\" fill=\"#d8b4fe\" stroke=\"#7e22ce\" stroke-width=\"1.5\"/>\n  <rect x=\"100\" y=\"175\" width=\"85\" height=\"25\" fill=\"#d8b4fe\" stroke=\"#7e22ce\" stroke-width=\"1.5\"/>\n  <rect x=\"185\" y=\"135\" width=\"110\" height=\"65\" fill=\"#d8b4fe\" stroke=\"#7e22ce\" stroke-width=\"1.5\"/>\n  <text x=\"77\" y=\"130\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#581c87\">Küçük F (S₁)</text>\n  <text x=\"240\" y=\"130\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#581c87\">Büyük Yük G (S₂)</text>\n  <text x=\"180\" y=\"222\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#7e22ce\">Küçük kuvvetle ağır araçlar kolayca kaldırılır!</text>\n\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#fff1f2\" stroke=\"#f43f5e\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#be123c\">Katı ve Sıvı Basıncı Uygulama Alanları</text>\n  <text x=\"520\" y=\"96\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#9f1239\">Basıncı Azaltmak (Geniş Yüzey):</text>\n  <text x=\"520\" y=\"116\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• Kar ayakkabısı, iş makinesi paleti, tren tekerleği, ördek perdesi</text>\n  <text x=\"520\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#9f1239\">Basıncı Artırmak (Dar/Sivri Yüzey):</text>\n  <text x=\"520\" y=\"162\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• Bıçak ağzı, çivi/raptiye ucu, krampon dişleri, kış zinciri</text>\n  <text x=\"520\" y=\"188\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#9f1239\">Pascal Prensibi Örnekleri:</text>\n  <text x=\"520\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• Hidrolik fren, hidrolik lift, berber koltuğu, itfaiye merdiveni</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Derinlik Ölçümü Nereden Yapılır?",
+          "metin": "Sıvı içindeki bir K noktasının basıncı bulunurken noktanın kabın tabanına olan uzaklığı değil, sıvının {koyu:en üst açık yüzeyine} olan dik uzaklığı (derinliği) dikkate alınır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Katı ve Sıvıların İletim Farkı",
+          "metin": "Katılar uygulanan {koyu:kuvveti} aynı doğrultuda aynen iletirken; kapalı kaptaki sıvılar uygulanan {koyu:basıncı} her yöne eşit büyüklükte iletir (Pascal Prensibi)."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Özdeş tuğlalar kullanılarak yapılan bir deneyde, kum zemine birinci durumda 1 tuğla, ikinci durumda aynı yüzey alanı üzerine üst üste 2 tuğla konuluyor. Bu deneyin bağımsız, bağımlı ve kontrol edilen değişkenlerini yazınız.",
+      "cevap": "Deneyde bizim değiştirdiğimiz 'cismin ağırlığı (tuğla sayısı)' bağımsız değişken; ağırlığa bağlı olarak değişen 'katı basıncı (kumda batma miktarı)' bağımlı değişken; sabit tutulan 'temas yüzey alanı' ise kontrol edilen değişkendir."
+    },
+    {
+      "soru": "Ağırlığı değişmeyen dikdörtgenler prizması şeklindeki bir kutu geniş yüzeyi üzerindeyken dar yüzeyi üzerine dikiliyor. Kutunun yere uyguladığı kuvvet ve basınç nasıl değişir?",
+      "cevap": "Kutunun ağırlığı değişmediği için yere uyguladığı dik kuvvet değişmez; ancak temas yüzey alanı küçüldüğü için yere uyguladığı katı basıncı artar."
+    },
+    {
+      "soru": "Kamyonların tekerlek sayısının fazla olması ile futbolcu kramponlarının tabanında sivri dişler bulunmasının basınç açısından amaçlarını karşılaştırınız.",
+      "cevap": "Kamyonlarda tekerlek sayısının artırılması yüzey alanını büyütüp basıncı azaltarak yolun bozulmasını ve tekerin batmasını önler. Krampon dişleri ise yüzey alanını küçültüp basıncı artırarak futbolcunun çim zemine sağlam tutunmasını sağlar."
+    },
+    {
+      "soru": "Su dolu yüksek bir plastik şişenin yan yüzeyinde üstten alta doğru K, L ve M delikleri açıldığında suyun fışkırma mesafeleri arasındaki ilişki nasıldır? Nedenini açıklayınız.",
+      "cevap": "En alttaki M noktası sıvı yüzeyine en derin nokta olduğu için sıvı basıncı en büyüktür (P_M > P_L > P_K). Bu nedenle su en uzağa M deliğinden, en yakına ise K deliğinden fışkırır."
+    },
+    {
+      "soru": "Taban alanları S, 2S ve 3S olan farklı şekillerdeki üç kaba aynı yüksekliğe (h) kadar saf su dolduruluyor. Kapların tabanlarındaki sıvı basınçlarını karşılaştırınız.",
+      "cevap": "Sıvı basıncı kabın şekline, taban alanına veya sıvı miktarına bağlı değildir; derinlik (h) ve sıvı cinsi (su) aynı olduğu için her üç kabın tabanındaki sıvı basıncı birbirine eşittir (P₁ = P₂ = P₃)."
+    },
+    {
+      "soru": "Pascal Prensibi nedir ve otomobillerdeki hidrolik fren sistemi bu prensiple nasıl çalışır?",
+      "cevap": "Pascal Prensibi, kapalı kaptaki sıvıya uygulanan basıncın sıvı tarafından her yöne eşit büyüklükte iletilmesidir. Sürücü fren pedalına bastığında oluşan basınç, fren borularındaki sıvı tarafından tekerleklerdeki pistonlara aynen iletilir ve araç durdurulur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki uygulamalardan hangisi katı basıncını azaltmak amacıyla yapılmıştır?",
+      "secenekler": [
+        "Mutfak bıçaklarının kesici ağzının bilenerek inceltilmesi",
+        "Yumuşak zeminde çalışan iş makinelerine geniş palet takılması",
+        "Kışın buzlu yollarda araç tekerleklerine zincir takılması",
+        "Ahşap zemine çakılan çivilerin uç kısmının sivri yapılması"
+      ],
+      "dogru": 1,
+      "aciklama": "İş makinelerine geniş palet takılması temas yüzey alanını büyütür ve katı basıncını azaltarak iş makinesinin toprağa batmasını engeller."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Katı basıncının cismin temas yüzey alanına bağlı olup olmadığını araştıran bir öğrenci aşağıdaki deney düzeneklerinden hangisini seçmelidir?",
+      "secenekler": [
+        "Ağırlıkları eşit, yere temas eden yüzey alanları farklı iki düzenek",
+        "Ağırlıkları farklı, yere temas eden yüzey alanları eşit iki düzenek",
+        "Hem ağırlıkları hem de temas yüzey alanları farklı iki düzenek",
+        "Hem ağırlıkları hem de temas yüzey alanları eşit iki düzenek"
+      ],
+      "dogru": 0,
+      "aciklama": "Yüzey alanının etkisini (bağımsız değişken) test etmek için cisimlerin ağırlıkları sabit tutulmalı (eşit olmalı), temas yüzey alanları ise farklı seçilmelidir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Baraj duvarlarının suyun derinliklerine (tabana) inildikçe daha kalın inşa edilmesinin temel bilimsel nedeni aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Suyun yoğunluğunun baraj tabanında üst kısımlara göre azalması",
+        "Baraj gölündeki toplam su kütlesinin basıncı azaltması",
+        "Derinlik arttıkça suya maruz kalan duvara etki eden sıvı basıncının artması",
+        "Açık hava basıncının baraj tabanındaki su basıncını sıfırlaması"
+      ],
+      "dogru": 2,
+      "aciklama": "Sıvı basıncı derinlikle doğru orantılıdır; derine inildikçe artan sıvı basıncına dayanabilmesi için baraj duvarları tabana doğru kalınlaştırılır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki teknolojik araçlardan hangisinin çalışma ilkesi sıvıların basıncı her yöne eşit iletmesi (Pascal Prensibi) esasına dayanmaz?",
+      "secenekler": [
+        "Otomobillerdeki hidrolik fren sistemi",
+        "Sanayide araç kaldıran hidrolik liftler",
+        "İtfaiye araçlarındaki hidrolik merdivenler",
+        "Karda batmayı önleyen geniş kar ayakkabıları"
+      ],
+      "dogru": 3,
+      "aciklama": "Hidrolik fren, lift ve merdivenler sıvıların basıncı iletmesi (Pascal Prensibi) ile çalışır; kar ayakkabısı ise katı basıncını yüzey alanını büyüterek azaltma ilkesine dayanır."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Birim yüzeye dik olarak etki eden kuvvete basınç denir ve birimi Pascal (Pa) olarak adlandırılır.",
+          "dogru": true
+        },
+        {
+          "metin": "Temas yüzey alanı sabit tutulan bir katı cismin ağırlığı artırılırsa zemine uyguladığı basınç azalır.",
+          "dogru": false
+        },
+        {
+          "metin": "Sıvı basıncı sıvının derinliği ve sıvının yoğunluğu ile doğru orantılıdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Aynı derinlikte su bulunan geniş bir kovadaki sıvı basıncı, dar bir bardaktaki sıvı basıncından büyüktür.",
+          "dogru": false
+        },
+        {
+          "metin": "Su cendereleri ve berber koltukları kapalı kaptaki sıvıların basıncı aynen iletmesi ilkesiyle çalışır.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavram ve uygulamaları ilgili oldukları bilimsel ilkelerle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Pascal (Pa)",
+          "Birim yüzeye dik etki eden kuvvetin (basıncın) uluslararası birimi"
+        ],
+        [
+          "Bağımsız Değişken",
+          "Kontrollü bir deneyde araştırmacının etkisini görmek için kendi değiştirdiği değişken"
+        ],
+        [
+          "Kar Ayakkabısı ve Palet",
+          "Temas yüzey alanını büyüterek katı basıncını azaltan uygulama"
+        ],
+        [
+          "Bıçak Ağzı ve Çivi Ucu",
+          "Temas yüzey alanını küçülterek katı basıncını artıran uygulama"
+        ],
+        [
+          "Su Cenderesi ve Hidrolik Fren",
+          "Kapalı kaptaki sıvıların basıncı her yöne eşit iletmesiyle çalışan düzenek"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Katı bir cismin ağırlığı sabit tutulup yere temas eden yüzey alanı küçültülürse katı basıncı ___ gösterir.",
+          "cevap": "artış"
+        },
+        {
+          "metin": "Kontrollü bir deneyde bağımsız değişkene bağlı olarak sonucu gözlemlenen değişkene ___ değişken denir.",
+          "cevap": "bağımlı"
+        },
+        {
+          "metin": "Bir noktadaki sıvı basıncı, o noktanın sıvının açık yüzeyine olan dik uzaklığı yani ___ ile doğru orantılıdır.",
+          "cevap": "derinlik"
+        },
+        {
+          "metin": "Eşit derinlikteki iki kaptan ___ değeri daha büyük olan sıvının kap tabanına uyguladığı basınç daha fazladır.",
+          "cevap": "yoğunluk"
+        },
+        {
+          "metin": "Kapalı bir kaptaki sıvıya uygulanan basıncın her yöne eşit büyüklükte iletilmesine ___ Prensibi adı verilir.",
+          "cevap": "Pascal"
+        }
+      ],
+      "fazla": [
+        "hacim",
+        "azalış"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Katı basıncı ile sıvı basıncını etkileyen değişkenleri karşılaştırarak her iki basınç türünün günlük hayattaki birer uygulamasıyla açıklayınız.",
+      "ipuclari": [
+        "Katı basıncı cismin ağırlığı ile doğru, temas yüzey alanı ile ters orantılıdır.",
+        "Sıvı basıncı ise sıvının derinliği ve yoğunluğu ile doğru orantılı olup kabın şekline veya kesit alanına bağlı değildir.",
+        "Traktörlerin geniş arka tekerlekleri katı basıncını azaltırken, baraj duvarlarının tabanda kalınlaşması derinlikle artan sıvı basıncına dayanmak içindir."
+      ],
+      "cevap": "Katı basıncı cismin ağırlığına (doğru orantılı) ve temas yüzey alanına (ters orantılı) bağlıdır; örneğin iş makinelerinde geniş palet kullanılarak yüzey alanı büyütülür ve basınç azaltılarak batma önlenir. Sıvı basıncı ise kabın taban alanına veya şekline bağlı olmayıp sıvının derinliğine ve yoğunluğuna (doğru orantılı) bağlıdır; örneğin barajlarda derine inildikçe sıvı basıncı arttığı için baraj duvarları tabana doğru daha kalın inşa edilir."
+    }
+  ],
+  "ozet": [
+    "{koyu:Katı Basıncı:} Birim yüzeye dik etki eden kuvvettir (birimi Pascal - Pa); cismin ağırlığı ile doğru, temas yüzey alanı ile ters orantılıdır.",
+    "{koyu:Katı Basıncı Uygulamaları:} Kar ayakkabısı, palet ve çok tekerlek yüzey alanını büyütüp basıncı azaltırken; bıçak, çivi ve krampon dişleri yüzeyi küçültüp basıncı artırır.",
+    "{koyu:Sıvı Basıncı Değişkenleri:} Sıvının derinliği (açık yüzeye olan dik uzaklık) ve sıvının yoğunluğu (cinsi) ile doğru orantılıdır.",
+    "{koyu:Kabın Şekli:} Sıvı basıncı kabın şekline, genişliğine ve kaptaki toplam sıvı miktarına bağlı değildir.",
+    "{koyu:Pascal Prensibi:} Kapalı kaptaki sıvılar kendilerine uygulanan basıncı her yöne eşit büyüklükte iletir; hidrolik fren, lift ve su cendereleri bu ilkeyle çalışır."
+  ]
+}

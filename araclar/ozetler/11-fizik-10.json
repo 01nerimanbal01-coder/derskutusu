@@ -1,0 +1,261 @@
+{
+  "ad": "11-fizik-10",
+  "sinif": 11,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 10,
+  "tarih": "23-27 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "1. Tema: Kuvvet ve Hareket",
+  "konu": "Sürtünme Kuvvetinin Matematiksel Modeli (fs = k·N), Yatay, Düşey ve Eğik Düzlemde Sürtünme Kuvveti Hesaplamaları (FİZ.11.1.7)",
+  "ciktilar": [
+    "Sürtünme kuvvetinin bağlı olduğu değişkenler (sürtünen yüzeylerin cinsi ve yüzeyin normal kuvveti) arasındaki ilişkiyi keşfederek matematiksel modeline (fs = k·N) ulaşır.",
+    "Yatay, düşey ve eğik düzlemlerde cisme etki eden yüzey tepki (normal) kuvvetini serbest cisim diyagramı üzerinden belirler.",
+    "Farklı veri setleri ve kuvvet sistemleri ile Newton'ın ikinci hareket yasasını (Fnet = m·a) birleştirerek sürtünmeli yüzeylerde ivme ve sürtünme kuvveti hesaplamaları yapar."
+  ],
+  "giris": "Birbiriyle temas hâlindeki iki yüzey arasında bağıl harekete veya hareket eğilimine karşı koyan {koyu:sürtünme kuvveti}, mikroskobik yüzey pürüzlerinin birbirine kenetlenmesinden kaynaklanır. Deneysel veriler üzerinden tümevarımsal akıl yürütmeyle ulaşılan {koyu:fs = k · N} matematiksel modeli, mühendislikten günlük yaşama kadar tüm mekanik sistemlerin temelini oluşturur.",
+  "bolumler": [
+    {
+      "baslik": "Sürtünme Kuvvetinin Bağlı Olduğu Değişkenler ve Matematiksel Modeli",
+      "metin": [
+        "Kontrollü deneylerde sürtünme kuvvetinin bağlı olduğu değişkenler incelendiğinde iki temel faktör öne çıkar: Birincisi {koyu:sürtünen yüzeylerin cinsi (pürüzlülük derecesi)}dir; bunu boyutsuz ve birimsiz bir sayı olan {koyu:sürtünme katsayısı (k veya μ)} temsil eder. İkincisi ise yüzeye dik olarak etki eden {koyu:yüzeyin normal (tepki) kuvveti (N)}dir; yüzeyleri birbirine bastıran dik kuvvet arttıkça mikroskobik girinti ve çıkıntıların kenetlenmesi artar.",
+        "Tümevarımsal veri analizleri sonucunda sürtünme kuvvetinin büyüklüğünün normal kuvvetle doğru orantılı olduğu görülür ve matematiksel model {koyu:fs = k · N} şeklinde ifade edilir. Burada {koyu:fs} sürtünme kuvvetini (Newton, N), {koyu:k} sürtünme katsayısını (birimsiz, genellikle 0 ile 1 arasında), {koyu:N} ise yüzeyin normal (dik tepki) kuvvetini (Newton, N) gösterir.",
+        "Önemli bir fiziksel ilke olarak; katı yüzeyler arasındaki sürtünme kuvvetinin büyüklüğü, cismin kütlesi değişmemek şartıyla {koyu:sürtünen yüzey alanının (kesit alanının) büyüklüğüne bağlı değildir}. Örneğin dikdörtgenler prizması şeklindeki bir tahta blok geniş yüzeyi üzerine de dik yüzeyi üzerine de konulsa, toplam ağırlık ve normal kuvvet ({koyu:N = G}) değişmediği için sürtünme kuvveti aynı kalır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">SÜRTÜNME KUVVETİNİN MATEMATİKSEL MODELİ VE DEĞİŞKEN ANALİZİ</text>\n  <rect x=\"25\" y=\"50\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"75\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"bold\" fill=\"#1e40af\">Matematiksel Model: fs = k · N</text>\n  <rect x=\"45\" y=\"90\" width=\"270\" height=\"50\" rx=\"6\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"112\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">fs,max = ks · N   ve   fk = kk · N</text>\n  <text x=\"180\" y=\"130\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">(Statik katsayı ks &gt; Kinetik katsayı kk)</text>\n  <text x=\"42\" y=\"162\" font-size=\"11\" fill=\"#1e3a8a\">• k: Sürtünen yüzeylerin cinsine bağlı</text>\n  <text x=\"50\" y=\"178\" font-size=\"10.5\" fill=\"#334155\">birimsiz sürtünme katsayısı (Eğim = fs / N)</text>\n  <text x=\"42\" y=\"200\" font-size=\"11\" fill=\"#1e3a8a\">• N: Yüzeyin cisme uyguladığı dik</text>\n  <text x=\"50\" y=\"216\" font-size=\"10.5\" fill=\"#334155\">tepki (normal) kuvveti (Birimi: Newton)</text>\n\n  <rect x=\"365\" y=\"50\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"75\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"bold\" fill=\"#166534\">Temel Fiziksel Çıkarımlar</text>\n  <text x=\"380\" y=\"102\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">1. Doğru Orantı İlişkisi:</text>\n  <text x=\"388\" y=\"118\" font-size=\"10.5\" fill=\"#334155\">Yüzey cinsi sabitken normal kuvvet (N)</text>\n  <text x=\"388\" y=\"134\" font-size=\"10.5\" fill=\"#334155\">iki katına çıkarsa fs de iki katına çıkar.</text>\n  <text x=\"380\" y=\"158\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">2. Yüzey Alanından Bağımsızlık:</text>\n  <text x=\"388\" y=\"174\" font-size=\"10.5\" fill=\"#334155\">Aynı cisim geniş (2S) veya dar (S) yüzeyi</text>\n  <text x=\"388\" y=\"190\" font-size=\"10.5\" fill=\"#334155\">üzerine konulduğunda N değişmediği için</text>\n  <text x=\"388\" y=\"206\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#166534\">sürtünme kuvveti (fs) değişmez!</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Duran Cisimlerde Sürtünme Kuvveti Tuzağı!",
+          "metin": "Duran bir cisme uygulanan yatay kuvvet (F), statik sürtünme kuvvetinin maksimum değerinden (fs,max = ks · N) küçükse cisim harekete geçmez ve o andaki statik sürtünme kuvveti fs,max'a değil, doğrudan uygulanan kuvvete (fs = F) eşit olur!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "fs - N Grafiğinin Eğimi",
+          "metin": "Düşey eksende sürtünme kuvvetinin (fs), yatay eksende normal kuvvetin (N) yer aldığı doğrusal bir grafikte doğrunun eğimi (tan α = fs / N), doğrudan sürtünme katsayısını (k) verir."
+        }
+      ]
+    },
+    {
+      "baslik": "Yatay ve Düşey Düzlemlerde Normal Kuvvet (N) ve Sürtünme",
+      "metin": [
+        "Sürtünme kuvveti hesaplanırken en kritik adım, {koyu:N normal kuvvetinin her durumda m·g'ye eşit olmadığını} bilmektir; {koyu:N} daima yüzeye dik kuvvetlerin dengesinden bulunur. Yatay düzlemde yalnız kendi ağırlığıyla duran cisimde {koyu:N = m · g} olduğundan {koyu:fs = k · m · g} olur. Ancak cisme yukarıdan aşağıya doğru dik bir {koyu:F}{us:d|1} kuvveti bastırılıyorsa {koyu:N = m · g + F}{us:d|1} olur ve sürtünme artar; cisme yukarı doğru dik bir kuvvet uygulanıyorsa {koyu:N = m · g - F}{us:d|1} olur ve sürtünme azalır.",
+        "Yatay düzlemdeki cisme yatayla {koyu:α} açısı yapacak biçimde eğik bir {koyu:F} çekme kuvveti uygulanırsa, kuvvet bileşenlerine ayrılır: Yatay bileşen {koyu:F}{us:x|1} {koyu:= F · cos α} cismi hareket ettirmeye çalışırken, düşey bileşen {koyu:F}{us:y|1} {koyu:= F · sin α} cismi hafifletir ve normal kuvvet {koyu:N = m · g - F · sin α} olarak hesaplanır.",
+        "Düşey bir duvara yatay {koyu:F} kuvvetiyle bastırılan {koyu:m} kütleli bir cisimde ise, yüzeye dik olan tek kuvvet {koyu:F} kuvvetidir ({koyu:N = F}); cismin ağırlığı ({koyu:G = m · g}) yüzeye paralel ve aşağı yönlüdür. Bu nedenle düşey duvardaki maksimum statik sürtünme kuvveti {koyu:fs,max = k · F} olur; cismin düşmeden dengede kalabilmesi için {koyu:k · F ≥ m · g} şartı sağlanmalıdır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">FARKLI KUVVET DURUMLARINDA NORMAL KUVVET (N) VE SÜRTÜNME</text>\n  <rect x=\"20\" y=\"48\" width=\"210\" height=\"192\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.8\"/>\n  <text x=\"125\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">1. Yatay Düzlem (Düşey Ek Kuvvet)</text>\n  <text x=\"30\" y=\"98\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e40af\">• Serbest Durum:</text>\n  <text x=\"38\" y=\"114\" font-size=\"10.5\" fill=\"#334155\">N = m·g  =&gt;  fs = k·m·g</text>\n  <text x=\"30\" y=\"138\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e40af\">• Üstten Bastıran Kuvvet (Fd):</text>\n  <text x=\"38\" y=\"154\" font-size=\"10.5\" fill=\"#334155\">N = m·g + Fd  =&gt;  fs = k·(m·g + Fd)</text>\n  <text x=\"30\" y=\"178\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e40af\">• Yukarı Çeken Kuvvet (Fd &lt; mg):</text>\n  <text x=\"38\" y=\"194\" font-size=\"10.5\" fill=\"#334155\">N = m·g - Fd  =&gt;  fs = k·(m·g - Fd)</text>\n\n  <rect x=\"245\" y=\"48\" width=\"210\" height=\"192\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.8\"/>\n  <text x=\"350\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">2. Açılı Kuvvet (F, Açı α)</text>\n  <text x=\"255\" y=\"98\" font-size=\"10.5\" fill=\"#334155\">• Yatay bileşen (Hareket ettirici):</text>\n  <text x=\"263\" y=\"114\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b45309\">Fx = F · cos α</text>\n  <text x=\"255\" y=\"138\" font-size=\"10.5\" fill=\"#334155\">• Düşey bileşen (Yukarı yönlü):</text>\n  <text x=\"263\" y=\"154\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b45309\">Fy = F · sin α</text>\n  <text x=\"255\" y=\"178\" font-size=\"10.5\" fill=\"#334155\">• Normal kuvvet ve sürtünme:</text>\n  <text x=\"263\" y=\"194\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#92400e\">N = m·g - F·sin α</text>\n  <text x=\"263\" y=\"212\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#92400e\">fs = k · (m·g - F·sin α)</text>\n\n  <rect x=\"470\" y=\"48\" width=\"210\" height=\"192\" rx=\"8\" fill=\"#fce7f3\" stroke=\"#db2777\" stroke-width=\"1.8\"/>\n  <text x=\"575\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#9d174d\">3. Düşey Duvar (Yatay F)</text>\n  <text x=\"480\" y=\"98\" font-size=\"10.5\" fill=\"#334155\">• Duvara dik bastıran kuvvet:</text>\n  <text x=\"488\" y=\"114\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#be185d\">N = F  (Ağırlık dik değildir!)</text>\n  <text x=\"480\" y=\"138\" font-size=\"10.5\" fill=\"#334155\">• Maksimum sürtünme:</text>\n  <text x=\"488\" y=\"154\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#be185d\">fs,max = k · F</text>\n  <text x=\"480\" y=\"178\" font-size=\"10.5\" fill=\"#334155\">• Kaymadan durma şartı:</text>\n  <text x=\"488\" y=\"194\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#9d174d\">fs,max ≥ m·g  (Dururken fs = m·g)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Düşey Duvarda Duran Cismin Sürtünmesi",
+          "metin": "Düşey duvara F kuvvetiyle bastırılan cisim kaymadan duruyorsa, o anda cisme etki eden statik sürtünme kuvveti yukarı yönlüdür ve büyüklüğü doğrudan cismin ağırlığına (fs = m·g) eşittir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Bileşenlerde 37° ve 53° Değerleri",
+          "metin": "Fizik sorularında sıkça kullanılan 3-4-5 dik üçgeninde sin 37° = cos 53° = 0,6 ve cos 37° = sin 53° = 0,8 değerleri kullanılarak kuvvet bileşenleri kolayca bulunur."
+        }
+      ]
+    },
+    {
+      "baslik": "Eğik Düzlemde Sürtünme Kuvveti ve İvme Hesaplamaları",
+      "metin": [
+        "Yatayla {koyu:α} açısı yapan sürtünmeli bir eğik düzlem üzerindeki {koyu:m} kütleli cismin ağırlığı ({koyu:G = m · g}) iki dik bileşene ayrılır: Eğik düzleme paralel olup cismi aşağı kaydırmak isteyen bileşen {koyu:G}{us:x|1} {koyu:= m · g · sin α}, eğik düzleme dik olup yüzeyi bastıran bileşen ise {koyu:G}{us:y|1} {koyu:= m · g · cos α}'dır.",
+        "Eğik düzlemde yüzeye dik başka bir kuvvet yoksa yüzeyin normal kuvveti {koyu:N = m · g · cos α} olur. Bu durumda eğik düzlemdeki sürtünme kuvvetinin matematiksel modeli {koyu:fs = k · N = k · m · g · cos α} bağıntısıyla hesaplanır. Eğim açısı ({koyu:α}) artırıldığında {koyu:cos α} azaldığı için normal kuvvet ({koyu:N}) ve sürtünme kuvveti ({koyu:fs}) azalır; buna karşılık {koyu:sin α} arttığı için aşağı çeken bileşen ({koyu:G}{us:x|1}) büyür.",
+        "Eğik düzlemde serbest bırakılan cisimde eğer {koyu:m · g · sin α > k · m · g · cos α} (yani {koyu:tan α > k}) ise cisim aşağı doğru hızlanır. Newton'ın ikinci yasası ({koyu:F}{us:net|1} {koyu:= m · a}) uygulandığında {koyu:m · g · sin α - k · m · g · cos α = m · a} denkleminden kütleler ({koyu:m}) sadeleşir ve ivme kütleden bağımsız olarak {koyu:a = g · (sin α - k · cos α)} bulunur."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">SÜRTÜNMELİ EĞİK DÜZLEMDE SERBEST CİSİM DİYAGRAMI VE DENKLEMLER</text>\n  <rect x=\"25\" y=\"50\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#166534\">Eğik Düzlem Kuvvet Bileşenleri</text>\n  <text x=\"40\" y=\"102\" font-size=\"11\" fill=\"#14532d\">• Ağırlık: G = m · g (Yere dik aşağı)</text>\n  <text x=\"40\" y=\"126\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">• Düzleme Paralel Bileşen (Kaydırıcı):</text>\n  <text x=\"48\" y=\"144\" font-size=\"11\" fill=\"#334155\">Gx = m · g · sin α</text>\n  <text x=\"40\" y=\"168\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">• Düzleme Dik Bileşen ve Normal Kuvvet:</text>\n  <text x=\"48\" y=\"186\" font-size=\"11\" fill=\"#334155\">N = Gy = m · g · cos α</text>\n  <text x=\"40\" y=\"212\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">• Sürtünme: fs = k · m · g · cos α</text>\n\n  <rect x=\"365\" y=\"50\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#ede9fe\" stroke=\"#7c3aed\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#5b21b6\">Net Kuvvet ve İvme Analizi</text>\n  <rect x=\"382\" y=\"90\" width=\"276\" height=\"62\" rx=\"6\" fill=\"#ffffff\" stroke=\"#8b5cf6\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"110\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#6d28d9\">Aşağı Hızlanan Cisim (Gx &gt; fs):</text>\n  <text x=\"520\" y=\"128\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Fnet = m·g·sin α - k·m·g·cos α = m·a</text>\n  <text x=\"520\" y=\"144\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#5b21b6\">a = g · (sin α - k · cos α)</text>\n  <rect x=\"382\" y=\"162\" width=\"276\" height=\"64\" rx=\"6\" fill=\"#ffffff\" stroke=\"#8b5cf6\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"182\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#6d28d9\">Yukarı Fırlatılan Cisim (Yavaşlayan):</text>\n  <text x=\"520\" y=\"200\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Gx ve fs aynı yönlüdür (aşağı doğru):</text>\n  <text x=\"520\" y=\"216\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#5b21b6\">a = g · (sin α + k · cos α)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Eğim Açısı (α) Artarsa Sürtünme Azalır!",
+          "metin": "Eğik düzlemin eğim açısı (α) artırıldığında cos α değeri küçüldüğü için yüzeye dik bastıran N = m·g·cos α kuvveti azalır; buna bağlı olarak eğik düzlemdeki sürtünme kuvveti (fs = k·N) de azalır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Sabit Hızla Kayma Koşulu (tan α = k)",
+          "metin": "Bir cisim eğik düzlemde sabit hızla aşağı kayıyorsa net kuvvet sıfırdır (Fnet = 0); yani m·g·sin α = k·m·g·cos α eşitliğinden kinetik sürtünme katsayısı doğrudan eğim açısının tanjantına (k = tan α) eşit bulunur."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Yatay düzlemde durmakta olan 4 kg kütleli bir sandık ile zemin arasındaki statik sürtünme katsayısı ks = 0,5 ve kinetik sürtünme katsayısı kk = 0,4'tür. Sandığa yatay doğrultuda a) 15 N, b) 36 N büyüklüğünde kuvvet uygulandığında sürtünme kuvvetini ve sandığın ivmesini hesaplayınız (g = 10 m/{us:s|2}).",
+      "cevap": "Yatay düzlemde normal kuvvet N = m·g = 4 · 10 = 40 N'dur. Statik sürtünmenin maksimum değeri fs,max = ks · N = 0,5 · 40 = 20 N ve kinetik sürtünme fk = kk · N = 0,4 · 40 = 16 N'dur. a) 15 N kuvvet uygulandığında F < fs,max (15 < 20) olduğu için sandık harekete geçmez; statik sürtünme kuvveti fs = 15 N ve ivme a = 0 olur. b) 36 N kuvvet uygulandığında F > fs,max olduğu için sandık hareket eder; sürtünme kuvveti fk = 16 N olur ve Fnet = 36 - 16 = 20 N eşitliğinden ivme a = Fnet / m = 20 / 4 = 5 m/{us:s|2} bulunur."
+    },
+    {
+      "soru": "Kinetik sürtünme katsayısı k = 0,3 olan yatay düzlemdeki 5 kg kütleli bir cisme, yatayla 37° açı yapacak biçimde yukarı doğru eğik F = 50 N'luk bir çekme kuvveti uygulanıyor. Cisme etki eden sürtünme kuvvetini ve cismin ivmesini bulunuz (g = 10 m/{us:s|2}, sin 37° = 0,6; cos 37° = 0,8).",
+      "cevap": "Kuvvetin yatay bileşeni Fx = 50 · cos 37° = 50 · 0,8 = 40 N ve düşey yukarı bileşeni Fy = 50 · sin 37° = 50 · 0,6 = 30 N'dur. Cismin ağırlığı G = 5 · 10 = 50 N olduğundan yüzeyin normal kuvveti N = G - Fy = 50 - 30 = 20 N olur. Buradan sürtünme kuvveti fs = k · N = 0,3 · 20 = 6 N bulunur. Net kuvvet Fnet = Fx - fs = 40 - 6 = 34 N ve cismin ivmesi a = 34 / 5 = 6,8 m/{us:s|2} olarak elde edilir."
+    },
+    {
+      "soru": "Sürtünme katsayısı k = 0,4 olan düşey bir duvara 2 kg kütleli bir takoz yatay F kuvvetiyle bastırılıyor. Takozun düşmeden dengede kalabilmesi için F kuvvetinin en az kaç Newton olması gerekir? (g = 10 m/{us:s|2})",
+      "cevap": "Takozun ağırlığı G = m·g = 2 · 10 = 20 N olup aşağı yönlüdür. Düşey duvarda yüzeye dik kuvvet N = F olduğundan maksimum sürtünme kuvveti fs,max = k · F = 0,4 · F olur. Takozun kaymadan dengede kalması için fs,max ≥ G yani 0,4 · F ≥ 20 N olmalıdır; buradan F ≥ 50 N (en az 50 N) bulunur."
+    },
+    {
+      "soru": "Eğim açısı 37° olan sürtünmeli bir eğik düzlemin tepesinden serbest bırakılan 3 kg kütleli bir cisim ile yüzey arasındaki kinetik sürtünme katsayısı k = 0,25'tir. Cisme etki eden sürtünme kuvvetini ve cismin ivmesini hesaplayınız (g = 10 m/{us:s|2}, sin 37° = 0,6; cos 37° = 0,8).",
+      "cevap": "Ağırlık G = 3 · 10 = 30 N'dur. Eğik düzleme paralel bileşen Gx = 30 · sin 37° = 30 · 0,6 = 18 N, dik bileşen ve normal kuvvet ise N = Gy = 30 · cos 37° = 30 · 0,8 = 24 N'dur. Sürtünme kuvveti fs = k · N = 0,25 · 24 = 6 N olur. Net kuvvet Fnet = Gx - fs = 18 - 6 = 12 N ve ivme a = Fnet / m = 12 / 3 = 4 m/{us:s|2} olarak hesaplanır."
+    },
+    {
+      "soru": "Özdeş iki tuğladan birincisi yatay zemine geniş yüzeyi (3S), ikincisi ise dar yüzeyi (S) üzerine konulup aynı yatay F kuvvetiyle çekiliyor. İki tuğlaya etki eden sürtünme kuvvetlerini karşılaştırınız.",
+      "cevap": "Sürtünme kuvvetinin matematiksel modeli fs = k · N'dir. Tuğlalar özdeş olduğundan kütleleri ve zemine uyguladıkları dik kuvvetler (N = m·g) eşittir; zemin ve tuğla cinsi aynı olduğundan k katsayısı da eşittir. Katı yüzeylerde sürtünme kuvveti temas yüzeyinin alanına (3S veya S olmasına) bağlı olmadığından her iki tuğlaya etki eden sürtünme kuvvetleri birbirine eşittir."
+    },
+    {
+      "soru": "Eğim açısı α olan sürtünmeli bir eğik düzlemde m kütleli bir kutunun sabit hızla aşağı kaydığı gözlemleniyor. Kutunun üzerine m kütleli bir kutu daha konulursa sistemin hareket durumu nasıl değişir?",
+      "cevap": "Kutu sabit hızla kaydığına göre Fnet = 0'dır, yani m·g·sin α = k·m·g·cos α eşitliğinden sin α = k·cos α (tan α = k) bağıntısı geçerlidir. Kütle 2m yapıldığında hem aşağı çeken kuvvet (2m·g·sin α) hem de sürtünme kuvveti (k·2m·g·cos α) iki katına çıkar ve net kuvvet yine sıfır kalır; dolayısıyla sistem aynı sabit hızla kaymaya devam eder."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Yatay düzlemde durmakta olan 5 kg kütleli bir cisme yatay doğrultuda 18 N büyüklüğünde bir kuvvet uygulandığında cismin hareket etmediği gözleniyor. Cisim ile yüzey arasındaki statik sürtünme katsayısı ks = 0,5 olduğuna göre, bu anda cisme etki eden statik sürtünme kuvvetinin büyüklüğü kaç Newton'dur? (g = 10 m/{us:s|2})",
+      "secenekler": [
+        "7",
+        "18",
+        "25",
+        "43",
+        "50"
+      ],
+      "dogru": 1,
+      "aciklama": "Maksimum statik sürtünme kuvveti fs,max = ks·m·g = 0,5·5·10 = 25 N'dur. Uygulanan 18 N'luk kuvvet 25 N'u aşamadığı için cisim durmaya devam eder ve statik sürtünme kuvveti uygulanan kuvvete eşit yani 18 N olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kinetik sürtünme katsayısının k = 0,4 olduğu yatay bir yolda 4 kg kütleli bir takoz, üst yüzeyine dik olarak aşağı doğru bastıran 20 N'luk bir kuvvetin ve yatay doğrultuda çeken 52 N'luk bir kuvvetin etkisinde hareket etmektedir. Buna göre takozun ivmesi kaç m/{us:s|2}'dir? (g = 10 m/{us:s|2})",
+      "secenekler": [
+        "4",
+        "5",
+        "7",
+        "9",
+        "13"
+      ],
+      "dogru": 2,
+      "aciklama": "Yüzeye dik toplam normal kuvvet N = m·g + Fd = 4·10 + 20 = 60 N olur. Sürtünme kuvveti fs = k·N = 0,4·60 = 24 N'dur. Yatay net kuvvet Fnet = 52 - 24 = 28 N olduğundan ivme a = Fnet / m = 28 / 4 = 7 m/s² bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Yatayla α açısı yapan sürtünmeli bir eğik düzlem üzerinde aşağı doğru kaymakta olan m kütleli bir cisim için eğik düzlemin eğim açısı (α) biraz artırılırsa, yüzeye etki eden normal kuvvet (N) ve kinetik sürtünme kuvvetinin (fs) büyüklüğü nasıl değişir?",
+      "secenekler": [
+        "N artar, fs artar",
+        "N değişmez, fs azalır",
+        "N azalır, fs artar",
+        "N azalır, fs azalır",
+        "N değişmez, fs değişmez"
+      ],
+      "dogru": 3,
+      "aciklama": "Eğik düzlemde N = m·g·cos α ve fs = k·m·g·cos α'dır. Eğim açısı α arttığında cos α azalacağından hem normal kuvvet (N) hem de sürtünme kuvveti (fs) azalır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Eğim açısı 53° olan sürtünmeli bir eğik düzlemin üst noktasından serbest bırakılan 2 kg kütleli cisim ile eğik düzlem arasındaki kinetik sürtünme katsayısı k = 0,5'tir. Buna göre cismin eğik düzlemde aşağı doğru kayma ivmesi kaç m/{us:s|2}'dir? (g = 10 m/{us:s|2}, sin 53° = 0,8; cos 53° = 0,6)",
+      "secenekler": [
+        "2",
+        "3",
+        "4",
+        "6",
+        "5"
+      ],
+      "dogru": 4,
+      "aciklama": "İvme bağıntısı a = g·(sin 53° - k·cos 53°) = 10·(0,8 - 0,5·0,6) = 10·(0,8 - 0,3) = 5 m/s² olarak bulunur."
+    },
+    {
+      "tur": "dy",
+      "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Sürtünme kuvvetinin matematiksel modelindeki sürtünme katsayısı (k), sürtünen yüzeylerin cinsine bağlı olup birimsiz bir büyüklüktür.",
+          "dogru": true
+        },
+        {
+          "metin": "Yatay düzlemdeki homojen bir dikdörtgenler prizması, geniş yüzeyi yerine dar yüzeyi üzerine konulursa cisme etki eden maksimum sürtünme kuvveti azalır.",
+          "dogru": false
+        },
+        {
+          "metin": "Düşey bir duvara yatay F kuvvetiyle bastırılan cisimde yüzeyin normal kuvveti cismin ağırlığına değil, uygulanan F kuvvetine eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Eğik düzlemde aşağı doğru hızlanan bir cismin ivmesi a = g · (sin α - k · cos α) bağıntısıyla bulunur ve cismin kütlesinden bağımsızdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Aynı iki yüzey arasındaki kinetik sürtünme katsayısı (kk), statik sürtünme katsayısından (ks) daha büyüktür.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "yonerge": "Aşağıdaki fiziksel durumları yüzeyin normal kuvveti (N) veya sürtünme ifadeleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Yatay düzlemde yalnız kendi ağırlığıyla duran m kütleli cisim",
+          "N = m · g"
+        ],
+        [
+          "Yatay düzlemde üstten düşey Fd kuvvetiyle bastırılan m kütleli cisim",
+          "N = m · g + Fd"
+        ],
+        [
+          "Yatayla α açısı yapan eğik düzlem üzerindeki m kütleli cisim",
+          "N = m · g · cos α"
+        ],
+        [
+          "Düşey duvara yatay F kuvvetiyle bastırılan m kütleli cisim",
+          "N = F"
+        ],
+        [
+          "Sürtünme kuvveti (fs) – Normal kuvvet (N) grafiğinin eğimi",
+          "k (Sürtünme katsayısı)"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Sürtünme kuvvetinin büyüklüğü, sürtünen yüzeylerin cinsine ve yüzeyin cisme uyguladığı dik ___ kuvvetine bağlıdır.",
+          "cevap": "normal"
+        },
+        {
+          "metin": "Katı yüzeyler arasındaki sürtünme kuvveti, cismin ağırlığı sabit kalmak koşuluyla sürtünen yüzeylerin ___ büyüklüğüne bağlı değildir.",
+          "cevap": "alanının"
+        },
+        {
+          "metin": "Eğik düzlem üzerinde yukarı doğru fırlatılan bir cisim yavaşlarken ağırlığın paralel bileşeni (Gx) ile sürtünme kuvveti (fs) ___ yönlüdür.",
+          "cevap": "aynı"
+        },
+        {
+          "metin": "Bir cisme etki eden tüm kuvvetlerin yön ve büyüklükleriyle gösterildiği çizime ___ cisim diyagramı adı verilir.",
+          "cevap": "serbest"
+        },
+        {
+          "metin": "Uluslararası Birim Sistemi'nde (SI) sürtünme kuvvetinin ve normal kuvvetin birimi ___ olarak ifade edilir.",
+          "cevap": "Newton"
+        }
+      ],
+      "fazla": [
+        "Pascal",
+        "Joule"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Sürtünme kuvvetinin matematiksel modelini (fs = k·N) açıklayarak yatay düzlem, düşey duvar ve eğik düzlemde normal kuvvetin (N) nasıl belirlendiğini karşılaştırınız.",
+      "ipuclari": [
+        "Matematiksel model: fs = k · N (k: yüzey cinsine bağlı birimsiz katsayı, N: yüzeye dik tepki kuvveti).",
+        "Yatay ve düşey düzlem: Yatayda N = m·g ± Fd; düşey duvarda ağırlık yüzeye paralel olduğu için N = F (yatay bastırma kuvveti).",
+        "Eğik düzlem: Ağırlığın yüzeye dik bileşeni N = m·g·cos α alınır ve fs = k·m·g·cos α olur."
+      ],
+      "cevap": "Sürtünme kuvvetinin matematiksel modeli fs = k · N bağıntısıyla ifade edilir; burada k sürtünen yüzeylerin cinsine bağlı birimsiz katsayıyı, N ise yüzeyin cisme uyguladığı dik tepki (normal) kuvvetini gösterir. Normal kuvvet her zaman ağırlığa eşit değildir: Yatay düzlemde ek düşey kuvvet yoksa N = m·g iken, üstten bastıran Fd kuvveti varsa N = m·g + Fd olur. Düşey bir duvara yatay F kuvvetiyle bastırılan cisimde yüzeye dik kuvvet yalnız F olduğundan N = F alınır. Eğik düzlemde ise ağırlığın yüzeye dik bileşeni dengelendiği için N = m·g·cos α olur ve sürtünme kuvveti fs = k·m·g·cos α bağıntısıyla hesaplanır."
+    }
+  ],
+  "ozet": [
+    "{koyu:Matematiksel Model:} Sürtünme kuvveti yüzeylerin cinsine (k) ve yüzeyin dik tepki kuvvetine (N) bağlıdır; fs = k · N bağıntısıyla hesaplanır.",
+    "{koyu:Yüzey Alanı ve Katsayı:} Sürtünme kuvveti sürtünen yüzey alanının büyüklüğüne bağlı değildir; fs - N grafiğinin eğimi birimsiz sürtünme katsayısını (k) verir.",
+    "{koyu:Yatay Düzlemde Normal Kuvvet:} Serbest halde N = m·g iken, üstten dik Fd kuvveti uygulanırsa N = m·g + Fd, yukarı doğru açılı kuvvet uygulanırsa N = m·g - F·sin α olur.",
+    "{koyu:Düşey Duvarda Sürtünme:} Düşey duvara yatay F kuvvetiyle bastırılan cisimde N = F ve maksimum sürtünme fs,max = k · F olur; kaymama şartı k · F ≥ m · g'dir.",
+    "{koyu:Eğik Düzlemde Sürtünme ve İvme:} Eğik düzlemde N = m·g·cos α ve fs = k·m·g·cos α'dır; aşağı hızlanan cismin ivmesi a = g·(sin α - k·cos α) olup kütleden bağımsızdır."
+  ]
+}

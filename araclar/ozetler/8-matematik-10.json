@@ -1,0 +1,257 @@
+{
+  "ad": "8-matematik-10",
+  "sinif": 8,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 10,
+  "tarih": "23-27 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "Sayılar ve İşlemler",
+  "konu": "Ondalık İfadelerin Kareköklerini Belirleme ve Gerçek Sayılar (Rasyonel ve İrrasyonel Sayılar Kümesi) (M.8.1.3.7 & M.8.1.3.8)",
+  "ciktilar": [
+    "Kesir olarak ifade edildiğinde payı ve paydası tam kare olan ondalık gösterimlerin kareköklerini belirler ve dört işlem problemlerinde kullanır (M.8.1.3.7).",
+    "Rasyonel sayıları (iki tam sayının oranı şeklinde yazılabilen sayıları) ve irrasyonel sayıları (tam kare olmayan sayıların karekökleri ve π sayısı) ayırt eder (M.8.1.3.8).",
+    "Gerçek (reel) sayılar kümesini rasyonel ve irrasyonel sayıların birleşimi olarak tanır ve sayı kümeleri arasındaki alt küme ilişkisini (N ⊂ Z ⊂ Q ⊂ R) açıklar."
+  ],
+  "giris": "Kenar uzunluğu 1,2 metre olan kare şeklindeki bir masanın alanı 1,44 metrekare olurken, alanı bilinen ondalık bir değerden kenar uzunluğuna nasıl geçeriz? Ayrıca karesi 2 olan {kok:2} sayısı veya çemberin çevresinin çapına oranı olan π sayısı rasyonel bir kesir olarak yazılabilir mi? Bu haftaki dersimizde ondalık ifadelerin kareköklerini almayı ve sayı sistemimizi tamamlayan gerçek (reel) sayılar kümesini öğreneceğiz.",
+  "bolumler": [
+    {
+      "baslik": "Ondalık İfadelerin Kareköklerini Belirleme (M.8.1.3.7)",
+      "metin": [
+        "Kesir olarak ifade edildiğinde payı ve paydası tam kare pozitif tam sayı olan ondalık gösterimlerin karekökü alınırken üç adım izlenir: {koyu:1. Adım:} Ondalık gösterim, paydası 10'un kuvveti (100, 10000 gibi) olacak biçimde {kesir:a|b} rasyonel kesir şeklinde yazılır. {koyu:2. Adım:} Payın ve paydanın karekökü ayrı ayrı alınır ({kok:{kesir:a|b}} = {kesir:{kok:a}|{kok:b}}). {koyu:3. Adım:} Elde edilen kesir tekrar ondalık gösterime dönüştürülür.",
+        "Örneğin {kok:0,64} ifadesinin değerini bulalım: 0,64 = {kesir:64|100} olarak yazılır. Pay ve paydanın karekökü alındığında {kesir:{kok:64}|{kok:100}} = {kesir:8|10} = {koyu:0,8} bulunur. Benzer şekilde {kok:1,44} = {kok:{kesir:144|100}} = {kesir:12|10} = {koyu:1,2}; {kok:2,25} = {kok:{kesir:225|100}} = {kesir:15|10} = {koyu:1,5} ve {kok:0,0009} = {kok:{kesir:9|10000}} = {kesir:3|100} = {koyu:0,03} olur.",
+        "Ondalık ifadelerin karekökü alınırken virgülden sonraki basamak sayısı yarıya iner: Karekök içinde virgülden sonra {koyu:2 basamak} varsa dışarıya {koyu:1 basamak} olarak (örneğin {kok:0,25} = 0,5), karekök içinde virgülden sonra {koyu:4 basamak} varsa dışarıya {koyu:2 basamak} olarak (örneğin {kok:0,0169} = 0,13) çıkar."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">ONDALIK İFADELERİN KAREKÖKLERİNİ BELİRLEME (M.8.1.3.7)</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">3 Adımda Ondalık Karekök Alma</text>\n  <text x=\"180\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">1. Adım: Ondalık ifadeyi rasyonel kesir olarak yaz</text>\n  <text x=\"180\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">0,36 = 36 / 100   |   1,44 = 144 / 100</text>\n  <text x=\"180\" y=\"144\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">2. Adım: Payın ve paydanın ayrı ayrı karekökünü al</text>\n  <text x=\"180\" y=\"166\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">kök(36 / 100) = kök(36) / kök(100) = 6 / 10</text>\n  <text x=\"180\" y=\"192\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">3. Adım: Sonucu tekrar ondalık gösterime çevir</text>\n  <text x=\"180\" y=\"216\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">6 / 10 = 0,6   ve   12 / 10 = 1,2</text>\n\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Basamak Sayısı Kuralı ve Örnekler</text>\n  <text x=\"520\" y=\"96\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#14532d\">• kök(0,09) = kök(9 / 100) = 3 / 10 = 0,3</text>\n  <text x=\"520\" y=\"122\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#14532d\">• kök(2,25) = kök(225 / 100) = 15 / 10 = 1,5</text>\n  <text x=\"520\" y=\"148\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#14532d\">• kök(0,0121) = kök(121 / 10000) = 11 / 100 = 0,11</text>\n  <text x=\"520\" y=\"178\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">DİKKAT: kök(0,9) ≠ 0,3 ! Çünkü 0,9 = 9 / 10 olup</text>\n  <text x=\"520\" y=\"196\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">paydadaki 10 sayısı tam kare değildir!</text>\n  <text x=\"520\" y=\"220\" text-anchor=\"middle\" font-size=\"11\" fill=\"#166534\">Virgülden sonra 2 basamak ➔ dışarıda 1 basamak olur.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "kök(0,9) İfadesi 0,3'e Eşit Değildir!",
+          "metin": "En sık yapılan hata {kok:0,9} veya {kok:0,4} ifadelerini 0,3 ve 0,2 sanmaktır. Oysa 0,9 = {kesir:9|10} olup paydadaki 10 tam kare değildir; {kok:0,9} = {kesir:3|{kok:10}} olur. Sonucun 0,3 çıkması için kök içindeki sayının {koyu:0,09} ({kesir:9|100}) olması gerekir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Kök İçinde Toplama-Çıkarma Önceliği",
+          "metin": "Karekök içinde toplama veya çıkarma işlemi varsa ({kok:0,36 + 0,64} gibi) terimler ayrı ayrı kök dışına çıkarılmaz; önce kök içindeki işlem yapılır: {kok:0,36 + 0,64} = {kok:1,00} = 1."
+        }
+      ]
+    },
+    {
+      "baslik": "Rasyonel Sayılar (Q) ve İrrasyonel Sayılar (I) (M.8.1.3.8)",
+      "metin": [
+        "a ve b birer tam sayı ve b ≠ 0 olmak üzere {kesir:a|b} biçiminde (iki tam sayının oranı olarak) yazılabilen sayılara {koyu:rasyonel sayılar} denir ve {koyu:Q} harfi ile gösterilir. Doğal sayılar (0, 4, 15), tam sayılar (-7, -1, 0), kesirler ({kesir:3|8}, -{kesir:5|2}), sonlu ondalık gösterimler (0,5; 2,75), kök dışına tam çıkabilen kareköklü ifadeler ({kok:36} = 6, {kok:1,21} = 1,1) ve {koyu:devirli ondalık gösterimler} (0,333... = {kesir:1|3}) birer rasyonel sayıdır.",
+        "İki tam sayının oranı ({kesir:a|b}) biçiminde {koyu:yazılamayan} sayılara ise {koyu:irrasyonel sayılar} denir ve {koyu:I} harfi ile gösterilir. İrrasyonel sayıların virgülden sonraki ondalık kısmı belirli bir kurala göre tekrar etmeden (devretmeden) sonsuza kadar düzensiz biçimde devam eder.",
+        "Başlıca üç irrasyonel sayı grubu vardır: {koyu:1)} Kök dışına tam olarak çıkamayan (tam kare olmayan sayıların karekökü olan) ifadeler: {kok:2}, {kok:3}, {kok:5}, -{kok:11}, 2{kok:7}, {kok:0,4}. {koyu:2)} Bir çemberin çevresinin çapına oranı olan {koyu:π (pi) sayısı} (π = 3,14159265...). {koyu:3)} Virgülden sonrası düzensiz sonsuz devam eden ondalık sayılar (örneğin 4,1010010001...)."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">RASYONEL (Q) VE İRRASYONEL (I) SAYILAR KÜMESİ (M.8.1.3.8)</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#a16207\">Rasyonel Sayılar (Q) — a / b (b ≠ 0)</text>\n  <text x=\"180\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#854d0e\">1. Doğal Sayılar (N) ve Tam Sayılar (Z):</text>\n  <text x=\"180\" y=\"112\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">0, 5, -12, 24 (Paydası 1 olan kesirlerdir)</text>\n  <text x=\"180\" y=\"136\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#854d0e\">2. Kesirler ve Sonlu Ondalık Gösterimler:</text>\n  <text x=\"180\" y=\"154\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">3 / 4, -7 / 5, 0,25, 1,8</text>\n  <text x=\"180\" y=\"178\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#854d0e\">3. Devirli Ondalık Gösterimler:</text>\n  <text x=\"180\" y=\"196\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">0,333... = 1 / 3  |  1,2727... = 14 / 11</text>\n  <text x=\"180\" y=\"220\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">4. Tam Karelerin Karekökü: kök(49) = 7, kök(0,64) = 0,8</text>\n\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#fff1f2\" stroke=\"#f43f5e\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#be123c\">İrrasyonel Sayılar (I) — a / b Yazılamayanlar</text>\n  <text x=\"520\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#9f1239\">1. Tam Kare Olmayan Sayıların Karekökleri:</text>\n  <text x=\"520\" y=\"116\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">kök(2), kök(3), kök(5), -kök(10), kök(0,9)</text>\n  <text x=\"520\" y=\"142\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#9f1239\">2. Pi (π) Sayısı:</text>\n  <text x=\"520\" y=\"162\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">π = 3,14159265... (Düzensiz ve sonsuz devam eder)</text>\n  <text x=\"520\" y=\"188\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#9f1239\">3. Düzensiz Sonsuz Ondalık Gösterimler:</text>\n  <text x=\"520\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">2,1010010001... (Devretmeyen sonsuz açılımlar)</text>\n  <text x=\"520\" y=\"228\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#881337\">Not: 3, 3,14 ve 22/7 değerleri π'nin yaklaşık değeridir!</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Pi (π) Sayısı ve Yaklaşık Değerleri",
+          "metin": "π sayısı bir {koyu:irrasyonel sayı}dır. Geometri sorularında işlem kolaylığı sağlaması için π yerine kullandığımız {koyu:3}, {koyu:3,14} veya {koyu:{kesir:22|7}} sayıları π'nin gerçek değeri değil, rasyonel olan {koyu:yaklaşık değerleri}dir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Devirli Ondalık Sayıların Karekökü",
+          "metin": "Devirli ondalık sayılar rasyoneldir: Örneğin 1,777... (7 devrediyor) sayısı {kesir:17 - 1|9} = {kesir:16|9} kesrine eşittir. Karekökü alındığında {kok:{kesir:16|9}} = {kesir:4|3} çıktığı için sonuç yine rasyonel bir sayıdır."
+        }
+      ]
+    },
+    {
+      "baslik": "Gerçek (Reel) Sayılar Kümesi (R) ve Küme İlişkileri",
+      "metin": [
+        "Rasyonel sayılar kümesi (Q) ile irrasyonel sayılar kümesinin (I) birleşimine {koyu:gerçek (reel) sayılar kümesi} denir ve {koyu:R} harfi ile gösterilir (R = Q ∪ I). Sayı doğrusu üzerindeki her bir noktaya bir gerçek sayı karşılık gelir; yani gerçek sayılar sayı doğrusunu hiç boşluk kalmayacak şekilde tamamen doldurur.",
+        "Sayı kümeleri arasındaki kapsama (alt küme) ilişkisi içten dışa doğru {koyu:N ⊂ Z ⊂ Q ⊂ R} şeklindedir. Buna göre her doğal sayı (N) aynı zamanda bir tam sayı (Z), her tam sayı bir rasyonel sayı (Q) ve her rasyonel sayı bir gerçek sayıdır (R).",
+        "Rasyonel sayılar kümesi ile irrasyonel sayılar kümesi birbirinden tamamen ayrıktır; ortak elemanları yoktur ({koyu:Q ∩ I = ∅}). Dolayısıyla bir gerçek sayı ya rasyoneldir ya da irrasyoneldir; hem rasyonel hem de irrasyonel olan bir sayı bulunmaz. Ayrıca karekökün içindeki sayı negatif olamayacağı için {kok:-4} veya {kok:-9} gibi ifadeler gerçek sayı {koyu:değildir}."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">GERÇEK (REEL) SAYILAR KÜMESİ ŞEMASI: R = Q ∪ I</text>\n  <rect x=\"25\" y=\"45\" width=\"650\" height=\"195\" rx=\"10\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <text x=\"350\" y=\"66\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">GERÇEK (REEL) SAYILAR (R) — Sayı Doğrusundaki Tüm Noktalar</text>\n\n  <rect x=\"45\" y=\"80\" width=\"380\" height=\"145\" rx=\"8\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n  <text x=\"235\" y=\"100\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">Rasyonel Sayılar (Q): 3/5, -0,4, 1,222..., kök(1,44)</text>\n\n  <rect x=\"75\" y=\"112\" width=\"320\" height=\"100\" rx=\"8\" fill=\"#bfdbfe\" stroke=\"#1d4ed8\" stroke-width=\"1.5\"/>\n  <text x=\"235\" y=\"132\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">Tam Sayılar (Z): ... -3, -2, -1, -kök(25)</text>\n\n  <rect x=\"115\" y=\"144\" width=\"240\" height=\"56\" rx=\"8\" fill=\"#93c5fd\" stroke=\"#1e40af\" stroke-width=\"1.5\"/>\n  <text x=\"235\" y=\"166\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#172554\">Doğal Sayılar (N): 0, 1, 2, kök(16)</text>\n  <text x=\"235\" y=\"186\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">Alt küme zinciri: N ⊂ Z ⊂ Q ⊂ R</text>\n\n  <rect x=\"445\" y=\"80\" width=\"210\" height=\"145\" rx=\"8\" fill=\"#ffe4e6\" stroke=\"#e11d48\" stroke-width=\"1.5\"/>\n  <text x=\"550\" y=\"104\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#be123c\">İrrasyonel Sayılar (I)</text>\n  <text x=\"550\" y=\"132\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#9f1239\">kök(2), kök(7), -kök(12)</text>\n  <text x=\"550\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#9f1239\">π (Pi sayısı)</text>\n  <text x=\"550\" y=\"184\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">0,121221222...</text>\n  <text x=\"550\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#be123c\">Q ∩ I = ∅ (Ayrık kümeler)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Negatif İşaretin Yeri: -kök(16) ile kök(-16) Farkı",
+          "metin": "-{kok:16} ifadesinde eksi işareti kökün dışındadır ve sonucu -4 olan bir tam (ve rasyonel/gerçek) sayıdır. Ancak {kok:-16} ifadesinde eksi işareti karekökün içindedir; hiçbir gerçek sayının karesi -16 olamayacağı için {kok:-16} gerçek sayı {koyu:değildir}."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İrrasyonel İfadelerle İşlem Sonucu",
+          "metin": "İki irrasyonel sayının çarpımı veya bölümü rasyonel bir sayı olabilir: Örneğin {kok:8} ve {kok:2} irrasyoneldir ancak çarpımları {kok:8} · {kok:2} = {kok:16} = 4 olup rasyonel bir sayıdır."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "{kok:1,69} + {kok:0,81} - {kok:0,04} işleminin sonucunu ondalık gösterim olarak bulunuz.",
+      "cevap": "{kok:1,69} = {kok:{kesir:169|100}} = {kesir:13|10} = 1,3; {kok:0,81} = {kok:{kesir:81|100}} = {kesir:9|10} = 0,9 ve {kok:0,04} = {kok:{kesir:4|100}} = {kesir:2|10} = 0,2 olur. Buradan 1,3 + 0,9 - 0,2 = 2,2 - 0,2 = 2 bulunur."
+    },
+    {
+      "soru": "Alanı 2,56 {us:m|2} olan kare şeklindeki bir panonun çevre uzunluğu kaç metredir?",
+      "cevap": "Karenin bir kenar uzunluğu alanının kareköküne eşittir: a = {kok:2,56} = {kok:{kesir:256|100}} = {kesir:16|10} = 1,6 metredir. Çevre uzunluğu ise 4 · 1,6 = 6,4 metre olur."
+    },
+    {
+      "soru": "{kesir:{kok:1,44} - {kok:0,25}|{kok:0,0049}} işleminin sonucunu bulunuz.",
+      "cevap": "Paydaki terimler: {kok:1,44} = 1,2 ve {kok:0,25} = 0,5 olup farkları 1,2 - 0,5 = 0,7 olur. Paydadaki terim: {kok:0,0049} = {kok:{kesir:49|10000}} = {kesir:7|100} = 0,07 olur. Bölme işlemi yapıldığında {kesir:0,7|0,07} = {kesir:70|7} = 10 bulunur."
+    },
+    {
+      "soru": "Verilen sayılardan hangilerinin rasyonel (Q), hangilerinin irrasyonel (I) olduğunu belirleyiniz: -{kok:36}, {kok:1,6}, 0,454545..., π, {kok:2,89}.",
+      "cevap": "-{kok:36} = -6 (rasyonel), 0,454545... devirli ondalık sayı (rasyonel) ve {kok:2,89} = 1,7 (rasyonel). Buna karşılık {kok:1,6} = {kok:{kesir:16|10}} = {kesir:4|{kok:10}} (paydası kök dışına çıkamadığı için irrasyonel) ve π sayısı (irrasyonel) olur."
+    },
+    {
+      "soru": "a ve b sıfırdan farklı rakamlar olmak üzere {kok:1,ab} ifadesi bir rasyonel sayı ise a + b toplamının alabileceği değerleri bulunuz.",
+      "cevap": "{kok:1,ab} = {kok:{kesir:1ab|100}} = {kesir:{kok:1ab}|10} ifadesinin rasyonel olması için üç basamaklı 1ab sayısının tam kare olması gerekir. 100 ile 199 arasındaki tam kare sayılar 121, 144, 169 ve 196'dır (a ve b sıfırdan farklı olduğu için 100 alınmaz). Buradan a + b toplamı: 2+1=3, 4+4=8, 6+9=15 veya 9+6=15 olabilir."
+    },
+    {
+      "soru": "Devirli ondalık gösterimi 2,777... (7 devrediyor) olan sayının karekökü rasyonel midir? İşlem yaparak gösteriniz.",
+      "cevap": "Önce devirli ondalık sayıyı kesre çevirelim: 2,777... = {kesir:27 - 2|9} = {kesir:25|9}. Şimdi karekökünü alalım: {kok:{kesir:25|9}} = {kesir:{kok:25}|{kok:9}} = {kesir:5|3}. İki tam sayının oranı şeklinde yazılabildiği için sonuç rasyonel bir sayıdır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "{kok:1,96} + {kok:0,25} - {kok:0,09} işleminin sonucu aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "1,6",
+        "1,9",
+        "2,1",
+        "2,2"
+      ],
+      "dogru": 0,
+      "aciklama": "{kok:1,96} = 1,4; {kok:0,25} = 0,5 ve {kok:0,09} = 0,3 olur. İşlem yapıldığında 1,4 + 0,5 - 0,3 = 1,6 bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki sayılardan hangisi irrasyonel bir sayıdır?",
+      "secenekler": [
+        "{kok:1,21}",
+        "{kok:0,4}",
+        "-{kok:64}",
+        "0,777..."
+      ],
+      "dogru": 1,
+      "aciklama": "{kok:1,21} = 1,1; -{kok:64} = -8 ve 0,777... = {kesir:7|9} rasyonel sayılardır. Ancak {kok:0,4} = {kok:{kesir:4|10}} = {kesir:2|{kok:10}} olup paydadaki 10 tam kare olmadığı için irrasyoneldir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Gerçek (reel) sayılar kümesi ve alt kümeleriyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+      "secenekler": [
+        "Her rasyonel sayı aynı zamanda bir tam sayıdır.",
+        "İrrasyonel sayılar kümesi rasyonel sayılar kümesinin bir alt kümesidir.",
+        "Rasyonel sayılar ile irrasyonel sayıların birleşimi gerçek sayılar kümesini oluşturur.",
+        "Devirli ondalık gösterimler iki tam sayının oranı olarak yazılamadığı için irrasyoneldir."
+      ],
+      "dogru": 2,
+      "aciklama": "Gerçek sayılar kümesi (R), ayrık iki küme olan rasyonel sayılar (Q) ile irrasyonel sayıların (I) birleşiminden oluşur (R = Q ∪ I)."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Alanı 3,24 {us:cm|2} olan bir karenin bir kenar uzunluğu ile alanı 0,64 {us:cm|2} olan başka bir karenin bir kenar uzunluğunun toplamı kaç santimetredir?",
+      "secenekler": [
+        "2,2",
+        "2,4",
+        "2,5",
+        "2,6"
+      ],
+      "dogru": 3,
+      "aciklama": "Birinci karenin kenarı {kok:3,24} = 1,8 cm; ikinci karenin kenarı {kok:0,64} = 0,8 cm'dir. Toplamları 1,8 + 0,8 = 2,6 cm olur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "{kok:0,0144} ifadesinin değeri 0,12 rasyonel sayısına eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "{kok:0,9} ifadesinin değeri 0,3 sayısına eşittir.",
+          "dogru": false
+        },
+        {
+          "metin": "Pi (π) sayısı virgülden sonraki basamakları düzensiz ve sonsuz devam ettiği için irrasyonel bir sayıdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Karekök içindeki negatif bir sayı olan {kok:-25} ifadesi gerçek sayılar kümesinin bir elemanıdır.",
+          "dogru": false
+        },
+        {
+          "metin": "Doğal sayılar, tam sayılar ve devirli ondalık gösterimler rasyonel sayılar kümesinin alt kümesidir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki matematiksel ifadeleri karşılık gelen değer veya sayı kümesi özellikleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "{kok:2,89}",
+          "Değeri 1,7 olan rasyonel sayı"
+        ],
+        [
+          "{kok:0,0025}",
+          "Değeri 0,05 olan rasyonel sayı"
+        ],
+        [
+          "{kok:1,6}",
+          "Paydası tam kare olmadığı için kök dışına tam çıkamayan irrasyonel sayı"
+        ],
+        [
+          "0,444... (4 devrediyor)",
+          "Kesir karşılığı {kesir:4|9} ve karekökü {kesir:2|3} olan rasyonel sayı"
+        ],
+        [
+          "π (Pi sayısı)",
+          "İşlemlerde yaklaşık olarak 3 veya {kesir:22|7} alınan irrasyonel sayı"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavram veya sayılarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Ondalık gösterimi 1,21 olan sayının karekökü alındığında sonuç ___ olarak bulunur.",
+          "cevap": "1,1"
+        },
+        {
+          "metin": "a ve b birer tam sayı (b ≠ 0) olmak üzere {kesir:a|b} biçiminde yazılabilen sayılara ___ sayılar denir.",
+          "cevap": "rasyonel"
+        },
+        {
+          "metin": "Tam kare olmayan pozitif tam sayıların karekökleri ({kok:3}, {kok:7} gibi) ___ sayılar kümesinin elemanıdır.",
+          "cevap": "irrasyonel"
+        },
+        {
+          "metin": "Rasyonel sayılar kümesi ile irrasyonel sayılar kümesinin birleşimine ___ sayılar kümesi adı verilir.",
+          "cevap": "gerçek"
+        },
+        {
+          "metin": "Karekök içinde virgülden sonra dört basamağı bulunan {kok:0,0081} ifadesi kök dışına ___ olarak çıkar.",
+          "cevap": "0,09"
+        }
+      ],
+      "fazla": [
+        "0,9",
+        "doğal"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "{kok:0,09} ifadesi ile {kok:0,9} ifadesinden hangisinin rasyonel, hangisinin irrasyonel olduğunu kesre çevirme adımlarını göstererek açıklayınız.",
+      "ipuclari": [
+        "Her iki ondalık gösterimi önce paydası 10'un kuvveti olacak şekilde {kesir:a|b} kesrine dönüştürünüz.",
+        "Pay ve paydadaki sayıların tam kare olup olmadığını kontrol ediniz.",
+        "Hem payı hem de paydası tam kare olan ifade kök dışına tam çıkarak rasyonel olurken, paydası tam kare olmayan ifade irrasyonel kalır."
+      ],
+      "cevap": "{kok:0,09} ifadesi kesir olarak {kok:{kesir:9|100}} şeklinde yazılır; paydaki 9 ve paydadaki 100 tam kare olduğu için {kesir:{kok:9}|{kok:100}} = {kesir:3|10} = 0,3 olarak kök dışına tam çıkar ve rasyonel bir sayıdır. Buna karşılık {kok:0,9} ifadesi {kok:{kesir:9|10}} şeklinde yazılır; paydaki 9 dışarıya 3 olarak çıksa da paydadaki 10 tam kare olmadığı için {kesir:3|{kok:10}} olarak kalır ve iki tam sayının oranı şeklinde yazılamadığı için irrasyonel bir sayıdır."
+    }
+  ],
+  "ozet": [
+    "{koyu:Ondalık Karekök Alma:} Ondalık ifade önce rasyonel kesre çevrilir ({kesir:a|b}), pay ve paydanın ayrı ayrı karekökü alınır ({kesir:{kok:a}|{kok:b}}) ve sonuç tekrar ondalık yazılır.",
+    "{koyu:Basamak Kuralı:} Karekök içindeki ondalık gösterimde virgülden sonraki basamak sayısı çift olmalı ve kök dışına çıkarken yarıya inmelidir ({kok:0,04} = 0,2; {kok:0,0004} = 0,02).",
+    "{koyu:Rasyonel Sayılar (Q):} İki tam sayının oranı ({kesir:a|b}, b ≠ 0) şeklinde yazılabilen doğal sayılar, tam sayılar, kesirler, sonlu ve devirli ondalık gösterimlerdir.",
+    "{koyu:İrrasyonel Sayılar (I):} {kesir:a|b} biçiminde yazılamayan, virgülden sonrası düzensiz sonsuz devam eden sayılar, tam kare olmayan sayıların karekökleri ({kok:2}, {kok:5}) ve π sayısıdır.",
+    "{koyu:Gerçek Sayılar (R):} Rasyonel ve irrasyonel sayıların birleşimidir (R = Q ∪ I, Q ∩ I = ∅) ve kapsama sıralaması N ⊂ Z ⊂ Q ⊂ R şeklindedir."
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "ad": "10-matematik-10",
+  "sinif": 10,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 10,
+  "tarih": "23-27 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "İstatistiksel Araştırma Süreci",
+  "konu": "Başkaları Tarafından Oluşturulan İki Kategorik Değişkenli Verileri ve Yanıltıcı İstatistiksel Grafikleri/Tabloları Eleştirel Değerlendirme (10.2.2)",
+  "ciktilar": [
+    "Başkaları tarafından oluşturulan iki kategorik değişkenli verilere dayalı istatistiksel sonuç veya yorumlara yönelik koşullu göreli sıklıklarla matematiksel temellendirme yapar.",
+    "İstatistiksel araştırma raporlarında, iki yönlü tablolarda ve grafiklerde yer alan örneklem yanlılığı, eksen çarpıtması ve ölçek hatalarını tespit eder.",
+    "İki kategorik değişkenin ilişkililiğine dayalı istatistiksel iddiaları (nedensellik yanılgısı ve alt grup etkileri dâhil) istatistiksel kanıtlarla kabul eder veya çürütür."
+  ],
+  "giris": "Medyada, reklamlarda ve bilimsel raporlarda her gün iki kategorik değişken arasındaki ilişkililiğe dayanan çok sayıda istatistiksel iddia ve grafikle karşılaşırız. Bilinçli bir veri okuryazarı, başkaları tarafından sunulan bu sonuçları sorgulamadan kabul etmek yerine; {koyu:örneklem seçimini, koşullu göreli sıklık hesaplarını, grafik eksen ölçeklerini ve nedensellik iddialarını} eleştirel süzgeçten geçirerek yorumların geçerliliğini test eder.",
+  "bolumler": [
+    {
+      "baslik": "İstatistiksel Sonuçları Temellendirme ve Örneklem Yanlılığı",
+      "metin": [
+        "Başkaları tarafından yürütülmüş bir araştırmanın sonuçlarını değerlendirirken ilk adım {koyu:veri toplama sürecini ve örneklemin temsil gücünü} incelemektir. Örneklemin çok küçük olması (örneğin 10 kişiye sorularak tüm Türkiye hakkında genelleme yapılması) veya örneklemin yansız (rastgele) seçilmeyip belirli bir gruptan seçilmesi ({koyu:örneklem yanlılığı / seçim yanlılığı}) ulaşılan istatistiksel sonucu geçersiz kılar. Örneğin yalnız spor salonu çıkışındaki kişilere anket yaparak 'Toplumun %90'ı düzenli spor yapıyor' sonucuna varmak yanlı bir çıkarımdır.",
+        "İki yönlü sıklık tablolarına dayanan yorumlarda en sık yapılan matematiksel hata, farklı büyüklükteki grupları karşılaştırırken {koyu:koşullu göreli sıklıklar (yüzdeler)} yerine doğrudan {koyu:mutlak sıklıkları (kişi sayılarını)} kullanmaktır. İki kategorik değişken arasında ilişkililik olup olmadığına karar vermek için bağımsız değişkenin kategorilerine göre {koyu:satır veya sütun koşullu göreli sıklıkları} hesaplanarak istatistiksel temellendirme yapılmalıdır.",
+        "Hesaplanan koşullu göreli sıklıklar alt gruplar arasında birbirine çok yakınsa değişkenler {koyu:ilişkisiz (bağımsız)}, belirgin ölçüde farklıysa değişkenler {koyu:ilişkili (bağımlı)} kabul edilir. Sunulan bir raporda bu oranlar gizlenmiş veya yanlış toplama (örneğin satır toplamı yerine genel toplama) bölünmüşse iddia matematiksel kanıtla çürütülür."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Gönüllü Yanıt ve Yönlendirici Soru Yanlılığı",
+          "metin": "Sosyal medyada isteyenlerin katıldığı anketlerde (gönüllü yanıt yanlılığı) yalnız konuya aşırı tepkili kişiler oy kullanır. Ayrıca 'Sağlığa zararlı olan enerji içecekleri yasaklanmalı mı?' gibi yönlendirici sorular da veriyi baştan çarpıtır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Yüzdelerin Tabanını Sorgulama",
+          "metin": "'Kullanıcıların %80'i memnun kaldı' iddiasıyla karşılaşıldığında ilk sorulması gereken soru 'Toplam kaç kullanıcı üzerinde (n = ?) ve hangi koşullarda bu oran hesaplandı?' sorusudur."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">BAŞKALARI TARAFINDAN OLUŞTURULAN İSTATİSTİKSEL SONUÇLARI DEĞERLENDİRME</text>\n  <rect x=\"22\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e40af\">VERİ VE ÖRNEKLEM TEMELLENDİRME ÖLÇÜTLERİ</text>\n  <text x=\"35\" y=\"88\" font-size=\"11.2\" fill=\"#1e3a8a\">• 1. Veri Kaynağı: Güvenilir ve tarafsız bir kurum mu?</text>\n  <text x=\"35\" y=\"110\" font-size=\"11.2\" fill=\"#1e3a8a\">• 2. Örneklem Büyüklüğü (n): Ana kütleyi (evreni) temsil</text>\n  <text x=\"35\" y=\"128\" font-size=\"11.2\" fill=\"#1e3a8a\">  edecek kadar yeterli büyüklükte mi?</text>\n  <text x=\"35\" y=\"150\" font-size=\"11.2\" fill=\"#1e3a8a\">• 3. Seçim Yöntemi: Rastgele (yansız) mi seçildi, yoksa</text>\n  <text x=\"35\" y=\"168\" font-size=\"11.2\" fill=\"#1e3a8a\">  belirli bir gruba yönelik yanlı (taraflı) seçim mi var?</text>\n  <text x=\"35\" y=\"186\" font-size=\"11.2\" font-weight=\"bold\" fill=\"#1e40af\">• 4. Soru Biçimi: Yönlendirici soru yanlılığı var mı?</text>\n  <rect x=\"358\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#166534\">MUTLAK SIKLIK YERİNE KOŞULLU GÖRELİ SIKLIK</text>\n  <text x=\"370\" y=\"88\" font-size=\"11\" fill=\"#14532d\">• Hata: Grup büyüklükleri farklıyken doğrudan kişi</text>\n  <text x=\"370\" y=\"106\" font-size=\"11\" fill=\"#14532d\">  sayılarını (mutlak sıklıkları) karşılaştırmak yanıltıcıdır!</text>\n  <text x=\"370\" y=\"128\" font-size=\"11\" fill=\"#14532d\">• Örnek: A okulunda 500 öğrenciden 100'ü (%20),</text>\n  <text x=\"370\" y=\"146\" font-size=\"11\" fill=\"#14532d\">  B okulunda 100 öğrenciden 40'ı (%40) satranç oynuyor.</text>\n  <text x=\"370\" y=\"168\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">• Yanlış Yorum: '100 &gt; 40 olduğu için A okulu daha ilgili.'</text>\n  <text x=\"370\" y=\"184\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">• Doğru Yorum: Koşullu göreli sıklıkta B (%40 &gt; %20) öndedir.</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">İki kategorik değişken arasındaki ilişkililik iddiası koşullu göreli sıklıklarla temellendirilmelidir.</text>\n</svg>"
+    },
+    {
+      "baslik": "Yanıltıcı İstatistiksel Grafikler ve Görsel Çarpıtmalar",
+      "metin": [
+        "İki kategorik değişkenli veriler görselleştirilirken okuyucuyu belirli bir görüşe ikna etmek amacıyla grafiklerde kasıtlı veya hatalı çarpıtmalar yapılabilir. En yaygın yanıltma tekniği, sütun grafiklerinde {koyu:dikey eksenin sıfırdan (0) başlatılmamasıdır} (kesik eksen kullanımı). Örneğin A markasının memnuniyet oranı %92, B markasınınki %96 iken dikey eksen 0 yerine 90'dan başlatılırsa; A'nın sütun yüksekliği 2 birim (92-90), B'ninki ise 6 birim (96-90) çizilir ve aradaki 4 puanlık küçük fark görsel olarak {koyu:3 katıymış gibi} algılanır.",
+        "Diğer grafik hataları arasında şunlar yer alır: 1) {koyu:Eşit olmayan eksen aralıkları} (eksenin 0, 10, 20, 50, 100 şeklinde düzensiz ölçeklendirilmesi), 2) {koyu:Farklı sütun genişlikleri veya 2B/3B nesne (piktogram) kullanımı}: Bir değeri 2 kat büyük göstermek için çizilen resmin hem boyu hem eni 2 kat büyütülürse kapladığı {koyu:alan 4 kat}, 3 boyutluysa {koyu:hacim 8 kat} büyüyerek gözü yanıltır.",
+        "3) {koyu:Daire ve %100 yığılmış sütun grafiği hataları}: Bir kategorinin alt gruplarını gösteren daire grafiğinde veya %100 yığılmış sütun grafiğinde yüzdelerin toplamı {koyu:tam %100} (merkez açıları toplamı {koyu:360°}) olmalıdır. Birden fazla seçeneğin işaretlenebildiği anket sonuçlarının toplamı %100'ü aşacağı için bu verilerin daire grafiğiyle gösterilmesi matematiksel olarak hatalıdır."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Üç Boyutlu (3B) Eğik Daire Grafiği Tuzağı",
+          "metin": "Üç boyutlu perspektifle eğik çizilen daire grafiklerinde ön planda (alt kısımda) yer alan dilim, arka plandaki aynı yüzdeli dilimden görsel olarak çok daha büyükmüş gibi görünür; bu nedenle bilimsel raporlarda 2B grafikler tercih edilir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Sütun Boyları Oranı Kontrolü",
+          "metin": "Bir sütun grafiğinin yanıltıcı olup olmadığını anlamak için iki kategorinin sayısal değerlerinin oranı ({kesir:Değer 1|Değer 2}) ile grafikteki sütun boylarının oranı ({kesir:Boy 1|Boy 2}) karşılaştırılır; eşit değilse grafik yanıltıcıdır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">YANILTICI İSTATİSTİKSEL GRAFİKLER VE GÖRSEL ÇARPITMA TÜRLERİ</text>\n  <rect x=\"22\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#991b1b\">1. DİKEY EKSENİN SIFIRDAN BAŞLATILMAMASI</text>\n  <text x=\"35\" y=\"88\" font-size=\"11\" fill=\"#7f1d1d\">• Sütun grafiğinde dikey eksen (sıklık/yüzde) 0 yerine</text>\n  <text x=\"35\" y=\"106\" font-size=\"11\" fill=\"#7f1d1d\">  örneğin 90'dan başlatılırsa:</text>\n  <text x=\"35\" y=\"128\" font-size=\"11\" fill=\"#7f1d1d\">• %92 ile %96 arasındaki 4 puanlık küçük fark, sütun</text>\n  <text x=\"35\" y=\"146\" font-size=\"11\" fill=\"#7f1d1d\">  boylarında 3 katıymış (2 birime 6 birim) gibi görünür!</text>\n  <rect x=\"75\" y=\"156\" width=\"35\" height=\"18\" fill=\"#fca5a5\" stroke=\"#dc2626\"/>\n  <text x=\"92\" y=\"186\" text-anchor=\"middle\" font-size=\"10\" fill=\"#7f1d1d\">%92 (Boy:2)</text>\n  <rect x=\"165\" y=\"120\" width=\"35\" height=\"54\" fill=\"#ef4444\" stroke=\"#991b1b\"/>\n  <text x=\"182\" y=\"186\" text-anchor=\"middle\" font-size=\"10\" fill=\"#7f1d1d\">%96 (Boy:6)</text>\n  <rect x=\"358\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#fefce8\" stroke=\"#ca8a04\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#854d0e\">2. ÖLÇEK, ALAN VE DAİRE GRAFİĞİ HATALARI</text>\n  <text x=\"370\" y=\"88\" font-size=\"11\" fill=\"#713f12\">• Eşit Olmayan Eksen Aralıkları: Eksende 10-20-50-100</text>\n  <text x=\"370\" y=\"106\" font-size=\"11\" fill=\"#713f12\">  gibi düzensiz artışlar kullanılması eğimi çarpıtır.</text>\n  <text x=\"370\" y=\"128\" font-size=\"11\" fill=\"#713f12\">• İki/Üç Boyutlu Resim (Piktogram) Yanılgısı: Boyu 2 kat</text>\n  <text x=\"370\" y=\"146\" font-size=\"11\" fill=\"#713f12\">  artırılan görselin alanı 4 kat, hacmi 8 kat büyür.</text>\n  <text x=\"370\" y=\"168\" font-size=\"11\" font-weight=\"bold\" fill=\"#854d0e\">• Daire Grafiği Hatası: Yüzdeler toplamının %100 olmaması</text>\n  <text x=\"370\" y=\"184\" font-size=\"11\" font-weight=\"bold\" fill=\"#854d0e\">  veya 3B perspektifle ön dilimin olduğundan büyük çizilmesi.</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Doğru bir sütun grafiğinde dikey eksen 0'dan başlamalı ve sütun genişlikleri ile aralıklar eşit olmalıdır.</text>\n</svg>"
+    },
+    {
+      "baslik": "İddiaları Kabul Etme veya Çürütme: Nedensellik ve Alt Gruplar",
+      "metin": [
+        "Başkaları tarafından oluşturulan iki kategorik değişkenli veri analizlerinde en sık düşülen yorum hatası {koyu:ilişkililiği (korelasyonu) doğrudan nedensellik sanmaktır}. İki değişken arasında istatistiksel bir ilişki bulunması, birinci değişkenin ikinci değişkenin doğrudan sebebi olduğunu kanıtlamaz; çoğu zaman her iki değişkeni de etkileyen gizli bir üçüncü faktör ({koyu:karıştırıcı değişken}) mevcuttur. Örneğin kahvaltı yapma alışkanlığı ile akademik başarı arasındaki ilişkide 'düzenli uyku ve aile desteği' önemli birer karıştırıcı değişkendir.",
+        "Bir diğer kritik durum ise verilerin alt gruplara ayrılmadan yalnız genel toplam üzerinden yorumlanmasıyla ortaya çıkan {koyu:alt grup gizlenmesi (Simpson Paradoksu)} etkisidir. Örneğin iki hastanenin genel iyileşme oranları karşılaştırıldığında A hastanesi (%80), B hastanesinden (%70) daha başarılı görünebilir. Ancak hastalar 'hafif vakalar' ve 'ağır vakalar' olarak alt gruplara ayrıldığında, B hastanesinin çok daha fazla ağır vaka kabul ettiği ve her iki alt grupta da A hastanesinden daha yüksek iyileşme oranına sahip olduğu ortaya çıkabilir.",
+        "Sonuç olarak bir istatistiksel iddiayı tartışırken; 1) Örneklem ve veri kaynağı güvenilirse, 2) Koşullu göreli sıklıklar doğru hesaplanmışsa ve 3) Grafik ölçekleri eksiksiz ise iddia {koyu:kabul edilir}; aksi hâlde tespit edilen matematiksel ve metodolojik hatalar gösterilerek iddia {koyu:çürütülür}."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "İddiayı Çürütürken Gerekçelendirme",
+          "metin": "Bir istatistiksel yorumu çürütmek için yalnız 'Bu yorum yanlıştır' demek yeterli değildir; tablodaki koşullu göreli sıklıklar bizzat hesaplanarak gerçek oranların iddiayı desteklemediği sayısal olarak gösterilmelidir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Karşılaştırmalı İki Yönlü Tablo",
+          "metin": "Toplamları farklı iki grubu kıyaslarken mutlak sıklık tablosunu satır veya sütun yüzdeli 'koşullu göreli sıklık tablosuna' dönüştürmek tüm yanlı yorumları anında açığa çıkarır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">NEDENSELLİK YANILGISI, KARIŞTIRICI DEĞİŞKEN VE SİMPSON PARADOKSU</text>\n  <rect x=\"22\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#6b21a8\">İLİŞKİLİLİK ≠ NEDENSELLİK (KARIŞTIRICI DEĞİŞKEN)</text>\n  <text x=\"35\" y=\"88\" font-size=\"11\" fill=\"#581c87\">• İki kategorik değişkenin birlikte değişmesi (ilişkililik),</text>\n  <text x=\"35\" y=\"106\" font-size=\"11\" fill=\"#581c87\">  birinin diğerinin doğrudan nedeni olduğunu kanıtlamaz.</text>\n  <text x=\"35\" y=\"128\" font-size=\"11\" fill=\"#581c87\">• Karıştırıcı (Gizli / Üçüncü) Değişken: Hem A hem de B</text>\n  <text x=\"35\" y=\"146\" font-size=\"11\" fill=\"#581c87\">  değişkenini aynı anda etkileyen dış faktördür.</text>\n  <text x=\"35\" y=\"168\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">• Örnek: Dondurma satışı ile güneş yanığı vakaları</text>\n  <text x=\"35\" y=\"184\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">  (Gizli değişken: Hava sıcaklığı / Yaz mevsimi).</text>\n  <rect x=\"358\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#9a3412\">ALT GRUPLARIN GİZLENMESİ (SİMPSON PARADOKSU)</text>\n  <text x=\"370\" y=\"88\" font-size=\"11\" fill=\"#7c2d12\">• Alt kategorilerde (örneğin kolay ve zor vakalarda ayrı</text>\n  <text x=\"370\" y=\"106\" font-size=\"11\" fill=\"#7c2d12\">  ayrı) görülen bir üstünlük yönünün, veriler</text>\n  <text x=\"370\" y=\"124\" font-size=\"11\" fill=\"#7c2d12\">  birleştirildiğinde tersine dönmesi durumudur.</text>\n  <text x=\"370\" y=\"146\" font-size=\"11\" fill=\"#7c2d12\">• Sebebi: Grupların alt kategorilerdeki dağılım ağırlıklarının</text>\n  <text x=\"370\" y=\"164\" font-size=\"11\" fill=\"#7c2d12\">  (örneklem sayılarının) birbirinden çok farklı olmasıdır.</text>\n  <text x=\"370\" y=\"184\" font-size=\"11\" font-weight=\"bold\" fill=\"#9a3412\">• Karar: İddialar kanıtlarla kabul edilir veya çürütülür.</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Eleştirel veri okuryazarlığı; tablo, grafik ve yorumlardaki yanlılıkları matematiksel kanıtla saptamaktır.</text>\n</svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir araştırmada A Lisesindeki 400 öğrenciden 120'sinin, B Lisesindeki 200 öğrenciden ise 80'inin okul kütüphanesini aktif kullandığı belirlenmiştir. Bir gazete haberi '120 > 80 olduğu için A Lisesinde kütüphane kullanım oranı daha yüksektir' yorumunu yapmıştır. Bu yorumu koşullu göreli sıklıklarla değerlendirerek kabul ediniz veya çürütünüz.",
+      "cevap": "Gazetenin yorumu hatalıdır ve çürütülür. Çünkü liselerin toplam öğrenci sayıları farklıdır ve mutlak sıklıklar (120 ve 80) doğrudan karşılaştırılamaz. Okullara göre koşullu göreli sıklıklar hesaplandığında: A Lisesi için {kesir:120|400} = %30; B Lisesi için {kesir:80|200} = %40 bulunur. B Lisesindeki kütüphane kullanım oranı (%40), A Lisesinden (%30) daha yüksektir."
+    },
+    {
+      "soru": "Bir telefon markası reklamında, kendi pil ömrü memnuniyetini (%84) rakip markanın memnuniyetiyle (%80) karşılaştıran bir sütun grafiği yayınlamıştır. Grafikte dikey eksen %78'den başlatılmıştır. Bu grafikte kendi markasının sütun boyu, rakip markanın sütun boyunun kaç katı görünür? Gerçek oranla karşılaştırınız.",
+      "cevap": "Dikey eksen 78'den başladığı için kendi markasının sütun boyu 84 - 78 = 6 birim, rakip markanın sütun boyu ise 80 - 78 = 2 birim çizilir. Dolayısıyla grafikte sütun boyu {kesir:6|2} = 3 katıymış gibi görünür! Oysa gerçek memnuniyet oranı {kesir:84|80} = 1,05 katıdır (yalnız 4 yüzdelik puan fark vardır). Dikey eksenin sıfırdan başlatılmaması yanıltıcı bir görsel algı oluşturmuştur."
+    },
+    {
+      "soru": "Bir teknoloji sitesi, kendi internet sayfasını ziyaret eden okurlara 'Günde 4 saatten fazla bilgisayar kullanıyor musunuz?' sorusunu sormuş ve katılan 500 kişinin 450'si 'Evet' yanıtı verince 'Türkiye'deki insanların %90'ı günde 4 saatten fazla bilgisayar kullanıyor' sonucunu açıklamıştır. Bu araştırmadaki yanlılık türlerini tespit ediniz.",
+      "cevap": "Bu araştırmada iki temel yanlılık vardır: 1) Örneklem (Seçim) Yanlılığı: Anket yalnız bir teknoloji sitesini ziyaret eden (zaten bilgisayar ve teknolojiyle yoğun ilgilenen) kişiler üzerinde yapılmıştır; tüm Türkiye'yi temsil etmez. 2) Gönüllü Yanıt Yanlılığı: Ankete yalnız sitede ankete tıklamak isteyen gönüllü kişiler katılmıştır. Bu nedenle ulaşılan %90 sonucu tüm toplum için geçersizdir."
+    },
+    {
+      "soru": "Bir piktogram (şekil) grafiğinde 2025 yılında 100 ton, 2026 yılında ise 200 ton zeytin üretildiğini göstermek için 2026 yılındaki zeytin ağacı sembolünün hem boyu hem de genişliği 2025 sembolünün 2 katı olarak çizilmiştir. Bu gösterimin neden yanıltıcı olduğunu açıklayınız.",
+      "cevap": "Üretim miktarı 100 tondan 200 tona çıktığında gerçek artış 2 katıdır. Ancak iki boyutlu ağaç sembolünün hem boyu hem de genişliği 2 katına çıkarıldığında sembolün kağıt üzerinde kapladığı alan 2 × 2 = 4 katına çıkar. Okuyucunun gözü yüksekliği değil alanı algıladığı için üretim 4 katına çıkmış gibi yanıltıcı bir izlenim oluşur."
+    },
+    {
+      "soru": "İki kategorik değişken olan 'Evde evcil hayvan besleme durumu (Evet/Hayır)' ile 'Alerji görülme durumu (Var/Yok)' üzerine yapılan bir çalışmada, evcil hayvan besleyen 200 kişiden 30'unda, beslemeyen 300 kişiden 45'inde alerji görülmüştür. 'Evcil hayvan beslemek alerjiyi artırır' iddiasını istatistiksel olarak değerlendiriniz.",
+      "cevap": "Koşullu göreli sıklıkları hesaplayalım: Evcil hayvan besleyenlerde alerji görülme oranı = {kesir:30|200} = %15'tir. Evcil hayvan beslemeyenlerde alerji görülme oranı = {kesir:45|300} = %15'tir. Her iki gruptaki koşullu göreli sıklıklar (%15 = %15) birbirine eşit çıktığından bu iki kategorik değişken birbirinden bağımsızdır (ilişkisizdir) ve 'Evcil hayvan beslemek alerjiyi artırır' iddiası çürütülür."
+    },
+    {
+      "soru": "Bir ankette öğrencilere 'Hangi spor dallarını takip ediyorsunuz? (Birden fazla seçebilirsiniz)' sorusu sorulmuş; %70 Futbol, %50 Basketbol ve %40 Voleybol sonucu çıkmıştır. Bu verilerin tek bir daire grafiğiyle gösterilip gösterilemeyeceğini açıklayınız.",
+      "cevap": "Bu veriler tek bir daire grafiğiyle gösterilemez. Çünkü katılımcılar birden fazla seçenek işaretlediği için yüzdelerin toplamı 70 + 50 + 40 = %160 yapmaktadır. Daire grafiği bir bütünün (%100'ün) birbiriyle kesişmeyen (ayrık) parçalarını göstermek için kullanılır; bu veri seti için sütun grafiği kullanılmalıdır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir sütun grafiğinde kategoriler arasındaki küçük yüzdelik farkların olduğundan çok daha büyükmüş gibi görünmesine yol açan en yaygın yanıltma hatası aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Dikey (sıklık/yüzde) ekseninin sıfırdan (0) başlatılmaması",
+        "Sütunların tamamının aynı genişlikte çizilmesi",
+        "Grafiğe veri kaynağının ve örneklem büyüklüğünün eklenmesi",
+        "Dikey eksen aralıklarının eşit ölçekle (10, 20, 30...) artırılması",
+        "Mutlak sıklıklar yerine koşullu göreli sıklıkların kullanılması"
+      ],
+      "dogru": 0,
+      "aciklama": "Sütun grafiğinde dikey eksenin sıfırdan başlatılmayıp yüksek bir sayıdan başlatılması (kesik eksen), sütun boyları arasındaki oranı bozar ve küçük farkları abartılı gösterir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir araştırmada X fabrikasındaki 600 işçiden 90'ının, Y fabrikasındaki 200 işçiden ise 50'sinin iş güvenliği eğitimini tamamladığı saptanmıştır. Buna göre aşağıdaki istatistiksel değerlendirmelerden hangisi doğrudur?",
+      "secenekler": [
+        "90 > 50 olduğu için X fabrikasında eğitim tamamlama oranı daha yüksektir.",
+        "Her iki fabrikada eğitim tamamlama koşullu göreli sıklıkları birbirine eşittir.",
+        "Koşullu göreli sıklıklara göre Y fabrikasındaki oran (%25), X fabrikasından (%15) daha yüksektir.",
+        "İşçi sayıları farklı olduğu için bu iki fabrika arasında hiçbir istatistiksel karşılaştırma yapılamaz.",
+        "X fabrikasında eğitim tamamlamayanların oranı %15'tir."
+      ],
+      "dogru": 2,
+      "aciklama": "Fabrikalara göre koşullu göreli sıklıklar: X fabrikasında {kesir:90|600} = %15; Y fabrikasında ise {kesir:50|200} = %25'tir. Dolayısıyla oransal olarak Y fabrikası (%25 > %15) daha öndedir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir belediyenin 'Şehrimizde toplu taşıma memnuniyeti' araştırmasında anketörlerin yalnız yeni açılan metro hattının ilk istasyonunda sabah 09.00-10.00 arasında 30 yolcuyla görüşmesi aşağıdaki hatalardan hangisine örnektir?",
+      "secenekler": [
+        "Daire grafiği açı hatası",
+        "Nedensellik yanılgısı",
+        "Eksik sütun boyu çarpıtması",
+        "Örneklem (seçim) yanlılığı ve yetersiz örneklem büyüklüğü",
+        "Koşullu göreli sıklıkların %100'e tamamlanması"
+      ],
+      "dogru": 3,
+      "aciklama": "Tüm şehirdeki toplu taşıma araçları (otobüs, vapur, farklı saatler ve hatlar) yerine yalnız tek bir istasyonda ve 30 kişiyle görüşülmesi hem örneklem yanlılığına hem de yetersiz örneklem büyüklüğüne örnektir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir piktogram (nesne) grafiğinde A şehrinin nüfusu 1 milyon, B şehrinin nüfusu 3 milyon iken B şehrini temsil eden bina resminin hem eni hem de boyu A şehrindeki resmin 3 katı olarak çizilmiştir. Bu çizimde B şehrinin görsel alanı A şehrinin kaç katı olmuştur?",
+      "secenekler": [
+        "2 katı",
+        "3 katı",
+        "6 katı",
+        "8 katı",
+        "9 katı"
+      ],
+      "dogru": 4,
+      "aciklama": "Bir dikdörtgen veya resmin hem eni hem de boyu 3 katına çıkarılırsa alanı 3 × 3 = 9 katına çıkar (nüfus 3 kat iken alan 9 kat görünerek yanıltıcı algı oluşturur)."
+    },
+    {
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "metin": "Farklı büyüklükteki iki grubun kategorik dağılımlarını karşılaştırırken mutlak sıklıklar yerine koşullu göreli sıklıklar kullanılmalıdır.",
+          "dogru": true,
+          "aciklama": "Grup toplamları farklı olduğunda kişi sayılarını (mutlak sıklıkları) doğrudan kıyaslamak hatalıdır; yüzdeler (koşullu göreli sıklıklar) kıyaslanmalıdır."
+        },
+        {
+          "metin": "İki kategorik değişken arasında istatistiksel bir ilişkililik bulunması, birinci değişkenin ikinci değişkenin doğrudan nedeni olduğunu kanıtlar.",
+          "dogru": false,
+          "aciklama": "İlişkililik (korelasyon) nedensellik demek değildir; iki değişkeni birlikte etkileyen üçüncü bir karıştırıcı değişken bulunabilir."
+        },
+        {
+          "metin": "Birden fazla seçeneğin işaretlenebildiği ve yüzdeler toplamının %145 çıktığı bir anket sonucu tek bir daire grafiğiyle doğru şekilde gösterilebilir.",
+          "dogru": false,
+          "aciklama": "Daire grafiğinde dilimlerin yüzdeleri toplamı tam %100 olmalıdır; çoklu yanıtlı anketler daire grafiğiyle gösterilemez."
+        },
+        {
+          "metin": "Alt gruplarda görülen bir eğilimin, veriler birleştirildiğinde grup ağırlıklarının farklılığından dolayı yön değiştirmesine Simpson Paradoksu denir.",
+          "dogru": true,
+          "aciklama": "Simpson Paradoksu, gizlenen bir alt grup değişkeni (örneğin vaka zorluğu) dikkate alınmadığında genel toplamın yanıltıcı sonuç vermesidir."
+        },
+        {
+          "metin": "Dikey ekseni 80'den başlayan bir sütun grafiğinde 85 ve 90 değerlerini gösteren iki sütunun boyları oranı 1/2 olarak görünür.",
+          "dogru": true,
+          "aciklama": "Birinci sütunun boyu 85 - 80 = 5 birim, ikinci sütunun boyu 90 - 80 = 10 birim çizileceğinden boyları oranı 5/10 = 1/2 olur."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "ciftler": [
+        [
+          "Örneklem (seçim) yanlılığı",
+          "Örneklemin ana kütleyi temsil etmeyecek şekilde belirli bir kesimden seçilmesi"
+        ],
+        [
+          "Kesik eksen yanıltması",
+          "Sütun grafiğinde dikey eksenin 0'dan başlatılmayarak farkların abartılması"
+        ],
+        [
+          "Karıştırıcı (gizli) değişken",
+          "İncelenen iki değişkeni aynı anda etkileyerek sahte ilişkililik oluşturan üçüncü faktör"
+        ],
+        [
+          "Koşullu göreli sıklık",
+          "Bir kategorideki sıklığın kendi satır veya sütun toplamına bölünmesiyle bulunan oran"
+        ],
+        [
+          "Piktogram alan yanılgısı",
+          "Nesne boyutu büyütülürken alanın karesiyle artması sonucu oluşan görsel çarpıtma"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "cumleler": [
+        {
+          "metin": "Başkaları tarafından oluşturulan iki yönlü tablolarda grup büyüklükleri farklıysa yorumlar mutlak sıklık yerine ___ göreli sıklıkla temellendirilir.",
+          "cevap": "koşullu"
+        },
+        {
+          "metin": "Doğru ve yanıltıcı olmayan bir sütun grafiğinde dikey sıklık ekseni her zaman ___ noktasından başlamalıdır.",
+          "cevap": "sıfır"
+        },
+        {
+          "metin": "Anket sorularının katılımcıyı belirli bir cevaba itecek biçimde taraflı hazırlanmasına ___ soru yanlılığı denir.",
+          "cevap": "yönlendirici"
+        },
+        {
+          "metin": "İki kategorik değişkenin bütün alt kategorilerinde koşullu göreli sıklıklar birbirine eşitse değişkenler birbirinden ___ kabul edilir.",
+          "cevap": "bağımsız"
+        },
+        {
+          "metin": "Bir kategorinin alt gruplarını gösteren daire grafiğinde tüm dilimlerin yüzdeleri toplamı ___ olmak zorundadır.",
+          "cevap": "100"
+        }
+      ],
+      "fazla": [
+        "medyan",
+        "hipotenüs"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Medyada karşılaştığınız iki kategorik değişkenli bir istatistiksel araştırma haberini ve grafiğini eleştirel olarak değerlendirip iddiayı kabul etmek veya çürütmek için izlemeniz gereken üç aşamalı inceleme sürecini açıklayınız.",
+      "ipuclari": [
+        "Birinci aşamada veri kaynağını, örneklem büyüklüğünü ve örneklemin rastgele (yansız) seçilip seçilmediğini nasıl sorgulayacağınızı belirtiniz.",
+        "İkinci aşamada tablodaki mutlak sıklıklardan koşullu göreli sıklıkları hesaplayarak değişkenler arasında gerçek bir ilişkililik olup olmadığını nasıl test edeceğinizi açıklayınız.",
+        "Üçüncü aşamada grafikteki eksen başlangıcını (0 noktası), ölçek aralıklarını ve nedensellik yanılgısını kontrol ederek nihai kararınızı nasıl vereceğinizi özetleyiniz."
+      ],
+      "cevap": "Birinci aşamada araştırmanın kim tarafından yapıldığı, örneklem büyüklüğünün (n) evreni temsil etmeye yetip yetmediği ve katılımcıların seçim yanlılığı veya yönlendirici soru olmadan rastgele seçilip seçilmediği incelenir. İkinci aşamada sunulan iki yönlü tablodaki mutlak kişi sayılarına aldanmadan satır veya sütun koşullu göreli sıklıkları (yüzdeleri) bizzat hesaplanır; oranlar alt gruplar arasında anlamlı fark gösteriyorsa ilişkililik doğrulanır, oranlar birbirine yakınsa ilişkililik iddiası çürütülür. Üçüncü aşamada ise kullanılan sütun grafiğinin dikey ekseninin 0'dan başlayıp başlamadığı, aralıkların eşit olup olmadığı ve olası karıştırıcı değişkenler (nedensellik yanılgısı) denetlenerek istatistiksel iddia kanıtlarıyla kabul edilir ya da reddedilir."
+    }
+  ],
+  "ozet": [
+    "{koyu:İstatistiksel Temellendirme:} Başkalarının oluşturduğu iki kategorik değişkenli verilerde iddialar mutlak sıklıkla değil, {koyu:koşullu göreli sıklıklarla} (satır/sütun yüzdeleriyle) sınanır.",
+    "{koyu:Örneklem ve Veri Yanlılığı:} Yetersiz örneklem büyüklüğü, {koyu:seçim yanlılığı}, {koyu:gönüllü yanıt yanlılığı} ve {koyu:yönlendirici sorular} istatistiksel sonuçları geçersiz kılar.",
+    "{koyu:Yanıltıcı Grafikler:} Sütun grafiğinde {koyu:dikey eksenin 0'dan başlamaması}, düzensiz ölçek aralıkları, piktogramlarda {koyu:alan/hacim büyümesi} ve 3B eğik daire grafikleri görsel çarpıtma yaratır.",
+    "{koyu:Nedensellik ve Simpson Paradoksu:} İlişkililik doğrudan nedensellik kanıtı değildir ({koyu:karıştırıcı değişken} etkisi); ayrıca alt grupların gizlenmesi genel toplamda eğilimi tersine çevirebilir ({koyu:Simpson Paradoksu}).",
+    "{koyu:Kabul veya Çürütme:} Veri toplama yöntemi, koşullu göreli sıklık hesabı ve grafik kuralları doğruysa iddia {koyu:kabul edilir}; hata veya çarpıtma varsa matematiksel kanıtla {koyu:çürütülür}."
+  ]
+}

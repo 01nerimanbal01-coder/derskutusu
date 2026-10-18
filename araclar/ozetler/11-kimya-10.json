@@ -1,0 +1,261 @@
+{
+  "ad": "11-kimya-10",
+  "sinif": 11,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 10,
+  "tarih": "23-27 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "1. Tema: Etkileşim",
+  "konu": "Tepkime Hızına Etki Eden Faktörlerin (Tepken Cinsi, Fiziksel Hâl, Derişim, Sıcaklık, Temas Yüzeyi ve Katalizör) Deneysel Verilerle Sorgulanması (KİM.11.1.7)",
+  "ciktilar": [
+    "Tepken cinsinin, fiziksel hâlinin, derişiminin, sıcaklığın, katı temas yüzeyinin ve katalizörün tepkime hızına etkisini belirlemek üzere kontrollü deneyler planlar.",
+    "Kontrollü deneylerde bağımsız değişken, bağımlı değişken ve kontrol (sabit tutulan) değişkenlerini belirleyerek deneysel veri tablolarını analiz eder.",
+    "Deney verilerinden elde edilen grafikler (derişim-zaman, gaz hacmi-zaman ve eşik enerjisi diyagramları) üzerinden tepkime hızlarını karşılaştırarak yorumlar."
+  ],
+  "giris": "Kimyasal bir tepkimenin hızına etki eden faktörlerin bilimsel olarak kanıtlanması, bir değişkenin değiştirilip diğer tüm koşulların sabit tutulduğu {koyu:kontrollü deneylerin} tasarlanmasına ve deney verilerinin analizine dayanır. Deneylerde ölçülen gaz hacmi, kütle azalması veya renk değişimi süreleri, {koyu:derişim, sıcaklık, temas yüzeyi ve katalizörün} çarpışma kuramı üzerindeki etkisini somut verilerle ortaya koyar.",
+  "bolumler": [
+    {
+      "baslik": "Kontrollü Deney Tasarımı: Bağımsız, Bağımlı ve Kontrol Değişkenleri",
+      "metin": [
+        "Tepkime hızına etki eden faktörleri (tepken cinsi, fiziksel hâl, derişim, sıcaklık, katı temas yüzeyi ve katalizör) bilimsel olarak sorgulamak için {koyu:kontrollü deneyler} planlanır. Bir deneyde araştırmacının etkisini incelemek amacıyla kendi isteğiyle değiştirdiği değişkene {koyu:bağımsız değişken}, bağımsız değişkene bağlı olarak değişen ve ölçülen sonuca ({koyu:tepkime hızı} veya tepkime tamamlanma süresi) {koyu:bağımlı değişken}, deney boyunca aynı bırakılan diğer tüm koşullara ise {koyu:kontrol (sabit tutulan) değişkenleri} denir.",
+        "Örneğin {koyu:Zn(k) + 2HCl(suda) -> ZnCl2(suda) + H2(g)} tepkimesinde {koyu:katı temas yüzeyinin} tepkime hızına etkisi araştırılmak isteniyorsa; bir kapta 5 gram {koyu:tek parça (levha) Zn}, diğer kapta ise 5 gram {koyu:toz Zn} kullanılır. Bu deneyde {koyu:bağımsız değişken} katı çinkonun temas yüzeyi (tanecik boyutu); {koyu:bağımlı değişken} birim zamanda çıkan H2 gazı hacmi (tepkime hızı); {koyu:kontrol değişkenleri} ise HCl çözeltisinin derişimi (örneğin 1 M), hacmi (100 mL), sıcaklığı (25 °C) ve Zn kütlesidir.",
+        "Eğer aynı tepkimede {koyu:HCl derişiminin} hıza etkisi incelenecekse; sıcaklık (25 °C), Zn kütlesi ve fiziksel hâli (şerit Zn) sabit tutulurken, birinci kapta {koyu:1 M HCl}, ikinci kapta {koyu:2 M HCl} kullanılır. Derişimi yüksek olan kapta birim hacimdeki {koyu:H+} iyonu sayısı ve etkin çarpışma sayısı daha fazla olduğundan H2 gazı çıkışı daha hızlı gerçekleşir ve tepkime daha kısa sürede tamamlanır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">KONTROLLÜ DENEY TASARIMI: Zn(k) + 2HCl(suda) -&gt; ZnCl2(suda) + H2(g)</text>\n  <rect x=\"20\" y=\"48\" width=\"210\" height=\"192\" rx=\"8\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.8\"/>\n  <text x=\"125\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">1. Kap (Referans Deney)</text>\n  <text x=\"32\" y=\"98\" font-size=\"10.5\" fill=\"#334155\">• Madde: 5 g Parça (Şerit) Zn</text>\n  <text x=\"32\" y=\"120\" font-size=\"10.5\" fill=\"#334155\">• Asit: 100 mL, 1 M HCl</text>\n  <text x=\"32\" y=\"142\" font-size=\"10.5\" fill=\"#334155\">• Sıcaklık: 25 °C</text>\n  <rect x=\"32\" y=\"162\" width=\"186\" height=\"62\" rx=\"6\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"125\" y=\"182\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1d4ed8\">Ölçülen Süre: t1 = 120 saniye</text>\n  <text x=\"125\" y=\"200\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">Toplanan H2 gazı: V litre</text>\n  <text x=\"125\" y=\"214\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">Başlangıç hızı: r1</text>\n\n  <rect x=\"245\" y=\"48\" width=\"210\" height=\"192\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.8\"/>\n  <text x=\"350\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">2. Kap (Temas Yüzeyi Etkisi)</text>\n  <text x=\"257\" y=\"98\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#166534\">• Madde: 5 g TOZ Zn (Farklı!)</text>\n  <text x=\"257\" y=\"120\" font-size=\"10.5\" fill=\"#334155\">• Asit: 100 mL, 1 M HCl (Sabit)</text>\n  <text x=\"257\" y=\"142\" font-size=\"10.5\" fill=\"#334155\">• Sıcaklık: 25 °C (Sabit)</text>\n  <rect x=\"257\" y=\"162\" width=\"186\" height=\"62\" rx=\"6\" fill=\"#ffffff\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"182\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">Ölçülen Süre: t2 = 45 saniye</text>\n  <text x=\"350\" y=\"200\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">Toplanan H2 gazı: V litre (Aynı)</text>\n  <text x=\"350\" y=\"214\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#166534\">Sonuç: r2 &gt; r1 (Daha hızlı!)</text>\n\n  <rect x=\"470\" y=\"48\" width=\"210\" height=\"192\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.8\"/>\n  <text x=\"575\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">3. Kap (Sıcaklık Etkisi)</text>\n  <text x=\"482\" y=\"98\" font-size=\"10.5\" fill=\"#334155\">• Madde: 5 g Parça Zn (Sabit)</text>\n  <text x=\"482\" y=\"120\" font-size=\"10.5\" fill=\"#334155\">• Asit: 100 mL, 1 M HCl (Sabit)</text>\n  <text x=\"482\" y=\"142\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b45309\">• Sıcaklık: 50 °C (Farklı!)</text>\n  <rect x=\"482\" y=\"162\" width=\"186\" height=\"62\" rx=\"6\" fill=\"#ffffff\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/>\n  <text x=\"575\" y=\"182\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b45309\">Ölçülen Süre: t3 = 50 saniye</text>\n  <text x=\"575\" y=\"200\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">Toplanan H2 gazı: V litre (Aynı)</text>\n  <text x=\"575\" y=\"214\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#92400e\">Sonuç: r3 &gt; r1 (Daha hızlı!)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Toplam Ürün Miktarı ve Tepkime Hızı Ayrımı!",
+          "metin": "Sıcaklığı artırmak, katıyı toz hâline getirmek veya katalizör eklemek tepkimeyi hızlandırır (tepkime daha kısa sürede biter); ancak sınırlayıcı bileşenin mol sayısı değişmediği sürece oluşan toplam ürün (H2 gazı) miktarını değiştirmez!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Tepkime Süresi ile Hız Ters Orantılıdır",
+          "metin": "Aynı miktar ürünün oluşması için geçen süre (t) ne kadar kısa ise tepkime hızı (r) o kadar büyüktür: r ∝ 1 / t."
+        }
+      ]
+    },
+    {
+      "baslik": "Deney Verilerinin ve Grafiklerinin (Hacim-Zaman, PE ve KE) Analizi",
+      "metin": [
+        "Deneysel veriler grafiklere aktarıldığında; {koyu:Oluşan Gaz Hacmi (V) – Zaman (t)} grafiğinde eğrinin başlangıçtaki eğimi ({koyu:tan α = ΔV / Δt}) tepkimenin başlangıç hızını, eğrinin yataylaştığı (sabitlendiği) nokta ise tepkimenin bitiş süresini ve oluşan toplam ürün miktarını gösterir. Temas yüzeyi artırıldığında, sıcaklık yükseltildiğinde veya katalizör eklendiğinde eğri daha dik yükselir ve yatay düzlüğe daha erken ulaşır.",
+        "Deney sonuçları {koyu:Tanecik Sayısı – Kinetik Enerji (Maxwell-Boltzmann)} ve {koyu:Potansiyel Enerji – Tepkime Koordinatı} diyagramlarıyla ilişkilendirildiğinde sıcaklık ile katalizör arasındaki temel fark netleşir: {koyu:Sıcaklık artışı (T2 > T1)}, eşik enerjisinin ({koyu:Ea}) yerini değiştirmez; taneciklerin ortalama kinetik enerjisini ve hızını artırarak {koyu:Ea engelini aşan taralı alanı} büyütür.",
+        "{koyu:Pozitif katalizör} ise taneciklerin ortalama kinetik enerjisini değiştirmez; tepkimeyi {koyu:aktifleşme enerjisi daha düşük yeni bir mekanizmadan (Ea2 < Ea1)} yürüterek birim zamanda eşik enerjisini aşan tanecik sayısını ve etkin çarpışma sayısını artırır. Katalizör hem ileri ({koyu:Ea,i}) hem de geri ({koyu:Ea,g}) aktifleşme enerjisini eşit miktarda düşürdüğü için tepkime entalpisini ({koyu:ΔH = Ea,i - Ea,g}) değiştirmez."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">DENEYSEL VERİ GRAFİKLERİ VE HIZ DEĞİŞKENLERİNİN ETKİ TABLOSU</text>\n  <rect x=\"20\" y=\"48\" width=\"320\" height=\"192\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"72\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e40af\">H2 Gaz Hacmi - Zaman Grafiği Yorumu</text>\n  <line x1=\"55\" y1=\"210\" x2=\"310\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"55\" y1=\"210\" x2=\"55\" y2=\"85\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <text x=\"300\" y=\"228\" font-size=\"10\" font-weight=\"bold\" fill=\"#334155\">Zaman (s)</text>\n  <text x=\"35\" y=\"82\" font-size=\"10\" font-weight=\"bold\" fill=\"#334155\">V(H2)</text>\n  <path d=\"M 55 210 Q 95 110 140 110 L 300 110\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2.5\"/>\n  <path d=\"M 55 210 Q 140 110 230 110 L 300 110\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\" stroke-dasharray=\"5,3\"/>\n  <text x=\"115\" y=\"102\" font-size=\"10\" font-weight=\"bold\" fill=\"#15803d\">I: Toz Zn / Sıcak / Katalizörlü</text>\n  <text x=\"185\" y=\"145\" font-size=\"10\" font-weight=\"bold\" fill=\"#b91c1c\">II: Parça Zn / Soğuk</text>\n  <line x1=\"140\" y1=\"110\" x2=\"140\" y2=\"210\" stroke=\"#16a34a\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/>\n  <line x1=\"230\" y1=\"110\" x2=\"230\" y2=\"210\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/>\n  <text x=\"140\" y=\"224\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#15803d\">t1</text>\n  <text x=\"230\" y=\"224\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#b91c1c\">t2</text>\n\n  <rect x=\"360\" y=\"48\" width=\"320\" height=\"192\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"72\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#92400e\">Faktörlerin Eşik Enerjisi (Ea) ve Hıza Etkisi</text>\n  <rect x=\"374\" y=\"84\" width=\"292\" height=\"142\" rx=\"6\" fill=\"#ffffff\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/>\n  <text x=\"384\" y=\"104\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b45309\">• Derişim Artışı:</text>\n  <text x=\"478\" y=\"104\" font-size=\"10\" fill=\"#334155\">Ea değişmez, etkin çarpışma artar.</text>\n  <text x=\"384\" y=\"128\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b45309\">• Sıcaklık Artışı:</text>\n  <text x=\"482\" y=\"128\" font-size=\"10\" fill=\"#334155\">Ea değişmez, KE ve hız artar.</text>\n  <text x=\"384\" y=\"152\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">• Katalizör:</text>\n  <text x=\"455\" y=\"152\" font-size=\"10\" font-weight=\"bold\" fill=\"#166534\">Ea DÜŞER, mekanizma değişir, hız artar.</text>\n  <text x=\"384\" y=\"176\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">• Temas Yüzeyi:</text>\n  <text x=\"475\" y=\"176\" font-size=\"10\" fill=\"#334155\">Ea değişmez, çarpışma yüzeyi ve hız artar.</text>\n  <text x=\"384\" y=\"202\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e40af\">* Hız sabiti (k): Sıcaklık, Katalizör, Temas Yüzeyi</text>\n  <text x=\"392\" y=\"216\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e40af\">ve Madde Cinsi ile değişir (Derişimle değişmez!).</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Eşik Enerjisini (Ea) Değiştiren Faktörler",
+          "metin": "Belirli bir kimyasal tepkimenin aktifleşme (eşik) enerjisini (Ea) derişim, basınç veya sıcaklık değiştirmez; Ea yalnız tepkenlerin cinsi ve 'katalizör' kullanımıyla değişir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Hız Sabiti (k) Neye Bağlıdır?",
+          "metin": "Hız denklemindeki hız sabiti (k); Sıcaklık, Katalizör, Temas yüzeyi ve Tepkenlerin cinsine (SKTT kodlaması) bağlıdır; tepkenlerin derişimine bağlı değildir."
+        }
+      ]
+    },
+    {
+      "baslik": "Tepkime Hızını Ölçme Yöntemleri ve Deneysel Çıkarımlar",
+      "metin": [
+        "Laboratuvar deneylerinde bir tepkimenin hızı, tepken veya ürünlerde meydana gelen ve gözlemlenebilen fiziksel/kimyasal değişimlerin zamana bağlı takibiyle ölçülür: (1) {koyu:Gaz hacmi veya basınç değişimi:} Sabit basınç ve sıcaklıkta gaz katsayısı değişen tepkimelerde hacim artışı/azalışı, sabit hacimli kapta ise basınç değişimi manometreyle ölçülür. (2) {koyu:Renk değişimi:} Renkli bir maddenin harcanması veya oluşması spektrofotometre ya da gözle izlenir.",
+        "(3) {koyu:Elektriksel iletkenlik değişimi:} Çözeltideki toplam iyon derişiminin arttığı veya azaldığı tepkimelerde iletkenlik ölçer kullanılır. (4) {koyu:pH (asitlik/bazlık) değişimi:} Sulu çözeltide {koyu:H+} veya {koyu:OH-} iyonu derişiminin değiştiği tepkimelerde pH metre ile hız takip edilir. (5) {koyu:Çökelti kütlesi veya sıcaklık değişimi:} Katı çökelti oluşumu ya da yalıtılmış kapta (kalorimetrede) sıcaklık artışı/azalışı ölçülür.",
+        "Deneysel veriler karşılaştırılırken tepkenlerin cinsine göre hız sıralaması da doğrulanır: Zıt yüklü iyonlar arasındaki tepkimeler ({koyu:Ag+(suda) + Cl-(suda) -> AgCl(k)}) bağ kopması gerektirmediği için en hızlıdır; aynı yüklü iyon tepkimeleri orta hızlıdır; çok sayıda kovalent bağın kopup yeniden oluştuğu organik yanma veya sentez tepkimeleri ise en yavaştır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">LABORATUVARDA TEPKİME HIZINI DENEYSEL İZLEME YÖNTEMLERİ</text>\n  <rect x=\"20\" y=\"48\" width=\"210\" height=\"192\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.8\"/>\n  <text x=\"125\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">1. Basınç / Hacim ve Renk</text>\n  <text x=\"30\" y=\"96\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#166534\">• Gaz Mol Sayısı Değişimi:</text>\n  <text x=\"38\" y=\"112\" font-size=\"10\" fill=\"#334155\">N2(g) + 3H2(g) -&gt; 2NH3(g)</text>\n  <text x=\"38\" y=\"126\" font-size=\"10\" fill=\"#475569\">(Sabit V ve T'de basınç azalması;</text>\n  <text x=\"38\" y=\"140\" font-size=\"10\" fill=\"#475569\">sabit P ve T'de hacim azalması)</text>\n  <text x=\"30\" y=\"164\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#166534\">• Renk Değişimi:</text>\n  <text x=\"38\" y=\"180\" font-size=\"10\" fill=\"#334155\">H2(g) + Br2(g) -&gt; 2HBr(g)</text>\n  <text x=\"38\" y=\"194\" font-size=\"10\" fill=\"#475569\">(Kızıl kahve rengin açılması)</text>\n\n  <rect x=\"245\" y=\"48\" width=\"210\" height=\"192\" rx=\"8\" fill=\"#ede9fe\" stroke=\"#7c3aed\" stroke-width=\"1.8\"/>\n  <text x=\"350\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#5b21b6\">2. İletkenlik ve pH Değişimi</text>\n  <text x=\"255\" y=\"96\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#6d28d9\">• Elektriksel İletkenlik:</text>\n  <text x=\"263\" y=\"112\" font-size=\"10\" fill=\"#334155\">Ag+(suda) + Cl-(suda) -&gt; AgCl(k)</text>\n  <text x=\"263\" y=\"126\" font-size=\"10\" fill=\"#475569\">(İyon derişimi ve iletkenlik azalır)</text>\n  <text x=\"255\" y=\"156\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#6d28d9\">• pH Değişimi:</text>\n  <text x=\"263\" y=\"172\" font-size=\"10\" fill=\"#334155\">Mg(k) + 2H+(suda) -&gt; Mg2+(suda) + H2(g)</text>\n  <text x=\"263\" y=\"186\" font-size=\"10\" fill=\"#475569\">(H+ azaldıkça asitlik azalır,</text>\n  <text x=\"263\" y=\"200\" font-size=\"10\" fill=\"#475569\">pH değeri zamanla artar)</text>\n\n  <rect x=\"470\" y=\"48\" width=\"210\" height=\"192\" rx=\"8\" fill=\"#fce7f3\" stroke=\"#db2777\" stroke-width=\"1.8\"/>\n  <text x=\"575\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#9d174d\">3. Tepken Cinsi Hız Sırası</text>\n  <text x=\"480\" y=\"96\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#be185d\">1. En Hızlı (Zıt Yüklü İyon):</text>\n  <text x=\"488\" y=\"112\" font-size=\"10\" fill=\"#334155\">Pb2+(suda) + 2I-(suda) -&gt; PbI2(k)</text>\n  <text x=\"480\" y=\"138\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#be185d\">2. Orta Hızlı (Aynı Yüklü İyon):</text>\n  <text x=\"488\" y=\"154\" font-size=\"10\" fill=\"#334155\">Fe2+ + Ce4+ -&gt; Fe3+ + Ce3+</text>\n  <text x=\"480\" y=\"180\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#be185d\">3. En Yavaş (Çok Bağlı Molekül):</text>\n  <text x=\"488\" y=\"196\" font-size=\"10\" fill=\"#334155\">C3H8(g) + 5O2(g) -&gt; 3CO2 + 4H2O</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Gaz Katsayısı Eşit Olan Tepkimeler",
+          "metin": "H2(g) + Cl2(g) -> 2HCl(g) tepkimesinde girenlerin (1+1=2 mol) ve ürünlerin (2 mol) gaz katsayıları eşit olduğu için sabit hacim ve sıcaklıkta 'basınç değişimi' ile hız ölçülemez!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Asit-Metal Tepkimesinde pH Değişimi",
+          "metin": "Bir metal asit çözeltisiyle tepkimeye girdiğinde çözeltideki H+ iyonları H2 gazına dönüşerek harcanır; H+ derişimi azaldığı için çözeltinin asitliği azalır ve pH değeri zamanla artar."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "CaCO3(k) + 2HCl(suda) -> CaCl2(suda) + CO2(g) + H2O(s) tepkimesinde sıcaklığın tepkime hızına etkisini araştırmak isteyen bir öğrenci nasıl bir kontrollü deney tasarlamalıdır? Bağımsız, bağımlı ve kontrol değişkenlerini belirtiniz.",
+      "cevap": "Öğrenci iki özdeş erlenmayer alıp her ikisine de eşit kütlede ve aynı tanecik boyutunda (örneğin 10'ar gram parça) CaCO3 katısı ile eşit hacim ve derişimde (örneğin 100'er mL 1 M) HCl çözeltisi koymalıdır. Birinci kabı 25 °C'de, ikinci kabı ise 50 °C'de tutarak birim zamanda çıkan CO2 gazı hacmini ölçmelidir. Burada bağımsız değişken 'sıcaklık', bağımlı değişken 'tepkime hızı (birim zamanda çıkan CO2 hacmi)', kontrol değişkenleri ise 'HCl derişimi, hacmi, CaCO3 kütlesi ve temas yüzeyi'dir."
+    },
+    {
+      "soru": "Aynı koşullarda gerçekleşen;\nI. Ag+(suda) + Br-(suda) -> AgBr(k)\nII. Fe2+(suda) + MnO4-(suda) + 8H+(suda) -> Fe3+(suda) + Mn2+(suda) + 4H2O(s)\nIII. C4H10(g) + {kesir:13|2}O2(g) -> 4CO2(g) + 5H2O(g)\ntepkimelerinin hızlarını büyükten küçüğe doğru sıralayarak nedenini açıklayınız.",
+      "cevap": "Hız sıralaması I > II > III şeklindedir. I. tepkime zıt yüklü iki basit iyon arasında gerçekleştiği ve bağ kopması gerektirmediği için en hızlıdır. II. tepkime sulu çözeltide iyonlar arasında gerçekleşse de tanecik sayısı fazla olduğu için I'den yavaştır. III. tepkime ise çok sayıda güçlü kovalent bağın kopup yeniden oluştuğu moleküler bir yanma tepkimesi olduğu için en yavaştır."
+    },
+    {
+      "soru": "Bir kimyasal tepkimede sıcaklığı artırmak ile pozitif katalizör kullanmak arasındaki benzerlik ve farklılıkları çarpışma kuramı ve eşik enerjisi (Ea) açısından karşılaştırınız.",
+      "cevap": "Benzerlik: Her ikisi de birim zamanda eşik enerjisini aşan tanecik sayısını, etkin çarpışma sayısını, hız sabitini (k) ve tepkime hızını artırır; toplam ürün miktarını ve tepkime entalpisini (ΔH) değiştirmez. Farklılık: Sıcaklık artışı eşik enerjisini (Ea) ve tepkime mekanizmasını değiştirmez, taneciklerin ortalama kinetik enerjisini ve çarpışma hızını artırır. Katalizör ise ortalama kinetik enerjiyi değiştirmez, tepkimeyi daha düşük eşik enerjili (Ea) yeni bir yoldan (mekanizmadan) götürür."
+    },
+    {
+      "soru": "Sabit sıcaklıkta 2,4 gram Mg şeridi, 500 mL 2 M HCl çözeltisine atıldığında Mg(k) + 2HCl(suda) -> MgCl2(suda) + H2(g) tepkimesi gerçekleşmektedir (Mg tamamen tükenmekte, HCl artmaktadır). Tepkime hızını artırmak fakat oluşan toplam H2 gazı mol sayısını değiştirmemek için neler yapılabilir?",
+      "cevap": "Bu tepkimede sınırlayıcı bileşen Mg katısıdır (0,1 mol Mg tamamen tükenir, 1 mol HCl'den 0,8 mol artar). Hem hızı artırıp hem de H2 miktarını değiştirmemek için: 1. Mg şeridi toz hâline getirilebilir (temas yüzeyi artar), 2. Sıcaklık artırılabilir, 3. Uygun bir katalizör eklenebilir, 4. HCl çözeltisinin derişimi artırılabilir."
+    },
+    {
+      "soru": "Aşağıdaki tepkimelerin hızlarının laboratuvarda hangi deneysel yöntemlerle takip edilebileceğini yazınız:\na) N2O4(g) (renksiz) -> 2NO2(g) (kahverengi) (Sabit V ve T)\nb) Zn(k) + 2HNO3(suda) -> Zn(NO3)2(suda) + H2(g) (Sabit P ve T)",
+      "cevap": "a) Tepkimede renksiz gazdan kahverengi NO2 gazı oluştuğu için 'renk değişimi' ile; ayrıca 1 mol gazdan 2 mol gaz oluştuğu için sabit hacim ve sıcaklıkta 'gaz basıncındaki artış' ile takip edilebilir. b) Tepkimede H2 gazı çıktığı için sabit basınç ve sıcaklıkta 'gaz hacmindeki artış', H+ iyonu harcandığı için 'pH artışı' ve katı Zn harcandığı için 'katı kütlesindeki azalma' ile takip edilebilir."
+    },
+    {
+      "soru": "Potansiyel enerji diyagramında ileri aktifleşme enerjisi Ea,i = 85 kJ ve geri aktifleşme enerjisi Ea,g = 120 kJ olan bir tepkimeye katalizör eklendiğinde ileri aktifleşme enerjisi 55 kJ'e düşmektedir. Katalizörlü tepkimenin geri aktifleşme enerjisini ve ΔH değerini bulunuz.",
+      "cevap": "Tepkime entalpisi ΔH = Ea,i - Ea,g = 85 - 120 = -35 kJ'dür. Katalizör ΔH değerini değiştirmez; ileri aktifleşme enerjisini 85 - 55 = 30 kJ düşürdüğüne göre, geri aktifleşme enerjisini de aynı miktarda (30 kJ) düşürür. Dolayısıyla katalizörlü geri aktifleşme enerjisi Ea,g(katalizörlü) = 120 - 30 = 90 kJ olur (ve ΔH = 55 - 90 = -35 kJ olarak sabit kalır)."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir öğrenci Mg(k) + 2HCl(suda) -> MgCl2(suda) + H2(g) tepkimesinde yalnız 'tepken derişiminin' tepkime hızına etkisini incelemek için iki ayrı deney düzeneği kuruyor. Öğrencinin amacına ulaşabilmesi için I. ve II. deney kaplarında aşağıdaki koşullardan hangisini seçmesi gerekir?",
+      "secenekler": [
+        "I. Kap: 2 g toz Mg, 1 M HCl, 25 °C  —  II. Kap: 2 g şerit Mg, 1 M HCl, 25 °C",
+        "I. Kap: 2 g toz Mg, 1 M HCl, 25 °C  —  II. Kap: 2 g toz Mg, 2 M HCl, 25 °C",
+        "I. Kap: 2 g şerit Mg, 1 M HCl, 25 °C  —  II. Kap: 2 g şerit Mg, 1 M HCl, 50 °C",
+        "I. Kap: 2 g toz Mg, 1 M HCl, 25 °C  —  II. Kap: 4 g şerit Mg, 2 M HCl, 50 °C",
+        "I. Kap: 2 g toz Mg, 2 M HCl, 25 °C  —  II. Kap: 2 g toz Mg, 2 M HCl, 40 °C"
+      ],
+      "dogru": 1,
+      "aciklama": "Yalnız derişimin etkisi inceleneceğinden bağımsız değişken HCl derişimi (1 M ve 2 M) olmalı; Mg'nin kütlesi (2 g), fiziksel hâli (toz) ve sıcaklık (25 °C) kontrol değişkeni olarak sabit tutulmalıdır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Gaz fazında gerçekleşen homojen bir kimyasal tepkimenin sıcaklığı artırıldığında aşağıdaki niceliklerden hangisi değişmez?",
+      "secenekler": [
+        "Taneciklerin ortalama kinetik enerjisi ve yayılma hızı",
+        "Birim zamanda eşik enerjisini aşan etkin çarpışma sayısı",
+        "Tepkimenin aktifleşme (eşik) enerjisinin (Ea) sayısal değeri",
+        "Tepkime hız denkleminde yer alan hız sabitinin (k) değeri",
+        "Tepkimenin başlangıç hızı ve birim zamanda harcanan madde miktarı"
+      ],
+      "dogru": 2,
+      "aciklama": "Sıcaklık artışı ortalama kinetik enerjiyi, etkin çarpışma sayısını, hız sabitini (k) ve tepkime hızını artırır; ancak aktifleşme (eşik) enerjisini (Ea) değiştirmez (Ea'yı katalizör değiştirir)."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Sabit hacimli kapalı bir kapta ve sabit sıcaklıkta gerçekleşen aşağıdaki tepkimelerden hangisinin hızı 'gaz basıncındaki değişim' ölçülerek takip edilemez?",
+      "secenekler": [
+        "N2(g) + 3H2(g) -> 2NH3(g)",
+        "CaCO3(k) -> CaO(k) + CO2(g)",
+        "2SO2(g) + O2(g) -> 2SO3(g)",
+        "H2(g) + Cl2(g) -> 2HCl(g)",
+        "C(k) + O2(g) -> CO2(g) + CO(g)"
+      ],
+      "dogru": 3,
+      "aciklama": "H2(g) + Cl2(g) -> 2HCl(g) tepkimesinde girenlerin toplam gaz katsayısı (1+1=2) ile ürünlerin gaz katsayısı (2) birbirine eşit olduğundan sabit hacim ve sıcaklıkta toplam gaz basıncı değişmez."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir kimyasal tepkimeye uygun bir pozitif katalizör eklendiğinde gerçekleşen değişimlerle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+      "secenekler": [
+        "İleri ve geri aktifleşme enerjisini eşit miktarda düşürür.",
+        "Mekanizmalı tepkimelerde hız belirleyen en yavaş basamağa etki eder.",
+        "Tepkimenin hız sabitini (k) ve birim zamandaki etkin çarpışma sayısını artırır.",
+        "Tepkime sonunda kimyasal yapısı değişmeden ortamdan ayrılır.",
+        "Tepkimenin entalpi değişimini (ΔH) ve oluşan toplam ürün verimini artırır."
+      ],
+      "dogru": 4,
+      "aciklama": "Katalizör Ea,i ve Ea,g değerlerini eşit miktarda düşürdüğü için ΔH değerini değiştirmez; ayrıca tepkime verimini veya toplam ürün miktarını artırmaz, yalnız tepkime süresini kısaltır."
+    },
+    {
+      "tur": "dy",
+      "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Kontrollü bir deneyde araştırmacının etkisini gözlemlemek için kendi isteğiyle değiştirdiği değişkene bağımsız değişken adı verilir.",
+          "dogru": true
+        },
+        {
+          "metin": "Heterojen bir tepkimede katı tepkenin toz hâline getirilmesi temas yüzeyini, hız sabitini (k) ve tepkime hızını artırır.",
+          "dogru": true
+        },
+        {
+          "metin": "Zıt yüklü iyonlar arasında sulu çözeltide gerçekleşen tepkimeler, kovalent bağlı organik moleküllerin tepkimelerinden daha yavaştır.",
+          "dogru": false
+        },
+        {
+          "metin": "Zn(k) + 2H+(suda) -> Zn2+(suda) + H2(g) tepkimesi ilerledikçe çözeltideki H+ derişimi azaldığından pH değeri zamanla artar.",
+          "dogru": true
+        },
+        {
+          "metin": "Tepkenlerin derişimini artırmak tepkimenin hız sabitini (k) ve aktifleşme enerjisini (Ea) büyütür.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "yonerge": "Aşağıdaki deneysel kavramları ve faktörleri uygun açıklamalarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Bağımsız Değişken",
+          "Kontrollü deneyde araştırmacının tepkime hızına etkisini test etmek amacıyla değiştirdiği faktör"
+        ],
+        [
+          "Bağımlı Değişken",
+          "Deneyde bağımsız değişkene bağlı olarak değişen ve ölçülen tepkime hızı veya tamamlanma süresi"
+        ],
+        [
+          "Pozitif Katalizör",
+          "Tepkimeyi aktifleşme enerjisi (Ea) daha düşük yeni bir mekanizmadan yürüterek hızlandıran madde"
+        ],
+        [
+          "Temas Yüzeyi Artışı",
+          "Katı tepkenin tanecik boyutunun küçültülmesiyle (toz hâline getirilmesiyle) çarpışma yüzeyinin büyümesi"
+        ],
+        [
+          "Elektriksel İletkenlik Ölçümü",
+          "Sulu çözeltideki toplam iyon derişiminin zamanla değiştiği tepkimelerde kullanılan hız izleme yöntemi"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Kontrollü bir deneyde etkisi araştırılan değişken dışındaki tüm koşulların aynı tutulmasına ___ değişkenleri denir.",
+          "cevap": "kontrol"
+        },
+        {
+          "metin": "Bir kimyasal tepkimenin aktifleşme (eşik) enerjisini (Ea) yalnız ___ kullanımı değiştirebilir.",
+          "cevap": "katalizör"
+        },
+        {
+          "metin": "Mekanizmalı (çok basamaklı) bir tepkimede toplam tepkime hızını aktifleşme enerjisi en yüksek olan en ___ basamak belirler.",
+          "cevap": "yavaş"
+        },
+        {
+          "metin": "Oda sıcaklığında sulu çözeltide ___ yüklü iyonlar arasında gerçekleşen çökelme tepkimeleri çok hızlı gerçekleşir.",
+          "cevap": "zıt"
+        },
+        {
+          "metin": "Sıcaklık artırıldığında hem endotermik hem de ekzotermik tepkimelerin hızı ve hız sabiti (k) ___ gösterir.",
+          "cevap": "artış"
+        }
+      ],
+      "fazla": [
+        "azalış",
+        "entalpi"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Tepkime hızına etki eden faktörlerin (derişim, sıcaklık, temas yüzeyi ve katalizör) kontrollü deneylerle nasıl sorgulandığını, deney grafiklerini ve çarpışma kuramıyla ilişkisini değerlendiriniz.",
+      "ipuclari": [
+        "Kontrollü deney: İncelenen faktör bağımsız değişken yapılır, diğer tüm koşullar sabit tutulur (kontrol değişkeni) ve hız/süre (bağımlı değişken) ölçülür.",
+        "Grafik analizi: Gaz hacmi-zaman grafiğinde eğim başlangıç hızını, yatay düzlüğün yüksekliği ise toplam ürün miktarını gösterir.",
+        "Çarpışma kuramı: Derişim ve temas yüzeyi çarpışma sayısını artırır; sıcaklık ortalama kinetik enerjiyi artırır; katalizör ise Ea'yı düşürür."
+      ],
+      "cevap": "Tepkime hızına etki eden faktörler kontrollü deneylerle incelenirken yalnız test edilen faktör (bağımsız değişken) değiştirilir ve diğer tüm değişkenler sabit tutulur. Örneğin Zn + 2HCl tepkimesinde toz Zn kullanıldığında, HCl derişimi artırıldığında, sıcaklık yükseltildiğinde veya katalizör eklendiğinde gaz hacmi-zaman grafiğinin eğimi büyür ve tepkime daha kısa sürede tamamlanır; ancak sınırlayıcı madde miktarı sabit kaldığı için oluşan toplam H2 gazı hacmi değişmez. Çarpışma kuramına göre derişim ve temas yüzeyi etkin çarpışma sayısını artırırken, sıcaklık taneciklerin kinetik enerjisini artırır, katalizör ise eşik enerjisini (Ea) düşürerek tepkimeyi hızlandırır."
+    }
+  ],
+  "ozet": [
+    "{koyu:Kontrollü Deney:} Hıza etkisi incelenen faktör bağımsız değişken, ölçülen tepkime hızı bağımlı değişken, sabit bırakılan diğer koşullar ise kontrol değişkenidir.",
+    "{koyu:Derişim ve Temas Yüzeyi:} Tepken derişiminin artırılması ve katının toz hâline getirilmesi eşik enerjisini (Ea) değiştirmeden etkin çarpışma sayısını ve hızı artırır.",
+    "{koyu:Sıcaklık ve Katalizör Farkı:} Sıcaklık ortalama kinetik enerjiyi artırarak Ea'yı aşan tanecik sayısını büyütür; katalizör ise Ea'yı düşürerek yeni bir mekanizma açar.",
+    "{koyu:Hız Sabiti (k):} Hız sabiti k; Sıcaklık, Katalizör, Temas yüzeyi ve Tepken cinsine (SKTT) bağlıdır, derişime bağlı değildir.",
+    "{koyu:Hız İzleme Yöntemleri:} Tepkime hızı basınç/hacim, renk, elektriksel iletkenlik, pH, çökelti kütlesi veya sıcaklık değişimi ölçülerek deneysel olarak takip edilir."
+  ]
+}

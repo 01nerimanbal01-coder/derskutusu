@@ -1,0 +1,263 @@
+{
+  "ad": "10-kimya-10",
+  "sinif": 10,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 10,
+  "tarih": "23-27 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "1. Tema: Etkileşim",
+  "konu": "Sınırlayıcı Bileşen (Artan Madde) Problemleri, Yüzde Verim ve Saflık Hesaplamaları (10.1.7)",
+  "ciktilar": [
+    "Başlangıç miktarları verilen kimyasal tepkimelerde sınırlayıcı bileşeni, artan madde miktarını ve oluşan ürün miktarını Başlangıç-Değişim-Sonuç (BDS) tablosuyla çözümler.",
+    "Kuramsal (teorik) verim ile gerçek (deneysel) verim arasındaki ilişkiyi kurarak kimyasal tepkimelerin yüzde verimini hesaplar.",
+    "Saf olmayan (impür) madde örneklerinin saflık yüzdesini, karışım ve ardışık tepkime problemlerini stokiyometrik oranlarla değerlendirir."
+  ],
+  "giris": "Endüstriyel üretimde ve laboratuvar deneylerinde tepkimeye giren maddeler her zaman stokiyometrik oranlarda alınmayabilir ya da kullanılan ham maddeler safsızlık içerebilir. Bu gibi durumlarda oluşacak maksimum ürün miktarını belirleyen {koyu:sınırlayıcı bileşenin} saptanması, tepkimenin {koyu:yüzde veriminin} ve başlangıç numunesinin {koyu:saflık yüzdesinin} hesaplanması kimyasal stokiyometrinin en önemli uygulama alanlarıdır.",
+  "bolumler": [
+    {
+      "baslik": "Sınırlayıcı Bileşen (Artan Madde) Problemleri ve BDS Tablosu",
+      "metin": [
+        "Bir kimyasal tepkimede tepkenlerden (girenlerden) en az birinin tamamen tükendiği tepkimelere {koyu:tam verimli (%100 verimli) tepkime} denir. Tam verimli bir tepkimede ilk önce biterek tepkimenin durmasına neden olan ve oluşacak ürün miktarını belirleyen maddeye {koyu:sınırlayıcı bileşen}, tepkime sonunda bir kısmı harcanmadan kapta kalan maddeye ise {koyu:artan bileşen (aşırı madde)} adı verilir.",
+        "Denkleştirilmiş bir tepkimede hangi tepkenin sınırlayıcı bileşen olduğunu bulmak için her tepkenin {koyu:başlangıç mol sayısı, denklemdeki stokiyometrik katsayısına bölünür} ({koyu:{kesir:Başlangıç Molü|Katsayı}}). Bu oranı {koyu:en küçük olan madde sınırlayıcı bileşendir}. Eğer iki tepkenin de {koyu:{kesir:Mol|Katsayı}} oranı birbirine eşit çıkarsa tepkime {koyu:artansız} gerçekleşir ve her iki tepken de tamamen tükenir.",
+        "Hesaplamalarda {koyu:Başlangıç — Değişim — Sonuç (BDS)} tablosu kurulur. Değişim (harcanan ve oluşan mol) satırı daima {koyu:sınırlayıcı bileşenin tamamen tükenmesine göre} katsayılarla orantılı olarak doldurulur. Örneğin {koyu:N2(g) + 3H2(g) → 2NH3(g)} tepkimesine 4 mol N2 ve 9 mol H2 ile başlandığında; H2 için {koyu:{kesir:9|3} = 3} ve N2 için {koyu:{kesir:4|1} = 4} olduğundan {koyu:H2 sınırlayıcı bileşendir}. 9 mol H2 tamamen biterken 3 mol N2 harcanır (1 mol N2 artar) ve 6 mol NH3 ürünü oluşur."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Eşit Kütle veya Eşit Mol Soruları",
+          "metin": "'Eşit mollerde' alınan tepkenlerde denklemdeki katsayısı büyük olan madde; 'eşit kütlelerde' alınan tepkenlerde ise tepkimede kütlece harcanma oranı büyük olan madde sınırlayıcı bileşen olur ve tamamen biter."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Artan Maddeyi Tamamlama",
+          "metin": "'Hangi maddeden kaç mol/gram eklenirse artan madde kalmaz?' sorularında, kapta artan maddeyi tamamen harcayacak kadar sınırlayıcı bileşen eklenir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">SINIRLAYICI BİLEŞEN (ARTAN MADDE) VE BDS TABLOSU ANALİZİ</text>\n  <rect x=\"22\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e40af\">TEMEL KAVRAMLAR VE KURAL</text>\n  <text x=\"35\" y=\"88\" font-size=\"11.2\" fill=\"#1e3a8a\">• Tam Verimli Tepkime: Tepkenlerden en az birinin</text>\n  <text x=\"35\" y=\"106\" font-size=\"11.2\" fill=\"#1e3a8a\">  tamamen tükendiği (%100 verimli) tepkimedir.</text>\n  <text x=\"35\" y=\"128\" font-size=\"11.2\" fill=\"#1e3a8a\">• Sınırlayıcı Bileşen: Tepkimede tamamen biten ve</text>\n  <text x=\"35\" y=\"146\" font-size=\"11.2\" fill=\"#1e3a8a\">  oluşacak ürün miktarını belirleyen maddedir.</text>\n  <text x=\"35\" y=\"168\" font-size=\"11.2\" font-weight=\"bold\" fill=\"#1e40af\">• Pratik Kural: (Başlangıç Molü / Katsayı) oranı</text>\n  <text x=\"35\" y=\"184\" font-size=\"11.2\" font-weight=\"bold\" fill=\"#1e40af\">  küçük olan madde SINIRLAYICI BİLEŞENDİR.</text>\n  <rect x=\"358\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#166534\">ÖRNEK BDS TABLOSU: N2(g) + 3H2(g) → 2NH3(g)</text>\n  <text x=\"370\" y=\"90\" font-size=\"11\" fill=\"#14532d\">• Başlangıç (B):   4 mol N2      9 mol H2       —</text>\n  <text x=\"370\" y=\"114\" font-size=\"11\" fill=\"#14532d\">• Değişim (D):    -3 mol N2     -9 mol H2    +6 mol NH3</text>\n  <text x=\"370\" y=\"138\" font-size=\"11\" fill=\"#14532d\">• Sonuç (S):       1 mol N2      0 (Bitti)    6 mol NH3</text>\n  <text x=\"370\" y=\"162\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">• Sınırlayıcı bileşen: H2 (9/3 = 3 &lt; 4/1 = 4)</text>\n  <text x=\"370\" y=\"182\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">• Artan madde: 1 mol N2 | Ürün: 6 mol NH3</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Stokiyometrik hesaplamaların tamamı artan maddeye göre değil, SINIRLAYICI BİLEŞENE göre yapılır.</text>\n</svg>"
+    },
+    {
+      "baslik": "Kuramsal Verim, Gerçek Verim ve Yüzde Verim Hesaplamaları",
+      "metin": [
+        "Denkleştirilmiş kimyasal denklem üzerinden sınırlayıcı bileşenin %100 oranında ürüne dönüştüğü varsayılarak hesaplanan maksimum ürün miktarına {koyu:kuramsal (teorik) verim} adı verilir. Ancak uygulamada tersinir (çift yönlü) tepkimeler, yan tepkimelerin oluşması, sıcaklık-basınç kayıpları veya ürünün kap çeperlerinde kalması gibi nedenlerle elde edilen ürün miktarı kuramsal değerden düşük çıkar. Deney sonucunda fiilen ölçülen bu ürün miktarına {koyu:gerçek (deneysel) verim} denir.",
+        "Bir kimyasal tepkimenin {koyu:yüzde verimi}, gerçek verimin kuramsal verime oranının 100 ile çarpılmasıyla hesaplanır: {koyu:Yüzde Verim (%) = {kesir:Gerçek Verim|Kuramsal (Teorik) Verim} × 100}. Bu bağıntıda hem pay hem de paydada aynı birim (kütle için gram, madde miktarı için mol veya aynı koşullardaki gazlar için litre) kullanılır.",
+        "Tepkimeye giren maddelerin hiçbirinin tamamen bitmediği bir deneyde tepkime tam verimli değildir ({koyu:verim < %100}). Böyle problemlerde yine önce tam verimliymiş gibi {koyu:sınırlayıcı bileşen} belirlenir; sınırlayıcı bileşenin başlangıç miktarının yüzde kaçının harcandığı, doğrudan tepkimenin yüzde verimini verir."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Verim Hesabında Referans Madde",
+          "metin": "İki tepkenin de artma gösterdiği (%100'den düşük verimli) bir tepkimede yüzde verim hesaplanırken rastgele bir tepkene göre değil, tam verimli olsaydı ilk bitecek olan 'sınırlayıcı bileşene' göre oran kurulur."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Yüzde Verimden Ürün Bulma",
+          "metin": "Eğer başlangıç miktarları ve yüzde verim verilip oluşan ürün soruluyorsa: Önce kuramsal ürün bulunur, ardından bu değer yüzde verimle çarpılır (Gerçek Ürün = Kuramsal Ürün × %Verim / 100)."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">GERÇEK VERİM, KURAMSAL (TEORİK) VERİM VE YÜZDE VERİM</text>\n  <rect x=\"22\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#fefce8\" stroke=\"#ca8a04\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#854d0e\">KURAMSAL VE GERÇEK VERİM FARKI</text>\n  <text x=\"35\" y=\"88\" font-size=\"11.2\" fill=\"#713f12\">• Kuramsal (Teorik) Verim: Sınırlayıcı bileşenin %100</text>\n  <text x=\"35\" y=\"106\" font-size=\"11.2\" fill=\"#713f12\">  tükendiği varsayılarak denklemden hesaplanan üründür.</text>\n  <text x=\"35\" y=\"128\" font-size=\"11.2\" fill=\"#713f12\">• Gerçek (Deneysel) Verim: Laboratuvarda veya sanayide</text>\n  <text x=\"35\" y=\"146\" font-size=\"11.2\" fill=\"#713f12\">  tepkime sonunda fiilen elde edilen ürün miktarıdır.</text>\n  <text x=\"35\" y=\"168\" font-size=\"11.2\" font-weight=\"bold\" fill=\"#854d0e\">• Yan tepkimeler, tersinirlik ve saflaştırma kayıpları</text>\n  <text x=\"35\" y=\"184\" font-size=\"11.2\" font-weight=\"bold\" fill=\"#854d0e\">  nedeniyle Gerçek Verim ≤ Kuramsal Verim olur.</text>\n  <rect x=\"358\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#6b21a8\">YÜZDE VERİM HESAPLAMA BAĞINTISI</text>\n  <text x=\"370\" y=\"92\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">Yüzde Verim (%) = (Gerçek Verim / Kuramsal Verim) × 100</text>\n  <text x=\"370\" y=\"120\" font-size=\"11\" fill=\"#581c87\">• Örnek: Teorik olarak 50 gram CaO oluşması beklenirken</text>\n  <text x=\"370\" y=\"138\" font-size=\"11\" fill=\"#581c87\">  deneyde 40 gram CaO elde edilmişse:</text>\n  <text x=\"370\" y=\"160\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">  Yüzde Verim = (40 / 50) × 100 = %80 bulunur.</text>\n  <text x=\"370\" y=\"182\" font-size=\"11\" fill=\"#581c87\">• Aynı oran mol veya gaz hacmi üzerinden de kurulabilir.</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Tepkenlerin hiçbirinin tam bitmediği tepkimeler '%100'den düşük verimli' tepkimelerdir.</text>\n</svg>"
+    },
+    {
+      "baslik": "Saflık Yüzdesi, Karışım ve Ardışık Tepkime Problemleri",
+      "metin": [
+        "Doğadan çıkarılan cevherler, mineraller ve ticari kimyasallar genellikle %100 saf değildir; içlerinde tepkimeye girmeyen yabancı maddeler ({koyu:safsızlık}) barındırır. Bir örnekteki tepkimeye giren saf madde kütlesinin, başlangıçtaki toplam numune (örnek) kütlesine oranının 100 ile çarpımına {koyu:saflık yüzdesi} denir: {koyu:Saflık Yüzdesi (%) = {kesir:Saf Maddenin Kütlesi|Toplam Numune Kütlesi} × 100}. Ürün miktarı verildiğinde denklem katsayılarından geriye doğru gidilerek bulunan tepken miktarı daima {koyu:saf kısma} aittir.",
+        "İki veya daha fazla maddenin oluşturduğu {koyu:karışım problemlerinde}, bileşenlerin tepkime denklemleri ayrı ayrı yazılır (birbirleriyle değil ortak reaktifle tepkime verirler). Bileşenlerin mol sayılarına {koyu:x} ve {koyu:y} değişkenleri verilerek toplam mol/kütle ve oluşan toplam ürün üzerinden iki bilinmeyenli denklem çözülür. Karışımdaki maddelerden biri tepkime vermiyorsa (örneğin Cu-Zn alaşımında Cu'nun HCl ile tepkime vermemesi veya He-CH4 karışımında He'un yanmaması gibi) oluşan ürün yalnız tepkime veren bileşene aittir.",
+        "Bir tepkimede oluşan ürünün, izleyen ikinci bir tepkimede giren (tepken) olarak kullanıldığı tepkime dizilerine {koyu:ardışık (zincirleme) tepkimeler} denir. Ardışık tepkimelerde birinci basamakta oluşan ara ürünün mol sayısı hiç değiştirilmeden ikinci basamağa taşınır ve katsayı oranlarıyla son ürüne geçilir."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Saflık ile Verim Kavramlarını Karıştırmama",
+          "metin": "'Saflık yüzdesi' tepkimeye giren başlangıç numunesinin ne kadarının aranan bileşik olduğunu anlatır; 'yüzde verim' ise saf olan tepkenin yüzde kaçının ürüne dönüştüğünü ifade eder."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Ardışık Tepkimelerde Mol Taşıma",
+          "metin": "Birinci tepkimede 2KClO3 → 2KCl + 3O2 ile 3 mol O2 oluşmuşsa, ikinci tepkime olan C + O2 → CO2 denkleminde O2'nin katsayısı 1 olsa bile doğrudan eldeki 3 mol O2 yazılarak 3 mol CO2 bulunduğu hesaplanır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">SAFLIK YÜZDESİ, KARIŞIM VE ARDIŞIK TEPKİME HESAPLAMALARI</text>\n  <rect x=\"22\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#9a3412\">SAFLIK YÜZDESİ HESAPLAMALARI</text>\n  <text x=\"35\" y=\"88\" font-size=\"11.2\" fill=\"#7c2d12\">• Doğadaki cevherler ve cevher örnekleri safsızlık içerir;</text>\n  <text x=\"35\" y=\"106\" font-size=\"11.2\" fill=\"#7c2d12\">  tepkimeye yalnız numunedeki SAF KISIM girer.</text>\n  <text x=\"35\" y=\"128\" font-size=\"11.2\" font-weight=\"bold\" fill=\"#9a3412\">• Saflık (%) = (Saf Madde Kütlesi / Toplam Numune) × 100</text>\n  <text x=\"35\" y=\"150\" font-size=\"11.2\" fill=\"#7c2d12\">• Örnek: 200 g kireç taşından 150 g saf CaCO3 tepkimeye</text>\n  <text x=\"35\" y=\"168\" font-size=\"11.2\" fill=\"#7c2d12\">  giriyorsa saflık yüzdesi: (150 / 200) × 100 = %75'tir.</text>\n  <rect x=\"358\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0891b2\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#155e75\">KARIŞIM VE ARDIŞIK (ZİNCİRLEME) TEPKİMELER</text>\n  <text x=\"370\" y=\"88\" font-size=\"11.2\" fill=\"#164e63\">• Karışım Problemleri: Karışımdaki her bileşen için</text>\n  <text x=\"370\" y=\"106\" font-size=\"11.2\" fill=\"#164e63\">  ayrı tepkime denklemi yazılıp x ve y mol atanır.</text>\n  <text x=\"370\" y=\"128\" font-size=\"11.2\" fill=\"#164e63\">• Tepkime vermeyen soy metal/gaz (Au, Pt, He) ayrılır.</text>\n  <text x=\"370\" y=\"150\" font-size=\"11.2\" fill=\"#164e63\">• Ardışık Tepkimeler: Birinci basamakta oluşan ürünün</text>\n  <text x=\"370\" y=\"168\" font-size=\"11.2\" fill=\"#164e63\">  mol sayısı ikinci basamağa aynen taşınır.</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Ürün miktarından başlangıç numunesinin saflığı bulunurken önce saf tepkenin molü ve kütlesi hesaplanır.</text>\n</svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Denkleştirilmiş 2SO2(g) + O2(g) → 2SO3(g) tepkimesini gerçekleştirmek üzere kaba 6 mol SO2 ve 5 mol O2 gazları konuluyor. Tam verimle gerçekleşen tepkimede sınırlayıcı bileşeni, artan maddeyi ve oluşan SO3 mol sayısını bulunuz.",
+      "cevap": "Başlangıç molü / katsayı oranlarını karşılaştıralım: SO2 için {kesir:6|2} = 3; O2 için {kesir:5|1} = 5. Oranı küçük olan SO2 (3 < 5) sınırlayıcı bileşendir ve 6 mol SO2 tamamen biter. Katsayılara göre 2 mol SO2 ile 1 mol O2 tepkimeye girdiğinden, 6 mol SO2 ile 3 mol O2 harcanır ve 5 - 3 = 2 mol O2 gazı artar. Katsayısı 2 olan SO3'ten ise 6 mol oluşur."
+    },
+    {
+      "soru": "CH4(g) + 2O2(g) → CO2(g) + 2H2O(s) denklemine göre 32 gram CH4 gazı yeterince O2 ile yakıldığında deney sonunda 66 gram CO2 gazı elde ediliyor. Tepkimenin yüzde verimini hesaplayınız (CH4 = 16 g/mol, CO2 = 44 g/mol).",
+      "cevap": "Başlangıçtaki CH4 mol sayısı: n = {kesir:32|16} = 2 mol CH4. Denkleme göre 1 mol CH4'ten 1 mol CO2 oluştuğuna göre, 2 mol CH4'ten kuramsal (teorik) olarak 2 mol CO2 yani 2 × 44 = 88 gram CO2 oluşmalıdır (Kuramsal verim = 88 g). Gerçek verim 66 gram olduğuna göre: Yüzde Verim = ({kesir:66|88}) × 100 = %75 olarak bulunur."
+    },
+    {
+      "soru": "Kütlece %80 saflıktaki 250 gram kireç taşı (CaCO3) örneği CaCO3(k) → CaO(k) + CO2(g) denklemine göre tam verimle ısıtılarak ayrıştırılıyor. Normal koşullarda (NŞA) kaç litre CO2 gazı açığa çıkar (CaCO3 = 100 g/mol, NŞA'da 1 mol gaz = 22,4 L)?",
+      "cevap": "Önce 250 gram örnekteki saf CaCO3 kütlesini bulalım: m_saf = 250 × ({kesir:80|100}) = 200 gram saf CaCO3. Saf CaCO3'ün mol sayısı: n = {kesir:200|100} = 2 mol. Denkleme göre 1 mol CaCO3'ten 1 mol CO2 oluştuğu için 2 mol CaCO3'ten 2 mol CO2 gazı oluşur. NŞA'daki hacmi: V = 2 × 22,4 = 44,8 litre CO2 gazıdır."
+    },
+    {
+      "soru": "Saf olmayan 50 gram Mg metal örneği yeterince HCl çözeltisine atıldığında Mg(k) + 2HCl(suda) → MgCl2(suda) + H2(g) denklemine göre 3 gram H2 gazı açığa çıkıyor. Buna göre Mg örneğinin saflık yüzdesi kaçtır (Mg = 24 g/mol, H2 = 2 g/mol)?",
+      "cevap": "Oluşan H2 gazının mol sayısı: n(H2) = {kesir:3|2} = 1,5 mol. Denkleme göre 1 mol H2 oluşması için 1 mol saf Mg harcandığından, 1,5 mol H2 için 1,5 mol saf Mg tepkimeye girmiştir. Saf Mg kütlesi: m = 1,5 × 24 = 36 gram. Örnek 50 gram olduğundan Saflık Yüzdesi = ({kesir:36|50}) × 100 = %72 bulunur."
+    },
+    {
+      "soru": "Toplam 5 mol olan He ve C2H4 gazları karışımı yeterince O2 gazı ile tamamen yakıldığında 6 mol CO2 gazı oluşuyor. Başlangıçtaki karışımda bulunan He gazının molce yüzdesi kaçtır?",
+      "cevap": "Soy gaz olan He yanmaz (O2 ile tepkime vermez). Yalnız C2H4 gazı C2H4(g) + 3O2(g) → 2CO2(g) + 2H2O(s) denklemine göre yanar. 1 mol C2H4 yandığında 2 mol CO2 oluştuğuna göre, 6 mol CO2 oluşması için karışımda {kesir:6|2} = 3 mol C2H4 bulunmalıdır. Toplam karışım 5 mol olduğundan n(He) = 5 - 3 = 2 moldür. He gazının molce yüzdesi = ({kesir:2|5}) × 100 = %40 olur."
+    },
+    {
+      "soru": "Eşit kütlede Ca ve S elementleri alınarak Ca(k) + S(k) → CaS(k) tepkimesine göre tam verimle 72 gram CaS bileşiği elde ediliyor. Hangi elementten kaç gram artmıştır (Ca = 40 g/mol, S = 32 g/mol, CaS = 72 g/mol)?",
+      "cevap": "Oluşan CaS'nin mol sayısı: n = {kesir:72|72} = 1 mol CaS. Denkleme göre 1 mol CaS oluşması için 1 mol Ca (40 gram) ve 1 mol S (32 gram) harcanır. Başlangıçta her iki elementten eşit kütlede alındığına göre, miktarı çok harcanan Ca sınırlayıcı bileşendir ve başlangıçta 40'ar gram alınmıştır. Ca tamamen biterken, S elementinden 40 - 32 = 8 gram artmıştır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Denkleştirilmiş 4Al(k) + 3O2(g) → 2Al2O3(k) tepkimesinde 8 mol Al katısı ile 9 mol O2 gazı tam verimle tepkimeye sokuluyor. Tepkime sonunda sınırlayıcı bileşen ve oluşan Al2O3 miktarı aşağıdakilerin hangisinde doğru verilmiştir?",
+      "secenekler": [
+        "Sınırlayıcı bileşen: Al — Oluşan Al2O3: 4 mol",
+        "Sınırlayıcı bileşen: O2 — Oluşan Al2O3: 6 mol",
+        "Sınırlayıcı bileşen: Al — Oluşan Al2O3: 8 mol",
+        "Sınırlayıcı bileşen: O2 — Oluşan Al2O3: 4 mol",
+        "Sınırlayıcı bileşen: Al — Oluşan Al2O3: 2 mol"
+      ],
+      "dogru": 0,
+      "aciklama": "Başlangıç molü / katsayı oranları: Al için {kesir:8|4} = 2; O2 için {kesir:9|3} = 3. Oranı küçük olan Al (2 < 3) sınırlayıcı bileşendir ve 8 mol Al tamamen biter. 4 mol Al'den 2 mol Al2O3 oluştuğuna göre 8 mol Al'den 4 mol Al2O3 oluşur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "N2(g) + 3H2(g) → 2NH3(g) denklemine göre 5 mol N2 ve 12 mol H2 gazları tepkimeye sokulduğunda kapta 6 mol NH3 gazı oluştuğu ölçülüyor. Buna göre bu tepkimenin yüzde verimi kaçtır?",
+      "secenekler": [
+        "%50",
+        "%60",
+        "%75",
+        "%80",
+        "%90"
+      ],
+      "dogru": 2,
+      "aciklama": "Önce sınırlayıcı bileşen bulunur: N2 için {kesir:5|1} = 5, H2 için {kesir:12|3} = 4 olduğundan sınırlayıcı bileşen H2'dir. 12 mol H2 tam (%100) harcansaydı 8 mol NH3 oluşurdu (kuramsal verim = 8 mol). Gerçekte 6 mol NH3 oluştuğuna göre Yüzde Verim = ({kesir:6|8}) × 100 = %75'tir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kütlece %60 saflıktaki 50 gram Zn metal örneği yeterince H2SO4 çözeltisiyle Zn(k) + H2SO4(suda) → ZnSO4(suda) + H2(g) denklemine göre tam verimle tepkimeye giriyor. Tepkime sonunda kaç mol H2 gazı elde edilir (Zn = 65 g/mol yerine hesap kolaylığı için 1 mol Zn = 60 g alınız)?",
+      "secenekler": [
+        "0,25 mol",
+        "0,40 mol",
+        "0,75 mol",
+        "0,50 mol",
+        "1,00 mol"
+      ],
+      "dogru": 3,
+      "aciklama": "50 gram örnekteki saf Zn kütlesi: 50 × ({kesir:60|100}) = 30 gram. Saf Zn mol sayısı: n = {kesir:30|60} = 0,50 mol Zn. Katsayılar 1:1 olduğundan 0,50 mol H2 gazı oluşur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir kimyasal tepkimede 'kuramsal (teorik) verim' ve 'gerçek (deneysel) verim' kavramlarıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+      "secenekler": [
+        "Kuramsal verim, sınırlayıcı bileşenin tamamen tükendiği varsayılarak hesaplanan ürün miktarıdır.",
+        "Gerçek verim, deney sonunda fiilen elde edilen ve ölçülen ürün miktarıdır.",
+        "Yan tepkimeler ve saflaştırma kayıpları gerçek verimin kuramsal verimden düşük olmasına yol açar.",
+        "Yüzde verim, gerçek verimin kuramsal verime bölünüp 100 ile çarpılmasıyla bulunur.",
+        "Bir tepkimede artan maddeye daha fazla ekleme yapılırsa kuramsal verim iki katına çıkar."
+      ],
+      "dogru": 4,
+      "aciklama": "Oluşacak maksimum ürün miktarını (kuramsal verimi) artan madde değil, sınırlayıcı bileşen belirler; sınırlayıcı bileşen bittiği için artan maddeden eklemek ürün miktarını değiştirmez."
+    },
+    {
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "metin": "Tam verimli bir kimyasal tepkimede giren maddelerden en az biri tamamen tükenir.",
+          "dogru": true,
+          "aciklama": "Tam verim (%100 verim), sınırlayıcı bileşenin tamamen bittiği tepkime demektir."
+        },
+        {
+          "metin": "Tepkimede tamamen tükenerek oluşacak ürün miktarını sınırlandıran maddeye 'artan bileşen' adı verilir.",
+          "dogru": false,
+          "aciklama": "Tamamen tükenen ve ürün miktarını belirleyen maddeye 'sınırlayıcı bileşen' adı verilir."
+        },
+        {
+          "metin": "Saf olmayan (impür) bir cevher örneğinin tepkimesinde denklem katsayılarıyla yapılan stokiyometrik hesaplama numunenin saf kısmını verir.",
+          "dogru": true,
+          "aciklama": "Yabancı maddeler (safsızlık) o tepkimeye girmediği için ürün miktarından bulunan tepken miktarı daima saf maddedir."
+        },
+        {
+          "metin": "Başlangıç mol sayılarının denklemdeki katsayılara oranı birbirine eşit olan tepkimelerde her iki tepken de biter ve artan madde kalmaz.",
+          "dogru": true,
+          "aciklama": "Stokiyometrik oranda alınan tam verimli tepkimeler artansız gerçekleşir."
+        },
+        {
+          "metin": "Karışım problemlerinde karışımı oluşturan tüm gazların mol sayıları tek bir ortak tepkime denkleminde toplanarak çözülür.",
+          "dogru": false,
+          "aciklama": "Karışımdaki her bileşenin formülü ve stokiyometrik katsayısı farklı olduğundan her bileşen için ayrı tepkime denklemi yazılır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "ciftler": [
+        [
+          "Sınırlayıcı bileşen",
+          "Tam verimli tepkimede tamamen tükenen ve ürün miktarını belirleyen tepken"
+        ],
+        [
+          "Tam verimli tepkime",
+          "Giren maddelerden en az birinin bittiği %100 verimli kimyasal tepkime"
+        ],
+        [
+          "Kuramsal (teorik) verim",
+          "Denkleştirilmiş tepkimeden stokiyometrik olarak hesaplanan maksimum ürün miktarı"
+        ],
+        [
+          "Gerçek (deneysel) verim",
+          "Laboratuvar veya sanayideki tepkime sonunda fiilen elde edilen ürün miktarı"
+        ],
+        [
+          "Saflık yüzdesi",
+          "Bir numunedeki tepkimeye giren saf madde kütlesinin toplam numune kütlesine yüzde oranı"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "cumleler": [
+        {
+          "metin": "Başlangıç miktarları verilen bir tepkimede 'başlangıç molü / katsayı' oranı en küçük olan tepkene ___ bileşen denir.",
+          "cevap": "sınırlayıcı"
+        },
+        {
+          "metin": "Bir tepkimenin yüzde verimi, gerçek verimin ___ verime bölünüp 100 ile çarpılmasıyla hesaplanır.",
+          "cevap": "kuramsal"
+        },
+        {
+          "metin": "Doğadaki cevherlerin içinde bulunan ve ana tepkimeye girmeyen yabancı maddelere ___ adı verilir.",
+          "cevap": "safsızlık"
+        },
+        {
+          "metin": "Bir tepkimede oluşan ürünün, izleyen ikinci bir tepkimede giren olarak harcandığı tepkime dizilerine ___ tepkimeler denir.",
+          "cevap": "ardışık"
+        },
+        {
+          "metin": "Tam verimli bir tepkimede tüm tepkenler aynı anda tükeniyor ve kapta hiç tepken kalmıyorsa tepkime ___ gerçekleşmiştir.",
+          "cevap": "artansız"
+        }
+      ],
+      "fazla": [
+        "izotop",
+        "katalizör"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Sanayide demir elde etmek için kullanılan Fe2O3(k) + 3CO(g) → 2Fe(k) + 3CO2(g) tepkimesinde saf olmayan bir Fe2O3 cevheri ile CO gazının tepkimesini; (1) saflık yüzdesi, (2) sınırlayıcı bileşen ve (3) yüzde verim kavramlarını sırasıyla uygulayarak üç aşamada açıklayınız.",
+      "ipuclari": [
+        "Birinci aşamada cevher numunesinin toplam kütlesinden saflık yüzdesini kullanarak tepkimeye girecek saf Fe2O3 mol sayısının nasıl bulunacağını belirtiniz.",
+        "İkinci aşamada saf Fe2O3 ile CO gazının mol/katsayı oranlarından sınırlayıcı bileşenin ve kuramsal Fe ürününün nasıl saptanacağını açıklayınız.",
+        "Üçüncü aşamada fırından fiilen alınan gerçek Fe kütlesi ile kuramsal Fe kütlesini oranlayarak yüzde verimin nasıl hesaplanacağını özetleyiniz."
+      ],
+      "cevap": "Birinci aşamada cevherdeki yabancı maddeler tepkimeye girmeyeceği için toplam cevher kütlesi saflık yüzdesiyle çarpılarak saf Fe2O3 kütlesi bulunur ve mol kütlesine (M_A) bölünerek saf Fe2O3 mol sayısına geçilir. İkinci aşamada eldeki saf Fe2O3'ün molü 1'e, CO gazının molü ise denklemdeki katsayısı olan 3'e bölünür; oranı küçük olan madde sınırlayıcı bileşen seçilir ve BDS tablosunda bu bileşenin tamamen tükendiği varsayılarak oluşması gereken 'kuramsal (teorik) Fe' miktarı hesaplanır. Üçüncü aşamada ise üretim sonunda elde edilen 'gerçek Fe' kütlesi, hesaplanan 'kuramsal Fe' kütlesine bölünüp 100 ile çarpılarak tepkimenin yüzde verimi belirlenir."
+    }
+  ],
+  "ozet": [
+    "{koyu:Sınırlayıcı Bileşen:} Tam verimli (%100) tepkimede tamamen biten ve ürün miktarını belirleyen maddedir; {koyu:{kesir:Başlangıç Molü|Katsayı}} oranı en küçük olan tepkendir.",
+    "{koyu:BDS Tablosu:} {koyu:Başlangıç — Değişim — Sonuç} tablosunda değişim satırı daima sınırlayıcı bileşene göre denklem katsayılarıyla orantılı doldurulur.",
+    "{koyu:Kuramsal ve Gerçek Verim:} Denklemden hesaplanan maksimum ürüne {koyu:kuramsal verim}, deneyde fiilen elde edilene {koyu:gerçek verim} denir ({koyu:Yüzde Verim = {kesir:Gerçek|Kuramsal} × 100}).",
+    "{koyu:Saflık Yüzdesi:} Cevher ve numunelerde tepkimeye yalnız saf kısım girer: {koyu:Saflık (%) = {kesir:Saf Madde Kütlesi|Toplam Numune Kütlesi} × 100}.",
+    "{koyu:Karışım ve Ardışık Tepkimeler:} Karışımlarda her bileşen için ayrı denklem yazılıp x-y değişkeni atanır; ardışık tepkimelerde ara ürünün mol sayısı bir sonraki denkleme aynen taşınır."
+  ]
+}
