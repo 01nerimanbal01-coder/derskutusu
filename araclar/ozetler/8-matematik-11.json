@@ -1,0 +1,257 @@
+{
+  "ad": "8-matematik-11",
+  "sinif": 8,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 11,
+  "tarih": "30 Kasım-4 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "Veri İşleme",
+  "konu": "Veri Analizi: Çizgi Grafiği, Sütun Grafiği ve Daire Grafiği Oluşturma, Yorumlama ve Grafikler Arasında Dönüşüm Yapma (M.8.4.1.1 & M.8.4.1.2)",
+  "ciktilar": [
+    "En fazla üç veri grubuna ait çizgi ve sütun grafiklerini okur, karşılaştırır ve yorumlar (M.8.4.1.1).",
+    "Verileri sütun, daire veya çizgi grafiği ile gösterir; daire grafiğinde merkez açıları ve yüzdeleri hesaplar (M.8.4.1.2).",
+    "Farklı grafik gösterimlerinin birbirlerine göre üstün ve zayıf yönlerini değerlendirerek grafikler arasında uygun dönüşümleri yapar (M.8.4.1.2)."
+  ],
+  "giris": "Günlük yaşamda karşılaştığımız ekonomi, meteoroloji, nüfus ve üretim gibi pek çok alandaki sayısal verileri tek bakışta anlamlandırmak için grafiklerden yararlanırız. Bu haftaki dersimizde Veri İşleme öğrenme alanına geçerek en fazla üç veri grubuna ait çizgi ve sütun grafiklerini yorumlamayı, daire grafiğinde merkez açı hesaplamayı ve grafik türleri arasında dönüşüm yapmayı öğreneceğiz.",
+  "bolumler": [
+    {
+      "baslik": "Çizgi ve Sütun Grafiklerini Yorumlama (M.8.4.1.1)",
+      "metin": [
+        "{koyu:Çizgi Grafiği:} Bir verinin {koyu:zamana bağlı sürekli değişimini} (artış, azalış veya sabit kalma eğilimini) göstermek için en uygun grafik türüdür. Yatay eksene genellikle zaman birimleri (gün, ay, yıl, saat), dikey eksene ise ölçülen değerler yerleştirilir. Örneğin iki veya üç farklı şehrin bir haftalık sıcaklık değişimi aynı çizgi grafiği üzerinde farklı renkli çizgilerle gösterilerek hangi gün sıcaklık farkının en fazla olduğu kolayca yorumlanır.",
+        "{koyu:Sütun Grafiği:} Farklı veri gruplarının miktarlarını birbirleriyle {koyu:karşılaştırmak (kıyaslamak)} için kullanılan en etkili grafik türüdür. Yatay veya dikey sütunlarla çizilebilir. En fazla üç veri grubuna ait sütun grafiklerinde (örneğin A, B ve C fabrikalarının 2024, 2025 ve 2026 yıllarındaki üretim miktarları) her veri grubu ayrı bir renkle temsil edilir ve grafik yanındaki açıklama kutusu (lejant) ile belirtilir.",
+        "Çoklu çizgi ve sütun grafiklerini yorumlarken yalnız tek bir sütuna değil; grupların toplamına, aritmetik ortalamasına ({koyu:Toplam Veri / Veri Sayısı}), en yüksek-en düşük değer farkına (açıklığa) ve gruplar arasındaki artış oranlarına dikkat edilir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">VERİ ANALİZİ: ÇİZGİ GRAFİĞİ VE SÜTUN GRAFİĞİ (M.8.4.1.1)</text>\n  <rect x=\"20\" y=\"42\" width=\"320\" height=\"202\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">Çizgi Grafiği: Zamana Bağlı Değişim</text>\n  <line x1=\"55\" y1=\"195\" x2=\"310\" y2=\"195\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"55\" y1=\"75\" x2=\"55\" y2=\"195\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <text x=\"40\" y=\"170\" text-anchor=\"end\" font-size=\"10\" fill=\"#334155\">10°</text>\n  <text x=\"40\" y=\"135\" text-anchor=\"end\" font-size=\"10\" fill=\"#334155\">20°</text>\n  <text x=\"40\" y=\"100\" text-anchor=\"end\" font-size=\"10\" fill=\"#334155\">30°</text>\n  <polyline points=\"80,165 145,130 210,95 275,120\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n  <polyline points=\"80,180 145,155 210,135 275,160\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-dasharray=\"5,3\"/>\n  <circle cx=\"80\" cy=\"165\" r=\"3.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"130\" r=\"3.5\" fill=\"#2563eb\"/>\n  <circle cx=\"210\" cy=\"95\" r=\"3.5\" fill=\"#2563eb\"/><circle cx=\"275\" cy=\"120\" r=\"3.5\" fill=\"#2563eb\"/>\n  <text x=\"80\" y=\"210\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Pzt</text>\n  <text x=\"145\" y=\"210\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Sal</text>\n  <text x=\"210\" y=\"210\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Çar</text>\n  <text x=\"275\" y=\"210\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Per</text>\n  <text x=\"180\" y=\"232\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">Sürekli verilerin artış/azalış eğilimini gösterir</text>\n\n  <rect x=\"360\" y=\"42\" width=\"320\" height=\"202\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">Sütun Grafiği: Gruplar Arası Karşılaştırma</text>\n  <line x1=\"395\" y1=\"195\" x2=\"655\" y2=\"195\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"395\" y1=\"75\" x2=\"395\" y2=\"195\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <rect x=\"415\" y=\"125\" width=\"22\" height=\"70\" fill=\"#3b82f6\"/>\n  <rect x=\"440\" y=\"105\" width=\"22\" height=\"90\" fill=\"#f97316\"/>\n  <rect x=\"495\" y=\"90\" width=\"22\" height=\"105\" fill=\"#3b82f6\"/>\n  <rect x=\"520\" y=\"115\" width=\"22\" height=\"80\" fill=\"#f97316\"/>\n  <rect x=\"575\" y=\"140\" width=\"22\" height=\"55\" fill=\"#3b82f6\"/>\n  <rect x=\"600\" y=\"95\" width=\"22\" height=\"100\" fill=\"#f97316\"/>\n  <text x=\"438\" y=\"210\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">8-A</text>\n  <text x=\"518\" y=\"210\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">8-B</text>\n  <text x=\"598\" y=\"210\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">8-C</text>\n  <text x=\"520\" y=\"232\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">En fazla 3 veri grubunu yan yana karşılaştırır</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Eksenlerin Başlangıç Değerine Dikkat!",
+          "metin": "Sütun veya çizgi grafiklerini okurken dikey eksenin sıfırdan (0) başlayıp başlamadığını ve artış miktarlarını mutlaka kontrol ediniz; aksi hâlde sütun boyları yanıltıcı olabilir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Aritmetik Ortalama Hesabı",
+          "metin": "Grafik sorularında 'bir haftalık ortalama satış' veya 'yıllık ortalama üretim' sorulduğunda grafikteki tüm değerler toplanır ve terim sayısına bölünür."
+        }
+      ]
+    },
+    {
+      "baslik": "Daire Grafiği Oluşturma ve Merkez Açı Hesaplaması",
+      "metin": [
+        "{koyu:Daire Grafiği:} Bir bütünün parçaları arasındaki oranı veya her bir veri grubunun {koyu:bütün içindeki payını (yüzdesini)} göstermek için kullanılır. Dairenin tamamı {koyu:360°} merkez açıya (veya yüzde olarak {koyu:%100}'e) karşılık gelir.",
+        "Bir veri grubuna ait daire diliminin {koyu:merkez açısını} bulmak için doğru orantı kurulur: {koyu:Merkez Açı = {kesir:Grubun Veri Sayısı|Toplam Veri Sayısı} × 360°}. Örneğin bir bahçedeki toplam 120 ağacın 30 tanesi kiraz ağacı ise kiraz diliminin merkez açısı {kesir:30|120} × 360° = {kesir:1|4} × 360° = {koyu:90°} olur.",
+        "Daire grafiklerinde sık karşılaşılan özel açılar ve bütün içindeki oranları işlemleri büyük ölçüde hızlandırır: {koyu:180°} bütünün yarısıdır ({kesir:1|2} = %50), {koyu:120°} bütünün üçte biridir ({kesir:1|3}), {koyu:90°} bütünün çeyreğidir ({kesir:1|4} = %25), {koyu:72°} bütünün beşte biridir ({kesir:1|5} = %20), {koyu:60°} bütünün altıda biridir ({kesir:1|6}) ve {koyu:36°} bütünün onda biridir ({kesir:1|10} = %10)."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">DAİRE GRAFİĞİ VE MERKEZ AÇI HESAPLAMASI (360°)</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#a16207\">Parça - Bütün İlişkisi (Toplam = 360°)</text>\n  <circle cx=\"115\" cy=\"148\" r=\"62\" fill=\"#fde047\" stroke=\"#ca8a04\" stroke-width=\"2\"/>\n  <path d=\"M 115 148 L 115 86 A 62 62 0 0 1 177 148 Z\" fill=\"#60a5fa\" stroke=\"#1d4ed8\" stroke-width=\"1.5\"/>\n  <path d=\"M 115 148 L 177 148 A 62 62 0 0 1 61 179 Z\" fill=\"#4ade80\" stroke=\"#15803d\" stroke-width=\"1.5\"/>\n  <text x=\"142\" y=\"128\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e3a8a\">90°</text>\n  <text x=\"130\" y=\"175\" font-size=\"10\" font-weight=\"bold\" fill=\"#14532d\">120°</text>\n  <text x=\"78\" y=\"135\" font-size=\"10\" font-weight=\"bold\" fill=\"#854d0e\">150°</text>\n  <text x=\"245\" y=\"110\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">90° = Bütünün 1/4'ü (%25)</text>\n  <text x=\"245\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">120° = Bütünün 1/3'ü</text>\n  <text x=\"245\" y=\"166\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#854d0e\">180° = Bütünün 1/2'si (%50)</text>\n  <text x=\"245\" y=\"194\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#713f12\">36° = Bütünün 1/10'u (%10)</text>\n\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#faf5ff\" stroke=\"#a855f7\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#7e22ce\">Merkez Açı ve Orantı Bağıntısı</text>\n  <text x=\"520\" y=\"98\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">Merkez Açı = (Grubun Verisi / Toplam Veri) × 360°</text>\n  <text x=\"520\" y=\"126\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">Örnek: Toplam 72 meyvenin 18'i elma ise:</text>\n  <text x=\"520\" y=\"148\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#581c87\">72 meyvede 18 elma ➔ 360° de x°</text>\n  <text x=\"520\" y=\"172\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#581c87\">x = (18 / 72) × 360° = (1 / 4) × 360° = 90°</text>\n  <text x=\"520\" y=\"200\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">Yüzde - Açı Dönüşümü: %100 ➔ 360° (%10 ➔ 36°)</text>\n  <text x=\"520\" y=\"222\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">Bir verinin bütün içindeki payını en iyi gösterir</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Daire Grafiği Gerçek Sayıyı Değil Oranı Gösterir!",
+          "metin": "Üzerinde yalnız merkez açıları verilen bir daire grafiğinden, toplam veri sayısı bilinmeden grupların gerçek eleman sayısı bulunamaz; yalnız birbirlerine oranı bulunur."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Açıların EBOB'u ile Kat (k) Kullanımı",
+          "metin": "Dilim açıları 60°, 120° ve 180° olan üç grup varsa, açıların EBOB'u 60° olduğu için gruplara doğrudan {koyu:k, 2k ve 3k} (toplam 6k) diyerek denklem kurabilirsiniz."
+        }
+      ]
+    },
+    {
+      "baslik": "Grafikler Arasında Dönüşüm Yapma ve Üstün-Zayıf Yönler (M.8.4.1.2)",
+      "metin": [
+        "Aynı veri grubu amaca göre farklı grafik türlerine dönüştürülebilir. {koyu:Sütun veya çizgi grafiğinden daire grafiğine geçiş} yapılırken önce tüm sütunlardaki veriler toplanarak bütün (toplam veri) bulunur; ardından her bir sütunun toplam içindeki payı 360° ile orantılanarak merkez açıları hesaplanır.",
+        "{koyu:Daire grafiğinden sütun grafiğine geçiş} yapılırken ise toplam miktar (veya dilimlerden birinin gerçek değeri) kullanılarak her merkez açıya düşen sayısal değer hesaplanır ve sütun yükseklikleri bu değerlere göre çizilir. Yüzde (%) olarak verilen bir sütun grafiği daire grafiğine çevrilirken {koyu:%100 = 360°} (yani her {koyu:%1 = 3,6°} veya {koyu:%5 = 18°}) bağıntısı kullanılır.",
+        "Her grafiğin üstün ve zayıf yönü vardır: {koyu:Çizgi grafiği} zaman içindeki artışı/azalışı mükemmel gösterir ancak bütün içindeki oranı doğrudan vermez. {koyu:Sütun grafiği} bağımsız kategorileri ve çoklu grupları net biçimde karşılaştırır ancak parça-bütün yüzdesini görselleştirmede zayıftır. {koyu:Daire grafiği} ise bütün içindeki payı en iyi gösterir fakat veri sayısı çok fazla olduğunda veya zamana bağlı değişim incelendiğinde kullanışsızdır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">GRAFİK TÜRLERİNİN ÜSTÜN YÖNLERİ VE DÖNÜŞÜMLER (M.8.4.1.2)</text>\n  <rect x=\"20\" y=\"45\" width=\"210\" height=\"195\" rx=\"8\" fill=\"#fff1f2\" stroke=\"#f43f5e\" stroke-width=\"1.5\"/>\n  <text x=\"125\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#be123c\">1. Çizgi Grafiği Seçimi</text>\n  <text x=\"125\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#9f1239\">Ne Zaman Uygun?</text>\n  <text x=\"125\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">• Hava sıcaklığı değişimi</text>\n  <text x=\"125\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">• Döviz / altın kuru takibi</text>\n  <text x=\"125\" y=\"158\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">• Yıllara göre nüfus artışı</text>\n  <text x=\"125\" y=\"178\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">• Fidanın aylara göre boyu</text>\n  <text x=\"125\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#9f1239\">Üstün Yönü:</text>\n  <text x=\"125\" y=\"224\" text-anchor=\"middle\" font-size=\"10\" fill=\"#881337\">Zaman içindeki sürekliliği gösterir</text>\n\n  <rect x=\"245\" y=\"45\" width=\"210\" height=\"195\" rx=\"8\" fill=\"#ecfeff\" stroke=\"#06b6d4\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0e7490\">2. Sütun Grafiği Seçimi</text>\n  <text x=\"350\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#155e75\">Ne Zaman Uygun?</text>\n  <text x=\"350\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" fill=\"#164e63\">• Sınıfların net ortalamaları</text>\n  <text x=\"350\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" fill=\"#164e63\">• Bölgelerin ürün miktarları</text>\n  <text x=\"350\" y=\"158\" text-anchor=\"middle\" font-size=\"11\" fill=\"#164e63\">• Aylara göre kız/erkek sayısı</text>\n  <text x=\"350\" y=\"178\" text-anchor=\"middle\" font-size=\"11\" fill=\"#164e63\">• Mağazaların satış adetleri</text>\n  <text x=\"350\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#155e75\">Üstün Yönü:</text>\n  <text x=\"350\" y=\"224\" text-anchor=\"middle\" font-size=\"10\" fill=\"#164e63\">Kesikli grupları kolayca kıyaslar</text>\n\n  <rect x=\"470\" y=\"45\" width=\"210\" height=\"195\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <text x=\"575\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">3. Daire Grafiği Seçimi</text>\n  <text x=\"575\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">Ne Zaman Uygun?</text>\n  <text x=\"575\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Seçim oy oranları dağılımı</text>\n  <text x=\"575\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Aile bütçesi harcama payı</text>\n  <text x=\"575\" y=\"158\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Üretimin ürünlere dağılımı</text>\n  <text x=\"575\" y=\"178\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Günün saatlerinin paylaşımı</text>\n  <text x=\"575\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">Üstün Yönü:</text>\n  <text x=\"575\" y=\"224\" text-anchor=\"middle\" font-size=\"10\" fill=\"#14532d\">Bütün içindeki oranı/payı gösterir</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Hangi Durumda Hangi Grafik?",
+          "metin": "Zamana bağlı değişim (sıcaklık, boy uzaması, altın kuru) ➔ {koyu:Çizgi}; Gruplar arası miktar kıyaslaması ➔ {koyu:Sütun}; Bir bütünün parçalarının oransal dağılımı ➔ {koyu:Daire Grafiği}."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Yüzdeden Merkez Açıya Hızlı Geçiş",
+          "metin": "%100 tamamı 360° olduğundan, verilen yüzdeyi {koyu:3,6 ile çarparak} merkez açıyı doğrudan bulabilirsiniz: %15 × 3,6 = 54°; %25 × 3,6 = 90°; %40 × 3,6 = 144°."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir okuldaki 8. sınıf şubelerinde bulunan öğrenci sayıları şöyledir: 8-A sınıfı 24 kişi, 8-B sınıfı 30 kişi ve 8-C sınıfı 18 kişi. Bu veriler daire grafiği ile gösterildiğinde her bir şubeye ait daire diliminin merkez açısı kaç derece olur?",
+      "cevap": "Toplam öğrenci sayısı = 24 + 30 + 18 = 72 kişidir. 72 kişiye 360° düşerse 1 kişiye 360° / 72 = 5° düşer. Buna göre 8-A: 24 × 5° = 120°, 8-B: 30 × 5° = 150° ve 8-C: 18 × 5° = 90° olur."
+    },
+    {
+      "soru": "Bir çiftçinin ürettiği tahılların dağılımını gösteren daire grafiğinde buğday diliminin merkez açısı 150°, arpa diliminin merkez açısı 120° ve geri kalanı mısırdır. Çiftçi toplam 54 ton mısır ürettiğine göre kaç ton buğday üretmiştir?",
+      "cevap": "Dairenin tamamı 360° olduğundan mısırın merkez açısı = 360° - (150° + 120°) = 90° olur. 90° merkez açıya 54 ton düşüyorsa (her 30°'ye 18 ton düşer), 150° olan buğday dilimine 5 × 18 = 90 ton düşer."
+    },
+    {
+      "soru": "Bir mağazanın dört günde sattığı tişört sayıları çizgi grafiğinde Pazartesi 35, Salı 42, Çarşamba 28 ve Perşembe 55 olarak verilmiştir. Bu dört günün günlük ortalama satış adedi kaçtır?",
+      "cevap": "Toplam satış = 35 + 42 + 28 + 55 = 160 adettir. Günlük ortalama = 160 / 4 = 40 adet tişörttür."
+    },
+    {
+      "soru": "Aylık geliri 40.000 TL olan bir ailenin harcamaları sütun grafiğinde kira %35, mutfak %25, eğitim %20 ve diğer giderler %20 olarak gösterilmiştir. Bu veriler daire grafiğine aktarıldığında kira giderinin merkez açısı kaç derece olur?",
+      "cevap": "%100'ü 360° ise %35'lik kira giderinin merkez açısı = 35 × 3,6° = 126° olur."
+    },
+    {
+      "soru": "Ankara ve Erzurum illerinin beş günlük gece-gündüz sıcaklık değişimlerini incelemek isteyen bir meteorolog neden daire grafiği yerine çizgi grafiğini tercih etmelidir?",
+      "cevap": "Çünkü sıcaklık verileri zamana bağlı sürekli değişim gösterir; günlere göre artış ve azalış eğilimini en açık biçimde gösteren grafik çizgi grafiğidir. Daire grafiği ise zaman içindeki değişimi gösteremez."
+    },
+    {
+      "soru": "Bir sütun grafiğinde K ürününden 40 adet, L ürününden 60 adet, M ürününden 80 adet üretildiği görülmektedir. K ürününden 20 adet daha üretilirse yeni oluşturulacak daire grafiğinde M ürününün merkez açısı nasıl değişir?",
+      "cevap": "Başlangıçta toplam 40 + 60 + 80 = 180 ürün vardı ve M'nin açısı (80 / 180) × 360° = 160° idi. K'den 20 adet daha üretilince toplam 200 ürün olur; M'nin yeni açısı (80 / 200) × 360° = 144° olur. Yani M'nin açısı 16° azalır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir kütüphanedeki 180 eserin 60 tanesi roman, 45 tanesi hikâye, 30 tanesi şiir ve geri kalanı bilim türünde eserlerdir. Bu veriler bir daire grafiği ile gösterildiğinde bilim türündeki eserlere ait daire diliminin merkez açısı kaç derece olur?",
+      "secenekler": [
+        "90",
+        "75",
+        "60",
+        "120"
+      ],
+      "dogru": 0,
+      "aciklama": "Bilim eseri sayısı = 180 - (60 + 45 + 30) = 45 adettir. Toplam 180 eserde 45 adet dörtte bir ({kesir:45|180} = {kesir:1|4}) olduğundan merkez açısı 360° / 4 = 90° olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki veri gruplarından hangisinin değişimini göstermek için çizgi grafiği kullanmak diğerlerine göre daha uygundur?",
+      "secenekler": [
+        "Bir sınıftaki öğrencilerin tuttukları futbol takımlarının dağılımı",
+        "Bir hastanın 24 saat boyunca ikişer saat arayla ölçülen vücut sıcaklığı",
+        "Bir manavdaki toplam meyvelerin kütlece yüzde payları",
+        "Bir ankete katılan kişilerin en sevdikleri müzik türleri"
+      ],
+      "dogru": 1,
+      "aciklama": "Hastanın saatlere göre vücut sıcaklığı zamana bağlı sürekli değişen bir veri olduğundan çizgi grafiği ile gösterilmesi en uygundur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir daire grafiğinde A, B ve C ürünlerinin satış miktarlarına ait merkez açılar sırasıyla 72°, 108° ve 180° olarak verilmiştir. Bu ürünler bir sütun grafiği ile gösterildiğinde B ürününün satış adedi 36 ise toplam satılan ürün sayısı kaçtır?",
+      "secenekler": [
+        "90",
+        "108",
+        "120",
+        "144"
+      ],
+      "dogru": 2,
+      "aciklama": "108° merkez açıya 36 ürün düşmektedir (açının üçte biri kadar ürün). Dairenin tamamı 360° olduğuna göre toplam ürün sayısı 360 / 3 = 120 adettir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir sütun grafiğinde bir öğrencinin dört günde çözdüğü soru sayıları Pazartesi 80, Salı 100, Çarşamba 60 ve Perşembe 120 olarak verilmiştir. Bu veriler daire grafiğine dönüştürüldüğünde hangi güne ait daire diliminin merkez açısı 100° olur?",
+      "secenekler": [
+        "Pazartesi",
+        "Çarşamba",
+        "Perşembe",
+        "Salı"
+      ],
+      "dogru": 3,
+      "aciklama": "Toplam çözülen soru sayısı = 80 + 100 + 60 + 120 = 360 sorudur. Toplam soru sayısı 360 olduğu için her 1 soruya 1° merkez açı düşer; dolayısıyla 100 soru çözülen Salı gününün merkez açısı 100° olur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Daire grafiğinde tüm veri gruplarına ait merkez açıların toplamı 360 derecedir.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir bütünün %20'sini temsil eden veri grubunun daire grafiğindeki merkez açısı 60 derecedir.",
+          "dogru": false
+        },
+        {
+          "metin": "Sütun grafiği, birden fazla veri grubunun farklı kategorilerdeki değerlerini karşılaştırmak için oldukça elverişlidir.",
+          "dogru": true
+        },
+        {
+          "metin": "Merkez açıları bilinen bir daire grafiğinde toplam veri sayısı verilmezse dahi her grubun gerçek eleman sayısı hesaplanabilir.",
+          "dogru": false
+        },
+        {
+          "metin": "Zamana bağlı sürekli artış ve azalış eğilimlerini incelemek için en uygun gösterim çizgi grafiğidir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Bir daire grafiğinde verilen yüzdelik payları karşılık gelen merkez açılarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "%50 (Bütünün yarısı)",
+          "180°"
+        ],
+        [
+          "%25 (Bütünün çeyreği)",
+          "90°"
+        ],
+        [
+          "%20 (Bütünün beşte biri)",
+          "72°"
+        ],
+        [
+          "%10 (Bütünün onda biri)",
+          "36°"
+        ],
+        [
+          "%15 (Bütünün yirmide üçü)",
+          "54°"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir verinin zamana bağlı sürekli değişimini göstermek için en uygun grafik türü ___ grafiğidir.",
+          "cevap": "çizgi"
+        },
+        {
+          "metin": "Bir verinin bütün içindeki oranını veya yüzdesini göstermek için ___ grafiği tercih edilir.",
+          "cevap": "daire"
+        },
+        {
+          "metin": "Farklı veri gruplarının miktarlarını birbirleriyle kıyaslamak için ___ grafiği kullanılır.",
+          "cevap": "sütun"
+        },
+        {
+          "metin": "Daire grafiğinde bütünün üçte birini ({kesir:1|3}) temsil eden dilimin merkez açısı ___ derecedir.",
+          "cevap": "120"
+        },
+        {
+          "metin": "Bir veri grubundaki tüm sayıların toplamının veri adedine bölünmesiyle ___ ortalama bulunur.",
+          "cevap": "aritmetik"
+        }
+      ],
+      "fazla": [
+        "çetele",
+        "150"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir sütun grafiğinde verilen verileri daire grafiğine dönüştürürken izlenmesi gereken matematiksel adımları örnek üzerinden açıklayınız.",
+      "ipuclari": [
+        "Önce sütun grafiğindeki tüm kategorilerin sayısal değerlerini toplayarak 'Toplam Veri' miktarını bulunuz.",
+        "Toplam veri miktarını dairenin tam açısı olan 360° ile eşleştirerek doğru orantı kurunuz.",
+        "Her bir kategorinin sayısını toplam veriye bölüp 360° ile çarparak dilimlerin merkez açılarını hesaplayınız."
+      ],
+      "cevap": "Sütun grafiğini daire grafiğine dönüştürmek için üç adım izlenir: 1) Tüm sütunların değerleri toplanır (örneğin A=20, B=30, C=40 ise Toplam = 90). 2) Toplam veriye 360° karşılık geldiği için 1 birime düşen açı bulunur (360° / 90 = 4°). 3) Her sütunun değeri bu katsayı ile çarpılarak merkez açıları hesaplanır (A: 20×4°=80°, B: 30×4°=120°, C: 40×4°=160°) ve toplamlarının 360° olduğu kontrol edilerek daire dilimleri çizilir."
+    }
+  ],
+  "ozet": [
+    "{koyu:Çizgi Grafiği:} Verilerin zaman içindeki sürekli değişimini (artış, azalış, sabit kalma) göstermek için en uygun grafik türüdür.",
+    "{koyu:Sütun Grafiği:} En fazla üç veri grubunun farklı kategorilerdeki değerlerini yan yana karşılaştırmak (kıyaslamak) için kullanılır.",
+    "{koyu:Daire Grafiği:} Bir bütünün parçalarının bütün içindeki oranını gösterir; merkez açılar toplamı {koyu:360°}, yüzdeler toplamı {koyu:%100}'dür.",
+    "{koyu:Merkez Açı Formülü:} Bir dilimin merkez açısı {koyu:{kesir:Grubun Verisi|Toplam Veri} × 360°} bağıntısıyla ve doğru orantıyla hesaplanır.",
+    "{koyu:Grafik Dönüşümleri:} Sütun, çizgi ve daire grafikleri arasında dönüşüm yapılırken toplam veri sayısı ile 360° (veya %100) arasındaki orantı korunur."
+  ]
+}

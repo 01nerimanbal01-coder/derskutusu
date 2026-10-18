@@ -1,0 +1,263 @@
+{
+  "ad": "12-kimya-11",
+  "sinif": 12,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 11,
+  "tarih": "30 Kasım-4 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "1. ÜNİTE: KİMYA VE ELEKTRİK",
+  "konu": "Korozyon: Korozyonun Oluşum Mekanizması, Korozyondan Korunma Yöntemleri (Boyama, Galvanize Etme, Katodik Koruma / Kurban Elektrot) ve 1. Ünite Değerlendirmesi (12.1.6)",
+  "ciktilar": [
+    "Korozyon (metalik aşınma) kavramını ve demirin paslanma sürecini elektrokimyasal redoks tepkimeleriyle açıklar.",
+    "Korozyonu önleme yöntemlerini (boyama, galvanize etme, elektrolizle kaplama, katodik koruma / kurban elektrot) metallerin aktiflik sırasıyla ilişkilendirerek analiz eder.",
+    "Kurban elektrotun endüstriyel kullanım alanlarını ve Kimya ve Elektrik ünitesinin temel elektrokimyasal ilkelerini değerlendirir."
+  ],
+  "giris": "Köprülerden gemi gövdelerine, yer altı doğal gaz boru hatlarından otomobil parçalarına kadar kullandığımız metal yapıların atmosferdeki oksijen ve nem etkisiyle zamanla aşınmasına korozyon adı verilir. Her yıl dünya ekonomisinde milyarlarca dolarlık malzeme ve enerji kaybına yol açan korozyonun elektrokimyasal mekanizmasını anlamak ve kurban elektrot gibi katodik koruma yöntemleriyle metalleri korumak modern kimya mühendisliğinin en önemli uygulama alanlarından biridir.",
+  "bolumler": [
+    {
+      "baslik": "Korozyon Kavramı ve Oluşum Mekanizması",
+      "metin": [
+        "Metallerin veya alaşımların bulundukları ortamdaki oksijen, su (nem), asit veya tuz çözeltileri gibi kimyasal maddelerle kendiliğinden (istemli) {koyu:yükseltgenme-indirgenme (redoks)} tepkimesine girerek metalik özelliklerini kaybetmesi ve aşınması olayına {koyu:korozyon} denir. Gümüş eşyaların zamanla kararması, bakır kapların yüzeyinde yeşil renkli bazik bakır karbonat tabakası oluşması ve {koyu:demirin paslanması} günlük hayattaki en yaygın korozyon örnekleridir.",
+        "Korozyon elektrokimyasal bir pil (galvanik hücre) gibi çalışır. Örneğin nemli havada demirin paslanması sırasında demir yüzeyi {koyu:anot} görevi görerek yükseltgenir ({koyu:Fe(k) → {us:Fe|2+}(suda) + {us:2e|-}}). Su damlacığı içinde çözünmüş olan havanın oksijeni ise {koyu:katot} bölgesinde indirgenir ({koyu:{kesir:1|2}O₂(g) + H₂O(s) + {us:2e|-} → {us:2OH|-}(suda)}). Oluşan {koyu:{us:Fe|2+}} ve {koyu:{us:OH|-}} iyonları birleşip havadaki oksijenle tekrar yükseltgenerek kızıl-kahverengi gözenekli {koyu:pas tabakasını (Fe₂O₃ · nH₂O)} oluşturur.",
+        "Bir metalin elektron verme eğilimi ({koyu:aktifliği}) ne kadar büyükse korozyona uğrama hızı da o kadar yüksektir; altın (Au) ve platin (Pt) gibi soy metaller ise doğal koşullarda korozyona uğramaz. Ayrıca ortamdaki {koyu:nem oranı, sıcaklık, asitlik ve suda çözünmüş tuz (elektrolit) miktarı} arttıkça iyon iletkenliği arttığı için korozyon çok daha hızlı gerçekleşir."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Alüminyum (Al), krom (Cr) ve çinko (Zn) aktif metaller olmalarına rağmen havadaki oksijenle tepkimeye girdiklerinde yüzeylerinde gözeneksiz ve sağlam bir oksit tabakası (Al₂O₃, Cr₂O₃) oluşturarak alt katmanları korozyondan korurlar (pasifleşme). Demirin pas tabakası ise gözenekli ve kırılgan olduğu için demiri koruyamaz."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Kuru havada (nem yoksa) veya havası (oksijeni) tamamen alınmış saf suda demir paslanmaz; paslanma için hem O₂ hem de H₂O (nem) bir arada bulunmalıdır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">KOROZYON (METALİK AŞINMA) VE DEMİRİN PASLANMA MEKANİZMASI</text>\n  <rect x=\"25\" y=\"46\" width=\"315\" height=\"196\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"70\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#991b1b\">Korozyonun Elektrokimyasal Temeli</text>\n  <text x=\"42\" y=\"96\" font-size=\"11.5\" fill=\"#7f1d1d\">• Metallerin ve alaşımların çevredeki <tspan font-weight=\"bold\">oksijen, nem (su),</tspan></text>\n  <text x=\"50\" y=\"112\" font-size=\"11.5\" fill=\"#7f1d1d\"><tspan font-weight=\"bold\">asit veya tuzlu çözeltilerle</tspan> kendiliğinden</text>\n  <text x=\"50\" y=\"128\" font-size=\"11.5\" fill=\"#7f1d1d\"><tspan font-weight=\"bold\">yükseltgenerek (elektron kaybederek)</tspan> aşınmasıdır.</text>\n  <text x=\"42\" y=\"152\" font-size=\"11.5\" fill=\"#7f1d1d\">• <tspan font-weight=\"bold\">Gümüşün</tspan> kararması, <tspan font-weight=\"bold\">bakırın</tspan> yeşil tabaka bağlaması,</text>\n  <text x=\"50\" y=\"168\" font-size=\"11.5\" fill=\"#7f1d1d\"><tspan font-weight=\"bold\">demirin paslanması</tspan> korozyon örnekleridir.</text>\n  <rect x=\"42\" y=\"184\" width=\"280\" height=\"44\" rx=\"6\" fill=\"#ffffff\" stroke=\"#f87171\"/>\n  <text x=\"182\" y=\"203\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Aktifliği yüksek olan metaller</text>\n  <text x=\"182\" y=\"219\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#7f1d1d\">korozyona daha hızlı ve kolay uğrar!</text>\n  <rect x=\"360\" y=\"46\" width=\"315\" height=\"196\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"517\" y=\"70\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#92400e\">Demirin Paslanma Tepkimeleri</text>\n  <rect x=\"378\" y=\"84\" width=\"280\" height=\"40\" rx=\"6\" fill=\"#ffffff\" stroke=\"#f59e0b\"/>\n  <text x=\"388\" y=\"101\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">Anot (Yükseltgenme):</text>\n  <text x=\"388\" y=\"117\" font-size=\"11\" fill=\"#78350f\">Fe(k) → Fe²⁺(suda) + 2e⁻</text>\n  <rect x=\"378\" y=\"132\" width=\"280\" height=\"40\" rx=\"6\" fill=\"#ffffff\" stroke=\"#f59e0b\"/>\n  <text x=\"388\" y=\"149\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">Katot (İndirgenme):</text>\n  <text x=\"388\" y=\"165\" font-size=\"11\" fill=\"#78350f\">1/2 O₂(g) + H₂O(s) + 2e⁻ → 2OH⁻(suda)</text>\n  <rect x=\"378\" y=\"180\" width=\"280\" height=\"48\" rx=\"6\" fill=\"#ffffff\" stroke=\"#f59e0b\"/>\n  <text x=\"388\" y=\"198\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">Pas Oluşumu (Fe₂O₃ · nH₂O):</text>\n  <text x=\"388\" y=\"216\" font-size=\"10.5\" fill=\"#78350f\">Nemli hava + tuzlu su paslanmayı çok hızlandırır.</text>\n</svg>"
+    },
+    {
+      "baslik": "Korozyondan Korunma Yöntemleri ve Kurban Elektrot",
+      "metin": [
+        "Metalleri korozyondan korumak için uygulanan ilk yaklaşım, metalin hava ve nemle temasını kesmektir. Bu amaçla metal yüzeylerin {koyu:boyanması}, plastik veya mine ile kaplanması, makine parçalarının yağlanması ya da metale korozyona dayanıklı başka metaller katılarak {koyu:paslanmaz çelik gibi alaşımlar} elde edilmesi yaygın olarak kullanılır.",
+        "İkinci yaklaşım, metal yüzeyinin ince ve koruyucu başka bir metal tabakasıyla kaplanmasıdır. Demirin çinko (Zn) tabakasıyla kaplanması işlemine {koyu:galvanize etme} denir; çinko hem yüzeyde koruyucu oksit oluşturur hem de demirden daha aktif olduğu için çizilme durumunda bile demiri korur. Elektroliz yöntemiyle metallerin krom, nikel veya kalay ile kaplanması da korozyonu önler.",
+        "Üçüncü ve en etkili elektrokimyasal yöntem ise {koyu:katodik koruma (kurban elektrot)} yöntemidir. Bu yöntemde korunmak istenen metale (örneğin demire), aktifliği (yükseltgenme potansiyeli) ondan {koyu:daha yüksek olan bir metal} (magnezyum {koyu:Mg}, alüminyum {koyu:Al} veya çinko {koyu:Zn}) doğrudan veya iletken bir telle bağlanır. Bağlanan aktif metal {koyu:anot (kurban elektrot)} olarak kendiliğinden yükseltgenip aşınırken, korunan demir {koyu:katot} konumuna geçer ve elektron alarak korozyondan kurtulur."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Bir metali koruyacak kurban elektrot seçilirken, seçilen metalin aktifliğinin (standart yükseltgenme potansiyelinin) korunacak metalden mutlaka DAHA BÜYÜK olması gerekir!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Kurban elektrot zamanla yükseltgenerek tükendiği (kendini feda ettiği) için belirli aralıklarla kontrol edilip yenisiyle değiştirilir; bu işlem ana yapıyı değiştirmekten çok daha ekonomiktir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">KOROZYONDAN KORUNMA YÖNTEMLERİ VE KURBAN ELEKTROT</text>\n  <rect x=\"25\" y=\"46\" width=\"295\" height=\"196\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"172\" y=\"70\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\">Fiziksel ve Kimyasal Yöntemler</text>\n  <text x=\"40\" y=\"96\" font-size=\"11.5\" fill=\"#1e3a8a\">1. <tspan font-weight=\"bold\">Boyama ve Yağlama:</tspan> Metalin hava (O₂)</text>\n  <text x=\"52\" y=\"112\" font-size=\"11\" fill=\"#1e3a8a\">ve su (nem) ile temasını keser.</text>\n  <text x=\"40\" y=\"136\" font-size=\"11.5\" fill=\"#1e3a8a\">2. <tspan font-weight=\"bold\">Galvanize Etme:</tspan> Demirin erimiş veya</text>\n  <text x=\"52\" y=\"152\" font-size=\"11\" fill=\"#1e3a8a\">elektrolitik <tspan font-weight=\"bold\">çinko (Zn)</tspan> tabakasıyla kaplanması.</text>\n  <text x=\"40\" y=\"176\" font-size=\"11.5\" fill=\"#1e3a8a\">3. <tspan font-weight=\"bold\">Elektrolizle Metal Kaplama:</tspan> Krom, nikel,</text>\n  <text x=\"52\" y=\"192\" font-size=\"11\" fill=\"#1e3a8a\">kalay veya altın ile yüzeyin kaplanması.</text>\n  <text x=\"40\" y=\"216\" font-size=\"11.5\" fill=\"#1e3a8a\">4. <tspan font-weight=\"bold\">Paslanmaz Çelik (Alaşım):</tspan> Fe + Cr + Ni.</text>\n  <rect x=\"340\" y=\"46\" width=\"335\" height=\"196\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"507\" y=\"70\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#166534\">Katodik Koruma (Kurban Elektrot İlkesi)</text>\n  <rect x=\"360\" y=\"88\" width=\"130\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"425\" y=\"110\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\">KURBAN ELEKTROT</text>\n  <text x=\"425\" y=\"128\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">ANOT (Mg, Zn, Al)</text>\n  <rect x=\"530\" y=\"88\" width=\"125\" height=\"54\" rx=\"8\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"592\" y=\"110\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">KORUNAN METAL</text>\n  <text x=\"592\" y=\"128\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">KATOT (Demir / Fe)</text>\n  <line x1=\"490\" y1=\"115\" x2=\"530\" y2=\"115\" stroke=\"#dc2626\" stroke-width=\"3\"/>\n  <text x=\"510\" y=\"106\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">e⁻ →</text>\n  <text x=\"358\" y=\"164\" font-size=\"11\" fill=\"#14532d\">• Korunacak metale (Fe), aktifliği ondan <tspan font-weight=\"bold\">daha yüksek</tspan></text>\n  <text x=\"366\" y=\"180\" font-size=\"11\" fill=\"#14532d\">bir metal (Mg, Zn, Al) bağlanır (Aktiflik: Mg &gt; Al &gt; Zn &gt; Fe).</text>\n  <text x=\"358\" y=\"202\" font-size=\"11\" fill=\"#14532d\">• Aktif metal <tspan font-weight=\"bold\">anot</tspan> olup yükseltgenerek aşınır; korunan</text>\n  <text x=\"366\" y=\"218\" font-size=\"11\" fill=\"#14532d\">demir ise <tspan font-weight=\"bold\">katot</tspan> yapılarak paslanmaktan kurtulur.</text>\n</svg>"
+    },
+    {
+      "baslik": "Kurban Elektrotun Kullanım Alanları ve 1. Ünite Değerlendirmesi",
+      "metin": [
+        "Katodik koruma (kurban elektrot) yöntemi; boyama veya kaplamanın tek başına yeterli olmadığı ıslak ve tuzlu ortamlarda vazgeçilmezdir. {koyu:Gemi ve yat gövdeleri}, deniz içindeki {koyu:iskele ve petrol platformu ayakları}, yer altına döşenen {koyu:doğal gaz, petrol ve içme suyu çelik boru hatları}, yer altı yakıt tankları, LPG tankları ve evlerdeki {koyu:su ısıtıcı (termosifon/boyler) kazanları} Mg, Al veya Zn kurban elektrotlarla korunur.",
+        "Kimya ve Elektrik ünitesi bütüncül olarak değerlendirildiğinde; bütün elektrokimyasal hücrelerde (hem galvanik pilde hem elektrolizde) {koyu:anotta daima yükseltgenme}, {koyu:katotta ise daima indirgenme} gerçekleşir (KİMYA kodlaması).",
+        "Galvanik hücrelerde istemli redoks tepkimesinden elektrik üretilirken ({koyu:E°_pil > 0}), elektroliz hücrelerinde dışarıdan elektrik enerjisi verilerek istemsiz tepkimeler gerçekleştirilir ({koyu:m = {kesir:I · t · M_A|96500 · z}}). Korozyon ise istenmeyen doğal bir galvanik hücre olayı olup katodik koruma ile bu elektrokimyasal süreç tersine çevrilerek kontrol altına alınır."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Kalay (Sn) ile kaplı bir demir konserve kutusu çizildiğinde, demir kalaydan daha aktif (Fe > Sn) olduğu için demir anot olur ve çok daha hızlı paslanır; çinko (Zn) ile kaplı galvanizli demir çizildiğinde ise çinko demirden aktif (Zn > Fe) olduğu için çinko kurban elektrot davranışı gösterir ve demir paslanmaz."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Yükseltgenme potansiyelleri sıralaması Mg > Al > Zn > Fe > Ni > Sn > Cu > Ag şeklindedir; Fe'nin solundaki metaller Fe için kurban elektrot olabilirken sağındakiler olamaz."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">1. ÜNİTE ÖZET KARŞILAŞTIRMASI: GALVANİK HÜCRE VE ELEKTROLİZ</text>\n  <rect x=\"25\" y=\"48\" width=\"315\" height=\"192\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"70\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\">Galvanik Hücre (Elektrokimyasal Pil)</text>\n  <text x=\"42\" y=\"96\" font-size=\"11.5\" fill=\"#1e3a8a\">• Kimyasal enerjiyi elektrik enerjisine çevirir.</text>\n  <text x=\"42\" y=\"118\" font-size=\"11.5\" fill=\"#1e3a8a\">• Kendiliğinden gerçekleşir (<tspan font-weight=\"bold\">E°_hücre &gt; 0</tspan>, istemli).</text>\n  <text x=\"42\" y=\"140\" font-size=\"11.5\" fill=\"#1e3a8a\">• <tspan font-weight=\"bold\">Anot (-):</tspan> Aktifliği büyük metal (Yükseltgenme).</text>\n  <text x=\"42\" y=\"162\" font-size=\"11.5\" fill=\"#1e3a8a\">• <tspan font-weight=\"bold\">Katot (+):</tspan> Aktifliği küçük metal (İndirgenme).</text>\n  <rect x=\"42\" y=\"180\" width=\"280\" height=\"44\" rx=\"6\" fill=\"#ffffff\" stroke=\"#60a5fa\"/>\n  <text x=\"182\" y=\"200\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">Nernst: E = E° - (0,0592 / n) · log([Anot]/[Katot])</text>\n  <text x=\"182\" y=\"216\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#1e3a8a\">Tuz köprüsü: Anyonlar anoda, katyonlar katoda</text>\n  <rect x=\"360\" y=\"48\" width=\"315\" height=\"192\" rx=\"10\" fill=\"#fae8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"517\" y=\"70\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#6b21a8\">Elektroliz Hücresi ve Faraday Yasası</text>\n  <text x=\"378\" y=\"96\" font-size=\"11.5\" fill=\"#581c87\">• Elektrik enerjisini kimyasal enerjiye çevirir.</text>\n  <text x=\"378\" y=\"118\" font-size=\"11.5\" fill=\"#581c87\">• İstemsiz redokstur (<tspan font-weight=\"bold\">E° &lt; 0</tspan>), dış üreteçle yürür.</text>\n  <text x=\"378\" y=\"140\" font-size=\"11.5\" fill=\"#581c87\">• <tspan font-weight=\"bold\">Anot (+):</tspan> Yükseltgenme (Anyonlar gider).</text>\n  <text x=\"378\" y=\"162\" font-size=\"11.5\" fill=\"#581c87\">• <tspan font-weight=\"bold\">Katot (-):</tspan> İndirgenme (Katyonlar gider).</text>\n  <rect x=\"378\" y=\"180\" width=\"280\" height=\"44\" rx=\"6\" fill=\"#ffffff\" stroke=\"#c084fc\"/>\n  <text x=\"517\" y=\"200\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#7e22ce\">Faraday: Q = I · t   ve   m = (Q / 96500) · (M_A / z)</text>\n  <text x=\"517\" y=\"216\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#581c87\">1 Faraday = 1 mol e⁻ = 96500 Coulomb</text>\n</svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Korozyon nedir? Deniz kıyısındaki metal yapıların, iç kesimlerdeki kurak bölgelerde bulunan metal yapılara göre neden daha hızlı korozyona uğradığını açıklayınız.",
+      "cevap": "Korozyon, metallerin çevredeki oksijen ve nem etkisiyle elektrokimyasal olarak yükseltgenip aşınmasıdır. Deniz kıyılarında havadaki bağıl nem oranı yüksektir ve su buharı çözünmüş tuz iyonları (elektrolit) içerir. Nem ve tuz iyonları metal yüzeyindeki elektriksel iletkenliği artırdığı için redoks tepkimesi ve paslanma çok daha hızlı gerçekleşir."
+    },
+    {
+      "soru": "Metallerde elektron verme eğilimi (aktiflik) sırası Mg > Al > Zn > Fe > Sn > Cu şeklindedir. Yer altındaki çelik (Fe) bir doğal gaz boru hattını katodik koruma yöntemiyle korozyondan korumak için bu metallerden hangileri kurban elektrot olarak seçilebilir? Nedenini açıklayınız.",
+      "cevap": "Kurban elektrot olarak seçilecek metalin aktifliği, korunacak olan demirden (Fe) daha büyük olmalıdır. Verilen sıralamada aktifliği Fe'den büyük olan Mg (magnezyum), Al (alüminyum) ve Zn (çinko) metalleri kurban elektrot (anot) olarak kullanılabilir; Sn ve Cu ise demirden pasif oldukları için kullanılamaz."
+    },
+    {
+      "soru": "Çinko (Zn) ile kaplanmış (galvanize edilmiş) bir demir levha ile kalay (Sn) ile kaplanmış bir demir levha derin bir şekilde çizilerek nemli havada bırakılıyor. Hangi levhadaki demir paslanır? (Aktiflik: Zn > Fe > Sn)",
+      "cevap": "Çizilen bölgelerde her iki metal aynı anda oksijen ve nemle temas eder. Galvanizli levhada Zn, Fe'den daha aktif (Zn > Fe) olduğu için Zn anot (kurban elektrot) olur ve demir paslanmaz. Kalaylı levhada ise Fe, Sn'den daha aktif (Fe > Sn) olduğu için demir anot konumuna geçer ve çizik bölgedeki demir hızla paslanır."
+    },
+    {
+      "soru": "Katodik koruma uygulanan bir gemi gövdesinde (Fe) kurban elektrot olarak magnezyum (Mg) bloklar kullanılmaktadır. Bu sistemde anot ve katot olan metalleri ve elektron akış yönünü belirtiniz.",
+      "cevap": "Magnezyumun aktifliği demirden büyük (Mg > Fe) olduğu için magnezyum bloklar anot (kurban elektrot) olur ve Mg(k) → {us:Mg|2+} + {us:2e|-} tepkimesiyle yükseltgenerek aşınır. Çelik gemi gövdesi (Fe) ise katot olur. Elektron akış yönü anottan katoda, yani magnezyum bloklardan gemi gövdesine doğrudur."
+    },
+    {
+      "soru": "Alüminyum metali demirden daha aktif (Al > Fe) olduğu hâlde, günlük hayatta alüminyum pencere doğramalarının demir doğramalara göre korozyona çok daha dayanıklı olmasının nedeni nedir?",
+      "cevap": "Alüminyum havadaki oksijenle temas ettiğinde yüzeyinde çok ince, saydam, gözeneksiz ve yapışkan bir alüminyum oksit (Al₂O₃) tabakası oluşturur. Bu oksit tabakası alttaki metalin hava ve suyla temasını tamamen keserek metali pasifleştirir. Demirin oluşturduğu pas tabakası ise gözenekli ve dökülgen olduğu için alt katmanları koruyamaz."
+    },
+    {
+      "soru": "Seri bağlı iki elektroliz kabından birinde erimiş {koyu:MgCl₂}, diğerinde erimiş {koyu:AlCl₃} tuzu elektroliz edilmektedir. Birinci kabın katodunda 7,2 gram Mg metali toplandığında ikinci kabın katodunda kaç gram Al metali toplanır? (Mg = 24 g/mol, Al = 27 g/mol)",
+      "cevap": "Birinci kapta toplanan Mg'nin mol sayısı n_Mg = {kesir:7,2|24} = 0,3 moldür. {us:Mg|2+} + {us:2e|-} → Mg(k) yarı tepkimesine göre devreden geçen elektron miktarı n_e = 2 · 0,3 = 0,6 mol elektrondur. Seri bağlı kaplardan eşit miktarda yük geçtiği için ikinci kapta {us:Al|3+} + {us:3e|-} → Al(k) tepkimesine göre 0,6 mol elektronla n_Al = {kesir:0,6|3} = 0,2 mol Al toplanır. Kütle: m_Al = 0,2 · 27 = 5,4 gram Al bulunur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "soru": "Korozyon olayı ve korozyondan korunma yöntemleriyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+      "secenekler": [
+        "Korozyon, metallerin çevresel etkilerle yükseltgenerek aşındığı istemli bir redoks olayıdır.",
+        "Demirin çinko tabakasıyla kaplanarak korozyona karşı korunması işlemine galvanize etme denir.",
+        "Nemli ve tuzlu ortamlarda metal yüzeylerin korozyona uğrama hızı kuru havaya göre daha yüksektir.",
+        "Katodik korumada kurban elektrot olarak seçilen metal katot, korunan metal ise anot görevi yapar.",
+        "Metal yüzeylerin boyanması, metalin oksijen ve su buharı ile temasını keserek paslanmayı önler."
+      ],
+      "dogru": 3,
+      "aciklama": "Katodik korumada kurban elektrot olarak seçilen aktif metal yükseltgendiği için ANOT, korunan metal (demir) ise KATOT görevi yapar.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Bazı metallerin standart yükseltgenme potansiyelleri aşağıda verilmiştir:\n• Mg(k) → {us:Mg|2+} + {us:2e|-}   (E° = +2,37 V)\n• Zn(k) → {us:Zn|2+} + {us:2e|-}   (E° = +0,76 V)\n• Fe(k) → {us:Fe|2+} + {us:2e|-}   (E° = +0,44 V)\n• Cu(k) → {us:Cu|2+} + {us:2e|-}   (E° = -0,34 V)\n• Ag(k) → {us:Ag|+} + {us:e|-}     (E° = -0,80 V)\nBuna göre demirden (Fe) yapılmış bir su borusunu katodik koruma yöntemiyle korozyondan korumak için yukarıdaki metallerden hangileri kurban elektrot olarak kullanılabilir?",
+      "secenekler": [
+        "Yalnız Mg",
+        "Yalnız Cu",
+        "Mg ve Zn",
+        "Cu ve Ag",
+        "Zn, Cu ve Ag"
+      ],
+      "dogru": 2,
+      "aciklama": "Demiri (E° = +0,44 V) korumak için yükseltgenme potansiyeli demirden daha büyük olan metaller seçilmelidir; tabloda +0,44 V'tan büyük olanlar Mg (+2,37 V) ve Zn (+0,76 V) metalleridir.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Toprak altına döşenen çelik (Fe) bir boru hattı, iletken bir telle magnezyum (Mg) külçeye bağlanarak katodik koruma altına alınmıştır (Aktiflik: Mg > Fe). Bu sistemle ilgili;\nI. Magnezyum külçe kurban elektrot olup zamanla kütlesi azalır.\nII. Çelik boru katot görevi görür ve yüzeyinde yükseltgenme gerçekleşmez.\nIII. İletken telde elektronlar çelik borudan magnezyum külçeye doğru akar.\nyargılarından hangileri doğrudur?",
+      "secenekler": [
+        "Yalnız I",
+        "Yalnız II",
+        "I ve II",
+        "II ve III",
+        "I, II ve III"
+      ],
+      "dogru": 2,
+      "aciklama": "Mg daha aktif olduğu için anot (kurban elektrot) olur ve yükseltgenerek aşınır (I doğru). Çelik boru katot olur ve korunur (II doğru). Elektronlar anottan katoda, yani Mg'den çelik boruya doğru akar (III yanlış).",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Kimya ve Elektrik ünitesinde yer alan galvanik hücreler ve elektroliz devreleri için aşağıdaki özelliklerden hangisi ortaktır?",
+      "secenekler": [
+        "Tepkimelerin dışarıdan elektrik enerjisi verilmeden kendiliğinden gerçekleşmesi",
+        "Anot elektrodun negatif (-), katot elektrodun pozitif (+) yüklü kutup olması",
+        "Anot elektrotta yükseltgenme, katot elektrotta indirgenme yarı tepkimesinin gerçekleşmesi",
+        "İki yarı hücre arasında yük denkliğini sağlayan tuz köprüsünün kullanılması",
+        "Kimyasal enerjinin doğrudan elektrik enerjisine dönüştürülerek akım üretilmesi"
+      ],
+      "dogru": 2,
+      "aciklama": "İster galvanik pil ister elektroliz hücresi olsun, tüm elektrokimyasal hücrelerde anotta yükseltgenme, katotta ise indirgenme gerçekleşir.",
+      "tur": "coktan"
+    },
+    {
+      "ifadeler": [
+        {
+          "metin": "Gümüş eşyaların havada kararması ve bakır yüzeylerin yeşillenmesi birer korozyon olayıdır.",
+          "dogru": true,
+          "aciklama": "Metallerin çevresel etkenlerle yükseltgenerek yüzeylerinin bozulması korozyondur."
+        },
+        {
+          "metin": "Kurban elektrot olarak seçilecek metalin indirgenme eğilimi, korunacak metalden daha büyük olmalıdır.",
+          "dogru": false,
+          "aciklama": "Kurban elektrotun indirgenme eğilimi değil, yükseltgenme eğilimi (aktifliği) korunacak metalden büyük olmalıdır."
+        },
+        {
+          "metin": "Gemi gövdeleri, iskele ayakları ve yer altı boru hatları katodik koruma yöntemiyle paslanmadan korunur.",
+          "dogru": true,
+          "aciklama": "Deniz suyu ve nemli toprakla temas eden büyük çelik yapılarda kurban elektrot kullanımı en yaygın yöntemdir."
+        },
+        {
+          "metin": "Demirin paslanması için ortamda hem oksijen gazı hem de su (nem) bulunması gerekir.",
+          "dogru": true,
+          "aciklama": "Kuru havada veya oksijensiz saf suda demirin paslanma tepkimesi gerçekleşmez."
+        },
+        {
+          "metin": "Altın ve platin metalleri aktiflikleri çok yüksek olduğu için doğada en hızlı korozyona uğrayan metallerdir.",
+          "dogru": false,
+          "aciklama": "Altın (Au) ve platin (Pt) tam soy metaller olup elektron verme eğilimleri çok düşüktür ve doğal ortamda korozyona uğramazlar."
+        }
+      ],
+      "tur": "dy"
+    },
+    {
+      "ciftler": [
+        [
+          "Korozyon",
+          "Metallerin oksijen ve nem etkisiyle elektrokimyasal olarak yükseltgenip aşınması"
+        ],
+        [
+          "Kurban elektrot",
+          "Korunacak metale bağlanarak onun yerine kendisi yükseltgenip aşınan daha aktif metal"
+        ],
+        [
+          "Galvanize etme",
+          "Demir veya çelik yüzeylerin korozyondan korunması amacıyla çinko tabakasıyla kaplanması"
+        ],
+        [
+          "Katodik koruma",
+          "Korunacak metalin katot konumuna getirilerek yükseltgenmesinin elektrokimyasal olarak önlenmesi"
+        ],
+        [
+          "Pas (Fe₂O₃ · nH₂O)",
+          "Demirin nemli havada oksijenle yükseltgenmesi sonucu oluşan gözenekli kızıl-kahverengi bileşik"
+        ]
+      ],
+      "tur": "eslestir"
+    },
+    {
+      "cumleler": [
+        {
+          "metin": "Katodik koruma sisteminde korunmak istenen metal ___ kutbu hâline getirilerek aşınması engellenir.",
+          "cevap": "katot"
+        },
+        {
+          "metin": "Kurban elektrot olarak bağlanan aktif metal ise ___ görevi görerek zamanla yükseltgenir ve tükenir.",
+          "cevap": "anot"
+        },
+        {
+          "metin": "Çelik yapıların erimiş çinko içine daldırılarak kaplanması işlemine ___ etme adı verilir.",
+          "cevap": "galvanize"
+        },
+        {
+          "metin": "Metallerin elektron verme eğilimi yani ___ arttıkça korozyona uğrama hızları da artar.",
+          "cevap": "aktifliği"
+        },
+        {
+          "metin": "Bütün elektrokimyasal hücrelerde katot kutbunda gerçekleşen yarı tepkime ___ olayıdır.",
+          "cevap": "indirgenme"
+        }
+      ],
+      "fazla": [
+        "yükseltgenme",
+        "damıtma"
+      ],
+      "tur": "bosluk"
+    },
+    {
+      "soru": "Yer altına döşenecek çelik (Fe) bir doğalgaz boru hattını korozyondan korumak isteyen bir mühendisin, elindeki magnezyum (Mg) ve bakır (Cu) bloklardan hangisini 'kurban elektrot' olarak seçmesi gerektiğini, kurulan elektrokimyasal düzeneğin çalışma ilkesini açıklayarak değerlendiriniz. (Aktiflik: Mg > Fe > Cu)",
+      "ipuclari": [
+        "Kurban elektrot seçiminde aktiflik (yükseltgenme potansiyeli) kuralını belirtiniz.",
+        "Mg seçildiğinde ve Cu seçildiğinde hangi metalin anot olup aşınacağını karşılaştırınız.",
+        "Doğru düzeneğin boru hattını nasıl katot hâline getirerek koruduğunu açıklayınız."
+      ],
+      "cevap": "Katodik koruma yönteminde kurban elektrot olarak seçilecek metalin aktifliği (elektron verme eğilimi), korunacak olan çelik borudan (Fe) daha yüksek olmalıdır. Aktiflik sırası Mg > Fe > Cu olduğundan mühendis kesinlikle magnezyum (Mg) blokları seçmelidir. Magnezyum çelik boruya iletken bir telle bağlandığında; daha aktif olan Mg anot (kurban elektrot) olur ve toprağın neminde yükseltgenerek elektron verir. Bu elektronlar çelik boruya (Fe) akarak boruyu katot konumuna getirir; katotta yükseltgenme gerçekleşmeyeceği için çelik boru paslanmaktan kurtulur. Eğer bakır (Cu) bağlansaydı, demir bakırdan daha aktif olduğu için çelik boru anot olur ve çok daha hızlı delinirdi.",
+      "tur": "ogretici"
+    }
+  ],
+  "ozet": [
+    "Korozyon, metallerin ve alaşımların çevredeki oksijen, nem ve elektrolitlerle kendiliğinden yükseltgenerek aşınması olayıdır.",
+    "Demirin paslanmasında demir anot olarak Fe²⁺ iyonuna yükseltgenirken, su içindeki çözünmüş oksijen katotta indirgenerek Fe₂O₃·nH₂O (pas) oluşturur.",
+    "Metalleri korozyondan korumak için boyama, alaşım yapma, galvanize etme (çinko ile kaplama), elektrolizle kaplama ve katodik koruma yöntemleri uygulanır.",
+    "Katodik korumada korunacak metale kendisinden daha aktif bir metal (Mg, Al, Zn) kurban elektrot (anot) olarak bağlanır ve ana yapı katot yapılarak korunur.",
+    "Kurban elektrot yöntemi gemi gövdelerinde, iskele ayaklarında, yer altı boru hatlarında, LPG tanklarında ve su ısıtıcı kazanlarında yaygın olarak kullanılır."
+  ]
+}

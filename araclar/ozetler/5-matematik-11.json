@@ -1,0 +1,262 @@
+{
+  "ad": "5-matematik-11",
+  "sinif": 5,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 11,
+  "tarih": "30 Kasım-4 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "Sayılar ve Nicelikler (1)",
+  "konu": "Doğal Sayılarla Dört İşlem (Çok Basamaklı Sayılarda Toplama, Çıkarma, Çarpma ve Bölme) ile Zihinden İşlem ve Tahmin Stratejileri (MAT.5.1.3)",
+  "ciktilar": [
+    "Çok basamaklı doğal sayılarla toplama ve çıkarma işlemlerini basamak hizalaması, elde aktarımı ve onluk bozma kurallarıyla gerçekleştirir.",
+    "Çok basamaklı doğal sayılarla çarpma ve bölme işlemlerini yapar; kalanlı bölmede 'Bölünen = (Bölen × Bölüm) + Kalan' ve 'Kalan < Bölen' ilişkilerini uygular.",
+    "Doğal sayılarla dört işlem gerektiren gerçek yaşam problemlerini çözerken zihinden işlem kısayollarını ve yuvarlama/uyuşan sayılarla tahmin stratejilerini kullanır."
+  ],
+  "giris": "Çok basamaklı doğal sayıları okumayı, çözümlemeyi ve sıralamayı öğrendikten sonra şimdi bu sayılarla dört işlem yapma ve gerçek yaşam problemlerini çözme aşamasına geçiyoruz. Bir şehrin nüfus artışını hesaplarken toplama ve çıkarmayı, bir fabrikanın yıllık üretimini veya kolilere paylaştırılan ürünleri bulurken çarpma ve bölmeyi kullanırız. Bu haftaki dersimizde hem dört işlemin temel kurallarını hem de işlemleri kalem kullanmadan hızla yapmamızı sağlayan zihinden işlem ve tahmin stratejilerini öğreneceğiz.",
+  "bolumler": [
+    {
+      "baslik": "Çok Basamaklı Doğal Sayılarda Toplama ve Çıkarma İşlemi",
+      "metin": [
+        "Çok basamaklı doğal sayılarla {koyu:toplama ve çıkarma} yapılırken en temel kural, aynı basamakların (birler basamağının altına birler, binler basamağının altına binler basamağı gelecek şekilde) sağdan sola doğru alt alta hizalanmasıdır. İşlemlere en sağdaki birler basamağından başlanır.",
+        "Toplama işleminde bir basamaktaki rakamların toplamı 10 veya 10'dan büyük olduğunda, oluşan onluk bir soldaki basamağa {koyu:elde} olarak eklenir. Çıkarma işleminde ise eksilenin bir basamağındaki rakam çıkanın rakamından küçükse, bir soldaki basamaktan {koyu:1 onluk (komşu basamak birimi)} alınarak çıkarma tamamlanır.",
+        "İşlemlerde verilmeyen terimleri bulmak için ters işlem ilişkilerinden yararlanılır: Toplamada verilmeyen bir toplananı bulmak için {koyu:Toplanan = Toplam - Diğer Toplanan}; çıkarmada ise {koyu:Eksilen = Çıkan + Fark} ve {koyu:Çıkan = Eksilen - Fark} bağıntıları kullanılır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">ÇOK BASAMAKLI DOĞAL SAYILARDA TOPLAMA VE ÇIKARMA</text>\n  <rect x=\"20\" y=\"48\" width=\"320\" height=\"190\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Alt Alta Eldeli Toplama İşlemi</text>\n  <text x=\"255\" y=\"102\" text-anchor=\"end\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e3a8a\" font-family=\"monospace\">  485.670</text>\n  <text x=\"255\" y=\"124\" text-anchor=\"end\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e3a8a\" font-family=\"monospace\">+ 347.850</text>\n  <line x1=\"110\" y1=\"132\" x2=\"265\" y2=\"132\" stroke=\"#1d4ed8\" stroke-width=\"2\"/>\n  <text x=\"255\" y=\"152\" text-anchor=\"end\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\" font-family=\"monospace\">  833.520</text>\n  <text x=\"180\" y=\"180\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• Aynı basamaklar (birler, onlar...) alt alta hizalanır.</text>\n  <text x=\"180\" y=\"198\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• Toplamı 10 veya daha büyük olan basamaktaki onluk</text>\n  <text x=\"180\" y=\"216\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">bir sol basamağa «elde» olarak aktarılır.</text>\n\n  <rect x=\"360\" y=\"48\" width=\"320\" height=\"190\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b45309\">Onluk Bozarak Çıkarma ve Kontrol</text>\n  <text x=\"595\" y=\"102\" text-anchor=\"end\" font-size=\"14\" font-weight=\"bold\" fill=\"#78350f\" font-family=\"monospace\">  920.400</text>\n  <text x=\"595\" y=\"124\" text-anchor=\"end\" font-size=\"14\" font-weight=\"bold\" fill=\"#78350f\" font-family=\"monospace\">- 564.180</text>\n  <line x1=\"450\" y1=\"132\" x2=\"605\" y2=\"132\" stroke=\"#b45309\" stroke-width=\"2\"/>\n  <text x=\"595\" y=\"152\" text-anchor=\"end\" font-size=\"14\" font-weight=\"bold\" fill=\"#b91c1c\" font-family=\"monospace\">  356.220</text>\n  <text x=\"520\" y=\"180\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">• Eksilen = Çıkan + Fark (564.180 + 356.220 = 920.400)</text>\n  <text x=\"520\" y=\"198\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">• Çıkan = Eksilen - Fark bağıntısıyla verilmeyen</text>\n  <text x=\"520\" y=\"216\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">terimler kolayca bulunur ve işlem kontrol edilir.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Sıfırlı Basamaklarda Onluk Bozma",
+          "metin": "Eksilen sayıda yan yana sıfırlar varsa (örneğin 500.000 - 142.350), sıfırdan farklı ilk sol basamaktan alınan 1 birim sırayla sağdaki basamaklara dağıtılarak ara basamaklar 9, en sağdaki basamak 10 yapılır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Çıkarma İşleminin Sağlaması",
+          "metin": "Yaptığınız bir çıkarma işleminin doğruluğunu kontrol etmek için bulduğunuz 'Fark' ile 'Çıkan' sayıyı toplayınız; sonuç 'Eksilen' sayıyı veriyorsa işleminiz doğrudur."
+        }
+      ]
+    },
+    {
+      "baslik": "Doğal Sayılarla Çarpma ve Bölme İşlemi Bağıntıları",
+      "metin": [
+        "Çok basamaklı sayılarla {koyu:çarpma işlemi} yapılırken ikinci çarpanın birler basamağı ile birinci çarpan çarpılıp ilk satıra yazılır. Onlar basamağı ile çarpma yapılırken bulunan kısmi çarpım sebenarnya onlukları gösterdiği için {koyu:bir basamak sola kaydırılarak} yazılır; yüzler basamağı ile çarpımda ise iki basamak sola kaydırılır ve kısmi çarpımlar toplanır.",
+        "{koyu:Bölme işleminde} ise diğer üç işlemin aksine {koyu:en büyük basamaktan (en soldan)} başlanır. Bölme sürecinde yukarıdan yeni bir rakam indirildiği hâlde oluşan sayı bölene bölünmüyorsa (bölenden küçükse), işlemin devam edebilmesi için {koyu:bölüme mutlaka bir '0' (sıfır)} eklenir.",
+        "Her bölme işleminde iki altın kural geçerlidir: Birincisi {koyu:Bölünen = (Bölen × Bölüm) + Kalan} eşitliğidir. İkincisi ise {koyu:Kalan daima Bölenden küçüktür (0 ≤ Kalan < Bölen)}; kalan 0 ise bölme işlemine {koyu:kalansız bölme} denir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">ÇARPMA VE BÖLME İŞLEMİ BAĞINTILARI (KALANLI BÖLME)</text>\n  <rect x=\"20\" y=\"48\" width=\"320\" height=\"190\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Basamak Kaydırarak Çarpma</text>\n  <text x=\"235\" y=\"98\" text-anchor=\"end\" font-size=\"13\" font-weight=\"bold\" fill=\"#14532d\" font-family=\"monospace\">   425</text>\n  <text x=\"235\" y=\"116\" text-anchor=\"end\" font-size=\"13\" font-weight=\"bold\" fill=\"#14532d\" font-family=\"monospace\">x   36</text>\n  <line x1=\"130\" y1=\"122\" x2=\"245\" y2=\"122\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <text x=\"235\" y=\"140\" text-anchor=\"end\" font-size=\"13\" fill=\"#166534\" font-family=\"monospace\">  2550 (6 x 425)</text>\n  <text x=\"235\" y=\"158\" text-anchor=\"end\" font-size=\"13\" fill=\"#166534\" font-family=\"monospace\">+1275  (3 onluk x 425)</text>\n  <line x1=\"120\" y1=\"164\" x2=\"245\" y2=\"164\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <text x=\"235\" y=\"182\" text-anchor=\"end\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\" font-family=\"monospace\"> 15300</text>\n  <text x=\"180\" y=\"214\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">Onlar basamağı ile çarparken sonuç 1 basamak sola kaydırılır.</text>\n\n  <rect x=\"360\" y=\"48\" width=\"320\" height=\"190\" rx=\"8\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#7e22ce\">Bölme Bağıntısı ve Kalan Kuralı</text>\n  <text x=\"520\" y=\"102\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#581c87\">Bölünen = (Bölen × Bölüm) + Kalan</text>\n  <text x=\"520\" y=\"130\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">Temel Kural: Kalan &lt; Bölen (0 ≤ Kalan &lt; Bölen)</text>\n  <text x=\"520\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#4c1d95\">Örnek: Bölen = 18, Bölüm = 25, En büyük Kalan = 17</text>\n  <text x=\"520\" y=\"182\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#581c87\">Bölünen = (18 × 25) + 17 = 450 + 17 = 467</text>\n  <text x=\"520\" y=\"214\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">Bölümde rakam indirildiğinde bölünmezse bölüme «0» konur.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Bölümdeki Sıfırı Unutma!",
+          "metin": "Örneğin 2.412 ÷ 12 işleminde 24'ün içinde 12 iki kez vardır (2×12=24, kalan 0). Yukarıdan 1 indirildiğinde 1'in içinde 12 olmadığı için bölüme '0' konur, sonra 2 indirilip 12 ÷ 12 = 1 yapılarak bölüm 201 bulunur (21 değil!)."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Artan Kalanın Yorumlanması",
+          "metin": "Gerçek yaşam problemlerinde (örneğin öğrencileri otobüslere veya zeytinyağını şişelere yerleştirirken) kalan varsa, kalan kişileri veya ürünü taşımak için bölümün 1 fazlası kadar araç/şişe gerekir."
+        }
+      ]
+    },
+    {
+      "baslik": "Zihinden İşlem Kısayolları ve Tahmin Stratejileri",
+      "metin": [
+        "Zihinden toplama ve çıkarmada sayıları {koyu:onluk ve birliklerine ayırma}, {koyu:10'un katlarını referans alma (tamamlama)} veya üzerine sayma stratejileri kullanılır. Zihinden çarpmada ise {koyu:10, 100, 1000 ile çarparken} sayının sağına 1, 2, 3 sıfır eklenir; {koyu:10, 100, 1000'e bölerken} sağından aynı sayıda sıfır silinir.",
+        "Özel zihinden çarpma ve bölme kısayolları işlemi çok hızlandırır: Bir sayıyı {koyu:5 ile çarpmak} için sayıyı 10 ile çarpıp 2'ye böleriz; {koyu:5'e bölmek} için sayıyı 2 ile çarpıp 10'a böleriz. Sayıyı {koyu:4 ile çarpmak} için arka arkaya iki kez 2 katını alırız; {koyu:8 ile çarpmak} için arka arkaya üç kez 2 katını alırız; {koyu:9 ile çarpmak} için 10 katından kendisini çıkarırız.",
+        "İşlem sonucunu {koyu:tahmin ederken} sayılar istenen basamağa (en yakın onluğa, yüzlüğe, binliğe) yuvarlanır. Bölme işleminde sonucu tahmin ederken ise bölünen sayı, bölenin tam katı olan en yakın sayıya ({koyu:uyuşan sayılar} stratejisiyle) yuvarlanarak zihinden bölünür."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">ZİHİNDEN İŞLEM VE SONUCU TAHMİN STRATEJİLERİ</text>\n  <rect x=\"20\" y=\"48\" width=\"320\" height=\"190\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">Zihinden Çarpma ve Bölme Kısayolları</text>\n  <text x=\"180\" y=\"100\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#075985\">• 10, 100, 1000 ile Çarpma/Bölme: Sıfır ekle / sil</text>\n  <text x=\"180\" y=\"124\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0c4a6e\">• 5 ile Çarpma: Sayıyı 10 ile çarpıp 2'ye böl</text>\n  <text x=\"180\" y=\"146\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0c4a6e\">• 4 ile Çarpma: İki kez 2 katını al (×2, ×2)</text>\n  <text x=\"180\" y=\"168\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0c4a6e\">• 8 ile Çarpma: Üç kez 2 katını al (×2, ×2, ×2)</text>\n  <text x=\"180\" y=\"190\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0c4a6e\">• 5 ile Bölme: Sayıyı 2 ile çarpıp 10'a böl</text>\n  <text x=\"180\" y=\"214\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">Örnek: 36 × 5 ➔ (36 × 10) ÷ 2 = 360 ÷ 2 = 180</text>\n\n  <rect x=\"360\" y=\"48\" width=\"320\" height=\"190\" rx=\"8\" fill=\"#fdf2f8\" stroke=\"#db2777\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#be185d\">Yuvarlama ve Uyuşan Sayılarla Tahmin</text>\n  <text x=\"520\" y=\"100\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#831843\">• Basamağa Yuvarlama:</text>\n  <text x=\"520\" y=\"120\" text-anchor=\"middle\" font-size=\"11\" fill=\"#9d174d\">Sağdaki rakam &lt; 5 ise alt basamağa,</text>\n  <text x=\"520\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" fill=\"#9d174d\">≥ 5 ise üst basamağa yuvarlanır.</text>\n  <text x=\"520\" y=\"164\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#831843\">• Bölmede Uyuşan Sayılar:</text>\n  <text x=\"520\" y=\"184\" text-anchor=\"middle\" font-size=\"11\" fill=\"#9d174d\">Bölünen, bölenin tam katı olan en yakın sayıya</text>\n  <text x=\"520\" y=\"202\" text-anchor=\"middle\" font-size=\"11\" fill=\"#9d174d\">tamamlanır (Örn: 358 ÷ 6 ➔ 360 ÷ 6 = 60).</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Yuvarlama Kuralı (5 ve Yukarısı)",
+          "metin": "Bir sayıyı herhangi bir basamağa yuvarlarken o basamağın hemen sağındaki rakama bakılır: Rakam 0, 1, 2, 3, 4 ise basamak değişmez; 5, 6, 7, 8, 9 ise basamak 1 artırılır ve sağdaki tüm rakamlar 0 yapılır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Uyuşan Sayılarla Bölme Tahmini",
+          "metin": "Örneğin 476 ÷ 8 işlemini tahmin ederken 476 sayısını 8'in tam katı olan 480'e tamamlayarak 480 ÷ 8 = 60 şeklinde saniyeler içinde tahmin edebiliriz."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir ildeki kütüphanede geçen yıl 348.750 kitap varken bu yıl 176.480 yeni kitap eklendi ve yıpranan 25.230 kitap ayrıldı. Kütüphanedeki güncel kitap sayısı kaçtır?",
+      "cevap": "Önce eklenen kitaplarla toplam bulunur: 348.750 + 176.480 = 525.230. Ardından ayrılan kitaplar çıkarılır: 525.230 - 25.230 = 500.000 kitap vardır."
+    },
+    {
+      "soru": "Bölenin 24, bölümün 35 olduğu kalanlı bir bölme işleminde bölünen sayı en fazla kaç olabilir?",
+      "cevap": "Kalan daima bölenden küçük olmalıdır (Kalan < 24). Bu nedenle kalan en fazla 23 olabilir. Bölünen = (24 × 35) + 23 = 840 + 23 = 863 olur."
+    },
+    {
+      "soru": "Bir çiftlikte üretilen 3.636 litre süt, 12 litrelik bidonlara hiç artmayacak şekilde dolduruluyor. Bu iş için kaç bidon kullanılmıştır?",
+      "cevap": "3.636 ÷ 12 işleminde: 36 ÷ 12 = 3 (kalan 0); yukarıdan 3 indirilir, 3'ün içinde 12 olmadığı için bölüme 0 konur; 6 indirilir ve 36 ÷ 12 = 3 olur. Toplam 303 bidon kullanılmıştır."
+    },
+    {
+      "soru": "Bir izci kampına katılacak 190 öğrenci, her biri en fazla 8 kişi alan çadırlarda kalacaktır. Tüm öğrenciler için en az kaç çadır gerekir?",
+      "cevap": "190 ÷ 8 işleminde bölüm 23, kalan 6'dır (23 × 8 = 184). Kalan 6 öğrencinin de açıkta kalmaması için 1 çadır daha gerekir: 23 + 1 = 24 çadır gereklidir."
+    },
+    {
+      "soru": "Zihinden işlem stratejilerini kullanarak '48 × 5' ve '25 × 8' işlemlerini nasıl yapacağınızı açıklayınız.",
+      "cevap": "48 × 5 işleminde 48'i 10 ile çarpıp 2'ye böleriz: 480 ÷ 2 = 240 (veya yarısını alıp 10 ile çarparız: 24 × 10 = 240). 25 × 8 işleminde ise 25'in arka arkaya üç kez 2 katını alırız: 25 × 2 = 50, 50 × 2 = 100, 100 × 2 = 200."
+    },
+    {
+      "soru": "Bir mağazadan 14.680 TL'ye buzdolabı ve 9.340 TL'ye çamaşır makinesi alan bir kişinin ödeyeceği toplam tutarı, fiyatları en yakın binliğe yuvarlayarak tahmin ediniz ve gerçek sonuçla farkını bulunuz.",
+      "cevap": "Tahmin: 14.680 ➔ 15.000 TL ve 9.340 ➔ 9.000 TL; tahmini toplam = 15.000 + 9.000 = 24.000 TL. Gerçek sonuç: 14.680 + 9.340 = 24.020 TL. Gerçek sonuç ile tahmin arasındaki fark: 24.020 - 24.000 = 20 TL'dir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir bölme işleminde bölen 16, bölüm 40 ve kalan 0'dan farklı bir doğal sayıdır. Buna göre bölünen sayının alabileceği en büyük değer kaçtır?",
+      "secenekler": [
+        "655",
+        "640",
+        "656",
+        "641"
+      ],
+      "dogru": 0,
+      "aciklama": "Kalan bölenden (16'dan) küçük olacağı için en çok 15 olabilir. Bölünen = (16 × 40) + 15 = 640 + 15 = 655 bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "«4.824 ÷ 24» bölme işleminin sonucu (bölüm) aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "21",
+        "201",
+        "210",
+        "2.001"
+      ],
+      "dogru": 1,
+      "aciklama": "48 ÷ 24 = 2; yukarıdan 2 indirilir, 2'de 24 olmadığı için bölüme 0 yazılır; ardından 4 indirilerek 24 ÷ 24 = 1 bulunur ve bölüm 201 olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir okul gezisine katılan 148 öğrenci, her biri 14 yolcu alabilen minibüslere binecektir. Öğrencilerin tamamının geziye gidebilmesi için en az kaç minibüs gerekir?",
+      "secenekler": [
+        "9 minibüs",
+        "10 minibüs",
+        "11 minibüs",
+        "12 minibüs"
+      ],
+      "dogru": 2,
+      "aciklama": "148 ÷ 14 işleminde bölüm 10, kalan 8'dir (10 × 14 = 140). Kalan 8 öğrenci için 1 minibüs daha gerekeceğinden 10 + 1 = 11 minibüs gerekir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir doğal sayıyı zihinden 5 ile çarpmak isteyen bir öğrencinin kullandığı «Sayıyı önce 10 ile çarpıp sonra bulduğum sonucu 2'ye böldüm ve 320 buldum» stratejisine göre başlangıçtaki sayı kaçtır?",
+      "secenekler": [
+        "32",
+        "48",
+        "96",
+        "64"
+      ],
+      "dogru": 3,
+      "aciklama": "Ters işlem yapılırsa: 2'ye bölünmeden önceki sayı 320 × 2 = 640'tır; 10 ile çarpılmadan önceki başlangıç sayısı ise 640 ÷ 10 = 64'tür (64 × 5 = 320)."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Çıkarma işleminde eksilen sayıyı bulmak için çıkan ile fark toplanır.",
+          "dogru": true,
+          "aciklama": "Eksilen = Çıkan + Fark bağıntısı her çıkarma işleminde geçerlidir."
+        },
+        {
+          "metin": "Bir bölme işleminde kalan sayı, bölen sayıya eşit veya bölenden büyük olabilir.",
+          "dogru": false,
+          "aciklama": "Bölme işleminde kalan daima bölenden küçüktür (Kalan < Bölen)."
+        },
+        {
+          "metin": "Bir doğal sayıyı zihinden 8 ile çarpmak için sayının arka arkaya üç kez 2 katı alınabilir.",
+          "dogru": true,
+          "aciklama": "2 × 2 × 2 = 8 olduğu için üç kez 2 ile çarpmak 8 ile çarpmaya eşittir."
+        },
+        {
+          "metin": "Verilen 750 × 40 işleminin sonucunda sayının sonunda toplam iki tane sıfır bulunur.",
+          "dogru": false,
+          "aciklama": "75 × 4 = 300 olduğu için diğer iki sıfırla birlikte 750 × 40 = 30.000 olur ve sonunda 4 sıfır bulunur."
+        },
+        {
+          "metin": "Sayıları en yakın binliğe yuvarlarken yüzler basamağındaki rakamın 5'ten küçük veya büyük olmasına bakılır.",
+          "dogru": true,
+          "aciklama": "Binliğe yuvarlamada bir sağdaki basamak olan yüzler basamağına bakılır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki zihinden işlem stratejilerini ve bağıntıları karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Eksilen - Fark",
+          "Çıkarma işleminde verilmeyen «Çıkan» terimi veren işlem"
+        ],
+        [
+          "(Bölen × Bölüm) + Kalan",
+          "Kalanlı bölme işleminde «Bölünen» sayıyı veren bağıntı"
+        ],
+        [
+          "10 ile çarpıp 2'ye bölmek",
+          "Bir doğal sayıyı zihinden 5 ile çarpma stratejisi"
+        ],
+        [
+          "İki kez üst üste 2 katını almak",
+          "Bir doğal sayıyı zihinden 4 ile çarpma stratejisi"
+        ],
+        [
+          "2 ile çarpıp 10'a bölmek",
+          "Bir doğal sayıyı zihinden 5'e bölme stratejisi"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavram veya sayılarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Toplama işleminde verilmeyen bir toplananı bulmak için toplamdan diğer toplanan ___ yapılır.",
+          "cevap": "çıkarma"
+        },
+        {
+          "metin": "Bölme işleminde kalan sayı her durumda ___ sayıdan daha küçük olmak zorundadır.",
+          "cevap": "bölen"
+        },
+        {
+          "metin": "Bir doğal sayıyı kısa yoldan 1000 ile çarpmak için sayının sağına ___ adet sıfır eklenir.",
+          "cevap": "üç"
+        },
+        {
+          "metin": "Bölme işleminde sonucu hızla tahmin ederken bölüneni bölenin tam katına yaklaştırma yöntemine ___ sayılar stratejisi denir.",
+          "cevap": "uyuşan"
+        },
+        {
+          "metin": "Bir sayıyı zihinden 9 ile çarpmak için sayının 10 katından sayının ___ çıkarılır.",
+          "cevap": "kendisi"
+        }
+      ],
+      "fazla": [
+        "bölüm",
+        "dört"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir zeytinyağı üreticisi 1.850 litre zeytinyağının 410 litresini kendi marketinde satmış, kalanını ise 15 litrelik tenekelere doldurarak tanesini 2.400 TL'den satmıştır. Üreticinin teneke satışından kaç TL gelir elde ettiğini adım adım hesaplayınız.",
+      "ipuclari": [
+        "Önce 1.850 litreden 410 litreyi çıkararak tenekelere doldurulacak zeytinyağı miktarını bulunuz.",
+        "Kalan zeytinyağı miktarını 15'e bölerek toplam kaç teneke zeytinyağı elde edildiğini hesaplayınız.",
+        "Teneke sayısı ile 2.400 TL'yi çarparak toplam geliri bulunuz."
+      ],
+      "cevap": "1. Adım (Çıkarma): Tenekelere doldurulacak zeytinyağı miktarı = 1.850 - 410 = 1.440 litredir. 2. Adım (Bölme): Elde edilen teneke sayısı = 1.440 ÷ 15 = 96 tenekedir. 3. Adım (Çarpma): Teneke satışından elde edilen toplam gelir = 96 × 2.400 = 230.400 TL'dir."
+    }
+  ],
+  "ozet": [
+    "{koyu:Toplama ve Çıkarma:} Aynı basamaklar alt alta hizalanarak sağdan sola işlem yapılır; {koyu:Eksilen = Çıkan + Fark} ve {koyu:Toplanan = Toplam - Diğer Toplanan} bağıntıları kullanılır.",
+    "{koyu:Çarpma İşlemi:} İkinci çarpanın onlar basamağı ile çarpımda sonuç 1 basamak, yüzler basamağı ile çarpımda 2 basamak sola kaydırılarak toplanır.",
+    "{koyu:Bölme Bağıntısı:} Bölme işlemine en soldaki basamaktan başlanır; {koyu:Bölünen = (Bölen × Bölüm) + Kalan} eşitliği ve {koyu:Kalan < Bölen} kuralı geçerlidir.",
+    "{koyu:Zihinden İşlem Stratejileri:} 5 ile çarpmak için (×10 ÷ 2), 5'e bölmek için (×2 ÷ 10), 4 ile çarpmak için iki kez (×2), 8 ile çarpmak için üç kez (×2) kısayolu uygulanır.",
+    "{koyu:Tahmin Stratejileri:} Toplama, çıkarma ve çarpmada sayılar uygun basamağa yuvarlanır; bölmede ise {koyu:uyuşan sayılar} kullanılarak sonuç tahmin edilir."
+  ]
+}

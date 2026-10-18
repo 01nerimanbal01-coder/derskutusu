@@ -1,0 +1,259 @@
+{
+  "ad": "7-matematik-11",
+  "sinif": 7,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 11,
+  "tarih": "30 Kasım-4 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "Geometrik Nicelikler (1)",
+  "konu": "Günlük Hayat Durumlarında Dikdörtgenler Prizmasının Yüzey Alanı ve Hacmi İle Modellenen Problemleri Çözme ve Sıvı Ölçme Birimleri (Litre - dm³ İlişkisi) (MAT.7.4.6)",
+  "ciktilar": [
+    "Günlük hayat durumlarında dikdörtgenler prizması ile modellenen cisimlerin yüzey alanı ve hacmine yönelik problemlerde matematiksel bileşenleri ve aralarındaki ilişkileri belirler (MAT.7.4.6.a-b).",
+    "Hacim ölçme birimleri (m³, dm³, cm³, mm³) ile sıvı ölçme birimleri (L, dL, cL, mL) arasındaki dönüşümleri (1 dm³ = 1 L, 1 cm³ = 1 mL) problem çözümlerinde uygular (MAT.7.4.5-6).",
+    "Kaplama, boyama, paketleme (yüzey alanı) ve sıvı doldurma, koli yerleştirme (hacim) problemlerini çözmek için stratejiler geliştirir ve alternatif çözüm yollarını değerlendirir (MAT.7.4.6.d-g)."
+  ],
+  "giris": "Hediye kutularını kaplamak için gereken kâğıt miktarından bir yüzme havuzunun iç yüzeyini fayansla döşemeye, bir akvaryumun kaç litre su alacağından büyük bir kolinin içine kaç adet küçük kutu sığacağına kadar pek çok günlük hayat durumu {koyu:dikdörtgenler prizmasının yüzey alanı ve hacmi} ile modellenir. Bu hafta {koyu:MAT.7.4.6} öğrenme çıktısı kapsamında yüzey alanı, hacim ve sıvı ölçme problemlerini çözme stratejilerini inceleyeceğiz.",
+  "bolumler": [
+    {
+      "baslik": "Dikdörtgenler Prizmasının Yüzey Alanı ve Hacim Bağıntılarının Karşılaştırılması",
+      "metin": [
+        "Farklı üç ayrıtının uzunluğu {koyu:a, b ve c} olan bir dikdörtgenler prizmasında karşılıklı yüzler birbirine eş dikdörtgenlerdir. Bir prizma probleminde {koyu:'yüzey alanı'} mı yoksa {koyu:'hacim'} mi hesaplanacağını doğru belirlemek çözümün ilk adımıdır:\n• {koyu:Yüzey Alanı:} Cismin dışını kaplama, boyama, sac/karton ile kutu üretme veya fayans döşeme durumlarında kullanılır. Prizmanın 6 yüzünün alanları toplamıdır: {koyu:Yüzey Alanı = 2 · (a·b + a·c + b·c)}. Tüm ayrıtları {koyu:a} olan bir {koyu:küpün yüzey alanı} ise birbirine eş 6 kareden oluştuğu için {koyu:Alan = 6 ·}{us:a|2} bağıntısıyla bulunur.",
+        "• {koyu:Hacim (V):} Cismin uzayda kapladığı boşluk veya içine alabileceği su, süt, kum, hava ya da birim küp miktarını soran durumlarda kullanılır. Taban alanı ile yüksekliğin çarpımına eşittir: {koyu:Hacim (V) = Taban Alanı · Yükseklik = a · b · c}. Bir ayrıtı {koyu:a} olan {koyu:küpün hacmi} ise {koyu:V = }{us:a|3}{koyu: = a · a · a} bağıntısıyla hesaplanır.",
+        "Günlük hayat problemlerinde prizmanın {koyu:tüm yüzlerinin işleme dâhil olup olmadığına} özellikle dikkat edilmelidir. Örneğin {koyu:üstü açık bir su deposu, havuz veya kapaksız kutu} boyanırken ya da kaplanırken üst taban ({koyu:a·b}) yoktur; bu durumda {koyu:5 yüzün alanı = a·b + 2·(a·c + b·c)} olarak hesaplanır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">DİKDÖRTGENLER PRİZMASININ YÜZEY ALANI VE HACMİ (MAT.7.4.6)</text>\n  <rect x=\"25\" y=\"48\" width=\"315\" height=\"190\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/>\n  <text x=\"182\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Prizma Modeli (Ayrıtlar: a, b, c)</text>\n  <polygon points=\"55,195 165,195 165,125 55,125\" fill=\"#dbeafe\" stroke=\"#1d4ed8\" stroke-width=\"2\"/>\n  <polygon points=\"55,125 90,95 200,95 165,125\" fill=\"#bfdbfe\" stroke=\"#1d4ed8\" stroke-width=\"2\"/>\n  <polygon points=\"165,125 200,95 200,165 165,195\" fill=\"#93c5fd\" stroke=\"#1d4ed8\" stroke-width=\"2\"/>\n  <text x=\"110\" y=\"212\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e40af\">a (uzunluk)</text>\n  <text x=\"196\" y=\"188\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e40af\">b (genişlik)</text>\n  <text x=\"42\" y=\"162\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e40af\">c</text>\n  <text x=\"220\" y=\"118\" font-size=\"11\" fill=\"#334155\">• 6 dikdörtgensel yüz</text>\n  <text x=\"220\" y=\"140\" font-size=\"11\" fill=\"#334155\">• 12 ayrıt (4'er eş ayrıt)</text>\n  <text x=\"220\" y=\"162\" font-size=\"11\" fill=\"#334155\">• 8 köşe</text>\n  <text x=\"220\" y=\"184\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">Küp: a = b = c</text>\n  <rect x=\"358\" y=\"48\" width=\"317\" height=\"190\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/>\n  <text x=\"516\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Yüzey Alanı ve Hacim Bağıntıları</text>\n  <text x=\"374\" y=\"100\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">1. Yüzey Alanı (Kaplama / Boyama / Hediye Paketi):</text>\n  <text x=\"384\" y=\"120\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\">Alan = 2 · (a·b + a·c + b·c)</text>\n  <text x=\"384\" y=\"138\" font-size=\"11\" fill=\"#334155\">• Küpün Yüzey Alanı = 6 · a²</text>\n  <text x=\"374\" y=\"166\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">2. Hacim (İç Kapasite / Su / Kum / Koli İstifleme):</text>\n  <text x=\"384\" y=\"186\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\">Hacim (V) = Taban Alanı · Yükseklik = a · b · c</text>\n  <text x=\"384\" y=\"204\" font-size=\"11\" fill=\"#334155\">• Küpün Hacmi (V) = a³ = a · a · a</text>\n  <text x=\"516\" y=\"226\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">Üstü açık kutuda: Alan = a·b + 2·(a·c + b·c)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Alan ile Hacim Kavramlarını Karıştırmayalım!",
+          "metin": "Soruda 'kaç cm² karton gerekir, kaç m² fayans döşenir, dış yüzeyi boyanacaktır' deniyorsa YÜZEY ALANI; 'kaç cm³ yer kaplar, kaç litre su alır, içine kaç paket sığar' deniyorsa HACİM hesaplanır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Ayrıt Uzunluğu İki Katına Çıkarsa Alan ve Hacim Nasıl Değişir?",
+          "metin": "Bir prizmanın tüm ayrıtları 2 katına çıkarılırsa yüzey alanı 2² = 4 katına, hacmi ise 2³ = 8 katına çıkar. Bu ilişki tahmin ve genelleme (MAT.7.4.6.d-ğ) sorularında büyük hız kazandırır."
+        }
+      ]
+    },
+    {
+      "baslik": "Hacim Ölçme Birimleri ile Sıvı Ölçme Birimleri Arasındaki Dönüşüm Köprüsü",
+      "metin": [
+        "Standart hacim ölçme birimleri büyükten küçüğe doğru {koyu:metreküp (}{us:m|3}{koyu:), desimetreküp (}{us:dm|3}{koyu:), santimetreküp (}{us:cm|3}{koyu:) ve milimetreküp (}{us:mm|3}{koyu:)} şeklinde sıralanır. Hacim üç boyutlu (uzunluk × genişlik × yükseklik) olduğu için birimler kendi aralarında {koyu:biner biner (1000 ile çarpılarak veya bölünerek)} dönüşür: {koyu:1 }{us:m|3}{koyu: = 1000 }{us:dm|3}, {koyu:1 }{us:dm|3}{koyu: = 1000 }{us:cm|3} ve {koyu:1 }{us:cm|3}{koyu: = 1000 }{us:mm|3}.",
+        "Sıvıların (su, süt, zeytinyağı, meyve suyu, benzin) miktarını ölçerken temel birim {koyu:Litre (L)} olup alt birimleri {koyu:desilitre (dL), santilitre (cL) ve mililitre (mL)} şeklindedir. Sıvı ölçme birimleri kendi aralarında {koyu:onar onar (10 ile çarpılarak veya bölünerek)} değişir: {koyu:1 L = 10 dL = 100 cL = 1000 mL}.",
+        "Prizma şeklindeki bir kabın hacminden alabileceği sıvı miktarına geçerken {koyu:Altın Köprü} bağıntısı kullanılır: Ayrıtları {koyu:1 dm (10 cm)} olan bir küpün hacmi {koyu:1 }{us:dm|3} olup tam {koyu:1 Litre (L)} sıvı alır. Dolayısıyla:\n• {koyu:1 }{us:dm|3}{koyu: = 1 L = 1000 mL}\n• {koyu:1 }{us:cm|3}{koyu: = 1 mL}\n• {koyu:1 }{us:m|3}{koyu: = 1000 }{us:dm|3}{koyu: = 1000 L}."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">HACİM VE SIVI ÖLÇME BİRİMLERİ KÖPRÜSÜ (1 dm³ = 1 L)</text>\n  <rect x=\"28\" y=\"48\" width=\"310\" height=\"190\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\"/>\n  <text x=\"183\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#a16207\">1. Hacim Ölçme Birimleri (1000'er Değişim)</text>\n  <text x=\"44\" y=\"102\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">m³  ⇄  dm³  ⇄  cm³  ⇄  mm³</text>\n  <text x=\"44\" y=\"124\" font-size=\"11\" fill=\"#334155\">• Aşağı inerken her adımda 1000 ile çarpılır:</text>\n  <text x=\"54\" y=\"142\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">1 m³ = 1000 dm³   |   1 dm³ = 1000 cm³</text>\n  <text x=\"54\" y=\"160\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">1 cm³ = 1000 mm³</text>\n  <text x=\"44\" y=\"184\" font-size=\"11\" fill=\"#334155\">• Yukarı çıkarken her adımda 1000'e bölünür:</text>\n  <text x=\"54\" y=\"202\" font-size=\"11\" fill=\"#334155\">5000 cm³ = 5 dm³   |   2500 dm³ = 2,5 m³</text>\n  <rect x=\"362\" y=\"48\" width=\"310\" height=\"190\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/>\n  <text x=\"517\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">2. Sıvı Ölçme Birimleri (10'ar) ve Köprü</text>\n  <text x=\"378\" y=\"102\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">L  ⇄  dL  ⇄  cL  ⇄  mL</text>\n  <text x=\"378\" y=\"124\" font-size=\"11\" fill=\"#334155\">• 1 L = 10 dL = 100 cL = 1000 mL</text>\n  <rect x=\"378\" y=\"138\" width=\"278\" height=\"84\" rx=\"6\" fill=\"#dbeafe\" stroke=\"#2563eb\"/>\n  <text x=\"517\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">ALTIN KÖPRÜ BAĞINTILARI</text>\n  <text x=\"517\" y=\"178\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b91c1c\">1 dm³ = 1 Litre (L) = 1000 mL</text>\n  <text x=\"517\" y=\"196\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">1 cm³ = 1 Mililitre (mL)</text>\n  <text x=\"517\" y=\"214\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#92400e\">1 m³ = 1000 dm³ = 1000 Litre (L)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Ayrıtları Santimetre (cm) Verilen Kaplarda Litreye Geçiş",
+          "metin": "Ayrıtları cm cinsinden verilen bir prizmanın hacmini hesapladığımızda sonuç cm³ (yani mL) çıkar. Kaç Litre (dm³) olduğunu bulmak için sonucu 1000'e böleriz (veya ayrıtları baştan 10'a bölerek dm'ye çevirip çarparız)."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "1 cm³ = 1 mL Eşitliği",
+          "metin": "İlaç şırıngalarında veya meyve suyu kutularında gördüğümüz '200 mL' ifadesi, o kutunun hacminin 200 cm³ (0,2 dm³) olduğu anlamına gelir."
+        }
+      ]
+    },
+    {
+      "baslik": "Günlük Hayat Problemlerini Çözme Stratejileri (Depo, Koli ve Kesme-Birleştirme)",
+      "metin": [
+        "{koyu:1. Sıvı Doldurma ve Boşaltma Problemleri:} Dikdörtgenler prizması biçimindeki bir deponun veya akvaryumun {kesir:3|4}'ü ya da yüzde kaçı doluysa, suyun yüksekliği deponun yüksekliğinin o kesri kadardır. Örneğin taban ayrıtları {koyu:50 cm ve 40 cm}, yüksekliği {koyu:30 cm} olan bir akvaryumun tamamı {koyu:V = 50 · 40 · 30 = 60.000 }{us:cm|3}{koyu: = 60 }{us:dm|3}{koyu: = 60 L} su alır; yarısı doluysa içinde {koyu:30 L} su vardır. İçindeki su başka bir prizmatik kaba boşaltıldığında {koyu:suyun hacmi değişmez}; yeni kaptaki su yüksekliği {koyu:h = Su Hacmi ÷ Yeni Taban Alanı} ile bulunur.",
+        "{koyu:2. Koli İçine Kutu Yerleştirme (İstifleme) Problemleri:} Büyük bir kolinin içine boşluk kalmayacak şekilde en fazla kaç adet küçük prizma kutu sığacağını bulmak için önce tüm uzunluklar {koyu:aynı birime} çevrilir, ardından büyük kolinin ayrıtları küçük kutunun eşleşen ayrıtlarına bölünüp çıkan sayılar çarpılır: {koyu:Kutu Sayısı = }{kesir:Büyük Prizmanın Hacmi|Küçük Prizmanın Hacmi}.",
+        "{koyu:3. Prizmaları Birleştirme ve Kesme Problemleri:} Eş küpler veya prizmalar yan yana yapıştırıldığında {koyu:toplam hacim değişmez} (birleşen parçaların hacimleri toplamına eşittir); ancak yapışan yüzler içeride kaldığı için {koyu:yüzey alanı azalır}. Tersine bir prizma kesilerek parçalara ayrıldığında toplam hacim yine korunurken, yeni kesim yüzeyleri ortaya çıktığı için {koyu:toplam yüzey alanı artar}."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">GÜNLÜK HAYAT PROBLEMLERİ ÇÖZÜM STRATEJİLERİ (MAT.7.4.6)</text>\n  <rect x=\"25\" y=\"48\" width=\"210\" height=\"190\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/>\n  <text x=\"130\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">1. Depo ve Akvaryum (Sıvı)</text>\n  <text x=\"40\" y=\"98\" font-size=\"11\" fill=\"#334155\">• Ayrıtları cm verilen akvaryumun</text>\n  <text x=\"40\" y=\"114\" font-size=\"11\" fill=\"#334155\">  hacmi cm³ olarak bulunur.</text>\n  <text x=\"40\" y=\"136\" font-size=\"11\" fill=\"#334155\">• 1000'e bölünerek dm³ = Litre</text>\n  <text x=\"40\" y=\"152\" font-size=\"11\" fill=\"#334155\">  cinsinden su kapasitesi hesaplanır.</text>\n  <text x=\"40\" y=\"176\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">Örnek: 50 cm × 40 cm × 30 cm</text>\n  <text x=\"40\" y=\"194\" font-size=\"11\" fill=\"#334155\">V = 60.000 cm³ = 60 dm³ = 60 L</text>\n  <rect x=\"245\" y=\"48\" width=\"210\" height=\"190\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/>\n  <text x=\"350\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">2. Koliye Kutu Yerleştirme</text>\n  <text x=\"260\" y=\"98\" font-size=\"11\" fill=\"#334155\">• Büyük kolinin ayrıtları, küçük</text>\n  <text x=\"260\" y=\"114\" font-size=\"11\" fill=\"#334155\">  kutunun eşleşen ayrıtlarına</text>\n  <text x=\"260\" y=\"130\" font-size=\"11\" fill=\"#334155\">  bölünerek sığacak adet bulunur:</text>\n  <text x=\"260\" y=\"154\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\">Adet = V(Büyük) / V(Küçük)</text>\n  <text x=\"260\" y=\"176\" font-size=\"11\" fill=\"#334155\">• Önce tüm ayrıtlar aynı uzunluk</text>\n  <text x=\"260\" y=\"192\" font-size=\"11\" fill=\"#334155\">  birimine (cm veya dm) çevrilir!</text>\n  <rect x=\"465\" y=\"48\" width=\"210\" height=\"190\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#ef4444\"/>\n  <text x=\"570\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b91c1c\">3. Boyama ve Kaplama (Alan)</text>\n  <text x=\"480\" y=\"98\" font-size=\"11\" fill=\"#334155\">• Oda duvarı veya havuz boyanırken</text>\n  <text x=\"480\" y=\"114\" font-size=\"11\" fill=\"#334155\">  HANGİ YÜZLERİN boyandığına</text>\n  <text x=\"480\" y=\"130\" font-size=\"11\" fill=\"#334155\">  dikkat edilir!</text>\n  <text x=\"480\" y=\"152\" font-size=\"11\" fill=\"#334155\">• Havuzda: Taban + 4 yan yüz</text>\n  <text x=\"480\" y=\"168\" font-size=\"11\" fill=\"#334155\">  (Üst yüz açıktır, çıkarılır).</text>\n  <text x=\"480\" y=\"190\" font-size=\"11\" fill=\"#334155\">• Oda boyamada: Kapı ve pencere</text>\n  <text x=\"480\" y=\"206\" font-size=\"11\" fill=\"#334155\">  alanları toplam alandan düşülür.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Kaptan Kaba Aktarılan Sıvının Hacmi Sabittir!",
+          "metin": "Bir kaptaki su farklı taban alanına sahip başka bir dikdörtgenler prizması kaba döküldüğünde suyun hacmi (V) değişmez; taban alanı büyürse suyun yüksekliği aynı oranda azalır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İki Eş Küp Yapıştırıldığında Yüzey Alanı Ne Olur?",
+          "metin": "Bir ayrıtı a olan iki eş küp (toplam 12 kare yüz) birer yüzleri çakışacak şekilde yapıştırılırsa, yapışan 2 kare yüz içeride kalır ve oluşan kare prizmanın dış yüzey alanı 12 - 2 = 10·a² olur."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Ayrıt uzunlukları 5 dm, 4 dm ve 3 dm olan dikdörtgenler prizması biçimindeki kapalı bir hediye kutusunun tüm dış yüzeyini kaplamak için kaç dm² kâğıt gerekir ve bu kutunun hacmi kaç dm³'tür?",
+      "cevap": "• Yüzey Alanı = 2 · (a·b + a·c + b·c) = 2 · (5·4 + 5·3 + 4·3) = 2 · (20 + 15 + 12) = 2 · 47 = 94 dm² kâğıt gerekir.\n• Hacim (V) = a · b · c = 5 · 4 · 3 = 60 dm³."
+    },
+    {
+      "soru": "Taban ayrıtları 80 cm ve 50 cm, yüksekliği 60 cm olan dikdörtgenler prizması şeklindeki bir akvaryumun 3/4'ü su ile doludur. Akvaryumda kaç litre su vardır?",
+      "cevap": "Önce ayrıtları desimetreye çevirelim (1 dm = 10 cm): 8 dm, 5 dm ve 6 dm.\nAkvaryumun tamamının hacmi: V = 8 · 5 · 6 = 240 dm³ = 240 Litre.\n3/4'ü dolu olduğuna göre: 240 · (3/4) = 180 Litre su vardır."
+    },
+    {
+      "soru": "Taban ayrıtları 10 m ve 6 m, derinliği (yüksekliği) 2 m olan üstü açık dikdörtgenler prizması biçimindeki bir yüzme havuzunun tabanı ve yan duvarları fayansla kaplanacaktır. Kaç m² fayans gerekir?",
+      "cevap": "Havuzun üstü açık olduğu için üst taban alanı (10 · 6) hesaba katılmaz:\n• Taban alanı = 10 · 6 = 60 m²\n• Yan duvarların alanı = 2 · (10·2 + 6·2) = 2 · (20 + 12) = 64 m²\n• Toplam fayans alanı = 60 + 64 = 124 m²."
+    },
+    {
+      "soru": "Ayrıt uzunlukları 60 cm, 40 cm ve 30 cm olan büyük bir karton kolinin içine, bir ayrıtı 10 cm olan küp şeklindeki çay kutularından boşluk kalmayacak biçimde en fazla kaç adet yerleştirilebilir?",
+      "cevap": "• Büyük kolinin hacmi: V(koli) = 60 · 40 · 30 = 72.000 cm³\n• Küp kutunun hacmi: V(kutu) = 10 · 10 · 10 = 1.000 cm³\n• Yerleştirilebilecek kutu sayısı = 72.000 ÷ 1.000 = 72 adet (veya ayrıt oranlarıyla: (60/10) · (40/10) · (30/10) = 6 · 4 · 3 = 72 adet)."
+    },
+    {
+      "soru": "Ayrıtları 20 cm, 10 cm ve 5 cm olan dikdörtgenler prizması şeklindeki bir kutu meyve suyunun tamamı, her biri 250 mL sıvı alan bardaklara eşit olarak paylaştırılacaktır. Bu iş için kaç bardak gerekir?",
+      "cevap": "Meyve suyu kutusunun hacmi: V = 20 · 10 · 5 = 1.000 cm³.\n1 cm³ = 1 mL olduğundan kutuda 1.000 mL meyve suyu vardır.\nGereken bardak sayısı = 1.000 mL ÷ 250 mL = 4 bardak."
+    },
+    {
+      "soru": "Bir ayrıtı 4 cm olan iki eş küp, birer yüzleri tamamen çakışacak şekilde yan yana yapıştırılarak bir kare prizma elde ediliyor. Oluşan kare prizmanın hacmini ve yüzey alanını bulunuz.",
+      "cevap": "Oluşan kare prizmanın ayrıtları: a = 4 + 4 = 8 cm, b = 4 cm ve c = 4 cm olur.\n• Hacim (V) = 8 · 4 · 4 = 128 cm³ (iki küpün hacimleri toplamı: 64 + 64 = 128 cm³).\n• Yüzey Alanı = 2 · (8·4 + 8·4 + 4·4) = 2 · (32 + 32 + 16) = 160 cm² (veya 10 eş kare yüz: 10 · 4² = 160 cm²)."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Ayrıt uzunlukları 6 cm, 5 cm ve 4 cm olan dikdörtgenler prizması biçimindeki kapalı bir ilaç kutusunun tüm dış yüzey alanı kaç cm²'dir?",
+      "secenekler": [
+        "74 cm²",
+        "120 cm²",
+        "148 cm²",
+        "240 cm²"
+      ],
+      "dogru": 2,
+      "aciklama": "Yüzey Alanı = 2 · (6·5 + 6·4 + 5·4) = 2 · (30 + 24 + 20) = 2 · 74 = 148 cm²."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Taban ayrıtları 5 dm ve 4 dm, yüksekliği 6 dm olan dikdörtgenler prizması şeklindeki boş bir su deposu tamamen doldurulmak isteniyor. Depoyu doldurmak için kaç litre suya ihtiyaç vardır?",
+      "secenekler": [
+        "120 litre",
+        "100 litre",
+        "74 litre",
+        "60 litre"
+      ],
+      "dogru": 0,
+      "aciklama": "Deponun hacmi V = 5 · 4 · 6 = 120 dm³'tür. 1 dm³ = 1 Litre olduğundan 120 litre suya ihtiyaç vardır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Yüzey alanı 150 cm² olan küp şeklindeki kapalı bir tahta blokun hacmi kaç cm³'tür?",
+      "secenekler": [
+        "25 cm³",
+        "125 cm³",
+        "216 cm³",
+        "625 cm³"
+      ],
+      "dogru": 1,
+      "aciklama": "Küpün yüzey alanı 6·a² = 150 cm² ise a² = 25 ve bir ayrıtı a = 5 cm'dir. Küpün hacmi V = a³ = 5³ = 125 cm³ olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Taban alanı 400 cm² olan dikdörtgenler prizması biçimindeki bir sürahinin içinde 3 litre su bulunmaktadır. Sürahideki suyun yüksekliği kaç santimetredir?",
+      "secenekler": [
+        "6 cm",
+        "6,5 cm",
+        "7 cm",
+        "7,5 cm"
+      ],
+      "dogru": 3,
+      "aciklama": "3 litre = 3 dm³ = 3000 cm³ su vardır. Hacim = Taban Alanı × Yükseklik olduğundan 3000 = 400 · h → h = 3000 / 400 = 7,5 cm bulunur."
+    },
+    {
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "metin": "Ayrıtları a, b ve c olan kapalı bir dikdörtgenler prizmasının yüzey alanı 2·(a·b + a·c + b·c) bağıntısıyla hesaplanır.",
+          "dogru": true,
+          "aciklama": "Prizmanın karşılıklı ikişer eş dikdörtgen yüzünün alanları toplamı yüzey alanını verir."
+        },
+        {
+          "metin": "Hacim ölçümü ile sıvı ölçümü arasındaki dönüşümde 1 desimetreküp (1 dm³) hacim tam 10 litreye eşittir.",
+          "dogru": false,
+          "aciklama": "1 dm³ hacim 10 litreye değil, tam 1 Litreye (1 L) eşittir."
+        },
+        {
+          "metin": "Bir ayrıtı 1 cm olan küpün hacmi 1 cm³ olup alabileceği sıvı miktarı 1 mililitredir (1 cm³ = 1 mL).",
+          "dogru": true,
+          "aciklama": "1 dm³ = 1000 cm³ ve 1 L = 1000 mL olduğundan 1 cm³ = 1 mL eşitliği geçerlidir."
+        },
+        {
+          "metin": "Bir dikdörtgenler prizmasının tüm ayrıt uzunlukları 2 katına çıkarılırsa prizmanın hacmi de 2 katına çıkar.",
+          "dogru": false,
+          "aciklama": "Üç ayrıtın her biri 2 katına çıktığında yeni hacim 2 · 2 · 2 = 8 katına çıkar."
+        },
+        {
+          "metin": "Bir kaptaki su farklı taban alanına sahip başka bir prizmatik kaba boşaltıldığında taşma yoksa suyun hacmi değişmez.",
+          "dogru": true,
+          "aciklama": "Sıvılar konuldukları kabın şeklini alır ancak miktarları (hacimleri) sabit kalır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "ciftler": [
+        [
+          "2 · (a·b + a·c + b·c)",
+          "Dikdörtgenler prizmasının yüzey alanı bağıntısı"
+        ],
+        [
+          "a · b · c (Taban Alanı × Yükseklik)",
+          "Dikdörtgenler prizmasının hacim bağıntısı"
+        ],
+        [
+          "6 · a² ve a³",
+          "Bir ayrıtı a olan küpün yüzey alanı ve hacmi"
+        ],
+        [
+          "1 dm³ = 1000 cm³",
+          "1 Litre (L) = 1000 Mililitre (mL) sıvı karşılığı"
+        ],
+        [
+          "1 m³ = 1000 dm³",
+          "1000 Litre (L) su kapasitesi"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "cumleler": [
+        {
+          "metin": "Kapalı bir hediye kutusunu kaplamak için gereken karton miktarı hesaplanırken prizmanın ___ alanı bulunur.",
+          "cevap": "yüzey"
+        },
+        {
+          "metin": "Bir su deposunun içine alabileceği su miktarı hesaplanırken taban alanı ile ___ çarpılarak hacim bulunur.",
+          "cevap": "yükseklik"
+        },
+        {
+          "metin": "Hacim ölçme birimlerinden sıvı ölçme birimlerine geçişte 1 {us:dm|3} hacim tam 1 ___ sıvıya karşılık gelir.",
+          "cevap": "litre"
+        },
+        {
+          "metin": "Bir ayrıtı 6 cm olan küp biçimindeki bir kutunun tüm dış yüzey alanı 6 · {us:6|2} işleminden ___ {us:cm|2} olarak bulunur.",
+          "cevap": "216"
+        },
+        {
+          "metin": "İki eş küp yan yana yapıştırıldığında oluşan prizmanın toplam hacmi değişmezken dış yüzey alanı ___ yüz kadar azalır.",
+          "cevap": "iki"
+        }
+      ],
+      "fazla": [
+        "çevre",
+        "köşegen"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Taban ayrıtları 50 cm ve 40 cm, yüksekliği 30 cm olan üstü açık cam bir akvaryumun: 1) Yapımında kaç cm² cam kullanıldığını, 2) Tamamının kaç cm³ ve kaç litre su alacağını 3 adımda hesaplayarak açıklayınız.",
+      "ipuclari": [
+        "Birinci adım: Akvaryumun üstü açık olduğu için taban alanı + 4 yan yüzün alanını toplamak.",
+        "İkinci adım: Hacim = a · b · c bağıntısıyla akvaryumun hacmini cm³ cinsinden bulmak.",
+        "Üçüncü adım: 1 dm³ = 1000 cm³ = 1 Litre eşitliğini kullanarak cm³'ü litreye çevirmek."
+      ],
+      "cevap": "1. Adım (Kullanılan Cam Alanı - 5 Yüz): Akvaryumun üstü açık olduğundan 1 taban ve 4 yan yüz vardır:\nTaban Alanı = 50 · 40 = 2.000 cm²\nYan Yüzlerin Alanı = 2 · (50·30 + 40·30) = 2 · (1.500 + 1.200) = 5.400 cm²\nToplam Cam Alanı = 2.000 + 5.400 = 7.400 cm².\n2. Adım (cm³ Cinsinden Hacim): V = a · b · c = 50 · 40 · 30 = 60.000 cm³.\n3. Adım (Litre Cinsinden Su Kapasitesi): 1.000 cm³ = 1 dm³ = 1 Litre olduğundan, 60.000 ÷ 1.000 = 60 dm³ = 60 Litre su alır."
+    }
+  ],
+  "ozet": [
+    "{koyu:Yüzey Alanı Bağıntısı:} Ayrıtları {koyu:a, b, c} olan dikdörtgenler prizmasının yüzey alanı {koyu:Alan = 2 · (a·b + a·c + b·c)}, küpün yüzey alanı ise {koyu:Alan = 6 · }{us:a|2} bağıntısıyla hesaplanır (kaplama ve boyama problemleri).",
+    "{koyu:Hacim Bağıntısı:} Dikdörtgenler prizmasının hacmi {koyu:V = Taban Alanı · Yükseklik = a · b · c}, küpün hacmi ise {koyu:V = }{us:a|3} bağıntısıyla bulunur (iç kapasite ve istifleme problemleri).",
+    "{koyu:Hacim - Sıvı Dönüşüm Köprüsü:} Hacim birimleri 1000'er, sıvı birimleri 10'ar değişir; aralarındaki köprü {koyu:1 }{us:dm|3}{koyu: = 1 L}, {koyu:1 }{us:cm|3}{koyu: = 1 mL} ve {koyu:1 }{us:m|3}{koyu: = 1000 L} eşitlikleridir.",
+    "{koyu:Açık Kutu ve Havuz Problemleri:} Üstü açık havuz veya kapaksız kutu sorularında üst yüz ({koyu:a·b}) toplam yüzey alanından çıkarılır (5 yüz hesaplanır).",
+    "{koyu:Koli İstifleme ve Aktarma:} Büyük koliye sığacak kutu sayısı {kesir:V(Büyük)|V(Küçük)} ile bulunur; kaptan kaba aktarılan sıvının hacmi değişmez."
+  ]
+}

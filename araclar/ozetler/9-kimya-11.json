@@ -1,0 +1,263 @@
+{
+  "ad": "9-kimya-11",
+  "sinif": 9,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 11,
+  "tarih": "30 Kasım-4 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "1. TEMA: ETKİLEŞİM",
+  "konu": "Periyodik Özelliklerin Değişimi Uygulamaları ve Kimyasal Türler Arası Etkileşimlere Giriş (9.1.8 & 9.2.1)",
+  "ciktilar": [
+    "Elementlerin periyodik özelliklerini (atom yarıçapı, iyonlaşma enerjisi, elektronegatiflik) etkileyen katman sayısı ve etkin çekirdek yükü ile periyodik tablodaki değişim yönleri arasındaki nedensel ilişkiyi çözümler (9.1.8.b).",
+    "Ardışık iyonlaşma enerjisi tablolarını ve atom numarası-birinci iyonlaşma enerjisi grafiklerini yorumlayarak elementlerin grup numaralarını ve periyodik konumlarını belirler (9.1.8).",
+    "Kimyasal türleri (atom, iyon, molekül) ayırt ederek kimyasal türler arası etkileşimleri bağ enerjisine göre güçlü (kimyasal) ve zayıf (fiziksel) etkileşimler olarak sınıflandırır (9.2.1)."
+  ],
+  "giris": "Periyodik tablodaki elementlerin davranışlarını belirleyen {koyu:atom yarıçapı, iyonlaşma enerjisi ve elektronegatiflik} eğilimlerini öğrendikten sonra, bu haftaki dersimizde bu değişimlerin temel etmenlerle ({koyu:enerji düzeyi sayısı ve çekirdek çekim gücü}) ilişkisini grafik ve tablo uygulamalarıyla pekiştiriyoruz. Ardından doğadaki maddeleri oluşturan {koyu:kimyasal türleri} (atom, iyon, molekül) ve bu türleri bir arada tutan {koyu:güçlü ve zayıf etkileşimleri} incelemeye başlıyoruz.",
+  "bolumler": [
+    {
+      "baslik": "Periyodik Özellikleri Etkileyen Etmenler ve Değişim İlişkisi (9.1.8.b)",
+      "metin": [
+        "Elementlerin periyodik özelliklerinin periyot ve gruplardaki değişimi iki temel etmene dayanır: Birincisi {koyu:temel enerji düzeyi (katman/periyot) sayısı}, ikincisi ise {koyu:çekirdek yükü (proton sayısı / etkin çekirdek çekim gücü)} faktörüdür. Aynı grupta {koyu:yukarıdan aşağıya doğru} inildikçe katman sayısı artar; değerlik elektronları çekirdekten uzaklaştığı için çekirdeğin son katmandaki elektronlara uyguladığı çekim gücü azalır. Bunun sonucunda yukarıdan aşağıya doğru {koyu:atom yarıçapı (hacmi) artar}, elektron koparmak kolaylaştığı için {koyu:birinci iyonlaşma enerjisi azalır} ve bağ elektronlarını çekme gücü olan {koyu:elektronegatiflik azalır}.",
+        "Aynı periyotta {koyu:soldan sağa doğru} (1A'dan 8A'ya) gidildikçe katman sayısı sabit kalırken proton sayısı (çekirdek yükü) artar; çekirdeğin elektron bulutunu kendine doğru çekme gücü büyüdüğü için {koyu:atom yarıçapı küçülür}, elektron koparmak zorlaştığı için {koyu:birinci iyonlaşma enerjisi genellikle artar} ve (bağ yapmayan soygazlar hariç) {koyu:elektronegatiflik artar}. Periyodik tabloda elektronegatifliği en yüksek olan element 2. periyot 7A grubundaki {koyu:Flor (F = 4,0)} elementidir.",
+        "Nötr bir atom elektron vererek pozitif yüklü {koyu:katyon} oluşturduğunda elektron başına düşen çekirdek çekimi arttığı için {koyu:yarıçapı küçülür}; elektron alarak negatif yüklü {koyu:anyon} oluşturduğunda ise elektronlar arası itme arttığı ve elektron başına düşen çekim azaldığı için {koyu:yarıçapı büyür}. Elektron sayıları eşit ({koyu:izoelektronik}) olan taneciklerde (örneğin 10 elektronlu {us:O|2-}, {us:F|-}, Ne, {us:Na|+}, {us:Mg|2+} serisinde) proton sayısı en fazla olanın çekirdek çekimi en büyük olduğundan yarıçapı en küçüktür: {koyu:r(O²⁻) > r(F⁻) > r(Ne) > r(Na⁺) > r(Mg²⁺)}."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">PERİYODİK ÖZELLİKLERİN DEĞİŞİM YÖNLERİ VE NEDENSEL İLİŞKİSİ</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"195\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"66\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">SOLDAN SAĞA (AYNI PERİYOTTA: 1A → 8A)</text>\n  <text x=\"35\" y=\"92\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">• Katman (enerji düzeyi) sayısı SABİT kalır.</text>\n  <text x=\"35\" y=\"114\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">• Çekirdek yükü (proton sayısı) ve çekim gücü ARTAR.</text>\n  <text x=\"35\" y=\"138\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">• Atom Yarıçapı (Hacmi): AZALIR (Kardan adamın burnu).</text>\n  <text x=\"35\" y=\"162\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">• 1. İyonlaşma Enerjisi: GENELLİKLE ARTAR</text>\n  <text x=\"45\" y=\"178\" font-size=\"10.5\" fill=\"#166534\">Sıralama: 1A &lt; 3A &lt; 2A &lt; 4A &lt; 6A &lt; 5A &lt; 7A &lt; 8A</text>\n  <text x=\"35\" y=\"200\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">• Elektronegatiflik: ARTAR (7A'da en yüksek; 8A hariç).</text>\n  <text x=\"35\" y=\"222\" font-size=\"10.5\" fill=\"#1e40af\">• Metalik özellik azalır, ametalik özellik artar.</text>\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"195\" rx=\"10\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"66\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\">YUKARIDAN AŞAĞIYA (AYNI GRUPTA)</text>\n  <text x=\"375\" y=\"92\" font-size=\"11\" font-weight=\"bold\" fill=\"#78350f\">• Katman (temel enerji düzeyi) sayısı ARTAR.</text>\n  <text x=\"375\" y=\"114\" font-size=\"11\" font-weight=\"bold\" fill=\"#78350f\">• Değerlik elektronları çekirdekten uzaklaşır.</text>\n  <text x=\"375\" y=\"138\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">• Atom Yarıçapı (Hacmi): ARTAR (Kardan adam gövdesi).</text>\n  <text x=\"375\" y=\"162\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">• 1. İyonlaşma Enerjisi: KESİNLİKLE AZALIR.</text>\n  <text x=\"375\" y=\"186\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">• Elektronegatiflik: AZALIR (En yüksek: Flor = 4,0).</text>\n  <text x=\"375\" y=\"210\" font-size=\"10.5\" fill=\"#92400e\">• Katyon (X+) oluşurken yarıçap küçülür; Anyon (Y-)</text>\n  <text x=\"383\" y=\"226\" font-size=\"10.5\" fill=\"#92400e\">oluşurken elektron başına çekim azaldığı için yarıçap büyür.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Atom yarıçapı karşılaştırılırken ÖNCE katman (periyot) sayısına bakılır: Katman sayısı fazla olan atomun yarıçapı her zaman daha büyüktür. Katman sayıları eşitse proton sayısı KÜÇÜK olanın (daha solda bulunanın) yarıçapı daha büyüktür."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Soygazların yer aldığı 8A grubunun kararlı yapılarından dolayı birinci iyonlaşma enerjileri kendi periyotlarında EN BÜYÜKTÜR; ancak bağ yapma eğilimleri olmadığı için elektronegatiflik değerleri YOKTUR (elektronegatiflik 7A grubunda maksimumdur)."
+        }
+      ]
+    },
+    {
+      "baslik": "İyonlaşma Enerjisi Grafikleri ve Ardışık Sıçrama Yorumları (9.1.8)",
+      "metin": [
+        "Gaz hâlindeki nötr bir atomdan bir elektron koparmak için gereken enerjiye {koyu:birinci iyonlaşma enerjisi} ({us:İE|1}) denir ve her zaman {koyu:endotermiktir} (ısı alan). Aynı periyotta soldan sağa gidildikçe {us:İE|1} genellikle artar; ancak {koyu:2A} (toprak alkali) ve {koyu:5A} (azot grubu) elementleri küresel simetri kararlılığına sahip olduğu için kendilerinden hemen sonra gelen gruplardan daha yüksek iyonlaşma enerjisine sahiptir. Bu nedenle bir periyottaki {us:İE|1} sıralaması ('3 aşağı 5 yukarı' kuralıyla): {koyu:1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A} şeklindedir.",
+        "Atom numarası - birinci iyonlaşma enerjisi grafiklerinde {koyu:8A grubundaki tepe noktasından hemen sonra gelen keskin düşüş}, bir alt periyodun {koyu:1A grubuna} (yeni bir katmana) geçildiğini kanıtlar. Grafikteki küçük zirveler ise {koyu:2A ve 5A} gruplarını temsil eder.",
+        "Bir atomdan elektronlar teker teker koparıldıkça kalan elektronlar çekirdek tarafından daha güçlü çekildiği için ardışık iyonlaşma enerjileri daima artar ({koyu:İE₁ < İE₂ < İE₃ < ...}). A grubu (baş grup) elementlerinde son katmandaki değerlik elektronlarının tamamı koptuktan sonra bir alt katmandaki {koyu:soygaz elektron düzeninden} elektron koparmak çok zor olduğundan ardışık iki İE değeri arasında {koyu:en az 3,5 – 4 katlık ani bir sıçrama (artış)} görülür. Örneğin sıçrama {us:İE|1} ile {us:İE|2} arasında ise element {koyu:1A}, {us:İE|2} ile {us:İE|3} arasında ise {koyu:2A}, {us:İE|3} ile {us:İE|4} arasında ise {koyu:3A} grubundadır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">İYONLAŞMA ENERJİSİ GRAFİĞİ VE ARDIŞIK SIÇRAMA YORUMU</text>\n  <rect x=\"20\" y=\"45\" width=\"330\" height=\"195\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"185\" y=\"66\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">PERİYOTTA 1. İE GRAFİĞİ (3 AŞAĞI 5 YUKARI)</text>\n  <polyline points=\"45,205 75,160 105,180 135,145 165,110 195,130 225,95 255,68 285,215\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2.5\"/>\n  <circle cx=\"45\" cy=\"205\" r=\"4\" fill=\"#15803d\"/><text x=\"42\" y=\"222\" font-size=\"9.5\" font-weight=\"bold\">1A</text>\n  <circle cx=\"75\" cy=\"160\" r=\"4\" fill=\"#dc2626\"/><text x=\"70\" y=\"152\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#b91c1c\">2A</text>\n  <circle cx=\"105\" cy=\"180\" r=\"4\" fill=\"#15803d\"/><text x=\"100\" y=\"196\" font-size=\"9.5\" font-weight=\"bold\">3A</text>\n  <circle cx=\"135\" cy=\"145\" r=\"4\" fill=\"#15803d\"/><text x=\"130\" y=\"138\" font-size=\"9.5\" font-weight=\"bold\">4A</text>\n  <circle cx=\"165\" cy=\"110\" r=\"4\" fill=\"#dc2626\"/><text x=\"160\" y=\"102\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#b91c1c\">5A</text>\n  <circle cx=\"195\" cy=\"130\" r=\"4\" fill=\"#15803d\"/><text x=\"190\" y=\"146\" font-size=\"9.5\" font-weight=\"bold\">6A</text>\n  <circle cx=\"225\" cy=\"95\" r=\"4\" fill=\"#15803d\"/><text x=\"220\" y=\"88\" font-size=\"9.5\" font-weight=\"bold\">7A</text>\n  <circle cx=\"255\" cy=\"68\" r=\"4\" fill=\"#1d4ed8\"/><text x=\"250\" y=\"60\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#1d4ed8\">8A</text>\n  <circle cx=\"285\" cy=\"215\" r=\"4\" fill=\"#dc2626\"/><text x=\"280\" y=\"232\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#b91c1c\">1A(alt)</text>\n  <text x=\"35\" y=\"235\" font-size=\"9.5\" fill=\"#14532d\">Küresel simetri: 2A &gt; 3A ve 5A &gt; 6A</text>\n  <rect x=\"365\" y=\"45\" width=\"315\" height=\"195\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"522\" y=\"66\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#7e22ce\">ARDIŞIK İYONLAŞMA ENERJİSİ TABLOSU</text>\n  <text x=\"380\" y=\"92\" font-size=\"10.5\" fill=\"#581c87\">• İE değerleri arasında en az 3,5 - 4 katlık ani artış</text>\n  <text x=\"388\" y=\"108\" font-size=\"10.5\" fill=\"#581c87\">soygaz düzenine geçildiğini gösterir ve grup numarasını verir.</text>\n  <text x=\"380\" y=\"134\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#6b21a8\">Örnek (A grubu elementleri için kJ/mol):</text>\n  <text x=\"380\" y=\"154\" font-size=\"10.5\" fill=\"#581c87\">• X: İE1=496, İE2=4560 (9,2 kat artış!) → 1A grubu</text>\n  <text x=\"380\" y=\"174\" font-size=\"10.5\" fill=\"#581c87\">• Y: İE1=738, İE2=1450, İE3=7730 (5,3 kat!) → 2A grubu</text>\n  <text x=\"380\" y=\"194\" font-size=\"10.5\" fill=\"#581c87\">• Z: İE1=578, İE2=1817, İE3=2745, İE4=11577 → 3A grubu</text>\n  <text x=\"380\" y=\"218\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b91c1c\">• Kural: Her zaman İE_n &gt; ... &gt; İE3 &gt; İE2 &gt; İE1 olur!</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Bir atomun toplam kaç elektronu varsa o kadar sayıda iyonlaşma enerjisi değeri vardır! Örneğin Hidrojenin (1H) sadece İE1 değeri, Helyumun (2He) İE1 ve İE2 değeri, Lityumun (3Li) ise İE1, İE2 ve İE3 değeri bulunur (İE4 değeri yoktur)."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "İkinci grup (2A) elementi olan Berilyumun (4Be) toplam 4 elektronu vardır (İE4 değeri mevcuttur); oysa 8A grubunda olup değerlik elektron sayısı 2 olan Helyumun (2He) toplam 2 elektronu olduğu için İE3 ve İE4 değerleri tabloda çizgi (-) ile boş bırakılır."
+        }
+      ]
+    },
+    {
+      "baslik": "Kimyasal Türler ve Güçlü-Zayıf Etkileşimlere Giriş (9.2.1)",
+      "metin": [
+        "Maddelerin özelliklerini taşıyan en küçük yapı taşlarına {koyu:kimyasal tür} denir ve başlıca üç grupta incelenir: 1) {koyu:Atom:} Bir elementin tüm özelliklerini gösteren nötr tekil taneciklerdir; metaller (Fe, Cu, Na, Au) ve soygazlar (He, Ne, Ar) doğada atomik yapıda bulunur. 2) {koyu:Molekül:} En az iki ametal atomunun kovalent bağlarla bağlanmasıyla oluşan bağımsız ve yüksüz (nötr) atom gruplarıdır. Aynı cins atomlardan oluşursa {koyu:element molekülü} ({us:H|2}, {us:O|2}, {us:N|2}, {us:O|3}, {us:P|4}, {us:S|8}), farklı cins ametal atomlarından oluşursa {koyu:bileşik molekülü} ({us:H|2}O, {us:CO|2}, {us:NH|3}, {us:CH|4}, HCl) adını alır. 3) {koyu:İyon:} Elektron vermiş ({koyu:katyon}: {us:Na|+}, {us:Ca|2+}, {us:NH|4|+}) veya elektron almış ({koyu:anyon}: {us:Cl|-}, {us:O|2-}, {us:SO|4|2-}, {us:NO|3|-}) yüklü tanecikler ya da atom gruplarıdır ({koyu:kök iyonlar}).",
+        "Kimyasal türler birbirine yaklaştığında elektron bulutları ve çekirdekler arasında elektrostatik itme ve çekme kuvvetleri doğar. Çekme kuvvetlerinin itme kuvvetlerinden çok büyük olduğu ve açığa çıkan (veya bağı kırmak için gereken) enerjinin {koyu:40 kJ/mol'den büyük} (genellikle yüzlerce kJ/mol) olduğu etkileşimlere {koyu:Güçlü Etkileşimler (Kimyasal Bağlar)} denir. Güçlü etkileşimler yeni kimyasal türler oluşturur ve üç çeşittir: {koyu:İyonik Bağ} (metal-ametal iyonları arası), {koyu:Kovalent Bağ} (ametal-ametal atomları arası) ve {koyu:Metalik Bağ} (metal katyonları ile serbest elektron denizi arası).",
+        "Çekme ve itme kuvvetleri arasındaki farkın küçük olduğu, bağ enerjisinin ise {koyu:genellikle 40 kJ/mol'den küçük} olduğu etkileşimlere {koyu:Zayıf Etkileşimler (Fiziksel Bağlar)} denir. Zayıf etkileşimler moleküller arasında kurulur; maddenin erime-kaynama noktası ve fiziksel hâlini (katı, sıvı, gaz) belirler. İki ana grubu vardır: {koyu:Van der Waals Kuvvetleri} (dipol-dipol, iyon-dipol, indüklenmiş dipol/London kuvvetleri) ve {koyu:Hidrojen Bağı} (H atomunun F, O veya N atomlarına bağlı olduğu polar moleküller arası etkileşim)."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">KİMYASAL TÜRLER VE ETKİLEŞİMLERİN SINIFLANDIRILMASI</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"195\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0891b2\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#0e7490\">1. KİMYASAL TÜRLER (ATOM, İYON, MOLEKÜL)</text>\n  <text x=\"35\" y=\"96\" font-size=\"11\" font-weight=\"bold\" fill=\"#155e75\">• Atom (Nötr tek tanecik):</text>\n  <text x=\"45\" y=\"112\" font-size=\"10.5\" fill=\"#0e7490\">He, Ne, Ar, Fe, Cu, Na, Au (Metaller ve soygazlar)</text>\n  <text x=\"35\" y=\"136\" font-size=\"11\" font-weight=\"bold\" fill=\"#155e75\">• Molekül (Kovalent bağlı nötr atom grubu):</text>\n  <text x=\"45\" y=\"152\" font-size=\"10.5\" fill=\"#0e7490\">- Element molekülü: H2, O2, N2, Cl2, O3, P4, S8</text>\n  <text x=\"45\" y=\"168\" font-size=\"10.5\" fill=\"#0e7490\">- Bileşik molekülü: H2O, CO2, NH3, CH4, HCl, C6H12O6</text>\n  <text x=\"35\" y=\"192\" font-size=\"11\" font-weight=\"bold\" fill=\"#155e75\">• İyon (Yüklü tanecik — Katyon [+] ve Anyon [-]):</text>\n  <text x=\"45\" y=\"208\" font-size=\"10.5\" fill=\"#0e7490\">Na+, Mg2+, NH4+ (Katyon) | Cl-, O2-, SO4^2-, NO3- (Anyon)</text>\n  <text x=\"35\" y=\"226\" font-size=\"10\" font-weight=\"bold\" fill=\"#b91c1c\">Not: NaCl gibi iyonik bileşikler molekül DEĞİLDİR (birim hücre)!</text>\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"195\" rx=\"10\" fill=\"#fff1f2\" stroke=\"#e11d48\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#9f1239\">2. GÜÇLÜ VE ZAYIF ETKİLEŞİMLER (40 kJ/mol SINIRI)</text>\n  <text x=\"375\" y=\"96\" font-size=\"11\" font-weight=\"bold\" fill=\"#881337\">• Güçlü Etkileşimler (Kimyasal Bağlar — &gt; 40 kJ/mol):</text>\n  <text x=\"385\" y=\"114\" font-size=\"10.5\" fill=\"#9f1239\">1) İyonik Bağ (Metal + Ametal iyonları arası: NaCl, MgO)</text>\n  <text x=\"385\" y=\"132\" font-size=\"10.5\" fill=\"#9f1239\">2) Kovalent Bağ (Ametal + Ametal elektron ortaklığı: H2O)</text>\n  <text x=\"385\" y=\"150\" font-size=\"10.5\" fill=\"#9f1239\">3) Metalik Bağ (Metal katyonu + Elektron denizi: Fe, Cu)</text>\n  <text x=\"375\" y=\"176\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\">• Zayıf Etkileşimler (Fiziksel Bağlar — &lt; 40 kJ/mol):</text>\n  <text x=\"385\" y=\"194\" font-size=\"10.5\" fill=\"#1e3a8a\">1) Van der Waals Kuvvetleri (Dipol-dipol, İyon-dipol, London)</text>\n  <text x=\"385\" y=\"212\" font-size=\"10.5\" fill=\"#1e3a8a\">2) Hidrojen Bağı (H atomunun F, O, N ile yaptığı etkileşim)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Sodyum klorür (NaCl), kalsiyum oksit (CaO) ve potasyum nitrat (KNO3) gibi iyonik yapılı bileşikler doğada bağımsız moleküller hâlinde değil, iyonik kristal örgü (birim hücre) hâlinde bulunur; bu yüzden iyonik bileşiklere 'molekül' DENMEZ!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Suyun buharlaşması: H2O(s) + 43,9 kJ → H2O(g) olayında enerji 40 kJ/mol'den biraz büyük olsa da suyun kimyasal formülü değişmeyip yalnızca hâl değişimi gerçekleştiği için kopan bağ ZAYIF ETKİLEŞİMDİR (hidrojen bağıdır)."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Periyodik sistemde yerleri verilen 11Na, 12Mg, 13Al ve 19K elementlerini; a) Atom yarıçaplarına göre, b) Birinci iyonlaşma enerjilerine göre büyükten küçüğe doğru sıralayınız.",
+      "cevap": "Katman dağılımları: 11Na (2-8-1: 3. periyot 1A), 12Mg (2-8-2: 3. periyot 2A), 13Al (2-8-3: 3. periyot 3A) ve 19K (2-8-8-1: 4. periyot 1A). a) Atom yarıçapı: 4 katmanlı olan K en büyüktür; 3. periyotta soldan sağa yarıçap küçüldüğü için sıralama: K > Na > Mg > Al olur. b) 1. İyonlaşma enerjisi: 3. periyotta 2A küresel simetriden dolayı 3A'dan büyüktür (Mg > Al > Na); 1A grubunda aşağıda olan K'nin İE'si en küçüktür. Sıralama: Mg > Al > Na > K."
+    },
+    {
+      "soru": "Bir A grubu elementinin ilk dört iyonlaşma enerjisi sırasıyla İE1 = 578 kJ/mol, İE2 = 1817 kJ/mol, İE3 = 2745 kJ/mol ve İE4 = 11.577 kJ/mol olarak ölçülmüştür. Bu elementin periyodik tablonun hangi grubunda yer aldığını ve kararlı bileşiklerinde alacağı iyon yükünü bulunuz.",
+      "cevap": "Ardışık iyonlaşma enerjileri arasındaki oranlara bakıldığında İE3'ten (2745) İE4'e (11.577) geçerken yaklaşık 4,2 katlık çok büyük bir sıçrama görülmektedir. Bu durum atomun 3 tane değerlik elektronu olduğunu ve 4. elektronun iç katmandaki soygaz düzeninden koparıldığını gösterir. Dolayısıyla element 3A grubundadır ve bileşiklerinde +3 yük (X³⁺) alır."
+    },
+    {
+      "soru": "On elektronlu izoelektronik tanecikler olan 8O²⁻, 10Ne ve 12Mg²⁺ kimyasal türlerini yarıçaplarına göre büyükten küçüğe sıralayarak nedenini açıklayınız.",
+      "cevap": "Üç taneciğin de elektron sayısı 10 ve katman dizilimi (2-8) aynıdır. Elektron sayıları eşit olduğunda proton sayısı (çekirdek yükü) fazla olan tanecik elektronları daha güçlü çeker ve yarıçapı daha küçük olur. Bu nedenle yarıçap sıralaması: 8O²⁻ > 10Ne > 12Mg²⁺ şeklindedir."
+    },
+    {
+      "soru": "Aşağıda verilen tanecikleri 'Atom', 'Molekül (Element veya Bileşik Molekülü)' ve 'İyon (Katyon veya Anyon)' olarak sınıflandırınız:\nHe, O3, NH3, Ca²⁺, SO4²⁻, Fe, CO2, NH4⁺",
+      "cevap": "Atom: He, Fe. Element molekülü: O3. Bileşik molekülü: NH3, CO2. Katyon (pozitif iyon): Ca²⁺, NH4⁺. Anyon (negatif iyon): SO4²⁻."
+    },
+    {
+      "soru": "Aşağıdaki değişimlerde kopan veya oluşan etkileşimlerin 'Güçlü etkileşim (kimyasal)' mi yoksa 'Zayıf etkileşim (fiziksel)' mi olduğunu gerekçesiyle belirtiniz:\nI. NaCl(k) + 787 kJ/mol → Na⁺(g) + Cl⁻(g)\nII. C2H5OH(s) + 38,6 kJ/mol → C2H5OH(g)\nIII. I2(g) → 2I(g) (ΔH = +151 kJ/mol)",
+      "cevap": "I. Tepkimede 787 kJ/mol enerji harcanarak NaCl iyonik bileşiği zıt yüklü gaz iyonlarına ayrışmıştır; güçlü etkileşim (iyonik bağ) kopmuştur. II. Tepkimede 38,6 kJ/mol (< 40 kJ/mol) enerjiyle sıvı etil alkol gaz hâline geçmiştir (hâl değişimi); zayıf etkileşim (hidrojen bağı) kopmuştur. III. Tepkimede 151 kJ/mol enerjiyle I2 molekülündeki atomlar arası kovalent bağ kırılmıştır; güçlü etkileşim kopmuştur."
+    },
+    {
+      "soru": "Metalik bağın hangi kimyasal türler arasında ve nasıl oluştuğunu 'elektron denizi modeli' çerçevesinde kısaca açıklayınız.",
+      "cevap": "Metal atomlarının son katmanlarındaki değerlik elektronları çekirdek tarafından zayıf çekilir. Bu elektronlar komşu metal atomlarının boş değerlik orbitallerinde serbestçe dolaşarak negatif yüklü bir 'elektron denizi' oluşturur. Serbest elektronlarını bırakan pozitif yüklü metal katyonları ile negatif yüklü elektron denizi arasındaki elektrostatik çekim kuvvetine metalik bağ (güçlü etkileşim) denir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "soru": "Periyodik sistemin aynı periyodunda soldan sağa (1A grubundan 7A grubuna) doğru gidildikçe elementlerin özelliklerinde meydana gelen değişimlerle ilgili aşağıdakilerden hangisi yanlıştır?",
+      "secenekler": [
+        "Temel enerji düzeyi (katman) sayısı değişmez, sabit kalır.",
+        "Atom numarası ve çekirdeğin elektronlara uyguladığı çekim gücü artar.",
+        "Atom yarıçapı (atom hacmi) düzenli olarak artar.",
+        "Bağ elektronlarını çekme ölçüsü olan elektronegatiflik artar.",
+        "Elementlerin metalik özelliği azalırken ametalik özelliği artar."
+      ],
+      "dogru": 2,
+      "aciklama": "Aynı periyotta soldan sağa doğru gidildikçe katman sayısı sabit kalırken çekirdek yükü (proton sayısı) arttığı için elektronlar çekirdeğe daha çok çekilir ve atom yarıçapı AZALIR.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Baş grup (A grubu) elementi olan nötr X atomunun ilk dört iyonlaşma enerjisi sırasıyla 738, 1450, 7730 ve 10540 kJ/mol olarak verilmiştir. Buna göre X elementi periyodik tablonun hangi grubunda yer alır?",
+      "secenekler": [
+        "1A grubu (Alkali metaller)",
+        "2A grubu (Toprak alkali metaller)",
+        "3A grubu (Toprak metalleri)",
+        "4A grubu (Karbon grubu)",
+        "5A grubu (Azot grubu)"
+      ],
+      "dogru": 1,
+      "aciklama": "İE2 (1450 kJ/mol) değerinden İE3 (7730 kJ/mol) değerine geçerken yaklaşık 5,3 katlık büyük bir sıçrama gerçekleşmiştir. Bu sıçrama X atomunun 2 değerlik elektronu olduğunu ve 2A grubunda yer aldığını gösterir.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Aşağıda verilen maddelerden hangisinin karşısında belirtilen kimyasal tür sınıfı yanlış eşleştirilmiştir?",
+      "secenekler": [
+        "He ve Cu — Atom",
+        "H2O ve CO2 — Bileşik molekülü",
+        "O2 ve P4 — Element molekülü",
+        "NaCl ve MgO — Bileşik molekülü",
+        "NH4+ ve SO4^2- — Kök iyon"
+      ],
+      "dogru": 3,
+      "aciklama": "NaCl ve MgO metal ve ametal iyonlarından oluşan iyonik yapılı bileşiklerdir; iyonik bileşikler moleküler yapıda değildir, kristal örgü (birim hücre) yapısındadır.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Kimyasal türler arası etkileşimlerin sınıflandırılmasına göre aşağıdakilerden hangisi 'güçlü etkileşimler (kimyasal bağlar)' arasında yer alır?",
+      "secenekler": [
+        "Dipol - dipol etkileşimleri",
+        "London (indüklenmiş dipol) kuvvetleri",
+        "Moleküller arası hidrojen bağı",
+        "İyon - dipol etkileşimleri",
+        "Atomlar arası kovalent bağ"
+      ],
+      "dogru": 4,
+      "aciklama": "Güçlü etkileşimler (kimyasal bağlar) İyonik bağ, Kovalent bağ ve Metalik bağ olmak üzere üç tanedir; diğer dört seçenek moleküller arası zayıf etkileşimlerdir.",
+      "tur": "coktan"
+    },
+    {
+      "ifadeler": [
+        {
+          "metin": "Aynı periyotta bulunan 2A grubu elementinin birinci iyonlaşma enerjisi, küresel simetri kararlılığı nedeniyle 3A grubu elementinden daha büyüktür.",
+          "dogru": true,
+          "aciklama": "Periyotta soldan sağa 1. İE sıralamasında küresel simetriden ötürü 2A > 3A ve 5A > 6A durumu görülür."
+        },
+        {
+          "metin": "Nötr bir atom dışarıdan elektron alarak negatif yüklü anyon hâline geçtiğinde taneciğin yarıçapı küçülür.",
+          "dogru": false,
+          "aciklama": "Atom elektron aldığında (anyon oluştuğunda) elektron başına düşen çekirdek çekim gücü azalır ve elektronlar arası itme artar; bu yüzden yarıçap BÜYÜR."
+        },
+        {
+          "metin": "Periyodik sistemde elektronegatiflik değeri en yüksek olan element 7A grubunun ilk üyesi olan Flor (F) elementidir.",
+          "dogru": true,
+          "aciklama": "Soygazlar bağ yapmadığı için elektronegatiflik 7A grubunun en üstündeki Flor (4,0) elementinde en yüksek değere ulaşır."
+        },
+        {
+          "metin": "Bir etkileşimin kırılması sırasında yaklaşık 40 kJ/mol'den çok daha büyük enerji harcanıyor ve yeni kimyasal türler oluşuyorsa bu etkileşim güçlü etkileşimdir.",
+          "dogru": true,
+          "aciklama": "Güçlü etkileşimlerde bağ enerjisi genellikle 40 kJ/mol'den çok büyüktür ve kimyasal özellik değişir."
+        },
+        {
+          "metin": "Ozon (O3), azot (N2) ve kükürt (S8) farklı cins atomlar içerdikleri için bileşik molekülü olarak sınıflandırılır.",
+          "dogru": false,
+          "aciklama": "O3, N2 ve S8 tek cins ametal atomunun kovalent bağlarla birleşmesiyle oluştuğu için bileşik molekülü değil, element molekülüdür."
+        }
+      ],
+      "tur": "dy"
+    },
+    {
+      "ciftler": [
+        [
+          "Atom Yarıçapı",
+          "Aynı grupta yukarıdan aşağıya katman sayısı arttıkça büyüyen, soldan sağa küçülen özellik"
+        ],
+        [
+          "Birinci İyonlaşma Enerjisi",
+          "Gaz hâlindeki nötr bir atomdan ilk elektronu koparmak için verilmesi gereken enerji"
+        ],
+        [
+          "Elektronegatiflik",
+          "Bir atomun kimyasal bağdaki ortaklaşa kullanılan elektron çiftini kendine çekme gücü"
+        ],
+        [
+          "Molekül",
+          "En az iki ametal atomunun kovalent bağla birleşerek oluşturduğu yüksüz atom grubu"
+        ],
+        [
+          "Metalik Bağ",
+          "Pozitif yüklü metal katyonları ile serbest değerlik elektron denizi arasındaki güçlü etkileşim"
+        ]
+      ],
+      "tur": "eslestir"
+    },
+    {
+      "cumleler": [
+        {
+          "metin": "Elektron vererek pozitif (+) yükle yüklenmiş iyonlara (örneğin {us:Na|+}, {us:Mg|2+}) kimyada ___ adı verilir.",
+          "cevap": "katyon"
+        },
+        {
+          "metin": "Aynı periyotta birinci iyonlaşma enerjisi en yüksek olan elementler kararlı yapıdaki ___ grubu elementleridir.",
+          "cevap": "8A"
+        },
+        {
+          "metin": "Soygazlar ve metaller doğada tek atomlu yapıda bulundukları için kimyasal tür olarak ___ sınıfında yer alır.",
+          "cevap": "atom"
+        },
+        {
+          "metin": "Moleküller arasında kurulan Van der Waals kuvvetleri ve hidrojen bağı ___ etkileşimler (fiziksel bağlar) grubuna girer.",
+          "cevap": "zayıf"
+        },
+        {
+          "metin": "Aynı grupta yukarıdan aşağıya doğru inildikçe atomların temel enerji düzeyi (yani ___ sayısı) artar.",
+          "cevap": "katman"
+        }
+      ],
+      "fazla": [
+        "anyon",
+        "güçlü"
+      ],
+      "tur": "bosluk"
+    },
+    {
+      "soru": "Üçüncü periyotta yer alan 11Na, 12Mg ve 17Cl elementlerini ele alalım: 1) Bu üç elementin katman elektron dizilimlerini yazarak grup numaralarını belirleyiniz. 2) Atom yarıçaplarını ve birinci iyonlaşma enerjilerini büyükten küçüğe sıralayınız. 3) Na ile Cl arasında ve iki Cl atomu arasında hangi tür güçlü etkileşimlerin oluşacağını açıklayınız.",
+      "ipuclari": [
+        "İlk olarak 11Na (2-8-1), 12Mg (2-8-2) ve 17Cl (2-8-7) dizilimlerinden periyot ve grup numaralarını çıkarınız.",
+        "İkinci olarak aynı periyotta soldan sağa yarıçapın azaldığını ve 2A > 3A küresel simetri kuralını dikkate alarak sıralama yapınız.",
+        "Üçüncü olarak metal-ametal (Na-Cl) ve ametal-ametal (Cl-Cl) etkileşim türlerini belirtiniz."
+      ],
+      "cevap": "1) Üç element de 3 katmanlı (3. periyot) olup; 11Na (2-8-1) 1A grubu metali, 12Mg (2-8-2) 2A grubu metali, 17Cl (2-8-7) ise 7A grubu ametalidir. 2) Aynı periyotta soldan sağa çekirdek çekimi arttığı için atom yarıçapı sıralaması: Na > Mg > Cl olur. Birinci iyonlaşma enerjisi ise soldan sağa arttığı için: Cl > Mg > Na şeklindedir. 3) Metal olan Na ile ametal olan Cl arasında elektron alışverişiyle 'iyonik bağ' (NaCl birim hücresi); ametal olan iki Cl atomu arasında ise elektron ortaklaşmasıyla 'kovalent bağ' (Cl2 element molekülü) oluşur; her ikisi de güçlü etkileşimdir.",
+      "tur": "ogretici"
+    }
+  ],
+  "ozet": [
+    "{koyu:Periyodik Değişimi Etkileyen Etmenler:} Aynı grupta aşağı inildikçe {koyu:katman sayısı} arttığı için yarıçap büyür, İE ve elektronegatiflik azalır; aynı periyotta sağa gidildikçe {koyu:çekirdek çekimi} arttığı için yarıçap küçülür, İE ve elektronegatiflik artar.",
+    "{koyu:İyonlaşma Enerjisi Sıralaması:} Bir periyotta 1. İE küresel simetri nedeniyle {koyu:1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A} şeklinde sıralanır; ardışık İE tablosunda {koyu:3,5-4 katlık sıçrama} grup numarasını verir.",
+    "{koyu:İyon Yarıçapları:} Nötr atom katyon ({us:X|+}) oluştururken yarıçapı küçülür, anyon ({us:Y|-}) oluştururken yarıçapı büyür.",
+    "{koyu:Kimyasal Türler:} Maddeleri oluşturan tanecikler {koyu:Atom} (He, Fe), {koyu:Molekül} ({us:O|2}, {us:H|2}O — kovalent bağlı nötr grup) ve {koyu:İyon} ({us:Na|+}, {us:Cl|-}, {us:SO|4|2-}) olmak üzere üçe ayrılır; iyonik bileşikler molekül değildir.",
+    "{koyu:Güçlü ve Zayıf Etkileşimler:} Bağ enerjisi > 40 kJ/mol olan {koyu:iyonik, kovalent ve metalik bağlar} güçlü (kimyasal) etkileşim; < 40 kJ/mol olan {koyu:Van der Waals ve hidrojen bağları} ise zayıf (fiziksel) etkileşimdir."
+  ]
+}

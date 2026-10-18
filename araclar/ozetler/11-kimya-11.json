@@ -1,0 +1,261 @@
+{
+  "ad": "11-kimya-11",
+  "sinif": 11,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 11,
+  "tarih": "30 Kasım-4 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "1. Tema: Etkileşim",
+  "konu": "Tek ve Çok Basamaklı (Mekanizmalı) Tepkimelerde Hız Bağıntısı, Tepkime Derecesi (Mertebesi), Molekülerite ve Hız Sabiti (k) Özellikleri (KİM.11.1.7)",
+  "ciktilar": [
+    "Tek basamaklı ve çok basamaklı (mekanizmalı) kimyasal tepkimelerde hız bağıntısını yazarak tepkime derecesi (mertebesi) ile molekülerite kavramlarını ayırt eder.",
+    "Mekanizmalı tepkimelerde hız belirleyen yavaş basamağı, ara ürünü ve katalizörü potansiyel enerji diyagramları ve basamak denklemleri üzerinden belirler.",
+    "Deneysel derişim-başlangıç hızı tablolarını çözümleyerek tepkimenin hız denklemini, hız sabitinin (k) sayısal değerini, birimini ve k'yi etkileyen etkenleri yapılandırır."
+  ],
+  "giris": "Kimyasal bir tepkimenin hızının reaktiflerin molar derişimlerine nasıl bağlı olduğunu matematiksel olarak ifade eden denkleme {koyu:hız bağıntısı (hız denklemi)} adı verilir. Tek adımda gerçekleşen tepkimelerde hız denklemi gaz ve sulu çözelti fazındaki girenlerin katsayılarına göre doğrudan yazılırken, birbirini izleyen birden fazla basamaktan oluşan {koyu:mekanizmalı tepkimelerde} toplam hızı aktifleşme enerjisi en yüksek olan {koyu:en yavaş basamak} belirler.",
+  "bolumler": [
+    {
+      "baslik": "Tek Basamaklı Tepkimelerde Hız Bağıntısı, Derece ve Molekülerite",
+      "metin": [
+        "Reaktif taneciklerinin tek bir etkin çarpışma adımıyla doğrudan ürünlere dönüştüğü tepkimelere {koyu:tek basamaklı (temel) tepkimeler} denir. Genel denklemi {koyu:aA(g) + bB(suda) + cC(k) → Ürünler} biçiminde olan tek basamaklı bir tepkimede tepkime hızı, gaz fazındaki ({koyu:g}) ve sulu çözeltideki ({koyu:suda}) reaktiflerin molar derişimlerinin stokiyometrik katsayılarıyla üs olarak alındığı {koyu:r = k ·} {us:[A]|a} {koyu:·} {us:[B]|b} bağıntısıyla hesaplanır.",
+        "Saf katıların ({koyu:k}) ve saf sıvıların ({koyu:s}) sabit sıcaklıkta birim hacimdeki madde miktarları (molar derişimleri) tepkime süresince değişmediği için hız bağıntısında yer almazlar; bunların etkisi hız sabiti {koyu:k} içerisine dahil edilir. Deneysel olarak belirlenen hız bağıntısındaki derişim terimlerinin üsleri toplamına ({koyu:a + b}) {koyu:tepkime derecesi (mertebesi)} denir. Yukarıdaki tepkime A'ya göre {koyu:a.} dereceden, B'ye göre {koyu:b.} dereceden ve toplamda {koyu:(a + b).} derecedendir.",
+        "Net tepkime denkleminde girenler tarafında yer alan bütün taneciklerin (katı, sıvı, gaz veya suda ayrımı yapılmaksızın) stokiyometrik katsayıları toplamına ise {koyu:molekülerite} adı verilir. Molekülerite teorik bir büyüklük olup pozitif tam sayı değerleri alır: girenlerin katsayıları toplamı 1 ise {koyu:monomoleküler (ünimoleküler)}, 2 ise {koyu:bimoleküler}, 3 ise {koyu:trimoleküler (termoleküler)} tepkime olarak adlandırılır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 255\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"255\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">TEK BASAMAKLI TEPKİMEDE HIZ BAĞINTISI, DERECE VE MOLEKÜLERİTE</text>\n  <rect x=\"20\" y=\"42\" width=\"660\" height=\"46\" rx=\"8\" fill=\"#ede9fe\" stroke=\"#7c3aed\" stroke-width=\"2\"/>\n  <text x=\"350\" y=\"62\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#5b21b6\">Tek Basamaklı Tepkime:   Zn(k)  +  2HCl(suda)  +  O2(g)   →   ZnCl2(suda)  +  H2O(s)</text>\n  <text x=\"350\" y=\"80\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Not: Gazlar (g) ve sulu çözeltiler (suda) hız bağıntısına yazılır; saf katı (k) ve saf sıvılar (s) yazılmaz.</text>\n\n  <rect x=\"20\" y=\"102\" width=\"210\" height=\"136\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"125\" y=\"124\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e40af\">1. Hız Bağıntısı (Denklemi)</text>\n  <rect x=\"35\" y=\"136\" width=\"180\" height=\"34\" rx=\"6\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"125\" y=\"158\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1d4ed8\">r = k · [HCl]² · [O2]</text>\n  <text x=\"32\" y=\"190\" font-size=\"10\" fill=\"#334155\">• Zn(k) katı olduğundan yer almaz.</text>\n  <text x=\"32\" y=\"208\" font-size=\"10\" fill=\"#334155\">• HCl'nin katsayısı 2 üs olarak gelir.</text>\n  <text x=\"32\" y=\"226\" font-size=\"10\" fill=\"#334155\">• O2 gazının katsayısı 1 üs olur.</text>\n\n  <rect x=\"245\" y=\"102\" width=\"210\" height=\"136\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"350\" y=\"124\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#92400e\">2. Tepkime Derecesi (Mertebe)</text>\n  <rect x=\"260\" y=\"136\" width=\"180\" height=\"34\" rx=\"6\" fill=\"#ffffff\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"158\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#b45309\">Derece = 2 + 1 = 3</text>\n  <text x=\"257\" y=\"190\" font-size=\"10\" fill=\"#334155\">• Deneysel hız denkleminden bulunur.</text>\n  <text x=\"257\" y=\"208\" font-size=\"10\" fill=\"#334155\">• HCl'ye göre 2., O2'ye göre 1. derece.</text>\n  <text x=\"257\" y=\"226\" font-size=\"10\" fill=\"#334155\">• Sıfır veya kesirli sayı da olabilir.</text>\n\n  <rect x=\"470\" y=\"102\" width=\"210\" height=\"136\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"575\" y=\"124\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">3. Molekülerite (Tanecik Sayısı)</text>\n  <rect x=\"485\" y=\"136\" width=\"180\" height=\"34\" rx=\"6\" fill=\"#ffffff\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n  <text x=\"575\" y=\"158\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">Molekülerite = 1 + 2 + 1 = 4</text>\n  <text x=\"482\" y=\"190\" font-size=\"10\" fill=\"#334155\">• Net tepkime girenlerinden bulunur.</text>\n  <text x=\"482\" y=\"208\" font-size=\"10\" fill=\"#334155\">• Katı, sıvı, gaz tüm girenler toplanır.</text>\n  <text x=\"482\" y=\"226\" font-size=\"10\" fill=\"#334155\">• Daima pozitif tam sayıdır (Teorik).</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Sıfırıncı Dereceden Tepkimeler",
+          "metin": "Yalnız katı veya saf sıvı fazındaki reaktiflerin yer aldığı CaCO3(k) → CaO(k) + CO2(g) gibi tek basamaklı bir tepkimede hız bağıntısına yazılacak gaz veya sulu çözelti reaktifi olmadığından hız bağıntısı r = k şeklinde yazılır ve tepkime derecesi 0 (sıfır) olur."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Derece ile Molekülerite Ne Zaman Farklıdır?",
+          "metin": "Girenlerinde katı/sıvı bulunan tek basamaklı tepkimelerde veya çok basamaklı (mekanizmalı) tepkimelerde tepkime derecesi ile molekülerite birbirinden farklı çıkabilir."
+        }
+      ]
+    },
+    {
+      "baslik": "Çok Basamaklı (Mekanizmalı) Tepkimelerde Yavaş Basamak, Ara Ürün ve Katalizör",
+      "metin": [
+        "Birçok kimyasal tepkime reaktiflerin tek seferde çarpışmasıyla değil, birbirini izleyen iki ya da daha fazla temel basamaktan oluşan bir {koyu:tepkime mekanizması} üzerinden yürür. Mekanizmalı tepkimelerde basamakların hızları birbirinden farklıdır ve toplam tepkimenin hızını, ileri aktifleşme enerjisi ({koyu:Eai}) en büyük olan {koyu:en yavaş basamak} (hız belirleyen basamak) tayin eder. Bu nedenle mekanizmalı bir tepkimenin hız bağıntısı net tepkimeye göre değil, {koyu:yavaş basamağın girenlerine göre} yazılır.",
+        "Mekanizmalı tepkimenin alt basamakları taraf tarafa toplandığında {koyu:net (toplam) tepkime denklemi} elde edilir. Bu toplama işlemi sırasında, önceki basamakların birinde ürün olarak oluşup sonraki basamakların birinde reaktif olarak harcanan ve net tepkimede yer almayan taneciklere {koyu:ara ürün} adı verilir. Ara ürünler tepkimenin başında ortamda bulunmaz, tepkime sırasında geçici olarak üretilip tüketilir.",
+        "Tepkimeye dışarıdan eklenerek önceki basamaklardan birine reaktif olarak giren ve sonraki basamakların birinden kimyasal yapısı değişmeden ürün olarak geri çıkan maddelere ise {koyu:katalizör} denir. Katalizör de ara ürün gibi net tepkime denkleminde yer almaz; ancak yavaş basamağın aktifleşme enerjisini düşürerek tepkimeyi hızlandırır. Potansiyel enerji (PE) diyagramında kaç tane tepe noktası varsa tepkime o kadar basamaklıdır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">MEKANİZMALI TEPKİMEDE YAVAŞ BASAMAK, ARA ÜRÜN VE KATALİZÖR</text>\n  <rect x=\"20\" y=\"44\" width=\"380\" height=\"198\" rx=\"10\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"210\" y=\"66\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\">Tepkime Mekanizması ve Taraf Tarafa Toplama</text>\n  <rect x=\"34\" y=\"78\" width=\"352\" height=\"36\" rx=\"6\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.5\"/>\n  <text x=\"44\" y=\"94\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#991b1b\">1. Basamak (Yavaş - Hız Belirleyen):</text>\n  <text x=\"44\" y=\"109\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">H2O2(suda) + I⁻(suda)  →  H2O(s) + IO⁻(suda)</text>\n\n  <rect x=\"34\" y=\"122\" width=\"352\" height=\"36\" rx=\"6\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.5\"/>\n  <text x=\"44\" y=\"138\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0369a1\">2. Basamak (Hızlı):</text>\n  <text x=\"44\" y=\"153\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">H2O2(suda) + IO⁻(suda)  →  H2O(s) + O2(g) + I⁻(suda)</text>\n\n  <line x1=\"34\" y1=\"168\" x2=\"386\" y2=\"168\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <rect x=\"34\" y=\"176\" width=\"352\" height=\"54\" rx=\"6\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <text x=\"44\" y=\"194\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">Net (Toplam) Tepkime Denklemi:</text>\n  <text x=\"44\" y=\"211\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#0f172a\">2H2O2(suda)  →  2H2O(s) + O2(g)</text>\n  <text x=\"44\" y=\"225\" font-size=\"9.5\" fill=\"#334155\">(Molekülerite = 2, ancak tepkime tek basamaklı değildir!)</text>\n\n  <rect x=\"415\" y=\"44\" width=\"265\" height=\"60\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <text x=\"547\" y=\"64\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#991b1b\">Hız Bağıntısı (Yavaş Basamaktan)</text>\n  <text x=\"547\" y=\"83\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">r = k · [H2O2] · [I⁻]</text>\n  <text x=\"547\" y=\"98\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Tepkime Derecesi = 1 + 1 = 2</text>\n\n  <rect x=\"415\" y=\"113\" width=\"265\" height=\"60\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"547\" y=\"133\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">Ara Ürün: IO⁻(suda)</text>\n  <text x=\"547\" y=\"151\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">1. basamakta ürün olarak oluşur,</text>\n  <text x=\"547\" y=\"165\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">2. basamakta reaktif olarak harcanır.</text>\n\n  <rect x=\"415\" y=\"182\" width=\"265\" height=\"60\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"547\" y=\"202\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">Katalizör: I⁻(suda)</text>\n  <text x=\"547\" y=\"220\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">1. basamağa reaktif olarak girer,</text>\n  <text x=\"547\" y=\"234\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">2. basamaktan değişmeden geri çıkar.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Mekanizmalı Olduğunu Nasıl Anlarız?",
+          "metin": "Bir tepkimenin deneysel hız bağıntısı, verilen net tepkimenin girenleriyle uyuşmuyorsa o tepkime çok basamaklıdır (mekanizmalıdır) ve hız bağıntısı yavaş basamağın girenlerini gösterir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Potansiyel Enerji Grafiğinde En Yavaş Basamak",
+          "metin": "PE diyagramında tepe noktası en yüksek olan değil, ileri aktifleşme enerjisi (Eai = Tepe enerjisi - Basamağın giren enerjisi farkı) en büyük olan basamak en yavaş basamaktır."
+        }
+      ]
+    },
+    {
+      "baslik": "Deneysel Hız Tabloları ve Hız Sabitinin (k) Özellikleri",
+      "metin": [
+        "Bir kimyasal tepkimenin hız bağıntısı ve reaktiflere göre dereceleri laboratuvarda {koyu:başlangıç hızları yöntemiyle} (kontrollü deney tablolarıyla) belirlenir. Birden fazla reaktif içeren bir tepkimede, bir reaktifin derişiminin hıza etkisini bulmak için diğer reaktiflerin derişimlerinin sabit tutulduğu iki deney seçilir. Sabit tutulmayan reaktifin derişimi {koyu:m} katına çıktığında başlangıç hızı {us:m|a} katına çıkıyorsa tepkime o reaktife göre {koyu:a.} derecedendir; hız değişmiyorsa o reaktife göre {koyu:0.} derecedendir (hız bağıntısına yazılmaz).",
+        "Hız bağıntısındaki orantı katsayısı olan {koyu:hız sabiti (k)}, her tepkime için karakteristik bir büyüklüktür. Hız sabiti {koyu:k}'nin sayısal değeri; {koyu:sıcaklık}, {koyu:katalizör}, {koyu:temas yüzeyi} (heterojen tepkimelerde katının toz hâline getirilmesi) ve {koyu:reaktiflerin cinsi} ile değişir. Buna karşılık reaktiflerin derişimlerinin veya kap hacminin değiştirilmesi tepkime hızını ({koyu:r}) değiştirse de {koyu:hız sabiti k'nin sayısal değerini değiştirmez}.",
+        "Hız sabiti {koyu:k}'nin birimi, tepkimenin toplam derecesine ({koyu:n}) bağlı olarak değişir. Tepkime hızı birimi {kesir:mol|L·s} ve derişim birimi {kesir:mol|L} olduğundan, toplam derecesi {koyu:n} olan bir tepkimede {koyu:k}'nin birimi {koyu:Birimi(k) =} {us:(L / mol)|n-1} {koyu:· (1 / s)} bağıntısıyla bulunur. Örneğin {koyu:n = 1} için {koyu:1/s}, {koyu:n = 2} için {kesir:L|mol·s}, {koyu:n = 3} için {kesir:L²|mol²·s} birimi elde edilir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 255\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"255\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">DENEYSEL HIZ TABLOSU ÇÖZÜMÜ VE HIZ SABİTİ (k) ÖZELLİKLERİ</text>\n  <rect x=\"20\" y=\"44\" width=\"335\" height=\"194\" rx=\"10\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <rect x=\"20\" y=\"44\" width=\"335\" height=\"28\" rx=\"8\" fill=\"#2563eb\"/>\n  <text x=\"55\" y=\"63\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#ffffff\">Deney</text>\n  <text x=\"125\" y=\"63\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#ffffff\">[X] (mol/L)</text>\n  <text x=\"200\" y=\"63\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#ffffff\">[Y] (mol/L)</text>\n  <text x=\"292\" y=\"63\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#ffffff\">Hız r (mol/L·s)</text>\n\n  <text x=\"55\" y=\"92\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">1</text>\n  <text x=\"125\" y=\"92\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">0,10</text>\n  <text x=\"200\" y=\"92\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">0,10</text>\n  <text x=\"292\" y=\"92\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">2,0 · 10⁻³</text>\n  <line x1=\"28\" y1=\"102\" x2=\"345\" y2=\"102\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n\n  <text x=\"55\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">2</text>\n  <text x=\"125\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">0,10</text>\n  <text x=\"200\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">0,20 (×2)</text>\n  <text x=\"292\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">4,0 · 10⁻³ (×2)</text>\n  <line x1=\"28\" y1=\"132\" x2=\"345\" y2=\"132\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n\n  <text x=\"55\" y=\"152\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">3</text>\n  <text x=\"125\" y=\"152\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">0,30 (×3)</text>\n  <text x=\"200\" y=\"152\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">0,10</text>\n  <text x=\"292\" y=\"152\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">1,8 · 10⁻² (×9)</text>\n\n  <rect x=\"30\" y=\"166\" width=\"315\" height=\"62\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.2\"/>\n  <text x=\"38\" y=\"183\" font-size=\"10\" fill=\"#1e3a8a\">• 1 ve 2. deney: [X] sabit, [Y] 2 katına çıkınca r 2 katına çıktı ⇒ Y¹</text>\n  <text x=\"38\" y=\"200\" font-size=\"10\" fill=\"#1e3a8a\">• 1 ve 3. deney: [Y] sabit, [X] 3 katına çıkınca r 9 (3²) katına çıktı ⇒ X²</text>\n  <text x=\"38\" y=\"218\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1d4ed8\">• Hız Bağıntısı: r = k · [X]² · [Y]   (Toplam Derece n = 3)</text>\n\n  <rect x=\"370\" y=\"44\" width=\"310\" height=\"194\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"525\" y=\"66\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#92400e\">Hız Sabiti (k) Hesabı ve Özellikleri</text>\n  <rect x=\"384\" y=\"76\" width=\"282\" height=\"52\" rx=\"6\" fill=\"#ffffff\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/>\n  <text x=\"525\" y=\"95\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#78350f\">1. Deneyde Yerine Koyma:</text>\n  <text x=\"525\" y=\"114\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b45309\">2·10⁻³ = k · (0,1)² · (0,1)  ⇒  k = 2 L² / (mol²·s)</text>\n\n  <text x=\"384\" y=\"148\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">✓ k Değerini Değiştiren Faktörler (TSK):</text>\n  <text x=\"392\" y=\"164\" font-size=\"10\" fill=\"#334155\">1. Sıcaklık (T) artışı k'yi artırır.</text>\n  <text x=\"392\" y=\"180\" font-size=\"10\" fill=\"#334155\">2. Katalizör (K) ve Temas Yüzeyi (S) k'yi değiştirir.</text>\n  <text x=\"384\" y=\"202\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">✗ k Değerini Değiştirmeyen Faktör:</text>\n  <text x=\"392\" y=\"218\" font-size=\"10\" fill=\"#334155\">Reaktiflerin derişimi [X], [Y] k'yi değiştirmez!</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Hız Sabiti k Derişime Bağlı Değildir!",
+          "metin": "Sınavlarda en sık sorulan tuzak: Sabit sıcaklıkta kaba reaktif eklenmesi veya kabın hacminin küçültülmesi tepkime hızını (r) artırır ancak hız sabiti k'nin sayısal değerini değiştirmez."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Hız Sabiti Birimi Formülü",
+          "metin": "Toplam tepkime derecesi n bulunduktan sonra k'nin birimi her zaman (L / mol)^(n-1) · (1 / s) formülüyle saniyeler içinde yazılabilir."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Tek basamakta gerçekleşen C(k) + O2(g) → CO2(g) tepkimesi ile N2(g) + 3H2(g) → 2NH3(g) tepkimesinin hız bağıntılarını, tepkime derecelerini ve moleküleritelerini karşılaştırınız.",
+      "cevap": "Birinci tepkimede C(k) saf katı olduğu için hız bağıntısına yazılmaz; r1 = k1 · [O2] olur. Bu tepkimenin derecesi 1 iken moleküleritesi girenlerin katsayıları toplamından 1 + 1 = 2'dir (bimoleküler). İkinci tepkimede tüm girenler gaz fazında olduğundan r2 = k2 · [N2] · {us:[H2]|3} olur; tepkime derecesi 1 + 3 = 4 ve moleküleritesi de 1 + 3 = 4'tür."
+    },
+    {
+      "soru": "Gaz fazında gerçekleşen 2NO(g) + 2H2(g) → N2(g) + 2H2O(g) tepkimesinin iki basamaklı mekanizmasında 1. basamak (yavaş): 2NO(g) + H2(g) → N2(g) + H2O2(g) şeklindedir. Buna göre tepkimenin 2. (hızlı) basamağını, ara ürününü ve hız bağıntısını bulunuz.",
+      "cevap": "Net tepkimeden 1. basamak çıkarıldığında 2. (hızlı) basamak: H2O2(g) + H2(g) → 2H2O(g) olarak bulunur. Birinci basamakta ürün olarak oluşup ikinci basamakta giren olarak harcanan H2O2(g) maddesi ara üründür. Hız bağıntısı yavaş olan 1. basamağın girenlerine göre r = k · {us:[NO]|2} · [H2] şeklinde yazılır ve tepkime derecesi 3'tür."
+    },
+    {
+      "soru": "Deneysel hız bağıntısı r = k · {us:[A]|2} · [B] olan gaz fazındaki bir tepkimede sabit sıcaklıkta tepkime kabının hacmi yarıya (V/2'ye) indirilirse tepkime hızı ve hız sabiti k nasıl değişir?",
+      "cevap": "Sabit sıcaklıkta kabın hacmi yarıya indirildiğinde (M = n/V bağıntısına göre) gaz fazındaki A ve B maddelerinin molar derişimleri 2 katına çıkar. Hız bağıntısında yerine konulursa r_yeni = k · {us:(2[A])|2} · (2[B]) = 4 · 2 · r = 8r olur; yani tepkime hızı 8 katına çıkar. Sıcaklık sabit olduğu için hız sabiti k değişmez."
+    },
+    {
+      "soru": "Gaz fazındaki X + 2Y → Z tepkimesi için sabit sıcaklıkta yapılan deneylerde: 1. deneyde [X]=0,1 M, [Y]=0,2 M iken r=4·{us:10|-4} M/s; 2. deneyde [X]=0,2 M, [Y]=0,2 M iken r=8·{us:10|-4} M/s; 3. deneyde [X]=0,2 M, [Y]=0,6 M iken r=8·{us:10|-4} M/s ölçülmüştür. Tepkimenin hız bağıntısını ve k değerini bulunuz.",
+      "cevap": "1 ve 2. deneylerde [Y] sabitken [X] 2 katına çıktığında hız da 2 katına çıkmıştır (X'e göre 1. derece). 2 ve 3. deneylerde [X] sabitken [Y] 3 katına çıktığında hız değişmemiştir (Y'ye göre 0. derece). Dolayısıyla hız bağıntısı r = k · [X] şeklindedir. 1. deneyde yerine yazılırsa: 4·{us:10|-4} = k · 0,1 ⇒ k = 4·{us:10|-3} 1/s bulunur."
+    },
+    {
+      "soru": "Üç basamaklı bir tepkimenin basamaklarının ileri aktifleşme enerjileri sırasıyla Eai1 = 45 kJ, Eai2 = 85 kJ ve Eai3 = 30 kJ'dür. Bu tepkimenin hızını hangi basamak belirler ve katalizör eklendiğinde hangi basamağın eşik enerjisi düşer?",
+      "cevap": "Bir basamağın ileri aktifleşme enerjisi (Eai) ne kadar büyükse o basamak o kadar yavaştır. Eai2 = 85 kJ en büyük olduğu için tepkimenin en yavaş (hız belirleyen) basamağı 2. basamaktır. Tepkimeye uygun bir pozitif katalizör eklendiğinde hız belirleyen 2. basamağın aktifleşme enerjisini düşürerek tüm tepkimeyi hızlandırır."
+    },
+    {
+      "soru": "Toplam derecesi 3 olan bir kimyasal tepkimenin hız sabiti k'nin birimini, hız ve derişim birimlerini kullanarak türetiniz.",
+      "cevap": "Toplam derecesi n = 3 olan bir tepkimede hız denklemi r = k · {us:(Derişim)|3} biçimindedir. Hız birimi mol/(L·s) ve derişim birimi mol/L yerine yazılırsa: mol / (L·s) = k · {us:(mol / L)|3} ⇒ k = [mol / (L·s)] · [{us:L|3} / {us:mol|3}] = {us:L|2} / ({us:mol|2} · s) olarak elde edilir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Tek basamakta gerçekleşen CaO(k) + CO2(g) → CaCO3(k) tepkimesinin hız bağıntısı (r), tepkime derecesi ve moleküleritesi aşağıdakilerin hangisinde doğru verilmiştir?",
+      "secenekler": [
+        "r = k · [CO2]  |  Derece: 1  |  Molekülerite: 2",
+        "r = k · [CaO] · [CO2]  |  Derece: 2  |  Molekülerite: 2",
+        "r = k · [CO2]  |  Derece: 1  |  Molekülerite: 1",
+        "r = k · [CaCO3] / [CO2]  |  Derece: 1  |  Molekülerite: 2",
+        "r = k  |  Derece: 0  |  Molekülerite: 2"
+      ],
+      "dogru": 0,
+      "aciklama": "CaO(k) katı olduğu için hız bağıntısına yazılmaz; gaz fazındaki CO2 yazılıp r = k · [CO2] ve derece 1 olur. Molekülerite ise net tepkimedeki tüm girenlerin katsayıları toplamı (1 CaO + 1 CO2 = 2) olduğundan 2'dir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Mekanizmalı bir tepkimenin basamakları aşağıda verilmiştir:\n1. Basamak (Yavaş): HBr(g) + O2(g) → HOOBr(g)\n2. Basamak (Hızlı): HOOBr(g) + HBr(g) → 2HOBr(g)\n3. Basamak (Hızlı): 2HOBr(g) + 2HBr(g) → 2H2O(g) + 2Br2(g)\nBu tepkime ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+      "secenekler": [
+        "Tepkimenin deneysel hız bağıntısı r = k · [HBr] · [O2] şeklindedir.",
+        "HOOBr ve HOBr maddeleri tepkime mekanizmasında oluşan ara ürünlerdir.",
+        "Net tepkime denklemi 4HBr(g) + O2(g) → 2H2O(g) + 2Br2(g) biçimindedir.",
+        "Tepkimenin toplam derecesi 5 olup moleküleritesi 2 olarak bulunur.",
+        "Sabit sıcaklıkta HBr ve O2 derişimleri ikişer katına çıkarılırsa hız 4 katına çıkar."
+      ],
+      "dogru": 3,
+      "aciklama": "Hız bağıntısı yavaş olan 1. basamağa göre r = k · [HBr] · [O2] olduğundan tepkimenin toplam derecesi 1 + 1 = 2'dir; net tepkimenin giren katsayıları toplamı (4 HBr + 1 O2 = 5) ise moleküleriteyi (5) verir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Gaz fazında gerçekleşen 2X(g) + Y(g) → 2Z(g) tepkimesinde sabit sıcaklıkta X'in derişimi 2 katına, Y'nin derişimi 3 katına çıkarıldığında tepkime hızı 12 katına çıkmaktadır. Yalnız X'in derişimi 2 katına çıkarıldığında ise hız 4 katına çıktığına göre bu tepkimenin hız sabiti k'nin birimi nedir?",
+      "secenekler": [
+        "1 / s",
+        "L / (mol · s)",
+        "L² / (mol² · s)",
+        "L³ / (mol³ · s)",
+        "mol / (L · s)"
+      ],
+      "dogru": 2,
+      "aciklama": "Yalnız X 2 katına çıktığında hız 4 (2²) katına çıktığı için X'e göre 2. derecedendir. X 2 katına (hıza 4 kat etki) ve Y 3 katına çıktığında hız 12 (4 × 3¹) katına çıktığı için Y'ye göre 1. derecedendir. r = k · {us:[X]|2} · [Y] olup toplam derece n = 3'tür; n = 3 için k birimi L² / (mol² · s) olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir kimyasal tepkimenin hız sabiti (k) ile ilgili aşağıda verilen yargılardan hangisi yanlıştır?",
+      "secenekler": [
+        "Sıcaklığın artırılması tepkimenin hız sabiti k'nin sayısal değerini büyütür.",
+        "Uygun bir pozitif katalizör kullanılması k'nin sayısal değerini artırır.",
+        "Heterojen tepkimelerde katı reaktifin temas yüzeyinin artırılması k'yi büyütür.",
+        "Hız sabiti k'nin birimi tepkimenin toplam derecesine göre değişiklik gösterir.",
+        "Sabit sıcaklıkta reaktif derişimlerinin artırılması hız sabiti k'yi büyütür."
+      ],
+      "dogru": 4,
+      "aciklama": "Sabit sıcaklıkta reaktiflerin derişimlerinin artırılması tepkime hızını (r) artırır ancak hız sabiti k'nin sayısal değerini değiştirmez."
+    },
+    {
+      "tur": "dy",
+      "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Hız bağıntısına gaz fazındaki maddeler ve sulu çözeltideki iyon veya moleküller yazılırken saf katılar ve saf sıvılar yazılmaz.",
+          "dogru": true
+        },
+        {
+          "metin": "Mekanizmalı bir tepkimede toplam tepkime hızını ileri aktifleşme enerjisi en küçük olan en hızlı basamak belirler.",
+          "dogru": false
+        },
+        {
+          "metin": "Önceki basamaklardan birinde oluşup sonraki basamakta harcanan ve net tepkimede yer almayan maddeye ara ürün denir.",
+          "dogru": true
+        },
+        {
+          "metin": "Birinci dereceden bir kimyasal tepkimenin hız sabiti k'nin birimi 1/s (s⁻¹) şeklindedir.",
+          "dogru": true
+        },
+        {
+          "metin": "Net tepkime denklemi ile deneysel hız bağıntısı birbiriyle örtüşmeyen bir tepkime tek basamaklı bir tepkimedir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "yonerge": "Aşağıdaki kimyasal kinetik kavramlarını uygun açıklamalarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Tepkime Derecesi (Mertebesi)",
+          "Deneysel hız bağıntısında yer alan maddelerin derişim üslerinin toplamı"
+        ],
+        [
+          "Molekülerite",
+          "Net tepkime denkleminde girenler tarafındaki tüm taneciklerin katsayıları toplamı"
+        ],
+        [
+          "Hız Belirleyen Basamak",
+          "Çok basamaklı tepkimelerde aktifleşme enerjisi en yüksek olan en yavaş adım"
+        ],
+        [
+          "Ara Ürün",
+          "Mekanizmada bir basamakta üretilip sonraki basamakta tüketilen geçici tür"
+        ],
+        [
+          "Katalizör",
+          "Bir basamağa reaktif olarak girip sonraki basamaktan değişmeden çıkan ve Eai'yi düşüren madde"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Çok basamaklı (mekanizmalı) tepkimelerde hız bağıntısı en ___ basamağın girenlerine göre yazılır.",
+          "cevap": "yavaş"
+        },
+        {
+          "metin": "Saf katıların ve saf sıvıların sabit sıcaklıkta ___ sabit kaldığı için hız denkleminde yer almazlar.",
+          "cevap": "derişimleri"
+        },
+        {
+          "metin": "Mekanizmalı bir tepkimenin potansiyel enerji grafiğindeki ___ noktası sayısı tepkimenin basamak sayısını verir.",
+          "cevap": "tepe"
+        },
+        {
+          "metin": "İkinci dereceden bir tepkimede hız sabiti k'nin birimi ___ olarak ifade edilir.",
+          "cevap": "L/(mol·s)"
+        },
+        {
+          "metin": "Sabit sıcaklıkta reaktif derişiminin artırılması tepkime hızını artırırken hız sabiti k'yi ___ bırakır.",
+          "cevap": "sabit"
+        }
+      ],
+      "fazla": [
+        "hızlı",
+        "hacimleri"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Gaz fazında gerçekleşen 2A(g) + B(g) → C(g) + D(g) tepkimesinin deneysel hız bağıntısı r = k · [A] · [B] olarak ölçülmüştür. Bu tepkimenin mekanizmalı olup olmadığını, tepkime derecesini, moleküleritesini ve yavaş basamağının denklemini gerekçeleriyle açıklayınız.",
+      "ipuclari": [
+        "Net tepkimenin girenlerine göre yazılacak teorik hız ifadesi ile deneysel hız bağıntısının karşılaştırılması.",
+        "Tepkime derecesinin hız bağıntısındaki üslerden, moleküleritenin ise net tepkime katsayılarından bulunması.",
+        "Yavaş basamağın girenlerinin deneysel hız bağıntısından belirlenmesi."
+      ],
+      "cevap": "Eğer tepkime tek basamaklı olsaydı hız bağıntısı net tepkimenin girenlerine göre r = k · {us:[A]|2} · [B] olurdu. Oysa deneysel hız bağıntısı r = k · [A] · [B] olarak bulunduğundan bu tepkime çok basamaklıdır (mekanizmalıdır). Hız bağıntısındaki üsler toplamı 1 + 1 = 2 olduğu için tepkime derecesi 2'dir (k birimi L/(mol·s)). Net tepkimedeki girenlerin katsayıları toplamı 2 + 1 = 3 olduğu için moleküleritesi 3'tür (trimoleküler). Deneysel hız denklemi yavaş basamağın girenlerini verdiğinden yavaş basamak A(g) + B(g) → Ürünler (ara ürün) şeklindedir."
+    }
+  ],
+  "ozet": [
+    "{koyu:Hız Bağıntısı Yazımı:} Hız denklemine gazlar (g) ve sulu çözeltiler (suda) yazılır; saf katılar (k) ve saf sıvılar (s) yazılmaz.",
+    "{koyu:Derece ve Molekülerite:} Tepkime derecesi deneysel hız denklemindeki derişim üsleri toplamıdır; molekülerite ise net tepkimedeki giren katsayıları toplamıdır.",
+    "{koyu:Mekanizmalı Tepkimeler:} Çok basamaklı tepkimelerde hız bağıntısı aktifleşme enerjisi (Eai) en büyük olan en yavaş basamağın girenlerine göre yazılır.",
+    "{koyu:Ara Ürün ve Katalizör:} Bir basamakta oluşup diğerinde harcanan madde ara ürün; bir basamağa girip diğerinden değişmeden çıkan madde katalizördür.",
+    "{koyu:Hız Sabiti (k):} Sıcaklık, katalizör, temas yüzeyi ve madde cinsine bağlıdır; derişime bağlı değildir ve birimi {us:(L/mol)|n-1} · (1/s) ile bulunur."
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "ad": "10-matematik-11",
+  "sinif": 10,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 11,
+  "tarih": "30 Kasım-4 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "Sayılar",
+  "konu": "Bir Doğal Sayının Asal Çarpanları, Pozitif Tam Bölen Sayısı ve En Büyük Ortak Bölen (EBOB) ile En Küçük Ortak Kat (EKOK) Uygulamaları (10.3.1 & 10.3.2)",
+  "ciktilar": [
+    "Bir doğal sayının asal çarpanlarına ayrılışını ve pozitif tam bölen sayısı (PBS) ile asal çarpanların üsleri arasındaki matematiksel örüntüyü geneller.",
+    "Birden çok doğal sayının ortak bölenleriyle en büyük ortak böleni (EBOB) ve ortak katlarıyla en küçük ortak katı (EKOK) arasındaki ilişkileri muhakeme eder.",
+    "EBOB ve EKOK kavramlarına ilişkin matematiksel önermeleri gerçek yaşam problemlerinin çözümünde uygular ve doğrular."
+  ],
+  "giris": "Doğal sayıların yapı taşlarını oluşturan {koyu:asal sayılar}, aritmetikten modern şifreleme (kriptografi) algoritmalarına kadar matematiğin temelini kurar. Bir doğal sayının {koyu:asal çarpanları ile pozitif tam bölenleri} arasındaki örüntüyü keşfetmek ve birden çok sayının {koyu:En Büyük Ortak Böleni (EBOB)} ile {koyu:En Küçük Ortak Katı (EKOK)} arasındaki ilişkileri muhakeme etmek, karmaşık gerçek yaşam problemlerini sistematik olarak çözmemizi sağlar.",
+  "bolumler": [
+    {
+      "baslik": "Bir Doğal Sayının Asal Çarpanları ve Pozitif Tam Bölen Sayısı",
+      "metin": [
+        "Yalnızca 1'e ve kendisine kalansız bölünebilen 1'den büyük doğal sayılara {koyu:asal sayı} (2, 3, 5, 7, 11, 13, 17, 19...) denir; {koyu:2} en küçük ve tek çift asal sayıdır. {koyu:Aritmetiğin Temel Teoremi}'ne göre 1'den büyük her {koyu:A} doğal sayısı, birbirinden farklı {koyu:p₁, p₂, ..., pₖ} asal sayılarının pozitif tam sayı kuvvetlerinin çarpımı biçiminde {koyu:A = {us:p₁|a₁} · {us:p₂|a₂} · ... · {us:pₖ|aₖ}} şeklinde tek türlü (standart asal çarpan biçiminde) yazılabilir.",
+        "Asal çarpanlarına ayrılmış bir {koyu:A} doğal sayısının herhangi bir pozitif böleni, bu asal çarpanların kuvvetlerinden seçilerek oluşturulur. Birinci asal çarpanın üssü {koyu:0, 1, 2, ..., a₁} olmak üzere {koyu:(a₁ + 1)} farklı şekilde, ikinci asal çarpanın üssü {koyu:(a₂ + 1)} farklı şekilde seçilebildiğinden, sayının {koyu:Pozitif Tam Bölen Sayısı (PBS)} üslerin birer fazlasının çarpımına eşittir: {koyu:PBS(A) = (a₁ + 1) · (a₂ + 1) · ... · (aₖ + 1)}.",
+        "Bir doğal sayının {koyu:negatif tam bölen sayısı (NBS)} pozitif tam bölen sayısına eşittir ({koyu:NBS = PBS}); dolayısıyla {koyu:tüm tam bölenlerinin sayısı = 2 · PBS} olur ve tüm tam bölenlerinin toplamı daima {koyu:0}'dır. Ayrıca {koyu:asal olmayan pozitif tam bölen sayısı}, toplam pozitif bölen sayısından farklı asal çarpan adedinin ({koyu:k}) çıkarılmasıyla ({koyu:PBS - k}) bulunur. Bir doğal sayının {koyu:tam kare} olması için asal çarpan açılımındaki tüm üslerin çift sayı olması gerekir; bu durumda {koyu:(aᵢ + 1)} çarpanlarının hepsi tek olacağından {koyu:tam kare sayıların pozitif tam bölen sayısı daima tek sayıdır}."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Üslerin k. Kuvveti ve Bölen Sayısı Örüntüsü",
+          "metin": "Asal bir p sayısının k. kuvveti olan A = {us:p|k} biçimindeki sayıların pozitif tam bölen sayısı (k + 1)'dir. Örneğin yalnız 3 pozitif tam böleni olan sayılar, bir asal sayının karesi ({us:p|2} : 4, 9, 25, 49, 121...) olan sayılardır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Pozitif Bölenlerin Çarpımı ve Gökkuşağı Eşleşmesi",
+          "metin": "Bir A sayısının pozitif bölenleri küçükten büyüğe sıralandığında baştan ve sondan eşit uzaklıktaki bölenlerin çarpımı A'ya eşittir; bu nedenle pozitif bölenlerin çarpımı {us:A|PBS/2} bağıntısıyla bulunur."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">ASAL ÇARPANLARA AYIRMA VE POZİTİF TAM BÖLEN SAYISI (10.3.1)</text>\n  <rect x=\"22\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"64\" text-anchor=\"middle\" font-size=\"12.2\" font-weight=\"bold\" fill=\"#1e40af\">ARİTMETİĞİN TEMEL TEOREMİ</text>\n  <text x=\"35\" y=\"88\" font-size=\"11.1\" fill=\"#1e3a8a\">• 1'den büyük her A doğal sayısı, birbirinden</text>\n  <text x=\"45\" y=\"104\" font-size=\"10.8\" fill=\"#1e3a8a\">farklı p₁, p₂, ..., pₖ asal sayılarının kuvvetleri</text>\n  <text x=\"45\" y=\"120\" font-size=\"10.8\" fill=\"#1e3a8a\">çarpımı şeklinde tek türlü yazılır:</text>\n  <text x=\"35\" y=\"146\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e3a8a\">• A = p₁^a₁ · p₂^a₂ · ... · pₖ^aₖ</text>\n  <text x=\"35\" y=\"172\" font-size=\"10.8\" fill=\"#1e3a8a\">• Örnek: 180 = 2² · 3² · 5¹</text>\n  <text x=\"35\" y=\"194\" font-size=\"10.8\" fill=\"#1e3a8a\">• Asal çarpanları (bölenleri): 2, 3 ve 5 (3 tane)</text>\n  <rect x=\"358\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"64\" text-anchor=\"middle\" font-size=\"12.2\" font-weight=\"bold\" fill=\"#166534\">BÖLEN SAYISI BAĞINTILARI</text>\n  <text x=\"370\" y=\"88\" font-size=\"11.1\" fill=\"#14532d\">• Pozitif Tam Bölen Sayısı (PBS):</text>\n  <text x=\"380\" y=\"106\" font-size=\"11.2\" font-weight=\"bold\" fill=\"#14532d\">PBS(A) = (a₁ + 1) · (a₂ + 1) · ... · (aₖ + 1)</text>\n  <text x=\"370\" y=\"130\" font-size=\"10.8\" fill=\"#14532d\">• 180 için PBS = (2 + 1)·(2 + 1)·(1 + 1) = 3·3·2 = 18</text>\n  <text x=\"370\" y=\"154\" font-size=\"10.8\" fill=\"#14532d\">• Negatif Tam Bölen Sayısı (NBS) = PBS = 18</text>\n  <text x=\"370\" y=\"176\" font-size=\"10.8\" fill=\"#14532d\">• Tam Bölen Sayısı = 2 · PBS = 36</text>\n  <text x=\"370\" y=\"198\" font-size=\"10.8\" fill=\"#14532d\">• Asal Olmayan Pozitif Bölen = PBS - k = 18 - 3 = 15</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Özel Örüntü: Tam kare doğal sayıların (1, 4, 9, 16, 25, 36...) pozitif tam bölen sayısı (PBS) daima TEK sayıdır.</text>\n</svg>"
+    },
+    {
+      "baslik": "En Büyük Ortak Bölen (EBOB) ve En Küçük Ortak Kat (EKOK) Muhakemesi",
+      "metin": [
+        "İki veya daha fazla doğal sayıyı aynı anda kalansız bölebilen pozitif tam sayılara bu sayıların {koyu:ortak bölenleri}, ortak bölenlerin en büyüğüne ise {koyu:En Büyük Ortak Bölen (EBOB)} denir. Önemli bir matematiksel genelleme olarak; {koyu:birden çok doğal sayının tüm ortak bölenleri, bu sayıların EBOB'unun tam bölenlerinden ibarettir}. Dolayısıyla iki sayının kaç tane ortak pozitif böleni olduğunu bulmak için doğrudan {koyu:EBOB(A, B)}'nin pozitif bölen sayısı (PBS) hesaplanır.",
+        "İki veya daha fazla doğal sayının her birine kalansız bölünebilen pozitif tam sayılara bu sayıların {koyu:ortak katları}, ortak katların en küçüğüne ise {koyu:En Küçük Ortak Kat (EKOK)} denir. Bu sayıların tüm ortak katları {koyu:EKOK(A, B)}'nin pozitif tam katlarıdır ({koyu:k · EKOK(A, B)}). Asal çarpanlarına ayrılmış sayılarda {koyu:EBOB} bulunurken yalnız {koyu:ortak asal çarpanlardan üssü en küçük olanlar} çarpılır; {koyu:EKOK} bulunurken ise {koyu:ortak asal çarpanlardan üssü en büyük olanlar ile ortak olmayan asal çarpanların tamamı} çarpılır.",
+        "Herhangi iki {koyu:A} ve {koyu:B} pozitif tam sayısı için dört temel muhakeme önermesi geçerlidir: 1) İki sayının çarpımı EBOB ve EKOK'larının çarpımına eşittir: {koyu:A · B = EBOB(A, B) · EKOK(A, B)}. 2) Daima {koyu:EBOB(A, B) ≤ A ≤ B ≤ EKOK(A, B)} eşitsizliği sağlanır. 3) Eğer {koyu:A} ve {koyu:B} aralarında asal ise (1'den başka ortak pozitif bölenleri yoksa) {koyu:EBOB(A, B) = 1} ve {koyu:EKOK(A, B) = A · B} olur (ardışık doğal sayılar ve ardışık tek sayılar daima aralarında asaldır). 4) Biri diğerinin tam katı olan iki sayıda ({koyu:B = k · A}) küçük sayı {koyu:EBOB}, büyük sayı ise {koyu:EKOK}'tur."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Çarpım Özelliğinin İki Sayıyla Sınırlı Olması",
+          "metin": "'A · B = EBOB(A, B) · EKOK(A, B)' eşitliği iki doğal sayı için her zaman doğrudur; ancak üç veya daha fazla doğal sayı için (A · B · C) bu eşitlik genel olarak geçerli değildir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Ortak Çarpan Parantezine Alma Kuralı",
+          "metin": "Pozitif bir k tam sayısı için EBOB(k·A, k·B) = k · EBOB(A, B) ve EKOK(k·A, k·B) = k · EKOK(A, B) özelliği işlemleri büyük ölçüde kısaltır: Örneğin EBOB(36, 48) = 12 · EBOB(3, 4) = 12 · 1 = 12."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">EBOB VE EKOK KAVRAMLARI İLE TEMEL ÖZELLİKLERİ (10.3.2)</text>\n  <rect x=\"22\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"64\" text-anchor=\"middle\" font-size=\"12.2\" font-weight=\"bold\" fill=\"#92400e\">EBOB VE EKOK BULMA KURALI</text>\n  <text x=\"35\" y=\"88\" font-size=\"10.8\" fill=\"#78350f\">• Asal çarpanlarına ayrılmış iki doğal sayıda:</text>\n  <text x=\"35\" y=\"112\" font-size=\"10.8\" fill=\"#78350f\">• EBOB(A, B): Ortak asal çarpanlardan üssü</text>\n  <text x=\"45\" y=\"128\" font-size=\"10.8\" font-weight=\"bold\" fill=\"#78350f\">en küçük olanların çarpımıdır.</text>\n  <text x=\"35\" y=\"152\" font-size=\"10.8\" fill=\"#78350f\">• EKOK(A, B): Ortak asal çarpanlardan üssü</text>\n  <text x=\"45\" y=\"168\" font-size=\"10.8\" font-weight=\"bold\" fill=\"#78350f\">en büyük olanlar ile ortak olmayan asal</text>\n  <text x=\"45\" y=\"184\" font-size=\"10.8\" font-weight=\"bold\" fill=\"#78350f\">çarpanların tamamının çarpımıdır.</text>\n  <rect x=\"358\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"64\" text-anchor=\"middle\" font-size=\"12.2\" font-weight=\"bold\" fill=\"#6b21a8\">TEMEL MUHAKEME ÖNERMELERİ</text>\n  <text x=\"370\" y=\"88\" font-size=\"10.8\" font-weight=\"bold\" fill=\"#581c87\">• A · B = EBOB(A, B) · EKOK(A, B)  (İki sayı için!)</text>\n  <text x=\"370\" y=\"112\" font-size=\"10.8\" fill=\"#581c87\">• EBOB(A, B) ≤ min(A, B) ≤ max(A, B) ≤ EKOK(A, B)</text>\n  <text x=\"370\" y=\"136\" font-size=\"10.8\" fill=\"#581c87\">• A ve B aralarında asal ise:</text>\n  <text x=\"380\" y=\"152\" font-size=\"10.8\" font-weight=\"bold\" fill=\"#581c87\">EBOB(A, B) = 1  ve  EKOK(A, B) = A · B</text>\n  <text x=\"370\" y=\"176\" font-size=\"10.8\" fill=\"#581c87\">• B sayısı A'nın tam katı ise (A | B):</text>\n  <text x=\"380\" y=\"192\" font-size=\"10.8\" font-weight=\"bold\" fill=\"#581c87\">EBOB(A, B) = A  ve  EKOK(A, B) = B</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">İki doğal sayının tüm ortak bölenlerinin kümesi, bu iki sayının EBOB'unun bölenleri kümesine eşittir.</text>\n</svg>"
+    },
+    {
+      "baslik": "Gerçek Yaşam Problemlerinde EBOB ve EKOK Uygulamaları",
+      "metin": [
+        "Gerçek yaşam problemlerinde {koyu:bütünden eş parçalara gidilen} durumlarda {koyu:EBOB} kullanılır: Farklı ağırlık veya hacimdeki çuval ve varillerde bulunan ürünlerin birbirine karıştırılmadan ve hiç artmayacak şekilde eşit büyüklükteki en az sayıda poşet veya şişeye doldurulması; dikdörtgen biçimindeki bir tarlanın etrafına köşelere de gelmek şartıyla eşit aralıklarla en az sayıda ağaç/direk dikilmesi; büyük bir dikdörtgen levhanın eş karelere ya da dikdörtgenler prizmasının eş küplere bölünmesi EBOB problemleridir.",
+        "{koyu:Küçük parçalardan ortak bir bütüne veya periyoda gidilen} durumlarda ise {koyu:EKOK} kullanılır: Farklı zaman aralıklarıyla çalan zillerin, sefere çıkan otobüslerin veya nöbet tutan görevlilerin birlikte harekete geçtikten en az kaç saat/gün sonra tekrar aynı anda karşılaşacaklarının bulunması; küçük dikdörtgen fayanslar yan yana dizilerek en küçük alanlı bir kare veya tuğlalardan en küçük hacimli bir küp oluşturulması EKOK problemleridir.",
+        "Geometrik ve kalanlı bölme uygulamalarında pratik modeller kullanılır: 1) Kenarları {koyu:a} ve {koyu:b} olan dikdörtgenin çevresine eşit {koyu:d = EBOB(a, b)} aralıklarla dikilecek ağaç sayısı {koyu:{kesir:Çevre|d} = {kesir:2(a + b)|d}} formülüyle bulunur. 2) Boyutları {koyu:a, b} olan küçük dikdörtgenlerden en küçük kareyi yapmak için gereken parça sayısı {koyu:{kesir:EKOK|a} · {kesir:EKOK|b}} ile hesaplanır. 3) {koyu:A = a·x + r = b·y + r} biçimindeki kalanlı bölme sorularında her iki taraftan {koyu:r} çıkarılarak {koyu:A - r} sayısı {koyu:EKOK(a, b)}'nin katı olarak modellenir."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Parça Sayısı ile Aralık/Birim Uzunluğu Farkı",
+          "metin": "EBOB ve EKOK işleminin verdiği sayı 'parça adedi' değil, eş parçanın 'uzunluğu, kütlesi veya hacmi'dir. İstenen poşet, ağaç veya fayans adedini bulmak için toplam miktarı bulunan EBOB'a (veya EKOK'u parça boyutuna) bölmeyi unutmayınız!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Nöbet ve Gün Problemlerinde İlk Karşılaşma",
+          "metin": "İlk kez birlikte nöbet tuttukları gün '1. nöbet' sayıldığı için, örneğin '4. kez birlikte nöbet' sorulduğunda geçen süre 4 · EKOK değil, (4 - 1) = 3 · EKOK gün olarak hesaplanır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">GERÇEK YAŞAM PROBLEMLERİNDE EBOB VE EKOK MODELLEMESİ</text>\n  <rect x=\"22\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"64\" text-anchor=\"middle\" font-size=\"12.2\" font-weight=\"bold\" fill=\"#9a3412\">BÜYÜKTEN KÜÇÜĞE PARÇALAMA ⟶ EBOB</text>\n  <text x=\"35\" y=\"88\" font-size=\"10.8\" fill=\"#7c2d12\">• Çuvallardaki ürünleri eşit hacimli poşetlere</text>\n  <text x=\"45\" y=\"104\" font-size=\"10.8\" fill=\"#7c2d12\">veya şişelere hiç artmayacak şekilde bölüştürme,</text>\n  <text x=\"35\" y=\"128\" font-size=\"10.8\" fill=\"#7c2d12\">• Tarlanın/bahçenin etrafına eşit aralıklarla</text>\n  <text x=\"45\" y=\"144\" font-size=\"10.8\" fill=\"#7c2d12\">en az sayıda ağaç veya direk dikme,</text>\n  <text x=\"35\" y=\"168\" font-size=\"10.8\" fill=\"#7c2d12\">• Büyük dikdörtgen/prizmayı eş karelere/küplere</text>\n  <text x=\"45\" y=\"184\" font-size=\"10.8\" fill=\"#7c2d12\">ayırma problemlerinde EBOB kullanılır.</text>\n  <rect x=\"358\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"64\" text-anchor=\"middle\" font-size=\"12.2\" font-weight=\"bold\" fill=\"#065f46\">KÜÇÜKTEN BÜYÜĞE BİRLEŞTİRME ⟶ EKOK</text>\n  <text x=\"370\" y=\"88\" font-size=\"10.8\" fill=\"#064e3b\">• Farklı periyotlarla çalan zillerin, nöbet tutan</text>\n  <text x=\"380\" y=\"104\" font-size=\"10.8\" fill=\"#064e3b\">doktorların veya sefer yapan araçların tekrar</text>\n  <text x=\"380\" y=\"120\" font-size=\"10.8\" fill=\"#064e3b\">aynı anda karşılaşma süresini bulma,</text>\n  <text x=\"370\" y=\"144\" font-size=\"10.8\" fill=\"#064e3b\">• Küçük dikdörtgen fayanslardan/tuğlalardan</text>\n  <text x=\"380\" y=\"160\" font-size=\"10.8\" fill=\"#064e3b\">en küçük kare/küp oluşturma,</text>\n  <text x=\"370\" y=\"184\" font-size=\"10.8\" fill=\"#064e3b\">• Kalanlı bölünme problemlerinde EKOK kullanılır.</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Kapalı bir şeklin (üçgen, dikdörtgen) çevresine eşit d aralığıyla dikilen direk sayısı = Çevre / d bağıntısıyla bulunur.</text>\n</svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Asal çarpanlarına ayrılışı 360 = {us:2|3} · {us:3|2} · {us:5|1} olan 360 doğal sayısının; a) Kaç farklı asal çarpanı vardır? b) Pozitif tam bölen sayısı (PBS) kaçtır? c) Asal olmayan pozitif tam bölen sayısı kaçtır?",
+      "cevap": "a) Asal çarpanları 2, 3 ve 5 olup toplam 3 tanedir. b) Pozitif tam bölen sayısı üslerin birer fazlasının çarpımından PBS(360) = (3 + 1)·(2 + 1)·(1 + 1) = 4 · 3 · 2 = 24'tür. c) Asal olmayan pozitif tam bölen sayısı ise 24 - 3 = 21'dir."
+    },
+    {
+      "soru": "Sondan kaç basamağı sıfırdır soruları ile bölen sayısı ilişkisini kullanarak: Pozitif tam bölen sayısı 36 olan A = 18 · {us:10|n} doğal sayısında n kaçtır?",
+      "cevap": "Sayımızı asal çarpanlarına ayıralım: A = (2 · {us:3|2}) · ({us:2|n} · {us:5|n}) = {us:2|n+1} · {us:3|2} · {us:5|n}. Pozitif tam bölen sayısı PBS(A) = (n + 1 + 1) · (2 + 1) · (n + 1) = 36'dır. Buradan 3 · (n + 2) · (n + 1) = 36 ⟹ (n + 2)·(n + 1) = 12 = 4 · 3 bulunur ve n = 2 elde edilir."
+    },
+    {
+      "soru": "Yetmiş iki (72) ve 120 doğal sayılarının EBOB ve EKOK değerlerini bularak bu iki sayının kaç tane ortak pozitif tam böleni olduğunu hesaplayınız.",
+      "cevap": "72 = {us:2|3} · {us:3|2} ve 120 = {us:2|3} · {us:3|1} · {us:5|1}'dir. Ortak asalların küçük üslülerinden EBOB(72, 120) = {us:2|3} · {us:3|1} = 24; büyük üslüler ve ortak olmayanlardan EKOK(72, 120) = {us:2|3} · {us:3|2} · {us:5|1} = 360 bulunur. İki sayının ortak pozitif bölenlerinin sayısı EBOB(72, 120) = 24 = {us:2|3} · {us:3|1} sayısının pozitif bölen sayısına eşittir: PBS(24) = (3 + 1)·(1 + 1) = 8 tanedir."
+    },
+    {
+      "soru": "Aralarında asal iki doğal sayının EKOK'u 120'dir. Bu iki sayıyı (A ve B) birbirine bağlayan {koyu:A + {kesir:16|B} = 17} eşitliği verildiğine göre A + B toplamı kaçtır?",
+      "cevap": "A ve B aralarında asal olduğundan EBOB(A, B) = 1 ve A · B = EKOK(A, B) = 120'dir. Verilen eşitlikte payda eşitlenirse {kesir:A·B + 16|B} = 17 olur. A·B yerine 120 yazılırsa {kesir:120 + 16|B} = 17 ⟹ {kesir:136|B} = 17 ⟹ B = 8 bulunur. A · B = 120 eşitliğinde B = 8 yazılırsa A = 15 elde edilir (15 ve 8 aralarında asaldır). Buna göre A + B = 15 + 8 = 23'tür."
+    },
+    {
+      "soru": "Boyutları 84 metre ve 108 metre olan dikdörtgen biçimindeki bir parkın çevresine, köşelerine de dikilmek şartıyla eşit aralıklarla en az kaç aydınlatma direği dikilebilir?",
+      "cevap": "Direk sayısının en az olması için direkler arası mesafe (d) 84 ve 108'i tam bölen en büyük sayı olmalıdır: d = EBOB(84, 108) = 12 metredir. Kapalı dikdörtgenin çevresine dikilecek direk sayısı = {kesir:Çevre|d} = {kesir:2 · (84 + 108)|12} = {kesir:2 · 192|12} = 32 adet direk dikilir."
+    },
+    {
+      "soru": "Bir sepetteki güller 6'şarlı, 8'erli ve 10'arlı demetler yapıldığında her seferinde 4 gül artmaktadır. Sepetteki gül sayısı 200'den fazla olduğuna göre sepette en az kaç gül vardır?",
+      "cevap": "Sepetteki gül sayısına G dersek G = 6x + 4 = 8y + 4 = 10z + 4 olduğundan (G - 4) sayısı 6, 8 ve 10'un ortak katıdır. EKOK(6, 8, 10) = 120'dir. Buna göre G - 4 = 120·k ⟹ G = 120·k + 4 olur. Gül sayısı 200'den fazla olduğu için k = 2 verilir: G = 120 · 2 + 4 = 244 gül vardır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Asal çarpanlarına ayrılmış biçimi A = {us:2|4} · {us:3|2} · {us:5|1} olan A doğal sayısının pozitif tam bölen sayısı (PBS) kaçtır?",
+      "secenekler": [
+        "30",
+        "24",
+        "18",
+        "36",
+        "40"
+      ],
+      "dogru": 0,
+      "aciklama": "Pozitif tam bölen sayısı asal çarpanların üslerinin birer fazlasının çarpımıdır: PBS(A) = (4 + 1) · (2 + 1) · (1 + 1) = 5 · 3 · 2 = 30."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Birbirinden farklı iki pozitif tam sayının en büyük ortak böleni EBOB(A, B) = 15 olduğuna göre A + B toplamının alabileceği en küçük değer kaçtır?",
+      "secenekler": [
+        "30",
+        "45",
+        "60",
+        "75",
+        "90"
+      ],
+      "dogru": 1,
+      "aciklama": "EBOB(A, B) = 15 olduğundan A = 15x ve B = 15y (x ve y aralarında asal) yazılır. Sayılar birbirinden farklı olduğu için en küçük x = 1 ve y = 2 seçilir; A = 15, B = 30 ve A + B = 45 bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir hastanede görev yapan iki doktordan birincisi 6 günde bir, ikincisi ise 8 günde bir nöbet tutmaktadır. İki doktor ilk kez Salı günü birlikte nöbet tuttuklarına göre 3. kez birlikte nöbeti hangi gün tutarlar?",
+      "secenekler": [
+        "Perşembe",
+        "Cuma",
+        "Pazar",
+        "Pazartesi",
+        "Çarşamba"
+      ],
+      "dogru": 2,
+      "aciklama": "Birlikte nöbet periyodu EKOK(6, 8) = 24 gündür. 1. nöbetten 3. nöbete kadar (3 - 1) = 2 nöbet aralığı, yani 2 · 24 = 48 gün geçer. 48'in 7'ye bölümünden kalan 6'dır (48 = 6·7 + 6); Salı gününün 6 gün sonrası Pazar günüdür."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Boyutları 40 kg, 56 kg ve 72 kg olan üç farklı çuvaldaki pirinçler birbirine karıştırılmadan ve hiç artmayacak biçimde eşit kütleli poşetlere doldurulacaktır. Bu işlem için en az kaç adet poşet gerekir?",
+      "secenekler": [
+        "16",
+        "18",
+        "20",
+        "21",
+        "24"
+      ],
+      "dogru": 3,
+      "aciklama": "Poşet sayısının en az olması için bir poşetin kütlesi EBOB(40, 56, 72) = 8 kg olmalıdır. Toplam poşet sayısı = {kesir:40|8} + {kesir:56|8} + {kesir:72|8} = 5 + 7 + 9 = 21 adettir."
+    },
+    {
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "metin": "Tam kare olan her pozitif doğal sayının (örneğin 36, 49, 100) pozitif tam bölen sayısı tek sayıdır.",
+          "dogru": true,
+          "aciklama": "Tam kare sayılarda asal çarpanların tüm üsleri çift olduğundan (üs + 1) çarpanlarının tamamı tektir ve çarpımları tek sayı verir."
+        },
+        {
+          "metin": "Bir doğal sayının tüm tam bölenlerinin (pozitif ve negatif tam bölenlerinin) toplamı sıfırdır.",
+          "dogru": true,
+          "aciklama": "Her pozitif d bölenine karşılık bir -d negatif böleni bulunduğundan toplamları 0 olur."
+        },
+        {
+          "metin": "Aralarında asal olan iki doğal sayının ortak bölenlerinin en büyüğü (EBOB) bu iki sayının çarpımına eşittir.",
+          "dogru": false,
+          "aciklama": "Aralarında asal iki sayının EBOB'u 1'e, EKOK'u ise bu iki sayının çarpımına eşittir."
+        },
+        {
+          "metin": "İki doğal sayının tüm ortak pozitif bölenlerinin sayısı, bu iki sayının EBOB'unun pozitif bölen sayısına eşittir.",
+          "dogru": true,
+          "aciklama": "İki sayıyı aynı anda bölen her sayı onların EBOB'unu da tam böler."
+        },
+        {
+          "metin": "Kenar uzunlukları 6 cm ve 8 cm olan küçük dikdörtgen kartonlar yan yana dizilerek oluşturulabilecek en küçük karenin bir kenarı 2 cm'dir.",
+          "dogru": false,
+          "aciklama": "Küçük dikdörtgenlerden kare oluştururken EBOB değil EKOK alınır; en küçük karenin bir kenarı EKOK(6, 8) = 24 cm'dir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "ciftler": [
+        [
+          "(a₁ + 1) · (a₂ + 1) · ... · (aₖ + 1)",
+          "Pozitif Tam Bölen Sayısı (PBS) formülü"
+        ],
+        [
+          "2 · PBS(A)",
+          "Bir A doğal sayısının tüm tam bölenlerinin sayısı"
+        ],
+        [
+          "EBOB(A, B) · EKOK(A, B)",
+          "İki pozitif tam sayının çarpımına (A · B) eşit olan ifade"
+        ],
+        [
+          "EBOB(A, B) = 1",
+          "A ve B doğal sayılarının aralarında asal olma koşulu"
+        ],
+        [
+          "EBOB(A, B) = A ve EKOK(A, B) = B",
+          "B doğal sayısının A doğal sayısının tam katı olma durumu"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "cumleler": [
+        {
+          "metin": "Yalnızca 1'e ve kendisine kalansız bölünebilen en küçük ve tek çift asal sayı ___ sayısıdır.",
+          "cevap": "2"
+        },
+        {
+          "metin": "Pozitif tam bölen sayısı (PBS) yalnız 3 olan doğal sayılar, bir asal sayının ___ olan sayılardır (4, 9, 25, 49 gibi).",
+          "cevap": "karesi"
+        },
+        {
+          "metin": "Ardışık iki doğal sayı (örneğin 14 ve 15) daima aralarında ___ olduğu için EBOB'ları 1'dir.",
+          "cevap": "asal"
+        },
+        {
+          "metin": "Büyük çuvallardaki bakliyatları eşit hacimli küçük paketlere hiç artmayacak biçimde paylaştırma problemlerinde ___ kullanılır.",
+          "cevap": "EBOB"
+        },
+        {
+          "metin": "Farklı zaman aralıklarıyla sefer yapan gemilerin aynı limandan kalktıktan sonra tekrar birlikte kalkma süresini bulurken ___ hesaplanır.",
+          "cevap": "EKOK"
+        }
+      ],
+      "fazla": [
+        "küpü",
+        "faktöriyel"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir doğal sayının asal çarpanlarına ayrılışı ile pozitif tam bölen sayısı (PBS) arasındaki ilişkiyi ve iki doğal sayının EBOB-EKOK özelliklerinin gerçek yaşam problemlerine nasıl uygulandığını üç aşamada açıklayınız.",
+      "ipuclari": [
+        "Birinci aşamada A = p₁^a₁ · p₂^a₂ · ... asal çarpan açılımından PBS = (a₁ + 1)·(a₂ + 1)... formülünün nasıl elde edildiğini ve tam kare sayıların PBS özelliğini belirtiniz.",
+        "İkinci aşamada iki sayının asal çarpanlarından EBOB ve EKOK'un nasıl bulunduğunu, A · B = EBOB · EKOK ve aralarında asallık önermelerini yazınız.",
+        "Üçüncü aşamada gerçek yaşam problemlerinde hangi durumlarda EBOB (parçalama), hangi durumlarda EKOK (birleştirme/periyot) seçildiğini örneklerle değerlendiriniz."
+      ],
+      "cevap": "Birinci aşamada 1'den büyük her A doğal sayısı A = p₁^a₁ · p₂^a₂... biçiminde asal çarpanlarına ayrılır; her asal çarpanın üssü 0'dan kendi değerine kadar (aᵢ + 1) farklı biçimde seçilebildiği için Pozitif Tam Bölen Sayısı PBS(A) = (a₁ + 1)·(a₂ + 1)... çarpımıyla bulunur ve üsleri çift olan tam kare sayıların PBS değeri tek sayı çıkar. İkinci aşamada iki sayının ortak asallarının en küçük üslüleri EBOB'u, tüm asalların en büyük üslüleri ise EKOK'u verir; iki sayı için A · B = EBOB(A, B) · EKOK(A, B) eşitliği geçerlidir ve aralarında asal sayılarda EBOB = 1, EKOK = A · B olur. Üçüncü aşamada gerçek yaşamda büyük kütle/alanları eş parçalara ayırma veya çevreye eşit aralıklı ağaç dikme sorularında EBOB; küçük parçaları birleştirip kare/küp yapma, nöbet/zil periyotlarını eşitleme ve kalanlı bölme sorularında ise EKOK modeli kullanılır."
+    }
+  ],
+  "ozet": [
+    "Aritmetiğin Temel Teoremi'ne göre 1'den büyük her doğal sayı A = p₁^a₁ · p₂^a₂ · ... · pₖ^aₖ biçiminde asal çarpanlarının kuvvetleri çarpımı olarak yazılır; Pozitif Tam Bölen Sayısı PBS(A) = (a₁ + 1)·(a₂ + 1)...·(aₖ + 1) formülüyle bulunur.",
+    "Bir doğal sayının tam bölen sayısı 2 · PBS'dir, tam bölenlerinin toplamı 0'dır; tam kare doğal sayıların pozitif tam bölen sayısı (PBS) ise daima tek sayıdır.",
+    "İki doğal sayının tüm ortak bölenleri EBOB'larının bölenleridir; asal çarpan açılımında ortak asalların küçük üslüleri EBOB'u, tüm asalların büyük üslüleri EKOK'u verir.",
+    "Herhangi iki A ve B doğal sayısı için A · B = EBOB(A, B) · EKOK(A, B) eşitliği sağlanır; aralarında asal iki sayı için EBOB = 1 ve EKOK = A · B'dir.",
+    "Bütünü eş parçalara bölme ve eşit aralıklı ağaç dikme problemlerinde EBOB; parçaları birleştirme, periyodik nöbet/sefer karşılaşmaları ve kalanlı bölme problemlerinde ise EKOK kullanılır."
+  ]
+}

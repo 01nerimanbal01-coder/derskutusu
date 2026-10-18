@@ -1,0 +1,262 @@
+{
+  "ad": "5-fen-bilimleri-11",
+  "sinif": 5,
+  "ders": "fen-bilimleri",
+  "ders_adi": "Fen Bilimleri",
+  "hafta": 11,
+  "tarih": "30 Kasım-4 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "2. Ünite: Kuvveti Tanıyalım",
+  "konu": "Sürtünme Kuvveti: Sürtünme Kuvvetinin Hareket Ettirici ve Durdurucu Etkileri, Pürüzlü ve Kaygan Yüzeylerin Karşılaştırılması (FB.5.2.4)",
+  "ciktilar": [
+    "Birbirine temas eden yüzeyler arasında oluşan sürtünme kuvvetinin özelliklerini, yönünü ve cisimlerin hareketi üzerindeki etkilerini belirler.",
+    "Pürüzlü ve kaygan (az pürüzlü) yüzeylerde sürtünme kuvvetinin büyüklüğünü deneysel verilerle karşılaştırarak tümevarımsal genellemeler yapar.",
+    "Katı, sıvı (su direnci) ve gaz (hava direnci) ortamlarda sürtünme kuvvetini artırmaya veya azaltmaya yönelik günlük yaşam uygulamalarını analiz eder."
+  ],
+  "giris": "Zeminde yuvarlanan bir topun bir süre sonra kendiliğinden durduğunu, buzlu yolda yürümenin ise toprak yola göre çok daha zor olduğunu hepimiz deneyimlemişizdir. İşte temas hâlindeki yüzeyler arasında ortaya çıkarak harekete karşı koyan, aynı zamanda yürüyebilmemizi ve araçların fren yapabilmesini sağlayan bu kuvvete sürtünme kuvveti diyoruz. Bu haftaki çalışmamızda pürüzlü ve kaygan yüzeyleri karşılaştıracak, hava ve su direncini inceleyecek ve sürtünmenin yaşamımızdaki olumlu-olumsuz etkilerini keşfedeceğiz.",
+  "bolumler": [
+    {
+      "baslik": "Sürtünme Kuvveti Nedir? Hareket Ettirici ve Durdurucu Etkisi",
+      "metin": [
+        "Birbirine temas eden iki yüzey arasında harekete veya hareket etme isteğine karşı oluşan temas gerektiren kuvvete {koyu:sürtünme kuvveti} denir. Kayarak ilerleyen bir cisimde sürtünme kuvvetinin yönü, cismin {koyu:hareket yönüne zıt} yöndedir; örneğin doğu yönünde itilen bir sandığa zemin tarafından batı yönünde sürtünme kuvveti etki eder.",
+        "Sürtünme kuvveti duran bir cismin kendiliğinden harekete geçmesini zorlaştırır, hareket hâlindeki cisimlerin ise süratini azaltarak durmasını sağlar. Ancak sürtünme kuvveti olmasaydı ayakkabımız zemine tutunamaz, adım atıp yürüyemez, koşamaz, kalemle deftere yazı yazamaz ve yazdıklarımızı silgiyle silemezdik.",
+        "Dolayısıyla sürtünme kuvveti bir yandan kayan cisimleri yavaşlatıp durdururken, diğer yandan canlıların yürümesi ve tekerleklerin kaymadan dönerek ilerlemesi için gerekli tutunmayı sağlar."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">SÜRTÜNME KUVVETİNİN ÖZELLİKLERİ VE YÖNÜ</text>\n  <rect x=\"25\" y=\"48\" width=\"650\" height=\"190\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <!-- Zemin -->\n  <line x1=\"60\" y1=\"165\" x2=\"640\" y2=\"165\" stroke=\"#475569\" stroke-width=\"4\"/>\n  <line x1=\"70\" y1=\"165\" x2=\"60\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"2\"/>\n  <line x1=\"120\" y1=\"165\" x2=\"110\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"2\"/>\n  <line x1=\"170\" y1=\"165\" x2=\"160\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"2\"/>\n  <line x1=\"220\" y1=\"165\" x2=\"210\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"2\"/>\n  <line x1=\"270\" y1=\"165\" x2=\"260\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"2\"/>\n  <line x1=\"320\" y1=\"165\" x2=\"310\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"2\"/>\n  <line x1=\"370\" y1=\"165\" x2=\"360\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"2\"/>\n  <line x1=\"420\" y1=\"165\" x2=\"410\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"2\"/>\n  <line x1=\"470\" y1=\"165\" x2=\"460\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"2\"/>\n  <line x1=\"520\" y1=\"165\" x2=\"510\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"2\"/>\n  <line x1=\"570\" y1=\"165\" x2=\"560\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"2\"/>\n  <!-- Kutu -->\n  <rect x=\"270\" y=\"95\" width=\"160\" height=\"70\" rx=\"6\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"350\" y=\"135\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#92400e\">Hareket Eden Koli</text>\n  <!-- Hareket Yönü Oku (Sağa) -->\n  <line x1=\"435\" y1=\"120\" x2=\"565\" y2=\"120\" stroke=\"#16a34a\" stroke-width=\"4\"/>\n  <polygon points=\"565,112 585,120 565,128\" fill=\"#16a34a\"/>\n  <text x=\"515\" y=\"102\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Hareket Yönü (Doğu)</text>\n  <!-- Sürtünme Kuvveti Oku (Sola) -->\n  <line x1=\"265\" y1=\"155\" x2=\"135\" y2=\"155\" stroke=\"#dc2626\" stroke-width=\"4\"/>\n  <polygon points=\"135,147 115,155 135,163\" fill=\"#dc2626\"/>\n  <text x=\"190\" y=\"138\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b91c1c\">Sürtünme Kuvveti (Batı)</text>\n  <text x=\"350\" y=\"205\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">• Temas gerektiren bir kuvvettir; birbirine değen yüzeyler arasında oluşur.</text>\n  <text x=\"350\" y=\"225\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">• Kayarak ilerleyen cisimlerde daima HAREKET YÖNÜNE ZIT yönde etki eder.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Duran Cisme Sürtünme Etki Eder mi?",
+          "metin": "Yatay zeminde durmakta olan ve kendisine yatay bir itme/çekme kuvveti uygulanmayan bir cisme sürtünme kuvveti etki etmez; sürtünme, hareket veya hareket ettirme girişimi başladığında ortaya çıkar."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Sürtünme Yönü Kuralı",
+          "metin": "Zemin üzerinde kayarak giden bir kutu hangi yöne gidiyorsa sürtünme kuvveti tam tersi yöndedir: Doğu ⇄ Batı, Kuzey ⇄ Güney."
+        }
+      ]
+    },
+    {
+      "baslik": "Pürüzlü ve Kaygan Yüzeylerin Karşılaştırılması",
+      "metin": [
+        "Sürtünme kuvvetinin büyüklüğü, temas eden yüzeylerin cinsine (pürüzlülük derecesine) ve cismin ağırlığına bağlıdır. Gözle pürüzsüz gibi görünen cam veya mermer yüzeylerde bile mikroskobik girinti ve çıkıntılar vardır; yani sürtünmesi tamamen sıfır olan bir yüzey yoktur.",
+        "Halı, zımpara kâğıdı, çakıllı yol, toprak ve keçe gibi girinti-çıkıntısı fazla olan {koyu:pürüzlü yüzeylerde} sürtünme kuvveti {koyu:fazladır}. Bu yüzeylerde bir cismi dinamometre ile çekmek için daha büyük kuvvet gerekir ve eğik düzlemden bırakılan oyuncak araba kısa sürede yavaşlayarak az yol alır.",
+        "Buz, cam, cilalı parke ve ıslak fayans gibi girinti-çıkıntısı az olan {koyu:kaygan (az pürüzlü) yüzeylerde} ise sürtünme kuvveti {koyu:azdır}. Bu yüzeylerde cismi çekmek kolaydır (dinamometre küçük değer gösterir) ve eğik düzlemden bırakılan araba çok daha uzun mesafe kateder."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">PÜRÜZLÜ VE KAYGAN YÜZEYLERİN KARŞILAŞTIRILMASI</text>\n  <rect x=\"20\" y=\"48\" width=\"320\" height=\"190\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b45309\">Pürüzlü Yüzeyler (Çok Girintili-Çıkıntılı)</text>\n  <text x=\"180\" y=\"98\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">Örnekler: Toprak, Çakıllı Yol, Halı, Zımpara Kâğıdı</text>\n  <text x=\"180\" y=\"124\" text-anchor=\"middle\" font-size=\"12\" fill=\"#78350f\">• Sürtünme kuvveti BÜYÜKTÜR.</text>\n  <text x=\"180\" y=\"148\" text-anchor=\"middle\" font-size=\"12\" fill=\"#78350f\">• Cismi hareket ettirmek ZORDUR (Dinamometre</text>\n  <text x=\"180\" y=\"166\" text-anchor=\"middle\" font-size=\"12\" fill=\"#78350f\">daha büyük değer gösterir).</text>\n  <text x=\"180\" y=\"190\" text-anchor=\"middle\" font-size=\"12\" fill=\"#78350f\">• Eğik düzlemden bırakılan araba KISA mesafede</text>\n  <text x=\"180\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"#78350f\">yavaşlayarak durur.</text>\n\n  <rect x=\"360\" y=\"48\" width=\"320\" height=\"190\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">Az Pürüzlü (Kaygan) Yüzeyler</text>\n  <text x=\"520\" y=\"98\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#075985\">Örnekler: Buz, Cam, Islak Mermer, Cilalı Parke</text>\n  <text x=\"520\" y=\"124\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0c4a6e\">• Sürtünme kuvveti KÜÇÜKTÜR (ama sıfır değildir).</text>\n  <text x=\"520\" y=\"148\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0c4a6e\">• Cismi hareket ettirmek KOLAYDIR (Dinamometre</text>\n  <text x=\"520\" y=\"166\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0c4a6e\">daha küçük değer gösterir).</text>\n  <text x=\"520\" y=\"190\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0c4a6e\">• Eğik düzlemden bırakılan araba UZUN mesafe</text>\n  <text x=\"520\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0c4a6e\">alarak daha uzağa gider.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Eğik Düzlem Deneyi İlişkisi",
+          "metin": "Aynı yükseklikten bırakılan özdeş bir arabanın yatay zeminde aldığı yol ile o zeminin sürtünme kuvveti ters orantılıdır: En uzun yolu en kaygan zeminde (buz/cam), en kısa yolu en pürüzlü zeminde (halı/kum) alır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Dinamometre Ölçümüyle Yorumlama",
+          "metin": "Özdeş bir takozu sabit hızla harekete geçirmek için K yüzeyinde 12 N, L yüzeyinde 4 N kuvvet gerekiyorsa K yüzeyi L yüzeyinden daha pürüzlüdür."
+        }
+      ]
+    },
+    {
+      "baslik": "Hava ve Su Direnci ile Günlük Yaşam Uygulamaları",
+      "metin": [
+        "Sürtünme kuvveti katı yüzeylerin yanı sıra sıvı ve gaz ortamlarda da görülür. Hava ortamında hareket eden cisimlere havanın uyguladığı sürtünmeye {koyu:hava direnci (hava sürtünmesi)}, su içinde hareket eden cisimlere suyun uyguladığı sürtünmeye ise {koyu:su direnci (su sürtünmesi)} denir. Temas yüzey alanı büyüdükçe hava ve su direnci artar.",
+        "Günlük yaşamda güvenli hareket için sürtünmeyi {koyu:artırmak} istediğimiz durumlar vardır: Kışın araçlara dişli kış lastiği veya zincir takılması, futbolcuların dişli krampon giymesi, kaleci eldivenlerinin pürüzlü yapılması, merdiven uçlarına kaydırmaz bant yapıştırılması ve paraşütlerin geniş yüzeyli tasarlanması sürtünmeyi artırır.",
+        "Enerji kaybını ve aşınmayı önlemek için sürtünmeyi {koyu:azaltmak} istediğimiz durumlar da vardır: Kapı menteşelerinin ve makine dişlilerinin yağlanması, ağır eşyaların altına tekerlek veya bilye (rulman) takılması, uçak, hızlı tren ve gemilerin burun kısımlarının sivri (V şeklinde) tasarlanması sürtünmeyi azaltır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">HAVA-SU DİRENCİ VE GÜNLÜK YAŞAMDA SÜRTÜNME</text>\n  <rect x=\"20\" y=\"48\" width=\"210\" height=\"190\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <text x=\"125\" y=\"70\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">Sürtünmeyi Artıran Uygulamalar</text>\n  <text x=\"125\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Kış lastiği ve tekerleğe zincir takma</text>\n  <text x=\"125\" y=\"120\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Krampon ve kışlık bot dişleri</text>\n  <text x=\"125\" y=\"144\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Kaleci eldivenlerinin pürüzlü yapısı</text>\n  <text x=\"125\" y=\"168\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Haltercilerin ellerine toz sürmesi</text>\n  <text x=\"125\" y=\"192\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Paraşütün geniş yüzey alanı</text>\n  <text x=\"125\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">Amaç: Güvenli tutunma ve frenleme</text>\n\n  <rect x=\"245\" y=\"48\" width=\"210\" height=\"190\" rx=\"8\" fill=\"#fdf2f8\" stroke=\"#db2777\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"70\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#be185d\">Sürtünmeyi Azaltan Uygulamalar</text>\n  <text x=\"350\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" fill=\"#831843\">• Kapı menteşesi ve dişlileri yağlama</text>\n  <text x=\"350\" y=\"120\" text-anchor=\"middle\" font-size=\"11\" fill=\"#831843\">• Eşya altına tekerlek / bilye takma</text>\n  <text x=\"350\" y=\"144\" text-anchor=\"middle\" font-size=\"11\" fill=\"#831843\">• Uçak, hızlı tren ve gemilerin</text>\n  <text x=\"350\" y=\"162\" text-anchor=\"middle\" font-size=\"11\" fill=\"#831843\">burun kısmını sivri (V) tasarlama</text>\n  <text x=\"350\" y=\"186\" text-anchor=\"middle\" font-size=\"11\" fill=\"#831843\">• Buz pateninin ince bıçaklı tabanı</text>\n  <text x=\"350\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#9d174d\">Amaç: Kolay hareket ve enerji tasarrufu</text>\n\n  <rect x=\"470\" y=\"48\" width=\"210\" height=\"190\" rx=\"8\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"1.5\"/>\n  <text x=\"575\" y=\"70\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#7e22ce\">Hava ve Su Direnci</text>\n  <text x=\"575\" y=\"98\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">Hava Direnci (Hava Sürtünmesi):</text>\n  <text x=\"575\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" fill=\"#581c87\">Havadaki cisimlerin hareketini</text>\n  <text x=\"575\" y=\"136\" text-anchor=\"middle\" font-size=\"11\" fill=\"#581c87\">zorlaştırır (Paraşüt, kuş kanadı).</text>\n  <text x=\"575\" y=\"162\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">Su Direnci (Su Sürtünmesi):</text>\n  <text x=\"575\" y=\"182\" text-anchor=\"middle\" font-size=\"11\" fill=\"#581c87\">Sudaki hareketi zorlaştırır (Balık</text>\n  <text x=\"575\" y=\"200\" text-anchor=\"middle\" font-size=\"11\" fill=\"#581c87\">pulları, yüzücü bonesi azaltır).</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Paraşüt ve Uçak Tasarımı Farkı",
+          "metin": "Paraşütçünün yere güvenli ve yavaş inmesi için paraşüt geniş yapılarak hava direnci artırılır; uçağın ise az yakıtla hızlı gitmesi için burnu sivri yapılarak hava direnci azaltılır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Enerji Dönüşümü ve Aşınma",
+          "metin": "Üşüdüğümüzde ellerimizi birbirine sürterek ısıtmamız sürtünmenin olumlu etkisiyken; makine parçalarının ve ayakkabı tabanlarının aşınması olumsuz etkisidir."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Özdeş bir tahta blok; cam, mermer ve zımpara kâğıdı kaplı yatay yüzeylerde dinamometre ile çekiliyor. Dinamometrelerin göstereceği değerleri büyükten küçüğe sıralayınız.",
+      "cevap": "Pürüzlülük arttıkça sürtünme kuvveti ve gerekli çekme kuvveti artar. En pürüzlü yüzey zımpara kâğıdı, en kaygan yüzey cam olduğu için sıralama: Zımpara kâğıdı > Mermer > Cam şeklindedir."
+    },
+    {
+      "soru": "Eğik düzlemin tepesinden serbest bırakılan bir oyuncak araba; X zemininde 25 cm, Y zemininde 80 cm, Z zemininde 50 cm yol alarak duruyor. Zeminlerin sürtünme kuvvetlerini karşılaştırınız.",
+      "cevap": "Arabanın en kısa mesafede durduğu X zemini en pürüzlü (sürtünmesi en büyük), en uzağa gittiği Y zemini ise en kaygan (sürtünmesi en küçük) zemindir. Sürtünme kuvvetleri: X > Z > Y olur."
+    },
+    {
+      "soru": "Batı yönünde kayarak ilerleyen bir buz hokeyi diskine buz zeminin uyguladığı sürtünme kuvvetinin yönü nedir?",
+      "cevap": "Sürtünme kuvveti kayan cisimlerin hareket yönüne zıt yönde etki ettiği için, batıya giden diske etki eden sürtünme kuvvetinin yönü doğudur."
+    },
+    {
+      "soru": "Gemilerin ön (burun) kısımlarının 'V' harfi şeklinde sivri tasarlanmasının ve yüzücülerin özel bone ile mayo giymesinin bilimsel nedeni nedir?",
+      "cevap": "Her iki uygulamanın da amacı su ile temas eden yüzeyin pürüzlülüğünü ve direncini azaltarak su direncini (su sürtünmesini) en aza indirmek, böylece suda daha hızlı ve az enerjiyle ilerlemektir."
+    },
+    {
+      "soru": "Aynı yükseklikten aynı anda bırakılan özdeş iki A4 kâğıdından biri buruşturulup top yapılırken diğeri düz bırakılıyor. Hangisi yere daha önce düşer? Neden?",
+      "cevap": "Buruşturulmuş kâğıt yere daha önce düşer; çünkü düz kâğıdın temas yüzey alanı daha geniş olduğu için ona etki eden hava direnci daha büyüktür ve düşüşünü yavaşlatır."
+    },
+    {
+      "soru": "Sürtünme kuvvetinin günlük yaşamımızdaki olumlu ve olumsuz etkilerine ikişer örnek veriniz.",
+      "cevap": "Olumlu etkileri: Yürüyebilmemizi sağlaması ve araçların fren yaparak durabilmesi. Olumsuz etkileri: Makine dişlilerinin ve kıyafetlerin aşınması, hareket için fazladan enerji harcanması."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Özdeş bir oyuncak araba aynı eğik düzlemin tepesinden sırasıyla buz, tahta, halı ve kum zeminlere bırakılıyor. Arabanın yatay zeminde alacağı yol hangi zeminde en fazla olur?",
+      "secenekler": [
+        "Buz zeminde",
+        "Tahta zeminde",
+        "Halı zeminde",
+        "Kum zeminde"
+      ],
+      "dogru": 0,
+      "aciklama": "Verilen yüzeyler içinde en kaygan (sürtünme kuvveti en az) olan buz zemindir; sürtünme az olduğu için araba en uzun yolu buz üzerinde alır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Günlük yaşamda yapılan aşağıdaki uygulamalardan hangisinin amacı sürtünme kuvvetini azaltmaya yöneliktir?",
+      "secenekler": [
+        "Karlı havalarda otomobil tekerleklerine zincir takılması",
+        "Gıcırdamaya başlayan kapı menteşelerinin yağlanması",
+        "Kaleci eldivenlerinin iç yüzeyinin pürüzlü üretilmesi",
+        "Kışlık botların tabanlarının girintili ve dişli yapılması"
+      ],
+      "dogru": 1,
+      "aciklama": "Kapı menteşelerinin yağlanması yüzeyler arasındaki pürüzleri doldurarak sürtünme kuvvetini ve aşınmayı azaltır; diğer şıklar sürtünmeyi artırır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Hava ve su direnci ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+      "secenekler": [
+        "Paraşütün yüzey alanı küçüldükçe hava direnci belirgin biçimde artar.",
+        "Hava ortamında hareket eden cisimlere su direnci doğrudan etki eder.",
+        "Uçak ve hızlı trenlerin burun kısmı hava direncini azaltmak için sivri yapılır.",
+        "Balıkların vücudunun pullu ve kaygan olması su direncini artırmak içindir."
+      ],
+      "dogru": 2,
+      "aciklama": "Uçak ve hızlı trenlerin ön kısmının aerodinamik (sivri) yapılması hava direncini azaltarak hızı artırır ve yakıt tasarrufu sağlar."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Özdeş bir koli K, L ve M yatay zeminlerinde dinamometre ile çekildiğinde harekete geçmesi için gereken kuvvetler K'de 18 N, L'de 7 N, M'de 25 N olarak ölçülüyor. Yüzeylerin pürüzlülük sıralaması nasıldır?",
+      "secenekler": [
+        "L > K > M",
+        "K > M > L",
+        "L > M > K",
+        "M > K > L"
+      ],
+      "dogru": 3,
+      "aciklama": "Cismi hareket ettirmek için gereken kuvvet ne kadar büyükse yüzey o kadar pürüzlüdür. 25 N > 18 N > 7 N olduğundan pürüzlülük M > K > L şeklindedir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Kayarak ilerleyen bir cisme etki eden sürtünme kuvvetinin yönü hareket yönüne zıttır.",
+          "dogru": true,
+          "aciklama": "Sürtünme kuvveti kayan cisimlerde harekete ters yönde oluşur."
+        },
+        {
+          "metin": "Cam ve buz gibi çok kaygan yüzeylerde sürtünme kuvveti sıfırdır.",
+          "dogru": false,
+          "aciklama": "Cam ve buzda sürtünme kuvveti çok azdır fakat mikroskobik pürüzler nedeniyle sıfır değildir."
+        },
+        {
+          "metin": "Ağır valizlerin altına tekerlek takılması sürtünme kuvvetini azaltarak taşımayı kolaylaştırır.",
+          "dogru": true,
+          "aciklama": "Tekerlek kullanımı kayma sürtünmesini dönme hareketine çevirerek sürtünmeyi azaltır."
+        },
+        {
+          "metin": "Paraşütçünün güvenli inmesi için paraşüt yüzeyinin küçük olması ve hava direncini azaltması gerekir.",
+          "dogru": false,
+          "aciklama": "Paraşüt geniş yapılarak hava direncini artırır ve inişi yavaşlatır."
+        },
+        {
+          "metin": "Su içinde hareket eden dalgıçlara ve deniz taşıtlarına hareketlerini zorlaştıran su direnci etki eder.",
+          "dogru": true,
+          "aciklama": "Suyun içindeki cisimlere harekete zıt yönde su direnci (su sürtünmesi) uygulanır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları ve uygulamaları uygun açıklamalarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Pürüzlü Yüzey",
+          "Girinti ve çıkıntısı fazla olan, sürtünme kuvvetinin büyük olduğu yüzey"
+        ],
+        [
+          "Kaygan Yüzey",
+          "Girinti ve çıkıntısı az olan, cisimlerin kolay kaydığı yüzey"
+        ],
+        [
+          "Hava Direnci",
+          "Atmosferde hareket eden uçak ve paraşüt gibi cisimlere etki eden sürtünme"
+        ],
+        [
+          "Su Direnci",
+          "Denizde yüzen balık ve gemilerin hareketini zorlaştıran sıvı sürtünmesi"
+        ],
+        [
+          "Bilye (Rulman) Kullanımı",
+          "Makine parçaları arasındaki sürtünmeyi ve aşınmayı azaltan yöntem"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Temas hâlindeki iki yüzey arasında oluşan ve harekete karşı koyan kuvvete ___ kuvveti denir.",
+          "cevap": "sürtünme"
+        },
+        {
+          "metin": "Halı, toprak ve zımpara kâğıdı gibi ___ yüzeylerde sürtünme kuvveti oldukça fazladır.",
+          "cevap": "pürüzlü"
+        },
+        {
+          "metin": "Hava ortamında düşmekte olan bir paraşütçüyü yavaşlatan sürtünme kuvvetine ___ direnci adı verilir.",
+          "cevap": "hava"
+        },
+        {
+          "metin": "Doğu yönünde kayarak ilerleyen bir kızağa etki eden sürtünme kuvveti ___ yönündedir.",
+          "cevap": "batı"
+        },
+        {
+          "metin": "Makine parçalarının arasına ___ sürülmesi sürtünmeyi azaltarak aşınmayı önler.",
+          "cevap": "yağ"
+        }
+      ],
+      "fazla": [
+        "kum",
+        "kuzey"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Kış mevsiminde karlı ve buzlu yollarda araçların kaymasını önlemek için ne gibi önlemler alındığını, bu önlemlerin sürtünme kuvvetini nasıl etkilediğini bilimsel gerekçesiyle açıklayınız.",
+      "ipuclari": [
+        "Önce karlı ve buzlu yolların yüzey özelliğini (pürüzlü mü, kaygan mı) ve sürtünme durumunu belirtiniz.",
+        "Sürücülerin tekerleklere ve belediyelerin yollara uyguladığı önlemleri (kış lastiği, zincir, kum/tuz serpme) sıralayınız.",
+        "Bu uygulamaların yüzey pürüzlülüğünü ve sürtünme kuvvetini nasıl değiştirdiğini açıklayınız."
+      ],
+      "cevap": "Karlı ve buzlu yollar çok kaygan (az pürüzlü) yüzeyler olduğu için tekerlek ile yol arasındaki sürtünme kuvveti çok azalır ve araçlar kayma tehlikesi yaşar. Bunu önlemek için araçlara derin dişli kış lastiği veya zincir takılır, yollara kum ve tuz serpilir. Bu önlemler temas yüzeyinin girinti-çıkıntısını (pürüzlülüğünü) artırarak sürtünme kuvvetini büyütür; böylece tekerlekler yola güvenle tutunur ve fren mesafesi kısalır."
+    }
+  ],
+  "ozet": [
+    "{koyu:Sürtünme Kuvveti:} Birbirine temas eden yüzeyler arasında harekete karşı oluşan temas gerektiren bir kuvvettir; kayan cisimlerde hareket yönüne zıt yöndedir.",
+    "{koyu:Pürüzlü Yüzeyler:} Toprak, halı, zımpara kâğıdı ve çakıllı yol gibi girintili-çıkıntılı yüzeylerde sürtünme kuvveti büyüktür; hareket zorlaşır ve cisim kısa sürede durur.",
+    "{koyu:Kaygan Yüzeyler:} Buz, cam ve cilalı mermer gibi az pürüzlü yüzeylerde sürtünme kuvveti küçüktür (fakat sıfır değildir); cisimler kolay hareket eder ve uzağa gider.",
+    "{koyu:Hava ve Su Direnci:} Hava ve su ortamları da içlerinde hareket eden cisimlere harekete zıt yönde direnç uygular; temas yüzeyi büyüdükçe direnç artar.",
+    "{koyu:Artırma ve Azaltma:} Kış lastiği, zincir, krampon ve paraşüt sürtünmeyi artırırken; yağlama, tekerlek/bilye takma ve taşıtların burnunu sivri yapma sürtünmeyi azaltır."
+  ]
+}

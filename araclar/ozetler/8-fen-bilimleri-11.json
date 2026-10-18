@@ -1,0 +1,257 @@
+{
+  "ad": "8-fen-bilimleri-11",
+  "sinif": 8,
+  "ders": "fen-bilimleri",
+  "ders_adi": "Fen Bilimleri",
+  "hafta": 11,
+  "tarih": "30 Kasım-4 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "3. Ünite: Basınç",
+  "konu": "Açık Hava Basıncı (Gaz Basıncı, Toriçelli Deneyi, Barometre), Kapalı Kaplardaki Gaz Basıncı ve Basınç Özelliklerinin Günlük Yaşam ve Teknolojideki Uygulamaları (F.8.3.1.2 & F.8.3.1.3)",
+  "ciktilar": [
+    "Gazların da sıvılara benzer şekilde ağırlık ve tanecik hareketlerinden dolayı basınç uyguladığını kavrar ve açık hava basıncını deneylerle örneklendirir (F.8.3.1.2).",
+    "Toriçelli deneyini, açık hava basıncının barometre ile ölçülmesini, yükselti ve kullanılan sıvının yoğunluğu ile sıvı seviyesi arasındaki ilişkiyi analiz eder.",
+    "Katı, sıvı ve gazların basınç özelliklerinin günlük yaşam ve teknolojideki uygulamalarına (Pascal prensibi, hidrolik sistemler, vantuz, hava yastığı vb.) örnekler verir (F.8.3.1.3)."
+  ],
+  "giris": "Dünya'mızı çepeçevre saran atmosfer tabakasındaki gazlar, ağırlıklarından ve taneciklerinin hareketinden dolayı temas ettikleri her yüzeye büyük bir kuvvet uygular. Bu haftaki dersimizde açık hava basıncını (atmosfer basıncını), İtalyan bilim insanı Toriçelli'nin deniz seviyesinde gerçekleştirdiği ünlü barometre deneyini, kapalı kaplardaki gaz basıncını ve katı, sıvı ile gaz basıncının günlük teknolojideki kullanım alanlarını inceleyeceğiz.",
+  "bolumler": [
+    {
+      "baslik": "Açık Hava Basıncı (Atmosfer Basıncı) ve Toriçelli Deneyi",
+      "metin": [
+        "Dünya'yı saran atmosfer tabakasındaki gazların kendi ağırlıklarından dolayı birim yüzeye uyguladığı dik kuvvete {koyu:açık hava basıncı} (atmosfer basıncı, P0) denir. Gazlar da tıpkı sıvılar gibi akışkandır ve temas ettikleri yüzeylere her yönden basınç uygular. Açık hava basıncını ölçmek için kullanılan araçlara {koyu:barometre} adı verilir.",
+        "İtalyan bilim insanı {koyu:Evangelista Torricelli (Toriçelli)}, 0 °C sıcaklıkta ve deniz seviyesinde yaklaşık 1 metre uzunluğundaki bir ucu kapalı cam boruyu tamamen {koyu:cıva} (yoğunluğu 13,6 g/cm³) ile doldurup cıva dolu bir çanağa ters daldırmıştır. Borudaki cıvanın bir kısmının çanağa boşaldığını ve sıvı yüksekliğinin {koyu:76 cm} (760 mm) seviyesinde dengelendiğini gözlemlemiştir. Açık havanın çanaktaki cıva yüzeyine uyguladığı basınç, borudaki 76 cm yüksekliğindeki cıva sütununun sıvı basıncını dengelemiştir.",
+        "Toriçelli deneyinde kullanılan cam borunun {koyu:kesit alanı (kalınlığı), şekli, uzunluğu veya eğik tutulması} cıva yüksekliğini (h = 76 cm) değiştirmez. Buna karşılık deniz seviyesinden {koyu:yükseklere (dağ zirvesine) çıkıldıkça} üzerimizdeki hava tabakasının kalınlığı ve yoğunluğu azaldığı için açık hava basıncı azalır ve borudaki cıva seviyesi 76 cm'nin altına düşer. Deneyde cıva yerine yoğunluğu çok daha küçük olan {koyu:su} (d = 1 g/cm³) kullanılsaydı, aynı açık hava basıncını dengelemek için yaklaşık {koyu:10,3 metre} yüksekliğinde su sütunu gerekirdi."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">AÇIK HAVA BASINCI VE TORİÇELLİ DENEYİ (0 °C, DENİZ SEVİYESİ)</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"65\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Cıvalı Barometre Düzeneği</text>\n  <rect x=\"90\" y=\"190\" width=\"180\" height=\"35\" rx=\"4\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <rect x=\"165\" y=\"78\" width=\"30\" height=\"135\" rx=\"6\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <rect x=\"167\" y=\"105\" width=\"26\" height=\"108\" fill=\"#64748b\"/>\n  <text x=\"180\" y=\"96\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0f172a\">Boşluk</text>\n  <line x1=\"205\" y1=\"105\" x2=\"205\" y2=\"190\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <text x=\"248\" y=\"152\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">h = 76 cm Hg</text>\n  <text x=\"118\" y=\"165\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">P0 ↓</text>\n  <text x=\"118\" y=\"182\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">↓↓</text>\n  <text x=\"180\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">Borunun kesiti, şekli ve eğimi h yüksekliğini değiştirmez!</text>\n\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"65\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Yükselti ve Sıvı Yoğunluğu Etkisi</text>\n  <polygon points=\"380,215 470,95 560,215\" fill=\"#bbf7d0\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <text x=\"470\" y=\"88\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">Dağ Zirvesi: h &lt; 76 cm</text>\n  <text x=\"470\" y=\"155\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">Yamaç: h ≈ 70 cm</text>\n  <text x=\"470\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">Deniz Seviyesi: h = 76 cm</text>\n  <text x=\"615\" y=\"115\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">Yükseklere</text>\n  <text x=\"615\" y=\"132\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">çıkıldıkça</text>\n  <text x=\"615\" y=\"149\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">P0 AZALIR!</text>\n  <text x=\"520\" y=\"234\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">Su kullanılsaydı (d_su &lt; d_cıva): h ≈ 10,3 metre olurdu</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Boru Kesiti ve Eğimi Yüksekliği Etkilemez!",
+          "metin": "Sıvı basıncı derinlik (h) ve yoğunluğa (d) bağlı olduğundan, Toriçelli deneyinde borunun kalın olması, kıvrımlı olması veya eğik tutulması dik sıvı yüksekliğini (76 cm) değiştirmez."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Neden Cıva Tercih Edilmiştir?",
+          "metin": "Cıva, yoğunluğu çok büyük (13,6 g/cm³) olan bir sıvı olduğu için 1 metrelik kısa bir cam boruyla ölçüm yapılabilmesini sağlamıştır; daha az yoğun bir sıvıda sıvı seviyesi çok daha yüksek olur."
+        }
+      ]
+    },
+    {
+      "baslik": "Açık Hava Basıncının Kanıtları ve Kapalı Kaplardaki Gaz Basıncı",
+      "metin": [
+        "Açık hava basıncının varlığını kanıtlayan pek çok günlük olay ve deney vardır: Ağzına kadar su dolu bir bardağın üzerine kağıt kapatılıp ters çevrildiğinde kağıda alttan etki eden açık hava basıncı suyun basıncından büyük olduğu için su dökülmez. İçindeki havası vakumlanan (veya ısıtılıp ağzı kapatıldıktan sonra soğutulan) metal teneke kutu ya da damacana, dışarıdaki açık hava basıncının etkisiyle içe doğru büzülür. Otto von Guericke'nin yaptığı {koyu:Magdeburg yarım küreleri} deneyinde, içindeki havası boşaltılan iki metal yarım küreyi atlar bile birbirinden ayıramamıştır.",
+        "Meyve suyunun pipetle içilmesi, lavabo pompasının ve cam yüzeylere yapıştırılan {koyu:vantuzların} tutunması, çay tabağının ıslak çay bardağına yapışması ve ağzında kağıt yakılan cam şişenin üzerine konan haşlanmış yumurtanın şişe içine kendiliğinden girmesi hep iç basıncın düşürülmesi ve dıştaki açık hava basıncının (P0) baskın gelmesiyle gerçekleşir.",
+        "Kapalı kaplardaki gazlar ise taneciklerinin kabın iç çeperlerine hızla ve sürekli çarpması sonucu basınç oluşturur. Kapalı bir kaptaki gaz, kabın iç yüzeyindeki {koyu:her noktaya eşit büyüklükte} basınç uygular. Esnek çocuk balonları gibi sistemlerde iç gaz basıncı dış açık hava basıncına eşittir; balon gökyüzüne yükseldikçe dıştaki açık hava basıncı azaldığı için balonun hacmi büyür (şişer) ve bir süre sonra patlar."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">AÇIK HAVA BASINCININ KANITLARI VE KAPALI KAP GAZ BASINCI</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#a16207\">Açık Hava Basıncı (P0) Örnekleri</text>\n  <text x=\"180\" y=\"96\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#854d0e\">• Magdeburg Yarım Küreleri (Otto von Guericke)</text>\n  <text x=\"180\" y=\"122\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#854d0e\">• Ters çevrilen su dolu bardaktan suyun dökülmemesi</text>\n  <text x=\"180\" y=\"148\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#854d0e\">• İçindeki havası çekilen teneke kutunun büzülmesi</text>\n  <text x=\"180\" y=\"174\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#854d0e\">• Haşlanmış yumurtanın dar şişeye kendiliğinden girmesi</text>\n  <text x=\"180\" y=\"200\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#854d0e\">• Pipetle meyve suyu içilmesi ve çay tabağının yapışması</text>\n  <text x=\"180\" y=\"224\" text-anchor=\"middle\" font-size=\"11\" fill=\"#713f12\">Cam vantuzlar ve lavabo pompasının çalışma ilkesi</text>\n\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#faf5ff\" stroke=\"#a855f7\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#7e22ce\">Kapalı Kaplarda Gaz Basıncı</text>\n  <text x=\"520\" y=\"96\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">• Taneciklerin kabın iç yüzeyine çarpmasıyla oluşur</text>\n  <text x=\"520\" y=\"122\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">• Kabın her noktasına EŞİT büyüklükte basınç uygulanır</text>\n  <text x=\"520\" y=\"148\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">• Esnek balon yükseldikçe P0 azalır ➔ Balon şişer</text>\n  <text x=\"520\" y=\"174\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">• LPG tüpleri, yangın söndürücü, oksijen tüpü</text>\n  <text x=\"520\" y=\"200\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">• Otomobil hava yastığı (airbag) ve tekerlekler</text>\n  <text x=\"520\" y=\"224\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">Manometre ile kapalı kap gaz basıncı ölçülür</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Çay Tabağı Deneyi",
+          "metin": "Çay bardağı ile tabak arasına giren su, aradaki havanın çıkmasını sağlar. Alttan ve üstten etki eden açık hava basıncı tabağı bardağa doğru bastırarak düşmesini engeller."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Esnek Balonun Yükselirken Şişmesi",
+          "metin": "Deniz seviyesinden yukarı bırakılan esnek bir uçan balonun hacminin artmasının nedeni, yükseldikçe dışarıdaki açık hava basıncının azalması ve balonun dışa doğru genleşmesidir."
+        }
+      ]
+    },
+    {
+      "baslik": "Basınç Özelliklerinin Günlük Yaşam ve Teknolojideki Uygulamaları (F.8.3.1.3)",
+      "metin": [
+        "{koyu:Katı Basıncı Uygulamaları:} Katılar kendilerine uygulanan kuvveti aynı doğrultuda ve aynen iletirken, basıncı yüzey alanına ters orantılı olarak değiştirir. Bıçak ağzının bilenmesi, çivi ve iğne uçlarının sivri yapılması, krampon dişleri yüzey alanını küçülterek basıncı {koyu:artırır}. Kar ayakkabıları (hedik), iş makinelerinin geniş paletleri, tırların çok tekerlekli olması, tren raylarının altına geniş traversler döşenmesi ve traktör arka tekerleklerinin geniş yapılması ise yüzey alanını büyüterek basıncı {koyu:azaltır} ve zemine batmayı önler.",
+        "{koyu:Sıvı Basıncı ve Pascal Prensibi Uygulamaları:} Kapalı bir kaptaki sıvıya uygulanan basınç, sıvı tarafından kabın iç yüzeyinin her noktasına {koyu:eşit büyüklükte ve aynen} iletilir; bu bilimsel ilkeye {koyu:Pascal Prensibi} denir. Otomobillerdeki {koyu:hidrolik fren sistemleri}, sanayide ağır araçları kaldıran {koyu:su cendereleri (hidrolik liftler)}, hidrolik krikolar, berber ve dişçi koltukları, itfaiye merdivenleri, iş makinelerinin hidrolik kolları ve damperli kamyonlar Pascal prensibiyle çalışır; küçük bir kuvvetle çok ağır yükler kaldırılır.",
+        "{koyu:Gaz Basıncı Uygulamaları:} Gazlar da sıkıştırılabilir akışkanlar olup kapalı kaplarda basıncı her yöne eşit iletir. Otomobillerdeki {koyu:hava yastıkları (airbag)}, otobüslerin havalı kapı ve fren sistemleri, elektrikli süpürgeler, şırınga ve damlalıklar, yangın söndürme tüpleri, LPG ve oksijen tüpleri, deodorant/parfüm spreyleri ve boya tabancaları gazların basınç özelliklerinden yararlanılarak geliştirilmiştir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">KATI, SIVI VE GAZ BASINCININ TEKNOLOJİDEKİ UYGULAMALARI (F.8.3.1.3)</text>\n  <rect x=\"20\" y=\"45\" width=\"210\" height=\"195\" rx=\"8\" fill=\"#fff1f2\" stroke=\"#f43f5e\" stroke-width=\"1.5\"/>\n  <text x=\"125\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#be123c\">1. Katı Basıncı Uygulamaları</text>\n  <text x=\"125\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#9f1239\">Basıncı Artıranlar (S küçülür):</text>\n  <text x=\"125\" y=\"116\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">• Bıçak, çivi, toplu iğne ucu</text>\n  <text x=\"125\" y=\"136\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">• Krampon dişleri, buz pateni</text>\n  <text x=\"125\" y=\"164\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#9f1239\">Basıncı Azaltanlar (S büyür):</text>\n  <text x=\"125\" y=\"184\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">• Kar ayakkabısı (hedik)</text>\n  <text x=\"125\" y=\"204\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">• İş makinesi paleti, çok tekerlek</text>\n  <text x=\"125\" y=\"224\" text-anchor=\"middle\" font-size=\"10\" fill=\"#881337\">• Tren rayları altındaki traversler</text>\n\n  <rect x=\"245\" y=\"45\" width=\"210\" height=\"195\" rx=\"8\" fill=\"#ecfeff\" stroke=\"#06b6d4\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0e7490\">2. Sıvı Basıncı (Pascal İlkesi)</text>\n  <text x=\"350\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#155e75\">Sıvılar basıncı aynen iletir:</text>\n  <text x=\"350\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" fill=\"#164e63\">• Hidrolik fren sistemleri</text>\n  <text x=\"350\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" fill=\"#164e63\">• Hidrolik lift ve krikolar</text>\n  <text x=\"350\" y=\"158\" text-anchor=\"middle\" font-size=\"11\" fill=\"#164e63\">• İtfaiye merdiveni ve kepçeler</text>\n  <text x=\"350\" y=\"178\" text-anchor=\"middle\" font-size=\"11\" fill=\"#164e63\">• Berber koltukları, yağdanlık</text>\n  <text x=\"350\" y=\"198\" text-anchor=\"middle\" font-size=\"11\" fill=\"#164e63\">• Bileşik kaplar ve su cenderesi</text>\n  <text x=\"350\" y=\"222\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">Baraj duvarları tabana doğru kalınlaşır</text>\n\n  <rect x=\"470\" y=\"45\" width=\"210\" height=\"195\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <text x=\"575\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">3. Gaz Basıncı Uygulamaları</text>\n  <text x=\"575\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">Gazlar da basıncı aynen iletir:</text>\n  <text x=\"575\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Elektrikli süpürge ve vantuz</text>\n  <text x=\"575\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Pipet, şırınga ve damlalık</text>\n  <text x=\"575\" y=\"158\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Otomobil hava yastığı (Airbag)</text>\n  <text x=\"575\" y=\"178\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Otobüslerin havalı kapıları</text>\n  <text x=\"575\" y=\"198\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Parfüm, deodorant ve spreyler</text>\n  <text x=\"575\" y=\"222\" text-anchor=\"middle\" font-size=\"10\" fill=\"#14532d\">• Sanayi tüpleri ve kompresörler</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Kuvvet İletimi ile Basınç İletimi Farkı!",
+          "metin": "Katılar uygulanan KUVVETİ aynı doğrultuda aynen iletir; sıvılar ve gazlar ise kapalı kaplarda uygulanan BASINCI her yöne eşit büyüklükte aynen iletir (Pascal Prensibi)."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Hidrolik Sistemleri Tanıma",
+          "metin": "Bir teknolojik araçta 'hidrolik' kelimesi geçiyorsa veya ince bir borudaki sıvı/yağ sıkıştırılarak ağır bir yük kaldırılıyorsa (fren, lift, kriko, kepçe, berber koltuğu) çalışma ilkesi Pascal Prensibi'dir."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Deniz seviyesinde 0 °C sıcaklıkta Toriçelli deneyini yapan bir araştırmacı, kesit alanı 2S olan dik bir boru yerine kesit alanı S olan eğik bir boru kullanırsa cıva seviyesi (h) nasıl değişir?",
+      "cevap": "Cıva seviyesi değişmez, yine 76 cm olur. Çünkü barometredeki sıvı yüksekliği borunun kalınlığına (kesit alanına), şekline veya eğimine bağlı değildir."
+    },
+    {
+      "soru": "K, L ve M noktalarında aynı koşullarda özdeş cıvalı barometrelerle yapılan ölçümlerde cıva seviyeleri sırasıyla h_K = 76 cm, h_L = 72 cm ve h_M = 68 cm olarak ölçülmüştür. Bu noktaların deniz seviyesinden yüksekliklerini sıralayınız.",
+      "cevap": "Deniz seviyesinden yükseklere çıkıldıkça açık hava basıncı ve cıva seviyesi azalır. En düşük cıva seviyesi M noktasında olduğu için yükseklik sıralaması M > L > K şeklindedir."
+    },
+    {
+      "soru": "Toriçelli deneyinde cıva (d = 13,6 g/cm³) yerine yoğunluğu daha küçük olan bir sıvı (örneğin su, d = 1 g/cm³) kullanılsaydı cam borudaki sıvı yüksekliği nasıl değişirdi?",
+      "cevap": "Aynı açık hava basıncını dengelemek için sıvı yoğunluğu ile sıvı yüksekliği ters orantılıdır. Yoğunluğu daha küçük olan su kullanıldığında borudaki sıvı yüksekliği artar (yaklaşık 10,3 metre olur)."
+    },
+    {
+      "soru": "İçinde biraz su kaynatılan metal bir teneke kutunun ağzı sıkıca kapatılıp üzerine soğuk su döküldüğünde kutunun içe doğru ezilmesinin nedenini açıklayınız.",
+      "cevap": "Soğuk su döküldüğünde kutu içindeki su buharı yoğuşur ve iç gaz basıncı hızla düşer. Dışarıdaki açık hava basıncı iç basınçtan çok daha büyük hâle geldiği için teneke kutuyu içe doğru büzüştürür."
+    },
+    {
+      "soru": "Deniz seviyesinde şişirilip ağzı bağlanan esnek bir çocuk balonu gökyüzüne bırakıldığında yükselirken hacmi neden artar?",
+      "cevap": "Esnek balonlarda iç basınç dış basınca eşittir. Balon yükseldikçe dışarıdaki açık hava basıncı azalır; iç basıncın azalan dış basınca eşitlenebilmesi için balon dışa doğru genleşir ve hacmi büyür."
+    },
+    {
+      "soru": "Otomobillerdeki hidrolik fren sistemi ve sanayideki araç kaldırma liftleri hangi basınç prensibine dayanarak çalışır?",
+      "cevap": "Sıvıların kapalı kaplarda kendilerine uygulanan basıncı her yöne ve aynen iletmesi ilkesine, yani Pascal Prensibi'ne dayanarak çalışır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Deniz seviyesinde ve 0 °C sıcaklıkta yapılan Toriçelli deneyinde cam borudaki cıva yüksekliği 76 cm olarak ölçülmektedir. Bu deneyde cam borudaki sıvı yüksekliğini (h) artırmak için aşağıdakilerden hangisi yapılmalıdır?",
+      "secenekler": [
+        "Cıva yerine yoğunluğu cıvadan daha küçük olan bir sıvı kullanmak",
+        "Kesit alanı daha dar olan ince bir cam boru kullanmak",
+        "Deney düzeneğini deniz seviyesinden yüksek bir dağın zirvesine çıkarmak",
+        "Cam boruyu cıva çanağı içinde eğik duruma getirmek"
+      ],
+      "dogru": 0,
+      "aciklama": "Boru kesiti ve eğimi sıvı yüksekliğini etkilemez; dağ zirvesine çıkmak yüksekliği azaltır. Yoğunluğu cıvadan daha küçük bir sıvı kullanıldığında ise aynı açık hava basıncını dengelemek için sıvı yüksekliği (h) 76 cm'den daha büyük olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki günlük yaşam ve teknoloji uygulamalarından hangisi sıvıların basıncı her yöne aynen iletmesi (Pascal Prensibi) ilkesine dayanarak çalışır?",
+      "secenekler": [
+        "Karlı zeminlerde batmamak için geniş tabanlı kar ayakkabısı giyilmesi",
+        "Otomobillerde frene basıldığında tekerleklerin hidrolik fren sistemiyle durdurulması",
+        "Meyve suyu kutusundaki içeceğin pipet yardımıyla içilmesi",
+        "Banyo fayanslarına bastırılan plastik vantuzların yüzeye yapışması"
+      ],
+      "dogru": 1,
+      "aciklama": "Hidrolik fren sistemleri, fren pedalına uygulanan kuvvetle oluşan basıncın fren hidrolik sıvısı tarafından tekerleklerdeki balatalara aynen iletilmesi (Pascal Prensibi) ile çalışır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Ağzına kadar su ile dolu bir bardağın üzeri hava almayacak biçimde kağıtla kapatılıp hızlıca ters çevrildiğinde bardaktaki suyun dökülmediği gözlemlenir. Bu durumun temel nedeni aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Suyun yoğunluğunun kağıdın yoğunluğundan küçük olması",
+        "Bardak içindeki suyun kağıda basınç uygulamaması",
+        "Kağıda alttan etki eden açık hava basıncının suyun basıncını dengelemesi",
+        "Katıların kendilerine uygulanan kuvveti her yöne eşit iletmesi"
+      ],
+      "dogru": 2,
+      "aciklama": "Bardak ters çevrildiğinde kağıdın alt yüzeyine etki eden açık hava basıncı, bardak içindeki suyun ağırlığından kaynaklanan sıvı basıncından büyük olduğu için kağıt düşmez ve su dökülmez."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Katı, sıvı ve gaz basıncının günlük yaşamdaki etkileriyle ilgili aşağıdaki eşleştirmelerden hangisi yanlıştır?",
+      "secenekler": [
+        "İş makinelerinde tekerlek yerine geniş palet kullanılması — Katı basıncını azaltmak",
+        "Baraj duvarlarının tabana doğru inildikçe daha kalın inşa edilmesi — Derinlikle artan sıvı basıncına dayanmak",
+        "Magdeburg yarım kürelerinin havası boşaltıldığında birbirinden ayrılamaması — Açık hava basıncının etkisi",
+        "Berber koltuklarının pedala basılarak yükseltilmesi — Katıların kuvveti aynı doğrultuda iletmesi"
+      ],
+      "dogru": 3,
+      "aciklama": "Berber koltukları içindeki sıvının basıncı aynen iletmesiyle (Pascal Prensibi / sıvı basıncı ile) çalışır; katı basıncı uygulaması değildir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Deniz seviyesinden yükseklere doğru çıkıldıkça atmosferdeki gaz yoğunluğu ve açık hava basıncı azalır.",
+          "dogru": true
+        },
+        {
+          "metin": "Toriçelli deneyinde kullanılan cam borunun kesit alanı iki katına çıkarılırsa cıva seviyesi 38 cm'ye düşer.",
+          "dogru": false
+        },
+        {
+          "metin": "Kapalı bir kapta bulunan gaz, kabın iç yüzeyindeki bütün noktalara eşit büyüklükte basınç uygular.",
+          "dogru": true
+        },
+        {
+          "metin": "Bıçakların keskinleştirilmesi ve çivi uçlarının sivri yapılması katı basıncını azaltmak amacıyla yapılır.",
+          "dogru": false
+        },
+        {
+          "metin": "İtfaiye merdivenleri ve sanayideki hidrolik liftler Pascal Prensibi'nden yararlanılarak tasarlanmıştır.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki araç ve olayları ilgili oldukları basınç kavramlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Barometre",
+          "Açık hava (atmosfer) basıncını ölçmeye yarayan araç"
+        ],
+        [
+          "Pascal Prensibi",
+          "Kapalı kaptaki sıvının basıncı her yöne aynen iletmesi ilkesi"
+        ],
+        [
+          "Magdeburg Deneyi",
+          "Açık hava basıncının büyüklüğünü kanıtlayan metal yarım küre deneyi"
+        ],
+        [
+          "Hidrolik Kriko",
+          "Sıvı basıncının iletimiyle ağır araçları kaldıran düzenek"
+        ],
+        [
+          "Geniş Paletli Kepçe",
+          "Yüzey alanını büyüterek zemine yapılan katı basıncını azaltan tasarım"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Atmosferi oluşturan gazların ağırlığından dolayı temas ettikleri yüzeylere uyguladığı basınca ___ hava basıncı denir.",
+          "cevap": "açık"
+        },
+        {
+          "metin": "Toriçelli, 0 °C sıcaklıkta ve deniz seviyesinde yaptığı deneyde cam borudaki ___ yüksekliğini 76 cm olarak ölçmüştür.",
+          "cevap": "cıva"
+        },
+        {
+          "metin": "Açık hava basıncını ölçmek için kullanılan araçlara ___ adı verilir.",
+          "cevap": "barometre"
+        },
+        {
+          "metin": "Sıvıların kapalı kaplarda uygulanan basıncı her yöne eşit büyüklükte iletmesi ilkesine ___ Prensibi denir.",
+          "cevap": "Pascal"
+        },
+        {
+          "metin": "Cam yüzeylere bastırılarak tutturulan ___ ve pipetle içecek içilmesi açık hava basıncı sayesinde gerçekleşir.",
+          "cevap": "vantuz"
+        }
+      ],
+      "fazla": [
+        "dinamometre",
+        "termometre"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Toriçelli deneyinde borudaki sıvı yüksekliğinin (h) bağlı olduğu ve bağlı olmadığı değişkenleri sınıflandırarak açıklayınız.",
+      "ipuclari": [
+        "Deneyin yapıldığı yerin deniz seviyesinden yüksekliği (rakım) ve ortam sıcaklığı açık hava basıncını etkiler.",
+        "Boruda kullanılan sıvının cinsi (yoğunluğu), açık hava basıncını dengeleyecek sıvı sütununun boyunu belirler.",
+        "Cam borunun kalınlığı (kesit alanı), şekli, uzunluğu veya eğik tutulması sıvı yüksekliğini etkilemez."
+      ],
+      "cevap": "Toriçelli deneyinde cam borudaki sıvı yüksekliği (h); deneyin yapıldığı yerin deniz seviyesinden yüksekliğine (yükseklere çıkıldıkça h azalır), ortam sıcaklığına ve kullanılan sıvının yoğunluğuna (yoğunluk küçüldükçe h artar) bağlıdır. Buna karşılık cam borunun kesit alanına (inceliğine-kalınlığına), borunun şekline, eğik ya da dik tutulmasına ve çanaktaki sıvı miktarına bağlı değildir."
+    }
+  ],
+  "ozet": [
+    "{koyu:Açık Hava Basıncı:} Atmosferdeki gazların ağırlığından dolayı birim yüzeye uyguladığı basınçtır; {koyu:barometre} ile ölçülür ve yükseklere çıkıldıkça azalır.",
+    "{koyu:Toriçelli Deneyi:} Deniz seviyesinde ve 0 °C'de açık hava basıncı {koyu:76 cm cıva} sütununun basıncına eşittir; borunun kesiti ve eğimi bu yüksekliği değiştirmez.",
+    "{koyu:Deneysel Kanıtlar:} Magdeburg yarım küreleri, ters çevrilen bardaktan suyun dökülmemesi, vantuzlar ve pipetle sıvı çekilmesi açık hava basıncıyla gerçekleşir.",
+    "{koyu:Kapalı Kap Gaz Basıncı:} Gaz taneciklerinin kabın iç yüzeyine çarpmasıyla oluşur; kabın her noktasına eşit büyüklükte etki eder (LPG tüpü, hava yastığı, tekerlek).",
+    "{koyu:Pascal Prensibi ve Uygulamalar:} Sıvılar ve gazlar kapalı kapta basıncı her yöne aynen iletir; hidrolik fren, su cenderesi, hidrolik lift ve berber koltuğu bu ilkeyle çalışır."
+  ]
+}

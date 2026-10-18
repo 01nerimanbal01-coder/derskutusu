@@ -1,0 +1,263 @@
+{
+  "ad": "10-kimya-11",
+  "sinif": 10,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 11,
+  "tarih": "30 Kasım-4 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "1. Tema: Etkileşim",
+  "konu": "Gazlar: Gazların Genel Özellikleri, Gaz Değişkenleri (Basınç P, Hacim V, Sıcaklık T, Mol Sayısı n) ve Kinetik Moleküler Teori (10.1.8)",
+  "ciktilar": [
+    "Gazların genel özelliklerini (hacim, basınç, genleşme, sıkıştırılabilirlik, homojen karışabilirlik ve düşük yoğunluk) katı ve sıvılarla karşılaştırarak açıklar.",
+    "Gazların davranışını tanımlayan dört temel değişkeni (basınç P, hacim V, mutlak sıcaklık T ve madde miktarı n) ölçüm araçları ve birim dönüşümleriyle çözümler.",
+    "Kinetik Moleküler Teori'nin varsayımlarını kullanarak gaz taneciklerinin ortalama kinetik enerjisini, difüzyon/efüzyon hızını ve ideal gaz koşullarını yorumlar."
+  ],
+  "giris": "Maddenin en düzensiz, en yüksek enerjili ve tanecikleri arasındaki boşluğun en fazla olduğu fiziksel hâli {koyu:gaz hâlidir}. Atmosferimizi oluşturan havadan sanayide kullanılan yakıtlara kadar gazların davranışını anlamak; {koyu:basınç (P), hacim (V), mutlak sıcaklık (T) ve mol sayısı (n)} değişkenlerini gözlemlemeye ve bu gözlemleri {koyu:Kinetik Moleküler Teori} ile tanecik boyutunda açıklamaya dayanır.",
+  "bolumler": [
+    {
+      "baslik": "Gazların Genel Özellikleri",
+      "metin": [
+        "Gaz tanecikleri arasındaki çekim kuvvetleri katı ve sıvılara kıyasla yok denecek kadar zayıf, tanecikler arası boşluklar ise çok fazladır. Bu nedenle gazların {koyu:belirli bir şekli ve belirli bir hacmi yoktur}; konuldukları kabın her yönüne hızla yayılarak kabın şeklini ve hacmini alırlar. Tanecikler arasındaki geniş boşluklar sayesinde gazlar basınç uygulandığında {koyu:yüksek oranda sıkıştırılabilir} ve düşük sıcaklık-yüksek basınçta sıvılaştırılabilir.",
+        "Gazların {koyu:yoğunlukları (özkütleleri)} katı ve sıvılara göre çok düşüktür ve tanecikleri birbirinden bağımsız hareket ettiği için gazlar {koyu:akışkan} özellik gösterir. Tek atomlu soygazlar ({koyu:He, Ne, Ar}) yalnızca {koyu:öteleme (yer değiştirme)} hareketi yaparken, iki veya daha fazla atomlu gaz molekülleri ({koyu:O₂, CO₂, CH₄}) hem {koyu:öteleme} hem {koyu:dönme} hem de {koyu:titreşim} hareketi yapar.",
+        "Gazlar birbirleriyle {koyu:her oranda homojen olarak karışarak} gaz çözeltilerini (örneğin temiz hava) oluşturur. Sıcaklıkları artırıldığında bütün gazlar aynı oranda genleştiği için {koyu:genleşme katsayısı gazlar için ayırt edici bir özellik değildir}. Ayrıca gaz tanecikleri bulundukları kabın iç çeperlerine sürekli ve esnek çarpmalar yaparak kabın her noktasına {koyu:eşit büyüklükte basınç} uygular."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Soygazların ve Moleküler Gazların Hareket Farkı",
+          "metin": "Bütün gaz tanecikleri 'öteleme (yer değiştirme)' hareketi yapar; ancak He ve Ne gibi tek atomlu gazlar dönme ve titreşim hareketi yapmaz, yalnız çok atomlu gaz molekülleri bu üç hareketi birlikte yapar."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Genleşme Katsayısı Neden Ayırt Edici Değildir?",
+          "metin": "Katı ve sıvılarda genleşme maddenin cinsine bağlıdır; ancak gazlarda tanecikler arası boşluk çok büyük olduğundan 1 °C sıcaklık artışında tüm gazlar hacimlerinin {kesir:1|273}'ü kadar genleşir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">GAZLARIN GENEL ÖZELLİKLERİ VE TANECİKLİ YAPISI (10.1.8)</text>\n  <rect x=\"22\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"64\" text-anchor=\"middle\" font-size=\"12.2\" font-weight=\"bold\" fill=\"#1e40af\">GAZ HALİNİN AYIRT EDİCİ ÖZELLİKLERİ</text>\n  <text x=\"35\" y=\"88\" font-size=\"11.1\" fill=\"#1e3a8a\">• Belirli şekil ve hacimleri yoktur; konuldukları</text>\n  <text x=\"45\" y=\"104\" font-size=\"10.8\" fill=\"#1e3a8a\">kabın tamamını doldurur ve hacmini alırlar.</text>\n  <text x=\"35\" y=\"128\" font-size=\"11.1\" fill=\"#1e3a8a\">• Tanecikler arası boşluk çok fazla olduğu için</text>\n  <text x=\"45\" y=\"144\" font-size=\"10.8\" fill=\"#1e3a8a\">yüksek oranda sıkıştırılabilirler.</text>\n  <text x=\"35\" y=\"168\" font-size=\"11.1\" fill=\"#1e3a8a\">• Yoğunlukları (özkütleleri) katı ve sıvılara göre</text>\n  <text x=\"45\" y=\"184\" font-size=\"10.8\" fill=\"#1e3a8a\">çok düşüktür; akışkandırlar.</text>\n  <rect x=\"358\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"64\" text-anchor=\"middle\" font-size=\"12.2\" font-weight=\"bold\" fill=\"#166534\">HAREKET, GENLEŞME VE KARIŞABİLİRLİK</text>\n  <text x=\"370\" y=\"88\" font-size=\"11.1\" fill=\"#14532d\">• Tanecikleri titreşim, dönme ve özellikle</text>\n  <text x=\"380\" y=\"104\" font-size=\"10.8\" fill=\"#14532d\">öteleme (yer değiştirme) hareketi yapar (Soygaz</text>\n  <text x=\"380\" y=\"120\" font-size=\"10.8\" fill=\"#14532d\">atomları ise yalnız öteleme hareketi yapar).</text>\n  <text x=\"370\" y=\"144\" font-size=\"11.1\" fill=\"#14532d\">• Sıcaklık etkisiyle aynı oranda genleşirler</text>\n  <text x=\"380\" y=\"160\" font-size=\"10.8\" fill=\"#14532d\">(genleşme katsayıları gazlar için ayırt edici değildir).</text>\n  <text x=\"370\" y=\"184\" font-size=\"11.1\" fill=\"#14532d\">• Birbiriyle her oranda homojen karışırlar (çözelti).</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Gazlar bulundukları kabın her noktasına çarparak eşit büyüklükte ve homojen gaz basıncı uygularlar.</text>\n</svg>"
+    },
+    {
+      "baslik": "Gazları Tanımlayan Dört Temel Değişken: P, V, T ve n",
+      "metin": [
+        "Bir gaz örneğinin fiziksel davranışını belirleyen dört temel nicelik vardır: 1) {koyu:Basınç (P)}, hareket hâlindeki gaz taneciklerinin birim yüzeye dik olarak uyguladığı çarpma kuvvetidir. Açık hava (atmosfer) basıncı {koyu:barometre} ile, kapalı kaplardaki gaz basıncı ise {koyu:manometre} ile ölçülür. Deniz seviyesinde 0 °C'deki atmosfer basıncı {koyu:1 atm}'dir ve birim dönüşümü {koyu:1 atm = 76 cmHg = 760 mmHg = 760 Torr} (SI birimi Pascal, {koyu:Pa}) şeklindedir. Basınç; birim hacimdeki tanecik sayısı, taneciklerin hızı ve birim zamandaki çarpma sayısıyla doğru orantılıdır.",
+        "2) {koyu:Hacim (V)}, gazın kapladığı boşluk olup her zaman bulunduğu kabın iç hacmine eşittir. Gazlar {koyu:sabit hacimli kaplarda} (çelik tüp, cam balon; V sabit) veya {koyu:sabit basınçlı kaplarda} (sürtünmesiz hareketli pistonlu kap, elastik balon; iç basınç dış basınca eşit, P sabit) incelenir. Hacim birimi olarak litre ({koyu:L}) kullanılır: {koyu:1 L = 1 {us:dm|3} = 1000 mL = 1000 {us:cm|3}} ve {koyu:1 {us:m|3} = 1000 L}.",
+        "3) {koyu:Mutlak Sıcaklık (T)}, gaz taneciklerinin ortalama kinetik enerjisinin bir ölçüsüdür ve {koyu:termometre} ile ölçülür. Gaz hesaplamalarında Celsius ({koyu:t, °C}) değil, {koyu:Kelvin (T, K)} eşeli kullanılır ve dönüşüm {koyu:T (K) = t (°C) + 273} bağıntısıyla yapılır. 4) {koyu:Madde Miktarı (n)} ise gazın içerdiği tanecik sayısını ifade eden {koyu:mol sayısıdır}; {koyu:n = {kesir:m|Mₐ} = {kesir:N|Nₐ}} ({koyu:1 mol = 6,02·{us:10|23}} tanecik) formülüyle hesaplanır."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Celsius ve Kelvin Oran Hatası",
+          "metin": "Gazların ortalama kinetik enerjisi Celsius (°C) ile değil, mutlak sıcaklıkla (Kelvin, K) doğru orantılıdır. Sıcaklığı 27 °C'den (300 K) 327 °C'ye (600 K) çıkarılan bir gazın mutlak sıcaklığı ve ortalama kinetik enerjisi iki katına çıkar."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Normal Koşullar (NK) ve Standart Koşullar (ODA)",
+          "metin": "Normal Koşullar (NK / NŞA) 0 °C (273 K) ve 1 atm basınçtır (1 mol ideal gaz = 22,4 L); Standart (Oda) Koşulları ise 25 °C (298 K) ve 1 atm basınçtır (1 mol ideal gaz = 24,5 L)."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">GAZLARI TANIMLAYAN DÖRT TEMEL DEĞİŞKEN VE BİRİMLERİ</text>\n  <rect x=\"22\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"64\" text-anchor=\"middle\" font-size=\"12.2\" font-weight=\"bold\" fill=\"#92400e\">1. BASINÇ (P) VE 2. HACİM (V)</text>\n  <text x=\"35\" y=\"88\" font-size=\"11.1\" fill=\"#78350f\">• Basınç (P): Birim yüzeye dik etki eden çarpma</text>\n  <text x=\"45\" y=\"104\" font-size=\"10.8\" fill=\"#78350f\">kuvvetidir. Açık hava: Barometre, Kapalı: Manometre.</text>\n  <text x=\"35\" y=\"126\" font-size=\"10.8\" font-weight=\"bold\" fill=\"#78350f\">• 1 atm = 76 cmHg = 760 mmHg = 760 Torr</text>\n  <text x=\"35\" y=\"150\" font-size=\"11.1\" fill=\"#78350f\">• Hacim (V): Gazın hacmi bulunduğu kabın hacmine</text>\n  <text x=\"45\" y=\"166\" font-size=\"10.8\" fill=\"#78350f\">eşittir (sabit hacimli kap veya pistonlu kap).</text>\n  <text x=\"35\" y=\"188\" font-size=\"10.8\" font-weight=\"bold\" fill=\"#78350f\">• 1 L = 1 dm³ = 1000 mL = 1000 cm³ ; 1 m³ = 1000 L</text>\n  <rect x=\"358\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"64\" text-anchor=\"middle\" font-size=\"12.2\" font-weight=\"bold\" fill=\"#6b21a8\">3. SICAKLIK (T) VE 4. MADDE MİKTARI (n)</text>\n  <text x=\"370\" y=\"88\" font-size=\"11.1\" fill=\"#581c87\">• Mutlak Sıcaklık (T): Termometre ile ölçülür;</text>\n  <text x=\"380\" y=\"104\" font-size=\"10.8\" fill=\"#581c87\">gaz hesaplamalarında Kelvin (K) birimi kullanılır.</text>\n  <text x=\"370\" y=\"126\" font-size=\"10.8\" font-weight=\"bold\" fill=\"#581c87\">• T (Kelvin) = t (°C) + 273  (0 °C = 273 K)</text>\n  <text x=\"370\" y=\"150\" font-size=\"11.1\" fill=\"#581c87\">• Ortalama kinetik enerji mutlak sıcaklıkla (T)</text>\n  <text x=\"380\" y=\"166\" font-size=\"10.8\" fill=\"#581c87\">doğru orantılıdır.</text>\n  <text x=\"370\" y=\"188\" font-size=\"10.8\" font-weight=\"bold\" fill=\"#581c87\">• Mol Sayısı (n): n = m / Mₐ = N / Nₐ (Nₐ = 6,02·10²³)</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Dikkat: Sıcaklığı 25 °C'den 50 °C'ye çıkan gazın mutlak sıcaklığı (298 K ⟶ 323 K) iki katına ÇIKMAZ!</text>\n</svg>"
+    },
+    {
+      "baslik": "Kinetik Moleküler Teori (KMT) ve Gaz Taneciklerinin Hızı",
+      "metin": [
+        "Gazların gözlemlenen makroskobik özelliklerini tanecik davranışlarıyla açıklayan modele {koyu:Kinetik Moleküler Teori (KMT)} denir. KMT'nin temel varsayımlarına göre: 1) Gaz taneciklerinin kendi öz hacimleri, aralarındaki çok büyük boşluklar (kabın hacmi) yanında {koyu:ihmal edilir}. 2) Tanecikler her yönde doğrusal, gelişigüzel ve sürekli zikzaklı hareket ({koyu:Brown hareketi}) yapar. 3) Taneciklerin birbirleriyle ve kap çeperiyle yaptığı çarpışmalar {koyu:tam esnektir}; çarpışan tanecikler arasında enerji aktarımı olsa da toplam kinetik enerji korunur.",
+        "4) Gaz tanecikleri arasında çarpışma anı dışında {koyu:hiçbir itme veya çekme kuvveti olmadığı} varsayılır. 5) Gaz taneciklerinin ortalama kinetik enerjisi yalnızca {koyu:mutlak sıcaklığa (T)} bağlıdır ve mutlak sıcaklıkla doğru orantılıdır ({koyu:Eₖ = {kesir:3|2}·k·T}). Bu nedenle {koyu:aynı sıcaklıkta bulunan farklı gazların (örneğin He, O₂ ve SO₂) ortalama kinetik enerjileri birbirine eşittir}.",
+        "Gazların başka bir gaz içinde dağılmasına {koyu:difüzyon}, küçük bir delikten boşluğa sızmasına ise {koyu:efüzyon} denir. Gaz taneciklerinin yayılma hızı ({koyu:v}), mutlak sıcaklığın ({koyu:T}) karekökü ile doğru, mol kütlesinin ({koyu:Mₐ}) karekökü ile ters orantılıdır: {koyu:{kesir:v₁|v₂} = {kok:{kesir:T₁ · Mₐ₂|T₂ · Mₐ₁}}}. KMT varsayımlarına tam uyan gazlara {koyu:ideal gaz} denir; doğadaki gerçek gazlar {koyu:yüksek sıcaklık, düşük basınç ve küçük mol kütlesinde (apolar yapıda)} ideale en çok yaklaşır."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Kinetik Enerji ve Difüzyon Hızı İlişkisi",
+          "metin": "Aynı sıcaklıkta bulunan He (Mₐ = 4) ve CH₄ (Mₐ = 16) gazlarının ortalama kinetik enerjileri EŞİTTİR; ancak mol kütlesi küçük olan He gazının ortalama yayılma hızı CH₄ gazının {kok:{kesir:16|4}} = 2 katıdır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Gerçek Gazların İdealden Sapması",
+          "metin": "Basınç yükseltilip sıcaklık düşürüldüğünde tanecikler birbirine yaklaşır, çekim kuvvetleri ve öz hacim ihmal edilemez hâle gelir; böylece gaz ideal davranıştan uzaklaşarak sıvılaşmaya yaklaşır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">KİNETİK MOLEKÜLER TEORİ (KMT) VE MOLEKÜL HIZI</text>\n  <rect x=\"22\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"64\" text-anchor=\"middle\" font-size=\"12.2\" font-weight=\"bold\" fill=\"#9a3412\">KİNETİK TEORİNİN TEMEL VARSAYIMLARI</text>\n  <text x=\"35\" y=\"88\" font-size=\"10.8\" fill=\"#7c2d12\">• Gaz taneciklerinin öz hacimleri, kabın hacmi</text>\n  <text x=\"45\" y=\"104\" font-size=\"10.8\" fill=\"#7c2d12\">yanında ihmal edilir (noktasal tanecik kabulü).</text>\n  <text x=\"35\" y=\"128\" font-size=\"10.8\" fill=\"#7c2d12\">• Tanecikler her yönde doğrusal, gelişigüzel ve</text>\n  <text x=\"45\" y=\"144\" font-size=\"10.8\" fill=\"#7c2d12\">sürekli hareket eder (Brown hareketi).</text>\n  <text x=\"35\" y=\"168\" font-size=\"10.8\" fill=\"#7c2d12\">• Çarpışmalar tam esnektir (toplam enerji korunur).</text>\n  <text x=\"35\" y=\"192\" font-size=\"10.8\" fill=\"#7c2d12\">• Çarpışma anı dışında itme-çekme kuvveti yok sayılır.</text>\n  <rect x=\"358\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"64\" text-anchor=\"middle\" font-size=\"12.2\" font-weight=\"bold\" fill=\"#065f46\">DİFÜZYON, EFÜZYON VE İDEAL GAZ</text>\n  <text x=\"370\" y=\"88\" font-size=\"10.8\" fill=\"#064e3b\">• Aynı mutlak sıcaklıkta (T) bulunan tüm gazların</text>\n  <text x=\"380\" y=\"104\" font-size=\"10.8\" fill=\"#064e3b\">ortalama kinetik enerjileri (Eₖ = 3/2 k·T) EŞİTTİR.</text>\n  <text x=\"370\" y=\"128\" font-size=\"10.8\" fill=\"#064e3b\">• Difüzyon (yayılma) ve Efüzyon (boşluğa sızma) hızı:</text>\n  <text x=\"380\" y=\"146\" font-size=\"10.8\" font-weight=\"bold\" fill=\"#064e3b\">v₁ / v₂ = kök( (T₁ · Mₐ₂) / (T₂ · Mₐ₁) )</text>\n  <text x=\"370\" y=\"170\" font-size=\"10.8\" fill=\"#064e3b\">• Gerçek gazlar; YÜKSEK SICAKLIK, DÜŞÜK BASINÇ</text>\n  <text x=\"380\" y=\"186\" font-size=\"10.8\" fill=\"#064e3b\">ve küçük mol kütlesinde (Mₐ) ideale yaklaşır.</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Aynı sıcaklıkta mol kütlesi (Mₐ) küçük olan hafif gaz tanecikleri (ör. H₂ ve He) daha hızlı hareket eder.</text>\n</svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Deniz seviyesinde ölçülen 0,5 atm gaz basıncının kaç cmHg ve kaç mmHg (Torr) olduğunu hesaplayınız.",
+      "cevap": "1 atm = 76 cmHg = 760 mmHg (Torr) olduğuna göre; 0,5 atm = 0,5 · 76 = 38 cmHg ve 0,5 · 760 = 380 mmHg (380 Torr) olarak bulunur."
+    },
+    {
+      "soru": "Hacmi 2500 mL olan kapalı bir cam balondaki gazın sıcaklığı 127 °C olarak ölçülmüştür. Bu gazın hacmini litre (L) ve sıcaklığını Kelvin (K) cinsinden yazınız.",
+      "cevap": "1 L = 1000 mL olduğundan V = {kesir:2500|1000} = 2,5 L'dir. Mutlak sıcaklık ise T (K) = t (°C) + 273 bağıntısından T = 127 + 273 = 400 K olarak bulunur."
+    },
+    {
+      "soru": "Ortalama kinetik enerjinin iki katına çıkması için başlangıç sıcaklığı 27 °C olan bir miktar H₂ gazının sıcaklığı kaç °C'ye yükseltilmelidir?",
+      "cevap": "Ortalama kinetik enerji mutlak sıcaklıkla (Kelvin) doğru orantılıdır. Başlangıç sıcaklığı T₁ = 27 + 273 = 300 K'dir. Kinetik enerjinin 2 katına çıkması için T₂ = 2 · 300 = 600 K olmalıdır. Celsius cinsinden karşılığı t₂ = 600 - 273 = 327 °C'dir."
+    },
+    {
+      "soru": "Aynı sıcaklık ve basınçta bulunan He (Mₐ = 4 g/mol) ve SO₂ (Mₐ = 64 g/mol) gazlarının ortalama kinetik enerjilerini ve difüzyon hızlarını karşılaştırınız.",
+      "cevap": "Her iki gaz aynı sıcaklıkta (T₁ = T₂) bulunduğu için ortalama kinetik enerjileri birbirine eşittir (Eₖ,He = Eₖ,SO₂). Difüzyon hızları oranı ise {kesir:v_He|v_SO₂} = {kok:{kesir:Mₐ,SO₂|Mₐ,He}} = {kok:{kesir:64|4}} = {kok:16} = 4'tür. Yani He gazı SO₂ gazından 4 kat daha hızlı yayılır."
+    },
+    {
+      "soru": "Kinetik Moleküler Teori'ye (KMT) göre gaz taneciklerinin öz hacmi ve tanecikler arası çekim kuvvetleri hakkında hangi varsayımlar yapılır?",
+      "cevap": "Kinetik Moleküler Teori'ye göre gaz tanecikleri arasındaki mesafe taneciklerin kendi boyutlarına göre çok büyük olduğundan taneciklerin öz hacmi kabın hacmi yanında ihmal edilir (sıfır kabul edilir) ve çarpışma anı dışında tanecikler arasında itme-çekme kuvveti bulunmadığı varsayılır."
+    },
+    {
+      "soru": "Gerçek gazlar hangi sıcaklık ve basınç koşullarında ideal gaz davranışına en çok yaklaşır? Nedenini açıklayınız.",
+      "cevap": "Gerçek gazlar 'yüksek sıcaklık ve düşük basınç' koşullarında ideale en çok yaklaşır. Çünkü yüksek sıcaklıkta taneciklerin kinetik enerjisi artar, düşük basınçta ise hacim genişler ve tanecikler birbirinden uzaklaşır; böylece tanecikler arası çekim kuvvetleri ve öz hacim ihmal edilebilir düzeye iner."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Gazların genel özellikleri ve Kinetik Moleküler Teori ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+      "secenekler": [
+        "Gazlar için genleşme katsayısı ayırt edici bir özelliktir.",
+        "Gazlar konuldukları kabın şeklini ve hacmini tamamen alırlar.",
+        "Gaz taneciklerinin birbirleriyle çarpışmaları tam esnektir.",
+        "Gazlar birbirleriyle her oranda homojen olarak karışabilirler.",
+        "Aynı mutlak sıcaklıktaki farklı gazların ortalama kinetik enerjisi eşittir."
+      ],
+      "dogru": 0,
+      "aciklama": "Bütün gazlar sıcaklık artışıyla aynı oranda (1 °C artışta {kesir:1|273} oranında) genleştiği için genleşme katsayısı gazlar adına ayırt edici bir özellik değildir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Sabit hacimli kapalı bir kapta bulunan ideal CH₄ (Mₐ = 16 g/mol) gazının sıcaklığı 27 °C'den 327 °C'ye çıkarıldığında gazın niceliklerindeki değişim için aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Mutlak sıcaklığı (K) on iki katına çıkar.",
+        "Ortalama kinetik enerjisi iki katına çıkar.",
+        "Kaptaki gaz yoğunluğu (özkütlesi) iki katına çıkar.",
+        "Taneciklerin birim zamandaki çarpma sayısı yarıya düşer.",
+        "Gazın mol sayısı ve kütlesi iki katına çıkar."
+      ],
+      "dogru": 1,
+      "aciklama": "T₁ = 27 + 273 = 300 K ve T₂ = 327 + 273 = 600 K olduğundan mutlak sıcaklık 2 katına çıkmıştır; ortalama kinetik enerji mutlak sıcaklıkla doğru orantılı olduğu için 2 katına çıkar."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Gaz değişkenleri ve birimleriyle ilgili aşağıda verilen eşitliklerden hangisi yanlıştır?",
+      "secenekler": [
+        "1 atm = 76 cmHg = 760 mmHg",
+        "1 L = 1 dm³ = 1000 mL = 1000 cm³",
+        "100 °C = 173 Kelvin (K)",
+        "760 mmHg = 760 Torr",
+        "0 °C = 273 Kelvin (K)"
+      ],
+      "dogru": 2,
+      "aciklama": "T (K) = t (°C) + 273 bağıntısına göre 100 °C = 100 + 273 = 373 K'dir; 173 K değil."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıda verilen gaz örneklerinden hangisi belirtilen sıcaklık, basınç ve mol kütlesi (Mₐ) koşullarında ideal gaz davranışına en yakındır?",
+      "secenekler": [
+        "0 °C sıcaklık ve 4 atm basınçta SO₂ gazı (Mₐ = 64)",
+        "0 °C sıcaklık ve 2 atm basınçta CO₂ gazı (Mₐ = 44)",
+        "100 °C sıcaklık ve 2 atm basınçta N₂ gazı (Mₐ = 28)",
+        "200 °C sıcaklık ve 0,5 atm basınçta He gazı (Mₐ = 4)",
+        "100 °C sıcaklık ve 4 atm basınçta CH₄ gazı (Mₐ = 16)"
+      ],
+      "dogru": 3,
+      "aciklama": "Gazlar yüksek sıcaklık (200 °C), düşük basınç (0,5 atm) ve küçük mol kütlesi / apolar yapı (He, Mₐ = 4) koşullarında ideale en yakındır."
+    },
+    {
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "metin": "Açık hava (atmosfer) basıncı barometre ile, kapalı kaplardaki gaz basıncı ise manometre ile ölçülür.",
+          "dogru": true,
+          "aciklama": "Barometre açık hava basıncını, manometre kapalı kaptaki gaz basıncını ölçen araçtır."
+        },
+        {
+          "metin": "Aynı sıcaklıkta bulunan H₂ (Mₐ = 2) ve O₂ (Mₐ = 32) gazlarından O₂ moleküllerinin ortalama yayılma hızı H₂'den daha büyüktür.",
+          "dogru": false,
+          "aciklama": "Aynı sıcaklıkta mol kütlesi küçük olan hafif gaz (H₂), ağır gazdan (O₂) {kok:{kesir:32|2}} = 4 kat daha hızlı yayılır."
+        },
+        {
+          "metin": "Sürtünmesiz hareketli pistonlu bir kapta veya elastik balonda bulunan gazın iç basıncı dış atmosfer basıncına eşittir.",
+          "dogru": true,
+          "aciklama": "Serbest hareketli pistonlu kaplar ve elastik balonlar sabit basınçlı sistemlerdir (P_iç = P_dış)."
+        },
+        {
+          "metin": "Helyum (He) ve Neon (Ne) gibi tek atomlu soygazlar hem öteleme hem dönme hem de titreşim hareketi yaparlar.",
+          "dogru": false,
+          "aciklama": "Tek atomlu soygazlar dönme ve titreşim hareketi yapmaz, öteleme hareketi yaparlar."
+        },
+        {
+          "metin": "Gaz taneciklerinin her yönde doğrusal, gelişigüzel ve sürekli zikzaklı hareketine 'Brown hareketi' adı verilir.",
+          "dogru": true,
+          "aciklama": "Kinetik Moleküler Teori'ye göre gaz taneciklerinin gelişigüzel ve sürekli hareketine Brown hareketi denir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "ciftler": [
+        [
+          "Basınç (P)",
+          "Gaz taneciklerinin birim yüzeye dik olarak uyguladığı çarpma kuvveti"
+        ],
+        [
+          "Mutlak Sıcaklık (T)",
+          "Gaz taneciklerinin ortalama kinetik enerjisini belirleyen Kelvin (K) değeri"
+        ],
+        [
+          "Difüzyon",
+          "Gaz taneciklerinin başka bir gaz veya boşluk içinde yayılması"
+        ],
+        [
+          "Efüzyon",
+          "Kapalı kaptaki gaz taneciklerinin küçük bir delikten boşluğa sızması"
+        ],
+        [
+          "İdeal Gaz",
+          "Öz hacmi ve tanecikler arası çekim kuvveti ihmal edilen kuramsal gaz"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "cumleler": [
+        {
+          "metin": "Deniz seviyesinde 0 °C sıcaklıkta ölçülen 1 atm açık hava basıncı cıvalı barometrede ___ cmHg değerine karşılık gelir.",
+          "cevap": "76"
+        },
+        {
+          "metin": "Gazlarla ilgili tüm matematiksel hesaplamalarda Celsius sıcaklığına 273 eklenerek bulunan ___ (mutlak sıcaklık) birimi kullanılır.",
+          "cevap": "Kelvin"
+        },
+        {
+          "metin": "Kinetik Moleküler Teori'ye göre gaz taneciklerinin birbirleriyle ve kap çeperiyle yaptığı çarpışmalar tam ___ çarpışmadır.",
+          "cevap": "esnek"
+        },
+        {
+          "metin": "Gerçek gazlar yüksek sıcaklık ve ___ basınç koşullarında ideal gaz davranışına en fazla yaklaşır.",
+          "cevap": "düşük"
+        },
+        {
+          "metin": "Bir gazın 1 molünde bulunan 6,02·10²³ adet tanecik sayısına ___ sayısı (Nₐ) adı verilir.",
+          "cevap": "Avogadro"
+        }
+      ],
+      "fazla": [
+        "yüksek",
+        "esneklik"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Gazların davranışını belirleyen dört temel değişkeni (P, V, T, n) ve Kinetik Moleküler Teori'nin (KMT) bu değişkenler arasındaki ilişkiyi tanecik boyutunda nasıl açıkladığını üç aşamada değerlendiriniz.",
+      "ipuclari": [
+        "Birinci aşamada basınç (P), hacim (V), mutlak sıcaklık (T = t + 273) ve mol sayısı (n) değişkenlerinin tanımlarını ve temel birimlerini belirtiniz.",
+        "İkinci aşamada KMT'nin öz hacim, çekim kuvveti, Brown hareketi ve esnek çarpışma varsayımlarını özetleyiniz.",
+        "Üçüncü aşamada mutlak sıcaklığın ortalama kinetik enerjiyle (Eₖ), mol kütlesinin ise difüzyon hızıyla ilişkisini ve ideal gaz koşullarını açıklayınız."
+      ],
+      "cevap": "Birinci aşamada bir gazın durumu; kap çeperine yapılan birim yüzey dik kuvveti olan basınç (P; atm, cmHg, mmHg), kabın hacmine eşit olan hacim (V; L), Celsius'a 273 eklenerek bulunan mutlak sıcaklık (T; K) ve tanecik miktarını gösteren mol sayısı (n; mol) ile tanımlanır. İkinci aşamada Kinetik Moleküler Teori; gaz taneciklerinin öz hacimlerinin ve aralarındaki çekim kuvvetlerinin ihmal edildiğini, taneciklerin her yönde doğrusal ve gelişigüzel (Brown hareketi) hareket ederek tam esnek çarpışmalar yaptığını kabul eder. Üçüncü aşamada KMT'ye göre gazların ortalama kinetik enerjisi mutlak sıcaklıkla (T) doğru orantılıdır; aynı sıcaklıktaki gazların kinetik enerjileri eşitken yayılma (difüzyon) hızları mol kütlelerinin kareköküyle ters orantılıdır ve gerçek gazlar yüksek sıcaklık ile düşük basınçta ideale yaklaşır."
+    }
+  ],
+  "ozet": [
+    "Gazların belirli şekil ve hacimleri yoktur; sıkıştırılabilirler, düşük yoğunlukludurlar, birbirleriyle her oranda homojen karışırlar ve bulundukları kabın her noktasına eşit basınç uygularlar.",
+    "Gazları tanımlayan dört değişken; basınç (1 atm = 76 cmHg = 760 mmHg = 760 Torr), hacim (1 L = 1 dm³ = 1000 mL), mutlak sıcaklık (T = t + 273 K) ve madde miktarıdır (n = m / Mₐ).",
+    "Kinetik Moleküler Teori'ye (KMT) göre gaz taneciklerinin öz hacimleri ve aralarındaki itme-çekme kuvvetleri ihmal edilir; tanecikler sürekli doğrusal hareket (Brown hareketi) ve tam esnek çarpışma yapar.",
+    "Gaz taneciklerinin ortalama kinetik enerjisi yalnızca mutlak sıcaklığa (Kelvin) bağlıdır; aynı sıcaklıktaki farklı gazların ortalama kinetik enerjileri eşittir.",
+    "Gazların difüzyon ve efüzyon hızı mutlak sıcaklığın kareköküyle doğru, mol kütlesinin (Mₐ) kareköküyle ters orantılıdır; gerçek gazlar yüksek sıcaklık ve düşük basınçta ideale yaklaşır."
+  ]
+}

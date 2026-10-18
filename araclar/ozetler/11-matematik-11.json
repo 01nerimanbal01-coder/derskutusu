@@ -1,0 +1,261 @@
+{
+  "ad": "11-matematik-11",
+  "sinif": 11,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 11,
+  "tarih": "30 Kasım-4 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "Geometrik Şekiller",
+  "konu": "Çokgenlerin Sınıflandırılması (İçbükey ve Dışbükey Çokgenler), Dışbükey Çokgenlerin İç ve Dış Açı Toplamları, Köşegen Sayısı ve Düzgün Çokgenler (MAT.11.2.3)",
+  "ciktilar": [
+    "Çokgenleri iç açılarına ve köşegenlerinin konumuna göre dışbükey (konveks) ve içbükey (konkav) çokgenler olarak sınıflandırır.",
+    "Üçgenleme yöntemini kullanarak n kenarlı bir dışbükey çokgenin köşegen sayısı bağıntılarını, iç açıları toplamını ve dış açıları toplamını türetir.",
+    "Düzgün çokgenlerin iç ve dış açı ölçülerini, köşegen uzunluğu özelliklerini ve simetri eksenlerini belirleyerek gerçek yaşam ve geometri problemlerini çözer."
+  ],
+  "giris": "Düzlemde herhangi üçü doğrusal olmayan {koyu:n} tane noktayı ({koyu:n ≥ 3}) ardışık olarak birleştiren doğru parçalarının oluşturduğu kapalı geometrik şekillere {koyu:çokgen} adı verilir. Selçuklu ve Osmanlı mimarisindeki geometrik bezemelerden bal peteklerine, kristal yüzeylerden modern kubbe tasarımlarına kadar pek çok alanda dışbükey çokgenlerin ve {koyu:düzgün çokgenlerin} açı, köşegen ve simetri bağıntılarından yararlanılır.",
+  "bolumler": [
+    {
+      "baslik": "Çokgenlerin Sınıflandırılması: Dışbükey (Konveks) ve İçbükey (Konkav) Çokgenler",
+      "metin": [
+        "Kenar sayısı {koyu:n} olan bir çokgenin {koyu:n} tane köşesi, {koyu:n} tane iç açısı ve her köşede iç açıyı 180°'ye tamamlayan (bütünleri olan) {koyu:n} tane dış açısı bulunur. Dolayısıyla bir çokgenin aynı köşesine ait {koyu:bir iç açı ile bir dış açının ölçüleri toplamı daima 180°'dir}. Ardışık olmayan (komşu olmayan) iki köşeyi birleştiren doğru parçalarına ise çokgenin {koyu:köşegeni} denir.",
+        "Çokgenler iç bölgelerinin ve iç açılarının durumuna göre iki gruba ayrılır: İç bölgesinden alınan herhangi iki noktayı birleştiren doğru parçasının tamamı çokgenin iç bölgesinde kalıyorsa bu çokgene {koyu:dışbükey (konveks) çokgen} adı verilir. Dışbükey çokgenlerin {koyu:bütün iç açılarının ölçüsü 180°'den küçüktür} ve çizilen bütün köşegenleri çokgenin iç bölgesinde yer alır.",
+        "İç bölgesinde alınan bazı iki noktayı birleştiren doğru parçasının bir kısmı çokgenin dış bölgesine taşıyorsa bu çokgene {koyu:içbükey (konkav) çokgen} denir. İçbükey çokgenlerde {koyu:en az bir iç açının ölçüsü 180°'den büyüktür} (180° ile 360° arasındadır) ve köşegenlerinden en az biri çokgenin dış bölgesinden geçer."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 255\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"255\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">ÇOKGENLERİN SINIFLANDIRILMASI: DIŞBÜKEY (KONVEKS) VE İÇBÜKEY (KONKAV)</text>\n  <rect x=\"20\" y=\"44\" width=\"320\" height=\"194\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"66\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\">1. Dışbükey (Konveks) Çokgen</text>\n  <polygon points=\"95,85 155,110 135,185 55,185 35,110\" fill=\"#bfdbfe\" stroke=\"#1d4ed8\" stroke-width=\"2.5\"/>\n  <line x1=\"62\" y1=\"125\" x2=\"128\" y2=\"155\" stroke=\"#15803d\" stroke-width=\"2.2\"/>\n  <circle cx=\"62\" cy=\"125\" r=\"3.5\" fill=\"#15803d\"/>\n  <circle cx=\"128\" cy=\"155\" r=\"3.5\" fill=\"#15803d\"/>\n  <text x=\"72\" y=\"120\" font-size=\"10\" font-weight=\"bold\" fill=\"#15803d\">K</text>\n  <text x=\"132\" y=\"152\" font-size=\"10\" font-weight=\"bold\" fill=\"#15803d\">L</text>\n  <text x=\"95\" y=\"206\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e40af\">Konveks Beşgen</text>\n  <text x=\"172\" y=\"102\" font-size=\"10\" fill=\"#334155\">• Her bir iç açısı <tspan font-weight=\"bold\" fill=\"#1e40af\">&lt; 180°</tspan>'dir.</text>\n  <text x=\"172\" y=\"126\" font-size=\"10\" fill=\"#334155\">• İçteki [KL] doğru parçası</text>\n  <text x=\"180\" y=\"141\" font-size=\"10\" fill=\"#334155\">tamamen iç bölgededir.</text>\n  <text x=\"172\" y=\"165\" font-size=\"10\" fill=\"#334155\">• Bütün köşegenleri çokgenin</text>\n  <text x=\"180\" y=\"180\" font-size=\"10\" fill=\"#334155\">iç bölgesinde kesişir.</text>\n  <text x=\"172\" y=\"204\" font-size=\"10\" font-weight=\"bold\" fill=\"#15803d\">• İç açı + Dış açı = 180°</text>\n\n  <rect x=\"360\" y=\"44\" width=\"320\" height=\"194\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"66\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#991b1b\">2. İçbükey (Konkav) Çokgen</text>\n  <polygon points=\"435,85 505,105 460,142 500,190 385,180\" fill=\"#fecaca\" stroke=\"#b91c1c\" stroke-width=\"2.5\"/>\n  <line x1=\"505\" y1=\"105\" x2=\"500\" y2=\"190\" stroke=\"#dc2626\" stroke-dasharray=\"4,3\" stroke-width=\"2\"/>\n  <circle cx=\"460\" cy=\"142\" r=\"4\" fill=\"#991b1b\"/>\n  <text x=\"430\" y=\"146\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#991b1b\">&gt;180°</text>\n  <text x=\"445\" y=\"208\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#991b1b\">Konkav Beşgen</text>\n  <text x=\"520\" y=\"102\" font-size=\"10\" fill=\"#334155\">• En az bir iç açısı <tspan font-weight=\"bold\" fill=\"#991b1b\">&gt; 180°</tspan>'dir.</text>\n  <text x=\"520\" y=\"126\" font-size=\"10\" fill=\"#334155\">• Bazı iki noktayı birleştiren</text>\n  <text x=\"528\" y=\"141\" font-size=\"10\" fill=\"#334155\">parça dış bölgeye taşar.</text>\n  <text x=\"520\" y=\"165\" font-size=\"10\" fill=\"#334155\">• En az bir köşegeni (kesikli</text>\n  <text x=\"528\" y=\"180\" font-size=\"10\" fill=\"#334155\">çizgi) dış bölgeden geçer.</text>\n  <text x=\"520\" y=\"204\" font-size=\"10\" font-weight=\"bold\" fill=\"#991b1b\">• Girintili köşesi bulunur.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Üçgenler Daima Dışbükeydir!",
+          "metin": "Bir üçgenin iç açıları toplamı 180° olduğundan hiçbir iç açısı 180°'den büyük olamaz ve üçgenin köşegeni yoktur (3 - 3 = 0). Bu nedenle bütün üçgenler dışbükey (konveks) çokgendir; içbükey çokgenler en az 4 kenarlı (dörtgen ve üzeri) olabilir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İç Açı ve Dış Açı Bütünlerliği",
+          "metin": "Çokgen sorularında iç açılarla işlem yapmak zorlaştığında hemen bütünleri olan dış açılara (Dış açı = 180° - İç açı) geçmek çözümü büyük ölçüde kısaltır."
+        }
+      ]
+    },
+    {
+      "baslik": "Dışbükey Çokgenlerde Köşegen Sayısı ve İç-Dış Açı Toplamları",
+      "metin": [
+        "{koyu:n} kenarlı bir dışbükey çokgenin sabit bir köşesi seçildiğinde, bu köşeden kendisine (1 köşe) ve kendisine komşu olan sağ ve solundaki köşelere (2 köşe) köşegen çizilemez; komşu köşelerle birleşen doğru parçaları zaten çokgenin kenarlarıdır. Dolayısıyla {koyu:n} kenarlı bir dışbükey çokgenin {koyu:bir köşesinden çizilebilen köşegen sayısı (n - 3)} tanedir. Her biri {koyu:(n - 3)} köşegen gönderen {koyu:n} tane köşe olduğundan ve her köşegen iki uç noktadan iki kez sayıldığından, çokgenin {koyu:toplam köşegen sayısı} {kesir:n · (n - 3)|2} bağıntısıyla bulunur.",
+        "Bir dışbükey çokgenin tek bir köşesinden çizilen {koyu:(n - 3)} tane köşegen, çokgenin iç bölgesini birbirini kesmeyen {koyu:(n - 2) tane üçgensel bölgeye} ayırır. Bu yönteme {koyu:üçgenleme yöntemi} denir. Oluşan {koyu:(n - 2)} tane üçgenin iç açılarının toplamı çokgenin tüm iç açılarının toplamını tam olarak kapladığından, {koyu:n} kenarlı dışbükey çokgenin {koyu:iç açılarının ölçüleri toplamı (n - 2) · 180°} olur.",
+        "Çokgenin {koyu:n} tane köşesinin her birinde bir iç açı ile bir dış açının toplamı 180° olduğundan, tüm iç ve dış açıların genel toplamı {koyu:n · 180°}'dir. Bu genel toplamdan iç açılar toplamı çıkarıldığında: {koyu:Dış Açılar Toplamı = n · 180° - (n - 2) · 180° = 360°} elde edilir. Yani kenar sayısı {koyu:n} kaç olursa olsun bütün dışbükey çokgenlerin {koyu:dış açılarının ölçüleri toplamı sabit olup 360°'dir}."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 255\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"255\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">n KENARLI DIŞBÜKEY ÇOKGENDE ÜÇGENLEME VE KÖŞEGEN BAĞINTILARI</text>\n  <rect x=\"20\" y=\"44\" width=\"250\" height=\"194\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"145\" y=\"65\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#92400e\">Altıgende Üçgenleme (n = 6)</text>\n  <polygon points=\"105,82 185,82 220,138 185,194 105,194 70,138\" fill=\"#fde68a\" stroke=\"#b45309\" stroke-width=\"2.2\"/>\n  <line x1=\"105\" y1=\"82\" x2=\"220\" y2=\"138\" stroke=\"#dc2626\" stroke-dasharray=\"4,3\" stroke-width=\"2\"/>\n  <line x1=\"105\" y1=\"82\" x2=\"185\" y2=\"194\" stroke=\"#dc2626\" stroke-dasharray=\"4,3\" stroke-width=\"2\"/>\n  <line x1=\"105\" y1=\"82\" x2=\"105\" y2=\"194\" stroke=\"#dc2626\" stroke-dasharray=\"4,3\" stroke-width=\"2\"/>\n  <circle cx=\"105\" cy=\"82\" r=\"4.5\" fill=\"#dc2626\"/>\n  <text x=\"93\" y=\"79\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">A</text>\n  <text x=\"88\" y=\"145\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#78350f\">1.</text>\n  <text x=\"128\" y=\"162\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#78350f\">2.</text>\n  <text x=\"165\" y=\"148\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#78350f\">3.</text>\n  <text x=\"180\" y=\"110\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#78350f\">4.</text>\n  <text x=\"145\" y=\"216\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#92400e\">A köşesinden: 6 - 3 = 3 köşegen</text>\n  <text x=\"145\" y=\"230\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#15803d\">Oluşan üçgen: 6 - 2 = 4 üçgen</text>\n\n  <rect x=\"285\" y=\"44\" width=\"395\" height=\"194\" rx=\"10\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"482\" y=\"65\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\">Dışbükey Çokgen Temel Bağıntıları Tablosu</text>\n\n  <rect x=\"298\" y=\"76\" width=\"368\" height=\"34\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.2\"/>\n  <text x=\"308\" y=\"97\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\">1. Bir Köşeden Çizilen Köşegen Sayısı:</text>\n  <text x=\"654\" y=\"97\" text-anchor=\"end\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">n - 3</text>\n\n  <rect x=\"298\" y=\"116\" width=\"368\" height=\"34\" rx=\"6\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1.2\"/>\n  <text x=\"308\" y=\"137\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#14532d\">2. Bir Köşeden Köşegenlerle Oluşan Üçgen Sayısı:</text>\n  <text x=\"654\" y=\"137\" text-anchor=\"end\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">n - 2</text>\n\n  <rect x=\"298\" y=\"156\" width=\"368\" height=\"34\" rx=\"6\" fill=\"#fefce8\" stroke=\"#fde047\" stroke-width=\"1.2\"/>\n  <text x=\"308\" y=\"177\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#713f12\">3. Çokgenin Toplam Köşegen Sayısı:</text>\n  <text x=\"654\" y=\"177\" text-anchor=\"end\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\">n · (n - 3) / 2</text>\n\n  <rect x=\"298\" y=\"196\" width=\"368\" height=\"34\" rx=\"6\" fill=\"#f3e8ff\" stroke=\"#d8b4fe\" stroke-width=\"1.2\"/>\n  <text x=\"308\" y=\"217\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#581c87\">4. İç Açılar ve Dış Açılar Toplamı:</text>\n  <text x=\"654\" y=\"217\" text-anchor=\"end\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#6d28d9\">İç: (n - 2)·180°  |  Dış: 360°</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Bir Köşeden Çizilen Köşegen ile Toplam Köşegeni Karıştırmayınız!",
+          "metin": "Sorularda 'bir köşesinden çizilen köşegen sayısı' denildiğinde (n - 3), 'toplam köşegen sayısı' denildiğinde ise n·(n - 3)/2 formülü kullanılır. Örneğin altıgende bir köşeden 3 köşegen çizilirken toplam 9 köşegen vardır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Üçgen Sayısından İç Açılar Toplamına Geçiş",
+          "metin": "Bir köşeden çizilen köşegenlerle oluşan üçgen sayısı (k = n - 2) biliniyorsa, çokgenin iç açıları toplamı doğrudan k · 180° çarpımıyla bulunur."
+        }
+      ]
+    },
+    {
+      "baslik": "Düzgün Çokgenlerin Açı, Köşegen ve Simetri Özellikleri",
+      "metin": [
+        "Bütün kenar uzunlukları birbirine eşit ve bütün iç açılarının (dolayısıyla bütün dış açılarının) ölçüleri birbirine eşit olan dışbükey çokgenlere {koyu:düzgün çokgen} adı verilir. Eşkenar üçgen (n=3), kare (n=4), düzgün beşgen (n=5), düzgün altıgen (n=6) ve düzgün sekizgen (n=8) en sık kullanılan düzgün çokgenlerdir. Kenarların eşit olması veya yalnız açıların eşit olması tek başına yeterli değildir; Örneğin eşkenar dörtgenin kenarları eşit, dikdörtgenin açıları eşittir ancak kare dışındakiler düzgün dörtgen değildir.",
+        "{koyu:n} kenarlı bir düzgün çokgenin {koyu:n} tane dış açısının tamamı birbirine eşit ve toplamları 360° olduğundan, {koyu:bir dış açısının ölçüsü α =} {kesir:360°|n} formülüyle bulunur. Bir iç açı ile bir dış açının toplamı 180° olduğundan, {koyu:bir iç açısının ölçüsü} {kesir:(n - 2) · 180°|n} veya çok daha pratik olarak {koyu:180° -} {kesir:360°|n} bağıntısıyla hesaplanır. Buna göre düzgün beşgenin bir dış açısı 72° ve iç açısı {koyu:108°}; düzgün altıgenin dış açısı 60° ve iç açısı {koyu:120°}; düzgün sekizgenin dış açısı 45° ve iç açısı {koyu:135°}; düzgün ongenin dış açısı 36° ve iç açısı {koyu:144°}'dir.",
+        "Bir düzgün çokgende {koyu:eşit sayıda kenar ayırmış olan köşegenlerin uzunlukları birbirine eşittir}. Düzgün beşgenin 5 köşegeninin tamamı birbirine eşittir; bir köşeden çizilen iki köşegen 108°'lik iç açıyı {koyu:36° - 36° - 36°} olarak üç eş parçaya böler. Kenar uzunluğu {koyu:a} olan bir düzgün altıgende ise kısa köşegen (arada 1 köşe bırakan) {koyu:a}{kok:3} birim, merkezden geçen en uzun köşegen ise {koyu:2a} birimdir ve altıgeni 6 tane eşkenar üçgene ayırır. Ayrıca {koyu:n} kenarlı her düzgün çokgenin {koyu:n tane simetri ekseni} vardır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 255\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"255\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">DÜZGÜN ÇOKGENLERDE AÇI, KÖŞEGEN VE SİMETRİ EKSENİ ÖZELLİKLERİ</text>\n  <rect x=\"20\" y=\"44\" width=\"210\" height=\"194\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"125\" y=\"66\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e40af\">1. Düzgün Beşgen (n = 5)</text>\n  <polygon points=\"125,78 168,108 152,158 98,158 82,108\" fill=\"#bfdbfe\" stroke=\"#1d4ed8\" stroke-width=\"2\"/>\n  <line x1=\"125\" y1=\"78\" x2=\"152\" y2=\"158\" stroke=\"#dc2626\" stroke-width=\"1.6\"/>\n  <line x1=\"125\" y1=\"78\" x2=\"98\" y2=\"158\" stroke=\"#dc2626\" stroke-width=\"1.6\"/>\n  <text x=\"32\" y=\"180\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e40af\">• Dış Açı: 360°/5 = 72° | İç Açı: 108°</text>\n  <text x=\"32\" y=\"198\" font-size=\"10\" fill=\"#334155\">• 5 köşegenin tamamı birbirine eşittir.</text>\n  <text x=\"32\" y=\"214\" font-size=\"10\" fill=\"#334155\">• Köşegenler tepeyi 36°-36°-36° böler.</text>\n  <text x=\"32\" y=\"230\" font-size=\"10\" fill=\"#334155\">• 5 tane simetri ekseni vardır.</text>\n\n  <rect x=\"245\" y=\"44\" width=\"210\" height=\"194\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"350\" y=\"66\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">2. Düzgün Altıgen (n = 6)</text>\n  <polygon points=\"325,80 375,80 400,120 375,160 325,160 300,120\" fill=\"#bbf7d0\" stroke=\"#15803d\" stroke-width=\"2\"/>\n  <line x1=\"300\" y1=\"120\" x2=\"400\" y2=\"120\" stroke=\"#dc2626\" stroke-width=\"1.8\"/>\n  <line x1=\"325\" y1=\"80\" x2=\"325\" y2=\"160\" stroke=\"#2563eb\" stroke-width=\"1.8\"/>\n  <text x=\"358\" y=\"116\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#dc2626\">2a</text>\n  <text x=\"303\" y=\"138\" font-size=\"9\" font-weight=\"bold\" fill=\"#1d4ed8\">a·kök(3)</text>\n  <text x=\"257\" y=\"180\" font-size=\"10\" font-weight=\"bold\" fill=\"#15803d\">• Dış Açı: 360°/6 = 60° | İç Açı: 120°</text>\n  <text x=\"257\" y=\"198\" font-size=\"10\" fill=\"#334155\">• Uzun köşegen = 2a (6 eşkenar üçgen)</text>\n  <text x=\"257\" y=\"214\" font-size=\"10\" fill=\"#334155\">• Kısa köşegen = a·kök(3) (30-30-120)</text>\n  <text x=\"257\" y=\"230\" font-size=\"10\" fill=\"#334155\">• 6 tane simetri ekseni vardır.</text>\n\n  <rect x=\"470\" y=\"44\" width=\"210\" height=\"194\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"575\" y=\"66\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#92400e\">3. Simetri ve Hızlı Açı Tablosu</text>\n  <rect x=\"484\" y=\"78\" width=\"182\" height=\"76\" rx=\"6\" fill=\"#ffffff\" stroke=\"#f59e0b\" stroke-width=\"1.2\"/>\n  <text x=\"492\" y=\"95\" font-size=\"10\" font-weight=\"bold\" fill=\"#78350f\">• Sekizgen (n=8): Dış 45° | İç 135°</text>\n  <text x=\"492\" y=\"112\" font-size=\"10\" font-weight=\"bold\" fill=\"#78350f\">• Dokuzgen (n=9): Dış 40° | İç 140°</text>\n  <text x=\"492\" y=\"129\" font-size=\"10\" font-weight=\"bold\" fill=\"#78350f\">• Ongen (n=10): Dış 36° | İç 144°</text>\n  <text x=\"492\" y=\"146\" font-size=\"10\" font-weight=\"bold\" fill=\"#78350f\">• Onikigen (n=12): Dış 30° | İç 150°</text>\n  <text x=\"482\" y=\"174\" font-size=\"10\" fill=\"#334155\">• <tspan font-weight=\"bold\" fill=\"#92400e\">n tek ise:</tspan> Simetri eksenleri bir</text>\n  <text x=\"490\" y=\"188\" font-size=\"9.5\" fill=\"#334155\">köşeden ve karşı kenar ortasından geçer.</text>\n  <text x=\"482\" y=\"206\" font-size=\"10\" fill=\"#334155\">• <tspan font-weight=\"bold\" fill=\"#92400e\">n çift ise:</tspan> Yarısı karşılıklı köşelerden,</text>\n  <text x=\"490\" y=\"220\" font-size=\"9.5\" fill=\"#334155\">yarısı kenar ortalarından geçer.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Düzgün Beşgende Simetri Ekseni Dikmesi",
+          "metin": "Düzgün beşgenin (ve kenar sayısı tek olan tüm düzgün çokgenlerin) bir köşesinden karşı kenara indirilen dikme, hem o köşenin açıortayıdır hem de karşı kenarı iki eş parçaya bölen simetri eksenidir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Düzgün Çokgende Çevrel Çember Kuralı",
+          "metin": "Her düzgün çokgenin köşelerinden bir çevrel çember geçer; bir kenarın çevrel çemberde gördüğü merkez açı bir dış açıya (360°/n), çevre açı ise dış açının yarısına (180°/n) eşittir."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir köşesinden çizilen köşegenlerle 9 tane üçgensel bölgeye ayrılan dışbükey çokgenin kenar sayısını, toplam köşegen sayısını ve iç açılarının ölçüleri toplamını bulunuz.",
+      "cevap": "Bir köşeden çizilen köşegenlerle oluşan üçgen sayısı n - 2 = 9 olduğundan çokgen n = 11 kenarlıdır (onbirgen). Toplam köşegen sayısı {kesir:n · (n - 3)|2} = {kesir:11 · 8|2} = 44 tanedir. İç açılarının ölçüleri toplamı ise (n - 2) · 180° = 9 · 180° = 1620° olarak bulunur."
+    },
+    {
+      "soru": "Bir dışbükey sekizgenin iç açılarından dördünün ölçüleri 120°, 130°, 140° ve 150°'dir. Geriye kalan dört iç açının ölçüleri birbirine eşit olduğuna göre bu eş iç açılardan birinin ölçüsü kaç derecedir?",
+      "cevap": "Sekizgenin (n = 8) iç açılarının ölçüleri toplamı (8 - 2) · 180° = 6 · 180° = 1080°'dir. Verilen dört iç açının toplamı 120° + 130° + 140° + 150° = 540° olup geriye kalan dört eş açının toplamı 1080° - 540° = 540° olur. Buradan eş açılardan her birinin ölçüsü {kesir:540°|4} = 135° bulunur."
+    },
+    {
+      "soru": "Bir iç açısının ölçüsü, bir dış açısının ölçüsünün 3 katından 20° fazla olan düzgün çokgenin kenar sayısı ve toplam köşegen sayısı kaçtır?",
+      "cevap": "Düzgün çokgenin bir dış açısının ölçüsüne x dersek, bir iç açısının ölçüsü 3x + 20° olur. Aynı köşedeki iç ve dış açının toplamı 180° olduğundan: x + (3x + 20°) = 180° ⇒ 4x = 160° ⇒ x = 40° (dış açı) bulunur. Kenar sayısı n = {kesir:360°|40°} = 9 (dokuzgen) olur. Toplam köşegen sayısı ise {kesir:9 · (9 - 3)|2} = {kesir:9 · 6|2} = 27'dir."
+    },
+    {
+      "soru": "ABCDE düzgün beşgeninde A köşesinden [CD] kenarına indirilen dikmenin ayağı H noktasıdır. |CH| = 4 cm olduğuna göre düzgün beşgenin çevresi kaç santimetredir?",
+      "cevap": "Kenar sayısı tek olan düzgün beşgende bir köşeden (A) karşı kenara ([CD]) indirilen [AH] dikmesi aynı zamanda beşgenin simetri eksenidir ve karşı kenarı iki eş parçaya böler (|CH| = |HD|). |CH| = 4 cm verildiğinden bir kenar uzunluğu |CD| = 4 + 4 = 8 cm olur. Düzgün beşgenin çevresi 5 · 8 = 40 cm bulunur."
+    },
+    {
+      "soru": "Kenar uzunluğu 4{kok:3} cm olan bir ABCDEF düzgün altıgeninin en uzun köşegeni olan |AD| ile kısa köşegeni olan |AC| uzunluklarının toplamı kaç santimetredir?",
+      "cevap": "Kenar uzunluğu a = 4{kok:3} cm olan bir düzgün altıgende en uzun köşegen |AD| = 2a = 8{kok:3} cm'dir. Arada bir köşe bırakan kısa köşegen |AC| ise 120°-30°-30° ikizkenar üçgen özelliğinden a · {kok:3} = 4{kok:3} · {kok:3} = 12 cm olur. İstenen uzunluklar toplamı 12 + 8{kok:3} cm'dir."
+    },
+    {
+      "soru": "Ardışık köşeleri A, B, C, D, E olan bir düzgün çokgende A, B, C noktalarından geçen doğru ile E, D, C noktalarından geçen doğrunun C köşesinin dış bölgesinde oluşturduğu dar açının ölçüsü 60° ise bu düzgün çokgen kaç kenarlıdır?",
+      "cevap": "[AB] kenarının uzantısı ile [ED] kenarının uzantısının kesiştiği noktaya P dersek, oluşan BDC üçgeninde B ve D köşelerindeki açılar düzgün çokgenin birer dış açısına (α) eşittir. BCD açısı ise çokgenin iç açısı olan (180° - α) ile ters veya bütünler ilişkiden değerlendirildiğinde; çokgende ardışık iki dış açının toplamı (B ve C dış açıları) 2α = 60° ⇒ α = 30° bulunur. Bir dış açısı 30° olan düzgün çokgenin kenar sayısı n = {kesir:360°|30°} = 12'dir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "İç açılarının ölçüleri toplamı 1440° olan bir dışbükey çokgenin toplam köşegen sayısı kaçtır?",
+      "secenekler": [
+        "20",
+        "27",
+        "35",
+        "44",
+        "54"
+      ],
+      "dogru": 2,
+      "aciklama": "İç açılar toplamı (n - 2) · 180° = 1440° ⇒ n - 2 = 8 ⇒ n = 10 (ongen) bulunur. Toplam köşegen sayısı n · (n - 3) / 2 = 10 · 7 / 2 = 35'tir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir iç açısının ölçüsü, bir dış açısının ölçüsünün 5 katına eşit olan düzgün çokgenin bir köşesinden çizilen köşegenlerle oluşan üçgen sayısı kaçtır?",
+      "secenekler": [
+        "8",
+        "9",
+        "10",
+        "12",
+        "14"
+      ],
+      "dogru": 2,
+      "aciklama": "Dış açıya x dersek iç açı 5x olur; 6x = 180° ⇒ x = 30° ve kenar sayısı n = 360° / 30° = 12 bulunur. Bir köşeden çizilen köşegenlerle oluşan üçgen sayısı n - 2 = 12 - 2 = 10'dur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "ABCDE düzgün beşgeninin iç bölgesinde alınan bir K noktası için KCD üçgeni bir eşkenar üçgendir. Buna göre m(BKC) açısının ölçüsü kaç derecedir?",
+      "secenekler": [
+        "48°",
+        "54°",
+        "60°",
+        "66°",
+        "72°"
+      ],
+      "dogru": 3,
+      "aciklama": "Düzgün beşgenin bir iç açısı 108° ve KCD eşkenar üçgeninin bir açısı 60° olduğundan m(BCK) = 108° - 60° = 48° olur. |BC| = |CD| = |CK| olduğundan BCK üçgeni tepe açısı 48° olan ikizkenar üçgendir; taban açısı m(BKC) = (180° - 48°) / 2 = 66° bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kenar uzunluğu 8 cm olan bir ABCDEF düzgün altıgeninde A köşesini C köşesine birleştiren [AC] köşegeni ile A köşesini D köşesine birleştiren [AD] köşegeni arasındaki m(CAD) açısının ölçüsü ve |AD| uzunluğu aşağıdakilerin hangisinde doğru verilmiştir?",
+      "secenekler": [
+        "m(CAD) = 30° ve |AD| = 12 cm",
+        "m(CAD) = 45° ve |AD| = 16 cm",
+        "m(CAD) = 60° ve |AD| = 8{kok:3} cm",
+        "m(CAD) = 30° ve |AD| = 16 cm",
+        "m(CAD) = 15° ve |AD| = 16 cm"
+      ],
+      "dogru": 3,
+      "aciklama": "Düzgün altıgende [AD] en uzun köşegeni simetri ekseni olup 120°'lik A açısını 60°-60° böler; ABC ikizkenar üçgeninde m(BAC) = 30° olduğundan m(CAD) = 60° - 30° = 30° olur. En uzun köşegen |AD| = 2a = 2 · 8 = 16 cm'dir."
+    },
+    {
+      "tur": "dy",
+      "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Dışbükey bir çokgenin tüm iç açılarının ölçüsü 180 dereceden küçüktür ve köşegenleri iç bölgededir.",
+          "dogru": true
+        },
+        {
+          "metin": "Kenar sayısı n olan bir dışbükey çokgenin dış açılarının ölçüleri toplamı (n - 2) · 180° formülüyle bulunur.",
+          "dogru": false
+        },
+        {
+          "metin": "Sekiz kenarlı bir dışbükey çokgenin bir köşesinden çizilebilen köşegen sayısı 5'tir.",
+          "dogru": true
+        },
+        {
+          "metin": "Düzgün beşgenin bir iç açısının ölçüsü 108 derece, bir dış açısının ölçüsü ise 72 derecedir.",
+          "dogru": true
+        },
+        {
+          "metin": "Kenar uzunlukları birbirine eşit olan her dörtgen aynı zamanda bir düzgün dörtgendir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "yonerge": "Aşağıdaki çokgen kavram ve özelliklerini doğru bağıntı veya açı değerleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Bir Köşeden Çizilen Köşegen Sayısı",
+          "n kenarlı dışbükey çokgende (n - 3) cebirsel ifadesiyle bulunan sayı"
+        ],
+        [
+          "Toplam Köşegen Sayısı",
+          "n kenarlı dışbükey çokgende n · (n - 3) / 2 bağıntısıyla hesaplanan değer"
+        ],
+        [
+          "Düzgün Altıgenin Açıları",
+          "Bir dış açısı 60° ve bir iç açısı 120° olan altı kenarlı düzgün çokgen"
+        ],
+        [
+          "Düzgün Sekizgenin Açıları",
+          "Bir dış açısı 45° ve bir iç açısı 135° olan sekiz kenarlı düzgün çokgen"
+        ],
+        [
+          "İçbükey (Konkav) Çokgen",
+          "En az bir iç açısının ölçüsü 180°'den büyük olan ve dış köşegeni bulunan çokgen"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavram veya sayılarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Kenar sayısı kaç olursa olsun bütün dışbükey çokgenlerin dış açılarının ölçüleri toplamı ___ derecedir.",
+          "cevap": "360"
+        },
+        {
+          "metin": "Yedi kenarlı bir dışbükey çokgenin bir köşesinden çizilen köşegenler çokgeni ___ tane üçgene ayırır.",
+          "cevap": "beş"
+        },
+        {
+          "metin": "Bütün köşegenlerinin uzunlukları birbirine eşit olan düzgün çokgen düzgün ___ olarak adlandırılır.",
+          "cevap": "beşgen"
+        },
+        {
+          "metin": "Bir dış açısının ölçüsü 36 derece olan düzgün çokgen ___ kenarlıdır.",
+          "cevap": "on"
+        },
+        {
+          "metin": "Kenar sayısı n olan bir düzgün çokgenin düzlemde ___ tane simetri ekseni vardır.",
+          "cevap": "n"
+        }
+      ],
+      "fazla": [
+        "180",
+        "altıgen"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir dışbükey çokgenin toplam köşegen sayısı, kenar sayısının 3 katına eşittir. Bu çokgenin düzgün çokgen olması durumunda bir iç açısının ve bir dış açısının ölçüsünü adım adım hesaplayınız.",
+      "ipuclari": [
+        "Toplam köşegen sayısı bağıntısının (n·(n-3)/2) kenar sayısının 3 katına (3n) eşitlenerek n'nin bulunması.",
+        "Bulunan n kenar sayısıyla düzgün çokgenin bir dış açısının (360°/n) hesaplanması.",
+        "Bütünler açı ilişkisinden (180° - dış açı) bir iç açısının bulunması."
+      ],
+      "cevap": "Kenar sayısı n olan dışbükey çokgenin toplam köşegen sayısı {kesir:n · (n - 3)|2} bağıntısıyla bulunur. Soruda bu değerin 3n'ye eşit olduğu verilmiştir: {kesir:n · (n - 3)|2} = 3n ⇒ n - 3 = 6 ⇒ n = 9 bulunur (dokuzgen). Çokgen düzgün dokuzgen olduğunda bir dış açısının ölçüsü α = {kesir:360°|9} = 40° olur. Bir iç açı ile bir dış açının toplamı 180° olduğundan, düzgün dokuzgenin bir iç açısının ölçüsü 180° - 40° = 140° olarak elde edilir."
+    }
+  ],
+  "ozet": [
+    "{koyu:Dışbükey ve İçbükey Çokgen:} Tüm iç açıları 180°'den küçük olan çokgenler dışbükey (konveks), en az bir iç açısı 180°'den büyük olanlar içbükey (konkav) çokgendir.",
+    "{koyu:Köşegen ve Üçgen Sayısı:} n kenarlı dışbükey çokgende bir köşeden (n - 3) köşegen çizilir, (n - 2) üçgen oluşur ve toplam köşegen sayısı {kesir:n · (n - 3)|2}'dir.",
+    "{koyu:İç ve Dış Açılar Toplamı:} n kenarlı dışbükey çokgenin iç açıları toplamı (n - 2) · 180°, dış açıları toplamı ise sabit olup 360°'dir.",
+    "{koyu:Düzgün Çokgen Açıları:} Kenarları ve açıları eş olan n kenarlı düzgün çokgenin bir dış açısı {kesir:360°|n}, bir iç açısı ise 180° - {kesir:360°|n} bağıntısıyla bulunur.",
+    "{koyu:Özel Düzgün Çokgenler:} Düzgün beşgenin iç açısı 108° (5 köşegeni eşit), düzgün altıgenin iç açısı 120° (uzun köşegen 2a, kısa köşegen a{kok:3}) ve simetri ekseni sayısı n'dir."
+  ]
+}

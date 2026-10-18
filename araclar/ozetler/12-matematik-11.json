@@ -1,0 +1,263 @@
+{
+  "ad": "12-matematik-11",
+  "sinif": 12,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 11,
+  "tarih": "30 Kasım-4 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "GEOMETRİ: TRİGONOMETRİ",
+  "konu": "İki Kat Açı (Yarım Açı) Formülleri: sin(2x), cos(2x), tan(2x) ve cot(2x) Özdeşlikleri ve Geometrik Uygulamaları (12.3.1.2)",
+  "ciktilar": [
+    "Toplam formüllerinden yararlanarak sin(2x) ve cos(2x) iki kat açı özdeşliklerini oluşturur ve cebirsel işlemlerde uygular.",
+    "Tanjant ve kotanjant fonksiyonlarına ait tan(2x) ve cot(2x) iki kat açı formüllerini kullanarak trigonometrik değerleri hesaplar.",
+    "İki kat açı (yarım açı) formüllerini dik üçgen, ikizkenar üçgen ve çember gibi geometrik şekiller üzerindeki problemlerde kullanır."
+  ],
+  "giris": "Trigonometride iki açının toplamı formüllerinde açılar birbirine eşit seçildiğinde (a = b = x), bir açının trigonometrik oranlarından iki katı olan açının (2x) veya yarısı olan açının (x/2) trigonometrik oranlarına geçiş yapmayı sağlayan iki kat açı (yarım açı) özdeşlikleri elde edilir. Bu özdeşlikler hem trigonometrik denklemlerin sadeleştirilmesinde hem de analitik ve sentetik geometri problemlerinde büyük işlem kolaylığı sağlar.",
+  "bolumler": [
+    {
+      "baslik": "Sinüs ve Kosinüs İki Kat Açı (Yarım Açı) Formülleri",
+      "metin": [
+        "Sinüs toplam formülü olan {koyu:sin(a + b) = sin(a)·cos(b) + cos(a)·sin(b)} eşitliğinde {koyu:a = b = x} yazılırsa sinüs fonksiyonunun iki kat açı formülü elde edilir: {koyu:sin(2x) = 2 · sin(x) · cos(x)}. Aynı kural {koyu:x} açısı ile yarısı olan {koyu:{kesir:x|2}} açısı arasında {koyu:sin(x) = 2 · sin({kesir:x|2}) · cos({kesir:x|2})} biçiminde de uygulanır.",
+        "Kosinüs toplam formülü olan {koyu:cos(a + b) = cos(a)·cos(b) - sin(a)·sin(b)} eşitliğinde {koyu:a = b = x} yazılırsa kosinüsün birinci iki kat açı formülü elde edilir: {koyu:cos(2x) = cos²(x) - sin²(x)}. Temel özdeşlik olan {koyu:sin²(x) + cos²(x) = 1} bağıntısı kullanılarak bu formül {koyu:cos(2x) = 2·cos²(x) - 1} veya {koyu:cos(2x) = 1 - 2·sin²(x)} olmak üzere üç farklı biçimde yazılabilir.",
+        "Sadeleştirme sorularında kosinüsün yanındaki {koyu:+1} veya {koyu:-1} terimini yok etmek için {koyu:1 + cos(2x) = 2·cos²(x)} ve {koyu:1 - cos(2x) = 2·sin²(x)} özdeşlikleri kullanılır. Ayrıca {koyu:(sin(x) + cos(x))² = 1 + sin(2x)} ve {koyu:(sin(x) - cos(x))² = 1 - sin(2x)} tam kare açılımları soru çözümlerinde çok sık karşımıza çıkar."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Trigonometrik fonksiyonlar doğrusal (lineer) değildir; yani sin(2x) ifadesi 2·sin(x)'e eşit değildir! sin(2x) = 2·sin(x)·cos(x) eşitliği unutulmamalıdır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Ardışık iki kat açılı kosinüs çarpımlarında (örneğin cos(20°)·cos(40°)·cos(80°)), ifade en küçük açının sinüsü olan sin(20°) ile çarpılıp bölünerek zincirleme sin(2x) özdeşliği uygulanır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">İKİ KAT AÇI (YARIM AÇI) FORMÜLLERİ: SİNÜS VE KOSİNÜS</text>\n  <rect x=\"25\" y=\"46\" width=\"315\" height=\"196\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"70\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\">Sinüs İki Kat Açı Özdeşliği</text>\n  <rect x=\"45\" y=\"84\" width=\"275\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"182\" y=\"112\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1d4ed8\">sin(2x) = 2 · sin(x) · cos(x)</text>\n  <text x=\"42\" y=\"150\" font-size=\"11.5\" fill=\"#1e3a8a\">• <tspan font-weight=\"bold\">Yarım Açı Biçimi:</tspan> sin(x) = 2 · sin(x/2) · cos(x/2)</text>\n  <text x=\"42\" y=\"174\" font-size=\"11.5\" fill=\"#1e3a8a\">• <tspan font-weight=\"bold\">Tam Kare Özdeşliği:</tspan></text>\n  <text x=\"52\" y=\"192\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1d4ed8\">(sin(x) ± cos(x))² = 1 ± sin(2x)</text>\n  <text x=\"42\" y=\"218\" font-size=\"11\" fill=\"#1e3a8a\">• Örnek: 2·sin(15°)·cos(15°) = sin(30°) = 1/2</text>\n  <rect x=\"360\" y=\"46\" width=\"315\" height=\"196\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"517\" y=\"70\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#166534\">Kosinüs İki Kat Açı Özdeşlikleri (3 Biçim)</text>\n  <rect x=\"378\" y=\"82\" width=\"280\" height=\"36\" rx=\"6\" fill=\"#ffffff\" stroke=\"#4ade80\"/>\n  <text x=\"517\" y=\"105\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">1) cos(2x) = cos²(x) - sin²(x)</text>\n  <rect x=\"378\" y=\"126\" width=\"280\" height=\"36\" rx=\"6\" fill=\"#ffffff\" stroke=\"#4ade80\"/>\n  <text x=\"517\" y=\"149\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">2) cos(2x) = 2·cos²(x) - 1</text>\n  <rect x=\"378\" y=\"170\" width=\"280\" height=\"36\" rx=\"6\" fill=\"#ffffff\" stroke=\"#4ade80\"/>\n  <text x=\"517\" y=\"193\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">3) cos(2x) = 1 - 2·sin²(x)</text>\n  <text x=\"517\" y=\"226\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">1 + cos(2x) = 2·cos²(x)  ·  1 - cos(2x) = 2·sin²(x)</text>\n</svg>"
+    },
+    {
+      "baslik": "Tanjant ve Kotanjant İki Kat Açı Formülleri",
+      "metin": [
+        "Tanjant toplam formülü olan {koyu:tan(a + b) = {kesir:tan(a) + tan(b)|1 - tan(a)·tan(b)}} eşitliğinde {koyu:a = b = x} alındığında tanjant fonksiyonunun iki kat açı formülü elde edilir: {koyu:tan(2x) = {kesir:2 · tan(x)|1 - tan²(x)}} (burada {koyu:tan(x) ≠ ±1} olmalıdır).",
+        "Kotanjant toplam formülünde {koyu:a = b = x} yazıldığında veya {koyu:cot(2x) = {kesir:1|tan(2x)}} bağıntısı kullanıldığında kotanjant iki kat açı formülü bulunur: {koyu:cot(2x) = {kesir:cot²(x) - 1|2 · cot(x)}}.",
+        "Dar bir {koyu:2x} açısının herhangi bir trigonometrik oranı (örneğin {koyu:cos(2x)} veya {koyu:tan(2x)}) biliniyorken {koyu:x} açısının trigonometrik oranları sorulduğunda cebirsel formül yerine {koyu:yarım açı dik üçgeni} yöntemi kullanılabilir: {koyu:2x} açılı dik üçgen çizilir, komşu dik kenar hipotenüs uzunluğu kadar dışarıya uzatılarak tepe açısı {koyu:2x} olan dış açıya komşu {koyu:(x, x)} taban açılı ikizkenar üçgen oluşturulur."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "tan(x) = 1 (örneğin x = 45°) olduğunda tan(2x) formülünün paydası 1 - 1² = 0 olur; çünkü tan(90°) tanımsızdır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "sin(2x) ve cos(2x) ifadeleri tan(x) = t dönüşümüyle rasyonel olarak da yazılabilir: sin(2x) = {kesir:2t|1 + t²} ve cos(2x) = {kesir:1 - t²|1 + t²}."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">TANJANT VE KOTANJANT İKİ KAT AÇI ÖZDEŞLİKLERİ</text>\n  <rect x=\"25\" y=\"46\" width=\"315\" height=\"196\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"70\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#92400e\">Tanjant İki Kat Açı Bağıntısı</text>\n  <rect x=\"45\" y=\"84\" width=\"275\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/>\n  <text x=\"182\" y=\"116\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">tan(2x) = (2 · tan(x)) / (1 - tan²(x))</text>\n  <text x=\"42\" y=\"160\" font-size=\"11.5\" fill=\"#78350f\">• sin(x+x) ve cos(x+x) toplam formüllerinde</text>\n  <text x=\"50\" y=\"176\" font-size=\"11.5\" fill=\"#78350f\">a = b = x yazılarak elde edilir.</text>\n  <text x=\"42\" y=\"200\" font-size=\"11.5\" fill=\"#78350f\">• <tspan font-weight=\"bold\">Örnek:</tspan> tan(x) = 1/2 ise</text>\n  <text x=\"50\" y=\"218\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#92400e\">tan(2x) = (2·(1/2)) / (1 - 1/4) = 1 / (3/4) = 4/3</text>\n  <rect x=\"360\" y=\"46\" width=\"315\" height=\"196\" rx=\"10\" fill=\"#fae8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"517\" y=\"70\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#6b21a8\">Kotanjant İki Kat Açı Bağıntısı</text>\n  <rect x=\"378\" y=\"84\" width=\"280\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#c084fc\" stroke-width=\"1.5\"/>\n  <text x=\"517\" y=\"116\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#7e22ce\">cot(2x) = (cot²(x) - 1) / (2 · cot(x))</text>\n  <text x=\"378\" y=\"160\" font-size=\"11.5\" fill=\"#581c87\">• <tspan font-weight=\"bold\">Pratik Yol:</tspan> cot(2x) = 1 / tan(2x) olduğundan</text>\n  <text x=\"386\" y=\"176\" font-size=\"11.5\" fill=\"#581c87\">önce tan(2x) bulunup çarpmaya göre tersi alınır.</text>\n  <text x=\"378\" y=\"200\" font-size=\"11.5\" fill=\"#581c87\">• <tspan font-weight=\"bold\">Yarım Açı Üçgeni:</tspan> 2x açılı dik üçgende</text>\n  <text x=\"386\" y=\"218\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#6b21a8\">hipotenüs kadar uzatılarak (x, x) ikizkenarı kurulur.</text>\n</svg>"
+    },
+    {
+      "baslik": "İki Kat Açı Formüllerinin Geometrik Uygulamaları",
+      "metin": [
+        "İkizkenar üçgen sorularında tepe açısı {koyu:2x} olarak verildiğinde, tepeden tabana indirilen dikme hem kenarortay hem de açıortay olduğundan tepe açısını {koyu:x} ve {koyu:x} şeklinde iki eş parçaya böler. Böylece oluşan dik üçgenden {koyu:sin(x)} ve {koyu:cos(x)} değerleri okunarak {koyu:sin(2x) = 2·sin(x)·cos(x)} veya {koyu:cos(2x) = 1 - 2·sin²(x)} yardımıyla tepe açısının trigonometrik oranları bulunur.",
+        "Çemberde aynı yayı gören {koyu:merkez açının ölçüsü (2x)}, çevre açının ölçüsünün ({koyu:x}) iki katıdır. Çapı gören çevre açı 90° olduğu için çevre açının bulunduğu dik üçgenden {koyu:x} açısının oranları yazılıp iki kat açı formülleriyle merkez açının ({koyu:2x}) oranlarına geçilir.",
+        "Katlama (origami) ve açıortay içeren dikdörtgen/kare sorularında ise eş açılar {koyu:x} ile isimlendirildiğinde oluşan {koyu:2x} açısının tanjantı {koyu:tan(2x) = {kesir:2·tan(x)|1 - tan²(x)}} bağıntısıyla hesaplanarak bilinmeyen kenar uzunlukları kolayca bulunur."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Geometrik şekillerde 2x açısı geniş açı (90° < 2x < 180°) olabilir; bu durumda cos(2x), tan(2x) ve cot(2x) değerlerinin negatif (-) işaretli çıkacağına dikkat edilmelidir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Bir dik üçgende açıortay varsa, açıortayın ayırdığı dar açılara x ve x diyerek büyük dik üçgende komşu/karşı kenar oranını doğrudan tan(2x) veya cot(2x)'e eşitleyebilirsiniz."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">2x AÇISINDAN x AÇISINA GEÇİŞ (İKİZKENAR ÜÇGEN YÖNTEMİ)</text>\n  <rect x=\"25\" y=\"46\" width=\"365\" height=\"196\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"207\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e40af\">ABC Dik Üçgenine ACD İkizkenar Üçgeni Ekleme</text>\n  <polygon points=\"80,200 220,200 80,95\" fill=\"#dbeafe\" stroke=\"#1d4ed8\" stroke-width=\"2.5\"/>\n  <polygon points=\"220,200 355,200 80,95\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/>\n  <rect x=\"80\" y=\"186\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"1.5\"/>\n  <text x=\"65\" y=\"205\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">B</text>\n  <text x=\"72\" y=\"86\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">A</text>\n  <text x=\"218\" y=\"218\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">C</text>\n  <text x=\"355\" y=\"218\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">D</text>\n  <text x=\"182\" y=\"194\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">2x</text>\n  <text x=\"305\" y=\"194\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">x</text>\n  <text x=\"145\" y=\"118\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">x</text>\n  <text x=\"58\" y=\"152\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">3</text>\n  <text x=\"145\" y=\"216\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">4</text>\n  <text x=\"148\" y=\"142\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">5</text>\n  <text x=\"285\" y=\"216\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">5</text>\n  <rect x=\"405\" y=\"46\" width=\"270\" height=\"196\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"540\" y=\"70\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#92400e\">Adım Adım Geometrik Çözüm</text>\n  <text x=\"420\" y=\"96\" font-size=\"11\" fill=\"#78350f\">1. tan(2x) = 3/4 ise ABC dik</text>\n  <text x=\"428\" y=\"112\" font-size=\"11\" fill=\"#78350f\">üçgeni (3-4-5) çizilir.</text>\n  <text x=\"420\" y=\"136\" font-size=\"11\" fill=\"#78350f\">2. [BC] kenarı hipotenüs (|AC| = 5)</text>\n  <text x=\"428\" y=\"152\" font-size=\"11\" fill=\"#78350f\">kadar uzatılarak |CD| = 5 alınır.</text>\n  <text x=\"420\" y=\"176\" font-size=\"11\" fill=\"#78350f\">3. İki iç açının toplamı komşu olmayan</text>\n  <text x=\"428\" y=\"192\" font-size=\"11\" fill=\"#78350f\">dış açıya (2x) eşit olduğundan D = x olur.</text>\n  <rect x=\"420\" y=\"202\" width=\"240\" height=\"28\" rx=\"6\" fill=\"#ffffff\" stroke=\"#f59e0b\"/>\n  <text x=\"540\" y=\"220\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b45309\">ABD üçgeninde: tan(x) = 3 / (4+5) = 1/3</text>\n</svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Dar bir x açısı için sin(x) = {kesir:3|5} olduğuna göre sin(2x) ve cos(2x) değerlerini hesaplayınız.",
+      "cevap": "x dar açı ve sin(x) = {kesir:3|5} olduğundan 3-4-5 dik üçgeninden cos(x) = {kesir:4|5} bulunur. İki kat açı formüllerinden: sin(2x) = 2 · sin(x) · cos(x) = 2 · {kesir:3|5} · {kesir:4|5} = {kesir:24|25} ve cos(2x) = cos²(x) - sin²(x) = {kesir:16|25} - {kesir:9|25} = {kesir:7|25} elde edilir."
+    },
+    {
+      "soru": "sin(x) - cos(x) = {kesir:1|3} olduğuna göre sin(2x) ifadesinin değeri kaçtır?",
+      "cevap": "Verilen eşitliğin her iki tarafının karesi alınır: (sin(x) - cos(x))² = ({kesir:1|3})² → sin²(x) - 2·sin(x)·cos(x) + cos²(x) = {kesir:1|9}. Burada sin²(x) + cos²(x) = 1 ve 2·sin(x)·cos(x) = sin(2x) yazıldığında: 1 - sin(2x) = {kesir:1|9} → sin(2x) = 1 - {kesir:1|9} = {kesir:8|9} bulunur."
+    },
+    {
+      "soru": "cos(20°) · cos(40°) · cos(80°) çarpımının sonucu kaçtır?",
+      "cevap": "İfadeye A diyelim ve her iki tarafı 2·sin(20°) ile çarpalım: 2·sin(20°)·A = [2·sin(20°)·cos(20°)] · cos(40°) · cos(80°) = sin(40°) · cos(40°) · cos(80°). Tekrar 2 ile çarpıp bölersek: {kesir:1|2} · [2·sin(40°)·cos(40°)] · cos(80°) = {kesir:1|2} · sin(80°) · cos(80°) = {kesir:1|4} · sin(160°). Birbirini 180°'ye tamamlayan açılarda sin(160°) = sin(20°) olduğundan: 2·sin(20°)·A = {kesir:1|4}·sin(20°) → A = {kesir:1|8} bulunur."
+    },
+    {
+      "soru": "tan(x) = {kesir:1|3} olduğuna göre tan(2x) ve cot(2x) değerlerini bulunuz.",
+      "cevap": "Tanjant iki kat açı formülünden: tan(2x) = {kesir:2 · tan(x)|1 - tan²(x)} = {kesir:2 · (1/3)|1 - (1/9)} = {kesir:2/3|8/9} = {kesir:2|3} · {kesir:9|8} = {kesir:3|4} bulunur. Buradan cot(2x) = {kesir:1|tan(2x)} = {kesir:4|3} elde edilir."
+    },
+    {
+      "soru": "{kesir:1 - cos(2x)|sin(2x)} ifadesinin en sade biçimini bulunuz.",
+      "cevap": "Pay kısmındaki 1'i yok etmek için cos(2x) = 1 - 2·sin²(x) yazılırsa pay: 1 - (1 - 2·sin²(x)) = 2·sin²(x) olur. Payda ise sin(2x) = 2·sin(x)·cos(x) şeklindedir. Oranlandığında: {kesir:2·sin²(x)|2·sin(x)·cos(x)} = {kesir:sin(x)|cos(x)} = tan(x) bulunur."
+    },
+    {
+      "soru": "Dar bir 2x açısı için tan(2x) = {kesir:5|12} olduğuna göre tan(x) değeri kaçtır?",
+      "cevap": "Dar açılı ABC dik üçgeninde 2x açısının karşısı 5, komşusu 12 ise hipotenüs 13 birimdir (5-12-13 üçgeni). Komşu kenar (12 birim) hipotenüs kadar (13 birim) uzatılarak (x, x) taban açılı ikizkenar üçgen oluşturulduğunda büyük dik üçgende x açısının karşısı 5, komşusu 12 + 13 = 25 birim olur. Buradan tan(x) = {kesir:5|25} = {kesir:1|5} bulunur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "soru": "İfadesi 4 · sin(15°) · cos(15°) · cos(30°) olan çarpımın değeri aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "{kesir:1|4}",
+        "{kesir:1|2}",
+        "{kok:3}/4",
+        "{kok:3}/2",
+        "1"
+      ],
+      "dogru": 3,
+      "aciklama": "4·sin(15°)·cos(15°)·cos(30°) = 2 · [2·sin(15°)·cos(15°)] · cos(30°) = 2 · sin(30°) · cos(30°) = sin(60°) = {kok:3}/2 bulunur.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "cos(x) = {kesir:2|3} olduğuna göre cos(2x) ifadesinin değeri kaçtır?",
+      "secenekler": [
+        "-{kesir:1|9}",
+        "{kesir:1|9}",
+        "{kesir:2|9}",
+        "{kesir:4|9}",
+        "{kesir:5|9}"
+      ],
+      "dogru": 0,
+      "aciklama": "cos(2x) = 2·cos²(x) - 1 özdeşliğinde cos(x) = {kesir:2|3} yazılırsa: cos(2x) = 2 · ({kesir:4|9}) - 1 = {kesir:8|9} - 1 = -{kesir:1|9} bulunur.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Dar bir x açısı için cot(x) = 2 olduğuna göre tan(2x) değeri aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "{kesir:3|4}",
+        "{kesir:4|3}",
+        "{kesir:4|5}",
+        "{kesir:5|4}",
+        "1"
+      ],
+      "dogru": 1,
+      "aciklama": "cot(x) = 2 ise tan(x) = {kesir:1|2} olur. tan(2x) = {kesir:2·tan(x)|1 - tan²(x)} = {kesir:2·(1/2)|1 - 1/4} = {kesir:1|3/4} = {kesir:4|3} bulunur.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "{kesir:1 + cos(40°)|sin(40°)} ifadesinin eşiti aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "sin(20°)",
+        "cos(20°)",
+        "tan(20°)",
+        "cot(20°)",
+        "sec(20°)"
+      ],
+      "dogru": 3,
+      "aciklama": "1 + cos(40°) = 2·cos²(20°) ve sin(40°) = 2·sin(20°)·cos(20°) yazılırsa oranları {kesir:2·cos²(20°)|2·sin(20°)·cos(20°)} = {kesir:cos(20°)|sin(20°)} = cot(20°) olur.",
+      "tur": "coktan"
+    },
+    {
+      "ifadeler": [
+        {
+          "metin": "Her x gerçel sayısı için sin(2x) = 2 · sin(x) · cos(x) özdeşliği geçerlidir.",
+          "dogru": true,
+          "aciklama": "Sinüs toplam formülünde a = b = x yazılarak elde edilen temel iki kat açı özdeşliğidir."
+        },
+        {
+          "metin": "cos²(15°) - sin²(15°) ifadesinin değeri cos(30°) değerine yani {kok:3}/2 sayısına eşittir.",
+          "dogru": true,
+          "aciklama": "cos²(x) - sin²(x) = cos(2x) olduğundan cos²(15°) - sin²(15°) = cos(30°) = {kok:3}/2 olur."
+        },
+        {
+          "metin": "sin(2x) ifadesi her dar açı için 2 · sin(x) çarpımına birebir eşittir.",
+          "dogru": false,
+          "aciklama": "sin(2x) = 2·sin(x) değil, 2·sin(x)·cos(x)'tir (örneğin sin(60°) ≠ 2·sin(30°))."
+        },
+        {
+          "metin": "(sin(x) + cos(x))² tam kare ifadesinin açılımı 1 + sin(2x) toplamına eşittir.",
+          "dogru": true,
+          "aciklama": "sin²(x) + 2·sin(x)·cos(x) + cos²(x) = 1 + sin(2x) özdeşliğini verir."
+        },
+        {
+          "metin": "Trigonometrik 1 - 2·sin²(25°) ifadesinin değeri sin(50°) değerine eşittir.",
+          "dogru": false,
+          "aciklama": "1 - 2·sin²(x) = cos(2x) olduğundan 1 - 2·sin²(25°) = cos(50°) = sin(40°) olur, sin(50°) değildir."
+        }
+      ],
+      "tur": "dy"
+    },
+    {
+      "ciftler": [
+        [
+          "2 · sin(x) · cos(x)",
+          "sin(2x) sinüs iki kat açı özdeşliği"
+        ],
+        [
+          "cos²(x) - sin²(x)",
+          "cos(2x) kosinüs iki kat açı özdeşliği"
+        ],
+        [
+          "1 + cos(2x)",
+          "2 · cos²(x) yarım açı sadeleştirme özdeşliği"
+        ],
+        [
+          "1 - cos(2x)",
+          "2 · sin²(x) yarım açı sadeleştirme özdeşliği"
+        ],
+        [
+          "(2 · tan(x)) / (1 - tan²(x))",
+          "tan(2x) tanjant iki kat açı özdeşliği"
+        ]
+      ],
+      "tur": "eslestir"
+    },
+    {
+      "cumleler": [
+        {
+          "metin": "Trigonometrik 2 · sin(22,5°) · cos(22,5°) çarpımı sin(45°) değerine yani {kok:2}/___ sayısına eşittir.",
+          "cevap": "2"
+        },
+        {
+          "metin": "Cebirsel 2 · cos²(x) - 1 ifadesi kosinüs iki kat açı formüllerinden ___ fonksiyonuna eşittir.",
+          "cevap": "cos(2x)"
+        },
+        {
+          "metin": "tan(x) = 3 olduğuna göre tan(2x) = (2·3) / (1 - 9) işleminden sonuç -3/___ bulunur.",
+          "cevap": "4"
+        },
+        {
+          "metin": "(sin(15°) + cos(15°))² ifadesi 1 + sin(30°) = 1 + 1/2 işleminden ___/2 değerine eşittir.",
+          "cevap": "3"
+        },
+        {
+          "metin": "Bir çemberde aynı yayı gören merkez açının ölçüsü 2x iken çevre açının ölçüsü ___ kadardır.",
+          "cevap": "x"
+        }
+      ],
+      "fazla": [
+        "sin(x)",
+        "5"
+      ],
+      "tur": "bosluk"
+    },
+    {
+      "soru": "ABC bir ikizkenar üçgen olup |AB| = |AC| = 10 cm ve |BC| = 12 cm'dir. Tepe açısı m(BAC) = 2x olduğuna göre sin(2x), cos(2x) ve tan(2x) değerlerini iki kat açı formüllerini kullanarak adım adım bulunuz.",
+      "ipuclari": [
+        "İkizkenar üçgenin A tepesinden [BC] tabanına dikme indirerek tabanı 6 cm ve 6 cm, tepe açısını x ve x olarak ikiye ayırınız.",
+        "Oluşan 6-8-10 dik üçgeninden sin(x), cos(x) ve tan(x) oranlarını yazınız.",
+        "İki kat açı formüllerinde (sin(2x), cos(2x), tan(2x)) bu değerleri yerine koyarak sonuçları hesaplayınız."
+      ],
+      "cevap": "İkizkenar üçgenin A köşesinden [BC] tabanına [AH] dikmesi indirildiğinde taban |BH| = |HC| = 6 cm olarak ikiye bölünür ve tepe açısı x ve x olarak iki eş parçaya ayrılır. AHB dik üçgeninde Pisagor teoreminden yükseklik |AH| = 8 cm bulunur (6-8-10 üçgeni). Bu dik üçgenden: sin(x) = {kesir:6|10} = {kesir:3|5}, cos(x) = {kesir:8|10} = {kesir:4|5} ve tan(x) = {kesir:3|4} elde edilir. İki kat açı formülleri uygulanırsa: (1) sin(2x) = 2·sin(x)·cos(x) = 2 · {kesir:3|5} · {kesir:4|5} = {kesir:24|25}; (2) cos(2x) = cos²(x) - sin²(x) = {kesir:16|25} - {kesir:9|25} = {kesir:7|25}; (3) tan(2x) = {kesir:sin(2x)|cos(2x)} = {kesir:24|7} bulunur.",
+      "tur": "ogretici"
+    }
+  ],
+  "ozet": [
+    "Sinüs iki kat açı formülü sin(2x) = 2 · sin(x) · cos(x) olup tam kare özdeşliğinde (sin(x) ± cos(x))² = 1 ± sin(2x) eşitliğini sağlar.",
+    "Kosinüs iki kat açı formülü cos(2x) = cos²(x) - sin²(x) = 2·cos²(x) - 1 = 1 - 2·sin²(x) olmak üzere üç eşdeğer biçimde yazılır.",
+    "Sadeleştirmelerde 1 + cos(2x) = 2·cos²(x) ve 1 - cos(2x) = 2·sin²(x) yarım açı dönüşümleri sabit 1 terimini yok etmek için kullanılır.",
+    "Tanjant ve kotanjant iki kat açı formülleri tan(2x) = {kesir:2·tan(x)|1 - tan²(x)} ve cot(2x) = {kesir:cot²(x) - 1|2·cot(x)} bağıntılarıyla hesaplanır.",
+    "Dar 2x açısından x açısına geçerken 2x açılı dik üçgenin komşu kenarı hipotenüs kadar uzatılarak (x, x) ikizkenar üçgeni oluşturulur."
+  ]
+}

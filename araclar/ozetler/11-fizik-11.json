@@ -1,0 +1,261 @@
+{
+  "ad": "11-fizik-11",
+  "sinif": 11,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 11,
+  "tarih": "30 Kasım-4 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "1. Tema: Kuvvet ve Hareket",
+  "konu": "Akışkanların Direnç Kuvveti ve Limit Hız: Limit Hızı Etkileyen Değişkenler (Kesit Alanı, Kütle, Akışkan Yoğunluğu) ve Düşey Hareket Grafikleri (FİZ.11.1.8)",
+  "ciktilar": [
+    "Hava ve su gibi akışkan ortamda hareket eden cisimlere etki eden direnç kuvvetini ve limit hızı etkileyen değişkenleri (kütle, en büyük dik kesit alanı, akışkan yoğunluğu ve aerodinamik şekil) tanımlar.",
+    "Serbest düşmeye bırakılan bir cismin limit hıza ulaşma sürecinde net kuvvet, ivme ve hız büyüklüklerinin zamana göre değişim verilerini toplayarak kaydeder.",
+    "Limit hız matematiksel modelini ve hız-zaman / ivme-zaman grafiklerini yorumlayarak günlük hayattaki olaylar (yağmur damlası, dolu tanesi, paraşüt hareketi) üzerinde bilimsel çıkarım yapar."
+  ],
+  "giris": "Havasız (vakum) bir ortamda serbest düşmeye bırakılan tüm cisimler kütlelerinden ve şekillerinden bağımsız olarak sabit yer çekimi ivmesiyle ({koyu:g}) sürekli hızlanır. Ancak atmosferde (hava ortamında) veya su içinde düşen cisimlere hareket yönüne zıt bir {koyu:akışkan direnç kuvveti} etki eder; bu kuvvet cismin ağırlığını dengelediğinde ivme sıfırlanır ve cisim {koyu:limit hız} adı verilen sabit hızla hareketini sürdürür.",
+  "bolumler": [
+    {
+      "baslik": "Akışkanların Direnç Kuvveti ve Bağlı Olduğu Değişkenler",
+      "metin": [
+        "Gazlar (hava) ve sıvılar (su, yağ vb.) {koyu:akışkan} olarak adlandırılır. Bir akışkan içinde hareket eden katı cisimlere, akışkan taneciklerinin çarpması sonucunda cismin hareket yönüne {koyu:daima zıt yönde} bir {koyu:direnç kuvveti} ({koyu:F_d} veya hava direnci) etki eder. Yüksek hızlarda hareket eden cisimler için akışkanın gösterdiği bu direnç kuvvetinin büyüklüğü {koyu:F_d = K · A ·} {us:v|2} bağıntısıyla modellenir.",
+        "Bu bağıntıda yer alan {koyu:K} katsayısı; içinde hareket edilen akışkanın yoğunluğuna (özkütlesine) ve cismin geometrik-aerodinamik şekline bağlı olan {koyu:hava direnç katsayısıdır} (birimi {kesir:kg|m³} mertebesindedir). Küresel bir cisim için K daha küçükken, ucu düz veya paraşüt gibi içbükey cisimler için K daha büyüktür.",
+        "Bağıntıdaki {koyu:A} büyüklüğü, cismin hareket doğrultusuna dik olan {koyu:en büyük kesit alanıdır} ({us:m|2}). Örneğin r yarıçaplı bir kürenin veya taban yarıçapı r olan bir koninin düşey doğrultudaki en büyük dik kesit alanı {koyu:A = π ·} {us:r|2} daire alanıdır. {koyu:v} ise cismin o andaki anlık hızıdır ({kesir:m|s}); cisim hızlandıkça hava direnç kuvveti hızın karesiyle ({us:v|2}) doğru orantılı olarak hızla artar."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 255\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"255\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">AKIŞKAN DİRENÇ KUVVETİ (Fd = K · A · v²) VE EN BÜYÜK KESİT ALANI (A)</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"192\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\">1. Direnç Kuvvetini Belirleyen Etkenler</text>\n  <text x=\"34\" y=\"94\" font-size=\"10.5\" fill=\"#334155\">• <tspan font-weight=\"bold\" fill=\"#1d4ed8\">Yönü:</tspan> Cismin hız vektörüne (v) daima zıt yöndedir.</text>\n  <text x=\"34\" y=\"118\" font-size=\"10.5\" fill=\"#334155\">• <tspan font-weight=\"bold\" fill=\"#1d4ed8\">K (Direnç Katsayısı):</tspan> Akışkanın yoğunluğuna ve</text>\n  <text x=\"42\" y=\"133\" font-size=\"10\" fill=\"#475569\">cismin aerodinamik biçimine bağlıdır.</text>\n  <text x=\"34\" y=\"156\" font-size=\"10.5\" fill=\"#334155\">• <tspan font-weight=\"bold\" fill=\"#1d4ed8\">A (Dik Kesit Alanı):</tspan> Hareket doğrultusuna dik</text>\n  <text x=\"42\" y=\"171\" font-size=\"10\" fill=\"#475569\">en geniş kesit alanı ile doğru orantılıdır.</text>\n  <rect x=\"36\" y=\"184\" width=\"288\" height=\"40\" rx=\"6\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">Matematiksel Model: Fd = K · A · v² (N)</text>\n\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"192\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#92400e\">2. Hareket Doğrultusuna Dik En Büyük Kesit</text>\n  <circle cx=\"440\" cy=\"135\" r=\"38\" fill=\"#fde68a\" stroke=\"#b45309\" stroke-width=\"2\"/>\n  <ellipse cx=\"440\" cy=\"135\" rx=\"38\" ry=\"12\" fill=\"#f59e0b\" fill-opacity=\"0.35\" stroke=\"#92400e\" stroke-dasharray=\"4,3\" stroke-width=\"1.8\"/>\n  <line x1=\"440\" y1=\"135\" x2=\"478\" y2=\"135\" stroke=\"#991b1b\" stroke-width=\"2\"/>\n  <text x=\"459\" y=\"130\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#991b1b\">r</text>\n  <text x=\"440\" y=\"192\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#78350f\">Küre: A = π · r²</text>\n  <text x=\"440\" y=\"208\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">(Ekvator Dairesi)</text>\n\n  <polygon points=\"595,95 555,165 635,165\" fill=\"#fde68a\" stroke=\"#b45309\" stroke-width=\"2\"/>\n  <ellipse cx=\"595\" cy=\"165\" rx=\"40\" ry=\"11\" fill=\"#f59e0b\" fill-opacity=\"0.35\" stroke=\"#92400e\" stroke-width=\"1.8\"/>\n  <line x1=\"595\" y1=\"165\" x2=\"635\" y2=\"165\" stroke=\"#991b1b\" stroke-width=\"2\"/>\n  <text x=\"615\" y=\"160\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#991b1b\">2r</text>\n  <text x=\"595\" y=\"192\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#78350f\">Koni (Taban: 2r): A = π · (2r)² = 4πr²</text>\n  <text x=\"595\" y=\"208\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">(Taban Dairesi)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "En Büyük Dik Kesit Alanının Seçimi",
+          "metin": "Bir cismin kesit alanı alınırken yere temas eden uç noktası değil, düşey hareket doğrultusuna dik olan 'en geniş (maksimum) kesit alanı' alınır. Örneğin sivri ucu aşağı bakan bir koninin dik kesit alanı yine üstteki daire tabanının alanıdır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Aerodinamik Tasarım ve Yakıt Tasarrufu",
+          "metin": "Otomobil, hızlı tren ve uçakların ön kısımlarının küt değil oval/akıcı (aerodinamik) tasarlanmasının amacı K direnç katsayısını küçülterek hava direnç kuvvetini azaltmak ve enerji tasarrufu sağlamaktır."
+        }
+      ]
+    },
+    {
+      "baslik": "Limit Hız Kavramı ve Limit Hızı Etkileyen Değişkenler",
+      "metin": [
+        "Yeterince yüksek bir noktadan hava ortamında serbest bırakılan m kütleli bir cisme başlangıç anında ({koyu:t = 0}) hızı sıfır ({koyu:v = 0}) olduğu için hava direnç kuvveti etki etmez ({koyu:F_d = 0}). Bu anda cisme yalnız aşağı yönlü ağırlığı ({koyu:G = m · g}) etki eder ve cismin başlangıç ivmesi yer çekimi ivmesine eşittir ({koyu:a = g}).",
+        "Cisim aşağı doğru hızlandıkça yukarı yönlü hava direnç kuvveti ({koyu:F_d = K · A ·} {us:v|2}) artar. Net kuvvet {koyu:F_net = G - F_d} olduğu için, hız arttıkça net kuvvet ve dolayısıyla cismin {koyu:ivmesi (a) azalır}; yani cisim {koyu:azalan ivmeyle hızlanan} hareket yapar. Hava direnç kuvvetinin cismin ağırlığına eşitlendiği anda ({koyu:F_d = G}) cisme etki eden {koyu:net kuvvet sıfır (F_net = 0)} ve {koyu:ivme sıfır (a = 0)} olur.",
+        "Net kuvvetin sıfır olduğu bu andan itibaren cisim artık hızlanamaz ve ulaştığı bu en büyük sabit hız değerine {koyu:limit hız} ({koyu:v_L}) denir. {koyu:K · A ·} {us:v_L|2} {koyu:= m · g} eşitliğinden limit hızın büyüklüğü {koyu:v_L =} {kok:m·g / (K·A)} olarak elde edilir. Buna göre bir cismin limit hızı; {koyu:kütlesinin (m) ve ağırlığının kareköküyle doğru orantılı}, {koyu:en büyük dik kesit alanının (A) ve direnç katsayısının (K) kareköküyle ters orantılıdır}."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">SERBEST DÜŞMEDEN LİMİT HIZA GEÇİŞ SÜRECİ (vL = kök(m·g / K·A))</text>\n  <rect x=\"20\" y=\"45\" width=\"210\" height=\"195\" rx=\"10\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n  <text x=\"125\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#0369a1\">1. Başlangıç Anı (t = 0)</text>\n  <circle cx=\"125\" cy=\"112\" r=\"18\" fill=\"#38bdf8\" stroke=\"#0369a1\" stroke-width=\"2\"/>\n  <line x1=\"125\" y1=\"130\" x2=\"125\" y2=\"170\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n  <polygon points=\"120,168 130,168 125,178\" fill=\"#dc2626\"/>\n  <text x=\"148\" y=\"160\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">G = m·g</text>\n  <text x=\"35\" y=\"196\" font-size=\"10.5\" fill=\"#334155\">• v = 0  ⇒  Fd = 0</text>\n  <text x=\"35\" y=\"212\" font-size=\"10.5\" fill=\"#334155\">• Fnet = G = m·g</text>\n  <text x=\"35\" y=\"228\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0369a1\">• İvme maksimumdur: a = g</text>\n\n  <rect x=\"245\" y=\"45\" width=\"210\" height=\"195\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"350\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#92400e\">2. Hızlanma Süreci (v &lt; vL)</text>\n  <circle cx=\"350\" cy=\"118\" r=\"18\" fill=\"#fbbf24\" stroke=\"#b45309\" stroke-width=\"2\"/>\n  <line x1=\"350\" y1=\"100\" x2=\"350\" y2=\"78\" stroke=\"#2563eb\" stroke-width=\"2.2\"/>\n  <polygon points=\"345,80 355,80 350,71\" fill=\"#2563eb\"/>\n  <text x=\"372\" y=\"88\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#2563eb\">Fd</text>\n  <line x1=\"350\" y1=\"136\" x2=\"350\" y2=\"174\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n  <polygon points=\"345,172 355,172 350,182\" fill=\"#dc2626\"/>\n  <text x=\"372\" y=\"165\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">G</text>\n  <text x=\"260\" y=\"196\" font-size=\"10.5\" fill=\"#334155\">• G &gt; Fd  ⇒  Fnet = G - Fd</text>\n  <text x=\"260\" y=\"212\" font-size=\"10.5\" fill=\"#334155\">• v artar, Fd artar, Fnet azalır</text>\n  <text x=\"260\" y=\"228\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b45309\">• Azalan ivmeyle hızlanır</text>\n\n  <rect x=\"470\" y=\"45\" width=\"210\" height=\"195\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"575\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">3. Limit Hız Durumu (v = vL)</text>\n  <circle cx=\"575\" cy=\"122\" r=\"18\" fill=\"#4ade80\" stroke=\"#15803d\" stroke-width=\"2\"/>\n  <line x1=\"575\" y1=\"104\" x2=\"575\" y2=\"72\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n  <polygon points=\"570,74 580,74 575,64\" fill=\"#2563eb\"/>\n  <text x=\"602\" y=\"86\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#2563eb\">Fd = G</text>\n  <line x1=\"575\" y1=\"140\" x2=\"575\" y2=\"174\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n  <polygon points=\"570,172 580,172 575,182\" fill=\"#dc2626\"/>\n  <text x=\"598\" y=\"165\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">G</text>\n  <text x=\"485\" y=\"196\" font-size=\"10.5\" fill=\"#334155\">• Fd = G  ⇒  Fnet = 0, a = 0</text>\n  <text x=\"485\" y=\"212\" font-size=\"10.5\" fill=\"#334155\">• Cisim sabit vL hızıyla düşer</text>\n  <text x=\"485\" y=\"228\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">• vL = kök(m·g / (K·A))</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Limit Hızda Direnç Kuvveti Yalnız Ağırlığa Eşittir!",
+          "metin": "Çok önemli: Limit hıza ulaşmış bir cisme etki eden hava direnç kuvveti sorulduğunda K ve A'ya bakmaya gerek yoktur; çünkü limit hızda denge sağlandığından Fd doğrudan cismin ağırlığına (Fd = G = m·g) eşittir!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Yağmur Damlası ve Paraşüt Örneği",
+          "metin": "Bulutlardan kilometrelerce yukarıdan düşen yağmur damlaları eğer limit hıza ulaşmasaydı (sürekli hızlansaydı) yere mermi hızıyla çarpardı. Paraşütçü paraşütünü açtığında ise dik kesit alanı (A) çok büyüdüğü için limit hızı güvenli bir değere düşer."
+        }
+      ]
+    },
+    {
+      "baslik": "Limit Hız Hareketinde Hız-Zaman ve İvme-Zaman Grafikleri",
+      "metin": [
+        "Hava ortamında düşey doğrultuda hareket eden bir cismin hareket grafikleri ilk hızının ({koyu:v_0}) limit hızdan ({koyu:v_L}) küçük veya büyük olmasına göre iki farklı durum sergiler. {koyu:Birinci durumda}, serbest bırakılan ({koyu:v_0 = 0}) veya limit hızdan daha küçük bir hızla ({koyu:v_0 < v_L}) aşağı atılan cisimde ağırlık direnç kuvvetinden büyüktür ({koyu:G > F_d}). Cisim {koyu:azalan ivmeyle hızlanır}; hız-zaman grafiğinin eğimi (ivmesi) giderek azalarak yatay {koyu:v_L} doğrusuna teğet olur.",
+        "{koyu:İkinci durumda} ise cisim düşey aşağı doğru limit hızından daha büyük bir ilk hızla ({koyu:v_0 > v_L}) fırlatılır (veya limit hızla inen paraşütçü paraşütünü açar). Bu anda hız çok büyük olduğu için yukarı yönlü hava direnç kuvveti cismin ağırlığından büyüktür ({koyu:F_d > G}). Net kuvvet hareket yönüne zıt (yukarı yönlü) olduğundan cisim {koyu:azalan ivmeyle yavaşlar} ve hızı {koyu:v_L} limit hız değerine düştüğünde sabit hızla yoluna devam eder.",
+        "Aynı maddeden yapılmış (özkütleleri {koyu:d} eşit) içi dolu iki küreden yarıçapı büyük olanın kütlesi {us:r|3} ile, kesit alanı ise {us:r|2} ile orantılı olduğu için, limit hızı {koyu:v_L} yarıçapın kareköküyle ({kok:r}) doğru orantılı olur; yani aynı maddeden yapılmış büyük kürenin limit hızı küçük küreden daha büyüktür."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 255\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"255\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">HAVA ORTAMINDA DÜŞEY HAREKETİN HIZ-ZAMAN VE İVME-ZAMAN GRAFİKLERİ</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"192\" rx=\"10\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"66\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e40af\">1. Hız – Zaman Grafiği (v - t)</text>\n  <line x1=\"60\" y1=\"205\" x2=\"310\" y2=\"205\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"60\" y1=\"215\" x2=\"60\" y2=\"75\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"60\" y1=\"145\" x2=\"305\" y2=\"145\" stroke=\"#dc2626\" stroke-dasharray=\"5,4\" stroke-width=\"1.8\"/>\n  <text x=\"42\" y=\"149\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">vL</text>\n  <path d=\"M 60 205 Q 115 147 220 145 L 300 145\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2.5\"/>\n  <text x=\"165\" y=\"182\" font-size=\"10\" font-weight=\"bold\" fill=\"#15803d\">v0 = 0 (Serbest düşme:</text>\n  <text x=\"165\" y=\"195\" font-size=\"10\" fill=\"#15803d\">Azalan ivmeyle hızlanır)</text>\n  <path d=\"M 60 90 Q 115 143 220 145 L 300 145\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/>\n  <text x=\"42\" y=\"94\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#6d28d9\">v0</text>\n  <text x=\"180\" y=\"102\" font-size=\"10\" font-weight=\"bold\" fill=\"#6d28d9\">v0 &gt; vL (Hızlı atılan:</text>\n  <text x=\"180\" y=\"115\" font-size=\"10\" fill=\"#6d28d9\">Azalan ivmeyle yavaşlar)</text>\n  <text x=\"315\" y=\"209\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">t</text>\n\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"192\" rx=\"10\" fill=\"#ffffff\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"66\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">2. Serbest Düşmede İvme – Zaman (a - t)</text>\n  <line x1=\"400\" y1=\"195\" x2=\"650\" y2=\"195\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"400\" y1=\"210\" x2=\"400\" y2=\"75\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <text x=\"385\" y=\"95\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">g</text>\n  <text x=\"385\" y=\"199\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">0</text>\n  <path d=\"M 400 92 Q 455 192 560 195 L 645 195\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n  <line x1=\"560\" y1=\"190\" x2=\"560\" y2=\"202\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <text x=\"560\" y=\"216\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">tL (Limit Hız Anı)</text>\n  <text x=\"535\" y=\"120\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#991b1b\">• t = 0 anında a = g</text>\n  <text x=\"535\" y=\"140\" font-size=\"10.5\" fill=\"#334155\">• Hız arttıkça Fd artar,</text>\n  <text x=\"543\" y=\"155\" font-size=\"10.5\" fill=\"#334155\">net kuvvet ve ivme azalır.</text>\n  <text x=\"535\" y=\"175\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">• t ≥ tL için a = 0 olur.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Üst Üste Konulan Kesik Koniler",
+          "metin": "Özdeş iki kesik koni şeklindeki kâğıt filtre iç içe geçirildiğinde kesit alanı (A) ve katsayı (K) değişmezken kütle 2 katına (2m) çıkar; bu durumda limit hız vL'den kök(2)·vL değerine yükselir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Aynı Maddeden Yapılmış Kürelerde Yarıçap Etkisi",
+          "metin": "Aynı tür maddeden yapılmış (özkütlesi d olan) r ve 2r yarıçaplı iki dolu küreden 2r yarıçaplı olanın kütlesi 8m, kesit alanı 4A olduğundan limit hızlarının oranı v1 / v2 = 1 / kök(2) olur."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Hava ortamında yeterince yüksekten serbest bırakılan bir cismin limit hıza ulaşana kadar hızı, kendisine etki eden hava direnç kuvveti, net kuvvet ve ivmesi nasıl değişir?",
+      "cevap": "Cisim serbest bırakıldığı anda hızı sıfırdır ve ivmesi g'dir. Cisim aşağı doğru hızlandıkça hızı (v) artar; hıza bağlı olan hava direnç kuvveti (Fd = K·A·{us:v|2}) de sıfırdan başlayarak artar. Ağırlık ile direnç kuvveti zıt yönlü olduğundan net kuvvet (Fnet = G - Fd) ve cismin ivmesi (a) giderek azalır. Fd = G olduğu anda net kuvvet ve ivme sıfırlanır, hız sabitlenir (limit hız)."
+    },
+    {
+      "soru": "Kütleleri eşit (m), düşey doğrultuya dik en büyük kesit alanları sırasıyla A ve 4A olan aynı K direnç katsayısına sahip X ve Y cisimleri yeterince yüksekten serbest bırakılıyor. Cisimler limit hıza ulaştığında; a) Hava direnç kuvvetlerinin oranı FdX / FdY, b) Limit hızlarının oranı vX / vY kaçtır?",
+      "cevap": "a) Cisimler limit hıza ulaştığında her birine etki eden hava direnç kuvveti kendi ağırlığına eşittir (Fd = m·g). Kütleleri eşit (m) olduğundan FdX = m·g ve FdY = m·g olur; dolayısıyla FdX / FdY = 1'dir. b) K·A·{us:vX|2} = K·(4A)·{us:vY|2} eşitliğinden {us:vX|2} / {us:vY|2} = 4 bulunur; karekök alındığında vX / vY = 2 elde edilir."
+    },
+    {
+      "soru": "Kütlesi m = 0,6 kg ve hareket doğrultusuna dik en büyük kesit alanı A = 0,1 {us:m|2} olan bir cisim hava ortamında serbest bırakılıyor. Hava direnç katsayısı K = 0,24 kg/{us:m|3} ve g = 10 m/{us:s|2} olduğuna göre cismin ulaşacağı limit hız kaç m/s'dir?",
+      "cevap": "Cisim limit hıza ulaştığında hava direnç kuvveti ağırlığa eşit olur: Fd = G ⇒ K · A · {us:v_L|2} = m · g. Verilen değerler yerine yazılırsa: 0,24 · 0,1 · {us:v_L|2} = 0,6 · 10 ⇒ 0,024 · {us:v_L|2} = 6 ⇒ {us:v_L|2} = {kesir:6000|24} = 250 yerine kütle 0,6 kg için {us:v_L|2} = 250 m²/s² (veya m = 0,96 kg alınırsa {us:v_L|2} = 400 ⇒ v_L = 20 m/s; m = 0,6 kg için v_L = 5{kok:10} m/s) bulunur."
+    },
+    {
+      "soru": "Kütlesi m = 0,96 kg, en büyük dik kesit alanı A = 0,1 {us:m|2} olan küresel bir cismin K = 0,24 kg/{us:m|3} ve g = 10 m/{us:s|2} olan ortamda limit hızı kaç m/s olur?",
+      "cevap": "Limit hız şartı K · A · {us:v_L|2} = m · g bağıntısında değerler yerine konulursa: 0,24 · 0,1 · {us:v_L|2} = 0,96 · 10 ⇒ 0,024 · {us:v_L|2} = 9,6 ⇒ {us:v_L|2} = {kesir:9,6|0,024} = 400 elde edilir. Her iki tarafın karekökü alındığında cismin limit hızı v_L = 20 m/s bulunur."
+    },
+    {
+      "soru": "Düşey doğrultuda limit hızı v_L = 15 m/s olan bir cisim yukarıdan aşağıya doğru v_0 = 25 m/s ilk hızla fırlatılırsa cismin hareketi ve ivmesinin yönü nasıl olur?",
+      "cevap": "Cismin atıldığı andaki hızı limit hızından büyük (25 m/s > 15 m/s) olduğu için yukarı yönlü hava direnç kuvveti cismin aşağı yönlü ağırlığından büyüktür (Fd > G). Bu nedenle net kuvvet ve ivme vektörü yukarı yönlüdür (hareket yönüne zıttır); cisim azalan ivmeyle yavaşlar ve hızı 15 m/s'ye (limit hıza) düştükten sonra sabit hızla hareketine devam eder."
+    },
+    {
+      "soru": "Limit hızla aşağı doğru inmekte olan bir paraşütçü paraşütünü açtığı anda ve yeterince süre geçtikten sonra kendisine etki eden hava direnç kuvveti ağırlığına göre nasıl değişir?",
+      "cevap": "Paraşüt açılmadan önce limit hızda olduğu için Fd = G'dir. Paraşüt açıldığı ilk anda kesit alanı (A) aniden çok büyüdüğü için hava direnç kuvveti ağırlıktan çok büyük olur (Fd > G) ve paraşütçü yavaşlamaya başlar. Hızı azaldıkça Fd tekrar azalır ve paraşütçü daha küçük olan yeni limit hızına ulaştığında hava direnç kuvveti yeniden ağırlığına eşitlenir (Fd = G)."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Hava ortamında yeterince yüksek bir noktadan serbest düşmeye bırakılan bir cismin limit hıza ulaşmadan önceki hareket sürecinde; hız (v), hava direnç kuvveti (Fd) ve ivme (a) büyüklüklerinin değişimi aşağıdakilerin hangisinde doğru verilmiştir?",
+      "secenekler": [
+        "v artar, Fd artar, a azalır",
+        "v artar, Fd azalır, a artar",
+        "v sabit kalır, Fd artar, a sabit kalır",
+        "v azalır, Fd artar, a azalır",
+        "v artar, Fd değişmez, a sabit kalır"
+      ],
+      "dogru": 0,
+      "aciklama": "Serbest bırakılan cisim limit hıza ulaşana kadar hızlanır (v artar), hız arttığı için hava direnç kuvveti (Fd = K·A·{us:v|2}) artar, net kuvvet (G - Fd) ve ivme (a) ise azalır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Hava direnç katsayısının K = 0,25 kg/{us:m|3} olduğu bir ortamda, kütlesi m = 0,4 kg ve hareket doğrultusuna dik en büyük kesit alanı A = 0,04 {us:m|2} olan bir cisim yeterince yüksekten serbest bırakılıyor. Yer çekimi ivmesi g = 10 m/{us:s|2} olduğuna göre cismin ulaşacağı limit hız kaç m/s'dir?",
+      "secenekler": [
+        "10 m/s",
+        "20 m/s",
+        "25 m/s",
+        "40 m/s",
+        "50 m/s"
+      ],
+      "dogru": 1,
+      "aciklama": "Limit hızda K · A · {us:v_L|2} = m · g ⇒ 0,25 · 0,04 · {us:v_L|2} = 0,4 · 10 ⇒ 0,01 · {us:v_L|2} = 4 ⇒ {us:v_L|2} = 400 ⇒ v_L = 20 m/s bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aynı ortamda yeterince yüksekten serbest bırakılan X ve Y kürelerinin kütleleri sırasıyla m ve 4m, yarıçapları ise r ve 2r'dir. Hava direnç katsayısı K her ikisi için eşit olduğuna göre, küreler limit hıza ulaştığında limit hızlarının oranı vX / vY kaçtır?",
+      "secenekler": [
+        "1/4",
+        "1/2",
+        "1",
+        "2",
+        "4"
+      ],
+      "dogru": 2,
+      "aciklama": "X'in kesit alanı A = π·{us:r|2}, Y'nin kesit alanı ise 4A = π·{us:(2r)|2} = 4π·{us:r|2}'dir. Limit hızda K·A·{us:vX|2} = m·g ve K·(4A)·{us:vY|2} = 4m·g olduğundan {us:vX|2} = {us:vY|2} ve vX / vY = 1 olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kütleleri sırasıyla m ve 3m, en büyük dik kesit alanları A ve 2A olan K ve L cisimleri hava ortamında yeterince yüksekten serbest bırakılıyor. Cisimler limit hıza ulaştığı anda kendilerine etki eden hava direnç kuvvetlerinin oranı FdK / FdL kaçtır?",
+      "secenekler": [
+        "1/6",
+        "2/3",
+        "3/2",
+        "1/3",
+        "1/2"
+      ],
+      "dogru": 3,
+      "aciklama": "Limit hıza ulaşmış her cisme etki eden hava direnç kuvveti doğrudan cismin kendi ağırlığına eşittir (Fd = G = m·g). Bu nedenle FdK / FdL = (m·g) / (3m·g) = 1/3 olur."
+    },
+    {
+      "tur": "dy",
+      "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Akışkan içinde hareket eden bir cisme etki eden direnç kuvveti cismin hız vektörüne zıt yöndedir.",
+          "dogru": true
+        },
+        {
+          "metin": "Hava ortamında serbest bırakılan bir cismin hareketin başladığı t = 0 anındaki ivmesi yer çekimi ivmesine (g) eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir cisim limit hıza ulaştığında cisme etki eden net kuvvet sıfır olur ancak ivmesi artmaya devam eder.",
+          "dogru": false
+        },
+        {
+          "metin": "Düşey aşağı doğru limit hızından daha büyük bir ilk hızla atılan cisme etki eden hava direnç kuvveti başlangıçta ağırlığından büyüktür.",
+          "dogru": true
+        },
+        {
+          "metin": "Paraşütçü paraşütünü açtığında hareket doğrultusuna dik kesit alanı büyüdüğü için limit hızı da artar.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "yonerge": "Aşağıdaki limit hız ve akışkan direnci kavramlarını uygun açıklamalarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Hava Direnç Kuvveti (Fd)",
+          "Hava ortamında hareket eden cisme hareket yönüne zıt etki eden ve K·A·v² ile hesaplanan kuvvet"
+        ],
+        [
+          "En Büyük Dik Kesit Alanı (A)",
+          "Cismin hareket doğrultusuna dik olan en geniş kesitinin yüzey alanı"
+        ],
+        [
+          "Limit Hız (vL)",
+          "Hava direnç kuvvetinin cismin ağırlığını dengelediği anda ulaşılan sabit düşüş hızı"
+        ],
+        [
+          "Başlangıç İvmesi (t = 0)",
+          "Hava ortamında serbest düşmeye bırakılan cismin hızı sıfırken sahip olduğu g çekim ivmesi"
+        ],
+        [
+          "Aerodinamik Şekil",
+          "Hava direnç katsayısını (K) küçültmek amacıyla araçların akışkanla uyumlu tasarlanan formu"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun fiziksel kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Hava ortamında serbest düşmeye bırakılan bir cisim, limit hıza ulaşıncaya kadar ___ ivmeyle hızlanan hareket yapar.",
+          "cevap": "azalan"
+        },
+        {
+          "metin": "Bir cisim limit hıza ulaştığında cisme etki eden hava direnç kuvvetinin büyüklüğü cismin ___ büyüklüğüne eşit olur.",
+          "cevap": "ağırlığının"
+        },
+        {
+          "metin": "Limit hızla hareket eden bir cisme etki eden net kuvvet ve ivme büyüklüğü ___ değerini alır.",
+          "cevap": "sıfır"
+        },
+        {
+          "metin": "Diğer özellikleri aynı olan iki cisimden kütlesi daha büyük olanın limit hızı daha ___ olur.",
+          "cevap": "büyük"
+        },
+        {
+          "metin": "Bir kürenin düşey hareket doğrultusuna dik en büyük kesit alanı kürenin ___ dairesinin alanına (π·r²) eşittir.",
+          "cevap": "ekvator"
+        }
+      ],
+      "fazla": [
+        "artan",
+        "hacminin"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Aynı yükseklikteki bir buluttan düşen eşit kütleli bir yağmur damlası ile açık şemsiye biçimindeki bir yaprağın yere ulaşma hızlarının neden farklı olduğunu limit hız bağıntısı üzerinden açıklayınız.",
+      "ipuclari": [
+        "Kuvvet dengesi: Limit hızda her iki cisme etki eden hava direnç kuvvetinin ağırlıklarına eşit olması (Fd = m·g).",
+        "Değişkenlerin etkisi: vL = kök(m·g / (K·A)) bağıntısında dik kesit alanı (A) ve şekil katsayısının (K) rolü.",
+        "Sonuç karşılaştırması: Kesit alanı küçük ve aerodinamik olan yağmur damlasının limit hızının çok daha büyük olması."
+      ],
+      "cevap": "Hava ortamında düşen bir cismin limit hızı v_L = {kok:m·g / (K·A)} bağıntısıyla bulunur. Eşit kütleli (m) yağmur damlası ve yaprağın ağırlıkları aynı olduğu için limit hıza ulaştıklarında her ikisine etki eden hava direnç kuvveti eşittir (Fd = m·g). Ancak yaprağın hareket doğrultusuna dik kesit alanı (A) ve şekline bağlı direnç katsayısı (K), küresel yağmur damlasına göre çok daha büyüktür. Paydadaki K·A çarpımı büyük olduğu için yaprak çok küçük bir hızda limit hıza ulaşarak yavaşça süzülürken, yağmur damlası daha yüksek bir limit hızla yere iner."
+    }
+  ],
+  "ozet": [
+    "{koyu:Akışkan Direnç Kuvveti:} Hava veya su içinde hareket eden cisme hız vektörüne zıt yönde Fd = K · A · {us:v|2} büyüklüğünde direnç kuvveti etki eder.",
+    "{koyu:Değişkenlerin Anlamı:} K akışkanın yoğunluğuna ve cismin aerodinamik şekline bağlı katsayı, A hareket doğrultusuna dik en büyük kesit alanı, v ise anlık hızdır.",
+    "{koyu:Limit Hız Oluşumu:} Serbest düşen cisim hızlandıkça Fd artar, net kuvvet (G - Fd) ve ivme azalır; Fd = G olduğunda net kuvvet ve ivme sıfırlanır.",
+    "{koyu:Limit Hız Bağıntısı:} Cisim Fd = G anından itibaren v_L = {kok:m·g / (K·A)} büyüklüğündeki sabit limit hızla hareketini sürdürür.",
+    "{koyu:Grafik Yorumu:} İlk hızı v_0 < v_L olan cisim azalan ivmeyle hızlanarak, v_0 > v_L olan cisim ise azalan ivmeyle yavaşlayarak limit hıza ulaşır."
+  ]
+}
