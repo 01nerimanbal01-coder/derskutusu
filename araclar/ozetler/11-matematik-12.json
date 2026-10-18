@@ -1,0 +1,258 @@
+{
+  "ad": "11-matematik-12",
+  "sinif": 11,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 12,
+  "tarih": "7-11 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "Geometrik Şekiller",
+  "konu": "Dışbükey Çokgenlerin ve Özel Dörtgenlerin (Yamuk, Paralelkenar, Eşkenar Dörtgen, Dikdörtgen, Kare, Deltoid) Kenar, Açı, Köşegen, Simetri ve Alan Özellikleri (MAT.11.2.4)",
+  "ciktilar": [
+    "Dışbükey dörtgenlerin genel açı, kenar, köşegen ve alan bağıntılarını üçgenlerin özelliklerinden yararlanarak çıkarır.",
+    "Özel dörtgenlerin (yamuk, paralelkenar, eşkenar dörtgen, dikdörtgen, kare ve deltoid) kenar, açı, köşegen ve simetri özelliklerine ilişkin örüntüleri geneller.",
+    "Özel dörtgenlerin çevre, köşegen ve alan bağıntılarını gerçek yaşam ve geometri problemlerine uyarlayarak değerlendirir."
+  ],
+  "giris": "Kenar sayısı {koyu:n = 4} olan dışbükey çokgenlere {koyu:dışbükey dörtgen} adı verilir ve iç açıları toplamı ile dış açıları toplamı {koyu:360°}'dir. Dörtgenler ailesi; kenarlarının paralellik, eşitlik ve açılarının diklik durumuna göre {koyu:yamuk, paralelkenar, eşkenar dörtgen, dikdörtgen, kare ve deltoid} gibi özel sınıflara ayrılır. Üçgenlerdeki eşlik, benzerlik ve alan bağıntıları tüm bu özel dörtgenlerin özelliklerini türetmenin anahtarıdır.",
+  "bolumler": [
+    {
+      "baslik": "Genel Dörtgenler ve Yamuğun Özellikleri",
+      "metin": [
+        "Herhangi bir {koyu:ABCD} dışbükey dörtgeninde iç açılar toplamı {koyu:(4 - 2) · 180° = 360°} ve dış açılar toplamı {koyu:360°}'dir. Köşegenleri {koyu:[AC]} ve {koyu:[BD]} birbirini {koyu:α} açısıyla kesiyorsa dörtgenin alanı {koyu:Alan(ABCD) = {kesir:1|2} · {uzunluk:AC} · {uzunluk:BD} · sin(α)} bağıntısıyla hesaplanır. Köşegenleri birbirine dik ({koyu:α = 90°}) olan dörtgenlerde karşılıklı kenarların kareleri toplamı birbirine eşittir ({koyu:a{us:2| } + c{us:2| } = b{us:2| } + d{us:2| }}) ve alan köşegenler çarpımının yarısıdır ({koyu:{kesir:{uzunluk:AC} · {uzunluk:BD}|2}}).",
+        "En az iki karşıt kenarı birbirine paralel olan dörtgene {koyu:yamuk} ({koyu:[AB] // [DC]}) denir. Paralel olmayan yan kenarlara komşu olan alt ve üst açılar bütünlerdir ({koyu:m(A) + m(D) = 180°} ve {koyu:m(B) + m(C) = 180°}). Yan kenarların orta noktalarını birleştiren doğru parçasına {koyu:orta taban (e)} denir ve uzunluğu alt taban ({koyu:a}) ile üst tabanın ({koyu:c}) aritmetik ortalamasına eşittir: {koyu:e = {kesir:a + c|2}}. Yüksekliği {koyu:h} olan yamuğun alanı ise {koyu:Alan = {kesir:(a + c) · h|2} = e · h} formülüyle bulunur.",
+        "Paralel olmayan yan kenar uzunlukları eşit olan yamuğa {koyu:ikizkenar yamuk} ({koyu:{uzunluk:AD} = {uzunluk:BC}}) denir. İkizkenar yamukta taban açıları birbirine eşittir, köşegen uzunlukları birbirine eşittir ({koyu:{uzunluk:AC} = {uzunluk:BD}}) ve tabanların orta noktalarından geçen doğru yamuğun {koyu:1 adet simetri eksenini} oluşturur. Yan kenarlarından biri tabanlara dik olan yamuğa ise {koyu:dik yamuk} adı verilir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 240\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"240\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">GENEL DÖRTGEN VE YAMUK ÖZELLİKLERİ</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">DİK KÖŞEGENLİ DÖRTGEN (AC ⊥ BD)</text>\n  <polygon points=\"70,150 160,80 260,145 155,195\" fill=\"#ffffff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/>\n  <line x1=\"70\" y1=\"150\" x2=\"260\" y2=\"145\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"4,2\"/>\n  <line x1=\"160\" y1=\"80\" x2=\"155\" y2=\"195\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"4,2\"/>\n  <text x=\"105\" y=\"108\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e40af\">a</text>\n  <text x=\"218\" y=\"106\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e40af\">b</text>\n  <text x=\"215\" y=\"182\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e40af\">c</text>\n  <text x=\"102\" y=\"184\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e40af\">d</text>\n  <text x=\"180\" y=\"212\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e40af\">a² + c² = b² + d²  |  Alan = ({uzunluk:AC} · {uzunluk:BD}) / 2</text>\n\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">YAMUKTA ORTA TABAN VE ALAN ([AB] // [DC])</text>\n  <polygon points=\"400,175 640,175 590,95 450,95\" fill=\"#ffffff\" stroke=\"#b45309\" stroke-width=\"2\"/>\n  <line x1=\"425\" y1=\"135\" x2=\"615\" y2=\"135\" stroke=\"#16a34a\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/>\n  <line x1=\"450\" y1=\"95\" x2=\"450\" y2=\"175\" stroke=\"#dc2626\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"90\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#92400e\">Üst Taban (c)</text>\n  <text x=\"520\" y=\"130\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#15803d\">Orta Taban: e = (a + c) / 2</text>\n  <text x=\"520\" y=\"190\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#92400e\">Alt Taban (a)</text>\n  <text x=\"462\" y=\"158\" font-size=\"10\" font-weight=\"bold\" fill=\"#dc2626\">h</text>\n  <text x=\"520\" y=\"212\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#b45309\">Alan = ((a + c) / 2) · h = e · h</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Orta Noktalar Dörtgeni (Varignon Teoremi)",
+          "metin": "Herhangi bir dışbükey dörtgenin ardışık kenarlarının orta noktaları birleştirildiğinde oluşan dörtgen daima bir paralelkenardır; çevresi köşegenler toplamına, alanı ise dörtgenin alanının yarısına eşittir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Yamukta Köşegenlerin Orta Tabanı Kesmesi",
+          "metin": "Yamukta köşegenlerin orta taban üzerinde ayırdığı küçük parçanın uzunluğu alt ve üst taban farkının yarısına eşittir: {uzunluk:KL} = (a - c) / 2."
+        }
+      ]
+    },
+    {
+      "baslik": "Paralelkenar ve Eşkenar Dörtgenin Özellikleri",
+      "metin": [
+        "Karşılıklı kenar çiftleri birbirine paralel ve eşit uzunlukta olan dörtgene {koyu:paralelkenar} denir. Paralelkenarda karşılıklı açılar birbirine eşit, ardışık açılar ise bütünlerdir ({koyu:180°}). Köşegenler birbirini {koyu:ortalar} ({koyu:{uzunluk:AO} = {uzunluk:OC}} ve {koyu:{uzunluk:BO} = {uzunluk:OD}}), ancak köşegen uzunlukları genel paralelkenarda eşit değildir ve açıortay olmazlar. Paralelkenarın alanı bir kenar ile o kenara ait yüksekliğin çarpımına eşittir ({koyu:Alan = a · h{us:a| } = b · h{us:b| }}) ve her bir köşegen paralelkenarı iki eş üçgene, iki köşegen ise {koyu:alanları birbirine eşit dört üçgene} ayırır. Genel paralelkenarın doğruya göre (eksenel) simetrisi yoktur, yalnız köşegen kesim noktasına göre dönme (merkezî) simetrisi vardır.",
+        "Dört kenar uzunluğu da birbirine eşit olan paralelkenara {koyu:eşkenar dörtgen} ({koyu:a = b = c = d}) adı verilir. Eşkenar dörtgen paralelkenarın bütün özelliklerini taşır; buna ek olarak {koyu:köşegenleri birbirini dik ortalar (AC ⊥ BD)} ve {koyu:köşegenler geçtikleri köşelerin iç açıortayıdır}.",
+        "Eşkenar dörtgenin alanı taban çarpı yükseklik ({koyu:Alan = a · h}) ile bulunabildiği gibi, köşegenleri dik kesiştiği için {koyu:köşegenler çarpımının yarısı} ({koyu:Alan = {kesir:{uzunluk:AC} · {uzunluk:BD}|2}}) bağıntısıyla da hesaplanır. Eşkenar dörtgende köşegen doğruları aynı zamanda şeklin {koyu:2 adet simetri eksenidir}."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 240\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"240\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">PARALELKENAR VE EŞKENAR DÖRTGEN KARŞILAŞTIRMASI</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#e0e7ff\" stroke=\"#4f46e5\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#3730a3\">PARALELKENAR ÖZELLİKLERİ</text>\n  <polygon points=\"55,170 255,170 295,95 95,95\" fill=\"#ffffff\" stroke=\"#4338ca\" stroke-width=\"2\"/>\n  <line x1=\"55\" y1=\"170\" x2=\"295\" y2=\"95\" stroke=\"#6366f1\" stroke-width=\"1.5\" stroke-dasharray=\"4,2\"/>\n  <line x1=\"95\" y1=\"95\" x2=\"255\" y2=\"170\" stroke=\"#6366f1\" stroke-width=\"1.5\" stroke-dasharray=\"4,2\"/>\n  <text x=\"175\" y=\"118\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#3730a3\">S</text>\n  <text x=\"175\" y=\"156\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#3730a3\">S</text>\n  <text x=\"125\" y=\"136\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#3730a3\">S</text>\n  <text x=\"225\" y=\"136\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#3730a3\">S</text>\n  <text x=\"180\" y=\"192\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Karşılıklı kenarlar ve açılar eşittir; köşegenler ortalanır.</text>\n  <text x=\"180\" y=\"208\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#3730a3\">Alan = a · h_a = b · h_b = 4S (Simetri ekseni: 0)</text>\n\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">EŞKENAR DÖRTGEN (4 KENAR EŞİT)</text>\n  <polygon points=\"520,82 610,130 520,178 430,130\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/>\n  <line x1=\"430\" y1=\"130\" x2=\"610\" y2=\"130\" stroke=\"#dc2626\" stroke-width=\"1.5\"/>\n  <line x1=\"520\" y1=\"82\" x2=\"520\" y2=\"178\" stroke=\"#dc2626\" stroke-width=\"1.5\"/>\n  <rect x=\"520\" y=\"122\" width=\"8\" height=\"8\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.2\"/>\n  <text x=\"520\" y=\"194\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Köşegenler dik ortalanır ve iç açıortaydır.</text>\n  <text x=\"520\" y=\"210\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#166534\">Alan = a · h = ({uzunluk:AC} · {uzunluk:BD}) / 2 (Simetri ekseni: 2)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Paralelkenarda Açıortayların Kesişimi",
+          "metin": "Paralelkenarda ardışık iki açının toplamı 180° olduğundan, ardışık iki köşeye ait iç açıortaylar birbirini 90° (dik) açıyla keser."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Eşkenar Dörtgenin Simetri Eksenleri",
+          "metin": "Eşkenar dörtgenin karşılıklı köşelerini birleştiren iki köşegen doğrusu şeklin simetri eksenleridir (toplam 2 simetri ekseni vardır)."
+        }
+      ]
+    },
+    {
+      "baslik": "Dikdörtgen, Kare ve Deltoidin Özellikleri",
+      "metin": [
+        "Bütün iç açıları {koyu:90°} olan paralelkenara {koyu:dikdörtgen} denir. Kısa kenarı {koyu:b}, uzun kenarı {koyu:a} olan dikdörtgenin çevresi {koyu:2(a + b)}, alanı {koyu:Alan = a · b} ve Pisagor teoreminden köşegen uzunlukları {koyu:{uzunluk:AC} = {uzunluk:BD} = {kok:a{us:2| } + b{us:2| }}} olur. Dikdörtgende {koyu:köşegen uzunlukları birbirine eşittir ve birbirini ortalar}, ancak köşegenler dik kesişmez ve açıortay değildir. Karşılıklı kenarların orta dikmeleri dikdörtgenin {koyu:2 adet simetri eksenini} oluşturur.",
+        "Hem dört kenar uzunluğu birbirine eşit hem de bütün iç açıları {koyu:90°} olan düzgün dörtgene {koyu:kare} denir (kare aynı zamanda hem özel bir dikdörtgen hem de özel bir eşkenar dörtgendir). Bir kenarı {koyu:a} olan karenin çevresi {koyu:4a}, alanı {koyu:Alan = a{us:2| } = {kesir:e{us:2| }|2}} ve köşegen uzunluğu {koyu:e = a{kok:2}} olur. Karede {koyu:köşegenler eşit uzunluktadır, birbirini dik ortalar ve köşelerdeki 90°'lik açıları 45°-45° olarak ikiye böler}. Karenin (2 köşegen + 2 kenar orta dikmesi olmak üzere) {koyu:4 adet simetri ekseni} vardır.",
+        "Tabanları ortak iki farklı ikizkenar üçgenin tabanlarının çakıştırılmasıyla oluşan dörtgene ise {koyu:deltoid} denir. Deltoidde ardışık ikişer kenar birbirine eşittir ({koyu:{uzunluk:AB} = {uzunluk:AD}} ve {koyu:{uzunluk:CB} = {uzunluk:CD}}), {koyu:köşegenler birbirine diktir (AC ⊥ BD)}, tepe noktalarını birleştiren esas köşegen hem {koyu:açıortaydır}, hem diğer köşegeni {koyu:iki eş parçaya böler}, hem de şeklin {koyu:1 adet simetri eksenini} oluşturur. Alanı {koyu:{kesir:{uzunluk:AC} · {uzunluk:BD}|2}} formülüyle bulunur."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 230\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"230\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">DİKDÖRTGEN, KARE VE DELTOİDİN TEMEL ÖZELLİKLERİ</text>\n  <rect x=\"20\" y=\"48\" width=\"210\" height=\"162\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.8\"/>\n  <text x=\"125\" y=\"70\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e40af\">1. DİKDÖRTGEN</text>\n  <text x=\"125\" y=\"94\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Tüm açılar 90°, karşıt kenarlar eşit.</text>\n  <text x=\"125\" y=\"114\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Köşegenler eşit ve ortalanır:</text>\n  <text x=\"125\" y=\"130\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#1d4ed8\">{uzunluk:AC} = {uzunluk:BD} = kök(a² + b²)</text>\n  <text x=\"125\" y=\"150\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Alan = a · b | Çevre = 2(a + b)</text>\n  <text x=\"125\" y=\"170\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#1e40af\">• Simetri Ekseni: 2 (Kenar ortalar)</text>\n\n  <rect x=\"245\" y=\"48\" width=\"210\" height=\"162\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.8\"/>\n  <text x=\"350\" y=\"70\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#92400e\">2. KARE (Düzgün Dörtgen)</text>\n  <text x=\"350\" y=\"94\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• 4 kenar eşit, tüm açılar 90°.</text>\n  <text x=\"350\" y=\"114\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Köşegenler eşit, dik ortalanır</text>\n  <text x=\"350\" y=\"130\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#b45309\">ve 45°-45° açıortaydır: e = a·kök(2)</text>\n  <text x=\"350\" y=\"150\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Alan = a² = e² / 2 | Çevre = 4a</text>\n  <text x=\"350\" y=\"170\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#92400e\">• Simetri Ekseni: 4 (2 köşegen+2 orta)</text>\n\n  <rect x=\"470\" y=\"48\" width=\"210\" height=\"162\" rx=\"10\" fill=\"#fae8ff\" stroke=\"#9333ea\" stroke-width=\"1.8\"/>\n  <text x=\"575\" y=\"70\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#6b21a8\">3. DELTOİD</text>\n  <text x=\"575\" y=\"94\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Tabanları ortak iki ikizkenar üçgen.</text>\n  <text x=\"575\" y=\"114\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Köşegenler dik kesişir (AC ⊥ BD).</text>\n  <text x=\"575\" y=\"132\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Esas köşegen açıortaydır ve</text>\n  <text x=\"575\" y=\"148\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">diğer köşegeni iki eş parçaya böler.</text>\n  <text x=\"575\" y=\"170\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#6b21a8\">• Alan = ({uzunluk:AC}·{uzunluk:BD})/2 | Simetri: 1</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikdörtgen İçinde/Dışında Alınan P Noktası",
+          "metin": "Bir ABCD dikdörtgeninin düzleminde alınan herhangi bir P noktası için karşılıklı köşelere olan uzaklıkların kareleri toplamı birbirine eşittir: {uzunluk:PA}² + {uzunluk:PC}² = {uzunluk:PB}² + {uzunluk:PD}²."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Köşegenleri Dik Kesişen Dörtgenler",
+          "metin": "Özel dörtgenler içinde köşegenleri her durumda birbirine dik kesişen üç dörtgen vardır: Eşkenar dörtgen, Kare ve Deltoid."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Köşegenleri birbirine dik kesişen bir ABCD dışbükey dörtgeninde {uzunluk:AB} = 5 cm, {uzunluk:BC} = 8 cm ve {uzunluk:CD} = 7 cm olduğuna göre {uzunluk:DA} uzunluğu kaç cm'dir? Köşegen uzunlukları {uzunluk:AC} = 10 cm ve {uzunluk:BD} = 12 cm ise bu dörtgenin alanı kaç cm{us:2| }'dir?",
+      "cevap": "Köşegenleri dik kesişen dörtgenlerde karşılıklı kenarların kareleri toplamı birbirine eşittir: {uzunluk:AB}^2 + {uzunluk:CD}^2 = {uzunluk:BC}^2 + {uzunluk:DA}^2 -> 5^2 + 7^2 = 8^2 + {uzunluk:DA}^2 -> 25 + 49 = 64 + {uzunluk:DA}^2 -> 74 - 64 = 10 -> {uzunluk:DA} = {kok:10} cm bulunur. Alanı ise köşegenler dik olduğu için Alan = ({uzunluk:AC} · {uzunluk:BD}) / 2 = (10 · 12) / 2 = 60 cm^2 olur."
+    },
+    {
+      "soru": "Alt tabanı a = 14 cm, üst tabanı c = 6 cm ve yüksekliği h = 8 cm olan bir yamuğun orta taban uzunluğunu ve alanını hesaplayınız.",
+      "cevap": "Yamuğun orta taban uzunluğu alt ve üst tabanın aritmetik ortalamasıdır: e = (a + c) / 2 = (14 + 6) / 2 = 10 cm bulunur. Yamuğun alanı ise Alan = e · h = 10 · 8 = 80 cm^2 olarak elde edilir."
+    },
+    {
+      "soru": "Bir eşkenar dörtgenin köşegen uzunlukları 12 cm ve 16 cm'dir. Bu eşkenar dörtgenin çevresini, alanını ve bir kenarına ait yüksekliğini (h) bulunuz.",
+      "cevap": "Eşkenar dörtgenin köşegenleri birbirini dik ortaladığından köşegen yarıları 6 cm ve 8 cm olan dört adet dik üçgen oluşur. 6-8-10 özel dik üçgeninden bir kenar uzunluğu a = 10 cm ve çevresi 4 · 10 = 40 cm bulunur. Alanı köşegenler çarpımının yarısından Alan = (12 · 16) / 2 = 96 cm^2'dir. Aynı alan a · h = 96 bağıntısına eşit olduğundan 10 · h = 96 -> h = 9,6 cm bulunur."
+    },
+    {
+      "soru": "Kenar uzunlukları 6 cm ve 8 cm olan bir ABCD dikdörtgeninde köşegen uzunluğunu, çevresini ve alanını hesaplayınız.",
+      "cevap": "Dikdörtgenin çevresi Ç = 2 · (6 + 8) = 28 cm, alanı ise Alan = 6 · 8 = 48 cm^2'dir. Köşegen uzunluğu dik üçgende Pisagor teoremiyle (6-8-10 üçgeni) {uzunluk:AC} = {uzunluk:BD} = {kok:6{us:2| } + 8{us:2| }} = {kok:100} = 10 cm olarak bulunur."
+    },
+    {
+      "soru": "Köşegen uzunluğu 8{kok:2} cm olan bir karenin bir kenar uzunluğunu, çevresini ve alanını hesaplayınız.",
+      "cevap": "Bir kenarı a olan karenin köşegen uzunluğu e = a{kok:2} olduğundan a{kok:2} = 8{kok:2} -> a = 8 cm bulunur. Karenin çevresi 4a = 4 · 8 = 32 cm ve alanı Alan = a^2 = 8^2 = 64 cm^2 olur."
+    },
+    {
+      "soru": "Özel dörtgenleri (ikizkenar yamuk, paralelkenar, eşkenar dörtgen, dikdörtgen, kare ve deltoid) doğruya göre simetri ekseni sayılarına göre sınıflandırınız.",
+      "cevap": "Genel paralelkenarın doğruya göre simetri ekseni yoktur (0 adet). İkizkenar yamuk ve deltoidin 1'er adet simetri ekseni vardır. Eşkenar dörtgenin (köşegenleri) ve dikdörtgenin (kenar orta dikmeleri) 2'şer adet simetri ekseni vardır. Düzgün dörtgen olan karenin ise (2 köşegen + 2 kenar orta dikmesi) 4 adet simetri ekseni bulunur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Alt taban uzunluğu 15 cm, üst taban uzunluğu 7 cm ve alanı 88 cm{us:2| } olan bir yamuğun orta taban uzunluğu (e) ve yüksekliği (h) aşağıdakilerden hangisinde doğru verilmiştir?",
+      "secenekler": [
+        "e = 10 cm, h = 8,8 cm",
+        "e = 11 cm, h = 8 cm",
+        "e = 11 cm, h = 16 cm",
+        "e = 12 cm, h = 8 cm",
+        "e = 22 cm, h = 4 cm"
+      ],
+      "dogru": 1,
+      "aciklama": "Orta taban e = (15 + 7) / 2 = 11 cm'dir. Alan = e · h -> 88 = 11 · h -> h = 8 cm bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir eşkenar dörtgenin çevresi 52 cm ve köşegenlerinden birinin uzunluğu 10 cm olduğuna göre bu eşkenar dörtgenin alanı kaç cm{us:2| }'dir?",
+      "secenekler": [
+        "60 cm²",
+        "100 cm²",
+        "120 cm²",
+        "130 cm²",
+        "240 cm²"
+      ],
+      "dogru": 2,
+      "aciklama": "Çevresi 52 cm ise bir kenarı a = 13 cm'dir. Köşegenler dik ortalandığından yarı köşegenlerden biri 10/2 = 5 cm'dir. 5-12-13 dik üçgeninden diğer yarı köşegen 12 cm ve tam köşegen 24 cm olur. Alan = (10 · 24) / 2 = 120 cm²."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki özel dörtgenlerden hangisinde köşegenler hem birbirine eşit uzunluktadır hem de birbirini dik olarak ortalar?",
+      "secenekler": [
+        "Genel paralelkenar",
+        "İkizkenar yamuk",
+        "Eşkenar dörtgen",
+        "Kare",
+        "Deltoid"
+      ],
+      "dogru": 3,
+      "aciklama": "Dikdörtgen ve ikizkenar yamukta köşegenler eşittir ama dik değildir; eşkenar dörtgen ve deltoidde diktir ama eşit değildir; karede ise hem eşit hem diktir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir ABCD dikdörtgeninin içinde alınan bir P noktası için {uzunluk:PA} = 4 cm, {uzunluk:PC} = 7 cm ve {uzunluk:PB} = 5 cm olduğuna göre {uzunluk:PD} uzunluğu kaç cm'dir?",
+      "secenekler": [
+        "2{kok:10} cm",
+        "6 cm",
+        "3{kok:5} cm",
+        "4{kok:2} cm",
+        "2{kok:6} cm"
+      ],
+      "dogru": 0,
+      "aciklama": "{uzunluk:PA}² + {uzunluk:PC}² = {uzunluk:PB}² + {uzunluk:PD}² bağıntısından 4² + 7² = 5² + {uzunluk:PD}² -> 16 + 49 = 25 + {uzunluk:PD}² -> {uzunluk:PD}² = 40 -> {uzunluk:PD} = {kok:40} = 2{kok:10} cm olur."
+    },
+    {
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "metin": "Herhangi bir dışbükey dörtgenin kenar orta noktalarının birleştirilmesiyle oluşan dörtgen bir paralelkenardır.",
+          "dogru": true
+        },
+        {
+          "metin": "Eşkenar dörtgende köşegenler birbirini dik ortalar ve geçtikleri köşelerin iç açıortayıdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Genel bir dikdörtgende köşegenler birbirini dik keser ve iç açıları 45°-45° olarak ikiye ayırır.",
+          "dogru": false
+        },
+        {
+          "metin": "Deltoid, tabanları ortak iki ikizkenar üçgenin birleşiminden oluşur ve köşegenleri birbirine diktir.",
+          "dogru": true
+        },
+        {
+          "metin": "Yamuğun orta taban uzunluğu alt taban ile üst taban uzunluklarının farkının yarısına eşittir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "ciftler": [
+        [
+          "Yamuk",
+          "En az iki karşıt kenarı birbirine paralel olan ve alanı orta taban çarpı yükseklikle bulunan dörtgen"
+        ],
+        [
+          "Paralelkenar",
+          "Karşılıklı kenarları paralel ve eşit olan, köşegenleri birbirini ortalayan dörtgen"
+        ],
+        [
+          "Eşkenar Dörtgen",
+          "Dört kenarı eşit olan, köşegenleri dik ortalanan ve açıortay olan paralelkenar"
+        ],
+        [
+          "Dikdörtgen",
+          "Tüm iç açıları 90° olan ve köşegen uzunlukları birbirine eşit olan paralelkenar"
+        ],
+        [
+          "Deltoid",
+          "Tabanları çakışık iki ikizkenar üçgenden oluşan ve 1 simetri ekseni bulunan dörtgen"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "cumleler": [
+        {
+          "metin": "Köşegenleri birbirine dik olan bir dörtgenin alanı, köşegen uzunluklarının çarpımının ___ eşittir.",
+          "cevap": "yarısına"
+        },
+        {
+          "metin": "Bir yamukta paralel olmayan yan kenarların orta noktalarını birleştiren doğru parçasına ___ taban denir.",
+          "cevap": "orta"
+        },
+        {
+          "metin": "Paralelkenarda ardışık iki köşeye ait iç açıortaylar birbirini ___ derece açıyla keser.",
+          "cevap": "doksan"
+        },
+        {
+          "metin": "Düzgün bir dörtgen olan karenin köşegenleri ve kenar orta dikmeleri olmak üzere toplam ___ adet simetri ekseni vardır.",
+          "cevap": "dört"
+        },
+        {
+          "metin": "Bir kenar uzunluğu a olan karenin köşegen uzunluğu a ile ___ iki sayısının çarpımına eşittir.",
+          "cevap": "kök"
+        }
+      ],
+      "fazla": [
+        "katına",
+        "altı"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Paralelkenar, eşkenar dörtgen, dikdörtgen ve kare arasındaki kapsama ilişkisini 'kenar, açı, köşegen ve simetri ekseni' özellikleri açısından karşılaştırarak açıklayınız.",
+      "cevap": "Paralelkenar; karşılıklı kenarları paralel ve eşit, karşılıklı açıları eşit ve köşegenleri birbirini ortalayan temel ailedir (eksenel simetrisi 0'dır). Eşkenar dörtgen, paralelkenarın dört kenarı eşit hâlidir; buna bağlı olarak köşegenleri dik kesişir, açıortay olur ve 2 simetri ekseni kazanır. Dikdörtgen ise paralelkenarın açıları 90° olan hâlidir; köşegen uzunlukları eşitlenir ve kenar orta dikmelerinden oluşan 2 simetri ekseni kazanır. Kare ise hem eşkenar dörtgenin hem de dikdörtgenin tüm özelliklerini birleştirir (4 kenar eşit, açılar 90°, köşegenler eşit, dik ve açıortay) ve 4 simetri eksenine sahiptir.",
+      "ipuclari": [
+        "Paralelkenarın temel özelliklerini (karşıt kenar/açı eşitliği ve köşegen ortalanması) belirtiniz.",
+        "Eşkenar dörtgenin (dik ve açıortay köşegen) ve dikdörtgenin (90° açı ve eşit köşegen) farkını açıklayınız.",
+        "Karenin her iki grubun özelliklerini birleştirdiğini ve 4 simetri ekseni olduğunu vurgulayınız."
+      ]
+    }
+  ],
+  "ozet": [
+    "Dışbükey dörtgenlerde iç ve dış açılar toplamı 360°'dir; köşegenleri dik kesişen dörtgenlerde a² + c² = b² + d² ve Alan = ({uzunluk:AC}·{uzunluk:BD})/2 bağıntıları geçerlidir.",
+    "Yamukta orta taban e = (a + c) / 2 ve Alan = e · h formülüyle bulunur; ikizkenar yamukta köşegenler eşittir ve 1 simetri ekseni vardır.",
+    "Paralelkenarda karşılıklı kenar ve açılar eşittir, köşegenler birbirini ortalar ve alanı 4 eş parçaya böler.",
+    "Eşkenar dörtgende 4 kenar eşittir, köşegenler dik ortalanır, açıortaydır ve 2 simetri ekseni bulunur; dikdörtgende ise açılar 90°'dir ve köşegenler eşittir.",
+    "Kare, dikdörtgen ve eşkenar dörtgenin tüm özelliklerini taşır (4 simetri ekseni); deltoid ise tabanları ortak iki ikizkenar üçgenden oluşur ve köşegenleri diktir."
+  ]
+}

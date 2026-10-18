@@ -1,0 +1,259 @@
+{
+  "ad": "10-matematik-12",
+  "sinif": 10,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 12,
+  "tarih": "7-11 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "Sayılar",
+  "konu": "En Büyük Ortak Bölen (EBOB) ve En Küçük Ortak Kat (EKOK) Özellikleri, Periyodik Tekrar Eden Durumlar ve Gerçek Yaşam Problemleri (10.3.2)",
+  "ciktilar": [
+    "Birden çok doğal sayının ortak bölenleriyle en büyüğü (EBOB) ve ortak katlarıyla en küçüğü (EKOK) arasındaki matematiksel önermeleri geneller ve doğrular.",
+    "EBOB ve EKOK önermelerini parçalama, eşit aralıklarla dikim, kare/küp oluşturma ve kalanlı bölme içeren gerçek yaşam problemlerinde uygular.",
+    "Periyodik olarak tekrar eden durumları (nöbet, zil, saat ve takvim problemlerini) EKOK ve modüler örüntüler yardımıyla muhakeme eder."
+  ],
+  "giris": "Doğal sayıların ortak bölenlerinin en büyüğü ({koyu:EBOB}) ile ortak katlarının en küçüğü ({koyu:EKOK}), soyut sayı teorisini günlük yaşamın planlama ve optimizasyon problemlerine bağlayan en güçlü araçlardandır. Bir fabrikada farklı boyutlardaki malzemelerin hiç artmayacak şekilde eş parçalara ayrılması {koyu:EBOB} muhakemesini gerektirirken; farklı periyotlarla çalışan makinelerin, nöbet tutan doktorların veya hareket eden araçların ne zaman tekrar birlikte harekete geçeceğini hesaplamak {koyu:EKOK} ve periyodik tekrar muhakemesine dayanır.",
+  "bolumler": [
+    {
+      "baslik": "EBOB ve EKOK Arasındaki Matematiksel Önermeler ve Doğrulamalar",
+      "metin": [
+        "{koyu:Temel Çarpım ve Sıralama Önermeleri:} İki pozitif tam sayının ({koyu:a} ve {koyu:b}) çarpımı, bu iki sayının EBOB'u ile EKOK'unun çarpımına eşittir: {koyu:a · b = EBOB(a, b) · EKOK(a, b)}. Ayrıca {koyu:a ≤ b} olmak üzere iki doğal sayının EBOB'u küçük sayıdan büyük olamaz, EKOK'u ise büyük sayıdan küçük olamaz: {koyu:1 ≤ EBOB(a, b) ≤ a ≤ b ≤ EKOK(a, b) ≤ a · b}. Eğer iki sayı birbirine eşitse ({koyu:a = b}), {koyu:EBOB(a, a) = EKOK(a, a) = a} olur.",
+        "{koyu:Birbirinin Katı Olan Sayılar ve Aralarında Asal Sayılar:} Pozitif tam sayılarda {koyu:b} sayısı {koyu:a} sayısının bir tam katı ise ({koyu:b = k · a}), küçük sayı ortak bölenlerin en büyüğü, büyük sayı ise ortak katların en küçüğü olur: {koyu:EBOB(a, b) = a} ve {koyu:EKOK(a, b) = b} (örneğin EBOB(12, 36) = 12 ve EKOK(12, 36) = 36). Eğer {koyu:a} ve {koyu:b} sayılarının 1'den başka pozitif ortak böleni yoksa bu sayılara {koyu:aralarında asal sayılar} denir; bu durumda {koyu:EBOB(a, b) = 1} ve {koyu:EKOK(a, b) = a · b} eşitlikleri sağlanır. Ardışık doğal sayılar (n ile n+1) ve ardışık tek doğal sayılar (2n-1 ile 2n+1) daima aralarında asaldır.",
+        "{koyu:Ortak Çarpan Parantezine Alma Özelliği:} Herhangi bir {koyu:k} pozitif tam sayısı için {koyu:EBOB(k·a, k·b) = k · EBOB(a, b)} ve {koyu:EKOK(k·a, k·b) = k · EKOK(a, b)} önermesi geçerlidir. Buradan hareketle, {koyu:EBOB(a, b) = d} ise aralarında asal öyle iki {koyu:x} ve {koyu:y} pozitif tam sayısı ({koyu:EBOB(x, y) = 1}) vardır ki {koyu:a = d · x}, {koyu:b = d · y} ve {koyu:EKOK(a, b) = d · x · y} şeklinde modellenir."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "x ve y Aralarında Asal İken Kesir Sadeleştirme",
+          "metin": "{koyu:x} ile {koyu:y} aralarında asal pozitif tam sayılar olmak üzere {koyu:{kesir:x|y} = {kesir:a|b}} eşitliği verilirse, sağdaki kesir en sade hâline getirildikten sonra doğrudan pay paya, payda paydaya eşitlenir!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Toplamları Verilen İki Sayının EKOK'unu En Büyük veya En Küçük Yapma",
+          "metin": "Farklı iki doğal sayının toplamı sabitken EKOK'larının {koyu:en büyük} olması için sayılar birbirine en yakın ve {koyu:aralarında asal} seçilir; EKOK'larının {koyu:en küçük} olması için ise biri diğerinin tam katı seçilir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"25\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">EBOB VE EKOK ARASINDAKİ TEMEL MATEMATİKSEL ÖZELLİKLER (10.3.2)</text>\n  <rect x=\"20\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"64\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">GENEL ÖNERMELER VE EŞİTSİZLİKLER</text>\n  <text x=\"32\" y=\"88\" font-size=\"10.8\" fill=\"#1e3a8a\">• İki pozitif tam sayının çarpımı:</text>\n  <text x=\"42\" y=\"106\" font-size=\"11.2\" font-weight=\"bold\" fill=\"#1d4ed8\">a · b = EBOB(a, b) · EKOK(a, b)</text>\n  <text x=\"32\" y=\"128\" font-size=\"10.8\" fill=\"#1e3a8a\">• a &lt; b ise sıralama bağıntısı:</text>\n  <text x=\"42\" y=\"146\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">1 ≤ EBOB(a, b) ≤ a &lt; b ≤ EKOK(a, b) ≤ a · b</text>\n  <text x=\"32\" y=\"168\" font-size=\"10.8\" fill=\"#1e3a8a\">• a sayısı b'nin tam böleni ise (b = k · a):</text>\n  <text x=\"42\" y=\"186\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">EBOB(a, b) = a   ve   EKOK(a, b) = b</text>\n  <rect x=\"360\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"64\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">ARALARINDA ASAL SAYILAR (EBOB = 1)</text>\n  <text x=\"372\" y=\"88\" font-size=\"10.8\" fill=\"#14532d\">• 1'den başka pozitif ortak böleni olmayan sayılara</text>\n  <text x=\"372\" y=\"106\" font-size=\"10.8\" font-weight=\"bold\" fill=\"#15803d\">  aralarında asal sayılar denir.</text>\n  <text x=\"372\" y=\"128\" font-size=\"11.2\" font-weight=\"bold\" fill=\"#15803d\">• EBOB(a, b) = 1   ve   EKOK(a, b) = a · b</text>\n  <text x=\"372\" y=\"150\" font-size=\"10.6\" fill=\"#14532d\">• Ardışık iki doğal sayı daima aralarında asaldır.</text>\n  <text x=\"372\" y=\"170\" font-size=\"10.6\" fill=\"#14532d\">• Ardışık iki tek sayı daima aralarında asaldır.</text>\n  <text x=\"372\" y=\"190\" font-size=\"10.6\" fill=\"#14532d\">• EBOB(a, b) = d ise a = d·x, b = d·y ve EBOB(x,y) = 1.</text>\n  <rect x=\"20\" y=\"224\" width=\"660\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.3\" font-weight=\"bold\" fill=\"#1e293b\">Dikkat: a · b = EBOB · EKOK eşitliği iki sayı için her zaman geçerlidir; üç veya daha fazla sayı için genellenemez!</text>\n</svg>"
+    },
+    {
+      "baslik": "Gerçek Yaşam Problemlerinde EBOB ve EKOK Modellemesi",
+      "metin": [
+        "{koyu:Bütünden Parçaya Gidilen EBOB Problemleri:} Büyük kütleli, hacimli veya uzunluklu nesnelerin hiç artmayacak şekilde {koyu:en az sayıda eş parçaya} ayrılması sorularında {koyu:EBOB} kullanılır: 1) Farklı çuvallardaki bakliyatların birbirine karıştırılmadan eşit kütleli poşetlere doldurulması ({koyu:Bir poşetin en büyük kütlesi = EBOB}), 2) Farklı boydaki demir çubukların eşit uzunlukta parçalara kesilmesi ({koyu:Bir parçanın en büyük boyu = EBOB}; dikkat: {koyu:k} parça için {koyu:k - 1} kesim yapılır!), 3) Kenarları {koyu:a} ve {koyu:b} olan dikdörtgen tarlanın etrafına köşelere de gelmek şartıyla eşit aralıklarla en az sayıda ağaç dikilmesi ({koyu:İki ağaç arası en büyük mesafe = EBOB(a, b)} ve {koyu:Ağaç sayısı = {kesir:Çevre|EBOB}}), 4) Boyutları {koyu:a, b, c} olan dikdörtgenler prizması şeklindeki deponun içine boşluk kalmadan en az sayıda eş küp yerleştirilmesi ({koyu:Küp sayısı = {kesir:a|EBOB} · {kesir:b|EBOB} · {kesir:c|EBOB}}).",
+        "{koyu:Parçadan Bütüne Gidilen EKOK Problemleri:} Küçük parçaların yan yana veya üst üste birleştirilmesiyle {koyu:en küçük bütünün} elde edilmesi sorularında {koyu:EKOK} kullanılır: 1) Kenarları {koyu:a} ve {koyu:b} olan dikdörtgen kartonlardan en az sayıda kullanılarak en küçük alanlı bir kare oluşturulması ({koyu:Karenin bir kenarı = EKOK(a, b)} ve {koyu:Karton sayısı = {kesir:EKOK|a} · {kesir:EKOK|b}}), 2) Boyutları {koyu:a, b, c} olan tuğlalardan en küçük hacimli içi dolu bir küp yapılması ({koyu:Küpün bir ayrıtı = EKOK(a, b, c)}).",
+        "{koyu:Kalanlı Bölme ve EKOK İlişkisi:} Bir {koyu:A} doğal sayısı {koyu:a, b} ve {koyu:c} sayılarına bölündüğünde her defasında aynı {koyu:r} kalanını veriyorsa ({koyu:r < a, b, c}), {koyu:A - r} sayısı bu üç sayının ortak katıdır: {koyu:A = k · EKOK(a, b, c) + r}. Eğer bölen ile kalan arasındaki fark sabitse (örneğin {koyu:a}'ya bölündüğünde {koyu:a - d}, {koyu:b}'ye bölündüğünde {koyu:b - d} kalanını veriyorsa), eşitliğin her tarafına {koyu:d} eklenerek {koyu:A + d = k · EKOK(a, b)} yani {koyu:A = k · EKOK(a, b) - d} modeli kurulur."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Ağaç Dikme ve Çubuk Kesme Tuzağına Dikkat!",
+          "metin": "• {koyu:Kapalı bir çokgenin} (üçgen, dikdörtgen) çevresine eşit aralıklarla direk dikilirken: {koyu:Direk Sayısı = {kesir:Çevre|EBOB}}.\n• {koyu:Açık (düz) bir yolun} bir kenarına başa ve sona da dikilmek şartıyla direk dikilirken: {koyu:Direk Sayısı = {kesir:Yol Uzunluğu|EBOB} + 1}.\n• Bir çubuğu {koyu:n} parçaya ayırmak için yapılan {koyu:Kesim Sayısı = n - 1}'dir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Boyutları Verilen Küpten Prizma veya Prizmadan Küp Yapma",
+          "metin": "Hacim formülü kullanırken bulduğumuz ayrıtın küpün içine tam sığıp sığmadığını kontrol etmek için doğrudan {koyu:kenarları birbirine bölerek} çarpım yapmalıyız: {koyu:Adet = ({kesir:Büyük Kenar 1|Küçük Kenar 1}) · ({kesir:Büyük Kenar 2|Küçük Kenar 2}) · ({kesir:Büyük Kenar 3|Küçük Kenar 3})}."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"25\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">GERÇEK YAŞAM PROBLEMLERİNDE EBOB VE EKOK SEÇİM REHBERİ</text>\n  <rect x=\"20\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"64\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">BÜYÜKTEN KÜÇÜĞE → EBOB (BÖLME)</text>\n  <text x=\"32\" y=\"88\" font-size=\"10.6\" fill=\"#78350f\">• Çuvallardaki, bidonlardaki ürünleri hiç artmayacak</text>\n  <text x=\"32\" y=\"106\" font-size=\"10.6\" fill=\"#78350f\">  şekilde eşit büyüklükte poşet/şişelere paylaştırma</text>\n  <text x=\"32\" y=\"126\" font-size=\"10.6\" fill=\"#78350f\">• Farklı boydaki çubukları eşit uzunlukta parçalama</text>\n  <text x=\"32\" y=\"146\" font-size=\"10.6\" fill=\"#78350f\">• Tarla veya bahçe etrafına köşelere de gelmek</text>\n  <text x=\"32\" y=\"164\" font-size=\"10.6\" fill=\"#78350f\">  şartıyla eşit aralıklarla ağaç / direk dikme</text>\n  <text x=\"32\" y=\"186\" font-size=\"10.6\" font-weight=\"bold\" fill=\"#92400e\">• Dikdörtgeni eş karelere, prizmayı eş küplere bölme</text>\n  <rect x=\"360\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"64\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">KÜÇÜKTEN BÜYÜĞE → EKOK (BİRLEŞTİRME)</text>\n  <text x=\"372\" y=\"88\" font-size=\"10.6\" fill=\"#581c87\">• Farklı periyotlarla çalan zillerin, kalkan otobüslerin,</text>\n  <text x=\"372\" y=\"106\" font-size=\"10.6\" fill=\"#581c87\">  nöbet tutanların tekrar aynı anda karşılaşması</text>\n  <text x=\"372\" y=\"126\" font-size=\"10.6\" fill=\"#581c87\">• Küçük dikdörtgen fayansları yan yana dizerek en</text>\n  <text x=\"372\" y=\"144\" font-size=\"10.6\" fill=\"#581c87\">  küçük alanı kaplayan kare zemin oluşturma</text>\n  <text x=\"372\" y=\"164\" font-size=\"10.6\" fill=\"#581c87\">• Küçük dikdörtgenler prizması tuğlalardan küp yapma</text>\n  <text x=\"372\" y=\"186\" font-size=\"10.6\" font-weight=\"bold\" fill=\"#6b21a8\">• Cevizleri/çiçekleri üçer, dörder, beşer sayıp kalan bulma</text>\n  <rect x=\"20\" y=\"224\" width=\"660\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.3\" font-weight=\"bold\" fill=\"#1e293b\">Kapalı şekil (tarla/üçgen/dikdörtgen) çevresinde ağaç sayısı = Çevre / EBOB; düz yolda ise (Uzunluk / EBOB) + 1'dir.</text>\n</svg>"
+    },
+    {
+      "baslik": "Periyodik Tekrar Eden Durumlar (Nöbet, Saat ve Gün Problemleri)",
+      "metin": [
+        "{koyu:Ortak Periyot (EKOK) Kavramı:} Biri {koyu:T₁} sürede bir, diğeri {koyu:T₂} sürede bir tekrarlanan iki periyodik olayın aynı anda başladıktan sonra {koyu:tekrar birlikte gerçekleşme periyodu} bu iki sürenin en küçük ortak katıdır: {koyu:T(ortak) = EKOK(T₁, T₂)}. Örneğin biri 6 günde bir, diğeri 8 günde bir nöbet tutan iki hemşire birlikte nöbet tuttuktan sonra {koyu:EKOK(6, 8) = 24 günde bir} tekrar birlikte nöbet tutar.",
+        "{koyu:İlk Nöbetten n. Nöbete Geçen Süre:} Periyodik problemlerde {koyu:'birlikte tuttukları 1. nöbet'} başlangıç anı (0. periyot) olduğundan, {koyu:n. kez birlikte} nöbet tutmaları için başlangıçtan itibaren geçmesi gereken süre {koyu:n · T} değil, {koyu:(n - 1) · T(ortak)} kadardır! (Örneğin 1. nöbetten 5. birlikte nöbete kadar {koyu:5 - 1 = 4} periyot geçer).",
+        "{koyu:Gün ve Saat Hesaplamaları:} Bir olayın başlangıçtan {koyu:X} gün sonra haftanın hangi gününe denk geleceğini bulmak için {koyu:X} sayısı haftanın periyodu olan {koyu:7'ye bölünür}; kalan sayı kadar başlangıç gününden ileriye doğru sayılır (kalan 0 ise aynı gündür). Saat problemlerinde ise toplam geçen saat {koyu:24'e} (veya analog duvar saatinde {koyu:12'ye}) bölünerek kalan saat başlangıç saatine eklenir."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "'Birlikte İlk Nöbetten Sonra n. Nöbet' İfadesine Dikkat!",
+          "metin": "Soruda {koyu:'İlk nöbetlerini Salı günü tuttuklarına göre 4. nöbetlerini hangi gün tutarlar?'} denirse {koyu:4 - 1 = 3} periyot alınır. Ancak {koyu:'İlk kez birlikte nöbet tuttuktan sonra 4. kez birlikte...'} denirse doğrudan {koyu:4} periyot alınır. Soru kökünü dikkatle oku!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Dairesel Pistte Koşucuların Başlangıç Noktasında Karşılaşması",
+          "metin": "Dairesel bir pistte aynı anda aynı noktadan koşmaya başlayan üç koşucunun tam turlarını tamamlama süreleri {koyu:t₁, t₂, t₃} dakika ise, üçünün birden {koyu:başlangıç noktasında} tekrar yan yana gelme süresi {koyu:EKOK(t₁, t₂, t₃)} dakikadır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"25\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">PERİYODİK TEKRAR EDEN DURUMLAR VE KALANLI EKOK MODELLEMESİ</text>\n  <rect x=\"20\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"64\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#065f46\">KALANLI BÖLME VE EKOK GENELLEMESİ</text>\n  <text x=\"32\" y=\"88\" font-size=\"10.8\" font-weight=\"bold\" fill=\"#064e3b\">Durum 1 (Sabit Kalan r):</text>\n  <text x=\"32\" y=\"106\" font-size=\"10.6\" fill=\"#064e3b\">A = a·x + r = b·y + r = c·z + r  (r &lt; a, b, c) ise;</text>\n  <text x=\"32\" y=\"124\" font-size=\"10.8\" font-weight=\"bold\" fill=\"#047857\">→ A - r = EKOK(a, b, c) · k  ⇒  A = EKOK(a,b,c)·k + r</text>\n  <text x=\"32\" y=\"148\" font-size=\"10.8\" font-weight=\"bold\" fill=\"#064e3b\">Durum 2 (Bölen - Kalan Farkı Sabit d):</text>\n  <text x=\"32\" y=\"166\" font-size=\"10.6\" fill=\"#064e3b\">A = a·x + (a - d) = b·y + (b - d) ise her tarafa d eklenir:</text>\n  <text x=\"32\" y=\"186\" font-size=\"10.8\" font-weight=\"bold\" fill=\"#047857\">→ A + d = EKOK(a, b) · k  ⇒  A = EKOK(a, b)·k - d</text>\n  <rect x=\"360\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"64\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#9a3412\">PERİYODİK PROBLEMLER (GÜN / SAAT)</text>\n  <text x=\"372\" y=\"88\" font-size=\"10.6\" fill=\"#7c2d12\">• Bir olay T günde bir tekrarlanıyorsa periyodu T'dir.</text>\n  <text x=\"372\" y=\"108\" font-size=\"10.6\" fill=\"#7c2d12\">• 1. nöbet / karşılaşma başlangıç anıdır (0. periyot)!</text>\n  <text x=\"372\" y=\"128\" font-size=\"10.6\" font-weight=\"bold\" fill=\"#9a3412\">• n. karşılaşma için geçen süre = (n - 1) · EKOK</text>\n  <text x=\"372\" y=\"150\" font-size=\"10.6\" fill=\"#7c2d12\">• Haftanın günleri 7 günde bir tekrar eder:</text>\n  <text x=\"380\" y=\"168\" font-size=\"10.5\" fill=\"#7c2d12\">Toplam gün sayısı 7'ye bölünür; kalan kadar gün</text>\n  <text x=\"380\" y=\"186\" font-size=\"10.5\" fill=\"#7c2d12\">ileri (veya geçmiş soruluyorsa geri) sayılır.</text>\n  <rect x=\"20\" y=\"224\" width=\"660\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.3\" font-weight=\"bold\" fill=\"#1e293b\">Kesim vs. Parça Sayısı: Bir çubuğu k eş parçaya ayırmak için (k - 1) kesim işlemi yapılır!</text>\n</svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Aralarında asal iki pozitif tam sayının EKOK'u 120'dir. Bu iki sayının toplamı 23 olduğuna göre büyük sayı kaçtır?",
+      "cevap": "Aralarında asal iki sayının (a ve b) EBOB'u 1 olduğundan EKOK(a, b) = a · b = 120 olur. Çarpımları 120 ve toplamları a + b = 23 olan aralarında asal iki pozitif tam sayı 15 ve 8'dir (15 · 8 = 120, 15 + 8 = 23 ve EBOB(15, 8) = 1). Dolayısıyla büyük sayı 15'tir."
+    },
+    {
+      "soru": "a ve b pozitif tam sayılar olmak üzere EBOB(a, b) = 6 ve a · b = 2160 olduğuna göre EKOK(a, b) değerini ve a + b toplamının alabileceği en küçük değeri bulunuz.",
+      "cevap": "Temel özelliğe göre a · b = EBOB(a, b) · EKOK(a, b) → 2160 = 6 · EKOK(a, b) → EKOK(a, b) = 360 bulunur. EBOB(a, b) = 6 olduğundan a = 6x ve b = 6y (x ile y aralarında asal) yazılır. 6x · 6y = 2160 → 36 · x · y = 2160 → x · y = 60 olur. Toplamın en küçük olması için çarpanlar birbirine en yakın ve aralarında asal seçilir: x = 5 ve y = 12 (EBOB(5, 12) = 1). Buradan a = 30, b = 72 ve en küçük a + b = 30 + 72 = 102 bulunur."
+    },
+    {
+      "soru": "Uzunlukları 72 m, 90 m ve 126 m olan üç farklı demir çubuk, hiç parça artmayacak şekilde eşit uzunlukta en büyük parçalara kesilecektir. Her bir kesim işlemi 4 dakika sürdüğüne göre tüm kesim işlemi en az kaç dakika sürer?",
+      "cevap": "Parçaların eşit ve en büyük uzunlukta olması için bir parçanın boyu EBOB(72, 90, 126) = 18 metre olmalıdır. 72 m'lik çubuk 72/18 = 4 parçaya ayrılır ve 4 - 1 = 3 kesim yapılır. 90 m'lik çubuk 90/18 = 5 parçaya ayrılır ve 5 - 1 = 4 kesim yapılır. 126 m'lik çubuk 126/18 = 7 parçaya ayrılır ve 7 - 1 = 6 kesim yapılır. Toplam kesim sayısı = 3 + 4 + 6 = 13 kesimdir. Her kesim 4 dakika sürdüğünden 13 · 4 = 52 dakika sürer."
+    },
+    {
+      "soru": "Kenar uzunlukları 12 cm ve 18 cm olan dikdörtgen biçimindeki eş kartonlar, kenarları çakışacak şekilde yan yana dizilerek en küçük alanlı bir kare oluşturulacaktır. Bu iş için kaç adet karton gerekir?",
+      "cevap": "Küçük dikdörtgenlerden kare oluşturulduğu için karenin bir kenar uzunluğu EKOK(12, 18) = 36 cm olmalıdır. Yatay sırada 36 / 12 = 3 adet, dikey sırada 36 / 18 = 2 adet karton dizileceğinden toplam karton sayısı = 3 · 2 = 6 adet bulunur."
+    },
+    {
+      "soru": "Bir çiçekçideki güller 5'erli, 6'şarlı ve 8'erli demet yapıldığında her seferinde 3 gül artmaktadır. Çiçekçideki gül sayısı 200'den fazla olduğuna göre en az kaç gül vardır?",
+      "cevap": "Gül sayısına G dersek G = 5x + 3 = 6y + 3 = 8z + 3'tür. Her taraftan 3 çıkarılırsa G - 3 sayısı 5, 6 ve 8'in ortak katı olur. EKOK(5, 6, 8) = 120 olduğundan G - 3 = 120k → G = 120k + 3 yazılır. Gül sayısı 200'den fazla olduğu için k = 2 verilir: G = 120 · 2 + 3 = 243 gül bulunur."
+    },
+    {
+      "soru": "Bir hastanede görev yapan iki doktordan Aslı 4 günde bir, Burak ise 6 günde bir nöbet tutmaktadır. İkisi birlikte ilk nöbetlerini Çarşamba günü tuttuklarına göre, birlikte 7. nöbetlerini haftanın hangi günü tutarlar?",
+      "cevap": "İki doktorun birlikte nöbet tutma periyodu EKOK(4, 6) = 12 gündür. 1. nöbetten 7. nöbete kadar 7 - 1 = 6 periyot geçer. Toplam geçen gün sayısı = 6 · 12 = 72 gündür. Haftanın günleri 7 günde bir tekrar ettiğinden 72 sayısı 7'ye bölünür: 72 = 7 · 10 + 2 (kalan 2). İlk nöbet Çarşamba günü olduğu için 2 gün ileri gidilir: Perşembe (1), Cuma (2). Birlikte 7. nöbetlerini Cuma günü tutarlar."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "a ve b aralarında asal iki pozitif tam sayı olmak üzere EBOB(a, b) + EKOK(a, b) = 92 ve a = 7 olduğuna göre b sayısı kaçtır?",
+      "secenekler": [
+        "13",
+        "12",
+        "14",
+        "15",
+        "11"
+      ],
+      "dogru": 0,
+      "aciklama": "a ve b aralarında asal olduğundan EBOB(a, b) = 1 ve EKOK(a, b) = a · b'dir. 1 + a · b = 92 → 7 · b = 91 → b = 13 bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kenar uzunlukları 84 metre ve 108 metre olan dikdörtgen biçimindeki bir bahçenin etrafına, köşelere de dikilmek şartıyla eşit aralıklarla en az sayıda fidan dikilecektir. Buna göre toplam kaç fidan dikilir?",
+      "secenekler": [
+        "28",
+        "32",
+        "36",
+        "16",
+        "30"
+      ],
+      "dogru": 1,
+      "aciklama": "Fidan sayısının en az olması için iki fidan arası mesafe EBOB(84, 108) = 12 m olmalıdır. Kapalı şekil olduğundan Fidan Sayısı = Çevre / EBOB = 2·(84 + 108) / 12 = 384 / 12 = 32 bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Üç farklı çalar saatten birincisi 15 dakikada bir, ikincisi 20 dakikada bir, üçüncüsü ise 24 dakikada bir çalmaktadır. Bu üç saat ilk kez saat 09.00'da birlikte çaldıktan sonra üçüncü kez birlikte saat kaçta çalarlar?",
+      "secenekler": [
+        "11.00",
+        "12.00",
+        "13.00",
+        "14.00",
+        "15.00"
+      ],
+      "dogru": 2,
+      "aciklama": "Birlikte çalma periyodu EKOK(15, 20, 24) = 120 dakika = 2 saattir. 1. çalmadan (09.00) 3. çalmaya kadar 3 - 1 = 2 periyot yani 2 · 2 = 4 saat geçer: 09.00 + 4 saat = 13.00 olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Üç basamaklı en küçük A doğal sayısı 4'e bölündüğünde 2, 5'e bölündüğünde 3 ve 6'ya bölündüğünde 4 kalanını vermektedir. Buna göre A sayısının rakamları toplamı kaçtır?",
+      "secenekler": [
+        "8",
+        "9",
+        "11",
+        "10",
+        "12"
+      ],
+      "dogru": 3,
+      "aciklama": "A = 4x + 2 = 5y + 3 = 6z + 4'tür. Bölen ile kalan farkı sabit (2) olduğundan her tarafa 2 eklenir: A + 2 = 4(x+1) = 5(y+1) = 6(z+1) = 60k (EKOK(4,5,6) = 60). Üç basamaklı en küçük sayı için k = 2 verilir: A + 2 = 120 → A = 118 bulunur. Rakamları toplamı 1 + 1 + 8 = 10 olur."
+    },
+    {
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "metin": "Herhangi iki pozitif tam sayının çarpımı, bu iki sayının EBOB'u ile EKOK'unun çarpımına eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Aralarında asal olan iki doğal sayının her ikisi de asal sayı olmak zorundadır.",
+          "dogru": false
+        },
+        {
+          "metin": "Ardışık iki doğal sayının en büyük ortak böleni (EBOB'u) 1'e eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir demir çubuğu 6 eş parçaya ayırmak için 6 kesim işlemi yapmak gerekir.",
+          "dogru": false
+        },
+        {
+          "metin": "Bir doğal sayı bir diğerinin tam katı ise bu iki sayının EBOB'u küçük sayıya, EKOK'u ise büyük sayıya eşittir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "ciftler": [
+        [
+          "EBOB(a, b) = 1",
+          "1'den başka pozitif ortak böleni olmayan (aralarında asal) a ve b sayılarının özelliği"
+        ],
+        [
+          "a · b = EBOB · EKOK",
+          "İki pozitif tam sayının çarpımı ile ortak bölen ve ortak katları arasındaki temel bağıntı"
+        ],
+        [
+          "Çevre / EBOB(a, b)",
+          "Kenarları a ve b olan kapalı dikdörtgen bahçenin etrafına eşit aralıklarla dikilecek en az ağaç sayısı"
+        ],
+        [
+          "EKOK(T₁, T₂)",
+          "Periyotları T₁ ve T₂ olan iki olayın aynı anda tekrar gerçekleşme periyodu"
+        ],
+        [
+          "n - 1",
+          "Bir çubuğu n eş parçaya ayırmak için yapılması gereken kesim sayısı"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "cumleler": [
+        {
+          "metin": "Aralarında asal iki pozitif tam sayının en küçük ortak katı (EKOK'u) bu iki sayının ___ eşittir.",
+          "cevap": "çarpımına"
+        },
+        {
+          "metin": "Büyük hacimli çuvallardaki ürünleri eşit kütleli küçük poşetlere hiç artmadan paylaştırma problemlerinde ___ kullanılır.",
+          "cevap": "EBOB"
+        },
+        {
+          "metin": "Küçük dikdörtgen fayansları yan yana dizerek en küçük alanlı kare zemin oluşturma problemlerinde ___ kullanılır.",
+          "cevap": "EKOK"
+        },
+        {
+          "metin": "Birlikte ilk nöbetlerini tutan iki görevlinin 6. kez birlikte nöbet tutması için ortak periyodun ___ katı kadar süre geçmelidir.",
+          "cevap": "5"
+        },
+        {
+          "metin": "Bugün günlerden Pazartesi ise 70 gün sonra haftanın ___ günü olur.",
+          "cevap": "Pazartesi"
+        }
+      ],
+      "fazla": [
+        "toplamına",
+        "Salı",
+        "faktöriyel"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Boyutları 12 cm, 15 cm ve 20 cm olan dikdörtgenler prizması şeklindeki kutulardan en az sayıda kullanılarak içi dolu en küçük hacimli bir küp oluşturulmak isteniyor. Ayrıca bu kutulardan birinin içine hiç boşluk kalmayacak şekilde en büyük hacimli eş küpler yerleştirilecektir. Bu iki durumu EKOK ve EBOB kullanarak üç adımda karşılaştırmalı olarak çözünüz.",
+      "ipuclari": [
+        "1. Adım (Parçadan Bütüne - EKOK): Küçük prizmalardan büyük bir küp oluşturmak için küpün bir ayrıtını EKOK(12, 15, 20) ile bulma.",
+        "2. Adım (Gereken Kutu Sayısı): Küpün ayrıtını prizmanın ayrıtlarına (12, 15, 20) ayrı ayrı bölüp çıkan sayıları çarparak kutu sayısını hesaplama.",
+        "3. Adım (Bütünden Parçaya - EBOB): Tek bir kutunun (12, 15, 20) içine yerleştirilecek eş küplerin ayrıtını EBOB(12, 15, 20) ile bularak adet hesaplama."
+      ],
+      "cevap": "1) Prizmalardan Küp Oluşturma (EKOK): Boyutları 12 cm, 15 cm ve 20 cm olan kutular birleştirilerek daha büyük bir küp yapılacağından, oluşacak en küçük küpün bir ayrıtı EKOK(12, 15, 20) = 60 cm olur. 2) Gereken Kutu Sayısı: Ayrıtı 60 cm olan küpü oluşturmak için ayrıtlar boyunca (60/12) · (60/15) · (60/20) = 5 · 4 · 3 = 60 adet kutu gerekir. 3) Kutunun İçine Küp Yerleştirme (EBOB): Boyutları 12 cm, 15 cm ve 20 cm olan tek bir kutunun içine boşluk kalmadan yerleştirilecek en büyük eş küplerin bir ayrıtı EBOB(12, 15, 20) = 1 cm olur; bu durumda kutunun içine (12/1) · (15/1) · (20/1) = 3600 adet birim küp sığar."
+    }
+  ],
+  "ozet": [
+    "İki pozitif tam sayının çarpımı EBOB ve EKOK'larının çarpımına eşittir: a · b = EBOB(a, b) · EKOK(a, b).",
+    "Aralarında asal iki doğal sayının EBOB'u 1, EKOK'u ise bu iki sayının çarpımıdır (ardışık doğal sayılar ve ardışık tek sayılar aralarında asaldır).",
+    "Büyük nesneleri eş parçalara ayırma, şişelere paylaştırma ve eşit aralıklarla ağaç dikme problemlerinde (bütünden parçaya) EBOB kullanılır.",
+    "Küçük parçaları birleştirerek kare/küp oluşturma, kalanlı sayma ve periyodik karşılaşma problemlerinde (parçadan bütüne) EKOK kullanılır.",
+    "Periyodik problemlerde ilk karşılaşma başlangıç anı olduğundan n. karşılaşma için (n - 1) · EKOK kadar süre geçer; gün sorularında geçen gün 7'ye bölünerek kalan kullanılır."
+  ]
+}

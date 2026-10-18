@@ -1,0 +1,258 @@
+{
+  "ad": "11-fizik-12",
+  "sinif": 11,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 12,
+  "tarih": "7-11 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "1. Tema: Kuvvet ve Hareket",
+  "konu": "Düzgün Çembersel Hareket: Periyot, Frekans, Çizgisel Hız, Açısal Hız, Merkezcil İvme ve Merkezcil Kuvvet Kavramları (FİZ.11.1.9 & FİZ.11.1.10)",
+  "ciktilar": [
+    "Düzgün çembersel hareket yapan cisimlerin yörüngesini, konum vektörünü ve yörüngeye teğet olan çizgisel hız vektörünü analojik akıl yürütmeyle açıklar.",
+    "Periyot (T), frekans (f), çizgisel hız (v) ve açısal hız (ω) büyüklükleri arasındaki matematiksel modelleri tümevarımsal olarak yapılandırır.",
+    "Hız vektörünün yön değişiminden kaynaklanan merkezcil ivmeyi (a) ve cismi çembersel yörüngede tutan net kuvvet olan merkezcil kuvveti (F) hesaplar."
+  ],
+  "giris": "Sabit bir merkez noktasına eşit uzaklıkta kalarak çember şeklindeki bir yörüngede sabit süratle dolanan cisimlerin hareketine {koyu:düzgün çembersel hareket} denir. Lunaparktaki dönme dolabın kabinleri, saatin yelkovan ucu, rüzgâr türbininin kanatları ve Dünya'nın Güneş etrafındaki yaklaşık yörüngesi bu harekete örnektir. Düzgün çembersel harekette cismin {koyu:sürati (hızının büyüklüğü) sabit kalırken, hız vektörünün yönü sürekli değiştiği için hareket ivmeli bir harekettir}.",
+  "bolumler": [
+    {
+      "baslik": "Düzgün Çembersel Harekette Temel Kavramlar: Periyot, Frekans ve Konum Vektörü",
+      "metin": [
+        "Yarıçapı {koyu:r} olan çembersel bir yörüngede sabit süratle dolanan bir cismin referans noktası olan çember merkezinden ({koyu:O}) cismin bulunduğu noktaya çizilen yönlü doğru parçasına {koyu:konum vektörü (r)} veya yarıçap vektörü denir. Konum vektörünün yönü merkezden dışarıya (cisme) doğrudur ve büyüklüğü hareket boyunca değişmez.",
+        "Düzgün çembersel hareket yapan bir cismin çember çevresinde {koyu:bir tam tur dönmesi için geçen süreye periyot} denir, {koyu:T} harfi ile gösterilir ve SI birimi {koyu:saniye (s)}'dir. Cismin {koyu:birim zamanda (1 saniyede) attığı tur sayısına ise frekans} adı verilir, {koyu:f} harfi ile gösterilir ve SI birimi {koyu:s{us:-1| }} veya {koyu:Hertz (Hz)}'dir. Periyot ile frekans birbirinin çarpmaya göre tersidir: {koyu:T · f = 1} veya {koyu:T = {kesir:1|f}}.",
+        "Eş merkezli (birbirine perçinlenmiş) kasnak veya disk üzerindeki tüm noktalar aynı sürede aynı açıyı taradıkları için {koyu:periyotları, frekansları ve açısal hızları birbirine eşittir}. Farklı yarıçaplı ({koyu:r{us:1| }} ve {koyu:r{us:2| }}) kasnaklar bir kayışla veya dişli çarkla birbirine bağlandığında ise kayış üzerindeki her nokta eşit yol aldığından kasnakların {koyu:çizgisel süratleri birbirine eşit} olur ({koyu:f{us:1| } · r{us:1| } = f{us:2| } · r{us:2| }})."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 250\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"250\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">DÜZGÜN ÇEMBERSEL HAREKETTE VEKTÖRLER VE BAĞINTILAR</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"185\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"66\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">YÖRÜNGE VE VEKTÖR YÖNLERİ</text>\n  <circle cx=\"155\" cy=\"145\" r=\"62\" fill=\"#ffffff\" stroke=\"#1d4ed8\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/>\n  <circle cx=\"155\" cy=\"145\" r=\"4\" fill=\"#0f172a\"/>\n  <text x=\"143\" y=\"150\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">O</text>\n  <line x1=\"155\" y1=\"145\" x2=\"217\" y2=\"145\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n  <polygon points=\"217,145 209,141 209,149\" fill=\"#2563eb\"/>\n  <text x=\"185\" y=\"160\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">r (Konum)</text>\n  <circle cx=\"217\" cy=\"145\" r=\"5\" fill=\"#dc2626\"/>\n  <line x1=\"217\" y1=\"145\" x2=\"217\" y2=\"88\" stroke=\"#16a34a\" stroke-width=\"2.5\"/>\n  <polygon points=\"217,85 213,93 221,93\" fill=\"#16a34a\"/>\n  <text x=\"242\" y=\"98\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">v (Teğet Hız)</text>\n  <line x1=\"212\" y1=\"140\" x2=\"172\" y2=\"140\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n  <polygon points=\"168,140 176,136 176,144\" fill=\"#dc2626\"/>\n  <text x=\"190\" y=\"132\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#dc2626\">F, a (Merkeze)</text>\n  <text x=\"180\" y=\"220\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">Hız vektörü (v) yarıçap vektörüne (r) daima diktir (v ⊥ r).</text>\n\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"185\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">PERİYOT VE FREKANS İLİŞKİSİ</text>\n  <rect x=\"375\" y=\"80\" width=\"290\" height=\"62\" rx=\"6\" fill=\"#ffffff\" stroke=\"#f59e0b\" stroke-width=\"1.2\"/>\n  <text x=\"520\" y=\"98\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b45309\">Periyot (T): 1 tam tur süresi (Birim: s)</text>\n  <text x=\"520\" y=\"116\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b45309\">Frekans (f): 1 saniyedeki tur sayısı (Birim: Hz = 1/s)</text>\n  <text x=\"520\" y=\"134\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Temel Bağıntı: T · f = 1</text>\n  <rect x=\"375\" y=\"150\" width=\"290\" height=\"66\" rx=\"6\" fill=\"#ffffff\" stroke=\"#f59e0b\" stroke-width=\"1.2\"/>\n  <text x=\"520\" y=\"168\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#b45309\">Kasnak ve Dişli Sistemleri:</text>\n  <text x=\"520\" y=\"185\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Eş merkezli kasnaklarda: T, f ve ω eşittir.</text>\n  <text x=\"520\" y=\"202\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Kayışla bağlı farklı kasnaklarda: Çizgisel sürat (v) eşittir.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Hız ve Sürat Farkı",
+          "metin": "Düzgün çembersel harekette cismin 'sürati' (hızın büyüklüğü) değişmez; ancak 'hız' vektörel bir büyüklük olduğu ve yönü her an değiştiği için hız sabit değildir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Konum ve Hız Vektörü Dikliği",
+          "metin": "Çembersel yörüngenin her noktasında çizgisel hız vektörü (v) yörüngeye teğet, konum vektörü (r) ise yarıçap doğrultusunda olduğundan aralarındaki açı 90 derecedir."
+        }
+      ]
+    },
+    {
+      "baslik": "Çizgisel Hız (v) ve Açısal Hız (ω) Arasındaki İlişki",
+      "metin": [
+        "Düzgün çembersel hareket yapan bir cismin çember yayında birim zamanda aldığı yola {koyu:çizgisel sürat}, yörüngeye teğet olan hız vektörüne ise {koyu:çizgisel hız (v)} denir. Cisim bir periyotluk ({koyu:T}) sürede yarıçapı {koyu:r} olan çemberin çevresi ({koyu:2·π·r}) kadar yol aldığından çizgisel hız büyüklüğü {koyu:v = {kesir:2·π·r|T}} veya {koyu:v = 2·π·r·f} bağıntısıyla hesaplanır (birimi {koyu:m/s}).",
+        "Konum (yarıçap) vektörünün birim zamanda taradığı radyan cinsinden açıya ise {koyu:açısal hız (ω)} adı verilir. Bir tam turda yarıçap vektörü {koyu:360° = 2π radyan} açı taradığından açısal hız büyüklüğü {koyu:ω = {kesir:2·π|T}} veya {koyu:ω = 2·π·f} formülüyle bulunur ve SI birimi {koyu:radyan/saniye (rad/s)}'dir. Açısal hız vektörünün yönü {koyu:sağ el kuralı} ile bulunur (dört parmak dönme yönünü gösterirken açılan başparmak açısal hız vektörünün yönünü verir ve dönme düzlemine diktir).",
+        "Çizgisel hız ve açısal hız bağıntıları birleştirildiğinde aralarındaki temel geçiş denklemi {koyu:v = ω · r} olarak elde edilir. Buna göre aynı açısal hızla dönen bir disk üzerinde merkezden dışa doğru gidildikçe yarıçap ({koyu:r}) arttığı için noktaların çizgisel hız büyüklüğü ({koyu:v}) doğru orantılı olarak artar."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 230\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"230\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">ÇİZGİSEL HIZ (v) VE AÇISAL HIZ (ω) KARŞILAŞTIRMASI</text>\n  <rect x=\"20\" y=\"48\" width=\"320\" height=\"162\" rx=\"10\" fill=\"#e0e7ff\" stroke=\"#4f46e5\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"70\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#3730a3\">ÇİZGİSEL HIZ (v)</text>\n  <rect x=\"35\" y=\"82\" width=\"290\" height=\"114\" rx=\"6\" fill=\"#ffffff\" stroke=\"#6366f1\" stroke-width=\"1.2\"/>\n  <text x=\"180\" y=\"102\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">• Tanım: Birim zamanda çember yayında alınan yol.</text>\n  <text x=\"180\" y=\"122\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#4338ca\">Formül: v = 2·π·r / T = 2·π·r·f</text>\n  <text x=\"180\" y=\"142\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">• Birim: metre/saniye (m/s)</text>\n  <text x=\"180\" y=\"162\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">• Yönü: Yörüngeye her an teğettir ve değişir.</text>\n  <text x=\"180\" y=\"182\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#3730a3\">Geçiş Bağıntısı: v = ω · r</text>\n\n  <rect x=\"360\" y=\"48\" width=\"320\" height=\"162\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"70\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">AÇISAL HIZ (ω)</text>\n  <rect x=\"375\" y=\"82\" width=\"290\" height=\"114\" rx=\"6\" fill=\"#ffffff\" stroke=\"#4ade80\" stroke-width=\"1.2\"/>\n  <text x=\"520\" y=\"102\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">• Tanım: Yarıçap vektörünün birim zamanda taradığı açı.</text>\n  <text x=\"520\" y=\"122\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">Formül: ω = 2·π / T = 2·π·f</text>\n  <text x=\"520\" y=\"142\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">• Birim: radyan/saniye (rad/s)</text>\n  <text x=\"520\" y=\"162\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">• Yönü: Sağ el kuralı ile bulunur, düzleme diktir.</text>\n  <text x=\"520\" y=\"182\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#166534\">Yarıçapa (r) doğrudan bağlı değildir!</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dünya Üzerindeki Noktaların Hızı",
+          "metin": "Dünya kendi ekseni etrafında dönerken üzerindeki tüm noktaların açısal hızı (ω) birbirine eşittir; ancak Ekvator'daki bir noktanın dönme eksenine uzaklığı (r) en büyük olduğundan çizgisel hızı (v) kutuplara göre en büyüktür."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Ortalama İvme Hesabı",
+          "metin": "Belirli iki nokta arasındaki ortalama ivme sorulduğunda a_ort = (v_son - v_ilk) / Δt vektörel fark bağıntısı kullanılır."
+        }
+      ]
+    },
+    {
+      "baslik": "Merkezcil İvme (a) ve Merkezcil Kuvvet (F)",
+      "metin": [
+        "Düzgün çembersel harekette hızın büyüklüğü değişmese bile yönü sürekli değiştiği için hız vektöründe birim zamanda bir değişim ({koyu:Δv}) oluşur. Hız vektörünün yön değişiminden kaynaklanan ve yönü her an {koyu:çemberin merkezine doğru} olan bu ivmeye {koyu:merkezcil ivme (a)} denir. Merkezcil ivmenin büyüklüğü {koyu:a = {kesir:v{us:2| }|r}} veya {koyu:a = ω{us:2| } · r} bağıntısıyla hesaplanır (birimi {koyu:m/s{us:2| }}).",
+        "Newton'ın İkinci Hareket Yasası ({koyu:F{us:net| } = m · a}) gereğince ivmeli hareket yapan her cisme ivme ile aynı yönde bir net kuvvet etki etmelidir. Cismi çembersel yörüngede tutan ve yönü her an çemberin merkezine doğru olan bu net kuvvete {koyu:merkezcil kuvvet (F{us:m| })} adı verilir. kütlesi {koyu:m} olan cisim için merkezcil kuvvetin büyüklüğü {koyu:F{us:m| } = {kesir:m · v{us:2| }|r}} veya {koyu:F{us:m| } = m · ω{us:2| } · r} formülüyle bulunur (birimi {koyu:Newton - N}).",
+        "{koyu:Merkezcil kuvvet başlı başına ayrı bir kuvvet türü değildir}; serbest cisim diyagramında ayrıca çizilmez! Hareketin çembersel olmasını sağlayan mevcut kuvvetlerin merkeze yönelik bileşkesidir: İp ucunda döndürülen taşta {koyu:ip gerilme kuvveti}, yatay virajı dönen araçta tekerlek ile yol arasındaki {koyu:statik sürtünme kuvveti}, Dünya etrafında dolanan uyduda ise {koyu:kütle çekim kuvveti} merkezcil kuvvet görevini üstlenir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 220\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"220\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">MERKEZCİL İVME VE MERKEZCİL KUVVET MODELLERİ</text>\n  <rect x=\"20\" y=\"48\" width=\"320\" height=\"152\" rx=\"10\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"70\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#991b1b\">MERKEZCİL İVME (a)</text>\n  <rect x=\"35\" y=\"82\" width=\"290\" height=\"104\" rx=\"6\" fill=\"#ffffff\" stroke=\"#f87171\" stroke-width=\"1.2\"/>\n  <text x=\"180\" y=\"102\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">a = v² / r = ω² · r = (4·π²·r) / T²</text>\n  <text x=\"180\" y=\"124\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">• Hızın büyüklüğünü değil, yönünü değiştirir.</text>\n  <text x=\"180\" y=\"144\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">• Yönü her an çemberin merkezine doğrudur.</text>\n  <text x=\"180\" y=\"164\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">• Konum vektörü (r) ile zıt yönlüdür (a = -ω²·r).</text>\n\n  <rect x=\"360\" y=\"48\" width=\"320\" height=\"152\" rx=\"10\" fill=\"#fae8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"70\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">MERKEZCİL KUVVET (F = m · a)</text>\n  <rect x=\"375\" y=\"82\" width=\"290\" height=\"104\" rx=\"6\" fill=\"#ffffff\" stroke=\"#a855f7\" stroke-width=\"1.2\"/>\n  <text x=\"520\" y=\"102\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#7e22ce\">F = (m · v²) / r = m · ω² · r</text>\n  <text x=\"520\" y=\"124\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">• Merkeze doğru olan NET KUVVETİN adıdır.</text>\n  <text x=\"520\" y=\"144\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">• Serbest cisim diyagramında ayrıca gösterilmez!</text>\n  <text x=\"520\" y=\"164\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">• İp koparsa cisim o anki hız (v) yönünde teğet fırlar.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Serbest Cisim Diyagramı Uyarısı",
+          "metin": "Serbest cisim diyagramında cisme etki eden gerçek kuvvetler (ağırlık, ip gerilmesi, normal kuvvet, sürtünme) çizilir; merkezcil kuvvet bu kuvvetlerin bileşkesi olduğu için ayrıca çizilmez."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İp Koparsa Cisim Nereye Gider?",
+          "metin": "Yatay düzlemde döndürülen bir taşın ipi koptuğu anda merkezcil kuvvet sıfırlanır ve taş dışarıya doğru değil, o andaki çizgisel hız vektörü (v) doğrultusunda yörüngeye teğet olarak fırlayıp gider."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Yarıçapı 2 metre olan çembersel bir yörüngede sabit süratle dolanan bir cisim 12 saniyede 6 tam tur atmaktadır. Cismin periyodunu, frekansını, açısal hızını ve çizgisel hız büyüklüğünü hesaplayınız (π = 3 alınız).",
+      "cevap": "Cisim 12 saniyede 6 tur atıyorsa 1 saniyede 6 / 12 = 0,5 tur atar; dolayısıyla frekansı f = 0,5 Hz (s^-1) ve periyodu T = 1 / f = 2 saniyedir. Açısal hızı ω = 2·π / T = (2 · 3) / 2 = 3 rad/s olur. Çizgisel hız büyüklüğü ise v = ω · r = 3 · 2 = 6 m/s olarak bulunur."
+    },
+    {
+      "soru": "Düzgün çembersel hareket yapan bir cismin sürati sabit olduğu hâlde bu hareket neden ivmeli bir hareket olarak kabul edilir?",
+      "cevap": "İvme, birim zamandaki hız değişimidir ve hız vektörel bir büyüklüktür. Düzgün çembersel harekette hızın büyüklüğü (sürat) değişmese de hız vektörünün yönü her an değişmektedir. Yön değişiminden dolayı hız vektörü değiştiği için cisim çemberin merkezine doğru bir merkezcil ivmeye sahiptir."
+    },
+    {
+      "soru": "Yarıçapları sırasıyla r ve 3r olan K ve L kasnakları bir kayışla birbirine bağlanarak döndürülmektedir. Kasnakların kenarındaki noktaların çizgisel hız büyüklükleri oranı {kesir:v{us:K| }|v{us:L| }} ve açısal hız büyüklükleri oranı {kesir:ω{us:K| }|ω{us:L| }} kaçtır?",
+      "cevap": "Bir kayışla birbirine bağlı kasnakların kenarındaki noktalar aynı sürede eşit miktarda kayış ilerlettiği için çizgisel süratleri birbirine eşittir; dolayısıyla v_K / v_L = 1 olur. v = ω · r bağıntısından ω_K · r = ω_L · 3r yazıldığında açısal hızlarının oranı ω_K / ω_L = 3 olarak bulunur."
+    },
+    {
+      "soru": "Sürtünmesiz yatay düzlemde 1,5 metre uzunluğundaki bir ipin ucuna bağlı 2 kg kütleli cisim, 6 m/s sabit çizgisel süratle düzgün çembersel hareket yapmaktadır. Cismin merkezcil ivmesini ve ipteki gerilme kuvvetini bulunuz.",
+      "cevap": "Merkezcil ivme a = v^2 / r = 6^2 / 1,5 = 36 / 1,5 = 24 m/s^2 olur. Yatay düzlemde merkezcil kuvvet doğrudan ipteki gerilme kuvvetine eşit olduğundan T_ip = F_m = m · a = 2 · 24 = 48 Newton bulunur."
+    },
+    {
+      "soru": "Düzgün çembersel hareket yapan bir cismin konum vektörü (r), çizgisel hız vektörü (v) ve merkezcil ivme vektörü (a) arasındaki yön ilişkilerini açıklayınız.",
+      "cevap": "Konum vektörü (r) çemberin merkezinden cisme (dışarıya) doğrudur. Merkezcil ivme (a) ve merkezcil kuvvet (F) vektörleri ise cisimden çemberin merkezine doğrudur; yani konum vektörü ile merkezcil ivme vektörü daima birbirine zıt yönlüdür (aralarındaki açı 180°). Çizgisel hız vektörü (v) ise yörüngeye teğet olduğundan hem konum vektörüne hem de ivme vektörüne her an diktir (90°)."
+    },
+    {
+      "soru": "Serbest cisim diyagramı çizilirken 'merkezcil kuvvet' neden ayrı bir kuvvet oku olarak gösterilmez? Açıklayınız.",
+      "cevap": "Merkezcil kuvvet doğadaki temel veya temas kuvvetlerinden ayrı, yeni bir kuvvet çeşidi değildir; cisme etki eden gerçek kuvvetlerin (ip gerilmesi, sürtünme, kütle çekimi, normal kuvvet vb.) çember merkezine doğru olan net bileşkesine verilen isimdir. Bu nedenle serbest cisim diyagramında gerçek kuvvetler gösterilir, merkezcil kuvvet ayrıca çizilmez."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Düzgün çembersel hareket yapan bir cisim için aşağıdaki niceliklerden hangisinin hem büyüklüğü hem de yönü hareket süresince sabit kalır?",
+      "secenekler": [
+        "Çizgisel hız vektörü (v)",
+        "Merkezcil ivme vektörü (a)",
+        "Açısal hız vektörü (ω)",
+        "Konum vektörü (r)",
+        "Merkezcil kuvvet vektörü (F)"
+      ],
+      "dogru": 2,
+      "aciklama": "Çizgisel hız, konum, merkezcil ivme ve merkezcil kuvvet vektörlerinin büyüklüğü sabit olsa da dönme sırasında yönleri sürekli değişir; sağ el kuralıyla bulunan açısal hız vektörünün (ω) ise hem yönü hem büyüklüğü sabittir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Yarıçapı 3 metre olan dairesel bir pistte sabit süratle koşan bir sporcunun periyodu 12 saniyedir. Buna göre sporcunun merkezcil ivmesinin büyüklüğü kaç m/s{us:2| } olur? (π = 3 alınız.)",
+      "secenekler": [
+        "0,5 m/s²",
+        "0,75 m/s²",
+        "1,5 m/s²",
+        "2,25 m/s²",
+        "3,0 m/s²"
+      ],
+      "dogru": 1,
+      "aciklama": "Önce açısal hız bulunur: ω = 2·π / T = (2 · 3) / 12 = 0,5 rad/s. Merkezcil ivme a = ω² · r = (0,5)² · 3 = 0,25 · 3 = 0,75 m/s² olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Merkezleri çakışık olacak biçimde birbirine perçinlenmiş r ve 2r yarıçaplı X ve Y kasnakları sabit açısal süratle döndürülmektedir. X kasnağının dış kenarındaki bir K noktası ile Y kasnağının dış kenarındaki bir L noktası için aşağıdakilerden hangisi yanlıştır?",
+      "secenekler": [
+        "K ve L noktalarının periyotları birbirine eşittir.",
+        "K ve L noktalarının açısal hızları birbirine eşittir.",
+        "L noktasının çizgisel sürati K noktasının iki katıdır.",
+        "K noktasının merkezcil ivmesi L noktasının iki katıdır.",
+        "K ve L noktalarının frekansları birbirine eşittir."
+      ],
+      "dogru": 3,
+      "aciklama": "Eş merkezli kasnaklarda ω eşittir. a = ω² · r bağıntısına göre yarıçapı 2r olan L noktasının merkezcil ivmesi, yarıçapı r olan K noktasının iki katıdır (K, L'nin iki katı değildir)."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Sürtünmesiz yatay bir masa üzerinde 2 metre uzunluğundaki ipin ucuna bağlı 0,5 kg kütleli bir cisim, 4 rad/s açısal hızla düzgün çembersel hareket yapmaktadır. Buna göre ipteki gerilme kuvvetinin büyüklüğü kaç Newton'dır?",
+      "secenekler": [
+        "16 Newton",
+        "12 Newton",
+        "8 Newton",
+        "6 Newton",
+        "4 Newton"
+      ],
+      "dogru": 0,
+      "aciklama": "Yatay düzlemde ip gerilmesi merkezcil kuvvete eşittir: T = F_m = m · ω² · r = 0,5 · (4)² · 2 = 0,5 · 16 · 2 = 16 N."
+    },
+    {
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "metin": "Düzgün çembersel hareket yapan bir cismin bir tam tur dönmesi için geçen süreye periyot adı verilir ve birimi saniyedir.",
+          "dogru": true
+        },
+        {
+          "metin": "Çizgisel hız vektörü (v) ile konum vektörü (r) hareketin her anında birbirine diktir.",
+          "dogru": true
+        },
+        {
+          "metin": "Düzgün çembersel harekette cismin sürati sabit olduğu için cisme etki eden net kuvvet ve ivme sıfırdır.",
+          "dogru": false
+        },
+        {
+          "metin": "Merkezcil kuvvet, serbest cisim diyagramında diğer kuvvetlerin yanında ayrıca çizilen bağımsız bir kuvvettir.",
+          "dogru": false
+        },
+        {
+          "metin": "Yatay viraja giren bir otomobilin güvenli dönüş yapmasını sağlayan merkezcil kuvvet, tekerlekler ile yol arasındaki statik sürtünme kuvvetidir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "ciftler": [
+        [
+          "Periyot (T)",
+          "Cismin çembersel yörüngede bir tam tur dönmesi için geçen süre"
+        ],
+        [
+          "Frekans (f)",
+          "Cismin çembersel yörüngede bir saniyede attığı tur sayısı (Hertz)"
+        ],
+        [
+          "Açısal Hız (ω)",
+          "Konum vektörünün birim zamanda taradığı radyan cinsinden açı"
+        ],
+        [
+          "Çizgisel Hız (v)",
+          "Yörüngeye her an teğet olan ve v = ω · r ile bulunan hız vektörü"
+        ],
+        [
+          "Merkezcil İvme (a)",
+          "Hız vektörünün yön değişiminden doğan ve merkeze yönelik olan ivme"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "cumleler": [
+        {
+          "metin": "Düzgün çembersel harekette periyot (T) ile ___ (f) büyüklüklerinin çarpımı 1'e eşittir.",
+          "cevap": "frekans"
+        },
+        {
+          "metin": "Çember merkezinden cismin bulunduğu noktaya çizilen yönlü doğru parçasına ___ vektörü adı verilir.",
+          "cevap": "konum"
+        },
+        {
+          "metin": "Açısal hız vektörünün yönü ___ el kuralı ile bulunur ve dönme düzlemine diktir.",
+          "cevap": "sağ"
+        },
+        {
+          "metin": "Düzgün çembersel harekette merkezcil ivme ile merkezcil kuvvetin yönü her an çemberin ___ doğrudur.",
+          "cevap": "merkezine"
+        },
+        {
+          "metin": "İp ucunda döndürülen bir cismin ipi koptuğu anda cisim, o andaki çizgisel hız doğrultusunda yörüngeye ___ olarak fırlar.",
+          "cevap": "teğet"
+        }
+      ],
+      "fazla": [
+        "sol",
+        "dışına"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Dünya'nın kendi dönme ekseni etrafındaki hareketini düşünerek Ekvator üzerindeki bir K noktası ile 60° Kuzey paralelindeki bir L noktasının periyot, açısal hız, çizgisel hız ve merkezcil ivme büyüklüklerini karşılaştırınız.",
+      "cevap": "Dünya katı bir küre olarak kendi ekseni etrafında dönerken üzerindeki tüm noktalar bir tam turunu aynı sürede (24 saatte) tamamlar. Bu nedenle K ve L noktalarının periyotları (T_K = T_L), frekansları (f_K = f_L) ve açısal hızları (ω_K = ω_L) birbirine eşittir. Ancak Ekvator'daki K noktasının dönme eksenine olan dik uzaklığı (r_K), 60° paralelindeki L noktasının uzaklığından (r_L) daha büyüktür. v = ω · r ve a = ω² · r bağıntıları gereğince K noktasının çizgisel hızı (v_K > v_L) ve merkezcil ivmesi (a_K > a_L) L noktasından daha büyüktür.",
+      "ipuclari": [
+        "Birlikte dönen katı cisim üzerindeki tüm noktaların T, f ve ω değerlerinin eşit olduğunu belirtiniz.",
+        "Ekvator'daki noktanın dönme eksenine olan dik yarıçapının (r) kutuplara yakın noktadan büyük olduğunu açıklayınız.",
+        "v = ω · r ve a = ω² · r formüllerini kullanarak çizgisel hız ve merkezcil ivmeyi karşılaştırınız."
+      ]
+    }
+  ],
+  "ozet": [
+    "Düzgün çembersel harekette cismin sürati sabittir; ancak hız vektörünün yönü sürekli değiştiği için hareket ivmelidir.",
+    "Bir tam tur süresi periyot (T), saniyedeki tur sayısı frekanstır (f) ve aralarında T · f = 1 bağıntısı vardır.",
+    "Çizgisel hız yörüngeye teğettir (v = 2·π·r / T); açısal hız yarıçap vektörünün birim zamanda taradığı açıdır (ω = 2·π / T) ve v = ω · r ilişkisi geçerlidir.",
+    "Hızın yön değişiminden kaynaklanan merkezcil ivme merkeze doğrudur ve a = v² / r = ω² · r bağıntısıyla hesaplanır.",
+    "Cismi çembersel yörüngede tutan net kuvvete merkezcil kuvvet (F = m·v²/r = m·ω²·r) denir ve serbest cisim diyagramında ayrıca çizilmez."
+  ]
+}

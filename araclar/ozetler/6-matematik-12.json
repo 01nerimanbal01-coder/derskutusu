@@ -1,0 +1,257 @@
+{
+  "ad": "6-matematik-12",
+  "sinif": 6,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 12,
+  "tarih": "7-11 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "Sayılar ve Nicelikler (2)",
+  "konu": "Gerçek Yaşam Durumlarında Kesir, Ondalık Gösterim ve Yüzde İçeren Problemleri Çözme ve Standart Uzunluk Ölçme Birimleri Arası Dönüşümler (MAT.6.1.7 & MAT.6.1.8)",
+  "ciktilar": [
+    "MAT.6.1.7.a-e. Gerçek yaşam durumlarında karşılaşılan kesir, ondalık ve yüzde gösterimleri ile ilgili dört işlem gerektiren problemleri uygun temsiller (şekil, model, tablo) ve stratejiler kullanarak çözer.",
+    "MAT.6.1.7.f-h. Problemlerin sonucuna ilişkin tahminde bulunur, çözüm yollarını kontrol eder ve geliştirdiği stratejileri farklı problem durumlarına geneller.",
+    "MAT.6.1.8.a-ç. Uzunluk ölçme birimlerinden metreyi (m) ölçüt olarak belirler; standart uzunluk ölçme birimleri (km, hm, dam, m, dm, cm, mm) arasında dönüşüm ve karşılaştırmalar yapar."
+  ],
+  "giris": "Sayılar ve Nicelikler (2) temasının bu haftasında, günlük yaşamda sıkça karşılaştığımız kesir, ondalık gösterim ve yüzde ifadelerini bir arada içeren çok adımlı dört işlem problemlerini modelleme ve işlem stratejileriyle çözüyoruz. Haftanın ikinci bölümünde ise temel uzunluk ölçme birimi olan {koyu:metreyi (m)} merkez alarak standart uzunluk ölçme birimleri arasındaki dönüşümleri ve gerçek hayat ölçümlerini değerlendiriyoruz.",
+  "bolumler": [
+    {
+      "baslik": "Kesirlerle Dört İşlem İçeren Gerçek Yaşam Problemleri (MAT.6.1.7)",
+      "metin": [
+        "Gerçek yaşam problemlerini çözerken önce {koyu:verilenler ile istenenler} arasındaki işlem ilişkisi belirlenir ve bütünü eş parçalara ayıran {koyu:kesir modeli (şerit diyagram)} kullanılır. {koyu:1. Bütünün kesir kadarını bulma:} Verilen bir çokluğun {kesir:a|b} kadarını bulmak için çokluk kesirle {koyu:çarpılır} (veya paydaya bölünüp pay ile çarpılır). Örneğin 120 sayfalık bir eserin {kesir:3|5}'ünü okuyan bir öğrenci, {koyu:120 × {kesir:3|5} = (120 ÷ 5) × 3 = 72 sayfa} okumuştur; geriye {koyu:120 − 72 = 48 sayfa} kalmıştır.",
+        "{koyu:2. Kesir kadarı verilen bütünün tamamını bulma:} Bir bütünün {kesir:a|b} kadarı biliniyorsa tamamını bulmak için verilen sayı kesre {koyu:bölünür} (yani paya bölünüp bir birim kesir bulunur, ardından paydayla çarpılır). Örneğin {kesir:4|7}'ü 60 litre su alan bir deponun tamamı {koyu:60 ÷ {kesir:4|7} = 60 × {kesir:7|4} = (60 ÷ 4) × 7 = 105 litre} su alır.",
+        "{koyu:3. Kalanın kesir kadarını bulma:} Çok adımlı problemlerde «önce {kesir:1|4}'ünü, sonra {koyu:kalanın} {kesir:2|3}'sini harcadı» denildiğinde ikinci kesir başlangıçtaki bütüne değil, kalan miktara uygulanır. Bütünün {kesir:1|4}'ü gidince geriye {kesir:3|4}'ü kalır; kalanın {kesir:2|3}'si ise {koyu:{kesir:3|4} × {kesir:2|3} = {kesir:2|4} = {kesir:1|2}} (bütünün yarısı) olur."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">KESİRLERLE DÖRT İŞLEM PROBLEMLERİ VE MODEL TEMSİLİ (MAT.6.1.7)</text>\n  <rect x=\"20\" y=\"46\" width=\"320\" height=\"194\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"70\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">1. Bütünün Kesir Kadarını Bulma (Çarpma)</text>\n  <text x=\"36\" y=\"96\" font-size=\"11.5\" fill=\"#1e3a8a\">• Verilen bütün, kesir ile çarpılır.</text>\n  <text x=\"36\" y=\"118\" font-size=\"11.5\" fill=\"#1e3a8a\">• Örnek: 120 sayfalık eserin 5'te 3'ü kaç sayfadır?</text>\n  <rect x=\"36\" y=\"132\" width=\"48\" height=\"24\" fill=\"#3b82f6\" stroke=\"#1d4ed8\"/>\n  <rect x=\"84\" y=\"132\" width=\"48\" height=\"24\" fill=\"#3b82f6\" stroke=\"#1d4ed8\"/>\n  <rect x=\"132\" y=\"132\" width=\"48\" height=\"24\" fill=\"#3b82f6\" stroke=\"#1d4ed8\"/>\n  <rect x=\"180\" y=\"132\" width=\"48\" height=\"24\" fill=\"#dbeafe\" stroke=\"#1d4ed8\"/>\n  <rect x=\"228\" y=\"132\" width=\"48\" height=\"24\" fill=\"#dbeafe\" stroke=\"#1d4ed8\"/>\n  <text x=\"60\" y=\"148\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#ffffff\">24</text>\n  <text x=\"108\" y=\"148\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#ffffff\">24</text>\n  <text x=\"156\" y=\"148\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#ffffff\">24</text>\n  <text x=\"204\" y=\"148\" text-anchor=\"middle\" font-size=\"10\" fill=\"#1e3a8a\">24</text>\n  <text x=\"252\" y=\"148\" text-anchor=\"middle\" font-size=\"10\" fill=\"#1e3a8a\">24</text>\n  <text x=\"36\" y=\"180\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e40af\">1 parça: 120 ÷ 5 = 24 sayfa</text>\n  <text x=\"36\" y=\"202\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e40af\">3 parça: 24 × 3 = 72 sayfa (Kalan: 48 sayfa)</text>\n\n  <rect x=\"360\" y=\"46\" width=\"320\" height=\"194\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"70\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">2. Kesir Kadarı Verilen Bütünü Bulma (Bölme)</text>\n  <text x=\"376\" y=\"96\" font-size=\"11.5\" fill=\"#14532d\">• Verilen parça, kesre bölünür (birim kesir bulunur).</text>\n  <text x=\"376\" y=\"118\" font-size=\"11.5\" fill=\"#14532d\">• Örnek: 7'de 4'ü 60 L olan deponun tamamı kaç L'dir?</text>\n  <rect x=\"376\" y=\"132\" width=\"36\" height=\"24\" fill=\"#22c55e\" stroke=\"#15803d\"/>\n  <rect x=\"412\" y=\"132\" width=\"36\" height=\"24\" fill=\"#22c55e\" stroke=\"#15803d\"/>\n  <rect x=\"448\" y=\"132\" width=\"36\" height=\"24\" fill=\"#22c55e\" stroke=\"#15803d\"/>\n  <rect x=\"484\" y=\"132\" width=\"36\" height=\"24\" fill=\"#22c55e\" stroke=\"#15803d\"/>\n  <rect x=\"520\" y=\"132\" width=\"36\" height=\"24\" fill=\"#dcfce7\" stroke=\"#15803d\"/>\n  <rect x=\"556\" y=\"132\" width=\"36\" height=\"24\" fill=\"#dcfce7\" stroke=\"#15803d\"/>\n  <rect x=\"592\" y=\"132\" width=\"36\" height=\"24\" fill=\"#dcfce7\" stroke=\"#15803d\"/>\n  <text x=\"448\" y=\"148\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#ffffff\">4 parça = 60 L</text>\n  <text x=\"376\" y=\"180\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">1 parça (birim kesir): 60 ÷ 4 = 15 L</text>\n  <text x=\"376\" y=\"202\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">Tamamı (7 parça): 15 × 7 = 105 L</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "«Bütünün Kesri» ile «Kalanın Kesri» Ayrımına Dikkat!",
+          "metin": "Soruda «parasının önce {kesir:1|5}'ini, sonra {kesir:2|5}'sini harcadı» denirse kesirler doğrudan toplanır ({kesir:1|5} + {kesir:2|5} = {kesir:3|5}). Ancak «önce {kesir:1|5}'ini, sonra {koyu:kalan parasının} {kesir:1|2}'sini harcadı» denirse kalan ({kesir:4|5}) ile {kesir:1|2} çarpılarak ({kesir:4|5} × {kesir:1|2} = {kesir:2|5}) ikinci harcama bulunur."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Model Çizerek Kısa Yoldan Çözüm",
+          "metin": "Paydaların ortak katı kadar eş kutucuk çizmek, hem işlem hatasını önler hem de geriye kalan parça sayısını tek bakışta görmemizi sağlar."
+        }
+      ]
+    },
+    {
+      "baslik": "Ondalık Gösterim ve Yüzde İçeren Dört İşlem Problemleri (MAT.6.1.7)",
+      "metin": [
+        "Alışveriş, finans, indirim, zam ve karışım problemlerinde {koyu:kesir, ondalık gösterim ve yüzde (%)} ifadeleri bir arada karşımıza çıkar. Bu problemleri çözerken verilen tüm sayıları {koyu:aynı gösterim biçimine} (hepsini kesre veya hepsini ondalık gösterime) dönüştürmek işlemleri büyük ölçüde kolaylaştırır.",
+        "Sık kullanılan eş değerlikleri zihinden bilmek hız kazandırır: {koyu:%50 = 0,5 = {kesir:1|2}} (yarım), {koyu:%25 = 0,25 = {kesir:1|4}} (çeyrek), {koyu:%75 = 0,75 = {kesir:3|4}} (dörtte üç), {koyu:%20 = 0,2 = {kesir:1|5}} (beşte bir) ve {koyu:%10 = 0,1 = {kesir:1|10}} (onda bir).",
+        "Örneğin etiket fiyatı 800 TL olan bir monta {koyu:%25 indirim} uygulandığında, %25 çeyrek ({kesir:1|4}) demek olduğundan indirim miktarı {koyu:800 × {kesir:1|4} = 200 TL} (veya {koyu:800 × 0,25 = 200 TL}) olur ve mont {koyu:800 − 200 = 600 TL}'ye satılır. Market alışverişinde kilogramı {koyu:42,5 TL} olan cevizden {koyu:2,4 kg} alan bir müşteri ise {koyu:42,5 × 2,4 = 102 TL} öder."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">ONDALIK GÖSTERİM VE YÜZDE İÇEREN PROBLEMLER (MAT.6.1.7)</text>\n  <rect x=\"25\" y=\"48\" width=\"315\" height=\"192\" rx=\"8\" fill=\"#fdf2f8\" stroke=\"#ec4899\" stroke-width=\"1.5\"/>\n  <text x=\"182\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#be185d\">Temsiller Arası Eş Değerlik</text>\n  <text x=\"40\" y=\"100\" font-size=\"11.5\" fill=\"#831843\">• Yüzde 25 (%25) = 0,25 = Çeyrek (4'te 1)</text>\n  <text x=\"40\" y=\"124\" font-size=\"11.5\" fill=\"#831843\">• Yüzde 50 (%50) = 0,5 = Yarım (2'de 1)</text>\n  <text x=\"40\" y=\"148\" font-size=\"11.5\" fill=\"#831843\">• Yüzde 75 (%75) = 0,75 = Dörtte üç (4'te 3)</text>\n  <text x=\"40\" y=\"172\" font-size=\"11.5\" fill=\"#831843\">• Yüzde 20 (%20) = 0,2 = Beşte bir (5'te 1)</text>\n  <text x=\"40\" y=\"198\" font-size=\"11\" font-weight=\"bold\" fill=\"#9d174d\">Problemde en kolay işlem yapılan temsil seçilir!</text>\n\n  <rect x=\"360\" y=\"48\" width=\"315\" height=\"192\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\" stroke-width=\"1.5\"/>\n  <text x=\"517\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#a16207\">İndirim, Zam ve Alışveriş Problemleri</text>\n  <text x=\"375\" y=\"98\" font-size=\"11.5\" fill=\"#713f12\">• Örnek: 800 TL'lik mont %25 indirimle satılıyor.</text>\n  <text x=\"375\" y=\"120\" font-size=\"11.5\" fill=\"#713f12\">  İndirim tutarı: 800 × 0,25 = 200 TL</text>\n  <text x=\"375\" y=\"142\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#854d0e\">  İndirimli satış fiyatı: 800 − 200 = 600 TL</text>\n  <text x=\"375\" y=\"168\" font-size=\"11.5\" fill=\"#713f12\">• Ondalık Birim Fiyat: Kilosu 42,5 TL olan</text>\n  <text x=\"375\" y=\"188\" font-size=\"11.5\" fill=\"#713f12\">  cevizden 2,4 kg alan kişi:</text>\n  <text x=\"375\" y=\"210\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#854d0e\">  42,5 × 2,4 = 102 TL öder.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Ondalık Gösterimlerle Bölme İşleminde Genişletme",
+          "metin": "Örneğin {koyu:18 L} zeytinyağını {koyu:0,75 L}'lik şişelere doldururken {kesir:18|0,75} ifadesini 100 ile genişleterek {kesir:1800|75} = {koyu:24 şişe} bulabilir ya da {koyu:0,75 = {kesir:3|4}} yazıp {koyu:18 ÷ {kesir:3|4} = 18 × {kesir:4|3} = 24 şişe} sonucuna kolayca ulaşabiliriz."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Tahmin ve Sonuç Kontrolü",
+          "metin": "Ondalık sayılarla işlem yapmadan önce sayıları en yakın doğal sayıya yuvarlayarak sonucu tahmin etmek, virgül kaydırma hatalarını hemen fark etmemizi sağlar."
+        }
+      ]
+    },
+    {
+      "baslik": "Standart Uzunluk Ölçme Birimleri ve Dönüşümler (MAT.6.1.8)",
+      "metin": [
+        "Uluslararası birim sisteminde temel uzunluk ölçme birimi {koyu:metre (m)}dir. Metreden büyük uzunlukları (şehirler arası mesafe, saha boyu) ölçmek için metrenin {koyu:üst katları}, metreden küçük uzunlukları (kalem boyu, karınca boyu) ölçmek için ise metrenin {koyu:alt katları} kullanılır.",
+        "Uzunluk ölçme birimleri büyükten küçüğe doğru şu sırayla dizilir: {koyu:Kilometre (km) — Hektometre (hm) — Dekametre (dam) — Metre (m) — Desimetre (dm) — Santimetre (cm) — Milimetre (mm)}. Bu basamak merdiveninde {koyu:yukarıdan aşağıya} inilirken her bir basamak için sayı {koyu:10 ile çarpılır} (ondalık virgül bir basamak sağa kayar); {koyu:aşağıdan yukarıya} çıkılırken ise her bir basamak için sayı {koyu:10'a bölünür} (ondalık virgül bir basamak sola kayar).",
+        "Günlük yaşamda en çok kullandığımız temel dönüşümler şunlardır: {koyu:1 km = 1000 m}, {koyu:1 m = 10 dm = 100 cm = 1000 mm} ve {koyu:1 cm = 10 mm}. Farklı birimlerle verilen iki uzunluğu toplarken, çıkarırken veya karşılaştırırken her ikisini de {koyu:aynı birime} çeviririz. Örneğin {koyu:2,4 km + 350 m} işlemini metre cinsinden yaparken {koyu:2,4 km = 2400 m} yazılır ve {koyu:2400 m + 350 m = 2750 m} bulunur."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">STANDART UZUNLUK ÖLÇME BİRİMLERİ BASAMAKLARI (MAT.6.1.8)</text>\n  <rect x=\"25\" y=\"46\" width=\"650\" height=\"196\" rx=\"8\" fill=\"#ecfeff\" stroke=\"#06b6d4\" stroke-width=\"1.5\"/>\n  <rect x=\"45\" y=\"64\" width=\"76\" height=\"32\" rx=\"6\" fill=\"#dbeafe\" stroke=\"#2563eb\"/>\n  <text x=\"83\" y=\"85\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">km</text>\n  <rect x=\"130\" y=\"82\" width=\"76\" height=\"32\" rx=\"6\" fill=\"#dbeafe\" stroke=\"#2563eb\"/>\n  <text x=\"168\" y=\"103\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">hm</text>\n  <rect x=\"215\" y=\"100\" width=\"76\" height=\"32\" rx=\"6\" fill=\"#dbeafe\" stroke=\"#2563eb\"/>\n  <text x=\"253\" y=\"121\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">dam</text>\n  <rect x=\"300\" y=\"118\" width=\"84\" height=\"36\" rx=\"6\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"2\"/>\n  <text x=\"342\" y=\"141\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#854d0e\">m (Metre)</text>\n  <rect x=\"393\" y=\"138\" width=\"76\" height=\"32\" rx=\"6\" fill=\"#dcfce7\" stroke=\"#16a34a\"/>\n  <text x=\"431\" y=\"159\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">dm</text>\n  <rect x=\"478\" y=\"156\" width=\"76\" height=\"32\" rx=\"6\" fill=\"#dcfce7\" stroke=\"#16a34a\"/>\n  <text x=\"516\" y=\"177\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">cm</text>\n  <rect x=\"563\" y=\"174\" width=\"76\" height=\"32\" rx=\"6\" fill=\"#dcfce7\" stroke=\"#16a34a\"/>\n  <text x=\"601\" y=\"195\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">mm</text>\n\n  <text x=\"490\" y=\"84\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">Aşağı İnerken: Her basamakta × 10</text>\n  <text x=\"490\" y=\"104\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">(1 km = 1000 m · 1 m = 100 cm = 1000 mm)</text>\n  <text x=\"195\" y=\"178\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">Yukarı Çıkarken: Her basamakta ÷ 10</text>\n  <text x=\"195\" y=\"198\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">(250 cm = 2,5 m · 3400 m = 3,4 km)</text>\n  <text x=\"350\" y=\"228\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#0e7490\">Temel Ölçüt Birim: Metre (m) · Üst Katlar: km, hm, dam · Alt Katlar: dm, cm, mm</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Farklı Birimler Doğrudan Toplanıp Çıkarılamaz!",
+          "metin": "Bir problemde uzunluklardan biri {koyu:metre (m)}, diğeri {koyu:santimetre (cm)} olarak verilmişse işlem yapmadan önce mutlaka istenen ortak birime dönüşüm yapılmalıdır (örneğin {koyu:3 m − 45 cm = 300 cm − 45 cm = 255 cm = 2,55 m})."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Basamak Sırasını Kodlayarak Hatırlayalım",
+          "metin": "«{koyu:K}amuran {koyu:H}alam {koyu:Dam}da {koyu:M}ehmet {koyu:D}ayım {koyu:C}amda {koyu:M}erhaba {koyu:M}erhaba» tekerlemesiyle {koyu:km – hm – dam – m – dm – cm – mm} sırasını hatasız hatırlayabiliriz."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir çiftçi 240 dönümlük tarlasının önce {kesir:1|3}'ine buğday, sonra kalan kısmının {kesir:3|8}'ine arpa ekmiştir. Geriye ekilmemiş kaç dönüm tarla kalmıştır?",
+      "cevap": "1. Adım (Buğday): 240 × {kesir:1|3} = 80 dönüm buğday ekildi.\n2. Adım (Kalan): 240 − 80 = 160 dönüm tarla kaldı.\n3. Adım (Arpa): Kalanın {kesir:3|8}'i ➔ 160 × {kesir:3|8} = (160 ÷ 8) × 3 = 60 dönüm arpa ekildi.\n4. Adım (Son kalan): 160 − 60 = 100 dönüm ekilmemiş tarla kalmıştır."
+    },
+    {
+      "soru": "Bir su deposunun {kesir:2|9}'si doludur. Depoya 120 litre daha su eklendiğinde deponun yarısı ({kesir:1|2}'si) dolduğuna göre bu deponun tamamı kaç litre su alır?",
+      "cevap": "Yarım depo {kesir:1|2} kesridir. Paydaları 18'de eşitlersek: Başlangıçta {kesir:2|9} = {kesir:4|18}'i doluydu; su eklenince {kesir:1|2} = {kesir:9|18}'i doldu.\nAradaki fark: {kesir:9|18} − {kesir:4|18} = {kesir:5|18}'dir. Deponun {kesir:5|18}'i 120 litre ise 1 parçası 120 ÷ 5 = 24 litredir.\nTamamı (18 parça): 24 × 18 = 432 litre su alır."
+    },
+    {
+      "soru": "Elif harçlığının %40'ı ile kırtasiye malzemesi, 0,25'i ile hikâye eseri almış ve geriye 140 TL parası kalmıştır. Elif'in başlangıçtaki harçlığı kaç TL'dir?",
+      "cevap": "Ondalık gösterim olan 0,25 = %25 demektir. Harcanan toplam yüzde: %40 + %25 = %65'tir.\nGeriye kalan yüzde: %100 − %65 = %35'tir.\nHarçlığın %35'i ({kesir:35|100}'ü) 140 TL ise: 140 ÷ 35 = 4 TL (%1'i) ➔ 4 × 100 = 400 TL başlangıçtaki harçlığıdır."
+    },
+    {
+      "soru": "Kilogramı 64,5 TL olan elmadan 2 kg ve kilogramı 85,25 TL olan çilekten 1,6 kg alan bir kişi satıcıya 300 TL verirse kaç TL para üstü alır?",
+      "cevap": "• Elma tutarı: 64,5 × 2 = 129 TL\n• Çilek tutarı: 85,25 × 1,6 = 136,4 TL\n• Toplam tutar: 129 + 136,4 = 265,4 TL\n• Para üstü: 300 − 265,4 = 34,6 TL para üstü alır."
+    },
+    {
+      "soru": "Aşağıdaki uzunluk ölçme birimi dönüşümlerini yapınız: a) 4,75 km = ... m, b) 360 cm = ... m, c) 0,8 m = ... mm.",
+      "cevap": "a) km'den m'ye 3 basamak aşağı inilir (× 1000): 4,75 × 1000 = 4750 m.\nb) cm'den m'ye 2 basamak yukarı çıkılır (÷ 100): 360 ÷ 100 = 3,6 m.\nc) m'den mm'ye 3 basamak aşağı inilir (× 1000): 0,8 × 1000 = 800 mm."
+    },
+    {
+      "soru": "Uzunluğu 4,2 metre olan bir tahta parçası, her biri 35 santimetre uzunluğunda eş parçalara ayrılacaktır. Bu işlem sonunda kaç eş parça elde edilir?",
+      "cevap": "Önce birimleri santimetreye eşitleyelim: 4,2 m = 4,2 × 100 = 420 cm.\nParça sayısı: 420 cm ÷ 35 cm = 12 eş parça elde edilir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir otobüs 450 kilometrelik yolun önce {kesir:2|5}'sini, mola verdikten sonra ise kalan yolun {kesir:1|3}'ini gitmiştir. Otobüsün varış noktasına ulaşması için kaç kilometre daha yolu kalmıştır?",
+      "secenekler": [
+        "180 km",
+        "150 km",
+        "120 km",
+        "90 km"
+      ],
+      "dogru": 0,
+      "aciklama": "Önce 450 × {kesir:2|5} = 180 km gider, geriye 450 − 180 = 270 km kalır. Sonra kalanın {kesir:1|3}'i olan 270 × {kesir:1|3} = 90 km daha gider. Geriye 270 − 90 = 180 km yol kalır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Etiket fiyatı 1200 TL olan bir spor ayakkabıya sezon sonunda %30 indirim uygulanıyor. İndirimli fiyat üzerinden kasada 0,1 ({kesir:1|10}) oranında ek kampanya indirimi daha yapıldığına göre ayakkabının son satış fiyatı kaç TL olur?",
+      "secenekler": [
+        "720 TL",
+        "756 TL",
+        "840 TL",
+        "880 TL"
+      ],
+      "dogru": 1,
+      "aciklama": "İlk indirim: 1200 × {kesir:30|100} = 360 TL ➔ İndirimli fiyat: 1200 − 360 = 840 TL. Ek 0,1 ({kesir:1|10}) indirim: 840 × 0,1 = 84 TL ➔ Son fiyat: 840 − 84 = 756 TL."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir terzi 6 metre uzunluğundaki kumaşın önce 1,8 metresini, sonra 240 santimetresini kullanmıştır. Terzinin elinde geriye kaç santimetre kumaş kalmıştır?",
+      "secenekler": [
+        "140 cm",
+        "160 cm",
+        "180 cm",
+        "220 cm"
+      ],
+      "dogru": 2,
+      "aciklama": "Tüm uzunlukları santimetreye çevirelim: 6 m = 600 cm, 1,8 m = 180 cm. Kullanılan toplam kumaş: 180 + 240 = 420 cm. Kalan: 600 − 420 = 180 cm."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki standart uzunluk ölçme birimi dönüşümlerinden hangisi yanlıştır?",
+      "secenekler": [
+        "3,5 km = 3500 m",
+        "420 mm = 42 cm",
+        "2,8 m = 28 dm",
+        "65 cm = 6,5 m"
+      ],
+      "dogru": 3,
+      "aciklama": "Santimetreden metreye çıkarken 100'e bölünür: 65 cm = 65 ÷ 100 = 0,65 m olmalıdır (6,5 m = 650 cm'dir)."
+    },
+    {
+      "tur": "dy",
+      "soru": "Kesir-ondalık-yüzde problemleri ve uzunluk ölçme birimleriyle ilgili ifadelerin Doğru (D) ya da Yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Bir sayının %25'ini bulmak, o sayıyı 0,25 ile çarpmak veya 4'e bölmek ile aynı sonucu verir.",
+          "dogru": true
+        },
+        {
+          "metin": "Standart uzunluk ölçme birimlerinde temel ölçüt birim metredir (m).",
+          "dogru": true
+        },
+        {
+          "metin": "Metreden milimetreye inilirken sayı 100 ile çarpılır.",
+          "dogru": false
+        },
+        {
+          "metin": "{kesir:3|5}'ü 45 olan sayının tamamı 75'tir.",
+          "dogru": true
+        },
+        {
+          "metin": "Uzunluğu 2,5 km olan yol ile 500 m olan yolun toplamı 750 metredir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki uzunluk ve kesir-yüzde ifadelerini eş değer karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "3,2 km",
+          "3200 m"
+        ],
+        [
+          "450 cm",
+          "4,5 m"
+        ],
+        [
+          "75 mm",
+          "7,5 cm"
+        ],
+        [
+          "200 sayısının %25'i",
+          "50"
+        ],
+        [
+          "{kesir:2|3}'si 40 olan sayının tamamı",
+          "60"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavram veya sayılarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Uluslararası birim sisteminde temel uzunluk ölçme birimi ___ olarak kabul edilir.",
+          "cevap": "metre"
+        },
+        {
+          "metin": "Uzunluk ölçme basamaklarında yukarıdan aşağıya her bir basamak inildiğinde sayı ___ ile çarpılır.",
+          "cevap": "10"
+        },
+        {
+          "metin": "Toplam 18 litrelik meyve suyunun tamamı 0,5 litrelik şişelere doldurulduğunda ___ şişe gerekir.",
+          "cevap": "36"
+        },
+        {
+          "metin": "Bir metrenin binde birine (1 m ÷ 1000) ___ adı verilir ve «mm» ile gösterilir.",
+          "cevap": "milimetre"
+        },
+        {
+          "metin": "Fiyatı 500 TL olan bir ürüne %20 zam yapıldığında ürünün yeni satış fiyatı ___ TL olur.",
+          "cevap": "600"
+        }
+      ],
+      "fazla": [
+        "100",
+        "400"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Toplam 1,5 kilometre uzunluğundaki bir yürüyüş parkurunun önce {kesir:2|5}'sini, ardından 450 metresini yürüyen bir sporcunun parkuru tamamlamak için kaç santimetre yolu kaldığını 3 adımda hesaplayınız.",
+      "ipuclari": [
+        "Birinci adım: Parkurun toplam uzunluğunu (1,5 km) metreye çeviriniz.",
+        "İkinci adım: Parkurun {kesir:2|5}'sini hesaplayıp yürünülen toplam metre miktarını bulunuz ve kalan metreyi hesaplayınız.",
+        "Üçüncü adım: Kalan metre uzunluğunu 100 ile çarparak santimetre (cm) cinsinden ifade ediniz."
+      ],
+      "cevap": "1. Birim Dönüşümü (km ➔ m): 1 km = 1000 m olduğundan parkurun tamamı 1,5 × 1000 = 1500 metredir.\n2. Yürünülen ve Kalan Mesafe (m): İlk bölümde 1500 × {kesir:2|5} = (1500 ÷ 5) × 2 = 600 metre yürümüştür. İkinci bölümde 450 metre daha yürüyünce toplam 600 + 450 = 1050 metre yürümüş olur. Geriye 1500 − 1050 = 450 metre yol kalmıştır.\n3. Santimetreye Dönüşüm (m ➔ cm): 1 m = 100 cm olduğundan kalan yol 450 × 100 = 45 000 santimetredir."
+    }
+  ],
+  "ozet": [
+    "{koyu:Kesir Problemleri (MAT.6.1.7):} Bir bütünün {kesir:a|b} kadarını bulmak için bütün kesirle {koyu:çarpılır}; {kesir:a|b} kadarı verilen bütünün tamamını bulmak için verilen değer kesre {koyu:bölünür}.",
+    "{koyu:Kalanın Kesri ve Modelleme:} Çok adımlı kesir problemlerinde «kalanın kesri» ifadesine dikkat edilir; şerit ve kutu modelleri çizmek çözümü somutlaştırır.",
+    "{koyu:Ondalık ve Yüzde Eş Değerliği:} Problemlerde {koyu:%50 = 0,5 = {kesir:1|2}}, {koyu:%25 = 0,25 = {kesir:1|4}}, {koyu:%75 = 0,75 = {kesir:3|4}} ve {koyu:%20 = 0,2 = {kesir:1|5}} dönüşümleri kullanılarak tek gösterim üzerinden işlem yapılır.",
+    "{koyu:Standart Uzunluk Ölçme Birimleri (MAT.6.1.8):} Temel birim {koyu:metre (m)}dir; büyükten küçüğe sıralama {koyu:km – hm – dam – m – dm – cm – mm} şeklindedir.",
+    "{koyu:Birimler Arası Dönüşüm Kuralı:} Basamaklarda aşağı inerken her adımda {koyu:10 ile çarpılır} (1 km = 1000 m, 1 m = 100 cm = 1000 mm); yukarı çıkarken her adımda {koyu:10'a bölünür}."
+  ]
+}

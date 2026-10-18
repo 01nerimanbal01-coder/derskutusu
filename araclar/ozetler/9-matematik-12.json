@@ -1,0 +1,263 @@
+{
+  "ad": "9-matematik-12",
+  "sinif": 9,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 12,
+  "tarih": "7-11 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "NİCELİKLER VE DEĞİŞİMLER",
+  "konu": "Doğrusal Fonksiyonlarla ve Mutlak Değerle İfade Edilen Denklem ve Eşitsizlikler İçeren Gerçek Yaşam Problemleri ve Modelleme (MAT.9.2.3)",
+  "ciktilar": [
+    "Doğrusal fonksiyonlarla ifade edilebilen denklem ve eşitsizliklerin problem bağlamındaki sözel, tablo, grafik ve cebirsel temsillerini birbirine dönüştürerek yorumlar (MAT.9.2.3.a-ç).",
+    "Gerçek yaşam problemlerinde (tarife karşılaştırma, başabaş noktası, kademeli/parçalı ücretlendirme, erime-tükenme) uygun çözüm stratejileri oluşturarak problemi çözer ve doğrular (MAT.9.2.3.d-f).",
+    "Mutlak değerli denklem ve eşitsizliklerle modellenen kalite kontrol, hata payı (tolerans aralığı) ve mesafe problemlerinde olası çözüm stratejilerini değerlendirerek çıkarımlar yapar (MAT.9.2.3.g-h)."
+  ],
+  "giris": "Doğrusal fonksiyonların ve mutlak değer fonksiyonlarının nitel özelliklerini inceledikten sonra, bu haftaki dersimizde tüm bu matematiksel araçları {koyu:gerçek yaşam problemlerinin modellenmesi ve çözümünde} kullanıyoruz. İki farklı internet veya kargo tarifesinden hangisinin hangi koşullarda daha ekonomik olduğunu belirlemekten kademeli su faturalarına, fabrikalardaki üretim standart sapma (tolerans) aralıklarından yakıt tüketim modellerine kadar pek çok günlük hayat durumunu cebirsel ve grafiksel argümanlarla çözeceğiz.",
+  "bolumler": [
+    {
+      "baslik": "Doğrusal Modelleme, Başabaş Noktası ve Karşılaştırma Problemleri (MAT.9.2.3.a-e)",
+      "metin": [
+        "Birim zamandaki veya birim miktardaki değişim hızı (artış ya da azalış oranı) sabit olan gerçek yaşam durumları {koyu:f(x) = a · x + b} doğrusal fonksiyonuyla modellenir. Bu modelde {koyu:b = f(0)} sabit terimi {koyu:başlangıç değerini} (sabit abonelik ücreti, taksimetre açılış ücreti, dikilen fidanın ilk boyu, depodaki başlangıç yakıt miktarı); {koyu:a} katsayısı (doğrunun eğimi) ise {koyu:birim değişim oranını} (1 km başına ücret, 1 ayda uzama miktarı, 1 saatte harcanan yakıt) temsil eder. Artan süreçlerde {koyu:a > 0}, azalan/tükenen süreçlerde {koyu:a < 0} alınır ve fonksiyonun sıfırı ({koyu:f(x) = 0} → {koyu:x = -b/a}) deponun veya bataryanın tamamen bittiği anı verir.",
+        "İki farklı seçeneğin (örneğin A ve B operatörlerinin, elektrikli ve benzinli iki aracın veya gelir ile gider fonksiyonlarının) karşılaştırıldığı problemlerde her iki durum ayrı birer doğrusal fonksiyon olarak yazılır: {koyu:f(x) = a1 · x + b1} ve {koyu:g(x) = a2 · x + b2}. İki seçeneğin birbirine eşit olduğu {koyu:başabaş (denge) noktası}, grafiklerin kesişim noktası olan {koyu:f(x) = g(x)} denkleminin çözümüyle bulunur.",
+        "Hangi seçeneğin daha avantajlı (daha ekonomik veya daha kârlı) olduğunu belirlemek için ise {koyu:f(x) < g(x)} veya {koyu:f(x) > g(x)} doğrusal eşitsizlikleri çözülür. Grafik üzerinde, eşitliği sağlayan {koyu:x0} kesişim noktasının solunda ve sağında hangi doğrunun daha altta (daha düşük maliyetli) veya daha üstte (daha yüksek gelirli) kaldığı doğrudan okunarak karar verilir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">DOĞRUSAL FONKSİYONLARLA GERÇEK YAŞAM MODELLEMESİ (MAT.9.2.3)</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"195\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">MODELLEME ADIMLARI VE BİLEŞENLER</text>\n  <text x=\"35\" y=\"96\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">Doğrusal Model: f(x) = a · x + b</text>\n  <text x=\"35\" y=\"120\" font-size=\"10.5\" fill=\"#1d4ed8\">• b (Sabit Terim / Başlangıç Değeri - f(0)):</text>\n  <text x=\"43\" y=\"136\" font-size=\"10\" fill=\"#1e3a8a\">Sabit ücret, taksimetre açılış ücreti, dikilen fidanın</text>\n  <text x=\"43\" y=\"150\" font-size=\"10\" fill=\"#1e3a8a\">ilk boyu, depodaki başlangıç su miktarı.</text>\n  <text x=\"35\" y=\"174\" font-size=\"10.5\" fill=\"#1d4ed8\">• a (Eğim / Birim Değişim Oranı - Δy / Δx):</text>\n  <text x=\"43\" y=\"190\" font-size=\"10\" fill=\"#1e3a8a\">Birim zamandaki artış (+a) veya azalış (-a) miktarı.</text>\n  <text x=\"35\" y=\"216\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b91c1c\">• Başabaş Noktası: f(x) = g(x) (İki doğrunun kesişimi)</text>\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"195\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">KARŞILAŞTIRMALI TARİFE ANALİZİ</text>\n  <line x1=\"395\" y1=\"210\" x2=\"650\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"395\" y1=\"210\" x2=\"395\" y2=\"85\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"395\" y1=\"185\" x2=\"635\" y2=\"95\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n  <line x1=\"395\" y1=\"150\" x2=\"635\" y2=\"120\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n  <circle cx=\"508\" cy=\"142\" r=\"5\" fill=\"#15803d\"/>\n  <line x1=\"508\" y1=\"142\" x2=\"508\" y2=\"210\" stroke=\"#15803d\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n  <text x=\"508\" y=\"226\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">x = x0 (Eşitlik)</text>\n  <text x=\"605\" y=\"92\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#2563eb\">f(x) (A Firması)</text>\n  <text x=\"605\" y=\"136\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">g(x) (B Firması)</text>\n  <text x=\"410\" y=\"102\" font-size=\"10\" fill=\"#14532d\">• x &lt; x0 iken A ucuz;</text>\n  <text x=\"410\" y=\"116\" font-size=\"10\" fill=\"#14532d\">• x &gt; x0 iken B ucuzdur.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Gerçek yaşam problemlerinde denklemi çözdükten sonra tanım kümesini kontrol etmeyi unutmayınız! Örneğin ürün adedi tam sayı olmalı, süre ve mesafe ise negatif olmamalıdır (x ≥ 0)."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Bir işletmenin Gelir fonksiyonu R(x) ve Maliyet fonksiyonu C(x) ise; R(x) = C(x) noktası 'başabaş (kâra geçiş) noktası'dır. İşletmenin kâr etmesi için R(x) > C(x) eşitsizliği sağlanmalıdır."
+        }
+      ]
+    },
+    {
+      "baslik": "Kademeli (Parçalı Doğrusal) Tarifeler ve Farklı Temsiller",
+      "metin": [
+        "Su, elektrik, doğal gaz faturalandırması, kargo gönderim ücretleri veya gelir vergisi dilimleri gibi gerçek yaşam uygulamalarında, belirli bir sınır değer (kritik nokta) aşıldığında birim fiyat değişir. Bu tür durumlar tek bir doğrusal denklemle değil, {koyu:parçalı doğrusal fonksiyonlarla} modellenir.",
+        "Örneğin bir belediyenin aylık su tüketiminde ilk {koyu:k} metreküp ({koyu:0 ≤ x ≤ k}) için birim fiyatı {koyu:p1} TL, {koyu:k} metreküpü aşan her bir metreküp ({koyu:x > k}) için ise birim fiyatı {koyu:p2} TL olarak belirlediğini düşünelim. Bu durumda ikinci kademedeki ({koyu:x > k}) bir abonenin ödeyeceği toplam tutar {koyu:f(x) = p2 · x} DEĞİL; ilk {koyu:k} metreküpün ücreti artı aşan kısmın ({koyu:x - k}) ücreti olan {koyu:f(x) = p1 · k + p2 · (x - k)} şeklinde kurulur.",
+        "Problem çözme sürecinde (MAT.9.2.3.c-f) sözel olarak verilen kademeli bir tarife önce {koyu:değer tablosuna}, ardından {koyu:parçalı cebirsel denkleme} ve {koyu:kırıklı doğru grafiğine} dönüştürülür. Elde edilen çözüm, grafikteki kırılma (kritik) noktaları ve sınır değerleri yerine konularak doğrulanır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">MUTLAK DEĞERLİ DENKLEM VE EŞİTSİZLİK PROBLEMLERİ (TOLERANS ARALIĞI)</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"195\" rx=\"10\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\">İDEAL DEĞER VE SAPMA (HATA PAYI) MODELİ</text>\n  <text x=\"35\" y=\"94\" font-size=\"11\" font-weight=\"bold\" fill=\"#78350f\">• İdeal (Hedef) Değer = a  |  Sapma (Tolerans) = Δ</text>\n  <text x=\"35\" y=\"120\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">1) Sınır Değerler (En Az ve En Çok): |x - a| = Δ</text>\n  <text x=\"43\" y=\"138\" font-size=\"10.5\" fill=\"#92400e\">x_min = a - Δ   ve   x_max = a + Δ</text>\n  <text x=\"35\" y=\"164\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">2) Kabul Edilebilir (Standart) Aralık: |x - a| ≤ Δ</text>\n  <text x=\"43\" y=\"182\" font-size=\"10.5\" fill=\"#92400e\">-Δ ≤ x - a ≤ Δ   ⇒   a - Δ ≤ x ≤ a + Δ</text>\n  <text x=\"35\" y=\"208\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\">3) Standart Dışı (Hatalı) Bölge: |x - a| &gt; Δ</text>\n  <text x=\"43\" y=\"226\" font-size=\"10.5\" fill=\"#92400e\">x &lt; a - Δ   veya   x &gt; a + Δ</text>\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"195\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#7e22ce\">UÇ DEĞERLERDEN DENKLEM KURMA</text>\n  <text x=\"375\" y=\"96\" font-size=\"10.5\" fill=\"#581c87\">Bir niceliğin alabileceği en küçük değer x_min ve</text>\n  <text x=\"375\" y=\"112\" font-size=\"10.5\" fill=\"#581c87\">en büyük değer x_max verildiğinde:</text>\n  <text x=\"375\" y=\"138\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">• Merkez (Ortalama): a = (x_min + x_max) / 2</text>\n  <text x=\"375\" y=\"162\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">• Sapma (Yarıçap): Δ = (x_max - x_min) / 2</text>\n  <rect x=\"375\" y=\"178\" width=\"290\" height=\"50\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d8b4fe\" stroke-width=\"1.5\"/>\n  <text x=\"385\" y=\"198\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#581c87\">Örnek: 18 °C ile 26 °C arası konfor sıcaklığı:</text>\n  <text x=\"385\" y=\"216\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b91c1c\">a = (18+26)/2 = 22, Δ = (26-18)/2 = 4 ⇒ |x - 22| ≤ 4</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Kademeli tarife sorularında en sık yapılan hata, sınır değer aşıldığında tüm tüketimi yeni fiyattan çarpmaktır! Yeni birim fiyat yalnızca sınır değeri AŞAN MİKTARA (x - sınır) uygulanır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Bir kademeli faturada ödenen toplam tutar verildiğinde, önce 1. kademenin maksimum tutarını (p1 · k) hesaplayınız; eğer fatura bu tutardan büyükse tüketim 2. kademeye (x > k) geçmiş demektir."
+        }
+      ]
+    },
+    {
+      "baslik": "Mutlak Değerli Denklem ve Eşitsizliklerle Modelleme (MAT.9.2.3.f-h)",
+      "metin": [
+        "Endüstriyel üretimde kalite kontrol (standart kütle veya boy uzunluğu), ideal oda/sera sıcaklığı, laboratuvar ölçüm hata payı veya doğrusal bir yolda belirli bir merkeze olan uzaklık problemleri {koyu:mutlak değerli denklem ve eşitsizliklerle} modellenir. Çünkü mutlak değer {koyu:|x - a|}, sayı doğrusunda {koyu:x} gerçek sayısının {koyu:a} ideal (merkez) değerine olan uzaklığını (sapma miktarını) ifade eder.",
+        "Bir niceliğin ideal (hedef) değeri {koyu:a} ve izin verilen maksimum sapma (hata payı / tolerans) miktarı {koyu:Δ (Δ ≥ 0)} olduğunda üç temel model kurulur: Birincisi {koyu:Sınır Değerler Denklemi:} {koyu:|x - a| = Δ} denkleminin kökleri olan {koyu:x_min = a - Δ} ve {koyu:x_max = a + Δ} kabul edilebilir en küçük ve en büyük sınır değerleri verir. İkincisi {koyu:Kabul Edilebilir (Standartlara Uygun) Aralık:} {koyu:|x - a| ≤ Δ} eşitsizliği olup açılımı {koyu:a - Δ ≤ x ≤ a + Δ} kapalı aralığıdır. Üçüncüsü {koyu:Standart Dışı (Hatalı / İade) Bölge:} {koyu:|x - a| > Δ} eşitsizliği olup {koyu:x < a - Δ} veya {koyu:x > a + Δ} aralıklarını temsil eder.",
+        "Tersine, bir niceliğin alabileceği en küçük değer ({koyu:x_min}) ve en büyük değer ({koyu:x_max}) biliniyorsa; mutlak değer modelini kurmak için önce aralığın tam ortası olan {koyu:ideal değer (merkez) a = {kesir:x_min + x_max|2}} formülüyle, ardından {koyu:sapma miktarı Δ = {kesir:x_max - x_min|2}} formülüyle hesaplanır ve model {koyu:|x - a| ≤ Δ} (veya uç noktalar için {koyu:|x - a| = Δ}) olarak yazılır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">PARÇALI DOĞRUSAL TARİFELER (KADEMELİ FATURALANDIRMA)</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"195\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">KADEMELİ SU / ELEKTRİK / KARGO MODELİ</text>\n  <text x=\"35\" y=\"96\" font-size=\"10.5\" fill=\"#1e3a8a\">Tüketim miktarına (x) göre birim fiyatın değiştiği</text>\n  <text x=\"35\" y=\"112\" font-size=\"10.5\" fill=\"#1e3a8a\">durumlar parçalı doğrusal fonksiyonla modellenir:</text>\n  <text x=\"35\" y=\"138\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e40af\">Örnek Su Tarifesi (x m³ tüketim):</text>\n  <text x=\"43\" y=\"156\" font-size=\"10.5\" fill=\"#1d4ed8\">• 1. Kademe (0 ≤ x ≤ 15 m³): m³ başına 20 TL</text>\n  <text x=\"52\" y=\"172\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\">f(x) = 20x</text>\n  <text x=\"43\" y=\"194\" font-size=\"10.5\" fill=\"#1d4ed8\">• 2. Kademe (x &gt; 15 m³): Aşan her m³ için 30 TL</text>\n  <text x=\"52\" y=\"212\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b91c1c\">f(x) = 20·15 + 30·(x - 15) = 30x - 150</text>\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"195\" rx=\"10\" fill=\"#fff1f2\" stroke=\"#e11d48\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#9f1239\">STRATEJİ VE DOĞRULAMA (MAT.9.2.3.f-h)</text>\n  <text x=\"375\" y=\"96\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#881337\">1. Temsiller Arası Dönüşüm:</text>\n  <text x=\"383\" y=\"112\" font-size=\"10\" fill=\"#9f1239\">Sözel problem → Tablo → Cebirsel denklem → Grafik.</text>\n  <text x=\"375\" y=\"138\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#881337\">2. Kök ve Tanım Kümesi Kontrolü:</text>\n  <text x=\"383\" y=\"154\" font-size=\"10\" fill=\"#9f1239\">Bulunan x değeri gerçek yaşam bağlamına uygun</text>\n  <text x=\"383\" y=\"170\" font-size=\"10\" fill=\"#9f1239\">olmalıdır (zaman, kütle, adet negatif olamaz!).</text>\n  <text x=\"375\" y=\"196\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">3. Farklı Stratejilerin Karşılaştırılması:</text>\n  <text x=\"383\" y=\"212\" font-size=\"10\" fill=\"#166534\">Grafik kesişimi ile cebirsel çözüm aynı sonucu verir.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Uç değerleri 480 g ile 520 g olan bir ürünün mutlak değer eşitsizliği kurulurken |x - 480| ≤ 520 YAZILMAZ! Önce merkez a = (480 + 520) / 2 = 500 ve sapma Δ = (520 - 480) / 2 = 20 bulunarak |x - 500| ≤ 20 yazılır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Doğrusal bir otoyolda k. kilometrede bulunan bir dinlenme tesisine en fazla d km uzaklıkta olan noktaların kümesi |x - k| ≤ d eşitsizliğiyle; tam d km uzaklıktaki iki nokta ise |x - k| = d denklemiyle bulunur."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir araç kiralama şirketinde A paketi için günlük sabit 800 TL ve gidilen her kilometre için 3 TL; B paketi için ise günlük sabit 1100 TL ve gidilen her kilometre için 1,5 TL ücret alınmaktadır. Bir günde kaç kilometre yol gidilirse iki paketin ücreti birbirine eşit olur? Hangi kilometre aralığında B paketi daha ekonomiktir?",
+      "cevap": "Gidilen yol x km olsun. A paketinin maliyet fonksiyonu: f(x) = 3x + 800; B paketinin maliyet fonksiyonu: g(x) = 1,5x + 1100. Ücretlerin eşit olduğu başabaş noktası: 3x + 800 = 1,5x + 1100 ⇒ 1,5x = 300 ⇒ x = 200 km'dir. B paketinin daha ekonomik olması için g(x) < f(x) olmalıdır: 1,5x + 1100 < 3x + 800 ⇒ 300 < 1,5x ⇒ x > 200 km. Yani günde 200 km'den fazla yol gidildiğinde B paketi daha ekonomiktir."
+    },
+    {
+      "soru": "Bir su dağıtım şirketi aylık su tüketiminde ilk 20 m³ için m³ başına 15 TL, 20 m³'ü aşan her bir m³ için ise 25 TL ücret almaktadır. Aylık su tüketimi x m³ olan bir abonenin ödeyeceği faturayı (f(x)) parçalı doğrusal fonksiyon olarak yazınız ve 32 m³ su tüketen bir ailenin kaç TL ödeyeceğini bulunuz.",
+      "cevap": "1. Kademe (0 ≤ x ≤ 20): f(x) = 15x. 2. Kademe (x > 20): İlk 20 m³ için 20 × 15 = 300 TL ödenir, aşan (x - 20) m³ için 25 · (x - 20) TL ödenir: f(x) = 300 + 25(x - 20) = 25x - 200. Tüketim x = 32 m³ (32 > 20) olduğunda: f(32) = 25 × 32 - 200 = 800 - 200 = 600 TL ödenir."
+    },
+    {
+      "soru": "Bir gıda fabrikasında üretilen 750 gramlık un paketlerinde kalite kontrol standartlarına göre ±15 gram hata payına (sapmaya) izin verilmektedir. Standartlara uygun bir un paketinin kütlesini (x) ifade eden mutlak değer eşitsizliğini yazınız ve kabul edilebilir kütle aralığını bulunuz.",
+      "cevap": "İdeal kütle a = 750 g ve izin verilen maksimum sapma Δ = 15 g'dır. Standartlara uygun paketlerin kütle eşitsizliği: |x - 750| ≤ 15 şeklindedir. Eşitsizlik çözüldüğünde: -15 ≤ x - 750 ≤ 15 ⇒ 735 ≤ x ≤ 765 gram kapalı aralığı elde edilir."
+    },
+    {
+      "soru": "Bir botanik serasında yetiştirilen tropikal bitkilerin sağlıklı gelişebilmesi için sera içi sıcaklığın en az 19 °C, en fazla 27 °C olması gerekmektedir. Sera sıcaklığının (x) ideal sınırlar içinde kalmasını sağlayan mutlak değer eşitsizliğini kurunuz.",
+      "cevap": "Verilen uç değerler x_min = 19 °C ve x_max = 27 °C'dir. Önce ideal merkez sıcaklık (ortalama) bulunur: a = (19 + 27) / 2 = 46 / 2 = 23 °C. Ardından sapma (tolerans) miktarı bulunur: Δ = (27 - 19) / 2 = 8 / 2 = 4 °C. Böylece sera sıcaklığını modelleyen mutlak değer eşitsizliği: |x - 23| ≤ 4 olarak kurulur."
+    },
+    {
+      "soru": "Doğrusal bir otoyolun başlangıç noktasından 140. kilometresinde bir acil yardım istasyonu bulunmaktadır. Bu istasyon, otoyol üzerinde kendisine en fazla 35 km uzaklıktaki bölgelere hizmet verebilmektedir. İstasyonun hizmet sınırlarının otoyolun kaçıncı kilometrelerinde olduğunu mutlak değerli denklem kurarak bulunuz.",
+      "cevap": "İstasyonun konumu a = 140 ve hizmet yarıçapı Δ = 35 km'dir. Hizmet sınırlarını veren mutlak değer denklemi: |x - 140| = 35'tir. Buradan x - 140 = 35 ⇒ x_max = 175. kilometre ve x - 140 = -35 ⇒ x_min = 105. kilometre bulunur (Hizmet bölgesi [105, 175] km aralığıdır)."
+    },
+    {
+      "soru": "Tam dolu olduğunda 60 litre yakıt alan bir otomobil, sabit hızla ilerlerken her 100 kilometrede 6 litre yakıt tüketmektedir. Otomobilin yakıt göstergesi depoda 12 litre yakıt kaldığında uyarı ışığı yakmaktadır. Otomobil tam dolu depoyla yola çıktıktan kaç kilometre sonra uyarı ışığı yanar?",
+      "cevap": "Otomobil 100 km'de 6 litre yakıt tüketiyorsa, 1 km'de 6 / 100 = 0,06 litre yakıt tüketir. Gidilen yol x km olmak üzere depoda kalan yakıt fonksiyonu: f(x) = 60 - 0,06x'tir. Depoda 12 litre kalması için: 60 - 0,06x = 12 ⇒ 0,06x = 48 ⇒ x = 48 / 0,06 = 800 kilometre sonra uyarı ışığı yanar."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "soru": "Bir kurye şirketi sabit 120 TL başlangıç ücreti ve taşınan her 1 kg için 25 TL ücret alırken; ikinci bir kurye şirketi sabit 200 TL başlangıç ücreti ve taşınan her 1 kg için 15 TL ücret almaktadır. Kaç kilogramlık bir gönderide her iki şirketin ücreti birbirine eşit olur?",
+      "secenekler": [
+        "8 kg",
+        "10 kg",
+        "12 kg",
+        "15 kg",
+        "16 kg"
+      ],
+      "dogru": 0,
+      "aciklama": "1. şirketin ücreti f(x) = 25x + 120, 2. şirketin ücreti g(x) = 15x + 200. Eşitlik durumunda: 25x + 120 = 15x + 200 ⇒ 10x = 80 ⇒ x = 8 kg bulunur.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Bir kahve makinesinin ideal demleme sıcaklığı 92 °C olup makine termostatı ±3 °C sapma payı ile çalışmaktadır. Demleme sıcaklığının (x) kabul edilebilir aralığını gösteren mutlak değer eşitsizliği aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "|x - 3| ≤ 92",
+        "|x - 92| ≤ 3",
+        "|x + 92| ≤ 3",
+        "|x - 89| ≤ 95",
+        "|x - 95| ≤ 3"
+      ],
+      "dogru": 1,
+      "aciklama": "İdeal değer a = 92 °C ve sapma miktarı Δ = 3 °C olduğundan, kabul edilebilir sıcaklık aralığı |x - a| ≤ Δ formülüyle |x - 92| ≤ 3 olarak modellenir.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Bir dalgıcın su altındaki güvenli dalış derinliğinin en az 14 metre, en fazla 30 metre olduğu biliniyor. Dalgıcın güvenli derinlik aralığını (x) ifade eden mutlak değer eşitsizliği aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "|x - 14| ≤ 30",
+        "|x - 16| ≤ 22",
+        "|x - 22| ≤ 8",
+        "|x - 20| ≤ 10",
+        "|x - 8| ≤ 22"
+      ],
+      "dogru": 2,
+      "aciklama": "Uç değerler 14 ve 30'dur. Merkez (ortalama) derinlik: a = (14 + 30) / 2 = 22 m. Sapma miktarı: Δ = (30 - 14) / 2 = 8 m. Eşitsizlik: |x - 22| ≤ 8 olur.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Bir otoparkta ilk 2 saatlik park ücreti sabit 50 TL, 2 saati aşan her bir saat için ise 20 TL ek ücret alınmaktadır. Bu otoparkta aracını x saat (x > 2) bırakan bir sürücünün ödeyeceği toplam ücreti (TL) veren fonksiyon aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "f(x) = 20x + 50",
+        "f(x) = 50x + 20",
+        "f(x) = 20x",
+        "f(x) = 20x + 10",
+        "f(x) = 20x - 10"
+      ],
+      "dogru": 3,
+      "aciklama": "x > 2 için ilk 2 saatin ücreti 50 TL, aşan (x - 2) saatin ücreti ise 20 · (x - 2) TL'dir. Toplam ücret: f(x) = 50 + 20(x - 2) = 50 + 20x - 40 = 20x + 10 TL olur.",
+      "tur": "coktan"
+    },
+    {
+      "ifadeler": [
+        {
+          "metin": "Doğrusal bir gerçek yaşam modelinde f(x) = ax + b fonksiyonundaki sabit terim b, x = 0 anındaki başlangıç değerini temsil eder.",
+          "dogru": true,
+          "aciklama": "x = 0 için f(0) = b olur ve sürecin başlangıç miktarını (sabit ücreti, ilk boyu vb.) gösterir."
+        },
+        {
+          "metin": "İki farklı doğrusal tarife fonksiyonunun grafiklerinin kesiştiği noktada iki tarifenin maliyeti birbirinden en uzak değerdedir.",
+          "dogru": false,
+          "aciklama": "İki grafiğin kesişim noktasında f(x) = g(x) olduğu için iki tarifenin maliyeti birbirine EŞİTTİR (başabaş noktasıdır)."
+        },
+        {
+          "metin": "İdeal kütlesi 500 gram ve tolerans payı ±10 gram olan bir ürünün standart dışı (hatalı) sayılacağı aralık |x - 500| > 10 eşitsizliğiyle ifade edilir.",
+          "dogru": true,
+          "aciklama": "|x - 500| ≤ 10 standartlara uygun aralığı, |x - 500| > 10 ise tolerans sınırlarını aşan hatalı bölgeyi gösterir."
+        },
+        {
+          "metin": "En küçük değeri 10 ve en büyük değeri 20 olan bir kapalı aralığın mutlak değer eşitsizliği |x - 10| ≤ 20 şeklinde yazılır.",
+          "dogru": false,
+          "aciklama": "Merkez a = (10+20)/2 = 15 ve sapma Δ = (20-10)/2 = 5 olduğundan eşitsizlik |x - 15| ≤ 5 şeklinde yazılır."
+        },
+        {
+          "metin": "Zamana bağlı olarak içindeki suyun sabit hızla boşaldığı bir havuz modelinde doğrusal fonksiyonun eğimi (a) negatiftir.",
+          "dogru": true,
+          "aciklama": "Miktarın zamanla azaldığı doğrusal süreçlerde birim değişim oranı (eğim) negatif (a < 0) alınır."
+        }
+      ],
+      "tur": "dy"
+    },
+    {
+      "ciftler": [
+        [
+          "f(0) = b (Sabit terim)",
+          "Doğrusal modelde sürecin başlangıç değeri"
+        ],
+        [
+          "Eğim (a = Δy / Δx)",
+          "Birim zamandaki veya birim miktardaki sabit değişim oranı"
+        ],
+        [
+          "f(x) = g(x)",
+          "İki doğrusal modelin eşitlendiği başabaş (kesişim) noktası"
+        ],
+        [
+          "|x - a| ≤ Δ",
+          "İdeal değeri a, hata payı Δ olan standartlara uygun aralık"
+        ],
+        [
+          "|x - a| > Δ",
+          "Tolerans sınırlarının dışında kalan standart dışı bölge"
+        ]
+      ],
+      "tur": "eslestir"
+    },
+    {
+      "cumleler": [
+        {
+          "metin": "Gelir ve gider doğrusal fonksiyonlarının birbirine eşit olduğu ve kârın sıfır olduğu noktaya ___ noktası denir.",
+          "cevap": "başabaş"
+        },
+        {
+          "metin": "Tüketim miktarına göre birim fiyatın belirli sınır değerlerde değiştiği tarifeler ___ doğrusal fonksiyonlarla modellenir.",
+          "cevap": "parçalı"
+        },
+        {
+          "metin": "Endüstriyel üretimde ideal ölçüden izin verilen en fazla sapma miktarına hata payı veya ___ aralığı adı verilir.",
+          "cevap": "tolerans"
+        },
+        {
+          "metin": "Doğrusal bir f(x) = ax + b modelinde doğrunun x eksenini kestiği noktayı (f(x) = 0) bulmak fonksiyonun ___ değerini bulmaktır.",
+          "cevap": "sıfır"
+        },
+        {
+          "metin": "Uç değerleri x_min ve x_max olan bir aralıkta, iki uç değerin aritmetik ortalaması bize ___ değeri verir.",
+          "cevap": "ideal"
+        }
+      ],
+      "fazla": [
+        "üstel",
+        "çarpım"
+      ],
+      "tur": "bosluk"
+    },
+    {
+      "soru": "Bir tekstil atölyesi sabit olarak aylık 45.000 TL kira ve fatura gideri ödemekte, ayrıca ürettiği her bir tişört için 150 TL hammadde ve işçilik maliyeti yapmaktadır. Atölye ürettiği her bir tişörtü 300 TL'den satmaktadır. a) Atölyenin aylık maliyet C(x) ve gelir R(x) fonksiyonlarını yazınız. b) Atölyenin zarar etmemesi (başabaş noktasına ulaşması) için ayda en az kaç tişört satması gerektiğini bulunuz. c) Aylık kârın 30.000 TL ile 36.000 TL arasında olmasını sağlayan tişört satış sayısını (x) mutlak değer eşitsizliğiyle modelleyiniz.",
+      "ipuclari": [
+        "Sabit gideri (45.000 TL) ve birim maliyeti (150x) toplayarak C(x)'i; birim satış fiyatıyla (300x) R(x)'i oluşturunuz.",
+        "Başabaş noktası için R(x) = C(x) denklemini çözünüz ve Kâr fonksiyonunu P(x) = R(x) - C(x) olarak yazınız.",
+        "Kârın 30.000 ≤ P(x) ≤ 36.000 aralığından x'in alt ve üst sınırlarını bularak |x - a| ≤ Δ modelini kurunuz."
+      ],
+      "cevap": "a) Üretilen ve satılan tişört sayısı x olmak üzere; Aylık Maliyet fonksiyonu: C(x) = 150x + 45.000 ve Aylık Gelir fonksiyonu: R(x) = 300x'tir. b) Zarar etmemek (başabaş noktası) için R(x) = C(x) olmalıdır: 300x = 150x + 45.000 ⇒ 150x = 45.000 ⇒ x = 300 tişört satılmalıdır. c) Kâr fonksiyonu: P(x) = R(x) - C(x) = 150x - 45.000'dir. Kârın 30.000 TL ile 36.000 TL arasında olması için: 30.000 ≤ 150x - 45.000 ≤ 36.000 ⇒ 75.000 ≤ 150x ≤ 81.000 ⇒ 500 ≤ x ≤ 540 tişört bulunur. Uç değerler 500 ve 540 olduğundan merkez a = (500 + 540) / 2 = 520 ve sapma Δ = (540 - 500) / 2 = 20 olur. Mutlak değer modeli: |x - 520| ≤ 20 şeklindedir.",
+      "tur": "ogretici"
+    }
+  ],
+  "ozet": [
+    "{koyu:Doğrusal Modelleme:} Sabit değişim oranına sahip gerçek yaşam süreçleri {koyu:f(x) = ax + b} ile modellenir; {koyu:b} başlangıç değerini ({koyu:f(0)}), {koyu:a} ise birim değişim hızını (eğimi) gösterir.",
+    "{koyu:Başabaş Noktası ve Karşılaştırma:} İki farklı seçeneğin eşitlendiği durum {koyu:f(x) = g(x)} denklemiyle (grafik kesişimi), birinin diğerinden ekonomik olduğu aralık ise {koyu:f(x) < g(x)} eşitsizliğiyle bulunur.",
+    "{koyu:Kademeli (Parçalı) Tarifeler:} Sınır değer ({koyu:k}) aşıldığında birim fiyatın değiştiği faturalarda {koyu:x > k} için model {koyu:f(x) = p1·k + p2·(x - k)} parçalı doğrusal fonksiyonuyla kurulur.",
+    "{koyu:Mutlak Değer ve Tolerans Aralığı:} İdeal değeri {koyu:a}, hata payı (sapması) {koyu:Δ} olan ölçümlerde standartlara uygun aralık {koyu:|x - a| ≤ Δ} ({koyu:a - Δ ≤ x ≤ a + Δ}), standart dışı bölge ise {koyu:|x - a| > Δ} ile modellenir.",
+    "{koyu:Uç Değerlerden Model Kurma:} En küçük değeri {koyu:x_min} ve en büyük değeri {koyu:x_max} olan bir aralıkta merkez {koyu:a = {kesir:x_min + x_max|2}} ve sapma {koyu:Δ = {kesir:x_max - x_min|2}} formülleriyle bulunur."
+  ]
+}

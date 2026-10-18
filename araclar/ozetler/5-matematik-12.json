@@ -1,0 +1,253 @@
+{
+  "ad": "5-matematik-12",
+  "sinif": 5,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 12,
+  "tarih": "7-11 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "Sayılar ve Nicelikler (1)",
+  "konu": "Doğal Sayılarla Dört İşlem İçeren Gerçek Yaşam Problemlerini Çözme (Çok Adımlı Problemler, Kalanın Yorumlanması ve Çözüm Stratejileri) (MAT.5.1.2 & MAT.5.1.3)",
+  "ciktilar": [
+    "Doğal sayılarla dört işlem gerektiren gerçek yaşam problemlerinde verilen ve istenen bileşenler arasındaki ilişkiyi belirleyerek uygun matematiksel temsillere (şema, tablo, kutu modeli) dönüştürür.",
+    "Kalanlı bölme işlemi içeren günlük yaşam problemlerinde kalanın ihmal edilmesi, sonucun bir üst tam sayıya tamamlanması veya doğrudan kalanın kullanılması durumlarını bağlama göre yorumlar.",
+    "Çok adımlı problemlerde tahmin ve çözüm stratejilerini uygular, bulduğu sonucu kontrol eder ve kullandığı stratejiyi benzer problemlere geneller."
+  ],
+  "giris": "Doğal sayılarla toplama, çıkarma, çarpma ve bölme işlemlerinin kurallarını öğrendikten sonra, şimdi bu işlemleri günlük hayatın içindeki gerçek yaşam problemlerini çözmek için bir araya getiriyoruz. Alışveriş hesaplarından gezi otobüsü planlamasına, su ve enerji tasarrufundan aylık taksit ödemelerine kadar pek çok durumu matematiksel modellere dönüştürüyor; özellikle bölme işleminde ortaya çıkan 'kalan' sayısının problem bağlamına göre nasıl yorumlanacağını keşfediyoruz.",
+  "bolumler": [
+    {
+      "baslik": "Problem Çözme Süreci ve Matematiksel Temsillere Dönüştürme (MAT.5.1.2)",
+      "metin": [
+        "Gerçek yaşam problemlerini çözerken dört temel aşamayı izleriz: {koyu:1. Problemi Anlama:} Problemdeki sayısal verileri, birimleri (TL, kg, litre, saat, kişi) ve bizden tam olarak ne istendiğini belirleriz; problemi kendi cümlelerimizle özetler ve görselleştirmek için tablo veya şema çizeriz.",
+        "{koyu:2. Strateji Geliştirme ve Tahmin:} Verilenlerden istenene ulaşmak için hangi işlemlerin hangi sırayla yapılacağını planlarız. İşlemlere başlamadan önce sayıları uygun basamaklara yuvarlayarak sonucun yaklaşık hangi aralıkta çıkacağını tahmin ederiz.",
+        "{koyu:3. Planı Uygulama ve 4. Kontrol/Genelleme:} Planladığımız işlemleri adım adım yapar, her ara sonucun yanına neyi ifade ettiğini (örneğin 'kalan borç', 'toplam koltuk sayısı') yazarız. Bulduğumuz sonucu baştaki tahminimizle karşılaştırır, ters işlemle doğrular ve geliştirdiğimiz kısa yolu farklı problemlere genelleriz."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">GERÇEK YAŞAM PROBLEMLERİNİ ÇÖZME AŞAMALARI (MAT.5.1.2)</text>\n  <rect x=\"18\" y=\"48\" width=\"155\" height=\"190\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"95\" y=\"72\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1d4ed8\">1. Problemi Anlama</text>\n  <text x=\"95\" y=\"100\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">• Verilen sayıları ve</text>\n  <text x=\"95\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">birimleri belirle.</text>\n  <text x=\"95\" y=\"144\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">• İstenen niceliği kendi</text>\n  <text x=\"95\" y=\"162\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">cümlelerinle ifade et.</text>\n  <text x=\"95\" y=\"206\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1d4ed8\">Şema / Tablo çiz!</text>\n\n  <rect x=\"186\" y=\"48\" width=\"155\" height=\"190\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <text x=\"263\" y=\"72\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">2. Strateji ve Tahmin</text>\n  <text x=\"263\" y=\"100\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Hangi işlemlerin hangi</text>\n  <text x=\"263\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">sırayla yapılacağını seç.</text>\n  <text x=\"263\" y=\"144\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Yuvarlama ile sonucu</text>\n  <text x=\"263\" y=\"162\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">önceden tahmin et.</text>\n  <text x=\"263\" y=\"206\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">Planını oluştur!</text>\n\n  <rect x=\"354\" y=\"48\" width=\"155\" height=\"190\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.5\"/>\n  <text x=\"431\" y=\"72\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#b45309\">3. Planı Uygulama</text>\n  <text x=\"431\" y=\"100\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">• Çok adımlı işlemleri</text>\n  <text x=\"431\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">adım adım gerçekleştir.</text>\n  <text x=\"431\" y=\"144\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">• Ara sonuçların birimini</text>\n  <text x=\"431\" y=\"162\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">yanına mutlaka yaz.</text>\n  <text x=\"431\" y=\"206\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b45309\">İşlemleri çöz!</text>\n\n  <rect x=\"522\" y=\"48\" width=\"160\" height=\"190\" rx=\"8\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"1.5\"/>\n  <text x=\"602\" y=\"72\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#7e22ce\">4. Kontrol ve Genelleme</text>\n  <text x=\"602\" y=\"100\" text-anchor=\"middle\" font-size=\"11\" fill=\"#581c87\">• Sonucu tahmininle ve</text>\n  <text x=\"602\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" fill=\"#581c87\">ters işlemle doğrula.</text>\n  <text x=\"602\" y=\"144\" text-anchor=\"middle\" font-size=\"11\" fill=\"#581c87\">• Kısa yolları değerlendir,</text>\n  <text x=\"602\" y=\"162\" text-anchor=\"middle\" font-size=\"11\" fill=\"#581c87\">benzer soruya genelle.</text>\n  <text x=\"602\" y=\"206\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#7e22ce\">Doğruluğu sına!</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Ara Sonuçların Birimini Yazma Alışkanlığı",
+          "metin": "Çok adımlı problemlerde her işlemin yanına birimini ve açıklamasını yazmak (örneğin: 12 × 24 = 288 yumurta), bir sonraki adımda hangi sayıyı kullanacağımızı karıştırmamızı önler."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Tahmin İle Hata Yakalama",
+          "metin": "Örneğin 498 × 21 işlemini içeren bir adımda sonucu 498 ≈ 500 ve 21 ≈ 20 alarak 10.000 civarında tahmin ederiz; eğer işlemde basamak kaydırıp 1.494 bulursak tahminimiz sayesinde hatayı anında fark ederiz."
+        }
+      ]
+    },
+    {
+      "baslik": "Bölme İşleminde Kalanın Gerçek Yaşam Bağlamında Yorumlanması",
+      "metin": [
+        "Gerçek yaşam problemlerinde bölme işlemi yaptığımızda kalan sıfırdan farklı çıkabilir. Bu durumda sorunun cevabı her seferinde doğrudan 'bölüm' olmaz; kalanın ne anlama geldiği problem durumuna göre üç farklı şekilde yorumlanır.",
+        "{koyu:1. Kalanın İhmal Edilmesi (Cevap = Bölüm):} 'Eldeki parayla en fazla kaç ürün alınabilir?' veya 'Her birinde eşit sayıda ürün olan en çok kaç tam koli hazırlanabilir?' gibi sorularda kalan miktar yeni bir tam grup oluşturmaya yetmediği için ihmal edilir. Örneğin 250 TL ile tanesi 35 TL olan kalem kutularından 250 ÷ 35 = 7 (kalan 5 TL) işlemine göre en fazla {koyu:7 adet} alınabilir.",
+        "{koyu:2. Bölüme 1 Eklenmesi (Cevap = Bölüm + 1):} 'Geziye gidecek tüm öğrencilerin taşınması için en az kaç otobüs gerekir?', 'Tüm zeytinyağının doldurulması için en az kaç şişe gerekir?' veya 'Bir kitabı bitirmek için en az kaç gün okumalıdır?' gibi geride hiçbir parçanın bırakılamayacağı durumlarda artan kısım için 1 araç/şişe/gün daha eklenir. Örneğin 250 öğrenciyi 35 kişilik otobüslere bindirmek için 7 otobüs dolduktan sonra kalan 5 öğrenci açıkta kalamayacağından 7 + 1 = {koyu:8 otobüs} gerekir. {koyu:3. Doğrudan Kalanın Kullanılması:} 'Geriye kaç TL artar?' sorusunda cevap doğrudan {koyu:kalan (5 TL)} iken, 'Son kolinin de tam dolması için kaç ürün daha gerekir?' sorusunda cevap {koyu:Bölen - Kalan} (35 - 5 = 30) olur."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">BÖLME İŞLEMİNDE KALANIN GERÇEK YAŞAM BAĞLAMINDA YORUMLANMASI</text>\n  <rect x=\"20\" y=\"48\" width=\"210\" height=\"190\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n  <text x=\"125\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">1. Kalanın İhmal Edilmesi</text>\n  <text x=\"125\" y=\"100\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#1e3a8a\">• «En fazla kaç tam paket /</text>\n  <text x=\"125\" y=\"118\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#1e3a8a\">ürün alınabilir?» sorularında</text>\n  <text x=\"125\" y=\"136\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#1e3a8a\">kalan tek başına yetmez.</text>\n  <text x=\"125\" y=\"164\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e40af\">Örnek: 145 TL ile 20 TL'lik</text>\n  <text x=\"125\" y=\"182\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e40af\">kalemden en çok 7 tane alınır</text>\n  <text x=\"125\" y=\"200\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">(Artan 5 TL yeni kaleme yetmez).</text>\n  <text x=\"125\" y=\"224\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1d4ed8\">Cevap = Bölüm (7)</text>\n\n  <rect x=\"245\" y=\"48\" width=\"210\" height=\"190\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">2. Bölüme 1 Eklenmesi</text>\n  <text x=\"350\" y=\"100\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#14532d\">• «Herkesin taşınması / tüm</text>\n  <text x=\"350\" y=\"118\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#14532d\">ürünün kolilenmesi için en az</text>\n  <text x=\"350\" y=\"136\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#14532d\">kaç araç/koli gerekir?»</text>\n  <text x=\"350\" y=\"164\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">Örnek: 145 izci 20 kişilik</text>\n  <text x=\"350\" y=\"182\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">minibüslere → 7 + 1 = 8 araç</text>\n  <text x=\"350\" y=\"200\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">(Artan 5 izci için 1 araç daha).</text>\n  <text x=\"350\" y=\"224\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">Cevap = Bölüm + 1 (8)</text>\n\n  <rect x=\"470\" y=\"48\" width=\"210\" height=\"190\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.5\"/>\n  <text x=\"575\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b45309\">3. Doğrudan Kalanı Sorma</text>\n  <text x=\"575\" y=\"100\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#78350f\">• «Geriye kaç TL / kaç adet</text>\n  <text x=\"575\" y=\"118\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#78350f\">artar?» veya «Tam dolması</text>\n  <text x=\"575\" y=\"136\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#78350f\">için kaç tane daha gerekir?»</text>\n  <text x=\"575\" y=\"164\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#92400e\">Örnek: 145 ÷ 20 işleminde</text>\n  <text x=\"575\" y=\"182\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#92400e\">artan miktar 5'tir; tam grup</text>\n  <text x=\"575\" y=\"200\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">için 20 - 5 = 15 adet daha gerekir.</text>\n  <text x=\"575\" y=\"224\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b45309\">Cevap = Kalan veya (Bölen - Kalan)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "«En Fazla Tam Grup» ile «En Az Taşıyıcı» Farkı",
+          "metin": "Aynı 130 ÷ 12 = 10 (kalan 10) işleminde; '130 yumurtayla 12'lik en fazla kaç tam viyol dolar?' sorusunun cevabı 10 iken, '130 yumurtanın tamamını taşımak için 12'lik en az kaç viyol gerekir?' sorusunun cevabı 10 + 1 = 11'dir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Bölme Bağıntısını Unutmayalım",
+          "metin": "Kalanlı bir bölme probleminde verilmeyen bölüneni bulmak için 'Bölünen = (Bölen × Bölüm) + Kalan' ve 'Kalan < Bölen' kuralı kullanılır."
+        }
+      ]
+    },
+    {
+      "baslik": "Çok Adımlı Problem Stratejileri: Kat Modeli, Taksit ve Tersinden Çalışma",
+      "metin": [
+        "{koyu:Kat (Kutu) Modeli Stratejisi:} Biri diğerinin belirli bir katından fazla veya eksik olan iki çokluğun toplamı verildiğinde, küçük olan çokluk '1 kutu (1 kat)' ile modellenir. Örneğin 'Bir çiftlikteki koyunların sayısı, keçilerin sayısının 4 katından 15 fazladır; toplam 265 hayvan olduğuna göre kaç keçi vardır?' probleminde keçi = 1 kat, koyun = 4 kat + 15 olur. Önce fazlalık çıkarılır (265 - 15 = 250), sonra toplam kat sayısına (1 + 4 = 5 kat) bölünerek 1 kat (keçi sayısı) 250 ÷ 5 = 50 bulunur.",
+        "{koyu:Finansal Okuryazarlık (Peşinat ve Taksit) Problemleri:} Bir ürün alınırken önce peşinat ödenip kalan tutar eşit taksitlere bölünüyorsa; birinci adımda toplam fiyattan peşinat çıkarılır, ikinci adımda kalan borç taksit sayısına bölünür. Kar-zarar problemlerinde ise toplam satış gelirinden toplam alış maliyeti çıkarılarak net kazanç hesaplanır.",
+        "{koyu:Sondan Başa (Tersinden) Çalışma Stratejisi:} Başlangıçtaki miktarın bilinmediği, ancak sırasıyla yapılan işlemlerin ve son kalan miktarın verildiği problemlerde sondan başa doğru ters işlemler uygulanır: Toplama yerine çıkarma, çıkarma yerine toplama, çarpma yerine bölme ve bölme yerine çarpma yapılarak başlangıç sayısına ulaşılır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">KAT ŞEMASI (KUTU MODELİ) VE ÇOK ADIMLI ÇÖZÜM STRATEJİLERİ</text>\n  <rect x=\"20\" y=\"48\" width=\"320\" height=\"190\" rx=\"8\" fill=\"#fdf2f8\" stroke=\"#db2777\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#be185d\">Kat ve Fazlalık Problemleri (Kutu Modeli)</text>\n  <text x=\"70\" y=\"105\" font-size=\"12\" font-weight=\"bold\" fill=\"#831843\">1. Sayı:</text>\n  <rect x=\"125\" y=\"90\" width=\"40\" height=\"22\" fill=\"#fbcfe8\" stroke=\"#db2777\" stroke-width=\"1.5\"/>\n  <text x=\"70\" y=\"137\" font-size=\"12\" font-weight=\"bold\" fill=\"#831843\">2. Sayı:</text>\n  <rect x=\"125\" y=\"122\" width=\"40\" height=\"22\" fill=\"#fbcfe8\" stroke=\"#db2777\" stroke-width=\"1.5\"/>\n  <rect x=\"170\" y=\"122\" width=\"40\" height=\"22\" fill=\"#fbcfe8\" stroke=\"#db2777\" stroke-width=\"1.5\"/>\n  <rect x=\"215\" y=\"122\" width=\"40\" height=\"22\" fill=\"#fbcfe8\" stroke=\"#db2777\" stroke-width=\"1.5\"/>\n  <text x=\"275\" y=\"138\" font-size=\"12\" font-weight=\"bold\" fill=\"#831843\">+ 20 (Toplam = 180)</text>\n  <text x=\"180\" y=\"172\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#831843\">• Önce fazlalık çıkarılır: 180 - 20 = 160</text>\n  <text x=\"180\" y=\"194\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#831843\">• Toplam kutu (1 + 3 = 4 kat): 160 ÷ 4 = 40 (Küçük sayı)</text>\n  <text x=\"180\" y=\"218\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#be185d\">• Büyük sayı: (40 × 3) + 20 = 140</text>\n\n  <rect x=\"360\" y=\"48\" width=\"320\" height=\"190\" rx=\"8\" fill=\"#ecfeff\" stroke=\"#0891b2\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0e7490\">Tersinden Çalışma ve Bütünden Parçaya</text>\n  <text x=\"520\" y=\"102\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#155e75\">• Son durumu verilen problemlerde sondan</text>\n  <text x=\"520\" y=\"122\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#155e75\">başa doğru ters işlemler yapılır:</text>\n  <text x=\"520\" y=\"146\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#164e63\">(+) yerine (-), (×) yerine (÷) uygulanır.</text>\n  <text x=\"520\" y=\"174\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#155e75\">• Taksit / Birikim Problemlerinde:</text>\n  <text x=\"520\" y=\"194\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#155e75\">Kalan Borç = Toplam Fiyat - Peşinat</text>\n  <text x=\"520\" y=\"218\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#0e7490\">Bir Taksit = Kalan Borç ÷ Taksit Sayısı</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Kat Problemlerinde Toplam Kat Sayısı",
+          "metin": "Bir sayı diğerinin 3 katı ise ikisinin toplamı 3 kat değil, '1 kat + 3 kat = 4 kat'tır! İkisinin farkı sorulduğunda ise '3 kat - 1 kat = 2 kat' üzerinden işlem yapılır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Ağaç Dikme ve Kesim Problemleri",
+          "metin": "Bir tahtayı 5 eş parçaya ayırmak için 5 - 1 = 4 kesim yapılır; düz bir yolun iki ucuna da ağaç dikilecekse ağaç sayısı 'Aralık Sayısı + 1' olur."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir okul gezisine 312 öğrenci ve 18 öğretmen katılacaktır. Gezi için 45 yolcu kapasiteli otobüsler kiralanacağına göre, tüm kafileyi aynı anda taşımak için en az kaç otobüs gerekir?",
+      "cevap": "Önce geziye katılacak toplam kişi sayısını buluruz: 312 + 18 = 330 kişi. Ardından 330 kişiyi 45'er kişilik otobüslere böleriz: 330 ÷ 45 = 7 bölüm ve 15 kalan (7 × 45 = 315, 330 - 315 = 15). Kalan 15 kişinin de geziye gidebilmesi için 1 otobüs daha gerekir: 7 + 1 = 8 otobüs."
+    },
+    {
+      "soru": "Bir zeytinyağı üreticisi 470 litre zeytinyağını 15 litrelik tenekelere tam dolacak biçimde paylaştırıp satacaktır. Tam dolan tenekelerin tanesini 4.500 TL'den sattığında kaç TL gelir elde eder ve geriye kaç litre yağ artar?",
+      "cevap": "Önce kaç tam teneke dolacağını bulmak için 470'i 15'e böleriz: 470 ÷ 15 = 31 (31 × 15 = 465) ve kalan 5 litredir. Yani 31 teneke tam dolar, 5 litre yağ artar. Tam dolan 31 tenekenin satışından 31 × 4.500 = 139.500 TL gelir elde edilir."
+    },
+    {
+      "soru": "Bir aile 42.600 TL değerindeki çamaşır ve kurutma makinesi seti için 10.200 TL peşinat ödemiş, kalan borcu ise 12 eşit aylık taksite böldürmüştür. Ailenin ödeyeceği aylık taksit tutarı kaç TL'dir?",
+      "cevap": "Birinci adımda toplam fiyattan peşinatı çıkararak kalan borcu buluruz: 42.600 - 10.200 = 32.400 TL. İkinci adımda kalan borcu 12 eşit taksite böleriz: 32.400 ÷ 12 = 2.700 TL aylık taksit ödenir."
+    },
+    {
+      "soru": "Bir kütüphanedeki hikâye eserlerinin sayısı, şiir eserlerinin sayısının 3 katından 40 fazladır. İki tür eserin toplam sayısı 680 olduğuna göre kütüphanede kaç tane hikâye eseri vardır?",
+      "cevap": "Şiir eserlerine 1 kat dersek, hikâye eserleri 3 kat + 40 olur; toplam 4 kat + 40 = 680'dir. Önce fazlalığı çıkarırız: 680 - 40 = 640. Sonra 4'e bölerek 1 katı (şiir sayısını) buluruz: 640 ÷ 4 = 160. Hikâye eserlerinin sayısı ise (160 × 3) + 40 = 480 + 40 = 520 tanedir."
+    },
+    {
+      "soru": "Bir kırtasiyeci içinde 24 adet kalem bulunan kutulardan 15 kutu almıştır. Kalemlerin 12 tanesi defolu çıktığı için ayırmış, kalan sağlam kalemleri 6'şarlı paketler hâlinde tanesi 90 TL'den satmıştır. Kırtasiyeci bu satıştan kaç TL kazanmıştır?",
+      "cevap": "Toplam kalem sayısı: 15 × 24 = 360 kalem. Sağlam kalem sayısı: 360 - 12 = 348 kalem. Oluşan 6'lı paket sayısı: 348 ÷ 6 = 58 paket. Toplam satış geliri: 58 × 90 = 5.220 TL olur."
+    },
+    {
+      "soru": "Aklımdan tuttuğum bir sayıyı 4 ile çarpıp sonuca 35 eklediğimde 215 buluyorum. Tersinden çalışma stratejisini kullanarak aklımdan tuttuğum sayıyı bulunuz.",
+      "cevap": "Sondan başa doğru ters işlemler uygularız: En son 35 eklendiği için 215'ten 35 çıkarırız: 215 - 35 = 180. Ondan önce 4 ile çarpıldığı için 180'i 4'e böleriz: 180 ÷ 4 = 45. Aklımdan tuttuğum sayı 45'tir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir fırında üretilen 380 adet simit, her birinde 16 simit bulunan kutulara konularak pastanelere gönderilecektir. Simitlerin tamamının taşınabilmesi için en az kaç kutuya ihtiyaç vardır?",
+      "secenekler": [
+        "22 kutu",
+        "23 kutu",
+        "24 kutu",
+        "25 kutu"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir bilgisayarın peşin fiyatı 28.500 TL'dir. Bu bilgisayarı almak isteyen Kerem Bey 6.900 TL peşinat verdikten sonra kalan tutarı 9 eşit taksitte ödeyeceğine göre bir taksit tutarı kaç TL'dir?",
+      "secenekler": [
+        "2.400 TL",
+        "2.500 TL",
+        "2.600 TL",
+        "3.100 TL"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir meyve bahçesindeki elma ağaçlarının sayısı, armut ağaçlarının sayısının 4 katından 25 eksiktir. Bahçede toplam 325 ağaç bulunduğuna göre kaç tane armut ağacı vardır?",
+      "secenekler": [
+        "60",
+        "70",
+        "75",
+        "80"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "coktan",
+      "soru": "Tanesi 45 TL olan defterlerden almak isteyen Elif'in cebinde 600 TL vardır. Elif parasının tamamıyla en fazla kaç tane defter alabilir ve geriye kaç TL parası artar?",
+      "secenekler": [
+        "12 defter alır, 60 TL artar.",
+        "13 defter alır, 25 TL artar.",
+        "14 defter alır, 15 TL artar.",
+        "13 defter alır, 15 TL artar."
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Yüz yetmiş beş yolcuyu 40 kişilik otobüslere taşırken 175 ÷ 40 = 4 (kalan 15) işleminde kalan 15 yolcu için 1 otobüs daha eklenerek en az 5 otobüs gerektiği bulunur.",
+          "dogru": true
+        },
+        {
+          "metin": "Biri diğerinin 5 katı olan iki sayının toplamı verildiğinde, küçük sayıyı bulmak için toplam sayı 5'e bölünür.",
+          "dogru": false
+        },
+        {
+          "metin": "Son durumu verilen bir problemde başlangıç sayısını bulmak için sondan başa doğru işlemlerin tersi uygulanır.",
+          "dogru": true
+        },
+        {
+          "metin": "Doksan beş yumurtadan 10'arlı en fazla kaç tam paket yapılacağı sorulduğunda kalan 5 yumurta tam paket oluşturmadığı için cevap 9 olur.",
+          "dogru": true
+        },
+        {
+          "metin": "Kalanlı bir bölme işleminde kalan sayı bölen sayıdan büyük veya bölene eşit olabilir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Yüz otuz (130) sayısının 12'ye bölünmesiyle (130 ÷ 12 = 10, kalan = 10) ilgili aşağıdaki gerçek yaşam sorularını doğru cevaplarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "130 L süt ile 12 L'lik en fazla kaç bidon tam dolar?",
+          "10 (Kalan ihmal edilir: Bölüm)"
+        ],
+        [
+          "130 izciyi taşımak için 12 kişilik en az kaç minibüs gerekir?",
+          "11 (Kalanlar için 1 araç eklenir: Bölüm + 1)"
+        ],
+        [
+          "130 TL ile 12 TL'lik kalemlerden en çok sayıda alınırsa kaç TL artar?",
+          "10 TL (Doğrudan kalan sayı alınır)"
+        ],
+        [
+          "130 cevizi 12'şerli poşetlerken son poşetin de tam dolması için kaç ceviz daha gerekir?",
+          "2 ceviz (Bölen - Kalan = 12 - 10)"
+        ],
+        [
+          "Bölen 12, bölüm 10 ve kalan 10 ise bölünen sayı kaçtır?",
+          "130 (Bölen × Bölüm + Kalan)"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun sayı veya kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir problemde işlemlere başlamadan önce sayıları yuvarlayarak yaklaşık sonuç bulmaya ___ stratejisi denir.",
+          "cevap": "tahmin"
+        },
+        {
+          "metin": "Bir sayı diğerinin 3 katı ise bu iki sayının toplamı küçük sayının ___ katına eşittir.",
+          "cevap": "dört"
+        },
+        {
+          "metin": "İki yüz elli (250) sayfalık bir öyküyü günde en fazla 30 sayfa okuyan bir öğrenci en az ___ günde bitirir.",
+          "cevap": "dokuz"
+        },
+        {
+          "metin": "Taksitli alışveriş problemlerinde aylık taksit tutarını bulmak için önce toplam fiyattan ___ çıkarılır.",
+          "cevap": "peşinat"
+        },
+        {
+          "metin": "Düz bir tahta çubuğu 8 eş parçaya ayırmak için ___ kez kesim yapılması gerekir.",
+          "cevap": "yedi"
+        }
+      ],
+      "fazla": [
+        "sekiz",
+        "üç"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir okul kütüphanesi için tanesi 120 TL olan sözlüklerden 25 adet ve tanesi 85 TL olan öykü eserlerinden 40 adet satın alınmıştır. Kütüphane görevlisi kasaya 7.000 TL verdiğine göre kaç TL para üstü alacağını adım adım problem çözme aşamalarıyla açıklayınız.",
+      "ipuclari": [
+        "1. Adımda sözlükler için ödenecek toplam tutarı (25 × 120) hesaplayınız.",
+        "2. Adımda öykü eserleri için ödenecek toplam tutarı (40 × 85) hesaplayıp iki tutarı toplayarak genel harcamayı bulunuz.",
+        "3. Adımda kasaya verilen 7.000 TL'den genel harcamayı çıkararak para üstünü belirleyiniz ve tahminle kontrol ediniz."
+      ],
+      "cevap": "1. Adım (Sözlüklerin tutarı): 25 × 120 = 3.000 TL.\n2. Adım (Öykü eserlerinin tutarı): 40 × 85 = 3.400 TL.\n3. Adım (Toplam harcama): 3.000 + 3.400 = 6.400 TL.\n4. Adım (Para üstü): Kasaya 7.000 TL verildiği için 7.000 - 6.400 = 600 TL para üstü alınır. (Kontrol: 6.400 + 600 = 7.000 TL)."
+    }
+  ],
+  "ozet": [
+    "{koyu:Problem Çözme Adımları:} Problemi anlama (verilen-istenen ve şema çizme), strateji belirleme ve tahmin etme, planı adım adım uygulama, sonucu kontrol edip genelleme.",
+    "{koyu:Kalanın İhmal Edilmesi:} 'En fazla kaç tam ürün/paket alınabilir?' sorularında kalan miktar yeni bir tam grup oluşturmadığı için cevap doğrudan {koyu:Bölüm} olur.",
+    "{koyu:Bölüme 1 Eklenmesi:} 'Tüm yolcuların taşınması veya tüm ürünlerin kolilenmesi için en az kaç araç/koli gerekir?' sorularında kalanlar için bölüme 1 eklenir ({koyu:Bölüm + 1}).",
+    "{koyu:Kat (Kutu) Modeli:} Biri diğerinin {koyu:k} katından {koyu:f} fazla olan iki sayının toplamı verildiğinde; önce fazlalık çıkarılır (eksikse eklenir), sonra {koyu:(k + 1)} kata bölünerek küçük sayı bulunur.",
+    "{koyu:Tersinden Çalışma ve Taksit:} Son durumu verilen problemlerde sondan başa doğru ters işlemler uygulanır; taksit sorularında ise {koyu:(Toplam Fiyat - Peşinat) ÷ Taksit Sayısı} bağıntısı kullanılır."
+  ]
+}

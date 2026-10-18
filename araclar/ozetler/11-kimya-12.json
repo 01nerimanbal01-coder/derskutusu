@@ -1,0 +1,258 @@
+{
+  "ad": "11-kimya-12",
+  "sinif": 11,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 12,
+  "tarih": "7-11 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "1. Tema: Etkileşim",
+  "konu": "Deneysel Veriler Yardımıyla Tepkime Hız Denkleminin (Hız Bağıntısının), Tepkime Derecesinin ve Hız Sabiti (k) Biriminin Belirlenmesi (KİM.11.1.8)",
+  "ciktilar": [
+    "Sabit sıcaklıkta gerçekleştirilen deneylere ait başlangıç derişimi ve başlangıç hızı veri tablolarını karşılaştırarak her bir tepkenin hız üzerindeki etkisini belirler.",
+    "Deneysel verilerden hareketle kimyasal tepkimenin hız denklemini (hız bağıntısını) yazar ve tepkime derecesini (mertebesini) hesaplar.",
+    "Belirlenen hız denkleminde herhangi bir deneyin verilerini yerine koyarak hız sabitinin (k) sayısal değerini, birimini ve derişim değişimine göre yeni hız tahminlerini yapılandırır."
+  ],
+  "giris": "Bir kimyasal tepkimenin hız denklemi ({koyu:hız bağıntısı}), yalnızca net tepkime denklemindeki stokiyometrik katsayılara bakılarak kesin biçimde bilinemez; çünkü tepkimenin tek basamaklı mı yoksa çok basamaklı (mekanizmalı) mı olduğu {koyu:deneysel verilerle} anlaşılır. Sabit sıcaklıkta tepkenlerin başlangıç derişimleri değiştirilerek ölçülen {koyu:başlangıç hızları tablosu}, hız bağıntısını ve hız sabitini ({koyu:k}) belirlemenin en güvenilir bilimsel yoludur.",
+  "bolumler": [
+    {
+      "baslik": "Deneysel Veri Tablolarından Hız Bağıntısının Bulunması",
+      "metin": [
+        "Gaz fazında veya sulu çözelti ortamında gerçekleşen {koyu:aX + bY -> Ürünler} şeklindeki bir tepkimenin hız bağıntısını deneysel olarak bulmak için {koyu:başlangıç hızları yöntemi} kullanılır. Bu yöntemde sabit sıcaklıkta birkaç deney yapılır; her seferinde tepkenlerden yalnız birinin derişimi değiştirilip diğerlerinin derişimi sabit tutularak başlangıç hızının ({koyu:r{us:0| }} veya {koyu:J{us:0| }}) kaç katına çıktığı gözlemlenir.",
+        "Diğer tepkenlerin derişimi sabitken bir {koyu:X} maddesinin derişimi {koyu:2 katına} çıkarıldığında; 1) Tepkime hızı {koyu:değişmiyorsa} ({koyu:2{us:0| } = 1}), hız {koyu:X}'e bağlı değildir (0. dereceden) ve hız denkleminde {koyu:[X]} yer almaz. 2) Tepkime hızı da {koyu:2 katına} çıkıyorsa ({koyu:2{us:1| } = 2}), tepkime {koyu:X}'e göre {koyu:1. derecedendir} ({koyu:[X]{us:1| }}). 3) Tepkime hızı {koyu:4 katına} çıkıyorsa ({koyu:2{us:2| } = 4}), tepkime {koyu:X}'e göre {koyu:2. derecedendir} ({koyu:[X]{us:2| }}). 4) Tepkime hızı {koyu:8 katına} çıkıyorsa ({koyu:2{us:3| } = 8}), {koyu:X}'e göre {koyu:3. derecedendir} ({koyu:[X]{us:3| }}).",
+        "Matematiksel olarak iki deney karşılaştırılırken derişimi sabit olmayan iki değişken varsa oranlama yöntemi kullanılır: {koyu:{kesir:r{us:2| }|r{us:1| }} = ({kesir:[X]{us:2| }|[X]{us:1| }}){us:x| } · ({kesir:[Y]{us:2| }|[Y]{us:1| }}){us:y| }}. Buradan bulunan {koyu:x} ve {koyu:y} üsleri ile hız denklemi {koyu:r = k · [X]{us:x| } · [Y]{us:y| }} şeklinde yazılır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 250\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"250\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">DENEYSEL VERİ TABLOSUNDAN HIZ DENKLEMİ BULMA</text>\n  <rect x=\"20\" y=\"45\" width=\"340\" height=\"185\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"190\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">ÖRNEK DENEY TABLOSU (2NO + Cl₂ -&gt; 2NOCl)</text>\n  <rect x=\"35\" y=\"78\" width=\"310\" height=\"96\" rx=\"6\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"1.2\"/>\n  <text x=\"190\" y=\"96\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">Deney | [NO] (M) | [Cl₂] (M) | Başlangıç Hızı (M/s)</text>\n  <line x1=\"40\" y1=\"102\" x2=\"340\" y2=\"102\" stroke=\"#93c5fd\" stroke-width=\"1\"/>\n  <text x=\"190\" y=\"118\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">1. Deney |   0,10   |   0,10    |     2,0 x 10⁻³</text>\n  <text x=\"190\" y=\"138\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">2. Deney |   0,10   |   0,20    |     4,0 x 10⁻³</text>\n  <text x=\"190\" y=\"158\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">3. Deney |   0,20   |   0,10    |     8,0 x 10⁻³</text>\n  <text x=\"190\" y=\"194\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e40af\">1 ve 2: [NO] sabit, [Cl₂] 2 katına -&gt; Hız 2 kat (1. derece)</text>\n  <text x=\"190\" y=\"212\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e40af\">1 ve 3: [Cl₂] sabit, [NO] 2 katına -&gt; Hız 4 kat (2. derece)</text>\n\n  <rect x=\"375\" y=\"45\" width=\"305\" height=\"185\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"527\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">DERİŞİM ARTIRIMI VE ÜS (DERECE) İLİŞKİSİ</text>\n  <rect x=\"390\" y=\"78\" width=\"275\" height=\"135\" rx=\"6\" fill=\"#ffffff\" stroke=\"#4ade80\" stroke-width=\"1.2\"/>\n  <text x=\"527\" y=\"98\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#15803d\">[X] Derişimi k Katına Çıktığında:</text>\n  <text x=\"527\" y=\"118\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Hız değişmiyorsa (k⁰ = 1) -&gt; 0. Derece (Yazılmaz)</text>\n  <text x=\"527\" y=\"138\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Hız k katına çıkıyorsa (k¹) -&gt; 1. Derece: [X]¹</text>\n  <text x=\"527\" y=\"158\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Hız k² katına çıkıyorsa -&gt; 2. Derece: [X]²</text>\n  <text x=\"527\" y=\"178\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Hız k³ katına çıkıyorsa -&gt; 3. Derece: [X]³</text>\n  <text x=\"527\" y=\"200\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#166534\">Sonuç: r = k · [NO]² · [Cl₂]¹ (Derece = 3)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Mekanizmalı Tepkime Kanıtı",
+          "metin": "Deneysel verilerle bulunan hız bağıntısındaki üsler, net tepkime denklemindeki gaz/çözelti katsayılarıyla uyuşmuyorsa o tepkime kesin olarak mekanizmalıdır (çok basamaklıdır) ve bulunan hız bağıntısı yavaş basamağa aittir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Sıfırıncı Derece Tepken",
+          "metin": "Bir tepkenin derişimi artırıldığında başlangıç hızı hiç değişmiyorsa o madde hız belirleyen yavaş basamakta yer almaz; hız denklemine yazılmaz."
+        }
+      ]
+    },
+    {
+      "baslik": "Tepkime Derecesi (Mertebesi) ve Hız Sabiti (k) Hesaplamaları",
+      "metin": [
+        "Deneysel olarak belirlenen {koyu:r = k · [X]{us:x| } · [Y]{us:y| }} hız bağıntısındaki derişim üslerinin toplamına {koyu:tepkime derecesi (mertebesi)} denir: {koyu:Derece (n) = x + y}. Burada {koyu:x} değerine tepkimenin X'e göre derecesi, {koyu:y} değerine ise Y'ye göre derecesi adı verilir. Tepkime derecesi sıfır veya kesirli bir sayı da olabilir.",
+        "Hız bağıntısı belirlendikten sonra tablodaki {koyu:herhangi bir deneyin} (örneğin 1. deneyin) derişim ve hız değerleri denklemde yerine yazılarak {koyu:hız sabitinin (k) sayısal değeri} hesaplanır. Aynı sıcaklıkta yapılan tüm deneylerde {koyu:k} hız sabitinin sayısal değeri birbirine eşittir; çünkü {koyu:k} tepkenlerin derişimine bağlı değildir.",
+        "Tepkime derecesi {koyu:n} olan bir tepkimede (hız birimi {koyu:mol/(L·s)} yani {koyu:M/s} alındığında) hız sabiti {koyu:k}'nin birimi kısa yoldan {koyu:k birimi = ({kesir:L|mol}){us:n-1| } · {kesir:1|s}} veya {koyu:M{us:1-n| } · s{us:-1| }} formülüyle bulunur. Buna göre; {koyu:1. dereceden} ({koyu:n = 1}) tepkimede {koyu:k} birimi {koyu:1/s (s{us:-1| })}; {koyu:2. dereceden} ({koyu:n = 2}) tepkimede {koyu:L/(mol·s)}; {koyu:3. dereceden} ({koyu:n = 3}) tepkimede ise {koyu:L{us:2| }/(mol{us:2| }·s)} olur."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 220\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"220\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">TEPKİME DERECESİNE GÖRE HIZ SABİTİ (k) BİRİMLERİ</text>\n  <rect x=\"20\" y=\"48\" width=\"210\" height=\"152\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.8\"/>\n  <text x=\"125\" y=\"70\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#92400e\">1. DERECE (n = 1)</text>\n  <text x=\"125\" y=\"94\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Örnek: r = k · [X]¹</text>\n  <text x=\"125\" y=\"118\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b45309\">k birimi: 1/s = s⁻¹</text>\n  <text x=\"125\" y=\"144\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">(L/mol)¹⁻¹ · (1/s) = 1/s</text>\n  <text x=\"125\" y=\"166\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">Hız derişimle doğru orantılıdır.</text>\n\n  <rect x=\"245\" y=\"48\" width=\"210\" height=\"152\" rx=\"10\" fill=\"#e0e7ff\" stroke=\"#4f46e5\" stroke-width=\"1.8\"/>\n  <text x=\"350\" y=\"70\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#3730a3\">2. DERECE (n = 2)</text>\n  <text x=\"350\" y=\"94\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Örnek: r = k · [X] · [Y] veya k · [X]²</text>\n  <text x=\"350\" y=\"118\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#4338ca\">k birimi: L / (mol · s) = M⁻¹·s⁻¹</text>\n  <text x=\"350\" y=\"144\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">(L/mol)²⁻¹ · (1/s) = L/(mol·s)</text>\n  <text x=\"350\" y=\"166\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">Hacim yarıya inerse hız 4 katına çıkar.</text>\n\n  <rect x=\"470\" y=\"48\" width=\"210\" height=\"152\" rx=\"10\" fill=\"#fae8ff\" stroke=\"#9333ea\" stroke-width=\"1.8\"/>\n  <text x=\"575\" y=\"70\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#6b21a8\">3. DERECE (n = 3)</text>\n  <text x=\"575\" y=\"94\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Örnek: r = k · [X]² · [Y]¹</text>\n  <text x=\"575\" y=\"118\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#7e22ce\">k birimi: L² / (mol² · s) = M⁻²·s⁻¹</text>\n  <text x=\"575\" y=\"144\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">(L/mol)³⁻¹ · (1/s) = L²/(mol²·s)</text>\n  <text x=\"575\" y=\"166\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">Hacim yarıya inerse hız 8 katına çıkar.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Hız Sabiti k'yi Değiştiren Etkenler",
+          "metin": "Hız sabiti (k); sıcaklık, katalizör, tepkenlerin cinsi ve katı temas yüzeyi (T.S.K.) ile değişir; ancak tepkenlerin derişimi veya kap hacmi değiştiğinde k değişmez!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Birimden Derece Bulma",
+          "metin": "Bir soruda hız sabitinin birimi L²/(mol²·s) olarak verilmişse, L ve mol üzerindeki üssün 1 fazlası (2 + 1 = 3) doğrudan tepkime derecesini verir."
+        }
+      ]
+    },
+    {
+      "baslik": "Hız Denklemine Dayalı Tahminler ve Kap Hacmi Değişimi",
+      "metin": [
+        "Deneysel verilerle hız denklemi ({koyu:r = k · [A]{us:a| } · [B]{us:b| }}) ve hız sabiti ({koyu:k}) bulunduktan sonra, tabloda yer almayan farklı başlangıç derişimlerinde tepkimenin hangi hızla başlayacağı bilimsel olarak tahmin edilebilir. Örneğin {koyu:r = k · [A]{us:2| } · [B]} bağıntısına sahip bir tepkimede {koyu:A}'nın derişimi {koyu:3 katına} çıkarılıp {koyu:B}'nin derişimi {koyu:yarıya} indirilirse, yeni hız başlangıç hızının {koyu:3{us:2| } · ({kesir:1|2}) = {kesir:9|2} = 4,5 katı} olur.",
+        "Gaz fazında gerçekleşen tepkimelerde sabit sıcaklıkta {koyu:kap hacmi (V)} değiştirildiğinde, molarite bağıntısı ({koyu:M = {kesir:n|V}}) gereğince kaptaki bütün gazların molar derişimi hacimle {koyu:ters orantılı} olarak değişir.",
+        "Örneğin {koyu:n}. dereceden gaz fazındaki bir tepkimede kap hacmi yarıya düşürülürse ({koyu:{kesir:V|2}}), tüm gazların derişimi {koyu:2 katına} çıkar ve tepkime hızı {koyu:2{us:n| } katına} yükselir; kap hacmi {koyu:3 katına} çıkarılırsa ({koyu:3V}), tüm gazların derişimi {koyu:{kesir:1|3}'üne} düşer ve tepkime hızı {koyu:({kesir:1|3}){us:n| }} değerine iner."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 210\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"210\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">HIZ DENKLEMİ İLE TAHMİN VE KAP HACMİ ETKİSİ</text>\n  <rect x=\"20\" y=\"48\" width=\"320\" height=\"142\" rx=\"10\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.8\"/>\n  <text x=\"180\" y=\"70\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#0369a1\">DERİŞİM DEĞİŞİMİ TAHMİNİ</text>\n  <text x=\"180\" y=\"94\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">Bağıntı: r = k · [X]² · [Y]¹</text>\n  <text x=\"180\" y=\"116\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• [X] 2 katına, [Y] 3 katına çıkarsa:</text>\n  <text x=\"180\" y=\"134\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#334155\">r_yeni = (2)² · (3)¹ · r = 12 · r (12 katına çıkar)</text>\n  <text x=\"180\" y=\"156\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Sabit sıcaklıkta k hız sabiti değişmez!</text>\n\n  <rect x=\"360\" y=\"48\" width=\"320\" height=\"142\" rx=\"10\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.8\"/>\n  <text x=\"520\" y=\"70\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#991b1b\">GAZLARDA KAP HACMİ (M = n / V)</text>\n  <text x=\"520\" y=\"94\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#b91c1c\">Bağıntı: r = k · [X]² · [Y]¹ (Derece n = 3)</text>\n  <text x=\"520\" y=\"116\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Kap hacmi yarıya (V/2) indirilirse:</text>\n  <text x=\"520\" y=\"134\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">[X] -&gt; 2[X] ve [Y] -&gt; 2[Y] olur.</text>\n  <text x=\"520\" y=\"154\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#991b1b\">r_yeni = (2)² · (2)¹ · r = 8 · r (8 katına çıkar)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Hacim ve Derişim Ters Orantısı",
+          "metin": "Gaz tepkimelerinde pistonlu kabın hacmi V'den V/3'e sıkıştırılırsa kaptaki tüm gazların derişimi 3 katına çıkar; hacim 2V'ye genişletilirse derişimler yarıya düşer."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Veriye Dayalı Önerme",
+          "metin": "Bilimsel sorgulamada yalnız net denkleme bakılarak kurulan hız önermesi 'varsayım', deney tablosundaki verilerle kanıtlanan hız bağıntısı ise 'veriye dayalı bilimsel model'dir."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Sabit sıcaklıkta gerçekleşen 2X(g) + Y(g) -> Z(g) tepkimesi için yapılan deneylerde: 1. Deneyde [X]=0,1 M, [Y]=0,2 M iken r = 4·10{us:-4| } M/s; 2. Deneyde [X]=0,2 M, [Y]=0,2 M iken r = 8·10{us:-4| } M/s; 3. Deneyde [X]=0,2 M, [Y]=0,4 M iken r = 3,2·10{us:-3| } M/s ölçülmüştür. Tepkimenin hız bağıntısını ve derecesini bulunuz.",
+      "cevap": "1 ve 2. deneylerde [Y]=0,2 M sabitken [X] derişimi 2 katına çıktığında hız 4·10^-4'ten 8·10^-4'e (2 katına) çıkmıştır; tepkime X'e göre 1. derecedendir. 2 ve 3. deneylerde [X]=0,2 M sabitken [Y] derişimi 0,2 M'dan 0,4 M'a (2 katına) çıktığında hız 8·10^-4'ten 32·10^-4'e (4 katına = 2^2) çıkmıştır; tepkime Y'ye göre 2. derecedendir. Hız bağıntısı r = k · [X] · [Y]^2 ve tepkime derecesi 1 + 2 = 3'tür."
+    },
+    {
+      "soru": "Bir önceki soruda hız bağıntısı r = k · [X] · [Y]{us:2| } olarak bulunan tepkimenin hız sabiti (k) değerini ve birimini hesaplayınız.",
+      "cevap": "1. deney verileri hız bağıntısında yerine yazılırsa: 4·10^-4 = k · (0,1) · (0,2)^2 -> 4·10^-4 = k · 0,1 · 0,04 -> 4·10^-4 = k · 4·10^-3 -> k = 0,1 bulunur. Tepkime derecesi n = 3 olduğu için k'nin birimi (L/mol)^(3-1) · (1/s) = L^2 / (mol^2 · s) olur."
+    },
+    {
+      "soru": "Gaz fazında gerçekleşen ve deneysel hız bağıntısı r = k · [A]{us:2| } · [B] olan bir tepkimede sabit sıcaklıkta kabın hacmi yarıya düşürülürse tepkime hızı ve k hız sabiti nasıl değişir?",
+      "cevap": "Sabit sıcaklıkta kabın hacmi yarıya (V/2) düşürülürse M = n/V bağıntısına göre hem A hem de B gazının molar derişimi 2 katına çıkar. Hız bağıntısında yerine yazılırsa r' = k · (2[A])^2 · (2[B]) = 4 · 2 · r = 8r olur; yani tepkime hızı 8 katına çıkar. Sıcaklık sabit olduğu için k hız sabiti değişmez."
+    },
+    {
+      "soru": "Sabit sıcaklıkta A(g) + 2B(g) + C(g) -> Ürünler tepkimesinde: [B] ve [C] sabitken [A] 3 katına çıkarıldığında hız 3 katına çıkıyor; [A] ve [C] sabitken [B] 2 katına çıkarıldığında hız 4 katına çıkıyor; [A] ve [B] sabitken [C] 4 katına çıkarıldığında hız değişmiyor. Bu tepkimenin hız denklemini yazarak mekanizmalı olup olmadığını açıklayınız.",
+      "cevap": "Verilere göre hız A ile 1. dereceden, B ile 2. dereceden orantılıdır; C derişimi hızı etkilemediği için (0. derece) hız denkleminde yer almaz. Hız bağıntısı r = k · [A] · [B]^2 şeklindedir. Bu bağıntı net tepkime denklemindeki C maddesini içermediği için tepkime çok basamaklıdır (mekanizmalıdır)."
+    },
+    {
+      "soru": "Hız sabiti (k) birimi L{us:3| } / (mol{us:3| } · s) olan homojen gaz fazındaki tek basamaklı bir tepkimenin derecesi kaçtır ve kabın hacmi 2 katına çıkarılırsa hız nasıl değişir?",
+      "cevap": "k birimi (L/mol)^(n-1) · (1/s) formülüyle bulunduğundan n - 1 = 3 -> n = 4 olur; yani tepkimenin derecesi 4'tür. Kabın hacmi 2 katına çıkarılırsa gazların derişimi yarıya (1/2) düşer; 4. dereceden tepkimede hız (1/2)^4 = 1/16 katına iner."
+    },
+    {
+      "soru": "Hız denklemi r = k · [X]{us:2| } ve hız sabiti k = 0,5 L/(mol·s) olan bir tepkimede X'in başlangıç derişimi 0,4 mol/L alındığında başlangıç hızı kaç mol/(L·s) olur?",
+      "cevap": "Verilen değerler r = k · [X]^2 bağıntısında yerine konulursa: r = 0,5 · (0,4)^2 = 0,5 · 0,16 = 0,08 mol/(L·s) (yani 8·10^-2 M/s) olarak tahmin edilir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Sabit sıcaklıkta gerçekleşen 2A(g) + B(g) -> C(g) tepkimesinde; [B] sabit tutulup [A] derişimi 2 katına çıkarıldığında hız 2 katına, [A] sabit tutulup [B] derişimi 3 katına çıkarıldığında ise hız 9 katına çıkmaktadır. Buna göre bu tepkimenin hız denklemi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "r = k · [A]² · [B]",
+        "r = k · [A] · [B]²",
+        "r = k · [A] · [B]",
+        "r = k · [A]² · [B]³",
+        "r = k · [B]²"
+      ],
+      "dogru": 1,
+      "aciklama": "[A] 2 katına çıktığında hız 2¹=2 katına çıktığı için A'ya göre 1. derece; [B] 3 katına çıktığında hız 3²=9 katına çıktığı için B'ye göre 2. derecedir: r = k · [A] · [B]²."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Deneysel hız bağıntısı r = k · [X]{us:2| } · [Y]{us:2| } olan bir kimyasal tepkimede hız sabiti k'nin birimi aşağıdakilerden hangisidir? (Hız birimi mol/(L·s) alınacaktır.)",
+      "secenekler": [
+        "1 / s",
+        "L / (mol · s)",
+        "L² / (mol² · s)",
+        "L³ / (mol³ · s)",
+        "mol / (L · s)"
+      ],
+      "dogru": 3,
+      "aciklama": "Tepkime derecesi n = 2 + 2 = 4'tür. k birimi = (L/mol)^(n-1) · (1/s) = (L/mol)³ · (1/s) = L³ / (mol³ · s) olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Sabit sıcaklıkta X(g) + Y(g) -> Z(g) tepkimesi için: 1. Deneyde [X]=0,2 M, [Y]=0,1 M iken r = 2·10{us:-2| } M/s; 2. Deneyde [X]=0,4 M, [Y]=0,1 M iken r = 4·10{us:-2| } M/s; 3. Deneyde [X]=0,4 M, [Y]=0,3 M iken r = 4·10{us:-2| } M/s ölçülmüştür. Buna göre hız sabiti (k) kaçtır?",
+      "secenekler": [
+        "0,1 s⁻¹",
+        "0,2 s⁻¹",
+        "0,5 s⁻¹",
+        "1,0 s⁻¹",
+        "2,0 s⁻¹"
+      ],
+      "dogru": 0,
+      "aciklama": "2 ve 3. deneylerde [Y] 3 katına çıkarken hız değişmemiş (Y'ye göre 0. derece). 1 ve 2. deneyde [X] 2 katına çıkarken hız 2 katına çıkmış (X'e göre 1. derece). r = k·[X] -> 2·10⁻² = k · 0,2 -> k = 0,1 s⁻¹."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Gaz fazında gerçekleşen ve hız denklemi r = k · [N{us:2| }] · [H{us:2| }]{us:2| } olan bir tepkimede sabit sıcaklıkta N{us:2| } derişimi 4 katına çıkarılıp H{us:2| } derişimi yarıya indirilirse başlangıç hızı nasıl değişir?",
+      "secenekler": [
+        "2 katına çıkar.",
+        "4 katına çıkar.",
+        "Yarıya düşer.",
+        "8 katına çıkar.",
+        "Değişmez."
+      ],
+      "dogru": 4,
+      "aciklama": "r_yeni = k · (4·[N₂]) · (1/2·[H₂])² = 4 · (1/4) · r = 1 · r olur; yani başlangıç hızı değişmez."
+    },
+    {
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "metin": "Bir tepkimenin deneysel hız bağıntısı net tepkime denklemiyle uyuşmuyorsa o tepkime mekanizmalıdır (çok basamaklıdır).",
+          "dogru": true
+        },
+        {
+          "metin": "Diğer değişkenler sabitken bir tepkenin derişimi 3 katına çıkarıldığında hız 9 katına çıkıyorsa tepkime o maddeye göre 2. derecedendir.",
+          "dogru": true
+        },
+        {
+          "metin": "Sabit sıcaklıkta tepkenlerin başlangıç derişimi artırıldığında hem tepkime hızı hem de hız sabiti (k) artar.",
+          "dogru": false
+        },
+        {
+          "metin": "Birinci dereceden (n = 1) bir kimyasal tepkimede hız sabiti k'nin birimi 1/s (s⁻¹) şeklindedir.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir tepkenin derişimi artırıldığında başlangıç hızı değişmiyorsa o tepkenin hız denklemindeki üssü 2 olarak yazılır.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "ciftler": [
+        [
+          "Başlangıç Hızı Yöntemi",
+          "Farklı başlangıç derişimlerinde ilk hızları ölçerek hız denklemini bulma yolu"
+        ],
+        [
+          "Tepkime Derecesi (n)",
+          "Deneysel hız bağıntısında yer alan maddelerin derişim üslerinin toplamı"
+        ],
+        [
+          "Sıfırıncı Derece Tepken",
+          "Derişimi değiştirildiğinde tepkime hızını etkilemeyen madde"
+        ],
+        [
+          "1 / s (s⁻¹)",
+          "Birinci dereceden (n = 1) tepkimelerde hız sabiti k'nin birimi"
+        ],
+        [
+          "L² / (mol² · s)",
+          "Üçüncü dereceden (n = 3) tepkimelerde hız sabiti k'nin birimi"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "cumleler": [
+        {
+          "metin": "Mekanizmalı bir tepkimede deneysel verilerle bulunan hız denklemi her zaman en ___ basamağa göre yazılır.",
+          "cevap": "yavaş"
+        },
+        {
+          "metin": "Sabit sıcaklıkta [Y] sabitken [X] derişimi 2 katına çıkarıldığında hız 8 katına çıkıyorsa tepkime X'e göre ___ derecedendir.",
+          "cevap": "üçüncü"
+        },
+        {
+          "metin": "Hız bağıntısı r = k · [A] · [B] olan ikinci dereceden bir tepkimede k'nin birimi ___ / (mol · s) olur.",
+          "cevap": "L"
+        },
+        {
+          "metin": "Sabit sıcaklıkta tepkenlerin derişimi değiştirildiğinde hız sabiti k'nin sayısal değeri ___.",
+          "cevap": "değişmez"
+        },
+        {
+          "metin": "Gaz fazındaki ikinci dereceden bir tepkimede kap hacmi yarıya indirilirse tepkime hızı ___ katına çıkar.",
+          "cevap": "dört"
+        }
+      ],
+      "fazla": [
+        "hızlı",
+        "artar"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir kimyasal tepkimenin hız denklemini belirlemek için neden yalnızca net tepkime denklemine bakmak yeterli değildir ve deneysel veri tablosu nasıl kullanılır? Açıklayınız.",
+      "cevap": "Kimyasal tepkimelerin önemli bir kısmı tek basamakta değil, birbirini izleyen birkaç basamakta (mekanizmalı olarak) gerçekleşir ve tepkime hızını aktivasyon enerjisi en yüksek olan en yavaş basamak belirler. Net denklem ara basamakları göstermediği için hız denklemi deneysel verilerle bulunur. Deney tablosunda sabit sıcaklıkta tepkenlerden yalnız birinin derişimi değiştirilip diğerleri sabit tutularak hızın kaç katına çıktığına bakılır; derişim artış oranının kaçıncı kuvveti hız artış oranını veriyorsa o sayı maddenin hız denklemindeki üssü (derecesi) olur.",
+      "ipuclari": [
+        "Çok basamaklı tepkimelerde hızı yavaş basamağın belirlediğini ifade ediniz.",
+        "Deney tablosunda kontrol değişkenleri (biri sabitken diğerini değiştirme) yöntemini açıklayınız.",
+        "Derişim katı ile hız katı arasındaki üs ilişkisini (k^x) belirtiniz."
+      ]
+    }
+  ],
+  "ozet": [
+    "Kimyasal tepkimelerin hız bağıntısı net denklemden değil, sabit sıcaklıktaki deneysel başlangıç derişimi-başlangıç hızı verilerinden belirlenir.",
+    "Diğer tepkenler sabitken bir maddenin derişimi 2 katına çıkarıldığında hız 1, 2, 4, 8 katına çıkıyorsa o maddeye göre derece sırasıyla 0, 1, 2, 3 olur.",
+    "Hız bağıntısındaki derişim üslerinin toplamına tepkime derecesi (mertebesi, n) adı verilir.",
+    "Herhangi bir deneyin verileri hız denkleminde yerine konularak k hız sabitinin sayısal değeri bulunur; birimi (L/mol)^(n-1) · (1/s) formülüyle belirlenir.",
+    "Sabit sıcaklıkta derişim veya kap hacmi değiştiğinde tepkime hızı hız denklemine göre değişir, ancak k hız sabiti değişmez."
+  ]
+}

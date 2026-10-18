@@ -1,0 +1,257 @@
+{
+  "ad": "8-matematik-12",
+  "sinif": 8,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 12,
+  "tarih": "7-11 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "Veri İşleme / Olasılık",
+  "konu": "Sütun, Daire ve Çizgi Grafikleri Arasında Uygun Dönüşümler Yapma, Çoklu Veri Analizi Problemleri ve Basit Olayların Olma Olasılığına Giriş (M.8.4.1.2 & M.8.5.1.1)",
+  "ciktilar": [
+    "Verileri sütun, daire veya çizgi grafiği ile gösterir; merkez açı, yüzde ve kat (EBOB) yöntemlerini kullanarak bu gösterimler arasında uygun dönüşümleri yapar (M.8.4.1.2).",
+    "Sütun, çizgi ve daire grafiklerinin birbirlerine göre üstün ve zayıf yönlerini değerlendirir; birden fazla grafiği birleştiren veri analizi problemlerini çözer (M.8.4.1.2).",
+    "Olasılık kavramına giriş yaparak deney, çıktı, olay ve bir olaya ait olası durumları belirler; 'daha fazla', 'eşit' ve 'daha az' olasılıklı olayları ayırt eder (M.8.5.1.1 & M.8.5.1.2)."
+  ],
+  "giris": "Geçen hafta çizgi, sütun ve daire grafiklerinin temel özelliklerini öğrenmiştik. Bu hafta Veri İşleme ünitemizin ikinci aşamasında grafikler arasında pratik dönüşüm yapma tekniklerini, grafik türlerinin birbirine göre üstün ve zayıf yönlerini ve çoklu grafik problemlerini inceleyecek; ardından Olasılık ünitesine giriş yaparak olası durumları belirlemeyi öğreneceğiz.",
+  "bolumler": [
+    {
+      "baslik": "Grafikler Arasında Dönüşüm Yapma ve Kat (EBOB) Yöntemi (M.8.4.1.2)",
+      "metin": [
+        "Bir veri grubunu sütun veya çizgi grafiğinden {koyu:daire grafiğine} dönüştürürken önce verilerin toplamı bulunur ve bu toplam dairenin tam açısı olan {koyu:{olcu:360} derece} (veya yüzde grafiklerinde {koyu:%100}) ile ilişkilendirilir. Her bir veri grubunun merkez açısı {koyu:Merkez Açı = {kesir:Grup Verisi|Toplam Veri} . {olcu:360}} bağıntısıyla hesaplanır. Örneğin toplam {koyu:90} aracın bulunduğu bir otoparkta her 1 araca {kesir:360|90} = {koyu:{olcu:4} derecelik} merkez açı karşılık gelir.",
+        "Daire grafiğinden sütun veya çizgi grafiğine geçerken eğer toplam veri sayısı verilmemişse {koyu:En Büyük Ortak Bölen (EBOB) / Kat yöntemi} büyük kolaylık sağlar. Daire dilimlerinin merkez açıları sadeleştirilerek her dilime düşen en küçük tam sayı katı ({koyu:k}) bulunur. Örneğin merkez açıları {koyu:{olcu:72}}, {koyu:{olcu:108}} ve {koyu:{olcu:180}} derece olan üç veri grubunun EBOB'u {koyu:{olcu:36}} derecedir; buradan grupların miktarları sırasıyla {koyu:2k, 3k ve 5k} (toplam {koyu:10k}) olarak yazılır.",
+        "Yüzde (%) olarak verilen sütun grafiklerini daire grafiğine çevirirken ise {koyu:%100 = {olcu:360} derece} olduğundan {koyu:%10 = {olcu:36} derece}, {koyu:%5 = {olcu:18} derece}, {koyu:%25 = {olcu:90} derece} (çeyrek daire) ve {koyu:%50 = {olcu:180} derece} (yarım daire) eşitlikleri doğrudan kullanılır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\">SÜTUN VE DAİRE GRAFİĞİ ARASINDA DÖNÜŞÜM (KAT VE MERKEZ AÇI YÖNTEMİ)</text>\n  <rect x=\"20\" y=\"44\" width=\"320\" height=\"196\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"65\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">Sütun Grafiğinden Daire Grafiğine Geçiş</text>\n  <text x=\"180\" y=\"86\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">Örnek: Bir bahçedeki 90 ağacın dağılımı:</text>\n  <text x=\"180\" y=\"106\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">Elma: 30 · Armut: 25 · Kiraz: 35 (Toplam = 90)</text>\n  <rect x=\"55\" y=\"140\" width=\"45\" height=\"50\" fill=\"#ef4444\" rx=\"3\"/>\n  <text x=\"77\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#b91c1c\">30</text>\n  <text x=\"77\" y=\"204\" text-anchor=\"middle\" font-size=\"10\" fill=\"#1e293b\">Elma</text>\n  <rect x=\"145\" y=\"148\" width=\"45\" height=\"42\" fill=\"#22c55e\" rx=\"3\"/>\n  <text x=\"167\" y=\"143\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#15803d\">25</text>\n  <text x=\"167\" y=\"204\" text-anchor=\"middle\" font-size=\"10\" fill=\"#1e293b\">Armut</text>\n  <rect x=\"235\" y=\"132\" width=\"45\" height=\"58\" fill=\"#a855f7\" rx=\"3\"/>\n  <text x=\"257\" y=\"127\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#7e22ce\">35</text>\n  <text x=\"257\" y=\"204\" text-anchor=\"middle\" font-size=\"10\" fill=\"#1e293b\">Kiraz</text>\n  <text x=\"180\" y=\"226\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">Orantı: 90 ağaç → 360° ise 1 ağaç → 4° düşer!</text>\n\n  <rect x=\"360\" y=\"44\" width=\"320\" height=\"196\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"65\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">Daire Grafiği Merkez Açıları ve Kat Hesabı</text>\n  <text x=\"520\" y=\"90\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Elma Merkez Açısı: 30 x 4° = 120°</text>\n  <text x=\"520\" y=\"112\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Armut Merkez Açısı: 25 x 4° = 100°</text>\n  <text x=\"520\" y=\"134\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Kiraz Merkez Açısı: 35 x 4° = 140°</text>\n  <text x=\"520\" y=\"158\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">Kontrol: 120° + 100° + 140° = 360° (Tam Daire)</text>\n  <text x=\"520\" y=\"184\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">Ters Dönüşüm (EBOB Yöntemi):</text>\n  <text x=\"520\" y=\"204\" text-anchor=\"middle\" font-size=\"10\" fill=\"#14532d\">Açılar 120°, 100°, 140° ise EBOB(120,100,140) = 20°</text>\n  <text x=\"520\" y=\"222\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#14532d\">Sayılar: Elma = 6k, Armut = 5k, Kiraz = 7k (Toplam 18k)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Verilmeyen Merkez Açıyı Bulma",
+          "metin": "Daire grafiği sorularında işleme başlamadan önce verilmeyen dilimin merkez açısını, bilinen açıları toplayıp {olcu:360} dereceden çıkararak mutlaka hesaplayınız!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Açı — Kat (k) Pratik Tablosu",
+          "metin": "Sık karşılaşılan merkez açılar: {olcu:30} derece = {kesir:1|12}, {olcu:36} derece = {kesir:1|10} (%10), {olcu:45} derece = {kesir:1|8}, {olcu:60} derece = {kesir:1|6}, {olcu:72} derece = {kesir:1|5} (%20), {olcu:90} derece = {kesir:1|4} (%25), {olcu:120} derece = {kesir:1|3}."
+        }
+      ]
+    },
+    {
+      "baslik": "Grafik Türlerinin Üstün-Zayıf Yönleri ve Çoklu Grafik Problemleri",
+      "metin": [
+        "Her grafik türünün veriyi sunmada {koyu:üstün (güçlü)} ve {koyu:zayıf} yönleri vardır. {koyu:Çizgi grafiğinin} üstün yönü, bir verinin zamana bağlı sürekli değişimini (sıcaklık, döviz kuru, nüfus artışı eğilimi) açıkça göstermesidir; zayıf yönü ise parça-bütün oranını doğrudan vermemesidir. {koyu:Sütun grafiğinin} üstün yönü, farklı kategorilerin sayısal değerlerini birbiriyle karşılaştırmayı kolaylaştırmasıdır; zayıf yönü ise bir kategorinin toplam içindeki yüzde payını ilk bakışta göstermemesidir.",
+        "{koyu:Daire grafiğinin} üstün yönü, bir bütünün parçaları arasındaki oranı, merkez açıyı ve yüzde payını en net biçimde sunmasıdır. Buna karşılık daire grafiğinin en önemli {koyu:zayıf yönü}, toplam veri miktarı (veya en az bir dilimin gerçek sayısal değeri) verilmediği sürece yalnızca merkez açılara bakılarak gerçek veri sayılarının bilinememesidir.",
+        "Çoklu veri analizi problemlerinde genellikle {koyu:birinci grafikte daire grafiği} (toplam dağılım oranı), {koyu:ikinci grafikte ise sütun grafiği} (bir kısmının gerçek sayısı veya satılan miktarı) birlikte verilir. Bu sorularda iki grafik arasındaki {koyu:ortak kategori} (köprü veri) bulunur; sütun grafiğindeki gerçek sayı ile daire grafiğindeki merkez açı eşleştirilerek tüm bilinmeyenler çözülür."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\">GRAFİK TÜRLERİNİN ÜSTÜN VE ZAYIF YÖNLERİ (KARŞILAŞTIRMA)</text>\n  <rect x=\"20\" y=\"44\" width=\"210\" height=\"196\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\" stroke-width=\"1.5\"/>\n  <text x=\"125\" y=\"66\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#a16207\">1. Çizgi Grafiği</text>\n  <text x=\"125\" y=\"90\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#15803d\">Üstün Yönü (+):</text>\n  <text x=\"125\" y=\"106\" text-anchor=\"middle\" font-size=\"10\" fill=\"#713f12\">Bir verinin zamana bağlı</text>\n  <text x=\"125\" y=\"122\" text-anchor=\"middle\" font-size=\"10\" fill=\"#713f12\">sürekli değişimini, artış ve</text>\n  <text x=\"125\" y=\"138\" text-anchor=\"middle\" font-size=\"10\" fill=\"#713f12\">azalış eğilimini en iyi gösterir.</text>\n  <text x=\"125\" y=\"164\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#b91c1c\">Zayıf Yönü (-):</text>\n  <text x=\"125\" y=\"180\" text-anchor=\"middle\" font-size=\"10\" fill=\"#713f12\">Verilerin bütün içindeki</text>\n  <text x=\"125\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill=\"#713f12\">yüzde veya oranını</text>\n  <text x=\"125\" y=\"212\" text-anchor=\"middle\" font-size=\"10\" fill=\"#713f12\">doğrudan göstermez.</text>\n\n  <rect x=\"245\" y=\"44\" width=\"210\" height=\"196\" rx=\"8\" fill=\"#ecfeff\" stroke=\"#06b6d4\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"66\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0e7490\">2. Sütun Grafiği</text>\n  <text x=\"350\" y=\"90\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#15803d\">Üstün Yönü (+):</text>\n  <text x=\"350\" y=\"106\" text-anchor=\"middle\" font-size=\"10\" fill=\"#164e63\">Farklı veri gruplarının</text>\n  <text x=\"350\" y=\"122\" text-anchor=\"middle\" font-size=\"10\" fill=\"#164e63\">sayısal miktarlarını birbiriyle</text>\n  <text x=\"350\" y=\"138\" text-anchor=\"middle\" font-size=\"10\" fill=\"#164e63\">karşılaştırmada en uygundur.</text>\n  <text x=\"350\" y=\"164\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#b91c1c\">Zayıf Yönü (-):</text>\n  <text x=\"350\" y=\"180\" text-anchor=\"middle\" font-size=\"10\" fill=\"#164e63\">Parçanın bütün içindeki</text>\n  <text x=\"350\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill=\"#164e63\">payını görmek için ek</text>\n  <text x=\"350\" y=\"212\" text-anchor=\"middle\" font-size=\"10\" fill=\"#164e63\">toplama işlemi gerektirir.</text>\n\n  <rect x=\"470\" y=\"44\" width=\"210\" height=\"196\" rx=\"8\" fill=\"#faf5ff\" stroke=\"#a855f7\" stroke-width=\"1.5\"/>\n  <text x=\"575\" y=\"66\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#7e22ce\">3. Daire Grafiği</text>\n  <text x=\"575\" y=\"90\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#15803d\">Üstün Yönü (+):</text>\n  <text x=\"575\" y=\"106\" text-anchor=\"middle\" font-size=\"10\" fill=\"#581c87\">Bir bütünün parçaları</text>\n  <text x=\"575\" y=\"122\" text-anchor=\"middle\" font-size=\"10\" fill=\"#581c87\">arasındaki oranı ve yüzde</text>\n  <text x=\"575\" y=\"138\" text-anchor=\"middle\" font-size=\"10\" fill=\"#581c87\">dağılımı en iyi gösterir.</text>\n  <text x=\"575\" y=\"164\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#b91c1c\">Zayıf Yönü (-):</text>\n  <text x=\"575\" y=\"180\" text-anchor=\"middle\" font-size=\"10\" fill=\"#581c87\">Toplam miktar verilmezse</text>\n  <text x=\"575\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill=\"#581c87\">sadece açılardan gerçek</text>\n  <text x=\"575\" y=\"212\" text-anchor=\"middle\" font-size=\"10\" fill=\"#581c87\">veri sayısı bilinemez!</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "İki Farklı Daire Grafiğini Karşılaştırma Yanılgısı",
+          "metin": "İki ayrı daire grafiğinde (örneğin A ve B okullarında) aynı merkez açıya ({olcu:90} derece) sahip iki dilimin gerçek öğrenci sayıları, okulların toplam mevcutları eşit olmadığı sürece birbirine EŞİT DEĞİLDİR!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Köprü Veriyi Yakalama",
+          "metin": "Daire ve sütun grafiğinin birlikte verildiği sorularda, hem merkez açısı hem de gerçek adedi bilinen 'köprü veriyi' bularak 'Bu kadar açıya şu kadar adet düşüyorsa...' orantısını kurunuz."
+        }
+      ]
+    },
+    {
+      "baslik": "Basit Olayların Olma Olasılığına Giriş: Olası Durumlar (M.8.5.1.1 & M.8.5.1.2)",
+      "metin": [
+        "Günlük hayatta sonucu kesin olarak önceden bilinemeyen, rastgele yapılan işlemlere (havaya madeni para veya zar atılması, torbadan rastgele top çekilmesi, çark çevrilmesi gibi) {koyu:deney} adı verilir. Bir deney sonucunda elde edilebilecek sonuçların her birine {koyu:çıktı}, bir deneyde gerçekleşebilecek bütün çıktıların oluşturduğu kümeye ise {koyu:tüm olası durumlar (örnek uzay)} denir.",
+        "Bir deneyin çıktıları arasından belirli bir koşulu sağlayan (gerçekleşmesi istenen) çıktılara {koyu:olay} ve bu çıktılara {koyu:olayın çıktıları} adı verilir. Örneğin hilesiz bir zarın havaya atılması {koyu:deney}; üst yüze gelebilecek {koyu:1, 2, 3, 4, 5, 6} sayılarının her biri birer {koyu:çıktı} (olası durum sayısı = 6); 'üst yüze asal sayı gelmesi' bir {koyu:olay}; {koyu:2, 3 ve 5} ise bu olayın çıktılarıdır (3 tane).",
+        "Olasılık hesaplamasına geçmeden önce olayların gerçekleşme şansları {koyu:olası durum sayılarına (miktarlarına)} bakılarak karşılaştırılır: Sayısı en çok olan grubun seçilme olasılığı {koyu:'daha fazla olasılıklı'}, sayısı en az olanınki {koyu:'daha az olasılıklı'}, sayıları birbirine eşit olan grupların seçilme olasılığı ise {koyu:'eşit olasılıklı'} olarak adlandırılır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\">OLASILIĞA GİRİŞ: DENEY · ÇIKTI · OLASI DURUMLAR (M.8.5.1.1 &amp; M.8.5.1.2)</text>\n  <rect x=\"20\" y=\"44\" width=\"320\" height=\"196\" rx=\"8\" fill=\"#fff1f2\" stroke=\"#f43f5e\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"66\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#be123c\">Temel Olasılık Kavramları</text>\n  <text x=\"180\" y=\"90\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">• Deney: Sonucu merak edilen rastgele işlem</text>\n  <text x=\"180\" y=\"108\" text-anchor=\"middle\" font-size=\"10\" fill=\"#9f1239\">(Örnek: Havaya zar atılması, torbadan top çekilmesi)</text>\n  <text x=\"180\" y=\"130\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">• Çıktı: Deneyde elde edilebilecek her bir sonuç</text>\n  <text x=\"180\" y=\"152\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">• Tüm Olası Durumlar (Örnek Uzay): Çıktıların tamamı</text>\n  <text x=\"180\" y=\"170\" text-anchor=\"middle\" font-size=\"10\" fill=\"#9f1239\">(Zarda: {1, 2, 3, 4, 5, 6} → 6 olası durum vardır)</text>\n  <text x=\"180\" y=\"192\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">• Olay: Çıktılar arasından istenen koşula uyanlar</text>\n  <text x=\"180\" y=\"212\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#be123c\">(Asal gelme olayı çıktıları: {2, 3, 5} → 3 eleman)</text>\n\n  <rect x=\"360\" y=\"44\" width=\"320\" height=\"196\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"66\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">Olasılık Karşılaştırması (Torba Örneği)</text>\n  <text x=\"520\" y=\"90\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">Torbada: 5 Kırmızı, 3 Mavi, 3 Sarı Özdeş Top</text>\n  <text x=\"520\" y=\"112\" text-anchor=\"middle\" font-size=\"11\" fill=\"#166534\">• Tüm olası durumların sayısı = 5 + 3 + 3 = 11</text>\n  <text x=\"520\" y=\"136\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">• Daha Fazla Olasılıklı: Kırmızı gelmesi (5 top)</text>\n  <text x=\"520\" y=\"160\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0e7490\">• Eşit Olasılıklı: Mavi (3) ile Sarı (3) gelmesi</text>\n  <text x=\"520\" y=\"184\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">• Daha Az Olasılıklı: Mavi (3), Kırmızıya (5) göre az</text>\n  <text x=\"520\" y=\"214\" text-anchor=\"middle\" font-size=\"10\" fill=\"#14532d\">Not: 11 özdeş topun her birinin çekilme şansı eşittir.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Özdeş Nesnelerde Olası Durum Sayısı",
+          "metin": "İçinde 3 kırmızı ve 5 mavi özdeş top bulunan bir torbadan rastgele bir top çekilmesi deneyinde 'tüm olası durumların sayısı' renk sayısı olan 2 değil, toplam top sayısı olan 3 + 5 = 8'dir!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Eşit Olasılıklı Durumlar",
+          "metin": "Bir sınıfta 15 kız ve 15 erkek öğrenci varsa, rastgele seçilen bir öğrencinin kız olma olasılığı ile erkek olma olasılığı birbirine eşittir ('eşit olasılıklı')."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir çiftlikteki hayvanların dağılımı daire grafiğinde gösterildiğinde koyunlara {olcu:160} derece, keçilere {olcu:120} derece ve ineklere kalan merkez açı düşmektedir. Çiftlikte 40 tane inek olduğuna göre koyun ve keçi sayılarını bulunuz.",
+      "cevap": "İneklere düşen merkez açı: {olcu:360} - ({olcu:160} + {olcu:120}) = {olcu:80} derecedir. {olcu:80} derecelik dilime 40 inek karşılık geldiğine göre her 2 dereceye 1 hayvan düşmektedir. Buna göre koyun sayısı {kesir:160|2} = 80, keçi sayısı ise {kesir:120|2} = 60'tır."
+    },
+    {
+      "soru": "Bir kırtasiyede satılan Roman, Hikâye ve Şiir kitaplarının sayıları sütun grafiğinde sırasıyla 45, 60 ve 15 olarak verilmiştir. Bu veriler daire grafiğine aktarıldığında her bir kitap türünün merkez açısı kaç derece olur?",
+      "cevap": "Toplam kitap sayısı: 45 + 60 + 15 = 120 adettir. 120 kitaba {olcu:360} derece düştüğüne göre 1 kitaba {kesir:360|120} = {olcu:3} derece düşer. Roman: 45 . 3 = {olcu:135} derece, Hikâye: 60 . 3 = {olcu:180} derece, Şiir: 15 . 3 = {olcu:45} derece olur."
+    },
+    {
+      "soru": "Bir ilin beş günlük hava sıcaklığı değişimini göstermek için çizgi grafiği mi yoksa daire grafiği mi tercih edilmelidir? Gerekçesiyle açıklayınız.",
+      "cevap": "Çizgi grafiği tercih edilmelidir. Çünkü çizgi grafiğinin en üstün yönü, bir verinin zamana bağlı sürekli artış ve azalış değişimini göstermesidir; daire grafiği ise parça-bütün oranları için uygundur."
+    },
+    {
+      "soru": "Bir fabrikanın 2025 ve 2026 yıllarındaki üretimini gösteren iki ayrı daire grafiğinde A ürününün merkez açısı her iki yılda da {olcu:90} derecedir. Buna göre iki yılda üretilen A ürünü sayısının kesinlikle eşit olduğu söylenebilir mi?",
+      "cevap": "Söylenemez. Daire grafiği sadece A ürününün o yılki toplam üretimin {kesir:90|360} = {kesir:1|4}'ü (%25'i) olduğunu gösterir. İki yıldaki toplam üretim miktarları bilinmeden gerçek sayıların eşit olduğu bilinemez."
+    },
+    {
+      "soru": "'ANKARA' kelimesinin harfleri eş büyüklükteki kartlara yazılıp bir torbaya atılıyor ve rastgele bir kart çekiliyor. Bu deneydeki tüm olası durumların sayısını ve 'A harfi gelmesi' olayının çıktı sayısını bulunuz.",
+      "cevap": "'ANKARA' kelimesi 6 harfli olduğu için torbada 6 kart vardır; tüm olası durumların sayısı 6'dır. Kelimede 3 tane 'A' harfi bulunduğu için A gelmesi olayının çıktı sayısı 3'tür (N, K, R harflerine göre daha fazla olasılıklıdır)."
+    },
+    {
+      "soru": "İçinde 6 kırmızı, 4 sarı ve 2 beyaz özdeş bilye bulunan bir kutudan rastgele çekilen bir bilyenin sarı ile beyaz olma olasılıklarının eşit olması için kutuya en az kaç bilye eklenmeli veya kutudan kaç bilye çıkarılmalıdır?",
+      "cevap": "Sarı (4) ve beyaz (2) bilye sayılarının eşitlenmesi gerekir. Bunun için kutuya 2 tane beyaz bilye eklenebilir (ikisi de 4 olur) veya kutudan 2 tane sarı bilye çıkarılabilir (ikisi de 2 olur)."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir manavdaki elma, portakal ve mandalina kütleleri daire grafiğinde sırasıyla {olcu:108} derece, {olcu:144} derece ve {olcu:108} derecelik merkez açılarla gösterilmiştir. Manavda toplam 120 kg meyve olduğuna göre kaç kg portakal vardır?",
+      "secenekler": [
+        "48 kg",
+        "36 kg",
+        "54 kg",
+        "60 kg"
+      ],
+      "dogru": 0,
+      "aciklama": "{olcu:360} dereceye 120 kg meyve düşerse her {olcu:3} dereceye 1 kg meyve düşer. Portakalın merkez açısı {olcu:144} derece olduğundan {kesir:144|3} = 48 kg portakal vardır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir öğrencinin bir hafta boyunca çözdüğü toplam soruların derslere göre oranını ve bütün içindeki payını en etkili şekilde göstermek için hangi grafik türü seçilmelidir?",
+      "secenekler": [
+        "Çizgi grafiği",
+        "Daire grafiği",
+        "Sıklık tablosu",
+        "Çetele tablosu"
+      ],
+      "dogru": 1,
+      "aciklama": "Bir bütünün parçaları arasındaki oranı ve her bir parçanın bütün içindeki payını göstermede en uygun gösterim daire grafiğidir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "İçinde 4 mavi, 7 yeşil ve 5 turuncu özdeş top bulunan bir torbadan rastgele bir top çekilmesi deneyinde tüm olası durumların sayısı kaçtır ve hangi rengin gelme olasılığı daha fazladır?",
+      "secenekler": [
+        "3 olası durum — Turuncu daha fazla olasılıklı",
+        "12 olası durum — Mavi daha fazla olasılıklı",
+        "16 olası durum — Yeşil daha fazla olasılıklı",
+        "16 olası durum — Mavi ve yeşil eşit olasılıklı"
+      ],
+      "dogru": 2,
+      "aciklama": "Toplam top sayısı 4 + 7 + 5 = 16 olduğu için 16 olası durum vardır; sayısı en çok olan yeşil (7 top) daha fazla olasılıklıdır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Hilesiz bir zarın havaya atılması deneyinde 'üst yüze 4'ten büyük bir sayı gelmesi' olayına ait çıktıların sayısı kaçtır?",
+      "secenekler": [
+        "5 (Çıktılar: 1, 2, 3, 4, 5)",
+        "4 (Çıktılar: 3, 4, 5, 6)",
+        "3 (Çıktılar: 4, 5, 6)",
+        "2 (Çıktılar: 5 ve 6)"
+      ],
+      "dogru": 3,
+      "aciklama": "Zarın üzerindeki sayılardan (1, 2, 3, 4, 5, 6) 4'ten büyük olanlar 5 ve 6'dır; dolayısıyla bu olayın 2 çıktısı vardır."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Bir veri grubunun %25'ini temsil eden dilim, daire grafiğinde {olcu:90} derecelik merkez açı ile gösterilir.",
+          "dogru": true
+        },
+        {
+          "metin": "Toplam veri sayısı bilinmeyen bir daire grafiğinde merkez açılara bakılarak her grubun gerçek sayısı doğrudan bulunabilir.",
+          "dogru": false
+        },
+        {
+          "metin": "Bir verinin zamana bağlı artış ve azalış eğilimini incelemek için çizgi grafiği kullanmak en uygun yöntemdir.",
+          "dogru": true
+        },
+        {
+          "metin": "İçinde 5 kırmızı ve 5 sarı top bulunan bir torbadan rastgele çekilen topun kırmızı gelme olasılığı sarı gelme olasılığından fazladır.",
+          "dogru": false
+        },
+        {
+          "metin": "'MATEMATİK' kelimesinin harfleri eş kartlara yazılıp çekildiğinde tüm olası durumların sayısı 9'dur.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki grafik ve olasılık kavramlarını doğru karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "{olcu:72} derecelik daire dilimi",
+          "Bütünün {kesir:1|5}'i (%20'si)"
+        ],
+        [
+          "Çizgi grafiğinin üstün yönü",
+          "Zamana bağlı sürekli değişimi gösterme"
+        ],
+        [
+          "Deney",
+          "Sonucu merak edilen rastgele işlem (zar atma vb.)"
+        ],
+        [
+          "Örnek uzay (Tüm olası durumlar)",
+          "Bir deneyde gerçekleşebilecek bütün çıktılar"
+        ],
+        [
+          "Eşit olasılıklı olaylar",
+          "Olası durum (eleman) sayıları aynı olan olaylar"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kelimelerle tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Daire grafiğinde tüm veri grubunun toplamı {olcu:360} derecelik ___ açıya karşılık gelir.",
+          "cevap": "merkez"
+        },
+        {
+          "metin": "Farklı veri gruplarının sayısal büyüklüklerini birbiriyle karşılaştırmak için ___ grafiği en uygun gösterimdir.",
+          "cevap": "sütun"
+        },
+        {
+          "metin": "Bir deney sonucunda elde edilebilecek sonuçların her birine ___ adı verilir.",
+          "cevap": "çıktı"
+        },
+        {
+          "metin": "Bir sınıfta 18 kız ve 12 erkek öğrenci varsa rastgele seçilen birinin kız olma olasılığı erkek olma olasılığından daha ___ olasılıklıdır.",
+          "cevap": "fazla"
+        },
+        {
+          "metin": "Hilesiz bir madeni paranın havaya atılması deneyinde yazı ve tura gelmesi ___ olasılıklı olaylardır.",
+          "cevap": "eşit"
+        }
+      ],
+      "fazla": [
+        "hipotenüs",
+        "köşegen"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir okulun 8A, 8B ve 8C şubelerindeki öğrenci dağılımı daire grafiğinde gösterildiğinde 8A şubesine {olcu:120} derece, 8B şubesine {olcu:150} derece düşmektedir. Sütun grafiğine dönüştürüldüğünde 8C şubesinin yüksekliği 18 öğrenciyi gösterdiğine göre 8A ve 8B şubelerindeki öğrenci sayılarını ve bu öğrencilerin arasından rastgele seçilen birinin hangi şubeden olma olasılığının daha fazla olduğunu adım adım bulunuz.",
+      "ipuclari": [
+        "Önce {olcu:360} dereceden 8A ve 8B'nin açılarını çıkararak 8C şubesinin merkez açısını hesaplayınız.",
+        "8C şubesinin merkez açısı ile gerçek öğrenci sayısı (18) arasında orantı kurarak 8A ve 8B'nin mevcutlarını bulunuz.",
+        "Şubelerdeki öğrenci sayılarını karşılaştırarak hangisinin 'daha fazla olasılıklı' olduğunu belirleyiniz."
+      ],
+      "cevap": "İlk adımda 8C şubesinin merkez açısı {olcu:360} - ({olcu:120} + {olcu:150}) = {olcu:90} derece bulunur. İkinci adımda {olcu:90} derecelik dilime 18 öğrenci karşılık geldiğine göre her {kesir:90|18} = {olcu:5} dereceye 1 öğrenci düşmektedir. Buradan 8A şubesi = {kesir:120|5} = 24 öğrenci, 8B şubesi = {kesir:150|5} = 30 öğrenci olur (toplam 24 + 30 + 18 = 72 olası durum). Üçüncü adımda öğrenci sayısı en çok olan şube 30 öğrenci ile 8B olduğu için, rastgele seçilen bir öğrencinin 8B şubesinden olma olasılığı 'daha fazla olasılıklı'dır."
+    }
+  ],
+  "ozet": [
+    "{koyu:Grafikler Arası Dönüşüm:} Sütun veya çizgi grafiğindeki veriler daire grafiğine aktarılırken toplam veri {olcu:360} derece (veya %100) ile orantılanır.",
+    "{koyu:Kat (EBOB) Yöntemi:} Daire grafiğindeki merkez açılar EBOB'larına bölünerek her dilimin kat (k) değeri bulunur ve sütun grafiğine kolayca dönüştürülür.",
+    "{koyu:Üstün ve Zayıf Yönler:} Çizgi grafiği zamana bağlı değişimi, sütun grafiği gruplar arası miktar karşılaştırmasını, daire grafiği ise parça-bütün oranını en iyi gösterir.",
+    "{koyu:Deney, Çıktı ve Olay:} Rastgele yapılan işleme deney, elde edilebilecek her sonuca çıktı, tüm çıktılara olası durumlar (örnek uzay), istenen koşula ise olay denir.",
+    "{koyu:Olasılık Karşılaştırması:} Çıktı (eleman) sayısı çok olan olay 'daha fazla olasılıklı', az olan 'daha az olasılıklı', sayıları aynı olanlar ise 'eşit olasılıklı'dır."
+  ]
+}

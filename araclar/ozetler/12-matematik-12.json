@@ -1,0 +1,264 @@
+{
+  "ad": "12-matematik-12",
+  "sinif": 12,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 12,
+  "tarih": "7-11 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "GEOMETRİ: TRİGONOMETRİ",
+  "konu": "İki Kat Açı (Yarım Açı) Formülleriyle İlgili İleri Uygulamalar ve Trigonometrik Denklemlerin (sin x = a, cos x = a) Çözüm Kümelerine Giriş (12.3.1.2 & 12.3.2.1)",
+  "ciktilar": [
+    "İki kat açı (yarım açı) özdeşliklerini kosinüs zincir çarpımlarında, '1' yok etme işlemlerinde ve ters trigonometrik ifadelerde uygular.",
+    "Dik üçgende 2x açısından x açısına geçiş (ikizkenar üçgen uzatma) yöntemini ve yarım açıya bağlı maksimum-minimum problemlerini çözer.",
+    "Trigonometrik denklemlere giriş yaparak sin(f(x)) = a ve cos(f(x)) = a biçimindeki temel denklemlerin genel çözüm kümelerini bulur."
+  ],
+  "giris": "Trigonometride iki kat açı (yarım açı) formülleri, karmaşık görünen çarpım ve kesir ifadelerini sadeleştirmede en güçlü cebirsel araçlardan biridir. Bu hafta iki kat açı formüllerinin zincir çarpımlar, geometrik yarım açı dik üçgenleri ve ters trigonometrik fonksiyonlardaki ileri uygulamalarını ele alıyor; ardından periyodik olayların modellenmesinde temel rol oynayan trigonometrik denklemlerin çözüm kümelerine giriş yapıyoruz.",
+  "bolumler": [
+    {
+      "baslik": "İki Kat Açı (Yarım Açı) İleri Cebirsel Uygulamaları",
+      "metin": [
+        "Sinüs iki kat açı formülü olan {koyu:sin(2x) = 2·sin(x)·cos(x)} özdeşliği, açıları ikişer katına çıkarak ilerleyen kosinüs çarpımlarının ({koyu:cos(x)·cos(2x)·cos(4x)...}) hesaplanmasında kilit rol oynar. Bu tür bir çarpım ifadesi, en küçük açının sinüsünün iki katı olan {koyu:2·sin(x)} ile çarpılıp bölündüğünde ardışık olarak {koyu:2·sin(x)·cos(x) = sin(2x)}, {koyu:2·sin(2x)·cos(2x) = sin(4x)} ve {koyu:2·sin(4x)·cos(4x) = sin(8x)} dönüşümleri gerçekleşir. Ayrıca {koyu:sin(x) ± cos(x)} toplam veya farkının karesi alındığında {koyu:{us:(sin x ± cos x)|2} = {us:sin|2}(x) + {us:cos|2}(x) ± 2·sin(x)·cos(x) = 1 ± sin(2x)} özdeşliği elde edilir.",
+        "Kosinüs iki kat açı formülünün üç açılımından özellikle {koyu:cos(2x) = 2·{us:cos|2}(x) − 1} ve {koyu:cos(2x) = 1 − 2·{us:sin|2}(x)} bağıntıları, kesirli veya köklü ifadelerdeki {koyu:'1' sayısını yok etmek} için kullanılır. İfadede {koyu:1 + cos(2x)} varsa yerine doğrudan {koyu:2·{us:cos|2}(x)}; {koyu:1 − cos(2x)} varsa yerine doğrudan {koyu:2·{us:sin|2}(x)} yazılır. Bu sayede {koyu:{kesir:1 - cos(2x)|sin(2x)} = {kesir:2·{us:sin|2}(x)|2·sin(x)·cos(x)} = tan(x)} ve {koyu:{kesir:1 + cos(2x)|sin(2x)} = cot(x)} sadeleştirmeleri kolayca yapılır.",
+        "Trigonometrik bir ifadenin alabileceği en büyük ve en küçük değer sorularında da iki kat açı dönüşümü kullanılır. Örneğin {koyu:A = 6·sin(x)·cos(x) = 3·sin(2x)} ifadesinde {koyu:−1 ≤ sin(2x) ≤ 1} olduğundan ifadenin alabileceği en büyük değer {koyu:+3}, en küçük değer ise {koyu:−3} olur."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Köklü ifadelerde {kok:1 + sin(2x)} ifadesi kök dışına çıkarılırken 1 yerine {us:sin|2}(x) + {us:cos|2}(x) ve sin(2x) yerine 2·sin(x)·cos(x) yazılarak {kok:{us:(sin x + cos x)|2}} = |sin(x) + cos(x)| mutlak değeri elde edilir; açının bölgesine göre mutlak değer dışına çıkarılır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "sin(20°)·cos(20°)·cos(40°) çarpımında ifade 2 ile çarpılıp bölündüğünde {kesir:1|2}·sin(40°)·cos(40°) = {kesir:1|4}·sin(80°) elde edilir; 80° ile 10° tümler açı olduğundan sin(80°) = cos(10°) eşitliğiyle paydadaki cos(10°) veya sin(10°) kolayca sadeleşir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">İKİ KAT AÇI (YARIM AÇI) İLERİ UYGULAMALARI: ZİNCİR ÇARPIM VE BİR YOK ETME (12.3.1.2)</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"195\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">1. Kosinüs Zincir Çarpımları</text>\n  <text x=\"32\" y=\"92\" font-size=\"10.5\" fill=\"#1e3a8a\">• Açıları ikişer katına çıkan kosinüs</text>\n  <text x=\"40\" y=\"107\" font-size=\"10.5\" fill=\"#1e3a8a\">çarpımlarında ifade <tspan font-weight=\"bold\">2·sin(en küçük açı)</tspan></text>\n  <text x=\"40\" y=\"122\" font-size=\"10.5\" fill=\"#1e3a8a\">ile çarpılıp bölünür:</text>\n  <rect x=\"32\" y=\"134\" width=\"296\" height=\"48\" rx=\"6\" fill=\"#ffffff\" stroke=\"#60a5fa\"/>\n  <text x=\"180\" y=\"152\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1d4ed8\">P = cos(x) · cos(2x) · cos(4x)</text>\n  <text x=\"180\" y=\"170\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e40af\">P = sin(8x) / [8·sin(x)]</text>\n  <text x=\"32\" y=\"202\" font-size=\"10.5\" fill=\"#1e3a8a\">• <tspan font-weight=\"bold\">Kare alma özdeşliği:</tspan></text>\n  <text x=\"40\" y=\"220\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1d4ed8\">(sin x ± cos x)² = 1 ± sin(2x)</text>\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"195\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">2. \"1\" Sayısını Yok Etme ve Yarım Açı</text>\n  <rect x=\"372\" y=\"82\" width=\"296\" height=\"44\" rx=\"6\" fill=\"#ffffff\" stroke=\"#4ade80\"/>\n  <text x=\"520\" y=\"100\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">1 + cos(2x) = 2·cos²(x)</text>\n  <text x=\"520\" y=\"117\" text-anchor=\"middle\" font-size=\"10\" fill=\"#14532d\">(\"+1\" varsa cos(2x) = 2·cos²(x) − 1 seçilir)</text>\n  <rect x=\"372\" y=\"134\" width=\"296\" height=\"44\" rx=\"6\" fill=\"#ffffff\" stroke=\"#4ade80\"/>\n  <text x=\"520\" y=\"152\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">1 − cos(2x) = 2·sin²(x)</text>\n  <text x=\"520\" y=\"169\" text-anchor=\"middle\" font-size=\"10\" fill=\"#14532d\">(\"−1\" varsa cos(2x) = 1 − 2·sin²(x) seçilir)</text>\n  <rect x=\"372\" y=\"186\" width=\"296\" height=\"42\" rx=\"6\" fill=\"#f0fdf4\" stroke=\"#16a34a\"/>\n  <text x=\"520\" y=\"204\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#166534\">Özel Oran: [1 − cos(2x)] / sin(2x) = tan(x)</text>\n  <text x=\"520\" y=\"220\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">[1 + cos(2x)] / sin(2x) = cot(x)</text>\n</svg>"
+    },
+    {
+      "baslik": "Geometrik Yarım Açı Üçgeni ve Ters Trigonometrik Uygulamalar",
+      "metin": [
+        "Dar açılı bir {koyu:2x} açısının trigonometrik oranı (örneğin {koyu:tan(2x) = {kesir:a|b}} veya {koyu:sin(2x) = {kesir:a|c}}) verilip yarısı olan {koyu:x} açısının trigonometrik oranı istendiğinde cebirsel denklem çözmek yerine {koyu:ikizkenar üçgen uzatma yöntemi} kullanılır. Bunun için dar açısı {koyu:2x}, karşı dik kenarı {koyu:a}, komşu dik kenarı {koyu:b} ve hipotenüsü {koyu:c = {kok:{us:a|2} + {us:b|2}}} olan dik üçgen çizilir. Ardından {koyu:2x} açısının komşu dik kenarı ({koyu:b}), hipotenüs uzunluğu ({koyu:c}) kadar dışarıya doğru uzatılarak taban açıları {koyu:x} ve {koyu:x} olan bir ikizkenar üçgen oluşturulur. Böylece oluşan büyük dik üçgende {koyu:tan(x) = {kesir:a|b + c}} ve {koyu:cot(x) = {kesir:b + c|a}} değerleri tek adımda okunur.",
+        "Ters trigonometrik fonksiyonlarla ({koyu:arcsin, arccos, arctan, arccot}) kurulan iki kat açı sorularında ise ters fonksiyona bir açı ismi ({koyu:α}) verilir. Örneğin {koyu:cos(2·arcsin({kesir:2|3}))} ifadesinde {koyu:arcsin({kesir:2|3}) = α} denirse {koyu:sin(α) = {kesir:2|3}} olur. Dik üçgen bile çizmeye gerek kalmadan {koyu:cos(2α) = 1 − 2·{us:sin|2}(α) = 1 − 2·{us:({kesir:2|3})|2} = 1 − {kesir:8|9} = {kesir:1|9}} sonucu bulunur.",
+        "Benzer şekilde {koyu:tan({kesir:1|2}·arctan({kesir:5|12}))} gibi yarım açı istenen ters trigonometrik ifadelerde {koyu:arctan({kesir:5|12}) = 2x} denilerek {koyu:tan(2x) = {kesir:5|12}} (5-12-13 özel dik üçgeni) elde edilir; komşu kenar olan 12 hipotenüs (13) kadar uzatıldığında {koyu:tan(x) = {kesir:5|12 + 13} = {kesir:5|25} = {kesir:1|5}} olarak hesaplanır."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Dar açılı 2x açısından x açısına dik üçgen uzatma yöntemiyle geçilirken, uzatılan kenar daima 2x açısının komşu dik kenarıdır ve uzatma miktarı hipotenüs uzunluğu (c) kadardır; çünkü dış açı (2x) kendisine komşu olmayan iki iç açının (x + x) toplamına eşittir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "sin(2x) veya tan(2x) değeri tan(x) = t cinsinden de yazılabilir: sin(2x) = {kesir:2t|1 + {us:t|2}}, cos(2x) = {kesir:1 - {us:t|2}|1 + {us:t|2}} ve tan(2x) = {kesir:2t|1 - {us:t|2}}."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">YARIM AÇI DİK ÜÇGEN YÖNTEMİ (2x'ten x'e Geçiş) VE TERS FONKSİYONLAR</text>\n  <rect x=\"20\" y=\"46\" width=\"340\" height=\"194\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"190\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">2x Açısından x Açısına İkizkenar Üçgenle Geçiş</text>\n  <polygon points=\"50,195 290,195 290,95\" fill=\"#ffffff\" stroke=\"#b45309\" stroke-width=\"2\"/>\n  <line x1=\"185\" y1=\"195\" x2=\"290\" y2=\"95\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <rect x=\"278\" y=\"183\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"1.5\"/>\n  <text x=\"82\" y=\"190\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">x</text>\n  <text x=\"204\" y=\"190\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">2x</text>\n  <text x=\"273\" y=\"122\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">x</text>\n  <text x=\"115\" y=\"212\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">c (hipotenüs kadar uzat)</text>\n  <text x=\"237\" y=\"212\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#78350f\">b</text>\n  <text x=\"302\" y=\"150\" font-size=\"11\" font-weight=\"bold\" fill=\"#78350f\">a</text>\n  <text x=\"225\" y=\"138\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">c</text>\n  <text x=\"190\" y=\"230\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#92400e\">tan(2x) = a/b ve c = kök(a²+b²) ise → cot(x) = (b+c)/a</text>\n  <rect x=\"375\" y=\"46\" width=\"305\" height=\"194\" rx=\"10\" fill=\"#fae8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"527\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">Ters Trigonometrik İfadelerde Yarım Açı</text>\n  <rect x=\"388\" y=\"84\" width=\"278\" height=\"65\" rx=\"6\" fill=\"#ffffff\" stroke=\"#c084fc\"/>\n  <text x=\"527\" y=\"103\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#7e22ce\">Örnek Tip 1: sin(2 · arctan(3/4))</text>\n  <text x=\"527\" y=\"120\" text-anchor=\"middle\" font-size=\"10\" fill=\"#581c87\">arctan(3/4) = α denirse tan(α) = 3/4 olur.</text>\n  <text x=\"527\" y=\"136\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#6b21a8\">sin(2α) = 2·sin(α)·cos(α) = 2·(3/5)·(4/5) = 24/25</text>\n  <rect x=\"388\" y=\"158\" width=\"278\" height=\"68\" rx=\"6\" fill=\"#ffffff\" stroke=\"#c084fc\"/>\n  <text x=\"527\" y=\"177\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#7e22ce\">Örnek Tip 2: cos(2 · arcsin(1/3))</text>\n  <text x=\"527\" y=\"194\" text-anchor=\"middle\" font-size=\"10\" fill=\"#581c87\">arcsin(1/3) = θ denirse sin(θ) = 1/3 olur.</text>\n  <text x=\"527\" y=\"211\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#6b21a8\">cos(2θ) = 1 − 2·sin²(θ) = 1 − 2·(1/9) = 7/9</text>\n</svg>"
+    },
+    {
+      "baslik": "Trigonometrik Denklemlere Giriş: sin(x) = a ve cos(x) = a",
+      "metin": [
+        "İçinde değişkenin trigonometrik fonksiyonlarını bulunduran denklemlere {koyu:trigonometrik denklem} denir. Sinüs ve kosinüs fonksiyonları {koyu:[−1, 1]} kapalı aralığında değer aldığından, {koyu:sin(f(x)) = a} veya {koyu:cos(f(x)) = a} denkleminde {koyu:|a| > 1} ise denklemin gerçek sayılarda kökü yoktur ve {koyu:çözüm kümesi boş kümedir (ÇK = ∅)}. Eğer {koyu:|a| ≤ 1} ise {koyu:a} sayısını veren dar veya bilinen bir {koyu:α} açısı seçilerek denklem {koyu:sin(f(x)) = sin(α)} veya {koyu:cos(f(x)) = cos(α)} biçimine getirilir.",
+        "Birim çemberde I. bölgedeki {koyu:α} açısı ile II. bölgedeki {koyu:π − α} ({koyu:180° − α}) açısının sinüs değerleri birbirine eşittir. Ayrıca sinüs fonksiyonunun esas periyodu {koyu:2π (360°)} olduğundan {koyu:sin(x) = sin(α)} denkleminin genel çözüm kümesi iki koldan oluşur ({koyu:k ∈ Z}):\n1. Kol: {koyu:x₁ = α + 2kπ} (veya {koyu:α + 360°·k})\n2. Kol: {koyu:x₂ = (π − α) + 2kπ} (veya {koyu:(180° − α) + 360°·k}).",
+        "Birim çemberde I. bölgedeki {koyu:α} açısı ile IV. bölgedeki {koyu:−α} (veya {koyu:2π − α}) açısının kosinüs değerleri birbirine eşittir. Kosinüs fonksiyonunun esas periyodu da {koyu:2π (360°)} olduğundan {koyu:cos(x) = cos(α)} denkleminin genel çözüm kümesi ({koyu:k ∈ Z}):\n1. Kol: {koyu:x₁ = α + 2kπ} (veya {koyu:α + 360°·k})\n2. Kol: {koyu:x₂ = −α + 2kπ} (veya {koyu:−α + 360°·k}) olarak yazılır."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Denklem sin(3x) = sin(60°) gibi katlı bir açı içeriyorsa, periyot olan +360°·k (veya +2kπ) ifadesi 3'e bölünmeden önce denklemin sağ tarafına mutlaka eklenmelidir: 3x = 60° + 360°·k → x = 20° + 120°·k."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Bir taraf sinüs diğer taraf kosinüs ise (örneğin sin(2x) = cos(x)), tümler açı özdeşliği kullanılarak cos(x) yerine sin(90° − x) [veya sin(2x) yerine cos(90° − 2x)] yazılır ve denklem aynı tür fonksiyona dönüştürülür."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">TRİGONOMETRİK DENKLEMLERE GİRİŞ: sin(x) = a VE cos(x) = a (12.3.2.1)</text>\n  <rect x=\"20\" y=\"46\" width=\"320\" height=\"194\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e40af\">1. sin(f(x)) = sin(α) Denklemi</text>\n  <text x=\"32\" y=\"92\" font-size=\"10.5\" fill=\"#1e3a8a\">• |a| ≤ 1 olmak üzere sin(x) = a = sin(α) ise</text>\n  <text x=\"40\" y=\"107\" font-size=\"10.5\" fill=\"#1e3a8a\">birim çemberde sinüsü aynı olan açılar</text>\n  <text x=\"40\" y=\"122\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1d4ed8\">α ve (π − α) [yani 180° − α] açılarıdır:</text>\n  <rect x=\"32\" y=\"134\" width=\"296\" height=\"58\" rx=\"6\" fill=\"#ffffff\" stroke=\"#60a5fa\"/>\n  <text x=\"180\" y=\"154\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\">x₁ = α + 2kπ   (α + 360°·k)</text>\n  <text x=\"180\" y=\"176\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">x₂ = (π − α) + 2kπ   (180° − α + 360°·k)</text>\n  <text x=\"180\" y=\"216\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\">(k ∈ Z tam sayı · Periyot T = 2π)</text>\n  <rect x=\"360\" y=\"46\" width=\"320\" height=\"194\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#991b1b\">2. cos(f(x)) = cos(α) Denklemi</text>\n  <text x=\"372\" y=\"92\" font-size=\"10.5\" fill=\"#7f1d1d\">• |a| ≤ 1 olmak üzere cos(x) = a = cos(α) ise</text>\n  <text x=\"380\" y=\"107\" font-size=\"10.5\" fill=\"#7f1d1d\">birim çemberde kosinüsü aynı olan açılar</text>\n  <text x=\"380\" y=\"122\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b91c1c\">α ve (−α) [veya 2π − α] açılarıdır:</text>\n  <rect x=\"372\" y=\"134\" width=\"296\" height=\"58\" rx=\"6\" fill=\"#ffffff\" stroke=\"#f87171\"/>\n  <text x=\"520\" y=\"154\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#991b1b\">x₁ = α + 2kπ   (α + 360°·k)</text>\n  <text x=\"520\" y=\"176\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">x₂ = −α + 2kπ   (−α + 360°·k)</text>\n  <text x=\"520\" y=\"216\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#991b1b\">|a| &gt; 1 ise Çözüm Kümesi ÇK = ∅ (Boş Küme)!</text>\n</svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Trigonometride iki kat açı formüllerini kullanarak cos(20°) · cos(40°) · cos(80°) çarpımının sayısal değerini bulunuz.",
+      "cevap": "İfadeye A diyelim ve eşitliğin her iki tarafını en küçük açının sinüsünün 2 katı olan 2·sin(20°) ile çarpalım: 2·sin(20°)·A = [2·sin(20°)·cos(20°)] · cos(40°) · cos(80°) = sin(40°) · cos(40°) · cos(80°). Tekrar 2 ile çarpıp bölersek: {kesir:1|2}·[2·sin(40°)·cos(40°)]·cos(80°) = {kesir:1|2}·sin(80°)·cos(80°) = {kesir:1|4}·sin(160°) olur. Böylece A = {kesir:sin(160°)|8·sin(20°)} bulunur. Bütünler açılarda sin(160°) = sin(20°) olduğundan sadeleşme sonucunda A = {kesir:1|8} elde edilir."
+    },
+    {
+      "soru": "En sade biçimini bulmak üzere {kesir:1 - cos(4x)|sin(4x)} ifadesini iki kat açı özdeşlikleriyle sadeleştiriniz.",
+      "cevap": "Pay kısmındaki '1' sayısını yok etmek için cos(4x) = 1 − 2·{us:sin|2}(2x) açılımı kullanılır: 1 − cos(4x) = 1 − (1 − 2·{us:sin|2}(2x)) = 2·{us:sin|2}(2x). Paydada ise sin(4x) = 2·sin(2x)·cos(2x) yazılır. Oranlandığında {kesir:2·{us:sin|2}(2x)|2·sin(2x)·cos(2x)} = {kesir:sin(2x)|cos(2x)} = tan(2x) bulunur."
+    },
+    {
+      "soru": "Dar açılı bir x açısı için tan(2x) = {kesir:3|4} olduğuna göre tan(x) ve cot(x) değerlerini yarım açı dik üçgeniyle bulunuz.",
+      "cevap": "Dar açısı 2x olan dik üçgende karşı dik kenar 3, komşu dik kenar 4 ve hipotenüs 5 birimdir. 2x açısının komşu kenarı (4 birim), hipotenüs uzunluğu (5 birim) kadar dışarıya uzatılarak taban açıları x olan ikizkenar üçgen oluşturulur. Büyük dik üçgende x açısının karşısı 3, komşusu 4 + 5 = 9 birim olduğundan tan(x) = {kesir:3|9} = {kesir:1|3} ve cot(x) = 3 bulunur."
+    },
+    {
+      "soru": "Ters trigonometrik ifade içeren sin(2 · arccos({kesir:5|13})) ifadesinin değerini hesaplayınız.",
+      "cevap": "arccos({kesir:5|13}) = α diyelim; buradan dar açı α için cos(α) = {kesir:5|13} olur. 5-12-13 dik üçgeninden sin(α) = {kesir:12|13} bulunur. Bizden istenen sin(2α) = 2·sin(α)·cos(α) olduğundan: sin(2α) = 2 · {kesir:12|13} · {kesir:5|13} = {kesir:120|169} olarak hesaplanır."
+    },
+    {
+      "soru": "[0, 2π) aralığında sin(2x) = {kesir:{kok:3}|2} trigonometrik denkleminin köklerini bulunuz.",
+      "cevap": "{kesir:{kok:3}|2} = sin(60°) = sin({kesir:π|3}) olduğundan sin(2x) = sin(60°) yazılır. İki kol oluşturulur:\n1. Kol: 2x = 60° + 360°·k → x = 30° + 180°·k. Buradan k = 0 için x₁ = 30° ({kesir:π|6}) ve k = 1 için x₂ = 210° ({kesir:7π|6}) bulunur.\n2. Kol: 2x = (180° − 60°) + 360°·k = 120° + 360°·k → x = 60° + 180°·k. Buradan k = 0 için x₃ = 60° ({kesir:π|3}) ve k = 1 için x₄ = 240° ({kesir:4π|3}) olmak üzere toplam 4 kök bulunur."
+    },
+    {
+      "soru": "[0°, 360°) aralığında 2·cos(3x) + {kok:2} = 0 denkleminin kaç farklı kökü vardır? Köklerden en küçüğünü bulunuz.",
+      "cevap": "Denklem düzenlenirse cos(3x) = −{kesir:{kok:2}|2} = cos(135°) olur.\n1. Kol: 3x = 135° + 360°·k → x = 45° + 120°·k. Buradan k = 0, 1, 2 için x ∈ {45°, 165°, 285°} (3 kök).\n2. Kol: 3x = −135° + 360°·k → x = −45° + 120°·k. Buradan k = 1, 2, 3 için x ∈ {75°, 195°, 315°} (3 kök).\nToplam 6 farklı kök vardır ve en küçük pozitif kök 45° ({kesir:π|4}) olur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "soru": "Trigonometride iki kat açı (yarım açı) özdeşlikleri kullanılarak {kesir:1 + cos(2x)|1 - cos(2x)} ifadesi sadeleştirildiğinde aşağıdakilerden hangisi elde edilir?",
+      "secenekler": [
+        "{us:tan|2}(x)",
+        "{us:cot|2}(x)",
+        "sin(2x)",
+        "cos(2x)",
+        "2·tan(x)"
+      ],
+      "dogru": 1,
+      "aciklama": "Payda 1 + cos(2x) = 2·{us:cos|2}(x) ve paydada 1 − cos(2x) = 2·{us:sin|2}(x) yazıldığında oran {kesir:2·{us:cos|2}(x)|2·{us:sin|2}(x)} = {us:cot|2}(x) olur.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "sin(x) − cos(x) = {kesir:1|3} olduğuna göre sin(2x) ifadesinin değeri kaçtır?",
+      "secenekler": [
+        "{kesir:8|9}",
+        "{kesir:7|9}",
+        "{kesir:4|9}",
+        "{kesir:2|3}",
+        "{kesir:1|9}"
+      ],
+      "dogru": 0,
+      "aciklama": "Her iki tarafın karesi alınırsa {us:(sin x - cos x)|2} = {us:sin|2}(x) + {us:cos|2}(x) − 2·sin(x)·cos(x) = 1 − sin(2x) = {kesir:1|9} olur; buradan sin(2x) = 1 − {kesir:1|9} = {kesir:8|9} bulunur.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Ters trigonometrik fonksiyon içeren cos(2 · arctan({kesir:1|2})) ifadesinin değeri aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "{kesir:1|5}",
+        "{kesir:2|5}",
+        "{kesir:3|5}",
+        "{kesir:4|5}",
+        "{kesir:3|4}"
+      ],
+      "dogru": 2,
+      "aciklama": "arctan({kesir:1|2}) = α denirse tan(α) = {kesir:1|2} olur. Dik üçgende karşı=1, komşu=2, hipotenüs={kok:5} olduğundan cos(α) = {kesir:2|{kok:5}} ve cos(2α) = 2·{us:cos|2}(α) − 1 = 2·({kesir:4|5}) − 1 = {kesir:3|5} bulunur.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "[0, 2π] kapalı aralığında cos(2x) = {kesir:1|2} trigonometrik denklemini sağlayan kaç farklı x gerçel sayısı vardır?",
+      "secenekler": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "4"
+      ],
+      "dogru": 4,
+      "aciklama": "cos(2x) = cos(60°) denkleminden 2x = 60° + 360°k → x = 30° + 180°k (30°, 210°) ve 2x = −60° + 360°k → x = −30° + 180°k (150°, 330°) olmak üzere [0, 2π] aralığında 4 kök vardır.",
+      "tur": "coktan"
+    },
+    {
+      "ifadeler": [
+        {
+          "metin": "Trigonometride 1 + cos(2x) ifadesi iki kat açı formülüyle 2·cos²(x) çarpımına eşittir.",
+          "dogru": true,
+          "aciklama": "cos(2x) = 2·{us:cos|2}(x) − 1 özdeşliğinde −1 sol tarafa atıldığında 1 + cos(2x) = 2·{us:cos|2}(x) elde edilir."
+        },
+        {
+          "metin": "(sin x + cos x)² tam kare ifadesinin açılımı 1 + sin(2x) toplamına eşittir.",
+          "dogru": true,
+          "aciklama": "{us:sin|2}(x) + {us:cos|2}(x) = 1 ve 2·sin(x)·cos(x) = sin(2x) olduğundan toplam 1 + sin(2x) olur."
+        },
+        {
+          "metin": "Gerçel sayılarda sin(3x) = 2 trigonometrik denkleminin [0, 2π) aralığında 3 farklı kökü vardır.",
+          "dogru": false,
+          "aciklama": "Sinüs fonksiyonu [−1, 1] aralığında değer alır; 2 > 1 olduğu için sin(3x) = 2 denkleminin çözüm kümesi boş kümedir (0 kök)."
+        },
+        {
+          "metin": "cos(x) = cos(α) denkleminin genel çözüm kümesi x = α + 2kπ ve x = −α + 2kπ (k ∈ Z) şeklindedir.",
+          "dogru": true,
+          "aciklama": "Birim çemberde I. ve IV. bölgelerde kosinüs işaret ve değerce aynı olduğundan kökler ±α + 2kπ olur."
+        },
+        {
+          "metin": "sin(x) = sin(40°) denkleminin [0°, 180°] aralığındaki tek kökü x = 40° açısıdır.",
+          "dogru": false,
+          "aciklama": "Sinüs denkleminde α = 40° yanında bütünleri olan 180° − 40° = 140° de [0°, 180°] aralığında denklemin köküdür."
+        }
+      ],
+      "tur": "dy"
+    },
+    {
+      "ciftler": [
+        [
+          "1 − cos(2x)",
+          "2·sin²(x) yarım açı özdeşliği"
+        ],
+        [
+          "1 + cos(2x)",
+          "2·cos²(x) yarım açı özdeşliği"
+        ],
+        [
+          "[1 − cos(2x)] / sin(2x)",
+          "tan(x) fonksiyonuna eşit olan rasyonel yarım açı oranı"
+        ],
+        [
+          "x = α + 2kπ veya x = (π − α) + 2kπ",
+          "sin(x) = sin(α) trigonometrik denkleminin genel çözüm kümesi"
+        ],
+        [
+          "x = α + 2kπ veya x = −α + 2kπ",
+          "cos(x) = cos(α) trigonometrik denkleminin genel çözüm kümesi"
+        ]
+      ],
+      "tur": "eslestir"
+    },
+    {
+      "cumleler": [
+        {
+          "metin": "Açıları ikişer katına çıkan cos(x)·cos(2x)·cos(4x) çarpımı 2·___(x) ile çarpılıp bölünerek sadeleştirilir.",
+          "cevap": "sin"
+        },
+        {
+          "metin": "Trigonometrik 6·sin(x)·cos(x) = 3·sin(2x) ifadesinin gerçel sayılarda alabileceği en büyük değer ___ olur.",
+          "cevap": "3"
+        },
+        {
+          "metin": "sin(x) = a veya cos(x) = a denkleminde |a| > 1 ise çözüm kümesi ___ kümedir.",
+          "cevap": "boş"
+        },
+        {
+          "metin": "Birim çemberde sin(x) = sin(50°) denkleminin [0°, 360°) aralığındaki kökleri 50° ve ___ derecedir.",
+          "cevap": "130"
+        },
+        {
+          "metin": "Birim çemberde cos(x) = cos(70°) denkleminin [0°, 360°) aralığındaki kökleri 70° ve ___ derecedir.",
+          "cevap": "290"
+        }
+      ],
+      "fazla": [
+        "tan",
+        "6",
+        "110"
+      ],
+      "tur": "bosluk"
+    },
+    {
+      "soru": "Trigonometrik denklemlerde sin(f(x)) = sin(α) ve cos(f(x)) = cos(α) denklemlerinin genel çözüm kümelerinin nasıl oluşturulduğunu birim çember üzerindeki bölgelerle açıklayınız ve sin(2x) = cos(x) denkleminin [0°, 180°] aralığındaki köklerini bulunuz.",
+      "ipuclari": [
+        "Sinüsün birim çemberde I. ve II. bölgelerde (α ve 180° − α) aynı işarete sahip olduğunu belirtiniz.",
+        "Kosinüsün birim çemberde I. ve IV. bölgelerde (α ve −α / 360° − α) aynı değere sahip olduğunu açıklayınız.",
+        "sin(2x) = cos(x) denkleminde sin(2x) = 2·sin(x)·cos(x) yarım açı açılımını kullanarak veya cos(x) = sin(90° − x) dönüşümüyle kökleri bulunuz."
+      ],
+      "cevap": "Birim çemberde sinüs ekseni dikey (y) eksen olduğundan I. bölgedeki α açısı ile II. bölgedeki (180° − α) açısının sinüsleri eşittir; bu nedenle sin(f(x)) = sin(α) denkleminin kökleri f(x) = α + 360°·k ve f(x) = (180° − α) + 360°·k olur. Kosinüs ekseni ise yatay (x) eksen olduğundan I. bölgedeki α açısı ile IV. bölgedeki (−α) açısının kosinüsleri eşittir; dolayısıyla cos(f(x)) = cos(α) denkleminin kökleri f(x) = α + 360°·k ve f(x) = −α + 360°·k olarak yazılır.\nsin(2x) = cos(x) denkleminde yarım açı yazılırsa: 2·sin(x)·cos(x) − cos(x) = 0 → cos(x)·(2·sin(x) − 1) = 0 olur. Buradan cos(x) = 0 için [0°, 180°] aralığında x₁ = 90°; sin(x) = {kesir:1|2} için ise x₂ = 30° ve x₃ = 150° olmak üzere {30°, 90°, 150°} çözüm kümesi elde edilir.",
+      "tur": "ogretici"
+    }
+  ],
+  "ozet": [
+    "Kosinüs zincir çarpımlarında (cos x · cos 2x · cos 4x) ifade 2·sin(x) ile çarpılıp bölünerek sin(2x) yarım açı kuralı ardışık olarak uygulanır.",
+    "Kesirli ifadelerde '1' sayısını yok etmek için 1 + cos(2x) = 2·{us:cos|2}(x) ve 1 − cos(2x) = 2·{us:sin|2}(x) özdeşlikleri kullanılır.",
+    "Dar açılı 2x açısından x açısına geçerken dik üçgenin komşu dik kenarı hipotenüs uzunluğu kadar uzatılarak ikizkenar üçgen oluşturulur.",
+    "sin(x) = sin(α) denkleminin genel çözüm kümesi x₁ = α + 2kπ ve x₂ = (π − α) + 2kπ (k ∈ Z) formülleriyle bulunur.",
+    "cos(x) = cos(α) denkleminin genel çözüm kümesi x₁ = α + 2kπ ve x₂ = −α + 2kπ (k ∈ Z) formülleriyle hesaplanır; |a| > 1 için çözüm kümesi boş kümedir."
+  ]
+}

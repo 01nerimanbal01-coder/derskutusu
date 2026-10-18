@@ -1,0 +1,259 @@
+{
+  "ad": "7-matematik-12",
+  "sinif": 7,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 12,
+  "tarih": "7-11 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "İstatistiksel Araştırma Süreci",
+  "konu": "Kategorik ve Nicel (Sürekli) Veri Dağılımları: Çizgi Grafiği, Sütun Grafiği, Daire Grafiği ile Aritmetik Ortalama, Ortanca (Medyan) ve Tepe Değer (Mod) (MAT.7.6.1)",
+  "ciktilar": [
+    "Kategorik (nitel) ve nicel (kesikli/sürekli) veriye dayanan istatistiksel araştırma soruları oluşturur ve veri toplama planı yapar (MAT.7.6.1.a-ç).",
+    "Veri türüne ve araştırma amacına uygun görselleştirme aracını (sütun grafiği, çizgi grafiği, daire grafiği, nokta grafiği) gerekçeleriyle seçer ve dönüştürür (MAT.7.6.1.d-e).",
+    "Veri dağılımlarını aritmetik ortalama, ortanca (medyan), tepe değer (mod), açıklık ve ortalama mutlak sapma ile özetleyerek veriye dayalı karar verir (MAT.7.6.1.d-g)."
+  ],
+  "giris": "Bilimsel araştırmalardan ekonomi ve spora kadar pek çok alanda doğru kararlar verebilmek için verilerin toplanması, uygun grafiklerle görselleştirilmesi ve özetlenmesi gerekir. Bu haftaki dersimizde {koyu:İstatistiksel Araştırma Süreci} kapsamında {koyu:kategorik ve nicel (sürekli) veri} türlerini, {koyu:çizgi, sütun ve daire grafiklerini} ve merkezi eğilim-yayılım ölçülerini ({koyu:aritmetik ortalama, ortanca, tepe değer, açıklık, ortalama mutlak sapma}) öğreneceğiz.",
+  "bolumler": [
+    {
+      "baslik": "İstatistiksel Araştırma Süreci: Kategorik ve Nicel (Sürekli) Veriler (MAT.7.6.1)",
+      "metin": [
+        "İstatistiksel araştırma süreci; bir problemin fark edilmesi, {koyu:araştırma sorusunun oluşturulması}, verilerin toplanması, analizi ve sonuçların yorumlanması adımlarından oluşur. İyi bir istatistiksel araştırma sorusu tek bir sabit cevabı olan soru değil, hedef kitlede {koyu:değişkenlik (çeşitlilik)} gösteren ve veri toplamayı gerektiren sorudur (Örneğin: 'Okulumuzdaki 7. sınıf öğrencilerinin en sevdiği spor dalları nelerdir?').",
+        "Toplanan veriler niteliklerine göre iki ana gruba ayrılır: {koyu:Kategorik (nitel) veri}, sayısal bir ölçümden ziyade bir gruba, sınıfa veya kategoriye ait olma durumunu belirten verilerdir (göz rengi, kan grubu, tutulan takım, sevilen meyve türü gibi). {koyu:Nicel (sayısal) veri} ise sayma veya ölçme sonucunda sayısal değerlerle ifade edilen verilerdir.",
+        "Nicel veriler kendi içinde ikiye ayrılır: {koyu:Nicel kesikli veri}, yalnızca sayma sayılarıyla ifade edilen ve iki tam sayı arasında ondalıklı değer alamayan verilerdir (kardeş sayısı, sınıftaki sıra sayısı, atılan gol sayısı gibi). {koyu:Nicel (sürekli) veri} ise tartma, uzunluk veya zaman ölçümüyle elde edilen ve iki değer arasındaki her türlü ondalıklı/kesirli değeri alabilen verilerdir (boy uzunluğu: 1,62 m; hava sıcaklığı: 18,5 °C; 100 metre koşu süresi: 13,4 saniye gibi)."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">İSTATİSTİKSEL ARAŞTIRMA SÜRECİ VE VERİ TÜRLERİ (MAT.7.6.1)</text>\n  <rect x=\"28\" y=\"48\" width=\"310\" height=\"190\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/>\n  <text x=\"183\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">1. Kategorik (Nitel/Sınıflamalı) Veri</text>\n  <text x=\"44\" y=\"98\" font-size=\"11\" fill=\"#334155\">• Tanım: Sayısal ölçümden ziyade</text>\n  <text x=\"44\" y=\"114\" font-size=\"11\" fill=\"#334155\">  nitelik, grup veya kategori bildirir.</text>\n  <text x=\"44\" y=\"138\" font-size=\"11\" fill=\"#334155\">• Örnekler: En sevilen spor dalı,</text>\n  <text x=\"44\" y=\"154\" font-size=\"11\" fill=\"#334155\">  kan grupları (A, B, AB, 0), göz rengi,</text>\n  <text x=\"44\" y=\"170\" font-size=\"11\" fill=\"#334155\">  okunan eser türü, seçmeli dersler.</text>\n  <text x=\"183\" y=\"202\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\">Uygun Grafikler: Sütun Grafiği,</text>\n  <text x=\"183\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\">Daire Grafiği, Nokta Grafiği</text>\n  <rect x=\"362\" y=\"48\" width=\"310\" height=\"190\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/>\n  <text x=\"517\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">2. Nicel (Sayısal: Kesikli ve Sürekli) Veri</text>\n  <text x=\"378\" y=\"98\" font-size=\"11\" fill=\"#334155\">• Kesikli (Sayma ile): Kardeş sayısı,</text>\n  <text x=\"378\" y=\"114\" font-size=\"11\" fill=\"#334155\">  çözülen soru adedi, gol sayısı.</text>\n  <text x=\"378\" y=\"138\" font-size=\"11\" fill=\"#334155\">• Sürekli (Ölçme ile - Ondalıklı olabilir):</text>\n  <text x=\"378\" y=\"154\" font-size=\"11\" fill=\"#334155\">  Boy uzunluğu (1,64 m), kütle (52,5 kg),</text>\n  <text x=\"378\" y=\"170\" font-size=\"11\" fill=\"#334155\">  hava sıcaklığı, koşu süresi (saniye).</text>\n  <text x=\"517\" y=\"202\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">Uygun Grafikler: Çizgi Grafiği (zamanla</text>\n  <text x=\"517\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">değişim), Sütun ve Nokta Grafiği</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Nicel Kesikli ve Nicel Sürekli Veri Ayrımı",
+          "metin": "'Kaç tane?' sorusuna tam sayıyla cevap veren veriler KESİKLİ (3 kardeş, 20 soru); 'Ne kadar?' sorusuna cetvel, terazi, termometre veya kronometre ile ölçülerek cevap veren veriler SÜREKLİ veridir (48,6 kg kütle, 165,4 cm boy)."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İstatistiksel Araştırma Sorusu Ölçütü",
+          "metin": "'Sınıf başkanımız kimdir?' sorusu tek bir cevabı olduğu için istatistiksel araştırma sorusu DEĞİLDİR; 'Sınıfımızdaki öğrencilerin günlük ders çalışma süreleri kaç dakikadır?' sorusu ise veriden veriye değiştiği için araştırma sorusudur."
+        }
+      ]
+    },
+    {
+      "baslik": "Veri Görselleştirme Araçları: Sütun, Çizgi, Nokta ve Daire Grafiği",
+      "metin": [
+        "Toplanan verilerin hangi grafikle gösterileceği veri türüne ve araştırmanın amacına göre seçilir. {koyu:Sütun grafiği} ve {koyu:nokta grafiği}, kategorik veya kesikli verilerin sıklıklarını (frekanslarını) birbirleriyle karşılaştırmak için en uygun araçlardır. {koyu:Çizgi grafiği} ise özellikle {koyu:nicel (sürekli) verilerin zamana bağlı değişimini} (günlük sıcaklık değişimi, bir fidanın aylara göre boy uzaması, döviz kuru değişimi gibi) göstermek için tercih edilir.",
+        "{koyu:Daire grafiği}, bir bütünün parçalarının bütün içindeki oranını veya yüzdesini göstermek istediğimizde kullanılır. Dairenin tam merkez açısı {koyu:360 derece} olduğu için, her bir kategorinin daire dilimine düşen merkez açısı şu orantıyla hesaplanır: {koyu:Merkez Açı = {kesir:Grubun Veri Sayısı|Toplam Veri Sayısı} · 360°}. Örneğin toplam 60 öğrencinin bulunduğu bir grupta 15 öğrenci yüzme kursunu seçmişse, yüzme diliminin merkez açısı {kesir:15|60} · 360° = {kesir:1|4} · 360° = {koyu:90°} olur.",
+        "Grafikler arasında dönüşüm yapılırken önce bütün verilerin toplamı bulunur, ardından her grubun toplam içindeki kesir veya yüzde payı hesaplanarak hedef grafiğe (örneğin sütun grafiğinden 360 derecelik daire grafiğine) aktarılır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">VERİ GÖRSELLEŞTİRME ARAÇLARI: SÜTUN, ÇİZGİ VE DAİRE GRAFİĞİ</text>\n  <rect x=\"25\" y=\"48\" width=\"210\" height=\"190\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/>\n  <text x=\"130\" y=\"72\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1d4ed8\">1. Sütun Grafiği</text>\n  <rect x=\"55\" y=\"135\" width=\"28\" height=\"65\" fill=\"#3b82f6\"/>\n  <rect x=\"98\" y=\"105\" width=\"28\" height=\"95\" fill=\"#2563eb\"/>\n  <rect x=\"141\" y=\"150\" width=\"28\" height=\"50\" fill=\"#60a5fa\"/>\n  <rect x=\"184\" y=\"120\" width=\"28\" height=\"80\" fill=\"#1d4ed8\"/>\n  <line x1=\"45\" y1=\"200\" x2=\"220\" y2=\"200\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <text x=\"130\" y=\"220\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#1e3a8a\">Kategorilerin büyüklüklerini</text>\n  <text x=\"130\" y=\"233\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#1e3a8a\">karşılaştırmak için idealdir</text>\n  <rect x=\"245\" y=\"48\" width=\"210\" height=\"190\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/>\n  <text x=\"350\" y=\"72\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">2. Çizgi Grafiği</text>\n  <polyline points=\"270,180 310,140 350,155 390,110 430,95\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2.5\"/>\n  <circle cx=\"270\" cy=\"180\" r=\"4\" fill=\"#15803d\"/>\n  <circle cx=\"310\" cy=\"140\" r=\"4\" fill=\"#15803d\"/>\n  <circle cx=\"350\" cy=\"155\" r=\"4\" fill=\"#15803d\"/>\n  <circle cx=\"390\" cy=\"110\" r=\"4\" fill=\"#15803d\"/>\n  <circle cx=\"430\" cy=\"95\" r=\"4\" fill=\"#15803d\"/>\n  <line x1=\"260\" y1=\"200\" x2=\"440\" y2=\"200\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"220\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#166534\">Sürekli verinin zamana göre</text>\n  <text x=\"350\" y=\"233\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#166534\">artış/azalış eğilimini gösterir</text>\n  <rect x=\"465\" y=\"48\" width=\"210\" height=\"190\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\"/>\n  <text x=\"570\" y=\"72\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#a16207\">3. Daire Grafiği (360°)</text>\n  <circle cx=\"570\" cy=\"140\" r=\"46\" fill=\"#fde047\" stroke=\"#ca8a04\" stroke-width=\"2\"/>\n  <path d=\"M570,140 L570,94 A46,46 0 0,1 616,140 Z\" fill=\"#f97316\"/>\n  <path d=\"M570,140 L616,140 A46,46 0 0,1 570,186 Z\" fill=\"#3b82f6\"/>\n  <text x=\"570\" y=\"210\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#92400e\">Merkez Açı = (Veri / Toplam) × 360°</text>\n  <text x=\"570\" y=\"228\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#78350f\">Parça-bütün oranını gösterir</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Grafik Seçim Gerekçesi (MAT.7.6.1.d)",
+          "metin": "• Zamana göre artış/azalış eğilimi → Çizgi Grafiği\n• Kategoriler arası miktar karşılaştırması → Sütun / Nokta Grafiği\n• Parçaların bütün (toplam) içindeki oranı/yüzdesi → Daire Grafiği."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Daire Grafiğinde Yüzde (%) ve Açı Pratik Köprüsü",
+          "metin": "Tam daire %100 = 360° olduğundan: %50 (yarım) = 180°, %25 (çeyrek) = 90°, %10 = 36°, %20 = 72°, %5 = 18° merkez açıya karşılık gelir."
+        }
+      ]
+    },
+    {
+      "baslik": "Veri Özetleme Araçları: Aritmetik Ortalama, Ortanca, Tepe Değer ve Yayılım",
+      "metin": [
+        "Bir veri grubunu tek bir merkezi değerle temsil etmek için üç temel ölçü kullanılır: Birincisi {koyu:Aritmetik Ortalama}, tüm verilerin toplamının veri sayısına bölünmesiyle bulunur ({koyu:Ortalama = {kesir:Verilerin Toplamı|Veri Sayısı}}). İkincisi {koyu:Ortanca (Medyan)}, veriler küçükten büyüğe (veya büyükten küçüğe) sıralandığında tam ortada yer alan değerdir; veri sayısı tek ise tam ortadaki sayı, veri sayısı çift ise ortadaki iki sayının aritmetik ortalaması ortancayı verir. Üçüncüsü {koyu:Tepe Değer (Mod)}, bir veri grubunda en çok tekrar eden (frekansı en yüksek olan) değerdir.",
+        "Veri grubunda diğer verilerden aşırı derecede küçük veya aşırı büyük {koyu:uç (aykırı) değerler} bulunduğunda aritmetik ortalama bu uç değerden etkilenerek yanıltıcı olabilir; böyle durumlarda grubu temsil etmek için {koyu:ortanca (medyan)} kullanmak çok daha uygundur. Kategorik verilerde ise (örneğin en çok satılan ayakkabı numarası veya en çok tercih edilen renk) {koyu:tepe değer (mod)} en anlamlı özetleme aracıdır.",
+        "Verilerin birbirine ne kadar yakın (tutarlı) veya dağınık olduğunu ölçen yayılım ölçüleri ise {koyu:Açıklık} ve {koyu:Ortalama Mutlak Sapma (OMS)}'dır. {koyu:Açıklık = En Büyük Değer − En Küçük Değer} bağıntısıyla bulunur. {koyu:Ortalama Mutlak Sapma} ise her bir verinin aritmetik ortalamaya olan mutlak uzaklıklarının toplanıp veri sayısına bölünmesiyle elde edilir; OMS küçüldükçe grubun istikrarı ve tutarlılığı artar."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">VERİ ÖZETLEME ÖLÇÜLERİ: ORTALAMA, ORTANCA, TEPE DEĞER VE AÇIKLIK</text>\n  <rect x=\"25\" y=\"48\" width=\"210\" height=\"190\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/>\n  <text x=\"130\" y=\"72\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1d4ed8\">1. Aritmetik Ortalama</text>\n  <text x=\"40\" y=\"98\" font-size=\"11\" fill=\"#334155\">• Formül: Verilerin Toplamı /</text>\n  <text x=\"40\" y=\"114\" font-size=\"11\" fill=\"#334155\">  Veri Sayısı (Terim Sayısı)</text>\n  <text x=\"40\" y=\"138\" font-size=\"11\" fill=\"#334155\">• Örnek: 10, 12, 12, 16, 20</text>\n  <text x=\"40\" y=\"154\" font-size=\"11\" fill=\"#334155\">  Toplam = 70 → 70 / 5 = 14</text>\n  <text x=\"40\" y=\"180\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e40af\">• Çok uç (aşırı büyük/küçük)</text>\n  <text x=\"40\" y=\"196\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e40af\">  değerlerden doğrudan etkilenir</text>\n  <rect x=\"245\" y=\"48\" width=\"210\" height=\"190\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/>\n  <text x=\"350\" y=\"72\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">2. Ortanca (Medyan)</text>\n  <text x=\"260\" y=\"98\" font-size=\"11\" fill=\"#334155\">• Veriler küçükten büyüğe</text>\n  <text x=\"260\" y=\"114\" font-size=\"11\" fill=\"#334155\">  sıralandığında tam ORTADAKİ</text>\n  <text x=\"260\" y=\"130\" font-size=\"11\" fill=\"#334155\">  değerdir (çift sayıda ise</text>\n  <text x=\"260\" y=\"146\" font-size=\"11\" fill=\"#334155\">  ortadaki ikisinin ortalaması).</text>\n  <text x=\"260\" y=\"172\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#166534\">• Uç (aykırı) değerler olduğunda</text>\n  <text x=\"260\" y=\"188\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#166534\">  en güvenilir merkez ölçüsüdür</text>\n  <rect x=\"465\" y=\"48\" width=\"210\" height=\"190\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\"/>\n  <text x=\"570\" y=\"72\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#a16207\">3. Tepe Değer (Mod) ve Yayılım</text>\n  <text x=\"480\" y=\"98\" font-size=\"11\" fill=\"#334155\">• Tepe Değer (Mod): Veri grubunda</text>\n  <text x=\"480\" y=\"114\" font-size=\"11\" fill=\"#334155\">  EN ÇOK TEKRAR EDEN değerdir.</text>\n  <text x=\"480\" y=\"138\" font-size=\"11\" fill=\"#334155\">• Açıklık: En Büyük − En Küçük</text>\n  <text x=\"480\" y=\"162\" font-size=\"11\" fill=\"#334155\">• Ortalama Mutlak Sapma (OMS):</text>\n  <text x=\"480\" y=\"178\" font-size=\"10.5\" fill=\"#78350f\">  Verilerin ortalamaya olan</text>\n  <text x=\"480\" y=\"194\" font-size=\"10.5\" fill=\"#78350f\">  uzaklıklarının ortalamasıdır</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Ortanca (Medyan) Bulurken Sıralama Şartı!",
+          "metin": "Ortanca (medyan) hesaplanırken verileri doğrudan verildiği sırayla almak en sık yapılan hatadır! İlk adım olarak veriler mutlaka KÜÇÜKTEN BÜYÜĞE doğru sıralanmalı, ondan sonra ortadaki terim seçilmelidir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Tepe Değer (Mod) Özel Durumları",
+          "metin": "Bir veri grubunda bütün sayılar eşit sayıda tekrar ediyorsa o grubun tepe değeri (modu) YOKTUR. En çok tekrar etme sayısına sahip birden fazla değer varsa grup birden fazla tepe değere sahip olabilir."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Aşağıdaki verileri 'Kategorik Veri', 'Nicel Kesikli Veri' ve 'Nicel (Sürekli) Veri' olarak sınıflandırınız: 1) Öğrencilerin kan grupları, 2) Bir fidanın haftalık boy uzunluğu (cm), 3) Sınıftaki öğrencilerin kardeş sayıları.",
+      "cevap": "• Öğrencilerin kan grupları (A, B, AB, 0): Kategorik (nitel) veri.\n• Sınıftaki öğrencilerin kardeş sayıları: Nicel kesikli veri (sayma ile elde edilir).\n• Bir fidanın haftalık boy uzunluğu (cm): Nicel (sürekli) veri (ölçme ile elde edilir, ondalıklı değer alabilir)."
+    },
+    {
+      "soru": "Bir ortaokuldaki 120 öğrencinin 40'ı futbol, 30'u basketbol, 50'si ise voleybol kulübüne seçilmiştir. Bu veriler daire grafiğinde gösterildiğinde her bir kulübün merkez açısı kaç derece olur?",
+      "cevap": "Toplam öğrenci sayısı 120 olup 360°'ye karşılık gelir (1 öğrenci = {kesir:360|120} = 3°).\n• Futbol: 40 · 3° = 120°\n• Basketbol: 30 · 3° = 90°\n• Voleybol: 50 · 3° = 150° (Toplam: 120° + 90° + 150° = 360°)."
+    },
+    {
+      "soru": "Bir öğrencinin 5 matematik denemesinden aldığı puanlar: 75, 80, 70, 80, 95 şeklindedir. Bu veri grubunun aritmetik ortalamasını, ortancasını (medyan), tepe değerini (mod) ve açıklığını bulunuz.",
+      "cevap": "Önce küçükten büyüğe sıralayalım: 70, 75, 80, 80, 95.\n• Aritmetik Ortalama: {kesir:70 + 75 + 80 + 80 + 95|5} = {kesir:400|5} = 80.\n• Ortanca (Medyan): 5 verinin tam ortasındaki (3. sıradaki) değer = 80.\n• Tepe Değer (Mod): En çok (2 kez) tekrar eden değer = 80.\n• Açıklık: En büyük − En küçük = 95 − 70 = 25."
+    },
+    {
+      "soru": "Bir şirkette çalışan 5 kişinin maaşları (bin TL olarak): 20, 22, 24, 24 ve 110 şeklindedir. Bu şirketteki çalışanların gelir durumunu özetlemek için aritmetik ortalama mı yoksa ortanca (medyan) mı kullanılmalıdır? Neden?",
+      "cevap": "Aritmetik ortalama = {kesir:20 + 22 + 24 + 24 + 110|5} = {kesir:200|5} = 40 bin TL çıkar; oysa 5 çalışandan 4'ünün maaşı 24 bin TL ve altındadır. 110 bin TL 'uç (aykırı) değer' olduğu için ortalamayı şişirmiştir. Bu nedenle uç değerden etkilenmeyen ortanca (medyan = 24 bin TL) kullanılmalıdır."
+    },
+    {
+      "soru": "Sayıları 6, 8, 10, 12, 14 olan bir veri grubunun aritmetik ortalamasını ve ortalama mutlak sapmasını (OMS) hesaplayınız.",
+      "cevap": "• Aritmetik Ortalama: {kesir:6 + 8 + 10 + 12 + 14|5} = {kesir:50|5} = 10.\n• Her verinin ortalamaya (10'a) olan uzaklığı: |6−10|=4, |8−10|=2, |10−10|=0, |12−10|=2, |14−10|=4.\n• Ortalama Mutlak Sapma (OMS): {kesir:4 + 2 + 0 + 2 + 4|5} = {kesir:12|5} = 2,4."
+    },
+    {
+      "soru": "Çift sayıda terim içeren 12, 18, 10, 24, 16, 22 veri grubunun ortancası (medyanı) kaçtır?",
+      "cevap": "Verileri küçükten büyüğe sıralayalım: 10, 12, 16, 18, 22, 24 (6 terim). Ortada kalan iki terim 3. ve 4. sıradaki 16 ile 18'dir. Ortanca = {kesir:16 + 18|2} = {kesir:34|2} = 17 bulunur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "İstatistiksel bir araştırmada toplanan aşağıdaki verilerden hangisi ölçme yoluyla elde edilen 'nicel (sürekli) veri' türüne örnektir?",
+      "secenekler": [
+        "Bir sınıftaki öğrencilerin metre cinsinden boy uzunlukları",
+        "Okul kütüphanesinde öğrencilerin en sevdiği roman türleri",
+        "Bir apartmandaki dairelerde yaşayan kişi sayıları",
+        "Otoparktaki otomobillerin renk dağılımları"
+      ],
+      "dogru": 0,
+      "aciklama": "Boy uzunluğu ölçme ile elde edilir ve iki değer arasındaki ondalıklı değerleri alabileceği için nicel (sürekli) veridir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir ildeki beş günlük hava sıcaklığı değerleri sırasıyla 14 °C, 18 °C, 12 °C, 14 °C ve 22 °C olarak ölçülmüştür. Bu veri grubunun 'aritmetik ortalaması', 'ortancası (medyan)' ve 'tepe değeri (mod)' sırasıyla hangisidir?",
+      "secenekler": [
+        "Ortalama: 16 — Ortanca: 12 — Tepe değer: 14",
+        "Ortalama: 16 — Ortanca: 14 — Tepe değer: 14",
+        "Ortalama: 14 — Ortanca: 16 — Tepe değer: 18",
+        "Ortalama: 15 — Ortanca: 14 — Tepe değer: 22"
+      ],
+      "dogru": 1,
+      "aciklama": "Sıralama: 12, 14, 14, 18, 22. Ortalama = 80/5 = 16; Ortanca (3. terim) = 14; Tepe değer (2 kez tekrar eden) = 14."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir çiftçinin bahçesindeki 90 meyve ağacının 30'u elma, 45'i kiraz ve 15'i erik ağacıdır. Bu ağaçların dağılımı daire grafiği ile gösterildiğinde 'kiraz ağaçlarına' ait daire diliminin merkez açısı kaç derece olur?",
+      "secenekler": [
+        "120 derece",
+        "150 derece",
+        "180 derece",
+        "90 derece"
+      ],
+      "dogru": 2,
+      "aciklama": "Toplam 90 ağaçta 45'i kiraz ise yarısıdır ({kesir:45|90} = {kesir:1|2}); daire grafiğinde 360° · {kesir:1|2} = 180° olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir hastanedeki hastaların vücut sıcaklığının saatlere göre değişimini ve artış-azalış eğilimini izlemek isteyen bir hekimin aşağıdaki veri görselleştirme araçlarından hangisini seçmesi en uygundur?",
+      "secenekler": [
+        "Daire grafiği",
+        "Çetele tablosu",
+        "Sütun grafiği",
+        "Çizgi grafiği"
+      ],
+      "dogru": 3,
+      "aciklama": "Sürekli bir verinin zamana bağlı değişimini ve artış-azalış eğilimini göstermek için en uygun grafik çizgi grafiğidir."
+    },
+    {
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "metin": "Bir bütünün parçalarının bütün içindeki oranlarını veya yüzdelerini karşılaştırmak için daire grafiği kullanılır.",
+          "dogru": true,
+          "aciklama": "Daire grafiği (360°) parça-bütün ilişkisini göstermede en etkili araçtır."
+        },
+        {
+          "metin": "Ortanca (medyan) hesaplanırken verileri küçükten büyüğe sıralamaya gerek yoktur.",
+          "dogru": false,
+          "aciklama": "Ortanca bulunurken veriler mutlaka küçükten büyüğe veya büyükten küçüğe sıralanmalıdır."
+        },
+        {
+          "metin": "Veri grubunda aşırı büyük veya aşırı küçük uç değerler bulunduğunda ortanca (medyan), aritmetik ortalamaya göre daha güvenilir bir merkez ölçüsüdür.",
+          "dogru": true,
+          "aciklama": "Aritmetik ortalama uç değerlerden çok etkilenir; ortanca ise uç değerlerden etkilenmez."
+        },
+        {
+          "metin": "Bir veri grubundaki en büyük değer ile en küçük değer arasındaki farka tepe değer (mod) denir.",
+          "dogru": false,
+          "aciklama": "En büyük değer ile en küçük değer arasındaki farka 'açıklık' denir; tepe değer en çok tekrar eden sayıdır."
+        },
+        {
+          "metin": "İki veri grubunun aritmetik ortalaması eşit olduğunda, ortalama mutlak sapması (OMS) daha küçük olan grup daha tutarlı ve istikrarlıdır.",
+          "dogru": true,
+          "aciklama": "Ortalama mutlak sapmanın küçük olması verilerin ortalamaya yakın kümelendiğini gösterir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "ciftler": [
+        [
+          "Aritmetik Ortalama",
+          "Verilerin toplamının veri adedine (terim sayısına) bölümü"
+        ],
+        [
+          "Ortanca (Medyan)",
+          "Sıralanmış veri grubunun tam ortasında yer alan değer"
+        ],
+        [
+          "Tepe Değer (Mod)",
+          "Bir veri grubunda en çok tekrar eden (frekansı en yüksek) değer"
+        ],
+        [
+          "Açıklık",
+          "Veri grubundaki en büyük değer ile en küçük değer arasındaki fark"
+        ],
+        [
+          "Çizgi Grafiği",
+          "Nicel (sürekli) bir verinin zamana bağlı değişimini gösteren grafik"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "cumleler": [
+        {
+          "metin": "Göz rengi, kan grubu ve en sevilen ders gibi sayısal ölçüm içermeyen nitel verilere ___ veri adı verilir.",
+          "cevap": "kategorik"
+        },
+        {
+          "metin": "Daire grafiğinde bütün verilerin toplamı ___ derecelik merkez açıya karşılık gelir.",
+          "cevap": "360"
+        },
+        {
+          "metin": "Küçükten büyüğe sıralanmış 8, 11, 15, 19, 22 veri grubunun ___ değeri tam ortadaki 15 sayısıdır.",
+          "cevap": "ortanca"
+        },
+        {
+          "metin": "Bir ayakkabı mağazasında gün içinde satılan numaralar 38, 40, 40, 40, 41, 42 ise bu grubun ___ değeri 40'tır.",
+          "cevap": "tepe"
+        },
+        {
+          "metin": "Verilerin aritmetik ortalamaya olan mutlak uzaklıklarının ortalamasına ortalama mutlak ___ denir.",
+          "cevap": "sapma"
+        }
+      ],
+      "fazla": [
+        "180",
+        "kesikli"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir basketbolcunun 6 maçta attığı sayılar: 14, 20, 16, 20, 12, 26 olarak kaydedilmiştir. Bu veri grubunun; 1) Aritmetik ortalamasını, 2) Ortancasını (medyan), 3) Tepe değerini (mod) ve açıklığını adım adım hesaplayınız.",
+      "ipuclari": [
+        "Birinci adım: 6 sayıyı toplayıp 6'ya bölerek aritmetik ortalamayı bulunuz.",
+        "İkinci adım: Verileri küçükten büyüğe sıralayıp ortadaki iki terimin (3. ve 4. terim) ortalamasını alarak ortancayı (medyan) bulunuz.",
+        "Üçüncü adım: En çok tekrar eden sayıyı (tepe değer) ve en büyük − en küçük farkını (açıklık) yazınız."
+      ],
+      "cevap": "Birinci adım (Aritmetik Ortalama): Toplam = 14 + 20 + 16 + 20 + 12 + 26 = 108. Aritmetik Ortalama = {kesir:108|6} = 18 sayı.\nİkinci adım (Ortanca / Medyan): Küçükten büyüğe sıralama: 12, 14, 16, 20, 20, 26. Veri sayısı çift (6) olduğu için ortadaki 3. ve 4. terimlerin (16 ve 20) ortalaması alınır: Ortanca = {kesir:16 + 20|2} = {kesir:36|2} = 18.\nÜçüncü adım (Tepe Değer ve Açıklık): En çok (2 kez) tekrar eden sayı 20 olduğu için Tepe Değer (Mod) = 20'dir. Açıklık = En büyük − En küçük = 26 − 12 = 14'tür."
+    }
+  ],
+  "ozet": [
+    "{koyu:Kategorik ve Nicel Veri:} Nitelik/grup bildiren veriler {koyu:kategorik}; sayma ile elde edilenler {koyu:nicel kesikli}, ölçme ile elde edilen ondalıklı veriler ise {koyu:nicel (sürekli)} veridir.",
+    "{koyu:Grafik Seçimi:} Zamana bağlı değişim için {koyu:çizgi grafiği}, kategori karşılaştırması için {koyu:sütun/nokta grafiği}, parça-bütün oranı için {koyu:daire grafiği (360°)} seçilir.",
+    "{koyu:Aritmetik Ortalama ve Ortanca (Medyan):} Ortalama = {kesir:Toplam|Veri Sayısı}; {koyu:ortanca} ise sıralanmış verilerin tam ortasındaki değerdir ve uç (aykırı) değerlerden etkilenmez.",
+    "{koyu:Tepe Değer (Mod):} Veri grubunda en çok tekrar eden değerdir; özellikle kategorik tercih analizlerinde kullanılır.",
+    "{koyu:Açıklık ve Ortalama Mutlak Sapma (OMS):} {koyu:Açıklık = En Büyük − En Küçük}; {koyu:OMS} ise verilerin ortalamaya olan mutlak uzaklıklarının ortalaması olup küçüldükçe tutarlılık artar."
+  ]
+}

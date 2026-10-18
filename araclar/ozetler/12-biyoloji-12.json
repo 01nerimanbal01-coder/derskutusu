@@ -1,0 +1,264 @@
+{
+  "ad": "12-biyoloji-12",
+  "sinif": 12,
+  "ders": "biyoloji",
+  "ders_adi": "Biyoloji",
+  "hafta": 12,
+  "tarih": "7-11 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "1. ÜNİTE: GENDEN PROTEİNE / 2. ÜNİTE: CANLILARDA ENERJİ DÖNÜŞÜMLERİ",
+  "konu": "Genetik Mühendisliği ve Biyoteknoloji Uygulamaları (Gen Klonlama, Model Organizmalar, Kök Hücre, Biyogüvenlik) ile Fotosentezin Işığa Bağımlı ve Işıktan Bağımsız Tepkimeleri (12.1.2.3 & 12.2.2)",
+  "ciktilar": [
+    "Genetik mühendisliği ve biyoteknoloji kavramlarını, rekombinant DNA (gen klonlama) basamaklarını ve araştırmalarda kullanılan model organizmaların özelliklerini açıklar.",
+    "Kök hücre teknolojisi, CRISPR-Cas9 genom düzenleme, DNA parmak izi uygulamalarını ve biyogüvenlik ile biyoetik ilkelerini analiz eder.",
+    "Fotosentezin ışığa bağımlı (tilakoit zar) ve ışıktan bağımsız (stroma / Calvin döngüsü) tepkimelerini giren ve çıkan maddeler açısından karşılaştırır."
+  ],
+  "giris": "Canlıların kalıtsal materyali olan DNA üzerinde yapılan moleküler müdahaleler, genetik mühendisliği ve biyoteknoloji aracılığıyla tıp, tarım, endüstri ve çevre alanlarında çığır açan yenilikler sunmaktadır. Diğer yandan biyosferdeki yaşamın enerji ve organik besin temelini oluşturan fotosentez süreci, kloroplastın tilakoit zarlarında ışık enerjisinin kimyasal bağ enerjisine dönüştürülmesi ve stroma sıvısında karbonun organik besinlere bağlanmasıyla kesintisiz biçimde devam eder.",
+  "bolumler": [
+    {
+      "baslik": "Genetik Mühendisliği, Gen Klonlama ve Model Organizmalar",
+      "metin": [
+        "Canlıların kalıtsal özelliklerini değiştirerek onlara yeni işlevler kazandırmaya yönelik DNA düzeyindeki araştırmalara {koyu:genetik mühendisliği}, bu çalışmalar sonucunda elde edilen tekniklerin endüstriyel mal ve hizmet üretiminde (aşı, hormon, antikor vb.) kullanılmasına ise {koyu:biyoteknoloji} adı verilir. Klasik biyoteknoloji (yoğurt, sirke, hamur mayalama, geleneksel ıslah) yüzyıllardır uygulanırken, modern biyoteknoloji doğrudan {koyu:rekombinant DNA (rDNA)} teknolojisine dayanır.",
+        "Bir genin vektör (taşıyıcı) aracılığıyla başka bir hücreye aktarılarak çoğaltılması işlemine {koyu:gen klonlaması} denir. Bu süreçte önce istenen geni taşıyan DNA ile bakteriden izole edilen halkasal {koyu:plazmit DNA} aynı {koyu:restriksiyon (kesici) endonükleaz} enzimiyle kesilir. Oluşan yapışkan uçlar {koyu:DNA ligaz} enzimiyle fosfodiester bağları kurularak birleştirilir ve {koyu:rekombinant DNA} elde edilir. Ardından bu plazmit konak bakteriye aktarılarak çoğaltılır; böylece insan {koyu:insülin hormonu}, büyüme hormonu ve {koyu:interferon} gibi proteinler seri olarak üretilir.",
+        "Genetik ve biyoteknolojik araştırmalarda deney için seçilen canlılara {koyu:model organizma} denir. İyi bir model organizmanın yaşam döngüsü kısa olmalı, laboratuvar ortamında düşük maliyetle kolay yetiştirilebilmeli, genomu küçük ve haritası çıkarılmış olmalı, bir batında çok sayıda döl verebilmelidir. Bakterilerden {koyu:Escherichia coli}, ökaryot tek hücrelilerden bira mayası ({koyu:Saccharomyces cerevisiae}), bitkilerden fare kulağı teresi ({koyu:Arabidopsis thaliana}), hayvanlardan meyve sineği ({koyu:Drosophila melanogaster}) ve laboratuvar faresi ({koyu:Mus musculus}) en yaygın model organizmalardır."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Gen klonlamasında hedef gen ile plazmit DNA'nın birbirine tamamlayıcı (yapışkan) uçlarla bağlanabilmesi için her iki DNA molekülünün de aynı çeşit restriksiyon enzimi ile kesilmesi gerekir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Rekombinant DNA oluşturulduktan sonra nükleotit zincirlerini birbirine bağlayan enzim DNA polimeraz değil, fosfodiester bağlarını kuran DNA ligaz enzimidir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">REKOMBİNANT DNA TEKNOLOJİSİ VE GEN KLONLAMA AŞAMALARI</text>\n  <rect x=\"20\" y=\"45\" width=\"145\" height=\"95\" rx=\"8\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"92\" y=\"66\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e40af\">1. İzolasyon ve Kesim</text>\n  <text x=\"92\" y=\"85\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#1e3a8a\">İstenen gen (DNA) ve</text>\n  <text x=\"92\" y=\"101\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#1e3a8a\">bakteri plazmiti aynı</text>\n  <text x=\"92\" y=\"117\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1d4ed8\">restriksiyon enzimiyle</text>\n  <text x=\"92\" y=\"131\" text-anchor=\"middle\" font-size=\"10\" fill=\"#1e3a8a\">kesilir (yapışkan uçlar).</text>\n  <path d=\"M 167 92 L 188 92\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n  <rect x=\"190\" y=\"45\" width=\"145\" height=\"95\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"262\" y=\"66\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">2. Ligasyon (Birleşme)</text>\n  <text x=\"262\" y=\"85\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#14532d\">Gen ve açık plazmit</text>\n  <text x=\"262\" y=\"101\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">DNA ligaz enzimiyle</text>\n  <text x=\"262\" y=\"117\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#14532d\">fosfodiester bağı kurarak</text>\n  <text x=\"262\" y=\"131\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#166534\">rDNA oluşturur.</text>\n  <path d=\"M 337 92 L 358 92\" stroke=\"#16a34a\" stroke-width=\"2.5\"/>\n  <rect x=\"360\" y=\"45\" width=\"145\" height=\"95\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"432\" y=\"66\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#92400e\">3. Transformasyon</text>\n  <text x=\"432\" y=\"85\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#78350f\">Rekombinant plazmit</text>\n  <text x=\"432\" y=\"101\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#78350f\">(rDNA) konak bakteri</text>\n  <text x=\"432\" y=\"117\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#78350f\">hücresine (<tspan font-style=\"italic\">E. coli</tspan>)</text>\n  <text x=\"432\" y=\"131\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#b45309\">aktarılır.</text>\n  <path d=\"M 507 92 L 528 92\" stroke=\"#d97706\" stroke-width=\"2.5\"/>\n  <rect x=\"530\" y=\"45\" width=\"150\" height=\"95\" rx=\"8\" fill=\"#fae8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"605\" y=\"66\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#6b21a8\">4. Çoğaltım ve Ürün</text>\n  <text x=\"605\" y=\"85\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#581c87\">Bakteriler bölündükçe</text>\n  <text x=\"605\" y=\"101\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#581c87\">gen klonlanır; insülin,</text>\n  <text x=\"605\" y=\"117\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#581c87\">interferon ve büyüme</text>\n  <text x=\"605\" y=\"131\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#7e22ce\">hormonu üretilir.</text>\n  <rect x=\"20\" y=\"155\" width=\"660\" height=\"88\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#60a5fa\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"176\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">MODEL ORGANİZMALARIN TEMEL ÖZELLİKLERİ (12.1.2.3)</text>\n  <text x=\"35\" y=\"198\" font-size=\"11\" fill=\"#1e3a8a\">• Kısa yaşam döngüsüne sahip olma ve laboratuvarda kolay yetiştirilebilme (<tspan font-style=\"italic\">E. coli</tspan>, <tspan font-style=\"italic\">Drosophila melanogaster</tspan>).</text>\n  <text x=\"35\" y=\"216\" font-size=\"11\" fill=\"#1e3a8a\">• Küçük genom büyüklüğü, genom haritasının bilinmesi ve genetik müdahalelere (mutasyon/aktarım) uygunluk.</text>\n  <text x=\"35\" y=\"234\" font-size=\"11\" fill=\"#1e3a8a\">• Örnekler: Bakteri (<tspan font-style=\"italic\">E. coli</tspan>), Bira mayası (<tspan font-style=\"italic\">S. cerevisiae</tspan>), Fare (<tspan font-style=\"italic\">Mus musculus</tspan>), Fare kulağı teresi (<tspan font-style=\"italic\">Arabidopsis thaliana</tspan>).</text>\n</svg>"
+    },
+    {
+      "baslik": "Biyoteknolojik Uygulamalar: Kök Hücre, CRISPR, DNA Parmak İzi ve Biyogüvenlik",
+      "metin": [
+        "Kendini yenileyebilen ve uygun sinyallerle farklı doku hücrelerine dönüşebilen farklılaşmamış hücrelere {koyu:kök hücre} denir. Elde edildikleri kaynağa göre {koyu:embriyonik kök hücreler} (blastula evresinden alınır, farklılaşma yeteneği en yüksektir), {koyu:göbek kordonu kanı kök hücreleri} ve {koyu:yetişkin kök hücreler} (kemik iliği, deri, yağ dokusu; dönüşüm yeteneği daha sınırlıdır) olmak üzere üçe ayrılır. İskoç bilim insanı {koyu:Ian Wilmut} ve ekibinin somatik (vücut) meme bezi hücresinin çekirdeğini çekirdeği çıkarılmış yumurtaya aktararak ürettiği {koyu:koyun Dolly}, memelilerde üreme amaçlı organizma klonlamasının ilk örneğidir.",
+        "Modern genom düzenleme tekniği olan {koyu:CRISPR-Cas9} sistemi, bakterilerin virüslere karşı kullandığı savunma mekanizmasından geliştirilmiştir; hedef DNA dizisini tanıyan bir rehber RNA ve DNA'yı kesen {koyu:Cas9 enzimi} sayesinde hatalı genler yüksek hassasiyetle düzeltilebilir. Adli tıp, babalık davaları ve tür tanımlamada kullanılan {koyu:DNA parmak izi} yönteminde ise bireye özgü tekrarlayan DNA dizileri {koyu:PCR (Polimeraz Zincir Reaksiyonu)} ile çoğaltılır, restriksiyon enzimleriyle kesilir ve {koyu:jel elektroforezi}nde büyüklüklerine göre bantlar hâlinde ayrıştırılır.",
+        "Gen aktarılarak kendi türünde bulunmayan yeni bir özellik kazandırılmış canlılara {koyu:transgenik organizma} veya {koyu:Genetiği Değiştirilmiş Organizma (GDO)} denir (örneğin nergis bitkisinden gen aktarılarak A vitamini öncülü beta-karoten üreten {koyu:Altın Pirinç}). Ancak bir genin kendi içinde mutasyonla değiştirilmesi farklı türden gen aktarımı anlamına gelmez. GDO'ların insan sağlığı ve biyoçeşitlilik üzerindeki olası risklerini önlemek amacıyla {koyu:biyogüvenlik} tedbirleri ve {koyu:Cartagena Biyogüvenlik Protokolü} uygulanmaktadır."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Klonlama işleminde çekirdeği alınan vücut hücresi kime aitse, doğan klon canlının çekirdek DNA'sı ve cinsiyeti o bireyle birebir aynı olur; ancak mitokondriyal DNA yumurta hücresini veren dişiden gelir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "DNA parmak izi analizinde protein sentezine katılmayan, bireyden bireye tekrar sayısı değişen anlamsız baz dizileri (VNTR/STR bölgeleri) incelenir; tek yumurta ikizleri hariç her insanın bant dizilimi farklıdır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">MODERN BİYOTEKNOLOJİ: KÖK HÜCRE, CRISPR-Cas9 VE BİYOGÜVENLİK</text>\n  <rect x=\"20\" y=\"45\" width=\"210\" height=\"198\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <text x=\"125\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#991b1b\">Kök Hücre Kaynakları</text>\n  <rect x=\"34\" y=\"82\" width=\"182\" height=\"44\" rx=\"6\" fill=\"#ffffff\" stroke=\"#f87171\"/>\n  <text x=\"125\" y=\"100\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Embriyonik Kök Hücre</text>\n  <text x=\"125\" y=\"116\" text-anchor=\"middle\" font-size=\"10\" fill=\"#7f1d1d\">Blastula evresi; tüm hücrelere dönüşür.</text>\n  <rect x=\"34\" y=\"134\" width=\"182\" height=\"44\" rx=\"6\" fill=\"#ffffff\" stroke=\"#f87171\"/>\n  <text x=\"125\" y=\"152\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Göbek Kordonu Kanı</text>\n  <text x=\"125\" y=\"168\" text-anchor=\"middle\" font-size=\"10\" fill=\"#7f1d1d\">Doğumda alınır; bağışıklık uyumu yüksek.</text>\n  <rect x=\"34\" y=\"186\" width=\"182\" height=\"44\" rx=\"6\" fill=\"#ffffff\" stroke=\"#f87171\"/>\n  <text x=\"125\" y=\"204\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Yetişkin Kök Hücre</text>\n  <text x=\"125\" y=\"220\" text-anchor=\"middle\" font-size=\"10\" fill=\"#7f1d1d\">Kemik iliği, yağ, deri; dönüşüm sınırlı.</text>\n  <rect x=\"245\" y=\"45\" width=\"210\" height=\"198\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"350\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e40af\">Genom Düzenleme ve Analiz</text>\n  <text x=\"257\" y=\"92\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">• CRISPR-Cas9 Teknolojisi:</text>\n  <text x=\"265\" y=\"108\" font-size=\"10.5\" fill=\"#1e3a8a\">Rehber RNA ile hedef DNA dizisi</text>\n  <text x=\"265\" y=\"123\" font-size=\"10.5\" fill=\"#1e3a8a\">bulunur, Cas9 enzimiyle kesilerek</text>\n  <text x=\"265\" y=\"138\" font-size=\"10.5\" fill=\"#1e3a8a\">hatalı gen düzeltilir veya susturulur.</text>\n  <text x=\"257\" y=\"164\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">• DNA Parmak İzi ve PCR:</text>\n  <text x=\"265\" y=\"180\" font-size=\"10.5\" fill=\"#1e3a8a\">Tekrarlayan baz dizileri PCR ile</text>\n  <text x=\"265\" y=\"195\" font-size=\"10.5\" fill=\"#1e3a8a\">çoğaltılır; jel elektroforezinde bant</text>\n  <text x=\"265\" y=\"210\" font-size=\"10.5\" fill=\"#1e3a8a\">profilleriyle adli tıp ve babalık</text>\n  <text x=\"265\" y=\"225\" font-size=\"10.5\" fill=\"#1e3a8a\">testlerinde kimlik tespiti yapılır.</text>\n  <rect x=\"470\" y=\"45\" width=\"210\" height=\"198\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"575\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#166534\">GDO, Transgenik ve Biyoetik</text>\n  <text x=\"482\" y=\"92\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">• Transgenik Canlı (GDO):</text>\n  <text x=\"490\" y=\"108\" font-size=\"10.5\" fill=\"#14532d\">Farklı bir türden gen aktarılmış</text>\n  <text x=\"490\" y=\"123\" font-size=\"10.5\" fill=\"#14532d\">organizma (Örn: A vitamini öncülü</text>\n  <text x=\"490\" y=\"138\" font-size=\"10.5\" fill=\"#14532d\">beta-karoten üreten Altın Pirinç).</text>\n  <text x=\"482\" y=\"164\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">• Biyogüvenlik (Cartagena):</text>\n  <text x=\"490\" y=\"180\" font-size=\"10.5\" fill=\"#14532d\">GDO'ların biyoçeşitlilik, ekolojik</text>\n  <text x=\"490\" y=\"195\" font-size=\"10.5\" fill=\"#14532d\">denge ve insan sağlığı üzerindeki</text>\n  <text x=\"490\" y=\"210\" font-size=\"10.5\" fill=\"#14532d\">olası risklerini denetleyen yasal</text>\n  <text x=\"490\" y=\"225\" font-size=\"10.5\" fill=\"#14532d\">ve biyoetik kurallar bütünüdür.</text>\n</svg>"
+    },
+    {
+      "baslik": "Fotosentezin Işığa Bağımlı ve Işıktan Bağımsız Tepkimeleri",
+      "metin": [
+        "Fotosentez tepkimeleri kloroplastın farklı bölümlerinde gerçekleşen ve birbirine bağımlı olan iki evreden oluşur. Birinci evre olan {koyu:ışığa bağımlı tepkimeler}, kloroplastın {koyu:tilakoit zarlarında (granumlarda)} gerçekleşir ve ışık enerjisi olmadan yürütülemez. Bu evrede klorofil tarafından soğurulan ışık enerjisiyle elektronlar yüksek enerji düzeyine çıkar ve {koyu:Elektron Taşıma Sistemi (ETS)} üzerinden aktarılırken {koyu:fotofosforilasyon} ile {koyu:ATP} sentezlenir.",
+        "Işığa bağımlı evrede ayrıca ışık enerjisi yardımıyla su molekülleri parçalanır ({koyu:suyun fotolizi}: {koyu:2H₂O → 4H⁺ + 4e⁻ + O₂}). Fotoliz sonucu açığa çıkan elektronlar klorofilin elektron açığını kapatır, protonlar ({koyu:H⁺}) koenzim olan {koyu:NADP⁺} tarafından tutularak {koyu:NADPH} molekülüne indirgenir, oksijen ({koyu:O₂}) ise yan ürün olarak atmosfere verilir. Üretilen ATP ve NADPH molekülleri ikinci evrede kullanılmak üzere stromaya geçer.",
+        "İkinci evre olan {koyu:ışıktan bağımsız tepkimeler (Calvin döngüsü)}, kloroplastın {koyu:stroma} sıvısında görev yapan enzimlerin kontrolünde gerçekleşir. Bu evrede doğrudan ışık kullanılmaz ancak ışığa bağımlı evreden gelen {koyu:ATP} ve {koyu:NADPH} harcandığı için süreç gündüz (ışıklı ortamda) devam eder. Atmosferden alınan {koyu:CO₂}, stromadaki {koyu:Rubisco} enzimi aracılığıyla 5 karbonlu ribuloz bisfosfata bağlanır; ATP'nin enerjisi ve NADPH'ın hidrojenleriyle indirgenerek 3 karbonlu kilit molekül olan {koyu:PGAL (fosfogliser aldehit)} üretilir. PGAL moleküllerinden glikoz, fruktoz, nişasta, selüloz, yağ asidi, gliserol ve topraktan azot tuzları eklenerek amino asit ile vitaminler sentezlenir."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Fotosentezde atmosfere verilen serbest oksijen gazının (O₂) kaynağı karbondioksit değil, ışığa bağımlı evrede fotolize uğrayan su (H₂O) molekülleridir; CO₂'deki oksijen ise sentezlenen glikozun yapısına katılır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Işıktan bağımsız tepkimelerin tamamı enzimatik olduğu için bu evre sıcaklık değişimlerinden (özellikle yüksek sıcaklıkta enzimlerin denatürasyonundan) ışığa bağımlı evreye göre çok daha fazla etkilenir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">FOTOSENTEZİN IŞIĞA BAĞIMLI VE IŞIKTAN BAĞIMSIZ EVRELERİ</text>\n  <rect x=\"25\" y=\"45\" width=\"275\" height=\"195\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"162\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#166534\">1. Işığa Bağımlı Tepkimeler</text>\n  <text x=\"162\" y=\"84\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">(Kloroplastın Tilakoit Zarı / Granum)</text>\n  <text x=\"38\" y=\"108\" font-size=\"10.5\" fill=\"#14532d\">• <tspan font-weight=\"bold\">Girenler:</tspan> Işık, H₂O, ADP + Pᵢ, NADP⁺</text>\n  <text x=\"38\" y=\"128\" font-size=\"10.5\" fill=\"#14532d\">• <tspan font-weight=\"bold\">Suyun Fotolizi:</tspan> 2H₂O → 4H⁺ + 4e⁻ + O₂</text>\n  <text x=\"38\" y=\"148\" font-size=\"10.5\" fill=\"#14532d\">• <tspan font-weight=\"bold\">Fotofosforilasyon:</tspan> ETS ile ATP sentezi</text>\n  <text x=\"38\" y=\"168\" font-size=\"10.5\" fill=\"#14532d\">• <tspan font-weight=\"bold\">NADP⁺ İndirgenmesi:</tspan> NADPH üretimi</text>\n  <rect x=\"38\" y=\"185\" width=\"248\" height=\"40\" rx=\"6\" fill=\"#ffffff\" stroke=\"#22c55e\"/>\n  <text x=\"162\" y=\"203\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#166534\">Atmosfere verilen O₂'nin kaynağı</text>\n  <text x=\"162\" y=\"218\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">fotolize uğrayan H₂O molekülleridir!</text>\n  <path d=\"M 305 110 L 395 110\" stroke=\"#d97706\" stroke-width=\"3\"/>\n  <text x=\"350\" y=\"102\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">ATP ve NADPH</text>\n  <path d=\"M 395 165 L 305 165\" stroke=\"#2563eb\" stroke-width=\"3\"/>\n  <text x=\"350\" y=\"182\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">ADP + Pᵢ ve NADP⁺</text>\n  <rect x=\"400\" y=\"45\" width=\"275\" height=\"195\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"537\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#92400e\">2. Işıktan Bağımsız Tepkimeler</text>\n  <text x=\"537\" y=\"84\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">(Kloroplastın Stroma Sıvısı - Calvin)</text>\n  <text x=\"413\" y=\"108\" font-size=\"10.5\" fill=\"#78350f\">• <tspan font-weight=\"bold\">Girenler:</tspan> CO₂, ATP, NADPH</text>\n  <text x=\"413\" y=\"128\" font-size=\"10.5\" fill=\"#78350f\">• <tspan font-weight=\"bold\">Karbon Tutulması:</tspan> Rubisco enzimi ile</text>\n  <text x=\"413\" y=\"148\" font-size=\"10.5\" fill=\"#78350f\">• <tspan font-weight=\"bold\">NADPH Yükseltgenmesi:</tspan> NADP⁺ oluşumu</text>\n  <text x=\"413\" y=\"168\" font-size=\"10.5\" fill=\"#78350f\">• <tspan font-weight=\"bold\">Kilit Ürün:</tspan> PGAL (Fosfogliser aldehit)</text>\n  <rect x=\"413\" y=\"185\" width=\"248\" height=\"40\" rx=\"6\" fill=\"#ffffff\" stroke=\"#f59e0b\"/>\n  <text x=\"537\" y=\"203\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#92400e\">PGAL'den glikoz, amino asit, yağ asidi,</text>\n  <text x=\"537\" y=\"218\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b45309\">gliserol ve vitaminler sentezlenir!</text>\n</svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bakteriler aracılığıyla insan büyüme hormonu geninin klonlanması sürecinde restriksiyon endonükleaz ve DNA ligaz enzimlerinin üstlendiği görevleri açıklayınız.",
+      "cevap": "Restriksiyon endonükleaz enzimi, hem insan hücresinden izole edilen büyüme hormonu genini hem de bakteriden alınan plazmit DNA'yı belirli nükleotit dizilerinden (tanıma bölgelerinden) keserek birbirine uyumlu yapışkan uçlar oluşturur. DNA ligaz enzimi ise kesilen gen ile açık plazmit uçları arasında fosfodiester bağları kurarak rekombinant DNA (rDNA) molekülünün bütünlüğünü sağlar."
+    },
+    {
+      "soru": "Genetik araştırmalarda meyve sineği (Drosophila melanogaster) ve Escherichia coli bakterisinin model organizma olarak tercih edilmesinin temel nedenleri nelerdir?",
+      "cevap": "Her iki organizma da kısa yaşam döngüsüne sahiptir, laboratuvar ortamında düşük maliyetle ve küçük alanlarda kolayca yetiştirilebilir, kısa sürede çok sayıda yeni döl verir, genom büyüklükleri küçüktür ve genetik haritaları tam olarak çıkarıldığı için gen aktarım ve mutasyon çalışmalarına son derece elverişlidir."
+    },
+    {
+      "soru": "Memeli klonlamasında (Dolly örneğinde) A koyununun meme hücresi çekirdeği, B koyununun çekirdeği çıkarılmış yumurta hücresine kaynaştırılıp C koyununun rahmine yerleştirilmiştir. Doğan kuzunun genetik özellikleri hangi koyunla aynıdır? Nedenini açıklayınız.",
+      "cevap": "Doğan klon kuzunun kalıtsal bilgilerini taşıyan çekirdek DNA'sı A koyunundan alındığı için kuzunun cinsiyeti, dış görünüşü ve çekirdek genleri A koyunu ile birebir aynıdır. Yumurta sitoplazmasını veren B koyunundan ise kuzuya mitokondriyal DNA geçer; taşıyıcı anne olan C koyununun kuzuya herhangi bir genetik katkısı yoktur."
+    },
+    {
+      "soru": "Genetiği değiştirilmiş (transgenik) bir organizma ile klasik ıslah yöntemiyle elde edilmiş bir organizma arasındaki temel farkı örnek vererek açıklayınız.",
+      "cevap": "Klasik ıslahta aynı türün veya yakın akrabaların bireyleri kendi aralarında çaprazlanarak istenen özellikler seçilir; türler arası gen engeli aşılmaz. Transgenik organizmada (GDO) ise rekombinant DNA teknolojisiyle tamamen farklı bir türden gen aktarımı yapılır; örneğin nergis bitkisinden ve bakteriden alınan genlerin pirince aktarılmasıyla A vitamini öncülü üreten Altın Pirinç elde edilmesi transgenik bir uygulamadır."
+    },
+    {
+      "soru": "Fotosentezin ışığa bağımlı tepkimelerinde üretilen ve ışıktan bağımsız tepkimelere (Calvin döngüsüne) aktarılan moleküller hangileridir? Hangi molekül atmosfere verilir?",
+      "cevap": "Işığa bağımlı tepkimelerde tilakoit zarda fotofosforilasyonla üretilen ATP ve suyun fotoliziyle indirgenen NADPH molekülleri ışıktan bağımsız tepkimelerde (Calvin döngüsünde) karbondioksitin organik besine dönüştürülmesinde kullanılmak üzere stromaya aktarılır. Suyun fotolizi sonucu oluşan oksijen (O₂) ise atmosfere verilir."
+    },
+    {
+      "soru": "İşaretli oksijen ({us:O|18}) taşıyan karbondioksit (C{us:O|18}₂) ve normal su (H₂O) verilen bir yeşil bitkinin fotosentez sonucunda ürettiği glikoz ve serbest oksijen gazından hangisinde ağır oksijen ({us:O|18}) atomuna rastlanır?",
+      "cevap": "Fotosentezde atmosfere verilen serbest oksijen gazının kaynağı su (H₂O) olduğu için üretilen O₂ gazında işaretli oksijene rastlanmaz. Karbondioksitteki karbon ve oksijen atomları ise Calvin döngüsünde organik besinin yapısına katıldığı için ağır oksijen ({us:O|18}) sentezlenen glikoz (C₆H₁₂{us:O|18}₆) molekülünde ve yan ürün olarak çıkan suda görülür."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "soru": "Rekombinant DNA teknolojisi kullanılarak bir insana ait insülin geninin bakteri aracılığıyla klonlanması sürecinde aşağıdaki olaylardan hangisi en son gerçekleşir?",
+      "secenekler": [
+        "İnsülin genini taşıyan DNA parçası ile bakteri plazmitinin hücrelerden saf olarak izole edilmesi",
+        "Hedef genin ve plazmit DNA'nın aynı çeşit restriksiyon endonükleaz enzimi ile kesilmesi",
+        "Kesilen gen parçası ile plazmitin DNA ligaz enzimi yardımıyla birleştirilerek rDNA oluşturulması",
+        "Elde edilen rekombinant plazmitin (rDNA) konak bakteri hücresine transformasyonla aktarılması",
+        "Rekombinant plazmiti alan bakterilerin kültür ortamında çoğaltılarak insülin proteinini sentezlemesi"
+      ],
+      "dogru": 4,
+      "aciklama": "Gen klonlamasında sırasıyla DNA izolasyonu, restriksiyonla kesim, ligazla birleştirme (rDNA), bakteriye aktarım (transformasyon) ve en son bakterilerin çoğaltılarak ürünü sentezlemesi gerçekleşir.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Biyoteknolojik araştırmalarda kullanılan model organizmalar ve kök hücre uygulamaları ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+      "secenekler": [
+        "Embriyonik kök hücrelerin farklı doku ve organ hücrelerine dönüşme potansiyeli yetişkin kök hücrelerden yüksektir.",
+        "Model organizmaların genom büyüklüğünün küçük olması ve kısa sürede çok döl vermesi araştırmaları kolaylaştırır.",
+        "Bir koyunun meme hücresi çekirdeği kullanılarak klonlanan kuzunun çekirdek DNA'sı taşıyıcı anne koyun ile aynıdır.",
+        "DNA parmak izi yönteminde PCR ile çoğaltılan DNA parçaları jel elektroforezinde büyüklüklerine göre ayrıştırılır.",
+        "Arabidopsis thaliana (fare kulağı teresi) bitki genetiği çalışmalarında yaygın olarak kullanılan bir model organizmadır."
+      ],
+      "dogru": 2,
+      "aciklama": "Klonlamada doğan yavrunun çekirdek DNA'sı taşıyıcı anneye değil, vücut hücresinin çekirdeği alınan bireye (çekirdek vericisine) aittir.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Kloroplast organelinde gerçekleşen fotosentezin ışığa bağımlı tepkimeleri ile ilgili aşağıdakilerden hangisi söylenemez?",
+      "secenekler": [
+        "Kloroplastın tilakoit zar sisteminde (granumlarda) bulunan klorofil ve ETS elemanları görev yapar.",
+        "Atmosferden alınan karbondioksit (CO₂) molekülleri doğrudan bu evrede indirgenerek glikoza dönüşür.",
+        "Işık enerjisi yardımıyla suyun fotolizi gerçekleşir ve yan ürün olarak atmosferik oksijen (O₂) üretilir.",
+        "ETS üzerinden elektron aktarımı sırasında kemiozmotik mekanizmayla fotofosforilasyonla ATP sentezlenir.",
+        "Suyun fotoliziyle açığa çıkan protonlar (H⁺) ve elektronlar NADP⁺ koenzimini indirgeyerek NADPH oluşturur."
+      ],
+      "dogru": 1,
+      "aciklama": "Karbondioksitin (CO₂) tutulması ve organik besine (PGAL/glikoz) dönüştürülmesi ışığa bağımlı evrede değil, stromadaki ışıktan bağımsız tepkimelerde (Calvin döngüsünde) gerçekleşir.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Fotosentezin ışıktan bağımsız tepkimelerinde (Calvin döngüsü) sentezlenen PGAL (fosfogliser aldehit) molekülünden bitki hücresinde;\nI. Glikoz ve nişasta,\nII. Amino asit ve vitamin,\nIII. Yağ asidi ve gliserol\nmoleküllerinden hangileri üretilebilir?",
+      "secenekler": [
+        "I ve II",
+        "I ve III",
+        "II ve III",
+        "I, II ve III",
+        "I ya da II"
+      ],
+      "dogru": 3,
+      "aciklama": "Üç karbonlu PGAL molekülü fotosentezin kilit ürünü olup karbonhidratların (glikoz, nişasta), yağ yapı taşlarının (yağ asidi, gliserol) ve azot/mineral eklenmesiyle amino asit ile vitaminlerin sentezinde kullanılır.",
+      "tur": "coktan"
+    },
+    {
+      "ifadeler": [
+        {
+          "metin": "Gen klonlamasında plazmit DNA ile hedef genin yapışkan uçlarını birbirine fosfodiester bağıyla birleştiren enzim DNA ligazdır.",
+          "dogru": true,
+          "aciklama": "DNA ligaz enzimi DNA parçalarını fosfodiester bağlarıyla birleştirerek rekombinant DNA'yı oluşturur."
+        },
+        {
+          "metin": "Farklı bir türden gen aktarılarak yeni bir kalıtsal özellik kazandırılmış canlılara transgenik organizma (GDO) adı verilir.",
+          "dogru": true,
+          "aciklama": "Başka bir türden gen aktarımı yapılan canlılar transgenik (GDO) olarak tanımlanır."
+        },
+        {
+          "metin": "Fotosentezin ışıktan bağımsız tepkimelerinde ışık doğrudan kullanılmadığı için bu evre gece karanlıkta da kesintisiz biçimde devam eder.",
+          "dogru": false,
+          "aciklama": "Işıktan bağımsız evre, ışığa bağımlı evrede üretilen ATP ve NADPH moleküllerine muhtaç olduğu için ışıklı ortamda (gündüz) gerçekleşir."
+        },
+        {
+          "metin": "Fotosentez sırasında atmosfere verilen oksijen gazının kaynağı karbondioksit değil, fotolize uğrayan su (H₂O) molekülleridir.",
+          "dogru": true,
+          "aciklama": "Suyun fotolizi (2H₂O → 4H⁺ + 4e⁻ + O₂) sonucunda açığa çıkan oksijen atmosfere verilir."
+        },
+        {
+          "metin": "Işıktan bağımsız tepkimelerde (Calvin döngüsünde) NADP⁺ koenzimi hidrojen alarak NADPH molekülüne indirgenir.",
+          "dogru": false,
+          "aciklama": "NADP⁺ indirgenmesi ışığa bağımlı evrede olur; ışıktan bağımsız evrede ise NADPH hidrojenlerini vererek yükseltgenir ve tekrar NADP⁺'ye dönüşür."
+        }
+      ],
+      "tur": "dy"
+    },
+    {
+      "ciftler": [
+        [
+          "Restriksiyon endonükleaz",
+          "DNA molekülünü belirli nükleotit dizilerinden tanıyan ve kesen bakteriyel enzim"
+        ],
+        [
+          "CRISPR-Cas9",
+          "Rehber RNA ve kesici protein kullanarak hedef DNA dizisini yüksek hassasiyetle düzenleyen teknoloji"
+        ],
+        [
+          "Fotoliz",
+          "Işığa bağımlı evrede suyun ışık enerjisiyle proton, elektron ve oksijene parçalanması"
+        ],
+        [
+          "PGAL (Fosfogliser aldehit)",
+          "Calvin döngüsünde üretilen ve glikoz, amino asit, yağ asidi sentezine dönüşen 3 karbonlu kilit bileşik"
+        ],
+        [
+          "Cartagena Protokolü",
+          "Modern biyoteknoloji ürünü GDO'ların güvenli transferi ve kullanımı için oluşturulan uluslararası biyogüvenlik sözleşmesi"
+        ]
+      ],
+      "tur": "eslestir"
+    },
+    {
+      "cumleler": [
+        {
+          "metin": "Bakterilerde kromozom dışında bulunan ve gen klonlamasında vektör (taşıyıcı) olarak kullanılan küçük halkasal DNA'ya ___ denir.",
+          "cevap": "plazmit"
+        },
+        {
+          "metin": "Kısa sürede çok sayıda DNA kopyasının laboratuvar tüpünde çoğaltılmasını sağlayan yönteme ___ adı verilir.",
+          "cevap": "PCR"
+        },
+        {
+          "metin": "Fotosentezin ışıktan bağımsız tepkimeleri (Calvin döngüsü) kloroplastın ___ sıvısında gerçekleşir.",
+          "cevap": "stroma"
+        },
+        {
+          "metin": "Işığa bağımlı tepkimelerde suyun parçalanmasıyla açığa çıkan hidrojenleri tutan ___ koenzimi indirgenerek NADPH oluşturur.",
+          "cevap": "NADP+"
+        },
+        {
+          "metin": "Bireye özgü tekrarlayan DNA dizilerinin jel elektroforezinde bantlar hâlinde görüntülenmesi yöntemine DNA ___ izi denir.",
+          "cevap": "parmak"
+        }
+      ],
+      "fazla": [
+        "tilakoit",
+        "FAD",
+        "kodon"
+      ],
+      "tur": "bosluk"
+    },
+    {
+      "soru": "Fotosentezin ışığa bağımlı tepkimeleri ile ışıktan bağımsız tepkimelerini (Calvin döngüsü) gerçekleştiği kloroplast bölümü, kullanılan ve üretilen temel maddeler ile sıcaklığa duyarlılık açısından karşılaştırınız.",
+      "ipuclari": [
+        "Her iki evrenin kloroplastın hangi kısmında (tilakoit zar / stroma) gerçekleştiğini belirtiniz.",
+        "Evreler arasında aktarılan enerji ve hidrojen taşıyıcı molekülleri (ATP, NADPH / ADP, NADP⁺) açıklayınız.",
+        "Hangi evrede H₂O girip O₂ çıktığını, hangi evrede CO₂ girip organik besin (PGAL/glikoz) üretildiğini ve enzim yoğunluğu nedeniyle sıcaklığa duyarlılığı karşılaştırınız."
+      ],
+      "cevap": "Işığa bağımlı tepkimeler kloroplastın tilakoit zarlarında (granumlarda) gerçekleşir; bu evrede ışık enerjisi ve su (H₂O) kullanılır, fotolizle atmosfere oksijen (O₂) verilir ve fotofosforilasyonla ATP ile NADPH üretilir. Işıktan bağımsız tepkimeler (Calvin döngüsü) ise kloroplastın stroma sıvısında gerçekleşir; ışığa bağımlı evreden gelen ATP ve NADPH harcanarak karbondioksit (CO₂) indirgenir ve PGAL üzerinden glikoz gibi organik besinler sentezlenir, açığa çıkan ADP + Pᵢ ve NADP⁺ tekrar tilakoit zara döner. Işıktan bağımsız evre tamamen enzim denetiminde yürütüldüğü için ekstrem sıcaklık değişimlerine ışığa bağımlı evreden daha duyarlıdır.",
+      "tur": "ogretici"
+    }
+  ],
+  "ozet": [
+    "Gen klonlamasında hedef gen ve bakteri plazmiti aynı restriksiyon enzimiyle kesilir, DNA ligaz ile birleştirilerek rekombinant DNA (rDNA) oluşturulur ve bakteriye aktarılır.",
+    "Model organizmalar (E. coli, bira mayası, meyve sineği, fare kulağı teresi) kısa yaşam döngüsü, küçük genom ve laboratuvarda kolay yetiştirilme özellikleriyle araştırmalarda kullanılır.",
+    "Embriyonik, kordon kanı ve yetişkin kök hücre çalışmaları, CRISPR-Cas9 genom düzenleme ve DNA parmak izi modern biyoteknolojinin temel tıp ve adli uygulamalarıdır.",
+    "Fotosentezin ışığa bağımlı evresi tilakoit zarda gerçekleşir; suyun fotoliziyle O₂ atmosfere verilirken stromaya aktarılmak üzere ATP ve NADPH sentezlenir.",
+    "Fotosentezin ışıktan bağımsız evresi (Calvin döngüsü) stromada gerçekleşir; CO₂, ATP ve NADPH kullanılarak 3 karbonlu PGAL ve ondan glikoz, amino asit ve yağ asitleri üretilir."
+  ]
+}
