@@ -1,0 +1,263 @@
+{
+  "ad": "9-fizik-9",
+  "sinif": 9,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 9,
+  "tarih": "9-13 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "2. TEMA: KUVVET VE HAREKET",
+  "konu": "İki Boyutta Vektörlerin Dik Bileşenlerine Ayrılması, Analitik Yöntemle Toplama ve Vektör Uygulamaları (FİZ.9.2.4)",
+  "ciktilar": [
+    "Kartezyen koordinat sisteminde verilen bir vektörü trigonometrik oranlar kullanarak yatay ve düşey dik bileşenlerine ayırır.",
+    "Aynı düzlemde birden fazla vektörün bileşkesini ve dengeleyici kuvvetini analitik (bileşen tablosu) yöntemiyle hesaplar.",
+    "Uç uca ekleme, paralelkenar ve dik bileşenlerine ayırma yöntemlerindeki örüntülerden hareketle özel açılı vektörler ve vektör farkı işlemlerini geneller."
+  ],
+  "giris": "Mühendislikte bir köprü ayağına etki eden halat kuvvetlerinden rüzgârlı havada ilerleyen bir uçağın rotasına kadar pek çok fiziksel olayda kuvvetler aynı doğrultuda değil, iki boyutlu düzlemde farklı açılarla etki eder. Çok sayıda vektörün bileşkesini çizimle bulmak zorlaştığında, her vektörü kartezyen koordinat eksenleri üzerindeki {koyu:yatay ve düşey dik bileşenlerine} ayırarak toplamak en kesin ve sistematik çözüm yolunu sunar.",
+  "bolumler": [
+    {
+      "baslik": "İki Boyutta Vektörlerin Dik Bileşenlerine Ayrılması",
+      "metin": [
+        "Bir vektörü dik bileşenlerine ayırmak, toplama işleminin tersidir; yani tek bir {koyu:A} vektörünün yaptığı etkiyi, birbirine dik {koyu:x} ve {koyu:y} eksenleri üzerinde tek başlarına yapabilen {koyu:Ax} ve {koyu:Ay} izdüşüm vektörlerini bulmaktır. Başlangıç noktası orijine yerleştirilen {koyu:A} vektörünün bitiş ucundan yatay ve düşey eksenlere dikmeler indirildiğinde, eksenler üzerinde kesilen yönlü doğru parçaları vektörün dik bileşenlerini verir ({koyu:A = Ax + Ay}).",
+        "Vektörün yatay {koyu:+x} ekseniyle yaptığı açı {koyu:θ} olarak verildiğinde, oluşan dik üçgende açının {koyu:komşu dik kenarı} yatay bileşeni, {koyu:karşı dik kenarı} ise düşey bileşeni oluşturur. Trigonometrik bağıntılara göre yatay bileşenin büyüklüğü {koyu:Ax = A · cos θ}, düşey bileşenin büyüklüğü ise {koyu:Ay = A · sin θ} formülüyle hesaplanır. Dik bileşenleri bilinen bir vektörün büyüklüğü Pisagor teoreminden {koyu:A = {kok:{us:Ax|2} + {us:Ay|2}}} eşitliğiyle bulunur.",
+        "Eğer soruda açı yatay eksenle değil de {koyu:düşey (y) eksenle} verilmişse, açının komşu kenarı {koyu:y} ekseni olacağından bu kez düşey bileşen {koyu:cos} ile, yatay bileşen ise {koyu:sin} ile çarpılır. Fizik problemlerinde en çok kullanılan {koyu:37°–53°–90°} özel dik üçgeninde (3-4-5 üçgeni katları) {koyu:cos 37° = sin 53° = 0,8} ve {koyu:sin 37° = cos 53° = 0,6} değerleri kullanılarak bileşenler kolayca belirlenir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">İKİ BOYUTTA VEKTÖRÜN DİK BİLEŞENLERİNE AYRILMASI</text>\n  <rect x=\"25\" y=\"42\" width=\"320\" height=\"200\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <line x1=\"70\" y1=\"205\" x2=\"310\" y2=\"205\" stroke=\"#475569\" stroke-width=\"2\"/>\n  <text x=\"320\" y=\"209\" font-size=\"12\" font-weight=\"bold\" fill=\"#334155\">+x</text>\n  <line x1=\"70\" y1=\"205\" x2=\"70\" y2=\"60\" stroke=\"#475569\" stroke-width=\"2\"/>\n  <text x=\"65\" y=\"53\" font-size=\"12\" font-weight=\"bold\" fill=\"#334155\">+y</text>\n  <line x1=\"70\" y1=\"205\" x2=\"245\" y2=\"92\" stroke=\"#dc2626\" stroke-width=\"3.5\"/>\n  <polygon points=\"241,88 252,87 247,97\" fill=\"#dc2626\"/>\n  <text x=\"165\" y=\"132\" font-size=\"13\" font-weight=\"bold\" fill=\"#dc2626\">A Vektörü</text>\n  <line x1=\"252\" y1=\"87\" x2=\"252\" y2=\"205\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/>\n  <line x1=\"252\" y1=\"87\" x2=\"70\" y2=\"87\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/>\n  <line x1=\"70\" y1=\"205\" x2=\"245\" y2=\"205\" stroke=\"#2563eb\" stroke-width=\"3.5\"/>\n  <polygon points=\"245,200 253,205 245,210\" fill=\"#2563eb\"/>\n  <text x=\"160\" y=\"226\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">A_x = A · cos θ</text>\n  <line x1=\"70\" y1=\"205\" x2=\"70\" y2=\"93\" stroke=\"#16a34a\" stroke-width=\"3.5\"/>\n  <polygon points=\"65,95 70,86 75,95\" fill=\"#16a34a\"/>\n  <text x=\"122\" y=\"80\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">A_y = A · sin θ</text>\n  <text x=\"108\" y=\"198\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">θ</text>\n  <rect x=\"360\" y=\"42\" width=\"315\" height=\"200\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"517\" y=\"65\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\">TRİGONOMETRİK BİLEŞEN HESABI</text>\n  <text x=\"378\" y=\"95\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">• Yatay Bileşen (Komşu): A_x = A · cos θ</text>\n  <text x=\"378\" y=\"120\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">• Düşey Bileşen (Karşı): A_y = A · sin θ</text>\n  <text x=\"378\" y=\"145\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">• Pisagor Bağıntısı: A = kök(A_x² + A_y²)</text>\n  <rect x=\"378\" y=\"162\" width=\"280\" height=\"66\" rx=\"6\" fill=\"#dbeafe\" stroke=\"#60a5fa\"/>\n  <text x=\"517\" y=\"182\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e40af\">37° - 53° - 90° Özel Üçgen Oranları:</text>\n  <text x=\"517\" y=\"200\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">sin 37° = cos 53° = 0,6   |   cos 37° = sin 53° = 0,8</text>\n  <text x=\"517\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">Örnek: A = 20 N, θ = 37° → A_x = 16 N, A_y = 12 N</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Hangi eksen verilen açıya temas ediyorsa (açının komşusu ise) o eksendeki bileşen daima 'cos' ile, açıya temas etmeyen karşı eksendeki bileşen ise 'sin' ile çarpılır ('Açı kime komşuysa cos onu alır')."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Bir vektörün dik bileşenlerinin büyüklüklerinin cebirsel toplamı (Ax + Ay), vektörün kendi büyüklüğünden (A) büyüktür; çünkü bir üçgende iki dik kenarın uzunlukları toplamı hipotenüsten büyüktür."
+        }
+      ]
+    },
+    {
+      "baslik": "Analitik (Koordinat) Yöntemle Çoklu Vektör Toplama ve Dengeleyici Kuvvet",
+      "metin": [
+        "Aynı düzlemde bulunan iki veya daha fazla vektörün ({koyu:F1, F2, F3...}) bileşkesi analitik yöntemle bulunurken önce her vektör {koyu:x} ve {koyu:y} dik bileşenlerine ayrılır. Ardından bir {koyu:bileşen tablosu} oluşturularak sağa ({koyu:+x}) bakan bileşenler pozitif, sola ({koyu:-x}) bakanlar negatif; yukarı ({koyu:+y}) bakan bileşenler pozitif, aşağı ({koyu:-y}) bakanlar negatif işaretle yazılır.",
+        "Yatay eksendeki tüm bileşenlerin cebirsel toplamı alınarak bileşkenin yatay bileşeni ({koyu:Rx = ΣFx}), düşey eksendeki tüm bileşenlerin cebirsel toplamı alınarak bileşkenin düşey bileşeni ({koyu:Ry = ΣFy}) elde edilir. Son adımda birbirine dik olan {koyu:Rx} ve {koyu:Ry} vektörlerine Pisagor bağıntısı uygulanarak net bileşke vektörün büyüklüğü {koyu:R = {kok:{us:Rx|2} + {us:Ry|2}}} formülüyle hesaplanır.",
+        "Bir cisme etki eden kuvvetlerin bileşkesi sıfır ise ({koyu:R = 0}, yani hem {koyu:Rx = 0} hem {koyu:Ry = 0} ise) cisim üzerine etki eden {koyu:net kuvvet sıfırdır} ve cisim dengededir. Bileşkesi {koyu:R} olan bir kuvvet sistemini dengeye getirmek (net kuvveti sıfırlamak) için sisteme uygulanması gereken, bileşke vektörle {koyu:eşit büyüklükte fakat zıt yönlü} olan kuvvete {koyu:dengeleyici kuvvet (E)} denir ve {koyu:E = -R = (-Rx, -Ry)} bağıntısıyla ifade edilir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">ANALİTİK (TABLO) YÖNTEMİYLE ÇOKLU VEKTÖR TOPLAMA</text>\n  <rect x=\"25\" y=\"42\" width=\"320\" height=\"200\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"185\" y=\"65\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#166534\">BİLEŞEN TABLOSU ÖRNEĞİ</text>\n  <text x=\"45\" y=\"92\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#14532d\">Vektör       Yatay (x)       Düşey (y)</text>\n  <line x1=\"42\" y1=\"98\" x2=\"325\" y2=\"98\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <text x=\"45\" y=\"118\" font-size=\"11.5\" fill=\"#334155\">F₁               +8 N             +6 N</text>\n  <text x=\"45\" y=\"140\" font-size=\"11.5\" fill=\"#334155\">F₂               -3 N             +10 N</text>\n  <text x=\"45\" y=\"162\" font-size=\"11.5\" fill=\"#334155\">F₃               +4 N             -4 N</text>\n  <line x1=\"42\" y1=\"172\" x2=\"325\" y2=\"172\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <text x=\"45\" y=\"192\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">Toplam:   R_x = +9 N     R_y = +12 N</text>\n  <text x=\"185\" y=\"222\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">R = kök(9² + 12²) = kök(81 + 144) = 15 N</text>\n  <rect x=\"360\" y=\"42\" width=\"315\" height=\"200\" rx=\"10\" fill=\"#fefce8\" stroke=\"#ca8a04\" stroke-width=\"2\"/>\n  <text x=\"517\" y=\"65\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#854d0e\">ANALİTİK TOPLAMA ADIMLARI</text>\n  <text x=\"378\" y=\"95\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#713f12\">1. Eksenlerle açı yapan her vektör x ve y</text>\n  <text x=\"390\" y=\"112\" font-size=\"11\" fill=\"#334155\">dik bileşenlerine ayrılır.</text>\n  <text x=\"378\" y=\"138\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#713f12\">2. İşaret yönlerine (+x sağ, -x sol; +y yukarı,</text>\n  <text x=\"390\" y=\"155\" font-size=\"11\" fill=\"#334155\">-y aşağı) dikkat edilerek R_x ve R_y bulunur.</text>\n  <text x=\"378\" y=\"181\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#713f12\">3. Birbirine dik R_x ve R_y vektörlerinden</text>\n  <text x=\"390\" y=\"198\" font-size=\"11\" fill=\"#334155\">Pisagor ile R = kök(R_x² + R_y²) hesaplanır.</text>\n  <text x=\"517\" y=\"225\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#a16207\">Dengeleyen kuvvet: E = -R = (-R_x, -R_y)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Bileşke vektör (R) ile dengeleyici kuvvetin (E) büyüklükleri ve doğrultuları birbirine eşittir (|E| = |R|); ancak yönleri birbirine tam zıttır (E = -R). Sorularda 'bileşke' mi yoksa 'dengeleyici kuvvet' mi sorulduğuna dikkat edilmelidir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Birim kareli düzlemde verilen vektörlerin bileşkesini bulurken uç uca çizim yapmak yerine her vektörün (x, y) koordinatlarını tablo halinde alt alta yazıp toplamak çizim hatalarını sıfıra indirir."
+        }
+      ]
+    },
+    {
+      "baslik": "Özel Açılı Vektörlerde Örüntüler, Skaler Çarpım ve Vektör Farkı",
+      "metin": [
+        "Bir {koyu:A} vektörü pozitif bir {koyu:k} gerçek sayısıyla çarpıldığında ({koyu:k > 0}), vektörün yönü ve doğrultusu değişmez, büyüklüğü {koyu:k} katına çıkar. Vektör negatif bir {koyu:k} sayısıyla çarpıldığında ({koyu:k < 0}) ise doğrultusu aynı kalırken {koyu:yönü 180° ters döner} ve büyüklüğü {koyu:|k|} katına çıkar. Özel olarak bir vektörün {koyu:-1} ile çarpılması, o vektörün {koyu:ters (negatif) vektörünü (-A)} verir.",
+        "A 벡터ünden B vektörünü çıkarmak ({koyu:A - B}), A vektörü ile B vektörünün tersini ({koyu:-B}) toplamak demektir: {koyu:D = A - B = A + (-B)}. Başlangıç noktaları aynı noktaya konulan {koyu:A} ve {koyu:B} vektörlerinde {koyu:A - B} fark vektörü, doğrudan {koyu:çıkarılan vektörün (B'nin) bitiş ucundan A vektörünün bitiş ucuna} çizilen vektördür. Koordinat gösteriminde ise {koyu:A(x1, y1) - B(x2, y2) = (x1 - x2, y1 - y2)} işlemi yapılır.",
+        "Büyüklükleri birbirine eşit ({koyu:F1 = F2 = F}) olan iki vektörün başlangıç noktaları birleştirildiğinde aralarındaki açı {koyu:α} küçüldükçe bileşke büyür: {koyu:α = 0°} iken {koyu:R = 2F}; {koyu:α = 60°} iken {koyu:R = F·{kok:3}}; {koyu:α = 90°} iken {koyu:R = F·{kok:2}}; {koyu:α = 120°} iken {koyu:R = F}; {koyu:α = 180°} iken {koyu:R = 0} olur. Eğer bir noktaya eşit büyüklükte üç kuvvet {koyu:120°'şer açıyla} etki ediyorsa, herhangi ikisinin bileşkesi üçüncü kuvvete eşit ve zıt yönlü olacağından {koyu:üçünün toplam bileşkesi sıfır (R = 0)} olur."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">ÖZEL AÇILI EŞİT VEKTÖRLER VE VEKTÖR FARKI (A - B)</text>\n  <rect x=\"25\" y=\"42\" width=\"320\" height=\"200\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"185\" y=\"65\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#6b21a8\">ÖZEL AÇILARDA BİLEŞKE (F₁ = F₂ = F)</text>\n  <text x=\"42\" y=\"94\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">• α = 0° (Aynı yönlü)  →  R = 2F (Maksimum)</text>\n  <text x=\"42\" y=\"118\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">• α = 60° ise  →  R = F · kök(3)</text>\n  <text x=\"42\" y=\"142\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">• α = 90° (Dik) ise  →  R = F · kök(2)</text>\n  <text x=\"42\" y=\"166\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">• α = 120° ise  →  R = F</text>\n  <text x=\"42\" y=\"190\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">• α = 180° (Zıt yönlü)  →  R = 0 (Minimum)</text>\n  <text x=\"185\" y=\"222\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#7e22ce\">Açı küçüldükçe bileşke vektörün büyüklüğü artar!</text>\n  <rect x=\"360\" y=\"42\" width=\"315\" height=\"200\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n  <text x=\"517\" y=\"65\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#9a3412\">VEKTÖRLERDE ÇIKARMA VE SKALER ÇARPIM</text>\n  <text x=\"378\" y=\"95\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#7c2d12\">• Vektörün Skaler Sayı (k) ile Çarpımı:</text>\n  <text x=\"388\" y=\"113\" font-size=\"11\" fill=\"#334155\">- k &gt; 0 ise yön değişmez, boy |k| katına çıkar.</text>\n  <text x=\"388\" y=\"130\" font-size=\"11\" fill=\"#334155\">- k &lt; 0 ise vektör 180° zıt yöne döner.</text>\n  <text x=\"378\" y=\"158\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#7c2d12\">• İki Vektörün Farkı (A - B):</text>\n  <text x=\"388\" y=\"176\" font-size=\"11\" fill=\"#334155\">Çıkarılacak vektör ters çevrilip (-B) toplanır:</text>\n  <text x=\"517\" y=\"200\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#c2410c\">Fark Vektörü: D = A - B = A + (-B)</text>\n  <text x=\"517\" y=\"224\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#9a3412\">Koordinatla: A(x₁, y₁) - B(x₂, y₂) = (x₁ - x₂, y₁ - y₂)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Eşit büyüklükteki iki F vektörü arasındaki açı 60° iken 'fark vektörünün (F1 - F2)' büyüklüğü sorulursa; ikinci vektör ters çevrildiğinde aradaki açı 180° - 60° = 120° olacağından farkın büyüklüğü F olur!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Aynı düzlemdeki üç kuvvetin bileşkesinin sıfır (R = 0) olabilmesi için herhangi iki kuvvetin büyüklüklerinin farkı üçüncü kuvvetten küçük veya eşit, toplamı ise üçüncü kuvvetten büyük veya eşit olmalıdır (üçgen eşitsizliği: |F1 - F2| ≤ F3 ≤ F1 + F2)."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Kartezyen koordinat sisteminde başlangıç noktası orijinde bulunan 25 N büyüklüğündeki F kuvveti, +x ekseni ile pozitif yönde 37° açı yapmaktadır. Bu kuvvetin yatay (Fx) ve düşey (Fy) bileşenlerini bulunuz. (cos 37° = 0,8; sin 37° = 0,6)",
+      "cevap": "Açı yatay (+x) ekseniyle verildiği için yatay bileşen Fx = F · cos 37° = 25 · 0,8 = 20 N (+x yönünde); düşey bileşen ise Fy = F · sin 37° = 25 · 0,6 = 15 N (+y yönünde) olarak bulunur."
+    },
+    {
+      "soru": "Sürtünmesiz yatay düzlemdeki K cismine aynı anda F1(6, -2) N, F2(-10, 5) N ve F3(10, 5) N kuvvetleri etki etmektedir. Cisme etki eden bileşke kuvvetin (R) büyüklüğünü ve cismi dengeleyen kuvvetin (E) koordinatlarını bulunuz.",
+      "cevap": "Bileşkenin yatay bileşeni Rx = 6 + (-10) + 10 = 6 N; düşey bileşeni Ry = -2 + 5 + 5 = 8 N olur. Bileşkenin büyüklüğü R = {kok:{us:6|2} + {us:8|2}} = {kok:36 + 64} = 10 N bulunur. Dengeleyici kuvvet bileşkeye zıt yönlü olduğundan E = -R = (-6, -8) N olur."
+    },
+    {
+      "soru": "Başlangıç noktaları O noktasında bulunan eşit büyüklükteki üç kuvvetten F1 = 10 N (+x yönünde), F2 = 10 N (+x ile +120° açıda) ve F3 = 10 N (+x ile -120° açıda) olarak uygulanmaktadır. Bu üç kuvvetin bileşkesi kaç N'dur?",
+      "cevap": "Aralarında 120° açı bulunan F2 = 10 N ve F3 = 10 N kuvvetlerinin bileşkesi, açıortayları olan -x yönünde 10 N büyüklüğündedir. Bu 10 N (-x) ile F1 = 10 N (+x) birbirine eşit ve zıt yönlü olduğu için üç kuvvetin toplam bileşkesi R = 10 - 10 = 0 N olur."
+    },
+    {
+      "soru": "Aynı düzlemdeki K(5, 3) ve L(2, -1) vektörleri için D = K - L fark vektörünün koordinatlarını ve büyüklüğünü hesaplayınız.",
+      "cevap": "Fark vektörünün yatay bileşeni Dx = Kx - Lx = 5 - 2 = 3 birim; düşey bileşeni Dy = Ky - Ly = 3 - (-1) = 4 birimdir. Koordinatları D(3, 4) olan fark vektörünün büyüklüğü D = {kok:{us:3|2} + {us:4|2}} = 5 birim bulunur."
+    },
+    {
+      "soru": "Büyüklükleri 4 N, 7 N ve 10 N olan aynı düzlemdeki üç kuvvetin bileşkesinin alabileceği en büyük (R_max) ve en küçük (R_min) değerler kaç N'dur?",
+      "cevap": "Üç kuvvet de aynı yönlü olduğunda bileşke maksimum olur: R_max = 4 + 7 + 10 = 21 N. İlk iki kuvvetin (4 N ve 7 N) bileşkesi |7 - 4| = 3 N ile 7 + 4 = 11 N arasındaki her değeri alabilir; 10 N bu aralıkta (3 ≤ 10 ≤ 11) yer aldığı için ilk iki kuvvetin bileşkesi 10 N yapılıp üçüncü kuvvete zıt yönlendirildiğinde R_min = 0 N olur."
+    },
+    {
+      "soru": "Yatay düzlemdeki bir cisme +x ekseniyle 53° açı yapacak biçimde 10 N büyüklüğünde F1 kuvveti ve -y yönünde 2 N büyüklüğünde F2 kuvveti etki etmektedir. Bileşke kuvvetin büyüklüğü kaç N'dur? (cos 53° = 0,6; sin 53° = 0,8)",
+      "cevap": "Önce F1 = 10 N kuvveti dik bileşenlerine ayrılır: F1x = 10 · cos 53° = 6 N (+x) ve F1y = 10 · sin 53° = 8 N (+y). Toplam yatay bileşen Rx = 6 N (+x); toplam düşey bileşen Ry = 8 N (+y) - 2 N (-y) = 6 N (+y) olur. Birbirine dik iki 6 N'luk bileşkenin toplamı R = 6·{kok:2} N bulunur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "soru": "Kartezyen koordinat sisteminde başlangıç noktası orijinde bulunan ve düşey (+y) ekseniyle 37° açı yapan 20 N büyüklüğündeki F kuvvetinin yatay (Fx) ve düşey (Fy) bileşenlerinin büyüklüğü aşağıdakilerden hangisidir? (sin 37° = 0,6; cos 37° = 0,8)",
+      "secenekler": [
+        "Fx = 16 N, Fy = 12 N",
+        "Fx = 12 N, Fy = 16 N",
+        "Fx = 10 N, Fy = 10 N",
+        "Fx = 15 N, Fy = 20 N",
+        "Fx = 8 N, Fy = 6 N"
+      ],
+      "dogru": 1,
+      "aciklama": "Açı düşey (+y) ekseniyle verildiği için +y ekseni açının komşusudur: Fy = 20 · cos 37° = 20 · 0,8 = 16 N ve karşı kenar olan yatay bileşen Fx = 20 · sin 37° = 20 · 0,6 = 12 N olur.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Birim kareli koordinat düzleminde K(6, -3), L(-2, 8) ve M(4, 1) vektörleri verilmiştir. Bu üç vektörün bileşkesini sıfırlayan 'dengeleyici kuvvetin (E)' koordinatları ve büyüklüğü aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "E(8, 6) ve büyüklüğü 10 birim",
+        "E(-8, 6) ve büyüklüğü 10 birim",
+        "E(-8, -6) ve büyüklüğü 10 birim",
+        "E(8, -6) ve büyüklüğü 14 birim",
+        "E(-6, -8) ve büyüklüğü 12 birim"
+      ],
+      "dogru": 2,
+      "aciklama": "Bileşke vektör R = K + L + M = (6 - 2 + 4, -3 + 8 + 1) = (8, 6) birimdir. Dengeleyici kuvvet bileşkenin zıt yönlüsü olduğundan E = -R = (-8, -6) olur ve büyüklüğü {kok:(-8)² + (-6)²} = 10 birimdir.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Başlangıç noktaları çakışık ve büyüklükleri eşit (|A| = |B| = 8 N) olan A ve B vektörleri arasındaki açı 60°'dir. Buna göre |A + B| toplam vektörünün büyüklüğü ile |A - B| fark vektörünün büyüklüğü sırasıyla kaç N'dur?",
+      "secenekler": [
+        "8·{kok:3} N ve 8 N",
+        "8 N ve 8·{kok:3} N",
+        "8·{kok:2} N ve 8 N",
+        "16 N ve 0 N",
+        "8·{kok:3} N ve 8·{kok:2} N"
+      ],
+      "dogru": 0,
+      "aciklama": "Eşit iki 8 N vektör arasındaki açı 60° olduğundan toplamları |A + B| = 8·{kok:3} N olur. Fark işleminde (-B) alındığında iki vektör arasındaki açı 180° - 60° = 120° olacağından |A - B| = 8 N bulunur.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Aynı düzlemde bulunan üç kuvvetin büyüklükleri aşağıdakilerden hangisi gibi olursa bu üç kuvvetin bileşkesi sıfır (R = 0) olamaz?",
+      "secenekler": [
+        "5 N, 5 N, 5 N",
+        "6 N, 8 N, 10 N",
+        "4 N, 9 N, 12 N",
+        "3 N, 5 N, 11 N",
+        "7 N, 7 N, 14 N"
+      ],
+      "dogru": 3,
+      "aciklama": "Üç kuvvetin bileşkesinin sıfır olabilmesi için herhangi ikisinin toplamı üçüncüden büyük veya eşit olmalıdır. 3 N ve 5 N'un maksimum toplamı 8 N olup 11 N'u dengelemesi imkânsızdır (en küçük bileşke 11 - 8 = 3 N olur).",
+      "tur": "coktan"
+    },
+    {
+      "ifadeler": [
+        {
+          "metin": "Bir F vektörü yatay +x ekseniyle α açısı yapıyorsa yatay bileşeni Fx = F · cos α bağıntısıyla hesaplanır.",
+          "dogru": true,
+          "aciklama": "Açı +x ekseniyle yapıldığında yatay bileşen açının komşu dik kenarı olduğu için cos α ile çarpılır."
+        },
+        {
+          "metin": "Dengeleyici kuvvet (E), bileşke kuvvet (R) ile aynı yönlü ve eşit büyüklüktedir.",
+          "dogru": false,
+          "aciklama": "Dengeleyici kuvvet bileşke kuvvetle eşit büyüklükte fakat zıt yönlüdür (E = -R)."
+        },
+        {
+          "metin": "Bir vektör -2 sayısı ile çarpıldığında yönü 180° ters döner ve büyüklüğü iki katına çıkar.",
+          "dogru": true,
+          "aciklama": "Negatif skalerle çarpım vektörün yönünü ters çevirir, mutlak değeri olan 2 ise boyunu iki katına çıkarır."
+        },
+        {
+          "metin": "Bir noktaya 120°'şer açıyla etki eden eşit büyüklükteki üç kuvvetin bileşkesi sıfırdır.",
+          "dogru": true,
+          "aciklama": "İki kuvvetin bileşkesi F olup üçüncü F kuvvetine tam zıt yönlü olacağından net kuvvet sıfırlanır."
+        },
+        {
+          "metin": "Dik bileşenleri 5 N ve 12 N olan bir vektörün kendi büyüklüğü 17 N'dur.",
+          "dogru": false,
+          "aciklama": "Dik bileşenler birbirine 90° dik olduğundan Pisagor teoremine göre vektörün büyüklüğü {kok:5² + 12²} = 13 N olur (5-12-13 üçgeni)."
+        }
+      ],
+      "tur": "dy"
+    },
+    {
+      "ciftler": [
+        [
+          "A · cos θ",
+          "Yatay eksenle θ açısı yapan A vektörünün yatay (x) dik bileşeni"
+        ],
+        [
+          "A · sin θ",
+          "Yatay eksenle θ açısı yapan A vektörünün düşey (y) dik bileşeni"
+        ],
+        [
+          "Dengeleyici Kuvvet (E)",
+          "Bileşke vektörle eşit büyüklükte ve zıt yönlü olan (-R) vektörü"
+        ],
+        [
+          "F · {kok:3}",
+          "Başlangıçları çakışık ve aralarında 60° açı olan eşit iki F kuvvetinin bileşkesi"
+        ],
+        [
+          "A + (-B)",
+          "A vektöründen B vektörünün çıkarılması (A - B) işleminin eşdeğeri"
+        ]
+      ],
+      "tur": "eslestir"
+    },
+    {
+      "cumleler": [
+        {
+          "metin": "Bir vektörün kartezyen koordinat eksenleri üzerindeki dik izdüşümlerine o vektörün dik ___ adı verilir.",
+          "cevap": "bileşenleri"
+        },
+        {
+          "metin": "Üzerine etki eden net (bileşke) kuvvet sıfır olan bir cisim ___ durumundadır.",
+          "cevap": "denge"
+        },
+        {
+          "metin": "Aralarında 90° açı bulunan eşit büyüklükteki iki F vektörünün bileşkesi F · ___ büyüklüğündedir.",
+          "cevap": "{kok:2}"
+        },
+        {
+          "metin": "Bir vektör pozitif bir gerçek sayıyla çarpıldığında vektörün ___ değişmez, büyüklüğü değişir.",
+          "cevap": "yönü"
+        },
+        {
+          "metin": "Çoklu vektör toplamada yatay bileşenlerin toplamı Rx = 8 N ve düşey bileşenlerin toplamı Ry = 15 N ise bileşke ___ N olur.",
+          "cevap": "17"
+        }
+      ],
+      "fazla": [
+        "doğrultusu",
+        "23"
+      ],
+      "tur": "bosluk"
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Sürtünmesiz yatay düzlemdeki O noktasal cismine; +x ekseniyle 37° açı yapan F1 = 15 N, -x yönünde F2 = 6 N ve -y yönünde F3 = 1 N büyüklüğünde üç kuvvet etki etmektedir. Bileşke kuvvetin büyüklüğünü ve yönünü analitik yöntemle açıklayınız. (cos 37° = 0,8; sin 37° = 0,6)",
+      "ipuclari": [
+        "Birinci adımda F1 = 15 N kuvvetini yatay (F1x = 15 · cos 37°) ve düşey (F1y = 15 · sin 37°) dik bileşenlerine ayırınız.",
+        "İkinci adımda yatay eksendeki net kuvveti (Rx = F1x - F2) ve düşey eksendeki net kuvveti (Ry = F1y - F3) hesaplayınız.",
+        "Üçüncü adımda birbirine dik Rx ve Ry bileşenlerinden Pisagor bağıntısıyla bileşke kuvvetin (R) büyüklüğünü bulunuz."
+      ],
+      "cevap": "Birinci adımda F1 = 15 N kuvvetinin dik bileşenleri bulunur: F1x = 15 · 0,8 = 12 N (+x yönünde) ve F1y = 15 · 0,6 = 9 N (+y yönünde). İkinci adımda eksenlerdeki bileşenler toplanır: Yatayda Rx = 12 N (+x) - 6 N (-x) = +6 N (+x yönünde); düşeyde Ry = 9 N (+y) - 1 N (-y) = +8 N (+y yönünde) elde edilir. Üçüncü adımda birbirine dik 6 N ve 8 N bileşenlerinden Pisagor bağıntısıyla R = {kok:{us:6|2} + {us:8|2}} = {kok:36 + 64} = 10 N büyüklüğünde (birinci bölgede) bileşke kuvvet bulunur."
+    }
+  ],
+  "ozet": [
+    "{koyu:Dik Bileşenlere Ayırma:} Yatay +x ekseniyle θ açısı yapan A vektörünün yatay bileşeni Ax = A · cos θ, düşey bileşeni Ay = A · sin θ ve büyüklüğü A = {kok:{us:Ax|2} + {us:Ay|2}} bağıntısıyla bulunur.",
+    "{koyu:Açı-Kosinüs Kuralı:} Açının temas ettiği (komşu olduğu) eksendeki bileşen cos θ ile, karşı eksendeki bileşen ise sin θ ile hesaplanır.",
+    "{koyu:Analitik (Tablo) Toplama:} Çoklu vektörlerde önce Rx = ΣFx ve Ry = ΣFy cebirsel toplamları bulunur, ardından R = {kok:{us:Rx|2} + {us:Ry|2}} ile bileşke elde edilir.",
+    "{koyu:Denge ve Dengeleyici Kuvvet:} Bileşkesi R = 0 olan sistem dengededir; sistemi dengeleyen kuvvet E = -R olup bileşkeyle eşit büyüklükte ve zıt yönlüdür.",
+    "{koyu:Özel Açılar ve Fark:} Eşit iki F vektöründe açı 0°, 60°, 90°, 120°, 180° iken bileşke sırasıyla 2F, F·{kok:3}, F·{kok:2}, F ve 0 olur; A - B farkı ise A + (-B) toplamına eşittir."
+  ]
+}

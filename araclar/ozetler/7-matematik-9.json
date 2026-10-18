@@ -1,0 +1,262 @@
+{
+  "ad": "7-matematik-9",
+  "sinif": 7,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 9,
+  "tarih": "9-13 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "Geometrik Nicelikler (1)",
+  "konu": "Dikdörtgenler Prizmasının Yüzey Alanı ve Hacmi: Açınım, Birim Küplerle Hacim Hesabı ve Gerçek Yaşam Problemleri (MAT.7.4.2 & MAT.7.4.3)",
+  "ciktilar": [
+    "Dikdörtgenler prizmasının farklı yüzey açınımlarını inceleyerek yüzey açınımı ile yüzey alanı arasındaki ilişkiyi kurar ve yüzey alanını hesaplar (MAT.7.4.2).",
+    "Dikdörtgenler prizmasının hacmini eş nesneler ve birim küpler aracılığıyla yorumlar; prizmayı dolduran birim küp sayısını hacim olarak ifade eder (MAT.7.4.3).",
+    "Birim küpleri katman ve sütun stratejileriyle sayarak dikdörtgenler prizmasının hacim bağıntısını (Taban Alanı × Yükseklik = a·b·c) değerlendirir (MAT.7.4.4)."
+  ],
+  "giris": "Bir hediye kutusunu kaplamak için ne kadar ambalaj kâğıdı gerektiğini hesaplarken kutunun {koyu:yüzey alanını}; aynı kutunun içine kaç adet eş küp şeker veya koli sığacağını bulurken ise kutunun {koyu:hacmini} kullanırız. {koyu:Geometrik Nicelikler (1)} temamızın bu haftasında dikdörtgenler prizmasının düzlem üzerindeki açınımlarından yararlanarak yüzey alanını hesaplamayı ve birim küpler yardımıyla hacim bağıntısına ulaşmayı öğreneceğiz.",
+  "bolumler": [
+    {
+      "baslik": "Dikdörtgenler Prizmasının Yüzey Açınımı ve Yüzey Alanı (MAT.7.4.2)",
+      "metin": [
+        "Dikdörtgenler prizmasının {koyu:6 yüzü, 12 ayrıtı ve 8 köşesi} vardır. Prizmanın yüzeyleri ayrıtları boyunca kesilip düz bir zemin üzerine serildiğinde elde edilen iki boyutlu şekle {koyu:yüzey açınımı} denir. Açınımda karşılıklı yüzler ikişer ikişer birbirine eş dikdörtgenlerden oluşur ve prizma tekrar kapatıldığında bu eş yüzler birbirine paralel ve karşılıklı konumlanır.",
+        "Bir dikdörtgenler prizmasının farklı boyutlardaki üç ayrıt uzunluğuna {koyu:a (boy)}, {koyu:b (en)} ve {koyu:c (yükseklik)} dersek; alt ve üst tabanların her birinin alanı {koyu:a · b}, ön ve arka yüzlerin her birinin alanı {koyu:a · c}, sağ ve sol yan yüzlerin her birinin alanı ise {koyu:b · c} birimkaredir.",
+        "Prizmanın {koyu:yüzey alanı (tüm alanı)}, açınımındaki 6 dikdörtgensel bölgenin alanları toplamına eşittir. Her yüzeyden ikişer tane bulunduğu için yüzey alanı bağıntısı: {koyu:Yüzey Alanı = 2 · (a·b + a·c + b·c)} şeklinde ifade edilir. Tüm ayrıtları birbirine eşit ({koyu:a}) olan {koyu:küpün} yüzey alanı ise 6 eş kareden oluştuğu için {koyu:6 · a²} formülüyle hesaplanır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">DİKDÖRTGENLER PRİZMASININ AÇINIMI VE YÜZEY ALANI</text>\n  <rect x=\"25\" y=\"48\" width=\"320\" height=\"190\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/>\n  <text x=\"185\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Yüzey Açınımı (6 Dikdörtgensel Yüz)</text>\n  <rect x=\"135\" y=\"85\" width=\"60\" height=\"32\" fill=\"#93c5fd\" stroke=\"#1d4ed8\" stroke-width=\"1.5\"/>\n  <text x=\"165\" y=\"105\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e3a8a\">Üst (a·b)</text>\n  <rect x=\"95\" y=\"117\" width=\"40\" height=\"45\" fill=\"#fde047\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/>\n  <text x=\"115\" y=\"143\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#854d0e\">Sol (b·c)</text>\n  <rect x=\"135\" y=\"117\" width=\"60\" height=\"45\" fill=\"#86efac\" stroke=\"#15803d\" stroke-width=\"1.5\"/>\n  <text x=\"165\" y=\"143\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#14532d\">Ön (a·c)</text>\n  <rect x=\"195\" y=\"117\" width=\"40\" height=\"45\" fill=\"#fde047\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/>\n  <text x=\"215\" y=\"143\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#854d0e\">Sağ (b·c)</text>\n  <rect x=\"235\" y=\"117\" width=\"60\" height=\"45\" fill=\"#86efac\" stroke=\"#15803d\" stroke-width=\"1.5\"/>\n  <text x=\"265\" y=\"143\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#14532d\">Arka (a·c)</text>\n  <rect x=\"135\" y=\"162\" width=\"60\" height=\"32\" fill=\"#93c5fd\" stroke=\"#1d4ed8\" stroke-width=\"1.5\"/>\n  <text x=\"165\" y=\"182\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e3a8a\">Alt (a·b)</text>\n  <text x=\"185\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Karşılıklı yüzler ikişer ikişer birbirine eşittir!</text>\n  <rect x=\"360\" y=\"48\" width=\"315\" height=\"190\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/>\n  <text x=\"517\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Yüzey Alanı Bağıntısı</text>\n  <text x=\"378\" y=\"102\" font-size=\"11.5\" fill=\"#334155\">• Ayrıt uzunlukları: <tspan font-weight=\"bold\">a</tspan> (boy), <tspan font-weight=\"bold\">b</tspan> (en), <tspan font-weight=\"bold\">c</tspan> (yükseklik)</text>\n  <text x=\"378\" y=\"128\" font-size=\"11.5\" fill=\"#334155\">• Alt ve Üst Taban: 2 · (a · b)</text>\n  <text x=\"378\" y=\"152\" font-size=\"11.5\" fill=\"#334155\">• Ön ve Arka Yüz: 2 · (a · c)</text>\n  <text x=\"378\" y=\"176\" font-size=\"11.5\" fill=\"#334155\">• Sağ ve Sol Yan Yüz: 2 · (b · c)</text>\n  <rect x=\"378\" y=\"190\" width=\"278\" height=\"36\" rx=\"6\" fill=\"#dcfce7\" stroke=\"#16a34a\"/>\n  <text x=\"517\" y=\"213\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">Yüzey Alanı = 2 · (a·b + a·c + b·c)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Üstü Açık Kutu veya Havuz Sorularına Dikkat!",
+          "metin": "Soruda 'üstü açık bir kutu' veya 'tabanı ve yan duvarları fayansla kaplanacak bir havuz' deniyorsa üst taban alanı hesaba katılmaz; 6 yüz yerine 5 yüzün alanı toplanır: (a·b) + 2·(a·c + b·c)."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Açınımda Karşılıklı Yüzleri Bulma",
+          "metin": "Bir prizma açınımında yan yana dizilen dört yüz (veya dikey dizilen üç yüz) arasında 'birer kare atlanarak' seçilen yüzler prizma kapatıldığında birbirinin tam karşısına gelir."
+        }
+      ]
+    },
+    {
+      "baslik": "Eş Nesneler ve Birim Küplerle Hacim Kavramı (MAT.7.4.3)",
+      "metin": [
+        "Üç boyutlu herhangi bir cismin uzayda (boşlukta) kapladığı yere o cismin {koyu:hacmi} denir. İki dikdörtgenler prizmasının hacimlerini karşılaştırırken içlerinin aynı büyüklükteki {koyu:eş nesnelerle} (arada hiç boşluk kalmayacak ve taşmayacak biçimde) doldurulması temel ölçüttür.",
+        "Standart hacim ölçümünde temel birim olarak ayrıt uzunlukları {koyu:1 birim} olan küp seçilir ve buna {koyu:birim küp} denir. Bir birim küpün hacmi {koyu:1 birimküp} ({us:1 br|3}) olarak kabul edilir. Bir dikdörtgenler prizmasının içini tamamen dolduran toplam birim küp sayısı, o prizmanın {koyu:birimküp cinsinden hacmini} verir.",
+        "İçi tamamen doldurulmamış, yalnızca taban sırası ve yüksekliği boyunca dizilmiş birim küpleri verilen bir prizmanın toplam hacmini bulmak için prizmanın {koyu:taban ayrıtlarına kaç birim küp sığdığı} ve {koyu:üst üste kaç katmandan oluştuğu} belirlenir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">BİRİM KÜPLERLE DİKDÖRTGENLER PRİZMASININ HACMİ</text>\n  <rect x=\"25\" y=\"48\" width=\"320\" height=\"190\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\"/>\n  <text x=\"185\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#a16207\">Birim Küp Sayma Stratejisi</text>\n  <text x=\"45\" y=\"102\" font-size=\"11.5\" fill=\"#334155\">• Bir cismin boşlukta kapladığı yere <tspan font-weight=\"bold\">hacim</tspan> denir.</text>\n  <text x=\"45\" y=\"128\" font-size=\"11.5\" fill=\"#334155\">• Ölçüt: Ayrıtı 1 birim olan <tspan font-weight=\"bold\">birim küp (1 br³)</tspan>.</text>\n  <text x=\"45\" y=\"154\" font-size=\"11.5\" fill=\"#334155\">• 1. Katmandaki küp sayısı = Boy × En (a · b)</text>\n  <text x=\"45\" y=\"180\" font-size=\"11.5\" fill=\"#334155\">• Toplam katman sayısı = Yükseklik (c)</text>\n  <text x=\"185\" y=\"214\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b45309\">Prizmanın içi boşluk kalmadan doldurulur!</text>\n  <rect x=\"360\" y=\"48\" width=\"315\" height=\"190\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/>\n  <text x=\"517\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Hacim Bağıntısı (MAT.7.4.4)</text>\n  <text x=\"380\" y=\"104\" font-size=\"11.5\" fill=\"#334155\">Örnek Prizma: a = 4 br, b = 3 br, c = 2 br</text>\n  <text x=\"380\" y=\"130\" font-size=\"11.5\" fill=\"#334155\">• Tabandaki 1 katmanda: 4 × 3 = 12 birim küp</text>\n  <text x=\"380\" y=\"156\" font-size=\"11.5\" fill=\"#334155\">• 2 katmanda toplam: 12 × 2 = 24 birim küp</text>\n  <rect x=\"378\" y=\"176\" width=\"278\" height=\"48\" rx=\"6\" fill=\"#dbeafe\" stroke=\"#2563eb\"/>\n  <text x=\"517\" y=\"196\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">Hacim = Taban Alanı × Yükseklik</text>\n  <text x=\"517\" y=\"215\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">V = (a · b) · c = a · b · c</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Eksik Küp Sorularında İstenen İfadeye Dikkat!",
+          "metin": "'Prizmanın hacmi kaç birimküptür?' sorusu tamamlanmış prizmayı sorarken, 'Bu prizmayı doldurmak için KAÇ BİRİM KÜP DAHA gerekir?' sorusunda toplam hacimden mevcut küp sayısı çıkarılır!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Katman (Tabaka) Sayma Yöntemi",
+          "metin": "Tabanda 5×4 = 20 birim küp bulunan bir prizma 3 katlı ise her katta 20 küp olacağından toplam hacim 20 + 20 + 20 = 60 birimküptür."
+        }
+      ]
+    },
+    {
+      "baslik": "Dikdörtgenler Prizmasının Hacim Bağıntısı (MAT.7.4.4)",
+      "metin": [
+        "Birim küplerle doldurulmuş bir dikdörtgenler prizmasında tabandaki birinci katmanda yer alan birim küp sayısı, tabanın iki ayrıt uzunluğunun çarpımına ({koyu:a · b}), yani {koyu:Taban Alanına} eşittir. Bu katmanlardan üst üste yükseklik ({koyu:c}) kadar dizildiği için toplam birim küp sayısı taban alanı ile yüksekliğin çarpımından bulunur.",
+        "Buna göre ayrıt uzunlukları {koyu:a, b ve c} olan dikdörtgenler prizmasının hacim bağıntısı: {koyu:Hacim (V) = Taban Alanı × Yükseklik = (a · b) · c = a · b · c} şeklindedir. Bir prizmanın farklı üç ayrıt uzunluğunu birbiriyle çarptığımızda doğrudan hacmini elde ederiz.",
+        "Özel prizmalarda da aynı kural geçerlidir: Taban ayrıtı {koyu:a}, yüksekliği {koyu:c} olan {koyu:kare prizmanın} hacmi {koyu:V = a² · c} olur. Tüm ayrıtları birbirine eşit ({koyu:a}) olan {koyu:küpün} hacmi ise üç ayrıtının çarpımından {koyu:V = a · a · a =} {us:a|3} bağıntısıyla hesaplanır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">ÖZEL PRİZMALAR: KARE PRİZMA VE KÜPÜN ALAN / HACİM ÖZETİ</text>\n  <rect x=\"30\" y=\"50\" width=\"310\" height=\"185\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/>\n  <text x=\"185\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Kare Prizma (Taban: a × a, Yükseklik: c)</text>\n  <text x=\"48\" y=\"104\" font-size=\"11.5\" fill=\"#334155\">• Alt ve üst tabanı birbirine eş iki <tspan font-weight=\"bold\">kare</tspan>dir.</text>\n  <text x=\"48\" y=\"130\" font-size=\"11.5\" fill=\"#334155\">• Yan yüzleri birbirine eş 4 dikdörtgendir.</text>\n  <text x=\"48\" y=\"160\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">• Yüzey Alanı = 2·a² + 4·(a·c)</text>\n  <text x=\"48\" y=\"188\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">• Hacmi (V) = a · a · c = a² · c</text>\n  <text x=\"185\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Dikdörtgenler prizmasının özel halidir.</text>\n  <rect x=\"360\" y=\"50\" width=\"310\" height=\"185\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#ef4444\"/>\n  <text x=\"515\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b91c1c\">Küp (Tüm Ayrıtları Eşit: a × a × a)</text>\n  <text x=\"378\" y=\"104\" font-size=\"11.5\" fill=\"#334155\">• 6 yüzünün tamamı birbirine eş <tspan font-weight=\"bold\">kare</tspan>dir.</text>\n  <text x=\"378\" y=\"130\" font-size=\"11.5\" fill=\"#334155\">• Bir yüzünün alanı = a · a = a²</text>\n  <text x=\"378\" y=\"160\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#991b1b\">• Yüzey Alanı = 6 · a²</text>\n  <text x=\"378\" y=\"188\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#991b1b\">• Hacmi (V) = a · a · a = a³</text>\n  <text x=\"515\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">12 eş ayrıtı ve 8 köşesi vardır.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Yüzey Alanı Birimi ile Hacim Birimini Karıştırma!",
+          "metin": "Yüzey alanı iki boyutlu olduğu için cm², m², br² (kare) ile ifade edilir; hacim ise üç boyutlu olduğu için cm³, m³, br³ (küp) birimleriyle gösterilir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Büyük Koliye Küçük Kutu Yerleştirme",
+          "metin": "Tam bölünen ayrıt uzunluklarında büyük prizmanın içine sığacak küçük prizma sayısı: (Büyük Prizmanın Hacmi) ÷ (Küçük Prizmanın Hacmi) işlemiyle pratikçe bulunur."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Ayrıt uzunlukları 6 cm, 4 cm ve 5 cm olan bir dikdörtgenler prizmasının yüzey alanını ve hacmini hesaplayınız.",
+      "cevap": "Yüzey Alanı = 2 · (a·b + a·c + b·c) = 2 · (6·4 + 6·5 + 4·5) = 2 · (24 + 30 + 20) = 2 · 74 = 148 cm² bulunur. Hacmi ise V = a · b · c = 6 · 4 · 5 = 120 cm³ olur."
+    },
+    {
+      "soru": "Bir ayrıtının uzunluğu 5 birim olan bir küpün tüm yüzey alanı kaç birimkaredir ve hacmi kaç birimküptür?",
+      "cevap": "Küpün 6 eş karesel yüzü vardır: Yüzey Alanı = 6 · a² = 6 · 5² = 6 · 25 = 150 br². Küpün hacmi ise V = a³ = 5 · 5 · 5 = 125 br³ olarak bulunur."
+    },
+    {
+      "soru": "Taban ayrıtlarından biri 4 br, diğeri 5 br ve yüksekliği 3 br olan dikdörtgenler prizmasının içinde halihazırda 14 adet birim küp bulunmaktadır. Bu prizmanın tamamen dolması için kaç adet birim küpe daha ihtiyaç vardır?",
+      "cevap": "Prizmanın toplam hacmi (alabileceği toplam birim küp sayısı): V = 4 · 5 · 3 = 60 birim küptür. İçinde 14 birim küp bulunduğuna göre tamamen dolması için 60 - 14 = 46 adet birim küpe daha ihtiyaç vardır."
+    },
+    {
+      "soru": "Taban ayrıtı 6 cm olan kare prizma biçimindeki bir kutunun hacmi 288 cm³ olduğuna göre bu kutunun yüksekliği kaç cm'dir?",
+      "cevap": "Kare prizmanın taban alanı = 6 · 6 = 36 cm²'dir. Hacim = Taban Alanı × Yükseklik bağıntısından 288 = 36 · c olur. Buradan yükseklik c = 288 ÷ 36 = 8 cm bulunur."
+    },
+    {
+      "soru": "Boyutları 10 m, 6 m ve derinliği 2 m olan dikdörtgenler prizması şeklindeki üstü açık bir yüzme havuzunun tabanı ve yan duvarları fayansla kaplanacaktır. Kaç metrekare fayans gerekir?",
+      "cevap": "Havuzun üstü açık olduğu için 1 taban ve 4 yan yüz vardır. Taban alanı = 10 · 6 = 60 m². Karşılıklı uzun yan duvarlar = 2 · (10 · 2) = 40 m². Karşılıklı kısa yan duvarlar = 2 · (6 · 2) = 24 m². Toplam kaplanacak alan = 60 + 40 + 24 = 124 m² olur."
+    },
+    {
+      "soru": "Ayrıt uzunlukları 12 cm, 15 cm ve 9 cm olan dikdörtgenler prizması biçimindeki bir kolinin içine ayrıtı 3 cm olan küp şeklindeki kutulardan en fazla kaç tane yerleştirilebilir?",
+      "cevap": "Kolinin ayrıtları 3 cm'ye tam bölünmektedir (12÷3 = 4, 15÷3 = 5, 9÷3 = 3). Dolayısıyla sığacak kutu sayısı: (12 · 15 · 9) ÷ (3 · 3 · 3) = 4 · 5 · 3 = 60 adet kutudur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Farklı ayrıtlarının uzunlukları 3 cm, 4 cm ve 8 cm olan bir dikdörtgenler prizmasının tüm yüzey alanı kaç santimetrekaredir?",
+      "secenekler": [
+        "136 santimetrekaredir",
+        "96 santimetrekaredir",
+        "112 santimetrekaredir",
+        "144 santimetrekaredir"
+      ],
+      "dogru": 0,
+      "aciklama": "Yüzey Alanı = 2 · (3·4 + 3·8 + 4·8) = 2 · (12 + 24 + 32) = 2 · 68 = 136 cm² bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Birim küplerle oluşturulacak bir dikdörtgenler prizmasının tabanında 6 sıra ve her sırada 5 birim küp yer almaktadır. Prizma 4 katmandan oluştuğuna göre hacmi kaç birimküptür?",
+      "secenekler": [
+        "100 birimküptür",
+        "120 birimküptür",
+        "90 birimküptür",
+        "150 birimküptür"
+      ],
+      "dogru": 1,
+      "aciklama": "Bir katmandaki küp sayısı (taban alanı) = 6 × 5 = 30 birim küptür. 4 katman olduğu için toplam hacim = 30 × 4 = 120 birimküptür."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Tüm yüzey alanı 96 cm² olan bir küpün hacmi kaç santimetreküptür?",
+      "secenekler": [
+        "36 santimetreküptür",
+        "48 santimetreküptür",
+        "64 santimetreküptür",
+        "125 santimetreküptür"
+      ],
+      "dogru": 2,
+      "aciklama": "Küpün yüzey alanı 6·a² = 96 ise bir yüzünün alanı a² = 16 cm² ve bir ayrıtı a = 4 cm'dir. Hacmi ise V = a³ = 4³ = 64 cm³ olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Hacmi 180 cm³ olan bir dikdörtgenler prizmasının taban ayrıtları 5 cm ve 6 cm olduğuna göre yüksekliği kaç santimetredir?",
+      "secenekler": [
+        "4 santimetredir",
+        "5 santimetredir",
+        "8 santimetredir",
+        "6 santimetredir"
+      ],
+      "dogru": 3,
+      "aciklama": "Taban alanı = 5 × 6 = 30 cm²'dir. Hacim = Taban Alanı × Yükseklik olduğundan 180 ÷ 30 = 6 cm bulunur."
+    },
+    {
+      "tur": "dy",
+      "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Dikdörtgenler prizmasının yüzey açınımında karşılıklı yüzler ikişer ikişer birbirine eş dikdörtgenlerdir.",
+          "dogru": true,
+          "aciklama": "Alt-üst, ön-arka ve sağ-sol yüzler birbirine eş ikişer dikdörtgenden oluşur."
+        },
+        {
+          "metin": "Ayrıt uzunlukları 2 br, 3 br ve 5 br olan bir prizmanın hacmi 2 + 3 + 5 = 10 birimküptür.",
+          "dogru": false,
+          "aciklama": "Prizmanın hacmi ayrıtların toplamıyla değil, çarpımıyla (2 × 3 × 5 = 30 br³) bulunur."
+        },
+        {
+          "metin": "Bir dikdörtgenler prizmasının içine boşluk kalmayacak biçimde yerleştirilen toplam birim küp sayısı prizmanın hacmini verir.",
+          "dogru": true,
+          "aciklama": "Birim küp sayısı prizmanın birimküp cinsinden hacmine eşittir."
+        },
+        {
+          "metin": "Bir ayrıtı 3 cm olan küpün hacmi ile tüm yüzey alanının sayısal değerleri birbirine eşittir.",
+          "dogru": false,
+          "aciklama": "Ayrıtı 3 cm olan küpün hacmi 3³ = 27 cm³, yüzey alanı ise 6 · 3² = 54 cm²'dir; birbirine eşit değildir (6 cm'lik küpte sayısal değerler eşitlenir)."
+        },
+        {
+          "metin": "Dikdörtgenler prizmasının hacmi, taban alanı ile yüksekliğinin çarpımına eşittir.",
+          "dogru": true,
+          "aciklama": "V = (a · b) · c = Taban Alanı × Yükseklik bağıntısı tüm dik prizmalarda geçerlidir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "yonerge": "Aşağıdaki geometrik kavram ve prizmaları karşılık gelen alan veya hacim ifadeleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Dikdörtgenler prizmasının yüzey alanı",
+          "2 · (a·b + a·c + b·c) bağıntısı"
+        ],
+        [
+          "Dikdörtgenler prizmasının hacmi",
+          "Taban alanı ile yüksekliğin çarpımı (a · b · c)"
+        ],
+        [
+          "Bir ayrıtı a olan küpün yüzey alanı",
+          "Altı eş karenin alanları toplamı (6 · a²)"
+        ],
+        [
+          "Bir ayrıtı a olan küpün hacmi",
+          "Bir ayrıt uzunluğunun küpü (a³)"
+        ],
+        [
+          "Birim küp",
+          "Ayrıtları 1 birim ve hacmi 1 br³ olan standart ölçüt"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun matematiksel kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir dikdörtgenler prizmasının ayrıtları boyunca kesilip düzlem üzerine serilmesine yüzey ___ denir.",
+          "cevap": "açınımı"
+        },
+        {
+          "metin": "Üç boyutlu bir cismin boşlukta kapladığı yere o cismin ___ adı verilir.",
+          "cevap": "hacmi"
+        },
+        {
+          "metin": "Dikdörtgenler prizmasının toplam ___ adet dikdörtgensel yüzeyi ve on iki ayrıtı vardır.",
+          "cevap": "altı"
+        },
+        {
+          "metin": "Prizmanın ilk katmanındaki birim küp sayısı prizmanın ___ alanına eşittir.",
+          "cevap": "taban"
+        },
+        {
+          "metin": "Tüm ayrıt uzunlukları birbirine eşit olan ve yüzleri eş karelerden oluşan özel prizmaya ___ denir.",
+          "cevap": "küp"
+        }
+      ],
+      "fazla": [
+        "çevre",
+        "üçgen"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir dikdörtgenler prizmasının yüzey alanı ile hacmi arasındaki kavramsal farkı günlük yaşamdan bir kutu örneği üzerinden açıklayınız ve ayrıtları 4 cm, 5 cm, 6 cm olan kutunun hem yüzey alanını hem hacmini bulunuz.",
+      "ipuclari": [
+        "Yüzey alanının kutunun dışını kaplayan karton/ambalaj miktarı olması (2 boyutlu).",
+        "Hacmin ise kutunun içini dolduran boşluk/kapasite olması (3 boyutlu).",
+        "Alan = 2·(4·5 + 4·6 + 5·6) cm² ve Hacim = 4·5·6 cm³ hesaplaması."
+      ],
+      "cevap": "Kavramsal olarak bir kutunun 'yüzey alanı', kutuyu üretmek için kullanılan kartonun veya dışını kaplayan hediye paketinin toplam alanıdır (6 yüzün toplamı). Kutunun 'hacmi' ise kutunun iç kısmının alabileceği birim küp miktarı yani boşlukta kapladığı yerdir. Ayrıtları 4 cm, 5 cm ve 6 cm olan kutunun:\n• Yüzey Alanı = 2 · (4·5 + 4·6 + 5·6) = 2 · (20 + 24 + 30) = 2 · 74 = 148 cm²'dir.\n• Hacmi = 4 · 5 · 6 = 120 cm³'tür."
+    }
+  ],
+  "ozet": [
+    "{koyu:Yüzey Açınımı:} Dikdörtgenler prizmasının 6 yüzünün düzlemde açılmasıdır; karşılıklı yüzler ikişer ikişer birbirine eş dikdörtgenlerdir.",
+    "{koyu:Yüzey Alanı Bağıntısı:} Ayrıtları a, b, c olan dikdörtgenler prizmasının yüzey alanı = 2 · (a·b + a·c + b·c); küpün yüzey alanı = 6 · a².",
+    "{koyu:Birim Küplerle Hacim:} Cismin boşlukta kapladığı yere hacim denir; prizmanın içini boşluksuz dolduran toplam birim küp sayısı (1 br³) prizmanın hacmidir.",
+    "{koyu:Hacim Bağıntısı:} Dikdörtgenler prizmasının hacmi V = Taban Alanı × Yükseklik = a · b · c; kare prizmanın hacmi V = a² · c; küpün hacmi V = a³.",
+    "{koyu:Problem İpuçları:} Üstü açık kutularda 5 yüzün alanı toplanır; eksik birim küp sorularında toplam hacimden (a·b·c) mevcut küp sayısı çıkarılır."
+  ]
+}

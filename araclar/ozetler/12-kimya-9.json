@@ -1,0 +1,263 @@
+{
+  "ad": "12-kimya-9",
+  "sinif": 12,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 9,
+  "tarih": "9-13 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "1. ÜNİTE: KİMYA VE ELEKTRİK",
+  "konu": "Elektroliz: Elektrolitik Hücreler, Faraday Elektroliz Kanunları (Q = I·t) ve Elektroliz Hesaplamaları (12.1.5.1)",
+  "ciktilar": [
+    "İstemsiz redoks tepkimelerinin dışarıdan elektrik enerjisi verilerek gerçekleştirildiği elektroliz olayını ve elektrolitik hücre yapısını açıklar.",
+    "Elektrik yükü (Coulomb), akım şiddeti, zaman ve 1 mol elektronun yükü (1 Faraday = 96500 C) arasındaki ilişkiyi kurar.",
+    "Faraday elektroliz kanunlarını ve seri bağlı elektroliz kapları bağıntılarını kullanarak elektrotlarda toplanan madde kütlesini hesaplar."
+  ],
+  "giris": "Galvanik pillerde kendiliğinden gerçekleşen istemli redoks tepkimeleriyle kimyasal enerji elektrik enerjisine dönüştürülürken, doğada kendiliğinden gerçekleşmeyen istemsiz redoks tepkimeleri dışarıdan elektrik enerjisi uygulanarak yürütülür. Elektrik enerjisi yardımıyla bileşiklerin elementlerine ayrıştırılması ve metallerin saflaştırılması veya kaplanması işlemlerinin temelini oluşturan elektroliz, Michael Faraday'ın ortaya koyduğu nicel yasalarla açıklanır.",
+  "bolumler": [
+    {
+      "baslik": "Elektroliz Olayı ve Elektrolitik Hücrelerin Yapısı",
+      "metin": [
+        "Kendiliğinden gerçekleşmeyen ({koyu:istemsiz, ΔG > 0 ve E°_hücre < 0}) redoks tepkimelerinin, dış bir doğru akım güç kaynağı (pil veya üreteç) yardımıyla elektrik enerjisi verilerek gerçekleştirilmesi olayına {koyu:elektroliz}, bu işlemin yapıldığı düzeneğe ise {koyu:elektrolitik hücre (elektroliz kabı)} adı verilir. Elektrolizde elektrik enerjisi kimyasal enerjiye dönüştürülür ve tepkime endotermiktir.",
+        "Hem galvanik hücrelerde hem de elektrolitik hücrelerde kural değişmez: {koyu:Yükseltgenmenin gerçekleştiği elektrot daima ANOT, indirgenmenin gerçekleştiği elektrot ise daima KATOT'tur}. Ancak elektrolitik hücrede dış üretecin pozitif (+) kutbuna bağlı olan elektrot {koyu:anot (+)}, negatif (-) kutbuna bağlı olan elektrot ise {koyu:katot (-)} olur.",
+        "Elektroliz kabında bulunan sıvı veya sulu çözelti içindeki negatif yüklü iyonlar ({koyu:anyonlar}) pozitif yüklü {koyu:anoda} giderek elektron verir ve yükseltgenir; pozitif yüklü iyonlar ({koyu:katyonlar}) ise negatif yüklü {koyu:katoda} giderek elektron alır ve indirgenir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">ELEKTROLİTİK HÜCRE YAPISI VE GALVANİK PİL İLE KARŞILAŞTIRMASI</text>\n  <rect x=\"25\" y=\"45\" width=\"320\" height=\"195\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"185\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\">Elektrolitik Hücrede İyon Göçü</text>\n  <rect x=\"125\" y=\"82\" width=\"120\" height=\"28\" rx=\"5\" fill=\"#1e293b\"/>\n  <text x=\"185\" y=\"100\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">+   Üreteç (DC)   -</text>\n  <!-- Anot ve Katot Cubuklari -->\n  <rect x=\"65\" y=\"125\" width=\"95\" height=\"95\" rx=\"6\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <text x=\"112\" y=\"146\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#991b1b\">ANOT (+)</text>\n  <text x=\"112\" y=\"166\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7f1d1d\">Yükseltgenme</text>\n  <text x=\"112\" y=\"184\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Anyonlar (-)</text>\n  <text x=\"112\" y=\"202\" text-anchor=\"middle\" font-size=\"10\" fill=\"#7f1d1d\">anoda göç eder.</text>\n\n  <rect x=\"210\" y=\"125\" width=\"95\" height=\"95\" rx=\"6\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"257\" y=\"146\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">KATOT (-)</text>\n  <text x=\"257\" y=\"166\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">İndirgenme</text>\n  <text x=\"257\" y=\"184\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">Katyonlar (+)</text>\n  <text x=\"257\" y=\"202\" text-anchor=\"middle\" font-size=\"10\" fill=\"#14532d\">katoda göç eder.</text>\n\n  <rect x=\"365\" y=\"45\" width=\"310\" height=\"195\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#92400e\">Temel Özellikler</text>\n  <text x=\"380\" y=\"95\" font-size=\"12\" fill=\"#78350f\">• <tspan font-weight=\"bold\">Enerji Dönüşümü:</tspan> Elektrik → Kimyasal</text>\n  <text x=\"380\" y=\"120\" font-size=\"12\" fill=\"#78350f\">• <tspan font-weight=\"bold\">İstemlilik:</tspan> İstemsizdir (E°_hücre &lt; 0)</text>\n  <text x=\"380\" y=\"145\" font-size=\"12\" fill=\"#78350f\">• <tspan font-weight=\"bold\">Uygulanan Gerilim:</tspan> Üreteç potansiyeli,</text>\n  <text x=\"390\" y=\"163\" font-size=\"11\" fill=\"#78350f\">|E°_pil| değerinden büyük olmalıdır.</text>\n  <text x=\"380\" y=\"188\" font-size=\"12\" fill=\"#78350f\">• <tspan font-weight=\"bold\">Kutup İşaretleri:</tspan> Anot (+), Katot (-)</text>\n  <text x=\"380\" y=\"213\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">(Galvanik pilde ise Anot (-), Katot (+) idi.)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Galvanik pil ile elektrolitik hücrede anot ve katodun elektrik yük işaretleri zıttır; ancak her ikisinde de 'Anotta yükseltgenme, Katotta indirgenme' ve 'Anyonlar anoda, Katyonlar katoda gider' kuralı ortaktır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Standart potansiyeli E° = +1,10 V olan bir galvanik pil tepkimesini tersine çevirerek elektroliz etmek için dış üreteçten 1,10 V'tan daha büyük bir gerilim uygulanması gerekir."
+        }
+      ]
+    },
+    {
+      "baslik": "Faraday Elektroliz Kanunları ve Yük-Kütle İlişkisi",
+      "metin": [
+        "İngiliz bilim insanı {koyu:Michael Faraday}, elektroliz devrelerinden geçen elektrik yükü miktarı ile elektrotlarda ayrışan veya toplanan madde kütlesi arasındaki nicel ilişkiyi ortaya koymuştur. Elektrik yükü birimi {koyu:Coulomb (C)} olup devreden {koyu:I} (Amper) şiddetinde akımın {koyu:t} (saniye) süreyle geçmesi durumunda toplam yük {koyu:Q = I · t} bağıntısıyla hesaplanır.",
+        "Avogadro sayısı kadar ({koyu:1 mol}) elektronun sahip olduğu toplam elektrik yüküne {koyu:1 Faraday (1 F)} denir ve hesaplamalarda yaklaşık {koyu:1 F = 1 mol e⁻ = 96500 Coulomb (C)} olarak alınır. Devreden geçen elektronun mol sayısı {koyu:n_e = {kesir:Q|96500} = {kesir:I · t|96500}} formülüyle bulunur.",
+        "Faraday'ın Birinci Kanunu'na göre elektrotlarda açığa çıkan madde kütlesi ({koyu:m}), devreden geçen elektrik yükü ({koyu:Q}) ile doğru orantılıdır. İkinci Kanunu'na göre ise katotta {koyu:Xⁿ⁺ + n e⁻ → X(k)} tepkimesiyle toplanan maddenin kütlesi {koyu:m = {kesir:I · t · M_A|96500 · z}} (burada M_A mol kütlesi, z veya n ise alınan/verilen elektron sayısı yani tesir değerliğidir) bağıntısıyla hesaplanır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">FARADAY ELEKTROLİZ BAĞINTILARI VE NİCEL HESAPLAMALAR</text>\n  <rect x=\"25\" y=\"48\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#e0e7ff\" stroke=\"#4f46e5\" stroke-width=\"2\"/>\n  <text x=\"127\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#3730a3\">1. Elektrik Yükü (Q)</text>\n  <rect x=\"42\" y=\"88\" width=\"170\" height=\"40\" rx=\"6\" fill=\"#ffffff\" stroke=\"#818cf8\" stroke-width=\"1.5\"/>\n  <text x=\"127\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#312e81\">Q = I · t</text>\n  <text x=\"38\" y=\"150\" font-size=\"11\" fill=\"#312e81\">• <tspan font-weight=\"bold\">Q:</tspan> Elektrik yükü (Coulomb, C)</text>\n  <text x=\"38\" y=\"172\" font-size=\"11\" fill=\"#312e81\">• <tspan font-weight=\"bold\">I:</tspan> Akım şiddeti (Amper, A)</text>\n  <text x=\"38\" y=\"194\" font-size=\"11\" fill=\"#312e81\">• <tspan font-weight=\"bold\">t:</tspan> Zaman (<tspan font-weight=\"bold\">saniye, s</tspan>)</text>\n  <text x=\"38\" y=\"216\" font-size=\"10\" fill=\"#4f46e5\">Not: Dakika verilirse 60 ile çarpılır!</text>\n\n  <rect x=\"247\" y=\"48\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"349\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">2. Faraday Sabiti (1 F)</text>\n  <rect x=\"262\" y=\"88\" width=\"175\" height=\"40\" rx=\"6\" fill=\"#ffffff\" stroke=\"#4ade80\" stroke-width=\"1.5\"/>\n  <text x=\"349\" y=\"113\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#14532d\">1 F = 1 mol e⁻ = 96500 C</text>\n  <text x=\"260\" y=\"150\" font-size=\"11\" fill=\"#14532d\">• Devreden geçen e⁻ molü:</text>\n  <text x=\"268\" y=\"170\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">n(e⁻) = (I · t) / 96500</text>\n  <text x=\"260\" y=\"196\" font-size=\"11\" fill=\"#14532d\">• 1 F yük geçtiğinde 1 eşdeğer</text>\n  <text x=\"268\" y=\"214\" font-size=\"11\" fill=\"#14532d\">gram (M_A / z) madde toplanır.</text>\n\n  <rect x=\"470\" y=\"48\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#fae8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"572\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">3. Kütle Formülü (m)</text>\n  <rect x=\"485\" y=\"88\" width=\"175\" height=\"40\" rx=\"6\" fill=\"#ffffff\" stroke=\"#c084fc\" stroke-width=\"1.5\"/>\n  <text x=\"572\" y=\"113\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#581c87\">m = (I · t · M_A) / (96500 · z)</text>\n  <text x=\"483\" y=\"150\" font-size=\"11\" fill=\"#581c87\">• <tspan font-weight=\"bold\">m:</tspan> Toplanan kütle (gram)</text>\n  <text x=\"483\" y=\"172\" font-size=\"11\" fill=\"#581c87\">• <tspan font-weight=\"bold\">M_A:</tspan> Atom/mol kütlesi (g/mol)</text>\n  <text x=\"483\" y=\"194\" font-size=\"11\" fill=\"#581c87\">• <tspan font-weight=\"bold\">z:</tspan> İyon yükü / alınan-verilen</text>\n  <text x=\"491\" y=\"212\" font-size=\"11\" fill=\"#581c87\">elektron sayısı (tesir değerliği)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Q = I · t bağıntısında süre (t) daima 'saniye' cinsinden yazılmalıdır; sorularda dakika veya saat verildiğinde saniyeye çevrilmesi unutulmamalıdır (örneğin 965 saniye veya 100 dakika = 6000 saniye)."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Yarı tepkime denklemini yazarak işlem yapmak en güvenli yoldur: Например Al³⁺ + 3e⁻ → Al(k) tepkimesinde 3 mol e⁻ (3 F) geçtiğinde 1 mol (27 g) Al katısı toplanır."
+        }
+      ]
+    },
+    {
+      "baslik": "Seri Bağlı Elektroliz Kapları ve Metal Kaplamacılık",
+      "metin": [
+        "Birden fazla elektroliz kabının art arda bağlanmasıyla oluşturulan {koyu:seri bağlı elektroliz devrelerinde}, kapların tamamından aynı sürede {koyu:eşit miktarda elektrik yükü (Q_1 = Q_2) ve eşit mol sayısında elektron (n_e1 = n_e2)} geçer.",
+        "Seri bağlı kaplarda farklı metal katyonları indirgenirken katotlarda toplanan metallerin mol sayıları ile iyon yüklerinin (tesir değerliklerinin) çarpımı birbirine eşittir: {koyu:n_1 · z_1 = n_2 · z_2 = n_e}. Örneğin seri bağlı iki kaptan birinde {koyu:Ag⁺} (z=1), diğerinde {koyu:Cu²⁺} (z=2) iyonları varsa ve devreden 2 mol elektron geçerse; 1. kapta 2 mol Ag, 2. kapta ise 1 mol Cu metali toplanır.",
+        "Elektrolizin sanayideki en önemli uygulamalarından biri {koyu:elektrolitik metal kaplamacılıktır (galvanoplasti)}. Korozyondan korumak veya estetik görünüm kazandırmak amacıyla kaplanacak olan metal eşya (örneğin demir çatal) {koyu:katoda (-)} bağlanır; kaplamada kullanılacak saf metal (örneğin gümüş çubuk) {koyu:anoda (+)} bağlanır ve elektrolit olarak kaplama metalinin tuz çözeltisi (AgNO_3) kullanılır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">SERİ BAĞLI ELEKTROLİZ KAPLARI VE ELEKTROLİTİK KAPLAMA</text>\n  <rect x=\"25\" y=\"45\" width=\"320\" height=\"195\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"185\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\">Seri Bağlı Elektroliz Kapları</text>\n  <text x=\"40\" y=\"95\" font-size=\"12\" fill=\"#1e3a8a\">• Tüm kaplardan geçen <tspan font-weight=\"bold\">Q ve n(e⁻) eşittir.</tspan></text>\n  <rect x=\"45\" y=\"110\" width=\"280\" height=\"45\" rx=\"6\" fill=\"#ffffff\" stroke=\"#60a5fa\" stroke-width=\"1.5\"/>\n  <text x=\"185\" y=\"137\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">n₁ · z₁ = n₂ · z₂ = n(e⁻)</text>\n  <text x=\"40\" y=\"178\" font-size=\"11\" fill=\"#1e3a8a\">• İyon yükü (z) küçük olan metalin katotta</text>\n  <text x=\"50\" y=\"196\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\">toplanan mol sayısı daha büyüktür.</text>\n  <text x=\"40\" y=\"218\" font-size=\"11\" fill=\"#1e3a8a\">• Örnek: 1 mol e⁻ → 1 mol Na⁺, 1/2 mol Mg²⁺, 1/3 mol Al³⁺</text>\n\n  <rect x=\"365\" y=\"45\" width=\"310\" height=\"195\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#166534\">Metal Kaplama (Örn: Gümüş Kaplama)</text>\n  <text x=\"380\" y=\"95\" font-size=\"12\" fill=\"#14532d\">• <tspan font-weight=\"bold\">ANOT (+):</tspan> Kaplayacak saf metal (Ag çubuk)</text>\n  <text x=\"390\" y=\"113\" font-size=\"11\" fill=\"#15803d\">Ag(k) → Ag⁺(suda) + e⁻ (Anot aşınır)</text>\n  <text x=\"380\" y=\"140\" font-size=\"12\" fill=\"#14532d\">• <tspan font-weight=\"bold\">KATOT (-):</tspan> Kaplanacak eşya (Demir kaşık)</text>\n  <text x=\"390\" y=\"158\" font-size=\"11\" fill=\"#15803d\">Ag⁺(suda) + e⁻ → Ag(k) (Kaşık kaplanır)</text>\n  <text x=\"380\" y=\"185\" font-size=\"12\" fill=\"#14532d\">• <tspan font-weight=\"bold\">Çözelti:</tspan> Ag⁺ iyonu içeren elektrolit (AgNO₃)</text>\n  <text x=\"380\" y=\"212\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">Çözeltideki Ag⁺ derişimi işlem boyunca sabit kalır.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Metal kaplamacılıkta kaplanacak olan nesne (kaşık, yüzük, tampon) daima KATOT (-) kutbuna bağlanır; çünkü metal katyonlarının nesnenin yüzeyinde indirgenerek birikmesi gerekir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Seri bağlı kaplarda metallerin mol oranları yalnızca iyon yüklerine (z₁ ve z₂) bağlıdır; kaplardaki çözelti hacimlerine veya derişimlerine bağlı değildir."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Erimiş CaCl_2 tuzu 19,3 Amperlik sabit akımla 1000 saniye süreyle elektroliz edildiğinde katotta kaç gram Ca metali toplanır? (Ca = 40 g/mol, 1 F = 96500 C)",
+      "cevap": "Önce devreden geçen yük bulunur: Q = I · t = 19,3 · 1000 = 19300 C. Geçen elektronun mol sayısı: n_e = 19300 / 96500 = 0,2 mol e⁻. Katot tepkimesi Ca²⁺ + 2e⁻ → Ca(k) olduğundan 2 mol e⁻ geçtiğinde 1 mol Ca toplanır; 0,2 mol e⁻ geçtiğinde ise 0,1 mol Ca toplanır. Kütle: m = 0,1 · 40 = 4 gram Ca bulunur."
+    },
+    {
+      "soru": "Seri bağlı iki elektroliz kabından birincisinde erimiş AlCl_3, ikincisinde ise erimiş MgCl_2 tuzu bulunmaktadır. Birinci kabın katodunda 5,4 gram Al metali toplandığında ikinci kabın katodunda kaç gram Mg metali toplanır? (Al = 27 g/mol, Mg = 24 g/mol)",
+      "cevap": "Birinci kapta toplanan Al'nin mol sayısı: n_Al = 5,4 / 27 = 0,2 mol. Al³⁺ iyonunun yükü z_1 = 3, Mg²⁺ iyonunun yükü z_2 = 2'dir. Seri bağlı kaplarda n_1 · z_1 = n_2 · z_2 bağıntısından: 0,2 · 3 = n_Mg · 2 → n_Mg = 0,3 mol bulunur. Toplanan Mg kütlesi: m_Mg = 0,3 · 24 = 7,2 gramdır."
+    },
+    {
+      "soru": "Demir bir yüzüğü elektroliz yöntemiyle altın (Au) ile kaplamak isteyen bir kuyumcu, anot ve katoda hangi maddeleri bağlamalı ve elektrolit olarak ne kullanmalıdır?",
+      "cevap": "Kaplanacak olan demir yüzük indirgenmenin gerçekleşeceği KATOT (-) kutbuna bağlanmalıdır. Kaplama maddesi olan saf altın (Au) metali ANOT (+) kutbuna bağlanmalı, elektrolit olarak ise içerisinde Au³⁺ iyonları bulunduran bir altın tuzu çözeltisi kullanılmalıdır."
+    },
+    {
+      "soru": "Erimiş NaCl tuzunun elektrolizinde anot ve katotta gerçekleşen yarı tepkimeleri yazarak devreden 0,4 Faradaylık yük geçtiğinde normal koşullarda (NŞA) anotta kaç litre Cl_2 gazı açığa çıkacağını bulunuz.",
+      "cevap": "Katotta indirgenme: Na⁺ + e⁻ → Na(s); Anotta yükseltgenme: 2Cl⁻ → Cl_2(g) + 2e⁻. Anot denklemine göre 2 mol e⁻ (2 F) yük geçtiğinde 1 mol Cl_2 gazı açığa çıkar. Devreden 0,4 F (0,4 mol e⁻) geçtiğinde 0,4 / 2 = 0,2 mol Cl_2 gazı oluşur. NŞA'da hacmi: V = 0,2 · 22,4 = 4,48 litredir."
+    },
+    {
+      "soru": "Galvanik hücre (pil) ile elektrolitik hücre (elektroliz kabı) arasındaki üç temel farkı belirtiniz.",
+      "cevap": "1. Galvanik pilde istemli redoks tepkimesiyle kimyasal enerji elektrik enerjisine dönüşürken, elektrolitik hücrede elektrik enerjisiyle istemsiz redoks tepkimesi gerçekleştirilir. 2. Galvanik pilde E°_hücre > 0 iken elektrolitik hücrede E°_hücre < 0'dır. 3. Galvanik pilde anot (-), katot (+) kutup iken; elektrolitik hücrede anot (+), katot (-) kutuptur."
+    },
+    {
+      "soru": "CuSO_4 sulu çözeltisi 9,65 Amperlik akımla 200 saniye elektroliz edildiğinde devreden kaç Coulomb elektrik yükü ve kaç mol elektron geçer? (1 F = 96500 C)",
+      "cevap": "Elektrik yükü Q = I · t = 9,65 A · 200 s = 1930 Coulomb (C) olarak bulunur. Elektron mol sayısı ise n_e = Q / 96500 = 1930 / 96500 = 0,02 mol elektron (0,02 Faraday) olarak hesaplanır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "soru": "Elektrolitik hücreler ve elektroliz olayı ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+      "secenekler": [
+        "İstemsiz bir redoks tepkimesi dışarıdan elektrik enerjisi verilerek gerçekleştirilir.",
+        "Üretecin pozitif (+) kutbuna bağlı olan anot elektrodorunda yükseltgenme olayı gerçekleşir.",
+        "Elektrolit içerisindeki pozitif yüklü katyonlar katot (-) elektroduna doğru göç eder.",
+        "Elektroliz süresince kimyasal enerji kendiliğinden elektrik enerjisine dönüştürülür.",
+        "1 mol elektronun taşıdığı elektrik yükü 1 Faraday (yaklaşık 96500 Coulomb) olarak tanımlanır."
+      ],
+      "dogru": 3,
+      "aciklama": "Kimyasal enerjinin kendiliğinden elektrik enerjisine dönüşmesi galvanik pillerde gerçekleşir; elektrolizde ise elektrik enerjisi kimyasal enerjiye dönüşür.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Erimiş MgCl_2 tuzu 9,65 Amperlik sabit akımla 1000 saniye süreyle elektroliz edilmektedir. Buna göre katotta kaç gram Mg katısı toplanır? (Mg = 24 g/mol, 1 mol e⁻ = 96500 C)",
+      "secenekler": [
+        "1,2",
+        "2,4",
+        "3,6",
+        "4,8",
+        "6,0"
+      ],
+      "dogru": 0,
+      "aciklama": "Q = I · t = 9,65 · 1000 = 9650 C → n(e⁻) = 9650 / 96500 = 0,1 mol e⁻. Katot tepkimesi Mg²⁺ + 2e⁻ → Mg(k) olduğundan 0,1 mol e⁻ ile 0,05 mol Mg toplanır: m = 0,05 · 24 = 1,2 gram.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Seri bağlı iki elektroliz kabından birincisinde erimiş AgCl, ikincisinde ise erimiş XCl_n tuzu bulunmaktadır. Devreden bir süre elektrik akımı geçirildiğinde 1. kabın katodunda 0,6 mol Ag metali, 2. kabın katodunda ise 0,2 mol X metali toplandığına göre X iyonunun yükü (n) kaçtır?",
+      "secenekler": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "dogru": 2,
+      "aciklama": "AgCl'de Ag⁺ iyonunun yükü z₁ = 1'dir. Seri bağlı kaplarda n₁ · z₁ = n₂ · z₂ bağıntısından: 0,6 · 1 = 0,2 · n → n = 3 olarak bulunur.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Bakır (Cu) bir madalyonu elektroliz yöntemiyle gümüş (Ag) metaliyle kaplamak isteyen bir öğrencinin kurduğu düzenekle ilgili aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Bakır madalyon üretecin pozitif kutbuna (anoda) bağlanmalıdır.",
+        "Saf gümüş elektrot katoda bağlanarak zamanla kütlesinin artması sağlanmalıdır.",
+        "Anotta Ag⁺ iyonları elektron alarak gümüş metaline indirgenir.",
+        "Bakır madalyon katoda bağlanmalı ve Ag⁺ iyonları madalyon üzerinde indirgenmelidir.",
+        "İşlem süresince çözeltideki Ag⁺ iyonu derişimi hızla sıfıra düşer."
+      ],
+      "dogru": 3,
+      "aciklama": "Elektrolitik kaplamada kaplanacak eşya (bakır madalyon) katoda (-) bağlanır ve çözeltideki Ag⁺ iyonları katotta indirgenerek madalyonun yüzeyini kaplar.",
+      "tur": "coktan"
+    },
+    {
+      "ifadeler": [
+        {
+          "metin": "Elektrolitik hücrelerde üretecin pozitif (+) kutbuna bağlı elektrot anot, negatif (-) kutbuna bağlı elektrot ise katottur.",
+          "dogru": true,
+          "aciklama": "Elektrolizde anot (+) yüklü, katot ise (-) yüklü kutuptur."
+        },
+        {
+          "metin": "Bir Faradaylık elektrik yükü, Avogadro sayısı kadar (1 mol) elektronun yüküne eşit olup yaklaşık 96500 Coulomb'dur.",
+          "dogru": true,
+          "aciklama": "1 F = 1 mol e⁻ = 96500 C sabit değerdir."
+        },
+        {
+          "metin": "Seri bağlı elektroliz kaplarında iyon yükü büyük olan metalin katotta toplanan mol sayısı daha fazladır.",
+          "dogru": false,
+          "aciklama": "n₁·z₁ = n₂·z₂ olduğundan iyon yükü (z) büyük olan metalin toplanan mol sayısı (n) daha azdır."
+        },
+        {
+          "metin": "Elektroliz sırasında çözeltideki negatif yüklü anyonlar katoda giderek yükseltgenir.",
+          "dogru": false,
+          "aciklama": "Anyonlar (-) yüklü oldukları için (+) yüklü anoda gider ve anotta yükseltgenir."
+        },
+        {
+          "metin": "Metal kaplamacılıkta (galvanoplasti) kaplanacak olan metal eşya elektroliz devresinin katoduna bağlanır.",
+          "dogru": true,
+          "aciklama": "Kaplama metalinin eşya üzerinde indirgenerek birikmesi için eşya katoda bağlanır."
+        }
+      ],
+      "tur": "dy"
+    },
+    {
+      "ciftler": [
+        [
+          "Elektroliz",
+          "İstemsiz redoks tepkimelerinin dışarıdan elektrik enerjisi verilerek gerçekleştirilmesi"
+        ],
+        [
+          "Coulomb (C)",
+          "İletkenden 1 Amperlik akımın 1 saniye sürede geçmesiyle taşınan elektrik yükü birimi"
+        ],
+        [
+          "Faraday Sabiti (1 F)",
+          "1 mol elektronun sahip olduğu 96500 Coulomb'luk toplam elektrik yükü"
+        ],
+        [
+          "Anot (+)",
+          "Elektroliz kabında anyonların göç ettiği ve yükseltgenmenin gerçekleştiği elektrot"
+        ],
+        [
+          "Katot (-)",
+          "Elektroliz kabında katyonların göç ettiği ve indirgenmenin gerçekleştiği elektrot"
+        ]
+      ],
+      "tur": "eslestir"
+    },
+    {
+      "cumleler": [
+        {
+          "metin": "Elektroliz devresinden geçen elektrik yükü miktarı Q = ___ bağıntısıyla hesaplanır.",
+          "cevap": "I · t"
+        },
+        {
+          "metin": "Seri bağlı elektroliz kaplarının tamamından eşit sürede eşit mol sayısında ___ geçer.",
+          "cevap": "elektron"
+        },
+        {
+          "metin": "Erimiş AlCl_3 tuzunun elektrolizinde devreden 3 Faraday yük geçtiğinde katotta ___ mol Al metali toplanır.",
+          "cevap": "bir"
+        },
+        {
+          "metin": "Elektrolitik hücrede elektrik enerjisi ___ enerjiye dönüştürülür.",
+          "cevap": "kimyasal"
+        },
+        {
+          "metin": "Demir bir çatalı gümüşle kaplamak için saf gümüş metali elektroliz kabının ___ kutbuna bağlanmalıdır.",
+          "cevap": "anot"
+        }
+      ],
+      "fazla": [
+        "katot",
+        "üç"
+      ],
+      "tur": "bosluk"
+    },
+    {
+      "soru": "Erimiş FeCl_3 tuzunun 9,65 Amperlik sabit akımla 50 dakika süreyle elektroliz edilmesi sonucunda katotta kaç gram Fe metalinin toplanacağını adım adım hesaplayınız. (Fe = 56 g/mol, 1 F = 96500 C)",
+      "ipuclari": [
+        "Süreyi saniyeye çevirerek Q = I · t formülüyle toplam elektrik yükünü (Coulomb) bulunuz.",
+        "Bulduğunuz yükü 96500'e bölerek devreden geçen elektronun mol sayısını belirleyiniz.",
+        "Fe³⁺ + 3e⁻ → Fe(k) yarı tepkimesine göre toplanan Fe'nin molünü ve kütlesini hesaplayınız."
+      ],
+      "cevap": "Birinci adımda süre saniyeye çevrilir: t = 50 · 60 = 3000 s; toplam yük Q = I · t = 9,65 · 3000 = 28950 C bulunur. İkinci adımda geçen elektron molü: n_e = 28950 / 96500 = 0,3 mol e⁻ (0,3 F) olarak hesaplanır. Üçüncü adımda katot tepkimesi Fe³⁺ + 3e⁻ → Fe(k) olduğundan 3 mol e⁻ ile 1 mol Fe toplanırsa, 0,3 mol e⁻ ile 0,1 mol Fe toplanır; kütlesi m = 0,1 · 56 = 5,6 gram Fe olur.",
+      "tur": "ogretici"
+    }
+  ],
+  "ozet": [
+    "Elektroliz, istemsiz redoks tepkimelerinin dışarıdan doğru akım elektrik enerjisi verilerek gerçekleştirilmesi olayıdır; anot (+), katot (-) kutuptur.",
+    "Elektroliz kabında anyonlar anoda (+) giderek yükseltgenir, katyonlar ise katoda (-) giderek indirgenir.",
+    "Devreden geçen elektrik yükü Q = I · t (Coulomb) bağıntısıyla bulunur; 1 mol elektronun yükü 1 Faraday (96500 C) değerine eşittir.",
+    "Katotta toplanan madde kütlesi m = (I · t · M_A) / (96500 · z) formülüyle hesaplanır; seri bağlı kaplarda n_1 · z_1 = n_2 · z_2 eşitliği geçerlidir.",
+    "Metal kaplamacılıkta kaplanacak eşya katoda (-), kaplama metali ise anoda (+) bağlanır."
+  ]
+}

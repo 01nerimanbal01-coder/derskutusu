@@ -1,0 +1,248 @@
+{
+  "ad": "10-kimya-9",
+  "sinif": 10,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 9,
+  "tarih": "9-13 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "1. TEMA: ETKİLEŞİM",
+  "konu": "Kimyasal (Stokiyometrik) Hesaplamalar: Tepkime Katsayıları, Mol-Kütle-Hacim İlişkileri ve Sınırlayıcı Bileşen (10.1.7)",
+  "ciktilar": [
+    "Denkleştirilmiş kimyasal tepkime denklemlerinde tepken ve ürünlerin stokiyometrik katsayıları ile mol, tanecik sayısı, kütle ve gaz hacmi arasındaki ilişkileri belirler.",
+    "Tepkime denklemleri üzerinden mol-mol, mol-kütle, kütle-kütle ve mol-gaz hacmi (NŞA) hesaplamalarını tümdengelimsel akıl yürütmeyle gerçekleştirir.",
+    "Başlangıç miktarları verilen tepkimelerde sınırlayıcı bileşeni (biten maddeyi), artan madde miktarını ve oluşan ürün miktarını Başlangıç-Değişim-Sonuç (BDS) tablosuyla çözümler."
+  ],
+  "giris": "Kimyasal bir tepkimede giren maddelerin (tepkenlerin) ve oluşan ürünlerin miktarları arasındaki sayısal ilişkilere {koyu:stokiyometri (kimyasal hesaplamalar)} adı verilir. Kütlenin korunumu kanunu ve mol kavramına dayanan stokiyometrik hesaplamalar, endüstriyel üretimden ilaç sentezine kadar her alanda ne kadar hammadde harcanacağını ve ne kadar ürün elde edileceğini önceden hesaplamamızı sağlar.",
+  "bolumler": [
+    {
+      "baslik": "Denkleştirilmiş Tepkimelerde Katsayı-Mol-Kütle-Hacim İlişkisi",
+      "metin": [
+        "Stokiyometrik bir hesaplama yapabilmek için ilk şart, kimyasal tepkime denkleminin {koyu:denkleştirilmiş} olmasıdır. Denkleştirilmiş bir tepkimede formüllerin önünde yer alan {koyu:stokiyometrik katsayılar}; tepkimeye giren ve tepkimeden çıkan maddelerin {koyu:mol sayıları} ile {koyu:tanecik (molekül/formül birimi) sayıları} arasındaki sabit değişim oranını doğrudan gösterir.",
+        "Örneğin amonyak sentezini gösteren {koyu:N₂(g) + 3H₂(g) ⟶ 2NH₃(g)} tepkimesindeki {koyu:1 : 3 : 2} katsayı oranı şu anlamlara gelir: Her {koyu:1 mol N₂} gazı, {koyu:3 mol H₂} gazıyla tepkimeye girerek {koyu:2 mol NH₃} gazı oluşturur. Tanecik bazında {koyu:1·N_A tane N₂} molekülü ile {koyu:3·N_A tane H₂} molekülü harcanırken {koyu:2·N_A tane NH₃} molekülü oluşur. Kütle bazında ise (H = 1, N = 14 g/mol) {koyu:28 gram N₂} ile {koyu:3 × 2 = 6 gram H₂} birleşerek {koyu:2 × 17 = 34 gram NH₃} meydana getirir ({koyu:28 g + 6 g = 34 g} olup toplam kütle korunur).",
+        "Aynı sıcaklık ve basınç koşullarında gazların hacimleri mol sayılarıyla doğru orantılı olduğundan ({koyu:Avogadro Yasası}), tepkimedeki {koyu:gaz fazındaki} maddelerin katsayıları aynı zamanda {koyu:hacim oranlarını} da verir. Normal koşullarda ({koyu:NŞA: 0 °C ve 1 atm}) 1 mol ideal gaz {koyu:22,4 litre} hacim kapladığından, NŞA'da {koyu:22,4 L N₂(g)} ile {koyu:3 × 22,4 = 67,2 L H₂(g)} tepkimeye girerek {koyu:2 × 22,4 = 44,8 L NH₃(g)} oluşturur. Dikkat edilirse toplam kütle ve atom sayısı korunduğu hâlde toplam mol sayısı (4 mol ⟶ 2 mol) ve gaz hacmi korunmayabilir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">DENKLEŞTİRİLMİŞ TEPKİMEDE STOKİYOMETRİK KATSAYI YORUMU</text>\n  <rect x=\"22\" y=\"40\" width=\"656\" height=\"38\" rx=\"8\" fill=\"#1e293b\"/>\n  <text x=\"350\" y=\"64\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#f8fafc\">N₂(g)   +   3H₂(g)   ⟶   2NH₃(g)    (H = 1 g/mol, N = 14 g/mol)</text>\n  <rect x=\"22\" y=\"86\" width=\"155\" height=\"132\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.8\"/>\n  <text x=\"100\" y=\"106\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e40af\">1. MOL SAYISI ORANI</text>\n  <text x=\"100\" y=\"130\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">1 mol N₂ gazı</text>\n  <text x=\"100\" y=\"150\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">+ 3 mol H₂ gazı</text>\n  <text x=\"100\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">⟶ 2 mol NH₃ gazı</text>\n  <text x=\"100\" y=\"198\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">(Mol korunmak zorunda değildir)</text>\n  <rect x=\"189\" y=\"86\" width=\"155\" height=\"132\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.8\"/>\n  <text x=\"266\" y=\"106\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">2. TANECİK SAYISI</text>\n  <text x=\"266\" y=\"130\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">1·N_A tane N₂ molekülü</text>\n  <text x=\"266\" y=\"150\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">+ 3·N_A tane H₂ molekülü</text>\n  <text x=\"266\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">⟶ 2·N_A tane NH₃</text>\n  <text x=\"266\" y=\"198\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">(Atom sayısı daima korunur!)</text>\n  <rect x=\"356\" y=\"86\" width=\"155\" height=\"132\" rx=\"8\" fill=\"#fff7ed\" stroke=\"#ea580c\" stroke-width=\"1.8\"/>\n  <text x=\"433\" y=\"106\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#9a3412\">3. KÜTLE İLİŞKİSİ</text>\n  <text x=\"433\" y=\"130\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7c2d12\">28 g N₂ gazı</text>\n  <text x=\"433\" y=\"150\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7c2d12\">+ 3×2 = 6 g H₂ gazı</text>\n  <text x=\"433\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#c2410c\">⟶ 2×17 = 34 g NH₃</text>\n  <text x=\"433\" y=\"198\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">(28 + 6 = 34 g Kütle korunur!)</text>\n  <rect x=\"523\" y=\"86\" width=\"155\" height=\"132\" rx=\"8\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"1.8\"/>\n  <text x=\"600\" y=\"106\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#6b21a8\">4. GAZ HACMİ (NŞA)</text>\n  <text x=\"600\" y=\"130\" text-anchor=\"middle\" font-size=\"11\" fill=\"#581c87\">22,4 L N₂(g) (1 hacim)</text>\n  <text x=\"600\" y=\"150\" text-anchor=\"middle\" font-size=\"11\" fill=\"#581c87\">+ 67,2 L H₂(g) (3 hacim)</text>\n  <text x=\"600\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#7e22ce\">⟶ 44,8 L NH₃(g) (2 hacim)</text>\n  <text x=\"600\" y=\"198\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">(Gaz katsayısı = Hacim oranı)</text>\n  <rect x=\"22\" y=\"226\" width=\"656\" height=\"24\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"242\" text-anchor=\"middle\" font-size=\"11.2\" font-weight=\"bold\" fill=\"#1e293b\">Stokiyometrik katsayılar (1 : 3 : 2) doğrudan MOL, MOLEKÜL ve (gazlar için) HACİM oranını verir.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Katsayılar Doğrudan Kütle Oranı Değildir!",
+          "metin": "Denklemdeki 1 : 3 : 2 katsayıları maddelerin mol ve molekül oranıdır; kütle oranı değildir! Kütle oranını bulmak için her maddenin mol sayısı kendi mol kütlesiyle (m = n · M_A) çarpılır."
+        }
+      ]
+    },
+    {
+      "baslik": "Stokiyometrik Hesaplama Adımları (Mol Köprüsü)",
+      "metin": [
+        "Denkleştirilmiş bir kimyasal tepkimede herhangi bir maddenin miktarı verildiğinde diğer maddelerin harcanan veya oluşan miktarlarını bulmak için {koyu:dört adımlı stokiyometrik hesaplama yöntemi} uygulanır. Birinci adımda tepkime denklemi yazılıp atom sayılarına göre denkleştirilir. İkinci adımda soruda miktarı verilen maddenin kütlesi ({koyu:n = {kesir:m|M_A}}), tanecik sayısı ({koyu:n = {kesir:N|N_A}}) veya NŞA'daki gaz hacmi ({koyu:n = {kesir:V|22,4}}) kullanılarak {koyu:mol sayısına} geçilir.",
+        "Üçüncü adımda tepkime denklemindeki stokiyometrik katsayı oranları ({koyu:{kesir:n_A|a} = {kesir:n_B|b}}) kullanılarak miktarı sorulan maddenin mol sayısı hesaplanır. Dördüncü ve son adımda ise bulunan bu mol sayısı, soruda istenen birime (gram cinsinden kütleye {koyu:m = n · M_A}, NŞA hacmine {koyu:V = n · 22,4} veya tanecik sayısına {koyu:N = n · N_A}) dönüştürülür.",
+        "Örneğin {koyu:Fe₂O₃(k) + 3CO(g) ⟶ 2Fe(k) + 3CO₂(g)} tepkimesinde (Fe = 56, O = 16, C = 12 g/mol; Fe₂O₃ = 160 g/mol) {koyu:32 gram Fe₂O₃} katısının yeterince CO gazıyla tepkimesini inceleyelim: Önce {koyu:n(Fe₂O₃) = {kesir:32|160} = 0,2 mol} bulunur. Denklemdeki {koyu:1 : 3 : 2 : 3} katsayı oranına göre 0,2 mol Fe₂O₃ harcandığında {koyu:3 × 0,2 = 0,6 mol CO} gazı harcanır, {koyu:2 × 0,2 = 0,4 mol Fe} katısı ({koyu:0,4 × 56 = 22,4 gram demir}) ve {koyu:3 × 0,2 = 0,6 mol CO₂} gazı (NŞA'da {koyu:0,6 × 22,4 = 13,44 litre CO₂}) elde edilir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">STOKİYOMETRİK HESAPLAMA KÖPRÜSÜ (4 ADIMLI YÖNTEM)</text>\n  <rect x=\"22\" y=\"48\" width=\"148\" height=\"125\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"96\" y=\"72\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e40af\">1. ADIM: DENKLEM</text>\n  <text x=\"96\" y=\"96\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#1e3a8a\">Tepkime denklemini</text>\n  <text x=\"96\" y=\"114\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#1e3a8a\">yaz ve en küçük tam</text>\n  <text x=\"96\" y=\"132\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#1e3a8a\">sayılarla denkleştir.</text>\n  <text x=\"96\" y=\"156\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1d4ed8\">aA + bB ⟶ cC</text>\n  <line x1=\"170\" y1=\"110\" x2=\"192\" y2=\"110\" stroke=\"#1e293b\" stroke-width=\"2.5\"/>\n  <rect x=\"192\" y=\"48\" width=\"148\" height=\"125\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"266\" y=\"72\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">2. ADIM: MOLE ÇEVİR</text>\n  <text x=\"266\" y=\"96\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#14532d\">Verilen niceliği</text>\n  <text x=\"266\" y=\"114\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#14532d\">mol sayısına dönüştür:</text>\n  <text x=\"266\" y=\"134\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">n = m / M_A</text>\n  <text x=\"266\" y=\"150\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">n = N / N_A</text>\n  <text x=\"266\" y=\"166\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">n = V / 22,4 (NŞA)</text>\n  <line x1=\"340\" y1=\"110\" x2=\"362\" y2=\"110\" stroke=\"#1e293b\" stroke-width=\"2.5\"/>\n  <rect x=\"362\" y=\"48\" width=\"148\" height=\"125\" rx=\"10\" fill=\"#ffedd5\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n  <text x=\"436\" y=\"72\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#9a3412\">3. ADIM: KATSAYI GEÇİŞİ</text>\n  <text x=\"436\" y=\"96\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#7c2d12\">Denklem katsayılarını</text>\n  <text x=\"436\" y=\"114\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#7c2d12\">kullanarak istenen</text>\n  <text x=\"436\" y=\"132\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#7c2d12\">maddenin molünü bul:</text>\n  <text x=\"436\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#c2410c\">n_A / a = n_C / c</text>\n  <line x1=\"510\" y1=\"110\" x2=\"532\" y2=\"110\" stroke=\"#1e293b\" stroke-width=\"2.5\"/>\n  <rect x=\"532\" y=\"48\" width=\"146\" height=\"125\" rx=\"10\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"605\" y=\"72\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#6b21a8\">4. ADIM: İSTENEN BİRİM</text>\n  <text x=\"605\" y=\"96\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#581c87\">Bulunan mol sayısını</text>\n  <text x=\"605\" y=\"114\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#581c87\">soruda istenen birime</text>\n  <text x=\"605\" y=\"132\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#581c87\">dönüştür:</text>\n  <text x=\"605\" y=\"152\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#7e22ce\">m = n · M_A</text>\n  <text x=\"605\" y=\"168\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#7e22ce\">V = n · 22,4 L</text>\n  <rect x=\"22\" y=\"186\" width=\"656\" height=\"62\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"206\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#991b1b\">ÖRNEK UYGULAMA: CH₄(g) + 2O₂(g) ⟶ CO₂(g) + 2H₂O(s)   (CH₄ = 16 g/mol, CO₂ = 44 g/mol)</text>\n  <text x=\"350\" y=\"226\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7f1d1d\">8 gram CH₄ yakılırsa: n(CH₄) = 8 / 16 = 0,5 mol CH₄  ⟶  Katsayı (1:2) ile 1 mol O₂ harcanır (NŞA'da 22,4 L)</text>\n  <text x=\"350\" y=\"242\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7f1d1d\">Katsayı (1:1) ile 0,5 mol CO₂ oluşur (0,5 × 44 = 22 g CO₂) ve katsayı (1:2) ile 1 mol H₂O (18 g su) oluşur.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Katı ve Sıvılarda 22,4 Litre Kuralı Uygulanmaz!",
+          "metin": "NŞA'da 1 mol = 22,4 litre bağıntısı gaz fazındaki (g) maddeler için geçerlidir. Denklemde H₂O(s) veya Fe(k) gibi sıvı ve katı hâlde bulunan maddelerin hacmi 22,4 ile çarpılarak bulunamaz."
+        }
+      ]
+    },
+    {
+      "baslik": "Sınırlayıcı Bileşen (Artan Madde) Problemleri ve Tepkime Verimi",
+      "metin": [
+        "Bir kimyasal tepkimede tepkenlerin (girenlerin) her ikisinin de başlangıç miktarları verilmişse, maddeler her zaman katsayılarıyla tam orantılı miktarda olmayabilir. Tepkime sırasında tamamen tükenerek tepkimenin durmasına yol açan maddeye {koyu:sınırlayıcı bileşen (biten madde)}, tepkime sonunda bir kısmı kullanılmadan kalan maddeye ise {koyu:artan bileşen} denir. Tepkimede harcanan diğer maddelerin ve oluşan ürünlerin miktarı {koyu:sınırlayıcı bileşene göre} hesaplanır.",
+        "Sınırlayıcı bileşeni belirlemek için her bir tepkenin {koyu:Başlangıç Mol Sayısı / Denklem Katsayısı} oranı hesaplanır; bu oranı {koyu:en küçük} olan madde sınırlayıcı bileşendir ve tam verimli (%100 verimli) tepkimede tamamen biter. Çözüm yapılırken {koyu:Başlangıç – Değişim – Sonuç (BDS)} tablosu kurulur ve {koyu:Değişim} satırındaki mol sayıları denklem katsayılarıyla tam orantılı olarak yazılır.",
+        "Örneğin {koyu:2SO₂(g) + O₂(g) ⟶ 2SO₃(g)} tepkimesinde kaba başlangıçta {koyu:4 mol SO₂} ve {koyu:3 mol O₂} konulup tam verimle tepkime gerçekleştirilsin. Oranlar karşılaştırıldığında SO₂ için {koyu:4/2 = 2}, O₂ için {koyu:3/1 = 3} bulunur; küçük oran (2) SO₂'ye ait olduğundan {koyu:sınırlayıcı bileşen SO₂}'dir. Değişim satırında {koyu:4 mol SO₂} ve katsayı (2:1) gereği {koyu:2 mol O₂} harcanır; sonuçta SO₂ tamamen biter, {koyu:3 - 2 = 1 mol O₂ artar} ve {koyu:4 mol SO₃} ürünü oluşur. Eğer sınırlayıcı bileşene göre oluşması beklenen {koyu:kuramsal (teorik) ürünün} tamamı değil de bir kısmı oluşmuşsa, {koyu:Yüzde Verim = ({kesir:Gerçek Ürün Miktarı|Kuramsal Ürün Miktarı}) × 100} bağıntısıyla hesaplanır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">SINIRLAYICI BİLEŞEN (ARTAN MADDE) VE TEPKİME VERİMİ</text>\n  <rect x=\"22\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e40af\">SINIRLAYICI BİLEŞEN (BİTEN MADDE)</text>\n  <text x=\"34\" y=\"88\" font-size=\"10.8\" fill=\"#1e3a8a\">• Tepkimede tamamen tükenerek tepkimenin</text>\n  <text x=\"42\" y=\"104\" font-size=\"10.8\" fill=\"#1e3a8a\">durmasına neden olan reaktife <tspan font-weight=\"bold\">sınırlayıcı bileşen</tspan> denir.</text>\n  <text x=\"34\" y=\"126\" font-size=\"10.8\" font-weight=\"bold\" fill=\"#1d4ed8\">• Oluşan ürün miktarı sınırlayıcı bileşene göre bulunur!</text>\n  <text x=\"34\" y=\"148\" font-size=\"10.5\" fill=\"#1e3a8a\">• Bulma kuralı: Her reaktif için <tspan font-weight=\"bold\">(Başlangıç Molü / Katsayı)</tspan></text>\n  <text x=\"42\" y=\"164\" font-size=\"10.5\" fill=\"#1e3a8a\">oranı hesaplanır; bu oranı <tspan font-weight=\"bold\">KÜÇÜK</tspan> olan sınırlayıcıdır.</text>\n  <text x=\"34\" y=\"186\" font-size=\"10.5\" fill=\"#1e3a8a\">• Tam verimli tepkimede girenlerden en az biri biter.</text>\n  <text x=\"34\" y=\"206\" font-size=\"10.5\" fill=\"#1e3a8a\">• Biten madde yoksa tepkime %100 verimli değildir.</text>\n  <rect x=\"358\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#166534\">BAŞLANGIÇ - DEĞİŞİM - SONUÇ (BDS) TABLOSU</text>\n  <text x=\"370\" y=\"90\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">Denklem:      N₂(g)  +  3H₂(g)  ⟶  2NH₃(g)</text>\n  <text x=\"370\" y=\"114\" font-size=\"10.8\" fill=\"#14532d\">Başlangıç:    2 mol     3 mol        —</text>\n  <text x=\"370\" y=\"136\" font-size=\"10.8\" font-weight=\"bold\" fill=\"#dc2626\">Değişim:     -1 mol    -3 mol      +2 mol</text>\n  <line x1=\"370\" y1=\"144\" x2=\"660\" y2=\"144\" stroke=\"#166534\" stroke-width=\"1.5\"/>\n  <text x=\"370\" y=\"162\" font-size=\"10.8\" font-weight=\"bold\" fill=\"#15803d\">Sonuç:        1 mol     0 (Bitti)    2 mol oluştu</text>\n  <text x=\"370\" y=\"186\" font-size=\"10.5\" fill=\"#14532d\">• Sınırlayıcı bileşen: H₂(g) | Artan madde: 1 mol N₂(g)</text>\n  <text x=\"370\" y=\"206\" text-anchor=\"middle\" font-size=\"10.8\" font-weight=\"bold\" fill=\"#166534\">% Verim = (Gerçek Ürün / Kuramsal Ürün) × 100</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Değişim (Harcanan/Oluşan) satırındaki mol sayıları daima tepkime denkleminin katsayılarıyla orantılıdır!</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "kavram",
+          "baslik": "Tam Verimli Tepkime Ne Demektir?",
+          "metin": "Tam verimli (%100 verimli) tepkime, giren maddelerden tamamının değil, en az birinin (sınırlayıcı bileşenin) tamamen tükendiği tepkime demektir."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Denkleştirilmiş N₂(g) + 3H₂(g) ⟶ 2NH₃(g) tepkimesindeki 1 : 3 : 2 stokiyometrik katsayılarını mol sayısı, molekül sayısı, kütle ve NŞA gaz hacmi bakımından yorumlayınız. (H = 1, N = 14 g/mol)",
+      "cevap": "1 mol N₂ gazı ile 3 mol H₂ gazı tepkimeye girerek 2 mol NH₃ gazı oluşturur. Tanecik bazında 1·N_A tane N₂ molekülü ile 3·N_A tane H₂ molekülünden 2·N_A tane NH₃ molekülü oluşur. Kütle bazında 28 gram N₂ ile 6 gram H₂ birleşerek 34 gram NH₃ oluşturur (toplam kütle korunur). NŞA'da ise 22,4 litre N₂(g) ile 67,2 litre H₂(g) tepkimeye girerek 44,8 litre NH₃(g) meydana getirir."
+    },
+    {
+      "soru": "Stokiyometrik hesaplamalarda 'mol köprüsü' olarak adlandırılan dört adımlı çözüm sırası nasıldır?",
+      "cevap": "Birinci adımda kimyasal tepkime denklemi yazılıp atom sayılarına göre denkleştirilir. İkinci adımda miktarı verilen maddenin kütlesi, hacmi veya tanecik sayısı mol sayısına çevrilir. Üçüncü adımda denklemdeki stokiyometrik katsayı oranları kullanılarak istenen maddenin mol sayısına geçilir. Dördüncü adımda bulunan mol sayısı soruda istenen birime (gram, litre veya tanecik sayısı) dönüştürülür."
+    },
+    {
+      "soru": "Denkleştirilmiş CH₄(g) + 2O₂(g) ⟶ CO₂(g) + 2H₂O(s) tepkimesine göre 8 gram CH₄ gazının yeterince O₂ gazıyla tamamen yanması sonucunda kaç gram CO₂ gazı ve kaç gram H₂O sıvısı oluşur? (H = 1, C = 12, O = 16 g/mol)",
+      "cevap": "CH₄ bileşiğinin mol kütlesi 12 + 4×1 = 16 g/mol olup n(CH₄) = 8 / 16 = 0,5 mol bulunur. Denklemdeki 1 : 1 : 2 katsayı oranına göre 0,5 mol CH₄ yandığında 0,5 mol CO₂ gazı (0,5 × 44 = 22 gram CO₂) ve 2 × 0,5 = 1,0 mol H₂O sıvısı (1,0 × 18 = 18 gram H₂O) oluşur."
+    },
+    {
+      "soru": "Bir kimyasal tepkimede 'sınırlayıcı bileşen' ne demektir ve nasıl tespit edilir?",
+      "cevap": "Sınırlayıcı bileşen, bir kimyasal tepkimede tamamen tükenerek tepkimenin sona ermesine neden olan ve oluşan ürün miktarını belirleyen reaktiftir. Her bir tepkenin 'Başlangıç Mol Sayısı / Denklem Katsayısı' oranı hesaplanır; bu oranı en küçük olan madde sınırlayıcı bileşendir."
+    },
+    {
+      "soru": "Kapalı bir kapta N₂(g) + 3H₂(g) ⟶ 2NH₃(g) denklemine göre 2 mol N₂ ve 3 mol H₂ gazları tam verimle tepkimeye giriyor. Sınırlayıcı bileşeni, artan maddeyi ve oluşan NH₃ mol sayısını bulunuz.",
+      "cevap": "Başlangıç molü / katsayı oranları N₂ için 2/1 = 2 ve H₂ için 3/3 = 1 olup küçük olan H₂ gazı sınırlayıcı bileşendir ve tamamen biter. Katsayı oranına (1 : 3 : 2) göre 3 mol H₂ harcanırken 1 mol N₂ harcanır ve 2 mol NH₃ gazı oluşur. Tepkime sonunda 2 - 1 = 1 mol N₂ gazı artar."
+    },
+    {
+      "soru": "Bir kimyasal tepkimede kuramsal (teorik) verim, gerçek verim ve yüzde verim kavramlarını açıklayınız.",
+      "cevap": "Kuramsal (teorik) verim, sınırlayıcı bileşenin tamamen tükenmesi durumunda denklem üzerinden hesaplanan en fazla ürün miktarıdır. Gerçek verim ise deney sonunda fiilen elde edilen ürün miktarıdır. Yüzde verim, (Gerçek Verim / Kuramsal Verim) × 100 bağıntısıyla hesaplanır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Denkleştirilmiş N₂(g) + 3H₂(g) ⟶ 2NH₃(g) tepkimesinde normal koşullarda (NŞA) 13,44 litre H₂ gazının yeterince N₂ gazıyla tam verimle tepkimesinden kaç gram NH₃ gazı oluşur? (H = 1 g/mol, N = 14 g/mol)",
+      "secenekler": [
+        "3,4 gram",
+        "6,8 gram",
+        "10,2 gram",
+        "13,6 gram",
+        "17,0 gram"
+      ],
+      "dogru": 1,
+      "aciklama": "NŞA'da n(H₂) = 13,44 / 22,4 = 0,6 mol H₂. Katsayı oranı 3 : 2 olduğundan 0,6 mol H₂'den 0,4 mol NH₃ oluşur. NH₃ mol kütlesi 14 + 3 = 17 g/mol olup m = 0,4 × 17 = 6,8 gram bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Denkleştirilmiş C₃H₈(g) + 5O₂(g) ⟶ 3CO₂(g) + 4H₂O(s) tepkimesine göre 22 gram C₃H₈ gazını tamamen yakmak için kaç mol O₂ gazı gerekir ve kaç gram H₂O sıvısı oluşur? (H = 1, C = 12, O = 16 g/mol)",
+      "secenekler": [
+        "1,5 mol O₂ gerekir — 18 gram H₂O oluşur",
+        "2,0 mol O₂ gerekir — 36 gram H₂O oluşur",
+        "2,5 mol O₂ gerekir — 36 gram H₂O oluşur",
+        "2,5 mol O₂ gerekir — 72 gram H₂O oluşur",
+        "5,0 mol O₂ gerekir — 72 gram H₂O oluşur"
+      ],
+      "dogru": 2,
+      "aciklama": "C₃H₈ mol kütlesi = 3×12 + 8×1 = 44 g/mol. n(C₃H₈) = 22 / 44 = 0,5 mol. Katsayılara (1 : 5 : 4) göre 5 × 0,5 = 2,5 mol O₂ gerekir ve 4 × 0,5 = 2 mol H₂O (2 × 18 = 36 gram H₂O) oluşur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kapalı bir kapta 2Al(k) + 3Cl₂(g) ⟶ 2AlCl₃(k) denklemine göre 1,2 mol Al katısı ile 1,2 mol Cl₂ gazı tam verimle tepkimeye sokuluyor. Tepkime sonunda sınırlayıcı bileşen, artan madde ve oluşan AlCl₃ mol sayısı aşağıdakilerden hangisinde doğru verilmiştir?",
+      "secenekler": [
+        "Sınırlayıcı: Al — 0,4 mol Cl₂ artar — 1,2 mol AlCl₃ oluşur",
+        "Sınırlayıcı: Cl₂ — 0,4 mol Al artar — 0,8 mol AlCl₃ oluşur",
+        "Sınırlayıcı: Cl₂ — 0,6 mol Al artar — 0,6 mol AlCl₃ oluşur",
+        "Sınırlayıcı: Al — 0,2 mol Cl₂ artar — 0,8 mol AlCl₃ oluşur",
+        "İkisi de biter — Artan madde olmaz — 1,2 mol AlCl₃ oluşur"
+      ],
+      "dogru": 1,
+      "aciklama": "Mol/katsayı oranları: Al için 1,2/2 = 0,6; Cl₂ için 1,2/3 = 0,4 (küçük olan Cl₂ sınırlayıcıdır). 1,2 mol Cl₂ tamamen harcanırken 2/3 oranıyla 0,8 mol Al harcanır (1,2 - 0,8 = 0,4 mol Al artar) ve 0,8 mol AlCl₃ oluşur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "CaCO₃(k) ⟶ CaO(k) + CO₂(g) denklemine göre 50 gram CaCO₃ katısı ısıtıldığında normal koşullarda 6,72 litre CO₂ gazı elde ediliyor. Buna göre tepkimenin yüzde verimi kaçtır? (CaCO₃ = 100 g/mol)",
+      "secenekler": [
+        "Yüzde 30",
+        "Yüzde 45",
+        "Yüzde 60",
+        "Yüzde 75",
+        "Yüzde 80"
+      ],
+      "dogru": 2,
+      "aciklama": "Başlangıç n(CaCO₃) = 50 / 100 = 0,5 mol. Kuramsal olarak 0,5 mol CO₂ oluşması beklenir. Gerçekte oluşan n(CO₂) = 6,72 / 22,4 = 0,3 mol. % Verim = (0,3 / 0,5) × 100 = %60 bulunur."
+    },
+    {
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "metin": "Denkleştirilmiş bir kimyasal tepkimede katsayılar maddelerin mol sayıları arasındaki değişim oranını doğrudan verir.",
+          "dogru": true,
+          "aciklama": "Tepkime katsayıları harcanan ve oluşan maddelerin mol ve molekül oranlarını gösterir."
+        },
+        {
+          "metin": "Her kimyasal tepkimede girenlerin toplam mol sayısı ile ürünlerin toplam mol sayısı birbirine eşittir.",
+          "dogru": false,
+          "aciklama": "Kimyasal tepkimelerde atom sayısı ve toplam kütle korunur; ancak toplam mol sayısı ve molekül sayısı değişebilir."
+        },
+        {
+          "metin": "Tam verimli bir tepkimede başlangıçta alınan reaktiflerden en az birinin tamamen tükenmesi gerekir.",
+          "dogru": true,
+          "aciklama": "Tam verim (%100 verim), sınırlayıcı bileşenin tamamen bittiği tepkime demektir."
+        },
+        {
+          "metin": "Tepkimede oluşan ürün miktarı, kapta artan madde miktarına göre hesaplanır.",
+          "dogru": false,
+          "aciklama": "Oluşan ürün miktarı artan maddeye göre değil, tamamen tükenen sınırlayıcı bileşene göre hesaplanır."
+        },
+        {
+          "metin": "Sabit basınç ve sıcaklıkta gerçekleşen gaz tepkimelerinde gazların katsayı oranı hacim değişim oranına eşittir.",
+          "dogru": true,
+          "aciklama": "Avogadro yasası gereği aynı koşullarda gazların mol sayıları ile hacimleri doğru orantılıdır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "ciftler": [
+        [
+          "Stokiyometri",
+          "Kimyasal tepkimelerde tepken ve ürünler arasındaki nicel (miktar) ilişkileri inceleyen alan"
+        ],
+        [
+          "Sınırlayıcı bileşen",
+          "Tepkimede tamamen tükenerek tepkimenin durmasını ve ürün miktarını belirleyen madde"
+        ],
+        [
+          "Kuramsal (teorik) verim",
+          "Sınırlayıcı bileşenin tamamen tükenmesi hâlinde denklem üzerinden hesaplanan en fazla ürün miktarı"
+        ],
+        [
+          "22,4 litre",
+          "Normal koşullarda (0 °C ve 1 atm) 1 mol ideal gazın kapladığı molar hacim"
+        ],
+        [
+          "BDS Tablosu",
+          "Tepkimelerde Başlangıç, Değişim ve Sonuç mol miktarlarını düzenli izleme yöntemi"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "cumleler": [
+        {
+          "metin": "Bir kimyasal tepkimede tamamen biterek ürün miktarını belirleyen tepkene ___ bileşen adı verilir.",
+          "cevap": "sınırlayıcı"
+        },
+        {
+          "metin": "Denkleştirilmiş 2H₂(g) + O₂(g) ⟶ 2H₂O(s) tepkimesinde 0,6 mol O₂ gazı tamamen harcandığında ___ mol H₂O sıvısı oluşur.",
+          "cevap": "1,2"
+        },
+        {
+          "metin": "Normal koşullarda (NŞA) 0,5 mol CO₂ gazı ___ litre hacim kaplar.",
+          "cevap": "11,2"
+        },
+        {
+          "metin": "Kuramsal olarak 40 gram ürün beklenen bir tepkimede 30 gram ürün elde edilmişse tepkime verimi yüzde ___ olur.",
+          "cevap": "75"
+        },
+        {
+          "metin": "Kimyasal tepkimelerde toplam mol sayısı değişebildiği hâlde toplam ___ ve atom sayısı daima korunur.",
+          "cevap": "kütle"
+        }
+      ],
+      "fazla": [
+        "artan",
+        "44,8"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Kapalı bir kapta gerçekleşen 2SO₂(g) + O₂(g) ⟶ 2SO₃(g) tepkimesinde başlangıçta 32 gram SO₂ gazı ile 16 gram O₂ gazı alınarak tam verimli tepkime gerçekleştiriliyor. (O = 16, S = 32 g/mol)\nBu tepkimede sınırlayıcı bileşeni, artan maddeyi ve oluşan SO₃ kütlesini üç adımda hesaplayınız.",
+      "ipuclari": [
+        "İlk adımda SO₂ (64 g/mol) ve O₂ (32 g/mol) gazlarının mol kütlelerini bularak başlangıç mol sayılarını hesaplayınız.",
+        "İkinci adımda başlangıç mollerini denklem katsayılarına bölerek sınırlayıcı bileşeni ve harcanan/artan mol sayılarını belirleyiniz.",
+        "Üçüncü adımda oluşan SO₃ gazının mol sayısını ve kütlesini (SO₃ = 80 g/mol) hesaplayarak kütle korunumunu doğrulayınız."
+      ],
+      "cevap": "Birinci adım (Mol Hesabı): M_A(SO₂) = 32 + 2×16 = 64 g/mol olduğundan n(SO₂) = 32 / 64 = 0,5 mol; M_A(O₂) = 2×16 = 32 g/mol olduğundan n(O₂) = 16 / 32 = 0,5 mol bulunur. İkinci adım (Sınırlayıcı Bileşen ve BDS): Katsayı oranları SO₂ için 0,5 / 2 = 0,25 ve O₂ için 0,5 / 1 = 0,50 olup küçük olan SO₂ gazı sınırlayıcı bileşendir. Değişim adımında 0,5 mol SO₂ tamamen biterken 0,25 mol O₂ harcanır; kapta 0,5 - 0,25 = 0,25 mol O₂ (0,25 × 32 = 8 gram O₂) artar. Üçüncü adım (Ürün Kütlesi): Katsayı (2:2) gereği 0,5 mol SO₃ oluşur. M_A(SO₃) = 32 + 3×16 = 80 g/mol olduğundan m(SO₃) = 0,5 × 80 = 40 gram SO₃ elde edilir (Başlangıç toplam kütle 32 + 16 = 48 g; Sonuç 40 g SO₃ + 8 g artan O₂ = 48 g)."
+    }
+  ],
+  "ozet": [
+    "{koyu:Stokiyometrik Katsayılar:} Denkleştirilmiş tepkimedeki katsayılar maddelerin {koyu:mol oranını, molekül oranını} ve gazlar için {koyu:hacim oranını} verir.",
+    "{koyu:Temel Mol Bağıntıları:} Hesaplamalarda {koyu:n = m / M_A}, {koyu:n = N / N_A} ve NŞA gazlar için {koyu:n = V / 22,4} formülleriyle mol köprüsü kurulur.",
+    "{koyu:Korunan Nicelikler:} Her kimyasal tepkimede {koyu:atom türü, atom sayısı ve toplam kütle} korunur; toplam mol sayısı ve gaz hacmi ise değişebilir.",
+    "{koyu:Sınırlayıcı Bileşen:} Başlangıç molü / katsayı oranı küçük olan reaktif {koyu:sınırlayıcı bileşendir}; tam verimli tepkimede tamamen tükenir ve ürün miktarını belirler.",
+    "{koyu:Tepkime Verimi:} {koyu:% Verim = (Gerçek Ürün Miktarı / Kuramsal Ürün Miktarı) × 100} eşitliğiyle hesaplanır."
+  ]
+}

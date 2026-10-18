@@ -1,0 +1,261 @@
+{
+  "ad": "11-fizik-9",
+  "sinif": 11,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 9,
+  "tarih": "9-13 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "1. Tema: Kuvvet ve Hareket",
+  "konu": "Statik ve Kinetik Sürtünme Kuvvetlerinin Karşılaştırılması, Sürtünme Kuvveti-Uygulanan Kuvvet Grafiği ve Günlük Hayattaki Etkileri (FİZ.11.1.6)",
+  "ciktilar": [
+    "Statik ve kinetik sürtünme kuvvetlerinin oluşum koşullarını, matematiksel bağıntılarını ve katsayıları arasındaki ilişkiyi belirler.",
+    "Uygulanan kuvvete bağlı sürtünme kuvveti grafiğini (statik bölge, eşik değeri ve kinetik bölge) yorumlayarak problem çözer.",
+    "Statik ve kinetik sürtünme kuvvetlerinin benzerliklerini, farklılıklarını ve günlük hayattaki olumlu-olumsuz etkilerini karşılaştırır."
+  ],
+  "giris": "Birbiriyle temas halinde bulunan iki yüzeyin bağıl hareketine veya hareket eğilimine karşı koyan kuvvete {koyu:sürtünme kuvveti} denir. Mikroskobik düzeyde pürüzsüz görünen yüzeylerdeki girinti ve çıkıntıların birbirine kenetlenmesi ve atomlar arası elektromanyetik çekim kuvvetlerinden kaynaklanan sürtünme kuvveti; cismin durgun ya da hareketli olmasına göre {koyu:statik sürtünme kuvveti} ve {koyu:kinetik sürtünme kuvveti} olarak ikiye ayrılır.",
+  "bolumler": [
+    {
+      "baslik": "Statik ve Kinetik Sürtünme Kuvvetlerinin Özellikleri",
+      "metin": [
+        "Yatay veya eğik bir yüzeyde {koyu:duran bir cismi} harekete geçirmek için uygulanan kuvvete karşı koyan sürtünme kuvvetine {koyu:statik sürtünme kuvveti (fs)} denir. Statik sürtünme kuvvetinin en önemli özelliği {koyu:sabit bir değerinin olmamasıdır}: Cismin harekete geçebileceği sınır (eşik) değerine {koyu:maksimum statik sürtünme kuvveti} denir ve {koyu:fs,max = ks · N} bağıntısıyla hesaplanır (burada ks statik sürtünme katsayısı, N yüzeyin dik tepki kuvvetidir).",
+        "Duran bir cisme uygulanan yatay F kuvveti, {koyu:fs,max} değerini aşmadığı sürece ({koyu:F <= fs,max}) cisim harekete geçemez ve bu durumda statik sürtünme kuvveti doğrudan uygulanan kuvvete eşit olur ({koyu:fs = F}). Örneğin fs,max = 20 N olan durgun bir sandığa 12 N yatay kuvvet uygulanırsa sandık durmaya devam eder ve o andaki statik sürtünme kuvveti 20 N değil, {koyu:12 N} olur.",
+        "Uygulanan kuvvet maksimum statik sürtünmeyi aştığı anda ({koyu:F > fs,max}) cisim harekete geçer. Hareket halindeki (kayan) cisimlere etki eden sürtünme kuvvetine {koyu:kinetik (dinamik) sürtünme kuvveti (fk)} denir ve büyüklüğü {koyu:fk = kk · N} formülüyle bulunur. Hareket başladığında yüzeylerdeki mikroskobik girinti-çıkıntılar tam kenetlenemediği için kinetik sürtünme katsayısı statik sürtünme katsayısından küçüktür ({koyu:ks > kk}); dolayısıyla aynı yüzeyde {koyu:fs,max > fk} ilişkisi geçerlidir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">STATİK VE KİNETİK SÜRTÜNME KUVVETLERİNİN KARŞILAŞTIRILMASI</text>\n  <rect x=\"35\" y=\"50\" width=\"300\" height=\"185\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/>\n  <text x=\"185\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Statik Sürtünme Kuvveti (fs)</text>\n  <text x=\"50\" y=\"103\" font-size=\"11\" fill=\"#334155\">• Duran cismi harekete geçirmeye</text>\n  <text x=\"60\" y=\"120\" font-size=\"10.5\" fill=\"#475569\">çalışan kuvvete karşı koyar.</text>\n  <text x=\"50\" y=\"143\" font-size=\"11\" fill=\"#334155\">• Değişken değerlidir: Cisim dururken</text>\n  <text x=\"60\" y=\"160\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e40af\">F_uygulanan &lt;= fs,max ise fs = F_uygulanan</text>\n  <text x=\"50\" y=\"185\" font-size=\"11\" fill=\"#334155\">• Maksimum (Eşik) Değeri:</text>\n  <text x=\"60\" y=\"205\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">fs,max = ks · N</text>\n  <rect x=\"365\" y=\"50\" width=\"300\" height=\"185\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#ef4444\"/>\n  <text x=\"515\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b91c1c\">Kinetik Sürtünme Kuvveti (fk)</text>\n  <text x=\"380\" y=\"103\" font-size=\"11\" fill=\"#334155\">• Hareket halindeki (kayan) cisme</text>\n  <text x=\"390\" y=\"120\" font-size=\"10.5\" fill=\"#475569\">kayma yönüne zıt yönde etki eder.</text>\n  <text x=\"380\" y=\"143\" font-size=\"11\" fill=\"#334155\">• Sabit değerlidir (hız büyüklüğünden</text>\n  <text x=\"390\" y=\"160\" font-size=\"10.5\" fill=\"#475569\">bağımsızdır):</text>\n  <text x=\"390\" y=\"182\" font-size=\"12\" font-weight=\"bold\" fill=\"#b91c1c\">fk = kk · N</text>\n  <text x=\"380\" y=\"210\" font-size=\"11\" font-weight=\"bold\" fill=\"#991b1b\">Aynı yüzey için: ks &gt; kk ve fs,max &gt; fk</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "En Sık Yapılan Kavram Yanılgısı!",
+          "metin": "Duran bir cisme etki eden statik sürtünme kuvveti her durumda ks·N formülüne eşit değildir! ks·N yalnızca statik sürtünmenin çıkabileceği 'maksimum (eşik) değeri' verir. Uygulanan kuvvet bu eşikten küçükse sürtünme kuvveti uygulanan kuvvete eşittir (fs = F)."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Sürtünme Kuvveti Cismin Harekete Geçmesini Sağlar mı?",
+          "metin": "Kaymadan dönen bir araba tekerleğine veya yürüyen bir insanın ayağına zemin tarafından uygulanan statik sürtünme kuvveti hareket yönündedir; ancak tek başına duran bir sandığa etki eden sürtünme kuvveti sandığı geriye doğru harekete geçiremez."
+        }
+      ]
+    },
+    {
+      "baslik": "Sürtünme Kuvveti - Uygulanan Kuvvet Grafiği Analizi",
+      "metin": [
+        "Yatay düzlemde durmakta olan bir cisme sıfırdan başlayarak düzgün artırılan yatay bir F kuvveti uygulandığında, sürtünme kuvvetinin uygulanan kuvvete bağlı değişim grafiği ({koyu:f_sürtünme - F}) iki farklı bölgeden oluşur: {koyu:Statik bölge} ve {koyu:kinetik bölge}.",
+        "Grafiğin birinci bölgesi olan {koyu:statik bölgede} (0 ile fs,max arasında) cisim durgundur, net kuvvet sıfırdır ({koyu:F_net = 0}) ve uygulanan kuvvet arttıkça statik sürtünme kuvveti de birebir aynı miktarda artar ({koyu:fs = F}). Bu nedenle statik bölgedeki doğru parçasının yatay eksenle yaptığı açı daima {koyu:45°} olup eğimi ({koyu:fs / F = 1}) yüzeyin sürtünme katsayısından bağımsızdır.",
+        "Uygulanan kuvvet grafikteki tepe noktası olan {koyu:fs,max} (eşik) değerini aştığı anda cisim harekete geçer ve sürtünme kuvveti aniden biraz azalarak {koyu:kinetik sürtünme kuvveti (fk)} değerine düşer. Grafiğin ikinci bölgesi olan {koyu:kinetik bölgede} uygulanan kuvvet ne kadar artırılırsa artırılsın kinetik sürtünme kuvveti {koyu:sabit kalır}; bu bölgede cisim {koyu:F_net = F - fk = m · a} bağıntısına göre ivmeli hareket yapar."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#1e293b\">SÜRTÜNME KUVVETİ - UYGULANAN KUVVET (f_sürtünme - F) GRAFİĞİ</text>\n  <line x1=\"80\" y1=\"215\" x2=\"430\" y2=\"215\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"80\" y1=\"215\" x2=\"80\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <text x=\"70\" y=\"48\" text-anchor=\"end\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">f_sürtünme (N)</text>\n  <text x=\"435\" y=\"219\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">F_uygulanan (N)</text>\n  <line x1=\"80\" y1=\"215\" x2=\"220\" y2=\"75\" stroke=\"#2563eb\" stroke-width=\"3\"/>\n  <line x1=\"220\" y1=\"75\" x2=\"235\" y2=\"110\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-dasharray=\"4,2\"/>\n  <line x1=\"235\" y1=\"110\" x2=\"400\" y2=\"110\" stroke=\"#16a34a\" stroke-width=\"3\"/>\n  <line x1=\"80\" y1=\"75\" x2=\"220\" y2=\"75\" stroke=\"#94a3b8\" stroke-dasharray=\"4,4\"/>\n  <line x1=\"80\" y1=\"110\" x2=\"235\" y2=\"110\" stroke=\"#94a3b8\" stroke-dasharray=\"4,4\"/>\n  <line x1=\"220\" y1=\"75\" x2=\"220\" y2=\"215\" stroke=\"#94a3b8\" stroke-dasharray=\"4,4\"/>\n  <circle cx=\"220\" cy=\"75\" r=\"4.5\" fill=\"#dc2626\"/>\n  <text x=\"74\" y=\"79\" text-anchor=\"end\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">fs,max</text>\n  <text x=\"74\" y=\"114\" text-anchor=\"end\" font-size=\"11\" font-weight=\"bold\" fill=\"#16a34a\">fk</text>\n  <text x=\"220\" y=\"232\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">F = fs,max</text>\n  <text x=\"145\" y=\"198\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">Statik Bölge</text>\n  <text x=\"145\" y=\"211\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">(Durgun: fs = F, açı 45°)</text>\n  <text x=\"320\" y=\"198\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">Kinetik Bölge</text>\n  <text x=\"320\" y=\"211\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">(Hareketli: fk sabit)</text>\n  <rect x=\"460\" y=\"55\" width=\"215\" height=\"165\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\"/>\n  <text x=\"567\" y=\"78\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#a16207\">Grafik Okuma Kuralları</text>\n  <text x=\"472\" y=\"102\" font-size=\"10.5\" fill=\"#334155\">• Statik bölgede eğim = tan(45°) = 1</text>\n  <text x=\"472\" y=\"122\" font-size=\"10.5\" fill=\"#334155\">• F &lt; fs,max iken cisim durur ve</text>\n  <text x=\"480\" y=\"138\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#854d0e\">sürtünme kuvveti F kadardır!</text>\n  <text x=\"472\" y=\"160\" font-size=\"10.5\" fill=\"#334155\">• F &gt; fs,max olunca cisim ivmelenir:</text>\n  <text x=\"480\" y=\"178\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#166534\">F_net = F - fk = m · a</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Kinetik Bölgede Hız ve İvme Yorumu",
+          "metin": "Cisim harekete geçtikten sonra uygulanan kuvvet küçültülüp tam olarak F = fk değerine ayarlanırsa net kuvvet sıfır olur ve cisim durmaz, o andaki hızıyla 'sabit hızlı (düzgün doğrusal) hareket' yapmaya devam eder."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Yüzey Alanı ve Hız Büyüklüğü Etkisi",
+          "metin": "Klasik mekanik modelinde hem statik hem de kinetik sürtünme kuvveti, cismin yüzeyle temas eden kesit alanının (geniş veya dar yüzey üzerine konulmasının) büyüklüğünden bağımsızdır."
+        }
+      ]
+    },
+    {
+      "baslik": "Statik ve Kinetik Sürtünmenin Benzerlikleri, Farklılıkları ve Günlük Hayat",
+      "metin": [
+        "{koyu:Benzerlikleri:} Hem statik hem de kinetik sürtünme kuvveti temas gerektiren kuvvetlerdir; her ikisi de sürtünen yüzeylerin cinsine (pürüzlülüğüne) ve yüzeyin dik tepki kuvvetine ({koyu:N}) doğru orantılı olarak bağlıdır; her ikisi de temas yüzeyinin alanına (S) bağlı değildir ve katsayıları ({koyu:ks, kk}) birimsizdir.",
+        "{koyu:Farklılıkları:} Statik sürtünme durgun veya kaymadan dönen cisimlere etki ederken, kinetik sürtünme kayarak hareket eden cisimlere etki eder. Statik sürtünme sıfır ile {koyu:fs,max} arasında değişken değer alırken, kinetik sürtünme hareket süresince sabittir. Aynı yüzey çifti için statik sürtünmenin maksimum değeri kinetik sürtünmeden büyüktür ({koyu:fs,max > fk}).",
+        "{koyu:Günlük Hayattaki Etkileri:} Sürtünme kuvveti olmadan yürümemiz, koşmamız, araçların virajı dönmesi ve fren yapması, kalemle yazı yazmamız veya çivinin duvarda durması mümkün olmazdı. Örneğin araçlarda {koyu:ABS fren sistemi}, tekerleklerin kilitlenip kaymasını (kinetik sürtünmeye düşmesini) engelleyerek tekerleği daha büyük olan {koyu:statik sürtünme} sınırında tutar ve fren mesafesini kısaltır. Buna karşılık makine parçalarının aşınması ve enerjinin ısıya dönüşmesi sürtünmenin olumsuz etkileridir; yağlama ve bilyeli rulman kullanımıyla azaltılır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">SÜRTÜNME KUVVETİNİN ÖZELLİKLERİ VE GÜNLÜK HAYAT ETKİLERİ</text>\n  <rect x=\"25\" y=\"50\" width=\"205\" height=\"185\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/>\n  <text x=\"127\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Bağlı Olduğu Değişkenler</text>\n  <text x=\"40\" y=\"103\" font-size=\"11\" fill=\"#334155\">• Sürtünen yüzeylerin cinsine</text>\n  <text x=\"48\" y=\"120\" font-size=\"10.5\" fill=\"#475569\">(pürüzlülük / k katsayısı) bağlıdır.</text>\n  <text x=\"40\" y=\"143\" font-size=\"11\" fill=\"#334155\">• Yüzeyin dik tepki kuvvetine</text>\n  <text x=\"48\" y=\"160\" font-size=\"10.5\" fill=\"#475569\">(N) doğru orantılı bağlıdır.</text>\n  <text x=\"40\" y=\"185\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e40af\">• Temas yüzey alanının (S)</text>\n  <text x=\"48\" y=\"202\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e40af\">büyüklüğüne BAĞLI DEĞİLDİR.</text>\n  <rect x=\"247\" y=\"50\" width=\"205\" height=\"185\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/>\n  <text x=\"350\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Olumlu Etkileri (Avantaj)</text>\n  <text x=\"262\" y=\"103\" font-size=\"11\" fill=\"#334155\">• Yürüme ve koşabilme</text>\n  <text x=\"262\" y=\"125\" font-size=\"11\" fill=\"#334155\">• Araçların güvenli fren yapması</text>\n  <text x=\"262\" y=\"147\" font-size=\"11\" fill=\"#334155\">• Kalemle yazı yazabilme ve</text>\n  <text x=\"270\" y=\"164\" font-size=\"10.5\" fill=\"#475569\">cisimleri elde tutabilme</text>\n  <text x=\"262\" y=\"186\" font-size=\"11\" fill=\"#334155\">• Paraşütle güvenli iniş</text>\n  <text x=\"262\" y=\"208\" font-size=\"11\" fill=\"#334155\">• Çivi ve vidaların tutunması</text>\n  <rect x=\"470\" y=\"50\" width=\"205\" height=\"185\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#ef4444\"/>\n  <text x=\"572\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b91c1c\">Olumsuz Etkileri (Dezavantaj)</text>\n  <text x=\"485\" y=\"103\" font-size=\"11\" fill=\"#334155\">• Makine parçalarının aşınması</text>\n  <text x=\"485\" y=\"125\" font-size=\"11\" fill=\"#334155\">• Mekanik enerjinin ısıya</text>\n  <text x=\"493\" y=\"142\" font-size=\"10.5\" fill=\"#475569\">dönüşerek kaybolması (verim düşer)</text>\n  <text x=\"485\" y=\"166\" font-size=\"11\" fill=\"#334155\">• Azaltma Yöntemleri:</text>\n  <text x=\"493\" y=\"184\" font-size=\"10.5\" fill=\"#475569\">Yağlama, bilye/rulman kullanımı,</text>\n  <text x=\"493\" y=\"201\" font-size=\"10.5\" fill=\"#475569\">aerodinamik tasarım, tekerlek.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "ABS Fren Sisteminin Fiziksel Sırrı",
+          "metin": "Fren anında tekerlek tamamen kilitlenip asfalt üzerinde kızaklama yaparsa devreye daha küçük olan 'kinetik sürtünme (fk)' girer. ABS sistemi tekerleğin kaymadan dönmesini sağlayarak daha büyük olan 'statik sürtünme (fs,max)' kuvvetinden yararlanır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Yürürken ve Araç Hızlanırken Sürtünmenin Yönü",
+          "metin": "Bir insan yürürken ayağını geriye doğru iter; zemin ise ayağa 'ileri (hareket) yönünde' statik sürtünme kuvveti uygular. Aynı şekilde önden çekişli bir araba hızlanırken ön tekerleklere etki eden statik sürtünme hareket yönündedir."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Yatay bir zeminde duran 5 kg kütleli bir kolinin zeminle arasındaki statik sürtünme katsayısı ks = 0,6 ve kinetik sürtünme katsayısı kk = 0,4'tür. Koliye yatay olarak sırasıyla a) 20 N, b) 30 N, c) 45 N kuvvet uygulanırsa sürtünme kuvveti ve ivme ne olur? (g = 10 m/s²)",
+      "cevap": "Yüzeyin tepki kuvveti N = m·g = 5·10 = 50 N'dur. Maksimum statik sürtünme fs,max = ks·N = 0,6·50 = 30 N; kinetik sürtünme fk = kk·N = 0,4·50 = 20 N'dur.\na) F = 20 N < 30 N olduğundan koli harekete geçmez (a = 0) ve statik sürtünme kuvveti fs = 20 N olur.\nb) F = 30 N = fs,max olduğundan koli hareket sınırındadır, ivmesi a = 0 ve sürtünme kuvveti fs,max = 30 N'dur.\nc) F = 45 N > 30 N olduğundan koli harekete geçer, devreye kinetik sürtünme fk = 20 N girer; F_net = 45 - 20 = 25 N ve a = 25 / 5 = 5 m/s² olur."
+    },
+    {
+      "soru": "Ağır bir buzdolabını itmeye başladığımızda onu ilk anda harekete geçirmenin, harekete geçtikten sonra itmeye devam etmekten daha zor olmasının fiziksel nedenini açıklayınız.",
+      "cevap": "Buzdolabı durgunken yüzey pürüzleri birbirine tam kenetlenmiştir ve onu harekete geçirmek için maksimum statik sürtünme kuvvetini (fs,max) yenmek gerekir. Buzdolabı kaymaya başladığında ise pürüzler tam kenetlenemez ve devreye fs,max değerinden daha küçük olan kinetik sürtünme kuvveti (fk) girer."
+    },
+    {
+      "soru": "Sürtünme kuvvetinin uygulanan kuvvete bağlı değişim (f_sürtünme - F) grafiğinde statik bölgedeki doğrunun yatay eksenle yaptığı açı neden yüzeyin cinsine bağlı olmaksızın 45°'dir?",
+      "cevap": "Statik bölgede cisim durgun olduğu için net kuvvet sıfırdır ve statik sürtünme kuvveti uygulanan kuvvete birebir eşittir (fs = F). Yatay ve düşey eksen ölçekleri aynı olduğunda her F değerine eşit bir fs karşılık geldiği için eğim fs / F = 1 yani tan(45°) = 1 olur."
+    },
+    {
+      "soru": "Statik ve kinetik sürtünme kuvvetlerinin ortak özelliklerinden (benzerliklerinden) üç tanesini yazınız.",
+      "cevap": "1) Her ikisi de temas gerektiren kuvvetlerdir. 2) Her ikisi de sürtünen yüzeylerin cinsine ve yüzeyin dik tepki kuvvetine (N) bağlıdır. 3) Her ikisi de sürtünen yüzeylerin temas alanının büyüklüğünden bağımsızdır."
+    },
+    {
+      "soru": "Otomobillerde kullanılan ABS (kilitlenmeyi önleyici) fren sisteminin çalışma prensibini statik ve kinetik sürtünme kavramlarıyla açıklayınız.",
+      "cevap": "Ani frende tekerlekler kilitlenip asfalt üzerinde kayarsa daha küçük olan kinetik sürtünme kuvveti etkili olur ve araç geç durur. ABS sistemi fren basıncını saniyede birçok kez ayarlayarak tekerleğin kilitlenmeden dönmesini sağlar; böylece daha büyük olan maksimum statik sürtünme kuvvetinden yararlanılarak fren mesafesi kısaltılır ve direksiyon hâkimiyeti korunur."
+    },
+    {
+      "soru": "Yatay düzlemde 8 kg kütleli bir cisme ait sürtünme kuvveti-uygulanan kuvvet grafiğinde tepe noktası 40 N, yatay sabit kısım ise 24 N olarak okunmaktadır. Buna göre ks ve kk katsayılarını hesaplayınız. (g = 10 m/s²)",
+      "cevap": "Yatay düzlemde dik tepki kuvveti N = m·g = 8·10 = 80 N'dur. Grafikteki tepe noktası fs,max = 40 N olduğundan ks = fs,max / N = 40 / 80 = 0,5 bulunur. Yatay sabit kısım fk = 24 N olduğundan kk = fk / N = 24 / 80 = 0,3 bulunur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Yatay bir düzlemde durmakta olan 4 kg kütleli bir sandık ile zemin arasındaki statik sürtünme katsayısı ks = 0,5 ve kinetik sürtünme katsayısı kk = 0,3'tür. Duran bu sandığa yatay doğrultuda 15 N büyüklüğünde bir kuvvet uygulandığında sandığa etki eden sürtünme kuvvetinin büyüklüğü kaç N olur? (g = 10 m/s²)",
+      "secenekler": [
+        "12",
+        "15",
+        "20",
+        "27",
+        "35"
+      ],
+      "dogru": 1,
+      "aciklama": "Sandığın maksimum statik sürtünme kuvveti fs,max = ks·m·g = 0,5·4·10 = 20 N'dur. Uygulanan 15 N'luk kuvvet 20 N'luk eşik değerini aşamadığı için sandık harekete geçemez ve etki eden statik sürtünme kuvveti uygulanan kuvvete eşit yani 15 N olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir cisme etki eden statik ve kinetik sürtünme kuvvetleri karşılaştırıldığında aşağıdaki ifadelerden hangisi yanlıştır?",
+      "secenekler": [
+        "Aynı yüzey çifti için statik sürtünme katsayısı kinetik sürtünme katsayısından büyüktür.",
+        "Her iki sürtünme kuvveti de yüzeyin dik tepki kuvveti (N) ile doğru orantılıdır.",
+        "Cisim durgunken uygulanan kuvvet sıfırdan fs,max değerine kadar artırıldıkça statik sürtünme kuvveti sabit kalır.",
+        "Kinetik sürtünme kuvveti, kaymakta olan cismin bağıl hareket yönüne zıt yöndedir.",
+        "Her iki sürtünme kuvveti de temas yüzey alanının büyüklüğünden bağımsızdır."
+      ],
+      "dogru": 2,
+      "aciklama": "Cisim durgunken uygulanan kuvvet sıfırdan fs,max değerine kadar artırıldıkça statik sürtünme kuvveti sabit kalmaz; uygulanan kuvvete eşit olacak şekilde (fs = F) doğru orantılı olarak artar."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Yatay düzlemde duran 6 kg kütleli bir cisme ait sürtünme kuvveti - uygulanan kuvvet grafiğinde maksimum statik sürtünme kuvveti 36 N, kinetik sürtünme kuvveti ise 24 N olarak verilmiştir. Bu cisme yatay 42 N kuvvet uygulanırsa cismin kazanacağı ivme kaç m/s² olur? (g = 10 m/s²)",
+      "secenekler": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "7"
+      ],
+      "dogru": 2,
+      "aciklama": "Uygulanan 42 N kuvvet, maksimum statik sürtünme olan 36 N'dan büyük olduğu için cisim harekete geçer ve cisme kinetik sürtünme kuvveti (fk = 24 N) etki eder. Net kuvvet F_net = 42 - 24 = 18 N olur; ivme a = F_net / m = 18 / 6 = 3 m/s² bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Günlük hayatta karşılaşılan aşağıdaki durumlardan hangisinde sürtünme kuvvetinin artırılması yerine azaltılması amaçlanmaktadır?",
+      "secenekler": [
+        "Kış aylarında otomobil lastiklerine zincir takılması",
+        "Buzlu kaldırımlara tuz ve kum serpilmesi",
+        "Haltercilerin ağırlık kaldırmadan önce ellerine magnezyum tozu sürmesi",
+        "Kaleci eldivenlerinin iç yüzeyinin pürüzlü kauçukla kaplanması",
+        "Bisiklet zincirlerinin ve makine dişlilerinin madeni yağ ile yağlanması"
+      ],
+      "dogru": 4,
+      "aciklama": "Makine dişlilerinin ve bisiklet zincirlerinin yağlanması, parçaların aşınmasını ve enerji kaybını önlemek için sürtünme kuvvetini azaltmaya yöneliktir."
+    },
+    {
+      "tur": "dy",
+      "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Aynı yüzeyde bulunan bir cisim için maksimum statik sürtünme kuvveti kinetik sürtünme kuvvetinden büyüktür.",
+          "dogru": true
+        },
+        {
+          "metin": "Tuğla yatay zemine geniş yüzeyi yerine dik (dar) yüzeyi üzerine konulursa sürtünme kuvveti yarıya düşer.",
+          "dogru": false
+        },
+        {
+          "metin": "Sürtünme kuvveti - uygulanan kuvvet grafiğinin statik bölgesinde doğrunun eğimi 1'dir.",
+          "dogru": true
+        },
+        {
+          "metin": "Statik ve kinetik sürtünme katsayılarının SI birim sistemindeki birimi Newton/metre'dir.",
+          "dogru": false
+        },
+        {
+          "metin": "Kaymadan yürüyen bir insanın ayakkabı tabanına zemin tarafından uygulanan statik sürtünme kuvveti yürüyüş yönündedir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "yonerge": "Aşağıdaki fiziksel kavramları uygun açıklamalarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Statik Sürtünme Kuvveti (fs)",
+          "Duran bir cismi harekete geçirmeye çalışan kuvvete karşı koyan ve eşik değere kadar değişken olan kuvvet"
+        ],
+        [
+          "Maksimum Statik Sürtünme (fs,max)",
+          "Duran cismin harekete geçme sınırındaki en büyük sürtünme değeri (ks · N)"
+        ],
+        [
+          "Kinetik Sürtünme Kuvveti (fk)",
+          "Yüzey üzerinde kayarak hareket eden cisme hareket yönüne zıt etki eden sabit büyüklükteki kuvvet (kk · N)"
+        ],
+        [
+          "Normal Kuvvet (N)",
+          "Temas yüzeyinin cisme dik doğrultuda uyguladığı tepki kuvveti"
+        ],
+        [
+          "ABS Fren Sistemi",
+          "Tekerleğin kilitlenip kaymasını önleyerek aracı maksimum statik sürtünme sınırında tutan güvenlik sistemi"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Duran bir cisme fs,max değerinden daha küçük bir yatay F kuvveti uygulandığında sürtünme kuvvetinin büyüklüğü ___ kuvvetine eşit olur.",
+          "cevap": "uygulanan"
+        },
+        {
+          "metin": "Hareket halindeki bir cisme etki eden sürtünme kuvvetine ___ sürtünme kuvveti adı verilir.",
+          "cevap": "kinetik"
+        },
+        {
+          "metin": "Sürtünme kuvvetinin büyüklüğü, sürtünen yüzeylerin temas ___ büyüklüğüne bağlı değildir.",
+          "cevap": "alanının"
+        },
+        {
+          "metin": "Mekanik sistemlerde sürtünme kuvveti, hareket enerjisinin bir kısmının ___ enerjisine dönüşmesine neden olur.",
+          "cevap": "ısı"
+        },
+        {
+          "metin": "Kaymakta olan bir cisme uygulanan kuvvet tam olarak kinetik sürtünme kuvvetine eşitlenirse cisim ___ hızla hareketini sürdürür.",
+          "cevap": "sabit"
+        }
+      ],
+      "fazla": [
+        "ivmeli",
+        "eylemsizlik"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Statik ve kinetik sürtünme kuvvetlerini tanımlayarak aralarındaki benzerlik ve farklılıkları, grafik üzerindeki değişimi ve günlük hayattaki etkilerini bütüncül olarak açıklayınız.",
+      "ipuclari": [
+        "Tanım ve formüller: fs <= ks·N (değişken) ve fk = kk·N (sabit), ks > kk.",
+        "Grafik yorumu: Statik bölgede fs = F (eğim 1), eşik aşılınca fk değerine düşüş.",
+        "Benzerlik/Farklılık ve günlük hayat: N ve yüzey cinsine bağlılık; yürüme/ABS (olumlu) ve aşınma/ısı (olumsuz)."
+      ],
+      "cevap": "Statik sürtünme kuvveti duran cisimlerin harekete geçmesine karşı koyan ve uygulanan kuvvete göre 0 ile fs,max = ks·N arasında değişen kuvvettir; kinetik sürtünme kuvveti ise kayan cisimlere etki eden fk = kk·N büyüklüğündeki sabit kuvvettir. Her ikisi de yüzey cinsine ve dik tepki kuvvetine (N) bağlı olup yüzey alanından bağımsızdır; ancak fs,max > fk'dir. Günlük hayatta yürüme, yazı yazma ve ABS ile güvenli frenleme sürtünmenin olumlu etkileri iken, makine parçalarının aşınması ve enerjinin ısıya dönüşmesi olumsuz etkileridir."
+    }
+  ],
+  "ozet": [
+    "{koyu:Statik Sürtünme (fs):} Duran cisme etki eder; uygulanan kuvvet eşik değeri (fs,max = ks·N) aşmadıkça statik sürtünme uygulanan kuvvete eşittir (fs = F).",
+    "{koyu:Kinetik Sürtünme (fk):} Kayarak hareket eden cisme hareket yönüne zıt etki eder; büyüklüğü fk = kk·N olup sabittir.",
+    "{koyu:Katsayı Karşılaştırması:} Hareket başladığında yüzey pürüzleri tam kenetlenemediğinden aynı yüzey için ks > kk ve fs,max > fk ilişkisi vardır.",
+    "{koyu:Grafik Analizi:} f_sürtünme - F grafiğinin statik bölgesinde açı 45° (eğim 1) olup F > fs,max olduğunda sürtünme fk değerine inerek sabitlenir.",
+    "{koyu:Bağlı Değişkenler ve Günlük Hayat:} Sürtünme yüzey cinsine ve dik tepki kuvvetine (N) bağlıdır, yüzey alanına bağlı değildir; yürüme ve frenleme için zorunludur."
+  ]
+}

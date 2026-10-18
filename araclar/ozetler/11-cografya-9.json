@@ -1,0 +1,261 @@
+{
+  "ad": "11-cografya-9",
+  "sinif": 11,
+  "ders": "cografya",
+  "ders_adi": "Coğrafya",
+  "hafta": 9,
+  "tarih": "9-13 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "2. Ünite: Mekânsal Bilgi Teknolojileri",
+  "konu": "Web Tabanlı Coğrafi Bilgi Sistemleri (Web-CBS) Uygulamaları, Katmanlı Harita Üretimi ve Mekânsal Veri Analizi (COĞ.11.2.1)",
+  "ciktilar": [
+    "Web tabanlı Coğrafi Bilgi Sistemleri (Web-CBS) platformlarının çalışma yapısını, veri modellerini (vektör-raster) ve katman mimarisini açıklar.",
+    "Web-CBS uygulamalarını kullanarak tematik haritaları okur, katmanları çakıştırarak çözümler ve mekânsal dağılışlardan çıkarım yapar.",
+    "Mekânsal ve öznitelik verilerini Web-CBS ortamına aktararak altlık seçimi, sembolleştirme ve sorgulama adımlarıyla tematik harita oluşturur."
+  ],
+  "giris": "Yeryüzüne ait doğal ve beşerî verilerin toplanması, depolanması, analiz edilmesi ve görselleştirilmesi sürecinde {koyu:Coğrafi Bilgi Sistemleri (CBS)} modern coğrafyanın en güçlü karar destek aracına dönüşmüştür. Bulut bilişim ve internet teknolojilerinin gelişmesiyle ortaya çıkan {koyu:Web Tabanlı CBS (Web-CBS)} uygulamaları, masaüstü yazılım kurulumuna ihtiyaç bırakmadan tarayıcılar üzerinden etkileşimli harita okuma, mekânsal sorgulama ve yeni harita üretme imkânı sunmaktadır.",
+  "bolumler": [
+    {
+      "baslik": "CBS'nin Bileşenleri, Veri Modelleri ve Katman Yapısı",
+      "metin": [
+        "Coğrafi Bilgi Sistemleri (CBS); mekânsal (konuma dayalı) veriler ile bu verileri tanımlayan sözel/sayısal {koyu:öznitelik verilerini} bir bütün halinde işleyen bilgi sistemidir. Bir CBS'nin eksiksiz çalışabilmesi için beş temel bileşene ihtiyaç vardır: {koyu:donanım} (bilgisayar, sunucu, GPS, uydu alıcıları), {koyu:yazılım}, {koyu:veri}, {koyu:insan} (uzman ve kullanıcılar) ve {koyu:yöntem} (analiz kuralları).",
+        "CBS ortamında mekânsal veriler {koyu:vektör} ve {koyu:raster (hücresel)} olmak üzere iki temel modelle temsil edilir. Vektör veri modelinde coğrafi unsurlar (x, y) koordinatlarına dayalı {koyu:nokta} (deprem merkez üssü, su kuyusu, okul), {koyu:çizgi} (akarsu, kara yolu, fay hattı, boru hattı) ve {koyu:poligon/alan} (göl, orman alanı, il sınırı, tarım parseli) olarak çizilir ve her bir şeklin arkasında nüfus, uzunluk veya debi gibi bilgilerin yer aldığı bir {koyu:öznitelik tablosu} bulunur.",
+        "Raster veri modelinde ise yeryüzü eşit boyutlu kare hücrelerden ({koyu:piksel}) oluşan bir ızgara (grid) şeklinde gösterilir; uydu görüntüleri, hava fotoğrafları, radar verileri ve {koyu:Sayısal Yükselti Modelleri (SYM/DEM)} raster veriye örnektir. CBS, gerçek dünyadaki topoğrafya, hidrografya, ulaşım, arazi kullanımı ve mülkiyet gibi unsurları ayrı {koyu:katmanlar (layers)} halinde saklar ve bu katmanları koordinat bazlı üst üste çakıştırarak bütüncül analiz yapar."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">COĞRAFİ BİLGİ SİSTEMLERİ (CBS) VE KATMANLI VERİ MİMARİSİ</text>\n  <rect x=\"25\" y=\"50\" width=\"205\" height=\"185\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/>\n  <text x=\"127\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">CBS'nin 5 Temel Bileşeni</text>\n  <text x=\"40\" y=\"103\" font-size=\"11\" fill=\"#334155\">1. Donanım (Sunucu, GPS, İHA)</text>\n  <text x=\"40\" y=\"125\" font-size=\"11\" fill=\"#334155\">2. Yazılım (Masaüstü &amp; Web-CBS)</text>\n  <text x=\"40\" y=\"147\" font-size=\"11\" fill=\"#334155\">3. Veri (Mekânsal &amp; Öznitelik)</text>\n  <text x=\"40\" y=\"169\" font-size=\"11\" fill=\"#334155\">4. İnsan (Analist ve Kullanıcı)</text>\n  <text x=\"40\" y=\"191\" font-size=\"11\" fill=\"#334155\">5. Yöntem (Analiz Algoritmaları)</text>\n  <rect x=\"247\" y=\"50\" width=\"205\" height=\"185\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/>\n  <text x=\"350\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Vektör ve Raster Veri Modeli</text>\n  <text x=\"262\" y=\"103\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">• Vektör Veri (Koordinatlı):</text>\n  <text x=\"270\" y=\"120\" font-size=\"10.5\" fill=\"#475569\">- Nokta: Kuyu, okul, deprem merkezi</text>\n  <text x=\"270\" y=\"137\" font-size=\"10.5\" fill=\"#475569\">- Çizgi: Akarsu, kara yolu, fay hattı</text>\n  <text x=\"270\" y=\"154\" font-size=\"10.5\" fill=\"#475569\">- Poligon (Alan): Göl, il sınırı, orman</text>\n  <text x=\"262\" y=\"178\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">• Raster Veri (Hücre / Piksel):</text>\n  <text x=\"270\" y=\"195\" font-size=\"10.5\" fill=\"#475569\">Uydu görüntüsü, hava fotoğrafı,</text>\n  <text x=\"270\" y=\"211\" font-size=\"10.5\" fill=\"#475569\">sayısal yükselti modeli (SYM/DEM).</text>\n  <rect x=\"470\" y=\"50\" width=\"205\" height=\"185\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\"/>\n  <text x=\"572\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#a16207\">Katmanlı (Layer) Çakıştırma</text>\n  <text x=\"485\" y=\"103\" font-size=\"11\" fill=\"#334155\">• Katman 1: İdari Sınırlar ve Nüfus</text>\n  <text x=\"485\" y=\"125\" font-size=\"11\" fill=\"#334155\">• Katman 2: Ulaşım ve Altyapı Ağı</text>\n  <text x=\"485\" y=\"147\" font-size=\"11\" fill=\"#334155\">• Katman 3: Hidrografya ve Eğim</text>\n  <text x=\"485\" y=\"169\" font-size=\"11\" fill=\"#334155\">• Katman 4: Arazi Kullanımı</text>\n  <text x=\"572\" y=\"205\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#854d0e\">Üst üste çakıştırma (Overlay) ile</text>\n  <text x=\"572\" y=\"220\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#854d0e\">sentez ve uygun yer seçimi yapılır.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Mekânsal Veri ile Öznitelik Verisi Farkı",
+          "metin": "Bir baraj gölünün harita üzerindeki koordinatları ve alansal sınırları (poligon) 'mekânsal veri' iken; o barajın su tutma kapasitesi, yapım yılı ve enerji üretim miktarı tablodaki 'öznitelik verisi'dir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Vektör mü Raster mı?",
+          "metin": "Kesin sınırları olan idari sınır, parsel ve yol ağları için 'vektör veri'; sıcaklık dağılışı, yükselti basamakları ve uydu görüntüleri gibi sürekli değişen yüzeyler için 'raster veri' tercih edilir."
+        }
+      ]
+    },
+    {
+      "baslik": "Web Tabanlı CBS (Web-CBS) ve Mekânsal Analiz Yöntemleri",
+      "metin": [
+        "{koyu:Web Tabanlı CBS (Web-CBS)}, coğrafi verilerin bulut sunucularda tutulduğu ve standart web harita servisleri ({koyu:WMS, WFS}) aracılığıyla bilgisayar, tablet veya akıllı telefonlardaki internet tarayıcıları üzerinden kullanıldığı sistemdir. Türkiye'de MEB Coğrafya {koyu:Atlas Uygulaması}, Tapu ve Kadastro Genel Müdürlüğü ({koyu:TKGM}) Parsel Sorgulama, {koyu:e-Devlet / Türkiye Ulusal Coğrafi Bilgi Sistemi (TUCBS)}, AFAD Deprem Tehlike Haritası ve MGM radar ekranları yaygın Web-CBS örnekleridir.",
+        "Klasik basılı haritalardan farklı olarak Web-CBS haritaları {koyu:dinamik, etkileşimli ve güncellenebilir} niteliktedir. Kullanıcı istediği katmanı açıp kapatabilir, ölçeği anında değiştirerek yakınlaşıp uzaklaşabilir ({koyu:zoom}), bir nesneye tıklayarak öznitelik bilgilerini sorgulayabilir ve gerçek zamanlı (anlık) trafik, hava durumu veya afet verilerini izleyebilir.",
+        "Web-CBS platformlarında harita çözümleme ve çıkarım yapma sürecinde dört temel mekânsal analiz kullanılır: 1) {koyu:Çakıştırma (Overlay) Analizi:} Birden fazla katmanın (eğim, fay hattı, yerleşim, su kaynağı) üst üste getirilerek yeni bir tesis veya güneş santrali için en uygun yerin seçilmesi. 2) {koyu:Tampon Bölge (Buffer) Analizi:} Bir akarsu, fay hattı veya otoyol çevresinde belirli bir mesafe (örneğin 500 metre) koruma veya risk kuşağı belirlenmesi. 3) {koyu:Ağ (Network) Analizi:} İtfaiye, ambulans veya lojistik araçları için en kısa ve en hızlı güzergâhın hesaplanması. 4) {koyu:Yüzey ve Görünürlük Analizi:} Sayısal yükselti modelinden eğim, bakı ve yangın gözetleme kulesi görüş alanının çıkarılması."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">WEB TABANLI CBS (WEB-CBS) MİMARİSİ VE MEKÂNSAL ANALİZLER</text>\n  <rect x=\"35\" y=\"50\" width=\"300\" height=\"185\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/>\n  <text x=\"185\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Web-CBS Çalışma Prensibi</text>\n  <text x=\"50\" y=\"105\" font-size=\"11\" fill=\"#334155\">• Bulut Sunucu + Harita Servisleri (WMS, WFS)</text>\n  <text x=\"50\" y=\"127\" font-size=\"11\" fill=\"#334155\">• Kurulum gerektirmeden internet tarayıcısı</text>\n  <text x=\"60\" y=\"145\" font-size=\"10.5\" fill=\"#475569\">veya mobil cihaz üzerinden erişim sağlar.</text>\n  <text x=\"50\" y=\"170\" font-size=\"11\" fill=\"#334155\">• Gerçek zamanlı (anlık) veri paylaşımı: Trafik,</text>\n  <text x=\"60\" y=\"188\" font-size=\"10.5\" fill=\"#475569\">meteoroloji, deprem, orman yangını izleme.</text>\n  <text x=\"185\" y=\"218\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e40af\">Örnek: Atlas Uygulaması, TKGM Parsel, AFAD</text>\n  <rect x=\"365\" y=\"50\" width=\"300\" height=\"185\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#ef4444\"/>\n  <text x=\"515\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b91c1c\">Temel CBS Mekânsal Analiz Türleri</text>\n  <text x=\"380\" y=\"103\" font-size=\"11\" fill=\"#334155\">• Tampon Bölge (Buffer) Analizi: Fay hattı veya</text>\n  <text x=\"390\" y=\"120\" font-size=\"10.5\" fill=\"#475569\">akarsu çevresinde belirli mesafe koruma kuşağı.</text>\n  <text x=\"380\" y=\"142\" font-size=\"11\" fill=\"#334155\">• Çakıştırma (Overlay) Analizi: Farklı katmanları</text>\n  <text x=\"390\" y=\"159\" font-size=\"10.5\" fill=\"#475569\">birleştirerek en uygun yer seçimi (okul, santral).</text>\n  <text x=\"380\" y=\"181\" font-size=\"11\" fill=\"#334155\">• Ağ (Network) Analizi: En kısa ve en hızlı</text>\n  <text x=\"390\" y=\"198\" font-size=\"10.5\" fill=\"#475569\">ulaşım/ambulans rotasının hesaplanması.</text>\n  <text x=\"380\" y=\"218\" font-size=\"11\" fill=\"#334155\">• Yüzey Analizi: Eğim, bakı ve görünürlük.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Tampon Bölge (Buffer) ve Çakıştırma (Overlay) Ayrımı",
+          "metin": "Sorularda 'fay hattına 2 km mesafedeki binaların tespiti' veya 'dere yatağı etrafında 300 m yapılaşma yasağı' geçiyorsa Tampon Bölge (Buffer); 'eğimi az, güneye bakan ve yola yakın arazilerin birleştirilmesi' geçiyorsa Çakıştırma (Overlay) analizidir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Uzaktan Algılama (UA) ile CBS İlişkisi",
+          "metin": "Uydular ve İHA'lar yeryüzüne temas etmeden görüntü toplayan 'Uzaktan Algılama' araçlarıdır; elde edilen bu raster görüntüler CBS yazılımlarına aktarılarak katman olarak analiz edilir."
+        }
+      ]
+    },
+    {
+      "baslik": "Web-CBS Uygulamasıyla Basit Harita Oluşturma Süreci",
+      "metin": [
+        "Bir öğrencinin veya araştırmacının Web-CBS aracılığıyla tematik bir harita oluşturması dört aşamalı planlı bir süreçtir. İlk aşamada haritanın {koyu:amacı ve konusu} belirlenir (örneğin Türkiye'deki jeotermal kaynaklar ve fay hatları ilişkisi) ve amaca uygun bir {koyu:altlık harita (basemap)} (topoğrafya, uydu görüntüsü veya açık renkli idari harita) seçilir.",
+        "İkinci aşamada haritaya {koyu:veri katmanları} eklenir. Hazır web servislerinden (WMS/GeoJSON/KML/CSV) katman çağrılabileceği gibi, kullanıcı kendi nokta, çizgi veya poligon çizimlerini de harita üzerine işleyebilir ve her bir coğrafi nesnenin {koyu:öznitelik tablosuna} sayısal/sözel verileri girer.",
+        "Üçüncü aşamada {koyu:sembolleştirme (kartografik tasarım)} ve filtreleme yapılır: İllerin nüfus yoğunluğu gibi alansal veriler renk tonu derecelendirmesiyle ({koyu:koroplet harita}), deprem büyüklüğü gibi noktasal veriler ise orantılı sembol boyutuyla görselleştirilir; katman şeffaflıkları ayarlanır. Son aşamada başlık, lejant (harita anahtarı), ölçek ve yön oku kontrol edilerek haritadan {koyu:mekânsal çıkarımlar} yapılır ve harita dijital bağlantı veya görüntü olarak paylaşılır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">WEB-CBS İLE HARİTA OLUŞTURMA ADIMLARI (COĞ.11.2.1)</text>\n  <rect x=\"25\" y=\"55\" width=\"150\" height=\"170\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/>\n  <text x=\"100\" y=\"82\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">1. Amaç ve Altlık</text>\n  <text x=\"38\" y=\"110\" font-size=\"10.5\" fill=\"#334155\">• Harita konusu seçilir.</text>\n  <text x=\"38\" y=\"130\" font-size=\"10.5\" fill=\"#334155\">• Uygun altlık harita</text>\n  <text x=\"45\" y=\"146\" font-size=\"10\" fill=\"#475569\">(topoğrafya, uydu veya</text>\n  <text x=\"45\" y=\"162\" font-size=\"10\" fill=\"#475569\">sokak haritası) açılır.</text>\n  <rect x=\"190\" y=\"55\" width=\"150\" height=\"170\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/>\n  <text x=\"265\" y=\"82\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">2. Katman Ekleme</text>\n  <text x=\"203\" y=\"110\" font-size=\"10.5\" fill=\"#334155\">• Nokta, çizgi, poligon</text>\n  <text x=\"210\" y=\"126\" font-size=\"10\" fill=\"#475569\">katmanları eklenir.</text>\n  <text x=\"203\" y=\"148\" font-size=\"10.5\" fill=\"#334155\">• Öznitelik tablosuna</text>\n  <text x=\"210\" y=\"164\" font-size=\"10\" fill=\"#475569\">sayısal veriler girilir.</text>\n  <rect x=\"355\" y=\"55\" width=\"150\" height=\"170\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\"/>\n  <text x=\"430\" y=\"82\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#a16207\">3. Sembol ve Analiz</text>\n  <text x=\"368\" y=\"110\" font-size=\"10.5\" fill=\"#334155\">• Renk derecelendirme</text>\n  <text x=\"375\" y=\"126\" font-size=\"10\" fill=\"#475569\">(koroplet) ve sembol</text>\n  <text x=\"375\" y=\"142\" font-size=\"10\" fill=\"#475569\">boyutu ayarlanır.</text>\n  <text x=\"368\" y=\"164\" font-size=\"10.5\" fill=\"#334155\">• Sorgulama yapılır.</text>\n  <rect x=\"520\" y=\"55\" width=\"155\" height=\"170\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#ef4444\"/>\n  <text x=\"597\" y=\"82\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#b91c1c\">4. Çıkarım ve Paylaşım</text>\n  <text x=\"533\" y=\"110\" font-size=\"10.5\" fill=\"#334155\">• Lejant, ölçek, yön</text>\n  <text x=\"540\" y=\"126\" font-size=\"10\" fill=\"#475569\">oku ve başlık eklenir.</text>\n  <text x=\"533\" y=\"148\" font-size=\"10.5\" fill=\"#334155\">• Mekânsal dağılış</text>\n  <text x=\"540\" y=\"164\" font-size=\"10\" fill=\"#475569\">yorumlanıp paylaşılır.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Katman Sıralaması ve Şeffaflık",
+          "metin": "Web-CBS'de katmanlar çizilirken en altta poligon (alan) katmanları, ortada çizgi katmanları, en üstte ise nokta katmanları yer almalıdır; aksi takdirde poligon katmanı alttaki noktaları kapatır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Veri Mahremiyeti ve Etik",
+          "metin": "Web-CBS üzerinden harita oluşturup paylaşırken kişisel verilerin gizliliğine (mahremiyet değerine), ulusal güvenlik sınırlarına ve resmî veri kaynaklarının doğru referans gösterilmesine özen gösterilmelidir."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Coğrafi Bilgi Sistemlerinde (CBS) kullanılan vektör ve raster veri modellerini tanımlayarak her birine ikişer örnek veriniz.",
+      "cevap": "Vektör veri modeli, coğrafi unsurları koordinatlara dayalı nokta (deprem merkezi, kuyu), çizgi (akarsu, kara yolu) ve poligon/alan (göl, il sınırı) şeklinde temsil eder. Raster veri modeli ise yeryüzünü eşit boyutlu piksellerden (hücrelerden) oluşan bir ızgara olarak gösterir; uydu görüntüleri ve sayısal yükselti modelleri (SYM) raster veriye örnektir."
+    },
+    {
+      "soru": "Web tabanlı CBS (Web-CBS) uygulamalarının klasik basılı haritalara ve masaüstü CBS yazılımlarına göre sağladığı başlıca üstünlükler nelerdir?",
+      "cevap": "Web-CBS uygulamaları bilgisayara ağır yazılım kurulumu gerektirmez; internet tarayıcısı veya mobil cihazla her yerden erişilebilir. Basılı haritaların aksine ölçeği değiştirilebilir, katmanları açılıp kapatılabilir, öznitelik sorgulaması yapılabilir ve anlık (gerçek zamanlı) verilerle sürekli güncellenebilir."
+    },
+    {
+      "soru": "Bir belediyenin şehir içinden geçen akarsuyun taşkın riskini belirlemek için akarsu yatağının sağ ve solunda 250'şer metrelik alanı harita üzerinde işaretleyip bu alandaki binaları listelemesi hangi CBS analiz türüne girer?",
+      "cevap": "Bir nokta, çizgi veya alan nesnesinin çevresinde belirli bir yarıçap veya mesafe dahilinde kalan bölgeyi belirleme işlemi Tampon Bölge (Buffer) analizidir."
+    },
+    {
+      "soru": "Yeni kurulacak bir güneş enerjisi santrali (GES) için güneşlenme süresi, arazi eğimi, trafo merkezlerine yakınlık ve tarım dışı arazi katmanlarının üst üste getirilerek en uygun arazinin belirlenmesi hangi CBS analizidir?",
+      "cevap": "Farklı coğrafi katmanların koordinat bazlı üst üste getirilerek belirli ölçütleri aynı anda sağlayan alanların saptanması Çakıştırma (Overlay) analizidir."
+    },
+    {
+      "soru": "Web-CBS üzerinde çok katmanlı bir harita hazırlarken nokta, çizgi ve poligon katmanlarının alttan üste doğru dizilimi nasıl olmalıdır? Nedenini açıklayınız.",
+      "cevap": "En altta altlık harita ve poligon (alan) katmanları, onun üzerinde çizgi katmanları, en üstte ise nokta katmanları yer almalıdır. Eğer poligon katmanı en üste konulursa ve şeffaflığı azaltılmazsa altında kalan çizgi ve nokta verilerini örterek görünmez hale getirir."
+    },
+    {
+      "soru": "Web-CBS ortamında Türkiye'deki illerin nüfus yoğunluğu ile deprem merkez üslerini aynı haritada göstermek isteyen bir öğrenci hangi sembolleştirme yöntemlerini seçmelidir?",
+      "cevap": "İllerin nüfus yoğunluğu alansal (poligon) bir veri olduğu için renk tonu derecelendirmesi (koroplet yöntemi) ile gösterilmeli; deprem merkez üsleri ise noktasal veri olduğu için depremin büyüklüğüne göre çapı büyüyen dereceli/orantılı nokta sembolleriyle üst katmana yerleştirilmelidir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Coğrafi Bilgi Sistemlerinde (CBS) mekânsal veriler vektör (nokta, çizgi, poligon) ve raster (hücresel) veri modelleriyle saklanır. Buna göre aşağıdaki coğrafi unsurlardan hangisinin CBS ortamında 'çizgi (line)' vektör katmanı ile gösterilmesi en uygundur?",
+      "secenekler": [
+        "Kuzey Anadolu Fay Hattı ve kara yolu ağı",
+        "Van Gölü'nün kapladığı su yüzeyi",
+        "Meteoroloji istasyonlarının konumları",
+        "İllerin idari mülkiyet sınırları",
+        "Meteoroloji uydusundan alınan bulut görüntüsü"
+      ],
+      "dogru": 0,
+      "aciklama": "Fay hatları, akarsular, kara ve demir yolları ile boru hatları çizgisel uzanış gösterdikleri için çizgi (line) vektör modeliyle temsil edilir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir ilde meydana gelen trafik kazasına en kısa sürede ulaşması gereken ambulansın, anlık trafik yoğunluğu, yol eğimi ve kavşak dönüş kuralları hesaba katılarak en uygun güzergâhının Web-CBS üzerinden belirlenmesi hangi mekânsal analiz yöntemiyle gerçekleştirilir?",
+      "secenekler": [
+        "Tampon Bölge (Buffer) Analizi",
+        "Ağ (Network) Analizi",
+        "Görünürlük (Viewshed) Analizi",
+        "Bakı ve Yükselti Analizi",
+        "Koroplet Sınıflandırma Analizi"
+      ],
+      "dogru": 1,
+      "aciklama": "Ulaşım hatları, enerji nakil hatları veya boru hatları üzerinde en kısa, en hızlı veya en düşük maliyetli rotanın hesaplanması Ağ (Network) analizidir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Orman yangınlarını erken tespit etmek amacıyla bir dağlık bölgede kurulacak gözetleme kulesinin hangi yamaçları görebileceğini hesaplamak isteyen bir uzman, Web-CBS ortamında öncelikle hangi raster veri katmanını kullanmalıdır?",
+      "secenekler": [
+        "İlçe nüfus yoğunluğu tablosu",
+        "Seçmen kütüğü öznitelik verisi",
+        "Sayısal Yükselti Modeli (SYM / DEM)",
+        "Toprak pH değeri nokta verisi",
+        "Yıllık turizm geliri istatistikleri"
+      ],
+      "dogru": 2,
+      "aciklama": "Eğim, bakı ve görünürlük (viewshed) analizlerinin yapılabilmesi için arazinin üç boyutlu topografyasını içeren Sayısal Yükselti Modeli (SYM/DEM) katmanı gereklidir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Web tabanlı CBS (Web-CBS) uygulamaları kullanılarak yapılan harita çalışmalarıyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+      "secenekler": [
+        "Harita ölçeği sabittir, yakınlaştırma yapıldığında detay düzeyi değişmez.",
+        "Katmanlar arasındaki görsel çakışmayı önlemek için nokta katmanı en alta konulur.",
+        "Haritadaki coğrafi şekillerin arkasında herhangi bir sözel veya sayısal veri tablosu bulunmaz.",
+        "Farklı tematik katmanlar üst üste çakıştırılarak mekânsal ilişkiler ve dağılışlar çözümlenebilir.",
+        "Web-CBS uygulamalarını kullanabilmek için her cihaza yüksek kapasiteli masaüstü yazılımı kurmak şarttır."
+      ],
+      "dogru": 3,
+      "aciklama": "Web-CBS'nin en önemli işlevi, farklı tematik katmanları (iklim, yer şekilleri, nüfus, ulaşım vb.) etkileşimli olarak çakıştırıp mekânsal nedensellik ve dağılış analizi yapabilmesidir."
+    },
+    {
+      "tur": "dy",
+      "yonerge": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "CBS'de bir gölün haritadaki konumu mekânsal veri, gölün derinliği ve su kalitesi değerleri ise öznitelik verisidir.",
+          "dogru": true
+        },
+        {
+          "metin": "Uydu görüntüleri ve hava fotoğrafları CBS'de nokta vektör veri modeline örnek oluşturur.",
+          "dogru": false
+        },
+        {
+          "metin": "Yüksek gerilim hatlarının çevresinde 100 metrelik güvenlik koridoru belirlemek için Tampon Bölge (Buffer) analizi kullanılır.",
+          "dogru": true
+        },
+        {
+          "metin": "Web-CBS haritalarında poligon katmanının şeffaflığı (opaklığı) ayarlanarak alttaki altlık haritanın görünmesi sağlanabilir.",
+          "dogru": true
+        },
+        {
+          "metin": "CBS bileşenleri arasında insan ve yöntem unsurları yer almaz; sistem donanım ve yazılımdan ibarettir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "yonerge": "Aşağıdaki CBS kavramlarını uygun açıklamalarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Vektör Veri Modeli",
+          "Mekânsal unsurları koordinatlara dayalı nokta, çizgi ve poligon (alan) olarak temsil eden model"
+        ],
+        [
+          "Raster Veri Modeli",
+          "Yeryüzünü eşit boyutlu piksellerden (hücrelerden) oluşan bir ızgara yapısıyla gösteren model"
+        ],
+        [
+          "Öznitelik Tablosu",
+          "Haritadaki coğrafi unsurlara ait nüfus, alan, sıcaklık gibi sayısal ve sözel bilgilerin tutulduğu veri tabanı"
+        ],
+        [
+          "Çakıştırma (Overlay) Analizi",
+          "Birden fazla katmanı üst üste getirerek ölçütlere en uygun alanı belirleme işlemi"
+        ],
+        [
+          "Tampon Bölge (Buffer) Analizi",
+          "Bir coğrafi nesnenin etrafında belirli mesafede koruma veya etki kuşağı oluşturma işlemi"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "yonerge": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "CBS'nin beş temel bileşeni donanım, yazılım, veri, yöntem ve ___ unsurudur.",
+          "cevap": "insan"
+        },
+        {
+          "metin": "İdari il sınırları, göller ve orman alanları vektör veri modelinde ___ (alan) geometrisiyle gösterilir.",
+          "cevap": "poligon"
+        },
+        {
+          "metin": "İllerin nüfus yoğunluğu gibi verilerin renk tonu derecelendirmesiyle gösterildiği tematik haritalara ___ harita denir.",
+          "cevap": "koroplet"
+        },
+        {
+          "metin": "Ulaşım hatları üzerinde iki nokta arasındaki en kısa veya en hızlı rotayı bulan analize ___ analizi adı verilir.",
+          "cevap": "ağ"
+        },
+        {
+          "metin": "Harita üzerindeki renk, sembol ve işaretlerin ne anlama geldiğini açıklayan bölüme ___ (harita anahtarı) denir.",
+          "cevap": "lejant"
+        }
+      ],
+      "fazla": [
+        "izobar",
+        "batimetri"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Yaşadığınız şehirde yeni bir şehir hastanesi kurmak için Web-CBS uygulaması üzerinden yer seçimi yapacağınızı düşününüz. Hangi katmanları kullanacağınızı ve hangi mekânsal analiz yöntemlerini uygulayacağınızı adım adım açıklayınız.",
+      "ipuclari": [
+        "Kullanılacak katmanlar: Fay hatları, eğim (SYM), ana ulaşım yolları, nüfus dağılışı, hazine arazileri.",
+        "Tampon bölge (Buffer) analizi: Fay hatlarından ve taşkın yataklarından uzak güvenli mesafe.",
+        "Çakıştırma (Overlay) ve Ağ (Network) analizi: Katmanları birleştirme ve ambulans erişim süresini hesaplama."
+      ],
+      "cevap": "Şehir hastanesi yer seçimi için Web-CBS ortamına öncelikle diri fay hatları, sayısal yükselti modeli (eğim), ana ulaşım arterleri, mahalle bazlı nüfus yoğunluğu ve arazi mülkiyeti katmanları eklenir. İlk olarak Tampon Bölge (Buffer) analizi ile fay hatlarına ve dere yataklarına yakın riskli alanlar elenir. Ardından Ağ (Network) analizi ile nüfusun yoğun olduğu mahallelerden ambulansla en hızlı ulaşılabilecek kavşak noktaları belirlenir. Son olarak Çakıştırma (Overlay) analizi ile eğimi düşük, zemini sağlam ve ulaşımı kolay katmanlar üst üste getirilerek en uygun hastane arazisi tespit edilir."
+    }
+  ],
+  "ozet": [
+    "{koyu:CBS Bileşenleri:} Coğrafi Bilgi Sistemleri donanım, yazılım, veri, insan ve yöntem bileşenlerinden oluşur; mekânsal veri ile öznitelik verisini bütünleştirir.",
+    "{koyu:Vektör ve Raster Veri:} Nokta, çizgi ve poligon veriler vektör modeli; uydu görüntüleri ve sayısal yükselti modelleri (SYM) ise piksel tabanlı raster modeli oluşturur.",
+    "{koyu:Web-CBS Avantajı:} İnternet tarayıcıları üzerinden kurulumsuz erişim, dinamik ölçekleme, katman yönetimi ve gerçek zamanlı veri paylaşımı sağlar.",
+    "{koyu:Mekânsal Analizler:} Çakıştırma (Overlay), Tampon Bölge (Buffer), Ağ (Network) ve Yüzey/Görünürlük analizleri karar destek süreçlerinin temelidir.",
+    "{koyu:Harita Üretimi:} Amaç ve altlık seçimi, katman ve öznitelik ekleme, uygun sembolleştirme (koroplet/orantılı sembol) ve lejant düzenlemesiyle tamamlanır."
+  ]
+}

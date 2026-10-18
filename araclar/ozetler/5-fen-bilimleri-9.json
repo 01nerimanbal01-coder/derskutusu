@@ -1,0 +1,262 @@
+{
+  "ad": "5-fen-bilimleri-9",
+  "sinif": 5,
+  "ders": "fen-bilimleri",
+  "ders_adi": "Fen Bilimleri",
+  "hafta": 9,
+  "tarih": "9-13 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "2. Ünite: Kuvveti Tanıyalım",
+  "konu": "Basit Araç Gereçle Bilimsel Bir Dinamometre Modeli Tasarlama, Yayların Esneklik Sınırı ve Ölçüm Hassasiyetini Geliştirme",
+  "ciktilar": [
+    "Günlük hayatta kolayca bulunabilen basit araç gereçleri kullanarak kuvvet ölçebilen bilimsel bir dinamometre modeli tasarlar.",
+    "Yayların uzama miktarı ile uygulanan kuvvet arasındaki doğrusal ilişkiyi ve esneklik sınırının aşılmasının sonuçlarını analiz eder.",
+    "Tasarladığı dinamometre modelinin ölçüm hassasiyetini yay kalınlığı, tel cinsi ve bölme sayısına ilişkin yeni kanıtlarla yeniler."
+  ],
+  "giris": "Kuvvetin büyüklüğünü ölçen dinamometrelerin çalışma ilkesini kavradıktan sonra, şimdi birer bilim insanı ve mühendis gibi kendi dinamometre modelimizi tasarlıyoruz. Basit araç gereçlerle oluşturduğumuz modelde esnek yayın kuvvet karşısındaki davranışını gözlemliyor, ölçeklendirme yapıyor ve elde ettiğimiz ölçüm kanıtlarına göre modelimizin hassasiyetini nasıl geliştirebileceğimizi keşfediyoruz.",
+  "bolumler": [
+    {
+      "baslik": "Basit Araç Gereçle Dinamometre Modeli Tasarlama",
+      "metin": [
+        "Bilimsel bir dinamometre modeli oluşturmak için öncelikle kuvvet uygulandığında uzayıp kuvvet kaldırıldığında eski hâline dönebilen {koyu:sarmal yay} veya {koyu:esnek paket lastiği} gibi esnek bir malzeme seçilir.",
+        "Şeffaf bir şırınga gövdesi, plastik boru ya da karton silindir dış muhafaza olarak kullanılır. İçine yerleştirilen yayın alt ucuna cisimleri asmak için ataçtan yapılmış bir {koyu:kanca} takılır ve yüksüz durumdaki başlangıç hizası {koyu:0 N} olarak işaretlenir.",
+        "Ardından ağırlığı bilinen özdeş cisimler kancaya teker teker asılır; her bir cismin oluşturduğu eşit uzama miktarları dış gövde üzerindeki ölçek kâğıdına eşit bölmeler hâlinde çizilerek dinamometrenin {koyu:kalibrasyonu} (ölçeklendirilmesi) tamamlanır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">BASİT ARAÇ GEREÇLE DİNAMOMETRE MODELİ TASARIMI</text>\n  <rect x=\"25\" y=\"45\" width=\"310\" height=\"195\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Kullanılan Malzemeler ve Görevleri</text>\n  <text x=\"45\" y=\"96\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">• Sarmal Yay / Paket Lastiği:</text>\n  <text x=\"55\" y=\"114\" font-size=\"11\" fill=\"#334155\">Kuvvet etkisiyle uzayan esnek iç eleman.</text>\n  <text x=\"45\" y=\"138\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">• Şırınga / Karton Silindir:</text>\n  <text x=\"55\" y=\"156\" font-size=\"11\" fill=\"#334155\">Yayı koruyan dış gövde ve ölçek yüzeyi.</text>\n  <text x=\"45\" y=\"180\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">• Cetvel ve Kalem:</text>\n  <text x=\"55\" y=\"198\" font-size=\"11\" fill=\"#334155\">Eşit bölmeli Newton (N) ölçeği çizimi.</text>\n  <text x=\"45\" y=\"222\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">• Ataç veya Tel Kanca:</text>\n  <text x=\"200\" y=\"222\" font-size=\"11\" fill=\"#334155\">Cisimleri asma ucu.</text>\n\n  <rect x=\"360\" y=\"45\" width=\"315\" height=\"195\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n  <text x=\"517\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Tasarım ve Kalibrasyon Aşamaları</text>\n  <text x=\"380\" y=\"98\" font-size=\"12\" font-weight=\"bold\" fill=\"#14532d\">1. Sıfır Noktasını Belirleme:</text>\n  <text x=\"390\" y=\"116\" font-size=\"11\" fill=\"#334155\">Kancaya yük asılmamışken uç hizası '0 N' işaretlenir.</text>\n  <text x=\"380\" y=\"144\" font-size=\"12\" font-weight=\"bold\" fill=\"#14532d\">2. Eşit Ağırlıklarla Bölmelendirme:</text>\n  <text x=\"390\" y=\"162\" font-size=\"11\" fill=\"#334155\">Özdeş cisimler asıldıkça uzama miktarları eşit</text>\n  <text x=\"390\" y=\"178\" font-size=\"11\" fill=\"#334155\">aralıklarla (1 N, 2 N, 3 N...) ölçeklendirilir.</text>\n  <text x=\"380\" y=\"204\" font-size=\"12\" font-weight=\"bold\" fill=\"#14532d\">3. Test Etme ve Yenileme:</text>\n  <text x=\"390\" y=\"222\" font-size=\"11\" fill=\"#334155\">Farklı ağırlıklarla ölçüm yapılır, model geliştirilir.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Esnek Olmayan Madde Kullanılamaz",
+          "metin": "Bakır tel, pamuk ipi veya tahta çubuk gibi esnek olmayan maddeler kuvvet kaldırıldığında eski boyuna dönemediği için dinamometre yapımında kullanılamaz."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Sıfır Noktası Kontrolü",
+          "metin": "Ölçüme başlamadan önce dinamometrenin kancası boşken göstergenin tam 0 N çizgisinde olup olmadığı mutlaka kontrol edilmelidir."
+        }
+      ]
+    },
+    {
+      "baslik": "Kuvvet - Uzama İlişkisi ve Yayların Esneklik Sınırı",
+      "metin": [
+        "Bir dinamometreye asılan yükün ağırlığı (uygulanan kuvvet) arttıkça, dinamometre içindeki yayın uzama miktarı da {koyu:doğru orantılı} olarak artar. Örneğin {koyu:10 N} kuvvet yayı {koyu:2 cm} uzatıyorsa, {koyu:20 N} kuvvet {koyu:4 cm}, {koyu:30 N} kuvvet ise {koyu:6 cm} uzatır.",
+        "Her esnek maddenin dayanabileceği en büyük bir kuvvet değeri vardır; bu değere {koyu:esneklik sınırı} (maksimum ölçüm kapasitesi) adı verilir. Örneğin üzerinde en fazla {koyu:50 N} yazan bir dinamometre ile {koyu:50 N} değerinden daha büyük bir kuvvet ölçülemez.",
+        "Eğer yaya esneklik sınırının üzerinde aşırı bir kuvvet uygulanırsa yay esneklik özelliğini kaybeder, kalıcı şekil değişikliğine uğrar ve eski boyuna geri dönemez. Böyle bir dinamometre bozulmuş olur ve doğru ölçüm yapamaz."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">KUVVET - UZAMA İLİŞKİSİ VE ESNEKLİK SINIRI</text>\n  <rect x=\"25\" y=\"48\" width=\"320\" height=\"190\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\" stroke-width=\"1.5\"/>\n  <text x=\"185\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#a16207\">Doğrusal Uzama Oranı Tablosu</text>\n  <line x1=\"45\" y1=\"85\" x2=\"325\" y2=\"85\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/>\n  <text x=\"110\" y=\"105\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#713f12\">Uygulanan Kuvvet</text>\n  <text x=\"255\" y=\"105\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#713f12\">Yaydaki Uzama</text>\n  <text x=\"110\" y=\"132\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">10 N</text>\n  <text x=\"255\" y=\"132\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">2 cm</text>\n  <text x=\"110\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">20 N</text>\n  <text x=\"255\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">4 cm</text>\n  <text x=\"110\" y=\"184\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">30 N</text>\n  <text x=\"255\" y=\"184\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">6 cm</text>\n  <text x=\"185\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#854d0e\">Her 5 N kuvvet yayı 1 cm uzatır (Doğru Orantı)</text>\n\n  <rect x=\"365\" y=\"48\" width=\"310\" height=\"190\" rx=\"8\" fill=\"#fff1f2\" stroke=\"#f43f5e\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#be123c\">Esneklik Sınırı ve Bozulan Yay</text>\n  <text x=\"520\" y=\"102\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#9f1239\">50 N kapasiteli dinamometreye</text>\n  <text x=\"520\" y=\"122\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#e11d48\">70 N ağırlık asılırsa ne olur?</text>\n  <text x=\"520\" y=\"152\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• Yayın esneklik sınırı aşılır.</text>\n  <text x=\"520\" y=\"174\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• Yay eski boyuna geri dönemez.</text>\n  <text x=\"520\" y=\"196\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• Dinamometre kalıcı olarak bozulur ve</text>\n  <text x=\"520\" y=\"214\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#be123c\">bir daha doğru ölçüm yapamaz.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Uzama Miktarı ile Son Boy Farkı",
+          "metin": "Sorularda yayın 'uzama miktarı' ile 'toplam (son) boyu' birbirine karıştırılmamalıdır: Son Boy = İlk Boy + Uzama Miktarı."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Bir Bölmenin Değerini Bulma",
+          "metin": "Dinamometrenin ölçebileceği en büyük kuvvet değeri toplam bölme sayısına bölünerek 1 bölmenin kaç Newton olduğu kolayca bulunur."
+        }
+      ]
+    },
+    {
+      "baslik": "Ölçüm Hassasiyeti ve Modeli Yeni Kanıtlara Göre Yenileme",
+      "metin": [
+        "Bir dinamometrenin küçük kuvvet değerlerini bile hatasız ölçebilme yeteneğine {koyu:ölçüm hassasiyeti} denir. Hassasiyet; kullanılan yayın {koyu:tel kalınlığına}, {koyu:yapıldığı maddenin cinsine} ve gövde üzerindeki {koyu:bölme sayısına} bağlıdır.",
+        "İnce telli ve yumuşak (örneğin bakır) yay kullanılan dinamometreler küçük kuvvetlerde bile belirgin şekilde uzadığı için {koyu:daha hassas} ölçüm yapar. Kalın telli ve sert (örneğin çelik) yaylı dinamometreler ise büyük kuvvetleri ölçer ancak hassasiyetleri düşüktür.",
+        "Tasarladığımız dinamometre modeli hafif bir silgiyi ölçtüğünde ibre neredeyse kıpırdamıyorsa, bu kanıttan hareketle modelimizdeki kalın yayı {koyu:daha ince bir yayla} değiştirerek ve ölçeği daha sık bölmelendirerek modelimizi yenileriz."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">DİNAMOMETREDE ÖLÇÜM HASSASİYETİNİ ETKİLEYEN FAKTÖRLER</text>\n  <rect x=\"25\" y=\"48\" width=\"310\" height=\"190\" rx=\"8\" fill=\"#faf5ff\" stroke=\"#a855f7\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#7e22ce\">İnce Yaylı Hassas Dinamometre</text>\n  <text x=\"180\" y=\"104\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">Örnek: 10 N Kapasiteli (10 Bölmeli)</text>\n  <text x=\"180\" y=\"130\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• Her 1 bölme = 1 N değerindedir.</text>\n  <text x=\"180\" y=\"152\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• Küçük kuvvetlerde bile kolayca uzar.</text>\n  <text x=\"180\" y=\"174\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• Bakır gibi yumuşak ve ince tel kullanılır.</text>\n  <text x=\"180\" y=\"204\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#7e22ce\">Hassasiyeti YÜKSEKTİR (Küçük kuvvetleri ölçer)</text>\n\n  <rect x=\"365\" y=\"48\" width=\"310\" height=\"190\" rx=\"8\" fill=\"#ecfeff\" stroke=\"#06b6d4\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0e7490\">Kalın Yaylı Geniş Kapasiteli Dinamometre</text>\n  <text x=\"520\" y=\"104\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#155e75\">Örnek: 100 N Kapasiteli (10 Bölmeli)</text>\n  <text x=\"520\" y=\"130\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• Her 1 bölme = 10 N değerindedir.</text>\n  <text x=\"520\" y=\"152\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• Küçük kuvvetlerde uzaması fark edilmez.</text>\n  <text x=\"520\" y=\"174\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• Çelik gibi sert ve kalın tel kullanılır.</text>\n  <text x=\"520\" y=\"204\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0e7490\">Hassasiyeti DÜŞÜKTÜR (Büyük kuvvetleri ölçer)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Hassasiyet ve Kapasite Ters Orantılıdır",
+          "metin": "Aynı bölme sayısına sahip iki dinamometreden maksimum ölçüm kapasitesi küçük olanın (örneğin 10 N) hassasiyeti, kapasitesi büyük olandan (örneğin 100 N) daha fazladır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Kanıta Dayalı Model Yenileme",
+          "metin": "Lastik zamanla gevşeyip farklı ölçümler vermeye başlarsa, modelimizi metal sarmal yay kullanarak daha güvenilir hâle getirebiliriz."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "On eşit bölmeli bir dinamometrenin ölçebileceği en büyük kuvvet 40 N olduğuna göre, bu dinamometreye 12 N ağırlığında bir cisim asılırsa gösterge kaç bölme uzar?",
+      "cevap": "40 N / 10 bölme = 4 N (her bir bölmenin değeri). 12 N / 4 N = 3 bölme dışarı çıkar."
+    },
+    {
+      "soru": "Başlangıç boyu 10 cm olan bir sarmal yaya 15 N kuvvet uygulandığında yayın boyu 13 cm oluyor. Aynı yaya 30 N kuvvet uygulanırsa yayın son boyu kaç cm olur?",
+      "cevap": "15 N kuvvet yayı 13 - 10 = 3 cm uzatmıştır. 30 N kuvvet (iki katı) yayı 6 cm uzatır. Yayın son boyu 10 + 6 = 16 cm olur."
+    },
+    {
+      "soru": "Bir öğrenci tasarladığı dinamometre modelinde paket lastiği yerine pamuk ipliği kullanırsa modeli doğru çalışır mı? Neden?",
+      "cevap": "Çalışmaz; çünkü pamuk ipliği esnek bir madde değildir. Kuvvet uygulandığında orantılı olarak uzamaz ve kuvvet kaldırıldığında eski hâline dönemez."
+    },
+    {
+      "soru": "Özdeş bölmeli K dinamometresi en fazla 20 N, L dinamometresi ise en fazla 80 N ölçebilmektedir. 6 N ağırlığındaki bir kalem kutusunu hangisiyle ölçmek daha hassas sonuç verir?",
+      "cevap": "K dinamometresi ile ölçmek daha hassas sonuç verir; çünkü K dinamometresinde ince yay kullanılmıştır ve 1 bölmesi 2 N değerindedir."
+    },
+    {
+      "soru": "En fazla 30 N ölçebilen bir dinamometreye 45 N ağırlığında bir taş asılırsa dinamometrede nasıl bir değişim gözlenir?",
+      "cevap": "Yayın esneklik sınırı aşıldığı için yay kalıcı olarak deforme olur (bozulur), taş çıkarılsa bile yay eski boyuna geri dönemez."
+    },
+    {
+      "soru": "Tasarladığımız dinamometre modelinin daha büyük ağırlıkları (örneğin 50 N yerine 100 N) ölçebilecek şekilde yenilenmesi için yayında nasıl bir değişiklik yapılmalıdır?",
+      "cevap": "Modeldeki ince yay çıkarılarak yerine esneklik sınırı daha yüksek olan daha kalın ve sert (çelik gibi) bir sarmal yay takılmalıdır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Basit araç gereçlerle bilimsel bir dinamometre modeli tasarlamak isteyen bir öğrenci, kuvvetin etkisiyle uzayacak iç eleman olarak aşağıdakilerden hangisini seçmelidir?",
+      "secenekler": [
+        "Çelik sarmal yay",
+        "Bakır elektrik teli",
+        "Tahta dondurma çubuğu",
+        "Keten ayakkabı bağı"
+      ],
+      "dogru": 0,
+      "aciklama": "Dinamometrenin çalışması için kuvvet uygulandığında uzayıp kuvvet kalkınca eski hâline dönen esnek bir sarmal yay gereklidir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "On eşit bölmeli bir dinamometrenin üzerinde en fazla 50 N ölçebileceği yazmaktadır. Bu dinamometrenin kancasına asılan bir cisim çubuğu 4 bölme uzattığına göre cismin ağırlığı kaç Newton'dur?",
+      "secenekler": [
+        "15 N",
+        "20 N",
+        "25 N",
+        "40 N"
+      ],
+      "dogru": 1,
+      "aciklama": "50 N / 10 bölme = 5 N (1 bölme değeri). 4 bölme uzadığına göre 4 x 5 N = 20 N olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıda maksimum ölçüm kapasiteleri verilen 10 eşit bölmeli dinamometrelerden hangisinin ölçüm hassasiyeti en yüksektir?",
+      "secenekler": [
+        "100 N kapasiteli dinamometre",
+        "60 N kapasiteli dinamometre",
+        "10 N kapasiteli dinamometre",
+        "40 N kapasiteli dinamometre"
+      ],
+      "dogru": 2,
+      "aciklama": "Maksimum ölçüm kapasitesi en küçük olan (10 N) dinamometre en ince yaya sahiptir ve küçük kuvvetleri en hassas şekilde ölçer."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Esneklik sınırı 60 N olan bir dinamometreye 20 N ağırlığında bir cisim asıldığında yay 3 cm uzamaktadır. Aynı dinamometreye 40 N ağırlığında bir cisim asılırsa yay kaç cm uzar?",
+      "secenekler": [
+        "4 cm",
+        "5 cm",
+        "8 cm",
+        "6 cm"
+      ],
+      "dogru": 3,
+      "aciklama": "Esneklik sınırı aşılmadığı sürece kuvvet iki katına (20 N -> 40 N) çıktığında uzama miktarı da iki katına (3 cm -> 6 cm) çıkar."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Dinamometre yapımında kullanılan yayın kalınlığı arttıkça ölçebileceği en büyük kuvvet değeri de artar.",
+          "dogru": true,
+          "aciklama": "Kalın yaylar daha büyük kuvvetlere dayanabilir."
+        },
+        {
+          "metin": "Esneklik sınırı aşılan bir yay, üzerindeki yük kaldırıldığında başlangıçtaki ilk boyuna geri döner.",
+          "dogru": false,
+          "aciklama": "Esneklik sınırı aşılırsa yay kalıcı olarak bozulur ve eski boyuna dönemez."
+        },
+        {
+          "metin": "Aynı kalınlıktaki bakır yay, çelik yaya göre daha yumuşak olduğu için küçük kuvvetlerde daha fazla uzar.",
+          "dogru": true,
+          "aciklama": "Yayın yapıldığı maddenin cinsi uzama miktarını ve hassasiyeti etkiler."
+        },
+        {
+          "metin": "On bölmeli 30 N'luk bir dinamometrede her bir bölme 5 N kuvvet değerini gösterir.",
+          "dogru": false,
+          "aciklama": "30 N / 10 bölme = 3 N değerini gösterir."
+        },
+        {
+          "metin": "Tasarlanan dinamometre modeli yeni ölçüm kanıtlarına ve ihtiyaçlara göre geliştirilebilir.",
+          "dogru": true,
+          "aciklama": "Bilimsel modeller yeni kanıtlarla yenilenmeye açıktır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Dinamometre tasarımı ve çalışma ilkeleriyle ilgili kavramları açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Sarmal yay",
+          "Kuvvet etkisiyle orantılı uzayan esnek iç parça"
+        ],
+        [
+          "Esneklik sınırı",
+          "Yayın bozulmadan dayanabileceği en büyük kuvvet değeri"
+        ],
+        [
+          "Kalibrasyon",
+          "Bilinen ağırlıklarla dinamometre gövdesini eşit bölmelendirme"
+        ],
+        [
+          "İnce telli yay",
+          "Küçük kuvvetleri ölçen yüksek hassasiyetli dinamometre elemanı"
+        ],
+        [
+          "Kalın çelik yay",
+          "Büyük kuvvetleri ölçmek için tercih edilen dayanıklı yay"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Dinamometrenin içindeki yayın uzama miktarı, uygulanan kuvvetin büyüklüğü ile ___ orantılıdır.",
+          "cevap": "doğru"
+        },
+        {
+          "metin": "Küçük kuvvetleri bile ayırt edebilen dinamometrelerin ölçüm ___ daha yüksektir.",
+          "cevap": "hassasiyeti"
+        },
+        {
+          "metin": "Bir yaya ___ sınırının üzerinde kuvvet uygulanırsa yay esnekliğini kaybederek bozulur.",
+          "cevap": "esneklik"
+        },
+        {
+          "metin": "Dinamometre modelinde kancaya hiçbir yük asılmamışken gösterge ___ çizgisini göstermelidir.",
+          "cevap": "sıfır"
+        },
+        {
+          "metin": "Kuvvetin büyüklüğü dinamometre ile ölçülür ve birimi ___ olarak ifade edilir.",
+          "cevap": "Newton"
+        }
+      ],
+      "fazla": [
+        "ters",
+        "metre"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir dinamometrenin ölçüm hassasiyetini artırmak için tasarımında hangi değişikliklerin yapılabileceğini açıklayınız.",
+      "ipuclari": [
+        "Yayın tel kalınlığı azaltılarak daha ince bir sarmal yay seçilebilir.",
+        "Sert metal yerine daha kolay uzayan yumuşak esnek bir tel cinsi tercih edilebilir.",
+        "Gövde üzerindeki ölçek çizgileri daha sık aralıklarla (daha çok bölmeli) işaretlenebilir."
+      ],
+      "cevap": "Dinamometrenin ölçüm hassasiyetini artırmak için kalın yay yerine daha ince telli bir yay kullanılmalı, sert metal yerine esnekliği yüksek yumuşak bir tel cinsi seçilmeli ve ölçek üzerindeki bölme sayısı artırılarak bir bölmenin gösterdiği Newton değeri küçültülmelidir."
+    }
+  ],
+  "ozet": [
+    "{koyu:Dinamometre Modeli:} Esnek bir yay veya lastik, dış gövde, kanca ve eşit bölmeli ölçek kullanılarak tasarlanır.",
+    "{koyu:Doğrusal Uzama:} Esneklik sınırı içinde kalmak şartıyla uygulanan kuvvet ile yayın uzama miktarı doğru orantılıdır.",
+    "{koyu:Esneklik Sınırı:} Kapasitesinin üzerinde yük asılan yayın esnekliği bozulur ve eski boyuna geri dönemez.",
+    "{koyu:Yay Özellikleri:} Yayın uzama miktarı yayın kalınlığına, boyuna ve yapıldığı metalin cinsine bağlıdır.",
+    "{koyu:Ölçüm Hassasiyeti:} İnce yaylı ve küçük kapasiteli dinamometreler küçük kuvvetleri çok daha hassas ölçer."
+  ]
+}

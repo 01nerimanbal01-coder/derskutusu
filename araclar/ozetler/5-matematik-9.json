@@ -1,0 +1,262 @@
+{
+  "ad": "5-matematik-9",
+  "sinif": 5,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 9,
+  "tarih": "9-13 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "Sayılar ve Nicelikler (1)",
+  "konu": "Çok Basamaklı Doğal Sayıları (7, 8 ve 9 Basamaklı Sayılar, Milyonlar Bölüğü) Okuma ve Yazma",
+  "ciktilar": [
+    "Günlük hayattaki nüfus, mesafe ve ekonomi verilerinden hareketle 7, 8 ve 9 basamaklı doğal sayıların bölük ve basamak yapısını kavrar.",
+    "Altı basamaklı sayıları okuma ve yazma kurallarını milyonlar bölüğünü içeren çok basamaklı sayılara geneller.",
+    "Okunuşu verilen çok basamaklı doğal sayıları eksik basamaklarına sıfır yerleştirerek hatasız biçimde rakamla yazar."
+  ],
+  "giris": "Ülkelerin nüfuslarını, gezegenlerin Güneş'e olan uzaklıklarını veya büyük kurumların bütçelerini ifade ederken altı basamaktan daha büyük sayılara ihtiyaç duyarız. Önceki yıllarda öğrendiğimiz birler ve binler bölüğünün soluna 'milyonlar bölüğünü' ekleyerek yedi, sekiz ve dokuz basamaklı doğal sayıları kolayca okuyup yazmayı öğreniyoruz.",
+  "bolumler": [
+    {
+      "baslik": "Milyonlar Bölüğü ve Çok Basamaklı Sayıların Yapısı",
+      "metin": [
+        "Çok basamaklı doğal sayıları kolayca okumak ve yazmak için rakamlar sağdan sola doğru üçerli gruplara ayrılır; bu üçlü grupların her birine {koyu:bölük} adı verilir.",
+        "Sağdan ilk üç basamak {koyu:birler bölüğünü} (birler, onlar, yüzler basamağı), ortadaki üç basamak {koyu:binler bölüğünü} (binler, on binler, yüz binler basamağı) oluşturur.",
+        "Altı basamaklı sayıların soluna eklenen yeni üçlü gruba ise {koyu:milyonlar bölüğü} denir. Milyonlar bölüğünde sağdan sola doğru {koyu:milyonlar}, {koyu:on milyonlar} ve {koyu:yüz milyonlar} basamakları yer alır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">DOKUZ BASAMAKLI SAYILARDA BÖLÜKLER VE BASAMAK TABLOSU</text>\n  <rect x=\"20\" y=\"45\" width=\"210\" height=\"195\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"125\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">MİLYONLAR BÖLÜĞÜ</text>\n  <text x=\"125\" y=\"102\" text-anchor=\"middle\" font-size=\"26\" font-weight=\"bold\" fill=\"#1e3a8a\">4  8  5</text>\n  <text x=\"125\" y=\"135\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• 4: Yüz Milyonlar Basamağı</text>\n  <text x=\"125\" y=\"157\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• 8: On Milyonlar Basamağı</text>\n  <text x=\"125\" y=\"179\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• 5: Milyonlar Basamağı</text>\n  <text x=\"125\" y=\"212\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563eb\">\"Dört yüz seksen beş milyon\"</text>\n\n  <rect x=\"245\" y=\"45\" width=\"210\" height=\"195\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">BİNLER BÖLÜĞÜ</text>\n  <text x=\"350\" y=\"102\" text-anchor=\"middle\" font-size=\"26\" font-weight=\"bold\" fill=\"#14532d\">3  2  0</text>\n  <text x=\"350\" y=\"135\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• 3: Yüz Binler Basamağı</text>\n  <text x=\"350\" y=\"157\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• 2: On Binler Basamağı</text>\n  <text x=\"350\" y=\"179\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• 0: Binler Basamağı</text>\n  <text x=\"350\" y=\"212\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#16a34a\">\"üç yüz yirmi bin\"</text>\n\n  <rect x=\"470\" y=\"45\" width=\"210\" height=\"195\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\" stroke-width=\"1.5\"/>\n  <text x=\"575\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#a16207\">BİRLER BÖLÜĞÜ</text>\n  <text x=\"575\" y=\"102\" text-anchor=\"middle\" font-size=\"26\" font-weight=\"bold\" fill=\"#713f12\">7  1  9</text>\n  <text x=\"575\" y=\"135\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• 7: Yüzler Basamağı</text>\n  <text x=\"575\" y=\"157\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• 1: Onlar Basamağı</text>\n  <text x=\"575\" y=\"179\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">• 9: Birler Basamağı</text>\n  <text x=\"575\" y=\"212\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#ca8a04\">\"yedi yüz on dokuz\"</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Bölükleri Ayırma Yönü",
+          "metin": "Bölükler her zaman en sağdaki birler basamağından başlayarak sola doğru üçer üçer ayrılır; en soldaki milyonlar bölüğünde 1, 2 veya 3 rakam bulunabilir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "En Küçük 7 Basamaklı Sayı",
+          "metin": "Altı basamaklı en büyük doğal sayı olan 999 999 sayısına 1 eklendiğinde yedi basamaklı en küçük doğal sayı olan 1 000 000 (bir milyon) elde edilir."
+        }
+      ]
+    },
+    {
+      "baslik": "Çok Basamaklı Doğal Sayıları Okuma Kuralları",
+      "metin": [
+        "Yedi, sekiz ve dokuz basamaklı bir doğal sayı okunurken en soldaki {koyu:milyonlar bölüğünden} başlanır. Bölükteki sayı normal üç basamaklı bir sayı gibi okunur ve sonuna {koyu:'milyon'} kelimesi eklenir.",
+        "Ardından ortadaki {koyu:binler bölüğündeki} sayı okunarak sonuna {koyu:'bin'} kelimesi getirilir. En son {koyu:birler bölüğündeki} sayı okunur ancak sonuna 'birler' diye bir bölük adı söylenmez.",
+        "Bir bölükteki tüm rakamlar sıfır ({koyu:000}) ise o bölüğün adı okunuşta hiç söylenmez. Örneğin {koyu:45 000 120} sayısı {koyu:'kırk beş milyon yüz yirmi'} şeklinde okunur."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">ÇOK BASAMAKLI SAYILARIN OKUNUŞ KURALLARI</text>\n  <rect x=\"25\" y=\"48\" width=\"650\" height=\"88\" rx=\"8\" fill=\"#faf5ff\" stroke=\"#a855f7\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#7e22ce\">Adım Adım Okunuş Yöntemi</text>\n  <text x=\"350\" y=\"96\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">1. Sayı sağdan sola doğru üçerli gruplara (bölüklere) ayrılır.</text>\n  <text x=\"350\" y=\"118\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">2. Soldan sağa her bölükteki sayı okunup sonuna bölük adı (\"milyon\", \"bin\") eklenir; \"birler\" denmez.</text>\n\n  <rect x=\"25\" y=\"148\" width=\"315\" height=\"92\" rx=\"8\" fill=\"#fff1f2\" stroke=\"#f43f5e\" stroke-width=\"1.5\"/>\n  <text x=\"182\" y=\"172\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#be123c\">Sıfırlı Bölük Kuralı (000)</text>\n  <text x=\"182\" y=\"196\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#9f1239\">72 000 405</text>\n  <text x=\"182\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">\"Yetmiş iki milyon dört yüz beş\" (\"bin\" denmez!)</text>\n\n  <rect x=\"360\" y=\"148\" width=\"315\" height=\"92\" rx=\"8\" fill=\"#ecfeff\" stroke=\"#06b6d4\" stroke-width=\"1.5\"/>\n  <text x=\"517\" y=\"172\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0e7490\">Binler Bölüğünde \"001\" Olursa</text>\n  <text x=\"517\" y=\"196\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#155e75\">9 001 060</text>\n  <text x=\"517\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">\"Dokuz milyon bin altmış\" (\"bir bin\" denmez!)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "'Bir Bin' Değil 'Bin', Fakat 'Bir Milyon'!",
+          "metin": "Binler bölüğünde 001 olduğunda 'bir bin' denmez, doğrudan 'bin' denir (5 001 000 ➔ beş milyon bin); ancak milyonlar bölüğünde 1 varsa 'bir milyon' denir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Bölük Arası Boşluk",
+          "metin": "Sayıları yazarken bölüklerin arasına birer boşluk veya nokta koymak okuma hatası yapmayı önler: 85 412 309."
+        }
+      ]
+    },
+    {
+      "baslik": "Okunuşu Verilen Sayıları Rakamla Yazma",
+      "metin": [
+        "Okunuşu verilen çok basamaklı bir sayıyı rakamla yazarken okunuştaki {koyu:'milyon'} ve {koyu:'bin'} kelimeleri anahtar ipuçları olarak işaretlenir.",
+        "En soldaki milyonlar bölüğü yazıldıktan sonra, sağında yer alan {koyu:binler bölüğü} ve {koyu:birler bölüğü} mutlaka {koyu:üçer basamaklı} olmak zorundadır.",
+        "Eğer binler veya birler bölüğünde söylenen sayı bir ya da iki basamaklı ise, bölüğün sol tarafındaki eksik basamaklara {koyu:0 (sıfır)} yazılır. Örneğin {koyu:'sekiz milyon beş bin iki'} sayısı {koyu:8 005 002} olarak yazılır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">OKUNUŞU VERİLEN SAYIYI RAKAMLA YAZMA (EKSİK BASAMAKLAR)</text>\n  <rect x=\"25\" y=\"48\" width=\"650\" height=\"190\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Örnek: \"Yüz altı milyon kırk beş bin yedi\" sayısını rakamla yazalım</text>\n  <rect x=\"55\" y=\"95\" width=\"180\" height=\"75\" rx=\"6\" fill=\"#ffffff\" stroke=\"#16a34a\"/>\n  <text x=\"145\" y=\"118\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">Milyonlar Bölüğü</text>\n  <text x=\"145\" y=\"142\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">\"Yüz altı milyon\"</text>\n  <text x=\"145\" y=\"162\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#14532d\">106</text>\n\n  <rect x=\"260\" y=\"95\" width=\"180\" height=\"75\" rx=\"6\" fill=\"#ffffff\" stroke=\"#16a34a\"/>\n  <text x=\"350\" y=\"118\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">Binler Bölüğü</text>\n  <text x=\"350\" y=\"142\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">\"kırk beş bin\" (3 hane!)</text>\n  <text x=\"350\" y=\"162\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#be123c\">045</text>\n\n  <rect x=\"465\" y=\"95\" width=\"180\" height=\"75\" rx=\"6\" fill=\"#ffffff\" stroke=\"#16a34a\"/>\n  <text x=\"555\" y=\"118\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">Birler Bölüğü</text>\n  <text x=\"555\" y=\"142\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">\"yedi\" (3 hane!)</text>\n  <text x=\"555\" y=\"162\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#be123c\">007</text>\n\n  <text x=\"350\" y=\"205\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">Sonuç: 106 045 007 (En sağdaki iki bölük mutlaka 3 basamağa sıfırla tamamlanır!)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Adı Geçmeyen Bölüğe Üç Sıfır (000)",
+          "metin": "Okunuşta 'bin' kelimesi geçmiyorsa binler bölüğüne '000' yazılır: 'Yirmi milyon kırk' ➔ 20 000 040."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Basamak Sayısı Kontrolü",
+          "metin": "Yüz milyonlar ile başlayan bir sayı 9 basamaklı, on milyonlar ile başlayan 8 basamaklı, bir-dokuz milyon ile başlayan ise 7 basamaklı olmalıdır."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Türkiye'nin nüfusunu gösteren '85 372 377' doğal sayısının okunuşunu yazınız ve milyonlar bölüğündeki rakamları belirtiniz.",
+      "cevap": "Okunuşu: 'Seksen beş milyon üç yüz yetmiş iki bin üç yüz yetmiş yedi'. Milyonlar bölüğündeki sayı 85'tir (8 ve 5 rakamları)."
+    },
+    {
+      "soru": "Okunuşu 'Üç yüz dört milyon yedi bin seksen' olan doğal sayıyı rakamla yazınız ve kaç basamaklı olduğunu belirtiniz.",
+      "cevap": "Milyonlar bölüğü: 304, Binler bölüğü: 007, Birler bölüğü: 080 ➔ 304 007 080. Toplam 9 basamaklıdır."
+    },
+    {
+      "soru": "'640 019 500' sayısının binler bölüğündeki sayı ile birler bölüğündeki sayının toplamı kaçtır?",
+      "cevap": "Binler bölüğündeki sayı 19 (019), birler bölüğündeki sayı 500'dür. Toplamları: 19 + 500 = 519 olur."
+    },
+    {
+      "soru": "Rakamları birbirinden farklı, sekiz basamaklı en büyük çift doğal sayıyı yazınız.",
+      "cevap": "Sekiz basamaklı en büyük sayı için soldan sağa en büyük farklı rakamlar seçilir: 98 765 432 (son rakamı 2 olduğu için çifttir)."
+    },
+    {
+      "soru": "Okunuşu 'Doksan milyon doksan' olan doğal sayıyı rakamla yazarken toplam kaç tane sıfır (0) rakamı kullanılır?",
+      "cevap": "Sayı rakamla 90 000 090 şeklinde yazılır. Bu yazılışta toplam 6 tane sıfır (0) rakamı kullanılır."
+    },
+    {
+      "soru": "'715 248 963' sayısında on milyonlar basamağındaki rakam ile yüz binler basamağındaki rakamın farkı kaçtır?",
+      "cevap": "On milyonlar basamağında 1, yüz binler basamağında 2 rakamı vardır. Aralarındaki fark: 2 - 1 = 1'dir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Okunuşu 'Yedi yüz iki milyon kırk bin dokuz' olan dokuz basamaklı doğal sayının rakamla yazılışı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "702 040 009",
+        "702 400 009",
+        "720 040 090",
+        "702 004 009"
+      ],
+      "dogru": 0,
+      "aciklama": "Milyonlar bölüğü 702, binler bölüğü 040 (kırk bin), birler bölüğü 009 (dokuz) olduğundan sayı 702 040 009 şeklinde yazılır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Verilen '48 000 615' doğal sayısının doğru okunuşu aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Dört yüz seksen milyon altı yüz on beş",
+        "Kırk sekiz milyon altı yüz on beş",
+        "Kırk sekiz milyon altı yüz on beş bin",
+        "Dört milyon sekiz yüz bin altı yüz on beş"
+      ],
+      "dogru": 1,
+      "aciklama": "Milyonlar bölüğünde 48, binler bölüğünde 000 (okunmaz), birler bölüğünde 615 vardır: 'Kırk sekiz milyon altı yüz on beş'."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Verilen '936 184 207' doğal sayısının on milyonlar basamağında ve binler basamağında bulunan rakamlar sırasıyla hangileridir?",
+      "secenekler": [
+        "9 ve 8",
+        "6 ve 1",
+        "3 ve 4",
+        "3 ve 8"
+      ],
+      "dogru": 2,
+      "aciklama": "Milyonlar bölüğü 936 olduğundan on milyonlar basamağı 3'tür; binler bölüğü 184 olduğundan binler basamağı 4'tür."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bölüklerinden birinde '850', birinde '7', diğerinde '42' bulunan dokuz basamaklı en küçük doğal sayı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "850 042 007",
+        "042 007 850",
+        "007 042 850",
+        "850 007 042"
+      ],
+      "dogru": 3,
+      "aciklama": "Sayının dokuz basamaklı olması için en soldaki milyonlar bölüğünde üç basamaklı olan 850 bulunmalıdır; en küçük olması için binler bölüğüne 007, birler bölüğüne 042 gelir: 850 007 042."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Doğal sayılarda bölükler sağdan sola doğru üçerli gruplar hâlinde ayrılır.",
+          "dogru": true,
+          "aciklama": "Birler basamağından başlanarak sola doğru üçer rakam gruplanır."
+        },
+        {
+          "metin": "Okunuşu 'On beş milyon bin beş' olan sayı rakamla 15 100 005 şeklinde yazılır.",
+          "dogru": false,
+          "aciklama": "Binler bölüğünde 001 olmalıdır: 15 001 005."
+        },
+        {
+          "metin": "Yedi basamaklı en küçük doğal sayı '1 000 000' (bir milyon) sayısıdır.",
+          "dogru": true,
+          "aciklama": "1 ve yanında 6 sıfır olmak üzere 7 basamaklıdır."
+        },
+        {
+          "metin": "Milyonlar bölüğünde birler, onlar ve yüzler basamakları yer alır.",
+          "dogru": false,
+          "aciklama": "Milyonlar bölüğünde milyonlar, on milyonlar ve yüz milyonlar basamakları yer alır."
+        },
+        {
+          "metin": "Verilen '320 400 000' sayısının birler bölüğündeki rakamların tamamı sıfırdır.",
+          "dogru": true,
+          "aciklama": "En sağdaki üç basamak birler bölüğüdür ve 000'dır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Verilen '518 294 073' sayısındaki rakamları bulundukları basamak adlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "5 rakamı",
+          "Yüz milyonlar basamağı"
+        ],
+        [
+          "1 rakamı",
+          "On milyonlar basamağı"
+        ],
+        [
+          "8 rakamı",
+          "Milyonlar basamağı"
+        ],
+        [
+          "2 rakamı",
+          "Yüz binler basamağı"
+        ],
+        [
+          "7 rakamı",
+          "Onlar basamağı"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Çok basamaklı sayılarda sağdan sola doğru ayrılan her üç basamaklı gruba ___ adı verilir.",
+          "cevap": "bölük"
+        },
+        {
+          "metin": "Binler bölüğünün hemen solunda yer alan bölüğe ___ bölüğü denir.",
+          "cevap": "milyonlar"
+        },
+        {
+          "metin": "Dokuz basamaklı bir doğal sayının en solundaki basamağın adı ___ basamağıdır.",
+          "cevap": "yüz milyonlar"
+        },
+        {
+          "metin": "Bir bölükte eksik kalan basamakların yerine mutlaka ___ rakamı yazılır.",
+          "cevap": "sıfır"
+        },
+        {
+          "metin": "Altı basamaklı en büyük doğal sayıya bir eklendiğinde ___ basamaklı en küçük sayı elde edilir.",
+          "cevap": "yedi"
+        }
+      ],
+      "fazla": [
+        "sekiz",
+        "birler"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Okunuşu verilen çok basamaklı bir sayıyı rakamla yazarken hata yapmamak için hangi adımların izlenmesi gerektiğini açıklayınız.",
+      "ipuclari": [
+        "Önce okunuştaki 'milyon' ve 'bin' bölük isimleri belirlenerek sayı üç parçaya ayrılır.",
+        "Milyonlar bölüğü en sola yazılır; ardından binler ve birler bölüğü için üçer basamaklık yer açılır.",
+        "Eksik basamağı olan veya okunuşta adı geçmeyen bölüklere sıfır (0) konularak üç basamağa tamamlanır."
+      ],
+      "cevap": "Okunuşu verilen sayı yazılırken önce 'milyon' ve 'bin' kelimelerinden bölükler tespit edilir. Milyonlar bölüğü en sola yazıldıktan sonra binler ve birler bölüğünün üçer basamaklı olması sağlanır; eksik basamakların soluna sıfır (0) eklenir, adı hiç okunmayan bölüğe ise '000' yazılır."
+    }
+  ],
+  "ozet": [
+    "{koyu:Bölük Kavramı:} Sayılar sağdan sola doğru üçerli gruplanır: Birler bölüğü, Binler bölüğü ve Milyonlar bölüğü.",
+    "{koyu:Milyonlar Bölüğü:} Sağdan sola milyonlar (7. basamak), on milyonlar (8. basamak) ve yüz milyonlar (9. basamak) basamaklarından oluşur.",
+    "{koyu:Sayıları Okuma:} Soldan sağa her bölükteki sayı okunup sonuna bölük adı ('milyon', 'bin') eklenir; birler bölüğünün adı söylenmez.",
+    "{koyu:Sıfırlı Bölükler:} Tamamı '000' olan bölüğün ismi okunuşta atlanır; binler bölüğünde '001' varsa 'bir bin' değil 'bin' denir.",
+    "{koyu:Rakamla Yazma:} Milyonlar bölüğünün sağındaki binler ve birler bölüğü eksik basamaklarına sıfır konularak 3 basamağa tamamlanır."
+  ]
+}

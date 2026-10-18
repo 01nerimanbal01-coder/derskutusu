@@ -1,0 +1,263 @@
+{
+  "ad": "9-kimya-9",
+  "sinif": 9,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 9,
+  "tarih": "9-13 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "1. TEMA: ETKİLEŞİM",
+  "konu": "İyon Oluşumu (Katyon-Anyon, Oktet-Dublet) ve Periyodik Özellikler (Atom Yarıçapı, İyonlaşma Enerjisi, Elektronegatiflik) (9.1.7)",
+  "ciktilar": [
+    "Nötr atomların elektron dizilimi ile oluşturdukları katyon ve anyonların elektron dizilimi arasındaki örüntüyü oktet ve dublet kurallarıyla açıklar.",
+    "Atom yarıçapının aynı periyotta ve aynı grupta değişim yönünü katman sayısı ve çekirdek çekim gücüyle ilişkilendirir; nötr atom ile iyonlarının yarıçaplarını karşılaştırır.",
+    "İyonlaşma enerjisi, elektronegatiflik ve metalik-ametalik özelliklerin periyodik tablodaki değişim eğilimlerini çözümler."
+  ],
+  "giris": "Periyodik tablodaki soy gazlar (8A grubu) dışındaki elementlerin atomları, değerlik katmanlarını soy gazlara benzeterek kararlı hâle ulaşmak için elektron alışverişi yapar ve {koyu:iyonları} oluşturur. Bir atomun elektron verme veya alma yatkınlığı ise onun {koyu:atom yarıçapı, iyonlaşma enerjisi ve elektronegatiflik} gibi periyodik özellikleriyle doğrudan belirlenir.",
+  "bolumler": [
+    {
+      "baslik": "İyon Oluşumu: Oktet-Dublet Kuralları, Katyon, Anyon ve İzoelektroniklik",
+      "metin": [
+        "Soy gazların (8A grubu) temel hâl elektron dizilimlerinde son katmanları tam dolu olduğu için (Helyumda 2, diğerlerinde 8 değerlik elektronu) kararlıdırlar ve tepkimeye girme eğilimleri yok denecek kadar azdır. Diğer element atomlarının elektron alarak, vererek veya ortaklaşa kullanarak son katmanlarını Helyum soy gazı gibi {koyu:2 elektrona tamamlamasına dublet kuralı}; Neon ve Argon gibi {koyu:8 elektrona tamamlamasına ise oktet kuralı} adı verilir.",
+        "Baş grup metalleri (1A, 2A, 3A) son katmanlarındaki az sayıdaki (1, 2 veya 3) değerlik elektronunu vererek bir alt katmandaki soy gaz dizilimine ulaşır ve pozitif yüklü {koyu:katyon} oluşturur (örneğin {koyu:11Na: 2-8-1 → Na+ : 2-8} ve {koyu:12Mg: 2-8-2 → Mg2+ : 2-8}). Baş grup ametalleri (5A, 6A, 7A) ise dışarıdan 3, 2 veya 1 elektron alarak kendi katmanlarını 8'e tamamlar ve negatif yüklü {koyu:anyon} oluşturur (örneğin {koyu:8O: 2-6 → O2- : 2-8} ve {koyu:9F: 2-7 → F- : 2-8}).",
+        "Nötr bir atom elektron verdiğinde ({koyu:katyon oluştuğunda}) birim elektron başına düşen çekirdek çekim gücü arttığı (ve çoğu zaman bir katman eksildiği) için {koyu:tanecik yarıçapı küçülür (r_katyon < r_nötr)}. Atom elektron aldığında ({koyu:anyon oluştuğunda}) ise elektronlar arası itme arttığı ve elektron başına düşen çekim azaldığı için {koyu:tanecik yarıçapı büyür (r_anyon > r_nötr)}. Elektron sayıları ve dizilimleri aynı, proton sayıları farklı olan {koyu:izoelektronik taneciklerde} (örneğin {koyu:8O2-, 9F-, 10Ne, 11Na+, 12Mg2+}) proton sayısı arttıkça çekim artacağından yarıçap küçülür: {koyu:8O2- > 9F- > 10Ne > 11Na+ > 12Mg2+}."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">İYON OLUŞUMU: KATYON, ANYON VE İZOELEKTRONİK TANECİKLER</text>\n  <rect x=\"25\" y=\"45\" width=\"315\" height=\"195\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\">OKTET - DUBLET VE İYON OLUŞUMU</text>\n  <text x=\"42\" y=\"96\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e3a8a\">• Dublet Kuralı: Son katmanı 2 elektrona (₂He)</text>\n  <text x=\"52\" y=\"113\" font-size=\"10.5\" fill=\"#334155\">tamamlama ( Örn: ₃Li → Li⁺ [2] )</text>\n  <text x=\"42\" y=\"138\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e3a8a\">• Oktet Kuralı: Son katmanı 8 elektrona (₁₀Ne, ₁₈Ar)</text>\n  <text x=\"52\" y=\"155\" font-size=\"10.5\" fill=\"#334155\">tamamlama eğilimi</text>\n  <text x=\"42\" y=\"180\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1d4ed8\">• Katyon (+): Elektron veren tanecik (Yarıçap küçülür)</text>\n  <text x=\"42\" y=\"202\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#dc2626\">• Anyon (-): Elektron alan tanecik (Yarıçap büyür)</text>\n  <rect x=\"360\" y=\"45\" width=\"315\" height=\"195\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"517\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#166534\">₁₀Ne (2-8) İLE İZOELEKTRONİK TANECİKLER</text>\n  <text x=\"377\" y=\"96\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#14532d\">• ₈O (2-6) + 2e⁻ → ₈O²⁻ (2-8)  [10 elektron, Anyon]</text>\n  <text x=\"377\" y=\"120\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#14532d\">• ₉F (2-7) + 1e⁻ → ₉F⁻ (2-8)   [10 elektron, Anyon]</text>\n  <text x=\"377\" y=\"144\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#14532d\">• ₁₁Na (2-8-1) - 1e⁻ → ₁₁Na⁺ (2-8) [10 e⁻, Katyon]</text>\n  <text x=\"377\" y=\"168\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#14532d\">• ₁₂Mg (2-8-2) - 2e⁻ → ₁₂Mg²⁺ (2-8) [10 e⁻, Katyon]</text>\n  <rect x=\"377\" y=\"185\" width=\"280\" height=\"40\" rx=\"6\" fill=\"#dcfce7\"/>\n  <text x=\"517\" y=\"203\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">İzoelektroniklerde Yarıçap Sıralaması:</text>\n  <text x=\"517\" y=\"219\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">₈O²⁻ &gt; ₉F⁻ &gt; ₁₀Ne &gt; ₁₁Na⁺ &gt; ₁₂Mg²⁺</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Bir atom elektron alıp verdiğinde (iyon oluşturduğunda) çekirdeğindeki 'proton ve nötron sayısı' değişmez; değişen yalnızca elektron sayısı, elektron başına düşen çekim gücü, tanecik çapı ve kimyasal özelliklerdir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Aynı elemente ait taneciklerde ya da izoelektronik taneciklerde yük ne kadar negatifse (elektron sayısı protona göre ne kadar fazlaysa) yarıçap o kadar büyüktür; yük ne kadar pozitifse yarıçap o kadar küçüktür."
+        }
+      ]
+    },
+    {
+      "baslik": "Periyodik Özellikler: Atom Yarıçapı ve İyonlaşma Enerjisi",
+      "metin": [
+        "Bir atomun çekirdeği ile en dış katmanındaki elektronlar arasındaki ortalama uzaklığa {koyu:atom yarıçapı (atom hacmi / çapı)} denir. Periyodik tabloda {koyu:aynı grupta yukarıdan aşağıya doğru inildikçe} yeni enerji katmanları eklendiği için atom yarıçapı {koyu:kesinlikle artar} (örneğin 1A grubunda {koyu:3Li < 11Na < 19K}). {koyu:Aynı periyotta soldan sağa doğru gidildikçe} ise katman sayısı değişmezken çekirdekteki proton sayısı (çekim gücü) arttığı için elektronlar çekirdeğe daha çok yaklaşır ve atom yarıçapı {koyu:azalır}.",
+        "{koyu:Gaz hâlindeki} nötr bir atomdan bir elektron kopararak +1 yüklü gaz iyonu oluşturmak için verilmesi gereken en düşük enerjiye {koyu:1. İyonlaşma Enerjisi (İE1)} denir ve {koyu:X(g) + İE1 → X+(g) + e-} denklemiyle gösterilir. İyonlaşma olayı ısı alan ({koyu:endotermik}) bir süreçtir. Zaten +1 yüklü olan gaz iyonundan ikinci elektronu koparmak için gereken enerjiye ise {koyu:2. İyonlaşma Enerjisi (İE2)} denir ({koyu:X+(g) + İE2 → X2+(g) + e-}). Elektron koptukça kalan elektronlara uygulanan çekim arttığından her zaman {koyu:İE1 < İE2 < İE3 < ... < İEn} ilişkisi geçerlidir.",
+        "İyonlaşma enerjisi atom yarıçapı ile ters orantılıdır: {koyu:Aynı grupta yukarıdan aşağıya doğru} çap büyüdüğü için elektron koparmak kolaylaşır ve iyonlaşma enerjisi {koyu:azalır}. {koyu:Aynı periyotta soldan sağa doğru} çap küçüldüğü için iyonlaşma enerjisi {koyu:genellikle artar}; ancak {koyu:2A ve 5A} gruplarındaki atomların küresel simetrik kararlı yapıları nedeniyle 2A'nın 1. iyonlaşma enerjisi 3A'dan, 5A'nınki ise 6A'dan büyüktür ({koyu:'Üç aşağı beş yukarı' kuralı}): {koyu:1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A}."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">PERİYODİK ÖZELLİKLER: ATOM YARIÇAPI VE İYONLAŞMA ENERJİSİ</text>\n  <rect x=\"25\" y=\"45\" width=\"315\" height=\"195\" rx=\"10\" fill=\"#fefce8\" stroke=\"#ca8a04\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#854d0e\">ATOM YARIÇAPI (HACMİ / ÇAPI)</text>\n  <text x=\"42\" y=\"96\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#713f12\">• Aynı Grupta Yukarıdan Aşağıya (↓): ARTAR</text>\n  <text x=\"52\" y=\"114\" font-size=\"10.5\" fill=\"#334155\">Katman (periyot) sayısı arttığı için çap büyür</text>\n  <text x=\"52\" y=\"130\" font-size=\"10.5\" fill=\"#334155\">(Kardan adamın gövdesi aşağı indikçe büyür).</text>\n  <text x=\"42\" y=\"156\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#713f12\">• Aynı Periyotta Soldan Sağa (→): AZALIR</text>\n  <text x=\"52\" y=\"174\" font-size=\"10.5\" fill=\"#334155\">Katman sayısı sabitken proton sayısı (çekirdek</text>\n  <text x=\"52\" y=\"190\" font-size=\"10.5\" fill=\"#334155\">çekim gücü) arttığı için elektronlar çekilir, çap küçülür.</text>\n  <rect x=\"360\" y=\"45\" width=\"315\" height=\"195\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"517\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#6b21a8\">İYONLAŞMA ENERJİSİ (İE)</text>\n  <text x=\"377\" y=\"94\" font-size=\"11\" fill=\"#334155\">Gaz hâlindeki nötr atomdan 1 e⁻ koparmak için</text>\n  <text x=\"377\" y=\"110\" font-size=\"11\" fill=\"#334155\">verilen enerji: X(g) + İE₁ → X⁺(g) + e⁻</text>\n  <text x=\"377\" y=\"135\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">• Aynı Grupta Yukarıdan Aşağıya (↓): AZALIR</text>\n  <text x=\"377\" y=\"157\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">• Aynı Periyotta Soldan Sağa (→): GENELLİKLE ARTAR</text>\n  <rect x=\"377\" y=\"172\" width=\"280\" height=\"54\" rx=\"6\" fill=\"#f3e8ff\" stroke=\"#c084fc\"/>\n  <text x=\"517\" y=\"190\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">Aynı Periyotta 1. İE Sıralaması (Küresel Simetri!):</text>\n  <text x=\"517\" y=\"212\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">1A &lt; 3A &lt; 2A &lt; 4A &lt; 6A &lt; 5A &lt; 7A &lt; 8A</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Nötr gaz atomundan aynı anda iki elektron koparılan X(g) + E → X²⁺(g) + 2e⁻ tepkimesindeki E enerjisi '2. iyonlaşma enerjisi' değil, 1. ve 2. iyonlaşma enerjilerinin toplamıdır (E = İE₁ + İE₂)."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Baş grup elementlerinin ardışık iyonlaşma enerjileri tablosunda en büyük sıçrama (3,5 - 4 kat veya daha fazla artış) değerlik elektronları bittiğinde gerçekleşir; sıçramadan önceki basamak sayısı elementin A grup numarasını verir."
+        }
+      ]
+    },
+    {
+      "baslik": "Elektronegatiflik, Elektron İlgisi ve Metalik-Ametalik Özellik",
+      "metin": [
+        "Bir atomun kimyasal bağ içindeki {koyu:bağ elektronlarını (ortaklaşa kullanılan elektron çiftini) kendine doğru çekme gücünün} bağıl ölçüsüne {koyu:elektronegatiflik} denir. Soy gazlar (8A grubu) normal koşullarda kimyasal bağ yapmadıkları için elektronegatiflik değerlerinden söz edilmez. Periyodik tabloda {koyu:aynı periyotta soldan sağa doğru} çap küçüldüğü için elektronegatiflik {koyu:artar} (en yüksek {koyu:7A halojenler} grubundadır); {koyu:aynı grupta yukarıdan aşağıya doğru} ise çap büyüdüğü için elektronegatiflik {koyu:azalır}. Periyodik tablodaki en elektronegatif element {koyu:Flor (9F = 4,0)} elementidir.",
+        "Gaz hâlindeki nötr bir atomun bir elektron yakalayarak -1 yüklü gaz anyonu oluşturması sırasındaki enerji değişimine {koyu:elektron ilgisi} denir ve genel olarak soldan sağa artar, yukarıdan aşağıya azalır (istisna olarak 7A grubunda elektron ilgisi en yüksek olan element Flor değil, {koyu:Klor — 17Cl} elementidir).",
+        "Bir elementin elektron vererek katyon oluşturma kolaylığına {koyu:metalik özellik (elektropozitiflik)}, elektron alarak anyon oluşturma yatkınlığına ise {koyu:ametalik özellik} denir. Atom yarıçapının arttığı yön olan {koyu:sağdan sola ve yukarıdan aşağıya} gidildikçe elektron vermek kolaylaştığı için {koyu:metalik aktiflik artar} (en aktif metaller 1A grubunun altındadır). Çapın küçüldüğü yön olan {koyu:soldan sağa (7A'ya kadar) ve aşağıdan yukarıya} çıkıldıkça ise {koyu:ametalik aktiflik artar} (en aktif ametal 7A grubunun en üstündeki {koyu:Flor}dur)."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">ELEKTRONEGATİFLİK VE PERİYODİK ÖZELLİKLERİN ÖZET YÖNLERİ</text>\n  <rect x=\"25\" y=\"45\" width=\"315\" height=\"195\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#9a3412\">ELEKTRONEGATİFLİK (BAĞ ELEKTRONUNU ÇEKME)</text>\n  <text x=\"42\" y=\"96\" font-size=\"11\" fill=\"#334155\">• Kimyasal bağdaki ortaklaşa kullanılan elektronları</text>\n  <text x=\"52\" y=\"113\" font-size=\"11\" fill=\"#334155\">çekme gücüdür (Soy gazlarda bağ olmadığı için yok!).</text>\n  <text x=\"42\" y=\"138\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#7c2d12\">• Soldan Sağa (→): ARTAR (En yüksek 7A grubu)</text>\n  <text x=\"42\" y=\"160\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#7c2d12\">• Yukarıdan Aşağıya (↓): AZALIR</text>\n  <rect x=\"42\" y=\"178\" width=\"280\" height=\"46\" rx=\"6\" fill=\"#ffedd5\"/>\n  <text x=\"182\" y=\"198\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#c2410c\">En elektronegatif element: Flor (₉F = 4,0)</text>\n  <text x=\"182\" y=\"215\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#9a3412\">Elektron ilgisi en yüksek element ise Klor (₁₇Cl)'dur.</text>\n  <rect x=\"360\" y=\"45\" width=\"315\" height=\"195\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"517\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\">ÖZET DEĞİŞİM YÖNLERİ TABLOSU</text>\n  <text x=\"377\" y=\"98\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1d4ed8\">Soldan Sağa (→) Gidildikçe:</text>\n  <text x=\"387\" y=\"116\" font-size=\"11\" fill=\"#334155\">• Atom yarıçapı ve metalik özellik AZALIR.</text>\n  <text x=\"387\" y=\"134\" font-size=\"11\" fill=\"#334155\">• İyonlaşma enerjisi (genellikle), elektronegatiflik</text>\n  <text x=\"395\" y=\"150\" font-size=\"11\" fill=\"#334155\">ve ametalik özellik ARTAR.</text>\n  <text x=\"377\" y=\"178\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">Yukarıdan Aşağıya (↓) İnildikçe:</text>\n  <text x=\"387\" y=\"196\" font-size=\"11\" fill=\"#334155\">• Atom yarıçapı ve metalik özellik ARTAR.</text>\n  <text x=\"387\" y=\"214\" font-size=\"11\" fill=\"#334155\">• İE, elektronegatiflik ve ametalik özellik AZALIR.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Aynı periyotta soldan sağa gidildikçe 1. İyonlaşma enerjisi '8A soy gazlarda' en yüksek değere ulaşırken; elektronegatiflik ve ametalik özellik (soy gazlar bağ yapmadığı için) '7A halojenlerde' en yüksek değere ulaşır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Periyodik özellikleri tek bir kavramla kodlayabilirsiniz: 'Atom yarıçapı ve metalik özellik' sol-alt köşeye (Fransiyum'a) doğru artar; 'İyonlaşma enerjisi, elektronegatiflik ve ametalik özellik' ise sağ-üst köşeye (Flor/Helyum'a) doğru artar."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Temel hâl elektron dizilimleri yapılan 13Al, 16S ve 19K atomlarının kararlı bileşiklerinde oluşturacakları iyonları, uydukları kuralı (oktet/dublet) ve hangi soy gaz dizilimine ulaştıklarını yazınız. (10Ne, 18Ar)",
+      "cevap": "13Al (2-8-3): Son katmanındaki 3 elektronu vererek Al3+ (2-8) katyonunu oluşturur, oktet kuralıyla 10Ne dizilimine ulaşır. 16S (2-8-6): Dışarıdan 2 elektron alarak S2- (2-8-8) anyonunu oluşturur, oktet kuralıyla 18Ar dizilimine ulaşır. 19K (2-8-8-1): Son katmanındaki 1 elektronu vererek K+ (2-8-8) katyonunu oluşturur, oktet kuralıyla 18Ar dizilimine ulaşır."
+    },
+    {
+      "soru": "İzoelektronik olan 15P3-, 17Cl-, 18Ar, 19K+ ve 20Ca2+ taneciklerinin elektron sayılarını bularak bu tanecikleri yarıçapları (hacimleri) bakımından büyükten küçüğe doğru sıralayınız.",
+      "cevap": "Beş taneciğin de elektron sayısı 18 ve elektron dizilimi 2-8-8 olduğundan bu tanecikler birbirinin izoelektroniğidir. İzoelektronik taneciklerde çekirdekteki proton sayısı küçük olanın elektron başına çekim gücü daha az ve yarıçapı daha büyüktür: 15P3- > 17Cl- > 18Ar > 19K+ > 20Ca2+."
+    },
+    {
+      "soru": "Periyodik tabloda yerleri bilinen 4Be, 12Mg, 13Al ve 15P elementlerinin atom yarıçaplarını ve 1. iyonlaşma enerjilerini karşılaştırınız.",
+      "cevap": "4Be (2. periyot 2A), 12Mg (3. periyot 2A), 13Al (3. periyot 3A), 15P (3. periyot 5A). Katman sayısı büyük olan 3. periyot elementlerinin çapı 4Be'den büyüktür; aynı periyotta soldan sağa çap küçüldüğü için yarıçap sıralaması: 12Mg > 13Al > 15P > 4Be olur. 1. İyonlaşma enerjisinde ise 2. periyottaki 4Be en büyüktür; 3. periyotta 2A > 3A küresel simetri özelliğine dikkat edildiğinde İE1 sıralaması: 4Be > 15P > 12Mg > 13Al bulunur."
+    },
+    {
+      "soru": "Baş grup (A grubu) elementi olan X atomunun ilk dört iyonlaşma enerjisi sırasıyla İE1 = 578 kJ/mol, İE2 = 1817 kJ/mol, İE3 = 2745 kJ/mol ve İE4 = 11577 kJ/mol olarak ölçülmüştür. Buna göre X elementi hangi gruptadır ve kararlı iyon yükü nedir?",
+      "cevap": "Ardışık iyonlaşma enerjileri incelendiğinde İE3 (2745) ile İE4 (11577) arasında yaklaşık 4,2 katlık çok büyük bir sıçrama görülmektedir. Bu durum atomun 3 değerlik elektronu olduğunu ve 4. elektronun kararlı iç katmandan koparıldığını gösterir; dolayısıyla X elementi 3A (13.) gruptadır ve kararlı bileşiklerinde X3+ iyon yükünü alır."
+    },
+    {
+      "soru": "Aynı periyotta bulunan 11Na, 14Si, 17Cl ve 18Ar elementlerini elektronegatiflik değerleri bakımından karşılaştırınız.",
+      "cevap": "18Ar bir soy gaz (8A) olduğu için bağ yapma eğilimi ve elektronegatiflik değeri yoktur. Diğer üç element 3. periyotta yer alır (11Na: 1A, 14Si: 4A, 17Cl: 7A); aynı periyotta soldan sağa gidildikçe elektronegatiflik arttığı için sıralama 17Cl > 14Si > 11Na şeklindedir."
+    },
+    {
+      "soru": "Nötr bir Klor (17Cl) atomu; Cl+ katyonuna ve Cl- anyonuna dönüştüğünde tanecik yarıçapları (r_Cl, r_Cl+, r_Cl-) arasındaki büyüklük ilişkisi nasıl olur?",
+      "cevap": "Her üç tanecikte de proton sayısı 17'dir. Cl- anyonu 18 elektrona sahip olduğu için elektron başına düşen çekim en az ve yarıçap en büyüktür; Cl+ katyonu ise 16 elektrona sahip olduğu için elektron başına düşen çekim en fazla ve yarıçap en küçüktür: r(Cl-) > r(Cl) > r(Cl+)."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "soru": "Temel hâldeki 12Mg ve 9F atomlarının kararlı oktet yapısına ulaşırken oluşturdukları iyonlarla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+      "secenekler": [
+        "12Mg atomu 2 elektron vererek Mg²⁺ katyonuna dönüşür ve yarıçapı küçülür.",
+        "9F atomu 1 elektron alarak F⁻ anyonuna dönüşür ve yarıçapı büyür.",
+        "Oluşan 12Mg²⁺ ve 9F⁻ iyonlarının her ikisi de 10 elektrona (2-8 dizilimine) sahiptir.",
+        "12Mg²⁺ iyonunun yarıçapı, kendisiyle izoelektronik olan 9F⁻ iyonunun yarıçapından büyüktür.",
+        "İyon oluşumu sırasında her iki atomun da çekirdek yükü (proton sayısı) korunmuştur."
+      ],
+      "dogru": 3,
+      "aciklama": "12Mg²⁺ ve 9F⁻ taneciklerinin her ikisinde de 10 elektron vardır; ancak Mg²⁺'nin 12 protonu elektronları daha güçlü çektiği için Mg²⁺ iyonunun yarıçapı F⁻ iyonundan daha küçüktür (r_F⁻ > r_Mg²⁺).",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Periyodik tablonun 3. periyodunda yer alan X(1A), Y(2A), Z(3A), T(5A) ve M(6A) elementlerinin 1. iyonlaşma enerjilerinin (İE1) küçükten büyüğe doğru sıralanışı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "X < Y < Z < T < M",
+        "X < Z < Y < M < T",
+        "M < T < Z < Y < X",
+        "X < Z < Y < T < M",
+        "Z < X < Y < M < T"
+      ],
+      "dogru": 1,
+      "aciklama": "Aynı periyotta 1. iyonlaşma enerjisi sıralamasında 2A > 3A ve 5A > 6A küresel simetri özelliği ('üç aşağı beş yukarı') bulunduğundan sıralama 1A(X) < 3A(Z) < 2A(Y) < 6A(M) < 5A(T) olur.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Periyodik sistemde aynı grupta yukarıdan aşağıya doğru inildikçe aşağıdaki niceliklerden hangisinde artış gözlenir?",
+      "secenekler": [
+        "1. İyonlaşma enerjisi",
+        "Elektronegatiflik",
+        "Atom yarıçapı ve metalik aktiflik",
+        "Ametalik özellik",
+        "Değerlik elektron sayısı (soy gazlar hariç)"
+      ],
+      "dogru": 2,
+      "aciklama": "Aynı grupta yukarıdan aşağıya doğru katman sayısı arttığı için atom yarıçapı (hacmi) ve elektron verme eğilimi olan metalik aktiflik artar; İE, elektronegatiflik ve ametalik özellik azalır.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Gaz hâlindeki X atomuna ait aşağıdaki tepkimelerden hangisinde harcanan enerji '2. İyonlaşma Enerjisi (İE2)' olarak tanımlanır?",
+      "secenekler": [
+        "X(g) + E → X²⁺(g) + 2e⁻",
+        "X⁺(k) + E → X²⁺(k) + e⁻",
+        "X⁺(g) + E → X²⁺(g) + e⁻",
+        "X(g) + e⁻ → X⁻(g) + E",
+        "X²⁺(g) + E → X³⁺(g) + e⁻"
+      ],
+      "dogru": 2,
+      "aciklama": "2. iyonlaşma enerjisi, gaz hâlindeki +1 yüklü X⁺(g) iyonundan 1 elektron kopararak X²⁺(g) oluşturmak için verilen enerjidir (A şıkkı İE1+İE2 toplamıdır, B şıkkında tanecik katı hâldedir).",
+      "tur": "coktan"
+    },
+    {
+      "ifadeler": [
+        {
+          "metin": "Aynı periyotta soldan sağa doğru gidildikçe katman sayısı değişmezken çekirdek çekim gücü arttığı için atom yarıçapı küçülür.",
+          "dogru": true,
+          "aciklama": "Aynı periyotta proton sayısı arttıkça elektronlar çekirdeğe daha çok çekilir ve yarıçap azalır."
+        },
+        {
+          "metin": "Bir atom elektron alarak anyon oluşturduğunda birim elektron başına düşen çekim gücü artar ve yarıçapı küçülür.",
+          "dogru": false,
+          "aciklama": "Elektron alan atomda elektron sayısı arttığı için birim elektrona düşen çekim azalır ve tanecik yarıçapı büyür."
+        },
+        {
+          "metin": "Periyodik tabloda elektronegatifliği en yüksek olan element 2. periyot 7A grubundaki Flor (9F) elementidir.",
+          "dogru": true,
+          "aciklama": "Elektronegatiflik sağa (7A'ya kadar) ve yukarıya doğru arttığı için Flor (4,0) en elektronegatif elementtir."
+        },
+        {
+          "metin": "Soy gazların (8A grubu) 1. iyonlaşma enerjileri kendi periyotlarındaki en küçük değere sahiptir.",
+          "dogru": false,
+          "aciklama": "Soy gazlar kararlı ve tam dolu katman yapısına sahip oldukları için kendi periyotlarında 1. iyonlaşma enerjisi en yüksek olan elementlerdir."
+        },
+        {
+          "metin": "Lityum (3Li) ve Berilyum (4Be) atomları elektron vererek kararlı hâle geçerken dublet kuralına uyarlar.",
+          "dogru": true,
+          "aciklama": "3Li⁺ ve 4Be²⁺ iyonları son katmanlarını Helyum (2He) gibi 2 elektrona tamamladıkları için dublet kuralına uyarlar."
+        }
+      ],
+      "tur": "dy"
+    },
+    {
+      "ciftler": [
+        [
+          "Oktet Kuralı",
+          "Atomların elektron alışverişi veya ortaklaşmasıyla son katmanlarını 8 elektrona tamamlaması"
+        ],
+        [
+          "İyonlaşma Enerjisi",
+          "Gaz hâlindeki bir atom veya iyondan 1 elektron koparmak için verilmesi gereken enerji"
+        ],
+        [
+          "Elektronegatiflik",
+          "Bir atomun kimyasal bağdaki ortaklaşa kullanılan elektron çiftini kendine çekme gücü"
+        ],
+        [
+          "İzoelektronik Tanecikler",
+          "Elektron sayıları ve elektron dizilimleri aynı, proton sayıları farklı olan tanecikler"
+        ],
+        [
+          "Katyon",
+          "Nötr bir atomun elektron vermesiyle oluşan ve yarıçapı nötr atomdan küçük olan pozitif iyon"
+        ]
+      ],
+      "tur": "eslestir"
+    },
+    {
+      "cumleler": [
+        {
+          "metin": "Atomların son katmanlarındaki elektron sayısını Helyum soy gazı gibi 2'ye tamamlamasına ___ kuralı denir.",
+          "cevap": "dublet"
+        },
+        {
+          "metin": "Nötr bir ametal atomu dışarıdan elektron alarak negatif yüklü ___ hâline geçtiğinde hacmi büyür.",
+          "cevap": "anyon"
+        },
+        {
+          "metin": "Aynı periyotta bulunan elementlerden 2A grubunun 1. iyonlaşma enerjisi, küresel simetri nedeniyle ___ grubundan büyüktür.",
+          "cevap": "3A"
+        },
+        {
+          "metin": "Periyodik sistemde aynı grupta yukarıdan aşağıya doğru inildikçe elektron verme eğilimi olan ___ özellik artar.",
+          "cevap": "metalik"
+        },
+        {
+          "metin": "Normal koşullarda kimyasal bağ oluşturmadıkları için ___ grubu elementlerinin elektronegatiflik değerlerinden söz edilmez.",
+          "cevap": "8A"
+        }
+      ],
+      "fazla": [
+        "ametalik",
+        "4A"
+      ],
+      "tur": "bosluk"
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Atom numaraları verilen 11Na, 12Mg ve 19K elementlerinin periyodik tablodaki yerlerini bularak; bu üç elementi 'atom yarıçapı, 1. iyonlaşma enerjisi ve metalik aktiflik' özellikleri bakımından nedenleriyle birlikte sıralayınız.",
+      "ipuclari": [
+        "Birinci adımda elektron dizilimlerinden 11Na (3. periyot 1A), 12Mg (3. periyot 2A) ve 19K (4. periyot 1A) konumlarını belirleyiniz.",
+        "İkinci adımda katman sayısı ve çekirdek çekim gücünü kullanarak atom yarıçapı ile metalik aktiflik sıralamasını (K > Na > Mg) açıklayınız.",
+        "Üçüncü adımda yarıçapla ters orantılı olarak 1. iyonlaşma enerjisi sıralamasını (Mg > Na > K) yazınız."
+      ],
+      "cevap": "Elektron dizilimleri yapıldığında 11Na (2-8-1) 3. periyot 1A grubunda, 12Mg (2-8-2) 3. periyot 2A grubunda, 19K (2-8-8-1) ise 4. periyot 1A grubundadır. 19K elementi 4 katmanlı olduğu için atom yarıçapı en büyüktür; aynı periyottaki 11Na ve 12Mg'den proton sayısı fazla olan 12Mg'nin çapı daha küçüktür. Dolayısıyla atom yarıçapı sıralaması 19K > 11Na > 12Mg olur. Metalik aktiflik (elektron verme kolaylığı) yarıçapla doğru orantılı olduğundan metalik aktiflik sıralaması da 19K > 11Na > 12Mg şeklindedir. 1. İyonlaşma enerjisi ise yarıçap küçüldükçe (ve 2A küresel simetrik olduğundan) arttığı için İE1 sıralaması 12Mg > 11Na > 19K olarak bulunur."
+    }
+  ],
+  "ozet": [
+    "{koyu:Oktet, Dublet ve İyon Çapı:} Atomlar elektron vererek katyon (+) veya elektron alarak anyon (-) oluşturup soy gaz dizilimine (2'ye dublet, 8'e oktet) ulaşır; yarıçap sıralaması r(anyon) > r(nötr) > r(katyon) şeklindedir.",
+    "{koyu:İzoelektronik Tanecikler:} Elektron sayısı ve dizilimi aynı olan taneciklerde proton sayısı arttıkça elektron başına düşen çekim gücü artar ve tanecik yarıçapı küçülür.",
+    "{koyu:Atom Yarıçapı (Çap):} Aynı grupta yukarıdan aşağıya katman sayısı arttığı için artar; aynı periyotta soldan sağa çekirdek çekimi arttığı için azalır.",
+    "{koyu:İyonlaşma Enerjisi (İE):} Gaz atomundan elektron koparma enerjisidir; yukarıdan aşağıya azalır, soldan sağa genellikle artar (1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A).",
+    "{koyu:Elektronegatiflik ve Aktiflik:} Bağ elektronlarını çekme gücü olan elektronegatiflik ile ametalik özellik sağa (7A'ya kadar) ve yukarıya doğru artar (en yüksek 9F); metalik özellik ise sola ve aşağıya doğru artar."
+  ]
+}

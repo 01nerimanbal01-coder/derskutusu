@@ -1,0 +1,262 @@
+{
+  "ad": "8-matematik-9",
+  "sinif": 8,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 9,
+  "tarih": "9-13 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "Sayılar ve İşlemler",
+  "konu": "Kareköklü İfadelerde Toplama ve Çıkarma İşlemleri ile Kareköklü Bir İfadeyi Doğal Sayı Yapan Çarpanlar (M.8.1.3.5 & M.8.1.3.6)",
+  "ciktilar": [
+    "Kök içleri aynı olan veya a{kok:b} biçimine getirilerek eşitlenen kareköklü ifadelerde toplama ve çıkarma işlemlerini yapar.",
+    "Geometrik şekillerin çevre uzunluğu ve parça kesme problemlerini kareköklü ifadelerde toplama ve çıkarma kurallarıyla çözer.",
+    "Kareköklü bir ifade ile çarpıldığında sonucu bir doğal sayı yapan çarpanlara (k{kok:b}) farklı örnekler verir."
+  ],
+  "giris": "Kareköklü ifadelerde dört işlem becerimizi derinleştirdiğimiz bu haftada, iki temel kazanım üzerinde yoğunlaşıyoruz: Birincisi, kök içlerini eşitleyerek kareköklü ifadelerle toplama-çıkarma yapmak ve geometrik şekillerin çevre uzunluklarını hesaplamak; ikincisi ise kareköklü bir ifadeyi kökten kurtarıp doğal sayıya dönüştüren çarpanları tespit etmektir.",
+  "bolumler": [
+    {
+      "baslik": "Kareköklü İfadelerde Toplama ve Çıkarma İşlemleri (M.8.1.3.5)",
+      "metin": [
+        "Kareköklü ifadelerde toplama ve çıkarma işlemi yapılabilmesi için terimlerin {koyu:karekök içindeki sayılarının birebir aynı olması} zorunludur. Kök içleri eşit olan ifadelerde kök önündeki katsayılar kendi arasında toplanır veya çıkarılır; ortak karekök ise {koyu:hiç değiştirilmeden} sonuca çarpım olarak yazılır: `a{kok:x} + b{kok:x} - c{kok:x} = (a + b - c){kok:x}`. Örneğin `7{kok:5} + 4{kok:5} - 3{kok:5} = (7 + 4 - 3){kok:5} = 8{kok:5}` bulunur.",
+        "Karekök içindeki sayılar birbirinden farklıysa terimler doğrudan toplanamaz; önce her bir terim tam kare çarpanları kök dışına çıkarılarak `a{kok:b}` biçiminde yazılır. Örneğin `{kok:98} - {kok:50} + {kok:8}` işleminde `{kok:98} = 7{kok:2}`, `{kok:50} = 5{kok:2}` ve `{kok:8} = 2{kok:2}` olarak dönüştürülür; ardından `7{kok:2} - 5{kok:2} + 2{kok:2} = 4{kok:2}` sonucu elde edilir.",
+        "Katsayısı yazılmamış olan kareköklü bir ifadenin katsayısı `1` kabul edilir (`{kok:3} = 1{kok:3}`). Eğer ifadeler `a{kok:b}` biçimine getirildiği halde kök içleri eşitlenemiyorsa (`4{kok:2} + 3{kok:5}` gibi), bu terimler arasında toplama veya çıkarma yapılamaz ve ifade olduğu gibi bırakılır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">KAREKÖKLÜ İFADELERDE TOPLAMA VE ÇIKARMA İŞLEMLERİ</text>\n  <rect x=\"25\" y=\"48\" width=\"315\" height=\"192\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"182\" y=\"73\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">1. Kök İçleri Aynı Olan İfadeler</text>\n  <text x=\"182\" y=\"102\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e3a8a\">a·kök(x) + b·kök(x) - c·kök(x) = (a + b - c)·kök(x)</text>\n  <text x=\"40\" y=\"130\" font-size=\"11.5\" fill=\"#334155\">• Kök içindeki sayı aynen kalır, değiştirilmez.</text>\n  <text x=\"40\" y=\"152\" font-size=\"11.5\" fill=\"#334155\">• Yalnızca kök önündeki katsayılar toplanır/çıkarılır.</text>\n  <text x=\"40\" y=\"178\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1d4ed8\">Örnek: 6·kök(5) + 3·kök(5) - kök(5) = 8·kök(5)</text>\n  <text x=\"40\" y=\"204\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b91c1c\">Dikkat: kök(a) + kök(b) ≠ kök(a + b)</text>\n  <text x=\"40\" y=\"224\" font-size=\"10.5\" fill=\"#475569\">kök(16) + kök(9) = 4 + 3 = 7 (kök(25) = 5 değildir!)</text>\n  <rect x=\"360\" y=\"48\" width=\"315\" height=\"192\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n  <text x=\"517\" y=\"73\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">2. Kök İçleri Farklı Olan İfadeler</text>\n  <text x=\"375\" y=\"100\" font-size=\"11.5\" fill=\"#334155\">• Terimler önce a·kök(b) biçimine getirilir.</text>\n  <text x=\"375\" y=\"122\" font-size=\"11.5\" fill=\"#334155\">• Kök içleri eşitlenen terimler kendi arasında toplanır.</text>\n  <text x=\"375\" y=\"148\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#14532d\">Örnek: kök(75) + kök(48) - kök(12)</text>\n  <text x=\"385\" y=\"170\" font-size=\"11.5\" fill=\"#334155\">= 5·kök(3) + 4·kök(3) - 2·kök(3)</text>\n  <text x=\"385\" y=\"192\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">= (5 + 4 - 2)·kök(3) = 7·kök(3)</text>\n  <text x=\"375\" y=\"220\" font-size=\"11\" fill=\"#475569\">Kök içleri eşitlenemiyorsa işlem aynen bırakılır.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Kök İçleri Asla Toplanmaz!",
+          "metin": "Kareköklü ifadelerde {kok:a} + {kok:b} işlemi {kok:a + b} değerine eşit değildir! Örneğin {kok:36} + {kok:64} işlemi {kok:100} = 10 değil, 6 + 8 = 14 sonucunu verir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Kök İçinde İşlem Varsa",
+          "metin": "Eğer toplama veya çıkarma işlemi aynı kök sembolünün İÇİNDE verilmişse ({kok:9 + 16} gibi), önce kök içindeki işlem yapılır ({kok:25}), sonra karekök dışına 5 olarak çıkarılır."
+        }
+      ]
+    },
+    {
+      "baslik": "Geometrik Şekillerde Çevre ve Uzunluk Problemleri",
+      "metin": [
+        "Kareköklü ifadelerde toplama ve çıkarma işlemleri en çok çokgenlerin çevre uzunluğu, tel bükme, şerit kesme ve yan yana dizilen karesel bölgelerin uzunluk problemlerinde karşımıza çıkar. Bir dikdörtgenin çevresi bulunurken kısa ve uzun kenarlar `a{kok:b}` biçimine getirilip toplanır ve sonuç `2` ile çarpılır.",
+        "Alanı verilen bir karesel bölgenin bir kenar uzunluğu, alanın kareköküne eşittir (`Alan = A` ise bir kenar `a = {kok:A}` ve karenin çevresi `4{kok:A}` olur). Örneğin alanı `108 cm²` olan bir karenin bir kenarı `{kok:108} = 6{kok:3} cm`, çevresi ise `4 · 6{kok:3} = 24{kok:3} cm` olarak hesaplanır.",
+        "Toplam uzunluğu verilen bir tel veya tahta parçasından belirli uzunlukta parçalar kesildiğinde kalan parça çıkarma işlemiyle bulunur. Örneğin `{kok:300} = 10{kok:3} m` uzunluğundaki bir telden önce `{kok:48} = 4{kok:3} m`, sonra `{kok:27} = 3{kok:3} m` kesilirse geriye `10{kok:3} - (4{kok:3} + 3{kok:3}) = 3{kok:3} m` tel kalır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">GEOMETRİK ŞEKİLLERDE ÇEVRE VE UZUNLUK UYGULAMALARI</text>\n  <rect x=\"25\" y=\"48\" width=\"315\" height=\"192\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\" stroke-width=\"1.5\"/>\n  <text x=\"182\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#a16207\">Dikdörtgenin Çevre Uzunluğu</text>\n  <rect x=\"85\" y=\"88\" width=\"195\" height=\"68\" rx=\"4\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"106\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#713f12\">Uzun Kenar = kök(50) = 5·kök(2) cm</text>\n  <text x=\"182\" y=\"142\" text-anchor=\"middle\" font-size=\"11\" fill=\"#854d0e\">Kısa Kenar = kök(18) = 3·kök(2) cm</text>\n  <text x=\"45\" y=\"182\" font-size=\"11.5\" fill=\"#334155\">• Çevre = 2 · (Kısa Kenar + Uzun Kenar)</text>\n  <text x=\"45\" y=\"204\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#854d0e\">• Çevre = 2 · (3·kök(2) + 5·kök(2))</text>\n  <text x=\"45\" y=\"224\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">• Çevre = 2 · 8·kök(2) = 16·kök(2) cm</text>\n  <rect x=\"360\" y=\"48\" width=\"315\" height=\"192\" rx=\"8\" fill=\"#fdf2f8\" stroke=\"#ec4899\" stroke-width=\"1.5\"/>\n  <text x=\"517\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#be185d\">Alanı Verilen Karesel Bölgeler</text>\n  <text x=\"375\" y=\"98\" font-size=\"11.5\" fill=\"#334155\">• Alanı A olan karenin bir kenarı: <tspan font-weight=\"bold\" fill=\"#9d174d\">a = kök(A)</tspan></text>\n  <text x=\"375\" y=\"122\" font-size=\"11.5\" fill=\"#334155\">• Karenin çevre uzunluğu: <tspan font-weight=\"bold\" fill=\"#9d174d\">Çevre = 4 · a</tspan></text>\n  <text x=\"375\" y=\"150\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#831843\">Örnek: Alanları 27 cm² ve 12 cm² olan</text>\n  <text x=\"375\" y=\"168\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#831843\">iki karenin yan yana taban uzunluğu:</text>\n  <text x=\"385\" y=\"192\" font-size=\"11.5\" fill=\"#334155\">1. Kenar = kök(27) = 3·kök(3) cm</text>\n  <text x=\"385\" y=\"212\" font-size=\"11.5\" fill=\"#334155\">2. Kenar = kök(12) = 2·kök(3) cm</text>\n  <text x=\"385\" y=\"230\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#be185d\">Toplam = 3·kök(3) + 2·kök(3) = 5·kök(3) cm</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Alan ile Çevreyi Karıştırmayın",
+          "metin": "Alanı verilen kare sorularında sorulan uzunluğa geçmeden önce mutlaka alanın karekökünü alarak bir kenar uzunluğunu a{kok:b} biçiminde yazın!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Ortak Kök İpucu",
+          "metin": "Geometri sorularında kenarlardan biri 3{kok:5} çıkmışsa, diğer kenarların da {kok:20}, {kok:45}, {kok:80} gibi kök içi 5 olan sayılar çıkacağını öngörmek işlem hızını artırır."
+        }
+      ]
+    },
+    {
+      "baslik": "Kareköklü Bir İfadeyi Doğal Sayı Yapan Çarpanlar (M.8.1.3.6)",
+      "metin": [
+        "Tam kare olmayan bir kareköklü ifade uygun bir kareköklü ifadeyle çarpıldığında sonuç bir {koyu:doğal sayı} (rasyonel sayı) olabilir. Bunun temel kuralı, aynı iki karekökün çarpımının kök içindeki sayıya eşit olmasıdır: `{kok:b} · {kok:b} = {kok:b²} = b`.",
+        "Verilen bir kareköklü ifadeyi doğal sayı yapan çarpanları bulmak için ifade önce en sade `a{kok:b}` biçimine getirilir. Bu ifadeyi doğal sayı yapan en küçük pozitif çarpan `{kok:b}` sayısıdır; ancak `{kok:b}`'nin tüm pozitif tam sayı katları (`2{kok:b}, 3{kok:b}, 4{kok:b}, ...` yani `k{kok:b}`) da bu ifadeyi doğal sayı yapar.",
+        "Örneğin `{kok:45}` sayısını inceleyelim: `{kok:45} = {kok:9 · 5} = 3{kok:5}` olarak yazılır. Kök içinde `5` kaldığı için `{kok:45}` sayısını doğal sayı yapan çarpanlar; `{kok:5}`, `2{kok:5} = {kok:20}`, `3{kok:5} = {kok:45}`, `4{kok:5} = {kok:80}` ve `5{kok:5} = {kok:125}` gibi en sade halinde `{kok:5}` barındıran tüm kareköklü ifadelerdir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">KAREKÖKLÜ BİR İFADEYİ DOĞAL SAYI YAPAN ÇARPANLAR (M.8.1.3.6)</text>\n  <rect x=\"25\" y=\"48\" width=\"315\" height=\"192\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"182\" y=\"73\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Temel Kural ve Yöntem</text>\n  <text x=\"40\" y=\"100\" font-size=\"11.5\" fill=\"#334155\">1. Kareköklü ifade önce <tspan font-weight=\"bold\">a·kök(b)</tspan> biçimine</text>\n  <text x=\"52\" y=\"117\" font-size=\"11.5\" fill=\"#334155\">getirilir (b içinde tam kare çarpan kalmaz).</text>\n  <text x=\"40\" y=\"142\" font-size=\"11.5\" fill=\"#334155\">2. Kök içindeki b sayısını kökten kurtarmak</text>\n  <text x=\"52\" y=\"159\" font-size=\"11.5\" fill=\"#334155\">için ifade <tspan font-weight=\"bold\" fill=\"#1d4ed8\">kök(b)</tspan> veya katları olan <tspan font-weight=\"bold\" fill=\"#1d4ed8\">k·kök(b)</tspan></text>\n  <text x=\"52\" y=\"176\" font-size=\"11.5\" fill=\"#334155\">ile çarpılmalıdır:</text>\n  <text x=\"182\" y=\"206\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e3a8a\">a·kök(b) · k·kök(b) = a · k · b (Doğal Sayı)</text>\n  <rect x=\"360\" y=\"48\" width=\"315\" height=\"192\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n  <text x=\"517\" y=\"73\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Örnek: kök(24) İfadesinin Çarpanları</text>\n  <text x=\"375\" y=\"100\" font-size=\"12\" font-weight=\"bold\" fill=\"#14532d\">• kök(24) = kök(4 · 6) = 2·kök(6)</text>\n  <text x=\"375\" y=\"126\" font-size=\"11.5\" fill=\"#334155\">İçinde <tspan font-weight=\"bold\">kök(6)</tspan> bulunan her çarpan doğal sayı yapar:</text>\n  <text x=\"385\" y=\"150\" font-size=\"11.5\" fill=\"#334155\">✓ 1·kök(6) = <tspan font-weight=\"bold\" fill=\"#15803d\">kök(6)</tspan> → 2·kök(6) · kök(6) = 12</text>\n  <text x=\"385\" y=\"174\" font-size=\"11.5\" fill=\"#334155\">✓ 2·kök(6) = <tspan font-weight=\"bold\" fill=\"#15803d\">kök(24)</tspan> → 2·kök(6) · 2·kök(6) = 24</text>\n  <text x=\"385\" y=\"198\" font-size=\"11.5\" fill=\"#334155\">✓ 3·kök(6) = <tspan font-weight=\"bold\" fill=\"#15803d\">kök(54)</tspan> → 2·kök(6) · 3·kök(6) = 36</text>\n  <text x=\"385\" y=\"222\" font-size=\"11.5\" fill=\"#334155\">✓ 5·kök(6) = <tspan font-weight=\"bold\" fill=\"#15803d\">kök(150)</tspan> → 2·kök(6) · 5·kök(6) = 60</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Tek Bir Çarpan Yoktur!",
+          "metin": "Bir a{kok:b} ifadesini doğal sayı yapan çarpan yalnız {kok:b} değildir! Şıklarda {kok:b} yoksa seçeneklerin hepsini a{kok:b} biçimine getirin; kök içi b olan (k{kok:b}) her seçenek doğru çarpandır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Tam Kare İfadeler",
+          "metin": "Eğer verilen ifade zaten bir doğal sayıya eşitse ({kok:64} = 8 gibi), bu ifadeyi doğal sayı yapan çarpanlar da yine doğal sayılar (veya tam kare kökler) olmalıdır."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Verilen {kok:108} + {kok:75} - {kok:147} işleminin sonucunu en sade biçimde bulunuz.",
+      "cevap": "{kok:108} = 6{kok:3}, {kok:75} = 5{kok:3} ve {kok:147} = 7{kok:3} olarak a{kok:b} biçimine getirilir. İşlem: 6{kok:3} + 5{kok:3} - 7{kok:3} = (6 + 5 - 7){kok:3} = 4{kok:3} bulunur."
+    },
+    {
+      "soru": "Kısa kenarı {kok:20} cm, uzun kenarı {kok:125} cm olan bir dikdörtgenin çevre uzunluğu kaç cm'dir?",
+      "cevap": "Kısa kenar {kok:20} = 2{kok:5} cm ve uzun kenar {kok:125} = 5{kok:5} cm'dir. Dikdörtgenin çevresi = 2 · (2{kok:5} + 5{kok:5}) = 2 · 7{kok:5} = 14{kok:5} cm olur."
+    },
+    {
+      "soru": "Verilen {kok:54} sayısını çarpıldığında doğal sayı yapan 3 farklı kareköklü çarpan örneği yazınız.",
+      "cevap": "{kok:54} = {kok:9 · 6} = 3{kok:6} olduğundan kök içi 6 olan k{kok:6} biçimindeki tüm ifadeler doğal sayı yapar: 1) {kok:6}, 2) 2{kok:6} = {kok:24}, 3) 3{kok:6} = {kok:54} (veya 4{kok:6} = {kok:96})."
+    },
+    {
+      "soru": "Alanları sırasıyla 32 cm² ve 72 cm² olan iki kare yan yana getiriliyor. Bu iki karenin birer kenar uzunluklarının toplamı kaç cm'dir?",
+      "cevap": "Birinci karenin kenarı {kok:32} = 4{kok:2} cm, ikinci karenin kenarı ise {kok:72} = 6{kok:2} cm'dir. İki kenarın toplamı = 4{kok:2} + 6{kok:2} = 10{kok:2} cm bulunur."
+    },
+    {
+      "soru": "A = {kok:12}, B = {kok:18}, C = {kok:27} ve D = {kok:50} sayılarından hangi ikisi birbiriyle çarpılırsa sonuç bir doğal sayı olur?",
+      "cevap": "Sayılar a{kok:b} şeklinde yazılırsa: A = 2{kok:3}, B = 3{kok:2}, C = 3{kok:3} ve D = 5{kok:2} olur. Kök içleri aynı olan A ile C (2{kok:3} · 3{kok:3} = 18) ve B ile D (3{kok:2} · 5{kok:2} = 30) çarpıldığında sonuç doğal sayı olur."
+    },
+    {
+      "soru": "Paydasında kareköklü ifade bulunan (12 / {kok:2}) + {kok:32} işleminin sonucu kaçtır?",
+      "cevap": "Önce 12 / {kok:2} kesri {kok:2} ile genişletilir: (12{kok:2}) / 2 = 6{kok:2}. İkinci terim {kok:32} = 4{kok:2} olarak yazılır. Toplamları: 6{kok:2} + 4{kok:2} = 10{kok:2} bulunur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Kareköklü ifadelerde {kok:128} - {kok:50} + {kok:18} işleminin sonucu aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "6{kok:2}",
+        "5{kok:2}",
+        "8{kok:2}",
+        "10{kok:2}"
+      ],
+      "dogru": 0,
+      "aciklama": "{kok:128} = 8{kok:2}, {kok:50} = 5{kok:2} ve {kok:18} = 3{kok:2} olduğundan 8{kok:2} - 5{kok:2} + 3{kok:2} = 6{kok:2} bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Verilen {kok:40} sayısı aşağıdaki kareköklü ifadelerden hangisi ile çarpılırsa sonuç bir doğal sayı olur?",
+      "secenekler": [
+        "{kok:20}",
+        "{kok:90}",
+        "{kok:50}",
+        "{kok:80}"
+      ],
+      "dogru": 1,
+      "aciklama": "{kok:40} = 2{kok:10} olduğundan kök içinde {kok:10} barındıran {kok:90} = 3{kok:10} ile çarpıldığında 2{kok:10} · 3{kok:10} = 60 doğal sayısı elde edilir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Alanı 48 cm² olan karesel bir bölgenin çevre uzunluğu kaç cm'dir?",
+      "secenekler": [
+        "12{kok:3}",
+        "8{kok:3}",
+        "16{kok:3}",
+        "24{kok:3}"
+      ],
+      "dogru": 2,
+      "aciklama": "Alanı 48 cm² olan karenin bir kenarı {kok:48} = 4{kok:3} cm'dir. Çevresi ise 4 · 4{kok:3} = 16{kok:3} cm olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Uzunluğu {kok:245} metre olan bir kumaş topundan {kok:80} metrelik bir parça kesilip satılıyor. Geriye kaç metre kumaş kalmıştır?",
+      "secenekler": [
+        "2{kok:5}",
+        "4{kok:5}",
+        "5{kok:5}",
+        "3{kok:5}"
+      ],
+      "dogru": 3,
+      "aciklama": "{kok:245} = {kok:49 · 5} = 7{kok:5} m ve {kok:80} = {kok:16 · 5} = 4{kok:5} m olduğundan geriye 7{kok:5} - 4{kok:5} = 3{kok:5} m kumaş kalır."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Kareköklü ifadelerde toplama ve çıkarma yapabilmek için karekök içindeki sayıların eşit olması gerekir.",
+          "dogru": true,
+          "aciklama": "Kök içleri eşit olan ifadelerde katsayılar toplanır veya çıkarılır."
+        },
+        {
+          "metin": "Toplama işleminde {kok:25} + {kok:144} ifadesinin sonucu {kok:169} yani 13 sayısına eşittir.",
+          "dogru": false,
+          "aciklama": "Ayrı köklerin içleri toplanmaz; {kok:25} + {kok:144} = 5 + 12 = 17 olur."
+        },
+        {
+          "metin": "Verilen {kok:28} sayısını doğal sayı yapan en küçük pozitif kareköklü çarpan {kok:7} ifadesidir.",
+          "dogru": true,
+          "aciklama": "{kok:28} = 2{kok:7} olduğundan {kok:7} ile çarpımı 14 doğal sayısını verir."
+        },
+        {
+          "metin": "Beş kök üç (5{kok:3}) ifadesinden kök üç ({kok:3}) çıkarıldığında sonuç 5 doğal sayısına eşit olur.",
+          "dogru": false,
+          "aciklama": "5{kok:3} - 1{kok:3} işleminin sonucu 5 değil, 4{kok:3} olur."
+        },
+        {
+          "metin": "Karekök altındaki {kok:63} sayısı ile {kok:28} sayısının çarpımı bir doğal sayıdır.",
+          "dogru": true,
+          "aciklama": "{kok:63} = 3{kok:7} ve {kok:28} = 2{kok:7} olduğundan çarpımları 3{kok:7} · 2{kok:7} = 42 doğal sayısıdır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Kareköklü ifadeleri veya işlemleri karşılık gelen doğru sonuçlarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "{kok:45} + {kok:20}",
+          "5{kok:5}"
+        ],
+        [
+          "{kok:75} - {kok:12}",
+          "3{kok:3}"
+        ],
+        [
+          "{kok:24} sayısını doğal sayı yapan çarpan",
+          "{kok:6}"
+        ],
+        [
+          "{kok:50} sayısını doğal sayı yapan çarpan",
+          "{kok:2}"
+        ],
+        [
+          "3{kok:7} · 2{kok:7}",
+          "42"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun sayı veya ifadelerle tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Kareköklü ifadelerde toplama işlemi yapılırken ortak kök aynen yazılır, kök önündeki ___ toplanır.",
+          "cevap": "katsayılar"
+        },
+        {
+          "metin": "Verilen {kok:12} + {kok:27} toplama işleminin sonucu ___ ifadesine eşittir.",
+          "cevap": "5{kok:3}"
+        },
+        {
+          "metin": "Bir kenar uzunluğu 2{kok:6} cm olan eşkenar üçgenin çevre uzunluğu ___ cm'dir.",
+          "cevap": "6{kok:6}"
+        },
+        {
+          "metin": "Karekök içindeki {kok:32} ifadesi {kok:2} ile çarpıldığında sonuç ___ doğal sayısına eşit olur.",
+          "cevap": "8"
+        },
+        {
+          "metin": "Kök içinde verilen {kok:9 + 16} işleminin sonucu ___ doğal sayısına eşittir.",
+          "cevap": "5"
+        }
+      ],
+      "fazla": [
+        "7",
+        "4{kok:6}"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Kenar uzunlukları {kok:48} cm ve {kok:108} cm olan bir dikdörtgenin çevre uzunluğunu bulup, bu çevre uzunluğunu doğal sayı yapan en küçük pozitif kareköklü çarpanı adım adım belirleyiniz.",
+      "ipuclari": [
+        "İlk adım: {kok:48} ve {kok:108} kenar uzunluklarını tam kare çarpanlarını dışarı çıkararak a{kok:b} biçiminde yazın.",
+        "İkinci adım: Dikdörtgenin çevresini Çevre = 2 · (Kısa Kenar + Uzun Kenar) formülüyle hesaplayın.",
+        "Üçüncü adım: Bulduğunuz çevre uzunluğunun kök içindeki sayısına bakarak sonucu doğal sayı yapacak en küçük çarpanı ve çarpım sonucunu yazın."
+      ],
+      "cevap": "Önce kenarlar a{kok:b} biçimine getirilir: {kok:48} = 4{kok:3} cm ve {kok:108} = 6{kok:3} cm. Dikdörtgenin çevresi = 2 · (4{kok:3} + 6{kok:3}) = 2 · 10{kok:3} = 20{kok:3} cm bulunur. 20{kok:3} ifadesini doğal sayı yapan en küçük pozitif çarpan {kok:3} sayısıdır (20{kok:3} · {kok:3} = 60)."
+    }
+  ],
+  "ozet": [
+    "{koyu:Toplama ve Çıkarma Kuralı:} Kök içleri eşit olan ifadelerde katsayılar toplanır/çıkarılır, ortak kök aynen yazılır: a{kok:x} + b{kok:x} = (a + b){kok:x}.",
+    "{koyu:Kök İçlerini Eşitleme:} Kök içleri farklıysa terimler önce a{kok:b} biçimine getirilir; kök içleri eşitlenemiyorsa işlem olduğu gibi bırakılır.",
+    "{koyu:Temel Uyarı:} Ayrı kareköklerin içleri doğrudan toplanmaz veya çıkarılmaz ({kok:a} + {kok:b} ≠ {kok:a + b}).",
+    "{koyu:Geometrik Çevre Hesabı:} Çokgenlerin çevresi bulunurken tüm kenarlar a{kok:b} biçimine getirilip toplanır; alanı A olan karenin bir kenarı {kok:A} olur.",
+    "{koyu:Doğal Sayı Yapan Çarpanlar:} En sade hali a{kok:b} olan bir ifadeyi {kok:b} ve k{kok:b} biçimindeki tüm katları çarpıldığında doğal sayı yapar."
+  ]
+}

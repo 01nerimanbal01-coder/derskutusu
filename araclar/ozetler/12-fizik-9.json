@@ -1,0 +1,263 @@
+{
+  "ad": "12-fizik-9",
+  "sinif": 12,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 9,
+  "tarih": "9-13 Kasım 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "1. ÜNİTE: ÇEMBERSEL HAREKET & 2. ÜNİTE: BASİT HARMONİK HAREKET",
+  "konu": "Kepler Kanunları Uygulamaları ve Basit Harmonik Harekete Giriş: Uzanım, Genlik, Periyot, Frekans ve Geri Çağırıcı Kuvvet (12.1.5 & 12.2.1)",
+  "ciktilar": [
+    "Gök bilimine katkıda bulunan bilim insanlarının çalışmalarını ve Kepler kanunlarının gezegen hareketlerindeki uygulamalarını açıklar.",
+    "Basit harmonik hareketi düzgün çembersel hareketin izdüşümü üzerinden tanımlayarak denge noktası, uzanım, genlik, periyot ve frekans kavramlarını analiz eder.",
+    "Basit harmonik harekette geri çağırıcı kuvvet, ivme ve hız vektörlerinin yörünge üzerindeki değişimlerini matematiksel bağıntılarla yorumlar."
+  ],
+  "giris": "Evrendeki gezegenlerin Güneş etrafındaki eliptik dolanımlarından, bir duvar saatinin sarkacına veya esnek bir yayın ucundaki kütlenin titreşimine kadar doğadaki pek çok olay periyodik hareket yasalarına uyar. Gök mekaniğinin temelini oluşturan Kepler kanunlarının ardından, sabit iki nokta arasında değişken ivmeyle tekrarlanan basit harmonik hareketin incelenmesi, dalga mekaniği ve modern fiziğin anlaşılması için kilit öneme sahiptir.",
+  "bolumler": [
+    {
+      "baslik": "Gök Bilimi Çalışmaları ve Kepler Kanunları Uygulamaları",
+      "metin": [
+        "Gök cisimlerinin hareketlerini açıklamada Türk-İslam bilginleri {koyu:Uluğ Bey} ve {koyu:Ali Kuşçu} önemli çalışmalar yapmıştır. Semerkant'ta büyük bir rasathane kuran Uluğ Bey, yıldızların konumlarını ve yıl uzunluğunu büyük bir hassasiyetle içeren {koyu:Zîc-i Uluğ Bey} kataloğunu hazırlamış; öğrencisi Ali Kuşçu ise Ay'ın ilk haritasını çıkarmış ve Dünya'nın dönme hareketine dair kanıtlar sunmuştur. Avrupa'da {koyu:Kopernik} Güneş merkezli evren modelini önermiş, {koyu:Galileo Galilei} teleskopla Jüpiter'in uydularını gözlemlemiş, {koyu:Johannes Kepler} ise gezegenlerin hareket yasalarını matematiksel olarak ortaya koymuştur.",
+        "Kepler'in {koyu:Yörüngeler Kanunu}'na göre her gezegen, odaklarından birinde Güneş bulunan elips biçimli yörüngelerde dolanır. {koyu:Alanlar Kanunu}'na göre gezegeni Güneş'e birleştiren yarıçap vektörü eşit zaman aralıklarında eşit alanlar tarar ({kesir:ΔA_1|Δt_1} = {kesir:ΔA_2|Δt_2}). Gezegenin üzerine dış tork etki etmediğinden {koyu:açısal momentumu (L) ve toplam mekanik enerjisi korunur}; gezegen Güneş'e yaklaştıkça çizgisel hızı ve kinetik enerjisi artarken kütle çekim potansiyel enerjisi azalır.",
+        "Kepler'in {koyu:Periyotlar Kanunu}'na göre ise aynı merkezî gök cismi (Güneş) etrafında dolanan gezegenler için ortalama yörünge yarıçapının küpünün, dolanım periyodunun karesine oranı sabittir: R_1³ / T_1² = R_2³ / T_2² = sabit. Dolayısıyla Güneş'ten uzaklaşan gezegenlerin dolanım periyodu büyür ve ortalama dolanım hızı küçülür."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">KEPLER KANUNLARI VE GEZEGEN HAREKETİNDE ENERJİ-MOMENTUM</text>\n  <rect x=\"25\" y=\"42\" width=\"330\" height=\"202\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <ellipse cx=\"190\" cy=\"125\" rx=\"130\" ry=\"65\" fill=\"#dbeafe\" stroke=\"#1d4ed8\" stroke-width=\"2\"/>\n  <circle cx=\"115\" cy=\"125\" r=\"16\" fill=\"#f59e0b\" stroke=\"#b45309\" stroke-width=\"2\"/>\n  <text x=\"115\" y=\"129\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#ffffff\">Güneş</text>\n  <circle cx=\"60\" cy=\"125\" r=\"8\" fill=\"#1e40af\"/>\n  <text x=\"45\" y=\"110\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\">K (r_min)</text>\n  <circle cx=\"320\" cy=\"125\" r=\"8\" fill=\"#1e40af\"/>\n  <text x=\"295\" y=\"110\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\">L (r_max)</text>\n  <text x=\"190\" y=\"212\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">K'den L'ye giderken: v_K &gt; v_L  |  E_k(K) &gt; E_k(L)</text>\n  <text x=\"190\" y=\"230\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1d4ed8\">L_K = L_L (Açısal momentum korunur, τ_net = 0)</text>\n\n  <rect x=\"370\" y=\"42\" width=\"305\" height=\"202\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"522\" y=\"65\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#92400e\">Kepler Bağıntıları ve Gök Bilimi</text>\n  <text x=\"385\" y=\"90\" font-size=\"12\" fill=\"#78350f\">• <tspan font-weight=\"bold\">1. Yörüngeler:</tspan> Odaklardan birinde Güneş</text>\n  <text x=\"385\" y=\"112\" font-size=\"12\" fill=\"#78350f\">• <tspan font-weight=\"bold\">2. Alanlar:</tspan> Eşit sürede eşit alan (ΔA₁ = ΔA₂)</text>\n  <text x=\"385\" y=\"134\" font-size=\"12\" fill=\"#78350f\">• <tspan font-weight=\"bold\">3. Periyotlar:</tspan> R₁³ / T₁² = R₂³ / T₂² = Sabit</text>\n  <rect x=\"385\" y=\"148\" width=\"275\" height=\"82\" rx=\"6\" fill=\"#ffffff\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/>\n  <text x=\"522\" y=\"168\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\">Türk-İslam ve Batı Gök Bilimcileri</text>\n  <text x=\"395\" y=\"188\" font-size=\"11\" fill=\"#0f172a\">• <tspan font-weight=\"bold\">Uluğ Bey:</tspan> Semerkant Rasathanesi, Zîc-i Uluğ Bey</text>\n  <text x=\"395\" y=\"205\" font-size=\"11\" fill=\"#0f172a\">• <tspan font-weight=\"bold\">Ali Kuşçu:</tspan> İlk Ay haritası, astronomi risaleleri</text>\n  <text x=\"395\" y=\"222\" font-size=\"11\" fill=\"#0f172a\">• <tspan font-weight=\"bold\">Galileo:</tspan> Teleskopla Jüpiter uyduları gözlemi</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Elips yörüngede dolanan bir gezegenin Güneş'e olan uzaklığı değişirken çizgisel hızı, kinetik enerjisi, potansiyel enerjisi ve eylemsizlik momenti değişir; ancak açısal momentumu ve toplam mekanik enerjisi sabit kalır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Periyotlar kanununda ortalama yarıçap 4 katına çıkarsa, R³ / T² = sabit bağıntısından R³ değeri 64 katına çıkacağından periyot T = {kok:64} = 8 katına çıkar."
+        }
+      ]
+    },
+    {
+      "baslik": "Basit Harmonik Hareket: Düzgün Çembersel Hareketin İzdüşümü",
+      "metin": [
+        "Sürtünmesiz bir ortamda, sabit iki uç nokta (K ve L) arasında, büyüklüğü denge noktasına olan uzaklıkla doğru orantılı bir geri çağırıcı kuvvet etkisinde kendini eşit zaman aralıklarıyla tekrarlayan titreşim hareketine {koyu:basit harmonik hareket (BHH)} denir. Salıncak, sarkaçlı duvar saati ve yay ucundaki kütle hareketi günlük hayattaki temel örneklerdir.",
+        "Düşey bir düzlemde sabit açısal hızla ({koyu:ω}) düzgün çembersel hareket yapan bir cismin üzerine paralel ışık demeti düşürüldüğünde, cismin yatay veya düşey çap üzerindeki gölgesinin (izdüşümünün) hareketi {koyu:basit harmonik harekettir}. Çembersel yörüngenin merkezi, harmonik hareketin {koyu:denge noktası (O)}; yörünge yarıçapı ise {koyu:genlik (r)} değerine karşılık gelir.",
+        "Cismin herhangi bir anda denge noktasından olan yönlü uzaklığına {koyu:uzanım (x)} denir ve vektörel bir büyüklüktür. Cismin denge noktasından ayrılabileceği maksimum uzanım değerine {koyu:genlik (r)} adı verilir. Bir tam salınım için geçen süreye {koyu:periyot (T)}, birim zamandaki (1 saniyedeki) salınım sayısına ise {koyu:frekans (f)} denir ({koyu:T · f = 1})."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">BASİT HARMONİK HAREKETTE TEMEL KAVRAMLAR VE SÜRE PAYLAŞIMI</text>\n  <rect x=\"30\" y=\"45\" width=\"640\" height=\"105\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <line x1=\"90\" y1=\"95\" x2=\"610\" y2=\"95\" stroke=\"#0f172a\" stroke-width=\"3\"/>\n  <circle cx=\"90\" cy=\"95\" r=\"7\" fill=\"#dc2626\"/>\n  <text x=\"90\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#dc2626\">K (-r)</text>\n\n  <circle cx=\"220\" cy=\"95\" r=\"6\" fill=\"#2563eb\"/>\n  <text x=\"220\" y=\"75\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">M (-r/2)</text>\n\n  <circle cx=\"350\" cy=\"95\" r=\"8\" fill=\"#16a34a\"/>\n  <text x=\"350\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#16a34a\">O (Denge = 0)</text>\n\n  <circle cx=\"480\" cy=\"95\" r=\"6\" fill=\"#2563eb\"/>\n  <text x=\"480\" y=\"75\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">N (+r/2)</text>\n\n  <circle cx=\"610\" cy=\"95\" r=\"7\" fill=\"#dc2626\"/>\n  <text x=\"610\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#dc2626\">L (+r)</text>\n\n  <text x=\"155\" y=\"128\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#991b1b\">T / 6</text>\n  <text x=\"285\" y=\"128\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\">T / 12</text>\n  <text x=\"415\" y=\"128\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\">T / 12</text>\n  <text x=\"545\" y=\"128\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#991b1b\">T / 6</text>\n\n  <rect x=\"30\" y=\"164\" width=\"310\" height=\"80\" rx=\"8\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.8\"/>\n  <text x=\"185\" y=\"186\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">Uzanım (x) ve Genlik (r)</text>\n  <text x=\"185\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">• Uzanım (x): Herhangi bir andaki yönlü konum</text>\n  <text x=\"185\" y=\"224\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">• Genlik (r): Maksimum uzanım büyüklüğü</text>\n\n  <rect x=\"360\" y=\"164\" width=\"310\" height=\"80\" rx=\"8\" fill=\"#fae8ff\" stroke=\"#9333ea\" stroke-width=\"1.8\"/>\n  <text x=\"515\" y=\"186\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">Periyot Bölmeleri (K - L Arası = T/2)</text>\n  <text x=\"515\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" fill=\"#581c87\">• K → O veya O → L süresi: T / 4</text>\n  <text x=\"515\" y=\"224\" text-anchor=\"middle\" font-size=\"11\" fill=\"#581c87\">• Eşit bölmelerde: Uçta T/6, dengeye yakın T/12</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Basit harmonik hareket yapan bir cismin periyodu (T) ve frekansı (f), hareketin genliğine (r) bağlı değildir; genlik artırıldığında cisim daha uzun yolu daha büyük hızla alarak periyodunu korur."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "K-L noktaları arası 4 eşit bölmeye ayrıldığında (K-M-O-N-L), cisim denge noktasına (O) yaklaşırken hızlandığı için O'ya komşu bölmeleri T/12 sürede, uçlara komşu bölmeleri ise T/6 sürede alır."
+        }
+      ]
+    },
+    {
+      "baslik": "Geri Çağırıcı Kuvvet, İvme ve Hız İlişkileri",
+      "metin": [
+        "Basit harmonik harekette cismi daima denge noktasına (O) doğru çeken net kuvvete {koyu:geri çağırıcı kuvvet (F)} denir. Geri çağırıcı kuvvet ve ivme ({koyu:a}) vektörlerinin yönü her zaman {koyu:denge noktasına (O) doğrudur} ve uzanım vektörü ({koyu:x}) ile zıt yönlüdür: {koyu:F = -m · ω² · x} ve {koyu:a = -ω² · x} (burada ω = {kesir:2π|T} = 2πf açısal frekanstır).",
+        "Cisim denge noktasından (O) geçerken uzanım sıfır ({koyu:x = 0}) olduğu için {koyu:geri çağırıcı kuvvet ve ivme sıfırdır} (F = 0, a = 0); ancak cismin hızı {koyu:maksimum değerine} ulaşır ({koyu:v_max = ω · r}).",
+        "Cisim genlik (uç) noktalarına (K ve L) ulaştığında ise anlık olarak durup yön değiştirdiği için {koyu:çizgisel hızı sıfır (v = 0)} olur; buna karşılık uzanım maksimum (x = r) olduğundan {koyu:geri çağırıcı kuvvet ve ivme maksimum değerini} alır ({koyu:F_max = m · ω² · r} ve {koyu:a_max = ω² · r}). Herhangi bir x uzanımındaki anlık hız büyüklüğü ise v = ω · {kok:r² - x²} bağıntısıyla hesaplanır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">KONUMA GÖRE KUVVET, İVME VE HIZ DEĞİŞİM TABLOSU</text>\n  <rect x=\"25\" y=\"48\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <text x=\"127\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#991b1b\">K UÇ NOKTASI (x = -r)</text>\n  <text x=\"40\" y=\"100\" font-size=\"12\" fill=\"#7f1d1d\">• Hız: <tspan font-weight=\"bold\">v = 0 (Minimum)</tspan></text>\n  <text x=\"40\" y=\"124\" font-size=\"12\" fill=\"#7f1d1d\">• İvme: <tspan font-weight=\"bold\">a_max = ω² · r</tspan> (+x yönlü)</text>\n  <text x=\"40\" y=\"148\" font-size=\"12\" fill=\"#7f1d1d\">• Kuvvet: <tspan font-weight=\"bold\">F_max = m·ω²·r</tspan></text>\n  <text x=\"40\" y=\"172\" font-size=\"11\" fill=\"#991b1b\">• Kuvvet ve ivme O'ya (+x)</text>\n  <text x=\"50\" y=\"188\" font-size=\"11\" fill=\"#991b1b\">doğru yönelmiştir.</text>\n  <text x=\"40\" y=\"214\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Uzanım: Maksimum (r)</text>\n\n  <rect x=\"247\" y=\"48\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"349\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#166534\">O DENGE NOKTASI (x = 0)</text>\n  <text x=\"262\" y=\"100\" font-size=\"12\" fill=\"#14532d\">• Hız: <tspan font-weight=\"bold\">v_max = ω · r</tspan></text>\n  <text x=\"262\" y=\"124\" font-size=\"12\" fill=\"#14532d\">• İvme: <tspan font-weight=\"bold\">a = 0</tspan></text>\n  <text x=\"262\" y=\"148\" font-size=\"12\" fill=\"#14532d\">• Kuvvet: <tspan font-weight=\"bold\">F = 0</tspan></text>\n  <text x=\"262\" y=\"172\" font-size=\"11\" fill=\"#166534\">• Anlık uzanım hızı:</text>\n  <text x=\"272\" y=\"188\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">v = ω · kök(r² - x²)</text>\n  <text x=\"262\" y=\"214\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">Uzanım: Sıfır (0)</text>\n\n  <rect x=\"470\" y=\"48\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <text x=\"572\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#991b1b\">L UÇ NOKTASI (x = +r)</text>\n  <text x=\"485\" y=\"100\" font-size=\"12\" fill=\"#7f1d1d\">• Hız: <tspan font-weight=\"bold\">v = 0 (Minimum)</tspan></text>\n  <text x=\"485\" y=\"124\" font-size=\"12\" fill=\"#7f1d1d\">• İvme: <tspan font-weight=\"bold\">a_max = ω² · r</tspan> (-x yönlü)</text>\n  <text x=\"485\" y=\"148\" font-size=\"12\" fill=\"#7f1d1d\">• Kuvvet: <tspan font-weight=\"bold\">F_max = m·ω²·r</tspan></text>\n  <text x=\"485\" y=\"172\" font-size=\"11\" fill=\"#991b1b\">• Kuvvet ve ivme O'ya (-x)</text>\n  <text x=\"495\" y=\"188\" font-size=\"11\" fill=\"#991b1b\">doğru yönelmiştir.</text>\n  <text x=\"485\" y=\"214\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Uzanım: Maksimum (r)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Basit harmonik harekette uzanım (x) vektörü her zaman denge noktasından (O) dışarıya (cisme) doğru çizilirken, geri çağırıcı kuvvet (F) ve ivme (a) vektörleri her zaman denge noktasına (O) doğru çizilir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Geri çağırıcı kuvvet uzanımla doğru orantılı (F = k · x) olduğundan, kuvvet-uzanım ve ivme-uzanım grafikleri orijinden geçen doğrusal bir çizgi (eğimi negatif) şeklindedir."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Aynı yıldız etrafında dolanan X ve Y gezegenlerinin ortalama yörünge yarıçapları sırasıyla R ve 4R'dir. X gezegeninin dolanım periyodu T_X = 2 yıl olduğuna göre Y gezegeninin dolanım periyodu T_Y kaç yıldır?",
+      "cevap": "Kepler'in Periyotlar Kanunu'na göre R_X³ / T_X² = R_Y³ / T_Y² bağıntısı yazılır. Değerler yerine konulduğunda R³ / 2² = (4R)³ / T_Y² → 1 / 4 = 64 / T_Y² → T_Y² = 256 elde edilir. Her iki tarafın karekökü alındığında T_Y = {kok:256} = 16 yıl bulunur."
+    },
+    {
+      "soru": "K ve L noktaları arasında 12 saniye periyotla basit harmonik hareket yapan bir cismin yörüngesi 4 eşit bölmeye (K-M-O-N-L) ayrılmıştır. Cisim K uç noktasından harekete başladıktan sonra N noktasına ilk kez kaç saniyede ulaşır?",
+      "cevap": "Eşit bölmeli yörüngede cisim K'den M'ye T/6 sürede, M'den O'ya T/12 sürede ve O'dan N'ye T/12 sürede gelir. T = 12 s için: t_KM = 12/6 = 2 s, t_MO = 12/12 = 1 s ve t_ON = 12/12 = 1 s'dir. Toplam süre t = 2 + 1 + 1 = 4 saniye olur."
+    },
+    {
+      "soru": "Genliği r = 0,5 m olan bir yörüngede periyodu T = 3 s olacak biçimde basit harmonik hareket yapan 2 kg kütleli bir cisme etki eden maksimum geri çağırıcı kuvvet kaç N'dir? (π = 3 alınız)",
+      "cevap": "Önce açısal frekans bulunur: ω = 2π / T = (2 · 3) / 3 = 2 rad/s. Maksimum geri çağırıcı kuvvet uç noktalarda oluşur: F_max = m · ω² · r = 2 · 2² · 0,5 = 2 · 4 · 0,5 = 4 N olarak bulunur."
+    },
+    {
+      "soru": "Genliği r = 10 cm olan basit harmonik harekette açısal frekans ω = 4 rad/s'dir. Cismin denge noktasından x = 6 cm uzaklıktaki bir noktadan geçerken anlık hızı kaç cm/s'dir?",
+      "cevap": "Herhangi bir x uzanımındaki anlık hız v = ω · {kok:r² - x²} bağıntısıyla hesaplanır. Değerler yerine yazılırsa: v = 4 · {kok:10² - 6²} = 4 · {kok:100 - 36} = 4 · {kok:64} = 4 · 8 = 32 cm/s bulunur."
+    },
+    {
+      "soru": "Güneş etrafında eliptik yörüngede dolanan Dünya, Güneş'e en yakın olduğu günberi konumundan en uzak olduğu günöte konumuna doğru hareket ederken açısal momentumu, çizgisel hızı ve mekanik enerjisi nasıl değişir?",
+      "cevap": "Kütle çekim kuvveti dönme merkezinden (Güneş'ten) geçtiği için net tork sıfırdır; bu nedenle açısal momentum ve toplam mekanik enerji korunur (değişmez). Güneş'ten uzaklaştıkça eylemsizlik momenti arttığından çizgisel hızı ve kinetik enerjisi azalır, kütle çekim potansiyel enerjisi ise artar."
+    },
+    {
+      "soru": "Basit harmonik hareket yapan bir cisim denge noktasından (O) uç noktaya (L) doğru giderken hız, ivme ve uzanım vektörlerinin büyüklüğü ve yönü nasıl değişir?",
+      "cevap": "Cisim O'dan L'ye giderken uzanım (x) ve hız (v) vektörleri L'ye doğru, ivme (a) ve geri çağırıcı kuvvet (F) vektörleri ise denge noktası O'ya doğrudur. L'ye yaklaştıkça uzanım ve ivmenin büyüklüğü artarken, hızın büyüklüğü azalır ve L noktasında anlık olarak sıfır olur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "soru": "Güneş etrafında eliptik bir yörüngede dolanan bir gezegen, Güneş'e yaklaştığı süreçte gezegene ait;\nI. Çizgisel hız büyüklüğü,\nII. Güneş'e göre açısal momentumu,\nIII. Kütle çekim potansiyel enerjisi\nniceliklerinden hangileri artar?",
+      "secenekler": [
+        "Yalnız I",
+        "Yalnız II",
+        "I ve II",
+        "I ve III",
+        "II ve III"
+      ],
+      "dogru": 0,
+      "aciklama": "Gezegen Güneş'e yaklaşırken açısal momentumu (II) korunur, çizgisel hızı ve kinetik enerjisi (I) artar, kütle çekim potansiyel enerjisi (III) ise azalır.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "K ve L noktaları arasında (O denge noktası olmak üzere) basit harmonik hareket yapan bir cisim için aşağıdaki ifadelerden hangisi yanlıştır?",
+      "secenekler": [
+        "Cismin O denge noktasından geçerken çizgisel hızı maksimum büyüklüktedir.",
+        "Cismin K ve L uç noktalarında anlık ivmesi ve geri çağırıcı kuvveti maksimumdur.",
+        "Geri çağırıcı kuvvet vektörü ile uzanım vektörü hareket boyunca zıt yönlüdür.",
+        "Cisim O noktasından L noktasına doğru giderken sabit ivmeyle yavaşlar.",
+        "Cismin O noktasından geçerken üzerine etki eden geri çağırıcı kuvvet sıfırdır."
+      ],
+      "dogru": 3,
+      "aciklama": "Basit harmonik harekette ivme a = -ω²·x bağıntısına göre uzanımla doğru orantılı olarak sürekli değişir; dolayısıyla hareket sabit ivmeli değil, değişken ivmeli harekettir.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Düzgün doğrusal K-L yolu üzerinde periyodu 24 saniye olan basit harmonik hareket yapan bir cismin yörüngesi 4 eşit parçaya (K-M-O-N-L) bölünmüştür. O denge noktasından +x yönünde (N'ye doğru) geçen cisim, harekete başladıktan 6 saniye sonra hangi noktada bulunur?",
+      "secenekler": [
+        "N noktasında",
+        "L uç noktasında",
+        "O denge noktasında",
+        "M noktasında",
+        "K uç noktasında"
+      ],
+      "dogru": 1,
+      "aciklama": "O noktasından L uç noktasına gitme süresi T / 4'tür. Periyot T = 24 s olduğuna göre T / 4 = 24 / 4 = 6 s sonunda cisim L uç noktasına ulaşır.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Genliği 50 cm olan bir yörüngede basit harmonik hareket yapan cismin maksimum hızı 150 cm/s olduğuna göre, cismin maksimum ivmesi kaç m/s²'dir?",
+      "secenekler": [
+        "1,5",
+        "3,0",
+        "4,5",
+        "6,0",
+        "9,0"
+      ],
+      "dogru": 2,
+      "aciklama": "Genlik r = 50 cm = 0,5 m ve maksimum hız v_max = 150 cm/s = 1,5 m/s'dir. v_max = ω · r → 1,5 = ω · 0,5 → ω = 3 rad/s bulunur. Maksimum ivme a_max = ω² · r = 3² · 0,5 = 9 · 0,5 = 4,5 m/s² olur.",
+      "tur": "coktan"
+    },
+    {
+      "ifadeler": [
+        {
+          "metin": "Semerkant'ta rasathane kuran Uluğ Bey, yıldızların konumlarını içeren Zîc-i Uluğ Bey adlı astronomi kataloğunu hazırlamıştır.",
+          "dogru": true,
+          "aciklama": "Uluğ Bey ve öğrencisi Ali Kuşçu gök bilimine büyük katkılar sunmuş Türk-İslam bilginleridir."
+        },
+        {
+          "metin": "Kepler'in Alanlar Kanunu'na göre gezegeni Güneş'e birleştiren yarıçap vektörü eşit zamanlarda eşit alanlar tarar.",
+          "dogru": true,
+          "aciklama": "Alanlar kanunu açısal momentumun korunumunun doğrudan bir sonucudur."
+        },
+        {
+          "metin": "Basit harmonik harekette geri çağırıcı kuvvetin yönü hareket süresince hız vektörüyle aynı yönlüdür.",
+          "dogru": false,
+          "aciklama": "Geri çağırıcı kuvvet denge noktasına (O) doğrudur; cisim O'dan uzaklaşırken hareket yönüne zıt, O'ya yaklaşırken hareket yönüyle aynıdır."
+        },
+        {
+          "metin": "Basit harmonik hareket yapan bir cismin genliği artırılırsa periyodu da doğru orantılı olarak artar.",
+          "dogru": false,
+          "aciklama": "Basit harmonik harekette periyot ve frekans, hareketin genliğine bağlı değildir."
+        },
+        {
+          "metin": "Cisim denge noktasından geçerken uzanımı ve ivmesi sıfır, çizgisel hızı ise maksimumdur.",
+          "dogru": true,
+          "aciklama": "Denge noktasında x = 0 olduğundan a = 0 ve F = 0 olur, hız ise v_max = ω·r değerindedir."
+        }
+      ],
+      "tur": "dy"
+    },
+    {
+      "ciftler": [
+        [
+          "Periyotlar Kanunu",
+          "Gezegenlerin ortalama yörünge yarıçapının küpünün periyodun karesine oranının sabit olması"
+        ],
+        [
+          "Uzanım (x)",
+          "Basit harmonik hareket yapan cismin herhangi bir anda denge noktasından olan yönlü uzaklığı"
+        ],
+        [
+          "Genlik (r)",
+          "Cismin denge noktasından ayrılabileceği maksimum uzanım büyüklüğü"
+        ],
+        [
+          "Geri çağırıcı kuvvet",
+          "Basit harmonik harekette cismi daima denge konumuna doğru çeken net kuvvet"
+        ],
+        [
+          "Ali Kuşçu",
+          "Uluğ Bey'in öğrencisi olan ve Ay'ın ilk haritasını çıkaran Türk-İslam astronomu"
+        ]
+      ],
+      "tur": "eslestir"
+    },
+    {
+      "cumleler": [
+        {
+          "metin": "Kepler'in birinci kanununa göre her gezegen, odaklarından birinde Güneş bulunan ___ biçimli yörüngede dolanır.",
+          "cevap": "elips"
+        },
+        {
+          "metin": "Düzgün çembersel hareket yapan bir cismin çap üzerindeki izdüşümü ___ hareket yapar.",
+          "cevap": "basit harmonik"
+        },
+        {
+          "metin": "Basit harmonik harekette birim zamanda (1 saniyede) gerçekleşen tam salınım sayısına ___ adı verilir.",
+          "cevap": "frekans"
+        },
+        {
+          "metin": "Basit harmonik hareket yapan cismin ivmesi uç noktalarda maksimum, ___ noktasında ise sıfırdır.",
+          "cevap": "denge"
+        },
+        {
+          "metin": "Geri çağırıcı kuvvet vektörü ile ___ vektörü hareket süresince birbirine zıt yönlüdür.",
+          "cevap": "uzanım"
+        }
+      ],
+      "fazla": [
+        "çember",
+        "periyot"
+      ],
+      "tur": "bosluk"
+    },
+    {
+      "soru": "Sürtünmesiz yatay düzlemde K ve L noktaları arasında r = 0,4 m genlikle ve T = 2 s periyotla basit harmonik hareket yapan m = 0,5 kg kütleli bir cismin; açısal frekansını, maksimum hızını ve maksimum geri çağırıcı kuvvetini adım adım hesaplayınız. (π = 3 alınız)",
+      "ipuclari": [
+        "ω = 2π / T bağıntısını kullanarak açısal frekansı (rad/s) bulunuz.",
+        "Denge noktasındaki maksimum hızı v_max = ω · r formülüyle hesaplayınız.",
+        "Uç noktalardaki maksimum geri çağırıcı kuvveti F_max = m · ω² · r bağıntısıyla belirleyiniz."
+      ],
+      "cevap": "Birinci adımda açısal frekans ω = 2π / T = (2 · 3) / 2 = 3 rad/s olarak bulunur. İkinci adımda maksimum hız (denge noktasında) v_max = ω · r = 3 · 0,4 = 1,2 m/s'dir. Üçüncü adımda ise maksimum geri çağırıcı kuvvet (K ve L uç noktalarında) F_max = m · ω² · r = 0,5 · 3² · 0,4 = 0,5 · 9 · 0,4 = 1,8 N olarak bulunur.",
+      "tur": "ogretici"
+    }
+  ],
+  "ozet": [
+    "Gök biliminde Uluğ Bey, Ali Kuşçu, Kopernik, Galileo ve Kepler önemli çalışmalar yapmış; Kepler gezegenlerin hareketini Yörüngeler, Alanlar ve Periyotlar (R³ / T² = sabit) kanunlarıyla açıklamıştır.",
+    "Eliptik yörüngede dolanan gezegenin açısal momentumu ve mekanik enerjisi korunur; gezegen Güneş'e yaklaştıkça çizgisel hızı ve kinetik enerjisi artar.",
+    "Basit harmonik hareket, sabit iki nokta arasında geri çağırıcı kuvvet etkisinde gerçekleşen periyodik salınım hareketi olup düzgün çembersel hareketin çap üzerindeki izdüşümüdür.",
+    "K-O-L yolu 4 eşit bölmeye ayrıldığında cisim denge noktasına komşu bölmeleri T/12 sürede, uç noktalara komşu bölmeleri ise T/6 sürede alır.",
+    "Denge noktasında (x = 0) hız maksimum (v_max = ω·r), kuvvet ve ivme sıfırdır; uç noktalarda (x = r) ise hız sıfır, kuvvet (F_max = m·ω²·r) ve ivme (a_max = ω²·r) maksimumdur."
+  ]
+}
