@@ -860,11 +860,31 @@ const Tahta = (() => {
     });
     kap.append(resimGirdi);
 
-    // İki parmakla (dokunmatik) sayfa kaydırma: kalemi kapatmadan gezinme
+    // İki parmakla (dokunmatik) sayfa kaydırma, avuç içi engelleme ve jestler (Geri Al / İleri Al)
     const dokunma = new Map();
     let pan = null;
+    let sonKalemZamani = 0; // Palm rejection: Kalemle yazarken elin/avucun ekrana teması çizimi bozmaz
+    let cokluDokunmaBasZamani = 0;
+    let cokluDokunmaSayisi = 0;
+    let cokluDokunmaMaxMesafe = 0;
     const orta = () => { const v = [...dokunma.values()]; return [(v[0][0] + v[1][0]) / 2, (v[0][1] + v[1][1]) / 2]; };
     const kaydirBy = (dx, dy) => { const s = { left: dx, top: dy, behavior: 'instant' }; if (kaydir === true) window.scrollBy(s); else if (kaydir) kaydir.scrollBy(s); };
+
+    // Ekran ortasında mini geçici geri bildirim rozeti (İki parmakla geri al / ileri al bildirimi)
+    let miniBildirimOge = null, miniBildirimZamanlayici = 0;
+    function miniBildirimGoster(metin) {
+      if (!miniBildirimOge) {
+        miniBildirimOge = document.createElement('div');
+        miniBildirimOge.className = 'tahta-mini-bildirim';
+        kap.append(miniBildirimOge);
+      }
+      miniBildirimOge.textContent = metin;
+      miniBildirimOge.classList.add('gorunur');
+      clearTimeout(miniBildirimZamanlayici);
+      miniBildirimZamanlayici = setTimeout(() => {
+        miniBildirimOge?.classList.remove('gorunur');
+      }, 950);
+    }
 
     // Kalem açıkken kısa ve kıpırtısız dokunuş alttaki düğmeye, bağlantıya, etkinliğe geçer (çizgi bırakmaz);
     // sürükleyince çizilir. Fare tıklanabilir öğenin üstündeyken imleç el olur.
@@ -882,13 +902,33 @@ const Tahta = (() => {
       if (d.arac === 'el' || o.button > 0) return;
       o.preventDefault();
       try { ust.setPointerCapture(o.pointerId); } catch { /* yapay olay */ }
+
+      // Stylus / Apple Pencil algılandığında zamanı kaydet
+      if (o.pointerType === 'pen') {
+        sonKalemZamani = performance.now();
+      }
+
+      // Avuç İçi Engelleme (Palm Rejection): Kalem kullanılıyorsa el/bilek temasını yoksay
       if (o.pointerType === 'touch') {
-        dokunma.set(o.pointerId, [o.clientX, o.clientY]);
-        if (dokunma.size >= 2) {                    // ikinci parmak: çizimi bırak, kaydırmaya geç
+        const kalemYakinZamandaAktif = (performance.now() - sonKalemZamani) < 1200;
+        dokunma.set(o.pointerId, [o.clientX, o.clientY, o.clientX, o.clientY]);
+
+        if (dokunma.size >= 2) {
+          // İki veya üç parmakla dokunma jesti başlangıcı (Geri Al / İleri Al)
+          if (dokunma.size > cokluDokunmaSayisi) {
+            cokluDokunmaBasZamani = performance.now();
+            cokluDokunmaMaxMesafe = 0;
+          }
+          cokluDokunmaSayisi = Math.max(cokluDokunmaSayisi, dokunma.size);
           clearTimeout(akilliZamanlayici);
           if (d.canli) { d.canli = null; d.tahmin = []; iste(); }
           if (oturum) oturumKapat();
-          aktif = null; pan = kaydir ? orta() : null; return;
+          aktif = null;
+          pan = kaydir ? orta() : null;
+          return;
+        } else if (kalemYakinZamandaAktif) {
+          // Tek parmak ama kalemle yazılıyor (avuç/bilek ekrana değdi): çizim yapma
+          return;
         }
       }
       const p = nokta(o, true);
@@ -949,7 +989,11 @@ const Tahta = (() => {
 
     ust.addEventListener('pointermove', (o) => {
       if (dokunma.has(o.pointerId)) {
-        dokunma.set(o.pointerId, [o.clientX, o.clientY]);
+        const dRec = dokunma.get(o.pointerId);
+        const basX = dRec[2] ?? o.clientX, basY = dRec[3] ?? o.clientY;
+        const mesafe = Math.hypot(o.clientX - basX, o.clientY - basY);
+        cokluDokunmaMaxMesafe = Math.max(cokluDokunmaMaxMesafe, mesafe);
+        dokunma.set(o.pointerId, [o.clientX, o.clientY, basX, basY]);
         if (pan && dokunma.size >= 2) { const m = orta(); kaydirBy(pan[0] - m[0], pan[1] - m[1]); pan = m; return; }
       }
       const guncelNokta = nokta(o);
@@ -1038,7 +1082,28 @@ const Tahta = (() => {
 
     const bitir = (o) => {
       clearTimeout(akilliZamanlayici);
+      if (o.pointerType === 'touch') {
+        // İki parmakla hafifçe vurup çekince (tap) Geri Al, üç parmakla vurup çekince Yinele
+        if (dokunma.size >= 1 && cokluDokunmaSayisi >= 2) {
+          const sure = performance.now() - cokluDokunmaBasZamani;
+          if (sure < 380 && cokluDokunmaMaxMesafe < 18) {
+            if (cokluDokunmaSayisi === 2) {
+              geriAl();
+              miniBildirimGoster('↩ Geri Alındı');
+            } else if (cokluDokunmaSayisi >= 3) {
+              yinele();
+              miniBildirimGoster('↪ İleri Alındı');
+            }
+            cokluDokunmaSayisi = 0;
+            cokluDokunmaMaxMesafe = 0;
+          }
+        }
+      }
       dokunma.delete(o.pointerId);
+      if (dokunma.size === 0) {
+        cokluDokunmaSayisi = 0;
+        cokluDokunmaMaxMesafe = 0;
+      }
       if (dokunma.size < 2) pan = null;
       if (o.pointerId !== aktif) return;
       aktif = null;
@@ -1621,6 +1686,28 @@ const Tahta = (() => {
       birlesikAkis = new MediaStream([...videoIzleri, ...sesIzleri]);
       videoIzleri[0].addEventListener('ended', () => {
         if (kayitDurum === 'kayitta' || kayitDurum === 'duraklatildi') kaydiBitir();
+      });
+
+      // Öğretmenin hazırlanması için zarif 3-2-1 geri sayımı (video kaydı bu geri sayım bittikten ve rozet silindikten sonra başlar, videoda görünmez)
+      await new Promise((resolve) => {
+        let sayac = 3;
+        const rozet = document.createElement('div');
+        rozet.className = 'tahta-kayit-gerisayim';
+        rozet.textContent = String(sayac);
+        kap.append(rozet);
+        const t = setInterval(() => {
+          sayac--;
+          if (sayac > 0) {
+            rozet.textContent = String(sayac);
+            rozet.style.animation = 'none';
+            void rozet.offsetWidth;
+            rozet.style.animation = '';
+          } else {
+            clearInterval(t);
+            rozet.remove();
+            resolve();
+          }
+        }, 850);
       });
 
       // Ekranın tamamen temiz olduğundan emin olmak için iki animasyon karesi bekle
