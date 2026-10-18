@@ -202,11 +202,19 @@
     kur();
   }
 
-  // İngilizce metin mi kontrolü (Türkçe etiketleri ve dilbilgisi formüllerini dışlar)
-  const TR_ETIKET_RE = /\b(ipucu|cevap|örnek|ornek|dikkat|kural|not|özet|ozet|soru|çözüm|cozum|adım|adim|yapı|yapi|olumlu|olumsuz|tekil|çoğul|cogul|özne|ozne|yüklem|yuklem|nesne|zaman|fiil|isim|sıfat|sifat|zarf|bağlaç|baglac|edat|zamir|kullanılır|kullanilir|anlamı|anlami|eklenir|gelir|olur|cümle|cumle|hal|hâl|kipi|şahıs|sahis)\b/i;
+  // HTML entity çözücü (&#x27;, &amp; vb. sembolleri temizler)
+  function htmlCoz(str) {
+    if (!str) return '';
+    const d = document.createElement('textarea');
+    d.innerHTML = String(str);
+    return d.value;
+  }
+
+  // İngilizce metin mi kontrolü (Türkçe etiketleri, soru kalıplarını ve formülleri dışlar)
+  const TR_ETIKET_RE = /\b(ipucu|cevap|örnek|ornek|dikkat|kural|not|özet|ozet|soru|çözüm|cozum|adım|adim|yapı|yapi|olumlu|olumsuz|tekil|çoğul|cogul|özne|ozne|yüklem|yuklem|nesne|zaman|fiil|isim|sıfat|sifat|zarf|bağlaç|baglac|edat|zamir|kullanılır|kullanilir|anlamı|anlami|eklenir|gelir|olur|cümle|cumle|hal|hâl|kipi|şahıs|sahis|mi|mı|mu|mü|misiniz|mısınız|nedir|hangisidir|kabul|ret|gerekçe|gerekce|davet|özür|ozur|arkadaş|arkadas|açıklama|aciklama|düzeltiniz|duzeltiniz|yazınız|yaziniz|ilişkilendirilebilir|iliskilendirilebilir|belirtiniz|seçiniz|seciniz|hangisi)\b/i;
   function ingilizceOkunabilirMi(metin) {
     if (!metin) return false;
-    const temiz = String(metin).replace(/<[^>]+>/g, ' ').replace(/[🔊📢🔈🔉]/g, '').trim();
+    const temiz = htmlCoz(String(metin)).replace(/<[^>]+>/g, ' ').replace(/[🔊📢🔈🔉]/g, '').trim();
     if (temiz.length < 2 || temiz.length > 95) return false;
     if (/[çğıöşüÇĞİÖŞÜ\u0600-\u06FF]/.test(temiz)) return false;
     if (!/[a-zA-Z]{2,}/.test(temiz)) return false;
@@ -249,7 +257,7 @@
         sesDugme.type = 'button';
         sesDugme.className = 'dugme fkart-ses';
         sesDugme.hidden = true;
-        sesDugme.textContent = '🔊 Seslendir';
+        sesDugme.textContent = '🔊 Dinle';
         araclar.prepend(sesDugme);
       }
     }
@@ -260,18 +268,25 @@
     function aktifKartSesBilgisi() {
       const k = deste[sira];
       if (!k) return null;
-      const cevrik = kartDugme.classList.contains('cevrik');
-      const aktifHtml = cevrik ? k.arka : k.on;
-      const yedekHtml = cevrik ? k.on : k.arka;
-      for (const htmlMetin of [aktifHtml, yedekHtml]) {
-        const duz = String(htmlMetin || '').replace(/<[^>]+>/g, ' ').replace(/[🔊📢🔈🔉]/g, '').trim();
-        const arParcalar = duz.match(/[\u0600-\u06FF\u064B-\u065F\u0670\u0640]+(?:\s+[\u0600-\u06FF\u064B-\u065F\u0670\u0640]+)*/g);
+      const onTemiz = htmlCoz(String(k.on || '')).replace(/<[^>]+>/g, ' ').replace(/[🔊📢🔈🔉]/g, '').trim();
+      const arkaTemiz = htmlCoz(String(k.arka || '')).replace(/<[^>]+>/g, ' ').replace(/[🔊📢🔈🔉]/g, '').trim();
+
+      // Arapça kontrolü
+      for (const t of [onTemiz, arkaTemiz]) {
+        const arParcalar = t.match(/[\u0600-\u06FF\u064B-\u065F\u0670\u0640]+(?:\s+[\u0600-\u06FF\u064B-\u065F\u0670\u0640]+)*/g);
         if (arParcalar && arParcalar.length) {
           return { metin: arParcalar.join(' '), dil: 'ar-SA' };
         }
-        if (isIngilizceSayfa && ingilizceOkunabilirMi(duz)) {
-          return { metin: duz, dil: 'en-US' };
-        }
+      }
+
+      // İngilizce kontrolü: öncelik ön yüzdeki İngilizce kelimede
+      if (ingilizceOkunabilirMi(onTemiz)) {
+        const safEn = onTemiz.replace(/\([^)]*\)/g, '').replace(/&/g, ' and ').replace(/\s+/g, ' ').trim();
+        return { metin: safEn, dil: 'en-US' };
+      }
+      if (ingilizceOkunabilirMi(arkaTemiz)) {
+        const safEn = arkaTemiz.replace(/\([^)]*\)/g, '').replace(/&/g, ' and ').replace(/\s+/g, ' ').trim();
+        return { metin: safEn, dil: 'en-US' };
       }
       return null;
     }
@@ -281,19 +296,52 @@
       if (sesDugme) {
         sesDugme.hidden = !bilgi;
         if (bilgi) {
-          sesDugme.title = bilgi.dil === 'ar-SA' ? 'Karttaki Arapça ifadeyi seslendir' : 'Karttaki İngilizce ifadeyi seslendir';
+          sesDugme.textContent = '🔊 Dinle';
+          sesDugme.title = bilgi.dil === 'ar-SA' ? 'Arapça telaffuzu dinle' : 'İngilizce telaffuzu dinle';
+        }
+      }
+      if (onMetin) {
+        if (bilgi && ingilizceOkunabilirMi(k.on)) {
+          onMetin.classList.add('sesli-en', 'sesli-kart');
+          onMetin.title = 'İngilizce telaffuzu dinlemek için dokunun';
+        } else if (bilgi && /[\u0600-\u06FF]/.test(k.on)) {
+          onMetin.classList.add('sesli-ar', 'sesli-kart');
+          onMetin.title = 'Arapça telaffuzu dinlemek için dokunun';
+        } else {
+          onMetin.classList.remove('sesli-en', 'sesli-ar', 'sesli-kart');
+          onMetin.removeAttribute('title');
         }
       }
     }
 
-    if (sesDugme) {
-      sesDugme.addEventListener('click', (ev) => {
-        ev.stopPropagation();
-        const bilgi = aktifKartSesBilgisi();
-        if (!bilgi) return;
-        sesliOku(bilgi.metin, bilgi.dil);
+    const kartiSeslendir = (e) => {
+      e?.stopPropagation();
+      e?.preventDefault();
+      const bilgi = aktifKartSesBilgisi();
+      if (!bilgi) return;
+      sesliOku(bilgi.metin, bilgi.dil);
+      if (sesDugme) {
         sesDugme.classList.add('okunuyor');
         setTimeout(() => sesDugme.classList.remove('okunuyor'), 1100);
+      }
+      if (onMetin) {
+        onMetin.classList.add('okunuyor');
+        setTimeout(() => onMetin.classList.remove('okunuyor'), 1100);
+      }
+    };
+
+    if (sesDugme) sesDugme.addEventListener('click', kartiSeslendir);
+
+    if (onMetin) {
+      onMetin.addEventListener('click', (ev) => {
+        if (!onMetin.classList.contains('sesli-kart') && !onMetin.classList.contains('sesli-en') && !onMetin.classList.contains('sesli-ar')) return;
+        kartiSeslendir(ev);
+      });
+      onMetin.addEventListener('keydown', (ev) => {
+        if ((ev.key === 'Enter' || ev.key === ' ') && (onMetin.classList.contains('sesli-en') || onMetin.classList.contains('sesli-ar') || onMetin.classList.contains('sesli-kart'))) {
+          ev.preventDefault();
+          kartiSeslendir(ev);
+        }
       });
     }
 
@@ -318,12 +366,11 @@
       if (arkaMetin) arkaMetin.innerHTML = k.arka;
       sayac.innerHTML = `<b>${sira + 1}</b> / ${deste.length}`;
       [...noktalarKap.children].forEach((n, idx) => n.classList.toggle('etkin', idx === sira));
-      sesliDinleKur(kartDugme);
       kartSesDurumunuGuncelle();
     }
 
     kartDugme.addEventListener('click', (ev) => {
-      if (ev.target.closest('.ses-dugme, .sesli-ar')) return;
+      if (ev.target.closest('.ses-dugme, .sesli-ar, .sesli-en, .fkart-ses, .sesli-kart')) return;
       const cevrik = kartDugme.classList.toggle('cevrik');
       kartDugme.setAttribute('aria-pressed', cevrik ? 'true' : 'false');
       kartSesDurumunuGuncelle();

@@ -466,9 +466,81 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
   max-width: calc(100% - 20px); padding: 6px 8px; border-radius: 16px; background: rgb(17 26 46 / .94); border: 1px solid rgb(255 255 255 / .12); box-shadow: 0 12px 34px rgb(0 0 0 / .35); backdrop-filter: blur(8px);
   transition: transform .28s cubic-bezier(.2, .9, .3, 1), opacity .2s ease; }
 .kalem-katman .tahta-cubuk { position: fixed; }
+.kalem-katman.tahta-dokun-modu { pointer-events: none !important; }
+.kalem-katman.tahta-dokun-modu .tahta-tuval { pointer-events: none !important; }
+.kalem-katman.tahta-dokun-modu .tahta-cubuk,
+.kalem-katman.tahta-dokun-modu .tahta-kucuk-rozet,
+.kalem-katman.tahta-dokun-modu .tahta-sayac,
+.kalem-katman.tahta-dokun-modu .tahta-kayit { pointer-events: auto !important; }
+.tahta-cubuk button[data-arac="dokun"][aria-pressed="true"] { background: #12a150 !important; color: #fff !important; }
 .tahta-cubuk.kayitta-gizli { transform: translateY(calc(100% + 40px)) !important; opacity: 0 !important; pointer-events: none !important; }
 .tahta-cubuk.dar .tahta-gizlenebilir { display: none !important; }
 .tahta-cubuk.dar [data-is="daralt"] svg { transform: rotate(180deg); }
+.tahta-cubuk.tahta-dikey {
+  flex-direction: column !important;
+  width: auto !important;
+  max-width: 58px !important;
+  max-height: calc(100vh - 28px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  bottom: auto !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  left: 14px !important;
+  right: auto !important;
+  margin-inline: 0 !important;
+  padding: 8px 5px !important;
+  border-radius: 20px !important;
+}
+.tahta-cubuk.tahta-dikey .tahta-grup {
+  flex-direction: column !important;
+  border-right: 0 !important;
+  border-bottom: 1px solid rgb(255 255 255 / .14) !important;
+  padding: 4px 0 !important;
+}
+.tahta-cubuk.tahta-dikey .tahta-grup:last-of-type { border-bottom: 0 !important; }
+.tahta-cubuk.tahta-dikey .tahta-altpanel {
+  bottom: auto !important;
+  top: 50% !important;
+  left: calc(100% + 10px) !important;
+  transform: translateY(-50%) !important;
+}
+.tahta-cubuk.tahta-gizli { display: none !important; }
+.tahta-kucuk-rozet {
+  position: fixed;
+  z-index: 96;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgb(17 26 46 / .96);
+  color: #fff;
+  border: 2px solid var(--vurgu, #2451d6);
+  box-shadow: 0 10px 30px rgb(0 0 0 / .45), 0 0 0 4px rgb(36 81 214 / .25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  touch-action: none;
+  user-select: none;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.tahta-kucuk-rozet:hover {
+  transform: scale(1.08);
+  box-shadow: 0 14px 36px rgb(0 0 0 / .55), 0 0 0 6px rgb(36 81 214 / .35);
+}
+.tahta-kucuk-rozet:active { cursor: grabbing; }
+.tahta-kucuk-rozet svg { width: 24px; height: 24px; pointer-events: none; }
+.tahta-kucuk-rozet .rozet-renk-nokta {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 6px rgb(0 0 0 / .4);
+}
 .tahta-tutac { width: 22px !important; cursor: grab !important; opacity: .65; }
 .tahta-tutac:active { cursor: grabbing !important; }
 .tahta-grup { display: flex; gap: 2px; align-items: center; padding: 0 4px; border-right: 1px solid rgb(255 255 255 / .14); }

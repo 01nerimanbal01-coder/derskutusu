@@ -29,6 +29,7 @@ const Tahta = (() => {
     { s: '∴', ad: 'O hâlde (sonuç)', r: '#00a3b4' },
   ];
   const ARAC_SIMGE = {
+    dokun: 'M3 3l7 14 3-5 5 3 2-2-5-3 5-3L3 3z',
     kalem: 'M4 20l4-1 10-10-3-3L5 16l-1 4zM14 5l3 3',
     fosforlu: 'M6 14l6-6 4 4-6 6H6v-4zM4 20h16',
     kesikli: 'M4 17l3-3M9.5 11.5l3-3M15 6l3-3M3 21h4M10 21h4M17 21h4',
@@ -47,6 +48,8 @@ const Tahta = (() => {
     resim: 'M4 5h16v14H4zM8.5 10a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM20 15l-5-5L6 19',
     odak: 'M12 8a4 4 0 100 8 4 4 0 000-8zM3 12c2.5-5 5.8-7.5 9-7.5s6.5 2.5 9 7.5c-2.5 5-5.8 7.5-9 7.5s-6.5-2.5-9-7.5z',
     el: 'M8 13V6a1.5 1.5 0 013 0v5m0-6a1.5 1.5 0 013 0v6m0-5a1.5 1.5 0 013 0v7a6 6 0 01-6 6h-1a6 6 0 01-5-3l-2-4a1.5 1.5 0 012.5-1.5L8 15',
+    yon: 'M7 16V4m0 0L3 8m4-4l4 4m6 4v12m0 0l4-4m-4 4l-4-4',
+    kucult: 'M4 14h6v6m10-10h-6V4',
   };
   const svg = (d) => `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${d}" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
@@ -931,6 +934,7 @@ const Tahta = (() => {
           return;
         }
       }
+      if (d.arac === 'dokun' || d.arac === 'el') return;
       const p = nokta(o, true);
       d.imlec = p;
       if (d.arac === 'metin') {
@@ -1935,6 +1939,7 @@ const Tahta = (() => {
     cubuk.setAttribute('aria-label', 'Tahta araçları');
     const dugme = (ad, ic, is, ek = '') => `<button type="button" class="${ek}" data-${ad}="${is}" title="${ic.baslik}" aria-label="${ic.baslik}">${ic.html}</button>`;
     const yazimAraclari = [
+      ['dokun', '👆 Sayfaya Dokun / Gezin (Fare) — Çizimleri dondurur, slaytlara, kartlara ve butonlara dokunmanızı sağlar (Space / E)'],
       ['kalem', 'Hassas kalem — çizim sonunda beklerseniz otomatik şekle dönüşür (K)'],
       ['fosforlu', 'Fosforlu vurgu kalemi (F)'],
       ['kesikli', 'Kesikli çizgi kalemi (N)'],
@@ -1953,7 +1958,6 @@ const Tahta = (() => {
       ['metin', 'Metin / etiket ekle (T)'],
       ['damga', 'Hızlı ders damgaları: ✓ ✗ ★ ! ? ∠ ⊥ (B)'],
       ['odak', 'Odak / spot ışığı perdesi (G)'],
-      ...(kaydir ? [['el', 'Sayfayı kaydır (E) — iki parmakla da kaydırabilirsiniz']] : []),
     ];
     cubuk.innerHTML =
       `<button type="button" class="tahta-tutac" data-is="tutac" title="Araç çubuğunu sürükle (çift tıkla: merkeze sıfırla)" aria-label="Araç çubuğunu taşı">` +
@@ -1978,27 +1982,81 @@ const Tahta = (() => {
       dugme('is', { baslik: 'Çizimi PNG olarak indir', html: svg('M12 4v11m-5-5 5 5 5-5M5 20h14') }, 'indir', 'tahta-gizlenebilir') +
       dugme('is', { baslik: 'Hepsini temizle', html: svg('M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3') }, 'temizle') +
       dugme('is', { baslik: 'İpuçları ve klavye kısayolları (?)', html: '<b style="font-size:15px">?</b>' }, 'yardim', 'tahta-gizlenebilir') +
-      dugme('is', { baslik: 'Araç çubuğunu küçült / genişlet', html: svg('M15 18l-6-6 6-6') }, 'daralt') +
+      dugme('is', { baslik: 'Araç çubuğunu dikey / yatay konuma çevir (Y)', html: svg(ARAC_SIMGE.yon) }, 'yon') +
+      dugme('is', { baslik: 'Kalem menüsünü küçük simgeye küçült (M)', html: svg(ARAC_SIMGE.kucult) }, 'kucult') +
+      dugme('is', { baslik: 'Araç çubuğunu daralt / genişlet', html: svg('M15 18l-6-6 6-6') }, 'daralt') +
       (kapat ? dugme('is', { baslik: 'Kalemi kapat (Esc)', html: svg('M6 6l12 12M18 6L6 18') }, 'kapat', 'kapat') : '') + `</div>` +
       `<div class="tahta-altpanel" hidden></div>`;
     kap.append(cubuk);
     sabitBoy(cubuk);
 
-    // Araç çubuğunu tutaçtan sürükleme (yazı yazılacak alanı kapatmaması için)
+    // Küçük Yüzen Rozet (Floating Badge / Minimize modu)
+    const rozet = document.createElement('div');
+    rozet.className = 'tahta-kucuk-rozet';
+    rozet.hidden = true;
+    rozet.setAttribute('role', 'button');
+    rozet.setAttribute('aria-label', 'Kalem menüsünü aç');
+    rozet.title = 'Kalem menüsünü aç (dokunun)';
+    rozet.innerHTML = svg(ARAC_SIMGE.kalem) + `<span class="rozet-renk-nokta" style="background:${d.renk}"></span><span class="rozet-ipucu">Kalem Menüsü (Aç)</span>`;
+    kap.append(rozet);
+
+    let rozetSurukle = null, rozetBas = [0, 0], rozetKonum = [0, 0], rozetSuruklendi = false;
+    rozet.addEventListener('pointerdown', (e) => {
+      e.stopPropagation();
+      rozetSurukle = e.pointerId;
+      rozetSuruklendi = false;
+      rozetBas = [e.clientX - rozetKonum[0], e.clientY - rozetKonum[1]];
+      try { rozet.setPointerCapture(e.pointerId); } catch {}
+    });
+    rozet.addEventListener('pointermove', (e) => {
+      if (e.pointerId !== rozetSurukle) return;
+      const dx = e.clientX - rozetBas[0];
+      const dy = e.clientY - rozetBas[1];
+      if (Math.hypot(dx - rozetKonum[0], dy - rozetKonum[1]) > 5) rozetSuruklendi = true;
+      rozetKonum = [dx, dy];
+      rozet.style.translate = `${rozetKonum[0]}px ${rozetKonum[1]}px`;
+    });
+    rozet.addEventListener('pointerup', () => { rozetSurukle = null; });
+    rozet.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (rozetSuruklendi) return;
+      rozet.hidden = true;
+      cubuk.classList.remove('tahta-gizli');
+    });
+
+    function kucultAc() {
+      cubuk.classList.add('tahta-gizli');
+      rozet.hidden = false;
+      const nokta = rozet.querySelector('.rozet-renk-nokta');
+      if (nokta) nokta.style.background = d.renk;
+    }
+
+    try {
+      if (localStorage.getItem('tahta-yon') === 'dikey') cubuk.classList.add('tahta-dikey');
+    } catch {}
+
+    // Araç çubuğunu tutaçtan ve çubuk boşluklarından sürükleme
     const tutacDugme = cubuk.querySelector('[data-is=tutac]');
     let cubukSurukle = null, cubukKonum = [0, 0], cubukBas = [0, 0];
-    tutacDugme?.addEventListener('pointerdown', (e) => {
+    const surukleBasla = (e) => {
+      if (e.target.closest('button:not([data-is=tutac]), input, label')) return;
       e.preventDefault(); e.stopPropagation();
       cubukSurukle = e.pointerId;
       cubukBas = [e.clientX - cubukKonum[0], e.clientY - cubukKonum[1]];
-      try { tutacDugme.setPointerCapture(e.pointerId); } catch { /* */ }
+      try { (tutacDugme || cubuk).setPointerCapture(e.pointerId); } catch {}
+    };
+    tutacDugme?.addEventListener('pointerdown', surukleBasla);
+    cubuk.addEventListener('pointerdown', (e) => {
+      if (e.target === cubuk || e.target.classList.contains('tahta-grup')) surukleBasla(e);
     });
-    tutacDugme?.addEventListener('pointermove', (e) => {
+    const surukleSurdur = (e) => {
       if (e.pointerId !== cubukSurukle) return;
-      cubukKonum = [e.clientX - cubukBas[0], e.clientY - cubukBas[1]];
-      cubuk.style.translate = `${cubukKonum[0]}px ${cubukKonum[1]}px`;
-    });
-    tutacDugme?.addEventListener('pointerup', () => { cubukSurukle = null; });
+      const nx = e.clientX - cubukBas[0], ny = e.clientY - cubukBas[1];
+      cubukKonum = [nx, ny];
+      cubuk.style.translate = `${nx}px ${ny}px`;
+    };
+    window.addEventListener('pointermove', surukleSurdur);
+    window.addEventListener('pointerup', () => { cubukSurukle = null; });
     tutacDugme?.addEventListener('dblclick', () => { cubukKonum = [0, 0]; cubuk.style.translate = ''; });
 
     const altPanel = cubuk.querySelector('.tahta-altpanel');
@@ -2038,8 +2096,15 @@ const Tahta = (() => {
       cubuk.querySelector('[data-is=sayac]')?.setAttribute('aria-pressed', String(Boolean(sayacKutu)));
       cubuk.querySelector('[data-is=perde]')?.setAttribute('aria-pressed', String(Boolean(perdeOge)));
       cubuk.querySelector('[data-is=yardim]')?.setAttribute('aria-pressed', String(Boolean(yardimKutu)));
-      ust.style.pointerEvents = d.arac === 'el' ? 'none' : 'auto';
-      ust.style.cursor = d.arac === 'silgi' ? 'none' : d.arac === 'cizgisil' ? 'cell' : d.arac === 'metin' ? 'text' : d.arac === 'sec' ? 'move' : 'crosshair';
+      const dokunuyorMu = (d.arac === 'dokun' || d.arac === 'el');
+      kap.classList.toggle('tahta-dokun-modu', dokunuyorMu);
+      ust.style.pointerEvents = dokunuyorMu ? 'none' : 'auto';
+      alt.style.pointerEvents = 'none';
+      ust.style.cursor = dokunuyorMu ? 'default' : (d.arac === 'silgi' ? 'none' : d.arac === 'cizgisil' ? 'cell' : d.arac === 'metin' ? 'text' : d.arac === 'sec' ? 'move' : 'crosshair');
+      if (rozet) {
+        const nokta = rozet.querySelector('.rozet-renk-nokta');
+        if (nokta) nokta.style.background = d.renk;
+      }
       const g = cubuk.querySelector('[data-is=geri]'), i = cubuk.querySelector('[data-is=ileri]');
       if (g) g.disabled = !d.gecmis.length;
       if (i) i.disabled = !d.ileri.length;
@@ -2108,6 +2173,16 @@ const Tahta = (() => {
       if (b.dataset.is === 'sayac') sayacAcKapat();
       if (b.dataset.is === 'perde') perdeAcKapat();
       if (b.dataset.is === 'yardim') yardimAcKapat();
+      if (b.dataset.is === 'yon') {
+        const dikey = cubuk.classList.toggle('tahta-dikey');
+        b.setAttribute('aria-pressed', String(dikey));
+        try { localStorage.setItem('tahta-yon', dikey ? 'dikey' : 'yatay'); } catch {}
+        return;
+      }
+      if (b.dataset.is === 'kucult') {
+        kucultAc();
+        return;
+      }
       if (b.dataset.is === 'daralt') {
         const dar = cubuk.classList.toggle('dar');
         b.setAttribute('aria-pressed', String(dar));
@@ -2159,11 +2234,18 @@ const Tahta = (() => {
       if ((o.key === 'Delete' || o.key === 'Backspace') && d.secili.length) { o.preventDefault(); seciliSil(); return; }
       if (o.ctrlKey || o.metaKey || o.altKey) return;
       if (o.key === '?') { yardimAcKapat(); return; }
+      if (k === ' ' || k === 'spacebar') {
+        o.preventDefault();
+        d.arac = d.arac === 'dokun' ? 'kalem' : 'dokun';
+        if (d.arac !== 'sec') d.secili = [];
+        guncelle();
+        return;
+      }
       const aracHaritasi = {
-        k: 'kalem', f: 'fosforlu', n: 'kesikli', l: 'lazer',
+        e: 'dokun', k: 'kalem', f: 'fosforlu', n: 'kesikli', l: 'lazer',
         s: 'silgi', 'ç': 'cizgisil', v: 'sec', d: 'cizgi', o: 'ok',
-        r: 'dikdortgen', m: 'cember', u: 'ucgen', 'ü': 'ucgen',
-        x: 'eksen', t: 'metin', b: 'damga', g: 'odak', e: kaydir ? 'el' : null,
+        r: 'dikdortgen', c: 'cember', u: 'ucgen', 'ü': 'ucgen',
+        x: 'eksen', t: 'metin', b: 'damga', g: 'odak',
       };
       const arac = aracHaritasi[k];
       if (arac) { d.arac = arac; if (arac !== 'sec') d.secili = []; guncelle(); }
