@@ -40,8 +40,27 @@
     return vowels.length===1 && vowels[0]===target.slice(-1);
   }
   const speechOK = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
-  const voice = () => speechOK ? speechSynthesis.getVoices().find(v=>/^ar(?:-|$)/i.test(v.lang)) : null;
-  function say(s,done){const v=voice();if(!v){$('#a-ses-durum').textContent='Bu cihazda Arapça ses bulunamadı. Harf ve kelimeleri yazılı çalışabilirsin.';return false;}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(s);u.voice=v;u.lang=v.lang;u.rate=.8;u.onend=u.onerror=()=>done?.();speechSynthesis.speak(u);return true;}
+  const voice = () => speechOK ? (speechSynthesis.getVoices() || []).find(v=>/^ar(?:-|$)/i.test(v.lang)) : null;
+  function say(s,done){
+    const v=voice();
+    if(!v){$('#a-ses-durum').textContent='Bu cihazda Arapça ses bulunamadı. Harf ve kelimeleri yazılı çalışabilirsin.';return false;}
+    try {
+      speechSynthesis.cancel();
+      if(speechSynthesis.paused) speechSynthesis.resume();
+      const u=new SpeechSynthesisUtterance(s);
+      u.voice=v;u.lang=v.lang;u.rate=.8;u.onend=u.onerror=()=>done?.();
+      setTimeout(()=>{
+        try{ if(speechSynthesis.paused) speechSynthesis.resume(); speechSynthesis.speak(u); }catch(_){done?.();}
+      },20);
+      return true;
+    }catch(_){done?.();return false;}
+  }
+  if(speechOK){
+    try{
+      speechSynthesis.getVoices();
+      speechSynthesis.onvoiceschanged=()=>{ try{speechSynthesis.getVoices();voiceStatus();}catch(_){} };
+    }catch(_){}
+  }
   function voiceStatus(){$('#a-ses-durum').textContent=voice()?'Dinleme için cihazının Arapça sesi kullanılır. Harf seslerini MEB kitabındaki ses örnekleriyle de karşılaştır.':'Bu cihazda Arapça ses bulunamadı. Harf ve kelimeleri yazılı çalışabilirsin.';}
   const listen = s => button('Dinle',()=>say(s));
   let odak=null;

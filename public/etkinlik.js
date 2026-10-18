@@ -210,11 +210,63 @@
     const kartDugme = bolum.querySelector('.fkart');
     const onYuz = bolum.querySelector('.fkart-on');
     const arkaYuz = bolum.querySelector('.fkart-arka');
+    const onMetin = onYuz ? onYuz.querySelector('.fkart-metin') : null;
+    const arkaMetin = arkaYuz ? arkaYuz.querySelector('.fkart-metin') : null;
     const sayac = bolum.querySelector('.fkart-sayac');
     const noktalarKap = bolum.querySelector('.fkart-noktalar');
     const oncekiDugme = bolum.querySelector('.fkart-onceki');
     const sonrakiDugme = bolum.querySelector('.fkart-sonraki');
     const karistirDugme = bolum.querySelector('.fkart-karistir');
+
+    const isIngilizceSayfa = !!document.querySelector('.ozet.ders-ingilizce, .ozet-bas.ders-ingilizce') || location.pathname.includes('ingilizce');
+    const isArapcaSayfa = !!document.querySelector('.ozet.ders-arapca, .ozet-bas.ders-arapca') || location.pathname.includes('arapca');
+
+    function kartSesDurumunuGuncelle() {
+      if (!onMetin) return;
+      const k = deste[sira];
+      if (!k) return;
+      const metin = (k.on || '').replace(/<[^>]+>/g, ' ').replace(/[🔊📢🔈🔉]/g, '').trim();
+      const arapcaMi = isArapcaSayfa || /[\u0600-\u06FF]/.test(metin);
+      const ingilizceMi = isIngilizceSayfa || (!/[çğıöşüÇĞİÖŞÜ]/.test(metin) && /[a-zA-Z]/.test(metin));
+
+      if (arapcaMi && metin.length > 0) {
+        onMetin.classList.remove('sesli-en');
+        onMetin.classList.add('sesli-ar', 'sesli-kart');
+        onMetin.title = 'Arapça telaffuzu dinlemek için dokunun';
+        onMetin.dataset.sesDil = 'ar-SA';
+      } else if (ingilizceMi && metin.length >= 2 && metin.length <= 95) {
+        onMetin.classList.remove('sesli-ar');
+        onMetin.classList.add('sesli-en', 'sesli-kart');
+        onMetin.title = 'İngilizce telaffuzu dinlemek için dokunun';
+        onMetin.dataset.sesDil = 'en-US';
+      } else {
+        onMetin.classList.remove('sesli-ar', 'sesli-en', 'sesli-kart');
+        onMetin.removeAttribute('title');
+        delete onMetin.dataset.sesDil;
+      }
+    }
+
+    if (onMetin) {
+      onMetin.addEventListener('click', (ev) => {
+        if (!onMetin.classList.contains('sesli-kart') && !onMetin.classList.contains('sesli-en') && !onMetin.classList.contains('sesli-ar')) return;
+        ev.stopPropagation();
+        ev.preventDefault();
+        const suAnki = deste[sira];
+        const okunacak = (onMetin.textContent || suAnki?.on || '').replace(/[🔊📢🔈🔉]/g, '').trim();
+        if (!okunacak) return;
+        const dil = onMetin.dataset.sesDil || (onMetin.classList.contains('sesli-ar') ? 'ar-SA' : 'en-US');
+        sesliOku(okunacak, dil);
+        onMetin.classList.add('okunuyor');
+        setTimeout(() => onMetin.classList.remove('okunuyor'), 1100);
+      });
+      onMetin.addEventListener('keydown', (ev) => {
+        if ((ev.key === 'Enter' || ev.key === ' ') && (onMetin.classList.contains('sesli-en') || onMetin.classList.contains('sesli-ar') || onMetin.classList.contains('sesli-kart'))) {
+          ev.preventDefault();
+          ev.stopPropagation();
+          onMetin.click();
+        }
+      });
+    }
 
     function noktalariOlustur() {
       noktalarKap.innerHTML = '';
@@ -233,15 +285,15 @@
       kartDugme.classList.remove('cevrik');
       kartDugme.setAttribute('aria-pressed', 'false');
       onYuz.querySelector('.fkart-etiket').textContent = k.etiket;
-      onYuz.querySelector('.fkart-metin').innerHTML = k.on;
-      arkaYuz.querySelector('.fkart-metin').innerHTML = k.arka;
+      if (onMetin) onMetin.innerHTML = k.on;
+      if (arkaMetin) arkaMetin.innerHTML = k.arka;
       sayac.innerHTML = `<b>${sira + 1}</b> / ${deste.length}`;
       [...noktalarKap.children].forEach((n, idx) => n.classList.toggle('etkin', idx === sira));
-      sesliDinleKur(kartDugme);
+      kartSesDurumunuGuncelle();
     }
 
     kartDugme.addEventListener('click', (ev) => {
-      if (ev.target.closest('.ses-dugme, .sesli-ar, .sesli-en')) return;
+      if (ev.target.closest('.ses-dugme, .sesli-ar, .sesli-en, .sesli-kart')) return;
       const cevrik = kartDugme.classList.toggle('cevrik');
       kartDugme.setAttribute('aria-pressed', cevrik ? 'true' : 'false');
     });
@@ -491,17 +543,50 @@
   }
 
   // 7. Sesli Telaffuz (Arapça <bdi lang="ar"> ve İngilizce ders içerikleri)
-  function sesliOku(metin, dil) {
+  function sesliOku(metin, dil = 'en-US') {
     if (!('speechSynthesis' in window) || !metin) return;
     try {
+      const temiz = String(metin)
+        .replace(/<[^>]+>/g, ' ')
+        .replace(/[\u{1F300}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '')
+        .replace(/[🔊📢🔈🔉↻↺]/g, '')
+        .replace(/\s+/g, ' ')
+        .trim();
+      if (!temiz) return;
+
       window.speechSynthesis.cancel();
-      const soz = new SpeechSynthesisUtterance(metin.trim());
+      if (window.speechSynthesis.paused) {
+        window.speechSynthesis.resume();
+      }
+
+      const soz = new SpeechSynthesisUtterance(temiz);
       soz.lang = dil;
-      soz.rate = dil.startsWith('ar') ? 0.88 : 0.94;
-      const sesler = window.speechSynthesis.getVoices();
-      const uygun = sesler.find((s) => s.lang && s.lang.toLowerCase().startsWith(dil.slice(0, 2).toLowerCase()));
-      if (uygun) soz.voice = uygun;
-      window.speechSynthesis.speak(soz);
+      soz.rate = dil.startsWith('ar') ? 0.85 : 0.92;
+
+      const sesler = window.speechSynthesis.getVoices() || [];
+      if (sesler.length) {
+        const hedef = dil.toLowerCase();
+        const kok = hedef.slice(0, 2);
+        const tam = sesler.find((s) => s.lang && s.lang.toLowerCase() === hedef);
+        const uygun = tam || sesler.find((s) => s.lang && s.lang.toLowerCase().startsWith(kok));
+        if (uygun) soz.voice = uygun;
+      }
+
+      setTimeout(() => {
+        try {
+          if (window.speechSynthesis.paused) window.speechSynthesis.resume();
+          window.speechSynthesis.speak(soz);
+        } catch (_) {}
+      }, 25);
+    } catch (_) {}
+  }
+
+  if ('speechSynthesis' in window) {
+    try {
+      window.speechSynthesis.getVoices();
+      window.speechSynthesis.onvoiceschanged = () => {
+        try { window.speechSynthesis.getVoices(); } catch (_) {}
+      };
     } catch (_) {}
   }
 
@@ -518,7 +603,8 @@
       bdi.setAttribute('tabindex', '0');
       const oku = (ev) => {
         ev.stopPropagation();
-        sesliOku(bdi.textContent, 'ar-SA');
+        const metin = (bdi.textContent || '').replace(/[🔊📢🔈🔉]/g, '').trim();
+        if (metin) sesliOku(metin, 'ar-SA');
         bdi.classList.add('okunuyor');
         setTimeout(() => bdi.classList.remove('okunuyor'), 1200);
       };
@@ -528,19 +614,20 @@
       });
     });
 
-    // İngilizce ders özetlerinde kalın/italik İngilizce ifadeler ve tablo/kart terimleri için ses düğmesi
-    const ingilizceSayfa = document.querySelector('.ozet.ders-ingilizce, .ozet-bas.ders-ingilizce');
+    // İngilizce ders özetlerinde kalın/italik İngilizce ifadeler ve tablo terimleri için ses düğmesi
+    const ingilizceSayfa = document.querySelector('.ozet.ders-ingilizce, .ozet-bas.ders-ingilizce') || location.pathname.includes('ingilizce');
     if (ingilizceSayfa) {
-      kapsayici.querySelectorAll('.ozet-bolum.konu li b, .ozet-bolum.konu p b, .ozet-bolum.konu .ozet-tablo tbody td:first-child, .fkart-on .fkart-metin').forEach((el) => {
+      kapsayici.querySelectorAll('.ozet-bolum.konu li b, .ozet-bolum.konu p b, .ozet-bolum.konu .ozet-tablo tbody td:first-child').forEach((el) => {
         if (el.dataset.sesKuruldu === '1') return;
-        const m = (el.textContent || '').trim();
-        if (m.length < 2 || m.length > 95 || /[çğıöşüÇĞİÖŞÜ]/.test(m) || !/[a-zA-Z]/.test(m)) return;
+        const testMetin = (el.textContent || '').trim();
+        if (testMetin.length < 2 || testMetin.length > 95 || /[çğıöşüÇĞİÖŞÜ]/.test(testMetin) || !/[a-zA-Z]/.test(testMetin)) return;
         el.dataset.sesKuruldu = '1';
         el.classList.add('sesli-en');
         el.title = 'İngilizce telaffuzu dinlemek için dokunun';
         el.addEventListener('click', (ev) => {
           ev.stopPropagation();
-          sesliOku(m, 'en-US');
+          const anlik = (el.textContent || '').replace(/[🔊📢🔈🔉]/g, '').trim();
+          if (anlik) sesliOku(anlik, 'en-US');
           el.classList.add('okunuyor');
           setTimeout(() => el.classList.remove('okunuyor'), 1100);
         });

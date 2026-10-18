@@ -1219,9 +1219,9 @@ body.kalem-acik .kalem-katman { z-index: 95; }
 @media (max-width: 640px) { .ozet-hafta-gecis { grid-template-columns: 1fr; } .hgecis-kart.bos { display: none; } }
 
 /* Sesli Telaffuz (Arapça ve İngilizce) */
-.sesli-ar, .sesli-en { position: relative; cursor: pointer; border-radius: 6px; padding: 0 4px; transition: background .15s, color .15s; }
+.sesli-ar, .sesli-en, .sesli-kart { position: relative; cursor: pointer; border-radius: 6px; padding: 0 4px; transition: background .15s, color .15s; }
 .sesli-ar::after, .sesli-en::after { content: ' 🔊'; font-size: .78em; opacity: .65; vertical-align: middle; }
-.sesli-ar:hover, .sesli-en:hover, .sesli-ar.okunuyor, .sesli-en.okunuyor { background: var(--ders-acik); color: var(--ders-metin); }
+.sesli-ar:hover, .sesli-en:hover, .sesli-kart:hover, .sesli-ar.okunuyor, .sesli-en.okunuyor, .sesli-kart.okunuyor { background: var(--ders-acik); color: var(--ders-metin); }
 .sesli-ar.okunuyor::after, .sesli-en.okunuyor::after { opacity: 1; }
 
 /* Akıllı Tahta Sunum Modu */

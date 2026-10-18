@@ -28,15 +28,31 @@
 
   const sesVar = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
   function soyle(metin, bitince) {
-    if (!sesVar) { bitince?.(); return; }
-    const u = new SpeechSynthesisUtterance(metin.replace(/\//g, ', '));
-    u.lang = 'en-GB'; u.rate = 0.85;
-    const sesler = speechSynthesis.getVoices();
-    u.voice = sesler.find((v) => v.lang === 'en-GB') || sesler.find((v) => v.lang.startsWith('en')) || null;
-    if (bitince) u.onend = u.onerror = bitince;
-    speechSynthesis.cancel(); speechSynthesis.speak(u);
+    if (!sesVar || !metin) { bitince?.(); return; }
+    try {
+      const temiz = String(metin).replace(/\//g, ', ').replace(/[🔊📢🔈🔉]/g, '').trim();
+      if (!temiz) { bitince?.(); return; }
+      speechSynthesis.cancel();
+      if (speechSynthesis.paused) speechSynthesis.resume();
+      const u = new SpeechSynthesisUtterance(temiz);
+      u.lang = 'en-GB'; u.rate = 0.85;
+      const sesler = speechSynthesis.getVoices() || [];
+      u.voice = sesler.find((v) => v.lang === 'en-GB') || sesler.find((v) => v.lang && v.lang.startsWith('en')) || null;
+      if (bitince) u.onend = u.onerror = bitince;
+      setTimeout(() => {
+        try {
+          if (speechSynthesis.paused) speechSynthesis.resume();
+          speechSynthesis.speak(u);
+        } catch (_) { bitince?.(); }
+      }, 20);
+    } catch (_) { bitince?.(); }
   }
-  if (sesVar) speechSynthesis.getVoices();
+  if (sesVar) {
+    try {
+      speechSynthesis.getVoices();
+      speechSynthesis.onvoiceschanged = () => { try { speechSynthesis.getVoices(); } catch (_) {} };
+    } catch (_) {}
+  }
   const sesDugme = (metin, etiket = 'Dinle') => sesVar
     ? el('button', { type: 'button', sinif: 'k-ses', 'aria-label': `${etiket}: ${metin}`, title: etiket, onclick: (e) => { e.stopPropagation(); soyle(metin); } }, simge('ses'), el('span', { sinif: 'gizli' }, etiket))
     : null;
