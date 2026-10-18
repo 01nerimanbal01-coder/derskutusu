@@ -1,0 +1,259 @@
+{
+  "ad": "10-matematik-13",
+  "sinif": 10,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 13,
+  "tarih": "14-18 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "Sayılar",
+  "konu": "Bölünebilme: Bir Doğal Sayının 2, 3, 4, 5, 6, 8, 9, 10 ve Bunların En Küçük Ortak Katlarına Bölümünden Kalanlara Dair Muhakeme (10.3.3)",
+  "ciktilar": [
+    "Bir doğal sayının 2, 3, 4, 5, 6, 8, 9 ve 10 ile bölümünden elde edilecek kalanlara ilişkin örüntüleri geneller ve basamak çözümlemesiyle matematiksel olarak doğrular.",
+    "Aynı sayı ile bölme işleminden elde edilen kalanların toplam, fark ve çarpım işlemlerindeki değişimini muhakeme ederek büyük sayıların kalanlarını hesaplar.",
+    "Aralarında asal doğal sayıların en küçük ortak katlarından (EKOK) oluşan 6, 12, 15, 18, 30, 36, 45 ve 90 gibi sayılara bölünebilme ve kalan bulma problemlerini çözer."
+  ],
+  "giris": "Çok basamaklı bir doğal sayıyı uzun bölme işlemi yapmadan belirli bir doğal sayıya böldüğümüzde kalanın kaç olacağını bulmak, onluk sayı sisteminin ({koyu:10'un kuvvetlerinin}) basamak çözümlemesine dayanır. Bu haftaki dersimizde {koyu:2, 3, 4, 5, 8, 9, 10} ile bölünebilme önermelerini doğruluyor ve bu sayıların {koyu:en küçük ortak katlarından (EKOK)} oluşan birleşik sayılara bölümünden kalanları muhakeme ediyoruz.",
+  "bolumler": [
+    {
+      "baslik": "Son Basamaklara Dayalı Bölünebilme Önermeleri (2, 4, 5, 8 ve 10)",
+      "metin": [
+        "Onluk tabanda yazılan dört basamaklı bir {koyu:abcd} doğal sayısı basamak değerlerine göre {koyu:abcd = 1000a + 100b + 10c + d = 10·(100a + 10b + c) + d} şeklinde çözümlenir. Burada {koyu:10·(100a + 10b + c)} terimi {koyu:10, 5 ve 2} sayılarına kalansız bölündüğü için sayının {koyu:2, 5 ve 10} ile bölümünden kalan, doğrudan {koyu:birler basamağındaki d rakamının} bu sayılara bölümünden kalana eşittir.",
+        "Benzer şekilde {koyu:abcd = 100·(10a + b) + (cd)} yazıldığında {koyu:100 = 4 · 25} sayısı 4'ün tam katı olduğundan, bir doğal sayının {koyu:4 ile bölümünden kalan}, sayının {koyu:son iki basamağının (cd)} 4 ile bölümünden kalana eşittir. Sayının son iki basamağı {koyu:00} veya {koyu:4'ün katı} (04, 08, ..., 96) ise sayı 4 ile tam bölünür.",
+        "Üçüncü kuvvet olan {koyu:1000 = 8 · 125} sayısı 8'in tam katı olduğu için {koyu:abcde = 1000·(10a + b) + (cde)} çözümlemesi gereğince bir doğal sayının {koyu:8 ile bölümünden kalan}, sayının {koyu:son üç basamağının (cde)} 8 ile bölümünden kalana eşittir. Son üç basamağı {koyu:000} veya {koyu:8'in katı} olan doğal sayılar 8 ile kalansız bölünür."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Genelleme: 2^k ve 5^k İle Bölünebilme Kuralı",
+          "metin": "{koyu:{us:10|k} = {us:2|k} · {us:5|k}} eşitliği nedeniyle bir doğal sayının {koyu:{us:2|1}=2} ve {koyu:{us:5|1}=5} ile bölümünden kalan için {koyu:son 1 basamağa}; {koyu:{us:2|2}=4} ve {koyu:{us:5|2}=25} için {koyu:son 2 basamağa}; {koyu:{us:2|3}=8} ve {koyu:{us:5|3}=125} için {koyu:son 3 basamağa} bakılır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "5 ve 10 İle Bölümden Kalan İlişkisi",
+          "metin": "Bir doğal sayının 10 ile bölümünden kalan birler basamağındaki rakamdır ({koyu:0, 1, ..., 9}). Birler basamağı 5'ten küçükse 5 ile bölümden kalan o rakamın kendisi; 5 veya 5'ten büyükse rakamın {koyu:5 eksiğidir} (örneğin birler basamağı 8 ise 5 ile bölümden kalan {koyu:8 - 5 = 3}'tür)."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">SON BASAMAKLARA DAYALI BÖLÜNEBİLME KURALLARI (2, 4, 5, 8, 10)</text>\n  <rect x=\"22\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e40af\">BİRLER BASAMAĞINA BAKILANLAR (2, 5, 10)</text>\n  <text x=\"35\" y=\"88\" font-size=\"11.2\" fill=\"#1e3a8a\">• 10 = 2 · 5 olduğundan 10'un katları 2, 5 ve 10'a tam bölünür</text>\n  <text x=\"35\" y=\"112\" font-size=\"11.2\" fill=\"#1e3a8a\">• 2 ile bölünebilme: Birler basamağı çift (0, 2, 4, 6, 8) olmalı</text>\n  <text x=\"35\" y=\"132\" font-size=\"10.8\" fill=\"#1e3a8a\">  Tek sayıların 2 ile bölümünden kalan 1'dir</text>\n  <text x=\"35\" y=\"156\" font-size=\"11.2\" fill=\"#1e3a8a\">• 5 ile bölünebilme: Birler basamağı 0 veya 5 olmalı</text>\n  <text x=\"35\" y=\"180\" font-size=\"11.2\" fill=\"#1e3a8a\">• 10 ile bölünebilme: Birler basamağı 0 olmalı (Kalan = birler b.)</text>\n  <rect x=\"358\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#166534\">SON İKİ VE SON ÜÇ BASAMAĞA BAKILANLAR (4, 8)</text>\n  <text x=\"370\" y=\"88\" font-size=\"11.2\" fill=\"#14532d\">• 4 ile bölünebilme (100 = 4 · 25 tam bölünür):</text>\n  <text x=\"370\" y=\"108\" font-size=\"10.8\" fill=\"#14532d\">  Son iki basamağı (ab) 00 veya 4'ün katı olmalıdır</text>\n  <text x=\"370\" y=\"128\" font-size=\"10.8\" fill=\"#14532d\">  4 ile bölümden kalan = Son iki basamağın 4'e bölümünden kalan</text>\n  <text x=\"370\" y=\"152\" font-size=\"11.2\" fill=\"#14532d\">• 8 ile bölünebilme (1000 = 8 · 125 tam bölünür):</text>\n  <text x=\"370\" y=\"172\" font-size=\"10.8\" fill=\"#14532d\">  Son üç basamağı (abc) 000 veya 8'in katı olmalıdır</text>\n  <text x=\"370\" y=\"192\" font-size=\"10.8\" fill=\"#14532d\">  8 ile bölümden kalan = Son üç basamağın 8'e bölümünden kalan</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">10^k sayısı 2^k ve 5^k ile tam bölündüğünden, 2^k kuralında son k basamağa bakılır.</text>\n</svg>"
+    },
+    {
+      "baslik": "Rakamlar Toplamına Dayalı Bölünebilme Önermeleri (3 ve 9) ve Kalan Cebiri",
+      "metin": [
+        "Onun kuvvetleri incelendiğinde {koyu:10 = 9 + 1}, {koyu:100 = 99 + 1}, {koyu:1000 = 999 + 1} ve genel olarak {koyu:{us:10|n} = 9k + 1} örüntüsü görülür. Dört basamaklı {koyu:abcd} sayısı {koyu:abcd = (999 + 1)a + (99 + 1)b + (9 + 1)c + d = 9·(111a + 11b + c) + (a + b + c + d)} biçiminde yazıldığında ilk terim hem 9'un hem de 3'ün tam katıdır.",
+        "Bu matematiksel doğrulama sonucunda: Bir doğal sayının {koyu:9 ile bölümünden kalan}, sayının {koyu:rakamları toplamının (a + b + c + d)} 9 ile bölümünden kalana eşittir. Aynı şekilde sayının {koyu:3 ile bölümünden kalan}, rakamları toplamının 3 ile bölümünden kalana eşittir. Rakamları toplamı 9'un katı olan sayılar 9'a, 3'ün katı olan sayılar ise 3'e tam bölünür.",
+        "{koyu:Kalanlar Cebiri}: İki doğal sayının ({koyu:A} ve {koyu:B}) aynı {koyu:m} doğal sayısına bölümünden kalanlar sırasıyla {koyu:k1} ve {koyu:k2} ise; {koyu:A + B} toplamının, {koyu:A - B} farkının ve {koyu:A · B} çarpımının {koyu:m} ile bölümünden kalan, doğrudan kalanlarla yapılan {koyu:k1 + k2}, {koyu:k1 - k2} ve {koyu:k1 · k2} işlemlerinin {koyu:m} ile bölümünden kalana eşittir."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "9 Atma Yöntemi İle Hızlı Kalan Bulma",
+          "metin": "Çok basamaklı bir sayının 9 ile bölümünden kalanı bulurken bütün rakamları toplamak yerine, toplamı {koyu:9 veya 9'un katı olan rakam gruplarını} doğrudan eleyip kalan rakamları toplamak işlemi hızlandırır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "3'e ve 9'a Bölünebilme Arasındaki İçerme İlişkisi",
+          "metin": "Dokuz (9) ile kalansız bölünen her doğal sayı {koyu:3 ile de kalansız bölünür}; ancak 3 ile kalansız bölünen her sayı 9 ile bölünmeyebilir (örneğin 15 ve 24 sayıları 3'e bölünür, 9'a bölünmez)."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">RAKAMLAR TOPLAMINA DAYALI BÖLÜNEBİLME (3 VE 9) VE KALAN CEBİRİ</text>\n  <rect x=\"22\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#6b21a8\">3 VE 9 İLE BÖLÜNEBİLME MUHAKEMESİ</text>\n  <text x=\"35\" y=\"88\" font-size=\"11.2\" fill=\"#581c87\">• Basamak Özelliği: 10^n = (99...9) + 1 = 9k + 1</text>\n  <text x=\"35\" y=\"112\" font-size=\"11.2\" fill=\"#581c87\">• abcd = 1000a + 100b + 10c + d = 9·(111a+11b+c) + (a+b+c+d)</text>\n  <text x=\"35\" y=\"136\" font-size=\"11.2\" fill=\"#581c87\">• 9 ile bölümden kalan = Rakamlar toplamının 9'a bölümünden kalan</text>\n  <text x=\"35\" y=\"160\" font-size=\"11.2\" fill=\"#581c87\">• 3 ile bölümden kalan = Rakamlar toplamının 3'e bölümünden kalan</text>\n  <text x=\"35\" y=\"184\" font-size=\"11.2\" fill=\"#581c87\">• 9'a tam bölünen her doğal sayı 3'e de tam bölünür</text>\n  <rect x=\"358\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#9a3412\">KALANLARLA İŞLEM YAPMA ÖZELLİĞİ</text>\n  <text x=\"370\" y=\"88\" font-size=\"11.2\" fill=\"#7c2d12\">• A ve B sayılarının m ile bölümünden kalanlar k1 ve k2 ise:</text>\n  <text x=\"370\" y=\"112\" font-size=\"11.2\" fill=\"#7c2d12\">• (A + B)'nin m ile bölümünden kalan ↔ (k1 + k2)'nin kalanı</text>\n  <text x=\"370\" y=\"136\" font-size=\"11.2\" fill=\"#7c2d12\">• (A · B)'nin m ile bölümünden kalan ↔ (k1 · k2)'nin kalanı</text>\n  <text x=\"370\" y=\"160\" font-size=\"11.2\" fill=\"#7c2d12\">• (A^n)'nin m ile bölümünden kalan ↔ (k1^n)'nin kalanı</text>\n  <text x=\"370\" y=\"184\" font-size=\"11.2\" fill=\"#7c2d12\">• Büyük sayıları çarpmak yerine kalanları çarpmak yeterlidir!</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Bir doğal sayının basamaklarındaki rakamların yer değiştirmesi 3 ve 9 ile bölümünden kalanı değiştirmez.</text>\n</svg>"
+    },
+    {
+      "baslik": "En Küçük Ortak Katlardan (EKOK) Oluşan Sayılara Bölünebilme Muhakemesi",
+      "metin": [
+        "Aralarında asal iki doğal sayının ({koyu:EBOB(a, b) = 1}) en küçük ortak katı çarpımlarına eşittir ({koyu:EKOK(a, b) = a · b}). Bir doğal sayının {koyu:a · b} sayısına tam bölünebilmesi için hem {koyu:a} hem de {koyu:b} sayısına ayrı ayrı tam bölünmesi gerekir. Bu kuraldan hareketle: {koyu:6} için ({koyu:2 ve 3}), {koyu:12} için ({koyu:3 ve 4}), {koyu:15} için ({koyu:3 ve 5}), {koyu:18} için ({koyu:2 ve 9}), {koyu:30} için ({koyu:3 ve 10}), {koyu:36} için ({koyu:4 ve 9}), {koyu:45} için ({koyu:5 ve 9}) ve {koyu:90} için ({koyu:9 ve 10}) bölünebilme kuralları birlikte uygulanır.",
+        "Birleşik sayılara bölünebilme sorularında işlem sırası çok önemlidir: {koyu:Önce son basamakları ilgilendiren kural} (2, 4, 5, 8 veya 10) uygulanarak son basamağın alabileceği değerler belirlenir; {koyu:ardından rakamlar toplamını ilgilendiren kural} (3 veya 9) her durum için ayrı ayrı incelenir.",
+        "Bir doğal sayının {koyu:EKOK(a, b) = d} sayısına bölümünden kalan {koyu:k} olarak verildiğinde ({koyu:A = d · q + k}), bu sayının {koyu:a} ve {koyu:b} çarpanlarına bölümünden kalanlar, doğrudan {koyu:k kalanının a ve b'ye bölümünden kalanlara} eşittir. Örneğin bir sayının {koyu:36} ile bölümünden kalan {koyu:23} ise, bu sayının {koyu:4} ile bölümünden kalan {koyu:23 → 3}, {koyu:9} ile bölümünden kalan ise {koyu:23 → 5}'tir."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Neden 12 İçin (2 ve 6) veya 36 İçin (4 ve 9) Seçilir?",
+          "metin": "İki (2) ve altı (6) sayıları aralarında asal değildir ({koyu:EBOB(2, 6) = 2} ve {koyu:EKOK(2, 6) = 6}). Hem 2'ye hem 6'ya bölünen 18 sayısı 12'ye bölünmez! Bu nedenle seçilen çarpanların {koyu:aralarında asal} ve EKOK'larının o sayıya eşit olması ({koyu:EKOK(3, 4) = 12}, {koyu:EKOK(4, 9) = 36}) şarttır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Parçalı Kalanlardan Birleşik Kalanı Bulma",
+          "metin": "Bir sayının {koyu:4 ile bölümünden kalan 1} ve {koyu:9 ile bölümünden kalan 2} ise bu sayının {koyu:EKOK(4, 9) = 36} ile bölümünden kalanı bulmak için 0 ile 35 arasında 9'a bölündüğünde 2 kalanını veren sayılar ({koyu:2, 11, 20, 29}) yazılır; bunlardan 4'e bölündüğünde 1 kalanını veren {koyu:29} sayısı aranan kalandır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">ARALARINDA ASAL ÇARPANLARIN EKOK'UNA BÖLÜNEBİLME (6, 12, 15, 36, 45)</text>\n  <rect x=\"22\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#991b1b\">BİRLEŞİK SAYILARA BÖLÜNEBİLME İLKESİ</text>\n  <text x=\"35\" y=\"88\" font-size=\"11.2\" fill=\"#7f1d1d\">• EBOB(a, b) = 1 (aralarında asal) ise EKOK(a, b) = a · b</text>\n  <text x=\"35\" y=\"112\" font-size=\"11.2\" fill=\"#7f1d1d\">• 6 ile bölünebilme  → Hem 2 hem 3 ile tam bölünmeli</text>\n  <text x=\"35\" y=\"136\" font-size=\"11.2\" fill=\"#7f1d1d\">• 12 ile bölünebilme → Hem 3 hem 4 ile tam bölünmeli</text>\n  <text x=\"35\" y=\"160\" font-size=\"11.2\" fill=\"#7f1d1d\">• 15 ile bölünebilme → Hem 3 hem 5 ile tam bölünmeli</text>\n  <text x=\"35\" y=\"184\" font-size=\"11.2\" fill=\"#7f1d1d\">• 36 → (4 ve 9)  |  45 → (5 ve 9)  |  90 → (9 ve 10)</text>\n  <rect x=\"358\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#065f46\">UYGULAMA SIRASI VE KALAN MUHAKEMESİ</text>\n  <text x=\"370\" y=\"88\" font-size=\"11.2\" fill=\"#064e3b\">• 1. Adım: Önce SON BASAMAĞI ilgilendiren kural uygulanır</text>\n  <text x=\"370\" y=\"108\" font-size=\"10.8\" fill=\"#064e3b\">  (Örn: 36 için önce 4 kuralı, 45 için önce 5 kuralı)</text>\n  <text x=\"370\" y=\"130\" font-size=\"11.2\" fill=\"#064e3b\">• 2. Adım: Sonra RAKAMLAR TOPLAMI kuralı (3 veya 9) uygulanır</text>\n  <text x=\"370\" y=\"154\" font-size=\"11.2\" fill=\"#064e3b\">• Kalanlı sorularda: Sayının d = a·b ile bölümünden kalan k ise</text>\n  <text x=\"370\" y=\"174\" font-size=\"10.8\" fill=\"#064e3b\">  sayının a ve b ile bölümünden kalanlar, k'nin kalanlarına eşittir!</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Dikkat: 12 için (2 ve 6) veya 36 için (6 ve 6) seçilmez; seçilen çarpanlar aralarında asal (EBOB=1) olmalıdır!</text>\n</svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Rakamları birbirinden farklı dört basamaklı 53ab doğal sayısı 4 ve 9 ile kalansız bölünebildiğine göre a + b toplamının alabileceği değerleri bulunuz.",
+      "cevap": "Önce son iki basamağı ilgilendiren 4 ile bölünebilme kuralına bakılır; ancak a da son iki basamakta olduğu için önce 9 kuralını yazalım: 5 + 3 + a + b = 8 + a + b = 9k olmalıdır. Buradan a + b = 1 veya a + b = 10 olabilir (a + b = 19 olamaz çünkü rakamlar farklı). 1) a + b = 1 ise (ab) iki basamaklı sayısı 10 veya 01 olur; ikisi de 4'e bölünmez. 2) a + b = 10 ise (ab) sayısı 28, 46, 64, 82 olabilir; bunlardan 28 ve 64 sayısı 4'e tam bölünür ve rakamları 5, 3'ten farklıdır (5328 ve 5364). O hâlde a + b = 10 bulunur."
+    },
+    {
+      "soru": "Beş basamaklı 7a43b doğal sayısının 45 ile bölümünden kalan 13 olduğuna göre a'nın alabileceği değerler toplamını hesaplayınız.",
+      "cevap": "45 = EKOK(5, 9) olduğundan, 45 ile bölümünden kalan 13 olan sayının 5 ile bölümünden kalan 13 → 3; 9 ile bölümünden kalan ise 13 → 4'tür. 1) 5 ile bölümden kalan 3 olduğuna göre birler basamağı b = 3 veya b = 8 olur. 2) b = 3 için 7a433 sayısının rakamları toplamı 7 + a + 4 + 3 + 3 = 17 + a = 9k + 4 → 13 + a = 9k → a = 5 olur. 3) b = 8 için 7a438 sayısının rakamları toplamı 7 + a + 4 + 3 + 8 = 22 + a = 9k + 4 → 18 + a = 9k → a = 0 veya a = 9 olur. Böylece a'nın alabileceği değerler 0, 5 ve 9 olup toplamları 0 + 5 + 9 = 14'tür."
+    },
+    {
+      "soru": "A = 1453 · 2026 + (1923)² işleminin sonucunda elde edilen doğal sayının 9 ile bölümünden kalan kaçtır?",
+      "cevap": "Büyük sayıları çarpmak yerine her sayının 9 ile bölümünden kalan (rakamları toplamının 9'a kalanı) bulunur: 1453 → 1+4+5+3 = 13 → kalan 4; 2026 → 2+0+2+6 = 10 → kalan 1; 1923 → 1+9+2+3 = 15 → kalan 6. Kalanlar işlemde yerine yazılırsa: 4 · 1 + 6² = 4 + 36 = 40 olur. 40 sayısının 9 ile bölümünden kalan 4 + 0 = 4 olarak bulunur."
+    },
+    {
+      "soru": "Dört basamaklı 6x4y doğal sayısı 30 ile tam bölünebilen bir sayı olduğuna göre x rakamının alabileceği kaç farklı değer vardır?",
+      "cevap": "30 = EKOK(3, 10) olup 3 ve 10 aralarında asaldır. 1) Sayı 10 ile tam bölündüğüne göre birler basamağı y = 0 olmalıdır (sayı 6x40 olur). 2) Sayı 3 ile tam bölündüğüne göre rakamları toplamı 6 + x + 4 + 0 = 10 + x = 3k olmalıdır. Buradan x rakamı 2, 5 veya 8 değerlerini alabilir. Rakamları farklı şartı verilmediği için x'in alabileceği 3 farklı değer vardır."
+    },
+    {
+      "soru": "Bir doğal sayının 4 ile bölümünden kalan 3, 9 ile bölümünden kalan 5 olduğuna göre bu sayının 36 ile bölümünden kalan kaçtır?",
+      "cevap": "4 ve 9 aralarında asal olduğundan EKOK(4, 9) = 36'dır. Aranan kalan k (0 ≤ k < 36) hem 9'a bölündüğünde 5 kalanını hem de 4'e bölündüğünde 3 kalanını vermelidir. 0 ile 35 arasında 9 ile bölümünden 5 kalanını veren sayılar: 5, 14, 23 ve 32'dir. Bu sayılardan 4 ile bölündüğünde 3 kalanını veren sayı 23'tür (23 = 4·5 + 3). Dolayısıyla sayının 36 ile bölümünden kalan 23'tür."
+    },
+    {
+      "soru": "Altı basamaklı 418a5b doğal sayısı 8 ve 3 ile kalansız bölünebildiğine göre a = 2 için (a + b) toplamının alabileceği en büyük değeri bulunuz.",
+      "cevap": "a = 2 verildiğinde sayı 41825b olur ve son üç basamağı (25b) 8 ile tam bölünmelidir. 250 + b ifadesinde 248 sayısı 8'in tam katı (8 · 31 = 248) olduğundan 248 + 8 = 256 sayısı 8'e tam bölünür; yani b = 6 bulunur. Kontrol edilirse rakamları toplamı 4+1+8+2+5+6 = 26 (3'e bölünmez! Demek ki a'yı 3'e göre seçmeliyiz): Önce 8 ile bölünen (a5b) son üç basamak kuralına göre 5b kısmında a çift ise (5b) = 56 → b = 6; a tek ise (15b) = 152 → b = 2 olur. b = 6 için (a çift: 0,2,4,6,8) rakamlar toplamı 4+1+8+a+5+6 = 24 + a = 3k → a = 0 veya a = 6 olur. En büyük a = 6 ve b = 6 için a + b = 12 bulunur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Rakamları birbirinden farklı dört basamaklı 47a2 doğal sayısının 3 ile kalansız bölünebilmesi için a yerine yazılabilecek rakamların toplamı kaçtır?",
+      "secenekler": [
+        "10",
+        "12",
+        "13",
+        "15",
+        "18"
+      ],
+      "dogru": 2,
+      "aciklama": "Rakamları toplamı 4 + 7 + a + 2 = 13 + a = 3k olmalıdır. Buradan a rakamı 2, 5 veya 8 olabilir. Rakamları birbirinden farklı dendiği ve sayıda 2 rakamı bulunduğu için a = 2 alınamaz; a = 5 veya a = 8 olur ve toplamları 5 + 8 = 13 bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Beş basamaklı 38a4b doğal sayısı 15 ile tam bölünebildiğine göre a + b toplamının alabileceği en büyük değer kaçtır?",
+      "secenekler": [
+        "9",
+        "12",
+        "14",
+        "15",
+        "17"
+      ],
+      "dogru": 1,
+      "aciklama": "15 = EKOK(3, 5) olduğundan sayı hem 3'e hem 5'e bölünür. b = 0 veya b = 5 olabilir. b = 5 seçilirse 3 + 8 + a + 4 + 5 = 20 + a = 3k → a en çok 7 olur ve a + b = 7 + 5 = 12 bulunur (b = 0 için a en çok 9 olur ve a + b = 9 kalır)."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir A doğal sayısının 36 ile bölümünden kalan 29'dur. Buna göre A sayısının 4 ve 9 ile bölümünden kalanların toplamı kaçtır?",
+      "secenekler": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "7"
+      ],
+      "dogru": 1,
+      "aciklama": "36 = 4 · 9 olduğundan A sayısının 4 ve 9 ile bölümünden kalanlar 29'un kalanlarına eşittir. 29'un 4 ile bölümünden kalan 1, 9 ile bölümünden kalan 2'dir; toplamları 1 + 2 = 3 olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Dört basamaklı 5a3b doğal sayısının 45 ile bölümünden kalan 7 olduğuna göre a kaç farklı değer alabilir?",
+      "secenekler": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "dogru": 1,
+      "aciklama": "45 ile bölümünden kalan 7 ise sayının 5 ile bölümünden kalan 7 → 2 (b = 2 veya b = 7) ve 9 ile bölümünden kalan 7'dir. b = 2 için 5+a+3+2 = 10+a = 9k+7 → a = 6; b = 7 için 5+a+3+7 = 15+a = 9k+7 → a = 1 bulunur. Böylece a, 1 ve 6 olmak üzere 2 farklı değer alır."
+    },
+    {
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "metin": "Bir doğal sayının 8 ile bölümünden kalanı bulmak için sayının son üç basamağının oluşturduğu sayının 8 ile bölümünden kalana bakılır.",
+          "dogru": true
+        },
+        {
+          "metin": "Hem 2 ile hem de 6 ile kalansız bölünen her doğal sayı 12 ile de kalansız bölünür.",
+          "dogru": false
+        },
+        {
+          "metin": "Bir doğal sayının basamaklarındaki rakamların yerleri değiştirildiğinde oluşan yeni sayının 9 ile bölümünden kalan değişmez.",
+          "dogru": true
+        },
+        {
+          "metin": "Birler basamağı 4 olan bütün doğal sayılar 4 ile kalansız bölünür.",
+          "dogru": false
+        },
+        {
+          "metin": "Aralarında asal olan 4 ve 9 sayılarına kalansız bölünen her doğal sayı, bu iki sayının en küçük ortak katı olan 36'ya da kalansız bölünür.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "ciftler": [
+        [
+          "4 ile bölünebilme",
+          "Sayının son iki basamağının 00 veya 4'ün katı olması"
+        ],
+        [
+          "9 ile bölünebilme",
+          "Sayının rakamları toplamının 9'un tam katı olması"
+        ],
+        [
+          "12 ile bölünebilme",
+          "Aralarında asal olan 3 ve 4 sayılarına tam bölünmesi"
+        ],
+        [
+          "36 ile bölünebilme",
+          "Aralarında asal olan 4 ve 9 sayılarına tam bölünmesi"
+        ],
+        [
+          "45 ile bölünebilme",
+          "Aralarında asal olan 5 ve 9 sayılarına tam bölünmesi"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "cumleler": [
+        {
+          "metin": "Bir doğal sayının 10 ile bölümünden kalan, o sayının ___ basamağındaki rakama eşittir.",
+          "cevap": "birler"
+        },
+        {
+          "metin": "Onun kuvvetlerinin 9 ile bölümünden kalan daima 1 olduğu için 9 ile bölünebilmede sayının ___ toplamına bakılır.",
+          "cevap": "rakamları"
+        },
+        {
+          "metin": "Bir doğal sayının 15 ile kalansız bölünebilmesi için aralarında asal olan 3 ve ___ sayılarına tam bölünmesi gerekir.",
+          "cevap": "5"
+        },
+        {
+          "metin": "Dokuz (9) ile kalansız bölünebilen her doğal sayı, 9'un çarpanı olan ___ sayısı ile de kalansız bölünür.",
+          "cevap": "3"
+        },
+        {
+          "metin": "Dört basamaklı 2026 doğal sayısının 4 ile bölümünden kalan, son iki basamağı olan 26'nın 4'e bölümünden kalan olan ___ sayısıdır.",
+          "cevap": "2"
+        }
+      ],
+      "fazla": [
+        "onlar",
+        "8",
+        "7"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Rakamları birbirinden farklı beş basamaklı 64a3b doğal sayısının 36 ile bölümünden kalan 15'tir. Buna göre a rakamının değerini bulma sürecini 3 adımda muhakeme ederek yapılandırınız.",
+      "ipuclari": [
+        "1. Adım (Çarpanlara Ayırma ve Parçalı Kalanlar): 36 = EKOK(4, 9) eşitliğinden yararlanarak 15 kalanının 4 ve 9 ile bölümünden kalanları bulma.",
+        "2. Adım (Son İki Basamak - 4 Kuralı): (3b) iki basamaklı sayısının 4 ile bölümünden kalanı sağlayacak b rakamlarını belirleyip rakamları farklı şartıyla eleme.",
+        "3. Adım (Rakamlar Toplamı - 9 Kuralı): Uygun b değerini yerine yazarak 9 ile bölümden kalan 6 eşitliğinden a'yı bulma."
+      ],
+      "cevap": "1) 36 = EKOK(4, 9) olup 4 ve 9 aralarında asaldır. Sayının 36 ile bölümünden kalan 15 olduğuna göre; 4 ile bölümünden kalan 15 → 3, 9 ile bölümünden kalan ise 15 → 6 olmalıdır. 2) Önce son iki basamağı ilgilendiren 4 kuralı uygulanır: (3b) iki basamaklı sayısının 4 ile bölümünden kalan 3 ise 3b ∈ {31, 35, 39} olabilir; yani b ∈ {1, 5, 9} değerlerini alır. 3) Rakamlar toplamı 9k + 6 eşitliğine göre incelenir: b = 1 için 6+4+a+3+1 = 14+a = 9k+6 → a = 1 (b=1 ile aynı olduğu için elenir); b = 5 için 6+4+a+3+5 = 18+a = 9k+6 → a = 6 (sayıda 6 olduğu için elenir); b = 9 için 6+4+a+3+9 = 22+a = 9k+6 → a = 2 bulunur. Tüm rakamlar (6, 4, 2, 3, 9) birbirinden farklı olduğundan a = 2'dir."
+    }
+  ],
+  "ozet": [
+    "10^k = 2^k · 5^k olduğundan 2, 5 ve 10 ile bölünebilmede birler basamağına; 4 ile bölünebilmede son iki basamağa; 8 ile bölünebilmede ise son üç basamağa bakılır.",
+    "10^n = 9k + 1 basamak çözümlemesi gereğince bir doğal sayının 3 ve 9 ile bölümünden kalan, rakamları toplamının 3 ve 9 ile bölümünden kalana eşittir.",
+    "Aynı m sayısına bölünen sayıların toplam, fark ve çarpımlarının m ile bölümünden kalan, sayıların kendi kalanlarıyla yapılan işlemin kalanına eşittir.",
+    "Aralarında asal a ve b doğal sayılarının en küçük ortak katı EKOK(a, b) = a · b sayısına bölünebilme için hem a hem de b kuralı birlikte sağlanmalıdır (6→2-3, 12→3-4, 15→3-5, 36→4-9, 45→5-9).",
+    "Birleşik sayılara bölünebilme problemlerinde önce son basamağı ilgilendiren kural (2, 4, 5, 10), ardından rakamlar toplamı kuralı (3, 9) uygulanır."
+  ]
+}

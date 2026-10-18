@@ -1,0 +1,253 @@
+{
+  "ad": "5-matematik-13",
+  "sinif": 5,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 13,
+  "tarih": "14-18 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "Sayılar ve Nicelikler (1) / Geometrik Nicelikler",
+  "konu": "Doğal Sayılarla Dört İşlem Problemleri ve Dikdörtgenin Çevre Uzunluğu İle Alanına Giriş (MAT.5.1.2 & MAT.5.4.1)",
+  "ciktilar": [
+    "Doğal sayılarla dört işlem gerektiren gerçek yaşam problemlerini çözerken kullandığı stratejileri (kat modeli, seçenek karşılaştırma, tersinden çalışma) farklı problem durumlarına geneller.",
+    "Kenar uzunlukları doğal sayı olan bir dikdörtgenin çevre uzunluğu verildiğinde olası kısa ve uzun kenar uzunluklarını yarı çevre ilişkisiyle belirler.",
+    "Farklı kenar uzunluklarına sahip dikdörtgenlerin aynı çevre uzunluğuna sahip olabileceğini açıklar ve bu dikdörtgenlerin birimkare cinsinden alanlarını karşılaştırır."
+  ],
+  "giris": "Bir problemi çözerken kullandığımız akıl yürütme yolunu başka bir probleme uyarlayabilmek ve günlük hayattaki geometrik şekillerin ölçülerini yorumlayabilmek matematiğin en keyifli yönleridir. Bu hafta önce doğal sayılarla dört işlem problemlerinde çözüm stratejilerini genelleme ve tasarruf/maliyet karşılaştırması uygulamalarını tamamlıyor; ardından 'Geometrik Nicelikler' öğrenme alanına geçerek çevre uzunluğu verilen bir dikdörtgenin olası kenar uzunluklarını ve alanını keşfediyoruz.",
+  "bolumler": [
+    {
+      "baslik": "Doğal Sayılarla Dört İşlem Problemlerinde Strateji Genelleme (MAT.5.1.2)",
+      "metin": [
+        "Gerçek yaşam problemlerini çözerken izlediğimiz temel adımlar; verilen ve istenen bileşenleri belirlemek, uygun matematiksel temsillere (tablo, şema, kutu/kat modeli) dönüştürmek, sonucu tahmin edip stratejiyi uygulamak ve bulduğumuz çözümü kontrol etmektir. Bir problemde geliştirdiğimiz stratejiyi, sayıları ve bağlamı farklı olan yeni problemlere aktarmaya 'stratejiyi genelleme' denir.",
+        "Örneğin iki çokluktan birinin diğerinin belirli bir katı (veya katından bir miktar fazla/eksik) olduğu problemlerde 'kutu (kat) modeli' stratejisi kullanılır: Bir çiftlikteki koyunların sayısı keçilerin sayısının 3 katından 20 fazladır ve toplam hayvan sayısı 340'tır. Önce fazlalık olan 20 çıkarılır (340 - 20 = 320), ardından 1 kat keçi + 3 kat koyun = 4 kat olduğundan 320 ÷ 4 = 80 (keçi sayısı) ve 3 × 80 + 20 = 260 (koyun sayısı) bulunur.",
+        "Finansal okuryazarlık ve tasarruf bilinci gerektiren alışveriş, abonelik veya taksit problemlerinde ise 'seçenek karşılaştırma' stratejisi uygulanır. Her bir seçeneğin toplam maliyeti (Peşinat + Taksit Sayısı × Aylık Taksit Tutarı) ayrı ayrı hesaplanır ve aradaki fark bulunarak bütçeye en uygun seçenek belirlenir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">DOĞAL SAYILARLA ÇOK ADIMLI PROBLEM STRATEJİLERİ (MAT.5.1.2)</text>\n  <rect x=\"20\" y=\"48\" width=\"320\" height=\"190\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Birim Kesir / Kat (Kutu) Modeli</text>\n  <rect x=\"45\" y=\"88\" width=\"55\" height=\"26\" fill=\"#bfdbfe\" stroke=\"#1d4ed8\" stroke-width=\"1.5\"/>\n  <rect x=\"100\" y=\"88\" width=\"55\" height=\"26\" fill=\"#bfdbfe\" stroke=\"#1d4ed8\" stroke-width=\"1.5\"/>\n  <rect x=\"155\" y=\"88\" width=\"55\" height=\"26\" fill=\"#bfdbfe\" stroke=\"#1d4ed8\" stroke-width=\"1.5\"/>\n  <text x=\"275\" y=\"106\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e3a8a\">1. Sayı (3 kat)</text>\n  <rect x=\"45\" y=\"122\" width=\"55\" height=\"26\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n  <text x=\"275\" y=\"140\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e3a8a\">2. Sayı (1 kat)</text>\n  <text x=\"180\" y=\"172\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#1e3a8a\">• Toplam 4 kat = 480 ise → 1 kat = 480 ÷ 4 = 120</text>\n  <text x=\"180\" y=\"194\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#1e3a8a\">• Küçük sayı = 120 · Büyük sayı = 3 × 120 = 360</text>\n  <text x=\"180\" y=\"220\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">Kontrol: 360 + 120 = 480 (Strateji doğrulandı)</text>\n\n  <rect x=\"360\" y=\"48\" width=\"320\" height=\"190\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Tarife / Seçenek Karşılaştırma ve Tasarruf</text>\n  <text x=\"520\" y=\"100\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#14532d\">• A Seçeneği: Peşin 3 000 TL + 12 × 1 250 TL</text>\n  <text x=\"520\" y=\"122\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#14532d\">  Toplam A = 3 000 + 15 000 = 18 000 TL</text>\n  <text x=\"520\" y=\"150\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#14532d\">• B Seçeneği: Peşin 4 500 TL + 10 × 1 300 TL</text>\n  <text x=\"520\" y=\"172\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#14532d\">  Toplam B = 4 500 + 13 000 = 17 500 TL</text>\n  <text x=\"520\" y=\"198\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#14532d\">• Fark: 18 000 - 17 500 = 500 TL</text>\n  <text x=\"520\" y=\"220\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">B seçeneği 500 TL daha ekonomiktir.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Kat Modelinde Fazlalık veya Eksikliği Dengeleme",
+          "metin": "Toplamları verilen iki sayıdan biri diğerinin '3 katından 15 eksik' ise toplama 15 eklenerek tam katlara bölünür; '3 katından 15 fazla' ise toplamdan 15 çıkarılarak tam katlara bölünür."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Çözümün Geçerliliğini Kontrol Etme",
+          "metin": "Bulduğumuz sonuçları problemdeki başlangıç koşullarına yerine koyarak sağlama yapmak, işlem hatası yapıp yapmadığımızı anında gösterir."
+        }
+      ]
+    },
+    {
+      "baslik": "Dikdörtgenin Çevre Uzunluğu ve Olası Kenar Uzunlukları (MAT.5.4.1)",
+      "metin": [
+        "Karşılıklı kenar uzunlukları birbirine eşit ve bütün iç açıları dik (90°) olan dörtgene dikdörtgen denir (kare de dört kenarı birbirine eşit olan özel bir dikdörtgendir). Bir dikdörtgenin çevre uzunluğu, iki kısa kenarı ile iki uzun kenarının toplamına eşittir: Çevre = 2 × (Kısa Kenar + Uzun Kenar).",
+        "Bu bağıntıdan çok önemli bir kural elde ederiz: Bir dikdörtgenin bir kısa kenarı ile bir uzun kenarının toplamı, çevre uzunluğunun yarısına ('yarı çevreye') eşittir: Kısa Kenar + Uzun Kenar = Çevre ÷ 2. Dolayısıyla çevre uzunluğu doğal sayı olan bir dikdörtgenin kenarlarının da doğal sayı olabilmesi için çevre uzunluğunun çift bir sayı olması gerekir.",
+        "Örneğin çevre uzunluğu 20 cm olan ve kenar uzunlukları santimetre cinsinden doğal sayı olan dikdörtgenleri bulalım: Önce yarı çevreyi hesaplarız: 20 ÷ 2 = 10 cm (Kısa Kenar + Uzun Kenar = 10 cm). Toplamları 10 olan doğal sayı çiftlerini sırayla yazdığımızda 5 farklı dikdörtgen elde ederiz: (1 cm ve 9 cm), (2 cm ve 8 cm), (3 cm ve 7 cm), (4 cm ve 6 cm) ile özel bir dikdörtgen olan (5 cm ve 5 cm) karesi. Bu örnek, kenar uzunlukları birbirinden farklı olan dikdörtgenlerin aynı çevre uzunluğuna sahip olabileceğini açıkça gösterir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">DİKDÖRTGENİN ÇEVRE UZUNLUĞU VE KENAR İLİŞKİSİ (MAT.5.4.1)</text>\n  <rect x=\"20\" y=\"48\" width=\"320\" height=\"190\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b45309\">Dikdörtgenin Çevre Formülü</text>\n  <rect x=\"90\" y=\"92\" width=\"180\" height=\"70\" fill=\"#fde68a\" stroke=\"#b45309\" stroke-width=\"2.5\"/>\n  <text x=\"180\" y=\"86\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#78350f\">Uzun kenar (a = 9 cm)</text>\n  <text x=\"62\" y=\"132\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#78350f\">b = 5 cm</text>\n  <text x=\"180\" y=\"184\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#78350f\">• Çevre = 2 × (Uzun Kenar + Kısa Kenar)</text>\n  <text x=\"180\" y=\"204\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#78350f\">• Çevre = 2 × (9 + 5) = 2 × 14 = 28 cm</text>\n  <text x=\"180\" y=\"224\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">Kısa + Uzun Kenar = Çevre ÷ 2 (Yarı Çevre)</text>\n\n  <rect x=\"360\" y=\"48\" width=\"320\" height=\"190\" rx=\"8\" fill=\"#fdf2f8\" stroke=\"#db2777\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#be185d\">Çevresi 20 cm Olan Dikdörtgenler</text>\n  <text x=\"520\" y=\"96\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#831843\">Yarı Çevre (Kısa + Uzun) = 20 ÷ 2 = 10 cm</text>\n  <text x=\"520\" y=\"122\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#831843\">• 1. Dikdörtgen: Kısa = 1 cm , Uzun = 9 cm</text>\n  <text x=\"520\" y=\"142\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#831843\">• 2. Dikdörtgen: Kısa = 2 cm , Uzun = 8 cm</text>\n  <text x=\"520\" y=\"162\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#831843\">• 3. Dikdörtgen: Kısa = 3 cm , Uzun = 7 cm</text>\n  <text x=\"520\" y=\"182\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#831843\">• 4. Dikdörtgen: Kısa = 4 cm , Uzun = 6 cm</text>\n  <text x=\"520\" y=\"202\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#831843\">• 5. Dikdörtgen (Kare): Kenarlar = 5 cm ve 5 cm</text>\n  <text x=\"520\" y=\"224\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#be185d\">Farklı dikdörtgenlerin çevresi aynı olabilir!</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Çevreyi İkiye Bölmeyi Unutmayınız!",
+          "metin": "Çevre uzunluğu 24 cm olan bir dikdörtgenin kenarlarını ararken toplamları 24 olan sayıları değil, yarı çevresi olan 24 ÷ 2 = 12 cm'yi veren doğal sayı çiftlerini (1+11, 2+10, 3+9, 4+8, 5+7, 6+6) bulmalıyız."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Olası Dikdörtgen Sayısını Hızlı Bulma",
+          "metin": "Kare de özel bir dikdörtgen kabul edildiğinde, yarı çevresi Y olan bir dikdörtgen için (1, Y-1)'den başlayarak kısa kenarın 1'er artmasıyla kaç farklı doğal sayı çifti oluştuğu sistematik listeyle eksiksiz bulunur."
+        }
+      ]
+    },
+    {
+      "baslik": "Aynı Çevre Uzunluğuna Sahip Dikdörtgenlerin Alanlarına Giriş",
+      "metin": [
+        "Bir düzlemsel şeklin kapladığı yüzey miktarına o şeklin alanı denir ve dikdörtgenin alanı, bir kısa kenarı ile bir uzun kenarının çarpımına (içine sığan birimkare sayısına) eşittir: Alan = Kısa Kenar × Uzun Kenar. Çevre uzunlukları birbirine eşit olan farklı dikdörtgenlerin kapladıkları alanlar birbirinden farklıdır.",
+        "Az önce incelediğimiz, çevre uzunluğu 20 cm (yarı çevresi 10 cm) olan dikdörtgenlerin alanlarını birimkare (cm²) cinsinden karşılaştıralım: Kenarları 1 cm ve 9 cm olan dikdörtgenin alanı 1 × 9 = 9 birimkare; kenarları 2 cm ve 8 cm olanın alanı 2 × 8 = 16 birimkare; kenarları 3 cm ve 7 cm olanın alanı 3 × 7 = 21 birimkare; kenarları 4 cm ve 6 cm olanın alanı 4 × 6 = 24 birimkare; kenarları 5 cm ve 5 cm olan karenin alanı ise 5 × 5 = 25 birimkaredir.",
+        "Bu örüntüden çok önemli bir genellemeye ulaşırız: Çevre uzunluğu sabit olan dikdörtgenlerde kenar uzunlukları birbirine yaklaştıkça dikdörtgenin alanı büyür (en büyük alan kenarların birbirine en yakın veya eşit olduğu durumda elde edilir); kenar uzunlukları birbirinden uzaklaştıkça (biri çok kısa, diğeri çok uzun oldukça) dikdörtgenin alanı küçülür."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">AYNI ÇEVREYE SAHİP DİKDÖRTGENLERİN ALAN KARŞILAŞTIRMASI</text>\n  <rect x=\"25\" y=\"48\" width=\"205\" height=\"190\" rx=\"8\" fill=\"#ecfeff\" stroke=\"#0891b2\" stroke-width=\"1.5\"/>\n  <text x=\"127\" y=\"72\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#0e7490\">1 cm × 9 cm Dikdörtgeni</text>\n  <rect x=\"42\" y=\"105\" width=\"170\" height=\"22\" fill=\"#a5f3fc\" stroke=\"#0e7490\" stroke-width=\"2\"/>\n  <text x=\"127\" y=\"154\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#155e75\">• Çevre = 2 × (1 + 9) = 20 cm</text>\n  <text x=\"127\" y=\"178\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#155e75\">• Alan = 1 × 9 = 9 birimkare</text>\n  <text x=\"127\" y=\"214\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0e7490\">Kenarlar uzak → Alan EN KÜÇÜK</text>\n\n  <rect x=\"247\" y=\"48\" width=\"205\" height=\"190\" rx=\"8\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"72\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#5b21b6\">3 cm × 7 cm Dikdörtgeni</text>\n  <rect x=\"285\" y=\"92\" width=\"130\" height=\"48\" fill=\"#ddd6fe\" stroke=\"#5b21b6\" stroke-width=\"2\"/>\n  <text x=\"350\" y=\"162\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#4c1d95\">• Çevre = 2 × (3 + 7) = 20 cm</text>\n  <text x=\"350\" y=\"186\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#4c1d95\">• Alan = 3 × 7 = 21 birimkare</text>\n  <text x=\"350\" y=\"214\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#5b21b6\">Kenarlar yaklaştıkça alan büyür.</text>\n\n  <rect x=\"470\" y=\"48\" width=\"205\" height=\"190\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <text x=\"572\" y=\"72\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">5 cm × 5 cm Karesi</text>\n  <rect x=\"532\" y=\"84\" width=\"80\" height=\"64\" fill=\"#bbf7d0\" stroke=\"#15803d\" stroke-width=\"2\"/>\n  <text x=\"572\" y=\"166\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#14532d\">• Çevre = 2 × (5 + 5) = 20 cm</text>\n  <text x=\"572\" y=\"188\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#14532d\">• Alan = 5 × 5 = 25 birimkare</text>\n  <text x=\"572\" y=\"214\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">Kenarlar eşit → Alan EN BÜYÜK</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Çevreleri Eşit Olan Dikdörtgenlerin Alanları Eşit Olmak Zorunda Değildir",
+          "metin": "Kenarları 2 cm ve 8 cm olan dikdörtgen ile kenarları 4 cm ve 6 cm olan dikdörtgenin her ikisinin de çevresi 20 cm'dir; fakat birincinin alanı 16 birimkare iken ikincinin alanı 24 birimkaredir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Bahçe Çiti Tasarımı İpucu",
+          "metin": "Elindeki sabit uzunluktaki tel çitle en geniş (en büyük alanlı) dikdörtgen bahçeyi çevirmek isteyen bir çiftçi, kenar uzunluklarını birbirine en yakın (mümkünse kare şeklinde) seçmelidir."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir okul kütüphanesindeki hikâye kitaplarının sayısı, şiir kitaplarının sayısının 4 katından 35 fazladır. İki türden toplam 610 kitap olduğuna göre kütüphanede kaç tane hikâye kitabı vardır?",
+      "cevap": "Kat modeli stratejisini uygulayalım: Şiir kitapları 1 kat, hikâye kitapları 4 kat + 35'tir. Önce fazlalık olan 35'i toplamdan çıkarırız: 610 - 35 = 575. Toplam 1 + 4 = 5 kat 575'e eşit olduğundan 1 kat (şiir kitabı) = 575 ÷ 5 = 115 olur. Hikâye kitabı sayısı ise 4 × 115 + 35 = 460 + 35 = 495 tanedir. (Kontrol: 115 + 495 = 610)."
+    },
+    {
+      "soru": "Bir aile alacağı bilgisayar için iki mağazanın kampanyasını karşılaştırıyor: K Mağazası 4 000 TL peşinat ve 8 ay boyunca aylık 2 250 TL taksit; L Mağazası ise peşinatsız 10 ay boyunca aylık 2 150 TL taksit sunuyor. Hangi mağaza kaç TL daha ekonomiktir?",
+      "cevap": "K Mağazası toplam tutarı: 4 000 + (8 × 2 250) = 4 000 + 18 000 = 22 000 TL. L Mağazası toplam tutarı: 10 × 2 150 = 21 500 TL. Fark: 22 000 - 21 500 = 500 TL olduğundan L Mağazası 500 TL daha ekonomiktir."
+    },
+    {
+      "soru": "Çevre uzunluğu 28 cm olan bir dikdörtgenin uzun kenarı 10 cm ise kısa kenarı kaç santimetredir?",
+      "cevap": "Dikdörtgenin bir kısa ve bir uzun kenarının toplamı (yarı çevresi) = 28 ÷ 2 = 14 cm'dir. Uzun kenarı 10 cm olduğuna göre kısa kenarı 14 - 10 = 4 cm olur. (İkinci yol: İki uzun kenar 2 × 10 = 20 cm; kalan 28 - 20 = 8 cm iki kısa kenardır; 8 ÷ 2 = 4 cm)."
+    },
+    {
+      "soru": "Kenar uzunlukları santimetre cinsinden doğal sayı ve çevre uzunluğu 18 cm olan kaç farklı dikdörtgen çizilebilir? Kenar çiftlerini yazınız.",
+      "cevap": "Dikdörtgenin yarı çevresi (Kısa Kenar + Uzun Kenar) = 18 ÷ 2 = 9 cm'dir. Toplamları 9 cm olan doğal sayı kenar çiftleri: (1 cm, 8 cm), (2 cm, 7 cm), (3 cm, 6 cm) ve (4 cm, 5 cm) olmak üzere toplam 4 farklı dikdörtgen çizilebilir."
+    },
+    {
+      "soru": "Çevre uzunluğu 24 cm ve kenar uzunlukları santimetre cinsinden doğal sayı olan dikdörtgenler arasında alanı en küçük ve en büyük olanların kenar uzunluklarını ve alanlarını bulunuz.",
+      "cevap": "Yarı çevre = 24 ÷ 2 = 12 cm'dir. Alanın en küçük olması için kenarlar birbirine en uzak seçilir: 1 cm ve 11 cm → En küçük alan = 1 × 11 = 11 birimkare (cm²). Alanın en büyük olması için kenarlar birbirine en yakın (eşit) seçilir: 6 cm ve 6 cm → En büyük alan = 6 × 6 = 36 birimkare (cm²)."
+    },
+    {
+      "soru": "Kısa kenarı 6 m, uzun kenarı 14 m olan dikdörtgen biçimindeki bir hobi bahçesinin etrafına 3 sıra tel çekilecektir. metresi 25 TL olan telden kaç TL'lik kullanılacağını hesaplayınız.",
+      "cevap": "Bahçenin çevre uzunluğu = 2 × (6 + 14) = 2 × 20 = 40 metredir. Etrafına 3 sıra tel çekileceği için gereken tel uzunluğu = 3 × 40 = 120 metredir. Telin metresi 25 TL olduğundan toplam maliyet = 120 × 25 = 3 000 TL olur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Çevre uzunluğu 30 cm olan ve kenar uzunlukları santimetre cinsinden birer doğal sayı olan bir dikdörtgenin bir kısa kenarı ile bir uzun kenarının toplamı kaç santimetredir?",
+      "secenekler": [
+        "15",
+        "10",
+        "30",
+        "60"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıda kenar uzunlukları verilen dikdörtgenlerden hangisinin çevre uzunluğu 26 cm'dir?",
+      "secenekler": [
+        "Kısa kenarı 4 cm, uzun kenarı 10 cm olan dikdörtgen",
+        "Kısa kenarı 5 cm, uzun kenarı 8 cm olan dikdörtgen",
+        "Kısa kenarı 6 cm, uzun kenarı 13 cm olan dikdörtgen",
+        "Kısa kenarı 3 cm, uzun kenarı 9 cm olan dikdörtgen"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir fırında sabah üretilen simitlerin sayısı, poğaçaların sayısının 3 katından 40 eksiktir. Sabah toplam 440 adet simit ve poğaça üretildiğine göre kaç adet poğaça üretilmiştir?",
+      "secenekler": [
+        "100",
+        "110",
+        "120",
+        "140"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "coktan",
+      "soru": "Çevre uzunluğu 22 cm ve kenar uzunlukları santimetre cinsinden doğal sayı olan dikdörtgenlerden alanı en büyük olanın kenar uzunlukları aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "1 cm ve 10 cm",
+        "2 cm ve 9 cm",
+        "3 cm ve 8 cm",
+        "5 cm ve 6 cm"
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Bir dikdörtgenin çevre uzunluğu, bir kısa kenarı ile bir uzun kenarının toplamının 2 katına eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Kenar uzunlukları 3 cm ve 9 cm olan dikdörtgen ile kenar uzunlukları 5 cm ve 7 cm olan dikdörtgenin çevre uzunlukları birbirine eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Çevre uzunluğu 16 cm olan bir dikdörtgenin kısa kenarı 5 cm ise uzun kenarı 11 cm olur.",
+          "dogru": false
+        },
+        {
+          "metin": "Aynı çevre uzunluğuna sahip dikdörtgenlerde kenar uzunlukları birbirine yaklaştıkça dikdörtgenin alanı büyür.",
+          "dogru": true
+        },
+        {
+          "metin": "Çevre uzunlukları birbirine eşit olan iki farklı dikdörtgenin alanları da birbirine eşittir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki dikdörtgen bilgilerini karşılık gelen değerlerle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Kenarları 4 cm ve 9 cm olan dikdörtgenin çevresi",
+          "26 cm"
+        ],
+        [
+          "Çevresi 36 cm olan dikdörtgenin kısa ve uzun kenar toplamı",
+          "18 cm"
+        ],
+        [
+          "Çevresi 40 cm ve uzun kenarı 13 cm olan dikdörtgenin kısa kenarı",
+          "7 cm"
+        ],
+        [
+          "Kenarları 3 cm ve 8 cm olan dikdörtgenin alanı",
+          "24 birimkare"
+        ],
+        [
+          "Bir kenarı 8 cm olan karenin çevre uzunluğu",
+          "32 cm"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun sayı veya kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir dikdörtgenin çevre uzunluğunu 2'ye böldüğümüzde kısa kenarı ile uzun kenarının ___ buluruz.",
+          "cevap": "toplamını"
+        },
+        {
+          "metin": "Kısa kenarı 6 cm ve uzun kenarı 11 cm olan bir dikdörtgenin çevre uzunluğu ___ santimetredir.",
+          "cevap": "34"
+        },
+        {
+          "metin": "Çevre uzunluğu 14 cm ve kenarları doğal sayı olan dikdörtgenin kenarları 1 cm ve 6 cm, 2 cm ve 5 cm veya 3 cm ve ___ cm olabilir.",
+          "cevap": "4"
+        },
+        {
+          "metin": "Dört kenar uzunluğu birbirine eşit olan ___ aynı zamanda özel bir dikdörtgendir.",
+          "cevap": "kare"
+        },
+        {
+          "metin": "Çevre uzunluğu sabit olan dikdörtgenlerde kenar uzunlukları birbirinden uzaklaştıkça şeklin alanı ___ ve daha az birimkare kaplar.",
+          "cevap": "küçülür"
+        }
+      ],
+      "fazla": [
+        "çarpımını",
+        "büyür"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Elinde 32 metre uzunluğunda tel çit bulunan bir bahçıvan, kenar uzunlukları metre cinsinden doğal sayı olan dikdörtgen şeklinde bir sebze bahçesi çevirecektir. Bahçıvanın oluşturabileceği olası kenar uzunluklarını nasıl bulacağını ve en geniş alanı hangi kenar ölçüleriyle elde edeceğini açıklayınız.",
+      "ipuclari": [
+        "Önce 32 metrelik çevre uzunluğundan yararlanarak bahçenin bir kısa ve bir uzun kenarının toplamını (yarı çevresini) bulunuz.",
+        "Ardından toplamları bu yarı çevreyi veren doğal sayı çiftlerini sıralayınız.",
+        "Son olarak hangi kenar çiftinin en küçük alanı, hangi kenar çiftinin ise en büyük alanı verdiğini çarpma işlemiyle gösteriniz."
+      ],
+      "cevap": "Bahçenin çevre uzunluğu 32 metre olduğuna göre, bir kısa kenarı ile bir uzun kenarının toplamı (yarı çevresi) 32 ÷ 2 = 16 metredir. Toplamları 16 metre olan doğal sayı kenar çiftleri: (1 m, 15 m), (2 m, 14 m), (3 m, 13 m), (4 m, 12 m), (5 m, 11 m), (6 m, 10 m), (7 m, 9 m) ve özel bir dikdörtgen olan (8 m, 8 m) karesidir. Kenarlar birbirine en uzak seçildiğinde (1 m ve 15 m) alan 1 × 15 = 15 m² ile en küçük olur; kenarlar birbirine en yakın/eşit seçildiğinde ise (8 m ve 8 m veya kare dışında 7 m ve 9 m) alan 8 × 8 = 64 m² (veya 7 × 9 = 63 m²) ile en büyük değere ulaşır."
+    }
+  ],
+  "ozet": [
+    "{koyu:Problem Stratejilerini Genelleme:} Doğal sayılarla dört işlem problemlerinde kullanılan {koyu:kat (kutu) modeli}, {koyu:seçenek karşılaştırma} ve {koyu:tersinden çalışma} stratejileri farklı gerçek yaşam durumlarına uyarlanır.",
+    "{koyu:Dikdörtgenin Çevre Uzunluğu:} Dikdörtgenin çevresi iki kısa ve iki uzun kenarın toplamıdır: {koyu:Çevre = 2 × (Kısa Kenar + Uzun Kenar)}.",
+    "{koyu:Yarı Çevre Kuralı:} Çevre uzunluğu verilen bir dikdörtgende bir kısa kenar ile bir uzun kenarın toplamı çevrenin yarısına eşittir: {koyu:Kısa Kenar + Uzun Kenar = Çevre ÷ 2}.",
+    "{koyu:Aynı Çevreli Farklı Dikdörtgenler:} Yarı çevreyi (toplamı) aynı veren farklı doğal sayı çiftleri kullanılarak aynı çevre uzunluğuna sahip birden fazla dikdörtgen oluşturulabilir.",
+    "{koyu:Çevre ve Alan İlişkisi:} Çevre uzunluğu sabit olan dikdörtgenlerde kenar uzunlukları birbirine yaklaştıkça {koyu:alan büyür}, kenarlar birbirinden uzaklaştıkça {koyu:alan küçülür}."
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "ad": "12-matematik-13",
+  "sinif": 12,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 13,
+  "tarih": "14-18 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "GEOMETRİ: TRİGONOMETRİ",
+  "konu": "Trigonometrik Denklemlerin Çözüm Kümeleri: sin f(x) = sin a, cos f(x) = cos a, tan f(x) = tan a, cot f(x) = cot a ve a·sin x + b·cos x = c Biçimindeki Denklemler (12.3.2.1)",
+  "ciktilar": [
+    "Sinüs ve kosinüs fonksiyonlarını içeren temel trigonometrik denklemlerin (sin f(x) = a, cos f(x) = a) genel ve belirli aralıktaki çözüm kümelerini bulur.",
+    "Tanjant ve kotanjant denklemlerinin (tan f(x) = a, cot f(x) = a) çözüm kümelerini bularak paydayı sıfır yapan tanımsız kökleri ayıklar.",
+    "Lineer trigonometrik denklemlerin (a·sin x + b·cos x = c) çözülebilme şartını (a, b, c katsayı ilişkisini) analiz eder ve yardımcı açı yöntemiyle köklerini hesaplar."
+  ],
+  "giris": "Ses dalgalarından alternatif akım devrelerine, gezegenlerin yörünge hareketlerinden sarkaç salınımlarına kadar periyodik olayların tamamı trigonometrik fonksiyonlarla modellenir. Dokuzuncu yüzyılda Harran ve Rakka'da yaptığı astronomik gözlemlerle sinüs, kosinüs, tanjant ve kotanjant bağıntılarını sistemleştiren büyük İslam matematikçisi El-Battânî'nin öncülük ettiği trigonometrik denklemler, bir periyodik sistemin hangi açı veya zaman değerlerinde istenen konuma ulaştığını tam olarak belirlememizi sağlar.",
+  "bolumler": [
+    {
+      "baslik": "Sinüs ve Kosinüs Denklemlerinin Çözüm Kümeleri",
+      "metin": [
+        "İçerisinde trigonometrik ifadeler bulunan ve bilinmeyeni açı olan denklemlere {koyu:trigonometrik denklem} denir. Sinüs ve kosinüs fonksiyonları {koyu:[-1, 1]} kapalı aralığında değer aldığı için {koyu:sin f(x) = a} ve {koyu:cos f(x) = a} denklemlerinin gerçek sayılarda çözüm kümesinin boş küme olmaması için {koyu:-1 ≤ a ≤ 1} olması şarttır; {koyu:{uzunluk:a} > 1} ise çözüm kümesi boş kümedir ({koyu:ÇK = ∅}).",
+        "Bir {koyu:α} açısı için {koyu:sin α = a} olmak üzere {koyu:sin f(x) = sin α} denkleminin çözümünde, birim çemberin birinci ve ikinci bölgelerinde sinüs değerlerinin birbirine eşit olduğu ({koyu:sin(π - α) = sin α}) özelliğinden yararlanılır. Sinüsün esas periyodu {koyu:2π (360°)} olduğundan genel çözüm kümesi ({koyu:k ∈ Z} tam sayı olmak üzere) iki daldan oluşur: {koyu:f(x) = α + 2kπ} veya {koyu:f(x) = (π - α) + 2kπ} (derece cinsinden {koyu:f(x) = α + 360°·k} veya {koyu:f(x) = (180° - α) + 360°·k}).",
+        "Bir {koyu:α} açısı için {koyu:cos α = a} olmak üzere {koyu:cos f(x) = cos α} denkleminin çözümünde ise birim çemberin birinci ve dördüncü bölgelerinde kosinüs değerlerinin eşit olduğu ({koyu:cos(-α) = cos α}) kullanılır. Kosinüs denkleminin genel çözüm kümesi ({koyu:k ∈ Z} için) {koyu:f(x) = α + 2kπ} veya {koyu:f(x) = -α + 2kπ} (dereceyle {koyu:f(x) = ±α + 360°·k}) şeklindedir. Eğer denklem {koyu:sin f(x) = cos g(x)} biçiminde verilmişse tümler açı özdeşliği kullanılarak {koyu:cos g(x) = sin({kesir:π|2} - g(x))} veya {koyu:sin f(x) = cos({kesir:π|2} - f(x))} dönüşümü yapılır."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Denklemde f(x) yerine 2x veya 3x gibi bir kat açı varsa, +2kπ (veya +360°·k) periyot ifadesi en sonda değil, her iki dal yazılıp x yalnız bırakılırken 2 veya 3'e bölünmeden hemen önce eklenmelidir!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "sin x = ±1 ve cos x = ±1 uç değerlerinde birim çember üzerinde iki dal çakıştığı için [0, 2π) aralığında iki değil, birer kök bulunur; sin x = 0 için x = kπ, cos x = 0 için x = {kesir:π|2} + kπ pratik kalıbı kullanılır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">SİNÜS VE KOSİNÜS DENKLEMLERİNİN GENEL ÇÖZÜM KÜMELERİ (12.3.2.1)</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"198\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e40af\">1. sin f(x) = sin α Denklemi (-1 ≤ a ≤ 1)</text>\n  <text x=\"35\" y=\"92\" font-size=\"10.5\" fill=\"#1e3a8a\">• Birim çemberde I. ve II. bölgede sinüs aynı işaretlidir:</text>\n  <rect x=\"35\" y=\"104\" width=\"290\" height=\"58\" rx=\"6\" fill=\"#ffffff\" stroke=\"#60a5fa\"/>\n  <text x=\"180\" y=\"125\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1d4ed8\">f(x) = α + 2kπ   (veya α + 360°·k)</text>\n  <text x=\"180\" y=\"148\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1d4ed8\">f(x) = (π - α) + 2kπ   (veya 180° - α + 360°·k)</text>\n  <text x=\"35\" y=\"182\" font-size=\"10.5\" fill=\"#1e3a8a\">• <tspan font-weight=\"bold\">Özel Durumlar (k ∈ Z):</tspan></text>\n  <text x=\"43\" y=\"200\" font-size=\"10\" fill=\"#1e3a8a\">• sin x = 0 ⇒ x = kπ   |   sin x = 1 ⇒ x = π/2 + 2kπ</text>\n  <text x=\"43\" y=\"218\" font-size=\"10\" fill=\"#1e3a8a\">• sin x = -1 ⇒ x = 3π/2 + 2kπ (veya -π/2 + 2kπ)</text>\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"198\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#166534\">2. cos f(x) = cos α Denklemi (-1 ≤ a ≤ 1)</text>\n  <text x=\"375\" y=\"92\" font-size=\"10.5\" fill=\"#14532d\">• Birim çemberde I. ve IV. bölgede kosinüs aynı işaretlidir:</text>\n  <rect x=\"375\" y=\"104\" width=\"290\" height=\"58\" rx=\"6\" fill=\"#ffffff\" stroke=\"#22c55e\"/>\n  <text x=\"520\" y=\"125\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">f(x) = α + 2kπ   (veya α + 360°·k)</text>\n  <text x=\"520\" y=\"148\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">f(x) = -α + 2kπ   (veya -α + 360°·k)</text>\n  <text x=\"375\" y=\"182\" font-size=\"10.5\" fill=\"#14532d\">• <tspan font-weight=\"bold\">Özel Durumlar ve Dönüşüm (k ∈ Z):</tspan></text>\n  <text x=\"383\" y=\"200\" font-size=\"10\" fill=\"#14532d\">• cos x = 0 ⇒ x = π/2 + kπ   |   cos x = 1 ⇒ x = 2kπ</text>\n  <text x=\"383\" y=\"218\" font-size=\"10\" font-weight=\"bold\" fill=\"#166534\">• sin A = cos B ise cos B = sin(π/2 - B) yazılır!</text>\n</svg>"
+    },
+    {
+      "baslik": "Tanjant, Kotanjant ve Homojen Trigonometrik Denklemler",
+      "metin": [
+        "Tanjant ve kotanjant fonksiyonlarının görüntü kümesi tüm gerçek sayılar ({koyu:R}) olduğu için her {koyu:a ∈ R} gerçek sayısı için {koyu:tan f(x) = a} ve {koyu:cot f(x) = a} denklemlerinin çözümü vardır. Birim çemberde I. ve III. bölgelerde (aralarında {koyu:π = 180°} fark olan noktalarda) tanjant ve kotanjant aynı değeri aldığından esas periyotları {koyu:π (180°)} değeridir. Bu nedenle {koyu:tan f(x) = tan α} ve {koyu:cot f(x) = cot α} denklemlerinin genel çözüm kümesi tek bir dal ile ifade edilir: {koyu:f(x) = α + kπ} (veya {koyu:f(x) = α + 180°·k}, {koyu:k ∈ Z}).",
+        "Rasyonel veya tanjant/kotanjant içeren trigonometrik denklemlerde kökler bulunduktan sonra {koyu:tanımsızlık kontrolü} yapılması zorunludur. Çünkü {koyu:tan x = {kesir:sin x|cos x}} ifadesi {koyu:cos x = 0} ({koyu:x = {kesir:π|2} + kπ}) değerlerinde; {koyu:cot x = {kesir:cos x|sin x}} ifadesi ise {koyu:sin x = 0} ({koyu:x = kπ}) değerlerinde tanımsızdır. Bulunan köklerden denklemin herhangi bir terimini veya paydasını tanımsız yapan değerler çözüm kümesinden çıkarılır.",
+        "Sağ tarafı sıfır olan {koyu:a·sin x + b·cos x = 0} şeklindeki birinci dereceden homojen denklemlerde her iki taraf {koyu:cos x} ile bölünerek {koyu:a·tan x + b = 0 ⇒ tan x = -{kesir:b|a}} denklemine ulaşılır. Benzer biçimde {koyu:a·{us:sin|2} x + b·sin x·cos x + c·{us:cos|2} x = 0} şeklindeki ikinci dereceden homojen denklemlerde her iki taraf {koyu:{us:cos|2} x} ile bölünerek {koyu:a·{us:tan|2} x + b·tan x + c = 0} ikinci dereceden denklemine dönüştürülür ve çarpanlarına ayrılarak çözülür. Bu özdeşliklerin temelleri İslam astronomu {koyu:El-Battânî} (858–929) tarafından ortaya konulmuştur."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Bir trigonometrik denklemde eşitliğin her iki tarafında ortak çarpan (örneğin sin x) varsa, kök kaybına uğramamak için sadeleştirme yapılmaz; ifadeler tek tarafta toplanıp ortak çarpan parantezine alınır!"
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "[0, 2π) aralığında tan(nx) = a veya cot(nx) = a denkleminin 2n tane kökü vardır (tanımsızlık yoksa); çünkü her π aralığında n kök gelir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">TANJANT, KOTANJANT VE HOMOJEN DENKLEMLERİN ÇÖZÜMÜ</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"198\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">tan f(x) = tan α ve cot f(x) = cot α</text>\n  <text x=\"35\" y=\"92\" font-size=\"10.5\" fill=\"#78350f\">• Tanjant ve kotanjantın esas periyodu <tspan font-weight=\"bold\">π (180°)</tspan> olduğu</text>\n  <text x=\"43\" y=\"108\" font-size=\"10.5\" fill=\"#78350f\">için tek bir çözüm dalı yeterlidir (a ∈ R):</text>\n  <rect x=\"35\" y=\"120\" width=\"290\" height=\"44\" rx=\"6\" fill=\"#ffffff\" stroke=\"#f59e0b\"/>\n  <text x=\"180\" y=\"147\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\">f(x) = α + kπ   (veya α + 180°·k, k ∈ Z)</text>\n  <text x=\"35\" y=\"184\" font-size=\"10.5\" fill=\"#78350f\">• <tspan font-weight=\"bold\">Önemli Uyarı (Tanımsızlık Kontrolü):</tspan></text>\n  <text x=\"43\" y=\"202\" font-size=\"10\" fill=\"#78350f\">Paydayı sıfır yapan (tan için π/2 + kπ, cot için kπ)</text>\n  <text x=\"43\" y=\"218\" font-size=\"10\" font-weight=\"bold\" fill=\"#92400e\">değerler çözüm kümesinden mutlaka çıkarılır!</text>\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"198\" rx=\"10\" fill=\"#fae8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">Homojen ve Çarpanlara Ayrılan Denklemler</text>\n  <text x=\"375\" y=\"92\" font-size=\"10.5\" fill=\"#581c87\">• <tspan font-weight=\"bold\">1. Dereceden Homojen (a·sin x + b·cos x = 0):</tspan></text>\n  <text x=\"383\" y=\"108\" font-size=\"10.5\" fill=\"#581c87\">Her iki taraf cos x'e bölünür: <tspan font-weight=\"bold\">tan x = -b / a</tspan></text>\n  <text x=\"375\" y=\"132\" font-size=\"10.5\" fill=\"#581c87\">• <tspan font-weight=\"bold\">2. Dereceden Homojen:</tspan></text>\n  <text x=\"383\" y=\"148\" font-size=\"10\" fill=\"#581c87\">a·sin²x + b·sin x·cos x + c·cos²x = 0 denkleminde</text>\n  <text x=\"383\" y=\"164\" font-size=\"10\" fill=\"#581c87\">cos²x'e bölünerek <tspan font-weight=\"bold\">a·tan²x + b·tan x + c = 0</tspan> çözülür.</text>\n  <text x=\"375\" y=\"188\" font-size=\"10.5\" fill=\"#581c87\">• <tspan font-weight=\"bold\">El-Battânî (858–929):</tspan></text>\n  <text x=\"383\" y=\"204\" font-size=\"10\" fill=\"#581c87\">Sinüs, kosinüs, tanjant ve kotanjant özdeşliklerini</text>\n  <text x=\"383\" y=\"220\" font-size=\"10\" fill=\"#581c87\">astronomik denklemlerde ilk kullanan İslam âlimidir.</text>\n</svg>"
+    },
+    {
+      "baslik": "Lineer Trigonometrik Denklemler: a·sin x + b·cos x = c",
+      "metin": [
+        "Katsayıları sıfırdan farklı gerçek sayılar olmak üzere {koyu:a·sin x + b·cos x = c} biçimindeki denklemlere {koyu:lineer (doğrusal) trigonometrik denklem} denir. Trigonometri konularından bilindiği üzere {koyu:A(x) = a·sin x + b·cos x} ifadesinin alabileceği en büyük değer {koyu:+{kok:{us:a|2} + {us:b|2}}}, en küçük değer ise {koyu:-{kok:{us:a|2} + {us:b|2}}} değeridir.",
+        "Dolayısıyla {koyu:a·sin x + b·cos x = c} denkleminin gerçek sayılarda çözüm kümesinin boş küme olmaması (en az bir gerçek kökünün bulunması) için {koyu:-{kok:{us:a|2} + {us:b|2}} ≤ c ≤ +{kok:{us:a|2} + {us:b|2}}} yani karesi alındığında {koyu:{us:c|2} ≤ {us:a|2} + {us:b|2}} eşitsizliğinin sağlanması gerekir. Eğer {koyu:{us:c|2} > {us:a|2} + {us:b|2}} ise denklemin gerçek sayılarda kökü yoktur ({koyu:ÇK = ∅}).",
+        "Çözüm şartını sağlayan {koyu:a·sin x + b·cos x = c} denklemini çözmek için {koyu:yardımcı açı yöntemi} kullanılır: Eşitliğin her iki tarafı {koyu:a} katsayısına bölünür ve {koyu:{kesir:b|a} = tan φ = {kesir:sin φ|cos φ}} dönüşümü yapılır. Payda eşitlenip toplam formülü uygulandığında {koyu:sin x·cos φ + cos x·sin φ = sin(x + φ)} elde edilir ve denklem {koyu:sin(x + φ) = {kesir:c·cos φ|a}} (veya doğrudan her iki taraf {koyu:R = {kok:{us:a|2} + {us:b|2}}} değerine bölünerek {koyu:sin(x + φ) = {kesir:c|R}} ya da {koyu:cos(x - θ) = {kesir:c|R}}) temel denklemine indirgenerek çözülür."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Dikkat",
+          "metin": "Özel olarak c² = a² + b² eşitliği sağlanıyorsa sin(x + φ) = ±1 olur ve denklemin [0, 2π) aralığında iki farklı kökü değil, çakışık tek bir kökü bulunur."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpucu",
+          "metin": "Sorularda en sık karşılaşılan özel katsayı çiftleri (1, {kok:3}) ve (1, 1) çiftleridir: sin x + {kok:3}·cos x ifadesi 2·sin(x + {kesir:π|3}) veya 2·cos(x - {kesir:π|6}) biçimine; sin x + cos x ifadesi ise {kok:2}·sin(x + {kesir:π|4}) biçimine dönüşür."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">LİNEER TRİGONOMETRİK DENKLEM: a·sin x + b·cos x = c</text>\n  <rect x=\"25\" y=\"45\" width=\"310\" height=\"198\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">Çözüm (Gerçek Kök) Varlık Şartı</text>\n  <text x=\"40\" y=\"92\" font-size=\"10.5\" fill=\"#1e3a8a\">• A(x) = a·sin x + b·cos x ifadesinin alabileceği</text>\n  <text x=\"48\" y=\"108\" font-size=\"10.5\" fill=\"#1e3a8a\">en büyük değer <tspan font-weight=\"bold\">+kök(a² + b²)</tspan>, en küçük değer</text>\n  <text x=\"48\" y=\"124\" font-size=\"10.5\" fill=\"#1e3a8a\">ise <tspan font-weight=\"bold\">-kök(a² + b²)</tspan> değeridir.</text>\n  <rect x=\"40\" y=\"138\" width=\"280\" height=\"44\" rx=\"6\" fill=\"#ffffff\" stroke=\"#60a5fa\"/>\n  <text x=\"180\" y=\"164\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">c² ≤ a² + b²   ⇒   Çözüm Kümesi Boş Değil!</text>\n  <text x=\"40\" y=\"202\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b91c1c\">• Eğer c² &gt; a² + b² ise denklemin gerçek</text>\n  <text x=\"48\" y=\"218\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b91c1c\">sayılarda çözümü yoktur: ÇK = ∅</text>\n  <rect x=\"365\" y=\"45\" width=\"310\" height=\"198\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">Yardımcı Açı (tan φ = b / a) Yöntemi</text>\n  <text x=\"380\" y=\"92\" font-size=\"10.5\" fill=\"#14532d\">1. Denklemde her iki taraf <tspan font-weight=\"bold\">a</tspan> sayısına bölünür ve</text>\n  <text x=\"388\" y=\"108\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">b / a = tan φ = sin φ / cos φ</text>\n  <text x=\"388\" y=\"124\" font-size=\"10.5\" fill=\"#14532d\">yardımcı açısı tanımlanır.</text>\n  <text x=\"380\" y=\"148\" font-size=\"10.5\" fill=\"#14532d\">2. Toplam formülü uygulanır:</text>\n  <text x=\"388\" y=\"166\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">sin x · cos φ + cos x · sin φ = sin(x + φ)</text>\n  <text x=\"380\" y=\"190\" font-size=\"10.5\" fill=\"#14532d\">3. Veya doğrudan <tspan font-weight=\"bold\">R = kök(a² + b²)</tspan> ile bölünerek</text>\n  <text x=\"388\" y=\"208\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">sin(x + φ) = c / kök(a² + b²)</text>\n  <text x=\"388\" y=\"224\" font-size=\"10\" fill=\"#14532d\">temel sinüs denklemine dönüştürülüp çözülür.</text>\n</svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "İki kat açı içeren sin(2x) = {kesir:{kok:3}|2} trigonometrik denkleminin [0, π] kapalı aralığındaki köklerinin toplamı kaç radyandır?",
+      "cevap": "Öncelikle {kesir:{kok:3}|2} = sin({kesir:π|3}) olduğundan denklem sin(2x) = sin({kesir:π|3}) şeklinde yazılır. Birinci dal: 2x = {kesir:π|3} + 2kπ ⇒ x = {kesir:π|6} + kπ; buradan k = 0 için x₁ = {kesir:π|6} bulunur. İkinci dal: 2x = (π - {kesir:π|3}) + 2kπ = {kesir:2π|3} + 2kπ ⇒ x = {kesir:π|3} + kπ; buradan k = 0 için x₂ = {kesir:π|3} bulunur. [0, π] aralığındaki köklerin toplamı {kesir:π|6} + {kesir:π|3} = {kesir:π|2} radyandır."
+    },
+    {
+      "soru": "cos(3x - 20°) = sin(x + 30°) denklemini sağlayan en küçük pozitif x dar açısı kaç derecedir?",
+      "cevap": "Tümler açı özdeşliği gereği sin(x + 30°) = cos(90° - (x + 30°)) = cos(60° - x) yazılır. Böylece denklem cos(3x - 20°) = cos(60° - x) olur. Birinci daldan: 3x - 20° = 60° - x + 360°·k ⇒ 4x = 80° + 360°·k ⇒ x = 20° + 90°·k (k = 0 için x = 20°). İkinci daldan: 3x - 20° = -(60° - x) + 360°·k ⇒ 2x = -40° + 360°·k ⇒ x = -20° + 180°·k (k = 1 için x = 160°). En küçük pozitif dar açı 20° olarak bulunur."
+    },
+    {
+      "soru": "tan(2x) · tan(x) = 1 denkleminin (0, {kesir:π|2}) açık aralığındaki çözüm kümesini bulunuz.",
+      "cevap": "Her iki taraf tan(x)'e bölünürse tan(2x) = {kesir:1|tan x} = cot(x) elde edilir. cot(x) = tan({kesir:π|2} - x) olduğundan denklem tan(2x) = tan({kesir:π|2} - x) biçimine dönüşür. Tanjant denklemi kuralından 2x = {kesir:π|2} - x + kπ ⇒ 3x = {kesir:π|2} + kπ ⇒ x = {kesir:π|6} + {kesir:kπ|3} bulunur. (0, {kesir:π|2}) aralığında k = 0 için x = {kesir:π|6} (30°) elde edilir; bu değer tan(x) ve tan(2x) ifadelerini tanımsız yapmadığı için çözüm kümesi {kesir:π|6} değerinden oluşur."
+    },
+    {
+      "soru": "İkinci dereceden homojen {us:sin|2} x - 4·sin x·cos x + 3·{us:cos|2} x = 0 denklemini sağlayan tan x değerlerinin toplamı kaçtır?",
+      "cevap": "Denklemde cos x = 0 değeri eşitliği sağlamadığı için her iki taraf {us:cos|2} x ile bölünür: {us:tan|2} x - 4·tan x + 3 = 0 elde edilir. İfade çarpanlarına ayrıldığında (tan x - 1)·(tan x - 3) = 0 olur. Buradan tan x = 1 veya tan x = 3 bulunur; alabileceği değerlerin toplamı 1 + 3 = 4'tür."
+    },
+    {
+      "soru": "Gerçek sayılarda tanımlı 3·sin x - 4·cos x = 2m - 1 trigonometrik denkleminin çözüm kümesinin boş küme olmaması için m parametresinin alabileceği tam sayı değerlerinin toplamı kaçtır?",
+      "cevap": "a·sin x + b·cos x = c denkleminin gerçek kökünün bulunması için -R ≤ c ≤ +R yani -{kok:{us:3|2} + {us:(-4)|2}} ≤ 2m - 1 ≤ +{kok:{us:3|2} + {us:(-4)|2}} olmalıdır. Buradan -5 ≤ 2m - 1 ≤ 5 ⇒ -4 ≤ 2m ≤ 6 ⇒ -2 ≤ m ≤ 3 bulunur. Bu aralıktaki m tam sayıları -2, -1, 0, 1, 2, 3 olup toplamları 3'tür."
+    },
+    {
+      "soru": "{kok:3}·sin x + cos x = {kok:2} denkleminin [0, 2π) aralığındaki köklerini yardımcı açı yöntemiyle bulunuz.",
+      "cevap": "Katsayılar için R = {kok:{us:({kok:3})|2} + {us:1|2}} = 2 olduğundan her iki taraf 2'ye bölünür: {kesir:{kok:3}|2}·sin x + {kesir:1|2}·cos x = {kesir:{kok:2}|2}. Burada {kesir:{kok:3}|2} = cos({kesir:π|6}) ve {kesir:1|2} = sin({kesir:π|6}) yazılırsa sin x·cos({kesir:π|6}) + cos x·sin({kesir:π|6}) = sin(x + {kesir:π|6}) = sin({kesir:π|4}) elde edilir. Birinci daldan x + {kesir:π|6} = {kesir:π|4} ⇒ x₁ = {kesir:π|12} (15°); ikinci daldan x + {kesir:π|6} = π - {kesir:π|4} = {kesir:3π|4} ⇒ x₂ = {kesir:7π|12} (105°) bulunur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "soru": "Verilen 2·cos(2x) - 1 = 0 trigonometrik denkleminin [0, π] kapalı aralığındaki köklerinin toplamı kaç radyandır?",
+      "secenekler": [
+        "{kesir:π|3}",
+        "{kesir:2π|3}",
+        "π",
+        "{kesir:4π|3}",
+        "{kesir:5π|3}"
+      ],
+      "dogru": 2,
+      "aciklama": "cos(2x) = {kesir:1|2} = cos({kesir:π|3}) olduğundan 2x = ±{kesir:π|3} + 2kπ ⇒ x = ±{kesir:π|6} + kπ olur. [0, π] aralığındaki kökler x₁ = {kesir:π|6} ve x₂ = π - {kesir:π|6} = {kesir:5π|6} olup toplamları {kesir:π|6} + {kesir:5π|6} = π radyandır.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "sin(2x) - cos(x) = 0 denkleminin [0, 2π) aralığında kaç farklı gerçek kökü vardır?",
+      "secenekler": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "dogru": 3,
+      "aciklama": "Yarım açıdan 2·sin x·cos x - cos x = 0 ⇒ cos x·(2·sin x - 1) = 0 yazılır. cos x = 0 için x = {kesir:π|2}, {kesir:3π|2} (2 kök); sin x = {kesir:1|2} için x = {kesir:π|6}, {kesir:5π|6} (2 kök) olmak üzere toplam 4 farklı kök vardır.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "Doğrusal 5·sin x + 12·cos x = k - 2 trigonometrik denkleminin gerçek sayılarda çözüm kümesinin boş küme olması (ÇK = ∅) için k sayısı aşağıdakilerden hangisi olabilir?",
+      "secenekler": [
+        "-10",
+        "-5",
+        "0",
+        "12",
+        "16"
+      ],
+      "dogru": 4,
+      "aciklama": "R = {kok:{us:5|2} + {us:12|2}} = 13 olduğundan gerçek kök olması için -13 ≤ k - 2 ≤ 13 yani -11 ≤ k ≤ 15 olmalıdır. k = 16 için k - 2 = 14 > 13 olduğundan çözüm kümesi boş kümedir.",
+      "tur": "coktan"
+    },
+    {
+      "soru": "sin x + {kok:3}·cos x = 2 denklemini sağlayan [0, 2π) aralığındaki x açısı kaç radyandır?",
+      "secenekler": [
+        "{kesir:π|6}",
+        "{kesir:π|4}",
+        "{kesir:π|3}",
+        "{kesir:π|2}",
+        "{kesir:2π|3}"
+      ],
+      "dogru": 0,
+      "aciklama": "Her iki taraf 2'ye bölünüp {kesir:1|2} = cos({kesir:π|3}) ve {kesir:{kok:3}|2} = sin({kesir:π|3}) yazılırsa sin(x + {kesir:π|3}) = 1 elde edilir. Buradan x + {kesir:π|3} = {kesir:π|2} ⇒ x = {kesir:π|6} (30°) bulunur.",
+      "tur": "coktan"
+    },
+    {
+      "ifadeler": [
+        {
+          "metin": "sin f(x) = a ve cos f(x) = a denklemlerinin gerçek sayılarda kökünün bulunması için a sayısının [-1, 1] kapalı aralığında olması gerekir.",
+          "dogru": true,
+          "aciklama": "Sinüs ve kosinüs fonksiyonlarının görüntü kümesi [-1, 1] aralığıdır."
+        },
+        {
+          "metin": "Tanjant ve kotanjant denklemlerinin genel çözüm kümesi yazılırken esas periyot olarak 2kπ (360°·k) eklenir.",
+          "dogru": false,
+          "aciklama": "Tanjant ve kotanjantın esas periyodu π (180°) olduğu için genel çözüme 2kπ değil, kπ (180°·k) eklenir."
+        },
+        {
+          "metin": "a·sin x + b·cos x = c denkleminin gerçek sayılarda çözümünün olabilmesi için {us:c|2} ≤ {us:a|2} + {us:b|2} eşitsizliği sağlanmalıdır.",
+          "dogru": true,
+          "aciklama": "a·sin x + b·cos x ifadesi en çok +{kok:{us:a|2} + {us:b|2}} ve en az -{kok:{us:a|2} + {us:b|2}} değerini alabilir."
+        },
+        {
+          "metin": "sin x · cos x = sin x denkleminde her iki taraftaki sin x çarpanlarını sadeleştirmek kök kaybına yol açmaz.",
+          "dogru": false,
+          "aciklama": "Ortak çarpanı sadeleştirmek sin x = 0 köklerinin yitirilmesine (kök kaybına) neden olur; ortak paranteze alınmalıdır."
+        },
+        {
+          "metin": "Dokuzuncu yüzyılda sinüs, kosinüs, tanjant ve kotanjant bağıntılarını astronomik denklemlerde sistemleştiren İslam âlimi El-Battânî'dir.",
+          "dogru": true,
+          "aciklama": "El-Battânî (Albategnius), trigonometrik özdeşlikleri ve denklemleri bilim dünyasına kazandıran öncü âlimdir."
+        }
+      ],
+      "tur": "dy"
+    },
+    {
+      "ciftler": [
+        [
+          "x = α + 2kπ veya x = (π - α) + 2kπ",
+          "sin x = sin α temel trigonometrik denkleminin genel çözüm kümesi"
+        ],
+        [
+          "x = α + 2kπ veya x = -α + 2kπ",
+          "cos x = cos α temel trigonometrik denkleminin genel çözüm kümesi"
+        ],
+        [
+          "x = α + kπ (k ∈ Z)",
+          "tan x = tan α ve cot x = cot α denklemlerinin genel çözüm kümesi"
+        ],
+        [
+          "tan x = -{kesir:b|a}",
+          "a·sin x + b·cos x = 0 birinci dereceden homojen denkleminin indirgenmiş biçimi"
+        ],
+        [
+          "{us:c|2} ≤ {us:a|2} + {us:b|2}",
+          "a·sin x + b·cos x = c lineer trigonometrik denkleminin gerçek kök varlık koşulu"
+        ]
+      ],
+      "tur": "eslestir"
+    },
+    {
+      "cumleler": [
+        {
+          "metin": "Birim çemberde sin x = 1 denklemini [0, 2π) aralığında sağlayan tek açı değeri ___ derecedir.",
+          "cevap": "90"
+        },
+        {
+          "metin": "Tanjant ve kotanjant fonksiyonlarının esas periyodu ___ radyan (180 derece) olduğu için genel çözümleri tek dal hâlinde yazılır.",
+          "cevap": "π"
+        },
+        {
+          "metin": "Rasyonel trigonometrik denklemlerde paydayı ___ yapan açı değerleri çözüm kümesinden çıkarılır.",
+          "cevap": "sıfır"
+        },
+        {
+          "metin": "a·sin x + b·cos x = c lineer denklemini çözerken {kesir:b|a} = tan φ eşitliğiyle ___ açı yöntemi uygulanır.",
+          "cevap": "yardımcı"
+        },
+        {
+          "metin": "Trigonometrik özdeşlikleri ve küresel trigonometri denklemlerini sistemleştiren Harranlı ünlü İslam matematikçisi ___ olarak bilinir.",
+          "cevap": "El-Battânî"
+        }
+      ],
+      "fazla": [
+        "2π",
+        "bir"
+      ],
+      "tur": "bosluk"
+    },
+    {
+      "soru": "sin x - cos x = 1 lineer trigonometrik denkleminin [0, 2π) aralığındaki çözüm kümesini yardımcı açı (veya her iki tarafın karesini alma ve kontrol etme) yöntemiyle adım adım bulunuz.",
+      "cevap": "Yardımcı açı yöntemiyle her iki taraf R = {kok:{us:1|2} + {us:(-1)|2}} = {kok:2} değerine bölünür: {kesir:1|{kok:2}}·sin x - {kesir:1|{kok:2}}·cos x = {kesir:1|{kok:2}}. Burada {kesir:1|{kok:2}} = cos({kesir:π|4}) = sin({kesir:π|4}) yazılırsa sin(x - {kesir:π|4}) = sin({kesir:π|4}) elde edilir. Birinci daldan: x - {kesir:π|4} = {kesir:π|4} + 2kπ ⇒ x₁ = {kesir:π|2} (90°). İkinci daldan: x - {kesir:π|4} = (π - {kesir:π|4}) + 2kπ = {kesir:3π|4} + 2kπ ⇒ x₂ = π (180°). Her iki değer de ana denklemi sağladığından çözüm kümesi {kesir:π|2} ve π değerlerinden oluşur.",
+      "ipuclari": [
+        "Denklemin katsayıları a = 1 ve b = -1 için R = {kok:{us:a|2} + {us:b|2}} = {kok:2} değerini hesaplayıp her iki tarafı {kok:2}'ye bölünüz.",
+        "Fark formülü yardımıyla sol tarafı sin(x - {kesir:π|4}) ifadesine dönüştürünüz.",
+        "sin(x - {kesir:π|4}) = sin({kesir:π|4}) denkleminin iki çözüm dalını yazarak [0, 2π) aralığındaki kökleri bulunuz."
+      ],
+      "tur": "ogretici"
+    }
+  ],
+  "ozet": [
+    "sin f(x) = sin α denkleminin genel çözümü f(x) = α + 2kπ veya f(x) = (π - α) + 2kπ; cos f(x) = cos α denkleminin genel çözümü ise f(x) = ±α + 2kπ (k ∈ Z) şeklindedir.",
+    "tan f(x) = tan α ve cot f(x) = cot α denklemlerinin genel çözümü f(x) = α + kπ olup paydayı sıfır yapan tanımsız değerler çözüm kümesinden çıkarılır.",
+    "Ortak çarpan içeren denklemlerde kök kaybını önlemek için sadeleştirme yapılmaz, tüm terimler bir tarafa toplanarak çarpanlarına ayrılır.",
+    "a·sin x + b·cos x = 0 homojen denklemi cos x'e bölünerek tan x = -{kesir:b|a} eşitliğiyle; 2. dereceden homojen denklemler ise {us:cos|2} x'e bölünerek çözülür.",
+    "a·sin x + b·cos x = c lineer denkleminin gerçek kökünün olması için {us:c|2} ≤ {us:a|2} + {us:b|2} olmalı ve çözümde {kesir:b|a} = tan φ yardımcı açı dönüşümü kullanılmalıdır."
+  ]
+}

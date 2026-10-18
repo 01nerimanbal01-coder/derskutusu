@@ -1,0 +1,270 @@
+{
+  "ad": "11-matematik-13",
+  "sinif": 11,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 13,
+  "tarih": "14-18 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "Geometrik Şekiller",
+  "konu": "Dışbükey Çokgenlerin ve Özel Dörtgenlerin Kenar, Açı, Köşegen, Simetri ve Alan Özelliklerine Dair Çıkarımlar ve Problem Çözme (MAT.11.2.4 & MAT.11.2.5)",
+  "ciktilar": [
+    "Dışbükey çokgenlerin ve düzgün çokgenlerin (düzgün beşgen, düzgün altıgen, düzgün sekizgen) iç/dış açı, köşegen sayısı, simetri ekseni ve alan örüntülerini geneller.",
+    "Dörtgenlerde kenar orta noktalarının birleştirilmesiyle oluşan Varignon paralelkenarını ve köşegenlerin ayırdığı üçgensel bölgelerin alan bağıntılarını kanıtlayarak çıkarım yapar.",
+    "Çokgenlerin ve özel dörtgenlerin kenar, açı, köşegen, simetri ve alan özelliklerini içeren gerçek yaşam ve katlama problemlerini uygun stratejiler geliştirerek çözer."
+  ],
+  "kavramlar": [
+    [
+      "Dışbükey (Konveks) n-gen",
+      "Herhangi iki iç noktasını birleştiren doğru parçasının tamamı çokgenin iç bölgesinde kalan, iç açıları toplamı (n - 2) · 180° ve dış açıları toplamı 360° olan çokgendir."
+    ],
+    [
+      "Düzgün Çokgen",
+      "Tüm kenar uzunlukları birbirine eşit ve tüm iç açılarının ölçüleri (dolayısıyla dış açılarının ölçüleri) birbirine eş olan dışbükey çokgendir."
+    ],
+    [
+      "Simetri Ekseni",
+      "Bir çokgeni katlandığında iki eş parçası birbiriyle tam çakışacak biçimde bölen doğrudur; düzgün n-genin n tane simetri ekseni vardır."
+    ],
+    [
+      "Varignon Teoremi",
+      "Herhangi bir dışbükey dörtgenin ardışık kenarlarının orta noktalarının birleştirilmesiyle oluşan dörtgenin daima bir paralelkenar olduğunu belirten geometri teoremidir."
+    ],
+    [
+      "Köşegen Alan Bağıntısı",
+      "Bir dışbükey dörtgende köşegenlerin kesişmesiyle oluşan dört üçgensel bölgede karşılıklı üçgenlerin alanları çarpımının birbirine eşit olması (S₁ · S₃ = S₂ · S₄) özelliğidir."
+    ]
+  ],
+  "giris": "Mimar Sinan'ın Selimiye Camii'nde kubbeyi taşıyan sekizgen ayak sisteminden bal arılarının minimum balmumuyla maksimum bal depoladığı düzgün altıgen peteklerine, geleneksel Selçuklu yıldız motiflerinden modern kentsel parsel hesaplamalarına kadar her yerde çokgenlerin kusursuz geometrisi yer alır. Geçen hafta özel dörtgenlerin temel özelliklerini incelemiştik. Bu haftaki dersimizde; n kenarlı dışbükey ve düzgün çokgenlerin açı, köşegen, simetri ve alan örüntülerini genelleyecek, dörtgenlerde orta nokta ve alan paylaşımı teoremlerini çıkaracak ve çokgenlerle ilgili gerçek yaşam problemlerini çözeceğiz.",
+  "bolumler": [
+    {
+      "baslik": "Dışbükey Çokgenlerin ve Düzgün Çokgenlerin Açı, Köşegen ve Simetri Örüntüleri",
+      "metin": [
+        "Kenar sayısı {koyu:n} (n ≥ 3) olan bir {koyu:dışbükey (konveks) çokgenin} bir köşesinden kendisine ve komşu iki köşesine köşegen çizilemeyeceği için bir köşeden çizilebilen köşegen sayısı {koyu:n - 3} tanedir. Bu köşegenler çokgeni {koyu:n - 2} tane üçgensel bölgeye ayırır. Bir üçgenin iç açıları toplamı 180° olduğundan, dışbükey bir n-genin {koyu:iç açılarının ölçüleri toplamı (n - 2) · 180°}, {koyu:dış açılarının ölçüleri toplamı ise kenar sayısından bağımsız olarak 360°} olur. Çokgenin tüm köşegenlerinin toplam sayısı ise her köşegen iki köşeyi birleştirdiğinden {koyu:{kesir:n · (n - 3)|2}} bağıntısıyla hesaplanır.",
+        "Bütün kenar uzunlukları ve bütün iç açılarının ölçüleri birbirine eşit olan çokgenlere {koyu:düzgün çokgen} denir. Düzgün bir n-genin bir dış açısının ölçüsü {koyu:α = {kesir:360°|n}}, bir iç açısının ölçüsü ise {koyu:180° - {kesir:360°|n} = {kesir:(n - 2) · 180°|n}} formülüyle bulunur. Buna göre; {koyu:düzgün beşgenin} bir dış açısı 72° ve bir iç açısı {koyu:108°}; {koyu:düzgün altıgenin} bir dış açısı 60° ve bir iç açısı {koyu:120°}; {koyu:düzgün sekizgenin} bir dış açısı 45° ve bir iç açısı {koyu:135°} olur.",
+        "Düzgün bir n-genin {koyu:n tane simetri ekseni} vardır. Kenar sayısı {koyu:tek olan düzgün çokgenlerde} (eşkenar üçgen, düzgün beşgen gibi) her simetri ekseni bir köşeden ve karşı kenarın orta noktasından dik geçerek hem açıortay hem kenarortay olur. Kenar sayısı {koyu:çift olan düzgün çokgenlerde} (kare, düzgün altıgen, düzgün sekizgen gibi) ise simetri eksenlerinin yarısı karşılıklı köşelerden, diğer yarısı karşılıklı kenarların orta noktalarından geçer; ayrıca bu çokgenler {koyu:merkezî (noktasal) simetriye} de sahiptir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 245\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"245\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">DÜZGÜN BEŞGEN VE DÜZGÜN ALTIGENİN AÇI, KÖŞEGEN VE SİMETRİ ÖZELLİKLERİ</text>\n  <rect x=\"20\" y=\"42\" width=\"320\" height=\"188\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.8\"/>\n  <text x=\"180\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">DÜZGÜN BEŞGEN (n = 5)</text>\n  <polygon points=\"110,80 165,120 144,185 76,185 55,120\" fill=\"#ffffff\" stroke=\"#1d4ed8\" stroke-width=\"2.2\"/>\n  <line x1=\"110\" y1=\"80\" x2=\"110\" y2=\"185\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-dasharray=\"4,3\"/>\n  <line x1=\"55\" y1=\"120\" x2=\"165\" y2=\"120\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <text x=\"110\" y=\"74\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#1e3a8a\">A (54°|54°)</text>\n  <text x=\"110\" y=\"198\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#dc2626\">H (Dik / Simetri Ekseni)</text>\n  <text x=\"245\" y=\"92\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Dış açı: 360°/5 = 72°</text>\n  <text x=\"245\" y=\"112\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• İç açı: 180° - 72° = 108°</text>\n  <text x=\"245\" y=\"132\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Toplam 5 köşegen eşittir.</text>\n  <text x=\"245\" y=\"152\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• 5 simetri ekseni vardır.</text>\n  <text x=\"245\" y=\"172\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#1d4ed8\">• Köşegen açıları: 36°-36°-108°</text>\n  <rect x=\"360\" y=\"42\" width=\"320\" height=\"188\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.8\"/>\n  <text x=\"520\" y=\"62\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">DÜZGÜN ALTIGEN (n = 6)</text>\n  <polygon points=\"415,82 475,82 505,134 475,186 415,186 385,134\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2.2\"/>\n  <line x1=\"385\" y1=\"134\" x2=\"505\" y2=\"134\" stroke=\"#dc2626\" stroke-width=\"1.8\"/>\n  <line x1=\"415\" y1=\"82\" x2=\"475\" y2=\"186\" stroke=\"#9333ea\" stroke-width=\"1.4\" stroke-dasharray=\"3,3\"/>\n  <line x1=\"475\" y1=\"82\" x2=\"415\" y2=\"186\" stroke=\"#9333ea\" stroke-width=\"1.4\" stroke-dasharray=\"3,3\"/>\n  <line x1=\"415\" y1=\"82\" x2=\"415\" y2=\"186\" stroke=\"#2563eb\" stroke-width=\"1.8\"/>\n  <text x=\"445\" y=\"76\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#14532d\">Kenar = a</text>\n  <text x=\"445\" y=\"202\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#dc2626\">Uzun köşegen = 2a · Kısa = a·kök(3)</text>\n  <text x=\"600\" y=\"92\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Dış açı: 360°/6 = 60°</text>\n  <text x=\"600\" y=\"112\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• İç açı: 180° - 60° = 120°</text>\n  <text x=\"600\" y=\"132\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• 6 eş eşkenar üçgene ayrılır.</text>\n  <text x=\"600\" y=\"152\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• 6 simetri ekseni vardır.</text>\n  <text x=\"600\" y=\"172\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#15803d\">• Alan = 6 · (a²·kök(3) / 4)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "onemli",
+          "baslik": "Düzgün Altıgende Köşegen ve Alan Bağıntıları",
+          "metin": "Bir kenar uzunluğu 'a' birim olan düzgün altıgende; en uzun köşegen (simetri ekseni) '2a' birim, kısa köşegen ise 30°-30°-120° üçgeninden 'a{kok:3}' birimdir. Düzgün altıgenin alanı 6 eş eşkenar üçgenin alanları toplamı olan 6 · (a²{kok:3} / 4) = (3{kok:3} · a²) / 2 bağıntısıyla bulunur."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Düzgün Çokgenin Çevrel ve İç Teğet Çemberi",
+          "metin": "Her düzgün çokgenin köşelerinden geçen bir çevrel çemberi (yarıçapı R) ve kenarlarına teğet olan bir iç teğet çemberi (yarıçapı r, apotem) vardır. Çevresi Ç olan düzgün çokgenin alanı Alan = {kesir:Ç · r|2} formülüyle de hesaplanır."
+        }
+      ]
+    },
+    {
+      "baslik": "Dörtgenlerde Orta Nokta (Varignon) Teoremi ve Alan Paylaşımı Çıkarımları",
+      "metin": [
+        "Herhangi bir ABCD dışbükey dörtgeninin ardışık kenarlarının orta noktaları olan {koyu:K, L, M ve N} noktaları birleştirildiğinde elde edilen {koyu:KLMN dörtgeni daima bir paralelkenardır}; bu özelliğe {koyu:Varignon Teoremi} denir. Çünkü üçgende orta taban teoremine göre {uzunluk:KL} ve {uzunluk:MN} doğru parçaları {uzunluk:AC} köşegenine paralel ve {uzunluk:AC} uzunluğunun yarısına eşittir ({koyu:{uzunluk:KL} = {uzunluk:MN} = {uzunluk:AC} / 2}). Benzer şekilde {koyu:{uzunluk:KN} = {uzunluk:LM} = {uzunluk:BD} / 2} olur.",
+        "Buradan şu üç önemli çıkarıma ulaşılır:\n1) Ortada oluşan KLMN paralelkenarının {koyu:çevresi}, ABCD dörtgeninin {koyu:köşegen uzunlukları toplamına eşittir}: {koyu:Çevre(KLMN) = {uzunluk:AC} + {uzunluk:BD}}.\n2) KLMN paralelkenarının {koyu:alanı}, ABCD dörtgeninin tüm alanının {koyu:yarısına eşittir}: {koyu:Alan(KLMN) = {kesir:Alan(ABCD)|2}}. Köşelerde kalan dört üçgenin alanlarında da karşılıklı olanların toplamı birbirine eşittir: {koyu:Alan(AKN) + Alan(CML) = Alan(BKL) + Alan(DNM) = {kesir:Alan(ABCD)|4}}.\n3) Eğer ana dörtgenin köşegenleri birbirine {koyu:dik ise ({uzunluk:AC} ⊥ {uzunluk:BD})} KLMN bir {koyu:dikdörtgen}; köşegen uzunlukları birbirine {koyu:eşit ise ({uzunluk:AC} = {uzunluk:BD})} KLMN bir {koyu:eşkenar dörtgen}; köşegenler {koyu:hem dik hem eşit ise} KLMN bir {koyu:kare} olur.",
+        "Ayrıca herhangi bir ABCD dışbükey dörtgeninde köşegenlerin kesişim noktası E olmak üzere, köşegenlerin ayırdığı dört üçgenin alanları sırasıyla {koyu:S₁, S₂, S₃ ve S₄} ise tabanlar oranı alanlar oranına eşit olduğundan karşılıklı alanların çarpımı birbirine eşittir: {koyu:S₁ · S₃ = S₂ · S₄}."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 235\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"235\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">VARİGNON PARALELKENARI VE KÖŞEGEN ALAN PAYLAŞIMI TEOREMLERİ</text>\n  <rect x=\"20\" y=\"42\" width=\"320\" height=\"178\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.8\"/>\n  <text x=\"180\" y=\"62\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#92400e\">1. VARİGNON TEOREMİ (ORTA NOKTALAR)</text>\n  <polygon points=\"80,82 250,76 285,182 55,192\" fill=\"#ffffff\" stroke=\"#b45309\" stroke-width=\"2\"/>\n  <polygon points=\"165,79 267,129 170,187 67,137\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <line x1=\"80\" y1=\"82\" x2=\"285\" y2=\"182\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\"/>\n  <line x1=\"250\" y1=\"76\" x2=\"55\" y2=\"192\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\"/>\n  <text x=\"72\" y=\"80\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#0f172a\">D</text>\n  <text x=\"256\" y=\"76\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"292\" y=\"186\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"43\" y=\"196\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"165\" y=\"74\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#dc2626\">M</text>\n  <text x=\"276\" y=\"132\" font-size=\"9\" font-weight=\"bold\" fill=\"#dc2626\">L</text>\n  <text x=\"170\" y=\"200\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#dc2626\">K</text>\n  <text x=\"54\" y=\"140\" font-size=\"9\" font-weight=\"bold\" fill=\"#dc2626\">N</text>\n  <text x=\"180\" y=\"213\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#92400e\">Çevre(KLMN) = AC + BD  ·  Alan = Alan(ABCD)/2</text>\n  <rect x=\"360\" y=\"42\" width=\"320\" height=\"178\" rx=\"10\" fill=\"#fae8ff\" stroke=\"#9333ea\" stroke-width=\"1.8\"/>\n  <text x=\"520\" y=\"62\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#6b21a8\">2. KÖŞEGEN ALAN PAYLAŞIMI</text>\n  <polygon points=\"420,82 610,82 640,185 390,185\" fill=\"#ffffff\" stroke=\"#7e22ce\" stroke-width=\"2\"/>\n  <line x1=\"420\" y1=\"82\" x2=\"640\" y2=\"185\" stroke=\"#6b21a8\" stroke-width=\"1.8\"/>\n  <line x1=\"610\" y1=\"82\" x2=\"390\" y2=\"185\" stroke=\"#6b21a8\" stroke-width=\"1.8\"/>\n  <text x=\"515\" y=\"108\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#9333ea\">S₃</text>\n  <text x=\"515\" y=\"172\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#9333ea\">S₁</text>\n  <text x=\"455\" y=\"140\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">S₄</text>\n  <text x=\"575\" y=\"140\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">S₂</text>\n  <text x=\"520\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#581c87\">S₁ · S₃  =  S₂ · S₄</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Özel Dörtgenlerin Orta Nokta Dörtgenleri",
+          "metin": "Bir dikdörtgenin köşegen uzunlukları eşit olduğundan kenar orta noktaları birleştirildiğinde 'eşkenar dörtgen' oluşur. Bir eşkenar dörtgenin ise köşegenleri dik kesiştiğinden kenar orta noktaları birleştirildiğinde 'dikdörtgen' oluşur."
+        }
+      ]
+    },
+    {
+      "baslik": "Çokgen ve Dörtgenlerle İlgili Problem Çözme Stratejileri ve Katlama Uygulamaları",
+      "metin": [
+        "Çokgenlerin ve özel dörtgenlerin kenar, açı, köşegen ve alan özelliklerini içeren gerçek yaşam veya geometri problemlerini çözerken {koyu:Polya'nın dört aşamalı problem çözme süreci} (problemi anlama, strateji geliştirme, stratejiyi uygulama ve çözümü değerlendirme) izlenir.",
+        "{koyu:1. Yardımcı Çizgi ve Üçgene Tamamlama Stratejisi:} Yamuk ve genel dörtgen sorularında bir köşeden yan kenara veya köşegene {koyu:paralel çizmek} şekli bir paralelkenar ve bir üçgene ayırır. İç açıları 60°, 90° veya 120° olan çokgen sorularında ise kenarları dışarıya doğru uzatarak {koyu:özel üçgenlere (30°-60°-90° veya eşkenar üçgen) tamamlama} stratejisi kullanılır.",
+        "{koyu:2. Katlama (Simetri) Stratejisi:} Bir çokgen veya dörtgen kâğıt bir doğru boyunca katlandığında; {koyu:katlama çizgisi daima açıortaydır (simetri eksenidir)}, üst üste gelen kenar uzunlukları, açılar ve alanlar birbirine {koyu:birebir eşittir}. Katlanmış şekli çözmenin en etkili yolu, katlanan parçayı kesikli çizgilerle {koyu:ilk (açık) hâline geri tamamlamak} ve eş açıları/uzunlukları işaretlemektir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 225\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"225\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">ÇOKGEN VE DÖRTGEN PROBLEMLERİNDE ÜÇ TEMEL ÇÖZÜM STRATEJİSİ</text>\n  <rect x=\"20\" y=\"46\" width=\"210\" height=\"158\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.8\"/>\n  <text x=\"125\" y=\"68\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\">1. PARALEL ÇİZME (YAMUK)</text>\n  <text x=\"125\" y=\"92\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Üst köşeden yan kenara</text>\n  <text x=\"125\" y=\"110\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">paralel doğru çizilir.</text>\n  <text x=\"125\" y=\"130\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Şekil paralelkenar + üçgene</text>\n  <text x=\"125\" y=\"148\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">bölünerek taban (c - a)</text>\n  <text x=\"125\" y=\"166\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#1d4ed8\">üçgende kullanılır.</text>\n  <rect x=\"245\" y=\"46\" width=\"210\" height=\"158\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.8\"/>\n  <text x=\"350\" y=\"68\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">2. KATLAMA (SİMETRİ)</text>\n  <text x=\"350\" y=\"92\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Katlama çizgisi açıortaydır.</text>\n  <text x=\"350\" y=\"110\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Katlanan şekil ilk (açık)</text>\n  <text x=\"350\" y=\"128\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">hâline geri tamamlanır.</text>\n  <text x=\"350\" y=\"148\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Çakışan kenar ve açılara</text>\n  <text x=\"350\" y=\"166\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#15803d\">eşitlik işareti konulur.</text>\n  <rect x=\"470\" y=\"46\" width=\"210\" height=\"158\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.8\"/>\n  <text x=\"575\" y=\"68\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">3. ALAN PARÇALAMA</text>\n  <text x=\"575\" y=\"92\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">• Paralelkenar ve dörtgende</text>\n  <text x=\"575\" y=\"110\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">yükseklikleri eşit üçgenlerin</text>\n  <text x=\"575\" y=\"128\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">alanları tabanlarıyla</text>\n  <text x=\"575\" y=\"148\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">orantılı (k → S, 2k → 2S)</text>\n  <text x=\"575\" y=\"166\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#b45309\">olarak dağıtılır.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Paralelkenarda Köşe-Kenar Orta Nokta Özelliği",
+          "metin": "Bir ABCD paralelkenarında bir köşeden (örneğin A'dan) karşı iki kenarın orta noktalarına (BC ve CD'nin orta noktalarına) çizilen doğru parçaları, diğer köşegeni (BD'yi) üç eş parçaya böler."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir iç açısının ölçüsü bir dış açısının ölçüsünün 4 katına eşit olan düzgün çokgenin kenar sayısı ve toplam köşegen sayısı kaçtır?",
+      "cevap": "Bir dış açının ölçüsüne α dersek, iç açının ölçüsü 4α olur. Aynı köşedeki iç ve dış açının toplamı 180° olduğundan α + 4α = 5α = 180° ⇒ α = 36° bulunur. Kenar sayısı n = 360° / 36° = 10 (düzgün ongen) olur. Toplam köşegen sayısı ise n · (n - 3) / 2 = 10 · (10 - 3) / 2 = 35 tanedir."
+    },
+    {
+      "soru": "Bir parkta bir kenar uzunluğu 6 metre olan düzgün altıgen biçimindeki çiçekliğin tamamına çim döşenecektir. Çiçekliğin toplam alanı kaç m²'dir? ({kok:3} değerini sembolik bırakınız.)",
+      "cevap": "Bir kenarı a = 6 m olan düzgün altıgen, bir kenarı 6 m olan 6 eş eşkenar üçgenden oluşur. Bir eşkenar üçgenin alanı a²{kok:3} / 4 = 6²{kok:3} / 4 = 9{kok:3} m² olduğundan, düzgün altıgen çiçekliğin toplam alanı 6 · 9{kok:3} = 54{kok:3} m² olur."
+    },
+    {
+      "soru": "Bir ABCD dışbükey dörtgeninde köşegenler dik kesişmektedir ({uzunluk:AC} ⊥ {uzunluk:BD}). {uzunluk:AC} = 12 cm ve {uzunluk:BD} = 16 cm olduğuna göre, bu dörtgenin kenarlarının orta noktalarının birleştirilmesiyle oluşan KLMN dörtgeninin türünü, çevresini ve alanını bulunuz.",
+      "cevap": "Ana dörtgenin köşegenleri dik kesiştiği için orta noktaların birleştirilmesiyle oluşan KLMN dörtgeni bir dikdörtgendir. KLMN dikdörtgeninin kenarları orta tabandan 12 / 2 = 6 cm ve 16 / 2 = 8 cm olduğundan çevresi {uzunluk:AC} + {uzunluk:BD} = 12 + 16 = 28 cm, alanı ise 6 · 8 = 48 cm² (veya Alan(ABCD) = (12 · 16)/2 = 96 cm²'nin yarısı olan 48 cm²) bulunur."
+    },
+    {
+      "soru": "Bir ABCD dışbükey dörtgeninde [AC] ve [BD] köşegenleri E noktasında kesişmektedir. Alan(ABE) = 18 cm², Alan(BCE) = 12 cm² ve Alan(CDE) = 8 cm² olduğuna göre, tüm ABCD dörtgeninin alanı kaç cm²'dir?",
+      "cevap": "Köşegenlerin ayırdığı karşılıklı üçgensel bölgelerin alanları çarpımı birbirine eşittir: Alan(ABE) · Alan(CDE) = Alan(BCE) · Alan(ADE). Buradan 18 · 8 = 12 · Alan(ADE) ⇒ 144 = 12 · Alan(ADE) ⇒ Alan(ADE) = 12 cm² bulunur. Tüm dörtgenin alanı ise 18 + 12 + 8 + 12 = 50 cm² olur."
+    },
+    {
+      "soru": "Kısa kenarı {uzunluk:AB} = 8 cm ve uzun kenarı {uzunluk:BC} = 16 cm olan ABCD dikdörtgeni biçimindeki bir kâğıt, C köşesi A köşesinin üzerine gelecek biçimde katlanıp açıldığında oluşan katlama çizgisinin [BC] kenarını kestiği E noktasının B köşesine uzaklığı ({uzunluk:BE}) kaç cm olur?",
+      "cevap": "C köşesi A köşesinin üzerine katlandığında E noktasından geçen katlama izi [AC] doğru parçasının orta dikmesidir; dolayısıyla {uzunluk:AE} = {uzunluk:EC} olur. {uzunluk:BE} = x dersek {uzunluk:EC} = 16 - x ve {uzunluk:AE} = 16 - x olur. Dik açılı ABE üçgeninde Pisagor teoreminden 8² + x² = (16 - x)² ⇒ 64 + x² = 256 - 32x + x² ⇒ 32x = 192 ⇒ x = {uzunluk:BE} = 6 cm bulunur (6-8-10 özel dik üçgeni)."
+    },
+    {
+      "soru": "ABCDE düzgün beşgeninde A köşesinden [CD] kenarına indirilen dikme ayağı H noktasıdır. {uzunluk:CD} = 10 cm olduğuna göre {uzunluk:CH} uzunluğu kaç cm'dir ve [AH] doğrusu beşgeni nasıl böler?",
+      "cevap": "Düzgün beşgende bir köşeden karşı kenara indirilen dikme ([AH]) beşgenin simetri eksenidir. Bu nedenle hem A açısının açıortayıdır (54° - 54°) hem de karşı [CD] kenarını iki eş parçaya bölen kenarortaydır. Dolayısıyla {uzunluk:CH} = {uzunluk:HD} = 10 / 2 = 5 cm olur ve [AH] beşgeni iki eş dörtgensel bölgeye ayırır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "İç açılarının ölçüleri toplamı 1.440° olan düzgün bir çokgenin bir dış açısının ölçüsü kaç derecedir?",
+      "secenekler": [
+        "30 derece",
+        "36 derece",
+        "40 derece",
+        "45 derece",
+        "60 derece"
+      ],
+      "dogru": 1,
+      "aciklama": "(n - 2) · 180° = 1440° ⇒ n - 2 = 8 ⇒ n = 10 (düzgün ongen) bulunur. Bir dış açısının ölçüsü 360° / 10 = 36° olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir kenar uzunluğu 4 cm olan ABCDEF düzgün altıgeninin en uzun köşegeni ile en kısa köşegeninin uzunlukları çarpımı kaç cm²'dir?",
+      "secenekler": [
+        "16{kok:3} cm²",
+        "24{kok:3} cm²",
+        "32{kok:3} cm²",
+        "48{kok:3} cm²",
+        "64{kok:3} cm²"
+      ],
+      "dogru": 2,
+      "aciklama": "Bir kenarı a = 4 cm olan düzgün altıgende en uzun köşegen 2a = 8 cm, en kısa köşegen ise a{kok:3} = 4{kok:3} cm'dir. Çarpımları 8 · 4{kok:3} = 32{kok:3} cm² olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir dışbükey ABCD dörtgeninde köşegen uzunlukları toplamı {uzunluk:AC} + {uzunluk:BD} = 34 cm'dir. Bu dörtgenin dört kenarının orta noktaları ardışık olarak birleştirildiğinde oluşan KLMN paralelkenarının çevresi kaç cm'dir?",
+      "secenekler": [
+        "17 santimetre",
+        "24 santimetre",
+        "30 santimetre",
+        "34 santimetre",
+        "68 santimetre"
+      ],
+      "dogru": 3,
+      "aciklama": "Varignon teoremine göre kenar orta noktalarının birleştirilmesiyle oluşan KLMN paralelkenarının çevresi, ana dörtgenin köşegen uzunlukları toplamına ({uzunluk:AC} + {uzunluk:BD} = 34 cm) eşittir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir köşesinden çizilebilen köşegen sayısı 6 olan dışbükey bir çokgenin tüm köşegenlerinin toplam sayısı kaçtır?",
+      "secenekler": [
+        "14 köşegen",
+        "18 köşegen",
+        "20 köşegen",
+        "24 köşegen",
+        "27 köşegen"
+      ],
+      "dogru": 4,
+      "aciklama": "Bir köşeden çizilen köşegen sayısı n - 3 = 6 ⇒ n = 9 (dokuzgen) olur. Toplam köşegen sayısı n · (n - 3) / 2 = 9 · 6 / 2 = 27 bulunur."
+    },
+    {
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "metin": "Kenar sayısı kaç olursa olsun her dışbükey çokgenin dış açılarının ölçüleri toplamı 360 derecedir.",
+          "dogru": true
+        },
+        {
+          "metin": "Düzgün beşgenin bir iç açısının ölçüsü 108°, bir dış açısının ölçüsü ise 72°'dir.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir dikdörtgenin kenarlarının orta noktaları ardışık olarak birleştirildiğinde oluşan dörtgen yine bir dikdörtgendir.",
+          "dogru": false
+        },
+        {
+          "metin": "Herhangi bir dışbükey dörtgenin kenar orta noktalarının birleştirilmesiyle oluşan paralelkenarın alanı, ana dörtgenin alanının yarısına eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Düzgün altıgenin bir köşesinden çizilen tüm köşegenlerin uzunlukları birbirine eşittir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "ciftler": [
+        [
+          "(n - 2) · 180°",
+          "Kenar sayısı n olan dışbükey bir çokgenin iç açılarının ölçüleri toplamı"
+        ],
+        [
+          "{kesir:n · (n - 3)|2}",
+          "Kenar sayısı n olan dışbükey bir çokgenin toplam köşegen sayısı"
+        ],
+        [
+          "Varignon Paralelkenarı",
+          "Herhangi bir dışbükey dörtgenin kenar orta noktalarının birleştirilmesiyle oluşan dörtgen"
+        ],
+        [
+          "S₁ · S₃ = S₂ · S₄",
+          "Bir dörtgende köşegenlerin ayırdığı karşılıklı üçgensel bölgelerin alanları arasındaki bağıntı"
+        ],
+        [
+          "135° ve 45°",
+          "Düzgün sekizgenin sırasıyla bir iç açısının ve bir dış açısının derece cinsinden ölçüsü"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "cumleler": [
+        {
+          "metin": "Kenar uzunlukları ve iç açılarının ölçüleri birbirine eşit olan dışbükey çokgenlere ___ çokgen denir.",
+          "cevap": "düzgün"
+        },
+        {
+          "metin": "Kenar sayısı n olan düzgün bir çokgenin ___ tane simetri ekseni vardır.",
+          "cevap": "n"
+        },
+        {
+          "metin": "Bir kenar uzunluğu a birim olan düzgün altıgenin en uzun köşegeninin uzunluğu ___ birimdir.",
+          "cevap": "2a"
+        },
+        {
+          "metin": "Köşegenleri birbirine dik olan bir dörtgenin kenar orta noktaları birleştirildiğinde oluşan şekil bir ___ olur.",
+          "cevap": "dikdörtgen"
+        },
+        {
+          "metin": "Bir çokgen kâğıt katlandığında katlama çizgisi üzerindeki açılar birbirine eşit olduğundan katlama izi ___ doğrusudur.",
+          "cevap": "açıortay"
+        }
+      ],
+      "fazla": [
+        "kare",
+        "kenarortay"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Herhangi bir ABCD dışbükey dörtgeninin ardışık kenarlarının orta noktaları olan K, L, M ve N noktalarının birleştirilmesiyle oluşan KLMN dörtgeninin neden daima bir paralelkenar olduğunu (Varignon Teoremi) üçgende orta taban özelliğinden yararlanarak açıklayınız.",
+      "cevap": "ABCD dörtgeninde [AC] köşegeni çizildiğinde dörtgen ABC ve ADC olmak üzere iki üçgene ayrılır. ABC üçgeninde K ve L noktaları [AB] ve [BC] kenarlarının orta noktaları olduğundan [KL] doğru parçası ABC üçgeninin orta tabanıdır; dolayısıyla [KL] // [AC] ve {uzunluk:KL} = {uzunluk:AC} / 2 olur. Aynı şekilde ADC üçgeninde N ve M noktaları [AD] ve [CD] kenarlarının orta noktaları olduğundan [NM] doğru parçası da orta tabandır; [NM] // [AC] ve {uzunluk:NM} = {uzunluk:AC} / 2 olur. Böylece KLMN dörtgeninin karşılıklı [KL] ve [NM] kenarları birbirine hem paralel hem de eşit uzunlukta olduğundan KLMN dörtgeni bir paralelkenardır.",
+      "ipuclari": [
+        "[AC] köşegenini çizerek dörtgeni ABC ve ADC üçgenlerine ayırınız.",
+        "Üçgende orta taban teoreminden [KL] ve [NM]'nin [AC]'ye paralel ve yarısına eşit olduğunu gösteriniz.",
+        "Karşılıklı kenarları hem paralel hem eşit olan dörtgenin paralelkenar olduğu sonucuna ulaşınız."
+      ]
+    }
+  ],
+  "ozet": [
+    "Kenar sayısı n olan dışbükey çokgenin iç açıları toplamı (n - 2) · 180°, dış açıları toplamı 360° ve toplam köşegen sayısı n · (n - 3) / 2'dir.",
+    "Düzgün n-genin bir dış açısı 360° / n, simetri ekseni sayısı n'dir; düzgün beşgenin iç açısı 108°, düzgün altıgenin iç açısı 120°, düzgün sekizgenin iç açısı 135°'dir.",
+    "Bir kenarı a olan düzgün altıgenin uzun köşegeni 2a, kısa köşegeni a{kok:3} ve alanı 6 eş eşkenar üçgenin toplamı olan 6 · (a²{kok:3} / 4)'tür.",
+    "Varignon teoremine göre bir dörtgenin kenar orta noktaları birleştirildiğinde çevresi ({uzunluk:AC} + {uzunluk:BD}) ve alanı Alan(ABCD)/2 olan bir paralelkenar oluşur.",
+    "Çokgen ve dörtgen problemlerinde paralel çizme, özel üçgene tamamlama ve katlama izini simetri ekseni (açıortay) olarak kullanma stratejileri uygulanır."
+  ]
+}

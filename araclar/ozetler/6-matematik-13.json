@@ -1,0 +1,257 @@
+{
+  "ad": "6-matematik-13",
+  "sinif": 6,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 13,
+  "tarih": "14-18 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "Sayılar ve Nicelikler (2) / İstatistiksel Araştırma Süreci",
+  "konu": "Standart Uzunluk Ölçme Birimleriyle İlgili Problemler ve İstatistiksel Araştırma Sürecine Giriş: Kategorik ve Nicel (Kesikli) Veri Dağılımları (MAT.6.1.8 & MAT.6.5.1)",
+  "ciktilar": [
+    "MAT.6.1.8. Karşılaştığı günlük hayat ve matematiksel problem durumlarında metreyi (m) ölçüt alarak standart uzunluk ölçme birimleri (km, hm, dam, m, dm, cm, mm) arasında dönüşüm ve karşılaştırmalar yapar.",
+    "MAT.6.5.1.a-ç. Kategorik veya nicel (kesikli) veriye dayanan istatistiksel araştırma gerektiren durumları fark eder, betimleme veya karşılaştırma gerektiren araştırma soruları oluşturur ve veri toplama planı yapar.",
+    "MAT.6.5.1.d-e. Kategorik ve nicel (kesikli) verileri ayırt ederek uygun görselleştirme (nokta grafiği, kök-yaprak gösterimi, sıklık tablosu) ve özetleme (aritmetik ortalama, ortanca, tepe değer, açıklık) araçlarıyla analiz eder."
+  ],
+  "giris": "Bu hafta ilk olarak «Sayılar ve Nicelikler (2)» temasının son bölümünde standart uzunluk ölçme birimleri arasındaki dönüşümleri gerçek yaşam problemlerinde kullanıyoruz. Ardından yeni temamız olan «İstatistiksel Araştırma Süreci»ne giriş yaparak iyi bir araştırma sorusunun nasıl kurulduğunu, kategorik (nitel) veri ile nicel (kesikli) veri arasındaki farkı ve toplanan verileri görselleştirme-özetleme araçlarını öğreniyoruz.",
+  "bolumler": [
+    {
+      "baslik": "Standart Uzunluk Ölçme Birimleriyle İlgili Problemler (MAT.6.1.8)",
+      "metin": [
+        "Temel standart uzunluk ölçme birimimiz {koyu:metre (m)}dir. Metrenin üst katları {koyu:dekametre (dam = 10 m)}, {koyu:hektometre (hm = 100 m)} ve {koyu:kilometre (km = 1000 m)}; alt katları ise {koyu:desimetre (dm = 0,1 m)}, {koyu:santimetre (cm = 0,01 m)} ve {koyu:milimetre (mm = 0,001 m)} olarak sıralanır. Birim merdiveninde her bir basamak aşağı inildiğinde sayı {koyu:10 ile çarpılır}, her bir basamak yukarı çıkıldığında ise sayı {koyu:10'a bölünür}.",
+        "Gerçek yaşam problemlerinde farklı uzunluk birimleriyle verilen nicelikler üzerinde toplama, çıkarma, çarpma veya bölme yapabilmek için önce tüm veriler {koyu:soruda istenen ortak birime} dönüştürülür. Örneğin {koyu:3,2 km} uzunluğundaki bir yürüyüş parkurunun {koyu:850 m}'sini sabah, {koyu:14 hm}'sini akşam yürüyen bir kişinin geriye kalan yolunu metre cinsinden bulmak için: {koyu:3,2 km = 3200 m} ve {koyu:14 hm = 1400 m} dönüşümleri yapılır; yürünmüş toplam yol {koyu:850 + 1400 = 2250 m} ve kalan yol {koyu:3200 - 2250 = 950 m} olarak hesaplanır.",
+        "Kesir ve yüzdelerle birleştirilmiş uzunluk problemlerinde de birim dönüşümü büyük kolaylık sağlar: Örneğin {koyu:4,5 m} uzunluğundaki bir kurdelenin {kesir:2|5}'si kullanıldığında geriye kaç santimetre kaldığını bulmak için önce {koyu:4,5 m = 450 cm} yapılır; kullanılan kısım {koyu:450 × {kesir:2|5} = 180 cm}, kalan kısım ise {koyu:450 - 180 = 270 cm} (veya {koyu:27 dm}) bulunur."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">STANDART UZUNLUK ÖLÇME BİRİMLERİ VE PROBLEM ÇÖZME (MAT.6.1.8)</text>\n  <rect x=\"20\" y=\"48\" width=\"660\" height=\"88\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Uzunluk Ölçme Birimi Merdiveni (Ölçüt Birim: Metre = m)</text>\n  <text x=\"350\" y=\"98\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\">km ⟷ hm ⟷ dam ⟷ [ m ] ⟷ dm ⟷ cm ⟷ mm</text>\n  <text x=\"350\" y=\"122\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#2563eb\">Aşağı inerken her basamakta 10 ile çarpılır (×10) · Yukarı çıkarken her basamakta 10'a bölünür (÷10)</text>\n\n  <rect x=\"20\" y=\"148\" width=\"320\" height=\"92\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"172\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">Problem Çözme Kuralı: Ortak Birim</text>\n  <text x=\"35\" y=\"196\" font-size=\"11.5\" fill=\"#14532d\">• Farklı birimlerle verilen uzunluklar toplanmadan</text>\n  <text x=\"35\" y=\"214\" font-size=\"11.5\" fill=\"#14532d\">veya çıkarılmadan önce istenen ortak birime çevrilir.</text>\n  <text x=\"180\" y=\"232\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">Örnek: 2,4 km + 350 m = 2400 m + 350 m = 2750 m</text>\n\n  <rect x=\"360\" y=\"148\" width=\"320\" height=\"92\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"172\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#a16207\">Parça Sayısı ve Kesim Sayısı İlişkisi</text>\n  <text x=\"375\" y=\"196\" font-size=\"11.5\" fill=\"#713f12\">• Çember/halka olmayan düz bir tel veya tahta</text>\n  <text x=\"375\" y=\"214\" font-size=\"11.5\" fill=\"#713f12\">N eş parçaya ayrıldığında (N - 1) kez kesim yapılır.</text>\n  <text x=\"520\" y=\"232\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#854d0e\">3,6 m = 360 cm tel ➔ 60 cm'lik 6 parça (5 kesim)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Farklı Birimler Doğrudan Toplanamaz!",
+          "metin": "{koyu:4 m + 35 cm} işleminin sonucu 39 değildir! Önce birimler eşitlenir: {koyu:4 m = 400 cm} olduğundan {koyu:400 cm + 35 cm = 435 cm} (veya metre cinsinden {koyu:4 m + 0,35 m = 4,35 m}) elde edilir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Çevre ve Tel Kesme Problemleri",
+          "metin": "Kenar uzunlukları {koyu:1,2 m} ve {koyu:80 cm} olan dikdörtgen bir masanın çevresi hesaplanırken {koyu:1,2 m = 120 cm} alınır ve {koyu:Çevre = 2 × (120 + 80) = 400 cm = 4 m} bulunur. Düz bir çubuğu {koyu:8 eş parçaya} ayırmak için ise {koyu:8 - 1 = 7 kesim} yapılır."
+        }
+      ]
+    },
+    {
+      "baslik": "İstatistiksel Araştırma Süreci ve Veri Türleri: Kategorik ve Nicel (Kesikli)",
+      "metin": [
+        "Belirli bir konuda merak edilen bir soruya yanıt bulmak amacıyla veri toplama, düzenleme, görselleştirme, özetleme ve yorumlama adımlarının tamamına {koyu:istatistiksel araştırma süreci} denir. Sürecin ilk adımı {koyu:istatistiksel araştırma sorusu} oluşturmaktır. İyi bir araştırma sorusunda {koyu:hedef grup açıkça belirtilmeli}, soruya {koyu:veri toplanarak} cevap verilebilmeli ve elde edilecek veriler {koyu:değişebilirlik (çeşitlilik)} göstermelidir.",
+        "Örneğin «Okulumuzun müdürü kimdir?» veya «Bir haftada kaç gün vardır?» soruları tek ve sabit bir cevaba sahip olduğu için istatistiksel araştırma sorusu {koyu:değildir}. Buna karşılık {koyu:«Okulumuzdaki 6. sınıf öğrencilerinin en sevdiği spor dalları nelerdir?»} veya {koyu:«Sınıfımızdaki öğrencilerin bir ayda okuduğu dergi sayısı kaçtır?»} soruları kişiden kişiye değişen veriler ürettiği için birer {koyu:araştırma sorusudur}.",
+        "Toplanan veriler iki ana gruba ayrılır: 1. {koyu:Kategorik (Nitel) Veri:} Renk, tür, isim, görüş veya kategori belirten sözel verilerdir (en sevilen ders, göz rengi, gidilmek istenen şehir, tutulan takım gibi). 2. {koyu:Nicel (Kesikli) Veri:} Sayma işlemi sonucunda elde edilen ve tam sayı değerleri alan sayısal verilerdir (kardeş sayısı, sınıftaki sıra sayısı, bir maçta atılan basket sayısı, okunan hikâye sayısı gibi)."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">İSTATİSTİKSEL ARAŞTIRMA SÜRECİ VE VERİ TÜRLERİ (MAT.6.5.1)</text>\n  <rect x=\"20\" y=\"48\" width=\"320\" height=\"192\" rx=\"8\" fill=\"#fdf2f8\" stroke=\"#ec4899\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#be185d\">1. Kategorik (Nitel) Veri</text>\n  <text x=\"38\" y=\"98\" font-size=\"11.5\" fill=\"#831843\">• Sözel ifade edilen, nitelik veya grup bildiren veridir.</text>\n  <text x=\"38\" y=\"122\" font-size=\"11.5\" fill=\"#831843\">• Sayısal büyüklük ve dört işlem anlamı taşımaz.</text>\n  <text x=\"38\" y=\"148\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#9d174d\">Örnek Kategorik Veriler:</text>\n  <text x=\"38\" y=\"170\" font-size=\"11.5\" fill=\"#831843\">• Öğrencilerin en sevdiği spor dalı (yüzme, okçuluk)</text>\n  <text x=\"38\" y=\"192\" font-size=\"11.5\" fill=\"#831843\">• Göz renkleri, kan grupları, tercih edilen meyveler</text>\n  <text x=\"180\" y=\"220\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#be185d\">Özetleme: Tepe Değer (Mod) ve Sıklık Tablosu</text>\n\n  <rect x=\"360\" y=\"48\" width=\"320\" height=\"192\" rx=\"8\" fill=\"#faf5ff\" stroke=\"#a855f7\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#7e22ce\">2. Nicel (Kesikli) Veri</text>\n  <text x=\"378\" y=\"98\" font-size=\"11.5\" fill=\"#581c87\">• Sayma yoluyla elde edilen sayısal verilerdir.</text>\n  <text x=\"378\" y=\"122\" font-size=\"11.5\" fill=\"#581c87\">• Ara değer (kesirli/ondalık) almaz, tam sayı belirtir.</text>\n  <text x=\"378\" y=\"148\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#6b21a8\">Örnek Nicel (Kesikli) Veriler:</text>\n  <text x=\"378\" y=\"170\" font-size=\"11.5\" fill=\"#581c87\">• Öğrencilerin kardeş sayısı (0, 1, 2, 3...)</text>\n  <text x=\"378\" y=\"192\" font-size=\"11.5\" fill=\"#581c87\">• Bir ayda okunan dergi sayısı, maçta atılan gol sayısı</text>\n  <text x=\"520\" y=\"220\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#7e22ce\">Özetleme: Ortalama, Ortanca, Tepe Değer, Açıklık</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Sayı İçeren Her Veri Nicel Midir?",
+          "metin": "Dikkat! {koyu:Forma numarası, telefon kodu, il plaka kodu veya daire numarası} rakamlarla yazılsa bile bir miktar veya ölçüm belirtmeyip yalnızca {koyu:adlandırma/gruplama} yaptığı için {koyu:kategorik (nitel) veri} kabul edilir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Neden «Kesikli» Nicel Veri Denir?",
+          "metin": "Kardeş sayısı veya kalem kutusundaki kalem sayısı {koyu:1, 2, 3} gibi tam sayılarla sayılır; «1,5 kardeş» veya «2,7 kalem» gibi ara değerler alamadığı için bu tür sayma verilerine {koyu:nicel (kesikli) veri} adı verilir."
+        }
+      ]
+    },
+    {
+      "baslik": "Veri Görselleştirme ve Özetleme Araçlarını Seçme (MAT.6.5.1.d)",
+      "metin": [
+        "Toplanan verilerin dağılımını kolayca görmek ve karşılaştırmak için veri türüne uygun {koyu:görselleştirme araçları} seçilir. {koyu:Kategorik veriler} için {koyu:çetele/sıklık tablosu} ve {koyu:sütun grafiği} (veya nokta grafiği) kullanılır. {koyu:Nicel (kesikli) veriler} için ise sayı doğrusunun üzerine her veri için bir nokta konularak oluşturulan {koyu:nokta grafiği} ile verileri basamaklarına (örneğin onlar basamağı «kök», birler basamağı «yaprak») ayırarak sıralı gösteren {koyu:kök-yaprak gösterimi} tercih edilir.",
+        "Bir veri grubunu tek bir temsili değerle özetlemek ve yayılımını belirlemek için dört temel ölçü kullanılır: 1. {koyu:Aritmetik Ortalama:} Nicel verilerin toplamının veri sayısına bölünmesidir. 2. {koyu:Ortanca (Medyan):} Küçükten büyüğe sıralanan nicel veri grubunun tam ortasında yer alan değerdir (veri sayısı çift ise ortadaki iki sayının ortalaması alınır).",
+        "3. {koyu:Tepe Değer (Mod):} Veri grubunda {koyu:en çok tekrar eden} (sıklığı en yüksek olan) değerdir; hem nicel hem de kategorik verilerde bulunabilir. 4. {koyu:Açıklık (Aralık):} Nicel veri grubundaki {koyu:en büyük değer ile en küçük değer arasındaki farktır} (En Büyük - En Küçük) ve verilerin ne kadar yayıldığını gösterir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">VERİ GÖRSELLEŞTİRME VE ÖZETLEME ARAÇLARI (MAT.6.5.1.d)</text>\n  <rect x=\"20\" y=\"48\" width=\"320\" height=\"192\" rx=\"8\" fill=\"#ecfeff\" stroke=\"#06b6d4\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0e7490\">Nokta Grafiği: Kardeş Sayısı Dağılımı</text>\n  <line x1=\"55\" y1=\"185\" x2=\"305\" y2=\"185\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <text x=\"85\" y=\"205\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">0</text>\n  <text x=\"145\" y=\"205\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">1</text>\n  <text x=\"205\" y=\"205\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">2</text>\n  <text x=\"265\" y=\"205\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">3</text>\n  <!-- 0 kardeş: 2 kişi -->\n  <circle cx=\"85\" cy=\"170\" r=\"6\" fill=\"#0284c7\"/><circle cx=\"85\" cy=\"152\" r=\"6\" fill=\"#0284c7\"/>\n  <!-- 1 kardeş: 4 kişi -->\n  <circle cx=\"145\" cy=\"170\" r=\"6\" fill=\"#0284c7\"/><circle cx=\"145\" cy=\"152\" r=\"6\" fill=\"#0284c7\"/>\n  <circle cx=\"145\" cy=\"134\" r=\"6\" fill=\"#0284c7\"/><circle cx=\"145\" cy=\"116\" r=\"6\" fill=\"#0284c7\"/>\n  <!-- 2 kardeş: 3 kişi -->\n  <circle cx=\"205\" cy=\"170\" r=\"6\" fill=\"#0284c7\"/><circle cx=\"205\" cy=\"152\" r=\"6\" fill=\"#0284c7\"/>\n  <circle cx=\"205\" cy=\"134\" r=\"6\" fill=\"#0284c7\"/>\n  <!-- 3 kardeş: 1 kişi -->\n  <circle cx=\"265\" cy=\"170\" r=\"6\" fill=\"#0284c7\"/>\n  <text x=\"180\" y=\"226\" text-anchor=\"middle\" font-size=\"11\" fill=\"#155e75\">Veriler: 0, 0, 1, 1, 1, 1, 2, 2, 2, 3 (Toplam 10 öğrenci)</text>\n\n  <rect x=\"360\" y=\"48\" width=\"320\" height=\"192\" rx=\"8\" fill=\"#fff7ed\" stroke=\"#f97316\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#c2410c\">Kök-Yaprak Gösterimi ve Özet Ölçüler</text>\n  <text x=\"380\" y=\"98\" font-size=\"12\" font-weight=\"bold\" fill=\"#9a3412\">Kök (Onlar) | Yaprak (Birler) [Notlar]</text>\n  <text x=\"410\" y=\"120\" font-size=\"12\" fill=\"#7c2d12\">7 | 0  5  5  8   ➔ (70, 75, 75, 78)</text>\n  <text x=\"410\" y=\"142\" font-size=\"12\" fill=\"#7c2d12\">8 | 2  4  9      ➔ (82, 84, 89)</text>\n  <text x=\"410\" y=\"164\" font-size=\"12\" fill=\"#7c2d12\">9 | 0  6         ➔ (90, 96)</text>\n  <text x=\"380\" y=\"190\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#c2410c\">• Tepe Değer (Mod): 75 (en çok tekrar eden)</text>\n  <text x=\"380\" y=\"208\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#c2410c\">• Ortanca (Medyan): 82 (tam ortadaki 5. veri)</text>\n  <text x=\"380\" y=\"226\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#c2410c\">• Açıklık: 96 - 70 = 26 (En büyük - En küçük)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Kategorik Veride Hangi Özetleme Aracı Kullanılır?",
+          "metin": "Kategorik veriler (örneğin en sevilen meyveler: Elma, Çilek, Muz) sayısal olmadığı için aritmetik ortalaması, ortancası veya açıklığı hesaplanamaz; kategorik verileri özetlemek için en çok tercih edilen kategori yani {koyu:tepe değer (mod)} kullanılır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Kök-Yaprak Gösterimini Okuma",
+          "metin": "Kök-yaprak gösteriminde {koyu:8 | 2  4  9} satırı, kökü 8 (onlar basamağı 80) ve yaprakları 2, 4, 9 olan {koyu:82, 84 ve 89} sayılarını temsil eder. Yaprak sayısı aynı zamanda o satırdaki veri adedini verir."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Uzunluğu 4,8 km olan bir yolun birinci gün 16 hm'si, ikinci gün 1950 m'si asfaltlanmıştır. Geriye asfaltlanmayan kaç metre yol kalmıştır?",
+      "cevap": "Tüm uzunlukları metreye çevirelim:\n• Toplam yol: 4,8 km = 4,8 × 1000 = 4800 m\n• 1. gün: 16 hm = 16 × 100 = 1600 m\n• 2. gün: 1950 m\nAsfaltlanan toplam: 1600 + 1950 = 3550 m.\nKalan yol: 4800 - 3550 = 1250 m."
+    },
+    {
+      "soru": "Uzunluğu 5,4 m olan ahşap bir çıta, 45 cm uzunluğunda eş parçalara ayrılacaktır. Bu işlem sonunda kaç eş parça elde edilir ve kaç kesim yapılır?",
+      "cevap": "Önce çıtanın uzunluğunu santimetreye çevirelim: 5,4 m = 540 cm.\nElde edilecek parça sayısı: 540 ÷ 45 = 12 eş parça.\nDüz bir çıtayı 12 eş parçaya ayırmak için 12 - 1 = 11 kesim yapılır."
+    },
+    {
+      "soru": "Bir terzi elindeki 6 m kumaşın önce {kesir:1|4}'ini, sonra kalan kumaşın 12 dm'sini kullanmıştır. Geriye kaç santimetre kumaş kalmıştır?",
+      "cevap": "Birimleri santimetreye çevirelim: 6 m = 600 cm ve 12 dm = 120 cm.\nİlk kullanılan kısım: 600 × {kesir:1|4} = 150 cm.\nKalan kumaş: 600 - 150 = 450 cm.\nİkinci kullanımdan sonra geriye kalan: 450 - 120 = 330 cm."
+    },
+    {
+      "soru": "Aşağıdaki verilerin «kategorik (nitel)» mi yoksa «nicel (kesikli)» mi olduğunu gerekçesiyle belirtiniz:\na) Öğrencilerin beslediği evcil hayvan türü\nb) Bir basketbolcunun son 5 maçta attığı basket sayıları\nc) Öğrencilerin okul servis numaraları",
+      "cevap": "a) Kategorik (nitel) veri: Kedi, kuş, balık gibi sözel kategori belirtir.\nb) Nicel (kesikli) veri: Sayma yoluyla elde edilen tam sayı değerleridir.\nc) Kategorik (nitel) veri: Servis numarası rakamla yazılsa da büyüklük/miktar belirtmez, yalnızca servisi adlandırır."
+    },
+    {
+      "soru": "Dokuz öğrencinin bir ayda okuduğu hikâye sayıları şöyledir: 3, 5, 2, 5, 8, 4, 5, 6, 7. Bu veri grubunun aritmetik ortalamasını, ortancasını (medyan), tepe değerini (mod) ve açıklığını bulunuz.",
+      "cevap": "Verileri küçükten büyüğe sıralayalım: 2, 3, 4, 5, 5, 5, 6, 7, 8 (9 veri).\n• Aritmetik Ortalama: (2+3+4+5+5+5+6+7+8) ÷ 9 = 45 ÷ 9 = 5\n• Ortanca (Medyan): Tam ortadaki (5. sıradaki) veri = 5\n• Tepe Değer (Mod): En çok (3 kez) tekrar eden veri = 5\n• Açıklık: En büyük - En küçük = 8 - 2 = 6."
+    },
+    {
+      "soru": "Kök-yaprak gösteriminde «3 | 1  4  4  8» ve «4 | 0  5» olarak verilen 6 verilik grubun en küçük değeri, tepe değeri ve açıklığı kaçtır?",
+      "cevap": "Kök onlar basamağını, yaprak birler basamağını gösterir. Veriler: 31, 34, 34, 38, 40, 45.\n• En küçük değer: 31\n• Tepe değer (mod): İki kez tekrar eden 34\n• Açıklık: 45 - 31 = 14."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Uzunluğu 3,5 km olan bir bisiklet yolunun sabah 12 hm'sini, öğleden sonra ise 8500 dm'sini giden Efe'nin yolu tamamlaması için kaç metre daha pedal çevirmesi gerekir?",
+      "secenekler": [
+        "1450",
+        "1550",
+        "1650",
+        "2050"
+      ],
+      "dogru": 0,
+      "aciklama": "3,5 km = 3500 m; 12 hm = 1200 m; 8500 dm = 850 m. Gidilen toplam yol = 1200 + 850 = 2050 m. Kalan yol = 3500 - 2050 = 1450 m olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdakilerden hangisi «nicel (kesikli) veri» toplamayı gerektiren bir istatistiksel araştırma sorusudur?",
+      "secenekler": [
+        "Türkiye'nin en yüksek dağı hangisidir?",
+        "Okulumuzdaki 6. sınıf öğrencilerinin evlerinde bulunan kardeş sayısı kaçtır?",
+        "Sınıfımızdaki öğrencilerin en sevdiği renk hangisidir?",
+        "Okul kantininde en çok tercih edilen meyve suyu türü nedir?"
+      ],
+      "dogru": 1,
+      "aciklama": "A seçeneği sabit tek cevaplıdır (araştırma sorusu değildir); C ve D seçenekleri kategorik (nitel) veri toplar; B seçeneği ise sayma yoluyla elde edilen tam sayılı nicel (kesikli) veri toplar."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Yedi öğrencinin fen bilimleri proje görevinden aldığı puanlar küçükten büyüğe doğru «70, 75, 80, 80, 85, 90, 100» şeklinde sıralanmıştır. Bu veri grubunun tepe değeri (mod), ortancası (medyan) ve açıklığı sırasıyla aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "80 — 85 — 25",
+        "85 — 80 — 30",
+        "80 — 80 — 30",
+        "80 — 82,5 — 20"
+      ],
+      "dogru": 2,
+      "aciklama": "En çok tekrar eden değer (tepe değer) 80'dir; 7 verinin tam ortasındaki 4. veri (ortanca) 80'dir; açıklık ise 100 - 70 = 30'dur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Uzunluğu 2 m 4 dm olan bir kurdele, her biri 30 cm uzunluğunda eş parçalara ayrılmak isteniyor. Bu işlem için kurdele kaç yerinden kesilmelidir?",
+      "secenekler": [
+        "6",
+        "8",
+        "9",
+        "7"
+      ],
+      "dogru": 3,
+      "aciklama": "2 m 4 dm = 200 cm + 40 cm = 240 cm. Parça sayısı = 240 ÷ 30 = 8 eş parçadır. 8 parça elde etmek için 8 - 1 = 7 kesim yapılır."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Uzunluk ölçme birimleri arasında dönüşüm yapılırken kilometreden metreye inmek için sayı 1000 ile çarpılır.",
+          "dogru": true
+        },
+        {
+          "metin": "Öğrencilerin göz renkleri ve en sevdikleri spor dalları «nicel (kesikli) veri» örnekleridir.",
+          "dogru": false
+        },
+        {
+          "metin": "Bir veri grubundaki en büyük değer ile en küçük değer arasındaki farka «açıklık» adı verilir.",
+          "dogru": true
+        },
+        {
+          "metin": "Kök-yaprak gösterimi ve nokta grafiği, nicel verilerin dağılımını görselleştirmek için uygun araçlardır.",
+          "dogru": true
+        },
+        {
+          "metin": "«Bir yılda kaç ay vardır?» sorusu veri toplamayı gerektiren çok iyi bir istatistiksel araştırma sorusudur.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki matematiksel kavram ve ifadeleri doğru karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Kategorik (Nitel) Veri",
+          "Sözel grup veya nitelik belirten veri (göz rengi, spor dalı)"
+        ],
+        [
+          "Nicel (Kesikli) Veri",
+          "Sayma sonucu tam sayı değerleri alan veri (kardeş sayısı)"
+        ],
+        [
+          "Tepe Değer (Mod)",
+          "Bir veri grubunda en çok tekrar eden (sıklığı en fazla) değer"
+        ],
+        [
+          "Ortanca (Medyan)",
+          "Sıralanmış veri grubunun tam ortasında yer alan değer"
+        ],
+        [
+          "3,4 km + 600 m",
+          "4000 metre (4 kilometre)"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Standart uzunluk ölçme sisteminde temel ölçüt olarak kabul edilen birim ___ birimidir.",
+          "cevap": "metre"
+        },
+        {
+          "metin": "Bir veri grubundaki tüm sayıların toplamının veri adedine bölünmesiyle elde edilen değere ___ ortalama denir.",
+          "cevap": "aritmetik"
+        },
+        {
+          "metin": "İki basamaklı nicel verileri onlar basamağı ve birler basamağı olarak iki sütunda sıralı sunan araca ___ gösterimi denir.",
+          "cevap": "kök-yaprak"
+        },
+        {
+          "metin": "Sözel kategorilerden oluşan nitel verileri özetlemek için kullanılabilen merkezi eğilim ölçüsü ___ değerdir.",
+          "cevap": "tepe"
+        },
+        {
+          "metin": "Uzunluğu 450 santimetre olan bir ipin desimetre cinsinden karşılığı ___ desimetredir.",
+          "cevap": "45"
+        }
+      ],
+      "fazla": [
+        "açıklık",
+        "4500"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Standart uzunluk ölçme birimleriyle problem çözme adımlarını ve istatistiksel araştırma sürecinde veri türleri ile özetleme araçlarını 3 adımda açıklayınız.",
+      "ipuclari": [
+        "Birinci adım: Farklı uzunluk birimleriyle verilen bir problemde işlem yapmadan önce uygulanması gereken dönüşüm kuralını örnekleyiniz.",
+        "İkinci adım: Kategorik (nitel) veri ile nicel (kesikli) veri arasındaki farkı birer araştırma sorusu örneğiyle açıklayınız.",
+        "Üçüncü adım: Nicel bir veri grubunu görselleştirmek ve özetlemek için kullanılan araçları (nokta grafiği, kök-yaprak, ortalama, ortanca, tepe değer, açıklık) tanımlayınız."
+      ],
+      "cevap": "1. Uzunluk Problemleri: Farklı birimler doğrudan toplanıp çıkarılamaz; önce tüm veriler ortak birime çevrilir (örneğin 1,5 km - 400 m işleminde 1,5 km = 1500 m yapılır ve 1500 - 400 = 1100 m bulunur).\n2. Veri Türleri: Sözel nitelik belirten veriler kategoriktir («6-A sınıfının en sevdiği meyveler nelerdir?»); sayma yoluyla elde edilen tam sayılı veriler ise nicel kesiklidir («6-A sınıfındaki öğrencilerin kardeş sayıları kaçtır?»).\n3. Görselleştirme ve Özetleme: Nicel veriler nokta grafiği ve kök-yaprak gösterimiyle görselleştirilir; toplamın veri sayısına bölümüyle aritmetik ortalama, sıralı dizinin ortasıyla ortanca (medyan), en çok tekrar edenle tepe değer (mod) ve uç değerler farkıyla açıklık hesaplanır."
+    }
+  ],
+  "ozet": [
+    "{koyu:Uzunluk Ölçme Problemleri (MAT.6.1.8):} Ölçüt birim {koyu:metre (m)}dir ({koyu:km, hm, dam, m, dm, cm, mm}); problemlerde işlem yapmadan önce tüm uzunluklar ortak birime dönüştürülür.",
+    "{koyu:İstatistiksel Araştırma Sorusu (MAT.6.5.1):} Hedef grubu belli olan, veri toplamaya dayanan ve sonuçları kişiden kişiye {koyu:değişebilirlik} gösteren sorular araştırma sorusudur.",
+    "{koyu:Kategorik ve Nicel (Kesikli) Veri:} Renk, spor dalı ve tür gibi sözel gruplar {koyu:kategorik (nitel)}; kardeş sayısı ve atılan gol sayısı gibi sayma sonucu tam sayı alan veriler {koyu:nicel (kesikli)} veridir.",
+    "{koyu:Veri Görselleştirme Araçları:} Kategorik verilerde sıklık tablosu ve sütun grafiği; nicel (kesikli) verilerde ise {koyu:nokta grafiği} ve basamak temelli {koyu:kök-yaprak gösterimi} kullanılır.",
+    "{koyu:Veri Özetleme Ölçüleri:} Nicel veriler {koyu:aritmetik ortalama}, {koyu:ortanca (medyan)}, {koyu:tepe değer (mod)} ve {koyu:açıklık (En büyük - En küçük)} ile özetlenir; kategorik verilerde ise {koyu:tepe değer} kullanılır."
+  ]
+}

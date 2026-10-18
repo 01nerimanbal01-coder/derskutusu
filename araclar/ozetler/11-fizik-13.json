@@ -1,0 +1,258 @@
+{
+  "ad": "11-fizik-13",
+  "sinif": 11,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 13,
+  "tarih": "14-18 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "1. Tema: Kuvvet ve Hareket",
+  "konu": "Düzgün Çembersel Hareket Uygulamaları: Yatay, Düşey ve Eğimli Virajlarda Güvenli Dönüş Şartları ile Düşey Düzlemde Çembersel Hareket (İp Gerilmesi ve Ray Tepkisi) (FİZ.11.1.10)",
+  "ciktilar": [
+    "Yatay, eğimli ve düşey silindirik virajlarda hareket eden araçlara etki eden kuvvetleri serbest cisim diyagramı üzerinde göstererek güvenli dönüş hız sınırlarını modeller.",
+    "Düşey düzlemde çembersel hareket yapan cisimlerde yörüngenin üst, alt ve yan noktalarındaki ip gerilmesi ile ray tepki kuvvetini hesaplar.",
+    "Farklı veri setleri üzerinden çembersel hareket değişkenleri (kütle, yarıçap, sürtünme katsayısı, çizgisel hız) arasındaki matematiksel ilişkileri geneller."
+  ],
+  "giris": "Bir cismin çembersel yörüngede kalabilmesi için merkeze yönelik net bir kuvvete ({koyu:merkezcil kuvvet}) ihtiyaç vardır. Günlük yaşamda araçların {koyu:yatay ve eğimli virajları} güvenle dönmesi, motosikletlerin {koyu:düşey silindirde} düşmeden dolanması ve lunapark trenlerinin {koyu:düşey raylarda} çember çizmesi; sürtünme kuvveti, yüzeyin normal kuvveti, ip gerilmesi ve ağırlığın bileşkesinin merkezcil kuvveti oluşturmasıyla açıklanır.",
+  "bolumler": [
+    {
+      "baslik": "Yatay, Eğimli ve Düşey Silindirik Virajlarda Güvenli Dönüş Şartları",
+      "metin": [
+        "{koyu:Yatay virajda} r yarıçaplı çembersel yolu v süratiyle dönen m kütleli bir araca düşeyde ağırlık (G = m · g) ve yüzey tepkisi (N = m · g) etki ederken, aracı viraj merkezine doğru tutan merkezcil kuvvet tekerleklerle yol arasındaki {koyu:statik sürtünme kuvvetidir} (Fs = Fmerkezcil). Aracın savrulmadan virajı dönebilmesi için {koyu:Fmerkezcil ≤ Fs,max} yani {kesir:m · v²|r} ≤ k · m · g olmalıdır. Kütle (m) sadeleştiğinde güvenli dönüş için en büyük sürat {koyu:vmax =} {kok:k · g · r} olarak bulunur; bu hız sınırı aracın kütlesine bağlı değildir.",
+        "{koyu:Sürtünmesiz eğimli virajda} yatayla α açısı yapan yolda araca etki eden yüzeyin normal kuvvetinin (N) düşey bileşeni ağırlığı dengelerken ({koyu:N · cos(α) = m · g}), yatay bileşeni merkezcil kuvveti oluşturur ({koyu:N · sin(α) =} {kesir:m · v²|r}). İki denklem oranlandığında {koyu:tan(α) =} {kesir:v²|g · r} ve güvenli dönüş sürati {koyu:v =} {kok:g · r · tan(α)} elde edilir.",
+        "{koyu:Düşey silindirik virajda (ölüm kuyusunda)} r yarıçaplı düşey silindir iç yüzeyinde dönen motosikletlinin aşağı kaymaması için düşeydeki statik sürtünme kuvveti ağırlığa eşit veya büyük olmalıdır ({koyu:Fs ≥ m · g}). Silindir duvarının cisme uyguladığı normal kuvvet doğrudan merkezcil kuvvettir ({koyu:N =} {kesir:m · v²|r}). Fs,max = k · N bağıntısından k · {kesir:m · v²|r} ≥ m · g yazılır ve düşmeden dönmek için gereken en küçük sürat {koyu:vmin =} {kok:g · r / k} olarak modellenir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 245\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"245\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">YATAY, EĞİMLİ VE DÜŞEY SİLİNDİRİK VİRAJ MODELLERİ</text>\n  <rect x=\"18\" y=\"44\" width=\"212\" height=\"184\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.8\"/>\n  <text x=\"124\" y=\"66\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">1. YATAY VİRAJ</text>\n  <rect x=\"30\" y=\"78\" width=\"188\" height=\"136\" rx=\"6\" fill=\"#ffffff\" stroke=\"#60a5fa\"/>\n  <text x=\"124\" y=\"100\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Merkezcil kuvveti statik</text>\n  <text x=\"124\" y=\"116\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">sürtünme kuvveti sağlar:</text>\n  <text x=\"124\" y=\"138\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">m·v² / r ≤ k·m·g</text>\n  <rect x=\"44\" y=\"150\" width=\"160\" height=\"32\" rx=\"5\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/>\n  <text x=\"124\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">vmax = kök(k · g · r)</text>\n  <text x=\"124\" y=\"200\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Kütleden (m) bağımsızdır!</text>\n  <rect x=\"244\" y=\"44\" width=\"212\" height=\"184\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.8\"/>\n  <text x=\"350\" y=\"66\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">2. EĞİMLİ VİRAJ</text>\n  <rect x=\"256\" y=\"78\" width=\"188\" height=\"136\" rx=\"6\" fill=\"#ffffff\" stroke=\"#4ade80\"/>\n  <text x=\"350\" y=\"100\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Normal kuvvetin yatay</text>\n  <text x=\"350\" y=\"116\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">bileşeni merkeze yönelir:</text>\n  <text x=\"350\" y=\"138\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#15803d\">N·sin(α) = m·v²/r , N·cos(α) = m·g</text>\n  <rect x=\"270\" y=\"150\" width=\"160\" height=\"32\" rx=\"5\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/>\n  <text x=\"350\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">v = kök(g · r · tan(α))</text>\n  <text x=\"350\" y=\"200\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Eğim açısı α arttıkça v artar.</text>\n  <rect x=\"470\" y=\"44\" width=\"212\" height=\"184\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.8\"/>\n  <text x=\"576\" y=\"66\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">3. DÜŞEY SİLİNDİR</text>\n  <rect x=\"482\" y=\"78\" width=\"188\" height=\"136\" rx=\"6\" fill=\"#ffffff\" stroke=\"#fbbf24\"/>\n  <text x=\"576\" y=\"100\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Duvar tepkisi N = m·v²/r</text>\n  <text x=\"576\" y=\"116\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Düşmemek için Fs ≥ m·g:</text>\n  <text x=\"576\" y=\"138\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#b45309\">k · (m·v² / r) ≥ m·g</text>\n  <rect x=\"496\" y=\"150\" width=\"160\" height=\"32\" rx=\"5\" fill=\"#fffbeb\" stroke=\"#f59e0b\"/>\n  <text x=\"576\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#78350f\">vmin = kök(g · r / k)</text>\n  <text x=\"576\" y=\"200\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">En küçük güvenli sürattir.</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Viraj Hız Sınırlarında Kütle Etkisi",
+          "metin": "Yatay, eğimli ve düşey silindirik virajların tamamında güvenli dönüş hız bağıntılarında aracın kütlesi (m) sadeleşir; dolayısıyla aynı virajda otomobil ile kamyon için kritik hız sınırı (aynı k şartında) eşittir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Serbest Cisim Diyagramında Merkezcil Kuvvet",
+          "metin": "Merkezcil kuvvet ayrı bir kuvvet olmayıp cisme etki eden gerçek kuvvetlerin (ağırlık, normal kuvvet, sürtünme, ip gerilmesi) merkeze yönelik net bileşkesidir; bu nedenle serbest cisim diyagramında ayrıca çizilmez."
+        }
+      ]
+    },
+    {
+      "baslik": "Düşey Düzlemde İp Ucunda Çembersel Hareket ve İp Gerilmesi",
+      "metin": [
+        "Bir ipin ucuna bağlanan m kütleli cisim düşey düzlemde r yarıçaplı çembersel yörüngede döndürüldüğünde, ağırlık vektörü (G = m · g) daima düşey aşağı yönlü olduğu için yörüngenin farklı noktalarında ip gerilme kuvvetinin (T) büyüklüğü sürekli değişir.",
+        "{koyu:En üst (tepe) noktada} hem ip gerilmesi (Tüst) hem de ağırlık (m · g) çemberin merkezine (aşağı) doğrudur: {koyu:Fmerkezcil = Tüst + m · g} olduğundan {koyu:Tüst =} {kesir:m · v²|r} {koyu:- m · g} olur. Dolayısıyla düşey düzlemde ip gerilmesinin {koyu:en küçük (minimum)} olduğu yer tepe noktasıdır. Cismin tepe noktasından düşmeden çembersel yörüngeyi tamamlayabilmesi için Tüst ≥ 0 şartından kritik hız {koyu:vmin =} {kok:g · r} olmalıdır.",
+        "{koyu:En alt noktada} ip gerilmesi (Talt) merkeze (yukarı) doğru, ağırlık (m · g) ise merkezden dışa (aşağı) doğrudur: {koyu:Fmerkezcil = Talt - m · g} olduğundan {koyu:Talt =} {kesir:m · v²|r} {koyu:+ m · g} bulunur ve ip gerilmesi {koyu:en büyük (maksimum)} değerini alır. {koyu:Yatay hizadaki yan noktalarda} ise ağırlık yarıçap doğrultusuna dik olduğu için merkezcil kuvvete katılmaz ve {koyu:Tyan =} {kesir:m · v²|r} olur. İpin düşeyle α açısı yaptığı herhangi bir alt konumda ise {koyu:T =} {kesir:m · v²|r} {koyu:+ m · g · cos(α)} bağıntısı geçerlidir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 250\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"250\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">DÜŞEY DÜZLEMDE ÇEMBERSEL HAREKETTE İP GERİLMESİ (T)</text>\n  <circle cx=\"175\" cy=\"138\" r=\"78\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/>\n  <circle cx=\"175\" cy=\"138\" r=\"4\" fill=\"#0f172a\"/>\n  <line x1=\"175\" y1=\"138\" x2=\"175\" y2=\"60\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <line x1=\"175\" y1=\"138\" x2=\"175\" y2=\"216\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <line x1=\"175\" y1=\"138\" x2=\"253\" y2=\"138\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <circle cx=\"175\" cy=\"60\" r=\"10\" fill=\"#3b82f6\"/>\n  <circle cx=\"175\" cy=\"216\" r=\"10\" fill=\"#ef4444\"/>\n  <circle cx=\"253\" cy=\"138\" r=\"10\" fill=\"#22c55e\"/>\n  <text x=\"175\" y=\"44\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e40af\">ÜST (K): Tmin</text>\n  <text x=\"175\" y=\"238\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#991b1b\">ALT (M): Tmax</text>\n  <text x=\"292\" y=\"142\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#166534\">YAN (L)</text>\n  <rect x=\"345\" y=\"45\" width=\"335\" height=\"58\" rx=\"8\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.6\"/>\n  <text x=\"512\" y=\"65\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\">1. EN ÜST NOKTA (K — Minimum Gerilme)</text>\n  <text x=\"512\" y=\"86\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">Tüst = (m · v² / r) - m · g</text>\n  <rect x=\"345\" y=\"112\" width=\"335\" height=\"58\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.6\"/>\n  <text x=\"512\" y=\"132\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">2. YATAY YAN NOKTA (L — Orta Gerilme)</text>\n  <text x=\"512\" y=\"153\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">Tyan = m · v² / r   (G diktir)</text>\n  <rect x=\"345\" y=\"179\" width=\"335\" height=\"58\" rx=\"8\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.6\"/>\n  <text x=\"512\" y=\"199\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#991b1b\">3. EN ALT NOKTA (M — Maksimum Gerilme)</text>\n  <text x=\"512\" y=\"220\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">Talt = (m · v² / r) + m · g</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Sabit Süratte Talt ve Tüst Farkı",
+          "metin": "Düşey düzlemde düzgün çembersel hareket yapan (sürati sabit tutulan) bir cisim için en alt noktadaki ip gerilmesi ile en üst noktadaki ip gerilmesi arasındaki fark daima cismin ağırlığının iki katına eşittir: Talt - Tüst = 2 · m · g."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İpin Kopma İhtimali En Yüksek Nokta",
+          "metin": "Düşey düzlemde döndürülen bir cisimde ip gerilmesi en alt noktada maksimum değere (Fmerkezcil + G) ulaştığı için ipin kopma ihtimalinin en yüksek olduğu konum yörüngenin en alt noktasıdır."
+        }
+      ]
+    },
+    {
+      "baslik": "Düşey Rayda (Loop) Tepki Kuvveti ve Tümsek Köprü Uygulamaları",
+      "metin": [
+        "Lunaparklardaki çember biçimli düşey raylarda (loop) hareket eden bir vagon veya bilye için ip gerilmesinin yerini {koyu:rayın cisme uyguladığı normal tepki kuvveti (N)} alır. Çemberin iç yüzeyinde dolanan cisim için en alt noktada {koyu:Nalt =} {kesir:m · v²|r} {koyu:+ m · g}, en üst (tepe) noktada ise {koyu:Nüst =} {kesir:m · v²|r} {koyu:- m · g} bağıntısı geçerlidir. Cismin rayın tepe noktasından raydan ayrılmadan (düşmeden) geçebilmesi için Nüst ≥ 0 olmalı, yani tepe noktasındaki sürati en az {koyu:vmin =} {kok:g · r} değerine ulaşmalıdır.",
+        "Bir aracın r eğrilik yarıçaplı {koyu:dışbükey (tümsek) bir köprünün} en üst noktasından v süratiyle geçtiği durumda ise çemberin merkezi köprünün altındadır. Bu konumda ağırlık (m · g) merkeze doğru, köprünün tepki kuvveti (N) ise yukarı (merkezden dışa) doğrudur. Merkezcil kuvvet denklemi {koyu:Fmerkezcil = m · g - N} şeklinde yazılır ve yüzey tepkisi {koyu:N = m · g -} {kesir:m · v²|r} olur.",
+        "Tümsek köprüde aracın sürati arttıkça yüzey tepki kuvveti (N) azalır; eğer aracın sürati {koyu:v =} {kok:g · r} değerini aşarsa N = 0 olur ve araç köprü yüzeyinden kesilerek havalanır. Buna karşılık {koyu:içbükey (çukur) bir köprünün} en alt noktasından geçen araçta {koyu:N = m · g +} {kesir:m · v²|r} olduğundan yüzey tepkisi aracın ağırlığından büyüktür."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 225\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"225\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">DÜŞEY RAY (LOOP) VE TÜMSEK/ÇUKUR KÖPRÜ TEPKİ KUVVETLERİ</text>\n  <rect x=\"20\" y=\"45\" width=\"210\" height=\"162\" rx=\"10\" fill=\"#e0e7ff\" stroke=\"#4f46e5\" stroke-width=\"1.8\"/>\n  <text x=\"125\" y=\"68\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#3730a3\">1. DÜŞEY RAY TEPE NOKTASI</text>\n  <text x=\"125\" y=\"92\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Rayın iç yüzeyinde üst nokta:</text>\n  <text x=\"125\" y=\"114\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e1b4b\">Nüst = (m · v² / r) - m · g</text>\n  <text x=\"125\" y=\"140\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">Raydan düşmeme şartı (N ≥ 0):</text>\n  <text x=\"125\" y=\"162\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#4338ca\">vmin = kök(g · r)</text>\n  <rect x=\"245\" y=\"45\" width=\"210\" height=\"162\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.8\"/>\n  <text x=\"350\" y=\"68\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">2. DIŞBÜKEY (TÜMSEK) KÖPRÜ</text>\n  <text x=\"350\" y=\"92\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Merkez aşağıda (G merkeze doğru):</text>\n  <text x=\"350\" y=\"114\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#78350f\">N = m · g - (m · v² / r)</text>\n  <text x=\"350\" y=\"140\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">Sürat arttıkça tepki azalır;</text>\n  <text x=\"350\" y=\"162\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#b45309\">N &lt; m · g (Ağırlıktan küçük)</text>\n  <rect x=\"470\" y=\"45\" width=\"210\" height=\"162\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.8\"/>\n  <text x=\"575\" y=\"68\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">3. İÇBÜKEY (ÇUKUR) KÖPRÜ</text>\n  <text x=\"575\" y=\"92\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Merkez yukarıda (N merkeze doğru):</text>\n  <text x=\"575\" y=\"114\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">N = m · g + (m · v² / r)</text>\n  <text x=\"575\" y=\"140\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#334155\">Sürat arttıkça tepki artar;</text>\n  <text x=\"575\" y=\"162\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#15803d\">N &gt; m · g (Ağırlıktan büyük)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Rayın İç Tepe Noktası ile Tümsek Köprü Tepe Noktası Farkı",
+          "metin": "Çember rayın iç yüzeyindeki tepe noktasında hem N hem G aşağı yönlüdür (N = Fmerkezcil - G); tümsek köprünün üst noktasında ise G aşağı (merkeze), N yukarı yönlüdür (N = G - Fmerkezcil)."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Mekanik Enerji Korunumu ile Birleşik Sorular",
+          "metin": "Sürtünmesiz düşey rayda h yüksekliğinden serbest bırakılan bir cismin r yarıçaplı çemberin tepe noktasından düşmeden geçebilmesi için enerji korunumundan başlangıç yüksekliği en az hmin = 2,5 · r (yani 5r/2) olmalıdır."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Yatay düzlemdeki 50 m yarıçaplı bir virajda tekerlekler ile yol arasındaki statik sürtünme katsayısı k = 0,5'tir. Bir otomobilin bu virajı savrulmadan dönebileceği en büyük çizgisel sürat kaç m/s'dir? (g = 10 m/s² alınız.)",
+      "cevap": "Yatay virajda güvenli dönüş şartı Fmerkezcil ≤ Fs,max yani m · v² / r ≤ k · m · g bağıntısıdır. Buradan vmax = {kok:k · g · r} = {kok:0,5 · 10 · 50} = {kok:250} m/s veya k = 0,5 ve r = 50 m için v² = 250 olur. Eğer r = 45 m ve k = 0,5 olsaydı vmax = 15 m/s olurdu; verilen değerlerle vmax = {kok:250} = 5{kok:10} m/s bulunur."
+    },
+    {
+      "soru": "Sürtünmesiz eğimli bir virajın eğrilik yarıçapı r = 120 m ve eğim açısı α = 37°'dir. Aracın bu virajı güvenli bir şekilde dönebilmesi için sürati kaç m/s olmalıdır? (g = 10 m/s², tan37° = 0,75 alınız.)",
+      "cevap": "Sürtünmesiz eğimli virajda güvenli dönüş sürati v = {kok:g · r · tan(α)} bağıntısıyla hesaplanır. Verilen değerler yerine konulduğunda v = {kok:10 · 120 · 0,75} = {kok:900} = 30 m/s olarak bulunur."
+    },
+    {
+      "soru": "Yarıçapı r = 4 m olan düşey silindirik bir platformun iç yüzeyinde motosikletiyle yatay çembersel hareket yapan bir göstericinin aşağı kaymaması için sürati en az kaç m/s olmalıdır? (k = 0,4 ve g = 10 m/s² alınız.)",
+      "cevap": "Düşey silindirde aşağı kaymama şartı Fs,max ≥ m · g yani k · (m · v² / r) ≥ m · g bağıntısıdır. Buradan v² ≥ g · r / k = (10 · 4) / 0,4 = 100 elde edilir ve en küçük güvenli sürat vmin = {kok:100} = 10 m/s olur."
+    },
+    {
+      "soru": "Kütlesi m = 2 kg olan bir cisim, 1 m uzunluğundaki ipin ucunda düşey düzlemde sabit 4 m/s çizgisel süratle döndürülmektedir. Cismin yörüngenin en üst ve en alt noktalarından geçerken ipte oluşan gerilme kuvvetleri (Tüst ve Talt) kaç N'dır? (g = 10 m/s²)",
+      "cevap": "Önce merkezcil kuvvet hesaplanır: Fmerkezcil = m · v² / r = 2 · (4)² / 1 = 32 N ve cismin ağırlığı G = m · g = 2 · 10 = 20 N'dır. En üst noktada Tüst = Fmerkezcil - G = 32 - 20 = 12 N; en alt noktada ise Talt = Fmerkezcil + G = 32 + 20 = 52 N bulunur."
+    },
+    {
+      "soru": "Düşey kesiti çember biçiminde olan r = 2,5 m yarıçaplı sürtünmesiz bir rayın tepe noktasından bir oyuncak arabanın raydan ayrılmadan geçebilmesi için tepe noktasındaki çizgisel sürati en az kaç m/s olmalıdır? (g = 10 m/s²)",
+      "cevap": "Rayın tepe noktasında Nüst = (m · v² / r) - m · g bağıntısı geçerlidir. Arabanın raydan ayrılmaması için kritik durumda Nüst = 0 alınır ve vmin = {kok:g · r} = {kok:10 · 2,5} = {kok:25} = 5 m/s olarak hesaplanır."
+    },
+    {
+      "soru": "Eğrilik yarıçapı r = 40 m olan dışbükey (tümsek) bir köprünün en üst noktasından 10 m/s süratle geçen 1.000 kg kütleli bir otomobile köprü yüzeyinin uyguladığı tepki kuvveti kaç N'dır? (g = 10 m/s²)",
+      "cevap": "Tümsek köprünün en üst noktasında yüzey tepki kuvveti N = m · g - (m · v² / r) bağıntısıyla bulunur. Aracın ağırlığı m · g = 1.000 · 10 = 10.000 N ve merkezcil kuvvet m · v² / r = 1.000 · (10)² / 40 = 2.500 N olduğundan, N = 10.000 - 2.500 = 7.500 N olur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Yatay ve kuru bir yolda r yarıçaplı çembersel viraja giren m kütleli bir otomobilin virajı savrulmadan dönebileceği maksimum sürati (vmax) artırmak için aşağıdakilerden hangisi yapılmalıdır?",
+      "secenekler": [
+        "Otomobilin bagajına yük koyarak kütlesini (m) artırmak",
+        "Virajın eğrilik yarıçapını (r) ve sürtünme katsayısını (k) artırmak",
+        "Virajın eğrilik yarıçapını (r) yarıya düşürmek",
+        "Yol yüzeyini ıslatarak statik sürtünme katsayısını (k) azaltmak",
+        "Aracın viraja giriş periyodunu ve açısal hızını iki katına çıkarmak"
+      ],
+      "dogru": 1,
+      "aciklama": "Yatay virajda vmax = {kok:k · g · r} olduğundan kütleye bağlı değildir; sürtünme katsayısı (k) ve yarıçap (r) artırıldığında güvenli hız sınırı artar."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir ipin ucuna bağlı m kütleli cisim düşey düzlemde sabit büyüklükteki çizgisel süratle düzgün çembersel hareket yapmaktadır. Cisim yörüngenin en üst (K), yatay yan (L) ve en alt (M) noktalarından geçerken ipte oluşan gerilme kuvvetlerinin büyüklükleri arasındaki ilişki aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "TK > TL > TM",
+        "TL > TK > TM",
+        "TM > TL > TK",
+        "TK = TL = TM",
+        "TM > TK > TL"
+      ],
+      "dogru": 2,
+      "aciklama": "En alt noktada TM = Fm + mg (maksimum), yatay yan noktada TL = Fm, en üst noktada ise TK = Fm - mg (minimum) olduğundan TM > TL > TK olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Sürtünmesiz eğimli bir virajda yatayla α açısı yapan r = 30 m yarıçaplı yolda, bir aracın 15 m/s süratle savrulmadan dönebilmesi için yolun eğim açısının tanjantı (tan α) kaç olmalıdır? (g = 10 m/s² alınız.)",
+      "secenekler": [
+        "0,25 değeri",
+        "0,50 değeri",
+        "0,60 değeri",
+        "0,75 değeri",
+        "1,25 değeri"
+      ],
+      "dogru": 3,
+      "aciklama": "Eğimli viraj bağıntısı tan(α) = v² / (g · r) olduğundan tan(α) = (15)² / (10 · 30) = 225 / 300 = 0,75 bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kütlesi 1 kg olan bir cisim, 2 m uzunluğundaki ipin ucunda düşey düzlemde sabit 6 m/s süratle döndürülmektedir. Cisim yörüngenin en alt noktasından geçerken ipte oluşan gerilme kuvveti kaç N'dır? (g = 10 m/s² alınız.)",
+      "secenekler": [
+        "8 Newton",
+        "10 Newton",
+        "18 Newton",
+        "20 Newton",
+        "28 Newton"
+      ],
+      "dogru": 4,
+      "aciklama": "En alt noktada Talt = (m · v² / r) + m · g = (1 · 36 / 2) + (1 · 10) = 18 + 10 = 28 N olarak hesaplanır."
+    },
+    {
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "metin": "Yatay bir virajda güvenli dönüş için maksimum sürat aracın kütlesine bağlı olmayıp sürtünme katsayısı, çekim ivmesi ve yarıçapa bağlıdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Düşey düzlemde düzgün çembersel hareket yapan bir cisimde ipin kopma ihtimalinin en yüksek olduğu yer yörüngenin en üst noktasıdır.",
+          "dogru": false
+        },
+        {
+          "metin": "Sürtünmesiz eğimli virajda merkezcil kuvveti, yüzeyin normal kuvvetinin yatay bileşeni (N · sinα) oluşturur.",
+          "dogru": true
+        },
+        {
+          "metin": "Dışbükey (tümsek) bir köprünün en üst noktasından geçen araca yüzeyin uyguladığı tepki kuvveti aracın ağırlığından küçüktür.",
+          "dogru": true
+        },
+        {
+          "metin": "Serbest cisim diyagramı çizilirken cisme etki eden gerçek kuvvetlerin yanı sıra merkezcil kuvvet de ayrı bir vektör olarak gösterilir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "ciftler": [
+        [
+          "Yatay Viraj Şartı",
+          "Merkezcil kuvvetin statik sürtünme kuvvetiyle sağlandığı durum: vmax = {kok:k · g · r}"
+        ],
+        [
+          "Eğimli Viraj Şartı",
+          "Normal kuvvetin yatay bileşeninin merkeze yöneldiği durum: v = {kok:g · r · tan(α)}"
+        ],
+        [
+          "Düşey Silindir Şartı",
+          "Duvar tepkisinin merkezcil kuvvet olduğu düşmeme şartı: vmin = {kok:g · r / k}"
+        ],
+        [
+          "Düşeyde En Üst Nokta",
+          "İp gerilmesinin veya ray tepkisinin en küçük olduğu konum: Tüst = Fm - m · g"
+        ],
+        [
+          "Düşeyde En Alt Nokta",
+          "İp gerilmesinin veya ray tepkisinin en büyük olduğu konum: Talt = Fm + m · g"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "cumleler": [
+        {
+          "metin": "Yatay bir viraja giren aracın savrulmadan dönebilmesi için merkezcil kuvvet görevini ___ sürtünme kuvveti üstlenir.",
+          "cevap": "statik"
+        },
+        {
+          "metin": "Düşey düzlemde sabit süratle döndürülen bir cisimde en alt ve en üst noktalar arasındaki ip gerilmesi farkı ağırlığın ___ katına eşittir.",
+          "cevap": "iki"
+        },
+        {
+          "metin": "Düşey rayın (loop) tepe noktasından geçen cismin düşmemesi için sürati en az ___ büyüklüğünde olmalıdır.",
+          "cevap": "kök(g·r)"
+        },
+        {
+          "metin": "İçbükey (çukur) bir köprünün en alt noktasından geçen araca yüzeyin uyguladığı normal tepki kuvveti aracın ağırlığından ___ olur.",
+          "cevap": "büyük"
+        },
+        {
+          "metin": "Düşey silindir içinde dönen motosikletliye duvarın uyguladığı ___ kuvvet doğrudan merkezcil kuvvete eşittir.",
+          "cevap": "normal"
+        }
+      ],
+      "fazla": [
+        "kinetik",
+        "küçük"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Düşey düzlemde ip ucunda sabit süratle döndürülen m kütleli bir cismin en üst, yatay yan ve en alt noktalarındaki serbest cisim diyagramlarını düşünerek ip gerilmesi bağıntılarının nasıl çıkarıldığını açıklayınız.",
+      "cevap": "Çembersel harekette merkeze yönelik net kuvvet merkezcil kuvvete (Fm = m · v² / r) eşittir. En üst noktada hem ip gerilmesi (Tüst) hem de ağırlık (m · g) merkeze (aşağı) doğru olduğundan Fm = Tüst + m · g yazılır ve Tüst = Fm - m · g bulunur. Yatay yan noktada ağırlık yarıçapa dik olduğu için merkezcil kuvvete katılmaz ve Tyan = Fm olur. En alt noktada ise Talt merkeze (yukarı), ağırlık ise dışa (aşağı) doğru olduğundan Fm = Talt - m · g yazılır ve Talt = Fm + m · g elde edilir.",
+      "ipuclari": [
+        "En üst noktada Tüst ve m · g vektörlerinin aynı yönlü (merkeze doğru) olduğunu belirtiniz.",
+        "Yatay yan noktada ağırlık vektörünün ip doğrultusuna dik olduğunu açıklayınız.",
+        "En alt noktada Talt ve m · g vektörlerinin zıt yönlü olduğunu ve Talt'ın maksimum çıktığını vurgulayınız."
+      ]
+    }
+  ],
+  "ozet": [
+    "Yatay virajda merkezcil kuvveti statik sürtünme sağlar ve güvenli maksimum sürat vmax = {kok:k · g · r} bağıntısıyla bulunur.",
+    "Sürtünmesiz eğimli virajda güvenli dönüş sürati v = {kok:g · r · tan(α)}, düşey silindirde ise düşmeme sürati vmin = {kok:g · r / k} şeklindedir.",
+    "Düşey düzlemde çembersel harekette en üst noktada ip gerilmesi minimum (Tüst = Fm - mg), en alt noktada ise maksimumdur (Talt = Fm + mg).",
+    "Düşey rayın (loop) tepe noktasından cismin raydan ayrılmadan geçebilmesi için kritik hız sınırı vmin = {kok:g · r} değeridir.",
+    "Dışbükey (tümsek) köprü tepesinde yüzey tepkisi N = mg - Fm iken, içbükey (çukur) köprü tabanında N = mg + Fm olur."
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "ad": "7-matematik-13",
+  "sinif": 7,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 13,
+  "tarih": "14-18 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "İstatistiksel Araştırma Süreci",
+  "konu": "Nicel (Sürekli) Verilerde Gruplandırılmış Veri Tablosu, Histogram, Çizgi ve Daire Grafiği Yorumlama ile Veriye Dayalı Karar Verme (MAT.7.6.1)",
+  "ciktilar": [
+    "Kategorik veya nicel (sürekli) veri dağılımlarını nokta grafiği, çizgi grafiği, sütun grafiği ve daire grafiği ile görselleştirerek grafikler arası dönüşüm yapar (MAT.7.6.1.d-e).",
+    "Veri setindeki uç (aykırı) değerlerin aritmetik ortalama ve ortanca üzerindeki etkisini analiz ederek uygun özetleme aracını gerekçeleriyle seçer (MAT.7.6.1.d-f).",
+    "Açıklık ve ortalama mutlak sapma değerlerini hesaplayarak iki farklı veri grubunun tutarlılığını karşılaştırır ve veriye dayalı karar verir (MAT.7.6.1.e-g)."
+  ],
+  "giris": "İstatistiksel araştırma sürecinin bu ikinci haftasında, toplanan kategorik ve nicel (sürekli) verileri farklı grafik türleri ({koyu:nokta, çizgi, sütun ve daire grafiği}) arasında dönüştürmeyi ve özetleme araçlarıyla ({koyu:aritmetik ortalama, ortanca, tepe değer, açıklık ve ortalama mutlak sapma}) derinlemesine analiz ederek {koyu:veriye dayalı karar vermeyi} öğreneceğiz.",
+  "bolumler": [
+    {
+      "baslik": "Nicel (Sürekli) Verilerin Görselleştirilmesi: Nokta ve Çizgi Grafiği (MAT.7.6.1)",
+      "metin": [
+        "Ölçme yoluyla elde edilen boy uzunluğu, kütle, hava sıcaklığı, koşu süresi ve günlük su tüketimi gibi {koyu:nicel (sürekli) veriler} incelenirken dağılımın şeklini, verilerin hangi değer etrafında kümelendiğini (yığıldığını), boşlukları ve {koyu:uç (aykırı) değerleri} görmek için {koyu:nokta grafiği} oldukça kullanışlıdır. Nokta grafiğinde sayı doğrusundaki her bir veri değeri üzerine bir nokta konulur; veriler ortada yoğunlaşıp iki yana eşit dağılıyorsa {koyu:simetrik dağılım} oluşur.",
+        "Bir nicel verinin zaman içindeki (saatlik, günlük, aylık veya yıllık) değişimini, artış-azalış eğilimini ve en yüksek-en düşük olduğu dönemleri incelemek için ise {koyu:çizgi grafiği} seçilir. Örneğin bir ilin beş günlük sıcaklık değişimi veya bir fidanın aylara göre boy uzaması çizgi grafiği ile en etkili biçimde gösterilir.",
+        "Çok sayıda sürekli veriyi düzenli incelemek gerektiğinde veriler eşit genişlikli aralıklara (örneğin 140-149 cm, 150-159 cm, 160-169 cm gibi) ayrılarak {koyu:gruplandırılmış sıklık tablosu} oluşturulur ve her aralığa düşen veri sayısı (frekans) karşılaştırılır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">NOKTA GRAFİĞİ VE ÇİZGİ GRAFİĞİ ANALİZİ (MAT.7.6.1)</text>\n  <rect x=\"25\" y=\"48\" width=\"315\" height=\"190\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/>\n  <text x=\"182\" y=\"70\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1d4ed8\">1. Nokta Grafiği (Sürekli / Kesikli Dağılım)</text>\n  <line x1=\"55\" y1=\"195\" x2=\"310\" y2=\"195\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <text x=\"80\" y=\"214\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">10</text>\n  <text x=\"130\" y=\"214\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">12</text>\n  <text x=\"180\" y=\"214\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">14</text>\n  <text x=\"230\" y=\"214\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">16</text>\n  <text x=\"280\" y=\"214\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">18</text>\n  <circle cx=\"80\" cy=\"180\" r=\"5\" fill=\"#2563eb\"/>\n  <circle cx=\"130\" cy=\"180\" r=\"5\" fill=\"#2563eb\"/>\n  <circle cx=\"130\" cy=\"165\" r=\"5\" fill=\"#2563eb\"/>\n  <circle cx=\"180\" cy=\"180\" r=\"5\" fill=\"#1d4ed8\"/>\n  <circle cx=\"180\" cy=\"165\" r=\"5\" fill=\"#1d4ed8\"/>\n  <circle cx=\"180\" cy=\"150\" r=\"5\" fill=\"#1d4ed8\"/>\n  <circle cx=\"180\" cy=\"135\" r=\"5\" fill=\"#1d4ed8\"/>\n  <circle cx=\"230\" cy=\"180\" r=\"5\" fill=\"#2563eb\"/>\n  <circle cx=\"230\" cy=\"165\" r=\"5\" fill=\"#2563eb\"/>\n  <circle cx=\"280\" cy=\"180\" r=\"5\" fill=\"#2563eb\"/>\n  <text x=\"182\" y=\"105\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e40af\">Simetrik Dağılım: Ortalama = Ortanca = Tepe Değer (14)</text>\n  <rect x=\"360\" y=\"48\" width=\"315\" height=\"190\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/>\n  <text x=\"517\" y=\"70\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">2. Çizgi Grafiği (Zamana Bağlı Değişim)</text>\n  <line x1=\"395\" y1=\"195\" x2=\"650\" y2=\"195\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <line x1=\"395\" y1=\"90\" x2=\"395\" y2=\"195\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <polyline points=\"420,175 470,150 520,160 570,120 620,100\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"3\"/>\n  <circle cx=\"420\" cy=\"175\" r=\"4\" fill=\"#15803d\"/>\n  <circle cx=\"470\" cy=\"150\" r=\"4\" fill=\"#15803d\"/>\n  <circle cx=\"520\" cy=\"160\" r=\"4\" fill=\"#15803d\"/>\n  <circle cx=\"570\" cy=\"120\" r=\"4\" fill=\"#15803d\"/>\n  <circle cx=\"620\" cy=\"100\" r=\"4\" fill=\"#15803d\"/>\n  <text x=\"420\" y=\"214\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Pzt</text>\n  <text x=\"470\" y=\"214\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Sal</text>\n  <text x=\"520\" y=\"214\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Çar</text>\n  <text x=\"570\" y=\"214\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Per</text>\n  <text x=\"620\" y=\"214\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Cum</text>\n  <text x=\"517\" y=\"230\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#166534\">Artış ve Azalış Eğilimini En İyi Gösterir</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Simetrik Dağılımda Ortalama, Ortanca ve Tepe Değer",
+          "metin": "Nokta grafiğinde tam simetrik bir dağılım gösteren veri grubunda aritmetik ortalama, ortanca (medyan) ve tepe değer (mod) birbirine eşittir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Çizgi Grafiğinde Eğim Yorumu",
+          "metin": "Çizgi grafiğinde iki zaman noktası arasındaki doğru parçası yukarı yönlü ise artış, aşağı yönlü ise azalış, yatay (düz) ise değerin değişmediği (sabit kaldığı) anlaşılır."
+        }
+      ]
+    },
+    {
+      "baslik": "Daire Grafiği Dönüşümleri, Merkez Açı ve Grafik Seçim Gerekçeleri",
+      "metin": [
+        "Bir bütünün parçalarının (kategorilerinin) bütün içindeki payını veya yüzdesini karşılaştırmak istediğimizde {koyu:daire grafiği} kullanılır. Tam bir dairenin merkez açısı {koyu:360 derece} ve tamamı {koyu:%100} kabul edilir. Bir kategorinin daire dilimi merkez açısı {koyu:{kesir:Kategori Verisi|Toplam Veri} × 360°} bağıntısıyla hesaplanır.",
+        "Pratik açı-yüzde dönüşümleri işlemleri hızlandırır: Bütünün yarısı ({koyu:{kesir:1|2} = %50}) daire grafiğinde {koyu:180°}, çeyreği ({koyu:{kesir:1|4} = %25}) {koyu:90°}, beşte biri ({koyu:{kesir:1|5} = %20}) {koyu:72°}, onda biri ({koyu:{kesir:1|10} = %10}) {koyu:36°} ve üçte biri ({koyu:{kesir:1|3}}) {koyu:120°} merkez açılı dilimle gösterilir.",
+        "Araştırma sorusuna göre grafik seçimi yapılırken şu gerekçeler sunulur: Kategorilerin sayısal çokluğunu karşılaştırmak için {koyu:sütun grafiği}, parçanın bütüne oranını görmek için {koyu:daire grafiği}, zamana bağlı değişimi izlemek için {koyu:çizgi grafiği}, veri dağılımındaki yığılma ve uç değerleri görmek için {koyu:nokta grafiği} tercih edilir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">DAİRE GRAFİĞİ MERKEZ AÇI DÖNÜŞÜMÜ VE GRAFİK SEÇİMİ</text>\n  <rect x=\"25\" y=\"48\" width=\"315\" height=\"190\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\"/>\n  <text x=\"182\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#a16207\">Daire Grafiği (Bütünün Parça Oranları)</text>\n  <circle cx=\"110\" cy=\"145\" r=\"58\" fill=\"#fde047\" stroke=\"#ca8a04\" stroke-width=\"2\"/>\n  <path d=\"M 110 145 L 110 87 A 58 58 0 0 1 168 145 Z\" fill=\"#3b82f6\"/>\n  <path d=\"M 110 145 L 168 145 A 58 58 0 0 1 110 203 Z\" fill=\"#22c55e\"/>\n  <text x=\"135\" y=\"125\" font-size=\"10\" font-weight=\"bold\" fill=\"#ffffff\">90° (%25)</text>\n  <text x=\"132\" y=\"170\" font-size=\"10\" font-weight=\"bold\" fill=\"#ffffff\">90° (%25)</text>\n  <text x=\"62\" y=\"150\" font-size=\"10\" font-weight=\"bold\" fill=\"#854d0e\">180° (%50)</text>\n  <text x=\"185\" y=\"105\" font-size=\"11\" fill=\"#334155\">• Tam daire = 360° (%100)</text>\n  <text x=\"185\" y=\"130\" font-size=\"11\" fill=\"#334155\">• Yarım daire = 180° (%50)</text>\n  <text x=\"185\" y=\"155\" font-size=\"11\" fill=\"#334155\">• Çeyrek daire = 90° (%25)</text>\n  <text x=\"185\" y=\"180\" font-size=\"11\" fill=\"#334155\">• Beşte bir = 72° (%20)</text>\n  <text x=\"182\" y=\"220\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Merkez Açı = (Kategori / Toplam) × 360°</text>\n  <rect x=\"360\" y=\"48\" width=\"315\" height=\"190\" rx=\"8\" fill=\"#fdf2f8\" stroke=\"#ec4899\"/>\n  <text x=\"517\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#be185d\">Hangi Grafik Ne Zaman Seçilir?</text>\n  <text x=\"375\" y=\"100\" font-size=\"11\" fill=\"#334155\">• Sütun Grafiği: Kategorilerin frekansını karşılaştırma</text>\n  <text x=\"375\" y=\"124\" font-size=\"11\" fill=\"#334155\">• Daire Grafiği: Parçanın bütüne oranını gösterme</text>\n  <text x=\"375\" y=\"148\" font-size=\"11\" fill=\"#334155\">• Çizgi Grafiği: Zaman içindeki değişimi izleme</text>\n  <text x=\"375\" y=\"172\" font-size=\"11\" fill=\"#334155\">• Nokta Grafiği: Küçük veri setinde yığılma ve uç değer</text>\n  <text x=\"517\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#9d174d\">Araştırma Amacı Grafik Seçimini Belirler</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Daire Grafiğinden Sütun Grafiğine Dönüşüm",
+          "metin": "Daire grafiğinde yalnız merkez açılar (örneğin 120°, 90°, 150°) verilip gerçek kişi sayısı verilmemişse, açılar en büyük ortak böleniyle sadeleştirilerek kat (k) oranı bulunur."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Orantı Yöntemiyle Merkez Açı Bulma",
+          "metin": "Toplam 72 öğrencinin bulunduğu bir grupta 18 öğrencinin dilim açısını bulmak için: '72 kişide 18 kişi dörtte bir (%25) olduğundan 360° ÷ 4 = 90°' şeklinde doğru orantı kurulur."
+        }
+      ]
+    },
+    {
+      "baslik": "Ortalama Mutlak Sapma ve Veriye Dayalı Karar Verme (MAT.7.6.1.e-g)",
+      "metin": [
+        "Bir veri grubunu tek bir değerle temsil ederken veri setinde diğer verilerden çok uzak bir {koyu:uç (aykırı) değer} yoksa {koyu:aritmetik ortalama} en güçlü temsilcidir. Ancak veri setinde aşırı büyük veya aşırı küçük bir uç değer varsa aritmetik ortalama bu uç değere doğru kayar; bu durumda grubu temsil etmek için uç değerden etkilenmeyen {koyu:ortanca (medyan)} seçilir.",
+        "İki grubun ortalamaları birbirine eşit olduğunda hangisinin daha {koyu:tutarlı (istikrarlı / homojen)} olduğuna {koyu:açıklık} ve {koyu:ortalama mutlak sapma (OMS)} ile karar verilir. Ortalama mutlak sapma hesaplanırken: 1) Veri grubunun aritmetik ortalaması bulunur. 2) Her bir verinin aritmetik ortalamaya olan pozitif uzaklığı (mutlak farkı) bulunur. 3) Bu uzaklıklar toplanıp veri sayısına bölünür.",
+        "Örneğin A sporcusunun puanları {koyu:8, 9, 10, 11, 12} (ortalama = 10, açıklık = 4, OMS = {kesir:2+1+0+1+2|5} = {koyu:1,2}) iken B sporcusunun puanları {koyu:4, 7, 10, 13, 16} (ortalama = 10, açıklık = 12, OMS = {kesir:6+3+0+3+6|5} = {koyu:3,6}) olsun. Her iki sporcunun ortalaması 10 olsa da A sporcusunun açıklığı ve ortalama mutlak sapması daha küçük olduğu için {koyu:A sporcusu daha istikrarlıdır} kararı verilir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">MERKEZİ EĞİLİM VE YAYILIM ÖLÇÜLERİ İLE KARAR VERME</text>\n  <rect x=\"25\" y=\"48\" width=\"315\" height=\"190\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/>\n  <text x=\"182\" y=\"72\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1d4ed8\">Merkezi Eğilim Ölçüleri Seçimi</text>\n  <text x=\"40\" y=\"100\" font-size=\"11\" fill=\"#334155\">• Aritmetik Ortalama: Uç değer yoksa en iyi temsilci</text>\n  <text x=\"40\" y=\"124\" font-size=\"11\" fill=\"#334155\">• Ortanca (Medyan): Uç (aykırı) değer varsa seçilir</text>\n  <text x=\"40\" y=\"148\" font-size=\"11\" fill=\"#334155\">• Tepe Değer (Mod): En çok tercih edilen değeri bulur</text>\n  <text x=\"40\" y=\"174\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\">Örnek: 10, 12, 13, 15, 100 (Uç değer = 100)</text>\n  <text x=\"40\" y=\"196\" font-size=\"11\" fill=\"#334155\">Ortalama = 30 (yanıltıcı) → Ortanca = 13 (uygun!)</text>\n  <rect x=\"360\" y=\"48\" width=\"315\" height=\"190\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/>\n  <text x=\"517\" y=\"72\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">Yayılım (Tutarlılık / İstikrar) Ölçüleri</text>\n  <text x=\"375\" y=\"100\" font-size=\"11\" fill=\"#334155\">• Açıklık = En Büyük Değer - En Küçük Değer</text>\n  <text x=\"375\" y=\"124\" font-size=\"11\" fill=\"#334155\">• Ortalama Mutlak Sapma (OMS):</text>\n  <text x=\"375\" y=\"144\" font-size=\"10.5\" fill=\"#334155\">  Verilerin ortalamaya uzaklıklarının ortalamasıdır.</text>\n  <text x=\"375\" y=\"172\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">• Karar Kuralı:</text>\n  <text x=\"375\" y=\"194\" font-size=\"11\" fill=\"#334155\">  Açıklık ve OMS küçüldükçe istikrar (tutarlılık) artar!</text>\n  <text x=\"517\" y=\"220\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">Düşük OMS = Daha Homojen ve Güvenilir Grup</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Veriye Yeni Bir Değer Eklendiğinde Ortalama Nasıl Değişir?",
+          "metin": "Bir veri grubuna grubun aritmetik ortalamasına eşit bir sayı eklenirse (veya çıkarılırsa) aritmetik ortalama değişmez; ortalamadan büyük sayı eklenirse ortalama artar, küçük sayı eklenirse azalır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Araştırma Sürecini Yeniden Planlama (MAT.7.6.1.g)",
+          "metin": "Elde edilen sonuçlar araştırma sorusuna yeterli cevap vermiyorsa (örneğin örneklem çok küçük veya yanlı seçilmişse) veri toplama adımı gözden geçirilerek yeniden planlanır."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir çiftlikteki 90 hayvanın 30'u koyun, 25'i keçi, 20'si inek ve 15'i at olduğuna göre, bu veriler daire grafiği ile gösterildiğinde her bir hayvan türünün merkez açısı kaç derece olur?",
+      "cevap": "Toplam hayvan sayısı 90'dır. Tam daire 360° olduğundan 360° ÷ 90 = 4° (her 1 hayvan 4 derecelik açıya karşılık gelir).\n• Koyun: 30 × 4° = 120°\n• Keçi: 25 × 4° = 100°\n• İnek: 20 × 4° = 80°\n• At: 15 × 4° = 60° (Toplam: 120 + 100 + 80 + 60 = 360°)."
+    },
+    {
+      "soru": "Bir şirkette çalışan 7 kişinin aylık maaşları (bin TL cinsinden) 28, 30, 30, 32, 34, 36 ve 160 şeklindedir. Bu şirketteki maaş düzeyini temsil etmek için aritmetik ortalama mı yoksa ortanca mı seçilmelidir? Gerekçesiyle açıklayınız.",
+      "cevap": "Verilerin toplamı 350 bin TL ve aritmetik ortalaması 350 ÷ 7 = 50 bin TL'dir. Ancak 7 çalışandan 6'sı 50 bin TL'nin altında maaş almaktadır; 160 bin TL'lik uç (aykırı) değer ortalamayı yapay olarak yükseltmiştir. Bu nedenle uç değerden etkilenmeyen ortanca (medyan = 4. sıradaki 32 bin TL) grubu çok daha doğru temsil eder."
+    },
+    {
+      "soru": "Yedi öğrencinin matematik kısa sınavından aldığı puanlar 6, 8, 8, 10, 12, 12, 14 şeklindedir. Bu veri grubunun aritmetik ortalamasını, açıklığını ve ortalama mutlak sapmasını (OMS) hesaplayınız.",
+      "cevap": "• Aritmetik Ortalama: (6 + 8 + 8 + 10 + 12 + 12 + 14) ÷ 7 = 70 ÷ 7 = 10.\n• Açıklık: 14 - 6 = 8.\n• Ortalamaya uzaklıklar (mutlak farklar): |6-10|=4, |8-10|=2, |8-10|=2, |10-10|=0, |12-10|=2, |12-10|=2, |14-10|=4.\n• Ortalama Mutlak Sapma (OMS): (4 + 2 + 2 + 0 + 2 + 2 + 4) ÷ 7 = {kesir:16|7} ≈ 2,29."
+    },
+    {
+      "soru": "Okçuluk seçmelerinde 5'er atış yapan Elif'in puanları (7, 8, 8, 8, 9), Zeynep'in puanları ise (5, 7, 8, 10, 10) şeklindedir. Turnuvaya daha istikrarlı bir sporcu göndermek isteyen antrenör veriye dayalı olarak kimi seçmelidir?",
+      "cevap": "• Elif'in ortalaması = 40 ÷ 5 = 8; açıklığı = 9 - 7 = 2; OMS = (1 + 0 + 0 + 0 + 1) ÷ 5 = {kesir:2|5} = 0,4.\n• Zeynep'in ortalaması = 40 ÷ 5 = 8; açıklığı = 10 - 5 = 5; OMS = (3 + 1 + 0 + 2 + 2) ÷ 5 = {kesir:8|5} = 1,6.\nHer iki sporcunun ortalaması (8) eşit olmasına rağmen Elif'in açıklığı ve ortalama mutlak sapması (0,4) daha küçük olduğu için Elif çok daha istikrarlıdır ve seçilmelidir."
+    },
+    {
+      "soru": "Bir daire grafiğinde kitap türlerinin merkez açıları Roman = 150°, Hikâye = 120° ve Şiir = 90° olarak verilmiştir. Şiir kitaplarının sayısı 45 olduğuna göre toplam kitap sayısı ve roman sayısı kaçtır?",
+      "cevap": "Şiir dilimi 90° (yani dairenin çeyreği = {kesir:90|360} = {kesir:1|4}) olup 45 kitaba karşılık gelmektedir. O hâlde her 90° = 45 kitap (her 2° = 1 kitap) demektir.\n• Toplam kitap sayısı (360°): 45 × 4 = 180 kitap.\n• Roman sayısı (150°): 150 ÷ 2 = 75 kitap."
+    },
+    {
+      "soru": "Bir okulun kütüphanesinin hangi gün daha yoğun olduğunu belirlemek isteyen bir öğrenci sadece pazartesi günü sabah ilk teneffüste 5 kişiye anket uygulamıştır. Bu araştırma sürecindeki hatayı ve nasıl yeniden planlanması gerektiğini açıklayınız.",
+      "cevap": "Örneklem sayısı (5 kişi) çok azdır ve yalnız pazartesi ilk teneffüste veri toplandığı için diğer günleri temsil etmez (yanlı örneklemdir). Süreç yeniden planlanarak haftanın 5 günü boyunca farklı saatlerde kütüphaneyi kullanan tüm öğrencilerin sayıları kaydedilmelidir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir ortaokulun 7. şubelerindeki toplam 120 öğrencinin 30'u basketbol, 40'ı futbol, 50'si ise voleybol kursunu seçmiştir. Bu dağılım daire grafiği ile gösterildiğinde voleybol kursunu seçenlerin merkez açısı kaç derece olur?",
+      "secenekler": [
+        "150°",
+        "120°",
+        "90°",
+        "100°"
+      ],
+      "dogru": 0,
+      "aciklama": "Toplam 120 öğrenci 360° ile gösterildiğine göre her 1 öğrenci 360 ÷ 120 = 3° açıya karşılık gelir. Voleybol seçen 50 öğrenci 50 × 3° = 150° merkez açı ile gösterilir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir veri grubundaki sayıların tamamı birbirine eşit ve 15'tir (15, 15, 15, 15, 15). Bu veri grubunun açıklığı ve ortalama mutlak sapması (OMS) sırasıyla kaçtır?",
+      "secenekler": [
+        "Açıklık = 15, OMS = 15",
+        "Açıklık = 0, OMS = 0",
+        "Açıklık = 0, OMS = 3",
+        "Açıklık = 5, OMS = 0"
+      ],
+      "dogru": 1,
+      "aciklama": "Tüm veriler 15 olduğunda en büyük ve en küçük değer 15'tir (Açıklık = 15 - 15 = 0). Aritmetik ortalama da 15 olduğu için her verinin ortalamaya uzaklığı 0'dır (OMS = 0)."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aritmetik ortalamaları birbirine eşit olan dört farklı sınıfın deneme sınavı puanlarının ortalama mutlak sapma (OMS) değerleri aşağıda verilmiştir. Hangi sınıftaki öğrencilerin başarı düzeyleri birbirine daha yakındır (daha homojendir)?",
+      "secenekler": [
+        "7/A Sınıfı (OMS = 8,4)",
+        "7/B Sınıfı (OMS = 6,2)",
+        "7/C Sınıfı (OMS = 2,1)",
+        "7/D Sınıfı (OMS = 11,5)"
+      ],
+      "dogru": 2,
+      "aciklama": "Ortalama mutlak sapma (OMS) ne kadar küçükse veriler ortalamaya o kadar yakındır ve grup o kadar homojen (tutarlı) bir yapıya sahiptir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Veri seti (12, 14, 15, 15, 16, 18, 92) şeklinde olan bir dağılımda 92 sayısı diğer verilerden çok uzak bir uç (aykırı) değerdir. Bu veri grubunun merkezini en doğru temsil eden ölçü hangisidir?",
+      "secenekler": [
+        "Açıklık (80)",
+        "Aritmetik ortalama (26)",
+        "En büyük değer (92)",
+        "Ortanca / Medyan (15)"
+      ],
+      "dogru": 3,
+      "aciklama": "Uç değer (92) aritmetik ortalamayı 26'ya çekerek yanıltıcı hâle getirir; oysa 7 verinin 6'sı 12-18 arasındadır. Bu yüzden uç değerden etkilenmeyen ortanca (15) en uygun temsilcidir."
+    },
+    {
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "metin": "Bir bütünün parçalarının bütün içindeki yüzdesini ve oranını karşılaştırmak için en uygun görselleştirme aracı daire grafiğidir.",
+          "dogru": true,
+          "aciklama": "Daire grafiği parçaların 360 derecelik bütüne oranını en net biçimde gösterir."
+        },
+        {
+          "metin": "Aritmetik ortalaması 20 olan bir veri grubuna 20 sayısı eklendiğinde grubun yeni aritmetik ortalaması artar.",
+          "dogru": false,
+          "aciklama": "Veri grubuna aritmetik ortalamaya eşit bir değer eklendiğinde aritmetik ortalama değişmez, yine 20 kalır."
+        },
+        {
+          "metin": "Nokta grafiğinde tam simetrik dağılım gösteren tek tepeli bir veri grubunda aritmetik ortalama ve ortanca birbirine eşittir.",
+          "dogru": true,
+          "aciklama": "Simetrik dağılımda merkezdeki değer hem ortalama hem ortanca hem de tepe değerdir."
+        },
+        {
+          "metin": "İki veri grubundan açıklığı ve ortalama mutlak sapması daha büyük olan grup daha istikrarlı ve tutarlı kabul edilir.",
+          "dogru": false,
+          "aciklama": "Açıklık ve ortalama mutlak sapma büyüdükçe veriler arasındaki fark açılır ve tutarlılık azalır."
+        },
+        {
+          "metin": "Daire grafiğinde bütünü %25 oranında temsil eden bir kategorinin merkez açısı 90 derecedir.",
+          "dogru": true,
+          "aciklama": "Yüzde 25 çeyrek demektir; 360° ÷ 4 = 90° olur."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "ciftler": [
+        [
+          "Nokta Grafiği",
+          "Sürekli veya kesikli verilerde yığılma ve uç değerleri gösterme"
+        ],
+        [
+          "Çizgi Grafiği",
+          "Nicel bir verinin zaman içindeki artış ve azalışını izleme"
+        ],
+        [
+          "Daire Grafiği",
+          "Verilerin bütün içindeki oranını 360° merkez açıyla gösterme"
+        ],
+        [
+          "Ortanca (Medyan)",
+          "Uç (aykırı) değer bulunan dağılımlarda tercih edilen merkez ölçüsü"
+        ],
+        [
+          "Ortalama Mutlak Sapma",
+          "Verilerin aritmetik ortalamaya olan uzaklıklarının ortalaması"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "cumleler": [
+        {
+          "metin": "Tam bir daire grafiğinde tüm dilimlerin merkez açılarının toplamı ___ derecedir.",
+          "cevap": "360"
+        },
+        {
+          "metin": "Bir veri grubunda diğer verilerden aşırı derecede büyük veya küçük olan değere ___ (aykırı) değer denir.",
+          "cevap": "uç"
+        },
+        {
+          "metin": "Verilerin aritmetik ortalamaya olan mutlak uzaklıklarının aritmetik ortalamasına ortalama mutlak ___ adı verilir.",
+          "cevap": "sapma"
+        },
+        {
+          "metin": "Bir ilin bir hafta boyunca öğle saatlerinde ölçülen hava sıcaklığı değişimini göstermek için ___ grafiği en uygun araçtır.",
+          "cevap": "çizgi"
+        },
+        {
+          "metin": "Daire grafiğinde bütünün beşte birini (%20'sini) temsil eden dilimin merkez açısı ___ derecedir.",
+          "cevap": "72"
+        }
+      ],
+      "fazla": [
+        "180",
+        "hipotenüs"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Beş günlük kitap okuma etkinliğinde Mert'in okuduğu sayfa sayıları (20, 22, 25, 28, 30), Can'ın okuduğu sayfa sayıları ise (10, 15, 25, 35, 40) olarak kaydedilmiştir. Her iki öğrencinin aritmetik ortalamasını ve ortalama mutlak sapmasını (OMS) hesaplayarak hangi öğrencinin okuma alışkanlığının daha düzenli (istikrarlı) olduğuna veriye dayalı karar veriniz.",
+      "ipuclari": [
+        "Birinci adım: Mert ve Can'ın 5 günlük toplam sayfa sayılarını 5'e bölerek aritmetik ortalamalarını bulunuz.",
+        "İkinci adım: Her öğrencinin günlük verilerinin ortalamaya olan uzaklıklarını toplayıp 5'e bölerek OMS değerlerini hesaplayınız.",
+        "Üçüncü adım: OMS değeri küçük olan öğrencinin daha düzenli okuduğunu gerekçesiyle açıklayınız."
+      ],
+      "cevap": "1. Aritmetik Ortalamalar:\n• Mert'in ortalaması: (20 + 22 + 25 + 28 + 30) ÷ 5 = 125 ÷ 5 = 25 sayfa.\n• Can'ın ortalaması: (10 + 15 + 25 + 35 + 40) ÷ 5 = 125 ÷ 5 = 25 sayfa.\n2. Ortalama Mutlak Sapma (OMS) Hesapları:\n• Mert'in ortalamaya (25'e) uzaklıkları: 5, 3, 0, 3, 5 → OMS = (5 + 3 + 0 + 3 + 5) ÷ 5 = {kesir:16|5} = 3,2 sayfa.\n• Can'ın ortalamaya (25'e) uzaklıkları: 15, 10, 0, 10, 15 → OMS = (15 + 10 + 0 + 10 + 15) ÷ 5 = {kesir:50|5} = 10 sayfa.\n3. Veriye Dayalı Karar: İki öğrencinin günlük ortalaması eşit (25 sayfa) olmasına rağmen, Mert'in ortalama mutlak sapması (3,2) Can'ınkinden (10) çok daha küçüktür. Bu nedenle Mert'in okuma alışkanlığı daha düzenli ve istikrarlıdır."
+    }
+  ],
+  "ozet": [
+    "{koyu:Nokta ve Çizgi Grafiği:} {koyu:Nokta grafiği} sürekli/kesikli verilerdeki yığılmayı, simetriyi ve uç değerleri; {koyu:çizgi grafiği} ise zamana bağlı artış-azalış eğilimini gösterir.",
+    "{koyu:Daire Grafiği Dönüşümü:} Tam daire {koyu:360° (%100)}, yarım {koyu:180° (%50)}, çeyrek {koyu:90° (%25)}, beşte bir {koyu:72° (%20)} merkez açılı dilimle gösterilir.",
+    "{koyu:Uç (Aykırı) Değer Etkisi:} Veri setinde uç değer varsa aritmetik ortalama yanıltıcı olur; bu durumda merkezi temsil etmek için {koyu:ortanca (medyan)} seçilir.",
+    "{koyu:Ortalama Mutlak Sapma (OMS):} Verilerin aritmetik ortalamaya olan pozitif uzaklıklarının (mutlak farklarının) aritmetik ortalamasıdır.",
+    "{koyu:Veriye Dayalı Karar Verme:} Ortalamaları eşit iki gruptan {koyu:açıklığı ve ortalama mutlak sapması daha küçük olan} grup daha tutarlı, istikrarlı ve homojendir."
+  ]
+}

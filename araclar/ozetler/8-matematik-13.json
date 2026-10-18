@@ -1,0 +1,257 @@
+{
+  "ad": "8-matematik-13",
+  "sinif": 8,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 13,
+  "tarih": "14-18 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "Olasılık",
+  "konu": "Bir Olayın Olma Olasılığı: Deney, Çıktı, Örnek Uzay, Olay, Eş Olasılıklı Olaylar, Kesin Olay (1) ve İmkânsız Olay (0) Kavramları (M.8.5.1.1 - M.8.5.1.4)",
+  "ciktilar": [
+    "Bir olaya ait olası durumları belirler; deney, çıktı, örnek uzay ve olay kavramlarını örneklerle açıklar (M.8.5.1.1).",
+    "'Daha fazla', 'eşit' ve 'daha az' olasılıklı olayları ayırt eder; eşit şansa sahip olan olaylarda her bir çıktının olasılık değerinin 1/n olduğunu kavrar (M.8.5.1.2 & M.8.5.1.3).",
+    "Olasılık değerinin 0 ile 1 arasında (0 ve 1 dahil) olduğunu, imkânsız olayın olasılığının 0, kesin olayın olasılığının 1 olduğunu ve tümleyen ilişkisini uygular (M.8.5.1.4 & M.8.5.1.5)."
+  ],
+  "giris": "Günlük yaşamda hava tahminlerinden spor müsabakalarına, çekilişlerden veri analizine kadar pek çok alanda bir durumun gerçekleşme şansını ölçmeye ihtiyaç duyarız. Veri işleme grafik dönüşümlerimizin ardından bu hafta 'Basit Olayların Olma Olasılığı' konusuna geçiyor; deney, çıktı, örnek uzay, eş olasılıklı olaylar ile imkânsız (0) ve kesin (1) olay kavramlarını matematiksel olarak modelliyoruz.",
+  "bolumler": [
+    {
+      "baslik": "Deney, Çıktı, Örnek Uzay ve Olası Durumlar (M.8.5.1.1 & M.8.5.1.2)",
+      "metin": [
+        "Sonucu önceden bilinmeyen, rastgele yapılan işlemlere (madeni para atma, zar atma, torbadan top çekme, çark çevirme vb.) {koyu:deney} denir. Bir deneyde elde edilebilecek sonuçların her birine {koyu:çıktı}, deneyde gerçekleşebilecek bütün çıktıların (tüm olası durumların) oluşturduğu kümeye ise {koyu:örnek uzay} adı verilir.",
+        "Örnek uzayın alt kümelerinden her birine, yani deney sonucunda gerçekleşmesi istenen veya incelenen özel duruma {koyu:olay} denir. Örneğin hilesiz bir zarın atılması deneyinde tüm olası durumlar (örnek uzay) 1, 2, 3, 4, 5 ve 6 olmak üzere 6 tanedir. 'Üst yüze çift sayı gelmesi' bir olaydır ve bu olayın çıktıları (istenen olası durumlar) 2, 4 ve 6 olmak üzere 3 tanedir.",
+        "Bir deneyde olası durum sayısı fazla olan olayın gerçekleşme şansı {koyu:daha fazla olasılıklı}, olası durum sayısı az olan olayın şansı {koyu:daha az olasılıklı}, olası durum sayıları birbirine denk olan olaylar ise {koyu:eşit olasılıklı} olarak adlandırılır. Örneğin 4 kırmızı, 4 beyaz ve 2 siyah bilyenin bulunduğu bir torbadan rastgele çekilen bir bilyenin kırmızı veya beyaz olma olasılıkları birbirine eşitken, siyah olma olasılığı daha azdır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">OLASILIK TEMEL KAVRAMLARI: DENEY, ÇIKTI, ÖRNEK UZAY VE OLAY</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Kavram Tanımları (M.8.5.1.1)</text>\n  <text x=\"180\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">• Deney: Sonucu merak edilen rastgele işlem</text>\n  <text x=\"180\" y=\"116\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">• Çıktı: Deneyde elde edilebilecek her bir sonuç</text>\n  <text x=\"180\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">• Örnek Uzay (Tüm Olası Durumlar): Deneydeki</text>\n  <text x=\"180\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">bütün çıktıların oluşturduğu küme</text>\n  <text x=\"180\" y=\"180\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">• Olay: Örnek uzayın içinden gerçekleşmesi</text>\n  <text x=\"180\" y=\"198\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">istenen belirli durum (İstenen Çıktılar)</text>\n  <text x=\"180\" y=\"222\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">Eş Olasılıklı: Her çıktının şansı 1/n kadardır.</text>\n\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Örnek: Hilesiz Bir Zarın Atılması</text>\n  <text x=\"520\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Deney: Zarın havaya atılması</text>\n  <text x=\"520\" y=\"120\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Örnek Uzay: {1, 2, 3, 4, 5, 6} → n = 6 olası durum</text>\n  <text x=\"520\" y=\"144\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Olay: Üst yüze asal sayı gelmesi</text>\n  <text x=\"520\" y=\"168\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Olayın Çıktıları: {2, 3, 5} → 3 istenen durum</text>\n  <text x=\"520\" y=\"196\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">Olasılık = İstenen (3) / Tüm (6) = 3/6 = 1/2</text>\n  <text x=\"520\" y=\"220\" text-anchor=\"middle\" font-size=\"11\" fill=\"#166534\">Her bir rakamın tek tek gelme olasılığı = 1/6</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Örnek Uzayda Özdeş Nesneler Ayrı Sayılır!",
+          "metin": "Bir torbada 3 özdeş kırmızı ve 5 özdeş mavi top varsa, çekilen topun rengi 2 çeşit (kırmızı veya mavi) olsa da bu deneyin olası durum sayısı (örnek uzay eleman sayısı) 3 + 5 = 8'dir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Kelime Harfleri Sorularında Olası Durum",
+          "metin": "'MATEMATİK' kelimesinin harfleri eş kartlara yazılıp torbaya atıldığında olası durum sayısı harf sayısı olan 9'dur; M ve A(2), T(2) harflerinin çekilme olasılıkları eşittir."
+        }
+      ]
+    },
+    {
+      "baslik": "Eşit Şansa Sahip Olaylar (1/n), Kesin (1) ve İmkânsız (0) Olaylar (M.8.5.1.3 & M.8.5.1.4)",
+      "metin": [
+        "Bir deneyde örnek uzayı oluşturan {koyu:n} tane olası durumun her birinin gerçekleşme şansı birbirine eşitse bu çıktılara {koyu:eşit şansa sahip (eş olasılıklı)} çıktılar denir ve her bir çıktının olma olasılığı {kesir:1|n} değerine eşittir. Örneğin hilesiz bir madeni parada yazı ve tura çıktıları eş olasılıklıdır (her biri {kesir:1|2}); 1'den 10'a kadar numaralandırılmış özdeş kartlardan her birinin çekilme olasılığı {kesir:1|10}'dur.",
+        "Her koşulda gerçekleşecek olan ve olası tüm durumları kapsayan olaya {koyu:kesin olay} denir; kesin olayın olma olasılığı {koyu:1} (yani %100) değerindedir. Gerçekleşmesi mümkün olmayan (istenen çıktı sayısı 0 olan) olaya ise {koyu:imkânsız olay} denir ve olasılık değeri {koyu:0} (%0) olur. Örneğin standart bir zar atıldığında üst yüze 7'den küçük doğal sayı gelmesi kesin olay (olasılığı {kesir:6|6} = 1), 8 gelmesi ise imkânsız olaydır (olasılığı {kesir:0|6} = 0).",
+        "Herhangi bir A olayının olma olasılığı her zaman {koyu:0 ile 1 arasında (0 ve 1 dahil)} bir değer alır: {koyu:0 ≤ P(A) ≤ 1}. Dolayısıyla bir olayın olasılığı negatif bir sayı veya 1'den büyük bir bileşik kesir ({kesir:7|5} gibi) olamaz. Ayrıca bir olayın {koyu:olma olasılığı ile olmama olasılığının toplamı daima 1'e eşittir}: P(A) + P(A') = 1."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">OLASILIK DEĞER ARALIĞI: İMKÂNSIZ OLAY (0) VE KESİN OLAY (1)</text>\n  <rect x=\"20\" y=\"45\" width=\"660\" height=\"90\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\" stroke-width=\"1.5\"/>\n  <!-- Sayı doğrusu 0 ile 1 arası -->\n  <line x1=\"80\" y1=\"85\" x2=\"620\" y2=\"85\" stroke=\"#854d0e\" stroke-width=\"3\"/>\n  <circle cx=\"80\" cy=\"85\" r=\"7\" fill=\"#be123c\"/>\n  <circle cx=\"350\" cy=\"85\" r=\"7\" fill=\"#1d4ed8\"/>\n  <circle cx=\"620\" cy=\"85\" r=\"7\" fill=\"#15803d\"/>\n  <text x=\"80\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#be123c\">0 (%0)</text>\n  <text x=\"80\" y=\"112\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#be123c\">İmkânsız Olay</text>\n  <text x=\"350\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">1/2 (0,5 = %50)</text>\n  <text x=\"350\" y=\"112\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">Yarı Yarıya Şans</text>\n  <text x=\"620\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">1 (%100)</text>\n  <text x=\"620\" y=\"112\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">Kesin Olay</text>\n\n  <rect x=\"20\" y=\"150\" width=\"320\" height=\"95\" rx=\"8\" fill=\"#fff1f2\" stroke=\"#f43f5e\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"172\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#be123c\">Temel Kural: 0 ≤ P(A) ≤ 1 (M.8.5.1.4)</text>\n  <text x=\"180\" y=\"194\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">• Bir olayın olma olasılığı negatif olamaz</text>\n  <text x=\"180\" y=\"212\" text-anchor=\"middle\" font-size=\"11\" fill=\"#881337\">ve 1'den büyük (bileşik kesir) olamaz!</text>\n  <text x=\"180\" y=\"232\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#9f1239\">• P(Olma) + P(Olmama) = 1</text>\n\n  <rect x=\"360\" y=\"150\" width=\"320\" height=\"95\" rx=\"8\" fill=\"#ecfeff\" stroke=\"#06b6d4\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"172\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0e7490\">Daha Fazla · Eşit · Daha Az Olasılıklı</text>\n  <text x=\"520\" y=\"194\" text-anchor=\"middle\" font-size=\"11\" fill=\"#164e63\">Torbada: 5 Kırmızı, 5 Mavi, 2 Sarı top varsa;</text>\n  <text x=\"520\" y=\"212\" text-anchor=\"middle\" font-size=\"11\" fill=\"#164e63\">• Kırmızı ve Mavi gelme olasılığı EŞİTTİR.</text>\n  <text x=\"520\" y=\"232\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#155e75\">• Sarı gelme olasılığı DAHA AZDIR (2 &lt; 5).</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Eşit Şansa Sahip Olmayan Durumlar",
+          "metin": "Bir torbada 6 sarı ve 2 yeşil top varsa, torbadan çekilen her bir top tek tek 1/8 şansa sahiptir; ancak 'renk olarak' sarı gelme olayı (6/8) ile yeşil gelme olayı (2/8) eşit şansa sahip değildir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Olmama Olasılığı Pratiği",
+          "metin": "Bir olayın olma olasılığı {kesir:3|11} ise, bu olayın olmama olasılığını bulmak için 1 tamdan çıkarmanız yeterlidir: 1 - {kesir:3|11} = {kesir:8|11}."
+        }
+      ]
+    },
+    {
+      "baslik": "Basit Olayların Olma Olasılığını Hesaplama ve Grafik Uygulamaları (M.8.5.1.5)",
+      "metin": [
+        "Bir olayın olma olasılığı hesaplanırken {koyu:İstenen Olası Durumların Sayısı}, {koyu:Tüm Olası Durumların Sayısına (Örnek Uzaya)} bölünür: P(Olay) = {kesir:İstenen Çıktı Sayısı|Tüm Çıktıların Sayısı}. Bulunan kesir sadeleştirilerek en sade hâliyle, ondalık gösterimle veya yüzde (%) sembolüyle ifade edilebilir.",
+        "Örneğin 1'den 20'ye kadar (1 ve 20 dahil) numaralandırılmış özdeş topların bulunduğu bir kutudan rastgele çekilen bir topun numarasının {koyu:tam kare sayı} olma olasılığını bulalım: Tüm olası durumların sayısı 20'dir. Bu aralıktaki tam kare sayılar 1, 4, 9 ve 16 olmak üzere 4 tanedir. O hâlde olasılık {kesir:4|20} = {kesir:1|5} = 0,20 = %20 olarak bulunur.",
+        "Veri analizi (sütun veya daire grafiği) ile olasılık soruları sıkça birleştirilir. Bir grup verinin dağılımı {koyu:daire grafiğinde} gösterilmişse, tamamı 360° olduğu için merkez açısı x° olan bir gruptan rastgele eleman seçilme olasılığı doğrudan {kesir:x|360} oranıyla hesaplanır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">BASİT OLAYLARIN OLMA OLASILIĞI HESAPLAMA VE GRAFİK BAĞLANTISI</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#faf5ff\" stroke=\"#a855f7\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#7e22ce\">Olasılık Hesaplama Formülü (M.8.5.1.5)</text>\n  <rect x=\"40\" y=\"85\" width=\"280\" height=\"55\" rx=\"6\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"1\"/>\n  <text x=\"180\" y=\"106\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">İstenen Olası Durumların Sayısı</text>\n  <line x1=\"55\" y1=\"114\" x2=\"305\" y2=\"114\" stroke=\"#6b21a8\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"132\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">Tüm Olası Durumların Sayısı (Örnek Uzay)</text>\n  <text x=\"180\" y=\"168\" text-anchor=\"middle\" font-size=\"11\" fill=\"#581c87\">• Sonuç en sade kesir, ondalık gösterim</text>\n  <text x=\"180\" y=\"186\" text-anchor=\"middle\" font-size=\"11\" fill=\"#581c87\">veya yüzde (%) olarak ifade edilebilir.</text>\n  <text x=\"180\" y=\"214\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">Örnek: 20 kişide 5 gözlüklü → 5/20 = 1/4 = %25</text>\n\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Daire Grafiği ve Olasılık İlişkisi</text>\n  <circle cx=\"430\" cy=\"140\" r=\"45\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <path d=\"M 430 140 L 430 95 A 45 45 0 0 1 475 140 Z\" fill=\"#86efac\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <text x=\"448\" y=\"128\" font-size=\"10\" font-weight=\"bold\" fill=\"#14532d\">90°</text>\n  <text x=\"580\" y=\"102\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">Daire grafiğinde merkez</text>\n  <text x=\"580\" y=\"120\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">açısı α olan dilimden</text>\n  <text x=\"580\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">seçim yapma olasılığı:</text>\n  <text x=\"580\" y=\"168\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">P = α / 360°</text>\n  <text x=\"520\" y=\"212\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">Örnek: 90° dilim → 90/360 = 1/4 olasılık</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Torbaya Ekleme veya Çıkarma Soruları",
+          "metin": "Bir torbaya yeni toplar eklendiğinde veya torbadan top çıkarıldığında hem 'istenen durum sayısının' hem de 'tüm olası durumların sayısının (paydanın)' değiştiğine dikkat edilmelidir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Daire Grafiğinde Sayı Hesaplamadan Olasılık",
+          "metin": "Daire grafiğinde kişi sayıları verilmese bile merkez açılar biliniyorsa olasılık bulunabilir: 120° merkez açılı dilimin seçilme olasılığı {kesir:120|360} = {kesir:1|3}'tür."
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "İçinde 5 kırmızı, 7 mavi ve 4 sarı özdeş bilye bulunan bir torbadan rastgele bir bilye çekilmesi deneyinde olası durum sayısını belirleyiniz ve hangi rengin çekilme olasılığının daha fazla, hangisinin daha az olduğunu açıklayınız.",
+      "cevap": "Tüm olası durumların sayısı 5 + 7 + 4 = 16'dır. Torbada en çok mavi bilye (7 adet) bulunduğu için mavi gelme olasılığı 'daha fazla', en az sarı bilye (4 adet) bulunduğu için sarı gelme olasılığı 'daha az'dır."
+    },
+    {
+      "soru": "'KAHRAMANMARAŞ' kelimesinin harfleri özdeş kartlara tek tek yazılarak bir torbaya atılıyor ve rastgele bir kart çekiliyor. Her bir kartın çekilme şansı kaçtır? Hangi harfin gelme olasılığı en yüksektir?",
+      "cevap": "Kelime 13 harfli olduğu için 13 olası durum vardır ve eş şansa sahip her bir kartın çekilme olasılığı {kesir:1|13}'tür. Kelimede 'A' harfi 5 kez tekrar ettiği için 'A' harfinin gelme olasılığı ({kesir:5|13}) en yüksektir."
+    },
+    {
+      "soru": "Hilesiz bir zar düz bir zemine rastgele atılıyor. Üst yüze gelen sayının; a) Asal sayı olma olasılığını, b) 6'dan büyük bir doğal sayı olma olasılığını, c) En az 1 olma olasılığını bulunuz.",
+      "cevap": "Örnek uzay {1, 2, 3, 4, 5, 6} olup 6 elemanlıdır. a) Asal sayılar {2, 3, 5} olmak üzere 3 tanedir; olasılığı {kesir:3|6} = {kesir:1|2}. b) 6'dan büyük sayı olmadığı için imkânsız olaydır, olasılığı {kesir:0|6} = 0. c) Zar üzerindeki tüm sayılar en az 1 olduğu için kesin olaydır, olasılığı {kesir:6|6} = 1."
+    },
+    {
+      "soru": "Bir okçunun hedefi vurma olasılığı {kesir:5|8} olduğuna göre, bu okçunun yaptığı bir atışta hedefi vuramama olasılığı kaçtır?",
+      "cevap": "Bir olayın olma olasılığı ile olmama olasılığının toplamı 1'dir. Bu nedenle hedefi vuramama olasılığı 1 - {kesir:5|8} = {kesir:3|8} olur."
+    },
+    {
+      "soru": "Bir sınıftaki 24 öğrenciden 10'u kızdır. Kız öğrencilerin 4'ü, erkek öğrencilerin ise 6'sı gözlüklüdür. Bu sınıftan rastgele seçilen bir öğrencinin gözlüksüz erkek öğrenci olma olasılığı kaçtır?",
+      "cevap": "Sınıfta 24 - 10 = 14 erkek öğrenci vardır. Erkeklerin 6'sı gözlüklü olduğuna göre 14 - 6 = 8'i gözlüksüz erkek öğrencidir. Tüm olası durum 24, istenen durum 8 olduğundan olasılık {kesir:8|24} = {kesir:1|3} olur."
+    },
+    {
+      "soru": "Bir kutuda 8 beyaz ve bir miktar siyah top vardır. Kutudan rastgele çekilen bir topun siyah olma olasılığı {kesir:3|5} olduğuna göre kutuda kaç tane siyah top vardır?",
+      "cevap": "Siyah olma olasılığı {kesir:3|5} ise beyaz olma olasılığı 1 - {kesir:3|5} = {kesir:2|5}'tir. Beyaz top sayısı 8 olduğuna göre {kesir:2|5} oranında pay 4 katına çıkmıştır (2 x 4 = 8). O hâlde toplam top sayısı 5 x 4 = 20, siyah top sayısı ise 3 x 4 = 12'dir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Aşağıda verilen sayılardan hangisi bir olayın olma olasılığının alabileceği değerlerden biri olamaz?",
+      "secenekler": [
+        "{kesir:9|7}",
+        "{kesir:3|8}",
+        "0,45",
+        "1"
+      ],
+      "dogru": 0,
+      "aciklama": "Bir olayın olma olasılığı 0 ile 1 arasında (0 ve 1 dahil) değer alır. {kesir:9|7} bileşik kesri 1 tamdan büyük olduğu için olasılık değeri olamaz."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Üzerinde 10'dan 25'e kadar (10 ve 25 dahil) doğal sayıların yazılı olduğu özdeş toplar bir torbaya atılıyor. Torbadan rastgele çekilen bir topun üzerinde asal sayı yazma olasılığı kaçtır?",
+      "secenekler": [
+        "{kesir:3|16}",
+        "{kesir:5|16}",
+        "{kesir:3|8}",
+        "{kesir:7|16}"
+      ],
+      "dogru": 1,
+      "aciklama": "10'dan 25'e kadar toplam 25 - 10 + 1 = 16 sayı vardır (tüm durumlar 16). Bu aralıktaki asal sayılar 11, 13, 17, 19 ve 23 olmak üzere 5 tanedir. Olasılık {kesir:5|16} olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "İçinde sarı, kırmızı ve mavi bilyelerin bulunduğu bir torbadan rastgele çekilen bir bilyenin sarı olma olasılığı {kesir:1|4}, kırmızı olma olasılığı ise {kesir:3|8}'dir. Torbada 9 tane mavi bilye bulunduğuna göre toplam bilye sayısı kaçtır?",
+      "secenekler": [
+        "16",
+        "20",
+        "24",
+        "32"
+      ],
+      "dogru": 2,
+      "aciklama": "Sarı ve kırmızı olma olasılıkları toplamı {kesir:1|4} + {kesir:3|8} = {kesir:5|8}'dir. O hâlde mavi olma olasılığı 1 - {kesir:5|8} = {kesir:3|8} olur. {kesir:3|8} = {kesir:9|Toplam} eşitliğinden toplam bilye sayısı 8 x 3 = 24 bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir gezi grubundaki turistlerin ülke dağılımı daire grafiğinde gösterildiğinde Alman turistlere ait dilimin merkez açısı 108°, Rus turistlere ait dilimin merkez açısı 144° ve kalanı İngiliz turistlerdir. Gruptan rastgele seçilen bir turistin İngiliz olma olasılığı kaçtır?",
+      "secenekler": [
+        "{kesir:1|5}",
+        "{kesir:1|4}",
+        "{kesir:2|5}",
+        "{kesir:3|10}"
+      ],
+      "dogru": 3,
+      "aciklama": "Daire grafiğinin tamamı 360°'dir. İngiliz turistlerin merkez açısı 360° - (108° + 144°) = 108° olur. Seçilen turistin İngiliz olma olasılığı {kesir:108|360} = {kesir:3|10} olarak bulunur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Bir deneyde elde edilebilecek tüm olası sonuçların kümesine örnek uzay adı verilir.",
+          "dogru": true
+        },
+        {
+          "metin": "Gerçekleşmesi mümkün olmayan olaylara imkânsız olay denir ve olasılık değeri 0'dır.",
+          "dogru": true
+        },
+        {
+          "metin": "Eşit şansa sahip n tane çıktısı bulunan bir deneyde her bir çıktının olasılık değeri n tam sayısına eşittir.",
+          "dogru": false
+        },
+        {
+          "metin": "Bir olayın olma olasılığı ile olmama olasılığının toplamı 1 tam sayısına eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "İçinde 4 mavi ve 8 kırmızı top bulunan bir torbadan mavi top çekilme olasılığı, kırmızı top çekilme olasılığından daha fazladır.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki olasılık kavramlarını karşılık gelen matematiksel ifade veya değerlerle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Örnek Uzay",
+          "Deneyde gerçekleşebilecek tüm olası durumların kümesi"
+        ],
+        [
+          "Eş Olasılıklı Çıktı Değeri",
+          "n olası durumlu deneyde her bir çıktının {kesir:1|n} şansı"
+        ],
+        [
+          "İmkânsız Olay",
+          "Gerçekleşme olasılığı 0 (%0) olan olay"
+        ],
+        [
+          "Kesin Olay",
+          "Gerçekleşme olasılığı 1 (%100) olan olay"
+        ],
+        [
+          "Olmama Olasılığı (Tümleyen)",
+          "1 tamdan olma olasılığının çıkarılması (1 - P)"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Sonucu önceden bilinmeyen rastgele bir işlemde elde edilebilecek her bir sonuca ___ adı verilir.",
+          "cevap": "çıktı"
+        },
+        {
+          "metin": "Her koşulda gerçekleşen ve tüm olası durumları kapsayan olaylara ___ olay denir ve olasılığı 1'dir.",
+          "cevap": "kesin"
+        },
+        {
+          "metin": "Gerçekleşmesi mümkün olmayan olaylara ___ olay denir ve olasılık değeri 0'dır.",
+          "cevap": "imkânsız"
+        },
+        {
+          "metin": "Bir torbadaki kırmızı ve beyaz bilye sayıları birbirine denk ise bu iki rengin çekilme şansı ___ olasılıklıdır.",
+          "cevap": "eşit"
+        },
+        {
+          "metin": "Bir olayın olma olasılığı hesaplanırken istenen olası durumların sayısı ___ olası durumların sayısına bölünür.",
+          "cevap": "tüm"
+        }
+      ],
+      "fazla": [
+        "hipotenüs",
+        "koordinat"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir kutuda 1'den 30'a kadar (1 ve 30 dahil) numaralandırılmış özdeş kartlar bulunmaktadır. Kutudan rastgele çekilen bir kartın; (a) her bir tekil numara olma şansını, (b) hem 2'ye hem 3'e kalansız bölünen bir sayı olma olasılığını, (c) tam kare sayı olmama olasılığını adım adım hesaplayınız.",
+      "ipuclari": [
+        "Önce örnek uzayın eleman sayısını (n = 30) belirleyerek eş olasılıklı tek bir çıktının değerini ({kesir:1|n}) yazınız.",
+        "Hem 2'ye hem 3'e bölünen sayıların 6'nın katları olduğunu hatırlayarak 1-30 arasındaki 6'nın katlarını sayınız.",
+        "1-30 arasındaki tam kare sayıları (1, 4, 9, 16, 25) bulup, tüm durumlardan çıkararak olmama olasılığını hesaplayınız."
+      ],
+      "cevap": "(a) Kutuda 30 özdeş kart bulunduğu için tüm olası durumların sayısı n = 30'dur ve eş şansa sahip her bir kartın çekilme olasılığı {kesir:1|30}'dur. (b) Hem 2'ye hem 3'e kalansız bölünen sayılar 6'nın katlarıdır: {6, 12, 18, 24, 30} olmak üzere 5 tanedir. Olasılığı {kesir:5|30} = {kesir:1|6} olur. (c) 1-30 arasındaki tam kare sayılar {1, 4, 9, 16, 25} olmak üzere 5 tanedir; tam kare olma olasılığı {kesir:5|30} = {kesir:1|6} olduğundan, tam kare olmama olasılığı 1 - {kesir:1|6} = {kesir:5|6} olarak bulunur."
+    }
+  ],
+  "ozet": [
+    "{koyu:Deney, Çıktı ve Örnek Uzay:} Rastgele yapılan işleme deney, her bir sonuca çıktı, tüm olası durumların kümesine ise örnek uzay denir.",
+    "{koyu:Olasılık Karşılaştırması:} Olası durum sayısı çok olan olay 'daha fazla olasılıklı', az olan 'daha az olasılıklı', eşit olanlar ise 'eşit olasılıklı'dır.",
+    "{koyu:Eş Olasılıklı Değer (1/n):} Eşit şansa sahip n tane çıktısı olan bir deneyde her bir çıktının gerçekleşme olasılığı {kesir:1|n} değerindedir.",
+    "{koyu:Kesin (1) ve İmkânsız (0) Olay:} İmkânsız olayın olasılığı 0, kesin olayın olasılığı 1'dir; her olayın olasılığı 0 ≤ P(A) ≤ 1 aralığındadır.",
+    "{koyu:Olasılık Formülü ve Tümleyen:} P(A) = {kesir:İstenen Durum Sayısı|Tüm Durumların Sayısı} formülüyle bulunur ve P(Olma) + P(Olmama) = 1 eşitliği geçerlidir."
+  ]
+}

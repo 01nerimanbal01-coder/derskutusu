@@ -1,0 +1,259 @@
+{
+  "ad": "10-fizik-13",
+  "sinif": 10,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 13,
+  "tarih": "14-18 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "2. Tema: Enerji",
+  "konu": "Mekanik Enerjinin Korunumu: Sürtünmesiz ve Sürtünmeli Ortamlarda Kinetik ve Potansiyel Enerji Dönüşümleri, Verim Kavramı (FİZ.10.2.4 & FİZ.10.2.5)",
+  "ciktilar": [
+    "Sürtünmesiz ortamlarda öteleme kinetik enerjisi, yer çekimi potansiyel enerjisi ve esneklik potansiyel enerjisi arasındaki dönüşümleri mekanik enerjinin korunumu ilkesiyle çözümler.",
+    "Sürtünmeli yüzeylerde hareket eden cisimlerin mekanik enerjisindeki azalma miktarını sürtünme kuvvetinin yaptığı işle (ısıya dönüşen enerjiyle) ilişkilendirerek hesaplar.",
+    "Bir sistemde yapılan faydalı işin harcanan toplam enerjiye oranı olarak tanımlanan verim kavramını matematiksel modeller ve enerji tasarrufu bağlamında değerlendirir."
+  ],
+  "giris": "Bir sistemin sahip olduğu kinetik ve potansiyel enerjilerin toplamına {koyu:mekanik enerji} ({koyu:Emek = Ek + Ep}) adı verilir. Doğadaki ve teknolojideki pek çok olay — lunapark trenlerinin hareketinden barajlarda elektrik üretimine, okçuluktan otomobillerin fren mesafesine kadar — potansiyel ve kinetik enerji bileşenlerinin birbirine ve ısı enerjisine dönüşümüyle açıklanır.",
+  "bolumler": [
+    {
+      "baslik": "Sürtünmesiz Ortamlarda Mekanik Enerjinin Korunumu",
+      "metin": [
+        "Dışarıdan net bir kuvvetin iş yapmadığı ve sürtünmenin ihmal edildiği yalıtılmış bir sistemde cismin {koyu:toplam mekanik enerjisi sabit kalır}. Bu ilkeye {koyu:Mekanik Enerjinin Korunumu Yasası} denir ve matematiksel olarak {koyu:Emek,ilk = Emek,son} veya {koyu:Ek,ilk + Ep,ilk = Ek,son + Ep,son} şeklinde ifade edilir. Hareket süresince potansiyel enerjideki azalma miktarı, kinetik enerjideki artış miktarına birebir eşittir ({koyu:-ΔEp = ΔEk}).",
+        "Yerden {koyu:h} yüksekliğinden ilk hızsız serbest bırakılan veya sürtünmesiz eğik düzlemin tepesinden kaydırılan {koyu:m} kütleli bir cismin başlangıçtaki yer çekimi potansiyel enerjisi ({koyu:m·g·h}), yere ulaştığı anda tamamen öteleme kinetik enerjisine ({koyu:{kesir:1|2}·m·{us:v|2}}) dönüşür. Buradan {koyu:m·g·h = {kesir:1|2}·m·{us:v|2}} yazılıp kütleler sadeleştirildiğinde yere çarpma sürati {koyu:v = {kok:2·g·h}} olarak bulunur.",
+        "Benzer şekilde sürtünmesiz yatay düzlemde {koyu:v} hızıyla fırlatılan {koyu:m} kütleli bir cisim yay sabiti {koyu:k} olan esnek bir yayı maksimum {koyu:x} kadar sıkıştırıp durduğunda, cismin tüm kinetik enerjisi yayda esneklik potansiyel enerjisine dönüşür: {koyu:{kesir:1|2}·m·{us:v|2} = {kesir:1|2}·k·{us:x|2}}."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Kütle ve Yolun Şekli Hızı Etkiler mi?",
+          "metin": "Sürtünmesiz ortamda aynı {koyu:h} yüksekliğinden serbest bırakılan veya farklı eğimlerdeki sürtünmesiz raylardan kaydırılan farklı kütleli cisimlerin yere ulaşma süratleri ({koyu:v = {kok:2·g·h}}) birbirine eşittir; kütle ({koyu:m}) ve yolun eğimi son sürati değiştirmez."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Basit Sarkaçta Enerji Dönüşümü",
+          "metin": "Salınım yapan sürtünmesiz bir basit sarkaçta uç noktalarda anlık hız sıfır ({koyu:Ek = 0}) olduğu için yer çekimi potansiyel enerjisi maksimumdur; denge konumundan (en alt noktadan) geçerken ise hız ve kinetik enerji maksimuma ulaşır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">SÜRTÜNMESİZ ORTAMDA MEKANİK ENERJİNİN KORUNUMU (FİZ.10.2.4)</text>\n  <rect x=\"22\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e40af\">TEMEL KORUNUM BAĞINTILARI</text>\n  <text x=\"35\" y=\"88\" font-size=\"11.2\" fill=\"#1e3a8a\">• Mekanik Enerji: Emek = Ek + Ep = Sabit</text>\n  <text x=\"35\" y=\"112\" font-size=\"11.2\" fill=\"#1e3a8a\">• İlk Mekanik Enerji = Son Mekanik Enerji</text>\n  <text x=\"35\" y=\"136\" font-size=\"11.2\" fill=\"#1e3a8a\">• Ek,ilk + Ep,ilk = Ek,son + Ep,son</text>\n  <text x=\"35\" y=\"160\" font-size=\"11.2\" fill=\"#1e3a8a\">• Azalan potansiyel enerji = Artan kinetik enerji</text>\n  <text x=\"35\" y=\"184\" font-size=\"11.2\" fill=\"#1e3a8a\">• -ΔEp = ΔEk  (Mekanik enerji değişimi ΔEmek = 0)</text>\n  <rect x=\"358\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#166534\">ÖZEL DÖNÜŞÜM UYGULAMALARI</text>\n  <text x=\"370\" y=\"88\" font-size=\"11.2\" fill=\"#14532d\">• h yüksekliğinden serbest düşen cisim:</text>\n  <text x=\"370\" y=\"108\" font-size=\"11.2\" fill=\"#14532d\">  m·g·h = (1/2)·m·v²  →  v = kök(2·g·h) (kütleden bağımsız)</text>\n  <text x=\"370\" y=\"132\" font-size=\"11.2\" fill=\"#14532d\">• Yatay düzlemde yay sıkıştırma:</text>\n  <text x=\"370\" y=\"152\" font-size=\"11.2\" fill=\"#14532d\">  (1/2)·m·v² = (1/2)·k·x²  (Kinetik → Esneklik potansiyel)</text>\n  <text x=\"370\" y=\"178\" font-size=\"11.2\" fill=\"#14532d\">• Sarkaç ve ray sistemlerinde uçlarda v = 0, Ep maksimum</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Sürtünmesiz ortamda h yüksekliğinden bırakılan cismin yere çarpma hızı kütlesine ve yolun eğimine bağlı değildir.</text>\n</svg>"
+    },
+    {
+      "baslik": "Sürtünmeli Ortamlarda Enerji Dönüşümü ve Frenleme Mesafesi",
+      "metin": [
+        "Sürtünmeli yüzeylerde hareket eden cisimlerde mekanik enerjinin bir kısmı veya tamamı sürtünme kuvvetinin yaptığı negatif iş nedeniyle {koyu:ısı enerjisine (iç enerjiye)} dönüşür. Bu durumda {koyu:mekanik enerji korunmaz} (zamanla azalır); ancak ısı enerjisi de hesaba katıldığında evrendeki {koyu:toplam enerji daima korunur}.",
+        "Sürtünme kuvvetinin büyüklüğü {koyu:fs} ve alınan yol {koyu:Δx} ise ısıya dönüşen enerji {koyu:Eısı = fs · Δx} bağıntısıyla hesaplanır. Sürtünmeli sistemdeki genel enerji denkliği {koyu:Emek,ilk = Emek,son + Eısı} veya {koyu:ΔEmek = Emek,son - Emek,ilk = -fs · Δx} biçiminde yazılır.",
+        "Yatay ve sürtünmeli bir yolda {koyu:v} süratiyle giderken frene basan {koyu:m} kütleli bir aracın {koyu:x} kadar yol alıp durması durumunda tüm kinetik enerjisi ısıya dönüşür: {koyu:{kesir:1|2}·m·{us:v|2} = fs · x = k·m·g·x}. Kütleler sadeleştiğinde durma mesafesi {koyu:x = {kesir:v²|2·k·g}} olur; yani aracın hızı {koyu:2 katına} çıktığında frenleme (durma) mesafesi {koyu:4 katına} çıkar."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Mekanik Enerji Korunumu ile Toplam Enerji Korunumu Farkı",
+          "metin": "Sürtünmeli bir ortamda {koyu:«Mekanik enerji korunur»} ifadesi yanlıştır; çünkü mekanik enerji azalır. Doğru ifade {koyu:«Toplam enerji korunur»} şeklindedir; azalan mekanik enerji yok olmaz, ısı ve ses enerjisine dönüşür."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Yatay Yolda Durma Mesafesi Kütleye Bağlı Değildir",
+          "metin": "Sürtünme katsayısı ({koyu:k}) aynı olan yatay bir yolda eşit hızla giden boş bir kamyon ile dolu bir kamyonun (tekerlekler kilitlendiğinde) durma mesafeleri eşittir; çünkü kütle arttıkça hem kinetik enerji hem de sürtünme kuvveti ({koyu:fs = k·m·g}) aynı oranda artar."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">SÜRTÜNMELİ ORTAMLARDA ENERJİ KAYBI VE ISIYA DÖNÜŞÜM</text>\n  <rect x=\"22\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#991b1b\">SÜRTÜNME KUVVETİNİN YAPTIĞI İŞ (Ws)</text>\n  <text x=\"35\" y=\"88\" font-size=\"11.2\" fill=\"#7f1d1d\">• Sürtünmeli ortamda mekanik enerji KORUNMAZ (azalır)</text>\n  <text x=\"35\" y=\"112\" font-size=\"11.2\" fill=\"#7f1d1d\">• Toplam enerji (Mekanik + Isı) ise daima korunur</text>\n  <text x=\"35\" y=\"136\" font-size=\"11.2\" fill=\"#7f1d1d\">• Isıya dönüşen enerji: Eısı = |Ws| = fs · Δx</text>\n  <text x=\"35\" y=\"160\" font-size=\"11.2\" fill=\"#7f1d1d\">• Enerji denkliği: Emek,ilk = Emek,son + fs · Δx</text>\n  <text x=\"35\" y=\"184\" font-size=\"11.2\" fill=\"#7f1d1d\">• Yatay yolda v hızıyla fırlatılan cisim: (1/2)·m·v² = fs · x</text>\n  <rect x=\"358\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#9a3412\">FRENLEME MESAFESİ ANALİZİ</text>\n  <text x=\"370\" y=\"88\" font-size=\"11.2\" fill=\"#7c2d12\">• Yatay düzlemde fs = k · m · g olduğundan:</text>\n  <text x=\"370\" y=\"112\" font-size=\"11.2\" fill=\"#7c2d12\">• (1/2) · m · v² = k · m · g · x  →  kütle (m) sadeleşir!</text>\n  <text x=\"370\" y=\"136\" font-size=\"11.2\" fill=\"#7c2d12\">• Durma mesafesi: x = v² / (2 · k · g)</text>\n  <text x=\"370\" y=\"160\" font-size=\"11.2\" fill=\"#7c2d12\">• Hız 2 katına çıkarsa (2v), durma mesafesi 4 katına (4x) çıkar</text>\n  <text x=\"370\" y=\"184\" font-size=\"11.2\" fill=\"#7c2d12\">• Trafik güvenliğinde hız sınırının fiziksel dayanağıdır</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Sürtünmeli sistemde mekanik enerjideki azalma miktarı, sürtünme kuvvetinin yaptığı işe (ısıya) eşittir.</text>\n</svg>"
+    },
+    {
+      "baslik": "Verim Kavramı, Güç İlişkisi ve Enerji Tasarrufu",
+      "metin": [
+        "Bir makinenin, motorun veya enerji dönüşüm düzeneğinin yaptığı {koyu:faydalı işin (amaca uygun alınan enerjinin)}, o makineye verilen {koyu:toplam enerjiye (harcanan enerjiye)} oranına {koyu:verim} adı verilir. Matematiksel olarak {koyu:Verim = {kesir:Yapılan Faydalı İş (Efaydalı)|Harcanan Toplam Enerji (Etoplam)} = {kesir:Alınan Güç (Pçıkış)|Verilen Güç (Pgiriş)}} bağıntısıyla hesaplanır.",
+        "Verim iki aynı büyüklüğün (Joule/Joule veya Watt/Watt) oranı olduğu için {koyu:birimsiz} bir niceliktir ve genellikle yüzde (%) olarak ifade edilir. Doğadaki gerçek makinelerde sürtünme, ısınma ve ses gibi enerji kayıpları tamamen sıfırlanamadığı için verim daima {koyu:1'den (%100'den) küçüktür}; dışarıdan enerji almadan sonsuza dek çalışan {koyu:devridaim makinesi} yapmak fizik yasalarına göre imkânsızdır.",
+        "Elektrikli ev aletlerinde ve aydınlatmada yüksek verimli ({koyu:A enerji sınıfı} ve {koyu:LED}) teknolojilerin tercih edilmesi, binalarda ısı yalıtımı yapılması ve makinelerde sürtünmeyi azaltan rulman/yağlama sistemlerinin kullanılması hem aile bütçesini ve millî serveti korur hem de fosil yakıt tüketimini azaltarak sürdürülebilir çevreye katkı sağlar."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Kayıp Enerji ile Faydalı Enerji Bağıntısı",
+          "metin": "Bir sisteme verilen toplam enerji {koyu:Etoplam = Efaydalı + Ekayıp (ısı)} toplamına eşittir. Dolayısıyla yüzde verim {koyu:%Verim = {kesir:Etoplam - Ekayıp|Etoplam} × 100} formülüyle de bulunabilir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Ardışık (Seri) Bağlı Sistemlerde Toplam Verim",
+          "metin": "Verimi {koyu:η1} ve {koyu:η2} olan iki enerji dönüştürücü ardışık bağlandığında sistemin bileşke verimi iki verimin çarpımına eşittir ({koyu:ηtoplam = η1 × η2})."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">VERİM KAVRAMI VE ENERJİ TASARRUFU (FİZ.10.2.5)</text>\n  <rect x=\"22\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#6b21a8\">MATEMATİKSEL VERİM MODELİ</text>\n  <text x=\"35\" y=\"88\" font-size=\"11.2\" fill=\"#581c87\">• Verim = Yapılan Faydalı İş / Harcanan Toplam Enerji</text>\n  <text x=\"35\" y=\"112\" font-size=\"11.2\" fill=\"#581c87\">• Verim = Alınan Güç (Pçıkış) / Verilen Güç (Pgiriş)</text>\n  <text x=\"35\" y=\"136\" font-size=\"11.2\" fill=\"#581c87\">• Yüzde Verim = (Efaydalı / Etoplam) × 100</text>\n  <text x=\"35\" y=\"160\" font-size=\"11.2\" fill=\"#581c87\">• Gerçek sistemlerde sürtünme nedeniyle Verim &lt; %100</text>\n  <text x=\"35\" y=\"184\" font-size=\"11.2\" fill=\"#581c87\">• Devridaim makinesi (%100 ve üzeri verim) imkânsızdır</text>\n  <rect x=\"358\" y=\"42\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/>\n  <text x=\"518\" y=\"64\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#065f46\">ENERJİ VERİMLİLİĞİ VE SÜRDÜRÜLEBİLİRLİK</text>\n  <text x=\"370\" y=\"88\" font-size=\"11.2\" fill=\"#064e3b\">• Enerji kimlik etiketleri: A sınıfı en yüksek verimli</text>\n  <text x=\"370\" y=\"112\" font-size=\"11.2\" fill=\"#064e3b\">• Akkor flamanlı lamba (%5 verim) yerine LED lamba (%85+)</text>\n  <text x=\"370\" y=\"136\" font-size=\"11.2\" fill=\"#064e3b\">• Sürtünmeyi azaltan yağlama ve bilyeli rulman sistemleri</text>\n  <text x=\"370\" y=\"160\" font-size=\"11.2\" fill=\"#064e3b\">• Binalarda ısı yalıtımı (mantolama ve çift cam)</text>\n  <text x=\"370\" y=\"184\" font-size=\"11.2\" fill=\"#064e3b\">• Karbon ayak izini küçültme ve millî serveti koruma</text>\n  <rect x=\"22\" y=\"224\" width=\"656\" height=\"26\" rx=\"6\" fill=\"#e2e8f0\"/>\n  <text x=\"350\" y=\"241\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">Verim birimsiz bir orandır (0 ile 1 arasında); harcanan enerjinin ne kadarının amaca hizmet ettiğini gösterir.</text>\n</svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Sürtünmelerin ihmal edildiği bir ortamda yerden 20 m yükseklikten serbest bırakılan 3 kg kütleli bir cismin yerden 5 m yükseklikten geçerken sahip olduğu kinetik enerjiyi ve hızı hesaplayınız (g = 10 m/s²).",
+      "cevap": "Başlangıçtaki toplam mekanik enerji: Emek = m·g·h1 = 3 · 10 · 20 = 600 J. Cisim yerden h2 = 5 m yükseklikteyken potansiyel enerjisi Ep2 = m·g·h2 = 3 · 10 · 5 = 150 J olur. Mekanik enerji korunduğundan kinetik enerjisi Ek2 = Emek - Ep2 = 600 - 150 = 450 J bulunur. Hızı ise Ek2 = (1/2)·m·v² → 450 = (1/2)·3·v² → v² = 300 → v = 10·kök(3) m/s olur."
+    },
+    {
+      "soru": "Sürtünmesiz yatay düzlemde 6 m/s hızla hareket eden 2 kg kütleli bir oyuncak araba, yay sabiti k = 200 N/m olan esnek bir yaya çarparak yayı maksimum kaç cm sıkıştırır?",
+      "cevap": "Arabanın başlangıçtaki kinetik enerjisi Ek = (1/2)·m·v² = (1/2) · 2 · 6² = 36 J'dür. Maksimum sıkışma anında araba anlık olarak durur ve tüm kinetik enerji yayda esneklik potansiyel enerjisine dönüşür: Ek = Eyay → 36 = (1/2) · 200 · x² → 36 = 100 · x² → x² = 0,36 → x = 0,6 m = 60 cm sıkıştırır."
+    },
+    {
+      "soru": "Yerden 10 m yüksekliğindeki sürtünmeli bir eğik düzlemin tepesinden ilk hızsız bırakılan 4 kg kütleli bir sandık, eğik düzlemin alt ucuna 10 m/s hızla ulaşıyor. Hareket süresince sürtünme nedeniyle ısıya dönüşen enerji kaç Joule'dür (g = 10 m/s²)?",
+      "cevap": "Sandığın başlangıçtaki mekanik (potansiyel) enerjisi: Ep,ilk = m·g·h = 4 · 10 · 10 = 400 J. Eğik düzlemin alt ucundaki mekanik (kinetik) enerjisi: Ek,son = (1/2)·m·v² = (1/2) · 4 · 10² = 200 J. Aradaki fark sürtünme nedeniyle ısıya dönüşmüştür: Eısı = Emek,ilk - Emek,son = 400 - 200 = 200 J."
+    },
+    {
+      "soru": "Yatay ve sürtünmeli bir yolda 20 m/s hızla giden bir otomobil frene bastığında 40 m yol alarak duruyor. Aynı otomobil aynı yolda 30 m/s hızla giderken frene basarsa kaç metre yol alarak durur?",
+      "cevap": "Yatay yolda durma mesafesi hızın karesiyle doğru orantılıdır: (1/2)·m·v² = fs·x → x1 / x2 = v1² / v2². Verilenler yerine yazılırsa: 40 / x2 = 20² / 30² = 400 / 900 = 4 / 9 → x2 = (40 · 9) / 4 = 90 m yol alarak durur."
+    },
+    {
+      "soru": "Bir elektrikli vinç motoru şebekeden 2500 J elektrik enerjisi çekerek 50 kg kütleli bir yükü sabit hızla 4 m yüksekliğe çıkarıyor. Bu vinç motorunun yüzde verimini ve ısıya dönüşen kayıp enerjiyi hesaplayınız (g = 10 m/s²).",
+      "cevap": "Vincin yaptığı faydalı iş (yüke kazandırdığı potansiyel enerji): Efaydalı = m·g·h = 50 · 10 · 4 = 2000 J. Harcanan toplam enerji Etoplam = 2500 J olduğundan Verim = (Efaydalı / Etoplam) × 100 = (2000 / 2500) × 100 = %80 bulunur. Isıya dönüşen kayıp enerji ise Ekayıp = 2500 - 2000 = 500 J'dür."
+    },
+    {
+      "soru": "Verimi %75 olan bir su pompası dakikada 360 kJ elektrik enerjisi harcamaktadır. Bu pompanın faydalı çıkış gücü kaç Watt'tır?",
+      "cevap": "Dakikada (t = 60 s) harcanan toplam enerji 360 kJ = 360.000 J olduğundan pompanın giriş gücü Pgiriş = E / t = 360.000 / 60 = 6000 W'tır. Verim %75 (3/4) olduğuna göre faydalı çıkış gücü Pçıkış = Pgiriş × 0,75 = 6000 × 0,75 = 4500 W (4,5 kW) olarak bulunur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Sürtünmelerin önemsenmediği bir ortamda yerden h yüksekliğinden serbest bırakılan m kütleli bir cisim yere doğru düşerken aşağıdaki niceliklerden hangisi DEĞİŞMEZ?",
+      "secenekler": [
+        "Cismin toplam mekanik enerjisi",
+        "Cismin yer çekimi potansiyel enerjisi",
+        "Cismin öteleme kinetik enerjisi",
+        "Cismin anlık sürati",
+        "Cismin yere olan dikey uzaklığı"
+      ],
+      "dogru": 0,
+      "aciklama": "Sürtünmesiz ortamda potansiyel enerji azalırken kinetik enerji aynı miktarda artar ve toplam mekanik enerji (Emek = Ek + Ep) sabit kalır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Sürtünmesiz yatay düzlemde durmakta olan yay sabiti k = 200 N/m olan bir yay, 0,5 m sıkıştırılıp önüne 2 kg kütleli bir cisim konularak serbest bırakılıyor. Cisim yaydan ayrıldığı anda hızı kaç m/s olur?",
+      "secenekler": [
+        "2",
+        "5",
+        "8",
+        "10",
+        "25"
+      ],
+      "dogru": 1,
+      "aciklama": "Mekanik enerjinin korunumundan Eyay = Ek → (1/2)·k·x² = (1/2)·m·v² → 200 · (0,5)² = 2 · v² → 50 = 2·v² → v² = 25 → v = 5 m/s bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Yatay ve sürtünmeli bir yolda 10 m/s hızla fırlatılan 4 kg kütleli bir cisim, sabit 20 N büyüklüğündeki sürtünme kuvvetinin etkisiyle kaç metre yol alarak durur?",
+      "secenekler": [
+        "4",
+        "5",
+        "10",
+        "15",
+        "20"
+      ],
+      "dogru": 2,
+      "aciklama": "Cismin ilk kinetik enerjisi Ek = (1/2)·4·10² = 200 J'dür. Durduğunda tamamı ısıya dönüşür: Ek = fs · x → 200 = 20 · x → x = 10 m."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir elektrik motoru şebekeden 800 J elektrik enerjisi alarak 600 J büyüklüğünde mekanik iş yapmaktadır. Buna göre motorun verimi yüzde kaçtır?",
+      "secenekler": [
+        "%25",
+        "%60",
+        "%70",
+        "%75",
+        "%80"
+      ],
+      "dogru": 3,
+      "aciklama": "Verim = (Yapılan Faydalı İş / Harcanan Toplam Enerji) × 100 = (600 / 800) × 100 = %75."
+    },
+    {
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "metin": "Sürtünmesiz ortamda aynı yükseklikten serbest bırakılan farklı kütleli iki cismin yere çarpma süratleri birbirine eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Sürtünmeli bir yüzeyde kaymakta olan cismin hem mekanik enerjisi hem de kinetik enerjisi korunur.",
+          "dogru": false
+        },
+        {
+          "metin": "Yatay sürtünmeli yolda fren yapan bir aracın hızı iki katına çıkarsa durma mesafesi dört katına çıkar.",
+          "dogru": true
+        },
+        {
+          "metin": "Teknolojinin gelişmesiyle birlikte verimi %120 olan devridaim makineleri üretmek mümkün hâle gelmiştir.",
+          "dogru": false
+        },
+        {
+          "metin": "Verim, yapılan faydalı işin harcanan toplam enerjiye oranı olup birimsiz bir büyüklüktür.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "ciftler": [
+        [
+          "Emek = Ek + Ep = Sabit",
+          "Sürtünmesiz ortamda mekanik enerjinin korunumu"
+        ],
+        [
+          "Eısı = fs · Δx",
+          "Sürtünme kuvvetinin yaptığı iş (ısıya dönüşen enerji)"
+        ],
+        [
+          "v = kök(2·g·h)",
+          "Serbest düşen cismin yere çarpma sürati"
+        ],
+        [
+          "Verim = Efaydalı / Etoplam",
+          "Bir sistemin enerji kullanım etkinliği oranı"
+        ],
+        [
+          "A sınıfı enerji etiketi",
+          "Kayıp enerjisi en düşük, verimi en yüksek cihaz sınıfı"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "cumleler": [
+        {
+          "metin": "Bir sistemdeki kinetik enerji ile potansiyel enerjinin toplamına ___ enerji adı verilir.",
+          "cevap": "mekanik"
+        },
+        {
+          "metin": "Sürtünmeli ortamlarda azalan mekanik enerji yok olmaz; sürtünme kuvvetinin yaptığı iş kadar ___ enerjisine dönüşür.",
+          "cevap": "ısı"
+        },
+        {
+          "metin": "Sürtünmesiz basit sarkaçta küre denge konumundan (en alt noktadan) geçerken ___ enerjisi maksimum değerdedir.",
+          "cevap": "kinetik"
+        },
+        {
+          "metin": "Bir makineden alınan faydalı gücün makineye verilen toplam güce oranına ___ denir.",
+          "cevap": "verim"
+        },
+        {
+          "metin": "Dışarıdan enerji almadan sonsuza kadar kendi kendine çalışacağı varsayılan hayalî düzeneğe ___ makinesi denir.",
+          "cevap": "devridaim"
+        }
+      ],
+      "fazla": [
+        "nükleer",
+        "ivme",
+        "impuls"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir hidroelektrik santralinde (HES) baraj gölündeki suyun elektrik enerjisi üretme sürecini, gerçekleşen enerji dönüşümleri ve verim kavramı çerçevesinde 3 adımda çözümleyiniz.",
+      "ipuclari": [
+        "1. Adım (Potansiyel → Kinetik): Barajda yüksekte tutulan suyun cebri borulardan aşağı akarken potansiyel enerjisinin kinetik enerjiye dönüşmesi.",
+        "2. Adım (Kinetik → Elektrik): Hızlanan suyun türbin çarklarını döndürmesi ve jeneratörde mekanik enerjinin elektrik enerjisine çevrilmesi.",
+        "3. Adım (Kayıplar ve Verim): Borulardaki ve türbin yataklarındaki sürtünme nedeniyle enerjinin bir kısmının ısıya dönüşmesi ve verimin %100'den küçük kalması."
+      ],
+      "cevap": "1) Baraj gölünde h yüksekliğinde biriktirilen su yüksek bir yer çekimi potansiyel enerjisine (Ep = m·g·h) sahiptir; kapaklar açıldığında su borulardan aşağı inerken bu enerji öteleme kinetik enerjisine dönüşür. 2) Yüksek hızla akan su türbin kanatlarına çarparak dönme kinetik enerjisi oluşturur ve türbine bağlı jeneratör bu mekanik enerjiyi elektrik enerjisine dönüştürür. 3) Su borularındaki sürtünme, türbin rulmanlarındaki ısınma ve jeneratör tellerindeki direnç kayıpları nedeniyle alınan elektrik enerjisi suyun ilk potansiyel enerjisinden biraz küçüktür (modern HES'lerde verim yaklaşık %85–90 düzeyindedir)."
+    }
+  ],
+  "ozet": [
+    "Sürtünmesiz ve dış kuvvetin iş yapmadığı ortamlarda mekanik enerji (Emek = Ek + Ep) korunur; azalan potansiyel enerji artan kinetik enerjiye eşittir.",
+    "Sürtünmesiz ortamda h yüksekliğinden bırakılan bir cismin yere çarpma sürati v = kök(2·g·h) olup cismin kütlesine bağlı değildir.",
+    "Sürtünmeli ortamlarda mekanik enerji korunmaz; mekanik enerjideki azalma miktarı sürtünme kuvvetinin yaptığı işe (Eısı = fs · Δx) eşittir.",
+    "Yatay sürtünmeli yolda fren yapan bir aracın durma mesafesi hızının karesiyle (v²) doğru orantılı, sürtünme katsayısıyla (k) ters orantılıdır.",
+    "Verim, yapılan faydalı işin harcanan toplam enerjiye oranıdır (Efaydalı / Etoplam); sürtünmeler nedeniyle gerçek makinelerde verim %100'den küçüktür."
+  ]
+}

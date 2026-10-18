@@ -1,0 +1,251 @@
+{
+  "ad": "9-fizik-13",
+  "sinif": 9,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 13,
+  "tarih": "14-18 Aralık 2026",
+  "yayin_tarihi": "2026-10-18",
+  "unite": "2. TEMA: KUVVET VE HAREKET",
+  "konu": "Sabit Hızlı Hareket (Düzgün Doğrusal Hareket): Konum-Zaman ve Hız-Zaman Grafikleri ile İvmeli Hareket Kavramı (FİZ.9.2.6 & FİZ.9.2.7)",
+  "ciktilar": [
+    "Bir doğru boyunca eşit zaman aralıklarında eşit yer değiştirmeler yapan cisimlerin hareketini 'sabit hızlı hareket (düzgün doğrusal hareket)' olarak tanımlar ve matematiksel modelini kurar (FİZ.9.2.6).",
+    "Sabit hızlı harekete ait konum-zaman (x-t) ve hız-zaman (v-t) grafiklerini çizerek eğim ve grafik altı alan kavramları üzerinden birbirine dönüştürür (FİZ.9.2.6-7).",
+    "Birim zamandaki hız değişimi olarak tanımlanan ivme kavramını, hızlanan ve yavaşlayan doğrusal hareket örnekleri ile hız-zaman grafikleri üzerinden çözümler (FİZ.9.2.6-7)."
+  ],
+  "giris": "Geçen hafta hareketin göreliliğini ve konum, yer değiştirme, sürat, hız gibi temel kavramları öğrenmiştik. Bu hafta doğadaki ve teknolojideki hareket modellerinin ilki olan {koyu:sabit hızlı hareketi (düzgün doğrusal hareketi)}, bu hareketin {koyu:konum-zaman (x-t)} ve {koyu:hız-zaman (v-t)} grafiklerini ve hızın zamanla değiştiği {koyu:ivmeli hareket} durumlarını grafiksel ve matematiksel ilişkileriyle inceleyeceğiz.",
+  "bolumler": [
+    {
+      "baslik": "Sabit Hızlı Hareket (Düzgün Doğrusal Hareket)",
+      "metin": [
+        "Bir doğru boyunca hareket eden bir cismin {koyu:eşit zaman aralıklarında eşit yer değiştirmeler} yapmasına {koyu:düzgün doğrusal hareket} veya {koyu:sabit hızlı hareket} denir. Örneğin doğrusal bir otoyolda hız sabitleyicisi 90 km/h (25 m/s) değerine ayarlanmış bir otomobil, her 1 saniyede aynı yönde 25 metre yer değiştirir. Doğrusal bir yörüngede yön değiştirilmeden gidildiği için bu harekette alınan yolun büyüklüğü yer değiştirmenin büyüklüğüne, sürat de hızın büyüklüğüne eşittir.",
+        "Sabit hızlı harekette hız vektörünün hem büyüklüğü hem de yönü zamanla değişmez ({koyu:v = sabit}). Hız değişimi sıfır olduğu için cismin {koyu:ivmesi sıfırdır (a = 0)}. Cismin Δt süresince yaptığı yer değiştirme {koyu:Δx = v · Δt} bağıntısıyla hesaplanır. Eğer cisim t = 0 başlangıç anında x₀ konumunda bulunuyorsa, t anındaki son konumu {koyu:x = x₀ + v · t} denklemiyle bulunur.",
+        "Seçilen referans sisteminde genellikle doğu yönü pozitif (+x), batı yönü ise negatif (-x) kabul edilir. Pozitif (+x) yönde sabit hızla giden bir aracın hızı {koyu:+v}, negatif (-x) yönde sabit hızla giden bir aracın hızı ise {koyu:-v} olarak işaretlenir. Hızın önündeki eksi (-) işareti sayısal küçüklük değil, hareketin {koyu:negatif yönde} gerçekleştiğini gösterir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">SABİT HIZLI HAREKET (DÜZGÜN DOĞRUSAL HAREKET — Δx = v · Δt)</text>\n  <rect x=\"20\" y=\"45\" width=\"660\" height=\"105\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"350\" y=\"66\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e40af\">EŞİT ZAMAN ARALIKLARINDA EŞİT YER DEĞİŞTİRME (v = +20 m/s SABİT)</text>\n  <line x1=\"60\" y1=\"115\" x2=\"640\" y2=\"115\" stroke=\"#1e3a8a\" stroke-width=\"3\"/>\n  <circle cx=\"90\" cy=\"115\" r=\"7\" fill=\"#dc2626\"/>\n  <text x=\"90\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">t = 0 s</text>\n  <text x=\"90\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">x₀ = 0 m</text>\n  <circle cx=\"250\" cy=\"115\" r=\"7\" fill=\"#dc2626\"/>\n  <text x=\"250\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">t = 1 s</text>\n  <text x=\"250\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">x₁ = +20 m</text>\n  <circle cx=\"410\" cy=\"115\" r=\"7\" fill=\"#dc2626\"/>\n  <text x=\"410\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">t = 2 s</text>\n  <text x=\"410\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">x₂ = +40 m</text>\n  <circle cx=\"570\" cy=\"115\" r=\"7\" fill=\"#dc2626\"/>\n  <text x=\"570\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">t = 3 s</text>\n  <text x=\"570\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">x₃ = +60 m</text>\n  <rect x=\"20\" y=\"162\" width=\"660\" height=\"82\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"350\" y=\"185\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">DÜZGÜN DOĞRUSAL HAREKETİN TEMEL ÖZELLİKLERİ</text>\n  <text x=\"40\" y=\"208\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">• Yörünge doğrusal, hız vektörünün yönü ve büyüklüğü sabittir (v = sabit, ivme a = 0).</text>\n  <text x=\"40\" y=\"228\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">• Konum denklemi: x(t) = x₀ + v · t  |  Yer değiştirme: Δx = x - x₀ = v · Δt</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Sabit Süratli Hareket ile Sabit Hızlı Hareket Aynı Mıdır?",
+          "metin": "Hayır! Çembersel bir pistte ibresi hep 60 km/h gösteren bir araç {koyu:sabit süratli} hareket yapar; ancak hareket yönü sürekli değiştiği için hız vektörü değişkendir, yani {koyu:sabit hızlı hareket yapmaz}. Sabit hızlı hareket için yörüngenin mutlaka {koyu:doğrusal} olması ve yönün değişmemesi gerekir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Karşılaşma ve Yetişme Problemleri",
+          "metin": "Aralarında d mesafesi bulunan iki araç birbirine doğru {koyu:v₁} ve {koyu:v₂} sabit süratleriyle hareket ediyorsa {koyu:d = (v₁ + v₂) · t} sürede karşılaşırlar. Aynı yönde gidiyorlarsa arkadaki hızlı araç öndekine {koyu:d = (v₁ - v₂) · t} sürede yetişir."
+        }
+      ]
+    },
+    {
+      "baslik": "Konum-Zaman (x-t) ve Hız-Zaman (v-t) Grafiklerinin Analizi",
+      "metin": [
+        "Hareket verilerini görselleştirmek ve yorumlamak için grafiklerden yararlanılır. {koyu:1. Konum-Zaman (x-t) Grafiği:} Sabit hızlı hareket yapan bir cismin konumu zamanla düzgün arttığı veya azaldığı için konum-zaman grafiği {koyu:eğimi sabit bir doğrudur}. Konum-zaman grafiğinin {koyu:eğimi} (dikey değişimin yatay değişime oranı) cismin {koyu:hızını} verir: {koyu:Eğim = {kesir:Δx|Δt} = {kesir:x_son - x_ilk|t_son - t_ilk} = v}. Grafik doğrusu yukarı doğru çıkıyorsa eğim pozitiftir ve cisim (+x) yönde sabit hızla gidiyordur; aşağı doğru iniyorsa eğim negatiftir ve cisim (-x) yönde sabit hızla gidiyordur; zaman eksenine paralel (yatay) ise eğim sıfırdır ve cisim {koyu:duruyordur (v = 0)}.",
+        "{koyu:2. Hız-Zaman (v-t) Grafiği:} Sabit hızlı harekette hız zamanla değişmediği için hız-zaman grafiği zaman eksenine paralel {koyu:yatay bir doğrudur}. Pozitif (+x) yönde harekette doğru zaman ekseninin üstünde (+v), negatif (-x) yönde harekette ise zaman ekseninin altında (-v) yer alır.",
+        "Hız-zaman (v-t) grafiği ile zaman ekseni arasında kalan {koyu:alan}, cismin o zaman aralığındaki {koyu:yer değiştirmesini (Δx)} verir ({koyu:Alan = v · Δt = Δx}). Zaman ekseninin üstündeki alanlar pozitif (+Δx), altındaki alanlar ise negatif (-Δx) yer değiştirmeyi gösterir. Cismin yaptığı {koyu:toplam yer değiştirme} bulunurken üstteki ve alttaki alanların cebirsel toplamı ({koyu:Δx_net = Δx₁ + Δx₂}); {koyu:toplam alınan yol} bulunurken ise tüm alanların mutlak değerlerinin toplamı ({koyu:d = {uzunluk:Δx₁} + {uzunluk:Δx₂}}) alınır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">KONUM-ZAMAN (x-t) VE HIZ-ZAMAN (v-t) GRAFİKLERİNİN ANALİZİ</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"195\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"66\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">KONUM - ZAMAN (x - t) GRAFİĞİ</text>\n  <line x1=\"65\" y1=\"185\" x2=\"65\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <line x1=\"65\" y1=\"185\" x2=\"295\" y2=\"185\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <line x1=\"65\" y1=\"185\" x2=\"255\" y2=\"95\" stroke=\"#dc2626\" stroke-width=\"3\"/>\n  <line x1=\"255\" y1=\"95\" x2=\"255\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n  <line x1=\"65\" y1=\"95\" x2=\"255\" y2=\"95\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n  <text x=\"50\" y=\"99\" text-anchor=\"end\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">x</text>\n  <text x=\"255\" y=\"200\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">t</text>\n  <text x=\"180\" y=\"222\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">EĞİM = Δx / Δt = HIZ (v)</text>\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"195\" rx=\"10\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"66\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\">HIZ - ZAMAN (v - t) GRAFİĞİ</text>\n  <line x1=\"405\" y1=\"185\" x2=\"405\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <line x1=\"405\" y1=\"185\" x2=\"635\" y2=\"185\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <rect x=\"405\" y=\"110\" width=\"190\" height=\"75\" fill=\"#fde68a\" opacity=\"0.7\"/>\n  <line x1=\"405\" y1=\"110\" x2=\"595\" y2=\"110\" stroke=\"#16a34a\" stroke-width=\"3\"/>\n  <line x1=\"595\" y1=\"110\" x2=\"595\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n  <text x=\"392\" y=\"114\" text-anchor=\"end\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#16a34a\">v</text>\n  <text x=\"595\" y=\"200\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#16a34a\">t</text>\n  <text x=\"500\" y=\"152\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#78350f\">ALAN = Δx = v · t</text>\n  <text x=\"520\" y=\"222\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">ALTINDAKİ ALAN = YER DEĞİŞTİRME (Δx)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Grafiklerde Yön Değiştirme Anı Nasıl Bulunur?",
+          "metin": "{koyu:Konum-zaman (x-t) grafiğinde} çizginin tepe veya çukur yaparak geri döndüğü (eğimin işaret değiştirdiği) anlarda cisim yön değiştirmiştir. {koyu:Hız-zaman (v-t) grafiğinde} ise grafiğin zaman eksenini kesip (+) bölgeden (-) bölgeye (veya tersine) geçtiği anlarda cisim yön değiştirmiştir!"
+        }
+      ]
+    },
+    {
+      "baslik": "İvmeli Hareket Kavramı ve Hız-Zaman Grafiğinde Eğim",
+      "metin": [
+        "Günlük hayatta araçlar hep sabit hızla gitmez; kırmızı ışıkta durur, yeşil yanınca hızlanır, viraja girerken yavaşlar. Bir hareketlinin {koyu:birim zamandaki hız değişimine ivme} denir. İvme {koyu:a} sembolüyle gösterilir, {koyu:vektörel} bir büyüklüktür ve SI'daki birimi {koyu:metre/saniyekare (m/{us:s|2})}'dir. Matematiksel modeli {koyu:a = {kesir:Δv|Δt} = {kesir:v_son - v_ilk|Δt}} şeklindedir. Örneğin durgun hâlden harekete geçip ivmesi +3 m/{us:s|2} olan bir aracın hızı her saniye 3 m/s artar (0, 3 m/s, 6 m/s, 9 m/s...).",
+        "{koyu:Hız-zaman (v-t) grafiğinin eğimi} cismin {koyu:ivmesini (a)} verir ({koyu:Eğim = {kesir:Δv|Δt} = a}). Sabit ivmeli harekette v-t grafiği eğimli bir doğrudur; bu doğrunun altında kalan yamuk veya üçgen alanı yine yer değiştirmeyi (Δx) verir. {koyu:İvme-zaman (a-t) grafiğinin} altında kalan alan ise o süredeki {koyu:hız değişimini (Δv = a · Δt)} verir (son hızı değil, hızdaki artışı veya azalışı verir!).",
+        "Bir cismin hızlanıp yavaşladığına hız vektörü ({koyu:v}) ile ivme vektörünün ({koyu:a}) yönlerine bakılarak karar verilir: Hız ve ivme vektörleri {koyu:aynı yönlü} ise (ikisi de + veya ikisi de -) cisim {koyu:hızlanır}; hız ve ivme vektörleri {koyu:zıt yönlü} ise (biri +, diğeri -) cisim {koyu:yavaşlar}. Hava direncinin ihmal edildiği ortamda yukarıdan bırakılan cisimlerin yaptığı {koyu:serbest düşme} hareketi de yer çekimi ivmesiyle (g ≈ 9,8 m/{us:s|2}, işlemlerde 10 m/{us:s|2}) gerçekleşen sabit ivmeli bir harekettir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">İVMELİ HAREKET VE SABİT İVMELİ HAREKETTE HIZ DEĞİŞİMİ</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"195\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#7e22ce\">İVME KAVRAMI (a = Δv / Δt)</text>\n  <text x=\"35\" y=\"96\" font-size=\"11\" font-weight=\"bold\" fill=\"#581c87\">• Birim zamandaki hız değişimidir.</text>\n  <text x=\"35\" y=\"120\" font-size=\"11\" font-weight=\"bold\" fill=\"#581c87\">• Vektörel büyüklüktür; SI birimi m/s²'dir.</text>\n  <text x=\"35\" y=\"144\" font-size=\"11\" font-weight=\"bold\" fill=\"#581c87\">• Formül: a = (v_son - v_ilk) / Δt</text>\n  <text x=\"35\" y=\"170\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">• v - t grafiğinin EĞİMİ ivmeyi (a) verir.</text>\n  <text x=\"35\" y=\"194\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b91c1c\">• a - t grafiğinin ALANI hız değişimini (Δv) verir.</text>\n  <text x=\"35\" y=\"218\" font-size=\"10.5\" fill=\"#581c87\">• Sabit hızlı harekette Δv = 0 → a = 0 m/s².</text>\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"195\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#b91c1c\">HIZLANMA VE YAVAŞLAMA KOŞULU</text>\n  <text x=\"378\" y=\"98\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">1. Hızlanan Hareket:</text>\n  <text x=\"378\" y=\"116\" font-size=\"10.5\" fill=\"#166534\">Hız vektörü (v) ile ivme vektörü (a) AYNI yönlüdür</text>\n  <text x=\"378\" y=\"132\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">(+v ve +a  veya  -v ve -a).</text>\n  <text x=\"378\" y=\"162\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">2. Yavaşlayan Hareket:</text>\n  <text x=\"378\" y=\"180\" font-size=\"10.5\" fill=\"#991b1b\">Hız vektörü (v) ile ivme vektörü (a) ZIT yönlüdür</text>\n  <text x=\"378\" y=\"196\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">(+v ve -a  veya  -v ve +a).</text>\n  <text x=\"378\" y=\"220\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Serbest düşme ivmesi: g ≈ 9,8 m/s² (veya 10 m/s²)</text>\n</svg>",
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Negatif İvme Her Zaman Yavaşlama Demek Değildir!",
+          "metin": "İvmenin negatif (-a) olması tek başına yavaşlama anlamına gelmez: Eğer araç pozitif (+x) yönde giderken ivmesi negatif (-a) ise araç yavaşlar; ancak araç zaten negatif (-x) yönde gidiyorsa (-v) ve ivmesi de negatifse (-a), hız ve ivme aynı yönlü olduğu için araç negatif yönde {koyu:hızlanır}!"
+        }
+      ]
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Doğrusal bir yolda t = 0 anında x₀ = -15 m konumundan geçen bir araç, pozitif (+x) yönde sabit 12 m/s hızla hareket etmektedir. Aracın t = 5 s anındaki son konumu (x) ve bu süredeki yer değiştirmesi (Δx) kaç metredir?",
+      "cevap": "Yer değiştirme: Δx = v · Δt = (+12 m/s) · 5 s = {koyu:+60 m}'dir. Aracın t = 5 s anındaki son konumu ise x = x₀ + Δx = -15 + 60 = {koyu:+45 m} olur."
+    },
+    {
+      "soru": "Aralarında 360 metre mesafe bulunan K ve L araçları doğrusal bir yolda birbirlerine doğru sabit 15 m/s ve 25 m/s süratlerle aynı anda harekete geçiyor. Araçlar kaç saniye sonra ve K'nin ilk konumundan kaç metre uzakta karşılaşırlar?",
+      "cevap": "Karşılaşma süresi: d = (v_K + v_L) · t → 360 = (15 + 25) · t → 360 = 40 · t → {koyu:t = 9 saniye} sonra karşılaşırlar. K aracının bu sürede aldığı yol: x_K = 15 · 9 = {koyu:135 metre} olur."
+    },
+    {
+      "soru": "Konum-zaman (x-t) grafiğinde t = 0 anında konumu +10 m olan bir hareketli, doğrusal olarak t = 4 s anında +50 m konumuna ulaşıyor; ardından t = 4 s ile t = 6 s arasında +50 m konumunda kalıyor. Hareketlinin 0-4 s ve 4-6 s aralıklarındaki hızlarını bulunuz.",
+      "cevap": "Konum-zaman grafiğinin eğimi hızı verir. 0-4 s aralığında: v₁ = {kesir:50 - 10|4 - 0} = {kesir:40|4} = {koyu:+10 m/s}. 4-6 s aralığında konum değişmediği için: v₂ = {kesir:50 - 50|6 - 4} = {koyu:0 m/s} (araç durmaktadır)."
+    },
+    {
+      "soru": "Doğrusal yoldaki bir aracın hız-zaman (v-t) grafiğinde; 0-3 s aralığında hızı sabit +20 m/s, 3-5 s aralığında ise sabit -10 m/s'dir. Aracın 0-5 s aralığındaki toplam yer değiştirmesini (Δx) ve aldığı toplam yolu (d) hesaplayınız.",
+      "cevap": "v-t grafiğinin altındaki alan yer değiştirmeyi verir. 0-3 s aralığında: Δx₁ = (+20) · 3 = {koyu:+60 m}. 3-5 s aralığında: Δx₂ = (-10) · 2 = {koyu:-20 m}. Toplam yer değiştirme: Δx = +60 + (-20) = {koyu:+40 m}. Toplam alınan yol: d = {uzunluk:+60} + {uzunluk:-20} = 60 + 20 = {koyu:80 m}."
+    },
+    {
+      "soru": "Doğrusal bir yolda +8 m/s hızla ilerleyen bir motosikletli, sabit ivmeyle hızlanarak 6 saniye sonunda hızını +32 m/s'ye çıkarıyor. Motosikletlinin ivmesi kaç m/{us:s|2}'dir ve bu sürede kaç metre yer değiştirmiştir?",
+      "cevap": "İvme: a = {kesir:v_son - v_ilk|Δt} = {kesir:32 - 8|6} = {kesir:24|6} = {koyu:+4 m/{us:s|2}}'dir. Sabit ivmeli harekette yer değiştirme v-t grafiğinin (yamuğun) alanından veya ortalama hızdan bulunur: Δx = {kesir:v_ilk + v_son|2} · Δt = {kesir:8 + 32|2} · 6 = 20 · 6 = {koyu:120 metre}."
+    },
+    {
+      "soru": "Pozitif (+x) yönde 30 m/s hızla giden bir tren frene basarak 5 saniyede duruyor. Trenin ivmesini büyüklük ve yön olarak bulunuz.",
+      "cevap": "İlk hız v_ilk = +30 m/s, son hız v_son = 0 m/s ve Δt = 5 s'dir. İvme: a = {kesir:0 - 30|5} = {koyu:-6 m/{us:s|2}} bulunur. Araç (+x) yönde giderken yavaşladığı için ivme vektörü harekete zıt, yani {koyu:negatif (-x) yönde} ve 6 m/{us:s|2} büyüklüğündedir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Doğrusal bir yolda sabit hızlı hareket (düzgün doğrusal hareket) yapan bir otomobil için aşağıdaki ifadelerden hangisi yanlıştır?",
+      "secenekler": [
+        "Eşit zaman aralıklarında eşit büyüklükte yer değiştirmeler yapar.",
+        "Konum-zaman (x-t) grafiğinin eğimi sabit ve sıfırdan farklıdır.",
+        "Hız vektörünün yönü ve büyüklüğü hareket süresince değişmez.",
+        "Hız-zaman (v-t) grafiği zaman eksenine paralel yatay bir doğrudur.",
+        "Birim zamandaki hız değişimi (ivmesi) zamanla düzgün olarak artar."
+      ],
+      "dogru": 4,
+      "aciklama": "Sabit hızlı harekette hız değişimi sıfır olduğu için (Δv = 0) cismin ivmesi sıfırdır (a = 0); ivmesi zamanla artmaz."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Doğrusal bir yolda hareket eden K ve L araçlarından K aracı t = 0 anında x = -20 m konumundan +15 m/s sabit hızla, L aracı ise aynı anda x = +60 m konumundan -5 m/s sabit hızla geçmektedir. Buna göre iki araç kaçıncı saniyede yan yana gelir?",
+      "secenekler": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "8"
+      ],
+      "dogru": 2,
+      "aciklama": "Araçların t anındaki konum denklemleri eşitlenir: x_K(t) = x_L(t) → -20 + 15·t = 60 - 5·t → 20·t = 80 → t = 4. saniyede (x = +40 m konumunda) yan yana gelirler."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Doğrusal bir yolda hareket eden bir cismin hız-zaman (v-t) grafiğinde; 0-4 s aralığında hızı sabit +10 m/s, 4-6 s aralığında ise sabit -15 m/s'dir. Bu cismin 0-6 s aralığındaki yer değiştirmesinin büyüklüğü (Δx) ve aldığı toplam yol (d) aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Δx = 10 m, d = 70 m",
+        "Δx = 70 m, d = 10 m",
+        "Δx = 25 m, d = 50 m",
+        "Δx = 40 m, d = 30 m",
+        "Δx = 70 m, d = 70 m"
+      ],
+      "dogru": 0,
+      "aciklama": "0-4 s aralığında alan: Δx₁ = (+10)·4 = +40 m. 4-6 s aralığında alan: Δx₂ = (-15)·2 = -30 m. Yer değiştirme: Δx = +40 + (-30) = +10 m. Toplam alınan yol: d = 40 + 30 = 70 m."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Doğrusal bir yolda ilk hızı +12 m/s olan bir araç, +3 m/{us:s|2} sabit ivmeyle 4 saniye boyunca hızlanıyor. Aracın 4. saniye sonundaki hızı kaç m/s olur?",
+      "secenekler": [
+        "15",
+        "16",
+        "20",
+        "24",
+        "36"
+      ],
+      "dogru": 3,
+      "aciklama": "Hız değişimi Δv = a · Δt = 3 · 4 = +12 m/s'dir. Son hız: v_son = v_ilk + Δv = 12 + 12 = 24 m/s olur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Sabit hızlı hareket, grafikler ve ivme kavramıyla ilgili aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Konum-zaman (x-t) grafiğinin eğimi hareketlinin hızını verir.",
+          "dogru": true
+        },
+        {
+          "metin": "Hız-zaman (v-t) grafiğinde çizginin zaman ekseninin altında (-v bölgesinde) olması aracın negatif yönde hareket ettiğini gösterir.",
+          "dogru": true
+        },
+        {
+          "metin": "Konum-zaman (x-t) grafiği zaman eksenine paralel yatay bir doğru olan cisim sabit hızla ilerlemektedir.",
+          "dogru": false
+        },
+        {
+          "metin": "Hız vektörü ile ivme vektörü zıt yönlü olan bir araç yavaşlayan hareket yapar.",
+          "dogru": true
+        },
+        {
+          "metin": "İvme-zaman (a-t) grafiğinin altında kalan alan doğrudan cismin yer değiştirmesini verir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki grafik özelliklerini veya fiziksel bağıntıları karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Konum-zaman (x-t) grafiğinin eğimi",
+          "Hareketlinin hızını (v = Δx / Δt) verir"
+        ],
+        [
+          "Hız-zaman (v-t) grafiğinin altındaki alan",
+          "Hareketlinin yer değiştirmesini (Δx) verir"
+        ],
+        [
+          "Hız-zaman (v-t) grafiğinin eğimi",
+          "Hareketlinin ivmesini (a = Δv / Δt) verir"
+        ],
+        [
+          "İvme-zaman (a-t) grafiğinin altındaki alan",
+          "Birim zamandaki hız değişimini (Δv) verir"
+        ],
+        [
+          "Sabit hızlı doğrusal hareket",
+          "İvmenin sıfır (a = 0), hızın sabit olduğu hareket"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun fiziksel kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir doğru boyunca eşit zaman aralıklarında eşit yer değiştirmeler yapılan harekete ___ doğrusal hareket denir.",
+          "cevap": "düzgün"
+        },
+        {
+          "metin": "Birim zamandaki hız değişimine ___ adı verilir ve SI birimi m/{us:s|2}'dir.",
+          "cevap": "ivme"
+        },
+        {
+          "metin": "Konum-zaman grafiğinde doğrunun tepe veya çukur yaptığı noktalarda hareketli ___ değiştirmiştir.",
+          "cevap": "yön"
+        },
+        {
+          "metin": "Hava direncinin önemsenmediği ortamda yüksekten bırakılan cisimlerin yaptığı harekete ___ düşme denir.",
+          "cevap": "serbest"
+        },
+        {
+          "metin": "Negatif (-x) yönde hareket eden bir aracın hız vektörü de ivme vektörü de negatif (-) ise araç ___ hareketi yapar.",
+          "cevap": "hızlanma"
+        }
+      ],
+      "fazla": [
+        "yavaşlama",
+        "dönme"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Doğrusal bir yolda t = 0 anında aynı konumdan (x₀ = 0) harekete başlayan X ve Y araçlarından; X aracı sabit +15 m/s hızla gitmekte, Y aracı ise ilk hızı 0 m/s olup sabit +6 m/{us:s|2} ivmeyle hızlanmaktadır. t = 4 s sonunda X ve Y araçlarının hızlarını ve konumlarını bularak hangi aracın daha önde olduğunu açıklayınız.",
+      "cevap": "t = 4 s sonunda: {koyu:X aracı} sabit hızlı olduğundan hızı {koyu:v_X = +15 m/s}, konumu ise x_X = v_X · t = 15 · 4 = {koyu:+60 m}'dir. {koyu:Y aracı} sabit ivmeli hızlandığından 4. saniyedeki hızı v_Y = a · t = 6 · 4 = {koyu:+24 m/s}, konumu (v-t üçgen alanı) ise x_Y = {kesir:0 + 24|2} · 4 = {koyu:+48 m}'dir. Dolayısıyla t = 4 s anında Y'nin anlık hızı daha büyük olmasına rağmen, {koyu:X aracı (+60 m > +48 m) hâlâ 12 metre daha öndedir}.",
+      "ipuclari": [
+        "Sabit hızlı X aracı için x_X = v_X · t bağıntısını kullanınız.",
+        "Sabit ivmeli Y aracı için önce 4. saniyedeki son hızı (v_Y = a · t) bulunuz.",
+        "Y aracının yer değiştirmesini v-t grafiğinin altındaki üçgen alanından (Δx_Y = v_Y · t / 2) hesaplayıp X'in konumuyla karşılaştırınız."
+      ]
+    }
+  ],
+  "ozet": [
+    "Bir doğru boyunca eşit zaman aralıklarında eşit yer değiştirmeler yapılan harekete düzgün doğrusal (sabit hızlı) hareket denir; bu harekette hız sabittir ve ivme sıfırdır (a = 0).",
+    "Sabit hızlı harekette yer değiştirme Δx = v · Δt, cismin herhangi bir t anındaki konumu ise x = x₀ + v · t bağıntısıyla hesaplanır.",
+    "Konum-zaman (x-t) grafiğinin eğimi hızı (v = Δx / Δt) verir; grafiğin tepe ve çukur noktaları cismin yön değiştirdiği anlardır.",
+    "Hız-zaman (v-t) grafiğinin altında kalan alan yer değiştirmeyi (Δx), eğimi ise ivmeyi (a = Δv / Δt) verir; grafiğin zaman eksenini kestiği anlarda cisim yön değiştirir.",
+    "Hız vektörü ile ivme vektörü aynı yönlü (+,+ veya -,-) ise cisim hızlanır; zıt yönlü (+,- veya -,+) ise cisim yavaşlar."
+  ]
+}
