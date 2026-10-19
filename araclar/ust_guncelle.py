@@ -29,6 +29,12 @@ def guncelle(yol):
     k = kitle_bul(ad)
     if k and 'data-kitle=' not in t:
         t = re.sub(r'<body\b', f'<body data-kitle="{k}"', t, count=1)
+    if ad not in ('tahta.html', 'goruntule.html') and 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' not in t:
+        ads_tag = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6660544937586858" crossorigin="anonymous"></script>'
+        if '<meta name="google-adsense-account"' in t:
+            t = re.sub(r'(<meta name="google-adsense-account"[^>]*>)', rf'\1\n{ads_tag}', t, count=1)
+        else:
+            t = t.replace('</head>', f'{ads_tag}\n</head>', 1)
     t = re.sub(r'(/?ortak\.js)\?v=[\w-]+', rf'\1?v={BETIK_SURUMLERI["ortak.js"]}', t)
     for dosya, surum in SURUMLER:   # ortak stil ve betik sürümleri tek yerden (sayfa_uret / kesif_sablonlari); önbellekteki eski kopya kalmaz
         t = re.sub(rf'(/?{re.escape(dosya)})\?v=[\w-]+', rf'\1?v={surum}', t)

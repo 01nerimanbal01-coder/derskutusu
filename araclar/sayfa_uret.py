@@ -12,7 +12,7 @@ from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'goruntule.js': '20261012-1', 'belgeler.js': '20261012-1', 'agac.js': '20261013-2', 'yazili.js': '20261010-1', 'ortak.js': '20261018-2', 'tahta.js': '20261018-5', 'etkinlik.js': '20261017-9', 'arama.js': '20261004-duzen1', 'kutuphane.js': '20261013-2', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-1'}
+BETIK_SURUMLERI = {'goruntule.js': '20261012-1', 'belgeler.js': '20261012-1', 'agac.js': '20261013-2', 'yazili.js': '20261010-1', 'ortak.js': '20261019-1', 'tahta.js': '20261018-5', 'etkinlik.js': '20261017-9', 'arama.js': '20261004-duzen1', 'kutuphane.js': '20261013-2', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-1'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
@@ -121,6 +121,8 @@ def sayfa(ad, baslik, aciklama, govde, betikler=(), kanonik=True, sema_ek=None):
            f'<meta property="og:url" content="https://derskutusu.com/{ad}">\n') if kanonik else '<meta name="robots" content="noindex">\n'
     og_tip = 'article' if ad.startswith('ozet/') else 'website'
     sema = sema_olustur(ad, baslik, aciklama, sema_ek) if kanonik else ''
+    ads_head = (f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={REKLAM_MUSTERI}" crossorigin="anonymous"></script>\n'
+                if ad not in ('tahta.html', 'goruntule.html') else '')
     js = ''.join(f'<script src="/{b}?v={BETIK_SURUMLERI.get(b, SURUM)}"></script>\n' for b in ('ortak.js', *betikler, 'arama.js', 'tahta.js'))
     if ad == 'icerikler.html':
         govde = kutuphane_govde(govde)
@@ -134,7 +136,7 @@ def sayfa(ad, baslik, aciklama, govde, betikler=(), kanonik=True, sema_ek=None):
 {kan}<meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#2451d6">
 <meta name="google-adsense-account" content="ca-pub-6660544937586858">
-<link rel="icon" href="/favicon.ico" sizes="any">
+{ads_head}<link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">

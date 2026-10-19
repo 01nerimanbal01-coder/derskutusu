@@ -282,11 +282,9 @@ ortakVeri.then(({ ayar }) => {
   });
 })();
 
-// Reklam izni (kullanıcı 29.09.2026 "adsense de kurabiliriz", 17.10.2026 "adsbygoogle.js betiğini ekle"; KVKK): Google AdSense betiği
-// yalnız ziyaretçi "Kabul et" deyince yüklenir; ret de saklanır, yeniden sorulmaz; seçim gizlilik.html'den değiştirilir.
-// Reklamlar kişiselleştirilmemiş istenir (requestNonPersonalizedAds). Tahta ve kitap görüntüleyicide betik hiç yüklenmez
-// (kalem/tahta alanına reklam konmaz). Reklam birimleri (sayfa_uret.py reklam_yeri): ana/ağaç sayfaları ve konu özetlerinde alt bilginin
-// üstünde tek alan; etkinlik, kalem/tahta, görüntüleyici ve indirme alanlarında yok. Alan HTML'de gizlidir; yalnız izin + betik yüklenince açılır.
+// Reklam yönetimi (kullanıcı 29.09.2026, 17.10.2026, 19.10.2026): Google AdSense betiği kişiselleştirilmemiş reklam moduyla
+// (requestNonPersonalizedAds = 1) doğrudan çalışır; ziyaretçi gizlilik.html sayfasından dilediği zaman reklamları kapatıp açabilir.
+// Tahta ve kitap görüntüleyicide reklam yüklenmez (kalem/tahta alanına reklam konmaz).
 (() => {
   const ANAHTAR = 'dk-reklam', MUSTERI = 'ca-pub-6660544937586858';
   const aracSayfasi = /^\/(tahta|goruntule)\.html$/.test(location.pathname);
@@ -305,40 +303,38 @@ ortakVeri.then(({ ayar }) => {
       setTimeout(() => { if (!birim.getAttribute('data-ad-status') && !birim.querySelector('iframe')) alan.hidden = true; }, 12000);
     });
   };
-  const gizle = () => $$('aside.reklam').forEach((alan) => { alan.hidden = true; });
+  const gizle = () => {
+    $$('aside.reklam, .google-auto-placed, ins.adsbygoogle').forEach((alan) => { alan.hidden = true; alan.style.display = 'none'; });
+  };
   const yukle = () => {
-    if (yuklendi || aracSayfasi) return;
-    yuklendi = true;
+    if (aracSayfasi) return;
     (window.adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = 1;
-    document.head.append(el('script', { async: true, src: `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${MUSTERI}`, crossorigin: 'anonymous', onerror: gizle }));
+    if (!yuklendi) {
+      yuklendi = true;
+      if (!$('script[src*="pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]')) {
+        document.head.append(el('script', { async: true, src: `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${MUSTERI}`, crossorigin: 'anonymous', onerror: gizle }));
+      }
+    }
     birimler();
   };
   const durum = $('#reklam-durum');
   const durumYaz = () => {
     if (!durum) return;
     const s = secim();
-    durum.textContent = s === 'evet' ? 'Seçiminiz: reklamlara izin verdiniz.' : s === 'hayir' ? 'Seçiminiz: reklamları reddettiniz; reklam kodu yüklenmiyor.' : 'Henüz seçim yapmadınız; reklam kodu yüklenmiyor.';
+    durum.textContent = s === 'hayir'
+      ? 'Seçiminiz: reklamları kapattınız; bu cihazda reklam gösterilmiyor.'
+      : 'Seçiminiz: kişiselleştirilmemiş reklamlar açık.';
   };
-  let pencere = null;
-  const sor = () => {
-    if (pencere || aracSayfasi) return;
-    const karar = (d) => { pencere.remove(); pencere = null; kaydet(d); if (d === 'evet') yukle(); durumYaz(); };
-    pencere = el('aside', { sinif: 'izin reklam-izin', role: 'dialog', 'aria-labelledby': 'reklam-izin-baslik', 'aria-describedby': 'reklam-izin-metin' },
-      el('h2', { id: 'reklam-izin-baslik' }, 'Reklam izni'),
-      el('p', { id: 'reklam-izin-metin' }, 'Siteyi ücretsiz tutmak için Google reklamları gösterebiliriz. Reklamlar kişiselleştirilmez. İzin verirseniz Google reklam çerezi kullanabilir. ',
-        el('a', { href: '/gizlilik.html' }, 'Ayrıntılar')),
-      el('div', { sinif: 'dugmeler' },
-        el('button', { sinif: 'dugme ana', type: 'button', onclick: () => karar('evet') }, 'Kabul et'),
-        el('button', { sinif: 'dugme', type: 'button', onclick: () => karar('hayir') }, 'Reddet')));
-    const atla = $('a.atla');   // sekme sırasında erken: klavyeyle hemen ulaşılır, odak zorla alınmaz
-    if (atla) atla.after(pencere); else document.body.prepend(pencere);
-  };
-  const s = secim();
-  if (s === 'evet') yukle(); else if (s !== 'hayir') sor();
+  if (secim() === 'hayir') gizle(); else yukle();
 
   // gizlilik.html: seçimi göster ve değiştir; Instagram (ve eski Facebook) iznini sıfırla
   durumYaz();
-  $('#reklam-degistir')?.addEventListener('click', () => { kaydet(null); durumYaz(); sor(); });
+  $('#reklam-degistir')?.addEventListener('click', () => {
+    const yeni = secim() === 'hayir' ? 'evet' : 'hayir';
+    kaydet(yeni);
+    if (yeni === 'hayir') gizle(); else yukle();
+    durumYaz();
+  });
   $('#sifirla')?.addEventListener('click', () => {
     try { ['harici-ig', 'harici-fb'].forEach((a) => localStorage.removeItem(a)); } catch {}
     const d = $('#durum');
