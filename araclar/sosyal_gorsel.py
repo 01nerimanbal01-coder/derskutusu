@@ -133,12 +133,19 @@ def _normalize_sup_sub(s):
 
 
 def _parcala_ic(s):
-    """Üs (^), alt indis (_) ve normal metin parçalarını ayrıştırır."""
+    """Üs (^), alt indis (_), ok (→) ve normal metin parçalarını ayrıştırır."""
     dugumler = []
     i, n = 0, len(s)
     buf = []
     while i < n:
         ch = s[i]
+        if ch == '→':
+            if buf:
+                dugumler.append(('text', ''.join(buf)))
+                buf = []
+            dugumler.append(('arrow', '→'))
+            i += 1
+            continue
         if ch in ('^', '_') and i + 1 < n:
             if buf:
                 dugumler.append(('text', ''.join(buf)))
@@ -213,6 +220,8 @@ def dugum_genislik(dugum, agirlik, boyut):
     f = font(agirlik, boyut)
     if tip == 'text':
         return f.getlength(deger)
+    if tip == 'arrow':
+        return round(boyut * 0.72)
     if tip in ('sup', 'sub'):
         alt_ag = 600 if agirlik == 500 else agirlik
         alt_b = round(boyut * 0.60)
@@ -237,6 +246,16 @@ def metin_ciz(draw, xy, metin, agirlik, boyut, dolgu):
         if tip == 'text':
             draw.text((x, y), deger, font=f, fill=dolgu, anchor='ls')
             x += f.getlength(deger)
+        elif tip == 'arrow':
+            ay = y - round(boyut * 0.28)
+            x0 = x + round(boyut * 0.06)
+            x1 = x + round(boyut * 0.64)
+            kal = max(3, round(boyut * 0.08))
+            hw = round(boyut * 0.20)
+            hh = round(boyut * 0.16)
+            draw.line([(x0, ay), (x1 - round(hw * 0.5), ay)], fill=dolgu, width=kal)
+            draw.polygon([(x1, ay), (x1 - hw, ay - hh), (x1 - hw, ay + hh)], fill=dolgu)
+            x += round(boyut * 0.72)
         elif tip == 'sup':
             alt_ag = 600 if agirlik == 500 else agirlik
             alt_b = round(boyut * 0.60)
