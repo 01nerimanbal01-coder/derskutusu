@@ -109,26 +109,26 @@
     {
       "soru": "Gerçek sayılarda tanımlı m(x) = -2·|x + 3| + 6 mutlak değer fonksiyonunun nitel özellikleri ile ilgili aşağıdakilerden hangisi yanlıştır?",
       "secenekler": [
-        "Grafiğinin tepe noktası T(-3, 6) noktasıdır.",
+        "Fonksiyonun görüntü kümesi [6, +∞) yarı açık aralığıdır.",
         "Grafiği x = -3 doğrusuna (simetri eksenine) göre simetriktir.",
         "Fonksiyonun alabileceği en büyük (maksimum) değer 6'dır.",
-        "Fonksiyonun görüntü kümesi [6, +∞) yarı açık aralığıdır.",
+        "Grafiğinin tepe noktası T(-3, 6) noktasıdır.",
         "Kritik noktası x = -3 olup bu noktada yön değiştirir."
       ],
-      "dogru": 3,
+      "dogru": 0,
       "aciklama": "Mutlak değerin önündeki katsayı negatif (-2 < 0) olduğu için grafiğin kolları aşağı doğrudur; tepe noktasındaki 6 değeri maksimum değerdir ve görüntü kümesi [6, +∞) değil, (-∞, 6] aralığıdır.",
       "tur": "coktan"
     },
     {
       "soru": "Gerçek sayılar kümesinde |2x - 5| ≤ 9 eşitsizliğini sağlayan kaç farklı x tam sayısı vardır?",
       "secenekler": [
-        "10 tam sayı",
         "9 tam sayı",
+        "10 tam sayı",
         "8 tam sayı",
         "7 tam sayı",
         "6 tam sayı"
       ],
-      "dogru": 0,
+      "dogru": 1,
       "aciklama": "|2x - 5| ≤ 9 ⇔ -9 ≤ 2x - 5 ≤ 9 ⇔ -4 ≤ 2x ≤ 14 ⇔ -2 ≤ x ≤ 7 bulunur. [-2, 7] kapalı aralığındaki tam sayılar -2, -1, 0, 1, 2, 3, 4, 5, 6, 7 olmak üzere toplam 10 tanedir.",
       "tur": "coktan"
     },
@@ -136,12 +136,12 @@
       "soru": "Standart uzunluğu 120 mm olan bir metal çivinin üretiminde ±1,5 mm hata payı (tolerans) kabul edilmektedir. Buna göre standartlara uygun bir çivinin uzunluğunu (x) ifade eden mutlak değerli eşitsizlik aşağıdakilerden hangisidir?",
       "secenekler": [
         "|x - 1,5| ≤ 120",
-        "|x - 120| ≤ 1,5",
         "|x + 120| ≤ 1,5",
+        "|x - 120| ≤ 1,5",
         "|x - 120| ≥ 1,5",
         "|x + 1,5| ≥ 120"
       ],
-      "dogru": 1,
+      "dogru": 2,
       "aciklama": "İdeal ölçü M = 120 mm ve izin verilen sapma t = 1,5 mm olduğundan uygunluk koşulu |x - M| ≤ t formülüyle |x - 120| ≤ 1,5 olarak yazılır.",
       "tur": "coktan"
     },
@@ -150,11 +150,11 @@
       "secenekler": [
         "8 ay sonra",
         "9 ay sonra",
-        "10 ay sonra",
         "12 ay sonra",
+        "10 ay sonra",
         "15 ay sonra"
       ],
-      "dogru": 2,
+      "dogru": 3,
       "aciklama": "Geçen süre x ay olsun. Birinci fidanın boy fonksiyonu f(x) = 6x + 40, ikinci fidanın boy fonksiyonu g(x) = 3x + 70 olur. Eşitlik: 6x + 40 = 3x + 70 ⇒ 3x = 30 ⇒ x = 10 ay sonra boyları 100 cm'de eşitlenir.",
       "tur": "coktan"
     },

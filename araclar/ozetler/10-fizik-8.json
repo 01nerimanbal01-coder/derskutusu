@@ -109,13 +109,13 @@
     {
       "soru": "Fizik bilimine göre aşağıdaki durumların hangisinde sözü edilen kuvvet fiziksel anlamda iş yapmaktadır?",
       "secenekler": [
-        "Halteri başının üzerinde hareketsiz tutarak bekleyen sporcunun haltere uyguladığı kuvvet",
+        "Yerde duran koliyi düşey doğrultuda yukarı kaldırarak rafa yerleştiren işçinin koliye uyguladığı kuvvet",
         "Yatay ve düz bir koridorda sabit süratle yürüyen öğrencinin elindeki çantaya uyguladığı düşey kuvvet",
         "Sürtünmesiz yatay düzlemde kayan cisme yatay yüzeyin uyguladığı dik tepki (normal) kuvveti",
-        "Yerde duran koliyi düşey doğrultuda yukarı kaldırarak rafa yerleştiren işçinin koliye uyguladığı kuvvet",
+        "Halteri başının üzerinde hareketsiz tutarak bekleyen sporcunun haltere uyguladığı kuvvet",
         "Hareket etmeyen beton bir duvarı var gücüyle iten kişinin duvara uyguladığı yatay kuvvet"
       ],
-      "dogru": 3,
+      "dogru": 0,
       "aciklama": "Koliyi yerden kaldırıp rafa yerleştiren işçinin uyguladığı düşey kuvvet ile kolinin yer değiştirmesi aynı doğrultuda olduğundan fiziksel anlamda iş yapılır.",
       "tur": "coktan"
     },
@@ -135,13 +135,13 @@
     {
       "soru": "Bir makine 3600 Joule büyüklüğündeki işi 1 dakika içinde gerçekleştirdiğine göre, bu makinenin mekanik gücü kaç Watt'tır?",
       "secenekler": [
-        "60",
-        "120",
         "360",
+        "120",
+        "60",
         "600",
         "3600"
       ],
-      "dogru": 0,
+      "dogru": 2,
       "aciklama": "Zaman saniyeye çevrilir: t = 1 dk = 60 s. Mekanik güç P = W / t = 3600 J / 60 s = 60 Watt bulunur.",
       "tur": "coktan"
     },
@@ -150,11 +150,11 @@
       "secenekler": [
         "{kesir:1|4}",
         "{kesir:1|2}",
-        "1",
         "2",
+        "1",
         "4"
       ],
-      "dogru": 2,
+      "dogru": 3,
       "aciklama": "Sürtünmesiz yatay düzlemde yapılan iş W = F · x olup cismin kütlesine bağlı değildir. İki cisme de aynı F kuvveti aynı x yolu boyunca uygulandığından W_K = W_L ve oran 1 olur.",
       "tur": "coktan"
     },

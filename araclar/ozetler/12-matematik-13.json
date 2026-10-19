@@ -109,13 +109,13 @@
     {
       "soru": "Verilen 2·cos(2x) - 1 = 0 trigonometrik denkleminin [0, π] kapalı aralığındaki köklerinin toplamı kaç radyandır?",
       "secenekler": [
-        "{kesir:π|3}",
-        "{kesir:2π|3}",
         "π",
+        "{kesir:2π|3}",
+        "{kesir:π|3}",
         "{kesir:4π|3}",
         "{kesir:5π|3}"
       ],
-      "dogru": 2,
+      "dogru": 0,
       "aciklama": "cos(2x) = {kesir:1|2} = cos({kesir:π|3}) olduğundan 2x = ±{kesir:π|3} + 2kπ ⇒ x = ±{kesir:π|6} + kπ olur. [0, π] aralığındaki kökler x₁ = {kesir:π|6} ve x₂ = π - {kesir:π|6} = {kesir:5π|6} olup toplamları {kesir:π|6} + {kesir:5π|6} = π radyandır.",
       "tur": "coktan"
     },
@@ -123,12 +123,12 @@
       "soru": "sin(2x) - cos(x) = 0 denkleminin [0, 2π) aralığında kaç farklı gerçek kökü vardır?",
       "secenekler": [
         "1",
-        "2",
-        "3",
         "4",
+        "3",
+        "2",
         "5"
       ],
-      "dogru": 3,
+      "dogru": 1,
       "aciklama": "Yarım açıdan 2·sin x·cos x - cos x = 0 ⇒ cos x·(2·sin x - 1) = 0 yazılır. cos x = 0 için x = {kesir:π|2}, {kesir:3π|2} (2 kök); sin x = {kesir:1|2} için x = {kesir:π|6}, {kesir:5π|6} (2 kök) olmak üzere toplam 4 farklı kök vardır.",
       "tur": "coktan"
     },
@@ -137,24 +137,24 @@
       "secenekler": [
         "-10",
         "-5",
-        "0",
+        "16",
         "12",
-        "16"
+        "0"
       ],
-      "dogru": 4,
+      "dogru": 2,
       "aciklama": "R = {kok:{us:5|2} + {us:12|2}} = 13 olduğundan gerçek kök olması için -13 ≤ k - 2 ≤ 13 yani -11 ≤ k ≤ 15 olmalıdır. k = 16 için k - 2 = 14 > 13 olduğundan çözüm kümesi boş kümedir.",
       "tur": "coktan"
     },
     {
       "soru": "sin x + {kok:3}·cos x = 2 denklemini sağlayan [0, 2π) aralığındaki x açısı kaç radyandır?",
       "secenekler": [
-        "{kesir:π|6}",
+        "{kesir:π|2}",
         "{kesir:π|4}",
         "{kesir:π|3}",
-        "{kesir:π|2}",
+        "{kesir:π|6}",
         "{kesir:2π|3}"
       ],
-      "dogru": 0,
+      "dogru": 3,
       "aciklama": "Her iki taraf 2'ye bölünüp {kesir:1|2} = cos({kesir:π|3}) ve {kesir:{kok:3}|2} = sin({kesir:π|3}) yazılırsa sin(x + {kesir:π|3}) = 1 elde edilir. Buradan x + {kesir:π|3} = {kesir:π|2} ⇒ x = {kesir:π|6} (30°) bulunur.",
       "tur": "coktan"
     },

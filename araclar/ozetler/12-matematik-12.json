@@ -109,26 +109,26 @@
     {
       "soru": "Trigonometride iki kat açı (yarım açı) özdeşlikleri kullanılarak {kesir:1 + cos(2x)|1 - cos(2x)} ifadesi sadeleştirildiğinde aşağıdakilerden hangisi elde edilir?",
       "secenekler": [
-        "{us:tan|2}(x)",
         "{us:cot|2}(x)",
+        "{us:tan|2}(x)",
         "sin(2x)",
         "cos(2x)",
         "2·tan(x)"
       ],
-      "dogru": 1,
+      "dogru": 0,
       "aciklama": "Payda 1 + cos(2x) = 2·{us:cos|2}(x) ve paydada 1 − cos(2x) = 2·{us:sin|2}(x) yazıldığında oran {kesir:2·{us:cos|2}(x)|2·{us:sin|2}(x)} = {us:cot|2}(x) olur.",
       "tur": "coktan"
     },
     {
       "soru": "sin(x) − cos(x) = {kesir:1|3} olduğuna göre sin(2x) ifadesinin değeri kaçtır?",
       "secenekler": [
-        "{kesir:8|9}",
         "{kesir:7|9}",
+        "{kesir:8|9}",
         "{kesir:4|9}",
         "{kesir:2|3}",
         "{kesir:1|9}"
       ],
-      "dogru": 0,
+      "dogru": 1,
       "aciklama": "Her iki tarafın karesi alınırsa {us:(sin x - cos x)|2} = {us:sin|2}(x) + {us:cos|2}(x) − 2·sin(x)·cos(x) = 1 − sin(2x) = {kesir:1|9} olur; buradan sin(2x) = 1 − {kesir:1|9} = {kesir:8|9} bulunur.",
       "tur": "coktan"
     },
@@ -151,10 +151,10 @@
         "1",
         "2",
         "3",
-        "5",
-        "4"
+        "4",
+        "5"
       ],
-      "dogru": 4,
+      "dogru": 3,
       "aciklama": "cos(2x) = cos(60°) denkleminden 2x = 60° + 360°k → x = 30° + 180°k (30°, 210°) ve 2x = −60° + 360°k → x = −30° + 180°k (150°, 330°) olmak üzere [0, 2π] aralığında 4 kök vardır.",
       "tur": "coktan"
     },

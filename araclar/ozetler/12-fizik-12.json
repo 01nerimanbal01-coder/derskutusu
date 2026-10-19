@@ -109,26 +109,26 @@
     {
       "soru": "K ve L noktaları arasında O noktası denge konumu olacak biçimde basit harmonik hareket yapan bir cisim ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
       "secenekler": [
-        "Cisim O denge konumundan geçerken çizgisel hızı ve kinetik enerjisi maksimum değerdedir.",
+        "Uzanım vektörü ile ivme vektörü hareketin her anında aynı yönlü olup uç noktalara doğrudur.",
         "K ve L genlik noktalarında cismin anlık hızı sıfır, ivmesi ve geri çağırıcı kuvveti maksimumdur.",
         "Geri çağırıcı kuvvet vektörü ile ivme vektörü hareket boyunca daima aynı yönlüdür.",
-        "Uzanım vektörü ile ivme vektörü hareketin her anında aynı yönlü olup uç noktalara doğrudur.",
+        "Cisim O denge konumundan geçerken çizgisel hızı ve kinetik enerjisi maksimum değerdedir.",
         "Sürtünmesiz ortamda cismin kinetik ve potansiyel enerjileri toplamı her konumda sabittir."
       ],
-      "dogru": 3,
+      "dogru": 0,
       "aciklama": "Uzanım vektörü (x) denge noktasından dışarıya doğru iken, ivme (a) ve geri çağırıcı kuvvet (F) vektörleri daima denge noktasına (içeriye) doğrudur; yani x ile a zıt yönlüdür.",
       "tur": "coktan"
     },
     {
       "soru": "Periyodu T = 6 s ve genliği r = 10 m olan basit harmonik hareket yapan bir cismin, denge konumundan x = 8 m uzaklıktaki bir noktadan geçerken hızı kaç m/s'dir? (π = 3 alınız.)",
       "secenekler": [
-        "6 m/s",
         "8 m/s",
+        "6 m/s",
         "10 m/s",
         "12 m/s",
         "16 m/s"
       ],
-      "dogru": 0,
+      "dogru": 1,
       "aciklama": "Açısal hız ω = {kesir:2π|T} = {kesir:2·3|6} = 1 rad/s'dir. Hız bağıntısı v = ω·{kok:{us:r|2} - {us:x|2}} = 1·{kok:{us:10|2} - {us:8|2}} = {kok:100 - 64} = {kok:36} = 6 m/s bulunur.",
       "tur": "coktan"
     },
@@ -136,12 +136,12 @@
       "soru": "Kütlesi 0,5 kg olan bir cisim, açısal hızı ω = 4 rad/s olacak biçimde r = 0,5 m genlikle basit harmonik hareket yapmaktadır. Buna göre cisme genlik uçlarında etki eden maksimum geri çağırıcı kuvvetin büyüklüğü kaç Newton'dur?",
       "secenekler": [
         "2 N",
-        "4 N",
         "8 N",
+        "4 N",
         "12 N",
         "16 N"
       ],
-      "dogru": 1,
+      "dogru": 2,
       "aciklama": "Maksimum geri çağırıcı kuvvet F_max = m·{us:ω|2}·r formülüyle bulunur: F_max = 0,5 · {us:4|2} · 0,5 = 0,5 · 16 · 0,5 = 4 N.",
       "tur": "coktan"
     },
@@ -149,12 +149,12 @@
       "soru": "Sürtünmesiz yatay düzlemde r genliğiyle basit harmonik hareket yapan bir yay sarkacının, denge konumundan x = {kesir:r|2} kadar uzaklıktaki esneklik potansiyel enerjisinin (E_P) aynı noktadaki kinetik enerjisine (E_K) oranı ({kesir:E_P|E_K}) kaçtır?",
       "secenekler": [
         "{kesir:1|4}",
-        "{kesir:1|3}",
-        "{kesir:1|2}",
         "1",
+        "{kesir:1|2}",
+        "{kesir:1|3}",
         "3"
       ],
-      "dogru": 1,
+      "dogru": 3,
       "aciklama": "x = {kesir:r|2} konumunda E_P = {kesir:1|2}·k·{us:({kesir:r|2})|2} = {kesir:1|4}·E_top olur. Kinetik enerji E_K = E_top − {kesir:1|4}·E_top = {kesir:3|4}·E_top olduğundan {kesir:E_P|E_K} oranı {kesir:1|3} bulunur.",
       "tur": "coktan"
     },

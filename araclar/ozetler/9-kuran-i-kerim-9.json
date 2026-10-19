@@ -109,13 +109,13 @@
     {
       "soru": "Tecvit ilminde bir kelimede med harflerinden ({ar:ا، و، ي}) biri bulunur ve kendisinden sonra hemze veya sükûn gibi bir uzatma sebebi gelmezse oluşan med çeşidi aşağıdakilerden hangisidir?",
       "secenekler": [
-        "Medd-i Muttasıl",
         "Medd-i Tabiî",
+        "Medd-i Muttasıl",
         "Medd-i Munfasıl",
         "Medd-i Lâzım",
         "Medd-i Lîn"
       ],
-      "dogru": 1,
+      "dogru": 0,
       "aciklama": "Med harfinden sonra sebeb-i med (hemze veya sükûn) bulunmadığında 1 elif miktarı uzatılan asli medde 'Medd-i Tabiî' adı verilir.",
       "tur": "coktan"
     },
@@ -123,25 +123,25 @@
       "soru": "Aşağıdaki Kur'an-ı Kerim kelimelerinden hangisinde 'Medd-i Muttasıl' (Bitişik Med) kuralı vardır?",
       "secenekler": [
         "{ar:قَالُوا}",
-        "{ar:إِنَّآ أَعْطَيْنَاكَ}",
-        "{ar:وَلَا الضَّآلِّينَ}",
         "{ar:جَآءَ}",
+        "{ar:وَلَا الضَّآلِّينَ}",
+        "{ar:إِنَّآ أَعْطَيْنَاكَ}",
         "{ar:لِإِيلَافِ قُرَيْشٍ}"
       ],
-      "dogru": 3,
+      "dogru": 1,
       "aciklama": "'{ar:جَآءَ}' (câe) kelimesinde med harfi olan eliften hemen sonra kırık hemze ({ar:ء}) aynı kelime içinde geldiği için Medd-i Muttasıl vardır (A: Tabiî, B: Munfasıl, C: Lâzım, E: Lîn).",
       "tur": "coktan"
     },
     {
       "soru": "Med harfinden sonra durulduğunda da geçildiğinde de varlığını koruyan kalıcı (lâzım) bir cezim veya şedde gelmesiyle oluşan ve 4 elif uzatılması vacip olan med çeşidi aşağıdakilerden hangisidir?",
       "secenekler": [
-        "Medd-i Lâzım",
-        "Medd-i Ârız",
         "Medd-i Munfasıl",
+        "Medd-i Ârız",
+        "Medd-i Lâzım",
         "Medd-i Lîn",
         "Medd-i Tabiî"
       ],
-      "dogru": 0,
+      "dogru": 2,
       "aciklama": "Med harfinden sonra lâzım (asli/kalıcı) sükûn (cezim veya şedde) gelmesiyle oluşan ve 4 elif uzatılması vacip olan med 'Medd-i Lâzım'dır.",
       "tur": "coktan"
     },
@@ -149,12 +149,12 @@
       "soru": "Kureyş suresinde yer alan '{ar:وَآمَنَهُمْ مِنْ خَوْفٍ}' ayetinin sonundaki '{ar:خَوْفٍ}' kelimesinde durulduğunda 'Medd-i Lîn' oluşmasının sebebi aşağıdakilerden hangisidir?",
       "secenekler": [
         "Med harfi olan eliften sonra aynı kelimede kırık hemze gelmesi",
-        "Cezimli vâv ({ar:وْ}) harfinden önceki harfin üstünlü olup sonda durulması",
-        "Med harfi olan vâv harfinden sonra şeddeli bir harfin gelmesi",
         "Med harfi ile uzun hemzenin iki ayrı kelimede yan yana gelmesi",
+        "Med harfi olan vâv harfinden sonra şeddeli bir harfin gelmesi",
+        "Cezimli vâv ({ar:وْ}) harfinden önceki harfin üstünlü olup sonda durulması",
         "Kelimenin sonunda tenvin bulunması ve bir sonraki ayete geçilmesi"
       ],
-      "dogru": 1,
+      "dogru": 3,
       "aciklama": "'{ar:خَوْفٍ}' kelimesinde cezimli vâv ({ar:وْ}) harfinden önceki '{ar:خَ}' harfi üstünlü olduğu için vâv harf-i lîndir; ayet sonunda durulunca '{ar:فْ}' harfinde sükûn oluştuğu için Medd-i Lîn meydana gelir.",
       "tur": "coktan"
     },

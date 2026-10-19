@@ -110,13 +110,13 @@
       "tur": "coktan",
       "soru": "Yatay ve kuru bir yolda r yarıçaplı çembersel viraja giren m kütleli bir otomobilin virajı savrulmadan dönebileceği maksimum sürati (vmax) artırmak için aşağıdakilerden hangisi yapılmalıdır?",
       "secenekler": [
-        "Otomobilin bagajına yük koyarak kütlesini (m) artırmak",
         "Virajın eğrilik yarıçapını (r) ve sürtünme katsayısını (k) artırmak",
+        "Otomobilin bagajına yük koyarak kütlesini (m) artırmak",
         "Virajın eğrilik yarıçapını (r) yarıya düşürmek",
         "Yol yüzeyini ıslatarak statik sürtünme katsayısını (k) azaltmak",
         "Aracın viraja giriş periyodunu ve açısal hızını iki katına çıkarmak"
       ],
-      "dogru": 1,
+      "dogru": 0,
       "aciklama": "Yatay virajda vmax = {kok:k · g · r} olduğundan kütleye bağlı değildir; sürtünme katsayısı (k) ve yarıçap (r) artırıldığında güvenli hız sınırı artar."
     },
     {
@@ -124,12 +124,12 @@
       "soru": "Bir ipin ucuna bağlı m kütleli cisim düşey düzlemde sabit büyüklükteki çizgisel süratle düzgün çembersel hareket yapmaktadır. Cisim yörüngenin en üst (K), yatay yan (L) ve en alt (M) noktalarından geçerken ipte oluşan gerilme kuvvetlerinin büyüklükleri arasındaki ilişki aşağıdakilerden hangisidir?",
       "secenekler": [
         "TK > TL > TM",
-        "TL > TK > TM",
         "TM > TL > TK",
+        "TL > TK > TM",
         "TK = TL = TM",
         "TM > TK > TL"
       ],
-      "dogru": 2,
+      "dogru": 1,
       "aciklama": "En alt noktada TM = Fm + mg (maksimum), yatay yan noktada TL = Fm, en üst noktada ise TK = Fm - mg (minimum) olduğundan TM > TL > TK olur."
     },
     {
@@ -138,11 +138,11 @@
       "secenekler": [
         "0,25 değeri",
         "0,50 değeri",
-        "0,60 değeri",
         "0,75 değeri",
+        "0,60 değeri",
         "1,25 değeri"
       ],
-      "dogru": 3,
+      "dogru": 2,
       "aciklama": "Eğimli viraj bağıntısı tan(α) = v² / (g · r) olduğundan tan(α) = (15)² / (10 · 30) = 225 / 300 = 0,75 bulunur."
     },
     {
@@ -152,10 +152,10 @@
         "8 Newton",
         "10 Newton",
         "18 Newton",
-        "20 Newton",
-        "28 Newton"
+        "28 Newton",
+        "20 Newton"
       ],
-      "dogru": 4,
+      "dogru": 3,
       "aciklama": "En alt noktada Talt = (m · v² / r) + m · g = (1 · 36 / 2) + (1 · 10) = 18 + 10 = 28 N olarak hesaplanır."
     },
     {

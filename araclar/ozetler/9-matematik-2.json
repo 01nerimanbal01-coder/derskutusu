@@ -140,7 +140,7 @@
         "{us:5|3/2} = {kok:125}",
         "{us:5|1/3} = {kok:5|3}",
         "{us:5|4/3} = {kok:625|3}",
-        "Münhasıran dış görünüşe dayalı tesadüfi bir değişimdir."
+        "Eşlenik Çarpan Kuralları"
       ],
       "dogru": 0,
       "aciklama": "{kok:{us:5|4}|6} = {us:5|4/6} olur. Üsteki 4/6 kesri 2 ile sadeleştirildiğinde {us:5|2/3} = {kok:{us:5|2}|3} = {kok:25|3} elde edilir."
@@ -153,7 +153,7 @@
         "{kok:4|6}",
         "{kok:4|3}",
         "2",
-        "Münhasıran dış görünüşe dayalı tesadüfi bir değişimdir."
+        "{us:2|5/2}"
       ],
       "dogru": 1,
       "aciklama": "Paydaki iç içe kökte dereceler çarpılır (2 · 3 = 6): {kok:{kok:12|3}} = {kok:12|6}. Dereceler eşit olduğundan {kesir:{kok:12|6}|{kok:3|6}} = {kok:{kesir:12|3}|6} = {kok:4|6} bulunur."
@@ -166,7 +166,7 @@
         "{kok:6|6}",
         "{kok:108|6}",
         "{kok:36|6}",
-        "Münhasıran dış görünüşe dayalı tesadüfi bir değişimdir."
+        "{us:2|5/2}"
       ],
       "dogru": 2,
       "aciklama": "Kök dereceleri olan 2 ve 3, 6’da eşitlenir: {kok:3} = {kok:{us:3|3}|6} = {kok:27|6} ve {kok:2|3} = {kok:{us:2|2}|6} = {kok:4|6}. Çarpımları {kok:27 · 4|6} = {kok:108|6} olur."
@@ -179,7 +179,7 @@
         "{kesir:{kok:5} + {kok:2}|3}",
         "3({kok:5} + {kok:2})",
         "{kok:5} + {kok:2}",
-        "Münhasıran dış görünüşe dayalı tesadüfi bir değişimdir."
+        "{kesir:6|{kok:6}}"
       ],
       "dogru": 3,
       "aciklama": "Pay ve payda ({kok:5} + {kok:2}) eşleniği ile çarpılırsa: {kesir:3({kok:5} + {kok:2})|5 − 2} = {kesir:3({kok:5} + {kok:2})|3} = {kok:5} + {kok:2} bulunur."

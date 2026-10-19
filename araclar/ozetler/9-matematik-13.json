@@ -100,26 +100,26 @@
       "tur": "coktan",
       "soru": "Bir ABC üçgeninin iç açılarının ölçüleri 3, 4 ve 5 sayılarıyla doğru orantılıdır. Buna göre bu üçgenin en küçük dış açısının ölçüsü kaç derecedir?",
       "secenekler": [
-        "75°",
-        "90°",
         "105°",
+        "90°",
+        "75°",
         "120°",
         "135°"
       ],
-      "dogru": 2,
+      "dogru": 0,
       "aciklama": "İç açılar 3k + 4k + 5k = 180° → 12k = 180° → k = 15° olur. İç açılar 45°, 60° ve 75°'dir. En küçük dış açı, en büyük iç açının (75°) bütünleri olan 180° - 75° = 105°'dir."
     },
     {
       "tur": "coktan",
       "soru": "Bir ABC üçgeninde {uzunluk:AB} = {uzunluk:AC}, D noktası {parca:BC} kenarı üzerinde bir nokta olmak üzere {uzunluk:AD} = {uzunluk:BD} ve {olcu:ACB} = 56° olduğuna göre {olcu:DAC} kaç derecedir?",
       "secenekler": [
-        "12°",
         "16°",
+        "12°",
         "24°",
         "28°",
         "34°"
       ],
-      "dogru": 0,
+      "dogru": 1,
       "aciklama": "{uzunluk:AB} = {uzunluk:AC} olduğundan taban açıları eşittir: {olcu:B} = {olcu:C} = 56° ve tepe açısı {olcu:BAC} = 180° - (56° + 56°) = 68°'dir. ABD ikizkenar üçgeninde {uzunluk:AD} = {uzunluk:BD} olduğundan {olcu:BAD} = {olcu:B} = 56° olur. Buradan {olcu:DAC} = 68° - 56° = 12° bulunur."
     },
     {

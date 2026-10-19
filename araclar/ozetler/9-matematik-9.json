@@ -109,26 +109,26 @@
     {
       "soru": "Gerçek sayılarda tanımlı f(x) = x doğrusal referans fonksiyonundan türetilen g(x) = -2·f(x + 3) + 4 fonksiyonunun cebirsel kuralı ve sıfırı (grafiğin x eksenini kestiği noktanın apsisi) aşağıdakilerden hangisidir?",
       "secenekler": [
-        "g(x) = -2x + 10 ve sıfırı x = 5",
         "g(x) = -2x - 2 ve sıfırı x = -1",
+        "g(x) = -2x + 10 ve sıfırı x = 5",
         "g(x) = -2x + 7 ve sıfırı x = 3,5",
         "g(x) = 2x - 2 ve sıfırı x = 1",
         "g(x) = -2x - 6 ve sıfırı x = -3"
       ],
-      "dogru": 1,
+      "dogru": 0,
       "aciklama": "f(x) = x olduğundan f(x + 3) = x + 3 olur. Yerine yazılırsa g(x) = -2(x + 3) + 4 = -2x - 6 + 4 = -2x - 2 bulunur. Sıfırı için -2x - 2 = 0 ⇒ x = -1 elde edilir.",
       "tur": "coktan"
     },
     {
       "soru": "[-3, 5] kapalı aralığında tanımlı g(x) = -4x + 9 doğrusal fonksiyonunun alabileceği en büyük (maksimum) değer ile en küçük (minimum) değerin toplamı kaçtır?",
       "secenekler": [
-        "10",
         "12",
+        "10",
         "8",
         "15",
         "21"
       ],
-      "dogru": 0,
+      "dogru": 1,
       "aciklama": "Uç noktalardaki görüntüler hesaplandığında: x = -3 için g(-3) = -4(-3) + 9 = 21 (maksimum değer) ve x = 5 için g(5) = -4(5) + 9 = -11 (minimum değer) bulunur. Toplamları 21 + (-11) = 10 olur.",
       "tur": "coktan"
     },
@@ -136,12 +136,12 @@
       "soru": "Gerçek sayılarda tanımlı g(x) = (m - 3)x + 12 doğrusal fonksiyonunun grafiği x eksenini (-4, 0) noktasında kestiğine göre bu fonksiyonla ilgili aşağıdakilerden hangisi doğrudur?",
       "secenekler": [
         "m = 0 olup fonksiyon sabit fonksiyondur.",
-        "m = 6 olup fonksiyonun değişim oranı (eğimi) 3'tür ve artandır.",
         "m = -3 olup fonksiyon gerçek sayılarda azalandır.",
+        "m = 6 olup fonksiyonun değişim oranı (eğimi) 3'tür ve artandır.",
         "Fonksiyon (-4, ∞) aralığında negatif değerler alır.",
         "Fonksiyonun y eksenini kestiği nokta (0, -4) noktasıdır."
       ],
-      "dogru": 1,
+      "dogru": 2,
       "aciklama": "Grafik (-4, 0) noktasından geçtiği için g(-4) = 0 olmalıdır: (m - 3)(-4) + 12 = 0 ⇒ -4(m - 3) = -12 ⇒ m - 3 = 3 ⇒ m = 6 bulunur. Böylece g(x) = 3x + 12 olur; eğimi a = 3 > 0 olduğundan fonksiyon artandır.",
       "tur": "coktan"
     },
@@ -150,11 +150,11 @@
       "secenekler": [
         "960 litre",
         "980 litre",
-        "1020 litre",
         "1050 litre",
+        "1020 litre",
         "1100 litre"
       ],
-      "dogru": 2,
+      "dogru": 3,
       "aciklama": "Başlangıç miktarı b = 600 L'dir. 4 dakikada 740 - 600 = 140 L su eklendiğine göre birim değişim oranı (eğim) a = 140 / 4 = 35 L/dk'dır. Fonksiyon V(t) = 35t + 600 olup 12. dakikada V(12) = 35 · 12 + 600 = 420 + 600 = 1020 litre su bulunur.",
       "tur": "coktan"
     },

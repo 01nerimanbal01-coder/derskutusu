@@ -109,13 +109,13 @@
     {
       "soru": "Genel terimi a_n = {kesir:n - 7|n + 2} olan dizinin kaç terimi negatiftir?",
       "secenekler": [
-        "5",
         "6",
+        "5",
         "7",
         "8",
         "9"
       ],
-      "dogru": 1,
+      "dogru": 0,
       "aciklama": "n ∈ ℤ⁺ için payda (n + 2) daima pozitiftir. Kesrin negatif olması için payın negatif olması gerekir: n - 7 < 0 → n < 7. Buradan n ∈ {1, 2, 3, 4, 5, 6} olup toplam 6 terimi negatiftir.",
       "tur": "coktan"
     },
@@ -123,12 +123,12 @@
       "soru": "Bir (a_n) aritmetik dizisinde a₅ = 14 ve a₁₂ = 35 olduğuna göre bu dizinin 20. terimi (a₂₀) kaçtır?",
       "secenekler": [
         "53",
-        "56",
         "59",
+        "56",
         "62",
         "65"
       ],
-      "dogru": 2,
+      "dogru": 1,
       "aciklama": "Ortak fark d = {kesir:a₁₂ - a₅|12 - 5} = {kesir:35 - 14|7} = 3 bulunur. Buradan a₂₀ = a₁₂ + (20 - 12)·d = 35 + 8·3 = 59 elde edilir.",
       "tur": "coktan"
     },
@@ -150,11 +150,11 @@
       "secenekler": [
         "155",
         "165",
-        "175",
         "185",
+        "175",
         "195"
       ],
-      "dogru": 2,
+      "dogru": 3,
       "aciklama": "İlk n terim toplamı formülünden S₁₀ = {kesir:10|2}·[2·a₁ + (10 - 1)·d] = 5·[2·4 + 9·3] = 5·(8 + 27) = 5·35 = 175 bulunur.",
       "tur": "coktan"
     },

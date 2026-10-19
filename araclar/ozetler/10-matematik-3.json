@@ -235,7 +235,7 @@
         "12",
         "8",
         "18",
-        "Münhasıran dış görünüşe dayalı tesadüfi bir değişimdir."
+        "dış"
       ],
       "dogru": 0,
       "aciklama": "Ağırlık merkezi G kenarortayı köşeye 2k, kenara k oranında böler: {uzunluk:AG} = 2k ve {uzunluk:GD} = k. Toplam {uzunluk:AD} = 3k = 24 cm olduğundan k = 8 cm ve {uzunluk:AG} = 2k = 16 cm bulunur."
@@ -248,36 +248,36 @@
         "Geniş açılı bir üçgende ağırlık merkezi (G) ve iç teğet çemberin merkezi (I) üçgenin dış bölgesindedir.",
         "Dik açılı bir üçgende diklik merkezi (H) dik açının bulunduğu köşededir.",
         "Eşkenar üçgende açıortay, kenarortay ve yüksekliklerin kesim noktaları aynı noktada çakışır.",
-        "Münhasıran dış görünüşe dayalı tesadüfi bir değişimdir."
+        "c ve b komşu kenarlar, x ve y taban parçaları ise {kesir:c|b} = {kesir:x|y} veya {kesir:c|x} = {kesir:b|y}"
       ],
       "dogru": 1,
       "aciklama": "Üçgenin açı türü ne olursa olsun (dar, dik veya geniş açılı), iç teğet çemberin merkezi (I) ve ağırlık merkezi (G) DAİMA üçgenin iç bölgesinde yer alır."
     },
     {
       "tur": "coktan",
-      "soru": "‘Üçgende Kenar Orta Dikmeler ve Çevrel Çemberin Merkezi (O)’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "soru": "‘Oranlama Kısayolu (Yansıma Kuralı)’ kavramı veya konusuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
       "secenekler": [
-        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
-        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
-        "Kenarortay ve yükseklik mutlaka karşı köşeden geçer; ancak kenar orta dikme salt kenarın ortasından dik çıkar, ikizkenar veya eşkenar olmayan (çeşitkenar) üçgenlerde karşı köşeden GEÇMEZ!.",
-        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme, bağlam dışı yorum)",
-        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+        "Üçgenin bir köşesinden karşı kenara veya karşı kenarın uzantısına indirilen dik doğru parçasına o kenara ait yükseklik denir.",
+        "{uzunluk:AD} = {uzunluk:BD} = {uzunluk:DC} = {kesir:{uzunluk:BC}|2} — Münhasıran dik üçgende hipotenüse ait kenarortay için geçerlidir",
+        "Bir ABC üçgeninde {uzunluk:AB} = 6 cm ve {uzunluk:AC} = 10 cm (sadeleşince 3 ve 5 ile orantılı) ise, A açısının iç açıortayı.",
+        "Üçgenin bir köşesini karşı kenarın orta noktasına birleştiren doğru parçasına o kenara ait kenarortay denir ve uzunlukları.",
+        "Kenarortay ve yükseklik mutlaka karşı köşeden geçer; ancak kenar orta dikme salt kenarın ortasından dik çıkar, ikizkenar."
       ],
       "dogru": 2,
-      "aciklama": "Üçgende Kenar Orta Dikmeler ve Çevrel Çemberin Merkezi (O) bölümünde açıklandığı üzere doğru ifade budur."
+      "aciklama": "‘Oranlama Kısayolu (Yansıma Kuralı)’ kapsamında doğru açıklama: Bir ABC üçgeninde {uzunluk:AB} = 6 cm ve {uzunluk:AC} = 10 cm (sadeleşince 3 ve 5 ile orantılı) ise, A açısının iç açıortayı."
     },
     {
       "tur": "coktan",
-      "soru": "‘Üçgende Yükseklikler ve Diklik Merkezi (H)’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "soru": "‘Üçgende Yükseklikler ve Diklik Merkezi (H)’ kavramı veya konusuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
       "secenekler": [
-        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer",
-        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
-        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
-        "Bir üçgenin alanı hangi kenar ve o kenara ait yükseklik çarpılırsa çarpılsın sabittir: Alan(ABC) = {kesir:a · h_a|2} = {kesir:b · h_b|2} = {kesir:c · h_c|2}.",
-        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+        "Üçgenin bir köşesini karşı kenarın orta noktasına birleştiren doğru parçasına o kenara ait kenarortay denir ve uzunlukları.",
+        "{uzunluk:AD} = {uzunluk:BD} = {uzunluk:DC} = {kesir:{uzunluk:BC}|2} — Münhasıran dik üçgende hipotenüse ait kenarortay için geçerlidir",
+        "Bir ABC üçgeninde {uzunluk:AB} = 6 cm ve {uzunluk:AC} = 10 cm (sadeleşince 3 ve 5 ile orantılı) ise, A açısının iç açıortayı.",
+        "Üçgenin bir köşesinden karşı kenara veya karşı kenarın uzantısına indirilen dik doğru parçasına o kenara ait yükseklik denir.",
+        "Kenarortay ve yükseklik mutlaka karşı köşeden geçer; ancak kenar orta dikme salt kenarın ortasından dik çıkar, ikizkenar."
       ],
       "dogru": 3,
-      "aciklama": "Üçgende Yükseklikler ve Diklik Merkezi (H) bölümünde açıklandığı üzere doğru ifade budur."
+      "aciklama": "‘Üçgende Yükseklikler ve Diklik Merkezi (H)’ kapsamında doğru açıklama: Üçgenin bir köşesinden karşı kenara veya karşı kenarın uzantısına indirilen dik doğru parçasına o kenara ait yükseklik denir."
     },
     {
       "tur": "dy",

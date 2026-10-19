@@ -110,13 +110,13 @@
       "tur": "coktan",
       "soru": "Alt taban uzunluğu 15 cm, üst taban uzunluğu 7 cm ve alanı 88 cm{us:2| } olan bir yamuğun orta taban uzunluğu (e) ve yüksekliği (h) aşağıdakilerden hangisinde doğru verilmiştir?",
       "secenekler": [
-        "e = 10 cm, h = 8,8 cm",
         "e = 11 cm, h = 8 cm",
+        "e = 10 cm, h = 8,8 cm",
         "e = 11 cm, h = 16 cm",
         "e = 12 cm, h = 8 cm",
         "e = 22 cm, h = 4 cm"
       ],
-      "dogru": 1,
+      "dogru": 0,
       "aciklama": "Orta taban e = (15 + 7) / 2 = 11 cm'dir. Alan = e · h -> 88 = 11 · h -> h = 8 cm bulunur."
     },
     {
@@ -124,12 +124,12 @@
       "soru": "Bir eşkenar dörtgenin çevresi 52 cm ve köşegenlerinden birinin uzunluğu 10 cm olduğuna göre bu eşkenar dörtgenin alanı kaç cm{us:2| }'dir?",
       "secenekler": [
         "60 cm²",
-        "100 cm²",
         "120 cm²",
+        "100 cm²",
         "130 cm²",
         "240 cm²"
       ],
-      "dogru": 2,
+      "dogru": 1,
       "aciklama": "Çevresi 52 cm ise bir kenarı a = 13 cm'dir. Köşegenler dik ortalandığından yarı köşegenlerden biri 10/2 = 5 cm'dir. 5-12-13 dik üçgeninden diğer yarı köşegen 12 cm ve tam köşegen 24 cm olur. Alan = (10 · 24) / 2 = 120 cm²."
     },
     {
@@ -138,24 +138,24 @@
       "secenekler": [
         "Genel paralelkenar",
         "İkizkenar yamuk",
-        "Eşkenar dörtgen",
         "Kare",
+        "Eşkenar dörtgen",
         "Deltoid"
       ],
-      "dogru": 3,
+      "dogru": 2,
       "aciklama": "Dikdörtgen ve ikizkenar yamukta köşegenler eşittir ama dik değildir; eşkenar dörtgen ve deltoidde diktir ama eşit değildir; karede ise hem eşit hem diktir."
     },
     {
       "tur": "coktan",
       "soru": "Bir ABCD dikdörtgeninin içinde alınan bir P noktası için {uzunluk:PA} = 4 cm, {uzunluk:PC} = 7 cm ve {uzunluk:PB} = 5 cm olduğuna göre {uzunluk:PD} uzunluğu kaç cm'dir?",
       "secenekler": [
-        "2{kok:10} cm",
+        "4{kok:2} cm",
         "6 cm",
         "3{kok:5} cm",
-        "4{kok:2} cm",
+        "2{kok:10} cm",
         "2{kok:6} cm"
       ],
-      "dogru": 0,
+      "dogru": 3,
       "aciklama": "{uzunluk:PA}² + {uzunluk:PC}² = {uzunluk:PB}² + {uzunluk:PD}² bağıntısından 4² + 7² = 5² + {uzunluk:PD}² -> 16 + 49 = 25 + {uzunluk:PD}² -> {uzunluk:PD}² = 40 -> {uzunluk:PD} = {kok:40} = 2{kok:10} cm olur."
     },
     {

@@ -109,13 +109,13 @@
     {
       "soru": "Aşağıdaki Arapça diyalogda boş bırakılan yere dil bilgisi ve cinsiyet uyumuna göre hangi ifade getirilmelidir?\n— {ar:مَنْ هٰذِهِ؟}\n— .........................",
       "secenekler": [
-        "{ar:هٰذَا مُدَرِّسٌ}",
-        "{ar:هُوَ طَالِبٌ}",
         "{ar:هٰذِهِ مُدِيرَةٌ}",
+        "{ar:هُوَ طَالِبٌ}",
+        "{ar:هٰذَا مُدَرِّسٌ}",
         "{ar:أَنَا صَدِيقٌ}",
         "{ar:هٰذَا صَدِيقِي}"
       ],
-      "dogru": 2,
+      "dogru": 0,
       "aciklama": "Soruda yakın müennes işaret zamiri olan '{ar:هٰذِهِ}' (Bu kimdir? - kadın) kullanıldığı için cevapta da müennes işaret zamiri ve müennes isim uyumu taşıyan '{ar:هٰذِهِ مُدِيرَةٌ}' (Bu bir kadın müdürdür) yer almalıdır.",
       "tur": "coktan"
     },
@@ -137,11 +137,11 @@
       "secenekler": [
         "{ar:يَا عَائِشَةُ، تَعَالَ}!",
         "{ar:يَا عَائِشَةُ، اِذْهَبْ}!",
-        "{ar:يَا عَائِشَةُ، اُسْكُتْ}!",
         "{ar:يَا عَائِشَةُ، تَعَالَيْ}!",
+        "{ar:يَا عَائِشَةُ، اُسْكُتْ}!",
         "{ar:يَا عَائِشَةُ، تَكَلَّمْ}!"
       ],
-      "dogru": 3,
+      "dogru": 2,
       "aciklama": "Ayşe müennes (kız) olduğu için emir fiilin müennes muhataba çekimi olan '{ar:تَعَالَيْ}!' (Gel!) kullanılmalıdır; diğer şıklardaki emir fiiller müzekkerdir.",
       "tur": "coktan"
     },
@@ -150,11 +150,11 @@
       "secenekler": [
         "{ar:طَالِبٌ} — {ar:اَلطَّالِبُ}",
         "{ar:مُدَرِّسٌ} — {ar:اَلْمُدَرِّسُ}",
-        "{ar:مُدِيرٌ} — {ar:اَلْمُدِيرٌ}",
         "{ar:صَدِيقٌ} — {ar:اَلصَّدِيقُ}",
+        "{ar:مُدِيرٌ} — {ar:اَلْمُدِيرٌ}",
         "{ar:طَالِبَةٌ} — {ar:اَلطَّالِبَةُ}"
       ],
-      "dogru": 2,
+      "dogru": 3,
       "aciklama": "Başına '{ar:ال}' belirlilik takısı alan bir ismin sonunda tenvin kalamaz; '{ar:اَلْمُدِيرٌ}' yerine tek ötre ile '{ar:اَلْمُدِيرُ}' yazılmalıdır.",
       "tur": "coktan"
     },

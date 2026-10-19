@@ -110,13 +110,13 @@
       "tur": "coktan",
       "soru": "[AB] // [DC] olan bir ABCD ikizkenar yamuğunda |AD| = |BC| = 13 cm, üst taban |DC| = 7 cm ve alt taban |AB| = 17 cm olduğuna göre bu yamuğun alanı kaç cm²'dir?",
       "secenekler": [
-        "120",
-        "132",
         "144",
+        "132",
+        "120",
         "156",
         "168"
       ],
-      "dogru": 2,
+      "dogru": 0,
       "aciklama": "Üst köşelerden dikmeler indirildiğinde yanlarda kalan parçalar x = {kesir:17-7|2} = 5 cm olur. 5-12-13 dik üçgeninden yükseklik h = 12 cm bulunur. Orta taban e = {kesir:17+7|2} = 12 cm olduğundan Alan = e · h = 12 · 12 = 144 cm² olur."
     },
     {
@@ -124,12 +124,12 @@
       "soru": "Köşegenleri birbirine dik kesişen bir ABCD ikizkenar yamuğunda alt taban uzunluğu |AB| = 14 cm ve üst taban uzunluğu |DC| = 6 cm olduğuna göre bu yamuğun alanı kaç cm²'dir?",
       "secenekler": [
         "64",
-        "80",
-        "84",
         "100",
+        "84",
+        "80",
         "120"
       ],
-      "dogru": 3,
+      "dogru": 1,
       "aciklama": "Köşegenleri dik kesişen ikizkenar yamukta yükseklik orta tabana eşittir: h = e = {kesir:14+6|2} = 10 cm. Dolayısıyla yamuğun alanı Alan = e · h = 10 · 10 = 100 cm² bulunur."
     },
     {
@@ -151,11 +151,11 @@
       "secenekler": [
         "49",
         "56",
-        "64",
         "72",
+        "64",
         "81"
       ],
-      "dogru": 2,
+      "dogru": 3,
       "aciklama": "Yamukta yan kanat üçgenlerin alanları eşittir (S) ve S² = 9 · 25 = 225 => S = 15 cm² olur. Toplam alan = 9 + 25 + 15 + 15 = 64 cm² bulunur."
     },
     {
@@ -182,7 +182,8 @@
           "metin": "Dışbükey bir dörtgenin iç açılarının ölçüleri toplamı 540 derecedir.",
           "dogru": false
         }
-      ]
+      ],
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz."
     },
     {
       "tur": "eslestir",
@@ -208,7 +209,8 @@
           "Orta Noktalar Paralelkenarının Çevresi",
           "Ana dörtgenin köşegen uzunlukları toplamına eşittir: |AC| + |BD|"
         ]
-      ]
+      ],
+      "soru": "Aşağıdaki dörtgen ve yamuk durumlarını ilgili matematiksel bağıntılarla eşleştiriniz."
     },
     {
       "tur": "bosluk",
@@ -238,7 +240,8 @@
       "fazla": [
         "deltoid",
         "beşgen"
-      ]
+      ],
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız."
     },
     {
       "tur": "ogretici",

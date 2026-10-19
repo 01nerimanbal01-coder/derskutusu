@@ -110,13 +110,13 @@
       "tur": "coktan",
       "soru": "Özel dörtgenler arasındaki hiyerarşik ilişkiler dikkate alındığında aşağıdaki önermelerden hangisi yanlıştır?",
       "secenekler": [
-        "Her kare aynı zamanda hem bir dikdörtgen hem de bir eşkenar dörtgendir.",
-        "Her eşkenar dörtgen aynı zamanda bir paralelkenar ve bir deltoiddir.",
         "Her dikdörtgen aynı zamanda dört kenar uzunluğu eşit olan bir karedir.",
+        "Her eşkenar dörtgen aynı zamanda bir paralelkenar ve bir deltoiddir.",
+        "Her kare aynı zamanda hem bir dikdörtgen hem de bir eşkenar dörtgendir.",
         "Her dikdörtgen ve her eşkenar dörtgen aynı zamanda bir paralelkenardır.",
         "Köşegenleri eşit uzunlukta olan bir eşkenar dörtgen aynı zamanda karedir."
       ],
-      "dogru": 2,
+      "dogru": 0,
       "aciklama": "Her kare bir dikdörtgendir ancak her dikdörtgenin dört kenarı birbirine eşit olmadığı için her dikdörtgen bir kare değildir."
     },
     {
@@ -138,11 +138,11 @@
       "secenekler": [
         "4 – 4 – 2 – 2",
         "4 – 2 – 2 – 1",
-        "2 – 2 – 1 – 0",
         "4 – 2 – 1 – 0",
+        "2 – 2 – 1 – 0",
         "4 – 2 – 1 – 2"
       ],
-      "dogru": 3,
+      "dogru": 2,
       "aciklama": "Karenin 4, eşkenar dörtgenin 2 (köşegenler), deltoidin 1 (ana köşegen) simetri ekseni vardır; genel paralelkenarın ise doğruya göre simetri ekseni yoktur (0)."
     },
     {
@@ -152,10 +152,10 @@
         "İçbükey bir çokgenin bütün iç açılarının ölçüleri 180 dereceden küçüktür.",
         "Dışbükey bir çokgenin en az iki köşegeni çokgenin dış bölgesinden geçer.",
         "Bütün kenar uzunlukları eşit olan eşkenar dörtgen düzgün bir çokgendir.",
-        "Düzlemde çizilen bir üçgen hem dışbükey hem de içbükey olabilir.",
-        "En az bir iç açısının ölçüsü 180 dereceden büyük olan çokgenler içbükeydir."
+        "En az bir iç açısının ölçüsü 180 dereceden büyük olan çokgenler içbükeydir.",
+        "Düzlemde çizilen bir üçgen hem dışbükey hem de içbükey olabilir."
       ],
-      "dogru": 4,
+      "dogru": 3,
       "aciklama": "En az bir iç açısı 180°'den büyük (reflex angle) olan ve en az bir köşegeni dış bölgeden geçen çokgenler içbükey (konkav) çokgen olarak sınıflandırılır."
     },
     {
@@ -182,7 +182,8 @@
           "metin": "Deltoidin her iki köşegeni de birbirini iki eş parçaya böler ve uzunlukları birbirine eşittir.",
           "dogru": false
         }
-      ]
+      ],
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz."
     },
     {
       "tur": "eslestir",
@@ -208,7 +209,8 @@
           "İçbükey (Konkav) Çokgen",
           "En az bir iç açısının ölçüsü 180°'den büyük olan ve bazı köşegenleri dış bölgeden geçen çokgen"
         ]
-      ]
+      ],
+      "soru": "Aşağıdaki geometrik şekil ve kavramları ayırt edici özellikleriyle eşleştiriniz."
     },
     {
       "tur": "bosluk",
@@ -238,7 +240,8 @@
       "fazla": [
         "teğet",
         "yamuksal"
-      ]
+      ],
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız."
     },
     {
       "tur": "ogretici",

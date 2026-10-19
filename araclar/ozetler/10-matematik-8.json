@@ -109,13 +109,13 @@
     {
       "soru": "Bir spor kulübündeki 150 üyenin 60'ı kadın, 90'ı erkektir. Kadın üyelerin 24'ü tenis, 36'sı yüzme branşını; erkek üyelerin ise 45'i tenis, 45'i yüzme branşını seçmiştir. Buna göre yüzme branşını seçen üyeler arasında kadınların koşullu göreli sıklığı kaçtır?",
       "secenekler": [
-        "{kesir:4|15}",
-        "{kesir:2|5}",
         "{kesir:4|9}",
+        "{kesir:2|5}",
+        "{kesir:4|15}",
         "{kesir:1|2}",
         "{kesir:3|5}"
       ],
-      "dogru": 2,
+      "dogru": 0,
       "aciklama": "Yüzme branşını seçen toplam üye sayısı 36 (kadın) + 45 (erkek) = 81 kişidir. Yüzme seçenler içinde kadınların koşullu göreli sıklığı 36 / 81 = 4 / 9 bulunur.",
       "tur": "coktan"
     },
@@ -137,24 +137,24 @@
       "secenekler": [
         "İki yönlü tablodaki tüm iç hücrelerin kişi sayıları birbirine eşittir.",
         "A ve B değişkenleri arasında çok güçlü bir doğrusal korelasyon vardır.",
-        "Marjinal göreli sıklıkların her biri sıfıra eşittir.",
         "Koşullu göreli sıklıklar eşit olduğundan A ve B değişkenleri arasında ilişki yoktur.",
+        "Marjinal göreli sıklıkların her biri sıfıra eşittir.",
         "Örneklem hacmi yetersiz olduğu için koşullu göreli sıklık hesaplanamaz."
       ],
-      "dogru": 3,
+      "dogru": 2,
       "aciklama": "%100 yığılmış sütun grafiğinde bölme yüksekliklerinin eşit olması koşullu göreli sıklıkların eşit olduğunu ve iki değişken arasında istatistiksel ilişki olmadığını (bağımsız olduklarını) gösterir.",
       "tur": "coktan"
     },
     {
       "soru": "Bir araştırmada kahvaltı yapma alışkanlığı (Düzenli Yapan / Yapmayan) ile ilk derste dikkat durumu (Yüksek / Düşük) incelenmiştir. Düzenli kahvaltı yapan 80 öğrencinin 68'inde dikkat yüksek iken, kahvaltı yapmayan 40 öğrencinin 12'sinde dikkat yüksektir. Düzenli kahvaltı yapanlarda ve yapmayanlarda yüksek dikkat koşullu göreli sıklıkları sırasıyla yüzde kaçtır?",
       "secenekler": [
-        "%85 ve %30",
+        "%80 ve %40",
         "%68 ve %12",
         "%50 ve %50",
-        "%80 ve %40",
+        "%85 ve %30",
         "%75 ve %25"
       ],
-      "dogru": 0,
+      "dogru": 3,
       "aciklama": "Düzenli kahvaltı yapanlarda yüksek dikkat oranı: 68 / 80 = 17 / 20 = %85. Kahvaltı yapmayanlarda yüksek dikkat oranı: 12 / 40 = 3 / 10 = %30.",
       "tur": "coktan"
     },

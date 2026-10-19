@@ -5066,7 +5066,7 @@
         "[-4, 0)",
         "(0, 3)",
         "[-4, 5]",
-        "Münhasıran dış görünüşe dayalı tesadüfi bir değişimdir."
+        "(-∞, b)"
       ],
       "dogru": 0,
       "aciklama": "A = [-4, 3) aralığından B = (0, 5] aralığının elemanları çıkarıldığında -4 ile 0 arasındaki sayılar kalır. -4 sayısı A'da kapalı olduğundan sonuçta kapalıdır. 0 sayısı ise A kümesinde vardır (0 ∈ A) fakat B kümesinde açık uç olduğundan yoktur (0 ∉ B); dolayısıyla 0 sayısı A'dan çıkarılamaz ve fark kümesinde kalır: A \\ B = [-4, 0]."
@@ -5079,36 +5079,36 @@
         "(-∞, -2] ∪ (6, ∞)",
         "(-∞, -2) ∪ (6, ∞)",
         "[-2, 6)",
-        "Münhasıran dış görünüşe dayalı tesadüfi bir değişimdir."
+        "{x | x > 4, x ∈ R}"
       ],
       "dogru": 1,
       "aciklama": "K = (-2, 6] aralığında -2 elemanı yoktur (-2 ∉ K), bu yüzden tümleyen kümesinde -2 yer alır (kapalı uç: -2]). 6 elemanı K kümesinde vardır (6 ∈ K), bu yüzden tümleyende yer almaz (açık uç: (6). Dolayısıyla K' = (-∞, -2] ∪ (6, ∞) olur."
     },
     {
       "tur": "coktan",
-      "soru": "‘Sınırlı Gerçek Sayı Aralıkları: Açık, Kapalı ve Yarı Açık Aralıklar’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "soru": "‘Gerçek Sayı Doğrusunun Sürekliliği’ kavramı veya konusuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
       "secenekler": [
-        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
-        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
-        "Gerçek sayı doğrusu üzerinde birbirinden farklı iki nokta arasındaki tüm gerçek sayıların oluşturduğu alt kümeye gerçek sayı aralığı denir.",
-        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer",
-        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+        "A \\ B fark kümesini bulurken iç sınır noktasına dikkat edin: Çıkarılan B kümesinde sınır noktası AÇIK ise (B'de yoksa) o.",
+        "Gerçek sayı doğrusu üzerinde birbirinden farklı iki nokta arasındaki (uç noktaların dâhil olduğu veya olmadığı) tüm gerçek.",
+        "Tam sayılar veya doğal sayılar sayı doğrusunda aralıklı noktalar hâlinde dizilirken, gerçek sayılar (R) sayı doğrusundaki.",
+        "x < 0 negatif bir gerçek sayı iken {kok:{us:x|2}} ifadesi x'e değil, |x| = -x'e eşittir! Örneğin x = -4 için.",
+        "Her A gerçek sayı aralığı için A ∪ A' = R = (-∞, ∞), A ∩ A' = ∅ ve (A')' = A eşitlikleri daima geçerlidir."
       ],
       "dogru": 2,
-      "aciklama": "Sınırlı Gerçek Sayı Aralıkları: Açık, Kapalı ve Yarı Açık Aralıklar bölümünde açıklandığı üzere doğru ifade budur."
+      "aciklama": "‘Gerçek Sayı Doğrusunun Sürekliliği’ kapsamında doğru açıklama: Tam sayılar veya doğal sayılar sayı doğrusunda aralıklı noktalar hâlinde dizilirken, gerçek sayılar (R) sayı doğrusundaki."
     },
     {
       "tur": "coktan",
-      "soru": "‘Sınırsız Gerçek Sayı Aralıkları’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "soru": "‘Fark İşleminde Sınır Noktası Kuralı’ kavramı veya konusuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
       "secenekler": [
-        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
-        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
-        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
-        "-∞ ve +∞ birer gerçek sayı olmadığı için hiçbir kümeye eleman olarak dâhil edilemez.",
-        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+        "x < 0 negatif bir gerçek sayı iken {kok:{us:x|2}} ifadesi x'e değil, |x| = -x'e eşittir! Örneğin x = -4 için.",
+        "Gerçek sayı doğrusu üzerinde birbirinden farklı iki nokta arasındaki (uç noktaların dâhil olduğu veya olmadığı) tüm gerçek.",
+        "Tam sayılar veya doğal sayılar sayı doğrusunda aralıklı noktalar hâlinde dizilirken, gerçek sayılar (R) sayı doğrusundaki.",
+        "A \\ B fark kümesini bulurken iç sınır noktasına dikkat edin: Çıkarılan B kümesinde sınır noktası AÇIK ise (B'de yoksa) o.",
+        "Her A gerçek sayı aralığı için A ∪ A' = R = (-∞, ∞), A ∩ A' = ∅ ve (A')' = A eşitlikleri daima geçerlidir."
       ],
       "dogru": 3,
-      "aciklama": "Sınırsız Gerçek Sayı Aralıkları bölümünde açıklandığı üzere doğru ifade budur."
+      "aciklama": "‘Fark İşleminde Sınır Noktası Kuralı’ kapsamında doğru açıklama: A \\ B fark kümesini bulurken iç sınır noktasına dikkat edin: Çıkarılan B kümesinde sınır noktası AÇIK ise (B'de yoksa) o."
     },
     {
       "tur": "dy",

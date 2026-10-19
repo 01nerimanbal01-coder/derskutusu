@@ -123,12 +123,12 @@
       "soru": "Özdeş ve yay sabitleri k olan iki yay önce birbirine seri bağlanıp uçlarına m kütleli cisim asılarak T₁ periyoduyla, daha sonra birbirine paralel bağlanıp aynı m kütleli cisim asılarak T₂ periyoduyla salınım yaptırılıyor. Buna göre {kesir:T₁|T₂} oranı kaçtır?",
       "secenekler": [
         "{kesir:1|4}",
-        "{kesir:1|2}",
-        "1",
         "2",
+        "1",
+        "{kesir:1|2}",
         "4"
       ],
-      "dogru": 3,
+      "dogru": 1,
       "aciklama": "Seri bağlamada k_eş1 = {kesir:k|2}, paralel bağlamada k_eş2 = 2k olur. T₁ = 2π·{kok:2m/k} ve T₂ = 2π·{kok:m/(2k)} olduğundan oranları {kesir:T₁|T₂} = {kok:4} = 2 bulunur.",
       "tur": "coktan"
     },
@@ -137,11 +137,11 @@
       "secenekler": [
         "Sarkacın ip uzunluğu dört katına çıkarılırsa salınım periyodu iki katına çıkar.",
         "İpin ucundaki cismin kütlesi iki katına çıkarılırsa sarkacın periyodu değişmez.",
-        "Sarkaç deniz seviyesinden yüksek bir dağ zirvesine çıkarılırsa periyodu artar.",
         "Yukarı yönde sabit hızla çıkan bir asansörün içinde sarkacın periyodu azalır.",
+        "Sarkaç deniz seviyesinden yüksek bir dağ zirvesine çıkarılırsa periyodu artar.",
         "Aşağı yönde hızlanan bir asansörün içinde sarkacın salınım periyodu artar."
       ],
-      "dogru": 3,
+      "dogru": 2,
       "aciklama": "Sabit hızla hareket eden bir asansörün ivmesi sıfırdır (a = 0); bu nedenle etkin çekim ivmesi (g) ve basit sarkacın periyodu değişmez.",
       "tur": "coktan"
     },

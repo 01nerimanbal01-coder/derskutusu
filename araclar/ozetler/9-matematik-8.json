@@ -109,13 +109,13 @@
     {
       "soru": "Gerçek sayılarda tanımlı f(x) = x doğrusal referans fonksiyonundan türetilen g(x) = -2·f(x + 3) + 4 fonksiyonunun x eksenini kestiği noktanın apsisi (fonksiyonun sıfırı) kaçtır?",
       "secenekler": [
-        "-2",
         "-1",
+        "-2",
         "1",
         "2",
         "5"
       ],
-      "dogru": 1,
+      "dogru": 0,
       "aciklama": "f(x) = x olduğundan f(x + 3) = x + 3 olur. Yerine yazıldığında g(x) = -2(x + 3) + 4 = -2x - 6 + 4 = -2x - 2 elde edilir. Sıfırı için -2x - 2 = 0 ⇒ x = -1 bulunur.",
       "tur": "coktan"
     },
@@ -137,24 +137,24 @@
       "secenekler": [
         "Baş katsayısı pozitif (a = 3 > 0) olduğu için artan bir fonksiyondur.",
         "Grafiği y eksenini (0, -12) noktasında kesmektedir.",
-        "Fonksiyonun sıfırı (kökü) x = 4 gerçek sayısıdır.",
         "(-∞, 4) açık aralığındaki tüm x değerleri için g(x) > 0 (pozitif) değer alır.",
+        "Fonksiyonun sıfırı (kökü) x = 4 gerçek sayısıdır.",
         "Tanım kümesindeki her farklı elemanın görüntüsü farklı olduğundan bire birdir."
       ],
-      "dogru": 3,
+      "dogru": 2,
       "aciklama": "g(x) = 3x - 12 fonksiyonunun sıfırı x = 4'tür. Fonksiyon artan olduğu için x < 4 yani (-∞, 4) aralığında negatif (g(x) < 0), (4, ∞) aralığında ise pozitif (g(x) > 0) değer alır.",
       "tur": "coktan"
     },
     {
       "soru": "Dikildiğinde boyu 40 cm olan bir fidan her ay düzenli olarak 6 cm uzamaktadır. Fidanın dikildikten x ay sonraki boyunu (cm) veren doğrusal fonksiyon g(x) olduğuna göre, fidanın boyu kaçıncı ayın sonunda 112 cm olur?",
       "secenekler": [
-        "12",
+        "14",
         "10",
         "11",
-        "14",
+        "12",
         "15"
       ],
-      "dogru": 0,
+      "dogru": 3,
       "aciklama": "Başlangıç boyu 40 cm ve aylık değişim oranı 6 cm olduğundan model g(x) = 6x + 40 olur. 6x + 40 = 112 ⇒ 6x = 72 ⇒ x = 12. ayın sonunda 112 cm olur.",
       "tur": "coktan"
     },

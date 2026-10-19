@@ -109,13 +109,13 @@
     {
       "soru": "Bir kimyasal tepkime sürecinde aşağıdaki niceliklerden hangisi değişebilir (korunmayabilir)?",
       "secenekler": [
-        "Tepkimeye giren ve çıkan maddelerin toplam kütlesi",
         "Tepkimedeki toplam molekül ve toplam mol sayısı",
+        "Tepkimeye giren ve çıkan maddelerin toplam kütlesi",
         "Atomların türü (cinsi) ve toplam atom sayısı",
         "Sistemdeki toplam proton, nötron ve elektron sayısı",
         "Atomların çekirdek yükleri ve çekirdek yapıları"
       ],
-      "dogru": 1,
+      "dogru": 0,
       "aciklama": "Kimyasal tepkimelerde kütle, atom sayısı/türü ve atom altı tanecik sayıları daima korunurken; toplam mol ve molekül sayısı değişebilir.",
       "tur": "coktan"
     },
@@ -123,12 +123,12 @@
       "soru": "C₃H₇OH(s) + O₂(g) → CO₂(g) + H₂O(g) tepkime denklemi en küçük tam sayılarla denkleştirildiğinde O₂(g) molekülünün katsayısı kaç olur?",
       "secenekler": [
         "4",
-        "5",
-        "6",
         "9",
+        "6",
+        "5",
         "10"
       ],
-      "dogru": 3,
+      "dogru": 1,
       "aciklama": "1 C₃H₇OH için 3 CO₂ ve 4 H₂O oluşur (toplam 8 H var). Ürünlerde 3×2 + 4×1 = 10 O vardır; 1 tanesi alkolde olduğu için O₂'nin önüne 9/2 gelir. Denklem 2 ile çarpıldığında (2C₃H₇OH + 9O₂ → 6CO₂ + 8H₂O) O₂'nin katsayısı 9 olur.",
       "tur": "coktan"
     },
@@ -137,11 +137,11 @@
       "secenekler": [
         "SO₃",
         "CS₂",
-        "H₂SO₃",
         "H₂S",
+        "H₂SO₃",
         "H₂SO₄"
       ],
-      "dogru": 3,
+      "dogru": 2,
       "aciklama": "Ürünlerde 2 S, 4 H ve (2×2 + 2×1) = 6 O atomu vardır. Tepkenlerdeki 3O₂'den 6 O atomu geldiğine göre 2X içinde 4 H ve 2 S atomu bulunur; buradan X'in formülü H₂S olur.",
       "tur": "coktan"
     },
@@ -149,12 +149,12 @@
       "soru": "Mg₃N₂(k) + H₂O(s) → Mg(OH)₂(k) + NH₃(g) tepkimesi en küçük tam sayılarla denkleştirildiğinde H₂O ve NH₃ bileşiklerinin katsayıları sırasıyla aşağıdakilerden hangisi olur?",
       "secenekler": [
         "3 ve 2",
-        "6 ve 2",
-        "6 ve 3",
         "3 ve 1",
+        "6 ve 3",
+        "6 ve 2",
         "2 ve 6"
       ],
-      "dogru": 1,
+      "dogru": 3,
       "aciklama": "1 Mg₃N₂ alındığında 3 Mg için 3 Mg(OH)₂ ve 2 N için 2 NH₃ oluşur. Ürünlerde toplam 3×2 + 2×3 = 12 H atomu olduğundan H₂O'nun katsayısı 6 olur (6 ve 2).",
       "tur": "coktan"
     },

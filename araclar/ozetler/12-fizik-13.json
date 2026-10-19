@@ -123,12 +123,12 @@
       "soru": "Yay sabiti k olan homojen bir yay iki eşit parçaya bölünüyor. Daha sonra bu iki parça birbirine paralel bağlanarak uçlarına m kütleli bir cisim asılıyor. Oluşturulan bu yeni sistemin eş değer yay sabiti kaç k olur?",
       "secenekler": [
         "{kesir:k|4}",
-        "{kesir:k|2}",
+        "4k",
         "k",
         "2k",
-        "4k"
+        "{kesir:k|2}"
       ],
-      "dogru": 4,
+      "dogru": 1,
       "aciklama": "Yay sabiti k olan yay 2 eşit parçaya bölündüğünde her bir parçanın yay sabiti 2k olur. Bu iki parça paralel bağlandığında k_eş = 2k + 2k = 4k bulunur.",
       "tur": "coktan"
     },
@@ -137,11 +137,11 @@
       "secenekler": [
         "{kesir:1|4}",
         "{kesir:1|2}",
-        "1",
         "2",
+        "1",
         "4"
       ],
-      "dogru": 3,
+      "dogru": 2,
       "aciklama": "Basit sarkacın periyodu kütleye (m) bağlı değildir, ip boyunun karekökü ile doğru orantılıdır: {kesir:T_X|T_Y} = {kok:{kesir:4L|L}} = 2 olur.",
       "tur": "coktan"
     },
@@ -149,12 +149,12 @@
       "soru": "Tavandan asılı L₁ = 90 cm boyundaki bir basit sarkacın asılma noktasından 50 cm aşağıya bir çivi çakılmıştır. Çivili sarkaç düşeyle küçük bir açı yapacak biçimde çekilip bırakıldığında salınım periyodu kaç saniye olur? (g = 10 m/{us:s|2}, π = 3 alınız.)",
       "secenekler": [
         "1,2",
-        "1,5",
-        "1,8",
         "2,1",
+        "1,8",
+        "1,5",
         "2,4"
       ],
-      "dogru": 1,
+      "dogru": 3,
       "aciklama": "L₁ = 0,9 m için T₁ = 2·3·{kok:{kesir:0,9|10}} = 1,8 s; çiviye takıldıktan sonra L₂ = 90 - 50 = 40 cm = 0,4 m için T₂ = 2·3·{kok:{kesir:0,4|10}} = 1,2 s olur. T_sistem = {kesir:1,8 + 1,2|2} = 1,5 saniyedir.",
       "tur": "coktan"
     },

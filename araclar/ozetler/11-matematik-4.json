@@ -136,7 +136,7 @@
       "tur": "coktan",
       "soru": "Bir araştırmada şehirlerdeki 'leylek yuvası sayısı (X)' ile 'yeni doğan bebek sayısı (Y)' arasında pozitif bir korelasyon (r = +0,78) bulunmuştur. Bu veriden hareketle 'Leylekler bebek doğumlarını artırmaktadır' iddiasında bulunan bir kişiye verilecek en doğru istatistiksel yanıt aşağıdakilerden hangisidir?",
       "secenekler": [
-        "İki değişken arasındaki korelasyon nedensellik anlamına gelmez; her iki değişkeni de etkileyen gizli değişken yerleşim yerinin yüzölçümü ve nüfus büyüklüğüdür.",
+        "İki değişken arasındaki korelasyon nedensellik anlamına gelmez.",
         "Korelasyon katsayısı pozitif olduğu için iddia bilimsel olarak bütünüyle doğrudur",
         "Korelasyon katsayısı +1'den büyük olmadığı için hiçbir yorum yapılamaz.",
         "Bu durum interpolasyon tahmininin ne kadar güvenilir olduğunu kanıtlar.",
@@ -150,7 +150,7 @@
       "soru": "Bir fidanın dikildikten sonraki ilk 12 ay boyunca boyu (y, cm) her ay ölçülmüş ve geçen süre (x, ay; 1 <= x <= 12) ile boy arasında y = 20 + 5x doğrusal modeli elde edilmiştir. Aşağıdaki tahminlerden hangisi 'ekstrapolasyon (aralık dışı tahmin) hatasına' örnektir?",
       "secenekler": [
         "Fidanın 4. aydaki boyunun 40 cm olarak tahmin edilmesi",
-        "Fidanın 20 yıl (240 ay) sonraki boyunun 1220 cm (12,2 metre) olacağının iddia edilmesi",
+        "Fidanın 20 yıl sonraki boyunun 1220 cm olacağının iddia edilmesi",
         "Fidanın 10. aydaki boyunun 70 cm olarak tahmin edilmesi",
         "Fidanın 6. aydaki boyunun 50 cm olarak tahmin edilmesi",
         "Fidanın 8. aydaki boyunun 60 cm olarak tahmin edilmesi"
@@ -160,29 +160,29 @@
     },
     {
       "tur": "coktan",
-      "soru": "‘Örneklem Yanlılığı, Aykırı Değerler ve Veri Manipülasyonu’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "soru": "‘Korelasyon ve Nedensellik Yanılgısı (Gizli Değişken Etkisi)’ kavramı veya konusuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
       "secenekler": [
-        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
-        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
-        "Bazen iki nicel değişken arasında alt grupların her birinde pozitif korelasyon varken, tüm gruplar tek bir tabloda birleştirildiğinde korelasyonun yönü negatife dönebilir! Buna istatistikte 'Simpson Paradoksu' denir ve verilerin homojen olmayan alt gruplardan oluştuğunu gösterir.",
-        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer (konu kapsamındaki temel ilke ve kurallarla uyuşmayan değerlendirme, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum, bağlam dışı yorum)",
-        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+        "Medyada, reklamlarda veya araştırma raporlarında başkaları tarafından oluşturulmuş iki nicel değişkenli bir veri analiziyle.",
+        "Başkaları tarafından sunulan istatistiksel sonuçlarda dikkatle aranması gereken ikinci hata grubu yanlılık (bias) ve veri manipülasyonudur:",
+        "İki nicel değişkenli verilerin yorumlanmasında yapılan en büyük ve en yaygın hata, ilişkililik (korelasyon) ile nedenselliği.",
+        "İki nicel değişken arasında güçlü bir doğrusal ilişki saptandığında oluşturulan en uygun doğru (regresyon doğrusu) denklemi.",
+        "Bir araştırma raporundaki istatistiksel sonucu tartışırken şu karar şemasını uygularız: • Ne Zaman Kabul Edilir?: Örneklem."
       ],
       "dogru": 2,
-      "aciklama": "Örneklem Yanlılığı, Aykırı Değerler ve Veri Manipülasyonu bölümünde açıklandığı üzere doğru ifade budur."
+      "aciklama": "‘Korelasyon ve Nedensellik Yanılgısı (Gizli Değişken Etkisi)’ kapsamında doğru açıklama: İki nicel değişkenli verilerin yorumlanmasında yapılan en büyük ve en yaygın hata, ilişkililik (korelasyon) ile nedenselliği."
     },
     {
       "tur": "coktan",
-      "soru": "‘Doğrusal Olmayan İlişkilerde Korelasyon Katsayısı Yanılgısı’ başlığı kapsamında incelenen ilkelere göre aşağıdakilerden hangisi doğrudur?",
+      "soru": "‘İstatistiksel Sonuç ve Yorumları Temellendirme Ölçütleri’ kavramı veya konusuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
       "secenekler": [
-        "Temel kuralların hiçbir somut örnekle ilişkilendirilemeyeceğini ileri sürer.",
-        "Kavramların birbirinden bağımsız ve nedensiz ortaya çıktığını savunur.",
-        "Uygulama aşamasında planlama ve doğrulama adımlarını gereksiz görür.",
-        "Münhasıran r sayısına bakarak yorum yapmak tehlikelidir.",
-        "Süreç içerisindeki değişkenlerin ve bağlamın sonuca etkisini reddeder."
+        "İki nicel değişken arasında güçlü bir doğrusal ilişki saptandığında oluşturulan en uygun doğru (regresyon doğrusu) denklemi.",
+        "Başkaları tarafından sunulan istatistiksel sonuçlarda dikkatle aranması gereken ikinci hata grubu yanlılık (bias) ve veri manipülasyonudur:",
+        "İki nicel değişkenli verilerin yorumlanmasında yapılan en büyük ve en yaygın hata, ilişkililik (korelasyon) ile nedenselliği.",
+        "Medyada, reklamlarda veya araştırma raporlarında başkaları tarafından oluşturulmuş iki nicel değişkenli bir veri analiziyle.",
+        "Bir araştırma raporundaki istatistiksel sonucu tartışırken şu karar şemasını uygularız: • Ne Zaman Kabul Edilir?: Örneklem."
       ],
       "dogru": 3,
-      "aciklama": "Doğrusal Olmayan İlişkilerde Korelasyon Katsayısı Yanılgısı bölümünde açıklandığı üzere doğru ifade budur."
+      "aciklama": "‘İstatistiksel Sonuç ve Yorumları Temellendirme Ölçütleri’ kapsamında doğru açıklama: Medyada, reklamlarda veya araştırma raporlarında başkaları tarafından oluşturulmuş iki nicel değişkenli bir veri analiziyle."
     },
     {
       "tur": "dy",

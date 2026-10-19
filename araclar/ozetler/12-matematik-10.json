@@ -109,13 +109,13 @@
     {
       "soru": "sin(42°)·cos(18°) + cos(42°)·sin(18°) işleminin sonucu aşağıdakilerden hangisidir?",
       "secenekler": [
-        "1 / 2",
-        "{kok:2} / 2",
         "{kok:3} / 2",
+        "{kok:2} / 2",
+        "1 / 2",
         "{kok:3} / 3",
         "1"
       ],
-      "dogru": 2,
+      "dogru": 0,
       "aciklama": "İfade sin(a + b) açılımıdır: sin(42° + 18°) = sin(60°) = {kok:3} / 2 bulunur.",
       "tur": "coktan"
     },
@@ -148,13 +148,13 @@
     {
       "soru": "(cos(50°)·cos(10°) + sin(50°)·sin(10°)) / sin(40°) ifadesinin eşiti aşağıdakilerden hangisidir?",
       "secenekler": [
-        "cot(40°)",
+        "cos(50°)",
         "tan(40°)",
         "sin(50°)",
-        "cos(50°)",
+        "cot(40°)",
         "1"
       ],
-      "dogru": 0,
+      "dogru": 3,
       "aciklama": "Pay kısmı cos(a - b) fark açılımından cos(50° - 10°) = cos(40°) değerine eşittir. İfade cos(40°) / sin(40°) = cot(40°) olur.",
       "tur": "coktan"
     },

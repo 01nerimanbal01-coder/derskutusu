@@ -110,13 +110,13 @@
       "tur": "coktan",
       "soru": "İç açılarının ölçüleri toplamı 1440° olan bir dışbükey çokgenin toplam köşegen sayısı kaçtır?",
       "secenekler": [
-        "20",
-        "27",
         "35",
+        "27",
+        "20",
         "44",
         "54"
       ],
-      "dogru": 2,
+      "dogru": 0,
       "aciklama": "İç açılar toplamı (n - 2) · 180° = 1440° ⇒ n - 2 = 8 ⇒ n = 10 (ongen) bulunur. Toplam köşegen sayısı n · (n - 3) / 2 = 10 · 7 / 2 = 35'tir."
     },
     {
@@ -124,12 +124,12 @@
       "soru": "Bir iç açısının ölçüsü, bir dış açısının ölçüsünün 5 katına eşit olan düzgün çokgenin bir köşesinden çizilen köşegenlerle oluşan üçgen sayısı kaçtır?",
       "secenekler": [
         "8",
-        "9",
         "10",
+        "9",
         "12",
         "14"
       ],
-      "dogru": 2,
+      "dogru": 1,
       "aciklama": "Dış açıya x dersek iç açı 5x olur; 6x = 180° ⇒ x = 30° ve kenar sayısı n = 360° / 30° = 12 bulunur. Bir köşeden çizilen köşegenlerle oluşan üçgen sayısı n - 2 = 12 - 2 = 10'dur."
     },
     {
@@ -138,11 +138,11 @@
       "secenekler": [
         "48°",
         "54°",
-        "60°",
         "66°",
+        "60°",
         "72°"
       ],
-      "dogru": 3,
+      "dogru": 2,
       "aciklama": "Düzgün beşgenin bir iç açısı 108° ve KCD eşkenar üçgeninin bir açısı 60° olduğundan m(BCK) = 108° - 60° = 48° olur. |BC| = |CD| = |CK| olduğundan BCK üçgeni tepe açısı 48° olan ikizkenar üçgendir; taban açısı m(BKC) = (180° - 48°) / 2 = 66° bulunur."
     },
     {
@@ -182,7 +182,8 @@
           "metin": "Kenar uzunlukları birbirine eşit olan her dörtgen aynı zamanda bir düzgün dörtgendir.",
           "dogru": false
         }
-      ]
+      ],
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz."
     },
     {
       "tur": "eslestir",
@@ -208,7 +209,8 @@
           "İçbükey (Konkav) Çokgen",
           "En az bir iç açısının ölçüsü 180°'den büyük olan ve dış köşegeni bulunan çokgen"
         ]
-      ]
+      ],
+      "soru": "Aşağıdaki çokgen kavram ve özelliklerini doğru bağıntı veya açı değerleriyle eşleştiriniz."
     },
     {
       "tur": "bosluk",
@@ -238,7 +240,8 @@
       "fazla": [
         "180",
         "altıgen"
-      ]
+      ],
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavram veya sayılarla tamamlayınız."
     },
     {
       "tur": "ogretici",

@@ -109,26 +109,26 @@
     {
       "soru": "İfadesi 4 · sin(15°) · cos(15°) · cos(30°) olan çarpımın değeri aşağıdakilerden hangisidir?",
       "secenekler": [
-        "{kesir:1|4}",
+        "{kok:3}/2",
         "{kesir:1|2}",
         "{kok:3}/4",
-        "{kok:3}/2",
+        "{kesir:1|4}",
         "1"
       ],
-      "dogru": 3,
+      "dogru": 0,
       "aciklama": "4·sin(15°)·cos(15°)·cos(30°) = 2 · [2·sin(15°)·cos(15°)] · cos(30°) = 2 · sin(30°) · cos(30°) = sin(60°) = {kok:3}/2 bulunur.",
       "tur": "coktan"
     },
     {
       "soru": "cos(x) = {kesir:2|3} olduğuna göre cos(2x) ifadesinin değeri kaçtır?",
       "secenekler": [
-        "-{kesir:1|9}",
         "{kesir:1|9}",
+        "-{kesir:1|9}",
         "{kesir:2|9}",
         "{kesir:4|9}",
         "{kesir:5|9}"
       ],
-      "dogru": 0,
+      "dogru": 1,
       "aciklama": "cos(2x) = 2·cos²(x) - 1 özdeşliğinde cos(x) = {kesir:2|3} yazılırsa: cos(2x) = 2 · ({kesir:4|9}) - 1 = {kesir:8|9} - 1 = -{kesir:1|9} bulunur.",
       "tur": "coktan"
     },
@@ -136,12 +136,12 @@
       "soru": "Dar bir x açısı için cot(x) = 2 olduğuna göre tan(2x) değeri aşağıdakilerden hangisidir?",
       "secenekler": [
         "{kesir:3|4}",
-        "{kesir:4|3}",
         "{kesir:4|5}",
+        "{kesir:4|3}",
         "{kesir:5|4}",
         "1"
       ],
-      "dogru": 1,
+      "dogru": 2,
       "aciklama": "cot(x) = 2 ise tan(x) = {kesir:1|2} olur. tan(2x) = {kesir:2·tan(x)|1 - tan²(x)} = {kesir:2·(1/2)|1 - 1/4} = {kesir:1|3/4} = {kesir:4|3} bulunur.",
       "tur": "coktan"
     },

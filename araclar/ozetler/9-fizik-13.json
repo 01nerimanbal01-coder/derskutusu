@@ -100,13 +100,13 @@
       "tur": "coktan",
       "soru": "Doğrusal bir yolda sabit hızlı hareket (düzgün doğrusal hareket) yapan bir otomobil için aşağıdaki ifadelerden hangisi yanlıştır?",
       "secenekler": [
-        "Eşit zaman aralıklarında eşit büyüklükte yer değiştirmeler yapar.",
+        "Birim zamandaki hız değişimi (ivmesi) zamanla düzgün olarak artar.",
         "Konum-zaman (x-t) grafiğinin eğimi sabit ve sıfırdan farklıdır.",
         "Hız vektörünün yönü ve büyüklüğü hareket süresince değişmez.",
         "Hız-zaman (v-t) grafiği zaman eksenine paralel yatay bir doğrudur.",
-        "Birim zamandaki hız değişimi (ivmesi) zamanla düzgün olarak artar."
+        "Eşit zaman aralıklarında eşit büyüklükte yer değiştirmeler yapar."
       ],
-      "dogru": 4,
+      "dogru": 0,
       "aciklama": "Sabit hızlı harekette hız değişimi sıfır olduğu için (Δv = 0) cismin ivmesi sıfırdır (a = 0); ivmesi zamanla artmaz."
     },
     {
@@ -114,25 +114,25 @@
       "soru": "Doğrusal bir yolda hareket eden K ve L araçlarından K aracı t = 0 anında x = -20 m konumundan +15 m/s sabit hızla, L aracı ise aynı anda x = +60 m konumundan -5 m/s sabit hızla geçmektedir. Buna göre iki araç kaçıncı saniyede yan yana gelir?",
       "secenekler": [
         "2",
-        "3",
         "4",
+        "3",
         "5",
         "8"
       ],
-      "dogru": 2,
+      "dogru": 1,
       "aciklama": "Araçların t anındaki konum denklemleri eşitlenir: x_K(t) = x_L(t) → -20 + 15·t = 60 - 5·t → 20·t = 80 → t = 4. saniyede (x = +40 m konumunda) yan yana gelirler."
     },
     {
       "tur": "coktan",
       "soru": "Doğrusal bir yolda hareket eden bir cismin hız-zaman (v-t) grafiğinde; 0-4 s aralığında hızı sabit +10 m/s, 4-6 s aralığında ise sabit -15 m/s'dir. Bu cismin 0-6 s aralığındaki yer değiştirmesinin büyüklüğü (Δx) ve aldığı toplam yol (d) aşağıdakilerden hangisidir?",
       "secenekler": [
-        "Δx = 10 m, d = 70 m",
-        "Δx = 70 m, d = 10 m",
         "Δx = 25 m, d = 50 m",
+        "Δx = 70 m, d = 10 m",
+        "Δx = 10 m, d = 70 m",
         "Δx = 40 m, d = 30 m",
         "Δx = 70 m, d = 70 m"
       ],
-      "dogru": 0,
+      "dogru": 2,
       "aciklama": "0-4 s aralığında alan: Δx₁ = (+10)·4 = +40 m. 4-6 s aralığında alan: Δx₂ = (-15)·2 = -30 m. Yer değiştirme: Δx = +40 + (-30) = +10 m. Toplam alınan yol: d = 40 + 30 = 70 m."
     },
     {

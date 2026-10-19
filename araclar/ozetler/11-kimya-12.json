@@ -110,13 +110,13 @@
       "tur": "coktan",
       "soru": "Sabit sıcaklıkta gerçekleşen 2A(g) + B(g) -> C(g) tepkimesinde; [B] sabit tutulup [A] derişimi 2 katına çıkarıldığında hız 2 katına, [A] sabit tutulup [B] derişimi 3 katına çıkarıldığında ise hız 9 katına çıkmaktadır. Buna göre bu tepkimenin hız denklemi aşağıdakilerden hangisidir?",
       "secenekler": [
-        "r = k · [A]² · [B]",
         "r = k · [A] · [B]²",
+        "r = k · [A]² · [B]",
         "r = k · [A] · [B]",
         "r = k · [A]² · [B]³",
         "r = k · [B]²"
       ],
-      "dogru": 1,
+      "dogru": 0,
       "aciklama": "[A] 2 katına çıktığında hız 2¹=2 katına çıktığı için A'ya göre 1. derece; [B] 3 katına çıktığında hız 3²=9 katına çıktığı için B'ye göre 2. derecedir: r = k · [A] · [B]²."
     },
     {
@@ -124,25 +124,25 @@
       "soru": "Deneysel hız bağıntısı r = k · [X]{us:2| } · [Y]{us:2| } olan bir kimyasal tepkimede hız sabiti k'nin birimi aşağıdakilerden hangisidir? (Hız birimi mol/(L·s) alınacaktır.)",
       "secenekler": [
         "1 / s",
-        "L / (mol · s)",
-        "L² / (mol² · s)",
         "L³ / (mol³ · s)",
+        "L² / (mol² · s)",
+        "L / (mol · s)",
         "mol / (L · s)"
       ],
-      "dogru": 3,
+      "dogru": 1,
       "aciklama": "Tepkime derecesi n = 2 + 2 = 4'tür. k birimi = (L/mol)^(n-1) · (1/s) = (L/mol)³ · (1/s) = L³ / (mol³ · s) olur."
     },
     {
       "tur": "coktan",
       "soru": "Sabit sıcaklıkta X(g) + Y(g) -> Z(g) tepkimesi için: 1. Deneyde [X]=0,2 M, [Y]=0,1 M iken r = 2·10{us:-2| } M/s; 2. Deneyde [X]=0,4 M, [Y]=0,1 M iken r = 4·10{us:-2| } M/s; 3. Deneyde [X]=0,4 M, [Y]=0,3 M iken r = 4·10{us:-2| } M/s ölçülmüştür. Buna göre hız sabiti (k) kaçtır?",
       "secenekler": [
-        "0,1 s⁻¹",
-        "0,2 s⁻¹",
         "0,5 s⁻¹",
+        "0,2 s⁻¹",
+        "0,1 s⁻¹",
         "1,0 s⁻¹",
         "2,0 s⁻¹"
       ],
-      "dogru": 0,
+      "dogru": 2,
       "aciklama": "2 ve 3. deneylerde [Y] 3 katına çıkarken hız değişmemiş (Y'ye göre 0. derece). 1 ve 2. deneyde [X] 2 katına çıkarken hız 2 katına çıkmış (X'e göre 1. derece). r = k·[X] -> 2·10⁻² = k · 0,2 -> k = 0,1 s⁻¹."
     },
     {
@@ -152,10 +152,10 @@
         "2 katına çıkar.",
         "4 katına çıkar.",
         "Yarıya düşer.",
-        "8 katına çıkar.",
-        "Değişmez."
+        "Değişmez.",
+        "8 katına çıkar."
       ],
-      "dogru": 4,
+      "dogru": 3,
       "aciklama": "r_yeni = k · (4·[N₂]) · (1/2·[H₂])² = 4 · (1/4) · r = 1 · r olur; yani başlangıç hızı değişmez."
     },
     {

@@ -109,13 +109,13 @@
     {
       "soru": "Pozitif terimli bir (a_n) geometrik dizisinde a_2 = 3 ve a_5 = 81 olduğuna göre bu dizinin 4. terimi (a_4) kaçtır?",
       "secenekler": [
-        "9",
-        "18",
         "27",
+        "18",
+        "9",
         "36",
         "54"
       ],
-      "dogru": 2,
+      "dogru": 0,
       "aciklama": "a_5 = a_2 · r³ → 81 = 3 · r³ → r³ = 27 → r = 3 bulunur. Buradan a_4 = a_2 · r² = 3 · 3² = 27 olarak hesaplanır.",
       "tur": "coktan"
     },
@@ -137,11 +137,11 @@
       "secenekler": [
         "45",
         "48",
-        "63",
         "93",
+        "63",
         "96"
       ],
-      "dogru": 3,
+      "dogru": 2,
       "aciklama": "S_5 = a_1 · (r⁵ - 1) / (r - 1) = 3 · (2⁵ - 1) / (2 - 1) = 3 · (32 - 1) / 1 = 3 · 31 = 93 bulunur.",
       "tur": "coktan"
     },
@@ -150,11 +150,11 @@
       "secenekler": [
         "2",
         "3",
-        "4",
         "5",
+        "4",
         "6"
       ],
-      "dogru": 2,
+      "dogru": 3,
       "aciklama": "Hem aritmetik hem geometrik dizi sabit dizidir: a - 3 = 2a - 7 → a = 4 bulunur. Dizinin terimleri 4 - 3 = 1'dir. Buradan 3b + 1 = 1 → b = 0 olur ve a + b = 4 + 0 = 4 bulunur.",
       "tur": "coktan"
     },

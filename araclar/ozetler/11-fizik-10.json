@@ -110,13 +110,13 @@
       "tur": "coktan",
       "soru": "Yatay düzlemde durmakta olan 5 kg kütleli bir cisme yatay doğrultuda 18 N büyüklüğünde bir kuvvet uygulandığında cismin hareket etmediği gözleniyor. Cisim ile yüzey arasındaki statik sürtünme katsayısı ks = 0,5 olduğuna göre, bu anda cisme etki eden statik sürtünme kuvvetinin büyüklüğü kaç Newton'dur? (g = 10 m/{us:s|2})",
       "secenekler": [
-        "7",
         "18",
+        "7",
         "25",
         "43",
         "50"
       ],
-      "dogru": 1,
+      "dogru": 0,
       "aciklama": "Maksimum statik sürtünme kuvveti fs,max = ks·m·g = 0,5·5·10 = 25 N'dur. Uygulanan 18 N'luk kuvvet 25 N'u aşamadığı için cisim durmaya devam eder ve statik sürtünme kuvveti uygulanan kuvvete eşit yani 18 N olur."
     },
     {
@@ -124,12 +124,12 @@
       "soru": "Kinetik sürtünme katsayısının k = 0,4 olduğu yatay bir yolda 4 kg kütleli bir takoz, üst yüzeyine dik olarak aşağı doğru bastıran 20 N'luk bir kuvvetin ve yatay doğrultuda çeken 52 N'luk bir kuvvetin etkisinde hareket etmektedir. Buna göre takozun ivmesi kaç m/{us:s|2}'dir? (g = 10 m/{us:s|2})",
       "secenekler": [
         "4",
-        "5",
         "7",
+        "5",
         "9",
         "13"
       ],
-      "dogru": 2,
+      "dogru": 1,
       "aciklama": "Yüzeye dik toplam normal kuvvet N = m·g + Fd = 4·10 + 20 = 60 N olur. Sürtünme kuvveti fs = k·N = 0,4·60 = 24 N'dur. Yatay net kuvvet Fnet = 52 - 24 = 28 N olduğundan ivme a = Fnet / m = 28 / 4 = 7 m/s² bulunur."
     },
     {
@@ -138,11 +138,11 @@
       "secenekler": [
         "N artar, fs artar",
         "N değişmez, fs azalır",
-        "N azalır, fs artar",
         "N azalır, fs azalır",
+        "N azalır, fs artar",
         "N değişmez, fs değişmez"
       ],
-      "dogru": 3,
+      "dogru": 2,
       "aciklama": "Eğik düzlemde N = m·g·cos α ve fs = k·m·g·cos α'dır. Eğim açısı α arttığında cos α azalacağından hem normal kuvvet (N) hem de sürtünme kuvveti (fs) azalır."
     },
     {
@@ -152,10 +152,10 @@
         "2",
         "3",
         "4",
-        "6",
-        "5"
+        "5",
+        "6"
       ],
-      "dogru": 4,
+      "dogru": 3,
       "aciklama": "İvme bağıntısı a = g·(sin 53° - k·cos 53°) = 10·(0,8 - 0,5·0,6) = 10·(0,8 - 0,3) = 5 m/s² olarak bulunur."
     },
     {
@@ -182,7 +182,8 @@
           "metin": "Aynı iki yüzey arasındaki kinetik sürtünme katsayısı (kk), statik sürtünme katsayısından (ks) daha büyüktür.",
           "dogru": false
         }
-      ]
+      ],
+      "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz."
     },
     {
       "tur": "eslestir",
@@ -208,7 +209,8 @@
           "Sürtünme kuvveti (fs) – Normal kuvvet (N) grafiğinin eğimi",
           "k (Sürtünme katsayısı)"
         ]
-      ]
+      ],
+      "soru": "Aşağıdaki fiziksel durumları yüzeyin normal kuvveti (N) veya sürtünme ifadeleriyle eşleştiriniz."
     },
     {
       "tur": "bosluk",
@@ -238,7 +240,8 @@
       "fazla": [
         "Pascal",
         "Joule"
-      ]
+      ],
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız."
     },
     {
       "tur": "ogretici",

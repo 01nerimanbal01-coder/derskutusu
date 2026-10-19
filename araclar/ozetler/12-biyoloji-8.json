@@ -109,13 +109,13 @@
     {
       "soru": "Genetik şifre, kodon ve antikodon kavramlarıyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
       "secenekler": [
-        "Durdurucu kodonların karşılığında sitoplazmada üç çeşit özel tRNA antikodonu bulunur.",
         "Bir mRNA molekülündeki anlamlı kodon çeşidi sayısı en fazla 61'dir.",
+        "Durdurucu kodonların karşılığında sitoplazmada üç çeşit özel tRNA antikodonu bulunur.",
         "Bir kodon çeşidi normal şartlarda birden fazla farklı amino asit çeşidini şifreleyebilir.",
         "Metiyonin ve triptofan amino asitleri dörder farklı kodon çeşidiyle şifrelenir.",
         "Genetik şifre her canlı türünde tamamen farklı amino asitleri kodlayacak biçimde özelleşmiştir."
       ],
-      "dogru": 1,
+      "dogru": 0,
       "aciklama": "64 çeşit mRNA kodonundan 3 tanesi (UAA, UAG, UGA) durdurucu kodon olduğu için amino asit şifreleyen anlamlı kodon çeşidi sayısı en fazla 61'dir.",
       "tur": "coktan"
     },
@@ -123,12 +123,12 @@
       "soru": "Analiz edilen 90 amino asitten oluşan bir polipeptit molekülünün sentezlenmesi sürecinde görev yapan mRNA'daki kodon sayısı (X), kullanılan tRNA sayısı (Y) ve kurulan peptit bağı sayısı (Z) aşağıdakilerin hangisinde doğru verilmiştir?",
       "secenekler": [
         "X = 90, Y = 90, Z = 90",
-        "X = 91, Y = 91, Z = 89",
-        "X = 90, Y = 89, Z = 89",
         "X = 91, Y = 90, Z = 89",
+        "X = 90, Y = 89, Z = 89",
+        "X = 91, Y = 91, Z = 89",
         "X = 92, Y = 90, Z = 90"
       ],
-      "dogru": 3,
+      "dogru": 1,
       "aciklama": "90 amino asit için 90 anlamlı kodon + 1 durdurucu kodon = 91 kodon (X=91) görev yapar. Durdurucu kodonun tRNA karşılığı olmadığından 90 tRNA (Y=90) görev alır ve 90 - 1 = 89 peptit bağı (Z=89) kurulur.",
       "tur": "coktan"
     },
@@ -151,10 +151,10 @@
         "Polipeptitlerdeki toplam amino asit sayısı",
         "Polipeptitlerin sentezinde kullanılan kalıp mRNA'nın nükleotit dizilişi",
         "Polipeptitlerdeki amino asitlerin dizilimi",
-        "Polipeptitlerin sentezinde kurulan peptit bağı sayısı",
-        "Ribozomlarda sentezin tamamlanma zamanı"
+        "Ribozomlarda sentezin tamamlanma zamanı",
+        "Polipeptitlerin sentezinde kurulan peptit bağı sayısı"
       ],
-      "dogru": 4,
+      "dogru": 3,
       "aciklama": "Ribozomlar mRNA'ya sırayla bağlandığı için sentezin tamamlanma zamanları birbirinden farklıdır; ancak üretilen proteinlerin amino asit sayısı, çeşidi ve dizilişi aynıdır.",
       "tur": "coktan"
     },

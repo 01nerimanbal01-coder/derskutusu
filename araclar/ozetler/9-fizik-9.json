@@ -109,13 +109,13 @@
     {
       "soru": "Kartezyen koordinat sisteminde başlangıç noktası orijinde bulunan ve düşey (+y) ekseniyle 37° açı yapan 20 N büyüklüğündeki F kuvvetinin yatay (Fx) ve düşey (Fy) bileşenlerinin büyüklüğü aşağıdakilerden hangisidir? (sin 37° = 0,6; cos 37° = 0,8)",
       "secenekler": [
-        "Fx = 16 N, Fy = 12 N",
         "Fx = 12 N, Fy = 16 N",
+        "Fx = 16 N, Fy = 12 N",
         "Fx = 10 N, Fy = 10 N",
         "Fx = 15 N, Fy = 20 N",
         "Fx = 8 N, Fy = 6 N"
       ],
-      "dogru": 1,
+      "dogru": 0,
       "aciklama": "Açı düşey (+y) ekseniyle verildiği için +y ekseni açının komşusudur: Fy = 20 · cos 37° = 20 · 0,8 = 16 N ve karşı kenar olan yatay bileşen Fx = 20 · sin 37° = 20 · 0,6 = 12 N olur.",
       "tur": "coktan"
     },
@@ -123,25 +123,25 @@
       "soru": "Birim kareli koordinat düzleminde K(6, -3), L(-2, 8) ve M(4, 1) vektörleri verilmiştir. Bu üç vektörün bileşkesini sıfırlayan 'dengeleyici kuvvetin (E)' koordinatları ve büyüklüğü aşağıdakilerden hangisidir?",
       "secenekler": [
         "E(8, 6) ve büyüklüğü 10 birim",
-        "E(-8, 6) ve büyüklüğü 10 birim",
         "E(-8, -6) ve büyüklüğü 10 birim",
+        "E(-8, 6) ve büyüklüğü 10 birim",
         "E(8, -6) ve büyüklüğü 14 birim",
         "E(-6, -8) ve büyüklüğü 12 birim"
       ],
-      "dogru": 2,
+      "dogru": 1,
       "aciklama": "Bileşke vektör R = K + L + M = (6 - 2 + 4, -3 + 8 + 1) = (8, 6) birimdir. Dengeleyici kuvvet bileşkenin zıt yönlüsü olduğundan E = -R = (-8, -6) olur ve büyüklüğü {kok:(-8)² + (-6)²} = 10 birimdir.",
       "tur": "coktan"
     },
     {
       "soru": "Başlangıç noktaları çakışık ve büyüklükleri eşit (|A| = |B| = 8 N) olan A ve B vektörleri arasındaki açı 60°'dir. Buna göre |A + B| toplam vektörünün büyüklüğü ile |A - B| fark vektörünün büyüklüğü sırasıyla kaç N'dur?",
       "secenekler": [
-        "8·{kok:3} N ve 8 N",
-        "8 N ve 8·{kok:3} N",
         "8·{kok:2} N ve 8 N",
+        "8 N ve 8·{kok:3} N",
+        "8·{kok:3} N ve 8 N",
         "16 N ve 0 N",
         "8·{kok:3} N ve 8·{kok:2} N"
       ],
-      "dogru": 0,
+      "dogru": 2,
       "aciklama": "Eşit iki 8 N vektör arasındaki açı 60° olduğundan toplamları |A + B| = 8·{kok:3} N olur. Fark işleminde (-B) alındığında iki vektör arasındaki açı 180° - 60° = 120° olacağından |A - B| = 8 N bulunur.",
       "tur": "coktan"
     },
