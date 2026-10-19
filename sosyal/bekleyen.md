@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 1037 gönderi.
+Toplam 906 gönderi.
 
 ## bilgi-7-turkce-7
 Sıra: 2026-11-19 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-turkce-7.png
@@ -4149,2373 +4149,8 @@ Kaydedin, ünite sonunda lazım olacak. 📌
 #derskutusu #öğrenmeçıktısı #7sınıf #matematik #maarifmodeli
 ```
 
-## seri-cikti-mat-7-4-5
-Sıra: 2026-10-19 16:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-mat-7-4-5-1.png
-
-```
-Hacim Ölçme Birimleri konusunda öğrencileriniz nerede? 📝
-7. sınıf Matematik öğrenme çıktısı MAT.7.4.5: “Hacim ölçme birimleri arasındaki ilişkileri değerlendirebilme”
-Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz ve değerlendirme düzeylerinde.
-Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
-👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-matematik-mat-7-4-5.pdf
-👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=matematik#cikti-yazililari
-Sayfada “Öğrenme çıktısı yazılıları” bölümünde MAT.7.4.5 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
-Zümrenizle paylaşın; kâğıtlar herkese açık.
-#derskutusu #öğrenmeçıktısı #7sınıf #matematik #maarifmodeli
-```
-
-## seri-cikti-mat-7-4-6
-Sıra: 2026-10-19 16:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-mat-7-4-6-1.png
-
-```
-Dikdörtgenler Prizmasının Hacmi ve Yüzey Alanı konusunda öğrencileriniz nerede? 📝
-7. sınıf Matematik öğrenme çıktısı MAT.7.4.6: “Günlük hayat durumlarında dikdörtgenler prizmaları ile modellenen cisimlerin yüzey alanı ve hacmine yönelik problem çözebilme”
-Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz ve değerlendirme düzeylerinde.
-Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
-👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-matematik-mat-7-4-6.pdf
-👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=matematik#cikti-yazililari
-Sayfada “Öğrenme çıktısı yazılıları” bölümünde MAT.7.4.6 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
-Zümrenizle paylaşın; kâğıtlar herkese açık.
-#derskutusu #öğrenmeçıktısı #7sınıf #matematik #maarifmodeli
-```
-
-## seri-cikti-mat-7-6-1
-Sıra: 2026-10-19 16:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-mat-7-6-1-1.png
-
-```
-7. sınıf Matematik · MAT.7.6.1 yazılısı hazır 📝
-7. sınıf Matematik öğrenme çıktısı MAT.7.6.1: “Kategorik veya nicel (sürekli) veri ile çalışabilme ve veriye dayalı karar verebilme”
-Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz ve değerlendirme düzeylerinde.
-Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
-👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-matematik-mat-7-6-1.pdf
-👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=matematik#cikti-yazililari
-Sayfada “Öğrenme çıktısı yazılıları” bölümünde MAT.7.6.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
-Kaydedin, ünite sonunda lazım olacak. 📌
-#derskutusu #öğrenmeçıktısı #7sınıf #matematik #maarifmodeli
-```
-
-## seri-cikti-mat-7-6-2
-Sıra: 2026-10-19 16:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-mat-7-6-2-1.png
-
-```
-Kategorik ve Nicel (Sürekli) Veri Dağılımları konusunda öğrencileriniz nerede? 📝
-7. sınıf Matematik öğrenme çıktısı MAT.7.6.2: “Başkaları tarafından oluşturulan kategorik veya nicel (sürekli) veriye dayalı istatistiksel sonuç veya yorumları tartışabilme”
-Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz ve değerlendirme düzeylerinde.
-Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
-👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-matematik-mat-7-6-2.pdf
-👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=matematik#cikti-yazililari
-Sayfada “Öğrenme çıktısı yazılıları” bölümünde MAT.7.6.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
-Zümrenizle paylaşın; kâğıtlar herkese açık.
-#derskutusu #öğrenmeçıktısı #7sınıf #matematik #maarifmodeli
-```
-
-## seri-cikti-m-8-1-1-1
-Sıra: 2026-10-19 16:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-1-1-1-1.png
-
-```
-8. sınıf Matematik · M.8.1.1.1 yazılısı hazır 📝
-8. sınıf Matematik öğrenme çıktısı M.8.1.1.1: “Verilen pozitif tam sayıların pozitif tam sayı çarpanlarını bulur, pozitif tam sayıların pozitif tam sayı çarpanlarını üslü ifadelerin çarpımı şeklinde yazar.”
-Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz ve değerlendirme düzeylerinde.
-Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
-👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-matematik-m-8-1-1-1.pdf
-👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=matematik#cikti-yazililari
-Sayfada “Öğrenme çıktısı yazılıları” bölümünde M.8.1.1.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
-Kaydedin, ünite sonunda lazım olacak. 📌
-#derskutusu #öğrenmeçıktısı #8sınıf #matematik #maarifmodeli
-```
-
-## bilgi-10-arapca-10
-Sıra: 2026-10-19 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-arapca-10.png
-
-```
-Bunu biliyor muydunuz? Komşuluk Kavramları: (komşu), (komşular), (mahalle) ve (komşuluk hakkı) toplumsal yaşamın temel sözcükleridir. Yardımlaşma Eylemleri: (yardımlaşır), (yardım eder), (hediyeleşir), (paylaşır) ve (emaneti korur) fiilleri dayanışmayı anlatır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Arapça 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-arapca-hafta-10
-#derskutusu #arapça #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-arapca-11
-Sıra: 2026-10-19 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-arapca-11.png
-
-```
-Bunu biliyor muydunuz? Arapçada vücut organları beş duyu fiilleriyle birlikte '' (ile) harf-i ceri kullanılarak ifade edilir: ''. İnsan bedeninde çift olarak bulunan organlar semâî müennes (dişil), tek bulunan organlar ise müzekker (eril) kabul edilir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Arapça 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-arapca-hafta-11
-#derskutusu #arapça #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-arapca-12
-Sıra: 2026-10-20 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-arapca-12.png
-
-```
-Bunu biliyor muydunuz? Sağlıklı yaşam için sebzeler, meyveler, süt ve bal gibi sağlıklı gıdalar düzenli öğünlerle tüketilmelidir. « - » fiili Arapçada hem öğün/yemek yemek hem de ilaç almak anlamında kullanılan temel fiildir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Arapça 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-arapca-hafta-12
-#derskutusu #arapça #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-arapca-13
-Sıra: 2026-10-20 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-arapca-13.png
-
-```
-Bunu biliyor muydunuz? Arapçada hobi «» (çoğulu «»), boş zaman ise «» (çoğulu «») tamlamasıyla ifade edilir. Sportif hobiler arasında «» (futbol), «» (basketbol), «» (yüzme), «» (binicilik) ve «» (okçuluk) yer alır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Arapça 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-arapca-hafta-13
-#derskutusu #arapça #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-arapca-8
-Sıra: 2026-10-20 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-arapca-8.png
-
-```
-Bunu biliyor muydunuz? Güzel davranışlar kapsamında (merhamet eder), (teşekkür eder), (ikram eder) ve (yardım eder) fiilleri temel eylemleri ifade eder. Ahlaki nitelikler / (dürüst/yalancı) ve / (sabırlı/aceleci) sıfat çiftleriyle; duygular ise kelimeleriyle anlatılır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Arapça 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-arapca-hafta-8
-#derskutusu #arapça #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-arapca-9
-Sıra: 2026-10-20 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-arapca-9.png
-
-```
-Bunu biliyor muydunuz? Güzel Davranış Fiilleri: (merhamet eder), (şükreder/teşekkür eder), (ikram eder), (yardım eder) ve (namaz kılar) fiilleri sosyal ahlakın temel eylemleridir. Sıfatlar ve Duygular: Karakter sıfatları } (dürüst/yalancı) ve } (sabırlı/aceleci); duygu sıfatları ise sözcükleridir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Arapça 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-arapca-hafta-9
-#derskutusu #arapça #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-biyoloji-10
-Sıra: 2026-10-20 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-biyoloji-10.png
-
-```
-Bunu biliyor muydunuz? Villus ve Mikrovilluslar: İnce bağırsak mukozasındaki parmaksı çıkıntılar olup besin monomerlerinin difüzyon ve aktif taşımayla emilim yüzeyini artırır. Kan Kılcalları Yolu: Glikoz, fruktoz, galaktoz, amino asitler, B-C vitaminleri, su ve mineraller kapı toplardamarı -> karaciğer -> karaciğer üstü toplardamarı -> alt ana toplardamar ile kalbin sağ kulakçığına taşınır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Biyoloji 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-biyoloji-hafta-10
-#derskutusu #biyoloji #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-biyoloji-11
-Sıra: 2026-10-20 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-biyoloji-11.png
-
-```
-Bunu biliyor muydunuz? Hücresel solunum, sindirim ve emilimle hücrelere ulaştırılan organik besin monomerlerindeki kimyasal bağ enerjisinin yaşamsal olaylarda kullanılmak üzere ATP'ye dönüştürülmesidir (C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O + ATP + Isı). Birinci evre olan glikoliz sitoplazmada gerçekleşir; 6 karbonlu glikoz 2 pirüvata (3C) yıkılırken 2 ATP harcanır, substrat düzeyinde fosforilasyonla (SDF) 4 ATP (net 2 ATP) ve 2 NADH üretilir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Biyoloji 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-biyoloji-hafta-11
-#derskutusu #biyoloji #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-biyoloji-12
-Sıra: 2026-10-21 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-biyoloji-12.png
-
-```
-Bunu biliyor muydunuz? Polisakkaritlerin sindirimiyle oluşan glikoz, hücresel solunuma doğrudan sitoplazmadaki glikoliz evresinden katılır. Yağların yapı taşlarından gliserol glikoliz ara basamağından, yağ asitleri ise beta oksidasyonla 2 karbonlu Asetil-KoA basamağından solunuma dâhil olur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Biyoloji 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-biyoloji-hafta-12
-#derskutusu #biyoloji #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-biyoloji-13
-Sıra: 2026-10-21 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-biyoloji-13.png
-
-```
-Bunu biliyor muydunuz? Fermantasyon, glikozun oksijen ve ETS kullanılmadan sitoplazmada glikoliz ve son ürün oluşumu evreleriyle kısmen parçalanıp net 2 ATP üretilmesi sürecidir. Etil alkol fermantasyonunda pirüvattan CO2 çıkışı olur ve oluşan asetaldehit (2C) NADH ile indirgenerek etil alkole dönüşür (bira mayası, bazı bakteriler).
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Biyoloji 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-biyoloji-hafta-13
-#derskutusu #biyoloji #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-biyoloji-8
-Sıra: 2026-10-21 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-biyoloji-8.png
-
-```
-Bunu biliyor muydunuz? Mekanik sindirim besinleri enzim ve su kullanmadan fiziksel olarak küçülterek yüzey alanını artırır; kimyasal sindirim ise su ve enzimlerle (hidroliz) polimerleri monomerlerine ayırır. Kimyasal sindirim (hidroliz) tepkimeleri sırasında glikozit, ester ve peptit bağları koparılırken ATP harcanmaz ve üretilmez.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Biyoloji 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-biyoloji-hafta-8
-#derskutusu #biyoloji #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-biyoloji-9
-Sıra: 2026-10-21 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-biyoloji-9.png
-
-```
-Bunu biliyor muydunuz? Sindirim Kanalı Sırası: Besinler sırasıyla ağız -> yutak -> yemek borusu -> mide -> ince bağırsak -> kalın bağırsak -> anüs hattını izler; yemek borusu ve kalın bağırsakta kimyasal sindirim olmaz. Mide Sindirimi: Gastrin hormonu mide öz suyunu uyarır; HCl pasif pepsinojeni aktif pepsine çevirerek proteinlerin kimyasal sindirimini başlatır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Biyoloji 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-biyoloji-hafta-9
-#derskutusu #biyoloji #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-cografya-10
-Sıra: 2026-10-21 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-cografya-10.png
-
-```
-Bunu biliyor muydunuz? Akarsu Şekilleri: Türkiye'de en etkili dış kuvvettir; vadi, dev kazanı, peribacası, kırgıbayır, plato aşınım; birikinti konisi, dağ içi ovası ve delta (Çukurova, Bafra, Çarşamba) birikim; menderes ve seki ise karma şekillerdir. Rüzgâr Şekilleri: Kurak ve yarı kurak alanlarda (Konya-Karapınar) mantarkaya, şahit tepe, yardang, tafoni, hamada aşınım; lös, kumul ve barkan ise birikim şekilleridir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Coğrafya 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-cografya-hafta-10
-#derskutusu #coğrafya #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-cografya-11
-Sıra: 2026-10-21 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-cografya-11.png
-
-```
-Bunu biliyor muydunuz? Dağların kıyıya paralel uzandığı yerlerde boyuna kıyı (Karadeniz, Akdeniz; dar kıta sahanlığı, bol falez), dik uzandığı yerlerde ise enine kıyı (Ege; geniş kıta sahanlığı, bol koy/körfez ve kolay delta oluşumu) görülür. Eski akarsu vadilerinin deniz suları altında kalmasıyla ria kıyı (İstanbul ve Çanakkale Boğazları, Haliç, Menteşe yöresi); kıyıya paralel dağ sırtlarının adalaşmasıyla dalmaçya kıyı (Finike-Kaş); koy önlerinin kıyı okuyla.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Coğrafya 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-cografya-hafta-11
-#derskutusu #coğrafya #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-cografya-12
-Sıra: 2026-10-22 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-cografya-12.png
-
-```
-Bunu biliyor muydunuz? Yeryüzü şekillerini inceleyen coğrafi saha çalışmaları; saha öncesi hazırlık, sahada uygulama (veri toplama) ve çözümleme-tahmin-raporlama olmak üzere üç temel aşamada yürütülür. Gidilmesi güç arazilerde CBS, üç boyutlu sanal küre uygulamaları, uydu görüntüleri ve sayısal yükselti modelleriyle (SYM) sanal saha çalışmaları gerçekleştirilir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Coğrafya 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-cografya-hafta-12
-#derskutusu #coğrafya #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-cografya-13
-Sıra: 2026-10-22 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-cografya-13.png
-
-```
-Bunu biliyor muydunuz? Yeryüzü şekillerinin yükselti, eğim, bakı ve engebe özellikleri; nüfusun dağılışını, yerleşme dokusunu (toplu/dağınık), tarımı ve ulaşımı doğrudan etkiler. Alüvyal ovalar yoğun tarım ve toplu yerleşmeye; yüksek platolar tahıl ve mera hayvancılığına; engebeli dağlık alanlar ise ormancılık, yaylacılık ve kış turizmine elverişlidir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Coğrafya 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-cografya-hafta-13
-#derskutusu #coğrafya #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-cografya-8
-Sıra: 2026-10-22 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-cografya-8.png
-
-```
-Bunu biliyor muydunuz? Sıcaklık farkının fazla, nemin az olduğu çöl ve karasal bölgelerde fiziksel (mekanik) çözülme; sıcaklık ve yağışın fazla olduğu Ekvatoral, Muson ve kıyı bölgelerinde ise kimyasal çözünme baskındır. Fiziksel çözülmede kayaçların kimyasal yapısı değişmezken, kimyasal çözünmede mineraller su ve CO₂ ile ayrışarak toprak oluşumunu hızlandırır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Coğrafya 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-cografya-hafta-8
-#derskutusu #coğrafya #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-cografya-9
-Sıra: 2026-10-22 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-cografya-9.png
-
-```
-Bunu biliyor muydunuz? Akarsu Şekilleri: Vadiler (çentik, boğaz, kanyon, geniş tabanlı), dev kazanı, kırgıbayır, peribacası, plato ve peneplen aşınım; birikinti konisi, dağ eteği/dağ içi ovası ve delta ovası birikim; menderes ve seki ise ortak. Rüzgâr Şekilleri (Kurak İklim): Mantarkaya, şahit tepe, yardang, tafoni ve hamada aşınım; lös, kumul ve barkan (hilal kumul) ise birikim şekilleridir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Coğrafya 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-cografya-hafta-9
-#derskutusu #coğrafya #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-din-kulturu-10
-Sıra: 2026-10-22 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-din-kulturu-10.png
-
-```
-Bunu biliyor muydunuz? Dua (Kavlî ve Fiilî): Kulun acziyetini bilerek es-Semî' ve el-Mucîb olan Allah'a yönelmesidir; hem sebeplere sarılıp çalışmayı (fiilî) hem de dille-kalple yakarışı (kavlî) içerir. İbadet ve İhlas: İnsanın yaratılış gayesi (Zâriyât, 56) olup Allah'ın rızasını kazanmak için emirlerini ihlasla ve Sünnete uygun biçimde yerine getirmektir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Din Kültürü ve Ahlak Bilgisi 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-din-kulturu-ve-ahlak-bilgisi-hafta-10
-#derskutusu #dinkültürü #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-din-kulturu-11
-Sıra: 2026-10-22 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-din-kulturu-11.png
-
-```
-Bunu biliyor muydunuz? Haşr suresi 22-24. ayetler (Hüvallâhüllezî), Kur'an-ı Kerim'de tevhit inancını ve Esmâ-i Hüsnâ'yı (en güzel isimleri) en yoğun biçimde bir arada bulunduran ayet grubudur. 22. ayette Allah'ın hem gizliyi (gayb) hem de görüneni (şehâdet) bilen olduğu, ayrıca er-Rahmân ve er-Rahîm isimleriyle sonsuz merhamet sahibi bulunduğu bildirilir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Din Kültürü ve Ahlak Bilgisi 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-din-kulturu-ve-ahlak-bilgisi-hafta-11
-#derskutusu #dinkültürü #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-din-kulturu-12
-Sıra: 2026-10-23 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-din-kulturu-12.png
-
-```
-Bunu biliyor muydunuz? Yüce Allah'ı zâtî ve sübûtî sıfatları ile güzel isimleriyle (Esmâ-i Hüsnâ) gereği gibi tanımaya marifetullah denir. Allah'ın isimleri ile sıfatları birbiriyle doğrudan ilişkilidir (İlim -> el-Alîm, Kudret -> el-Kadîr, Semi' -> es-Semî', Basar -> el-Basîr, Tekvîn -> el-Hâlık).
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Din Kültürü ve Ahlak Bilgisi 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-din-kulturu-ve-ahlak-bilgisi-hafta-12
-#derskutusu #dinkültürü #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-din-kulturu-13
-Sıra: 2026-10-23 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-din-kulturu-13.png
-
-```
-Bunu biliyor muydunuz? Esmâ-i Hüsnâ, dua ve iletişimde kulun içinde bulunduğu duruma (şifa için Eş-Şâfî, rızık için Er-Rezzâk, af için El-Gaffâr) uygun olarak zikredilir. İslam'da aile kurumu Rûm suresi 21. ayette bildirilen sekînet (huzur), meveddet (sevgi) ve rahmet (merhamet) ilkeleri üzerine inşa edilir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Din Kültürü ve Ahlak Bilgisi 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-din-kulturu-ve-ahlak-bilgisi-hafta-13
-#derskutusu #dinkültürü #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-din-kulturu-8
-Sıra: 2026-10-23 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-din-kulturu-8.png
-
-```
-Bunu biliyor muydunuz? Gaye ve Nizam (İnayet) delili, evrendeki kusursuz ölçü, denge ve amaçlılığın sonsuz ilim, irade ve kudret sahibi Allah'ın (cc) eseri olduğunu kanıtlar. Hudûs delili âlemin sonradan yaratılmış (hâdis) olmasından, İmkân delili ise mümkün varlıkların Zorunlu Varlığa (Vâcibü'l-Vücûd) muhtaç olmasından hareket eder.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Din Kültürü ve Ahlak Bilgisi 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-din-kulturu-ve-ahlak-bilgisi-hafta-8
-#derskutusu #dinkültürü #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-din-kulturu-9
-Sıra: 2026-10-23 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-din-kulturu-9.png
-
-```
-Bunu biliyor muydunuz? Zâtî (Selbî) Sıfatlar (6): Allah'a özgü olan Vücûd, Kıdem, Bekâ, Vahdâniyyet, Muhâlefetün li'l-havâdis ve Kıyâm bi-nefsihî sıfatları Allah'ı her türlü eksiklikten tenzih eder. Sübûtî Sıfatlar (8): Allah'ın mutlak kemalini anlatan Hayat, İlim, Semî, Basar, İrade, Kudret, Kelam ve Tekvin sıfatlarının kâinatta sayısız tecellisi vardır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Din Kültürü ve Ahlak Bilgisi 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-din-kulturu-ve-ahlak-bilgisi-hafta-9
-#derskutusu #dinkültürü #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-edebiyat-10
-Sıra: 2026-10-23 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-edebiyat-10.png
-
-```
-Bunu biliyor muydunuz? Gazel: Beyit nazım birimi (5-15 beyit), aruz ölçüsü ve aa, ba, ca... şemasıyla yazılan lirik Divan şiiridir (matla, makta, beytü'l-gazel, yek-ahenk, yek-avaz). Kaside (Ara Metin): Din ve devlet büyüklerini övmek için aruzla yazılan 33-99 beyitlik şiirdir; Nesib, Girizgâh, Methiye, Tegazzül, Fahriye ve Dua bölümlerinden oluşur (tevhit, münacat, naat).
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Türk Dili ve Edebiyatı 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-turk-dili-ve-edebiyati-hafta-10
-#derskutusu #edebiyat #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-edebiyat-11
-Sıra: 2026-10-23 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-edebiyat-11.png
-
-```
-Bunu biliyor muydunuz? Gazel; Divan şiirinde aşk, güzellik ve ayrılık temalarını işleyen, 5-15 beyitten oluşan, aruz ölçüsü ve 'aa / ba / ca...' şemasıyla yazılan lirik nazım biçimidir (ilk beyti matla, son beyti makta, en güzel beyti beytü'l-gazeldir). Kaside; din ve devlet büyüklerini övmek için 33-99 beyit arasında yazılan nazım biçimidir; nesib, girizgâh, methiye, tegazzül, fahriye ve dua bölümlerinden oluşur (konularına göre tevhid, münacat, naat, methiye, hicviye, mersiye.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Türk Dili ve Edebiyatı 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-turk-dili-ve-edebiyati-hafta-11
-#derskutusu #edebiyat #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-edebiyat-12
-Sıra: 2026-10-24 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-edebiyat-12.png
-
-```
-Bunu biliyor muydunuz? Gazel ve kaside Divan edebiyatının beyit, aruz ölçüsü ve 'aa/ba/ca...' uyak düzeniyle yazılan nazım biçimleridir; gazel (5-15 beyit) aşk ve ıstırabı, kaside (33-99 beyit) ise övgüyü işler. Koşma, Âşık tarzı halk şiirinin dörtlük nazım birimi, 11'li hece ölçüsü ve sade halk Türkçesiyle bağlama eşliğinde söylenen en yaygın nazım biçimidir; son dörtlükte tapşırma (mahlas) yer alır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Türk Dili ve Edebiyatı 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-turk-dili-ve-edebiyati-hafta-12
-#derskutusu #edebiyat #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-edebiyat-13
-Sıra: 2026-10-24 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-edebiyat-13.png
-
-```
-Bunu biliyor muydunuz? Bilgilendirici metni edebî metne dönüştürme sürecinde (TDE4.1-4.2) kaynak metnin ana düşüncesi korunur; ancak dilin göndergesel işlevinden sanatsal (şiirsel) işlevine geçilir. Edebî metne dönüştürmede (TDE4.3) nesnel kavramlar teşbih, istiare, teşhis ve tezat gibi söz sanatlarıyla imgeleştirilir; ölçü, kafiye, redif ve ses tekrarlarıyla ritim kurulur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Türk Dili ve Edebiyatı 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-turk-dili-ve-edebiyati-hafta-13
-#derskutusu #edebiyat #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-edebiyat-8
-Sıra: 2026-10-24 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-edebiyat-8.png
-
-```
-Bunu biliyor muydunuz? Film şeridi (storyboard), dinlenen veya izlenen bir anlatının ardışık görsel kareler, kamera açıları, diyaloglar ve ses ögeleriyle sahne sahne planlanmasıdır. Masal film şeridine dönüştürülürken döşeme (tekerleme), serim, düğüm, çözüm ve dilek bölümleri anahtar sahnelere ayrılır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Türk Dili ve Edebiyatı 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-turk-dili-ve-edebiyati-hafta-8
-#derskutusu #edebiyat #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-edebiyat-9
-Sıra: 2026-10-24 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-edebiyat-9.png
-
-```
-Bunu biliyor muydunuz? Film Şeridi Değerlendirmesi (TDE4.4): Yazılan storyboard metni olay akışı, görsel-işitsel uyum, dil ve anlatım, bağdaşıklık ve yazım-noktalama ölçütleriyle denetlenir. Öz ve Akran Değerlendirme: Öğrenci kendi yazma sürecini (öz değerlendirme) ve paydaş görüşlerini birleştirerek yeni hedefler belirler ve özgün yazar kimliği kazanır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Türk Dili ve Edebiyatı 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-turk-dili-ve-edebiyati-hafta-9
-#derskutusu #edebiyat #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-felsefe-10
-Sıra: 2026-10-24 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-felsefe-10.png
-
-```
-Bunu biliyor muydunuz? Oluşçuluk (Herakleitos, Whitehead): Durağan varlık yoktur; evren karşıtların çatışması ve Logos yasasıyla işleyen kesintisiz bir değişim ve oluştur. İdealizm (Platon, Aristoteles, Farabi, Hegel): Asıl varlık maddi değil düşünseldir; idea, form, Zorunlu Varlık veya Geist (Mutlak Ruh) varlığın temelidir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Felsefe 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-felsefe-hafta-10
-#derskutusu #felsefe #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-felsefe-11
-Sıra: 2026-10-24 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-felsefe-11.png
-
-```
-Bunu biliyor muydunuz? Felsefi metin analizi; metindeki temel kavramları, ele alınan ontolojik problemi ve filozofun tezini destekleyen öncülleri (gerekçeleri) tutarlılık açısından çözümlemektir. Platon varlığı duyusal görünüşler ve akılsal İdealar olarak ikiye ayırırken; Aristoteles varlığı madde-form birliği ve dört neden (maddi, formel, fail, ereksel) öğretisiyle açıklar.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Felsefe 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-felsefe-hafta-11
-#derskutusu #felsefe #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-felsefe-12
-Sıra: 2026-10-25 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-felsefe-12.png
-
-```
-Bunu biliyor muydunuz? Varlık felsefesinin ilk problemi 'Varlık var mıdır?' sorusudur; nihilizm (Gorgias) varlığı reddederken, realizm varlığın var olduğunu kabul eder. Varlığı 'oluş' olarak görenler (Herakleitos, Whitehead), evrende durağan hiçbir şey olmadığını ve her şeyin Logos yasasına göre sürekli değiştiğini savunur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Felsefe 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-felsefe-hafta-12
-#derskutusu #felsefe #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-felsefe-13
-Sıra: 2026-10-25 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-felsefe-13.png
-
-```
-Bunu biliyor muydunuz? Bilgi felsefesi (epistemoloji); bilginin mahiyetini, temel kavramlarını, imkânını, kaynağını, sınırlarını ve doğruluk ölçütlerini inceleyen felsefe dalıdır. Bilgi, bilen özne (süje) ile bilinen nesne (obje) arasında algılama, düşünme, anlama ve açıklama aktları aracılığıyla kurulan ilişkiden doğan üründür.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Felsefe 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-felsefe-hafta-13
-#derskutusu #felsefe #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-felsefe-8
-Sıra: 2026-10-25 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-felsefe-8.png
-
-```
-Bunu biliyor muydunuz? Kavram varlıkların zihindeki soyut tasarımı, terim ise kavramın dilde sözcüklerle ifade edilmiş biçimidir; çok anlamlılık ve belirsizlik doğru düşünmeyi zorlaştırır. Önerme, doğru veya yanlış bir yargı bildiren cümledir; soru, emir, istek ve ünlem cümleleri doğruluk değeri taşımadığı için önerme sayılmaz.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Felsefe 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-felsefe-hafta-8
-#derskutusu #felsefe #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-felsefe-9
-Sıra: 2026-10-25 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-felsefe-9.png
-
-```
-Bunu biliyor muydunuz? Ontolojinin Konusu: Varlığı bütüncül olarak inceler; uzay-zamanda yer kaplayan gerçek (reel) varlık ile zihne bağımlı ideal (düşünsel) varlık ayrımını yapar. Temel Kavramlar: Töz (bağımsız dayanak), ilinek (geçici nitelik), öz (mahiyet), oluş (değişim), arkhe (ilk ana madde), idea ve fenomen ontolojinin anahtar kavramlarıdır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Felsefe 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-felsefe-hafta-9
-#derskutusu #felsefe #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-fikih-10
-Sıra: 2026-10-25 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fikih-10.png
-
-```
-Bunu biliyor muydunuz? Edille-i Şer'iyye ve Sıralama: Fıkhi hükümlerin kaynakları olup asli deliller (edille-i erbaa) sırasıyla Kitap, Sünnet, İcma ve Kıyastır (Muâz bin Cebel hadisi). Kitap (Kur'an-ı Kerim): Lafzı ve manasıyla Allah kelamıdır; mütevatir olduğu için sübûtu kat'îdir, delâleti ise kat'î veya zannî olabilir (~500 ahkâm ayeti içerir).
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Fıkıh 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fikih-hafta-10
-#derskutusu #fıkıh #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-fikih-11
-Sıra: 2026-10-25 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fikih-11.png
-
-```
-Bunu biliyor muydunuz? İslam hukukunda Kitap ve Sünnetten sonra üçüncü asli delil, bir asırdaki müçtehitlerin şer'î bir hüküm üzerinde ittifak etmesi olan İcmâ'dır (sarih ve sükûtî icmâ). Dördüncü asli delil olan Kıyas; hükmü nasta bulunmayan meseleyi (fer'), aralarındaki ortak gerekçe (illet) sebebiyle hükmü bilinen meseleye (asıl) bağlamaktır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Fıkıh 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fikih-hafta-11
-#derskutusu #fıkıh #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-fikih-12
-Sıra: 2026-10-26 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fikih-12.png
-
-```
-Bunu biliyor muydunuz? Müçtehidin şer'î delillerden usul kurallarıyla fıkhi hüküm çıkarma çabasına içtihat, çıkardığı sistemli fıkıh yoluna mezhep, delilini bilmeden uymaya taklit, delilini bilerek uymaya ittiba denir. Açık ve kesin nas bulunan konularda içtihat yapılmaz; güncel ve karmaşık meselelerde ise uzman kurullarca kolektif (şûrâî) içtihat yöntemi uygulanır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Fıkıh 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fikih-hafta-12
-#derskutusu #fıkıh #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-fikih-13
-Sıra: 2026-10-26 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fikih-13.png
-
-```
-Bunu biliyor muydunuz? Namaz, kelime-i şehadetten sonra İslam'ın en önemli rüknü olup insanı hayâsızlıktan (fahşâ) ve kötülükten (münker) koruyan temel ibadettir. Namazın 12 farzından dışındakilere şartlar (hadesten ve necâsetten taharet, setr-i avret, istikbâl-i kıble, vakit, niyet), içindekilere rükünler (iftitah tekbiri, kıyam, kıraat, rükû, secde, ka'de-i ahîre) denir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Fıkıh 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fikih-hafta-13
-#derskutusu #fıkıh #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-fikih-8
-Sıra: 2026-10-26 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fikih-8.png
-
-```
-Bunu biliyor muydunuz? Fıkıhta akıllı ve ergenlik çağına ulaşmış sorumlu kişiye mükellef; haklara sahip olma ehliyetine vücup ehliyeti, fiil ve ibadet ehliyetine ise eda ehliyeti denir. Teklîfî hükümler (ef'âl-i mükellefîn); farz, vacip, sünnet, müstehap (mendup), mübah, mekruh ve haram olmak üzere mükellefin fiillerini sınıflandırır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Fıkıh 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fikih-hafta-8
-#derskutusu #fıkıh #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-fikih-9
-Sıra: 2026-10-26 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fikih-9.png
-
-```
-Bunu biliyor muydunuz? Farz ve Sünnetin Kısımları: Farz, bireysel yükümlülük olan farz-ı ayn ve toplumsal yükümlülük olan farz-ı kifâye; sünnet ise sünnet-i müekkede ve sünnet-i gayr-i müekkede olarak ayrılır. Haram ve Mekruhun Kısımları: Haram, özündeki kötülükten dolayı li-aynihî ve dış sebeple li-gayrihî; mekruh ise harama yakın tahrîmen ve helale yakın tenzîhen mekruh olur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Fıkıh 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fikih-hafta-9
-#derskutusu #fıkıh #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-fizik-10
-Sıra: 2026-10-26 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fizik-10.png
-
-```
-Bunu biliyor muydunuz? Mekanik Enerjinin Korunumu: Sürtünmesiz ortamda E_M = E_K + E_P = sabit kalır; m·g·h = 1/2·m·v² ve yere çarpma sürati v = √(2·g·h) kütleden bağımsızdır. Yaylı Sistem Dönüşümleri: Sürtünmesiz ortamda kinetik veya çekim potansiyel enerjisi yayda E_yay = 1/2 · k · x² esneklik potansiyel enerjisine dönüşür.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Fizik 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fizik-hafta-10
-#derskutusu #fizik #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-fizik-11
-Sıra: 2026-10-26 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fizik-11.png
-
-```
-Bunu biliyor muydunuz? Mekanik (kinetik + potansiyel), ısı (termal), elektrik, kimyasal, nükleer ve ışık (radyant) enerjileri başlıca enerji biçimleridir; tamamı skalerdir ve SI birimleri Joule (J)'dür. Elektrik enerjisi iletim hatlarıyla en kolay taşınan ve diğer türlere yüksek verimle dönüştürülen enerji biçimidir; bataryalarda kimyasal, barajlarda potansiyel enerji olarak depolanır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Fizik 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fizik-hafta-11
-#derskutusu #fizik #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-fizik-12
-Sıra: 2026-10-27 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fizik-12.png
-
-```
-Bunu biliyor muydunuz? Mekanik enerji (Em), bir sistemin sahip olduğu kinetik enerji (Ek) ile potansiyel enerjilerin (yer çekimi ve esneklik) skaler toplamıdır. Kütlesi m ve sürati v olan bir cismin öteleme kinetik enerjisi Ek = (1/2)·m·v² bağıntısıyla bulunur ve süratin karesiyle doğru orantılıdır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Fizik 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fizik-hafta-12
-#derskutusu #fizik #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-fizik-13
-Sıra: 2026-10-27 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fizik-13.png
-
-```
-Bunu biliyor muydunuz? Sürtünmesiz ve dış kuvvetin iş yapmadığı ortamlarda mekanik enerji (Emek = Ek + Ep) korunur; azalan potansiyel enerji artan kinetik enerjiye eşittir. Sürtünmesiz ortamda h yüksekliğinden bırakılan bir cismin yere çarpma sürati v = kök(2·g·h) olup cismin kütlesine bağlı değildir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Fizik 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fizik-hafta-13
-#derskutusu #fizik #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-fizik-8
-Sıra: 2026-10-27 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fizik-8.png
-
-```
-Bunu biliyor muydunuz? Fiziksel anlamda iş (W = F · ∆x), cisme uygulanan kuvvet ile kuvvet doğrultusundaki yer değiştirmenin çarpımına eşittir; skalerdir ve SI birimi Joule'dür (J = N·m). Yer değiştirmenin sıfır olduğu durumlarda veya kuvvetin hareket doğrultusuna dik olduğu durumlarda fiziksel anlamda iş yapılmaz (W = 0).
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Fizik 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fizik-hafta-8
-#derskutusu #fizik #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-fizik-9
-Sıra: 2026-10-27 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fizik-9.png
-
-```
-Bunu biliyor muydunuz? Öteleme Kinetik Enerjisi: Hareket hâlindeki cisimlerin enerjisidir; Ek = 1/2 · m · v² bağıntısıyla hesaplanır ve süratin karesiyle doğru orantılıdır. İş-Kinetik Enerji Teoremi: Cisme etki eden net kuvvetin yaptığı iş, cismin kinetik enerjisindeki değişime eşittir (W_net = ∆Ek).
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Fizik 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fizik-hafta-9
-#derskutusu #fizik #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-hadis-10
-Sıra: 2026-10-27 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-hadis-10.png
-
-```
-Bunu biliyor muydunuz? Resmî Tedvin (Hicri I. Asır Sonu): Halife Ömer bin Abdülaziz'in emri ve İbn Şihâb ez-Zührî'nin öncülüğünde dağınık sahîfe ve hafızalardaki hadislerin resmî olarak toplanmasıdır. Tasnif Dönemi (Hicri II.-III. Asır): Toplanan hadislerin konularına göre (ale'l-ebvâb) veya sahabi ravilerine göre (ale'r-ricâl) sınıflandırılarak düzenlenmesidir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Hadis 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-hadis-hafta-10
-#derskutusu #hadis #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-hadis-11
-Sıra: 2026-10-27 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-hadis-11.png
-
-```
-Bunu biliyor muydunuz? Tedvin, Hicri I. asır sonunda Ömer bin Abdülaziz'in emri ve ez-Zührî'nin öncülüğünde hadislerin karma olarak toplanması; tasnif ise Hicri II. ve III. asırda hadislerin konularına veya ravilerine göre sınıflandırılmasıdır. Konularına göre (ale'l-ebvâb) tasnif edilen eserler; Musannef ve Muvatta' (merfû, mevkûf ve maktû haberleri içeren), Câmi' (sekiz ana konunun tamamını kapsayan) ve Sünen (ahkâm/fıkıh hadislerini toplayan) türleridir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Hadis 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-hadis-hafta-11
-#derskutusu #hadis #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-hadis-12
-Sıra: 2026-10-28 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-hadis-12.png
-
-```
-Bunu biliyor muydunuz? Tasnif döneminden (Hicri III. asırdan) sonra hadis çalışmaları; temel kaynakları tamamlama, birleştirme, indeksleme ve şerh etme yönünde gelişmiştir. Bir müellifin şartlarına uyduğu hâlde eserine almadığı hadisleri toplayan çalışmalara Müstedrek (Hâkim'in el-Müstedrek'i); temel kaynaktaki hadisleri farklı senedle rivayet edenlere Müstahrec denir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Hadis 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-hadis-hafta-12
-#derskutusu #hadis #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-hadis-13
-Sıra: 2026-10-28 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-hadis-13.png
-
-```
-Bunu biliyor muydunuz? Hadis tarihi; Tesbit (Asr-ı Saâdet), Tedvin (H. I. asır sonu), Tasnif (H. II-III. asır) ve Tasnif Sonrası (H. IV. asır ve sonrası) olmak üzere dört ana dönemden oluşur. Tasnif sonrasında Müstedrek, Müstahrec, Cem', Zevâid, Etrâf, Kırk Hadis ve Şerh türlerinde tamamlayıcı ve açıklayıcı eserler kaleme alınmıştır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Hadis 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-hadis-hafta-13
-#derskutusu #hadis #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-hadis-8
-Sıra: 2026-10-28 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-hadis-8.png
-
-```
-Bunu biliyor muydunuz? Hz. Peygamber (sav) Veda Hutbesi'nde (Sekaleyn hadisi) ümmetine Kur'an-ı Kerim ve Sünnet olmak üzere iki büyük emanet bırakmıştır. Mikdâm b. Ma'dîkerib'in rivayet ettiği Erîke (Koltuk) hadisi, sünneti yok sayarak 'Bize yalnız Kur'an yeter' diyen anlayışın geçersizliğini ortaya koyar.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Hadis 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-hadis-hafta-8
-#derskutusu #hadis #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-hadis-9
-Sıra: 2026-10-28 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-hadis-9.png
-
-```
-Bunu biliyor muydunuz? Sözlü Aktarım ve Hıfz: Hz. Peygamber'in cevâmiu'l-kelim özelliği, Ashâb-ı Suffe, nöbetleşme (münâvebe) ve müzâkere halkaları sözlü aktarımı güçlendirmiştir. Müksirûn (7 Sahabi): 1000'den fazla hadis rivayet eden Ebû Hüreyre, İbn Ömer, Enes b. Mâlik, Hz. Âişe, İbn Abbâs, Câbir b. Abdullah ve Ebû Saîd el-Hudrî'dir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Hadis 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-hadis-hafta-9
-#derskutusu #hadis #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-ingilizce-10
-Sıra: 2026-10-28 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-ingilizce-10.png
-
-```
-Bunu biliyor muydunuz? Nutrition & Physical Health: Balanced diet, nutritious food, stay hydrated, cut down on junk food, take up a sport ve work out sağlıklı yaşamın temel söz varlığıdır. Mental Well-Being: Cope with stress, mindfulness, emotional resilience, limit screen time ve quality sleep pattern ruhsal iyilik hâlini destekler.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf İngilizce 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-ingilizce-hafta-10
-#derskutusu #ingilizce #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-ingilizce-11
-Sıra: 2026-10-28 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-ingilizce-11.png
-
-```
-Bunu biliyor muydunuz? Fiziksel sağlık (keep fit, balanced diet, stay hydrated, get enough sleep, cut down on junk food) ve zihinsel iyilik hâli (cope with stress, limit screen time, digital detox, prevent burnout) bütünsel sağlığın iki temel sütunudur. Genel sağlık ve yaşam tarzı tavsiyelerinde 'should + V₁' ve 'ought to + V₁' (olumsuzu: shouldn't / ought not to + V₁) yapıları kullanılır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf İngilizce 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-ingilizce-hafta-11
-#derskutusu #ingilizce #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-ingilizce-12
-Sıra: 2026-10-29 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-ingilizce-12.png
-
-```
-Bunu biliyor muydunuz? Stres yönetimi (managing stress) için görevleri önceliklendirmek (prioritize tasks), ertelemeden (procrastination) kaçınmak, yeterli uyumak ve nefes egzersizleri yapmak gerekir. 'Must + V1' içsel zorunluluk ve güçlü tavsiyeleri, 'have to / has to + V1' dışsal kuralları, 'need to + V1' ise yaşamsal gereklilikleri ifade eder.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf İngilizce 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-ingilizce-hafta-12
-#derskutusu #ingilizce #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-ingilizce-13
-Sıra: 2026-10-29 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-ingilizce-13.png
-
-```
-Bunu biliyor muydunuz? «used to + V1» yapısı, geçmişte düzenli olarak yapılan alışkanlıkları (past habits) ve geçmişte var olup bugün sona ermiş durumları (past states) anlatır. Olumsuz cümlelerde «Subject + didn't use to + V1», soru cümlelerinde ise «Did + Subject + use to + V1...?» kalıbı kullanılır («-d» takısı düşer).
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf İngilizce 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-ingilizce-hafta-13
-#derskutusu #ingilizce #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-ingilizce-8
-Sıra: 2026-10-29 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-ingilizce-8.png
-
-```
-Bunu biliyor muydunuz? Classroom Life & Learning temasında mind mapping, brainstorming, note-taking, repetition ve self-assessment etkili çalışma stratejilerini ifade eder. Okul yaşamında coding club, literature club, chess club ve volunteering club gibi kulüp çalışmaları 'extracurricular activities' olarak adlandırılır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf İngilizce 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-ingilizce-hafta-8
-#derskutusu #ingilizce #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-ingilizce-9
-Sıra: 2026-10-29 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-ingilizce-9.png
-
-```
-Bunu biliyor muydunuz? Digital Learning & Presentations: Reliable source, peer feedback, self-assessment kavramları ile First of all, Moreover, To sum up sunum yönlendirme ifadeleri akademik iletişimin temelidir. Prefer Yapısı: Genel tercihlerde prefer + Noun + to + Noun, prefer + V-ing + to + V-ing ve prefer + to V1 + rather than + V1 kalıpları kullanılır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf İngilizce 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-ingilizce-hafta-9
-#derskutusu #ingilizce #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-kimya-10
-Sıra: 2026-10-29 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kimya-10.png
-
-```
-Bunu biliyor muydunuz? Sınırlayıcı Bileşen: Tam verimli (%100) tepkimede tamamen biten ve ürün miktarını belirleyen maddedir; Başlangıç Molü/Katsayı oranı en küçük olan tepkendir. BDS Tablosu: Başlangıç — Değişim — Sonuç tablosunda değişim satırı daima sınırlayıcı bileşene göre denklem katsayılarıyla orantılı doldurulur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Kimya 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kimya-hafta-10
-#derskutusu #kimya #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-kimya-11
-Sıra: 2026-10-29 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kimya-11.png
-
-```
-Bunu biliyor muydunuz? Gazların belirli şekil ve hacimleri yoktur; sıkıştırılabilirler, düşük yoğunlukludurlar, birbirleriyle her oranda homojen karışırlar ve bulundukları kabın her noktasına eşit basınç uygularlar. Gazları tanımlayan dört değişken; basınç (1 atm = 76 cmHg = 760 mmHg = 760 Torr), hacim (1 L = 1 dm³ = 1000 mL), mutlak sıcaklık (T = t + 273 K) ve madde miktarıdır (n = m / Mₐ).
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Kimya 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kimya-hafta-11
-#derskutusu #kimya #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-kimya-12
-Sıra: 2026-10-30 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kimya-12.png
-
-```
-Bunu biliyor muydunuz? Boyle Yasası'na göre sabit sıcaklıkta (T ve n sabit) bir gazın basıncı ile hacmi ters orantılıdır (P₁·V₁ = P₂·V₂). Charles Yasası'na göre sabit basınçta (P ve n sabit) bir gazın hacmi ile mutlak sıcaklığı (Kelvin) doğru orantılıdır (V₁/T₁ = V₂/T₂).
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Kimya 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kimya-hafta-12
-#derskutusu #kimya #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-kimya-13
-Sıra: 2026-10-30 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kimya-13.png
-
-```
-Bunu biliyor muydunuz? Boyle Yasası'na göre sabit sıcaklık ve mol sayısında bir gazın basıncı ile hacmi ters orantılıdır (P1·V1 = P2·V2). Charles Yasası'na göre sabit basınç ve mol sayısında bir gazın hacmi mutlak sıcaklığı (T = °C + 273) ile doğru orantılıdır (V1/T1 = V2/T2).
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Kimya 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kimya-hafta-13
-#derskutusu #kimya #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-kimya-8
-Sıra: 2026-10-30 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kimya-8.png
-
-```
-Bunu biliyor muydunuz? Kimyasal tepkime denklemlerinde okun soluna tepkenler (girenler), sağına ürünler yazılır; fiziksel hâller (k), (s), (g) ve (suda) ile belirtilir. Kimyasal tepkimelerde atomların türü ve sayısı, toplam kütle, toplam proton/nötron/elektron sayısı ve toplam yük daima korunur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Kimya 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kimya-hafta-8
-#derskutusu #kimya #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-kimya-9
-Sıra: 2026-10-30 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kimya-9.png
-
-```
-Bunu biliyor muydunuz? Stokiyometrik Katsayılar: Denkleştirilmiş tepkimedeki katsayılar maddelerin mol oranını, molekül oranını ve gazlar için hacim oranını verir. Temel Mol Bağıntıları: Hesaplamalarda n = m / M_A, n = N / N_A ve NŞA gazlar için n = V / 22,4 formülleriyle mol köprüsü kurulur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Kimya 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kimya-hafta-9
-#derskutusu #kimya #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-kuran-i-kerim-10
-Sıra: 2026-10-30 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kuran-i-kerim-10.png
-
-```
-Bunu biliyor muydunuz? İhfa-i Şefevî:} Sakin mimden sonra yalnız harfi geldiğinde oluşur; dudaklar hafif temas ettirilerek 1,5 elif miktarı gunneli okunur. İdgam-ı Misleyn Meal-Gunne:} Sakin mimden sonra harekeli geldiğinde iki mim birleştirilip 1,5 elif gunneli tutulur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Kur’an-ı Kerim 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kuran-i-kerim-hafta-10
-#derskutusu #kuranıkerim #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-kuran-i-kerim-11
-Sıra: 2026-10-30 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kuran-i-kerim-11.png
-
-```
-Bunu biliyor muydunuz? İdgam; birincisi sakin (cezimli), ikincisi harekeli olan iki harfin birbirine katılarak şeddeli tek harf gibi okunmasıdır ve harflerin mahreç-sıfat ilişkisine göre üçe ayrılır. İdgam-ı Misleyn, mahreci ve sıfatı aynı olan iki harfin idgamıdır: + ve + harflerinde gunneli (meal-gunne), diğer tüm harflerde (+, +, +) gunnesiz (bilâ-gunne) yapılır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Kur’an-ı Kerim 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kuran-i-kerim-hafta-11
-#derskutusu #kuranıkerim #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-kuran-i-kerim-12
-Sıra: 2026-10-31 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kuran-i-kerim-12.png
-
-```
-Bunu biliyor muydunuz? Elif-Lâm takısından sonra 14 şemsî harften biri geldiğinde lâm okunmayıp sonraki harf şeddeli okunur; buna İdgam-ı Şemsiyye denir (yalnız harfinde meal-gunne, diğer 13 harfte bilâ-gunne olur). Elif-Lâm takısından sonra 14 kamerî harften biri geldiğinde lâm harfi cezimli olarak açıkça okunur; buna İzhar-ı Kameriyye denir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Kur’an-ı Kerim 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kuran-i-kerim-hafta-12
-#derskutusu #kuranıkerim #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-kuran-i-kerim-13
-Sıra: 2026-10-31 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kuran-i-kerim-13.png
-
-```
-Bunu biliyor muydunuz? İdgamlar gunne durumuna göre İdgam-ı Meal-Gunne ve İdgam-ı Bilâ-Gunne; harflerin mahreç-sıfat ilişkisine göre ise Misleyn, Mütecâniseyn ve Mütekâribeyn olarak sınıflandırılır. Tilavette nefes alarak kelime sonunda durmaya vakıf, uygun yerden yeniden başlamaya ibtidâ, durmadan geçmeye vasıl, nefes almadan sesi iki hareke kesmeye ise sekte denir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Kur’an-ı Kerim 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kuran-i-kerim-hafta-13
-#derskutusu #kuranıkerim #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-kuran-i-kerim-8
-Sıra: 2026-10-31 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kuran-i-kerim-8.png
-
-```
-Bunu biliyor muydunuz? Sakin nun harekesiz cezimli nun harfidir; tenvin ise isimlerin sonunda okunan ancak yazılmayan sakin nun sesidir. Tenvin veya sakin nundan sonra altı boğaz harfinden biri geldiğinde 'İzhar' kuralı oluşur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Kur’an-ı Kerim 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kuran-i-kerim-hafta-8
-#derskutusu #kuranıkerim #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-kuran-i-kerim-9
-Sıra: 2026-10-31 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kuran-i-kerim-9.png
-
-```
-Bunu biliyor muydunuz? İdgam (6 Harf — Tenvin veya sakin nundan sonra harflerinden biri ayrı kelimenin başında gelirse sakin nun ikinci harfe katılır. İdgam-ı Meal-Gunne (4 Harf — harfleri geldiğinde gunneli (geniz sesiyle 1,5 elif tutularak) idgam yapılır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Kur’an-ı Kerim 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kuran-i-kerim-hafta-9
-#derskutusu #kuranıkerim #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-matematik-10
-Sıra: 2026-10-31 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-matematik-10.png
-
-```
-Bunu biliyor muydunuz? İstatistiksel Temellendirme: Başkalarının oluşturduğu iki kategorik değişkenli verilerde iddialar mutlak sıklıkla değil, koşullu göreli sıklıklarla (satır/sütun yüzdeleriyle) sınanır. Örneklem ve Veri Yanlılığı: Yetersiz örneklem büyüklüğü, seçim yanlılığı, gönüllü yanıt yanlılığı ve yönlendirici sorular istatistiksel sonuçları geçersiz kılar.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Matematik 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-matematik-hafta-10
-#derskutusu #matematik #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-matematik-11
-Sıra: 2026-10-31 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-matematik-11.png
-
-```
-Bunu biliyor muydunuz? Aritmetiğin Temel Teoremi'ne göre 1'den büyük her doğal sayı A = p₁^a₁ · p₂^a₂ ·... Bir doğal sayının tam bölen sayısı 2 · PBS'dir, tam bölenlerinin toplamı 0'dır; tam kare doğal sayıların pozitif tam bölen sayısı (PBS) ise daima tek sayıdır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Matematik 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-matematik-hafta-11
-#derskutusu #matematik #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-matematik-12
-Sıra: 2026-11-01 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-matematik-12.png
-
-```
-Bunu biliyor muydunuz? İki pozitif tam sayının çarpımı EBOB ve EKOK'larının çarpımına eşittir: a · b = EBOB(a, b) · EKOK(a, b). Aralarında asal iki doğal sayının EBOB'u 1, EKOK'u ise bu iki sayının çarpımıdır (ardışık doğal sayılar ve ardışık tek sayılar aralarında asaldır).
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Matematik 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-matematik-hafta-12
-#derskutusu #matematik #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-matematik-13
-Sıra: 2026-11-01 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-matematik-13.png
-
-```
-Bunu biliyor muydunuz? 10^k = 2^k · 5^k olduğundan 2, 5 ve 10 ile bölünebilmede birler basamağına; 4 ile bölünebilmede son iki basamağa; 8 ile bölünebilmede ise son üç basamağa bakılır. 10ⁿ = 9k + 1 basamak çözümlemesi gereğince bir doğal sayının 3 ve 9 ile bölümünden kalan, rakamları toplamının 3 ve 9 ile bölümünden kalana eşittir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Matematik 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-matematik-hafta-13
-#derskutusu #matematik #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-matematik-8
-Sıra: 2026-11-01 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-matematik-8.png
-
-```
-Bunu biliyor muydunuz? İki kategorik (nitel) değişkene ait veriler, satır ve sütunlardan oluşan iki yönlü sıklık (çapraz) tablolarıyla özetlenir. Tablodaki kenar toplamlarının genel toplama oranına marjinal göreli sıklık, iç hücrelerin genel toplama oranına ise birleşik göreli sıklık denir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Matematik 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-matematik-hafta-8
-#derskutusu #matematik #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-matematik-9
-Sıra: 2026-11-01 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-matematik-9.png
-
-```
-Bunu biliyor muydunuz? Göreli Sıklık Türleri: İki yönlü tabloda birleşik göreli sıklık (hücre / genel toplam), marjinal göreli sıklık (kenar toplam / genel toplam) ve koşullu göreli sıklık (hücre / satır veya sütun toplamı) hesaplanır. Adil Karşılaştırma: Alt grup mevcutları farklı olduğunda mutlak sıklıklar yerine koşullu göreli sıklıklar karşılaştırılır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Matematik 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-matematik-hafta-9
-#derskutusu #matematik #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-peygamberimizin-hayati-10
-Sıra: 2026-11-01 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-peygamberimizin-hayati-10.png
-
-```
-Bunu biliyor muydunuz? Taif Kuşatması ve Urve bin Mes'ûd (ra): 630 yılındaki kuşatma sonrası Resulullah (sav) Sakîf'in hidayeti için dua etmiş; Urve bin Mes'ûd (ra) Taif'te İslam'ı tebliğ ederken şehit düşmüştür. Sakîf Heyeti (Ramazan 9 / 630): Abdüyâlîl bin Amr başkanlığındaki heyet Mescid-i Nebevî'de kurulan çadırda ağırlanmış ve Kur'an dinleyerek İslam'ı kabul etmiştir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Peygamberimizin Hayatı 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-peygamberimizin-hayati-hafta-10
-#derskutusu #peygamberimizinhayatı #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-peygamberimizin-hayati-11
-Sıra: 2026-11-01 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-peygamberimizin-hayati-11.png
-
-```
-Bunu biliyor muydunuz? Üç yıllık boykotun ardından nübüvvetin 10. yılında (620) Ebû Tâlib ve Hz. Hatice'nin (r.a.) vefat ettiği yıla 'Hüzün Yılı (Senetü'l-Hüzün)' denilmiş; Taif dönüşü sonrasında İsrâ ve Miraç mucizesi gerçekleşmiştir. İsrâ, Mescid-i Harâm'dan Kudüs'teki Mescid-i Aksâ'ya gece yürüyüşüdür (İsrâ, 1); Miraç ise Mescid-i Aksâ'dan göklere ve Sidretü'l-Müntehâ'ya yükseliştir (Necm, 1-18).
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Peygamberimizin Hayatı 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-peygamberimizin-hayati-hafta-11
-#derskutusu #peygamberimizinhayatı #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-peygamberimizin-hayati-12
-Sıra: 2026-11-02 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-peygamberimizin-hayati-12.png
-
-```
-Bunu biliyor muydunuz? Asıl adı Abdullah b. Ebû Kuhâfe olan Hz. Ebu Bekir (r.a.), Cahiliye döneminde bile putlara tapmamış, iffeti ve dürüstlüğüyle tanınmış ve hür yetişkin erkekler arasında ilk Müslüman olmuştur. Hz. Osman, Hz. Zübeyr, Hz. Talha, Hz. Sa'd b. Ebî Vakkâs ve Hz. Abdurrahman b. Avf gibi Aşere-i Mübeşşere sahâbîleri onun davetiyle İslam'a girmiştir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Peygamberimizin Hayatı 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-peygamberimizin-hayati-hafta-12
-#derskutusu #peygamberimizinhayatı #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-peygamberimizin-hayati-13
-Sıra: 2026-11-02 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-peygamberimizin-hayati-13.png
-
-```
-Bunu biliyor muydunuz? Hz. Ebu Bekir'in doğruluk, merhamet, tevazu ve ensâb ilmi bilgisi sosyal hayatta ona büyük bir güven kazandırmış ve pek çok sahâbînin Müslüman olmasına vesile olmuştur. İlk hilafet hutbesinde adaleti, zayıfın hakkını korumayı ve şeffaf yönetimi temel ilke olarak ilan etmiş; halifeliğinde Kur'an-ı Kerim'i mushaf hâline getirmiştir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Peygamberimizin Hayatı 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-peygamberimizin-hayati-hafta-13
-#derskutusu #peygamberimizinhayatı #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-peygamberimizin-hayati-8
-Sıra: 2026-11-02 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-peygamberimizin-hayati-8.png
-
-```
-Bunu biliyor muydunuz? Mekke'nin Fethi'nden sonra Hevâzin ile birleşen Taifliler (Sakîf kabilesi) Huneyn Gazvesi'nde yenilerek surlarla çevrili Taif şehrine sığınmıştır. Taif Kuşatması'nda ilk kez mancınık ve debbâbe kullanılmış; kuşatma kaldırılırken Hz. Peygamber 'Allah'ım! Sakîf'e hidayet ver' diyerek dua etmiştir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Peygamberimizin Hayatı 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-peygamberimizin-hayati-hafta-8
-#derskutusu #peygamberimizinhayatı #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-peygamberimizin-hayati-9
-Sıra: 2026-11-02 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-peygamberimizin-hayati-9.png
-
-```
-Bunu biliyor muydunuz? İdari ve Eğitim Düzenlemesi: Taif Müslüman olunca Kur'an ve din ilmine en istekli genç sahabi Osman b. Ebü'l-Âs vali ve imam tayin edilmiştir. Lât Putunun Yıkılması: Taif'teki şirk sembolü olan Lât putu Ebû Süfyân b. Harb ve Muğîre b. Şu'be tarafından yıkılarak tevhit hâkim kılınmıştır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Peygamberimizin Hayatı 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-peygamberimizin-hayati-hafta-9
-#derskutusu #peygamberimizinhayatı #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-siyer-10
-Sıra: 2026-11-02 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-siyer-10.png
-
-```
-Bunu biliyor muydunuz? İlk Vahiy (610 Ramazan): Hira Mağarası'nda Cebrail (as) aracılığıyla Alak suresi 1-5. ayetleri inmiş; Hz. Hatice (ra) ve Varaka bin Nevfel Hz. Peygamber'e (sav) ilk desteği vermiştir. Fetret-i Vahiy ve Tebliğ Emri: Vahyin bir süre kesildiği Fetret-i Vahiy, Müddessir suresi 1-7. ayetlerinin («Kalk ve uyar!») inmesiyle bitmiş ve risalet/tebliğ görevi başlamıştır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Siyer 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-siyer-hafta-10
-#derskutusu #siyer #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-siyer-11
-Sıra: 2026-11-02 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-siyer-11.png
-
-```
-Bunu biliyor muydunuz? Alak suresi 1-5 ve Müddessir suresi 1-5. ayetlerle başlayan İslam daveti, ilk üç yıl (610-613) boyunca gizli ve bireysel olarak yürütülmüştür. İlk dört Müslüman; Hz. Hatice (ilk kadın), Hz. Ali (ilk çocuk/genç), Hz. Zeyd b. Hârise (ilk azatlı köle) ve Hz. Ebû Bekir (ilk hür yetişkin erkek) olmuştur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Siyer 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-siyer-hafta-11
-#derskutusu #siyer #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-siyer-12
-Sıra: 2026-11-03 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-siyer-12.png
-
-```
-Bunu biliyor muydunuz? Mekkeli müşrikler; atalar dini taassubu ve ahireti inkâr (dinî), köle-efendi eşitliğini reddetme (sosyal), kabile rekabeti (siyasi) ve haksız kazanç/put gelirlerini kaybetme korkusu (ekonomik) nedeniyle İslam'a karşı çıkmıştır. İslam davetini engellemek için önce alay, gürültü çıkarma ve Peygamberimize 'şair, kâhin, sihirbaz', Kur'an'a 'eskilerin masalları' deme gibi psikolojik yöntemlere başvurmuşlardır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Siyer 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-siyer-hafta-12
-#derskutusu #siyer #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-siyer-13
-Sıra: 2026-11-03 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-siyer-13.png
-
-```
-Bunu biliyor muydunuz? Müşrikler; atalar dinine bağlılık, sosyal eşitliğe itiraz, kabile rekabeti ve ekonomik çıkar kaygısıyla İslam davetine karşı çıkmışlardır. Hz. Peygamber (s.a.v.) baskılar karşısında hikmet, güzel öğüt ve sabır ilkeleriyle hareket etmiş; 615 ve 616 yıllarında Habeşistan Hicreti'ne izin vermiştir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Siyer 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-siyer-hafta-13
-#derskutusu #siyer #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-siyer-8
-Sıra: 2026-11-03 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-siyer-8.png
-
-```
-Bunu biliyor muydunuz? Hz. Muhammed (sav), dürüstlüğü ve emanete bağlılığı sebebiyle 'Muhammedü'l-Emîn' olarak tanınmış; 595 yılında (25 yaşında) 'Tâhire' lakaplı Hz. Hatice ile evlenmiştir. Hz. Peygamber'in Hz. Hatice'den Kâsım, Abdullah, Zeyneb, Rukıyye, Ümmü Gülsüm ve Fâtıma; Hz. Mâriye'den ise İbrahim olmak üzere yedi çocuğu dünyaya gelmiştir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Siyer 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-siyer-hafta-8
-#derskutusu #siyer #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-siyer-9
-Sıra: 2026-11-03 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-siyer-9.png
-
-```
-Bunu biliyor muydunuz? İsmet ve Nezih Hayat: Hz. Muhammed (sav) risalet öncesi 40 yıllık hayatında Cahiliye şirki, içki, kumar ve zulmünden tamamen uzak kalmıştır. Hanîflik Geleneği: İslam öncesi Mekke'de putperestliği reddedip Hz. İbrahim'in tevhit dinini benimseyenlere Hanîf (Varaka b. Nevfel, Zeyd b. Amr vb.) denilmiştir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Siyer 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-siyer-hafta-9
-#derskutusu #siyer #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-tarih-10
-Sıra: 2026-11-03 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-tarih-10.png
-
-```
-Bunu biliyor muydunuz? Bilim ve Dil Öncüleri: Kaşgarlı Mahmud (Dîvânu Lugâti't-Türk), Ömer Hayyam (Celâlî Takvimi), el-Cezerî (Kitâbü'l-Hiyel — sibernetik öncüsü) ve İbn Bîbî (el-Evâmirü'l-Alâiyye) insanlığın ortak mirasına yön vermiştir. Gönül Erenleri (Mutasavvıflar): Hoca Ahmed Yesevî (Dîvân-ı Hikmet), İbnü'l-Arabî, Mevlânâ (Mesnevî), Hacı Bektâş-ı Velî (Makâlât) ve Yunus Emre (Risâletü'n-Nushiyye) Anadolu'nun manevi mimarlarıdır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Tarih 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-tarih-hafta-10
-#derskutusu #tarih #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-tarih-11
-Sıra: 2026-11-03 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-tarih-11.png
-
-```
-Bunu biliyor muydunuz? Osmanlı'nın kuruluşu hakkında Paul Wittek 'Gaza Tezi'ni, M. Osman Gazi döneminde 27 Temmuz 1302 Koyunhisar (Bapheus) Savaşı ile Bizans'a karşı ilk zafer kazanılmış ve beylik bağımsız devlet niteliği elde etmiştir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Tarih 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-tarih-hafta-11
-#derskutusu #tarih #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-tarih-12
-Sıra: 2026-11-04 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-tarih-12.png
-
-```
-Bunu biliyor muydunuz? Osman Gazi'nin 1302 Koyunhisar (Bafeus) Zaferi ile bağımsız bir güç olan Osmanlılar, Orhan Gazi döneminde Bursa, İznik ve İzmit'i alıp 1353'te Çimpe Kalesi ile Rumeli'ye geçmiştir. Balkanlar'da Sırpsındığı (1364), I. Kosova (1389), Niğbolu (1396), Varna (1444) ve II. Kosova (1448) savaşlarıyla Haçlı ittifakları mağlup edilmiş; iskân ve istimâlet politikalarıyla kalıcı hâkimiyet kurulmuştur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Tarih 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-tarih-hafta-12
-#derskutusu #tarih #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-tarih-13
-Sıra: 2026-11-04 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-tarih-13.png
-
-```
-Bunu biliyor muydunuz? Kuruluş dönemi mücadeleleri incelenirken Âşıkpaşazâde ve Neşrî gibi Osmanlı kronikleri ile Pachymeres, Kantakuzenos ve Dukas gibi Bizans kaynakları karşılaştırılır. Osmanlı Devleti Rumeli'de gaza, istimâlet (gönül kazanma) ve iskân politikasıyla kalıcı olurken; Anadolu'da evlilik, satın alma ve askerî yöntemlerle Türk siyasi birliğini kurmuştur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Tarih 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-tarih-hafta-13
-#derskutusu #tarih #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-tarih-8
-Sıra: 2026-11-04 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-tarih-8.png
-
-```
-Bunu biliyor muydunuz? Büyük Selçuklu Veziri Nizâmülmülk tarafından 1067'de Bağdat'ta kurulan Nizâmiye Medreseleri, devlet adamı yetiştirmiş ve yıkıcı akımlara karşı ilmi mücadele vermiştir. Anadolu'da ilk medrese Niksar Yağıbasan Medresesi (Danişmentliler), ilk tıp medresesi ise Kayseri Gevher Nesibe Darüşşifası'dır (Türkiye Selçukluları).
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Tarih 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-tarih-hafta-8
-#derskutusu #tarih #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-tarih-9
-Sıra: 2026-11-04 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-tarih-9.png
-
-```
-Bunu biliyor muydunuz? İki Medeniyetin Karşılaştırması: Orta Çağ Avrupa'sında skolastik düşünce hâkimken, Türk-İslam dünyası medrese, rasathane ve darüşşifalarıyla Altın Çağı'nı yaşamıştır. Bilim ve Kültür Öncüleri: Kaşgarlı Mahmud (*Dîvânu Lugâti't-Türk*), Ömer Hayyam (*Celâlî Takvimi*), el-Cezerî (*Kitâbü'l-Hiyel*) ve İbn Bîbî (*el-Evâmirü'l-Alâiyye*) ortak mirasa yön vermiştir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Tarih 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-tarih-hafta-9
-#derskutusu #tarih #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-temel-dini-bilgiler-10
-Sıra: 2026-11-04 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-temel-dini-bilgiler-10.png
-
-```
-Bunu biliyor muydunuz? Toplumsal Huzuru Sağlayan 5 Unsur: Emniyet ve Güven (emanet), Barış ve Uzlaşma (Medine Vesikası), Adalet ve Hak Gözetme (Mâide 8), Görgü Kuralları (âdâb-ı muâşeret) ve Kardeşlik-Dayanışma (Hucurât 10). Şiddet, Terör ve Ötekileştirme: Haksız yere cana kıymak tüm insanlığı öldürmek gibidir (Mâide 32); üstünlük ırkta veya statüde değil yalnız takvadadır (Hucurât 13).
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Temel Dinî Bilgiler 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-temel-dini-bilgiler-hafta-10
-#derskutusu #temeldinibilgiler #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-temel-dini-bilgiler-11
-Sıra: 2026-11-04 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-temel-dini-bilgiler-11.png
-
-```
-Bunu biliyor muydunuz? Hucurât suresi 11 ve 12. ayetlerde toplumsal barışı yıkan alay etme, kötü lakap takma, suizan (kötü zan), tecessüs (gizli kusur araştırma) ve gıybet (dedikodu) kesin olarak yasaklanmıştır. Bir kimsenin arkasından söylenen kusur onda varsa 'gıybet', onda yoksa ve uydurulmuşsa 'iftira (bühtan)', insanların arasını bozmak için laf taşımak ise 'nemîme (koğuculuk)' adını alır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Temel Dinî Bilgiler 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-temel-dini-bilgiler-hafta-11
-#derskutusu #temeldinibilgiler #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-temel-dini-bilgiler-12
-Sıra: 2026-11-05 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-temel-dini-bilgiler-12.png
-
-```
-Bunu biliyor muydunuz? İslam'a göre evren ve doğa Yüce Allah tarafından şaşmaz bir ölçü ve ekolojik denge (mizan ve sünnetullah) üzere yaratılmıştır; bu dengeyi bozmak (fesat) haramdır. İnsan yeryüzünün mutlak hâkimi değil, onu imar etmek ve korumakla yükümlü halifesidir; hava, su, toprak, bitki ve hayvanlar insana verilmiş ilahi birer emanettir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Temel Dinî Bilgiler 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-temel-dini-bilgiler-hafta-12
-#derskutusu #temeldinibilgiler #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-temel-dini-bilgiler-13
-Sıra: 2026-11-05 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-temel-dini-bilgiler-13.png
-
-```
-Bunu biliyor muydunuz? En'âm suresi 38. ayete göre hayvanlar ve kuşlar da insanlar gibi birer topluluktur (ümmettir); her canlıya yapılan iyilikte sadaka sevabı vardır. Hz. Peygamber hayvanlara eziyet edilmesini, canlı hayvanın hedef yapılmasını ve zevk için avlanmayı yasaklamış; İslam medeniyetinde kuş evleri ve hayvan vakıfları kurulmuştur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Temel Dinî Bilgiler 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-temel-dini-bilgiler-hafta-13
-#derskutusu #temeldinibilgiler #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-temel-dini-bilgiler-8
-Sıra: 2026-11-05 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-temel-dini-bilgiler-8.png
-
-```
-Bunu biliyor muydunuz? Aile, toplumun en temel yapı taşı olup İslam hukukunun beş temel gayesinden biri olan 'neslin korunması' meşru nikâh ve aile kurumuyla sağlanır. Rûm suresi 21. ayete göre aile yuvası; sekînet (huzur ve güven), meveddet (içten sevgi) ve rahmet (merhamet ve şefkat) ilkeleri üzerine kurulur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Temel Dinî Bilgiler 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-temel-dini-bilgiler-hafta-8
-#derskutusu #temeldinibilgiler #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-10-temel-dini-bilgiler-9
-Sıra: 2026-11-05 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-temel-dini-bilgiler-9.png
-
-```
-Bunu biliyor muydunuz? Sıla-i Rahim: Akrabaları ziyaret edip gözetmek Allah'ın emridir (Nahl, 16/90); rızkı ve ömrü bereketlendirir. Bağı koparmaya kat'-ı rahim denir. Vâsıl ve Çift Ecir: Gerçek sıla-i rahim ilgiyi kesen akrabaya da gitmektir; yoksul akrabaya verilen sadaka hem sadaka hem sıla-i rahim sevabı kazandırır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 10. sınıf Temel Dinî Bilgiler 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-temel-dini-bilgiler-hafta-9
-#derskutusu #temeldinibilgiler #10sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-akaid-10
-Sıra: 2026-11-05 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-akaid-10.png
-
-```
-Bunu biliyor muydunuz? Kader ve Kaza: Kader, Allah'ın her şeyi ezelî ilim ve iradesiyle bir ölçüye göre planlaması; kaza ise zamanı geldiğinde kudret ve tekvin sıfatıyla yaratmasıdır. Küllî ve Cüz'î İrade: Allah'ın mutlak ve sınırsız iradesine küllî irade, insanın iyi ve kötü arasında tercih yapabilme yetisine cüz'î irade denir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Akaid 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-akaid-hafta-10
-#derskutusu #akaid #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-akaid-11
-Sıra: 2026-11-05 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-akaid-11.png
-
-```
-Bunu biliyor muydunuz? Ömür ve Ecel: Ömür doğumdan ölüme kadar geçen yaşam süresi, ecel ise bu sürenin sona erdiği tayin edilmiş vakittir; Ehl-i Sünnet'e göre ecel tektir. Rızık ve Helal Kazanç: Tüm canlıların rızkını yaratan Allah'tır (er-Rezzâk); insan ise cüz'î iradesiyle haramdan kaçınıp helal yoldan rızkını kazanmakla sorumludur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Akaid 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-akaid-hafta-11
-#derskutusu #akaid #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-akaid-12
-Sıra: 2026-11-06 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-akaid-12.png
-
-```
-Bunu biliyor muydunuz? Cebriye mezhebi insanda irade hürriyetini reddederek mutlak cebir anlayışını savunmuş; bu yaklaşım dini teklifi ve sorumluluğu anlamsızlaştırdığı için reddedilmiştir. Mu'tezile mezhebi ilahi adalet ilkesi gereğince insanı kendi ihtiyari fiillerinin hem faili hem de yaratıcısı saymış; ancak bu görüş Allah'ın Hâlık sıfatını sınırlandırmıştır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Akaid 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-akaid-hafta-12
-#derskutusu #akaid #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-akaid-13
-Sıra: 2026-11-06 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-akaid-13.png
-
-```
-Bunu biliyor muydunuz? Hidayet Yüce Allah'ın rehberliğiyle doğru yola ulaşmayı, dalalet ise hakikatten sapmayı ifade eder; insan cüz'î iradesiyle hangi yola yönelirse Allah onu yaratır. Hayır (iyilik) ve şer (kötülük) imtihan gereği Allah tarafından yaratılır; ancak Allah hayra razı olurken şerre razı olmaz ve kul kendi tercihinden sorumlu tutulur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Akaid 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-akaid-hafta-13
-#derskutusu #akaid #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-akaid-8
-Sıra: 2026-11-06 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-akaid-8.png
-
-```
-Bunu biliyor muydunuz? İspat-ı Vâcib: Yüce Allah'ın varlığını akıl ve vahiy delilleriyle kanıtlama yöntemlerinin genel adıdır. Hudûs ve İmkân Delilleri: Âlemin sonradan yaratılmış (hâdis) ve mümkün varlık olması, varlığı zorunlu olan ezeli Yaratıcıyı (Vâcibü'l-Vücûd) kanıtlar.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Akaid 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-akaid-hafta-8
-#derskutusu #akaid #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-akaid-9
-Sıra: 2026-11-06 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-akaid-9.png
-
-```
-Bunu biliyor muydunuz? Zâtî ve Sübûtî Sıfatlar: Zâtî sıfatlar Allah'ı eksiklikten tenzih ederken, sübûtî sıfatlar O'nun mutlak kemalini (Hayat, İlim, Semî, Basar, İrade, Kudret, Kelam, Tekvin) bildirir. Tekvin Farkı: Mâtürîdîlik Tekvin'i sekizinci müstakil ezelî sıfat kabul eder; Eş'arîlik ise Kudret sıfatının yaratılanlarla ilişkisi (taalluku) sayar.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Akaid 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-akaid-hafta-9
-#derskutusu #akaid #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-biyoloji-10
-Sıra: 2026-11-06 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-biyoloji-10.png
-
-```
-Bunu biliyor muydunuz? Bölümler Arası Koordinasyon: Çevresel sinir sisteminin getirdiği duyular omurilik ve talamus üzerinden uç beyne ulaşır; uç beyin, beyincik ve beyin sapı ile iş birliği içinde motor yanıtı üretir. Multipl Skleroz (MS): Bağışıklık sisteminin beyin ve omurilikteki miyelin kılıfları tahrip etmesiyle oluşan, impuls iletimini yavaşlatan otoimmün bir hastalıktır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Biyoloji 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-biyoloji-hafta-10
-#derskutusu #biyoloji #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-biyoloji-11
-Sıra: 2026-11-06 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-biyoloji-11.png
-
-```
-Bunu biliyor muydunuz? Refleks Kavramı: Uyarıya karşı istemsiz ve hızlı verilen tepkilerdir; impuls uç beyne gitmeden omurilikte yanıtlandığı için vücudu korur. Kalıtsal ve Kazanılmış Refleksler: Emme ve diz kapağı refleksi doğuştan (kalıtsal) gelir; yüzmek ve bisiklet sürmek önce uç beyinde öğrenilip sonra omuriliğe devredilir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Biyoloji 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-biyoloji-hafta-11
-#derskutusu #biyoloji #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-biyoloji-12
-Sıra: 2026-11-07 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-biyoloji-12.png
-
-```
-Bunu biliyor muydunuz? Kemik doku osteosit hücreleri ve osein ara maddesinden oluşur; sıkı kemik dokuda Havers-Volkmann kanalları, süngerimsi dokuda ise kırmızı kemik iliği bulunur. Uzun kemiklerde boyca uzamayı epifiz plağı, tüm kemiklerde enine kalınlaşma ve onarımı ise periost (kemik zarı) sağlar.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Biyoloji 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-biyoloji-hafta-12
-#derskutusu #biyoloji #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-biyoloji-13
-Sıra: 2026-11-07 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-biyoloji-13.png
-
-```
-Bunu biliyor muydunuz? Hareketin oluşmasında kemikler kaldıraç kolu, oynar eklemler dayanak noktası, iskelet kasları ise tendonlarla kemiği çeken aktif kuvvet kaynağı olarak görev yapar. Biri kasılırken diğeri gevşeyen kaslara antagonist kaslar (biseps-triseps), aynı anda kasılıp gevşeyen kaslara ise sinerjist kaslar (karın-sırt kasları) denir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Biyoloji 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-biyoloji-hafta-13
-#derskutusu #biyoloji #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-biyoloji-8
-Sıra: 2026-11-07 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-biyoloji-8.png
-
-```
-Bunu biliyor muydunuz? Refleks Yayı: Reseptör -> Duyu nöronu (arka kök) -> Ara nöron -> Motor nöron (ön kök) -> Efektör sırasıyla hızlı ve istemsiz tepki oluşturur. Süngerler: Özelleşmiş sinir hücresi (nöron) ve sinir sistemi bulunmayan en basit hayvan grubudur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Biyoloji 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-biyoloji-hafta-8
-#derskutusu #biyoloji #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-biyoloji-9
-Sıra: 2026-11-07 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-biyoloji-9.png
-
-```
-Bunu biliyor muydunuz? Meninges ve BOS: Beyin ve omurilik sert, örümceksi ve ince zarla korunur; aradaki BOS sıvısı darbelere karşı tampon görevi yapar ve madde alışverişini sağlar. Ön Beyin: Uç beyin bilinç, zekâ, hafıza, beş duyu ve istemli hareketleri yönetir; ara beyinde talamus duyu santrali, hipotalamus ise homeostazi merkezidir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Biyoloji 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-biyoloji-hafta-9
-#derskutusu #biyoloji #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-cografya-10
-Sıra: 2026-11-07 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-cografya-10.png
-
-```
-Bunu biliyor muydunuz? Hidrosferin Dağılışı: Yeryüzündeki suların %97,5'i tuzlu (okyanus ve denizler), %2,5'i tatlıdır; tatlı suların %68,7'si buzullarda, %30,1'i yer altında, %1,2'si yüzey sularında bulunur. Okyanuslar ve Denizler: Büyük, Atlas ve Hint okyanuslarına geniş boğazlarla bağlananlara kenar deniz (Manş, Umman), kıta içine dar boğazlarla sokulanlara iç deniz (Akdeniz, Karadeniz) denir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Coğrafya 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-cografya-hafta-10
-#derskutusu #coğrafya #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-cografya-11
-Sıra: 2026-11-07 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-cografya-11.png
-
-```
-Bunu biliyor muydunuz? Türkiye'nin Denizleri: Güneyden kuzeye (Akdeniz'den Karadeniz'e) gidildikçe enlem ve buharlaşma azaldığından deniz suyu sıcaklığı ve tuzluluğu azalır. Doğal Göllerimiz: Tektonik (Tuz, Beyşehir, İznik), karstik (Salda, Kestel), volkanik (Nemrut, Meke), buzul (Kaçkar, Uludağ) ve set gölleri (Van, Tortum, Bafa, Terkos) olarak ayrılır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Coğrafya 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-cografya-hafta-11
-#derskutusu #coğrafya #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-cografya-12
-Sıra: 2026-11-08 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-cografya-12.png
-
-```
-Bunu biliyor muydunuz? Yeryüzündeki suların %97'si tuzlu (okyanus ve denizler), %3'ü tatlıdır; tatlı suların en büyük kısmı (%68,7) buzullarda ve (%30,1) yer altında bulunur. Denizler konuma göre kenar deniz ve iç deniz olarak ayrılır; Ekvator'dan kutuplara gidildikçe buharlaşma azaldığından tuzluluk oranı düşer.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Coğrafya 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-cografya-hafta-12
-#derskutusu #coğrafya #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-cografya-13
-Sıra: 2026-11-08 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-cografya-13.png
-
-```
-Bunu biliyor muydunuz? Kişi başına düşen yıllık yaklaşık 1.300 m³ kullanılabilir su miktarıyla Türkiye su zengini değil, 'su stresi yaşayan' bir ülkedir. Türkiye'de tatlı su kaynaklarının yaklaşık %75'i tarımsal sulamada, kalan kısmı ise içme-kullanma ve sanayi sektörlerinde tüketilir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Coğrafya 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-cografya-hafta-13
-#derskutusu #coğrafya #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-cografya-8
-Sıra: 2026-11-08 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-cografya-8.png
-
-```
-Bunu biliyor muydunuz? Ekonomik Etkiler: Tatlı sularımızın ~%75'i tarımsal sulamada kullanılır; akarsular HES enerjisi, kırıklı yapılar jeotermal enerji ve denizler ulaşım/turizm sağlar. Çevresel Etkiler: Ramsar Sözleşmesi kapsamındaki sulak alanlar biyoçeşitliliği korur, karbon yutağı olur ve yerel iklimi ılımanlaştırır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Coğrafya 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-cografya-hafta-8
-#derskutusu #coğrafya #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-cografya-9
-Sıra: 2026-11-08 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-cografya-9.png
-
-```
-Bunu biliyor muydunuz? CBS Bileşenleri: Coğrafi Bilgi Sistemleri donanım, yazılım, veri, insan ve yöntem bileşenlerinden oluşur; mekânsal veri ile öznitelik verisini bütünleştirir. Vektör ve Raster Veri: Nokta, çizgi ve poligon veriler vektör modeli; uydu görüntüleri ve sayısal yükselti modelleri (SYM) ise piksel tabanlı raster modeli oluşturur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Coğrafya 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-cografya-hafta-9
-#derskutusu #coğrafya #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-din-kulturu-10
-Sıra: 2026-11-08 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-din-kulturu-10.png
-
-```
-Bunu biliyor muydunuz? Din ve Bilim Bütünlüğü: İslam'da vahyî ayetler ile evrendeki kevnî ayetler aynı Yaratıcı'nın eseri olduğundan din ve bilim birbiriyle çelişmez, birbirini tamamlar. Kur'an'da İlim ve Tefekkür: Kur'an 'Oku!' emriyle başlar; göklerin, yerin ve canlıların yaratılışını (sünnetullahı) gözlemlemeyi ve akıl yürütmeyi teşvik eder.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Din Kültürü ve Ahlak Bilgisi 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-din-kulturu-ve-ahlak-bilgisi-hafta-10
-#derskutusu #dinkültürü #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-din-kulturu-11
-Sıra: 2026-11-08 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-din-kulturu-11.png
-
-```
-Bunu biliyor muydunuz? İslam Estetiğinin Kaynağı: 'Allah güzeldir, güzelliği sever.' hadisi ile el-Cemîl, el-Bedî' ve el-Musavvir isimlerinin tefekkürü İslam sanatlarının temelidir. Soyutlama ve Üsluplaştırma: Tevhid ve tenzih bilinciyle doğadaki varlıklar birebir kopyalanmamış; üsluplaştırılarak (stilizasyon) sonsuzluk fikri işlenmiştir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Din Kültürü ve Ahlak Bilgisi 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-din-kulturu-ve-ahlak-bilgisi-hafta-11
-#derskutusu #dinkültürü #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-din-kulturu-12
-Sıra: 2026-11-09 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-din-kulturu-12.png
-
-```
-Bunu biliyor muydunuz? Âl-i İmrân suresi 190-191. ayetler, göklerin ve yerin yaratılışı ile gece-gündüzün değişiminde öz akıl sahipleri (ulü'l-elbâb) için kevni ayetler bulunduğunu bildirir. Sağduyu sahibi müminler her hâlde Allah'ı zikreder ve yaratılış üzerinde tefekkür ederek evrenin boşuna (bâtıl) yaratılmadığı sonucuna ulaşır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Din Kültürü ve Ahlak Bilgisi 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-din-kulturu-ve-ahlak-bilgisi-hafta-12
-#derskutusu #dinkültürü #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-din-kulturu-13
-Sıra: 2026-11-09 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-din-kulturu-13.png
-
-```
-Bunu biliyor muydunuz? İslam sanatı; el-Bedî', el-Musavvir ve el-Cemîl olan Yüce Allah'ın kâinattaki ölçü ve güzelliğini tevhid ve tenzih ilkesi çerçevesinde yansıtır. Şirk ve putperestlikten korunma hassasiyetiyle ibadet mekânlarında heykel yerine soyutlama, geometrik örüntü ve üsluplaştırılmış motifler tercih edilmiştir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Din Kültürü ve Ahlak Bilgisi 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-din-kulturu-ve-ahlak-bilgisi-hafta-13
-#derskutusu #dinkültürü #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-din-kulturu-8
-Sıra: 2026-11-09 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-din-kulturu-8.png
-
-```
-Bunu biliyor muydunuz? Din Kavramı: Sözlükte itaat, boyun eğme, hüküm, hesap/mükâfat ve yol anlamlarına gelir; Batı dillerinde "religion" (bağlanmak) ile karşılanır. İslami Tanım: Akıl sahiplerini kendi özgür iradeleriyle dünya ve ahiret mutluluğuna (felaha) ulaştıran ilahi kanundur (vaz'-ı ilâhî).
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Din Kültürü ve Ahlak Bilgisi 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-din-kulturu-ve-ahlak-bilgisi-hafta-8
-#derskutusu #dinkültürü #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-din-kulturu-9
-Sıra: 2026-11-09 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-din-kulturu-9.png
-
-```
-Bunu biliyor muydunuz? Ortak Sorular: Din ve felsefe; varlık (ontoloji), bilgi (epistemoloji) ve değer/ahlak (aksiyoloji) alanlarındaki temel sorularla ilgilenir. Kaynak ve Yöntem Farkı: Din ilahi vahye ve imana dayanarak kesin hükümler sunar; felsefe ise insan aklına ve eleştirel sorgulamaya dayanır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Din Kültürü ve Ahlak Bilgisi 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-din-kulturu-ve-ahlak-bilgisi-hafta-9
-#derskutusu #dinkültürü #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-dinler-tarihi-10
-Sıra: 2026-11-09 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-dinler-tarihi-10.png
-
-```
-Bunu biliyor muydunuz? Temel İbadetler: İslam'da ibadetler bedenî (namaz, oruç), malî (zekât) ve hem bedenî hem malî (hac) olarak sınıflandırılır; ruhban sınıfı olmadan doğrudan Allah'a yapılır. İbadetlerin Hikmeti: Namaz kötülükten alıkoyar, oruç sabır ve empati öğretir, zekât sosyal adaleti sağlar, hac ise insanlığın eşitliğini ve kardeşliğini simgeler.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Dinler Tarihi 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-dinler-tarihi-hafta-10
-#derskutusu #dinlertarihi #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-dinler-tarihi-11
-Sıra: 2026-11-09 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-dinler-tarihi-11.png
-
-```
-Bunu biliyor muydunuz? Ahlakın Kaynağı: İslam ahlakının kaynağı Kur'an-ı Kerim ve Hz. Peygamber'in (s.a.v.) yaşayan Kur'an niteliğindeki sünnetidir. Temel Ahlaki Değerler: Adalet, sıdk (doğruluk), emanet (güvenilirlik), merhamet, iffet, tevazu ve îsâr (diğerkâmlık) başlıca erdemlerdir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Dinler Tarihi 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-dinler-tarihi-hafta-11
-#derskutusu #dinlertarihi #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-dinler-tarihi-12
-Sıra: 2026-11-10 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-dinler-tarihi-12.png
-
-```
-Bunu biliyor muydunuz? Yahudilik; İbrani, İsrail (Hz. Yakup), Yahudi (Yahuda) ve Musevi (Hz. Musa) kavramlarıyla tanımlanan, yaşayan en eski İlahî kökenli dindir. Tarihsel süreç; Atalar Dönemi, Mısır'dan Çıkış, Krallık (Hz. Davut ve Hz. Süleyman), Bölünme, Babil Sürgünü ve MS 70 Roma yıkımı sonrası Diaspora dönemlerinden oluşur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Dinler Tarihi 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-dinler-tarihi-hafta-12
-#derskutusu #dinlertarihi #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-dinler-tarihi-13
-Sıra: 2026-11-10 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-dinler-tarihi-13.png
-
-```
-Bunu biliyor muydunuz? Hristiyanlık MS 1. yüzyılda Filistin'de Hz. İsa'nın tebliğiyle doğmuş; Hristiyan adı Yunanca Hristos (Mesih) kelimesinden türetilmiştir. İslam'a göre Hz. İsa, Hz. Meryem'den babasız doğan ulü'l-azm bir peygamberdir; Allah'ın oğlu değildir ve çarmıhta öldürülmemiştir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Dinler Tarihi 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-dinler-tarihi-hafta-13
-#derskutusu #dinlertarihi #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-dinler-tarihi-8
-Sıra: 2026-11-10 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-dinler-tarihi-8.png
-
-```
-Bunu biliyor muydunuz? Vahyin Başlangıcı: 610 yılında Hira Mağarası'nda Alak Suresi 1-5. ayetlerle başlayan İslamiyet, tevhid geleneğinin son halkasıdır. Mekke Dönemi (610-622): Dârü'l-Erkam merkezli davet, Habeşistan Hicreti, Hüzün Yılı, İsra-Miraç ve Akabe Biatları bu dönemin dönüm noktalarıdır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Dinler Tarihi 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-dinler-tarihi-hafta-8
-#derskutusu #dinlertarihi #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-dinler-tarihi-9
-Sıra: 2026-11-10 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-dinler-tarihi-9.png
-
-```
-Bunu biliyor muydunuz? Tevhid ve Âmentü: İslam inancı Allah'a, meleklere, ilahi vahiylere, peygamberlere, ahirete ve kadere iman esaslarından (usûl-i din) oluşur. Kur'an ve Sünnet: Kur'an-ı Kerim tahrif edilmemiş son ilahi vahiy (musaddık ve müheymin), sünnet ise onun pratik açıklamasıdır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Dinler Tarihi 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-dinler-tarihi-hafta-9
-#derskutusu #dinlertarihi #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-edebiyat-10
-Sıra: 2026-11-10 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-edebiyat-10.png
-
-```
-Bunu biliyor muydunuz? Okumayı Yönetme (TDE2.1): Okuma öncesi tahmin ve strateji belirleme, okuma sırası yapı ve kültür analizi, okuma sonrası değerlendirme ve metinler arası karşılaştırma aşamalarından oluşur. Kök Metinler ve Kültür: Orhun Abideleri (8. yy.) ve Kaşgarlı Mahmud'un Dîvânu Lugâti't-Türk'ü (11. yy.) Türk dilinin, töresinin ve maddi-manevi kültürünün ana kaynaklarıdır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Türk Dili ve Edebiyatı 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-turk-dili-ve-edebiyati-hafta-10
-#derskutusu #edebiyat #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-edebiyat-11
-Sıra: 2026-11-10 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-edebiyat-11.png
-
-```
-Bunu biliyor muydunuz? Kültür Yolculuğu Teması: Orhun Abideleri ve Dîvânu Lugâti't-Türk'ten Cengiz Aytmatov'a uzanan Türk dünyası hikâyeleri dil, tarih ve kimlik bilincini yaşatır. Gezi Yazısı (Seyahatname): Gezilip görülen coğrafyaların kültürünü gözlemle anlatan öğretici metinlerdir (Mir'âtü'l-Memâlik, Evliya Çelebi Seyahatnâme'si, Anadolu Notları).
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Türk Dili ve Edebiyatı 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-turk-dili-ve-edebiyati-hafta-11
-#derskutusu #edebiyat #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-edebiyat-12
-Sıra: 2026-11-11 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-edebiyat-12.png
-
-```
-Bunu biliyor muydunuz? Okuma sürecini değerlendirme (TDE2.4); metni belirli ölçütlere göre tartmayı, metindeki gerçekliği gerçek dünya bilgisiyle karşılaştırmayı ve gerekçeli tepki ortaya koymayı kapsar. Sekizinci yüzyılda dikilen Orhun Abideleri (Tonyukuk, Kül Tigin, Bilge Kağan), Türk adının geçtiği ilk yazılı metin ve söylev-anı türünün ilk örneğidir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Türk Dili ve Edebiyatı 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-turk-dili-ve-edebiyati-hafta-12
-#derskutusu #edebiyat #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-edebiyat-13
-Sıra: 2026-11-11 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-edebiyat-13.png
-
-```
-Bunu biliyor muydunuz? Türk dünyasını birbirine bağlayan dört temel kültür unsuru; ortak dil ve edebiyat, ortak inanç ve hikmet, ortak coğrafya/gelenek ve ortak sanattır. Etkili bir konuşma sürecinde amaç, tür (hazırlıklı/hazırlıksız), süre ve hedef kitle belirlenerek giriş-gelişme-sonuç planı hazırlanır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Türk Dili ve Edebiyatı 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-turk-dili-ve-edebiyati-hafta-13
-#derskutusu #edebiyat #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-edebiyat-8
-Sıra: 2026-11-11 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-edebiyat-8.png
-
-```
-Bunu biliyor muydunuz? Yazılı anlatım süreci; hazırlık, planlama, taslak metin oluşturma ve gözden geçirip düzeltme (redaksiyon) olmak üzere dört aşamada gerçekleştirilir. Metnin dilbilgisel araçlarla birbirine bağlanmasına bağlaşıklık, düşüncelerin mantıksal tutarlılık taşımasına ise bağdaşıklık adı verilir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Türk Dili ve Edebiyatı 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-turk-dili-ve-edebiyati-hafta-8
-#derskutusu #edebiyat #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-edebiyat-9
-Sıra: 2026-11-11 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-edebiyat-9.png
-
-```
-Bunu biliyor muydunuz? E-Posta Yapısı: Alıcı (Kime/CC/BCC), net Konu başlığı, uygun Hitap, Giriş-Gelişme-Sonuç metni, Esenlik/Saygı ifadesi, İmza bloğu ve Eklerden oluşur. Dilekçe Kuralları: Makam adı, nesnel talep metni ('... gereğini arz ederim.'), sağ altta tarih-imza-ad soyad, sol altta adres ve ekler yer alır; kurum adlarına gelen ekler kesmeyle ayrılmaz.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Türk Dili ve Edebiyatı 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-turk-dili-ve-edebiyati-hafta-9
-#derskutusu #edebiyat #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-felsefe-10
-Sıra: 2026-11-11 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-felsefe-10.png
-
-```
-Bunu biliyor muydunuz? Aksiyolojik Problemler: Teknoloji felsefesinde güvenlik sorunları, mahremiyetin aşınması, değerlerin tahribatı ve ahlaki eylemin imkânı temel değer (etik) tartışmalarıdır. Dijital Panoptikon: Byung-Chul Han'a göre dijital çağda bireyler, sosyal ağlarda beğeni ve görünürlük arzusuyla kendi mahremiyetlerini gönüllü olarak gözetim sistemine açmaktadır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Felsefe 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-felsefe-hafta-10
-#derskutusu #felsefe #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-felsefe-11
-Sıra: 2026-11-11 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-felsefe-11.png
-
-```
-Bunu biliyor muydunuz? Doğa ve Kültür: Doğa kendiliğinden var olan fiziksel evrendir; kültür ise insanın doğayı dönüştürerek ürettiği maddi ve manevi değerler bütünüdür. Estetik ve Sanat Felsefesi: Baumgarten'ın kurduğu estetik hem doğadaki hem sanattaki güzeli incelerken, sanat felsefesi yalnız sanatsal güzelliği konu alır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Felsefe 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-felsefe-hafta-11
-#derskutusu #felsefe #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-felsefe-12
-Sıra: 2026-11-12 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-felsefe-12.png
-
-```
-Bunu biliyor muydunuz? Modern teknoloji insan hayatında ontolojik anlam kaybı, yabancılaşma, hipergerçeklik (simülasyon) ve transhümanizm gibi varlıksal problemler doğurmuştur. Teknolojinin aksiyolojik (etik) problemleri ise dijital gözetim, mahremiyet ihlali, değerlerin tahribatı ve ahlaki sorumluluk sorunlarında yoğunlaşır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Felsefe 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-felsefe-hafta-12
-#derskutusu #felsefe #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-felsefe-13
-Sıra: 2026-11-12 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-felsefe-13.png
-
-```
-Bunu biliyor muydunuz? Akıl-inanç ilişkisinde Tertullianus ve Kierkegaard fideizmi (uzlaşmazlığı); Augustinus, Anselmus, Thomas ve İslam filozofları ise uyumu savunmuştur. Ontolojik kanıt (Anselmus, Descartes) 'kendisinden daha yetkini düşünülemeyen varlık' kavramından Tanrı'nın gerçek varlığına ulaşan a priori bir kanıttır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Felsefe 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-felsefe-hafta-13
-#derskutusu #felsefe #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-felsefe-8
-Sıra: 2026-11-12 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-felsefe-8.png
-
-```
-Bunu biliyor muydunuz? Teknoloji Kavramı: Antik Yunanca "tekhne" (beceri/üretim bilgisi) ve "logos" kelimelerinden gelir; bilimsel bilginin pratik araçlara dönüşümüdür. Araçsalcı Yaklaşım: Teknolojiyi kendi başına iyi veya kötü olmayan nötr bir araç sayar; belirleyici olan insanın kullanım niyetidir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Felsefe 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-felsefe-hafta-8
-#derskutusu #felsefe #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-felsefe-9
-Sıra: 2026-11-12 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-felsefe-9.png
-
-```
-Bunu biliyor muydunuz? Ontolojik Anlam Kaybı: Heidegger'e göre modern teknoloji doğayı ve insanı içsel değeri olan varlıklar yerine kullanıma hazır bir 'stok/rezerv' (Bestand) olarak çerçeveler. Yabancılaşma: İnsanın kendi ürettiği teknolojik araçların ve algoritmaların denetimine girmesi, bireyi doğaya, topluma ve kendi özüne yabancılaştırır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Felsefe 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-felsefe-hafta-9
-#derskutusu #felsefe #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-fizik-10
-Sıra: 2026-11-12 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-fizik-10.png
-
-```
-Bunu biliyor muydunuz? Matematiksel Model: Sürtünme kuvveti yüzeylerin cinsine (k) ve yüzeyin dik tepki kuvvetine (N) bağlıdır; fs = k · N bağıntısıyla hesaplanır. Yüzey Alanı ve Katsayı: Sürtünme kuvveti sürtünen yüzey alanının büyüklüğüne bağlı değildir; fs - N grafiğinin eğimi birimsiz sürtünme katsayısını (k) verir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Fizik 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-fizik-hafta-10
-#derskutusu #fizik #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-fizik-11
-Sıra: 2026-11-12 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-fizik-11.png
-
-```
-Bunu biliyor muydunuz? Akışkan Direnç Kuvveti: Hava veya su içinde hareket eden cisme hız vektörüne zıt yönde Fd = K · A · v² büyüklüğünde direnç kuvveti etki eder. Değişkenlerin Anlamı: K akışkanın yoğunluğuna ve cismin aerodinamik şekline bağlı katsayı, A hareket doğrultusuna dik en büyük kesit alanı, v ise anlık hızdır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Fizik 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-fizik-hafta-11
-#derskutusu #fizik #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-fizik-12
-Sıra: 2026-11-13 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-fizik-12.png
-
-```
-Bunu biliyor muydunuz? Düzgün çembersel harekette cismin sürati sabittir; ancak hız vektörünün yönü sürekli değiştiği için hareket ivmelidir. Bir tam tur süresi periyot (T), saniyedeki tur sayısı frekanstır (f) ve aralarında T · f = 1 bağıntısı vardır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Fizik 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-fizik-hafta-12
-#derskutusu #fizik #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-fizik-13
-Sıra: 2026-11-13 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-fizik-13.png
-
-```
-Bunu biliyor muydunuz? Yatay virajda merkezcil kuvveti statik sürtünme sağlar ve güvenli maksimum sürat vmax = √(k · g · r) bağıntısıyla bulunur. Sürtünmesiz eğimli virajda güvenli dönüş sürati v = √(g · r · tan(a)), düşey silindirde ise düşmeme sürati vmin = √(g · r / k) şeklindedir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Fizik 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-fizik-hafta-13
-#derskutusu #fizik #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-fizik-8
-Sıra: 2026-11-13 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-fizik-8.png
-
-```
-Bunu biliyor muydunuz? Serbest Cisim Diyagramı: Cisim üzerine etki eden gerçek dış kuvvetlerin (G, N, T, F, f_s) gösterildiği diyagramdır; eylemsizlik (m·a) çizilmez. Statik ve Kinetik Sürtünme: Cisim durgunken uygulanan kuvvet f_s,max değerini aşmazsa sürtünme kuvveti uygulanan kuvvete eşittir; hareket halinde f_k = k_k · N etki eder.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Fizik 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-fizik-hafta-8
-#derskutusu #fizik #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-fizik-9
-Sıra: 2026-11-13 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-fizik-9.png
-
-```
-Bunu biliyor muydunuz? Statik Sürtünme (fs): Duran cisme etki eder; uygulanan kuvvet eşik değeri (fs,max = ks·N) aşmadıkça statik sürtünme uygulanan kuvvete eşittir (fs = F). Kinetik Sürtünme (fk): Kayarak hareket eden cisme hareket yönüne zıt etki eder; büyüklüğü fk = kk·N olup sabittir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Fizik 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-fizik-hafta-9
-#derskutusu #fizik #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-hitabet-ve-mesleki-uygulama-10
-Sıra: 2026-11-13 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-hitabet-ve-mesleki-uygulama-10.png
-
-```
-Bunu biliyor muydunuz? Hutbenin Tanımı ve Hükmü: Cuma ve bayram namazlarında minberde ayakta yapılan dinî konuşmadır; cuma hutbesi farz (namazın şartı), bayram hutbesi sünnettir. Cuma ve Bayram Hutbesi Farkı: Cuma hutbesi namazdan önce okunur ve hamdele ile başlar; bayram hutbesi ise namazdan sonra okunur ve tekbirlerle başlar.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Hitabet ve Mesleki Uygulama 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-hitabet-ve-mesleki-uygulama-hafta-10
-#derskutusu #hitabet #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-hitabet-ve-mesleki-uygulama-11
-Sıra: 2026-11-13 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-hitabet-ve-mesleki-uygulama-11.png
-
-```
-Bunu biliyor muydunuz? Minbere Çıkış ve İç Ezan: Hatip cübbe ve sarıkla sağ ayakla minbere çıkar, basamak dualarını okur, cemaate selam verip oturur ve iç ezanı dinler. Birinci Hutbe: İç ezandan sonra ayakta hamdele, salvele, şehadet, konu ayeti/hadisi ve Türkçe öğüt (mev'iza) okunur; ardından kısa oturuş (cülûs) yapılır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Hitabet ve Mesleki Uygulama 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-hitabet-ve-mesleki-uygulama-hafta-11
-#derskutusu #hitabet #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-hitabet-ve-mesleki-uygulama-12
-Sıra: 2026-11-14 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-hitabet-ve-mesleki-uygulama-12.png
-
-```
-Bunu biliyor muydunuz? Vaaz, müminleri dini konularda aydınlatmak ve iyiliğe yöneltmek (irşat) amacıyla camilerde kürsüden yapılan öğüt konuşmasıdır. Hutbe minberde ayakta, iki bölüm hâlinde ve cuma/bayram namazlarına bağlı olarak okunurken; vaaz kürsüde oturarak ve tek bölüm hâlinde yapılır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Hitabet ve Mesleki Uygulama 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-hitabet-ve-mesleki-uygulama-hafta-12
-#derskutusu #hitabet #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-hitabet-ve-mesleki-uygulama-13
-Sıra: 2026-11-14 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-hitabet-ve-mesleki-uygulama-13.png
-
-```
-Bunu biliyor muydunuz? Erken çocukluk (4-6 yaş) döneminde çocuklar somut algı evresindedir; merak duyguları güçlü, hayal dünyaları geniş ve dikkat süreleri kısadır. Bu yaş grubunda din eğitiminin temel amacı teorik bilgi yüklemek değil, sevgi ve güven ekseninde olumlu bir Allah tasavvuru ve güzel ahlak kazandırmaktır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Hitabet ve Mesleki Uygulama 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-hitabet-ve-mesleki-uygulama-hafta-13
-#derskutusu #hitabet #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-hitabet-ve-mesleki-uygulama-8
-Sıra: 2026-11-14 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-hitabet-ve-mesleki-uygulama-8.png
-
-```
-Bunu biliyor muydunuz? Vaaz ve İrşat: Vaaz, camilerde kürsüden cemaati dini ve ahlaki konularda aydınlatmak amacıyla yapılan hikmetli konuşmadır. Vaazın Bölümleri: Giriş (eûzü-besmele, hamdele, salvele), Gelişme (konu sunumu ve deliller) ve Sonuç/Dua (hâtime) aşamalarından oluşur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Hitabet ve Mesleki Uygulama 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-hitabet-ve-mesleki-uygulama-hafta-8
-#derskutusu #hitabet #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-hitabet-ve-mesleki-uygulama-9
-Sıra: 2026-11-14 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-hitabet-ve-mesleki-uygulama-9.png
-
-```
-Bunu biliyor muydunuz? Vaaz Metni Çözümleme: Örnek bir vaaz; giriş (hamdele, salvele, serlevha), gelişme (ayet-hadis tahlili ve hayata yansıma) ve sonuç-dua (hâtime) bölümlerinden oluşur. İrticalen Sunum: Vaaz kürsüde baştan sona kâğıttan okunmaz; vaiz hazırladığı plan/taslak kartı üzerinden cemaatle göz teması kurarak konuşur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Hitabet ve Mesleki Uygulama 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-hitabet-ve-mesleki-uygulama-hafta-9
-#derskutusu #hitabet #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-ingilizce-10
-Sıra: 2026-11-14 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-ingilizce-10.png
-
-```
-Bunu biliyor muydunuz? Used to + V1: Geçmişte yapılan ancak şimdi terk edilmiş alışkanlıkları ve durumları anlatır; olumsuzda 'didn't use to + V1', soruda 'Did... use to + V1?' kullanılır. Would + V1: Geçmişte tekrarlanan eylemleri anlatır ancak 'be, have, live, know' gibi durum fiilleriyle (state verbs) kullanılmaz.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf İngilizce 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-ingilizce-hafta-10
-#derskutusu #ingilizce #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-ingilizce-11
-Sıra: 2026-11-14 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-ingilizce-11.png
-
-```
-Bunu biliyor muydunuz? Past Perfect Tense Yapısı: Tüm öznelerle 'had + V3 (Past Participle)' kullanılır; geçmişteki bir olaydan daha önce tamamlanmış eylemi anlatır. Öncelik – Sonralık İlişkisi: Geçmişteki iki eylemden 1. gerçekleşen 'Past Perfect (had + V3)', 2. gerçekleşen ise 'Simple Past (V2)' ile kurulur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf İngilizce 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-ingilizce-hafta-11
-#derskutusu #ingilizce #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-ingilizce-12
-Sıra: 2026-11-15 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-ingilizce-12.png
-
-```
-Bunu biliyor muydunuz? 'Used to + V1' yapısı, geçmişte düzenli yapılan ancak günümüzde terk edilmiş alışkanlıkları ve geçmişte kalmış durumları ifade eder. Bu yapının olumsuz şekli 'didn't use to + V1', soru şekli ise 'Did + Subject + use to + V1?' biçimindedir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf İngilizce 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-ingilizce-hafta-12
-#derskutusu #ingilizce #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-ingilizce-13
-Sıra: 2026-11-15 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-ingilizce-13.png
-
-```
-Bunu biliyor muydunuz? Past Perfect Simple (had + V3), geçmişte gerçekleşen iki olaydan daha önce tamamlanmış olan 'geçmişin geçmişi' eylemi ifade eder. After ve as soon as bağlaçlarından sonra 1. olay (had + V3), before ve by the time bağlaçlarından sonra ise 2. olay (Simple Past - V2) gelir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf İngilizce 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-ingilizce-hafta-13
-#derskutusu #ingilizce #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-ingilizce-8
-Sıra: 2026-11-15 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-ingilizce-8.png
-
-```
-Bunu biliyor muydunuz? İlgi Kalıpları: be keen on, be fond of, be interested in, be into, be crazy about ve be gifted/talented at ifadelerinden sonra fiil '-ing' alır. Tercih Yapıları: 'prefer + V-ing + to + V-ing' genel tercihleri; 'would rather + V1 + than + V1' ise yalın fiille tercihleri ifade eder.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf İngilizce 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-ingilizce-hafta-8
-#derskutusu #ingilizce #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-ingilizce-9
-Sıra: 2026-11-15 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-ingilizce-9.png
-
-```
-Bunu biliyor muydunuz? Edat + Gerund (-ing): keen on, fond of, good at, interested in, crazy about ve look forward to ifadelerinden sonra gelen fiil daima -ing alır. Fiil + Gerund / Infinitive: enjoy, avoid, mind, suggest, practise, give up sonrası V-ing; want, decide, hope, plan, manage, refuse sonrası to + V1 gelir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf İngilizce 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-ingilizce-hafta-9
-#derskutusu #ingilizce #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-kimya-10
-Sıra: 2026-11-15 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-kimya-10.png
-
-```
-Bunu biliyor muydunuz? Kontrollü Deney: Hıza etkisi incelenen faktör bağımsız değişken, ölçülen tepkime hızı bağımlı değişken, sabit bırakılan diğer koşullar ise kontrol değişkenidir. Derişim ve Temas Yüzeyi: Tepken derişiminin artırılması ve katının toz hâline getirilmesi eşik enerjisini (Ea) değiştirmeden etkin çarpışma sayısını ve hızı artırır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Kimya 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-kimya-hafta-10
-#derskutusu #kimya #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-kimya-11
-Sıra: 2026-11-15 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-kimya-11.png
-
-```
-Bunu biliyor muydunuz? Hız Bağıntısı Yazımı: Hız denklemine gazlar (g) ve sulu çözeltiler (suda) yazılır; saf katılar (k) ve saf sıvılar (s) yazılmaz. Derece ve Molekülerite: Tepkime derecesi deneysel hız denklemindeki derişim üsleri toplamıdır; molekülerite ise net tepkimedeki giren katsayıları toplamıdır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Kimya 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-kimya-hafta-11
-#derskutusu #kimya #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-kimya-12
-Sıra: 2026-11-16 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-kimya-12.png
-
-```
-Bunu biliyor muydunuz? Kimyasal tepkimelerin hız bağıntısı net denklemden değil, sabit sıcaklıktaki deneysel başlangıç derişimi-başlangıç hızı verilerinden belirlenir. Diğer tepkenler sabitken bir maddenin derişimi 2 katına çıkarıldığında hız 1, 2, 4, 8 katına çıkıyorsa o maddeye göre derece sırasıyla 0, 1, 2, 3 olur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Kimya 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-kimya-hafta-12
-#derskutusu #kimya #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-kimya-13
-Sıra: 2026-11-16 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-kimya-13.png
-
-```
-Bunu biliyor muydunuz? Tersinmez tepkimeler tek yönlü (->) ilerler ve tepkenlerden en az biri tükenir; tersinir tepkimeler ise çift yönlüdür (<->) ve %100 verime ulaşamaz. Renk tonu, toplam basınç, pH ve elektriksel iletkenlik gibi makroskobik özelliklerin sabitlenmesi tepkimenin dengeye ulaştığını gösterir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Kimya 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-kimya-hafta-13
-#derskutusu #kimya #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-kimya-8
-Sıra: 2026-11-16 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-kimya-8.png
-
-```
-Bunu biliyor muydunuz? Ortalama tepkime hızı, belirli bir zaman aralığında (∆t) harcanan tepken veya oluşan ürün derişimindeki değişimin geçen süreye oranıdır. Tepkenlerin derişimi zamanla azaldığı için hız bağıntılarının önüne eksi işareti, ürünlerin derişimi arttığı için artı (+) işareti konulur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Kimya 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-kimya-hafta-8
-#derskutusu #kimya #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-kimya-9
-Sıra: 2026-11-16 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-kimya-9.png
-
-```
-Bunu biliyor muydunuz? Tepken Cinsi: Zıt yüklü iyon tepkimeleri en hızlı, çok sayıda kovalent bağın kırıldığı büyük molekül tepkimeleri ise en yavaştır. Derişim ve Temas Yüzeyi: Derişim artışı birim hacimdeki tanecik sayısını artırır (k değişmez); katıyı toz haline getirmek temas yüzeyini ve hız sabitini (k) artırır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Kimya 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-kimya-hafta-9
-#derskutusu #kimya #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-kuran-i-kerim-10
-Sıra: 2026-11-16 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-kuran-i-kerim-10.png
-
-```
-Bunu biliyor muydunuz? Emanet ve Adalet (Nisâ, 58-59): Yüce Allah emanetlerin ehline (liyakat sahiplerine) verilmesini, insanlar arasında adaletle hükmedilmesini ve ihtilaflarda Kur'an ve Sünnete başvurulmasını emreder. Selamlaşma ve Sefer Namazı (Nisâ, 86, 101): Verilen selama daha güzeliyle veya aynısıyla karşılık verilir; yolculukta (seferîlikte) dört rekâtlı farz namazlar iki rekât olarak kısaltılır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Kur’an-ı Kerim 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-kuran-i-kerim-hafta-10
-#derskutusu #kuranıkerim #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-kuran-i-kerim-11
-Sıra: 2026-11-16 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-kuran-i-kerim-11.png
-
-```
-Bunu biliyor muydunuz? Surenin Kimliği: Fussilet suresi Mekke döneminde inmiştir, 54 ayettir, Hâ-Mîm mukattaa harfleriyle başlar ve adını 3. ayetteki 'fussilet' lafzından alır. Teshîl Uygulaması: 44. ayette geçen 'e-a'cemiyyun' kelimesinde yan yana gelen iki hemzeden ikincisi hemze ile elif arasında yumuşatılarak (teshîl ile) okunur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Kur’an-ı Kerim 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-kuran-i-kerim-hafta-11
-#derskutusu #kuranıkerim #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-kuran-i-kerim-12
-Sıra: 2026-11-17 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-kuran-i-kerim-12.png
-
-```
-Bunu biliyor muydunuz? Nisa suresi Medine döneminde indirilen 176 ayetlik bir suredir; adını kadın hakları ve aile hukukuna dair hükümlerden alır. Surenin 1-101. ayetleri okunurken peltek ve boğaz harflerinin mahreçlerine, secâvend duraklarına ve vakıf-ibtidâ uyumuna özen gösterilir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Kur’an-ı Kerim 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-kuran-i-kerim-hafta-12
-#derskutusu #kuranıkerim #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-kuran-i-kerim-13
-Sıra: 2026-11-17 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-kuran-i-kerim-13.png
-
-```
-Bunu biliyor muydunuz? Lafzatu'llâh kendisinden önceki harf üstün veya ötre ise kalın, esre ise ince okunur. Râ harfi üstün veya ötreli olduğunda kalın (tafhîm), esreli olduğunda ise ince (terkîk) telaffuz edilir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Kur’an-ı Kerim 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-kuran-i-kerim-hafta-13
-#derskutusu #kuranıkerim #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-kuran-i-kerim-8
-Sıra: 2026-11-17 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-kuran-i-kerim-8.png
-
-```
-Bunu biliyor muydunuz? Lafzatullahtaki lâm harfi, kendisinden önceki harfin harekesi üstün veya ötre olduğunda kalın (tefhîm), esre olduğunda ise ince (terkîk) okunur. Tenvin ile biten bir kelimeden Lafzatullaha geçiş (vasıl) yapıldığında tenvin esre ile harekelendiği için Lafzatullah ince okunur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Kur’an-ı Kerim 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-kuran-i-kerim-hafta-8
-#derskutusu #kuranıkerim #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-kuran-i-kerim-9
-Sıra: 2026-11-17 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-kuran-i-kerim-9.png
-
-```
-Bunu biliyor muydunuz? Nisâ Suresinin Kimliği: Mushaf'ta 4. sırada yer alan, Medine döneminde inmiş, 176 ayetlik bir suredir; adını kadın ve aile hukukunu düzenlemesinden alır. İnsanlığın Birliği ve Yetimler: Surenin başında tüm insanların tek bir özden (nefs-i vâhide) yaratıldığı, sıla-i rahmin ve yetim mallarının korunmasının farz olduğu bildirilir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Kur’an-ı Kerim 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-kuran-i-kerim-hafta-9
-#derskutusu #kuranıkerim #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-matematik-10
-Sıra: 2026-11-17 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-matematik-10.png
-
-```
-Bunu biliyor muydunuz? Özel Dörtgen Hiyerarşisi: Her kare hem bir dikdörtgen hem bir eşkenar dörtgendir; her dikdörtgen ve eşkenar dörtgen bir paralelkenardır; her eşkenar dörtgen aynı zamanda bir deltoiddir. Köşegen Özellikleri: Paralelkenar ailesinde köşegenler birbirini ortalar; dikdörtgende köşegenler eşittir, eşkenar dörtgende dik kesişir ve açıortaydır, karede ise her iki özellik birlikte bulunur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Matematik 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-matematik-hafta-10
-#derskutusu #matematik #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-matematik-11
-Sıra: 2026-11-17 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-matematik-11.png
-
-```
-Bunu biliyor muydunuz? Dışbükey ve İçbükey Çokgen: Tüm iç açıları 180°'den küçük olan çokgenler dışbükey (konveks), en az bir iç açısı 180°'den büyük olanlar içbükey (konkav) çokgendir. Köşegen ve Üçgen Sayısı: n kenarlı dışbükey çokgende bir köşeden (n - 3) köşegen çizilir, (n - 2) üçgen oluşur ve toplam köşegen sayısı n · (n - 3)/2'dir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Matematik 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-matematik-hafta-11
-#derskutusu #matematik #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-matematik-12
-Sıra: 2026-11-18 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-matematik-12.png
-
-```
-Bunu biliyor muydunuz? Dışbükey dörtgenlerde iç ve dış açılar toplamı 360°'dir; köşegenleri dik kesişen dörtgenlerde a² + c² = b² + d² ve Alan = ({uzunluk:AC}·{uzunluk:BD})/2 bağıntıları geçerlidir. Yamukta orta taban e = (a + c) / 2 ve Alan = e · h formülüyle bulunur; ikizkenar yamukta köşegenler eşittir ve 1 simetri ekseni vardır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Matematik 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-matematik-hafta-12
-#derskutusu #matematik #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-matematik-13
-Sıra: 2026-11-18 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-matematik-13.png
-
-```
-Bunu biliyor muydunuz? Kenar sayısı n olan dışbükey çokgenin iç açıları toplamı (n - 2) · 180°, dış açıları toplamı 360° ve toplam köşegen sayısı n · (n - 3) / 2'dir. Düzgün n-genin bir dış açısı 360° / n, simetri ekseni sayısı n'dir; düzgün beşgenin iç açısı 108°, düzgün altıgenin iç açısı 120°, düzgün sekizgenin iç açısı 135°'dir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Matematik 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-matematik-hafta-13
-#derskutusu #matematik #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-matematik-8
-Sıra: 2026-11-18 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-matematik-8.png
-
-```
-Bunu biliyor muydunuz? Eşkenar dörtgen dört kenarı eşit olan paralelkenardır; köşegenleri birbirini dik ortalar, açıortaydır ve alanı a·h veya (e·f)/2 ile bulunur. Dikdörtgen iç açıları 90° olan paralelkenardır; köşegen uzunlukları birbirine eşittir, birbirini ortalar ve alanı a·b çarpımına eşittir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Matematik 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-matematik-hafta-8
-#derskutusu #matematik #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-matematik-9
-Sıra: 2026-11-18 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-matematik-9.png
-
-```
-Bunu biliyor muydunuz? Yamuk ve Orta Taban: [AB] // [DC] olan yamukta yan kenar açıları bütünlerdir (180°); orta taban e = a+c/2 ve Alan(ABCD) = e · h'dir. İkizkenar Yamuk: Yan kenarları, taban açıları ve köşegenleri eşittir; üst köşelerden indirilen dikmeler tabanda x = a-c/2 parçaları ayırır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Matematik 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-matematik-hafta-9
-#derskutusu #matematik #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-mesleki-arapca-10
-Sıra: 2026-11-18 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-mesleki-arapca-10.png
-
-```
-Bunu biliyor muydunuz? Tahâret ( Necâsetten ve hadesten temizlenmektir; abdest, gusül ve teyemmüm ile sağlanır. Abdestin Farzları ( (yüzü yıkamak), (dirseklerle eller), (başı meshetmek) ve (topuklarla ayaklar).
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Mesleki Arapça 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-mesleki-arapca-hafta-10
-#derskutusu #meslekiarapça #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-mesleki-arapca-11
-Sıra: 2026-11-18 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-mesleki-arapca-11.png
-
-```
-Bunu biliyor muydunuz? Vahiy ve Mushaf: Allah'ın son vahyidir; yazılı nüshasına denir ve insanlık için hidayet rehberidir. Ayet, Sure ve Cüz: Kur'an-ı Kerim 30 cüzden, 114 sureden ve 6000'i aşkın ayetten oluşur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Mesleki Arapça 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-mesleki-arapca-hafta-11
-#derskutusu #meslekiarapça #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-mesleki-arapca-12
-Sıra: 2026-11-19 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-mesleki-arapca-12.png
-
-```
-Bunu biliyor muydunuz? Kur'an-ı Kerim vahiy yoluyla indirilmiş olup iki kapak arasındaki yazılı metin haline mushaf denir. Mushaf 30 cüz ve 114 sureden oluşur; hicretten önce inen surelere Mekkî, sonra inenlere Medenî adı verilir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Mesleki Arapça 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-mesleki-arapca-hafta-12
-#derskutusu #meslekiarapça #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-mesleki-arapca-13
-Sıra: 2026-11-19 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-mesleki-arapca-13.png
-
-```
-Bunu biliyor muydunuz? Kur'an-ı Kerim 30 cüz ve 114 sureden oluşur; kurallı ve güzel okunuşuna et-tecvîd, baştan sona okunmasına hatmü'l-Kur'ân denir. Ramazan ayında bir kişinin Kur'an okuyup diğerlerinin Mushaf'tan takip etmesi geleneğine el-mukâbele adı verilir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Mesleki Arapça 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-mesleki-arapca-hafta-13
-#derskutusu #meslekiarapça #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-mesleki-arapca-8
-Sıra: 2026-11-19 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-mesleki-arapca-8.png
-
-```
-Bunu biliyor muydunuz? terkibi 'Allah'ın en güzel isimleri' demektir; akılsız çoğul olduğu için sıfatı müfret müennes gelmiştir. Kur'an-ı Kerim'de A'râf suresi 180. ayette Yüce Allah'a güzel isimleriyle dua edilmesi emredilmiştir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Mesleki Arapça 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-mesleki-arapca-hafta-8
-#derskutusu #meslekiarapça #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-mesleki-arapca-9
-Sıra: 2026-11-19 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-mesleki-arapca-9.png
-
-```
-Bunu biliyor muydunuz? el-Bâri' ve el-Hakîm: el-Bâri' varlıkları örneksiz ve uyumlu yaratan; el-Hakîm ise her işi ve hükmü hikmetli olan demektir. el-Cebbâr ve er-Rezzâk: Her ikisi de fa'âl mübalağa veznindedir; el-Cebbâr kırıkları onaran ve hükmünü yürüten, er-Rezzâk bol rızık verendir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Mesleki Arapça 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-mesleki-arapca-hafta-9
-#derskutusu #meslekiarapça #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-peygamberimizin-hayati-10
-Sıra: 2026-11-19 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-peygamberimizin-hayati-10.png
-
-```
-Bunu biliyor muydunuz? Medine Pazarı (Sûku'l-Medîne): Müslümanları Benî Kaynukâ çarşısının faiz ve tekel düzeninden kurtarmak için vergisiz, sabit çadırsız (fırsat eşitliğine dayalı) ve hilesiz ticaret ilkeleriyle kurulmuştur. İhtisap (Hisbe) ve Ticaret Ahlakı: Hz. Peygamber (s.a.v.) pazarı bizzat denetlemiş; ölçü-tartı hilesini, karaborsayı (ihtikâr) ve aldatmayı ('Bizi aldatan bizden değildir') yasaklamıştır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Peygamberimizin Hayatı 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-peygamberimizin-hayati-hafta-10
-#derskutusu #peygamberimizinhayatı #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-peygamberimizin-hayati-11
-Sıra: 2026-11-19 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-peygamberimizin-hayati-11.png
-
-```
-Bunu biliyor muydunuz? Bilâd-ı Şam Coğrafyası: Suriye, Filistin, Kudüs, Ürdün ve Lübnan'ı kapsayan, Mescid-i Aksâ'yı barındıran ve Nebevî duaya mazhar olan bereketli bölgedir. Birinci Şam Yolculuğu: Hz. Peygamber 9-12 yaşlarında amcası Ebû Tâlib ile Busrâ'ya gitmiş, Rahip Bahîrâ onun nübüvvet alametlerini fark etmiştir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Peygamberimizin Hayatı 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-peygamberimizin-hayati-hafta-11
-#derskutusu #peygamberimizinhayatı #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-peygamberimizin-hayati-12
-Sıra: 2026-11-20 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-peygamberimizin-hayati-12.png
-
-```
-Bunu biliyor muydunuz? Hz. Ali (r.a.), Ebû Tâlib ile Fâtıma bint Esed'in oğlu olup beş yaşından itibaren Hz. Peygamber'in (s.a.v.) hanesinde yetişmiştir. Hayatı boyunca putlara tapmadığı için 'Kerremallâhu vecheh' duasıyla anılmış, dokuz-on yaşlarında iman ederek ilk Müslümanlar (es-Sâbikûne'l-Evvelûn) arasına katılmıştır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Peygamberimizin Hayatı 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-peygamberimizin-hayati-hafta-12
-#derskutusu #peygamberimizinhayatı #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-peygamberimizin-hayati-13
-Sıra: 2026-11-20 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-peygamberimizin-hayati-13.png
-
-```
-Bunu biliyor muydunuz? Hz. Ali, Hicretin 2. yılında Hz. Fatıma ile evlenmiş; Hz. Hasan ve Hz. Hüseyin ile birlikte Ehl-i Beyt'in (Âl-i Abâ) temelini oluşturmuştur. Vahiy kâtipliği ve Yemen kadılığı yapan Hz. Ali; tefsir, hadis, fıkıh ve ferâiz (miras hukuku) ilimlerinde sahabenin en önde gelen âlimlerindendir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Peygamberimizin Hayatı 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-peygamberimizin-hayati-hafta-13
-#derskutusu #peygamberimizinhayatı #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-peygamberimizin-hayati-8
-Sıra: 2026-11-20 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-peygamberimizin-hayati-8.png
-
-```
-Bunu biliyor muydunuz? Hicretle birlikte Yesrib şehri 'Medine' adını almış ve İslam devletinin siyasi, toplumsal ve ilmi başkenti olmuştur. Mescid-i Nebevî ibadetin yanı sıra devlet yönetimi, yargı ve istişare merkezi olmuş; bitişiğindeki Suffe ise ilk İslam üniversitesi işlevini görmüştür.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Peygamberimizin Hayatı 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-peygamberimizin-hayati-hafta-8
-#derskutusu #peygamberimizinhayatı #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-peygamberimizin-hayati-9
-Sıra: 2026-11-20 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-peygamberimizin-hayati-9.png
-
-```
-Bunu biliyor muydunuz? Medine Vesikası: Müslümanlar ile Yahudi kabîleleri arasında din hürriyeti, iç barış ve şehrin ortak savunulması esasına göre imzalanan ilk yazılı sözleşmedir. Yahudi Kabîleleri (Ka-Na-Ku): Antlaşmayı bozan Benî Kaynukā' (624), suikast girişiminde bulunan Benî Nadîr (625) ve Hendek'te ihanet eden Benî Kurayza (627) cezalandırılmıştır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Peygamberimizin Hayatı 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-peygamberimizin-hayati-hafta-9
-#derskutusu #peygamberimizinhayatı #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-tarih-10
-Sıra: 2026-11-20 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-tarih-10.png
-
-```
-Bunu biliyor muydunuz? Sanayi Devrimi'nin Doğuşu: On sekizinci yüzyılın ikinci yarısında İngiltere'de taş kömürü, demir, sermaye birikimi ve James Watt'ın buhar makinesiyle el tezgâhlarından makineli fabrika üretimine geçilmiştir. Küresel Sömürgecilik (Emperyalizm): Seri üretim yapan fabrikaların ucuz ham madde ve geniş pazar ihtiyacı, Avrupa devletleri arasındaki sömürgecilik yarışını zirveye taşımıştır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Tarih 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-tarih-hafta-10
-#derskutusu #tarih #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-tarih-11
-Sıra: 2026-11-20 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-tarih-11.png
-
-```
-Bunu biliyor muydunuz? İhtilalin Nedenleri: Mutlak monarşi baskısı, soylu-rahip ayrıcalıklarına dayalı sınıf eşitsizliği, ağır mali kriz ve Aydınlanma düşünürlerinin (Montesquieu, Rousseau, Voltaire) fikirleri 1789 ihtilalini doğurmuştur. Bastille ve Bildiri: 14 Temmuz 1789 Bastille baskınıyla başlayan ihtilal sürecinde 26 Ağustos 1789'da 'İnsan ve Yurttaş Hakları Bildirisi' kabul edilmiştir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Tarih 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-tarih-hafta-11
-#derskutusu #tarih #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-tarih-12
-Sıra: 2026-11-21 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-tarih-12.png
-
-```
-Bunu biliyor muydunuz? Fransız İhtilali (1789); mutlak monarşi, toplumsal sınıf eşitsizliği, mali bunalım ve Aydınlanma Çağı düşünürlerinin (Montesquieu, Rousseau, Voltaire) etkisiyle ortaya çıkmıştır. İnsan ve Yurttaş Hakları Bildirisi ile eşitlik, özgürlük, ulusal egemenlik, laiklik, anayasalcılık ve milliyetçilik ilkeleri dünyaya yayılmıştır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Tarih 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-tarih-hafta-12
-#derskutusu #tarih #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-tarih-13
-Sıra: 2026-11-21 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-tarih-13.png
-
-```
-Bunu biliyor muydunuz? Sultan III. Selim Nizam-ı Cedit ıslahatlarıyla Avrupa'da daimî elçilikler açmış; II. Mahmut ise 1808'de Sened-i İttifak'ı imzalayıp 1826'da Yeniçeri Ocağını kaldırmıştır. Sened-i İttifak (1808) Osmanlı tarihinde padişahın mutlak yetkilerini ilk kez sınırlandıran siyasi belgedir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Tarih 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-tarih-hafta-13
-#derskutusu #tarih #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-tarih-8
-Sıra: 2026-11-21 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-tarih-8.png
-
-```
-Bunu biliyor muydunuz? Kasım 1755 Lizbon depremi, tsunami ve yangınlarla şehri yıkmış; Portekiz'in küresel ekonomik ve siyasi gücünü derinden sarsmıştır. Lizbon depremi Aydınlanma düşünürleri (Voltaire, Rousseau, Kant) arasında felsefi tartışmalar başlatmış ve modern sismoloji biliminin doğuşuna zemin hazırlamıştır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Tarih 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-tarih-hafta-8
-#derskutusu #tarih #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-tarih-9
-Sıra: 2026-11-21 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-tarih-9.png
-
-```
-Bunu biliyor muydunuz? Sanayi Devrimi'nin Doğuşu: On sekizinci yüzyılın ikinci yarısında İngiltere'de taş kömürü, demir, sermaye birikimi ve James Watt'ın buhar makinesiyle dokuma sektöründe başlamıştır. Üretim Tarzının Değişimi: İnsan ve hayvan gücüne dayalı küçük el atölyelerinin (manifaktür/lonca) yerini, buhar ve makine gücüyle seri üretim yapan büyük fabrikalar almıştır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Tarih 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-tarih-hafta-9
-#derskutusu #tarih #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-tefsir-10
-Sıra: 2026-11-21 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-tefsir-10.png
-
-```
-Bunu biliyor muydunuz? Rivayet (Me'sûr) Tefsiri: Kur'an'ın Kur'an, Sünnet, sahabe ve tâbiîn kavilleriyle tefsir edilmesidir; Taberî (Câmiu'l-Beyân), İbn Kesîr ve Süyûtî (ed-Dürrü'l-Mensûr) başlıca temsilcileridir. Dirayet (Re'y) Tefsiri: Naklî delillerle birlikte Arap dili, belâgat, kelâm, fıkıh ve aklî muhakemeye (içtihada) dayanan tefsirdir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Tefsir 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-tefsir-hafta-10
-#derskutusu #tefsir #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-tefsir-11
-Sıra: 2026-11-21 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-tefsir-11.png
-
-```
-Bunu biliyor muydunuz? Rivayet (Me'sûr) Tefsiri: Ayetleri Kur'an, sünnet, sahabe ve tâbiîn sözleriyle açıklar; en önemli örnekleri Taberî, İbn Kesîr ve Süyûtî tefsirleridir. Dirayet (Re'y) Tefsiri: Naklin yanında dil, belagat, fıkıh, kelam ve akli içtihatla yapılır; Mâtürîdî, Râzî, Beyzâvî, Ebüssuûd ve Elmalılı başlıca temsilcileridir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Tefsir 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-tefsir-hafta-11
-#derskutusu #tefsir #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-tefsir-12
-Sıra: 2026-11-22 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-tefsir-12.png
-
-```
-Bunu biliyor muydunuz? Rivayet (me'sûr) ve dirayet (re'y) tefsirleri Kur'an, Sünnet ve Arap dilini esas alma noktasında birleşir; dirayet tefsiri buna ek olarak ilmî içtihada (re'y) geniş yer verir. Fıkhî (ahkâm) tefsir ibadet ve hukuk ayetlerini inceler (Cassâs ve Kurtubî'nin Ahkâmü'l-Kur'ân eserleri).
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Tefsir 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-tefsir-hafta-12
-#derskutusu #tefsir #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-tefsir-13
-Sıra: 2026-11-22 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-tefsir-13.png
-
-```
-Bunu biliyor muydunuz? Kur'an-ı Kerim'in ana muhtevası itikat (tevhid, nübüvvet, ahiret), ibadet, ahlak, muâmelât ve kıssalardan oluşur; merkezinde Allah'ı tanıtmak yer alır. Şûrâ suresi 11. ayet ('O'nun benzeri hiçbir şey yoktur; O işitendir, görendir') tenzîh ve isbât dengesini kurar.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Tefsir 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-tefsir-hafta-13
-#derskutusu #tefsir #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-tefsir-8
-Sıra: 2026-11-22 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-tefsir-8.png
-
-```
-Bunu biliyor muydunuz? Kur'an-ı Kerim'i doğru anlamak için öncelikle Arap dilinin sarf, nahiv, belâgat ve kelime anlamı inceliklerini bilmek gerekir. Ayetler cımbızlanarak tek başına değil, siyak-sibak (metin içi bağlam) ve konuyla ilgili tüm ayetlerle (Kur'an bütünlüğü içinde) okunmalıdır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Tefsir 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-tefsir-hafta-8
-#derskutusu #tefsir #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-tefsir-9
-Sıra: 2026-11-22 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-tefsir-9.png
-
-```
-Bunu biliyor muydunuz? Mekkî ve Medenî Ayrımı: Hicretten önce inen ayetler Mekkî (tevhid, ahiret, ahlak, kısa ve vurucu üslup), hicretten sonra inenler Medenî (ibadet, hukuk, Ehl-i kitap, münafıklar) olarak adlandırılır. Muhkem ve Müteşâbih (Âl-i İmrân, 7): Anlamı açık ve kesin olan hüküm ayetleri muhkem (Ümmü'l-Kitâb); çok anlamlı, mecazlı veya gaybî ayetler (hurûf-ı mukattaa vb.) müteşâbihtir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Tefsir 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-tefsir-hafta-9
-#derskutusu #tefsir #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-temel-dini-bilgiler-10
-Sıra: 2026-11-22 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-temel-dini-bilgiler-10.png
-
-```
-Bunu biliyor muydunuz? Zarûrât-ı Hamse (Beş Temel Hak): İslam'da toplumsal düzen; canın, aklın, dinin, neslin ve malın korunması esasına dayanır. Kul Hakkı ve Sorumluluklar: Kul hakkı (hukuku'l-ibâd) helalleşilmedikçe düşmez; anne baba hakkı, sıla-i rahim, komşu hakkı ve kamu malını korumak temel görevdir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Temel Dinî Bilgiler 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-temel-dini-bilgiler-hafta-10
-#derskutusu #temeldinibilgiler #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-temel-dini-bilgiler-11
-Sıra: 2026-11-22 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-temel-dini-bilgiler-11.png
-
-```
-Bunu biliyor muydunuz? Mülkiyet Anlayışı: Mülkün mutlak sahibi Yüce Allah'tır; insan elindeki malda emanetçidir ve özel mülkiyet hakkı 'hıfzu'l-mâl' ilkesiyle korunur. Emek ve Rızık: Rızkı yaratan Allah'tır (er-Rezzâk); kulun görevi tembellikten kaçınarak kendi elinin emeği ve alın teriyle helal rızkını aramaktır (Necm, 39).
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Temel Dinî Bilgiler 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-temel-dini-bilgiler-hafta-11
-#derskutusu #temeldinibilgiler #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-temel-dini-bilgiler-12
-Sıra: 2026-11-23 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-temel-dini-bilgiler-12.png
-
-```
-Bunu biliyor muydunuz? İslam ticaret ahlakı karşılıklı rıza (Nisâ 29), doğruluk (sıdk), güvenilirlik (emanet) ve ölçü-tartıda adalet (Mutaffifîn 1-3) ilkelerine dayanır. Alışverişte malın kusurunu gizlemek ('Bizi aldatan bizden değildir'), yalan yere yemin etmek ve sahte fiyat artırmak (neceş) haramdır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Temel Dinî Bilgiler 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-temel-dini-bilgiler-hafta-12
-#derskutusu #temeldinibilgiler #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-temel-dini-bilgiler-13
-Sıra: 2026-11-23 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-temel-dini-bilgiler-13.png
-
-```
-Bunu biliyor muydunuz? İslam ekonomisinde servetin yalnız zenginler arasında dolaşan bir güç olmaması (Haşr, 7) için infak, zekât, sadaka, vakıf ve karz-ı hasen emredilmiştir. Zekât, nisap miktarı mala sahip Müslümanların yılda bir kez Tevbe suresi 60. ayetteki sekiz sınıfa vermesi farz olan mali ibadettir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Temel Dinî Bilgiler 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-temel-dini-bilgiler-hafta-13
-#derskutusu #temeldinibilgiler #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-temel-dini-bilgiler-8
-Sıra: 2026-11-23 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-temel-dini-bilgiler-8.png
-
-```
-Bunu biliyor muydunuz? Aile, bireyin huzur bulduğu ve değerlerin yeni nesillere aktarıldığı toplumun en temel yapı taşıdır. Rûm suresi 21. ayete göre aile yuvası sekînet (huzur ve güven), meveddet (sevgi) ve rahmet (şefkat ve merhamet) ilkeleri üzerine kurulur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Temel Dinî Bilgiler 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-temel-dini-bilgiler-hafta-8
-#derskutusu #temeldinibilgiler #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-11-temel-dini-bilgiler-9
-Sıra: 2026-11-23 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-temel-dini-bilgiler-9.png
-
-```
-Bunu biliyor muydunuz? Sıla-i Rahim (Akrabalık): Akrabaları ziyaret etme, gözetme ve yardımlaşmadır (Nahl, 16/90); bağları koparmak (kat'-ı rahim) ise yasaklanmıştır. Komşuluk Hukuku (Nisâ, 4/36): İnanç farkı gözetmeksizin yakın ve uzak komşuya iyilik yapmayı, ikramda bulunmayı ve eziyetten kaçınmayı kapsar.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 11. sınıf Temel Dinî Bilgiler 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-temel-dini-bilgiler-hafta-9
-#derskutusu #temeldinibilgiler #11sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-biyoloji-10
-Sıra: 2026-11-23 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-biyoloji-10.png
-
-```
-Bunu biliyor muydunuz? Gen terapisi, kalıtsal hastalıklara yol açan kusurlu genlerin yerine zararsız viral vektörler aracılığıyla sağlıklı gen kopyalarının aktarılması yöntemidir. İnsan Genom Projesi ile insan DNA'sındaki yaklaşık 3 milyar baz çiftinin dizilimi çözülmüş, hastalık genlerinin haritalanması ve kişiye özgü tıp uygulamaları gelişmiştir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Biyoloji 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-biyoloji-hafta-10
-#derskutusu #biyoloji #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-biyoloji-11
-Sıra: 2026-11-23 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-biyoloji-11.png
-
-```
-Bunu biliyor muydunuz? ATP; adenin organik bazı, beş karbonlu riboz şekeri ve üç inorganik fosfat grubundan oluşan, hücre içinde üretilip tüketilen evrensel enerji molekülüdür. ADP'ye fosfat eklenerek ATP sentezlenmesine fosforilasyon (endergonik), ATP'nin hidrolizle ADP'ye yıkılmasına ise defosforilasyon (ekzergonik) denir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Biyoloji 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-biyoloji-hafta-11
-#derskutusu #biyoloji #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-biyoloji-12
-Sıra: 2026-11-24 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-biyoloji-12.png
-
-```
-Bunu biliyor muydunuz? Gen klonlamasında hedef gen ve bakteri plazmiti aynı restriksiyon enzimiyle kesilir, DNA ligaz ile birleştirilerek rekombinant DNA (rDNA) oluşturulur ve bakteriye aktarılır. Model organizmalar (E. coli, bira mayası, meyve sineği, fare kulağı teresi) kısa yaşam döngüsü, küçük genom ve laboratuvarda kolay yetiştirilme özellikleriyle araştırmalarda kullanılır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Biyoloji 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-biyoloji-hafta-12
-#derskutusu #biyoloji #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-biyoloji-13
-Sıra: 2026-11-24 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-biyoloji-13.png
-
-```
-Bunu biliyor muydunuz? Genetik mühendisliği ve biyoteknoloji uygulamalarıyla rekombinant insülin, büyüme hormonu, interferon, monoklonal antikor ve rekombinant aşılar üretilmekte; gen terapisi ile kalıtsal hastalıklar tedavi edilmektedir. Genetiği değiştirilmiş organizmaların (GDO) gen kaçışı, biyoçeşitlilik kaybı ve alerjik risklerine karşı biyogüvenlik tedbirleri ve Cartagena Biyogüvenlik Protokolü uygulanmaktadır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Biyoloji 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-biyoloji-hafta-13
-#derskutusu #biyoloji #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-biyoloji-8
-Sıra: 2026-11-24 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-biyoloji-8.png
-
-```
-Bunu biliyor muydunuz? DNA ve mRNA'daki dört çeşit nükleotit üçlü kombinasyonlar (4³=64) hâlinde amino asitleri şifreler; 64 kodondan 61'i anlamlı kodon, 3'ü (UAA, UAG, UGA) durdurucu kodondur. AUG başlangıç kodonudur ve Metiyonin amino asidini şifreler; durdurucu kodonların karşılığında tRNA antikodonu bulunmadığından en fazla 61 çeşit tRNA vardır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Biyoloji 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-biyoloji-hafta-8
-#derskutusu #biyoloji #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-biyoloji-9
-Sıra: 2026-11-24 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-biyoloji-9.png
-
-```
-Bunu biliyor muydunuz? Genetik mühendisliği canlıların kalıtsal materyalinde yapılan moleküler müdahale yöntemlerini, biyoteknoloji ise bu yöntemlerle ticari ürün ve hizmet üretimini kapsar. Model organizmalar; kısa yaşam döngüsüne, küçük ve haritası bilinen genoma, düşük bakım maliyetine ve deneysel çalışmalara uygunluğa sahip canlılardır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Biyoloji 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-biyoloji-hafta-9
-#derskutusu #biyoloji #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-cografya-10
-Sıra: 2026-11-24 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-cografya-10.png
-
-```
-Bunu biliyor muydunuz? Küresel ticaret; doğal kaynakların, sermayenin, iş gücünün ve teknolojinin dünya üzerinde farklı dağılmasından doğmuştur. Kuzey Amerika, Batı-Orta Avrupa ve Doğu-Güneydoğu Asya ticaret bölgeleri dünya mal ve hizmet ticaretinin dörtte üçünden fazlasını gerçekleştirir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Coğrafya 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-cografya-hafta-10
-#derskutusu #coğrafya #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-cografya-11
-Sıra: 2026-11-24 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-cografya-11.png
-
-```
-Bunu biliyor muydunuz? Türkiye'de iç ticaret; iklim çeşitliliği, sanayinin batıda yoğunlaşması ve nüfusun dağılışındaki farklılıklar nedeniyle çok canlıdır. İç ticarette İstanbul, İzmir, Ankara, Bursa ve Gaziantep ana dağıtım merkezleri olup sanayi ürünleri batıdan doğuya, tarım-hayvancılık ürünleri ise üretim alanlarından metropollere akar.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Coğrafya 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-cografya-hafta-11
-#derskutusu #coğrafya #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-cografya-12
-Sıra: 2026-11-25 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-cografya-12.png
-
-```
-Bunu biliyor muydunuz? Tarihî İpek Yolu Çin'den başlayıp Orta Asya ve Anadolu üzerinden Avrupa'ya uzanırken, Baharat Yolu Hindistan'dan Kızıldeniz ve Basra Körfezi yoluyla Akdeniz'e ulaşmıştır. İlk Çağ'da Lidyalılar ve Persler döneminde kullanılan Kral Yolu, Batı Anadolu'daki Sardes'ten başlayıp İran'daki Sus kentine kadar uzanmıştır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Coğrafya 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-cografya-hafta-12
-#derskutusu #coğrafya #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-cografya-13
-Sıra: 2026-11-25 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-cografya-13.png
-
-```
-Bunu biliyor muydunuz? İhracat (dış satım) ile ithalatın (dış alım) toplamı dış ticaret hacmini, ikisi arasındaki fark ise dış ticaret dengesini (açık veya fazla) verir. Cumhuriyet'in ilk yıllarında tarım ve maden ürünlerine dayanan ihracatımız, 1980 sonrasındaki sanayileşmeyle dönüşmüş ve günümüzde sanayi ürünlerinin ihracattaki payı %94'e ulaşmıştır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Coğrafya 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-cografya-hafta-13
-#derskutusu #coğrafya #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-cografya-8
-Sıra: 2026-11-25 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-cografya-8.png
-
-```
-Bunu biliyor muydunuz? Türkiye'de yurt içi yolcu ve yük taşımacılığında kara yolu ilk sırada yer alır; dağların uzanış doğrultusu nedeniyle ana ulaşım hatları doğu-batı yönünde gelişmiştir. Anadolu'da ilk demir yolu İzmir-Aydın hattıdır; Cumhuriyet döneminde millîleştirilen demir yolları 2009'da başlayan YHT hatları, Marmaray ve Bakü-Tiflis-Kars projeleriyle modernize edilmiştir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Coğrafya 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-cografya-hafta-8
-#derskutusu #coğrafya #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-cografya-9
-Sıra: 2026-11-25 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-cografya-9.png
-
-```
-Bunu biliyor muydunuz? 1 Temmuz 1926 Kabotaj Kanunu ile Türk kara sularında deniz taşımacılığı millîleştirilmiş; düşük maliyeti ve yüksek kapasitesi sayesinde deniz yolu dış ticarette ilk sırayı almıştır. İstanbul, Kocaeli, İzmir, Mersin ve Samsun limanlarının hinterlandı geniş iken, Sinop ve Antalya limanlarının gerisindeki dağlık engebeli yapı hinterlantlarını sınırlandırmıştır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Coğrafya 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-cografya-hafta-9
-#derskutusu #coğrafya #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-din-kulturu-10
-Sıra: 2026-11-25 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-din-kulturu-10.png
-
-```
-Bunu biliyor muydunuz? İmam-ı Âzam Ebû Hanîfe (Hanefîlik), İmam Cafer es-Sâdık (Caferîlik) ve İmam Şâfiî (Şâfiîlik), milletimizin ibadet ve hukuk hayatını şekillendiren büyük fıkıh imamlarıdır. İmam Mâtürîdî (Kitâbü't-Tevhîd) ve İmam Eş'arî (el-İbâne), Ehl-i sünnet inanç esaslarını akli ve nakli delillerle savunan iki büyük itikat önderidir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Din Kültürü ve Ahlak Bilgisi 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-din-kulturu-ve-ahlak-bilgisi-hafta-10
-#derskutusu #dinkültürü #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-din-kulturu-11
-Sıra: 2026-11-25 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-din-kulturu-11.png
-
-```
-Bunu biliyor muydunuz? Milletimizin fıkhi anlayışında Ebû Hanîfe (Hanefîlik), İmam Şâfiî (Şâfiîlik) ve Ca'fer es-Sâdık (Caferîlik); itikadi anlayışında ise İmam Mâtürîdî ve İmam Eş'arî etkili olmuştur. Hoca Ahmet Yesevî Dîvân-ı Hikmet adlı eseri ve yetiştirdiği Horasan erenleriyle Türkistan'dan Anadolu'ya uzanan tasavvuf geleneğinin temelini atmıştır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Din Kültürü ve Ahlak Bilgisi 11. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-din-kulturu-ve-ahlak-bilgisi-hafta-11
-#derskutusu #dinkültürü #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-din-kulturu-12
-Sıra: 2026-11-26 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-din-kulturu-12.png
-
-```
-Bunu biliyor muydunuz? Milletimizin fıkhi anlayışında Ebû Hanîfe (Hanefîlik), İmam Şâfiî (Şâfiîlik) ve Ca'fer es-Sâdık (Ca'ferîlik); itikadi anlayışında ise İmam Mâtürîdî ve İmam Eş'arî etkili olmuştur. Ebû Hanîfe 'el-Fıkhu'l-Ekber', İmam Şâfiî 'er-Risâle', İmam Mâtürîdî 'Kitâbü't-Tevhîd' ve İmam Eş'arî 'Makâlâtü'l-İslâmiyyîn' adlı temel eserleri kaleme almıştır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Din Kültürü ve Ahlak Bilgisi 12. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-din-kulturu-ve-ahlak-bilgisi-hafta-12
-#derskutusu #dinkültürü #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-din-kulturu-13
-Sıra: 2026-11-26 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-din-kulturu-13.png
-
-```
-Bunu biliyor muydunuz? Nisâ suresi 69. ayet, Allah'a ve Peygamber'e itaat eden müminlerin ahirette peygamberler (nebîler), sıddıklar, şehitler ve salihlerle birlikte olacağını müjdeler. Ayet-i kerime, Hz. Peygamber'e duyduğu derin sevgi nedeniyle cennette onu görememekten endişe eden Hz. Sevban'ın (r.a.) üzüntüsü üzerine nazil olmuştur.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Din Kültürü ve Ahlak Bilgisi 13. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-din-kulturu-ve-ahlak-bilgisi-hafta-13
-#derskutusu #dinkültürü #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-din-kulturu-8
-Sıra: 2026-11-26 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-din-kulturu-8.png
-
-```
-Bunu biliyor muydunuz? Fatır (el-Melâike) suresi 27-28. ayetlerde gökten indirilen su, renk renk meyveler, dağların beyaz-kırmızı-simsiyah katmanları ve canlılardaki çeşitlilik Allah'ın varlığının ve kudretinin delilleri olarak sunulur. Ayette geçen 'Kulları içinden ancak âlimler Allah'tan haşyet duyar' ifadesi, kâinatı ve ilahi yasaları bilen gerçek bilginlerin Allah'a en derin saygıyı duyacağını bildirir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Din Kültürü ve Ahlak Bilgisi 8. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-din-kulturu-ve-ahlak-bilgisi-hafta-8
-#derskutusu #dinkültürü #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-din-kulturu-9
-Sıra: 2026-11-26 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-din-kulturu-9.png
-
-```
-Bunu biliyor muydunuz? Türklerle Müslümanlar arasındaki ilk temaslar Hz. Ömer döneminde başlamış; 751 Talas Savaşı ve Abbasilerin eşitlikçi politikasıyla kitlesel İslamlaşma hız kazanmıştır. İslamiyet'i kabul eden ilk Türk boyu Karluklar, ilk Müslüman Türk devleti İtil Bulgarları, Orta Asya'daki ilk büyük Müslüman Türk devleti ise Karahanlılardır.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Din Kültürü ve Ahlak Bilgisi 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-din-kulturu-ve-ahlak-bilgisi-hafta-9
-#derskutusu #dinkültürü #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
-## bilgi-12-edebiyat-10
-Sıra: 2026-11-26 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-edebiyat-10.png
-
-```
-Bunu biliyor muydunuz? Saf (öz) şiir anlayışı; Fransız sembolistleri ile Ahmet Haşim ve Yahya Kemal'in etkisiyle şiirde musiki, iç ahenk, imge ve biçim kusursuzluğunu merkeze alır. Bu anlayışta şiir ideolojik ve öğretici (didaktik) söylemlerden uzak tutulur; zaman, rüya, ölüm, yaşama sevinci, yalnızlık ve metafizik ürperti gibi bireysel temalar işlenir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 12. sınıf Türk Dili ve Edebiyatı 10. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-turk-dili-ve-edebiyati-hafta-10
-#derskutusu #edebiyat #12sınıf #bunubiliyormuydunuz #maarifmodeli
-```
-
 ## bilgi-12-edebiyat-11
-Sıra: 2026-11-26 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-edebiyat-11.png
+Sıra: 2026-11-26 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-edebiyat-11.png
 
 ```
 Bunu biliyor muydunuz? 1923-1960 toplumcu gerçekçi şiir anlayışı 'toplum için sanat' ilkesini benimsemiş; emek, işçi-köylü sorunları, yoksulluk ve eşitlik temalarını işlemiştir. Geleneksel ölçü ve nazım birimleri kırılarak serbest nazım, uzun-kısa basamaklı dizeler ve kitleleri etkileyen hitabet (söylev) üslubu kullanılmıştır.
@@ -6525,7 +4160,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-edebiyat-12
-Sıra: 2026-11-27 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-edebiyat-12.png
+Sıra: 2026-11-27 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-edebiyat-12.png
 
 ```
 Bunu biliyor muydunuz? Cumhuriyet Dönemi'nde Millî Edebiyat anlayışını sürdüren şiir ('Memleket Edebiyatı'); halk şiiri geleneğini, hece ölçüsünü, dörtlük birimini ve sade Türkçeyi esas almıştır. Ahmet Kutsi Tecer; 'Orda Bir Köy Var Uzakta' ve 'Nerdesin' şiirleri, 'Koçyiğit Köroğlu' ve 'Köşebaşı' tiyatroları ile Âşık Veysel'i tanıtmasıyla öne çıkmıştır.
@@ -6535,7 +4170,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-edebiyat-13
-Sıra: 2026-11-27 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-edebiyat-13.png
+Sıra: 2026-11-27 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-edebiyat-13.png
 
 ```
 Bunu biliyor muydunuz? 1941 yılında Orhan Veli Kanık, Melih Cevdet Anday ve Oktay Rifat Horozcu'nun yayımladığı 'Garip' yapıtı ve önsözüyle Garip Akımı (I. Yeni) başlamıştır. Garipçiler ölçü, uyak, dörtlük, şairanelik ve söz sanatlarına karşı çıkmış; sıradan insanın ('Süleyman Efendi') günlük yaşamını konuşma dili, yaşama sevinci ve mizahla anlatmıştır.
@@ -6545,7 +4180,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-edebiyat-8
-Sıra: 2026-11-27 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-edebiyat-8.png
+Sıra: 2026-11-27 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-edebiyat-8.png
 
 ```
 Bunu biliyor muydunuz? Hikâye yazma sürecinde tema ve çatışma belirlendikten sonra olay örgüsü, kişiler, mekân ve zaman unsurları seçilen bakış açısıyla (ilahi, kahraman, gözlemci) kurgulanır. Modern hikâyede anlatma ve gösterme yöntemlerinin yanında geriye dönüş, iç konuşma, bilinç akışı, diyalog ve üst kurmaca teknikleri kullanılır.
@@ -6555,7 +4190,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-edebiyat-9
-Sıra: 2026-11-27 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-edebiyat-9.png
+Sıra: 2026-11-27 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-edebiyat-9.png
 
 ```
 Bunu biliyor muydunuz? Hikâye dramatizasyonu, kurmaca metnin olay örgüsü ve çatışması korunarak diyaloglara dönüştürülmesi ve diksiyon (vurgu, tonlama) ile beden diliyle canlandırılmasıdır. Yazar sunumunda sanatçının edebi kişiliği, üslubu ve hikâyeciliğe katkısı örnek metinlerle tanıtılır; slaytları birebir okumaktan kaçınılarak göz teması kurulur.
@@ -6565,7 +4200,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-fizik-10
-Sıra: 2026-11-27 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-fizik-10.png
+Sıra: 2026-11-27 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-fizik-10.png
 
 ```
 Bunu biliyor muydunuz? Denge noktasından başlayan basit harmonik harekette uzanım x(t) = r · sin(omegat), herhangi bir x konumundaki anlık hız ise v = omega · √(r² - x²) denklemiyle bulunur. Yay sarkacının periyodu T = 2π · √(m / k) bağıntısıyla hesaplanır; çekim ivmesine (g) ve düzlemin eğimine bağlı değildir.
@@ -6575,7 +4210,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-fizik-11
-Sıra: 2026-11-27 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-fizik-11.png
+Sıra: 2026-11-27 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-fizik-11.png
 
 ```
 Bunu biliyor muydunuz? Esnek yay sarkacının periyodu T = 2π·√(m/k) bağıntısıyla bulunur; çekim ivmesine (g), genliğe ve eğik düzlem açısına bağlı değildir. Yaylar seri bağlandığında eşdeğer yay sabiti küçülür (1/k_eş = 1/k₁ + 1/k₂), paralel bağlandığında ise büyür (k_eş = k₁ + k₂).
@@ -6585,7 +4220,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-fizik-12
-Sıra: 2026-11-28 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-fizik-12.png
+Sıra: 2026-11-28 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-fizik-12.png
 
 ```
 Bunu biliyor muydunuz? Basit harmonik harekette geri çağırıcı kuvvet (F = −m·omega²·x) ve ivme (a = −omega²·x) uzanımla doğru orantılı ve uzanıma zıt yönlüdür (daima O'ya doğrudur). Denge konumunda (x = 0) kuvvet ve ivme sıfır, çizgisel hız maksimumdur (v_max = omega·r).
@@ -6595,7 +4230,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-fizik-13
-Sıra: 2026-11-28 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-fizik-13.png
+Sıra: 2026-11-28 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-fizik-13.png
 
 ```
 Bunu biliyor muydunuz? Yay sarkacının periyodu T = 2π·√(m/k) bağıntısıyla bulunur; yer çekimi ivmesine (g), düzlemin eğim açısına ve genliğe (r) bağlı değildir. Seri bağlı yaylarda eş değer yay sabiti 1/k_eş = 1/k₁ + 1/k₂ ile, paralel bağlı yaylarda ise k_eş = k₁ + k₂ ile hesaplanır; bir yay n eşit parçaya bölünürse her parçanın sabiti n·k olur.
@@ -6605,7 +4240,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-fizik-8
-Sıra: 2026-11-28 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-fizik-8.png
+Sıra: 2026-11-28 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-fizik-8.png
 
 ```
 Bunu biliyor muydunuz? Gök bilimi tarihinde Batlamyus yer merkezli modeli savunmuş; Uluğ Bey ve Ali Kuşçu Zîc-i Uluğ Bey ile hassas gözlemler yapmış; Kopernik, Galileo ve Kepler ise Güneş merkezli modeli kanıtlamıştır. Kepler'in 1. Kanunu'na (Yörüngeler Kanunu) göre her gezegen, odaklarından birinde Güneş bulunan elips bir yörüngede dolanır.
@@ -6615,7 +4250,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-fizik-9
-Sıra: 2026-11-28 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-fizik-9.png
+Sıra: 2026-11-28 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-fizik-9.png
 
 ```
 Bunu biliyor muydunuz? Gök biliminde Uluğ Bey, Ali Kuşçu, Kopernik, Galileo ve Kepler önemli çalışmalar yapmış; Kepler gezegenlerin hareketini Yörüngeler, Alanlar ve Periyotlar (R³ / T² = sabit) kanunlarıyla açıklamıştır. Eliptik yörüngede dolanan gezegenin açısal momentumu ve mekanik enerjisi korunur; gezegen Güneş'e yaklaştıkça çizgisel hızı ve kinetik enerjisi artar.
@@ -6625,7 +4260,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-ingilizce-10
-Sıra: 2026-11-28 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-ingilizce-10.png
+Sıra: 2026-11-28 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-ingilizce-10.png
 
 ```
 Bunu biliyor muydunuz? Kişisel görüş ve beklentilere dayalı gelecek tahminlerinde 'will + V1', önceden planlanmış işlerde ve somut kanıta dayalı öngörülerde 'be going to + V1' kullanılır. Gelecekte belirli bir anda devam ediyor olacak eylemler 'Future Continuous Tense (will be + V-ing)' ile ifade edilir.
@@ -6635,7 +4270,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-ingilizce-11
-Sıra: 2026-11-28 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-ingilizce-11.png
+Sıra: 2026-11-28 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-ingilizce-11.png
 
 ```
 Bunu biliyor muydunuz? Geleceğe yönelik yüksek kesinlik bildiren tahminlerde 'will definitely / certainly' ve 'be bound to + V1' kalıpları kullanılır. Muhtemel olaylar için 'will probably' ve 'be likely to + V1', gerçekleşmesi beklenmeyen durumlar için 'probably won't' ve 'be unlikely to + V1' tercih edilir.
@@ -6645,7 +4280,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-ingilizce-12
-Sıra: 2026-11-29 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-ingilizce-12.png
+Sıra: 2026-11-29 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-ingilizce-12.png
 
 ```
 Bunu biliyor muydunuz? Future Continuous Tense (will be + V-ing), gelecekte belirli bir anda devam ediyor olacak eylemleri anlatır ('this time tomorrow, at 5 p.m. next Friday'). Future Perfect Tense (will have + V₃), gelecekte belirli bir noktadan önce tamamlanmış olacak eylemleri ifade eder ('by 2050, by the end of the year, by the time').
@@ -6655,7 +4290,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-ingilizce-13
-Sıra: 2026-11-29 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-ingilizce-13.png
+Sıra: 2026-11-29 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-ingilizce-13.png
 
 ```
 Bunu biliyor muydunuz? Geleceğin teknolojileri hakkındaki kompozisyonlar (essays) Introduction (hook + thesis statement), Body (supporting arguments & examples) ve Conclusion (restatement & final prediction) bölümlerinden oluşur. Yazıda bütünlüğü sağlamak için ekleme (Moreover, Furthermore), zıtlık (However, On the other hand, Despite) ve sonuç (In conclusion, All in all) bağlaçları kullanılır.
@@ -6665,7 +4300,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-ingilizce-8
-Sıra: 2026-11-29 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-ingilizce-8.png
+Sıra: 2026-11-29 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-ingilizce-8.png
 
 ```
 Bunu biliyor muydunuz? İnsan Hakları Evrensel Beyannamesi (UDHR), Eleanor Roosevelt başkanlığındaki komisyon tarafından hazırlanmış ve 10 Aralık 1948'de BM Genel Kurulu tarafından 30 madde olarak kabul edilmiştir. Beyannamenin temel ilkesine göre bütün insanlar hür, onur (dignity) ve haklar bakımından eşit doğarlar; yaşama, özgürlük, eğitim ve adil yargılanma hakları devredilemezdir (inalienable).
@@ -6675,7 +4310,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-ingilizce-9
-Sıra: 2026-11-29 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-ingilizce-9.png
+Sıra: 2026-11-29 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-ingilizce-9.png
 
 ```
 Bunu biliyor muydunuz? İnsan hakları sorunlarına çözüm önerileri sunarken 'should / ought to / must / need to + V1' ve edilgen 'should be / must be + V3' kalıpları kullanılır. Dezavantajlı gruplar (people with disabilities, refugees, the elderly, the underprivileged) için erişilebilirlik (accessibility) ve fırsat eşitliği (equal opportunity) temel bir insan hakkıdır.
@@ -6685,7 +4320,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-inkilap-tarihi-10
-Sıra: 2026-11-29 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-inkilap-tarihi-10.png
+Sıra: 2026-11-29 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-inkilap-tarihi-10.png
 
 ```
 Bunu biliyor muydunuz? BMM'ye karşı çıkarılan ayaklanmalar; doğrudan İstanbul Hükûmetinin çıkardıkları, İstanbul Hükûmeti ve İtilaf Devletlerinin ortak kışkırtmaları, eski Kuvayımilliyecilerin isyanları ve azınlık isyanları olmak üzere dört gruba. BMM ayaklanmaları bastırmak için Hıyanet-i Vataniye Kanunu'nu çıkarmış, İstiklal Mahkemelerini kurmuş, Ankara Fetvası'nı yayımlatmış ve Anadolu Ajansı ile halkı doğru bilgilendirmiştir.
@@ -6695,7 +4330,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-inkilap-tarihi-11
-Sıra: 2026-11-29 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-inkilap-tarihi-11.png
+Sıra: 2026-11-29 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-inkilap-tarihi-11.png
 
 ```
 Bunu biliyor muydunuz? Doğu Cephesi'nde Kâzım Karabekir Paşa komutasındaki 15. Kolordu Ermenileri yenilgiye uğratmış ve 3 Aralık 1920'de Gümrü Antlaşması imzalanmıştır. Gümrü Antlaşması, TBMM Hükûmetinin uluslararası alanda imzaladığı ilk antlaşma ve kazandığı ilk siyasi zaferdir.
@@ -6705,7 +4340,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-inkilap-tarihi-12
-Sıra: 2026-11-30 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-inkilap-tarihi-12.png
+Sıra: 2026-11-30 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-inkilap-tarihi-12.png
 
 ```
 Bunu biliyor muydunuz? Kuva-yı Milliye'nin disiplinsizliği ve 24 Ekim 1920 Gediz Muharebesi'ndeki başarısızlığı üzerine düzenli orduya geçilmiş, Batı Cephesi İsmet ve Refet Beylerin komutasında kurulmuştur. I. İnönü Zaferi (6–10 Ocak 1921) sonucunda Teşkilat-ı Esasiye Kanunu, Londra Konferansı, Afganistan Dostluk Antlaşması, İstiklâl Marşı'nın kabulü ve Moskova Antlaşması (TALİM) gerçekleşmiştir.
@@ -6715,7 +4350,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-inkilap-tarihi-13
-Sıra: 2026-11-30 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-inkilap-tarihi-13.png
+Sıra: 2026-11-30 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-inkilap-tarihi-13.png
 
 ```
 Bunu biliyor muydunuz? Kütahya-Eskişehir Muharebeleri sonrasında 5 Ağustos 1921 Başkomutanlık Kanunu ile TBMM yetkileri üç aylığına Mustafa Kemal Paşa'ya devredilmiştir. Başkomutan Mustafa Kemal Paşa, 7–8 Ağustos 1921'de Tekâlif-i Milliye Emirleri'ni yayımlayarak ordunun giyecek, gıda, silah ve ulaşım ihtiyaçlarını topyekûn seferberlikle karşılamıştır.
@@ -6725,7 +4360,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-inkilap-tarihi-8
-Sıra: 2026-11-30 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-inkilap-tarihi-8.png
+Sıra: 2026-11-30 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-inkilap-tarihi-8.png
 
 ```
 Bunu biliyor muydunuz? Mondros sonrasında işgallere karşı bölgesel Millî Cemiyetler (Kars İslam Şûrası, Trakya-Paşaeli, İzmir Redd-i İlhak, Kilikyalılar, Trabzon ve Doğu Anadolu Müdâfaa-i Hukuk, Millî Kongre) kurulmuştur. Mustafa Kemal Paşa 19 Mayıs 1919'da 9. Ordu Müfettişi olarak Samsun'a çıkmış; Samsun Raporu ve Havza Genelgesi (28 Mayıs 1919) ile millî bilinci uyandırmıştır.
@@ -6735,7 +4370,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-inkilap-tarihi-9
-Sıra: 2026-11-30 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-inkilap-tarihi-9.png
+Sıra: 2026-11-30 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-inkilap-tarihi-9.png
 
 ```
 Bunu biliyor muydunuz? Amiral Bristol Raporu Batı Anadolu'daki Yunan işgalinin, General Harbord Raporu ise Doğu Anadolu'daki Ermeni iddialarının haksızlığını uluslararası alanda belgelemiştir. 20-22 Ekim 1919 Amasya Görüşmeleri ile İstanbul Hükûmeti, Temsil Heyeti'nin hukuki ve siyasi varlığını resmen tanımıştır.
@@ -6745,7 +4380,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-islam-kultur-ve-medeniyeti-10
-Sıra: 2026-11-30 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-10.png
+Sıra: 2026-11-30 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-10.png
 
 ```
 Bunu biliyor muydunuz? İslam medeniyetinde insan 'ahsen-i takvîm' (en güzel biçim) üzere yaratılmış 'eşref-i mahlûkat' (yaratılmışların en şereflisi) olarak kabul edilir. İslam, bireyi ve toplumu birbirinin tamamlayıcısı görür; aşırılıklardan uzak, adaleti ve iyiliği ayakta tutan 'ümmet-i vasat' (dengeli toplum) modelini hedefler.
@@ -6755,7 +4390,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-islam-kultur-ve-medeniyeti-11
-Sıra: 2026-11-30 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-11.png
+Sıra: 2026-11-30 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-11.png
 
 ```
 Bunu biliyor muydunuz? Uhuvvet (kardeşlik) ilkesi, Hucurât suresi 10. ayet doğrultusunda müminleri ırk ve kabile ayrımı gözetmeksizin inanç ve ahlak paydasında birleştirir. Hicret sonrasında Medine'de gerçekleştirilen muâhât uygulaması, Ensar'ın îsâr (kardeşini nefsine tercih etme) erdemiyle İslam toplumunun temelini atmıştır.
@@ -6765,7 +4400,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-islam-kultur-ve-medeniyeti-12
-Sıra: 2026-12-01 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-12.png
+Sıra: 2026-12-01 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-12.png
 
 ```
 Bunu biliyor muydunuz? İyiliği emretme ve kötülükten sakındırma (emir bi'l-ma'rûf ve nehiy ani'l-münker) ilkesi, toplumsal duyarlılığı sağlamış ve şehirlerde Hisbe (Muhtesip) teşkilatıyla kurumsallaşmıştır. Hak ve adaleti gözetme ilkesi doğrultusunda her insanın can, mal, akıl, din ve nesil güvenliği (zarûrât-ı dîniyye) korunmuş; kadı mahkemeleri ve Dîvân-ı Mezâlim kurulmuştur.
@@ -6775,7 +4410,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-islam-kultur-ve-medeniyeti-13
-Sıra: 2026-12-01 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-13.png
+Sıra: 2026-12-01 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-13.png
 
 ```
 Bunu biliyor muydunuz? İslam medeniyetinde ekonomik hayat; helal kazanç, el emeği, dürüstlük, israftan kaçınma ve zekât/vakıf yoluyla adil paylaşım ilkeleri üzerine kurulmuş; faiz (ribâ) ve karaborsacılık (ihtikâr) yasaklanmıştır. Kamu hazinesi olan Beytülmal; zekât, öşür, haraç, cizye, fey ve ganimet gelirleriyle toplumun refahı, güvenliği ve bayındırlık hizmetlerini finanse etmiştir.
@@ -6785,7 +4420,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-islam-kultur-ve-medeniyeti-8
-Sıra: 2026-12-01 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-8.png
+Sıra: 2026-12-01 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-8.png
 
 ```
 Bunu biliyor muydunuz? İslam kültür ve medeniyetinde yönetimin temel gayesi, Fârâbî'nin el-Medînetü'l-Fâzıla eserinde belirttiği gibi iyilik ve adalet üzere yaşayan erdemli bir toplum oluşturmaktır. Emanet ilkesi gereği kamu makamları ve malları yöneticilere bırakılmış birer emanettir; yönetilenler yöneticileri denetlemek ve hakkı söylemekle sorumludur.
@@ -6795,7 +4430,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-islam-kultur-ve-medeniyeti-9
-Sıra: 2026-12-01 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-9.png
+Sıra: 2026-12-01 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-9.png
 
 ```
 Bunu biliyor muydunuz? İslam medeniyetinde devletin varlık gayesi ve mülkün temeli adalettir; kanun önünde eşitlik, yargı bağımsızlığı ve Dîvân-ı Mezâlim gibi kurumlar adaleti korumuştur. Liyakat ilkesi, kamu görevlerinin iltimas (kayırmacılık) yapılmaksızın bilgi, beceri ve dürüstlük bakımından en uygun (ehil) kişilere verilmesini emreder.
@@ -6805,7 +4440,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kelam-10
-Sıra: 2026-12-01 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kelam-10.png
+Sıra: 2026-12-01 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kelam-10.png
 
 ```
 Bunu biliyor muydunuz? Kelam ilminde hayat, varlığa ilim, irade ve kudret niteliği kazandıran sıfat olup kaynağı el-Hayy, el-Kayyûm ve el-Muhyî olan Yüce Allah'tır. Kur'an'da canlıların sudan yaratıldığı (Enbiyâ, 30) ve ölü toprağın baharda canlanmasının yeniden dirilişin (ba's) kevnî delili olduğu vurgulanır.
@@ -6815,7 +4450,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kelam-11
-Sıra: 2026-12-01 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kelam-11.png
+Sıra: 2026-12-01 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kelam-11.png
 
 ```
 Bunu biliyor muydunuz? Kelam ilminde ilim (bilgi), bir şeyin gerçeğe uygun ve şüphe götürmeyecek kesinlikte (yakîn) kavranmasıdır. Bilgi; Allah'ın ezeli ve sınırsız ilmi olan 'kadîm bilgi' ile yaratılmışların sonradan kazandığı 'hâdis bilgi' (zaruri ve istidlali) olarak ikiye ayrılır.
@@ -6825,7 +4460,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kelam-12
-Sıra: 2026-12-02 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kelam-12.png
+Sıra: 2026-12-02 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kelam-12.png
 
 ```
 Bunu biliyor muydunuz? İman, Hz. Peygamber'in Allah'tan getirdiği hükümleri kalp ile tasdik ve dil ile ikrar etmektir; doğru bilgi (marifet) imanın ön şartıdır ancak tasdik olmadan bilgi iman sayılmaz. Kapsamı bakımından iman; toptan inanmayı ifade eden 'icmâlî iman' ve esaslara ayrıntılarıyla inanmayı ifade eden 'tafsîlî iman' olarak ikiye ayrılır.
@@ -6835,7 +4470,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kelam-13
-Sıra: 2026-12-02 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kelam-13.png
+Sıra: 2026-12-02 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kelam-13.png
 
 ```
 Bunu biliyor muydunuz? Kelam ilminde doğru bilginin kaynakları selim akıl (akl-ı selim), doğru haber (haber-i sâdık / vahiy ve mütevatir sünnet) ve sağlam duyulardır (havâss-ı selîme). Aklın da vahyin de kaynağı Yüce Allah olduğu için 'sahih nakil ile selim akıl asla çelişmez'; görünürde bir uyuşmazlık varsa metin akıl ve dil ilkeleriyle te'vil edilir.
@@ -6845,7 +4480,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kelam-8
-Sıra: 2026-12-02 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kelam-8.png
+Sıra: 2026-12-02 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kelam-8.png
 
 ```
 Bunu biliyor muydunuz? Kelam ilminde kesin bilgiye ulaştıran üç temel kaynak haber-i sâdık (vahiy ve mütevatir haber), akl-ı selim (sağlam akıl) ve havâss-ı selimedir (sağlam beş duyu). Sahih nakil ile selim akıl arasında çatışma bulunmaz; Mülk 10, Muhammed 24 ve Mü'minûn 80. ayetler aklı kullanmayı ve vahyi düşünmeyi emreder.
@@ -6855,7 +4490,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kelam-9
-Sıra: 2026-12-02 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kelam-9.png
+Sıra: 2026-12-02 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kelam-9.png
 
 ```
 Bunu biliyor muydunuz? Kelamda aklî hükümler vâcip (zorunlu), mümkün (olabilir) ve mümteni (imkânsız) olmak üzere üçe ayrılır. Allah Teâlâ varlığı kendi zatından olan, başlangıçsız (Kadîm) Vâcibü'l-Vücûd'dur; O'nun dışındaki âlem ise sonradan yaratılmış (Hâdis) Mümkünü'l-Vücûd'dur.
@@ -6865,7 +4500,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kimya-10
-Sıra: 2026-12-02 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kimya-10.png
+Sıra: 2026-12-02 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kimya-10.png
 
 ```
 Bunu biliyor muydunuz? Erimiş tuzların elektrolizinde katotta metal, anotta ametal açığa çıkar; sulu çözeltilerde ise katotta en pasif katyon, anotta en aktif anyon öncelikle toplanır. Suyun Hoffman voltametresinde elektrolizi sonucunda katotta 2V hacimde H_2 gazı, anotta ise V hacimde O_2 gazı elde edilir.
@@ -6875,7 +4510,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kimya-11
-Sıra: 2026-12-02 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kimya-11.png
+Sıra: 2026-12-02 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kimya-11.png
 
 ```
 Bunu biliyor muydunuz? Korozyon, metallerin ve alaşımların çevredeki oksijen, nem ve elektrolitlerle kendiliğinden yükseltgenerek aşınması olayıdır. Demirin paslanmasında demir anot olarak Fe²⁺ iyonuna yükseltgenirken, su içindeki çözünmüş oksijen katotta indirgenerek Fe₂O₃·nH₂O (pas) oluşturur.
@@ -6885,7 +4520,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kimya-12
-Sıra: 2026-12-03 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kimya-12.png
+Sıra: 2026-12-03 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kimya-12.png
 
 ```
 Bunu biliyor muydunuz? Friedrich Wöhler 1828'de anorganik amonyum siyanattan (NH₄OCN) organik üreyi [(NH₂)₂CO] sentezleyerek vitalizm görüşünü yıkmıştır. Organik bileşiklerin temel elementi karbondur (C); ancak CO, CO₂, CS₂, HCN, H₂CO₃, karbonatlar, bikarbonatlar, siyanürler ve karbürler anorganiktir.
@@ -6895,7 +4530,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kimya-13
-Sıra: 2026-12-03 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kimya-13.png
+Sıra: 2026-12-03 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kimya-13.png
 
 ```
 Bunu biliyor muydunuz? Karbon (₆C) elementi 4 değerlik elektronuna sahiptir; kendi aralarında ve diğer ametallerle tekli, ikili ve üçlü güçlü kovalent bağlar kurarak milyonlarca organik bileşik oluşturur. Aynı element atomlarının uzayda farklı sayı ve geometrilerle dizilmesiyle oluşan maddelere allotrop denir; allotropların fiziksel özellikleri farklı, tam yanma ürünleri aynıdır.
@@ -6905,7 +4540,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kimya-8
-Sıra: 2026-12-03 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kimya-8.png
+Sıra: 2026-12-03 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kimya-8.png
 
 ```
 Bunu biliyor muydunuz? Galvanik pillerde anot ve katot metallerinin aktiflikleri (yükseltgenme eğilimleri) arasındaki fark arttıkça standart pil potansiyeli (E°_pil) artar. Pil tepkimeleri ekzotermik denge tepkimeleridir; dengeyi ürünler yönüne kaydıran etkiler (katot derişimini artırmak, anot derişimini azaltmak, sıcaklığı düşürmek) pil potansiyelini artırır.
@@ -6915,7 +4550,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kimya-9
-Sıra: 2026-12-03 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kimya-9.png
+Sıra: 2026-12-03 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kimya-9.png
 
 ```
 Bunu biliyor muydunuz? Elektroliz, istemsiz redoks tepkimelerinin dışarıdan doğru akım elektrik enerjisi verilerek gerçekleştirilmesi olayıdır; anot (+), katot kutuptur. Elektroliz kabında anyonlar anoda (+) giderek yükseltgenir, katyonlar ise katoda giderek indirgenir.
@@ -6925,7 +4560,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kuran-i-kerim-10
-Sıra: 2026-12-03 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kuran-i-kerim-10.png
+Sıra: 2026-12-03 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kuran-i-kerim-10.png
 
 ```
 Bunu biliyor muydunuz? Mülk suresi 1-5. ayetlerde mülkün ve hükümranlığın Allah'a ait olduğu, ölüm ve hayatın 'en güzel ameli' sınamak için yaratıldığı ve göklerin düzeninde kusur bulunmadığı bildirilir. Mülk suresi 10. ayette cehennem ehlinin vahyi dinlememek ve aklı kullanmamak yüzünden hüsrana uğradıklarını itiraf edecekleri haber verilir.
@@ -6935,7 +4570,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kuran-i-kerim-11
-Sıra: 2026-12-03 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kuran-i-kerim-11.png
+Sıra: 2026-12-03 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kuran-i-kerim-11.png
 
 ```
 Bunu biliyor muydunuz? A'râf suresi 151. ayette Hz. Musa (a.s.), 'Ey Rabbim! Beni ve kardeşimi bağışla, bizi rahmetine kabul et. Sen merhametlilerin en merhametlisisin' diyerek dua etmiştir. Bu dua, Tûr Dağı dönüşü kardeşi Hz. Harun'un mazeretini dinleyen Hz. Musa'nın, öfkesi dindikten sonra kardeşlik şefkatiyle yaptığı yakarıştır.
@@ -6945,7 +4580,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kuran-i-kerim-12
-Sıra: 2026-12-04 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kuran-i-kerim-12.png
+Sıra: 2026-12-04 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kuran-i-kerim-12.png
 
 ```
 Bunu biliyor muydunuz? Velî (çoğulu evliyâ) dost, yardımcı ve koruyucu demektir; Allah iman edenlerin velîsidir (Bakara, 257) ve müminler de birbirlerinin velîleridir (Tevbe, 71). Yûnus suresi 62-63. ayetlere göre Allah'ın dostları (evliyâullah), samimi olarak iman eden ve takva (sorumluluk bilinci) sahibi olan müminlerdir.
@@ -6955,7 +4590,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kuran-i-kerim-13
-Sıra: 2026-12-04 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kuran-i-kerim-13.png
+Sıra: 2026-12-04 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kuran-i-kerim-13.png
 
 ```
 Bunu biliyor muydunuz? Kur'an'da velî dost ve koruyucuyu (müminlerin velîsi Allah'tır); adalet hakkı sahibine vermeyi; zulüm ise şirki, kul hakkını ve insanın nefsine yaptığı haksızlığı ifade eder. Ahirette şefaat bütünüyle Allah'a aittir; şefaatin geçerli olması Allah'ın izin vermesine ve şefaat edilecek kimseden razı olmasına (tevhid imanına) bağlıdır.
@@ -6965,7 +4600,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kuran-i-kerim-8
-Sıra: 2026-12-04 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kuran-i-kerim-8.png
+Sıra: 2026-12-04 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kuran-i-kerim-8.png
 
 ```
 Bunu biliyor muydunuz? Hz. Meryem, annesi Hanne tarafından Beytülmakdis'e adanmış ve Hz. Zekeriyya'nın himayesinde iffet ve takva ile yetişmiştir (Âl-i İmrân, 33-42). Hz. İsa Allah'ın 'Ol!' iradesiyle babasız dünyaya gelmiş (Âl-i İmrân, 59) ve beşikte konuşarak Allah'ın kulu ve peygamberi olduğunu bildirmiştir (Meryem, 30-31).
@@ -6975,7 +4610,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-kuran-i-kerim-9
-Sıra: 2026-12-04 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kuran-i-kerim-9.png
+Sıra: 2026-12-04 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kuran-i-kerim-9.png
 
 ```
 Bunu biliyor muydunuz? Mülk suresi (Tebâreke), 29. cüzün ilk suresi olup Mekke döneminde inmiştir ve 30 ayettir; ölüm ve hayatın 'daha güzel amel' imtihanı için yaratıldığını bildirir. Mülk suresinde yedi kat göğün kusursuz uyumu, kuşların uçuşu ve su nimeti hatırlatılarak aklı kullanmanın ve vahye kulak vermenin önemi vurgulanır.
@@ -6985,7 +4620,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-matematik-10
-Sıra: 2026-12-04 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-matematik-10.png
+Sıra: 2026-12-04 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-matematik-10.png
 
 ```
 Bunu biliyor muydunuz? Sinüs toplam ve fark formüllerinde terimler 'sin·cos ± cos·sin' biçiminde dizilir ve aradaki işaret korunur. Kosinüs toplam ve fark formüllerinde terimler 'cos·cos sin·sin' biçiminde dizilir ve aradaki işaret tersine döner.
@@ -6995,7 +4630,7 @@ Faydalı bulduysanız arkadaşınızı etiketleyin.
 ```
 
 ## bilgi-12-matematik-11
-Sıra: 2026-12-04 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-matematik-11.png
+Sıra: 2026-12-04 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-matematik-11.png
 
 ```
 Bunu biliyor muydunuz? Sinüs iki kat açı formülü sin(2x) = 2 · sin(x) · cos(x) olup tam kare özdeşliğinde (sin(x) ± cos(x))² = 1 ± sin(2x) eşitliğini sağlar. Kosinüs iki kat açı formülü cos(2x) = cos²(x) - sin²(x) = 2·cos²(x) - 1 = 1 - 2·sin²(x) olmak üzere üç eşdeğer biçimde yazılır.
@@ -10401,5 +8036,1035 @@ Sıra: 2027-01-30 15:00 · Bekleyen: instagram, facebook · Görsel: https://der
 Bunu biliyor muydunuz? Akide ve Tevhid: Akide gönülden bağlanılan inanç esaslarının bütünüdür; tevhid ise Allah'ı zatında, sıfatlarında ve ibadette birleyerek O'na ortak koşmamaktır. İman ve İslam: İman inanç esaslarını kalple tasdik ve dille ikrar etmek (mümin); İslam ise ilahi emirlere teslim olup ibadetlerle yaşamak (Müslüman) demektir.
 Faydalı bulduysanız arkadaşınızı etiketleyin.
 📘 9. sınıf Temel Dinî Bilgiler 9. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-temel-dini-bilgiler-hafta-9
+#derskutusu #temeldinibilgiler #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-arapca-14
+Sıra: 2026-10-20 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-arapca-14.png
+
+```
+Bunu biliyor muydunuz? Bedenimizin temel organları (baş), (göz), (kulak), (burun), (ağız), (dişler), (el), (bacak) ve (mide) kelimeleridir. Beş duyu eylemleri (gözle görürüm), (kulakla işitirim), (burunla koklarım), (dille tadarım) ve (elle dokunurum) kalıplarıyla ifade edilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Arapça 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-arapca-hafta-14
+#derskutusu #arapça #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-biyoloji-14
+Sıra: 2026-10-20 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-biyoloji-14.png
+
+```
+Bunu biliyor muydunuz? Polisakkaritler glikoza, nötral yağlar gliserol ve yağ asitlerine, proteinler ise amino asitlere sindirildikten sonra hücresel solunuma katılır. Glikoz (6C) glikoliz başlangıcından, gliserol (3C) glikoliz ara basamağından, yağ asitleri ise beta oksidasyonla 2 karbonlu Asetil-CoA'ya dönüşerek solunuma girer.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Biyoloji 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-biyoloji-hafta-14
+#derskutusu #biyoloji #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-cografya-14
+Sıra: 2026-10-20 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-cografya-14.png
+
+```
+Bunu biliyor muydunuz? Alüvyal delta ovaları (Çukurova, Bafra, Çarşamba) ve tektonik çöküntü ovaları (Bursa, Adapazarı) tarım ve ulaşım elverişliliği nedeniyle sık nüfuslanmış; sarp dağlık alanlar (Hakkâri, Menteşe) ve karstik platolar (Teke, Taşeli). Eğim ve engebenin fazla olduğu Doğu Karadeniz'de makineli tarım güçleşir ve kırsal kesimde dağınık yerleşme görülürken, düz İç Anadolu ovalarında toplu yerleşme ve makineli tarım yaygındır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Coğrafya 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-cografya-hafta-14
+#derskutusu #coğrafya #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-din-kulturu-14
+Sıra: 2026-10-20 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-din-kulturu-14.png
+
+```
+Bunu biliyor muydunuz? Medine döneminde indirilen ve 24 ayetten oluşan Haşr suresinin son üç ayeti (22-24), Yüce Allah'ı en güzel isimleriyle (Esmâ-i Hüsnâ) tanıtan eşsiz bir marifetullah metnidir. 22. ayette Allah'tan başka ilah olmadığı (tevhid), O'nun hem duyular ötesi gayb âlemini hem de görünür şehadet âlemini bildiği ve er-Rahmân, er-Rahîm olduğu bildirilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Din Kültürü ve Ahlak Bilgisi 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-din-kulturu-ve-ahlak-bilgisi-hafta-14
+#derskutusu #dinkültürü #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-edebiyat-14
+Sıra: 2026-10-20 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-edebiyat-14.png
+
+```
+Bunu biliyor muydunuz? 2. Kural uygulama aşamasında (TDE4.3); dikkat çekici bir giriş planlanır, soyut duyguları somutlaştıran söz varlığı (deyim, atasözü, mecaz, imge) seçilir ve iletiler hem açık hem de örtük biçimde kurgulanır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Türk Dili ve Edebiyatı 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-turk-dili-ve-edebiyati-hafta-14
+#derskutusu #edebiyat #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-felsefe-14
+Sıra: 2026-10-20 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-felsefe-14.png
+
+```
+Bunu biliyor muydunuz? Bilgi felsefesi (epistemoloji); bilginin doğasını, imkânını, kaynağını, sınırlarını, değerini ve doğruluk ölçütlerini sorgulayan felsefe disiplini olup özne (suje), nesne (obje), doğruluk, gerçeklik ve temellendirme temel. Doğru bilginin imkânı probleminde septisizm (kuşkuculuk: Protagoras, Gorgias, Pyrrhon) genelgeçer doğru bilginin imkânsız olduğunu savunurken, dogmatizm doğru bilginin mümkün olduğunu kabul eder.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Felsefe 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-felsefe-hafta-14
+#derskutusu #felsefe #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-fikih-14
+Sıra: 2026-10-21 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fikih-14.png
+
+```
+Bunu biliyor muydunuz? Namazların camide cemaatle kılınması sünnet-i müekkede olup müminler arasındaki birlik, kardeşlik ve yardımlaşma ruhunu güçlendirir. Cuma namazı, akıllı, ergen, hür, sağlıklı ve mukim (yerleşik) olan erkeklere farz-ı ayn olan iki rekâtlık bir namazdır; hutbe okunması Cuma namazının sahih olma şartıdır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Fıkıh 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fikih-hafta-14
+#derskutusu #fıkıh #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-fizik-14
+Sıra: 2026-10-21 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fizik-14.png
+
+```
+Bunu biliyor muydunuz? Bir sistemin hareketinden dolayı sahip olduğu kinetik enerji (E_K) ile konumundan veya esnek yapısından dolayı depoladığı potansiyel enerjinin (E_P) toplamına mekanik enerji (E_M = E_K + E_P) denir. Kütlesi m, sürati v olan bir cismin öteleme kinetik enerjisi E_K = 1/2 · m · v · v bağıntısıyla hesaplanır ve SI birimi Joule (J)'dür.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Fizik 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fizik-hafta-14
+#derskutusu #fizik #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-hadis-14
+Sıra: 2026-10-21 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-hadis-14.png
+
+```
+Bunu biliyor muydunuz? Hicri 3. asırdaki Altın Çağ'da Kütüb-i Sitte ve Kütüb-i Tis'a gibi temel hadis kaynaklarının tasnif edilmesinden sonra, Hicri 4. Temel kaynakların şartlarına uyduğu halde o kitaplara alınmamış sahih hadisleri toplayan eserlere Müstedrek ( — en meşhuru Hâkim en-Nîsâbûrî'nin eseri), aynı hadisleri farklı senedlerle rivayet eden eserlere ise Müstahrec denir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Hadis 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-hadis-hafta-14
+#derskutusu #hadis #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-ingilizce-14
+Sıra: 2026-10-21 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-ingilizce-14.png
+
+```
+Bunu biliyor muydunuz? Yaşamımız boyunca edindiğimiz seyahat deneyimlerinden zaman belirtmeden bahsederken Present Perfect Tense (have/has + V3), belirli bir geçmiş zamandaki (last summer, in 2024, two days ago) seyahatten bahsederken ise Simple Past. Have been to bir yere gidip geri dönmüş olmayı (“I have been to Cappadocia twice”), have gone to ise bir yere gidip henüz dönmemiş (şu an orada) olmayı (“She has gone to Rome”) ifade eder.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf İngilizce 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-ingilizce-hafta-14
+#derskutusu #ingilizce #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-kimya-14
+Sıra: 2026-10-21 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kimya-14.png
+
+```
+Bunu biliyor muydunuz? Gazların davranışlarını belirleyen dört temel değişken basınç (P, atm), hacim (V, L), mutlak sıcaklık (T, K = °C + 273) ve madde miktarı (n, mol) olup tüm gaz yasası hesaplamalarında sıcaklık mutlaka Kelvin (K) cinsinden alınır. Sabit sıcaklık ve mol sayısında basınç ile hacim ters orantılıdır (Boyle Yasası: P1 · V1 = P2 · V2); sabit basınç ve mol sayısında hacim ile mutlak sıcaklık doğru orantılıdır (Charles Yasası: V1/T1 = {kesir:V2|T2}).
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Kimya 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kimya-hafta-14
+#derskutusu #kimya #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-kuran-i-kerim-14
+Sıra: 2026-10-21 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kuran-i-kerim-14.png
+
+```
+Bunu biliyor muydunuz? Medine döneminde inen Âl-i İmrân suresinin 116-200. ayetleri (Mushaf 64-75 / ders kitabı 16-27. sayfalar), özellikle Uhud Savaşı üzerinden müminlerin sabır, itaat, istişare ve tevekkül bilincini inşa eder. 133-136. ayetlerde Allah'ın mağfiretine ve cennete koşan müttakilerin özellikleri; bollukta ve darlıkta infak etmek, öfkeyi yutmak, insanları affetmek ve hata yapınca hemen tövbe etmek olarak açıklanır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Kur’an-ı Kerim 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kuran-i-kerim-hafta-14
+#derskutusu #kuranıkerim #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-matematik-14
+Sıra: 2026-10-22 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-matematik-14.png
+
+```
+Bunu biliyor muydunuz? Aralarında asal çarpanların en küçük ortak katından (EKOK) oluşan 6 (2 ve 3), 12 (3 ve 4), 15 (3 ve 5), 18 (2 ve 9), 30 (3 ve 10), 36 (4 ve 9) ve 45 (5 ve 9) sayılarına bölünebilmede aralarında asal çarpanların kuralları. Boş olmayan A (tanım kümesi) ve B (değer kümesi) gerçek sayı alt kümeleri arasında tanımlı bir f: A -> B ilişkisinin fonksiyon olabilmesi için: 1) Tanım kümesinde açıkta eleman kalmamalı, 2) Tanım kümesindeki her eleman değer.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Matematik 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-matematik-hafta-14
+#derskutusu #matematik #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-peygamberimizin-hayati-14
+Sıra: 2026-10-22 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-peygamberimizin-hayati-14.png
+
+```
+Bunu biliyor muydunuz? Hz. Ebû Bekir ( — r.a.), yalnız kendisi değil anne babası, eşleri, çocukları ve torunları olmak üzere dört kuşağı birden sahabi olma şerefine erişen müstesna bir aileye sahiptir. Kızı Hz. Esma ( — r.a.), Hicret esnasında Sevr Mağarası'na yiyecek taşırken kuşağını ikiye bölüp bağladığı için Hz. Peygamber (s.a.v.) tarafından Zâtü'n-Nitâkayn ( — İki Kuşaklı) lakabıyla onurlandırılmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Peygamberimizin Hayatı 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-peygamberimizin-hayati-hafta-14
+#derskutusu #peygamberimizinhayatı #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-siyer-14
+Sıra: 2026-10-22 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-siyer-14.png
+
+```
+Bunu biliyor muydunuz? Hz. İlk üç yılda Müslümanların çekirdek kadrosunu yetiştirmek için Dârülerkam eğitim ve buluşma merkezi olarak seçilmiş, Şuarâ 214 ve Hicr 94. ayetlerle açık tebliğe geçilmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Siyer 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-siyer-hafta-14
+#derskutusu #siyer #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-tarih-14
+Sıra: 2026-10-22 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-tarih-14.png
+
+```
+Bunu biliyor muydunuz? Osmanlı Devleti 1299-1453 yılları arasında batıda (Bizans ve Balkanlar) gaza ve cihat anlayışıyla fetihler yaparken, doğuda (Anadolu) Türk beylikleriyle evlilik, çeyiz, satın alma ve gerektiğinde askeri mücadele yoluyla Anadolu. Orhan Bey döneminde Karesioğulları Beyliği'nin (1345) alınmasıyla Anadolu Türk siyasi birliği yolunda ilk adım atılmış, Osmanlı donanmaya kavuşmuş ve Çimpe Kalesi (1353) ile Rumeli'ye geçilmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Tarih 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-tarih-hafta-14
+#derskutusu #tarih #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-temel-dini-bilgiler-14
+Sıra: 2026-10-22 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-temel-dini-bilgiler-14.png
+
+```
+Bunu biliyor muydunuz? Bosna-Hersek'in ilk cumhurbaşkanı, mütefekkir ve hukukçu Aliya İzzetbegoviç (1925-2003), inancı, entelektüel derinliği ve savaşın en acımasız anlarında bile taviz vermediği adalet ve ahlak duruşu sebebiyle Bilge Kral unvanıyla. Gençlik yıllarında Mladi Muslimani (Genç Müslümanlar) hareketinde yer almış; İslam düşüncesini çağın sorunlarıyla buluşturan Doğu ve Batı Arasında İslam, İslam Deklarasyonu ve Özgürlüğe Kaçışım adlı ölümsüz eserleri kaleme.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Temel Dinî Bilgiler 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-temel-dini-bilgiler-hafta-14
+#derskutusu #temeldinibilgiler #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-akaid-14
+Sıra: 2026-10-22 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-akaid-14.png
+
+```
+Bunu biliyor muydunuz? Kaderle ilişkilendirilen kavramlar; Yüce Allah'ın küllî iradesi ve yaratması (halk) ile insanın akıl, fıtrat ve cüz'î iradesine dayalı seçimi (kesb) birlikte dikkate alınarak çözümlenir. Hayır ve şerri imtihan sırrı gereği yaratan Yüce Allah'tır; ancak Allah hayırdan razı olurken şerre razı olmaz ve kul kendi seçtiği kötülükten sorumlu tutulur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Akaid 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-akaid-hafta-14
+#derskutusu #akaid #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-biyoloji-14
+Sıra: 2026-10-23 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-biyoloji-14.png
+
+```
+Bunu biliyor muydunuz? Hareketin oluşumunda kemikler pasif kaldıraç kolu, oynar eklemler destek noktası, tendonlarla kemiğe bağlanan çizgili kaslar ise aktif kuvvet kaynağı olarak eş güdümlü çalışır. İki Z çizgisi arasındaki kasılma birimine sarkomer denir; I bandı yalnız ince aktin, A bandı kalın miyozin boyu, H bandı ise yalnız kalın miyozin içerir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Biyoloji 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-biyoloji-hafta-14
+#derskutusu #biyoloji #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-cografya-14
+Sıra: 2026-10-23 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-cografya-14.png
+
+```
+Bunu biliyor muydunuz? Tarımsal faaliyetler iklim, yer şekilleri ve toprak gibi doğal faktörler ile sulama, gübreleme, tohum ıslahı ve makineleşme gibi beşeri faktörlerin etkileşimiyle şekillenir. Ekstansif (yaygın) tarımda doğaya bağımlılık yüksek ve birim verim düşük iken; intansif (yoğun/modern) tarımda ileri teknoloji sayesinde birim alandan alınan verim çok yüksektir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Coğrafya 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-cografya-hafta-14
+#derskutusu #coğrafya #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-din-kulturu-14
+Sıra: 2026-10-23 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-din-kulturu-14.png
+
+```
+Bunu biliyor muydunuz? Âl-i İmrân suresi 190-191. ayetler, İslam düşüncesinde evrendeki kevnî ayetleri okumayı emreden temel tefekkür ayetleridir. Göklerin ve yerin yaratılışı ile gece ve gündüzün ardışıklığı, tesadüfü reddeden ilahi ölçü ve düzenin açık delilleridir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Din Kültürü ve Ahlak Bilgisi 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-din-kulturu-ve-ahlak-bilgisi-hafta-14
+#derskutusu #dinkültürü #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-dinler-tarihi-14
+Sıra: 2026-10-23 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-dinler-tarihi-14.png
+
+```
+Bunu biliyor muydunuz? Yahudilikte imanın özeti Tesniye 6:4'te yer alan 'Şema Yisrael' (Dinle ey İsrail! Tanrımız Rab tek olan Rab'dir) bildirgesidir. Tanrı'nın dört harfli özel ismi (YHWH) hürmeten telaffuz edilmez; yerine ibadette 'Adonay', günlük dilde 'Ha-Şem' kullanılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Dinler Tarihi 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-dinler-tarihi-hafta-14
+#derskutusu #dinlertarihi #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-edebiyat-14
+Sıra: 2026-10-23 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-edebiyat-14.png
+
+```
+Bunu biliyor muydunuz? 'Kültür Yolculuğu' temasının Edebiyat Atölyesi (Anlatma) bölümünde, Türk dünyasına ait görsellerden hareketle Türk kültürünün ortak unsurlarını (dil, din, coğrafya, tarih, sanat ve gelenek) yansıtan planlı bir konuşma. Konuşmacı sunumuna hazırladığı plana (giriş, gelişme, sonuç) uygun olarak dikkat çekici bir girişle başlar; görsellerdeki mimari, halı-kilim motifleri, müzik aletleri (kopuz/dombra) veya destan ögelerini ana fikir etrafında.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Türk Dili ve Edebiyatı 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-turk-dili-ve-edebiyati-hafta-14
+#derskutusu #edebiyat #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-felsefe-14
+Sıra: 2026-10-23 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-felsefe-14.png
+
+```
+Bunu biliyor muydunuz? Akıl mantıksal kanıtlama ve şüpheye, inanç ise aşkın kaynağa güven ve teslimiyete dayanır; ikisi arasındaki ilişki din felsefesinin temel problemidir. Fideizm (Tertullianus, Kierkegaard), inancın akılla kanıtlanamayacağını ve imanın öznel bir sıçrama olduğunu savunur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Felsefe 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-felsefe-hafta-14
+#derskutusu #felsefe #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-fizik-14
+Sıra: 2026-10-24 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-fizik-14.png
+
+```
+Bunu biliyor muydunuz? Yatay ve eğimli virajda güvenli dönüş hızı sürtünme, eğim ve yarıçapa bağlı olup aracın kütlesinden bağımsızdır. Düşey düzlemde çembersel harekette ip gerilmesi en üstte minimum (Fm - m·g), en altta maksimum (Fm + m·g) değerini alır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Fizik 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-fizik-hafta-14
+#derskutusu #fizik #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-hitabet-ve-mesleki-uygulama-14
+Sıra: 2026-10-24 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-hitabet-ve-mesleki-uygulama-14.png
+
+```
+Bunu biliyor muydunuz? 4-6 yaş erken çocukluk dönemi, merak duygusunun ve taklit yeteneğinin zirvede olduğu ancak düşüncenin henüz somut düzeyde kaldığı evredir. Okul öncesi din eğitiminin temel amacı bilişsel ezber değil; Allah, Peygamber ve Kur'an'a karşı olumlu duygusal bağ (sevgi ve güven) oluşturmaktır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Hitabet ve Mesleki Uygulama 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-hitabet-ve-mesleki-uygulama-hafta-14
+#derskutusu #hitabet #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-ingilizce-14
+Sıra: 2026-10-24 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-ingilizce-14.png
+
+```
+Bunu biliyor muydunuz? Geçmişteki alışkanlıklar ve durumlar 'used to + V1' ile anlatılır; olumsuzda 'didn't use to', soruda 'Did... use to?' kullanılır. 'Would + V1' geçmişte tekrarlanan eylemleri anlatır ancak 'be, live, have, know' gibi durum fiilleriyle (state verbs) asla kullanılmaz.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf İngilizce 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-ingilizce-hafta-14
+#derskutusu #ingilizce #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-kimya-14
+Sıra: 2026-10-24 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-kimya-14.png
+
+```
+Bunu biliyor muydunuz? Kütlelerin Etkisi Yasası'na göre denge sabiti ürün derişimlerinin giren derişimlerine oranıdır ve yalnız sıcaklıkla değişir. Saf katılar (k) ve saf sıvılar (s) derişimleri sabit olduğundan Kc ve Kp bağıntılarında yer almaz; Kc'ye gaz ve sulu çözeltiler, Kp'ye yalnız gazlar yazılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Kimya 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-kimya-hafta-14
+#derskutusu #kimya #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-kuran-i-kerim-14
+Sıra: 2026-10-24 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-kuran-i-kerim-14.png
+
+```
+Bunu biliyor muydunuz? Nisâ suresi 58. ayet emanetlerin ehline (liyakat sahiplerine) verilmesini ve insanlar arasında adaletle hükmedilmesini emreder. 59. ayette Allah'a, Peygamber'e ve sizden olan ulü'l-emre itaat emredilir; anlaşmazlıklarda nihai ölçü Kur'an ve Sünnet'tir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Kur’an-ı Kerim 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-kuran-i-kerim-hafta-14
+#derskutusu #kuranıkerim #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-matematik-14
+Sıra: 2026-10-24 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-matematik-14.png
+
+```
+Bunu biliyor muydunuz? Genel dörtgenlerde köşegenler dik kesişirse karşılıklı kenarların kareleri toplamı eşittir ve alan köşegenler çarpımının yarısıdır. Varignon Teoremi'ne göre bir dörtgenin kenar orta noktalarını birleştiren dörtgen paralelkenardır ve alanı tüm alanın yarısıdır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Matematik 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-matematik-hafta-14
+#derskutusu #matematik #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-mesleki-arapca-14
+Sıra: 2026-10-25 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-mesleki-arapca-14.png
+
+```
+Bunu biliyor muydunuz? Kur'an-ı Kerim'in iki kapak arasındaki yazılı nüshasına Mushaf, 114 bölümüne sure, cümlelerine ayet ve 30 bölümüne cüz denir. Hicretten önce inen sureler Mekkî, hicretten sonra inenler Medenî olarak adlandırılır; sure başlarındaki kesik harflere hurûf-u mukattaa denir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Mesleki Arapça 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-mesleki-arapca-hafta-14
+#derskutusu #meslekiarapça #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-peygamberimizin-hayati-14
+Sıra: 2026-10-25 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-peygamberimizin-hayati-14.png
+
+```
+Bunu biliyor muydunuz? Hz. Ali, hicret gecesi canını tehlikeye atarak Hz. Peygamber'in yatağında yatmış ve emanetleri sahiplerine teslim ettikten sonra hicret etmiştir. Tebük Seferi dışındaki tüm gazvelere katılmış; Bedir, Uhud, Hendek ve özellikle Hayber'in fethinde gösterdiği şecaatle 'Allah'ın Arslanı' unvanını almıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Peygamberimizin Hayatı 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-peygamberimizin-hayati-hafta-14
+#derskutusu #peygamberimizinhayatı #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-tarih-14
+Sıra: 2026-10-25 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-tarih-14.png
+
+```
+Bunu biliyor muydunuz? 1789 Fransız İhtilali'nin yaydığı 'hürriyet, eşitlik, adalet, milli egemenlik, anayasacılık ve milliyetçilik' fikirleri, çok uluslu imparatorlukları (Osmanlı ve Avusturya-Macaristan) derinden sarsmıştır. Milliyetçilik akımı Balkanlar'daki gayrimüslim tebaa arasında bağımsızlık isyanlarına (1804 Sırp, 1821 Yunan isyanı vb.) yol açarken, Osmanlı devlet adamlarını devleti dağılmaktan kurtaracak siyasi ve hukuki reformlara.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Tarih 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-tarih-hafta-14
+#derskutusu #tarih #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-tefsir-14
+Sıra: 2026-10-25 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-tefsir-14.png
+
+```
+Bunu biliyor muydunuz? Kur'an-ı Kerim'in muhtevasının (içeriğinin) en temel ve merkezi konusu Yüce Allah'ın varlığını, birliğini ve kemal sıfatlarını insanlığa tanıtmaktır (Marifetullah). Kur'an'da Allah Teâlâ; zâtını hiçbir varlığa benzetmeden ( - Şûrâ, 11) en güzel isimleri, zâtî-sübûtî sıfatları ve kâinattaki eşsiz fiilleriyle tanıtılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Tefsir 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-tefsir-hafta-14
+#derskutusu #tefsir #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-temel-dini-bilgiler-14
+Sıra: 2026-10-25 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-temel-dini-bilgiler-14.png
+
+```
+Bunu biliyor muydunuz? Bağımsız Bosna-Hersek'in ilk cumhurbaşkanı ve 20. yüzyılın büyük İslam mütefekkiri Aliya İzzetbegoviç (1925-2003), fikrî derinliği ve ilkeli siyasetiyle 'Bilge Kral' olarak tanınmıştır. Gençlik yıllarında 'Mladi Muslimani' (Genç Müslümanlar) teşkilatında Boşnak halkının dini ve ahlaki kimliğini savunmuş; cezaevinde geçirdiği uzun yılları okuma, tefekkür ve eser telifiyle değerlendirmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Temel Dinî Bilgiler 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-temel-dini-bilgiler-hafta-14
+#derskutusu #temeldinibilgiler #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-biyoloji-14
+Sıra: 2026-10-25 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-biyoloji-14.png
+
+```
+Bunu biliyor muydunuz? Biyogüvenlik, modern biyoteknoloji ve gen mühendisliği uygulamalarının insan sağlığı, çevre ve biyoçeşitlilik üzerindeki olası risklerini ihtiyat ilkesiyle denetleyen bilimsel ve hukuki sistemdir. Cartagena Biyogüvenlik Protokolü, genetiği değiştirilmiş canlı organizmaların sınır ötesi taşınımında ön bildirim anlaşmasını ve bilimsel risk değerlendirmesini zorunlu kılar.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Biyoloji 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-biyoloji-hafta-14
+#derskutusu #biyoloji #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-cografya-14
+Sıra: 2026-10-26 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-cografya-14.png
+
+```
+Bunu biliyor muydunuz? Küresel ticaret hacminin en büyük bölümü; sanayi, teknoloji, sermaye ve tüketici nüfusun yoğunlaştığı Batı Avrupa (AB), Kuzey Amerika (USMCA) ve Doğu Asya kutupları arasında gerçekleşir. Dünya ticaret akışlarında Orta Doğu, Rusya, Güney Amerika (MERCOSUR) ve Afrika enerji ve ham madde arz ederken; sanayileşmiş merkezler yüksek katma değerli mamul mal ve hizmet ihraç eder.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Coğrafya 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-cografya-hafta-14
+#derskutusu #coğrafya #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-din-kulturu-14
+Sıra: 2026-10-26 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-din-kulturu-14.png
+
+```
+Bunu biliyor muydunuz? Milletimizin İslam anlayışı; Kur'an ve sünnet temelinde akla, ilme, güzel ahlaka ve hoşgörüye dayanan fıkhî, itikadi ve tasavvufi birikimle şekillenmiştir. Fıkıh alanında Ebu Hanife (el-Fıkhu'l-Ekber), Cafer es-Sadık ve İmam Şafii (er-Risale, el-Ümm) içtihat yöntemleriyle dinin farklı zaman ve mekânlarda yaşanmasını kolaylaştırmışlardır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Din Kültürü ve Ahlak Bilgisi 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-din-kulturu-ve-ahlak-bilgisi-hafta-14
+#derskutusu #dinkültürü #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-edebiyat-14
+Sıra: 2026-10-26 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-edebiyat-14.png
+
+```
+Bunu biliyor muydunuz? Cumhuriyet Dönemi halk şiiri; dörtlük nazım birimi, 8'li ve 11'li hece ölçüsü, bağlama eşliğinde icra ve son dörtlükte mahlas (tapşırma) geleneğini sürdürürken Atatürk, Cumhuriyet ve güncel toplumsal sorunları da işlemiştir. Dönemin en büyük halk ozanı Âşık Veysel Şatıroğlu ('Deyişler', 'Sazımdan Sesler', 'Dostlar Beni Hatırlasın', 'Kara Toprak'); saz çalmadan âşık tarzında yazan usta şairi ise Abdurrahim Karakoç'tur ('Mihriban', 'Hasan'a Mektuplar').
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Türk Dili ve Edebiyatı 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-turk-dili-ve-edebiyati-hafta-14
+#derskutusu #edebiyat #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-fizik-14
+Sıra: 2026-10-26 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-fizik-14.png
+
+```
+Bunu biliyor muydunuz? Yay sarkacının periyodu T = 2·pi·√(m/k_eş) bağıntısıyla hesaplanır; cismin kütlesine ve eş değer yay sabitine bağlı olup çekim ivmesinden (g) ve eğim açısından bağımsızdır. Yaylar seri bağlandığında 1/k_eş = 1/k_1 + 1/k_2 ile eş değer yay sabiti küçülür; paralel bağlandığında ise k_eş = k_1 + k_2 ile eş değer yay sabiti büyür. Bir yay n eşit parçaya bölünürse her parçanın yay sabiti n·k olur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Fizik 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-fizik-hafta-14
+#derskutusu #fizik #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-ingilizce-14
+Sıra: 2026-10-26 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-ingilizce-14.png
+
+```
+Bunu biliyor muydunuz? Theme 5 (Psychology) kapsamında duygu durumları (moods); olumlu sıfatlar (serene, tranquil, cheerful, elated, optimistic, resilient) ve zorlayıcı sıfatlar (anxious, overwhelmed, frustrated, exhausted, gloomy) ile ifade edilir. 'On cloud nine' ve 'over the moon' çok mutlu olmayı, 'feel blue' ve 'down in the dumps' üzgün olmayı, 'put oneself in someone's shoes' ise empati kurmayı anlatan önemli deyimlerdir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf İngilizce 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-ingilizce-hafta-14
+#derskutusu #ingilizce #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-inkilap-tarihi-14
+Sıra: 2026-10-26 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-inkilap-tarihi-14.png
+
+```
+Bunu biliyor muydunuz? Yaklaşık bir yıllık hazırlığın ardından 26 Ağustos 1922'de Afyon Kocatepe'den başlayan Büyük Taarruz, 30 Ağustos Başkomutanlık Meydan Muharebesi ve 9 Eylül İzmir'in kurtuluşuyla Batı Anadolu'daki Yunan işgalini sona erdirmiştir. 11 Ekim 1922'de İsmet Paşa tarafından imzalanan Mudanya Ateşkes Antlaşması ile Doğu Trakya (Meriç'e kadar), İstanbul ve Boğazlar savaş yapılmadan kurtarılmış; İstanbul yönetiminin TBMM'ye bırakılmasıyla Osmanlı Devleti hukuken.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf T.C. İnkılap Tarihi 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-tc-inkilap-tarihi-ve-ataturkculuk-hafta-14
+#derskutusu #inkılaptarihi #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-islam-kultur-ve-medeniyeti-14
+Sıra: 2026-10-27 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-14.png
+
+```
+Bunu biliyor muydunuz? İslam medeniyetinde insan-insan ilişkisi, tüm insanların Hz. Âdem'den gelerek yaratılışta eşit ve onurlu olduğu 'âdemiyet' ilkesi ile müminlerin iman kardeşi olduğu 'uhuvvet' ilkesine dayanır. Mümin; elinden ve dilinden herkesin güvende olduğu (emanet), yumuşak huylu (hilm) ve kendisi ihtiyaç içindeyken bile kardeşini kendine tercih eden (îsâr) kimsedir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf İslam Kültür ve Medeniyeti 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-islam-kultur-ve-medeniyeti-hafta-14
+#derskutusu #islamkültürü #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-kelam-14
+Sıra: 2026-10-27 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kelam-14.png
+
+```
+Bunu biliyor muydunuz? Kelam ilminde delil, doğru bir akıl yürütmeyle (nazar ve istidlal) incelendiğinde hakikate ulaştıran kanıttır; kesin bilgi veren delile burhan denir. Doğru bilginin üç kaynağı sağlam duyular (havâss-ı selîme), doğru haber (haber-i sâdık) ve selim akıldır (akl-ı selîm); deliller de buna göre naklî ve aklî olarak ikiye ayrılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Kelam 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-kelam-hafta-14
+#derskutusu #kelam #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-kimya-14
+Sıra: 2026-10-27 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kimya-14.png
+
+```
+Bunu biliyor muydunuz? Karbon (6C) elementi 2. periyot 4A grubunda yer alır; 4 değerlik elektronunu ortaklaşa kullanarak 4 adet kovalent bağ yapar. C-C bağ enerjisinin yüksek olması, karbonun tekli, ikili ve üçlü bağlar kurarak düz zincirli, dallanmış ve halkalı milyonlarca organik bileşik oluşturmasını sağlar.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Kimya 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-kimya-hafta-14
+#derskutusu #kimya #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-kuran-i-kerim-14
+Sıra: 2026-10-27 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kuran-i-kerim-14.png
+
+```
+Bunu biliyor muydunuz? Zulüm sözlükte bir şeyi ait olduğu yerin dışına koymak ve karanlık; ıstılahta ise hak ve adaletten saparak haddi aşmak ve haksızlık etmektir. Tam zıddı adalet ve kısttır. Kur'an-ı Kerim'de zulüm üç boyutta ele alınır: 1) Allah'a karşı zulüm (şirk ve inkâr), 2) İnsanlara karşı zulüm (kul hakkı), 3) İnsanın kendi nefsine zulmü (günah işlemek).
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Kur’an-ı Kerim 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-kuran-i-kerim-hafta-14
+#derskutusu #kuranıkerim #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-matematik-14
+Sıra: 2026-10-27 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-matematik-14.png
+
+```
+Bunu biliyor muydunuz? a·sin(x) + b·cos(x) = 0 birinci dereceden homojen denkleminde her iki taraf cos(x)'e bölünerek tan(x) = -b/a temel denklemi elde edilir ve x = alfa + k·pi ile çözülür. a·sin²(x) + b·sin(x)cos(x) + c·cos²(x) = 0 ikinci dereceden homojen denkleminde her iki taraf cos²(x)'e bölünerek tan(x) = t değişkenine bağlı ikinci dereceden denklem çözülür.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Matematik 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-matematik-hafta-14
+#derskutusu #matematik #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-mesleki-arapca-14
+Sıra: 2026-10-27 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-mesleki-arapca-14.png
+
+```
+Bunu biliyor muydunuz? Hz. Peygamber (s.a.v.) Medine'ye hicretten sonra İslam toplumunu inşa etmek için Mescid-i Nebevî'yi inşa etmiş ve yanına ilim merkezi olan Suffe'yi kurmuştur. Mekkeli Muhacirler ile Medineli Ensar arasında kurulan kardeşlik ile toplumsal yardımlaşma ve birlik sağlanmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Mesleki Arapça 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-mesleki-arapca-hafta-14
+#derskutusu #meslekiarapça #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-peygamberimizin-hayati-14
+Sıra: 2026-10-28 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-peygamberimizin-hayati-14.png
+
+```
+Bunu biliyor muydunuz? Sahabî (çoğulu sahabe / ashâb); Hz. Peygamber'i mümin olarak gören, onun sohbetinde bulunan ve iman üzere vefat eden kimsedir. Sahabiler Hz. Peygamber'i kendi canlarından, mallarından ve ailelerinden daha çok sevmişler; Hicret'te, Uhud'da ve Recî vakasında bu bağlılığı canlarıyla kanıtlamışlardır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Peygamberimizin Hayatı 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-peygamberimizin-hayati-hafta-14
+#derskutusu #peygamberimizinhayatı #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-temel-dini-bilgiler-14
+Sıra: 2026-10-28 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-temel-dini-bilgiler-14.png
+
+```
+Bunu biliyor muydunuz? Rûm Suresi 21. ayete göre İslam'da aile yuvası; sekînet (huzur ve güven), meveddet (karşılıklı sevgi) ve rahmet (şefkat ve merhamet) temelleri üzerine kurulur. Nikâh akdi Kur'an'da 'mîsâk-ı galîz' (sağlam ve ağır sözleşme) olarak tanımlanır; geçerli olması için tarafların özgür rızası, şahitlerin huzuru, topluma ilanı ve resmî tescili gerekir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Temel Dinî Bilgiler 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-temel-dini-bilgiler-hafta-14
+#derskutusu #temeldinibilgiler #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-arapca-14
+Sıra: 2026-10-28 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-arapca-14.png
+
+```
+Bunu biliyor muydunuz? Sınıf eşyalarından,,,, ve eril olup ile;,,, ve dişil olup ile kullanılır. Sınıftaki kişiler tanıtılırken erkek öğrenci için ve erkek arkadaşım için; kız öğrenci için ve kız arkadaşım için sözcükleri tercih edilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Arapça 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-arapca-hafta-14
+#derskutusu #arapça #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-din-kulturu-14
+Sıra: 2026-10-28 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-din-kulturu-14.png
+
+```
+Bunu biliyor muydunuz? Namaz, kulun günde beş vakit Yüce Allah'ın huzuruna çıkarak dua ve şükürle O'nunla iletişim kurmasını ve manevi huzura kavuşmasını sağlar. Ankebût suresi 45. ayette bildirildiği üzere bilinçle kılınan namaz, bireyde öz denetim oluşturarak insanı hayasızlıktan ve kötülükten alıkoyar.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Din Kültürü ve Ahlak Bilgisi 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-din-kulturu-ve-ahlak-bilgisi-hafta-14
+#derskutusu #dinkültürü #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-fen-bilimleri-14
+Sıra: 2026-10-28 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-fen-bilimleri-14.png
+
+```
+Bunu biliyor muydunuz? Bitki ve hayvan hücrelerinin her ikisinde de hücre zarı, sitoplazma ve çekirdek temel kısımları ile mitokondri, ribozom, golgi cisimciği, endoplazmik retikulum ve koful organelleri ortak olarak bulunur. Bitki hücresi cansız ve tam geçirgen hücre duvarı (çeperi) sayesinde köşeli bir şekle sahiptir ve kloroplast organeli ile fotosentez yaparak besin ve oksijen üretir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Fen Bilimleri 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-fen-bilimleri-hafta-14
+#derskutusu #fenbilimleri #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-ingilizce-14
+Sıra: 2026-10-28 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-ingilizce-14.png
+
+```
+Bunu biliyor muydunuz? Basic body parts include head, face, eye, nose, neck, arm, hand, finger, leg, foot (plural: feet), tooth (plural: teeth), hair, body, and height. Physical appearance is described with «am/is/are» for height and build (tall, short, thin, average) and «have got / has got» for hair (curly, wavy, straight), eyes, and face shape (round, oval, square).
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf İngilizce 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-ingilizce-hafta-14
+#derskutusu #ingilizce #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-kuran-i-kerim-14
+Sıra: 2026-10-29 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-kuran-i-kerim-14.png
+
+```
+Bunu biliyor muydunuz? Tenvin, isimlerin yalnızca son harfinde bulunan ve harfe cezimli nûn sesi katan çift hareke işaretidir. İki üstün ( - fethateyn) ince harfleri «-en», kalın harfleri «-an»; iki esre ( - kesrateyn) ince harfleri «-in», kalın harfleri «-ın»; iki ötre ( - dammeteyn) ise «-ün / -un» sesiyle okutur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Kur’an-ı Kerim 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-kuran-i-kerim-hafta-14
+#derskutusu #kuranıkerim #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-matematik-14
+Sıra: 2026-10-29 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-matematik-14.png
+
+```
+Bunu biliyor muydunuz? Doğal sayılarla çok adımlı gerçek yaşam problemleri; problemi anlama, plan kurma, planı adım adım uygulama ve sonucu tahmin/ters işlemle kontrol etme aşamalarıyla çözülür. Kat ve fazlalık içeren problemlerde önce fazlalık toplamdan çıkarılıp toplam kat sayısına bölünerek 1 kat bulunur; kalanlı bölme problemlerinde ise bağlama göre Bölüm veya (Bölüm + 1) yorumlanır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Matematik 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-matematik-hafta-14
+#derskutusu #matematik #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-peygamberimizin-hayati-14
+Sıra: 2026-10-29 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-peygamberimizin-hayati-14.png
+
+```
+Bunu biliyor muydunuz? Peygamberimizin (sav) çocuklara gösterdiği şefkat, merhamet, güler yüz ve saygı; Asrısaadet çocuklarının O'na derin bir sevgi ve güvenle bağlanmasını sağlamıştır. Medineli çocuklar hicret sırasında Seniyyetü'l-Vedâ tepesinde Peygamberimizi şiirlerle karşılamış, sefer dönüşlerinde ise O'nu ilk karşılayan olmak için yarışmışlardır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Peygamberimizin Hayatı 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-peygamberimizin-hayati-hafta-14
+#derskutusu #peygamberimizinhayatı #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-sosyal-bilgiler-14
+Sıra: 2026-10-29 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-sosyal-bilgiler-14.png
+
+```
+Bunu biliyor muydunuz? Ortak miras; geçmiş uygarlıkların birikimiyle oluşan, tüm insanlığın ortak hazinesi kabul edilen ve gelecek kuşaklara aktarılması gereken maddi ve manevi değerlerdir. Tarihî yapılar, anıtlar, antik kentler (Göbeklitepe, Efes, Hattuşa, Divriği Ulu Camii, Selimiye Camii, Safranbolu) ve müzelerdeki eserler somut kültürel mirasımızdır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Sosyal Bilgiler 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-sosyal-bilgiler-hafta-14
+#derskutusu #sosyalbilgiler #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-temel-dini-bilgiler-14
+Sıra: 2026-10-29 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-temel-dini-bilgiler-14.png
+
+```
+Bunu biliyor muydunuz? İbadetler dayandıkları dinî delillerin gücüne ve bağlayıcılık derecesine göre Farz, Vacip ve Sünnet olmak üzere üç temel hüküm grubuna ayrılır. Kesin ve açık delille emredilen farz ibadetler; her bireyin bizzat yapması gereken farz-ı ayn (beş vakit namaz, cuma, ramazan orucu, zekât, hac) ve bir kısmın yapmasıyla yeterli olan farz-ı kifâye (cenaze namazı) olarak ikiye.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Temel Dinî Bilgiler 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-temel-dini-bilgiler-hafta-14
+#derskutusu #temeldinibilgiler #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-turkce-14
+Sıra: 2026-10-29 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-turkce-14.png
+
+```
+Bunu biliyor muydunuz? Metinlerde kelimelerin doğrudan anlattığı bilgiye yüzey anlam, mecaz ve sembollerle satır aralarında sezdirilen asıl iletiye ise derin anlam denir; «yüreğe nakış işlemek» derin anlamda kalbi sevgi ve erdemle bezemektir. Öyküleyici metinler olay örgüsü, şahıs ve varlık kadrosu, yer (mekân) ve zaman unsurlarından oluşur; metinler yapıca Giriş (Serim), Gelişme (Düğüm) ve Sonuç (Çözüm) bölümlerine ayrılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Türkçe 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-turkce-hafta-14
+#derskutusu #türkçe #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-arapca-14
+Sıra: 2026-10-30 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-arapca-14.png
+
+```
+Bunu biliyor muydunuz? Okulun Bölümleri: (sınıf), (kütüphane), (laboratuvar), (müdür odası), (öğretmenler odası), (kantin) ve (spor salonu) temel birimlerdir. Okul Eşyaları: (akıllı tahta), (yerküre), (mikroskop), (raf) ve (duyuru panosu) başlıca eğitim araçlarıdır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Arapça 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-arapca-hafta-14
+#derskutusu #arapça #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-din-kulturu-14
+Sıra: 2026-10-30 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-din-kulturu-14.png
+
+```
+Bunu biliyor muydunuz? Orucun Amacı ve Takva: Bakara Suresi 183. ayete göre orucun temel gayesi, kulda Allah'a karşı sorumluluk bilinci (takva) ve gösterişten uzak samimiyet (ihlas) oluşturmaktır. İrade ve Sabır Eğitimi: «Oruç sabrın yarısıdır.» hadisinde belirtildiği üzere oruç, nefsin isteklerini kontrol etmeyi ve zorluklara karşı sabırlı olmayı öğretir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Din Kültürü ve Ahlak Bilgisi 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-din-kulturu-ve-ahlak-bilgisi-hafta-14
+#derskutusu #dinkültürü #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-fen-bilimleri-14
+Sıra: 2026-10-30 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-fen-bilimleri-14.png
+
+```
+Bunu biliyor muydunuz? Temel Yansıma Elemanları: Yüzeye gelen ışına gelen ışın, yüzeyden dönen ışına yansıyan ışın, değme noktasından yüzeye 90° dik çizilen hayali çizgiye ise yüzeyin normali (N) denir. Gelme ve Yansıma Açısı: Gelen ışının normalle yaptığı açı gelme açısı (i), yansıyan ışının normalle yaptığı açı yansıma açısıdır (r); ayna yüzeyiyle yapılan açı gelme açısı değildir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Fen Bilimleri 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-fen-bilimleri-hafta-14
+#derskutusu #fenbilimleri #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-ingilizce-14
+Sıra: 2026-10-30 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-ingilizce-14.png
+
+```
+Bunu biliyor muydunuz? Body Parts & Appearance: «knee (diz), ankle (ayak bileği), stomach (mide), heart (kalp), back (sırt), skin (cilt)» vücut bölümleridir; dış görünüş «What does he/she look like?» sorusuyla ve «is / has got» yapılarıyla anlatılır. Clothes & Accessories: «swimsuit (mayo), tights (tayt), trainers (spor ayakkabı), kit (spor forması), pocket (cep), jewellery (takı), necklace (kolye), bracelet (bileklik), chain (zincir), wallet / purse (cüzdan)» temel giyim ve.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf İngilizce 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-ingilizce-hafta-14
+#derskutusu #ingilizce #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-kuran-i-kerim-14
+Sıra: 2026-10-30 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-kuran-i-kerim-14.png
+
+```
+Bunu biliyor muydunuz? Hz. Yunus (as) kıssası Kur'an-ı Kerim'de Yunus, Enbiyâ, Sâffât ve Kalem surelerinde farklı yönleriyle anlatılır; kıssadaki olaylar birbirine neden-sonuç zinciriyle bağlıdır. Yunus suresi 98. ayette bildirildiği üzere, azap belirtilerini gördüğünde samimiyetle iman edip tövbesi kabul edilen ve dünyadaki helakten kurtulan tek topluluk Hz. Yunus'un kavmi (Ninova halkı) olmuştur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Kur’an-ı Kerim 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-kuran-i-kerim-hafta-14
+#derskutusu #kuranıkerim #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-matematik-14
+Sıra: 2026-10-30 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-matematik-14.png
+
+```
+Bunu biliyor muydunuz? Kategorik veriler sıklık tablosu, sütun grafiği ve daire grafiğiyle; nicel (kesikli) veriler ise nokta grafiği ve kök-yaprak gösterimiyle görselleştirilir. Kök-yaprak gösteriminde verilerin büyük basamakları (örneğin onlar basamağı) 'kök' sütununa, birler basamağı ise küçükten büyüğe sıralanarak 'yaprak' sütununa yazılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Matematik 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-matematik-hafta-14
+#derskutusu #matematik #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-peygamberimizin-hayati-14
+Sıra: 2026-10-31 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-peygamberimizin-hayati-14.png
+
+```
+Bunu biliyor muydunuz? Asrısaadet gençlerinin Peygamber Efendimize (sav) duyduğu derin sevgi; onun gençlere gösterdiği şefkat, güven, anlayış ve kusursuz örnek şahsiyetinden beslenmiştir. Peygamberimiz (sav) gençlerin hata ve sorularını asla azarlayarak karşılamamış; empati, ikna, dua ve onurlandırma yöntemiyle onların gönüllerini kazanmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Peygamberimizin Hayatı 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-peygamberimizin-hayati-hafta-14
+#derskutusu #peygamberimizinhayatı #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-sosyal-bilgiler-14
+Sıra: 2026-10-31 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-sosyal-bilgiler-14.png
+
+```
+Bunu biliyor muydunuz? VII–XIII. yüzyıllar arası dönem, Avrupa'da bilimsel çalışmaların durgun olduğu bir çağda İslam dünyasının eğitim, bilim, tıp, astronomi ve sanatta zirveye ulaştığı 'İslam Medeniyetinin Altın Çağı' olarak anılır. Abbasiler döneminde Bağdat'ta kurulan Beytü'l-Hikme (Bilgelik Evi) ve Büyük Selçuklu veziri Nizamülmülk tarafından açılan Nizamiye Medreseleri dünyanın en gelişmiş akademi ve üniversiteleri olmuştur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Sosyal Bilgiler 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-sosyal-bilgiler-hafta-14
+#derskutusu #sosyalbilgiler #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-temel-dini-bilgiler-14
+Sıra: 2026-10-31 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-temel-dini-bilgiler-14.png
+
+```
+Bunu biliyor muydunuz? Akıllı ve ergenlik çağına ulaşmış (mükellef) Müslümanların davranış ve ibadetleri dini hükümlerine göre farz, vacip ve sünnet (müstehap/nafile) olarak sınıflandırılır. Farz, Yüce Allah'ın Kur'an-ı Kerim'de veya mütevâtir sünnette kesin ve açık bir delille (kat'î delil) emrettiği ibadetlerdir; farz-ı ayn (bireysel) ve farz-ı kifâye (toplumsal) olmak üzere ikiye ayrılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Temel Dinî Bilgiler 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-temel-dini-bilgiler-hafta-14
+#derskutusu #temeldinibilgiler #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-turkce-14
+Sıra: 2026-10-31 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-turkce-14.png
+
+```
+Bunu biliyor muydunuz? 3. Tema (Farklı Dünyalar) kapsamında 'Ova Çocuk' metninin devamı ile 'Mısır-İspanya-Norveç' gezi/bilgilendirici metni üzerinden coğrafi koşulların kültür, yaşam biçimi ve iletişim üzerindeki etkisi karşılaştırılır. Mısır'da Nil Nehri ve çöl iklimi, İspanya'da ılıman Akdeniz iklimi ve Endülüs mirası, Norveç'te ise fiyortlar, kutup soğuğu ve kuzey ışıkları insanların giyim, beslenme ve sosyal alışkanlıklarını şekillendirmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Türkçe 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-turkce-hafta-14
+#derskutusu #türkçe #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-arapca-14
+Sıra: 2026-10-31 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-arapca-14.png
+
+```
+Bunu biliyor muydunuz? Yağışlı Hava İfadeleri: (Hava yağmurludur), (Yağmur yağıyor), (Hava bulutludur) ve (Hava sislidir) temel kalıplardır. Giysiler ve Eşyalar: Yağmurlu ve soğuk havada (şemsiye), (palto), (eldiven) ve (atkı) kullanılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Arapça 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-arapca-hafta-14
+#derskutusu #arapça #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-din-kulturu-14
+Sıra: 2026-10-31 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-din-kulturu-14.png
+
+```
+Bunu biliyor muydunuz? Kâfirun Suresinin Kimliği: Mekke döneminde inen, 6 ayetten oluşan ve Mushaf'ta 109. sırada yer alan Kâfirun suresi, adını ilk ayetteki 'el-Kâfirûn' kelimesinden alır. İniş Sebebi (Nüzul Ortamı): Mekkeli müşriklerin 'bir yıl sen bizim putlarımıza, bir yıl biz senin ilahına tapalım' teklifini kesin olarak reddetmek için indirilmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Din Kültürü ve Ahlak Bilgisi 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-din-kulturu-ve-ahlak-bilgisi-hafta-14
+#derskutusu #dinkültürü #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-fen-bilimleri-14
+Sıra: 2026-11-01 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-fen-bilimleri-14.png
+
+```
+Bunu biliyor muydunuz? Dolaşım Sistemi Sağlığı: Dengeli beslenme, düzenli spor ve sigaradan uzak durma kalp-damar sağlığını korur; tıkanıklıklarda anjiyo, balon, stent, bypass ve kalp pili uygulanır. Üst Solunum Organları: Burun havayı ısıtır, nemlendirir ve temizler; yutak havayı gırtlağa iletir; gırtlak ses tellerini taşır ve gırtlak kapağıyla soluk borusunu korur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Fen Bilimleri 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-fen-bilimleri-hafta-14
+#derskutusu #fenbilimleri #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-ingilizce-14
+Sıra: 2026-11-01 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-ingilizce-14.png
+
+```
+Bunu biliyor muydunuz? Describing Frequency: Yabani hayvanların alışkanlıkları always, usually, often, sometimes, rarely, never sıklık zarfları ve How often...? sorusuyla anlatılır. Making Simple Inquiries: Hayvanların yaşam alanı (Where), besini (What), ağırlığı (How much), boyu (How tall/long) ve ömrü (How long do they live) Wh- sorularıyla sorgulanır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf İngilizce 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-ingilizce-hafta-14
+#derskutusu #ingilizce #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-kuran-i-kerim-14
+Sıra: 2026-11-01 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-kuran-i-kerim-14.png
+
+```
+Bunu biliyor muydunuz? Yeniden Dirilme (Ba's) Kıssası: Bakara suresi 259. ayette, yıkılmış bir şehre uğrayıp dirilişi tefekkür eden salih bir kulun (Hz. Üzeyir) 100 yıl öldürülüp yeniden diriltilmesi anlatılır. Zaman Algısı: Yüz yıl sonra diriltilen kul, kendisine 'Ne kadar kaldın?' diye sorulunca 'Bir gün veya günün bir kısmı kadar' cevabını vermiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Kur’an-ı Kerim 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-kuran-i-kerim-hafta-14
+#derskutusu #kuranıkerim #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-matematik-14
+Sıra: 2026-11-01 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-matematik-14.png
+
+```
+Bunu biliyor muydunuz? Veri Türleri: Nitelik ve grup belirten veriler kategorik, sayma ile elde edilenler nicel (kesikli), ölçme ile elde edilip ondalık değer alabilenler (boy, kütle, sıcaklık, süre) nicel (sürekli) veridir. Grafik Seçimi: Kategorik karşılaştırmada sütun grafiği, parça-bütün oranında daire grafiği (Merkez açı = Veri/Toplam çarpı 360 derece), zamana bağlı değişimde çizgi grafiği, yığılma ve uç değer analizinde nokta grafiği kullanılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Matematik 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-matematik-hafta-14
+#derskutusu #matematik #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-peygamberimizin-hayati-14
+Sıra: 2026-11-01 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-peygamberimizin-hayati-14.png
+
+```
+Bunu biliyor muydunuz? Ashap ve Muhacir: Peygamberimizi mümin olarak gören arkadaşlarına sahabi (ashap), inançları uğruna Mekke'den Habeşistan ve Medine'ye göç edenlere muhacir denir. İtimat, Sadakat ve Sıddık: Sahabiler Peygamberimize tam güven (itimat) ve içten bağlılık (sadakat) göstermiş; Hz. Ebu Bekir tereddütsüz tasdikiyle 'es-Sıddık' unvanını almıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Peygamberimizin Hayatı 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-peygamberimizin-hayati-hafta-14
+#derskutusu #peygamberimizinhayatı #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-sosyal-bilgiler-14
+Sıra: 2026-11-01 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-sosyal-bilgiler-14.png
+
+```
+Bunu biliyor muydunuz? Islahatların Nedenleri: Coğrafi Keşifler, Rönesans, Sanayi İnkılabı ve Fransız İhtilali karşısında gerileyen Osmanlı Devleti, kurumlarını yenilemek ve dağılmayı önlemek için ıslahatlar yapmıştır. Lale Devri (1718-1730): İlk geçici elçilikler, İbrahim Müteferrika tarafından kurulan ilk Türk matbaası (1727), Tulumbacılar Ocağı (itfaiye), kağıt fabrikası ve çiçek aşısı bu dönemin yenilikleridir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Sosyal Bilgiler 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-sosyal-bilgiler-hafta-14
+#derskutusu #sosyalbilgiler #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-temel-dini-bilgiler-14
+Sıra: 2026-11-02 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-temel-dini-bilgiler-14.png
+
+```
+Bunu biliyor muydunuz? Mükellef ve Ef'âl-i Mükellefîn: Akıllı ve ergenlik çağına ulaşmış sorumlu Müslümana mükellef, davranışlarının dini hükümlerine ise ef'âl-i mükellefîn denir. Farz İbadetler: Kesin delille emredilen ibadetlerdir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Temel Dinî Bilgiler 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-temel-dini-bilgiler-hafta-14
+#derskutusu #temeldinibilgiler #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-turkce-14
+Sıra: 2026-11-02 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-turkce-14.png
+
+```
+Bunu biliyor muydunuz? Eskici Hikâyesi: Refik Halit Karay'ın eserinde küçük Hasan'ın yabancı bir diyarda çektiği yalnızlık ve Türkçe konuşan eskiciyle kurduğu sıcak bağ üzerinden ana dilin ve iletişimin önemi anlatılır. Ya Hayır Söyle.. ve Nezaket: Yüz yüze ve dijital iletişim ortamlarında kırıcı sözlerden kaçınmak, ben dili kullanmak, söz kesmeden etkin dinlemek ve görgü kurallarına uymak esastır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Türkçe 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-turkce-hafta-14
+#derskutusu #türkçe #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-arapca-14
+Sıra: 2026-11-02 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-arapca-14.png
+
+```
+Bunu biliyor muydunuz? Arapçada dostluk ve arkadaşlık kavramı, erkek arkadaş (çoğulu ), kız arkadaş ise (çoğulu ) kelimesiyle ifade edilir. Gerçek ve vefalı bir dost; doğru sözlü, güvenilir, sır saklayan ve hoşgörülü kişidir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Arapça 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-arapca-hafta-14
+#derskutusu #arapça #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-din-kulturu-14
+Sıra: 2026-11-02 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-din-kulturu-14.png
+
+```
+Bunu biliyor muydunuz? Maun suresi Mekke döneminde inmiştir, 7 ayettir ve Kur'an-ı Kerim'in 107. suresidir; adını 7. ayette geçen ve 'yardım, zekât, ödünç verilen ev eşyası' anlamına gelen kelimesinden alır. Surenin ilk ayetindeki 'dini yalanlayan' ifadesi, İslam dinini veya ahiretteki hesap ve ceza gününü inkâr eden kimseyi anlatır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Din Kültürü ve Ahlak Bilgisi 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-din-kulturu-ve-ahlak-bilgisi-hafta-14
+#derskutusu #dinkültürü #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-fen-bilimleri-14
+Sıra: 2026-11-02 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-fen-bilimleri-14.png
+
+```
+Bunu biliyor muydunuz? Fiziksel değişimlerde maddenin molekül yapısı ve kimliği değişmezken, kimyasal değişimlerde atomlar arasındaki bağlar kopar ve yeni bağlar kurularak farklı özellikte yeni maddeler oluşur. Maddelerin kimyasal değişime uğrayarak yeni maddeler oluşturması sürecine kimyasal tepkime denir; tepkime okunun sol tarafına girenler, sağ tarafına ise ürünler yazılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Fen Bilimleri 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-fen-bilimleri-hafta-14
+#derskutusu #fenbilimleri #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-ingilizce-14
+Sıra: 2026-11-02 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-ingilizce-14.png
+
+```
+Bunu biliyor muydunuz? Telefon görüşmelerinde arayan kişi kendini tanıtırken 'I am...' yerine 'Hello! This is [İsim] calling' veya '[İsim] speaking' kalıplarını kullanır. Telefonda birini isterken samimi ortamlarda 'Is... in?' veya 'Is... there?', resmi ortamlarda ise 'May / Could I speak to...?' ve 'Could you put me through to...?' ifadeleri tercih edilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf İngilizce 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-ingilizce-hafta-14
+#derskutusu #ingilizce #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-inkilap-tarihi-14
+Sıra: 2026-11-03 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-inkilap-tarihi-14.png
+
+```
+Bunu biliyor muydunuz? Kurtuluş Savaşı'nda Türk milleti Doğu, Güney ve Batı olmak üzere üç ana cephede bağımsızlık mücadelesi vermiştir. Doğu Cephesi'nde Kâzım Karabekir Paşa komutasındaki 15. Kolordu (Osmanlı'dan kalan düzenli ordu) Ermenileri mağlup etmiş ve 3 Aralık 1920'de Gümrü Antlaşması imzalanmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf T.C. İnkılap Tarihi 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-tc-inkilap-tarihi-ve-ataturkculuk-hafta-14
+#derskutusu #inkılaptarihi #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-kuran-i-kerim-14
+Sıra: 2026-11-03 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-kuran-i-kerim-14.png
+
+```
+Bunu biliyor muydunuz? Sabır; sözlükte 'engellemek, tutmak ve direnç göstermek', dinî terim olarak ise 'Allah rızası için zorluklara göğüs germek, ibadetlerde devamlı olmak ve nefsi günahlardan korumak' demektir. İslam ahlakında sabır üç temel boyutta yaşanır: ibadet ve taatte sabır, günahlara karşı sabır ve bela/musibetlere karşı sabır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Kur’an-ı Kerim 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-kuran-i-kerim-hafta-14
+#derskutusu #kuranıkerim #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-matematik-14
+Sıra: 2026-11-03 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-matematik-14.png
+
+```
+Bunu biliyor muydunuz? n tane olası durumun bulunduğu ve her bir çıktının gerçekleşme şansının eşit olduğu deneylerde, her bir çıktının olma olasılığı 1/n değerine eşittir. İstenilen çıktı sayısı fazla olan olay 'daha fazla olasılıklı', az olan olay 'daha az olasılıklı', çıktı sayıları birbirine eşit olan olaylar ise 'eşit olasılıklı' olarak adlandırılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Matematik 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-matematik-hafta-14
+#derskutusu #matematik #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-peygamberimizin-hayati-14
+Sıra: 2026-11-03 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-peygamberimizin-hayati-14.png
+
+```
+Bunu biliyor muydunuz? Kur'an-ı Kerim'in insanlara ulaştırılması (tebliğ) kadar, ayetlerin kastedilen anlamının açıklanması ve hayata geçirilmesi (tebyin / ) de Hz. Peygamber'in (s.a.v.) temel görevidir. Nahl suresi 44. ayette buyurulduğu üzere Allah, insanlara indirdiği vahyi açıklaması ve üzerinde düşünmeleri için Hz. Muhammed'i (s.a.v.) görevlendirmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Peygamberimizin Hayatı 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-peygamberimizin-hayati-hafta-14
+#derskutusu #peygamberimizinhayatı #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-temel-dini-bilgiler-14
+Sıra: 2026-11-03 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-temel-dini-bilgiler-14.png
+
+```
+Bunu biliyor muydunuz? İslam'da namaz başta olmak üzere pek çok ibadetin geçerli olabilmesi için ön şart taharet ( — maddi ve manevi temizlik) şartının yerine getirilmesidir. İbadete hazırlık temizliği ikiye ayrılır: Gözle görülen maddi kirlerden arınmaya necasetten taharet, abdestsizlik ve cünüplük gibi hükmi kirlilikten arınmaya ise hadesten taharet denir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Temel Dinî Bilgiler 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-temel-dini-bilgiler-hafta-14
+#derskutusu #temeldinibilgiler #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-turkce-14
+Sıra: 2026-11-03 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-turkce-14.png
+
+```
+Bunu biliyor muydunuz? Ergenekon Destanı, Göktürklerin (Kök Türklerin) düşman baskını sonrasında sığındıkları sarp dağlarla çevrili Ergenekon vadisinde çoğalıp demir dağı eriterek yeniden tarih sahnesine çıkışlarını anlatan doğal bir Türk destanıdır. Destanlarda bozkurt, demir, ışık, mağara/dağ ve ağaç gibi Türk kültürünün temel motifleri ile olağanüstü olaylar ve millî kahramanlar yer alır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Türkçe 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-turkce-hafta-14
+#derskutusu #türkçe #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-arapca-14
+Sıra: 2026-11-04 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-arapca-14.png
+
+```
+Bunu biliyor muydunuz? Sınıf ortamındaki müzekker (eril) nesneleri işaret ederken yakın işaret ismi olarak 'haza', müennes (dişil) nesneler için ise 'hazihi' yapısı kullanılır. Varlıkların sınıf içindeki konumunu belirtmek amacıyla 'fi' (içinde/de), 'ala' (üzerinde), 'emame' (önünde) ve 'halfa' (arkasında) yer zarfları ile harf-i cerler kullanılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Arapça 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-arapca-hafta-14
+#derskutusu #arapça #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-biyoloji-14
+Sıra: 2026-11-04 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-biyoloji-14.png
+
+```
+Bunu biliyor muydunuz? Enzimler, canlı hücrelerde gerçekleşen biyokimyasal tepkimelerin aktivasyon enerjisini düşürerek tepkime hızını artıran biyolojik katalizörlerdir. Sadece protein kısımdan oluşan enzimlere basit enzim; protein kısım (apoenzim) ile vitamin (koenzim) veya mineral (kofaktör) yapılı yardımcı kısımdan oluşan enzimlere bileşik enzim (holoenzim) denir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Biyoloji 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-biyoloji-hafta-14
+#derskutusu #biyoloji #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-cografya-14
+Sıra: 2026-11-04 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-cografya-14.png
+
+```
+Bunu biliyor muydunuz? Türkiye'nin 36-42 derece Kuzey paralelleri arasında (Orta Kuşak) yer alması dört mevsimin belirgin yaşanmasını, cephe yağışlarını ve güneyden kuzeye sıcaklığın azalmasını sağlar. Üç tarafının denizlerle çevrili olması, batıdan doğuya yükseltinin artması ve dağların kıyıya uzanış doğrultusu Türkiye'de kısa mesafelerde farklı iklim koşullarının görülmesine (göreceli konum) neden olur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Coğrafya 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-cografya-hafta-14
+#derskutusu #coğrafya #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-din-kulturu-14
+Sıra: 2026-11-04 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-din-kulturu-14.png
+
+```
+Bunu biliyor muydunuz? Bakara Suresi 177. ayet (Birr Ayeti), gerçek dindarlığın ve iyiliğin salt şekilsel yön tartışmalarından ibaret olmadığını, iman, ibadet ve ahlak bütünlüğü gerektirdiğini bildirir. Ayette geçen 'el-Birr' kavramı; kalpteki sağlam imanı, ihlasla yapılan ibadetleri, karşılıksız yardımlaşmayı (infak) ve üstün ahlaki erdemleri kapsayan en geniş iyilik terimidir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Din Kültürü ve Ahlak Bilgisi 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-din-kulturu-ve-ahlak-bilgisi-hafta-14
+#derskutusu #dinkültürü #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-edebiyat-14
+Sıra: 2026-11-04 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-edebiyat-14.png
+
+```
+Bunu biliyor muydunuz? Konuşmacının ilettiği duygu ve düşünceyi ön yargısız biçimde dinleyip, anlaşılan özü kendi cümleleriyle yeniden ifade ederek konuşmacıya geri bildirimde bulunma sürecidir. Emir vermek, yargılamak, alay etmek, sürekli kendi başından geçenleri anlatmak ve hazır öğütler sıralamak yansıtıcı dinlemeyi bozan başlıca iletişim engelleridir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Türk Dili ve Edebiyatı 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-turk-dili-ve-edebiyati-hafta-14
+#derskutusu #edebiyat #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-fizik-14
+Sıra: 2026-11-04 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-fizik-14.png
+
+```
+Bunu biliyor muydunuz? Cisimlerin hareketleri yörünge ve niteliklerine göre öteleme (doğrusal ilerleme), dönme (sabit eksen etrafında dolanma) ve titreşim (iki nokta arasında salınım) olarak üçe ayrılır. Alınan yol ve sürat yön belirtmeyen skaler büyüklükler iken; konum, yer değiştirme, hız ve ivme yönlü yani vektörel büyüklüklerdir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Fizik 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-fizik-hafta-14
+#derskutusu #fizik #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-ingilizce-14
+Sıra: 2026-11-05 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-ingilizce-14.png
+
+```
+Bunu biliyor muydunuz? Theme 4 (Family Life) pekiştirme bölümünde çekirdek ve geniş aile üyeleri, aile içi sorumluluklar (household chores) ve aile gelenekleri bütünleştirilir. Aile bireylerinin düzenli alışkanlıklarını anlatırken Present Simple Tense (always, usually, on Sundays), konuşma anında yaptıkları işleri anlatırken Present Continuous Tense (now, at the moment) kullanılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf İngilizce 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-ingilizce-hafta-14
+#derskutusu #ingilizce #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-kimya-14
+Sıra: 2026-11-05 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-kimya-14.png
+
+```
+Bunu biliyor muydunuz? İyonik bağ, genellikle metal atomlarının elektron vererek oluşturduğu pozitif yüklü katyonlar ile ametal atomlarının elektron alarak oluşturduğu negatif yüklü anyonlar arasındaki elektrostatik çekim kuvvetidir. Elektron alışverişi sonucunda hem katyon hem de anyon soy gaz elektron dizilimine (dublet veya oktet kararlılığına) ulaşır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Kimya 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-kimya-hafta-14
+#derskutusu #kimya #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-kuran-i-kerim-14
+Sıra: 2026-11-05 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-kuran-i-kerim-14.png
+
+```
+Bunu biliyor muydunuz? Tecvit ilminde 'med', kendisinde uzatma özelliği bulunan med harfleriyle (,, ) sesi belirli bir ölçüde uzatarak okumak demektir. Hareketsiz bulunan Elif harfinden önce üstün, Vav harfinden önce ötre, Ya harfinden önce esre geldiğinde bu harfler med harfi olur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Kur’an-ı Kerim 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-kuran-i-kerim-hafta-14
+#derskutusu #kuranıkerim #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-matematik-14
+Sıra: 2026-11-05 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-matematik-14.png
+
+```
+Bunu biliyor muydunuz? Bir üçgende ölçüsü büyük olan iç açının karşısında uzun olan kenar, ölçüsü küçük olan iç açının karşısında ise kısa olan kenar bulunur. Üçgen Eşitsizliği Teoremi'ne göre bir üçgende herhangi bir kenarın uzunluğu, diğer iki kenarın uzunlukları farkının mutlak değerinden büyük, toplamından küçüktür.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Matematik 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-matematik-hafta-14
+#derskutusu #matematik #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-peygamberimizin-hayati-14
+Sıra: 2026-11-05 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-peygamberimizin-hayati-14.png
+
+```
+Bunu biliyor muydunuz? Hicretle birlikte Yesrib şehri 'Medinetü'n-Nebi' (Peygamber Şehri / Medine) adını almış ve İslam'ın inanç, ibadet, hukuk ve devlet düzenine kavuştuğu merkez olmuştur. Medine'de ilk iş olarak inşa edilen Mescid-i Nebi yalnız bir ibadethane değil; eğitim kurumu (Suffe), istişare meclisi, yargı makamı ve devlet yönetim merkezi olarak görev yapmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Peygamberimizin Hayatı 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-peygamberimizin-hayati-hafta-14
+#derskutusu #peygamberimizinhayatı #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-tarih-14
+Sıra: 2026-11-05 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-tarih-14.png
+
+```
+Bunu biliyor muydunuz? Neolitik Çağ'daki Tarım Devrimi ve sulamalı tarım sonucunda ortaya çıkan 'artı ürün' (ihtiyaç fazlası üretim); özel mülkiyeti, iş bölümünü, toplumsal tabakalaşmayı ve artı ürünü koruyup dağıtacak devlet organizasyonunu. Eski Çağ'da siyasi yapılar ölçeklerine göre şehir devletleri (Sümerlerde Site, Mısır'da Nom, Yunan'da Polis), merkezî krallıklar (Hitit, Babil, Lidya) ve çok uluslu imparatorluklar (Akad, Pers, İskender, Roma, Asya Hun) olarak.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Tarih 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-tarih-hafta-14
+#derskutusu #tarih #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-temel-dini-bilgiler-14
+Sıra: 2026-11-06 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-temel-dini-bilgiler-14.png
+
+```
+Bunu biliyor muydunuz? Namaz ve oruç bedenî ibadetlerdir (vekaletle yapılamaz); zekât ve kurban malî ibadetlerdir; hac ise hem bedenî hem de malî bir ibadettir. Zekât, sadaka ve kurban ibadetleri servetin sadece zenginler arasında dolaşan bir güç olmasını engeller; fakir ile zengin arasındaki sevgi ve güven bağını güçlendirir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Temel Dinî Bilgiler 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-temel-dini-bilgiler-hafta-14
 #derskutusu #temeldinibilgiler #9sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
