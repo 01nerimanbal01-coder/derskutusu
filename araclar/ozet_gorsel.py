@@ -8,9 +8,127 @@ Kurallar: çizgiler yazıya ve dairelere değmez; her görselde renk anlamlıdı
 """
 import json
 import math
+import html
 from pathlib import Path
 
 OZET = Path(__file__).resolve().parent / 'ozetler'
+
+DERS_RENK = {
+    "tarih": {"ana": "#b45309", "orta": "#d97706", "koyu": "#78350f", "arka": "#fffbeb", "kart_arka": "#ffffff", "cizgi": "#fde68a"},
+    "tefsir": {"ana": "#047857", "orta": "#059669", "koyu": "#064e3b", "arka": "#f0fdf4", "kart_arka": "#ffffff", "cizgi": "#a7f3d0"},
+    "temel-dini-bilgiler": {"ana": "#0f766e", "orta": "#0d9488", "koyu": "#134e4a", "arka": "#f0fdfa", "kart_arka": "#ffffff", "cizgi": "#99f6e4"},
+    "turk-dili-ve-edebiyati": {"ana": "#1d4ed8", "orta": "#2563eb", "koyu": "#1e3a8a", "arka": "#eff6ff", "kart_arka": "#ffffff", "cizgi": "#bfdbfe"},
+    "dinler-tarihi": {"ana": "#047857", "orta": "#059669", "koyu": "#064e3b", "arka": "#f0fdf4", "kart_arka": "#ffffff", "cizgi": "#a7f3d0"},
+}
+
+def svg_baslat(w=760, h=250):
+    return ({"w": w, "h": h, "ic": []}, w, h)
+
+def arka_plan(svg_obj, w, h, renk):
+    arka = renk.get("arka", "#f8fafc") if isinstance(renk, dict) else "#f8fafc"
+    cizgi = renk.get("cizgi", "#cbd5e1") if isinstance(renk, dict) else "#cbd5e1"
+    svg_obj["ic"].append(
+        f'<rect width="{w}" height="{h}" rx="12" fill="{arka}" stroke="{cizgi}" stroke-width="1.5"/>'
+    )
+
+def baslik_eki(svg_obj, w, baslik, alt_baslik, renk):
+    koyu = renk.get("koyu", "#0f172a") if isinstance(renk, dict) else "#0f172a"
+    orta = renk.get("orta", "#475569") if isinstance(renk, dict) else "#475569"
+    svg_obj["ic"].append(
+        f'<text x="{w/2}" y="26" text-anchor="middle" font-size="14" font-weight="bold" fill="{koyu}">{html.escape(str(baslik))}</text>'
+    )
+    if alt_baslik:
+        svg_obj["ic"].append(
+            f'<text x="{w/2}" y="44" text-anchor="middle" font-size="11.5" fill="{orta}">{html.escape(str(alt_baslik))}</text>'
+        )
+
+def kutu(svg_obj, x, y, w, h, baslik, maddeler, renk):
+    orta = renk.get("orta", "#2563eb") if isinstance(renk, dict) else "#2563eb"
+    kart_arka = renk.get("kart_arka", "#ffffff") if isinstance(renk, dict) else "#ffffff"
+    cizgi = renk.get("cizgi", "#cbd5e1") if isinstance(renk, dict) else "#cbd5e1"
+    svg_obj["ic"].append(
+        f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="8" fill="{kart_arka}" stroke="{cizgi}" stroke-width="1.5"/>'
+    )
+    svg_obj["ic"].append(
+        f'<rect x="{x}" y="{y}" width="{w}" height="28" rx="8" fill="{orta}"/>'
+    )
+    svg_obj["ic"].append(
+        f'<text x="{x + w/2}" y="{y + 19}" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">{html.escape(str(baslik))}</text>'
+    )
+    if isinstance(maddeler, (list, tuple)):
+        for idx, m in enumerate(maddeler):
+            my = y + 48 + idx * 22
+            svg_obj["ic"].append(
+                f'<text x="{x + 10}" y="{my}" font-size="10" fill="#334155">• {html.escape(str(m))}</text>'
+            )
+
+def kart_Akis(svg_obj, x, y, w, h, kartlar, renk):
+    orta = renk.get("orta", "#2563eb") if isinstance(renk, dict) else "#2563eb"
+    n = len(kartlar) if kartlar else 1
+    aralik = 10
+    kw = (w - (n - 1) * aralik) / n
+    for i, item in enumerate(kartlar):
+        kx = x + i * (kw + aralik)
+        baslik, aciklama = item if isinstance(item, (list, tuple)) else (str(item), "")
+        svg_obj["ic"].append(
+            f'<rect x="{kx}" y="{y}" width="{kw}" height="{h}" rx="8" fill="#ffffff" stroke="{orta}" stroke-width="1.5"/>'
+        )
+        svg_obj["ic"].append(
+            f'<rect x="{kx}" y="{y}" width="{kw}" height="26" rx="8" fill="{orta}"/>'
+        )
+        svg_obj["ic"].append(
+            f'<text x="{kx + kw/2}" y="{y + 18}" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#ffffff">{html.escape(str(baslik))}</text>'
+        )
+        if aciklama:
+            svg_obj["ic"].append(
+                f'<text x="{kx + kw/2}" y="{y + 48}" text-anchor="middle" font-size="9.5" fill="#334155">{html.escape(str(aciklama))}</text>'
+            )
+
+def merkez_Etiket(svg_obj, cx, cy, merkez_baslik, kollar, renk):
+    orta = renk.get("orta", "#2563eb") if isinstance(renk, dict) else "#2563eb"
+    koyu = renk.get("koyu", "#1e3a8a") if isinstance(renk, dict) else "#1e3a8a"
+    mw, mh = 140, 40
+    svg_obj["ic"].append(
+        f'<rect x="{cx - mw/2}" y="{cy - mh/2}" width="{mw}" height="{mh}" rx="10" fill="{koyu}" stroke="{orta}" stroke-width="2"/>'
+    )
+    svg_obj["ic"].append(
+        f'<text x="{cx}" y="{cy + 6}" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">{html.escape(str(merkez_baslik))}</text>'
+    )
+    yonler = [
+        (cx - 240, cy - 60),
+        (cx + 100, cy - 60),
+        (cx - 240, cy + 30),
+        (cx + 100, cy + 30),
+    ]
+    for idx, item in enumerate(kollar):
+        if idx >= len(yonler):
+            break
+        kx, ky = yonler[idx]
+        baslik, aciklama = item if isinstance(item, (list, tuple)) else (str(item), "")
+        svg_obj["ic"].append(
+            f'<rect x="{kx}" y="{ky}" width="140" height="44" rx="6" fill="#ffffff" stroke="{orta}" stroke-width="1.5"/>'
+        )
+        svg_obj["ic"].append(
+            f'<text x="{kx + 70}" y="{ky + 18}" text-anchor="middle" font-size="10.5" font-weight="bold" fill="{koyu}">{html.escape(str(baslik))}</text>'
+        )
+        if aciklama:
+            svg_obj["ic"].append(
+                f'<text x="{kx + 70}" y="{ky + 34}" text-anchor="middle" font-size="9" fill="#475569">{html.escape(str(aciklama))}</text>'
+            )
+
+def ok_ciz(svg_obj, x1, y1, x2, y2, renk):
+    c_renk = renk if isinstance(renk, str) else renk.get("ana", "#2563eb") if isinstance(renk, dict) else "#2563eb"
+    svg_obj["ic"].append(
+        f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{c_renk}" stroke-width="2" stroke-linecap="round"/>'
+    )
+
+def svg_bitir(svg_obj):
+    return (
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {svg_obj["w"]} {svg_obj["h"]}" '
+        f'width="100%" font-family="system-ui, -apple-system, sans-serif">'
+        f'{"".join(svg_obj["ic"])}</svg>'
+    )
+
 
 
 def svg(w, h, ic, etiket):
@@ -1169,7 +1287,13 @@ if __name__ == '__main__':
     _gorsel_dizin = Path(__file__).resolve().parent / 'gorseller'
     if str(_gorsel_dizin) not in _sys.path:
         _sys.path.insert(0, str(_gorsel_dizin))
+    import _ozet_gorsel_ortak
+    _sys.modules.setdefault('ozet_gorsel_ortak', _ozet_gorsel_ortak)
+    for _k, _v in vars(_ozet_gorsel_ortak).items():
+        if not _k.startswith('__'):
+            globals().setdefault(_k, _v)
     _sys.modules.setdefault('ozet_gorsel', _sys.modules[__name__])
+    _sys.modules.setdefault('araclar.ozet_gorsel', _sys.modules[__name__])
     for modul in sorted(_gorsel_dizin.glob('*.py')):
         if modul.name.startswith('_'):
             continue
@@ -1206,5 +1330,12 @@ if __name__ == '__main__':
                 if svg_ic and v.get('bolumler'):
                     v['bolumler'][0]['gorsel'] = svg_ic
             yaz(hedef, _uygula_ciz)
+        elif hasattr(m, 'gorsel_1'):
+            def _uygula_fonks(v, _m=m):
+                fonks = [getattr(_m, f'gorsel_{i}') for i in range(1, 10) if hasattr(_m, f'gorsel_{i}')]
+                for i, b in enumerate(v.get('bolumler', [])):
+                    if i < len(fonks):
+                        b['gorsel'] = fonks[i]()
+            yaz(hedef, _uygula_fonks)
     print('görseller yazıldı')
 

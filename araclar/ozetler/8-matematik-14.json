@@ -1,0 +1,492 @@
+{
+  "ad": "8-matematik-14",
+  "sinif": 8,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 14,
+  "tarih": "21-25 Aralık 2026",
+  "yayin_tarihi": "2026-12-21",
+  "unite": "Olasılık",
+  "konu": "Basit Olayların Olma Olasılığı: Eşit Şansa Sahip Olaylar, Olasılık Değeri Aralığı ve Olasılık Hesaplama",
+  "ciktilar": [
+    "M.8.5.1.2. “Daha fazla”, “eşit”, “daha az” olasılıklı olayları ayırt eder, örnek verir.",
+    "M.8.5.1.3. Eşit şansa sahip olan olaylarda her bir çıktının olasılık değerinin eşit olduğunu ve bu değerin 1/n olduğunu açıklar.",
+    "M.8.5.1.4. Olasılık değerinin 0 ile 1 arasında (0 ve 1 dâhil) olduğunu anlar.",
+    "M.8.5.1.5. Basit bir olayın olma olasılığını hesaplar."
+  ],
+  "terimler": [
+    {
+      "terim": "Eş Olasılıklı (Eşit Şansa Sahip) Olaylar",
+      "anlam": "Bir deneyde olası durum sayısının n olduğu ve her bir çıktının gerçekleşme şansının birbirine eşit olarak {kesir:1|n} değerini aldığı olaylar."
+    },
+    {
+      "terim": "Olasılık",
+      "anlam": "Bir olayın gerçekleşme veya gerçekleşmeme şansına ilişkin 0 ile 1 arasında (0 ve 1 dâhil) verilen sayısal ölçüm değeri."
+    },
+    {
+      "terim": "Kesin Olay",
+      "anlam": "Deneyin her türlü sonucunda gerçekleşmesi garanti olan, olma olasılığı 1'e (%100) eşit olan olay."
+    },
+    {
+      "terim": "İmkânsız Olay",
+      "anlam": "Deneyin hiçbir çıktısında gerçekleşmesi mümkün olmayan, olma olasılığı 0'a (%0) eşit olan olay."
+    },
+    {
+      "terim": "Tümleyen Olay (Olmama Olasılığı)",
+      "anlam": "Bir A olayının gerçekleşmemesi durumu (A'); bir olayın olma olasılığı ile olmama olasılığının toplamı daima 1'dir."
+    },
+    {
+      "terim": "Basit Olayın Olma Olasılığı",
+      "anlam": "İstenilen olası durumların (çıktıların) sayısının, tüm olası durumların (örnek uzayın) sayısına bölünmesiyle elde edilen oran."
+    }
+  ],
+  "giris": "Olasılık ünitesinin ilk haftasında bir olaya ait olası durumları belirlemeyi ve daha fazla, eşit, daha az olasılıklı olayları karşılaştırmayı öğrenmiştik. Bu hafta ise eşit şansa sahip olan olaylarda her bir çıktının olasılık değerinin neden {kesir:1|n} olduğunu açıklayacak, olasılık değer aralığını (0 ile 1 arası, imkânsız ve kesin olaylar) ile olma-olmama olasılıkları toplamını inceleyecek ve sayı, tablo, grafik ile geometrik şekil sorularında basit bir olayın olma olasılığını hesaplayacağız.",
+  "ozet": [
+    "n tane olası durumun bulunduğu ve her bir çıktının gerçekleşme şansının eşit olduğu deneylerde, her bir çıktının olma olasılığı {kesir:1|n} değerine eşittir.",
+    "İstenilen çıktı sayısı fazla olan olay 'daha fazla olasılıklı', az olan olay 'daha az olasılıklı', çıktı sayıları birbirine eşit olan olaylar ise 'eşit olasılıklı' olarak adlandırılır.",
+    "Bir olayın olma olasılığı 0 ile 1 arasındadır (0 ve 1 dâhil); gerçekleşmesi mümkün olmayan imkânsız olayın olasılığı 0, her durumda gerçekleşen kesin olayın olasılığı 1'dir.",
+    "Bir A olayının olma olasılığı ile olmama (tümleyen) olasılığının toplamı her durumda 1 tamdır: {formul:P(A) + P(A') = 1}.",
+    "Basit bir olayın olma olasılığı, {kesir:İstenilen Olası Durumların Sayısı|Tüm Olası Durumların Sayısı} bağıntısıyla hesaplanır.",
+    "Daire grafiği sorularında bir dilimin seçilme olasılığı {kesir:Merkez Açı|360} oranıyla, hedef tahtası sorularında ise {kesir:İstenilen Alan|Tüm Alan} oranıyla bulunur."
+  ],
+  "bolumler": [
+    {
+      "baslik": "1. Eşit Şansa Sahip Olan Olaylarda Çıktı Olasılığı",
+      "metin": [
+        "Bir olasılık deneyinde elde edilebilecek tüm çıktıların gerçekleşme şansı birbirine eşitse, bu çıktılara {koyu:eş olasılıklı (eşit şansa sahip) çıktılar} denir. Eğer böyle bir deneyde toplam {koyu:n tane} olası durum (çıktı) varsa, her bir tekil çıktının olma olasılığı birbirine eşittir ve {formul:{kesir:1|n}} kesriyle ifade edilir. Buradaki {koyu:n} sayısı deneyin örnek uzayındaki toplam çıktı sayısıdır.",
+        "Örneğin hilesiz bir madeni para havaya atıldığında 'yazı' ve 'tura' olmak üzere {koyu:2 olası durum} vardır; her bir çıktının olasılığı {kesir:1|2} olur. Hilesiz bir zar atıldığında 1'den 6'ya kadar {koyu:6 olası durum} bulunduğundan her bir yüzün üst yüze gelme olasılığı {kesir:1|6} değerindedir. İçinde özdeş 15 bilye bulunan bir torbadan rastgele çekilen her bir tekil bilyenin çekilme şansı da birbirine eşit olup {kesir:1|15} olur."
+      ],
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Eş Şanslı Çıktı Formülü",
+          "metin": "n tane eş şanslı çıktısı olan bir deneyde her bir çıktının olma olasılığı {kesir:1|n} olur ve n sayısı arttıkça tek bir çıktının gelme olasılığı azalır."
+        }
+      ],
+      "tablo": {
+        "basliklar": [
+          "Olasılık Deneyi",
+          "Olası Durum Sayısı (n)",
+          "Her Bir Çıktının Olasılığı"
+        ],
+        "satirlar": [
+          [
+            "Hilesiz bir madeni paranın atılması",
+            "2 (Yazı, Tura)",
+            "{kesir:1|2}"
+          ],
+          [
+            "Hilesiz bir zarın atılması",
+            "6 (1, 2, 3, 4, 5, 6)",
+            "{kesir:1|6}"
+          ],
+          [
+            "8 eş dilime ayrılmış bir çarkın çevrilmesi",
+            "8 (Her bir eş dilim)",
+            "{kesir:1|8}"
+          ],
+          [
+            "Alfabemizdeki 29 harften birinin seçilmesi",
+            "29 (Her bir harf)",
+            "{kesir:1|29}"
+          ]
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">EŞİT ŞANSA SAHİP (EŞ OLASILIKLI) OLAYLAR VE ÇIKTI OLASILIĞI</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Tanım ve Genel Kural (n Olası Durum)</text>\n  <text x=\"180\" y=\"94\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#1e3a8a\">n tane olası durumun bulunduğu bir deneyde</text>\n  <text x=\"180\" y=\"112\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#1e3a8a\">her bir çıktının gelme şansı birbirine eşitse</text>\n  <text x=\"180\" y=\"130\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1d4ed8\">bu olaylara EŞ OLASILIKLI OLAYLAR denir.</text>\n  <rect x=\"65\" y=\"144\" width=\"230\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/>\n  <text x=\"145\" y=\"188\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">Her Çıktının Olasılığı =</text>\n  <text x=\"250\" y=\"175\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">1</text>\n  <line x1=\"235\" y1=\"183\" x2=\"265\" y2=\"183\" stroke=\"#1d4ed8\" stroke-width=\"2\"/>\n  <text x=\"250\" y=\"202\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">n</text>\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Standart Eş Olasılıklı Deney Örnekleri</text>\n  <text x=\"465\" y=\"108\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">• Hilesiz Madeni Para (n = 2):</text>\n  <text x=\"595\" y=\"98\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">1</text>\n  <line x1=\"583\" y1=\"104\" x2=\"607\" y2=\"104\" stroke=\"#15803d\" stroke-width=\"1.8\"/>\n  <text x=\"595\" y=\"120\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">2</text>\n  <text x=\"465\" y=\"158\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">• Hilesiz Zar Atışı (n = 6):</text>\n  <text x=\"595\" y=\"148\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">1</text>\n  <line x1=\"583\" y1=\"154\" x2=\"607\" y2=\"154\" stroke=\"#15803d\" stroke-width=\"1.8\"/>\n  <text x=\"595\" y=\"170\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">6</text>\n  <text x=\"465\" y=\"208\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">• 8 Eş Dilimli Çark (n = 8):</text>\n  <text x=\"595\" y=\"198\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">1</text>\n  <line x1=\"583\" y1=\"204\" x2=\"607\" y2=\"204\" stroke=\"#15803d\" stroke-width=\"1.8\"/>\n  <text x=\"595\" y=\"220\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">8</text>\n</svg>"
+    },
+    {
+      "baslik": "2. Daha Fazla, Eşit ve Daha Az Olasılıklı Olayların Karşılaştırılması",
+      "metin": [
+        "Bir torbada veya grupta özdeş nesneler bulunduğunda her bir tekil nesnenin seçilme şansı {kesir:1|n} olsa da, nesneleri {koyu:renk, tür veya nitelik bakımından} gruplandırdığımızda olayların gerçekleşme şansları farklılaşabilir. İstenilen durumu sağlayan çıktı sayısı diğerlerinden çok olan olaya {vurgu:daha fazla olasılıklı}, az olan olaya {vurgu:daha az olasılıklı}, çıktı sayıları eşit olan olaylara ise {vurgu:eşit olasılıklı} olaylar denir.",
+        "Örneğin içinde özdeş 6 kırmızı, 4 mavi ve 4 sarı top bulunan bir torbada toplam {formul:6 + 4 + 4 = 14} olası durum vardır. Her bir topun tek başına çekilme şansı {kesir:1|14} iken; çekilen topun kırmızı olma olasılığı (6 durum) mavi olma olasılığından (4 durum) {koyu:daha fazla olasılıklıdır}. Mavi ve sarı top sayıları dörder adet olduğundan mavi gelme olasılığı ile sarı gelme olasılığı {koyu:eşit olasılıklıdır}."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Tekil Çıktı ile Grup Olasılığı Farkı",
+          "metin": "Altı kırmızı ve 4 mavi topun olduğu torbada 'her bir topun' çekilme şansı eşittir ({kesir:1|10}); ancak 'kırmızı renk gelme' şansı ({kesir:6|10}), maviden ({kesir:4|10}) fazladır."
+        }
+      ],
+      "liste": [
+        "Çıktı sayıları eşit olmayan iki grubu eşit olasılıklı hâle getirmek için az olan gruba ekleme yapılabilir veya çok olan gruptan çıkarma yapılabilir.",
+        "KARAMürsel veya MATEMATİK gibi kelimelerin harfleri eş kartlara yazılıp torbaya atıldığında, kelimede tekrar sayısı çok olan harfin çekilme olasılığı daha fazladır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">DAHA FAZLA, EŞİT VE DAHA AZ OLASILIKLI OLAYLARIN KARŞILAŞTIRILMASI</text>\n  <rect x=\"20\" y=\"45\" width=\"310\" height=\"195\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/>\n  <text x=\"175\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b45309\">Torbadaki Özdeş Toplar (Toplam 10 Top)</text>\n  <circle cx=\"65\" cy=\"110\" r=\"14\" fill=\"#ef4444\"/><text x=\"65\" y=\"114\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#fff\">K</text>\n  <circle cx=\"100\" cy=\"110\" r=\"14\" fill=\"#ef4444\"/><text x=\"100\" y=\"114\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#fff\">K</text>\n  <circle cx=\"135\" cy=\"110\" r=\"14\" fill=\"#ef4444\"/><text x=\"135\" y=\"114\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#fff\">K</text>\n  <circle cx=\"170\" cy=\"110\" r=\"14\" fill=\"#ef4444\"/><text x=\"170\" y=\"114\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#fff\">K</text>\n  <circle cx=\"205\" cy=\"110\" r=\"14\" fill=\"#ef4444\"/><text x=\"205\" y=\"114\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#fff\">K</text>\n  <circle cx=\"80\" cy=\"150\" r=\"14\" fill=\"#3b82f6\"/><text x=\"80\" y=\"154\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#fff\">M</text>\n  <circle cx=\"115\" cy=\"150\" r=\"14\" fill=\"#3b82f6\"/><text x=\"115\" y=\"154\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#fff\">M</text>\n  <circle cx=\"165\" cy=\"150\" r=\"14\" fill=\"#22c55e\"/><text x=\"165\" y=\"154\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#fff\">Y</text>\n  <circle cx=\"200\" cy=\"150\" r=\"14\" fill=\"#22c55e\"/><text x=\"200\" y=\"154\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#fff\">Y</text>\n  <circle cx=\"255\" cy=\"130\" r=\"14\" fill=\"#a855f7\"/><text x=\"255\" y=\"134\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#fff\">S</text>\n  <text x=\"175\" y=\"196\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">5 Kırmızı (K), 2 Mavi (M), 2 Yeşil (Y), 1 Mor (S)</text>\n  <text x=\"175\" y=\"216\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#78350f\">Top çekme deneyinde her topun şansı 1/10'dur.</text>\n  <rect x=\"350\" y=\"45\" width=\"330\" height=\"195\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.5\"/>\n  <text x=\"515\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">Renk Olasılıklarının Karşılaştırılması</text>\n  <text x=\"515\" y=\"98\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#075985\">• Daha Fazla Olasılıklı:</text>\n  <text x=\"515\" y=\"116\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0c4a6e\">Kırmızı gelme olasılığı (5 adet), diğer tüm</text>\n  <text x=\"515\" y=\"132\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0c4a6e\">renklerden DAHA FAZLA olasılıklıdır.</text>\n  <text x=\"515\" y=\"158\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#075985\">• Eşit Olasılıklı:</text>\n  <text x=\"515\" y=\"176\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0c4a6e\">Mavi (2 adet) ve Yeşil (2 adet) EŞİT olasılıklıdır.</text>\n  <text x=\"515\" y=\"202\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#075985\">• Daha Az Olasılıklı:</text>\n  <text x=\"515\" y=\"220\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0c4a6e\">Mor (1 adet) gelme olasılığı DAHA AZ olasılıklıdır.</text>\n</svg>"
+    },
+    {
+      "baslik": "3. Olasılık Değer Aralığı: İmkânsız Olay, Kesin Olay ve Tümleyen",
+      "metin": [
+        "Olasılık, bir olayın gerçekleşme şansına ilişkin {koyu:0 ile 1 arasında (0 ve 1 dâhil)} verilen sayısal bir değerdir. Gerçekleşmesi hiçbir koşulda mümkün olmayan olaylara {koyu:imkânsız olay} denir ve olasılık değeri {koyu:0} (%0) ile gösterilir. Örneğin yüzlerinde 1'den 6'ya kadar rakamlar bulunan bir zar atıldığında üst yüze 7 gelmesi veya yalnız sarı topların bulunduğu bir torbadan mavi top çekilmesi imkânsız olaydır.",
+        "Deneyin her çıktısında gerçekleşmesi garanti olan olaylara ise {koyu:kesin olay} denir ve olasılık değeri {koyu:1} (%100) ile gösterilir. Örneğin hilesiz bir zar atıldığında üst yüze 7'den küçük bir doğal sayı gelmesi kesin olaydır. Ayrıca bir A olayının {koyu:olma olasılığı} P(A) ile {koyu:olmama olasılığının} P(A') toplamı daima 1'e eşittir: {formul:P(A) + P(A') = 1}. Örneğin bir olayın olma olasılığı {kesir:3|7} ise olmama olasılığı {formul:1 - {kesir:3|7} = {kesir:4|7}} olur."
+      ],
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Olasılık Değeri Sınır Testi",
+          "metin": "Bir olasılık değeri {koyu:negatif olamaz} ve {koyu:1'den büyük (bileşik kesir, örneğin {kesir:8|5} veya %120) olamaz}. Yalnızca 0, 1 veya basit kesir olabilir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Olmama Olasılığı Pratik Yolu",
+          "metin": "Bir olayın olma olasılığı {kesir:a|b} ise, olmama olasılığını bulmak için paydadan payı çıkarmak yeterlidir: {formul:P(A') = {kesir:b - a|b}}."
+        }
+      ],
+      "tablo": {
+        "basliklar": [
+          "Olay Türü",
+          "Olasılık Değeri",
+          "Yüzde Karşılığı",
+          "Örnek Durum"
+        ],
+        "satirlar": [
+          [
+            "İmkânsız Olay",
+            "0",
+            "%0",
+            "Rakamlar kümesinden iki basamaklı bir sayı seçilmesi"
+          ],
+          [
+            "Daha Az Olasılıklı",
+            "0 ile {kesir:1|2} arası",
+            "%0 - %50 arası",
+            "Zar atıldığında üst yüze 6 gelmesi ({kesir:1|6})"
+          ],
+          [
+            "Yarı Yarıya Olasılıklı",
+            "{kesir:1|2} (0,5)",
+            "%50",
+            "Zar atıldığında üst yüze tek sayı gelmesi ({kesir:3|6} = {kesir:1|2})"
+          ],
+          [
+            "Daha Fazla Olasılıklı",
+            "{kesir:1|2} ile 1 arası",
+            "%50 - %100 arası",
+            "Zar atıldığında 1'den büyük sayı gelmesi ({kesir:5|6})"
+          ],
+          [
+            "Kesin Olay",
+            "1",
+            "%100",
+            "Çift asal sayılar arasından 2 sayısının seçilmesi"
+          ]
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">OLASILIK DEĞER ARALIĞI: İMKÂNSIZ OLAY (0) VE KESİN OLAY (1)</text>\n  <rect x=\"30\" y=\"50\" width=\"640\" height=\"115\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n  <line x1=\"90\" y1=\"105\" x2=\"610\" y2=\"105\" stroke=\"#1e293b\" stroke-width=\"3\"/>\n  <circle cx=\"90\" cy=\"105\" r=\"7\" fill=\"#ef4444\"/>\n  <circle cx=\"350\" cy=\"105\" r=\"7\" fill=\"#f59e0b\"/>\n  <circle cx=\"610\" cy=\"105\" r=\"7\" fill=\"#22c55e\"/>\n  <text x=\"90\" y=\"85\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#ef4444\">0 (%0)</text>\n  <text x=\"90\" y=\"132\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#b91c1c\">İMKÂNSIZ OLAY</text>\n  <text x=\"90\" y=\"150\" text-anchor=\"middle\" font-size=\"10\" fill=\"#7f1d1d\">(Gerçekleşmesi mümkün değil)</text>\n  <text x=\"350\" y=\"75\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\">1</text>\n  <line x1=\"340\" y1=\"80\" x2=\"360\" y2=\"80\" stroke=\"#b45309\" stroke-width=\"1.8\"/>\n  <text x=\"350\" y=\"94\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\">2</text>\n  <text x=\"350\" y=\"132\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\">YARI YARIYA (%50)</text>\n  <text x=\"350\" y=\"150\" text-anchor=\"middle\" font-size=\"10\" fill=\"#78350f\">(0 &lt; P(A) &lt; 1 aralığı)</text>\n  <text x=\"610\" y=\"85\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">1 (%100)</text>\n  <text x=\"610\" y=\"132\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">KESİN OLAY</text>\n  <text x=\"610\" y=\"150\" text-anchor=\"middle\" font-size=\"10\" fill=\"#14532d\">(Her durumda gerçekleşir)</text>\n  <rect x=\"30\" y=\"180\" width=\"640\" height=\"62\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"203\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1d4ed8\">TEMEL KURAL: 0 ≤ P(A) ≤ 1  ve  P(A) + P(A') = 1</text>\n  <text x=\"350\" y=\"225\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">Bir olayın olma olasılığı negatif olamaz ve 1'den (bileşik kesir) büyük olamaz; olma ve olmama olasılıkları toplamı 1'dir.</text>\n</svg>"
+    },
+    {
+      "baslik": "4. Basit Bir Olayın Olma Olasılığını Hesaplama",
+      "metin": [
+        "Eşit şansa sahip çıktıları olan bir deneyde basit bir A olayının olma olasılığı hesaplanırken, {koyu:istenilen olası durumların (olayın çıktılarının) sayısı}, deneydeki {koyu:tüm olası durumların (örnek uzayın) sayısına} bölünür: {formul:P(A) = {kesir:İstenilen Olası Durumların Sayısı|Tüm Olası Durumların Sayısı}}.",
+        "Hesaplama yapılırken önce tüm olası durumların sayısı hatasız biçimde belirlenir, ardından soruda verilen koşulu (örneğin asal sayı olması, tam kare sayı olması, 3'ün katı olması vb.) sağlayan çıktılar tek tek yazılıp sayılır. Bulunan kesir seçeneklerde genellikle {koyu:en sade hâliyle}, ondalık gösterimle veya yüzde sembolüyle ifade edilir."
+      ],
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Sayı Kümelerini Hatırlama",
+          "metin": "Olasılık sorularında sık sorulan 1'den 20'ye kadar {koyu:asal sayılar}: 2, 3, 5, 7, 11, 13, 17, 19 (8 adet); {koyu:tam kare pozitif tam sayılar}: 1, 4, 9, 16 (4 adet)."
+        }
+      ],
+      "liste": [
+        "{koyu:1. Adım:} Deneydeki tüm olası durumların sayısını (paydayı) bul.",
+        "{koyu:2. Adım:} İstenilen olayın koşulunu sağlayan çıktıların sayısını (payı) bul.",
+        "{koyu:3. Adım:} {kesir:İstenilen Durum Sayısı|Tüm Durumların Sayısı} kesrini kur ve gerekiyorsa en sade hâline getir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">BASİT BİR OLAYIN OLMA OLASILIĞININ HESAPLANMASI</text>\n  <rect x=\"30\" y=\"48\" width=\"640\" height=\"82\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"2\"/>\n  <text x=\"200\" y=\"95\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1d4ed8\">Bir Olayın Olma Olasılığı P(A) =</text>\n  <text x=\"485\" y=\"76\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\">İstenilen Olası Durumların Sayısı</text>\n  <line x1=\"345\" y1=\"88\" x2=\"625\" y2=\"88\" stroke=\"#1d4ed8\" stroke-width=\"2.2\"/>\n  <text x=\"485\" y=\"110\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\">Tüm Olası Durumların Sayısı (Örnek Uzay)</text>\n  <rect x=\"30\" y=\"145\" width=\"640\" height=\"95\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"168\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Örnek: Hilesiz Bir Zar Atıldığında Üst Yüze Asal Sayı Gelme Olasılığı</text>\n  <text x=\"240\" y=\"196\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#14532d\">• Tüm Olası Durumlar: {1, 2, 3, 4, 5, 6} (6 eleman)</text>\n  <text x=\"240\" y=\"218\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#14532d\">• İstenilen Durumlar (Asal): {2, 3, 5} (3 eleman)</text>\n  <text x=\"495\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">P(Asal) =</text>\n  <text x=\"550\" y=\"196\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">3</text>\n  <line x1=\"538\" y1=\"202\" x2=\"562\" y2=\"202\" stroke=\"#15803d\" stroke-width=\"1.8\"/>\n  <text x=\"550\" y=\"218\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">6</text>\n  <text x=\"580\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">=</text>\n  <text x=\"610\" y=\"196\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">1</text>\n  <line x1=\"598\" y1=\"202\" x2=\"622\" y2=\"202\" stroke=\"#15803d\" stroke-width=\"1.8\"/>\n  <text x=\"610\" y=\"218\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">2</text>\n</svg>"
+    },
+    {
+      "baslik": "5. Tablo, Sütun ve Daire Grafiği Verileriyle Olasılık Problemleri",
+      "metin": [
+        "Olasılık soruları sıklıkla Veri Analizi konusuyla birleştirilerek {koyu:iki boyutlu tablolar}, {koyu:sütun grafikleri} veya {koyu:daire grafikleri} üzerinden sorulur. Tablo ve sütun grafiği sorularında önce tüm gruplardaki kişi veya nesne sayıları toplanarak {koyu:tüm olası durumların sayısı} bulunur; sonra soruda istenen özelliğe (örneğin 'sarışın kız öğrenci' veya 'keman kursuna giden 8. sınıf öğrencisi') sahip olanların sayısı paya yazılır.",
+        "Daire grafiği sorularında ise toplam kişi veya nesne sayısı verilmese dahi olasılık doğrudan {koyu:merkez açılar} üzerinden hesaplanabilir! Çünkü dairenin tamamı 360 derecedir ve her bir dilimin büyüklüğü o grubun eleman sayısıyla doğru orantılıdır: {formul:P(Dilim) = {kesir:Dilimin Merkez Açısı|360}}. Örneğin daire grafiğinde 72 derecelik merkez açı ile gösterilen bir grubun seçilme olasılığı {formul:{kesir:72|360} = {kesir:1|5}} (%20) olur."
+      ],
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Daire Grafiğinde Merkez Açı Kısayolu",
+          "metin": "Daire grafiğinde gerçek kişi sayılarını bulmakla vakit kaybetmeden doğrudan {kesir:İstenilen Merkez Açı|360} oranını sadeleştirerek olasılığı bulabilirsiniz."
+        }
+      ],
+      "tablo": {
+        "basliklar": [
+          "Merkez Açı",
+          "Olasılık Kesri ({kesir:Açı|360})",
+          "En Sade Hâli",
+          "Yüzde / Ondalık Gösterimi"
+        ],
+        "satirlar": [
+          [
+            "36°",
+            "{kesir:36|360}",
+            "{kesir:1|10}",
+            "%10 (0,1)"
+          ],
+          [
+            "72°",
+            "{kesir:72|360}",
+            "{kesir:1|5}",
+            "%20 (0,2)"
+          ],
+          [
+            "90°",
+            "{kesir:90|360}",
+            "{kesir:1|4}",
+            "%25 (0,25)"
+          ],
+          [
+            "120°",
+            "{kesir:120|360}",
+            "{kesir:1|3}",
+            "Yaklaşık %33,3"
+          ],
+          [
+            "180°",
+            "{kesir:180|360}",
+            "{kesir:1|2}",
+            "%50 (0,5)"
+          ]
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">TABLO VE DAİRE GRAFİĞİ VERİLERİYLE OLASILIK HESAPLAMA</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#fff7ed\" stroke=\"#f97316\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#c2410c\">1. İki Boyutlu Tablo Soruları</text>\n  <text x=\"180\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7c2d12\">Sınıfta 12 Gözlüklü Kız, 8 Gözlüksüz Kız,</text>\n  <text x=\"180\" y=\"112\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7c2d12\">6 Gözlüklü Erkek, 10 Gözlüksüz Erkek (Toplam 36):</text>\n  <text x=\"145\" y=\"152\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#9a3412\">P(Gözlüklü Öğrenci) =</text>\n  <text x=\"245\" y=\"140\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#c2410c\">18</text>\n  <line x1=\"230\" y1=\"147\" x2=\"260\" y2=\"147\" stroke=\"#c2410c\" stroke-width=\"1.8\"/>\n  <text x=\"245\" y=\"163\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#c2410c\">36</text>\n  <text x=\"275\" y=\"152\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#9a3412\">=</text>\n  <text x=\"300\" y=\"140\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#c2410c\">1</text>\n  <line x1=\"288\" y1=\"147\" x2=\"312\" y2=\"147\" stroke=\"#c2410c\" stroke-width=\"1.8\"/>\n  <text x=\"300\" y=\"163\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#c2410c\">2</text>\n  <text x=\"180\" y=\"200\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#7c2d12\">İstenen hücrelerin toplamı tüm sınıf</text>\n  <text x=\"180\" y=\"216\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#7c2d12\">mevcuduna bölünerek sadeleştirilir.</text>\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#fae8ff\" stroke=\"#c026d3\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#a21caf\">2. Daire Grafiği (Merkez Açı) Soruları</text>\n  <text x=\"520\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" fill=\"#701a75\">Daire grafiğinde kişi sayısı verilmese bile</text>\n  <text x=\"520\" y=\"112\" text-anchor=\"middle\" font-size=\"11\" fill=\"#701a75\">merkez açı 360 dereceye oranlanır:</text>\n  <text x=\"485\" y=\"152\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#86198f\">P(Dilim) =</text>\n  <text x=\"580\" y=\"140\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#a21caf\">Merkez Açı</text>\n  <line x1=\"535\" y1=\"147\" x2=\"625\" y2=\"147\" stroke=\"#a21caf\" stroke-width=\"1.8\"/>\n  <text x=\"580\" y=\"163\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#a21caf\">360°</text>\n  <text x=\"520\" y=\"198\" text-anchor=\"middle\" font-size=\"11\" fill=\"#701a75\">Örnek: 90° merkez açılı dilimin seçilme</text>\n  <text x=\"520\" y=\"216\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#86198f\">olasılığı 90 derecenin 360 dereceye oranıdır (çeyrek).</text>\n</svg>"
+    },
+    {
+      "baslik": "6. Geometrik Olasılık ve Hedef Tahtası Uygulamaları",
+      "metin": [
+        "Bir hedef tahtasına veya geometrik bir yüzeye yapılan rastgele atışın tahtaya isabet ettiği bilindiğinde, atışın belirli bir boyalı bölgeye isabet etme olasılığı {koyu:alanlar oranı} ile hesaplanır: {formul:P(Bölge) = {kesir:İstenilen Bölgenin Alanı|Tüm Hedef Tahtasının Alanı}}. Kare, dikdörtgen veya eş birim karelere ayrılmış zeminlerde birim kare sayıları ya da kenar uzunluklarının çarpımı kullanılır.",
+        "İç içe geçmiş dairelerden oluşan hedef tahtalarında ise dairenin alan formülü (pi sayısı çarpı yarıçapın karesi) kullanılır. Burada en çok dikkat edilmesi gereken nokta, iki daire arasında kalan {koyu:halka şeklindeki bölgenin alanı} bulunurken dış dairenin alanından iç dairenin alanının çıkarılmasıdır. Oranlama yapıldığında pi sayıları birbirini sadeleştirdiği için işlem yarıçapların kareleri üzerinden kolayca tamamlanır."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Halka Bölgesinin Alanına Dikkat",
+          "metin": "Yarıçapları 2 cm ve 5 cm olan iç içe iki dairede tüm alan {us:5|2} = 25 birimkare, iç daire {us:2|2} = 4 birimkare, dıştaki halka ise {formul:25 - 4 = 21} birimkaredir."
+        }
+      ],
+      "liste": [
+        "{koyu:Kare / Dikdörtgen Hedef:} Alan = Kısa Kenar . Uzun Kenar bağıntısıyla istenilen alan tüm alana bölünür.",
+        "{koyu:Dairesel Hedef:} Oranlamada pi çarpanları sadeleşeceği için her bölgenin alanı yarıçapın karesi ({us:r|2}) ile orantılı alınabilir.",
+        "{koyu:Köklü Kenar Uzunlukları:} Kenarları kareköklü ifade olan dikdörtgenlerde çarpmada {kok:a} . {kok:a} = a kuralı kullanılarak alanlar bulunur."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">GEOMETRİK ALAN VE HEDEF TAHTASI OLASILIK UYGULAMALARI</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">Hedef Tahtasında Vurulma Olasılığı</text>\n  <rect x=\"115\" y=\"82\" width=\"130\" height=\"90\" fill=\"#bfdbfe\" stroke=\"#1d4ed8\" stroke-width=\"2\"/>\n  <rect x=\"150\" y=\"102\" width=\"60\" height=\"50\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"131\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Kırmızı</text>\n  <text x=\"180\" y=\"192\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0c4a6e\">Hedef tahtasına isabet eden bir okun</text>\n  <text x=\"180\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0c4a6e\">belirli bir bölgeyi vurma olasılığı,</text>\n  <text x=\"180\" y=\"224\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">bölgelerin alanları oranıyla bulunur.</text>\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"195\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Alan Oranı Bağıntısı</text>\n  <text x=\"445\" y=\"118\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">P(Bölge) =</text>\n  <text x=\"565\" y=\"105\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">İstenilen Bölgenin Alanı</text>\n  <line x1=\"490\" y1=\"113\" x2=\"640\" y2=\"113\" stroke=\"#15803d\" stroke-width=\"2\"/>\n  <text x=\"565\" y=\"130\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">Tüm Hedef Tahtasının Alanı</text>\n  <line x1=\"385\" y1=\"150\" x2=\"655\" y2=\"150\" stroke=\"#86efac\" stroke-width=\"1\"/>\n  <text x=\"520\" y=\"174\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• İç içe dairelerde daire alanı (π · r²) hesaplanır.</text>\n  <text x=\"520\" y=\"196\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Halka bölgesinin alanı için dış daire alanından</text>\n  <text x=\"520\" y=\"214\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">iç dairenin alanı çıkarılır!</text>\n</svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Verilen 1'den 24'e kadar (1 ve 24 dâhil) numaralandırılmış özdeş 24 kart bir torbaya atılıyor. Torbadan rastgele çekilen bir kartın üzerindeki sayının tam kare bir sayı olma olasılığı ile tam kare olmama olasılığını hesaplayınız.",
+      "cevap": "Tüm olası durumların sayısı 24'tür. 1'den 24'e kadar olan tam kare sayılar: 1, 4, 9 ve 16 olmak üzere 4 tanedir. Tam kare olma olasılığı {formul:P(A) = {kesir:4|24} = {kesir:1|6}} olur. Tam kare olmama (tümleyen) olasılığı ise {formul:P(A') = 1 - {kesir:1|6} = {kesir:5|6}} olarak bulunur.",
+      "ipucu": "1'den 24'e kadar olan tam kare sayıları (1, 4, 9, 16) belirleyip 24'e bölünüz.",
+      "cozum": "Tüm olası durumların sayısı 24'tür. 1'den 24'e kadar olan tam kare sayılar: 1, 4, 9 ve 16 olmak üzere 4 tanedir. Tam kare olma olasılığı {formul:P(A) = {kesir:4|24} = {kesir:1|6}} olur. Tam kare olmama (tümleyen) olasılığı ise {formul:P(A') = 1 - {kesir:1|6} = {kesir:5|6}} olarak bulunur."
+    },
+    {
+      "soru": "Bir kutuda özdeş mavi ve kırmızı bilyeler vardır. Kutudan rastgele çekilen bir bilyenin mavi olma olasılığı {kesir:3|8}'dir. Kutuda 15 tane mavi bilye bulunduğuna göre kaç tane kırmızı bilye vardır?",
+      "cevap": "Mavi olma olasılığı {kesir:3|8} ise kırmızı olma olasılığı {formul:1 - {kesir:3|8} = {kesir:5|8}} olur. Mavi bilyelerin oranı {formul:{kesir:3|8} = {kesir:15|Toplam}} olduğundan (pay 5 katına çıkmıştır), toplam bilye sayısı {formul:8 . 5 = 40} tanedir. Buradan kırmızı bilye sayısı {formul:40 - 15 = 25} olarak bulunur.",
+      "ipucu": "{kesir:Mavi Sayısı|Tüm Bilyeler} = {kesir:3|8} eşitliğinde 3 kat = 15 ise 1 kat = 5 bilyedir.",
+      "cozum": "Mavi olma olasılığı {kesir:3|8} ise kırmızı olma olasılığı {formul:1 - {kesir:3|8} = {kesir:5|8}} olur. Mavi bilyelerin oranı {formul:{kesir:3|8} = {kesir:15|Toplam}} olduğundan (pay 5 katına çıkmıştır), toplam bilye sayısı {formul:8 . 5 = 40} tanedir. Buradan kırmızı bilye sayısı {formul:40 - 15 = 25} olarak bulunur."
+    },
+    {
+      "soru": "Bir okulun 8. sınıf şubelerindeki öğrencilerin dağılımı daire grafiğinde gösterildiğinde 8-A şubesine ait dilimin merkez açısı 108 derece olmaktadır. Bu okulun 8. sınıfları arasından rastgele seçilen bir öğrencinin 8-A şubesinden olma olasılığı yüzde kaçtır?",
+      "cevap": "Daire grafiğinin tamamı 360 derecedir. 8-A şubesinden seçilme olasılığı {formul:P(8A) = {kesir:108|360}} kesriyle bulunur. Pay ve paydayı 36 ile sadeleştirirsek {kesir:3|10} elde edilir. Bunu yüzdeye çevirmek için 10 ile genişlettiğimizde {kesir:30|100} yani %30 bulunur.",
+      "ipucu": "Merkez açıyı 360 dereceye oranlayıp paydayı 100 yapacak şekilde sadeleştirip genişletiniz.",
+      "cozum": "Daire grafiğinin tamamı 360 derecedir. 8-A şubesinden seçilme olasılığı {formul:P(8A) = {kesir:108|360}} kesriyle bulunur. Pay ve paydayı 36 ile sadeleştirirsek {kesir:3|10} elde edilir. Bunu yüzdeye çevirmek için 10 ile genişlettiğimizde {kesir:30|100} yani %30 bulunur."
+    },
+    {
+      "soru": "Bir torbada özdeş 7 beyaz, 5 siyah ve 9 turuncu top vardır. Torbadan en az kaç top çıkarılırsa kalan toplar arasından rastgele çekilen bir topun beyaz, siyah veya turuncu gelme olasılıkları birbirine eşit olur?",
+      "cevap": "Üç rengin de çekilme olasılığının eşit olması için torbadaki beyaz, siyah ve turuncu top sayılarının birbirine eşit olması gerekir. Top çıkararak eşitleyeceğimiz için en az sayıda olan siyah top sayısında (5'te) eşitlenmelidir. Bunun için beyazdan {formul:7 - 5 = 2} top, turuncudan {formul:9 - 5 = 4} top olmak üzere toplam {formul:2 + 4 = 6} top çıkarılmalıdır.",
+      "ipucu": "Top ekleme değil top çıkarma sorulduğu için tüm renkleri en az sayıdaki rengin adedine (5'e) indiriniz.",
+      "cozum": "Üç rengin de çekilme olasılığının eşit olması için torbadaki beyaz, siyah ve turuncu top sayılarının birbirine eşit olması gerekir. Top çıkararak eşitleyeceğimiz için en az sayıda olan siyah top sayısında (5'te) eşitlenmelidir. Bunun için beyazdan {formul:7 - 5 = 2} top, turuncudan {formul:9 - 5 = 4} top olmak üzere toplam {formul:2 + 4 = 6} top çıkarılmalıdır."
+    },
+    {
+      "soru": "Kenar uzunlukları 6 cm ve 10 cm olan dikdörtgen şeklindeki bir hedef tahtasının içinde, bir kenarı 3 cm olan kare şeklinde kırmızı bir bölge bulunmaktadır. Hedef tahtasına isabet eden bir okun kırmızı bölgeyi vurma olasılığı kaçtır?",
+      "cevap": "Tüm hedef tahtasının alanı {formul:6 . 10 = 60} santimetrekaredir. İstenilen kırmızı karenin alanı ise {formul:3 . 3 = 9} santimetrekaredir. Kırmızı bölgeyi vurma olasılığı {formul:P(Kırmızı) = {kesir:9|60}} olup 3 ile sadeleştirildiğinde {kesir:3|20} bulunur.",
+      "ipucu": "Kırmızı karenin alanını dikdörtgenin toplam alanına bölünüz.",
+      "cozum": "Tüm hedef tahtasının alanı {formul:6 . 10 = 60} santimetrekaredir. İstenilen kırmızı karenin alanı ise {formul:3 . 3 = 9} santimetrekaredir. Kırmızı bölgeyi vurma olasılığı {formul:P(Kırmızı) = {kesir:9|60}} olup 3 ile sadeleştirildiğinde {kesir:3|20} bulunur."
+    },
+    {
+      "soru": "Eşit şansa sahip olan bir deneyde her bir çıktının olma olasılığı {kesir:1|18} olarak verilmiştir. Bu deneydeki olası durumların sayısı 6 artırılırsa her bir çıktının yeni olma olasılığı kaç olur?",
+      "cevap": "Başlangıçta her bir çıktının olasılığı {kesir:1|n} = {kesir:1|18} olduğundan deneyde {formul:n = 18} olası durum vardır. Olası durum sayısı 6 artırıldığında yeni durum sayısı {formul:18 + 6 = 24} olur. Bu durumda her bir çıktının yeni olma olasılığı {kesir:1|24} olur.",
+      "ipucu": "{kesir:1|n} ifadesindeki n değerine 6 ekleyiniz.",
+      "cozum": "Başlangıçta her bir çıktının olasılığı {kesir:1|n} = {kesir:1|18} olduğundan deneyde {formul:n = 18} olası durum vardır. Olası durum sayısı 6 artırıldığında yeni durum sayısı {formul:18 + 6 = 24} olur. Bu durumda her bir çıktının yeni olma olasılığı {kesir:1|24} olur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Aşağıda verilen sayılardan hangisi bir olayın olma olasılık değeri olamaz?",
+      "secenekler": [
+        "{kesir:9|7}",
+        "{kesir:4|9}",
+        "0",
+        "1"
+      ],
+      "dogru": 0,
+      "aciklama": "Bir olayın olma olasılığı 0 ile 1 arasında (0 ve 1 dâhil) olmalıdır. {kesir:9|7} bileşik kesri 1'den büyük olduğu için hiçbir olayın olasılık değeri olamaz."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Verilen 10'dan 25'e kadar (10 ve 25 dâhil) doğal sayıların yazılı olduğu özdeş kartlar arasından rastgele çekilen bir kartın üzerinde asal sayı yazma olasılığı kaçtır?",
+      "secenekler": [
+        "{kesir:1|4}",
+        "{kesir:5|16}",
+        "{kesir:3|8}",
+        "{kesir:7|16}"
+      ],
+      "dogru": 1,
+      "aciklama": "10'dan 25'e kadar toplam 25 - 10 + 1 = 16 sayı vardır. Bu aralıktaki asal sayılar 11, 13, 17, 19 ve 23 olmak üzere 5 tanedir. Olasılık {kesir:5|16} olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir sınıftan rastgele seçilen bir öğrencinin gözlüklü olma olasılığı {kesir:2|7}'dir. Bu sınıfta gözlüksüz 25 öğrenci bulunduğuna göre sınıf mevcudu kaçtır?",
+      "secenekler": [
+        "28",
+        "30",
+        "35",
+        "42"
+      ],
+      "dogru": 2,
+      "aciklama": "Gözlüklü olma olasılığı {kesir:2|7} ise gözlüksüz olma olasılığı 1 - {kesir:2|7} = {kesir:5|7}'dir. {kesir:5|7} oranı 25 öğrenciye karşılık geldiğinden (5 katı), tüm sınıf 7 . 5 = 35 kişidir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "İç içe geçmiş iki daireden oluşan dairesel bir hedef tahtasında içteki küçük dairenin yarıçapı 2 cm, dıştaki büyük dairenin yarıçapı ise 6 cm'dir. Hedef tahtasına isabet eden bir okun içteki küçük dairenin dışında kalan halka bölgeye isabet etme olasılığı kaçtır?",
+      "secenekler": [
+        "{kesir:1|9}",
+        "{kesir:1|3}",
+        "{kesir:2|3}",
+        "{kesir:8|9}"
+      ],
+      "dogru": 3,
+      "aciklama": "Büyük dairenin alanı {us:6|2} = 36 birimkare, küçük dairenin alanı {us:2|2} = 4 birimkare ile orantılıdır. Halka bölgenin alanı 36 - 4 = 32 birimkaredir. Olasılık {kesir:32|36} = {kesir:8|9} olur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru (D) mi yoksa yanlış (Y) mi olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "dogru": true,
+          "aciklama": "Doğrudur; eş olasılıklı deneylerde her bir tekil çıktının olasılığı {kesir:1|n} olur.",
+          "ifade": "Eşit şansa sahip n tane olası durumun bulunduğu bir deneyde her bir çıktının olma olasılığı {kesir:1|n} değerine eşittir."
+        },
+        {
+          "dogru": false,
+          "aciklama": "Yanlıştır; imkânsız olayın olasılık değeri 0'dır, olasılık değeri negatif olamaz.",
+          "ifade": "Gerçekleşmesi mümkün olmayan olaylara imkânsız olay denir ve olasılık değeri -1 ile gösterilir."
+        },
+        {
+          "dogru": true,
+          "aciklama": "Doğrudur; P(A) + P(A') = 1 özdeşliği tüm basit olaylar için geçerlidir.",
+          "ifade": "Bir olayın olma olasılığı ile olmama olasılığının toplamı 1'e eşittir."
+        },
+        {
+          "dogru": true,
+          "aciklama": "Doğrudur; {kesir:60|360} oranı sadeleştirildiğinde {kesir:1|6} bulunur.",
+          "ifade": "Bir daire grafiğinde 60 derecelik merkez açıyla gösterilen bir grubun rastgele seçimde gelme olasılığı {kesir:1|6}'dır."
+        },
+        {
+          "dogru": false,
+          "aciklama": "Yanlıştır; zarın üzerindeki 1, 2, 3, 4, 5 ve 6 sayılarının tamamı rakam olduğu için bu olay kesin olaydır ve olasılığı {kesir:6|6} = 1'dir.",
+          "ifade": "Hilesiz bir zar havaya atıldığında üst yüze gelen sayının rakam olma olasılığı {kesir:1|6}'dır."
+        }
+      ],
+      "maddeler": [
+        {
+          "metin": "Eşit şansa sahip n tane olası durumun bulunduğu bir deneyde her bir çıktının olma olasılığı {kesir:1|n} değerine eşittir.",
+          "dogru": true,
+          "aciklama": "Doğrudur; eş olasılıklı deneylerde her bir tekil çıktının olasılığı {kesir:1|n} olur."
+        },
+        {
+          "metin": "Gerçekleşmesi mümkün olmayan olaylara imkânsız olay denir ve olasılık değeri -1 ile gösterilir.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; imkânsız olayın olasılık değeri 0'dır, olasılık değeri negatif olamaz."
+        },
+        {
+          "metin": "Bir olayın olma olasılığı ile olmama olasılığının toplamı 1'e eşittir.",
+          "dogru": true,
+          "aciklama": "Doğrudur; P(A) + P(A') = 1 özdeşliği tüm basit olaylar için geçerlidir."
+        },
+        {
+          "metin": "Bir daire grafiğinde 60 derecelik merkez açıyla gösterilen bir grubun rastgele seçimde gelme olasılığı {kesir:1|6}'dır.",
+          "dogru": true,
+          "aciklama": "Doğrudur; {kesir:60|360} oranı sadeleştirildiğinde {kesir:1|6} bulunur."
+        },
+        {
+          "metin": "Hilesiz bir zar havaya atıldığında üst yüze gelen sayının rakam olma olasılığı {kesir:1|6}'dır.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; zarın üzerindeki 1, 2, 3, 4, 5 ve 6 sayılarının tamamı rakam olduğu için bu olay kesin olaydır ve olasılığı {kesir:6|6} = 1'dir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Hilesiz bir zarın havaya atılması deneyinde aşağıdaki olayları olasılık değerleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Üst yüze 7 gelme olasılığı (İmkânsız olay)",
+          "0"
+        ],
+        [
+          "Üst yüze 4 gelme olasılığı (Tek çıktı)",
+          "{kesir:1|6}"
+        ],
+        [
+          "Üst yüze 4'ten büyük sayı gelme olasılığı (5 veya 6)",
+          "{kesir:1|3}"
+        ],
+        [
+          "Üst yüze asal sayı gelme olasılığı (2, 3 veya 5)",
+          "{kesir:1|2}"
+        ],
+        [
+          "Üst yüze pozitif tam sayı gelme olasılığı (Kesin olay)",
+          "1"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Deneyin her türlü sonucunda gerçekleşmesi garanti olan ve olasılık değeri 1 olan olaya ___ olay denir.",
+          "cevap": "kesin"
+        },
+        {
+          "metin": "Gerçekleşmesi mümkün olmayan ve olasılık değeri 0 olan olaya ___ olay adı verilir.",
+          "cevap": "imkânsız"
+        },
+        {
+          "metin": "Bir olayın gerçekleşme şansına ilişkin 0 ile 1 arasında verilen sayısal ölçüme ___ denir.",
+          "cevap": "olasılık"
+        },
+        {
+          "metin": "Her bir çıktının gerçekleşme şansının {kesir:1|n} olduğu olaylara ___ şansa sahip olaylar denir.",
+          "cevap": "eşit"
+        },
+        {
+          "metin": "Basit bir olayın olma olasılığı bulunurken istenilen olası durumların sayısı, ___ olası durumların sayısına bölünür.",
+          "cevap": "tüm"
+        }
+      ],
+      "fazla": [
+        "hipotenüs",
+        "karekök"
+      ],
+      "kelimeler": [
+        "kesin",
+        "imkânsız",
+        "olasılık",
+        "eşit",
+        "tüm"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "baslik": "Adım Adım Olasılık Problemi: Çarpanlar ve Olasılık",
+      "soru": "Altmış sayısının tüm pozitif tam sayı çarpanları (bölenleri) eş büyüklükteki kartlara tek tek yazılarak bir torbaya atılıyor. Torbadan rastgele çekilen bir kartın üzerinde:",
+      "ipuclari": [
+        "Önce 60 sayısının tüm pozitif tam sayı çarpanlarını bularak toplam olası durum sayısını (n) belirleyiniz.",
+        "Bu çarpanlar içinden çift olanları sayarak toplam çarpan sayısına bölünüz.",
+        "İki basamaklı olmayan (yani bir basamaklı olan) çarpanları sayarak oranlayınız."
+      ],
+      "cevap": "1) Tüm Olası Durumlar: 60 sayısının pozitif tam sayı çarpanları {1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60} olmak üzere n = 12 tanedir.\na) Eşit şansa sahip 12 kart olduğundan her bir tekil kartın çekilme olasılığı {kesir:1|12} olur.\nb) Çift çarpanlar {2, 4, 6, 10, 12, 20, 30, 60} olmak üzere 8 tanedir. Çift gelme olasılığı {kesir:8|12} = {kesir:2|3} olur.\nc) İki basamaklı yazmama olasılığı, bir basamaklı yazma olasılığıdır. Bir basamaklı çarpanlar {1, 2, 3, 4, 5, 6} olmak üzere 6 tanedir. Olasılığı {kesir:6|12} = {kesir:1|2} (%50) bulunur."
+    }
+  ]
+}

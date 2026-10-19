@@ -1,0 +1,452 @@
+{
+  "ad": "11-kimya-14",
+  "sinif": 11,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 14,
+  "tarih": "21-25 Aralık 2026",
+  "yayin_tarihi": "2026-12-21",
+  "unite": "2. Tema: Çeşitlilik",
+  "konu": "Fiziksel ve Kimyasal Değişimlerde Denge: Denge Bağıntısı, Heterojen Dengeler ve Denge Kesri Hesaplamaları",
+  "ciktilar": [
+    "Tersinir tepkimelerde ileri ve geri tepkime hızlarının eşitlenmesiyle derişimler cinsinden denge sabitini (Kc) türetir.",
+    "Homojen ve heterojen denge tepkimelerini ayırt ederek saf katı ve sıvıların denge bağıntısında yer almama nedenini açıklar.",
+    "Gaz fazındaki tepkimelerde kısmi basınçlar türünden denge sabiti (Kp) ile Kc arasındaki matematiksel ilişkiyi uygular.",
+    "Tepkime denklemi ters çevrildiğinde, bir katsayıyla çarpıldığında veya toplandığında denge sabitinin (Kc) nasıl değiştiğini hesaplar (Hess İlkesi).",
+    "Herhangi bir andaki denge kesrini (Qc) hesaplayarak Kc ile karşılaştırır ve sistemin dengeye ulaşmak için hangi yöne ilerleyeceğini belirler."
+  ],
+  "giris": "Geçen hafta kapalı bir kapta sabit sıcaklıkta gerçekleşen tersinir değişimlerde ileri ve geri tepkime hızlarının eşitlenmesiyle 'dinamik denge'nin kurulduğunu öğrenmiştik. Bu hafta ise kimyasal dengenin nicel (matematiksel) boyutunu ele alıyoruz: Kütlelerin Etkisi Yasası'ndan hareketle derişimler cinsinden denge bağıntısının (Kc) ve kısmi basınçlar cinsinden denge bağıntısının (Kp) nasıl yazıldığını, heterojen dengelerde hangi fiziksel hâllerin bağıntıya alındığını, tepkime denklemleriyle oynandığında denge sabitinin nasıl değiştiğini ve herhangi bir andaki bir karışımın dengede olup olmadığını test eden 'Denge Kesri (Qc)' kavramını ayrıntılı olarak inceleyeceğiz.",
+  "bolumler": [
+    {
+      "baslik": "1. Kütlelerin Etkisi Yasası ve Derişimler Türünden Denge Sabiti (Kc)",
+      "metin": [
+        "Sabit sıcaklıkta kapalı bir kapta gerçekleşen genel bir tersinir tepkime düşünelim: aA(g) + bB(g) çift yönlü ok cC(g) + dD(g). Tek basamakta gerçekleşen bu tepkimede ileri yöndeki hız bağıntısı r_ileri = k_i · {us:[A]|a} · {us:[B]|b}, geri yöndeki hız bağıntısı ise r_geri = k_g · {us:[C]|c} · {us:[D]|d} şeklinde yazılır. Sistem dinamik dengeye ulaştığı anda ileri ve geri tepkime hızları birbirine eşitlenir (r_ileri = r_geri).",
+        "Hız ifadeleri eşitlenip hız sabitleri bir tarafta, molar derişimler diğer tarafta toplandığında derişimler türünden denge sabiti (Kc veya Kd) elde edilir: Kc = {kesir:k_i|k_g} = {kesir:{us:[C]|c} · {us:[D]|d},{us:[A]|a} · {us:[B]|b}}. Guldberg ve Waage tarafından ortaya konulan ve 'Kütlelerin Etkisi Yasası' olarak bilinen bu bağıntıya göre; dengedeki bir tepkimede ürünlerin denge derişimlerinin (katsayıları üs olarak alınarak) çarpımının, girenlerin denge derişimlerinin çarpımına oranı sabit sıcaklıkta daima sabittir ve 'Kc' yalnız sıcaklıkla değişir."
+      ],
+      "kutular": [
+        {
+          "baslik": "Denge Sabiti (Kc) Yalnız Sıcaklığa Bağlıdır!",
+          "metin": "Belirli bir denge tepkimesinin sayısal Kc değeri; başlangıç derişimlerine, kabın hacmine, basınca veya katalizöre bağlı DEĞİLDİR; yalnızca ortamın sıcaklığı (T) değiştiğinde değişir."
+        }
+      ],
+      "tablo": {
+        "baslik": "Denge Bağıntısındaki Terimlerin Anlamı ve Birimleri",
+        "basliklar": [
+          "Sembol",
+          "Adı ve Tanımı",
+          "Önemli Kural"
+        ],
+        "satirlar": [
+          [
+            "k_i ve k_g",
+            "İleri ve geri tepkime hız sabitleri",
+            "Oranları denge sabitini verir: Kc = {kesir:k_i|k_g}"
+          ],
+          [
+            "[X]",
+            "Maddenin denge anındaki molar derişimi (mol/L)",
+            "M = {kesir:n (mol)|V (Litre)} olarak hesaplanıp bağıntıya yazılır"
+          ],
+          [
+            "a, b, c, d",
+            "Denkleştirilmiş tepkimedeki stokiyometrik katsayılar",
+            "Denge bağıntısında derişimlerin üssü olarak yazılır"
+          ],
+          [
+            "Kc (veya Kd)",
+            "Derişimler türünden denge sabiti",
+            "Yalnızca gaz (g) ve sulu çözelti (suda/aq) fazları yazılır"
+          ]
+        ]
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 250\" width=\"100%\" style=\"background:#f8fafc;border:1px solid #cbd5e1;border-radius:10px;font-family:sans-serif\">\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">Kütlelerin Etkisi Yasası ve Denge Sabitinin (Kc) Türetilmesi</text>\n  <rect x=\"35\" y=\"50\" width=\"630\" height=\"55\" rx=\"8\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"350\" y=\"82\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\">Genel Tepkime:   a A(g)  +  b B(g)   &lt;-&gt;   c C(g)  +  d D(g)</text>\n  <rect x=\"35\" y=\"120\" width=\"295\" height=\"105\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"182\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">Denge Şartı (r_ileri = r_geri)</text>\n  <text x=\"182\" y=\"172\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">k_i · [A]ᵃ · [B]ᵇ  =  k_g · [C]ᶜ · [D]ᵈ</text>\n  <text x=\"182\" y=\"200\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#b45309\">Kc yalnız SICAKLIK (T) ile değişir!</text>\n  <rect x=\"370\" y=\"120\" width=\"295\" height=\"105\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"517\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">Denge Bağıntısı (Kc)</text>\n  <text x=\"517\" y=\"176\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#14532d\">Kc = k_i / k_g = ([C]ᶜ · [D]ᵈ) / ([A]ᵃ · [B]ᵇ)</text>\n  <text x=\"517\" y=\"204\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#15803d\">[X] = Molar Derişim (mol / Litre)</text>\n</svg>"
+    },
+    {
+      "baslik": "2. Homojen ve Heterojen Dengeler: Saf Katı ve Sıvıların Durumu",
+      "metin": [
+        "Bir denge tepkimesinde yer alan giren ve ürünlerin tamamı aynı fiziksel fazda ise (örneğin hepsi gaz fazında: N2(g) + 3H2(g) çift yönlü ok 2NH3(g)) bu tür dengelere 'homojen denge' denir. Eğer tepkimedeki maddelerden en az biri farklı bir fiziksel fazda bulunuyorsa (örneğin kireç taşının ayrışması: CaCO3(k) çift yönlü ok CaO(k) + CO2(g)) bu tür dengelere ise 'heterojen denge' adı verilir.",
+        "Denge bağıntısı (Kc) yazılırken çok kritik bir kural uygulanır: Saf katıların (k) ve saf sıvıların (s) belirli bir sıcaklıkta yoğunlukları ve dolayısıyla molar derişimleri ({kesir:n|V}) madde miktarı değişse bile sabit kaldığından, saf katılar ve saf sıvılar denge bağıntısında YAZILMAZ (değerleri 1 kabul edilerek sabit içine dahil edilir). Denge bağıntısında yalnızca derişimi değişebilen 'gazlar (g)' ve 'sulu çözeltiler (suda / aq)' yer alır. Örneğin CaCO3(k) çift yönlü ok CaO(k) + CO2(g) tepkimesinin denge bağıntısı yalnızca Kc = [CO2] şeklindedir."
+      ],
+      "kutular": [
+        {
+          "baslik": "Fiziksel Hâl İndislerine Dikkat!",
+          "metin": "Denge sorusu çözerken ilk iş maddelerin sağ alt köşesindeki fiziksel hâl indislerine bakmaktır: (k) ve (s) olanların üzerini çizin; yalnız (g) ve (suda/aq) olanları Kc bağıntısına alın!"
+        }
+      ],
+      "liste": [
+        "Örnek 1 (Homojen): N2(g) + 3H2(g) <-> 2NH3(g)  =>  Kc = {kesir:{us:[NH3]|2}|[N2]·{us:[H2]|3}} ve Kp = {kesir:{us:(P_NH3)|2}|P_N2 · {us:(P_H2)|3}}",
+        "Örnek 2 (Heterojen Katı-Gaz): C(k) + CO2(g) <-> 2CO(g)  =>  C(k) alınmaz; Kc = {kesir:{us:[CO]|2}|[CO2]}",
+        "Örnek 3 (Heterojen Sıvı-Suda): NH3(suda) + H2O(s) <-> NH4+(suda) + OH-(suda)  =>  H2O(s) alınmaz; Kc = {kesir:[NH4+]·[OH-]|[NH3]}",
+        "Örnek 4 (Yalnız Girenlerde Gaz): Zn(k) + 2HCl(suda) <-> ZnCl2(suda) + H2(g)  =>  Zn(k) alınmaz; Kc = {kesir:[ZnCl2]·[H2],{us:[HCl]|2}}"
+      ],
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 250\" width=\"100%\" style=\"background:#f8fafc;border:1px solid #cbd5e1;border-radius:10px;font-family:sans-serif\">\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">Heterojen Dengelerde Fiziksel Hâl Seçimi</text>\n  <rect x=\"30\" y=\"50\" width=\"300\" height=\"175\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"76\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">BAĞINTIYA YAZILANLAR</text>\n  <text x=\"180\" y=\"108\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#14532d\">1. Gazlar — (g): Hem Kc hem Kp'de</text>\n  <text x=\"180\" y=\"136\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#14532d\">2. Sulu Çözeltiler — (suda / aq): Yalnız Kc'de</text>\n  <text x=\"180\" y=\"175\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#15803d\">Çünkü molar derişimleri ve kısmi</text>\n  <text x=\"180\" y=\"192\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#15803d\">basınçları zamanla değişebilir.</text>\n  <rect x=\"370\" y=\"50\" width=\"300\" height=\"175\" rx=\"10\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"76\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#991b1b\">BAĞINTIYA YAZILMAYANLAR</text>\n  <text x=\"520\" y=\"108\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#7f1d1d\">1. Saf Katılar — (k): Yazılmaz (1 alınır)</text>\n  <text x=\"520\" y=\"136\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#7f1d1d\">2. Saf Sıvılar — (s): Yazılmaz (1 alınır)</text>\n  <text x=\"520\" y=\"175\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#991b1b\">Örnek: CaCO3(k) &lt;-&gt; CaO(k) + CO2(g)</text>\n  <text x=\"520\" y=\"196\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#991b1b\">Kc = [CO2]   ve   Kp = P_CO2</text>\n</svg>"
+    },
+    {
+      "baslik": "3. Kısmi Basınçlar Türünden Denge Sabiti (Kp) ve Kp-Kc İlişkisi",
+      "metin": [
+        "Gaz fazında gerçekleşen denge tepkimelerinde gazların molar derişimleri yerine kısmi basınçları (P) kullanılarak da denge bağıntısı yazılabilir; buna 'kısmi basınçlar türünden denge sabiti (Kp)' denir. Kp bağıntısına yalnızca gaz (g) fazındaki maddeler alınır; katı (k), sıvı (s) ve sulu çözelti (suda/aq) fazındaki maddeler Kp bağıntısında yer almaz! Örneğin aA(g) + bB(g) çift yönlü ok cC(g) + dD(g) tepkimesi için Kp = {kesir:{us:(P_C)|c} · {us:(P_D)|d},{us:(P_A)|a} · {us:(P_B)|b}} şeklindedir.",
+        "İdeal gaz denkleminden (P·V = n·R·T -> P = {kesir:n|V}·R·T = [M]·R·T) hareketle Kp ile Kc arasında çok önemli bir matematiksel bağıntı türetilir: Kp = Kc · {us:(R·T)|Delta_n}. Bu formülde R ideal gaz sabiti ({kesir:22,4|273} veya 0,082 L·atm/mol·K), T mutlak sıcaklık (Kelvin = °C + 273) ve Delta_n ise 'denklemdeki gaz fazındaki ürünlerin katsayıları toplamı eksi gaz fazındaki girenlerin katsayıları toplamı' (Delta_n = n_ürün(gaz) - n_giren(gaz)) değeridir. Eğer bir tepkimede Delta_n = 0 ise {us:(R·T)|0} = 1 olacağından Kp = Kc olur."
+      ],
+      "kutular": [
+        {
+          "baslik": "Köpek Kudurtan Bağıntısı: Kp = Kc · (R·T)^Delta_n",
+          "metin": "Delta_n hesaplanırken yalnız GAZ (g) fazındaki maddelerin katsayıları toplanır! Katı, sıvı ve sulu çözeltilerin katsayıları Delta_n hesabına kesinlikle katılmaz."
+        }
+      ],
+      "tablo": {
+        "baslik": "Farklı Tepkimelerde Delta_n ve Kp - Kc İlişkisi Örnekleri",
+        "basliklar": [
+          "Denge Tepkimesi",
+          "Delta_n = n_ürün(g) - n_giren(g)",
+          "Kp ile Kc Arasındaki Bağıntı"
+        ],
+        "satirlar": [
+          [
+            "H2(g) + Cl2(g) <-> 2HCl(g)",
+            "2 - (1 + 1) = 0",
+            "Kp = Kc"
+          ],
+          [
+            "N2(g) + 3H2(g) <-> 2NH3(g)",
+            "2 - (1 + 3) = -2",
+            "Kp = Kc · {us:(R·T)|-2} = {kesir:Kc,{us:(R·T)|2}}"
+          ],
+          [
+            "PCl5(g) <-> PCl3(g) + Cl2(g)",
+            "(1 + 1) - 1 = +1",
+            "Kp = Kc · (R·T)"
+          ],
+          [
+            "CaCO3(k) <-> CaO(k) + CO2(g)",
+            "1 - 0 = +1 (Katılar alınmaz!)",
+            "Kp = Kc · (R·T)"
+          ]
+        ]
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 250\" width=\"100%\" style=\"background:#f8fafc;border:1px solid #cbd5e1;border-radius:10px;font-family:sans-serif\">\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">Kısmi Basınçlar (Kp) ve Derişimler (Kc) Denge Sabitleri İlişkisi</text>\n  <rect x=\"130\" y=\"48\" width=\"440\" height=\"62\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/>\n  <text x=\"350\" y=\"76\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#92400e\">Kp = Kc · (R · T)^Δn</text>\n  <text x=\"350\" y=\"98\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">Δn = (Ürünlerdeki GAZ katsayıları toplamı) - (Girenlerdeki GAZ katsayıları toplamı)</text>\n  <rect x=\"30\" y=\"128\" width=\"200\" height=\"95\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n  <text x=\"130\" y=\"152\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#075985\">Δn = 0 ise</text>\n  <text x=\"130\" y=\"176\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0c4a6e\">Kp = Kc</text>\n  <text x=\"130\" y=\"198\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0369a1\">H2(g) + I2(g) &lt;-&gt; 2HI(g)</text>\n  <rect x=\"250\" y=\"128\" width=\"200\" height=\"95\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"350\" y=\"152\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">Δn &gt; 0 ise (Örn: +1)</text>\n  <text x=\"350\" y=\"176\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#14532d\">Kp = Kc · (R·T)</text>\n  <text x=\"350\" y=\"198\" text-anchor=\"middle\" font-size=\"10\" fill=\"#15803d\">PCl5(g) &lt;-&gt; PCl3(g) + Cl2(g)</text>\n  <rect x=\"470\" y=\"128\" width=\"200\" height=\"95\" rx=\"8\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"570\" y=\"152\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#6b21a8\">Δn &lt; 0 ise (Örn: -2)</text>\n  <text x=\"570\" y=\"176\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#581c87\">Kp = Kc / (R·T)²</text>\n  <text x=\"570\" y=\"198\" text-anchor=\"middle\" font-size=\"10\" fill=\"#7e22ce\">N2(g) + 3H2(g) &lt;-&gt; 2NH3(g)</text>\n</svg>"
+    },
+    {
+      "baslik": "4. Denge Denklemi ve Denge Sabiti İlişkisi (Hess Yasası Uygulaması)",
+      "metin": [
+        "Kimyasal denge tepkimeleri üzerinde matematiksel işlemler yapıldığında denge sabiti (Kc veya Kp) belirli kurallara göre değişir. Birincisi: Bir denge tepkimesi ters çevrilirse (girenler ile ürünler yer değiştirirse), yeni tepkimenin denge sabiti ilk denge sabitinin çarpmaya göre tersi olur: Kc_yeni = {kesir:1|Kc}.",
+        "İkincisi: Bir denge tepkimesinin tüm katsayıları herhangi bir n sayısı ile çarpılırsa, bu sayı denge sabitinin üssü olarak yazılır: Kc_yeni = {us:(Kc)|n}. (Örneğin denklem 2 ile çarpılırsa {us:Kc|2}, yarıya bölünürse {us:Kc|1/2} = {kok:Kc} olur.) Üçüncüsü: İki veya daha fazla denge tepkimesi taraf tarafa toplanarak net bir tepkime elde edilirse, net tepkimenin denge sabiti toplanan tepkimelerin denge sabitlerinin çarpımına eşittir: Kc_net = Kc1 · Kc2."
+      ],
+      "kutular": [
+        {
+          "baslik": "Entalpi (Delta_H) ile Denge Sabiti (Kc) Kural Farkı",
+          "metin": "Entalpide denklem ters çevrilince işaret değişir (-Delta_H), katsayıyla çarpılınca çarpılır, toplanınca toplanırdı. Dengede ise ters çevrilince 1/Kc alınır, katsayı üs olur ({us:Kc|n}), denklemler toplanınca Kc değerleri ÇARPILIR (Kc1 · Kc2)!"
+        }
+      ],
+      "tablo": {
+        "baslik": "Tepkime Denklemi Değiştirildiğinde Denge Sabitinin (Kc) Değişim Kuralları",
+        "basliklar": [
+          "Tepkime Denklemine Yapılan İşlem",
+          "Örnek Denklem",
+          "Yeni Denge Sabiti"
+        ],
+        "satirlar": [
+          [
+            "Ana Tepkime",
+            "X(g) + Y(g) <-> Z(g)",
+            "Kc"
+          ],
+          [
+            "Tepkime Ters Çevrilirse",
+            "Z(g) <-> X(g) + Y(g)",
+            "Kc' = {kesir:1|Kc}"
+          ],
+          [
+            "Tepkime n Katsayısıyla Çarpılırsa (n = 2)",
+            "2X(g) + 2Y(g) <-> 2Z(g)",
+            "Kc' = {us:Kc|2}"
+          ],
+          [
+            "Tepkime 2'ye Bölünürse (n = 1/2)",
+            "1/2 X(g) + 1/2 Y(g) <-> 1/2 Z(g)",
+            "Kc' = {kok:Kc}"
+          ],
+          [
+            "İki Tepkime Taraf Tarafa Toplanırsa",
+            "Tepkime 1 + Tepkime 2 = Net Tepkime",
+            "Kc_net = Kc1 · Kc2"
+          ]
+        ]
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 250\" width=\"100%\" style=\"background:#f8fafc;border:1px solid #cbd5e1;border-radius:10px;font-family:sans-serif\">\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">Denge Denklemi İşlemleri (Hess Yasasının Dengeye Uygulanması)</text>\n  <rect x=\"25\" y=\"55\" width=\"205\" height=\"165\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n  <text x=\"127\" y=\"80\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#075985\">1. TERS ÇEVİRME</text>\n  <text x=\"127\" y=\"108\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#0c4a6e\">A &lt;-&gt; B   (Kc)</text>\n  <text x=\"127\" y=\"132\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#0c4a6e\">B &lt;-&gt; A   (Kc' = 1 / Kc)</text>\n  <text x=\"127\" y=\"168\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0369a1\">Çarpmaya göre tersi alınır</text>\n  <rect x=\"247\" y=\"55\" width=\"205\" height=\"165\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"350\" y=\"80\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">2. KATSAYIYLA ÇARPMA</text>\n  <text x=\"350\" y=\"108\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#78350f\">A &lt;-&gt; B   (Kc)</text>\n  <text x=\"350\" y=\"132\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#78350f\">nA &lt;-&gt; nB   (Kc' = Kcⁿ)</text>\n  <text x=\"350\" y=\"168\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#b45309\">Çarpılan sayı ÜS olarak yazılır</text>\n  <rect x=\"470\" y=\"55\" width=\"205\" height=\"165\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"572\" y=\"80\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">3. TEPKİMELERİ TOPLAMA</text>\n  <text x=\"572\" y=\"108\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#14532d\">Tepkime 1 (Kc1) + Tepkime 2 (Kc2)</text>\n  <text x=\"572\" y=\"136\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#14532d\">Kc_net = Kc1 · Kc2</text>\n  <text x=\"572\" y=\"168\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#15803d\">Denge sabitleri ÇARPILIR</text>\n</svg>"
+    },
+    {
+      "baslik": "5. Başlangıç-Değişim-Denge (BDD) Tablosu ile Nicel Hesaplamalar",
+      "metin": [
+        "Bir tepkime kabına yalnız girenler veya girenlerle birlikte ürünler konulduğunda sistemin dengeye ulaşma sürecindeki mol ve derişim hesaplamaları 'Başlangıç - Değişim - Denge (BDD)' tablosu kurularak yapılır. Başlangıç satırına kaba konulan ilk mol sayıları yazılır. Değişim satırında ise tepkimenin ilerlediği yönde girenlerin mol sayısı stokiyometrik katsayılarıyla orantılı olarak azalırken (-a·x, -b·x), ürünlerin mol sayısı katsayılarıyla orantılı olarak artar (+c·x, +d·x).",
+        "Denge satırında her maddenin son mol sayısı (n_denge = n_başlangıç ± n_değişim) bulunur. Çok önemli bir adım olarak; denge bağıntısında köşeli parantezler molar derişimi (M = {kesir:n|V}) ifade ettiğinden, denge mol sayıları mutlaka kabın hacmine (V) bölünerek molar derişimlere çevrilir ve Kc bağıntısında yerine yazılır."
+      ],
+      "kutular": [
+        {
+          "baslik": "Hacim (V) Bölmeyi Unutmayın!",
+          "metin": "Denge sorularında yapılan en yaygın hata, BDD tablosunda bulunan denge mol sayılarını (n) kabın hacmine (V) bölmeden doğrudan Kc bağıntısına yazmaktır. V ≠ 1 L ise mutlaka M = {kesir:n|V} dönüşümü yapılmalıdır!"
+        }
+      ],
+      "liste": [
+        "1. Adım: Denkleştirilmiş tepkimeyi yazıp altına Başlangıç, Değişim ve Denge satırlarını açınız.",
+        "2. Adım: Değişim satırında katsayılarla orantılı olarak harcanan (-x) ve oluşan (+x) miktarları belirleyiniz.",
+        "3. Adım: Denge anındaki mol sayılarını kabın litresine (V) bölerek denge derişimlerini ([M]) bulunuz.",
+        "4. Adım: Bulunan denge derişimlerini Kc = {kesir:[Ürünler]|[Girenler]} bağıntısına yazarak bilinmeyeni çözünüz."
+      ],
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 250\" width=\"100%\" style=\"background:#f8fafc;border:1px solid #cbd5e1;border-radius:10px;font-family:sans-serif\">\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">Başlangıç - Değişim - Denge (BDD) Tablosu Şeması</text>\n  <rect x=\"40\" y=\"48\" width=\"620\" height=\"175\" rx=\"8\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"2\"/>\n  <line x1=\"40\" y1=\"85\" x2=\"660\" y2=\"85\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <line x1=\"40\" y1=\"120\" x2=\"660\" y2=\"120\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n  <line x1=\"40\" y1=\"155\" x2=\"660\" y2=\"155\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n  <line x1=\"40\" y1=\"190\" x2=\"660\" y2=\"190\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <text x=\"120\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">Aşama</text>\n  <text x=\"280\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">N2(g)</text>\n  <text x=\"430\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">+   3 H2(g)</text>\n  <text x=\"580\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">&lt;-&gt;   2 NH3(g)</text>\n  <text x=\"120\" y=\"108\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Başlangıç (mol)</text>\n  <text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">n1</text>\n  <text x=\"430\" y=\"108\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">n2</text>\n  <text x=\"580\" y=\"108\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">0</text>\n  <text x=\"120\" y=\"143\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">Değişim (mol)</text>\n  <text x=\"280\" y=\"143\" text-anchor=\"middle\" font-size=\"11\" fill=\"#dc2626\">-x</text>\n  <text x=\"430\" y=\"143\" text-anchor=\"middle\" font-size=\"11\" fill=\"#dc2626\">-3x</text>\n  <text x=\"580\" y=\"143\" text-anchor=\"middle\" font-size=\"11\" fill=\"#16a34a\">+2x</text>\n  <text x=\"120\" y=\"178\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#075985\">Denge (mol)</text>\n  <text x=\"280\" y=\"178\" text-anchor=\"middle\" font-size=\"11\" fill=\"#075985\">n1 - x</text>\n  <text x=\"430\" y=\"178\" text-anchor=\"middle\" font-size=\"11\" fill=\"#075985\">n2 - 3x</text>\n  <text x=\"580\" y=\"178\" text-anchor=\"middle\" font-size=\"11\" fill=\"#075985\">2x</text>\n  <text x=\"120\" y=\"212\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Derişim (M=n/V)</text>\n  <text x=\"280\" y=\"212\" text-anchor=\"middle\" font-size=\"11\" fill=\"#92400e\">(n1 - x) / V</text>\n  <text x=\"430\" y=\"212\" text-anchor=\"middle\" font-size=\"11\" fill=\"#92400e\">(n2 - 3x) / V</text>\n  <text x=\"580\" y=\"212\" text-anchor=\"middle\" font-size=\"11\" fill=\"#92400e\">2x / V</text>\n</svg>"
+    },
+    {
+      "baslik": "6. Denge Kesri (Qc / Yabancı Denge Sabiti) ve Denge Kontrolü",
+      "metin": [
+        "Bir tepkime kabında hem giren hem de ürün maddelerin bulunduğu herhangi bir t anında, sistemin o an dengede olup olmadığını, dengede değilse dengeye ulaşmak için hangi yöne (ürünlere mi, girenlere mi) ilerleyeceğini anlamak için 'Denge Kesri (Qc)' hesaplanır. Qc, tıpkı Kc gibi ürün derişimlerinin giren derişimlerine oranlanmasıyla bulunur; tek farkı Kc'de denge anındaki derişimler kullanılırken, Qc'de herhangi bir andaki mevcut derişimlerin kullanılmasıdır.",
+        "Hesaplanan Qc değeri tepkimenin bilinen denge sabiti Kc ile karşılaştırılır ve üç durum ortaya çıkar: 1) Eğer Qc = Kc ise sistem o anda tam dengededir; ileri ve geri hızlar eşittir, net bir yönelme olmaz. 2) Eğer Qc < Kc ise kesrin değerini büyütüp Kc'ye eşitlemek için payın (ürünlerin) artması, paydanın (girenlerin) azalması gerekir; dolayısıyla tepkime 'ürünler yönüne (sağa / ileri yöne)' ilerler. 3) Eğer Qc > Kc ise kesri küçültüp Kc'ye eşitlemek için paydanın (girenlerin) artması gerekir; tepkime 'girenler yönüne (sola / geri yöne)' ilerler."
+      ],
+      "kutular": [
+        {
+          "baslik": "Qc ve Kc Karşılaştırması Özeti",
+          "metin": "• Qc = Kc  ->  Sistem dengededir (Derişimler sabit kalır).\n• Qc < Kc  ->  Sistem dengede değildir; ÜRÜNLER yönüne (sağa) kayar.\n• Qc > Kc  ->  Sistem dengede değildir; GİRENLER yönüne (sola) kayar."
+        }
+      ],
+      "tablo": {
+        "baslik": "Denge Kesri (Qc) ile Denge Sabiti (Kc) Karşılaştırma Analizi",
+        "basliklar": [
+          "Karşılaştırma Durumu",
+          "Sistemin Durumu",
+          "Dengeye Ulaşmak İçin İlerleme Yönü",
+          "Zamanla Derişim Değişimi"
+        ],
+        "satirlar": [
+          [
+            "Qc = Kc",
+            "Dengededir",
+            "Net ilerleme olmaz (r_i = r_g)",
+            "Giren ve ürün derişimleri değişmez"
+          ],
+          [
+            "Qc < Kc",
+            "Dengede değildir",
+            "Ürünler yönüne (Sağa / İleri yöne)",
+            "Ürün derişimi artar, giren derişimi azalır"
+          ],
+          [
+            "Qc > Kc",
+            "Dengede değildir",
+            "Girenler yönüne (Sola / Geri yöne)",
+            "Giren derişimi artar, ürün derişimi azalır"
+          ]
+        ]
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 250\" width=\"100%\" style=\"background:#f8fafc;border:1px solid #cbd5e1;border-radius:10px;font-family:sans-serif\">\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">Denge Kesri (Qc) ve Tepkimenin İlerleme Yönü</text>\n  <rect x=\"25\" y=\"55\" width=\"205\" height=\"165\" rx=\"8\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"127\" y=\"82\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\">Qc &lt; Kc</text>\n  <text x=\"127\" y=\"108\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#1e40af\">Ürün derişimi azdır</text>\n  <text x=\"127\" y=\"135\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">Yön: ÜRÜNLERE (Sağa -&gt;)</text>\n  <text x=\"127\" y=\"162\" text-anchor=\"middle\" font-size=\"10\" fill=\"#1e40af\">Zamanla Qc büyür ve</text>\n  <text x=\"127\" y=\"178\" text-anchor=\"middle\" font-size=\"10\" fill=\"#1e40af\">Kc'ye eşitlenir</text>\n  <rect x=\"247\" y=\"55\" width=\"205\" height=\"165\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"350\" y=\"82\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#166534\">Qc = Kc</text>\n  <text x=\"350\" y=\"108\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#14532d\">Sistem TAM DENGEDEDİR</text>\n  <text x=\"350\" y=\"135\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">Net yönelme olmaz (&lt;-&gt;)</text>\n  <text x=\"350\" y=\"162\" text-anchor=\"middle\" font-size=\"10\" fill=\"#14532d\">r_ileri = r_geri</text>\n  <text x=\"350\" y=\"178\" text-anchor=\"middle\" font-size=\"10\" fill=\"#14532d\">Derişimler sabit kalır</text>\n  <rect x=\"470\" y=\"55\" width=\"205\" height=\"165\" rx=\"8\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <text x=\"572\" y=\"82\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#991b1b\">Qc &gt; Kc</text>\n  <text x=\"572\" y=\"108\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#7f1d1d\">Ürün derişimi fazladır</text>\n  <text x=\"572\" y=\"135\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">Yön: GİRENLERE (&lt;- Sola)</text>\n  <text x=\"572\" y=\"162\" text-anchor=\"middle\" font-size=\"10\" fill=\"#7f1d1d\">Zamanla Qc küçülür ve</text>\n  <text x=\"572\" y=\"178\" text-anchor=\"middle\" font-size=\"10\" fill=\"#7f1d1d\">Kc'ye eşitlenir</text>\n</svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Aşağıda verilen heterojen denge tepkimesinin derişimler türünden (Kc) ve kısmi basınçlar türünden (Kp) denge bağıntılarını yazınız:\nFe3O4(k) + 4H2(g) çift yönlü ok 3Fe(k) + 4H2O(g)",
+      "cevap": "Saf katılar olan Fe3O4(k) ve Fe(k) denge bağıntısında yer almaz; yalnız gaz fazındaki H2(g) ve H2O(g) alınır.\nKc = {kesir:{us:[H2O]|4},{us:[H2]|4}}\nKp = {kesir:{us:(P_H2O)|4},{us:(P_H2)|4}}",
+      "cozum": "Saf katılar olan Fe3O4(k) ve Fe(k) denge bağıntısında yer almaz; yalnız gaz fazındaki H2(g) ve H2O(g) alınır.\nKc = {kesir:{us:[H2O]|4},{us:[H2]|4}}\nKp = {kesir:{us:(P_H2O)|4},{us:(P_H2)|4}}",
+      "ipucu": "(k) indisli katıları eleyip yalnız (g) indisli maddelerin katsayılarını üs olarak yazınız."
+    },
+    {
+      "soru": "Tarihte 273 °C sıcaklıkta gerçekleşen 2SO2(g) + O2(g) çift yönlü ok 2SO3(g) tepkimesinin derişimler türünden denge sabiti Kc = 44,8 olduğuna göre kısmi basınçlar türünden denge sabiti Kp kaçtır? (R = {kesir:22,4|273} L·atm/mol·K)",
+      "cevap": "Önce sıcaklığı Kelvin'e çevirelim: T = 273 + 273 = 546 K. Buradan R·T = {kesir:22,4|273} · 546 = 44,8 bulunur. Gaz katsayıları farkı Delta_n = n_ürün(g) - n_giren(g) = 2 - (2 + 1) = -1 dir. Bağıntıda yerine yazılırsa: Kp = Kc · {us:(R·T)|-1} = {kesir:Kc|R·T} = {kesir:44,8|44,8} = 1 bulunur.",
+      "cozum": "Önce sıcaklığı Kelvin'e çevirelim: T = 273 + 273 = 546 K. Buradan R·T = {kesir:22,4|273} · 546 = 44,8 bulunur. Gaz katsayıları farkı Delta_n = n_ürün(g) - n_giren(g) = 2 - (2 + 1) = -1 dir. Bağıntıda yerine yazılırsa: Kp = Kc · {us:(R·T)|-1} = {kesir:Kc|R·T} = {kesir:44,8|44,8} = 1 bulunur.",
+      "ipucu": "T = 546 K için R·T = 44,8 değerini ve Delta_n = 2 - 3 = -1 farkını Kp = Kc·{us:(R·T)|Delta_n} formülünde kullanınız."
+    },
+    {
+      "soru": "Belirli bir sıcaklıkta N2(g) + 3H2(g) çift yönlü ok 2NH3(g) tepkimesinin denge sabiti Kc1 = 16'dır. Aynı sıcaklıkta NH3(g) çift yönlü ok {kesir:1|2}N2(g) + {kesir:3|2}H2(g) tepkimesinin denge sabiti (Kc2) kaçtır?",
+      "cevap": "İkinci tepkime, birinci tepkimenin ters çevrilip {kesir:1|2} ile çarpılmış (2'ye bölünmüş) hâlidir. Tepkime ters çevrildiğinde denge sabiti {kesir:1|16} olur; {kesir:1|2} ile çarpıldığında ise karekökü alınır: Kc2 = {kok:{kesir:1|16}} = {kesir:1|4} = 0,25 bulunur.",
+      "cozum": "İkinci tepkime, birinci tepkimenin ters çevrilip {kesir:1|2} ile çarpılmış (2'ye bölünmüş) hâlidir. Tepkime ters çevrildiğinde denge sabiti {kesir:1|16} olur; {kesir:1|2} ile çarpıldığında ise karekökü alınır: Kc2 = {kok:{kesir:1|16}} = {kesir:1|4} = 0,25 bulunur.",
+      "ipucu": "Ters çevirme için 1/Kc, yarıya bölme için karekök ({kok:Kc}) kuralını uygulayınız."
+    },
+    {
+      "soru": "Sabit sıcaklıkta 2 litrelik kapalı bir kaba 4 mol H2(g) ve 4 mol I2(g) konularak başlatılan H2(g) + I2(g) çift yönlü ok 2HI(g) tepkimesi dengeye ulaştığında kapta 6 mol HI(g) bulunduğu ölçülüyor. Buna göre tepkimenin Kc değeri kaçtır?",
+      "cevap": "Denge anında 6 mol HI oluştuğuna göre katsayılardan (1:1:2) dolayı 3 mol H2 ve 3 mol I2 harcanmıştır. Denge mol sayıları: n(H2) = 4 - 3 = 1 mol, n(I2) = 4 - 3 = 1 mol ve n(HI) = 6 mol olur. Hacim V = 2 L olduğundan denge derişimleri: [H2] = {kesir:1|2} M, [I2] = {kesir:1|2} M, [HI] = {kesir:6|2} = 3 M dir. Buradan Kc = {kesir:{us:[HI]|2}|[H2]·[I2]} = {kesir:{us:3|2}|{kesir:1|2} · {kesir:1|2}} = {kesir:9|{kesir:1|4}} = 36 bulunur.",
+      "cozum": "Denge anında 6 mol HI oluştuğuna göre katsayılardan (1:1:2) dolayı 3 mol H2 ve 3 mol I2 harcanmıştır. Denge mol sayıları: n(H2) = 4 - 3 = 1 mol, n(I2) = 4 - 3 = 1 mol ve n(HI) = 6 mol olur. Hacim V = 2 L olduğundan denge derişimleri: [H2] = {kesir:1|2} M, [I2] = {kesir:1|2} M, [HI] = {kesir:6|2} = 3 M dir. Buradan Kc = {kesir:{us:[HI]|2}|[H2]·[I2]} = {kesir:{us:3|2}|{kesir:1|2} · {kesir:1|2}} = {kesir:9|{kesir:1|4}} = 36 bulunur.",
+      "ipucu": "BDD tablosunda molleri bulduktan sonra V = 2 L'ye bölerek molariteye geçmeyi unutmayınız."
+    },
+    {
+      "soru": "Belirli bir sıcaklıkta X(g) + Y(g) çift yönlü ok 2Z(g) tepkimesinin denge sabiti Kc = 4'tür. 1 litrelik kaba aynı sıcaklıkta 2 mol X, 2 mol Y ve 6 mol Z gazları konuluyor. Sistem dengede midir? Dengede değilse hangi yöne ilerler?",
+      "cevap": "V = 1 L olduğu için mol sayıları doğrudan molar derişime eşittir. Herhangi bir andaki denge kesri Qc hesaplanırsa: Qc = {kesir:{us:[Z]|2}|[X]·[Y]} = {kesir:{us:6|2}|2 · 2} = {kesir:36|4} = 9 bulunur. Qc = 9 > Kc = 4 olduğu için sistem dengede değildir; Qc değerini küçültüp 4'e eşitlemek için tepkime girenler yönüne (sola) ilerler.",
+      "cozum": "V = 1 L olduğu için mol sayıları doğrudan molar derişime eşittir. Herhangi bir andaki denge kesri Qc hesaplanırsa: Qc = {kesir:{us:[Z]|2}|[X]·[Y]} = {kesir:{us:6|2}|2 · 2} = {kesir:36|4} = 9 bulunur. Qc = 9 > Kc = 4 olduğu için sistem dengede değildir; Qc değerini küçültüp 4'e eşitlemek için tepkime girenler yönüne (sola) ilerler.",
+      "ipucu": "Qc'yi hesaplayıp Kc = 4 ile karşılaştırınız; Qc > Kc ise sistem girenlere kayar."
+    },
+    {
+      "soru": "İleri yöndeki hız sabiti k_i = 6·{us:10|-2} ve geri yöndeki hız sabiti k_g = 1,5·{us:10|-3} olan tek basamaklı bir denge tepkimesinin aynı sıcaklıktaki denge sabiti (Kc) kaçtır?",
+      "cevap": "Denge sabiti ileri hız sabitinin geri hız sabitine oranına eşittir: Kc = {kesir:k_i|k_g} = {kesir:6·{us:10|-2}|1,5·{us:10|-3}} = {kesir:60·{us:10|-3}|1,5·{us:10|-3}} = 40 bulunur.",
+      "cozum": "Denge sabiti ileri hız sabitinin geri hız sabitine oranına eşittir: Kc = {kesir:k_i|k_g} = {kesir:6·{us:10|-2}|1,5·{us:10|-3}} = {kesir:60·{us:10|-3}|1,5·{us:10|-3}} = 40 bulunur.",
+      "ipucu": "Kc = {kesir:k_i|k_g} bağıntısını doğrudan uygulayınız."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tip": "coktan",
+      "soru": "C(k) + H2O(g) çift yönlü ok CO(g) + H2(g) denge tepkimesinin derişimler türünden denge bağıntısı (Kc) aşağıdakilerden hangisinde doğru verilmiştir?",
+      "secenekler": [
+        "Kc = {kesir:[CO]·[H2]|[C]·[H2O]}",
+        "Kc = {kesir:[CO]·[H2]|[H2O]}",
+        "Kc = {kesir:[C]·[H2O]|[CO]·[H2]}",
+        "Kc = {kesir:[H2O]|[CO]·[H2]}",
+        "Kc = [CO]·[H2]·[H2O]"
+      ],
+      "dogru": 1,
+      "aciklama": "Saf katı olan C(k) denge bağıntısında yer almaz; gaz fazındaki ürünler paya, giren H2O(g) paydaya yazılarak Kc = {kesir:[CO]·[H2]|[H2O]} elde edilir.",
+      "tur": "coktan"
+    },
+    {
+      "tip": "coktan",
+      "soru": "Aşağıda verilen denge tepkimelerinden hangisinde sabit sıcaklıkta kısmi basınçlar türünden denge sabiti (Kp) ile derişimler türünden denge sabiti (Kc) birbirine eşittir (Kp = Kc)?",
+      "secenekler": [
+        "N2(g) + 3H2(g) <-> 2NH3(g)",
+        "2SO2(g) + O2(g) <-> 2SO3(g)",
+        "CO(g) + H2O(g) <-> CO2(g) + H2(g)",
+        "CaCO3(k) <-> CaO(k) + CO2(g)",
+        "PCl5(g) <-> PCl3(g) + Cl2(g)"
+      ],
+      "dogru": 2,
+      "aciklama": "CO(g) + H2O(g) <-> CO2(g) + H2(g) tepkimesinde ürünlerdeki gaz katsayıları toplamı (1+1=2) ile girenlerdeki gaz katsayıları toplamı (1+1=2) eşit olduğundan Delta_n = 0 ve Kp = Kc olur.",
+      "tur": "coktan"
+    },
+    {
+      "tip": "coktan",
+      "soru": "Belirli bir sıcaklıkta gerçekleşen;\n1) X(g) + Y(g) <-> Z(g)   (Kc1 = 4)\n2) Z(g) + Y(g) <-> T(g)   (Kc2 = 5)\ntepkimelerine göre aynı sıcaklıkta X(g) + 2Y(g) <-> T(g) tepkimesinin denge sabiti (Kc) kaçtır?",
+      "secenekler": [
+        "1",
+        "9",
+        "20",
+        "{kesir:4|5}",
+        "80"
+      ],
+      "dogru": 2,
+      "aciklama": "Verilen iki tepkime taraf tarafa toplandığında Z(g)'ler sadeleşir ve X(g) + 2Y(g) <-> T(g) net tepkimesi elde edilir. Denklemler toplandığında denge sabitleri çarpılır: Kc = Kc1 · Kc2 = 4 · 5 = 20.",
+      "tur": "coktan"
+    },
+    {
+      "tip": "coktan",
+      "soru": "Sabit sıcaklıkta bir denge tepkimesinin herhangi bir t anındaki denge kesri Qc hesaplandığında Qc < Kc olduğu görülüyor. Bu sistemle ilgili aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Sistem o anda dengededir, derişimler zamanla değişmez.",
+        "Sistem dengeye ulaşmak için girenler yönüne (sola) ilerler.",
+        "Sistem dengeye ulaşmak için ürünler yönüne (sağa) ilerler.",
+        "Zamanla ürünlerin derişimi azalır, girenlerin derişimi artar.",
+        "Denge sabiti Kc'nin sayısal değeri zamanla azalarak Qc'ye eşitlenir."
+      ],
+      "dogru": 2,
+      "aciklama": "Sabit sıcaklıkta Kc değişmez; Qc < Kc olduğunda Qc'nin büyüyüp Kc'ye eşitlenmesi için payın (ürünlerin) artması gerekir, yani sistem ürünler yönüne (sağa) ilerler.",
+      "tur": "coktan"
+    },
+    {
+      "tip": "dy",
+      "ifadeler": [
+        {
+          "dogru": true,
+          "aciklama": "Doğrudur; Kc yalnız sıcaklığa bağlıdır.",
+          "ifade": "Belirli bir denge tepkimesinin denge sabiti (Kc) münhasıran ortamın sıcaklığı değiştiğinde değişir."
+        },
+        {
+          "dogru": false,
+          "aciklama": "Yanlıştır; saf katı ve sıvıların derişimi sabit olduğundan denge bağıntısında hiç yer almazlar.",
+          "ifade": "Heterojen denge tepkimelerinde saf katıların (k) ve saf sıvıların (s) mol sayıları denge bağıntısında paydaya yazılır."
+        },
+        {
+          "dogru": true,
+          "aciklama": "Doğrudur; giren ve ürünler yer değiştirdiği için Kc' = 1/Kc olur.",
+          "ifade": "Bir denge tepkimesinin denklemi ters çevrilirse yeni tepkimenin denge sabiti çarpmaya göre tersi (1/Kc) olur."
+        },
+        {
+          "dogru": false,
+          "aciklama": "Yanlıştır; Kp bağıntısına yalnızca gaz (g) fazındaki maddeler yazılır, sulu çözeltiler yalnız Kc'de yer alır.",
+          "ifade": "Kısmi basınçlar türünden denge bağıntısına (Kp) hem gazlar (g) hem de sulu çözeltiler (suda) yazılır."
+        },
+        {
+          "dogru": true,
+          "aciklama": "Doğrudur; Qc = Kc denge şartıdır.",
+          "ifade": "Herhangi bir anda hesaplanan denge kesri Qc = Kc ise sistem dinamik dengeye ulaşmış demektir."
+        }
+      ],
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadeleri Doğru (D) veya Yanlış (Y) olarak değerlendiriniz."
+    },
+    {
+      "tip": "eslestir",
+      "ciftler": [
+        [
+          "Kc = {kesir:k_i|k_g}",
+          "İleri ve geri hız sabitlerinin oranıyla bulunan derişim denge sabiti"
+        ],
+        [
+          "Kp = Kc · {us:(R·T)|Delta_n}",
+          "Kısmi basınçlar ile derişimler denge sabitleri arasındaki bağıntı"
+        ],
+        [
+          "Saf katı (k) ve sıvılar (s)",
+          "Yoğunlukları sabit olduğu için Kc bağıntısına yazılmayan fazlar"
+        ],
+        [
+          "Qc < Kc durumu",
+          "Dengede olmayan sistemin ürünler yönüne (sağa) ilerlemesi"
+        ],
+        [
+          "Kc_net = Kc1 · Kc2",
+          "İki denge tepkimesi toplandığında net denge sabitinin bulunması"
+        ]
+      ],
+      "tur": "eslestir",
+      "soru": "Kimyasal Denge Kavram ve Durumlarını Karşılıklarıyla Eşleştiriniz"
+    },
+    {
+      "tip": "bosluk",
+      "cumleler": [
+        {
+          "metin": "Derişimler türünden denge bağıntısında (Kc) yalnızca gazlar ve ___ çözelti fazındaki maddeler yer alır.",
+          "cevap": "sulu"
+        },
+        {
+          "metin": "Tüm maddelerin aynı fiziksel fazda bulunduğu denge tepkimelerine ___ denge adı verilir.",
+          "cevap": "homojen"
+        },
+        {
+          "metin": "Bir denge tepkimesinin katsayıları 2 ile çarpılırsa yeni denge sabiti ilk denge sabitinin ___ eşit olur.",
+          "cevap": "karesine"
+        },
+        {
+          "metin": "Herhangi bir andaki derişimlerin denge bağıntısında yerine konulmasıyla elde edilen değere denge ___ (Qc) denir.",
+          "cevap": "kesri"
+        },
+        {
+          "metin": "Bir tepkime kabında Qc > Kc ise sistem dengeye ulaşmak için ___ yönüne ilerler.",
+          "cevap": "girenler"
+        }
+      ],
+      "kelimeler": [
+        "sulu",
+        "homojen",
+        "karesine",
+        "kesri",
+        "girenler"
+      ],
+      "fazla": [
+        "katı",
+        "ürünler"
+      ],
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız."
+    },
+    {
+      "tip": "ogretici",
+      "soru": "Sabit sıcaklıkta 2 litrelik bir kapta gerçekleşen PCl5(g) çift yönlü ok PCl3(g) + Cl2(g) tepkimesinin Kc değeri 2'dir. Kaba başlangıçta 6 mol PCl5, 4 mol PCl3 ve 4 mol Cl2 gazları konuluyor.\na) Qc'yi hesaplayarak tepkimenin hangi yöne ilerleyeceğini belirleyiniz.\nb) Dengeye ulaşıldığında kapta kaç mol Cl2 gazı bulunacağını BDD tablosuyla hesaplayınız.",
+      "cevap": "a) Hacim V = 2 L olduğundan başlangıç derişimleri: [PCl5] = 6/2 = 3 M, [PCl3] = 4/2 = 2 M, [Cl2] = 4/2 = 2 M dir. Denge kesri Qc = {kesir:[PCl3]·[Cl2]|[PCl5]} = {kesir:2 · 2|3} = {kesir:4|3} ≈ 1,33 bulunur. Qc (4/3) < Kc (2) olduğu için sistem dengeye ulaşmak üzere ÜRÜNLER yönüne (sağa) ilerler.\nb) Ürünlere doğru ilerlerken PCl5 derişimi x M azalır, PCl3 ve Cl2 derişimleri x M artar. Denge derişimleri: [PCl5] = 3 - x, [PCl3] = 2 + x, [Cl2] = 2 + x olur. Kc = {kesir:{us:(2 + x)|2}|3 - x} = 2 -> 4 + 4x + {us:x|2} = 6 - 2x -> {us:x|2} + 6x - 2 = 0 denkleminden (veya mol üzerinden) Cl2'nin denge derişimi (2 + x) M ve mol sayısı n = M · 2 L olarak bulunur.",
+      "ipuclari": [
+        "Önce mol sayılarını V = 2 L'ye bölerek başlangıç derişimlerini (3 M, 2 M, 2 M) bulunuz.",
+        "Qc = (2·2)/3 = 4/3 değerini Kc = 2 ile karşılaştırıp yönü (ürünler) belirleyiniz.",
+        "Değişim satırında girene -x, ürünlere +x yazarak denge bağıntısını kurunuz."
+      ],
+      "tur": "ogretici"
+    }
+  ],
+  "ozet": [
+    "Kütlelerin Etkisi Yasası'na göre denge sabiti ürün derişimlerinin giren derişimlerine oranıdır ve yalnız sıcaklıkla değişir.",
+    "Saf katılar (k) ve saf sıvılar (s) derişimleri sabit olduğundan Kc ve Kp bağıntılarında yer almaz; Kc'ye gaz ve sulu çözeltiler, Kp'ye yalnız gazlar yazılır.",
+    "Gaz fazı dengelerinde kısmi basınçlar denge sabiti (Kp) ile derişimler denge sabiti (Kc) arasındaki fark gaz mol sayısı değişimine bağlıdır.",
+    "Tepkime ters çevrilirse Kc çarpmaya göre tersine döner, katsayıyla çarpılırsa katsayı üs olur, tepkimeler toplanırsa denge sabitleri çarpılır.",
+    "Herhangi bir andaki denge kesri Qc = Kc ise sistem dengededir; Qc < Kc ise ürünlere (sağa), Qc > Kc ise girenlere (sola) ilerler."
+  ]
+}

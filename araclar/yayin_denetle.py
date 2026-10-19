@@ -84,6 +84,19 @@ def sema_ve_gorsel_onar():
             )
             p.write_text(s + ek, encoding="utf-8")
             onaran.append(f"araclar/gorseller/{p.name}: ciz() -> uygula(v) köprüsü eklendi")
+        elif "def uygula" not in s and "def gorsel_1" in s:
+            ek = (
+                "\n\ndef uygula(v):\n"
+                "    import sys\n"
+                "    mod = sys.modules[__name__]\n"
+                "    fonks = [getattr(mod, f'gorsel_{i}') for i in range(1, 10) if hasattr(mod, f'gorsel_{i}')]\n"
+                "    for i, b in enumerate(v.get('bolumler', [])):\n"
+                "        if i < len(fonks):\n"
+                "            b['gorsel'] = fonks[i]()\n"
+            )
+            p.write_text(s + ek, encoding="utf-8")
+            onaran.append(f"araclar/gorseller/{p.name}: gorsel_N -> uygula(v) köprüsü eklendi")
+
 
     for p in sorted((ARACLAR / "ozetler").glob("*.json")):
         try:
@@ -325,10 +338,17 @@ def denetle(hizli=False):
         for idx, b in enumerate(d.get("bolumler", [])):
             g = b.get("gorsel")
             if g:
-                try:
-                    ET.fromstring(g)
-                except ET.ParseError as exc:
-                    hatalar.append(f"{rel}: bolumler[{idx}].gorsel geçersiz XML ({exc})")
+                if isinstance(g, str):
+                    if g.strip().startswith("<svg") or "<" in g:
+                        try:
+                            ET.fromstring(g)
+                        except ET.ParseError as exc:
+                            hatalar.append(f"{rel}: bolumler[{idx}].gorsel geçersiz XML ({exc})")
+                elif isinstance(g, dict):
+                    if not g.get("dosya"):
+                        hatalar.append(f"{rel}: bolumler[{idx}].gorsel 'dosya' alanı eksik")
+                else:
+                    hatalar.append(f"{rel}: bolumler[{idx}].gorsel geçersiz tip {type(g).__name__}")
         if sum(1 for b in d.get("bolumler", []) if b.get("gorsel")) < 2:
             hatalar.append(f"{rel}: görselli bölüm sayısı 2'den az")
 

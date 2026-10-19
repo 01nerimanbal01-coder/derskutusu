@@ -1,0 +1,426 @@
+{
+  "ad": "11-fizik-14",
+  "sinif": 11,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 14,
+  "tarih": "21-25 Aralık 2026",
+  "yayin_tarihi": "2026-12-21",
+  "unite": "Kuvvet ve Hareket / Elektrik ve Manyetizma",
+  "konu": "Düzgün Çembersel Hareket / Elektriksel Kuvvet ve Elektriksel Alan",
+  "ciktilar": [
+    "Yatay, düşey ve eğimli virajlarda güvenli dönüş şartlarını merkezcil kuvvet bağıntılarıyla analiz eder.",
+    "Düşey düzlemde çembersel hareket yapan cisimlerde ip gerilmesi ve yüzey tepki kuvvetinin maksimum-minimum değerlerini hesaplar.",
+    "Noktasal elektrik yükleri arasındaki elektriksel kuvveti (Coulomb Yasası) vektörel olarak inceler.",
+    "Noktasal bir yükün çevresinde oluşturduğu elektriksel alan şiddetini ve elektrik alan çizgilerinin özelliklerini açıklar.",
+    "Birden fazla noktasal yükün bir noktada oluşturduğu bileşke elektriksel kuvvet ve bileşke elektrik alanı hesaplar."
+  ],
+  "giris": "On birinci sınıf fizik programının 14. haftasında birinci ünitenin son konusu olan 'Düzgün Çembersel Hareket Uygulamaları' tamamlanmakta ve ikinci ünite olan 'Elektrik ve Manyetizma'nın ilk konusu 'Elektriksel Kuvvet ve Elektriksel Alan'a geçilmektedir. İlk bölümde yatay ve eğimli virajlarda güvenli hız sınırlarını ve düşey düzlemdeki çembersel harekette ip gerilmesi değişimlerini inceleyeceğiz. İkinci bölümde ise doğadaki dört temel kuvvetten biri olan elektromanyetik kuvvetin temelini oluşturan Coulomb Yasası'nı, noktasal yüklerin birbirine uyguladığı itme-çekme kuvvetlerini ve yüklü cisimlerin uzayda oluşturduğu elektriksel alan kavramını ayrıntılı olarak ele alacağız.",
+  "bolumler": [
+    {
+      "baslik": "1. Yatay ve Eğimli Virajlarda Güvenli Dönüş Şartı",
+      "metin": [
+        "r yarıçaplı yatay bir viraja v çizgisel hızıyla giren m kütleli bir aracın virajı savrulmadan dönebilmesi için, tekerlekler ile yol arasındaki statik sürtünme kuvvetinin (fs) merkezcil kuvvet görevini üstlenmesi gerekir. Yani güvenli dönüş için {kesir:m·{us:v|2}|r} ifadesinin maksimum statik sürtünme kuvveti olan k·m·g değerinden küçük veya ona eşit olması şarttır. Her iki taraftaki m kütlesi sadeleştiğinde yatay virajda güvenli maksimum hız bağıntısı v_max = {kok:k·g·r} olarak bulunur; bu sonuç güvenli hız sınırının aracın kütlesine bağlı olmadığını gösterir.",
+        "Sürtünmenin çok az olduğu buzlu yollarda veya yüksek hızlı otoyol ve bisiklet pisti virajlarında ise yol yatayla belli bir teta açısı yapacak şekilde içe doğru eğimli inşa edilir. Sürtünmesiz eğimli bir virajda yüzeyin normal tepki kuvvetinin (N) yatay bileşeni N·sin(teta) merkezcil kuvveti sağlar, düşey bileşeni N·cos(teta) ise ağırlığı (m·g) dengeler. Bu iki denklem taraf tarafa oranlandığında eğimli virajda güvenli hız bağıntısı v = {kok:g·r·tan(teta)} olarak elde edilir."
+      ],
+      "kutular": [
+        {
+          "baslik": "Kütleden Bağımsızlık İlkesi",
+          "metin": "Hem yatay virajda (v_max = {kok:k·g·r}) hem de sürtünmesiz eğimli virajda (v = {kok:g·r·tan(teta)}) güvenli dönüş hızı aracın m kütlesinden bağımsızdır; aynı virajda otomobil ve kamyon için hız sınırı eşittir."
+        }
+      ],
+      "tablo": {
+        "baslik": "Çembersel Hareket Uygulamalarında Merkezcil Kuvvet Kaynakları",
+        "basliklar": [
+          "Fiziksel Sistem",
+          "Merkezcil Kuvveti Sağlayan Etki",
+          "Temel Hız / Bağıntı Denklemi"
+        ],
+        "satirlar": [
+          [
+            "Yatay Düzlemde Viraj",
+            "Statik sürtünme kuvveti (fs = k·m·g)",
+            "v_max = {kok:k·g·r}"
+          ],
+          [
+            "Sürtünmesiz Eğimli Viraj",
+            "Yüzey tepkisinin yatay bileşeni (N·sin(teta))",
+            "v = {kok:g·r·tan(teta)}"
+          ],
+          [
+            "Konik Sarkaç",
+            "İp gerilmesinin yatay bileşeni (T·sin(teta))",
+            "tan(teta) = {kesir:{us:v|2}|g·r}"
+          ],
+          [
+            "Silindir İçinde Dönen Cisim",
+            "Silindir yan yüzeyinin normal tepki kuvveti (N)",
+            "v_min = {kok:{kesir:g·r|k}}"
+          ]
+        ]
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 250\" width=\"100%\" style=\"background:#f8fafc;border:1px solid #cbd5e1;border-radius:10px;font-family:sans-serif\">\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">Yatay ve Eğimli Virajlarda Güvenli Dönüş Analizi</text>\n  <rect x=\"30\" y=\"50\" width=\"300\" height=\"175\" rx=\"10\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"76\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#075985\">1. YATAY VİRAJ (Sürtünmeli)</text>\n  <line x1=\"60\" y1=\"145\" x2=\"300\" y2=\"145\" stroke=\"#334155\" stroke-width=\"3\"/>\n  <rect x=\"155\" y=\"115\" width=\"50\" height=\"30\" rx=\"5\" fill=\"#0284c7\"/>\n  <line x1=\"155\" y1=\"130\" x2=\"95\" y2=\"130\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n  <text x=\"115\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">fs = Fm</text>\n  <text x=\"180\" y=\"178\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0c4a6e\">k · m · g ≥ m · v² / r</text>\n  <text x=\"180\" y=\"202\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">v_max = kök(k · g · r)</text>\n  <rect x=\"370\" y=\"50\" width=\"300\" height=\"175\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"76\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">2. EĞİMLİ VİRAJ (Sürtünmesiz)</text>\n  <polygon points=\"410,160 630,160 630,105\" fill=\"#fde68a\" stroke=\"#b45309\" stroke-width=\"2\"/>\n  <rect x=\"505\" y=\"112\" width=\"40\" height=\"24\" rx=\"4\" transform=\"rotate(-14 525 124)\" fill=\"#d97706\"/>\n  <text x=\"520\" y=\"182\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">N · sin(θ) = m · v² / r  ve  N · cos(θ) = m · g</text>\n  <text x=\"520\" y=\"206\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\">v = kök(g · r · tan(θ))</text>\n</svg>"
+    },
+    {
+      "baslik": "2. Düşey Düzlemde Düzgün Çembersel Hareket",
+      "metin": [
+        "Bir ipin ucuna bağlanan m kütleli cisim düşey düzlemde sabit v süratiyle döndürüldüğünde, merkezcil kuvvetin büyüklüğü (Fm = {kesir:m·{us:v|2}|r}) yörünge boyunca sabit kalır; ancak yer çekimi kuvvetinin (G = m·g) yönü daima aşağı doğru olduğu için ipteki gerilme kuvveti (T) cismin konumuna göre sürekli değişir. Merkeze doğru olan net kuvvet merkezcil kuvvete eşitlenerek her noktadaki ip gerilmesi bulunur.",
+        "Cisim yörüngenin en üst noktasından geçerken hem ip gerilmesi (T_üst) hem de ağırlık (m·g) merkeze (aşağıya) doğrudur: Fm = T_üst + m·g yazılır ve buradan T_üst = {kesir:m·{us:v|2}|r} - m·g elde edilir (minimum gerilme). Cisim en alt noktadan geçerken ip gerilmesi (T_alt) merkeze (yukarıya), ağırlık ise merkezden dışa (aşağıya) doğrudur: Fm = T_alt - m·g yazılır ve T_alt = {kesir:m·{us:v|2}|r} + m·g bulunur (maksimum gerilme). Dolayısıyla düşey düzlemde en alt ve en üst noktalar arasındaki ip gerilmesi farkı daima cismin ağırlığının iki katına (T_alt - T_üst = 2·m·g) eşittir."
+      ],
+      "kutular": [
+        {
+          "baslik": "Raylı Sistemde (Lunapark Çemberi) Düşmeme Şartı",
+          "metin": "Düşey rayın tepe noktasından geçen bir aracın raydan ayrılmadan dönebilmesi için tepki kuvvetinin N >= 0 olması, yani tepe noktasındaki en küçük hızının v_min = {kok:g·r} değerini sağlaması gerekir."
+        }
+      ],
+      "liste": [
+        "En Üst Nokta (Minimum Gerilme): T_min = {kesir:m·{us:v|2}|r} - m·g (İpin gevşememesi için v >= {kok:g·r} olmalıdır).",
+        "Yatay Hiza Noktaları: Ağırlık merkezcil kuvvete dik olduğundan ip gerilmesi doğrudan T = {kesir:m·{us:v|2}|r} değerine eşittir.",
+        "En Alt Nokta (Maksimum Gerilme): T_max = {kesir:m·{us:v|2}|r} + m·g (İpin kopma ihtimalinin en yüksek olduğu konumdur)."
+      ],
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 250\" width=\"100%\" style=\"background:#f8fafc;border:1px solid #cbd5e1;border-radius:10px;font-family:sans-serif\">\n  <text x=\"350\" y=\"24\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">Düşey Düzlemde Çembersel Hareket ve İp Gerilmesi</text>\n  <circle cx=\"200\" cy=\"135\" r=\"75\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/>\n  <circle cx=\"200\" cy=\"135\" r=\"4\" fill=\"#0f172a\"/>\n  <circle cx=\"200\" cy=\"60\" r=\"12\" fill=\"#ef4444\"/>\n  <line x1=\"200\" y1=\"60\" x2=\"200\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <text x=\"200\" y=\"42\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#991b1b\">ÜST NOKTA (T_min)</text>\n  <circle cx=\"200\" cy=\"210\" r=\"12\" fill=\"#2563eb\"/>\n  <line x1=\"200\" y1=\"210\" x2=\"200\" y2=\"135\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"200\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">ALT NOKTA (T_max)</text>\n  <circle cx=\"275\" cy=\"135\" r=\"12\" fill=\"#16a34a\"/>\n  <rect x=\"345\" y=\"50\" width=\"325\" height=\"175\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <text x=\"507\" y=\"78\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">Konuma Göre İp Gerilmesi Bağıntıları</text>\n  <text x=\"365\" y=\"108\" font-size=\"11\" fill=\"#991b1b\">• En Üst Nokta: T_min = (m·v² / r) - m·g</text>\n  <text x=\"365\" y=\"136\" font-size=\"11\" fill=\"#166534\">• Yatay Hiza: T_yan = m·v² / r</text>\n  <text x=\"365\" y=\"164\" font-size=\"11\" fill=\"#1e3a8a\">• En Alt Nokta: T_max = (m·v² / r) + m·g</text>\n  <text x=\"365\" y=\"196\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">• Gerilme Farkı: T_max - T_min = 2·m·g</text>\n</svg>"
+    },
+    {
+      "baslik": "3. Elektriksel Kuvvet ve Coulomb Yasası",
+      "metin": [
+        "Durgun elektrik yüklerinin (elektrostatik) birbirine uyguladığı itme veya çekme kuvvetini 1785 yılında burulmalı sarkaç deneyiyle nicel olarak ortaya koyan Fransız fizikçi Charles-Augustin de Coulomb olmuştur. Coulomb Yasası'na göre; aralarında d kadar uzaklık bulunan q1 ve q2 noktasal yüklerinin birbirine uyguladığı elektriksel kuvvetin büyüklüğü, yüklerin büyüklüklerinin çarpımıyla doğru orantılı, aralarındaki uzaklığın karesiyle ters orantılıdır: F = k·{kesir:{uzunluk:q1}·{uzunluk:q2},{us:d|2}}.",
+        "Bağıntıdaki k orantı katsayısına 'Coulomb sabiti' denir ve ortamın elektriksel geçirgenliğine (epsilon) bağlıdır (k = {kesir:1|4·pi·epsilon}). Boşluk (vakum) veya hava ortamı için Coulomb sabitinin SI birim sistemindeki değeri yaklaşık k = 9·{us:10|9} N·{us:m|2}/{us:C|2} olarak alınır. Aynı cins yükler (+ ile + veya - ile -) birbirini iterken, zıt cins yükler (+ ile -) birbirini çeker. Yüklerin büyüklükleri ne kadar farklı olursa olsun (örneğin q ve 10q), Newton'un Etki-Tepki Yasası gereği birbirlerine uyguladıkları kuvvetlerin büyüklükleri daima birbirine eşittir, yönleri ise zıttır (F_12 = -F_21)."
+      ],
+      "kutular": [
+        {
+          "baslik": "Etki-Tepki Çifti Olarak Elektriksel Kuvvet",
+          "metin": "q1 yükünün q2 yüküne uyguladığı F12 kuvveti ile q2 yükünün q1 yüküne uyguladığı F21 kuvveti eşit büyüklükte ve zıt yönlüdür (|F12| = |F21|); yük miktarlarının farklı olması kuvvet büyüklüklerini değiştirmez!"
+        }
+      ],
+      "tablo": {
+        "baslik": "Coulomb Yasası Değişkenleri ve SI Birimleri",
+        "basliklar": [
+          "Fiziksel Nicelik",
+          "Sembol",
+          "SI Birimi",
+          "Kuvvete Etkisi"
+        ],
+        "satirlar": [
+          [
+            "Elektriksel Yük Miktarları",
+            "q1, q2",
+            "Coulomb (C)",
+            "Çarpımlarıyla doğru orantılıdır ({uzunluk:q1}·{uzunluk:q2})"
+          ],
+          [
+            "Yükler Arası Uzaklık",
+            "d",
+            "Metre (m)",
+            "Uzaklığın karesiyle ters orantılıdır (1/{us:d|2})"
+          ],
+          [
+            "Coulomb Sabiti",
+            "k",
+            "N·{us:m|2}/{us:C|2}",
+            "Ortamın dielektrik geçirgenliği artarsa k ve F azalır"
+          ],
+          [
+            "Elektriksel Kuvvet",
+            "F",
+            "Newton (N)",
+            "Vektöreldir; yükleri birleştiren doğrultu üzerindedir"
+          ]
+        ]
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 250\" width=\"100%\" style=\"background:#f8fafc;border:1px solid #cbd5e1;border-radius:10px;font-family:sans-serif\">\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">Coulomb Yasası: Noktasal Yükler Arasındaki Elektriksel Kuvvet</text>\n  <rect x=\"35\" y=\"48\" width=\"630\" height=\"80\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <circle cx=\"180\" cy=\"88\" r=\"18\" fill=\"#ef4444\"/>\n  <text x=\"180\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#ffffff\">+q1</text>\n  <line x1=\"160\" y1=\"88\" x2=\"95\" y2=\"88\" stroke=\"#dc2626\" stroke-width=\"3\"/>\n  <text x=\"115\" y=\"75\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">F12</text>\n  <line x1=\"198\" y1=\"88\" x2=\"502\" y2=\"88\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/>\n  <text x=\"350\" y=\"80\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#334155\">Uzaklık = d</text>\n  <circle cx=\"520\" cy=\"88\" r=\"18\" fill=\"#ef4444\"/>\n  <text x=\"520\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#ffffff\">+q2</text>\n  <line x1=\"540\" y1=\"88\" x2=\"605\" y2=\"88\" stroke=\"#dc2626\" stroke-width=\"3\"/>\n  <text x=\"585\" y=\"75\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">F21</text>\n  <rect x=\"35\" y=\"142\" width=\"630\" height=\"85\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"170\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#92400e\">F = k · ({uzunluk:q1} · {uzunluk:q2}) / d²     (k = 9 · 10⁹ N·m²/C²)</text>\n  <text x=\"350\" y=\"198\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">Etki-Tepki İlkesi: F12 = -F21  ve  |F12| = |F21| (Yük miktarları farklı olsa bile kuvvet büyüklükleri eşittir)</text>\n</svg>"
+    },
+    {
+      "baslik": "4. Birden Fazla Noktasal Yükün Oluşturduğu Bileşke Kuvvet",
+      "metin": [
+        "Bir ortamda ikiden fazla noktasal yük bulunduğunda, herhangi bir q0 yüküne etki eden net (bileşke) elektriksel kuvvet, diğer yüklerin her birinin q0 üzerinde tek başına oluşturduğu kuvvetlerin vektörel toplamına eşittir (Süperpozisyon İlkesi). Hesaplama yapılırken önce her yük çiftinin itme veya çekme yönü diyagram üzerinde çizilir, ardından F1, F2, ... kuvvetlerinin büyüklükleri F = k·{kesir:{uzunluk:q1}·{uzunluk:q2},{us:d|2}} formülüyle hesaplanır (formülde yüklerin + veya - işareti yazılmaz; işaret yalnızca kuvvet vektörünün yönünü belirlemek için kullanılır).",
+        "İki kuvvet vektörü arasındaki açı alfa ise bileşke kuvvet paralelkenar yöntemiyle hesaplanır. Özel açılarda pratik kurallar kullanılır: Eşit büyüklükteki (F) iki kuvvet arasındaki açı 60 derece ise bileşke F·{kok:3}, açı 90 derece ise F·{kok:2}, açı 120 derece ise bileşke F kadardır. İki sabit yük arasına bırakılan üçüncü bir yükün dengede kalabilmesi (F_net = 0) için, sabit yükler aynı işaretliyse üçüncü yük onların arasında ve küçük yüke daha yakın; sabit yükler zıt işaretliyse üçüncü yük dışarıda ve mutlak değerce küçük yüke daha yakın olmalıdır."
+      ],
+      "kutular": [
+        {
+          "baslik": "İpe Asılı Yüklü Kürelerin Dengesi",
+          "metin": "Aynı noktadan iplerle asılı m1, m2 kütleli ve q1, q2 yüklü iki küre birbirini iterek düşeyle alfa ve beta açıları yaptığında tan(alfa) = {kesir:F_e|m1·g} ve tan(beta) = {kesir:F_e|m2·g} olur. Elektriksel kuvvetler eşit olduğundan açılar yalnız kütlelere bağlıdır: m1 = m2 ise alfa = beta, m1 > m2 ise alfa < beta olur."
+        }
+      ],
+      "liste": [
+        "İşaret Kuralı: Yükün negatif (-) olması skaler bir küçüklük değil, kuvvetin yönünü belirleyen elektriksel cinsiyettir; formülde mutlak değer alınır.",
+        "Aynı Cins İki Sabit Yük: Denge noktası (F_net = 0) iki yükü birleştiren doğru parçası üzerinde, yük miktarı küçük olana daha yakındır.",
+        "Zıt Cins İki Sabit Yük: Denge noktası iki yükün dışında, mutlak değerce küçük olan yükün tarafındadır."
+      ],
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 250\" width=\"100%\" style=\"background:#f8fafc;border:1px solid #cbd5e1;border-radius:10px;font-family:sans-serif\">\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">Bileşke Elektriksel Kuvvet ve İpe Asılı Kürelerin Dengesi</text>\n  <rect x=\"30\" y=\"50\" width=\"310\" height=\"175\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n  <text x=\"185\" y=\"74\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#075985\">Denge Noktası (F_net = 0)</text>\n  <circle cx=\"90\" cy=\"125\" r=\"14\" fill=\"#ef4444\"/>\n  <text x=\"90\" y=\"129\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#ffffff\">+q</text>\n  <circle cx=\"165\" cy=\"125\" r=\"10\" fill=\"#16a34a\"/>\n  <text x=\"165\" y=\"128\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#ffffff\">q0</text>\n  <circle cx=\"285\" cy=\"125\" r=\"18\" fill=\"#ef4444\"/>\n  <text x=\"285\" y=\"129\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#ffffff\">+4q</text>\n  <text x=\"127\" y=\"155\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0c4a6e\">x = d</text>\n  <text x=\"225\" y=\"155\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0c4a6e\">2x = 2d</text>\n  <text x=\"185\" y=\"192\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0369a1\">Aynı cins yüklerde arada, küçük yüke yakın</text>\n  <rect x=\"360\" y=\"50\" width=\"310\" height=\"175\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"515\" y=\"74\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">İpe Asılı Yüklü Küreler</text>\n  <line x1=\"515\" y1=\"88\" x2=\"515\" y2=\"170\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n  <line x1=\"515\" y1=\"88\" x2=\"465\" y2=\"155\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <line x1=\"515\" y1=\"88\" x2=\"565\" y2=\"155\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <circle cx=\"465\" cy=\"155\" r=\"11\" fill=\"#2563eb\"/>\n  <circle cx=\"565\" cy=\"155\" r=\"11\" fill=\"#2563eb\"/>\n  <text x=\"502\" y=\"122\" font-size=\"10\" font-weight=\"bold\" fill=\"#14532d\">α</text>\n  <text x=\"522\" y=\"122\" font-size=\"10\" font-weight=\"bold\" fill=\"#14532d\">β</text>\n  <text x=\"515\" y=\"192\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">tan(α) = Fe / (m1·g)   ve   m1 &gt; m2 ise α &lt; β</text>\n</svg>"
+    },
+    {
+      "baslik": "5. Elektriksel Alan Kavramı ve Noktasal Yükün Elektrik Alanı",
+      "metin": [
+        "Elektriksel kuvvet temas gerektirmeyen (uzaktan etki eden) bir kuvvettir. Michael Faraday, bir yükün uzaktaki başka bir yükü nasıl etkilediğini açıklamak için 'Elektriksel Alan' kavramını geliştirmiştir. Yüklü bir cismin çevresindeki uzayda elektriksel etkisini gösterdiği bölgeye elektrik alanı denir. Bir noktadaki elektriksel alan şiddeti (E), o noktaya konulan +1 Coulomb'luk pozitif birim deneme yüküne (q0 = +1 C) etki eden elektriksel kuvvet olarak tanımlanır: E = {kesir:F|q0}.",
+        "q büyüklüğündeki noktasal bir yükten d kadar uzaktaki bir noktada oluşan elektriksel alanın büyüklüğü, Coulomb bağıntısı birim yüke bölünerek E = k·{kesir:{uzunluk:q},{us:d|2}} şeklinde bulunur. Elektrik alan vektörel bir niceliktir ve SI birimi Newton/Coulomb (N/C) veya Volt/metre (V/m) dir. Bir noktadaki elektrik alanın yönünü bulmak için o noktada hayali bir '+1 C' yükü olduğu düşünülür: Pozitif (+q) yük +1'i iteceği için elektrik alan vektörü yükten dışarı doğru; negatif (-q) yük +1'i çekeceği için elektrik alan vektörü yüke doğru yönelir."
+      ],
+      "kutular": [
+        {
+          "baslik": "Elektrik Alan İçindeki Yüke Etki Eden Kuvvet",
+          "metin": "Elektriksel alanı E olan bir bölgeye q yüklü bir parçacık bırakıldığında parçacığa F = q·E büyüklüğünde kuvvet etki eder. Yük pozitif (+q) ise kuvvet elektrik alanla aynı yönlü, negatif (-q) ise elektrik alana zıt yönlüdür."
+        }
+      ],
+      "tablo": {
+        "baslik": "Elektriksel Kuvvet (F) ile Elektriksel Alan (E) Karşılaştırması",
+        "basliklar": [
+          "Özellik",
+          "Elektriksel Kuvvet (F)",
+          "Elektriksel Alan (E)"
+        ],
+        "satirlar": [
+          [
+            "Tanım",
+            "İki yükün birbirini itme veya çekme etkisi",
+            "Birim pozitif yüke (+1 C) etki eden kuvvet"
+          ],
+          [
+            "Matematiksel Bağıntı",
+            "F = k·{kesir:{uzunluk:q1}·{uzunluk:q2},{us:d|2}}",
+            "E = {kesir:F|q0} = k·{kesir:{uzunluk:q},{us:d|2}}"
+          ],
+          [
+            "SI Birimi",
+            "Newton (N)",
+            "Newton / Coulomb (N/C)"
+          ],
+          [
+            "Yön Belirleme",
+            "İki yükün cinsine göre itme veya çekme",
+            "İlgili noktaya +1 C konulduğu varsayılarak bulunur"
+          ]
+        ]
+      },
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 250\" width=\"100%\" style=\"background:#f8fafc;border:1px solid #cbd5e1;border-radius:10px;font-family:sans-serif\">\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">Noktasal Yükün d Uzaklıktaki Elektriksel Alanı (E = k·{uzunluk:q}/d²)</text>\n  <rect x=\"30\" y=\"50\" width=\"300\" height=\"175\" rx=\"10\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"76\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#991b1b\">POZİTİF (+q) YÜKÜN ALANI</text>\n  <circle cx=\"105\" cy=\"135\" r=\"18\" fill=\"#ef4444\"/>\n  <text x=\"105\" y=\"140\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#ffffff\">+q</text>\n  <line x1=\"123\" y1=\"135\" x2=\"215\" y2=\"135\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n  <circle cx=\"215\" cy=\"135\" r=\"5\" fill=\"#0f172a\"/>\n  <text x=\"215\" y=\"122\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0f172a\">K (+1 C)</text>\n  <line x1=\"215\" y1=\"135\" x2=\"285\" y2=\"135\" stroke=\"#dc2626\" stroke-width=\"3\"/>\n  <text x=\"255\" y=\"155\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">E (Dışarı doğru)</text>\n  <rect x=\"370\" y=\"50\" width=\"300\" height=\"175\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"76\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">NEGATİF (-q) YÜKÜN ALANI</text>\n  <circle cx=\"445\" cy=\"135\" r=\"18\" fill=\"#2563eb\"/>\n  <text x=\"445\" y=\"140\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#ffffff\">-q</text>\n  <line x1=\"463\" y1=\"135\" x2=\"585\" y2=\"135\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n  <circle cx=\"585\" cy=\"135\" r=\"5\" fill=\"#0f172a\"/>\n  <text x=\"585\" y=\"122\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0f172a\">L (+1 C)</text>\n  <line x1=\"585\" y1=\"135\" x2=\"515\" y2=\"135\" stroke=\"#1d4ed8\" stroke-width=\"3\"/>\n  <text x=\"545\" y=\"155\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">E (Yüke doğru)</text>\n</svg>"
+    },
+    {
+      "baslik": "6. Elektrik Alan Çizgileri ve Özellikleri",
+      "metin": [
+        "Uzaydaki elektrik alanını görselleştirmek için çizilen yönlü hayali çizgilere 'elektrik alan çizgileri' (kuvvet çizgileri) denir. Elektrik alan çizgileri daima pozitif (+) yükten başlar (kaynak) ve negatif (-) yükte son bulur (kuyu) ya da sonsuza uzanır. Bir bölgede elektrik alan çizgilerinin sık olduğu yerlerde elektrik alan şiddeti (E) büyük, çizgilerin seyrek olduğu yerlerde ise elektrik alan şiddeti küçüktür.",
+        "Elektrik alan çizgileri hiçbir zaman birbirini kesmez; çünkü iki çizginin kesişmesi, kesişim noktasında aynı anda iki farklı elektrik alan yönü olması anlamına gelir ki bu fiziksel olarak imkânsızdır. Bir yükün yüzeyinden çıkan veya yüzeyine giren çizgi sayısı o yükün büyüklüğüyle ({uzunluk:q}) doğru orantılıdır. Herhangi bir noktadaki elektrik alan vektörü (E), o noktadan geçen alan çizgisine teğettir. İletken yüklü kürelerin içinde ise yükler dış yüzeye dağıldığından küre içindeki her noktada elektrik alan sıfırdır (E_iç = 0)."
+      ],
+      "kutular": [
+        {
+          "baslik": "Faraday Kafesi ve Küre İçi Elektrik Alan",
+          "metin": "İletken yüklü bir kürenin içinde elektrik alan çizgisi bulunmaz (E_iç = 0); elektrik alan küre yüzeyinde maksimum değerine (E = k·{kesir:q|{us:R|2}}) ulaşır ve yüzeyden uzaklaştıkça karesiyle ters orantılı azalır."
+        }
+      ],
+      "liste": [
+        "Yön Kuralı: Çizgiler + yükten dışarı doğru çıkar, - yüke doğru girer.",
+        "Yoğunluk Kuralı: Çizgi sayısı yük miktarıyla (q) doğru orantılıdır; çizgi sıklığı alan şiddetini (E) gösterir.",
+        "Kesişmezlik Kuralı: Elektrik alan çizgileri asla birbirini kesmez ve yüklü iletken yüzeylere daima dik olarak başlar veya biter."
+      ],
+      "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 250\" width=\"100%\" style=\"background:#f8fafc;border:1px solid #cbd5e1;border-radius:10px;font-family:sans-serif\">\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">Elektrik Alan Çizgilerinin Özellikleri ve İletken Küre</text>\n  <rect x=\"30\" y=\"50\" width=\"310\" height=\"175\" rx=\"10\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"2\"/>\n  <text x=\"185\" y=\"74\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\">Zıt Yükler (+q ve -q Dipolü)</text>\n  <circle cx=\"115\" cy=\"138\" r=\"16\" fill=\"#ef4444\"/>\n  <text x=\"115\" y=\"143\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">+q</text>\n  <circle cx=\"255\" cy=\"138\" r=\"16\" fill=\"#2563eb\"/>\n  <text x=\"255\" y=\"143\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">-q</text>\n  <path d=\"M 131 138 L 239 138\" stroke=\"#475569\" stroke-width=\"2\"/>\n  <path d=\"M 127 125 Q 185 85 243 125\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/>\n  <path d=\"M 127 151 Q 185 191 243 151\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/>\n  <text x=\"185\" y=\"206\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">+ yükten çıkar, - yüke girer, asla kesişmez</text>\n  <rect x=\"360\" y=\"50\" width=\"310\" height=\"175\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"515\" y=\"74\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">Yüklü İletken Küre (Faraday Kafesi)</text>\n  <circle cx=\"515\" cy=\"135\" r=\"42\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"2.5\"/>\n  <text x=\"515\" y=\"139\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">E_iç = 0</text>\n  <text x=\"515\" y=\"206\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#78350f\">Yüzeyde E_max = k·q/R² , dışta E = k·q/d²</text>\n</svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Yarıçapı r = 50 m olan yatay bir virajda tekerlekler ile yol arasındaki statik sürtünme katsayısı k = 0,5'tir. Bu viraja giren bir aracın savrulmadan dönebileceği en büyük hız kaç m/s'dir? (g = 10 m/{us:s|2} alınız.)",
+      "cevap": "Yatay virajda güvenli maksimum hız bağıntısı v_max = {kok:k·g·r} dir. Verilen değerler yerine yazılırsa: v_max = {kok:0,5 · 10 · 50} = {kok:250} = 5·{kok:10} m/s (yaklaşık 15,8 m/s) bulunur.",
+      "cozum": "Yatay virajda güvenli maksimum hız bağıntısı v_max = {kok:k·g·r} dir. Verilen değerler yerine yazılırsa: v_max = {kok:0,5 · 10 · 50} = {kok:250} = 5·{kok:10} m/s (yaklaşık 15,8 m/s) bulunur.",
+      "ipucu": "Sürtünme kuvvetini merkezcil kuvvete eşitleyerek elde edilen v = {kok:k·g·r} bağıntısını kullanınız."
+    },
+    {
+      "soru": "Kütlesi m = 2 kg olan bir cisim, uzunluğu r = 1 m olan ipin ucunda düşey düzlemde v = 4 m/s sabit süratle döndürülmektedir. Cisim yörüngenin en üst ve en alt noktasından geçerken ipteki gerilme kuvvetleri kaç Newton olur? (g = 10 m/{us:s|2})",
+      "cevap": "Önce merkezcil kuvveti bulalım: Fm = {kesir:m·{us:v|2}|r} = {kesir:2 · {us:4|2}|1} = 32 N. Cisim ağırlığı G = m·g = 2 · 10 = 20 N'dur. En üst noktada T_üst = Fm - m·g = 32 - 20 = 12 N; en alt noktada ise T_alt = Fm + m·g = 32 + 20 = 52 N olur.",
+      "cozum": "Önce merkezcil kuvveti bulalım: Fm = {kesir:m·{us:v|2}|r} = {kesir:2 · {us:4|2}|1} = 32 N. Cisim ağırlığı G = m·g = 2 · 10 = 20 N'dur. En üst noktada T_üst = Fm - m·g = 32 - 20 = 12 N; en alt noktada ise T_alt = Fm + m·g = 32 + 20 = 52 N olur.",
+      "ipucu": "En üst noktada T_min = Fm - m·g, en alt noktada T_max = Fm + m·g bağıntılarını uygulayınız."
+    },
+    {
+      "soru": "Aralarında d = 0,3 m uzaklık bulunan noktasal q1 = +4·{us:10|-6} C ve q2 = -6·{us:10|-6} C yüklerinin birbirine uyguladığı elektriksel kuvvetin büyüklüğü kaç Newton'dur ve türü (itme/çekme) nedir? (k = 9·{us:10|9} N·{us:m|2}/{us:C|2})",
+      "cevap": "Coulomb Yasası'na göre F = k·{kesir:{uzunluk:q1}·{uzunluk:q2},{us:d|2}} = 9·{us:10|9} · {kesir:4·{us:10|-6} · 6·{us:10|-6}|0,09} = {kesir:216·{us:10|-3}|9·{us:10|-2}} = 2,4 N bulunur. Yükler zıt işaretli (+ ve -) olduğu için kuvvet çekme kuvvetidir.",
+      "cozum": "Coulomb Yasası'na göre F = k·{kesir:{uzunluk:q1}·{uzunluk:q2},{us:d|2}} = 9·{us:10|9} · {kesir:4·{us:10|-6} · 6·{us:10|-6}|0,09} = {kesir:216·{us:10|-3}|9·{us:10|-2}} = 2,4 N bulunur. Yükler zıt işaretli (+ ve -) olduğu için kuvvet çekme kuvvetidir.",
+      "ipucu": "d = 0,3 m = 3·{us:10|-1} m alarak karesini 9·{us:10|-2} {us:m|2} şeklinde yazınız."
+    },
+    {
+      "soru": "Aralarında 3d uzaklık bulunan sabit q1 = +q ve q2 = +4q noktasal yüklerinin arasına konulan üçüncü bir q3 yükünün dengede kalması için q1 yükünden kaç d uzağa konulması gerekir?",
+      "cevap": "q3 yükünün q1'den uzaklığına x dersek, q2'den uzaklığı (3d - x) olur. Denge şartı F1 = F2 yazılırsa: k·{kesir:q·{uzunluk:q3},{us:x|2}} = k·{kesir:4q·{uzunluk:q3},{us:(3d - x)|2}} olur. Her iki tarafın karekökü alındığında {kesir:1|x} = {kesir:2|3d - x} -> 3d - x = 2x -> 3x = 3d -> x = d bulunur. Yani q1 yükünden 1d uzağa konulmalıdır.",
+      "cozum": "q3 yükünün q1'den uzaklığına x dersek, q2'den uzaklığı (3d - x) olur. Denge şartı F1 = F2 yazılırsa: k·{kesir:q·{uzunluk:q3},{us:x|2}} = k·{kesir:4q·{uzunluk:q3},{us:(3d - x)|2}} olur. Her iki tarafın karekökü alındığında {kesir:1|x} = {kesir:2|3d - x} -> 3d - x = 2x -> 3x = 3d -> x = d bulunur. Yani q1 yükünden 1d uzağa konulmalıdır.",
+      "ipucu": "Her iki yükün q3'e uyguladığı kuvvetleri birbirine eşitleyip iki tarafın karekökünü alınız."
+    },
+    {
+      "soru": "Noktasal q = +8·{us:10|-7} C yükünden d = 2 m uzaktaki bir K noktasında oluşan elektriksel alan şiddeti kaç N/C'dur ve yönü nasıldır? (k = 9·{us:10|9} N·{us:m|2}/{us:C|2})",
+      "cevap": "Noktasal yükün elektrik alanı E = k·{kesir:{uzunluk:q},{us:d|2}} bağıntısıyla bulunur: E = 9·{us:10|9} · {kesir:8·{us:10|-7},{us:2|2}} = 9·{us:10|9} · {kesir:8·{us:10|-7}|4} = 18·{us:10|2} = 1800 N/C olur. Yük pozitif (+q) olduğu için K noktasındaki elektrik alan vektörü yükten dışarıya doğrudur.",
+      "cozum": "Noktasal yükün elektrik alanı E = k·{kesir:{uzunluk:q},{us:d|2}} bağıntısıyla bulunur: E = 9·{us:10|9} · {kesir:8·{us:10|-7},{us:2|2}} = 9·{us:10|9} · {kesir:8·{us:10|-7}|4} = 18·{us:10|2} = 1800 N/C olur. Yük pozitif (+q) olduğu için K noktasındaki elektrik alan vektörü yükten dışarıya doğrudur.",
+      "ipucu": "K noktasında +1 C birim yük bulunduğunu düşünerek yönü belirleyiniz."
+    },
+    {
+      "soru": "Şiddeti E = 500 N/C olan düzgün bir elektrik alan içerisine q = -4·{us:10|-3} C yüklü bir parçacık bırakılıyor. Parçacığa etki eden elektriksel kuvvetin büyüklüğünü ve yönünü bulunuz.",
+      "cevap": "Elektrik alan içindeki yüke etki eden kuvvet F = {uzunluk:q}·E bağıntısıyla hesaplanır: F = 4·{us:10|-3} · 500 = 2 N bulunur. Parçacık negatif (-) yüklü olduğu için etki eden elektriksel kuvvetin yönü elektrik alan (E) vektörüne zıt yöndedir.",
+      "cozum": "Elektrik alan içindeki yüke etki eden kuvvet F = {uzunluk:q}·E bağıntısıyla hesaplanır: F = 4·{us:10|-3} · 500 = 2 N bulunur. Parçacık negatif (-) yüklü olduğu için etki eden elektriksel kuvvetin yönü elektrik alan (E) vektörüne zıt yöndedir.",
+      "ipucu": "F = q·E bağıntısını ve negatif yüke alana zıt yönde kuvvet etki ettiği kuralını kullanınız."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tip": "coktan",
+      "soru": "Yatay ve sürtünmeli bir viraja giren m kütleli bir otomobilin virajı güvenle dönebileceği maksimum hız sınırını artırmak için aşağıdakilerden hangisi yapılmalıdır?",
+      "secenekler": [
+        "Otomobilin toplam kütlesini (m) iki katına çıkarmak",
+        "Viraj yarıçapını (r) veya sürtünme katsayısını (k) artırmak",
+        "Virajın eğrilik yarıçapını (r) yarı değerine indirmek",
+        "Yol yüzeyini ıslatarak statik sürtünme katsayısını azaltmak",
+        "Otomobilin içindeki yolcu ve yük miktarını azaltmak"
+      ],
+      "dogru": 1,
+      "aciklama": "Yatay virajda güvenli hız v_max = {kok:k·g·r} bağıntısıyla bulunur; kütleden bağımsızdır, k veya r artırıldığında güvenli hız sınırı artar.",
+      "tur": "coktan"
+    },
+    {
+      "tip": "coktan",
+      "soru": "Bir ipin ucuna bağlı m kütleli cisim düşey düzlemde düzgün çembersel hareket yapmaktadır. Cismin yörüngenin en alt noktasından geçerken ipteki gerilme kuvveti T_alt, en üst noktasından geçerken ipteki gerilme kuvveti T_üst olduğuna göre (T_alt - T_üst) farkı aşağıdakilerden hangisine eşittir?",
+      "secenekler": [
+        "0",
+        "m·g",
+        "2·m·g",
+        "{kesir:m·{us:v|2}|r}",
+        "2·{kesir:m·{us:v|2}|r}"
+      ],
+      "dogru": 2,
+      "aciklama": "T_alt = Fm + m·g ve T_üst = Fm - m·g olduğundan ikisi arasındaki fark T_alt - T_üst = 2·m·g olur.",
+      "tur": "coktan"
+    },
+    {
+      "tip": "coktan",
+      "soru": "Aralarında d uzaklığı bulunan noktasal +q ve +4q yüklerinden +q yükünün +4q yüküne uyguladığı elektriksel kuvvet vektörü F'dir. Buna göre +4q yükünün +q yüküne uyguladığı elektriksel kuvvet vektörü aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "4F",
+        "-4F",
+        "F",
+        "-F",
+        "-{kesir:F|4}"
+      ],
+      "dogru": 3,
+      "aciklama": "Coulomb kuvveti etki-tepki çiftidir; yük miktarları farklı olsa da birbirlerine eşit büyüklükte ve zıt yönde kuvvet uygularlar (-F).",
+      "tur": "coktan"
+    },
+    {
+      "tip": "coktan",
+      "soru": "Noktasal bir +q yükünden d kadar uzaktaki A noktasında oluşan elektriksel alanın büyüklüğü E'dir. Yük miktarı +2q yapılıp uzaklık 2d'ye çıkarılırsa yeni noktadaki elektriksel alanın büyüklüğü kaç E olur?",
+      "secenekler": [
+        "4E",
+        "2E",
+        "E",
+        "{kesir:E|2}",
+        "{kesir:E|4}"
+      ],
+      "dogru": 3,
+      "aciklama": "E = k·{kesir:q|{us:d|2}} olduğundan yeni alan E' = k·{kesir:2q|{us:(2d)|2}} = k·{kesir:2q|4·{us:d|2}} = {kesir:E|2} olur.",
+      "tur": "coktan"
+    },
+    {
+      "tip": "dy",
+      "ifadeler": [
+        {
+          "dogru": true,
+          "aciklama": "Doğrudur; kütle sadeleştiği için tüm araçlar için ideal hız aynıdır.",
+          "ifade": "Sürtünmesiz eğimli bir virajda güvenli dönüş hızı v = {kok:g·r·tan(teta)} bağıntısıyla hesaplanır ve aracın kütlesine bağlı değildir."
+        },
+        {
+          "dogru": false,
+          "aciklama": "Yanlıştır; sürat (v) sabit olduğundan merkezcil kuvvet büyüklüğü ({kesir:m·{us:v|2}|r}) sabittir, değişen ip gerilmesidir.",
+          "ifade": "Düşey düzlemde düzgün çembersel hareket yapan bir cismin yörünge boyunca merkezcil kuvvetinin büyüklüğü sürekli değişir."
+        },
+        {
+          "dogru": true,
+          "aciklama": "Doğrudur; kuvvet uzaklığın karesiyle ters orantılıdır.",
+          "ifade": "Coulomb Yasası'na göre iki noktasal yük arasındaki uzaklık yarıya indirilirse elektriksel kuvvetin büyüklüğü dört katına çıkar."
+        },
+        {
+          "dogru": false,
+          "aciklama": "Yanlıştır; elektrik alan çizgileri pozitif (+) yükten çıkar, negatif (-) yüke girer.",
+          "ifade": "Elektrik alan çizgileri negatif (-) yükten dışarı doğru çıkar ve pozitif (+) yükte son bulur."
+        },
+        {
+          "dogru": true,
+          "aciklama": "Doğrudur; yükler dış yüzeye dağıldığı için küre içinde elektrik alan sıfırdır.",
+          "ifade": "İletken ve yüklü bir kürenin iç bölgesindeki her noktada elektriksel alan şiddeti sıfırdır."
+        }
+      ],
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadeleri Doğru (D) veya Yanlış (Y) olarak değerlendiriniz."
+    },
+    {
+      "tip": "eslestir",
+      "ciftler": [
+        [
+          "Yatay virajda güvenli maksimum hız",
+          "v = {kok:k·g·r}"
+        ],
+        [
+          "Düşey çemberin en alt noktasında ip gerilmesi",
+          "T = {kesir:m·{us:v|2}|r} + m·g"
+        ],
+        [
+          "İki noktasal yük arasındaki Coulomb kuvveti",
+          "F = k·{kesir:{uzunluk:q1}·{uzunluk:q2},{us:d|2}}"
+        ],
+        [
+          "Noktasal yükün d uzağındaki elektrik alanı",
+          "E = k·{kesir:{uzunluk:q},{us:d|2}}"
+        ],
+        [
+          "Elektrik alan içindeki yüke etki eden kuvvet",
+          "F = q·E"
+        ]
+      ],
+      "tur": "eslestir",
+      "soru": "Fiziksel Nicelik ve Durumları İlgili Matematiksel Bağıntılarla Eşleştiriniz"
+    },
+    {
+      "tip": "bosluk",
+      "cumleler": [
+        {
+          "metin": "Düşey düzlemde çembersel hareket yapan bir cismin ip gerilmesi yörüngenin en ___ noktasında maksimum değerini alır.",
+          "cevap": "alt"
+        },
+        {
+          "metin": "İki noktasal yükün birbirine uyguladığı elektriksel kuvvetler eşit büyüklükte ve ___ yönlüdür.",
+          "cevap": "zıt"
+        },
+        {
+          "metin": "Bir noktadaki pozitif birim yüke (+1 C) etki eden elektriksel kuvvete o noktanın elektriksel ___ denir.",
+          "cevap": "alanı"
+        },
+        {
+          "metin": "SI birim sisteminde elektriksel alan şiddetinin birimi ___ bölü Coulomb (N/C) olarak ifade edilir.",
+          "cevap": "Newton"
+        },
+        {
+          "metin": "Bir bölgede elektrik alan çizgilerinin ___ olduğu yerlerde elektrik alan şiddeti daha büyüktür.",
+          "cevap": "sık"
+        }
+      ],
+      "kelimeler": [
+        "alt",
+        "zıt",
+        "alanı",
+        "Newton",
+        "sık"
+      ],
+      "fazla": [
+        "üst",
+        "seyrek"
+      ],
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız."
+    },
+    {
+      "tip": "ogretici",
+      "soru": "Yatay düzlemde aralarında d uzaklığı bulunan sabit q1 = +9q ve q2 = -q noktasal yüklerinin oluşturduğu sistemde elektriksel alanın sıfır olduğu (E_net = 0) noktanın yerini adım adım hesaplayınız.",
+      "cevap": "1. Bölge Seçimi: Yükler zıt işaretli (+9q ve -q) olduğu için elektrik alan vektörleri iki yükün arasında aynı yönlüdür (sıfırlanamaz). Elektrik alanın sıfır olduğu nokta iki yükün dışında ve mutlak değerce küçük olan -q yükünün sağ tarafında (q2'den x kadar uzakta) olmalıdır. 2. Eşitleme: E1 = E2 yazılır -> k·{kesir:9q|{us:(d + x)|2}} = k·{kesir:q|{us:x|2}}. 3. Çözüm: Her iki tarafın karekökü alındığında {kesir:3|d + x} = {kesir:1|x} -> 3x = d + x -> 2x = d -> x = {kesir:d|2} bulunur. Yani -q yükünden dışarıya doğru d/2 uzaklıktadır.",
+      "ipuclari": [
+        "Zıt işaretli yüklerde sıfır noktasının neden iki yükün arasında olamayacağını (+1 C koyarak) açıklayınız.",
+        "Noktayı küçük yük olan -q'nun dış tarafında x kadar uzakta seçip büyük yüke uzaklığını (d + x) yazınız.",
+        "E1 = E2 eşitliğinde iki tarafın karekökünü alarak x'i d cinsinden bulunuz."
+      ],
+      "tur": "ogretici"
+    }
+  ],
+  "ozet": [
+    "Yatay ve eğimli virajda güvenli dönüş hızı sürtünme, eğim ve yarıçapa bağlı olup aracın kütlesinden bağımsızdır.",
+    "Düşey düzlemde çembersel harekette ip gerilmesi en üstte minimum (Fm - m·g), en altta maksimum (Fm + m·g) değerini alır.",
+    "Coulomb Yasası'na göre noktasal yükler arasındaki elektriksel kuvvet yüklerin çarpımıyla doğru, uzaklığın karesiyle ters orantılıdır.",
+    "Noktasal q yükünden d kadar uzaktaki pozitif birim yüke (+1 C) etki eden elektriksel kuvvete o noktanın elektrik alanı denir.",
+    "Elektrik alan çizgileri + yükten çıkıp - yüke girer, asla kesişmez ve çizgi sıklığı alan şiddetiyle doğru orantılıdır."
+  ]
+}

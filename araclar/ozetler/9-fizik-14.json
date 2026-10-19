@@ -1,0 +1,538 @@
+{
+  "ad": "9-fizik-14",
+  "sinif": 9,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 14,
+  "tarih": "21-25 Aralık 2026",
+  "yayin_tarihi": "2026-12-21",
+  "unite": "2. TEMA: KUVVET VE HAREKET",
+  "konu": "Hareket ve Hareket Türleri: Öteleme, Dönme ve Titreşim Hareketleri, Sabit İvmeli Doğrusal Hareket, Serbest Düşme ve Hareket Grafikleri",
+  "ciktilar": [
+    "FİZ.9.2.2. Hareket türlerini (öteleme, dönme, titreşim) ve hareketin temel kavramlarını (konum, alınan yol, yer değiştirme, sürat, hız, ivme) sınıflandırır.",
+    "FİZ.9.2.3. Düzgün doğrusal hareket ile sabit ivmeli doğrusal hareketi (serbest düşme dahil) matematiksel modeller ve grafiklerle analiz eder.",
+    "FİZ.9.2.3.a. Konum-zaman, hız-zaman ve ivme-zaman grafiklerinin eğim ve alan hesaplamalarını kullanarak grafikler arasında dönüşüm yapar."
+  ],
+  "ozet": [
+    "Cisimlerin hareketleri yörünge ve niteliklerine göre öteleme (doğrusal ilerleme), dönme (sabit eksen etrafında dolanma) ve titreşim (iki nokta arasında salınım) olarak üçe ayrılır.",
+    "Alınan yol ve sürat yön belirtmeyen skaler büyüklükler iken; konum, yer değiştirme, hız ve ivme yönlü yani vektörel büyüklüklerdir.",
+    "Düzgün doğrusal harekette (sabit hızlı hareket) cisim eşit zaman aralıklarında eşit yer değiştirmeler yapar ve ivmesi sıfırdır (a = 0).",
+    "Sabit ivmeli doğrusal harekette birim zamandaki hız değişimi sabittir; hız-zaman grafiğinin eğimi ivmeyi, grafiğin zaman ekseniyle arasındaki alan ise yer değiştirmeyi verir.",
+    "Hava direncinin ihmal edildiği ortamda ilk hızsız bırakılan cismin yer çekimi ivmesiyle (g = 10 m/s kare) yaptığı harekete serbest düşme denir; cisim ardışık saniyelerde 5 m, 15 m, 25 m yol alır.",
+    "Konum-zaman grafiğinin teğet eğimi hızı, hız-zaman grafiğinin eğimi ivmeyi verirken; ivme-zaman grafiğinin alanı hız değişimini, hız-zaman grafiğinin alanı yer değiştirmeyi verir."
+  ],
+  "kavramlar": [
+    {
+      "terim": "Öteleme, Dönme ve Titreşim",
+      "tanim": "Cismin tüm noktalarının birlikte ilerlemesine öteleme, sabit bir eksen etrafında çember çizmesine dönme, denge noktası etrafında gidip gelmesine titreşim hareketi denir."
+    },
+    {
+      "terim": "Alınan Yol ve Yer Değiştirme",
+      "tanim": "Hareketlinin izlediği yörüngenin toplam uzunluğuna alınan yol (skaler); ilk konumdan son konuma çizilen en kısa yönlü doğru parçasına yer değiştirme (vektörel) denir."
+    },
+    {
+      "terim": "Sürat ve Hız",
+      "tanim": "Birim zamanda alınan yola sürat (skaler, v = x / t); birim zamanda yapılan yer değiştirmeye ise hız (vektörel) adı verilir ve her ikisinin SI birimi m/s'dir."
+    },
+    {
+      "terim": "İvme (a)",
+      "tanim": "Birim zamandaki hız değişimidir (a = Hız Değişimi / Geçen Süre); vektörel bir büyüklük olup Uluslararası Birim Sistemi'ndeki (SI) birimi m/{us:s|2}'dir."
+    },
+    {
+      "terim": "Serbest Düşme",
+      "tanim": "Havasız ortamda belirli bir yükseklikten ilk hızsız (v0 = 0) bırakılan cismin yalnızca yer çekimi kuvveti etkisiyle g = 10 m/{us:s|2} sabit ivmeyle düşmesidir."
+    }
+  ],
+  "giris": "Evrende atom altı parçacıklardan galaksilere kadar her şey sürekli bir hareket halindedir. Bir cismin hareket edip etmediği seçilen referans noktasına (gözlem çerçevesine) göre tanımlanır. Günlük yaşamda düz yolda ilerleyen bir tren öteleme, lunaparktaki dönme dolap dönme, gitarın teli ise titreşim hareketi yapar. Bu dersimizde hareket türlerini sınıflandıracak, skaler ve vektörel hareket kavramlarını ayırt edecek, sabit hızlı ve sabit ivmeli doğrusal hareketleri (özel bir durumu olan serbest düşme ile birlikte) inceleyecek ve konum, hız, ivme grafiklerini eğim ve alan kurallarıyla çözümleyeceğiz.",
+  "bolumler": [
+    {
+      "baslik": "Referans Noktası ve Hareket Türleri",
+      "metin": [
+        "Bir cismin seçilen bir başlangıç noktasına (referans noktasına) göre zamanla konumunun değişmesine hareket denir. Hareket göreceli bir kavramdır; örneğin sabit süratle giden bir otobüsün içinde yan yana oturan iki yolcu birbirine göre hareketsizken, yol kenarında duran bir gözlemciye göre hareketlidir. Cisimlerin yaptığı hareketler özelliklerine göre öteleme, dönme ve titreşim olmak üzere üç temel türe ayrılır. Bir cismin üzerindeki tüm noktaların aynı yönde ve eşit miktarda ilerlemesine öteleme hareketi denir; düz rayda giden tren, dalından düşen elma ve yürüyen merdivendeki kişi öteleme hareketi yapar.",
+        "Bir cismin sabit bir merkez veya eksen etrafında çembersel bir yörüngede dolanmasına dönme hareketi adı verilir; saatin yelkovanı, rüzgâr türbininin kanatları ve kendi ekseni etrafında dönen Dünya dönme hareketi yapar. Bir cismin sabit bir denge konumu etrafında iki nokta arasında gidip gelme (salınım) hareketine ise titreşim hareketi denir; vurulan diyapazon, çekilip bırakılan gitar teli, duvar saatinin sarkacı ve salıncakta sallanan çocuk titreşim hareketine örnektir. İlerleyen bir otomobilin tekerleği veya Güneş etrafında dolanan Dünya ise hem öteleme hem de dönme hareketini birlikte gerçekleştirir."
+      ],
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Bileşik Hareket Örneği",
+          "metin": "Doğrusal bir yolda ilerleyen bisikletin veya otomobilin tekerleği, kendi ekseni etrafında döndüğü için dönme, araçla birlikte ileri gittiği için öteleme hareketini aynı anda yapar."
+        }
+      ],
+      "tablo": {
+        "basliklar": [
+          "Hareket Türü",
+          "Temel Özelliği",
+          "Günlük Hayattan Örnekler"
+        ],
+        "satirlar": [
+          [
+            "Öteleme Hareketi",
+            "Cismin bütünü aynı doğrultuda yer değiştirir.",
+            "Asansörün çıkışı, düz yolda kayan kızak"
+          ],
+          [
+            "Dönme Hareketi",
+            "Sabit bir eksen etrafında çembersel hareket.",
+            "Vantilatör pervanesi, dönme dolap"
+          ],
+          [
+            "Titreşim Hareketi",
+            "İki uç nokta arasında periyodik gidip gelme.",
+            "Keman teli, sarkaç, yay ucundaki kütle"
+          ],
+          [
+            "Öteleme + Dönme",
+            "Hem eksen etrafında dönüp hem ilerleme.",
+            "Yuvarlanan futbol topu, araba tekerleği"
+          ]
+        ]
+      },
+      "liste": [
+        "Katı maddelerin tanecikleri bulundukları yerde yalnızca titreşim hareketi yapar.",
+        "Sıvı ve gaz tanecikleri ise titreşim, öteleme ve dönme hareketlerinin üçünü birden yapabilir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Poppins, sans-serif\">\n  <rect width=\"700\" height=\"260\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/>\n  <rect x=\"20\" y=\"18\" width=\"660\" height=\"38\" rx=\"8\" fill=\"#1D4ED8\"/>\n  <text x=\"350\" y=\"43\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-size=\"16\" font-weight=\"700\">HAREKET TÜRLERİ: ÖTELEME, DÖNME VE TİTREŞİM HAREKETİ</text>\n  <g transform=\"translate(25, 72)\">\n    <rect x=\"0\" y=\"0\" width=\"205\" height=\"164\" rx=\"10\" fill=\"#DBEAFE\" stroke=\"#2563EB\" stroke-width=\"2\"/>\n    <text x=\"102\" y=\"26\" text-anchor=\"middle\" fill=\"#1E3A8A\" font-size=\"14\" font-weight=\"700\">1. Öteleme Hareketi</text>\n    <rect x=\"35\" y=\"48\" width=\"55\" height=\"30\" rx=\"6\" fill=\"#2563EB\"/>\n    <line x1=\"95\" y1=\"63\" x2=\"155\" y2=\"63\" stroke=\"#1E3A8A\" stroke-width=\"3\"/>\n    <polygon points=\"155,57 167,63 155,69\" fill=\"#1E3A8A\"/>\n    <text x=\"102\" y=\"106\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\">Cismin tüm noktaları aynı</text>\n    <text x=\"102\" y=\"122\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\">yönde eşit yer değiştirir.</text>\n    <text x=\"102\" y=\"146\" text-anchor=\"middle\" fill=\"#1E40AF\" font-size=\"11\" font-weight=\"600\">Örnek: Düz raydaki tren</text>\n\n    <rect x=\"222\" y=\"0\" width=\"205\" height=\"164\" rx=\"10\" fill=\"#FEF3C7\" stroke=\"#D97706\" stroke-width=\"2\"/>\n    <text x=\"324\" y=\"26\" text-anchor=\"middle\" fill=\"#92400E\" font-size=\"14\" font-weight=\"700\">2. Dönme Hareketi</text>\n    <circle cx=\"324\" cy=\"63\" r=\"22\" fill=\"none\" stroke=\"#D97706\" stroke-width=\"3\" stroke-dasharray=\"6,3\"/>\n    <circle cx=\"324\" cy=\"63\" r=\"4\" fill=\"#92400E\"/>\n    <text x=\"324\" y=\"106\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\">Sabit bir eksen etrafında</text>\n    <text x=\"324\" y=\"122\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\">çembersel yörüngede dolanım.</text>\n    <text x=\"324\" y=\"146\" text-anchor=\"middle\" fill=\"#92400E\" font-size=\"11\" font-weight=\"600\">Örnek: Dönme dolap, yelkovan</text>\n\n    <rect x=\"445\" y=\"0\" width=\"205\" height=\"164\" rx=\"10\" fill=\"#DCFCE7\" stroke=\"#16A34A\" stroke-width=\"2\"/>\n    <text x=\"547\" y=\"26\" text-anchor=\"middle\" fill=\"#166534\" font-size=\"14\" font-weight=\"700\">3. Titreşim (Salınım)</text>\n    <line x1=\"505\" y1=\"63\" x2=\"589\" y2=\"63\" stroke=\"#16A34A\" stroke-width=\"3\"/>\n    <circle cx=\"547\" cy=\"63\" r=\"9\" fill=\"#15803D\"/>\n    <text x=\"547\" y=\"106\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\">İki nokta arasında denge</text>\n    <text x=\"547\" y=\"122\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\">konumu etrafında gidip gelme.</text>\n    <text x=\"547\" y=\"146\" text-anchor=\"middle\" fill=\"#166534\" font-size=\"11\" font-weight=\"600\">Örnek: Gitar teli, sarkaç</text>\n  </g>\n</svg>"
+    },
+    {
+      "baslik": "Konum, Alınan Yol, Yer Değiştirme, Sürat ve Hız",
+      "metin": [
+        "Bir hareketlinin belirli bir anda referans noktasına olan yönlü uzaklığına konum denir ve vektörel bir büyüklüktür. Hareketlinin ilk konumu ile son konumu arasındaki en kısa yönlü doğru parçasına yer değiştirme (son konum eksi ilk konum), hareket süresince izlediği yörüngenin toplam uzunluğuna ise alınan yol adı verilir. Alınan yol skaler (yönsüz), yer değiştirme ise vektörel (yönlü) bir büyüklüktür; her ikisinin de SI birimi metredir (m). Bir koşucu 400 metrelik çembersel bir pistte başladığı noktaya geri dönerse aldığı yol 400 m olurken, ilk ve son konumu aynı olduğu için yer değiştirmesi sıfır (0 m) olur.",
+        "Birim zamanda alınan yola sürat (Sürat = Alınan Yol / Geçen Süre), birim zamanda yapılan yer değiştirmeye ise hız (Hız = Yer Değiştirme / Geçen Süre) denir. Sürat skaler, hız ise vektörel bir büyüklüktür ve her ikisinin de SI birimi metre/saniyedir (m/s; günlük hayatta km/h de kullanılır ve 1 m/s = 3,6 km/h değerine eşittir). Araçların gösterge panelindeki ibre (kilometre saati) aracın o andaki yönünü belirtmediği için anlık hızı değil, anlık sürati gösterir. Bir hareketli yön değiştirmeden doğrusal bir yolda ilerliyorsa aldığı yol yer değiştirmesinin büyüklüğüne, ortalama sürati de ortalama hızının büyüklüğüne eşittir."
+      ],
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "m/s ile km/h Dönüşüm Kuralı",
+          "metin": "Metre/saniye (m/s) cinsinden verilen bir hız veya sürat değerini kilometre/saat (km/h) birimine çevirmek için 3,6 ile çarparız (örneğin 20 m/s = 72 km/h)."
+        }
+      ],
+      "tablo": {
+        "basliklar": [
+          "Kavram",
+          "Büyüklük Türü",
+          "SI Birimi",
+          "Matematiksel Tanımı"
+        ],
+        "satirlar": [
+          [
+            "Alınan Yol (x)",
+            "Skaler (Yönsüz)",
+            "metre (m)",
+            "İzlenen yörüngenin toplam uzunluğu"
+          ],
+          [
+            "Yer Değiştirme",
+            "Vektörel (Yönlü)",
+            "metre (m)",
+            "Son Konum - İlk Konum (En kısa doğru)"
+          ],
+          [
+            "Ortalama Sürat",
+            "Skaler (Yönsüz)",
+            "m/s",
+            "Toplam Alınan Yol / Toplam Geçen Zaman"
+          ],
+          [
+            "Ortalama Hız",
+            "Vektörel (Yönlü)",
+            "m/s",
+            "Toplam Yer Değiştirme / Toplam Geçen Zaman"
+          ]
+        ]
+      },
+      "liste": [
+        "Hiçbir harekette yer değiştirmenin büyüklüğü alınan yoldan daha büyük olamaz (en fazla alınan yola eşit olur).",
+        "Sabit süratle çembersel pistte dönen bir aracın sürati sabittir ancak hareket yönü sürekli değiştiği için hızı değişkendir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Poppins, sans-serif\">\n  <rect width=\"700\" height=\"260\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/>\n  <rect x=\"20\" y=\"18\" width=\"660\" height=\"38\" rx=\"8\" fill=\"#0F766E\"/>\n  <text x=\"350\" y=\"43\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-size=\"16\" font-weight=\"700\">TEMEL KAVRAMLAR: KONUM, ALINAN YOL, YER DEĞİŞTİRME, SÜRAT VE HIZ</text>\n  <g transform=\"translate(28, 72)\">\n    <rect x=\"0\" y=\"0\" width=\"305\" height=\"164\" rx=\"10\" fill=\"#CCFBF1\" stroke=\"#0D9488\" stroke-width=\"2\"/>\n    <text x=\"152\" y=\"25\" text-anchor=\"middle\" fill=\"#115E59\" font-size=\"14\" font-weight=\"700\">Skaler Büyüklükler (Yönsüz)</text>\n    <rect x=\"16\" y=\"40\" width=\"273\" height=\"50\" rx=\"6\" fill=\"#FFFFFF\"/>\n    <text x=\"152\" y=\"60\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"12\" font-weight=\"700\">Alınan Yol (x): Toplam yörünge uzunluğu</text>\n    <text x=\"152\" y=\"78\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">SI Birimi: metre (m) — Negatif olamaz</text>\n    <rect x=\"16\" y=\"98\" width=\"273\" height=\"50\" rx=\"6\" fill=\"#FFFFFF\"/>\n    <text x=\"152\" y=\"118\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"12\" font-weight=\"700\">Ortalama Sürat = Alınan Yol / Zaman</text>\n    <text x=\"152\" y=\"136\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">SI Birimi: m/s — Otomobil ibresi anlık sürattir</text>\n\n    <rect x=\"335\" y=\"0\" width=\"305\" height=\"164\" rx=\"10\" fill=\"#E0E7FF\" stroke=\"#4F46E5\" stroke-width=\"2\"/>\n    <text x=\"487\" y=\"25\" text-anchor=\"middle\" fill=\"#312E81\" font-size=\"14\" font-weight=\"700\">Vektörel Büyüklükler (Yönlü)</text>\n    <rect x=\"351\" y=\"40\" width=\"273\" height=\"50\" rx=\"6\" fill=\"#FFFFFF\"/>\n    <text x=\"487\" y=\"60\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"12\" font-weight=\"700\">Yer Değiştirme: Son Konum - İlk Konum</text>\n    <text x=\"487\" y=\"78\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">En kısa yönlü doğru parçası (SI: metre)</text>\n    <rect x=\"351\" y=\"98\" width=\"273\" height=\"50\" rx=\"6\" fill=\"#FFFFFF\"/>\n    <text x=\"487\" y=\"118\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"12\" font-weight=\"700\">Ortalama Hız = Yer Değiştirme / Zaman</text>\n    <text x=\"487\" y=\"136\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">İvme (a) = Hız Değişimi / Geçen Süre (m/s²)</text>\n  </g>\n</svg>"
+    },
+    {
+      "baslik": "Düzgün Doğrusal Hareket (Sabit Hızlı Hareket)",
+      "metin": [
+        "Doğrusal bir yörünge üzerinde hareket eden bir cismin hızının büyüklüğü ve yönü zamanla hiç değişmiyorsa bu harekete düzgün doğrusal hareket (sabit hızlı hareket) denir. Bu harekette cisim eşit zaman aralıklarında eşit yer değiştirmeler yapar. Hız değişimi sıfır olduğu için sabit hızlı hareket yapan bir cismin ivmesi sıfırdır (a = 0) ve üzerine etki eden net kuvvet de sıfırdır. Cismin t sürede yaptığı yer değiştirme x = v . t bağıntısıyla hesaplanır.",
+        "Düzgün doğrusal harekette konum-zaman (x-t) grafiği eğimi sabit olan düz bir doğrudur. Bu doğrunun eğimi (dikey değişimin yatay değişime oranı) cismin sabit hızını (v) verir. Doğru yukarı yönlü ise cisim pozitif (+) yönde sabit hızla, aşağı yönlü ise negatif (-) yönde sabit hızla gidiyor demektir; doğru yatay (zamana paralel) ise cisim durmaktadır (v = 0). Hız-zaman (v-t) grafiği ise zaman eksenine paralel yatay bir doğrudur; bu doğru ile zaman ekseni arasında kalan dikdörtgenin alanı (v . t) cismin yer değiştirmesini verir."
+      ],
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Konum-Zaman Grafiğinde Yön Değiştirme",
+          "metin": "Konum-zaman (x-t) grafiğinde grafiğin tepe ve çukur yaptığı (eğimin işaret değiştirdiği) bükülme noktaları, hareketlinin yön değiştirdiği anları gösterir."
+        }
+      ],
+      "tablo": {
+        "basliklar": [
+          "Grafik Türü",
+          "Sabit Hızlı Hareketteki Şekli",
+          "Grafikten Elde Edilen Bilgi"
+        ],
+        "satirlar": [
+          [
+            "Konum - Zaman (x-t)",
+            "Eğimi sabit eğik doğru",
+            "Doğrunun eğimi sabit hızı (v = x / t) verir."
+          ],
+          [
+            "Hız - Zaman (v-t)",
+            "Zaman eksenine paralel yatay doğru",
+            "Altta kalan alan yer değiştirmeyi (x = v . t) verir."
+          ],
+          [
+            "İvme - Zaman (a-t)",
+            "Sıfır ekseni (t ekseni) üzerinde doğru",
+            "Hız değişmediği için ivme her an sıfırdır (a = 0)."
+          ]
+        ]
+      },
+      "liste": [
+        "Hız-zaman grafiğinde zaman ekseninin üstündeki alanlar (+) yönlü, altındaki alanlar (-) yönlü yer değiştirmeyi gösterir.",
+        "Toplam alınan yol bulunurken üstteki ve alttaki alanların mutlak değerleri toplanır; yer değiştirme bulunurken cebirsel (işaretli) toplam alınır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Poppins, sans-serif\">\n  <rect width=\"700\" height=\"260\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/>\n  <rect x=\"20\" y=\"18\" width=\"660\" height=\"38\" rx=\"8\" fill=\"#047857\"/>\n  <text x=\"350\" y=\"43\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-size=\"16\" font-weight=\"700\">DÜZGÜN DOĞRUSAL HAREKET (SABİT HIZLI HAREKET — a = 0)</text>\n  <g transform=\"translate(28, 72)\">\n    <!-- Konum-Zaman -->\n    <rect x=\"0\" y=\"0\" width=\"205\" height=\"164\" rx=\"10\" fill=\"#DCFCE7\" stroke=\"#16A34A\" stroke-width=\"2\"/>\n    <text x=\"102\" y=\"22\" text-anchor=\"middle\" fill=\"#166534\" font-size=\"13\" font-weight=\"700\">Konum - Zaman (x - t)</text>\n    <line x1=\"30\" y1=\"125\" x2=\"175\" y2=\"125\" stroke=\"#334155\" stroke-width=\"2\"/>\n    <line x1=\"30\" y1=\"125\" x2=\"30\" y2=\"35\" stroke=\"#334155\" stroke-width=\"2\"/>\n    <line x1=\"30\" y1=\"125\" x2=\"165\" y2=\"45\" stroke=\"#16A34A\" stroke-width=\"3\"/>\n    <text x=\"102\" y=\"148\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\" font-weight=\"600\">Eğim = Sabit Hız (v)</text>\n    <!-- Hız-Zaman -->\n    <rect x=\"220\" y=\"0\" width=\"205\" height=\"164\" rx=\"10\" fill=\"#DBEAFE\" stroke=\"#2563EB\" stroke-width=\"2\"/>\n    <text x=\"322\" y=\"22\" text-anchor=\"middle\" fill=\"#1E3A8A\" font-size=\"13\" font-weight=\"700\">Hız - Zaman (v - t)</text>\n    <line x1=\"250\" y1=\"125\" x2=\"395\" y2=\"125\" stroke=\"#334155\" stroke-width=\"2\"/>\n    <line x1=\"250\" y1=\"125\" x2=\"250\" y2=\"35\" stroke=\"#334155\" stroke-width=\"2\"/>\n    <rect x=\"250\" y=\"65\" width=\"125\" height=\"60\" fill=\"#93C5FD\" opacity=\"0.5\"/>\n    <line x1=\"250\" y1=\"65\" x2=\"375\" y2=\"65\" stroke=\"#2563EB\" stroke-width=\"3\"/>\n    <text x=\"322\" y=\"100\" text-anchor=\"middle\" fill=\"#1E3A8A\" font-size=\"11\" font-weight=\"700\">Alan = v . t</text>\n    <text x=\"322\" y=\"148\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\" font-weight=\"600\">Alan = Yer Değiştirme</text>\n    <!-- İvme-Zaman -->\n    <rect x=\"440\" y=\"0\" width=\"205\" height=\"164\" rx=\"10\" fill=\"#FEF3C7\" stroke=\"#D97706\" stroke-width=\"2\"/>\n    <text x=\"542\" y=\"22\" text-anchor=\"middle\" fill=\"#92400E\" font-size=\"13\" font-weight=\"700\">İvme - Zaman (a - t)</text>\n    <line x1=\"470\" y1=\"90\" x2=\"615\" y2=\"90\" stroke=\"#334155\" stroke-width=\"2\"/>\n    <line x1=\"470\" y1=\"135\" x2=\"470\" y2=\"35\" stroke=\"#334155\" stroke-width=\"2\"/>\n    <line x1=\"470\" y1=\"90\" x2=\"605\" y2=\"90\" stroke=\"#DC2626\" stroke-width=\"3.5\"/>\n    <text x=\"542\" y=\"78\" text-anchor=\"middle\" fill=\"#991B1B\" font-size=\"12\" font-weight=\"700\">a = 0 (Sabit hız)</text>\n    <text x=\"542\" y=\"148\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\" font-weight=\"600\">Net kuvvet ve ivme sıfırdır</text>\n  </g>\n</svg>"
+    },
+    {
+      "baslik": "Sabit İvmeli Doğrusal Hareket",
+      "metin": [
+        "Hareket halindeki bir cismin hızı birim zamanda sabit miktarda artıyor veya azalıyorsa bu harekete sabit ivmeli doğrusal hareket denir. Birim zamandaki hız değişimine ivme (a) adı verilir, vektörel bir büyüklüktür ve SI birimi m/{us:s|2}'dir (a = Hız Değişimi / Süre). Örneğin ivmesi 4 m/{us:s|2} olan ve durgun halden harekete başlayan bir aracın hızı her saniye 4 m/s artarak 1. saniyede 4 m/s, 2. saniyede 8 m/s, 3. saniyede 12 m/s olur. Cismin hız vektörü ile ivme vektörü aynı yönlü ise cisim düzgün hızlanır; zıt yönlü ise cisim düzgün yavaşlar.",
+        "İlk hızı {us:v|0} olan ve a sabit ivmesiyle hareket eden bir cismin t süre sonundaki hızı v = {us:v|0} + a . t (yavaşlıyorsa eksi) bağıntısıyla bulunur. Bu sürede yaptığı yer değiştirme ise hız-zaman grafiğinin altındaki yamuk veya üçgen alanından x = {us:v|0} . t + {kesir:1|2} . a . {us:t|2} formülüyle hesaplanır. İlk hızsız ({us:v|0} = 0) düzgün hızlanan bir cisim eşit zaman aralıklarında sırasıyla x, 3x, 5x, 7x şeklinde tek sayıların katları oranında yol alır; toplam aldığı yol ise {us:t|2} ile orantılı olarak x, 4x, 9x, 16x şeklinde artar."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Hızlanma ve Yavaşlama Kuralı",
+          "metin": "Bir aracın hızlanması veya yavaşlaması yalnızca ivmenin (+) veya (-) olmasına bağlı değildir: Hız ve ivme aynı işaretliyse (+,+ veya -,-) araç hızlanır; zıt işaretliyse (+,- veya -,+) araç yavaşlar."
+        }
+      ],
+      "tablo": {
+        "basliklar": [
+          "Hareket Durumu",
+          "Hız (v) İşareti",
+          "İvme (a) İşareti",
+          "Hız-Zaman Grafiği Özelliği"
+        ],
+        "satirlar": [
+          [
+            "Pozitif yönde düzgün hızlanan",
+            "Pozitif (+)",
+            "Pozitif (+)",
+            "Zaman ekseninden yukarı uzaklaşan doğru"
+          ],
+          [
+            "Pozitif yönde düzgün yavaşlayan",
+            "Pozitif (+)",
+            "Negatif (-)",
+            "Üst bölgeden zaman eksenine yaklaşan doğru"
+          ],
+          [
+            "Negatif yönde düzgün hızlanan",
+            "Negatif (-)",
+            "Negatif (-)",
+            "Zaman ekseninden aşağı uzaklaşan doğru"
+          ],
+          [
+            "Negatif yönde düzgün yavaşlayan",
+            "Negatif (-)",
+            "Pozitif (+)",
+            "Alt bölgeden zaman eksenine yaklaşan doğru"
+          ]
+        ]
+      },
+      "liste": [
+        "Zamansız hız denklemi: {us:v|2} = {us:v0|2} + 2 . a . x (süre verilmediğinde hız, ivme ve yol arasındaki bağıntıdır).",
+        "Sabit ivmeli harekette ortalama hız, ilk hız ile son hızın aritmetik ortalamasına eşittir: {us:v|ort} = ({us:v|0} + {us:v|son}) / 2."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Poppins, sans-serif\">\n  <rect width=\"700\" height=\"260\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/>\n  <rect x=\"20\" y=\"18\" width=\"660\" height=\"38\" rx=\"8\" fill=\"#6D28D9\"/>\n  <text x=\"350\" y=\"43\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-size=\"16\" font-weight=\"700\">SABİT İVMELİ DOĞRUSAL HAREKET (DÜZGÜN HIZLANAN HAREKET)</text>\n  <g transform=\"translate(28, 72)\">\n    <!-- Konum-Zaman -->\n    <rect x=\"0\" y=\"0\" width=\"205\" height=\"164\" rx=\"10\" fill=\"#EDE9FE\" stroke=\"#7C3AED\" stroke-width=\"2\"/>\n    <text x=\"102\" y=\"22\" text-anchor=\"middle\" fill=\"#4C1D95\" font-size=\"13\" font-weight=\"700\">Konum - Zaman (Parabol)</text>\n    <line x1=\"30\" y1=\"125\" x2=\"175\" y2=\"125\" stroke=\"#334155\" stroke-width=\"2\"/>\n    <line x1=\"30\" y1=\"125\" x2=\"30\" y2=\"35\" stroke=\"#334155\" stroke-width=\"2\"/>\n    <path d=\"M 30 125 Q 115 122 160 40\" fill=\"none\" stroke=\"#7C3AED\" stroke-width=\"3\"/>\n    <text x=\"102\" y=\"148\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\" font-weight=\"600\">Eğim giderek artar (x, 3x, 5x)</text>\n    <!-- Hız-Zaman -->\n    <rect x=\"220\" y=\"0\" width=\"205\" height=\"164\" rx=\"10\" fill=\"#DBEAFE\" stroke=\"#2563EB\" stroke-width=\"2\"/>\n    <text x=\"322\" y=\"22\" text-anchor=\"middle\" fill=\"#1E3A8A\" font-size=\"13\" font-weight=\"700\">Hız - Zaman (Doğrusal)</text>\n    <line x1=\"250\" y1=\"125\" x2=\"395\" y2=\"125\" stroke=\"#334155\" stroke-width=\"2\"/>\n    <line x1=\"250\" y1=\"125\" x2=\"250\" y2=\"35\" stroke=\"#334155\" stroke-width=\"2\"/>\n    <polygon points=\"250,125 375,45 375,125\" fill=\"#93C5FD\" opacity=\"0.5\"/>\n    <line x1=\"250\" y1=\"125\" x2=\"375\" y2=\"45\" stroke=\"#2563EB\" stroke-width=\"3\"/>\n    <text x=\"322\" y=\"148\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\" font-weight=\"600\">Eğim = İvme (a) | Alan = x</text>\n    <!-- İvme-Zaman -->\n    <rect x=\"440\" y=\"0\" width=\"205\" height=\"164\" rx=\"10\" fill=\"#FCE7F3\" stroke=\"#DB2777\" stroke-width=\"2\"/>\n    <text x=\"542\" y=\"22\" text-anchor=\"middle\" fill=\"#9D174D\" font-size=\"13\" font-weight=\"700\">İvme - Zaman (Sabit)</text>\n    <line x1=\"470\" y1=\"125\" x2=\"615\" y2=\"125\" stroke=\"#334155\" stroke-width=\"2\"/>\n    <line x1=\"470\" y1=\"125\" x2=\"470\" y2=\"35\" stroke=\"#334155\" stroke-width=\"2\"/>\n    <rect x=\"470\" y=\"65\" width=\"125\" height=\"60\" fill=\"#FBCFE8\" opacity=\"0.5\"/>\n    <line x1=\"470\" y1=\"65\" x2=\"595\" y2=\"65\" stroke=\"#DB2777\" stroke-width=\"3\"/>\n    <text x=\"542\" y=\"148\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\" font-weight=\"600\">Alan = a . t = Hız Değişimi</text>\n  </g>\n</svg>"
+    },
+    {
+      "baslik": "Serbest Düşme Hareketi",
+      "metin": [
+        "Sabit ivmeli doğrusal hareketin doğadaki en önemli örneği serbest düşme hareketidir. Hava direncinin (sürtünmenin) ihmal edildiği bir ortamda, belirli bir h yüksekliğinden ilk hızsız ({us:v|0} = 0) bırakılan bir cismin yalnızca yer çekimi kuvvetinin etkisiyle yere doğru yaptığı düzgün hızlanan harekete serbest düşme denir. Serbest düşen tüm cisimler kütlelerine bağlı olmaksızın (bir kuş tüyü ile bir demir bilye havasız ortamda aynı anda bırakıldığında) aynı yer çekimi ivmesiyle (Dünya yüzeyinde yaklaşık g = 10 m/{us:s|2}) hızlanır ve yere aynı anda çarpar.",
+        "Serbest düşmeye bırakılan bir cismin hızı her saniye g = 10 m/s kadar artar; yani t saniye sonunda hızı v = g . t = 10 . t bağıntısıyla bulunur (1. s'de 10 m/s, 2. s'de 20 m/s, 3. s'de 30 m/s). Cismin t sürede düştüğü toplam yükseklik ise h = {kesir:1|2} . g . {us:t|2} = 5 . {us:t|2} formülüyle hesaplanır. Buna göre serbest düşen bir cisim 1. saniye içinde 5 m, 2. saniye içinde 15 m, 3. saniye içinde 25 m, 4. saniye içinde 35 m yol alır (5-15-25-35 kuralı); toplam düştüğü yükseklik ise 1 s'de 5 m, 2 s'de 20 m, 3 s'de 45 m ve 4 s'de 80 m olur."
+      ],
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Serbest Düşmede 5 - 15 - 25 - 35 Kuralı",
+          "metin": "g = 10 m/{us:s|2} alındığında serbest düşmeye bırakılan bir cisim her bir saniye aralığında sırasıyla 5 m, 15 m, 25 m, 35 m, 45 m düşer ve hızı her saniye 10 m/s artar."
+        }
+      ],
+      "tablo": {
+        "basliklar": [
+          "Geçen Süre (t)",
+          "Anlık Hız (v = 10.t)",
+          "O Saniye İçinde Alınan Yol",
+          "Toplam Düşülen Yükseklik (h = 5.t²)"
+        ],
+        "satirlar": [
+          [
+            "1. saniye sonu",
+            "10 m/s",
+            "5 metre (0-1 s arası)",
+            "5 metre"
+          ],
+          [
+            "2. saniye sonu",
+            "20 m/s",
+            "15 metre (1-2 s arası)",
+            "20 metre (5 + 15)"
+          ],
+          [
+            "3. saniye sonu",
+            "30 m/s",
+            "25 metre (2-3 s arası)",
+            "45 metre (5 + 15 + 25)"
+          ],
+          [
+            "4. saniye sonu",
+            "40 m/s",
+            "35 metre (3-4 s arası)",
+            "80 metre (5 + 15 + 25 + 35)"
+          ]
+        ]
+      },
+      "liste": [
+        "Serbest düşmede yere çarpma hızının karesi: {us:v|2} = 2 . g . h bağıntısıyla da doğrudan bulunabilir.",
+        "Havasız tüp deneyinde (Newton tüpü) elma ile tüyün aynı anda yere düşmesi, yer çekimi ivmesinin kütleden bağımsız olduğunu kanıtlar."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Poppins, sans-serif\">\n  <rect width=\"700\" height=\"260\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/>\n  <rect x=\"20\" y=\"18\" width=\"660\" height=\"38\" rx=\"8\" fill=\"#B45309\"/>\n  <text x=\"350\" y=\"43\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-size=\"16\" font-weight=\"700\">SERBEST DÜŞME HAREKETİ (g = 10 m/s² — HAVA DİRENCİ İHMAL)</text>\n  <g transform=\"translate(30, 72)\">\n    <rect x=\"0\" y=\"0\" width=\"305\" height=\"164\" rx=\"10\" fill=\"#FEF3C7\" stroke=\"#D97706\" stroke-width=\"2\"/>\n    <text x=\"152\" y=\"24\" text-anchor=\"middle\" fill=\"#92400E\" font-size=\"14\" font-weight=\"700\">Saniyelere Göre Hız (v = g . t)</text>\n    <text x=\"25\" y=\"52\" fill=\"#0F172A\" font-size=\"12\" font-weight=\"600\">• t = 0 s  ---&gt;  İlk hız v = 0 m/s</text>\n    <text x=\"25\" y=\"78\" fill=\"#0F172A\" font-size=\"12\" font-weight=\"600\">• t = 1 s  ---&gt;  Hız v = 10 m/s</text>\n    <text x=\"25\" y=\"104\" fill=\"#0F172A\" font-size=\"12\" font-weight=\"600\">• t = 2 s  ---&gt;  Hız v = 20 m/s</text>\n    <text x=\"25\" y=\"130\" fill=\"#0F172A\" font-size=\"12\" font-weight=\"600\">• t = 3 s  ---&gt;  Hız v = 30 m/s</text>\n    <text x=\"152\" y=\"152\" text-anchor=\"middle\" fill=\"#92400E\" font-size=\"11\" font-weight=\"700\">Her saniye hız 10 m/s artar.</text>\n\n    <rect x=\"335\" y=\"0\" width=\"305\" height=\"164\" rx=\"10\" fill=\"#FFEDD5\" stroke=\"#EA580C\" stroke-width=\"2\"/>\n    <text x=\"487\" y=\"24\" text-anchor=\"middle\" fill=\"#9A3412\" font-size=\"14\" font-weight=\"700\">Alınan Yollar (h = 1/2 . g . t²)</text>\n    <text x=\"360\" y=\"52\" fill=\"#0F172A\" font-size=\"12\" font-weight=\"600\">• 1. saniyede: 5 m (Toplam: 5 m)</text>\n    <text x=\"360\" y=\"78\" fill=\"#0F172A\" font-size=\"12\" font-weight=\"600\">• 2. saniyede: 15 m (Toplam: 20 m)</text>\n    <text x=\"360\" y=\"104\" fill=\"#0F172A\" font-size=\"12\" font-weight=\"600\">• 3. saniyede: 25 m (Toplam: 45 m)</text>\n    <text x=\"360\" y=\"130\" fill=\"#0F172A\" font-size=\"12\" font-weight=\"600\">• 4. saniyede: 35 m (Toplam: 80 m)</text>\n    <text x=\"487\" y=\"152\" text-anchor=\"middle\" fill=\"#9A3412\" font-size=\"11\" font-weight=\"700\">Ardışık yollar: 5m - 15m - 25m - 35m</text>\n  </g>\n</svg>"
+    },
+    {
+      "baslik": "Hareket Grafikleri ve Grafikler Arası Dönüşümler",
+      "metin": [
+        "Hareket problemlerinin analizinde Konum-Zaman (x-t), Hız-Zaman (v-t) ve İvme-Zaman (a-t) grafikleri birbiriyle tam bir matematiksel uyum içindedir. Konum-zaman grafiğinden hız-zaman grafiğine, hız-zaman grafiğinden de ivme-zaman grafiğine geçerken 'EĞİM' alınır: Konum-zaman grafiğinin eğimi hızı (v), hız-zaman grafiğinin eğimi ise ivmeyi (a) verir. Sabit ivmeli harekette konum-zaman grafiği parabolik bir eğridir; eğrinin eğimi dikleşiyorsa (젊은 K harfi gibi) araç hızlanıyor, eğim yataylaşıyorsa (yaşlı K harfi gibi) araç yavaşlıyor demektir.",
+        "Ters yönde yani ivme-zaman grafiğinden hız-zaman grafiğine, hız-zaman grafiğinden de konum-zaman grafiğine geçerken ise grafiğin zaman ekseniyle arasında kalan 'ALAN' hesaplanır: İvme-zaman (a-t) grafiğinin altındaki alan hız değişimini (son hız eksi ilk hız) verirken, hız-zaman (v-t) grafiğinin altındaki alan yer değiştirmeyi verir. Hız-zaman grafiğinde grafik çizgisi zaman eksenini (v = 0 doğrusunu) kestiği anda araç durup yön değiştirmiştir."
+      ],
+      "kutular": [
+        {
+          "tur": "hatirla",
+          "baslik": "Grafiklerde Yön Değiştirme Anını Bulma",
+          "metin": "Konum-zaman (x-t) grafiğinde tepe/çukur bükülme noktalarında; Hız-zaman (v-t) grafiğinde ise çizginin zaman eksenini delip geçtiği (+ bölgeden - bölgeye geçtiği) anda yön değiştirilir."
+        }
+      ],
+      "tablo": {
+        "basliklar": [
+          "Grafik Türü",
+          "Eğimi Neyi Verir?",
+          "Altındaki Alan Neyi Verir?"
+        ],
+        "satirlar": [
+          [
+            "Konum - Zaman (x-t)",
+            "Hızı (v) verir",
+            "Fiziksel bir anlamı yoktur"
+          ],
+          [
+            "Hız - Zaman (v-t)",
+            "İvmeyi (a) verir",
+            "Yer değiştirmeyi (x) verir"
+          ],
+          [
+            "İvme - Zaman (a-t)",
+            "Sabit ivmeli harekette 0'dır",
+            "Hız değişimini (v_son - v_ilk) verir"
+          ]
+        ]
+      },
+      "liste": [
+        "İvme-zaman grafiğinin alanı bize doğrudan son hızı değil, hızdaki değişim miktarını verir; son hızı bulmak için bu alanı ilk hıza ({us:v|0}) ekleriz.",
+        "Hız-zaman grafiğinin alanı da doğrudan son konumu değil, yer değiştirmeyi verir; son konumu bulmak için ilk konuma ({us:x|0}) ekleriz."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Poppins, sans-serif\">\n  <rect width=\"700\" height=\"260\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/>\n  <rect x=\"20\" y=\"18\" width=\"660\" height=\"38\" rx=\"8\" fill=\"#991B1B\"/>\n  <text x=\"350\" y=\"43\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-size=\"16\" font-weight=\"700\">HAREKET GRAFİKLERİ ARASINDA GEÇİŞ KURALLARI (EĞİM VE ALAN)</text>\n  <g transform=\"translate(30, 74)\">\n    <rect x=\"0\" y=\"30\" width=\"160\" height=\"90\" rx=\"12\" fill=\"#DCFCE7\" stroke=\"#16A34A\" stroke-width=\"2\"/>\n    <text x=\"80\" y=\"68\" text-anchor=\"middle\" fill=\"#166534\" font-size=\"15\" font-weight=\"700\">Konum - Zaman</text>\n    <text x=\"80\" y=\"92\" text-anchor=\"middle\" fill=\"#15803D\" font-size=\"13\" font-weight=\"600\">(x - t)</text>\n\n    <rect x=\"240\" y=\"30\" width=\"160\" height=\"90\" rx=\"12\" fill=\"#DBEAFE\" stroke=\"#2563EB\" stroke-width=\"2\"/>\n    <text x=\"320\" y=\"68\" text-anchor=\"middle\" fill=\"#1E3A8A\" font-size=\"15\" font-weight=\"700\">Hız - Zaman</text>\n    <text x=\"320\" y=\"92\" text-anchor=\"middle\" fill=\"#1D4ED8\" font-size=\"13\" font-weight=\"600\">(v - t)</text>\n\n    <rect x=\"480\" y=\"30\" width=\"160\" height=\"90\" rx=\"12\" fill=\"#FEE2E2\" stroke=\"#DC2626\" stroke-width=\"2\"/>\n    <text x=\"560\" y=\"68\" text-anchor=\"middle\" fill=\"#991B1B\" font-size=\"15\" font-weight=\"700\">İvme - Zaman</text>\n    <text x=\"560\" y=\"92\" text-anchor=\"middle\" fill=\"#B91C1C\" font-size=\"13\" font-weight=\"600\">(a - t)</text>\n\n    <!-- Üst oklar: Eğim -->\n    <path d=\"M 160 45 Q 200 10 240 45\" fill=\"none\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n    <text x=\"200\" y=\"20\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"12\" font-weight=\"700\">EĞİM (v)</text>\n    <path d=\"M 400 45 Q 440 10 480 45\" fill=\"none\" stroke=\"#0F172A\" stroke-width=\"2.5\"/>\n    <text x=\"440\" y=\"20\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"12\" font-weight=\"700\">EĞİM (a)</text>\n\n    <!-- Alt oklar: Alan -->\n    <path d=\"M 480 105 Q 440 140 400 105\" fill=\"none\" stroke=\"#B91C1C\" stroke-width=\"2.5\"/>\n    <text x=\"440\" y=\"148\" text-anchor=\"middle\" fill=\"#B91C1C\" font-size=\"12\" font-weight=\"700\">ALAN (Hız Değişimi)</text>\n    <path d=\"M 240 105 Q 200 140 160 105\" fill=\"none\" stroke=\"#1D4ED8\" stroke-width=\"2.5\"/>\n    <text x=\"200\" y=\"148\" text-anchor=\"middle\" fill=\"#1D4ED8\" font-size=\"12\" font-weight=\"700\">ALAN (Yer Değiştirme)</text>\n  </g>\n</svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Doğrusal bir yolda A noktasından harekete başlayan bir koşucu önce doğu yönünde 80 metre koşuyor, ardından geri dönüp batı yönünde 20 metre daha koşarak toplam 20 saniyede B noktasında duruyor. Koşucunun aldığı yolu, yer değiştirmesini, ortalama süratini ve ortalama hızını hesaplayınız.",
+      "cevap": "Alınan yol toplam yörünge uzunluğudur: x = 80 + 20 = 100 m. Yer değiştirme ilk konumdan son konuma yönlü uzaklıktır: 80 - 20 = Doğu yönünde 60 m. Ortalama sürat = Alınan Yol / Süre = {kesir:100|20} = 5 m/s. Ortalama hız = Yer Değiştirme / Süre = {kesir:60|20} = Doğu yönünde 3 m/s.",
+      "cozum": "Alınan yol toplam yörünge uzunluğudur: x = 80 + 20 = 100 m. Yer değiştirme ilk konumdan son konuma yönlü uzaklıktır: 80 - 20 = Doğu yönünde 60 m. Ortalama sürat = Alınan Yol / Süre = {kesir:100|20} = 5 m/s. Ortalama hız = Yer Değiştirme / Süre = {kesir:60|20} = Doğu yönünde 3 m/s.",
+      "ipucu": "Alınan yolda mesafeleri toplayınız, yer değiştirmede ise zıt yönlü hareketleri birbirinden çıkarınız."
+    },
+    {
+      "soru": "Durgun halden ({us:v|0} = 0) doğrusal bir yolda 3 m/{us:s|2} sabit ivmeyle düzgün hızlanan bir otomobilin 6 saniye sonundaki hızını (hem m/s hem km/h cinsinden) ve bu sürede aldığı yolu bulunuz.",
+      "cevap": "6 saniye sonundaki hızı: v = a . t = 3 . 6 = 18 m/s olur. Bunu km/h birimine çevirmek için 3,6 ile çarparız: 18 . 3,6 = 64,8 km/h. 6 saniyede aldığı yol ise x = {kesir:1|2} . a . {us:t|2} = {kesir:1|2} . 3 . {us:6|2} = {kesir:1|2} . 3 . 36 = 54 metredir.",
+      "cozum": "6 saniye sonundaki hızı: v = a . t = 3 . 6 = 18 m/s olur. Bunu km/h birimine çevirmek için 3,6 ile çarparız: 18 . 3,6 = 64,8 km/h. 6 saniyede aldığı yol ise x = {kesir:1|2} . a . {us:t|2} = {kesir:1|2} . 3 . {us:6|2} = {kesir:1|2} . 3 . 36 = 54 metredir.",
+      "ipucu": "v = a . t ve x = {kesir:1|2} . a . {us:t|2} bağıntılarını kullanınız."
+    },
+    {
+      "soru": "Doğrusal bir yolda 30 m/s hızla ilerleyen bir tren, istasyona yaklaşırken frene basarak 5 m/{us:s|2} büyüklüğünde sabit ivmeyle düzgün yavaşlamaktadır. Trenin kaç saniyede duracağını ve duruncaya kadar kaç metre yol alacağını hesaplayınız.",
+      "cevap": "Trenin hızı her saniye 5 m/s azaldığına göre durma süresi: t = {kesir:30|5} = 6 saniyedir. Duruncaya kadar aldığı yol hız-zaman grafiğinin üçgen alanından (veya ortalama hız çarpı süreden): x = {kesir:30 + 0|2} . 6 = 15 . 6 = 90 metre bulunur.",
+      "cozum": "Trenin hızı her saniye 5 m/s azaldığına göre durma süresi: t = {kesir:30|5} = 6 saniyedir. Duruncaya kadar aldığı yol hız-zaman grafiğinin üçgen alanından (veya ortalama hız çarpı süreden): x = {kesir:30 + 0|2} . 6 = 15 . 6 = 90 metre bulunur.",
+      "ipucu": "Yavaşlama süresini t = {us:v|0} / a ile, durma mesafesini ise v-t grafiğinin üçgen alanından ({us:v|0} . t / 2) bulunuz."
+    },
+    {
+      "soru": "Hava direncinin ihmal edildiği bir ortamda yerden 80 metre yükseklikteki bir kuleden serbest bırakılan bir taş kaç saniyede yere düşer, yere hangi hızla çarpar ve hareketinin son saniyesi içinde kaç metre yol alır? (g = 10 m/{us:s|2})",
+      "cevap": "h = {kesir:1|2} . g . {us:t|2} formülünden 80 = 5 . {us:t|2} ise {us:t|2} = 16 ve t = 4 saniyede yere düşer. Yere çarpma hızı v = g . t = 10 . 4 = 40 m/s'dir. Ardışık saniyelerde alınan yollar 5 m, 15 m, 25 m, 35 m olduğundan hareketinin son (4.) saniyesi içinde 35 metre yol alır.",
+      "cozum": "h = {kesir:1|2} . g . {us:t|2} formülünden 80 = 5 . {us:t|2} ise {us:t|2} = 16 ve t = 4 saniyede yere düşer. Yere çarpma hızı v = g . t = 10 . 4 = 40 m/s'dir. Ardışık saniyelerde alınan yollar 5 m, 15 m, 25 m, 35 m olduğundan hareketinin son (4.) saniyesi içinde 35 metre yol alır.",
+      "ipucu": "Serbest düşmede 5 - 15 - 25 - 35 kuralını uygulayarak toplam 80 metreyi sağlayan süreyi bulunuz."
+    },
+    {
+      "soru": "Yarıçapı 10 metre olan çembersel bir pistin A noktasından harekete başlayan bir bisikletli, pistin yarısını 5 saniyede dolanarak tam karşıdaki B noktasına ulaşıyor. Bisikletlinin bu süredeki ortalama süratini ve ortalama hızının büyüklüğünü bulunuz. (pi = 3 alınız)",
+      "cevap": "Çemberin tam çevresi 2 . pi . r = 2 . 3 . 10 = 60 metredir. Bisikletli yarım tur attığı için aldığı yol x = 30 metredir; ortalama sürati = {kesir:30|5} = 6 m/s olur. Yer değiştirmesi ise A ile B arasındaki çap uzunluğu yani 2 . r = 20 metredir; ortalama hızının büyüklüğü = {kesir:20|5} = 4 m/s bulunur.",
+      "cozum": "Çemberin tam çevresi 2 . pi . r = 2 . 3 . 10 = 60 metredir. Bisikletli yarım tur attığı için aldığı yol x = 30 metredir; ortalama sürati = {kesir:30|5} = 6 m/s olur. Yer değiştirmesi ise A ile B arasındaki çap uzunluğu yani 2 . r = 20 metredir; ortalama hızının büyüklüğü = {kesir:20|5} = 4 m/s bulunur.",
+      "ipucu": "Yarım çemberde alınan yolun yarım çevre (pi . r), yer değiştirmenin ise çap (2 . r) olduğunu hatırlayınız."
+    },
+    {
+      "soru": "t = 0 anında ilk hızı 10 m/s olan bir aracın ivme-zaman grafiğinde 0-4 saniye aralığında ivmesi sabit ve +3 m/{us:s|2}, 4-8 saniye aralığında ise ivmesi 0 m/{us:s|2}'dir. Aracın 8. saniye sonundaki hızını ve 0-8 saniye arasındaki toplam yer değiştirmesini bulunuz.",
+      "cevap": "0-4 s arasında ivme-zaman grafiğinin alanı hız değişimini verir: 3 . 4 = +12 m/s. İlk hızı 10 m/s olduğundan 4. saniyedeki hızı 10 + 12 = 22 m/s olur. 4-8 s arasında ivme 0 olduğu için hız sabit (22 m/s) kalır. Yer değiştirme: İlk 4 s'de yamuk alanı = {kesir:10 + 22|2} . 4 = 64 m; son 4 s'de dikdörtgen alanı = 22 . 4 = 88 m; toplam yer değiştirme = 64 + 88 = 152 metredir.",
+      "cozum": "0-4 s arasında ivme-zaman grafiğinin alanı hız değişimini verir: 3 . 4 = +12 m/s. İlk hızı 10 m/s olduğundan 4. saniyedeki hızı 10 + 12 = 22 m/s olur. 4-8 s arasında ivme 0 olduğu için hız sabit (22 m/s) kalır. Yer değiştirme: İlk 4 s'de yamuk alanı = {kesir:10 + 22|2} . 4 = 64 m; son 4 s'de dikdörtgen alanı = 22 . 4 = 88 m; toplam yer değiştirme = 64 + 88 = 152 metredir.",
+      "ipucu": "Önce a-t grafiğinin alanını ilk hıza ekleyerek v-t değerlerini bulunuz, ardından v-t grafiğinin alanını hesaplayınız."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki örneklerden hangisinde cisim hem öteleme hem de dönme hareketini aynı anda gerçekleştirmektedir?",
+      "secenekler": [
+        "Duvar saatinin iki uç nokta arasında salınım yapan sarkacı",
+        "Düz bir otoyolda ilerlemekte olan otomobilin tekerleği",
+        "Sabit bir kule üzerinde rüzgârla dönen rüzgâr türbini kanatları",
+        "Apartmanın birinci katından beşinci katına çıkan asansör kabini",
+        "Çekilip bırakıldığında ses çıkaran bağlama veya gitar teli"
+      ],
+      "dogru": 1,
+      "aciklama": "İlerleyen otomobilin tekerleği kendi ekseni etrafında dönerken (dönme) aynı zamanda otomobille birlikte ileri gider (öteleme)."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Hareket ile ilgili temel kavramlardan hangileri vektörel (yönlü) büyüklük sınıfında yer alır?",
+      "secenekler": [
+        "Alınan yol, sürat ve zaman",
+        "Konum, yer değiştirme, hız ve ivme",
+        "Sürat, yer değiştirme ve kütle",
+        "Alınan yol, hız ve sıcaklık",
+        "Zaman, konum ve ortalama sürat"
+      ],
+      "dogru": 1,
+      "aciklama": "Konum, yer değiştirme, hız ve ivme yönlü (vektörel) büyüklüklerdir; alınan yol, sürat ve zaman ise skalerdir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Hava direncinin önemsenmediği bir ortamda yüksek bir kuleden serbest düşmeye bırakılan bir cisim yere 5 saniyede çarpmaktadır. Buna göre kulenin yüksekliği ve cismin yere çarpma hızı aşağıdakilerden hangisidir? (g = 10 m/{us:s|2})",
+      "secenekler": [
+        "Yükseklik: 100 m — Yere çarpma hızı: 40 m/s",
+        "Yükseklik: 125 m — Yere çarpma hızı: 50 m/s",
+        "Yükseklik: 80 m — Yere çarpma hızı: 50 m/s",
+        "Yükseklik: 125 m — Yere çarpma hızı: 25 m/s",
+        "Yükseklik: 150 m — Yere çarpma hızı: 60 m/s"
+      ],
+      "dogru": 1,
+      "aciklama": "h = {kesir:1|2} . g . {us:t|2} = 5 . {us:5|2} = 125 metre ve yere çarpma hızı v = g . t = 10 . 5 = 50 m/s olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Doğrusal bir yolda hareket eden bir araca ait hız-zaman (v-t) grafiğinin eğimi ve grafik ile zaman ekseni arasında kalan alan sırasıyla hangi fiziksel büyüklükleri verir?",
+      "secenekler": [
+        "Eğimi yer değiştirmeyi — Alanı ivmeyi verir.",
+        "Eğimi ortalama sürati — Alanı hız değişimini verir.",
+        "Eğimi ivmeyi — Alanı yer değiştirmeyi verir.",
+        "Eğimi konumu — Alanı anlık ivmeyi verir.",
+        "Eğimi hız değişimini — Alanı toplam zamanı verir."
+      ],
+      "dogru": 2,
+      "aciklama": "Hız-zaman (v-t) grafiğinin eğimi (dikey hız değişiminin yatay zamana oranı) ivmeyi, altındaki alan (v . t) ise yer değiştirmeyi verir."
+    },
+    {
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "dogru": true,
+          "aciklama": "İlk konum ile son konum aynı nokta olduğu için yer değiştirme sıfır olur.",
+          "ifade": "Çembersel bir koşu pistinde tam bir tur atarak başladığı noktaya geri dönen sporcunun yer değiştirmesi sıfırdır."
+        },
+        {
+          "dogru": false,
+          "aciklama": "Araç göstergesi yön belirtmez, birim zamanda alınan yolu yani skaler olan anlık sürati gösterir.",
+          "ifade": "Otomobillerin ön panelinde bulunan hız göstergesi (ibre) aracın yönünü de belirttiği için vektörel olan anlık hızı ölçer."
+        },
+        {
+          "dogru": true,
+          "aciklama": "İvme birim zamandaki hız değişimidir; sabit hızlı harekette hız değişimi 0 olduğundan a = 0'dır.",
+          "ifade": "Düzgün doğrusal hareket (sabit hızlı hareket) yapan bir cismin hızı değişmediği için ivmesi sıfırdır."
+        },
+        {
+          "dogru": false,
+          "aciklama": "Hız vektörü ile ivme vektörü aynı işaretli (- ve -) olduğunda araç negatif yönde düzgün hızlanır.",
+          "ifade": "Negatif (-) yönde hareket eden bir aracın ivmesi de negatif (-) ise araç yavaşlamaktadır."
+        },
+        {
+          "dogru": true,
+          "aciklama": "Hava direnci olmadığında yer çekimi ivmesi (g) kütleden bağımsızdır; tüm cisimler aynı ivmeyle hızlanır.",
+          "ifade": "Havasız ortamda aynı yükseklikten serbest düşmeye bırakılan demir bilye ile kuş tüyü yere aynı anda ve eşit hızla çarpar."
+        }
+      ],
+      "soru": "Aşağıdaki ifadeleri Doğru (D) veya Yanlış (Y) olarak değerlendiriniz."
+    },
+    {
+      "tur": "eslestir",
+      "ciftler": [
+        [
+          "Titreşim Hareketi",
+          "Denge konumu etrafında iki nokta arasında gidip gelme"
+        ],
+        [
+          "Yer Değiştirme",
+          "İlk konumdan son konuma çizilen en kısa yönlü uzaklık"
+        ],
+        [
+          "İvme",
+          "Birim zamandaki hız değişimi (SI birimi m/s kare)"
+        ],
+        [
+          "Konum-Zaman Grafiğinin Eğimi",
+          "Hareketlinin hızını (v) veren büyüklük"
+        ],
+        [
+          "İvme-Zaman Grafiğinin Alanı",
+          "Hareketlinin hız değişimini veren büyüklük"
+        ]
+      ],
+      "soru": "Aşağıdaki kavram ve açıklamaları doğru şekilde eşleştiriniz."
+    },
+    {
+      "tur": "bosluk",
+      "cumleler": [
+        {
+          "metin": "Bir cismin üzerindeki tüm noktaların aynı yönde eşit miktarda ilerlemesine ___ hareketi denir.",
+          "cevap": "öteleme"
+        },
+        {
+          "metin": "Hareketlinin birim zamanda aldığı yola ___ denir ve skaler bir büyüklüktür.",
+          "cevap": "sürat"
+        },
+        {
+          "metin": "Verilen 72 km/h sabit hızla ilerleyen bir otomobilin hızı Uluslararası Birim Sistemi'nde (SI) ___ m/s'dir.",
+          "cevap": "20"
+        },
+        {
+          "metin": "Havasız ortamda serbest düşmeye bırakılan bir cisim 1. saniyede 5 metre, 2. saniyede ise ___ metre yol alır.",
+          "cevap": "15"
+        },
+        {
+          "metin": "Hız-zaman grafiğinde grafik çizgisinin zaman eksenini kesip karşı bölgeye geçtiği anda araç ___ değiştirmiştir.",
+          "cevap": "yön"
+        }
+      ],
+      "kelimeler": [
+        "öteleme",
+        "sürat",
+        "20",
+        "15",
+        "yön"
+      ],
+      "fazla": [
+        "ivme",
+        "30"
+      ],
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız."
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Durgun halden harekete başlayan bir araç doğrusal bir yolda önce 4 saniye boyunca +5 m/{us:s|2} sabit ivmeyle hızlanıyor, ardından ulaştığı hızla 6 saniye boyunca sabit hızlı (düzgün doğrusal) hareket yapıyor ve son olarak frene basıp 2 saniyede düzgün yavaşlayarak duruyor. Bu aracın hareketinin üç aşamasındaki hızlarını ve toplam yer değiştirmesini adım adım analiz ediniz.",
+      "cevap": "1. Aşama (0-4 s Hızlanma): Araç durgun halden +5 m/{us:s|2} ivmeyle 4 saniye hızlandığında hızı v = 5 . 4 = 20 m/s değerine ulaşır. Bu sürede aldığı yol üçgen alanından {us:x|1} = {kesir:20 . 4|2} = 40 metredir. 2. Aşama (4-10 s Sabit Hızlı): Araç 20 m/s sabit hızla 6 saniye ilerler (ivme a = 0'dır). Bu sürede aldığı yol dikdörtgen alanından {us:x|2} = 20 . 6 = 120 metredir. 3. Aşama (10-12 s Yavaşlama): Araç 20 m/s hızdan 2 saniyede durduğuna göre yavaşlama ivmesi a = {kesir:0 - 20|2} = -10 m/{us:s|2}'dir ve duruncaya kadar aldığı yol üçgen alanından {us:x|3} = {kesir:20 . 2|2} = 20 metredir. Toplam yer değiştirme = 40 + 120 + 20 = 180 metredir.",
+      "ipuclari": [
+        "İlk 4 saniyedeki son hızı (v = a . t) ve üçgen alanından yer değiştirmeyi hesaplayınız.",
+        "Ortadaki 6 saniyede hızın sabit kaldığını belirterek dikdörtgen alanını (v . t) bulunuz.",
+        "Son 2 saniyedeki yavaşlama ivmesini ve üçgen alanını bularak üç aşamanın yollarını toplayınız."
+      ]
+    }
+  ]
+}

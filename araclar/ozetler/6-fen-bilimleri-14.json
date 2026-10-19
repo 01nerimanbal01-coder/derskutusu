@@ -1,0 +1,422 @@
+{
+  "ad": "6-fen-bilimleri-14",
+  "sinif": 6,
+  "ders": "fen-bilimleri",
+  "ders_adi": "Fen Bilimleri",
+  "hafta": 14,
+  "tarih": "21-25 Aralık 2026",
+  "yayin_tarihi": "2026-12-21",
+  "unite": "4. Ünite: Işığın Yansıması ve Renkler",
+  "konu": "Işığın Yansıması: Gelen Işın, Yansıyan Işın, Yüzeyin Normali ve Yansıma Kanunları",
+  "ciktilar": [
+    "FB.6.4.2. Işığın yansımasında gelen ışın, yansıyan ışın ve yüzeyin normali arasındaki ilişki ile ilgili kanıt kullanabilme.",
+    "Düzgün ve dağınık yansımada gelen ışın, yansıyan ışın, yüzeyin normali, gelme açısı ve yansıma açısını çizim ve verilerle gösterir.",
+    "Deneysel ölçüm verilerini kullanarak her türlü yansımada gelme açısının yansıma açısına eşit olduğunu kanıtlar."
+  ],
+  "giris": "Çevremizdeki cisimleri görebilmemiz, ışık kaynağından çıkan ışınların cisimlerin yüzeyine çarparak gözümüze ulaşmasıyla gerçekleşir. Işığın bir yüzeye çarparak geldiği ortama geri dönmesine {koyu:ışığın yansıması} denir. Bu haftaki dersimizde gelen ışın, yansıyan ışın ve yüzeyin normali arasındaki geometrik ve fiziksel ilişkiyi kanıtlarıyla inceliyoruz.",
+  "bolumler": [
+    {
+      "baslik": "Işığın Yansıması ve Temel Yansıma Kavramları",
+      "metin": [
+        "Işık kaynağından çıkarak doğrusal bir yol boyunca yayılan ışık, parlak veya mat bir yüzeye çarptığında geldiği ortama geri döner; bu olaya {koyu:yansıma} adı verilir. Yansıma olayını bilimsel olarak incelemek için ışık ışınlarının yüzeyle etkileşimi çizimlerle modellenir.",
+        "Işık kaynağından çıkıp yansıtıcı yüzeye ulaşan ışına {koyu:gelen ışın}, yüzeye çarptıktan sonra yön değiştirerek ortamda ilerleyen ışına ise {koyu:yansıyan ışın} denir. Gelen ışının yüzeye değdiği noktadan yüzeye dik (90°) olarak çizilen hayali kesikli çizgiye {koyu:yüzeyin normali} adı verilir ve büyük {koyu:N} harfi ile gösterilir.",
+        "Gelen ışın ile yüzeyin normali (N) arasında kalan açıya {koyu:gelme açısı}, yansıyan ışın ile yüzeyin normali (N) arasında kalan açıya ise {koyu:yansıma açısı} denir."
+      ],
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Yüzeyin Normali (N) Nedir?",
+          "metin": "Yüzeyin normali gerçek bir ışık ışını değil; ışının yüzeye çarptığı noktadan yüzeye 90° dik çizilen ve gelme ile yansıma açılarını ölçmek için referans alınan hayali doğrudur."
+        }
+      ],
+      "tablo": {
+        "basliklar": [
+          "Kavram",
+          "Gösterimi / Özelliği",
+          "Tanımı"
+        ],
+        "satirlar": [
+          [
+            "Gelen Işın",
+            "Yüzeye doğru ok yönü",
+            "Işık kaynağından çıkıp yansıtıcı yüzeye çarpan ışındır."
+          ],
+          [
+            "Yansıyan Işın",
+            "Yüzeyden dışa ok yönü",
+            "Yüzeye çarptıktan sonra geldiği ortama geri dönen ışındır."
+          ],
+          [
+            "Yüzeyin Normali (N)",
+            "Kesikli dik çizgi (90°)",
+            "Işının değme noktasından yüzeye dik çizilen hayali doğrudur."
+          ],
+          [
+            "Gelme Açısı / Yansıma Açısı",
+            "Normal ile yapılan açılar",
+            "Gelen ve yansıyan ışınların yüzeyin normaliyle yaptığı açılardır."
+          ]
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">IŞIĞIN YANSIMASI: GELEN IŞIN, YANSIYAN IŞIN VE YÜZEYİN NORMALİ</text>\n  <rect x=\"80\" y=\"195\" width=\"540\" height=\"16\" rx=\"4\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"232\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#334155\">Yansıtıcı Düzlem Ayna Yüzeyi (O: Değme Noktası)</text>\n  <line x1=\"350\" y1=\"45\" x2=\"350\" y2=\"195\" stroke=\"#16a34a\" stroke-width=\"2.5\" stroke-dasharray=\"6,4\"/>\n  <text x=\"350\" y=\"40\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">N (Yüzeyin Normali - 90°)</text>\n  <rect x=\"350\" y=\"179\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <circle cx=\"358\" cy=\"187\" r=\"2\" fill=\"#16a34a\"/>\n  <line x1=\"160\" y1=\"65\" x2=\"350\" y2=\"195\" stroke=\"#ef4444\" stroke-width=\"3\"/>\n  <polygon points=\"265,137 250,133 257,123\" fill=\"#ef4444\"/>\n  <text x=\"175\" y=\"58\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">Gelen Işın</text>\n  <line x1=\"350\" y1=\"195\" x2=\"540\" y2=\"65\" stroke=\"#2563eb\" stroke-width=\"3\"/>\n  <polygon points=\"455,123 443,127 450,137\" fill=\"#2563eb\"/>\n  <text x=\"525\" y=\"58\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">Yansıyan Işın</text>\n  <path d=\"M 310 168 A 48 48 0 0 1 350 147\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <text x=\"312\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">Gelme açısı (i)</text>\n  <path d=\"M 350 147 A 48 48 0 0 1 390 168\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2\"/>\n  <text x=\"392\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\">Yansıma açısı (r)</text>\n  <circle cx=\"350\" cy=\"195\" r=\"4.5\" fill=\"#0f172a\"/>\n  <text x=\"350\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">O</text>\n</svg>"
+    },
+    {
+      "baslik": "Yansıma Kanunları ve Kanıta Dayalı İlişkiler",
+      "metin": [
+        "Işık hangi yüzeye çarparsa çarpsın yansıma olayı rastgele değil, değişmez fiziksel yasalara göre gerçekleşir. Yapılan deneysel ölçümler, her yansıma olayında geçerli olan {koyu:üç temel yansıma kanunu} bulunduğunu kanıtlamaktadır.",
+        "Birinci kanuna göre; {koyu:gelen ışın, yansıyan ışın ve yüzeyin normali aynı düzlem içindedir}. İkinci kanuna göre; {koyu:gelme açısı daima yansıma açısına eşittir} (Gelme açısı = Yansıma açısı). Örneğin bir düzlem aynaya normalle 35° açı yapacak şekilde gönderilen ışın, normalle yine 35° açı yaparak yansır.",
+        "Üçüncü kanuna göre ise; {koyu:yansıtıcı yüzeye dik olarak (normal üzerinden) gelen ışık ışını kendi üzerinden geri yansır}. Bu закономерlikler lazer ışık kaynağı ve açıölçer (iletki) kullanılarak yapılan tüm deneylerde birebir doğrulanır."
+      ],
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Değişmez Eşitlik: Gelme Açısı = Yansıma Açısı",
+          "metin": "Gelme açısı artırılırsa yansıma açısı da aynı miktarda artar; gelme açısı azaltılırsa yansıma açısı da aynı miktarda azalır. Bu iki açı arasındaki oran her zaman 1'dir."
+        }
+      ],
+      "liste": [
+        "1. Kanun: Gelen ışın, yansıyan ışın ve yüzeyin normali (N) aynı düzlemdedir.",
+        "2. Kanun: Gelme açısı her zaman yansıma açısına eşittir (i = r).",
+        "3. Kanun: Yüzeye dik (normal doğrultusunda) gelen ışın kendi üzerinden geri döner."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">YANSIMA KANUNLARI (HER YANSIMADA GEÇERLİ 3 TEMEL YASA)</text>\n  <rect x=\"20\" y=\"50\" width=\"210\" height=\"188\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"125\" y=\"76\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">1. Aynı Düzlem Yasası</text>\n  <text x=\"125\" y=\"106\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Gelen ışın, yansıyan ışın</text>\n  <text x=\"125\" y=\"124\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">ve yüzeyin normali (N)</text>\n  <text x=\"125\" y=\"142\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">aynı düzlem içindedir.</text>\n  <text x=\"125\" y=\"176\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">Üçü de kâğıt düzleminde</text>\n  <text x=\"125\" y=\"194\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">O noktasında kesişir.</text>\n  <rect x=\"245\" y=\"50\" width=\"210\" height=\"188\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"76\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">2. Açı Eşitliği Yasası</text>\n  <text x=\"350\" y=\"106\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Her yansımada</text>\n  <text x=\"350\" y=\"126\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#14532d\">Gelme Açısı = Yansıma Açısı</text>\n  <text x=\"350\" y=\"150\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">(i = r)</text>\n  <text x=\"350\" y=\"178\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">Gelme açısı 40° ise</text>\n  <text x=\"350\" y=\"196\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">yansıma açısı da 40° olur.</text>\n  <rect x=\"470\" y=\"50\" width=\"210\" height=\"188\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\" stroke-width=\"1.5\"/>\n  <text x=\"575\" y=\"76\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#a16207\">3. Dik Gelen Işın Yasası</text>\n  <text x=\"575\" y=\"106\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Yüzeye dik (normal üzerinden)</text>\n  <text x=\"575\" y=\"124\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">gelen ışın kendi üzerinden</text>\n  <text x=\"575\" y=\"142\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#854d0e\">geri yansır.</text>\n  <text x=\"575\" y=\"176\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#a16207\">i = 0° ve r = 0°</text>\n  <text x=\"575\" y=\"196\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">(Ayna ile açı = 90°)</text>\n</svg>"
+    },
+    {
+      "baslik": "Açı Hesaplamaları: Normal ve Ayna Yüzeyi İlişkisi",
+      "metin": [
+        "Yansıma sorularında en çok dikkat edilmesi gereken nokta, verilen açının {koyu:yüzeyin normaliyle mi} yoksa {koyu:ayna yüzeyiyle mi} yapıldığıdır. Yüzeyin normali aynaya 90° dik olduğu için, gelen ışının ayna yüzeyiyle yaptığı açı ile gelme açısının toplamı her zaman {koyu:90°} olur.",
+        "Örneğin gelen bir ışının düzlem ayna yüzeyiyle yaptığı açı 30° ise, bu ışının gelme açısı 90° - 30° = {koyu:60°} olur. Yansıma kanununa göre yansıma açısı da 60°'dir ve yansıyan ışının ayna yüzeyiyle yaptığı açı yine 30° olur.",
+        "Ayrıca gelen ışın ile yansıyan ışın arasında kalan toplam açı, gelme açısı ile yansıma açısının toplamına (yani gelme açısının 2 katına) eşittir. Gelme açısı 60° olduğunda gelen ve yansıyan ışınlar arasındaki açı 60° + 60° = 120° olarak bulunur."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Ayna ile Yapılan Açı Gelme Açısı Değildir!",
+          "metin": "Işının ayna (yüzey) ile yaptığı açıya gelme açısı denmez! Gelme açısını bulmak için ışının yüzeyle yaptığı açıyı 90°'den çıkarmamız gerekir: Gelme Açısı = 90° - (Yüzeyle yapılan açı)."
+        }
+      ],
+      "tablo": {
+        "basliklar": [
+          "Yüzeyle Yapılan Açı",
+          "Gelme Açısı (i)",
+          "Yansıma Açısı (r)",
+          "Gelen-Yansıyan Arası Açı (i+r)"
+        ],
+        "satirlar": [
+          [
+            "20°",
+            "70°",
+            "70°",
+            "140°"
+          ],
+          [
+            "40°",
+            "50°",
+            "50°",
+            "100°"
+          ],
+          [
+            "45°",
+            "45°",
+            "45°",
+            "90°"
+          ],
+          [
+            "65°",
+            "25°",
+            "25°",
+            "50°"
+          ],
+          [
+            "90° (Dik geliş)",
+            "0°",
+            "0°",
+            "0°"
+          ]
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">GELME AÇISI İLE AYNA YÜZEYİ ARASINDAKİ TAMAMLAYICI İLİŞKİ (90°)</text>\n  <rect x=\"40\" y=\"190\" width=\"340\" height=\"14\" rx=\"3\" fill=\"#94a3b8\" stroke=\"#475569\"/>\n  <line x1=\"210\" y1=\"50\" x2=\"210\" y2=\"190\" stroke=\"#16a34a\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/>\n  <text x=\"210\" y=\"43\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">N (Normal)</text>\n  <line x1=\"80\" y1=\"95\" x2=\"210\" y2=\"190\" stroke=\"#ef4444\" stroke-width=\"2.5\"/>\n  <line x1=\"210\" y1=\"190\" x2=\"340\" y2=\"95\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n  <text x=\"135\" y=\"178\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\">35°</text>\n  <text x=\"182\" y=\"132\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">55°</text>\n  <text x=\"238\" y=\"132\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">55°</text>\n  <text x=\"285\" y=\"178\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\">35°</text>\n  <text x=\"210\" y=\"226\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Ayna açısı (35°) + Gelme açısı (55°) = 90°</text>\n  <rect x=\"405\" y=\"50\" width=\"270\" height=\"185\" rx=\"8\" fill=\"#fff7ed\" stroke=\"#f97316\" stroke-width=\"1.5\"/>\n  <text x=\"540\" y=\"76\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#c2410c\">Altın Hesaplama Kuralları</text>\n  <text x=\"540\" y=\"106\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#9a3412\">1) Normal yüzeye 90° diktir:</text>\n  <text x=\"540\" y=\"124\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Ayna açısı + Gelme açısı = 90°</text>\n  <text x=\"540\" y=\"154\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#9a3412\">2) Gelen ve yansıyan arası açı:</text>\n  <text x=\"540\" y=\"172\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Toplam açı = i + r = 2 x i</text>\n  <text x=\"540\" y=\"190\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">(Örn: 55° + 55° = 110°)</text>\n  <text x=\"540\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#be123c\">Ayna açısı gelme açısı değildir!</text>\n</svg>"
+    },
+    {
+      "baslik": "Yüzeye Dik Gelen Işının Özel Durumu (0° Kuralı)",
+      "metin": [
+        "Bir ışık ışını yansıtıcı yüzeye 90° dik açıyla gönderildiğinde, ışın tam olarak {koyu:yüzeyin normali (N) üzerinden} yüzeye ulaşır. Bu durumda gelen ışın ile yüzeyin normali üst üste çakıştığı için aralarında herhangi bir açıklık oluşmaz.",
+        "Gelme açısı «gelen ışın ile normal arasındaki açı» olarak tanımlandığından, yüzeye dik gelen ışının {koyu:gelme açısı 0°}, kendi üzerinden geri döndüğü için {koyu:yansıma açısı da 0°} olur.",
+        "Öğrencilerin sıkça düştüğü «dik gelen ışının gelme açısı 90°'dir» yanılgısına düşmemek için açının yüzeyle değil, normalle ölçüldüğü kanıtı her zaman hatırlanmalıdır: Yüzeyle yapılan açı 90° iken gelme açısı 90° - 90° = 0°'dir."
+      ],
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Normal Üzerinden Gelen Işın İpucu",
+          "metin": "Soruda «yüzeye dik gönderilen ışın» veya «normal üzerinden gelen ışın» ifadesini gördüğün anda: Gelme açısı = 0°, Yansıma açısı = 0° ve Yüzeyle yapılan açı = 90° eşitliklerini yazabilirsin."
+        }
+      ],
+      "liste": [
+        "Yüzeye dik gelen ışın normal (N) doğrultusunda hareket eder.",
+        "Çarptıktan sonra yön değiştirmeden kendi üzerinden geri yansır.",
+        "Işının ayna yüzeyiyle yaptığı açı 90°'dir.",
+        "Işının normalle yaptığı açı (gelme açısı ve yansıma açısı) 0°'dir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">YÜZEYE DİK (NORMAL ÜZERİNDEN) GELEN IŞININ YANSIMASI</text>\n  <rect x=\"60\" y=\"195\" width=\"260\" height=\"15\" rx=\"3\" fill=\"#94a3b8\" stroke=\"#475569\"/>\n  <line x1=\"190\" y1=\"50\" x2=\"190\" y2=\"195\" stroke=\"#16a34a\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/>\n  <line x1=\"184\" y1=\"65\" x2=\"184\" y2=\"190\" stroke=\"#ef4444\" stroke-width=\"3\"/>\n  <polygon points=\"184,185 178,173 190,173\" fill=\"#ef4444\"/>\n  <line x1=\"196\" y1=\"190\" x2=\"196\" y2=\"65\" stroke=\"#2563eb\" stroke-width=\"3\"/>\n  <polygon points=\"196,65 190,77 202,77\" fill=\"#2563eb\"/>\n  <rect x=\"190\" y=\"179\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n  <text x=\"190\" y=\"230\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">Normal (N) üzerinden geliş ve dönüş</text>\n  <rect x=\"355\" y=\"48\" width=\"320\" height=\"190\" rx=\"8\" fill=\"#ecfeff\" stroke=\"#06b6d4\" stroke-width=\"1.5\"/>\n  <text x=\"515\" y=\"74\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0e7490\">Dik Geliş Durumunda Açılar</text>\n  <text x=\"515\" y=\"106\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#155e75\">Işın ile Ayna Yüzeyi Arasındaki Açı = 90°</text>\n  <text x=\"515\" y=\"136\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">Gelme Açısı (Normal ile yapılan açı) = 0°</text>\n  <text x=\"515\" y=\"166\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">Yansıma Açısı (Normal ile yapılan açı) = 0°</text>\n  <text x=\"515\" y=\"200\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Soru kökünde «yüzeye dik gelen ışın» denildiğinde</text>\n  <text x=\"515\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">gelme ve yansıma açısı 90° değil, 0° alınır!</text>\n</svg>"
+    },
+    {
+      "baslik": "Düzgün Yansıma ve Dağınık Yansıma",
+      "metin": [
+        "Yansıtıcı yüzeylerin pürüzsüz (düzgün) veya pürüzlü (girintili çıkıntılı) olması ışığın yansıma biçimini ve görüntü netliğini belirler. Ayna, durgun su yüzeyi, cilalı metal ve düz alüminyum folyo gibi pürüzsüz yüzeylere birbirine paralel gönderilen ışık ışınlarının yine birbirine paralel olarak yansımasına {koyu:düzgün yansıma} denir.",
+        "Düzgün yansıma gerçekleşen yüzeylerde yansıyan ışınlar tek bir doğrultuda toplandığı için yüzey parlak görünür ve cisimlerin {koyu:net görüntüsü} oluşur. Durgun bir gölde ağaçların net yansımasını görmemiz düzgün yansımanın sonucudur.",
+        "Buruşuk alüminyum folyo, dalgalı su, duvar, kâğıt, kumaş ve toprak gibi pürüzlü yüzeylere birbirine paralel gönderilen ışık ışınlarının farklı yönlere dağılarak yansımasına ise {koyu:dağınık yansıma} denir. Dağınık yansımada net görüntü oluşmaz ancak ortam aydınlanır ve mat cisimleri her yönden görebilmemiz sağlanır."
+      ],
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Gözümüzü Yormayan Dağınık Yansıma",
+          "metin": "Kitap sayfalarının kuşe/parlak kâğıt yerine hafif pürüzlü (mat) kâğıttan yapılmasının nedeni, ışığın dağınık yansımasını sağlayarak göz kamaşmasını önlemek ve yazıları her açıdan rahat okutmaktır."
+        }
+      ],
+      "tablo": {
+        "basliklar": [
+          "Özellik",
+          "Düzgün Yansıma",
+          "Dağınık Yansıma"
+        ],
+        "satirlar": [
+          [
+            "Yüzey Özelliği",
+            "Pürüzsüz, kaygan ve parlak yüzeyler",
+            "Pürüzlü, girintili çıkıntılı ve mat yüzeyler"
+          ],
+          [
+            "Paralel Gelen Işınlar",
+            "Birbirine paralel olarak yansır",
+            "Farklı doğrultulara dağılarak yansır"
+          ],
+          [
+            "Görüntü Kalitesi",
+            "Net görüntü oluşur, yüzey parlak görünür",
+            "Net görüntü oluşmaz (bulanık veya yok), yüzey mat görünür"
+          ],
+          [
+            "Günlük Hayat Örnekleri",
+            "Düzlem ayna, durgun su, cilalı tepsi",
+            "Dalgalı su, buruşuk folyo, duvar, kâğıt, halı"
+          ]
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">DÜZGÜN YANSIMA VE DAĞINIK YANSIMA KARŞILAŞTIRMASI</text>\n  <rect x=\"20\" y=\"48\" width=\"320\" height=\"194\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"70\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">1. Düzgün Yansıma (Pürüzsüz Yüzey)</text>\n  <line x1=\"55\" y1=\"165\" x2=\"305\" y2=\"165\" stroke=\"#334155\" stroke-width=\"3\"/>\n  <line x1=\"75\" y1=\"100\" x2=\"135\" y2=\"165\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  <line x1=\"135\" y1=\"165\" x2=\"195\" y2=\"100\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <line x1=\"125\" y1=\"100\" x2=\"185\" y2=\"165\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  <line x1=\"185\" y1=\"165\" x2=\"245\" y2=\"100\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <line x1=\"175\" y1=\"100\" x2=\"235\" y2=\"165\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  <line x1=\"235\" y1=\"165\" x2=\"295\" y2=\"100\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"192\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">Paralel gelen ışınlar paralel yansır.</text>\n  <text x=\"180\" y=\"212\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Ayna, durgun su, cilalı metal · Net görüntü</text>\n  <rect x=\"360\" y=\"48\" width=\"320\" height=\"194\" rx=\"8\" fill=\"#fefce8\" stroke=\"#eab308\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"70\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#a16207\">2. Dağınık Yansıma (Pürüzlü Yüzey)</text>\n  <polyline points=\"395,165 430,152 465,168 500,150 535,167 570,153 605,168 645,155\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/>\n  <line x1=\"415\" y1=\"100\" x2=\"465\" y2=\"168\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  <line x1=\"465\" y1=\"168\" x2=\"555\" y2=\"95\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <line x1=\"470\" y1=\"100\" x2=\"515\" y2=\"158\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  <line x1=\"515\" y1=\"158\" x2=\"495\" y2=\"92\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <line x1=\"530\" y1=\"100\" x2=\"580\" y2=\"158\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  <line x1=\"580\" y1=\"158\" x2=\"640\" y2=\"108\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"192\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#854d0e\">Paralel gelen ışınlar farklı yönlere yansır.</text>\n  <text x=\"520\" y=\"212\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Dalgalı su, buruşuk folyo, duvar · Bulanık/yok</text>\n</svg>"
+    },
+    {
+      "baslik": "Kanıt Değerlendirmesi: Dağınık Yansımada Yansıma Kanunları",
+      "metin": [
+        "Dağınık yansımada paralel gelen ışınların farklı yönlere gitmesi, yansıma kanunlarının bozulduğu anlamına {koyu:gelmez}. Tam aksine, pürüzlü yüzeyin her bir küçük noktasında yansıma kanunları eksiksiz biçimde geçerlidir.",
+        "Pürüzlü bir yüzeye mikroskobik ölçekte bakıldığında yüzeyin farklı eğimlere sahip pek çok küçük yüzeycikten oluştuğu görülür. Paralel gelen her bir ışın farklı eğimdeki bir noktaya çarptığı için, o noktalarda çizilen {koyu:yüzey normalleri (N)} de birbirine paralel olmaz ve farklı yönlere bakar.",
+        "Her bir ışın kendi çarptığı noktadaki normalle eşit açı yapacak şekilde (i = r) yansıdığında, normaller farklı yönde olduğu için yansıyan ışınlar da farklı yönlere dağılır. Dolayısıyla hem düzgün hem de dağınık yansımada {koyu:gelme açısı daima yansıma açısına eşittir}."
+      ],
+      "kutular": [
+        {
+          "tur": "hatirla",
+          "baslik": "Bilimsel Kanıt Özeti",
+          "metin": "İster düzlem aynadaki düzgün yansıma ister taş duvardaki dağınık yansıma olsun; her tekil ışın için kendi değme noktasında Gelme Açısı = Yansıma Açısı kanunu %100 geçerlidir."
+        }
+      ],
+      "liste": [
+        "Düzgün yansımada yüzey normalleri (N) birbirine paraleldir.",
+        "Dağınık yansımada yüzey eğimleri değiştiği için yüzey normalleri birbirine paralel değildir.",
+        "Her iki yansıma türünde de her ışın kendi normaliyle eşit açı (i = r) yaparak yansır.",
+        "Odamızın güneş doğrudan girmese bile aydınlık olması dağınık yansımanın kanıtıdır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">KANIT KULLANIMI: DAĞINIK YANSIMADA DA YANSIMA KANUNLARI GEÇERLİDİR</text>\n  <rect x=\"25\" y=\"48\" width=\"650\" height=\"190\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"76\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Neden Pürüzlü Yüzeyde Paralel Işınlar Farklı Yönlere Dağılır?</text>\n  <text x=\"350\" y=\"106\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">1. Pürüzlü yüzeyde her bir ışının çarptığı noktanın eğimi birbirinden farklıdır.</text>\n  <text x=\"350\" y=\"132\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">2. Bu nedenle her değme noktasında çizilen Yüzeyin Normali (N) farklı doğrultudadır.</text>\n  <text x=\"350\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#14532d\">3. Ancak her bir ışın kendi değme noktasında yine Gelme Açısı = Yansıma Açısı (i = r) kuralına uyar!</text>\n  <rect x=\"75\" y=\"178\" width=\"550\" height=\"44\" rx=\"6\" fill=\"#dcfce7\" stroke=\"#22c55e\"/>\n  <text x=\"350\" y=\"205\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#065f46\">SONUÇ: Hem düzgün hem dağınık yansımada yansıma kanunları eksiksiz gerçekleşir.</text>\n</svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir düzlem aynaya gönderilen ışık ışınının ayna yüzeyi ile yaptığı açı 25° olarak ölçülmüştür. Buna göre gelme açısını, yansıma açısını ve gelen ışın ile yansıyan ışın arasındaki toplam açıyı bulunuz.",
+      "cevap": "Yüzeyin normali aynaya 90° diktir. Gelme açısı: 90° - 25° = 65° olur. Yansıma kanununa göre yansıma açısı da gelme açısına eşit olduğundan 65°'dir. Gelen ışın ile yansıyan ışın arasındaki toplam açı ise 65° + 65° = 130° olarak bulunur.",
+      "cozum": "Yüzeyin normali aynaya 90° diktir. Gelme açısı: 90° - 25° = 65° olur. Yansıma kanununa göre yansıma açısı da gelme açısına eşit olduğundan 65°'dir. Gelen ışın ile yansıyan ışın arasındaki toplam açı ise 65° + 65° = 130° olarak bulunur.",
+      "ipucu": "Önce 90°'den ayna açısını çıkararak normalle yapılan gelme açısını hesaplayınız."
+    },
+    {
+      "soru": "Düzlem aynaya gönderilen bir ışık ışını ile aynadan yansıyan ışık ışını arasındaki açı 80°'dir. Buna göre yansıyan ışının ayna yüzeyi ile yaptığı açı kaç derecedir?",
+      "cevap": "Gelen ışın ile yansıyan ışın arasındaki açı, gelme açısı (i) ile yansıma açısının (r) toplamıdır: i + r = 80°. i = r olduğu için gelme açısı = yansıma açısı = 80° / 2 = 40° olur. Yansıyan ışının ayna yüzeyiyle yaptığı açı ise 90° - 40° = 50°'dir.",
+      "cozum": "Gelen ışın ile yansıyan ışın arasındaki açı, gelme açısı (i) ile yansıma açısının (r) toplamıdır: i + r = 80°. i = r olduğu için gelme açısı = yansıma açısı = 80° / 2 = 40° olur. Yansıyan ışının ayna yüzeyiyle yaptığı açı ise 90° - 40° = 50°'dir.",
+      "ipucu": "Gelen ve yansıyan ışın arasındaki açının yarısı yansıma açısını verir."
+    },
+    {
+      "soru": "Parlak bir metal yüzeye normal üzerinden (yüzeye dik olarak) gönderilen ışık ışınının izlediği yolu, gelme açısını ve yansıma açısını kanıtlarıyla açıklayınız.",
+      "cevap": "Normal üzerinden yüzeye 90° dik açıyla gönderilen ışın, normal ile üst üste çakıştığı için gelme açısı 0° olur. Yansıma kanununa göre yansıma açısı da 0° olduğundan ışın kendi üzerinden geri yansır.",
+      "cozum": "Normal üzerinden yüzeye 90° dik açıyla gönderilen ışın, normal ile üst üste çakıştığı için gelme açısı 0° olur. Yansıma kanununa göre yansıma açısı da 0° olduğundan ışın kendi üzerinden geri yansır.",
+      "ipucu": "Gelme açısı yüzeyle değil, yüzeyin normaliyle yapılan açıdır."
+    },
+    {
+      "soru": "Düzgün bir alüminyum folyoya baktığımızda kendi görüntümüzü net görürken, aynı folyoyu buruşturup açtığımızda görüntümüzün bulanıklaşmasının nedenini yansıma türleriyle açıklayınız.",
+      "cevap": "Düzgün alüminyum folyo pürüzsüz bir yüzey olduğu için üzerine paralel gelen ışınları paralel yansıtır (düzgün yansıma) ve net görüntü oluşur. Folyo buruşturulduğunda yüzeyi pürüzlü hâle gelir; paralel gelen ışınlar farklı yönlere dağılır (dağınık yansıma) ve net görüntü kaybolur.",
+      "cozum": "Düzgün alüminyum folyo pürüzsüz bir yüzey olduğu için üzerine paralel gelen ışınları paralel yansıtır (düzgün yansıma) ve net görüntü oluşur. Folyo buruşturulduğunda yüzeyi pürüzlü hâle gelir; paralel gelen ışınlar farklı yönlere dağılır (dağınık yansıma) ve net görüntü kaybolur.",
+      "ipucu": "Yüzeyin pürüzsüz veya pürüzlü olmasının yansıyan ışınların doğrultusuna etkisini karşılaştırınız."
+    },
+    {
+      "soru": "Bir öğrenci «Dağınık yansımada ışınlar farklı yönlere gittiği için gelme açısı yansıma açısına eşit değildir.» iddiasında bulunuyor. Bu iddianın neden hatalı olduğunu bilimsel kanıtla çürütünüz.",
+      "cevap": "Bu iddia hatalıdır; çünkü yansıma kanunları hem düzgün hem de dağınık yansımada geçerlidir. Pürüzlü yüzeyde her bir ışının çarptığı noktanın eğimi ve yüzey normali (N) farklı yönde olduğu için ışınlar farklı yönlere dağılır; fakat her bir ışının kendi normaliyle yaptığı gelme açısı yine yansıma açısına birebir eşittir.",
+      "cozum": "Bu iddia hatalıdır; çünkü yansıma kanunları hem düzgün hem de dağınık yansımada geçerlidir. Pürüzlü yüzeyde her bir ışının çarptığı noktanın eğimi ve yüzey normali (N) farklı yönde olduğu için ışınlar farklı yönlere dağılır; fakat her bir ışının kendi normaliyle yaptığı gelme açısı yine yansıma açısına birebir eşittir.",
+      "ipucu": "Pürüzlü yüzeyde değme noktalarındaki yüzey normallerinin doğrultusunu düşününüz."
+    },
+    {
+      "soru": "Bir düzlem aynaya gelen ışının gelme açısı 50° iken, gelen ışın normalden 15° daha uzaklaştırılırsa yeni yansıma açısı ve ışının aynayla yaptığı açı kaç derece olur?",
+      "cevap": "Gelen ışın normalden 15° uzaklaştırıldığında yeni gelme açısı 50° + 15° = 65° olur. Yansıma açısı da gelme açısına eşit olduğundan 65° olur. Işının ayna yüzeyiyle yaptığı yeni açı ise 90° - 65° = 25°'dir.",
+      "cozum": "Gelen ışın normalden 15° uzaklaştırıldığında yeni gelme açısı 50° + 15° = 65° olur. Yansıma açısı da gelme açısına eşit olduğundan 65° olur. Işının ayna yüzeyiyle yaptığı yeni açı ise 90° - 65° = 25°'dir.",
+      "ipucu": "Normalden uzaklaşmak gelme açısını büyütür, aynayla yapılan açıyı küçültür."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir düzlem aynaya gönderilen ışık ışınının ayna yüzeyi ile yaptığı açı 35° ise bu ışının yansıma açısı kaç derecedir?",
+      "secenekler": [
+        "55°",
+        "35°",
+        "70°",
+        "110°"
+      ],
+      "dogru": 0,
+      "aciklama": "Yüzeyin normali aynaya 90° dik olduğundan gelme açısı 90° - 35° = 55° olur; yansıma açısı da gelme açısına eşit olduğu için 55°'dir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki yüzeylerin hangisinde üzerine birbirine paralel olarak gönderilen ışık ışınları yansıdıktan sonra da birbirine paralel kalır?",
+      "secenekler": [
+        "Dalgalı deniz yüzeyi",
+        "Durgun göl yüzeyi",
+        "Buruşturulmuş alüminyum folyo",
+        "Sıvalı sınıf duvarı"
+      ],
+      "dogru": 1,
+      "aciklama": "Durgun göl yüzeyi pürüzsüz olduğu için düzgün yansıma gerçekleşir ve paralel gelen ışınlar paralel yansır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Yansıtıcı bir yüzeye normal doğrultusunda (yüzeye 90° dik olarak) gönderilen ışık ışını için aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Gelme açısı 90°, yansıma açısı 0° olur.",
+        "Gelme açısı 45°, yansıma açısı 45° olur.",
+        "Gelme açısı 0° olur ve ışın kendi üzerinden geri yansır.",
+        "Işın yansımadan yüzeyin içinden kırılmadan geçer."
+      ],
+      "dogru": 2,
+      "aciklama": "Normal üzerinden gelen ışının normalle yaptığı açı (gelme açısı) 0°'dir ve ışın kendi üzerinden geri döner."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Gelen ışın ile yansıyan ışın arasındaki açının 120° olduğu bir düzlem aynada, gelen ışının ayna yüzeyiyle yaptığı açı kaç derecedir?",
+      "secenekler": [
+        "60°",
+        "45°",
+        "15°",
+        "30°"
+      ],
+      "dogru": 3,
+      "aciklama": "i + r = 120° olduğundan gelme açısı i = 60°'dir. Ayna yüzeyiyle yapılan açı ise 90° - 60° = 30° olur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Işığın yansıması ve yansıma kanunlarıyla ilgili aşağıdaki ifadelerin doğru (D) veya yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "dogru": true,
+          "aciklama": "Bu ifade yansımanın birinci temel kanunudur.",
+          "ifade": "Gelen ışın, yansıyan ışın ve yüzeyin normali aynı düzlem içinde bulunur."
+        },
+        {
+          "dogru": false,
+          "aciklama": "Gelme açısı, gelen ışının ayna yüzeyiyle değil yüzeyin normaliyle (N) yaptığı açıdır.",
+          "ifade": "Gelen ışının yansıtıcı ayna yüzeyi ile yaptığı açıya gelme açısı adı verilir."
+        },
+        {
+          "dogru": true,
+          "aciklama": "Yansıma kanunları hem düzgün hem de dağınık yansımada geçerlidir.",
+          "ifade": "Pürüzlü yüzeylerde gerçekleşen dağınık yansımada da her bir ışın için gelme açısı yansıma açısına eşittir."
+        },
+        {
+          "dogru": false,
+          "aciklama": "Dalgalı su yüzeyi pürüzlü olduğu için dağınık yansıma gerçekleşir ve görüntü bulanıklaşır.",
+          "ifade": "Rüzgârlı bir günde dalgalanan su yüzeyinde cisimlerin net görüntüsünün oluşmaması düzgün yansımadan kaynaklanır."
+        },
+        {
+          "dogru": true,
+          "aciklama": "Her yansımada gelme açısı ile yansıma açısı birbirine eşittir.",
+          "ifade": "Gelme açısı 40° olan bir ışık ışınının yansıma açısı da 40°'dir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Işığın yansımasıyla ilgili aşağıdaki kavramları doğru açıklamalarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Yüzeyin Normali (N)",
+          "Işının değme noktasından yüzeye 90° dik çizilen hayali doğru"
+        ],
+        [
+          "Gelme Açısı",
+          "Gelen ışın ile yüzeyin normali arasında kalan açı"
+        ],
+        [
+          "Düzgün Yansıma",
+          "Pürüzsüz yüzeylerde paralel ışınların paralel yansıması"
+        ],
+        [
+          "Dağınık Yansıma",
+          "Pürüzlü yüzeylerde paralel ışınların farklı yönlere yansıması"
+        ],
+        [
+          "0°",
+          "Yüzeye dik (normal üzerinden) gelen ışının yansıma açısı"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Işığın bir yüzeye çarparak geldiği ortama geri dönmesi olayına ışığın ___ denir.",
+          "cevap": "yansıması"
+        },
+        {
+          "metin": "Yansıyan ışın ile yüzeyin normali arasında kalan açıya ___ açısı adı verilir.",
+          "cevap": "yansıma"
+        },
+        {
+          "metin": "Gelen ışının ayna yüzeyi ile yaptığı açı ve gelme açısının toplamı her zaman ___ derecedir.",
+          "cevap": "90"
+        },
+        {
+          "metin": "Durgun su ve düzlem ayna gibi pürüzsüz yüzeylerde net görüntü oluşmasını sağlayan yansıma türü ___ yansımadır.",
+          "cevap": "düzgün"
+        },
+        {
+          "metin": "Buruşturulmuş alüminyum folyoya paralel gönderilen ışınların farklı yönlere gitmesine ___ yansıma denir.",
+          "cevap": "dağınık"
+        }
+      ],
+      "fazla": [
+        "180",
+        "kırılması"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir ışık ışınının düzlem aynada ve pürüzlü bir duvarda yansımasını karşılaştırarak, her iki durumda da yansıma kanunlarının nasıl işlediğini kanıtlarıyla açıklayınız.",
+      "ipuclari": [
+        "Önce gelen ışın, yansıyan ışın ve yüzeyin normali (N) kavramlarını tanımlayınız.",
+        "Düzlem aynada normallerin birbirine paralel olduğunu, pürüzlü duvarda ise yüzey eğimi değiştiği için normallerin farklı yönlere baktığını belirtiniz.",
+        "Her iki yüzeyde de tek bir ışın için Gelme Açısı = Yansıma Açısı eşitliğinin korunduğunu vurgulayınız."
+      ],
+      "cevap": "Düzlem ayna pürüzsüz olduğu için her noktada yüzey normalleri (N) birbirine paraleldir; bu nedenle paralel gelen ışınlar eşit açılarla (i = r) yine birbirine paralel yansır (düzgün yansıma) ve net görüntü oluşur. Pürüzlü duvarda ise her ışının çarptığı noktanın eğimi farklı olduğundan yüzey normalleri farklı yönlere bakar; her ışın kendi normaliyle eşit açı (i = r) yaparak yansısa da normaller farklı doğrultuda olduğu için ışınlar etrafa dağılır (dağınık yansıma)."
+    }
+  ],
+  "ozet": [
+    "{koyu:Temel Yansıma Elemanları:} Yüzeye gelen ışına gelen ışın, yüzeyden dönen ışına yansıyan ışın, değme noktasından yüzeye 90° dik çizilen hayali çizgiye ise yüzeyin normali (N) denir.",
+    "{koyu:Gelme ve Yansıma Açısı:} Gelen ışının normalle yaptığı açı gelme açısı (i), yansıyan ışının normalle yaptığı açı yansıma açısıdır (r); ayna yüzeyiyle yapılan açı gelme açısı değildir.",
+    "{koyu:Yansıma Kanunları:} Gelen ışın, yansıyan ışın ve normal aynı düzlemdedir; her yansımada gelme açısı yansıma açısına eşittir (i = r).",
+    "{koyu:Dik Geliş ve Tamamlayıcı Açı:} Yüzeyle yapılan açı ile gelme açısının toplamı 90°'dir; yüzeye dik (normal üzerinden) gelen ışının gelme ve yansıma açısı 0° olup kendi üzerinden geri döner.",
+    "{koyu:Düzgün ve Dağınık Yansıma:} Pürüzsüz yüzeylerde düzgün yansıma (net görüntü), pürüzlü yüzeylerde dağınık yansıma (bulanık/görüntüsüz) oluşur; her ikisinde de yansıma kanunları geçerlidir."
+  ]
+}

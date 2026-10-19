@@ -1,0 +1,523 @@
+{
+  "ad": "9-matematik-14",
+  "sinif": 9,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 14,
+  "tarih": "21-25 Aralık 2026",
+  "yayin_tarihi": "2026-12-21",
+  "unite": "GEOMETRİK ŞEKİLLER",
+  "konu": "Üçgende Açı ve Kenarla İlgili Özellikler ve Bu Özellikler Arasındaki İlişkiler: Üçgenin Yardımcı Elemanları, Dik-Dar-Geniş Açılı Üçgen Koşulları ve Açı-Kenar Problemleri",
+  "ciktilar": [
+    "MAT.9.3.2. Bir üçgende iç açıların ölçüleri ile bu açıların karşısındaki kenar uzunlukları arasındaki sıralama ilişkisini ve üçgen eşitsizliğini analiz eder.",
+    "MAT.9.3.2.a. Dar, dik ve geniş açılı üçgenlerde açı ölçüleri ile kenar uzunluklarının kareleri arasındaki bağıntıları problem çözümlerinde uygular.",
+    "MAT.9.3.2.b. Üçgenin yardımcı elemanlarını (yükseklik, açıortay, kenarortay, kenar orta dikme) ve bunların uzunluk sıralamalarını açıklar."
+  ],
+  "ozet": [
+    "Bir üçgende ölçüsü büyük olan iç açının karşısında uzun olan kenar, ölçüsü küçük olan iç açının karşısında ise kısa olan kenar bulunur.",
+    "Üçgen Eşitsizliği Teoremi'ne göre bir üçgende herhangi bir kenarın uzunluğu, diğer iki kenarın uzunlukları farkının mutlak değerinden büyük, toplamından küçüktür.",
+    "Bir ABC üçgeninde A açısı 90 derece ise a kare = b kare + c kare; A açısı dar açı (90 dereceden küçük) ise a kare < b kare + c kare; A açısı geniş açı (90 dereceden büyük) ise a kare > b kare + c kare olur.",
+    "Üçgende yüksekliklerin kesişim noktası diklik merkezi, iç açıortayların kesişim noktası iç teğet çemberin merkezi, kenarortayların kesişim noktası ise ağırlık merkezidir (G).",
+    "Çeşitkenar bir üçgende aynı köşeden çizilen yardımcı elemanlar arasında her zaman yükseklik < açıortay < kenarortay sıralaması geçerlidir; ikizkenar üçgenin tepe açısında ise bu üçü çakışıktır.",
+    "Kenar uzunluğu büyüdükçe o kenara ait yükseklik, açıortay ve kenarortay uzunlukları küçülür; yani a > b > c ise ha < hb < hc sıralaması vardır."
+  ],
+  "kavramlar": [
+    {
+      "terim": "Üçgen Eşitsizliği",
+      "tanim": "Kenar uzunlukları a, b ve c birim olan her üçgende |b - c| < a < b + c bağıntısının sağlanması zorunluluğudur."
+    },
+    {
+      "terim": "Yükseklik ve Diklik Merkezi",
+      "tanim": "Üçgenin bir köşesinden karşı kenara (veya uzantısına) indirilen dik doğru parçasına yükseklik ({us:h|a}); üç yüksekliğin kesiştiği noktaya diklik merkezi denir."
+    },
+    {
+      "terim": "Açıortay ve İç Teğet Çember",
+      "tanim": "Üçgenin bir iç açısını iki eş parçaya bölen doğru parçasına iç açıortay ({us:n|A}); iç açıortayların kesiştiği ve üçgenin kenarlarına eşit uzaklıkta olan noktaya iç teğet çemberin merkezi denir."
+    },
+    {
+      "terim": "Kenarortay ve Ağırlık Merkezi (G)",
+      "tanim": "Bir köşeyi karşı kenarın orta noktasına birleştiren doğru parçasına kenarortay ({us:V|a}); kenarortayların birbirini tabana 1 birim (k), köşeye 2 birim (2k) oranında böldüğü kesişim noktasına ağırlık merkezi denir."
+    },
+    {
+      "terim": "Kenar Orta Dikme ve Çevrel Çember",
+      "tanim": "Üçgenin bir kenarını tam orta noktasından dik olarak kesen doğruya kenar orta dikme; üç kenar orta dikmenin kesiştiği ve köşelere eşit uzaklıkta olan noktaya çevrel çemberin merkezi denir."
+    }
+  ],
+  "giris": "Üçgenler, mimariden mühendisliğe kadar tüm yapıların en sağlam geometrik taşıyıcısıdır. Üç doğrunun düzlemde kapalı bir üçgen oluşturabilmesi rastgele uzunluklarla mümkün değildir; açıların açıklığı ile kenarların uzunluğu arasında kusursuz bir matematiksel denge vardır. Geçen hafta temel ilkelerini tanıdığımız üçgende açı-kenar bağıntılarını bu hafta derinleştirerek dar, dik ve geniş açılı üçgen koşullarını, üçgenin temel ve yardımcı elemanlarını (yükseklik, açıortay, kenarortay ve kenar orta dikme), bunların kesişim merkezlerini ve çok üçgenli sistemlerde en uzun/en kısa kenar problemlerini ayrıntılarıyla inceleyeceğiz.",
+  "bolumler": [
+    {
+      "baslik": "Üçgende Açı-Kenar İlişkisi ve Üçgen Eşitsizliği",
+      "metin": [
+        "Bir ABC üçgeninde A, B ve C köşelerinin karşısındaki kenar uzunlukları sırasıyla a, b ve c birim ile gösterilir. Üçgende bir iç açının kolları arasındaki açıklık arttıkça, o açının gördüğü karşı kenarın uzunluğu da artar. Buna göre bir üçgende en büyük açının karşısında en uzun kenar, en küçük açının karşısında ise en kısa kenar bulunur: m(A) > m(B) > m(C) ise a > b > c olur (veya karşıt olarak a > b > c ise m(A) > m(B) > m(C) sıralaması geçerlidir). Eşit ölçüdeki açıların karşısındaki kenar uzunlukları da birbirine eşittir (ikizkenar ve eşkenar üçgen kuralı).",
+        "Düzlemde verilen üç doğru parçasının bir üçgen oluşturabilmesi için 'Üçgen Eşitsizliği Teoremi'ni sağlaması şarttır: Bir üçgende herhangi bir kenarın uzunluğu, diğer iki kenarın uzunlukları farkının mutlak değerinden büyük, diğer iki kenarın uzunlukları toplamından küçüktür. Yani a, b ve c kenarları için |b - c| < a < b + c, |a - c| < b < a + c ve |a - b| < c < a + b eşitsizlikleri aynı anda sağlanmalıdır. Ayrıca üçgenin çevresi Ç = a + b + c = 2u olarak tanımlandığında, bir üçgende herhangi bir kenarın uzunluğu daima üçgenin yarı çevresinden (u'dan) küçüktür (a < u)."
+      ],
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Dik ve Geniş Açılı Üçgende En Uzun Kenar",
+          "metin": "Bir üçgende en fazla bir tane dik açı (90 derece) veya bir tane geniş açı (90 dereceden büyük) bulunabilir; bu nedenle dik üçgende en uzun kenar hipotenüs, geniş açılı üçgende ise geniş açının karşısındaki kenardır."
+        }
+      ],
+      "tablo": {
+        "basliklar": [
+          "Kural / Teorem",
+          "Matematiksel İfadesi",
+          "Problem Çözümündeki Yorumu"
+        ],
+        "satirlar": [
+          [
+            "Açı - Kenar Sıralaması",
+            "m(A) > m(B) > m(C) ise a > b > c",
+            "Büyük açı karşısında büyük kenar bulunur."
+          ],
+          [
+            "Üçgen Eşitsizliği",
+            "|b - c| < a < b + c",
+            "Bir kenar, diğer iki kenarın farkı ile toplamı arasındadır."
+          ],
+          [
+            "Çevre - Kenar İlişkisi",
+            "a < {kesir:Çevre|2} (yani 2a < a + b + c)",
+            "En uzun kenar bile üçgenin çevresinin yarısından küçüktür."
+          ]
+        ]
+      },
+      "liste": [
+        "Üçgenin kenar uzunlukları tam sayı denildiğinde eşitsizlik aralığındaki tam sayılar seçilir; 'kenarlar reel sayıdır' denildiğinde ise çevre hesabı eşitsizliklerin taraf tarafa toplanmasıyla yapılır.",
+        "Çeşitkenar üçgen şartı varsa, bilinmeyen kenar diğer iki kenarın uzunluklarına eşit olan değerleri alamaz."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Poppins, sans-serif\">\n  <rect width=\"700\" height=\"260\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/>\n  <rect x=\"20\" y=\"18\" width=\"660\" height=\"38\" rx=\"8\" fill=\"#1D4ED8\"/>\n  <text x=\"350\" y=\"43\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-size=\"16\" font-weight=\"700\">ÜÇGENDE AÇI-KENAR İLİŞKİSİ VE ÜÇGEN EŞİTSİZLİĞİ</text>\n  <g transform=\"translate(28, 72)\">\n    <rect x=\"0\" y=\"0\" width=\"305\" height=\"164\" rx=\"12\" fill=\"#DBEAFE\" stroke=\"#2563EB\" stroke-width=\"2\"/>\n    <text x=\"152\" y=\"25\" text-anchor=\"middle\" fill=\"#1E3A8A\" font-size=\"14\" font-weight=\"700\">1. Açı - Kenar Sıralaması</text>\n    <polygon points=\"145,42 55,125 245,125\" fill=\"#FFFFFF\" stroke=\"#1D4ED8\" stroke-width=\"2.5\"/>\n    <text x=\"145\" y=\"38\" text-anchor=\"middle\" fill=\"#1E3A8A\" font-size=\"12\" font-weight=\"700\">A</text>\n    <text x=\"42\" y=\"130\" text-anchor=\"middle\" fill=\"#1E3A8A\" font-size=\"12\" font-weight=\"700\">B</text>\n    <text x=\"258\" y=\"130\" text-anchor=\"middle\" fill=\"#1E3A8A\" font-size=\"12\" font-weight=\"700\">C</text>\n    <text x=\"152\" y=\"118\" text-anchor=\"middle\" fill=\"#DC2626\" font-size=\"12\" font-weight=\"700\">a</text>\n    <text x=\"208\" y=\"80\" text-anchor=\"middle\" fill=\"#DC2626\" font-size=\"12\" font-weight=\"700\">b</text>\n    <text x=\"90\" y=\"80\" text-anchor=\"middle\" fill=\"#DC2626\" font-size=\"12\" font-weight=\"700\">c</text>\n    <text x=\"152\" y=\"150\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"12\" font-weight=\"600\">m(A) &gt; m(B) &gt; m(C)  &lt;==&gt;  a &gt; b &gt; c</text>\n\n    <rect x=\"335\" y=\"0\" width=\"305\" height=\"164\" rx=\"12\" fill=\"#FEF3C7\" stroke=\"#D97706\" stroke-width=\"2\"/>\n    <text x=\"487\" y=\"25\" text-anchor=\"middle\" fill=\"#92400E\" font-size=\"14\" font-weight=\"700\">2. Üçgen Eşitsizliği Teoremi</text>\n    <rect x=\"355\" y=\"42\" width=\"265\" height=\"36\" rx=\"6\" fill=\"#FFFFFF\"/>\n    <text x=\"487\" y=\"65\" text-anchor=\"middle\" fill=\"#991B1B\" font-size=\"14\" font-weight=\"700\">|b - c| &lt; a &lt; b + c</text>\n    <rect x=\"355\" y=\"84\" width=\"265\" height=\"36\" rx=\"6\" fill=\"#FFFFFF\"/>\n    <text x=\"487\" y=\"107\" text-anchor=\"middle\" fill=\"#1E3A8A\" font-size=\"14\" font-weight=\"700\">|a - c| &lt; b &lt; a + c</text>\n    <text x=\"487\" y=\"144\" text-anchor=\"middle\" fill=\"#334155\" font-size=\"11\" font-weight=\"600\">Bir kenar; diğer iki kenarın farkından</text>\n    <text x=\"487\" y=\"158\" text-anchor=\"middle\" fill=\"#334155\" font-size=\"11\" font-weight=\"600\">büyük, toplamından küçüktür.</text>\n  </g>\n</svg>"
+    },
+    {
+      "baslik": "Dar, Dik ve Geniş Açılı Üçgenlerde Kenar Koşulları",
+      "metin": [
+        "Bir üçgende yalnız üçgen eşitsizliği bilindiğinde bilinmeyen kenarın alabileceği değer aralığı geniştir; ancak üçgenin bir açısının dar açı mı (< 90°), dik açı mı (= 90°) yoksa geniş açı mı (> 90°) olduğu verildiğinde Pisagor Teoremi'ne dayanan ikinci bir daraltıcı koşul devreye girer. Bir ABC üçgeninde A köşesindeki açı tam 90° (dik açı) ise Pisagor bağıntısı gereği {us:a|2} = {us:b|2} + {us:c|2} eşitliği sağlanır.",
+        "Eğer A açısı 90°'den küçültülürse (m(A) < 90°, dar açı olursa) karşısındaki a kenarı da küçüleceğinden {us:a|2} < {us:b|2} + {us:c|2} yani a < {kok:{us:b|2} + {us:c|2}} olur; bu durumda üçgen eşitsizliğinin üst sınırı olan b + c yerine daha küçük olan {kok:{us:b|2} + {us:c|2}} değeri üst sınır olarak alınır: |b - c| < a < {kok:{us:b|2} + {us:c|2}}. Eğer A açısı 90°'den büyütülürse (m(A) > 90°, geniş açı olursa) karşısındaki a kenarı hipotenüsten daha uzun olacağından {us:a|2} > {us:b|2} + {us:c|2} yani a > {kok:{us:b|2} + {us:c|2}} olur; bu durumda da üçgen eşitsizliğinin alt sınırı olan |b - c| yerine {kok:{us:b|2} + {us:c|2}} değeri alt sınır olarak alınır: {kok:{us:b|2} + {us:c|2}} < a < b + c."
+      ],
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "6 - 8 - x Üçgeninde Dar ve Geniş Açı Aralığı",
+          "metin": "Kenarları 6 ve 8 birim olan üçgende normal aralık 2 < x < 14'tür. Aradaki açı dar (< 90°) ise 2 < x < 10; dik (= 90°) ise x = 10; geniş (> 90°) ise 10 < x < 14 olur."
+        }
+      ],
+      "tablo": {
+        "basliklar": [
+          "Açı Koşulu",
+          "Kareler Bağıntısı",
+          "a Kenarının Değer Aralığı"
+        ],
+        "satirlar": [
+          [
+            "Ek bilgi yoksa (Genel)",
+            "Sadece üçgen eşitsizliği",
+            "|b - c| < a < b + c"
+          ],
+          [
+            "m(A) = 90° (Dik açı)",
+            "{us:a|2} = {us:b|2} + {us:c|2}",
+            "a = {kok:{us:b|2} + {us:c|2}}"
+          ],
+          [
+            "m(A) < 90° (Dar açı)",
+            "{us:a|2} < {us:b|2} + {us:c|2}",
+            "|b - c| < a < {kok:{us:b|2} + {us:c|2}}"
+          ],
+          [
+            "m(A) > 90° (Geniş açı)",
+            "{us:a|2} > {us:b|2} + {us:c|2}",
+            "{kok:{us:b|2} + {us:c|2}} < a < b + c"
+          ]
+        ]
+      },
+      "liste": [
+        "Dikkat: 'ABC dar açılı bir üçgendir' denildiğinde SADECE A açısı değil, A, B ve C açılarının ÜÇÜ DE 90°'den küçüktür; bu yüzden hem {us:a|2} < {us:b|2} + {us:c|2} hem de diğer iki kenar için kareler eşitsizliği sağlanmalıdır!",
+        "Özel dik üçgenleri (3-4-5, 5-12-13, 8-15-17, 7-24-25 ve katları) hatırlamak kareler toplamının kökünü anında bulmayı sağlar."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Poppins, sans-serif\">\n  <rect width=\"700\" height=\"260\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/>\n  <rect x=\"20\" y=\"18\" width=\"660\" height=\"38\" rx=\"8\" fill=\"#0F766E\"/>\n  <text x=\"350\" y=\"43\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-size=\"16\" font-weight=\"700\">DAR, DİK VE GENİŞ AÇILI ÜÇGENLERDE KENAR KOŞULLARI</text>\n  <g transform=\"translate(25, 72)\">\n    <rect x=\"0\" y=\"0\" width=\"205\" height=\"164\" rx=\"10\" fill=\"#CCFBF1\" stroke=\"#0D9488\" stroke-width=\"2\"/>\n    <text x=\"102\" y=\"25\" text-anchor=\"middle\" fill=\"#115E59\" font-size=\"14\" font-weight=\"700\">1. Dik Açılı (m(A) = 90°)</text>\n    <polygon points=\"55,45 55,105 155,105\" fill=\"#FFFFFF\" stroke=\"#0D9488\" stroke-width=\"2.5\"/>\n    <rect x=\"55\" y=\"93\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"#0D9488\" stroke-width=\"1.5\"/>\n    <text x=\"102\" y=\"132\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"14\" font-weight=\"700\">a² = b² + c²</text>\n    <text x=\"102\" y=\"152\" text-anchor=\"middle\" fill=\"#115E59\" font-size=\"11\" font-weight=\"600\">(Pisagor Teoremi)</text>\n\n    <rect x=\"222\" y=\"0\" width=\"205\" height=\"164\" rx=\"10\" fill=\"#DBEAFE\" stroke=\"#2563EB\" stroke-width=\"2\"/>\n    <text x=\"324\" y=\"25\" text-anchor=\"middle\" fill=\"#1E3A8A\" font-size=\"14\" font-weight=\"700\">2. Dar Açılı (m(A) &lt; 90°)</text>\n    <polygon points=\"315,45 265,105 375,105\" fill=\"#FFFFFF\" stroke=\"#2563EB\" stroke-width=\"2.5\"/>\n    <text x=\"324\" y=\"132\" text-anchor=\"middle\" fill=\"#1E3A8A\" font-size=\"14\" font-weight=\"700\">a² &lt; b² + c²</text>\n    <text x=\"324\" y=\"152\" text-anchor=\"middle\" fill=\"#334155\" font-size=\"11\" font-weight=\"600\">Tüm açılar &lt; 90° ise dar açılı üçgen</text>\n\n    <rect x=\"445\" y=\"0\" width=\"205\" height=\"164\" rx=\"10\" fill=\"#FEE2E2\" stroke=\"#DC2626\" stroke-width=\"2\"/>\n    <text x=\"547\" y=\"25\" text-anchor=\"middle\" fill=\"#991B1B\" font-size=\"14\" font-weight=\"700\">3. Geniş Açılı (m(A) &gt; 90°)</text>\n    <polygon points=\"480,50 515,105 615,105\" fill=\"#FFFFFF\" stroke=\"#DC2626\" stroke-width=\"2.5\"/>\n    <text x=\"547\" y=\"132\" text-anchor=\"middle\" fill=\"#991B1B\" font-size=\"14\" font-weight=\"700\">a² &gt; b² + c²</text>\n    <text x=\"547\" y=\"152\" text-anchor=\"middle\" fill=\"#334155\" font-size=\"11\" font-weight=\"600\">En uzun kenar geniş açı karşısında</text>\n  </g>\n</svg>"
+    },
+    {
+      "baslik": "Üçgenin Yardımcı Elemanları ve Kesişim Merkezleri",
+      "metin": [
+        "Bir üçgenin kenarları ve açıları 'temel elemanları' iken; yükseklik, açıortay, kenarortay ve kenar orta dikme üçgenin 'yardımcı elemanları' olarak adlandırılır. (1) Yükseklik ({us:h|a}, {us:h|b}, {us:h|c}): Üçgenin bir köşesinden karşı kenara veya karşı kenarın uzantısına indirilen dik doğru parçasıdır. Üç yüksekliğin kesiştiği noktaya 'diklik merkezi' denir. Dar açılı üçgende diklik merkezi üçgenin iç bölgesinde, dik üçgende dik açının bulunduğu köşede, geniş açılı üçgende ise üçgenin dış bölgesindedir. (2) Açıortay ({us:n|A}, {us:n|B}, {us:n|C}): Üçgenin bir iç açısını iki eş parçaya bölen doğru parçasıdır. Üç iç açıortay daima üçgenin iç bölgesinde bir noktada kesişir; bu nokta üçgenin kenarlarına eşit uzaklıktadır ve 'iç teğet çemberin merkezi'dir.",
+        "(3) Kenarortay ({us:V|a}, {us:V|b}, {us:V|c}): Üçgenin bir köşesini karşı kenarın orta noktasına birleştiren doğru parçasıdır. Üç kenarortay daima üçgenin iç bölgesinde G noktasında kesişir; G noktasına üçgenin 'ağırlık merkezi' denir ve her kenarortayı tabana 1 birim (k), köşeye 2 birim (2k) olacak şekilde 1:2 oranında böler. (4) Kenar Orta Dikme: Köşeden geçmek zorunda olmayan, bir kenarı tam orta noktasından dik olarak kesen doğrudur. Üç kenar orta dikmenin kesiştiği nokta üçgenin köşelerine eşit uzaklıktadır ve 'çevrel çemberin merkezi'dir (dar açılıda içte, dik üçgende hipotenüsün ortasında, geniş açılıda dışta bulunur)."
+      ],
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Diklik Merkezi ile Çevrel Çember Merkezinin Konumu",
+          "metin": "İç teğet çemberin merkezi ve ağırlık merkezi (G) her üçgende daima İÇ bölgededir. Diklik merkezi ve çevrel çemberin merkezi ise dar açılıda içte, dik üçgende kenar/köşe üzerinde, geniş açılıda dış bölgededir."
+        }
+      ],
+      "tablo": {
+        "basliklar": [
+          "Yardımcı Eleman",
+          "Gösterimi",
+          "Kesişim Noktasının Adı",
+          "Merkezin Geometrik Özelliği"
+        ],
+        "satirlar": [
+          [
+            "Yükseklik",
+            "{us:h|a}, {us:h|b}, {us:h|c}",
+            "Diklik Merkezi (H)",
+            "Dik üçgende dik köşenin tam üzerindedir."
+          ],
+          [
+            "İç Açıortay",
+            "{us:n|A}, {us:n|B}, {us:n|C}",
+            "İç Teğet Çemberin Merkezi (I)",
+            "Üçgenin üç kenarına da eşit uzaklıktadır."
+          ],
+          [
+            "Kenarortay",
+            "{us:V|a}, {us:V|b}, {us:V|c}",
+            "Ağırlık Merkezi (G)",
+            "Kenarortayı tabana k, köşeye 2k oranında böler."
+          ],
+          [
+            "Kenar Orta Dikme",
+            "d1, d2, d3",
+            "Çevrel Çemberin Merkezi (O)",
+            "Üçgenin üç köşesine de eşit uzaklıktadır."
+          ]
+        ]
+      },
+      "liste": [
+        "Bir üçgende bir iç açıortay ile iki dış açıortayın kesiştiği noktaya ise 'dış teğet çemberin merkezi' adı verilir.",
+        "Dik üçgende hipotenüse ait kenarortay uzunluğu hipotenüsün yarısına eşittir (Muhteşem Üçlü kuralı)."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Poppins, sans-serif\">\n  <rect width=\"700\" height=\"260\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/>\n  <rect x=\"20\" y=\"18\" width=\"660\" height=\"38\" rx=\"8\" fill=\"#6D28D9\"/>\n  <text x=\"350\" y=\"43\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-size=\"16\" font-weight=\"700\">ÜÇGENİN YARDIMCI ELEMANLARI VE MERKEZ NOKTALARI</text>\n  <g transform=\"translate(22, 72)\">\n    <rect x=\"0\" y=\"0\" width=\"155\" height=\"164\" rx=\"8\" fill=\"#EDE9FE\" stroke=\"#7C3AED\" stroke-width=\"1.5\"/>\n    <text x=\"77\" y=\"24\" text-anchor=\"middle\" fill=\"#4C1D95\" font-size=\"13\" font-weight=\"700\">1. Yükseklik (h_a)</text>\n    <text x=\"77\" y=\"48\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\">Köşeden karşı kenara</text>\n    <text x=\"77\" y=\"64\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\">indirilen dikmedir.</text>\n    <rect x=\"10\" y=\"82\" width=\"135\" height=\"66\" rx=\"6\" fill=\"#FFFFFF\"/>\n    <text x=\"77\" y=\"106\" text-anchor=\"middle\" fill=\"#5B21B6\" font-size=\"11\" font-weight=\"700\">Kesişim Noktası:</text>\n    <text x=\"77\" y=\"126\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"12\" font-weight=\"700\">Diklik Merkezi (H)</text>\n\n    <rect x=\"168\" y=\"0\" width=\"155\" height=\"164\" rx=\"8\" fill=\"#DBEAFE\" stroke=\"#2563EB\" stroke-width=\"1.5\"/>\n    <text x=\"245\" y=\"24\" text-anchor=\"middle\" fill=\"#1E3A8A\" font-size=\"13\" font-weight=\"700\">2. Açıortay (n_A)</text>\n    <text x=\"245\" y=\"48\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\">Köşe açısını iki eş</text>\n    <text x=\"245\" y=\"64\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\">parçaya bölen doğru.</text>\n    <rect x=\"178\" y=\"82\" width=\"135\" height=\"66\" rx=\"6\" fill=\"#FFFFFF\"/>\n    <text x=\"245\" y=\"106\" text-anchor=\"middle\" fill=\"#1D4ED8\" font-size=\"11\" font-weight=\"700\">Kesişim Noktası:</text>\n    <text x=\"245\" y=\"126\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\" font-weight=\"700\">İç Teğet Çember Mrk.</text>\n\n    <rect x=\"336\" y=\"0\" width=\"155\" height=\"164\" rx=\"8\" fill=\"#DCFCE7\" stroke=\"#16A34A\" stroke-width=\"1.5\"/>\n    <text x=\"413\" y=\"24\" text-anchor=\"middle\" fill=\"#166534\" font-size=\"13\" font-weight=\"700\">3. Kenarortay (V_a)</text>\n    <text x=\"413\" y=\"48\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\">Köşeyi karşı kenarın</text>\n    <text x=\"413\" y=\"64\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\">ortasına birleştirir.</text>\n    <rect x=\"346\" y=\"82\" width=\"135\" height=\"66\" rx=\"6\" fill=\"#FFFFFF\"/>\n    <text x=\"413\" y=\"106\" text-anchor=\"middle\" fill=\"#15803D\" font-size=\"11\" font-weight=\"700\">Kesişim Noktası:</text>\n    <text x=\"413\" y=\"126\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\" font-weight=\"700\">Ağırlık Merkezi (G: k-2k)</text>\n\n    <rect x=\"504\" y=\"0\" width=\"152\" height=\"164\" rx=\"8\" fill=\"#FEF3C7\" stroke=\"#D97706\" stroke-width=\"1.5\"/>\n    <text x=\"580\" y=\"24\" text-anchor=\"middle\" fill=\"#92400E\" font-size=\"13\" font-weight=\"700\">4. Kenar Orta Dikme</text>\n    <text x=\"580\" y=\"48\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\">Kenarı tam ortadan</text>\n    <text x=\"580\" y=\"64\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\">dik kesen doğrudur.</text>\n    <rect x=\"514\" y=\"82\" width=\"132\" height=\"66\" rx=\"6\" fill=\"#FFFFFF\"/>\n    <text x=\"580\" y=\"106\" text-anchor=\"middle\" fill=\"#B45309\" font-size=\"11\" font-weight=\"700\">Kesişim Noktası:</text>\n    <text x=\"580\" y=\"126\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\" font-weight=\"700\">Çevrel Çember Mrk.</text>\n  </g>\n</svg>"
+    },
+    {
+      "baslik": "Yardımcı Elemanların Uzunlukları Arasındaki Sıralama",
+      "metin": [
+        "Bir üçgenin aynı köşesinden karşı kenara çizilen yükseklik ({us:h|a}), açıortay ({us:n|A}) ve kenarortay ({us:V|a}) uzunlukları karşılaştırıldığında; bir noktadan bir doğruya çizilen en kısa doğru parçası dikme (yükseklik) olduğu için en kısa eleman her zaman yüksekliktir. Açıortay ise daima yükseklik ile kenarortay arasında yer alır. Buna göre çeşitkenar bir üçgende her köşe için {us:h|a} < {us:n|A} < {us:V|a} sıralaması geçerlidir. Eğer üçgen ikizkenar ise (b = c ise), tepe açısından tabana indirilen yükseklik, açıortay ve kenarortay aynı doğru parçasıdır ve uzunlukları birbirine eşittir ({us:h|a} = {us:n|A} = {us:V|a}); eşkenar üçgende ise tüm köşelerde bütün yardımcı elemanlar birbirine eşittir.",
+        "Farklı kenarlara ait aynı tür yardımcı elemanlar karşılaştırıldığında ise kenar uzunluğu ile o kenara ait yardımcı elemanın uzunluğu arasında ters orantı vardır: Kenar büyüdükçe (veya tepe açısı genişledikçe) karşı köşe kenara yaklaşır ve o kenara ait yükseklik, açıortay ve kenarortay kısalır. Dolayısıyla bir ABC üçgeninde kenarlar arasında a > b > c sıralaması varsa; yükseklikler arasında {us:h|a} < {us:h|b} < {us:h|c}, açıortaylar arasında {us:n|A} < {us:n|B} < {us:n|C} ve kenarortaylar arasında {us:V|a} < {us:V|b} < {us:V|c} sıralaması bulunur."
+      ],
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Kenar Uzunluğu ile Yardımcı Eleman Ters Orantısı",
+          "metin": "Üçgende büyük açı karşısında büyük kenar vardır (m(A) > m(B) ise a > b); ancak büyük kenara inen yükseklik, açıortay ve kenarortay daha KÜÇÜKTÜR ({us:h|a} < {us:h|b}, {us:n|A} < {us:n|B}, {us:V|a} < {us:V|b})."
+        }
+      ],
+      "tablo": {
+        "basliklar": [
+          "Üçgen Türü / Durum",
+          "Aynı Köşedeki İlişki",
+          "Farklı Köşelerdeki İlişki"
+        ],
+        "satirlar": [
+          [
+            "Çeşitkenar (a > b > c)",
+            "{us:h|a} < {us:n|A} < {us:V|a}",
+            "{us:h|a} < {us:h|b} < {us:h|c} ve {us:V|a} < {us:V|b} < {us:V|c}"
+          ],
+          [
+            "İkizkenar (b = c ≠ a)",
+            "Tepe açısında: {us:h|a} = {us:n|A} = {us:V|a}",
+            "Taban köşelerinde: {us:h|b} = {us:h|c}, {us:n|B} = {us:n|C}, {us:V|b} = {us:V|c}"
+          ],
+          [
+            "Eşkenar (a = b = c)",
+            "Her köşede h = n = V",
+            "Tüm yükseklik, açıortay ve kenarortaylar eşittir."
+          ]
+        ]
+      },
+      "liste": [
+        "Üçgenin alanı Taban x Yükseklik / 2 olduğundan a . {us:h|a} = b . {us:h|b} = c . {us:h|c} eşitliği her zaman sağlanır; buradan da a büyüdükçe {us:h|a}'nın küçüldüğü açıkça görülür.",
+        "Bir üçgende {us:h|a} = {us:n|A} eşitliği verilmişse o üçgen kesinlikle b = c olan bir ikizkenar üçgendir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Poppins, sans-serif\">\n  <rect width=\"700\" height=\"260\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/>\n  <rect x=\"20\" y=\"18\" width=\"660\" height=\"38\" rx=\"8\" fill=\"#B45309\"/>\n  <text x=\"350\" y=\"43\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-size=\"16\" font-weight=\"700\">AYNI KÖŞEDEN ÇİZİLEN YARDIMCI ELEMANLARIN SIRALAMASI</text>\n  <g transform=\"translate(28, 72)\">\n    <rect x=\"0\" y=\"0\" width=\"315\" height=\"164\" rx=\"12\" fill=\"#FEF3C7\" stroke=\"#D97706\" stroke-width=\"2\"/>\n    <text x=\"157\" y=\"25\" text-anchor=\"middle\" fill=\"#92400E\" font-size=\"14\" font-weight=\"700\">Aynı Köşeden Çizilenler: h_a &lt; n_A &lt; V_a</text>\n    <polygon points=\"135,38 35,135 275,135\" fill=\"#FFFFFF\" stroke=\"#B45309\" stroke-width=\"2\"/>\n    <line x1=\"135\" y1=\"38\" x2=\"135\" y2=\"135\" stroke=\"#DC2626\" stroke-width=\"2.5\"/>\n    <line x1=\"135\" y1=\"38\" x2=\"145\" y2=\"135\" stroke=\"#2563EB\" stroke-width=\"2.5\"/>\n    <line x1=\"135\" y1=\"38\" x2=\"155\" y2=\"135\" stroke=\"#16A34A\" stroke-width=\"2.5\"/>\n    <text x=\"124\" y=\"125\" fill=\"#DC2626\" font-size=\"11\" font-weight=\"700\">h</text>\n    <text x=\"143\" y=\"150\" fill=\"#2563EB\" font-size=\"11\" font-weight=\"700\">n</text>\n    <text x=\"160\" y=\"125\" fill=\"#16A34A\" font-size=\"11\" font-weight=\"700\">V</text>\n\n    <rect x=\"335\" y=\"0\" width=\"309\" height=\"164\" rx=\"12\" fill=\"#DCFCE7\" stroke=\"#16A34A\" stroke-width=\"2\"/>\n    <text x=\"489\" y=\"25\" text-anchor=\"middle\" fill=\"#166534\" font-size=\"14\" font-weight=\"700\">Kenarlar ile Yardımcı Elemanlar</text>\n    <rect x=\"351\" y=\"40\" width=\"277\" height=\"52\" rx=\"6\" fill=\"#FFFFFF\"/>\n    <text x=\"489\" y=\"60\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"12\" font-weight=\"700\">Kenar büyüdükçe o kenara ait</text>\n    <text x=\"489\" y=\"78\" text-anchor=\"middle\" fill=\"#166534\" font-size=\"12\" font-weight=\"700\">h, n ve V uzunlukları KÜÇÜLÜR!</text>\n    <text x=\"489\" y=\"114\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"13\" font-weight=\"700\">a &gt; b &gt; c   ise:</text>\n    <text x=\"489\" y=\"134\" text-anchor=\"middle\" fill=\"#B91C1C\" font-size=\"12\" font-weight=\"700\">h_a &lt; h_b &lt; h_c  |  n_A &lt; n_B &lt; n_C  |  V_a &lt; V_b &lt; V_c</text>\n    <text x=\"489\" y=\"154\" text-anchor=\"middle\" fill=\"#334155\" font-size=\"11\">İkizkenarda tepe açısından inen h = n = V'dir.</text>\n  </g>\n</svg>"
+    },
+    {
+      "baslik": "İkizkenar Üçgende YA-Kİ Kuralı ve Dik Üçgende Muhteşem Üçlü",
+      "metin": [
+        "Geometri sorularında açı ve kenar ilişkilerini çözerken en sık başvurulan iki özel yapı İkizkenar Üçgendeki Diklik Özelliği (YA-Kİ Kuralı) ve Dik Üçgendeki Muhteşem Üçlü'dür. Bir üçgende Yükseklik (Y), Açıortay (A), Kenarortay (K) ve İkizkenarlık (İ) özelliklerinden herhangi ikisi aynı doğru parçası üzerinde mevcutsa, diğer iki özellik de kesinlikle mevcuttur. Örneğin bir ABC üçgeninde A köşesinden çizilen açıortay aynı zamanda BC kenarına dik iniyorsa (Yükseklik + Açıortay varsa), bu doğru parçası aynı zamanda kenarortaydır ({uzunluk:BD} = {uzunluk:DC}) ve üçgen {uzunluk:AB} = {uzunluk:AC} olan bir ikizkenar üçgendir.",
+        "İkizkenar bir üçgenin tepe açısından tabana çizilen dikme (simetri ekseni) tabanı iki eş parçaya böler; taban üzerinde dikme ayağından uzaklaştıkça tepe köşesine olan uzaklık artar. Dik üçgende ise 90 derecelik köşeden hipotenüse çizilen kenarortay uzunluğu, hipotenüs üzerinde ayırdığı iki eş parçanın uzunluğuna eşittir ({uzunluk:AD} = {uzunluk:BD} = {uzunluk:DC} = {kesir:a|2}); bu özelliğe 'Muhteşem Üçlü' denir. Ayrıca dik üçgende hipotenüse ait kenarortay ({us:V|a} = {kesir:a|2}) her zaman hipotenüse ait yükseklikten ({us:h|a}) büyük veya ona eşittir ({us:h|a} en fazla {kesir:a|2} olabilir, bu da ikizkenar dik üçgende gerçekleşir)."
+      ],
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Kenar Orta Dikme Üzerindeki Noktaların Özelliği",
+          "metin": "Bir doğru parçasının orta dikmesi (hem dik hem iki eş parçaya bölen doğru) üzerinde alınan her nokta, doğru parçasının uç noktalarına eşit uzaklıktadır ve ikizkenar üçgen oluşturur."
+        }
+      ],
+      "tablo": {
+        "basliklar": [
+          "Özel Kural",
+          "Verilen Koşul",
+          "Ulaşılan Geometrik Sonuç"
+        ],
+        "satirlar": [
+          [
+            "YA-Kİ Kuralı",
+            "Açıortay + Yükseklik (veya Yükseklik + Kenarortay)",
+            "Üçgen ikizkenardır ve dördüncü özellik de sağlanır."
+          ],
+          [
+            "Muhteşem Üçlü",
+            "Dik köşeden hipotenüsün ortasına çizilen doğru",
+            "Kenarortay hipotenüsün yarısına eşittir ({us:V|a} = {kesir:a|2})."
+          ],
+          [
+            "Dik Üçgen Yüksekliği",
+            "Hipotenüsü a olan bir dik üçgende {us:h|a}",
+            "Her zaman {us:h|a} <= {kesir:a|2} (ikizkenar değilse {us:h|a} < {kesir:a|2})."
+          ]
+        ]
+      },
+      "liste": [
+        "Orta taban kuralı: Bir üçgende iki kenarın orta noktalarını birleştiren doğru parçası üçüncü kenara paraleldir ve uzunluğu üçüncü kenarın yarısına eşittir.",
+        "Kenarortay uzunluğu sorulduğunda kenarortayın ucundan diğer kenara paralel çizilerek orta taban oluşturulur ve oluşan küçük üçgende üçgen eşitsizliği uygulanır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Poppins, sans-serif\">\n  <rect width=\"700\" height=\"260\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/>\n  <rect x=\"20\" y=\"18\" width=\"660\" height=\"38\" rx=\"8\" fill=\"#047857\"/>\n  <text x=\"350\" y=\"43\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-size=\"16\" font-weight=\"700\">İKİZKENAR ÜÇGENDE DİKLİK KURALI (YA-Kİ) VE MUHTEŞEM ÜÇLÜ</text>\n  <g transform=\"translate(28, 72)\">\n    <rect x=\"0\" y=\"0\" width=\"305\" height=\"164\" rx=\"12\" fill=\"#DCFCE7\" stroke=\"#16A34A\" stroke-width=\"2\"/>\n    <text x=\"152\" y=\"25\" text-anchor=\"middle\" fill=\"#166534\" font-size=\"14\" font-weight=\"700\">1. İkizkenarda YA-Kİ Kuralı</text>\n    <polygon points=\"152,38 75,125 229,125\" fill=\"#FFFFFF\" stroke=\"#16A34A\" stroke-width=\"2.5\"/>\n    <line x1=\"152\" y1=\"38\" x2=\"152\" y2=\"125\" stroke=\"#DC2626\" stroke-width=\"2\"/>\n    <rect x=\"152\" y=\"115\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#DC2626\" stroke-width=\"1.5\"/>\n    <text x=\"152\" y=\"144\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\" font-weight=\"700\">Yükseklik - Açıortay - Kenarortay - İkizkenar</text>\n    <text x=\"152\" y=\"158\" text-anchor=\"middle\" fill=\"#166534\" font-size=\"11\">Bu 4 özellikten 2'si varsa diğer 2'si de vardır!</text>\n\n    <rect x=\"335\" y=\"0\" width=\"305\" height=\"164\" rx=\"12\" fill=\"#E0F2FE\" stroke=\"#0284C7\" stroke-width=\"2\"/>\n    <text x=\"487\" y=\"25\" text-anchor=\"middle\" fill=\"#075985\" font-size=\"14\" font-weight=\"700\">2. Dik Üçgende Muhteşem Üçlü</text>\n    <polygon points=\"380,45 380,120 580,120\" fill=\"#FFFFFF\" stroke=\"#0284C7\" stroke-width=\"2.5\"/>\n    <rect x=\"380\" y=\"108\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"#0284C7\" stroke-width=\"1.5\"/>\n    <line x1=\"380\" y1=\"120\" x2=\"480\" y2=\"82.5\" stroke=\"#DC2626\" stroke-width=\"2.5\"/>\n    <text x=\"487\" y=\"144\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\" font-weight=\"700\">Hipotenüse ait kenarortay uzunluğu,</text>\n    <text x=\"487\" y=\"158\" text-anchor=\"middle\" fill=\"#075985\" font-size=\"11\" font-weight=\"700\">hipotenüsün yarısına eşittir: |AD| = |BD| = |DC|</text>\n  </g>\n</svg>"
+    },
+    {
+      "baslik": "Çok Üçgenli Sistemler ve Çevre Problemleri",
+      "metin": [
+        "Ortak bir kenara sahip iki üçgenin birleşmesiyle oluşan dörtgenlerde ortak kenarın (x) alabileceği değer aralığı bulunurken her iki üçgende de üçgen eşitsizliği ayrı ayrı yazılır. Birinci üçgenden {us:a|1} < x < {us:b|1} ve ikinci üçgenden {us:a|2} < x < {us:b|2} eşitsizlikleri elde edildiğinde, her iki eşitsizliği ortak sağlayan kesişim kümesi alınır: Alt sınırların en büyüğü ile üst sınırların en küçüğü seçilir. Bitişik iki veya üç üçgenden oluşan bir şeklin iç açıları verildiğinde 'en uzun kenar' veya 'en kısa kenar' sorulursa, önce tüm üçgenlerdeki verilmeyen açılar bulunur, ardından her üçgenin kendi içindeki en büyük kenarı ok yönüyle işaretlenir ve okların gösterdiği nihai kenar en uzun kenar olarak belirlenir.",
+        "Bir ABC üçgeninin iç bölgesinde alınan herhangi bir P noktası B ve C köşeleriyle birleştirildiğinde oluşan PBC üçgeninde daima {uzunluk:BC} < {uzunluk:PB} + {uzunluk:PC} < {uzunluk:AB} + {uzunluk:AC} eşitsizliği geçerlidir; ayrıca içteki PBC üçgeninin BPC açısı daima dıştaki BAC açısından büyüktür (m(BPC) > m(BAC)). P noktası üç köşeyle de birleştirilirse {uzunluk:PA} + {uzunluk:PB} + {uzunluk:PC} toplamı üçgenin yarı çevresi (u) ile tam çevresi (2u) arasında değer alır: u < {uzunluk:PA} + {uzunluk:PB} + {uzunluk:PC} < 2u."
+      ],
+      "kutular": [
+        {
+          "tur": "hatirla",
+          "baslik": "Ok Yöntemi ile En Uzun Kenarı Bulma",
+          "metin": "Bitişik üçgenlerde her üçgenin en büyük açısının karşısındaki kenara bir ok çizilir; okların takip edilerek ulaştığı ve kendisinden dışarıya ok çıkmayan kenar şeklin en uzun kenarıdır."
+        }
+      ],
+      "tablo": {
+        "basliklar": [
+          "Problem Tipi",
+          "Uygulanacak Bağıntı / Yöntem",
+          "Dikkat Edilecek Nokta"
+        ],
+        "satirlar": [
+          [
+            "Ortak Kenarlı İki Üçgen",
+            "İki üçgende ayrı eşitsizlik + Kesişim kümesi",
+            "Alt sınırların büyüğü, üst sınırların küçüğü alınır."
+          ],
+          [
+            "En Uzun / En Kısa Kenar",
+            "Her üçgende açı sıralaması ve Ok Yöntemi",
+            "Büyük açının gördüğü kenar ortak ise diğer üçgene geçilir."
+          ],
+          [
+            "Üçgen İçinde P Noktası",
+            "a < {uzunluk:PB} + {uzunluk:PC} < b + c",
+            "PBC açısı daima A açısından büyüktür, buna göre kareler kontrol edilir."
+          ],
+          [
+            "Köşelere Uzaklık Toplamı",
+            "u < {uzunluk:PA} + {uzunluk:PB} + {uzunluk:PC} < 2u",
+            "u = Çevre / 2 (yarı çevre) değeridir."
+          ]
+        ]
+      },
+      "liste": [
+        "Kenar uzunlukları tam sayı demiyorsa en büyük/en küçük çevre bulunurken kenarlara tam sayı değeri verilmez; eşitsizlik oluşturulup uç değer seçilir.",
+        "Bir dörtgende köşegenlerin uzunlukları toplamı daima dörtgenin yarı çevresi ile tam çevresi arasındadır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Poppins, sans-serif\">\n  <rect width=\"700\" height=\"260\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/>\n  <rect x=\"20\" y=\"18\" width=\"660\" height=\"38\" rx=\"8\" fill=\"#991B1B\"/>\n  <text x=\"350\" y=\"43\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-size=\"16\" font-weight=\"700\">ORTAK KENARLI ÜÇGENLER VE ÇEVRE ARALIĞI PROBLEMLERİ</text>\n  <g transform=\"translate(28, 72)\">\n    <rect x=\"0\" y=\"0\" width=\"305\" height=\"164\" rx=\"12\" fill=\"#FEE2E2\" stroke=\"#DC2626\" stroke-width=\"2\"/>\n    <text x=\"152\" y=\"25\" text-anchor=\"middle\" fill=\"#991B1B\" font-size=\"14\" font-weight=\"700\">1. Ortak Kenar Kesişim Aralığı</text>\n    <text x=\"152\" y=\"52\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"12\">Ortak kenar x için iki üçgende de</text>\n    <text x=\"152\" y=\"70\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"12\">üçgen eşitsizliği ayrı ayrı yazılır:</text>\n    <rect x=\"18\" y=\"82\" width=\"269\" height=\"66\" rx=\"6\" fill=\"#FFFFFF\"/>\n    <text x=\"152\" y=\"102\" text-anchor=\"middle\" fill=\"#334155\" font-size=\"12\">1. Üçgen: a &lt; x &lt; b</text>\n    <text x=\"152\" y=\"120\" text-anchor=\"middle\" fill=\"#334155\" font-size=\"12\">2. Üçgen: c &lt; x &lt; d</text>\n    <text x=\"152\" y=\"140\" text-anchor=\"middle\" fill=\"#991B1B\" font-size=\"12\" font-weight=\"700\">Kesişim: Alt sınırların büyüğü, üstlerin küçüğü!</text>\n\n    <rect x=\"335\" y=\"0\" width=\"305\" height=\"164\" rx=\"12\" fill=\"#E0E7FF\" stroke=\"#4F46E5\" stroke-width=\"2\"/>\n    <text x=\"487\" y=\"25\" text-anchor=\"middle\" fill=\"#312E81\" font-size=\"14\" font-weight=\"700\">2. İç Nokta (P) Teoremi</text>\n    <text x=\"487\" y=\"52\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"12\">ABC üçgeninin iç bölgesinde alınan P</text>\n    <text x=\"487\" y=\"70\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"12\">noktasının B ve C köşelerine uzaklığı:</text>\n    <rect x=\"353\" y=\"82\" width=\"269\" height=\"66\" rx=\"6\" fill=\"#FFFFFF\"/>\n    <text x=\"487\" y=\"108\" text-anchor=\"middle\" fill=\"#312E81\" font-size=\"13\" font-weight=\"700\">|BC| &lt; |PB| + |PC| &lt; |AB| + |AC|</text>\n    <text x=\"487\" y=\"134\" text-anchor=\"middle\" fill=\"#334155\" font-size=\"11\">Ayrıca çevre yarısı (u) için:</text>\n    <text x=\"487\" y=\"146\" text-anchor=\"middle\" fill=\"#0F172A\" font-size=\"11\" font-weight=\"600\">u &lt; |PA| + |PB| + |PC| &lt; 2u</text>\n  </g>\n</svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir ABC üçgeninde {uzunluk:AB} = 7 cm, {uzunluk:AC} = 10 cm ve {uzunluk:BC} = x cm'dir. (a) Ek bir açı koşulu verilmediğinde, (b) m(A) < 90° olduğunda, (c) m(A) > 90° olduğunda x'in alabileceği kaç farklı tam sayı değeri vardır?",
+      "cevap": "(a) Genel üçgen eşitsizliğinden |10 - 7| < x < 10 + 7 yani 3 < x < 17 olur; x {4, 5, ..., 16} olmak üzere 13 tam sayı değeri alır. (b) m(A) < 90° ise {us:x|2} < {us:7|2} + {us:10|2} = 49 + 100 = 149 olur; 3 < x < {kok:149} (yaklaşık 12,2) aralığından x {4, 5, ..., 12} olmak üzere 9 tam sayı alır. (c) m(A) > 90° ise {us:x|2} > 149 olduğundan {kok:149} < x < 17 aralığından x {13, 14, 15, 16} olmak üzere 4 tam sayı değeri alır.",
+      "cozum": "(a) Genel üçgen eşitsizliğinden |10 - 7| < x < 10 + 7 yani 3 < x < 17 olur; x {4, 5, ..., 16} olmak üzere 13 tam sayı değeri alır. (b) m(A) < 90° ise {us:x|2} < {us:7|2} + {us:10|2} = 49 + 100 = 149 olur; 3 < x < {kok:149} (yaklaşık 12,2) aralığından x {4, 5, ..., 12} olmak üzere 9 tam sayı alır. (c) m(A) > 90° ise {us:x|2} > 149 olduğundan {kok:149} < x < 17 aralığından x {13, 14, 15, 16} olmak üzere 4 tam sayı değeri alır.",
+      "ipucu": "Üçgen eşitsizliği ile Pisagor kareler eşitsizliğini ({us:7|2} + {us:10|2} = 149) birleştiriniz."
+    },
+    {
+      "soru": "ABC ve BDC, [BC] kenarı ortak olan iki üçgendir. {uzunluk:AB} = 5 cm, {uzunluk:AC} = 9 cm, {uzunluk:BD} = 4 cm ve {uzunluk:DC} = 11 cm olduğuna göre ortak kenar {uzunluk:BC} = x'in alabileceği tam sayı değerlerinin toplamını bulunuz.",
+      "cevap": "ABC üçgeninde üçgen eşitsizliğinden: |9 - 5| < x < 9 + 5 yani 4 < x < 14 bulunur. BDC üçgeninde üçgen eşitsizliğinden: |11 - 4| < x < 11 + 4 yani 7 < x < 15 bulunur. Her iki eşitsizliğin kesişimi alındığında (alt sınırların büyüğü 7, üst sınırların küçüğü 14): 7 < x < 14 olur. Bu aralıktaki tam sayılar 8, 9, 10, 11, 12 ve 13'tür; toplamları = 8 + 9 + 10 + 11 + 12 + 13 = 63 bulunur.",
+      "cozum": "ABC üçgeninde üçgen eşitsizliğinden: |9 - 5| < x < 9 + 5 yani 4 < x < 14 bulunur. BDC üçgeninde üçgen eşitsizliğinden: |11 - 4| < x < 11 + 4 yani 7 < x < 15 bulunur. Her iki eşitsizliğin kesişimi alındığında (alt sınırların büyüğü 7, üst sınırların küçüğü 14): 7 < x < 14 olur. Bu aralıktaki tam sayılar 8, 9, 10, 11, 12 ve 13'tür; toplamları = 8 + 9 + 10 + 11 + 12 + 13 = 63 bulunur.",
+      "ipucu": "İki üçgen için ayrı ayrı üçgen eşitsizliği yazıp ortak kesişim aralığını alınız."
+    },
+    {
+      "soru": "Bir ABC üçgeninin iç açıları m(A) = 75° ve m(B) = 45° olarak veriliyor. Bu üçgenin kenar uzunluklarını (a, b, c), yüksekliklerini ({us:h|a}, {us:h|b}, {us:h|c}) ve A köşesinden çizilen yardımcı elemanlarını ({us:h|a}, {us:n|A}, {us:V|a}) küçükten büyüğe doğru sıralayınız.",
+      "cevap": "Üçgenin iç açıları toplamı 180° olduğundan m(C) = 180° - (75° + 45°) = 60° bulunur. Açılar arasındaki sıralama m(B) < m(C) < m(A) (45° < 60° < 75°) olduğundan kenarlar: b < c < a şeklinde sıralanır. Yükseklikler kenarlarla ters orantılı olduğu için: {us:h|a} < {us:h|c} < {us:h|b} olur. Üçgen çeşitkenar olduğundan A köşesinden çizilen yardımcı elemanlar: {us:h|a} < {us:n|A} < {us:V|a} şeklinde sıralanır.",
+      "cozum": "Üçgenin iç açıları toplamı 180° olduğundan m(C) = 180° - (75° + 45°) = 60° bulunur. Açılar arasındaki sıralama m(B) < m(C) < m(A) (45° < 60° < 75°) olduğundan kenarlar: b < c < a şeklinde sıralanır. Yükseklikler kenarlarla ters orantılı olduğu için: {us:h|a} < {us:h|c} < {us:h|b} olur. Üçgen çeşitkenar olduğundan A köşesinden çizilen yardımcı elemanlar: {us:h|a} < {us:n|A} < {us:V|a} şeklinde sıralanır.",
+      "ipucu": "Önce C açısını bulunuz; büyük açı karşısında büyük kenar, büyük kenara ait küçük yükseklik olduğunu hatırlayınız."
+    },
+    {
+      "soru": "Bir ABC üçgeninde {uzunluk:AB} = 8 birim ve {uzunluk:AC} = 14 birimdir. A köşesinden [BC] kenarına çizilen kenarortay [AD] olduğuna göre {uzunluk:AD} = {us:V|a} uzunluğunun alabileceği kaç farklı tam sayı değeri vardır?",
+      "cevap": "Kenarortay sorularında D orta noktasından [AB] kenarına paralel bir [DE] orta tabanı çizilir. [DE] orta taban olduğundan [AC] kenarını E noktasında 7 birim ve 7 birim olarak ikiye böler ({uzunluk:AE} = 7) ve uzunluğu {uzunluk:AB}'nin yarısına eşit olur ({uzunluk:DE} = {kesir:8|2} = 4 birim). Oluşan ADE üçgeninde kenarlar 4, 7 ve {us:V|a}'dır; üçgen eşitsizliğinden |7 - 4| < {us:V|a} < 7 + 4 yani 3 < {us:V|a} < 11 bulunur. Buna göre {us:V|a} {4, 5, 6, 7, 8, 9, 10} olmak üzere 7 farklı tam sayı değeri alır.",
+      "cozum": "Kenarortay sorularında D orta noktasından [AB] kenarına paralel bir [DE] orta tabanı çizilir. [DE] orta taban olduğundan [AC] kenarını E noktasında 7 birim ve 7 birim olarak ikiye böler ({uzunluk:AE} = 7) ve uzunluğu {uzunluk:AB}'nin yarısına eşit olur ({uzunluk:DE} = {kesir:8|2} = 4 birim). Oluşan ADE üçgeninde kenarlar 4, 7 ve {us:V|a}'dır; üçgen eşitsizliğinden |7 - 4| < {us:V|a} < 7 + 4 yani 3 < {us:V|a} < 11 bulunur. Buna göre {us:V|a} {4, 5, 6, 7, 8, 9, 10} olmak üzere 7 farklı tam sayı değeri alır.",
+      "ipucu": "Orta taban çizerek kenarları {kesir:b|2}, {kesir:c|2} ve {us:V|a} olan küçük bir üçgen oluşturunuz."
+    },
+    {
+      "soru": "Çevresi 24 cm olan bir ABC üçgeninin iç bölgesinde bir P noktası alınıyor. P noktasının üçgenin köşelerine olan uzaklıkları toplamı ({uzunluk:PA} + {uzunluk:PB} + {uzunluk:PC}) kaç farklı tam sayı değeri alabilir?",
+      "cevap": "Bir üçgenin iç bölgesinde alınan P noktasının köşelere olan uzaklıkları toplamı, üçgenin yarı çevresi (u = {kesir:Çevre|2}) ile tam çevresi (2u = Çevre) arasındadır. Üçgenin çevresi 24 cm olduğundan yarı çevresi u = {kesir:24|2} = 12 cm'dir. Buna göre 12 < {uzunluk:PA} + {uzunluk:PB} + {uzunluk:PC} < 24 eşitsizliği elde edilir. Bu aralıktaki tam sayılar 13'ten 23'e kadar olan 11 farklı tam sayıdır.",
+      "cozum": "Bir üçgenin iç bölgesinde alınan P noktasının köşelere olan uzaklıkları toplamı, üçgenin yarı çevresi (u = {kesir:Çevre|2}) ile tam çevresi (2u = Çevre) arasındadır. Üçgenin çevresi 24 cm olduğundan yarı çevresi u = {kesir:24|2} = 12 cm'dir. Buna göre 12 < {uzunluk:PA} + {uzunluk:PB} + {uzunluk:PC} < 24 eşitsizliği elde edilir. Bu aralıktaki tam sayılar 13'ten 23'e kadar olan 11 farklı tam sayıdır.",
+      "ipucu": "İç noktanın köşelere uzaklıkları toplamının yarı çevre ile tam çevre arasında olduğunu (u < toplam < 2u) kullanınız."
+    },
+    {
+      "soru": "Bir ABC üçgeninde kenar uzunlukları a, b ve c birim olup a < b < c sıralaması vardır. Buna göre |a - b| + |b - c| - |a + b - c| ifadesinin eşiti nedir?",
+      "cevap": "Mutlak değer içindeki ifadelerin işaretlerini belirleyelim: 1. a < b olduğu için a - b < 0 (negatif) olur ve mutlak değerden -(a - b) = -a + b olarak çıkar. 2. b < c olduğu için b - c < 0 (negatif) olur ve -(b - c) = -b + c olarak çıkar. 3. Üçgen eşitsizliği gereği iki kenarın toplamı üçüncü kenardan büyüktür (a + b > c), dolayısıyla a + b - c > 0 (pozitif) olur ve aynen çıkar. İfadeyi düzenlersek: (-a + b) + (-b + c) - (a + b - c) = -a + b - b + c - a - b + c = -2a - b + 2c bulunur.",
+      "cozum": "Mutlak değer içindeki ifadelerin işaretlerini belirleyelim: 1. a < b olduğu için a - b < 0 (negatif) olur ve mutlak değerden -(a - b) = -a + b olarak çıkar. 2. b < c olduğu için b - c < 0 (negatif) olur ve -(b - c) = -b + c olarak çıkar. 3. Üçgen eşitsizliği gereği iki kenarın toplamı üçüncü kenardan büyüktür (a + b > c), dolayısıyla a + b - c > 0 (pozitif) olur ve aynen çıkar. İfadeyi düzenlersek: (-a + b) + (-b + c) - (a + b - c) = -a + b - b + c - a - b + c = -2a - b + 2c bulunur.",
+      "ipucu": "a < b < c sıralamasını ve üçgen eşitsizliğinden gelen a + b > c kuralını kullanarak mutlak değer içlerinin işaretini belirleyiniz."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir ABC üçgeninde {uzunluk:AB} = 8 cm, {uzunluk:AC} = 15 cm ve m(BAC) > 90° olduğuna göre {uzunluk:BC} = x kenarının alabileceği tam sayı değerlerinin toplamı kaçtır?",
+      "secenekler": [
+        "85",
+        "100",
+        "105",
+        "115",
+        "120"
+      ],
+      "dogru": 1,
+      "aciklama": "Genel üçgen eşitsizliği 7 < x < 23'tür. m(A) > 90° olduğu için {us:x|2} > {us:8|2} + {us:15|2} yani {us:x|2} > {us:17|2} (8-15-17 özel üçgeni) ve x > 17 olur. Kesişim aralığı 17 < x < 23'tür; tam sayılar 18 + 19 + 20 + 21 + 22 = 100 bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Geniş açılı bir üçgende yardımcı elemanların kesişim noktalarıyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+      "secenekler": [
+        "Üçgenin ağırlık merkezi (kenarortayların kesişimi) üçgenin dış bölgesindedir.",
+        "Üçgenin iç teğet çemberinin merkezi (açıortayların kesişimi) en uzun kenar üzerindedir.",
+        "Üçgenin diklik merkezi (yüksekliklerin uzantılarının kesişimi) üçgenin dış bölgesindedir.",
+        "Üçgenin çevrel çemberinin merkezi geniş açılı köşenin tam üzerindedir.",
+        "Geniş açılı köşeden çizilen yükseklik, aynı köşeden çizilen kenarortaydan daha uzundur."
+      ],
+      "dogru": 2,
+      "aciklama": "Geniş açılı üçgende dar açılı köşelerden çizilen yükseklikler üçgenin dışına düştüğü için diklik merkezi (ve çevrel çemberin merkezi) üçgenin dış bölgesindedir; ağırlık merkezi ve iç teğet çember merkezi ise daima içtedir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir ABC üçgeninde iç açıların ölçüleri arasında m(A) < m(B) < m(C) sıralaması bulunmaktadır. Buna göre bu üçgenin yardımcı elemanlarıyla ilgili aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "{us:h|a} < {us:h|b} < {us:h|c}",
+        "{us:V|c} < {us:V|b} < {us:V|a}",
+        "{us:n|A} < {us:n|B} < {us:n|C}",
+        "{us:V|b} < {us:n|B} < {us:h|b}",
+        "{us:h|a} = {us:n|A} = {us:V|a}"
+      ],
+      "dogru": 1,
+      "aciklama": "m(A) < m(B) < m(C) ise kenarlar a < b < c olur. Kenarortay uzunlukları kenarlarla ters orantılı olduğu için en büyük kenar c'ye ait kenarortay en küçüktür: {us:V|c} < {us:V|b} < {us:V|a}."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kenar uzunlukları 5 cm, 12 cm ve x cm olan bir ABC üçgeninin en büyük iç açısı 90 dereceden küçük (yani üçgen dar açılı bir üçgen) olduğuna göre x'in değer aralığı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "7 < x < 17",
+        "7 < x < 13",
+        "13 < x < 17",
+        "{kok:119} < x < 13",
+        "{kok:119} < x < 17"
+      ],
+      "dogru": 3,
+      "aciklama": "Üçgenin tüm açıları dar açı (< 90°) olduğundan hem x'i gören açı dar açıdır ({us:x|2} < {us:5|2} + {us:12|2} = 169 yani x < 13) hem de 12 cm'lik kenarı gören açı dar açıdır ({us:12|2} < {us:5|2} + {us:x|2} yani 144 - 25 < {us:x|2} ve x > {kok:119}). Dolayısıyla {kok:119} < x < 13 olur."
+    },
+    {
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "dogru": false,
+          "aciklama": "4 + 6 = 10 cm değeri üçüncü kenar olan 11 cm'den büyük olmadığı için üçgen eşitsizliğini sağlamaz ve üçgen oluşturamaz.",
+          "ifade": "Kenar uzunlukları 4 cm, 6 cm ve 11 cm olan üç doğru parçası uç uca eklenerek bir üçgen oluşturulabilir."
+        },
+        {
+          "dogru": true,
+          "aciklama": "Açıortay üzerindeki her nokta açının kollarına eşit uzaklıkta olduğundan kesişim noktaları kenarlara eşit uzaklıktadır.",
+          "ifade": "Bir üçgende iç açıortayların kesişim noktası, üçgenin üç kenarına da eşit uzaklıkta olup iç teğet çemberin merkezidir."
+        },
+        {
+          "dogru": true,
+          "aciklama": "Dik kenarlar birbirinin yüksekliği olduğu için dik üçgende üç yükseklik dik köşede kesişir.",
+          "ifade": "Dik açılı bir üçgende yüksekliklerin kesişim noktası (diklik merkezi) 90 derecelik dik açının bulunduğu köşedir."
+        },
+        {
+          "dogru": false,
+          "aciklama": "Bir noktadan bir doğruya çizilen en kısa doğru parçası dikme (yükseklik) olduğundan her zaman {us:h|a} < {us:n|A} < {us:V|a} olur.",
+          "ifade": "Çeşitkenar bir üçgende bir köşeden çizilen kenarortay, aynı köşeden çizilen yükseklikten daha kısadır."
+        },
+        {
+          "dogru": true,
+          "aciklama": "a < b + c eşitsizliğinin her iki tarafına a eklendiğinde 2a < a + b + c = Çevre yani a < Çevre / 2 elde edilir.",
+          "ifade": "Bir üçgende herhangi bir kenarın uzunluğu daima üçgenin çevresinin yarısından küçüktür."
+        }
+      ],
+      "soru": "Aşağıdaki ifadeleri Doğru (D) veya Yanlış (Y) olarak değerlendiriniz."
+    },
+    {
+      "tur": "eslestir",
+      "ciftler": [
+        [
+          "Diklik Merkezi",
+          "Üçgenin üç yüksekliğinin (veya uzantılarının) kesiştiği nokta"
+        ],
+        [
+          "Ağırlık Merkezi (G)",
+          "Kenarortayların birbirini 1:2 oranında böldüğü kesişim noktası"
+        ],
+        [
+          "İç Teğet Çemberin Merkezi",
+          "Üçgenin iç açıortaylarının kesiştiği nokta"
+        ],
+        [
+          "Çevrel Çemberin Merkezi",
+          "Üçgenin kenar orta dikmelerinin kesiştiği nokta"
+        ],
+        [
+          "Muhteşem Üçlü",
+          "Dik üçgende hipotenüse ait kenarortayın hipotenüsün yarısı olması"
+        ]
+      ],
+      "soru": "Aşağıdaki kavram ve açıklamaları doğru şekilde eşleştiriniz."
+    },
+    {
+      "tur": "bosluk",
+      "cumleler": [
+        {
+          "metin": "Bir üçgende ölçüsü en büyük olan iç açının karşısında uzunluğu en ___ olan kenar bulunur.",
+          "cevap": "büyük"
+        },
+        {
+          "metin": "Üçgenin bir köşesini karşı kenarın orta noktasına birleştiren doğru parçasına ___ adı verilir.",
+          "cevap": "kenarortay"
+        },
+        {
+          "metin": "Bir ABC üçgeninde A açısı geniş açı (m(A) > 90°) ise kenarlar arasında {us:a|2} ___ {us:b|2} + {us:c|2} bağıntısı vardır.",
+          "cevap": "büyüktür"
+        },
+        {
+          "metin": "İkizkenar bir üçgende tepe açısından tabana indirilen kenarortay aynı zamanda yükseklik ve ___ doğrusudur.",
+          "cevap": "açıortay"
+        },
+        {
+          "metin": "Kenar uzunlukları 5 cm ve 9 cm olan bir üçgenin üçüncü kenarının alabileceği en büyük tam sayı değeri ___ cm'dir.",
+          "cevap": "13"
+        }
+      ],
+      "kelimeler": [
+        "büyük",
+        "kenarortay",
+        "büyüktür",
+        "açıortay",
+        "13"
+      ],
+      "fazla": [
+        "küçük",
+        "14"
+      ],
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız."
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir ABC üçgeninde {uzunluk:AB} = 9 cm ve {uzunluk:AC} = 12 cm olarak verilmiştir. [BC] = x kenarının alabileceği tam sayı değerlerini; (1) ek açı koşulu verilmediği durum, (2) m(A) < 90° olduğu durum, (3) m(A) > 90° ve ABC çeşitkenar üçgen olduğu durum için ayrı ayrı bularak karşılaştırınız.",
+      "cevap": "1. Ek koşul yokken: Üçgen eşitsizliğinden |12 - 9| < x < 12 + 9 yani 3 < x < 21 olur (4'ten 20'ye kadar 17 tam sayı). 2. m(A) < 90° (dar açı) iken: {us:x|2} < {us:9|2} + {us:12|2} = 81 + 144 = 225 = {us:15|2} olduğundan x < 15 olur; üçgen eşitsizliğiyle birleştirildiğinde 3 < x < 15 aralığındaki {4, 5, ..., 14} olmak üzere 11 tam sayı değerini alır. 3. m(A) > 90° (geniş açı) ve çeşitkenar iken: {us:x|2} > 225 yani x > 15 olur; üst sınır 21 olduğundan 15 < x < 21 aralığındaki {16, 17, 18, 19, 20} tam sayılarını alır (bu aralıkta 9 veya 12 olmadığı için çeşitkenarlık bozulmaz, toplam 5 tam sayı değeri vardır).",
+      "ipuclari": [
+        "İlk adımda |12 - 9| < x < 12 + 9 ile temel üçgen eşitsizliği aralığını (3 < x < 21) yazınız.",
+        "İkinci adımda 9-12-15 özel dik üçgeninden yararlanarak dar açı için üst sınırı 15 olarak belirleyiniz.",
+        "Üçüncü adımda geniş açı için alt sınırı 15 olarak alıp 15 < x < 21 aralığındaki tam sayıları kontrol ediniz."
+      ]
+    }
+  ]
+}

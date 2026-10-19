@@ -1,0 +1,426 @@
+{
+  "sinif": 10,
+  "ders": "kimya",
+  "ders_kisa": "Kimya",
+  "kod": "10-kimya",
+  "hafta": 14,
+  "tarih": "21-25 Aralık 2026",
+  "yayin_tarihi": "2026-12-21",
+  "unite": "1. Tema: Etkileşim",
+  "konu": "Gaz Yasaları: Grafiksel ve Matematiksel Modeller (Boyle, Charles, Gay-Lussac, Avogadro), İdeal Gaz Yasası ve Kinetik Moleküler Teori",
+  "ciktilar": [
+    "KİM.10.1.9. Gazların özellikleri arasındaki ilişkileri bilimsel sorgulayabilme",
+    "Grafiksel ve matematiksel modelleri kullanarak gazlara ilişkin değişkenler (P, V, T, n) arasındaki ilişkileri Kinetik Moleküler Teori ile açıklar."
+  ],
+  "ozet": [
+    "Gazların davranışlarını belirleyen dört temel değişken {koyu:basınç (P, atm)}, {koyu:hacim (V, L)}, {koyu:mutlak sıcaklık (T, K = °C + 273)} ve {koyu:madde miktarı (n, mol)} olup tüm gaz yasası hesaplamalarında sıcaklık mutlaka {koyu:Kelvin (K)} cinsinden alınır.",
+    "Sabit sıcaklık ve mol sayısında basınç ile hacim ters orantılıdır ({koyu:Boyle Yasası: P1 · V1 = P2 · V2}); sabit basınç ve mol sayısında hacim ile mutlak sıcaklık doğru orantılıdır ({koyu:Charles Yasası: {kesir:V1|T1} = {kesir:V2|T2}}).",
+    "Sabit hacim ve mol sayısında basınç ile mutlak sıcaklık doğru orantılıdır ({koyu:Gay-Lussac Yasası: {kesir:P1|T1} = {kesir:P2|T2}}); sabit basınç ve sıcaklıkta hacim ile mol sayısı doğru orantılıdır ({koyu:Avogadro Yasası: {kesir:V1|n1} = {kesir:V2|n2}}).",
+    "Dört değişkeni tek denklemde birleştiren {koyu:Genel Gaz Denklemi {kesir:P1 · V1|n1 · T1} = {kesir:P2 · V2|n2 · T2}} ve {koyu:İdeal Gaz Denklemi P · V = n · R · T} ile tüm gaz problemleri modellenir.",
+    "{koyu:Kinetik Moleküler Teori}'ye göre gazların ortalama kinetik enerjisi yalnız {koyu:mutlak sıcaklığa (T)} bağlıdır; aynı sıcaklıktaki farklı gazların ortalama kinetik enerjileri eşittir, mol kütlesi (M_A) küçük olan gaz ise daha hızlı yayılır."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Boyle Yasası (Basınç-Hacim) ve Grafiksel Modellemesi",
+      "metin": [
+        "Madde miktarı ({koyu:n}) ve sıcaklığı ({koyu:T}) sabit tutulan belirli miktardaki bir gazın hacmi küçültüldüğünde, birim hacimdeki tanecik sayısı ve birim zamanda kap çeperlerine yapılan çarpma sayısı artar; böylece gazın basıncı yükselir. {koyu:Robert Boyle} tarafından ortaya konulan bu yasaya göre sabit sıcaklıkta bir gazın basıncı ile hacmi {koyu:ters orantılıdır}: {koyu:P1 · V1 = P2 · V2 = sabit}.",
+        "Basınç (P) ile hacim (V) grafiği çizildiğinde azalan bir eğri ({koyu:izoterm eğrisi / hiperbol}) elde edilir. Buna karşılık basınç (P) ile hacmin çarpmaya göre tersi olan {koyu:{kesir:1|V}} grafiği çizildiğinde orijinden uzanan doğrusal artan bir grafik, {koyu:P · V} çarpımının P veya V'ye göre grafiği çizildiğinde ise yatay (sabit) bir doğru elde edilir."
+      ],
+      "kutular": [
+        {
+          "tip": "kural",
+          "baslik": "Boyle Yasası ve Kinetik Teori Yorumu",
+          "metin": "Sabit sıcaklıkta (T sabit) piston aşağı itilerek hacim yarıya (V/2) indirilirse: Taneciklerin ortalama hızı ve ortalama kinetik enerjisi değişmez; ancak birim hacimdeki tanecik sayısı 2 katına çıktığı için çarpma sayısı ve basınç 2 katına (2P) çıkar."
+        }
+      ],
+      "liste": [
+        "{koyu:Sabit tutulan değişkenler (Kontrol değişkenleri):} Mol sayısı (n) ve mutlak sıcaklık (T).",
+        "{koyu:Bağımsız değişken:} Hacim (V) | {koyu:Bağımlı değişken:} Basınç (P).",
+        "Günlük yaşam örneği: Nefes alırken diyafram kasıldığında akciğer hacminin artması ve iç basıncın düşmesiyle havanın akciğerlere dolması."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 900 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\"><rect width=\"900\" height=\"420\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/><rect x=\"16\" y=\"14\" width=\"868\" height=\"42\" rx=\"10\" fill=\"#1E293B\"/><text x=\"450\" y=\"41\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" fill=\"#FFFFFF\">Boyle ve Charles Yasaları: Grafiksel ve Matematiksel Modeller</text><rect x=\"60\" y=\"80\" width=\"360\" height=\"130\" rx=\"12\" fill=\"#EFF6FF\" stroke=\"#1D4ED8\" stroke-width=\"2\"/><rect x=\"60\" y=\"80\" width=\"360\" height=\"32\" rx=\"10\" fill=\"#1D4ED8\"/><text x=\"240\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Boyle Yasası (P - V İlişkisi)</text><text x=\"240\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Sabit: Mol (n) ve Sıcaklık (T)</text><text x=\"240\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Basınç ile hacim TERS orantılıdır</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Model: P1 . V1 = P2 . V2 = sabit</text><text x=\"240\" y=\"194\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">P-V grafiği hiperbol, P-(1/V) doğrudur</text><rect x=\"480\" y=\"80\" width=\"360\" height=\"130\" rx=\"12\" fill=\"#ECFDF5\" stroke=\"#047857\" stroke-width=\"2\"/><rect x=\"480\" y=\"80\" width=\"360\" height=\"32\" rx=\"10\" fill=\"#047857\"/><text x=\"660\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Charles Yasası (V - T İlişkisi)</text><text x=\"660\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Sabit: Mol (n) ve Basınç (P)</text><text x=\"660\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Hacim ile mutlak sıcaklık DOĞRU orantılıdır</text><text x=\"660\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Model: V1 / T1 = V2 / T2 = sabit</text><text x=\"660\" y=\"194\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Mutlak sıfır noktası: 0 K = -273,15 °C</text><rect x=\"24\" y=\"374\" width=\"852\" height=\"32\" rx=\"8\" fill=\"#E2E8F0\"/><text x=\"450\" y=\"395\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"#0F172A\">Önemli: Tüm gaz denklemlerinde sıcaklık mutlaka Kelvin (T = t + 273) birimine çevrilir!</text></svg>"
+    },
+    {
+      "baslik": "Charles Yasası (Hacim-Sıcaklık) ve Mutlak Sıfır Noktası",
+      "metin": [
+        "Sabit basınçlı (serbest sürtünmesiz pistonlu veya elastik balonlu) bir kapta bulunan belirli miktardaki ({koyu:n sabit}) gaz ısıtıldığında taneciklerin hızı artar; iç basıncı dış basınca eşitlemek için kap genişler ve hacim artar. {koyu:Jacques Charles} tarafından keşfedilen bu yasaya göre sabit basınçta gazın hacmi {koyu:mutlak sıcaklığı (T, Kelvin)} ile {koyu:doğru orantılıdır}: {koyu:{kesir:V1|T1} = {kesir:V2|T2} = sabit}.",
+        "Hacim-Sıcaklık grafiği {koyu:Kelvin (K)} ölçeğine göre çizildiğinde {koyu:0 K} noktasından (orijinden) başlayan bir doğru; {koyu:Celsius (°C)} ölçeğine göre çizildiğinde ise uzantısı {koyu:-273,15 °C (mutlak sıfır)} noktasını kesen bir doğru elde edilir. Gazların kuramsal olarak hacimlerinin sıfırlanacağı bu en düşük sıcaklığa {koyu:mutlak sıfır noktası (0 K = -273 °C)} denir."
+      ],
+      "kutular": [
+        {
+          "tip": "onemli",
+          "baslik": "Sıcaklık Birimi Tuzağına Dikkat!",
+          "metin": "Gaz yasalarında sıcaklık iki katına çıktığında hacmin iki katına çıkması yalnız KELVİN (T = t + 273) ölçeğinde geçerlidir! Örneğin 27 °C'deki (300 K) bir gazın hacmini 2 katına çıkarmak için sıcaklığı 54 °C'ye değil, 600 K'e (327 °C'ye) çıkarmak gerekir!"
+        }
+      ],
+      "tablo": {
+        "baslik": "Dört Temel Gaz Yasasının Karşılaştırmalı Özeti",
+        "sutunlar": [
+          "Gaz Yasası",
+          "Sabit Değişkenler",
+          "Orantı Türü",
+          "Matematiksel Model"
+        ],
+        "satirlar": [
+          [
+            "Boyle Yasası (P - V)",
+            "n ve T sabit",
+            "Ters Orantı",
+            "P1 · V1 = P2 · V2"
+          ],
+          [
+            "Charles Yasası (V - T)",
+            "n ve P sabit",
+            "Doğru Orantı",
+            "V1 / T1 = V2 / T2"
+          ],
+          [
+            "Gay-Lussac Yasası (P - T)",
+            "n ve V sabit",
+            "Doğru Orantı",
+            "P1 / T1 = P2 / T2"
+          ],
+          [
+            "Avogadro Yasası (V - n)",
+            "P ve T sabit",
+            "Doğru Orantı",
+            "V1 / n1 = V2 / n2"
+          ]
+        ],
+        "basliklar": [
+          "Gaz Yasası",
+          "Sabit Değişkenler",
+          "Orantı Türü",
+          "Matematiksel Model"
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 900 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\"><rect width=\"900\" height=\"420\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/><rect x=\"16\" y=\"14\" width=\"868\" height=\"42\" rx=\"10\" fill=\"#1E293B\"/><text x=\"450\" y=\"41\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" fill=\"#FFFFFF\">Gay-Lussac ve Avogadro Yasaları</text><rect x=\"60\" y=\"80\" width=\"360\" height=\"130\" rx=\"12\" fill=\"#FFFBEB\" stroke=\"#B45309\" stroke-width=\"2\"/><rect x=\"60\" y=\"80\" width=\"360\" height=\"32\" rx=\"10\" fill=\"#B45309\"/><text x=\"240\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Gay-Lussac Yasası (P - T İlişkisi)</text><text x=\"240\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Sabit: Mol (n) ve Hacim (V - Çelik kap)</text><text x=\"240\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Basınç ile mutlak sıcaklık DOĞRU orantılıdır</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Model: P1 / T1 = P2 / T2 = sabit</text><text x=\"240\" y=\"194\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Isıtılan sabit hacimli kapta basınç artar</text><rect x=\"480\" y=\"80\" width=\"360\" height=\"130\" rx=\"12\" fill=\"#F5F3FF\" stroke=\"#7C3AED\" stroke-width=\"2\"/><rect x=\"480\" y=\"80\" width=\"360\" height=\"32\" rx=\"10\" fill=\"#7C3AED\"/><text x=\"660\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Avogadro Yasası (V - n İlişkisi)</text><text x=\"660\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Sabit: Basınç (P) ve Sıcaklık (T)</text><text x=\"660\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Hacim ile mol sayısı DOĞRU orantılıdır</text><text x=\"660\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Model: V1 / n1 = V2 / n2 = sabit</text><text x=\"660\" y=\"194\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">NK&#x27;da (0 °C, 1 atm) 1 mol gaz = 22,4 L</text><rect x=\"24\" y=\"374\" width=\"852\" height=\"32\" rx=\"8\" fill=\"#E2E8F0\"/><text x=\"450\" y=\"395\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"#0F172A\">Oda koşullarında (25 °C, 1 atm) 1 mol ideal gaz 24,5 L hacim kaplar.</text></svg>"
+    },
+    {
+      "baslik": "Gay-Lussac Yasası (Basınç-Sıcaklık) ve Avogadro Yasası (Hacim-Mol)",
+      "metin": [
+        "{koyu:Gay-Lussac Yasası (P - T):} Hacmi ve madde miktarı sabit ({koyu:V ve n sabit} — çelik kap) olan bir gaz ısıtıldığında, taneciklerin ortalama kinetik enerjisi ve ortalama hızı artar; tanecikler çeperlere hem daha sık hem de daha şiddetli çarpar. Böylece gazın basıncı mutlak sıcaklıkla doğru orantılı olarak artar: {koyu:{kesir:P1|T1} = {kesir:P2|T2}}.",
+        "{koyu:Avogadro Yasası (V - n):} Basıncı ve sıcaklığı sabit ({koyu:P ve T sabit}) tutulan elastik bir kaba gaz eklendikçe hacim madde miktarı (mol sayısı) ile doğru orantılı olarak artar: {koyu:{kesir:V1|n1} = {kesir:V2|n2}}. Bu yasaya göre aynı sıcaklık ve basınç altında tüm ideal gazların eşit mol sayıları eşit hacim kaplar ({koyu:Normal Koşullarda [0 °C, 1 atm] 1 mol gaz = 22,4 L}; {koyu:Oda Koşullarında [25 °C, 1 atm] 1 mol gaz = 24,5 L})."
+      ],
+      "kutular": [
+        {
+          "tip": "kavram",
+          "baslik": "Molar Hacim Kavramı",
+          "metin": "Aynı şartlarda (P ve T aynı) gazın cinsine (H2, O2, He veya CO2 olmasına) bakılmaksızın 1 mol gazın kapladığı hacme 'molar hacim' denir ve molekül sayıları (Avogadro sayısı kadar) birbirine eşittir."
+        }
+      ],
+      "liste": [
+        "Gay-Lussac örneği: Deodorant kutularının ve LPG tüplerinin ateşe atıldığında artan iç basınç nedeniyle patlaması.",
+        "Avogadro örneği: Üflenen bir balonun içine giren hava mol sayısı arttıkça hacminin büyümesi.",
+        "Charles örneği: Sıcak hava balonlarının içindeki hava ısıtıldığında genleşerek yükselmesi."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 900 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\"><rect width=\"900\" height=\"420\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/><rect x=\"16\" y=\"14\" width=\"868\" height=\"42\" rx=\"10\" fill=\"#1E293B\"/><text x=\"450\" y=\"41\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" fill=\"#FFFFFF\">İdeal Gaz Denklemi ve Birleştirilmiş Gaz Denklemi</text><rect x=\"60\" y=\"80\" width=\"360\" height=\"130\" rx=\"12\" fill=\"#EFF6FF\" stroke=\"#1E3A8A\" stroke-width=\"2\"/><rect x=\"60\" y=\"80\" width=\"360\" height=\"32\" rx=\"10\" fill=\"#1E3A8A\"/><text x=\"240\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">İdeal Gaz Yasası</text><text x=\"240\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">P . V = n . R . T</text><text x=\"240\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">P: atm | V: Litre | n: mol | T: Kelvin</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">R = 0,082 veya 22,4 / 273 L.atm/(mol.K)</text><text x=\"240\" y=\"194\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Tek durumlu gaz hesaplamalarında kullanılır</text><rect x=\"480\" y=\"80\" width=\"360\" height=\"130\" rx=\"12\" fill=\"#ECFDF5\" stroke=\"#065F46\" stroke-width=\"2\"/><rect x=\"480\" y=\"80\" width=\"360\" height=\"32\" rx=\"10\" fill=\"#065F46\"/><text x=\"660\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Genel (Birleştirilmiş) Gaz Denklemi</text><text x=\"660\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">(P1 . V1) / (n1 . T1) = (P2 . V2) / (n2 . T2)</text><text x=\"660\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">İki durum karşılaştırılırken kullanılır</text><text x=\"660\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Sabit olan değişkenler denklemden silinir</text><text x=\"660\" y=\"194\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">ve ilgili özel gaz yasası elde edilir</text><rect x=\"24\" y=\"374\" width=\"852\" height=\"32\" rx=\"8\" fill=\"#E2E8F0\"/><text x=\"450\" y=\"395\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"#0F172A\">Gazlar yüksek sıcaklık ve düşük basınçta ideal davranışa en yakın haldedir.</text></svg>"
+    },
+    {
+      "baslik": "Birleştirilmiş Gaz Denklemi ve İdeal Gaz Yasası",
+      "metin": [
+        "Boyle, Charles, Gay-Lussac ve Avogadro yasaları tek bir matematiksel modelde birleştirildiğinde {koyu:İdeal Gaz Denklemi} elde edilir: {koyu:P · V = n · R · T}. Burada {koyu:R}, evrensel gaz sabiti olup değeri {koyu:0,082 (veya {kesir:22,4|273}) L · atm / (mol · K)} olarak alınır.",
+        "Bir gaz sisteminin başlangıç durumu ({koyu:1}) ile son durumu ({koyu:2}) karşılaştırılırken R sabiti eşitliğin her iki yanında ortak olduğundan {koyu:Birleştirilmiş (Genel) Gaz Denklemi} kullanılır: {koyu:{kesir:P1 · V1|n1 · T1} = {kesir:P2 · V2|n2 · T2}}. Soruda hangi değişken sabit tutulmuşsa formülden silinerek ilgili özel gaz yasası anında elde edilir!"
+      ],
+      "kutular": [
+        {
+          "tip": "ipucu",
+          "baslik": "Tek Formülle Tüm Yasaları Çıkarma Pratiği",
+          "metin": "(P1·V1)/(n1·T1) = (P2·V2)/(n2·T2) denkleminde: n ve T sabitse -> P1·V1 = P2·V2 (Boyle); n ve P sabitse -> V1/T1 = V2/T2 (Charles); n ve V sabitse -> P1/T1 = P2/T2 (Gay-Lussac) kalır!"
+        }
+      ],
+      "tablo": {
+        "baslik": "Gaz Değişkenleri ve Birim Dönüşümleri",
+        "sutunlar": [
+          "Değişken",
+          "Sembol",
+          "Standart Birim",
+          "Önemli Dönüşüm Bağıntısı"
+        ],
+        "satirlar": [
+          [
+            "Basınç",
+            "P",
+            "Atmosfer (atm)",
+            "1 atm = 76 cmHg = 760 mmHg = 760 Torr"
+          ],
+          [
+            "Hacim",
+            "V",
+            "Litre (L)",
+            "1 L = 1 dm³ = 1000 mL = 1000 cm³"
+          ],
+          [
+            "Mutlak Sıcaklık",
+            "T",
+            "Kelvin (K)",
+            "T (K) = t (°C) + 273"
+          ],
+          [
+            "Madde Miktarı",
+            "n",
+            "Mol (mol)",
+            "n = m / M_A = N / N_A"
+          ]
+        ],
+        "basliklar": [
+          "Değişken",
+          "Sembol",
+          "Standart Birim",
+          "Önemli Dönüşüm Bağıntısı"
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 900 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\"><rect width=\"900\" height=\"420\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/><rect x=\"16\" y=\"14\" width=\"868\" height=\"42\" rx=\"10\" fill=\"#1E293B\"/><text x=\"450\" y=\"41\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" fill=\"#FFFFFF\">Kinetik Moleküler Teori ve Gazların Yayılma Hızı</text><rect x=\"50\" y=\"80\" width=\"250\" height=\"125\" rx=\"12\" fill=\"#F0F9FF\" stroke=\"#0369A1\" stroke-width=\"2\"/><rect x=\"50\" y=\"80\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#0369A1\"/><text x=\"175\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Temel Varsayımlar</text><text x=\"175\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Gelişigüzel doğrusal hareket</text><text x=\"175\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Esnek çarpışmalar</text><text x=\"175\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Öz hacim ve çekim ihmal</text><rect x=\"325\" y=\"80\" width=\"250\" height=\"125\" rx=\"12\" fill=\"#ECFDF5\" stroke=\"#047857\" stroke-width=\"2\"/><rect x=\"325\" y=\"80\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#047857\"/><text x=\"450\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Ortalama Kinetik Enerji</text><text x=\"450\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">YALNIZ mutlak sıcaklığa</text><text x=\"450\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">(T) bağlıdır</text><text x=\"450\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Aynı T&#x27;de E_K eşittir!</text><rect x=\"600\" y=\"80\" width=\"250\" height=\"125\" rx=\"12\" fill=\"#FFF1F2\" stroke=\"#BE123C\" stroke-width=\"2\"/><rect x=\"600\" y=\"80\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#BE123C\"/><text x=\"725\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Yayılma (Difüzyon) Hızı</text><text x=\"725\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Sıcaklıkla doğru,</text><text x=\"725\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">mol kütlesiyle (M_A) ters</text><text x=\"725\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">orantılıdır (karekökle)</text><rect x=\"24\" y=\"374\" width=\"852\" height=\"32\" rx=\"8\" fill=\"#E2E8F0\"/><text x=\"450\" y=\"395\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"#0F172A\">Aynı sıcaklıkta mol kütlesi (M_A) küçük olan hafif gaz daha hızlı yayılır.</text></svg>"
+    },
+    {
+      "baslik": "Kinetik Moleküler Teori ve Gazların Yayılma (Difüzyon) Hızı",
+      "metin": [
+        "{koyu:Kinetik Moleküler Teori}, gazların makroskobik yasalarını tanecik düzeyindeki hareketlerle açıklar. Bu teoriye göre: 1) Gaz tanecikleri her yönde gelişigüzel, doğrusal ve sürekli hareket ({koyu:Brown hareketi}) yapar. 2) Taneciklerin öz hacimleri kabın hacmi yanında ihmal edilir. 3) Tanecikler arası çarpışmalar {koyu:esnektir} (toplam kinetik enerji korunur). 4) Gaz taneciklerinin {koyu:ortalama kinetik enerjisi yalnız mutlak sıcaklığa (T) bağlıdır} ({koyu:E_K = {kesir:3|2} · k · T}).",
+        "Aynı sıcaklıktaki iki farklı gazın ortalama kinetik enerjileri eşit olduğundan, {koyu:mol kütlesi (M_A) küçük olan hafif gazın tanecikleri daha hızlı hareket eder}. Gazların yayılma (difüzyon) ve boşluğa dağılma (efüzyon) hızları; mutlak sıcaklığın karekökü ile doğru, mol kütlesinin karekökü ile ters orantılıdır: {koyu:{kesir:v_X|v_Y} = {kok:{kesir:M_Y · T_X|M_X · T_Y}}}."
+      ],
+      "kutular": [
+        {
+          "tip": "kural",
+          "baslik": "Ortalama Kinetik Enerji vs. Ortalama Hız",
+          "metin": "Aynı sıcaklıktaki (örneğin 300 K) He (M_A = 4 g/mol) ve CH4 (M_A = 16 g/mol) gazlarının ORTALAMA KİNETİK ENERJİLERİ EŞİTTİR; ancak hafif olan He gazının yayılma hızı CH4 gazının hızının {kok:16/4} = 2 katıdır!"
+        }
+      ],
+      "liste": [
+        "{koyu:Difüzyon:} Bir gazın başka bir gaz içinde dağılması.",
+        "{koyu:Efüzyon:} Kapalı kaptaki bir gazın küçük bir delikten boşluğa yayılması.",
+        "{koyu:Gerçek gazların ideallikten sapması:} Gazlar {koyu:yüksek sıcaklık} ve {koyu:düşük basınçta} ideal davranışa yaklaşır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 900 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\"><rect width=\"900\" height=\"420\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/><rect x=\"16\" y=\"14\" width=\"868\" height=\"42\" rx=\"10\" fill=\"#1E293B\"/><text x=\"450\" y=\"41\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" fill=\"#FFFFFF\">Kap Türlerine Göre Gaz Davranışı Karşılaştırması</text><rect x=\"60\" y=\"80\" width=\"360\" height=\"130\" rx=\"12\" fill=\"#EFF6FF\" stroke=\"#1E40AF\" stroke-width=\"2\"/><rect x=\"60\" y=\"80\" width=\"360\" height=\"32\" rx=\"10\" fill=\"#1E40AF\"/><text x=\"240\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Sabit Hacimli (Çelik) Kap (V Sabit)</text><text x=\"240\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Isıtılırsa (T artarsa):</text><text x=\"240\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">• Basınç (P) artar</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">• Çarpma sayısı ve şiddeti artar</text><text x=\"240\" y=\"194\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">• Özkütle (d = m / V) DEĞİŞMEZ</text><rect x=\"480\" y=\"80\" width=\"360\" height=\"130\" rx=\"12\" fill=\"#FFF7ED\" stroke=\"#9A3412\" stroke-width=\"2\"/><rect x=\"480\" y=\"80\" width=\"360\" height=\"32\" rx=\"10\" fill=\"#9A3412\"/><text x=\"660\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">İdeal Pistonlu Kap (P Sabit)</text><text x=\"660\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Isıtılırsa (T artarsa):</text><text x=\"660\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">• Hacim (V) artar, Basınç (P) DEĞİŞMEZ</text><text x=\"660\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">• Birim hacimdeki tanecik sayısı azalır</text><text x=\"660\" y=\"194\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">• Özkütle (d = m / V) AZALIR</text><rect x=\"24\" y=\"374\" width=\"852\" height=\"32\" rx=\"8\" fill=\"#E2E8F0\"/><text x=\"450\" y=\"395\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"#0F172A\">Sorgulama sorularında kabın sabit hacimli mi yoksa hareketli pistonlu mu olduğuna dikkat ediniz!</text></svg>"
+    },
+    {
+      "baslik": "Birim Hacimdeki Çarpma Sayısı ve Yoğunluk Yorumları",
+      "metin": [
+        "Deneysel sorgulama sorularında kap çeperine birim zamanda birim yüzeye yapılan {koyu:çarpma sayısı} ve {koyu:gaz özkütlesi (d = {kesir:m|V})} değişimleri sıkça incelenir. Çarpma sayısı birim hacimdeki tanecik sayısı ({koyu:{kesir:n|V}}) ve tanecik hızıyla ({koyu:{kok:T}}) doğru orantılıdır.",
+        "Sabit hacimli (çelik) bir kapta sıcaklık artırıldığında gazın kütlesi ({koyu:m}) ve hacmi ({koyu:V}) değişmediği için {koyu:özkütlesi (d) değişmez}; ancak hız arttığı için çarpma sayısı ve basınç artar. Serbest pistonlu (sabit basınçlı) bir kapta ise sıcaklık artırıldığında hacim ({koyu:V}) büyüdüğü için gazın {koyu:özkütlesi (d = {kesir:m|V}) azalır}."
+      ],
+      "kutular": [
+        {
+          "tip": "ozet",
+          "baslik": "Bölüm Özeti: Sabit Hacimli Kap vs. Serbest Pistonlu Kap",
+          "metin": "Çelik Kap (V sabit): Isıtılırsa P artar, özkütle (d) değişmez. | İdeal Pistonlu Kap (P sabit): Isıtılırsa V artar, P değişmez, özkütle (d) azalır."
+        }
+      ],
+      "liste": [
+        "Sabit sıcaklıkta kaba aynı gazdan eklenirse: Çelik kapta P ve d artar; pistonlu kapta V artar, P ve d değişmez.",
+        "Grafik okurken yatay ve dikey eksendeki birimlerin (°C mi yoksa K mi olduğu) kontrolü ilk adımdır.",
+        "Bilimsel sorgulamada bağımsız değişken bizim değiştirdiğimiz, bağımlı değişken ise buna bağlı olarak değişen özelliktir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 900 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\"><rect width=\"900\" height=\"420\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/><rect x=\"16\" y=\"14\" width=\"868\" height=\"42\" rx=\"10\" fill=\"#1E293B\"/><text x=\"450\" y=\"41\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" fill=\"#FFFFFF\">Bilimsel Sorgulamada Değişken Türleri (10.1.9)</text><rect x=\"50\" y=\"80\" width=\"250\" height=\"125\" rx=\"12\" fill=\"#EEF2FF\" stroke=\"#4338CA\" stroke-width=\"2\"/><rect x=\"50\" y=\"80\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#4338CA\"/><text x=\"175\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Kontrol Değişkeni</text><text x=\"175\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Deney boyunca SABİT</text><text x=\"175\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">tutulan özellikler</text><text x=\"175\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">(Örn: Boyle&#x27;da n ve T)</text><line x1=\"300\" y1=\"140\" x2=\"325\" y2=\"140\" stroke=\"#4338CA\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"325,140 317,135 317,145\" fill=\"#4338CA\"/><rect x=\"325\" y=\"80\" width=\"250\" height=\"125\" rx=\"12\" fill=\"#ECFDF5\" stroke=\"#047857\" stroke-width=\"2\"/><rect x=\"325\" y=\"80\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#047857\"/><text x=\"450\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Bağımsız Değişken</text><text x=\"450\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Deneyde bizim bilerek</text><text x=\"450\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">değiştirdiğimiz etken</text><text x=\"450\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">(Örn: Hacim V)</text><line x1=\"575\" y1=\"140\" x2=\"600\" y2=\"140\" stroke=\"#059669\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"600,140 592,135 592,145\" fill=\"#059669\"/><rect x=\"600\" y=\"80\" width=\"250\" height=\"125\" rx=\"12\" fill=\"#FFFBEB\" stroke=\"#B45309\" stroke-width=\"2\"/><rect x=\"600\" y=\"80\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#B45309\"/><text x=\"725\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Bağımlı Değişken</text><text x=\"725\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Bağımsız değişkene bağlı</text><text x=\"725\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">olarak değişen sonuç</text><text x=\"725\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">(Örn: Basınç P)</text><rect x=\"24\" y=\"374\" width=\"852\" height=\"32\" rx=\"8\" fill=\"#E2E8F0\"/><text x=\"450\" y=\"395\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"#0F172A\">Grafiklerde genellikle yatay eksene bağımsız değişken, dikey eksene bağımlı değişken yazılır.</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Sabit sıcaklıkta 6 L hacimli bir kapta 4 atm basınç yapan bir miktar ideal gazın basıncını 1,5 atm'e düşürmek için kabın hacmi kaç litre yapılmalıdır?",
+      "cozum": "Sıcaklık ve mol sayısı sabit olduğundan {koyu:Boyle Yasası (P1 · V1 = P2 · V2)} uygulanır: 4 · 6 = 1,5 · V2 → 24 = 1,5 · V2 → V2 = {kesir:24|1,5} = {koyu:16 L} yapılmalıdır.",
+      "ipucu": "P1 · V1 = P2 · V2 bağıntısını kullanınız.",
+      "cevap": "Sıcaklık ve mol sayısı sabit olduğundan {koyu:Boyle Yasası (P1 · V1 = P2 · V2)} uygulanır: 4 · 6 = 1,5 · V2 → 24 = 1,5 · V2 → V2 = {kesir:24|1,5} = {koyu:16 L} yapılmalıdır."
+    },
+    {
+      "soru": "Sürtünmesiz hareketli pistonlu bir kapta 27 °C sıcaklıkta 3 L hacim kaplayan ideal bir gazın sıcaklığı 127 °C'ye çıkarılırsa yeni hacmi kaç litre olur?",
+      "cozum": "Önce sıcaklıklar Kelvin'e çevrilir: T1 = 27 + 273 = {koyu:300 K}, T2 = 127 + 273 = {koyu:400 K}. Pistonlu kapta basınç sabit olduğundan {koyu:Charles Yasası ({kesir:V1|T1} = {kesir:V2|T2})} uygulanır: {kesir:3|300} = {kesir:V2|400} → V2 = {koyu:4 L} bulunur.",
+      "ipucu": "Santigrat dereceleri mutlaka 273 ile toplayarak Kelvin'e çeviriniz.",
+      "cevap": "Önce sıcaklıklar Kelvin'e çevrilir: T1 = 27 + 273 = {koyu:300 K}, T2 = 127 + 273 = {koyu:400 K}. Pistonlu kapta basınç sabit olduğundan {koyu:Charles Yasası ({kesir:V1|T1} = {kesir:V2|T2})} uygulanır: {kesir:3|300} = {kesir:V2|400} → V2 = {koyu:4 L} bulunur."
+    },
+    {
+      "soru": "Sabit hacimli çelik bir kapta 0 °C'de 2 atm basınç yapan ideal gazın basıncının 6 atm olması için sıcaklığı kaç °C'ye çıkarılmalıdır?",
+      "cozum": "Başlangıç sıcaklığı T1 = 0 + 273 = {koyu:273 K}'dir. Hacim ve mol sabit olduğundan {koyu:Gay-Lussac Yasası ({kesir:P1|T1} = {kesir:P2|T2})} uygulanır: {kesir:2|273} = {kesir:6|T2}. Basınç 3 katına çıktığı için mutlak sıcaklık da 3 katına çıkar: T2 = 3 · 273 = {koyu:819 K}. Celsius cinsinden: t2 = 819 - 273 = {koyu:546 °C} bulunur.",
+      "ipucu": "Bulduğunuz Kelvin değerinden 273 çıkararak °C değerine geçiniz.",
+      "cevap": "Başlangıç sıcaklığı T1 = 0 + 273 = {koyu:273 K}'dir. Hacim ve mol sabit olduğundan {koyu:Gay-Lussac Yasası ({kesir:P1|T1} = {kesir:P2|T2})} uygulanır: {kesir:2|273} = {kesir:6|T2}. Basınç 3 katına çıktığı için mutlak sıcaklık da 3 katına çıkar: T2 = 3 · 273 = {koyu:819 K}. Celsius cinsinden: t2 = 819 - 273 = {koyu:546 °C} bulunur."
+    },
+    {
+      "soru": "Sabit sıcaklık ve basınçta 0,4 mol ideal He gazı elastik bir balonda 8 L hacim kaplamaktadır. Balona aynı koşullarda 0,6 mol daha gaz eklenirse balonun son hacmi kaç L olur?",
+      "cozum": "P ve T sabit olduğundan {koyu:Avogadro Yasası ({kesir:V1|n1} = {kesir:V2|n2})} uygulanır. Başlangıçta n1 = 0,4 mol, 0,6 mol eklenince son mol sayısı n2 = 0,4 + 0,6 = {koyu:1,0 mol} olur. {kesir:8|0,4} = {kesir:V2|1,0} → V2 = {koyu:20 L} bulunur.",
+      "ipucu": "Son mol sayısını n2 = n1 + n(eklenen) olarak alınız.",
+      "cevap": "P ve T sabit olduğundan {koyu:Avogadro Yasası ({kesir:V1|n1} = {kesir:V2|n2})} uygulanır. Başlangıçta n1 = 0,4 mol, 0,6 mol eklenince son mol sayısı n2 = 0,4 + 0,6 = {koyu:1,0 mol} olur. {kesir:8|0,4} = {kesir:V2|1,0} → V2 = {koyu:20 L} bulunur."
+    },
+    {
+      "soru": "Verilen 27 °C sıcaklıkta 2 mol ideal X gazı 8,2 L hacimli kapalı bir kapta kaç atm basınç yapar? (R = 0,082 L·atm / mol·K)",
+      "cozum": "Sıcaklık: T = 27 + 273 = {koyu:300 K}. {koyu:İdeal Gaz Denklemi (P · V = n · R · T)} uygulanır: P · 8,2 = 2 · 0,082 · 300 → P · 8,2 = 2 · 24,6 = 49,2 → P = {kesir:49,2|8,2} = {koyu:6 atm} bulunur.",
+      "ipucu": "P · V = n · R · T bağıntısında T = 300 K yazınız.",
+      "cevap": "Sıcaklık: T = 27 + 273 = {koyu:300 K}. {koyu:İdeal Gaz Denklemi (P · V = n · R · T)} uygulanır: P · 8,2 = 2 · 0,082 · 300 → P · 8,2 = 2 · 24,6 = 49,2 → P = {kesir:49,2|8,2} = {koyu:6 atm} bulunur."
+    },
+    {
+      "soru": "Aynı sıcaklıkta bulunan He (M_A = 4 g/mol) ve SO2 (M_A = 64 g/mol) gazlarının ortalama kinetik enerjilerini ve yayılma (difüzyon) hızlarını karşılaştırınız.",
+      "cozum": "İki gazın sıcaklığı aynı olduğu için {koyu:ortalama kinetik enerjileri birbirine eşittir}. Yayılma hızları oranı ise mol kütlelerinin karekökü ile ters orantılıdır: {kesir:v(He)|v(SO2)} = {kok:{kesir:64|4}} = {kok:16} = {koyu:4}. Yani He gazı SO2 gazından {koyu:4 kat daha hızlı} yayılır.",
+      "ipucu": "Hız oranında mol kütlelerini ters yazıp karekök alınız.",
+      "cevap": "İki gazın sıcaklığı aynı olduğu için {koyu:ortalama kinetik enerjileri birbirine eşittir}. Yayılma hızları oranı ise mol kütlelerinin karekökü ile ters orantılıdır: {kesir:v(He)|v(SO2)} = {kok:{kesir:64|4}} = {kok:16} = {koyu:4}. Yani He gazı SO2 gazından {koyu:4 kat daha hızlı} yayılır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tip": "coktan",
+      "soru": "Sabit sıcaklıkta bulunan bir miktar ideal gazın hacmi 4 katına çıkarılırsa basıncı ve P·V çarpımı nasıl değişir?",
+      "secenekler": [
+        "Basınç 4 katına çıkar, P·V çarpımı artar.",
+        "Basınç dörtte birine düşer, P·V çarpımı değişmez.",
+        "Basınç yarıya düşer, P·V çarpımı yarıya düşer.",
+        "Basınç değişmez, P·V çarpımı 4 katına çıkar.",
+        "P1 · V1 = P2 · V2 (Sabit n ve T'de basınç-hacim ters orantısı)"
+      ],
+      "cevap": 1,
+      "aciklama": "Boyle Yasası'na göre sabit sıcaklıkta ve mol sayısında hacim 4 katına çıkarsa basınç 1/4'üne düşer, P·V çarpımı ise sabit kalır.",
+      "tur": "coktan",
+      "dogru": 1
+    },
+    {
+      "tip": "coktan",
+      "soru": "Sürtünmesiz pistonlu bir kapta 127 °C'de 6 L hacim kaplayan bir miktar ideal gazın hacmini 9 L'ye çıkarmak için sıcaklık kaç °C yapılmalıdır?",
+      "secenekler": [
+        "190,5 °C",
+        "227 °C",
+        "327 °C",
+        "600 °C",
+        "Boyle Yasası"
+      ],
+      "cevap": 2,
+      "aciklama": "T1 = 127 + 273 = 400 K. V1/T1 = V2/T2 -> 6/400 = 9/T2 -> T2 = 600 K. Celsius cinsinden: 600 - 273 = 327 °C olur.",
+      "tur": "coktan",
+      "dogru": 2
+    },
+    {
+      "tip": "coktan",
+      "soru": "Aynı sıcaklık ve basınç altında bulunan 1 mol H2 (M_A = 2) ve 1 mol O2 (M_A = 32) gazları için aşağıdakilerden hangisi yanlıştır?",
+      "secenekler": [
+        "Kapladıkları hacimler birbirine eşittir.",
+        "Ortalama kinetik enerjileri birbirine eşittir.",
+        "H2 gazının ortalama yayılma hızı O2 gazının 4 katıdır.",
+        "Kütleleri birbirine eşittir.",
+        "P1 · V1 = P2 · V2 (Sabit n ve T'de basınç-hacim ters orantısı)"
+      ],
+      "cevap": 3,
+      "aciklama": "1 mol H2 2 gram, 1 mol O2 ise 32 gramdır; mol sayıları, hacimleri ve ortalama kinetik enerjileri eşitken kütleleri farklıdır.",
+      "tur": "coktan",
+      "dogru": 3
+    },
+    {
+      "tip": "coktan",
+      "soru": "Sabit hacimli kapalı çelik bir kapta bulunan ideal He gazının sıcaklığı artırıldığında aşağıdaki niceliklerden hangisi değişmez?",
+      "secenekler": [
+        "Gazın basıncı",
+        "Taneciklerin ortalama kinetik enerjisi",
+        "Gazın özkütlesi (yoğunluğu)",
+        "Birim zamanda kap çeperine yapılan çarpma sayısı",
+        "P1 · V1 = P2 · V2 (Sabit n ve T'de basınç-hacim ters orantısı)"
+      ],
+      "cevap": 2,
+      "aciklama": "Sabit hacimli kapta kütle (m) ve hacim (V) sabit olduğu için sıcaklık artsa da gazın özkütlesi (d = m/V) değişmez.",
+      "tur": "coktan",
+      "dogru": 2
+    },
+    {
+      "tip": "dy",
+      "soru": "Aşağıdaki ifadeleri Doğru (D) veya Yanlış (Y) olarak değerlendiriniz.",
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "ifade": "Boyle Yasası'na göre sabit sıcaklıkta bir gazın basıncı ile hacmi ters orantılıdır.",
+          "dogru": true,
+          "aciklama": "P1 · V1 = P2 · V2 bağıntısı ters orantıyı ifade eder."
+        },
+        {
+          "ifade": "Mutlak sıfır noktası 0 K olup Celsius ölçeğinde -273,15 °C'ye karşılık gelir.",
+          "dogru": true,
+          "aciklama": "T (K) = t (°C) + 273,15 dönüşümü geçerlidir."
+        },
+        {
+          "ifade": "Sıcaklığı 50 °C'den 100 °C'ye çıkarılan sabit hacimli bir gazın basıncı tam iki katına çıkar.",
+          "dogru": false,
+          "aciklama": "50 °C (323 K) ile 100 °C (373 K) arasında Kelvin cinsinden 2 kat oran yoktur; basınç 2 katına çıkmaz."
+        },
+        {
+          "ifade": "Kinetik Moleküler Teori'ye göre gazların ortalama kinetik enerjisi yalnız mutlak sıcaklığa bağlıdır.",
+          "dogru": true,
+          "aciklama": "Mutlak sıcaklık değişmedikçe ortalama kinetik enerji değişmez."
+        },
+        {
+          "ifade": "Gazlar yüksek basınç ve düşük sıcaklıkta ideal davranışa en yakın haldedir.",
+          "dogru": false,
+          "aciklama": "Tam tersine gazlar düşük basınç ve yüksek sıcaklıkta idealliğe yaklaşır."
+        }
+      ]
+    },
+    {
+      "tip": "eslestir",
+      "soru": "Aşağıdaki gaz yasalarını ve kavramları matematiksel modelleriyle doğru şekilde eşleştiriniz.",
+      "ciftler": [
+        [
+          "Boyle Yasası",
+          "P1 · V1 = P2 · V2 (Sabit n ve T'de basınç-hacim ters orantısı)"
+        ],
+        [
+          "Charles Yasası",
+          "V1 / T1 = V2 / T2 (Sabit n ve P'de hacim-mutlak sıcaklık doğru orantısı)"
+        ],
+        [
+          "Gay-Lussac Yasası",
+          "P1 / T1 = P2 / T2 (Sabit n ve V'de basınç-mutlak sıcaklık doğru orantısı)"
+        ],
+        [
+          "Avogadro Yasası",
+          "V1 / n1 = V2 / n2 (Sabit P ve T'de hacim-mol sayısı doğru orantısı)"
+        ],
+        [
+          "İdeal Gaz Denklemi",
+          "P · V = n · R · T (Dört gaz değişkenini birleştiren genel denklem)"
+        ]
+      ],
+      "tur": "eslestir"
+    },
+    {
+      "tip": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Tüm gaz yasası hesaplamalarında sıcaklık birimi olarak mutlaka ___ ölçeği kullanılmalıdır.",
+          "cevap": "Kelvin"
+        },
+        {
+          "metin": "Sabit basınçta belirli miktardaki bir gazın hacmi ile mutlak sıcaklığının doğru orantılı olduğunu ___ Yasası açıklar.",
+          "cevap": "Charles"
+        },
+        {
+          "metin": "Normal koşullarda (0 °C ve 1 atm) 1 mol ideal gaz ___ litre hacim kaplar.",
+          "cevap": "22,4"
+        },
+        {
+          "metin": "Aynı sıcaklıktaki gazlardan mol kütlesi daha ___ olanın yayılma (difüzyon) hızı daha büyüktür.",
+          "cevap": "küçük"
+        },
+        {
+          "metin": "Kapalı bir kaptaki gazın küçük bir delikten boşluğa yayılması olayına ___ adı verilir.",
+          "cevap": "efüzyon"
+        }
+      ],
+      "kelimeler": [
+        "Kelvin",
+        "Charles",
+        "22,4",
+        "küçük",
+        "efüzyon"
+      ],
+      "fazla": [
+        "Celsius",
+        "büyük"
+      ],
+      "tur": "bosluk"
+    },
+    {
+      "tip": "ogretici",
+      "soru": "Bir gaz örneğinin P, V, n, T değişkenleri arasındaki ilişkiyi adım adım sorgulayınız.",
+      "ipuclari": [
+        ": ",
+        ": ",
+        ": "
+      ],
+      "cevap": "  ",
+      "tur": "ogretici"
+    }
+  ],
+  "giris": "Gazların davranışlarını belirleyen dört temel değişken {koyu:basınç (P, atm)}, {koyu:hacim (V, L)}, {koyu:mutlak sıcaklık (T, K = °C + 273)} ve {koyu:madde miktarı (n, mol)} olup tüm gaz yasası hesaplamalarında sıcaklık mutlaka {koyu:Kelvin (K)} cinsinden alınır.",
+  "ad": "10-kimya-14"
+}

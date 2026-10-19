@@ -1,0 +1,451 @@
+{
+  "sinif": 10,
+  "ders": "matematik",
+  "ders_kisa": "Matematik",
+  "kod": "10-matematik",
+  "hafta": 14,
+  "tarih": "21-25 Aralık 2026",
+  "yayin_tarihi": "2026-12-21",
+  "unite": "Sayılar / Nicelikler ve Değişimler",
+  "konu": "Bölünebilme ve Gerçek Sayılarda Fonksiyon Olma Şartları: Fonksiyonların Tanım-Görüntü Kümesi, İşareti, Artanlığı-Azalanlığı ve Bire Birliği",
+  "ciktilar": [
+    "MAT.10.3.3. Bir doğal sayının belirli doğal sayılara bölümünden kalanlarına dair muhakeme yapabilme",
+    "MAT.10.4.1. Gerçek sayılarda fonksiyon olma şartları ile gerçek sayılarda tanımlı fonksiyonların nitel özelliklerini matematiksel temsillerle değerlendirebilme"
+  ],
+  "ozet": [
+    "Aralarında asal çarpanların en küçük ortak katından (EKOK) oluşan {koyu:6 (2 ve 3)}, {koyu:12 (3 ve 4)}, {koyu:15 (3 ve 5)}, {koyu:18 (2 ve 9)}, {koyu:30 (3 ve 10)}, {koyu:36 (4 ve 9)} ve {koyu:45 (5 ve 9)} sayılarına bölünebilmede aralarında asal çarpanların kuralları birlikte uygulanır.",
+    "Boş olmayan A (tanım kümesi) ve B (değer kümesi) gerçek sayı alt kümeleri arasında tanımlı bir {koyu:f: A -> B} ilişkisinin {koyu:fonksiyon olabilmesi} için: 1) Tanım kümesinde açıkta eleman kalmamalı, 2) Tanım kümesindeki her eleman değer kümesinde {koyu:yalnız bir elemanla} eşleşmelidir.",
+    "Koordinat düzleminde verilen bir grafiğin fonksiyon belirtip belirtmediği {koyu:Düşey (Dikey) Doğru Testi} ile anlaşılır: Tanım kümesinden çizilen düşey doğrular grafiği {koyu:en fazla bir noktada} kesiyorsa grafik bir fonksiyona aittir.",
+    "Bir {koyu:f(x)} fonksiyonunun grafiğinin x eksenini kestiği noktaların apsislerine fonksiyonun {koyu:sıfırları (kökleri: f(x) = 0)} denir; grafik x ekseninin üstündeyken {koyu:f(x) pozitif}, altındayken {koyu:f(x) negatiftir}.",
+    "Tanım kümesindeki farklı elemanların görüntüleri de farklı ise fonksiyon {koyu:bire bir} ({koyu:Yatay Doğru Testi}), değer kümesinde açıkta eleman kalmıyorsa ({koyu:f(A) = B}) fonksiyon {koyu:örtendir}; ayrıca {koyu:f(-x) = f(x)} ise {koyu:çift fonksiyon} (y eksenine göre simetrik), {koyu:f(-x) = -f(x)} ise {koyu:tek fonksiyondur} (orijine göre simetrik)."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Bölünebilme Muhakemesi: EKOK Sayılarına Bölümünden Kalanlar",
+      "metin": [
+        "Geçen hafta temel bölünebilme kurallarını (2, 3, 4, 5, 8, 9 ve 10) incelemiştik. Bu hafta ise aralarında asal sayıların en küçük ortak katlarından (EKOK) oluşan {koyu:6, 12, 15, 18, 20, 30, 36, 45 ve 90} gibi sayılara bölünebilme ve kalan bulma muhakemesini tamamlıyoruz. Bir doğal sayının bileşik bir sayıya tam bölünebilmesi için {koyu:aralarında asal çarpanlarının her birine ayrı ayrı tam bölünmesi} gerekir.",
+        "Bir A doğal sayısının örneğin {koyu:15 ile bölümünden kalan} {koyu:k = 13} ise, bu A sayısının 15'in aralarında asal çarpanları olan {koyu:3 ile bölümünden kalan} 13'ün 3'e bölümünden kalan olan {koyu:1}; {koyu:5 ile bölümünden kalan} ise 13'ün 5'e bölümünden kalan olan {koyu:3}'tür. Tersi yönde de 3 ve 5 ile bölümünden kalanları bilinen bir sayının 15 ile bölümünden kalan tek bir değer olarak belirlenir."
+      ],
+      "kutular": [
+        {
+          "tip": "kural",
+          "baslik": "Aralarında Asal Çarpan Seçimi",
+          "metin": "Dikkat! 12 ile bölünebilme incelenirken 2 ve 6 çarpanları ALINMAZ (çünkü EBOB(2, 6) = 2 olup aralarında asal değillerdir); mutlaka EBOB(3, 4) = 1 olan 3 ve 4 çarpanları kullanılır. Benzer şekilde 18 için 2 ve 9; 36 için 4 ve 9; 45 için 5 ve 9 seçilir."
+        }
+      ],
+      "tablo": {
+        "baslik": "Bileşik Sayılara Bölünebilmede Aralarında Asal Çarpanlar",
+        "sutunlar": [
+          "Bölen Sayı",
+          "Aralarında Asal Çarpanlar",
+          "Önce Uygulanacak Kural (Son Basamak)",
+          "Sonra Uygulanacak Kural (Rakamlar Toplamı)"
+        ],
+        "satirlar": [
+          [
+            "6",
+            "2 ve 3",
+            "2 ile bölünebilme (Birler basamağı)",
+            "3 ile bölünebilme"
+          ],
+          [
+            "12",
+            "3 ve 4",
+            "4 ile bölünebilme (Son iki basamak)",
+            "3 ile bölünebilme"
+          ],
+          [
+            "15",
+            "3 ve 5",
+            "5 ile bölünebilme (Birler basamağı)",
+            "3 ile bölünebilme"
+          ],
+          [
+            "36",
+            "4 ve 9",
+            "4 ile bölünebilme (Son iki basamak)",
+            "9 ile bölünebilme"
+          ],
+          [
+            "45",
+            "5 ve 9",
+            "5 ile bölünebilme (Birler basamağı)",
+            "9 ile bölünebilme"
+          ]
+        ],
+        "basliklar": [
+          "Bölen Sayı",
+          "Aralarında Asal Çarpanlar",
+          "Önce Uygulanacak Kural (Son Basamak)",
+          "Sonra Uygulanacak Kural (Rakamlar Toplamı)"
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 900 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\"><rect width=\"900\" height=\"420\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/><rect x=\"16\" y=\"14\" width=\"868\" height=\"42\" rx=\"10\" fill=\"#1E293B\"/><text x=\"450\" y=\"41\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" fill=\"#FFFFFF\">EKOK Sayılarına Bölünebilme ve Kalan Muhakemesi (10.3.3)</text><rect x=\"50\" y=\"75\" width=\"250\" height=\"130\" rx=\"12\" fill=\"#EFF6FF\" stroke=\"#1D4ED8\" stroke-width=\"2\"/><rect x=\"50\" y=\"75\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#1D4ED8\"/><text x=\"175\" y=\"96\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Aralarında Asal Çarpanlar</text><text x=\"175\" y=\"129\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">6 -&gt; 2 ve 3 | 12 -&gt; 3 ve 4</text><text x=\"175\" y=\"149\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">15 -&gt; 3 ve 5 | 18 -&gt; 2 ve 9</text><text x=\"175\" y=\"169\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">36 -&gt; 4 ve 9 | 45 -&gt; 5 ve 9</text><text x=\"175\" y=\"189\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">(EBOB = 1 olan çarpanlar seçilir)</text><line x1=\"300\" y1=\"140\" x2=\"325\" y2=\"140\" stroke=\"#2563EB\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"325,140 317,135 317,145\" fill=\"#2563EB\"/><rect x=\"325\" y=\"75\" width=\"250\" height=\"130\" rx=\"12\" fill=\"#ECFDF5\" stroke=\"#047857\" stroke-width=\"2\"/><rect x=\"325\" y=\"75\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#047857\"/><text x=\"450\" y=\"96\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Uygulama Sırası</text><text x=\"450\" y=\"129\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">1. Önce SON BASAMAK kuralı</text><text x=\"450\" y=\"149\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">(2, 4, 5, 8, 10) uygulanır</text><text x=\"450\" y=\"169\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">2. Sonra RAKAMLAR TOPLAMI</text><text x=\"450\" y=\"189\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">(3 ve 9) kuralı uygulanır</text><line x1=\"575\" y1=\"140\" x2=\"600\" y2=\"140\" stroke=\"#059669\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"600,140 592,135 592,145\" fill=\"#059669\"/><rect x=\"600\" y=\"75\" width=\"250\" height=\"130\" rx=\"12\" fill=\"#FFFBEB\" stroke=\"#B45309\" stroke-width=\"2\"/><rect x=\"600\" y=\"75\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#B45309\"/><text x=\"725\" y=\"96\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Kalan İndirgeme</text><text x=\"725\" y=\"129\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Sayının 45&#x27;e bölümünden</text><text x=\"725\" y=\"149\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">kalan 17 ise:</text><text x=\"725\" y=\"169\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">• 5&#x27;e bölümünden kalan: 2</text><text x=\"725\" y=\"189\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">• 9&#x27;a bölümünden kalan: 8</text><rect x=\"24\" y=\"374\" width=\"852\" height=\"32\" rx=\"8\" fill=\"#E2E8F0\"/><text x=\"450\" y=\"395\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"#0F172A\">Aralarında asal çarpanlara bölümünden kalanlar biliniyorsa EKOK sayısına bölümünden kalan tek türlü bulunur.</text></svg>"
+    },
+    {
+      "baslik": "Gerçek Sayılarda Fonksiyon Olma Şartları ve Düşey Doğru Testi",
+      "metin": [
+        "Boş olmayan iki gerçek sayı kümesi {koyu:A} ve {koyu:B} olsun. A kümesinin {koyu:her bir elemanını} B kümesinin {koyu:bir ve yalnız bir elemanına} eşleyen ilişkiye A'dan B'ye tanımlı bir {koyu:fonksiyon} denir ve {koyu:f: A -> B}, {koyu:y = f(x)} biçiminde gösterilir. Burada A kümesine {koyu:tanım kümesi}, B kümesine {koyu:değer kümesi}, A'daki elemanların B'de eşleştiği elemanların oluşturduğu {koyu:f(A)} alt kümesine ise {koyu:görüntü kümesi} adı verilir.",
+        "Bir ilişkinin fonksiyon olup olmadığını anlamak için iki şart kontrol edilir: {koyu:1) Tanım kümesinde (A) açıkta eleman kalmamalıdır} (yani her x için f(x) tanımlı olmalıdır; örneğin paydayı sıfır yapan veya karekök içini negatif yapan değer tanım kümesinde olamaz). {koyu:2) Tanım kümesindeki bir eleman değer kümesinde birden fazla elemanla eşleşmemelidir}. Grafik üzerinde bu şart {koyu:Düşey (Dikey) Doğru Testi} ile kontrol edilir: Tanım kümesinden y eksenine paralel çizilen her düşey doğru grafiği {koyu:bir ve yalnız bir noktada} kesmelidir."
+      ],
+      "kutular": [
+        {
+          "tip": "onemli",
+          "baslik": "Cebirsel İfadelerde En Geniş Tanım Kümesi",
+          "metin": "• Polinom tipi f(x) = a·x² + b·x + c fonksiyonların en geniş tanım kümesi tüm gerçek sayılardır (R).\n• Rasyonel f(x) = g(x) / h(x) fonksiyonlarda paydayı sıfır yapan h(x) = 0 kökleri R'den çıkarılır.\n• Kareköklü f(x) = {kok:g}(x) fonksiyonlarda kök içi negatif olamayacağından g(x) >= 0 eşitsizliğini sağlayan aralık tanım kümesidir."
+        }
+      ],
+      "liste": [
+        "{koyu:Fonksiyon örneği:} Her gerçek sayıyı karesinin 1 fazlasına götüren {koyu:f: R -> R, f(x) = x · x + 1} ifadesi bir fonksiyondur.",
+        "{koyu:Fonksiyon olmayan örnek:} {koyu:f: R -> R}, f(x) = {kesir:1|x - 3} ifadesi x = 3 için tanımsız olduğundan R'den R'ye fonksiyon değildir; ancak {koyu:R fark (3) -> R} olarak tanımlanırsa fonksiyondur.",
+        "Çember grafiği ({koyu:x · x + y · y = r · r}) düşey doğrular tarafından iki noktada kesildiği için gerçek sayılarda fonksiyon belirtmez."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 900 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\"><rect width=\"900\" height=\"420\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/><rect x=\"16\" y=\"14\" width=\"868\" height=\"42\" rx=\"10\" fill=\"#1E293B\"/><text x=\"450\" y=\"41\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" fill=\"#FFFFFF\">Gerçek Sayılarda Fonksiyon Olma Şartları (10.4.1)</text><rect x=\"50\" y=\"80\" width=\"250\" height=\"125\" rx=\"12\" fill=\"#EFF6FF\" stroke=\"#1E40AF\" stroke-width=\"2\"/><rect x=\"50\" y=\"80\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#1E40AF\"/><text x=\"175\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">1. Tanım Kümesi Şartı</text><text x=\"175\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Tanım kümesinde (A)</text><text x=\"175\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">açıkta eleman KALMAMALI</text><text x=\"175\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Her x için f(x) tanımlı olmalı</text><rect x=\"325\" y=\"80\" width=\"250\" height=\"125\" rx=\"12\" fill=\"#ECFDF5\" stroke=\"#065F46\" stroke-width=\"2\"/><rect x=\"325\" y=\"80\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#065F46\"/><text x=\"450\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">2. Tek Görüntü Şartı</text><text x=\"450\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Her x elemanı değer kümesinde</text><text x=\"450\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">YALNIZ BİR elemanla</text><text x=\"450\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">eşleşmelidir</text><rect x=\"600\" y=\"80\" width=\"250\" height=\"125\" rx=\"12\" fill=\"#F5F3FF\" stroke=\"#7C3AED\" stroke-width=\"2\"/><rect x=\"600\" y=\"80\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#7C3AED\"/><text x=\"725\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Düşey Doğru Testi</text><text x=\"725\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Y eksenine paralel doğrular</text><text x=\"725\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">grafiği EN FAZLA 1 noktada</text><text x=\"725\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">kesiyorsa fonksiyondur</text><rect x=\"24\" y=\"374\" width=\"852\" height=\"32\" rx=\"8\" fill=\"#E2E8F0\"/><text x=\"450\" y=\"395\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"#0F172A\">Rasyonel ifadede paydayı sıfır yapan değer, kareköklü ifadede içini negatif yapan değer tanım kümesinde olamaz.</text></svg>"
+    },
+    {
+      "baslik": "Fonksiyonların Nitel Özellikleri — I: Sıfırlar ve İşaret İncelemesi",
+      "metin": [
+        "Gerçek sayılarda tanımlı bir {koyu:y = f(x)} fonksiyonunun nitel özelliklerini hem cebirsel kuralı hem de grafiği üzerinden analiz edebiliriz. Fonksiyonun değerini sıfır yapan ({koyu:f(x) = 0}) x değerlerine fonksiyonun {koyu:sıfırları} veya {koyu:denklemin kökleri} denir. Grafik üzerinde fonksiyonun sıfırları, {koyu:grafiğin x eksenini kestiği veya teğet olduğu noktaların apsisleridir}.",
+        "Fonksiyonun {koyu:işareti} incelenirken grafiğin x eksenine göre konumuna bakılır: Grafiğin {koyu:x ekseninin üstünde (y > 0)} kalan kısımlarında fonksiyon {koyu:pozitif değerlidir (f(x) > 0)}; grafiğin {koyu:x ekseninin altında (y < 0)} kalan kısımlarında ise fonksiyon {koyu:negatif değerlidir (f(x) < 0)}."
+      ],
+      "kutular": [
+        {
+          "tip": "kavram",
+          "baslik": "Grafik Eksen Kesim Noktaları",
+          "metin": "• x eksenini kestiği noktaları (sıfırları) bulmak için y = f(x) = 0 denklemi çözülür.\n• y eksenini kestiği noktayı bulmak için x = 0 yazılır ve y = f(0) değeri hesaplanır."
+        }
+      ],
+      "tablo": {
+        "baslik": "Fonksiyon Grafiğinde İşaret ve Sıfır Analizi",
+        "sutunlar": [
+          "Grafikteki Konum",
+          "Cebirsel Karşılığı",
+          "Nitel Yorumu"
+        ],
+        "satirlar": [
+          [
+            "x ekseninin üstünde kalan aralıklar",
+            "f(x) > 0",
+            "Fonksiyon pozitif işaretlidir"
+          ],
+          [
+            "x ekseninin üzerinde bulunan noktalar",
+            "f(x) = 0",
+            "Fonksiyonun sıfırlarıdır (kökleridir)"
+          ],
+          [
+            "x ekseninin altında kalan aralıklar",
+            "f(x) < 0",
+            "Fonksiyon negatif işaretlidir"
+          ]
+        ],
+        "basliklar": [
+          "Grafikteki Konum",
+          "Cebirsel Karşılığı",
+          "Nitel Yorumu"
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 900 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\"><rect width=\"900\" height=\"420\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/><rect x=\"16\" y=\"14\" width=\"868\" height=\"42\" rx=\"10\" fill=\"#1E293B\"/><text x=\"450\" y=\"41\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" fill=\"#FFFFFF\">Fonksiyonun Sıfırları (Kökleri) ve İşaret İncelemesi</text><rect x=\"50\" y=\"80\" width=\"250\" height=\"125\" rx=\"12\" fill=\"#F0F9FF\" stroke=\"#0369A1\" stroke-width=\"2\"/><rect x=\"50\" y=\"80\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#0369A1\"/><text x=\"175\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Fonksiyonun Sıfırları</text><text x=\"175\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">f(x) = 0 denkleminin kökleri</text><text x=\"175\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Grafiğin x eksenini kestiği</text><text x=\"175\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">noktaların apsisleri</text><rect x=\"325\" y=\"80\" width=\"250\" height=\"125\" rx=\"12\" fill=\"#ECFDF5\" stroke=\"#047857\" stroke-width=\"2\"/><rect x=\"325\" y=\"80\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#047857\"/><text x=\"450\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Pozitif Aralık (f(x) &gt; 0)</text><text x=\"450\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Grafiğin x ekseninin</text><text x=\"450\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">ÜSTÜNDE kalan</text><text x=\"450\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">bölümleridir (y &gt; 0)</text><rect x=\"600\" y=\"80\" width=\"250\" height=\"125\" rx=\"12\" fill=\"#FFF1F2\" stroke=\"#BE123C\" stroke-width=\"2\"/><rect x=\"600\" y=\"80\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#BE123C\"/><text x=\"725\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Negatif Aralık (f(x) &lt; 0)</text><text x=\"725\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Grafiğin x ekseninin</text><text x=\"725\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">ALTINDA kalan</text><text x=\"725\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">bölümleridir (y &lt; 0)</text><rect x=\"24\" y=\"374\" width=\"852\" height=\"32\" rx=\"8\" fill=\"#E2E8F0\"/><text x=\"450\" y=\"395\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"#0F172A\">Grafiğin y eksenini kestiği noktayı bulmak için ise x = 0 verilerek y = f(0) hesaplanır.</text></svg>"
+    },
+    {
+      "baslik": "Fonksiyonların Nitel Özellikleri — II: Artanlık, Azalanlık ve Ekstremum Noktaları",
+      "metin": [
+        "Bir fonksiyonun belirli bir {koyu:[a, b]} aralığında x değerleri soldan sağa doğru büyürken ({koyu:x1 < x2}) görüntüleri olan y değerleri de büyüyorsa ({koyu:f(x1) < f(x2)}), fonksiyon o aralıkta {koyu:artandır} (grafik soldan sağa yukarı yükselir). Eğer x değerleri büyürken ({koyu:x1 < x2}) y değerleri küçülüyorsa ({koyu:f(x1) > f(x2)}), fonksiyon o aralıkta {koyu:azalandır} (grafik soldan sağa aşağı iner). Görüntüler hiç değişmiyorsa ({koyu:f(x1) = f(x2)}) fonksiyon o aralıkta {koyu:sabittir}.",
+        "Fonksiyonun artanlıktan azalanlığa geçtiği tepe noktalarına ve tanım kümesinde aldığı en büyük değere {koyu:maksimum noktası / maksimum değeri}; azalanlıktan artanlığa geçtiği çukur noktalarına ve aldığı en küçük değere ise {koyu:minimum noktası / minimum değeri} denir."
+      ],
+      "kutular": [
+        {
+          "tip": "kural",
+          "baslik": "Maksimum ve Minimum Değer Okuma",
+          "metin": "Bir fonksiyonun maksimum veya minimum 'noktası' (a, b) sıralı ikilisi ile gösterilirken; maksimum veya minimum 'değeri' yalnız o noktanın ordinatı (y = b değeri) olarak ifade edilir."
+        }
+      ],
+      "liste": [
+        "{koyu:Artan aralık:} {koyu:x1 < x2} iken {koyu:f(x1) < f(x2)} (Değişim hızı pozitiftir).",
+        "{koyu:Azalan aralık:} {koyu:x1 < x2} iken {koyu:f(x1) > f(x2)} (Değişim hızı negatiftir).",
+        "{koyu:Sabit aralık:} {koyu:x1 < x2} iken {koyu:f(x1) = f(x2)} (Grafik x eksenine paraleldir)."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 900 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\"><rect width=\"900\" height=\"420\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/><rect x=\"16\" y=\"14\" width=\"868\" height=\"42\" rx=\"10\" fill=\"#1E293B\"/><text x=\"450\" y=\"41\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" fill=\"#FFFFFF\">Artanlık, Azalanlık ve Maksimum-Minimum Değerler</text><rect x=\"50\" y=\"80\" width=\"250\" height=\"125\" rx=\"12\" fill=\"#ECFDF5\" stroke=\"#047857\" stroke-width=\"2\"/><rect x=\"50\" y=\"80\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#047857\"/><text x=\"175\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Artan Fonksiyon</text><text x=\"175\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">x1 &lt; x2 iken f(x1) &lt; f(x2)</text><text x=\"175\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Soldan sağa grafik yükselir</text><text x=\"175\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Değişim hızı pozitiftir</text><rect x=\"325\" y=\"80\" width=\"250\" height=\"125\" rx=\"12\" fill=\"#FFFBEB\" stroke=\"#B45309\" stroke-width=\"2\"/><rect x=\"325\" y=\"80\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#B45309\"/><text x=\"450\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Azalan Fonksiyon</text><text x=\"450\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">x1 &lt; x2 iken f(x1) &gt; f(x2)</text><text x=\"450\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Soldan sağa grafik alçalır</text><text x=\"450\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Değişim hızı negatiftir</text><rect x=\"600\" y=\"80\" width=\"250\" height=\"125\" rx=\"12\" fill=\"#EFF6FF\" stroke=\"#1D4ED8\" stroke-width=\"2\"/><rect x=\"600\" y=\"80\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#1D4ED8\"/><text x=\"725\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Maksimum &amp; Minimum</text><text x=\"725\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Tepe noktası -&gt; Maksimum</text><text x=\"725\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Çukur noktası -&gt; Minimum</text><text x=\"725\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Değer = Ordinat (y)</text><rect x=\"24\" y=\"374\" width=\"852\" height=\"32\" rx=\"8\" fill=\"#E2E8F0\"/><text x=\"450\" y=\"395\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"#0F172A\">x1 &lt; x2 iken f(x1) = f(x2) oluyorsa fonksiyon o aralıkta sabittir.</text></svg>"
+    },
+    {
+      "baslik": "Fonksiyonların Nitel Özellikleri — III: Bire Birlik ve Örtenlik",
+      "metin": [
+        "{koyu:Bire Bir (İnjektif) Fonksiyon:} Tanım kümesindeki her farklı elemanın görüntüsü de birbirinden farklı ise ({koyu:x1 != x2 iken f(x1) != f(x2)} veya {koyu:f(x1) = f(x2) iken x1 = x2}) fonksiyona {koyu:bire bir fonksiyon} denir. Grafik üzerinde bire birlik {koyu:Yatay Doğru Testi} ile belirlenir: x eksenine paralel çizilen yatay doğrular grafiği {koyu:en fazla bir noktada} kesiyorsa fonksiyon bire birdir.",
+        "{koyu:Örten (Sürjektif) Fonksiyon:} Değer kümesinde (B) açıkta hiçbir eleman kalmıyorsa, yani görüntü kümesi değer kümesine eşitse ({koyu:f(A) = B}) fonksiyon {koyu:örtendir}. Değer kümesinde en az bir eleman açıkta kalıyorsa ({koyu:f(A) != B}) fonksiyona {koyu:içine fonksiyon} denir."
+      ],
+      "kutular": [
+        {
+          "tip": "ipucu",
+          "baslik": "Düşey Doğru Testi vs. Yatay Doğru Testi",
+          "metin": "Verilen 1) Düşey Doğru Testi: Grafiğin 'fonksiyon' olup olmadığını test eder.\n2) Yatay Doğru Testi: Bir fonksiyonun 'bire bir' olup olmadığını ve görüntü kümesini (örtenliğini) test eder!"
+        }
+      ],
+      "tablo": {
+        "baslik": "Gerçek Sayılardan Gerçek Sayılara (R -> R) Örnek Fonksiyon Analizi",
+        "sutunlar": [
+          "Fonksiyon Kuralı (f: R -> R)",
+          "Bire Bir mi?",
+          "Örten mi?",
+          "Gerekçesi"
+        ],
+        "satirlar": [
+          [
+            "f(x) = 2x + 3 (Doğrusal)",
+            "Evet (Bire bir)",
+            "Evet (Örten)",
+            "Her y için tek bir x vardır; görüntü kümesi R'dir"
+          ],
+          [
+            "f(x) = x² (Karesel)",
+            "Hayır (f(-2) = f(2) = 4)",
+            "Hayır (İçine)",
+            "Negatif sayıların karesi de pozitiftir; f(R) = [0, ∞)"
+          ],
+          [
+            "f(x) = x³ (Kübik)",
+            "Evet (Bire bir)",
+            "Evet (Örten)",
+            "Sürekli artandır ve görüntü kümesi tüm R'dir"
+          ]
+        ],
+        "basliklar": [
+          "Fonksiyon Kuralı (f: R -> R)",
+          "Bire Bir mi?",
+          "Örten mi?",
+          "Gerekçesi"
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 900 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\"><rect width=\"900\" height=\"420\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/><rect x=\"16\" y=\"14\" width=\"868\" height=\"42\" rx=\"10\" fill=\"#1E293B\"/><text x=\"450\" y=\"41\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" fill=\"#FFFFFF\">Bire Birlik, Örtenlik ve Yatay Doğru Testi</text><rect x=\"60\" y=\"80\" width=\"360\" height=\"130\" rx=\"12\" fill=\"#EFF6FF\" stroke=\"#1E3A8A\" stroke-width=\"2\"/><rect x=\"60\" y=\"80\" width=\"360\" height=\"32\" rx=\"10\" fill=\"#1E3A8A\"/><text x=\"240\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Bire Bir Fonksiyon (İnjektif)</text><text x=\"240\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Farklı elemanların görüntüleri farklıdır</text><text x=\"240\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">x1 != x2 iken f(x1) != f(x2)</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Yatay Doğru Testi: Yatay doğrular</text><text x=\"240\" y=\"194\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">grafiği EN FAZLA 1 noktada keser</text><rect x=\"480\" y=\"80\" width=\"360\" height=\"130\" rx=\"12\" fill=\"#ECFDF5\" stroke=\"#065F46\" stroke-width=\"2\"/><rect x=\"480\" y=\"80\" width=\"360\" height=\"32\" rx=\"10\" fill=\"#065F46\"/><text x=\"660\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Örten Fonksiyon (Sürjektif)</text><text x=\"660\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Değer kümesinde açıkta eleman kalmaz</text><text x=\"660\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Görüntü kümesi = Değer kümesi (f(A) = B)</text><text x=\"660\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Yatay doğrular değer kümesinin her</text><text x=\"660\" y=\"194\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">noktasında grafiği EN AZ 1 kez keser</text><rect x=\"24\" y=\"374\" width=\"852\" height=\"32\" rx=\"8\" fill=\"#E2E8F0\"/><text x=\"450\" y=\"395\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"#0F172A\">Hem bire bir hem de örten olan fonksiyonların tersi de bir fonksiyondur!</text></svg>"
+    },
+    {
+      "baslik": "Fonksiyonların Nitel Özellikleri — IV: Tek ve Çift Fonksiyonlar",
+      "metin": [
+        "Simetrik bir tanım kümesinde ({koyu:[-a, a]} veya {koyu:R}) tanımlı fonksiyonlar simetri özelliklerine göre {koyu:çift fonksiyon} ve {koyu:tek fonksiyon} olarak sınıflandırılır. Tanım kümesindeki her x için {koyu:f(-x) = f(x)} eşitliği sağlanıyorsa fonksiyon {koyu:çift fonksiyondur} ve grafiği {koyu:y eksenine göre simetriktir} (Örn: {koyu:f(x) = x · x}, {koyu:f(x) = |x|}, {koyu:f(x) = x⁴ - 3x² + 5}).",
+        "Tanım kümesindeki her x için {koyu:f(-x) = -f(x)} eşitliği sağlanıyorsa fonksiyon {koyu:tek fonksiyondur} ve grafiği {koyu:orijine (0, 0 noktasına) göre simetriktir} (Örn: {koyu:f(x) = x³ - x}, {koyu:f(x) = 5x}). Bir fonksiyon hem tek hem çift olmayan bir yapıda da olabilir (Örn: {koyu:f(x) = x² + 2x} ne tektir ne çifttir)."
+      ],
+      "kutular": [
+        {
+          "tip": "ozet",
+          "baslik": "Polinom Fonksiyonlarda Teklik ve Çiftlik Kısayolu",
+          "metin": "Polinom biçimindeki bir fonksiyonda x'in tüm kuvvetleri çift ise (sabit terim c = c·x⁰ dahil) fonksiyon ÇİFT; x'in tüm kuvvetleri tek ise (sabit terim yoksa) fonksiyon TEK; hem tek hem çift kuvvetli terimler bir aradaysa NE TEK NE ÇİFTTİR."
+        }
+      ],
+      "liste": [
+        "{koyu:Çift fonksiyon:} {koyu:f(-x) = f(x)} → Grafiği {koyu:y eksenine} göre simetriktir.",
+        "{koyu:Tek fonksiyon:} {koyu:f(-x) = -f(x)} → Grafiği {koyu:orijine} göre simetriktir.",
+        "Y eksenine göre simetrik olan çift fonksiyonlar (tanım kümesinde en az iki eleman varsa) {koyu:f(-a) = f(a)} eşitliği sebebiyle {koyu:bire bir olamazlar}!"
+      ],
+      "gorsel": "<svg viewBox=\"0 0 900 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\"><rect width=\"900\" height=\"420\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/><rect x=\"16\" y=\"14\" width=\"868\" height=\"42\" rx=\"10\" fill=\"#1E293B\"/><text x=\"450\" y=\"41\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" fill=\"#FFFFFF\">Simetri Özellikleri: Çift ve Tek Fonksiyonlar</text><rect x=\"60\" y=\"80\" width=\"360\" height=\"130\" rx=\"12\" fill=\"#F5F3FF\" stroke=\"#7C3AED\" stroke-width=\"2\"/><rect x=\"60\" y=\"80\" width=\"360\" height=\"32\" rx=\"10\" fill=\"#7C3AED\"/><text x=\"240\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Çift Fonksiyon: f(-x) = f(x)</text><text x=\"240\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Grafiği Y EKSENİNE göre simetriktir</text><text x=\"240\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Eksiyi yutar: f(-a) = f(a)</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Örn: f(x) = x^2, f(x) = |x|, f(x) = x^4 - 2</text><text x=\"240\" y=\"194\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">(Polinomda tüm kuvvetler çifttir)</text><rect x=\"480\" y=\"80\" width=\"360\" height=\"130\" rx=\"12\" fill=\"#FFF7ED\" stroke=\"#9A3412\" stroke-width=\"2\"/><rect x=\"480\" y=\"80\" width=\"360\" height=\"32\" rx=\"10\" fill=\"#9A3412\"/><text x=\"660\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Tek Fonksiyon: f(-x) = -f(x)</text><text x=\"660\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Grafiği ORİJİNE (0, 0) göre simetriktir</text><text x=\"660\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Eksiyi dışarı atar: f(-a) = -f(a)</text><text x=\"660\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Örn: f(x) = x^3, f(x) = 3x, f(x) = x^3 - x</text><text x=\"660\" y=\"194\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">(Polinomda tüm kuvvetler tektir)</text><rect x=\"24\" y=\"374\" width=\"852\" height=\"32\" rx=\"8\" fill=\"#E2E8F0\"/><text x=\"450\" y=\"395\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"#0F172A\">Hem çift hem tek dereceli terim içeren f(x) = x^2 + x gibi fonksiyonlar ne tektir ne çifttir.</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Rakamları birbirinden farklı dört basamaklı 4a7b doğal sayısı 36 ile tam bölünebildiğine göre a'nın alabileceği değerler toplamı kaçtır?",
+      "cozum": "36 ile tam bölünen sayı aralarında asal çarpanları olan {koyu:4 ve 9'a} tam bölünür. Önce 4 ile bölünebilmeye (son iki basamak 7b) bakalım: 72 ve 76 sayısı 4'e tam bölünür; yani {koyu:b = 2} veya {koyu:b = 6} olabilir.\n• b = 2 için {koyu:4a72}: Rakamlar toplamı 4 + a + 7 + 2 = 13 + a = 18 → {koyu:a = 5} (rakamları farklı: 4, 5, 7, 2).\n• b = 6 için {koyu:4a76}: Rakamlar toplamı 4 + a + 7 + 6 = 17 + a = 18 → {koyu:a = 1} (rakamları farklı: 4, 1, 7, 6).\nBuna göre a'nın alabileceği değerler toplamı 5 + 1 = {koyu:6} bulunur.",
+      "ipucu": "36 = 4 · 9 çarpanlarını kullanıp önce son iki basamağa 4 kuralını uygulayınız.",
+      "cevap": "36 ile tam bölünen sayı aralarında asal çarpanları olan {koyu:4 ve 9'a} tam bölünür. Önce 4 ile bölünebilmeye (son iki basamak 7b) bakalım: 72 ve 76 sayısı 4'e tam bölünür; yani {koyu:b = 2} veya {koyu:b = 6} olabilir.\n• b = 2 için {koyu:4a72}: Rakamlar toplamı 4 + a + 7 + 2 = 13 + a = 18 → {koyu:a = 5} (rakamları farklı: 4, 5, 7, 2).\n• b = 6 için {koyu:4a76}: Rakamlar toplamı 4 + a + 7 + 6 = 17 + a = 18 → {koyu:a = 1} (rakamları farklı: 4, 1, 7, 6).\nBuna göre a'nın alabileceği değerler toplamı 5 + 1 = {koyu:6} bulunur."
+    },
+    {
+      "soru": "Beş basamaklı 52x4y doğal sayısının 45 ile bölümünden kalan 17'dir. Buna göre x kaç farklı değer alabilir?",
+      "cozum": "45'in aralarında asal çarpanları {koyu:5 ve 9}'dur. Sayının 45 ile bölümünden kalan 17 olduğuna göre:\n• 5 ile bölümünden kalan: 17'nin 5'e bölümünden kalan olan {koyu:2}'dir → Birler basamağı {koyu:y = 2} veya {koyu:y = 7} olur.\n• 9 ile bölümünden kalan: 17'nin 9'a bölümünden kalan olan {koyu:8}'dir.\n1) y = 2 için {koyu:52x42}: 5 + 2 + x + 4 + 2 = 13 + x = 9k + 8 → x + 5 = 9k → {koyu:x = 4}.\n2) y = 7 için {koyu:52x47}: 5 + 2 + x + 4 + 7 = 18 + x = 9k + 8 → {koyu:x = 8}.\nRakamları farklı şartı verilmediğinden x; 4 ve 8 olmak üzere {koyu:2 farklı değer} alır.",
+      "ipucu": "17 kalanını 5'e ve 9'a bölerek yeni kalanları (2 ve 8) belirleyiniz.",
+      "cevap": "45'in aralarında asal çarpanları {koyu:5 ve 9}'dur. Sayının 45 ile bölümünden kalan 17 olduğuna göre:\n• 5 ile bölümünden kalan: 17'nin 5'e bölümünden kalan olan {koyu:2}'dir → Birler basamağı {koyu:y = 2} veya {koyu:y = 7} olur.\n• 9 ile bölümünden kalan: 17'nin 9'a bölümünden kalan olan {koyu:8}'dir.\n1) y = 2 için {koyu:52x42}: 5 + 2 + x + 4 + 2 = 13 + x = 9k + 8 → x + 5 = 9k → {koyu:x = 4}.\n2) y = 7 için {koyu:52x47}: 5 + 2 + x + 4 + 7 = 18 + x = 9k + 8 → {koyu:x = 8}.\nRakamları farklı şartı verilmediğinden x; 4 ve 8 olmak üzere {koyu:2 farklı değer} alır."
+    },
+    {
+      "soru": "Gerçek sayılarda f(x) = {kesir:{kok:x + 4}|x - 2} cebirsel ifadesinin fonksiyon belirttiği en geniş tanım kümesi nedir?",
+      "cozum": "İfadenin gerçek sayı belirtmesi için iki şart vardır:\n1) Karekök içi negatif olamaz: x + 4 >= 0 → {koyu:x >= -4}.\n2) Payda sıfır olamaz: x - 2 != 0 → {koyu:x != 2}.\nDolayısıyla en geniş tanım kümesi {koyu:[-4, sonsuz) fark (2)} kümesidir.",
+      "ipucu": "Karekök içini >= 0, paydayı ise != 0 yapınız.",
+      "cevap": "İfadenin gerçek sayı belirtmesi için iki şart vardır:\n1) Karekök içi negatif olamaz: x + 4 >= 0 → {koyu:x >= -4}.\n2) Payda sıfır olamaz: x - 2 != 0 → {koyu:x != 2}.\nDolayısıyla en geniş tanım kümesi {koyu:[-4, sonsuz) fark (2)} kümesidir."
+    },
+    {
+      "soru": "f: R -> R, f(x) = 2x - 8 doğrusal fonksiyonunun sıfırını (kökünü), pozitif ve negatif olduğu aralıkları bulunuz.",
+      "cozum": "• Fonksiyonun sıfırı için f(x) = 0 denklemi çözülür: 2x - 8 = 0 → 2x = 8 → {koyu:x = 4} fonksiyonun sıfırıdır.\n• Pozitif olduğu aralık: 2x - 8 > 0 → {koyu:x > 4} yani {koyu:(4, sonsuz)} aralığıdır.\n• Negatif olduğu aralık: 2x - 8 < 0 → {koyu:x < 4} yani {koyu:(-sonsuz, 4)} aralığıdır.",
+      "ipucu": "f(x) = 0, f(x) > 0 ve f(x) < 0 durumlarını inceleyiniz.",
+      "cevap": "• Fonksiyonun sıfırı için f(x) = 0 denklemi çözülür: 2x - 8 = 0 → 2x = 8 → {koyu:x = 4} fonksiyonun sıfırıdır.\n• Pozitif olduğu aralık: 2x - 8 > 0 → {koyu:x > 4} yani {koyu:(4, sonsuz)} aralığıdır.\n• Negatif olduğu aralık: 2x - 8 < 0 → {koyu:x < 4} yani {koyu:(-sonsuz, 4)} aralığıdır."
+    },
+    {
+      "soru": "f: [-3, 5] -> R fonksiyonu f(x) = -2x + 4 kuralıyla tanımlanmıştır. Bu fonksiyonun görüntü kümesini, maksimum ve minimum değerlerini bulunuz.",
+      "cozum": "f(x) = -2x + 4 fonksiyonunda x'in katsayısı negatif (-2) olduğu için fonksiyon {koyu:azalandır}.\n• En büyük (maksimum) değerini x = -3 uç noktasında alır: f(-3) = -2·(-3) + 4 = {koyu:10}.\n• En küçük (minimum) değerini x = 5 uç noktasında alır: f(5) = -2·(5) + 4 = {koyu:-6}.\nDolayısıyla görüntü kümesi {koyu:f(A) = [-6, 10]} kapalı aralığıdır.",
+      "ipucu": "Uç noktaları fonksiyonda yerine yazarak görüntü aralığını belirleyiniz.",
+      "cevap": "f(x) = -2x + 4 fonksiyonunda x'in katsayısı negatif (-2) olduğu için fonksiyon {koyu:azalandır}.\n• En büyük (maksimum) değerini x = -3 uç noktasında alır: f(-3) = -2·(-3) + 4 = {koyu:10}.\n• En küçük (minimum) değerini x = 5 uç noktasında alır: f(5) = -2·(5) + 4 = {koyu:-6}.\nDolayısıyla görüntü kümesi {koyu:f(A) = [-6, 10]} kapalı aralığıdır."
+    },
+    {
+      "soru": "Grafiği y eksenine göre simetrik olan bir f: R -> R fonksiyonu için f(x) + 2·f(-x) = 3x² - 12 eşitliği veriliyor. Buna göre f(3) değeri kaçtır?",
+      "cozum": "Grafiği y eksenine göre simetrik olan fonksiyon {koyu:çift fonksiyondur} ve her x için {koyu:f(-x) = f(x)} eşitliğini sağlar. Denklemde f(-x) yerine f(x) yazarsak:\nf(x) + 2·f(x) = 3x² - 12 → 3·f(x) = 3x² - 12 → {koyu:f(x) = x² - 4} bulunur.\nBuradan x = 3 için f(3) = 3² - 4 = 9 - 4 = {koyu:5} elde edilir.",
+      "ipucu": "Y eksenine göre simetrinin çift fonksiyon (f(-x) = f(x)) demek olduğunu kullanınız.",
+      "cevap": "Grafiği y eksenine göre simetrik olan fonksiyon {koyu:çift fonksiyondur} ve her x için {koyu:f(-x) = f(x)} eşitliğini sağlar. Denklemde f(-x) yerine f(x) yazarsak:\nf(x) + 2·f(x) = 3x² - 12 → 3·f(x) = 3x² - 12 → {koyu:f(x) = x² - 4} bulunur.\nBuradan x = 3 için f(3) = 3² - 4 = 9 - 4 = {koyu:5} elde edilir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tip": "coktan",
+      "soru": "Dört basamaklı 6x3y doğal sayısı 15 ile tam bölünebilen bir çift sayıdır. Buna göre x'in alabileceği değerlerin toplamı kaçtır?",
+      "secenekler": [
+        "9",
+        "12",
+        "15",
+        "18",
+        "Tek Fonksiyon"
+      ],
+      "cevap": 3,
+      "aciklama": "Sayı 15'e (3 ve 5'e) tam bölünen bir çift sayı olduğu için birler basamağı y = 0'dır (6x30). 3 ile bölünebilmesi için 6 + x + 3 + 0 = 9 + x = 3k -> x {0, 3, 6, 9} değerlerini alır; toplamları 0 + 3 + 6 + 9 = 18'dir.",
+      "tur": "coktan",
+      "dogru": 3
+    },
+    {
+      "tip": "coktan",
+      "soru": "Gerçek sayılarda tanımlı aşağıdaki fonksiyonlardan hangisi hem bire bir hem de örten bir fonksiyondur?",
+      "secenekler": [
+        "f: R -> R, f(x) = x² + 1",
+        "f: R -> R, f(x) = 3x - 5",
+        "f: R -> R, f(x) = |x|",
+        "f: R -> R, f(x) = 7",
+        "Fonksiyonun Sıfırı"
+      ],
+      "cevap": 1,
+      "aciklama": "f(x) = 3x - 5 doğrusal fonksiyonu R'den R'ye hem bire bir hem de örtendir; x² + 1, |x| ve sabit fonksiyon ise bire bir ve örten değildir.",
+      "tur": "coktan",
+      "dogru": 1
+    },
+    {
+      "tip": "coktan",
+      "soru": "Aşağıda kuralı verilen gerçek sayı fonksiyonlarından hangisinin grafiği orijine (başlangıç noktasına) göre simetriktir?",
+      "secenekler": [
+        "f(x) = x² + 4",
+        "f(x) = x³ - 5x",
+        "f(x) = x⁴ - 2x²",
+        "f(x) = 2x + 1",
+        "Çift Fonksiyon"
+      ],
+      "cevap": 1,
+      "aciklama": "Grafiği orijine göre simetrik olan fonksiyonlar TEK fonksiyonlardır. f(x) = x³ - 5x fonksiyonunda tüm kuvvetler (3 ve 1) tek olduğu için tek fonksiyondur.",
+      "tur": "coktan",
+      "dogru": 1
+    },
+    {
+      "tip": "coktan",
+      "soru": "f: R -> R, f(x) = -x² + 9 fonksiyonunun sıfırlarının (grafiğinin x eksenini kestiği noktaların apsislerinin) çarpımı kaçtır?",
+      "secenekler": [
+        "-9",
+        "-3",
+        "0",
+        "9",
+        "Tek Fonksiyon"
+      ],
+      "cevap": 0,
+      "aciklama": "f(x) = 0 -> -x² + 9 = 0 -> x² = 9 -> x = -3 ve x = 3 bulunur. Sıfırların çarpımı (-3) · 3 = -9'dur.",
+      "tur": "coktan",
+      "dogru": 0
+    },
+    {
+      "tip": "dy",
+      "soru": "Aşağıdaki ifadeleri Doğru (D) veya Yanlış (Y) olarak değerlendiriniz.",
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "ifade": "Bir doğal sayının 36 ile tam bölünebilmesi için aralarında asal olan 4 ve 9 sayılarına ayrı ayrı tam bölünmesi gerekir.",
+          "dogru": true,
+          "aciklama": "EKOK(4, 9) = 36 ve EBOB(4, 9) = 1 olduğu için 4 ve 9 kuralları birlikte uygulanır."
+        },
+        {
+          "ifade": "Koordinat düzleminde y eksenine paralel çizilen düşey doğrular bir grafiği iki farklı noktada kesiyorsa o grafik bir fonksiyon belirtir.",
+          "dogru": false,
+          "aciklama": "Düşey Doğru Testi'ne göre düşey doğrular grafiği en fazla bir noktada kesmelidir; iki noktada kesiyorsa fonksiyon değildir."
+        },
+        {
+          "ifade": "Tanım kümesindeki her x için f(-x) = f(x) eşitliğini sağlayan fonksiyonlara çift fonksiyon denir ve grafikleri y eksenine göre simetriktir.",
+          "dogru": true,
+          "aciklama": "Çift fonksiyonların grafikleri y eksenine göre simetriktir."
+        },
+        {
+          "ifade": "Bir fonksiyonun grafiğinin x ekseninin altında kalan kısımlarında fonksiyon pozitif değerlidir (f(x) > 0).",
+          "dogru": false,
+          "aciklama": "X ekseninin altında y değerleri negatif olduğu için f(x) < 0 (negatif değerli) olur."
+        },
+        {
+          "ifade": "Değer kümesinde açıkta hiçbir eleman kalmayan (görüntü kümesi değer kümesine eşit olan) fonksiyonlara örten fonksiyon denir.",
+          "dogru": true,
+          "aciklama": "f(A) = B koşulunu sağlayan fonksiyonlar örtendir."
+        }
+      ]
+    },
+    {
+      "tip": "eslestir",
+      "soru": "Aşağıdaki fonksiyon kavramlarını ve testlerini açıklamalarıyla doğru şekilde eşleştiriniz.",
+      "ciftler": [
+        [
+          "Düşey Doğru Testi",
+          "Bir grafiğin fonksiyon belirtip belirtmediğini belirleyen test"
+        ],
+        [
+          "Yatay Doğru Testi",
+          "Bir fonksiyonun bire bir ve örten olup olmadığını belirleyen test"
+        ],
+        [
+          "Fonksiyonun Sıfırı",
+          "f(x) = 0 denklemini sağlayan ve grafiğin x eksenini kestiği apsis değeri"
+        ],
+        [
+          "Çift Fonksiyon",
+          "f(-x) = f(x) şartını sağlayan ve grafiği y eksenine göre simetrik olan fonksiyon"
+        ],
+        [
+          "Tek Fonksiyon",
+          "f(-x) = -f(x) şartını sağlayan ve grafiği orijine göre simetrik olan fonksiyon"
+        ]
+      ],
+      "tur": "eslestir"
+    },
+    {
+      "tip": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir doğal sayının 45 ile tam bölünebilmesi için aralarında asal olan 5 ve ___ sayılarına tam bölünmesi gerekir.",
+          "cevap": "9"
+        },
+        {
+          "metin": "Tanım kümesindeki farklı elemanların görüntülerinin de farklı olduğu fonksiyonlara ___ fonksiyon denir.",
+          "cevap": "bire bir"
+        },
+        {
+          "metin": "Bir fonksiyon grafiğinin x eksenini kestiği noktaların apsislerine fonksiyonun ___ adı verilir.",
+          "cevap": "sıfırları"
+        },
+        {
+          "metin": "x1 < x2 iken f(x1) < f(x2) eşitsizliği sağlanıyorsa fonksiyon o aralıkta ___ bir fonksiyondur.",
+          "cevap": "artan"
+        },
+        {
+          "metin": "f(-x) = -f(x) eşitliğini sağlayan tek fonksiyonların grafikleri ___ göre simetriktir.",
+          "cevap": "orijine"
+        }
+      ],
+      "kelimeler": [
+        "9",
+        "bire bir",
+        "sıfırları",
+        "artan",
+        "orijine"
+      ],
+      "fazla": [
+        "azalan",
+        "y eksenine"
+      ],
+      "tur": "bosluk"
+    },
+    {
+      "tip": "ogretici",
+      "soru": "f: R -> R, f(x) = x² - 4 fonksiyonunun nitel özelliklerini 3 adımda analiz ediniz.",
+      "ipuclari": [
+        ": ",
+        ": ",
+        ": "
+      ],
+      "cevap": "  ",
+      "tur": "ogretici"
+    }
+  ],
+  "giris": "Aralarında asal çarpanların en küçük ortak katından (EKOK) oluşan {koyu:6 (2 ve 3)}, {koyu:12 (3 ve 4)}, {koyu:15 (3 ve 5)}, {koyu:18 (2 ve 9)}, {koyu:30 (3 ve 10)}, {koyu:36 (4 ve 9)} ve {koyu:45 (5 ve 9)} sayılarına bölünebilmede aralarında asal çarpanların kuralları birlikte uygulanır.",
+  "ad": "10-matematik-14"
+}

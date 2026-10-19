@@ -1,0 +1,465 @@
+{
+  "ad": "12-matematik-14",
+  "sinif": 12,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 14,
+  "tarih": "21-25 Aralık 2026",
+  "yayin_tarihi": "2026-12-21",
+  "unite": "GEOMETRİ: TRİGONOMETRİ",
+  "konu": "Trigonometri: Lineer ve Homojen Trigonometrik Denklemler ile Gerçek Hayat Problemleri",
+  "ciktilar": [
+    "12.3.2.1. Trigonometrik denklemlerin çözüm kümelerini bulur.",
+    "12.3.2.1.b. a·sin f(x) + b·cos g(x) = c biçimindeki denklemlerin çözüm varlığını katsayılarla ilişkilendirerek inceler.",
+    "12.3.2.1.c. Trigonometrik denklemleri gerçek hayat problemlerinin modellenmesinde kullanır ve El-Battani'nin çalışmalarını tanır."
+  ],
+  "kavramlar": [
+    {
+      "terim": "Homojen Trigonometrik Denklem",
+      "tanim": "Her teriminin derecesi aynı olan ve eşitliğin sağ tarafı sıfır olan (örneğin a·sin x + b·cos x = 0) trigonometrik denklemlerdir."
+    },
+    {
+      "terim": "Lineer Trigonometrik Denklem",
+      "tanim": "a, b ve c sıfırdan farklı gerçek sayılar olmak üzere a·sin x + b·cos x = c biçiminde yazılan birinci dereceden denklemdir."
+    },
+    {
+      "terim": "Çözüm Varlığı (Kök) Koşulu",
+      "tanim": "a·sin x + b·cos x = c denkleminin gerçek sayılarda çözümünün bulunması için gerekli ve yeterli olan {us:c|2} küçük veya eşit {us:a|2} + {us:b|2} eşitsizliğidir."
+    },
+    {
+      "terim": "Yardımcı Açı Yöntemi",
+      "tanim": "Lineer trigonometrik denklemde b/a oranına tan(alfa) denilerek ifadenin toplam-fark formülüyle tek bir sinüs veya kosinüs fonksiyonuna dönüştürülmesidir."
+    },
+    {
+      "terim": "Periyodik Modelleme",
+      "tanim": "Dönme dolap, gelgit, alternatif akım ve yay salınımı gibi kendini tekrarlayan olayların y(t) = A·sin(B·t + C) + D fonksiyonuyla ifade edilmesidir."
+    },
+    {
+      "terim": "El-Battani (Albategnius)",
+      "tanim": "Harranlı Müslüman astronom ve matematikçi olup tan(x) = sin(x) / cos(x) özdeşliğini ve trigonometrik tabloları bilim dünyasına kazandıran bilgindir."
+    }
+  ],
+  "giris": "Temel sinüs, kosinüs, tanjant ve kotanjant denklemlerinin ardından trigonometrinin en güçlü uygulama alanı; birden fazla trigonometrik fonksiyonun bir arada bulunduğu homojen ve lineer trigonometrik denklemlerin çözümüdür. Bu hafta katsayılar yardımıyla lineer bir trigonometrik denklemin çözüm kümesinin boş küme olup olmadığını belirlemeyi, yardımcı açı dönüşümünü, periyodik gerçek hayat problemlerinin modellenmesini ve Harranlı büyük bilgin El-Battani'nin trigonometri tarihindeki öncü yerini inceliyoruz.",
+  "bolumler": [
+    {
+      "baslik": "Homojen Trigonometrik Denklemler ve Çözüm Yöntemi",
+      "metin": [
+        "Eşitliğin sağ tarafı sıfır olan ve sol taraftaki tüm terimlerin derecesi birbirine eşit olan denklemlere {koyu:homojen trigonometrik denklem} denir. Birinci dereceden homojen denklem {koyu:a · sin(x) + b · cos(x) = 0} (a ve b sıfırdan farklı) biçimindedir. Bu denklemde cos(x) = 0 değeri denklemi sağlamadığı için eşitliğin her iki tarafı cos(x) ile bölünür ve {koyu:a · tan(x) + b = 0}, buradan da {koyu:tan(x) = -{kesir:b|a}} temel tanjant denklemi elde edilir. Tanjant fonksiyonunun periyodu pi (180 derece) olduğundan tan(alfa) = -{kesir:b|a} sağlayan alfa açısı için genel çözüm {koyu:x = alfa + k · pi} (k tam sayı) olarak yazılır.",
+        "İkinci dereceden homojen trigonometrik denklemler ise {koyu:a · {us:sin|2}(x) + b · sin(x) · cos(x) + c · {us:cos|2}(x) = 0} biçimindedir. Eğer a sıfırdan farklıysa eşitliğin her iki tarafı {koyu:{us:cos|2}(x)} ile bölünerek {koyu:a · {us:tan|2}(x) + b · tan(x) + c = 0} denklemi elde edilir. Burada {koyu:tan(x) = t} değişken değiştirmesi yapılarak oluşan {koyu:a · {us:t|2} + b · t + c = 0} ikinci dereceden denklemi çarpanlarına ayrılır ve bulunan her gerçek t kökü için tan(x) = t denkleminin kökleri ayrı ayrı belirlenir."
+      ],
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Homojen Denklem İndirgeme Kuralı",
+          "metin": "a·sin(x) + b·cos(x) = 0 denkleminde her iki taraf cos(x)'e bölünerek doğrudan tan(x) = -b/a eşitliğine geçilir ve x = alfa + k·pi bulunur."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Sabit Sayıyı Homojenleştirme",
+          "metin": "a·{us:sin|2}(x) + b·sin(x)cos(x) = d gibi bir denklemde sağdaki d sayısının yanına d·({us:sin|2}(x) + {us:cos|2}(x)) yazılarak denklem homojen hale getirilebilir."
+        }
+      ],
+      "tablo": {
+        "basliklar": [
+          "Homojen Denklem Tipi",
+          "Uygulanan Bölme İşlemi",
+          "Dönüştüğü Temel Denklem",
+          "Örnek ve Sonuç"
+        ],
+        "satirlar": [
+          [
+            "a·sin(x) + b·cos(x) = 0",
+            "İki taraf cos(x) ile bölünür",
+            "tan(x) = -{kesir:b|a}",
+            "{kok:3}·sin(x) - cos(x) = 0 ise tan(x) = {kesir:1|{kok:3}} ve x = {kesir:pi|6} + k·pi"
+          ],
+          [
+            "a·{us:sin|2}(x) + b·sin(x)cos(x) + c·{us:cos|2}(x) = 0",
+            "İki taraf {us:cos|2}(x) ile bölünür",
+            "a·{us:tan|2}(x) + b·tan(x) + c = 0",
+            "{us:sin|2}(x) - 3·sin(x)cos(x) + 2·{us:cos|2}(x) = 0 ise tan(x) = 1 veya tan(x) = 2"
+          ]
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Poppins, sans-serif\"><rect width=\"700\" height=\"260\" rx=\"16\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e3a8a\">Homojen Trigonometrik Denklemler ve Çözüm Algoritması</text><rect x=\"28\" y=\"52\" width=\"305\" height=\"170\" rx=\"12\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"2\"/><rect x=\"28\" y=\"52\" width=\"305\" height=\"32\" rx=\"12\" fill=\"#2563eb\"/><text x=\"180\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">1. Dereceden Homojen Denklem</text><text x=\"46\" y=\"106\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e40af\">Biçim: a . sin(x) + b . cos(x) = 0</text><text x=\"46\" y=\"130\" font-size=\"10.5\" fill=\"#1e3a8a\">• Eşitliğin iki tarafı cos(x) ile bölünür:</text><text x=\"56\" y=\"152\" font-size=\"11\" font-weight=\"700\" fill=\"#1d4ed8\">a . tan(x) + b = 0  =&gt;  tan(x) = -b / a</text><text x=\"46\" y=\"178\" font-size=\"10.5\" fill=\"#1e3a8a\">• tan(alfa) = -b / a ise genel çözüm:</text><text x=\"56\" y=\"198\" font-size=\"11\" font-weight=\"700\" fill=\"#059669\">x = alfa + k . pi  (k tam sayı)</text><rect x=\"367\" y=\"52\" width=\"305\" height=\"170\" rx=\"12\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"2\"/><rect x=\"367\" y=\"52\" width=\"305\" height=\"32\" rx=\"12\" fill=\"#7c3aed\"/><text x=\"520\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">2. Dereceden Homojen Denklem</text><text x=\"383\" y=\"104\" font-size=\"10.5\" font-weight=\"700\" fill=\"#581c87\">a . sin^2(x) + b . sin(x)cos(x) + c . cos^2(x) = 0</text><text x=\"383\" y=\"128\" font-size=\"10.5\" fill=\"#3b0764\">• İki taraf cos^2(x) ile bölünür (t = tan(x)):</text><text x=\"393\" y=\"150\" font-size=\"11\" font-weight=\"700\" fill=\"#6b21a8\">a . t^2 + b . t + c = 0</text><text x=\"383\" y=\"176\" font-size=\"10.5\" fill=\"#3b0764\">• Çarpanlara ayrılarak t1 ve t2 kökleri bulunur:</text><text x=\"393\" y=\"198\" font-size=\"11\" font-weight=\"700\" fill=\"#059669\">tan(x) = t1  ve  tan(x) = t2</text><text x=\"350\" y=\"246\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" fill=\"#1e3a8a\">Sağ taraf sıfır (c = 0) olduğunda cos(x) veya cos^2(x) ile bölme işlemi denklemi tan(x) e indirger.</text></svg>"
+    },
+    {
+      "baslik": "Lineer Trigonometrik Denklemler ve Çözüm Varlığı Koşulu",
+      "metin": [
+        "Katsayıları sıfırdan farklı olmak üzere {koyu:a · sin(x) + b · cos(x) = c} biçimindeki denklemlere {koyu:lineer trigonometrik denklem} adı verilir. Analitik incelemede {koyu:f(x) = a · sin(x) + b · cos(x)} ifadesinin alabileceği en büyük değer {koyu:+{kok:{us:a|2} + {us:b|2}}}, alabileceği en küçük değer ise {koyu:-{kok:{us:a|2} + {us:b|2}}} olarak bulunur. Dolayısıyla bu denklemin gerçek sayılarda en az bir çözümünün (kökünün) bulunabilmesi için eşitliğin sağ tarafındaki c sayısının bu aralıkta yer alması şarttır.",
+        "Bu kural matematiksel olarak {koyu:|c| küçük veya eşit {kok:{us:a|2} + {us:b|2}}} ya da her iki tarafın karesi alınarak {koyu:{us:c|2} küçük veya eşit {us:a|2} + {us:b|2}} biçiminde ifade edilir. Eğer {koyu:{us:c|2} > {us:a|2} + {us:b|2}} ise denklemin gerçek sayılarda hiçbir kökü yoktur ve çözüm kümesi {koyu:boş kümedir}. Kök varlığı koşulu sağlandığında denklemi çözmek için {koyu:yardımcı açı yöntemi} uygulanır: Denklem a ile bölünür, {koyu:{kesir:b|a} = tan(alfa) = {kesir:sin(alfa)|cos(alfa)}} yerine yazılır ve toplam formülü olan {koyu:sin(x + alfa) = cos(x - alfa)} yapılarından biri elde edilerek kökler bulunur."
+      ],
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Lineer Denklemde Kök Varlığı Şartı",
+          "metin": "a·sin(x) + b·cos(x) = c denkleminin çözüm kümesinin boş küme olmaması için {us:c|2} <= {us:a|2} + {us:b|2} şartı sağlanmalıdır."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Özel Dik Üçgen Katsayıları (3-4-5 ve 1-kök(3)-2)",
+          "metin": "Özel olarak 3·sin(x) + 4·cos(x) ifadesinin maksimum değeri {kok:9+16} = 5'tir; sin(x) + {kok:3}·cos(x) ifadesinin maksimum değeri ise {kok:1+3} = 2'dir."
+        }
+      ],
+      "liste": [
+        "Örnek 1 (Çözüm Yok): 3·sin(x) - 4·cos(x) = 6 denkleminde {us:a|2} + {us:b|2} = 9 + 16 = 25 iken {us:c|2} = 36 > 25 olduğundan çözüm kümesi boş kümedir.",
+        "Örnek 2 (Çözüm Var): sin(x) + {kok:3}·cos(x) = {kok:2} denkleminde {us:a|2} + {us:b|2} = 1 + 3 = 4 ve {us:c|2} = 2 <= 4 olduğundan gerçek kökler vardır.",
+        "Yardımcı Açı Dönüşümü: sin(x) + {kok:3}·cos(x) ifadesinde {kok:3} = tan(60 derece) = sin(60)/cos(60) yazılıp payda eşitlenirse 2·sin(x + 60 derece) elde edilir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Poppins, sans-serif\"><rect width=\"700\" height=\"260\" rx=\"16\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#14532d\">Lineer Trigonometrik Denklem: a . sin(x) + b . cos(x) = c</text><rect x=\"28\" y=\"52\" width=\"305\" height=\"170\" rx=\"12\" fill=\"#ffffff\" stroke=\"#16a34a\" stroke-width=\"2\"/><rect x=\"28\" y=\"52\" width=\"305\" height=\"32\" rx=\"12\" fill=\"#16a34a\"/><text x=\"180\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">Çözüm Varlığı (Gerçek Kök) Şartı</text><text x=\"44\" y=\"104\" font-size=\"10.5\" fill=\"#14532d\">• İfadenin alabileceği en büyük değer:</text><text x=\"64\" y=\"124\" font-size=\"11.5\" font-weight=\"700\" fill=\"#15803d\">R_max = + kök(a^2 + b^2)</text><text x=\"44\" y=\"148\" font-size=\"10.5\" fill=\"#14532d\">• İfadenin alabileceği en küçük değer:</text><text x=\"64\" y=\"168\" font-size=\"11.5\" font-weight=\"700\" fill=\"#15803d\">R_min = - kök(a^2 + b^2)</text><rect x=\"44\" y=\"182\" width=\"272\" height=\"28\" rx=\"6\" fill=\"#dcfce7\"/><text x=\"180\" y=\"200\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#065f46\">Kök Şartı: c^2 &lt;= a^2 + b^2</text><rect x=\"367\" y=\"52\" width=\"305\" height=\"170\" rx=\"12\" fill=\"#ffffff\" stroke=\"#0284c7\" stroke-width=\"2\"/><rect x=\"367\" y=\"52\" width=\"305\" height=\"32\" rx=\"12\" fill=\"#0284c7\"/><text x=\"520\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">Yardımcı Açı ile Çözüm Adımları</text><text x=\"383\" y=\"102\" font-size=\"10.5\" fill=\"#0c4a6e\">1. Her terim a ya bölünür ve b / a = tan(alfa) denir.</text><text x=\"383\" y=\"124\" font-size=\"10.5\" fill=\"#0c4a6e\">2. tan(alfa) = sin(alfa) / cos(alfa) yerine yazılır.</text><text x=\"383\" y=\"146\" font-size=\"10.5\" fill=\"#0c4a6e\">3. Toplam formülüyle tek fonksiyona düşürülür:</text><text x=\"395\" y=\"168\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">sin(x + alfa) = (c / a) . cos(alfa)</text><text x=\"383\" y=\"196\" font-size=\"10.5\" fill=\"#0c4a6e\">4. Temel sinüs denklemi kökleri yazılır.</text><text x=\"350\" y=\"246\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" fill=\"#14532d\">Eğer c^2 &gt; a^2 + b^2 ise denklemin gerçek sayılarda çözüm kümesi boş kümedir (ÇK = Boş).</text></svg>"
+    },
+    {
+      "baslik": "Çarpanlara Ayırma, Özdeşlik ve Yarım Açı Dönüşümlü Denklemler",
+      "metin": [
+        "Birçok trigonometrik denklem, bilinen özdeşlikler yardımıyla tek bir trigonometrik fonksiyona bağlı cebirsel denkleme dönüştürülerek çözülür. Denklemde {us:sin|2}(x) ile cos(x) bir arada bulunuyorsa Pisagor özdeşliğinden {koyu:{us:sin|2}(x) = 1 - {us:cos|2}(x)} yerine yazılarak tüm denklem cos(x) cinsinden ikinci dereceden bir denkleme dönüştürülür. Aynı şekilde tan(x) ve cot(x) bir arada bulunduğunda {koyu:cot(x) = {kesir:1|tan(x)}} dönüşümü kullanılır.",
+        "Farklı açı argümanları (örneğin x ve 2x) içeren denklemlerde ise {koyu:yarım açı (iki kat açı) formülleri} devreye girer. {koyu:sin(2x) = 2 · sin(x) · cos(x)} özdeşliği ortak çarpan parantezine almayı sağlarken; {koyu:cos(2x)} için yanındaki sabit sayıyı yok edecek uygun açılım ({koyu:2·{us:cos|2}(x) - 1} veya {koyu:1 - 2·{us:sin|2}(x)}) seçilir. Çözüm sırasında {koyu:sin(x) veya cos(x) gibi değişken içeren çarpanları eşitliğin iki tarafından sadeleştirmemek} çok önemlidir; sadeleştirme yapmak o çarpanı sıfır yapan köklerin yitirilmesine ({koyu:kök kaybına}) yol açar. Bunun yerine tüm terimler bir tarafa toplanıp ortak çarpan parantezine alınmalıdır."
+      ],
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Kök Kaybı ve Yabancı Kök Uyarısı",
+          "metin": "Birincisi değişkenli terimleri sadeleştirmeyin, ortak çarpan parantezine alın (kök kaybını önler). İkincisi paydada değişken varsa paydayı sıfır yapan değerleri çözüm kümesinden çıkarın."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "+1 ve -1 Yok Etme Tekniği",
+          "metin": "Denklemlerde 1 + cos(2x) gördüğünüzde 1 + (2·{us:cos|2}(x) - 1) = 2·{us:cos|2}(x); 1 - cos(2x) gördüğünüzde ise 1 - (1 - 2·{us:sin|2}(x)) = 2·{us:sin|2}(x) yazınız."
+        }
+      ],
+      "tablo": {
+        "basliklar": [
+          "Denklemde Görülen Yapı",
+          "Uygulanacak Dönüşüm",
+          "Hedeflenen Çarpan / Denklem"
+        ],
+        "satirlar": [
+          [
+            "a·{us:cos|2}(x) + b·sin(x) + c = 0",
+            "{us:cos|2}(x) = 1 - {us:sin|2}(x) yazılır",
+            "sin(x) değişkenine bağlı 2. dereceden denklem"
+          ],
+          [
+            "sin(2x) - cos(x) = 0",
+            "sin(2x) = 2·sin(x)·cos(x) yazılır",
+            "cos(x) · (2·sin(x) - 1) = 0 çarpanlarına ayrılır"
+          ],
+          [
+            "cos(2x) + 3·sin(x) - 2 = 0",
+            "cos(2x) = 1 - 2·{us:sin|2}(x) yazılır",
+            "2·{us:sin|2}(x) - 3·sin(x) + 1 = 0 denklemi çözülür"
+          ],
+          [
+            "tan(x) + cot(x) = 2",
+            "cot(x) = {kesir:1|tan(x)} (veya {kesir:2|sin(2x)} = 2)",
+            "{us:(tan(x) - 1)|2} = 0 ile tan(x) = 1 bulunur"
+          ]
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Poppins, sans-serif\"><rect width=\"700\" height=\"260\" rx=\"16\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#92400e\">Çarpanlara Ayırma ve Yarım Açı Dönüşümlü Denklemler</text><rect x=\"25\" y=\"52\" width=\"205\" height=\"170\" rx=\"12\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"25\" y=\"52\" width=\"205\" height=\"32\" rx=\"12\" fill=\"#d97706\"/><text x=\"127\" y=\"73\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#ffffff\">1. Pisagor Özdeşliği</text><text x=\"40\" y=\"104\" font-size=\"10.5\" font-weight=\"700\" fill=\"#92400e\">sin^2(x) + cos^2(x) = 1</text><text x=\"40\" y=\"128\" font-size=\"10\" fill=\"#78350f\">• sin^2(x) yerine 1 - cos^2(x)</text><text x=\"40\" y=\"148\" font-size=\"10\" fill=\"#78350f\">• cos^2(x) yerine 1 - sin^2(x)</text><text x=\"40\" y=\"168\" font-size=\"10\" fill=\"#78350f\">yazılarak denklem tek bir</text><text x=\"40\" y=\"184\" font-size=\"10\" fill=\"#78350f\">trigonometrik fonksiyona</text><text x=\"40\" y=\"200\" font-size=\"10\" fill=\"#78350f\">dönüştürülür.</text><rect x=\"248\" y=\"52\" width=\"205\" height=\"170\" rx=\"12\" fill=\"#ffffff\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"248\" y=\"52\" width=\"205\" height=\"32\" rx=\"12\" fill=\"#059669\"/><text x=\"350\" y=\"73\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#ffffff\">2. Yarım Açı Dönüşümü</text><text x=\"262\" y=\"104\" font-size=\"10.5\" font-weight=\"700\" fill=\"#065f46\">• sin(2x) = 2 . sin(x) . cos(x)</text><text x=\"262\" y=\"128\" font-size=\"10.5\" font-weight=\"700\" fill=\"#065f46\">• cos(2x) = 2 . cos^2(x) - 1</text><text x=\"262\" y=\"150\" font-size=\"10.5\" font-weight=\"700\" fill=\"#065f46\">• cos(2x) = 1 - 2 . sin^2(x)</text><text x=\"262\" y=\"174\" font-size=\"10\" fill=\"#064e3b\">Yanındaki +1 veya -1 sayısını</text><text x=\"262\" y=\"190\" font-size=\"10\" fill=\"#064e3b\">yok eden cos(2x) açılımı</text><text x=\"262\" y=\"206\" font-size=\"10\" fill=\"#064e3b\">seçilerek işlem kısaltılır.</text><rect x=\"470\" y=\"52\" width=\"205\" height=\"170\" rx=\"12\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"2\"/><rect x=\"470\" y=\"52\" width=\"205\" height=\"32\" rx=\"12\" fill=\"#dc2626\"/><text x=\"572\" y=\"73\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#ffffff\">3. Kök Kaybı ve Yabancı Kök</text><text x=\"484\" y=\"104\" font-size=\"10\" fill=\"#7f1d1d\">• Ortak çarpan sadeleştirilmez,</text><text x=\"492\" y=\"120\" font-size=\"10\" font-weight=\"700\" fill=\"#b91c1c\">paranteze alınıp sıfıra eşitlenir!</text><text x=\"484\" y=\"144\" font-size=\"10\" fill=\"#7f1d1d\">• Her iki tarafın karesi alınırsa</text><text x=\"492\" y=\"160\" font-size=\"10\" fill=\"#7f1d1d\">bulunan kökler ana denklemde</text><text x=\"492\" y=\"176\" font-size=\"10\" fill=\"#7f1d1d\">kontrol edilir.</text><text x=\"484\" y=\"198\" font-size=\"10\" font-weight=\"700\" fill=\"#b91c1c\">• Paydayı 0 yapan kök atılır!</text><text x=\"350\" y=\"246\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" fill=\"#92400e\">Trigonometrik denklemlerde değişken içeren ifadelerle sadeleştirme yapmak kök kaybına yol açar.</text></svg>"
+    },
+    {
+      "baslik": "Periyodik Gerçek Hayat Problemlerinin Modellenmesi",
+      "metin": [
+        "Doğada ve mühendislikte belirli zaman aralıklarıyla kendini tekrarlayan olaylar (dönme dolap kabininin yerden yüksekliği, denizlerdeki gelgit su seviyesi, alternatif akım gerilimi, piston veya yay hareketi, günlük sıcaklık değişimleri) {koyu:sinüzoidal fonksiyonlar} olan {koyu:y(t) = A · sin(B · t + C) + D} veya {koyu:y(t) = A · cos(B · t + C) + D} denklemleriyle modellenir.",
+        "Bu modelde {koyu:|A|} hareketin {koyu:genliğini} (denge konumundan maksimum sapmayı), {koyu:D} ise {koyu:denge eksenini} (ortalama değeri / merkez yüksekliğini) gösterir. Dolayısıyla sistemin ulaşabileceği en büyük değer {koyu:y_max = D + |A|}, en küçük değer ise {koyu:y_min = D - |A|} olur. Hareketin bir tam döngüsü için geçen süre olan {koyu:periyot} ise {koyu:T = {kesir:2 · pi|B}} bağıntısıyla bulunur. Örneğin yerden yüksekliği h(t) fonksiyonuyla verilen bir dönme dolap kabininin hangi dakikalarda belirli bir h_0 yüksekliğinde olacağını bulmak için {koyu:h(t) = h_0} trigonometrik denklemi kurulur ve çözülür."
+      ],
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Model Katsayılarını Bulma",
+          "metin": "Periyodik bir olayda maksimum ve minimum değerler biliniyorsa: Genlik |A| = (Max - Min) / 2 ve Denge değeri D = (Max + Min) / 2 formülleriyle bulunur."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Dönme Dolap Modeli",
+          "metin": "Yarıçapı R olan ve merkezi yerden H metre yüksekte bulunan bir dönme dolapta kabin yüksekliği en az H - R, en çok H + R metre olur."
+        }
+      ],
+      "liste": [
+        "Dönme Dolap Problemleri: Kabinin belirli bir yüksekliğe ilk kez ve ikinci kez ulaşma süreleri sinüs/kosinüs denkleminin iki kök kolundan hesaplanır.",
+        "Gelgit (Medcezir) Problemleri: Limandaki su derinliğinin büyük gemilerin geçişi için güvenli sınırı aştığı saat aralıkları trigonometrik denklemle belirlenir.",
+        "Alternatif Akım ve Ses Dalgaları: V(t) = V_max · sin(w·t) gerilim denkleminde gerilimin etkin değere ulaştığı saniyeler bulunur."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Poppins, sans-serif\"><rect width=\"700\" height=\"260\" rx=\"16\" fill=\"#faf5ff\" stroke=\"#7c3aed\" stroke-width=\"2\"/><text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#4c1d95\">Periyodik Gerçek Hayat Problemlerinin Modellenmesi</text><rect x=\"28\" y=\"52\" width=\"320\" height=\"170\" rx=\"12\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"2\"/><text x=\"188\" y=\"74\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#6b21a8\">Model Fonksiyon: y(t) = A . sin(B . t + C) + D</text><line x1=\"55\" y1=\"150\" x2=\"320\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4,2\"/><line x1=\"65\" y1=\"90\" x2=\"65\" y2=\"205\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M 65 150 Q 110 90 155 150 T 245 150 T 315 150\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><text x=\"110\" y=\"102\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"700\" fill=\"#dc2626\">Max = D + |A|</text><text x=\"200\" y=\"202\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"700\" fill=\"#0284c7\">Min = D - |A|</text><text x=\"295\" y=\"144\" font-size=\"9.5\" font-weight=\"700\" fill=\"#475569\">Denge = D</text><rect x=\"372\" y=\"52\" width=\"300\" height=\"170\" rx=\"12\" fill=\"#ffffff\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"372\" y=\"52\" width=\"300\" height=\"32\" rx=\"12\" fill=\"#059669\"/><text x=\"522\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">Fiziksel Parametrelerin Anlamı</text><text x=\"388\" y=\"104\" font-size=\"10.5\" fill=\"#064e3b\">• Genlik |A| = (y_max - y_min) / 2</text><text x=\"398\" y=\"120\" font-size=\"10\" fill=\"#047857\">(Dönme dolap yarıçapı veya dalga genliği)</text><text x=\"388\" y=\"144\" font-size=\"10.5\" fill=\"#064e3b\">• Düşey Kayma D = (y_max + y_min) / 2</text><text x=\"398\" y=\"160\" font-size=\"10\" fill=\"#047857\">(Dönme dolap merkez yüksekliği / ortalama derinlik)</text><text x=\"388\" y=\"184\" font-size=\"10.5\" fill=\"#064e3b\">• Periyot T = 2 . pi / |B|</text><text x=\"398\" y=\"200\" font-size=\"10\" fill=\"#047857\">(Bir tam tur veya döngü için geçen süre)</text><text x=\"350\" y=\"246\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" fill=\"#4c1d95\">Verilen bir yükseklik değerine (y0) ulaşılan anlar, y(t) = y0 trigonometrik denklemi çözülerek bulunur.</text></svg>"
+    },
+    {
+      "baslik": "İslam Dünyası Bilim Mirası: El-Battani ve Trigonometri",
+      "metin": [
+        "Trigonometrinin geometrik kiriş hesabından çıkıp bugünkü cebirsel ve analitik kimliğini kazanmasında İslam dünyası matematikçilerinin, özellikle de {koyu:El-Battani}'nin (858-929) çalışmaları dönüm noktası olmuştur. Şanlıurfa'nın {koyu:Harran} ilçesinde doğan ve Batı bilim dünyasında {koyu:Albategnius} adıyla tanınan Muhammed bin Cabir el-Battani, Rakka'da kurduğu gözlemevinde kırk yılı aşkın süre astronomik gözlemler ve matematiksel hesaplamalar yapmıştır.",
+        "El-Battani, Antik Yunan astronomu Batlamyus'un kullandığı hantal 'daire kirişi' (chord) yöntemi yerine {koyu:sinüs (el-ceyb)}, {koyu:kosinüs} ve gölge uzunluklarından hareketle {koyu:tanjant (zıll)} ile {koyu:kotanjant (zıll-i tamam)} kavramlarını sistemleştirmiştir. Matematik tarihinde {koyu:tan(x) = {kesir:sin(x)|cos(x)}} temel özdeşliğini ve {koyu:{us:sin|2}(x) + {us:cos|2}(x) = 1} bağıntısına dayalı dönüşümleri ilk kez açık biçimde kullanan bilgindir. Ayrıca {koyu:Ez-Zîcü's-Sâbî} adlı başyapıtında 0'dan 90 dereceye kadar açıların sinüs ve kotanjant değerlerini gösteren hassas trigonometrik tablolar hazırlamış; küresel üçgenlerde kosinüs teoremini bularak Kopernik, Kepler ve Regiomontanus gibi Avrupalı bilim insanlarına doğrudan kaynaklık etmiştir."
+      ],
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "El-Battani'nin Temel Keşfi",
+          "metin": "Trigonometrik denklem çözümlerinde her adımımızda kullandığımız tan(x) = sin(x) / cos(x) bağıntısını bilim dünyasına kazandıran alim Harranlı El-Battani'dir."
+        },
+        {
+          "tur": "tanim",
+          "baslik": "Ez-Zîcü's-Sâbî",
+          "metin": "El-Battani'nin astronomik gözlemlerini, güneş yılı hesabını ve geliştirdiği trigonometrik fonksiyon tablolarını topladığı dünyaca ünlü eseridir."
+        }
+      ],
+      "tablo": {
+        "basliklar": [
+          "Bilimsel Katkı Alanı",
+          "El-Battani Öncesi Durum",
+          "El-Battani'nin Getirdiği Yenilik"
+        ],
+        "satirlar": [
+          [
+            "Temel Oran Kavramı",
+            "Yunan geometrisinde tam yay kirişleri kullanılıyordu",
+            "Yarım kiriş olan sinüs (ceyb) ve kosinüs sistemini yerleştirdi"
+          ],
+          [
+            "Tanjant ve Kotanjant",
+            "Gölge boyu yalnız güneş saatlerinde pratik amaçlıydı",
+            "tan(x) = sin(x)/cos(x) ve cot(x) = cos(x)/sin(x) bağıntılarını kurdu"
+          ],
+          [
+            "Trigonometrik Tablolar",
+            "Kaba yaklaşımlı kiriş cetvelleri mevcuttu",
+            "Ez-Zîcü's-Sâbî eserinde hassas sinüs ve kotanjant cetvelleri hazırladı"
+          ],
+          [
+            "Astronomi ve Küresel Trigonometri",
+            "Batlamyus'un sabit güneş merkezcil hataları vardı",
+            "Güneş yılını 365 gün 5 saat 46 dk 24 sn olarak hesapladı, küresel kosinüs teoremini kurdu"
+          ]
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Poppins, sans-serif\"><rect width=\"700\" height=\"260\" rx=\"16\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#065f46\">İslam Dünyası Bilim Mirası: El-Battani nin Trigonometriye Katkıları</text><rect x=\"28\" y=\"52\" width=\"225\" height=\"170\" rx=\"12\" fill=\"#ffffff\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"28\" y=\"52\" width=\"225\" height=\"32\" rx=\"12\" fill=\"#059669\"/><text x=\"140\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">El-Battani (858 - 929)</text><text x=\"42\" y=\"104\" font-size=\"10.5\" fill=\"#064e3b\">• Doğum Yeri: Harran (Şanlıurfa)</text><text x=\"42\" y=\"126\" font-size=\"10.5\" fill=\"#064e3b\">• Batıdaki Adı: Albategnius</text><text x=\"42\" y=\"148\" font-size=\"10.5\" fill=\"#064e3b\">• Rakka Gözlemevi çalışmaları</text><text x=\"42\" y=\"170\" font-size=\"10.5\" fill=\"#064e3b\">• Başyapıtı: Ez-Zicü s-Sabi</text><text x=\"140\" y=\"204\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#047857\">Modern Trigonometrinin Öncüsü</text><rect x=\"275\" y=\"52\" width=\"397\" height=\"170\" rx=\"12\" fill=\"#ffffff\" stroke=\"#0284c7\" stroke-width=\"2\"/><rect x=\"275\" y=\"52\" width=\"397\" height=\"32\" rx=\"12\" fill=\"#0284c7\"/><text x=\"473\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">Matematik ve Astronomi Tarihine Kazandırdıkları</text><text x=\"292\" y=\"104\" font-size=\"10.5\" fill=\"#0c4a6e\">1. Yunan astronomisindeki kiriş (chord) yerine SİNÜS (ceyb) kavramını kullandı.</text><text x=\"292\" y=\"128\" font-size=\"10.5\" fill=\"#0c4a6e\">2. Temel özdeşlik: tan(x) = sin(x) / cos(x) bağıntısını ilk kez tanımladı.</text><text x=\"292\" y=\"152\" font-size=\"10.5\" fill=\"#0c4a6e\">3. Kotanjant (zıll-i tamam) fonksiyonunu ve dereceli tablolarını hazırladı.</text><text x=\"292\" y=\"176\" font-size=\"10.5\" fill=\"#0c4a6e\">4. Küresel üçgenlerde kosinüs teoremini ve güneş yılı süresini (365 gün 5 saat</text><text x=\"304\" y=\"192\" font-size=\"10.5\" fill=\"#0c4a6e\">46 dakika 24 saniye) günümüze çok yakın hassasiyetle hesapladı.</text><text x=\"350\" y=\"246\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" fill=\"#065f46\">El-Battani, geometrik oranları cebirsel denklemlere dönüştürerek trigonometriyi bağımsız bilim yapmıştır.</text></svg>"
+    },
+    {
+      "baslik": "Trigonometrik Denklemler Bütüncül Çözüm Rehberi",
+      "metin": [
+        "Trigonometrik bir denklemi çözerken izlenecek sistematik yol haritası şöyledir: İlk olarak denklemin türü belirlenir; eğer denklem {koyu:sin(f(x)) = sin(alfa)} biçimindeyse {koyu:f(x) = alfa + 2·k·pi} ve {koyu:f(x) = (pi - alfa) + 2·k·pi}; {koyu:cos(f(x)) = cos(alfa)} biçimindeyse {koyu:f(x) = alfa + 2·k·pi} ve {koyu:f(x) = -alfa + 2·k·pi}; {koyu:tan(f(x)) = tan(alfa)} veya {koyu:cot(f(x)) = cot(alfa)} biçimindeyse tek koldan {koyu:f(x) = alfa + k·pi} genel çözümleri yazılır.",
+        "İkinci olarak, denklemde birden fazla fonksiyon varsa homojenlik, lineerlik veya yarım açı kontrolü yapılır: {koyu:a·sin(x) + b·cos(x) = 0} ise cos(x)'e bölünerek tan(x) = -b/a bulunur; {koyu:a·sin(x) + b·cos(x) = c} ise önce {us:c|2} küçük veya eşit {us:a|2} + {us:b|2} şartı kontrol edilip yardımcı açı yöntemi uygulanır. Son adımda ise soruda verilen aralık (örneğin [0, pi] veya [0, 2·pi]) içindeki kökleri bulmak için k tam sayısına ..., -1, 0, 1, 2, ... değerleri verilerek tanımsızlık yaratmayan farklı kökler listelenir."
+      ],
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Birim Çemberde Özel Değerler (-1, 0, 1)",
+          "metin": "sin(x) = 0 için x = k·pi; cos(x) = 0 için x = pi/2 + k·pi; sin(x) = 1 için x = pi/2 + 2k·pi; cos(x) = 1 için x = 2k·pi; cos(x) = -1 için x = pi + 2k·pi."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Kökler Toplamı Pratiği",
+          "metin": "Simetrik aralıklarda köklerin toplamı sorulduğunda, birim çemberdeki simetri eksenlerinden yararlanmak işlem süresini büyük ölçüde kısaltır."
+        }
+      ],
+      "liste": [
+        "1. Adım: Denklemin tanımsız olduğu noktaları (tan, cot, sec, csc paydalarını sıfır yapan açıları) belirle ve not et.",
+        "2. Adım: Özdeşlikler, yarım açı formülleri veya yardımcı açı yardımıyla denklemi temel trigonometrik denkleme indirge.",
+        "3. Adım: Genel çözüm formüllerini radyan veya derece cinsinden doğru periyotla (2·k·pi veya k·pi) yaz.",
+        "4. Adım: İstenen aralıktaki kökleri k'ya tam sayı değerleri vererek bul ve çakışan (aynı) kökleri tek bir kez say."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Poppins, sans-serif\"><rect width=\"700\" height=\"260\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">Trigonometrik Denklemler Genel Çözüm Tablosu</text><rect x=\"22\" y=\"54\" width=\"210\" height=\"166\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"127\" y=\"76\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e40af\">1. sin(f(x)) = sin(alfa)</text><text x=\"36\" y=\"106\" font-size=\"10.5\" font-weight=\"600\" fill=\"#1e3a8a\">• 1. Kök Kolları:</text><text x=\"44\" y=\"124\" font-size=\"10.5\" fill=\"#1d4ed8\">f(x) = alfa + 2 . k . pi</text><text x=\"36\" y=\"150\" font-size=\"10.5\" font-weight=\"600\" fill=\"#1e3a8a\">• 2. Kök Kolları:</text><text x=\"44\" y=\"168\" font-size=\"10.5\" fill=\"#1d4ed8\">f(x) = (pi - alfa) + 2 . k . pi</text><text x=\"127\" y=\"202\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#1e40af\">Periyot: 2 . pi (360 derece)</text><rect x=\"245\" y=\"54\" width=\"210\" height=\"166\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"350\" y=\"76\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#166534\">2. cos(f(x)) = cos(alfa)</text><text x=\"259\" y=\"106\" font-size=\"10.5\" font-weight=\"600\" fill=\"#14532d\">• 1. Kök Kolları:</text><text x=\"267\" y=\"124\" font-size=\"10.5\" fill=\"#15803d\">f(x) = + alfa + 2 . k . pi</text><text x=\"259\" y=\"150\" font-size=\"10.5\" font-weight=\"600\" fill=\"#14532d\">• 2. Kök Kolları:</text><text x=\"267\" y=\"168\" font-size=\"10.5\" fill=\"#15803d\">f(x) = - alfa + 2 . k . pi</text><text x=\"350\" y=\"202\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#166534\">Periyot: 2 . pi (360 derece)</text><rect x=\"468\" y=\"54\" width=\"210\" height=\"166\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"573\" y=\"76\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#92400e\">3. tan ve cot Denklemleri</text><text x=\"482\" y=\"106\" font-size=\"10.5\" font-weight=\"600\" fill=\"#78350f\">• tan(f(x)) = tan(alfa)</text><text x=\"482\" y=\"124\" font-size=\"10.5\" font-weight=\"600\" fill=\"#78350f\">• cot(f(x)) = cot(alfa)</text><text x=\"482\" y=\"150\" font-size=\"10.5\" font-weight=\"600\" fill=\"#92400e\">• Tek Kök Kolu:</text><text x=\"490\" y=\"168\" font-size=\"10.5\" fill=\"#b45309\">f(x) = alfa + k . pi</text><text x=\"573\" y=\"202\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#92400e\">Periyot: pi (180 derece)</text><text x=\"350\" y=\"244\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\">Belirli bir [0, 2.pi] aralığındaki kök sayısı sorulduğunda k tam sayısına değerler verilir.</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "[0, 2·pi) aralığında {kok:3} · sin(x) + cos(x) = 0 homojen trigonometrik denkleminin çözüm kümesini bulunuz.",
+      "cevap": "Eşitliğin sağ tarafı 0 olduğu için denklem 1. dereceden homojen denklemdir. Her iki taraf cos(x) ile bölünürse {kok:3} · tan(x) + 1 = 0 ve buradan tan(x) = -{kesir:1|{kok:3}} elde edilir. Tanjantın -{kesir:1|{kok:3}} olduğu en küçük pozitif açı 2. bölgede 180 - 30 = 150 derece, yani {kesir:5·pi|6} radyandır. Genel çözüm x = {kesir:5·pi|6} + k · pi olur. [0, 2·pi) aralığında k = 0 için x_1 = {kesir:5·pi|6} ve k = 1 için x_2 = {kesir:5·pi|6} + pi = {kesir:11·pi|6} olmak üzere iki kök bulunur.",
+      "cozum": "Eşitliğin sağ tarafı 0 olduğu için denklem 1. dereceden homojen denklemdir. Her iki taraf cos(x) ile bölünürse {kok:3} · tan(x) + 1 = 0 ve buradan tan(x) = -{kesir:1|{kok:3}} elde edilir. Tanjantın -{kesir:1|{kok:3}} olduğu en küçük pozitif açı 2. bölgede 180 - 30 = 150 derece, yani {kesir:5·pi|6} radyandır. Genel çözüm x = {kesir:5·pi|6} + k · pi olur. [0, 2·pi) aralığında k = 0 için x_1 = {kesir:5·pi|6} ve k = 1 için x_2 = {kesir:5·pi|6} + pi = {kesir:11·pi|6} olmak üzere iki kök bulunur.",
+      "ipucu": "Her iki tarafı cos(x)'e bölerek tan(x) = -{kesir:1|{kok:3}} denklemine geçiniz ve k·pi periyodunu kullanınız."
+    },
+    {
+      "soru": "Gerçek sayılarda tanımlı 5 · sin(x) - 12 · cos(x) = m - 2 lineer trigonometrik denkleminin gerçek sayılarda çözüm kümesinin boş küme olmaması için m gerçek sayısının alabileceği kaç farklı tam sayı değeri vardır?",
+      "cevap": "a · sin(x) + b · cos(x) = c denkleminin gerçek sayılarda çözümünün bulunması için |c| küçük veya eşit {kok:{us:a|2} + {us:b|2}} koşulu sağlanmalıdır. Burada a = 5, b = -12 ve c = m - 2'dir. {kok:{us:5|2} + {us:(-12)|2}} = {kok:25 + 144} = {kok:169} = 13 olduğundan |m - 2| küçük veya eşit 13 olmalıdır. Buradan -13 küçük veya eşit m - 2 küçük veya eşit 13 ve her tarafa 2 eklenirse -11 küçük veya eşit m küçük veya eşit 15 bulunur. Terim sayısı 15 - (-11) + 1 = 27 farklı tam sayı değeridir.",
+      "cozum": "a · sin(x) + b · cos(x) = c denkleminin gerçek sayılarda çözümünün bulunması için |c| küçük veya eşit {kok:{us:a|2} + {us:b|2}} koşulu sağlanmalıdır. Burada a = 5, b = -12 ve c = m - 2'dir. {kok:{us:5|2} + {us:(-12)|2}} = {kok:25 + 144} = {kok:169} = 13 olduğundan |m - 2| küçük veya eşit 13 olmalıdır. Buradan -13 küçük veya eşit m - 2 küçük veya eşit 13 ve her tarafa 2 eklenirse -11 küçük veya eşit m küçük veya eşit 15 bulunur. Terim sayısı 15 - (-11) + 1 = 27 farklı tam sayı değeridir.",
+      "ipucu": "5-12-13 özel üçgeninden {kok:{us:a|2}+{us:b|2}} = 13 değerini bulup -13 <= m - 2 <= 13 eşitsizliğini çözünüz."
+    },
+    {
+      "soru": "[0, 2·pi) aralığında sin(x) + {kok:3} · cos(x) = {kok:2} lineer trigonometrik denkleminin köklerini yardımcı açı yöntemiyle bulunuz.",
+      "cevap": "Denklemde {kok:3} = tan({kesir:pi|3}) = {kesir:sin(pi/3)|cos(pi/3)} yazılırsa: sin(x) + {kesir:sin(pi/3)|cos(pi/3)} · cos(x) = {kok:2} olur. Payda eşitlenip cos({kesir:pi|3}) = {kesir:1|2} karşıya çarpım olarak atılırsa: sin(x)·cos({kesir:pi|3}) + cos(x)·sin({kesir:pi|3}) = {kok:2} · {kesir:1|2} yani sin(x + {kesir:pi|3}) = {kesir:{kok:2}|2} = sin({kesir:pi|4}) elde edilir. 1. Kol: x + {kesir:pi|3} = {kesir:pi|4} + 2·k·pi => x = -{kesir:pi|12} + 2·k·pi (k=1 için x_1 = {kesir:23·pi|12}). 2. Kol: x + {kesir:pi|3} = (pi - {kesir:pi|4}) + 2·k·pi = {kesir:3·pi|4} + 2·k·pi => x = {kesir:5·pi|12} + 2·k·pi (k=0 için x_2 = {kesir:5·pi|12}). Çözüm kümesi {{kesir:5·pi|12}, {kesir:23·pi|12}} olur.",
+      "cozum": "Denklemde {kok:3} = tan({kesir:pi|3}) = {kesir:sin(pi/3)|cos(pi/3)} yazılırsa: sin(x) + {kesir:sin(pi/3)|cos(pi/3)} · cos(x) = {kok:2} olur. Payda eşitlenip cos({kesir:pi|3}) = {kesir:1|2} karşıya çarpım olarak atılırsa: sin(x)·cos({kesir:pi|3}) + cos(x)·sin({kesir:pi|3}) = {kok:2} · {kesir:1|2} yani sin(x + {kesir:pi|3}) = {kesir:{kok:2}|2} = sin({kesir:pi|4}) elde edilir. 1. Kol: x + {kesir:pi|3} = {kesir:pi|4} + 2·k·pi => x = -{kesir:pi|12} + 2·k·pi (k=1 için x_1 = {kesir:23·pi|12}). 2. Kol: x + {kesir:pi|3} = (pi - {kesir:pi|4}) + 2·k·pi = {kesir:3·pi|4} + 2·k·pi => x = {kesir:5·pi|12} + 2·k·pi (k=0 için x_2 = {kesir:5·pi|12}). Çözüm kümesi {{kesir:5·pi|12}, {kesir:23·pi|12}} olur.",
+      "ipucu": "{kok:3} yerine tan(pi/3) = sin(pi/3)/cos(pi/3) yazarak sol tarafı sin(x + pi/3) toplam formülüne dönüştürünüz."
+    },
+    {
+      "soru": "[0, pi) aralığında {us:sin|2}(x) - 2 · sin(x) · cos(x) - 3 · {us:cos|2}(x) = 0 ikinci dereceden homojen denkleminin köklerinden biri pi/4 ile pi/2 arasında olduğuna göre diğer kökü kaç radyandır?",
+      "cevap": "Eşitliğin her iki tarafı {us:cos|2}(x) ile bölünürse {us:tan|2}(x) - 2 · tan(x) - 3 = 0 denklemi elde edilir. Çarpanlarına ayrıldığında (tan(x) - 3) · (tan(x) + 1) = 0 olur. Buradan tan(x) = 3 veya tan(x) = -1 bulunur. tan(x) = 3 denkleminin [0, pi) aralığındaki kökü 1. bölgede olup tan(pi/4)=1'den büyük olduğu için (pi/4, pi/2) aralığındadır. Diğer kök ise tan(x) = -1 denkleminden gelir; [0, pi) aralığında tanjantın -1 olduğu açı 2. bölgede x = pi - {kesir:pi|4} = {kesir:3·pi|4} radyandır.",
+      "cozum": "Eşitliğin her iki tarafı {us:cos|2}(x) ile bölünürse {us:tan|2}(x) - 2 · tan(x) - 3 = 0 denklemi elde edilir. Çarpanlarına ayrıldığında (tan(x) - 3) · (tan(x) + 1) = 0 olur. Buradan tan(x) = 3 veya tan(x) = -1 bulunur. tan(x) = 3 denkleminin [0, pi) aralığındaki kökü 1. bölgede olup tan(pi/4)=1'den büyük olduğu için (pi/4, pi/2) aralığındadır. Diğer kök ise tan(x) = -1 denkleminden gelir; [0, pi) aralığında tanjantın -1 olduğu açı 2. bölgede x = pi - {kesir:pi|4} = {kesir:3·pi|4} radyandır.",
+      "ipucu": "İki tarafı {us:cos|2}(x) ile bölüp (tan(x) - 3)(tan(x) + 1) = 0 çarpanlarına ayırınız."
+    },
+    {
+      "soru": "Bir lunaparktaki dönme dolaba binen bir yolcunun t. dakikadaki yerden yüksekliği (metre cinsinden) h(t) = 22 - 20 · cos({kesir:pi · t|6}) fonksiyonu ile modellenmiştir. Buna göre yolcu hareket başladıktan (t = 0) sonra ilk kez kaçıncı dakikada yerden 32 metre yüksekliğe ulaşır?",
+      "cevap": "Yolcunun yerden yüksekliğinin 32 metre olması için h(t) = 32 denklemi kurulur: 22 - 20 · cos({kesir:pi · t|6}) = 32 => -20 · cos({kesir:pi · t|6}) = 10 => cos({kesir:pi · t|6}) = -{kesir:10|20} = -{kesir:1|2} olur. Kosinüs fonksiyonunun ilk kez -{kesir:1|2} değerini aldığı en küçük pozitif açı 2. bölgede 120 derece, yani {kesir:2·pi|3} radyandır. Buradan {kesir:pi · t|6} = {kesir:2 · pi|3} eşitliği çözülürse t = {kesir:12|3} = 4. dakika bulunur.",
+      "cozum": "Yolcunun yerden yüksekliğinin 32 metre olması için h(t) = 32 denklemi kurulur: 22 - 20 · cos({kesir:pi · t|6}) = 32 => -20 · cos({kesir:pi · t|6}) = 10 => cos({kesir:pi · t|6}) = -{kesir:10|20} = -{kesir:1|2} olur. Kosinüs fonksiyonunun ilk kez -{kesir:1|2} değerini aldığı en küçük pozitif açı 2. bölgede 120 derece, yani {kesir:2·pi|3} radyandır. Buradan {kesir:pi · t|6} = {kesir:2 · pi|3} eşitliği çözülürse t = {kesir:12|3} = 4. dakika bulunur.",
+      "ipucu": "h(t) = 32 eşitleyerek cos(pi·t / 6) = -1/2 denklemini elde ediniz ve en küçük pozitif açıyı (2·pi / 3) kullanınız."
+    },
+    {
+      "soru": "[0, 2·pi) aralığında sin(2x) = cos(x) denklemini sağlayan farklı x köklerinin toplamını bulunuz.",
+      "cevap": "Yarım açı formülüyle sin(2x) = 2 · sin(x) · cos(x) yazılıp cos(x) sol tarafa alınırsa: 2 · sin(x) · cos(x) - cos(x) = 0 ve ortak çarpan parantezine alınırsa cos(x) · (2 · sin(x) - 1) = 0 elde edilir. 1) cos(x) = 0 ise [0, 2·pi) aralığında x_1 = {kesir:pi|2} ve x_2 = {kesir:3·pi|2} bulunur. 2) 2·sin(x) - 1 = 0 yani sin(x) = {kesir:1|2} ise [0, 2·pi) aralığında x_3 = {kesir:pi|6} ve x_4 = {kesir:5·pi|6} bulunur. Dört farklı kökün toplamı: {kesir:pi|2} + {kesir:3·pi|2} + {kesir:pi|6} + {kesir:5·pi|6} = 2·pi + pi = 3·pi radyandır.",
+      "cozum": "Yarım açı formülüyle sin(2x) = 2 · sin(x) · cos(x) yazılıp cos(x) sol tarafa alınırsa: 2 · sin(x) · cos(x) - cos(x) = 0 ve ortak çarpan parantezine alınırsa cos(x) · (2 · sin(x) - 1) = 0 elde edilir. 1) cos(x) = 0 ise [0, 2·pi) aralığında x_1 = {kesir:pi|2} ve x_2 = {kesir:3·pi|2} bulunur. 2) 2·sin(x) - 1 = 0 yani sin(x) = {kesir:1|2} ise [0, 2·pi) aralığında x_3 = {kesir:pi|6} ve x_4 = {kesir:5·pi|6} bulunur. Dört farklı kökün toplamı: {kesir:pi|2} + {kesir:3·pi|2} + {kesir:pi|6} + {kesir:5·pi|6} = 2·pi + pi = 3·pi radyandır.",
+      "ipucu": "cos(x) çarpanını sadeleştirmeden cos(x)·(2·sin(x) - 1) = 0 parantezine alarak kök kaybını önleyiniz."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki lineer trigonometrik denklemlerden hangisinin gerçek sayılar kümesinde çözüm kümesi boş kümedir?",
+      "secenekler": [
+        "3 · sin(x) + 4 · cos(x) = 5",
+        "sin(x) - cos(x) = {kok:2}",
+        "2 · sin(x) + {kok:5} · cos(x) = 4",
+        "8 · sin(x) - 6 · cos(x) = 9",
+        "{kok:3} · sin(x) + cos(x) = 1"
+      ],
+      "dogru": 2,
+      "aciklama": "2·sin(x) + {kok:5}·cos(x) = 4 denkleminde {us:a|2} + {us:b|2} = 4 + 5 = 9 iken {us:c|2} = {us:4|2} = 16'dır. {us:c|2} > {us:a|2} + {us:b|2} (16 > 9) olduğu için gerçek kök yoktur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "[0, pi] aralığında sin(x) - {kok:3} · cos(x) = 0 homojen trigonometrik denklemini sağlayan x değeri kaç radyandır?",
+      "secenekler": [
+        "{kesir:pi|6}",
+        "{kesir:pi|4}",
+        "{kesir:pi|3}",
+        "{kesir:2·pi|3}",
+        "{kesir:5·pi|6}"
+      ],
+      "dogru": 2,
+      "aciklama": "sin(x) = {kok:3}·cos(x) eşitliğinde her iki taraf cos(x)'e bölünürse tan(x) = {kok:3} bulunur. [0, pi] aralığında tanjantı {kok:3} olan açı x = {kesir:pi|3} (60 derece) olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir kıyı şeridinde su derinliği (metre) zamana (t: saat) bağlı olarak d(t) = 8 + 3 · sin({kesir:pi · t|6}) fonksiyonu ile modellenmiştir. Buna göre bu kıyıda su derinliğinin alabileceği en büyük değer (maksimum derinlik) ile en küçük değer (minimum derinlik) sırasıyla kaç metredir?",
+      "secenekler": [
+        "8 ve 3",
+        "11 ve 5",
+        "14 ve 2",
+        "9 ve 7",
+        "12 ve 4"
+      ],
+      "dogru": 1,
+      "aciklama": "sin fonksiyonu [-1, 1] aralığında değer alır. Maksimum derinlik 8 + 3·(1) = 11 metre, minimum derinlik ise 8 + 3·(-1) = 5 metredir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Harran'da doğan, Batı'da 'Albategnius' adıyla tanınan, Ez-Zîcü's-Sâbî adlı eserinde hassas sinüs-kotanjant tabloları hazırlayan ve tan(x) = {kesir:sin(x)|cos(x)} temel bağıntısını matematik dünyasına kazandıran İslam bilginimiz aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "El-Battani",
+        "İbn-i Heysem",
+        "El-Cezeri",
+        "İbnü'n-Nefis",
+        "Piri Reis"
+      ],
+      "dogru": 0,
+      "aciklama": "Harranlı büyük astronom ve matematikçi El-Battani (858-929), trigonometrik oranları cebirsel denklemlere dönüştüren ve tan(x) = sin(x)/cos(x) bağıntısını kuran bilgindir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin trigonometrik denklemler ve uygulamaları konusuna göre doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "dogru": true,
+          "aciklama": "a·sin(x) + b·cos(x) ifadesinin görüntü kümesi [-{kok:{us:a|2}+{us:b|2}}, +{kok:{us:a|2}+{us:b|2}}] kapalı aralığıdır.",
+          "ifade": "a · sin(x) + b · cos(x) = c denkleminin gerçek sayılarda çözümünün olması için {us:c|2} küçük veya eşit {us:a|2} + {us:b|2} koşulu sağlanmalıdır."
+        },
+        {
+          "dogru": false,
+          "aciklama": "Değişken içeren sin(x) çarpanını sadeleştirmek sin(x) = 0 köklerinin kaybolmasına yol açar; ortak paranteze alınmalıdır.",
+          "ifade": "sin(2x) = sin(x) denklemini çözerken her iki tarafı sin(x) ile sadeleştirip 2·cos(x) = 1 yazmak kök kaybına yol açmaz."
+        },
+        {
+          "dogru": true,
+          "aciklama": "Tanjant ve kotanjant fonksiyonlarının esas periyodu pi (180 derece) olduğu için kökler k·pi eklenerek üretilir.",
+          "ifade": "tan(x) = tan(alfa) ve cot(x) = cot(alfa) denklemlerinin genel çözüm kümesi x = alfa + k · pi (k tam sayı) formülüyle bulunur."
+        },
+        {
+          "dogru": true,
+          "aciklama": "Periyot T = 2·pi / |B| = 2·pi / (pi / 4) = 8 olarak bulunur.",
+          "ifade": "h(t) = 15 + 10 · sin({kesir:pi · t|4}) model fonksiyonunun esas periyodu T = 8 birim zamandır."
+        },
+        {
+          "dogru": false,
+          "aciklama": "Kosinüs fonksiyonu [-1, 1] aralığında değer aldığı için cos(x) = -2 denkleminin gerçek sayılarda çözüm kümesi boş kümedir.",
+          "ifade": "cos(x) = -2 denkleminin [0, 2·pi] aralığında birbirinden farklı iki gerçek kökü vardır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki trigonometrik denklem ve kavramları doğru çözüm veya karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "a·sin(x) + b·cos(x) = 0",
+          "Her iki taraf cos(x)'e bölünerek tan(x) = -b/a temel denklemine indirgenir"
+        ],
+        [
+          "{us:c|2} <= {us:a|2} + {us:b|2}",
+          "a·sin(x) + b·cos(x) = c lineer denkleminin gerçek kökünün bulunma şartı"
+        ],
+        [
+          "Yardımcı Açı Yöntemi",
+          "b/a = tan(alfa) dönüşümüyle denklemi sin(x + alfa) toplam formülüne çevirme"
+        ],
+        [
+          "y(t) = A·sin(B·t + C) + D",
+          "Maksimum değeri D + |A|, minimum değeri D - |A| olan periyodik gerçek hayat modeli"
+        ],
+        [
+          "El-Battani (Albategnius)",
+          "tan(x) = sin(x)/cos(x) özdeşliğini ve Ez-Zîcü's-Sâbî eserini kazandıran Harranlı alim"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri verilen kelimelerden uygun olanlarıyla tamamlayınız.",
+      "kelimeler": [
+        "homojen",
+        "yardımcı",
+        "kök",
+        "periyodik",
+        "Battani"
+      ],
+      "fazla": [
+        "aritmetik",
+        "logaritmik"
+      ],
+      "cumleler": [
+        {
+          "metin": "Eşitliğin sağ tarafı sıfır ve tüm terimlerinin derecesi eşit olan a·sin(x) + b·cos(x) = 0 tipindeki denklemlere ___ denklem denir.",
+          "cevap": "homojen"
+        },
+        {
+          "metin": "a·sin(x) + b·cos(x) = c denkleminde b/a = tan(alfa) yazarak çözme yöntemine ___ açı yöntemi adı verilir.",
+          "cevap": "yardımcı"
+        },
+        {
+          "metin": "Trigonometrik bir denklemde eşitliğin iki tarafındaki sin(x) çarpanlarını sadeleştirmek ___ kaybına neden olur.",
+          "cevap": "kök"
+        },
+        {
+          "metin": "Dönme dolap yüksekliği ve gelgit olayları gibi belirli aralıklarla tekrarlanan süreçler ___ trigonometrik fonksiyonlarla modellenir.",
+          "cevap": "periyodik"
+        },
+        {
+          "metin": "Batı'da Albategnius adıyla tanınan ve tan(x) = sin(x)/cos(x) bağıntısını ilk kez kullanan Harranlı bilgin El-___'dir.",
+          "cevap": "Battani"
+        }
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir mühendis, limandaki su derinliğinin günün t. saatindeki değerini h(t) = 9 - 4·sin(pi·t / 6) + 3·cos(pi·t / 6) fonksiyonuyla modellemiştir. 1) Lineer trigonometrik ifadelerin maksimum-minimum kuralını kullanarak limandaki su derinliğinin en az ve en çok kaç metre olabileceğini bulunuz. 2) Su derinliğinin 15 metre olup olamayacağını denklem çözmeden katsayılar yardımıyla açıklayınız.",
+      "cevap": "1) Fonksiyondaki değişken kısım f(t) = -4·sin(pi·t / 6) + 3·cos(pi·t / 6) ifadesidir. a = -4 ve b = 3 katsayıları için {kok:{us:a|2} + {us:b|2}} = {kok:{us:(-4)|2} + {us:3|2}} = {kok:16 + 9} = {kok:25} = 5 bulunur. Dolayısıyla bu kısım en çok +5, en az -5 değerini alır. Sabit derinlik D = 9 metre eklendiğinde; maksimum su derinliği 9 + 5 = 14 metre, minimum su derinliği ise 9 - 5 = 4 metre olur. 2) Su derinliğinin 15 metre olması için -4·sin(pi·t / 6) + 3·cos(pi·t / 6) = 15 - 9 = 6 denkleminin sağlanması gerekir. Ancak c = 6 değeri maksimum sınır olan 5'ten büyüktür ({us:6|2} = 36 > 25); bu nedenle denklemin gerçek kökü yoktur ve su derinliği hiçbir zaman 15 metreye ulaşamaz.",
+      "ipuclari": [
+        "a = -4 ve b = 3 için {kok:{us:a|2} + {us:b|2}} = 5 genlik değerini hesaplayınız.",
+        "Sabit sayı olan 9'a 5 ekleyip çıkararak maksimum (14 m) ve minimum (4 m) derinlikleri bulunuz.",
+        "h(t) = 15 için c = 6 oluştuğunu ve {us:c|2} > {us:a|2} + {us:b|2} nedeniyle çözüm kümesinin boş küme olduğunu belirtiniz."
+      ]
+    }
+  ],
+  "ozet": [
+    "a·sin(x) + b·cos(x) = 0 birinci dereceden homojen denkleminde her iki taraf cos(x)'e bölünerek tan(x) = -b/a temel denklemi elde edilir ve x = alfa + k·pi ile çözülür.",
+    "a·{us:sin|2}(x) + b·sin(x)cos(x) + c·{us:cos|2}(x) = 0 ikinci dereceden homojen denkleminde her iki taraf {us:cos|2}(x)'e bölünerek tan(x) = t değişkenine bağlı ikinci dereceden denklem çözülür.",
+    "a·sin(x) + b·cos(x) = c lineer trigonometrik denkleminin gerçek sayılarda çözüm kümesinin boş küme olmaması için {us:c|2} <= {us:a|2} + {us:b|2} (yani |c| <= {kok:{us:a|2} + {us:b|2}}) şartı sağlanmalıdır.",
+    "Lineer denklemler çözümlenirken b/a = tan(alfa) yardımcı açısı yerine yazılarak ifade sin(x + alfa) toplam formülüne dönüştürülür.",
+    "Denklem çözümlerinde değişken içeren çarpanları sadeleştirmek kök kaybına yol açacağından tüm terimler tek tarafta toplanıp ortak çarpan parantezine alınmalıdır.",
+    "Periyodik gerçek hayat olayları y(t) = A·sin(B·t + C) + D ile modellenir; Harranlı bilgin El-Battani (Albategnius) tan(x) = sin(x)/cos(x) özdeşliği ve Ez-Zîcü's-Sâbî eseriyle modern trigonometrinin temelini atmıştır."
+  ]
+}

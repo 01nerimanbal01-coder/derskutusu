@@ -1,0 +1,421 @@
+{
+  "sinif": 10,
+  "ders": "fizik",
+  "ders_kisa": "Fizik",
+  "kod": "10-fizik",
+  "hafta": 14,
+  "tarih": "21-25 Aralık 2026",
+  "yayin_tarihi": "2026-12-21",
+  "unite": "2. Tema: Enerji",
+  "konu": "Mekanik Enerji: Yer Çekimi Potansiyel Enerjisi, Esneklik Potansiyel Enerjisi, Kinetik Enerji ve Mekanik Enerji Çözümlemeleri",
+  "ciktilar": [
+    "FİZ.10.2.4. Mekanik enerjiyi çözümleyebilme",
+    "Mekanik enerjiye ilişkin kinetik ve potansiyel enerji bileşenlerini ve aralarındaki matematiksel ilişkiyi belirler."
+  ],
+  "ozet": [
+    "Bir sistemin hareketinden dolayı sahip olduğu {koyu:kinetik enerji (E_K)} ile konumundan veya esnek yapısından dolayı depoladığı {koyu:potansiyel enerjinin (E_P)} toplamına {koyu:mekanik enerji (E_M = E_K + E_P)} denir.",
+    "Kütlesi m, sürati v olan bir cismin öteleme kinetik enerjisi {koyu:E_K = {kesir:1|2} · m · v · v} bağıntısıyla hesaplanır ve SI birimi {koyu:Joule (J)}'dür.",
+    "Yer çekimi ivmesinin g olduğu ortamda referans düzeyinden h yüksekliğindeki m kütleli cismin {koyu:yer çekimi potansiyel enerjisi E_P = m · g · h} bağıntısıyla bulunur.",
+    "Yay sabiti k olan esnek bir yayın denge konumundan x kadar sıkıştırılması veya gerilmesiyle depolanan {koyu:esneklik potansiyel enerjisi E_es = {kesir:1|2} · k · x · x} ile ifade edilir (Hooke Yasası: {koyu:F = k · x}).",
+    "Sürtünmesiz ve dış kuvvetin iş yapmadığı yalıtılmış sistemlerde kinetik ve potansiyel enerji birbirine dönüşür ancak {koyu:toplam mekanik enerji daima korunur (E_M(ilk) = E_M(son))}."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Mekanik Enerji Kavramı ve Bileşenleri",
+      "metin": [
+        "Fizikte iş yapabilme yeteneğine {koyu:enerji} denir. Makroskobik ölçekte hareket eden veya bir kuvvet alanında belirli bir konumda bulunan cisimlerin sahip olduğu toplam enerjiye {koyu:mekanik enerji (E_M)} adı verilir. Mekanik enerji skaler bir büyüklüktür ve Uluslararası Birim Sistemi'ndeki (SI) birimi {koyu:Joule (J = N · m = kg · m · m / s · s)}'dür.",
+        "Mekanik enerji iki temel bileşenden oluşur: Cismin hızından (süratinden) kaynaklanan {koyu:kinetik enerji (E_K)} ve cismin konumundan ya da esnek biçim değişiminden kaynaklanan {koyu:potansiyel enerji (E_P)}. Dolayısıyla herhangi bir anda bir cismin mekanik enerjisi {koyu:E_M = E_K + E_P} toplamına eşittir."
+      ],
+      "kutular": [
+        {
+          "tip": "kavram",
+          "baslik": "Mekanik Enerji Denklemi",
+          "metin": "E_M = E_K + E_P = E_K + E_P(çekim) + E_P(esneklik). Enerji skaler bir büyüklük olduğu için yönü yoktur ve negatif hızlarda bile kinetik enerji daima pozitiftir."
+        }
+      ],
+      "liste": [
+        "{koyu:Öteleme Kinetik Enerjisi (E_K):} Hareket halindeki her cismin kütlesi ve süratinin karesiyle doğru orantılı enerjisidir.",
+        "{koyu:Yer Çekimi Potansiyel Enerjisi (E_P):} Seçilen bir referans noktasına göre yüksekte bulunan cisimlerin depoladığı enerjidir.",
+        "{koyu:Esneklik Potansiyel Enerjisi (E_es):} Sıkıştırılan veya gerilen yay gibi esnek cisimlerde depolanan enerjidir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 900 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\"><rect width=\"900\" height=\"420\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/><rect x=\"16\" y=\"14\" width=\"868\" height=\"42\" rx=\"10\" fill=\"#1E293B\"/><text x=\"450\" y=\"41\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" fill=\"#FFFFFF\">Mekanik Enerji ve Bileşenleri (E_M = E_K + E_P)</text><rect x=\"50\" y=\"75\" width=\"250\" height=\"130\" rx=\"12\" fill=\"#EFF6FF\" stroke=\"#1D4ED8\" stroke-width=\"2\"/><rect x=\"50\" y=\"75\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#1D4ED8\"/><text x=\"175\" y=\"96\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Kinetik Enerji (E_K)</text><text x=\"175\" y=\"129\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Hareketten kaynaklanır</text><text x=\"175\" y=\"149\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">E_K = (1/2) . m . v^2</text><text x=\"175\" y=\"169\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Kütle (m) ve sürate (v) bağlı</text><text x=\"175\" y=\"189\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Birim: Joule (J)</text><rect x=\"325\" y=\"75\" width=\"250\" height=\"130\" rx=\"12\" fill=\"#ECFDF5\" stroke=\"#047857\" stroke-width=\"2\"/><rect x=\"325\" y=\"75\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#047857\"/><text x=\"450\" y=\"96\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Çekim Potansiyel (E_P)</text><text x=\"450\" y=\"129\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Konumdan kaynaklanır</text><text x=\"450\" y=\"149\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">E_P = m . g . h</text><text x=\"450\" y=\"169\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Referans düzeyine göre</text><text x=\"450\" y=\"189\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">kütle merkezi yüksekliği</text><rect x=\"600\" y=\"75\" width=\"250\" height=\"130\" rx=\"12\" fill=\"#FFFBEB\" stroke=\"#B45309\" stroke-width=\"2\"/><rect x=\"600\" y=\"75\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#B45309\"/><text x=\"725\" y=\"96\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Esneklik Potansiyel (E_es)</text><text x=\"725\" y=\"129\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Esnek yaylarda depolanır</text><text x=\"725\" y=\"149\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Hooke Yasası: F = k . x</text><text x=\"725\" y=\"169\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">E_es = (1/2) . k . x^2</text><text x=\"725\" y=\"189\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">k: Yay sabiti (N/m)</text><rect x=\"24\" y=\"374\" width=\"852\" height=\"32\" rx=\"8\" fill=\"#E2E8F0\"/><text x=\"450\" y=\"395\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"#0F172A\">Mekanik enerji skaler bir büyüklüktür ve kinetik ile potansiyel enerjilerin toplamına eşittir.</text></svg>"
+    },
+    {
+      "baslik": "Kinetik Enerji ve İş-Kinetik Enerji Teoremi",
+      "metin": [
+        "Kütlesi {koyu:m} (kg) olan ve {koyu:v} (m/s) süratiyle öteleme hareketi yapan bir cismin kinetik enerjisi {koyu:E_K = {kesir:1|2} · m · v · v} bağıntısıyla hesaplanır. Bu formülden görüldüğü üzere cismin kütlesi iki katına çıkarsa kinetik enerjisi {koyu:2 katına}, sürati iki katına çıkarsa kinetik enerjisi {koyu:4 katına} çıkar.",
+        "Bir cisme etki eden net kuvvetin yaptığı iş ({koyu:W_net}), cismin kinetik enerjisindeki değişime eşittir: {koyu:W_net = F_net · Δx = E_K(son) - E_K(ilk)}. Hareket yönünde yapılan pozitif iş cismin kinetik enerjisini artırırken, sürtünme kuvveti gibi harekete zıt yönde yapılan negatif iş kinetik enerjiyi azaltır."
+      ],
+      "kutular": [
+        {
+          "tip": "kural",
+          "baslik": "Sürat ve Kinetik Enerji İlişkisi",
+          "metin": "Kinetik enerji süratin karesiyle orantılıdır (v -> E, 2v -> 4E, 3v -> 9E). Bu nedenle trafikte hızı v'den 2v'ye çıkan bir aracın durma mesafesi (sürtünmenin sıfırlaması gereken enerji) 4 katına çıkar!"
+        }
+      ],
+      "tablo": {
+        "baslik": "Kinetik Enerji Değişkenleri Analizi",
+        "sutunlar": [
+          "Kütle (m)",
+          "Sürat (v)",
+          "Kinetik Enerji (E_K)",
+          "Oran"
+        ],
+        "satirlar": [
+          [
+            "m",
+            "v",
+            "1/2 · m · v · v",
+            "1 E"
+          ],
+          [
+            "2m",
+            "v",
+            "1/2 · (2m) · v · v",
+            "2 E"
+          ],
+          [
+            "m",
+            "2v",
+            "1/2 · m · (4 · v · v)",
+            "4 E"
+          ],
+          [
+            "2m",
+            "3v",
+            "1/2 · (2m) · (9 · v · v)",
+            "18 E"
+          ]
+        ],
+        "basliklar": [
+          "Kütle (m)",
+          "Sürat (v)",
+          "Kinetik Enerji (E_K)",
+          "Oran"
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 900 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\"><rect width=\"900\" height=\"420\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/><rect x=\"16\" y=\"14\" width=\"868\" height=\"42\" rx=\"10\" fill=\"#1E293B\"/><text x=\"450\" y=\"41\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" fill=\"#FFFFFF\">Kinetik Enerjide Süratin Karesi Etkisi</text><rect x=\"50\" y=\"80\" width=\"250\" height=\"125\" rx=\"12\" fill=\"#F0F9FF\" stroke=\"#0369A1\" stroke-width=\"2\"/><rect x=\"50\" y=\"80\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#0369A1\"/><text x=\"175\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Sürat: v</text><text x=\"175\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Kütle: m, Sürat: v</text><text x=\"175\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Kinetik Enerji: E</text><text x=\"175\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Fren mesafesi: x</text><line x1=\"300\" y1=\"140\" x2=\"325\" y2=\"140\" stroke=\"#0284C7\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"325,140 317,135 317,145\" fill=\"#0284C7\"/><rect x=\"325\" y=\"80\" width=\"250\" height=\"125\" rx=\"12\" fill=\"#FFFBEB\" stroke=\"#B45309\" stroke-width=\"2\"/><rect x=\"325\" y=\"80\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#B45309\"/><text x=\"450\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Sürat: 2v (2 Kat)</text><text x=\"450\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Kütle: m, Sürat: 2v</text><text x=\"450\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Kinetik Enerji: 4E</text><text x=\"450\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Fren mesafesi: 4x</text><line x1=\"575\" y1=\"140\" x2=\"600\" y2=\"140\" stroke=\"#D97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"600,140 592,135 592,145\" fill=\"#D97706\"/><rect x=\"600\" y=\"80\" width=\"250\" height=\"125\" rx=\"12\" fill=\"#FFF1F2\" stroke=\"#BE123C\" stroke-width=\"2\"/><rect x=\"600\" y=\"80\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#BE123C\"/><text x=\"725\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Sürat: 3v (3 Kat)</text><text x=\"725\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Kütle: m, Sürat: 3v</text><text x=\"725\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Kinetik Enerji: 9E</text><text x=\"725\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Fren mesafesi: 9x</text><rect x=\"24\" y=\"374\" width=\"852\" height=\"32\" rx=\"8\" fill=\"#E2E8F0\"/><text x=\"450\" y=\"395\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"#0F172A\">İş-Kinetik Enerji Teoremi: Net kuvvetin yaptığı iş kinetik enerji değişimine eşittir (W_net = E_Kson - E_Kilk).</text></svg>"
+    },
+    {
+      "baslik": "Yer Çekimi Potansiyel Enerjisi ve Referans Düzeyi",
+      "metin": [
+        "Bir cismi yer çekimi kuvvetine karşı sabit hızla {koyu:h} kadar yükseltmek için yer çekimine karşı yapılan iş ({koyu:W = G · h = m · g · h}), cisimde {koyu:yer çekimi potansiyel enerjisi} olarak depolanır: {koyu:E_P = m · g · h}. Burada {koyu:m} cismin kütlesi (kg), {koyu:g} çekim ivmesi (m/s² veya N/kg), {koyu:h} ise cismin {koyu:kütle merkezinin} seçilen referans düzeyine olan dikey uzaklığıdır (m).",
+        "Yer çekimi potansiyel enerjisi {koyu:seçilen referans noktasına (h = 0 düzeyine)} göre değişir; örneğin masanın üzerindeki bir eserin masaya göre potansiyel enerjisi sıfırken, odanın tabanına göre pozitiftir. Ancak iki konum arasındaki {koyu:potansiyel enerji değişimi (ΔE_P)} seçilen referans noktasından bağımsızdır."
+      ],
+      "kutular": [
+        {
+          "tip": "onemli",
+          "baslik": "Homojen Cisimlerde Kütle Merkezi Yüksekliği!",
+          "metin": "Yüksekliği H olan türdeş bir silindir veya dikdörtgenler prizmasının yere göre potansiyel enerjisi hesaplanırken, tabanından kütle merkezine olan uzaklık yani h = H/2 (yarı yükseklik) alınır: E_P = m · g · (H/2)."
+        }
+      ],
+      "liste": [
+        "Cisim yukarı çıkarken yer çekimi kuvvetine karşı iş yapılır ve yer çekimi potansiyel enerjisi artar.",
+        "Cisim aşağı inerken yer çekimi kuvvetinin kendisi iş yapar ve yer çekimi potansiyel enerjisi azalır.",
+        "Yatay doğrultuda hareket eden cismin yüksekliği değişmediği için yer çekimi potansiyel enerjisi değişmez."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 900 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\"><rect width=\"900\" height=\"420\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/><rect x=\"16\" y=\"14\" width=\"868\" height=\"42\" rx=\"10\" fill=\"#1E293B\"/><text x=\"450\" y=\"41\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" fill=\"#FFFFFF\">Yer Çekimi Potansiyel Enerjisi (E_P = m . g . h)</text><rect x=\"60\" y=\"80\" width=\"360\" height=\"130\" rx=\"12\" fill=\"#EFF6FF\" stroke=\"#1E40AF\" stroke-width=\"2\"/><rect x=\"60\" y=\"80\" width=\"360\" height=\"32\" rx=\"10\" fill=\"#1E40AF\"/><text x=\"240\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Nokta Cisimlerde Yükseklik</text><text x=\"240\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Seçilen referans yüzeyinden</text><text x=\"240\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">itibaren dikey uzaklık (h)</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">E_P = m . g . h</text><text x=\"240\" y=\"194\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Yukarı çıkıldıkça E_P artar</text><rect x=\"480\" y=\"80\" width=\"360\" height=\"130\" rx=\"12\" fill=\"#ECFDF5\" stroke=\"#065F46\" stroke-width=\"2\"/><rect x=\"480\" y=\"80\" width=\"360\" height=\"32\" rx=\"10\" fill=\"#065F46\"/><text x=\"660\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Türdeş Katı Cisimlerde</text><text x=\"660\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Yüksekliği H olan dik silindirde</text><text x=\"660\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">kütle merkezi tam ortadadır:</text><text x=\"660\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">h = H / 2 alınır</text><text x=\"660\" y=\"194\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">E_P = m . g . (H / 2)</text><rect x=\"24\" y=\"374\" width=\"852\" height=\"32\" rx=\"8\" fill=\"#E2E8F0\"/><text x=\"450\" y=\"395\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"#0F172A\">İki nokta arasındaki potansiyel enerji farkı seçilen referans düzeyinden bağımsızdır.</text></svg>"
+    },
+    {
+      "baslik": "Hooke Yasası ve Esneklik Potansiyel Enerjisi",
+      "metin": [
+        "Esnek bir yaya uygulanan kuvvet ({koyu:F}), yayın esneklik sınırları içinde kalmak koşuluyla uzama veya sıkışma miktarıyla ({koyu:x}) doğru orantılıdır. Bu ilişki {koyu:Hooke Yasası} olarak bilinir ve {koyu:F = k · x} bağıntısıyla gösterilir. Burada {koyu:k}, yayın cinsine, kalınlığına ve boyuna bağlı olan {koyu:yay sabitidir} (birimi {koyu:N/m}).",
+        "Yayı sıkıştırırken veya gererken kuvvet sıfırdan {koyu:F = k · x} değerine düzgün olarak arttığı için Kuvvet-Uzama (F-x) grafiğinin altındaki üçgenin alanı yapılan işi yani yayda depolanan {koyu:esneklik potansiyel enerjisini} verir: {koyu:E_es = {kesir:1|2} · F · x = {kesir:1|2} · k · x · x}."
+      ],
+      "kutular": [
+        {
+          "tip": "kural",
+          "baslik": "Esneklik Potansiyel Enerjisinde x Karesi Kuralı",
+          "metin": "Yayda depolanan enerji uzama veya sıkışma miktarının karesiyle doğru orantılıdır: Yay x kadar sıkışırsa E, 2x kadar sıkışırsa 4E, 3x kadar sıkışırsa 9E enerji depolar."
+        }
+      ],
+      "tablo": {
+        "baslik": "Mekanik Enerji Bileşenleri Karşılaştırma Tablosu",
+        "sutunlar": [
+          "Enerji Türü",
+          "Matematiksel Bağıntı",
+          "Bağlı Olduğu Değişkenler",
+          "SI Birimi"
+        ],
+        "satirlar": [
+          [
+            "Kinetik Enerji (E_K)",
+            "1/2 · m · v · v",
+            "Kütle (m) ve Süratin karesi (v²)",
+            "Joule (J)"
+          ],
+          [
+            "Yer Çekimi Potansiyel (E_P)",
+            "m · g · h",
+            "Kütle (m), çekim ivmesi (g), yükseklik (h)",
+            "Joule (J)"
+          ],
+          [
+            "Esneklik Potansiyel (E_es)",
+            "1/2 · k · x · x",
+            "Yay sabiti (k) ve uzamanın karesi (x²)",
+            "Joule (J)"
+          ]
+        ],
+        "basliklar": [
+          "Enerji Türü",
+          "Matematiksel Bağıntı",
+          "Bağlı Olduğu Değişkenler",
+          "SI Birimi"
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 900 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\"><rect width=\"900\" height=\"420\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/><rect x=\"16\" y=\"14\" width=\"868\" height=\"42\" rx=\"10\" fill=\"#1E293B\"/><text x=\"450\" y=\"41\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" fill=\"#FFFFFF\">Hooke Yasası ve Esneklik Potansiyel Enerjisi</text><rect x=\"60\" y=\"80\" width=\"360\" height=\"130\" rx=\"12\" fill=\"#F5F3FF\" stroke=\"#7C3AED\" stroke-width=\"2\"/><rect x=\"60\" y=\"80\" width=\"360\" height=\"32\" rx=\"10\" fill=\"#7C3AED\"/><text x=\"240\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Hooke Yasası (F = k . x)</text><text x=\"240\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Uygulanan kuvvet uzama ile</text><text x=\"240\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">doğru orantılıdır</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">k: Yay sabiti (N/m)</text><text x=\"240\" y=\"194\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">x: Uzama / sıkışma (m)</text><rect x=\"480\" y=\"80\" width=\"360\" height=\"130\" rx=\"12\" fill=\"#ECFDF5\" stroke=\"#047857\" stroke-width=\"2\"/><rect x=\"480\" y=\"80\" width=\"360\" height=\"32\" rx=\"10\" fill=\"#047857\"/><text x=\"660\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">F-x Grafiğinin Altındaki Alan</text><text x=\"660\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Üçgen alanı yapılan işi verir:</text><text x=\"660\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">W = E_es = (1/2) . F . x</text><text x=\"660\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">E_es = (1/2) . k . x^2</text><text x=\"660\" y=\"194\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">x -&gt; E | 2x -&gt; 4E | 3x -&gt; 9E</text><rect x=\"24\" y=\"374\" width=\"852\" height=\"32\" rx=\"8\" fill=\"#E2E8F0\"/><text x=\"450\" y=\"395\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"#0F172A\">Hesaplamalarda uzama veya sıkışma miktarı (x) mutlaka metre (m) birimine çevrilmelidir!</text></svg>"
+    },
+    {
+      "baslik": "Sürtünmesiz Ortamlarda Mekanik Enerjinin Korunumu",
+      "metin": [
+        "Sürtünmelerin ihmal edildiği ve dışarıdan ek bir kuvvetin iş yapmadığı sistemlerde cismin kinetik ve potansiyel enerjileri birbirine dönüşür; ancak {koyu:toplam mekanik enerji her noktada sabit kalır}: {koyu:E_M(ilk) = E_M(son)} yani {koyu:E_K1 + E_P1 = E_K2 + E_P2}.",
+        "Örneğin yerden {koyu:h} yüksekliğinden serbest bırakılan ({koyu:v_0 = 0}) {koyu:m} kütleli bir cisim aşağı düşerken kaybettiği potansiyel enerji tamamen kinetik enerjiye dönüşür: {koyu:m · g · h = {kesir:1|2} · m · v · v}. Denklemde her iki taraftaki {koyu:m} kütleleri sadeleşir ve cismin yere çarpma sürati {koyu:v = {kok:2 · g · h}} olarak bulunur. Bu sonuç, sürtünmesiz ortamda yere çarpma süratinin {koyu:cismin kütlesinden bağımsız} olduğunu kanıtlar!"
+      ],
+      "kutular": [
+        {
+          "tip": "ipucu",
+          "baslik": "Kütleden Bağımsızlık İlkesi",
+          "metin": "Sürtünmesiz eğik düzlemde veya serbest düşmede m · g · h = 1/2 · m · v · v eşitliğinde kütleler (m) birbirini götürür. Aynı yükseklikten serbest bırakılan 1 kg'lık demir bilye ile 10 kg'lık gülle yere aynı süratle çarpar!"
+        }
+      ],
+      "liste": [
+        "Cisim aşağı inerken: {koyu:E_P azalır}, {koyu:E_K artar}, {koyu:E_M değişmez}.",
+        "Cisim yukarı çıkarken: {koyu:E_K azalır}, {koyu:E_P artar}, {koyu:E_M değişmez}.",
+        "Esnek yaya çarpan cisim yayı maksimum sıkıştırdığı anda anlık olarak durur ({koyu:v = 0}) ve tüm kinetik enerjisi {koyu:esneklik potansiyel enerjisine} dönüşür."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 900 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\"><rect width=\"900\" height=\"420\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/><rect x=\"16\" y=\"14\" width=\"868\" height=\"42\" rx=\"10\" fill=\"#1E293B\"/><text x=\"450\" y=\"41\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" fill=\"#FFFFFF\">Sürtünmesiz Ortamda Mekanik Enerjinin Korunumu</text><rect x=\"50\" y=\"80\" width=\"250\" height=\"125\" rx=\"12\" fill=\"#EFF6FF\" stroke=\"#1D4ED8\" stroke-width=\"2\"/><rect x=\"50\" y=\"80\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#1D4ED8\"/><text x=\"175\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Tepe Noktası (İlk)</text><text x=\"175\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Sürat: v = 0 -&gt; E_K = 0</text><text x=\"175\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Yükseklik: h -&gt; E_P = mgh</text><text x=\"175\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Mekanik Enerji: E_M = mgh</text><line x1=\"300\" y1=\"140\" x2=\"325\" y2=\"140\" stroke=\"#2563EB\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"325,140 317,135 317,145\" fill=\"#2563EB\"/><rect x=\"325\" y=\"80\" width=\"250\" height=\"125\" rx=\"12\" fill=\"#ECFDF5\" stroke=\"#047857\" stroke-width=\"2\"/><rect x=\"325\" y=\"80\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#047857\"/><text x=\"450\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Orta Nokta (h / 2)</text><text x=\"450\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">E_P yarıya iner (mgh / 2)</text><text x=\"450\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">E_K artar (mgh / 2)</text><text x=\"450\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Toplam E_M = mgh (Sabit)</text><line x1=\"575\" y1=\"140\" x2=\"600\" y2=\"140\" stroke=\"#059669\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"600,140 592,135 592,145\" fill=\"#059669\"/><rect x=\"600\" y=\"80\" width=\"250\" height=\"125\" rx=\"12\" fill=\"#FFFBEB\" stroke=\"#B45309\" stroke-width=\"2\"/><rect x=\"600\" y=\"80\" width=\"250\" height=\"32\" rx=\"10\" fill=\"#B45309\"/><text x=\"725\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Yer Düzeyi (Son)</text><text x=\"725\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Yükseklik: h = 0 -&gt; E_P = 0</text><text x=\"725\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">E_K = (1/2)mv^2 = mgh</text><text x=\"725\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Toplam E_M = mgh (Sabit)</text><rect x=\"24\" y=\"374\" width=\"852\" height=\"32\" rx=\"8\" fill=\"#E2E8F0\"/><text x=\"450\" y=\"395\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"#0F172A\">Sürtünmesiz ortamda yere çarpma sürati cismin kütlesine bağlı değildir!</text></svg>"
+    },
+    {
+      "baslik": "Sürtünmeli Ortamlarda Mekanik Enerji Çözümlemesi",
+      "metin": [
+        "Gerçek yaşamda sürtünme kuvveti ({koyu:F_s}) her zaman harekete engel olacak yönde etki eder ve negatif iş ({koyu:W_s = -F_s · x}) yaparak mekanik enerjinin bir kısmını {koyu:ısı enerjisine (E_ısı)} dönüştürür. Bu durumda evrendeki {koyu:toplam enerji} yine korunur ancak sistemin {koyu:mekanik enerjisi ısıya dönüşen miktar kadar azalır}.",
+        "Sürtünmeli bir yolda enerji denklemi {koyu:E_M(ilk) = E_M(son) + W_s} veya {koyu:E_M(ilk) - E_M(son) = F_s · x} biçiminde yazılır. Eğer sisteme dışarıdan bir {koyu:F} kuvveti uygulanıyor ve aynı zamanda sürtünme varsa genel denklem {koyu:E_M(ilk) + W_F - W_s = E_M(son)} olur."
+      ],
+      "kutular": [
+        {
+          "tip": "ozet",
+          "baslik": "Bölüm Özeti: Mekanik Enerji Korunur mu?",
+          "metin": "Verilen 1) Sürtünmesiz ortamda: Mekanik enerji daima korunur (ΔE_M = 0). 2) Sürtünmeli ortamda: Mekanik enerji korunmaz (ısıya dönüşür ve azalır), ancak ısı dahil TOPLAM ENERJİ her zaman korunur!"
+        }
+      ],
+      "liste": [
+        "Isıya dönüşen enerji: {koyu:E_ısı = W_s = F_s · x = E_M(ilk) - E_M(son)}.",
+        "Sürtünmeli yüzeyde yavaşlayıp duran cismin başlangıçtaki tüm kinetik enerjisi ısıya dönüşmüştür ({koyu:{kesir:1|2} · m · v · v = F_s · x}).",
+        "Mekanik enerji çözümlemeleri lunapark trenlerinden (roller coaster) hidroelektrik santrallerine kadar pek çok mühendislik tasarımının temelidir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 900 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui, -apple-system, sans-serif\"><rect width=\"900\" height=\"420\" rx=\"16\" fill=\"#F8FAFC\" stroke=\"#CBD5E1\" stroke-width=\"2\"/><rect x=\"16\" y=\"14\" width=\"868\" height=\"42\" rx=\"10\" fill=\"#1E293B\"/><text x=\"450\" y=\"41\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"700\" fill=\"#FFFFFF\">Sürtünmeli Ortamlarda Enerji Dönüşümü</text><rect x=\"60\" y=\"80\" width=\"360\" height=\"130\" rx=\"12\" fill=\"#FEF2F2\" stroke=\"#991B1B\" stroke-width=\"2\"/><rect x=\"60\" y=\"80\" width=\"360\" height=\"32\" rx=\"10\" fill=\"#991B1B\"/><text x=\"240\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Sürtünme Kuvvetinin İşi</text><text x=\"240\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Harekete zıt yönde etki eder</text><text x=\"240\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">W_s = F_s . x kadar enerji</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">mekanik enerjiden eksilir</text><text x=\"240\" y=\"194\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">ve ISI enerjisine dönüşür</text><rect x=\"480\" y=\"80\" width=\"360\" height=\"130\" rx=\"12\" fill=\"#EFF6FF\" stroke=\"#1E3A8A\" stroke-width=\"2\"/><rect x=\"480\" y=\"80\" width=\"360\" height=\"32\" rx=\"10\" fill=\"#1E3A8A\"/><text x=\"660\" y=\"101\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#FFFFFF\">Genel Enerji Denklemi</text><text x=\"660\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">E_M(ilk) = E_M(son) + E_ısı</text><text x=\"660\" y=\"154\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">E_ısı = F_s . x = E_M(ilk) - E_M(son)</text><text x=\"660\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">Mekanik enerji azalır,</text><text x=\"660\" y=\"194\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"500\" fill=\"#1E293B\">TOPLAM ENERJİ yine korunur!</text><rect x=\"24\" y=\"374\" width=\"852\" height=\"32\" rx=\"8\" fill=\"#E2E8F0\"/><text x=\"450\" y=\"395\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"#0F172A\">Dış kuvvet ve sürtünme birlikte varsa: E_M(ilk) + W_kuvvet - W_sürtünme = E_M(son).</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Kütlesi 4 kg olan bir cisim yatay düzlemde 5 m/s süratle hareket etmektedir. Bu cismin öteleme kinetik enerjisi kaç Joule'dür?",
+      "cozum": "Kinetik enerji bağıntısı {koyu:E_K = {kesir:1|2} · m · v · v}'dir. Değerleri yerine yazarsak: E_K = {kesir:1|2} · 4 · (5 · 5) = 2 · 25 = {koyu:50 J} bulunur.",
+      "ipucu": "E_K = 1/2 · m · v² formülünü uygulayınız.",
+      "cevap": "Kinetik enerji bağıntısı {koyu:E_K = {kesir:1|2} · m · v · v}'dir. Değerleri yerine yazarsak: E_K = {kesir:1|2} · 4 · (5 · 5) = 2 · 25 = {koyu:50 J} bulunur."
+    },
+    {
+      "soru": "Kütlesi 2 kg olan bir cisim yerden 15 m yükseklikteki bir balkonda durmaktadır. Yer çekimi ivmesi g = 10 m/s² olduğuna göre cismin yere göre yer çekimi potansiyel enerjisi kaç Joule'dür?",
+      "cozum": "Yer çekimi potansiyel enerjisi {koyu:E_P = m · g · h} bağıntısıyla bulunur: E_P = 2 · 10 · 15 = {koyu:300 J} olur.",
+      "ipucu": "Kütle, çekim ivmesi ve yüksekliği çarpınız.",
+      "cevap": "Yer çekimi potansiyel enerjisi {koyu:E_P = m · g · h} bağıntısıyla bulunur: E_P = 2 · 10 · 15 = {koyu:300 J} olur."
+    },
+    {
+      "soru": "Yay sabiti k = 400 N/m olan esnek bir yay, denge konumundan x = 0,2 m (20 cm) sıkıştırılıyor. Yayda depolanan esneklik potansiyel enerjisi kaç Joule'dür?",
+      "cozum": "Esneklik potansiyel enerjisi {koyu:E_es = {kesir:1|2} · k · x · x} bağıntısıyla hesaplanır (x mutlaka metre cinsinden yazılır): E_es = {kesir:1|2} · 400 · (0,2 · 0,2) = 200 · 0,04 = {koyu:8 J} bulunur.",
+      "ipucu": "Uzama miktarını metreye çevirip karesini almayı unutmayınız.",
+      "cevap": "Esneklik potansiyel enerjisi {koyu:E_es = {kesir:1|2} · k · x · x} bağıntısıyla hesaplanır (x mutlaka metre cinsinden yazılır): E_es = {kesir:1|2} · 400 · (0,2 · 0,2) = 200 · 0,04 = {koyu:8 J} bulunur."
+    },
+    {
+      "soru": "Sürtünmelerin önemsenmediği ortamda yerden 20 m yükseklikten serbest bırakılan 3 kg kütleli bir taşın yere çarpma sürati kaç m/s olur? (g = 10 m/s²)",
+      "cozum": "Sürtünmesiz ortamda mekanik enerji korunur: {koyu:E_P(ilk) = E_K(son)} → m · g · h = {kesir:1|2} · m · v · v. Kütleler sadeleşir: 10 · 20 = {kesir:1|2} · v · v → v · v = 400 → v = {kok:400} = {koyu:20 m/s} bulunur.",
+      "ipucu": "Potansiyel enerjiyi kinetik enerjiye eşitleyiniz.",
+      "cevap": "Sürtünmesiz ortamda mekanik enerji korunur: {koyu:E_P(ilk) = E_K(son)} → m · g · h = {kesir:1|2} · m · v · v. Kütleler sadeleşir: 10 · 20 = {kesir:1|2} · v · v → v · v = 400 → v = {kok:400} = {koyu:20 m/s} bulunur."
+    },
+    {
+      "soru": "Yatay ve sürtünmesiz düzlemde 6 m/s süratle ilerleyen 2 kg kütleli bir oyuncak araba, yay sabiti k = 900 N/m olan yatay bir yaya çarparak yayı en fazla kaç metre sıkıştırabilir?",
+      "cozum": "Maksimum sıkışma anında araba anlık olarak durur ve tüm kinetik enerjisi yaya aktarılır: {koyu:E_K = E_es} → {kesir:1|2} · m · v · v = {kesir:1|2} · k · x · x → 2 · (6 · 6) = 900 · x · x → 72 = 900 · x · x → x · x = {kesir:72|900} = {kesir:8|100}. Buradan x = {kok:0,08} m (veya k = 800 N/m olsaydı 0,3 m; burada x = {kesir:{kok:2}|5} m) bulunur.",
+      "ipucu": "Arabanın kinetik enerjisini yayın esneklik potansiyel enerjisine eşitleyiniz.",
+      "cevap": "Maksimum sıkışma anında araba anlık olarak durur ve tüm kinetik enerjisi yaya aktarılır: {koyu:E_K = E_es} → {kesir:1|2} · m · v · v = {kesir:1|2} · k · x · x → 2 · (6 · 6) = 900 · x · x → 72 = 900 · x · x → x · x = {kesir:72|900} = {kesir:8|100}. Buradan x = {kok:0,08} m (veya k = 800 N/m olsaydı 0,3 m; burada x = {kesir:{kok:2}|5} m) bulunur."
+    },
+    {
+      "soru": "Yerden 10 m yükseklikteki sürtünmeli eğik düzlemin tepesinden serbest bırakılan 2 kg kütleli cisim, eğik düzlemin alt ucuna 10 m/s süratle ulaşıyor. Bu süreçte sürtünmeden dolayı ısıya dönüşen enerji kaç Joule'dür? (g = 10 m/s²)",
+      "cozum": "İlk mekanik enerji: E_M(ilk) = m · g · h = 2 · 10 · 10 = {koyu:200 J}. Son mekanik enerji (yerde h = 0): E_M(son) = {kesir:1|2} · m · v · v = {kesir:1|2} · 2 · (10 · 10) = {koyu:100 J}. Isıya dönüşen enerji: E_ısı = E_M(ilk) - E_M(son) = 200 - 100 = {koyu:100 J} bulunur.",
+      "ipucu": "İlk mekanik enerjiden son mekanik enerjiyi çıkarınız.",
+      "cevap": "İlk mekanik enerji: E_M(ilk) = m · g · h = 2 · 10 · 10 = {koyu:200 J}. Son mekanik enerji (yerde h = 0): E_M(son) = {kesir:1|2} · m · v · v = {kesir:1|2} · 2 · (10 · 10) = {koyu:100 J}. Isıya dönüşen enerji: E_ısı = E_M(ilk) - E_M(son) = 200 - 100 = {koyu:100 J} bulunur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tip": "coktan",
+      "soru": "Yatay yolda sabit v süratiyle hareket eden m kütleli bir aracın kinetik enerjisi E'dir. Aracın sürati 3v katına çıkarılırsa kinetik enerjisi kaç E olur?",
+      "secenekler": [
+        "3 E",
+        "6 E",
+        "9 E",
+        "12 E",
+        "Hooke Yasası"
+      ],
+      "cevap": 2,
+      "aciklama": "Kinetik enerji süratin karesiyle doğru orantılıdır; sürat 3 katına çıkarsa kinetik enerji 3² = 9 katına çıkar.",
+      "tur": "coktan",
+      "dogru": 2
+    },
+    {
+      "tip": "coktan",
+      "soru": "Sürtünmelerin ihmal edildiği bir ortamda belirli bir yükseklikten serbest bırakılan bir cisim yere doğru düşerken aşağıdakilerden hangisi gerçekleşir?",
+      "secenekler": [
+        "Yer çekimi potansiyel enerjisi artar, kinetik enerjisi azalır.",
+        "Yer çekimi potansiyel enerjisi azalır, mekanik enerjisi değişmez.",
+        "Kinetik enerjisi ve mekanik enerjisi birlikte artar.",
+        "Mekanik enerjisi sıfırlanır.",
+        "F = k · x (Yay kuvvetinin uzama miktarıyla doğru orantılı olması)"
+      ],
+      "cevap": 1,
+      "aciklama": "Sürtünmesiz ortamda düşen cismin potansiyel enerjisi azalır, kinetik enerjisi artar; toplam mekanik enerjisi ise korunur (değişmez).",
+      "tur": "coktan",
+      "dogru": 1
+    },
+    {
+      "tip": "coktan",
+      "soru": "Yay sabiti 200 N/m olan esnek bir yayı denge konumundan 0,3 m uzatmak için yayda depolanması gereken esneklik potansiyel enerjisi kaç Joule'dür?",
+      "secenekler": [
+        "6 J",
+        "9 J",
+        "18 J",
+        "60 J",
+        "Hooke Yasası"
+      ],
+      "cevap": 1,
+      "aciklama": "E_es = 1/2 · k · x² = 1/2 · 200 · (0,3)² = 100 · 0,09 = 9 J bulunur.",
+      "tur": "coktan",
+      "dogru": 1
+    },
+    {
+      "tip": "coktan",
+      "soru": "Sürtünmeli yatay bir yolda 10 m/s süratle fırlatılan 2 kg kütleli bir takoz, 5 metre yol alarak duruyor. Buna göre yol boyunca cisme etki eden sabit sürtünme kuvveti kaç Newton'dur?",
+      "secenekler": [
+        "10 N",
+        "20 N",
+        "40 N",
+        "50 N",
+        "Hooke Yasası"
+      ],
+      "cevap": 1,
+      "aciklama": "İlk kinetik enerji E_K = 1/2 · 2 · 10² = 100 J'dür. Cisim durduğuna göre W_s = F_s · x = 100 J -> F_s · 5 = 100 -> F_s = 20 N olur.",
+      "tur": "coktan",
+      "dogru": 1
+    },
+    {
+      "tip": "dy",
+      "soru": "Aşağıdaki ifadeleri Doğru (D) veya Yanlış (Y) olarak değerlendiriniz.",
+      "tur": "dy",
+      "ifadeler": [
+        {
+          "ifade": "Bir cismin kinetik ve potansiyel enerjilerinin toplamına mekanik enerji denir ve birimi Joule'dür.",
+          "dogru": true,
+          "aciklama": "E_M = E_K + E_P olup tüm enerji türlerinin SI birimi Joule'dür."
+        },
+        {
+          "ifade": "Sürtünmesiz ortamda aynı yükseklikten serbest bırakılan farklı kütleli iki cisim yere aynı süratle çarpar.",
+          "dogru": true,
+          "aciklama": "v = {kok:2gh} bağıntısına göre yere çarpma sürati kütleden bağımsızdır."
+        },
+        {
+          "ifade": "Esnek bir yay x yerine 2x kadar sıkıştırılırsa yayda depolanan esneklik potansiyel enerjisi 2 katına çıkar.",
+          "dogru": false,
+          "aciklama": "E_es = 1/2 · k · x² olduğu için sıkışma 2 katına çıkarsa enerji 4 katına çıkar."
+        },
+        {
+          "ifade": "Sürtünmeli ortamlarda sistemin mekanik enerjisi ısıya dönüşerek azalır.",
+          "dogru": true,
+          "aciklama": "Sürtünme kuvveti negatif iş yaparak mekanik enerjinin bir kısmını ısı enerjisine dönüştürür."
+        },
+        {
+          "ifade": "Yatay düzlemde sabit süratle ilerleyen bir cismin hem kinetik hem de yer çekimi potansiyel enerjisi sürekli artar.",
+          "dogru": false,
+          "aciklama": "Yatay düzlemde yükseklik (h) ve sürat (v) sabit olduğundan hem kinetik hem de potansiyel enerji değişmez."
+        }
+      ]
+    },
+    {
+      "tip": "eslestir",
+      "soru": "Aşağıdaki fiziksel büyüklük ve yasaları matematiksel karşılıklarıyla doğru şekilde eşleştiriniz.",
+      "ciftler": [
+        [
+          "Öteleme Kinetik Enerjisi",
+          "1/2 · m · v² (Kütle ile süratin karesinin çarpımının yarısı)"
+        ],
+        [
+          "Yer Çekimi Potansiyel Enerjisi",
+          "m · g · h (Kütle, çekim ivmesi ve yüksekliğin çarpımı)"
+        ],
+        [
+          "Esneklik Potansiyel Enerjisi",
+          "1/2 · k · x² (Yay sabiti ile uzamanın karesinin çarpımının yarısı)"
+        ],
+        [
+          "Hooke Yasası",
+          "F = k · x (Yay kuvvetinin uzama miktarıyla doğru orantılı olması)"
+        ],
+        [
+          "Mekanik Enerji",
+          "E_M = E_K + E_P (Kinetik ve potansiyel enerjilerin toplamı)"
+        ]
+      ],
+      "tur": "eslestir"
+    },
+    {
+      "tip": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir sistemin sahip olduğu kinetik ve potansiyel enerjilerin toplamına ___ enerji denir.",
+          "cevap": "mekanik"
+        },
+        {
+          "metin": "Hareket halindeki bir cismin sürati iki katına çıkarsa öteleme kinetik enerjisi ___ katına çıkar.",
+          "cevap": "dört"
+        },
+        {
+          "metin": "Esnek bir yayın ucuna uygulanan kuvvet ile uzama miktarı arasındaki F = k · x ilişkisine ___ Yasası denir.",
+          "cevap": "Hooke"
+        },
+        {
+          "metin": "Sürtünmelerin ihmal edildiği yalıtılmış bir sistemde toplam mekanik enerji daima ___ kalır.",
+          "cevap": "sabit"
+        },
+        {
+          "metin": "Sürtünmeli yüzeylerde hareket eden cismin azalan mekanik enerjisi ___ enerjisine dönüşür.",
+          "cevap": "ısı"
+        }
+      ],
+      "kelimeler": [
+        "mekanik",
+        "dört",
+        "Hooke",
+        "sabit",
+        "ısı"
+      ],
+      "fazla": [
+        "iki",
+        "kimyasal"
+      ],
+      "tur": "bosluk"
+    },
+    {
+      "tip": "ogretici",
+      "soru": "Yerden h = 45 m yükseklikten serbest bırakılan m = 2 kg kütleli bir topun hareketini (g = 10 m/s², sürtünmeler önemsiz) adım adım çözümleyiniz.",
+      "ipuclari": [
+        ": ",
+        ": ",
+        ": "
+      ],
+      "cevap": "  ",
+      "tur": "ogretici"
+    }
+  ],
+  "ders_adi": "Fizik",
+  "giris": "Bir sistemin hareketinden dolayı sahip olduğu {koyu:kinetik enerji (E_K)} ile konumundan veya esnek yapısından dolayı depoladığı {koyu:potansiyel enerjinin (E_P)} toplamına {koyu:mekanik enerji (E_M = E_K + E_P)} denir.",
+  "ad": "10-fizik-14"
+}

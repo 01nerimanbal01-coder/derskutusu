@@ -1,0 +1,345 @@
+{
+  "sinif": 6,
+  "ders": "matematik",
+  "unite": "İstatistiksel Araştırma Süreci",
+  "konu": "Kategorik ve Nicel (Kesikli) Veri Dağılımları",
+  "hafta": 14,
+  "tarih": "21-25 Aralık 2026",
+  "yayin_tarihi": "2026-12-21",
+  "ciktilar": [
+    "MAT.6.5.1. Kategorik veya nicel (kesikli) veri ile çalışabilme ve veriye dayalı karar verebilme (ç. Verileri görselleştirir ve özetler, d. Bulguları yorumlar, e. İstatistiksel sonuç ve çıkarımları tartışır)."
+  ],
+  "ozet": [
+    "Kategorik veriler sıklık tablosu, sütun grafiği ve daire grafiğiyle; nicel (kesikli) veriler ise nokta grafiği ve kök-yaprak gösterimiyle görselleştirilir.",
+    "Kök-yaprak gösteriminde verilerin büyük basamakları (örneğin onlar basamağı) 'kök' sütununa, birler basamağı ise küçükten büyüğe sıralanarak 'yaprak' sütununa yazılır.",
+    "Aritmetik ortalama, tüm verilerin toplamının veri sayısına bölünmesiyle bulunur ve veri dağılımının denge noktasını temsil eder.",
+    "Ortanca (medyan), küçükten büyüğe sıralanan veri grubunun tam ortasındaki değerdir; veri grubunda aşırı büyük veya aşırı küçük uç (aykırı) değer bulunduğunda grubu ortalamadan daha doğru temsil eder.",
+    "Tepe değer (mod), bir veri grubunda en çok tekrar eden değerdir; açıklık ise en büyük değer ile en küçük değer arasındaki fark olup verilerin yayılımını (tutarlılığını) ölçer.",
+    "İki veri grubu karşılaştırılırken yalnız ortalamaya değil açıklığa da bakılır; açıklığı küçük olan grubun performansı daha istikrarlı ve tutarlıdır."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Kategorik ve Nicel (Kesikli) Verileri Görselleştirme Araçları",
+      "metin": [
+        "Geçen hafta istatistiksel araştırma sorusu oluşturmayı ve veri toplamayı öğrenmiştik. Toplanan verileri anlamlandırmanın ilk adımı, veri türüne en uygun görselleştirme aracını seçmektir. Nitelik veya grup belirten kategorik verilerde (örneğin tercih edilen spor dalı, sevilen kitap türü) grupların sıklıklarını karşılaştırmak için sütun grafiği, bütündeki paylarını görmek için ise daire grafiği kullanılır.",
+        "Sayma sonucu elde edilen tam sayılı nicel (kesikli) verilerde (örneğin öğrencilerin okuduğu kitap sayısı, bir haftada çözülen soru sayısı, kardeş sayısı) ise sayı doğrusu üzerindeki yığılmaları ve boşlukları net gösteren nokta grafiği tercih edilir. Nokta grafiğinde her bir veri değeri sayı doğrusu üzerinde bir nokta ile temsil edilir."
+      ],
+      "kutular": [
+        {
+          "baslik": "Görsel Aracı Seçim Kuralı",
+          "metin": "Kategorik veride sütun veya daire grafiği; nicel (kesikli) veride ise dağılımın şeklini, tepe değerini ve uç değerlerini doğrudan gösteren nokta grafiği veya kök-yaprak gösterimi seçilir."
+        }
+      ],
+      "liste": [
+        "Sütun Grafiği: Kategorik grupların frekanslarını (sıklıklarını) karşılaştırır.",
+        "Daire Grafiği: Kategorilerin bütün içindeki oranını ve merkez açısını gösterir.",
+        "Nokta Grafiği: Küçük ve orta ölçekli kesikli sayısal verilerin dağılımını sayı doğrusu üzerinde gösterir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 250\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"250\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">NOKTA GRAFİĞİ VE SÜTUN GRAFİĞİ KARŞILAŞTIRMASI</text>\n  <rect x=\"20\" y=\"45\" width=\"320\" height=\"185\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1d4ed8\">Nokta Grafiği (Okunan Kitap Sayısı)</text>\n  <line x1=\"45\" y1=\"185\" x2=\"315\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <text x=\"75\" y=\"205\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">1</text>\n  <text x=\"130\" y=\"205\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">2</text>\n  <text x=\"185\" y=\"205\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">3</text>\n  <text x=\"240\" y=\"205\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">4</text>\n  <text x=\"295\" y=\"205\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">5</text>\n  <circle cx=\"75\" cy=\"170\" r=\"6\" fill=\"#2563eb\"/>\n  <circle cx=\"130\" cy=\"170\" r=\"6\" fill=\"#2563eb\"/><circle cx=\"130\" cy=\"152\" r=\"6\" fill=\"#2563eb\"/><circle cx=\"130\" cy=\"134\" r=\"6\" fill=\"#2563eb\"/>\n  <circle cx=\"185\" cy=\"170\" r=\"6\" fill=\"#2563eb\"/><circle cx=\"185\" cy=\"152\" r=\"6\" fill=\"#2563eb\"/><circle cx=\"185\" cy=\"134\" r=\"6\" fill=\"#2563eb\"/><circle cx=\"185\" cy=\"116\" r=\"6\" fill=\"#2563eb\"/><circle cx=\"185\" cy=\"98\" r=\"6\" fill=\"#2563eb\"/>\n  <circle cx=\"240\" cy=\"170\" r=\"6\" fill=\"#2563eb\"/><circle cx=\"240\" cy=\"152\" r=\"6\" fill=\"#2563eb\"/>\n  <circle cx=\"295\" cy=\"170\" r=\"6\" fill=\"#2563eb\"/>\n  <rect x=\"360\" y=\"45\" width=\"320\" height=\"185\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#b45309\">Sütun Grafiği (Kulüp Tercihleri - Kategorik)</text>\n  <line x1=\"395\" y1=\"185\" x2=\"655\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <rect x=\"415\" y=\"115\" width=\"40\" height=\"70\" fill=\"#f59e0b\"/>\n  <text x=\"435\" y=\"108\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">14</text>\n  <text x=\"435\" y=\"205\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">Bilim</text>\n  <rect x=\"495\" y=\"95\" width=\"40\" height=\"90\" fill=\"#10b981\"/>\n  <text x=\"515\" y=\"88\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#047857\">18</text>\n  <text x=\"515\" y=\"205\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">Spor</text>\n  <rect x=\"575\" y=\"135\" width=\"40\" height=\"50\" fill=\"#8b5cf6\"/>\n  <text x=\"595\" y=\"128\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#6d28d9\">10</text>\n  <text x=\"595\" y=\"205\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">Sanat</text>\n</svg>"
+    },
+    {
+      "baslik": "Kök–Yaprak Gösterimi Oluşturma ve Yorumlama",
+      "metin": [
+        "Nicel (kesikli) verileri hem tablo düzeninde özetleyen hem de hiçbir veri değerini kaybetmeden dağılımın şeklini gösteren özel araca kök-yaprak gösterimi denir. İki basamaklı sayılardan oluşan bir veri grubunda onlar basamağındaki rakam 'kök' sütununa, birler basamağındaki rakamlar ise küçükten büyüğe doğru sıralanarak 'yaprak' sütununa yazılır.",
+        "Kök-yaprak gösteriminin altına mutlaka bir okuma anahtarı (örneğin '7 | 4 = 74 puan' gibi) eklenir. Bu gösterim sayesinde verilerin hangi onluk aralığında yoğunlaştığı, en küçük ve en büyük değerlerin kaç olduğu ve ortanca değerin hangi satırda yer aldığı tek bakışta okunabilir."
+      ],
+      "kutular": [
+        {
+          "baslik": "Kök–Yaprak Gösteriminin Avantajı",
+          "metin": "Sütun grafiğinden farklı olarak kök-yaprak gösteriminde her bir bireysel veri değeri korunur ve veriler otomatik olarak küçükten büyüğe sıralanmış olur."
+        }
+      ],
+      "liste": [
+        "Yaprak kısmındaki rakam sayısı, toplam veri sayısına (öğrenci/gözlem sayısına) eşittir.",
+        "Aynı sayı birden fazla kez tekrar ediyorsa yaprak kısmına tekrar sayısı kadar yazılır.",
+        "Hiç verisi olmayan ara bir kök değeri varsa, dağılımdaki boşluğu gizlememek için kök sütununa yazılır ancak yaprak kısmı boş bırakılır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 240\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"240\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">KÖK-YAPRAK GÖSTERİMİ (SINIFTAKİ ÖĞRENCİLERİN DENEME PUANLARI)</text>\n  <rect x=\"30\" y=\"50\" width=\"290\" height=\"165\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"175\" y=\"75\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1d4ed8\">Ham Veri Grubu (12 Öğrenci)</text>\n  <text x=\"175\" y=\"105\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">62, 65, 68, 70, 74, 74,</text>\n  <text x=\"175\" y=\"130\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">79, 81, 83, 85, 88, 92</text>\n  <text x=\"175\" y=\"165\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e40af\">Anahtar: 6 | 2 = 62 puan</text>\n  <text x=\"175\" y=\"185\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e40af\">(Kök: Onlar basamağı, Yaprak: Birler)</text>\n  <rect x=\"350\" y=\"50\" width=\"320\" height=\"165\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <text x=\"430\" y=\"75\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">Kök</text>\n  <text x=\"540\" y=\"75\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">Yaprak</text>\n  <line x1=\"465\" y1=\"60\" x2=\"465\" y2=\"195\" stroke=\"#15803d\" stroke-width=\"2\"/>\n  <line x1=\"380\" y1=\"84\" x2=\"640\" y2=\"84\" stroke=\"#15803d\" stroke-width=\"1.5\"/>\n  <text x=\"430\" y=\"108\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#14532d\">6</text>\n  <text x=\"485\" y=\"108\" font-size=\"13\" fill=\"#14532d\">2   5   8</text>\n  <text x=\"430\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#14532d\">7</text>\n  <text x=\"485\" y=\"134\" font-size=\"13\" fill=\"#14532d\">0   4   4   9</text>\n  <text x=\"430\" y=\"160\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#14532d\">8</text>\n  <text x=\"485\" y=\"160\" font-size=\"13\" fill=\"#14532d\">1   3   5   8</text>\n  <text x=\"430\" y=\"186\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#14532d\">9</text>\n  <text x=\"485\" y=\"186\" font-size=\"13\" fill=\"#14532d\">2</text>\n</svg>"
+    },
+    {
+      "baslik": "Merkezi Eğilim Ölçüleri: Aritmetik Ortalama, Ortanca ve Tepe Değer",
+      "metin": [
+        "Bir nicel veri dağılımını tek bir 'tipik' sayıyla özetlemek istediğimizde merkezi eğilim ölçülerini kullanırız. Aritmetik ortalama, veri grubundaki tüm sayıların toplamının veri adedine bölünmesiyle elde edilir: {kesir:Verilerin Toplamı|Veri Sayısı}. Ortalama, sayı doğrusu üzerindeki verilerin ağırlık (denge) merkezidir.",
+        "Ortanca (medyan), küçükten büyüğe doğru sıralanmış bir veri grubunda tam ortada yer alan sayıdır. Veri sayısı tek ise tam ortadaki terim, çift ise ortadaki iki terimin aritmetik ortalaması ortancayı verir. Tepe değer (mod) ise veri grubunda en çok tekrar eden (frekansı en yüksek olan) değerdir. Bir veri grubunda tüm terimler eşit sayıda tekrar ediyorsa tepe değer yoktur; birden fazla değer en yüksek tekrar sayısını paylaşıyorsa birden fazla tepe değer vardır."
+      ],
+      "kutular": [
+        {
+          "baslik": "Hangi Ölçü Ne Zaman Seçilir?",
+          "metin": "Veriler birbirine yakınsa 'aritmetik ortalama', uç (aykırı) değer varsa 'ortanca', en çok tercih edilen ürün/numara aranıyorsa 'tepe değer' en uygun özetleme ölçüsüdür."
+        }
+      ],
+      "tablo": {
+        "basliklar": [
+          "Ölçü Adı",
+          "Bulunuş Yöntemi",
+          "En Uygun Kullanım Durumu"
+        ],
+        "satirlar": [
+          [
+            "Aritmetik Ortalama",
+            "Toplamın veri sayısına bölünmesi",
+            "Uç değeri olmayan dengeli nicel dağılımlar"
+          ],
+          [
+            "Ortanca (Medyan)",
+            "Sıralı veride tam ortadaki değer",
+            "Aşırı büyük veya küçük uç değer içeren dağılımlar"
+          ],
+          [
+            "Tepe Değer (Mod)",
+            "En çok tekrar eden değer",
+            "Kategorik veriler veya en yaygın değerin arandığı durumlar"
+          ]
+        ]
+      },
+      "gorsel": "<svg viewBox=\"0 0 700 245\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"245\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">MERKEZİ EĞİLİM ÖLÇÜLERİ: ARİTMETİK ORTALAMA, ORTANCA VE TEPE DEĞER</text>\n  <rect x=\"20\" y=\"50\" width=\"205\" height=\"170\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"122\" y=\"76\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1d4ed8\">Aritmetik Ortalama</text>\n  <text x=\"122\" y=\"104\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Verilerin toplamının</text>\n  <text x=\"122\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">veri sayısına bölümüdür.</text>\n  <text x=\"122\" y=\"152\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\">Denge noktasıdır;</text>\n  <text x=\"122\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\">uç değerlerden etkilenir.</text>\n  <rect x=\"247\" y=\"50\" width=\"205\" height=\"170\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"76\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#b45309\">Ortanca (Medyan)</text>\n  <text x=\"350\" y=\"104\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Küçükten büyüğe sıralı</text>\n  <text x=\"350\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">veride tam ortadaki değerdir.</text>\n  <text x=\"350\" y=\"152\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Aşırı uç (aykırı) değer</text>\n  <text x=\"350\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">varsa en güvenilir ölçüdür.</text>\n  <rect x=\"475\" y=\"50\" width=\"205\" height=\"170\" rx=\"8\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"1.5\"/>\n  <text x=\"577\" y=\"76\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#7e22ce\">Tepe Değer (Mod)</text>\n  <text x=\"577\" y=\"104\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Veri grubunda en çok</text>\n  <text x=\"577\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">tekrar eden değerdir.</text>\n  <text x=\"577\" y=\"152\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">En popüler / yaygın</text>\n  <text x=\"577\" y=\"170\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">tercihi belirlemede kullanılır.</text>\n</svg>"
+    },
+    {
+      "baslik": "Açıklık (Yayılım) ve Uç Değerlerin (Aykırı Değer) Etkisi",
+      "metin": [
+        "Veri grubundaki en büyük değer ile en küçük değer arasındaki farka açıklık denir: Açıklık = En Büyük Değer - En Küçük Değer. Açıklık, verilerin birbirine ne kadar yakın (tutarlı) veya birbirinden ne kadar kopuk (dağınık) olduğunu gösterir.",
+        "Veri grubundaki diğer değerlerden aşırı derecede uzak olan sayıya uç değer (aykırı değer) adı verilir. Örneğin 12, 14, 15, 15, 64 veri grubunda 64 bir uç değerdir. Bu uç değer aritmetik ortalamayı 15'ten 24'e çekerek yanıltıcı bir özet üretir; oysa ortanca (15) ve tepe değer (15) uç değerden hiç etkilenmez."
+      ],
+      "kutular": [
+        {
+          "baslik": "Uç Değer Kuralı",
+          "metin": "Bir veri grubuna çok büyük bir uç değer eklendiğinde aritmetik ortalama ve açıklık artar; ortanca ise ya hiç değişmez ya da çok az değişir."
+        }
+      ],
+      "liste": [
+        "Açıklığın küçük olması verilerin birbirine yakın ve homojen olduğunu gösterir.",
+        "Açıklığın büyük olması veriler arasında yüksek farklılık (değişkenlik) bulunduğunu gösterir.",
+        "Uç değer varlığında veri grubunu temsil etmek için ortanca (medyan) tercih edilir."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 240\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"240\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">YAYILIM ÖLÇÜSÜ (AÇIKLIK) VE UÇ DEĞER ETKİSİ</text>\n  <rect x=\"30\" y=\"52\" width=\"305\" height=\"165\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <text x=\"182\" y=\"78\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">A Grubu: 12, 14, 15, 15, 19</text>\n  <text x=\"182\" y=\"106\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#14532d\">• Açıklık = 19 - 12 = 7 (Tutarlı / Homojen)</text>\n  <text x=\"182\" y=\"130\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#14532d\">• Aritmetik Ortalama = 75 : 5 = 15</text>\n  <text x=\"182\" y=\"154\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#14532d\">• Ortanca = 15, Tepe Değer = 15</text>\n  <text x=\"182\" y=\"182\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">Uç değer yok -> Ortalama ve Ortanca eşit</text>\n  <rect x=\"365\" y=\"52\" width=\"305\" height=\"165\" rx=\"8\" fill=\"#fee2e2\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n  <text x=\"517\" y=\"78\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#b91c1c\">B Grubu: 12, 14, 15, 15, 64</text>\n  <text x=\"517\" y=\"106\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#7f1d1d\">• Açıklık = 64 - 12 = 52 (Yayılım geniş)</text>\n  <text x=\"517\" y=\"130\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#7f1d1d\">• Aritmetik Ortalama = 120 : 5 = 24</text>\n  <text x=\"517\" y=\"154\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#7f1d1d\">• Ortanca = 15 (Uç değerden etkilenmedi!)</text>\n  <text x=\"517\" y=\"182\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#991b1b\">64 uç değerdir -> Ortanca grubu daha iyi temsil eder</text>\n</svg>"
+    },
+    {
+      "baslik": "İki Veri Grubunu Karşılaştırma ve Veriye Dayalı Karar Verme",
+      "metin": [
+        "İstatistiksel araştırma sürecinin temel amacı, özetlenen bulgulardan hareketle gerçek yaşam problemlerinde doğru kararlar vermektir. İki öğrenci, iki takım veya iki şehrin verileri karşılaştırılırken önce merkezi eğilim ölçülerine (ortalama veya ortanca) bakılarak genel başarı/büyüklük düzeyi belirlenir.",
+        "Eğer iki grubun aritmetik ortalamaları birbirine eşit veya çok yakınsa, karar vermek için açıklık (yayılım) değerlerine bakılır. Açıklığı daha küçük olan grubun performansı daha istikrarlı, öngörülebilir ve güvenilirdir; açıklığı büyük olan grubun performansı ise inişli çıkışlıdır."
+      ],
+      "kutular": [
+        {
+          "baslik": "İstikrar Ölçütü Olarak Açıklık",
+          "metin": "Ortalamaları eşit olan iki yarışmacıdan açıklığı küçük olan daha istikrarlı (tutarlı) kabul edilir."
+        }
+      ],
+      "liste": [
+        "1. Adım: Her iki veri grubunun ortalama ve ortancasını hesapla.",
+        "2. Adım: Her iki veri grubunun açıklığını (En büyük - En küçük) bul.",
+        "3. Adım: Ortalaması yüksek ve açıklığı düşük olan seçeneği veriye dayalı gerekçeyle belirle."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 245\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"245\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">İKİ VERİ GRUBUNU KARŞILAŞTIRMA VE VERİYE DAYALI KARAR VERME</text>\n  <rect x=\"30\" y=\"50\" width=\"640\" height=\"170\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"76\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Basketbol Takımı Oyuncu Seçimi (5 Maçlık Sayı Performansı)</text>\n  <text x=\"190\" y=\"108\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">Kerem: 14, 15, 16, 15, 15</text>\n  <text x=\"190\" y=\"132\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#334155\">Ortalama = 15 sayı</text>\n  <text x=\"190\" y=\"154\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#334155\">Açıklık = 16 - 14 = 2 sayı</text>\n  <text x=\"190\" y=\"180\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">Yorum: Çok istikrarlı ve düzenli performans</text>\n  <line x1=\"350\" y1=\"90\" x2=\"350\" y2=\"200\" stroke=\"#93c5fd\" stroke-width=\"2\"/>\n  <text x=\"510\" y=\"108\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">Mert: 6, 24, 8, 25, 12</text>\n  <text x=\"510\" y=\"132\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#334155\">Ortalama = 15 sayı</text>\n  <text x=\"510\" y=\"154\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#334155\">Açıklık = 25 - 6 = 19 sayı</text>\n  <text x=\"510\" y=\"180\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b45309\">Yorum: Ortalaması aynı fakat dalgalanması yüksek</text>\n</svg>"
+    },
+    {
+      "baslik": "İstatistiksel Sonuçları Tartışma ve Yanıltıcı Grafikler",
+      "metin": [
+        "Günlük yaşamda ve medyada sunulan grafiklerin veriyi doğru yansıtıp yansıtmadığını eleştirel gözle incelemek istatistik okuryazarlığının önemli bir parçasıdır. Sütun grafiklerinde dikey eksenin 0'dan başlatılmaması, sütun boyları arasındaki oranı bozarak küçük farkları devasa farklarmış gibi gösterir.",
+        "Benzer şekilde eksen aralıklarının eşit olmaması, sütun genişliklerinin farklı çizilmesi veya veri grubunda uç değer varken yalnız aritmetik ortalamanın paylaşılması yanıltıcı çıkarımlara yol açar. Veriye dayalı karar verirken örneklem büyüklüğü ve grafik ölçeklendirmesi mutlaka kontrol edilmelidir."
+      ],
+      "kutular": [
+        {
+          "baslik": "Doğru Grafik Denetimi",
+          "metin": "Bir sütun grafiğini yorumlamadan önce dikey eksenin 0'dan başlayıp başlamadığı ve artış aralıklarının eşit olup olmadığı mutlaka kontrol edilmelidir."
+        }
+      ],
+      "liste": [
+        "Dikey eksenin 0'dan başlamaması görsel algıyı yanıltır.",
+        "Çok küçük örneklemlerle (örneğin yalnız 3 kişiye sorarak) bütün okul hakkında genelleme yapılamaz.",
+        "İstatistiksel raporlarda hem merkezi eğilim (ortalama/ortanca) hem de yayılım (açıklık) birlikte sunulmalıdır."
+      ],
+      "gorsel": "<svg viewBox=\"0 0 700 240\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"240\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">YANILTICI GRAFİKLERİ FARK ETME VE İSTATİSTİKSEL ETİK</text>\n  <rect x=\"30\" y=\"52\" width=\"300\" height=\"165\" rx=\"8\" fill=\"#fee2e2\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"76\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#b91c1c\">Yanıltıcı Grafik (Eksen 90'dan Başlamış)</text>\n  <text x=\"180\" y=\"104\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7f1d1d\">• Dikey eksen 0 yerine 90'dan başlatıldığında</text>\n  <text x=\"180\" y=\"124\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7f1d1d\">92 ile 96 arasındaki küçük fark</text>\n  <text x=\"180\" y=\"144\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7f1d1d\">3 kat büyükmüş gibi görünür.</text>\n  <rect x=\"370\" y=\"52\" width=\"300\" height=\"165\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"76\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">Doğru Grafik İlkeleri</text>\n  <text x=\"520\" y=\"104\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Sütun grafiklerinde dikey eksen 0'dan başlar.</text>\n  <text x=\"520\" y=\"124\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Eksen aralıkları eşit ölçeklendirilir.</text>\n  <text x=\"520\" y=\"144\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">• Sütun genişlikleri birbirine eşit çizilir.</text>\n</svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir öğrencinin 6 günde çözdüğü soru sayıları: 40, 45, 50, 45, 60, 120 olarak kaydedilmiştir. Bu veri grubunun aritmetik ortalamasını, ortancasını, tepe değerini ve açıklığını bulunuz; hangi ölçünün grubu daha iyi temsil ettiğini açıklayınız.",
+      "cozum": "Verileri küçükten büyüğe sıralayalım: 40, 45, 45, 50, 60, 120.\n• Aritmetik ortalama = {kesir:40 + 45 + 45 + 50 + 60 + 120|6} = {kesir:360|6} = 60.\n• Ortanca (medyan): 6 terim olduğu için ortadaki 3. ve 4. terimlerin ortalaması: {kesir:45 + 50|2} = 47,5.\n• Tepe değer (mod): En çok tekrar eden değer 45'tir (2 kez).\n• Açıklık = 120 - 40 = 80.\n120 sayısı uç (aykırı) değer olduğu için ortalamayı 60'a yükseltmiştir (oysa öğrenci 6 günün 5'inde 60 veya altında soru çözmüştür). Bu nedenle grubu 'ortanca (47,5)' daha iyi temsil eder.",
+      "ipucu": "Önce verileri küçükten büyüğe sıralayınız ve 120 uç değerinin ortalamayı nasıl etkilediğine dikkat ediniz.",
+      "cevap": "Verileri küçükten büyüğe sıralayalım: 40, 45, 45, 50, 60, 120.\n• Aritmetik ortalama = {kesir:40 + 45 + 45 + 50 + 60 + 120|6} = {kesir:360|6} = 60.\n• Ortanca (medyan): 6 terim olduğu için ortadaki 3. ve 4. terimlerin ortalaması: {kesir:45 + 50|2} = 47,5.\n• Tepe değer (mod): En çok tekrar eden değer 45'tir (2 kez).\n• Açıklık = 120 - 40 = 80.\n120 sayısı uç (aykırı) değer olduğu için ortalamayı 60'a yükseltmiştir (oysa öğrenci 6 günün 5'inde 60 veya altında soru çözmüştür). Bu nedenle grubu 'ortanca (47,5)' daha iyi temsil eder."
+    },
+    {
+      "soru": "Bir kök-yaprak gösteriminde kök sütununda 5, yaprak satırında '2, 5, 5, 8' ve kök sütununda 6, yaprak satırında '0, 4' yer almaktadır (5 | 2 = 52). Bu veri grubunun açıklığı ve aritmetik ortalaması kaçtır?",
+      "cozum": "Veri grubundaki sayılar: 52, 55, 55, 58, 60, 64 (toplam 6 veri).\n• Açıklık = En büyük - En küçük = 64 - 52 = 12.\n• Toplam = 52 + 55 + 55 + 58 + 60 + 64 = 344... Düzeltme: 52 + 55 = 107, 107 + 55 = 162, 162 + 58 = 220, 220 + 60 = 280, 280 + 64 = 344; {kesir:344|6} = {kesir:172|3} = 57 tam {kesir:1|3}.",
+      "ipucu": "Kök onlar basamağını, her bir yaprak ise birler basamağını gösterir.",
+      "cevap": "Veri grubundaki sayılar: 52, 55, 55, 58, 60, 64 (toplam 6 veri).\n• Açıklık = En büyük - En küçük = 64 - 52 = 12.\n• Toplam = 52 + 55 + 55 + 58 + 60 + 64 = 344... Düzeltme: 52 + 55 = 107, 107 + 55 = 162, 162 + 58 = 220, 220 + 60 = 280, 280 + 64 = 344; {kesir:344|6} = {kesir:172|3} = 57 tam {kesir:1|3}."
+    },
+    {
+      "soru": "Yedi kişilik bir okçuluk takımının puanları küçükten büyüğe doğru: 18, 20, 22, x, 25, 28, 34 şeklinde sıralanmıştır. Bu veri grubunun aritmetik ortalaması 24 olduğuna göre ortancası (medyanı) kaçtır?",
+      "cozum": "7 verinin aritmetik ortalaması 24 ise verilerin toplamı = 7 × 24 = 168'dir.\nBilinenlerin toplamı: 18 + 20 + 22 + 25 + 28 + 34 = 147.\nBuradan x = 168 - 147 = 21 bulunur. Veriler zaten sıralı verildiğinden 4. sıradaki ortanca terim x olup (soruda 22 <= x <= 25 olması için toplamı kontrol edelim: 168 - 147 = 21 ise sıralamada 20 ile 22 arasına gelir ve ortadaki 4. terim 22 olur!). Sıralı hâli: 18, 20, 21, 22, 25, 28, 34 -> Tam ortadaki (4.) terim 22'dir.",
+      "ipucu": "x değerini bulduktan sonra sayıların küçükten büyüğe sıralamasını yeniden kontrol ediniz!",
+      "cevap": "7 verinin aritmetik ortalaması 24 ise verilerin toplamı = 7 × 24 = 168'dir.\nBilinenlerin toplamı: 18 + 20 + 22 + 25 + 28 + 34 = 147.\nBuradan x = 168 - 147 = 21 bulunur. Veriler zaten sıralı verildiğinden 4. sıradaki ortanca terim x olup (soruda 22 <= x <= 25 olması için toplamı kontrol edelim: 168 - 147 = 21 ise sıralamada 20 ile 22 arasına gelir ve ortadaki 4. terim 22 olur!). Sıralı hâli: 18, 20, 21, 22, 25, 28, 34 -> Tam ortadaki (4.) terim 22'dir."
+    },
+    {
+      "soru": "İki yüzücünün 5 antrenmandaki 50 metre bitirme süreleri (saniye):\nElif: 34, 35, 35, 36, 35\nZeynep: 31, 39, 35, 32, 38\nHer iki yüzücünün ortalamasını ve açıklığını bularak turnuvaya hangisinin seçilmesinin daha istikrarlı bir tercih olacağını açıklayınız.",
+      "cozum": "• Elif'in ortalaması = {kesir:34+35+35+36+35|5} = {kesir:175|5} = 35 sn; Açıklığı = 36 - 34 = 2 sn.\n• Zeynep'in ortalaması = {kesir:31+39+35+32+38|5} = {kesir:175|5} = 35 sn; Açıklığı = 39 - 31 = 8 sn.\nHer iki yüzücünün ortalama süresi (35 sn) eşittir; ancak Elif'in açıklığı (2 sn) Zeynep'in açıklığından (8 sn) çok daha küçüktür. Elif çok daha istikrarlı yüzdüğü için istikrar aranan yarışta Elif tercih edilir.",
+      "ipucu": "Ortalamalar eşit olduğunda açıklığı küçük olan daha tutarlıdır.",
+      "cevap": "• Elif'in ortalaması = {kesir:34+35+35+36+35|5} = {kesir:175|5} = 35 sn; Açıklığı = 36 - 34 = 2 sn.\n• Zeynep'in ortalaması = {kesir:31+39+35+32+38|5} = {kesir:175|5} = 35 sn; Açıklığı = 39 - 31 = 8 sn.\nHer iki yüzücünün ortalama süresi (35 sn) eşittir; ancak Elif'in açıklığı (2 sn) Zeynep'in açıklığından (8 sn) çok daha küçüktür. Elif çok daha istikrarlı yüzdüğü için istikrar aranan yarışta Elif tercih edilir."
+    },
+    {
+      "soru": "Bir ayakkabı mağazası, gelecek ay hangi numara spor ayakkabıdan daha fazla sipariş vereceğine karar vermek için bu ay satılan 50 çift ayakkabının numaralarını kaydetmiştir. Mağaza müdürü karar verirken aritmetik ortalama, ortanca ve tepe değerden hangisini kullanmalıdır?",
+      "cozum": "Mağaza müdürü en çok satılan (en popüler) ayakkabı numarasını bilmek istediği için 'tepe değer (mod)' ölçüsünü kullanmalıdır. Örneğin aritmetik ortalama 38,4 gibi bir ayakkabı numarası olmayan ondalık değer çıkabilir; oysa tepe değer en çok talep gören tam numarayı doğrudan verir.",
+      "ipucu": "En çok tercih edilen ürünü belirlemede frekansı en yüksek olan ölçü kullanılır.",
+      "cevap": "Mağaza müdürü en çok satılan (en popüler) ayakkabı numarasını bilmek istediği için 'tepe değer (mod)' ölçüsünü kullanmalıdır. Örneğin aritmetik ortalama 38,4 gibi bir ayakkabı numarası olmayan ondalık değer çıkabilir; oysa tepe değer en çok talep gören tam numarayı doğrudan verir."
+    },
+    {
+      "soru": "Bir sütun grafiğinde A şirketinin satışı 102 bin adet, B şirketinin satışı 106 bin adet olduğu hâlde B şirketinin sütunu A şirketinin sütununun 3 katı yüksekliğinde görünmektedir. Bu grafikte hangi hata yapılmıştır?",
+      "cozum": "Grafiğin dikey ekseni 0'dan başlatılmak yerine 100 binden başlatılmıştır. Bu nedenle A sütunu 2 birim (102 - 100), B sütunu 6 birim (106 - 100) yüksekliğinde çizilmiş ve gerçekte yaklaşık %4 olan fark 3 kat (yani %200 fark) gibi yanıltıcı biçimde gösterilmiştir.",
+      "ipucu": "Sütun grafiklerinde dikey eksenin başlangıç noktasına dikkat ediniz.",
+      "cevap": "Grafiğin dikey ekseni 0'dan başlatılmak yerine 100 binden başlatılmıştır. Bu nedenle A sütunu 2 birim (102 - 100), B sütunu 6 birim (106 - 100) yüksekliğinde çizilmiş ve gerçekte yaklaşık %4 olan fark 3 kat (yani %200 fark) gibi yanıltıcı biçimde gösterilmiştir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir veri grubundaki sayılar küçükten büyüğe doğru 12, 15, 15, 18, 20, 22, 85 şeklinde sıralanmıştır. Bu veri grubunu tek bir değerle en doğru şekilde özetlemek için hangi merkezi eğilim ölçüsü tercih edilmelidir?",
+      "secenekler": [
+        "Aritmetik ortalama, çünkü tüm sayıları hesaba katar.",
+        "Ortanca (medyan), çünkü 85 gibi aşırı büyük bir uç değer vardır.",
+        "Açıklık, çünkü en büyük ve en küçük değeri kullanır.",
+        "Kök-yaprak gösterimi, çünkü bir merkezi eğilim ölçüsüdür."
+      ],
+      "dogru": 1,
+      "aciklama": "Veri grubunda 85 gibi diğer verilerden çok uzak bir uç (aykırı) değer bulunduğunda aritmetik ortalama yanıltıcı derecede yükselir; bu durumda ortanca (18) grubu çok daha doğru temsil eder."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir öğrencinin 5 sınavdan aldığı puanlar 70, 80, 80, 85 ve 95'tir. Bu veri grubunun aritmetik ortalaması, ortancası ve tepe değeri sırasıyla aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "82, 80, 80",
+        "80, 82, 80",
+        "82, 85, 80",
+        "80, 80, 85"
+      ],
+      "dogru": 0,
+      "aciklama": "Toplam = 70 + 80 + 80 + 85 + 95 = 410 -> Ortalama = 410 : 5 = 82. Sıralı veride 3. terim (ortanca) = 80. En çok tekrar eden (tepe değer) = 80."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki araştırma sorularından hangisiyle toplanan veriler 'nicel (kesikli)' veri türüne örnektir ve nokta grafiğiyle gösterilmeye uygundur?",
+      "secenekler": [
+        "Sınıfımızdaki öğrencilerin en sevdiği renk hangisidir?",
+        "Okulumuzdaki öğrencilerin tuttukları futbol takımları hangileridir?",
+        "6-A sınıfındaki öğrencilerin evlerinde bulunan hikâye kitabı sayısı kaçtır?",
+        "Kantinde en çok tercih edilen meyve suyu çeşidi hangisidir?"
+      ],
+      "dogru": 2,
+      "aciklama": "Hikâye kitabı sayısı sayma yoluyla elde edilen tam sayılı bir nicel (kesikli) veridir; diğer seçenekler kategorik veridir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Küçükten büyüğe sıralanmış 14, 17, 19, 21, 24, 29 veri grubunun ortancası (medyanı) kaçtır?",
+      "secenekler": [
+        "19",
+        "20",
+        "21",
+        "15"
+      ],
+      "dogru": 1,
+      "aciklama": "6 terimli (çift sayıda) sıralı veride ortadaki iki terim 19 ve 21'dir. Ortanca = {kesir:19 + 21|2} = 20 olur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Kategorik ve nicel (kesikli) veri dağılımlarıyla ilgili aşağıdaki ifadelerin Doğru (D) mi yoksa Yanlış (Y) mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "ifade": "Bir veri grubundaki tüm sayılar birbirinden farklıysa o veri grubunun tepe değeri (modu) yoktur.",
+          "dogru": true
+        },
+        {
+          "ifade": "Ortalamaları eşit olan iki veri grubundan açıklığı büyük olan grup daha tutarlı ve istikrarlıdır.",
+          "dogru": false
+        },
+        {
+          "ifade": "Kök-yaprak gösteriminde yaprak kısmındaki rakamların toplam adedi, veri grubundaki terim sayısına eşittir.",
+          "dogru": true
+        },
+        {
+          "ifade": "Sütun grafiklerinde dikey eksenin 0 yerine büyük bir sayıdan başlatılması sütunlar arasındaki farkı olduğundan abartılı gösterir.",
+          "dogru": true
+        },
+        {
+          "ifade": "Bir veri grubuna uç değer eklendiğinde ortanca (medyan) her zaman aritmetik ortalamadan daha fazla değişir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "İstatistiksel kavramları görev ve tanımlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Aritmetik Ortalama",
+          "Verilerin toplamının veri sayısına bölünmesiyle bulunan denge noktası"
+        ],
+        [
+          "Ortanca (Medyan)",
+          "Sıralı veri grubunda uç değerlerden etkilenmeyen tam ortadaki değer"
+        ],
+        [
+          "Tepe Değer (Mod)",
+          "Veri grubunda frekansı en yüksek olan (en çok tekrar eden) değer"
+        ],
+        [
+          "Açıklık",
+          "En büyük veri ile en küçük veri arasındaki fark (yayılım ölçüsü)"
+        ],
+        [
+          "Kök-Yaprak Gösterimi",
+          "Sayıları basamaklarına ayırarak hem sıralayan hem dağılımı gösteren tablo"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "cevap": "kesikli",
+          "metin": "Sayma sonucu tam sayılarla ifade edilen verilere nicel (___) veri denir."
+        },
+        {
+          "cevap": "uç",
+          "metin": "Veri grubunda diğer değerlerden aşırı derecede uzak olan sayıya ___ değer adı verilir."
+        },
+        {
+          "cevap": "açıklığı",
+          "metin": "En büyük değer ile en küçük değer arasındaki farka veri grubunun ___ denir."
+        },
+        {
+          "cevap": "ortanca",
+          "metin": "Uç değer bulunan bir nicel veri grubunu özetlemek için en güvenilir ölçü ___ değeridir."
+        },
+        {
+          "cevap": "tepe",
+          "metin": "En çok tercih edilen ayakkabı numarasını veya kulübü belirlerken ___ değer kullanılır."
+        }
+      ],
+      "kelimeler": [
+        "kesikli",
+        "uç",
+        "açıklığı",
+        "ortanca",
+        "tepe"
+      ],
+      "fazla": [
+        "sürekli",
+        "daire"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "İki farklı çalışma grubunun deneme sınavı puanlarını karşılaştırarak hangi grubun daha başarılı ve istikrarlı olduğuna veriye dayalı karar verme adımlarını açıklayınız.",
+      "ipuclari": [
+        "1. Adım: Verileri Sırala ve Görselleştir: Her iki grubun puanlarını küçükten büyüğe sıralayarak nokta grafiği veya kök-yaprak gösterimiyle dağılım şeklini ve varsa uç değerleri belirle.",
+        "2. Adım: Merkezi Eğilim Ölçülerini Hesapla: Grupların aritmetik ortalamasını ve ortancasını bularak genel başarı düzeylerini karşılaştır.",
+        "3. Adım: Açıklık ile İstikrarı Yorumla: Her iki grubun açıklığını hesapla; ortalaması yüksek ve açıklığı küçük olan grubun hem daha başarılı hem de daha tutarlı olduğu sonucuna ulaş."
+      ],
+      "cevap": "Her iki grubun puanlarını küçükten büyüğe sıralayarak nokta grafiği veya kök-yaprak gösterimiyle dağılım şeklini ve varsa uç değerleri belirle. Grupların aritmetik ortalamasını ve ortancasını bularak genel başarı düzeylerini karşılaştır. Her iki grubun açıklığını hesapla; ortalaması yüksek ve açıklığı küçük olan grubun hem daha başarılı hem de daha tutarlı olduğu sonucuna ulaş."
+    }
+  ],
+  "ders_adi": "Matematik",
+  "giris": "Kategorik veriler sıklık tablosu, sütun grafiği ve daire grafiğiyle; nicel (kesikli) veriler ise nokta grafiği ve kök-yaprak gösterimiyle görselleştirilir.",
+  "ad": "6-matematik-14"
+}

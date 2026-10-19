@@ -14,15 +14,18 @@ from html.parser import HTMLParser
 import importlib.util
 import json
 import re
+import sys
 from pathlib import Path
 
 ARACLAR = Path(__file__).resolve().parent
+if str(ARACLAR) not in sys.path:
+    sys.path.insert(0, str(ARACLAR))
 PUBLIC = ARACLAR.parent / 'public'
 _spec = importlib.util.spec_from_file_location('sayfa_uret', ARACLAR / 'sayfa_uret.py')
 _sayfa = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(_sayfa)          # yalnız işlevler; iç sayfaları main() yeniler
 
-KAR = re.compile(r'\{(aci|olcu|dogru|isin|parca|uzunluk|us|kesir|kok|koyu|ar):([^{}]+)\}')
+KAR = re.compile(r'\{(aci|olcu|dogru|isin|parca|uzunluk|us|kesir|kok|koyu|ar|alt|formul|vurgu|renk|egik|i):([^{}]+)\}')
 # Köke boşluksuz yapışık katsayı: 10{kok:42}, −3{kok:2}, a{kok:b}, (a ÷ c){kok:b ÷ d}, {kesir:1|2}{kok:12}.
 # Katsayı kökle birlikte bölünmez bir kutuya alınır; tarayıcı satırı ikisinin arasından kırmaz.
 KOK = re.compile(r'((?:[^\W_]|[−-])*\([^()<>{}|]*\)|(?:[^\W_]|[−-])+|\)|\{(?:kesir|us):[^{}]+\})?\{kok:([^{}]+)\}')
@@ -33,12 +36,28 @@ SEMBOL = {  # MEB 5. sınıf matematik programındaki gösterimler (⊥, //, AB 
     'isin': '[{0}', 'parca': '[{0}]', 'uzunluk': '\ue000{0}\ue000',   # çubuklar e() sonunda '|' olur; kesir/kök/üs ayırıcısıyla karışmaz
     'koyu': '<b>{0}</b>',   # olumsuz kökteki vurgu: {koyu:değildir}
     'ar': '<bdi lang="ar" dir="rtl" style="font-size:1.3em;line-height:1.8">{0}</bdi>',
+    'vurgu': '<em>{0}</em>',
+    'egik': '<em>{0}</em>',
+    'i': '<em>{0}</em>',
+    'formul': '<code class="s-formul">{0}</code>',
 }
 
 
 def _us(ic):
     taban, _, us = ic.partition('|')   # {us:2|3} → 2³
     return f'{taban}<sup>{us}</sup>'
+
+
+def _alt(ic):
+    taban, _, indis = ic.partition('|')   # {alt:H|2} → H₂
+    return f'{taban}<sub>{indis}</sub>' if indis else f'<sub>{taban}</sub>'
+
+
+def _renk(ic):
+    renk_adi, _, metin = ic.partition(':')
+    if not metin:
+        renk_adi, _, metin = ic.partition('|')
+    return f'<span style="color:var(--{renk_adi}, var(--vurgu));font-weight:700">{metin or ic}</span>'
 
 
 def _kesir(ic):
@@ -93,7 +112,7 @@ def e(metin):
     if any(isaret in str(metin) for isaret in '√∛∜'):
         raise ValueError('Kök kapsamını {kok:ifade} / {kok:ifade|derece} ile belirtin: ' + str(metin))
     metin = html.escape(str(metin)).replace(' · ', '\u00a0·\u00a0').replace(' × ', '\u00a0×\u00a0')   # çarpımlar satır sonunda bölünmez
-    ozel = {'us': _us, 'kesir': _kesir, 'kok': _kok}
+    ozel = {'us': _us, 'kesir': _kesir, 'kok': _kok, 'alt': _alt, 'renk': _renk}
     # İçteki gösterim önce çözülür: kesir içindeki kök ve kök içindeki üs korunur.
     while KAR.search(metin):
         metin = KOK.sub(_kok_birlik, metin)   # kök önce: önündeki {kesir:..} katsayısı henüz çözülmemişken yakalanır
@@ -122,10 +141,17 @@ def yayin_tarihi(o, ad):
 
 def kutu_html(k):
     """Yan kutu: bilgi | dikkat | kural | tanim | ipucu | hatirla (simgeli, renkli; stil.css "Özet kutuları")."""
-    tur = k.get('tur') if k.get('tur') in KUTU else 'bilgi'
+    tur = k.get('tur') or k.get('tip', 'bilgi')
+    if tur in ('onemli', 'dikkat'):
+        tur = 'dikkat'
+    elif tur in ('kavram', 'tanim'):
+        tur = 'tanim'
+    elif tur not in KUTU:
+        tur = 'bilgi'
+    metin = k.get('metin') or k.get('icerik') or k.get('aciklama', '')
     simge = f'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">{SIMGE[tur]}</svg>'
     return (f'<aside class="ozet-kutu {tur}"><div class="kutu-bas"><span class="kutu-simge" aria-hidden="true">{simge}</span>'
-            f'<strong>{html.escape(k.get("baslik") or KUTU[tur])}</strong></div><p>{e(k["metin"])}</p></aside>')
+            f'<strong>{html.escape(k.get("baslik") or KUTU[tur])}</strong></div><p>{e(metin)}</p></aside>')
 
 
 def paragraflar(liste):
@@ -135,9 +161,11 @@ def paragraflar(liste):
 def tablo(t):
     if not t:
         return ''
-    bas = ''.join(f'<th>{e(b)}</th>' for b in t['basliklar'])
-    gov = ''.join('<tr>' + ''.join(f'<td>{e(h)}</td>' for h in s) + '</tr>' for s in t['satirlar'])
-    return f'<div class="ozet-tablo"><table><thead><tr>{bas}</tr></thead><tbody>{gov}</tbody></table></div>'
+    basliklar = t.get('basliklar') or t.get('sutunlar') or []
+    bas = ''.join(f'<th>{e(b)}</th>' for b in basliklar)
+    gov = ''.join('<tr>' + ''.join(f'<td>{e(h)}</td>' for h in s) + '</tr>' for s in t.get('satirlar', []))
+    bas_html = f'<thead><tr>{bas}</tr></thead>' if bas else ''
+    return f'<div class="ozet-tablo"><table>{bas_html}<tbody>{gov}</tbody></table></div>'
 
 
 HARF = 'ABCDE'
@@ -152,37 +180,43 @@ def etkinlik_html(liste, ozet_kimlik=''):
     import random
     parca = []
     for no, x in enumerate(liste, 1):
-        tur, rnd = x['tur'], random.Random(no * 7919 + len(str(x)))
+        tur, rnd = x.get('tur') or x.get('tip', ''), random.Random(no * 7919 + len(str(x)))
         bas = f'<p class="etk-soru"><span class="etk-no">{no}</span><span>{e(x.get("soru") or x.get("yonerge", ""))}</span></p>'
         if tur == 'coktan':
             sec = ''.join(f'<button type="button" class="etk-sec" data-i="{i}"><span class="etk-harf">{HARF[i]}</span><span>{e(s)}</span></button>'
                           for i, s in enumerate(x['secenekler']))
-            parca.append(f'<li class="etk etk-coktan" data-dogru="{x["dogru"]}">{bas}<div class="etk-secenekler">{sec}</div>{_geri(x.get("aciklama"))}</li>')
+            dogru = x.get('dogru') if x.get('dogru') is not None else x.get('cevap', 0)
+            parca.append(f'<li class="etk etk-coktan" data-dogru="{dogru}">{bas}<div class="etk-secenekler">{sec}</div>{_geri(x.get("aciklama"))}</li>')
         elif tur == 'dy':
-            satir = ''.join(f'<li class="etk-dy-satir" data-dogru="{"D" if i["dogru"] else "Y"}"><span class="etk-dy-metin">{e(i["metin"])}</span>'
+            maddeler = x.get('ifadeler') or x.get('maddeler') or []
+            satir = ''.join(f'<li class="etk-dy-satir" data-dogru="{"D" if (i.get("dogru") if i.get("dogru") is not None else (i.get("cevap") in ("D", True, "Doğru", "dogru"))) else "Y"}"><span class="etk-dy-metin">{e(i.get("metin") or i.get("ifade", ""))}</span>'
                             '<span class="etk-dy-dugmeler"><button type="button" data-c="D">Doğru</button><button type="button" data-c="Y">Yanlış</button></span>'
-                            f'{_geri(i.get("aciklama"))}</li>' for i in x['ifadeler'])
+                            f'{_geri(i.get("aciklama"))}</li>' for i in maddeler)
             parca.append(f'<li class="etk etk-dy">{bas}<ul>{satir}</ul></li>')
         elif tur == 'eslestir':
-            sira = list(range(len(x['ciftler'])))
+            ciftler_ham = x.get('ciftler') or x.get('eslestirmeler') or []
+            ciftler = [[c['sol'], c['sag']] if isinstance(c, dict) else c for c in ciftler_ham]
+            sira = list(range(len(ciftler)))
             while sira == sorted(sira) and len(sira) > 1:
                 rnd.shuffle(sira)
             # İçerik tek bir <span> içinde: düğme flex olduğu için kesir/kök kutucuklarıyla metin aksi hâlde tek satırda kalıp dar ekranda taşar.
-            sol = ''.join(f'<button type="button" class="etk-sec" data-sol="{i}"><span>{e(a)}</span></button>' for i, (a, _) in enumerate(x['ciftler']))
-            sag = ''.join(f'<button type="button" class="etk-sec" data-sag="{i}"><span>{e(x["ciftler"][i][1])}</span></button>' for i in sira)
+            sol = ''.join(f'<button type="button" class="etk-sec" data-sol="{i}"><span>{e(a)}</span></button>' for i, (a, _) in enumerate(ciftler))
+            sag = ''.join(f'<button type="button" class="etk-sec" data-sag="{i}"><span>{e(ciftler[i][1])}</span></button>' for i in sira)
             parca.append(f'<li class="etk etk-eslestir">{bas}<p class="etk-ipucu-kucuk">Soldan bir öğeye, sonra sağdaki eşine dokunun.</p>'
                          f'<div class="etk-sutunlar"><div class="etk-sutun">{sol}</div><div class="etk-sutun">{sag}</div></div>{_geri()}</li>')
         elif tur == 'bosluk':
-            kelimeler = [c['cevap'] for c in x['cumleler']] + x.get('fazla', [])
+            cumleler = x.get('cumleler') or x.get('maddeler') or []
+            kelimeler = [c.get('cevap', '') for c in cumleler if c.get('cevap')] + x.get('fazla', [])
             sira = list(range(len(kelimeler))); rnd.shuffle(sira)
             cip = ''.join(
                 f'<button type="button" class="etk-kelime" data-k="{i}" data-deger="{html.escape(re.sub(r"<[^>]+>", "", e(kelimeler[i])).strip(), quote=True)}">{e(kelimeler[i])}</button>'
                 for i in sira
             )
             cumle = ''
-            for c in x['cumleler']:
-                on, _, arka = c['metin'].partition('___')
-                cev_html_raw = e(c['cevap'])
+            for c in cumleler:
+                c_metin = c.get('metin') or c.get('cumle', '')
+                on, _, arka = c_metin.partition('___')
+                cev_html_raw = e(c.get('cevap', ''))
                 cev_duz = html.escape(re.sub(r'<[^>]+>', '', cev_html_raw).strip(), quote=True)
                 cev_html = html.escape(cev_html_raw, quote=True)
                 cumle += (
@@ -196,7 +230,7 @@ def etkinlik_html(liste, ozet_kimlik=''):
             ip = ''.join(f'<p class="etk-ipucu" hidden><b>{k}. ipucu:</b> {e(s)}</p>' for k, s in enumerate(x.get('ipuclari', []), 1))
             ilk = '1. ipucunu göster' if x.get('ipuclari') else 'Cevabı göster'
             parca.append(f'<li class="etk etk-ogretici">{bas}{ip}<button type="button" class="dugme etk-ipucu-dugme">{ilk}</button>'
-                         f'<p class="etk-cevap" hidden><b>Cevap:</b> {e(x["cevap"])}</p></li>')
+                         f'<p class="etk-cevap" hidden><b>Cevap:</b> {e(x.get("cevap", ""))}</p></li>')
     kimlik_attr = f' data-ozet-id="{ozet_kimlik}"' if ozet_kimlik else ''
     return (f'<section class="ozet-bolum" id="etkinlikler"{kimlik_attr}><div class="etk-bas"><h2>Etkinlikler</h2><p class="etk-puan"></p>'
             '<button type="button" class="dugme etk-sifirla">Baştan başla</button></div>'
@@ -209,8 +243,11 @@ def kartlar_html(o):
     kartlar = []
     gorulen = set()
     for x in o.get('etkinlikler', []):
-        if x.get('tur') == 'eslestir':
-            for sol, sag in x.get('ciftler', []):
+        if (x.get('tur') or x.get('tip')) == 'eslestir':
+            ciftler = x.get('ciftler') or x.get('eslestirmeler') or []
+            for item in ciftler:
+                sol = item.get('sol') if isinstance(item, dict) else item[0]
+                sag = item.get('sag') if isinstance(item, dict) else item[1]
                 if sol and sag and sol not in gorulen:
                     gorulen.add(sol)
                     kartlar.append((e(sol), e(sag)))
@@ -236,9 +273,10 @@ def kartlar_html(o):
             kartlar.append((e(s), e(c)))
     for x in o.get('etkinlikler', []):
         if x.get('tur') == 'bosluk' and len(kartlar) < 8:
-            for c in x.get('cumleler', []):
+            cumleler = x.get('cumleler') or x.get('maddeler') or []
+            for c in cumleler:
                 cev = (c.get('cevap') or '').strip()
-                met = (c.get('metin') or '').strip()
+                met = (c.get('metin') or c.get('cumle') or '').strip()
                 if cev and met and cev not in gorulen and len(kartlar) < 8:
                     gorulen.add(cev)
                     kartlar.append((e(met.replace('___', '……')), f'<b>{e(cev)}</b>'))
@@ -271,7 +309,14 @@ def kartlar_html(o):
 
 
 def sayfa_uret(o, dersler, icerikler, hafta_haritasi=None):
-    ad = dersler['dersler'][o['ders']]
+    ders_slug = o.get('ders', '')
+    if ders_slug not in dersler['dersler']:
+        base = o.get('ad', '')
+        parts = base.split('-')
+        if len(parts) >= 3 and '-'.join(parts[1:-1]) in dersler['dersler']:
+            ders_slug = '-'.join(parts[1:-1])
+            o['ders'] = ders_slug
+    ad = dersler['dersler'].get(ders_slug, o.get('ders_adi', ders_slug))
     dosya = f'{o["sinif"]}-{o["ders"]}-hafta-{o["hafta"]}.html'
     ozet_kimlik = f'{o["sinif"]}-{o["ders"]}-{o["hafta"]}'
     baglar = [i for i in icerikler if i.get('sinif') == o['sinif'] and i.get('ders') == o['ders'] and i.get('tur') != 'Konu anlatımı']
@@ -285,10 +330,16 @@ def sayfa_uret(o, dersler, icerikler, hafta_haritasi=None):
         k_tek = [b['kutu']] if b.get('kutu') else []
         k_cok = [k for k in b.get('kutular', []) if k not in k_tek]
         kutular = k_tek + k_cok
+        g_raw = b.get('gorsel')
+        if isinstance(g_raw, dict):
+            g_icerik = f'<img src="{html.escape(g_raw.get("dosya",""), quote=True)}" alt="{html.escape(g_raw.get("alt",""), quote=True)}" loading="lazy">'
+        else:
+            g_icerik = g_raw or ''
         gorsel_html = (
             f'<figure class="ozet-gorsel" tabindex="0" role="button" aria-label="Görseli tam ekran büyüt">'
-            f'{b["gorsel"]}<figcaption class="gorsel-ipucu">🔍 Büyütmek için dokunun</figcaption></figure>'
-            if b.get('gorsel') else ''
+            f'<button type="button" class="gorsel-buyut-btn" aria-label="Görseli tam ekran büyüt"><span aria-hidden="true">🔍</span><span>Büyüt</span></button>'
+            f'{g_icerik}<figcaption class="gorsel-ipucu">🔍 Büyütmek için dokunun</figcaption></figure>'
+            if g_icerik else ''
         )
         yan = gorsel_html + ''.join(kutu_html(k) for k in kutular)
         metin = paragraflar(b.get('metin')) + tablo(b.get('tablo'))
@@ -299,15 +350,27 @@ def sayfa_uret(o, dersler, icerikler, hafta_haritasi=None):
         bolumler += (f'<section class="ozet-bolum konu{" yanli-bolum" if yan and metin else ""}" id="bolum-{no}"><h2 data-no="{no}">{baslik}</h2>'
                      f'<div class="bolum-govde"><div class="bolum-metin">{metin}</div>'
                      + (f'<div class="bolum-yan">{yan}</div>' if yan else '') + '</div></section>')
+    def _ornek_gorsel(g_val):
+        if not g_val:
+            return ''
+        if isinstance(g_val, dict):
+            ic = f'<img src="{html.escape(g_val.get("dosya",""), quote=True)}" alt="{html.escape(g_val.get("alt",""), quote=True)}" loading="lazy">'
+        else:
+            ic = g_val
+        return f'<figure class="ozet-gorsel" tabindex="0" role="button" aria-label="Görseli tam ekran büyüt"><button type="button" class="gorsel-buyut-btn" aria-label="Görseli tam ekran büyüt"><span aria-hidden="true">🔍</span><span>Büyüt</span></button>{ic}<figcaption class="gorsel-ipucu">🔍 Büyütmek için dokunun</figcaption></figure>'
+
     ornekler = ''.join(
         f'<li class="ornek"><p class="ornek-soru"><span class="ornek-no">Örnek {n}</span>{e(x["soru"])}</p>'
-        + (f'<figure class="ozet-gorsel" tabindex="0" role="button" aria-label="Görseli tam ekran büyüt">{x["gorsel"]}<figcaption class="gorsel-ipucu">🔍 Büyütmek için dokunun</figcaption></figure>' if x.get('gorsel') else '')
-        + f'<details><summary>Cevabı göster</summary><p>{e(x["cevap"])}</p></details></li>'
+        + _ornek_gorsel(x.get('gorsel'))
+        + f'<details><summary>Cevabı göster</summary><p>{e(x.get("cevap") or x.get("cozum", ""))}</p></details></li>'
         for n, x in enumerate(o['ornekler'], 1))
     kartlar_bolum = kartlar_html(o)
     ozet = ''.join(f'<li>{e(x)}</li>' for x in o.get('ozet', []))
     ozet_son = f'      <section class="ozet-bolum ozet-son" id="kisaca"><h2>Kısaca</h2><ul class="kisaca">{ozet}</ul></section>' if ozet else ''
-    ciktilar = ''.join(f'<li>{e(c)}</li>' for c in o['ciktilar'])
+    ciktilar_ham = o.get('ciktilar') or o.get('kazanimlar') or o.get('ogrenme_ciktilari') or []
+    if isinstance(ciktilar_ham, str):
+        ciktilar_ham = [ciktilar_ham]
+    ciktilar = ''.join(f'<li>{e(c)}</li>' for c in ciktilar_ham)
     ck = next((i for i in icerikler if i.get('tur') == 'Çalışma kâğıdı' and i.get('sinif') == o['sinif']
                and i.get('ders') == o['ders'] and i.get('hafta') == o['hafta']), None)
     ck_dugme = f'<a class="dugme" href="/{ck["goruntule"]}">Çalışma kâğıdı</a>' if ck else ''
@@ -382,7 +445,7 @@ def sayfa_uret(o, dersler, icerikler, hafta_haritasi=None):
   <article class="bolum ozet ders-{o["ders"]}" data-ozet-kimlik="{ozet_kimlik}">
     <div class="kap ozet-ic">
       <div class="ozet-ust"><aside class="ozet-cikti"><strong>Öğrenme çıktısı</strong><ul>{ciktilar}</ul></aside>
-      <div class="ozet-giris-kart"><span class="giris-etiket">Bu hafta</span><p class="ozet-giris">{e(o["giris"])}</p></div></div>
+      <div class="ozet-giris-kart"><span class="giris-etiket">Bu hafta</span><p class="ozet-giris">{e(o.get('giris') or f"{o.get('unite', '')} kapsamında {o.get('konu', '')} konusunu, temel kavramlarını, çözümlü örneklerini ve etkileşimli etkinliklerini bu özette bulabilirsiniz.")}</p></div></div>
       {bolumler}
       <section class="ozet-bolum" id="ornekler"><h2>Örnekler</h2><ol class="ornekler">{ornekler}</ol></section>
       {kartlar_bolum}
