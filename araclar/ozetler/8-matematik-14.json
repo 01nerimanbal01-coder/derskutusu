@@ -45,7 +45,7 @@
     "n tane olası durumun bulunduğu ve her bir çıktının gerçekleşme şansının eşit olduğu deneylerde, her bir çıktının olma olasılığı {kesir:1|n} değerine eşittir.",
     "İstenilen çıktı sayısı fazla olan olay 'daha fazla olasılıklı', az olan olay 'daha az olasılıklı', çıktı sayıları birbirine eşit olan olaylar ise 'eşit olasılıklı' olarak adlandırılır.",
     "Bir olayın olma olasılığı 0 ile 1 arasındadır (0 ve 1 dâhil); gerçekleşmesi mümkün olmayan imkânsız olayın olasılığı 0, her durumda gerçekleşen kesin olayın olasılığı 1'dir.",
-    "Bir A olayının olma olasılığı ile olmama (tümleyen) olasılığının toplamı her durumda 1 tamdır: {formul:P(A) + P(A') = 1}.",
+    "Bir A olayının olma olasılığı ile olmama (tümleyen) olasılığının toplamı her durumda 1 tamdır: {koyu:P(A) + P(A') = 1}.",
     "Basit bir olayın olma olasılığı, {kesir:İstenilen Olası Durumların Sayısı|Tüm Olası Durumların Sayısı} bağıntısıyla hesaplanır.",
     "Daire grafiği sorularında bir dilimin seçilme olasılığı {kesir:Merkez Açı|360} oranıyla, hedef tahtası sorularında ise {kesir:İstenilen Alan|Tüm Alan} oranıyla bulunur."
   ],
@@ -53,7 +53,7 @@
     {
       "baslik": "1. Eşit Şansa Sahip Olan Olaylarda Çıktı Olasılığı",
       "metin": [
-        "Bir olasılık deneyinde elde edilebilecek tüm çıktıların gerçekleşme şansı birbirine eşitse, bu çıktılara {koyu:eş olasılıklı (eşit şansa sahip) çıktılar} denir. Eğer böyle bir deneyde toplam {koyu:n tane} olası durum (çıktı) varsa, her bir tekil çıktının olma olasılığı birbirine eşittir ve {formul:{kesir:1|n}} kesriyle ifade edilir. Buradaki {koyu:n} sayısı deneyin örnek uzayındaki toplam çıktı sayısıdır.",
+        "Bir olasılık deneyinde elde edilebilecek tüm çıktıların gerçekleşme şansı birbirine eşitse, bu çıktılara {koyu:eş olasılıklı (eşit şansa sahip) çıktılar} denir. Eğer böyle bir deneyde toplam {koyu:n tane} olası durum (çıktı) varsa, her bir tekil çıktının olma olasılığı birbirine eşittir ve {koyu:{kesir:1|n}} kesriyle ifade edilir. Buradaki {koyu:n} sayısı deneyin örnek uzayındaki toplam çıktı sayısıdır.",
         "Örneğin hilesiz bir madeni para havaya atıldığında 'yazı' ve 'tura' olmak üzere {koyu:2 olası durum} vardır; her bir çıktının olasılığı {kesir:1|2} olur. Hilesiz bir zar atıldığında 1'den 6'ya kadar {koyu:6 olası durum} bulunduğundan her bir yüzün üst yüze gelme olasılığı {kesir:1|6} değerindedir. İçinde özdeş 15 bilye bulunan bir torbadan rastgele çekilen her bir tekil bilyenin çekilme şansı da birbirine eşit olup {kesir:1|15} olur."
       ],
       "kutular": [
@@ -97,8 +97,8 @@
     {
       "baslik": "2. Daha Fazla, Eşit ve Daha Az Olasılıklı Olayların Karşılaştırılması",
       "metin": [
-        "Bir torbada veya grupta özdeş nesneler bulunduğunda her bir tekil nesnenin seçilme şansı {kesir:1|n} olsa da, nesneleri {koyu:renk, tür veya nitelik bakımından} gruplandırdığımızda olayların gerçekleşme şansları farklılaşabilir. İstenilen durumu sağlayan çıktı sayısı diğerlerinden çok olan olaya {vurgu:daha fazla olasılıklı}, az olan olaya {vurgu:daha az olasılıklı}, çıktı sayıları eşit olan olaylara ise {vurgu:eşit olasılıklı} olaylar denir.",
-        "Örneğin içinde özdeş 6 kırmızı, 4 mavi ve 4 sarı top bulunan bir torbada toplam {formul:6 + 4 + 4 = 14} olası durum vardır. Her bir topun tek başına çekilme şansı {kesir:1|14} iken; çekilen topun kırmızı olma olasılığı (6 durum) mavi olma olasılığından (4 durum) {koyu:daha fazla olasılıklıdır}. Mavi ve sarı top sayıları dörder adet olduğundan mavi gelme olasılığı ile sarı gelme olasılığı {koyu:eşit olasılıklıdır}."
+        "Bir torbada veya grupta özdeş nesneler bulunduğunda her bir tekil nesnenin seçilme şansı {kesir:1|n} olsa da, nesneleri {koyu:renk, tür veya nitelik bakımından} gruplandırdığımızda olayların gerçekleşme şansları farklılaşabilir. İstenilen durumu sağlayan çıktı sayısı diğerlerinden çok olan olaya {koyu:daha fazla olasılıklı}, az olan olaya {koyu:daha az olasılıklı}, çıktı sayıları eşit olan olaylara ise {koyu:eşit olasılıklı} olaylar denir.",
+        "Örneğin içinde özdeş 6 kırmızı, 4 mavi ve 4 sarı top bulunan bir torbada toplam {koyu:6 + 4 + 4 = 14} olası durum vardır. Her bir topun tek başına çekilme şansı {kesir:1|14} iken; çekilen topun kırmızı olma olasılığı (6 durum) mavi olma olasılığından (4 durum) {koyu:daha fazla olasılıklıdır}. Mavi ve sarı top sayıları dörder adet olduğundan mavi gelme olasılığı ile sarı gelme olasılığı {koyu:eşit olasılıklıdır}."
       ],
       "kutular": [
         {
@@ -117,7 +117,7 @@
       "baslik": "3. Olasılık Değer Aralığı: İmkânsız Olay, Kesin Olay ve Tümleyen",
       "metin": [
         "Olasılık, bir olayın gerçekleşme şansına ilişkin {koyu:0 ile 1 arasında (0 ve 1 dâhil)} verilen sayısal bir değerdir. Gerçekleşmesi hiçbir koşulda mümkün olmayan olaylara {koyu:imkânsız olay} denir ve olasılık değeri {koyu:0} (%0) ile gösterilir. Örneğin yüzlerinde 1'den 6'ya kadar rakamlar bulunan bir zar atıldığında üst yüze 7 gelmesi veya yalnız sarı topların bulunduğu bir torbadan mavi top çekilmesi imkânsız olaydır.",
-        "Deneyin her çıktısında gerçekleşmesi garanti olan olaylara ise {koyu:kesin olay} denir ve olasılık değeri {koyu:1} (%100) ile gösterilir. Örneğin hilesiz bir zar atıldığında üst yüze 7'den küçük bir doğal sayı gelmesi kesin olaydır. Ayrıca bir A olayının {koyu:olma olasılığı} P(A) ile {koyu:olmama olasılığının} P(A') toplamı daima 1'e eşittir: {formul:P(A) + P(A') = 1}. Örneğin bir olayın olma olasılığı {kesir:3|7} ise olmama olasılığı {formul:1 - {kesir:3|7} = {kesir:4|7}} olur."
+        "Deneyin her çıktısında gerçekleşmesi garanti olan olaylara ise {koyu:kesin olay} denir ve olasılık değeri {koyu:1} (%100) ile gösterilir. Örneğin hilesiz bir zar atıldığında üst yüze 7'den küçük bir doğal sayı gelmesi kesin olaydır. Ayrıca bir A olayının {koyu:olma olasılığı} P(A) ile {koyu:olmama olasılığının} P(A') toplamı daima 1'e eşittir: {koyu:P(A) + P(A') = 1}. Örneğin bir olayın olma olasılığı {kesir:3|7} ise olmama olasılığı {koyu:1 - {kesir:3|7} = {kesir:4|7}} olur."
       ],
       "kutular": [
         {
@@ -128,7 +128,7 @@
         {
           "tur": "ipucu",
           "baslik": "Olmama Olasılığı Pratik Yolu",
-          "metin": "Bir olayın olma olasılığı {kesir:a|b} ise, olmama olasılığını bulmak için paydadan payı çıkarmak yeterlidir: {formul:P(A') = {kesir:b - a|b}}."
+          "metin": "Bir olayın olma olasılığı {kesir:a|b} ise, olmama olasılığını bulmak için paydadan payı çıkarmak yeterlidir: {koyu:P(A') = {kesir:b - a|b}}."
         }
       ],
       "tablo": {
@@ -176,7 +176,7 @@
     {
       "baslik": "4. Basit Bir Olayın Olma Olasılığını Hesaplama",
       "metin": [
-        "Eşit şansa sahip çıktıları olan bir deneyde basit bir A olayının olma olasılığı hesaplanırken, {koyu:istenilen olası durumların (olayın çıktılarının) sayısı}, deneydeki {koyu:tüm olası durumların (örnek uzayın) sayısına} bölünür: {formul:P(A) = {kesir:İstenilen Olası Durumların Sayısı|Tüm Olası Durumların Sayısı}}.",
+        "Eşit şansa sahip çıktıları olan bir deneyde basit bir A olayının olma olasılığı hesaplanırken, {koyu:istenilen olası durumların (olayın çıktılarının) sayısı}, deneydeki {koyu:tüm olası durumların (örnek uzayın) sayısına} bölünür: {koyu:P(A) = {kesir:İstenilen Olası Durumların Sayısı|Tüm Olası Durumların Sayısı}}.",
         "Hesaplama yapılırken önce tüm olası durumların sayısı hatasız biçimde belirlenir, ardından soruda verilen koşulu (örneğin asal sayı olması, tam kare sayı olması, 3'ün katı olması vb.) sağlayan çıktılar tek tek yazılıp sayılır. Bulunan kesir seçeneklerde genellikle {koyu:en sade hâliyle}, ondalık gösterimle veya yüzde sembolüyle ifade edilir."
       ],
       "kutular": [
@@ -197,7 +197,7 @@
       "baslik": "5. Tablo, Sütun ve Daire Grafiği Verileriyle Olasılık Problemleri",
       "metin": [
         "Olasılık soruları sıklıkla Veri Analizi konusuyla birleştirilerek {koyu:iki boyutlu tablolar}, {koyu:sütun grafikleri} veya {koyu:daire grafikleri} üzerinden sorulur. Tablo ve sütun grafiği sorularında önce tüm gruplardaki kişi veya nesne sayıları toplanarak {koyu:tüm olası durumların sayısı} bulunur; sonra soruda istenen özelliğe (örneğin 'sarışın kız öğrenci' veya 'keman kursuna giden 8. sınıf öğrencisi') sahip olanların sayısı paya yazılır.",
-        "Daire grafiği sorularında ise toplam kişi veya nesne sayısı verilmese dahi olasılık doğrudan {koyu:merkez açılar} üzerinden hesaplanabilir! Çünkü dairenin tamamı 360 derecedir ve her bir dilimin büyüklüğü o grubun eleman sayısıyla doğru orantılıdır: {formul:P(Dilim) = {kesir:Dilimin Merkez Açısı|360}}. Örneğin daire grafiğinde 72 derecelik merkez açı ile gösterilen bir grubun seçilme olasılığı {formul:{kesir:72|360} = {kesir:1|5}} (%20) olur."
+        "Daire grafiği sorularında ise toplam kişi veya nesne sayısı verilmese dahi olasılık doğrudan {koyu:merkez açılar} üzerinden hesaplanabilir! Çünkü dairenin tamamı 360 derecedir ve her bir dilimin büyüklüğü o grubun eleman sayısıyla doğru orantılıdır: {koyu:P(Dilim) = {kesir:Dilimin Merkez Açısı|360}}. Örneğin daire grafiğinde 72 derecelik merkez açı ile gösterilen bir grubun seçilme olasılığı {koyu:{kesir:72|360} = {kesir:1|5}} (%20) olur."
       ],
       "kutular": [
         {
@@ -251,14 +251,14 @@
     {
       "baslik": "6. Geometrik Olasılık ve Hedef Tahtası Uygulamaları",
       "metin": [
-        "Bir hedef tahtasına veya geometrik bir yüzeye yapılan rastgele atışın tahtaya isabet ettiği bilindiğinde, atışın belirli bir boyalı bölgeye isabet etme olasılığı {koyu:alanlar oranı} ile hesaplanır: {formul:P(Bölge) = {kesir:İstenilen Bölgenin Alanı|Tüm Hedef Tahtasının Alanı}}. Kare, dikdörtgen veya eş birim karelere ayrılmış zeminlerde birim kare sayıları ya da kenar uzunluklarının çarpımı kullanılır.",
+        "Bir hedef tahtasına veya geometrik bir yüzeye yapılan rastgele atışın tahtaya isabet ettiği bilindiğinde, atışın belirli bir boyalı bölgeye isabet etme olasılığı {koyu:alanlar oranı} ile hesaplanır: {koyu:P(Bölge) = {kesir:İstenilen Bölgenin Alanı|Tüm Hedef Tahtasının Alanı}}. Kare, dikdörtgen veya eş birim karelere ayrılmış zeminlerde birim kare sayıları ya da kenar uzunluklarının çarpımı kullanılır.",
         "İç içe geçmiş dairelerden oluşan hedef tahtalarında ise dairenin alan formülü (pi sayısı çarpı yarıçapın karesi) kullanılır. Burada en çok dikkat edilmesi gereken nokta, iki daire arasında kalan {koyu:halka şeklindeki bölgenin alanı} bulunurken dış dairenin alanından iç dairenin alanının çıkarılmasıdır. Oranlama yapıldığında pi sayıları birbirini sadeleştirdiği için işlem yarıçapların kareleri üzerinden kolayca tamamlanır."
       ],
       "kutular": [
         {
           "tur": "dikkat",
           "baslik": "Halka Bölgesinin Alanına Dikkat",
-          "metin": "Yarıçapları 2 cm ve 5 cm olan iç içe iki dairede tüm alan {us:5|2} = 25 birimkare, iç daire {us:2|2} = 4 birimkare, dıştaki halka ise {formul:25 - 4 = 21} birimkaredir."
+          "metin": "Yarıçapları 2 cm ve 5 cm olan iç içe iki dairede tüm alan {us:5|2} = 25 birimkare, iç daire {us:2|2} = 4 birimkare, dıştaki halka ise {koyu:25 - 4 = 21} birimkaredir."
         }
       ],
       "liste": [
@@ -272,39 +272,39 @@
   "ornekler": [
     {
       "soru": "Verilen 1'den 24'e kadar (1 ve 24 dâhil) numaralandırılmış özdeş 24 kart bir torbaya atılıyor. Torbadan rastgele çekilen bir kartın üzerindeki sayının tam kare bir sayı olma olasılığı ile tam kare olmama olasılığını hesaplayınız.",
-      "cevap": "Tüm olası durumların sayısı 24'tür. 1'den 24'e kadar olan tam kare sayılar: 1, 4, 9 ve 16 olmak üzere 4 tanedir. Tam kare olma olasılığı {formul:P(A) = {kesir:4|24} = {kesir:1|6}} olur. Tam kare olmama (tümleyen) olasılığı ise {formul:P(A') = 1 - {kesir:1|6} = {kesir:5|6}} olarak bulunur.",
+      "cevap": "Tüm olası durumların sayısı 24'tür. 1'den 24'e kadar olan tam kare sayılar: 1, 4, 9 ve 16 olmak üzere 4 tanedir. Tam kare olma olasılığı {koyu:P(A) = {kesir:4|24} = {kesir:1|6}} olur. Tam kare olmama (tümleyen) olasılığı ise {koyu:P(A') = 1 - {kesir:1|6} = {kesir:5|6}} olarak bulunur.",
       "ipucu": "1'den 24'e kadar olan tam kare sayıları (1, 4, 9, 16) belirleyip 24'e bölünüz.",
-      "cozum": "Tüm olası durumların sayısı 24'tür. 1'den 24'e kadar olan tam kare sayılar: 1, 4, 9 ve 16 olmak üzere 4 tanedir. Tam kare olma olasılığı {formul:P(A) = {kesir:4|24} = {kesir:1|6}} olur. Tam kare olmama (tümleyen) olasılığı ise {formul:P(A') = 1 - {kesir:1|6} = {kesir:5|6}} olarak bulunur."
+      "cozum": "Tüm olası durumların sayısı 24'tür. 1'den 24'e kadar olan tam kare sayılar: 1, 4, 9 ve 16 olmak üzere 4 tanedir. Tam kare olma olasılığı {koyu:P(A) = {kesir:4|24} = {kesir:1|6}} olur. Tam kare olmama (tümleyen) olasılığı ise {koyu:P(A') = 1 - {kesir:1|6} = {kesir:5|6}} olarak bulunur."
     },
     {
       "soru": "Bir kutuda özdeş mavi ve kırmızı bilyeler vardır. Kutudan rastgele çekilen bir bilyenin mavi olma olasılığı {kesir:3|8}'dir. Kutuda 15 tane mavi bilye bulunduğuna göre kaç tane kırmızı bilye vardır?",
-      "cevap": "Mavi olma olasılığı {kesir:3|8} ise kırmızı olma olasılığı {formul:1 - {kesir:3|8} = {kesir:5|8}} olur. Mavi bilyelerin oranı {formul:{kesir:3|8} = {kesir:15|Toplam}} olduğundan (pay 5 katına çıkmıştır), toplam bilye sayısı {formul:8 . 5 = 40} tanedir. Buradan kırmızı bilye sayısı {formul:40 - 15 = 25} olarak bulunur.",
+      "cevap": "Mavi olma olasılığı {kesir:3|8} ise kırmızı olma olasılığı {koyu:1 - {kesir:3|8} = {kesir:5|8}} olur. Mavi bilyelerin oranı {koyu:{kesir:3|8} = {kesir:15|Toplam}} olduğundan (pay 5 katına çıkmıştır), toplam bilye sayısı {koyu:8 . 5 = 40} tanedir. Buradan kırmızı bilye sayısı {koyu:40 - 15 = 25} olarak bulunur.",
       "ipucu": "{kesir:Mavi Sayısı|Tüm Bilyeler} = {kesir:3|8} eşitliğinde 3 kat = 15 ise 1 kat = 5 bilyedir.",
-      "cozum": "Mavi olma olasılığı {kesir:3|8} ise kırmızı olma olasılığı {formul:1 - {kesir:3|8} = {kesir:5|8}} olur. Mavi bilyelerin oranı {formul:{kesir:3|8} = {kesir:15|Toplam}} olduğundan (pay 5 katına çıkmıştır), toplam bilye sayısı {formul:8 . 5 = 40} tanedir. Buradan kırmızı bilye sayısı {formul:40 - 15 = 25} olarak bulunur."
+      "cozum": "Mavi olma olasılığı {kesir:3|8} ise kırmızı olma olasılığı {koyu:1 - {kesir:3|8} = {kesir:5|8}} olur. Mavi bilyelerin oranı {koyu:{kesir:3|8} = {kesir:15|Toplam}} olduğundan (pay 5 katına çıkmıştır), toplam bilye sayısı {koyu:8 . 5 = 40} tanedir. Buradan kırmızı bilye sayısı {koyu:40 - 15 = 25} olarak bulunur."
     },
     {
       "soru": "Bir okulun 8. sınıf şubelerindeki öğrencilerin dağılımı daire grafiğinde gösterildiğinde 8-A şubesine ait dilimin merkez açısı 108 derece olmaktadır. Bu okulun 8. sınıfları arasından rastgele seçilen bir öğrencinin 8-A şubesinden olma olasılığı yüzde kaçtır?",
-      "cevap": "Daire grafiğinin tamamı 360 derecedir. 8-A şubesinden seçilme olasılığı {formul:P(8A) = {kesir:108|360}} kesriyle bulunur. Pay ve paydayı 36 ile sadeleştirirsek {kesir:3|10} elde edilir. Bunu yüzdeye çevirmek için 10 ile genişlettiğimizde {kesir:30|100} yani %30 bulunur.",
+      "cevap": "Daire grafiğinin tamamı 360 derecedir. 8-A şubesinden seçilme olasılığı {koyu:P(8A) = {kesir:108|360}} kesriyle bulunur. Pay ve paydayı 36 ile sadeleştirirsek {kesir:3|10} elde edilir. Bunu yüzdeye çevirmek için 10 ile genişlettiğimizde {kesir:30|100} yani %30 bulunur.",
       "ipucu": "Merkez açıyı 360 dereceye oranlayıp paydayı 100 yapacak şekilde sadeleştirip genişletiniz.",
-      "cozum": "Daire grafiğinin tamamı 360 derecedir. 8-A şubesinden seçilme olasılığı {formul:P(8A) = {kesir:108|360}} kesriyle bulunur. Pay ve paydayı 36 ile sadeleştirirsek {kesir:3|10} elde edilir. Bunu yüzdeye çevirmek için 10 ile genişlettiğimizde {kesir:30|100} yani %30 bulunur."
+      "cozum": "Daire grafiğinin tamamı 360 derecedir. 8-A şubesinden seçilme olasılığı {koyu:P(8A) = {kesir:108|360}} kesriyle bulunur. Pay ve paydayı 36 ile sadeleştirirsek {kesir:3|10} elde edilir. Bunu yüzdeye çevirmek için 10 ile genişlettiğimizde {kesir:30|100} yani %30 bulunur."
     },
     {
       "soru": "Bir torbada özdeş 7 beyaz, 5 siyah ve 9 turuncu top vardır. Torbadan en az kaç top çıkarılırsa kalan toplar arasından rastgele çekilen bir topun beyaz, siyah veya turuncu gelme olasılıkları birbirine eşit olur?",
-      "cevap": "Üç rengin de çekilme olasılığının eşit olması için torbadaki beyaz, siyah ve turuncu top sayılarının birbirine eşit olması gerekir. Top çıkararak eşitleyeceğimiz için en az sayıda olan siyah top sayısında (5'te) eşitlenmelidir. Bunun için beyazdan {formul:7 - 5 = 2} top, turuncudan {formul:9 - 5 = 4} top olmak üzere toplam {formul:2 + 4 = 6} top çıkarılmalıdır.",
+      "cevap": "Üç rengin de çekilme olasılığının eşit olması için torbadaki beyaz, siyah ve turuncu top sayılarının birbirine eşit olması gerekir. Top çıkararak eşitleyeceğimiz için en az sayıda olan siyah top sayısında (5'te) eşitlenmelidir. Bunun için beyazdan {koyu:7 - 5 = 2} top, turuncudan {koyu:9 - 5 = 4} top olmak üzere toplam {koyu:2 + 4 = 6} top çıkarılmalıdır.",
       "ipucu": "Top ekleme değil top çıkarma sorulduğu için tüm renkleri en az sayıdaki rengin adedine (5'e) indiriniz.",
-      "cozum": "Üç rengin de çekilme olasılığının eşit olması için torbadaki beyaz, siyah ve turuncu top sayılarının birbirine eşit olması gerekir. Top çıkararak eşitleyeceğimiz için en az sayıda olan siyah top sayısında (5'te) eşitlenmelidir. Bunun için beyazdan {formul:7 - 5 = 2} top, turuncudan {formul:9 - 5 = 4} top olmak üzere toplam {formul:2 + 4 = 6} top çıkarılmalıdır."
+      "cozum": "Üç rengin de çekilme olasılığının eşit olması için torbadaki beyaz, siyah ve turuncu top sayılarının birbirine eşit olması gerekir. Top çıkararak eşitleyeceğimiz için en az sayıda olan siyah top sayısında (5'te) eşitlenmelidir. Bunun için beyazdan {koyu:7 - 5 = 2} top, turuncudan {koyu:9 - 5 = 4} top olmak üzere toplam {koyu:2 + 4 = 6} top çıkarılmalıdır."
     },
     {
       "soru": "Kenar uzunlukları 6 cm ve 10 cm olan dikdörtgen şeklindeki bir hedef tahtasının içinde, bir kenarı 3 cm olan kare şeklinde kırmızı bir bölge bulunmaktadır. Hedef tahtasına isabet eden bir okun kırmızı bölgeyi vurma olasılığı kaçtır?",
-      "cevap": "Tüm hedef tahtasının alanı {formul:6 . 10 = 60} santimetrekaredir. İstenilen kırmızı karenin alanı ise {formul:3 . 3 = 9} santimetrekaredir. Kırmızı bölgeyi vurma olasılığı {formul:P(Kırmızı) = {kesir:9|60}} olup 3 ile sadeleştirildiğinde {kesir:3|20} bulunur.",
+      "cevap": "Tüm hedef tahtasının alanı {koyu:6 . 10 = 60} santimetrekaredir. İstenilen kırmızı karenin alanı ise {koyu:3 . 3 = 9} santimetrekaredir. Kırmızı bölgeyi vurma olasılığı {koyu:P(Kırmızı) = {kesir:9|60}} olup 3 ile sadeleştirildiğinde {kesir:3|20} bulunur.",
       "ipucu": "Kırmızı karenin alanını dikdörtgenin toplam alanına bölünüz.",
-      "cozum": "Tüm hedef tahtasının alanı {formul:6 . 10 = 60} santimetrekaredir. İstenilen kırmızı karenin alanı ise {formul:3 . 3 = 9} santimetrekaredir. Kırmızı bölgeyi vurma olasılığı {formul:P(Kırmızı) = {kesir:9|60}} olup 3 ile sadeleştirildiğinde {kesir:3|20} bulunur."
+      "cozum": "Tüm hedef tahtasının alanı {koyu:6 . 10 = 60} santimetrekaredir. İstenilen kırmızı karenin alanı ise {koyu:3 . 3 = 9} santimetrekaredir. Kırmızı bölgeyi vurma olasılığı {koyu:P(Kırmızı) = {kesir:9|60}} olup 3 ile sadeleştirildiğinde {kesir:3|20} bulunur."
     },
     {
       "soru": "Eşit şansa sahip olan bir deneyde her bir çıktının olma olasılığı {kesir:1|18} olarak verilmiştir. Bu deneydeki olası durumların sayısı 6 artırılırsa her bir çıktının yeni olma olasılığı kaç olur?",
-      "cevap": "Başlangıçta her bir çıktının olasılığı {kesir:1|n} = {kesir:1|18} olduğundan deneyde {formul:n = 18} olası durum vardır. Olası durum sayısı 6 artırıldığında yeni durum sayısı {formul:18 + 6 = 24} olur. Bu durumda her bir çıktının yeni olma olasılığı {kesir:1|24} olur.",
+      "cevap": "Başlangıçta her bir çıktının olasılığı {kesir:1|n} = {kesir:1|18} olduğundan deneyde {koyu:n = 18} olası durum vardır. Olası durum sayısı 6 artırıldığında yeni durum sayısı {koyu:18 + 6 = 24} olur. Bu durumda her bir çıktının yeni olma olasılığı {kesir:1|24} olur.",
       "ipucu": "{kesir:1|n} ifadesindeki n değerine 6 ekleyiniz.",
-      "cozum": "Başlangıçta her bir çıktının olasılığı {kesir:1|n} = {kesir:1|18} olduğundan deneyde {formul:n = 18} olası durum vardır. Olası durum sayısı 6 artırıldığında yeni durum sayısı {formul:18 + 6 = 24} olur. Bu durumda her bir çıktının yeni olma olasılığı {kesir:1|24} olur."
+      "cozum": "Başlangıçta her bir çıktının olasılığı {kesir:1|n} = {kesir:1|18} olduğundan deneyde {koyu:n = 18} olası durum vardır. Olası durum sayısı 6 artırıldığında yeni durum sayısı {koyu:18 + 6 = 24} olur. Bu durumda her bir çıktının yeni olma olasılığı {kesir:1|24} olur."
     }
   ],
   "etkinlikler": [
@@ -363,27 +363,27 @@
         {
           "dogru": true,
           "aciklama": "Doğrudur; eş olasılıklı deneylerde her bir tekil çıktının olasılığı {kesir:1|n} olur.",
-          "ifade": "Eşit şansa sahip n tane olası durumun bulunduğu bir deneyde her bir çıktının olma olasılığı {kesir:1|n} değerine eşittir."
+          "metin": "Eşit şansa sahip n tane olası durumun bulunduğu bir deneyde her bir çıktının olma olasılığı {kesir:1|n} değerine eşittir."
         },
         {
           "dogru": false,
           "aciklama": "Yanlıştır; imkânsız olayın olasılık değeri 0'dır, olasılık değeri negatif olamaz.",
-          "ifade": "Gerçekleşmesi mümkün olmayan olaylara imkânsız olay denir ve olasılık değeri -1 ile gösterilir."
+          "metin": "Gerçekleşmesi mümkün olmayan olaylara imkânsız olay denir ve olasılık değeri -1 ile gösterilir."
         },
         {
           "dogru": true,
           "aciklama": "Doğrudur; P(A) + P(A') = 1 özdeşliği tüm basit olaylar için geçerlidir.",
-          "ifade": "Bir olayın olma olasılığı ile olmama olasılığının toplamı 1'e eşittir."
+          "metin": "Bir olayın olma olasılığı ile olmama olasılığının toplamı 1'e eşittir."
         },
         {
           "dogru": true,
           "aciklama": "Doğrudur; {kesir:60|360} oranı sadeleştirildiğinde {kesir:1|6} bulunur.",
-          "ifade": "Bir daire grafiğinde 60 derecelik merkez açıyla gösterilen bir grubun rastgele seçimde gelme olasılığı {kesir:1|6}'dır."
+          "metin": "Bir daire grafiğinde 60 derecelik merkez açıyla gösterilen bir grubun rastgele seçimde gelme olasılığı {kesir:1|6}'dır."
         },
         {
           "dogru": false,
           "aciklama": "Yanlıştır; zarın üzerindeki 1, 2, 3, 4, 5 ve 6 sayılarının tamamı rakam olduğu için bu olay kesin olaydır ve olasılığı {kesir:6|6} = 1'dir.",
-          "ifade": "Hilesiz bir zar havaya atıldığında üst yüze gelen sayının rakam olma olasılığı {kesir:1|6}'dır."
+          "metin": "Hilesiz bir zar havaya atıldığında üst yüze gelen sayının rakam olma olasılığı {kesir:1|6}'dır."
         }
       ],
       "maddeler": [

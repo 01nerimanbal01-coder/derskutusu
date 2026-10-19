@@ -356,27 +356,27 @@
         {
           "dogru": true,
           "aciklama": "a·sin(x) + b·cos(x) ifadesinin görüntü kümesi [-{kok:{us:a|2}+{us:b|2}}, +{kok:{us:a|2}+{us:b|2}}] kapalı aralığıdır.",
-          "ifade": "a · sin(x) + b · cos(x) = c denkleminin gerçek sayılarda çözümünün olması için {us:c|2} küçük veya eşit {us:a|2} + {us:b|2} koşulu sağlanmalıdır."
+          "metin": "a · sin(x) + b · cos(x) = c denkleminin gerçek sayılarda çözümünün olması için {us:c|2} küçük veya eşit {us:a|2} + {us:b|2} koşulu sağlanmalıdır."
         },
         {
           "dogru": false,
           "aciklama": "Değişken içeren sin(x) çarpanını sadeleştirmek sin(x) = 0 köklerinin kaybolmasına yol açar; ortak paranteze alınmalıdır.",
-          "ifade": "sin(2x) = sin(x) denklemini çözerken her iki tarafı sin(x) ile sadeleştirip 2·cos(x) = 1 yazmak kök kaybına yol açmaz."
+          "metin": "sin(2x) = sin(x) denklemini çözerken her iki tarafı sin(x) ile sadeleştirip 2·cos(x) = 1 yazmak kök kaybına yol açmaz."
         },
         {
           "dogru": true,
           "aciklama": "Tanjant ve kotanjant fonksiyonlarının esas periyodu pi (180 derece) olduğu için kökler k·pi eklenerek üretilir.",
-          "ifade": "tan(x) = tan(alfa) ve cot(x) = cot(alfa) denklemlerinin genel çözüm kümesi x = alfa + k · pi (k tam sayı) formülüyle bulunur."
+          "metin": "tan(x) = tan(alfa) ve cot(x) = cot(alfa) denklemlerinin genel çözüm kümesi x = alfa + k · pi (k tam sayı) formülüyle bulunur."
         },
         {
           "dogru": true,
           "aciklama": "Periyot T = 2·pi / |B| = 2·pi / (pi / 4) = 8 olarak bulunur.",
-          "ifade": "h(t) = 15 + 10 · sin({kesir:pi · t|4}) model fonksiyonunun esas periyodu T = 8 birim zamandır."
+          "metin": "h(t) = 15 + 10 · sin({kesir:pi · t|4}) model fonksiyonunun esas periyodu T = 8 birim zamandır."
         },
         {
           "dogru": false,
           "aciklama": "Kosinüs fonksiyonu [-1, 1] aralığında değer aldığı için cos(x) = -2 denkleminin gerçek sayılarda çözüm kümesi boş kümedir.",
-          "ifade": "cos(x) = -2 denkleminin [0, 2·pi] aralığında birbirinden farklı iki gerçek kökü vardır."
+          "metin": "cos(x) = -2 denkleminin [0, 2·pi] aralığında birbirinden farklı iki gerçek kökü vardır."
         }
       ]
     },
