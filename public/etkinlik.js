@@ -279,7 +279,9 @@
         }
       }
 
-      // İngilizce kontrolü: öncelik ön yüzdeki İngilizce kelimede
+      // İngilizce kontrolü yalnız İngilizce sayfada (Türkçe karakter içermeyen "Nokta" gibi kelimeler İngilizce okunmasın)
+      if (!isIngilizceSayfa) return null;
+      // Öncelik ön yüzdeki İngilizce kelimede
       if (ingilizceOkunabilirMi(onTemiz)) {
         const safEn = onTemiz.replace(/\([^)]*\)/g, '').replace(/&/g, ' and ').replace(/\s+/g, ' ').trim();
         return { metin: safEn, dil: 'en-US' };
@@ -300,8 +302,9 @@
           sesDugme.title = bilgi.dil === 'ar-SA' ? 'Arapça telaffuzu dinle' : 'İngilizce telaffuzu dinle';
         }
       }
-      if (onMetin) {
-        if (bilgi && ingilizceOkunabilirMi(k.on)) {
+      const k = deste[sira];
+      if (onMetin && k) {
+        if (bilgi && bilgi.dil === 'en-US' && ingilizceOkunabilirMi(k.on)) {
           onMetin.classList.add('sesli-en', 'sesli-kart');
           onMetin.title = 'İngilizce telaffuzu dinlemek için dokunun';
         } else if (bilgi && /[\u0600-\u06FF]/.test(k.on)) {
