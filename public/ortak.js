@@ -113,7 +113,7 @@ $$('[data-yil]').forEach((e) => { e.textContent = new Date().getFullYear(); });
   if (kart) kart.append(el('span', { sinif: 'rol-son' }, 'Son seçimin'));
 })();
 
-// Toplam ziyaret ve sayfa görüntüleme (Cloudflare Web Analytics toplu verisinden günde bir kez üretilir: araclar/ziyaret_guncelle.py)
+// Toplam ziyaret ve sayfa görüntüleme (Cloudflare Web Analytics toplu verisinden saatte bir üretilir: araclar/ziyaret_guncelle.py)
 veri('ziyaret.json').then((z) => {
   if (!z) return;
   const toplam = Number(z.toplam) || 0;
@@ -282,9 +282,10 @@ ortakVeri.then(({ ayar }) => {
   });
 })();
 
-// Reklam yönetimi (kullanıcı 29.09.2026, 17.10.2026, 19.10.2026): Google AdSense betiği kişiselleştirilmemiş reklam moduyla
-// (requestNonPersonalizedAds = 1) doğrudan çalışır; ziyaretçi gizlilik.html sayfasından dilediği zaman reklamları kapatıp açabilir.
-// Tahta ve kitap görüntüleyicide reklam yüklenmez (kalem/tahta alanına reklam konmaz).
+// Reklam izni (kullanıcı 29.09.2026, 17.10.2026; 21.10.2026 "uygun olanı ayarla" → KVKK gereği 19.10'daki doğrudan yükleme
+// kaldırıldı): Google AdSense betiği yalnız ziyaretçi "Kabul et" deyince yüklenir; ret de saklanır, yeniden sorulmaz;
+// seçim gizlilik.html'den değiştirilir. Reklamlar kişiselleştirilmemiş istenir (requestNonPersonalizedAds = 1).
+// Tahta ve kitap görüntüleyicide betik hiç yüklenmez (kalem/tahta alanına reklam konmaz); izin yokken reklam alanları gizlidir.
 (() => {
   const ANAHTAR = 'dk-reklam', MUSTERI = 'ca-pub-6660544937586858';
   const aracSayfasi = /^\/(tahta|goruntule)\.html$/.test(location.pathname);
@@ -297,6 +298,7 @@ ortakVeri.then(({ ayar }) => {
       if (!birim || birim.dataset.istendi) return;
       birim.dataset.istendi = '1';
       alan.hidden = false;   // genişliği 0 olan alana reklam istenmez: önce görünür olur, sonra istenir
+      alan.style.display = birim.style.display = '';   // izin sonradan verildiyse gizle()'nin bıraktığı display:none kalkar
       try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch { alan.hidden = true; return; }
       // Boş alan kalmasın: Google dolmayan birime data-ad-status="unfilled" yazar (stil.css gizler); istek hiç yapılmazsa
       // (engelleyici, ağ, onaysız site) 12 sn sonra alan yeniden gizlenir
@@ -321,20 +323,31 @@ ortakVeri.then(({ ayar }) => {
   const durumYaz = () => {
     if (!durum) return;
     const s = secim();
-    durum.textContent = s === 'hayir'
-      ? 'Seçiminiz: reklamları kapattınız; bu cihazda reklam gösterilmiyor.'
-      : 'Seçiminiz: kişiselleştirilmemiş reklamlar açık.';
+    durum.textContent = s === 'evet' ? 'Seçiminiz: reklamlara izin verdiniz.'
+      : s === 'hayir' ? 'Seçiminiz: reklamları reddettiniz; reklam kodu yüklenmiyor.'
+      : 'Henüz seçim yapmadınız; reklam kodu yüklenmiyor.';
   };
-  if (secim() === 'hayir') gizle(); else yukle();
+  let pencere = null;
+  const sor = () => {
+    if (pencere || aracSayfasi) return;
+    const karar = (d) => { pencere.remove(); pencere = null; kaydet(d); if (d === 'evet') yukle(); else gizle(); durumYaz(); };
+    pencere = el('aside', { sinif: 'izin reklam-izin', role: 'dialog', 'aria-labelledby': 'reklam-izin-baslik', 'aria-describedby': 'reklam-izin-metin' },
+      el('h2', { id: 'reklam-izin-baslik' }, 'Reklam izni'),
+      el('p', { id: 'reklam-izin-metin' }, 'Siteyi ücretsiz tutmak için Google reklamları gösterebiliriz. Reklamlar kişiselleştirilmez. İzin verirseniz Google reklam çerezi kullanabilir. ',
+        el('a', { href: '/gizlilik.html' }, 'Ayrıntılar')),
+      el('div', { sinif: 'dugmeler' },
+        el('button', { sinif: 'dugme ana', type: 'button', onclick: () => karar('evet') }, 'Kabul et'),
+        el('button', { sinif: 'dugme', type: 'button', onclick: () => karar('hayir') }, 'Reddet')));
+    const atla = $('a.atla');   // sekme sırasında erken: klavyeyle hemen ulaşılır, odak zorla alınmaz
+    if (atla) atla.after(pencere); else document.body.prepend(pencere);
+  };
+  const s = secim();
+  if (s === 'evet') yukle();
+  else { gizle(); if (s !== 'hayir') sor(); }
 
   // gizlilik.html: seçimi göster ve değiştir; Instagram (ve eski Facebook) iznini sıfırla
   durumYaz();
-  $('#reklam-degistir')?.addEventListener('click', () => {
-    const yeni = secim() === 'hayir' ? 'evet' : 'hayir';
-    kaydet(yeni);
-    if (yeni === 'hayir') gizle(); else yukle();
-    durumYaz();
-  });
+  $('#reklam-degistir')?.addEventListener('click', () => { kaydet(null); durumYaz(); sor(); });
   $('#sifirla')?.addEventListener('click', () => {
     try { ['harici-ig', 'harici-fb'].forEach((a) => localStorage.removeItem(a)); } catch {}
     const d = $('#durum');

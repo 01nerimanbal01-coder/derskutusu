@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Toplam ziyaret sayısını Cloudflare Web Analytics'ten alıp public/veri/ziyaret.json'a yazar.
 
-GitHub Actions günde bir çalıştırır. Gerekli gizli değişkenler (GitHub → Settings → Secrets → Actions):
+GitHub Actions saatte bir çalıştırır (guncelle.yml, 21.10.2026'dan önce günde bir). Gerekli gizli değişkenler (GitHub → Settings → Secrets → Actions):
     CF_API_TOKEN   Cloudflare API anahtarı (izin: Account → Account Analytics → Read)
     CF_ACCOUNT_ID  Cloudflare hesap kimliği (gizli değil; guncelle.yml içinde yazılı)
 Anahtar yoksa hiçbir şey yapmaz. Günlük değerler dosyada saklanır; Cloudflare eski günleri silse de toplam korunur.
