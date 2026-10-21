@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 18
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: '22'
       - name: Test tarayıcılarını kur
@@ -35,7 +35,7 @@ jobs:
         env:
           NODE_PATH: ${{ runner.temp }}/kesif-qa/node_modules
         run: node tests/ders-slayt.cjs
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         if: always()
         with:
           name: kategori-ve-tam-ders-kontrolu
