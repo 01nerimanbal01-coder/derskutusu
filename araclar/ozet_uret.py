@@ -25,7 +25,7 @@ _spec = importlib.util.spec_from_file_location('sayfa_uret', ARACLAR / 'sayfa_ur
 _sayfa = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(_sayfa)          # yalnız işlevler; iç sayfaları main() yeniler
 
-KAR = re.compile(r'\{(aci|olcu|dogru|isin|parca|uzunluk|us|kesir|kok|koyu|ar|alt|formul|vurgu|renk|egik|i):([^{}]+)\}')
+KAR = re.compile(r'\{(aci|olcu|dogru|vektor|devir|isin|parca|uzunluk|us|kesir|kok|koyu|ar|alt|formul|vurgu|renk|egik|i):([^{}]+)\}')
 # Köke boşluksuz yapışık katsayı: 10{kok:42}, −3{kok:2}, a{kok:b}, (a ÷ c){kok:b ÷ d}, {kesir:1|2}{kok:12}.
 # Katsayı kökle birlikte bölünmez bir kutuya alınır; tarayıcı satırı ikisinin arasından kırmaz.
 KOK = re.compile(r'((?:[^\W_]|[−-])*\([^()<>{}|]*\)|(?:[^\W_]|[−-])+|\)|\{(?:kesir|us):[^{}]+\})?\{kok:([^{}]+)\}')
@@ -33,6 +33,8 @@ SEMBOL = {  # MEB 5. sınıf matematik programındaki gösterimler (⊥, //, AB 
     'aci': '<span class="s-aci" role="img" aria-label="{1} açısı">{0}</span>',
     'olcu': 'm(<span class="s-aci" role="img" aria-label="{1} açısı">{0}</span>)',
     'dogru': '<span class="s-dogru" role="img" aria-label="{1} doğrusu">{0}</span>',
+    'vektor': '<span class="s-vektor" role="img" aria-label="{1} vektörü">{0}</span>',   # fizik: üstte tek yönlü ok
+    'devir': '<span class="s-devir">{0}</span>',   # devirli ondalık: tekrar eden basamakların üstü çizili
     'isin': '[{0}', 'parca': '[{0}]', 'uzunluk': '\ue000{0}\ue000',   # çubuklar e() sonunda '|' olur; kesir/kök/üs ayırıcısıyla karışmaz
     'koyu': '<b>{0}</b>',   # olumsuz kökteki vurgu: {koyu:değildir}
     'ar': '<bdi lang="ar" dir="rtl" style="font-size:1.3em;line-height:1.8">{0}</bdi>',
@@ -109,6 +111,8 @@ def _kok_birlik(m):
 
 def e(metin):
     # Önce kaçış, sonra {aci:ABC} gibi sembol işaretleri MEB gösterimine çevrilir.
+    if re.search(r'\\[A-Za-z]+[{ ]|\$[^$\n]*\\[A-Za-z]', str(metin)):   # LaTeX ($\\frac{a}{b}$) sitede dolar işaretiyle bozuk görünür
+        raise ValueError('LaTeX çözülmez; araclar/latex_donustur.py --yaz ile site gösterimine çevirin: ' + str(metin)[:120])
     if any(isaret in str(metin) for isaret in '√∛∜'):
         raise ValueError('Kök kapsamını {kok:ifade} / {kok:ifade|derece} ile belirtin: ' + str(metin))
     metin = html.escape(str(metin)).replace(' · ', '\u00a0·\u00a0').replace(' × ', '\u00a0×\u00a0')   # çarpımlar satır sonunda bölünmez

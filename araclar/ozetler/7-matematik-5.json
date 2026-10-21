@@ -14,12 +14,12 @@
     "Negatif rasyonel sayıları sıralarken sıfıra yakınlık ve pozitif sıralamanın ters yönü ilkesini uygular.",
     "İki rasyonel sayı arasına uygun rasyonel sayılar yerleştirerek rasyonel sayıların yoğunluk özelliğini yorumlar."
   ],
-  "giris": "Sevgili öğrenciler, geçen hafta rasyonel sayı kümesini ($\\mathbb{Q}$), rasyonel sayıların sayı doğrusundaki yerini, ondalık ve devirli ondalık gösterimlerini öğrenmiştik. Bu hafta ise rasyonel sayıları karşılaştırma ve sıralama yöntemlerini derinlemesine ele alıyoruz. Pay ve payda eşitlemeden yarıma-bütüne yakınlık stratejilerine, negatif rasyonel sayıların sıralanmasından iki rasyonel sayı arasındaki sayıları bulmaya kadar tüm becerileri gerçek yaşam problemleriyle pekiştireceğiz.",
+  "giris": "Sevgili öğrenciler, geçen hafta rasyonel sayı kümesini (ℚ), rasyonel sayıların sayı doğrusundaki yerini, ondalık ve devirli ondalık gösterimlerini öğrenmiştik. Bu hafta ise rasyonel sayıları karşılaştırma ve sıralama yöntemlerini derinlemesine ele alıyoruz. Pay ve payda eşitlemeden yarıma-bütüne yakınlık stratejilerine, negatif rasyonel sayıların sıralanmasından iki rasyonel sayı arasındaki sayıları bulmaya kadar tüm becerileri gerçek yaşam problemleriyle pekiştireceğiz.",
   "ozet": [
-    "Sayı doğrusunda soldan sağa doğru gidildikçe rasyonel sayıların değeri daima büyür; her pozitif rasyonel sayı $0$'dan, $0$ da her negatif rasyonel sayıdan büyüktür.",
-    "Paydaları eşit olan pozitif rasyonel sayılardan payı büyük olan daha büyüktür: $\\frac{7}{10} > \\frac{3}{10}$.",
-    "Payları eşit olan pozitif rasyonel sayılardan paydası küçük olan daha büyüktür: $\\frac{5}{6} > \\frac{5}{11}$.",
-    "Negatif rasyonel sayılar sıralanırken önce işaretleri dikkate alınmadan pozitifmiş gibi sıralanır, ardından eşitsizlik sembollerinin yönü ters çevrilir: $\\frac{3}{10} < \\frac{7}{10} \\Rightarrow -\\frac{3}{10} > -\\frac{7}{10}$.",
+    "Sayı doğrusunda soldan sağa doğru gidildikçe rasyonel sayıların değeri daima büyür; her pozitif rasyonel sayı 0'dan, 0 da her negatif rasyonel sayıdan büyüktür.",
+    "Paydaları eşit olan pozitif rasyonel sayılardan payı büyük olan daha büyüktür: {kesir:7|10} > {kesir:3|10}.",
+    "Payları eşit olan pozitif rasyonel sayılardan paydası küçük olan daha büyüktür: {kesir:5|6} > {kesir:5|11}.",
+    "Negatif rasyonel sayılar sıralanırken önce işaretleri dikkate alınmadan pozitifmiş gibi sıralanır, ardından eşitsizlik sembollerinin yönü ters çevrilir: {kesir:3|10} < {kesir:7|10} ⇒ -{kesir:3|10} > -{kesir:7|10}.",
     "Devirli ondalık gösterimler karşılaştırılırken devreden rakamlar virgülden sonra birkaç basamak açılarak aynı basamaktaki rakamlar soldan sağa karşılaştırılır.",
     "Herhangi iki farklı rasyonel sayı arasında sonsuz sayıda rasyonel sayı bulunur; buna rasyonel sayıların yoğunluk özelliği denir."
   ],
@@ -28,14 +28,14 @@
       "baslik": "1. Sayı Doğrusu ve İşaretlerine Göre Rasyonel Sayıları Karşılaştırma",
       "metin": [
         "Rasyonel sayıları karşılaştırmanın en temel ve görsel yolu sayı doğrusudur. Yatay bir sayı doğrusunda soldan sağa doğru ilerledikçe sayıların değeri her zaman artar; sağdan sola doğru gidildikçe ise sayıların değeri azalır.",
-        "Rasyonel sayılar işaretlerine göre üç gruba ayrılır: Negatif rasyonel sayılar ($\\mathbb{Q}^-$), sıfır ($0$) ve pozitif rasyonel sayılar ($\\mathbb{Q}^+$). İşaretleri farklı olan rasyonel sayıları karşılaştırırken hiçbir işlem yapmaya gerek yoktur: $\\text{Negatif Rasyonel Sayı} < 0 < \\text{Pozitif Rasyonel Sayı}$.",
-        "Örneğin $-\\frac{15}{4} < 0 < \\frac{1}{8}$ eşitsizliğinde $-\\frac{15}{4}$ sayısı mutlak değerce büyük görünse de negatif olduğu için hem $0$'dan hem de $\\frac{1}{8}$'den küçüktür.",
-        "Sayı doğrusunda $0$'dan uzaklaştıkça pozitif rasyonel sayılar büyürken, negatif rasyonel sayılar küçülür. Bu nedenle $-\\frac{1}{2}$ sayısı $0$'a daha yakın olduğu için $-\\frac{5}{2}$ sayısından büyüktür ($-\\frac{1}{2} > -\\frac{5}{2}$)."
+        "Rasyonel sayılar işaretlerine göre üç gruba ayrılır: Negatif rasyonel sayılar (ℚ{us:|-}), sıfır (0) ve pozitif rasyonel sayılar (ℚ{us:|+}). İşaretleri farklı olan rasyonel sayıları karşılaştırırken hiçbir işlem yapmaya gerek yoktur: Negatif Rasyonel Sayı < 0 < Pozitif Rasyonel Sayı.",
+        "Örneğin -{kesir:15|4} < 0 < {kesir:1|8} eşitsizliğinde -{kesir:15|4} sayısı mutlak değerce büyük görünse de negatif olduğu için hem 0'dan hem de {kesir:1|8}'den küçüktür.",
+        "Sayı doğrusunda 0'dan uzaklaştıkça pozitif rasyonel sayılar büyürken, negatif rasyonel sayılar küçülür. Bu nedenle -{kesir:1|2} sayısı 0'a daha yakın olduğu için -{kesir:5|2} sayısından büyüktür (-{kesir:1|2} > -{kesir:5|2})."
       ],
       "kutu": {
         "tur": "kural",
         "baslik": "Sıfıra Yakınlık Kuralı",
-        "metin": "Pozitif rasyonel sayılarda $0$'a yakın olan daha KÜÇÜKTÜR; negatif rasyonel sayılarda ise $0$'a yakın olan daha BÜYÜKTÜR!"
+        "metin": "Pozitif rasyonel sayılarda 0'a yakın olan daha KÜÇÜKTÜR; negatif rasyonel sayılarda ise 0'a yakın olan daha BÜYÜKTÜR!"
       },
       "gorsel": "<svg viewBox=\"0 0 760 290\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:760px;height:auto;display:block;margin:18px auto;font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;box-shadow:0 4px 12px rgba(15,23,42,0.05)\"><text x=\"380.0\" y=\"30\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\">Sayı Doğrusu Üzerinde Rasyonel Sayıların Karşılaştırılması</text><rect x=\"25\" y=\"50\" width=\"225\" height=\"215\" rx=\"12\" fill=\"#fff1f2\" stroke=\"#e11d48\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"225\" height=\"34\" rx=\"12\" fill=\"#e11d48\"/><rect x=\"25\" y=\"70\" width=\"225\" height=\"14\" fill=\"#e11d48\"/><text x=\"137.5\" y=\"72\" font-size=\"13\" font-weight=\"800\" fill=\"#ffffff\" text-anchor=\"middle\">1. Negatif Bölge (&lt; 0)</text><text x=\"39\" y=\"106\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• 0'ın solunda yer alan sayılardır.</text><text x=\"39\" y=\"128\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• 0'dan sola doğru uzaklaştıkça</text><text x=\"39\" y=\"150\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">  rasyonel sayının değeri KÜÇÜLÜR!</text><text x=\"39\" y=\"172\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Örnek: -3/4 &gt; -7/4</text><text x=\"39\" y=\"194\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Örnek: -0,2 &gt; -1,5</text><text x=\"39\" y=\"216\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Negatif her sayı 0 ve pozitiften küçüktür.</text><rect x=\"267\" y=\"50\" width=\"225\" height=\"215\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/><rect x=\"267\" y=\"50\" width=\"225\" height=\"34\" rx=\"12\" fill=\"#2563eb\"/><rect x=\"267\" y=\"70\" width=\"225\" height=\"14\" fill=\"#2563eb\"/><text x=\"379.5\" y=\"72\" font-size=\"13\" font-weight=\"800\" fill=\"#ffffff\" text-anchor=\"middle\">2. Referans Noktası (0 ve ±1/2)</text><text x=\"281\" y=\"106\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• 0 ne negatiftir ne de pozitiftir.</text><text x=\"281\" y=\"128\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Negatif sayılardan büyük,</text><text x=\"281\" y=\"150\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">  pozitif sayılardan küçüktür.</text><text x=\"281\" y=\"172\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Yarım (1/2 ve -1/2) ile bütüne</text><text x=\"281\" y=\"194\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">  (1 ve -1) yakınlık stratejik</text><text x=\"281\" y=\"216\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">  karşılaştırma referansıdır.</text><rect x=\"510\" y=\"50\" width=\"225\" height=\"215\" rx=\"12\" fill=\"#ecfdf5\" stroke=\"#10b981\" stroke-width=\"2\"/><rect x=\"510\" y=\"50\" width=\"225\" height=\"34\" rx=\"12\" fill=\"#10b981\"/><rect x=\"510\" y=\"70\" width=\"225\" height=\"14\" fill=\"#10b981\"/><text x=\"622.5\" y=\"72\" font-size=\"13\" font-weight=\"800\" fill=\"#ffffff\" text-anchor=\"middle\">3. Pozitif Bölge (&gt; 0)</text><text x=\"524\" y=\"106\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• 0'ın sağında yer alan sayılardır.</text><text x=\"524\" y=\"128\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• 0'dan sağa doğru uzaklaştıkça</text><text x=\"524\" y=\"150\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">  rasyonel sayının değeri BÜYÜR!</text><text x=\"524\" y=\"172\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Örnek: 7/4 &gt; 3/4</text><text x=\"524\" y=\"194\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Örnek: 1,5 &gt; 0,2</text><text x=\"524\" y=\"216\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Sayı doğrusunda sağdaki daima büyüktür.</text></svg>"
     },
@@ -43,13 +43,13 @@
       "baslik": "2. Pozitif Rasyonel Sayılarda Pay ve Payda Eşitleme Yöntemleri",
       "metin": [
         "İki veya daha fazla pozitif rasyonel sayıyı karşılaştırırken en sık kullandığımız iki cebirsel yöntem payda eşitleme ve pay eşitlemedir:",
-        "1. Payda Eşitleme Yöntemi: Kesirler uygun sayılarla genişletilerek (veya sadeleştirilerek) paydaları eşitlenir. Paydaları eşit olan pozitif rasyonel sayılardan payı büyük olan daha büyüktür. Örneğin $\\frac{2}{3}, \\frac{5}{6}$ ve $\\frac{7}{12}$ sayılarını karşılaştırırken paydaları $12$'de eşitleriz: $\\frac{2}{3} = \\frac{8}{12}$ ve $\\frac{5}{6} = \\frac{10}{12}$ olur. Payları karşılaştırdığımızda $\\frac{7}{12} < \\frac{8}{12} < \\frac{10}{12}$ olduğundan $\\frac{7}{12} < \\frac{2}{3} < \\frac{5}{6}$ bulunur.",
-        "2. Pay Eşitleme Yöntemi: Paydaları eşitlemenin zor olduğu durumlarda paylar eşitlenir. Payları eşit olan pozitif rasyonel sayılardan paydası KÜÇÜK olan daha büyüktür (çünkü bir bütün daha az eş parçaya bölündüğünde her bir dilim daha büyük olur). Örneğin $\\frac{3}{7}, \\frac{6}{11}$ ve $\\frac{2}{5}$ sayılarının paylarını $6$'da eşitlersek: $\\frac{6}{14}, \\frac{6}{11}$ ve $\\frac{6}{15}$ elde edilir. Paydası en küçük olan en büyük olacağından $\\frac{6}{15} < \\frac{6}{14} < \\frac{6}{11}$, yani $\\frac{2}{5} < \\frac{3}{7} < \\frac{6}{11}$ olur."
+        "1. Payda Eşitleme Yöntemi: Kesirler uygun sayılarla genişletilerek (veya sadeleştirilerek) paydaları eşitlenir. Paydaları eşit olan pozitif rasyonel sayılardan payı büyük olan daha büyüktür. Örneğin {kesir:2|3}, {kesir:5|6} ve {kesir:7|12} sayılarını karşılaştırırken paydaları 12'de eşitleriz: {kesir:2|3} = {kesir:8|12} ve {kesir:5|6} = {kesir:10|12} olur. Payları karşılaştırdığımızda {kesir:7|12} < {kesir:8|12} < {kesir:10|12} olduğundan {kesir:7|12} < {kesir:2|3} < {kesir:5|6} bulunur.",
+        "2. Pay Eşitleme Yöntemi: Paydaları eşitlemenin zor olduğu durumlarda paylar eşitlenir. Payları eşit olan pozitif rasyonel sayılardan paydası KÜÇÜK olan daha büyüktür (çünkü bir bütün daha az eş parçaya bölündüğünde her bir dilim daha büyük olur). Örneğin {kesir:3|7}, {kesir:6|11} ve {kesir:2|5} sayılarının paylarını 6'da eşitlersek: {kesir:6|14}, {kesir:6|11} ve {kesir:6|15} elde edilir. Paydası en küçük olan en büyük olacağından {kesir:6|15} < {kesir:6|14} < {kesir:6|11}, yani {kesir:2|5} < {kesir:3|7} < {kesir:6|11} olur."
       ],
       "kutu": {
         "tur": "ipucu",
         "baslik": "Ne Zaman Pay Eşitlenir?",
-        "metin": "$\\frac{1}{13}, \\frac{2}{19}, \\frac{4}{35}$ gibi paydaları asal veya büyük sayılar olan kesirlerde paydaları eşitlemek yerine payları $4$'te eşitlemek ($\\frac{4}{52}, \\frac{4}{38}, \\frac{4}{35}$) saniyeler içinde sonuca ulaştırır!"
+        "metin": "{kesir:1|13}, {kesir:2|19}, {kesir:4|35} gibi paydaları asal veya büyük sayılar olan kesirlerde paydaları eşitlemek yerine payları 4'te eşitlemek ({kesir:4|52}, {kesir:4|38}, {kesir:4|35}) saniyeler içinde sonuca ulaştırır!"
       },
       "gorsel": "<svg viewBox=\"0 0 760 290\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:760px;height:auto;display:block;margin:18px auto;font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;box-shadow:0 4px 12px rgba(15,23,42,0.05)\"><text x=\"380.0\" y=\"30\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\">Pozitif Rasyonel Sayıları Sıralama Yöntemleri</text><rect x=\"30\" y=\"50\" width=\"335\" height=\"215\" rx=\"12\" fill=\"#f0f9ff\" stroke=\"#0284c7\" stroke-width=\"2\"/><rect x=\"30\" y=\"50\" width=\"335\" height=\"34\" rx=\"12\" fill=\"#0284c7\"/><rect x=\"30\" y=\"70\" width=\"335\" height=\"14\" fill=\"#0284c7\"/><text x=\"197.5\" y=\"72\" font-size=\"13\" font-weight=\"800\" fill=\"#ffffff\" text-anchor=\"middle\">Yöntem 1: Payda Eşitleme</text><text x=\"44\" y=\"106\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Paydaları eşit olan pozitif rasyonel</text><text x=\"44\" y=\"128\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">  sayılardan payı büyük olan daha büyüktür.</text><text x=\"44\" y=\"150\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Örnek: 2/3, 5/6 ve 7/12 sayılarını sıralayalım:</text><text x=\"44\" y=\"172\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Paydaları 12'de eşitleriz:</text><text x=\"44\" y=\"194\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">  2/3 = 8/12,  5/6 = 10/12,  7/12</text><text x=\"44\" y=\"216\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Sıralama: 7/12 &lt; 2/3 &lt; 5/6</text><rect x=\"395\" y=\"50\" width=\"335\" height=\"215\" rx=\"12\" fill=\"#f5f3ff\" stroke=\"#8b5cf6\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"335\" height=\"34\" rx=\"12\" fill=\"#8b5cf6\"/><rect x=\"395\" y=\"70\" width=\"335\" height=\"14\" fill=\"#8b5cf6\"/><text x=\"562.5\" y=\"72\" font-size=\"13\" font-weight=\"800\" fill=\"#ffffff\" text-anchor=\"middle\">Yöntem 2: Pay Eşitleme ve Ondalık Gösterim</text><text x=\"409\" y=\"106\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Payları eşit olan pozitif rasyonel sayılardan</text><text x=\"409\" y=\"128\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">  paydası KÜÇÜK olan daha büyüktür!</text><text x=\"409\" y=\"150\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Örnek: 4/5 &gt; 4/7 &gt; 4/11</text><text x=\"409\" y=\"172\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Ondalık gösterime çevirme yöntemi:</text><text x=\"409\" y=\"194\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">  3/4 = 0,75 ve 4/5 = 0,80 -> 4/5 &gt; 3/4</text><text x=\"409\" y=\"216\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Devirli ondalıklarda basamaklar alt alta yazılır.</text></svg>"
     },
@@ -57,82 +57,82 @@
       "baslik": "3. Negatif Rasyonel Sayıları Sıralama Kuralları",
       "metin": [
         "Negatif rasyonel sayıları karşılaştırırken ve sıralarken hata yapmamak için iki adımlı altın kural uygulanır:",
-        "1. Adım: Verilen negatif rasyonel sayıların önündeki eksi ($-$) işaretleri geçici olarak görmezden gelinir ve sayılar pozitifmiş gibi sıralanır.",
-        "2. Adım: Sayıların önüne tekrar eksi ($-$) işareti konulduğunda, aradaki küçüktür ($<$) ve büyüktür ($>$) sembollerinin yönü TERS ÇEVRİLİR!",
-        "Örnek: $-\\frac{3}{4}, -\\frac{5}{6}$ ve $-\\frac{7}{12}$ sayılarını sıralayalım. Önce pozitif kabul edip paydalarını $12$'de eşitleriz: $\\frac{3}{4} = \\frac{9}{12}$, $\\frac{5}{6} = \\frac{10}{12}$ ve $\\frac{7}{12}$. Pozitif sıralama: $\\frac{7}{12} < \\frac{3}{4} < \\frac{5}{6}$ şeklindedir. Şimdi eksi işaretlerini koyup eşitsizlik yönünü ters çeviririz: $-\\frac{7}{12} > -\\frac{3}{4} > -\\frac{5}{6}$ (veya küçükten büyüğe $-\\frac{5}{6} < -\\frac{3}{4} < -\\frac{7}{12}$)."
+        "1. Adım: Verilen negatif rasyonel sayıların önündeki eksi (-) işaretleri geçici olarak görmezden gelinir ve sayılar pozitifmiş gibi sıralanır.",
+        "2. Adım: Sayıların önüne tekrar eksi (-) işareti konulduğunda, aradaki küçüktür (<) ve büyüktür (>) sembollerinin yönü TERS ÇEVRİLİR!",
+        "Örnek: -{kesir:3|4}, -{kesir:5|6} ve -{kesir:7|12} sayılarını sıralayalım. Önce pozitif kabul edip paydalarını 12'de eşitleriz: {kesir:3|4} = {kesir:9|12}, {kesir:5|6} = {kesir:10|12} ve {kesir:7|12}. Pozitif sıralama: {kesir:7|12} < {kesir:3|4} < {kesir:5|6} şeklindedir. Şimdi eksi işaretlerini koyup eşitsizlik yönünü ters çeviririz: -{kesir:7|12} > -{kesir:3|4} > -{kesir:5|6} (veya küçükten büyüğe -{kesir:5|6} < -{kesir:3|4} < -{kesir:7|12})."
       ],
       "kutu": {
         "tur": "dikkat",
         "baslik": "Negatif Tam Sayılı Kesirlere Dikkat!",
-        "metin": "$-2\\frac{1}{3}$ sayısı $-2 + \\frac{1}{3}$ DEĞİLDİR; $-2 - \\frac{1}{3} = -\\frac{7}{3}$ demektir ve sayı doğrusunda $-2$ ile $-3$ arasında yer alır!"
+        "metin": "-2{kesir:1|3} sayısı -2 + {kesir:1|3} DEĞİLDİR; -2 - {kesir:1|3} = -{kesir:7|3} demektir ve sayı doğrusunda -2 ile -3 arasında yer alır!"
       },
       "gorsel": "<svg viewBox=\"0 0 760 290\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:760px;height:auto;display:block;margin:18px auto;font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;box-shadow:0 4px 12px rgba(15,23,42,0.05)\"><text x=\"380.0\" y=\"30\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\">Negatif Rasyonel Sayıları Sıralamada Altın Kural</text><rect x=\"30\" y=\"50\" width=\"335\" height=\"215\" rx=\"12\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"30\" y=\"50\" width=\"335\" height=\"34\" rx=\"12\" fill=\"#d97706\"/><rect x=\"30\" y=\"70\" width=\"335\" height=\"14\" fill=\"#d97706\"/><text x=\"197.5\" y=\"72\" font-size=\"13\" font-weight=\"800\" fill=\"#ffffff\" text-anchor=\"middle\">1. Adım: Pozitifmiş Gibi Sırala</text><text x=\"44\" y=\"106\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Negatif işaretleri geçici olarak kapatılır.</text><text x=\"44\" y=\"128\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Örnek: -2/5, -3/10, -7/10 sayılarını</text><text x=\"44\" y=\"150\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">  pozitif kabul edelim: 2/5 = 4/10, 3/10, 7/10</text><text x=\"44\" y=\"172\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Pozitif sıralama:</text><text x=\"44\" y=\"194\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">  3/10 &lt; 4/10 &lt; 7/10</text><text x=\"44\" y=\"216\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">  (yani 3/10 &lt; 2/5 &lt; 7/10)</text><rect x=\"395\" y=\"50\" width=\"335\" height=\"215\" rx=\"12\" fill=\"#f0fdfa\" stroke=\"#0d9488\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"335\" height=\"34\" rx=\"12\" fill=\"#0d9488\"/><rect x=\"395\" y=\"70\" width=\"335\" height=\"14\" fill=\"#0d9488\"/><text x=\"562.5\" y=\"72\" font-size=\"13\" font-weight=\"800\" fill=\"#ffffff\" text-anchor=\"middle\">2. Adım: Eşitsizlik Yönünü Ters Çevir!</text><text x=\"409\" y=\"106\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Negatif sayılarda 0'a yakın olan daha</text><text x=\"409\" y=\"128\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">  büyük olduğu için sıralama yönü ters döner!</text><text x=\"409\" y=\"150\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Negatif sıralama:</text><text x=\"409\" y=\"172\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">  -3/10 &gt; -2/5 &gt; -7/10</text><text x=\"409\" y=\"194\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Veya küçükten büyüğe:</text><text x=\"409\" y=\"216\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">  -7/10 &lt; -2/5 &lt; -3/10</text></svg>"
     },
     {
       "baslik": "4. Bütüne ve Yarıma Yakınlık Stratejisi",
       "metin": [
-        "Bazı rasyonel sayıları pay veya payda eşitlemeye hiç gerek kalmadan $0$'a (başlangıca), $\\frac{1}{2}$'ye (yarıma) ve $1$'e (bütüne) olan yakınlıklarını düşünerek zihinden karşılaştırabiliriz.",
-        "Örneğin $\\frac{1}{9}, \\frac{6}{11}$ ve $\\frac{14}{15}$ sayılarını inceleyelim: $\\frac{1}{9}$ kesri $0$'a çok yakındır; $\\frac{6}{11}$ kesri yarımdan ($\\frac{5,5}{11}$) biraz büyüktür; $\\frac{14}{15}$ kesri ise $1$ tama çok yakındır. Dolayısıyla $\\frac{1}{9} < \\frac{6}{11} < \\frac{14}{15}$ olduğu hemen görülür.",
-        "Pay ile paydası arasındaki fark sabit olan basit kesirlerde (örneğin farkı $1$ olan $\\frac{1}{2}, \\frac{2}{3}, \\frac{3}{4}, \\frac{9}{10}$ kesirlerinde): Pozitiflerde sayılar büyüdükçe kesir $1$ bütüne daha çok yaklaşır ve değeri BÜYÜR ($\\frac{1}{2} < \\frac{2}{3} < \\frac{3}{4} < \\frac{9}{10}$). Negatiflerde ise tam tersine $-\\frac{1}{2} > -\\frac{2}{3} > -\\frac{3}{4} > -\\frac{9}{10}$ olur."
+        "Bazı rasyonel sayıları pay veya payda eşitlemeye hiç gerek kalmadan 0'a (başlangıca), {kesir:1|2}'ye (yarıma) ve 1'e (bütüne) olan yakınlıklarını düşünerek zihinden karşılaştırabiliriz.",
+        "Örneğin {kesir:1|9}, {kesir:6|11} ve {kesir:14|15} sayılarını inceleyelim: {kesir:1|9} kesri 0'a çok yakındır; {kesir:6|11} kesri yarımdan ({kesir:5,5|11}) biraz büyüktür; {kesir:14|15} kesri ise 1 tama çok yakındır. Dolayısıyla {kesir:1|9} < {kesir:6|11} < {kesir:14|15} olduğu hemen görülür.",
+        "Pay ile paydası arasındaki fark sabit olan basit kesirlerde (örneğin farkı 1 olan {kesir:1|2}, {kesir:2|3}, {kesir:3|4}, {kesir:9|10} kesirlerinde): Pozitiflerde sayılar büyüdükçe kesir 1 bütüne daha çok yaklaşır ve değeri BÜYÜR ({kesir:1|2} < {kesir:2|3} < {kesir:3|4} < {kesir:9|10}). Negatiflerde ise tam tersine -{kesir:1|2} > -{kesir:2|3} > -{kesir:3|4} > -{kesir:9|10} olur."
       ],
       "kutu": {
         "tur": "bilgi",
         "baslik": "Bileşik Kesirlerde Sabit Fark",
-        "metin": "Pay ile payda arasındaki fark sabit olan pozitif BİLEŞİK kesirlerde ise (örneğin $\\frac{3}{2}, \\frac{4}{3}, \\frac{5}{4}$) sayılar büyüdükçe kesrin değeri KÜÇÜLÜR: $\\frac{3}{2} > \\frac{4}{3} > \\frac{5}{4}$."
+        "metin": "Pay ile payda arasındaki fark sabit olan pozitif BİLEŞİK kesirlerde ise (örneğin {kesir:3|2}, {kesir:4|3}, {kesir:5|4}) sayılar büyüdükçe kesrin değeri KÜÇÜLÜR: {kesir:3|2} > {kesir:4|3} > {kesir:5|4}."
       }
     },
     {
       "baslik": "5. Ondalık ve Devirli Ondalık Gösterimlerin Karşılaştırılması",
       "metin": [
-        "Rasyonel sayılar kesir ve ondalık gösterim olarak karışık verildiğinde, tüm sayıları ondalık gösterime çevirerek karşılaştırmak çok pratiktir. Örneğin $-\\frac{3}{5}$ ile $-0,45$'i karşılaştırırken $-\\frac{3}{5} = -0,60$ yazarız; $-0,45 > -0,60$ olduğundan $-0,45 > -\\frac{3}{5}$ sonucuna ulaşırız.",
+        "Rasyonel sayılar kesir ve ondalık gösterim olarak karışık verildiğinde, tüm sayıları ondalık gösterime çevirerek karşılaştırmak çok pratiktir. Örneğin -{kesir:3|5} ile -0,45'i karşılaştırırken -{kesir:3|5} = -0,60 yazarız; -0,45 > -0,60 olduğundan -0,45 > -{kesir:3|5} sonucuna ulaşırız.",
         "Devirli ondalık gösterimleri sıralarken ise devreden rakamları virgülden sonra 3-4 basamak boyunca açarak alt alta yazarız ve soldan sağa doğru ilk farklı basamağı karşılaştırırız.",
-        "Örnek: $a = 2,\\overline{43}$, $b = 2,4\\overline{3}$ ve $c = 2,43$ sayılarını sıralayalım:\n• $a = 2,434343...$\n• $b = 2,433333...$\n• $c = 2,430000...$\nBinde birler basamağındaki rakamlara ($4, 3, 0$) baktığımızda $c < b < a$ olduğu açıkça görülür (eğer sayılar negatif olsaydı $-a < -b < -c$ olurdu)."
+        "Örnek: a = 2,{devir:43}, b = 2,4{devir:3} ve c = 2,43 sayılarını sıralayalım:\n• a = 2,434343...\n• b = 2,433333...\n• c = 2,430000...\nBinde birler basamağındaki rakamlara (4, 3, 0) baktığımızda c < b < a olduğu açıkça görülür (eğer sayılar negatif olsaydı -a < -b < -c olurdu)."
       ],
       "kutu": {
         "tur": "ipucu",
         "baslik": "Eksik Basamaklara Sıfır Yazma",
-        "metin": "Sonlu bir ondalık gösterimin (örneğin $2,43$) sağına istediğimiz kadar sıfır ($2,4300...$) ekleyebiliriz; bu işlem sayının değerini değiştirmez ve devirli sayılarla karşılaştırmayı kolaylaştırır."
+        "metin": "Sonlu bir ondalık gösterimin (örneğin 2,43) sağına istediğimiz kadar sıfır (2,4300...) ekleyebiliriz; bu işlem sayının değerini değiştirmez ve devirli sayılarla karşılaştırmayı kolaylaştırır."
       },
       "gorsel": "<svg viewBox=\"0 0 760 270\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:760px;height:auto;display:block;margin:18px auto;font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;box-shadow:0 4px 12px rgba(15,23,42,0.05)\"><text x=\"380.0\" y=\"30\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\">İki Rasyonel Sayı Arasına Rasyonel Sayı Yerleştirme (Yoğunluk)</text><rect x=\"30\" y=\"50\" width=\"335\" height=\"195\" rx=\"12\" fill=\"#eef2ff\" stroke=\"#4f46e5\" stroke-width=\"2\"/><rect x=\"30\" y=\"50\" width=\"335\" height=\"34\" rx=\"12\" fill=\"#4f46e5\"/><rect x=\"30\" y=\"70\" width=\"335\" height=\"14\" fill=\"#4f46e5\"/><text x=\"197.5\" y=\"72\" font-size=\"13\" font-weight=\"800\" fill=\"#ffffff\" text-anchor=\"middle\">Genişletme İle Aradaki Sayıları Bulma</text><text x=\"44\" y=\"106\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Örnek: 1/3 ile 2/3 arasında paydası 3 olan</text><text x=\"44\" y=\"128\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">  rasyonel sayı görünmez.</text><text x=\"44\" y=\"150\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Kesirleri 3 ile genişletirsek: 3/9 ve 6/9 olur.</text><text x=\"44\" y=\"172\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Aralarındaki sayılar: 4/9 ve 5/9!</text><text x=\"44\" y=\"194\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• İki rasyonel sayı arasında sonsuz rasyonel sayı vardır.</text><rect x=\"395\" y=\"50\" width=\"335\" height=\"195\" rx=\"12\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/><rect x=\"395\" y=\"50\" width=\"335\" height=\"34\" rx=\"12\" fill=\"#16a34a\"/><rect x=\"395\" y=\"70\" width=\"335\" height=\"14\" fill=\"#16a34a\"/><text x=\"562.5\" y=\"72\" font-size=\"13\" font-weight=\"800\" fill=\"#ffffff\" text-anchor=\"middle\">Bütüne ve Yarıma Yakınlık Stratejisi</text><text x=\"409\" y=\"106\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Pay ile payda arasındaki fark sabitse:</text><text x=\"409\" y=\"128\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">  Pozitif basit kesirlerde sayılar büyüdükçe</text><text x=\"409\" y=\"150\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">  kesir 1 tama yaklaşır ve BÜYÜR: 9/10 &gt; 3/4 &gt; 1/2</text><text x=\"409\" y=\"172\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">• Negatif basit kesirlerde ise tam tersine</text><text x=\"409\" y=\"194\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">  -1/2 &gt; -3/4 &gt; -9/10 olur!</text></svg>"
     },
     {
       "baslik": "6. İki Rasyonel Sayı Arasına Rasyonel Sayı Yerleştirme (Yoğunluk)",
       "metin": [
-        "Tam sayılar kümesinde $1$ ile $2$ arasında başka bir tam sayı yoktur; ancak rasyonel sayılar kümesinde herhangi iki farklı rasyonel sayı arasında SONSUZ sayıda rasyonel sayı vardır. Bu özelliğe rasyonel sayıların 'yoğunluk özelliği' denir.",
-        "İki rasyonel sayı arasındaki sayıları bulmak için kesirleri genişletiriz. Örneğin $\\frac{1}{4}$ ile $\\frac{2}{4}$ arasında paydası $4$ olan bir kesir görünmez; fakat her iki kesri $2$ ile genişletirsek $\\frac{2}{8}$ ile $\\frac{4}{8}$ elde ederiz ve tam ortalarındaki $\\frac{3}{8}$ sayısını buluruz. Eğer $10$ ile genişletirsek ($\\frac{10}{40}$ ile $\\frac{20}{40}$) aralarında $\\frac{11}{40}, \\frac{12}{40}, \\dots, \\frac{19}{40}$ gibi pek çok rasyonel sayı yazabiliriz.",
+        "Tam sayılar kümesinde 1 ile 2 arasında başka bir tam sayı yoktur; ancak rasyonel sayılar kümesinde herhangi iki farklı rasyonel sayı arasında SONSUZ sayıda rasyonel sayı vardır. Bu özelliğe rasyonel sayıların 'yoğunluk özelliği' denir.",
+        "İki rasyonel sayı arasındaki sayıları bulmak için kesirleri genişletiriz. Örneğin {kesir:1|4} ile {kesir:2|4} arasında paydası 4 olan bir kesir görünmez; fakat her iki kesri 2 ile genişletirsek {kesir:2|8} ile {kesir:4|8} elde ederiz ve tam ortalarındaki {kesir:3|8} sayısını buluruz. Eğer 10 ile genişletirsek ({kesir:10|40} ile {kesir:20|40}) aralarında {kesir:11|40}, {kesir:12|40}, …, {kesir:19|40} gibi pek çok rasyonel sayı yazabiliriz.",
         "Ayrıca iki rasyonel sayının tam ortasındaki rasyonel sayıyı bulmak için iki sayıyı toplayıp ikiye bölebilir (aritmetik ortalamasını alabilir) veya paydaları eşitledikten sonra paylarının ortancasını seçebiliriz."
       ],
       "kutu": {
         "tur": "kural",
         "baslik": "Bilinmeyenli Eşitsizlik Soruları",
-        "metin": "$-\\frac{3}{4} < \\frac{a}{12} < -\\frac{1}{6}$ gibi sorularda önce tüm paydaları $12$'de eşitleriz: $-\\frac{9}{12} < \\frac{a}{12} < -\\frac{2}{12}$. Buradan $a$ tam sayısının alabileceği değerler $-8, -7, -6, -5, -4, -3$ olarak kolayca bulunur."
+        "metin": "-{kesir:3|4} < {kesir:a|12} < -{kesir:1|6} gibi sorularda önce tüm paydaları 12'de eşitleriz: -{kesir:9|12} < {kesir:a|12} < -{kesir:2|12}. Buradan a tam sayısının alabileceği değerler -8, -7, -6, -5, -4, -3 olarak kolayca bulunur."
       }
     }
   ],
   "ornekler": [
     {
-      "soru": "$-\\frac{2}{3}, -\\frac{5}{6}$ ve $-\\frac{7}{12}$ rasyonel sayılarını küçükten büyüğe doğru sıralayınız.",
-      "cevap": "Önce sayıları pozitif kabul edip paydalarını $12$'de eşitleyelim: $\\frac{2}{3} = \\frac{8}{12}$, $\\frac{5}{6} = \\frac{10}{12}$ ve $\\frac{7}{12}$. Pozitif sıralama: $\\frac{7}{12} < \\frac{8}{12} < \\frac{10}{12}$ yani $\\frac{7}{12} < \\frac{2}{3} < \\frac{5}{6}$ olur. Negatif işaretlerini koyup eşitsizliği ters çevirdiğimizde küçükten büyüğe doğru sıralama: $-\\frac{5}{6} < -\\frac{2}{3} < -\\frac{7}{12}$ bulunur."
+      "soru": "-{kesir:2|3}, -{kesir:5|6} ve -{kesir:7|12} rasyonel sayılarını küçükten büyüğe doğru sıralayınız.",
+      "cevap": "Önce sayıları pozitif kabul edip paydalarını 12'de eşitleyelim: {kesir:2|3} = {kesir:8|12}, {kesir:5|6} = {kesir:10|12} ve {kesir:7|12}. Pozitif sıralama: {kesir:7|12} < {kesir:8|12} < {kesir:10|12} yani {kesir:7|12} < {kesir:2|3} < {kesir:5|6} olur. Negatif işaretlerini koyup eşitsizliği ters çevirdiğimizde küçükten büyüğe doğru sıralama: -{kesir:5|6} < -{kesir:2|3} < -{kesir:7|12} bulunur."
     },
     {
-      "soru": "$x = \\frac{4}{9}$, $y = \\frac{12}{23}$ ve $z = \\frac{6}{13}$ rasyonel sayılarını pay eşitleme yöntemiyle küçükten büyüğe sıralayınız.",
-      "cevap": "Payları ($4, 12, 6$) en küçük ortak katları olan $12$'de eşitleyelim: $x = \\frac{4 \\cdot 3}{9 \\cdot 3} = \\frac{12}{27}$, $y = \\frac{12}{23}$ ve $z = \\frac{6 \\cdot 2}{13 \\cdot 2} = \\frac{12}{26}$. Payları eşit olan pozitif rasyonel sayılardan paydası büyük olan daha küçük olduğundan: $\\frac{12}{27} < \\frac{12}{26} < \\frac{12}{23}$, yani $x < z < y$ bulunur."
+      "soru": "x = {kesir:4|9}, y = {kesir:12|23} ve z = {kesir:6|13} rasyonel sayılarını pay eşitleme yöntemiyle küçükten büyüğe sıralayınız.",
+      "cevap": "Payları (4, 12, 6) en küçük ortak katları olan 12'de eşitleyelim: x = {kesir:4 · 3|9 · 3} = {kesir:12|27}, y = {kesir:12|23} ve z = {kesir:6 · 2|13 · 2} = {kesir:12|26}. Payları eşit olan pozitif rasyonel sayılardan paydası büyük olan daha küçük olduğundan: {kesir:12|27} < {kesir:12|26} < {kesir:12|23}, yani x < z < y bulunur."
     },
     {
-      "soru": "$-\\frac{5}{6} < \\frac{k}{18} < -\\frac{2}{9}$ eşitsizliğini sağlayan $k$ tam sayılarının toplamı kaçtır?",
-      "cevap": "Paydaları $18$'de eşitleyelim: $-\\frac{5 \\cdot 3}{6 \\cdot 3} = -\\frac{15}{18}$ ve $-\\frac{2 \\cdot 2}{9 \\cdot 2} = -\\frac{4}{18}$ olur. Eşitsizlik $-\\frac{15}{18} < \\frac{k}{18} < -\\frac{4}{18}$ halini alır. Buradan $-15 < k < -4$ olduğundan $k$'nin alabileceği tam sayı değerleri $-14, -13, -12, -11, -10, -9, -8, -7, -6, -5$'tir (10 adet). Toplamları: $\\frac{(-14 + (-5)) \\cdot 10}{2} = -95$ bulunur."
+      "soru": "-{kesir:5|6} < {kesir:k|18} < -{kesir:2|9} eşitsizliğini sağlayan k tam sayılarının toplamı kaçtır?",
+      "cevap": "Paydaları 18'de eşitleyelim: -{kesir:5 · 3|6 · 3} = -{kesir:15|18} ve -{kesir:2 · 2|9 · 2} = -{kesir:4|18} olur. Eşitsizlik -{kesir:15|18} < {kesir:k|18} < -{kesir:4|18} halini alır. Buradan -15 < k < -4 olduğundan k'nin alabileceği tam sayı değerleri -14, -13, -12, -11, -10, -9, -8, -7, -6, -5'tir (10 adet). Toplamları: {kesir:(-14 + (-5)) · 10|2} = -95 bulunur."
     },
     {
-      "soru": "$a = -1,\\overline{52}$, $b = -1,5\\overline{2}$ ve $c = -1,52$ sayılarını küçükten büyüğe doğru sıralayınız.",
-      "cevap": "Önce sayıları pozitif kabul edip basamaklarını açalım:\n$|a| = 1,5252...$\n$|b| = 1,5222...$\n$|c| = 1,5200...$\nPozitif sıralama: $|c| < |b| < |a|$ şeklindedir. Sayılar negatif olduğu için sıralama ters döner ve küçükten büyüğe: $a < b < c$ (yani $-1,\\overline{52} < -1,5\\overline{2} < -1,52$) olur."
+      "soru": "a = -1,{devir:52}, b = -1,5{devir:2} ve c = -1,52 sayılarını küçükten büyüğe doğru sıralayınız.",
+      "cevap": "Önce sayıları pozitif kabul edip basamaklarını açalım:\n|a| = 1,5252...\n|b| = 1,5222...\n|c| = 1,5200...\nPozitif sıralama: |c| < |b| < |a| şeklindedir. Sayılar negatif olduğu için sıralama ters döner ve küçükten büyüğe: a < b < c (yani -1,{devir:52} < -1,5{devir:2} < -1,52) olur."
     },
     {
-      "soru": "$\\frac{2}{5}$ ile $\\frac{3}{5}$ rasyonel sayılarının tam ortasında bulunan rasyonel sayıyı bulunuz.",
-      "cevap": "Her iki kesri $2$ ile genişletirsek $\\frac{2}{5} = \\frac{4}{10}$ ve $\\frac{3}{5} = \\frac{6}{10}$ elde edilir. $\\frac{4}{10}$ ile $\\frac{6}{10}$'un tam ortasındaki rasyonel sayı $\\frac{5}{10} = \\frac{1}{2}$'dir."
+      "soru": "{kesir:2|5} ile {kesir:3|5} rasyonel sayılarının tam ortasında bulunan rasyonel sayıyı bulunuz.",
+      "cevap": "Her iki kesri 2 ile genişletirsek {kesir:2|5} = {kesir:4|10} ve {kesir:3|5} = {kesir:6|10} elde edilir. {kesir:4|10} ile {kesir:6|10}'un tam ortasındaki rasyonel sayı {kesir:5|10} = {kesir:1|2}'dir."
     },
     {
       "soru": "‘Sayı Doğrusu ve İşaretlerine Göre Rasyonel Sayıları Karşılaştırma’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
-      "cevap": "Rasyonel sayıları karşılaştırmanın en temel ve görsel yolu sayı doğrusudur. Yatay bir sayı doğrusunda soldan sağa doğru ilerledikçe sayıların değeri her zaman artar; sağdan sola doğru gidildikçe ise sayıların değeri azalır. Rasyonel sayılar işaretlerine göre üç gruba ayrılır: Negatif rasyonel sayılar ($\\mathbb{Q}^-$), sıfır ($0$) ve pozitif rasyonel sayılar ($\\mathbb{Q}^+$). İşaretleri farklı olan rasyonel sayıları karşılaştırırken hiçbir işlem yapmaya gerek yoktur: $\\text{Negatif Rasyonel Sayı} < 0 < \\text{Pozitif Rasyonel Sayı}$."
+      "cevap": "Rasyonel sayıları karşılaştırmanın en temel ve görsel yolu sayı doğrusudur. Yatay bir sayı doğrusunda soldan sağa doğru ilerledikçe sayıların değeri her zaman artar; sağdan sola doğru gidildikçe ise sayıların değeri azalır. Rasyonel sayılar işaretlerine göre üç gruba ayrılır: Negatif rasyonel sayılar (ℚ{us:|-}), sıfır (0) ve pozitif rasyonel sayılar (ℚ{us:|+}). İşaretleri farklı olan rasyonel sayıları karşılaştırırken hiçbir işlem yapmaya gerek yoktur: Negatif Rasyonel Sayı < 0 < Pozitif Rasyonel Sayı."
     }
   ],
   "etkinlikler": [
@@ -140,34 +140,34 @@
       "tur": "coktan",
       "soru": "Aşağıdaki rasyonel sayılardan hangisi sayı doğrusunda en sağda yer alır?",
       "secenekler": [
-        "$-\\frac{9}{4}$",
-        "$-\\frac{1}{2}$",
-        "$\\frac{3}{5}$",
-        "$\\frac{7}{10}$"
+        "-{kesir:9|4}",
+        "-{kesir:1|2}",
+        "{kesir:3|5}",
+        "{kesir:7|10}"
       ],
       "dogru": 0,
-      "aciklama": "Sayı doğrusunda en sağda en büyük sayı yer alır. Pozitif sayılardan $\\frac{3}{5} = \\frac{6}{10}$ olduğundan $\\frac{7}{10} > \\frac{3}{5}$'tir ve en sağdaki sayı $\\frac{7}{10}$'dur."
+      "aciklama": "Sayı doğrusunda en sağda en büyük sayı yer alır. Pozitif sayılardan {kesir:3|5} = {kesir:6|10} olduğundan {kesir:7|10} > {kesir:3|5}'tir ve en sağdaki sayı {kesir:7|10}'dur."
     },
     {
       "tur": "coktan",
-      "soru": "$a = -\\frac{11}{12}$, $b = -\\frac{5}{6}$ ve $c = -\\frac{3}{4}$ rasyonel sayılarının doğru sıralanışı aşağıdakilerden hangisidir?",
+      "soru": "a = -{kesir:11|12}, b = -{kesir:5|6} ve c = -{kesir:3|4} rasyonel sayılarının doğru sıralanışı aşağıdakilerden hangisidir?",
       "secenekler": [
-        "$c < b < a$",
-        "$a < b < c$",
-        "$b < a < c$",
-        "$a < c < b$"
+        "c < b < a",
+        "a < b < c",
+        "b < a < c",
+        "a < c < b"
       ],
       "dogru": 1,
-      "aciklama": "Paydalar $12$'de eşitlenirse $a = -\\frac{11}{12}$, $b = -\\frac{10}{12}$, $c = -\\frac{9}{12}$ olur. Negatif sayılarda $-\\frac{11}{12} < -\\frac{10}{12} < -\\frac{9}{12}$ olduğundan $a < b < c$ doğrudur."
+      "aciklama": "Paydalar 12'de eşitlenirse a = -{kesir:11|12}, b = -{kesir:10|12}, c = -{kesir:9|12} olur. Negatif sayılarda -{kesir:11|12} < -{kesir:10|12} < -{kesir:9|12} olduğundan a < b < c doğrudur."
     },
     {
       "tur": "coktan",
       "soru": "‘Pozitif Rasyonel Sayılarda Pay ve Payda Eşitleme Yöntemleri’ kavramı veya konusuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
       "secenekler": [
-        "$\\frac{1}{13}, \\frac{2}{19}, \\frac{4}{35}$ gibi paydaları asal veya büyük sayılar olan kesirlerde paydaları eşitlemek yerine.",
+        "{kesir:1|13}, {kesir:2|19}, {kesir:4|35} gibi paydaları asal veya büyük sayılar olan kesirlerde paydaları eşitlemek yerine.",
         "Rasyonel sayılar kesir ve ondalık gösterim olarak karışık verildiğinde, tüm sayıları ondalık gösterime çevirerek karşılaştırmak çok pratiktir.",
         "İki veya daha fazla pozitif rasyonel sayıyı karşılaştırırken en sık kullandığımız iki cebirsel yöntem payda eşitleme ve pay eşitlemedir:",
-        "$-2\\frac{1}{3}$ sayısı $-2 + \\frac{1}{3}$ DEĞİLDİR; $-2 - \\frac{1}{3} = -\\frac{7}{3}$ demektir ve sayı doğrusunda $-2$ ile."
+        "-2{kesir:1|3} sayısı -2 + {kesir:1|3} DEĞİLDİR; -2 - {kesir:1|3} = -{kesir:7|3} demektir ve sayı doğrusunda -2 ile."
       ],
       "dogru": 2,
       "aciklama": "‘Pozitif Rasyonel Sayılarda Pay ve Payda Eşitleme Yöntemleri’ kapsamında doğru açıklama: İki veya daha fazla pozitif rasyonel sayıyı karşılaştırırken en sık kullandığımız iki cebirsel yöntem payda eşitleme ve pay eşitlemedir:"
@@ -176,30 +176,30 @@
       "tur": "coktan",
       "soru": "‘Ne Zaman Pay Eşitlenir?’ kavramı veya konusuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
       "secenekler": [
-        "$-2\\frac{1}{3}$ sayısı $-2 + \\frac{1}{3}$ DEĞİLDİR; $-2 - \\frac{1}{3} = -\\frac{7}{3}$ demektir ve sayı doğrusunda $-2$ ile.",
+        "-2{kesir:1|3} sayısı -2 + {kesir:1|3} DEĞİLDİR; -2 - {kesir:1|3} = -{kesir:7|3} demektir ve sayı doğrusunda -2 ile.",
         "Rasyonel sayılar kesir ve ondalık gösterim olarak karışık verildiğinde, tüm sayıları ondalık gösterime çevirerek karşılaştırmak çok pratiktir.",
         "İki veya daha fazla pozitif rasyonel sayıyı karşılaştırırken en sık kullandığımız iki cebirsel yöntem payda eşitleme ve pay eşitlemedir:",
-        "$\\frac{1}{13}, \\frac{2}{19}, \\frac{4}{35}$ gibi paydaları asal veya büyük sayılar olan kesirlerde paydaları eşitlemek yerine."
+        "{kesir:1|13}, {kesir:2|19}, {kesir:4|35} gibi paydaları asal veya büyük sayılar olan kesirlerde paydaları eşitlemek yerine."
       ],
       "dogru": 3,
-      "aciklama": "‘Ne Zaman Pay Eşitlenir?’ kapsamında doğru açıklama: $\\frac{1}{13}, \\frac{2}{19}, \\frac{4}{35}$ gibi paydaları asal veya büyük sayılar olan kesirlerde paydaları eşitlemek yerine."
+      "aciklama": "‘Ne Zaman Pay Eşitlenir?’ kapsamında doğru açıklama: {kesir:1|13}, {kesir:2|19}, {kesir:4|35} gibi paydaları asal veya büyük sayılar olan kesirlerde paydaları eşitlemek yerine."
     },
     {
       "tur": "dy",
       "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
-          "metin": "Sayı doğrusunda negatif rasyonel sayılar $0$'a yaklaştıkça büyür, $0$'dan uzaklaştıkça küçülür.",
+          "metin": "Sayı doğrusunda negatif rasyonel sayılar 0'a yaklaştıkça büyür, 0'dan uzaklaştıkça küçülür.",
           "dogru": false,
-          "aciklama": "Sayı doğrusunda sağa doğru gidildikçe değer büyüdüğü için $0$'a daha yakın olan negatif sayı daha büyüktür."
+          "aciklama": "Sayı doğrusunda sağa doğru gidildikçe değer büyüdüğü için 0'a daha yakın olan negatif sayı daha büyüktür."
         },
         {
-          "metin": "$-\\frac{7}{8}$ rasyonel sayısı, $-\\frac{3}{8}$ rasyonel sayısından daha büyüktür.",
+          "metin": "-{kesir:7|8} rasyonel sayısı, -{kesir:3|8} rasyonel sayısından daha büyüktür.",
           "dogru": false,
-          "aciklama": "Pozitif olsalardı $\\frac{7}{8} > \\frac{3}{8}$ olurdu; ancak negatif oldukları için $-\\frac{3}{8} > -\\frac{7}{8}$'dir."
+          "aciklama": "Pozitif olsalardı {kesir:7|8} > {kesir:3|8} olurdu; ancak negatif oldukları için -{kesir:3|8} > -{kesir:7|8}'dir."
         },
         {
-          "metin": "Sayı doğrusunda soldan sağa doğru gidildikçe rasyonel sayıların değeri daima büyür; her pozitif rasyonel sayı $0$'dan, $0$ da her negatif rasyonel sayıdan büyüktür.",
+          "metin": "Sayı doğrusunda soldan sağa doğru gidildikçe rasyonel sayıların değeri daima büyür; her pozitif rasyonel sayı 0'dan, 0 da her negatif rasyonel sayıdan büyüktür.",
           "dogru": true,
           "aciklama": "Konunun temel doğru ilkelerinden biridir."
         }
@@ -210,20 +210,20 @@
       "soru": "Aşağıdaki rasyonel sayı karşılaştırmalarını doğru sonuçlarla eşleştiriniz.",
       "ciftler": [
         [
-          "$-\\frac{1}{4}$ ile $-\\frac{3}{4}$",
-          "$-\\frac{1}{4} > -\\frac{3}{4}$"
+          "-{kesir:1|4} ile -{kesir:3|4}",
+          "-{kesir:1|4} > -{kesir:3|4}"
         ],
         [
-          "$\\frac{5}{7}$ ile $\\frac{5}{9}$",
-          "$\\frac{5}{7} > \\frac{5}{9}$"
+          "{kesir:5|7} ile {kesir:5|9}",
+          "{kesir:5|7} > {kesir:5|9}"
         ],
         [
-          "$0,\\overline{6}$ ile $0,6$",
-          "$0,\\overline{6} > 0,6$"
+          "0,{devir:6} ile 0,6",
+          "0,{devir:6} > 0,6"
         ],
         [
-          "$-1,2$ ile $0$",
-          "$-1,2 < 0$"
+          "-1,2 ile 0",
+          "-1,2 < 0"
         ]
       ]
     },
@@ -247,8 +247,8 @@
     },
     {
       "tur": "ogretici",
-      "soru": "Pay ile paydası arasındaki fark $1$ olan $-\\frac{1}{2}, -\\frac{3}{4}$ ve $-\\frac{9}{10}$ negatif basit kesirlerini payda eşitlemeden, bütüne yakınlık stratejisiyle sıralayınız.",
-      "cevap": "Pozitif basit kesirlerde pay ve payda arasındaki fark sabitken sayılar büyüdükçe kesir $1$ tama yaklaşır ve büyür ($\\frac{1}{2} < \\frac{3}{4} < \\frac{9}{10}$). Ancak bu kesirler negatif olduğu için $-1$ tamına yaklaşan sayı $0$'dan uzaklaşmış olur ve değeri küçülür. Bu nedenle sıralama: $-\\frac{9}{10} < -\\frac{3}{4} < -\\frac{1}{2}$ şeklindedir.",
+      "soru": "Pay ile paydası arasındaki fark 1 olan -{kesir:1|2}, -{kesir:3|4} ve -{kesir:9|10} negatif basit kesirlerini payda eşitlemeden, bütüne yakınlık stratejisiyle sıralayınız.",
+      "cevap": "Pozitif basit kesirlerde pay ve payda arasındaki fark sabitken sayılar büyüdükçe kesir 1 tama yaklaşır ve büyür ({kesir:1|2} < {kesir:3|4} < {kesir:9|10}). Ancak bu kesirler negatif olduğu için -1 tamına yaklaşan sayı 0'dan uzaklaşmış olur ve değeri küçülür. Bu nedenle sıralama: -{kesir:9|10} < -{kesir:3|4} < -{kesir:1|2} şeklindedir.",
       "ipuclari": [
         "Rasyonel Sayılarda Karşılaştırma ve Sıralama; Sayı Doğrusu ve Yoğunluk Uygulamaları kapsamındaki temel kavramları hatırlayınız.",
         "Açıklamanızı somut bir örnekle destekleyiniz."
