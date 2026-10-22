@@ -506,13 +506,29 @@ GOVDE['planlar.html'] = ('Günlük planlar', 'Günlük ders planları: Okul, ö�
 GOVDE['ders-dagitim.html'] = ('Ders dağıtım programı', 'Okullar için ücretsiz ders dağıtım programı: öğretmen, sınıf ve ders bilgilerinden haftalık program üretir, yerleşmeyen dersin nedenini gösterir; PDF ve Excel çıktı verir. Veriler yalnız tarayıcınızda kalır.', '''<style>
 .ddp-bas { padding-bottom: 28px; }
 .ddp-kap { padding: 20px 0 8px; }
+.sayfa-bas .dd-sayac { font-size: 16px; margin-top: 8px; }
+.dd-sayac strong { color: var(--metin); font-variant-numeric: tabular-nums; }
 .ddp-cerceve { display: block; width: 100%; height: calc(100vh - 96px); min-height: 560px; border: 1px solid var(--cizgi); border-radius: var(--kose); background: var(--zemin-2); }
 </style>
   <section class="sayfa-bas ddp-bas">
     <div class="kap">
       <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/ogretmen.html">Öğretmen Köşesi</a><span aria-hidden="true">/</span><span>Ders dağıtım programı</span></nav>
       <h1>Ders dağıtım programı</h1>
-      <p>Okul ayarlarını, öğretmenleri, sınıfları ve dersleri girin; program haftalık ders çizelgesini kendisi kurar. Yerleşmeyen bir ders kalırsa nedenini ve en az değişiklikle çözüm önerisini gösterir. Veriler yalnız bu tarayıcıda saklanır.</p>
+      <p>Okul ayarlarını, öğretmenleri, sınıfları ve dersleri girin; program haftalık ders çizelgesini kendisi kurar. Yerleşmeyen bir ders kalırsa nedenini ve en az değişiklikle çözüm önerisini gösterir. Program bilgileri yalnız bu tarayıcıda saklanır.</p>
+      <p class="dd-sayac" hidden>Programı kullanan okul sayısı: <strong class="dd-sayac-sayi">0</strong></p>
+      <script>
+      (function () {
+        var p = document.querySelector('.dd-sayac'); if (!p || !window.fetch) return;
+        var el = p.querySelector('.dd-sayac-sayi');
+        fetch('/veri/ders-dagitim-sayac.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
+          var n = j ? Math.max(0, Math.floor(+j.sayi || 0)) : 0; if (!n) return;
+          p.hidden = false;
+          if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) { el.textContent = n; return; }
+          var i = 0, adim = Math.max(1, Math.ceil(n / 40));
+          (function say() { i = Math.min(n, i + adim); el.textContent = i; if (i < n) setTimeout(say, 40); })();
+        }, function () { });
+      })();
+      </script>
       <p><a class="dugme ana" href="/ders-dagitim-uygulama.html">Tam ekranda aç</a> <a class="dugme" href="#ddp-nasil">Nasıl kullanılır?</a></p>
     </div>
   </section>
@@ -531,7 +547,7 @@ GOVDE['ders-dagitim.html'] = ('Ders dağıtım programı', 'Okullar için ücret
         <li><strong>Programlar ve çıktı:</strong> Sınıf ve öğretmen programlarını, genel tabloyu ve dağıtım çizelgesini PDF, Excel ya da yazdırılabilir sayfa olarak indirin.</li>
       </ol>
       <h2>Verileriniz</h2>
-      <p>Girdiğiniz bilgiler yalnız bu cihazdaki tarayıcıda saklanır, Ders Kutusu sunucusuna gönderilmez. Başka bir bilgisayarda devam etmek için “Yedek indir” ile aldığınız dosyayı orada “Yedek yükle” ile açabilirsiniz. Ayrıntı: <a href="/gizlilik.html">Gizlilik ve çerezler</a>.</p>
+      <p>Öğretmen, ders ve program bilgileri yalnız bu cihazdaki tarayıcıda saklanır, Ders Kutusu sunucusuna gönderilmez. Okul bilgilerindeki “kullanan okullar listesine eklensin” işareti açıksa programı ilk oluşturduğunuzda yalnız okul adı, ilçe ve öğretmen/sınıf sayısı bildirilir; sitede yalnız kullanan okul sayısı görünür, okul adı Ders Kutusu’nun herkese açık GitHub deposundaki listede görünebilir. İşareti kaldırırsanız hiçbir bilgi gönderilmez. Başka bir bilgisayarda devam etmek için “Yedek indir” ile aldığınız dosyayı orada “Yedek yükle” ile açabilirsiniz. Ayrıntı: <a href="/gizlilik.html">Gizlilik ve çerezler</a>.</p>
     </div>
   </div>''', ())
 

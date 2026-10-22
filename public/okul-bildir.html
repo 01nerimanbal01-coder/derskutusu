@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<title>Okul bildirimi</title>
+</head>
+<body>
+<!-- Ders dağıtım programı, izin veren okul için programı ilk oluşturduğunda bu sayfayı gizli bir çerçevede
+     /okul-bildir.html#<kod> olarak açar. Sayfa adresini /okul-bildir/<kod> yapıp sitenin Cloudflare istatistik
+     betiğini yükler; saatlik iş (araclar/ders_dagitim_okullar.py) bu yolları okur. Kod sunucuya (GitHub) gitmez:
+     # sonrası tarayıcıda kalır. Doğrudan açılırsa ya da kod geçersizse hiçbir şey yapmaz. -->
+<script>
+(function () {
+  var kod = (location.hash || '').slice(1).toLowerCase();
+  if (window.top === window || !/^[0-9a-f]{16,600}$/.test(kod) || kod.length % 2) return;
+  history.replaceState(null, '', '/okul-bildir/' + kod);
+  var s = document.createElement('script');
+  s.type = 'module';
+  s.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+  s.setAttribute('data-cf-beacon', '{"token": "fffb5e8a709947ee9ba14ea753d96275", "spa": false}');
+  document.body.appendChild(s);
+})();
+</script>
+</body>
+</html>

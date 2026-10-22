@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  issues: write      # 23.10.2026: ders dağıtım programını kullanan her yeni okul için bildirim issue'su
   pages: write
   id-token: write
 
@@ -50,6 +51,13 @@ jobs:
           CF_ACCOUNT_ID: 6aa67a3c005bba9f3597a16e0140dfde   # hesap kimliği (gizli değil)
         run: python araclar/ziyaret_guncelle.py
 
+      - name: Ders dağıtım programını kullanan okulları al
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ACCOUNT_ID: 6aa67a3c005bba9f3597a16e0140dfde   # hesap kimliği (gizli değil)
+          GH_TOKEN: ${{ github.token }}
+        run: python araclar/ders_dagitim_okullar.py
+
       - name: Özetleri derle ve hata denetimini çalıştır
         run: |
           python araclar/yayin_denetle.py --onar
@@ -59,7 +67,7 @@ jobs:
         run: |
           git config user.name "akis-botu"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/veri public/ozet public/sitemap.xml araclar/ozetler araclar/gorseller
+          git add public/veri public/ozet public/sitemap.xml araclar/ozetler araclar/gorseller araclar/veri
           if ! git diff --cached --quiet; then
             git commit -m "Sosyal medya akışları, ziyaret sayısı ve özet derlemeleri güncellendi"
             git pull --rebase origin main

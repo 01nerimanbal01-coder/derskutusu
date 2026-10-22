@@ -2130,6 +2130,14 @@ function createScheduler() {
 var S = createScheduler();
 var DAY_NAMES = S.DAY_NAMES, DAY_SHORT = S.DAY_SHORT;
 var STORAGE_KEY = 'dersProgrami.v1';
+/* kullanan okul sayacı: SAYAC_GONDER boşsa özellik tamamen kapalıdır (onay kutusu görünmez, hiçbir yere bir şey gönderilmez).
+   Doluysa, kullanıcı izin verdiyse program ilk oluşturulduğunda yalnız okul adı + ilçe + öğretmen/sınıf sayısı bildirilir:
+   '/…html' → sitenin bildirim sayfası gizli çerçevede açılır (derskutusu.com: Cloudflare istatistiği + saatlik GitHub işi);
+   'https://…' → o adrese POST (ör. Google Apps Script, bkz. sayac/KURULUM.md). Yerel dosyada (file://) çerçeve yolu çalışmaz, kapalı sayılır. */
+var SAYAC_GONDER = '/okul-bildir.html';
+var SAYAC_OKU = '/veri/ders-dagitim-sayac.json';  /* sitenin kendi sayı dosyası: { "sayi": N } */
+var ORNEK_OKUL = 'Örnek Ortaokulu';               /* örnek verinin okul adı: sayaca bildirilmez */
+function sayacAcik() { return !!SAYAC_GONDER && (/^https?:\/\//.test(SAYAC_GONDER) || /^https?:$/.test(location.protocol)); }
 var SUBJECTS = ['Türkçe','Matematik','Fen Bilimleri','Sosyal Bilgiler','T.C. İnkılap Tarihi ve Atatürkçülük','İngilizce','Din Kültürü ve Ahlak Bilgisi','Görsel Sanatlar','Müzik','Beden Eğitimi ve Spor','Bilişim Teknolojileri ve Yazılım','Teknoloji ve Tasarım','Rehberlik ve Yönlendirme','Hayat Bilgisi','Trafik Güvenliği','İnsan Hakları, Yurttaşlık ve Demokrasi','Kur\'an-ı Kerim','Peygamberimizin Hayatı','Temel Dini Bilgiler','Matematik Uygulamaları','Spor ve Fiziki Etkinlikler','Drama','Zeka Oyunları','Türk Dili ve Edebiyatı','Tarih','Coğrafya','Fizik','Kimya','Biyoloji','Felsefe','Almanca','Serbest Etkinlikler','Okuma Becerileri','Seçmeli Ders'];
 var TABS = [
   { id: 'ayarlar', n: '1', label: 'Okul & Ayarlar' },
@@ -2178,7 +2186,7 @@ function confirmBox(opts) {
 
 /* ---------- durum ---------- */
 function defaultState() {
-  return { v: 1, settings: { schoolName: '', year: '2026-2027', district: '', docNo: '', startDate: '', principal: '', days: [1, 1, 1, 1, 1, 0, 0], periods: 7, periodsPerDay: {}, lunchAfter: 4, periodTimes: [], seconds: 10, weights: {} },
+  return { v: 1, settings: { schoolName: '', year: '2026-2027', district: '', docNo: '', startDate: '', principal: '', days: [1, 1, 1, 1, 1, 0, 0], periods: 7, periodsPerDay: {}, lunchAfter: 4, periodTimes: [], seconds: 10, weights: {}, sayacIzin: true },
     teachers: [], classes: [], rooms: [], groups: [], locks: {}, timetable: null, savedAt: 0 };
 }
 var state = defaultState();
@@ -2343,12 +2351,15 @@ function renderSettings() {
   var wRows = [['tUndesired', 'Öğretmenin istemediği saate ders'], ['tGap', 'Öğretmenin boş saati'], ['tDays', 'İstediğinden fazla gün gelmesi'], ['tBalance', 'Günlük yük dengesizliği'], ['cGap', 'Sınıfın gün içinde boş kalması'], ['adjDays', 'Aynı dersin ardışık günlere gelmesi'], ['timePref', 'Sabah / öğleden sonra tercihi']].map(function (r) {
     return '<tr><td>' + esc(r[1]) + '</td><td><input type="number" min="0" max="500" inputmode="numeric" data-w="' + r[0] + '" value="' + (s.weights[r[0]] != null ? s.weights[r[0]] : W[r[0]]) + '" style="width:90px"></td></tr>';
   }).join('');
-  var welcome = hasData() ? '' : '<div class="card" style="border-color:var(--accent-line)"><div class="card-head"><h2>Hoş geldiniz</h2></div><p class="lead" style="margin-bottom:10px">Adımları sırayla izleyin: okul ayarları → öğretmenler ve istekleri → sınıfların dersleri → ortak dersler → programı oluştur. Sistemi hemen denemek için örnek bir ortaokul verisi yükleyebilirsiniz; kendi verinizi girmeye başladığınızda silebilirsiniz.</p><div class="actions"><button class="btn btn-primary" data-action="sample">Örnek okul verisiyle dene</button><button class="btn" data-action="goTeachers">Kendi verimi gireceğim</button></div></div>';
+  var welcome = hasData() ? '' : '<div class="card" style="border-color:var(--accent-line)"><div class="card-head"><h2>Hoş geldiniz</h2>' + sayacRozet() + '</div><p class="lead" style="margin-bottom:10px">Adımları sırayla izleyin: okul ayarları → öğretmenler ve istekleri → sınıfların dersleri → ortak dersler → programı oluştur. Sistemi hemen denemek için örnek bir ortaokul verisi yükleyebilirsiniz; kendi verinizi girmeye başladığınızda silebilirsiniz.</p><div class="actions"><button class="btn btn-primary" data-action="sample">Örnek okul verisiyle dene</button><button class="btn" data-action="goTeachers">Kendi verimi gireceğim</button></div></div>';
   return welcome +
     '<div class="card"><div class="card-head"><h2>Okul bilgileri</h2></div>' +
     '<div class="row"><div class="field w-lg"><label>Okul adı</label><input type="text" data-s="schoolName" value="' + esc(s.schoolName) + '" placeholder="Örn. Atatürk Ortaokulu"></div>' +
     '<div class="field w-sm"><label>Öğretim yılı</label><input type="text" data-s="year" value="' + esc(s.year) + '"></div></div>' +
-    '<div class="row" style="margin-top:10px"><div class="field w-md"><label>Kaymakamlık / ilçe (PDF başlığı)</label><input type="text" data-s="district" value="' + esc(s.district || '') + '" placeholder="Örn. İLÇE KAYMAKAMLIĞI"></div><div class="field w-sm"><label>Yazı sayısı</label><input type="text" data-s="docNo" value="' + esc(s.docNo || '') + '" placeholder="Örn. E-12345678-..."></div><div class="field w-sm"><label>Programın başlangıç tarihi</label><input type="date" data-s="startDate" value="' + esc(s.startDate || '') + '"></div><div class="field w-md"><label>Okul müdürü (imza bloğu, isteğe bağlı)</label><input type="text" data-s="principal" value="' + esc(s.principal || '') + '"></div></div><p class="hint" style="margin-top:6px">Bu bilgiler indirilen öğretmen ve sınıf programlarının başlığında kullanılır.</p></div>' +
+    '<div class="row" style="margin-top:10px"><div class="field w-md"><label>Kaymakamlık / ilçe (PDF başlığı)</label><input type="text" data-s="district" value="' + esc(s.district || '') + '" placeholder="Örn. İLÇE KAYMAKAMLIĞI"></div><div class="field w-sm"><label>Yazı sayısı</label><input type="text" data-s="docNo" value="' + esc(s.docNo || '') + '" placeholder="Örn. E-12345678-..."></div><div class="field w-sm"><label>Programın başlangıç tarihi</label><input type="date" data-s="startDate" value="' + esc(s.startDate || '') + '"></div><div class="field w-md"><label>Okul müdürü (imza bloğu, isteğe bağlı)</label><input type="text" data-s="principal" value="' + esc(s.principal || '') + '"></div></div><p class="hint" style="margin-top:6px">Bu bilgiler indirilen öğretmen ve sınıf programlarının başlığında kullanılır.</p>' +
+    (sayacAcik() ? '<label class="check" style="margin-top:8px"><input type="checkbox" data-s="sayacIzin" ' + (s.sayacIzin !== false ? 'checked' : '') + '> Okulumuz "bu programı kullanan okullar" listesine eklensin</label>' +
+      '<p class="hint" style="margin:0">Programı ilk oluşturduğunuzda yalnız okul adı, ilçe ve öğretmen/sınıf sayısı Ders Kutusu\'na bildirilir' + (/^https?:\/\//.test(SAYAC_GONDER) ? '' : ' (sitenin Cloudflare istatistik aracıyla); okul adı Ders Kutusu\'nun herkese açık GitHub deposundaki kullanıcı listesinde görünebilir') + '. Öğretmen adları, dersler ve program bilgisayarınızdan çıkmaz. İşareti kaldırırsanız hiçbir şey gönderilmez.</p>' : '') +
+    '</div>' +
 
     '<div class="card"><div class="card-head"><h2>Günler ve ders saatleri</h2><span class="badge b-accent">' + enabledDays().length + ' gün · en çok ' + P + ' saat</span></div>' +
     '<div class="row"><div class="w-md"><div class="field" style="margin-bottom:10px"><label>Günlük ders saati (varsayılan)</label><input type="number" min="1" max="12" inputmode="numeric" data-s="periods" value="' + esc(s.periods) + '" style="max-width:120px"></div>' +
@@ -2362,7 +2373,7 @@ function renderSettings() {
 
     '<div class="card"><div class="card-head"><h2>Veri</h2></div>' +
     '<div class="actions"><button class="btn" data-action="sample">Örnek okul verisi yükle</button><button class="btn" data-action="exportJson">' + ICON.down + 'Yedek indir (JSON)</button><label class="btn" for="importFile">Yedek yükle</label><input type="file" id="importFile" accept="application/json,.json" class="sr"><button class="btn btn-danger" data-action="wipe">' + ICON.trash + 'Tüm verileri sil</button></div>' +
-    '<p class="hint" style="margin-top:10px">' + (window.claude && typeof window.claude.use === 'function' ? 'Veriler bu tarayıcıda ve (giriş yapıldıysa) bulutta saklanır.' : 'Veriler yalnız bu tarayıcıda saklanır, sunucuya gönderilmez.') + ' Yedek dosyasıyla başka bir cihaza taşıyabilirsiniz.</p></div>';
+    '<p class="hint" style="margin-top:10px">' + (window.claude && typeof window.claude.use === 'function' ? 'Veriler bu tarayıcıda ve (giriş yapıldıysa) bulutta saklanır.' : (sayacAcik() && s.sayacIzin !== false ? 'Program bilgileri yalnız bu tarayıcıda saklanır; kullanan okullar listesi için yalnız okul adı ve ilçe bildirilir.' : 'Veriler yalnız bu tarayıcıda saklanır, sunucuya gönderilmez.')) + ' Yedek dosyasıyla başka bir cihaza taşıyabilirsiniz.</p></div>';
 }
 
 /* ---------- 2. Öğretmenler ---------- */
@@ -2512,7 +2523,7 @@ function renderGenerate() {
     taniHtml = renderTani();
     if (taniGerekli() && !(ui.tani && ui.tani.key === taniKey())) setTimeout(function () { startTani(false); }, 0);
   }
-  return '<div class="card"><div class="card-head"><h2>Program oluştur</h2></div>' + stats + '<div style="margin-top:12px" class="stack">' + issues + body + '</div></div>' + taniHtml + (model.ok && !(gen && gen.running) ? renderOnKontrol(model) : '') + result;
+  return '<div class="card"><div class="card-head"><h2>Program oluştur</h2>' + sayacRozet() + '</div>' + stats + '<div style="margin-top:12px" class="stack">' + issues + body + '</div></div>' + taniHtml + (model.ok && !(gen && gen.running) ? renderOnKontrol(model) : '') + result;
 }
 
 /* ---------- ön kontrol: programı en çok zorlayan öğretmenler ---------- */
@@ -3386,6 +3397,44 @@ function workerSource() {
     'out.result = S.tani.tumunuTanila(msg.data, msg.asg, { agir: true, enFazlaAgir: 12 }); } catch (err) { out.error = String(err && err.message || err); } self.postMessage(out); }\n' +
     'function loop() { if (!solver) return; var pr = solver.step(150); self.postMessage({ type: "progress", p: pr }); if (solver.done || stop) { if (!solver.done) solver.finish(); var r = solver.result(); self.postMessage({ type: "done", result: r, warnings: model.warnings }); solver = null; return; } setTimeout(loop, 0); }';
 }
+/* ---------- kullanan okul sayacı ---------- */
+/* program ilk kez oluşturulunca, izin varsa, okul başına bir kez bildirir (aynı okul yeniden gönderilmez) */
+function sayacBildir() {
+  var s = state.settings, okul = String(s.schoolName || '').trim(), ilce = String(s.district || '').trim();
+  if (!sayacAcik() || s.sayacIzin === false || okul.length < 3) return;
+  /* örnek veriyle deneyen ziyaretçi okul sayılmaz */
+  var sade = function (x) { return String(x).replace(/İ/g, 'i').replace(/I/g, 'ı').toLowerCase().replace(/[^0-9a-zçğıöşüâîû]+/g, ''); };
+  if (sade(okul) === sade(ORNEK_OKUL)) return;
+  if (state.teachers.length < 2 || !state.classes.length) return;
+  var anahtar = 'dersProgrami.sayac.' + hashStr(okul.toLocaleLowerCase('tr') + '|' + ilce.toLocaleLowerCase('tr'));
+  try { if (localStorage.getItem(anahtar)) return; } catch (e) { }
+  var tamam = function () { try { localStorage.setItem(anahtar, String(Date.now())); } catch (e) { } };
+  if (/^https?:\/\//.test(SAYAC_GONDER)) {
+    if (!window.fetch) return;
+    fetch(SAYAC_GONDER, { method: 'POST', mode: 'no-cors', keepalive: true, headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify({ okul: okul, ilce: ilce, ogretmen: state.teachers.length, sinif: state.classes.length, surum: 1 }) }).then(tamam, function () { });
+    return;
+  }
+  /* sitenin bildirim sayfası: "1|okul|ilçe|öğretmen|sınıf" UTF-8 onaltılık kodla (büyük/küçük harf değişse de bozulmaz) */
+  var alan = function (x, n) { return String(x).replace(/[|\u0000-\u001f]/g, ' ').slice(0, n); };
+  var metin = ['1', alan(okul, 80), alan(ilce, 40), state.teachers.length, state.classes.length].join('|');
+  var bayt = unescape(encodeURIComponent(metin)), kod = '';
+  for (var i = 0; i < bayt.length; i++) kod += ('0' + bayt.charCodeAt(i).toString(16)).slice(-2);
+  var f = document.createElement('iframe');
+  f.hidden = true; f.setAttribute('aria-hidden', 'true'); f.tabIndex = -1; f.title = 'Okul bildirimi';
+  f.onload = function () { tamam(); setTimeout(function () { if (f.parentNode) f.parentNode.removeChild(f); }, 15000); };
+  f.src = SAYAC_GONDER + '#' + kod;
+  document.body.appendChild(f);
+}
+/* sitenin kendi sayı dosyasını okur (sayfa açılırken başka bir siteye istek gitmez); yerel dosyada sessizce atlanır */
+function sayacOku() {
+  if (!/^https?:$/.test(location.protocol) || !window.fetch) return;
+  fetch(SAYAC_OKU, { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
+    if (j && +j.sayi > 0) { ui.sayac = +j.sayi; if (ui.tab === 'ayarlar' || ui.tab === 'olustur') render(); }
+  }, function () { });
+}
+function sayacRozet() { return ui.sayac ? '<span class="badge b-ok">' + ui.sayac + ' okul bu programı kullanıyor</span>' : ''; }
+
 function startGenerate() {
   if (ui.gen && ui.gen.running) return;
   var data = plainState();
@@ -3397,6 +3446,7 @@ function startGenerate() {
     ui.gen = null; ui.undo = [];
     state.timetable = { assignment: r.assignment, unplaced: r.unplaced, unplacedHours: r.unplacedHours, cost: r.cost, softCost: r.softCost, report: r.report, lockProblems: r.lockProblems, iterations: r.iterations, elapsed: r.elapsed, generatedAt: r.generatedAt, dataHash: dataHash() };
     viewCache = null; persist(); render();
+    sayacBildir();
     toast(r.unplacedHours ? r.unplacedHours + ' saat yerleşmedi — nedenleri inceleniyor' : 'Program hazır: tüm dersler yerleşti');
   };
   var lastRender = 0;
@@ -3452,7 +3502,7 @@ function startImprove(focus, seconds, label, ctx) {
 /* ---------- örnek veri ---------- */
 function sampleData() {
   var st = defaultState();
-  st.settings.schoolName = 'Örnek Ortaokulu'; st.settings.year = '2026-2027'; st.settings.periods = 7; st.settings.lunchAfter = 4; st.settings.seconds = 10;
+  st.settings.schoolName = ORNEK_OKUL; st.settings.year = '2026-2027'; st.settings.periods = 7; st.settings.lunchAfter = 4; st.settings.seconds = 10;
   st.settings.periodTimes = ['08:30-09:10', '09:20-10:00', '10:10-10:50', '11:00-11:40', '12:40-13:20', '13:30-14:10', '14:20-15:00'];
   var T = function (name, branch, extra) { var t = Object.assign({ id: uid(), name: name, branch: branch, short: '', availability: {}, maxPerDay: 0, maxConsec: 0, maxDays: 0, gaps: 'normal' }, extra || {}); st.teachers.push(t); return t; };
   var tr1 = T('Ayşe Yılmaz', 'Türkçe'), tr2 = T('Mehmet Kaya', 'Türkçe'), tr3 = T('Elif Demir', 'Türkçe', { maxDays: 4 });
@@ -3679,6 +3729,7 @@ var h = (location.hash || '').replace('#', '');
 if (TABS.some(function (t) { return t.id === h; })) ui.tab = h;
 render();
 initCloud();
+sayacOku();
 })();
 </script>
 
