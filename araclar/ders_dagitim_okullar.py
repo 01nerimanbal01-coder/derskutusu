@@ -30,6 +30,7 @@ from pathlib import Path
 KOK = Path(__file__).resolve().parent.parent
 LISTE = KOK / 'araclar' / 'veri' / 'ders-dagitim-okullar.json'
 SAYAC = KOK / 'public' / 'veri' / 'ders-dagitim-sayac.json'
+DURUM = KOK / 'araclar' / 'veri' / 'ders-dagitim-durum.json'   # son çalışmanın özeti (okul adı yok): Cloudflare yanıtı, yol sayısı
 HARIC = KOK / 'araclar' / 'veri' / 'ders-dagitim-haric.json'   # listeden çıkarılan deneme/sahte kayıtların anahtarları
 SITE = 'derskutusu.com'
 ON_EK = '/okul-bildir/'
@@ -48,6 +49,18 @@ SORGU = '''query($hesap: String!, $bas: Time!, $son: Time!, $site: String!, $yol
     }
   } }
 }'''
+
+# requestPath_like süzgeci kabul edilmezse: site yolları süzgeçsiz alınır, /okul-bildir/ olanlar burada ayıklanır
+SORGU_YEDEK = '''query($hesap: String!, $bas: Time!, $son: Time!, $site: String!) {
+  viewer { accounts(filter: {accountTag: $hesap}) {
+    rumPageloadEventsAdaptiveGroups(limit: 5000,
+      filter: {AND: [{datetime_geq: $bas}, {datetime_lt: $son}, {requestHost: $site}]}) {
+      count
+      dimensions { requestPath }
+    }
+  } }
+}'''
+durum = {}
 
 # okul adları asla site klasörüne yazılmaz
 assert 'public' not in LISTE.relative_to(KOK).parts
@@ -88,29 +101,49 @@ def coz(yol: str):
     return {'okul': okul, 'ilce': ilce, 'ogretmen': ogr, 'sinif': snf}
 
 
-def cloudflare_yollari():
-    anahtar, hesap = os.environ.get('CF_API_TOKEN'), os.environ.get('CF_ACCOUNT_ID')
-    if not anahtar or not hesap:
-        print('CF_API_TOKEN / CF_ACCOUNT_ID yok; okul listesi güncellenmedi.')
-        return None
-    son = datetime.now(timezone.utc).replace(microsecond=0)
-    degisken = {'hesap': hesap, 'site': SITE, 'yol': ON_EK + '%',
-                'bas': (son - timedelta(days=GUN)).isoformat().replace('+00:00', 'Z'), 'son': son.isoformat().replace('+00:00', 'Z')}
+def _sorgu(anahtar, sorgu, degisken):
+    """(satırlar, hata metni)"""
     istek = urllib.request.Request('https://api.cloudflare.com/client/v4/graphql',
-                                   data=json.dumps({'query': SORGU, 'variables': degisken}).encode(),
+                                   data=json.dumps({'query': sorgu, 'variables': degisken}).encode(),
                                    headers={'Authorization': 'Bearer ' + anahtar, 'Content-Type': 'application/json'})
     try:
         with urllib.request.urlopen(istek, timeout=60) as y:
             veri = json.load(y)
     except Exception as e:  # ağ / yetki: yayın akışını durdurma
-        print('Cloudflare sorgusu başarısız:', e)
-        return None
+        return None, f'istek başarısız: {e}'
     if veri.get('errors'):
-        print('Cloudflare hatası:', veri['errors'])
-        return None
+        return None, 'hata: ' + '; '.join(str(h.get('message', h)) for h in veri['errors'])[:400]
     gruplar = ((veri.get('data') or {}).get('viewer') or {}).get('accounts') or [{}]
-    satirlar = gruplar[0].get('rumPageloadEventsAdaptiveGroups') or []
-    return [(s['dimensions']['requestPath'], s['dimensions'].get('datetimeHour')) for s in satirlar]
+    return gruplar[0].get('rumPageloadEventsAdaptiveGroups') or [], None
+
+
+def cloudflare_yollari():
+    anahtar, hesap = os.environ.get('CF_API_TOKEN'), os.environ.get('CF_ACCOUNT_ID')
+    if not anahtar or not hesap:
+        durum['cloudflare'] = 'anahtar yok'
+        print('CF_API_TOKEN / CF_ACCOUNT_ID yok; okul listesi güncellenmedi.')
+        return None
+    son = datetime.now(timezone.utc).replace(microsecond=0)
+    degisken = {'hesap': hesap, 'site': SITE, 'yol': ON_EK + '%',
+                'bas': (son - timedelta(days=GUN)).isoformat().replace('+00:00', 'Z'), 'son': son.isoformat().replace('+00:00', 'Z')}
+    satirlar, hata = _sorgu(anahtar, SORGU, degisken)
+    durum['sorgu'] = 'süzgeçli'
+    if hata:
+        durum['süzgeçli_hata'] = hata
+        print('Cloudflare (süzgeçli) ' + hata)
+        degisken.pop('yol')
+        satirlar, hata = _sorgu(anahtar, SORGU_YEDEK, degisken)
+        durum['sorgu'] = 'süzgeçsiz'
+    if hata:
+        durum['cloudflare'] = hata
+        print('Cloudflare ' + hata)
+        return None
+    durum['cloudflare'] = 'tamam'
+    durum['satir'] = len(satirlar)
+    yollar = [(r['dimensions']['requestPath'], r['dimensions'].get('datetimeHour')) for r in satirlar
+              if str(r['dimensions'].get('requestPath', '')).startswith(ON_EK)]
+    durum['okul_yolu'] = len(yollar)
+    return yollar
 
 
 def gh(*arg, girdi=None):
@@ -130,6 +163,12 @@ def liste_metni(okullar):
                      for i, o in enumerate(okullar, 1))
 
 
+def durum_yaz():
+    durum['zaman'] = datetime.now(TR).strftime('%d.%m.%Y %H:%M')
+    DURUM.parent.mkdir(parents=True, exist_ok=True)
+    DURUM.write_text(json.dumps(durum, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--yollar', help='Cloudflare yerine bu dosyadaki yolları kullan (deneme)')
@@ -141,6 +180,7 @@ def main():
     else:
         kayit = cloudflare_yollari()
         if kayit is None:
+            durum_yaz()
             return 0
 
     haric = set(json.loads(HARIC.read_text(encoding='utf-8'))) if HARIC.exists() else set()
@@ -168,6 +208,9 @@ def main():
     if eski != len(okullar):
         SAYAC.write_text(json.dumps({'sayi': len(okullar)}) + '\n', encoding='utf-8')
     print(f'okul sayısı: {len(okullar)} (yeni: {len(yeniler)})')
+    durum.update(okul=len(okullar), yeni=len(yeniler))
+    if not a.yollar:
+        durum_yaz()
     if not yeniler:
         return 0
 
