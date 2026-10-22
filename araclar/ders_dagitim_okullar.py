@@ -140,6 +140,19 @@ def cloudflare_yollari():
         return None
     durum['cloudflare'] = 'tamam'
     durum['satir'] = len(satirlar)
+    if durum['sorgu'] == 'süzgeçli' and not satirlar:
+        # tanı (yalnız sayılar, okul adı yok): Cloudflare bildirim sayfasını hangi yolla kaydediyor?
+        d2 = {k: v for k, v in degisken.items() if k != 'yol'}
+        hepsi, h2 = _sorgu(anahtar, SORGU_YEDEK, d2)
+        if h2:
+            durum['tani'] = h2
+        else:
+            say = lambda f: sum(r.get('count', 0) for r in hepsi if f(str(r['dimensions'].get('requestPath', ''))))
+            durum['tani'] = {'yol_cesidi': len(hepsi), 'okul-bildir.html': say(lambda y: y.startswith('/okul-bildir.html')),
+                             '/okul-bildir/': say(lambda y: y.startswith(ON_EK)),
+                             'okul-bildir başka': say(lambda y: y.startswith('/okul-bildir') and not y.startswith(('/okul-bildir.html', ON_EK))),
+                             'ders-dagitim-uygulama.html': say(lambda y: y.startswith('/ders-dagitim-uygulama.html')),
+                             'ders-dagitim.html': say(lambda y: y.startswith('/ders-dagitim.html'))}
     yollar = [(r['dimensions']['requestPath'], r['dimensions'].get('datetimeHour')) for r in satirlar
               if str(r['dimensions'].get('requestPath', '')).startswith(ON_EK)]
     durum['okul_yolu'] = len(yollar)
