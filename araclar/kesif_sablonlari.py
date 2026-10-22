@@ -9,7 +9,7 @@ RENK_CSS = '<link rel="stylesheet" href="/renkler.css?v=20261017-1" media="scree
 def renkli_sayfa(html, ad):
     """Yalnız site çerçevesi: ders içeriği, şekiller ve baskı stilleri korunur."""
     renk = {
-        'icerikler.html': 'mor', 'planlar.html': 'turuncu',
+        'icerikler.html': 'mor', 'planlar.html': 'turuncu', 'ders-dagitim.html': 'turuncu',
         'yazili.html': 'pembe', 'sinav.html': 'pembe',
         'belgeler.html': 'turkuaz', 'kelime.html': 'lacivert',
         'arapca.html': 'lacivert', 'kpss.html': 'sari',

@@ -28,7 +28,7 @@ SAYAC = '''<!-- Cloudflare Web Analytics --><script type='module' src='https://s
 
 # Site ağacı (kullanıcı 11.10.2026): her sayfa kendi dalının kitlesini taşır (üst menü vurgusu, kayan şerit süzgeci).
 KITLE_OGRENCI = ('ogrenci.html', 'kelime.html', 'arapca.html', 'sinav.html')
-KITLE_OGRETMEN = ('ogretmen.html', 'planlar.html', 'yazili.html', 'belgeler.html', 'kpss.html')
+KITLE_OGRETMEN = ('ogretmen.html', 'planlar.html', 'yazili.html', 'belgeler.html', 'kpss.html', 'ders-dagitim.html')
 AGAC_CSS = '<link rel="stylesheet" href="/agac.css?v=20261017-1">'
 
 
@@ -501,6 +501,40 @@ GOVDE['planlar.html'] = ('Günlük planlar', 'Günlük ders planları: Okul, ö�
     </div>
   </section>\n''' + SOSYAL_DAVET, ('planlar.js',))
 
+# Ders dağıtım programı (kullanıcı 22.10.2026): uygulama ders-dagitim-uygulama.html'de tek dosya, kendi stilleriyle;
+# site stilleriyle çakışmasın diye bu sayfada çerçeve içinde açılır. Veriler yalnız ziyaretçinin tarayıcısında (localStorage).
+GOVDE['ders-dagitim.html'] = ('Ders dağıtım programı', 'Okullar için ücretsiz ders dağıtım programı: öğretmen, sınıf ve ders bilgilerinden haftalık program üretir, yerleşmeyen dersin nedenini gösterir; PDF ve Excel çıktı verir. Veriler yalnız tarayıcınızda kalır.', '''<style>
+.ddp-bas { padding-bottom: 28px; }
+.ddp-kap { padding: 20px 0 8px; }
+.ddp-cerceve { display: block; width: 100%; height: calc(100vh - 96px); min-height: 560px; border: 1px solid var(--cizgi); border-radius: var(--kose); background: var(--zemin-2); }
+</style>
+  <section class="sayfa-bas ddp-bas">
+    <div class="kap">
+      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/ogretmen.html">Öğretmen Köşesi</a><span aria-hidden="true">/</span><span>Ders dağıtım programı</span></nav>
+      <h1>Ders dağıtım programı</h1>
+      <p>Okul ayarlarını, öğretmenleri, sınıfları ve dersleri girin; program haftalık ders çizelgesini kendisi kurar. Yerleşmeyen bir ders kalırsa nedenini ve en az değişiklikle çözüm önerisini gösterir. Veriler yalnız bu tarayıcıda saklanır.</p>
+      <p><a class="dugme ana" href="/ders-dagitim-uygulama.html">Tam ekranda aç</a> <a class="dugme" href="#ddp-nasil">Nasıl kullanılır?</a></p>
+    </div>
+  </section>
+  <div class="kap ddp-kap">
+    <iframe class="ddp-cerceve" src="/ders-dagitim-uygulama.html" title="Ders dağıtım programı uygulaması"></iframe>
+  </div>
+  <div class="metin-sayfa" id="ddp-nasil">
+    <div class="kap">
+      <h2>Nasıl kullanılır?</h2>
+      <ol>
+        <li><strong>Okul ve ayarlar:</strong> Okul adını, öğretim yılını, günlük ders saati sayısını ve öğle arasını girin.</li>
+        <li><strong>Öğretmenler:</strong> Öğretmenleri ve branşlarını ekleyin; ders veremeyecekleri saatleri “Yok” olarak işaretleyin, günlük ders sınırı gibi isteklerini yazın.</li>
+        <li><strong>Sınıflar ve dersler:</strong> Her sınıfın derslerini, haftalık ders saatlerini ve dersi okutacak öğretmeni seçin.</li>
+        <li><strong>Ortak dersler ve derslikler:</strong> Birlikte işlenen dersleri ve spor salonu, laboratuvar, BT sınıfı gibi aynı anda az sayıda sınıfın kullanabildiği derslikleri tanımlayın.</li>
+        <li><strong>Program oluştur:</strong> Program bütün kurallara uyan yerleşimi arar. Yerleşmeyen ders kalırsa nedeni ve en az zararlı “Yok” esnetme önerisi gösterilir.</li>
+        <li><strong>Programlar ve çıktı:</strong> Sınıf ve öğretmen programlarını, genel tabloyu ve dağıtım çizelgesini PDF, Excel ya da yazdırılabilir sayfa olarak indirin.</li>
+      </ol>
+      <h2>Verileriniz</h2>
+      <p>Girdiğiniz bilgiler yalnız bu cihazdaki tarayıcıda saklanır, Ders Kutusu sunucusuna gönderilmez. Başka bir bilgisayarda devam etmek için “Yedek indir” ile aldığınız dosyayı orada “Yedek yükle” ile açabilirsiniz. Ayrıntı: <a href="/gizlilik.html">Gizlilik ve çerezler</a>.</p>
+    </div>
+  </div>''', ())
+
 GOVDE['kelime.html'] = ('İngilizce kelime çalışması', '5 ve 6. sınıf İngilizce kelimeleri: kartlar, sesli dinleme, test, yazma ve eşleştirme. Kelimeler MEB ders kitaplarının sözlük bölümünden.', '''  <section class="sayfa-bas kelime-bas">
     <div class="kap">
       <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/icerikler.html">İçerikler</a><span aria-hidden="true">/</span><span>İngilizce kelimeler</span></nav>
@@ -566,6 +600,7 @@ GOVDE['ogretmen.html'] = ('Öğretmen Köşesi', 'Öğretmen Köşesi: günlük 
       <p>Derse hazırlık ve ölçme için ihtiyaç duyulan dosyalar kategorilere ayrılmıştır. Kategoriyi, ardından sınıfı seçin.</p>
       <ul>
         <li><a href="/planlar.html">Günlük planlar</a>: Okul ve yönetici adları her sayfaya yazılır; tüm yıl ya da ay ay, Word veya PDF.</li>
+        <li><a href="/ders-dagitim.html">Ders dağıtım programı</a>: Öğretmen, sınıf ve derslerden haftalık ders programı; PDF ve Excel çıktı, veriler tarayıcıda.</li>
         <li><a href="/ogretmen.html?kategori=yillik-plan">Yıllık planlar</a>: Güncel öğretim programına göre haftalık yıllık planlar.</li>
         <li><a href="/yazili.html">Yazılı senaryoları ve kâğıtları</a>: Ortak yazılı konu-soru dağılımları ve cevaplı yazılı kâğıtları.</li>
         <li><a href="/ogretmen.html?kategori=ogretim-programi">Öğretim programları</a>: Öğrenme çıktıları, süreç bileşenleri ve açıklamalar.</li>

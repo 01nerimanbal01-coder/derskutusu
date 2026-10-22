@@ -344,6 +344,7 @@
   // ---------------------------------------------------------------- ÖĞRETMEN
   const KATEGORILER = [
     { kod: 'gunluk-plan', tur: 'Ders planı', ad: 'Günlük planlar', aciklama: 'Okul ve yönetici adları her sayfaya yazılır; tüm yıl ya da ay ay, Word veya PDF.', simge: 'takvim', renk: 'turuncu', sayfa: '/planlar.html' },
+    { kod: 'ders-dagitim', ad: 'Ders dağıtım programı', aciklama: 'Öğretmen, sınıf ve derslerden haftalık ders programı; PDF ve Excel çıktı, veriler tarayıcıda.', simge: 'takvim', renk: 'turuncu', sayfa: '/ders-dagitim.html' },
     { kod: 'yillik-plan', tur: 'Yıllık plan', ad: 'Yıllık planlar', aciklama: 'Güncel öğretim programına göre haftalık yıllık planlar.', simge: 'takvim', renk: 'mavi' },
     { kod: 'yazili', tur: 'Yazılı senaryosu', ad: 'Yazılı senaryoları ve kâğıtları', aciklama: 'Ortak yazılı konu-soru dağılımları ve cevaplı yazılı kâğıtları.', simge: 'onay', renk: 'pembe', sayfa: '/yazili.html' },
     { kod: 'ogretim-programi', tur: 'Öğretim programı', ad: 'Öğretim programları', aciklama: 'Öğrenme çıktıları, süreç bileşenleri ve açıklamalar.', simge: 'kitap', renk: 'turkuaz' },
