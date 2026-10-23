@@ -36,6 +36,7 @@ SITE = 'derskutusu.com'
 ON_EK = '/okul-bildir/'
 ETIKET = 'ders-dagitim-okul'
 GUN = 8
+PENCERE_SAAT = 3   # adaptif veri kümesi geniş aralıkta seyrek örnek verir: dilim dilim sorulur
 ORNEK = {'örnekortaokulu'}   # uygulamadaki "Örnek okul verisiyle dene" verisi okul sayılmaz
 EN_FAZLA_ISSUE = 20   # bir çalışmada bundan fazla yeni okul gelirse tek toplu issue açılır (kötüye kullanım)
 TR = timezone(timedelta(hours=3))
@@ -57,6 +58,15 @@ SORGU_YEDEK = '''query($hesap: String!, $bas: Time!, $son: Time!, $site: String!
       filter: {AND: [{datetime_geq: $bas}, {datetime_lt: $son}, {requestHost: $site}]}) {
       count
       dimensions { requestPath }
+    }
+  } }
+}'''
+# tanı: örnekleme oranı (1 = örneksiz, tam veri)
+SORGU_ORNEK = '''query($hesap: String!, $bas: Time!, $son: Time!, $site: String!) {
+  viewer { accounts(filter: {accountTag: $hesap}) {
+    rumPageloadEventsAdaptiveGroups(limit: 1, filter: {AND: [{datetime_geq: $bas}, {datetime_lt: $son}, {requestHost: $site}]}) {
+      count
+      avg { sampleInterval }
     }
   } }
 }'''
@@ -117,46 +127,61 @@ def _sorgu(anahtar, sorgu, degisken):
     return gruplar[0].get('rumPageloadEventsAdaptiveGroups') or [], None
 
 
+def _zaman(t):
+    return t.isoformat().replace('+00:00', 'Z')
+
+
 def cloudflare_yollari():
     anahtar, hesap = os.environ.get('CF_API_TOKEN'), os.environ.get('CF_ACCOUNT_ID')
     if not anahtar or not hesap:
         durum['cloudflare'] = 'anahtar yok'
         print('CF_API_TOKEN / CF_ACCOUNT_ID yok; okul listesi güncellenmedi.')
         return None
-    son = datetime.now(timezone.utc).replace(microsecond=0)
-    degisken = {'hesap': hesap, 'site': SITE, 'yol': ON_EK + '%',
-                'bas': (son - timedelta(days=GUN)).isoformat().replace('+00:00', 'Z'), 'son': son.isoformat().replace('+00:00', 'Z')}
-    satirlar, hata = _sorgu(anahtar, SORGU, degisken)
+    son = datetime.now(timezone.utc).replace(minute=0, second=0, microsecond=0) + timedelta(hours=1)
+    t, satirlar, sorgu, pencere = son - timedelta(days=GUN), [], SORGU, 0
     durum['sorgu'] = 'süzgeçli'
-    if hata:
-        durum['süzgeçli_hata'] = hata
-        print('Cloudflare (süzgeçli) ' + hata)
-        degisken.pop('yol')
-        satirlar, hata = _sorgu(anahtar, SORGU_YEDEK, degisken)
-        durum['sorgu'] = 'süzgeçsiz'
-    if hata:
-        durum['cloudflare'] = hata
-        print('Cloudflare ' + hata)
-        return None
-    durum['cloudflare'] = 'tamam'
-    durum['satir'] = len(satirlar)
-    if durum['sorgu'] == 'süzgeçli' and not satirlar:
-        # tanı (yalnız sayılar, okul adı yok): Cloudflare bildirim sayfasını hangi yolla kaydediyor?
-        d2 = {k: v for k, v in degisken.items() if k != 'yol'}
-        hepsi, h2 = _sorgu(anahtar, SORGU_YEDEK, d2)
-        if h2:
-            durum['tani'] = h2
-        else:
-            say = lambda f: sum(r.get('count', 0) for r in hepsi if f(str(r['dimensions'].get('requestPath', ''))))
-            durum['tani'] = {'yol_cesidi': len(hepsi), 'okul-bildir.html': say(lambda y: y.startswith('/okul-bildir.html')),
-                             '/okul-bildir/': say(lambda y: y.startswith(ON_EK)),
-                             'okul-bildir başka': say(lambda y: y.startswith('/okul-bildir') and not y.startswith(('/okul-bildir.html', ON_EK))),
-                             'ders-dagitim-uygulama.html': say(lambda y: y.startswith('/ders-dagitim-uygulama.html')),
-                             'ders-dagitim.html': say(lambda y: y.startswith('/ders-dagitim.html'))}
+    while t < son:
+        u = min(son, t + timedelta(hours=PENCERE_SAAT))
+        degisken = {'hesap': hesap, 'site': SITE, 'bas': _zaman(t), 'son': _zaman(u)}
+        if sorgu is SORGU:
+            degisken['yol'] = ON_EK + '%'
+        parca, hata = _sorgu(anahtar, sorgu, degisken)
+        if hata and sorgu is SORGU and not pencere:
+            durum['süzgeçli_hata'] = hata
+            print('Cloudflare (süzgeçli) ' + hata)
+            sorgu, durum['sorgu'] = SORGU_YEDEK, 'süzgeçsiz'
+            continue
+        if hata:
+            durum['cloudflare'] = f'{pencere}. dilimde {hata}'
+            print('Cloudflare ' + durum['cloudflare'])
+            return None
+        satirlar += parca
+        t, pencere = u, pencere + 1
+    durum.update(cloudflare='tamam', dilim=pencere, satir=len(satirlar))
+    # tanı (yalnız sayılar): son 3 saatte ve 8 günde örnekleme oranı
+    ornek = {}
+    for ad, bas in (('3 saat', son - timedelta(hours=PENCERE_SAAT)), ('8 gün', son - timedelta(days=GUN))):
+        r, h = _sorgu(anahtar, SORGU_ORNEK, {'hesap': hesap, 'site': SITE, 'bas': _zaman(bas), 'son': _zaman(son)})
+        ornek[ad] = h or [{'sayfa': x.get('count'), 'örnek aralığı': (x.get('avg') or {}).get('sampleInterval')} for x in r]
+    durum['örnekleme'] = ornek
     yollar = [(r['dimensions']['requestPath'], r['dimensions'].get('datetimeHour')) for r in satirlar
               if str(r['dimensions'].get('requestPath', '')).startswith(ON_EK)]
     durum['okul_yolu'] = len(yollar)
     return yollar
+
+
+def haric_issue_kapat(haric):
+    """Hariç tutulan (deneme/sahte) okulun açık issue'sunu kapatır."""
+    if not haric:
+        return
+    r = gh('issue', 'list', '--label', ETIKET, '--state', 'open', '--limit', '200', '--json', 'number,body')
+    if r.returncode:
+        return
+    for i in json.loads(r.stdout or '[]'):
+        anahtarlar = set(re.findall(r'<!-- okul-anahtar: (.+?) -->', i.get('body', '')))
+        if anahtarlar and anahtarlar <= haric:
+            k = gh('issue', 'close', str(i['number']), '--comment', 'Deneme ya da geçersiz kayıt: kullanan okullar listesinden ve sitedeki sayaçtan çıkarıldı.')
+            print(f"issue #{i['number']} kapatıldı" if not k.returncode else f"issue #{i['number']} kapatılamadı: {k.stderr.strip()}")
 
 
 def gh(*arg, girdi=None):
@@ -199,6 +224,8 @@ def main():
     haric = set(json.loads(HARIC.read_text(encoding='utf-8'))) if HARIC.exists() else set()
     okullar = [o for o in (json.loads(LISTE.read_text(encoding='utf-8')) if LISTE.exists() else []) if o['anahtar'] not in haric]
     bilinen = {o['anahtar'] for o in okullar}
+    if not a.kuru and not a.yollar:
+        haric_issue_kapat(haric)
     yeniler, simdi = [], datetime.now(TR).strftime('%d.%m.%Y %H:%M')
     for yol, saat in kayit:
         o = coz(yol)
