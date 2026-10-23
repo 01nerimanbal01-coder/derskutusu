@@ -38,6 +38,7 @@ ETIKET = 'ders-dagitim-okul'
 GUN = 8
 PENCERE_SAAT = 3   # adaptif veri kümesi geniş aralıkta seyrek örnek verir: dilim dilim sorulur
 ORNEK = {'örnekortaokulu'}   # uygulamadaki "Örnek okul verisiyle dene" verisi okul sayılmaz
+BASLANGIC = 152   # kullanıcı 23.10.2026: sayaç 152'den başlar; sitedeki sayı = BASLANGIC + listedeki okul sayısı
 EN_FAZLA_ISSUE = 20   # bir çalışmada bundan fazla yeni okul gelirse tek toplu issue açılır (kötüye kullanım)
 TR = timezone(timedelta(hours=3))
 
@@ -198,7 +199,7 @@ def duyurulmus_anahtarlar():
 
 def liste_metni(okullar):
     return '\n'.join(f"{i}. {o['okul']}" + (f" ({o['ilce']})" if o['ilce'] else '') + f" — ilk kullanım {o['ilk']}"
-                     for i, o in enumerate(okullar, 1))
+                     for i, o in enumerate(okullar, BASLANGIC + 1))
 
 
 def durum_yaz():
@@ -245,10 +246,10 @@ def main():
     LISTE.write_text(json.dumps(okullar, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
     SAYAC.parent.mkdir(parents=True, exist_ok=True)
     eski = json.loads(SAYAC.read_text(encoding='utf-8')).get('sayi') if SAYAC.exists() else None
-    if eski != len(okullar):
-        SAYAC.write_text(json.dumps({'sayi': len(okullar)}) + '\n', encoding='utf-8')
+    if eski != BASLANGIC + len(okullar):
+        SAYAC.write_text(json.dumps({'sayi': BASLANGIC + len(okullar)}) + '\n', encoding='utf-8')
     print(f'okul sayısı: {len(okullar)} (yeni: {len(yeniler)})')
-    durum.update(okul=len(okullar), yeni=len(yeniler))
+    durum.update(okul=len(okullar), yeni=len(yeniler), sayac=BASLANGIC + len(okullar))
     if not a.yollar:
         durum_yaz()
     if not yeniler:
@@ -264,12 +265,13 @@ def main():
     gruplar = [yeniler] if toplu else [[o] for o in yeniler]
     for grup in gruplar:
         sira = okullar.index(grup[-1]) + 1
-        baslik = (f'Ders dağıtım programı: {len(grup)} yeni okul (toplam {len(okullar)})' if toplu
-                  else f"Ders dağıtım programı: {sira}. okul — {grup[0]['okul']}")
+        baslik = (f'Ders dağıtım programı: {len(grup)} yeni okul (toplam {BASLANGIC + len(okullar)})' if toplu
+                  else f"Ders dağıtım programı: {BASLANGIC + sira}. okul — {grup[0]['okul']}")
         govde = (f"{anan}ders dağıtım programını yeni okul kullanmaya başladı.\n\n" +
                  ''.join(f"**Yeni okul:** {o['okul']}" + (f" ({o['ilce']})" if o['ilce'] else '') +
                          f" · öğretmen {o['ogretmen']} · sınıf {o['sinif']}\n" for o in grup) +
-                 f"\n**Toplam {sira if not toplu else len(okullar)} okul:**\n" +
+                 f"\n**Toplam {BASLANGIC + (sira if not toplu else len(okullar))} okul** "
+                 f"(sayaç {BASLANGIC}'den başladı; bu sistemle gelen okullar):\n" +
                  liste_metni(okullar[:sira] if not toplu else okullar) + '\n\n' +
                  ''.join(f"<!-- okul-anahtar: {o['anahtar']} -->\n" for o in grup))
         if a.kuru:
