@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 908 gönderi.
+Toplam 935 gönderi.
 
 ## bilgi-7-turkce-7
 Sıra: 2026-11-19 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-turkce-7.png
@@ -9087,4 +9087,274 @@ Bunu biliyor muydunuz? İstatistiksel Temellendirme: Başkalarının sonuçları
 Faydalı bulduysanız arkadaşınızı etiketleyin.
 📘 7. sınıf Matematik 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-matematik-hafta-15
 #derskutusu #matematik #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-arapca-15
+Sıra: 2027-01-31 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-arapca-15.png
+
+```
+Bunu biliyor muydunuz? Sağlık fiilleri: (almak/yemek), (tedavi etmek), (muayene etmek), (hastalanmak), (temizlemek) ve (yıkamak) fiilleri mâzî ve muzâride çekimlenir. Sağlıklı kalmanın ilk adımı kişisel temizliktir. Bu konuda kullandığımız temel eşyalar şunlardır: (diş fırçası), (diş macunu), (sabun), (havlu), (tarak) ve (temiz su).
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Arapça 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-arapca-hafta-15
+#derskutusu #arapça #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-biyoloji-15
+Sıra: 2027-01-31 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-biyoloji-15.png
+
+```
+Bunu biliyor muydunuz? Analiz basamakları: Deney verisi önce tabloya düzenlenir, sonra grafiğe dönüştürülür, kontrol düzeneğiyle karşılaştırılır ve ancak bundan sonra fermantasyonla ilgili bir sonuca bağlanır. Gözlem ve çıkarım: Balonun şişmesi ve kireç suyunun bulanması gözlemdir; bunların maya hücrelerinin etil alkol fermantasyonuyla karbondioksit üretmesinden kaynaklandığını söylemek çıkarımdır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Biyoloji 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-biyoloji-hafta-15
+#derskutusu #biyoloji #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-cografya-15
+Sıra: 2027-01-31 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-cografya-15.png
+
+```
+Bunu biliyor muydunuz? Yerleşme: İnsanların barınmak, üretmek ve toplumsal hayatını sürdürmek için kurduğu kalıcı veya geçici yaşam alanıdır; insanların sürekli yaşadığı alanlara ekümen, yaşamadığı alanlara anekümen denir. İlk yerleşmeler: Tarımın başlamasıyla (Neolitik dönem) insan toprağa bağlanmış; Göbeklitepe, Çayönü ve Çatalhöyük gibi Anadolu yerleşmeleri ile Dicle-Fırat, Nil, İndus ve Huang He boylarındaki kentler bu dönüşümün ürünüdür.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Coğrafya 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-cografya-hafta-15
+#derskutusu #coğrafya #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-din-kulturu-15
+Sıra: 2027-01-31 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-din-kulturu-15.png
+
+```
+Bunu biliyor muydunuz? Bağlam: Haşr suresinin 18-21. ayetlerindeki öğüt ve uyarılardan sonra gelen 22-24. ayetler, bu öğütleri veren Allah'ı güzel isimleriyle tanıtarak sureyi tamamlar. Meal bulma: Bir ayetin meali sure adı ve numarası (Haşr 59. sure) ile ayet numarası kullanılarak bulunur ve «Haşr 59/22» biçiminde gösterilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Din Kültürü ve Ahlak Bilgisi 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-din-kulturu-ve-ahlak-bilgisi-hafta-15
+#derskutusu #dinkültürü #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-edebiyat-15
+Sıra: 2027-01-31 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-edebiyat-15.png
+
+```
+Bunu biliyor muydunuz? Çok modlu metin: Anlamın söz, görüntü, ses, müzik ve beden dili gibi birden fazla anlatım kipinin birleşmesiyle kurulduğu metindir; görüntülü ya da sesli söyleşi bunun tipik bir örneğidir. Söyleşi: Bir sunucunun yönlendirdiği, samimi ve doğal bir havada geçen karşılıklı sözlü fikir alışverişidir; edebiyat söyleşilerinde sanatçı, sanat anlayışını ve eserlerinin oluşum sürecini paylaşır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Türk Dili ve Edebiyatı 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-turk-dili-ve-edebiyati-hafta-15
+#derskutusu #edebiyat #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-fikih-15
+Sıra: 2027-01-31 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fikih-15.png
+
+```
+Bunu biliyor muydunuz? Ön hazırlık: Namaz; beden, elbise ve mekân temizliği, setr-i avret, vaktin girmesi, kıbleye yönelme ve niyet kontrolüyle başlar. Vakitler ve rekâtlar: Nisâ suresi 103. ayete göre namaz belirli vakitlere bağlıdır; bir günde 17 rekât farz, 3 rekât vitir ve 20 rekât sünnet olmak üzere toplam 40 rekât namaz kılınır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Fıkıh 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fikih-hafta-15
+#derskutusu #fıkıh #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-hadis-15
+Sıra: 2027-02-01 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-hadis-15.png
+
+```
+Bunu biliyor muydunuz? Kaynaklarda iman: Buhârî eserini Bed'ü'l-vahy bölümünden hemen sonra, Müslim ise mukaddimeden sonra doğrudan Kitâbü'l-Îmân ile başlatarak imanın dinin temeli olduğunu eserlerinin düzeniyle göstermiştir. Cibrîl hadisi: Hz. Ömer'in rivayet ettiği ve Müslim'in iman bölümünü açtığı bu hadis, dini İslam, iman ve ihsan olmak üzere üç boyutta tanımlar ve iman esaslarını altı madde hâlinde sayar.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Hadis 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-hadis-hafta-15
+#derskutusu #hadis #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-ingilizce-15
+Sıra: 2027-02-01 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-ingilizce-15.png
+
+```
+Bunu biliyor muydunuz? Past Continuous: Geçmişte belirli bir anda devam etmekte olan eylemler was / were + V-ing yapısıyla anlatılır: “At 8 p.m. yesterday, we were driving to Cappadocia.” When ve While: Uzun süren eylem Past Continuous, onu kesen kısa eylem Simple Past ile verilir; while genellikle uzun eylemi, when ise kısa eylemi başlatır: “I was waiting at the gate when the announcement came.”
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf İngilizce 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-ingilizce-hafta-15
+#derskutusu #ingilizce #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-kuran-i-kerim-15
+Sıra: 2027-02-01 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kuran-i-kerim-15.png
+
+```
+Bunu biliyor muydunuz? Vakıf: Ayet sonunda durunca tenvin düşer, iki üstün elife döner, te-i merbuta he okunur, kalkale güçlenir; bu değişiklikleri bilmek tilaveti usulüne uygun hâle getirir. Geçen hafta Âl-i İmrân suresinin 116-200. ayetlerini mesajlarıyla tanıdık: takva, Uhud imtihanı, istişare, tevekkül ve ulü'l-elbâb duaları.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Kur’an-ı Kerim 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kuran-i-kerim-hafta-15
+#derskutusu #kuranıkerim #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-cografya-15
+Sıra: 2027-02-01 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-cografya-15.png
+
+```
+Bunu biliyor muydunuz? Üç boyut: Tarımda sürdürülebilirlik çevresel (toprak, su, biyoçeşitlilik, kirlilik), ekonomik (verim, gelir, maliyet, pazar) ve sosyal (gıda güvencesi, kırsal yaşam, sağlık, kültür) boyutlarda birlikte değerlendirilir. Ölçüt ve gösterge: Her ölçüt litre/kg su kullanımı, humus oranı, toprak kaybı ya da net gelir gibi ölçülebilir göstergelerle somutlaşır; böylece değerlendirme veriye dayanır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Coğrafya 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-cografya-hafta-15
+#derskutusu #coğrafya #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-dinler-tarihi-15
+Sıra: 2027-02-01 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-dinler-tarihi-15.png
+
+```
+Bunu biliyor muydunuz? Modern ekollerin doğuşu: Haskala (Yahudi Aydınlanması) ve Yahudilere vatandaşlık hakkı tanınması, geleneğin modern hayatla ilişkisini tartışmaya açarak Yahudi ekollerinin ortaya çıkmasına yol açmıştır. Ortodoks Yahudilik: Yazılı ve Sözlü Tora'nın Sina'da verildiğini ve Halaha'nın (Yahudi dinî hukuku) değişmez biçimde bağlayıcı olduğunu savunur; Modern Ortodoks, Haredi ve Hasidik toplulukları kapsar.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Dinler Tarihi 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-dinler-tarihi-hafta-15
+#derskutusu #dinlertarihi #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-edebiyat-15
+Sıra: 2027-02-01 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-edebiyat-15.png
+
+```
+Bunu biliyor muydunuz? Dönem ortamı: 1960 sonrası toplumcu şiir; 1961 Anayasası'nın getirdiği görece özgürlük ortamında, İkinci Yeni'nin kapalı ve bireyci şiirine tepki olarak doğmuş, emek, sömürü, adalet ve umut temalarını öne çıkarmıştır. Toplumcu şiir çözümlemesi: Bu şiirlerde söyleyici çoğunlukla 'biz' bilinciyle konuşan bir emekçi ya da aydındır; hitap edilen kişi aynı yazgıyı paylaşan 'kardeş', 'yoldaş' veya halktır; sabah, güneş ve şafak gibi imgeler umudu simgeler.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Türk Dili ve Edebiyatı 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-turk-dili-ve-edebiyati-hafta-15
+#derskutusu #edebiyat #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-fizik-15
+Sıra: 2027-02-02 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-fizik-15.png
+
+```
+Bunu biliyor muydunuz? Üst üste binme: Aynı noktaya ulaşan dalgaların etkileri toplanır; dalgalar karşılaştıktan sonra özelliklerini koruyarak yollarına devam eder. Girişim türleri: Tepe ile tepe veya çukur ile çukur karşılaşırsa yapıcı girişim, tepe ile çukur karşılaşırsa söndürücü girişim oluşur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Fizik 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-fizik-hafta-15
+#derskutusu #fizik #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-inkilap-tarihi-15
+Sıra: 2027-02-02 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-inkilap-tarihi-15.png
+
+```
+Bunu biliyor muydunuz? Diplomasinin pusulası: Gümrü, Moskova, Kars ve Ankara antlaşmaları, Misak-ı Millî'yi ölçüt alan TBMM'nin askerî zaferleri adım adım diplomatik kazanımlara dönüştürdüğünü gösterir. Mudanya'nın önemi: 11 Ekim 1922 Mudanya Ateşkesi ile askerî safha bitmiş, Doğu Trakya ve İstanbul savaşsız kurtarılmış, İtilaf Devletleri TBMM'yi Türk milletinin tek muhatabı olarak kabul etmiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf T.C. İnkılap Tarihi 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-tc-inkilap-tarihi-ve-ataturkculuk-hafta-15
+#derskutusu #inkılaptarihi #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-kuran-i-kerim-15
+Sıra: 2027-02-02 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kuran-i-kerim-15.png
+
+```
+Bunu biliyor muydunuz? Zalim toplumlar: Firavun, Âd, Semûd ve Medyen gibi toplumlar kibir, zorbalık ve hile yüzünden helak olmuştur; Kur'an bunun ilahi bir haksızlık değil, onların kendilerine zulmü olduğunu bildirir (Hûd, 101). Gündelik zulüm: Alay etmek, gıybet, ölçüde hile, emeği gasp etmek, hayvana eziyet ve sosyal medyada izinsiz paylaşım da zulmün görünümleridir (Hucurât, 11; Mutaffifîn, 1-3).
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Kur’an-ı Kerim 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-kuran-i-kerim-hafta-15
+#derskutusu #kuranıkerim #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-arapca-15
+Sıra: 2027-02-02 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-arapca-15.png
+
+```
+Bunu biliyor muydunuz? Dinleme stratejisi: Dinlemeden önce tahmin yapılır, dinlerken «kim, ne, nerede» sorularının cevabı not edilir, dinledikten sonra bilgiler tabloda bir araya getirilir. Yazmaya hazırlık: Harflerin çoğu başta, ortada ve sonda farklı biçim alır; elif, dâl, zâl, râ, zây ve vav sonraki harfe bitişmediği için kelimeyi parçalara ayırır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Arapça 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-arapca-hafta-15
+#derskutusu #arapça #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-fen-bilimleri-15
+Sıra: 2027-02-02 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-fen-bilimleri-15.png
+
+```
+Bunu biliyor muydunuz? Özelleşme: Çok hücreli canlılarda hücreler farklı görevlere özelleşmiştir ve her hücrenin şekli yaptığı göreve en uygun biçimdedir (uzantılı sinir hücresi, disk şekilli alyuvar gibi). Hayvan dokuları: İnsan ve hayvan vücudunda dört temel doku bulunur: örtü (epitel) dokusu, bağ ve destek dokusu, kas dokusu ve sinir dokusu.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Fen Bilimleri 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-fen-bilimleri-hafta-15
+#derskutusu #fenbilimleri #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-sosyal-bilgiler-15
+Sıra: 2027-02-02 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-sosyal-bilgiler-15.png
+
+```
+Bunu biliyor muydunuz? Gözlem ve çıkarım: Bir miras ögesinde doğrudan gördüğümüz özellikler gözlemdir; bu gözlemlerden ve ön bilgilerimizden ulaştığımız, kanıta dayalı sonuç ise çıkarımdır. Ortak mirasın önemi: Ortak miras kimlik ve aidiyet duygusunu güçlendirir, tarihin belgesidir, toplumu ortak değerlerde birleştirir, kültürel çeşitliliği yansıtır, ekonomiye katkı sağlar ve gelecek kuşaklara bırakılmış bir emanettir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Sosyal Bilgiler 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-sosyal-bilgiler-hafta-15
+#derskutusu #sosyalbilgiler #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-turkce-15
+Sıra: 2027-02-03 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-turkce-15.png
+
+```
+Bunu biliyor muydunuz? Strateji seçimi: Okumadan ve dinlemeden önce amacımızı, süremizi ve metnin türünü düşünerek sözlük, hikâye haritası gibi materyalleri ve tahmin etme, not alma, soru sorarak okuma gibi stratejileri seçeriz. Anlam ilişkileri: Temadaki kelimeler eş anlamlı (yürek-gönül), zıt anlamlı (sabırlı-sabırsız) ve eş sesli (yüz) olmalarına göre incelenir; sınıflandırma ölçüt belirleme, inceleme, gruplama ve adlandırma adımlarıyla yapılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Türkçe 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-turkce-hafta-15
+#derskutusu #türkçe #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-din-kulturu-15
+Sıra: 2027-02-03 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-din-kulturu-15.png
+
+```
+Bunu biliyor muydunuz? İftar ve Dua Anı: İftar, akşam ezanıyla orucu açmaktır; Hz. Peygamber oruçlunun iftar anında reddedilmeyen bir duası olduğunu bildirmiştir (İbn Mâce, Sıyâm, 48). Okunuş: İftar duası «Allâhümme leke sumtü ve bike âmentü ve aleyke tevekkeltü ve alâ rızkıke eftartü» şeklinde okunur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Din Kültürü ve Ahlak Bilgisi 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-din-kulturu-ve-ahlak-bilgisi-hafta-15
+#derskutusu #dinkültürü #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-sosyal-bilgiler-15
+Sıra: 2027-02-03 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-sosyal-bilgiler-15.png
+
+```
+Bunu biliyor muydunuz? Coğrafya ve seyahat: İbn Fadlân'ın seyahatnamesi, Bîrûnî'nin Kitâbü'l-Hind'i, Kâşgarlı Mahmud'un dünya haritası ve İdrîsî'nin 1154'te II. Roger için çizdiği harita, insanlığın dünyayı tanımasına katkı sağlamıştır. Dildeki izler: Algebra, algorithm, zero, chemistry, zenith, tariff ve cotton gibi Avrupa dillerindeki kelimeler, bilginin ve ürünlerin İslam dünyasından Avrupa'ya geçtiğini gösteren kanıtlardır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Sosyal Bilgiler 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-sosyal-bilgiler-hafta-15
+#derskutusu #sosyalbilgiler #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-ingilizce-15
+Sıra: 2027-02-03 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-ingilizce-15.png
+
+```
+Bunu biliyor muydunuz? TV Words: channel (kanal), commercial (reklam), director (yönetmen), discussion (tartışma), remote control (kumanda), appear (ekranda yer almak) ve recommend (tavsiye etmek) sık kullanılan kelimelerdir. TV Habits: Düzenli alışkanlıklar Simple Present Tense ve sıklık zarflarıyla anlatılır: I always watch football matches at weekends.; heyecanla beklenen şey için I can't wait for it! denir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf İngilizce 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-ingilizce-hafta-15
+#derskutusu #ingilizce #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-fen-bilimleri-15
+Sıra: 2027-02-03 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-fen-bilimleri-15.png
+
+```
+Bunu biliyor muydunuz? Bileşik oluşumu: Bileşikler, farklı elementlerin kimyasal tepkimeyle yeni bağlar kurmasıyla oluşur; yeni bileşik, kendisini oluşturan elementlerin özelliklerini taşımaz. Sözcüklerle tepkime: Tepkimeler, giren maddelerin adları okun soluna, ürünlerin adları okun sağına yazılarak sade biçimde ifade edilebilir (karbon + oksijen → karbondioksit).
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Fen Bilimleri 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-fen-bilimleri-hafta-15
+#derskutusu #fenbilimleri #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-peygamberimizin-hayati-15
+Sıra: 2027-02-03 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-peygamberimizin-hayati-15.png
+
+```
+Bunu biliyor muydunuz? Teşri: Peygamberimizin (s.a.v.) Kur'an'da açıkça hükmü bulunmayan konularda Allah'ın izni ve vahyin rehberliğiyle bağlayıcı dini hükümler koymasıdır. Kur'anî dayanak: Haşr 7, Nisâ 80, A'râf 157 ve Ahzâb 36. ayetler Peygamberimizin emir ve yasaklarının bağlayıcı olduğunu açıkça bildirir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Peygamberimizin Hayatı 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-peygamberimizin-hayati-hafta-15
+#derskutusu #peygamberimizinhayatı #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-cografya-15
+Sıra: 2027-02-04 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-cografya-15.png
+
+```
+Bunu biliyor muydunuz? Sınıflandırma: İklim türleri temelde sıcaklık ve yağış verilerine göre sıcak, ılıman ve soğuk kuşak iklimleri olarak gruplandırılır; sıcak kuşakta Ekvatoral, Savan, Muson ve Çöl iklimleri yer alır. Amaç ve tür: Aylık sıcaklık değişimi çizgi grafikle, aylık yağış sütun grafikle, mevsimlik yağış payı daire grafikle, ikisi birlikte iklim diyagramıyla, dağılış ise tematik haritayla gösterilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Coğrafya 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-cografya-hafta-15
+#derskutusu #coğrafya #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-edebiyat-15
+Sıra: 2027-02-04 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-edebiyat-15.png
+
+```
+Bunu biliyor muydunuz? Dinleme amacı: Dinlemeden önce 'Bu metni neden dinliyorum?' sorusuna verilen cevap (zevk alma, anlama, değerlendirme, karşılaştırma) dikkatin hangi unsurlara yöneleceğini belirler. Tahmin yürütme: Başlık, kapak görseli, video önizlemesi ve müzik türü gibi ipuçlarından metnin konusu, duygusu ve türü hakkında öngörüde bulunulur; bu tahminler dinleme sırasında doğrulanır ya da düzeltilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Türk Dili ve Edebiyatı 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-turk-dili-ve-edebiyati-hafta-15
+#derskutusu #edebiyat #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-ingilizce-15
+Sıra: 2027-02-04 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-ingilizce-15.png
+
+```
+Bunu biliyor muydunuz? Quantifiers: Sayılabilir isimlerle 'many, a few, How many', sayılamaz isimlerle 'much, a little, How much' kullanılır; 'some' olumlu, 'any' olumsuz ve soru cümlelerinde tercih edilir, 'a lot of' ise her iki isim türüyle de kullanılır. House Rules: 'must' ve 'have to' zorunluluk, 'mustn't' yasak, 'don't have to' ise gereklilik olmadığını (isteğe bağlı olduğunu) anlatır; 'mustn't' ile 'don't have to' aynı anlama gelmez.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf İngilizce 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-ingilizce-hafta-15
+#derskutusu #ingilizce #9sınıf #bunubiliyormuydunuz #maarifmodeli
 ```

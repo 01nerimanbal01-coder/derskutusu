@@ -1,0 +1,545 @@
+{
+  "ad": "12-fizik-15",
+  "sinif": 12,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 15,
+  "tarih": "28 Aralık 2026-1 Ocak 2027",
+  "yayin_tarihi": "2026-12-28",
+  "unite": "12.3. DALGA MEKANİĞİ",
+  "konu": "12.3.1. Dalgalarda Kırınım, Girişim ve Doppler Olayı: Su Dalgalarında Girişim",
+  "ciktilar": [
+    "12.3.1.2. Su dalgalarında girişim olayını açıklar.",
+    "12.3.1.2.a) Girişim desenini deney yaparak veya simülasyonlar kullanarak çizer.",
+    "12.3.1.2. Girişim desenindeki katar ve düğüm çizgilerini, matematiksel hesaplamalara girmeden nitel gözlem ve çizimlerle yorumlar."
+  ],
+  "giris": "Geçen hafta dar bir yarıktan geçen su dalgalarının bükülerek dairesel dalgalara dönüştüğünü, yani {koyu:kırınım} olayını incelemiştik. Bu hafta aynı dalga leğeninde iki dairesel dalga kaynağını birlikte çalıştırıyor ve dalgaların karşılaştığı noktalarda neler olduğunu keşfediyoruz: Kimi yerlerde su çalkalanarak yükselip alçalırken kimi yerlerde neredeyse hiç kıpırdamıyor. Bu şaşırtıcı ama son derece düzenli görüntünün adı {koyu:girişim}; amacımız hesap yapmadan, deney ve simülasyon gözlemleriyle {koyu:girişim desenini çizebilmek ve yorumlayabilmek}.",
+  "ozet": [
+    "{koyu:Üst üste binme:} Aynı noktaya ulaşan dalgaların etkileri toplanır; dalgalar karşılaştıktan sonra özelliklerini koruyarak yollarına devam eder.",
+    "{koyu:Girişim türleri:} Tepe ile tepe veya çukur ile çukur karşılaşırsa yapıcı girişim, tepe ile çukur karşılaşırsa söndürücü girişim oluşur.",
+    "{koyu:Desen koşulu:} Dalga leğeninde sabit bir girişim deseni için iki kaynağın frekansları eşit olmalı ve kaynaklar sürekli birlikte titreşmelidir.",
+    "{koyu:Desenin çizimi:} Her kaynak için tepeler düz, çukurlar kesikli eş merkezli çemberlerle çizilir; aynı tür kesişimler birleştirilerek katar ve düğüm çizgileri elde edilir.",
+    "{koyu:Katar ve düğüm:} Katar çizgileri üzerinde su en büyük genlikle titreşir, düğüm çizgileri üzerinde ise su yüzeyi neredeyse hareketsiz kalır; merkez doğrusu bir katar çizgisidir.",
+    "{koyu:Etkenler:} Frekans artarsa ya da kaynaklar uzaklaştırılırsa düğüm çizgisi sayısı artar; su derinliği artarsa azalır; genlik ise çizgilerin sayısını ve yerini değiştirmez."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Üst Üste Binme İlkesi ve Girişimin Anlamı",
+      "metin": [
+        "Bir ortamda aynı anda birden fazla dalga yayıldığında, dalgalar aynı noktaya ulaşınca birbirini yok edip geçmez; ortamın o noktadaki hareketi, her dalganın tek başına yapacağı etkilerin toplamına eşit olur. Bu temel kurala {koyu:üst üste binme (süperpozisyon) ilkesi} denir. Karşılaşma anında oluşan ortak dalga biçimine {koyu:bileşke dalga} adı verilir. Dalgalar karşılaşıp birbirinden ayrıldıktan sonra her biri kendi genliğini, dalga boyunu, frekansını ve yayılma yönünü koruyarak yoluna devam eder; karşılaşma onları kalıcı olarak değiştirmez.",
+        "Aynı ortamda karşılaşan dalgaların üst üste binerek bazı noktalarda titreşimin güçlendiği, bazı noktalarda zayıfladığı düzenli bir görüntü oluşturmasına {koyu:girişim (interferans)} denir. Bir dalganın tepesi diğerinin tepesiyle ya da çukuru diğerinin çukuruyla karşılaşırsa etkiler birbirini destekler; buna {koyu:yapıcı girişim} denir ve bu noktalarda su daha yükseğe çıkıp daha derine iner. Bir dalganın tepesi diğerinin çukuruyla karşılaşırsa etkiler birbirine karşı koyar; buna {koyu:söndürücü (yıkıcı) girişim} denir. Genlikleri eşit iki dalga söz konusuysa söndürücü girişimin olduğu noktada su yüzeyi düz kalır.",
+        "Girişimi anlamak için suyun nereye aktığını değil, yüzeydeki her noktanın nasıl titreştiğini düşünmek gerekir. Söndürücü girişimde enerji yok olmaz; dalgaların taşıdığı enerji desen boyunca yeniden dağılır ve yapıcı girişimin olduğu bölgelerde toplanır. Bu nedenle girişim, dalgalara özgü bir davranıştır: Birbirine çarpan iki bilye böyle bir desen oluşturmaz, fakat karşılaşan iki dalga oluşturur. İleride göreceğimiz gibi girişim, bir şeyin dalga özelliği taşıyıp taşımadığını anlamanın en güçlü kanıtlarından biridir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Karşılaşan Kısımlar",
+          "Girişim Türü",
+          "Bileşke Etki",
+          "Su Yüzeyinde Gözlenen"
+        ],
+        "satirlar": [
+          [
+            "Tepe + tepe",
+            "Yapıcı girişim",
+            "Etkiler toplanır, daha yüksek bir tepe oluşur",
+            "Su belirgin biçimde yükselir"
+          ],
+          [
+            "Çukur + çukur",
+            "Yapıcı girişim",
+            "Etkiler toplanır, daha derin bir çukur oluşur",
+            "Su belirgin biçimde çöker"
+          ],
+          [
+            "Tepe + çukur (eşit genlik)",
+            "Söndürücü girişim",
+            "Etkiler birbirini tamamen dengeler",
+            "Su yüzeyi düz kalır"
+          ],
+          [
+            "Tepe + çukur (farklı genlik)",
+            "Söndürücü girişim (tam olmayan)",
+            "Büyük olan dalga yönünde küçük bir bileşke kalır",
+            "Zayıf bir dalgalanma görülür"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Girişim",
+          "metin": "Aynı ortamda karşılaşan iki ya da daha fazla dalganın üst üste binerek titreşimin güçlendiği ve zayıfladığı bölgelerden oluşan düzenli bir desen meydana getirmesidir."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Dalgalar Birbirini Bozmaz",
+          "metin": "Karşılaşma yalnız o anda ve o noktada bileşke bir etki oluşturur. Dalgalar birbirinin içinden geçtikten sonra eski biçimleriyle yollarına devam eder."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e3a8a\">Üst Üste Binme İlkesi: Karşılaşan Dalgaların Bileşkesi</text><rect x=\"25\" y=\"48\" width=\"220\" height=\"235\" rx=\"12\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"135\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">Tepe + Tepe</text><text x=\"40\" y=\"84\" font-size=\"10\" fill=\"#475569\">Karşılaşmadan önce</text><line x1=\"35\" y1=\"115\" x2=\"235\" y2=\"115\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M40 115 Q65 85 90 115\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><path d=\"M175 115 Q200 90 225 115\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"3\"/><text x=\"105\" y=\"108\" font-size=\"14\" fill=\"#2563eb\">→</text><text x=\"150\" y=\"108\" font-size=\"14\" fill=\"#f97316\">←</text><text x=\"40\" y=\"145\" font-size=\"10\" fill=\"#475569\">Karşılaşma anında</text><line x1=\"35\" y1=\"215\" x2=\"235\" y2=\"215\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M95 215 Q135 145 175 215\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3.5\"/><text x=\"135\" y=\"245\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1e3a8a\">Daha yüksek tepe</text><text x=\"135\" y=\"265\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">Yapıcı girişim</text><rect x=\"270\" y=\"48\" width=\"220\" height=\"235\" rx=\"12\" fill=\"#ffffff\" stroke=\"#0d9488\" stroke-width=\"2\"/><text x=\"380\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f766e\">Çukur + Çukur</text><text x=\"285\" y=\"84\" font-size=\"10\" fill=\"#475569\">Karşılaşmadan önce</text><line x1=\"280\" y1=\"100\" x2=\"480\" y2=\"100\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M285 100 Q310 130 335 100\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><path d=\"M420 100 Q445 128 470 100\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"3\"/><text x=\"350\" y=\"98\" font-size=\"14\" fill=\"#2563eb\">→</text><text x=\"395\" y=\"98\" font-size=\"14\" fill=\"#f97316\">←</text><text x=\"285\" y=\"145\" font-size=\"10\" fill=\"#475569\">Karşılaşma anında</text><line x1=\"280\" y1=\"165\" x2=\"480\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M340 165 Q380 235 420 165\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3.5\"/><text x=\"380\" y=\"245\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#115e59\">Daha derin çukur</text><text x=\"380\" y=\"265\" text-anchor=\"middle\" font-size=\"11\" fill=\"#115e59\">Yapıcı girişim</text><rect x=\"515\" y=\"48\" width=\"220\" height=\"235\" rx=\"12\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"625\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#b91c1c\">Tepe + Çukur</text><text x=\"530\" y=\"84\" font-size=\"10\" fill=\"#475569\">Karşılaşmadan önce</text><line x1=\"525\" y1=\"112\" x2=\"725\" y2=\"112\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M530 112 Q555 84 580 112\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><path d=\"M665 112 Q690 140 715 112\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"3\"/><text x=\"595\" y=\"106\" font-size=\"14\" fill=\"#2563eb\">→</text><text x=\"640\" y=\"106\" font-size=\"14\" fill=\"#f97316\">←</text><text x=\"530\" y=\"160\" font-size=\"10\" fill=\"#475569\">Karşılaşma anında</text><line x1=\"530\" y1=\"195\" x2=\"720\" y2=\"195\" stroke=\"#16a34a\" stroke-width=\"4\"/><text x=\"625\" y=\"245\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#991b1b\">Su yüzeyi düz kalır</text><text x=\"625\" y=\"265\" text-anchor=\"middle\" font-size=\"11\" fill=\"#991b1b\">Söndürücü girişim</text></svg>"
+    },
+    {
+      "baslik": "Dalga Leğeninde Girişim Deseninin Oluşturulması",
+      "metin": [
+        "Dalga leğeninde girişimi gözlemek için bir motora bağlı titreşen çubuğun iki ucuna takılan küçük uçlar su yüzeyine değdirilir. Böylece iki {koyu:noktasal kaynak} ({alt:K|1} ve {alt:K|2}) aynı frekansla ve aynı anda titreşerek eş merkezli dairesel dalgalar üretir. Leğenin üzerindeki ışık kaynağından gelen ışık, su yüzeyindeki tepelerde toplanıp çukurlarda dağıldığı için altta duran ekranda {koyu:tepeler parlak}, {koyu:çukurlar karanlık} çizgiler olarak görünür. İki kaynaktan yayılan dalgalar birbirinin içinden geçerek leğenin her yerinde karşılaşır ve girişim desenini oluşturur.",
+        "Girişim deseninin yerinde duran, kararlı bir görüntü vermesi için kaynakların {koyu:frekanslarının eşit} olması ve sürekli birlikte titreşmesi gerekir. Kaynaklardan birinin frekansı az da olsa farklı olursa karşılaşma noktaları sürekli yer değiştirir; desen kayar, düzenli çizgiler seçilemez. Bu nedenle deneyde iki ayrı motor yerine tek bir motorun salladığı çubuk tercih edilir. Kaynakların genliklerinin yaklaşık eşit olması da deseni daha net yapar; çünkü eşit genlikte söndürücü girişim noktalarında su tamamen durgun görünür.",
+        "Aynı desen, geçen hafta öğrendiğimiz kırınım yardımıyla da elde edilebilir. Doğrusal dalgaların önüne iki dar yarıklı bir engel konduğunda, her yarıkta kırınıma uğrayan dalgalar sanki yarığın bulunduğu yerde noktasal bir kaynak varmış gibi dairesel olarak yayılır. Bu iki dairesel dalga aynı dalga cephesinden türediği için kendiliğinden aynı frekansla ve birlikte titreşir. Sonuçta engelin arkasında, iki noktasal kaynakla oluşturulanın aynısı olan bir girişim deseni gözlenir. Bu düzenekte desenin oluşması için önce her iki yarıkta da kırınımın gerçekleşmesi gerektiğini unutmayalım."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Düzenek",
+          "Kaynakların Oluşma Biçimi",
+          "Kararlı Desen İçin Gereken"
+        ],
+        "satirlar": [
+          [
+            "Tek motora bağlı çift uçlu çubuk",
+            "İki uç suya değerek doğrudan dairesel dalga üretir",
+            "Uçların aynı çubuğa bağlı olması eşit frekansı ve birlikte titreşmeyi sağlar"
+          ],
+          [
+            "Doğrusal dalga + çift yarıklı engel",
+            "Kırınıma uğrayan dalgalar yarıklarda iki noktasal kaynak gibi davranır",
+            "Her iki yarıkta da kırınımın belirgin olması gerekir"
+          ],
+          [
+            "Frekansları farklı iki ayrı motor",
+            "İki kaynak birbirinden bağımsız titreşir",
+            "Kararlı desen oluşmaz; görüntü sürekli kayar"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Kararlı Desen Koşulu",
+          "metin": "Dalga leğeninde yerinde duran bir girişim deseni görmek için iki kaynağın frekansları eşit olmalı ve kaynaklar sürekli birlikte titreşmelidir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Tepeler Parlak, Çukurlar Karanlık",
+          "metin": "Su yüzeyindeki tepeler ışığı toplayan, çukurlar ise dağıtan bölgeler gibi davranır. Ekrandaki parlak halkaları tepe, karanlık halkaları çukur olarak okuyabilirsiniz."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><defs><clipPath id=\"lgn\"><rect x=\"20\" y=\"45\" width=\"460\" height=\"240\" rx=\"12\"/></clipPath></defs><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#0284c7\" stroke-width=\"2\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#0c4a6e\">Dalga Leğeninde İki Noktasal Kaynakla Girişim</text><rect x=\"20\" y=\"45\" width=\"460\" height=\"240\" rx=\"12\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/><g clip-path=\"url(#lgn)\" fill=\"none\"><circle cx=\"200\" cy=\"262\" r=\"40\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"262\" r=\"80\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"262\" r=\"120\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"262\" r=\"160\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"262\" r=\"200\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"262\" r=\"20\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><circle cx=\"200\" cy=\"262\" r=\"60\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><circle cx=\"200\" cy=\"262\" r=\"100\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><circle cx=\"200\" cy=\"262\" r=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><circle cx=\"200\" cy=\"262\" r=\"180\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><circle cx=\"300\" cy=\"262\" r=\"40\" stroke=\"#ea580c\" stroke-width=\"2\"/><circle cx=\"300\" cy=\"262\" r=\"80\" stroke=\"#ea580c\" stroke-width=\"2\"/><circle cx=\"300\" cy=\"262\" r=\"120\" stroke=\"#ea580c\" stroke-width=\"2\"/><circle cx=\"300\" cy=\"262\" r=\"160\" stroke=\"#ea580c\" stroke-width=\"2\"/><circle cx=\"300\" cy=\"262\" r=\"200\" stroke=\"#ea580c\" stroke-width=\"2\"/><circle cx=\"300\" cy=\"262\" r=\"20\" stroke=\"#a16207\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><circle cx=\"300\" cy=\"262\" r=\"60\" stroke=\"#a16207\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><circle cx=\"300\" cy=\"262\" r=\"100\" stroke=\"#a16207\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><circle cx=\"300\" cy=\"262\" r=\"140\" stroke=\"#a16207\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><circle cx=\"300\" cy=\"262\" r=\"180\" stroke=\"#a16207\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/></g><circle cx=\"200\" cy=\"262\" r=\"6\" fill=\"#dc2626\"/><circle cx=\"300\" cy=\"262\" r=\"6\" fill=\"#dc2626\"/><text x=\"200\" y=\"280\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#991b1b\">K₁</text><text x=\"300\" y=\"280\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#991b1b\">K₂</text><rect x=\"500\" y=\"45\" width=\"240\" height=\"240\" rx=\"12\" fill=\"#ffffff\" stroke=\"#0284c7\" stroke-width=\"2\"/><text x=\"620\" y=\"70\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Düzenek ve Koşullar</text><text x=\"515\" y=\"98\" font-size=\"12\" fill=\"#0c4a6e\">• Tek motora bağlı iki uç</text><text x=\"515\" y=\"122\" font-size=\"12\" fill=\"#0c4a6e\">• Frekansları eşit</text><text x=\"515\" y=\"146\" font-size=\"12\" fill=\"#0c4a6e\">• Sürekli birlikte titreşirler</text><line x1=\"515\" y1=\"170\" x2=\"555\" y2=\"170\" stroke=\"#1d4ed8\" stroke-width=\"2.5\"/><text x=\"562\" y=\"174\" font-size=\"12\" fill=\"#0c4a6e\">Düz çizgi: dalga tepesi</text><line x1=\"515\" y1=\"196\" x2=\"555\" y2=\"196\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/><text x=\"562\" y=\"200\" font-size=\"12\" fill=\"#0c4a6e\">Kesikli çizgi: çukur</text><rect x=\"515\" y=\"220\" width=\"210\" height=\"48\" rx=\"10\" fill=\"#0284c7\"/><text x=\"620\" y=\"240\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">Sonuç: yerinde duran,</text><text x=\"620\" y=\"258\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">kararlı girişim deseni</text></svg>"
+    },
+    {
+      "baslik": "Girişim Desenini Çizme Adımları",
+      "metin": [
+        "Girişim desenini çizmek, leğende gördüğümüz karmaşık görüntüyü sade bir modele dönüştürmenin en etkili yoludur. Önce kâğıda iki kaynak ({alt:K|1} ve {alt:K|2}) birbirinden birkaç dalga boyu uzaklıkta işaretlenir. Ardından pergelle her kaynağın çevresine, yarıçapları eşit aralıklarla büyüyen {koyu:eş merkezli çemberler} çizilir. Ardışık iki çember arasındaki açıklık bir dalga boyunu temsil eder ve iki kaynak için aynı alınır; çünkü kaynakların frekansı ve ortamın derinliği aynıdır. Bu çemberler {koyu:dalga tepelerini} gösterir ve düz çizgiyle çizilir.",
+        "İkinci aşamada, ardışık iki tepenin tam ortasına denk gelen {koyu:dalga çukurları} kesikli çemberlerle eklenir. Şimdi çizimde dört tür kesişim vardır: düz-düz (tepe ile tepe), kesikli-kesikli (çukur ile çukur), düz-kesikli ve kesikli-düz (tepe ile çukur). Tepe-tepe ve çukur-çukur kesişimleri yapıcı girişim noktalarıdır ve dolu nokta (●) ile işaretlenir. Tepe-çukur kesişimleri söndürücü girişim noktalarıdır ve boş nokta (○) ile işaretlenir.",
+        "Son aşamada aynı türden noktalar, kaynakların arasından başlayıp leğenin uzak kenarına doğru uzanan yumuşak eğrilerle birleştirilir. Dolu noktaları birleştiren eğriler {koyu:katar çizgilerini}, boş noktaları birleştiren eğriler {koyu:düğüm çizgilerini} verir. Kaynakları birleştiren doğru parçasının tam ortasından ve ona dik olarak geçen çizgi {koyu:merkez doğrusudur}; çizimde bu doğru üzerindeki bütün kesişimlerin dolu nokta olduğu kolayca görülür. Çizim tamamlandığında katar ve düğüm çizgilerinin merkez doğrusunun iki yanında ayna görüntüsü gibi sıralandığı fark edilir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Çizimdeki Kesişim",
+          "Fiziksel Anlamı",
+          "İşaret",
+          "Ait Olduğu Çizgi"
+        ],
+        "satirlar": [
+          [
+            "Düz çember + düz çember",
+            "Tepe ile tepe karşılaşır",
+            "● (dolu nokta)",
+            "Katar çizgisi"
+          ],
+          [
+            "Kesikli çember + kesikli çember",
+            "Çukur ile çukur karşılaşır",
+            "● (dolu nokta)",
+            "Katar çizgisi"
+          ],
+          [
+            "Düz çember + kesikli çember",
+            "Tepe ile çukur karşılaşır",
+            "○ (boş nokta)",
+            "Düğüm çizgisi"
+          ],
+          [
+            "İki kaynağa eşit uzaklıktaki kesişimler",
+            "Aynı sıradaki tepeler veya çukurlar karşılaşır",
+            "● (dolu nokta)",
+            "Merkez doğrusu (katar)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Pergel Aralığı",
+          "metin": "Her iki kaynak için çemberler arasındaki açıklığı aynı tutun; örneğin bir dalga boyunu 1 cm alıp çukurları yarım santimetrede kesikli çizmek temiz bir desen verir."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Kesikli Çizgiler Atlanmasın",
+          "metin": "Yalnız tepeleri çizen öğrenci yalnızca tepe-tepe kesişimlerini görür ve düğüm noktalarını bulamaz. Çukurları gösteren kesikli çemberler, düğüm noktalarını belirlemek için şarttır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#7c3aed\" stroke-width=\"2\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#4c1d95\">Girişim Desenini Çizmek İçin Beş Adım</text><rect x=\"15\" y=\"60\" width=\"132\" height=\"170\" rx=\"12\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"2\"/><circle cx=\"81\" cy=\"84\" r=\"14\" fill=\"#7c3aed\"/><text x=\"81\" y=\"89\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#ffffff\">1</text><text x=\"81\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#4c1d95\">Kaynakları</text><text x=\"81\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#4c1d95\">işaretle</text><text x=\"81\" y=\"160\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">K₁ ve K₂ noktalarını</text><text x=\"81\" y=\"175\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">birkaç dalga boyu</text><text x=\"81\" y=\"190\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">aralıkla yerleştir</text><rect x=\"162\" y=\"60\" width=\"132\" height=\"170\" rx=\"12\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"2\"/><circle cx=\"228\" cy=\"84\" r=\"14\" fill=\"#2563eb\"/><text x=\"228\" y=\"89\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#ffffff\">2</text><text x=\"228\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1e3a8a\">Çemberleri çiz</text><text x=\"228\" y=\"144\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Pergelle eş merkezli</text><text x=\"228\" y=\"159\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">ve eşit aralıklı</text><text x=\"228\" y=\"178\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Tepe: düz çizgi</text><text x=\"228\" y=\"193\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Çukur: kesikli çizgi</text><rect x=\"309\" y=\"60\" width=\"132\" height=\"170\" rx=\"12\" fill=\"#ffffff\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"375\" cy=\"84\" r=\"14\" fill=\"#16a34a\"/><text x=\"375\" y=\"89\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#ffffff\">3</text><text x=\"375\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#14532d\">Katar noktaları</text><text x=\"375\" y=\"144\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Tepe-tepe ve</text><text x=\"375\" y=\"159\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">çukur-çukur</text><text x=\"375\" y=\"174\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">kesişimlerini</text><text x=\"375\" y=\"189\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">dolu nokta ile göster</text><circle cx=\"375\" cy=\"210\" r=\"6\" fill=\"#16a34a\"/><rect x=\"456\" y=\"60\" width=\"132\" height=\"170\" rx=\"12\" fill=\"#ffffff\" stroke=\"#ea580c\" stroke-width=\"2\"/><circle cx=\"522\" cy=\"84\" r=\"14\" fill=\"#ea580c\"/><text x=\"522\" y=\"89\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#ffffff\">4</text><text x=\"522\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#9a3412\">Düğüm noktaları</text><text x=\"522\" y=\"144\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Tepe-çukur</text><text x=\"522\" y=\"159\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">kesişimlerini</text><text x=\"522\" y=\"174\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">boş nokta ile göster</text><circle cx=\"522\" cy=\"205\" r=\"6\" fill=\"#ffffff\" stroke=\"#ea580c\" stroke-width=\"2\"/><rect x=\"603\" y=\"60\" width=\"142\" height=\"170\" rx=\"12\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"2\"/><circle cx=\"674\" cy=\"84\" r=\"14\" fill=\"#dc2626\"/><text x=\"674\" y=\"89\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#ffffff\">5</text><text x=\"674\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#991b1b\">Çizgileri birleştir</text><text x=\"674\" y=\"144\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Aynı tür noktaları</text><text x=\"674\" y=\"159\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">yumuşak eğrilerle</text><text x=\"674\" y=\"174\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">birleştir; katar ve</text><text x=\"674\" y=\"189\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">düğüm çizgilerini adlandır</text><polygon points=\"149,140 160,145 149,150\" fill=\"#475569\"/><polygon points=\"296,140 307,145 296,150\" fill=\"#475569\"/><polygon points=\"443,140 454,145 443,150\" fill=\"#475569\"/><polygon points=\"590,140 601,145 590,150\" fill=\"#475569\"/><rect x=\"60\" y=\"245\" width=\"640\" height=\"40\" rx=\"10\" fill=\"#ede9fe\"/><circle cx=\"85\" cy=\"265\" r=\"6\" fill=\"#16a34a\"/><text x=\"98\" y=\"269\" font-size=\"12\" fill=\"#4c1d95\">Katar noktası (yapıcı girişim)</text><circle cx=\"400\" cy=\"265\" r=\"6\" fill=\"#ffffff\" stroke=\"#ea580c\" stroke-width=\"2\"/><text x=\"413\" y=\"269\" font-size=\"12\" fill=\"#4c1d95\">Düğüm noktası (söndürücü girişim)</text></svg>"
+    },
+    {
+      "baslik": "Dalga Katarları ve Düğüm Çizgileri",
+      "metin": [
+        "Girişim deseninde yapıcı girişim noktalarını birleştiren eğrilere {koyu:katar çizgileri} (dalga katarlarının oluştuğu çizgiler) denir. Bu çizgiler üzerindeki her nokta en büyük genlikle titreşir: Bir an tepe ile tepe karşılaşıp su yükselir, kısa süre sonra aynı noktada çukur ile çukur karşılaşıp su derin biçimde çöker. Dalga leğeninin ekranında katar çizgileri boyunca parlak ve karanlık bölgelerin kaynaklardan dışarıya doğru akıp gittiği görülür; bu yüzden onlara dalgaların sıra halinde ilerlediği yollar, yani katarlar denir.",
+        "Söndürücü girişim noktalarını birleştiren eğrilere ise {koyu:düğüm çizgileri} denir. Düğüm çizgileri üzerinde bir kaynağın tepesi her zaman diğer kaynağın çukuruyla karşılaştığı için su yüzeyi neredeyse hiç titreşmez. Ekranda düğüm çizgileri, iki yanındaki hareketli parlak-karanlık bölgeler arasında sakin, düzgün gri şeritler gibi görünür. Düğüm çizgisinde su vardır; yalnız o noktalardaki su yukarı aşağı salınmaz.",
+        "Eş zamanlı titreşen iki kaynağın oluşturduğu desende kaynakları birleştiren doğru parçasının orta dikmesi bir katar çizgisidir ve {koyu:merkez doğrusu} adını alır. Bu doğru üzerindeki her nokta iki kaynağa eşit uzaklıkta olduğundan iki kaynağın dalgaları bu noktalara hep aynı anda ve aynı durumda (tepe ile tepe, çukur ile çukur) ulaşır. Merkez doğrusunun iki yanında önce birer düğüm, sonra birer katar, sonra yine birer düğüm çizgisi gelir; çizgiler kaynaklardan uzaklaştıkça birbirinden açılan, hiperbole benzer eğriler biçimindedir. Desen simetrik olduğu için {koyu:düğüm çizgileri her zaman çift sayıdadır}; merkez doğrusu da sayıldığında katar çizgilerinin sayısı tek olur. Kaynakları birleştiren doğru parçası üzerinde de katar ve düğüm noktaları düzenli aralıklarla sırayla dizilir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Özellik",
+          "Katar Çizgisi",
+          "Düğüm Çizgisi"
+        ],
+        "satirlar": [
+          [
+            "Girişim türü",
+            "Yapıcı girişim",
+            "Söndürücü girişim"
+          ],
+          [
+            "Karşılaşan kısımlar",
+            "Tepe-tepe ve çukur-çukur",
+            "Tepe-çukur"
+          ],
+          [
+            "Suyun hareketi",
+            "En büyük genlikle titreşir",
+            "Neredeyse hareketsiz kalır"
+          ],
+          [
+            "Ekrandaki görünüm",
+            "Dışarı doğru akan parlak-karanlık bölgeler",
+            "Sakin, düzgün gri şeritler"
+          ],
+          [
+            "Merkez doğrusuyla ilişkisi",
+            "Merkez doğrusu bir katar çizgisidir",
+            "Merkez doğrusunun iki yanında çiftler halinde bulunur"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Desenin Simetrisi",
+          "metin": "Eş zamanlı titreşen iki kaynakta merkez doğrusu katar çizgisidir; düğüm çizgileri onun iki yanında eşleşerek sıralandığından düğüm çizgisi sayısı daima çifttir."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Katar Noktası Sürekli Tepe Değildir",
+          "metin": "Katar çizgisindeki bir nokta sürekli yüksekte durmaz; bir tepe-tepe, bir çukur-çukur karşılaşmasıyla en büyük genlikte yukarı aşağı salınır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e3a8a\">Girişim Deseninde Katar ve Düğüm Çizgileri</text><line x1=\"380\" y1=\"270\" x2=\"380\" y2=\"50\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M392 270 Q398 150 440 50\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2.5\" stroke-dasharray=\"7,5\"/><path d=\"M368 270 Q362 150 320 50\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2.5\" stroke-dasharray=\"7,5\"/><path d=\"M404 270 Q420 150 510 50\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><path d=\"M356 270 Q340 150 250 50\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><path d=\"M416 270 Q450 160 600 60\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2.5\" stroke-dasharray=\"7,5\"/><path d=\"M344 270 Q310 160 160 60\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2.5\" stroke-dasharray=\"7,5\"/><line x1=\"330\" y1=\"270\" x2=\"430\" y2=\"270\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><circle cx=\"330\" cy=\"270\" r=\"7\" fill=\"#0f172a\"/><circle cx=\"430\" cy=\"270\" r=\"7\" fill=\"#0f172a\"/><text x=\"315\" y=\"292\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">K₁</text><text x=\"432\" y=\"292\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">K₂</text><text x=\"386\" y=\"64\" font-size=\"11\" font-weight=\"700\" fill=\"#dc2626\">M</text><text x=\"444\" y=\"60\" font-size=\"11\" fill=\"#9a3412\">1. düğüm</text><text x=\"514\" y=\"60\" font-size=\"11\" fill=\"#1d4ed8\">1. katar</text><text x=\"604\" y=\"70\" font-size=\"11\" fill=\"#9a3412\">2. düğüm</text><text x=\"262\" y=\"60\" font-size=\"11\" fill=\"#9a3412\">1. düğüm</text><text x=\"196\" y=\"60\" font-size=\"11\" fill=\"#1d4ed8\">1. katar</text><text x=\"104\" y=\"70\" font-size=\"11\" fill=\"#9a3412\">2. düğüm</text><rect x=\"20\" y=\"195\" width=\"205\" height=\"88\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"32\" y1=\"215\" x2=\"62\" y2=\"215\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"68\" y=\"219\" font-size=\"11\" fill=\"#0f172a\">M: Merkez doğrusu (katar)</text><line x1=\"32\" y1=\"240\" x2=\"62\" y2=\"240\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><text x=\"68\" y=\"244\" font-size=\"11\" fill=\"#0f172a\">Katar çizgisi</text><line x1=\"32\" y1=\"265\" x2=\"62\" y2=\"265\" stroke=\"#ea580c\" stroke-width=\"2.5\" stroke-dasharray=\"7,5\"/><text x=\"68\" y=\"269\" font-size=\"11\" fill=\"#0f172a\">Düğüm çizgisi</text><rect x=\"535\" y=\"195\" width=\"205\" height=\"88\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"637\" y=\"217\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1e3a8a\">Desenin özellikleri</text><text x=\"547\" y=\"238\" font-size=\"10.5\" fill=\"#0f172a\">• Merkez doğrusuna göre simetrik</text><text x=\"547\" y=\"256\" font-size=\"10.5\" fill=\"#0f172a\">• Düğüm çizgileri çift sayıda</text><text x=\"547\" y=\"274\" font-size=\"10.5\" fill=\"#0f172a\">• Uzaklaştıkça çizgiler açılır</text></svg>"
+    },
+    {
+      "baslik": "Girişim Desenini Değiştiren Etkenler",
+      "metin": [
+        "Girişim deseninin görünüşü, iki kaynağın dalgalarının ne kadar sık karşılaştığına bağlıdır. Bu sıklığı belirleyen en önemli büyüklük {koyu:dalga boyudur}. Dalga boyu küçüldükçe kaynakların arasına daha fazla tepe ve çukur sığar; böylece daha çok kesişim, dolayısıyla daha fazla katar ve düğüm çizgisi oluşur ve çizgiler birbirine yaklaşır. Dalga boyu büyüdükçe ise çizgi sayısı azalır, çizgiler seyrekleşip birbirinden açılır. Önceki sınıflardan bildiğimiz {koyu:λ = {kesir:v|f}} ilişkisi, dalga boyunu hangi değişkenlerin etkilediğini nitel olarak yorumlamamızı sağlar.",
+        "Su derinliği sabitken kaynağın {koyu:frekansı artırılırsa} dalgaların hızı değişmez, dalga boyu küçülür; düğüm çizgisi sayısı artar ve çizgiler sıklaşır. Frekans azaltılırsa tersi olur. Frekans sabitken leğene {koyu:su eklenerek derinlik artırılırsa} dalgaların yayılma hızı ve dalga boyu büyür; düğüm çizgisi sayısı azalır. Leğenden su alınıp ortam sığlaştırılırsa dalga boyu küçülür ve çizgi sayısı artar. Burada dikkat edilecek nokta, değişikliğin iki kaynağa da aynı şekilde etki etmesidir; leğenin yalnız bir bölgesi sığlaştırılırsa desen bozulur ve çizgiler eğrilir.",
+        "Dalga boyu dışında desenin görünüşünü değiştiren bir diğer etken {koyu:kaynaklar arasındaki uzaklıktır}. Kaynaklar birbirinden uzaklaştırılırsa aralarına daha çok dalga boyu sığar, düğüm çizgisi sayısı artar; kaynaklar yaklaştırılırsa azalır. Kaynakların {koyu:genliği} ise ne çizgilerin sayısını ne de yerini değiştirir; genlik artınca katar çizgilerindeki dalgalanma daha yüksek olur ve desen daha net, daha kontrastlı görünür. Son olarak kaynakların frekansları birbirinden farklı yapılırsa kararlı bir desen hiç oluşmaz; görüntü sürekli kayar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Yapılan Değişiklik",
+          "Dalga Boyuna Etkisi",
+          "Düğüm Çizgisi Sayısı",
+          "Çizgilerin Görünümü"
+        ],
+        "satirlar": [
+          [
+            "Kaynak frekansını artırmak",
+            "Küçülür",
+            "Artar",
+            "Sıklaşır, birbirine yaklaşır"
+          ],
+          [
+            "Kaynak frekansını azaltmak",
+            "Büyür",
+            "Azalır",
+            "Seyrekleşir, açılır"
+          ],
+          [
+            "Leğene su ekleyip derinliği artırmak",
+            "Büyür",
+            "Azalır",
+            "Seyrekleşir, açılır"
+          ],
+          [
+            "Leğenden su alıp ortamı sığlaştırmak",
+            "Küçülür",
+            "Artar",
+            "Sıklaşır"
+          ],
+          [
+            "Kaynakları birbirinden uzaklaştırmak",
+            "Değişmez",
+            "Artar",
+            "Daha çok çizgi oluşur"
+          ],
+          [
+            "Kaynakların genliğini artırmak",
+            "Değişmez",
+            "Değişmez",
+            "Yerleri aynı kalır, katarlar belirginleşir"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Tek Soruyla Karar Ver",
+          "metin": "Bir değişikliğin desene etkisini bulmak için kendinize şunu sorun: Kaynakların arasına daha çok dalga boyu sığıyor mu? Cevap evetse düğüm çizgisi sayısı artar, hayırsa azalır."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Genlik Bir Çeldiricidir",
+          "metin": "Genlik dalga boyunu değiştirmediği için çizgilerin sayısını ve yerini etkilemez. Genliği artırmak yalnızca katar çizgilerindeki çalkantıyı büyütür."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#0d9488\" stroke-width=\"2\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#115e59\">Desen Neye Bağlı? Frekans, Derinlik, Kaynak Uzaklığı ve Genlik</text><rect x=\"20\" y=\"42\" width=\"350\" height=\"140\" rx=\"12\" fill=\"#ffffff\" stroke=\"#0d9488\" stroke-width=\"1.5\"/><line x1=\"195\" y1=\"150\" x2=\"195\" y2=\"55\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><line x1=\"195\" y1=\"150\" x2=\"130\" y2=\"58\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><line x1=\"195\" y1=\"150\" x2=\"260\" y2=\"58\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><circle cx=\"175\" cy=\"150\" r=\"5\" fill=\"#0f172a\"/><circle cx=\"215\" cy=\"150\" r=\"5\" fill=\"#0f172a\"/><text x=\"195\" y=\"172\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#115e59\">Düşük frekans: az ve seyrek çizgi</text><rect x=\"390\" y=\"42\" width=\"350\" height=\"140\" rx=\"12\" fill=\"#ffffff\" stroke=\"#0d9488\" stroke-width=\"1.5\"/><line x1=\"565\" y1=\"150\" x2=\"565\" y2=\"55\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><line x1=\"565\" y1=\"150\" x2=\"530\" y2=\"55\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><line x1=\"565\" y1=\"150\" x2=\"600\" y2=\"55\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><line x1=\"565\" y1=\"150\" x2=\"490\" y2=\"58\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"565\" y1=\"150\" x2=\"640\" y2=\"58\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"565\" y1=\"150\" x2=\"445\" y2=\"78\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><line x1=\"565\" y1=\"150\" x2=\"685\" y2=\"78\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><circle cx=\"545\" cy=\"150\" r=\"5\" fill=\"#0f172a\"/><circle cx=\"585\" cy=\"150\" r=\"5\" fill=\"#0f172a\"/><text x=\"565\" y=\"172\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#115e59\">Yüksek frekans: çok ve sık çizgi</text><rect x=\"20\" y=\"192\" width=\"172\" height=\"95\" rx=\"10\" fill=\"#ccfbf1\"/><text x=\"106\" y=\"212\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#115e59\">Frekans artarsa</text><text x=\"106\" y=\"232\" text-anchor=\"middle\" font-size=\"11\" fill=\"#134e4a\">λ küçülür</text><text x=\"106\" y=\"252\" text-anchor=\"middle\" font-size=\"11\" fill=\"#134e4a\">Düğüm sayısı artar,</text><text x=\"106\" y=\"270\" text-anchor=\"middle\" font-size=\"11\" fill=\"#134e4a\">çizgiler sıklaşır</text><rect x=\"202\" y=\"192\" width=\"172\" height=\"95\" rx=\"10\" fill=\"#dbeafe\"/><text x=\"288\" y=\"212\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e3a8a\">Derinlik artarsa</text><text x=\"288\" y=\"232\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">v ve λ büyür</text><text x=\"288\" y=\"252\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">Düğüm sayısı azalır,</text><text x=\"288\" y=\"270\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">çizgiler seyrekleşir</text><rect x=\"384\" y=\"192\" width=\"172\" height=\"95\" rx=\"10\" fill=\"#fef3c7\"/><text x=\"470\" y=\"212\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#92400e\">Kaynaklar uzaklaşırsa</text><text x=\"470\" y=\"232\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">Aralarına daha çok</text><text x=\"470\" y=\"252\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">dalga boyu sığar</text><text x=\"470\" y=\"270\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">Düğüm sayısı artar</text><rect x=\"566\" y=\"192\" width=\"174\" height=\"95\" rx=\"10\" fill=\"#fce7f3\"/><text x=\"653\" y=\"212\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#9d174d\">Genlik artarsa</text><text x=\"653\" y=\"232\" text-anchor=\"middle\" font-size=\"11\" fill=\"#831843\">Çizgilerin yeri ve</text><text x=\"653\" y=\"252\" text-anchor=\"middle\" font-size=\"11\" fill=\"#831843\">sayısı değişmez;</text><text x=\"653\" y=\"270\" text-anchor=\"middle\" font-size=\"11\" fill=\"#831843\">katarlar belirginleşir</text></svg>"
+    },
+    {
+      "baslik": "Simülasyonla Gözlem, Günlük Hayattan Örnekler ve Sık Yapılan Hatalar",
+      "metin": [
+        "Okulda dalga leğeni bulunmasa bile girişim desenini açık erişimli dalga girişimi simülasyonlarıyla rahatlıkla inceleyebiliriz. Önce tek bir kaynak açılarak eş merkezli dairesel dalgalar izlenir. Ardından ikinci kaynak aynı frekansla çalıştırıldığında ekranda bazı bölgelerin sakinleştiği, bazı bölgelerin ise çalkalandığı görülür. Simülasyon duraklatılarak sakin şeritler (düğüm çizgileri) ve çalkantılı şeritler (katar çizgileri) defterdeki çizime aktarılır. Sonra yalnız bir değişken değiştirilir: frekans artırılıp çizgilerin sayısı gözlenir, kaynak aralığı değiştirilip yeni desen çizilir. Her seferinde tek değişkeni değiştirmek, hangi etkenin deseni nasıl etkilediğini açıkça görmemizi sağlar.",
+        "Girişim günlük hayatta da karşımıza çıkar. Durgun bir gölete aynı anda ve yakın noktalara iki taş atıldığında halkalar birbirinin içinden geçerken kısa süre için girişim deseni görülebilir. Havuzda iki arkadaş elleriyle suya aynı ritimde vurduğunda da benzer çalkantılı ve sakin bölgeler oluşur. Girişim yalnız su dalgalarına özgü değildir: {koyu:gürültü önleyici kulaklıklar}, ortamdaki sese karşı onunla söndürücü girişim yapacak bir ses dalgası üreterek gürültüyü azaltır. Büyük salonlarda bazı noktalarda sesin daha zayıf duyulmasında da ses dalgalarının girişiminin payı vardır.",
+        "Girişim konusunda yapılan en yaygın hata, düğüm çizgisinde su olmadığını düşünmektir; oysa orada su vardır, yalnız titreşmez. İkinci yaygın hata, genlik artırıldığında çizgi sayısının artacağını sanmaktır; çizgilerin sayısı dalga boyuna ve kaynak aralığına bağlıdır, genliğe bağlı değildir. Üçüncü hata, katar çizgisindeki bir noktanın sürekli tepe olarak kaldığını düşünmektir; katar noktası en büyük genlikle yukarı aşağı salınır. Son olarak, merkez doğrusunun eş zamanlı titreşen kaynaklarda bir katar çizgisi olduğu unutulmamalıdır. Bu hafta girişimi su dalgalarında nitel olarak öğrendik; bir sonraki adımda benzer bir desenin ışıkta nasıl oluştuğuna ve hangi değişkenlerden etkilendiğine geçeceğiz."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Yaygın Yanılgı",
+          "Doğrusu",
+          "Gerekçe"
+        ],
+        "satirlar": [
+          [
+            "Düğüm çizgisinde su yoktur.",
+            "Su vardır, yalnız titreşmez.",
+            "Tepe ile çukurun etkileri birbirini dengeler."
+          ],
+          [
+            "Genlik artınca çizgi sayısı artar.",
+            "Çizgi sayısı ve yeri değişmez.",
+            "Genlik dalga boyunu değiştirmez."
+          ],
+          [
+            "Katar noktası hep tepededir.",
+            "Katar noktası en büyük genlikle salınır.",
+            "Sırayla tepe-tepe ve çukur-çukur karşılaşır."
+          ],
+          [
+            "Merkez doğrusu bir düğüm çizgisidir.",
+            "Eş zamanlı kaynaklarda merkez doğrusu katardır.",
+            "Noktalar iki kaynağa eşit uzaklıktadır."
+          ],
+          [
+            "Frekansları farklı kaynaklar da sabit desen verir.",
+            "Kararlı desen oluşmaz, görüntü kayar.",
+            "Karşılaşma noktaları sürekli yer değiştirir."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Gürültü Önleyici Kulaklıklar",
+          "metin": "Kulaklıktaki mikrofon ortam sesini algılar; devre bu sesin tepelerine karşı çukur, çukurlarına karşı tepe oluşturan bir ses üretir. Söndürücü girişim sayesinde kulağa ulaşan gürültü azalır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Tek Değişken Kuralı",
+          "metin": "Simülasyonda aynı anda yalnız bir ayarı değiştirin. Hem frekansı hem kaynak aralığını birlikte değiştirirseniz desendeki değişimin hangi etkenden kaynaklandığını ayırt edemezsiniz."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">Simülasyonda Gözlem Adımları ve Sık Yapılan Hatalar</text><rect x=\"20\" y=\"45\" width=\"350\" height=\"240\" rx=\"12\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"2\"/><rect x=\"20\" y=\"45\" width=\"350\" height=\"32\" rx=\"12\" fill=\"#2563eb\"/><text x=\"195\" y=\"66\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#ffffff\">Gözlem Adımları</text><circle cx=\"45\" cy=\"100\" r=\"12\" fill=\"#dbeafe\" stroke=\"#2563eb\"/><text x=\"45\" y=\"104\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">1</text><text x=\"65\" y=\"104\" font-size=\"12\" fill=\"#1e293b\">Tek kaynakla dairesel dalgaları izle</text><circle cx=\"45\" cy=\"140\" r=\"12\" fill=\"#dbeafe\" stroke=\"#2563eb\"/><text x=\"45\" y=\"144\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">2</text><text x=\"65\" y=\"144\" font-size=\"12\" fill=\"#1e293b\">İkinci kaynağı aynı frekansla aç</text><circle cx=\"45\" cy=\"180\" r=\"12\" fill=\"#dbeafe\" stroke=\"#2563eb\"/><text x=\"45\" y=\"184\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">3</text><text x=\"65\" y=\"184\" font-size=\"12\" fill=\"#1e293b\">Sakin ve çalkantılı şeritleri çiz</text><circle cx=\"45\" cy=\"220\" r=\"12\" fill=\"#dbeafe\" stroke=\"#2563eb\"/><text x=\"45\" y=\"224\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">4</text><text x=\"65\" y=\"224\" font-size=\"12\" fill=\"#1e293b\">Frekansı artır, çizgi sayısını gözle</text><circle cx=\"45\" cy=\"260\" r=\"12\" fill=\"#dbeafe\" stroke=\"#2563eb\"/><text x=\"45\" y=\"264\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">5</text><text x=\"65\" y=\"264\" font-size=\"12\" fill=\"#1e293b\">Kaynak aralığını değiştir, yeniden çiz</text><rect x=\"390\" y=\"45\" width=\"350\" height=\"240\" rx=\"12\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"2\"/><rect x=\"390\" y=\"45\" width=\"350\" height=\"32\" rx=\"12\" fill=\"#dc2626\"/><text x=\"565\" y=\"66\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#ffffff\">Yanılgı ve Doğrusu</text><text x=\"405\" y=\"102\" font-size=\"11.5\" fill=\"#b91c1c\">✗ Düğüm çizgisinde su yoktur</text><text x=\"405\" y=\"120\" font-size=\"11.5\" fill=\"#15803d\">✓ Su vardır, yalnız titreşmez</text><line x1=\"405\" y1=\"133\" x2=\"725\" y2=\"133\" stroke=\"#e2e8f0\"/><text x=\"405\" y=\"155\" font-size=\"11.5\" fill=\"#b91c1c\">✗ Genlik artınca çizgi sayısı artar</text><text x=\"405\" y=\"173\" font-size=\"11.5\" fill=\"#15803d\">✓ Sayı ve yer değişmez, katarlar belirginleşir</text><line x1=\"405\" y1=\"186\" x2=\"725\" y2=\"186\" stroke=\"#e2e8f0\"/><text x=\"405\" y=\"208\" font-size=\"11.5\" fill=\"#b91c1c\">✗ Merkez doğrusu bir düğüm çizgisidir</text><text x=\"405\" y=\"226\" font-size=\"11.5\" fill=\"#15803d\">✓ Eş zamanlı kaynaklarda merkez doğrusu katardır</text><line x1=\"405\" y1=\"239\" x2=\"725\" y2=\"239\" stroke=\"#e2e8f0\"/><text x=\"405\" y=\"261\" font-size=\"11.5\" fill=\"#b91c1c\">✗ Farklı frekanslar da sabit desen verir</text><text x=\"405\" y=\"277\" font-size=\"11.5\" fill=\"#15803d\">✓ Desen kayar, kararlı görüntü oluşmaz</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "İki kaynaktan yayılan su dalgaları bir leğende karşılaşıyor. Belli bir anda P noktasında iki dalganın tepeleri, R noktasında iki dalganın çukurları, S noktasında ise bir dalganın tepesi ile diğerinin çukuru karşılaşıyor. Dalgaların genlikleri eşit olduğuna göre her noktadaki girişim türünü ve suyun durumunu belirtiniz.",
+      "cevap": "1. adım: P noktasında tepe ile tepe karşılaştığı için etkiler birbirini destekler; burada {koyu:yapıcı girişim} vardır ve su tek bir dalganın oluşturacağından daha yükseğe çıkar.\n2. adım: R noktasında çukur ile çukur karşılaşmıştır; etkiler yine aynı yönde olduğundan bu da {koyu:yapıcı girişimdir} ve su daha derin bir çukur oluşturur.\n3. adım: S noktasında tepe ile çukur karşılaşmıştır; etkiler zıt yönlü olduğundan {koyu:söndürücü girişim} oluşur. Genlikler eşit olduğu için etkiler tamamen dengelenir ve su yüzeyi düz kalır.\nSonuç: P ve R katar noktası, S düğüm noktası özelliği gösterir.",
+      "ipucu": "Karşılaşan kısımların aynı türden mi (tepe-tepe, çukur-çukur) yoksa farklı türden mi (tepe-çukur) olduğuna bakınız."
+    },
+    {
+      "soru": "Bir öğrenci girişim desenini çizerken {alt:K|1} kaynağının 3. tepe çemberi ile {alt:K|2} kaynağının 3. tepe çemberinin kesiştiği bir A noktası buluyor. A noktası desenin hangi çizgisi üzerindedir? Bu noktada su nasıl davranır?",
+      "cevap": "1. adım: Çemberler eşit aralıklarla çizildiği için iki kaynağın 3. tepe çemberleri, kaynaklardan aynı uzaklıktaki noktaları gösterir. Demek ki A noktası iki kaynağa eşit uzaklıktadır.\n2. adım: İki kaynağa eşit uzaklıktaki noktalar, kaynakları birleştiren doğru parçasının orta dikmesi üzerindedir; bu doğru {koyu:merkez doğrusudur}.\n3. adım: A noktasında tepe ile tepe karşılaştığı için yapıcı girişim oluşur. Merkez doğrusu bir {koyu:katar çizgisidir}.\nSonuç: A noktası merkez doğrusu üzerindedir; burada su en büyük genlikle yukarı aşağı titreşir.",
+      "ipucu": "Aynı sıra numaralı çemberler kaynaklardan eşit uzaklığı gösterir; eşit uzaklıktaki noktaların hangi doğru üzerinde toplandığını düşününüz."
+    },
+    {
+      "soru": "Aynı çizimde {alt:K|1} kaynağının 2. tepe çemberi (düz çizgi) ile {alt:K|2} kaynağının 2. çukur çemberi (kesikli çizgi) bir B noktasında kesişiyor. B noktası nasıl işaretlenmeli ve hangi çizgiye aittir?",
+      "cevap": "1. adım: Düz çizgi tepeyi, kesikli çizgi çukuru gösterir. B noktasında bir kaynağın tepesi ile diğer kaynağın çukuru karşılaşmaktadır.\n2. adım: Tepe ile çukurun karşılaşması {koyu:söndürücü girişimdir}; genlikler eşitse su bu noktada titreşmez.\n3. adım: Söndürücü girişim noktaları çizimde boş nokta (○) ile gösterilir. Bu tür noktalar birleştirildiğinde {koyu:düğüm çizgileri} elde edilir.\nSonuç: B noktası boş nokta ile işaretlenir ve bir düğüm çizgisi üzerindedir; bu nokta merkez doğrusunun yanındaki düğüm çizgilerinden birine aittir.",
+      "ipucu": "Düz ve kesikli çizgilerin hangi dalga kısımlarını temsil ettiğini hatırlayınız."
+    },
+    {
+      "soru": "Dalga leğeninde aynı frekansla birlikte titreşen iki noktasal kaynakla girişim deseni oluşturuluyor. Su derinliği değiştirilmeden kaynakların frekansı artırılırsa desende neler gözlenir? Nedenini açıklayınız.",
+      "cevap": "1. adım: Su derinliği değişmediği için dalgaların yayılma hızı (v) değişmez.\n2. adım: {koyu:λ = {kesir:v|f}} ilişkisine göre hız sabitken frekans artarsa dalga boyu küçülür.\n3. adım: Dalga boyu küçülünce kaynakların arasına daha fazla tepe ve çukur sığar; çizimdeki kesişim sayısı artar.\n4. adım: Bu nedenle {koyu:katar ve düğüm çizgilerinin sayısı artar}, çizgiler birbirine yaklaşarak sıklaşır.\nSonuç: Daha fazla ve daha sık aralıklı çizgilerden oluşan bir desen gözlenir; desen yine merkez doğrusuna göre simetrik kalır ve merkez doğrusu yine katar çizgisidir.",
+      "ipucu": "Önce dalga boyunun nasıl değiştiğini bulunuz, sonra kaynakların arasına sığan dalga sayısını düşününüz."
+    },
+    {
+      "soru": "Bir öğrenci iki ayrı motorla çalışan kaynaklar kullanarak dalga leğeninde girişim gözlemeye çalışıyor; ancak çizgilerin sürekli kaydığını ve belirgin bir desen oluşmadığını görüyor. Bunun nedenini ve çözüm yolunu açıklayınız.",
+      "cevap": "1. adım: Kararlı (yerinde duran) bir girişim deseni için iki kaynağın frekansları eşit olmalı ve kaynaklar sürekli birlikte titreşmelidir.\n2. adım: İki ayrı motor tam olarak aynı hızda dönmediği için kaynakların {koyu:frekansları birbirinden biraz farklıdır}. Bu durumda tepe-tepe ve tepe-çukur karşılaşmalarının yerleri sürekli değişir.\n3. adım: Karşılaşma noktaları kaydığı için katar ve düğüm çizgileri sabit kalmaz; desen akıp gider.\n4. adım: Çözüm olarak iki uç, {koyu:tek bir motora bağlı aynı çubuğa} takılmalıdır. Ya da doğrusal dalgalar çift yarıklı bir engele gönderilerek kırınım yoluyla eş zamanlı iki kaynak elde edilmelidir.\nSonuç: Kaynaklar aynı frekansla birlikte titreştiğinde desen yerinde durur.",
+      "ipucu": "Kararlı desen koşulunu hatırlayınız ve iki ayrı motorun bu koşulu neden sağlayamadığını düşününüz."
+    },
+    {
+      "soru": "Kararlı bir girişim deseni gözlenen dalga leğeninde önce yalnızca kaynakların genliği artırılıyor; daha sonra genlik eski haline getirilip leğene su ekleniyor. Her iki değişikliğin desene etkisini ayrı ayrı açıklayınız.",
+      "cevap": "1. değişiklik (genlik artırma):\n- Genlik, dalgaların ne kadar yükselip alçaldığını belirler; dalga boyunu değiştirmez.\n- Dalga boyu değişmediği için tepe ve çukurların karşılaştığı yerler aynı kalır; {koyu:çizgilerin sayısı ve yeri değişmez}.\n- Katar çizgilerindeki çalkantı büyür ve desen daha net görünür.\n2. değişiklik (su ekleme):\n- Derinlik artınca dalgaların yayılma hızı artar; frekans değişmediği için λ = {kesir:v|f} uyarınca dalga boyu büyür.\n- Kaynakların arasına daha az dalga boyu sığar; {koyu:düğüm çizgisi sayısı azalır}, çizgiler seyrekleşip birbirinden açılır.\nSonuç: Genlik desenin yalnız belirginliğini, derinlik ise çizgilerin sayısını ve aralığını değiştirir.",
+      "ipucu": "Her değişikliğin dalga boyunu etkileyip etkilemediğini sorgulayınız; çizgi sayısını belirleyen dalga boyu ve kaynak aralığıdır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Dalga leğeninde aynı frekansla birlikte titreşen iki kaynağın oluşturduğu girişim deseninde, bir kaynağın dalga tepesi ile diğer kaynağın dalga çukurunun sürekli karşılaştığı noktalar için aşağıdakilerden hangisi doğrudur? (Genlikler eşittir.)",
+      "secenekler": [
+        "Bu noktalarda su en büyük genlikle titreşir.",
+        "Bu noktalar merkez doğrusunu oluşturur.",
+        "Bu noktalarda su yüzeyi neredeyse hareketsiz kalır; noktalar düğüm çizgisi üzerindedir.",
+        "Bu noktalarda dalgaların frekansı iki katına çıkar."
+      ],
+      "dogru": 2,
+      "aciklama": "Tepe ile çukurun karşılaşması söndürücü girişimdir; eşit genlikte etkiler birbirini dengeler ve su titreşmez. Bu noktaları birleştiren eğriler düğüm çizgileridir. Merkez doğrusu ise bir katar çizgisidir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Eş zamanlı titreşen iki noktasal kaynağın dalga leğeninde oluşturduğu girişim deseninde merkez doğrusu için aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "İki kaynağa eşit uzaklıktaki noktalardan oluşan bir katar çizgisidir.",
+        "Kaynakları birleştiren doğrunun kendisidir ve düğüm çizgisidir.",
+        "Üzerinde su hiç titreşmeyen bir düğüm çizgisidir.",
+        "Yalnız frekans çok yüksekken oluşan bir çizgidir."
+      ],
+      "dogru": 0,
+      "aciklama": "Merkez doğrusu kaynakları birleştiren doğru parçasının orta dikmesidir. Üzerindeki noktalar iki kaynağa eşit uzaklıkta olduğundan dalgalar bu noktalara aynı durumda ulaşır ve yapıcı girişim oluşur; bu yüzden merkez doğrusu bir katar çizgisidir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kararlı bir girişim deseninde düğüm çizgisi sayısını artırmak isteyen bir öğrenci aşağıdakilerden hangisini yapmalıdır?",
+      "secenekler": [
+        "Leğene su ekleyerek derinliği artırmak",
+        "Kaynakların frekansını artırmak",
+        "Kaynakların genliğini artırmak",
+        "Kaynakları birbirine yaklaştırmak"
+      ],
+      "dogru": 1,
+      "aciklama": "Frekans artınca dalga boyu küçülür ve kaynakların arasına daha çok dalga boyu sığar; düğüm çizgisi sayısı artar. Su eklemek dalga boyunu büyütür, kaynakları yaklaştırmak çizgi sayısını azaltır, genlik ise çizgi sayısını etkilemez."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kararlı bir girişim deseni gözlenen dalga leğeninde frekans ve derinlik değiştirilmeden yalnız iki kaynağın genliği artırılıyor. Buna göre aşağıdakilerden hangisi gözlenir?",
+      "secenekler": [
+        "Düğüm çizgisi sayısı artar.",
+        "Çizgiler merkez doğrusuna doğru kayar.",
+        "Desen kararlılığını kaybeder ve sürekli kayar.",
+        "Çizgilerin sayısı ve yeri değişmez; katar çizgilerindeki dalgalanma belirginleşir."
+      ],
+      "dogru": 3,
+      "aciklama": "Genlik dalga boyunu değiştirmediği için çizgilerin yeri ve sayısı aynı kalır. Yalnızca katar çizgilerinde su daha yükseğe çıkıp daha derine iner; desen daha net görünür."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Karşılaşan iki dalga birbirinin içinden geçtikten sonra kendi genliğini ve dalga boyunu koruyarak yoluna devam eder.",
+          "dogru": true,
+          "aciklama": "Üst üste binme ilkesine göre karşılaşma yalnız o anda bileşke bir etki oluşturur; dalgaların özellikleri kalıcı olarak değişmez."
+        },
+        {
+          "metin": "Düğüm çizgileri üzerinde su bulunmaz; bu yüzden bu çizgiler ekranda sakin görünür.",
+          "dogru": false,
+          "aciklama": "Düğüm çizgilerinde su vardır; tepe ile çukurun etkileri birbirini dengelediği için su yalnızca titreşmez."
+        },
+        {
+          "metin": "Çukur ile çukurun karşılaştığı noktalarda yapıcı girişim oluşur.",
+          "dogru": true,
+          "aciklama": "Çukur-çukur karşılaşmasında etkiler aynı yöndedir ve daha derin bir çukur oluşur; bu da yapıcı girişimdir."
+        },
+        {
+          "metin": "Eş zamanlı titreşen iki kaynağın oluşturduğu desende düğüm çizgilerinin sayısı tek sayı olabilir.",
+          "dogru": false,
+          "aciklama": "Desen merkez doğrusuna göre simetrik olduğundan düğüm çizgileri iki yanda eşleşir; sayıları her zaman çifttir."
+        },
+        {
+          "metin": "Leğendeki su derinliği artırıldığında dalga boyu büyür ve düğüm çizgisi sayısı azalır.",
+          "dogru": true,
+          "aciklama": "Derinlik artınca dalgaların hızı ve dalga boyu büyür; kaynakların arasına daha az dalga boyu sığdığı için çizgi sayısı azalır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Yapıcı girişim",
+          "Tepe ile tepenin veya çukur ile çukurun karşılaşıp etkilerin birbirini desteklemesi"
+        ],
+        [
+          "Söndürücü girişim",
+          "Tepe ile çukurun karşılaşıp etkilerin birbirini dengelemesi"
+        ],
+        [
+          "Katar çizgisi",
+          "Suyun en büyük genlikle titreştiği noktaları birleştiren eğri"
+        ],
+        [
+          "Düğüm çizgisi",
+          "Suyun neredeyse hiç titreşmediği noktaları birleştiren eğri"
+        ],
+        [
+          "Merkez doğrusu",
+          "Kaynakları birleştiren doğru parçasının orta dikmesi üzerindeki katar çizgisi"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Aynı ortamda karşılaşan iki dalganın üst üste binerek düzenli bir desen oluşturmasına ___ denir.",
+          "cevap": "girişim"
+        },
+        {
+          "metin": "Bir dalganın tepesiyle diğerinin çukurunun karşılaştığı noktaları birleştiren eğriye ___ çizgisi denir.",
+          "cevap": "düğüm"
+        },
+        {
+          "metin": "Dalga leğeninde kararlı bir girişim deseni için iki kaynağın ___ eşit olmalıdır.",
+          "cevap": "frekansları"
+        },
+        {
+          "metin": "Kaynakları birleştiren doğru parçasının orta dikmesi ___ doğrusu adını alır ve bir katar çizgisidir.",
+          "cevap": "merkez"
+        },
+        {
+          "metin": "Leğene su eklendiğinde dalga boyu büyüdüğü için düğüm çizgisi sayısı ___.",
+          "cevap": "azalır"
+        }
+      ],
+      "kelimeler": [
+        "girişim",
+        "düğüm",
+        "frekansları",
+        "merkez",
+        "azalır"
+      ],
+      "fazla": [
+        "kırılma",
+        "artar"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir öğrenciden, aralarında birkaç dalga boyu uzaklık bulunan ve aynı frekansla birlikte titreşen iki noktasal kaynağın oluşturduğu girişim desenini kâğıt, kalem ve pergel kullanarak çizmesi isteniyor. a) Öğrencinin çizim adımlarını sıralayınız. b) Çizimde merkez doğrusunun ve düğüm çizgilerinin nasıl belirleneceğini açıklayınız. c) Kaynak frekansı artırılmış olsaydı yeni çizimin nasıl farklılaşacağını belirtiniz.",
+      "ipuclari": [
+        "1. adım: Kaynakları işaretleyip her biri için tepeleri düz, çukurları kesikli eş merkezli çemberlerle çizmeyi planlayınız.",
+        "2. adım: Tepe-tepe ve çukur-çukur kesişimlerini dolu nokta, tepe-çukur kesişimlerini boş nokta ile işaretleyip aynı tür noktaları birleştiriniz.",
+        "3. adım: Frekans artınca dalga boyunun küçüldüğünü ve bunun çember aralıklarını, dolayısıyla çizgi sayısını nasıl etkilediğini düşününüz."
+      ],
+      "cevap": "a) Önce {alt:K|1} ve {alt:K|2} kaynakları kâğıda işaretlenir. Pergelle her kaynağın çevresine eşit aralıklarla büyüyen eş merkezli çemberler çizilir; bu düz çemberler dalga tepeleridir ve aralıkları iki kaynakta aynıdır. Ardışık iki tepenin tam ortasına çukurları gösteren kesikli çemberler eklenir. Tepe-tepe ve çukur-çukur kesişimleri dolu nokta (●), tepe-çukur kesişimleri boş nokta (○) ile işaretlenir. Son olarak aynı tür noktalar yumuşak eğrilerle birleştirilir.\nb) İki kaynağın aynı sıra numaralı çemberlerinin kesişimleri kaynaklara eşit uzaklıktadır ve kaynakları birleştiren doğru parçasının orta dikmesi üzerinde dizilir. Bu noktalar dolu nokta olduğundan orta dikme bir katar çizgisi, yani {koyu:merkez doğrusudur}. Boş noktaları birleştiren eğriler {koyu:düğüm çizgileridir}; merkez doğrusunun iki yanında simetrik olarak, katar çizgileriyle sırayla yer alırlar ve sayıları çifttir.\nc) Frekans artırılsaydı derinlik değişmediği için dalga boyu küçülür, çemberler daha sık çizilirdi. Kaynakların arasına daha çok tepe ve çukur sığacağından kesişim sayısı artar; {koyu:daha fazla ve daha sık aralıklı katar ve düğüm çizgisi} elde edilirdi. Merkez doğrusu yine katar çizgisi olarak kalır ve desen yine simetrik olurdu."
+    }
+  ]
+}

@@ -38,6 +38,8 @@ YONERGE_RE = re.compile(r"\b(tartışınız|grupça|araştırınız|poster|afiş
 MUTLAK_RE = re.compile(r"\b(kesin(likle)?|asla|her zaman|hiçbir zaman|tek başına|yalnızca|sadece|hiç)\b", re.I)
 
 
+GOSTERIM_HAM = re.compile(r"\{(aci|olcu|dogru|vektor|devir|isin|parca|uzunluk|us|kesir|kok|koyu|ar|alt|formul|vurgu|renk|egik|i):[^{}<>]*\}")
+
 def _dersler_sozlugu():
     p = PUBLIC / "veri" / "dersler.json"
     if not p.exists():
@@ -271,6 +273,12 @@ def denetle(hizli=False):
                 hatalar.append(f"{p.relative_to(KOK)}: düz kök işareti (√/∛/∜)")
             if uzanti == "html" and re.search(r"\{kok:", s):
                 hatalar.append(f"{p.relative_to(KOK)}: çözülmemiş {{kok:...}} gösterimi")
+            if uzanti == "html":
+                # görsel ve başlık gibi gösterim çözücüsünden geçmeyen alanlarda ham {ar:…}, {koyu:…} kalmasın
+                govde = re.sub(r"<(script|style)\b.*?</\1>", "", s, flags=re.S)
+                m = GOSTERIM_HAM.search(govde)
+                if m:
+                    hatalar.append(f"{p.relative_to(KOK)}: çözülmemiş gösterim '{m.group(0)[:40]}'")
         if not n:
             hatalar.append(f"{klasor}/*.{uzanti}: taranacak dosya bulunamadı")
 

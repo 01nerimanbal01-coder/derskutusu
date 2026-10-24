@@ -51,6 +51,8 @@ Her hafta:
 
 Gönderilen her toplu isteğin hangi dersleri içerdiği `araclar/veri/toplu_durum.json` dosyasında kayıtlıdır; elle değiştirilmez. Bu kayıt sayesinde aynı derse iki kez ödenmez, bitmiş isteğin sonucu bir kez yazılır (sonradan bilerek silinen özet geri gelmez) ve içindeki dersler başka yoldan yazılmış bir istek iptal edilir. Kayıtta olmayan bir toplu istek sürerken (ör. yerelden gönderilmiş) yeni istek gönderilmez; o istek bitip toplanınca devam edilir.
 
+Model yanıtındaki bozuk JSON (kaçırılmamış tırnak gibi) araçta onarılır. Bitmiş bir toplu isteğin sonuçlarını yeniden işletmek gerekirse (ör. araç düzeltildikten sonra) kimliği bu dosyadaki `toplanan` listesinden silinir; sonraki çalıştırma sonuçları yeniden ödemeden okur, zaten yazılmış özetleri atlar.
+
 Bir çalıştırma sürerken ikincisini başlatmayın: sırada bekleyen çalıştırmayı iki saatte bir gelen toplayıcı iptal edebilir. Önceki bitince başlatın. Toplu kip yalnız `main` dalında çalışır; düzeltme turu ilk turun modeli ve çabasıyla gönderilir.
 
 İş akışı özetleri, görsel modüllerini, sosyal medya kartlarını ve paylaşım kuyruğunu üretir; her özet sitenin sayfa üreticisiyle derlenip yayın denetiminden geçirilir. Denetime takılan özet ayıklanır, kalanlar yayımlanır. Üretilen dosyalar her çalıştırmanın **Artifacts** bölümünde 30 gün saklanır. Yerelde aynı iş: `python3 araclar/ozet_api_uret.py --hafta 15 --toplu`, yalnız toplama: `--topla` (yardım: `--help`; API'siz prova: `--kuru`).
