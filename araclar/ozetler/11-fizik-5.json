@@ -15,30 +15,30 @@
   ],
   "giris": "Klasik mekaniğin temelini oluşturan {koyu:Newton'ın Hareket Yasaları}, kuvvet ile hareket arasındaki neden-sonuç ilişkisini matematiksel olarak modeller. Bir cismin neden durduğunu, sabit hızla ilerlediğini ya da hızlandığını anlamak için önce cisme etki eden tüm dış kuvvetleri {koyu:serbest cisim diyagramında} göstermek, ardından {koyu:eylemsizlik, temel yasa ve etki-tepki} ilkelerini uygulamak gerekir.",
   "ozet": [
-    "{koyu:Newton'ın Birinci Yasası (Eylemsizlik):} Bir cisme etki eden net kuvvet sıfır ise ({koyu:F_net = 0}), cisim duruyorsa durmaya, hareket hâlindeyse {koyu:sabit hızla (a = 0)} hareketine devam eder.",
-    "{koyu:Newton'ın İkinci Yasası (Dinamiğin Temel Prensibi):} Bir cisme etki eden net kuvvet sıfırdan farklı ise cisim net kuvvet yönünde ivmelenir: {koyu:F_net = m · a}.",
+    "{koyu:Newton'ın Birinci Yasası (Eylemsizlik):} Bir cisme etki eden net kuvvet sıfır ise ({koyu:F{alt:net} = 0}), cisim duruyorsa durmaya, hareket hâlindeyse {koyu:sabit hızla (a = 0)} hareketine devam eder.",
+    "{koyu:Newton'ın İkinci Yasası (Dinamiğin Temel Prensibi):} Bir cisme etki eden net kuvvet sıfırdan farklı ise cisim net kuvvet yönünde ivmelenir: {koyu:F{alt:net} = m · a}.",
     "{koyu:Newton'ın Üçüncü Yasası (Etki-Tepki):} Etkileşen iki cisim birbirine eşit büyüklükte ve zıt yönde kuvvet uygular ({koyu:F₁₂ = −F₂₁}); bu kuvvetler {koyu:farklı cisimler üzerinde} olduğundan birbirini dengelemez.",
-    "{koyu:Serbest Cisim Diyagramı (SCD)}, incelenen cismin çevresinden soyutlanarak {koyu:cismin kendisine dışarıdan etki eden} kuvvet vektörlerinin (ağırlık G, normal kuvvet N, ip gerilmesi T, sürtünme f_s) gösterildiği şemadır.",
-    "Eğik düzlem üzerindeki m kütleli cismin ağırlığının eğik düzleme paralel bileşeni {koyu:G_x = m · g · sin(α)}, dik bileşeni ise {koyu:G_y = m · g · cos(α)} olup sürtünmesiz eğik düzlemde ivme kütleden bağımsız olarak {koyu:a = g · sin(α)} olur.",
-    "İple birbirine bağlı cisim sistemlerinde önce tüm sistem için {koyu:a} = {kesir:F_net(toplam)|m_toplam} bağıntısıyla ortak ivme bulunur, ardından tek bir kütlenin diyagramından {koyu:ip gerilmesi (T)} hesaplanır."
+    "{koyu:Serbest Cisim Diyagramı (SCD)}, incelenen cismin çevresinden soyutlanarak {koyu:cismin kendisine dışarıdan etki eden} kuvvet vektörlerinin (ağırlık G, normal kuvvet N, ip gerilmesi T, sürtünme f{alt:s}) gösterildiği şemadır.",
+    "Eğik düzlem üzerindeki m kütleli cismin ağırlığının eğik düzleme paralel bileşeni {koyu:G{alt:x} = m · g · sin(α)}, dik bileşeni ise {koyu:G{alt:y} = m · g · cos(α)} olup sürtünmesiz eğik düzlemde ivme kütleden bağımsız olarak {koyu:a = g · sin(α)} olur.",
+    "İple birbirine bağlı cisim sistemlerinde önce tüm sistem için {koyu:a} = {kesir:F{alt:net}(toplam)|m{alt:toplam}} bağıntısıyla ortak ivme bulunur, ardından tek bir kütlenin diyagramından {koyu:ip gerilmesi (T)} hesaplanır."
   ],
   "bolumler": [
     {
       "baslik": "1. Newton'ın Birinci Hareket Yasası: Eylemsizlik",
       "metin": [
-        "Maddelerin mevcut hareket durumlarını (durgunluk veya sabit hızlı hareket) koruma eğilimine {koyu:eylemsizlik} adı verilir. {koyu:Newton'ın Birinci Hareket Yasası}'na göre, bir cisme etki eden dış kuvvetlerin bileşkesi (net kuvvet) sıfır ise ({koyu:∑F = F_net = 0}) cismin ivmesi sıfırdır ({koyu:a = 0}). Bu durumda durmakta olan bir cisim durmaya devam eder; başlangıçta ilk hızı olan bir cisim ise doğrultusunu ve süratini değiştirmeden {koyu:sabit hızlı (düzgün doğrusal) hareketini} sürdürür. Bir cismin eylemsizliğinin ölçüsü onun {koyu:kütlesidir (m)}; kütlesi büyük olan cisimlerin hareket durumunu değiştirmek daha zordur."
+        "Maddelerin mevcut hareket durumlarını (durgunluk veya sabit hızlı hareket) koruma eğilimine {koyu:eylemsizlik} adı verilir. {koyu:Newton'ın Birinci Hareket Yasası}'na göre, bir cisme etki eden dış kuvvetlerin bileşkesi (net kuvvet) sıfır ise ({koyu:∑F = F{alt:net} = 0}) cismin ivmesi sıfırdır ({koyu:a = 0}). Bu durumda durmakta olan bir cisim durmaya devam eder; başlangıçta ilk hızı olan bir cisim ise doğrultusunu ve süratini değiştirmeden {koyu:sabit hızlı (düzgün doğrusal) hareketini} sürdürür. Bir cismin eylemsizliğinin ölçüsü onun {koyu:kütlesidir (m)}; kütlesi büyük olan cisimlerin hareket durumunu değiştirmek daha zordur."
       ],
       "kutu": {
         "tur": "dikkat",
         "baslik": "Net Kuvvet Sıfır İken Hareket Olabilir!",
-        "metin": "{koyu:F_net = 0} olması cismin mutlaka durduğu anlamına gelmez! Uzay boşluğunda veya sürtünmesiz ortamda {koyu:sabit hızla (v = sabit)} ilerleyen bir cisme etki eden net kuvvet de sıfırdır."
+        "metin": "{koyu:F{alt:net} = 0} olması cismin mutlaka durduğu anlamına gelmez! Uzay boşluğunda veya sürtünmesiz ortamda {koyu:sabit hızla (v = sabit)} ilerleyen bir cisme etki eden net kuvvet de sıfırdır."
       },
       "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"14\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">NEWTON'IN HAREKET YASALARI (DİNAMİĞİN TEMEL İLKELERİ)</text><rect x=\"20\" y=\"44\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#ECFDF5\" stroke=\"#059669\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"44\" width=\"205\" height=\"30\" rx=\"10\" fill=\"#059669\"/><rect x=\"20\" y=\"62\" width=\"205\" height=\"12\" fill=\"#059669\"/><text x=\"122.5\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">1. EYLEMSİZLİK YASASI</text><text x=\"32\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Net kuvvet sıfır ise:</text><text x=\"32\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  ΣF = 0  =>  a = 0</text><text x=\"32\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Duran cisim durmaya</text><text x=\"32\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">  devam eder (v = 0).</text><text x=\"32\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">• Hareketli cisim sabit</text><text x=\"32\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  hızla (düzgün doğrusal)</text><text x=\"32\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">  hareketini sürdürür.</text><text x=\"32\" y=\"218\" font-size=\"10.5\" fill=\"#1E293B\">• Kütle, eylemsizliğin ölçüsüdür.</text><rect x=\"237\" y=\"44\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#EFF6FF\" stroke=\"#2563EB\" stroke-width=\"1.8\"/><rect x=\"237\" y=\"44\" width=\"205\" height=\"30\" rx=\"10\" fill=\"#2563EB\"/><rect x=\"237\" y=\"62\" width=\"205\" height=\"12\" fill=\"#2563EB\"/><text x=\"339.5\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">2. TEMEL YASA (Fnet = m·a)</text><text x=\"249\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Net kuvvet sıfırdan farklı</text><text x=\"249\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  ise cisim ivmeli hareket</text><text x=\"249\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">  yapar: Fnet = m · a</text><text x=\"249\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• İvme (a), net kuvvetle</text><text x=\"249\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  aynı yönlü ve doğru</text><text x=\"249\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  orantılıdır.</text><text x=\"249\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">• Sabit kuvvette ivme,</text><text x=\"249\" y=\"218\" font-size=\"10.5\" fill=\"#1E293B\">  kütle ile ters orantılıdır.</text><rect x=\"455\" y=\"44\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#F5F3FF\" stroke=\"#7C3AED\" stroke-width=\"1.8\"/><rect x=\"455\" y=\"44\" width=\"205\" height=\"30\" rx=\"10\" fill=\"#7C3AED\"/><rect x=\"455\" y=\"62\" width=\"205\" height=\"12\" fill=\"#7C3AED\"/><text x=\"557.5\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">3. ETKİ-TEPKİ YASASI</text><text x=\"467\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Her etki kuvvetine eşit</text><text x=\"467\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  büyüklükte ve zıt yönde</text><text x=\"467\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">  bir tepki kuvveti vardır:</text><text x=\"467\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">  F₁₂ = -F₂₁</text><text x=\"467\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">• Etki ve tepki kuvvetleri</text><text x=\"467\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  FARKLI cisimler üzerindedir.</text><text x=\"467\" y=\"200\" font-size=\"10.5\" fill=\"#1E293B\">• Bu nedenle birbirini</text><text x=\"467\" y=\"218\" font-size=\"10.5\" fill=\"#1E293B\">  dengelemez (bileşkesi alınmaz).</text></svg>"
     },
     {
       "baslik": "2. Newton'ın İkinci Hareket Yasası: Dinamiğin Temel Prensibi",
       "metin": [
-        "Bir cisme etki eden net kuvvet sıfırdan farklı olduğunda cismin hızı değişir, yani cisim {koyu:ivmeli hareket} yapar. {koyu:Newton'ın İkinci Hareket Yasası}'na göre bir cismin kazandığı ivme ({koyu:a}), cisme etki eden net kuvvet ({koyu:F_net}) ile doğru orantılı ve her durumda net kuvvetle {koyu:aynı yönlüdür}; cismin kütlesi ({koyu:m}) ile ters orantılıdır. Bu ilişki matematiksel olarak {koyu:F_net = m · a} bağıntısıyla modellenir. SI birim sisteminde kütle birimi kilogram ({koyu:kg}), ivme birimi {koyu:m/s²} alındığında kuvvet birimi {koyu:Newton (N = kg·m/s²)} olur. Farklı kuvvetlerin uygulandığı bir cisim için çizilen {koyu:F_net – a grafiğinin eğimi} ({kesir:F_net|a} = m) cismin sabit kütlesini verir."
+        "Bir cisme etki eden net kuvvet sıfırdan farklı olduğunda cismin hızı değişir, yani cisim {koyu:ivmeli hareket} yapar. {koyu:Newton'ın İkinci Hareket Yasası}'na göre bir cismin kazandığı ivme ({koyu:a}), cisme etki eden net kuvvet ({koyu:F{alt:net}}) ile doğru orantılı ve her durumda net kuvvetle {koyu:aynı yönlüdür}; cismin kütlesi ({koyu:m}) ile ters orantılıdır. Bu ilişki matematiksel olarak {koyu:F{alt:net} = m · a} bağıntısıyla modellenir. SI birim sisteminde kütle birimi kilogram ({koyu:kg}), ivme birimi {koyu:m/s²} alındığında kuvvet birimi {koyu:Newton (N = kg·m/s²)} olur. Farklı kuvvetlerin uygulandığı bir cisim için çizilen {koyu:F{alt:net} – a grafiğinin eğimi} ({kesir:F{alt:net}|a} = m) cismin sabit kütlesini verir."
       ],
       "kutu": {
         "tur": "kural",
@@ -50,7 +50,7 @@
     {
       "baslik": "3. Newton'ın Üçüncü Hareket Yasası: Etki-Tepki Yasası",
       "metin": [
-        "Doğada kuvvetler tek başına değil, etkileşen iki cisim arasında çiftler hâlinde bulunur. {koyu:Newton'ın Üçüncü Hareket Yasası}'na göre A cismi B cismine bir {koyu:etki kuvveti (F_AB)} uyguladığında, B cismi de A cismine aynı anda, {koyu:eşit büyüklükte ve zıt yönde} bir {koyu:tepki kuvveti (F_BA = −F_AB)} uygular. Etki ve tepki kuvvetlerinin büyüklükleri birbirine eşittir ({koyu:{uzunluk:F_AB} = {uzunluk:F_BA}}); kütlelerin farklı olması bu eşitliği değiştirmez (örneğin Dünya'nın Ay'a uyguladığı çekim kuvveti ile Ay'ın Dünya'ya uyguladığı çekim kuvveti eşit büyüklüktedir). En kritik kural şudur: Etki ve tepki kuvvetleri {koyu:iki farklı cisim üzerine} etki ettiği için bileşkeleri alınamaz ve {koyu:birbirini dengelemez}."
+        "Doğada kuvvetler tek başına değil, etkileşen iki cisim arasında çiftler hâlinde bulunur. {koyu:Newton'ın Üçüncü Hareket Yasası}'na göre A cismi B cismine bir {koyu:etki kuvveti (F{alt:AB})} uyguladığında, B cismi de A cismine aynı anda, {koyu:eşit büyüklükte ve zıt yönde} bir {koyu:tepki kuvveti (F{alt:BA} = −F{alt:AB})} uygular. Etki ve tepki kuvvetlerinin büyüklükleri birbirine eşittir ({koyu:{uzunluk:F{alt:AB}} = {uzunluk:F{alt:BA}}}); kütlelerin farklı olması bu eşitliği değiştirmez (örneğin Dünya'nın Ay'a uyguladığı çekim kuvveti ile Ay'ın Dünya'ya uyguladığı çekim kuvveti eşit büyüklüktedir). En kritik kural şudur: Etki ve tepki kuvvetleri {koyu:iki farklı cisim üzerine} etki ettiği için bileşkeleri alınamaz ve {koyu:birbirini dengelemez}."
       ],
       "kutu": {
         "tur": "hatirla",
@@ -62,7 +62,7 @@
     {
       "baslik": "4. Serbest Cisim Diyagramı (SCD) Çizim İlkeleri",
       "metin": [
-        "Dinamik problemlerini hatasız çözmenin ilk adımı {koyu:Serbest Cisim Diyagramı (SCD)} oluşturmaktır. Serbest cisim diyagramında incelenen cisim çevresindeki ip, makara veya yüzeylerden yalıtılarak noktasal bir kütle ya da sade bir kutu olarak çizilir ve {koyu:cismin kendisine dışarıdan etki eden gerçek kuvvet vektörleri} gösterilir. Bu kuvvetler; daima düşey aşağı yönlü olan {koyu:ağırlık (G = m·g)}, temas yüzeyinden cisme doğru dik yönlü olan {koyu:normal kuvvet (N)}, ip boyunca cisimden dışarı doğru çeken {koyu:ip gerilme kuvveti (T)}, uygulanan dış kuvvet ({koyu:F}) ve harekete/zorlamaya ters yönlü olan {koyu:sürtünme kuvvetidir (f_s)}."
+        "Dinamik problemlerini hatasız çözmenin ilk adımı {koyu:Serbest Cisim Diyagramı (SCD)} oluşturmaktır. Serbest cisim diyagramında incelenen cisim çevresindeki ip, makara veya yüzeylerden yalıtılarak noktasal bir kütle ya da sade bir kutu olarak çizilir ve {koyu:cismin kendisine dışarıdan etki eden gerçek kuvvet vektörleri} gösterilir. Bu kuvvetler; daima düşey aşağı yönlü olan {koyu:ağırlık (G = m·g)}, temas yüzeyinden cisme doğru dik yönlü olan {koyu:normal kuvvet (N)}, ip boyunca cisimden dışarı doğru çeken {koyu:ip gerilme kuvveti (T)}, uygulanan dış kuvvet ({koyu:F}) ve harekete/zorlamaya ters yönlü olan {koyu:sürtünme kuvvetidir (f{alt:s})}."
       ],
       "kutu": {
         "tur": "bilgi",
@@ -73,19 +73,19 @@
     {
       "baslik": "5. Eğik Düzlem Üzerinde Hareket Analizi",
       "metin": [
-        "Yatayla {koyu:α} açısı yapan bir eğik düzlem üzerindeki m kütleli cismin ağırlığı ({koyu:G = m·g}) dikey doğrultudadır. Hareketi analiz etmek için koordinat eksenlerinden biri eğik düzleme paralel (x ekseni), diğeri eğik düzleme dik (y ekseni) seçilir. Ağırlık vektörü bileşenlerine ayrıldığında, cismi eğik düzlemden aşağı doğru kaydırmaya çalışan paralel bileşen {koyu:G_x = m · g · sin(α)}, cismi yüzeye bastıran dik bileşen ise {koyu:G_y = m · g · cos(α)} olur. Eğik düzleme dik doğrultuda hareket olmadığından yüzeyin normal tepki kuvveti {koyu:N = m · g · cos(α)} değerine eşittir. Sürtünmesiz eğik düzlemde serbest bırakılan cismin ivmesi {koyu:m · g · sin(α) = m · a} denkleminden kütleden bağımsız olarak {koyu:a = g · sin(α)} bulunur."
+        "Yatayla {koyu:α} açısı yapan bir eğik düzlem üzerindeki m kütleli cismin ağırlığı ({koyu:G = m·g}) dikey doğrultudadır. Hareketi analiz etmek için koordinat eksenlerinden biri eğik düzleme paralel (x ekseni), diğeri eğik düzleme dik (y ekseni) seçilir. Ağırlık vektörü bileşenlerine ayrıldığında, cismi eğik düzlemden aşağı doğru kaydırmaya çalışan paralel bileşen {koyu:G{alt:x} = m · g · sin(α)}, cismi yüzeye bastıran dik bileşen ise {koyu:G{alt:y} = m · g · cos(α)} olur. Eğik düzleme dik doğrultuda hareket olmadığından yüzeyin normal tepki kuvveti {koyu:N = m · g · cos(α)} değerine eşittir. Sürtünmesiz eğik düzlemde serbest bırakılan cismin ivmesi {koyu:m · g · sin(α) = m · a} denkleminden kütleden bağımsız olarak {koyu:a = g · sin(α)} bulunur."
       ],
       "kutu": {
         "tur": "ipucu",
         "baslik": "Sürtünmeli Eğik Düzlemde Net Kuvvet",
-        "metin": "Kinetik sürtünme katsayısı k olan eğik düzlemde aşağı kayan cisme etki eden sürtünme kuvveti {koyu:f_s = k · N = k · m · g · cos(α)} olup ivme {koyu:a = g · (sinα − k·cosα)} bağıntısıyla bulunur."
+        "metin": "Kinetik sürtünme katsayısı k olan eğik düzlemde aşağı kayan cisme etki eden sürtünme kuvveti {koyu:f{alt:s} = k · N = k · m · g · cos(α)} olup ivme {koyu:a = g · (sinα − k·cosα)} bağıntısıyla bulunur."
       },
       "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"14\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">ATWOOD ALETİ VE MAKARA SİSTEMLERİNDE DİNAMİK ANALİZ</text><rect x=\"20\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#EFF6FF\" stroke=\"#2563EB\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#2563EB\"/><rect x=\"20\" y=\"62\" width=\"310\" height=\"12\" fill=\"#2563EB\"/><text x=\"175.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">SABİT MAKARADA İKİ KÜTLE (m₁ &gt; m₂)</text><text x=\"32\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Sürtünmesiz sabit makaraya asılı m₁ ve m₂ kütleli</text><text x=\"32\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  cisimlerden m₁ &gt; m₂ ise sistem m₁ yönünde ivmelenir.</text><text x=\"32\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Net kuvvet: Fnet = m₁·g - m₂·g = (m₁ - m₂)·g</text><text x=\"32\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• Sistemin ortak ivmesi:</text><text x=\"32\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  a = [(m₁ - m₂) / (m₁ + m₂)] · g</text><text x=\"32\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">• İp gerilmesi T, m₂·g den büyük, m₁·g den küçüktür.</text><rect x=\"350\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#ECFDF5\" stroke=\"#059669\" stroke-width=\"1.8\"/><rect x=\"350\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#059669\"/><rect x=\"350\" y=\"62\" width=\"310\" height=\"12\" fill=\"#059669\"/><text x=\"505.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">MASA ÜZERİNDEKİ CİSİM VE SARKAN KÜTLE</text><text x=\"362\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Sürtünmesiz yatay masadaki m₁ kütlesi, makaradan</text><text x=\"362\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  sarkan m₂ kütlesine iple bağlı olsun.</text><text x=\"362\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Sistemi harekete geçiren net kuvvet sarkan cismin</text><text x=\"362\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">  ağırlığıdır: Fnet = m₂·g</text><text x=\"362\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">• Ortak ivme: a = (m₂·g) / (m₁ + m₂)</text><text x=\"362\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">• Yataydaki m₁ cismi için ip gerilmesi: T = m₁ · a.</text></svg>"
     },
     {
       "baslik": "6. Birbirine Bağlı Cisimler ve Makara Sistemleri",
       "metin": [
-        "Esnek olmayan bir iple birbirine bağlanarak birlikte hareket eden kütle sistemlerinde, tüm cisimlerin {koyu:ivme büyüklükleri (a) birbirine eşittir} ve aynı ipin her noktasındaki {koyu:gerilme kuvveti (T)} aynıdır. Bu tür sistemlerde çözüm iki adımda yapılır: İlk adımda tüm sistem tek bir kütleymiş gibi düşünülerek ip gerilmeleri (iç kuvvetler) birbirini götürür ve {koyu:a} = {kesir:F_net(sistem)|m_toplam} bağıntısıyla ortak ivme hesaplanır. İkinci adımda ise kütlelerden yalnız biri seçilip kendi serbest cisim diyagramına {koyu:F_net = m · a} yazılarak aradaki {koyu:ip gerilmesi (T)} bulunur."
+        "Esnek olmayan bir iple birbirine bağlanarak birlikte hareket eden kütle sistemlerinde, tüm cisimlerin {koyu:ivme büyüklükleri (a) birbirine eşittir} ve aynı ipin her noktasındaki {koyu:gerilme kuvveti (T)} aynıdır. Bu tür sistemlerde çözüm iki adımda yapılır: İlk adımda tüm sistem tek bir kütleymiş gibi düşünülerek ip gerilmeleri (iç kuvvetler) birbirini götürür ve {koyu:a} = {kesir:F{alt:net}(sistem)|m{alt:toplam}} bağıntısıyla ortak ivme hesaplanır. İkinci adımda ise kütlelerden yalnız biri seçilip kendi serbest cisim diyagramına {koyu:F{alt:net} = m · a} yazılarak aradaki {koyu:ip gerilmesi (T)} bulunur."
       ],
       "kutu": {
         "tur": "kural",
@@ -97,11 +97,11 @@
   "ornekler": [
     {
       "soru": "Sürtünmesiz yatay düzlemde durmakta olan 4 kg kütleli bir cisme yatay doğrultuda aynı yönlü 18 N ve 10 N, zıt yönlü 8 N büyüklüğünde üç kuvvet uygulanıyor. Cismin ivmesi kaç m/s² dir?",
-      "cevap": "Cisme etki eden net kuvvet {koyu:F_net = 18 + 10 − 8 = 20 N} olur. Newton'ın ikinci yasasından ({koyu:F_net = m · a}) {koyu:20 = 4 · a} ve {koyu:a = 5 m/s²} (18 N ve 10 N kuvvetlerinin yönünde) bulunur."
+      "cevap": "Cisme etki eden net kuvvet {koyu:F{alt:net} = 18 + 10 − 8 = 20 N} olur. Newton'ın ikinci yasasından ({koyu:F{alt:net} = m · a}) {koyu:20 = 4 · a} ve {koyu:a = 5 m/s²} (18 N ve 10 N kuvvetlerinin yönünde) bulunur."
     },
     {
       "soru": "Kinetik sürtünme katsayısının k = 0,25 olduğu yatay düzlemdeki 6 kg kütleli bir sandığa yatay 39 N kuvvet uygulanıyor. Sandığın ivmesini hesaplayınız (g = 10 m/s²).",
-      "cevap": "Yatay düzlemde normal kuvvet {koyu:N = m · g = 6 · 10 = 60 N} ve sürtünme kuvveti {koyu:f_s = k · N = 0,25 · 60 = 15 N} olur. Net kuvvet {koyu:F_net = F − f_s = 39 − 15 = 24 N} olduğundan {koyu:a = {kesir:F_net|m} = {kesir:24|6} = 4 m/s²} bulunur."
+      "cevap": "Yatay düzlemde normal kuvvet {koyu:N = m · g = 6 · 10 = 60 N} ve sürtünme kuvveti {koyu:f{alt:s} = k · N = 0,25 · 60 = 15 N} olur. Net kuvvet {koyu:F{alt:net} = F − f{alt:s} = 39 − 15 = 24 N} olduğundan {koyu:a = {kesir:F{alt:net}|m} = {kesir:24|6} = 4 m/s²} bulunur."
     },
     {
       "soru": "Eğim açısı 37° olan sürtünmesiz bir eğik düzlemin üst noktasından serbest bırakılan 5 kg kütleli cismin ivmesi ve yüzeyin cisme uyguladığı normal kuvvet kaçtır? (g = 10 m/s², sin37° = 0,6; cos37° = 0,8)",
@@ -109,11 +109,11 @@
     },
     {
       "soru": "Sürtünmesiz yatay düzlemde iple birbirine bağlı m₁ = 2 kg ve m₂ = 3 kg kütleli iki cisimden öndeki m₂ cismine yatay F = 30 N kuvvet uygulanarak sistem çekiliyor. Sistemin ivmesi ve cisimler arasındaki ip gerilmesi (T) kaçtır?",
-      "cevap": "Toplam kütle {koyu:m_toplam = 2 + 3 = 5 kg} olduğundan sistemin ortak ivmesi {koyu:a = {kesir:F_net|m_toplam} = {kesir:30|5} = 6 m/s²} olur. Arkadaki m₁ = 2 kg cismine etki eden tek yatay kuvvet T olduğundan {koyu:T = m₁ · a = 2 · 6 = 12 N} bulunur."
+      "cevap": "Toplam kütle {koyu:m{alt:toplam} = 2 + 3 = 5 kg} olduğundan sistemin ortak ivmesi {koyu:a = {kesir:F{alt:net}|m{alt:toplam}} = {kesir:30|5} = 6 m/s²} olur. Arkadaki m₁ = 2 kg cismine etki eden tek yatay kuvvet T olduğundan {koyu:T = m₁ · a = 2 · 6 = 12 N} bulunur."
     },
     {
       "soru": "Sürtünmesiz sabit bir makaranın iki ucuna m₁ = 7 kg ve m₂ = 3 kg kütleli iki cisim asılarak serbest bırakılıyor. Sistemin ivmesini ve ipteki T gerilme kuvvetini bulunuz (g = 10 m/s²).",
-      "cevap": "Net kuvvet {koyu:F_net = m₁·g − m₂·g = 70 − 30 = 40 N} ve toplam kütle {koyu:7 + 3 = 10 kg} olduğundan ortak ivme {koyu:a = {kesir:40|10} = 4 m/s²} dir. Yukarı hızlanan m₂ = 3 kg cismi için {koyu:T − m₂·g = m₂·a} → {koyu:T − 30 = 3 · 4 = 12} → {koyu:T = 42 N} bulunur."
+      "cevap": "Net kuvvet {koyu:F{alt:net} = m₁·g − m₂·g = 70 − 30 = 40 N} ve toplam kütle {koyu:7 + 3 = 10 kg} olduğundan ortak ivme {koyu:a = {kesir:40|10} = 4 m/s²} dir. Yukarı hızlanan m₂ = 3 kg cismi için {koyu:T − m₂·g = m₂·a} → {koyu:T − 30 = 3 · 4 = 12} → {koyu:T = 42 N} bulunur."
     },
     {
       "soru": "Dünya, kütlesi kendisinden çok daha küçük olan bir elmayı kendine doğru çekerken elma da Dünya'yı çeker mi? Bu iki kuvvetin büyüklüklerini Newton'ın 3. yasasına göre karşılaştırınız.",
@@ -123,7 +123,7 @@
   "etkinlikler": [
     {
       "tur": "coktan",
-      "soru": "Bir cisme etki eden net kuvvet sıfır (F_net = 0) olduğunda cismin hareket durumu ile ilgili aşağıdakilerden hangisi doğrudur?",
+      "soru": "Bir cisme etki eden net kuvvet sıfır (F{alt:net} = 0) olduğunda cismin hareket durumu ile ilgili aşağıdakilerden hangisi doğrudur?",
       "secenekler": [
         "Cisim duruyorsa durur, ilk hızı varsa sabit hızla hareketini sürdürür.",
         "Cisim sabit bir ivmeyle hızlanmaya devam eder.",
@@ -180,7 +180,7 @@
         {
           "metin": "Bir cisme etki eden net kuvvet vektörü ile cismin kazandığı ivme vektörü aynı yönlüdür.",
           "dogru": true,
-          "aciklama": "F_net = m · a bağıntısında kütle (m) pozitif skaler olduğundan F_net ve a vektörleri aynı yönlüdür."
+          "aciklama": "F{alt:net} = m · a bağıntısında kütle (m) pozitif skaler olduğundan F{alt:net} ve a vektörleri aynı yönlüdür."
         },
         {
           "metin": "Serbest cisim diyagramında cisme etki eden kuvvetlerin yanı sıra m·a net kuvvet vektörü de ayrı bir ok olarak çizilmelidir.",
@@ -190,7 +190,7 @@
         {
           "metin": "Eğik düzlem üzerindeki bir cisme yüzeyin uyguladığı normal kuvvetin büyüklüğü m·g·cos(α) ifadesine eşittir.",
           "dogru": true,
-          "aciklama": "Başka düşey/dik kuvvet yoksa eğik düzlemde N = G_y = m·g·cos(α) olur."
+          "aciklama": "Başka düşey/dik kuvvet yoksa eğik düzlemde N = G{alt:y} = m·g·cos(α) olur."
         },
         {
           "metin": "Sürtünmesiz sabit makaraya asılı 6 kg ve 4 kg kütleli iki cisim serbest bırakıldığında ipteki gerilme kuvveti 60 N olur.",
@@ -209,7 +209,7 @@
         ],
         [
           "Dinamiğin Temel Yasası",
-          "Net kuvvetin kütle ile ivmenin çarpımına eşit olması (F_net = m · a)"
+          "Net kuvvetin kütle ile ivmenin çarpımına eşit olması (F{alt:net} = m · a)"
         ],
         [
           "Etki-Tepki Yasası",
@@ -234,7 +234,7 @@
           "cevap": "eylemsizlik"
         },
         {
-          "metin": "Bir cisme uygulanan net kuvvetin cismin ivmesine oranı (F_net / a) cismin ___ değerini verir.",
+          "metin": "Bir cisme uygulanan net kuvvetin cismin ivmesine oranı (F{alt:net} / a) cismin ___ değerini verir.",
           "cevap": "kütle"
         },
         {

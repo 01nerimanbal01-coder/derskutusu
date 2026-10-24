@@ -16,7 +16,7 @@
   "ozet": [
     "a ∈ ℝ⁺ − {1} olmak üzere bire bir ve örten f: ℝ → ℝ⁺, f(x) = {us:a|x} üstel fonksiyonunun tersine {koyu:a tabanında logaritma fonksiyonu} denir ve {us:f|−1}: ℝ⁺ → ℝ, {us:f|−1}(x) = logₐ x şeklinde gösterilir.",
     "Üstel ve logaritmik ifadeler arasında y = logₐ x ⇔ x = {us:a|y} temel denkliği vardır; dönüşüm yapılırken {koyu:taban daima tabanda kalır}.",
-    "f(x) = log_g(x) h(x) fonksiyonunun gerçek sayılarda tanımlı olabilmesi için {koyu:1. h(x) > 0}, {koyu:2. g(x) > 0} ve {koyu:3. g(x) ≠ 1} koşulları birlikte sağlanmalıdır.",
+    "f(x) = log{alt:g}(x) h(x) fonksiyonunun gerçek sayılarda tanımlı olabilmesi için {koyu:1. h(x) > 0}, {koyu:2. g(x) > 0} ve {koyu:3. g(x) ≠ 1} koşulları birlikte sağlanmalıdır.",
     "f(x) = {us:a|x} ile {us:f|−1}(x) = logₐ x fonksiyonlarının grafikleri {koyu:y = x doğrusuna göre simetriktir}; y = logₐ x grafiği (1, 0) noktasından geçer, a > 1 için {koyu:artan}, 0 < a < 1 için {koyu:azalandır}.",
     "Tabanı 10 olan logaritmaya {koyu:10 tabanında (adi/bayağı) logaritma} denir ve taban yazılmadan log₁₀ x = log x biçiminde gösterilir; logaritmayı İskoç matematikçi {koyu:John Napier} icat etmiş, Osmanlı'da ise {koyu:Gelenbevî İsmail Efendi} tanıtmıştır.",
     "Yaklaşık değeri 2,71828… olan irrasyonel {koyu:Euler sayısı (e)} tabanındaki logaritmaya {koyu:doğal logaritma} denir ve logₑ x = ln x ile gösterilir (ln e = 1, ln 1 = 0, ln({us:e|k}) = k)."
@@ -86,8 +86,8 @@
     {
       "baslik": "Logaritma Fonksiyonunun En Geniş Tanım Kümesi",
       "metin": [
-        "f: ℝ⁺ → ℝ, f(x) = logₐ x fonksiyonunda logaritmanın tanım kümesi {koyu:pozitif gerçek sayılar} (ℝ⁺) olduğundan sıfırın ve negatif sayıların logaritması gerçek sayılarda tanımsızdır. Genel olarak f(x) = log_g(x) h(x) biçiminde verilen bir fonksiyonun gerçek sayılarda tanımlı olabilmesi için şu {koyu:üç koşul} aynı anda sağlanmalıdır: {koyu:I. h(x) > 0} (logaritması alınan iç ifade pozitif olmalı), {koyu:II. g(x) > 0} (taban pozitif olmalı) ve {koyu:III. g(x) ≠ 1} (taban 1'den farklı olmalı).",
-        "Örneğin f(x) = log_(x−1)(9 − x) fonksiyonunun en geniş tanım kümesi için: 9 − x > 0 ⇒ x < 9, taban için x − 1 > 0 ⇒ x > 1 ve x − 1 ≠ 1 ⇒ x ≠ 2 olmalıdır. Bu üç koşulun kesişimi alındığında en geniş tanım kümesi (1, 9) − {2} bulunur. Eğer f(x) = logₐ({us:x|2} + bx + c) biçimindeki bir fonksiyonun {koyu:her x ∈ ℝ gerçek sayısı için tanımlı} olduğu söylenirse, ikinci dereceden {us:x|2} + bx + c > 0 eşitsizliğinin daima pozitif olması, yani diskriminantının negatif ({koyu:Δ = {us:b|2} − 4ac < 0}) olması gerekir."
+        "f: ℝ⁺ → ℝ, f(x) = logₐ x fonksiyonunda logaritmanın tanım kümesi {koyu:pozitif gerçek sayılar} (ℝ⁺) olduğundan sıfırın ve negatif sayıların logaritması gerçek sayılarda tanımsızdır. Genel olarak f(x) = log{alt:g}(x) h(x) biçiminde verilen bir fonksiyonun gerçek sayılarda tanımlı olabilmesi için şu {koyu:üç koşul} aynı anda sağlanmalıdır: {koyu:I. h(x) > 0} (logaritması alınan iç ifade pozitif olmalı), {koyu:II. g(x) > 0} (taban pozitif olmalı) ve {koyu:III. g(x) ≠ 1} (taban 1'den farklı olmalı).",
+        "Örneğin f(x) = log{alt:x−1}(9 − x) fonksiyonunun en geniş tanım kümesi için: 9 − x > 0 ⇒ x < 9, taban için x − 1 > 0 ⇒ x > 1 ve x − 1 ≠ 1 ⇒ x ≠ 2 olmalıdır. Bu üç koşulun kesişimi alındığında en geniş tanım kümesi (1, 9) − {2} bulunur. Eğer f(x) = logₐ({us:x|2} + bx + c) biçimindeki bir fonksiyonun {koyu:her x ∈ ℝ gerçek sayısı için tanımlı} olduğu söylenirse, ikinci dereceden {us:x|2} + bx + c > 0 eşitsizliğinin daima pozitif olması, yani diskriminantının negatif ({koyu:Δ = {us:b|2} − 4ac < 0}) olması gerekir."
       ],
       "kutu": {
         "tur": "dikkat",
@@ -170,7 +170,7 @@
       "cevap": "y = {us:3|x+1} + 5 yazıp x'i yalnız bırakalım: y − 5 = {us:3|x+1} olur. Logaritma tanımından x + 1 = log₃(y − 5) ⇒ x = log₃(y − 5) − 1 elde edilir. x ile y yer değiştirildiğinde ters fonksiyon {koyu:{us:f|−1}(x) = log₃(x − 5) − 1} olarak bulunur."
     },
     {
-      "soru": "f(x) = log_(x−2)(−{us:x|2} + 5x) fonksiyonunun gerçek sayılardaki en geniş tanım kümesini bulunuz.",
+      "soru": "f(x) = log{alt:x−2}(−{us:x|2} + 5x) fonksiyonunun gerçek sayılardaki en geniş tanım kümesini bulunuz.",
       "cevap": "Tanımlı olma şartlarını yazalım: {koyu:1. İç kısım pozitif olmalı:} −{us:x|2} + 5x > 0 ⇒ x(5 − x) > 0, kökler 0 ve 5 olup işaret tablosundan 0 < x < 5 bulunur. {koyu:2. Taban pozitif olmalı:} x − 2 > 0 ⇒ x > 2. {koyu:3. Taban 1 olmamalı:} x − 2 ≠ 1 ⇒ x ≠ 3. Üç koşulun ortak kesişimi alındığında en geniş tanım kümesi {koyu:(2, 5)} − {3} olur."
     },
     {
@@ -202,7 +202,7 @@
     },
     {
       "tur": "coktan",
-      "soru": "f(x) = log_(x−3)(15 − 3x) fonksiyonunun en geniş tanım kümesinde bulunan tam sayıların toplamı kaçtır?",
+      "soru": "f(x) = log{alt:x−3}(15 − 3x) fonksiyonunun en geniş tanım kümesinde bulunan tam sayıların toplamı kaçtır?",
       "secenekler": [
         "4",
         "0",

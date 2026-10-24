@@ -15,8 +15,8 @@
   "giris": "Termodinamiğin birinci yasası gereğince bir kimyasal ya da fiziksel değişimde enerji yoktan var olmaz, vardan da yok olmaz; yalnızca sistem ile çevre arasında el değiştirir. Tepkimelerde ısı enerjisinin denklemde tepkenler mi yoksa ürünler tarafında mı yer aldığını kavramak, maddelerin yakıt ve besin olarak enerji kaynağı olma potansiyelini bilimsel ölçütlerle değerlendirmemizi sağlar.",
   "ozet": [
     "{koyu:Termodinamiğin birinci yasasına (enerjinin korunumu yasası)} göre evrenin toplam enerjisi sabittir; sistemin kazandığı ya da kaybettiği enerji, çevrenin kaybettiği ya da kazandığı enerjiye büyüklükçe eşittir.",
-    "{koyu:Endotermik tepkimelerde} sistem çevreden ısı alır, sistemin toplam enerjisi artar ({koyu:E_ürün > E_tepken}) ve ısı ifadesi tepkime denkleminde {koyu:tepkenler (girenler)} tarafına yazılır.",
-    "{koyu:Ekzotermik tepkimelerde} sistem çevreye ısı verir, sistemin toplam enerjisi azalır ({koyu:E_tepken > E_ürün}) ve ısı ifadesi tepkime denkleminde {koyu:ürünler} tarafına yazılır.",
+    "{koyu:Endotermik tepkimelerde} sistem çevreden ısı alır, sistemin toplam enerjisi artar ({koyu:E{alt:ürün} > E{alt:tepken}}) ve ısı ifadesi tepkime denkleminde {koyu:tepkenler (girenler)} tarafına yazılır.",
+    "{koyu:Ekzotermik tepkimelerde} sistem çevreye ısı verir, sistemin toplam enerjisi azalır ({koyu:E{alt:tepken} > E{alt:ürün}}) ve ısı ifadesi tepkime denkleminde {koyu:ürünler} tarafına yazılır.",
     "Bağ kırılması, atomdan elektron koparılması (iyonlaşma enerjisi), elektroliz, fotosentez, kireç taşının ve potasyum kloratın analiz tepkimeleri ile azot gazının ({koyu:N2}) yanması {koyu:endotermik} olaylardır.",
     "Azot gazı dışındaki tüm yanma tepkimeleri, asit-baz nötralleşme tepkimeleri, kimyasal bağ oluşumu, pil tepkimeleri, hücresel solunum, gazların suda çözünmesi ve kalsiyum klorürün ({koyu:CaCl2}) suda çözünmesi {koyu:ekzotermik} olaylardır.",
     "Bir maddenin {koyu:enerji kaynağı (yakıt)} olma potansiyeli değerlendirilirken birim kütlesinin (1 gramının) yandığında açığa çıkardığı ısı ({koyu:ısıl değer, kJ/g}), oluşturduğu atık ve çevresel etki, depolama ve taşınma güvenliği ile maliyet ölçütleri birlikte ele alınır.",
@@ -28,13 +28,13 @@
       "baslik": "Termodinamiğin Birinci Yasası ve Tepkime Denklemlerinde Isı Yönü",
       "metin": [
         "Fiziksel ve kimyasal değişimlerin tamamına enerji değişimi eşlik eder. {koyu:Termodinamiğin birinci yasası} olarak da bilinen {koyu:enerjinin korunumu yasasına} göre enerji yoktan var edilemez ve var olan enerji yok edilemez; yalnızca bir türden başka bir türe dönüşür veya sistem ile çevre arasında aktarılır. Bu nedenle sistem ile çevrenin oluşturduğu evrenin toplam enerjisi her zaman sabittir.",
-        "{koyu:Endotermik (ısı alan) değişimlerde} sistem, çevreden ısı enerjisi soğurur. Bu süreçte çevrenin enerjisi azalırken sistemin enerjisi artar; dolayısıyla ürünlerin toplam enerjisi tepkenlerin toplam enerjisinden büyüktür ({koyu:E_ürün > E_tepken}). Kimyasal denklem yazılırken alınan ısı {koyu:tepkenler (girenler)} bölgesinde gösterilir. Örneğin potasyum klorat katısının ısıtılarak potasyum klorür ve oksijen gazına ayrışması {koyu:KClO3(k) + ısı -> KCl(k) + {kesir:3|2}O2(g)} denklemiyle ifade edilir.",
-        "{koyu:Ekzotermik (ısı veren) değişimlerde} ise sistem çevreye ısı enerjisi aktarır. Sistemin toplam enerjisi azalırken çevrenin enerjisi artar; yani tepkenlerin toplam enerjisi ürünlerin toplam enerjisinden büyüktür ({koyu:E_tepken > E_ürün}). Tepkime denkleminde açığa çıkan ısı {koyu:ürünler} tarafına yazılır. Karbon katısının yanma tepkimesi olan {koyu:C(k) + O2(g) -> CO2(g) + ısı} bu duruma temel bir örnektir."
+        "{koyu:Endotermik (ısı alan) değişimlerde} sistem, çevreden ısı enerjisi soğurur. Bu süreçte çevrenin enerjisi azalırken sistemin enerjisi artar; dolayısıyla ürünlerin toplam enerjisi tepkenlerin toplam enerjisinden büyüktür ({koyu:E{alt:ürün} > E{alt:tepken}}). Kimyasal denklem yazılırken alınan ısı {koyu:tepkenler (girenler)} bölgesinde gösterilir. Örneğin potasyum klorat katısının ısıtılarak potasyum klorür ve oksijen gazına ayrışması {koyu:KClO3(k) + ısı -> KCl(k) + {kesir:3|2}O2(g)} denklemiyle ifade edilir.",
+        "{koyu:Ekzotermik (ısı veren) değişimlerde} ise sistem çevreye ısı enerjisi aktarır. Sistemin toplam enerjisi azalırken çevrenin enerjisi artar; yani tepkenlerin toplam enerjisi ürünlerin toplam enerjisinden büyüktür ({koyu:E{alt:tepken} > E{alt:ürün}}). Tepkime denkleminde açığa çıkan ısı {koyu:ürünler} tarafına yazılır. Karbon katısının yanma tepkimesi olan {koyu:C(k) + O2(g) -> CO2(g) + ısı} bu duruma temel bir örnektir."
       ],
       "kutu": {
         "tur": "kural",
         "baslik": "Tepken ve Ürün Enerjisi Karşılaştırması",
-        "metin": "Endotermik tepkimelerde sistem dışarıdan ısı aldığı için E_ürün > E_tepken olur ve ısı girenler tarafına yazılır. Ekzotermik tepkimelerde sistem dışarıya ısı verdiği için E_tepken > E_ürün olur ve ısı ürünler tarafına yazılır."
+        "metin": "Endotermik tepkimelerde sistem dışarıdan ısı aldığı için E{alt:ürün} > E{alt:tepken} olur ve ısı girenler tarafına yazılır. Ekzotermik tepkimelerde sistem dışarıya ısı verdiği için E{alt:tepken} > E{alt:ürün} olur ve ısı ürünler tarafına yazılır."
       },
       "gorsel": "<svg viewBox=\"0 0 480 214\" role=\"img\" aria-label=\"Endotermik ve ekzotermik tepkimelerde enerji değişimi\"><text x=\"240\" y=\"20\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" class=\"g-y\">Endotermik ve Ekzotermik Tepkimelerde Enerji Değişimi</text><rect x=\"16\" y=\"32\" width=\"216\" height=\"172\" rx=\"10\" class=\"g-ma\"/><text x=\"124\" y=\"50\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" class=\"g-mf\">Endotermik (Isı Alan)</text><line x1=\"42\" y1=\"175\" x2=\"42\" y2=\"62\" class=\"g-c\" stroke-width=\"1.8\"/><line x1=\"42\" y1=\"175\" x2=\"212\" y2=\"175\" class=\"g-c\" stroke-width=\"1.8\"/><text x=\"34\" y=\"70\" text-anchor=\"end\" font-size=\"10\" class=\"g-y\">E</text><line x1=\"50\" y1=\"148\" x2=\"110\" y2=\"148\" class=\"g-ms\" stroke-width=\"3\"/><text x=\"80\" y=\"162\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" class=\"g-mf\">Tepken + ısı</text><path d=\"M 110 148 C 128 148, 128 86, 146 86\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><line x1=\"146\" y1=\"86\" x2=\"206\" y2=\"86\" class=\"g-ms\" stroke-width=\"3\"/><text x=\"176\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" class=\"g-mf\">Ürünler</text><path d=\"M 128 144 L 128 92\" fill=\"none\" class=\"g-ts\" stroke-width=\"2\"/><polygon points=\"128,87 124,95 132,95\" class=\"g-tf\"/><text x=\"124\" y=\"194\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" class=\"g-y\">E_ürün &gt; E_tepken (Sistem ısı alır)</text><rect x=\"248\" y=\"32\" width=\"216\" height=\"172\" rx=\"10\" class=\"g-ta\"/><text x=\"356\" y=\"50\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" class=\"g-tf\">Ekzotermik (Isı Veren)</text><line x1=\"274\" y1=\"175\" x2=\"274\" y2=\"62\" class=\"g-c\" stroke-width=\"1.8\"/><line x1=\"274\" y1=\"175\" x2=\"444\" y2=\"175\" class=\"g-c\" stroke-width=\"1.8\"/><text x=\"266\" y=\"70\" text-anchor=\"end\" font-size=\"10\" class=\"g-y\">E</text><line x1=\"282\" y1=\"86\" x2=\"342\" y2=\"86\" class=\"g-ts\" stroke-width=\"3\"/><text x=\"312\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" class=\"g-tf\">Tepkenler</text><path d=\"M 342 86 C 360 86, 360 148, 378 148\" fill=\"none\" class=\"g-ts\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><line x1=\"378\" y1=\"148\" x2=\"438\" y2=\"148\" class=\"g-ts\" stroke-width=\"3\"/><text x=\"408\" y=\"162\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" class=\"g-tf\">Ürün + ısı</text><path d=\"M 360 90 L 360 142\" fill=\"none\" class=\"g-ms\" stroke-width=\"2\"/><polygon points=\"360,147 356,139 364,139\" class=\"g-mf\"/><text x=\"356\" y=\"194\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" class=\"g-y\">E_tepken &gt; E_ürün (Sistem ısı verir)</text></svg>"
     },
@@ -166,7 +166,7 @@
   "ornekler": [
     {
       "soru": "Potasyum kloratın ayrışma denklemi KClO3(k) + ısı -> KCl(k) + 3/2 O2(g) ve karbonun yanma denklemi C(k) + O2(g) -> CO2(g) + ısı olarak verilmiştir. Bu iki tepkimede sistemin enerjisinin nasıl değiştiğini ve tepken-ürün enerji ilişkisini karşılaştırınız.",
-      "cevap": "KClO3 katısının ayrışmasında ısı tepkenler tarafında yer aldığı için tepkime endotermiktir; sistem çevreden ısı alır, sistemin toplam enerjisi artar ve E_ürün > E_tepken olur. Karbonun yanmasında ise ısı ürünler tarafında yer aldığı için tepkime ekzotermiktir; sistem çevreye ısı verir, sistemin toplam enerjisi azalır ve E_tepken > E_ürün olur."
+      "cevap": "KClO3 katısının ayrışmasında ısı tepkenler tarafında yer aldığı için tepkime endotermiktir; sistem çevreden ısı alır, sistemin toplam enerjisi artar ve E{alt:ürün} > E{alt:tepken} olur. Karbonun yanmasında ise ısı ürünler tarafında yer aldığı için tepkime ekzotermiktir; sistem çevreye ısı verir, sistemin toplam enerjisi azalır ve E{alt:tepken} > E{alt:ürün} olur."
     },
     {
       "soru": "Kışın buzlanan yollara kalsiyum klorür (CaCl2) serpilmesinin ve sporcu yaralanmalarında amonyum klorür (NH4Cl) içeren soğutma paketleri kullanılmasının enerji değişimi açısından farkı nedir?",
@@ -192,7 +192,7 @@
   "etkinlikler": [
     {
       "tur": "coktan",
-      "soru": "Aşağıda verilen fiziksel ve kimyasal değişimlerden hangisinde sistemin toplam enerjisi zamanla artar (E_ürün > E_tepken)?",
+      "soru": "Aşağıda verilen fiziksel ve kimyasal değişimlerden hangisinde sistemin toplam enerjisi zamanla artar (E{alt:ürün} > E{alt:tepken})?",
       "secenekler": [
         "Potasyum klorat (KClO3) katısının ısıtılarak ayrıştırılması",
         "Asit ve baz çözeltilerinin nötralleşmesi",
@@ -201,7 +201,7 @@
         "Tren raylarının kaynağında kullanılan termit tepkimesi"
       ],
       "dogru": 0,
-      "aciklama": "Sistemin enerjisinin artması (E_ürün > E_tepken) olayın çevreden ısı alan endotermik bir değişim olduğunu gösterir. Potasyum kloratın analiz (ayrışma) tepkimesi endotermiktir; diğer seçeneklerdeki tüm olaylar çevreye ısı veren ekzotermik değişimlerdir."
+      "aciklama": "Sistemin enerjisinin artması (E{alt:ürün} > E{alt:tepken}) olayın çevreden ısı alan endotermik bir değişim olduğunu gösterir. Potasyum kloratın analiz (ayrışma) tepkimesi endotermiktir; diğer seçeneklerdeki tüm olaylar çevreye ısı veren ekzotermik değişimlerdir."
     },
     {
       "tur": "coktan",

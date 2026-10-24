@@ -16,8 +16,8 @@
   "giris": "Üçgenin açıortay, kenarortay, kenar orta dikme ve yükseklik gibi yardımcı elemanları yalnızca üçgenin özel merkezlerini belirlemekle kalmaz; aynı zamanda kenar uzunlukları, açılar ve üçgenin kapladığı alan arasında güçlü bağıntılar kurar. Bu haftaki dersimizde üçgenin yardımcı elemanlarının uzunluk sıralamasını, ikizkenar ve eşkenar üçgenlerdeki özel durumlarını, taban ve yükseklik değişimine bağlı alan oranlarını ve sinüs alan teoremini inceleyeceğiz.",
   "ozet": [
     "İç açıortaylar iç teğet çember merkezinde (I), kenarortaylar ağırlık merkezinde (G), kenar orta dikmeler çevrel çember merkezinde (O), yükseklikler diklik merkezinde (H) kesişir.",
-    "Çeşitkenar bir üçgende aynı köşeden çizilen yardımcı elemanlar h_a < n_a < V_a şeklinde sıralanır; ikizkenar üçgende ise tepeden inen yardımcı elemanlar çakışıktır.",
-    "Üçgenin alanı Alan(ABC) = (a · h_a) / 2 bağıntısıyla bulunur; geniş açılı üçgende dar köşelerden çizilen yükseklikler üçgenin dışına iner.",
+    "Çeşitkenar bir üçgende aynı köşeden çizilen yardımcı elemanlar h{alt:a} < n{alt:a} < V{alt:a} şeklinde sıralanır; ikizkenar üçgende ise tepeden inen yardımcı elemanlar çakışıktır.",
+    "Üçgenin alanı Alan(ABC) = (a · h{alt:a}) / 2 bağıntısıyla bulunur; geniş açılı üçgende dar köşelerden çizilen yükseklikler üçgenin dışına iner.",
     "Tepe noktaları ortak (yükseklikleri eşit) olan üçgenlerin alanları oranı taban uzunlukları oranına eşittir.",
     "Üç kenarortay bir üçgenin alanını 6 eş alana (6S) böler; ağırlık merkezi G her kenarortayı tabana 1 birim (k), köşeye 2 birim (2k) oranında ayırır.",
     "İki kenarı ve arasındaki açısı bilinen üçgenin alanı ½ · b · c · sin(A), bir kenarı a olan eşkenar üçgenin alanı ise ({us:a|2} · {kok:3}) / 4 formülüyle hesaplanır."
@@ -27,19 +27,19 @@
       "baslik": "Üçgende Yardımcı Elemanların Kesim Noktaları ve Uzunluk Sıralaması",
       "metin": [
         "Bir üçgende aynı türden üç yardımcı eleman daima tek bir noktada kesişir ({koyu:nokudaştır}): Üç {koyu:iç açıortayın} kesim noktası ({koyu:I}) üçgenin kenarlarına eşit uzaklıkta olup {koyu:iç teğet çemberin merkezidir}. Üç {koyu:kenarortayın} kesim noktası ({koyu:G}) üçgenin {koyu:ağırlık merkezidir} ve her kenarortayı tabana {koyu:1 birim (k)}, köşeye {koyu:2 birim (2k)} olacak biçimde böler. Üç {koyu:kenar orta dikmenin} kesim noktası ({koyu:O}) köşelere eşit uzaklıkta olup {koyu:çevrel çemberin merkezidir}. Üç {koyu:yüksekliğin} kesim noktası ({koyu:H}) ise üçgenin {koyu:diklik merkezidir}.",
-        "Çeşitkenar bir {koyu:ABC} üçgeninde aynı köşeden çizilen yardımcı elemanlar arasında daima {koyu:h_a < n_a < V_a} sıralaması vardır; yani bir köşeden karşı kenara çizilen en kısa doğru parçası {koyu:yükseklik (h_a)}, ortanca olan {koyu:açıortay (n_a)}, en uzun olan ise {koyu:kenarortaydır (V_a)}. Ayrıca kenar uzunlukları küçüldükçe o kenarlara ait yardımcı elemanların uzunlukları büyür: {koyu:a > b > c} ise {koyu:h_a < h_b < h_c}, {koyu:n_a < n_b < n_c} ve {koyu:V_a < V_b < V_c} olur."
+        "Çeşitkenar bir {koyu:ABC} üçgeninde aynı köşeden çizilen yardımcı elemanlar arasında daima {koyu:h{alt:a} < n{alt:a} < V{alt:a}} sıralaması vardır; yani bir köşeden karşı kenara çizilen en kısa doğru parçası {koyu:yükseklik (h{alt:a})}, ortanca olan {koyu:açıortay (n{alt:a})}, en uzun olan ise {koyu:kenarortaydır (V{alt:a})}. Ayrıca kenar uzunlukları küçüldükçe o kenarlara ait yardımcı elemanların uzunlukları büyür: {koyu:a > b > c} ise {koyu:h{alt:a} < h{alt:b} < h{alt:c}}, {koyu:n{alt:a} < n{alt:b} < n{alt:c}} ve {koyu:V{alt:a} < V{alt:b} < V{alt:c}} olur."
       ],
       "kutu": {
         "tur": "onemli",
         "baslik": "İkizkenar ve Eşkenar Üçgende Yardımcı Elemanlar (YA-Kİ Kuralı)",
-        "metin": "Bir ikizkenar üçgende (|AB| = |AC|) tepe açısından tabana indirilen yükseklik, açıortay ve kenarortay üst üste çakışır ve uzunlukları birbirine eşittir (h_a = n_a = V_a). Eşkenar üçgende ise üç köşenin tamamında tüm yardımcı elemanlar birbirine eşittir ve dört özel merkez (I, G, O, H) tek bir noktada çakışır."
+        "metin": "Bir ikizkenar üçgende (|AB| = |AC|) tepe açısından tabana indirilen yükseklik, açıortay ve kenarortay üst üste çakışır ve uzunlukları birbirine eşittir (h{alt:a} = n{alt:a} = V{alt:a}). Eşkenar üçgende ise üç köşenin tamamında tüm yardımcı elemanlar birbirine eşittir ve dört özel merkez (I, G, O, H) tek bir noktada çakışır."
       },
       "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 675\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:12px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"1200\" height=\"675\" rx=\"18\" fill=\"#0F172A\"/><rect x=\"40\" y=\"24\" width=\"1120\" height=\"84\" rx=\"14\" fill=\"#1E293B\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"600\" y=\"58\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"800\" fill=\"#F8FAFC\">ÜÇGENİN YARDIMCI ELEMANLARININ ÖZEL NOKTALARI</text><text x=\"600\" y=\"88\" text-anchor=\"middle\" font-size=\"15\" fill=\"#94A3B8\">İç Teğet Çember, Çevrel Çember, Ağırlık Merkezi ve Diklik Merkezi</text><rect x=\"55\" y=\"130\" width=\"525\" height=\"210\" rx=\"14\" fill=\"#1E293B\" stroke=\"#60A5FA\" stroke-width=\"2.5\"/><rect x=\"55\" y=\"130\" width=\"525\" height=\"42\" rx=\"14\" fill=\"#2563EB\"/><text x=\"317.5\" y=\"157\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">1. Açıortaylar ve 2. Kenarortaylar</text><rect x=\"80\" y=\"190\" width=\"475\" height=\"58\" rx=\"10\" fill=\"#1E3A8A\" stroke=\"#60A5FA\" stroke-width=\"2\"/><text x=\"317.5\" y=\"214.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">İç Açıortayların Kesim Noktası (I):</text><text x=\"317.5\" y=\"234.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">İç teğet çemberin merkezidir; kenarlara eşit uzaklıktadır.</text><rect x=\"80\" y=\"262\" width=\"475\" height=\"58\" rx=\"10\" fill=\"#064E3B\" stroke=\"#34D399\" stroke-width=\"2\"/><text x=\"317.5\" y=\"286.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Kenarortayların Kesim Noktası (G - Ağırlık Merkezi):</text><text x=\"317.5\" y=\"306.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">Tabana 1 birim (k), köşeye 2 birim (2k) uzaklıktadır.</text><rect x=\"620\" y=\"130\" width=\"525\" height=\"210\" rx=\"14\" fill=\"#1E293B\" stroke=\"#FB923C\" stroke-width=\"2.5\"/><rect x=\"620\" y=\"130\" width=\"525\" height=\"42\" rx=\"14\" fill=\"#EA580C\"/><text x=\"882.5\" y=\"157\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">3. Kenar Orta Dikmeler ve 4. Yükseklikler</text><rect x=\"645\" y=\"190\" width=\"475\" height=\"58\" rx=\"10\" fill=\"#431407\" stroke=\"#FB923C\" stroke-width=\"2\"/><text x=\"882.5\" y=\"214.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Kenar Orta Dikmelerin Kesim Noktası (O):</text><text x=\"882.5\" y=\"234.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">Çevrel çemberin merkezidir; köşelere eşit uzaklıktadır.</text><rect x=\"645\" y=\"262\" width=\"475\" height=\"58\" rx=\"10\" fill=\"#3B0764\" stroke=\"#C084FC\" stroke-width=\"2\"/><text x=\"882.5\" y=\"286.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Yüksekliklerin Kesim Noktası (H - Diklik Merkezi):</text><text x=\"882.5\" y=\"306.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">Dar açılıda içte, dik üçgende dik köşede, genişte dışta!</text><rect x=\"55\" y=\"360\" width=\"1090\" height=\"210\" rx=\"14\" fill=\"#1E293B\" stroke=\"#34D399\" stroke-width=\"2.5\"/><rect x=\"55\" y=\"360\" width=\"1090\" height=\"42\" rx=\"14\" fill=\"#059669\"/><text x=\"600.0\" y=\"387\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#FFFFFF\">İkizkenar ve Eşkenar Üçgende Yardımcı Elemanlar (YA-Kİ Kuralı)</text><polygon points=\"260,410 140,545 380,545\" fill=\"#064E3B\" stroke=\"#34D399\" stroke-width=\"3\"/><line x1=\"260\" y1=\"410\" x2=\"260\" y2=\"545\" stroke=\"#FDE047\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"260\" y=\"398\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#F8FAFC\">A</text><text x=\"125\" y=\"550\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#F8FAFC\">B</text><text x=\"395\" y=\"550\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#F8FAFC\">C</text><text x=\"260\" y=\"563\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#FDE047\">H (Diklik = Kenarortay = Açıortay)</text><rect x=\"440\" y=\"415\" width=\"670\" height=\"60\" rx=\"10\" fill=\"#422006\" stroke=\"#FDE047\" stroke-width=\"2\"/><text x=\"775.0\" y=\"440.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">İkizkenar Üçgende (|AB| = |AC|) Tepe Açısından İndirilen:</text><text x=\"775.0\" y=\"460.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">h_a = n_a = V_a  (Yükseklik = Açıortay = Kenarortay aynı doğrudur!)</text><rect x=\"440\" y=\"490\" width=\"670\" height=\"60\" rx=\"10\" fill=\"#1E3A8A\" stroke=\"#60A5FA\" stroke-width=\"2\"/><text x=\"775.0\" y=\"515.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"700\" fill=\"#F8FAFC\">Genel Üçgende Aynı Köşeden Çizilen Elemanların Sıralaması:</text><text x=\"775.0\" y=\"535.0\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"500\" fill=\"#E2E8F0\">h_a ≤ n_a ≤ V_a   (En kısa yükseklik, ortanca açıortay, en uzun kenarortay)</text><rect x=\"40\" y=\"595\" width=\"1120\" height=\"54\" rx=\"12\" fill=\"#1E293B\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"600\" y=\"628\" text-anchor=\"middle\" font-size=\"15.5\" font-weight=\"700\" fill=\"#FDE047\">Eşkenar üçgende tüm kenarlara ait yükseklik, açıortay ve kenarortay uzunlukları birbirine eşittir.</text></svg>"
     },
     {
       "baslik": "Üçgenin Temel Alan Bağıntısı ve Yükseklik Konumları",
       "metin": [
-        "Bir üçgenin alanı, herhangi bir kenar uzunluğu (taban) ile o kenara ait yüksekliğin çarpımının yarısına eşittir: {koyu:Alan(ABC) = {kesir:a · h_a|2} = {kesir:b · h_b|2} = {kesir:c · h_c|2}}. Bu eşitlikten üçgenin kenar uzunlukları ile o kenarlara ait yüksekliklerin {koyu:ters orantılı} olduğu görülür; yani taban uzunluğu büyüdükçe aynı alanı veren yükseklik küçülür.",
+        "Bir üçgenin alanı, herhangi bir kenar uzunluğu (taban) ile o kenara ait yüksekliğin çarpımının yarısına eşittir: {koyu:Alan(ABC) = {kesir:a · h{alt:a}|2} = {kesir:b · h{alt:b}|2} = {kesir:c · h{alt:c}|2}}. Bu eşitlikten üçgenin kenar uzunlukları ile o kenarlara ait yüksekliklerin {koyu:ters orantılı} olduğu görülür; yani taban uzunluğu büyüdükçe aynı alanı veren yükseklik küçülür.",
         "Üçgenin açı türlerine göre yüksekliğin konumu değişir: {koyu:Dar açılı üçgende} üç yükseklik de üçgenin iç bölgesindedir. {koyu:Dik üçgende} dik kenarlar birbirinin yüksekliği olduğundan alan {koyu:dik kenarların çarpımının yarısına} ({koyu:Alan} = {kesir:b · c|2}) eşittir. {koyu:Geniş açılı üçgende} ise dar açılı köşelerden çizilen yükseklikler üçgenin {koyu:dış bölgesine} (tabanın uzantısına) iner; ancak alan hesaplanırken uzantı parçası alınmaz, yalnızca üçgenin kendi kenar uzunluğu ile dış yükseklik çarpılıp ikiye bölünür."
       ],
       "kutu": {
@@ -77,7 +77,7 @@
     {
       "baslik": "Sinüs Alan Teoremi ve Eşkenar Üçgenin Alanı",
       "metin": [
-        "Bir üçgenin yüksekliği doğrudan verilmediğinde, iki kenar uzunluğu ve bu iki kenarın arasındaki açının ölçüsü biliniyorsa trigonometrik dik üçgen oranından {koyu:h_a = c · sin(B)} yazılarak {koyu:Sinüs Alan Teoremi} elde edilir: {koyu:Alan(ABC) = {kesir:1|2} · a · c · sin(B) = {kesir:1|2} · a · b · sin(C) = {kesir:1|2} · b · c · sin(A)}. Hesaplamalarda özel açıların sinüs değerleri kullanılır: {koyu:sin(30°)} = {kesir:1|2}, {koyu:sin(45°) = {kesir:{kok:2}|2}}, {koyu:sin(60°) = {kesir:{kok:3}|2}} ve {koyu:sin(90°) = 1}.",
+        "Bir üçgenin yüksekliği doğrudan verilmediğinde, iki kenar uzunluğu ve bu iki kenarın arasındaki açının ölçüsü biliniyorsa trigonometrik dik üçgen oranından {koyu:h{alt:a} = c · sin(B)} yazılarak {koyu:Sinüs Alan Teoremi} elde edilir: {koyu:Alan(ABC) = {kesir:1|2} · a · c · sin(B) = {kesir:1|2} · a · b · sin(C) = {kesir:1|2} · b · c · sin(A)}. Hesaplamalarda özel açıların sinüs değerleri kullanılır: {koyu:sin(30°)} = {kesir:1|2}, {koyu:sin(45°) = {kesir:{kok:2}|2}}, {koyu:sin(60°) = {kesir:{kok:3}|2}} ve {koyu:sin(90°) = 1}.",
         "Bir kenar uzunluğu {koyu:a} olan {koyu:eşkenar üçgenin} tüm iç açıları {koyu:60°} olduğundan, sinüs alan formülünde iki kenar {koyu:a} ve aradaki açı {koyu:60°} yerine yazıldığında eşkenar üçgenin alanı {koyu:Alan = {kesir:1|2} · a · a · {kesir:{kok:3}|2} = {kesir:{us:a|2} · {kok:3}|4}} olarak bulunur. Eşkenar üçgenin bir yüksekliği ise {koyu:30°-60°-90°} dik üçgeninden {koyu:h = {kesir:a · {kok:3}|2}} bağıntısıyla hesaplanır."
       ],
       "kutu": {
@@ -90,8 +90,8 @@
     {
       "baslik": "Dik Üçgende Öklid ve Alan Bağıntısının Birlikte Kullanımı",
       "metin": [
-        "Bir dik üçgende dik açıdan hipotenüse indirilen yükseklik ({koyu:h_a}) hem Öklid bağıntılarını hem de üçgenin alan eşitliğini sağlar. Dik kenarları {koyu:b} ve {koyu:c}, hipotenüsü {koyu:a} olan bir dik üçgenin alanı hem dik kenarların çarpımının yarısına hem de hipotenüs ile hipotenüse ait yüksekliğin çarpımının yarısına eşittir: {koyu:Alan(ABC) = {kesir:b · c|2} = {kesir:a · h_a|2}}.",
-        "Bu eşitlikte paydadaki 2'ler sadeleştirildiğinde dik üçgenlerin en önemli pratik bağıntılarından biri olan {koyu:b · c = a · h_a} (Dik kenarların çarpımı = Hipotenüs × Hipotenüse ait yükseklik) elde edilir. Böylece dik kenarları bilinen bir dik üçgenin hipotenüse ait yüksekliği saniyeler içinde hesaplanabilir."
+        "Bir dik üçgende dik açıdan hipotenüse indirilen yükseklik ({koyu:h{alt:a}}) hem Öklid bağıntılarını hem de üçgenin alan eşitliğini sağlar. Dik kenarları {koyu:b} ve {koyu:c}, hipotenüsü {koyu:a} olan bir dik üçgenin alanı hem dik kenarların çarpımının yarısına hem de hipotenüs ile hipotenüse ait yüksekliğin çarpımının yarısına eşittir: {koyu:Alan(ABC) = {kesir:b · c|2} = {kesir:a · h{alt:a}|2}}.",
+        "Bu eşitlikte paydadaki 2'ler sadeleştirildiğinde dik üçgenlerin en önemli pratik bağıntılarından biri olan {koyu:b · c = a · h{alt:a}} (Dik kenarların çarpımı = Hipotenüs × Hipotenüse ait yükseklik) elde edilir. Böylece dik kenarları bilinen bir dik üçgenin hipotenüse ait yüksekliği saniyeler içinde hesaplanabilir."
       ],
       "kutu": {
         "tur": "bilgi",
@@ -102,8 +102,8 @@
   ],
   "ornekler": [
     {
-      "soru": "Bir ABC dik üçgeninde [AB] ⊥ [AC], |AB| = 6 cm ve |AC| = 8 cm'dir. Buna göre üçgenin alanını ve A köşesinden [BC] hipotenüsüne indirilen yüksekliğin (h_a) uzunluğunu bulunuz.",
-      "cevap": "6-8-10 özel dik üçgeninden hipotenüs |BC| = a = 10 cm'dir. Dik üçgenin alanı Alan(ABC) = (6 · 8) / 2 = 24 cm² bulunur. Aynı alan (a · h_a) / 2 = (10 · h_a) / 2 = 24 eşitliğini sağladığından 10 · h_a = 48 → h_a = 4,8 cm olarak bulunur."
+      "soru": "Bir ABC dik üçgeninde [AB] ⊥ [AC], |AB| = 6 cm ve |AC| = 8 cm'dir. Buna göre üçgenin alanını ve A köşesinden [BC] hipotenüsüne indirilen yüksekliğin (h{alt:a}) uzunluğunu bulunuz.",
+      "cevap": "6-8-10 özel dik üçgeninden hipotenüs |BC| = a = 10 cm'dir. Dik üçgenin alanı Alan(ABC) = (6 · 8) / 2 = 24 cm² bulunur. Aynı alan (a · h{alt:a}) / 2 = (10 · h{alt:a}) / 2 = 24 eşitliğini sağladığından 10 · h{alt:a} = 48 → h{alt:a} = 4,8 cm olarak bulunur."
     },
     {
       "soru": "Bir ABC üçgeninde [BC] kenarı üzerinde bir D noktası alınıyor. |BD| = 3 cm, |DC| = 7 cm ve Alan(ABD) = 18 cm² olduğuna göre Alan(ABC) kaç cm²'dir?",
@@ -123,7 +123,7 @@
     },
     {
       "soru": "‘Üçgende Yardımcı Elemanların Kesim Noktaları ve Uzunluk Sıralaması’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
-      "cevap": "Bir üçgende aynı türden üç yardımcı eleman daima tek bir noktada kesişir ({koyu:nokudaştır}): Üç {koyu:iç açıortayın} kesim noktası ({koyu:I}) üçgenin kenarlarına eşit uzaklıkta olup {koyu:iç teğet çemberin merkezidir}. Üç {koyu:kenarortayın} kesim noktası ({koyu:G}) üçgenin {koyu:ağırlık merkezidir} ve her kenarortayı tabana {koyu:1 birim (k)}, köşeye {koyu:2 birim (2k)} olacak biçimde böler. Üç {koyu:kenar orta dikmenin} kesim noktası ({koyu:O}) köşelere eşit uzaklıkta olup {koyu:çevrel çemberin merkezidir}. Üç {koyu:yüksekliğin} kesim noktası ({koyu:H}) ise üçgenin {koyu:diklik merkezidir}. Çeşitkenar bir {koyu:ABC} üçgeninde aynı köşeden çizilen yardımcı elemanlar arasında daima {koyu:h_a < n_a < V_a} sıralaması vardır; yani bir köşeden karşı kenara çizilen en kısa doğru parçası {koyu:yükseklik (h_a)}, ortanca olan {koyu:açıortay (n_a)}, en uzun olan ise {koyu:kenarortaydır (V_a)}. Ayrıca kenar uzunlukları küçüldükçe o kenarlara ait yardımcı elemanların uzunlukları büyür: {koyu:a > b > c} ise {koyu:h_a < h_b < h_c}, {koyu:n_a < n_b < n_c} ve {koyu:V_a < V_b < V_c} olur."
+      "cevap": "Bir üçgende aynı türden üç yardımcı eleman daima tek bir noktada kesişir ({koyu:nokudaştır}): Üç {koyu:iç açıortayın} kesim noktası ({koyu:I}) üçgenin kenarlarına eşit uzaklıkta olup {koyu:iç teğet çemberin merkezidir}. Üç {koyu:kenarortayın} kesim noktası ({koyu:G}) üçgenin {koyu:ağırlık merkezidir} ve her kenarortayı tabana {koyu:1 birim (k)}, köşeye {koyu:2 birim (2k)} olacak biçimde böler. Üç {koyu:kenar orta dikmenin} kesim noktası ({koyu:O}) köşelere eşit uzaklıkta olup {koyu:çevrel çemberin merkezidir}. Üç {koyu:yüksekliğin} kesim noktası ({koyu:H}) ise üçgenin {koyu:diklik merkezidir}. Çeşitkenar bir {koyu:ABC} üçgeninde aynı köşeden çizilen yardımcı elemanlar arasında daima {koyu:h{alt:a} < n{alt:a} < V{alt:a}} sıralaması vardır; yani bir köşeden karşı kenara çizilen en kısa doğru parçası {koyu:yükseklik (h{alt:a})}, ortanca olan {koyu:açıortay (n{alt:a})}, en uzun olan ise {koyu:kenarortaydır (V{alt:a})}. Ayrıca kenar uzunlukları küçüldükçe o kenarlara ait yardımcı elemanların uzunlukları büyür: {koyu:a > b > c} ise {koyu:h{alt:a} < h{alt:b} < h{alt:c}}, {koyu:n{alt:a} < n{alt:b} < n{alt:c}} ve {koyu:V{alt:a} < V{alt:b} < V{alt:c}} olur."
     }
   ],
   "etkinlikler": [
@@ -144,21 +144,21 @@
       "tur": "coktan",
       "soru": "Çeşitkenar bir ABC üçgeninde a > b > c kenar sıralaması olduğuna göre aşağıdaki sıralamalardan hangisi kesinlikle doğrudur?",
       "secenekler": [
-        "h_a > h_b > h_c",
-        "V_a > n_a > h_a",
-        "h_a > n_a > V_a",
-        "V_a > V_b > V_c",
-        "n_a > n_b > n_c"
+        "h{alt:a} > h{alt:b} > h{alt:c}",
+        "V{alt:a} > n{alt:a} > h{alt:a}",
+        "h{alt:a} > n{alt:a} > V{alt:a}",
+        "V{alt:a} > V{alt:b} > V{alt:c}",
+        "n{alt:a} > n{alt:b} > n{alt:c}"
       ],
       "dogru": 1,
-      "aciklama": "Çeşitkenar bir üçgende aynı köşeden çizilen yardımcı elemanlardan en kısası yükseklik (h_a), ortancası açıortay (n_a), en uzunu ise kenarortaydır (V_a). Dolayısıyla V_a > n_a > h_a kesinlikle doğrudur."
+      "aciklama": "Çeşitkenar bir üçgende aynı köşeden çizilen yardımcı elemanlardan en kısası yükseklik (h{alt:a}), ortancası açıortay (n{alt:a}), en uzunu ise kenarortaydır (V{alt:a}). Dolayısıyla V{alt:a} > n{alt:a} > h{alt:a} kesinlikle doğrudur."
     },
     {
       "tur": "coktan",
       "soru": "‘Kenarortay (Ağırlık Merkezi) ve Açıortayın Alan Paylaşımı’ kavramı veya konusuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
       "secenekler": [
         "Bir ikizkenar üçgende (|AB| = |AC|) tepe açısından tabana indirilen yükseklik, açıortay ve kenarortay üst üste çakışır ve.",
-        "Bir dik üçgende dik açıdan hipotenüse indirilen yükseklik (h_a) hem Öklid bağıntılarını hem de üçgenin alan eşitliğini sağlar.",
+        "Bir dik üçgende dik açıdan hipotenüse indirilen yükseklik (h{alt:a}) hem Öklid bağıntılarını hem de üçgenin alan eşitliğini sağlar.",
         "Bir üçgende çizilen tek bir kenarortay, tabanı iki eşit parçaya böldüğü ve yükseklik ortak olduğu için üçgenin alanını iki.",
         "Bir üçgende aynı türden üç yardımcı eleman daima tek bir noktada kesişir (nokudaştır): Üç iç açıortayın kesim noktası (I).",
         "Kenar uzunlukları a, b, c ve yarı çevresi u = (a + b + c) / 2 olan bir üçgenin iç teğet çemberinin yarıçapı r ise üçgenin."
@@ -171,7 +171,7 @@
       "soru": "‘İkizkenar ve Eşkenar Üçgende Yardımcı Elemanlar (YA-Kİ Kuralı)’ kavramı veya konusuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
       "secenekler": [
         "Bir üçgende aynı türden üç yardımcı eleman daima tek bir noktada kesişir (nokudaştır): Üç iç açıortayın kesim noktası (I).",
-        "Bir dik üçgende dik açıdan hipotenüse indirilen yükseklik (h_a) hem Öklid bağıntılarını hem de üçgenin alan eşitliğini sağlar.",
+        "Bir dik üçgende dik açıdan hipotenüse indirilen yükseklik (h{alt:a}) hem Öklid bağıntılarını hem de üçgenin alan eşitliğini sağlar.",
         "Bir üçgende çizilen tek bir kenarortay, tabanı iki eşit parçaya böldüğü ve yükseklik ortak olduğu için üçgenin alanını iki.",
         "Bir ikizkenar üçgende (|AB| = |AC|) tepe açısından tabana indirilen yükseklik, açıortay ve kenarortay üst üste çakışır ve.",
         "Kenar uzunlukları a, b, c ve yarı çevresi u = (a + b + c) / 2 olan bir üçgenin iç teğet çemberinin yarıçapı r ise üçgenin."
@@ -206,7 +206,7 @@
         {
           "metin": "Bir üçgenin kenar uzunlukları ile o kenarlara ait yüksekliklerin uzunlukları doğru orantılıdır.",
           "dogru": false,
-          "aciklama": "Yanlıştır; Alan = (a · h_a)/2 = (b · h_b)/2 sabit olduğundan kenar uzunlukları ile yükseklikler ters orantılıdır."
+          "aciklama": "Yanlıştır; Alan = (a · h{alt:a})/2 = (b · h{alt:b})/2 sabit olduğundan kenar uzunlukları ile yükseklikler ters orantılıdır."
         },
         {
           "metin": "Bir kenar uzunluğu a olan eşkenar üçgenin alanı ({us:a|2} · {kok:3}) / 4 bağıntısıyla hesaplanır.",
@@ -275,12 +275,12 @@
     },
     {
       "tur": "ogretici",
-      "soru": "İkizkenar bir ABC üçgeninde |AB| = |AC| = 13 cm ve taban uzunluğu |BC| = 10 cm'dir. Bu üçgenin; 1) A tepe noktasından [BC] tabanına indirilen yüksekliğini (h_a), 2) Alanını ve 3) Eşit yan kenarlarından birine ([AC] kenarına) ait yüksekliğini (h_b) adım adım hesaplayınız.",
-      "cevap": "1) A'dan [BC]'ye indirilen dikme tabanı 5 cm ve 5 cm olarak ikiye böler. 5-12-13 özel dik üçgeninden yükseklik h_a = 12 cm bulunur. 2) Üçgenin alanı: Alan(ABC) = (10 · 12) / 2 = 60 cm² olur. 3) Yan kenara ait yükseklik: Alan(ABC) = (|AC| · h_b) / 2 → 60 = (13 · h_b) / 2 → 13 · h_b = 120 → h_b = 120/13 cm olarak bulunur.",
+      "soru": "İkizkenar bir ABC üçgeninde |AB| = |AC| = 13 cm ve taban uzunluğu |BC| = 10 cm'dir. Bu üçgenin; 1) A tepe noktasından [BC] tabanına indirilen yüksekliğini (h{alt:a}), 2) Alanını ve 3) Eşit yan kenarlarından birine ([AC] kenarına) ait yüksekliğini (h{alt:b}) adım adım hesaplayınız.",
+      "cevap": "1) A'dan [BC]'ye indirilen dikme tabanı 5 cm ve 5 cm olarak ikiye böler. 5-12-13 özel dik üçgeninden yükseklik h{alt:a} = 12 cm bulunur. 2) Üçgenin alanı: Alan(ABC) = (10 · 12) / 2 = 60 cm² olur. 3) Yan kenara ait yükseklik: Alan(ABC) = (|AC| · h{alt:b}) / 2 → 60 = (13 · h{alt:b}) / 2 → 13 · h{alt:b} = 120 → h{alt:b} = 120/13 cm olarak bulunur.",
       "ipuclari": [
-        "1. Adım: İkizkenar üçgende tepeden tabana indirilen dikmenin tabanı iki eşit parçaya (5 cm - 5 cm) böldüğünü kullanarak Pisagor'dan h_a yüksekliğini bulunuz.",
-        "2. Adım: Taban (10 cm) ve h_a yüksekliğini kullanarak Alan(ABC) = (a · h_a) / 2 değerini hesaplayınız.",
-        "3. Adım: Aynı alanı yan kenar (b = 13 cm) ile yan yüksekliğin çarpımının yarısına eşitleyerek [(13 · h_b) / 2 = Alan] h_b değerini bulunuz."
+        "1. Adım: İkizkenar üçgende tepeden tabana indirilen dikmenin tabanı iki eşit parçaya (5 cm - 5 cm) böldüğünü kullanarak Pisagor'dan h{alt:a} yüksekliğini bulunuz.",
+        "2. Adım: Taban (10 cm) ve h{alt:a} yüksekliğini kullanarak Alan(ABC) = (a · h{alt:a}) / 2 değerini hesaplayınız.",
+        "3. Adım: Aynı alanı yan kenar (b = 13 cm) ile yan yüksekliğin çarpımının yarısına eşitleyerek [(13 · h{alt:b}) / 2 = Alan] h{alt:b} değerini bulunuz."
       ]
     }
   ]

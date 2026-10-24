@@ -50,7 +50,7 @@
     {
       "baslik": "Dik Bileşenler",
       "metin": [
-        "{koyu:3) Dik Bileşenlerine Ayırma Yöntemi:} Kartezyen düzlemde yatay (+x) ekseniyle {koyu:θ} açısı yapan bir {koyu:A} vektörünün uç noktasından x ve y eksenlerine dikmeler indirilerek yatay bileşeni {koyu:Ax = A · cosθ} ve düşey bileşeni {koyu:Ay = A · sinθ} bulunur. Birden fazla vektör toplanırken tüm yatay bileşenler kendi arasında ({koyu:Rx = ΣAx}), tüm düşey bileşenler kendi arasında ({koyu:Ry = ΣAy}) cebirsel olarak toplanır ve bileşkenin büyüklüğü Pisagor bağıntısıyla {koyu:R} = {kok:Rx² + Ry²} olarak hesaplanır. Ayrıca büyüklükleri {koyu:A} ve {koyu:B} olan iki vektörün bileşkesi aralarındaki açıya göre {koyu:|A - B| ≤ R ≤ A + B} aralığında değer alır: Açı {koyu:0° (aynı yönlü)} iken {koyu:R_max = A + B}, açı {koyu:180° (zıt yönlü)} iken {koyu:R_min = |A - B|}, açı {koyu:90° (dik)} iken {koyu:R} = {kok:A² + B²} olur. Vektörler arasındaki açı büyüdükçe bileşke vektörün büyüklüğü küçülür."
+        "{koyu:3) Dik Bileşenlerine Ayırma Yöntemi:} Kartezyen düzlemde yatay (+x) ekseniyle {koyu:θ} açısı yapan bir {koyu:A} vektörünün uç noktasından x ve y eksenlerine dikmeler indirilerek yatay bileşeni {koyu:Ax = A · cosθ} ve düşey bileşeni {koyu:Ay = A · sinθ} bulunur. Birden fazla vektör toplanırken tüm yatay bileşenler kendi arasında ({koyu:Rx = ΣAx}), tüm düşey bileşenler kendi arasında ({koyu:Ry = ΣAy}) cebirsel olarak toplanır ve bileşkenin büyüklüğü Pisagor bağıntısıyla {koyu:R} = {kok:Rx² + Ry²} olarak hesaplanır. Ayrıca büyüklükleri {koyu:A} ve {koyu:B} olan iki vektörün bileşkesi aralarındaki açıya göre {koyu:|A - B| ≤ R ≤ A + B} aralığında değer alır: Açı {koyu:0° (aynı yönlü)} iken {koyu:R{alt:max} = A + B}, açı {koyu:180° (zıt yönlü)} iken {koyu:R{alt:min} = |A - B|}, açı {koyu:90° (dik)} iken {koyu:R} = {kok:A² + B²} olur. Vektörler arasındaki açı büyüdükçe bileşke vektörün büyüklüğü küçülür."
       ],
       "kutu": {
         "tur": "ipucu",
@@ -70,7 +70,7 @@
     },
     {
       "soru": "Büyüklükleri 7 N ve 15 N olan iki kuvvetin bileşkesinin (R) alabileceği en büyük ve en küçük tam sayı değerleri nelerdir? Bu iki kuvvet birbirine dik (90°) olsaydı bileşke kaç N olurdu? (8-15-17 özel üçgenini hatırlayınız)",
-      "cevap": "İki vektörün bileşkesi |F₁ - F₂| ≤ R ≤ F₁ + F₂ aralığındadır:\n• En küçük değer (θ = 180°, zıt yönlü): R_min = |15 - 7| = 8 N.\n• En büyük değer (θ = 0°, aynı yönlü): R_max = 15 + 7 = 22 N.\n• Dik olsalardı (θ = 90°): R = {kok:7² + 15²} = {kok:49 + 225} = {kok:274} N olurdu (Eğer kuvvetler 8 N ve 15 N olsaydı dik durumda {kok:8² + 15²} = 17 N olurdu)."
+      "cevap": "İki vektörün bileşkesi |F₁ - F₂| ≤ R ≤ F₁ + F₂ aralığındadır:\n• En küçük değer (θ = 180°, zıt yönlü): R{alt:min} = |15 - 7| = 8 N.\n• En büyük değer (θ = 0°, aynı yönlü): R{alt:max} = 15 + 7 = 22 N.\n• Dik olsalardı (θ = 90°): R = {kok:7² + 15²} = {kok:49 + 225} = {kok:274} N olurdu (Eğer kuvvetler 8 N ve 15 N olsaydı dik durumda {kok:8² + 15²} = 17 N olurdu)."
     },
     {
       "soru": "Aynı düzlemde bulunan K, L ve M vektörleri uç uca eklendiğinde M vektörünün bitiş noktası K vektörünün başlangıç noktasıyla çakışmaktadır (kapalı üçgen oluşturmaktadır). Buna göre K + L + M toplamı aşağıdakilerden hangisine eşittir?",

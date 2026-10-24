@@ -19,8 +19,8 @@
     "{koyu:Yer Değiştirme (Konum) Modeli:} Hız-zaman grafiğinin altındaki yamuk alanı yer değiştirmeyi verir: {koyu:Δx = v₀.t + {kesir:1|2}.a.{us:t|2}} (hızlanan) veya {koyu:Δx = v₀.t - {kesir:1|2}.a.{us:t|2}} (yavaşlayan).",
     "{koyu:Zamansız Hız Denklemi:} Zamanın (t) bilinmediği durumlarda hız ve yer değiştirme denklemlerinin ortak çözümünden {koyu:{us:v|2} = {us:v₀|2} + 2.a.Δx} (hızlanan) ve {koyu:{us:v|2} = {us:v₀|2} - 2.a.Δx} (yavaşlayan) bağıntısı elde edilir.",
     "{koyu:İlk Hızsız Harekette x - 3x - 5x Kuralı:} Durgun halden (v₀ = 0) sabit ivmeyle harekete geçen bir cisim, ardışık eşit zaman aralıklarında {koyu:x, 3x, 5x, 7x...} şeklinde tek sayılarla orantılı yollar alır; toplam yer değiştirmesi ise {koyu:x, 4x, 9x, 16x...} ({us:t|2} ile orantılı) olur.",
-    "{koyu:Ortalama Hız Formülü:} Sabit ivmeli harekette ivme sabit olduğu için ortalama hız, ilk hız ile son hızın aritmetik ortalamasına eşittir: {koyu:v_ort} = {kesir:v₀ + v|2} ve {koyu:Δx = v_ort . t}.",
-    "{koyu:Fren (Durma) Mesafesi:} v₀ hızıyla giderken a ivmesiyle yavaşlayıp duran (v = 0) bir aracın durma mesafesi {koyu:Δx_durma = {kesir:{us:v₀|2}|2.a}} olup ilk hızın karesiyle doğru orantılıdır."
+    "{koyu:Ortalama Hız Formülü:} Sabit ivmeli harekette ivme sabit olduğu için ortalama hız, ilk hız ile son hızın aritmetik ortalamasına eşittir: {koyu:v{alt:ort}} = {kesir:v₀ + v|2} ve {koyu:Δx = v{alt:ort} . t}.",
+    "{koyu:Fren (Durma) Mesafesi:} v₀ hızıyla giderken a ivmesiyle yavaşlayıp duran (v = 0) bir aracın durma mesafesi {koyu:Δx{alt:durma} = {kesir:{us:v₀|2}|2.a}} olup ilk hızın karesiyle doğru orantılıdır."
   ],
   "bolumler": [
     {
@@ -32,7 +32,7 @@
       "kutu": {
         "tur": "bilgi",
         "baslik": "Ortalama Hız ile Hızlı Çözüm Yöntemi",
-        "metin": "Yalnızca {koyu:sabit ivmeli} hareketlerde geçerli olmak üzere, bir zaman aralığındaki ortalama hız ilk hız ile son hızın aritmetik ortalamasıdır:\n{koyu:v_ort} = {kesir:v₀ + v_son|2}  ve  {koyu:Δx = ({kesir:v₀ + v_son|2}) . t}\nBu formül, ivmeyi (a) hesaplamaya gerek kalmadan alınan yolu doğrudan verir!"
+        "metin": "Yalnızca {koyu:sabit ivmeli} hareketlerde geçerli olmak üzere, bir zaman aralığındaki ortalama hız ilk hız ile son hızın aritmetik ortalamasıdır:\n{koyu:v{alt:ort}} = {kesir:v₀ + v{alt:son}|2}  ve  {koyu:Δx = ({kesir:v₀ + v{alt:son}|2}) . t}\nBu formül, ivmeyi (a) hesaplamaya gerek kalmadan alınan yolu doğrudan verir!"
       },
       "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 198\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"26\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Sabit İvmeli Hareket Grafiklerinden Matematiksel Modellere Geçiş</text><rect x=\"20\" y=\"42\" width=\"200\" height=\"142\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><rect x=\"20\" y=\"42\" width=\"200\" height=\"28\" rx=\"8\" fill=\"#2563eb\"/><rect x=\"20\" y=\"60\" width=\"200\" height=\"10\" fill=\"#2563eb\"/><text x=\"120.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">1. Hız-Zaman Denklemi</text><text x=\"32\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• İvme-zaman (a-t) grafiğinin</text><text x=\"32\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  altındaki alan Δv = a.t verir</text><text x=\"32\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• v = v₀ + a.t (Hızlanan)</text><text x=\"32\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• v = v₀ - a.t (Yavaşlayan)</text><text x=\"32\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• İlk hız sıfırsa: v = a.t</text><rect x=\"240\" y=\"42\" width=\"200\" height=\"142\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"1.6\"/><rect x=\"240\" y=\"42\" width=\"200\" height=\"28\" rx=\"8\" fill=\"#059669\"/><rect x=\"240\" y=\"60\" width=\"200\" height=\"10\" fill=\"#059669\"/><text x=\"340.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">2. Konum-Zaman Denklemi</text><text x=\"252\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Hız-zaman (v-t) grafiğinin</text><text x=\"252\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  altındaki yamuk alanı Δx verir</text><text x=\"252\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Δx = ((v₀ + v) / 2) . t</text><text x=\"252\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Δx = v₀.t + (1/2).a.t²</text><text x=\"252\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• İlk hız sıfırsa: Δx = (1/2).a.t²</text><rect x=\"460\" y=\"42\" width=\"200\" height=\"142\" rx=\"8\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"1.6\"/><rect x=\"460\" y=\"42\" width=\"200\" height=\"28\" rx=\"8\" fill=\"#d97706\"/><rect x=\"460\" y=\"60\" width=\"200\" height=\"10\" fill=\"#d97706\"/><text x=\"560.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">3. Zamansız Hız Denklemi</text><text x=\"472\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• t = (v - v₀) / a ifadesi</text><text x=\"472\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">  Δx denkleminde yerine konursa:</text><text x=\"472\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• v² = v₀² + 2.a.Δx (Hızlanan)</text><text x=\"472\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• v² = v₀² - 2.a.Δx (Yavaşlayan)</text><text x=\"472\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Zaman verilmediğinde kullanılır</text></svg>"
     },
@@ -65,13 +65,13 @@
     {
       "baslik": "4. Düzgün Yavaşlayan Hareket ve Fren (Durma) Mesafesi",
       "metin": [
-        "Doğrusal bir yolda {koyu:v₀} hızıyla ilerleyen bir sürücü frene basarak sabit {koyu:a} yavaşlama ivmesiyle aracı tamamen durdurduğunda son hız {koyu:v = 0} olur.\n• {koyu:Durma süresi:} v = v₀ - a.t_durma = 0  =>  {koyu:t_durma} = {kesir:v₀|a}\n• {koyu:Durma (Fren) mesafesi:} {us:v|2} = {us:v₀|2} - 2.a.Δx_durma => 0 = {us:v₀|2} - 2.a.Δx_durma  =>  {koyu:Δx_durma = {kesir:{us:v₀|2}|2.a}}",
+        "Doğrusal bir yolda {koyu:v₀} hızıyla ilerleyen bir sürücü frene basarak sabit {koyu:a} yavaşlama ivmesiyle aracı tamamen durdurduğunda son hız {koyu:v = 0} olur.\n• {koyu:Durma süresi:} v = v₀ - a.t{alt:durma} = 0  =>  {koyu:t{alt:durma}} = {kesir:v₀|a}\n• {koyu:Durma (Fren) mesafesi:} {us:v|2} = {us:v₀|2} - 2.a.Δx{alt:durma} => 0 = {us:v₀|2} - 2.a.Δx{alt:durma}  =>  {koyu:Δx{alt:durma} = {kesir:{us:v₀|2}|2.a}}",
         "Bu matematiksel model trafik güvenliği açısından hayati bir gerçeği ortaya koyar: Aynı yolda ve aynı fren ivmesiyle (a sabit) hareket eden bir aracın {koyu:hızı 2 katına çıkarsa (2v₀), durma süresi 2 katına çıkarken fren mesafesi 4 katına ({us:2|2} = 4) çıkar!} Hızı 3 katına çıkarsa fren mesafesi {koyu:9 katına} çıkar."
       ],
       "kutu": {
         "tur": "dikkat",
         "baslik": "Tepki (İntikal) Mesafesi + Fren Mesafesi = Durma Mesafesi",
-        "metin": "Gerçek hayatta sürücünün tehlikeyi fark ettiği an ile ayağını frene bastığı an arasında yaklaşık 0,5 - 1 saniyelik bir {koyu:tepki (intikal) süresi} geçer. Araç bu sürede sabit v₀ hızıyla yol alır ({koyu:Δx_tepki = v₀ . t_tepki}). Toplam durma mesafesi tepki mesafesi ile fren mesafesinin toplamıdır."
+        "metin": "Gerçek hayatta sürücünün tehlikeyi fark ettiği an ile ayağını frene bastığı an arasında yaklaşık 0,5 - 1 saniyelik bir {koyu:tepki (intikal) süresi} geçer. Araç bu sürede sabit v₀ hızıyla yol alır ({koyu:Δx{alt:tepki} = v₀ . t{alt:tepki}}). Toplam durma mesafesi tepki mesafesi ile fren mesafesinin toplamıdır."
       }
     },
     {
@@ -123,7 +123,7 @@
     },
     {
       "soru": "İlk hızı 6 m/s olan bir hareketli sabit ivmeyle düzgün hızlanarak 5 saniye sonra hızını 24 m/s değerine çıkarıyor. Bu hareketlinin 5 saniyede yaptığı yer değiştirme kaç metredir?",
-      "cevap": "Doğru yanıt: 75. Ortalama hız v_ort = (v₀ + v) / 2 = (6 + 24) / 2 = 15 m/s. Yer değiştirme Δx = v_ort . t = 15 . 5 = 75 m olur."
+      "cevap": "Doğru yanıt: 75. Ortalama hız v{alt:ort} = (v₀ + v) / 2 = (6 + 24) / 2 = 15 m/s. Yer değiştirme Δx = v{alt:ort} . t = 15 . 5 = 75 m olur."
     }
   ],
   "etkinlikler": [
@@ -227,11 +227,11 @@
           "Düzgün yavaşlayan hareketin zamansız hız denklemi"
         ],
         [
-          "Δx_durma = v₀² / (2a)",
+          "Δx{alt:durma} = v₀² / (2a)",
           "Fren yapan aracın durma mesafesi bağıntısı"
         ],
         [
-          "v_ort = (v₀ + v_son) / 2",
+          "v{alt:ort} = (v₀ + v{alt:son}) / 2",
           "Sabit ivmeli harekette ortalama hız bağıntısı"
         ]
       ]
@@ -269,9 +269,9 @@
     {
       "tur": "ogretici",
       "soru": "Doğrusal bir yolda 36 m/s hızla ilerleyen bir otomobilin sürücüsü, ilerideki engeli fark ettikten 0,5 saniye sonra (tepki süresi) frene basıyor ve araç 6 m/{us:s|2} sabit ivmeyle yavaşlayarak duruyor. Aracın toplam durma mesafesini adım adım hesaplayınız.",
-      "cevap": "1. Adım (Tepki Mesafesi): Sürücü 0,5 s boyunca henüz frene basmadığı için araç sabit 36 m/s hızla ilerler: Δx₁ = v₀ . t_tepki = 36 . 0,5 = 18 metre. 2. Adım (Fren Mesafesi): Araç 36 m/s hızdan 6 m/s² ivmeyle yavaşlayıp durduğuna göre Δx₂ = v₀² / (2.a) = 36² / (2 . 6) = 1296 / 12 = 108 metre. 3. Adım (Toplam Durma Mesafesi): Δx_toplam = Δx₁ + Δx₂ = 18 + 108 = 126 metre bulunur.",
+      "cevap": "1. Adım (Tepki Mesafesi): Sürücü 0,5 s boyunca henüz frene basmadığı için araç sabit 36 m/s hızla ilerler: Δx₁ = v₀ . t{alt:tepki} = 36 . 0,5 = 18 metre. 2. Adım (Fren Mesafesi): Araç 36 m/s hızdan 6 m/s² ivmeyle yavaşlayıp durduğuna göre Δx₂ = v₀² / (2.a) = 36² / (2 . 6) = 1296 / 12 = 108 metre. 3. Adım (Toplam Durma Mesafesi): Δx{alt:toplam} = Δx₁ + Δx₂ = 18 + 108 = 126 metre bulunur.",
       "ipuclari": [
-        "1. İpucu: Önce sürücünün frene basana kadar geçen 0,5 saniyelik tepki süresinde sabit 36 m/s hızla aldığı tepki mesafesini (Δx₁ = v₀ . t_tepki) bulunuz.",
+        "1. İpucu: Önce sürücünün frene basana kadar geçen 0,5 saniyelik tepki süresinde sabit 36 m/s hızla aldığı tepki mesafesini (Δx₁ = v₀ . t{alt:tepki}) bulunuz.",
         "2. İpucu: Ardından frene bastıktan durana kadar geçen sürede aldığı fren mesafesini (Δx₂ = v₀² / 2a) hesaplayıp iki mesafeyi toplayınız."
       ]
     }

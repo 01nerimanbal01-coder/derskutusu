@@ -19,7 +19,7 @@
     "İki nicel değişken arasında güçlü bir korelasyonun (|r|'nin 1'e yakın olması) bulunması, bir değişkenin diğerinin doğrudan nedeni olduğunu kanıtlamaz ('Korelasyon nedensellik değildir').",
     "Hem açıklayıcı hem de yanıt değişkenini aynı anda etkileyerek aralarında sahte (zahiri) bir ilişki varmış gibi görünmesine yol açan üçüncü değişkene 'gizli (karıştırıcı) değişken' denir.",
     "Evreni temsil etmeyen dar veya tek yönlü bir gruptan veri toplanmasına 'seçim (örneklem) yanlılığı'; veri setindeki aykırı (uç) değerlerin kasıtlı olarak gizlenmesine ise 'veri ayıklama yanlılığı' denir.",
-    "Gözlemlenen veri aralığının [x_min, x_max] içindeki bir değer için doğrusal modelle tahmin yapmaya 'interpolasyon' (güvenilir), veri aralığının çok dışındaki değerler için tahmin yapmaya ise 'ekstrapolasyon' (hataya açık) denir.",
+    "Gözlemlenen veri aralığının [x{alt:min}, x{alt:max}] içindeki bir değer için doğrusal modelle tahmin yapmaya 'interpolasyon' (güvenilir), veri aralığının çok dışındaki değerler için tahmin yapmaya ise 'ekstrapolasyon' (hataya açık) denir.",
     "Serpilme diyagramlarında eksenlerin sıfırdan başlatılmaması, ölçeklerin daraltılıp genişletilmesi veya doğrusal olmayan (eğrisel) verilere doğrusal model dayatılması en sık karşılaşılan istatistiksel hatalardır."
   ],
   "bolumler": [
@@ -82,8 +82,8 @@
       "baslik": "5. Doğrusal Modelle Tahmin: İnterpolasyon ve Ekstrapolasyon",
       "metin": [
         "İki nicel değişken arasında güçlü bir doğrusal ilişki saptandığında oluşturulan en uygun doğru (regresyon doğrusu) denklemi {koyu:y = a + b · x} ile bilinmeyen değerler için tahmin yapılabilir. Ancak tahminin yapıldığı bölge son derece kritiktir:",
-        "1) {koyu:İnterpolasyon (Aralık İçi Tahmin)}: Eldeki verilerin en küçük ve en büyük değerleri arasındaki ({koyu:[x_min, x_max] aralığı içindeki}) bir x değeri için y tahmini yapmaktır. Doğrusal ilişki güçlü ise interpolasyon sonuçları {koyu:yüksek güvenilirliğe sahiptir ve kabul edilir}.",
-        "2) {koyu:Ekstrapolasyon (Aralık Dışı Tahmin)}: Gözlemlenen veri aralığının {koyu:dışındaki (x < x_min veya x > x_max)} değerler için doğrusal modelin aynen devam edeceğini varsayarak tahmin yapmaktır. Uzak ekstrapolasyon çoğu zaman {koyu:fiziksel ve biyolojik gerçekliğe aykırı saçma sonuçlar üretir}. Örneğin 1–10 yaş arası çocuklarda yaş (x) ile boy (y, cm) arasında kurulan {koyu:y = 70 + 6x} doğrusal modelini kullanarak 60 yaşındaki bir insanın boyunun 70 + 6(60) = 430 cm olacağını iddia etmek {koyu:ekstrapolasyon hatasıdır ve çürütülür}."
+        "1) {koyu:İnterpolasyon (Aralık İçi Tahmin)}: Eldeki verilerin en küçük ve en büyük değerleri arasındaki ({koyu:[x{alt:min}, x{alt:max}] aralığı içindeki}) bir x değeri için y tahmini yapmaktır. Doğrusal ilişki güçlü ise interpolasyon sonuçları {koyu:yüksek güvenilirliğe sahiptir ve kabul edilir}.",
+        "2) {koyu:Ekstrapolasyon (Aralık Dışı Tahmin)}: Gözlemlenen veri aralığının {koyu:dışındaki (x < x{alt:min} veya x > x{alt:max})} değerler için doğrusal modelin aynen devam edeceğini varsayarak tahmin yapmaktır. Uzak ekstrapolasyon çoğu zaman {koyu:fiziksel ve biyolojik gerçekliğe aykırı saçma sonuçlar üretir}. Örneğin 1–10 yaş arası çocuklarda yaş (x) ile boy (y, cm) arasında kurulan {koyu:y = 70 + 6x} doğrusal modelini kullanarak 60 yaşındaki bir insanın boyunun 70 + 6(60) = 430 cm olacağını iddia etmek {koyu:ekstrapolasyon hatasıdır ve çürütülür}."
       ],
       "kutu": {
         "tur": "hatirla",
@@ -194,7 +194,7 @@
           "aciklama": "Yanlıştır; korelasyon katsayısı ne kadar yüksek olursa olsun tek başına nedenselliği (sebep-sonuç ilişkisini) kanıtlamaz."
         },
         {
-          "metin": "Gözlemlenen veri aralığının [x_min, x_max] içindeki bir değer için doğrusal regresyon modeliyle yapılan tahmine 'interpolasyon' denir.",
+          "metin": "Gözlemlenen veri aralığının [x{alt:min}, x{alt:max}] içindeki bir değer için doğrusal regresyon modeliyle yapılan tahmine 'interpolasyon' denir.",
           "dogru": true,
           "aciklama": "Doğrudur; aralık içi tahmin interpolasyon, aralık dışı tahmin ise ekstrapolasyondur."
         },
@@ -230,7 +230,7 @@
         ],
         [
           "İnterpolasyon",
-          "Gözlemlenen veri aralığının [x_min, x_max] içindeki bir değer için doğrusal modelle tahmin yapma"
+          "Gözlemlenen veri aralığının [x{alt:min}, x{alt:max}] içindeki bir değer için doğrusal modelle tahmin yapma"
         ],
         [
           "Ekstrapolasyon",

@@ -48,7 +48,7 @@
         {
           "tur": "dikkat",
           "baslik": "Dikkat",
-          "metin": "Dünya'nın Ay'a uyguladığı kütle çekim kuvvetinin büyüklüğü ile Ay'ın Dünya'ya uyguladığı kütle çekim kuvvetinin büyüklüğü birbirine EŞİTTİR (F_DA = F_AD); yalnızca yönleri birbirine zıttır!"
+          "metin": "Dünya'nın Ay'a uyguladığı kütle çekim kuvvetinin büyüklüğü ile Ay'ın Dünya'ya uyguladığı kütle çekim kuvvetinin büyüklüğü birbirine EŞİTTİR (F{alt:DA} = F{alt:AD}); yalnızca yönleri birbirine zıttır!"
         },
         {
           "tur": "ipucu",
@@ -86,7 +86,7 @@
     },
     {
       "soru": "Atom çekirdeğinde pozitif yüklü protonlar birbirini elektromanyetik kuvvetle ittiği hâlde çekirdeğin dağılmadan bir arada kalmasını sağlayan kuvvet hangisidir? Bu kuvvetin menzil özelliğini açıklayınız.",
-      "cevap": "Çekirdeğin dağılmasını önleyen kuvvet Güçlü Nükleer (Yeğin) Kuvvettir. Elektromanyetik itme kuvvetinden yaklaşık 100 kat daha güçlüdür; ancak etki menzili çok kısadır (yalnızca 10^-15 m mertebesindeki atom çekirdeği içinde etkilidir, çekirdek dışında etkisi sıfırlanır)."
+      "cevap": "Çekirdeğin dağılmasını önleyen kuvvet Güçlü Nükleer (Yeğin) Kuvvettir. Elektromanyetik itme kuvvetinden yaklaşık 100 kat daha güçlüdür; ancak etki menzili çok kısadır (yalnızca {us:10|−15} m mertebesindeki atom çekirdeği içinde etkilidir, çekirdek dışında etkisi sıfırlanır)."
     },
     {
       "soru": "Doğadaki dört temel kuvvetten hangilerinin etki menzili sonsuzdur? Bu iki kuvvetin birbirinden ayrılan en önemli yönü nedir?",
@@ -97,8 +97,8 @@
       "cevap": "Çembersel pistin tam çevresi = 2·π·r = 2 · 3 · 50 = 300 m. Yarım turda alınan yol (yay uzunluğu): x = 300 / 2 = 150 m. Yer değiştirme büyüklüğü (A ile B arasındaki en kısa uzaklık, yani çap): |Δx| = 2·r = 2 · 50 = 100 m. Ortalama sürat = x / Δt = 150 / 25 = 6 m/s. Ortalama hızın büyüklüğü = |Δx| / Δt = 100 / 25 = 4 m/s."
     },
     {
-      "soru": "Doğrusal bir sayı doğrusu üzerinde x_ilk = -15 m konumundan harekete geçen bir araç, önce +25 m konumuna gidiyor, ardından geri dönerek +5 m konumunda duruyor. Tüm hareket 10 saniye sürdüğüne göre aracın aldığı toplam yolu ve yer değiştirmesini bulunuz.",
-      "cevap": "Araç önce -15 m'den +25 m'ye giderken 40 m yol almış, sonra +25 m'den +5 m'ye dönerken 20 m daha yol almıştır. Toplam alınan yol: x = 40 + 20 = 60 m. Yer değiştirme ise son konum ile ilk konum farkıdır: Δx = x_son - x_ilk = (+5) - (-15) = +20 m (+x yönünde 20 m)."
+      "soru": "Doğrusal bir sayı doğrusu üzerinde x{alt:ilk} = -15 m konumundan harekete geçen bir araç, önce +25 m konumuna gidiyor, ardından geri dönerek +5 m konumunda duruyor. Tüm hareket 10 saniye sürdüğüne göre aracın aldığı toplam yolu ve yer değiştirmesini bulunuz.",
+      "cevap": "Araç önce -15 m'den +25 m'ye giderken 40 m yol almış, sonra +25 m'den +5 m'ye dönerken 20 m daha yol almıştır. Toplam alınan yol: x = 40 + 20 = 60 m. Yer değiştirme ise son konum ile ilk konum farkıdır: Δx = x{alt:son} - x{alt:ilk} = (+5) - (-15) = +20 m (+x yönünde 20 m)."
     },
     {
       "soru": "Bir yürüyüşçü düz bir arazide önce doğu yönünde 60 metre, ardından dik olarak kuzey yönünde 80 metre yürüyerek toplam 20 saniyede M noktasına varıyor. Yürüyüşçünün ortalama sürati ile ortalama hızının büyüklüğü kaç m/s'dir?",
@@ -129,7 +129,7 @@
         "Güçlü Nükleer > Kütle Çekim > Elektromanyetik > Zayıf Nükleer"
       ],
       "dogru": 1,
-      "aciklama": "Dört temel kuvvetin şiddet sıralaması büyükten küçüğe: Güçlü Nükleer (1) > Elektromanyetik (10^-2) > Zayıf Nükleer (10^-13) > Kütle Çekim (10^-38) şeklindedir.",
+      "aciklama": "Dört temel kuvvetin şiddet sıralaması büyükten küçüğe: Güçlü Nükleer (1) > Elektromanyetik ({us:10|−2}) > Zayıf Nükleer ({us:10|−13}) > Kütle Çekim ({us:10|−38}) şeklindedir.",
       "tur": "coktan"
     },
     {
@@ -249,7 +249,7 @@
         "İkinci olarak negatif yüklü elektronları pozitif yüklü çekirdek etrafında tutan sonsuz menzilli kuvveti yazınız.",
         "Üçüncü olarak nötr gök cisimleri olan gezegenleri Güneş etrafındaki yörüngede tutan sonsuz menzilli kuvveti açıklayınız."
       ],
-      "cevap": "1) Atom çekirdeğinin içinde proton ve nötronları bir arada tutan kuvvet 'Güçlü Nükleer Kuvvet'tir; doğadaki en güçlü kuvvettir ancak menzili çok kısadır (~10^-15 m). 2) Negatif yüklü elektronların pozitif yüklü atom çekirdeği çevresinde dolanmasını sağlayan kuvvet 'Elektromanyetik Kuvvet'tir; menzili sonsuzdur. 3) Elektrik yükü bakımından nötr olan gezegenlerin Güneş etrafındaki yörüngelerde dolanmasını sağlayan kuvvet ise 'Kütle Çekim Kuvveti'dir; doğadaki en zayıf kuvvet olmasına rağmen menzili sonsuzdur ve daima çekici olduğu için dev kütleli gök cisimlerinde baskın kuvvet hâline gelir.",
+      "cevap": "1) Atom çekirdeğinin içinde proton ve nötronları bir arada tutan kuvvet 'Güçlü Nükleer Kuvvet'tir; doğadaki en güçlü kuvvettir ancak menzili çok kısadır (~{us:10|−15} m). 2) Negatif yüklü elektronların pozitif yüklü atom çekirdeği çevresinde dolanmasını sağlayan kuvvet 'Elektromanyetik Kuvvet'tir; menzili sonsuzdur. 3) Elektrik yükü bakımından nötr olan gezegenlerin Güneş etrafındaki yörüngelerde dolanmasını sağlayan kuvvet ise 'Kütle Çekim Kuvveti'dir; doğadaki en zayıf kuvvet olmasına rağmen menzili sonsuzdur ve daima çekici olduğu için dev kütleli gök cisimlerinde baskın kuvvet hâline gelir.",
       "tur": "ogretici"
     }
   ],

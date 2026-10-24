@@ -39,9 +39,9 @@
     {
       "baslik": "Pil Potansiyelini Etkileyen ve Etkilemeyen Faktörler",
       "metin": [
-        "Pil tepkimeleri birer denge tepkimesi olup {koyu:ekzotermik (ısı veren)} karakterdedir: {koyu:Anot(k) + Katot İyonu(suda) ⇌ Anot İyonu(suda) + Katot(k) + Isı}. {koyu:Le Chatelier İlkesi}'ne göre pil dengesini {koyu:ürünler (sağ) yönüne} kaydıran her etki pil potansiyelini ({koyu:E_pil}) {koyu:artırır}; dengeyi {koyu:girenler (sol) yönüne} kaydıran her etki ise pil potansiyelini {koyu:azaltır}.",
-        "Buna göre pil potansiyelini etkileyen faktörler şunlardır: {koyu:1) Elektrotların ve çözeltilerin cinsi}, {koyu:2) Sıcaklık} (pil tepkimesi ekzotermik olduğundan sıcaklık artırılırsa denge girenlere kayar ve E_pil azalır; soğutulursa E_pil artar), {koyu:3) İyon derişimleri} (katot yarı hücresindeki katyon derişimini artırmak veya anot yarı hücresindeki katyon derişimini azaltmak dengeyi ürünlere kaydırarak E_pil'i artırır) ve {koyu:4) Gaz elektrotlarda basınç}.",
-        "Buna karşılık metal {koyu:elektrotların kütlesi}, elektrodun {koyu:temas yüzey alanı (boyutu veya toz hâline getirilmesi)} ve sabit derişimde {koyu:çözelti hacmi} pilin başlangıç gerilimini ({koyu:E_pil}) {koyu:etkilemez}; bu nicelikler yalnız pilin akım verme süresini (pil ömrünü ve kapasitesini) değiştirir."
+        "Pil tepkimeleri birer denge tepkimesi olup {koyu:ekzotermik (ısı veren)} karakterdedir: {koyu:Anot(k) + Katot İyonu(suda) ⇌ Anot İyonu(suda) + Katot(k) + Isı}. {koyu:Le Chatelier İlkesi}'ne göre pil dengesini {koyu:ürünler (sağ) yönüne} kaydıran her etki pil potansiyelini ({koyu:E{alt:pil}}) {koyu:artırır}; dengeyi {koyu:girenler (sol) yönüne} kaydıran her etki ise pil potansiyelini {koyu:azaltır}.",
+        "Buna göre pil potansiyelini etkileyen faktörler şunlardır: {koyu:1) Elektrotların ve çözeltilerin cinsi}, {koyu:2) Sıcaklık} (pil tepkimesi ekzotermik olduğundan sıcaklık artırılırsa denge girenlere kayar ve E{alt:pil} azalır; soğutulursa E{alt:pil} artar), {koyu:3) İyon derişimleri} (katot yarı hücresindeki katyon derişimini artırmak veya anot yarı hücresindeki katyon derişimini azaltmak dengeyi ürünlere kaydırarak E{alt:pil}'i artırır) ve {koyu:4) Gaz elektrotlarda basınç}.",
+        "Buna karşılık metal {koyu:elektrotların kütlesi}, elektrodun {koyu:temas yüzey alanı (boyutu veya toz hâline getirilmesi)} ve sabit derişimde {koyu:çözelti hacmi} pilin başlangıç gerilimini ({koyu:E{alt:pil}}) {koyu:etkilemez}; bu nicelikler yalnız pilin akım verme süresini (pil ömrünü ve kapasitesini) değiştirir."
       ],
       "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">PİL POTANSİYELİNİ (E_pil) ETKİLEYEN VE ETKİLEMEYEN FAKTÖRLER</text>\n  <!-- Ust Denge Denklemi -->\n  <rect x=\"40\" y=\"38\" width=\"620\" height=\"34\" rx=\"6\" fill=\"#e0e7ff\" stroke=\"#4f46e5\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"60\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#312e81\">Denge: X(k) + Y²⁺(suda, Katot)  ⇌  X²⁺(suda, Anot) + Y(k) + ISI   (Ürünlere kayarsa E_pil ARTAR)</text>\n  <!-- Sol: Etkileyenler -->\n  <rect x=\"25\" y=\"82\" width=\"320\" height=\"162\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"185\" y=\"104\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#166534\">E_pil DEĞERİNİ DEĞİŞTİRENLER</text>\n  <text x=\"38\" y=\"128\" font-size=\"11.5\" fill=\"#14532d\">• Katot derişimini ([Y²⁺]) artırmak → E_pil ARTAR.</text>\n  <text x=\"38\" y=\"150\" font-size=\"11.5\" fill=\"#14532d\">• Anot derişimini ([X²⁺]) azaltmak → E_pil ARTAR.</text>\n  <text x=\"38\" y=\"172\" font-size=\"11.5\" fill=\"#14532d\">• Sıcaklığı azaltmak (soğutmak) → E_pil ARTAR.</text>\n  <text x=\"38\" y=\"194\" font-size=\"11.5\" fill=\"#14532d\">• Sıcaklığı artırmak (ısıtmak) → E_pil AZALIR.</text>\n  <text x=\"38\" y=\"216\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">• Elektrotların ve çözeltilerin cinsini değiştirmek.</text>\n  <!-- Sag: Etkilemeyenler -->\n  <rect x=\"365\" y=\"82\" width=\"310\" height=\"162\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"104\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#991b1b\">E_pil DEĞERİNİ ETKİLEMEYENLER</text>\n  <text x=\"380\" y=\"132\" font-size=\"12\" fill=\"#7f1d1d\">✗ Metal elektrotların kütlesi (miktarı)</text>\n  <text x=\"380\" y=\"156\" font-size=\"12\" fill=\"#7f1d1d\">✗ Elektrotların yüzey alanı ve şekli</text>\n  <text x=\"380\" y=\"180\" font-size=\"12\" fill=\"#7f1d1d\">✗ Sabit derişimde çözelti hacmi (V)</text>\n  <rect x=\"380\" y=\"196\" width=\"280\" height=\"36\" rx=\"6\" fill=\"#fee2e2\"/>\n  <text x=\"520\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#991b1b\">Bu nicelikler yalnız pilin ömrünü (süresini) etkiler.</text>\n</svg>",
       "kutular": [
@@ -86,11 +86,11 @@
     },
     {
       "soru": "Net denklemi Zn(k) + Cu²⁺(suda) ⇌ Zn²⁺(suda) + Cu(k) + Isı olan bir galvanik pilde sabit sıcaklıkta anot yarı hücresine saf su eklenirse pil potansiyeli nasıl değişir?",
-      "cevap": "Anot yarı hücresine saf su eklendiğinde ürünlerde yer alan Zn²⁺ iyonlarının molar derişimi azalır. Le Chatelier ilkesine göre sistem azalan Zn²⁺ derişimini artırmak için ürünler yönüne kayar ve pil potansiyeli (E_pil) artar."
+      "cevap": "Anot yarı hücresine saf su eklendiğinde ürünlerde yer alan Zn²⁺ iyonlarının molar derişimi azalır. Le Chatelier ilkesine göre sistem azalan Zn²⁺ derişimini artırmak için ürünler yönüne kayar ve pil potansiyeli (E{alt:pil}) artar."
     },
     {
       "soru": "Standart koşullarda çalışan bir elektrokimyasal pilde elektrotların yüzey alanının iki katına çıkarılması veya sabit derişimde çözelti hacminin artırılması pil gerilimini ve pil ömrünü nasıl etkiler?",
-      "cevap": "Elektrot kütlesi, yüzey alanı ve sabit derişimde çözelti hacmi dengeyi sağa veya sola kaydırmadığı için pil potansiyelini (E_pil) değiştirmez. Ancak tepkimeye girebilecek madde miktarı arttığı için pilin akım verme süresini (pil ömrünü) uzatır."
+      "cevap": "Elektrot kütlesi, yüzey alanı ve sabit derişimde çözelti hacmi dengeyi sağa veya sola kaydırmadığı için pil potansiyelini (E{alt:pil}) değiştirmez. Ancak tepkimeye girebilecek madde miktarı arttığı için pilin akım verme süresini (pil ömrünü) uzatır."
     },
     {
       "soru": "Lityum iyon pillerinde anot, katot ve elektrolit olarak hangi maddeler kullanılır?",
@@ -107,7 +107,7 @@
   ],
   "etkinlikler": [
     {
-      "soru": "Net pil denklemi Mg(k) + 2Ag⁺(suda) ⇌ Mg²⁺(suda) + 2Ag(k) + Isı olan bir galvanik pilin başlangıç potansiyelini (E_pil) artırmak için aşağıdaki işlemlerden hangisi uygulanmalıdır?",
+      "soru": "Net pil denklemi Mg(k) + 2Ag⁺(suda) ⇌ Mg²⁺(suda) + 2Ag(k) + Isı olan bir galvanik pilin başlangıç potansiyelini (E{alt:pil}) artırmak için aşağıdaki işlemlerden hangisi uygulanmalıdır?",
       "secenekler": [
         "Katot yarı hücresindeki çözeltiye AgNO₃ katısı ekleyip çözmek",
         "Anot yarı hücresindeki çözeltiye Mg(NO₃)₂ katısı eklemek",
@@ -116,7 +116,7 @@
         "Magnezyum elektrodun temas yüzey alanını iki katına çıkarmak"
       ],
       "dogru": 0,
-      "aciklama": "Katot yarı hücresine AgNO₃ katısı eklendiğinde girenlerdeki Ag⁺ derişimi artar, denge ürünler yönüne kayar ve pil potansiyeli (E_pil) artar.",
+      "aciklama": "Katot yarı hücresine AgNO₃ katısı eklendiğinde girenlerdeki Ag⁺ derişimi artar, denge ürünler yönüne kayar ve pil potansiyeli (E{alt:pil}) artar.",
       "tur": "coktan"
     },
     {
@@ -146,7 +146,7 @@
       "tur": "coktan"
     },
     {
-      "soru": "Bir elektrokimyasal pilde aşağıdaki niceliklerden hangisinin değiştirilmesi pilin başlangıç potansiyelini (E_pil) etkilemez?",
+      "soru": "Bir elektrokimyasal pilde aşağıdaki niceliklerden hangisinin değiştirilmesi pilin başlangıç potansiyelini (E{alt:pil}) etkilemez?",
       "secenekler": [
         "Anot yarı hücresindeki katyon derişimi",
         "Katot yarı hücresindeki katyon derişimi",
@@ -178,7 +178,7 @@
         {
           "metin": "Sabit sıcaklık ve derişimde yarı hücrelerdeki çözelti hacimlerinin iki katına çıkarılması pil gerilimini iki katına çıkarır.",
           "dogru": false,
-          "aciklama": "Molar derişim değişmediği sürece çözelti hacminin değişmesi pil gerilimini (E_pil) etkilemez."
+          "aciklama": "Molar derişim değişmediği sürece çözelti hacminin değişmesi pil gerilimini (E{alt:pil}) etkilemez."
         },
         {
           "metin": "Lityumun mol kütlesinin küçük olması, lityum iyon pillerinin hafif olmasını ve yüksek enerji yoğunluğu sunmasını sağlar.",
@@ -256,7 +256,7 @@
   "ozet": [
     "Galvanik pillerde anot ve katot metallerinin aktiflikleri (yükseltgenme eğilimleri) arasındaki fark arttıkça standart pil potansiyeli (E°_pil) artar.",
     "Pil tepkimeleri ekzotermik denge tepkimeleridir; dengeyi ürünler yönüne kaydıran etkiler (katot derişimini artırmak, anot derişimini azaltmak, sıcaklığı düşürmek) pil potansiyelini artırır.",
-    "Elektrotların kütlesi, yüzey alanı ve sabit derişimde çözelti hacmi pil potansiyelini (E_pil) değiştirmez; yalnız pil ömrünü ve kapasitesini etkiler.",
+    "Elektrotların kütlesi, yüzey alanı ve sabit derişimde çözelti hacmi pil potansiyelini (E{alt:pil}) değiştirmez; yalnız pil ömrünü ve kapasitesini etkiler.",
     "Lityum (-3,04 V indirgenme potansiyeli) en aktif ve en hafif metaldir; lityum iyon pillerinde anot grafit, katot CoO₂, elektrolit ise susuz polimerdir (Net: Li + CoO₂ → LiCoO₂, E ≈ 3,4 V).",
     "Lityum iyon pilleri yüksek enerji yoğunluğu, tekrar şarj edilebilme, 10 °C - 55 °C çalışma aralığı ve çevreci yapısıyla telefon, bilgisayar ve elektrikli araçlarda kullanılır."
   ]

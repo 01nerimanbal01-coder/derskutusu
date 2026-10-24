@@ -18,16 +18,16 @@
     {
       "baslik": "Geometrik Dizi Tanımı, Ortak Çarpan ve Genel Terim",
       "metin": [
-        "Ardışık her iki terimi arasındaki oranı sabit olan dizilere {koyu:geometrik dizi}, bu sabit orana ise geometrik dizinin {koyu:ortak çarpanı (r)} adı verilir. Her n ∈ Z⁺ için {koyu:{kesir:a_(n+1)|a_n} = r} veya {koyu:a_(n+1) = a_n · r} eşitliği sağlanır.",
-        "İlk terimi {koyu:a_1} ve ortak çarpanı {koyu:r} (r ≠ 0) olan bir (a_n) geometrik dizisinin {koyu:genel terimi} {koyu:a_n = a_1 · {us:r|n-1}} bağıntısıyla bulunur. Herhangi iki terim arasındaki geçiş bağıntısı ise {koyu:a_n = a_p · {us:r|n-p}} (dolayısıyla {us:r|n-p} = {kesir:a_n|a_p}) şeklindedir.",
-        "Pozitif terimli bir geometrik dizide ilk terim dışındaki her terim, kendisine eşit uzaklıkta bulunan iki terimin {koyu:geometrik ortalamasına} eşittir: {koyu:a_n = {kok:a_(n-k) · a_(n+k)}} veya {koyu:{us:a_n|2} = a_(n-k) · a_(n+k)}. Daha genel olarak indisler toplamı birbirine eşit olan terimlerin çarpımları da birbirine eşittir: {koyu:m + n = p + k ise a_m · a_n = a_p · a_k}."
+        "Ardışık her iki terimi arasındaki oranı sabit olan dizilere {koyu:geometrik dizi}, bu sabit orana ise geometrik dizinin {koyu:ortak çarpanı (r)} adı verilir. Her n ∈ Z⁺ için {koyu:{kesir:a{alt:n+1}|a{alt:n}} = r} veya {koyu:a{alt:n+1} = a{alt:n} · r} eşitliği sağlanır.",
+        "İlk terimi {koyu:a{alt:1}} ve ortak çarpanı {koyu:r} (r ≠ 0) olan bir (a{alt:n}) geometrik dizisinin {koyu:genel terimi} {koyu:a{alt:n} = a{alt:1} · {us:r|n-1}} bağıntısıyla bulunur. Herhangi iki terim arasındaki geçiş bağıntısı ise {koyu:a{alt:n} = a{alt:p} · {us:r|n-p}} (dolayısıyla {us:r|n-p} = {kesir:a{alt:n}|a{alt:p}}) şeklindedir.",
+        "Pozitif terimli bir geometrik dizide ilk terim dışındaki her terim, kendisine eşit uzaklıkta bulunan iki terimin {koyu:geometrik ortalamasına} eşittir: {koyu:a{alt:n} = {kok:a{alt:n-k} · a{alt:n+k}}} veya {koyu:{us:a{alt:n}|2} = a{alt:n-k} · a{alt:n+k}}. Daha genel olarak indisler toplamı birbirine eşit olan terimlerin çarpımları da birbirine eşittir: {koyu:m + n = p + k ise a{alt:m} · a{alt:n} = a{alt:p} · a{alt:k}}."
       ],
       "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">GEOMETRİK DİZİ: ORTAK ÇARPAN, GENEL TERİM VE ÖZELLİKLER</text>\n  <rect x=\"25\" y=\"45\" width=\"310\" height=\"195\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"180\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\">Temel Bağıntılar</text>\n  <text x=\"40\" y=\"96\" font-size=\"12\" fill=\"#1e3a8a\">• <tspan font-weight=\"bold\">Ortak Çarpan (r):</tspan> r = a_(n+1) / a_n</text>\n  <rect x=\"45\" y=\"110\" width=\"270\" height=\"40\" rx=\"6\" fill=\"#ffffff\" stroke=\"#60a5fa\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"135\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1d4ed8\">a_n = a₁ · r^(n-1)</text>\n  <text x=\"40\" y=\"174\" font-size=\"12\" fill=\"#1e3a8a\">• <tspan font-weight=\"bold\">İki Terim İlişkisi:</tspan> a_n = a_p · r^(n-p)</text>\n  <text x=\"40\" y=\"200\" font-size=\"11\" fill=\"#1e3a8a\">• Örnek: 3, 6, 12, 24, ... dizisinde</text>\n  <text x=\"50\" y=\"218\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\">a₁ = 3, r = 2 ve a_n = 3 · 2^(n-1)</text>\n\n  <rect x=\"360\" y=\"45\" width=\"315\" height=\"195\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"517\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#166534\">Geometrik Ortalama Özelliği</text>\n  <text x=\"375\" y=\"96\" font-size=\"12\" fill=\"#14532d\">• Eşit uzaklıktaki terimlerin çarpımı:</text>\n  <rect x=\"380\" y=\"110\" width=\"275\" height=\"40\" rx=\"6\" fill=\"#ffffff\" stroke=\"#4ade80\" stroke-width=\"1.5\"/>\n  <text x=\"517\" y=\"135\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">(a_n)² = a_(n-k) · a_(n+k)  |  a_n = kök(a_(n-k)·a_(n+k))</text>\n  <text x=\"375\" y=\"174\" font-size=\"12\" fill=\"#14532d\">• İndisler toplamı eşitliği (m + n = p + k):</text>\n  <text x=\"385\" y=\"194\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">a_m · a_n = a_p · a_k</text>\n  <text x=\"375\" y=\"218\" font-size=\"11\" fill=\"#14532d\">• Örnek: a₂ · a₈ = a₄ · a₆ = (a₅)²</text>\n</svg>",
       "kutular": [
         {
           "tur": "dikkat",
           "baslik": "Dikkat",
-          "metin": "Bir geometrik dizide n - p farkı çift sayı ise (örneğin a_5 / a_3 = r² = 9), ortak çarpan r hem pozitif (+3) hem de negatif (-3) olabilir; soruda 'pozitif terimli' denip denmediğine dikkat edilmelidir."
+          "metin": "Bir geometrik dizide n - p farkı çift sayı ise (örneğin a{alt:5} / a{alt:3} = r² = 9), ortak çarpan r hem pozitif (+3) hem de negatif (-3) olabilir; soruda 'pozitif terimli' denip denmediğine dikkat edilmelidir."
         },
         {
           "tur": "ipucu",
@@ -37,11 +37,11 @@
       ]
     },
     {
-      "baslik": "Geometrik Dizinin İlk n Terim Toplamı (S_n) ve Ortak Özellikler",
+      "baslik": "Geometrik Dizinin İlk n Terim Toplamı (S{alt:n}) ve Ortak Özellikler",
       "metin": [
-        "İlk terimi {koyu:a_1} ve ortak çarpanı {koyu:r ≠ 1} olan bir geometrik dizinin ilk n teriminin toplamı ({koyu:S_n = a_1 + a_2 + ... + a_n}), {koyu:S_n = a_1 · {kesir:1 - {us:r|n}|1 - r}} veya {koyu:S_n = a_1 · {kesir:{us:r|n} - 1|r - 1}} bağıntısıyla hesaplanır. Eğer ortak çarpan {koyu:r = 1} ise dizi sabit dizidir ve {koyu:S_n = n · a_1} olur.",
-        "İlk n terim toplamı {koyu:S_n} bilinen bir dizide n. terimi bulmak için aritmetik dizide olduğu gibi {koyu:a_n = S_n - S_(n-1)} (n ≥ 2 için ve a_1 = S_1) genel kuralı geçerlidir. Ayrıca iki toplam oranı sorulduğunda (örneğin {kesir:S_6|S_3}), {us:r|6} - 1 ifadesi iki kare farkıyla {koyu:({us:r|3} - 1) · ({us:r|3} + 1)} şeklinde çarpanlarına ayrılarak {kesir:S_6|S_3} = {us:r|3} + 1 sadeleştirmesi yapılır.",
-        "Bir dizinin {koyu:hem aritmetik hem de geometrik dizi} olabilmesi için sıfırdan farklı bir {koyu:sabit dizi} olması şarttır: {koyu:a_1 = a_2 = a_3 = ... = a_n} (bu durumda ortak fark d = 0 ve ortak çarpan r = 1 olur)."
+        "İlk terimi {koyu:a{alt:1}} ve ortak çarpanı {koyu:r ≠ 1} olan bir geometrik dizinin ilk n teriminin toplamı ({koyu:S{alt:n} = a{alt:1} + a{alt:2} + ... + a{alt:n}}), {koyu:S{alt:n} = a{alt:1} · {kesir:1 - {us:r|n}|1 - r}} veya {koyu:S{alt:n} = a{alt:1} · {kesir:{us:r|n} - 1|r - 1}} bağıntısıyla hesaplanır. Eğer ortak çarpan {koyu:r = 1} ise dizi sabit dizidir ve {koyu:S{alt:n} = n · a{alt:1}} olur.",
+        "İlk n terim toplamı {koyu:S{alt:n}} bilinen bir dizide n. terimi bulmak için aritmetik dizide olduğu gibi {koyu:a{alt:n} = S{alt:n} - S{alt:n-1}} (n ≥ 2 için ve a{alt:1} = S{alt:1}) genel kuralı geçerlidir. Ayrıca iki toplam oranı sorulduğunda (örneğin {kesir:S{alt:6}|S{alt:3}}), {us:r|6} - 1 ifadesi iki kare farkıyla {koyu:({us:r|3} - 1) · ({us:r|3} + 1)} şeklinde çarpanlarına ayrılarak {kesir:S{alt:6}|S{alt:3}} = {us:r|3} + 1 sadeleştirmesi yapılır.",
+        "Bir dizinin {koyu:hem aritmetik hem de geometrik dizi} olabilmesi için sıfırdan farklı bir {koyu:sabit dizi} olması şarttır: {koyu:a{alt:1} = a{alt:2} = a{alt:3} = ... = a{alt:n}} (bu durumda ortak fark d = 0 ve ortak çarpan r = 1 olur)."
       ],
       "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">İLK n TERİM TOPLAMI (S_n) VE HEM ARİTMETİK HEM GEOMETRİK DİZİ</text>\n  <rect x=\"25\" y=\"45\" width=\"320\" height=\"195\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"185\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#92400e\">İlk n Terim Toplamı (S_n)</text>\n  <rect x=\"45\" y=\"84\" width=\"280\" height=\"44\" rx=\"6\" fill=\"#ffffff\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/>\n  <text x=\"185\" y=\"111\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#b45309\">S_n = a₁ · (r^n - 1) / (r - 1)   (r ≠ 1)</text>\n  <text x=\"40\" y=\"152\" font-size=\"12\" fill=\"#78350f\">• <tspan font-weight=\"bold\">Pratik Oran Özelliği:</tspan></text>\n  <text x=\"50\" y=\"172\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">S_(2n) / S_n = (r^(2n) - 1) / (r^n - 1) = r^n + 1</text>\n  <text x=\"40\" y=\"198\" font-size=\"11\" fill=\"#78350f\">• Örnek: S₆ / S₃ = r³ + 1  |  S₈ / S₄ = r⁴ + 1</text>\n  <text x=\"40\" y=\"218\" font-size=\"11\" fill=\"#78350f\">• r = 1 ise (Sabit dizi): S_n = n · a₁</text>\n\n  <rect x=\"365\" y=\"45\" width=\"310\" height=\"195\" rx=\"10\" fill=\"#fae8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#6b21a8\">Hem Aritmetik Hem Geometrik Dizi</text>\n  <text x=\"380\" y=\"96\" font-size=\"12\" fill=\"#581c87\">• Bir dizi aynı anda hem aritmetik hem de</text>\n  <text x=\"390\" y=\"114\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">geometrik dizi ise SABİT DİZİDİR.</text>\n  <rect x=\"385\" y=\"130\" width=\"270\" height=\"42\" rx=\"6\" fill=\"#ffffff\" stroke=\"#c084fc\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"156\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#581c87\">a₁ = a₂ = a₃ = ... = k (k ≠ 0)</text>\n  <text x=\"380\" y=\"194\" font-size=\"12\" fill=\"#581c87\">• <tspan font-weight=\"bold\">Ortak Fark:</tspan> d = 0</text>\n  <text x=\"380\" y=\"216\" font-size=\"12\" fill=\"#581c87\">• <tspan font-weight=\"bold\">Ortak Çarpan:</tspan> r = 1</text>\n</svg>",
       "kutular": [
@@ -60,8 +60,8 @@
     {
       "baslik": "Gerçek Hayat Problemleri ve Fibonacci Dizisi",
       "metin": [
-        "İlk iki terimi 1 olan ve üçüncü terimden itibaren her terimi kendisinden önceki iki terimin toplamına eşit olan özel indirgemeli diziye {koyu:Fibonacci dizisi} denir: {koyu:F_1 = 1, F_2 = 1} ve n ≥ 3 için {koyu:F_n = F_(n-1) + F_(n-2)}. Dizinin terimleri {koyu:1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...} şeklinde ilerler.",
-        "Fibonacci dizisinde terimler büyüdükçe ardışık iki terimin birbirine oranı ({kesir:F_(n+1)|F_n}), doğada ve sanatta estetik uyum ölçütü kabul edilen {koyu:altın orana (φ = {kesir:1 + {kok:5}|2} ≈ 1,618)} yaklaşır. Ayçiçeğinin çekirdek dizilimi, çam kozalağının pulları, deniz kabuğu (nautilus) sarmalı ve ağaç dallarının çatallanması Fibonacci sayılarını takip eder.",
+        "İlk iki terimi 1 olan ve üçüncü terimden itibaren her terimi kendisinden önceki iki terimin toplamına eşit olan özel indirgemeli diziye {koyu:Fibonacci dizisi} denir: {koyu:F{alt:1} = 1, F{alt:2} = 1} ve n ≥ 3 için {koyu:F{alt:n} = F{alt:n-1} + F{alt:n-2}}. Dizinin terimleri {koyu:1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...} şeklinde ilerler.",
+        "Fibonacci dizisinde terimler büyüdükçe ardışık iki terimin birbirine oranı ({kesir:F{alt:n+1}|F{alt:n}}), doğada ve sanatta estetik uyum ölçütü kabul edilen {koyu:altın orana (φ = {kesir:1 + {kok:5}|2} ≈ 1,618)} yaklaşır. Ayçiçeğinin çekirdek dizilimi, çam kozalağının pulları, deniz kabuğu (nautilus) sarmalı ve ağaç dallarının çatallanması Fibonacci sayılarını takip eder.",
         "Gerçek hayat problemlerinde; {koyu:sabit miktarda} artan veya azalan durumlar (kumbaraya her gün eşit para atılması, tiyatro salonu koltuk sayıları) {koyu:aritmetik dizi} ile modellenirken; {koyu:sabit bir kat veya yüzde oranında} artan/azalan durumlar (bakteri bölünmesi, radyoaktif bozunma, bileşik getiri, topun her zıplayışta belirli oranda yükselmesi) {koyu:geometrik dizi} ile modellenir."
       ],
       "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">FİBONACCİ DİZİSİ, ALTIN ORAN VE GERÇEK HAYAT MODELLERİ</text>\n  <rect x=\"25\" y=\"45\" width=\"320\" height=\"195\" rx=\"10\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n  <text x=\"185\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">Fibonacci Dizisi (F_n)</text>\n  <rect x=\"42\" y=\"82\" width=\"285\" height=\"38\" rx=\"6\" fill=\"#ffffff\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/>\n  <text x=\"185\" y=\"106\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0c4a6e\">1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...</text>\n  <text x=\"40\" y=\"142\" font-size=\"12\" fill=\"#0c4a6e\">• <tspan font-weight=\"bold\">İndirgeme Bağıntısı:</tspan> F_n = F_(n-1) + F_(n-2)</text>\n  <text x=\"40\" y=\"166\" font-size=\"12\" fill=\"#0c4a6e\">• <tspan font-weight=\"bold\">Altın Oran:</tspan> φ = (1 + kök(5)) / 2 ≈ 1,618</text>\n  <text x=\"40\" y=\"190\" font-size=\"11\" fill=\"#0c4a6e\">• <tspan font-weight=\"bold\">Özel Özdeşlik:</tspan> (F_n)² - F_(n-1)·F_(n+1) = (-1)^(n-1)</text>\n  <text x=\"40\" y=\"214\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">Doğa: Ayçiçeği, çam kozalağı, papatya yaprakları</text>\n\n  <rect x=\"365\" y=\"45\" width=\"310\" height=\"195\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"520\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#166534\">Gerçek Hayat Problem Modelleri</text>\n  <text x=\"380\" y=\"96\" font-size=\"12\" fill=\"#14532d\">• <tspan font-weight=\"bold\">Sabit Farklı Değişim (Aritmetik):</tspan></text>\n  <text x=\"390\" y=\"114\" font-size=\"11\" fill=\"#14532d\">Her hafta sabit 50 soru artırma, doğrusal</text>\n  <text x=\"390\" y=\"130\" font-size=\"11\" fill=\"#14532d\">amortisman, konferans salonu sıra düzeni</text>\n  <text x=\"380\" y=\"158\" font-size=\"12\" fill=\"#14532d\">• <tspan font-weight=\"bold\">Sabit Oranlı Değişim (Geometrik):</tspan></text>\n  <text x=\"390\" y=\"176\" font-size=\"11\" fill=\"#14532d\">Her saat 2 katına çıkan bakteri kültürü,</text>\n  <text x=\"390\" y=\"192\" font-size=\"11\" fill=\"#14532d\">radyoaktif yarılanma, fraktal (Sierpinski) alanı</text>\n  <text x=\"380\" y=\"216\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">Katlanarak büyüme/küçülme → Geometrik Dizi</text>\n</svg>",
@@ -69,45 +69,45 @@
         {
           "tur": "dikkat",
           "baslik": "Dikkat",
-          "metin": "Bakteri bölünmesi veya hücre çoğalması sorularında 'başlangıçtaki sayı' 1. terim (a_1) olarak alındığında, '1. bölünme sonundaki sayı' 2. terime (a_2), 'n. bölünme sonundaki sayı' ise (n+1). terime karşılık gelir."
+          "metin": "Bakteri bölünmesi veya hücre çoğalması sorularında 'başlangıçtaki sayı' 1. terim (a{alt:1}) olarak alındığında, '1. bölünme sonundaki sayı' 2. terime (a{alt:2}), 'n. bölünme sonundaki sayı' ise (n+1). terime karşılık gelir."
         },
         {
           "tur": "ipucu",
           "baslik": "İpucu",
-          "metin": "Fibonacci dizisinde ardışık üç terim F_(n-1), F_n, F_(n+1) verildiğinde F_(n+1) = F_n + F_(n-1) eşitliği doğrudan yerine yazılarak bilinmeyen terimler kolayca bulunur."
+          "metin": "Fibonacci dizisinde ardışık üç terim F{alt:n-1}, F{alt:n}, F{alt:n+1} verildiğinde F{alt:n+1} = F{alt:n} + F{alt:n-1} eşitliği doğrudan yerine yazılarak bilinmeyen terimler kolayca bulunur."
         }
       ]
     }
   ],
   "ornekler": [
     {
-      "soru": "Pozitif terimli bir (a_n) geometrik dizisinde a_3 = 6 ve a_6 = 162 olduğuna göre bu dizinin ortak çarpanını (r) ve ilk terimini (a_1) bulunuz.",
-      "cevap": "Geometrik dizide a_6 = a_3 · {us:r|6-3} → 162 = 6 · {us:r|3} → {us:r|3} = 27 → r = 3 bulunur. İlk terim için a_3 = a_1 · {us:r|2} bağıntısında değerler yerine yazılırsa: 6 = a_1 · {us:3|2} → 6 = 9 · a_1 → a_1 = 6/9 = 2/3 olarak bulunur."
+      "soru": "Pozitif terimli bir (a{alt:n}) geometrik dizisinde a{alt:3} = 6 ve a{alt:6} = 162 olduğuna göre bu dizinin ortak çarpanını (r) ve ilk terimini (a{alt:1}) bulunuz.",
+      "cevap": "Geometrik dizide a{alt:6} = a{alt:3} · {us:r|6-3} → 162 = 6 · {us:r|3} → {us:r|3} = 27 → r = 3 bulunur. İlk terim için a{alt:3} = a{alt:1} · {us:r|2} bağıntısında değerler yerine yazılırsa: 6 = a{alt:1} · {us:3|2} → 6 = 9 · a{alt:1} → a{alt:1} = 6/9 = 2/3 olarak bulunur."
     },
     {
-      "soru": "İlk terimi a_1 = 4 ve ortak çarpanı r = 2 olan bir geometrik dizinin ilk 6 teriminin toplamı (S_6) kaçtır?",
-      "cevap": "İlk n terim toplamı formülü S_n = a_1 · ({us:r|n} - 1) / (r - 1) kullanılır. n = 6, a_1 = 4 ve r = 2 için: S_6 = 4 · ({us:2|6} - 1) / (2 - 1) = 4 · (64 - 1) / 1 = 4 · 63 = 252 olarak bulunur."
+      "soru": "İlk terimi a{alt:1} = 4 ve ortak çarpanı r = 2 olan bir geometrik dizinin ilk 6 teriminin toplamı (S{alt:6}) kaçtır?",
+      "cevap": "İlk n terim toplamı formülü S{alt:n} = a{alt:1} · ({us:r|n} - 1) / (r - 1) kullanılır. n = 6, a{alt:1} = 4 ve r = 2 için: S{alt:6} = 4 · ({us:2|6} - 1) / (2 - 1) = 4 · (64 - 1) / 1 = 4 · 63 = 252 olarak bulunur."
     },
     {
-      "soru": "Bir (a_n) geometrik dizisinde ilk 6 terim toplamının ilk 3 terim toplamına oranı S_6 / S_3 = 28 olduğuna göre dizinin ortak çarpanı r kaçtır?",
-      "cevap": "Geometrik dizide S_6 / S_3 = ({us:r|6} - 1) / ({us:r|3} - 1) = {us:r|3} + 1'dir. Buna göre {us:r|3} + 1 = 28 → {us:r|3} = 27 → r = 3 olarak bulunur."
+      "soru": "Bir (a{alt:n}) geometrik dizisinde ilk 6 terim toplamının ilk 3 terim toplamına oranı S{alt:6} / S{alt:3} = 28 olduğuna göre dizinin ortak çarpanı r kaçtır?",
+      "cevap": "Geometrik dizide S{alt:6} / S{alt:3} = ({us:r|6} - 1) / ({us:r|3} - 1) = {us:r|3} + 1'dir. Buna göre {us:r|3} + 1 = 28 → {us:r|3} = 27 → r = 3 olarak bulunur."
     },
     {
       "soru": "Birbirinden veya sıfırdan farklı (2x - 4, x + 2, 3y - 1) terimleri hem aritmetik hem de geometrik bir dizinin ardışık üç terimi olduğuna göre x + y toplamı kaçtır?",
       "cevap": "Hem aritmetik hem geometrik olan bir dizinin tüm terimleri birbirine eşittir (sabit dizidir). Buna göre 2x - 4 = x + 2 → x = 6 bulunur. Terim değeri 6 + 2 = 8'dir. İkinci eşitlikten 3y - 1 = 8 → 3y = 9 → y = 3 bulunur. Buradan x + y = 6 + 3 = 9 elde edilir."
     },
     {
-      "soru": "(F_n) Fibonacci dizisinde F_9 = 34 ve F_11 = 89 olduğuna göre F_10 ve F_8 terimlerinin değerlerini bulunuz.",
-      "cevap": "Fibonacci dizisinde her terim kendisinden önceki iki terimin toplamıdır: F_11 = F_10 + F_9 → 89 = F_10 + 34 → F_10 = 55 bulunur. Aynı kuraldan F_10 = F_9 + F_8 → 55 = 34 + F_8 → F_8 = 21 olarak hesaplanır."
+      "soru": "(F{alt:n}) Fibonacci dizisinde F{alt:9} = 34 ve F{alt:11} = 89 olduğuna göre F{alt:10} ve F{alt:8} terimlerinin değerlerini bulunuz.",
+      "cevap": "Fibonacci dizisinde her terim kendisinden önceki iki terimin toplamıdır: F{alt:11} = F{alt:10} + F{alt:9} → 89 = F{alt:10} + 34 → F{alt:10} = 55 bulunur. Aynı kuraldan F{alt:10} = F{alt:9} + F{alt:8} → 55 = 34 + F{alt:8} → F{alt:8} = 21 olarak hesaplanır."
     },
     {
       "soru": "Laboratuvarda incelenen bir bakteri kültüründeki bakteri sayısı her 20 dakikada bir 2 katına çıkmaktadır. Başlangıçta ortamda 500 bakteri bulunduğuna göre 2 saatin sonunda ortamda kaç bakteri bulunur?",
-      "cevap": "2 saat = 120 dakikadır ve 120 / 20 = 6 kez bölünme (katlanma) gerçekleşir. Başlangıç sayısı a_1 = 500 ve ortak çarpan r = 2 olduğundan 6. bölünme sonundaki bakteri sayısı a_7 = a_1 · {us:r|6} = 500 · {us:2|6} = 500 · 64 = 32000 bakteri olur."
+      "cevap": "2 saat = 120 dakikadır ve 120 / 20 = 6 kez bölünme (katlanma) gerçekleşir. Başlangıç sayısı a{alt:1} = 500 ve ortak çarpan r = 2 olduğundan 6. bölünme sonundaki bakteri sayısı a{alt:7} = a{alt:1} · {us:r|6} = 500 · {us:2|6} = 500 · 64 = 32000 bakteri olur."
     }
   ],
   "etkinlikler": [
     {
-      "soru": "Pozitif terimli bir (a_n) geometrik dizisinde a_2 = 3 ve a_5 = 81 olduğuna göre bu dizinin 4. terimi (a_4) kaçtır?",
+      "soru": "Pozitif terimli bir (a{alt:n}) geometrik dizisinde a{alt:2} = 3 ve a{alt:5} = 81 olduğuna göre bu dizinin 4. terimi (a{alt:4}) kaçtır?",
       "secenekler": [
         "27",
         "18",
@@ -116,11 +116,11 @@
         "54"
       ],
       "dogru": 0,
-      "aciklama": "a_5 = a_2 · r³ → 81 = 3 · r³ → r³ = 27 → r = 3 bulunur. Buradan a_4 = a_2 · r² = 3 · 3² = 27 olarak hesaplanır.",
+      "aciklama": "a{alt:5} = a{alt:2} · r³ → 81 = 3 · r³ → r³ = 27 → r = 3 bulunur. Buradan a{alt:4} = a{alt:2} · r² = 3 · 3² = 27 olarak hesaplanır.",
       "tur": "coktan"
     },
     {
-      "soru": "Bir (a_n) geometrik dizisinde a_4 · a_10 = 64 ve dizinin tüm terimleri pozitif gerçek sayılar olduğuna göre a_7 teriminin değeri kaçtır?",
+      "soru": "Bir (a{alt:n}) geometrik dizisinde a{alt:4} · a{alt:10} = 64 ve dizinin tüm terimleri pozitif gerçek sayılar olduğuna göre a{alt:7} teriminin değeri kaçtır?",
       "secenekler": [
         "4",
         "8",
@@ -129,11 +129,11 @@
         "32"
       ],
       "dogru": 1,
-      "aciklama": "Geometrik dizide indisler toplamı 4 + 10 = 14 olduğundan a_4 · a_10 = (a_7)² = 64 eşitliği sağlanır. Pozitif terimli olduğu için a_7 = {kok:64} = 8'dir.",
+      "aciklama": "Geometrik dizide indisler toplamı 4 + 10 = 14 olduğundan a{alt:4} · a{alt:10} = (a{alt:7})² = 64 eşitliği sağlanır. Pozitif terimli olduğu için a{alt:7} = {kok:64} = 8'dir.",
       "tur": "coktan"
     },
     {
-      "soru": "İlk terimi 3 ve ortak çarpanı 2 olan bir geometrik dizinin ilk 5 teriminin toplamı (S_5) kaçtır?",
+      "soru": "İlk terimi 3 ve ortak çarpanı 2 olan bir geometrik dizinin ilk 5 teriminin toplamı (S{alt:5}) kaçtır?",
       "secenekler": [
         "45",
         "48",
@@ -142,7 +142,7 @@
         "96"
       ],
       "dogru": 2,
-      "aciklama": "S_5 = a_1 · (r⁵ - 1) / (r - 1) = 3 · (2⁵ - 1) / (2 - 1) = 3 · (32 - 1) / 1 = 3 · 31 = 93 bulunur.",
+      "aciklama": "S{alt:5} = a{alt:1} · (r⁵ - 1) / (r - 1) = 3 · (2⁵ - 1) / (2 - 1) = 3 · (32 - 1) / 1 = 3 · 31 = 93 bulunur.",
       "tur": "coktan"
     },
     {
@@ -161,9 +161,9 @@
     {
       "ifadeler": [
         {
-          "metin": "İlk terimi a_1 ve ortak çarpanı r olan bir geometrik dizinin genel terimi a_n = a_1 · r^(n-1) bağıntısıyla bulunur.",
+          "metin": "İlk terimi a{alt:1} ve ortak çarpanı r olan bir geometrik dizinin genel terimi a{alt:n} = a{alt:1} · {us:r|n-1} bağıntısıyla bulunur.",
           "dogru": true,
-          "aciklama": "Geometrik dizide n. terim ilk terimin r^(n-1) ile çarpımına eşittir."
+          "aciklama": "Geometrik dizide n. terim ilk terimin {us:r|n-1} ile çarpımına eşittir."
         },
         {
           "metin": "Pozitif terimli bir geometrik dizide her terim, kendisine eşit uzaklıktaki iki terimin aritmetik ortalamasına eşittir.",
@@ -178,12 +178,12 @@
         {
           "metin": "Fibonacci dizisinde üçüncü terimden itibaren her terim kendisinden önceki iki terimin çarpımına eşittir.",
           "dogru": false,
-          "aciklama": "Fibonacci dizisinde her terim kendisinden önceki iki terimin çarpımına değil, toplamına eşittir (F_n = F_(n-1) + F_(n-2))."
+          "aciklama": "Fibonacci dizisinde her terim kendisinden önceki iki terimin çarpımına değil, toplamına eşittir (F{alt:n} = F{alt:n-1} + F{alt:n-2})."
         },
         {
           "metin": "Fibonacci dizisinde terimler büyüdükçe ardışık iki terimin oranı altın orana (yaklaşık 1,618) yaklaşır.",
           "dogru": true,
-          "aciklama": "F_(n+1) / F_n oranı n büyüdükçe altın oran φ değerine yakınsar."
+          "aciklama": "F{alt:n+1} / F{alt:n} oranı n büyüdükçe altın oran φ değerine yakınsar."
         }
       ],
       "tur": "dy"
@@ -195,11 +195,11 @@
           "Geometrik dizide ardışık herhangi bir terimin kendisinden önceki terime sabit oranı"
         ],
         [
-          "a_n = a_1 · r^(n-1)",
-          "İlk terimi a_1 ve ortak çarpanı r olan geometrik dizinin genel terim formülü"
+          "a{alt:n} = a{alt:1} · {us:r|n-1}",
+          "İlk terimi a{alt:1} ve ortak çarpanı r olan geometrik dizinin genel terim formülü"
         ],
         [
-          "S_n = a_1·(r^n - 1)/(r - 1)",
+          "S{alt:n} = a{alt:1}·({us:r|n} - 1)/(r - 1)",
           "Ortak çarpanı 1'den farklı olan geometrik dizinin ilk n terim toplamı bağıntısı"
         ],
         [
@@ -216,7 +216,7 @@
     {
       "cumleler": [
         {
-          "metin": "Pozitif terimli bir geometrik dizide a_3 = 4 ve a_5 = 36 ise dördüncü terim olan a_4 değeri ___ sayısına eşittir.",
+          "metin": "Pozitif terimli bir geometrik dizide a{alt:3} = 4 ve a{alt:5} = 36 ise dördüncü terim olan a{alt:4} değeri ___ sayısına eşittir.",
           "cevap": "on iki"
         },
         {
@@ -228,7 +228,7 @@
           "cevap": "yirmi bir"
         },
         {
-          "metin": "Geometrik dizide ilk 6 terim toplamının ilk 3 terim toplamına oranı S_6 / S_3 = ___ + 1 bağıntısına eşittir.",
+          "metin": "Geometrik dizide ilk 6 terim toplamının ilk 3 terim toplamına oranı S{alt:6} / S{alt:3} = ___ + 1 bağıntısına eşittir.",
           "cevap": "r³"
         },
         {
@@ -246,18 +246,18 @@
       "soru": "Belirli bir yükseklikten bırakılan esnek bir top, yere her çarptığında bir önceki yüksekliğinin 1/2'si kadar yükselmektedir. Top ilk bırakıldığında 64 metre yükseklikte olduğuna göre, 5. kez yere çarpana kadar düşeyde aldığı toplam yolu ve 5. çarpmadan sonra çıkabileceği maksimum yüksekliği adım adım hesaplayınız.",
       "ipuclari": [
         "Ortak çarpanı r = 1/2 olan geometrik dizi modelini kurarak 1., 2., 3., 4. ve 5. çarpmalardan sonraki çıkış yüksekliklerini belirleyiniz.",
-        "5. çarpmadan sonra çıkacağı yüksekliği a_1 · r⁵ bağıntısıyla bulunuz.",
+        "5. çarpmadan sonra çıkacağı yüksekliği a{alt:1} · r⁵ bağıntısıyla bulunuz.",
         "İlk düşüş (64 m) ile ilk 4 sıçrayıştaki iniş-çıkış mesafelerini toplayarak 5. çarpmaya kadar alınan toplam düşey yolu hesaplayınız."
       ],
-      "cevap": "Birinci adımda ilk yükseklik h_0 = 64 m ve ortak çarpan r = 1/2'dir; sıçrama yükseklikleri sırasıyla h_1 = 32 m, h_2 = 16 m, h_3 = 8 m, h_4 = 4 m ve h_5 = 2 m'dir. İkinci adımda 5. çarpmadan sonra çıkabileceği maksimum yükseklik h_5 = 64 · (1/2)⁵ = 64 / 32 = 2 metredir. Üçüncü adımda 5. çarpmaya kadar top ilk başta 64 m düşer, ardından h_1, h_2, h_3 ve h_4 yüksekliklerini hem çıkar hem iner: Toplam yol = 64 + 2 · (32 + 16 + 8 + 4) = 64 + 2 · 60 = 184 metre olur.",
+      "cevap": "Birinci adımda ilk yükseklik h{alt:0} = 64 m ve ortak çarpan r = 1/2'dir; sıçrama yükseklikleri sırasıyla h{alt:1} = 32 m, h{alt:2} = 16 m, h{alt:3} = 8 m, h{alt:4} = 4 m ve h{alt:5} = 2 m'dir. İkinci adımda 5. çarpmadan sonra çıkabileceği maksimum yükseklik h{alt:5} = 64 · (1/2)⁵ = 64 / 32 = 2 metredir. Üçüncü adımda 5. çarpmaya kadar top ilk başta 64 m düşer, ardından h{alt:1}, h{alt:2}, h{alt:3} ve h{alt:4} yüksekliklerini hem çıkar hem iner: Toplam yol = 64 + 2 · (32 + 16 + 8 + 4) = 64 + 2 · 60 = 184 metre olur.",
       "tur": "ogretici"
     }
   ],
   "ozet": [
-    "Ardışık terimleri arasındaki oranı sabit (a_(n+1) / a_n = r) olan dizilere geometrik dizi denir; genel terimi a_n = a_1 · r^(n-1) bağıntısıyla bulunur.",
-    "Pozitif terimli geometrik dizide her terim kendisine eşit uzaklıktaki iki terimin geometrik ortalamasıdır: a_n = {kok:a_(n-k) · a_(n+k)}.",
-    "Geometrik dizinin ilk n terim toplamı (r ≠ 1 için) S_n = a_1 · (r^n - 1) / (r - 1) formülüyle hesaplanır ve S_(2n) / S_n = r^n + 1 özdeşliği geçerlidir.",
-    "Sıfırdan farklı bir sabit dizi (a_n = k), hem aritmetik dizi (d = 0) hem de geometrik dizi (r = 1) belirtir.",
-    "Fibonacci dizisi F_1 = 1, F_2 = 1 ve F_n = F_(n-1) + F_(n-2) bağıntısıyla tanımlanır; ardışık terimlerinin oranı altın orana (yaklaşık 1,618) yaklaşır."
+    "Ardışık terimleri arasındaki oranı sabit (a{alt:n+1} / a{alt:n} = r) olan dizilere geometrik dizi denir; genel terimi a{alt:n} = a{alt:1} · {us:r|n-1} bağıntısıyla bulunur.",
+    "Pozitif terimli geometrik dizide her terim kendisine eşit uzaklıktaki iki terimin geometrik ortalamasıdır: a{alt:n} = {kok:a{alt:n-k} · a{alt:n+k}}.",
+    "Geometrik dizinin ilk n terim toplamı (r ≠ 1 için) S{alt:n} = a{alt:1} · ({us:r|n} - 1) / (r - 1) formülüyle hesaplanır ve S{alt:2n} / S{alt:n} = {us:r|n} + 1 özdeşliği geçerlidir.",
+    "Sıfırdan farklı bir sabit dizi (a{alt:n} = k), hem aritmetik dizi (d = 0) hem de geometrik dizi (r = 1) belirtir.",
+    "Fibonacci dizisi F{alt:1} = 1, F{alt:2} = 1 ve F{alt:n} = F{alt:n-1} + F{alt:n-2} bağıntısıyla tanımlanır; ardışık terimlerinin oranı altın orana (yaklaşık 1,618) yaklaşır."
   ]
 }

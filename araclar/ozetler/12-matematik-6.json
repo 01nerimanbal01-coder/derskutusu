@@ -32,7 +32,7 @@
     {
       "baslik": "Üstel Bozunma (Azalma) Modelleri",
       "metin": [
-        "2. {koyu:Üstel Azalma (Radyoaktif Bozunma, İlaç Atılımı ve Soğuma):}\n• Radyoaktif bir elementin kütlesinin yarıya inmesi için geçen süreye {koyu:yarı ömür (T)} denir. Başlangıç kütlesi M0 olan maddenin t süre sonunda bozunmadan kalan kütlesi:\n{koyu:M(t) = M0 . {us:({kesir:1|2})|t/T}} veya sürekli bozunma sabiti λ ile {koyu:M(t) = M0 . {us:e|-λ.t}} formülüyle hesaplanır.\n• {koyu:Newton’ın Soğuma Yasası:} Başlangıç sıcaklığı T0 olan bir cisim, sabit T_ortam sıcaklığındaki bir ortama bırakıldığında t süre sonraki sıcaklığı {koyu:T(t) = T_ortam + (T0 - T_ortam) . {us:e|-k.t}} bağıntısıyla modellenir."
+        "2. {koyu:Üstel Azalma (Radyoaktif Bozunma, İlaç Atılımı ve Soğuma):}\n• Radyoaktif bir elementin kütlesinin yarıya inmesi için geçen süreye {koyu:yarı ömür (T)} denir. Başlangıç kütlesi M0 olan maddenin t süre sonunda bozunmadan kalan kütlesi:\n{koyu:M(t) = M0 . {us:({kesir:1|2})|t/T}} veya sürekli bozunma sabiti λ ile {koyu:M(t) = M0 . {us:e|-λ.t}} formülüyle hesaplanır.\n• {koyu:Newton’ın Soğuma Yasası:} Başlangıç sıcaklığı T0 olan bir cisim, sabit T{alt:ortam} sıcaklığındaki bir ortama bırakıldığında t süre sonraki sıcaklığı {koyu:T(t) = T{alt:ortam} + (T0 - T{alt:ortam}) . {us:e|-k.t}} bağıntısıyla modellenir."
       ],
       "kutu": {
         "tur": "ipucu",
@@ -84,13 +84,13 @@
     },
     {
       "soru": "Başlangıçta 96 gram olan radyoaktif bir izotoptan 24 gün sonra geriye 6 gram kaldığına göre bu izotopun yarı ömrü (T) kaç gündür?",
-      "cevap": "Doğru yanıt: 6. 6 = 96 . (1/2)^(24/T) => 6/96 = 1/16 = (1/2)⁴ = (1/2)^(24/T) => 24/T = 4 => T = 6 gün bulunur."
+      "cevap": "Doğru yanıt: 6. 6 = 96 . {us:(1/2)|24/T} => 6/96 = 1/16 = (1/2)⁴ = {us:(1/2)|24/T} => 24/T = 4 => T = 6 gün bulunur."
     }
   ],
   "etkinlikler": [
     {
       "tur": "coktan",
-      "soru": "Nüfusu P(t) = 200.000 . e^(0,05.t) üstel fonksiyonuyla modellenen bir şehrin nüfusu kaç yıl sonra başlangıç nüfusunun 3 katına çıkar?",
+      "soru": "Nüfusu P(t) = 200.000 . {us:e|0,05.t} üstel fonksiyonuyla modellenen bir şehrin nüfusu kaç yıl sonra başlangıç nüfusunun 3 katına çıkar?",
       "secenekler": [
         "20 . ln 3",
         "10 . ln 3",
@@ -99,7 +99,7 @@
         "20 . log 3"
       ],
       "dogru": 0,
-      "aciklama": "Başlangıç nüfusu 200.000’dir; 3 katına çıkması için e^(0,05.t) = 3 olmalıdır. Her iki tarafın doğal logaritması alınırsa 0,05 . t = ln 3 => (1/20) . t = ln 3 => t = 20 . ln 3 yıl bulunur."
+      "aciklama": "Başlangıç nüfusu 200.000’dir; 3 katına çıkması için {us:e|0,05.t} = 3 olmalıdır. Her iki tarafın doğal logaritması alınırsa 0,05 . t = ln 3 => (1/20) . t = ln 3 => t = 20 . ln 3 yıl bulunur."
     },
     {
       "tur": "coktan",
@@ -112,7 +112,7 @@
         "1000"
       ],
       "dogru": 1,
-      "aciklama": "Büyüklük farkı 6,7 - 4,7 = 2,0 olduğundan yoğunluk oranı I1 / I2 = 10^(6,7 - 4,7) = 10² = 100 kat olur."
+      "aciklama": "Büyüklük farkı 6,7 - 4,7 = 2,0 olduğundan yoğunluk oranı I1 / I2 = {us:10|6,7 - 4,7} = 10² = 100 kat olur."
     },
     {
       "tur": "coktan",
@@ -125,7 +125,7 @@
         "1/1000"
       ],
       "dogru": 2,
-      "aciklama": "pH = 5 için [H+]_1 = 10^(-5) M ve pH = 8 için [H+]_2 = 10^(-8) M’dir. Oranları 10^(-5) / 10^(-8) = 10³ = 1000 kat olur."
+      "aciklama": "pH = 5 için [H+]{alt:1} = {us:10|−5} M ve pH = 8 için [H+]{alt:2} = {us:10|−8} M’dir. Oranları {us:10|−5} / {us:10|−8} = 10³ = 1000 kat olur."
     },
     {
       "tur": "coktan",
@@ -138,21 +138,21 @@
         "6000"
       ],
       "dogru": 3,
-      "aciklama": "L_yeni = 10 . log(100 . I / I0) = 10 . log(100) + 10 . log(I / I0) = 10 . 2 + 60 = 20 + 60 = 80 dB bulunur."
+      "aciklama": "L{alt:yeni} = 10 . log(100 . I / I0) = 10 . log(100) + 10 . log(I / I0) = 10 . 2 + 60 = 20 + 60 = 80 dB bulunur."
     },
     {
       "tur": "dy",
       "soru": "Aşağıdaki ifadelerin doğru (D) ya da yanlış (Y) olduğunu belirleyiniz.",
       "ifadeler": [
         {
-          "metin": "N(t) = N0 . e^(k.t) üstel modelinde k > 0 ise üstel büyüme, k < 0 ise üstel azalma gerçekleşir.",
+          "metin": "N(t) = N0 . {us:e|k.t} üstel modelinde k > 0 ise üstel büyüme, k < 0 ise üstel azalma gerçekleşir.",
           "dogru": true,
           "aciklama": "Üs pozitif olduğunda fonksiyon artan (büyüme), negatif olduğunda azalan (bozunma) olur."
         },
         {
           "metin": "Richter ölçeğine göre 8 büyüklüğündeki bir deprem, 4 büyüklüğündeki bir depremden 2 kat daha şiddetlidir.",
           "dogru": false,
-          "aciklama": "Yanlıştır; Richter ölçeği logaritmiktir, 8 ile 4 arasındaki yoğunluk farkı 10^(8-4) = 10⁴ = 10.000 kattır."
+          "aciklama": "Yanlıştır; Richter ölçeği logaritmiktir, 8 ile 4 arasındaki yoğunluk farkı {us:10|8-4} = 10⁴ = 10.000 kattır."
         },
         {
           "metin": "Bir çözeltide hidrojen iyonu derişimi [H+] arttıkça çözeltinin pH değeri küçülür ve asitliği artar.",
@@ -188,11 +188,11 @@
           "Desibel (dB) cinsinden ses şiddeti düzeyi"
         ],
         [
-          "M(t) = M0 . (1/2)^(t / T)",
+          "M(t) = M0 . {us:(1/2)|t / T}",
           "Radyoaktif yarı ömür (bozunma) modeli"
         ],
         [
-          "T(t) = T_ortam + (T0 - T_ortam) . e^(-k.t)",
+          "T(t) = T{alt:ortam} + (T0 - T{alt:ortam}) . {us:e|−k.t}",
           "Newton’ın soğuma yasası modeli"
         ]
       ]
@@ -230,9 +230,9 @@
     {
       "tur": "ogretici",
       "soru": "Bir arkeolojik kazıda bulunan ahşap bir eserdeki Karbon-14 (C-14) oranının, canlı bir ağaçtaki C-14 oranının %25’ine (1/4’üne) düştüğü ölçülmüştür. C-14 izotopunun yarı ömrü T = 5730 yıl olduğuna göre bu ahşap eserin yaşını üstel azalma modeliyle adım adım hesaplayınız.",
-      "cevap": "Radyoaktif yarılanma modeline göre kalan miktar bağıntısı M(t) = M0 . (1/2)^(t / T) şeklindedir. Soruda kalan C-14 miktarının başlangıç miktarına oranı M(t) / M0 = %25 = 1/4 ve yarı ömür T = 5730 yıl olarak verilmiştir. Değerleri yerine yazalım: 1/4 = (1/2)^(t / 5730) => (1/2)² = (1/2)^(t / 5730). Tabanlar eşit olduğundan üsler birbirine eşitlenir: t / 5730 = 2 => t = 2 . 5730 = 11.460 yıl bulunur. Dolayısıyla bulunan ahşap eser yaklaşık 11.460 yıllıktır.",
+      "cevap": "Radyoaktif yarılanma modeline göre kalan miktar bağıntısı M(t) = M0 . {us:(1/2)|t / T} şeklindedir. Soruda kalan C-14 miktarının başlangıç miktarına oranı M(t) / M0 = %25 = 1/4 ve yarı ömür T = 5730 yıl olarak verilmiştir. Değerleri yerine yazalım: 1/4 = {us:(1/2)|t / 5730} => (1/2)² = {us:(1/2)|t / 5730}. Tabanlar eşit olduğundan üsler birbirine eşitlenir: t / 5730 = 2 => t = 2 . 5730 = 11.460 yıl bulunur. Dolayısıyla bulunan ahşap eser yaklaşık 11.460 yıllıktır.",
       "ipuclari": [
-        "1. İpucu: M(t) = M0 . (1/2)^(t / 5730) modelinde M(t) / M0 = 1/4 yazınız.",
+        "1. İpucu: M(t) = M0 . {us:(1/2)|t / 5730} modelinde M(t) / M0 = 1/4 yazınız.",
         "2. İpucu: 1/4 = (1/2)² eşitliğinden üsleri eşitleyerek t süresini bulunuz."
       ]
     }

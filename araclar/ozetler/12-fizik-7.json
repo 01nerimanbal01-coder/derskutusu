@@ -90,8 +90,8 @@
       "cevap": "1) Kurtulma hızı yalnız Dünya'nın kütlesine (M) ve yarıçapına (R) bağlı olup cismin kütlesine (m) bağlı değildir; bu nedenle elma ile uzay aracının Dünya'dan kurtulma hızları birbirine eşittir (yaklaşık 40.320 km/h ≈ 11,2 km/s). 2) Kurtulma enerjisi ise E(kurtulma) = G·M·m/R bağıntısına göre cismin kütlesiyle doğru orantılıdır; dolayısıyla uzay aracının kurtulma enerjisi elmanın kurtulma enerjisinin 5000 katıdır."
     },
     {
-      "soru": "Dünya etrafında dolanan K uydusunun toplam enerjisi -E, L uydusunun toplam enerjisi ise -2E kadardır. Buna göre K ve L uydularının bağlanma enerjilerinin oranı E_bağ(K) / E_bağ(L) kaçtır?",
-      "cevap": "Bir uydunun bağlanma enerjisi, toplam mekanik enerjisinin sıfır yapılması için verilmesi gereken enerji olup E_bağ = -Eₜ bağıntısıyla bulunur. K uydusu için E_bağ(K) = -(-E) = +E ve L uydusu için E_bağ(L) = -(-2E) = +2E olur. Buradan oranları E_bağ(K) / E_bağ(L) = E / (2E) = 1/2 bulunur."
+      "soru": "Dünya etrafında dolanan K uydusunun toplam enerjisi -E, L uydusunun toplam enerjisi ise -2E kadardır. Buna göre K ve L uydularının bağlanma enerjilerinin oranı E{alt:bağ}(K) / E{alt:bağ}(L) kaçtır?",
+      "cevap": "Bir uydunun bağlanma enerjisi, toplam mekanik enerjisinin sıfır yapılması için verilmesi gereken enerji olup E{alt:bağ} = -Eₜ bağıntısıyla bulunur. K uydusu için E{alt:bağ}(K) = -(-E) = +E ve L uydusu için E{alt:bağ}(L) = -(-2E) = +2E olur. Buradan oranları E{alt:bağ}(K) / E{alt:bağ}(L) = E / (2E) = 1/2 bulunur."
     },
     {
       "soru": "Güneş sistemindeki gök cisimlerinden Ay (8.280 km/h), Mars (18.000 km/h), Dünya (40.320 km/h), Jüpiter (216.720 km/h) ve Güneş'in (2.224.800 km/h) kurtulma hızları dikkate alındığında, bir uzay aracının hangi gök cisminden ayrılması en kolay, hangisinden ayrılması en zordur?",
@@ -99,11 +99,11 @@
     },
     {
       "soru": "M kütleli bir gezegenin etrafında r yarıçaplı yörüngede dolanan m kütleli bir uydunun kütle çekim potansiyel enerjisi -120 MJ olduğuna göre, bu uydunun kinetik enerjisi, toplam mekanik enerjisi ve bağlanma enerjisi kaç MJ'dür?",
-      "cevap": "Yörüngedeki uydu için Eₚ = -G·Mm/r = -120 MJ'dür. 1) Kinetik enerji Eₖ = +(1/2)·G·Mm/r = -Eₚ / 2 = +60 MJ olur. 2) Toplam mekanik enerji Eₜ = Eₚ + Eₖ = -120 + 60 = -60 MJ bulunur. 3) Bağlanma enerjisi E_bağ = -Eₜ = +60 MJ'dür."
+      "cevap": "Yörüngedeki uydu için Eₚ = -G·Mm/r = -120 MJ'dür. 1) Kinetik enerji Eₖ = +(1/2)·G·Mm/r = -Eₚ / 2 = +60 MJ olur. 2) Toplam mekanik enerji Eₜ = Eₚ + Eₖ = -120 + 60 = -60 MJ bulunur. 3) Bağlanma enerjisi E{alt:bağ} = -Eₜ = +60 MJ'dür."
     },
     {
       "soru": "Dünya etrafında r yarıçaplı yörüngede dolanan bir haberleşme uydusu daha uzak olan 2r yarıçaplı yeni bir yörüngeye çıkarılırsa uydunun kütle çekim potansiyel enerjisi, kinetik enerjisi ve bağlanma enerjisi nasıl değişir?",
-      "cevap": "Yörünge yarıçapı r'den 2r'ye çıktığında: 1) Kütle çekim potansiyel enerjisi Eₚ = -G·Mm/r bağıntısındaki eksi işaretinden dolayı ARTAR (sıfıra yaklaşır). 2) Kinetik enerjisi Eₖ = +(1/2)·G·Mm/r bağıntısına göre yarıya düşer, yani AZALIR. 3) Bağlanma enerjisi E_bağ = +(1/2)·G·Mm/r bağıntısına göre yarıya düşer, yani AZALIR."
+      "cevap": "Yörünge yarıçapı r'den 2r'ye çıktığında: 1) Kütle çekim potansiyel enerjisi Eₚ = -G·Mm/r bağıntısındaki eksi işaretinden dolayı ARTAR (sıfıra yaklaşır). 2) Kinetik enerjisi Eₖ = +(1/2)·G·Mm/r bağıntısına göre yarıya düşer, yani AZALIR. 3) Bağlanma enerjisi E{alt:bağ} = +(1/2)·G·Mm/r bağıntısına göre yarıya düşer, yani AZALIR."
     }
   ],
   "etkinlikler": [
@@ -148,7 +148,7 @@
     },
     {
       "tur": "coktan",
-      "soru": "Aynı gezegen etrafında dolanan X uydusunun toplam mekanik enerjisi -3E, Y uydusunun toplam mekanik enerjisi ise -E kadardır. Buna göre X ve Y uydularının bağlanma enerjilerinin oranı E_bağ(X) / E_bağ(Y) kaçtır?",
+      "soru": "Aynı gezegen etrafında dolanan X uydusunun toplam mekanik enerjisi -3E, Y uydusunun toplam mekanik enerjisi ise -E kadardır. Buna göre X ve Y uydularının bağlanma enerjilerinin oranı E{alt:bağ}(X) / E{alt:bağ}(Y) kaçtır?",
       "secenekler": [
         "1/3",
         "1/2",
@@ -157,7 +157,7 @@
         "2"
       ],
       "dogru": 3,
-      "aciklama": "Bağlanma enerjisi E_bağ = -Eₜ olduğundan E_bağ(X) = +3E ve E_bağ(Y) = +E olur. Oranları 3E / E = 3 bulunur."
+      "aciklama": "Bağlanma enerjisi E{alt:bağ} = -Eₜ olduğundan E{alt:bağ}(X) = +3E ve E{alt:bağ}(Y) = +E olur. Oranları 3E / E = 3 bulunur."
     },
     {
       "tur": "dy",

@@ -13,9 +13,9 @@
     "Normal koşullarda (0°C, 1 atm) ve standart/oda koşullarında (25°C, 1 atm) ideal gazların molar hacmini kullanarak hesaplamalar yapar.",
     "Bileşiklerde atom-mol dağılımını, izotoplarda ortalama atom kütlesini ve gaz karışımlarında mol problemlerini çözer."
   ],
-  "giris": "Geçtiğimiz hafta Avogadro sayısını ({koyu:N_A = 6,02 . {us:10|23}}), atomik kütle birimini ({koyu:akb}) ve mol kütlesini ({koyu:M_A}) tanıyarak tanecik sayısı ile kütle arasındaki ilişkiyi kurmuştuk. Bu hafta ise mol kavramını üçüncü boyut olan {koyu:gazların molar hacmi} ile birleştirerek {koyu:Tanecik Sayısı — Kütle — Hacim} dönüşüm üçgenini tamamlayacak, bileşiklerin içindeki atomların molce/kütlece analizini ve gaz karışımı problemlerini çözeceğiz.",
+  "giris": "Geçtiğimiz hafta Avogadro sayısını ({koyu:N{alt:A} = 6,02 . {us:10|23}}), atomik kütle birimini ({koyu:akb}) ve mol kütlesini ({koyu:M{alt:A}}) tanıyarak tanecik sayısı ile kütle arasındaki ilişkiyi kurmuştuk. Bu hafta ise mol kavramını üçüncü boyut olan {koyu:gazların molar hacmi} ile birleştirerek {koyu:Tanecik Sayısı — Kütle — Hacim} dönüşüm üçgenini tamamlayacak, bileşiklerin içindeki atomların molce/kütlece analizini ve gaz karışımı problemlerini çözeceğiz.",
   "ozet": [
-    "{koyu:Üçlü Mol Formülü:} Bir saf maddenin mol sayısı (n); tanecik sayısından {koyu:n} = {kesir:N|N_A}, kütleden {koyu:n} = {kesir:m|M_A} ve gaz hacminden (NK’da) {koyu:n} = {kesir:V|22,4} bağıntılarıyla hesaplanır.",
+    "{koyu:Üçlü Mol Formülü:} Bir saf maddenin mol sayısı (n); tanecik sayısından {koyu:n} = {kesir:N|N{alt:A}}, kütleden {koyu:n} = {kesir:m|M{alt:A}} ve gaz hacminden (NK’da) {koyu:n} = {kesir:V|22,4} bağıntılarıyla hesaplanır.",
     "{koyu:Avogadro Yasası ve Molar Hacim:} Aynı sıcaklık ve basınç altında bulunan tüm ideal gazların {koyu:1 molü eşit sayıda tanecik içerir ve eşit hacim kaplar}.",
     "{koyu:Normal Koşullar (NK / NŞA) ve Oda Koşulları (OK):} 1 mol ideal gaz; {koyu:Normal Koşullarda (0°C, 1 atm) 22,4 Litre}, {koyu:Oda Koşullarında (25°C, 1 atm) ise 24,5 Litre} hacim kaplar.",
     "{koyu:Fiziksel Hal Uyarısı:} 22,4 L ve 24,5 L hacim değerleri {koyu:YALNIZCA GAZ fazındaki} maddeler için geçerlidir; katı ve sıvılar (örneğin 0°C’deki H₂O sıvısı/katısı) için kullanılamaz!",
@@ -27,7 +27,7 @@
       "baslik": "1. Gazlarda Molar Hacim: Normal Koşullar (22,4 L) ve Oda Koşulları (24,5 L)",
       "metin": [
         "Katı ve sıvıların 1 mollerinin hacmi maddenin cinsine ve yoğunluğuna göre farklılık gösterirken, İtalyan bilim insanı {koyu:Amedeo Avogadro}, gazların hacminin gazın cinsinden bağımsız olup yalnızca {koyu:mol sayısına, sıcaklığa ve basınca} bağlı olduğunu keşfetmiştir ({koyu:Avogadro Hipotezi}: Aynı sıcaklık ve basınçta eşit hacimli gazlarda eşit sayıda tanecik bulunur).",
-        "Kimyada gaz hacimlerinin karşılaştırılmasında iki temel referans koşul kullanılır:\n1. {koyu:Normal Koşullar (NK / NŞA):} Sıcaklığın {koyu:0°C (273 K)} ve basıncın {koyu:1 atm} olduğu şartlardır. Normal koşullarda gaz fazındaki herhangi bir ideal maddenin {koyu:1 molü 22,4 Litre} hacim kaplar:\n• {koyu:n} = {kesir:V_NK|22,4}\n2. {koyu:Standart (Oda) Koşulları (OK):} Sıcaklığın {koyu:25°C (298 K)} ve basıncın {koyu:1 atm} olduğu şartlardır. Oda koşullarında gaz fazındaki herhangi bir ideal maddenin {koyu:1 molü 24,5 Litre} hacim kaplar:\n• {koyu:n} = {kesir:V_OK|24,5}"
+        "Kimyada gaz hacimlerinin karşılaştırılmasında iki temel referans koşul kullanılır:\n1. {koyu:Normal Koşullar (NK / NŞA):} Sıcaklığın {koyu:0°C (273 K)} ve basıncın {koyu:1 atm} olduğu şartlardır. Normal koşullarda gaz fazındaki herhangi bir ideal maddenin {koyu:1 molü 22,4 Litre} hacim kaplar:\n• {koyu:n} = {kesir:V{alt:NK}|22,4}\n2. {koyu:Standart (Oda) Koşulları (OK):} Sıcaklığın {koyu:25°C (298 K)} ve basıncın {koyu:1 atm} olduğu şartlardır. Oda koşullarında gaz fazındaki herhangi bir ideal maddenin {koyu:1 molü 24,5 Litre} hacim kaplar:\n• {koyu:n} = {kesir:V{alt:OK}|24,5}"
       ],
       "kutu": {
         "tur": "dikkat",
@@ -39,13 +39,13 @@
     {
       "baslik": "2. Tanecik Sayısı - Kütle - Hacim Dönüşüm Köprüsü",
       "metin": [
-        "Kimyasal hesaplamalarda {koyu:Mol Sayısı (n)}, tanecik sayısı (N), kütle (m) ve gaz hacmi (V) arasındaki merkezi dönüşüm köprüsüdür. Verilen herhangi bir nicelikten diğerine geçmek için önce maddenin {koyu:mol sayısı (n)} bulunur:\n• {koyu:n = {kesir:N|N_A} = {kesir:m|M_A} = {kesir:V_NK|22,4} = {kesir:V_OK|24,5}}",
-        "Örneğin mol kütlesi {koyu:M_A = 44 g/mol} olan {koyu:0,5 mol CO₂ gazı} için tüm ölçülebilir özellikleri tek adımda yazabiliriz:\n• {koyu:Kütlesi:} m = n . M_A = 0,5 . 44 = {koyu:22 gram}\n• {koyu:Molekül sayısı:} N = n . N_A = {koyu:0,5 . N_A tane} (3,01 . {us:10|23} tane CO₂ molekülü)\n• {koyu:İçerdiği toplam atom sayısı:} 0,5 . 3 = {koyu:1,5 mol atom} (1,5 . N_A tane atom)\n• {koyu:Normal koşullardaki hacmi:} V_NK = 0,5 . 22,4 = {koyu:11,2 Litre}\n• {koyu:Oda koşullarındaki hacmi:} V_OK = 0,5 . 24,5 = {koyu:12,25 Litre}"
+        "Kimyasal hesaplamalarda {koyu:Mol Sayısı (n)}, tanecik sayısı (N), kütle (m) ve gaz hacmi (V) arasındaki merkezi dönüşüm köprüsüdür. Verilen herhangi bir nicelikten diğerine geçmek için önce maddenin {koyu:mol sayısı (n)} bulunur:\n• {koyu:n = {kesir:N|N{alt:A}} = {kesir:m|M{alt:A}} = {kesir:V{alt:NK}|22,4} = {kesir:V{alt:OK}|24,5}}",
+        "Örneğin mol kütlesi {koyu:M{alt:A} = 44 g/mol} olan {koyu:0,5 mol CO₂ gazı} için tüm ölçülebilir özellikleri tek adımda yazabiliriz:\n• {koyu:Kütlesi:} m = n . M{alt:A} = 0,5 . 44 = {koyu:22 gram}\n• {koyu:Molekül sayısı:} N = n . N{alt:A} = {koyu:0,5 . N{alt:A} tane} (3,01 . {us:10|23} tane CO₂ molekülü)\n• {koyu:İçerdiği toplam atom sayısı:} 0,5 . 3 = {koyu:1,5 mol atom} (1,5 . N{alt:A} tane atom)\n• {koyu:Normal koşullardaki hacmi:} V{alt:NK} = 0,5 . 22,4 = {koyu:11,2 Litre}\n• {koyu:Oda koşullarındaki hacmi:} V{alt:OK} = 0,5 . 24,5 = {koyu:12,25 Litre}"
       ],
       "kutu": {
         "tur": "bilgi",
         "baslik": "Gazların Yoğunluğu (Özkütlesi) ve Mol Kütlesi",
-        "metin": "Verilen 1 mol gazın kütlesi M_A gram ve normal koşullardaki hacmi 22,4 litre olduğundan, bir gazın normal koşullardaki yoğunluğu (özkütlesi): {koyu:d_NK = {kesir:M_A|22,4} g/L}, oda koşullarındaki yoğunluğu ise {koyu:d_OK = {kesir:M_A|24,5} g/L} formülüyle bulunur."
+        "metin": "Verilen 1 mol gazın kütlesi M{alt:A} gram ve normal koşullardaki hacmi 22,4 litre olduğundan, bir gazın normal koşullardaki yoğunluğu (özkütlesi): {koyu:d{alt:NK} = {kesir:M{alt:A}|22,4} g/L}, oda koşullarındaki yoğunluğu ise {koyu:d{alt:OK} = {kesir:M{alt:A}|24,5} g/L} formülüyle bulunur."
       },
       "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 200\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;background:#fafcff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);\"><text x=\"340\" y=\"26\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#065f46\" text-anchor=\"middle\">1 Mol Bileşikte Atom-Mol ve Kütlece Yüzde Analizi: 1 Mol H₂SO₄ Örneği</text><rect x=\"25\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"1.6\"/><rect x=\"25\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#059669\"/><rect x=\"25\" y=\"60\" width=\"300\" height=\"10\" fill=\"#059669\"/><text x=\"175.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Tanecik ve Atom Mol Sayısı Analizi</text><text x=\"37\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• 1 mol H₂SO₄ bileşiği (Toplam 7 mol atom içerir):</text><text x=\"37\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• 2 mol H atomu (2 . N_A tane H atomu)</text><text x=\"37\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• 1 mol S atomu (1 . N_A tane S atomu)</text><text x=\"37\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• 4 mol O atomu (4 . N_A tane O atomu)</text><text x=\"37\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• Toplam 7 . N_A tane atom; 1 . N_A tane molekül</text><rect x=\"355\" y=\"42\" width=\"300\" height=\"145\" rx=\"8\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"1.6\"/><rect x=\"355\" y=\"42\" width=\"300\" height=\"28\" rx=\"8\" fill=\"#7c3aed\"/><rect x=\"355\" y=\"60\" width=\"300\" height=\"10\" fill=\"#7c3aed\"/><text x=\"505.0\" y=\"61\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Kütle Dağılımı Analizi (H=1, S=32, O=16)</text><text x=\"367\" y=\"90\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• 1 mol H₂SO₄ kütlesi (M_A) = 98 gram/mol</text><text x=\"367\" y=\"109\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• İçindeki H kütlesi: 2 . 1 = 2 gram</text><text x=\"367\" y=\"128\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• İçindeki S kütlesi: 1 . 32 = 32 gram</text><text x=\"367\" y=\"147\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• İçindeki O kütlesi: 4 . 16 = 64 gram</text><text x=\"367\" y=\"166\" font-family=\"sans-serif\" font-size=\"11.5\" fill=\"#1e293b\">• 1 tane H₂SO₄ molekülü = 98 akb = 98 / N_A gram</text></svg>"
     },
@@ -53,7 +53,7 @@
       "baslik": "3. Bileşiklerin Molce ve Kütlece İçerik Analizi",
       "metin": [
         "Bir bileşiğin kimyasal formülü, o bileşiğin 1 molünde hangi elementten kaç mol atom bulunduğunu doğrudan gösterir. Genel olarak {koyu:n mol X_aY_b} bileşiğinde:\n• {koyu:n . a mol X atomu} (kütlesi = n . a . X)\n• {koyu:n . b mol Y atomu} (kütlesi = n . b . Y)\n• Toplam {koyu:n . (a + b) mol atom} bulunur.",
-        "Örneğin {koyu:0,2 mol Fe₂O₃} (Demir(III) oksit, Fe=56, O=16, M_A = 160 g/mol) bileşiğini inceleyelim:\n• Bileşiğin toplam kütlesi: m = 0,2 . 160 = {koyu:32 gram}\n• İçerdiği demir (Fe) mol sayısı: 0,2 . 2 = {koyu:0,4 mol Fe atomu} (0,4 . 56 = 22,4 gram Fe)\n• İçerdiği oksijen (O) mol sayısı: 0,2 . 3 = {koyu:0,6 mol O atomu} (0,6 . 16 = 9,6 gram O)\n• İçerdiği toplam atom sayısı: 0,4 + 0,6 = {koyu:1,0 mol atom} ({koyu:N_A tane atom})."
+        "Örneğin {koyu:0,2 mol Fe₂O₃} (Demir(III) oksit, Fe=56, O=16, M{alt:A} = 160 g/mol) bileşiğini inceleyelim:\n• Bileşiğin toplam kütlesi: m = 0,2 . 160 = {koyu:32 gram}\n• İçerdiği demir (Fe) mol sayısı: 0,2 . 2 = {koyu:0,4 mol Fe atomu} (0,4 . 56 = 22,4 gram Fe)\n• İçerdiği oksijen (O) mol sayısı: 0,2 . 3 = {koyu:0,6 mol O atomu} (0,6 . 16 = 9,6 gram O)\n• İçerdiği toplam atom sayısı: 0,4 + 0,6 = {koyu:1,0 mol atom} ({koyu:N{alt:A} tane atom})."
       ],
       "kutu": {
         "tur": "ipucu",
@@ -65,20 +65,20 @@
     {
       "baslik": "4. akb (Atomik Kütle Birimi) ve Gram Dönüşümleri",
       "metin": [
-        "1 tane karbon-12 ({us:12|C}) izotopunun kütlesinin {kesir:1|12}’sine {koyu:1 atomik kütle birimi (1 akb)} denir. Tekil atom ve moleküller çok küçük olduğu için kütleleri {koyu:akb} ile; 1 mol ({koyu:N_A tane}) taneciğin kütlesi ise {koyu:gram (g)} ile ifade edilir. Aralarındaki temel dönüşüm bağıntısı {koyu:1 gram = N_A akb} (veya {koyu:1 akb = {kesir:1|N_A} gram}) şeklindedir.",
-        "Örneğin H₂O için (M_A = 18 g/mol):\n• {koyu:1 tane H₂O molekülü} = {koyu:18 akb} = {koyu:{kesir:18|N_A} gram}dır.\n• {koyu:1 mol (N_A tane) H₂O molekülü} = {koyu:18 gram} = {koyu:18 . N_A akb}’dir."
+        "1 tane karbon-12 ({us:12|C}) izotopunun kütlesinin {kesir:1|12}’sine {koyu:1 atomik kütle birimi (1 akb)} denir. Tekil atom ve moleküller çok küçük olduğu için kütleleri {koyu:akb} ile; 1 mol ({koyu:N{alt:A} tane}) taneciğin kütlesi ise {koyu:gram (g)} ile ifade edilir. Aralarındaki temel dönüşüm bağıntısı {koyu:1 gram = N{alt:A} akb} (veya {koyu:1 akb = {kesir:1|N{alt:A}} gram}) şeklindedir.",
+        "Örneğin H₂O için (M{alt:A} = 18 g/mol):\n• {koyu:1 tane H₂O molekülü} = {koyu:18 akb} = {koyu:{kesir:18|N{alt:A}} gram}dır.\n• {koyu:1 mol (N{alt:A} tane) H₂O molekülü} = {koyu:18 gram} = {koyu:18 . N{alt:A} akb}’dir."
       ],
       "kutu": {
         "tur": "kural",
         "baslik": "'1 Tane' mi, '1 Mol' mü? Kelime Köküne Dikkat!",
-        "metin": "{koyu:1 tane} O₂ molekülü -> {koyu:32 akb} ({kesir:32|N_A} g)\n• {koyu:1 mol} O₂ molekülü -> {koyu:32 gram} (32 . N_A akb)\n• {koyu:1 atom-gram} O -> 1 mol O atomu (16 g)\n• {koyu:1 molekül-gram} O₂ -> 1 mol O₂ molekülü (32 g)\n• {koyu:1 iyon-gram} SO₄²⁻ -> 1 mol sülfat iyonu (96 g)"
+        "metin": "{koyu:1 tane} O₂ molekülü -> {koyu:32 akb} ({kesir:32|N{alt:A}} g)\n• {koyu:1 mol} O₂ molekülü -> {koyu:32 gram} (32 . N{alt:A} akb)\n• {koyu:1 atom-gram} O -> 1 mol O atomu (16 g)\n• {koyu:1 molekül-gram} O₂ -> 1 mol O₂ molekülü (32 g)\n• {koyu:1 iyon-gram} SO₄²⁻ -> 1 mol sülfat iyonu (96 g)"
       }
     },
     {
       "baslik": "5. Gaz Karışımlarında Mol Problemleri",
       "metin": [
         "İki farklı gazdan oluşan bir karışımın toplam mol sayısı (veya toplam hacmi) ile toplam kütlesi (veya toplam atom sayısı) verildiğinde, karışımdaki her bir gazın mol sayısını bulmak için {koyu:iki bilinmeyenli denklem sistemi} kurulur.",
-        "Örnek Çözüm: 'CH₄ (M_A = 16 g/mol) ve C₂H₆ (M_A = 30 g/mol) gazlarından oluşan {koyu:0,5 mollük} bir karışımın toplam kütlesi {koyu:12,2 gram} olduğuna göre karışımda kaç mol CH₄ vardır?'\n1. Adım: Karışımdaki CH₄ gazı {koyu:x mol}, C₂H₆ gazı {koyu:y mol} olsun.\n2. Adım (Toplam Mol Denklemi): {koyu:x + y = 0,5}\n3. Adım (Toplam Kütle Denklemi): {koyu:16x + 30y = 12,2}\nBirinci denklemi -16 ile çarpıp toplarsak: 14y = 12,2 - 8,0 = 4,2 => {koyu:y = 0,3 mol C₂H₆} ve {koyu:x = 0,2 mol CH₄} bulunur."
+        "Örnek Çözüm: 'CH₄ (M{alt:A} = 16 g/mol) ve C₂H₆ (M{alt:A} = 30 g/mol) gazlarından oluşan {koyu:0,5 mollük} bir karışımın toplam kütlesi {koyu:12,2 gram} olduğuna göre karışımda kaç mol CH₄ vardır?'\n1. Adım: Karışımdaki CH₄ gazı {koyu:x mol}, C₂H₆ gazı {koyu:y mol} olsun.\n2. Adım (Toplam Mol Denklemi): {koyu:x + y = 0,5}\n3. Adım (Toplam Kütle Denklemi): {koyu:16x + 30y = 12,2}\nBirinci denklemi -16 ile çarpıp toplarsak: 14y = 12,2 - 8,0 = 4,2 => {koyu:y = 0,3 mol C₂H₆} ve {koyu:x = 0,2 mol CH₄} bulunur."
       ],
       "kutu": {
         "tur": "tanim",
@@ -96,25 +96,25 @@
       "kutu": {
         "tur": "hatirla",
         "baslik": "Özet Hatırlatma: Hızlı Formül Kartı",
-        "metin": "{koyu:n = N / N_A}  |  {koyu:n = m / M_A}  |  {koyu:n = V_NK / 22,4}  |  {koyu:n = V_OK / 24,5}\n• {koyu:1 gram = N_A akb}\n• {koyu:Atom Mol Sayısı = Bileşik Molü x Birim Formüldeki Atom Sayısı}"
+        "metin": "{koyu:n = N / N{alt:A}}  |  {koyu:n = m / M{alt:A}}  |  {koyu:n = V{alt:NK} / 22,4}  |  {koyu:n = V{alt:OK} / 24,5}\n• {koyu:1 gram = N{alt:A} akb}\n• {koyu:Atom Mol Sayısı = Bileşik Molü x Birim Formüldeki Atom Sayısı}"
       }
     }
   ],
   "ornekler": [
     {
       "soru": "Normal koşullarda (0°C, 1 atm) 5,6 litre hacim kaplayan C₃H₈ (propan) gazı kaç moldür, kaç gramdır ve toplam kaç mol atom içerir? (C = 12, H = 1 g/mol)",
-      "cevap": "{koyu:Mol sayısı:} n = {kesir:V_NK|22,4} = {kesir:5,6|22,4} = {koyu:0,25 mol C₃H₈}.\n• {koyu:Kütlesi:} M_A(C₃H₈) = 3.12 + 8.1 = 44 g/mol olduğundan m = n . M_A = 0,25 . 44 = {koyu:11 gram}.\n• {koyu:Toplam atom mol sayısı:} 1 mol C₃H₈ (3+8=11 mol atom) içerdiğinden 0,25 . 11 = {koyu:2,75 mol atom} içerir."
+      "cevap": "{koyu:Mol sayısı:} n = {kesir:V{alt:NK}|22,4} = {kesir:5,6|22,4} = {koyu:0,25 mol C₃H₈}.\n• {koyu:Kütlesi:} M{alt:A}(C₃H₈) = 3.12 + 8.1 = 44 g/mol olduğundan m = n . M{alt:A} = 0,25 . 44 = {koyu:11 gram}.\n• {koyu:Toplam atom mol sayısı:} 1 mol C₃H₈ (3+8=11 mol atom) içerdiğinden 0,25 . 11 = {koyu:2,75 mol atom} içerir."
     },
     {
       "soru": "Toplam 1,8 mol atom içeren N₂O₄ gazının oda koşullarındaki (25°C, 1 atm) hacmi kaç litredir?",
-      "cevap": "1 mol N₂O₄ bileşiğinde (2 mol N + 4 mol O) toplam {koyu:6 mol atom} vardır. O hâlde bileşiğin mol sayısı n = {kesir:1,8|6} = {koyu:0,3 mol N₂O₄} olur. Oda koşullarında 1 mol gaz 24,5 L hacim kapladığından: V_OK = 0,3 . 24,5 = {koyu:7,35 Litre} bulunur."
+      "cevap": "1 mol N₂O₄ bileşiğinde (2 mol N + 4 mol O) toplam {koyu:6 mol atom} vardır. O hâlde bileşiğin mol sayısı n = {kesir:1,8|6} = {koyu:0,3 mol N₂O₄} olur. Oda koşullarında 1 mol gaz 24,5 L hacim kapladığından: V{alt:OK} = 0,3 . 24,5 = {koyu:7,35 Litre} bulunur."
     },
     {
       "soru": "Verilen 12,8 gram SO₂ gazı ile normal koşullarda kaç litre CH₄ gazı eşit sayıda atom içerir? (S = 32, O = 16 g/mol)",
-      "cevap": "M_A(SO₂) = 32 + 2.16 = 64 g/mol. n(SO₂) = {kesir:12,8|64} = {koyu:0,2 mol SO₂}. 1 mol SO₂’de 3 mol atom bulunduğundan, 0,2 mol SO₂’de 0,2 . 3 = {koyu:0,6 mol atom} vardır. CH₄ gazının da 0,6 mol atom içermesi gerekir. 1 mol CH₄’te (1 C + 4 H) 5 mol atom olduğundan n(CH₄) = {kesir:0,6|5} = {koyu:0,12 mol CH₄} olur. Normal koşullarda hacmi: V = 0,12 . 22,4 = {koyu:2,688 Litre} bulunur."
+      "cevap": "M{alt:A}(SO₂) = 32 + 2.16 = 64 g/mol. n(SO₂) = {kesir:12,8|64} = {koyu:0,2 mol SO₂}. 1 mol SO₂’de 3 mol atom bulunduğundan, 0,2 mol SO₂’de 0,2 . 3 = {koyu:0,6 mol atom} vardır. CH₄ gazının da 0,6 mol atom içermesi gerekir. 1 mol CH₄’te (1 C + 4 H) 5 mol atom olduğundan n(CH₄) = {kesir:0,6|5} = {koyu:0,12 mol CH₄} olur. Normal koşullarda hacmi: V = 0,12 . 22,4 = {koyu:2,688 Litre} bulunur."
     },
     {
-      "soru": "He (M_A = 4 g/mol) ve SO₂ (M_A = 64 g/mol) gazlarından oluşan 0,6 mollük bir karışımın kütlesi 16,4 gram olduğuna göre karışımdaki He gazının molce yüzdesi kaçtır?",
+      "soru": "He (M{alt:A} = 4 g/mol) ve SO₂ (M{alt:A} = 64 g/mol) gazlarından oluşan 0,6 mollük bir karışımın kütlesi 16,4 gram olduğuna göre karışımdaki He gazının molce yüzdesi kaçtır?",
       "cevap": "Karışımda {koyu:x mol He} ve {koyu:y mol SO₂} olsun. 1) x + y = 0,6 => y = 0,6 - x. 2) Kütle denklemi: 4x + 64y = 16,4 => 4x + 64(0,6 - x) = 16,4 => 4x + 38,4 - 64x = 16,4 => 60x = 22 => sadeleştirirsek (veya 18,4 gram için 60x = 20 olur; burada 4x + 64y = 16,4 için y = 22/60). Sayıları tam bölünecek şekilde kontrol edelim: 60x = 22 => x = 11/30 mol. Yüzde: (11/30) / (18/30) = %61,1 bulunur."
     },
     {
@@ -122,7 +122,7 @@
       "cevap": "Ortalama Atom Kütlesi = {kesir:(63 . 70) + (65 . 30)|100} = {kesir:4410 + 1950|100} = {kesir:6360|100} = {koyu:63,6 g/mol} bulunur."
     },
     {
-      "soru": "Aşağıda verilen maddelerden hangisinin içerdiği molekül sayısı en fazladır? (H = 1, He = 4, C = 12, O = 16 g/mol, N_A: Avogadro sayısı)",
+      "soru": "Aşağıda verilen maddelerden hangisinin içerdiği molekül sayısı en fazladır? (H = 1, He = 4, C = 12, O = 16 g/mol, N{alt:A}: Avogadro sayısı)",
       "cevap": "Doğru yanıt: 12 gram H₂ gazı. A) 0,5 mol, B) 1 mol, C) n = 12 / 2 = 6 mol H₂, D) 2/5 = 0,4 mol, E) 1 mol. En fazla molekül 6 mol olan 12 gram H₂ gazındadır."
     }
   ],
@@ -138,11 +138,11 @@
         "80"
       ],
       "dogru": 0,
-      "aciklama": "n = V / 22,4 = 11,2 / 22,4 = 0,5 mol SO₃. M_A(SO₃) = 32 + 3.16 = 80 g/mol olduğundan m = 0,5 . 80 = 40 gramdır."
+      "aciklama": "n = V / 22,4 = 11,2 / 22,4 = 0,5 mol SO₃. M{alt:A}(SO₃) = 32 + 3.16 = 80 g/mol olduğundan m = 0,5 . 80 = 40 gramdır."
     },
     {
       "tur": "coktan",
-      "soru": "Toplam 1,5 . N_A tane atom içeren NH₃ (amonyak) gazının oda koşullarındaki (25°C, 1 atm) hacmi kaç litredir? (N_A: Avogadro sayısı)",
+      "soru": "Toplam 1,5 . N{alt:A} tane atom içeren NH₃ (amonyak) gazının oda koşullarındaki (25°C, 1 atm) hacmi kaç litredir? (N{alt:A}: Avogadro sayısı)",
       "secenekler": [
         "6,125",
         "9,1875",
@@ -151,24 +151,24 @@
         "24,5"
       ],
       "dogru": 1,
-      "aciklama": "1,5 . N_A tane atom = 1,5 mol atom demektir. 1 mol NH₃’te 4 mol atom bulunduğundan n(NH₃) = 1,5 / 4 = 0,375 mol olur. Oda koşullarında hacmi V = 0,375 . 24,5 = 9,1875 L bulunur."
+      "aciklama": "1,5 . N{alt:A} tane atom = 1,5 mol atom demektir. 1 mol NH₃’te 4 mol atom bulunduğundan n(NH₃) = 1,5 / 4 = 0,375 mol olur. Oda koşullarında hacmi V = 0,375 . 24,5 = 9,1875 L bulunur."
     },
     {
       "tur": "coktan",
-      "soru": "Verilen 0,4 mol C₂H₄O₂ bileşiği ile ilgili aşağıdaki ifadelerden hangisi YANLIŞTIR? (H = 1, C = 12, O = 16 g/mol, N_A: Avogadro sayısı)",
+      "soru": "Verilen 0,4 mol C₂H₄O₂ bileşiği ile ilgili aşağıdaki ifadelerden hangisi YANLIŞTIR? (H = 1, C = 12, O = 16 g/mol, N{alt:A}: Avogadro sayısı)",
       "secenekler": [
         "Kütlesi 24 gramdır.",
         "0,8 mol karbon (C) atomu içerir.",
         "Normal koşullarda bütünüyle 22,4 litre hacim kaplar.",
-        "Toplam 3,2 . N_A tane atom içerir.",
+        "Toplam 3,2 . N{alt:A} tane atom içerir.",
         "İçerdiği hidrojen atomlarının kütlesi 1,6 gramdır."
       ],
       "dogru": 2,
-      "aciklama": "0,4 mol madde (gaz olsa bile) 0,4 . 22,4 = 8,96 L kaplar; kaldı ki asetik asit (C₂H₄O₂) normal koşullarda sıvıdır. Diğer dört seçenek doğrudur (M_A = 60, m = 0,4.60 = 24 g; toplam atom = 0,4 . 8 = 3,2 mol)."
+      "aciklama": "0,4 mol madde (gaz olsa bile) 0,4 . 22,4 = 8,96 L kaplar; kaldı ki asetik asit (C₂H₄O₂) normal koşullarda sıvıdır. Diğer dört seçenek doğrudur (M{alt:A} = 60, m = 0,4.60 = 24 g; toplam atom = 0,4 . 8 = 3,2 mol)."
     },
     {
       "tur": "coktan",
-      "soru": "CH₄ (M_A = 16) ve SO₂ (M_A = 64) gazlarından oluşan 0,5 mollük bir karışımın toplam kütlesi 22,4 gram olduğuna göre karışımda kaç mol CH₄ gazı vardır?",
+      "soru": "CH₄ (M{alt:A} = 16) ve SO₂ (M{alt:A} = 64) gazlarından oluşan 0,5 mollük bir karışımın toplam kütlesi 22,4 gram olduğuna göre karışımda kaç mol CH₄ gazı vardır?",
       "secenekler": [
         "0,1",
         "0,3",
@@ -196,7 +196,7 @@
         {
           "metin": "Verilen 1 tane CO₂ molekülünün kütlesi 44 akb, 1 mol CO₂ molekülünün kütlesi ise 44 gramdır.",
           "dogru": true,
-          "aciklama": "1 taneciğin kütlesi M_A akb iken, 1 mol (N_A tane) taneciğin kütlesi M_A gramdır."
+          "aciklama": "1 taneciğin kütlesi M{alt:A} akb iken, 1 mol (N{alt:A} tane) taneciğin kütlesi M{alt:A} gramdır."
         },
         {
           "metin": "Verilen 0,5 mol H₂SO₄ bileşiğinde toplam 3,5 mol atom bulunur.",
@@ -204,9 +204,9 @@
           "aciklama": "1 mol H₂SO₄’te (2+1+4 = 7 mol atom) bulunduğundan, 0,5 . 7 = 3,5 mol atom vardır."
         },
         {
-          "metin": "Verilen 1 gram madde N_A (Avogadro sayısı) kadar atomik kütle birimine (akb) eşittir.",
+          "metin": "Verilen 1 gram madde N{alt:A} (Avogadro sayısı) kadar atomik kütle birimine (akb) eşittir.",
           "dogru": true,
-          "aciklama": "1 akb = 1 / N_A gram olduğundan 1 gram = N_A akb eşitliği her zaman geçerlidir."
+          "aciklama": "1 akb = 1 / N{alt:A} gram olduğundan 1 gram = N{alt:A} akb eşitliği her zaman geçerlidir."
         }
       ]
     },
@@ -232,7 +232,7 @@
         ],
         [
           "1 mol CaCO₃ bileşiğindeki toplam atom sayısı",
-          "5 . N_A tane atom"
+          "5 . N{alt:A} tane atom"
         ]
       ]
     },
@@ -269,10 +269,10 @@
     {
       "tur": "ogretici",
       "soru": "Normal koşullarda 6,72 litre hacim kaplayan C_nH_(2n+2) gazının kütlesi 13,2 gram olduğuna göre bu bileşiğin basit ve molekül formülünü (n değerini) adım adım bulunuz. (C = 12, H = 1 g/mol)",
-      "cevap": "1. Adım (Mol Sayısının Bulunması): Normal koşullarda 1 mol gaz 22,4 L hacim kapladığından n_gaz = 6,72 / 22,4 = 0,3 mol bulunur. 2. Adım (Mol Kütlesinin Bulunması): 0,3 mol gaz 13,2 gram ise 1 mol gazın kütlesi M_A = m / n = 13,2 / 0,3 = 44 g/mol olur. 3. Adım (Formüldeki n Değerinin Bulunması): 1 mol C_nH_(2n+2) bileşiğinin mol kütlesi 12.n + 1.(2n + 2) = 14n + 2 = 44 => 14n = 42 => n = 3 bulunur. Dolayısıyla bileşiğin molekül formülü C₃H₈ (propan) gazıdır.",
+      "cevap": "1. Adım (Mol Sayısının Bulunması): Normal koşullarda 1 mol gaz 22,4 L hacim kapladığından n{alt:gaz} = 6,72 / 22,4 = 0,3 mol bulunur. 2. Adım (Mol Kütlesinin Bulunması): 0,3 mol gaz 13,2 gram ise 1 mol gazın kütlesi M{alt:A} = m / n = 13,2 / 0,3 = 44 g/mol olur. 3. Adım (Formüldeki n Değerinin Bulunması): 1 mol C_nH_(2n+2) bileşiğinin mol kütlesi 12.n + 1.(2n + 2) = 14n + 2 = 44 => 14n = 42 => n = 3 bulunur. Dolayısıyla bileşiğin molekül formülü C₃H₈ (propan) gazıdır.",
       "ipuclari": [
         "1. İpucu: Önce normal koşullardaki hacimden (6,72 L) gazın mol sayısını (n = V / 22,4) hesaplayınız.",
-        "2. İpucu: Bulduğunuz mol sayısı ve verilen kütleden (13,2 g) 1 mol bileşiğin kütlesini (M_A) bulup 12n + (2n + 2).1 ifadesine eşitleyiniz."
+        "2. İpucu: Bulduğunuz mol sayısı ve verilen kütleden (13,2 g) 1 mol bileşiğin kütlesini (M{alt:A}) bulup 12n + (2n + 2).1 ifadesine eşitleyiniz."
       ]
     }
   ]
