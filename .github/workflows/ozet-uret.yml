@@ -124,6 +124,7 @@ jobs:
         env:
           HAFTA: ${{ inputs.hafta }}
           GH_TOKEN: ${{ github.token }}
+          ANA_DAL: ${{ github.event.repository.default_branch }}
         run: |
           git config user.name "ozet-botu"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -138,9 +139,14 @@ jobs:
             git add araclar/ozetler araclar/gorseller araclar/sosyal araclar/veri public sosyal
             git commit -q -m "$HAFTA. hafta: $ADET konu özeti Claude API ile üretildi"
             if git push -q origin "HEAD:$GITHUB_REF_NAME"; then
-              echo "$ADET özet yayına gönderildi." | tee -a "$GITHUB_STEP_SUMMARY"
-              # GITHUB_TOKEN ile yapılan push başka iş akışını tetiklemez; yayını elle başlat
-              gh workflow run guncelle.yml --ref "$GITHUB_REF_NAME"
+              if [ "$GITHUB_REF_NAME" = "$ANA_DAL" ]; then
+                echo "$ADET özet kaydedildi ve yayına gönderildi." | tee -a "$GITHUB_STEP_SUMMARY"
+                # GITHUB_TOKEN ile yapılan push başka iş akışını tetiklemez; yayını elle başlat
+                gh workflow run guncelle.yml --ref "$GITHUB_REF_NAME"
+              else
+                # deneme dalı: site yalnız ana daldan yayımlanır, özetler dal birleşince yayına çıkar
+                echo "$ADET özet $GITHUB_REF_NAME dalına kaydedildi; dal ana dala birleşince yayımlanır." | tee -a "$GITHUB_STEP_SUMMARY"
+              fi
               exit 0
             fi
             echo "Gönderim reddedildi (dal bu arada ilerlemiş); $deneme. deneme, yeniden derleniyor."
