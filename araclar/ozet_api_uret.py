@@ -84,6 +84,8 @@ ATIF_RE = re.compile(r"\b(ders kitab|MEB kitab|kitapta\b|kitaptaki|kitaba göre|
 GOSTERIM = ('koyu', 'us', 'alt', 'kesir', 'kok', 'ar', 'uzunluk', 'aci', 'olcu', 'dogru', 'vektor', 'devir', 'isin', 'parca', 'formul', 'vurgu', 'renk', 'egik', 'i')
 GOSTERIM_RE = re.compile(r'\{(?:' + '|'.join(GOSTERIM) + r'):')
 KOK_ISARETI = re.compile('[√∛∜]')
+# Cümle sonu: rakamdan sonra gelmeyen nokta ve ardından büyük harf ("Mâide suresi 6. ayet" bölünmez)
+CUMLE_SONU = re.compile(r'(?<=[.!?])(?<!\d[.!?])\s+(?=[A-ZÇĞİÖŞÜÂÎÛ"\'«(])')
 KUTU_TURLERI = ('bilgi', 'dikkat', 'kural', 'tanim', 'ipucu', 'hatirla')
 ZORUNLU = ('sinif', 'ders', 'hafta', 'tarih', 'yayin_tarihi', 'unite', 'konu', 'ciktilar', 'giris', 'bolumler', 'ornekler', 'etkinlikler', 'ozet')
 
@@ -216,12 +218,35 @@ def onceki_ozetler(kimlik, hafta, adet=3):
     return liste
 
 
+def _gosterimsiz(s):
+    """{x:...} gösterimlerini iç metniyle değiştirir (örnekte modelin kopyalamaması gereken biçimler için)."""
+    onceki = None
+    while onceki != s:
+        onceki, s = s, re.sub(r'\{[a-z]+:([^{}]*)\}', lambda m: m.group(1).split('|')[0], s)
+    return s
+
+
 def ornek_kirp(o):
-    """Örnek dosyada 3. bölümden sonraki SVG'leri kısaltır (istek boyutu düşer, biçim yine görülür)."""
+    """Örnek dosyayı modele gösterilecek hale getirir: 3. bölümden sonraki SVG'ler kısalır (istek küçülür),
+    eski haftalarda kalmış ve artık reddedilen biçimler (SVG'de, başlıklarda gösterim; dize 'ozet') temizlenir."""
     k = json.loads(json.dumps(o, ensure_ascii=False))
+    for a in ('unite', 'konu'):
+        if isinstance(k.get(a), str):
+            k[a] = _gosterimsiz(k[a])
+    if isinstance(k.get('ozet'), str):
+        k['ozet'] = [x.strip() for x in re.split(CUMLE_SONU, k['ozet']) if x.strip()][:6]
     for i, b in enumerate(k.get('bolumler', [])):
-        if i >= 2 and isinstance(b.get('gorsel'), str) and len(b['gorsel']) > 400:
-            b['gorsel'] = b['gorsel'][:300] + '…(kısaltıldı; sen tam SVG yazacaksın)</svg>'
+        if not isinstance(b, dict):
+            continue
+        if isinstance(b.get('baslik'), str):
+            b['baslik'] = _gosterimsiz(b['baslik'])
+        for kt in b.get('kutular', []) + ([b['kutu']] if isinstance(b.get('kutu'), dict) else []):
+            if isinstance(kt, dict) and isinstance(kt.get('baslik'), str):
+                kt['baslik'] = _gosterimsiz(kt['baslik'])
+        if isinstance(b.get('gorsel'), str):
+            b['gorsel'] = _gosterimsiz(b['gorsel'])
+            if i >= 2 and len(b['gorsel']) > 400:
+                b['gorsel'] = b['gorsel'][:300] + '…(kısaltıldı; sen tam SVG yazacaksın)</svg>'
     for anahtar in ('claude_denetim', 'kalite'):
         k.pop(anahtar, None)
     return k
@@ -566,22 +591,68 @@ def duz_metin(s):
 
 
 def kirp(s, sinir):
+    """Türkçede yüklem sondadır: önce bütün cümleler, sonra yan cümle sınırı denenir; kesilen metin … ile biter."""
     if len(s) <= sinir:
         return s
-    kes = s[:sinir].rsplit(' ', 1)[0].rstrip(',;:')
-    return kes if kes.endswith('.') else kes + '.'
+    cumleler, secilen = re.split(CUMLE_SONU, s), ''
+    for c in cumleler:
+        if len(secilen) + len(c) + 1 > sinir:
+            break
+        secilen = f'{secilen} {c}'.strip()
+    if secilen:
+        return secilen
+    bas = s[:sinir]
+    for ayirac in ('; ', ', '):
+        if ayirac in bas[sinir // 2:]:
+            return bas[:bas.rindex(ayirac)].rstrip() + '…'
+    return bas.rsplit(' ', 1)[0].rstrip(',;:') + '…'
+
+
+def _harf_sayisi(s):
+    return sum(c.isalpha() for c in s)
+
+
+def kart_sorunu(kart):
+    """sosyal_gorsel.py'nin çizimden önce reddettiği durumlar; None = kart çizilebilir."""
+    for alan in ('baslik', 'paragraflar', 'bilgi'):
+        if not kart.get(alan):
+            return f'{alan} alanı boş'
+    if _ARAP.search(kart['baslik'] + ''.join(kart['paragraflar'])):
+        return 'kart metninde Arap harfi var'
+    if _harf_sayisi(kart['baslik']) < 3 or any(_harf_sayisi(x) < 20 for x in kart['paragraflar']):
+        return 'kart metni çok kısa'
+    return None
 
 
 def sosyal_karti_yaz(d, kimlik, hafta):
+    """Kart metni: Arapça kelime içermeyen özet maddeleri, sonra giriş ve bölüm ilk cümleleri. Kart Arapça harf
+    çizemez; kelimeyi silmek cümleyi bozar, bu yüzden böyle cümleler hiç seçilmez. Yeterli cümle yoksa kart yazılmaz
+    (özet yine yayımlanır, yalnız sosyal medya gönderisi olmaz)."""
     sg = _yukle('sosyal_gorsel_api', ARACLAR / 'sosyal_gorsel.py')
     sinif, ders = kimlik.split('-', 1)
-    dosya = sg.DERSLER[ders][0]
-    # Arapça kelime içermeyen özet maddeleri önce: kart Arapça harf çizemez, çıkarılınca cümle bozulur
-    maddeler = sorted(d['ozet'], key=lambda x: '{ar:' in x)
-    paragraflar = [kirp(duz_metin(x), 240) for x in maddeler[:2]]
-    kart = {'ozet': f'{kimlik}-{hafta}', 'baslik': kirp(duz_metin(d['bolumler'][0]['baslik']), 80),
+    hedef = YAZ['sosyal'] / f'bilgi-{sinif}-{sg.DERSLER[ders][0]}-{hafta}.json'
+    adaylar = list(d.get('ozet', [])) + [d.get('giris', '')]
+    adaylar += [b['metin'][0] for b in d.get('bolumler', []) if b.get('metin')]
+    temiz = []
+    for ham in adaylar:
+        # Arapça kelime ancak ardından okunuşu parantezle geliyorsa kabul: "{ar:مدرسة} (medrese)" → "(medrese)"
+        if not ham or re.search(r'\{ar:[^{}]*\}(?!\s*\()', ham) or _ARAP.search(re.sub(r'\{ar:[^{}]*\}', '', ham)):
+            continue
+        duz = duz_metin(ham)
+        if _harf_sayisi(duz) >= 40 and duz not in temiz:
+            temiz.append(duz)
+    temiz.sort(key=lambda x: len(x) > 240)        # kısaltılması gerekmeyenler önce
+    basliklar = [b.get('baslik', '') for b in d.get('bolumler', [])] + [d.get('konu', '')]
+    baslik = next((duz_metin(x) for x in basliklar if x and not re.search(r'\{ar:[^{}]*\}(?!\s*\()', x)
+                   and _harf_sayisi(_ARAP.sub('', duz_metin(x))) >= 3), '')
+    paragraflar = [kirp(x, 240) for x in temiz[:2]]
+    kart = {'ozet': f'{kimlik}-{hafta}', 'baslik': kirp(_ARAP.sub('', baslik).strip(), 80),
             'paragraflar': paragraflar, 'bilgi': ' '.join(paragraflar)}
-    (YAZ['sosyal'] / f'bilgi-{sinif}-{dosya}-{hafta}.json').write_text(json.dumps(kart, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    if len(paragraflar) < 2 or kart_sorunu(kart):
+        hedef.unlink(missing_ok=True)
+        return False
+    hedef.write_text(json.dumps(kart, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    return True
 
 
 def kaydet(d, kimlik, hafta, tarih, yayin, dersler):
@@ -634,6 +705,23 @@ def yayin_hazirla(liste_dosyasi):
         sorunlar = dogrula(d, e_fonk, sayfa)
         if sorunlar:
             ayikla(m.group(1), '; '.join(sorunlar[:3]))
+
+    # Sosyal kartlar: çizilemeyecek bir kart sosyal_gorsel.py --kuyruk adımını, dolayısıyla bütün yayını durdurur.
+    # Böyle bir kart silinir; özet yine yayımlanır.
+    sg = _yukle('sosyal_gorsel_kart', ARACLAR / 'sosyal_gorsel.py')
+    for yol in yeni:
+        m = re.fullmatch(r'araclar/sosyal/(bilgi-.+)\.json', yol)
+        if not m or not (KOK / yol).exists():
+            continue
+        try:
+            sorun = kart_sorunu(json.loads((KOK / yol).read_text(encoding='utf-8')))
+            if not sorun:
+                sg.coz(m.group(1))
+        except Exception as exc:
+            sorun = f'{type(exc).__name__}: {exc}'
+        if sorun:
+            (KOK / yol).unlink()
+            print(f'::warning::{m.group(1)} sosyal kartı çizilemez ({sorun}); kart silindi, özet yayımlanır.', flush=True)
 
     for _ in range(5):
         r = subprocess.run([sys.executable, str(ARACLAR / 'yayin_denetle.py'), '--onar'], cwd=KOK, capture_output=True, text=True)
@@ -785,9 +873,9 @@ def tek_ozet(client, args, kimlik, ctx, sayac, butce_izni):
     mesajlar = [mesaj]
     for deneme in (1, 2):
         if deneme == 2 and not butce_izni():
-            return 'hata', f'bütçe doldu; düzeltme denemesi yapılmadı ({ilk_sorun})'
+            return 'hata', f'bütçe ya da süre doldu; düzeltme denemesi yapılmadı ({ilk_sorun})'
         if args.kuru:
-            d = onceki_ozetler(kimlik, args.hafta, 1)[0]
+            d = onceki_ozetler(kimlik, args.hafta)[0]      # prova: son 3 haftanın en yenisi
             d['hafta'] = args.hafta
             metin = json.dumps(d, ensure_ascii=False)
         else:
@@ -816,9 +904,9 @@ def anlik_uret(client, args, bekleyen, ctx, sayac, bitis):
     durdu = None
 
     def butce_izni():
-        # açık işlerin her birinin bir istek daha yapabileceği varsayılır
+        # düzeltme denemesi: bütçe (açık işlerin her biri bir istek daha yapabilir) ve süre sınırı
         with kilit:
-            return sayac.maliyet() + acik['n'] * sayac.istek_basi() <= args.butce
+            return time.time() < bitis and sayac.maliyet() + acik['n'] * sayac.istek_basi() <= args.butce
 
     def is_(k):
         try:
@@ -832,7 +920,8 @@ def anlik_uret(client, args, bekleyen, ctx, sayac, bitis):
         while kalan or isler:
             while kalan and not durdu and len(isler) < max(1, args.paralel) and time.time() < bitis:
                 with kilit:
-                    if sayac.maliyet() + (acik['n'] + 1) * sayac.istek_basi() > args.butce:
+                    # her açık iş için ilk istek + beklenen düzeltme payı (denemede 3 istekte 1 düzeltme)
+                    if sayac.maliyet() + (acik['n'] + 1) * sayac.istek_basi() * 1.35 > args.butce:
                         break
                     acik['n'] += 1
                 k = kalan.pop(0)
@@ -882,19 +971,22 @@ def toplu_bekle(client, kimlik, bitis, etiket):
         if b.processing_status == 'ended':
             return b
         if time.time() > bitis:
-            print(f'  {etiket}: süre doldu, toplu istek {kimlik} sürüyor; sonraki çalıştırma sonuçları ödemeden toplar.', flush=True)
+            print(f'  {etiket}: süre doldu, toplu istek {kimlik} sürüyor; aynı hafta {KURTARMA_GUN} gün içinde yeniden çalıştırılınca sonuçları ödenmeden toplanır.', flush=True)
             return None
         c = b.request_counts
         print(f'  {etiket}: işleniyor {c.processing}, biten {c.succeeded + c.errored + c.canceled + c.expired}', flush=True)
         time.sleep(60)
 
 
-def toplu_sonuclari(client, batch_id, hafta, ctx, sayac, ilk_mesajlar=None, say=True):
-    """Sonuçları işler. Döndürür: {kimlik: ('tamam'|'duzelt'|'hata', bilgi)}; 'duzelt' bilgisi (metin, sorunlar)."""
+def toplu_sonuclari(client, batch_id, hafta, ctx, sayac, say=True, istenen=None):
+    """Sonuçları işler. Döndürür: {kimlik: ('tamam'|'duzelt'|'hata', bilgi)}; 'duzelt' bilgisi (metin, sorunlar).
+    istenen verilirse yalnız o dersler işlenir."""
     cikti = {}
     for r in _api(lambda: client.messages.batches.results(batch_id)):
         kimlik, tur = _ozel_coz(r.custom_id, hafta)
-        if not kimlik:
+        if not kimlik or (istenen is not None and kimlik not in istenen):
+            continue
+        if cikti.get(kimlik, ('',))[0] == 'tamam':      # aynı toplu istekte i ve d birlikte olamaz; yine de koru
             continue
         if (OZETLER / f'{kimlik}-{hafta}.json').exists() and YAZ['ozet'] == OZETLER:
             cikti[kimlik] = ('tamam', 'zaten var')
@@ -921,37 +1013,46 @@ def toplu_sonuclari(client, batch_id, hafta, ctx, sayac, ilk_mesajlar=None, say=
     return cikti
 
 
-def onceki_toplulari_topla(client, args, ctx, sayac, bitis):
-    """Son 48 saatteki toplu istekler: süren varsa biter, bitenlerin bu haftaya ait sonuçları ödenmeden toplanır
-    (önceki çalıştırma yarıda kaldıysa aynı özet için yeniden para ödenmez)."""
-    sinir = datetime.now(timezone.utc) - timedelta(hours=48)
-    toplanan = {}
+KURTARMA_GUN = 28      # toplu istek sonuçları 29 gün indirilebilir
+
+
+def onceki_toplulari_topla(client, args, ctx, sayac, bitis, istenen):
+    """Son 28 gündeki toplu istekler: süren varsa beklenir, bitenlerin bu haftaya ve istenen derslere ait sonuçları
+    ödenmeden yazılır (önceki çalıştırma yarıda kaldıysa ya da iptal edildiyse aynı özete yeniden para ödenmez).
+    Döndürür: (toplanan {kimlik: bilgi}, bitmeyen: süre içinde bitmeyen toplu istek var mı)."""
+    sinir = datetime.now(timezone.utc) - timedelta(days=KURTARMA_GUN)
+    toplanan, bitmeyen = {}, False
     for b in _api(lambda: client.messages.batches.list(limit=50)):
         if b.created_at < sinir:
             break
         if b.processing_status in ('in_progress', 'canceling'):
-            print(f'Önceki toplu istek {b.id} sürüyor; bitmesi bekleniyor.', flush=True)
-            b = toplu_bekle(client, b.id, bitis, 'önceki toplu istek')
-            if b is None:
+            print(f'Önceki toplu istek {b.id} sürüyor; bitmesi bekleniyor (sonuçları ödenmeden kullanılacak).', flush=True)
+            b2 = toplu_bekle(client, b.id, bitis, 'önceki toplu istek')
+            if b2 is None:
+                bitmeyen = True
                 continue
-        if b.processing_status != 'ended' or not b.results_url:
+            b = b2
+        if b.processing_status != 'ended' or not getattr(b, 'results_url', None):
             continue
-        for k, (durum, bilgi) in toplu_sonuclari(client, b.id, args.hafta, ctx, sayac, say=False).items():
+        try:
+            sonuclar = toplu_sonuclari(client, b.id, args.hafta, ctx, sayac, say=False, istenen=istenen - set(toplanan))
+        except Exception as exc:      # süresi geçmiş sonuç dosyası vb.
+            print(f'  {b.id} sonuçları okunamadı: {type(exc).__name__}: {exc}', flush=True)
+            continue
+        for k, (durum, bilgi) in sonuclar.items():
             if durum == 'tamam' and bilgi != 'zaten var':
                 toplanan[k] = bilgi
-                print(f'  [tamam] {k}-{args.hafta}: {bilgi} (önceki toplu istekten, yeniden ödenmedi)', flush=True)
-    return toplanan
+                print(f'  [tamam] {k}-{args.hafta}: {bilgi} (önceki toplu istekten {b.id}, yeniden ödenmedi)', flush=True)
+    return toplanan, bitmeyen
 
 
 def toplu_uret(client, args, bekleyen, ctx, sayac, bitis):
     from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
     from anthropic.types.messages.batch_create_params import Request
     sonuc = {'tamam': [], 'hata': []}
-    if not args.kuru:
-        for k, bilgi in onceki_toplulari_topla(client, args, ctx, sayac, bitis).items():
-            if k in bekleyen:
-                bekleyen.remove(k)
-                sonuc['tamam'].append(k)
+    if time.time() >= bitis:
+        print('Süre doldu; yeni toplu istek gönderilmedi.', flush=True)
+        return sonuc, bekleyen
     # bütçe: ilk tur + düzeltme turunun beklenen payı (deneme: 3 istekte 1 düzeltme)
     tahmin = sayac.istek_basi(toplu=True) * 1.35
     sigan = max(0, int((args.butce - sayac.maliyet()) // tahmin))
@@ -960,7 +1061,16 @@ def toplu_uret(client, args, bekleyen, ctx, sayac, bitis):
         print(f'Bütçe ({args.butce:.0f} $) tahminen {len(gonder)} derse yetiyor; {len(kalan)} ders sonraki çalıştırmaya kaldı.', flush=True)
     if not gonder:
         return sonuc, kalan
-    ilk = {k: {'role': 'user', 'content': istek_metni(k, args.hafta, ctx['tarih'], ctx['yayin'], ctx['dersler'])} for k in gonder}
+    ilk = {}
+    for k in list(gonder):
+        try:
+            ilk[k] = {'role': 'user', 'content': istek_metni(k, args.hafta, ctx['tarih'], ctx['yayin'], ctx['dersler'])}
+        except ValueError as exc:     # ör. önceki hafta özeti yok: yalnız bu ders hata sayılır
+            gonder.remove(k)
+            sonuc['hata'].append(k)
+            print(f'  [hata] {k}-{args.hafta}: {exc}', flush=True)
+    if not gonder:
+        return sonuc, kalan
     if args.kuru:
         for k in gonder:
             durum, not_ = tek_ozet(None, args, k, ctx, sayac, lambda: True)
@@ -1018,6 +1128,7 @@ def main():
     ap.add_argument('--butce', type=float, default=60.0, help='USD; tahmini harcama + açık işlerin payı bunu aşacaksa yeni istek açılmaz')
     ap.add_argument('--sure-dk', type=float, default=0, help='bu kadar dakika sonra yeni istek açma (0 = sınırsız)')
     ap.add_argument('--kuru', action='store_true', help="API çağırmadan prova: önceki haftayı kopyalar, geçici klasöre yazar")
+    ap.add_argument('--kurtarma-yok', action='store_true', help='önceki toplu isteklerin sonuçlarını kullanma (bilerek silinen özeti yeniden üretmek için)')
     ap.add_argument('--kuyruk-baslangici', action='store_true', help='sosyal kuyruğa eklenecek ilk saati yazdır ve çık')
     ap.add_argument('--yayin-hazirla', metavar='LISTE', help='sayfaları derle ve denetle; listedeki yeni özetlerden denetime takılanları ayıkla')
     args = ap.parse_args()
@@ -1060,10 +1171,18 @@ def main():
     bitis = basla + args.sure_dk * 60 if args.sure_dk else float('inf')
     durdu = None
     try:
-        if args.toplu:
-            sonuc, kalan = toplu_uret(client, args, list(bekleyen), ctx, sayac, bitis)
+        if not args.kuru and not args.kurtarma_yok:
+            toplanan, bitmeyen = onceki_toplulari_topla(client, args, ctx, sayac, bitis, set(bekleyen))
+            bekleyen_yeni = [k for k in bekleyen if k not in toplanan]
+            if bitmeyen:
+                raise SystemExit('Önceki bir toplu istek süre içinde bitmedi; aynı dersler iki kez ödenmesin diye yeni istek '
+                                 'gönderilmedi. Bir saat kadar sonra aynı hafta yeniden çalıştırılınca sonuçları ödenmeden toplanır.')
         else:
-            sonuc, kalan = anlik_uret(client, args, list(bekleyen), ctx, sayac, bitis)
+            bekleyen_yeni = list(bekleyen)
+        if args.toplu:
+            sonuc, kalan = toplu_uret(client, args, bekleyen_yeni, ctx, sayac, bitis)
+        else:
+            sonuc, kalan = anlik_uret(client, args, bekleyen_yeni, ctx, sayac, bitis)
     except Durdu as exc:               # anlık kip: kredi/anahtar sorunu, açık işler bitti
         durdu, sonuc, kalan = str(exc), exc.sonuc, exc.kalan
     except SystemExit as exc:          # toplu kip: yazılmış dosyalar korunur, özet yine basılır
