@@ -124,6 +124,38 @@ def e(metin):
     if re.search(r'\{[a-z]+:[^{}\s]', metin):   # yanlış yazılmış gösterim ({kesr:3|4}) düz metin olarak sayfaya çıkmasın
         raise ValueError('Çözülmemiş gösterim: ' + metin[:120])
     return metin.replace('\ue000', '|')
+# SVG metni e()'den geçmez (HTML öğeleri SVG içinde çalışmaz): görseldeki gösterim SVG karşılığına çevrilir.
+SVG_SEMBOL = {
+    'ar': '<tspan font-size="1.15em">{0}</tspan>',   # Arapça harfler kendiliğinden sağdan sola dizilir
+    'koyu': '<tspan font-weight="700">{0}</tspan>',
+    'vurgu': '<tspan font-style="italic">{0}</tspan>', 'egik': '<tspan font-style="italic">{0}</tspan>',
+    'i': '<tspan font-style="italic">{0}</tspan>',
+    'us': '<tspan baseline-shift="super" font-size="70%">{0}</tspan>',
+    'alt': '<tspan baseline-shift="sub" font-size="70%">{0}</tspan>',
+    'uzunluk': '|{0}|', 'isin': '[{0}', 'parca': '[{0}]', 'olcu': 'm({0})', 'aci': '∠{0}',
+    'kesir': '{0}', 'dogru': '{0}', 'vektor': '{0}', 'devir': '{0}', 'formul': '{0}', 'renk': '{0}',
+}   # kök çevrilmez: düz √ yayında yasak, çözülmemiş {kok:} yayın denetimine takılır
+
+
+def svg_gosterim(svg):
+    """SVG metin düğümlerindeki {ar:…}, {koyu:…} gibi gösterimi SVG öğelerine çevirir (iç içe olan önce)."""
+    def cevir(m):
+        ad, ic = m.group(1), m.group(2)
+        if ad == 'kok':
+            return m.group(0)
+        if ad == 'kesir':
+            ic = '/'.join(x.strip() for x in ic.split('|')[:2])
+        return SVG_SEMBOL[ad].format(ic)
+
+    def metin(m):
+        ic = m.group(1)
+        onceki = None
+        while onceki != ic:
+            onceki, ic = ic, re.sub(r'\{(aci|olcu|dogru|vektor|devir|isin|parca|uzunluk|us|kesir|koyu|ar|alt|formul|vurgu|renk|egik|i):([^{}]+)\}', cevir, ic)
+        return f'>{ic}<'
+    return re.sub(r'>([^<>]*)<', metin, svg) if isinstance(svg, str) and '{' in svg else svg
+
+
 KUTU = {'dikkat': 'Dikkat', 'bilgi': 'Bilgi', 'kural': 'Kural', 'tanim': 'Tanım', 'ipucu': 'İpucu', 'hatirla': 'Hatırla'}
 SIMGE = {  # 24×24 çizgi simgeleri (renk: currentColor)
     'bilgi': '<circle cx="12" cy="12" r="9.5"/><path d="M12 11v6"/><circle cx="12" cy="7.6" r=".6" fill="currentColor"/>',
@@ -155,7 +187,7 @@ def kutu_html(k):
     metin = k.get('metin') or k.get('icerik') or k.get('aciklama', '')
     simge = f'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">{SIMGE[tur]}</svg>'
     return (f'<aside class="ozet-kutu {tur}"><div class="kutu-bas"><span class="kutu-simge" aria-hidden="true">{simge}</span>'
-            f'<strong>{html.escape(k.get("baslik") or KUTU[tur])}</strong></div><p>{e(metin)}</p></aside>')
+            f'<strong>{e(k.get("baslik") or KUTU[tur])}</strong></div><p>{e(metin)}</p></aside>')
 
 
 def paragraflar(liste):
@@ -338,7 +370,7 @@ def sayfa_uret(o, dersler, icerikler, hafta_haritasi=None):
         if isinstance(g_raw, dict):
             g_icerik = f'<img src="{html.escape(g_raw.get("dosya",""), quote=True)}" alt="{html.escape(g_raw.get("alt",""), quote=True)}" loading="lazy">'
         else:
-            g_icerik = g_raw or ''
+            g_icerik = svg_gosterim(g_raw or '')
         gorsel_html = (
             f'<figure class="ozet-gorsel" tabindex="0" role="button" aria-label="Görseli tam ekran büyüt">'
             f'<button type="button" class="gorsel-buyut-btn" aria-label="Görseli tam ekran büyüt"><span aria-hidden="true">🔍</span><span>Büyüt</span></button>'
@@ -360,7 +392,7 @@ def sayfa_uret(o, dersler, icerikler, hafta_haritasi=None):
         if isinstance(g_val, dict):
             ic = f'<img src="{html.escape(g_val.get("dosya",""), quote=True)}" alt="{html.escape(g_val.get("alt",""), quote=True)}" loading="lazy">'
         else:
-            ic = g_val
+            ic = svg_gosterim(g_val)
         return f'<figure class="ozet-gorsel" tabindex="0" role="button" aria-label="Görseli tam ekran büyüt"><button type="button" class="gorsel-buyut-btn" aria-label="Görseli tam ekran büyüt"><span aria-hidden="true">🔍</span><span>Büyüt</span></button>{ic}<figcaption class="gorsel-ipucu">🔍 Büyütmek için dokunun</figcaption></figure>'
 
     ornekler = ''.join(
