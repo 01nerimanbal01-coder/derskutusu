@@ -1,0 +1,106 @@
+name: Haftalık özetleri Claude API ile üret
+
+# Elle çalıştırılır: Actions → "Haftalık özetleri Claude API ile üret" → Run workflow.
+# Max planının aylık API kredisini kullanır (KURULUM.md → "Claude API kredisiyle özet üretme").
+# Var olan özetler atlanır; bütçe dolarsa ya da kredi biterse aynı hafta yeniden çalıştırılınca kaldığı yerden sürer.
+on:
+  workflow_dispatch:
+    inputs:
+      hafta:
+        description: 'Hafta numarası (ör. 15)'
+        required: true
+      dersler:
+        description: 'Yalnız bu dersler, virgülle (ör. 7-matematik,10-tarih). Boş bırakılırsa 103 dersin hepsi'
+        required: false
+        default: ''
+      model:
+        description: 'Model (Sonnet yaklaşık yarı fiyatına)'
+        type: choice
+        options:
+          - claude-opus-5-5
+          - claude-sonnet-5-5
+        default: claude-opus-5-5
+      butce:
+        description: 'Bu çalıştırmada en çok harcanacak tutar (USD)'
+        required: true
+        default: '50'
+
+permissions:
+  contents: write
+  actions: write      # üretimden sonra yayın iş akışını başlatmak için
+
+concurrency:
+  group: ozet-uret
+  cancel-in-progress: false
+
+jobs:
+  uret:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Gerekli paketler
+        run: pip install --quiet anthropic pillow
+
+      - name: Özetleri üret
+        id: uret
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          HAFTA: ${{ inputs.hafta }}
+          DERSLER: ${{ inputs.dersler }}
+          MODEL: ${{ inputs.model }}
+          BUTCE: ${{ inputs.butce }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::error::ANTHROPIC_API_KEY gizli anahtarı yok (KURULUM.md → Claude API kredisiyle özet üretme)"; exit 1
+          fi
+          set +e
+          ARG=(--hafta "$HAFTA" --model "$MODEL" --butce "$BUTCE" --paralel 4)
+          if [ -n "$DERSLER" ]; then ARG+=(--dersler "$DERSLER"); fi
+          python araclar/ozet_api_uret.py "${ARG[@]}" 2>&1 | tee uretim.log
+          echo "kod=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
+          {
+            echo "### $HAFTA. hafta özet üretimi"
+            echo '```'
+            tail -n 40 uretim.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          rm -f uretim.log
+
+      - name: Sayfaları derle ve yayın denetimini çalıştır
+        run: |
+          python araclar/yayin_denetle.py --onar
+          python araclar/kok_yayin_denetle.py
+
+      - name: Sosyal medya kartlarını çiz ve kuyruğa ekle
+        run: python araclar/sosyal_gorsel.py --kuyruk "$(python araclar/ozet_api_uret.py --kuyruk-baslangici)"
+
+      - name: Kaydet ve yayına gönder
+        env:
+          HAFTA: ${{ inputs.hafta }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "ozet-botu"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add araclar/ozetler araclar/gorseller araclar/sosyal araclar/veri public sosyal
+          if git diff --cached --quiet; then
+            echo "Yeni özet yok."
+          else
+            YENI=$(git diff --cached --name-only --diff-filter=A -- araclar/ozetler | wc -l)
+            git commit -m "$HAFTA. hafta: $YENI konu özeti Claude API ile üretildi"
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push
+            # GITHUB_TOKEN ile yapılan push başka iş akışını tetiklemez; yayını elle başlat
+            gh workflow run guncelle.yml --ref "$GITHUB_REF_NAME"
+          fi
+
+      - name: Hatalı ders varsa bildir
+        if: steps.uret.outputs.kod != '0'
+        run: |
+          echo "::warning::Bazı dersler üretilemedi ya da bütçe doldu; ayrıntı özet sayfasında. Aynı haftayı yeniden çalıştırın."
+          exit 1
