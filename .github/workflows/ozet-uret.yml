@@ -3,6 +3,8 @@ name: Haftalık özetleri Claude API ile üret
 # Elle çalıştırılır: Actions → "Haftalık özetleri Claude API ile üret" → Run workflow.
 # Max planının aylık API kredisini kullanır (KURULUM.md → "Claude API kredisiyle özet üretme").
 # Var olan özetler atlanır; bütçe ya da süre dolarsa aynı hafta yeniden çalıştırılınca kaldığı yerden sürer.
+# İki saatte bir kendiliğinden de çalışır (otomatik toplayıcı): biten toplu isteklerin sonuçlarını ödemeden yazar,
+# yayımlar ve gerekirse düzeltme turunu gönderir. Gönderilen istekler araclar/veri/toplu_durum.json'da kayıtlıdır.
 on:
   workflow_dispatch:
     inputs:
@@ -14,7 +16,7 @@ on:
         required: false
         default: ''
       yontem:
-        description: 'toplu = yarı fiyat, sonuç genelde 1 saat içinde; anlik = hemen, iki kat fiyat'
+        description: 'toplu = yarı fiyat, sonuç birkaç saat içinde (en geç 24 saat); anlik = hemen, iki kat fiyat'
         type: choice
         options:
           - toplu
@@ -38,18 +40,14 @@ on:
         description: 'Bu çalıştırmada en çok harcanacak tutar (USD)'
         required: true
         default: '50'
-      kurtarma:
-        description: 'Önceki toplu isteklerin ödenmiş sonuçlarını kullan (hayır: bilerek silinen özeti yeniden üretmek için)'
-        type: choice
-        options:
-          - evet
-          - hayir
-        default: evet
+  schedule:
+    - cron: '41 */2 * * *'
 
 permissions:
   contents: write
   actions: write      # üretimden sonra yayın iş akışını başlatmak için
 
+# Elle başlatılan çalıştırma ile toplayıcı aynı anda çalışmaz: ikisi de aynı toplu isteklerin sonuçlarını işler.
 concurrency:
   group: ozet-uret
   cancel-in-progress: false
@@ -60,7 +58,7 @@ jobs:
     timeout-minutes: 345
     steps:
       # Olay anındaki eski commit değil, dalın en güncel hali: yeniden çalıştırmada (Re-run) önceki
-      # çalıştırmanın gönderdiği özetler görülür ve onlara ikinci kez para ödenmez.
+      # çalıştırmanın gönderdiği özetler ve toplu istek kayıtları görülür, onlara ikinci kez para ödenmez.
       - uses: actions/checkout@v5
         with:
           ref: ${{ github.ref_name }}
@@ -84,83 +82,122 @@ jobs:
           MODEL: ${{ inputs.model }}
           CABA: ${{ inputs.caba }}
           BUTCE: ${{ inputs.butce }}
-          KURTARMA: ${{ inputs.kurtarma }}
         run: |
           if [ -z "$ANTHROPIC_API_KEY" ]; then
+            if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
+              echo "ANTHROPIC_API_KEY yok; toplayıcı atlandı."; echo "kod=0" >> "$GITHUB_OUTPUT"; exit 0
+            fi
             echo "::error::ANTHROPIC_API_KEY gizli anahtarı yok (KURULUM.md → Claude API kredisiyle özet üretme)"; exit 1
           fi
           set +e
-          # adım 300 dakikada kesilir: toplu kipte bekleme kısa, anlık kipte açık istekler ve düzeltmeler için pay
-          if [ "$YONTEM" = "toplu" ]; then ARG=(--toplu --sure-dk 280); else ARG=(--sure-dk 250); fi
-          ARG+=(--hafta "$HAFTA" --model "$MODEL" --caba "$CABA" --butce "$BUTCE" --paralel 4)
-          if [ "$KURTARMA" = "hayir" ]; then ARG+=(--kurtarma-yok); fi
-          if [ -n "$DERSLER" ]; then ARG+=(--dersler "$DERSLER"); fi
+          if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
+            # toplayıcı yalnız düzeltme turu için harcar
+            ARG=(--topla --butce 20 --model claude-opus-5-5 --caba medium)
+          else
+            # toplu kipte gönderip bir saat beklenir; bitmeyenleri toplayıcı yazar. Anlık kipte açık istekler ve düzeltmeler için pay
+            if [ "$YONTEM" = "toplu" ]; then ARG=(--toplu --sure-dk 60); else ARG=(--sure-dk 250); fi
+            ARG+=(--hafta "$HAFTA" --model "$MODEL" --caba "$CABA" --butce "$BUTCE" --paralel 4)
+            if [ -n "$DERSLER" ]; then ARG+=(--dersler "$DERSLER"); fi
+          fi
           python araclar/ozet_api_uret.py "${ARG[@]}" 2>&1 | tee "$RUNNER_TEMP/uretim.log"
           echo "kod=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
 
       # Üretilen kaynak dosyalar (özet JSON, görsel modülü, sosyal kart metni) parası ödenmiş çıktıdır:
       # derleme ya da gönderim başarısız olsa, çalıştırma iptal edilse bile kaybolmasın diye yedeklenir.
+      # Toplu istek kayıt dosyası da yedeklenir: hangi isteğin içinde hangi derslerin olduğu yalnız orada yazar.
       - name: Üretilen dosyaları yedekle
         id: yedek
         if: always()
+        env:
+          HAFTA: ${{ inputs.hafta }}
         run: |
           {
-            echo "### ${{ inputs.hafta }}. hafta özet üretimi"
+            if [ -n "$HAFTA" ]; then echo "### $HAFTA. hafta özet üretimi"; else echo "### Toplu istek sonuçlarının toplanması"; fi
             echo '```'
             tail -n 60 "$RUNNER_TEMP/uretim.log" 2>/dev/null || echo "üretim günlüğü yok"
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
+          mkdir -p "$RUNNER_TEMP/uretim"
           git add -A araclar/ozetler araclar/gorseller araclar/sosyal
           git diff --cached --name-only --diff-filter=A > "$RUNNER_TEMP/yeni.txt"
           git reset -q
           echo "adet=$(grep -c 'araclar/ozetler/' "$RUNNER_TEMP/yeni.txt" || true)" >> "$GITHUB_OUTPUT"
           if [ -s "$RUNNER_TEMP/yeni.txt" ]; then
-            mkdir -p "$RUNNER_TEMP/uretim"
             tar czf "$RUNNER_TEMP/uretim/kaynak.tgz" -T "$RUNNER_TEMP/yeni.txt"
+          fi
+          D=araclar/veri/toplu_durum.json
+          if [ -f "$D" ] && [ -n "$(git status --porcelain -- "$D")" ]; then
+            cp "$D" "$RUNNER_TEMP/uretim/toplu_durum.json"
+            echo "durum=1" >> "$GITHUB_OUTPUT"
           fi
 
       - uses: actions/upload-artifact@v6
-        if: always() && steps.yedek.outputs.adet != '' && steps.yedek.outputs.adet != '0'
+        if: always() && ((steps.yedek.outputs.adet != '' && steps.yedek.outputs.adet != '0') || steps.yedek.outputs.durum == '1')
         with:
-          name: hafta-${{ inputs.hafta }}-uretilen-ozetler
-          path: ${{ runner.temp }}/uretim/kaynak.tgz
+          name: ${{ inputs.hafta && format('hafta-{0}-uretilen-ozetler', inputs.hafta) || 'toplayici-sonuclari' }}
+          path: ${{ runner.temp }}/uretim/
           retention-days: 30
 
       # Üretim saatler sürebilir; bu sırada saatlik yayın botu ana dala yazmış olabilir. Bu yüzden her
       # denemede en güncel dal alınır, yeni dosyalar üstüne konur, türetilen sayfalar ve paylaşım kuyruğu
       # yeniden üretilir. Yayın denetimine takılan yeni özet ayıklanır, kalanlar yine yayımlanır.
+      # Yeni özet yoksa yalnız toplu istek kayıt dosyası kaydedilir.
       - name: Derle, denetle, kaydet ve yayına gönder
-        if: ${{ !cancelled() && steps.yedek.outputs.adet != '' && steps.yedek.outputs.adet != '0' }}
+        if: ${{ !cancelled() && ((steps.yedek.outputs.adet != '' && steps.yedek.outputs.adet != '0') || steps.yedek.outputs.durum == '1') }}
         env:
           HAFTA: ${{ inputs.hafta }}
+          YENI: ${{ steps.yedek.outputs.adet }}
           GH_TOKEN: ${{ github.token }}
           ANA_DAL: ${{ github.event.repository.default_branch }}
         run: |
           git config user.name "ozet-botu"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          Y="$RUNNER_TEMP/uretim"
+          D=araclar/veri/toplu_durum.json
+          if [ -n "$HAFTA" ]; then ONEK="$HAFTA. hafta"; else ONEK="Toplu istek sonuçları"; fi
+          # bu iş akışının çalıştırmaları sıraya girer; kayıt dosyasını yalnız onlar yazar, son hali bu çalıştırmanınkidir
+          kayit_koy() { if [ -f "$Y/toplu_durum.json" ]; then cp "$Y/toplu_durum.json" "$D"; fi; }
           for deneme in 1 2 3 4; do
             git fetch -q origin "$GITHUB_REF_NAME"
             git reset -q --hard "origin/$GITHUB_REF_NAME"
-            # bu sırada dala başka yoldan gelmiş dosyaların üzerine yazılmaz
-            tar xzf "$RUNNER_TEMP/uretim/kaynak.tgz" --skip-old-files
-            if ! python araclar/ozet_api_uret.py --yayin-hazirla "$RUNNER_TEMP/yeni.txt"; then
-              # ilgisiz bir denetim hatası: sayfalar derlenmez ama parası ödenmiş kaynak dosyalar kaybolmasın
-              git reset -q --hard "origin/$GITHUB_REF_NAME"
-              tar xzf "$RUNNER_TEMP/uretim/kaynak.tgz" --skip-old-files
-              git add araclar/ozetler araclar/gorseller araclar/sosyal
-              git commit -q -m "$HAFTA. hafta: üretilen özet kaynakları (sayfalar yayın denetimi düzelince derlenir)" || true
-              git push -q origin "HEAD:$GITHUB_REF_NAME" || true
-              echo "::error::Yayın denetimi bu çalıştırmanın özetleriyle ilgisiz bir nedenle başarısız; kaynak dosyalar kaydedildi, sayfalar derlenmedi."
-              exit 1
+            kayit_koy
+            ADET=0
+            if [ "${YENI:-0}" != "0" ]; then
+              # bu sırada dala başka yoldan gelmiş dosyaların üzerine yazılmaz
+              tar xzf "$Y/kaynak.tgz" --skip-old-files
+              if ! python araclar/ozet_api_uret.py --yayin-hazirla "$RUNNER_TEMP/yeni.txt"; then
+                # ilgisiz bir denetim hatası: sayfalar derlenmez ama parası ödenmiş kaynak dosyalar kaybolmasın
+                git reset -q --hard "origin/$GITHUB_REF_NAME"
+                tar xzf "$Y/kaynak.tgz" --skip-old-files
+                kayit_koy
+                git add araclar/ozetler araclar/gorseller araclar/sosyal "$D"
+                git commit -q -m "$ONEK: üretilen özet kaynakları (sayfalar yayın denetimi düzelince derlenir)" || true
+                git push -q origin "HEAD:$GITHUB_REF_NAME" || true
+                echo "::error::Yayın denetimi bu çalıştırmanın özetleriyle ilgisiz bir nedenle başarısız; kaynak dosyalar kaydedildi, sayfalar derlenmedi."
+                exit 1
+              fi
+              python araclar/sosyal_gorsel.py --kuyruk "$(python araclar/ozet_api_uret.py --kuyruk-baslangici)" \
+                || echo "::warning::Sosyal medya kartları çizilemedi ya da kuyruğa eklenemedi; özetler yine yayımlanıyor."
+              ADET=$(git status --porcelain --untracked-files=all -- araclar/ozetler | grep -c '^??' || true)
             fi
-            python araclar/sosyal_gorsel.py --kuyruk "$(python araclar/ozet_api_uret.py --kuyruk-baslangici)" \
-              || echo "::warning::Sosyal medya kartları çizilemedi ya da kuyruğa eklenemedi; özetler yine yayımlanıyor."
-            ADET=$(git status --porcelain --untracked-files=all -- araclar/ozetler | grep -c '^??' || true)
-            if [ "$ADET" = "0" ]; then echo "::error::Yayımlanacak özet kalmadı (hepsi denetime takıldı)."; exit 1; fi
-            git add araclar/ozetler araclar/gorseller araclar/sosyal araclar/veri public sosyal
-            git commit -q -m "$HAFTA. hafta: $ADET konu özeti Claude API ile üretildi"
+            if [ "$ADET" != "0" ]; then
+              git add araclar/ozetler araclar/gorseller araclar/sosyal araclar/veri public sosyal
+              git commit -q -m "$ONEK: $ADET konu özeti Claude API ile üretildi"
+            else
+              git add "$D"
+              if git diff --cached --quiet; then
+                [ "${YENI:-0}" != "0" ] && { echo "::error::Yayımlanacak özet kalmadı (hepsi denetime takıldı)."; exit 1; }
+                echo "Kaydedilecek değişiklik yok."; exit 0
+              fi
+              git commit -q -m "Toplu istek kayıtları güncellendi"
+            fi
             if git push -q origin "HEAD:$GITHUB_REF_NAME"; then
-              if [ "$GITHUB_REF_NAME" = "$ANA_DAL" ]; then
+              if [ "$ADET" = "0" ]; then
+                echo "Toplu istek kayıtları kaydedildi." | tee -a "$GITHUB_STEP_SUMMARY"
+                [ "${YENI:-0}" != "0" ] && { echo "::error::Yayımlanacak özet kalmadı (hepsi denetime takıldı)."; exit 1; }
+                exit 0
+              fi
+              if [ "$GITHUB_EVENT_NAME" = "schedule" ] || [ "$GITHUB_REF_NAME" = "$ANA_DAL" ]; then
                 echo "$ADET özet kaydedildi ve yayına gönderildi." | tee -a "$GITHUB_STEP_SUMMARY"
                 # GITHUB_TOKEN ile yapılan push başka iş akışını tetiklemez; yayını elle başlat
                 gh workflow run guncelle.yml --ref "$GITHUB_REF_NAME"
@@ -173,7 +210,7 @@ jobs:
             echo "Gönderim reddedildi (dal bu arada ilerlemiş); $deneme. deneme, yeniden derleniyor."
             sleep $((deneme * 15))
           done
-          echo "::error::Gönderilemedi. Üretilen özetler bu çalıştırmanın Artifacts bölümünde duruyor."
+          echo "::error::Gönderilemedi. Üretilen dosyalar ve toplu istek kayıtları bu çalıştırmanın Artifacts bölümünde duruyor."
           exit 1
 
       - name: Hatalı, bekleyen ya da ayıklanan ders varsa bildir
@@ -182,10 +219,14 @@ jobs:
           KOD: ${{ steps.uret.outputs.kod }}
         run: |
           if [ -s "$RUNNER_TEMP/ayiklanan.txt" ]; then
-            echo "::warning::Yayın denetimine takıldığı için ayıklanan özetler: $(paste -sd, "$RUNNER_TEMP/ayiklanan.txt"). Yeniden üretmek için aynı haftayı 'kurtarma: hayir' ile ve yalnız bu derslerle çalıştırın."
+            echo "::warning::Yayın denetimine takıldığı için ayıklanan özetler: $(paste -sd, "$RUNNER_TEMP/ayiklanan.txt"). Yeniden üretmek için aynı haftayı yalnız bu derslerle yeniden çalıştırın."
             exit 1
           fi
           if [ "$KOD" != "0" ]; then
-            echo "::warning::Bazı dersler üretilemedi ya da bütçe/süre doldu; ayrıntı özet sayfasında. Aynı haftayı yeniden çalıştırın, kalanlar üretilir."
+            if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
+              echo "::warning::Toplayıcı tamamlanamadı (ör. kredi bitti ya da anahtar geçersiz); ayrıntı özet sayfasında."
+            else
+              echo "::warning::Bazı dersler üretilemedi ya da bütçe/süre doldu; ayrıntı özet sayfasında. Aynı haftayı yeniden çalıştırın, kalanlar üretilir."
+            fi
             exit 1
           fi

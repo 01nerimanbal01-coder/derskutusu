@@ -9,10 +9,12 @@ bir kez daha dener, sonra:
   - araclar/sosyal/bilgi-<sinif>-<kısa ders>-<hafta>.json   sosyal medya bilgi kartı
 dosyalarını üretir. Var olan özetler atlanır; yarıda kalan bir çalıştırma aynı komutla sürdürülür.
 
-İki kip:
-  --toplu  Message Batches API: aynı model, yarı fiyat; sonuçlar genelde bir saat içinde gelir.
-           Önceki bir çalıştırma yarıda kaldıysa son 48 saatteki toplu isteklerin sonuçları
-           yeniden ödenmeden toplanır.
+Kipler:
+  --toplu  Message Batches API: aynı model, yarı fiyat; sonuç dakikalar ile 24 saat arasında gelir.
+           Gönderilen isteklerin içeriği araclar/veri/toplu_durum.json'da tutulur; süren istekteki
+           dersler yeniden gönderilmez, biten isteklerin sonuçları bir kez ve ödenmeden yazılır.
+  --topla  Otomatik toplayıcı (iş akışı iki saatte bir): biten toplu isteklerin sonuçlarını yazar,
+           denetime takılan ilk tur sonuçları için düzeltme turunu gönderir.
   (yok)    Anlık akış: istekler hemen yanıtlanır, reddedilen istek sunucuda yedek modele düşer.
 
 Kaynaklar: public/veri/gunluk-plan/<plan>.json (haftanın ünite/konu/çıktıları) ve önceki haftaların
@@ -856,8 +858,21 @@ def yanit_metni(yanit):
     return ''.join(b.text for b in yanit.content if b.type == 'text')
 
 
-def denetle_ve_kaydet(metin, kimlik, ctx):
+def tarih_al(ctx, hafta):
+    """Haftanın (etiket, yayın tarihi) bilgisi; önbellekli. Planlarda yoksa None."""
+    if hafta not in ctx['tarihler']:
+        try:
+            ctx['tarihler'][hafta] = hafta_tarihi(hafta, ozet_kimlikleri())
+        except SystemExit:
+            ctx['tarihler'][hafta] = None
+    return ctx['tarihler'][hafta]
+
+
+def denetle_ve_kaydet(metin, kimlik, hafta, ctx):
     """(sorunlar, kb). sorunlar boşsa dosyalar yazıldı."""
+    t = tarih_al(ctx, hafta)
+    if not t:
+        return [f'{hafta}. hafta planlarda yok'], 0
     try:
         d = json_ayikla(metin)
     except (ValueError, json.JSONDecodeError) as exc:
@@ -865,7 +880,7 @@ def denetle_ve_kaydet(metin, kimlik, ctx):
     sorunlar = dogrula(d, ctx['e'], ctx['sayfa'])
     if sorunlar:
         return sorunlar, 0
-    return [], kaydet(d, kimlik, ctx['hafta'], ctx['tarih'], ctx['yayin'], ctx['dersler'])
+    return [], kaydet(d, kimlik, hafta, t[0], t[1], ctx['dersler'])
 
 
 def duzeltme_mesajlari(ilk_mesaj, metin, sorunlar):
@@ -876,7 +891,8 @@ def duzeltme_mesajlari(ilk_mesaj, metin, sorunlar):
 # --- anlık kip
 
 def tek_ozet(client, args, kimlik, ctx, sayac, butce_izni):
-    mesaj = {'role': 'user', 'content': istek_metni(kimlik, args.hafta, ctx['tarih'], ctx['yayin'], ctx['dersler'])}
+    tarih, yayin = tarih_al(ctx, args.hafta)
+    mesaj = {'role': 'user', 'content': istek_metni(kimlik, args.hafta, tarih, yayin, ctx['dersler'])}
     mesajlar = [mesaj]
     for deneme in (1, 2):
         if deneme == 2 and not butce_izni():
@@ -893,7 +909,7 @@ def tek_ozet(client, args, kimlik, ctx, sayac, butce_izni):
             yanit = _api(cagri)
             sayac.ekle(yanit.usage, getattr(yanit, 'model', None))
             metin = yanit_metni(yanit)
-        sorunlar, kb = denetle_ve_kaydet(metin, kimlik, ctx)
+        sorunlar, kb = denetle_ve_kaydet(metin, kimlik, args.hafta, ctx)
         if not sorunlar:
             return 'tamam', f'{kb} KB' + (f', 2. denemede (ilk sorun: {ilk_sorun})' if deneme == 2 else '')
         ilk_sorun = '; '.join(sorunlar[:3])
@@ -962,14 +978,53 @@ class Durdu(Exception):
 
 
 # --- toplu kip (Message Batches API: yarı fiyat)
+#
+# Toplu isteğin sonucu birkaç dakikadan 24 saate kadar sürebilir. Bu yüzden:
+#  - Gönderilen her toplu isteğin içerdiği istekler araclar/veri/toplu_durum.json'a yazılır ("gonderilen");
+#    sonuçları işlenmiş istekler "toplanan" olarak işaretlenir ve bir daha işlenmez.
+#  - Süren ve içeriği bilinen bir istekteki dersler yeniden gönderilmez; diğer dersler hemen gönderilebilir.
+#  - İçeriği bilinmeyen süren bir istek varsa (durum dosyası kaydedilemeden yarıda kalmış çalıştırma) iki kez
+#    ödememek için yeni istek gönderilmez.
+#  - İş akışı iki saatte bir --topla ile kendiliğinden çalışır: biten isteklerin sonuçlarını yazar, denetime
+#    takılan ilk tur sonuçları için düzeltme turunu gönderir.
+
+DURUM = ARACLAR / 'veri' / 'toplu_durum.json'
+KURTARMA_GUN = 28      # toplu istek sonuçları 29 gün indirilebilir
+_DURUM = None
+
+
+def durum():
+    global _DURUM
+    if _DURUM is None:
+        try:
+            _DURUM = json.loads(DURUM.read_text(encoding='utf-8'))
+        except (FileNotFoundError, ValueError):
+            _DURUM = {}
+        _DURUM.setdefault('toplanan', [])
+        _DURUM.setdefault('gonderilen', {})
+    return _DURUM
+
+
+def durum_kaydet():
+    d = durum()
+    sinir = (datetime.now(timezone.utc) - timedelta(days=KURTARMA_GUN + 2)).isoformat(timespec='seconds')
+    d['gonderilen'] = {k: v for k, v in d['gonderilen'].items() if v.get('zaman', '') >= sinir}
+    gorulen, toplanan = set(), []
+    for k in d['toplanan']:
+        if k not in gorulen:
+            gorulen.add(k)
+            toplanan.append(k)
+    d['toplanan'] = toplanan[-500:]
+    DURUM.write_text(json.dumps(d, ensure_ascii=False, indent=1, sort_keys=True) + '\n', encoding='utf-8')
+
 
 def _ozel_kimlik(hafta, kimlik, tur):
     return f'h{hafta}-{kimlik}-{tur}'      # en çok 64 karakter, [a-zA-Z0-9_-]
 
 
-def _ozel_coz(ozel, hafta):
-    m = re.fullmatch(rf'h{hafta}-(\d+-[a-z0-9-]+)-(i|d)', ozel)
-    return (m.group(1), m.group(2)) if m else (None, None)
+def _ozel_coz(ozel):
+    m = re.fullmatch(r'h(\d+)-(\d+-[a-z0-9-]+?)-(i|d)', ozel or '')
+    return (int(m.group(1)), m.group(2), m.group(3)) if m else (None, None, None)
 
 
 def toplu_bekle(client, kimlik, bitis, etiket):
@@ -978,149 +1033,220 @@ def toplu_bekle(client, kimlik, bitis, etiket):
         if b.processing_status == 'ended':
             return b
         if time.time() > bitis:
-            print(f'  {etiket}: süre doldu, toplu istek {kimlik} sürüyor; aynı hafta {KURTARMA_GUN} gün içinde yeniden çalıştırılınca sonuçları ödenmeden toplanır.', flush=True)
+            print(f'  {etiket}: süre doldu, toplu istek {kimlik} sürüyor; sonuçları otomatik toplayıcı yazar (ödenmeden).', flush=True)
             return None
         c = b.request_counts
         print(f'  {etiket}: işleniyor {c.processing}, biten {c.succeeded + c.errored + c.canceled + c.expired}', flush=True)
         time.sleep(60)
 
 
-def toplu_sonuclari(client, batch_id, hafta, ctx, sayac, say=True, istenen=None):
-    """Sonuçları işler. Döndürür: {kimlik: ('tamam'|'duzelt'|'hata', bilgi)}; 'duzelt' bilgisi (metin, sorunlar).
-    istenen verilirse yalnız o dersler işlenir."""
-    cikti = {}
-    for r in _api(lambda: client.messages.batches.results(batch_id)):
-        kimlik, tur = _ozel_coz(r.custom_id, hafta)
-        if not kimlik or (istenen is not None and kimlik not in istenen):
-            continue
-        if cikti.get(kimlik, ('',))[0] == 'tamam':      # aynı toplu istekte i ve d birlikte olamaz; yine de koru
-            continue
-        if (OZETLER / f'{kimlik}-{hafta}.json').exists() and YAZ['ozet'] == OZETLER:
-            cikti[kimlik] = ('tamam', 'zaten var')
-            continue
-        if r.result.type != 'succeeded':
-            hata = getattr(getattr(r.result, 'error', None), 'error', None)
-            cikti[kimlik] = ('hata', f'toplu istek sonucu: {r.result.type} {getattr(hata, "message", "") or ""}'.strip())
-            continue
-        yanit = r.result.message
-        if say:
-            sayac.ekle(yanit.usage, getattr(yanit, 'model', None), toplu=True)
-        try:
-            metin = yanit_metni(yanit)
-        except RuntimeError as exc:
-            cikti[kimlik] = ('hata', str(exc))
-            continue
-        sorunlar, kb = denetle_ve_kaydet(metin, kimlik, ctx)
-        if not sorunlar:
-            cikti[kimlik] = ('tamam', f'{kb} KB' + (' (düzeltme turunda)' if tur == 'd' else ''))
-        elif tur == 'i':
-            cikti[kimlik] = ('duzelt', (metin, sorunlar))
-        else:
-            cikti[kimlik] = ('hata', '; '.join(sorunlar[:8]))
-    return cikti
+class Butce:
+    """Yeni gönderimler için tahmini harcama izni (toplanan sonuçların bedeli önceki gönderimlerde onaylanmıştı)."""
+
+    def __init__(self, dolar, istek_basi):
+        self.kalan, self.istek_basi = dolar, istek_basi
+
+    def al(self, adet):
+        sigan = max(0, min(adet, int(self.kalan // self.istek_basi)))
+        self.kalan -= sigan * self.istek_basi
+        return sigan
 
 
-KURTARMA_GUN = 28      # toplu istek sonuçları 29 gün indirilebilir
+def toplu_gonder(client, istekler, etiket):
+    b = _api(lambda: client.messages.batches.create(requests=istekler))
+    durum()['gonderilen'][b.id] = {'zaman': datetime.now(timezone.utc).isoformat(timespec='seconds'),
+                                   'istekler': [r['custom_id'] for r in istekler]}
+    durum_kaydet()
+    print(f'{etiket}: {len(istekler)} istek gönderildi ({b.id})', flush=True)
+    return b.id
 
 
-def onceki_toplulari_topla(client, args, ctx, sayac, bitis, istenen):
-    """Son 28 gündeki toplu istekler: süren varsa beklenir, bitenlerin bu haftaya ve istenen derslere ait sonuçları
-    ödenmeden yazılır (önceki çalıştırma yarıda kaldıysa ya da iptal edildiyse aynı özete yeniden para ödenmez).
-    Döndürür: (toplanan {kimlik: bilgi}, bitmeyen: süre içinde bitmeyen toplu istek var mı)."""
+def _istek(args, custom_id, mesajlar):
+    from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
+    from anthropic.types.messages.batch_create_params import Request
+    return Request(custom_id=custom_id, params=MessageCreateParamsNonStreaming(**istek_parametreleri(args, mesajlar, True)))
+
+
+def ilk_mesaj(kimlik, hafta, ctx):
+    t = tarih_al(ctx, hafta)
+    if not t:
+        raise ValueError(f'{hafta}. hafta planlarda yok')
+    return {'role': 'user', 'content': istek_metni(kimlik, hafta, t[0], t[1], ctx['dersler'])}
+
+
+def sonuc_isle(r, hafta, kimlik, tur, ctx, sayac):
+    """Tek toplu istek sonucu → ('tamam', bilgi) | ('duzelt', (metin, sorunlar)) | ('hata', bilgi)."""
+    if r.result.type != 'succeeded':
+        hata = getattr(getattr(r.result, 'error', None), 'error', None)
+        return 'hata', f'toplu istek sonucu: {r.result.type} {getattr(hata, "message", "") or ""}'.strip()
+    yanit = r.result.message
+    sayac.ekle(yanit.usage, getattr(yanit, 'model', None), toplu=True)
+    try:
+        metin = yanit_metni(yanit)
+    except RuntimeError as exc:
+        return 'hata', str(exc)
+    sorunlar, kb = denetle_ve_kaydet(metin, kimlik, hafta, ctx)
+    if not sorunlar:
+        return 'tamam', f'{kb} KB' + (' (düzeltme turunda)' if tur == 'd' else '')
+    return ('duzelt', (metin, sorunlar)) if tur == 'i' else ('hata', '; '.join(sorunlar[:8]))
+
+
+def topla(client, args, ctx, sayac, bitis, butce, bekle_bilinmeyen, duzelt=True):
+    """Son 28 gündeki toplu istekleri işler (bütün haftalar):
+      - bitmiş ve toplanmamış istek: geçerli sonuçlar ödenmeden yazılır; denetime takılan ilk tur sonuçları
+        duzelt=True ise düzeltme turuna gönderilir; istek 'toplanan' olarak işaretlenir;
+      - süren ve içeriği bilinen istek: dersleri 'bekleyen' sayılır;
+      - süren ve içeriği bilinmeyen istek: bekle_bilinmeyen ise süre sonuna dek beklenir, yoksa 'bilinmeyen'.
+    Döndürür: {'yazilan': [(h, k, bilgi)], 'hata': [(h, k, bilgi)], 'bekleyen': {(h, k)}, 'bilinmeyen': bool}"""
+    d = durum()
     sinir = datetime.now(timezone.utc) - timedelta(days=KURTARMA_GUN)
-    toplanan, bitmeyen = {}, False
-    for b in _api(lambda: client.messages.batches.list(limit=50)):
+    t = {'yazilan': [], 'hata': [], 'bekleyen': set(), 'bilinmeyen': False}
+    duzeltilecek, d_denendi = {}, set()
+    for b in _api(lambda: client.messages.batches.list(limit=50)):      # en yeni önce
         if b.created_at < sinir:
             break
+        if b.id in d['toplanan']:
+            continue
         if b.processing_status in ('in_progress', 'canceling'):
-            print(f'Önceki toplu istek {b.id} sürüyor; bitmesi bekleniyor (sonuçları ödenmeden kullanılacak).', flush=True)
-            b2 = toplu_bekle(client, b.id, bitis, 'önceki toplu istek')
-            if b2 is None:
-                bitmeyen = True
+            bilinen = d['gonderilen'].get(b.id)
+            if bilinen:
+                hk = {_ozel_coz(cid)[:2] for cid in bilinen['istekler']}
+                if b.processing_status == 'in_progress' and all(k and (OZETLER / f'{k}-{h}.json').exists() for h, k in hk):
+                    # dersleri başka bir istekten yazıldı (ör. aynı derslerin ikinci isteği): işlenmemiş istekler ödenmesin
+                    try:
+                        _api(lambda: client.messages.batches.cancel(b.id))
+                        print(f'  {b.id}: içindeki dersler zaten yazılmış; toplu istek iptal edildi.', flush=True)
+                    except Exception as exc:
+                        if isinstance(exc, SystemExit):
+                            raise
+                        print(f'  {b.id} iptal edilemedi: {type(exc).__name__}: {exc}', flush=True)
+                    continue
+                for h, k in hk:
+                    if k:
+                        t['bekleyen'].add((h, k))
                 continue
-            b = b2
-        if b.processing_status != 'ended' or not getattr(b, 'results_url', None):
+            if not bekle_bilinmeyen:
+                t['bilinmeyen'] = True
+                continue
+            print(f'İçeriği kayıtlı olmayan toplu istek {b.id} sürüyor; bitmesi bekleniyor (iki kez ödememek için).', flush=True)
+            b = toplu_bekle(client, b.id, bitis, 'önceki toplu istek')
+            if b is None:
+                t['bilinmeyen'] = True
+                continue
+        if b.processing_status != 'ended':
             continue
         try:
-            sonuclar = toplu_sonuclari(client, b.id, args.hafta, ctx, sayac, say=False, istenen=istenen - set(toplanan))
-        except Exception as exc:      # süresi geçmiş sonuç dosyası vb.
+            for r in _api(lambda: client.messages.batches.results(b.id)):
+                h, k, tur = _ozel_coz(r.custom_id)
+                if not k or (OZETLER / f'{k}-{h}.json').exists():
+                    continue
+                sonuc, bilgi = sonuc_isle(r, h, k, tur, ctx, sayac)
+                if sonuc == 'tamam':
+                    duzeltilecek.pop((h, k), None)
+                    t['yazilan'].append((h, k, bilgi))
+                    print(f'  [tamam] {k}-{h}: {bilgi} ({b.id})', flush=True)
+                elif sonuc == 'duzelt' and (h, k) not in d_denendi:
+                    duzeltilecek.setdefault((h, k), bilgi)
+                else:
+                    if tur == 'd':
+                        d_denendi.add((h, k))
+                        duzeltilecek.pop((h, k), None)
+                    bilgi = '; '.join(bilgi[1][:8]) if isinstance(bilgi, tuple) else bilgi
+                    t['hata'].append((h, k, bilgi))
+                    print(f'  [hata] {k}-{h}: {bilgi} ({b.id})', flush=True)
+        except Exception as exc:      # süresi geçmiş sonuç dosyası, ağ hatası: sonra yeniden denenir
+            if isinstance(exc, SystemExit):
+                raise
             print(f'  {b.id} sonuçları okunamadı: {type(exc).__name__}: {exc}', flush=True)
             continue
-        for k, (durum, bilgi) in sonuclar.items():
-            if durum == 'tamam' and bilgi != 'zaten var':
-                toplanan[k] = bilgi
-                print(f'  [tamam] {k}-{args.hafta}: {bilgi} (önceki toplu istekten {b.id}, yeniden ödenmedi)', flush=True)
-    return toplanan, bitmeyen
+        d['toplanan'].append(b.id)
+        d['gonderilen'].pop(b.id, None)
+        durum_kaydet()
+    # Düzeltme turu: içeriği bilinmeyen süren istek varsa gönderilmez (aynısı orada olabilir).
+    duzeltilecek = {hk: v for hk, v in duzeltilecek.items() if hk not in t['bekleyen'] and not (OZETLER / f'{hk[1]}-{hk[0]}.json').exists()}
+    if duzeltilecek and (not duzelt or t['bilinmeyen'] or time.time() >= bitis):
+        neden = 'düzeltme bu kipte yapılmaz' if not duzelt else 'içeriği bilinmeyen toplu istek sürüyor' if t['bilinmeyen'] else 'süre doldu'
+        for (h, k), (_, sorunlar) in duzeltilecek.items():
+            t['hata'].append((h, k, f'{neden}; ilk tur sorunları: {"; ".join(sorunlar[:3])}'))
+            print(f'  [hata] {k}-{h}: {neden}', flush=True)
+        duzeltilecek = {}
+    if duzeltilecek:
+        sigan = butce.al(len(duzeltilecek))
+        istekler = []
+        for i, ((h, k), (metin, sorunlar)) in enumerate(sorted(duzeltilecek.items())):
+            if i >= sigan:
+                t['hata'].append((h, k, f'bütçe doldu; düzeltme gönderilmedi ({"; ".join(sorunlar[:3])})'))
+                print(f'  [hata] {k}-{h}: bütçe doldu; düzeltme gönderilmedi', flush=True)
+                continue
+            try:
+                istekler.append(_istek(args, _ozel_kimlik(h, k, 'd'), duzeltme_mesajlari(ilk_mesaj(k, h, ctx), metin, sorunlar)))
+            except ValueError as exc:
+                t['hata'].append((h, k, str(exc)))
+                continue
+            print(f'  [düzeltilecek] {k}-{h}: {"; ".join(sorunlar[:3])}', flush=True)
+        if istekler:
+            toplu_gonder(client, istekler, 'Düzeltme turu')
+            for r in istekler:
+                h, k, _ = _ozel_coz(r['custom_id'])
+                t['bekleyen'].add((h, k))
+    return t
 
 
 def toplu_uret(client, args, bekleyen, ctx, sayac, bitis):
-    from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
-    from anthropic.types.messages.batch_create_params import Request
-    sonuc = {'tamam': [], 'hata': []}
-    if time.time() >= bitis:
-        print('Süre doldu; yeni toplu istek gönderilmedi.', flush=True)
-        return sonuc, bekleyen
-    # bütçe: ilk tur + düzeltme turunun beklenen payı (deneme: 3 istekte 1 düzeltme)
-    tahmin = sayac.istek_basi(toplu=True) * 1.35
-    sigan = max(0, int((args.butce - sayac.maliyet()) // tahmin))
-    gonder, kalan = bekleyen[:sigan], bekleyen[sigan:]
-    if kalan:
-        print(f'Bütçe ({args.butce:.0f} $) tahminen {len(gonder)} derse yetiyor; {len(kalan)} ders sonraki çalıştırmaya kaldı.', flush=True)
-    if not gonder:
-        return sonuc, kalan
-    ilk = {}
-    for k in list(gonder):
-        try:
-            ilk[k] = {'role': 'user', 'content': istek_metni(k, args.hafta, ctx['tarih'], ctx['yayin'], ctx['dersler'])}
-        except ValueError as exc:     # ör. önceki hafta özeti yok: yalnız bu ders hata sayılır
-            gonder.remove(k)
-            sonuc['hata'].append(k)
-            print(f'  [hata] {k}-{args.hafta}: {exc}', flush=True)
-    if not gonder:
-        return sonuc, kalan
-    if args.kuru:
-        for k in gonder:
-            durum, not_ = tek_ozet(None, args, k, ctx, sayac, lambda: True)
-            sonuc[durum].append(k)
-            print(f'  [{durum}] {k}-{args.hafta}: {not_} (prova)', flush=True)
-        return sonuc, kalan
+    """Elle başlatılan çalıştırma: önce bütün toplu isteklerin sonuçları toplanır (ödenmeden), sonra bu haftanın
+    eksik ve hiçbir süren istekte olmayan dersleri gönderilir, süre sonuna dek sonuçları beklenir.
+    Döndürür: (sonuc {'tamam', 'hata', 'bekliyor'}, kalan)."""
+    W = args.hafta
+    sonuc = {'tamam': [], 'hata': [], 'bekliyor': []}
+    butce = Butce(args.butce, sayac.istek_basi(toplu=True) * 1.0)
 
-    def gonder_bekle(istekler, etiket):
-        """Toplu isteği gönderir ve bitmesini bekler; biterse kimliğini, süre dolarsa None döndürür."""
-        b = _api(lambda: client.messages.batches.create(requests=istekler))
-        print(f'{etiket}: {len(istekler)} istek gönderildi ({b.id})', flush=True)
-        return b.id if toplu_bekle(client, b.id, bitis, etiket) is not None else None
-
-    b = gonder_bekle([Request(custom_id=_ozel_kimlik(args.hafta, k, 'i'),
-                              params=MessageCreateParamsNonStreaming(**istek_parametreleri(args, [ilk[k]], True))) for k in gonder], '1. tur')
-    if b is None:
-        return sonuc, kalan + [k for k in gonder]
-    ilk_tur = toplu_sonuclari(client, b, args.hafta, ctx, sayac)
-    duzelt = {}
-    for k in gonder:
-        durum, bilgi = ilk_tur.get(k, ('hata', 'sonuç yok'))
-        if durum == 'duzelt':
-            duzelt[k] = bilgi
-            print(f'  [düzeltilecek] {k}-{args.hafta}: {"; ".join(bilgi[1][:3])}', flush=True)
-        else:
-            sonuc[durum].append(k)
-            print(f'  [{durum}] {k}-{args.hafta}: {bilgi}', flush=True)
-    if duzelt:
-        if sayac.maliyet() + len(duzelt) * sayac.istek_basi(toplu=True) > args.butce * 1.1:
-            for k in duzelt:
+    def isle(t):
+        for h, k, _ in t['yazilan']:
+            if h == W and k in bekleyen and k not in sonuc['tamam']:
+                sonuc['tamam'].append(k)
+        for h, k, _ in t['hata']:
+            if h == W and k in bekleyen and k not in sonuc['hata']:
                 sonuc['hata'].append(k)
-                print(f'  [hata] {k}-{args.hafta}: bütçe doldu; düzeltme turu yapılmadı', flush=True)
-        else:
-            b = gonder_bekle([Request(custom_id=_ozel_kimlik(args.hafta, k, 'd'),
-                                      params=MessageCreateParamsNonStreaming(**istek_parametreleri(args, duzeltme_mesajlari(ilk[k], *duzelt[k]), True)))
-                              for k in duzelt], '2. tur (düzeltme)')
-            ikinci = toplu_sonuclari(client, b, args.hafta, ctx, sayac) if b else {}
-            for k in duzelt:
-                durum, bilgi = ikinci.get(k, ('hata', 'düzeltme turu sonucu yok (süre doldu ya da istek hata verdi)'))
-                durum = 'hata' if durum == 'duzelt' else durum
-                bilgi = '; '.join(bilgi[1][:8]) if isinstance(bilgi, tuple) else bilgi
-                sonuc[durum].append(k)
-                print(f'  [{durum}] {k}-{args.hafta}: {bilgi}', flush=True)
+
+    t = topla(client, args, ctx, sayac, bitis, butce, bekle_bilinmeyen=True)
+    isle(t)
+    if t['bilinmeyen']:
+        raise SystemExit('İçeriği kayıtlı olmayan bir toplu istek süre içinde bitmedi; aynı derslere iki kez ödememek için yeni '
+                         'istek gönderilmedi. Otomatik toplayıcı sonuçları yazınca aynı hafta yeniden çalıştırılabilir.')
+    yeni = [k for k in bekleyen if not (OZETLER / f'{k}-{W}.json').exists() and (W, k) not in t['bekleyen'] and k not in sonuc['hata']]
+    kalan = []
+    if yeni and time.time() >= bitis:
+        print('Süre doldu; yeni toplu istek gönderilmedi.', flush=True)
+        return sonuc, yeni
+    if yeni:
+        sigan = butce.al(len(yeni))
+        gonder, kalan = yeni[:sigan], yeni[sigan:]
+        if kalan:
+            print(f'Bütçe ({args.butce:.0f} $) tahminen {len(gonder)} derse yetiyor; {len(kalan)} ders sonraki çalıştırmaya kaldı.', flush=True)
+        istekler = []
+        for k in gonder:
+            try:
+                istekler.append(_istek(args, _ozel_kimlik(W, k, 'i'), [ilk_mesaj(k, W, ctx)]))
+            except ValueError as exc:     # ör. önceki hafta özeti yok: yalnız bu ders hata sayılır
+                sonuc['hata'].append(k)
+                print(f'  [hata] {k}-{W}: {exc}', flush=True)
+        if istekler:
+            toplu_gonder(client, istekler, '1. tur')
+    # Bu haftanın bekleyen dersleri bitene ya da süre dolana dek: her dakika biten istekler işlenir, gerekirse düzeltme
+    # turu gönderilir. Süre dolunca kalanları iki saatte bir çalışan otomatik toplayıcı yazar.
+    son_rapor = 0
+    while True:
+        bekliyor = [k for k in bekleyen if not (OZETLER / f'{k}-{W}.json').exists() and k not in sonuc['hata'] and k not in kalan]
+        if not bekliyor or time.time() >= bitis:
+            break
+        if time.time() - son_rapor > 300:
+            print(f'  {len(bekliyor)} ders toplu istekte bekliyor…', flush=True)
+            son_rapor = time.time()
+        time.sleep(60)
+        t = topla(client, args, ctx, sayac, bitis, butce, bekle_bilinmeyen=False)
+        isle(t)
+    sonuc['bekliyor'] = [k for k in bekleyen if not (OZETLER / f'{k}-{W}.json').exists()
+                         and k not in sonuc['hata'] and k not in kalan]
     return sonuc, kalan
 
 
@@ -1130,12 +1256,13 @@ def main():
     ap.add_argument('--dersler', help='virgülle ayrılmış sınıf-ders kimlikleri (boşsa hepsi)')
     ap.add_argument('--model', default=VARSAYILAN_MODEL, choices=sorted(ISTEK_TAHMINI), help=f'varsayılan {VARSAYILAN_MODEL}; daha ucuz: claude-sonnet-5-5')
     ap.add_argument('--caba', default='high', choices=['low', 'medium', 'high', 'xhigh'], help='düşünme derinliği (output_config.effort)')
-    ap.add_argument('--toplu', action='store_true', help='Message Batches API ile yarı fiyatına üret (sonuç genelde bir saat içinde)')
+    ap.add_argument('--toplu', action='store_true', help='Message Batches API ile yarı fiyatına üret (sonuç dakikalar ile 24 saat arası)')
+    ap.add_argument('--topla', action='store_true', help='yalnız biten toplu isteklerin sonuçlarını yaz ve gerekirse düzeltme turunu gönder (otomatik toplayıcı)')
     ap.add_argument('--paralel', type=int, default=4, help='anlık kipte aynı anda açık istek sayısı (429 alırsanız düşürün)')
-    ap.add_argument('--butce', type=float, default=60.0, help='USD; tahmini harcama + açık işlerin payı bunu aşacaksa yeni istek açılmaz')
-    ap.add_argument('--sure-dk', type=float, default=0, help='bu kadar dakika sonra yeni istek açma (0 = sınırsız)')
+    ap.add_argument('--butce', type=float, default=60.0, help='USD; yeni istekler için tahmini harcama sınırı')
+    ap.add_argument('--sure-dk', type=float, default=0, help='bu kadar dakika sonra yeni istek açma ve beklemeyi bırak (0 = sınırsız)')
     ap.add_argument('--kuru', action='store_true', help="API çağırmadan prova: önceki haftayı kopyalar, geçici klasöre yazar")
-    ap.add_argument('--kurtarma-yok', action='store_true', help='önceki toplu isteklerin sonuçlarını kullanma (bilerek silinen özeti yeniden üretmek için)')
+    ap.add_argument('--kurtarma-yok', action='store_true', help='önceki toplu isteklere bakma (bilerek silinen özeti yeniden üretmek için)')
     ap.add_argument('--kuyruk-baslangici', action='store_true', help='sosyal kuyruğa eklenecek ilk saati yazdır ve çık')
     ap.add_argument('--yayin-hazirla', metavar='LISTE', help='sayfaları derle ve denetle; listedeki yeni özetlerden denetime takılanları ayıkla')
     args = ap.parse_args()
@@ -1145,15 +1272,36 @@ def main():
         return
     if args.yayin_hazirla:
         sys.exit(yayin_hazirla(args.yayin_hazirla))
-    if not args.hafta:
+    if not args.hafta and not args.topla:
         ap.error('--hafta gerekli')
 
     dersler = dersler_sozlugu()
+    ctx = {'e': _yukle('ozet_uret_api', ARACLAR / 'ozet_uret.py').e, 'sayfa': SayfaDenetci(dersler),
+           'dersler': dersler, 'tarihler': {}}
+    sayac = Sayac(args.model)
+    basla = time.time()
+    bitis = basla + args.sure_dk * 60 if args.sure_dk else float('inf')
+
+    if args.topla:
+        import anthropic
+        client = anthropic.Anthropic(max_retries=6)
+        try:
+            t = topla(client, args, ctx, sayac, bitis, Butce(args.butce, sayac.istek_basi(toplu=True)), bekle_bilinmeyen=False)
+        except SystemExit as exc:
+            print(f'DURDU: {exc}')
+            sys.exit(1)
+        print(f'\nToplayıcı: {len(t["yazilan"])} özet yazıldı, {len(t["hata"])} hata, {len(t["bekleyen"])} ders toplu istekte bekliyor'
+              + (' · içeriği kayıtlı olmayan süren toplu istek var' if t['bilinmeyen'] else ''))
+        print(f'Toplanan sonuçların maliyeti: {sayac}')
+        for h, k, bilgi in t['hata']:
+            print(f'Hatalı: {k}-{h}: {bilgi} (hafta yeniden çalıştırılınca tekrar üretilir)')
+        return
+
     kimlikler = [k.strip() for k in args.dersler.split(',') if k.strip()] if args.dersler else ozet_kimlikleri()
     bilinmeyen = [k for k in kimlikler if '-' not in k or k.split('-', 1)[1] not in dersler]
     if bilinmeyen:
         ap.error(f'tanımsız ders: {bilinmeyen}')
-    tarih, yayin = hafta_tarihi(args.hafta, ozet_kimlikleri())
+    tarih, yayin = tarih_al(ctx, args.hafta) or hafta_tarihi(args.hafta, ozet_kimlikleri())
     bekleyen = [k for k in kimlikler if not (OZETLER / f'{k}-{args.hafta}.json').exists()]
     plansiz = [k for k in bekleyen if not plan_satiri(k, args.hafta)]
     print(f'{args.hafta}. hafta ({tarih}) · {len(kimlikler)} ders, {len(bekleyen)} üretilecek · model {args.model} · çaba {args.caba} · '
@@ -1171,41 +1319,56 @@ def main():
     if not args.kuru:
         import anthropic
         client = anthropic.Anthropic(max_retries=6)
-    ctx = {'e': _yukle('ozet_uret_api', ARACLAR / 'ozet_uret.py').e, 'sayfa': SayfaDenetci(dersler),
-           'hafta': args.hafta, 'tarih': tarih, 'yayin': yayin, 'dersler': dersler}
-    sayac = Sayac(args.model)
-    basla = time.time()
-    bitis = basla + args.sure_dk * 60 if args.sure_dk else float('inf')
     durdu = None
+    sonuc, kalan = {'tamam': [], 'hata': [], 'bekliyor': []}, []
     try:
-        if not args.kuru and not args.kurtarma_yok:
-            toplanan, bitmeyen = onceki_toplulari_topla(client, args, ctx, sayac, bitis, set(bekleyen))
-            bekleyen_yeni = [k for k in bekleyen if k not in toplanan]
-            if bitmeyen:
-                raise SystemExit('Önceki bir toplu istek süre içinde bitmedi; aynı dersler iki kez ödenmesin diye yeni istek '
-                                 'gönderilmedi. Bir saat kadar sonra aynı hafta yeniden çalıştırılınca sonuçları ödenmeden toplanır.')
+        if args.kuru:
+            for k in bekleyen:
+                durum_, not_ = tek_ozet(None, args, k, ctx, sayac, lambda: True)
+                sonuc[durum_].append(k)
+                print(f'  [{durum_}] {k}-{args.hafta}: {not_} (prova)', flush=True)
+        elif args.toplu and not args.kurtarma_yok:
+            sonuc, kalan = toplu_uret(client, args, bekleyen, ctx, sayac, bitis)
+        elif args.toplu:
+            raise SystemExit('--kurtarma-yok toplu kiple kullanılamaz (süren isteklerin içeriğine bakmadan gönderim iki kez ödetebilir); anlık kipi kullanın.')
         else:
-            bekleyen_yeni = list(bekleyen)
-        if args.toplu:
-            sonuc, kalan = toplu_uret(client, args, bekleyen_yeni, ctx, sayac, bitis)
-        else:
-            sonuc, kalan = anlik_uret(client, args, bekleyen_yeni, ctx, sayac, bitis)
+            haric = set()
+            if not args.kurtarma_yok:
+                # anlık kip: önce biten toplu isteklerin sonuçları yazılır; süren istekteki dersler anlık üretilmez
+                t = topla(client, args, ctx, sayac, bitis, Butce(0, 1), bekle_bilinmeyen=True, duzelt=False)
+                if t['bilinmeyen']:
+                    raise SystemExit('İçeriği kayıtlı olmayan bir toplu istek süre içinde bitmedi; aynı derslere iki kez ödememek için '
+                                     'anlık üretim başlatılmadı.')
+                haric = {k for h, k in t['bekleyen'] if h == args.hafta}
+                if haric:
+                    print(f'Toplu istekte bekleyen, anlık üretilmeyecek dersler: {", ".join(sorted(haric))}', flush=True)
+                    sonuc['bekliyor'] = sorted(haric)
+            hedef = [k for k in bekleyen if not (OZETLER / f'{k}-{args.hafta}.json').exists() and k not in haric]
+            s2, kalan = anlik_uret(client, args, hedef, ctx, sayac, bitis)
+            sonuc['tamam'] += s2['tamam']
+            sonuc['hata'] += s2['hata']
     except Durdu as exc:               # anlık kip: kredi/anahtar sorunu, açık işler bitti
-        durdu, sonuc, kalan = str(exc), exc.sonuc, exc.kalan
-    except SystemExit as exc:          # toplu kip: yazılmış dosyalar korunur, özet yine basılır
         durdu = str(exc)
-        sonuc = {'tamam': [], 'hata': []}
-        kalan = [k for k in bekleyen if not (YAZ['ozet'] / f'{k}-{args.hafta}.json').exists()]
+        sonuc['tamam'] += exc.sonuc['tamam']
+        sonuc['hata'] += exc.sonuc['hata']
+        kalan = exc.kalan
+    except SystemExit as exc:          # yazılmış dosyalar korunur, özet yine basılır
+        durdu = str(exc)
+        kalan = [k for k in bekleyen if not (YAZ['ozet'] / f'{k}-{args.hafta}.json').exists()
+                 and k not in sonuc['hata'] and k not in sonuc.get('bekliyor', [])]
     yazilan = len([k for k in bekleyen if (YAZ['ozet'] / f'{k}-{args.hafta}.json').exists()])
-    print(f'\n{yazilan} özet yazıldı, {len(sonuc["hata"])} hata, {len(kalan)} ders bekliyor · {(time.time() - basla) / 60:.0f} dk')
+    print(f'\n{yazilan} özet yazıldı, {len(sonuc["hata"])} hata, {len(sonuc.get("bekliyor", []))} ders toplu istekte bekliyor, '
+          f'{len(kalan)} ders gönderilmedi · {(time.time() - basla) / 60:.0f} dk')
     if durdu:
         print(f'DURDU: {durdu}')
     if not args.kuru:
-        print(f'Kullanım: {sayac}')
+        print(f'Toplanan sonuçların ve anlık isteklerin maliyeti: {sayac}')
     if sonuc['hata']:
         print('Hatalı dersler (aynı hafta yeniden çalıştırılınca tekrar denenir): ' + ', '.join(sonuc['hata']))
+    if sonuc.get('bekliyor'):
+        print('Toplu istekte bekleyen dersler (sonuçları iki saatte bir çalışan otomatik toplayıcı yazar): ' + ', '.join(sonuc['bekliyor']))
     if kalan:
-        print('Bekleyen dersler (bütçe ya da süre doldu): ' + ', '.join(kalan))
+        print('Gönderilmeyen dersler (bütçe ya da süre doldu; aynı hafta yeniden çalıştırılınca gönderilir): ' + ', '.join(kalan))
     sys.exit(1 if durdu or sonuc['hata'] or kalan else 0)
 
 
