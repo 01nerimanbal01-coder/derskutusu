@@ -72,32 +72,58 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
           rm -f uretim.log
 
-      - name: Sayfaları derle ve yayın denetimini çalıştır
+      # Üretilen kaynak dosyalar (özet JSON, görsel modülü, sosyal kart metni) parası ödenmiş çıktıdır:
+      # derleme ya da gönderim başarısız olsa bile kaybolmasın diye önce yedeklenir.
+      - name: Üretilen dosyaları yedekle
+        id: yedek
         run: |
-          python araclar/yayin_denetle.py --onar
-          python araclar/kok_yayin_denetle.py
+          git add -A araclar/ozetler araclar/gorseller araclar/sosyal
+          git diff --cached --name-only --diff-filter=A > "$RUNNER_TEMP/yeni.txt"
+          git reset -q
+          echo "adet=$(grep -c 'araclar/ozetler/' "$RUNNER_TEMP/yeni.txt" || true)" >> "$GITHUB_OUTPUT"
+          if [ -s "$RUNNER_TEMP/yeni.txt" ]; then
+            mkdir -p "$RUNNER_TEMP/uretim"
+            tar czf "$RUNNER_TEMP/uretim/kaynak.tgz" -T "$RUNNER_TEMP/yeni.txt"
+          fi
 
-      - name: Sosyal medya kartlarını çiz ve kuyruğa ekle
-        run: python araclar/sosyal_gorsel.py --kuyruk "$(python araclar/ozet_api_uret.py --kuyruk-baslangici)"
+      - uses: actions/upload-artifact@v6
+        if: steps.yedek.outputs.adet != '0'
+        with:
+          name: hafta-${{ inputs.hafta }}-uretilen-ozetler
+          path: ${{ runner.temp }}/uretim/kaynak.tgz
+          retention-days: 30
 
-      - name: Kaydet ve yayına gönder
+      # Üretim saatler sürebilir; bu sırada saatlik yayın botu ana dala yazmış olabilir.
+      # Bu yüzden her denemede en güncel dal alınır, yeni dosyalar üstüne konur, türetilen
+      # sayfalar ve paylaşım kuyruğu yeniden üretilir; çakışmalı birleştirme yapılmaz.
+      - name: Derle, denetle, kaydet ve yayına gönder
+        if: steps.yedek.outputs.adet != '0'
         env:
           HAFTA: ${{ inputs.hafta }}
+          ADET: ${{ steps.yedek.outputs.adet }}
           GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "ozet-botu"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add araclar/ozetler araclar/gorseller araclar/sosyal araclar/veri public sosyal
-          if git diff --cached --quiet; then
-            echo "Yeni özet yok."
-          else
-            YENI=$(git diff --cached --name-only --diff-filter=A -- araclar/ozetler | wc -l)
-            git commit -m "$HAFTA. hafta: $YENI konu özeti Claude API ile üretildi"
-            git pull --rebase origin "$GITHUB_REF_NAME"
-            git push
-            # GITHUB_TOKEN ile yapılan push başka iş akışını tetiklemez; yayını elle başlat
-            gh workflow run guncelle.yml --ref "$GITHUB_REF_NAME"
-          fi
+          for deneme in 1 2 3 4; do
+            git fetch -q origin "$GITHUB_REF_NAME"
+            git reset -q --hard "origin/$GITHUB_REF_NAME"
+            tar xzf "$RUNNER_TEMP/uretim/kaynak.tgz"
+            python araclar/yayin_denetle.py --onar
+            python araclar/kok_yayin_denetle.py
+            python araclar/sosyal_gorsel.py --kuyruk "$(python araclar/ozet_api_uret.py --kuyruk-baslangici)"
+            git add araclar/ozetler araclar/gorseller araclar/sosyal araclar/veri public sosyal
+            git commit -q -m "$HAFTA. hafta: $ADET konu özeti Claude API ile üretildi"
+            if git push -q origin "HEAD:$GITHUB_REF_NAME"; then
+              # GITHUB_TOKEN ile yapılan push başka iş akışını tetiklemez; yayını elle başlat
+              gh workflow run guncelle.yml --ref "$GITHUB_REF_NAME"
+              exit 0
+            fi
+            echo "Gönderim reddedildi (dal bu arada ilerlemiş); $deneme. deneme, yeniden derleniyor."
+            sleep $((deneme * 15))
+          done
+          echo "::error::Gönderilemedi. Üretilen özetler bu çalıştırmanın Artifacts bölümünde duruyor."
+          exit 1
 
       - name: Hatalı ders varsa bildir
         if: steps.uret.outputs.kod != '0'

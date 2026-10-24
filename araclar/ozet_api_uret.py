@@ -471,7 +471,7 @@ def model_cagir(client, model, caba, mesajlar, sayac):
     try:
         with client.beta.messages.stream(
             model=model,
-            max_tokens=64000,
+            max_tokens=128000,   # düşünme + 40-55 KB JSON; kullanılmayan sınır ücretlendirilmez
             system=[{'type': 'text', 'text': SISTEM, 'cache_control': {'type': 'ephemeral'}}],
             messages=mesajlar,
             output_config={'effort': caba},
