@@ -34,6 +34,30 @@ Aynı anahtar hem Instagram gönderilerini siteye çeker hem de kuyruktaki kartl
 2. GitHub deposunda **Settings → Secrets and variables → Actions → New repository secret**: ad `IG_TOKEN`, değer bu anahtar.
 3. İsteğe bağlı: anahtarın kendiliğinden yenilenip GitHub'a yazılması için yalnız bu depoya "Secrets: Read and write" izni olan bir fine-grained token oluşturup `GH_PAT` adıyla ekleyin. Eklemezseniz anahtar 60 günde bir yenilenmelidir.
 
+## Claude API kredisiyle özet üretme
+Max planı her ay API kredisi verir (Max 5x: 100 $). Bu kredi, haftalık konu özetlerini GitHub'da kendiliğinden ürettirmek için kullanılır. Kredi claude.ai sohbet kullanımından ayrıdır ve ay devrinde biter, sonraki aya aktarılmaz (yenileme tarihi Faturalandırma sayfasında yazar).
+
+Bir kez yapılacaklar:
+1. claude.ai → **Ayarlar → Faturalandırma → API kredileri → Kuruluş oluştur**. Açılan Claude Console'da kuruluşu oluşturun. Bu bağlantı sonradan değiştirilemez.
+2. platform.claude.com → **API Keys → Create Key**. Anahtarı kopyalayın, kimseye yazmayın.
+3. GitHub deposunda **Settings → Secrets and variables → Actions → New repository secret**: ad `ANTHROPIC_API_KEY`, değer bu anahtar.
+
+Her hafta:
+1. GitHub → **Actions → Haftalık özetleri Claude API ile üret → Run workflow**.
+2. `hafta` alanına hafta numarasını yazın. İlk seferde `dersler` alanına iki üç ders yazıp deneyin (ör. `7-matematik,10-tarih`); özet sayfasında harcanan tutar görünür.
+3. Sonuç iyiyse `dersler` boş bırakılarak 103 dersin hepsi üretilir. Var olan özetler atlanır; bütçe dolarsa aynı hafta yeniden çalıştırılınca kaldığı yerden sürer.
+
+İş akışı özetleri, görsel modüllerini, sosyal medya kartlarını ve paylaşım kuyruğunu üretir; yayın denetiminden geçerse siteye gönderir. Yerelde aynı iş: `python3 araclar/ozet_api_uret.py --hafta 15` (yardım: `--help`).
+
+Kalan kredi: platform.claude.com → **Settings → Billing**, "Promotional credits" satırı (tutar ve bitiş tarihi). Harcamanın gün gün dökümü **Usage** ve **Cost** sayfalarındadır. Kredi biterse araç durur ve kredi yenilenince kaldığı yerden devam eder.
+
+Yaklaşık maliyet (ilk denemede gerçek tutar ölçülmeli):
+
+| Model | Bir özet | Bir hafta (103 ders) |
+|---|---|---|
+| claude-opus-5-5 (varsayılan) | 0,7-1 $ | 70-100 $ |
+| claude-sonnet-5-5 | 0,35-0,5 $ | 35-50 $ |
+
 ## Bilinmesi gerekenler
 - Depoda 60 gün hiç etkinlik olmazsa GitHub zamanlanmış çalışmayı durdurur ve e-postayla haber verir; Actions sekmesinden yeniden açılır.
 - Alan adlarının süresi 28.09.2027'de doluyor. Yenilemeden önce daha ucuz bir firmaya taşınması düşünülmeli.
