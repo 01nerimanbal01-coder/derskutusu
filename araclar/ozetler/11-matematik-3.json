@@ -17,7 +17,7 @@
     "İki nicel değişkenli verilerin koordinat düzleminde (x, y) noktaları olarak gösterildiği grafiğe 'serpilme diyagramı (saçılım grafiği)' denir.",
     "İki değişken arasındaki doğrusal ilişkinin yönünü ve gücünü ölçen sayısal değere Pearson korelasyon katsayısı (r) denir ve her zaman −1 ≤ r ≤ +1 aralığında değer alır.",
     "r > 0 ise değişkenler aynı yönde değişir (pozitif ilişki), r < 0 ise zıt yönde değişir (negatif ilişki), r ≈ 0 ise doğrusal ilişki yoktur; |r| mutlak değeri 1'e yaklaştıkça ilişki güçlenir.",
-    "Serpilme diyagramındaki noktaların genel eğilimini temsil eden y = a + b · x doğrusuna 'en uygun doğru (eğilim/regresyon doğrusu)' denir; bu doğru daima (x_ort, y_ort) ortalama noktasından geçer.",
+    "Serpilme diyagramındaki noktaların genel eğilimini temsil eden y = a + b · x doğrusuna 'en uygun doğru (eğilim/regresyon doğrusu)' denir; bu doğru daima (x{alt:ort}, y{alt:ort}) ortalama noktasından geçer.",
     "Gözlenen veri aralığı içinde yapılan tahmine 'iç değer tahmini (interpolasyon)', aralık dışında yapılan tahmine 'dış değer tahmini (ekstrapolasyon)' denir; ayrıca korelasyon (ilişki) doğrudan nedensellik anlamına gelmez."
   ],
   "bolumler": [
@@ -92,12 +92,12 @@
       "baslik": "4. En Uygun Doğru (Eğilim / Regresyon Doğrusu) ve Denklemi",
       "metin": [
         "Arasında orta veya güçlü doğrusal ilişki bulunan iki nicel değişkende, serpilme diyagramındaki noktalara olan dikey uzaklıkların kareleri toplamını en küçük yapan doğruya {koyu:en uygun doğru (eğilim doğrusu veya doğrusal regresyon modeli)} denir. Denklemi şu biçimde yazılır:\n{koyu:y = a + b · x}  (veya {koyu:y = m · x + n})",
-        "Modeldeki katsayıların gerçek yaşam anlamı çok önemlidir:\n• {koyu:Eğim (b veya m):} Bağımsız değişken (x) {koyu:1 birim arttığında}, bağımlı değişkenin (y) ortalama olarak kaç birim artacağını (b > 0 ise) veya azalacağını (b < 0 ise) gösterir. Eğimin işareti korelasyon katsayısı r'nin işaretiyle her zaman aynıdır!\n• {koyu:Sabit Terim / Y-kesim Noktası (a veya n):} Bağımsız değişken {koyu:x = 0} olduğunda bağımlı değişkenin (y) başlangıç/tahmini değeridir.\n• {koyu:Ortalama Noktası Özelliği:} En uygun doğru {koyu:daima} verilerin aritmetik ortalamalarının oluşturduğu {koyu:(x_ort, y_ort)} noktasından geçer! Yani {koyu:y_ort = a + b · x_ort} eşitliği her zaman sağlanır."
+        "Modeldeki katsayıların gerçek yaşam anlamı çok önemlidir:\n• {koyu:Eğim (b veya m):} Bağımsız değişken (x) {koyu:1 birim arttığında}, bağımlı değişkenin (y) ortalama olarak kaç birim artacağını (b > 0 ise) veya azalacağını (b < 0 ise) gösterir. Eğimin işareti korelasyon katsayısı r'nin işaretiyle her zaman aynıdır!\n• {koyu:Sabit Terim / Y-kesim Noktası (a veya n):} Bağımsız değişken {koyu:x = 0} olduğunda bağımlı değişkenin (y) başlangıç/tahmini değeridir.\n• {koyu:Ortalama Noktası Özelliği:} En uygun doğru {koyu:daima} verilerin aritmetik ortalamalarının oluşturduğu {koyu:(x{alt:ort}, y{alt:ort})} noktasından geçer! Yani {koyu:y{alt:ort} = a + b · x{alt:ort}} eşitliği her zaman sağlanır."
       ],
       "kutu": {
         "tur": "ipucu",
         "baslik": "Ortalama Noktasından Geçme Özelliğiyle Soru Çözümü",
-        "metin": "Sorularda en uygun doğrunun denklemi {koyu:y = a + 3x} olarak verilip a sabiti gizlendiğinde, x verilerinin ortalaması ({koyu:x_ort}) ile y verilerinin ortalamasını ({koyu:y_ort}) doğru denkleminde yerine yazarak a değerini saniyeler içinde bulabilirsiniz!"
+        "metin": "Sorularda en uygun doğrunun denklemi {koyu:y = a + 3x} olarak verilip a sabiti gizlendiğinde, x verilerinin ortalaması ({koyu:x{alt:ort}}) ile y verilerinin ortalamasını ({koyu:y{alt:ort}}) doğru denkleminde yerine yazarak a değerini saniyeler içinde bulabilirsiniz!"
       },
       "gorsel": "<svg viewBox=\"0 0 680 245\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:680px;display:block;margin:12px auto;font-family:system-ui,-apple-system,sans-serif;\"><rect width=\"680\" height=\"245\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"10\" width=\"648\" height=\"28\" rx=\"7\" fill=\"#991b1b\"/><text x=\"340\" y=\"29\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#ffffff\">ALTIN KURAL: KORELASYON (İLİŞKİ) NEDENSELLİK DEMEK DEĞİLDİR!</text><rect x=\"26\" y=\"48\" width=\"628\" height=\"86\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"340\" y=\"70\" text-anchor=\"middle\" font-size=\"10.2\" fill=\"#b91c1c\" font-weight=\"700\">Yanıltıcı İlişki Örneği: Dondurma Satışları (x) ile Denizde Boğulma Vakaları (y)</text><text x=\"340\" y=\"94\" text-anchor=\"middle\" font-size=\"9.4\" fill=\"#1e293b\">• İki değişken arasında güçlü pozitif korelasyon (r ≈ +0,85) vardır.</text><text x=\"340\" y=\"114\" text-anchor=\"middle\" font-size=\"9.4\" fill=\"#991b1b\" font-weight=\"700\">• Ancak dondurma yemek boğulmaya NEDEN OLMAZ! İkisini de artıran gizli değişken HAVA SICAKLIĞIDIR (Yaz Mevsimi).</text><rect x=\"26\" y=\"146\" width=\"628\" height=\"84\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"340\" y=\"168\" text-anchor=\"middle\" font-size=\"10.2\" fill=\"#047857\" font-weight=\"700\">İstatistiksel Karar Verme İlkeleri</text><text x=\"340\" y=\"190\" text-anchor=\"middle\" font-size=\"9.2\" fill=\"#1e293b\">1. Korelasyon yalnızca iki değişkenin birlikte değişim eğilimini gösterir; neden-sonuç için kontrollü deney gerekir.</text><text x=\"340\" y=\"210\" text-anchor=\"middle\" font-size=\"9.2\" fill=\"#1e293b\">2. Veri setindeki aykırı değerler korelasyon katsayısını (r) ve eğilim doğrusunun eğimini ciddi biçimde saptırabilir.</text></svg>"
     },
@@ -106,7 +106,7 @@
       "metin": [
         "Elde edilen {koyu:y = a + b · x} doğrusal modeli kullanılarak bilinen bir x değeri için y değeri tahmin edilebilir. Tahminler x değerinin bulunduğu aralığa göre ikiye ayrılır:",
         "{koyu:İç Değer Tahmini (İnterpolasyon):} Eldeki veri setinin en küçük ve en büyük x değerleri {koyu:arasında kalan} bir değer için yapılan tahmindir. Model bu aralıkta kurulduğu için iç değer tahminleri {koyu:güvenilirdir}.\n• {koyu:Dış Değer Tahmini (Ekstrapolasyon):} Eldeki veri aralığının {koyu:dışındaki} çok küçük veya çok büyük bir x değeri için yapılan tahmindir. Doğrusal eğilim veri aralığının dışında bozulabileceği için dış değer tahminleri {koyu:risklidir ve yanıltıcı sonuçlar verebilir} (örneğin 0–15 yaş arası boy uzama doğrusuyla 50 yaşındaki birinin boyunu 3,20 metre tahmin etmek gibi!).",
-        "{koyu:Aykırı Değer (Outlier) ve Artık (Hata — Residual):} Gözlenen gerçek {koyu:y_gerçek} değeri ile doğrunun tahmin ettiği {koyu:y_tahmin} değeri arasındaki farka {koyu:artık (hata = y_gerçek − y_tahmin)} denir. Genel veri bulutundan çok uzakta kalan noktalara ise {koyu:aykırı değer} denir; aykırı değer veri setinden çıkarıldığında korelasyon katsayısı |r| genellikle yükselir ve model daha güvenilir hâle gelir."
+        "{koyu:Aykırı Değer (Outlier) ve Artık (Hata — Residual):} Gözlenen gerçek {koyu:y{alt:gerçek}} değeri ile doğrunun tahmin ettiği {koyu:y{alt:tahmin}} değeri arasındaki farka {koyu:artık (hata = y{alt:gerçek} − y{alt:tahmin})} denir. Genel veri bulutundan çok uzakta kalan noktalara ise {koyu:aykırı değer} denir; aykırı değer veri setinden çıkarıldığında korelasyon katsayısı |r| genellikle yükselir ve model daha güvenilir hâle gelir."
       ],
       "gorsel": ""
     },
@@ -134,8 +134,8 @@
       "cevap": "a) {koyu:Sabit terim (240):} Hiç soru çözmeyen (x = 0) bir öğrencinin tahmini başlangıç puanının 240 olduğunu gösterir. {koyu:Eğim (35):} Haftalık çözülen her 1 yüz (100) ek soru için sınav puanının ortalama {koyu:35 puan arttığını} gösterir.\nb) x = 6 için: {koyu:y = 240 + 35 · 6 = 240 + 210 = 450 puan} tahmin edilir."
     },
     {
-      "soru": "Beş farklı günde ölçülen rüzgâr hızı (x, km/sa) verilerinin aritmetik ortalaması x_ort = 12 ve aynı günlerdeki hava kirliliği indeksi (y) verilerinin aritmetik ortalaması y_ort = 46'dır. Bu iki değişken arasındaki en uygun doğrunun denklemi **y = a − 2,5x** olduğuna göre **a** sabiti kaçtır?",
-      "cevap": "En uygun doğru mutlaka {koyu:(x_ort, y_ort) = (12, 46)} ortalama noktasından geçer. Noktayı denklemde yerine yazarsak:\n{koyu:46 = a − 2,5 · 12 ⇒ 46 = a − 30 ⇒ a = 76} bulunur."
+      "soru": "Beş farklı günde ölçülen rüzgâr hızı (x, km/sa) verilerinin aritmetik ortalaması x{alt:ort} = 12 ve aynı günlerdeki hava kirliliği indeksi (y) verilerinin aritmetik ortalaması y{alt:ort} = 46'dır. Bu iki değişken arasındaki en uygun doğrunun denklemi **y = a − 2,5x** olduğuna göre **a** sabiti kaçtır?",
+      "cevap": "En uygun doğru mutlaka {koyu:(x{alt:ort}, y{alt:ort}) = (12, 46)} ortalama noktasından geçer. Noktayı denklemde yerine yazarsak:\n{koyu:46 = a − 2,5 · 12 ⇒ 46 = a − 30 ⇒ a = 76} bulunur."
     },
     {
       "soru": "Bir otomobilin yaşının (x: 1 yıldan 10 yıla kadar olan araçlar incelenmiştir) ikinci el satış fiyatına (y, bin TL) etkisini gösteren model **y = 1200 − 80x** olarak bulunmuştur. Bu modelle 4 yaşındaki ve 20 yaşındaki iki aracın fiyatını tahmin ediniz ve hangi tahminin neden yanıltıcı olduğunu açıklayınız.",
@@ -181,7 +181,7 @@
       "tur": "coktan",
       "soru": "‘Serpilme Diyagramı (Saçılım Grafiği — Scatter Plot) Nedir?’ kavramı veya konusuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
       "secenekler": [
-        "Sorularda en uygun doğrunun denklemi y = a + 3x olarak verilip a sabiti gizlendiğinde, x verilerinin ortalaması (x_ort) ile.",
+        "Sorularda en uygun doğrunun denklemi y = a + 3x olarak verilip a sabiti gizlendiğinde, x verilerinin ortalaması (x{alt:ort}) ile.",
         "İstatistiksel bir araştırmada her bir gözlem biriminden (öğrenci, şehir, araç, bitki vb.) aynı anda iki farklı sayısal ölçüm.",
         "İki nicel değişkene ait (xᵢ, yᵢ) veri çiftlerinin analitik düzlemde birer nokta olarak işaretlenmesiyle elde edilen grafiğe.",
         "İstatistiksel okuryazarlığın en önemli kuralı şudur: İki değişken arasında güçlü bir korelasyon (ilişki) bulunması, birinin.",
@@ -197,11 +197,11 @@
         "İstatistiksel okuryazarlığın en önemli kuralı şudur: İki değişken arasında güçlü bir korelasyon (ilişki) bulunması, birinin.",
         "İstatistiksel bir araştırmada her bir gözlem biriminden (öğrenci, şehir, araç, bitki vb.) aynı anda iki farklı sayısal ölçüm.",
         "İki nicel değişkene ait (xᵢ, yᵢ) veri çiftlerinin analitik düzlemde birer nokta olarak işaretlenmesiyle elde edilen grafiğe.",
-        "Sorularda en uygun doğrunun denklemi y = a + 3x olarak verilip a sabiti gizlendiğinde, x verilerinin ortalaması (x_ort) ile.",
+        "Sorularda en uygun doğrunun denklemi y = a + 3x olarak verilip a sabiti gizlendiğinde, x verilerinin ortalaması (x{alt:ort}) ile.",
         "İki nicel değişken arasındaki doğrusal ilişkinin yönünü ve gücünü tek bir sayı ile ifade eden istatistiksel ölçüte Pearson."
       ],
       "dogru": 3,
-      "aciklama": "‘Ortalama Noktasından Geçme Özelliğiyle Soru Çözümü’ kapsamında doğru açıklama: Sorularda en uygun doğrunun denklemi y = a + 3x olarak verilip a sabiti gizlendiğinde, x verilerinin ortalaması (x_ort) ile."
+      "aciklama": "‘Ortalama Noktasından Geçme Özelliğiyle Soru Çözümü’ kapsamında doğru açıklama: Sorularda en uygun doğrunun denklemi y = a + 3x olarak verilip a sabiti gizlendiğinde, x verilerinin ortalaması (x{alt:ort}) ile."
     },
     {
       "tur": "dy",
@@ -213,9 +213,9 @@
           "aciklama": "Yanlış! Korelasyon (ilişki) nedensellik demek değildir; iki değişken üçüncü bir gizli değişkene bağlı olarak birlikte değişiyor olabilir."
         },
         {
-          "metin": "Serpilme diyagramındaki verileri temsil eden en uygun doğru (regresyon doğrusu), daima verilerin aritmetik ortalamalarının oluşturduğu (x_ort, y_ort) noktasından geçer.",
+          "metin": "Serpilme diyagramındaki verileri temsil eden en uygun doğru (regresyon doğrusu), daima verilerin aritmetik ortalamalarının oluşturduğu (x{alt:ort}, y{alt:ort}) noktasından geçer.",
           "dogru": true,
-          "aciklama": "Doğru! En küçük kareler yöntemiyle elde edilen y = a + bx doğrusu daima veri kümesinin ağırlık merkezi olan (x_ort, y_ort) noktasını sağlar."
+          "aciklama": "Doğru! En küçük kareler yöntemiyle elde edilen y = a + bx doğrusu daima veri kümesinin ağırlık merkezi olan (x{alt:ort}, y{alt:ort}) noktasını sağlar."
         }
       ]
     },
@@ -267,10 +267,10 @@
     },
     {
       "tur": "ogretici",
-      "soru": "Bir seradaki günlük sulama miktarı (x, litre: 2 ile 10 litre arası) ve domates fidelerinin haftalık boy uzaması (y, cm) incelenmiş; x_ort = 5 L, y_ort = 14 cm ve en uygun doğru eğimi b = 2 olarak bulunmuştur. Doğru denklemini kurunuz ve x = 7 L için yapılan tahmin ile x = 50 L için yapılan tahmini güvenilirlik açısından karşılaştırınız.",
+      "soru": "Bir seradaki günlük sulama miktarı (x, litre: 2 ile 10 litre arası) ve domates fidelerinin haftalık boy uzaması (y, cm) incelenmiş; x{alt:ort} = 5 L, y{alt:ort} = 14 cm ve en uygun doğru eğimi b = 2 olarak bulunmuştur. Doğru denklemini kurunuz ve x = 7 L için yapılan tahmin ile x = 50 L için yapılan tahmini güvenilirlik açısından karşılaştırınız.",
       "cevap": "1) {koyu:Doğru Denklemi:} y = a + 2x doğrusu (5, 14) ortalama noktasından geçer: {koyu:14 = a + 2(5) ⇒ a = 4}. Denklem: {koyu:y = 4 + 2x} olur.\n2) {koyu:x = 7 L Tahmini (İç Değer Tahmini):} y = 4 + 2(7) = {koyu:18 cm}. 7 litre, gözlenen [2, 10] L aralığının içinde olduğu için bu tahmin {koyu:güvenilirdir}.\n3) {koyu:x = 50 L Tahmini (Dış Değer Tahmini):} Formül y = 4 + 2(50) = 104 cm verse de, 50 litre veri aralığının çok dışındadır ve aşırı su bitkiyi çürüteceği için doğrusal ilişki bozulur; bu nedenle dış değer tahmini {koyu:geçersizdir}.",
       "ipuclari": [
-        "1. Adım: y = a + bx denkleminde b = 2 ve (x_ort, y_ort) = (5, 14) değerlerini kullanarak a sabitini bulun.",
+        "1. Adım: y = a + bx denkleminde b = 2 ve (x{alt:ort}, y{alt:ort}) = (5, 14) değerlerini kullanarak a sabitini bulun.",
         "2. Adım: x = 7 L için tahmini hesaplayın ve [2, 10] aralığında olduğu için türünü belirtin.",
         "3. Adım: x = 50 L için yapılan dış değer tahmininin neden gerçekçi olmadığını açıklayın."
       ]

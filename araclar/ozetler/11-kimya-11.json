@@ -74,7 +74,7 @@
         {
           "tur": "ipucu",
           "baslik": "Hız Sabiti Birimi Formülü",
-          "metin": "Toplam tepkime derecesi n bulunduktan sonra k'nin birimi her zaman (L / mol)^(n-1) · (1 / s) formülüyle saniyeler içinde yazılabilir."
+          "metin": "Toplam tepkime derecesi n bulunduktan sonra k'nin birimi her zaman {us:(L / mol)|n-1} · (1 / s) formülüyle saniyeler içinde yazılabilir."
         }
       ]
     }
@@ -90,7 +90,7 @@
     },
     {
       "soru": "Deneysel hız bağıntısı r = k · {us:[A]|2} · [B] olan gaz fazındaki bir tepkimede sabit sıcaklıkta tepkime kabının hacmi yarıya (V/2'ye) indirilirse tepkime hızı ve hız sabiti k nasıl değişir?",
-      "cevap": "Sabit sıcaklıkta kabın hacmi yarıya indirildiğinde (M = n/V bağıntısına göre) gaz fazındaki A ve B maddelerinin molar derişimleri 2 katına çıkar. Hız bağıntısında yerine konulursa r_yeni = k · {us:(2[A])|2} · (2[B]) = 4 · 2 · r = 8r olur; yani tepkime hızı 8 katına çıkar. Sıcaklık sabit olduğu için hız sabiti k değişmez."
+      "cevap": "Sabit sıcaklıkta kabın hacmi yarıya indirildiğinde (M = n/V bağıntısına göre) gaz fazındaki A ve B maddelerinin molar derişimleri 2 katına çıkar. Hız bağıntısında yerine konulursa r{alt:yeni} = k · {us:(2[A])|2} · (2[B]) = 4 · 2 · r = 8r olur; yani tepkime hızı 8 katına çıkar. Sıcaklık sabit olduğu için hız sabiti k değişmez."
     },
     {
       "soru": "Gaz fazındaki X + 2Y → Z tepkimesi için sabit sıcaklıkta yapılan deneylerde: 1. deneyde [X]=0,1 M, [Y]=0,2 M iken r=4·{us:10|-4} M/s; 2. deneyde [X]=0,2 M, [Y]=0,2 M iken r=8·{us:10|-4} M/s; 3. deneyde [X]=0,2 M, [Y]=0,6 M iken r=8·{us:10|-4} M/s ölçülmüştür. Tepkimenin hız bağıntısını ve k değerini bulunuz.",

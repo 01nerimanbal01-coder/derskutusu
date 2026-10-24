@@ -103,7 +103,7 @@
       "metin": [
         "Kimyasal bir tepkimede enerjinin neden açığa çıktığını atomik düzeyde {koyu:bağ enerjileri} ile açıklarız. Kimyasal bağların kırılması için dışarıdan enerji gerekir ({koyu:endotermik, +}), atomlar arasında yeni kimyasal bağlar oluşurken ise dışarıya enerji verilir ({koyu:ekzotermik, −}).",
         "Bir tepkimenin standart entalpi değişimi (ΔH) şu temel bağıntıyla hesaplanır:\n{koyu:ΔH = Σ E(Kırılan Bağlar) − Σ E(Oluşan Bağlar)}",
-        "Bir maddenin yüksek enerji potansiyeline sahip bir yakıt olabilmesi için; {koyu:girenlerdeki zayıf/nispeten yüksek enerjili bağların (C–C, C–H, H–H ve O=O) kırılması için harcanan toplam enerjinin, ürünlerdeki çok güçlü ve kararlı bağların (CO₂'deki C=O ve H₂O'daki O–H bağlarının) oluşumu sırasında açığa çıkan enerjiden çok daha küçük olması gerekir (Σ E_oluşan > Σ E_kırılan)}. Böylece net fark negatif (ΔH < 0) olur ve aradaki büyük enerji farkı ısı olarak elde edilir."
+        "Bir maddenin yüksek enerji potansiyeline sahip bir yakıt olabilmesi için; {koyu:girenlerdeki zayıf/nispeten yüksek enerjili bağların (C–C, C–H, H–H ve O=O) kırılması için harcanan toplam enerjinin, ürünlerdeki çok güçlü ve kararlı bağların (CO₂'deki C=O ve H₂O'daki O–H bağlarının) oluşumu sırasında açığa çıkan enerjiden çok daha küçük olması gerekir (Σ E{alt:oluşan} > Σ E{alt:kırılan})}. Böylece net fark negatif (ΔH < 0) olur ve aradaki büyük enerji farkı ısı olarak elde edilir."
       ],
       "kutu": {
         "tur": "ipucu",
@@ -163,7 +163,7 @@
     },
     {
       "soru": "Ortalama bağ enerjileri H–H = 436 kJ/mol, O=O = 498 kJ/mol ve O–H = 464 kJ/mol olarak verildiğine göre, 2H₂(g) + O₂(g) → 2H₂O(g) tepkimesinin ΔH değerini ve 1 mol H₂ gazının yanma ısısını hesaplayınız.",
-      "cevap": "Kırılan bağlar: 2 mol H–H ve 1 mol O=O ⇒ {koyu:Σ E_kırılan = 2(436) + 498 = 872 + 498 = 1370 kJ}.\n• Oluşan bağlar: 2 mol H₂O içinde toplam 4 mol O–H bağı ⇒ {koyu:Σ E_oluşan = 4(464) = 1856 kJ}.\n• {koyu:ΔH = Σ E_kırılan − Σ E_oluşan = 1370 − 1856 = −486 kJ} (2 mol H₂ için).\n• 1 mol H₂ gazı yandığında ise {koyu:{kesir:486|2} = 243 kJ} ısı enerjisi açığa çıkar."
+      "cevap": "Kırılan bağlar: 2 mol H–H ve 1 mol O=O ⇒ {koyu:Σ E{alt:kırılan} = 2(436) + 498 = 872 + 498 = 1370 kJ}.\n• Oluşan bağlar: 2 mol H₂O içinde toplam 4 mol O–H bağı ⇒ {koyu:Σ E{alt:oluşan} = 4(464) = 1856 kJ}.\n• {koyu:ΔH = Σ E{alt:kırılan} − Σ E{alt:oluşan} = 1370 − 1856 = −486 kJ} (2 mol H₂ için).\n• 1 mol H₂ gazı yandığında ise {koyu:{kesir:486|2} = 243 kJ} ısı enerjisi açığa çıkar."
     },
     {
       "soru": "Aynı sayıda karbon atomu içeren etan (C₂H₆) ile etil alkol (C₂H₅OH) bileşiklerinden hangisinin 1 molünün yanma ısısı daha yüksektir? Neden?",

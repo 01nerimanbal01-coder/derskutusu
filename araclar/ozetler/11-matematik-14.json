@@ -70,7 +70,7 @@
       "kutular": [
         {
           "baslik": "Yamukta Kelebek Benzerliği ve Kanat Alanları",
-          "metin": "Yamukta köşegenler çizildiğinde alt ve üst üçgenler arasında kelebek benzerliği (k = {kesir:c|a}) oluşur; yanlarda kalan iki üçgenin ('kanatların') alanları birbirine daima eşittir (S_sol = S_sağ = S) ve {us:S|2} = S_alt · S_üst bağıntısı geçerlidir."
+          "metin": "Yamukta köşegenler çizildiğinde alt ve üst üçgenler arasında kelebek benzerliği (k = {kesir:c|a}) oluşur; yanlarda kalan iki üçgenin ('kanatların') alanları birbirine daima eşittir (S{alt:sol} = S{alt:sağ} = S) ve {us:S|2} = S{alt:alt} · S{alt:üst} bağıntısı geçerlidir."
         }
       ],
       "liste": [
@@ -83,7 +83,7 @@
     {
       "baslik": "3. Paralelkenar ve Eşkenar Dörtgen Problemleri",
       "metin": [
-        "Karşılıklı kenarları paralel ve eşit uzunlukta olan dörtgene paralelkenar denir. Paralelkenarda karşılıklı açılar eşit, komşu açılar bütünlerdir (toplamı 180°). Komşu iki açının açıortayları daima dik kesişir (90°) ve bu dik kesişim noktasından tabanlara paralel çizilirse 'muhteşem üçlü' oluşur. Köşegenler birbirini ortalar ve paralelkenarın alanını dört eşit parçaya (S, S, S, S) böler. Paralelkenarın alanı taban ile o tabana ait yüksekliğin çarpımıdır: Alan = a · h_a = b · h_b.",
+        "Karşılıklı kenarları paralel ve eşit uzunlukta olan dörtgene paralelkenar denir. Paralelkenarda karşılıklı açılar eşit, komşu açılar bütünlerdir (toplamı 180°). Komşu iki açının açıortayları daima dik kesişir (90°) ve bu dik kesişim noktasından tabanlara paralel çizilirse 'muhteşem üçlü' oluşur. Köşegenler birbirini ortalar ve paralelkenarın alanını dört eşit parçaya (S, S, S, S) böler. Paralelkenarın alanı taban ile o tabana ait yüksekliğin çarpımıdır: Alan = a · h{alt:a} = b · h{alt:b}.",
         "Dört kenar uzunluğu da birbirine eşit olan paralelkenara 'eşkenar dörtgen' denir. Eşkenar dörtgen paralelkenarın bütün özelliklerini taşır; ek olarak köşegenleri birbirini DİK keser ve köşegenler geçtiği köşelerin AÇIORTAYIdır! Köşegen uzunlukları e ve f olan eşkenar dörtgenin alanı hem taban çarpı yükseklikle (a · h) hem de dik kesişen köşegenler çarpımının yarısıyla (Alan = {kesir:e · f|2}) hesaplanır."
       ],
       "kutular": [
@@ -117,7 +117,7 @@
           ],
           [
             "Alan Formülleri",
-            "Alan = a · h_a = a · b · sin(alfa)",
+            "Alan = a · h{alt:a} = a · b · sin(alfa)",
             "Alan = a · h = {kesir:e · f|2} = {us:a|2} · sin(alfa)"
           ]
         ]
@@ -234,9 +234,9 @@
     },
     {
       "soru": "Bir ABCD yamuğunda (AB // DC) köşegenler E noktasında kesişmektedir. Üstteki DEC üçgeninin alanı 9 {us:cm|2}, alttaki AEB üçgeninin alanı 25 {us:cm|2} olduğuna göre tüm yamuğun alanı kaç {us:cm|2}'dir?",
-      "cevap": "Yamukta köşegenlerin ayırdığı yan üçgenlerin (kanatların) alanları birbirine eşittir (S) ve {us:S|2} = S_üst · S_alt bağıntısı geçerlidir. Buradan {us:S|2} = 9 · 25 = 225 -> S = 15 {us:cm|2} bulunur. Tüm yamuğun alanı dört üçgenin toplamıdır: Alan(ABCD) = 9 + 25 + 15 + 15 = 64 {us:cm|2} olur.",
-      "cozum": "Yamukta köşegenlerin ayırdığı yan üçgenlerin (kanatların) alanları birbirine eşittir (S) ve {us:S|2} = S_üst · S_alt bağıntısı geçerlidir. Buradan {us:S|2} = 9 · 25 = 225 -> S = 15 {us:cm|2} bulunur. Tüm yamuğun alanı dört üçgenin toplamıdır: Alan(ABCD) = 9 + 25 + 15 + 15 = 64 {us:cm|2} olur.",
-      "ipucu": "Yan kanat alanlarını {us:S|2} = S_alt · S_üst ile bulup dört alanı toplayınız."
+      "cevap": "Yamukta köşegenlerin ayırdığı yan üçgenlerin (kanatların) alanları birbirine eşittir (S) ve {us:S|2} = S{alt:üst} · S{alt:alt} bağıntısı geçerlidir. Buradan {us:S|2} = 9 · 25 = 225 -> S = 15 {us:cm|2} bulunur. Tüm yamuğun alanı dört üçgenin toplamıdır: Alan(ABCD) = 9 + 25 + 15 + 15 = 64 {us:cm|2} olur.",
+      "cozum": "Yamukta köşegenlerin ayırdığı yan üçgenlerin (kanatların) alanları birbirine eşittir (S) ve {us:S|2} = S{alt:üst} · S{alt:alt} bağıntısı geçerlidir. Buradan {us:S|2} = 9 · 25 = 225 -> S = 15 {us:cm|2} bulunur. Tüm yamuğun alanı dört üçgenin toplamıdır: Alan(ABCD) = 9 + 25 + 15 + 15 = 64 {us:cm|2} olur.",
+      "ipucu": "Yan kanat alanlarını {us:S|2} = S{alt:alt} · S{alt:üst} ile bulup dört alanı toplayınız."
     },
     {
       "soru": "|AB| = |AD| ve |BC| = |DC| olan bir ABCD deltoidinde m(A) = 50° ve m(C) = 70° olduğuna göre m(B) açısı kaç derecedir?",

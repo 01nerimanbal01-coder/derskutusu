@@ -90,7 +90,7 @@
     },
     {
       "soru": "Kütlece %80 saflıktaki 250 gram kireç taşı (CaCO3) örneği CaCO3(k) → CaO(k) + CO2(g) denklemine göre tam verimle ısıtılarak ayrıştırılıyor. Normal koşullarda (NŞA) kaç litre CO2 gazı açığa çıkar (CaCO3 = 100 g/mol, NŞA'da 1 mol gaz = 22,4 L)?",
-      "cevap": "Önce 250 gram örnekteki saf CaCO3 kütlesini bulalım: m_saf = 250 × ({kesir:80|100}) = 200 gram saf CaCO3. Saf CaCO3'ün mol sayısı: n = {kesir:200|100} = 2 mol. Denkleme göre 1 mol CaCO3'ten 1 mol CO2 oluştuğu için 2 mol CaCO3'ten 2 mol CO2 gazı oluşur. NŞA'daki hacmi: V = 2 × 22,4 = 44,8 litre CO2 gazıdır."
+      "cevap": "Önce 250 gram örnekteki saf CaCO3 kütlesini bulalım: m{alt:saf} = 250 × ({kesir:80|100}) = 200 gram saf CaCO3. Saf CaCO3'ün mol sayısı: n = {kesir:200|100} = 2 mol. Denkleme göre 1 mol CaCO3'ten 1 mol CO2 oluştuğu için 2 mol CaCO3'ten 2 mol CO2 gazı oluşur. NŞA'daki hacmi: V = 2 × 22,4 = 44,8 litre CO2 gazıdır."
     },
     {
       "soru": "Saf olmayan 50 gram Mg metal örneği yeterince HCl çözeltisine atıldığında Mg(k) + 2HCl(suda) → MgCl2(suda) + H2(g) denklemine göre 3 gram H2 gazı açığa çıkıyor. Buna göre Mg örneğinin saflık yüzdesi kaçtır (Mg = 24 g/mol, H2 = 2 g/mol)?",
@@ -250,7 +250,7 @@
         "İkinci aşamada saf Fe2O3 ile CO gazının mol/katsayı oranlarından sınırlayıcı bileşenin ve kuramsal Fe ürününün nasıl saptanacağını açıklayınız.",
         "Üçüncü aşamada fırından fiilen alınan gerçek Fe kütlesi ile kuramsal Fe kütlesini oranlayarak yüzde verimin nasıl hesaplanacağını özetleyiniz."
       ],
-      "cevap": "Birinci aşamada cevherdeki yabancı maddeler tepkimeye girmeyeceği için toplam cevher kütlesi saflık yüzdesiyle çarpılarak saf Fe2O3 kütlesi bulunur ve mol kütlesine (M_A) bölünerek saf Fe2O3 mol sayısına geçilir. İkinci aşamada eldeki saf Fe2O3'ün molü 1'e, CO gazının molü ise denklemdeki katsayısı olan 3'e bölünür; oranı küçük olan madde sınırlayıcı bileşen seçilir ve BDS tablosunda bu bileşenin tamamen tükendiği varsayılarak oluşması gereken 'kuramsal (teorik) Fe' miktarı hesaplanır. Üçüncü aşamada ise üretim sonunda elde edilen 'gerçek Fe' kütlesi, hesaplanan 'kuramsal Fe' kütlesine bölünüp 100 ile çarpılarak tepkimenin yüzde verimi belirlenir."
+      "cevap": "Birinci aşamada cevherdeki yabancı maddeler tepkimeye girmeyeceği için toplam cevher kütlesi saflık yüzdesiyle çarpılarak saf Fe2O3 kütlesi bulunur ve mol kütlesine (M{alt:A}) bölünerek saf Fe2O3 mol sayısına geçilir. İkinci aşamada eldeki saf Fe2O3'ün molü 1'e, CO gazının molü ise denklemdeki katsayısı olan 3'e bölünür; oranı küçük olan madde sınırlayıcı bileşen seçilir ve BDS tablosunda bu bileşenin tamamen tükendiği varsayılarak oluşması gereken 'kuramsal (teorik) Fe' miktarı hesaplanır. Üçüncü aşamada ise üretim sonunda elde edilen 'gerçek Fe' kütlesi, hesaplanan 'kuramsal Fe' kütlesine bölünüp 100 ile çarpılarak tepkimenin yüzde verimi belirlenir."
     }
   ],
   "ozet": [
