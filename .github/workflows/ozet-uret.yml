@@ -82,7 +82,12 @@ jobs:
           MODEL: ${{ inputs.model }}
           CABA: ${{ inputs.caba }}
           BUTCE: ${{ inputs.butce }}
+          ANA_DAL: ${{ github.event.repository.default_branch }}
         run: |
+          if [ "$GITHUB_EVENT_NAME" != "schedule" ] && [ "$YONTEM" = "toplu" ] && [ "$GITHUB_REF_NAME" != "$ANA_DAL" ]; then
+            # toplu istek kayıtları dal başına tutulur, toplayıcı yalnız ana dalda çalışır: sonuçlar karışmasın
+            echo "::error::Toplu kip yalnız $ANA_DAL dalında çalıştırılabilir; deneme dalında anlik kipi kullanın."; exit 1
+          fi
           if [ -z "$ANTHROPIC_API_KEY" ]; then
             if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
               echo "ANTHROPIC_API_KEY yok; toplayıcı atlandı."; echo "kod=0" >> "$GITHUB_OUTPUT"; exit 0
@@ -211,6 +216,31 @@ jobs:
             sleep $((deneme * 15))
           done
           echo "::error::Gönderilemedi. Üretilen dosyalar ve toplu istek kayıtları bu çalıştırmanın Artifacts bölümünde duruyor."
+          exit 1
+
+      # İptal edilen ya da süresi dolan çalıştırma: gönderilen toplu isteklerin kaydı ve ödenmiş kaynak dosyalar
+      # kaybolmasın (kayıt olmazsa süren istek "bilinmeyen" sayılır ve 24 saate dek yeni gönderimi durdurur).
+      # Sayfalar derlenmez; yeni özetler yazılırken zaten derlenip denetlenmişti, yayın botu sonraki çalışmasında derler.
+      - name: İptalde kayıtları ve kaynak dosyaları kaydet
+        if: ${{ cancelled() && ((steps.yedek.outputs.adet != '' && steps.yedek.outputs.adet != '0') || steps.yedek.outputs.durum == '1') }}
+        env:
+          HAFTA: ${{ inputs.hafta }}
+        run: |
+          git config user.name "ozet-botu"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          Y="$RUNNER_TEMP/uretim"
+          for _ in 1 2 3; do
+            git fetch -q origin "$GITHUB_REF_NAME"
+            git reset -q --hard "origin/$GITHUB_REF_NAME"
+            if [ -s "$Y/kaynak.tgz" ]; then tar xzf "$Y/kaynak.tgz" --skip-old-files; fi
+            if [ -f "$Y/toplu_durum.json" ]; then cp "$Y/toplu_durum.json" araclar/veri/toplu_durum.json; fi
+            git add araclar/ozetler araclar/gorseller araclar/sosyal araclar/veri/toplu_durum.json
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -q -m "${HAFTA:+$HAFTA. hafta: }iptal edilen çalıştırmanın kayıtları ve kaynak dosyaları"
+            if git push -q origin "HEAD:$GITHUB_REF_NAME"; then exit 0; fi
+            sleep 10
+          done
+          echo "::error::Kayıtlar gönderilemedi; bu çalıştırmanın Artifacts bölümünde duruyor."
           exit 1
 
       - name: Hatalı, bekleyen ya da ayıklanan ders varsa bildir

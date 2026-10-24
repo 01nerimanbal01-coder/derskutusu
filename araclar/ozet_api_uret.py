@@ -31,6 +31,7 @@ Kullanım:
 Sonrasında: python3 araclar/sosyal_gorsel.py --kuyruk "$(python3 araclar/ozet_api_uret.py --kuyruk-baslangici)"
 """
 import argparse
+import copy
 import html
 import importlib.util
 import json
@@ -1054,7 +1055,9 @@ class Butce:
 
 def toplu_gonder(client, istekler, etiket):
     b = _api(lambda: client.messages.batches.create(requests=istekler))
+    p = istekler[0]['params']
     durum()['gonderilen'][b.id] = {'zaman': datetime.now(timezone.utc).isoformat(timespec='seconds'),
+                                   'model': p['model'], 'caba': p['output_config']['effort'],
                                    'istekler': [r['custom_id'] for r in istekler]}
     durum_kaydet()
     print(f'{etiket}: {len(istekler)} istek gönderildi ({b.id})', flush=True)
@@ -1101,12 +1104,16 @@ def topla(client, args, ctx, sayac, bitis, butce, bekle_bilinmeyen, duzelt=True)
     d = durum()
     sinir = datetime.now(timezone.utc) - timedelta(days=KURTARMA_GUN)
     t = {'yazilan': [], 'hata': [], 'bekleyen': set(), 'bilinmeyen': False}
-    duzeltilecek, d_denendi = {}, set()
+    duzeltilecek, d_denendi, ayar = {}, set(), {}
+    toplular = []
     for b in _api(lambda: client.messages.batches.list(limit=50)):      # en yeni önce
         if b.created_at < sinir:
             break
-        if b.id in d['toplanan']:
-            continue
+        if b.id not in d['toplanan']:
+            toplular.append(b)
+    # önce bitmiş istekler: aynı derslerin süren kopyası aynı turda iptal edilebilsin
+    toplular.sort(key=lambda b: b.processing_status != 'ended')
+    for b in toplular:
         if b.processing_status in ('in_progress', 'canceling'):
             bilinen = d['gonderilen'].get(b.id)
             if bilinen:
@@ -1135,6 +1142,7 @@ def topla(client, args, ctx, sayac, bitis, butce, bekle_bilinmeyen, duzelt=True)
                 continue
         if b.processing_status != 'ended':
             continue
+        bilinen = d['gonderilen'].get(b.id) or {}
         try:
             for r in _api(lambda: client.messages.batches.results(b.id)):
                 h, k, tur = _ozel_coz(r.custom_id)
@@ -1147,6 +1155,7 @@ def topla(client, args, ctx, sayac, bitis, butce, bekle_bilinmeyen, duzelt=True)
                     print(f'  [tamam] {k}-{h}: {bilgi} ({b.id})', flush=True)
                 elif sonuc == 'duzelt' and (h, k) not in d_denendi:
                     duzeltilecek.setdefault((h, k), bilgi)
+                    ayar.setdefault((h, k), (bilinen.get('model'), bilinen.get('caba')))
                 else:
                     if tur == 'd':
                         d_denendi.add((h, k))
@@ -1158,6 +1167,11 @@ def topla(client, args, ctx, sayac, bitis, butce, bekle_bilinmeyen, duzelt=True)
             if isinstance(exc, SystemExit):
                 raise
             print(f'  {b.id} sonuçları okunamadı: {type(exc).__name__}: {exc}', flush=True)
+            # okunamayan isteğin dersleri yeniden gönderilmez (sonuçları ödenmiş olabilir); sonraki toplamada denenir
+            if bilinen:
+                t['bekleyen'].update(hk for hk in (_ozel_coz(cid)[:2] for cid in bilinen['istekler']) if hk[1])
+            else:
+                t['bilinmeyen'] = True
             continue
         d['toplanan'].append(b.id)
         d['gonderilen'].pop(b.id, None)
@@ -1178,8 +1192,11 @@ def topla(client, args, ctx, sayac, bitis, butce, bekle_bilinmeyen, duzelt=True)
                 t['hata'].append((h, k, f'bütçe doldu; düzeltme gönderilmedi ({"; ".join(sorunlar[:3])})'))
                 print(f'  [hata] {k}-{h}: bütçe doldu; düzeltme gönderilmedi', flush=True)
                 continue
+            m, c = ayar.get((h, k), (None, None))
+            a = copy.copy(args)
+            a.model, a.caba = m or args.model, c or args.caba     # ilk turun modeli ve çabası
             try:
-                istekler.append(_istek(args, _ozel_kimlik(h, k, 'd'), duzeltme_mesajlari(ilk_mesaj(k, h, ctx), metin, sorunlar)))
+                istekler.append(_istek(a, _ozel_kimlik(h, k, 'd'), duzeltme_mesajlari(ilk_mesaj(k, h, ctx), metin, sorunlar)))
             except ValueError as exc:
                 t['hata'].append((h, k, str(exc)))
                 continue
@@ -1335,7 +1352,10 @@ def main():
             haric = set()
             if not args.kurtarma_yok:
                 # anlık kip: önce biten toplu isteklerin sonuçları yazılır; süren istekteki dersler anlık üretilmez
-                t = topla(client, args, ctx, sayac, bitis, Butce(0, 1), bekle_bilinmeyen=True, duzelt=False)
+                onceki = Sayac(args.model)    # önceden ödenmiş sonuçlar bu çalıştırmanın bütçesinden düşülmez
+                t = topla(client, args, ctx, onceki, bitis, Butce(0, 1), bekle_bilinmeyen=True, duzelt=False)
+                if t['yazilan']:
+                    print(f'Önceki toplu isteklerden {len(t["yazilan"])} özet yazıldı (daha önce ödendi: {onceki})', flush=True)
                 if t['bilinmeyen']:
                     raise SystemExit('İçeriği kayıtlı olmayan bir toplu istek süre içinde bitmedi; aynı derslere iki kez ödememek için '
                                      'anlık üretim başlatılmadı.')

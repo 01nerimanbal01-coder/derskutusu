@@ -51,6 +51,8 @@ Her hafta:
 
 Gönderilen her toplu isteğin hangi dersleri içerdiği `araclar/veri/toplu_durum.json` dosyasında kayıtlıdır; elle değiştirilmez. Bu kayıt sayesinde aynı derse iki kez ödenmez, bitmiş isteğin sonucu bir kez yazılır (sonradan bilerek silinen özet geri gelmez) ve içindeki dersler başka yoldan yazılmış bir istek iptal edilir. Kayıtta olmayan bir toplu istek sürerken (ör. yerelden gönderilmiş) yeni istek gönderilmez; o istek bitip toplanınca devam edilir.
 
+Bir çalıştırma sürerken ikincisini başlatmayın: sırada bekleyen çalıştırmayı iki saatte bir gelen toplayıcı iptal edebilir. Önceki bitince başlatın. Toplu kip yalnız `main` dalında çalışır; düzeltme turu ilk turun modeli ve çabasıyla gönderilir.
+
 İş akışı özetleri, görsel modüllerini, sosyal medya kartlarını ve paylaşım kuyruğunu üretir; her özet sitenin sayfa üreticisiyle derlenip yayın denetiminden geçirilir. Denetime takılan özet ayıklanır, kalanlar yayımlanır. Üretilen dosyalar her çalıştırmanın **Artifacts** bölümünde 30 gün saklanır. Yerelde aynı iş: `python3 araclar/ozet_api_uret.py --hafta 15 --toplu`, yalnız toplama: `--topla` (yardım: `--help`; API'siz prova: `--kuru`).
 
 Kalan kredi: platform.claude.com/settings/billing, **Promotional credits** satırı (tutar ve bitiş tarihi). Harcamanın dökümü platform.claude.com/cost sayfasındadır; birkaç dakika gecikmeli yansıyabilir. Kredi biterse araç durur; kredi yenilenince aynı hafta yeniden çalıştırılır ve kaldığı yerden devam eder. Anahtar silinirse otomatik toplayıcı sessizce atlanır.
