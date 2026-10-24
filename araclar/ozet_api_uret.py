@@ -678,6 +678,11 @@ def yayin_hazirla(liste_dosyasi):
     yeni = [s.strip() for s in Path(liste_dosyasi).read_text(encoding='utf-8').splitlines() if s.strip()]
     ayiklanan = []
 
+    def izlenen(yol):
+        # depoda zaten kayıtlı dosya (bu sırada dala başka yoldan gelmiş özet) asla silinmez
+        return subprocess.run(['git', 'ls-files', '--error-unmatch', str(yol.relative_to(KOK))], cwd=KOK,
+                              capture_output=True).returncode == 0
+
     def ayikla(ad, neden):
         m = re.fullmatch(r'(\d+)-(.+)-(\d+)', ad)
         sinif, ders, hafta = m.group(1), m.group(2), m.group(3)
@@ -685,7 +690,8 @@ def yayin_hazirla(liste_dosyasi):
         for yol in (OZETLER / f'{ad}.json', ARACLAR / 'gorseller' / f'{ad}.py',
                     ARACLAR / 'sosyal' / f'bilgi-{sinif}-{sg.DERSLER[ders][0]}-{hafta}.json',
                     PUBLIC / 'ozet' / f'{sinif}-{ders}-hafta-{hafta}.html'):
-            yol.unlink(missing_ok=True)
+            if not izlenen(yol):
+                yol.unlink(missing_ok=True)
         ayiklanan.append(ad)
         print(f'::warning::{ad} yayın denetiminden geçmedi ({neden[:300]}); bu hafta yayımlanmadan ayıklandı (Artifacts yedeğinde duruyor).', flush=True)
 
@@ -749,6 +755,7 @@ def yayin_hazirla(liste_dosyasi):
         return 1
     if ayiklanan:
         print('AYIKLANAN: ' + ', '.join(ayiklanan))
+        Path(liste_dosyasi).with_name('ayiklanan.txt').write_text('\n'.join(ayiklanan) + '\n', encoding='utf-8')
     return 0
 
 

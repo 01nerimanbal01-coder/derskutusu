@@ -38,6 +38,13 @@ on:
         description: 'Bu çalıştırmada en çok harcanacak tutar (USD)'
         required: true
         default: '50'
+      kurtarma:
+        description: 'Önceki toplu isteklerin ödenmiş sonuçlarını kullan (hayır: bilerek silinen özeti yeniden üretmek için)'
+        type: choice
+        options:
+          - evet
+          - hayir
+        default: evet
 
 permissions:
   contents: write
@@ -77,13 +84,16 @@ jobs:
           MODEL: ${{ inputs.model }}
           CABA: ${{ inputs.caba }}
           BUTCE: ${{ inputs.butce }}
+          KURTARMA: ${{ inputs.kurtarma }}
         run: |
           if [ -z "$ANTHROPIC_API_KEY" ]; then
             echo "::error::ANTHROPIC_API_KEY gizli anahtarı yok (KURULUM.md → Claude API kredisiyle özet üretme)"; exit 1
           fi
           set +e
-          ARG=(--hafta "$HAFTA" --model "$MODEL" --caba "$CABA" --butce "$BUTCE" --paralel 4 --sure-dk 280)
-          if [ "$YONTEM" = "toplu" ]; then ARG+=(--toplu); fi
+          # adım 300 dakikada kesilir: toplu kipte bekleme kısa, anlık kipte açık istekler ve düzeltmeler için pay
+          if [ "$YONTEM" = "toplu" ]; then ARG=(--toplu --sure-dk 280); else ARG=(--sure-dk 250); fi
+          ARG+=(--hafta "$HAFTA" --model "$MODEL" --caba "$CABA" --butce "$BUTCE" --paralel 4)
+          if [ "$KURTARMA" = "hayir" ]; then ARG+=(--kurtarma-yok); fi
           if [ -n "$DERSLER" ]; then ARG+=(--dersler "$DERSLER"); fi
           python araclar/ozet_api_uret.py "${ARG[@]}" 2>&1 | tee "$RUNNER_TEMP/uretim.log"
           echo "kod=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
@@ -131,9 +141,20 @@ jobs:
           for deneme in 1 2 3 4; do
             git fetch -q origin "$GITHUB_REF_NAME"
             git reset -q --hard "origin/$GITHUB_REF_NAME"
-            tar xzf "$RUNNER_TEMP/uretim/kaynak.tgz"
-            python araclar/ozet_api_uret.py --yayin-hazirla "$RUNNER_TEMP/yeni.txt"
-            python araclar/sosyal_gorsel.py --kuyruk "$(python araclar/ozet_api_uret.py --kuyruk-baslangici)"
+            # bu sırada dala başka yoldan gelmiş dosyaların üzerine yazılmaz
+            tar xzf "$RUNNER_TEMP/uretim/kaynak.tgz" --skip-old-files
+            if ! python araclar/ozet_api_uret.py --yayin-hazirla "$RUNNER_TEMP/yeni.txt"; then
+              # ilgisiz bir denetim hatası: sayfalar derlenmez ama parası ödenmiş kaynak dosyalar kaybolmasın
+              git reset -q --hard "origin/$GITHUB_REF_NAME"
+              tar xzf "$RUNNER_TEMP/uretim/kaynak.tgz" --skip-old-files
+              git add araclar/ozetler araclar/gorseller araclar/sosyal
+              git commit -q -m "$HAFTA. hafta: üretilen özet kaynakları (sayfalar yayın denetimi düzelince derlenir)" || true
+              git push -q origin "HEAD:$GITHUB_REF_NAME" || true
+              echo "::error::Yayın denetimi bu çalıştırmanın özetleriyle ilgisiz bir nedenle başarısız; kaynak dosyalar kaydedildi, sayfalar derlenmedi."
+              exit 1
+            fi
+            python araclar/sosyal_gorsel.py --kuyruk "$(python araclar/ozet_api_uret.py --kuyruk-baslangici)" \
+              || echo "::warning::Sosyal medya kartları çizilemedi ya da kuyruğa eklenemedi; özetler yine yayımlanıyor."
             ADET=$(git status --porcelain --untracked-files=all -- araclar/ozetler | grep -c '^??' || true)
             if [ "$ADET" = "0" ]; then echo "::error::Yayımlanacak özet kalmadı (hepsi denetime takıldı)."; exit 1; fi
             git add araclar/ozetler araclar/gorseller araclar/sosyal araclar/veri public sosyal
@@ -156,7 +177,15 @@ jobs:
           exit 1
 
       - name: Hatalı, bekleyen ya da ayıklanan ders varsa bildir
-        if: ${{ !cancelled() && steps.uret.outputs.kod != '0' }}
+        if: ${{ !cancelled() }}
+        env:
+          KOD: ${{ steps.uret.outputs.kod }}
         run: |
-          echo "::warning::Bazı dersler üretilemedi ya da bütçe/süre doldu; ayrıntı özet sayfasında. Aynı haftayı yeniden çalıştırın, kalanlar üretilir."
-          exit 1
+          if [ -s "$RUNNER_TEMP/ayiklanan.txt" ]; then
+            echo "::warning::Yayın denetimine takıldığı için ayıklanan özetler: $(paste -sd, "$RUNNER_TEMP/ayiklanan.txt"). Yeniden üretmek için aynı haftayı 'kurtarma: hayir' ile ve yalnız bu derslerle çalıştırın."
+            exit 1
+          fi
+          if [ "$KOD" != "0" ]; then
+            echo "::warning::Bazı dersler üretilemedi ya da bütçe/süre doldu; ayrıntı özet sayfasında. Aynı haftayı yeniden çalıştırın, kalanlar üretilir."
+            exit 1
+          fi
