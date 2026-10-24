@@ -45,10 +45,66 @@
   }
 }
 </script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Ders Kutusu ücretli mi, üye olmak gerekiyor mu?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Hayır. Bütün içerikler ücretsizdir ve üyelik gerekmez. Konu anlatımlarını açabilir, PDF dosyalarını doğrudan indirebilirsiniz."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "İçerikler hangi programa göre hazırlanıyor?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Konu anlatımları Türkiye Yüzyılı Maarif Modeli ders kitaplarına ve yıllık planlara göre hafta hafta hazırlanır. Metinler özgündür; ders kitabından cümle alınmaz."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Konu anlatımlarını akıllı tahtada kullanabilir miyim?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Evet. Her konu anlatımında sunum modu ve kalemle yazma vardır. Dijital tahta sayfası da kalem, renkler ve kareli zeminle tarayıcıda çalışır."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Çalışma kâğıtları ve yazılılar cevaplı mı?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Çalışma kâğıtları cevapsız ve cevaplı PDF olarak indirilir. Öğrenci sayfalarında yazılıların yalnız öğrenci kâğıdı bulunur; cevaplı kâğıtlar Öğretmen Köşesi'ndedir."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Günlük planlara okul ve öğretmen adını yazabilir miyim?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Evet. Okul, öğretmen ve yönetici adları her sayfaya yazılır; planı tüm yıl ya da ay ay, Word veya PDF olarak indirebilirsiniz. Adlar yalnız tarayıcınızda kalır."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Kişisel bilgilerim toplanıyor mu?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Hayır. Sitede üyelik yoktur ve kişisel bilgi istenmez. Ziyaret sayımı çerezsiz yapılır; reklam çerezi yalnız izin verirseniz kullanılır."
+   }
+  }
+ ]
+}
+</script>
 <link rel="stylesheet" href="stil.css?v=202610181435">
 <link rel="stylesheet" href="/kesif.css?v=20261017-1">
 <link rel="stylesheet" href="/renkler.css?v=20261017-1" media="screen">
-<link rel="stylesheet" href="/agac.css?v=20261017-1">
+<link rel="stylesheet" href="/agac.css?v=20261025-1">
 </head>
 <body data-site-renk="mavi" class="kesif-page">
 <a class="atla" href="#icerik">İçeriğe geç</a>
@@ -131,6 +187,24 @@
     </div>
   </section>
 
+  <section class="bolum bu-hafta" id="bu-hafta" aria-labelledby="bu-hafta-baslik">
+    <div class="kap">
+      <div class="bh-bas">
+        <div>
+          <p class="ust-baslik">Haftanın konuları</p>
+          <h2 id="bu-hafta-baslik">Bu hafta derste</h2>
+          <p class="bh-tarih" id="bh-tarih" aria-live="polite">Sınıfını seç; bu haftanın konu anlatımları burada sıralansın.</p>
+        </div>
+        <div class="bh-gecis">
+          <button class="bh-ok" id="bh-onceki" type="button" hidden><svg aria-hidden="true"><use href="#s-ok"/></svg>Önceki hafta</button>
+          <button class="bh-ok" id="bh-sonraki" type="button" hidden>Sonraki hafta<svg aria-hidden="true"><use href="#s-ok"/></svg></button>
+        </div>
+      </div>
+      <div class="bh-siniflar" id="bh-siniflar" role="group" aria-label="Sınıf seç"><a href="/ogrenci.html?sinif=5">5. sınıf</a><a href="/ogrenci.html?sinif=6">6. sınıf</a><a href="/ogrenci.html?sinif=7">7. sınıf</a><a href="/ogrenci.html?sinif=8">8. sınıf</a><a href="/ogrenci.html?sinif=9">9. sınıf</a><a href="/ogrenci.html?sinif=10">10. sınıf</a><a href="/ogrenci.html?sinif=11">11. sınıf</a><a href="/ogrenci.html?sinif=12">12. sınıf</a></div>
+      <div class="bh-liste" id="bh-liste" aria-live="polite"></div>
+    </div>
+  </section>
+
   <section class="bolum" id="araclar"><div class="kap"><div class="kesif-araclar"><div><p>SINIFTA VE EVDE</p><h2>Derse küçük yardımcılar</h2><p>Anlat, dinle, tekrar et. Dersin akışına uygun aracı aç.</p></div><div class="kesif-arac-links"><a data-renk="yesil" href="/tahta.html">Dijital tahta <span aria-hidden="true">↗</span></a><a data-renk="turuncu" href="/ders-dagitim.html">Ders dağıtım programı <span aria-hidden="true">↗</span></a><a data-renk="turkuaz" href="/belgeler.html">Resmî belgeler <span aria-hidden="true">↗</span></a><a data-renk="lacivert" href="/arapca.html">Arapça çalışmaları <span aria-hidden="true">↗</span></a><a data-renk="sari" href="/kpss.html">KPSS hazırlık <span aria-hidden="true">↗</span></a></div></div></div></section>
   <section id="sosyal" class="bolum koyu-zemin">
     <div class="kap">
@@ -187,6 +261,24 @@
     </div>
   </section>
 
+  <section id="sss" class="bolum sss" aria-labelledby="sss-baslik">
+    <div class="kap sss-ic">
+      <div>
+        <p class="ust-baslik">Sık sorulan sorular</p>
+        <h2 id="sss-baslik">Merak edilenler</h2>
+        <p class="giris-metin">Bulamadığınız bir soru varsa <a data-eposta href="mailto:info@derskutusu.com">info@derskutusu.com</a> adresine yazabilirsiniz.</p>
+      </div>
+      <div class="sss-liste">
+        <details class="sss-oge" open><summary>Ders Kutusu ücretli mi, üye olmak gerekiyor mu?</summary><p>Hayır. Bütün içerikler ücretsizdir ve üyelik gerekmez. Konu anlatımlarını açabilir, PDF dosyalarını doğrudan indirebilirsiniz.</p></details>
+        <details class="sss-oge"><summary>İçerikler hangi programa göre hazırlanıyor?</summary><p>Konu anlatımları Türkiye Yüzyılı Maarif Modeli ders kitaplarına ve yıllık planlara göre hafta hafta hazırlanır. Metinler özgündür; ders kitabından cümle alınmaz.</p></details>
+        <details class="sss-oge"><summary>Konu anlatımlarını akıllı tahtada kullanabilir miyim?</summary><p>Evet. Her konu anlatımında sunum modu ve kalemle yazma vardır. Dijital tahta sayfası da kalem, renkler ve kareli zeminle tarayıcıda çalışır.</p></details>
+        <details class="sss-oge"><summary>Çalışma kâğıtları ve yazılılar cevaplı mı?</summary><p>Çalışma kâğıtları cevapsız ve cevaplı PDF olarak indirilir. Öğrenci sayfalarında yazılıların yalnız öğrenci kâğıdı bulunur; cevaplı kâğıtlar Öğretmen Köşesi'ndedir.</p></details>
+        <details class="sss-oge"><summary>Günlük planlara okul ve öğretmen adını yazabilir miyim?</summary><p>Evet. Okul, öğretmen ve yönetici adları her sayfaya yazılır; planı tüm yıl ya da ay ay, Word veya PDF olarak indirebilirsiniz. Adlar yalnız tarayıcınızda kalır.</p></details>
+        <details class="sss-oge"><summary>Kişisel bilgilerim toplanıyor mu?</summary><p>Hayır. Sitede üyelik yoktur ve kişisel bilgi istenmez. Ziyaret sayımı çerezsiz yapılır; reklam çerezi yalnız izin verirseniz kullanılır.</p></details>
+      </div>
+    </div>
+  </section>
+
   <section id="iletisim" class="bolum">
     <div class="kap">
       <div class="iletisim-kart" data-renk="pembe">
@@ -239,9 +331,10 @@
 </footer>
 
 <noscript><p class="kap">Bu sayfadaki bazı içerikler JavaScript ile yüklenir.</p></noscript>
-<script src="ortak.js?v=20261021-1"></script>
-<script src="/kesif.js?v=20261004-duzen1"></script>
-<script src="akis.js?v=20261014-2"></script>
+<script src="ortak.js?v=20261025-1"></script>
+<script src="/kesif.js?v=20261025-1"></script>
+<script src="/anasayfa.js?v=20261025-1"></script>
+<script src="akis.js?v=20261025-1"></script>
 <script src="arama.js?v=20261004-duzen1"></script>
 <script src="tahta.js?v=20261018-5"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fffb5e8a709947ee9ba14ea753d96275"}'></script><!-- End Cloudflare Web Analytics -->

@@ -88,6 +88,7 @@ function izinKutusu(metin, dugme, tamam) {
   turSayilari(icerikler);
   videolariGoster(yt);
   instagramGoster(ig, ayar);
-  const son = [yt?.guncelleme, ig?.guncelleme].filter(Boolean).sort().pop();
+  // Tarih yalnız sayfada gösterilen bir akış varsa yazılır (boş akışın eski tarihi "güncel değil" izlenimi verir)
+  const son = [yt?.videolar?.length && yt.guncelleme, ig?.gonderiler?.length && ig.guncelleme].filter(Boolean).sort().pop();
   if (son) $('#guncelleme').textContent = `Sosyal medya akışı son güncelleme: ${tarihBicim.format(new Date(son))}`;
 })();

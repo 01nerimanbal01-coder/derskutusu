@@ -113,6 +113,76 @@ $$('[data-yil]').forEach((e) => { e.textContent = new Date().getFullYear(); });
   if (kart) kart.append(el('span', { sinif: 'rol-son' }, 'Son seçimin'));
 })();
 
+// Tarih ve hafta yardımcıları (ana sayfa "Bu hafta derste", ders ağacı "Bu hafta" rozeti, yeni eklenenler).
+// Tarih yerel saatle alınır: toISOString UTC verir, Türkiye'de gece yarısından sonraki üç saat önceki güne düşerdi.
+const yerelTarih = (g = new Date()) => `${g.getFullYear()}-${String(g.getMonth() + 1).padStart(2, '0')}-${String(g.getDate()).padStart(2, '0')}`;
+const bugunTarihi = () => yerelTarih();
+// İçerik dizinindeki gelecek tarihli kayıtlar (haftası gelmemiş özetler) "yeni eklenenler" listelerinde haftası gelince görünür.
+const yayinda = (i) => !i.tarih || String(i.tarih).slice(0, 10) <= bugunTarihi();
+// Planın hafta başlangıçlarından (veri/agac/*.json "haftalar") bugünün haftası. Cumartesi ve pazar, pazartesi başlayacak hafta
+// gösterilir. Dönüş: { no, hafta: {bas, ad}, durum: 'hafta' | 'haftasonu' | 'tatil' | 'once' | 'sonra' } ya da null.
+const haftaBul = (haftalar, gun = new Date()) => {
+  const liste = Object.entries(haftalar || {}).filter(([, h]) => /^\d{4}-\d\d-\d\d$/.test(h?.bas || ''))
+    .map(([no, h]) => ({ no: Number(no), hafta: h })).sort((a, b) => a.hafta.bas.localeCompare(b.hafta.bas));
+  if (!liste.length) return null;
+  const haftaSonu = gun.getDay() === 6 || gun.getDay() === 0;
+  const ileri = new Date(gun); ileri.setDate(gun.getDate() + (gun.getDay() === 6 ? 2 : gun.getDay() === 0 ? 1 : 0));
+  const ref = yerelTarih(ileri), bugun = yerelTarih(gun);
+  if (ref < liste[0].hafta.bas) return { ...liste[0], durum: 'once' };
+  const son = [...liste].reverse().find((x) => x.hafta.bas <= ref);
+  const bitis = new Date(`${son.hafta.bas}T12:00:00`); bitis.setDate(bitis.getDate() + 6);
+  if (son === liste[liste.length - 1] && bugun > yerelTarih(bitis)) return { ...son, durum: 'sonra' };
+  if (bugun > yerelTarih(bitis)) return { ...son, durum: 'tatil' };   // ara tatil: son işlenen hafta
+  return { ...son, durum: haftaSonu && son.hafta.bas > bugun ? 'haftasonu' : 'hafta' };
+};
+// Konu özetinin etkinlik ilerlemesi (etkinlik.js "dk_ozet_<sınıf>-<ders>-<hafta>"): { dogru, toplam, tamam } ya da null
+const ozetIlerleme = (kimlik) => { try { return JSON.parse(localStorage.getItem(`dk_ozet_${kimlik}`) || 'null'); } catch { return null; } };
+
+// "Kaldığın yerden devam et": açılan konu özetleri YALNIZ bu tarayıcıda tutulur (localStorage "dk-son-bakilan"),
+// hiçbir yere gönderilmez; ana sayfada ve öğrenci sayfasında kart olarak görünür, "Listeyi temizle" ile silinir.
+const sonBakilan = (() => {
+  const ANAHTAR = 'dk-son-bakilan', EN_COK = 8;
+  const oku = () => { try { const l = JSON.parse(localStorage.getItem(ANAHTAR) || '[]'); return Array.isArray(l) ? l.filter((k) => k && /^\/ozet\/[\w-]+\.html$/.test(k.a)) : []; } catch { return []; } };
+  const yaz = (l) => { try { l.length ? localStorage.setItem(ANAHTAR, JSON.stringify(l.slice(0, EN_COK))) : localStorage.removeItem(ANAHTAR); } catch {} };
+  const m = /^\/ozet\/((\d+)-([a-z-]+)-hafta-(\d+))\.html$/.exec(location.pathname);
+  const baslik = $('.ozet-bas h1')?.textContent.trim();
+  if (m && baslik) {
+    const ust = ($('.ozet-bas .ust-baslik')?.textContent || '').split('·').map((x) => x.trim());
+    const kayit = { a: location.pathname, b: baslik, s: Number(m[2]), d: m[3], da: ust[1] || '', h: Number(m[4]), k: `${m[2]}-${m[3]}-${m[4]}`, t: Date.now() };
+    yaz([kayit, ...oku().filter((k) => k.a !== kayit.a)]);
+  }
+  const zaman = (t) => {
+    const gun = Math.round((new Date(yerelTarih()) - new Date(yerelTarih(new Date(t)))) / 864e5);
+    return gun <= 0 ? 'Bugün' : gun === 1 ? 'Dün' : gun < 7 ? `${gun} gün önce` : new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long' }).format(new Date(t));
+  };
+  // Bölüm: son bakılan konular kart olarak; liste boşsa null
+  const bolum = ({ kap = true } = {}) => {
+    const liste = oku().slice(0, 4);
+    if (!liste.length) return null;
+    const kartlar = el('div', { sinif: 'devam-kartlar' }, liste.map((k) => {
+      const ilerleme = ozetIlerleme(k.k);
+      const renk = window.Kesif?.subjectColor?.(k.d) || 'mavi';
+      return el('a', { sinif: 'devam-kart', href: k.a, 'data-renk': renk },
+        el('span', { sinif: 'devam-simge', 'aria-hidden': 'true' }, window.Kesif?.subjectIcon ? window.Kesif.subjectIcon(k.d) : simge('kitap')),
+        el('span', { sinif: 'devam-govde' },
+          el('small', {}, [`${k.s}. sınıf`, k.da, `${k.h}. hafta`].filter(Boolean).join(' · ')),
+          el('strong', {}, k.b),
+          el('span', { sinif: 'devam-alt' }, zaman(k.t),
+            ilerleme?.toplam ? el('span', { sinif: `devam-ilerleme${ilerleme.tamam ? ' tamam' : ''}` },
+              ilerleme.tamam ? `✓ Etkinlikler bitti: ${ilerleme.dogru}/${ilerleme.toplam} doğru` : `Etkinlik: ${ilerleme.cevaplanan || 0}/${ilerleme.toplam}`) : null)),
+        el('span', { sinif: 'devam-ok', 'aria-hidden': 'true' }, simge('ok')));
+    }));
+    const temizle = el('button', { sinif: 'devam-temizle', type: 'button' }, 'Listeyi temizle');
+    const ic = [el('div', { sinif: 'devam-bas' },
+      el('div', {}, el('p', { sinif: 'ust-baslik' }, 'Kaldığın yerden devam et'), el('h2', { id: 'devam-baslik' }, 'Son baktığın konular')),
+      el('p', { sinif: 'devam-not' }, 'Bu liste yalnız bu tarayıcıda tutulur.', temizle)), kartlar];
+    const sec = el('section', { sinif: 'bolum devam-bolum', 'aria-labelledby': 'devam-baslik' }, kap ? el('div', { sinif: 'kap' }, ...ic) : ic);
+    temizle.addEventListener('click', () => { yaz([]); sec.remove(); });
+    return sec;
+  };
+  return { oku, bolum };
+})();
+
 // Toplam ziyaret ve sayfa görüntüleme (Cloudflare Web Analytics toplu verisinden saatte bir üretilir: araclar/ziyaret_guncelle.py)
 veri('ziyaret.json').then((z) => {
   if (!z) return;
@@ -219,7 +289,7 @@ ortakVeri.then(({ ayar }) => {
     const kitle = document.body.dataset.kitle;   // öğrenci dalında yalnız öğrenci, öğretmen dalında yalnız öğretmen içerikleri
     const turKitle = Object.fromEntries((dersler?.turler || []).map((t) => [t.ad, t.kitle]));
     const kitleUyar = (i) => !kitle || (i.kitle || 'ogrenci') === kitle || turKitle[i.tur] === kitle;
-    const kayitlar = icerikler.filter((i) => i.tarih && kitleUyar(i) && (i.hazirla || i.goruntule || i.dosya || i.baglanti)).map((i) => {
+    const kayitlar = icerikler.filter((i) => i.tarih && yayinda(i) && kitleUyar(i) && (i.hazirla || i.goruntule || i.dosya || i.baglanti)).map((i) => {
       const ad = dersAd(i.ders);
       let baslik = String(i.baslik || '').replace(/^\d+\.\s*Sınıf\s+/, '');
       if (ad && baslik.startsWith(`${ad} `)) baslik = baslik.slice(ad.length + 1);   // sınıf ve ders alt satırda
