@@ -35,28 +35,36 @@ Aynı anahtar hem Instagram gönderilerini siteye çeker hem de kuyruktaki kartl
 3. İsteğe bağlı: anahtarın kendiliğinden yenilenip GitHub'a yazılması için yalnız bu depoya "Secrets: Read and write" izni olan bir fine-grained token oluşturup `GH_PAT` adıyla ekleyin. Eklemezseniz anahtar 60 günde bir yenilenmelidir.
 
 ## Claude API kredisiyle özet üretme
-Max planı her ay API kredisi verir (Max 5x: 100 $). Bu kredi, haftalık konu özetlerini GitHub'da kendiliğinden ürettirmek için kullanılır. Kredi claude.ai sohbet kullanımından ayrıdır ve ay devrinde biter, sonraki aya aktarılmaz (yenileme tarihi Faturalandırma sayfasında yazar).
+Max planı her ay API kredisi verir (Max 5x: 100 $). Bu kredi, haftalık konu özetlerini GitHub'da kendiliğinden ürettirmek için kullanılır. Kredi claude.ai ve Claude Code kullanımından ayrıdır; ay devrinde biter, sonraki aya aktarılmaz (yenileme tarihi claude.ai → Ayarlar → Faturalandırma sayfasında yazar).
 
-Bir kez yapılacaklar:
-1. claude.ai → **Ayarlar → Faturalandırma → API kredileri → Kuruluş oluştur**. Açılan Claude Console'da kuruluşu oluşturun. Bu bağlantı sonradan değiştirilemez.
-2. platform.claude.com → **API Keys → Create Key**. Anahtarı kopyalayın, kimseye yazmayın.
-3. GitHub deposunda **Settings → Secrets and variables → Actions → New repository secret**: ad `ANTHROPIC_API_KEY`, değer bu anahtar.
+Bir kez yapılanlar (24.10.2026'da tamamlandı):
+1. claude.ai → **Ayarlar → Faturalandırma → API kredileri**: Console kuruluşu bağlandı ("Bağlı"). Bu bağlantı sonradan değiştirilemez.
+2. platform.claude.com → **API Keys → Create Key** ile anahtar oluşturuldu.
+3. GitHub deposunda **Settings → Secrets and variables → Actions**: `ANTHROPIC_API_KEY` adıyla eklendi. Anahtar değişirse aynı yerde kaleme basıp güncellenir.
 
 Her hafta:
 1. GitHub → **Actions → Haftalık özetleri Claude API ile üret → Run workflow**.
-2. `hafta` alanına hafta numarasını yazın. İlk seferde `dersler` alanına iki üç ders yazıp deneyin (ör. `7-matematik,10-tarih`); özet sayfasında harcanan tutar görünür.
-3. Sonuç iyiyse `dersler` boş bırakılarak 103 dersin hepsi üretilir. Var olan özetler atlanır; bütçe dolarsa aynı hafta yeniden çalıştırılınca kaldığı yerden sürer.
+2. `hafta` alanına hafta numarasını yazın; `dersler` boş kalırsa 103 dersin hepsi üretilir.
+3. Diğer alanlar varsayılan kalabilir: `toplu` (yarı fiyat), `claude-opus-5-5`, `medium`, bütçe 50 $.
+4. Çalıştırma istekleri gönderir ve bir saat bekler; bu sürede biten özetler yayımlanır. Toplu istekler bazen saatler sürer (en geç 24 saat). Bitmeyenleri aynı iş akışı **iki saatte bir kendiliğinden** çalışarak toplar, yayımlar ve denetime takılanlar için düzeltme turunu gönderir. Elle bir şey yapmak gerekmez.
+5. Özet sayfasında üretilen, hatalı, bekleyen ve gönderilmeyen dersler ile harcanan tutar yazar. Bütçe dolduysa ya da bazı dersler hatalıysa aynı hafta yeniden çalıştırılır: var olan ve toplu istekte bekleyen dersler atlanır, yalnız eksikler gönderilir.
 
-İş akışı özetleri, görsel modüllerini, sosyal medya kartlarını ve paylaşım kuyruğunu üretir; yayın denetiminden geçerse siteye gönderir. Yerelde aynı iş: `python3 araclar/ozet_api_uret.py --hafta 15` (yardım: `--help`).
+Gönderilen her toplu isteğin hangi dersleri içerdiği `araclar/veri/toplu_durum.json` dosyasında kayıtlıdır; elle değiştirilmez. Bu kayıt sayesinde aynı derse iki kez ödenmez, bitmiş isteğin sonucu bir kez yazılır (sonradan bilerek silinen özet geri gelmez) ve içindeki dersler başka yoldan yazılmış bir istek iptal edilir. Kayıtta olmayan bir toplu istek sürerken (ör. yerelden gönderilmiş) yeni istek gönderilmez; o istek bitip toplanınca devam edilir.
 
-Kalan kredi: platform.claude.com → **Settings → Billing**, "Promotional credits" satırı (tutar ve bitiş tarihi). Harcamanın gün gün dökümü **Usage** ve **Cost** sayfalarındadır. Kredi biterse araç durur ve kredi yenilenince kaldığı yerden devam eder.
+Bir çalıştırma sürerken ikincisini başlatmayın: sırada bekleyen çalıştırmayı iki saatte bir gelen toplayıcı iptal edebilir. Önceki bitince başlatın. Toplu kip yalnız `main` dalında çalışır; düzeltme turu ilk turun modeli ve çabasıyla gönderilir.
 
-Yaklaşık maliyet (ilk denemede gerçek tutar ölçülmeli):
+İş akışı özetleri, görsel modüllerini, sosyal medya kartlarını ve paylaşım kuyruğunu üretir; her özet sitenin sayfa üreticisiyle derlenip yayın denetiminden geçirilir. Denetime takılan özet ayıklanır, kalanlar yayımlanır. Üretilen dosyalar her çalıştırmanın **Artifacts** bölümünde 30 gün saklanır. Yerelde aynı iş: `python3 araclar/ozet_api_uret.py --hafta 15 --toplu`, yalnız toplama: `--topla` (yardım: `--help`; API'siz prova: `--kuru`).
 
-| Model | Bir özet | Bir hafta (103 ders) |
+Kalan kredi: platform.claude.com/settings/billing, **Promotional credits** satırı (tutar ve bitiş tarihi). Harcamanın dökümü platform.claude.com/cost sayfasındadır; birkaç dakika gecikmeli yansıyabilir. Kredi biterse araç durur; kredi yenilenince aynı hafta yeniden çalıştırılır ve kaldığı yerden devam eder. Anahtar silinirse otomatik toplayıcı sessizce atlanır.
+
+Maliyet (bir özet ortalama 34 bin jeton girdi, 58 bin jeton çıktı; çıktının çoğu modelin düşünmesi ve 60-75 KB JSON):
+
+| Ayar | Bir özet | Bir hafta (103 ders) |
 |---|---|---|
-| claude-opus-5-5 (varsayılan) | 0,7-1 $ | 70-100 $ |
-| claude-sonnet-5-5 | 0,35-0,5 $ | 35-50 $ |
+| Opus 5.5, high, anlık (24.10.2026 ölçümü: 2 özet + 1 düzeltme = 3,96 $) | yaklaşık 2 $ | yaklaşık 200 $ |
+| Opus 5.5, high, toplu | yaklaşık 1 $ | yaklaşık 100 $ |
+| Opus 5.5, medium, toplu (varsayılan) | tahminen 0,5-0,8 $ | tahminen 50-80 $ |
+| Sonnet 5.5, medium, toplu | tahminen 0,25-0,4 $ | tahminen 25-40 $ |
 
 ## Bilinmesi gerekenler
 - Depoda 60 gün hiç etkinlik olmazsa GitHub zamanlanmış çalışmayı durdurur ve e-postayla haber verir; Actions sekmesinden yeniden açılır.
