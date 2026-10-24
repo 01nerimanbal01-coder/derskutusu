@@ -2,7 +2,7 @@ name: Haftalık özetleri Claude API ile üret
 
 # Elle çalıştırılır: Actions → "Haftalık özetleri Claude API ile üret" → Run workflow.
 # Max planının aylık API kredisini kullanır (KURULUM.md → "Claude API kredisiyle özet üretme").
-# Var olan özetler atlanır; bütçe dolarsa ya da kredi biterse aynı hafta yeniden çalıştırılınca kaldığı yerden sürer.
+# Var olan özetler atlanır; bütçe ya da süre dolarsa aynı hafta yeniden çalıştırılınca kaldığı yerden sürer.
 on:
   workflow_dispatch:
     inputs:
@@ -13,6 +13,13 @@ on:
         description: 'Yalnız bu dersler, virgülle (ör. 7-matematik,10-tarih). Boş bırakılırsa 103 dersin hepsi'
         required: false
         default: ''
+      yontem:
+        description: 'toplu = yarı fiyat, sonuç genelde 1 saat içinde; anlik = hemen, iki kat fiyat'
+        type: choice
+        options:
+          - toplu
+          - anlik
+        default: toplu
       model:
         description: 'Model (Sonnet yaklaşık yarı fiyatına)'
         type: choice
@@ -20,6 +27,13 @@ on:
           - claude-opus-5-5
           - claude-sonnet-5-5
         default: claude-opus-5-5
+      caba:
+        description: 'Düşünme derinliği (medium daha ucuz)'
+        type: choice
+        options:
+          - medium
+          - high
+        default: medium
       butce:
         description: 'Bu çalıştırmada en çok harcanacak tutar (USD)'
         required: true
@@ -36,47 +50,56 @@ concurrency:
 jobs:
   uret:
     runs-on: ubuntu-latest
-    timeout-minutes: 340
+    timeout-minutes: 345
     steps:
+      # Olay anındaki eski commit değil, dalın en güncel hali: yeniden çalıştırmada (Re-run) önceki
+      # çalıştırmanın gönderdiği özetler görülür ve onlara ikinci kez para ödenmez.
       - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
 
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
       - name: Gerekli paketler
-        run: pip install --quiet anthropic pillow
+        run: pip install --quiet 'anthropic>=2.3' pillow
 
       - name: Özetleri üret
         id: uret
+        timeout-minutes: 300
+        continue-on-error: true     # süre dolsa da sonraki adımlar ödenmiş çıktıyı yedekler ve yayımlar
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           HAFTA: ${{ inputs.hafta }}
           DERSLER: ${{ inputs.dersler }}
+          YONTEM: ${{ inputs.yontem }}
           MODEL: ${{ inputs.model }}
+          CABA: ${{ inputs.caba }}
           BUTCE: ${{ inputs.butce }}
         run: |
           if [ -z "$ANTHROPIC_API_KEY" ]; then
             echo "::error::ANTHROPIC_API_KEY gizli anahtarı yok (KURULUM.md → Claude API kredisiyle özet üretme)"; exit 1
           fi
           set +e
-          ARG=(--hafta "$HAFTA" --model "$MODEL" --butce "$BUTCE" --paralel 4)
+          ARG=(--hafta "$HAFTA" --model "$MODEL" --caba "$CABA" --butce "$BUTCE" --paralel 4 --sure-dk 280)
+          if [ "$YONTEM" = "toplu" ]; then ARG+=(--toplu); fi
           if [ -n "$DERSLER" ]; then ARG+=(--dersler "$DERSLER"); fi
-          python araclar/ozet_api_uret.py "${ARG[@]}" 2>&1 | tee uretim.log
+          python araclar/ozet_api_uret.py "${ARG[@]}" 2>&1 | tee "$RUNNER_TEMP/uretim.log"
           echo "kod=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
-          {
-            echo "### $HAFTA. hafta özet üretimi"
-            echo '```'
-            tail -n 40 uretim.log
-            echo '```'
-          } >> "$GITHUB_STEP_SUMMARY"
-          rm -f uretim.log
 
       # Üretilen kaynak dosyalar (özet JSON, görsel modülü, sosyal kart metni) parası ödenmiş çıktıdır:
-      # derleme ya da gönderim başarısız olsa bile kaybolmasın diye önce yedeklenir.
+      # derleme ya da gönderim başarısız olsa, çalıştırma iptal edilse bile kaybolmasın diye yedeklenir.
       - name: Üretilen dosyaları yedekle
         id: yedek
+        if: always()
         run: |
+          {
+            echo "### ${{ inputs.hafta }}. hafta özet üretimi"
+            echo '```'
+            tail -n 60 "$RUNNER_TEMP/uretim.log" 2>/dev/null || echo "üretim günlüğü yok"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
           git add -A araclar/ozetler araclar/gorseller araclar/sosyal
           git diff --cached --name-only --diff-filter=A > "$RUNNER_TEMP/yeni.txt"
           git reset -q
@@ -87,20 +110,19 @@ jobs:
           fi
 
       - uses: actions/upload-artifact@v6
-        if: steps.yedek.outputs.adet != '0'
+        if: always() && steps.yedek.outputs.adet != '' && steps.yedek.outputs.adet != '0'
         with:
           name: hafta-${{ inputs.hafta }}-uretilen-ozetler
           path: ${{ runner.temp }}/uretim/kaynak.tgz
           retention-days: 30
 
-      # Üretim saatler sürebilir; bu sırada saatlik yayın botu ana dala yazmış olabilir.
-      # Bu yüzden her denemede en güncel dal alınır, yeni dosyalar üstüne konur, türetilen
-      # sayfalar ve paylaşım kuyruğu yeniden üretilir; çakışmalı birleştirme yapılmaz.
+      # Üretim saatler sürebilir; bu sırada saatlik yayın botu ana dala yazmış olabilir. Bu yüzden her
+      # denemede en güncel dal alınır, yeni dosyalar üstüne konur, türetilen sayfalar ve paylaşım kuyruğu
+      # yeniden üretilir. Yayın denetimine takılan yeni özet ayıklanır, kalanlar yine yayımlanır.
       - name: Derle, denetle, kaydet ve yayına gönder
-        if: steps.yedek.outputs.adet != '0'
+        if: ${{ !cancelled() && steps.yedek.outputs.adet != '' && steps.yedek.outputs.adet != '0' }}
         env:
           HAFTA: ${{ inputs.hafta }}
-          ADET: ${{ steps.yedek.outputs.adet }}
           GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "ozet-botu"
@@ -109,12 +131,14 @@ jobs:
             git fetch -q origin "$GITHUB_REF_NAME"
             git reset -q --hard "origin/$GITHUB_REF_NAME"
             tar xzf "$RUNNER_TEMP/uretim/kaynak.tgz"
-            python araclar/yayin_denetle.py --onar
-            python araclar/kok_yayin_denetle.py
+            python araclar/ozet_api_uret.py --yayin-hazirla "$RUNNER_TEMP/yeni.txt"
             python araclar/sosyal_gorsel.py --kuyruk "$(python araclar/ozet_api_uret.py --kuyruk-baslangici)"
+            ADET=$(git status --porcelain --untracked-files=all -- araclar/ozetler | grep -c '^??' || true)
+            if [ "$ADET" = "0" ]; then echo "::error::Yayımlanacak özet kalmadı (hepsi denetime takıldı)."; exit 1; fi
             git add araclar/ozetler araclar/gorseller araclar/sosyal araclar/veri public sosyal
             git commit -q -m "$HAFTA. hafta: $ADET konu özeti Claude API ile üretildi"
             if git push -q origin "HEAD:$GITHUB_REF_NAME"; then
+              echo "$ADET özet yayına gönderildi." | tee -a "$GITHUB_STEP_SUMMARY"
               # GITHUB_TOKEN ile yapılan push başka iş akışını tetiklemez; yayını elle başlat
               gh workflow run guncelle.yml --ref "$GITHUB_REF_NAME"
               exit 0
@@ -125,8 +149,8 @@ jobs:
           echo "::error::Gönderilemedi. Üretilen özetler bu çalıştırmanın Artifacts bölümünde duruyor."
           exit 1
 
-      - name: Hatalı ders varsa bildir
-        if: steps.uret.outputs.kod != '0'
+      - name: Hatalı, bekleyen ya da ayıklanan ders varsa bildir
+        if: ${{ !cancelled() && steps.uret.outputs.kod != '0' }}
         run: |
-          echo "::warning::Bazı dersler üretilemedi ya da bütçe doldu; ayrıntı özet sayfasında. Aynı haftayı yeniden çalıştırın."
+          echo "::warning::Bazı dersler üretilemedi ya da bütçe/süre doldu; ayrıntı özet sayfasında. Aynı haftayı yeniden çalıştırın, kalanlar üretilir."
           exit 1
