@@ -1,0 +1,539 @@
+{
+  "ad": "7-matematik-15",
+  "sinif": 7,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 15,
+  "tarih": "28 Aralık 2026-1 Ocak 2027",
+  "yayin_tarihi": "2026-12-28",
+  "unite": "İstatistiksel Araştırma Süreci",
+  "konu": "Kategorik ve Nicel (Sürekli) Veri Dağılımları: Başkalarının İstatistiksel Sonuç ve Yorumlarını Tartışma (Temellendirme, Hata ve Yanlılık Tespiti, Kabul veya Çürütme)",
+  "ciktilar": [
+    "Başkaları tarafından oluşturulan kategorik veya nicel (sürekli) veriye dayalı istatistiksel sonuç ve yorumlara yönelik istatistiksel temellendirme yapar. Bunun için veri kaynağını, örneklemi, grafiği ve seçilen ölçüyü inceler (MAT.7.6.2.a).",
+    "Başkaları tarafından oluşturulan istatistiksel sonuç ve yorumlardaki hataları ya da yanlılıkları tespit eder. Örneklem yanlılığı, yönlendirici soru, yanıltıcı eksen ölçeği, uygun olmayan merkezi eğilim ölçüsü ve sayı-oran karışıklığı bu hatalar arasındadır (MAT.7.6.2.b).",
+    "Başkaları tarafından oluşturulan istatistiksel sonuç ve yorumları verilere dayalı gerekçelerle kabul eder ya da karşı kanıtla çürütür. Veri yetersizse yeni veri toplanması gerektiğini savunur (MAT.7.6.2.c)."
+  ],
+  "giris": "Geçen haftalarda araştırma sorusu yazdık, veri topladık, grafik çizdik, ortalama-ortanca-tepe değer ve yayılım ölçülerini hesapladık. Bu hafta rolümüz değişiyor: Artık {koyu:başkalarının ulaştığı istatistiksel sonuçları} bir veri dedektifi gibi inceleyeceğiz. Haberlerde, reklamlarda ve anket sonuçlarında karşılaştığımız iddiaları {koyu:istatistiksel temellendirme} ile sorgulayacağız. {koyu:Yanlı örneklemleri, yanıltıcı grafikleri ve yanlış seçilmiş ölçüleri} yakalayacak, sonunda iddiayı gerekçesiyle {koyu:kabul edecek ya da çürüteceğiz}.",
+  "ozet": [
+    "{koyu:İstatistiksel Temellendirme:} Başkalarının sonuçlarını kişisel görüşle değil; veri kaynağı, örneklem, grafik ve uygun ölçülere dayanan sayısal gerekçelerle tartışırız.",
+    "{koyu:Örneklem Yanlılığı:} Kolayda örneklem, gönüllü katılım, yönlendirici soru, çok küçük örneklem ve tutarsız ölçüm koşulları sonuçların evreni temsil etmesini engeller.",
+    "{koyu:Yanıltıcı Grafikler:} Sıfırdan başlamayan dikey eksen, düzensiz ölçek, seçilmiş zaman aralığı ve toplamı %100 (360°) etmeyen daire grafikleri farkları çarpıtır.",
+    "{koyu:Ölçü Seçimi:} Uç değer varken ortalama yerine ortanca, kategorik veride tepe değer kullanılır; ortalamalar eşit olsa bile açıklık ve OMS çok farklı olabilir.",
+    "{koyu:Sayı ve Oran:} Büyüklükleri farklı gruplar sayıyla değil yüzde ya da oranla karşılaştırılır; en çok seçilen kategori yarıdan az ise 'çoğunluk' sayılmaz.",
+    "{koyu:Karar:} Veriler iddiayı destekliyorsa iddia kabul edilir, verilerle çelişiyorsa karşı kanıtla çürütülür. Yöntem hatalıysa 'bu veriyle karar verilemez' denir ve yeni veri toplanması önerilir."
+  ],
+  "bolumler": [
+    {
+      "baslik": "İstatistiksel İddiaları Tartışmak: İddia, Kanıt ve Gerekçe (MAT.7.6.2.a)",
+      "metin": [
+        "Gazetelerde, televizyon haberlerinde, reklam afişlerinde ve sosyal medyada her gün sayılara dayanan cümlelerle karşılaşırız: 'Öğrencilerin çoğu kahvaltı yapmadan okula geliyor', 'Bu diş macununu diş hekimlerinin %80'i öneriyor', 'Şehrimizde bu kış çok sıcak geçiyor'. Bir veri grubuna dayanılarak ortaya konan bu tür cümlelere {koyu:istatistiksel sonuç} ya da {koyu:istatistiksel yorum (iddia)} denir. Bu iddiaların bir kısmı doğru ve özenle hazırlanmıştır. Bir kısmı ise yanlış toplanmış veriye, yanıltıcı bir grafiğe ya da yanlış seçilmiş bir ölçüye dayanır. Bilinçli bir birey, duyduğu her sayıyı olduğu gibi kabul etmez; önce sorgular.",
+        "Bir istatistiksel iddiayı tartışırken üç öğeyi birbirinden ayırırız. {koyu:İddia} ne söylendiğini, {koyu:kanıt (veri)} hangi verilere dayanıldığını, {koyu:gerekçe} ise verinin iddiayı nasıl desteklediğini ya da desteklemediğini gösterir. Bir sonucun verilere, uygun grafiklere ve doğru seçilmiş istatistiksel ölçülere dayanarak savunulmasına veya sorgulanmasına {koyu:istatistiksel temellendirme} denir. 'Bence yanlış', 'bana öyle gelmiyor' gibi cümleler kişisel görüştür, temellendirme sayılmaz. 'Verilerin ortancası 27 olduğu için ortalama olan 45 grubu temsil etmiyor' gibi sayıya dayalı açıklamalar ise temellendirmedir.",
+        "Bir iddiayı incelerken beş soruyu sırayla sorarız: Veriyi kim, hangi amaçla topladı? Örneklem kaç kişiden oluşuyor ve nasıl seçildi? Veri nasıl toplandı ya da ölçüldü? Grafik ve seçilen ölçü veri türüne uygun mu? Ulaşılan sonuç, verinin gerçekten gösterdiği kadar mı, yoksa daha fazlasını mı söylüyor? Örneğin bir okuldaki 20 öğrenciden toplanan veriyle 'Türkiye'deki tüm öğrenciler...' diye başlayan bir cümle kurulursa verinin kapsamı aşılmış olur. Bu hataya {koyu:aşırı genelleme} denir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Sorgulama Sorusu",
+          "Neye Bakılır?",
+          "Sorun Varsa Ne Olur?"
+        ],
+        "satirlar": [
+          [
+            "Veriyi kim, hangi amaçla topladı?",
+            "Araştırmacının çıkarı, reklam amacı olup olmadığı",
+            "Sonuç taraflı sunulmuş olabilir; ek kanıt aranır"
+          ],
+          [
+            "Örneklem kaç kişi, nasıl seçildi?",
+            "Örneklem büyüklüğü ve rastgele seçim",
+            "Küçük ya da yanlı örneklemle genelleme yapılamaz"
+          ],
+          [
+            "Veri nasıl toplandı veya ölçüldü?",
+            "Anket sorusunun tarafsızlığı, ölçüm aracı ve ölçüm koşulları",
+            "Yönlendirici soru ya da tutarsız ölçüm sonucu bozar"
+          ],
+          [
+            "Grafik ve ölçü uygun mu?",
+            "Eksenlerin başlangıcı, yüzde toplamı, ortalama-ortanca seçimi",
+            "Doğru veri yanlış gösterimle yanıltıcı hâle gelir"
+          ],
+          [
+            "Sonuç verinin kapsamında mı?",
+            "'Herkes', 'tüm Türkiye', 'her zaman' gibi ifadeler",
+            "Aşırı genelleme yapılmışsa iddia daraltılır veya çürütülür"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "İstatistiksel Temellendirme",
+          "metin": "Bir istatistiksel sonucu kabul etmek ya da reddetmek için verilere, hesaplanan ölçülere (ortalama, ortanca, tepe değer, açıklık, OMS, yüzde) ve verinin toplanma yöntemine dayanan gerekçeler sunmaktır. Temellendirme her zaman 'çünkü' ile başlayan sayısal bir açıklama içerir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Dedektifin Altın Kuralı",
+          "metin": "Önce veriye, sonra yoruma bak! Bir iddianın doğru olup olmadığını anlamak için yorumu yapan kişinin cümlesini değil, o cümlenin dayandığı veriyi ve verinin nasıl toplandığını incele."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" fill=\"#f8fafc\" rx=\"12\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">BİR İSTATİSTİKSEL İDDİAYI İNCELEME ADIMLARI (MAT.7.6.2)</text><rect x=\"20\" y=\"55\" width=\"128\" height=\"105\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/><text x=\"84\" y=\"80\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">1. İddia</text><text x=\"84\" y=\"105\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Ne söyleniyor?</text><text x=\"84\" y=\"123\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Hangi grup için?</text><text x=\"84\" y=\"141\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Kesin mi, temkinli mi?</text><polygon points=\"151,100 165,107 151,114\" fill=\"#64748b\"/><rect x=\"168\" y=\"55\" width=\"128\" height=\"105\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/><text x=\"232\" y=\"80\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">2. Veri Kaynağı</text><text x=\"232\" y=\"105\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Kim topladı?</text><text x=\"232\" y=\"123\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Hangi amaçla?</text><text x=\"232\" y=\"141\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Nasıl ölçüldü?</text><polygon points=\"299,100 313,107 299,114\" fill=\"#64748b\"/><rect x=\"316\" y=\"55\" width=\"128\" height=\"105\" rx=\"10\" fill=\"#fefce8\" stroke=\"#eab308\"/><text x=\"380\" y=\"80\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#a16207\">3. Örneklem</text><text x=\"380\" y=\"105\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Kaç kişi?</text><text x=\"380\" y=\"123\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Nasıl seçildi?</text><text x=\"380\" y=\"141\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Temsil edici mi?</text><polygon points=\"447,100 461,107 447,114\" fill=\"#64748b\"/><rect x=\"464\" y=\"55\" width=\"128\" height=\"105\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#a855f7\"/><text x=\"528\" y=\"80\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#7e22ce\">4. Grafik ve Ölçü</text><text x=\"528\" y=\"105\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Eksen doğru mu?</text><text x=\"528\" y=\"123\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Ölçü uygun mu?</text><text x=\"528\" y=\"141\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Yayılım verilmiş mi?</text><polygon points=\"595,100 609,107 595,114\" fill=\"#64748b\"/><rect x=\"612\" y=\"55\" width=\"128\" height=\"105\" rx=\"10\" fill=\"#fff1f2\" stroke=\"#f43f5e\"/><text x=\"676\" y=\"80\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#be123c\">5. Karar</text><text x=\"676\" y=\"105\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Kabul et</text><text x=\"676\" y=\"123\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Çürüt</text><text x=\"676\" y=\"141\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Karar verilemez</text><text x=\"380\" y=\"178\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#475569\">Değerlendirmenin üç olası sonucu</text><rect x=\"20\" y=\"188\" width=\"230\" height=\"90\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\"/><text x=\"135\" y=\"214\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">KABUL ET</text><text x=\"135\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Yöntem sağlam ve veriler</text><text x=\"135\" y=\"256\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">iddiayı destekliyor.</text><rect x=\"265\" y=\"188\" width=\"230\" height=\"90\" rx=\"10\" fill=\"#fee2e2\" stroke=\"#dc2626\"/><text x=\"380\" y=\"214\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b91c1c\">ÇÜRÜT</text><text x=\"380\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Veriler iddiayla çelişiyor;</text><text x=\"380\" y=\"256\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">karşı kanıt gösterilir.</text><rect x=\"510\" y=\"188\" width=\"230\" height=\"90\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\"/><text x=\"625\" y=\"214\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#92400e\">KARAR VERİLEMEZ</text><text x=\"625\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Yöntem hatalı (yanlı örneklem,</text><text x=\"625\" y=\"256\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">kötü ölçüm); yeni veri gerekir.</text></svg>"
+    },
+    {
+      "baslik": "Örneklem Yanlılığı ve Veri Toplama Hatalarını Tespit Etme (MAT.7.6.2.b)",
+      "metin": [
+        "Bir istatistiksel sonuç, dayandığı veri kadar güvenilirdir. Araştırmanın hakkında sonuç çıkarmak istediği grubun tamamına {koyu:evren}, verinin gerçekten toplandığı alt gruba ise {koyu:örneklem} denir. Örneklem evrendeki farklı grupları adil biçimde içermiyorsa {koyu:yanlı (taraflı) örneklem} oluşur ve sonuç evreni temsil etmez. Örneğin 'Okulumuzdaki öğrencilerin en sevdiği spor futboldur' sonucuna yalnız futbol kulübü üyeleri sorularak ulaşılmışsa sonuç daha anket başlamadan belirlenmiş gibidir. Okulun tamamında futbolu sevenlerin oranı çok daha düşük olabilir.",
+        "Veri toplama sürecindeki yaygın hataları tanımak, başkalarının sonuçlarını değerlendirirken en büyük yardımcımızdır. {koyu:Kolayda örneklem}de araştırmacı yalnız ulaşması kolay kişilere sorar. {koyu:Gönüllü katılım}da yalnız konuyla güçlü ilgisi olan ya da şikâyetçi olan kişiler cevap verir. {koyu:Yönlendirici soru} katılımcıyı belli bir cevaba iter; 'Sağlığa zararlı asitli içeceklerin kantinden kaldırılmasını destekliyor musunuz?' buna bir örnektir. {koyu:Çok küçük örneklem}de birkaç kişinin cevabı tüm gruba genellenir. Nicel (sürekli) verilerde ise ölçüm koşulları çok önemlidir. Sıcaklığın bir gün sabah bir gün öğlen ölçülmesi, kütlelerin farklı tartılarla tartılması veya koşu sürelerinde kronometreyi farklı kişilerin başlatması {koyu:tutarsız ölçüm} hatasıdır.",
+        "Bir veri toplama hatası tespit ettiğimizde iddianın kesinlikle yanlış olduğunu söylemek zorunda değiliz. Doğru değerlendirme şudur: 'Bu veriyle bu sonuca ulaşılamaz.' Sonuç gerçekte doğru da olabilir, yanlış da; ama mevcut veri bunu göstermeye yetmez. Ardından sürecin nasıl düzeltileceğini öneririz: Evrendeki farklı gruplardan {koyu:rastgele} seçim yapılmalı, {koyu:yeterli büyüklükte} bir örneklem alınmalı, sorular {koyu:tarafsız ve tek anlamlı} yazılmalı, ölçümler {koyu:aynı araçla ve aynı koşullarda} yapılmalıdır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Hata Türü",
+          "Örnek Durum",
+          "Neden Yanıltır?",
+          "Nasıl Düzeltilir?"
+        ],
+        "satirlar": [
+          [
+            "Kolayda örneklem",
+            "Okulun spor alışkanlığını yalnız beden eğitimi dersindeki tek bir sınıfa sormak",
+            "Yalnız belirli bir grubun görüşü yansır",
+            "Farklı sınıf ve gruplardan rastgele seçim yapmak"
+          ],
+          [
+            "Gönüllü katılım",
+            "Kantin memnuniyetini yalnız şikâyet kutusundaki notlardan ölçmek",
+            "Konuya güçlü tepki verenler fazla temsil edilir",
+            "Belirlenen kişilere eşit şansla ulaşmak"
+          ],
+          [
+            "Yönlendirici soru",
+            "'Zararlı şekerli içeceklerin yasaklanmasını desteklemez misiniz?'",
+            "Katılımcıyı belli bir cevaba iter",
+            "Tarafsız, sade ve tek anlamlı soru sormak"
+          ],
+          [
+            "Çok küçük örneklem",
+            "5 öğrencinin cevabıyla 600 kişilik okul hakkında karar vermek",
+            "Sonucu rastlantı belirleyebilir, genelleme güvenilmez",
+            "Örneklem büyüklüğünü artırmak"
+          ],
+          [
+            "Tutarsız ölçüm (sürekli veri)",
+            "Sıcaklığı bir gün sabah, bir gün öğlen ölçmek; farklı tartılar kullanmak",
+            "Farklılık verinin kendisinden değil, ölçüm koşulundan kaynaklanabilir",
+            "Aynı araçla, aynı saatte ve aynı koşulda ölçmek"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Yönlendirici Soru Tuzağı",
+          "metin": "Soruda 'zararlı, harika, gereksiz, herkesin bildiği gibi' gibi duygu yüklü kelimeler varsa ya da soru 'değil mi?', 'desteklemez misiniz?' biçiminde soruluyorsa cevaplar araştırmacının istediği yöne kayar. Böyle bir anketten çıkan yüzdeler tarafsız kabul edilemez."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Sürekli Verilerde Ölçüm Koşulu",
+          "metin": "Boy, kütle, sıcaklık ve süre gibi nicel (sürekli) veriler ölçümle elde edilir. Bu nedenle iki veri grubu ancak aynı ölçüm aracıyla, aynı birimle ve benzer koşullarda ölçülmüşse karşılaştırılabilir. Öğle saatinde ölçülen sıcaklıkların ortalaması, gece-gündüz tüm saatleri kapsayan bir ortalamayla kıyaslanamaz."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" fill=\"#f8fafc\" rx=\"12\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">EVREN, YANLI ÖRNEKLEM VE TEMSİL EDİCİ ÖRNEKLEM</text><rect x=\"20\" y=\"50\" width=\"250\" height=\"200\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/><text x=\"145\" y=\"74\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">EVREN: Okuldaki tüm öğrenciler</text><circle cx=\"50\" cy=\"105\" r=\"9\" fill=\"#2563eb\"/><circle cx=\"85\" cy=\"105\" r=\"9\" fill=\"#f97316\"/><circle cx=\"120\" cy=\"105\" r=\"9\" fill=\"#2563eb\"/><circle cx=\"155\" cy=\"105\" r=\"9\" fill=\"#f97316\"/><circle cx=\"190\" cy=\"105\" r=\"9\" fill=\"#f97316\"/><circle cx=\"225\" cy=\"105\" r=\"9\" fill=\"#2563eb\"/><circle cx=\"50\" cy=\"135\" r=\"9\" fill=\"#f97316\"/><circle cx=\"85\" cy=\"135\" r=\"9\" fill=\"#2563eb\"/><circle cx=\"120\" cy=\"135\" r=\"9\" fill=\"#f97316\"/><circle cx=\"155\" cy=\"135\" r=\"9\" fill=\"#f97316\"/><circle cx=\"190\" cy=\"135\" r=\"9\" fill=\"#2563eb\"/><circle cx=\"225\" cy=\"135\" r=\"9\" fill=\"#f97316\"/><circle cx=\"50\" cy=\"165\" r=\"9\" fill=\"#2563eb\"/><circle cx=\"85\" cy=\"165\" r=\"9\" fill=\"#f97316\"/><circle cx=\"120\" cy=\"165\" r=\"9\" fill=\"#f97316\"/><circle cx=\"155\" cy=\"165\" r=\"9\" fill=\"#2563eb\"/><circle cx=\"190\" cy=\"165\" r=\"9\" fill=\"#f97316\"/><circle cx=\"225\" cy=\"165\" r=\"9\" fill=\"#f97316\"/><circle cx=\"50\" cy=\"195\" r=\"9\" fill=\"#f97316\"/><circle cx=\"85\" cy=\"195\" r=\"9\" fill=\"#2563eb\"/><circle cx=\"120\" cy=\"195\" r=\"9\" fill=\"#f97316\"/><circle cx=\"155\" cy=\"195\" r=\"9\" fill=\"#2563eb\"/><circle cx=\"190\" cy=\"195\" r=\"9\" fill=\"#f97316\"/><circle cx=\"225\" cy=\"195\" r=\"9\" fill=\"#2563eb\"/><text x=\"145\" y=\"232\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">24 öğrenciden 10'u futbol sever (yaklaşık %42)</text><rect x=\"285\" y=\"50\" width=\"210\" height=\"200\" rx=\"10\" fill=\"#fff1f2\" stroke=\"#f43f5e\"/><text x=\"390\" y=\"74\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#be123c\">YANLI ÖRNEKLEM</text><text x=\"390\" y=\"92\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Yalnız futbol kulübü üyeleri</text><circle cx=\"330\" cy=\"135\" r=\"9\" fill=\"#2563eb\"/><circle cx=\"360\" cy=\"135\" r=\"9\" fill=\"#2563eb\"/><circle cx=\"390\" cy=\"135\" r=\"9\" fill=\"#2563eb\"/><circle cx=\"420\" cy=\"135\" r=\"9\" fill=\"#2563eb\"/><circle cx=\"450\" cy=\"135\" r=\"9\" fill=\"#2563eb\"/><text x=\"390\" y=\"180\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#be123c\">Sonuç: %100 futbol sever</text><text x=\"390\" y=\"200\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Evreni temsil etmez!</text><text x=\"390\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">(Yanıltıcı sonuç)</text><rect x=\"510\" y=\"50\" width=\"230\" height=\"200\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/><text x=\"625\" y=\"74\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">TEMSİL EDİCİ ÖRNEKLEM</text><text x=\"625\" y=\"92\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Her sınıftan rastgele seçim</text><circle cx=\"565\" cy=\"135\" r=\"9\" fill=\"#2563eb\"/><circle cx=\"595\" cy=\"135\" r=\"9\" fill=\"#f97316\"/><circle cx=\"625\" cy=\"135\" r=\"9\" fill=\"#f97316\"/><circle cx=\"655\" cy=\"135\" r=\"9\" fill=\"#2563eb\"/><circle cx=\"685\" cy=\"135\" r=\"9\" fill=\"#f97316\"/><text x=\"625\" y=\"180\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">Sonuç: %40 futbol sever</text><text x=\"625\" y=\"200\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Evrene yakın sonuç</text><text x=\"625\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">(Güvenilir yorum)</text><circle cx=\"250\" cy=\"272\" r=\"7\" fill=\"#2563eb\"/><text x=\"262\" y=\"276\" font-size=\"11\" fill=\"#334155\">Futbol sever</text><circle cx=\"420\" cy=\"272\" r=\"7\" fill=\"#f97316\"/><text x=\"432\" y=\"276\" font-size=\"11\" fill=\"#334155\">Başka bir sporu sever</text></svg>"
+    },
+    {
+      "baslik": "Yanıltıcı Grafikleri Tespit Etme: Eksen, Ölçek ve Görsel Hileler",
+      "metin": [
+        "Veriler doğru toplansa bile yanlış çizilmiş bir grafik okuyucuyu yanıltabilir. En sık karşılaşılan hile, sütun grafiğinde dikey ekseni sıfırdan başlatmamaktır; buna {koyu:kesik eksen} denir. Örneğin A marketinin günlük satışı 102, B marketininki 106 adet olsun. Dikey eksen 100'den başlatılırsa A'nın sütunu 2 birim, B'nin sütunu 6 birim yüksekliğinde çizilir ve B, A'nın {koyu:3 katı} satış yapıyormuş gibi görünür. Gerçekte fark yalnız 106 − 102 = 4 adettir; bu da A'nın satışının yaklaşık {koyu:%4}'üdür. Sütun grafiğinde sütun boyu değerle orantılı olmalıdır; bunun için dikey eksen 0'dan başlamalıdır.",
+        "Başka görsel hileler de vardır. Dikey eksen 0, 10, 20, 50, 100 gibi {koyu:eşit olmayan aralıklarla} bölünürse artışlar olduğundan küçük ya da büyük görünür. Çizgi grafiğinde yalnız işine gelen ayların gösterilmesine {koyu:seçilmiş zaman aralığı} denir; böyle bir grafik genel eğilimi gizler. Daire grafiğinde dilimlerin yüzdeleri toplandığında {koyu:%100}, merkez açıları toplandığında {koyu:360°} etmiyorsa grafik hatalıdır. Üç boyutlu çizilen daire grafiklerinde öne yakın dilim gerçekte olduğundan büyük görünür. Eksenlerde birim ve başlık yoksa okuyucu neyin ölçüldüğünü bilemez.",
+        "Nicel (sürekli) verilerin gösterildiği çizgi grafikleri ve histogramlarda da dikkatli olmalıyız. 'Bu hafta hava sıcaklığı sürekli arttı' diyen biri yalnız pazartesi ve pazar değerlerini karşılaştırmış olabilir; oysa çizgi grafiğinde aradaki günlerde düşüşler görülebilir. Bu durumda 'sürekli arttı' iddiası çürütülür, 'hafta başına göre hafta sonu daha sıcaktı' iddiası ise kabul edilebilir. Gruplandırılmış verilerde sınıf aralıklarının genişlikleri farklıysa (örneğin 140-150 cm ile 150-170 cm) sütun yükseklikleri doğrudan karşılaştırılamaz. Geniş aralık daha fazla veri toplayacağı için o sütun yanıltıcı biçimde yüksek görünür."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Grafik Hilesi",
+          "Nasıl Fark Edilir?",
+          "Doğru Okuma"
+        ],
+        "satirlar": [
+          [
+            "Kesik (sıfırdan başlamayan) eksen",
+            "Dikey eksendeki ilk değere bakılır",
+            "Sütun boyları değil, değerler karşılaştırılır"
+          ],
+          [
+            "Düzensiz ölçek aralıkları",
+            "Eksen değerleri eşit artıyor mu? (0, 10, 20, 50 gibi)",
+            "Eşit aralıklı bir eksen düşünülerek yeniden yorumlanır"
+          ],
+          [
+            "Seçilmiş zaman aralığı",
+            "Çizgi grafiği yalnız belirli ayları mı gösteriyor?",
+            "Dönemin tamamını gösteren veri istenir"
+          ],
+          [
+            "Yüzde toplamı tutmayan daire grafiği",
+            "Yüzdeler toplanır: %100 mü? Açılar 360° mi?",
+            "Toplam tutmuyorsa grafik güvenilmez"
+          ],
+          [
+            "Farklı genişlikte histogram aralıkları",
+            "Aralık genişlikleri (örneğin 140-150 ile 150-170) eşit mi?",
+            "Yalnız eşit genişlikli aralıkların sütunları karşılaştırılır"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Sütun Grafiğinde Sıfır Kuralı",
+          "metin": "Sütun grafiğinde sütunun boyu değerin büyüklüğünü temsil eder. Bu nedenle dikey eksen 0'dan başlamalıdır. Eksen kesilmişse bu durum kırık eksen işaretiyle açıkça gösterilmeli ve okuyucu farkın gerçek büyüklüğü konusunda uyarılmalıdır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Grafiğin Önce Eksenlerini Oku",
+          "metin": "Bir grafiğe bakınca hemen sütunları kıyaslama! Önce başlığı, sonra eksen başlangıçlarını, birimleri ve aralıkların eşit olup olmadığını kontrol et. Gerekirse değerleri okuyup farkı ve oranı kendin hesapla."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" fill=\"#f8fafc\" rx=\"12\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">AYNI VERİ, İKİ FARKLI GRAFİK: KESİK EKSEN YANILTMASI</text><rect x=\"20\" y=\"45\" width=\"350\" height=\"240\" rx=\"10\" fill=\"#fff1f2\" stroke=\"#f43f5e\"/><text x=\"195\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#be123c\">YANILTICI: Dikey eksen 100'den başlıyor</text><line x1=\"80\" y1=\"190\" x2=\"340\" y2=\"190\" stroke=\"#fecdd3\"/><line x1=\"80\" y1=\"150\" x2=\"340\" y2=\"150\" stroke=\"#fecdd3\"/><line x1=\"80\" y1=\"110\" x2=\"340\" y2=\"110\" stroke=\"#fecdd3\"/><line x1=\"80\" y1=\"90\" x2=\"80\" y2=\"230\" stroke=\"#1e293b\" stroke-width=\"2\"/><line x1=\"80\" y1=\"230\" x2=\"340\" y2=\"230\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"72\" y=\"234\" text-anchor=\"end\" font-size=\"10.5\" fill=\"#334155\">100</text><text x=\"72\" y=\"194\" text-anchor=\"end\" font-size=\"10.5\" fill=\"#334155\">102</text><text x=\"72\" y=\"154\" text-anchor=\"end\" font-size=\"10.5\" fill=\"#334155\">104</text><text x=\"72\" y=\"114\" text-anchor=\"end\" font-size=\"10.5\" fill=\"#334155\">106</text><rect x=\"130\" y=\"190\" width=\"60\" height=\"40\" fill=\"#fb7185\"/><rect x=\"230\" y=\"110\" width=\"60\" height=\"120\" fill=\"#e11d48\"/><text x=\"160\" y=\"184\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">102</text><text x=\"260\" y=\"104\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">106</text><text x=\"160\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Market A</text><text x=\"260\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Market B</text><text x=\"195\" y=\"272\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#be123c\">B, A'nın 3 katı gibi görünüyor!</text><rect x=\"390\" y=\"45\" width=\"350\" height=\"240\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/><text x=\"565\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">DOĞRU: Dikey eksen 0'dan başlıyor</text><line x1=\"450\" y1=\"183\" x2=\"710\" y2=\"183\" stroke=\"#bbf7d0\"/><line x1=\"450\" y1=\"137\" x2=\"710\" y2=\"137\" stroke=\"#bbf7d0\"/><line x1=\"450\" y1=\"90\" x2=\"710\" y2=\"90\" stroke=\"#bbf7d0\"/><line x1=\"450\" y1=\"85\" x2=\"450\" y2=\"230\" stroke=\"#1e293b\" stroke-width=\"2\"/><line x1=\"450\" y1=\"230\" x2=\"710\" y2=\"230\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"442\" y=\"234\" text-anchor=\"end\" font-size=\"10.5\" fill=\"#334155\">0</text><text x=\"442\" y=\"187\" text-anchor=\"end\" font-size=\"10.5\" fill=\"#334155\">40</text><text x=\"442\" y=\"141\" text-anchor=\"end\" font-size=\"10.5\" fill=\"#334155\">80</text><text x=\"442\" y=\"94\" text-anchor=\"end\" font-size=\"10.5\" fill=\"#334155\">120</text><rect x=\"500\" y=\"111\" width=\"60\" height=\"119\" fill=\"#4ade80\"/><rect x=\"600\" y=\"106\" width=\"60\" height=\"124\" fill=\"#16a34a\"/><text x=\"530\" y=\"105\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">102</text><text x=\"630\" y=\"100\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">106</text><text x=\"530\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Market A</text><text x=\"630\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Market B</text><text x=\"565\" y=\"272\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">Gerçek fark yalnız 4 adet (yaklaşık %4)</text></svg>"
+    },
+    {
+      "baslik": "Merkezi Eğilim ve Yayılım Ölçüsü Seçimindeki Yanılgılar",
+      "metin": [
+        "Bir iş yeri ilanında 'Şirketimizde ortalama maaş 45 bin TL, çalışanlarımız çok iyi kazanıyor' yazdığını düşünelim. Altı çalışanın aylık maaşları (bin TL) 25, 25, 26, 28, 30 ve 136 olsun. Toplam 270 olduğundan aritmetik ortalama {kesir:270|6} = {koyu:45} bulunur; hesap doğrudur. Ancak sıralanmış verilerde ortadaki iki değer 26 ve 28 olduğundan ortanca {kesir:26 + 28|2} = {koyu:27}, tepe değer ise {koyu:25}'tir. Altı çalışandan beşi 30 bin TL ve altında kazanır. 45 bin TL'lik ortalama, 136 bin TL'lik {koyu:uç (aykırı) değer} yüzünden yükselmiştir ve hiçbir çalışanın maaşına yakın değildir. İlan teknik olarak doğru ama {koyu:yanıltıcıdır}; grubu en iyi ortanca temsil eder.",
+        "Yalnız ortalamayı verip yayılımı gizlemek de sık yapılan bir hatadır. 'İki şehrin beş günlük ortalama sıcaklığı 20 °C, demek ki iklimleri aynı' iddiasını ele alalım. A şehrinin sıcaklıkları 18, 19, 20, 21, 22 °C, B şehrininkiler 8, 14, 20, 26, 32 °C olsun. İki şehrin ortalaması da 20 °C'tir. Ancak A'nın açıklığı 22 − 18 = 4 °C ve OMS'si {kesir:2 + 1 + 0 + 1 + 2|5} = 1,2 °C'tir. B'nin açıklığı 32 − 8 = 24 °C ve OMS'si {kesir:12 + 6 + 0 + 6 + 12|5} = 7,2 °C'tir. B şehrinde sıcaklık çok daha fazla dalgalanır; bu nedenle iddia {koyu:yayılım ölçüleri kullanılarak çürütülür}.",
+        "Veri türüne uygun olmayan ölçü seçmek de bir hatadır. {koyu:Kategorik verilerde} (göz rengi, sevilen meyve, ulaşım aracı) aritmetik ortalama ve ortanca hesaplanamaz. 'Öğrencilerin ortalama göz rengi kahverengidir' cümlesi anlamsızdır; doğrusu 'En çok görülen göz rengi kahverengidir' olur, yani tepe değer kullanılır. {koyu:Nicel (sürekli) verilerde} ise ölçümler çok hassas olduğundan çoğu değer yalnız bir kez görülür. 'İki öğrencinin boyu tam 152,3 cm, demek ki sınıfın tipik boyu budur' diyerek yalnız tepe değere dayanmak zayıf bir temellendirmedir. Sürekli verilerde ortalama veya ortancayı yayılım ölçüleriyle birlikte vermek gerekir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Yanlış Yorum",
+          "Neden Hatalı?",
+          "Doğru Ölçü veya Yaklaşım"
+        ],
+        "satirlar": [
+          [
+            "'Ortalama maaş 45 bin TL, herkes iyi kazanıyor.'",
+            "Uç değer (136) ortalamayı yukarı çekmiştir",
+            "Ortanca (27 bin TL) kullanılmalı"
+          ],
+          [
+            "'İki şehrin ortalama sıcaklığı 20 °C, iklimleri aynı.'",
+            "Yayılım göz ardı edilmiştir",
+            "Açıklık (4 ile 24) ve OMS (1,2 ile 7,2) karşılaştırılmalı"
+          ],
+          [
+            "'Öğrencilerin ortalama göz rengi kahverengidir.'",
+            "Kategorik veride ortalama hesaplanamaz",
+            "Tepe değer: 'En çok görülen göz rengi kahverengidir.'"
+          ],
+          [
+            "'Boyu tam 152,3 cm olan iki kişi var, tipik boy budur.'",
+            "Sürekli veride tepe değer zayıf bir göstergedir",
+            "Ortalama veya ortanca, yayılım ölçüleriyle birlikte verilmeli"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "hatirla",
+          "baslik": "Uç Değer Varsa Ortancaya Bak",
+          "metin": "Bir iddia aritmetik ortalamaya dayanıyorsa önce verilerde aşırı büyük ya da aşırı küçük bir uç değer olup olmadığını kontrol et. Uç değer varsa ortancayı hesapla. Ortalama ile ortanca arasında büyük fark varsa ortalamaya dayanan genellemeler yanıltıcıdır."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Ortalama Tek Başına Yetmez",
+          "metin": "Ortalaması aynı olan iki grup birbirinden çok farklı olabilir. 'Aynı', 'eşit derecede güvenilir', 'benzer' gibi iddialar yalnız ortalamaya dayanıyorsa açıklık ve ortalama mutlak sapma (OMS) hesaplanarak test edilmelidir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 290\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"290\" fill=\"#f8fafc\" rx=\"12\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">UÇ DEĞER ORTALAMAYI NASIL ÇEKER? (Aylık maaşlar, bin TL)</text><text x=\"130\" y=\"75\" text-anchor=\"end\" font-size=\"11\" fill=\"#334155\">1. çalışan</text><rect x=\"140\" y=\"60\" width=\"100\" height=\"22\" rx=\"4\" fill=\"#60a5fa\"/><text x=\"246\" y=\"75\" font-size=\"11\" fill=\"#334155\">25</text><text x=\"130\" y=\"107\" text-anchor=\"end\" font-size=\"11\" fill=\"#334155\">2. çalışan</text><rect x=\"140\" y=\"92\" width=\"100\" height=\"22\" rx=\"4\" fill=\"#60a5fa\"/><text x=\"246\" y=\"107\" font-size=\"11\" fill=\"#334155\">25</text><text x=\"130\" y=\"139\" text-anchor=\"end\" font-size=\"11\" fill=\"#334155\">3. çalışan</text><rect x=\"140\" y=\"124\" width=\"104\" height=\"22\" rx=\"4\" fill=\"#60a5fa\"/><text x=\"250\" y=\"139\" font-size=\"11\" fill=\"#334155\">26</text><text x=\"130\" y=\"171\" text-anchor=\"end\" font-size=\"11\" fill=\"#334155\">4. çalışan</text><rect x=\"140\" y=\"156\" width=\"112\" height=\"22\" rx=\"4\" fill=\"#60a5fa\"/><text x=\"258\" y=\"171\" font-size=\"11\" fill=\"#334155\">28</text><text x=\"130\" y=\"203\" text-anchor=\"end\" font-size=\"11\" fill=\"#334155\">5. çalışan</text><rect x=\"140\" y=\"188\" width=\"120\" height=\"22\" rx=\"4\" fill=\"#60a5fa\"/><text x=\"266\" y=\"203\" font-size=\"11\" fill=\"#334155\">30</text><text x=\"130\" y=\"235\" text-anchor=\"end\" font-size=\"11\" fill=\"#334155\">6. çalışan</text><rect x=\"140\" y=\"220\" width=\"544\" height=\"22\" rx=\"4\" fill=\"#ef4444\"/><text x=\"690\" y=\"235\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">136</text><line x1=\"248\" y1=\"52\" x2=\"248\" y2=\"252\" stroke=\"#16a34a\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/><line x1=\"320\" y1=\"52\" x2=\"320\" y2=\"252\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/><text x=\"244\" y=\"270\" text-anchor=\"end\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">Ortanca = 27</text><text x=\"324\" y=\"270\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b91c1c\">Ortalama = 45</text><rect x=\"400\" y=\"60\" width=\"340\" height=\"112\" rx=\"10\" fill=\"#fefce8\" stroke=\"#eab308\"/><text x=\"570\" y=\"84\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#a16207\">Dedektif Notu</text><text x=\"412\" y=\"106\" font-size=\"11\" fill=\"#334155\">• 6 çalışandan 5'i 30 bin TL ve altında kazanıyor.</text><text x=\"412\" y=\"126\" font-size=\"11\" fill=\"#334155\">• Ortalama (45), uç değer 136 yüzünden yükselmiş;</text><text x=\"412\" y=\"144\" font-size=\"11\" fill=\"#334155\">  hiçbir çalışanın maaşına yakın değil.</text><text x=\"412\" y=\"164\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">• Grubu ortanca (27) daha iyi temsil eder.</text></svg>"
+    },
+    {
+      "baslik": "Kategorik Verilerde Sayı, Oran ve Yüzde Yanılgıları",
+      "metin": [
+        "Kategorik verilerle ilgili iddialarda en sık yapılan hata, büyüklükleri farklı grupları {koyu:sayılarla} karşılaştırmaktır. A okulunda 50 öğrenciden 30'unun, B okulunda 150 öğrenciden 45'inin düzenli kitap okuduğunu düşünelim. 'B okulunda daha çok öğrenci kitap okuyor' cümlesi kişi sayısı bakımından doğrudur (45, 30'dan büyüktür). Ancak 'B okulunun öğrencileri kitap okumaya daha düşkün' iddiası yanlıştır. Doğru karşılaştırma için her grubun kendi içindeki {koyu:oranı} bulunur: {kesir:Kategorideki Sayı|Grup Toplamı} × 100. A okulunda {kesir:30|50} × 100 = {koyu:%60}, B okulunda {kesir:45|150} × 100 = {koyu:%30} olduğundan oran olarak A okulu B'nin iki katıdır.",
+        "Yüzdelerle sunulan sonuçlarda toplam kontrolü yapılmalıdır. Her katılımcının yalnız bir seçenek işaretlediği {koyu:tek seçimli} bir ankette yüzdelerin toplamı %100, daire grafiğindeki merkez açıların toplamı 360° olmalıdır. Toplam tutmuyorsa grafikte ya da hesapta hata vardır. Katılımcıların birden fazla seçenek işaretleyebildiği {koyu:çok seçimli} anketlerde ise toplam %100'ü aşabilir; bu bir hata değildir. Ancak böyle bir veri daire grafiğiyle gösterilemez, sütun grafiği kullanılır. Küçük gruplarda yüzdeler de yanıltabilir. 'Kulübümüze katılım %100 arttı!' cümlesi üye sayısı 4'ten 8'e çıktığında da doğrudur. Bu yüzden yüzdenin yanında gerçek sayılar da verilmelidir.",
+        "Bir başka yanılgı, {koyu:en çok seçilen} kategoriyi {koyu:çoğunluk} sanmaktır. Bir ankette öğrencilerin %40'ı basketbolu, %35'i voleybolu, %25'i futbolu seçmişse tepe değer basketboldur. Ancak 'Öğrencilerin çoğu basketbolu seçti' iddiası çürütülür; çünkü 'çoğu' yarıdan fazlası anlamına gelir ve %40, %50'den azdır. Doğru ifade 'En çok tercih edilen spor basketboldur' ya da 'Öğrencilerin %60'ı basketbol dışındaki sporları seçti' olur. Kategorik verilere dayalı iddiaları değerlendirirken 'çoğu, çoğunluk, neredeyse hepsi, azınlık' gibi kelimeleri mutlaka yüzdeyle karşılaştırmalıyız."
+      ],
+      "tablo": {
+        "basliklar": [
+          "İddia",
+          "Kontrol",
+          "Sonuç"
+        ],
+        "satirlar": [
+          [
+            "'B okulunda daha çok öğrenci kitap okuyor.' (B'de 45, A'da 30 kişi)",
+            "Kişi sayıları karşılaştırılmış",
+            "Kabul: Kişi sayısı olarak B'de fazla"
+          ],
+          [
+            "'B okulunun öğrencileri kitap okumaya daha düşkün.'",
+            "Oranlar: A %60, B %30",
+            "Çürüt: Oran olarak A okulu daha yüksek"
+          ],
+          [
+            "Tek seçimli anket: %45 + %30 + %35",
+            "Toplam %110",
+            "Grafik hatalı, güvenilmez"
+          ],
+          [
+            "'Öğrencilerin çoğu basketbolu seçti.' (%40, en büyük dilim)",
+            "%40, yarıdan (%50) azdır",
+            "Çürüt: 'En çok seçilen basketboldur' denmeli"
+          ],
+          [
+            "'Üye sayımız %100 arttı!' (4'ten 8'e)",
+            "Başlangıç değeri çok küçük",
+            "Yanıltıcı: Gerçek artış yalnız 4 kişidir"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Farklı Büyüklükteki Grupları Oranla Karşılaştır",
+          "metin": "Kişi sayıları farklı iki grup karşılaştırılırken her kategorinin kendi grubundaki yüzdesi hesaplanır. Sayıyla yapılan karşılaştırma yalnız 'kaç kişi' sorusuna cevap verir; 'hangi grupta daha yaygın' sorusunun cevabı oranda gizlidir."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "En Çok Seçilen, Çoğunluk Demek Değildir",
+          "metin": "Tepe değer olan kategori, yüzdesi %50'nin üzerinde değilse 'çoğunluk' sayılmaz. Bir iddiada 'çoğu' ya da 'çoğunluk' kelimesi geçiyorsa o kategorinin yüzdesinin %50'den büyük olup olmadığını kontrol et."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 295\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"295\" fill=\"#f8fafc\" rx=\"12\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\">SAYI MI, ORAN MI? FARKLI BÜYÜKLÜKTEKİ GRUPLARI KARŞILAŞTIRMA</text><rect x=\"20\" y=\"45\" width=\"340\" height=\"240\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#f97316\"/><text x=\"190\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#c2410c\">Yalnız sayılara bakınca</text><text x=\"190\" y=\"86\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Düzenli kitap okuyan öğrenci sayısı</text><line x1=\"70\" y1=\"230\" x2=\"320\" y2=\"230\" stroke=\"#1e293b\" stroke-width=\"2\"/><rect x=\"110\" y=\"155\" width=\"60\" height=\"75\" fill=\"#fdba74\"/><rect x=\"210\" y=\"117\" width=\"60\" height=\"113\" fill=\"#ea580c\"/><text x=\"140\" y=\"149\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">30 kişi</text><text x=\"240\" y=\"111\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">45 kişi</text><text x=\"140\" y=\"246\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">A Okulu</text><text x=\"140\" y=\"260\" text-anchor=\"middle\" font-size=\"10\" fill=\"#64748b\">(50 öğrenci)</text><text x=\"240\" y=\"246\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">B Okulu</text><text x=\"240\" y=\"260\" text-anchor=\"middle\" font-size=\"10\" fill=\"#64748b\">(150 öğrenci)</text><text x=\"190\" y=\"278\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#c2410c\">B daha önde görünüyor</text><rect x=\"380\" y=\"45\" width=\"360\" height=\"240\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/><text x=\"560\" y=\"68\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">Oranlara (yüzdelere) bakınca</text><text x=\"560\" y=\"86\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Okuldaki her 100 öğrenciden kaçı okuyor?</text><text x=\"462\" y=\"130\" text-anchor=\"end\" font-size=\"11\" fill=\"#334155\">A Okulu</text><rect x=\"470\" y=\"110\" width=\"240\" height=\"30\" rx=\"4\" fill=\"#e2e8f0\"/><rect x=\"470\" y=\"110\" width=\"144\" height=\"30\" rx=\"4\" fill=\"#16a34a\"/><text x=\"542\" y=\"130\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#ffffff\">%60</text><text x=\"590\" y=\"158\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">30 ÷ 50 = 0,60</text><text x=\"462\" y=\"200\" text-anchor=\"end\" font-size=\"11\" fill=\"#334155\">B Okulu</text><rect x=\"470\" y=\"180\" width=\"240\" height=\"30\" rx=\"4\" fill=\"#e2e8f0\"/><rect x=\"470\" y=\"180\" width=\"72\" height=\"30\" rx=\"4\" fill=\"#16a34a\"/><text x=\"506\" y=\"200\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#ffffff\">%30</text><text x=\"590\" y=\"228\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">45 ÷ 150 = 0,30</text><text x=\"560\" y=\"264\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">Oran olarak A okulunun payı B'nin iki katı</text></svg>"
+    },
+    {
+      "baslik": "İddiayı Kabul Etme, Çürütme ve Gerekçeli Yanıt Yazma (MAT.7.6.2.c)",
+      "metin": [
+        "Bir istatistiksel sonucu inceledikten sonra dört karardan birine varırız. {koyu:Kabul:} Veri toplama yöntemi güvenilirse ve uygun ölçüler iddiayı destekliyorsa iddia kabul edilir. {koyu:Kısmen kabul:} İddianın bir bölümü veriyle uyumlu, bir bölümü ise aşırı genellemeyse iddia daraltılarak kabul edilir. {koyu:Çürütme:} Veriler ya da veriden hesaplanan ölçüler iddiayla çelişiyorsa iddia çürütülür. {koyu:Karar verilemez:} Yöntem hatalıysa, örneğin örneklem yanlıysa, ölçüm tutarsızsa veya veri çok azsa, iddia ne kabul ne de ret edilir. Bu durumda 'Bu veriyle karar verilemez, yeni veri toplanmalı' denir.",
+        "Gerekçeli bir yanıtı dört adımda yazabiliriz: 1) İddiayı kendi cümlenle yaz. 2) Veriden iddiayla ilgili ölçüyü hesapla (ortanca, oran, açıklık, OMS gibi). 3) Hesapladığın değeri iddiayla karşılaştır. 4) Kararını 'çünkü' ile bağlayarak yaz. Örneğin 7-A sınıfındaki öğrencilerin boy uzunluklarının ortancası 152 cm, 7-B'ninki 158 cm olsun ve iki sınıfın OMS değerleri birbirine yakın olsun. Bu durumda 'Çünkü ortancalar 152 cm ve 158 cm olduğundan 7-B öğrencileri genel olarak daha uzundur' diyerek iddiayı {koyu:kabul ederiz}. Ancak 7-A'da boyu 165 cm, 7-B'de boyu 150 cm olan birer öğrenci varsa 'Her 7-B öğrencisi her 7-A öğrencisinden uzundur' iddiası bu tek {koyu:karşı örnekle} çürütülür.",
+        "İddiaların dili de çok şey anlatır. 'Herkes, hiç kimse, her zaman, kesinlikle' gibi mutlak kelimeler içeren iddialar genellikle tek bir karşı örnekle çürütülür. İstatistik ise 'genellikle, çoğunlukla, bu örneklemde, yaklaşık' gibi {koyu:temkinli} kelimelerle konuşur. Bir başka dikkat edilecek nokta, iki durumun birlikte görülmesinin birinin diğerine neden olduğunu göstermemesidir. 'Kahvaltı yapan öğrencilerin not ortalaması daha yüksek, demek ki kahvaltı notları yükseltiyor' yorumu verinin söylediğinden fazlasını iddia eder. Düzenli uyku ya da ders çalışma alışkanlığı gibi başka etkenler de rol oynayabilir. Bu yüzden böyle bir yorum en fazla 'kahvaltı yapanların not ortalaması bu örneklemde daha yüksektir' biçiminde kabul edilir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Karar",
+          "Ne Zaman Verilir?",
+          "Örnek Gerekçe Cümlesi"
+        ],
+        "satirlar": [
+          [
+            "Kabul Et",
+            "Yöntem güvenilir, uygun ölçüler iddiayı destekliyor",
+            "'Ortancalar 152 ve 158 cm olduğundan 7-B öğrencileri genel olarak daha uzundur.'"
+          ],
+          [
+            "Kısmen Kabul Et",
+            "İddianın bir kısmı veriyle uyumlu, bir kısmı aşırı genelleme",
+            "'Ortalama bekleme 9 dakika doğru, ancak müşterilerin çoğu 5 dakika ve daha az beklemiştir.'"
+          ],
+          [
+            "Çürüt",
+            "Veriler veya hesaplanan ölçüler iddiayla çelişiyor",
+            "'7-A'daki 165 cm boyundaki öğrenci 7-B'deki 150 cm boyundaki öğrenciden uzun olduğu için iddia geçersizdir.'"
+          ],
+          [
+            "Karar Verilemez",
+            "Örneklem yanlı, ölçüm tutarsız veya veri yetersiz",
+            "'Yalnız spor salonundaki gençlere sorulduğu için bu veriyle karar verilemez.'"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Gerekçe Cümlesi Kalıbı",
+          "metin": "'Bu iddiayı [kabul ediyorum / çürütüyorum / bu veriyle karar verilemez diyorum], çünkü verilerden hesapladığım [ölçü] = [değer] ve bu değer iddiadaki [ifade] ile [uyumludur / çelişmektedir].' Bu kalıp, yanıtının hem sayıya hem de mantığa dayanmasını sağlar."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Tek Karşı Örnek Yeter",
+          "metin": "'Her', 'tüm', 'hiçbir' gibi kelimelerle kurulan bir iddiayı çürütmek için iddiaya uymayan tek bir veri yeterlidir. Buna karşın 'genellikle' ile kurulan bir iddia tek örnekle çürütülmez; o zaman ortanca, oran veya ortalama gibi ölçülere bakılır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 320\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"320\" fill=\"#f8fafc\" rx=\"12\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">İDDİAYI KABUL ETME, ÇÜRÜTME VEYA ASKIYA ALMA</text><rect x=\"20\" y=\"120\" width=\"120\" height=\"60\" rx=\"10\" fill=\"#e0e7ff\" stroke=\"#6366f1\"/><text x=\"80\" y=\"146\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#4338ca\">İDDİA</text><text x=\"80\" y=\"164\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">(sonuç / yorum)</text><line x1=\"140\" y1=\"150\" x2=\"166\" y2=\"150\" stroke=\"#64748b\" stroke-width=\"2\"/><polygon points=\"166,144 176,150 166,156\" fill=\"#64748b\"/><rect x=\"178\" y=\"100\" width=\"200\" height=\"100\" rx=\"10\" fill=\"#fefce8\" stroke=\"#eab308\"/><text x=\"278\" y=\"124\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#a16207\">1. Soru</text><text x=\"278\" y=\"146\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Veri toplama yöntemi</text><text x=\"278\" y=\"164\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">güvenilir mi?</text><text x=\"278\" y=\"186\" text-anchor=\"middle\" font-size=\"10\" fill=\"#64748b\">(örneklem, soru, ölçüm)</text><line x1=\"278\" y1=\"200\" x2=\"278\" y2=\"226\" stroke=\"#64748b\" stroke-width=\"2\"/><polygon points=\"272,226 278,236 284,226\" fill=\"#64748b\"/><text x=\"288\" y=\"220\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b45309\">Hayır</text><rect x=\"163\" y=\"238\" width=\"230\" height=\"62\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\"/><text x=\"278\" y=\"262\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#92400e\">KARAR VERİLEMEZ</text><text x=\"278\" y=\"284\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Yeni ve tarafsız veri toplanmalı</text><line x1=\"378\" y1=\"150\" x2=\"410\" y2=\"150\" stroke=\"#64748b\" stroke-width=\"2\"/><polygon points=\"410,144 420,150 410,156\" fill=\"#64748b\"/><text x=\"396\" y=\"141\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">Evet</text><rect x=\"422\" y=\"100\" width=\"180\" height=\"100\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/><text x=\"512\" y=\"124\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1d4ed8\">2. Soru</text><text x=\"512\" y=\"146\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Veriler ve uygun ölçüler</text><text x=\"512\" y=\"164\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">iddiayı destekliyor mu?</text><text x=\"512\" y=\"186\" text-anchor=\"middle\" font-size=\"10\" fill=\"#64748b\">(ortanca, oran, açıklık, OMS)</text><line x1=\"602\" y1=\"130\" x2=\"623\" y2=\"100\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"623\" cy=\"100\" r=\"3.5\" fill=\"#16a34a\"/><line x1=\"602\" y1=\"170\" x2=\"623\" y2=\"205\" stroke=\"#dc2626\" stroke-width=\"2\"/><circle cx=\"623\" cy=\"205\" r=\"3.5\" fill=\"#dc2626\"/><rect x=\"625\" y=\"55\" width=\"120\" height=\"80\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\"/><text x=\"685\" y=\"78\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Evet ise</text><text x=\"685\" y=\"100\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">KABUL ET</text><text x=\"685\" y=\"120\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">gerekçesiyle</text><rect x=\"625\" y=\"175\" width=\"120\" height=\"80\" rx=\"10\" fill=\"#fee2e2\" stroke=\"#dc2626\"/><text x=\"685\" y=\"198\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Hayır ise</text><text x=\"685\" y=\"220\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#b91c1c\">ÇÜRÜT</text><text x=\"685\" y=\"240\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">karşı kanıtla</text><text x=\"560\" y=\"285\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#475569\">Kısmen uyumluysa: iddia daraltılarak kabul edilir</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir belediye, 'İlçemizdeki gençlerin %90'ı yeni bir yüzme havuzu yapılmasını istiyor' açıklaması yapmıştır. Anket, bir spor salonunda antrenman yapan 40 gence 'Sağlıklı bir gençlik için ilçemize yüzme havuzu yapılmasını destekler misiniz?' sorusuyla uygulanmıştır. Bu sonucu istatistiksel olarak tartışınız.",
+      "cevap": "1) İddia: İlçedeki TÜM gençlerin %90'ı havuz istiyor.\n2) Örneklem incelemesi: Anket yalnız spor salonundaki gençlere uygulanmıştır. Bu kişiler spora zaten ilgili olduğundan havuzu destekleme olasılıkları yüksektir; örneklem yanlıdır (kolayda örneklem). Ayrıca tüm ilçe için 40 kişi azdır.\n3) Soru incelemesi: 'Sağlıklı bir gençlik için' ifadesi katılımcıyı 'evet' demeye iten yönlendirici bir sorudur.\n4) Hesap: 40 × 0,90 = 36 kişi 'evet' demiştir. Bu yalnız salondaki gençlerin görüşünü gösterir.\n5) Karar: Bu veriyle iddia kabul edilemez, ama kesin olarak çürütülemez de; bu veriyle karar verilemez. Süreç yeniden planlanmalıdır: Farklı mahallelerden, okullardan ve iş yerlerinden rastgele seçilen yeterli sayıda gence 'İlçemize yüzme havuzu yapılmasını ister misiniz? (Evet / Hayır / Kararsızım)' gibi tarafsız bir soru sorulmalıdır.",
+      "ipucu": "Önce örneklemin ilçedeki tüm gençleri temsil edip etmediğini, sonra sorunun tarafsız olup olmadığını kontrol ediniz."
+    },
+    {
+      "soru": "Bir kırtasiyenin reklamında ocak, şubat ve mart aylarında satılan defter sayıları (210, 215 ve 220) sütun grafiğiyle gösterilmiş, dikey eksen 200'den başlatılmıştır. Reklamda 'Mart ayında satışlarımız ocak ayının iki katına çıktı!' yazmaktadır. Bu iddiayı değerlendiriniz.",
+      "cevap": "1) Grafik incelemesi: Eksen 200'den başladığı için sütun boyları 210 − 200 = 10, 215 − 200 = 15 ve 220 − 200 = 20 birim olarak çizilmiştir. Mart sütunu ocak sütununun 2 katı uzunlukta görünür.\n2) Gerçek değerler: Mart satışı ile ocak satışı arasındaki fark 220 − 210 = 10 defterdir.\n3) Artış oranı: {kesir:10|210} × 100 ≈ %4,8. Yani satışlar yalnız yaklaşık %5 artmıştır.\n4) İki kat kontrolü: Mart satışının ocak satışının iki katı olması için 210 × 2 = 420 defter satılması gerekirdi.\n5) Karar: İddia çürütülür. Grafik kesik eksen nedeniyle yanıltıcıdır. Doğru ifade şudur: 'Mart satışları ocağa göre 10 adet (yaklaşık %5) arttı.'",
+      "ipucu": "Sütun boylarını değil, eksenden okunan gerçek değerleri karşılaştırınız; dikey eksenin başlangıç değerine dikkat ediniz."
+    },
+    {
+      "soru": "Bir kafede 7 müşterinin sipariş için bekleme süreleri (dakika) 2, 3, 3, 4, 4, 5 ve 42 olarak ölçülmüştür. Bir kullanıcı yorumunda 'Bu kafede müşteriler ortalama 9 dakika bekliyor; buraya gelen her müşteri yaklaşık 9 dakika bekler' yazılmıştır. Yorumu tartışınız.",
+      "cevap": "1) Aritmetik ortalama: (2 + 3 + 3 + 4 + 4 + 5 + 42) ÷ 7 = {kesir:63|7} = 9 dakika. İddianın ilk kısmı hesap olarak doğrudur.\n2) Ortanca: Veriler zaten sıralıdır; 7 verinin ortasındaki 4. değer 4 dakikadır.\n3) Tepe değer: 3 ve 4 değerleri ikişer kez tekrar ettiğinden iki tepe değer vardır (3 ve 4 dakika).\n4) Uç değer: 42 dakika diğer verilerden çok uzaktır ve ortalamayı 9'a çıkarmıştır. 7 müşteriden 6'sı 5 dakika veya daha az beklemiştir.\n5) Karar: İddia kısmen kabul edilir. 'Ortalama 9 dakika' doğrudur. Ancak 'her müşteri yaklaşık 9 dakika bekler' kısmı çürütülür; tipik bekleme süresini ortanca (4 dakika) daha iyi gösterir. 42 dakikalık beklemenin nedeni (örneğin çok büyük bir sipariş) ayrıca araştırılmalıdır.",
+      "ipucu": "Ortalamayı ve ortancayı ayrı ayrı hesaplayıp aralarındaki farkın nedenini, yani uç değeri bulunuz."
+    },
+    {
+      "soru": "7-A sınıfındaki 32 öğrenciden 20'si, 7-B sınıfındaki 40 öğrenciden 22'si en sevdiği ders olarak Fen Bilimlerini seçmiştir. Ali, '7-B'de 22 kişi seçtiği için 7-B öğrencileri Fen Bilimlerini daha çok seviyor' demektedir. Ali'nin yorumunu değerlendiriniz. Her sınıfın verisi ayrı birer daire grafiğinde gösterilirse Fen Bilimleri diliminin merkez açısı kaç derece olur?",
+      "cevap": "1) Sınıf mevcutları farklı olduğundan (32 ve 40) sayıyla değil oranla karşılaştırma yapılmalıdır.\n2) 7-A oranı: {kesir:20|32} = 0,625, yani %62,5.\n3) 7-B oranı: {kesir:22|40} = 0,55, yani %55.\n4) Karar: Ali'nin yorumu çürütülür. Kişi sayısı olarak 7-B'de daha fazla öğrenci Fen Bilimlerini seçmiştir, ancak sınıf içindeki oran olarak 7-A daha yüksektir (%62,5 ile %55).\n5) Merkez açılar: 7-A için 0,625 × 360° = 225°, 7-B için 0,55 × 360° = 198°. Daire grafikleri de 7-A'daki payın daha büyük olduğunu gösterir.",
+      "ipucu": "Her sınıfta Fen Bilimlerini seçenlerin sayısını kendi sınıf mevcuduna bölerek oranları bulunuz."
+    },
+    {
+      "soru": "Tek seçimli bir ankette öğrencilere 'Teneffüste en çok ne yaparsınız?' diye sorulmuş ve sonuçlar daire grafiğinde 'Oyun %40, Sohbet %35, Kitap okuma %30' olarak gösterilmiştir. Bu grafiği yorumlayan bir öğrenci 'Öğrencilerin çoğu teneffüste oyun oynuyor' demiştir. Grafik ve yorum hakkında ne söylersiniz?",
+      "cevap": "1) Yüzde kontrolü: %40 + %35 + %30 = %105. Tek seçimli ankette toplam %100 olmalıdır; grafikte hata vardır.\n2) Merkez açı kontrolü: 0,40 × 360° = 144°, 0,35 × 360° = 126°, 0,30 × 360° = 108°. Toplam 144° + 126° + 108° = 378° eder ve 360°'yi aşar; böyle bir daire grafiği çizilemez.\n3) Bu nedenle grafik güvenilir değildir; verilerin yeniden kontrol edilmesi gerekir.\n4) Yorum kontrolü: Oyun yüzdesi gerçekten %40 olsa bile %40, %50'den az olduğu için 'çoğu' denemez.\n5) Karar: Grafik hatalıdır; yorum da 'çoğunluk' kavramı yanlış kullanıldığı için çürütülür. Doğru veri elde edilirse uygun ifade 'En çok tercih edilen etkinlik oyundur' olur.",
+      "ipucu": "Önce yüzdelerin toplamını ve merkez açıların toplamını kontrol ediniz, sonra 'çoğu' kelimesinin %50'den fazlası anlamına geldiğini hatırlayınız."
+    },
+    {
+      "soru": "Bir haberde 'İki otobüs hattının ortalama gecikmesi 6 dakikadır, bu yüzden iki hat da eşit derecede güvenilirdir' denmektedir. Beş günlük gecikme süreleri (dakika) A hattı için 5, 6, 6, 7, 6; B hattı için 0, 1, 6, 11, 12'dir. İddiayı açıklık ve ortalama mutlak sapma ile tartışınız.",
+      "cevap": "1) Ortalamalar: A hattı (5 + 6 + 6 + 7 + 6) ÷ 5 = {kesir:30|5} = 6 dakika; B hattı (0 + 1 + 6 + 11 + 12) ÷ 5 = {kesir:30|5} = 6 dakika. Ortalamalar gerçekten eşittir.\n2) Açıklık: A hattı 7 − 5 = 2 dakika; B hattı 12 − 0 = 12 dakika.\n3) A hattının ortalamaya (6'ya) uzaklıkları: 1, 0, 0, 1, 0. OMS = {kesir:2|5} = 0,4 dakika.\n4) B hattının ortalamaya (6'ya) uzaklıkları: 6, 5, 0, 5, 6. OMS = {kesir:22|5} = 4,4 dakika.\n5) Karar: İddia çürütülür. Ortalamalar eşit olsa da A hattının açıklığı (2) ve OMS'si (0,4) çok küçüktür; A hattı her gün yaklaşık 6 dakika gecikir ve gecikmesi tahmin edilebilir. B hattında gecikme 0 ile 12 dakika arasında dalgalanır. Daha güvenilir olan A hattıdır.",
+      "ipucu": "Ortalamalar eşit olduğunda güvenilirlik (tutarlılık) için açıklık ve OMS değerlerini karşılaştırınız."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir araştırmacı 'Şehrimizdeki insanların çoğu toplu taşımayı yeterli bulmuyor' sonucuna ulaşmak istiyor. Aşağıdaki veri toplama yöntemlerinden hangisi bu sonucu en güvenilir kılar?",
+      "secenekler": [
+        "Anketi yalnız sabah durakta 40 dakikadır otobüs bekleyen kişilere uygulamak",
+        "Belediyenin sosyal medya hesabında isteyenin cevap verebileceği bir anket açmak",
+        "Şehrin farklı ilçelerinden ve farklı yaş gruplarından rastgele seçilen 600 kişiye tarafsız bir soru sormak",
+        "Araştırmacının yalnız kendi ailesine ve komşularına sormak"
+      ],
+      "dogru": 2,
+      "aciklama": "Uzun süre otobüs bekleyenler (A) olumsuz cevaba yatkındır. Sosyal medya anketi (B) gönüllü katılıma dayanır. Aile ve komşular (D) ise kolayda örneklemdir. Farklı ilçe ve yaş gruplarından rastgele seçilen yeterli büyüklükte bir örneklem ve tarafsız bir soru evreni en iyi temsil eder."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir sütun grafiğinde dikey eksen 90'dan başlamaktadır. A kulübünün üye sayısı 95, B kulübünün üye sayısı 100'dür. Grafiğe bakan Elif 'B kulübünün üye sayısı A'nın iki katı' diyor. Elif'in yorumu için aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Evet; B'nin sütunu A'nınkinin iki katı uzunluğunda olduğu için B'nin üye sayısı iki katıdır.",
+        "Hayır; eksen 90'dan başladığı için sütunlar 5 ve 10 birim görünür, gerçekte B'nin yalnız 5 üyesi fazladır.",
+        "Hayır; B'nin üye sayısı gerçekte A'nın üç katıdır.",
+        "Evet; sütun grafiklerinde sütun boyları her durumda değerlerle doğru orantılıdır."
+      ],
+      "dogru": 1,
+      "aciklama": "Eksen 90'dan başladığından sütun boyları 95 − 90 = 5 ve 100 − 90 = 10 birim olarak çizilir ve B iki kat görünür. Gerçek fark 100 − 95 = 5 üyedir; B'nin üye sayısı A'nınkinden yalnız yaklaşık %5 fazladır. Yorum kesik eksen yanılgısına dayanır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir gruptaki 5 öğrencinin haftalık harçlıkları 50, 60, 60, 70 ve 760 TL'dir. Bir öğrenci 'Bu gruptaki öğrenciler haftada ortalama 200 TL harçlık alıyor, yani çoğu öğrenci 200 TL civarında harçlık alıyor' yorumunu yapıyor. Bu yorum için aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Yorum doğrudur; aritmetik ortalama her zaman en doğru merkezi eğilim ölçüsüdür.",
+        "Yorum doğrudur; çünkü tepe değer de 200 TL'dir.",
+        "Yorum yanlıştır; çünkü harçlıkların açıklığı 100 TL'dir.",
+        "Yorum yanlıştır; 760 TL'lik uç değer ortalamayı yükseltmiştir, ortanca 60 TL'dir ve öğrencilerin çoğu 70 TL ve altında harçlık alır."
+      ],
+      "dogru": 3,
+      "aciklama": "Ortalama (50 + 60 + 60 + 70 + 760) ÷ 5 = 1000 ÷ 5 = 200 TL'dir; ancak bu değer 760 TL'lik uç değer yüzünden yükselmiştir. Ortanca 60 TL, tepe değer 60 TL, açıklık 760 − 50 = 710 TL'dir. Beş öğrenciden dördü 70 TL ve altında harçlık aldığı için 'çoğu 200 TL civarında' yorumu çürütülür."
+    },
+    {
+      "tur": "coktan",
+      "soru": "A okulundaki 120 öğrenciden 48'i, B okulundaki 200 öğrenciden 60'ı okula bisikletle gelmektedir. Bu verilere göre aşağıdaki yorumlardan hangisi kabul edilebilir?",
+      "secenekler": [
+        "A okulunda bisiklet kullanan öğrencilerin oranı B okulundakinden yüksektir.",
+        "B okulunda bisiklet kullananların oranı daha yüksektir, çünkü 60 kişi 48 kişiden fazladır.",
+        "İki okulda bisiklet kullananların oranı eşittir.",
+        "A okulundaki öğrencilerin çoğunluğu okula bisikletle gelmektedir."
+      ],
+      "dogru": 0,
+      "aciklama": "A okulunda {kesir:48|120} = 0,40 yani %40, B okulunda {kesir:60|200} = 0,30 yani %30 öğrenci bisiklet kullanır. Oran olarak A daha yüksektir. B seçeneği sayı ile oranı karıştırır, C hesapla çelişir. D yanlıştır; çünkü %40 yarıdan azdır ve çoğunluk sayılmaz."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Yalnız kütüphanede bulunan öğrencilere 'Kitap okumayı sever misiniz?' diye sorup okulun tamamı hakkında sonuç çıkarmak yanlı bir örneklemle çalışmaktır.",
+          "dogru": true,
+          "aciklama": "Kütüphanedeki öğrenciler okumaya zaten ilgili olabilir; bu örneklem okulun tamamını adil biçimde temsil etmez."
+        },
+        {
+          "metin": "Dikey ekseni 0'dan başlamayan bir sütun grafiğinde sütunlar arasındaki farklar gerçekte olduğundan daha büyük görünebilir.",
+          "dogru": true,
+          "aciklama": "Kesik eksende sütun boyları yalnız başlangıç değerinin üstündeki kısmı gösterdiği için küçük farklar büyük görünür."
+        },
+        {
+          "metin": "Bir veri grubunda uç değer varsa aritmetik ortalama, grubu ortancadan daha iyi temsil eder.",
+          "dogru": false,
+          "aciklama": "Aritmetik ortalama uç değerden etkilenir; uç değer bulunan gruplarda grubu ortanca daha iyi temsil eder."
+        },
+        {
+          "metin": "Tek seçimli bir anketin daire grafiğindeki yüzdelerin toplamı %110 ise grafikte bir hata vardır.",
+          "dogru": true,
+          "aciklama": "Tek seçimli ankette her katılımcı bir kez sayılır; yüzdelerin toplamı %100, merkez açıların toplamı 360° olmalıdır."
+        },
+        {
+          "metin": "Bir istatistiksel sonucu çürütmek için verilere dayanmayan kişisel bir görüş belirtmek yeterlidir.",
+          "dogru": false,
+          "aciklama": "Çürütme, veriden hesaplanan ölçülere veya karşı örneğe dayanan istatistiksel temellendirme gerektirir; kişisel görüş kanıt sayılmaz."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Yanlı örneklem",
+          "Hedef kitlenin yalnız bir kesimini içeren, evreni adil temsil etmeyen örneklem"
+        ],
+        [
+          "Yönlendirici soru",
+          "Katılımcıyı belirli bir cevaba iten, taraf tutan anket sorusu"
+        ],
+        [
+          "Kesik eksen",
+          "Sıfırdan başlamayan dikey eksen nedeniyle farkların büyük görünmesi"
+        ],
+        [
+          "Aşırı genelleme",
+          "Küçük bir örneklemden elde edilen sonucu tüm topluma yaymak"
+        ],
+        [
+          "Karşı örnek",
+          "'Her' ya da 'hiçbir' içeren bir iddiayı çürütmeye yeten, iddiaya uymayan tek veri"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Hedef kitleyi adil biçimde temsil etmeyen örnekleme ___ örneklem denir.",
+          "cevap": "yanlı"
+        },
+        {
+          "metin": "Uç değer içeren bir veri grubunda merkezi eğilim ölçüsü olarak aritmetik ortalama yerine ___ kullanılmalıdır.",
+          "cevap": "ortanca"
+        },
+        {
+          "metin": "Tek seçimli bir anketin daire grafiğinde dilimlerin merkez açıları toplamı ___ derece olmalıdır.",
+          "cevap": "360"
+        },
+        {
+          "metin": "Mevcutları farklı iki sınıfı karşılaştırırken kişi sayıları yerine ___ değerleri kullanılmalıdır.",
+          "cevap": "yüzde"
+        },
+        {
+          "metin": "Dikey ekseni sıfırdan başlatılmayan sütun grafikleri, değerler arasındaki farkları olduğundan daha ___ gösterebilir.",
+          "cevap": "büyük"
+        }
+      ],
+      "kelimeler": [
+        "yanlı",
+        "ortanca",
+        "360",
+        "yüzde",
+        "büyük"
+      ],
+      "fazla": [
+        "tepe",
+        "180"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir haber sitesinde şu başlık yer almıştır: 'Şehrimizde bu aralık çok sıcak geçti! Bu yılın aralık ortalaması 12 °C, geçen yılın aralık ortalaması ise 8 °C idi; sıcaklık 4 °C arttı.' Haberdeki bu yılın verisi, aralık ayının yalnız 5 gününde saat 14.00'te yapılan ölçümlerden (10, 11, 12, 13, 14 °C) elde edilmiştir. Geçen yılın ortalaması ise ayın tüm günlerinde, gece ve gündüz birçok saatte yapılan ölçümlerden hesaplanmıştır. Haberdeki sonucu istatistiksel olarak tartışınız.",
+      "ipuclari": [
+        "1. adım: Bu yılın verilerinden aritmetik ortalamayı ve açıklığı hesaplayarak haberdeki 12 °C değerini kontrol ediniz.",
+        "2. adım: Ölçümlerin hangi saatte, kaç günde yapıldığını ve geçen yılın verisiyle aynı yöntemle toplanıp toplanmadığını inceleyerek hata ve yanlılıkları belirleyiniz.",
+        "3. adım: İddiayı kabul mü edeceğinize, çürütecek misiniz yoksa 'bu veriyle karar verilemez' mi diyeceğinize karar veriniz ve süreci nasıl yeniden planlayacağınızı yazınız."
+      ],
+      "cevap": "1. adım (Hesap kontrolü): Bu yılın ortalaması (10 + 11 + 12 + 13 + 14) ÷ 5 = {kesir:60|5} = 12 °C'tir; açıklık 14 − 10 = 4 °C'tir. Haberdeki 12 °C değeri bu 5 ölçüme göre doğru hesaplanmıştır.\n2. adım (Hata ve yanlılık tespiti): a) Ölçümler yalnız saat 14.00'te yapılmıştır. Bu saat günün en sıcak saatlerinden biri olduğundan sonuç yukarı doğru yanlıdır; gece ve sabah sıcaklıkları hiç hesaba katılmamıştır. b) Aralık ayının 31 gününden yalnız 5'i ölçülmüştür; örneklem küçüktür ve ayın tamamını temsil etmeyebilir. c) Geçen yılın 8 °C'lik ortalaması gece ve gündüz birçok saatteki ölçümlerden hesaplanmıştır. İki değer farklı yöntemlerle elde edildiği için karşılaştırılamaz. Bu, nicel (sürekli) verilerde tutarsız ölçüm koşulu hatasıdır.\n3. adım (Karar ve yeniden planlama): '4 °C arttı' iddiası bu veriyle kabul edilemez. Ancak kesin olarak çürütülemez de; gerçekte de sıcak bir aralık yaşanmış olabilir. Doğru karar 'bu veriyle karar verilemez' olur. Süreç yeniden planlanmalıdır: Aralık ayının her gününde, geçen yılla aynı saatlerde (örneğin 07.00, 14.00 ve 21.00) ve aynı ölçüm aracıyla sıcaklık ölçülmelidir. Ardından günlük ortalamalardan aylık ortalama hesaplanmalı ve geçen yılın aynı yöntemle bulunmuş ortalamasıyla karşılaştırılmalıdır."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 906 gönderi.
+Toplam 908 gönderi.
 
 ## bilgi-7-turkce-7
 Sıra: 2026-11-19 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-turkce-7.png
@@ -9067,4 +9067,24 @@ Bunu biliyor muydunuz? Namaz ve oruç bedenî ibadetlerdir (vekaletle yapılamaz
 Faydalı bulduysanız arkadaşınızı etiketleyin.
 📘 9. sınıf Temel Dinî Bilgiler 14. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-temel-dini-bilgiler-hafta-14
 #derskutusu #temeldinibilgiler #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-tarih-15
+Sıra: 2027-01-30 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-tarih-15.png
+
+```
+Bunu biliyor muydunuz? Denizler: Osmanlı, Venedik ile Ceneviz arasındaki ticari rekabetten yararlanarak Cenevizlilerle iş birliği yapmıştır. 1416 Gelibolu deniz yenilgisi denizde henüz üstün olmadığını göstermiş, Selanik ise 1430'da Venedik'ten kesin olarak. Karamanoğulları: Kendini Türkiye Selçuklularının mirasçısı gören Karaman, Anadolu Türk siyasi birliğinin en güçlü rakibi olmuştur. 1386 Frenkyazı ve 1397 Akçay savaşlarına rağmen bu mesele 1453'e kadar çözülememiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Tarih 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-tarih-hafta-15
+#derskutusu #tarih #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-matematik-15
+Sıra: 2027-01-30 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-matematik-15.png
+
+```
+Bunu biliyor muydunuz? İstatistiksel Temellendirme: Başkalarının sonuçlarını kişisel görüşle değil; veri kaynağı, örneklem, grafik ve uygun ölçülere dayanan sayısal gerekçelerle tartışırız. Örneklem Yanlılığı: Kolayda örneklem, gönüllü katılım, yönlendirici soru, çok küçük örneklem ve tutarsız ölçüm koşulları sonuçların evreni temsil etmesini engeller.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Matematik 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-matematik-hafta-15
+#derskutusu #matematik #7sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
