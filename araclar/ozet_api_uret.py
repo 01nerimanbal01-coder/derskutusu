@@ -96,6 +96,7 @@ SISTEM = """Sen derskutusu.com için haftalık konu özeti yazan deneyimli bir T
 
 ÇIKTI BİÇİMİ
 - Yanıtın yalnız geçerli bir JSON nesnesi olsun: açıklama, selamlama, kod çiti (```), Markdown yok. İlk karakter { ve son karakter } olmalı.
+- JSON dizelerinin içinde çift tırnak (") yazma: metindeki alıntılar için “ ” ya da ' ' kullan; SVG özniteliklerini tek tırnakla yaz (<rect fill='#f8fafc' rx='12'/>).
 - Türkçe karakterleri doğrudan yaz (\\u kaçışı kullanma). Dizelerde satır sonu için \\n kullanılabilir.
 - Hedef uzunluk 40-55 KB (önceki haftaların dosyalarıyla aynı derinlik); 60 KB'ı geçme. Kısa geçiştirme yok, gereksiz tekrar da yok.
 
@@ -247,7 +248,7 @@ def ornek_kirp(o):
             if isinstance(kt, dict) and isinstance(kt.get('baslik'), str):
                 kt['baslik'] = _gosterimsiz(kt['baslik'])
         if isinstance(b.get('gorsel'), str):
-            b['gorsel'] = _gosterimsiz(b['gorsel'])
+            b['gorsel'] = re.sub(r'="([^"\']*)"', r"='\1'", _gosterimsiz(b['gorsel']))
             if i >= 2 and len(b['gorsel']) > 400:
                 b['gorsel'] = b['gorsel'][:300] + '…(kısaltıldı; sen tam SVG yazacaksın)</svg>'
     for anahtar in ('claude_denetim', 'kalite'):
@@ -804,6 +805,39 @@ class Sayac:
                 f'· tahmini {self.maliyet():.2f} $')
 
 
+def json_onar(metin, sinir=3000):
+    """Modelin yazdığı JSON'daki sık hataları onararak çözer: kaçırılmamış iç tırnak (SVG özniteliği, alıntı),
+    alt satırdaki öğede eksik virgül, geçersiz ters bölü, dize içinde ham satır sonu. Onarılamazsa ilk hatayı
+    yükseltir. Onarılan özet yine bütün denetimlerden geçer."""
+    s, ilk = metin, None
+    for _ in range(sinir):
+        try:
+            return json.loads(s, strict=False)
+        except json.JSONDecodeError as exc:
+            ilk = ilk or exc
+            p, msg = exc.pos, exc.msg
+            ch = s[p] if p < len(s) else ''
+            if msg.startswith('Invalid \\escape'):
+                s = s[:p] + '\\' + s[p:]                      # \( → \\(
+                continue
+            if not ch or not msg.startswith(("Expecting ',' delimiter", "Expecting ':' delimiter",
+                                             'Expecting property name', 'Expecting value')):
+                raise ilk
+            q = s.rfind('"', 0, p)
+            if msg.startswith("Expecting ',' delimiter") and ch in '"{[' and '\n' in s[q:p]:
+                s = s[:p] + ',' + s[p:]                        # alt satırdaki öğe: eksik virgül
+                continue
+            if msg.startswith("Expecting ':' delimiter") and ch in ',}]':
+                # metindeki "a", "b" dizisi anahtar sanıldı: anahtarın önündeki tırnak iç tırnaktır
+                q = s.rfind('"', 0, s.rfind('"', 0, q))
+            elif ch in ',}]:' and not msg.startswith("Expecting ',' delimiter"):
+                raise ilk                                      # dizide '}' ya da ':' gelmez: önceki tırnak içtedir
+            if q <= 0 or s[q - 1] == '\\':
+                raise ilk
+            s = s[:q] + '\\"' + s[q + 1:]                    # erken kapanan dize: iç tırnak kaçırılır
+    raise ilk
+
+
 def json_ayikla(metin):
     metin = metin.strip()
     metin = re.sub(r'^```(?:json)?\s*', '', metin)
@@ -811,7 +845,7 @@ def json_ayikla(metin):
     bas, son = metin.find('{'), metin.rfind('}')
     if bas < 0 or son < 0:
         raise ValueError('yanıtta JSON nesnesi yok')
-    return json.loads(metin[bas:son + 1])
+    return json_onar(metin[bas:son + 1])
 
 
 KREDI_BITTI = ('API kredisi ya da harcama sınırı doldu. Kalan bakiye: platform.claude.com/settings/billing '
