@@ -1,0 +1,585 @@
+{
+  "ad": "10-kimya-16",
+  "sinif": 10,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 16,
+  "tarih": "4-8 Ocak 2027",
+  "yayin_tarihi": "2027-01-04",
+  "unite": "1. Tema: Etkileşim",
+  "konu": "Graham Difüzyon ve Efüzyon Yasası: Gazların Farklı Ortamlarda Yayılmasına İlişkin Deney Tasarımı ve Günlük Hayat Uygulamaları",
+  "ciktilar": [
+    "KİM.10.1.11. Gazların farklı ortamlarda yayılmasına ilişkin deney yapabilme",
+    "a) Efüzyon ve difüzyon ile ilgili deney tasarlar.",
+    "b) Deney sonuçlarını günlük hayattaki durumları açıklamak için kullanır."
+  ],
+  "giris": "Geçen hafta ideal gaz denklemini oluşturduk ve gaz taneciklerinin sürekli, rastgele ve hızlı hareket ettiğini kinetik moleküler teoriyle hatırladık. Bu hafta bu hareketin en kolay gözlenen sonucunu, yani gazların {koyu:yayılmasını} inceliyoruz: Bir gazın başka bir gaz içinde dağılmasına {koyu:difüzyon}, küçük bir delikten boşluğa sızmasına {koyu:efüzyon} diyeceğiz. {koyu:Graham Yasası} ile yayılma hızının mol kütlesine nasıl bağlı olduğunu bulacak, amonyak ve hidrojen klorürle bir {koyu:difüzyon deneyi} tasarlayacak ve deney sonuçlarını doğal gaz dedektörlerinden helyum balonlarına kadar günlük hayattaki olayları açıklamak için kullanacağız.",
+  "ozet": [
+    "{koyu:Difüzyon:} Gaz taneciklerinin rastgele hareketleri sonucunda bir gazın başka bir gaz (ya da sıvı) içinde kendiliğinden ve homojen olarak dağılmasıdır; örneğin parfüm kokusunun odaya yayılması.",
+    "{koyu:Efüzyon:} Bir gazın, tanecik boyutuna yakın küçüklükteki bir delikten boşluğa (düşük basınçlı ortama) sızmasıdır; örneğin helyum balonunun zamanla sönmesi.",
+    "{koyu:Graham Yasası:} Aynı sıcaklık ve basınçta gazların yayılma hızları mol kütlelerinin karekökü ile ters orantılıdır: {kesir:v₁|v₂} = {kesir:{kok:M₂}|{kok:M₁}}.",
+    "{koyu:Süre ve yol:} Aynı miktar gazın yayılma süresi mol kütlesinin kareköküyle doğru orantılıdır; aynı sürede alınan yollar ise hızlarla doğru orantılıdır.",
+    "{koyu:Deney tasarımı:} N{alt:H|3} ve HCl ile yapılan difüzyon tüpü deneyinde beyaz N{alt:H|4}Cl halkası, mol kütlesi büyük olan {koyu:HCl ucuna daha yakın} oluşur; bu sonuç Graham Yasası'nı destekler.",
+    "{koyu:Farklı ortamlar ve günlük hayat:} Yayılma gazlarda sıvılardan, sıvılarda katılardan hızlıdır ve sıcaklık arttıkça hızlanır; doğal gaz dedektörünün tavana, LPG dedektörünün zemine yakın takılması bu ilkelerle açıklanır."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Difüzyon ve Efüzyon: Gazların Yayılma Biçimleri",
+      "metin": [
+        "Kinetik moleküler teoriye göre gaz tanecikleri sürekli, gelişigüzel ve doğrusal hareket eder; birbirleriyle ve kabın çeperleriyle çarpışarak yön değiştirir. Bu hareketin bir sonucu olarak gazlar bulundukları ortama kendiliğinden yayılır. Bir gazın taneciklerinin başka bir gazın tanecikleri arasına dağılarak {koyu:homojen bir karışım} oluşturmasına {koyu:difüzyon} denir. Mutfakta pişen yemeğin kokusunun salona ulaşması, sıkılan parfümün birkaç saniye içinde odanın öbür ucunda hissedilmesi difüzyona örnektir. Difüzyon, taneciklerin {koyu:derişimin yüksek olduğu yerden düşük olduğu yere} doğru net hareketiyle gerçekleşir ve derişim her yerde eşitlenene kadar sürer.",
+        "Bir gazın, tanecik boyutuyla karşılaştırılabilecek kadar küçük bir delikten (gözenekten) boşluğa ya da daha düşük basınçlı bir ortama sızmasına ise {koyu:efüzyon} denir. Efüzyonda tanecikler başka bir gazın içine karışmaz; yalnızca rastgele hareketleri sırasında deliğe denk gelenler dışarı çıkar. Şişirilmiş bir balonun ağzı sıkıca bağlı olsa bile birkaç gün içinde küçülmesi, araç lastiklerinin zamanla hava kaybetmesi efüzyona örnektir. Deliğe birim zamanda ulaşan tanecik sayısı taneciklerin hızına bağlı olduğundan {koyu:hızlı tanecikler daha çabuk sızar}.",
+        "Difüzyon ve efüzyon farklı olaylar olsa da ikisinin de kaynağı aynıdır: {koyu:taneciklerin hareketi}. Bu nedenle iki olayın hızı da aynı etkenlere bağlıdır. Tanecikler ne kadar hızlı hareket ederse yayılma o kadar hızlı olur. Aynı sıcaklıkta {koyu:hafif tanecikler ağır taneciklerden daha hızlıdır}; sıcaklık arttıkça da bütün taneciklerin hızı artar. Difüzyonda ayrıca tanecikler yol boyunca ortamdaki diğer taneciklerle çarpıştığı için yayılma, aynı gazın boşluğa yayılmasından çok daha yavaştır. Bu hafta bu etkenleri hem matematiksel olarak hem de deneylerle inceleyeceğiz."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Özellik",
+          "Difüzyon",
+          "Efüzyon"
+        ],
+        "satirlar": [
+          [
+            "Tanım",
+            "Gazın başka bir gaz veya sıvı içinde kendiliğinden dağılması",
+            "Gazın küçük bir delikten boşluğa veya düşük basınçlı ortama sızması"
+          ],
+          [
+            "Ortam",
+            "Başka tanecikler bulunan ortam (hava, su)",
+            "Delik veya gözenekli bir çeper ve öbür tarafta boşluk"
+          ],
+          [
+            "Karışma",
+            "Homojen karışım oluşur",
+            "Gaz başka bir gaza karışmak zorunda değildir"
+          ],
+          [
+            "Günlük örnek",
+            "Parfüm ve yemek kokusunun yayılması",
+            "Balonun sönmesi, lastiğin hava kaybetmesi"
+          ],
+          [
+            "Hızı artıran etkenler",
+            "Düşük mol kütlesi, yüksek sıcaklık",
+            "Düşük mol kütlesi, yüksek sıcaklık, büyük delik"
+          ],
+          [
+            "Graham Yasası",
+            "Uygulanır",
+            "Uygulanır"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Difüzyon ve Efüzyon",
+          "metin": "{koyu:Difüzyon:} Gaz taneciklerinin rastgele hareketle başka bir madde içinde yayılarak homojen karışım oluşturması. {koyu:Efüzyon:} Gaz taneciklerinin küçük bir delikten boşluğa veya daha düşük basınçlı bölgeye sızması."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Yayılma Kendiliğinden Olur",
+          "metin": "Difüzyon için gazı itmek, karıştırmak veya üflemek gerekmez. Rüzgâr, vantilatör ya da karıştırma yayılmayı hızlandırır; ancak bu durumda gözlenen olay yalnız difüzyon değil, maddenin topluca taşınmasıdır. Deney tasarlarken hava akımını engellemek bu yüzden önemlidir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc' stroke='#cbd5e1'/><text x='380' y='32' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>Gazların İki Yayılma Biçimi</text><rect x='20' y='48' width='350' height='236' rx='12' fill='#eff6ff' stroke='#1d4ed8'/><text x='195' y='72' text-anchor='middle' font-size='14' font-weight='bold' fill='#1d4ed8'>Difüzyon</text><rect x='50' y='86' width='290' height='112' rx='8' fill='#ffffff' stroke='#64748b'/><line x1='195' y1='86' x2='195' y2='198' stroke='#94a3b8' stroke-dasharray='5,4'/><circle cx='70' cy='110' r='7' fill='#2563eb'/><circle cx='100' cy='150' r='7' fill='#2563eb'/><circle cx='130' cy='105' r='7' fill='#2563eb'/><circle cx='85' cy='180' r='7' fill='#2563eb'/><circle cx='160' cy='170' r='7' fill='#2563eb'/><circle cx='215' cy='125' r='7' fill='#2563eb'/><circle cx='250' cy='175' r='7' fill='#2563eb'/><circle cx='150' cy='130' r='7' fill='#dc2626'/><circle cx='230' cy='100' r='7' fill='#dc2626'/><circle cx='270' cy='140' r='7' fill='#dc2626'/><circle cx='310' cy='110' r='7' fill='#dc2626'/><circle cx='300' cy='180' r='7' fill='#dc2626'/><circle cx='120' cy='185' r='7' fill='#dc2626'/><circle cx='320' cy='150' r='7' fill='#dc2626'/><text x='195' y='222' text-anchor='middle' font-size='12' fill='#1e293b'>Ara bölme kaldırılınca iki gaz</text><text x='195' y='240' text-anchor='middle' font-size='12' fill='#1e293b'>birbirinin içine kendiliğinden yayılır.</text><text x='195' y='264' text-anchor='middle' font-size='12' font-weight='bold' fill='#1d4ed8'>Sonuç: homojen karışım</text><rect x='390' y='48' width='350' height='236' rx='12' fill='#fef3c7' stroke='#b45309'/><text x='565' y='72' text-anchor='middle' font-size='14' font-weight='bold' fill='#b45309'>Efüzyon</text><rect x='410' y='86' width='160' height='112' rx='8' fill='#ffffff' stroke='#64748b'/><rect x='566' y='134' width='8' height='16' fill='#fef3c7'/><circle cx='440' cy='110' r='7' fill='#16a34a'/><circle cx='480' cy='160' r='7' fill='#16a34a'/><circle cx='520' cy='115' r='7' fill='#16a34a'/><circle cx='450' cy='175' r='7' fill='#16a34a'/><circle cx='540' cy='170' r='7' fill='#16a34a'/><circle cx='500' cy='135' r='7' fill='#16a34a'/><circle cx='620' cy='142' r='7' fill='#16a34a'/><line x1='575' y1='142' x2='602' y2='142' stroke='#475569' stroke-width='2'/><polygon points='602,136 610,142 602,148' fill='#475569'/><rect x='590' y='86' width='130' height='112' rx='8' fill='#f1f5f9' stroke='#94a3b8' stroke-dasharray='5,4'/><text x='672' y='110' text-anchor='middle' font-size='12' fill='#475569'>Boşluk</text><text x='672' y='126' text-anchor='middle' font-size='12' fill='#475569'>(vakum)</text><text x='565' y='222' text-anchor='middle' font-size='12' fill='#1e293b'>Deliğe rastlayan tanecikler</text><text x='565' y='240' text-anchor='middle' font-size='12' fill='#1e293b'>boşluğa tek tek sızar.</text><text x='565' y='264' text-anchor='middle' font-size='12' font-weight='bold' fill='#b45309'>Örnek: balonun zamanla sönmesi</text></svg>"
+    },
+    {
+      "baslik": "Graham Yasası: Yayılma Hızı ile Mol Kütlesi Arasındaki İlişki",
+      "metin": [
+        "İskoç kimyager {koyu:Thomas Graham}, 19. yüzyılın ilk yarısında farklı gazların gözenekli çeperlerden ve küçük deliklerden geçiş hızlarını karşılaştıran deneyler yaptı. Hafif gazların ağır gazlardan daha hızlı yayıldığını, ancak hızın mol kütlesiyle basit ters orantılı değil, {koyu:mol kütlesinin kareköküyle ters orantılı} olduğunu buldu. Bugün {koyu:Graham Difüzyon ve Efüzyon Yasası} olarak bilinen bu genelleme şöyle ifade edilir: Aynı sıcaklık ve basınçta iki gazın yayılma hızlarının oranı, mol kütlelerinin kareköklerinin ters oranına eşittir: {kesir:v₁|v₂} = {kesir:{kok:M₂}|{kok:M₁}}.",
+        "Bu yasa kinetik moleküler teoriyle açıklanabilir. Teoriye göre aynı sıcaklıktaki bütün gaz taneciklerinin {koyu:ortalama kinetik enerjileri eşittir}. Kinetik enerji {kesir:1|2} · m · {us:v|2} olduğundan iki gaz için {kesir:1|2} · m₁ · {us:v₁|2} = {kesir:1|2} · m₂ · {us:v₂|2} yazılır. Buradan {kesir:v₁²|v₂²} = {kesir:m₂|m₁} elde edilir. Tanecik kütleleri oranı mol kütleleri oranına eşit olduğundan her iki tarafın karekökü alınınca Graham Yasası ortaya çıkar. Yani ağır tanecik, aynı enerjiyi taşıyabilmek için daha yavaş hareket eder.",
+        "Yasanın sonucunu bir örnekle görelim: Hidrojenin mol kütlesi 2, oksijenin 32 g/mol'dür. {kesir:v(H₂)|v(O₂)} = {kesir:{kok:32}|{kok:2}} = {kok:16} = 4 bulunur; yani aynı koşullarda hidrojen oksijenden {koyu:4 kat hızlı} yayılır. Mol kütlesi 16 kat büyük olan gaz 16 kat değil, 4 kat yavaştır. Bu karekök ilişkisi, öğrencilerin en sık atladığı noktadır. Ayrıca yasa yalnız mol kütlesine bağlı olduğundan gazın {koyu:rengi, kokusu veya kimyasal türü} hızı belirlemez; aynı mol kütlesine sahip N{alt:|2} (28) ve CO (28) gazları aynı sıcaklıkta aynı hızla yayılır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Gaz",
+          "M (g/mol)",
+          "{kok:M} (yaklaşık)",
+          "Bağıl Yayılma Hızı (O₂ = 1)"
+        ],
+        "satirlar": [
+          [
+            "H₂",
+            "2",
+            "1,41",
+            "4"
+          ],
+          [
+            "He",
+            "4",
+            "2",
+            "≈ 2,83"
+          ],
+          [
+            "CH₄",
+            "16",
+            "4",
+            "≈ 1,41"
+          ],
+          [
+            "N₂",
+            "28",
+            "≈ 5,29",
+            "≈ 1,07"
+          ],
+          [
+            "O₂",
+            "32",
+            "≈ 5,66",
+            "1"
+          ],
+          [
+            "CO₂",
+            "44",
+            "≈ 6,63",
+            "≈ 0,85"
+          ],
+          [
+            "SO₂",
+            "64",
+            "8",
+            "≈ 0,71"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Graham Yasası",
+          "metin": "Aynı sıcaklık ve basınçta: {kesir:v₁|v₂} = {kesir:{kok:M₂}|{kok:M₁}}. Hız mol kütlesinin {koyu:kareköküyle ters} orantılıdır: v ∝ {kesir:1|{kok:M}}. Mol kütlesi 4 kat artarsa hız yarıya, 9 kat artarsa üçte bire iner."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Kinetik Enerji ve Sıcaklık",
+          "metin": "Gazların ortalama kinetik enerjisi yalnızca mutlak sıcaklığa bağlıdır. Aynı sıcaklıktaki H₂ ve O₂ taneciklerinin ortalama kinetik enerjileri eşittir; ama ortalama hızları eşit değildir. Enerji eşitse, hafif olan hızlıdır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc' stroke='#cbd5e1'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>Graham Yasası: Hafif Gaz Daha Hızlı Yayılır</text><rect x='20' y='46' width='290' height='66' rx='10' fill='#dbeafe' stroke='#1d4ed8'/><text x='165' y='72' text-anchor='middle' font-size='13' font-weight='bold' fill='#1d4ed8'>Aynı sıcaklık</text><text x='165' y='94' text-anchor='middle' font-size='12' fill='#1e293b'>Ortalama kinetik enerjiler eşit</text><rect x='20' y='128' width='290' height='66' rx='10' fill='#ede9fe' stroke='#6d28d9'/><text x='165' y='154' text-anchor='middle' font-size='13' font-weight='bold' fill='#6d28d9'>½ · m₁ · v₁² = ½ · m₂ · v₂²</text><text x='165' y='176' text-anchor='middle' font-size='12' fill='#1e293b'>Kütle büyükse hız küçük olur</text><rect x='20' y='210' width='290' height='72' rx='10' fill='#fef3c7' stroke='#b45309' stroke-width='2'/><text x='165' y='240' text-anchor='middle' font-size='14' font-weight='bold' fill='#b45309'>v₁ / v₂ = karekök(M₂ / M₁)</text><text x='165' y='264' text-anchor='middle' font-size='12' fill='#1e293b'>Graham Difüzyon ve Efüzyon Yasası</text><line x1='165' y1='113' x2='165' y2='126' stroke='#475569' stroke-width='2'/><line x1='165' y1='195' x2='165' y2='208' stroke='#475569' stroke-width='2'/><rect x='325' y='46' width='415' height='236' rx='10' fill='#ffffff' stroke='#cbd5e1'/><text x='532' y='66' text-anchor='middle' font-size='13' font-weight='bold' fill='#1e293b'>Bağıl yayılma hızı (O₂ = 1)</text><line x1='338' y1='250' x2='732' y2='250' stroke='#475569'/><rect x='345' y='90' width='36' height='160' rx='4' fill='#2563eb'/><rect x='403' y='137' width='36' height='113' rx='4' fill='#0891b2'/><rect x='461' y='194' width='36' height='56' rx='4' fill='#16a34a'/><rect x='519' y='207' width='36' height='43' rx='4' fill='#65a30d'/><rect x='577' y='210' width='36' height='40' rx='4' fill='#ca8a04'/><rect x='635' y='216' width='36' height='34' rx='4' fill='#ea580c'/><rect x='693' y='222' width='36' height='28' rx='4' fill='#dc2626'/><text x='363' y='84' text-anchor='middle' font-size='11' fill='#1e293b'>4</text><text x='421' y='131' text-anchor='middle' font-size='11' fill='#1e293b'>2,83</text><text x='479' y='188' text-anchor='middle' font-size='11' fill='#1e293b'>1,41</text><text x='537' y='201' text-anchor='middle' font-size='11' fill='#1e293b'>1,07</text><text x='595' y='204' text-anchor='middle' font-size='11' fill='#1e293b'>1</text><text x='653' y='210' text-anchor='middle' font-size='11' fill='#1e293b'>0,85</text><text x='711' y='216' text-anchor='middle' font-size='11' fill='#1e293b'>0,71</text><text x='363' y='268' text-anchor='middle' font-size='12' fill='#1e293b'>H₂</text><text x='421' y='268' text-anchor='middle' font-size='12' fill='#1e293b'>He</text><text x='479' y='268' text-anchor='middle' font-size='12' fill='#1e293b'>CH₄</text><text x='537' y='268' text-anchor='middle' font-size='12' fill='#1e293b'>N₂</text><text x='595' y='268' text-anchor='middle' font-size='12' fill='#1e293b'>O₂</text><text x='653' y='268' text-anchor='middle' font-size='12' fill='#1e293b'>CO₂</text><text x='711' y='268' text-anchor='middle' font-size='12' fill='#1e293b'>SO₂</text></svg>"
+    },
+    {
+      "baslik": "Hız, Süre ve Alınan Yol: Graham Yasasıyla Hesaplamalar",
+      "metin": [
+        "Deneylerde yayılma hızı çoğu zaman doğrudan ölçülmez; bunun yerine belirli miktarda gazın sızması için geçen {koyu:süre} ya da belirli bir sürede gazın aldığı {koyu:yol} ölçülür. Hız, birim zamanda yayılan gaz miktarı (veya alınan yol) olduğundan aynı miktar gazın yayılma süresi hızla {koyu:ters orantılıdır}. Bu nedenle süreler için oran ters çevrilir: {kesir:t₁|t₂} = {kesir:{kok:M₁}|{kok:M₂}}. Yani ağır gazın aynı hacimde sızması daha uzun sürer. Örneğin aynı koşullarda belli hacimdeki CH₄ gazı 20 saniyede sızıyorsa aynı hacimdeki SO₂ gazı 20 · {kok:{kesir:64|16}} = 20 · 2 = 40 saniyede sızar.",
+        "Bir tüpün iki ucundan aynı anda gönderilen iki gaz, bir noktada karşılaşır. Karşılaşma anına kadar iki gaz da {koyu:aynı süre} boyunca yol aldığından aldıkları yollar hızlarıyla doğru orantılıdır: {kesir:x₁|x₂} = {kesir:v₁|v₂} = {kesir:{kok:M₂}|{kok:M₁}}. Toplam yol tüp uzunluğuna eşit olduğundan x₁ + x₂ = L yazılır. Bu iki eşitlik birlikte çözülerek karşılaşma noktası bulunur. Örneğin 90 cm'lik bir tüpte CH₄ ve SO₂ karşılaşırsa hız oranı 2 olduğundan yol 2 : 1 oranında paylaşılır; gazlar CH₄ ucundan {koyu:60 cm}, SO₂ ucundan {koyu:30 cm} uzakta karşılaşır.",
+        "Graham Yasası ters yönde de kullanılabilir: Kimliği bilinmeyen bir gazın yayılma hızı, mol kütlesi bilinen bir gazla karşılaştırılarak {koyu:mol kütlesi} hesaplanır. Eşitliğin iki yanının karesi alınırsa {kesir:M₂|M₁} = ({kesir:v₁|v₂}){us:|2} olur. Bilinmeyen X gazı aynı koşullarda He'den 2 kat yavaş yayılıyorsa M(X) = 4 · {us:2|2} = 16 g/mol bulunur; gaz CH₄ olabilir. Bu yöntem, geçen hafta öğrendiğimiz ideal gaz denkleminden mol kütlesi bulmanın yanında ikinci bir {koyu:deneysel yol} sunar ve iki yolun aynı sonucu vermesi bilgiyi güçlendirir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Aranan",
+          "Kullanılacak Bağıntı",
+          "Dikkat Edilecek Nokta"
+        ],
+        "satirlar": [
+          [
+            "Hız oranı",
+            "{kesir:v₁|v₂} = {kesir:{kok:M₂}|{kok:M₁}}",
+            "Mol kütleleri ters yerleşir"
+          ],
+          [
+            "Süre oranı (aynı miktar gaz)",
+            "{kesir:t₁|t₂} = {kesir:{kok:M₁}|{kok:M₂}}",
+            "Süre ile mol kütlesi aynı yönde yerleşir"
+          ],
+          [
+            "Yol oranı (aynı süre)",
+            "{kesir:x₁|x₂} = {kesir:v₁|v₂}",
+            "Karşılaşma noktasında x₁ + x₂ = L"
+          ],
+          [
+            "Bilinmeyen mol kütlesi",
+            "M₂ = M₁ · ({kesir:v₁|v₂}){us:|2}",
+            "Hız oranının karesi alınır"
+          ],
+          [
+            "Farklı sıcaklıklar",
+            "{kesir:v₁|v₂} = {kesir:{kok:T₁ · M₂}|{kok:T₂ · M₁}}",
+            "Sıcaklıklar Kelvin cinsinden yazılır"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Oranı Hızlı Kurmak",
+          "metin": "Önce hangi gazın hafif olduğunu belirleyin: Hafif gaz {koyu:daha hızlıdır, daha kısa sürede sızar ve aynı sürede daha uzun yol alır}. Sonra oranı karekök ile kurun. Bulduğunuz sonuç bu sağduyu kontrolüne uymuyorsa oranı ters yazmışsınızdır."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Karekökü Unutmayın",
+          "metin": "Mol kütlesi 4 kat olan gaz 4 kat değil, {kok:4} = 2 kat yavaştır. Hesaplarda en sık yapılan hata, mol kütleleri oranını doğrudan hız oranı gibi kullanmaktır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc' stroke='#cbd5e1'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>Karşılaşma Noktası: 90 cm'lik Tüpte CH₄ ve SO₂</text><rect x='80' y='70' width='600' height='40' rx='20' fill='#e2e8f0' stroke='#475569' stroke-width='2'/><rect x='62' y='66' width='26' height='48' rx='6' fill='#86efac' stroke='#15803d'/><rect x='672' y='66' width='26' height='48' rx='6' fill='#fca5a5' stroke='#b91c1c'/><text x='75' y='58' text-anchor='middle' font-size='13' font-weight='bold' fill='#15803d'>CH₄ (16)</text><text x='685' y='58' text-anchor='middle' font-size='13' font-weight='bold' fill='#b91c1c'>SO₂ (64)</text><line x1='480' y1='64' x2='480' y2='116' stroke='#b45309' stroke-width='4'/><text x='480' y='134' text-anchor='middle' font-size='12' font-weight='bold' fill='#b45309'>Karşılaşma noktası</text><line x1='90' y1='154' x2='472' y2='154' stroke='#15803d' stroke-width='2'/><polygon points='472,148 480,154 472,160' fill='#15803d'/><text x='285' y='174' text-anchor='middle' font-size='13' fill='#15803d'>x₁ = 60 cm (hızlı gaz)</text><line x1='670' y1='154' x2='488' y2='154' stroke='#b91c1c' stroke-width='2'/><polygon points='488,148 480,154 488,160' fill='#b91c1c'/><text x='580' y='174' text-anchor='middle' font-size='13' fill='#b91c1c'>x₂ = 30 cm</text><rect x='30' y='196' width='220' height='86' rx='10' fill='#dbeafe' stroke='#1d4ed8'/><text x='140' y='220' text-anchor='middle' font-size='13' font-weight='bold' fill='#1d4ed8'>1) Hız oranı</text><text x='140' y='244' text-anchor='middle' font-size='12' fill='#1e293b'>v₁ / v₂ = karekök(64 / 16)</text><text x='140' y='264' text-anchor='middle' font-size='12' fill='#1e293b'>= karekök(4) = 2</text><rect x='270' y='196' width='220' height='86' rx='10' fill='#ede9fe' stroke='#6d28d9'/><text x='380' y='220' text-anchor='middle' font-size='13' font-weight='bold' fill='#6d28d9'>2) Yol oranı</text><text x='380' y='244' text-anchor='middle' font-size='12' fill='#1e293b'>Aynı sürede x₁ / x₂ = 2</text><text x='380' y='264' text-anchor='middle' font-size='12' fill='#1e293b'>x₁ + x₂ = 90 cm</text><rect x='510' y='196' width='220' height='86' rx='10' fill='#dcfce7' stroke='#15803d'/><text x='620' y='220' text-anchor='middle' font-size='13' font-weight='bold' fill='#15803d'>3) Sonuç</text><text x='620' y='244' text-anchor='middle' font-size='12' fill='#1e293b'>90 cm, 2 : 1 paylaşılır</text><text x='620' y='264' text-anchor='middle' font-size='12' fill='#1e293b'>x₁ = 60 cm, x₂ = 30 cm</text></svg>"
+    },
+    {
+      "baslik": "Deney Tasarımı: NH₃ ve HCl ile Difüzyon Tüpü Deneyi",
+      "metin": [
+        "Graham Yasası'nı sınamak için okullarda en sık kullanılan düzenek {koyu:difüzyon tüpü deneyidir}. Bir deneyi tasarlamak, önce bir {koyu:araştırma sorusu} belirlemekle başlar: Mol kütlesi farklı iki gazdan hangisi daha hızlı yayılır ve hız oranı Graham Yasası'nın öngördüğü değere uyar mı? Bu soruya göre {koyu:hipotez} kurulur: Mol kütlesi küçük olan amonyak (N{alt:H|3}, 17 g/mol), hidrojen klorürden (HCl, 36,5 g/mol) daha hızlı yayılır. İki gaz karşılaştığında N{alt:H|3}(g) + HCl(g) → N{alt:H|4}Cl(k) tepkimesiyle {koyu:beyaz bir duman halkası} oluşur. Bu halka, iki gazın nerede karşılaştığını gözle görülebilir hâle getirir.",
+        "Düzenek şöyle kurulur: Yaklaşık 100 cm uzunluğunda, kuru ve temiz bir cam tüp yatay olarak sabitlenir. İki pamuk parçasından biri derişik amonyak çözeltisine, diğeri derişik hidroklorik asit çözeltisine pens yardımıyla batırılır ve {koyu:aynı anda} tüpün iki ucuna yerleştirilir; uçlar tıpayla kapatılır. Kronometre başlatılır ve beyaz halkanın oluştuğu an ile yeri kaydedilir. Bu deneyde {koyu:bağımsız değişken} gazın türü (mol kütlesi), {koyu:bağımlı değişken} her gazın aldığı yoldur. Tüpün uzunluğu ve çapı, sıcaklık, basınç ve pamukların yerleştirilme zamanı {koyu:kontrol değişkenleridir}. Deney birkaç kez tekrarlanıp ölçümlerin ortalaması alınırsa sonuç daha güvenilir olur.",
+        "Graham Yasası'na göre {kesir:v(N{alt:H|3})|v(HCl)} = {kok:{kesir:36,5|17}} ≈ {kok:2,15} ≈ 1,47 olmalıdır. 100 cm'lik tüpte x(N{alt:H|3}) + x(HCl) = 100 ve x(N{alt:H|3}) = 1,47 · x(HCl) olduğundan x(HCl) ≈ {kesir:100|2,47} ≈ 40,6 cm ve x(N{alt:H|3}) ≈ 59,4 cm bulunur. Yani halka {koyu:HCl ucuna daha yakın} oluşmalıdır. Gerçek ölçümlerde halkanın yeri bu değerden biraz farklı çıkabilir; çünkü gazlar boşlukta değil {koyu:hava içinde} yayılır, iki ucun derişimleri tam eşit olmayabilir ve halka ince bir çizgi değil geniş bir bant hâlinde görülür. Bu farkları tartışmak, deney sonuçlarını değerlendirmenin önemli bir parçasıdır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Tasarım Öğesi",
+          "Bu Deneydeki Karşılığı"
+        ],
+        "satirlar": [
+          [
+            "Araştırma sorusu",
+            "Mol kütlesi farklı gazlardan hangisi daha hızlı yayılır?"
+          ],
+          [
+            "Hipotez",
+            "Mol kütlesi küçük olan N{alt:H|3}, HCl'den yaklaşık 1,47 kat hızlı yayılır."
+          ],
+          [
+            "Bağımsız değişken",
+            "Gazın türü (mol kütlesi)"
+          ],
+          [
+            "Bağımlı değişken",
+            "Halkanın uçlara uzaklığı (gazların aldığı yol)"
+          ],
+          [
+            "Kontrol değişkenleri",
+            "Tüp uzunluğu ve çapı, sıcaklık, basınç, pamukların aynı anda yerleştirilmesi"
+          ],
+          [
+            "Malzemeler",
+            "Cam tüp, iki tıpa, pamuk, pens, derişik amonyak ve hidroklorik asit çözeltisi, cetvel, kronometre, sehpa"
+          ],
+          [
+            "Beklenen sonuç",
+            "Halka N{alt:H|3} ucundan ≈ 59 cm, HCl ucundan ≈ 41 cm uzakta"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Laboratuvar Güvenliği",
+          "metin": "Derişik amonyak ve hidroklorik asit buharları {koyu:göz, deri ve solunum yolları için tahriş edicidir}. Deney öğretmen gözetiminde, çeker ocakta veya iyi havalandırılan ortamda; koruyucu gözlük, eldiven ve önlükle yapılmalıdır. Şişeler yalnızca kullanım anında açılmalı, buhar koklanmamalıdır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Deneyi İyileştirme Önerileri",
+          "metin": "Halkanın daha net görülmesi için tüpün arkasına siyah bir karton konabilir. Ölçümü tekrarlayıp ortalama almak, tüpü kuru tutmak ve deneyi hava akımı olmayan bir yerde yapmak hatayı azaltır. Halka geniş bir bant hâlinde oluşursa, ilk beliren beyazlığın yeri işaretlenmelidir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc' stroke='#cbd5e1'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>Difüzyon Tüpü Deneyi: NH₃ ve HCl</text><rect x='80' y='78' width='600' height='44' rx='22' fill='#e0f2fe' stroke='#0369a1' stroke-width='2'/><rect x='56' y='72' width='30' height='56' rx='6' fill='#94a3b8'/><rect x='674' y='72' width='30' height='56' rx='6' fill='#94a3b8'/><ellipse cx='100' cy='100' rx='16' ry='14' fill='#ffffff' stroke='#2563eb' stroke-width='2'/><ellipse cx='660' cy='100' rx='16' ry='14' fill='#ffffff' stroke='#dc2626' stroke-width='2'/><text x='100' y='60' text-anchor='middle' font-size='12' font-weight='bold' fill='#2563eb'>NH₃ emdirilmiş pamuk</text><text x='660' y='60' text-anchor='middle' font-size='12' font-weight='bold' fill='#dc2626'>HCl emdirilmiş pamuk</text><rect x='428' y='80' width='18' height='40' fill='#ffffff' stroke='#64748b'/><text x='437' y='146' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e293b'>Beyaz NH₄Cl halkası</text><line x1='116' y1='176' x2='428' y2='176' stroke='#2563eb' stroke-width='2'/><polygon points='428,170 436,176 428,182' fill='#2563eb'/><text x='272' y='196' text-anchor='middle' font-size='13' fill='#2563eb'>≈ 59,4 cm (M = 17, hızlı)</text><line x1='644' y1='176' x2='446' y2='176' stroke='#dc2626' stroke-width='2'/><polygon points='446,170 438,176 446,182' fill='#dc2626'/><text x='545' y='196' text-anchor='middle' font-size='13' fill='#dc2626'>≈ 40,6 cm (M = 36,5)</text><rect x='40' y='214' width='330' height='70' rx='10' fill='#fef3c7' stroke='#b45309'/><text x='205' y='238' text-anchor='middle' font-size='13' font-weight='bold' fill='#b45309'>NH₃(g) + HCl(g) → NH₄Cl(k)</text><text x='205' y='262' text-anchor='middle' font-size='12' fill='#1e293b'>v(NH₃) / v(HCl) = karekök(36,5 / 17) ≈ 1,47</text><rect x='390' y='214' width='330' height='70' rx='10' fill='#fee2e2' stroke='#b91c1c'/><text x='555' y='238' text-anchor='middle' font-size='13' font-weight='bold' fill='#b91c1c'>Güvenlik</text><text x='555' y='262' text-anchor='middle' font-size='12' fill='#1e293b'>Çeker ocak, gözlük, eldiven, önlük</text></svg>"
+    },
+    {
+      "baslik": "Farklı Ortamlarda Yayılma: Efüzyon Deneyi, Ortam ve Sıcaklığın Etkisi",
+      "metin": [
+        "Efüzyonu gözlemlemek için basit ama etkili bir deney tasarlanabilir: Aynı marka ve büyüklükteki iki lastik balondan biri {koyu:helyumla}, diğeri ağızla üflenerek {koyu:havayla} aynı çevreye (örneğin mezurayla ölçülen 80 cm çevre uzunluğuna) kadar şişirilir ve ağızları sıkıca bağlanır. Balonlar aynı odada bekletilir; çevre uzunlukları birkaç saat arayla ölçülüp tabloya yazılır. Lastik zarın gözeneklerinden sızan helyum tanecikleri (4 g/mol), havanın ortalama 29 g/mol'lük taneciklerinden yaklaşık {kok:{kesir:29|4}} ≈ 2,7 kat hızlı olduğu için {koyu:helyum balonu çok daha çabuk küçülür}. Bu deneyde bağımsız değişken balondaki gaz, bağımlı değişken çevre uzunluğundaki azalma; balonun cinsi, ilk büyüklük ve oda sıcaklığı kontrol değişkenleridir.",
+        "Yayılma hızı yalnız gazın cinsine değil, {koyu:yayıldığı ortama} da bağlıdır. Bir gaz boşluğa (vakuma) yayılırken yoluna çıkan başka tanecik olmadığı için çok hızlı ilerler; hava dolu bir ortamda ise sürekli hava tanecikleriyle çarpışarak yön değiştirir ve net ilerlemesi yavaşlar. Sıvılarda tanecikler birbirine çok daha yakın olduğundan yayılma gazlara göre çok yavaştır: Bir damla mürekkebin bardaktaki suya karıştırılmadan dağılması dakikalar sürer. Katılarda tanecikler yalnız titreşim hareketi yaptığından yayılma son derece yavaştır. Kısacası yayılma hızı genellikle {koyu:gaz > sıvı > katı} sırasını izler.",
+        "Sıcaklığın etkisini incelemek için aynı miktarda soğuk ve sıcak su içeren iki behere aynı anda birer damla gıda boyası damlatılabilir. Sıcak sudaki boyanın çok daha hızlı dağıldığı görülür; çünkü sıcaklık arttıkça taneciklerin ortalama kinetik enerjisi ve hızı artar. Gazlar için bu ilişki Graham Yasası'na eklenerek {kesir:v₁|v₂} = {kesir:{kok:T₁ · M₂}|{kok:T₂ · M₁}} biçiminde yazılır; tek bir gaz için hız {koyu:mutlak sıcaklığın kareköküyle doğru orantılıdır}. Mutlak sıcaklığı 4 katına çıkarılan bir gaz 2 kat hızlı yayılır. Böylece ağır bir gaz bile yeterince ısıtılırsa soğuk ve hafif bir gazla aynı hızda yayılabilir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Deney",
+          "Değiştirilen (Bağımsız)",
+          "Gözlem",
+          "Sonuç"
+        ],
+        "satirlar": [
+          [
+            "He ve hava balonları",
+            "Balondaki gaz",
+            "He balonu daha çabuk küçülür.",
+            "Hafif gazın efüzyonu daha hızlıdır."
+          ],
+          [
+            "Soğuk ve sıcak suya boya",
+            "Sıcaklık",
+            "Sıcak suda boya daha hızlı dağılır.",
+            "Sıcaklık arttıkça yayılma hızlanır."
+          ],
+          [
+            "Hava ve su içinde koku/boya yayılması",
+            "Ortamın fiziksel hâli",
+            "Koku havada saniyeler, boya suda dakikalar içinde yayılır.",
+            "Yayılma gazlarda sıvılardan hızlıdır."
+          ],
+          [
+            "Jel (agar) içinde boya",
+            "Ortamın yoğunluğu",
+            "Boya saatler içinde çok az ilerler.",
+            "Tanecikler sıkıştıkça yayılma yavaşlar."
+          ],
+          [
+            "Boş ve hava dolu tüpe renkli gaz",
+            "Ortamda başka gaz olup olmaması",
+            "Boş tüpte renk hemen her yere ulaşır.",
+            "Çarpışma azaldıkça yayılma hızlanır."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Sıcaklık ve Mol Kütlesi Birlikte",
+          "metin": "Gazların yayılma hızı: v ∝ {kok:{kesir:T|M}}. İki gaz için {kesir:v₁|v₂} = {kesir:{kok:T₁ · M₂}|{kok:T₂ · M₁}}. Aynı hızla yayılmaları için {kesir:T₁|M₁} = {kesir:T₂|M₂} olmalıdır (T Kelvin cinsinden)."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Hava Neden Tek Bir Gaz Gibi Düşünülür?",
+          "metin": "Hava yaklaşık %78 N₂ ve %21 O₂ içeren bir karışımdır. Hesaplarda havanın {koyu:ortalama mol kütlesi} yaklaşık 29 g/mol alınır. Bir gazın havaya göre hafif veya ağır olması, mol kütlesinin 29'dan küçük ya da büyük olmasıyla belirlenir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc' stroke='#cbd5e1'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>Efüzyon ve Sıcaklık Deneyleri</text><rect x='20' y='46' width='350' height='238' rx='12' fill='#eff6ff' stroke='#1d4ed8'/><text x='195' y='68' text-anchor='middle' font-size='14' font-weight='bold' fill='#1d4ed8'>Balon deneyi (efüzyon)</text><text x='110' y='90' text-anchor='middle' font-size='12' fill='#475569'>Başlangıç</text><text x='280' y='90' text-anchor='middle' font-size='12' fill='#475569'>Bir gün sonra</text><ellipse cx='75' cy='136' rx='30' ry='36' fill='#a5b4fc' stroke='#4338ca'/><text x='75' y='140' text-anchor='middle' font-size='12' fill='#1e293b'>He</text><ellipse cx='145' cy='136' rx='30' ry='36' fill='#fda4af' stroke='#be123c'/><text x='145' y='140' text-anchor='middle' font-size='12' fill='#1e293b'>Hava</text><ellipse cx='245' cy='148' rx='16' ry='20' fill='#a5b4fc' stroke='#4338ca'/><text x='245' y='152' text-anchor='middle' font-size='11' fill='#1e293b'>He</text><ellipse cx='315' cy='138' rx='27' ry='33' fill='#fda4af' stroke='#be123c'/><text x='315' y='142' text-anchor='middle' font-size='12' fill='#1e293b'>Hava</text><line x1='190' y1='136' x2='212' y2='136' stroke='#475569' stroke-width='2'/><polygon points='212,130 220,136 212,142' fill='#475569'/><text x='195' y='210' text-anchor='middle' font-size='12' fill='#1e293b'>He (M = 4) hava (M ≈ 29) taneciklerinden</text><text x='195' y='228' text-anchor='middle' font-size='12' fill='#1e293b'>yaklaşık 2,7 kat hızlı sızar.</text><text x='195' y='256' text-anchor='middle' font-size='12' font-weight='bold' fill='#1d4ed8'>Helyum balonu daha çabuk küçülür.</text><rect x='390' y='46' width='350' height='238' rx='12' fill='#fff7ed' stroke='#c2410c'/><text x='565' y='68' text-anchor='middle' font-size='14' font-weight='bold' fill='#c2410c'>Boya deneyi (sıcaklık)</text><path d='M440 90 L440 190 Q440 200 450 200 L530 200 Q540 200 540 190 L540 90' fill='#dbeafe' stroke='#475569' stroke-width='2'/><circle cx='490' cy='108' r='8' fill='#7c3aed'/><path d='M482 116 Q490 132 498 116' fill='#c4b5fd'/><text x='490' y='220' text-anchor='middle' font-size='12' font-weight='bold' fill='#1d4ed8'>Soğuk su</text><path d='M590 90 L590 190 Q590 200 600 200 L680 200 Q690 200 690 190 L690 90' fill='#ddd6fe' stroke='#475569' stroke-width='2'/><circle cx='620' cy='130' r='6' fill='#7c3aed'/><circle cx='660' cy='160' r='6' fill='#7c3aed'/><circle cx='640' cy='110' r='6' fill='#7c3aed'/><circle cx='610' cy='175' r='6' fill='#7c3aed'/><circle cx='670' cy='120' r='6' fill='#7c3aed'/><text x='640' y='220' text-anchor='middle' font-size='12' font-weight='bold' fill='#c2410c'>Sıcak su</text><text x='565' y='256' text-anchor='middle' font-size='12' fill='#1e293b'>Sıcaklık arttıkça tanecikler hızlanır,</text><text x='565' y='274' text-anchor='middle' font-size='12' fill='#1e293b'>yayılma hızlanır: v ∝ karekök(T / M)</text></svg>"
+    },
+    {
+      "baslik": "Deney Sonuçlarının Günlük Hayattaki Durumları Açıklamak İçin Kullanılması",
+      "metin": [
+        "Laboratuvarda elde ettiğimiz sonuçlar günlük hayatta pek çok olayı açıklar. Evlerde kullanılan {koyu:doğal gazın} büyük kısmı metandır (CH₄, 16 g/mol). Metan kokusuz olduğu için dağıtım sırasında gaza çok az miktarda, keskin kokulu {koyu:kükürtlü koku verici bileşikler} eklenir; bir kaçak olduğunda bu maddelerin difüzyonla odaya yayılması sayesinde kaçak fark edilir. Metan havadan hafif olduğu için kaçak gaz yükselir; bu nedenle doğal gaz dedektörleri {koyu:tavana yakın} takılır. Tüplerde kullanılan {koyu:LPG} ise propan (44 g/mol) ve bütan (58 g/mol) karışımıdır; havadan ağır olduğundan yere yakın birikir, dedektörü {koyu:zemine yakın} yerleştirilir.",
+        "Sağlığımız da difüzyona bağlıdır. Akciğerlerdeki küçük hava keseciklerinde (alveollerde) oksijen, derişiminin yüksek olduğu keseciklerden derişiminin düşük olduğu kana; karbon dioksit ise kandan keseciklere {koyu:difüzyonla} geçer. Kokusuz ve renksiz {koyu:karbon monoksit} (CO, 28 g/mol) gazının mol kütlesi havanınkine çok yakın olduğundan kapalı ortamda kolayca her yere yayılır ve fark edilmeden zehirlenmeye yol açabilir; bu yüzden soba ve şofben bulunan yerlerde karbon monoksit dedektörü kullanılması ve ortamın havalandırılması hayati önem taşır.",
+        "Graham Yasası teknolojide de kullanılır. Doğal uranyumun büyük kısmı uranyum-238, çok küçük bir kısmı uranyum-235 izotopudur. Uranyum, gaz hâlindeki uranyum hekzaflorüre (UF₆) dönüştürülüp gözenekli zarlardan defalarca geçirildiğinde, mol kütlesi biraz daha küçük olan {sup}{koyu:²³⁵UF₆}, ²³⁸UF₆'dan yalnızca yaklaşık 1,0043 kat hızlı yayılır. Fark çok küçük olduğundan işlemin yüzlerce kez tekrarlanması gerekir; bu yöntem {koyu:gaz difüzyonu ile izotop zenginleştirme} olarak bilinir. Benzer şekilde helyum balonlarının bir gecede sönmesi, parfüm satılan mağazalarda kokuların birbirine karışması ve sıcak yemeğin soğuk yemekten daha uzağa koku yayması da bu hafta öğrendiğimiz ilkelerle açıklanır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Günlük Durum",
+          "Açıklama",
+          "İlgili İlke"
+        ],
+        "satirlar": [
+          [
+            "Doğal gaz dedektörünün tavana yakın takılması",
+            "CH₄ (16) havadan (29) hafiftir, kaçakta yükselir.",
+            "Mol kütlesi ve öz kütle"
+          ],
+          [
+            "LPG dedektörünün zemine yakın takılması",
+            "Propan (44) ve bütan (58) havadan ağırdır, yere yakın birikir.",
+            "Mol kütlesi ve öz kütle"
+          ],
+          [
+            "Gaz kaçağının kokudan anlaşılması",
+            "Eklenen kokulu bileşikler difüzyonla yayılır.",
+            "Difüzyon"
+          ],
+          [
+            "Helyum balonunun hava balonundan önce sönmesi",
+            "Hafif He tanecikleri zar gözeneklerinden hızlı sızar.",
+            "Efüzyon, Graham Yasası"
+          ],
+          [
+            "Sıcak yemeğin kokusunun daha çabuk yayılması",
+            "Sıcaklık tanecik hızını artırır.",
+            "v ∝ {kok:T}"
+          ],
+          [
+            "Akciğerlerde gaz alışverişi",
+            "O₂ ve CO₂ derişim farkıyla yer değiştirir.",
+            "Difüzyon"
+          ],
+          [
+            "Uranyum izotoplarının ayrılması",
+            "²³⁵UF₆ biraz daha hızlı yayılır.",
+            "Graham Yasası"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Kapalı Mekânda Güvenlik",
+          "metin": "Gaz kokusu alındığında elektrik düğmelerine dokunulmamalı, ateş yakılmamalı; pencereler açılıp vana kapatılmalı ve ortam terk edilerek ilgili acil hat aranmalıdır. Havalandırma, kaçak gazın derişimini difüzyonla ve hava akımıyla hızla düşürür."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Hava ile Karşılaştırma",
+          "metin": "M &lt; 29 g/mol olan gazlar (H₂, He, CH₄, NH₃) havadan hafiftir, yükselir ve havadaki gazlardan hızlı yayılır. M &gt; 29 g/mol olan gazlar (CO₂, propan, bütan, Cl₂) havadan ağırdır, yere yakın birikir ve daha yavaş yayılır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc' stroke='#cbd5e1'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>Dedektör Nereye Takılır?</text><polygon points='40,110 190,50 340,110' fill='#fde68a' stroke='#b45309' stroke-width='2'/><rect x='60' y='110' width='260' height='170' rx='4' fill='#ffffff' stroke='#475569' stroke-width='2'/><rect x='180' y='116' width='40' height='16' rx='4' fill='#16a34a'/><text x='200' y='128' text-anchor='middle' font-size='10' fill='#ffffff'>D</text><text x='240' y='130' font-size='11' fill='#15803d'>tavan</text><rect x='180' y='256' width='40' height='16' rx='4' fill='#dc2626'/><text x='200' y='268' text-anchor='middle' font-size='10' fill='#ffffff'>D</text><text x='240' y='268' font-size='11' fill='#b91c1c'>zemin</text><circle cx='110' cy='150' r='6' fill='#86efac'/><circle cx='140' cy='140' r='6' fill='#86efac'/><circle cx='270' cy='150' r='6' fill='#86efac'/><circle cx='120' cy='250' r='6' fill='#fca5a5'/><circle cx='150' cy='262' r='6' fill='#fca5a5'/><circle cx='290' cy='255' r='6' fill='#fca5a5'/><line x1='90' y1='200' x2='90' y2='164' stroke='#15803d' stroke-width='2'/><polygon points='84,166 90,158 96,166' fill='#15803d'/><line x1='300' y1='205' x2='300' y2='240' stroke='#b91c1c' stroke-width='2'/><polygon points='294,238 300,246 306,238' fill='#b91c1c'/><rect x='370' y='50' width='370' height='72' rx='10' fill='#dcfce7' stroke='#15803d'/><text x='555' y='76' text-anchor='middle' font-size='13' font-weight='bold' fill='#15803d'>Doğal gaz (CH₄, M = 16 &lt; 29)</text><text x='555' y='100' text-anchor='middle' font-size='12' fill='#1e293b'>Havadan hafif, yükselir: dedektör tavana yakın</text><rect x='370' y='132' width='370' height='72' rx='10' fill='#fee2e2' stroke='#b91c1c'/><text x='555' y='158' text-anchor='middle' font-size='13' font-weight='bold' fill='#b91c1c'>LPG (propan 44, bütan 58 &gt; 29)</text><text x='555' y='182' text-anchor='middle' font-size='12' fill='#1e293b'>Havadan ağır, çöker: dedektör zemine yakın</text><rect x='370' y='214' width='370' height='66' rx='10' fill='#fef3c7' stroke='#b45309'/><text x='555' y='240' text-anchor='middle' font-size='13' font-weight='bold' fill='#b45309'>Koku verici katkı</text><text x='555' y='262' text-anchor='middle' font-size='12' fill='#1e293b'>Difüzyonla yayılır, kaçağı fark ettirir</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Aynı sıcaklık ve basınçta He gazının yayılma hızı, CH₄ gazının yayılma hızının kaç katıdır? (He: 4, CH₄: 16 g/mol)",
+      "cevap": "{koyu:1. adım:} Graham Yasası yazılır: {kesir:v(He)|v(CH₄)} = {kesir:{kok:M(CH₄)}|{kok:M(He)}}. {koyu:2. adım:} Değerler yerine konur: {kesir:{kok:16}|{kok:4}} = {kesir:4|2} = {koyu:2}. {koyu:Yorum:} Helyum metandan 2 kat hızlı yayılır. Mol kütlesi 4 kat küçük olduğu hâlde hız 4 kat değil 2 kat fazladır; çünkü hız mol kütlesinin kareköküyle ters orantılıdır.",
+      "ipucu": "Hızlar oranında mol kütleleri ters yerleşir; karekök almayı unutmayınız."
+    },
+    {
+      "soru": "Aynı koşullarda belirli hacimdeki CH₄ gazı küçük bir delikten 20 saniyede sızmaktadır. Aynı hacimdeki SO₂ gazı aynı delikten kaç saniyede sızar? (CH₄: 16, SO₂: 64 g/mol)",
+      "cevap": "{koyu:1. adım:} Aynı miktar gaz için süre hızla ters, mol kütlesinin kareköküyle doğru orantılıdır: {kesir:t(SO₂)|t(CH₄)} = {kesir:{kok:64}|{kok:16}}. {koyu:2. adım:} {kesir:{kok:64}|{kok:16}} = {kesir:8|4} = 2. {koyu:3. adım:} t(SO₂) = 2 · 20 = {koyu:40 saniye}. {koyu:Kontrol:} SO₂ daha ağırdır, daha yavaş sızmalı ve süresi daha uzun olmalıdır; sonuç bu beklentiye uygundur.",
+      "ipucu": "Süre oranında mol kütleleri düz yerleşir: ağır gaz daha uzun sürede sızar."
+    },
+    {
+      "soru": "Aynı koşullarda eşit hacimlerdeki H₂ gazı bir gözenekli çeperden 15 saniyede, X gazı 60 saniyede geçmektedir. X gazının mol kütlesi kaç g/mol'dür ve hangi gaz olabilir? (H₂: 2 g/mol)",
+      "cevap": "{koyu:1. adım:} Süre oranı: {kesir:t(X)|t(H₂)} = {kesir:60|15} = 4. {koyu:2. adım:} {kesir:t(X)|t(H₂)} = {kesir:{kok:M(X)}|{kok:M(H₂)}} olduğundan {kesir:{kok:M(X)}|{kok:2}} = 4 olur. {koyu:3. adım:} İki tarafın karesi alınır: {kesir:M(X)|2} = 16 → M(X) = {koyu:32 g/mol}. {koyu:Yorum:} Mol kütlesi 32 g/mol olan yaygın gaz O₂'dir.",
+      "ipucu": "Süre oranını bulduktan sonra eşitliğin iki tarafının karesini alınız."
+    },
+    {
+      "soru": "100 cm uzunluğundaki bir cam tüpün bir ucuna derişik amonyak, öbür ucuna derişik hidroklorik asit emdirilmiş pamuklar aynı anda konuyor. Beyaz N{alt:H|4}Cl halkası amonyak ucundan yaklaşık kaç cm uzakta oluşur? (N{alt:H|3}: 17, HCl: 36,5 g/mol; {kok:2,15} ≈ 1,47 alınız)",
+      "cevap": "{koyu:1. adım:} Hız oranı: {kesir:v(N{alt:H|3})|v(HCl)} = {kok:{kesir:36,5|17}} = {kok:2,15} ≈ 1,47. {koyu:2. adım:} Gazlar aynı sürede yol aldığından yollar hızlarla orantılıdır: x(N{alt:H|3}) = 1,47 · x(HCl). {koyu:3. adım:} x(N{alt:H|3}) + x(HCl) = 100 → 1,47 · x(HCl) + x(HCl) = 100 → 2,47 · x(HCl) = 100 → x(HCl) ≈ 40,5 cm. {koyu:4. adım:} x(N{alt:H|3}) ≈ 100 − 40,5 ≈ {koyu:59,5 cm}. {koyu:Yorum:} Halka HCl ucuna daha yakın oluşur; çünkü N{alt:H|3} daha hafif ve daha hızlıdır.",
+      "ipucu": "Aynı sürede alınan yolların oranı hız oranına eşittir; iki yolun toplamı tüp uzunluğudur."
+    },
+    {
+      "soru": "27 °C'deki O₂ gazı ile aynı hızla yayılabilmesi için SO₂ gazının sıcaklığı kaç °C olmalıdır? (O₂: 32, SO₂: 64 g/mol)",
+      "cevap": "{koyu:1. adım:} Sıcaklık Kelvin'e çevrilir: T(O₂) = 27 + 273 = {koyu:300 K}. {koyu:2. adım:} Hızların eşit olması için {kesir:T|M} oranları eşit olmalıdır: {kesir:T(SO₂)|64} = {kesir:300|32}. {koyu:3. adım:} T(SO₂) = {kesir:300 · 64|32} = 300 · 2 = {koyu:600 K}. {koyu:4. adım:} Celsius'a geçiş: 600 − 273 = {koyu:327 °C}. {koyu:Yorum:} Mol kütlesi 2 kat olan gaz, mutlak sıcaklığı 2 kat olursa aynı hızla yayılır.",
+      "ipucu": "v ∝ karekök(T ÷ M) olduğundan aynı hız için T ÷ M oranları eşitlenir; sıcaklıklar Kelvin olmalıdır."
+    },
+    {
+      "soru": "Uranyum zenginleştirmede ²³⁵UF₆ (M = 349 g/mol) ve ²³⁸UF₆ (M = 352 g/mol) gazları gözenekli zarlardan geçirilir. Aynı koşullarda ²³⁵UF₆'nın yayılma hızı ²³⁸UF₆'nınkinin kaç katıdır? Bu sonuç işlemin neden çok kez tekrarlandığını nasıl açıklar? ({kok:1,0086} ≈ 1,0043 alınız)",
+      "cevap": "{koyu:1. adım:} Graham Yasası: {kesir:v(²³⁵UF₆)|v(²³⁸UF₆)} = {kok:{kesir:352|349}}. {koyu:2. adım:} {kesir:352|349} ≈ 1,0086 → {kok:1,0086} ≈ {koyu:1,0043}. {koyu:Yorum:} Hafif izotopu içeren gaz yalnızca yaklaşık %0,43 daha hızlıdır. Bir zardan geçen gaz karışımında ²³⁵U oranı çok az artar; istenen zenginliğe ulaşmak için gazın art arda çok sayıda zardan geçirilmesi gerekir.",
+      "ipucu": "Mol kütleleri birbirine çok yakınsa hız oranı 1'e çok yakın çıkar."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Aynı sıcaklık ve basınçta bulunan aşağıdaki gazlardan hangisi en hızlı yayılır? (H: 1, He: 4, C: 12, N: 14, O: 16, S: 32 g/mol)",
+      "secenekler": [
+        "CO₂",
+        "N₂",
+        "SO₂",
+        "He"
+      ],
+      "dogru": 3,
+      "aciklama": "Graham Yasası'na göre yayılma hızı mol kütlesinin kareköküyle ters orantılıdır. Mol kütleleri: He = 4, N₂ = 28, CO₂ = 44, SO₂ = 64 g/mol. En küçük mol kütlesi He'ye ait olduğu için en hızlı yayılan gaz He'dir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aynı koşullarda H₂ gazının yayılma hızı O₂ gazının yayılma hızının kaç katıdır? (H₂: 2, O₂: 32 g/mol)",
+      "secenekler": [
+        "2",
+        "4",
+        "8",
+        "16"
+      ],
+      "dogru": 1,
+      "aciklama": "v(H₂) ÷ v(O₂) = karekök(32 ÷ 2) = karekök(16) = 4. Mol kütleleri oranı 16 olsa da hız oranı bunun karekökü olan 4'tür."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir difüzyon tüpü deneyinde NH₃ ve HCl gazları tüpün iki ucundan aynı anda gönderildiğinde beyaz halka HCl ucuna daha yakın oluşuyor. Bu gözlemin en doğru açıklaması aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "HCl'nin mol kütlesi küçük olduğu için daha hızlı yayılması",
+        "NH₃'ün mol kütlesi küçük olduğu için aynı sürede daha uzun yol alması",
+        "HCl'nin kokusu daha keskin olduğu için daha hızlı yayılması",
+        "İki gazın tüp içinde aynı hızla ilerleyip tam ortada karşılaşması"
+      ],
+      "dogru": 1,
+      "aciklama": "NH₃'ün mol kütlesi 17, HCl'ninki 36,5 g/mol'dür. Hafif olan NH₃ yaklaşık 1,47 kat hızlı yayılır ve aynı sürede daha uzun yol alır; bu yüzden halka HCl ucuna yakın oluşur. Koku yayılma hızını belirlemez."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Evlerde LPG kullanılan mutfaklarda gaz kaçak dedektörünün zemine yakın takılmasının nedeni aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "LPG'yi oluşturan propan ve bütanın mol kütlesinin havanınkinden büyük olması",
+        "LPG'nin havadan daha hızlı yayılması",
+        "LPG'nin sıcaklık arttıkça yoğunlaşıp sıvılaşması",
+        "LPG'nin hiç difüzyon göstermemesi"
+      ],
+      "dogru": 0,
+      "aciklama": "Propan (44 g/mol) ve bütan (58 g/mol), havanın ortalama mol kütlesinden (≈ 29 g/mol) büyüktür; bu gazlar havadan ağırdır ve kaçak olduğunda yere yakın birikir. Bu nedenle dedektör zemine yakın takılır."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Bir gazın küçük bir delikten boşluğa sızmasına efüzyon denir.",
+          "dogru": true,
+          "aciklama": "Efüzyon, gaz taneciklerinin küçük bir delikten boşluğa veya düşük basınçlı ortama sızmasıdır."
+        },
+        {
+          "metin": "Aynı koşullarda mol kütlesi 4 kat büyük olan gaz 4 kat yavaş yayılır.",
+          "dogru": false,
+          "aciklama": "Hız mol kütlesinin kareköküyle ters orantılıdır; mol kütlesi 4 kat büyük olan gaz karekök(4) = 2 kat yavaş yayılır."
+        },
+        {
+          "metin": "Aynı sıcaklıktaki farklı gaz taneciklerinin ortalama kinetik enerjileri eşittir.",
+          "dogru": true,
+          "aciklama": "Ortalama kinetik enerji yalnızca mutlak sıcaklığa bağlıdır; Graham Yasası da bu eşitlikten türetilir."
+        },
+        {
+          "metin": "Bir gazın difüzyonu, aynı gazın boşluğa yayılmasından daha hızlıdır.",
+          "dogru": false,
+          "aciklama": "Difüzyonda tanecikler ortamdaki diğer taneciklerle çarpışarak yön değiştirir; bu yüzden başka gaz içinde yayılma, boşluğa yayılmadan daha yavaştır."
+        },
+        {
+          "metin": "Sıcaklık artırıldığında bir gazın yayılma hızı artar.",
+          "dogru": true,
+          "aciklama": "Sıcaklık arttıkça taneciklerin ortalama hızı artar; yayılma hızı mutlak sıcaklığın kareköküyle doğru orantılıdır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavram ve durumları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Difüzyon",
+          "Bir gazın başka bir gaz içinde kendiliğinden dağılarak homojen karışım oluşturması"
+        ],
+        [
+          "Efüzyon",
+          "Bir gazın küçük bir delikten boşluğa sızması"
+        ],
+        [
+          "Graham Yasası",
+          "Yayılma hızının mol kütlesinin kareköküyle ters orantılı olması"
+        ],
+        [
+          "Beyaz NH₄Cl halkası",
+          "Difüzyon tüpünde NH₃ ve HCl gazlarının karşılaştığı yeri gösteren katı ürün"
+        ],
+        [
+          "Kontrol değişkeni",
+          "Deneyde sonucu etkilemesin diye sabit tutulan tüp uzunluğu ve sıcaklık gibi etkenler"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Mutfakta pişen yemeğin kokusunun salona yayılması ___ olayına örnektir.",
+          "cevap": "difüzyon"
+        },
+        {
+          "metin": "Ağzı sıkıca bağlanmış helyum balonunun zamanla küçülmesi ___ olayına örnektir.",
+          "cevap": "efüzyon"
+        },
+        {
+          "metin": "Graham Yasası'na göre gazların yayılma hızı mol kütlesinin kareköküyle ___ orantılıdır.",
+          "cevap": "ters"
+        },
+        {
+          "metin": "Difüzyon tüpü deneyinde beyaz halka ___ ucuna daha yakın oluşur.",
+          "cevap": "hidrojen klorür"
+        },
+        {
+          "metin": "Aynı gazın yayılma hızı ___ arttıkça artar.",
+          "cevap": "sıcaklık"
+        }
+      ],
+      "kelimeler": [
+        "difüzyon",
+        "efüzyon",
+        "ters",
+        "hidrojen klorür",
+        "sıcaklık"
+      ],
+      "fazla": [
+        "doğru",
+        "amonyak"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir öğrenci grubu 150 cm uzunluğundaki bir tüpün bir ucundan He gazını, öbür ucundan kimliği bilinmeyen X gazını aynı anda ve aynı koşullarda gönderiyor. Gazların He ucundan 100 cm uzakta karşılaştığı belirleniyor. a) Gazların hız oranını bulunuz. b) X gazının mol kütlesini hesaplayınız ve hangi gaz olabileceğini yorumlayınız. c) X gazının, 27 °C'deki He ile aynı hızla yayılabilmesi için sıcaklığı kaç K olmalıdır? d) X gazı evlerde yakıt olarak kullanılıyorsa kaçak dedektörünün nereye takılması gerektiğini açıklayınız. (He: 4 g/mol; havanın ortalama mol kütlesi ≈ 29 g/mol)",
+      "ipuclari": [
+        "1. adım: Gazların aldığı yolları bulunuz; aynı sürede alınan yolların oranı hız oranına eşittir.",
+        "2. adım: Graham Yasası'nda hız oranının karesini alarak X'in mol kütlesini hesaplayınız.",
+        "3. adım: Aynı hız için T ÷ M oranlarını eşitleyiniz; sıcaklığı Kelvin cinsinden kullanınız.",
+        "4. adım: X'in mol kütlesini havanın ortalama mol kütlesiyle karşılaştırarak gazın yükselip yükselmeyeceğine karar veriniz."
+      ],
+      "cevap": "a) x(He) = 100 cm, x(X) = 150 − 100 = 50 cm. Aynı sürede yol aldıklarından {kesir:v(He)|v(X)} = {kesir:100|50} = {koyu:2}. b) {kesir:v(He)|v(X)} = {kesir:{kok:M(X)}|{kok:4}} = 2 → {kok:M(X)} = 4 → M(X) = {koyu:16 g/mol}. Mol kütlesi 16 g/mol olan yaygın gaz metandır (CH₄). c) T(He) = 27 + 273 = 300 K. Aynı hız için {kesir:T(X)|16} = {kesir:300|4} → T(X) = 300 · 4 = {koyu:1200 K}. d) X gazı (CH₄, 16 g/mol) havadan (≈ 29 g/mol) hafif olduğu için kaçak olduğunda yükselir; bu nedenle dedektör {koyu:tavana yakın} takılmalıdır. Deney sonucu, doğal gaz dedektörlerinin yerleştirilme kuralını bilimsel olarak açıklar."
+    }
+  ]
+}

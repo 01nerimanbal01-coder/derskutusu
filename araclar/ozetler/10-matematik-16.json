@@ -1,0 +1,623 @@
+{
+  "ad": "10-matematik-16",
+  "sinif": 10,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 16,
+  "tarih": "4-8 Ocak 2027",
+  "yayin_tarihi": "2027-01-04",
+  "unite": "Nicelikler ve Değişimler",
+  "konu": "Karesel Fonksiyon ve Nitel Özellikleri: Yatay Öteleme ve g(x) = a · f(x − r) + k Biçimindeki Karesel Fonksiyonlar",
+  "ciktilar": [
+    "MAT.10.4.2. Gerçek sayılarda f(x) = x² şeklinde tanımlı karesel referans fonksiyonun nitel özellikleri ile bu fonksiyondan türetilen g(x) = a · f(x ± r) ± k (a, r, k ∈ ℝ, a ≠ 0) karesel fonksiyonların nitel özelliklerine ilişkin matematiksel muhakeme yapabilme",
+    "Karesel referans fonksiyonu grafik ve cebirsel temsili üzerinde yatay öteleme, dikey uzama-daralma, yansıma ve dikey öteleme işlemleriyle diğer karesel fonksiyonlara dönüştürür; grafik ve cebirsel temsiller arasındaki ilişkiyi ifade eder.",
+    "Referans fonksiyonun nitel özelliklerinden hareketle g(x) = a · (x − r)² + k fonksiyonlarının nitel özellikleri hakkında varsayımlarda bulunur; örüntüleri genelleyip grafiksel olarak doğrular ya da cebirsel olarak ispatlar.",
+    "Elde ettiği önermelerin gerçek yaşam bağlamlarındaki kullanışlılığını ve uyguladığı doğrulama-ispat yöntemlerinin farklı durumlardaki kullanışlılığını değerlendirir."
+  ],
+  "giris": "Geçen hafta referans parabolü yukarı-aşağı kaydırmış, a katsayısıyla daraltıp genişletmiş ve x eksenine göre ters çevirmiştik. Ancak tepe noktası hep y ekseni üzerinde kalıyordu. Bu hafta parabolü {koyu:sağa ve sola kaydırmayı} öğreniyor ve bütün dönüşümleri tek bir kuralda, {koyu:g(x) = a · {us:(x − r)|2} + k} biçiminde birleştiriyoruz. Bu biçimin en büyük gücü, tepe noktasını, simetri eksenini, ekstremum değerini ve görüntü kümesini {koyu:hiç hesap yapmadan} kuraldan okuyabilmemizdir. Haftanın sonunda bulduğumuz genellemeleri ispatlayacak, bir grafikten kural yazacak ve top atışı ile en büyük alan gibi gerçek yaşam problemlerinde bu bilgileri kullanacağız.",
+  "ozet": [
+    "{koyu:Yatay öteleme:} g(x) = f(x − r) = {us:(x − r)|2} fonksiyonunun grafiği, r > 0 ise referans parabolün r birim sağa, g(x) = {us:(x + r)|2} ise r birim sola ötelenmişidir; parantezin içini sıfır yapan x değeri tepe noktasının apsisidir.",
+    "{koyu:Tepe noktası biçimi:} g(x) = a · {us:(x − r)|2} + k fonksiyonunda referans parabolün her (x, y) noktası (x + r, a · y + k) noktasına gider; tepe noktası T(r, k), simetri ekseni x = r doğrusudur.",
+    "{koyu:Ekstremum ve görüntü:} a > 0 ise k minimum değer ve görüntü kümesi [k, ∞); a < 0 ise k maksimum değer ve görüntü kümesi (−∞, k] olur.",
+    "{koyu:Sıfırlar:} {us:(x − r)|2} = −{kesir:k|a} denklemine göre a ile k zıt işaretliyse iki sıfır, k = 0 ise tek sıfır, a ile k aynı işaretliyse sıfır yoktur; iki sıfırın ortalaması her zaman r'dir.",
+    "{koyu:Teklik-çiftlik:} g(x) = a · {us:(x − r)|2} + k fonksiyonu yalnız r = 0 iken çifttir ve hiçbir zaman tek fonksiyon değildir; simetri y ekseninden x = r doğrusuna taşınır.",
+    "{koyu:Kısıtlama ve modelleme:} Tanım kümesi [r, ∞) ya da (−∞, r] alınırsa fonksiyon bire bir olur; kapalı aralıkta görüntü kümesi bulunurken önce r'nin aralıkta olup olmadığına bakılır. Top atışı ve en büyük alan problemlerinde tepe noktası aranan en büyük değeri verir."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Yatay Öteleme: g(x) = (x − r)² Fonksiyonları",
+      "metin": [
+        "Geçen hafta görüntülere bir sayı ekleyerek parabolü dikey olarak kaydırmıştık. Bu kez değişikliği fonksiyonun {koyu:girdisine} yapalım: g(x) = f(x − 2) = {us:(x − 2)|2} fonksiyonunu inceleyelim. Değer tablosu g(0) = 4, g(1) = 1, g(2) = 0, g(3) = 1, g(4) = 4 şeklindedir. Referans fonksiyon 0 değerini x = 0'da alırken g bu değeri x = 2'de alır; f'nin 1 değerini aldığı ±1 noktaları yerine g bu değeri 1 ve 3'te alır. Kısacası f'nin x noktasında aldığı her değeri g, {koyu:x + 2 noktasında} alır. Grafikte bu durum, parabolün her (x, y) noktasının (x + 2, y) noktasına taşınması, yani parabolün {koyu:2 birim sağa ötelenmesi} anlamına gelir. Bu dönüşüme {koyu:yatay öteleme} denir.",
+        "Burada sezgimizi yanıltan bir durum vardır: Kuralda eksi işareti görmemize rağmen grafik sağa kayar. Bunun nedeni basittir: Tepe noktasında parantezin içi sıfır olmalıdır. x − 2 = 0 eşitliği x = 2 iken sağlandığından tepe noktası {koyu:T(2, 0)} olur. Aynı mantıkla h(x) = {us:(x + 3)|2} fonksiyonunda x + 3 = 0 için x = −3 bulunur; tepe noktası {koyu:T(−3, 0)} olur ve grafik referans parabolün {koyu:3 birim sola} ötelenmişidir. Genellersek, r > 0 olmak üzere {koyu:f(x − r) grafiği r birim sağa, f(x + r) grafiği r birim sola} ötelenir. Kısa bir kural olarak: {koyu:parantezin içini sıfır yapan x değeri, tepe noktasının apsisidir}.",
+        "Yatay ötelemede parabolün şekli ve açıklığı değişmez; görüntü kümesi [0, ∞), minimum değer 0 ve tek sıfır olma özelliği {koyu:korunur}. Değişenler ise konuma bağlı özelliklerdir: Tek sıfır artık x = r, simetri ekseni {koyu:x = r doğrusu}, azalanlık aralığı (−∞, r], artanlık aralığı [r, ∞) olur. En dikkat çekici değişiklik {koyu:çiftliğin kaybolmasıdır}. g(x) = {us:(x − 2)|2} için g(−1) = 9 iken g(1) = 1 olduğundan g(−x) = g(x) eşitliği sağlanmaz; g(0) = 4 ≠ 0 olduğundan fonksiyon tek de değildir. Simetri ortadan kalkmaz, yalnız {koyu:y ekseninden x = 2 doğrusuna taşınır}: Her d sayısı için g(2 − d) = g(2 + d) = {us:d|2} olur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Fonksiyon",
+          "Dönüşüm",
+          "Tepe Noktası",
+          "Simetri Ekseni",
+          "Azalan Aralık",
+          "Artan Aralık",
+          "Çift mi?"
+        ],
+        "satirlar": [
+          [
+            "f(x) = {us:x|2}",
+            "Referans",
+            "(0, 0)",
+            "x = 0",
+            "(−∞, 0]",
+            "[0, ∞)",
+            "Evet"
+          ],
+          [
+            "g(x) = {us:(x − 2)|2}",
+            "2 birim sağa",
+            "(2, 0)",
+            "x = 2",
+            "(−∞, 2]",
+            "[2, ∞)",
+            "Hayır"
+          ],
+          [
+            "g(x) = {us:(x + 3)|2}",
+            "3 birim sola",
+            "(−3, 0)",
+            "x = −3",
+            "(−∞, −3]",
+            "[−3, ∞)",
+            "Hayır"
+          ],
+          [
+            "g(x) = {us:(x − {kesir:1|2})|2}",
+            "{kesir:1|2} birim sağa",
+            "({kesir:1|2}, 0)",
+            "x = {kesir:1|2}",
+            "(−∞, {kesir:1|2}]",
+            "[{kesir:1|2}, ∞)",
+            "Hayır"
+          ],
+          [
+            "g(x) = {us:(x + 1)|2}",
+            "1 birim sola",
+            "(−1, 0)",
+            "x = −1",
+            "(−∞, −1]",
+            "[−1, ∞)",
+            "Hayır"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "İçerideki İşaret Ters Çalışır",
+          "metin": "r > 0 iken {koyu:f(x − r)} grafiği r birim {koyu:sağa}, {koyu:f(x + r)} grafiği r birim {koyu:sola} ötelenir. Görüntüye eklenen sayı (dikey öteleme) işaretine uygun yönde, girdiye eklenen sayı (yatay öteleme) işaretinin tersi yönde etki eder."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Çiftlik Kaybolur, Simetri Taşınır",
+          "metin": "r ≠ 0 ise g(x) = {us:(x − r)|2} çift fonksiyon değildir; ama grafik x = r doğrusuna göre simetriktir: g(r − d) = g(r + d). Çiftlik, yalnız y eksenine göre simetrinin adıdır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='16' y='12' width='728' height='36' rx='10' fill='#1e293b'/><text x='380' y='36' text-anchor='middle' font-size='16' font-weight='700' fill='#ffffff'>Yatay Öteleme: Parantezin İçi Tepe Noktasını Taşır</text><rect x='20' y='60' width='410' height='248' rx='12' fill='#ffffff' stroke='#cbd5e1'/><line x1='30' y1='280' x2='420' y2='280' stroke='#64748b' stroke-width='1.5'/><line x1='230' y1='70' x2='230' y2='300' stroke='#64748b' stroke-width='1.5'/><text x='410' y='272' font-size='12' fill='#64748b'>x</text><text x='236' y='80' font-size='12' fill='#64748b'>y</text><path d='M50,82 Q140,478 230,82' fill='none' stroke='#059669' stroke-width='3'/><path d='M140,82 Q230,478 320,82' fill='none' stroke='#2563eb' stroke-width='2.5' stroke-dasharray='7 5'/><path d='M200,82 Q290,478 380,82' fill='none' stroke='#dc2626' stroke-width='3'/><circle cx='140' cy='280' r='5' fill='#059669'/><circle cx='230' cy='280' r='5' fill='#2563eb'/><circle cx='290' cy='280' r='5' fill='#dc2626'/><line x1='236' y1='262' x2='282' y2='262' stroke='#dc2626' stroke-width='2'/><polygon points='290,262 280,257 280,267' fill='#dc2626'/><line x1='224' y1='246' x2='148' y2='246' stroke='#059669' stroke-width='2'/><polygon points='140,246 150,241 150,251' fill='#059669'/><text x='140' y='298' text-anchor='middle' font-size='12' fill='#047857'>−3</text><text x='222' y='298' text-anchor='middle' font-size='12' fill='#1d4ed8'>0</text><text x='290' y='298' text-anchor='middle' font-size='12' fill='#b91c1c'>2</text><rect x='448' y='60' width='292' height='248' rx='12' fill='#eff6ff' stroke='#2563eb' stroke-width='2'/><rect x='448' y='60' width='292' height='32' rx='10' fill='#2563eb'/><text x='594' y='81' text-anchor='middle' font-size='14' font-weight='700' fill='#ffffff'>Kuralı Okuma</text><text x='464' y='116' font-size='13' font-weight='700' fill='#1d4ed8'>f(x) = x²</text><text x='600' y='116' font-size='12' fill='#334155'>tepe (0, 0), referans</text><text x='464' y='142' font-size='13' font-weight='700' fill='#b91c1c'>g(x) = (x − 2)²</text><text x='600' y='142' font-size='12' fill='#334155'>tepe (2, 0), 2 sağa</text><text x='464' y='168' font-size='13' font-weight='700' fill='#047857'>h(x) = (x + 3)²</text><text x='600' y='168' font-size='12' fill='#334155'>tepe (−3, 0), 3 sola</text><rect x='462' y='184' width='264' height='70' rx='10' fill='#ffffff' stroke='#93c5fd'/><text x='594' y='206' text-anchor='middle' font-size='13' font-weight='700' fill='#1e293b'>r &gt; 0 için</text><text x='594' y='226' text-anchor='middle' font-size='12' fill='#334155'>f(x − r): r birim SAĞA</text><text x='594' y='244' text-anchor='middle' font-size='12' fill='#334155'>f(x + r): r birim SOLA</text><text x='594' y='276' text-anchor='middle' font-size='12' fill='#334155'>İçeriyi sıfır yapan x değeri</text><text x='594' y='294' text-anchor='middle' font-size='12' font-weight='700' fill='#1d4ed8'>= tepe noktasının apsisi</text></svg>"
+    },
+    {
+      "baslik": "Genel Biçim: g(x) = a · (x − r)² + k ve Dönüşüm Sırası",
+      "metin": [
+        "Şimdi bildiğimiz üç dönüşümü birleştirelim: Girdiden r çıkararak yatay öteleme, görüntüyü a ile çarparak dikey uzama-daralma (a < 0 ise yansıma) ve sonuca k ekleyerek dikey öteleme yapalım. Elde edilen {koyu:g(x) = a · f(x − r) + k = a · {us:(x − r)|2} + k} fonksiyonuna karesel fonksiyonun {koyu:tepe noktası biçimi} diyeceğiz. Referans parabolün her (x, y) noktası önce (x + r, y), sonra (x + r, a · y), en sonunda {koyu:(x + r, a · y + k)} noktasına gider. Özel olarak tepe noktası (0, 0) noktası {koyu:T(r, k)} noktasına taşınır. MEB programındaki g(x) = a · f(x ± r) ± k gösterimi de aynı fikri anlatır: f(x + 3) gördüğümüzde bunu f(x − (−3)) olarak düşünür, r = −3 alırız.",
+        "Bir örnekle izleyelim: g(x) = 2 · {us:(x − 1)|2} − 8. {koyu:1. adım:} {us:x|2} → {us:(x − 1)|2}: parabol 1 birim sağa kayar, tepe (1, 0). {koyu:2. adım:} {us:(x − 1)|2} → 2{us:(x − 1)|2}: görüntüler 2 katına çıkar, parabol daralır; tepe hâlâ (1, 0). {koyu:3. adım:} 2{us:(x − 1)|2} → 2{us:(x − 1)|2} − 8: parabol 8 birim aşağı iner, tepe {koyu:(1, −8)}. Referans parabolün (2, 4) noktasını takip edersek (2, 4) → (3, 4) → (3, 8) → {koyu:(3, 0)} elde ederiz; demek ki x = 3 bir sıfırdır. (−2, 4) noktası da aynı adımlarla (−1, 0) noktasına gider, böylece ikinci sıfır x = −1 olur. Nokta takibi hem grafik çizmeyi hem de sonucu kontrol etmeyi kolaylaştırır.",
+        "Dönüşümlerin {koyu:sırası} önemlidir. Yatay öteleme yalnız apsislere, uzama ve dikey öteleme yalnız ordinatlara etki ettiğinden yatay ötelemeyi herhangi bir anda yapabiliriz. Ancak a ile çarpma ve k ekleme yer değiştirirse sonuç değişir: Önce 8 çıkarıp sonra 2 ile çarparsak 2({us:(x − 1)|2} − 8) = 2{us:(x − 1)|2} − 16 elde ederiz; tepe (1, −16) olur ve bu farklı bir fonksiyondur. Kural: {koyu:önce çarp, sonra ekle}. İkinci örnek olarak h(x) = −{us:(x + 2)|2} + 9 fonksiyonunda parabol 2 birim sola kayar, x eksenine göre yansır (kollar aşağı döner) ve 9 birim yukarı çıkar; tepe noktası {koyu:(−2, 9)} bir maksimum noktası olur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Adım",
+          "İşlem",
+          "Ortaya Çıkan Kural",
+          "(2, 4) Noktasının Yeni Konumu",
+          "Tepe Noktası"
+        ],
+        "satirlar": [
+          [
+            "0",
+            "Referans fonksiyon",
+            "{us:x|2}",
+            "(2, 4)",
+            "(0, 0)"
+          ],
+          [
+            "1",
+            "1 birim sağa öteleme (x yerine x − 1)",
+            "{us:(x − 1)|2}",
+            "(3, 4)",
+            "(1, 0)"
+          ],
+          [
+            "2",
+            "Görüntüleri 2 ile çarpma (daralma)",
+            "2{us:(x − 1)|2}",
+            "(3, 8)",
+            "(1, 0)"
+          ],
+          [
+            "3",
+            "8 birim aşağı öteleme",
+            "2{us:(x − 1)|2} − 8",
+            "(3, 0) → sıfır",
+            "(1, −8)"
+          ],
+          [
+            "Karşı örnek",
+            "Önce −8 ekleyip sonra 2 ile çarpma",
+            "2{us:(x − 1)|2} − 16",
+            "(3, −8)",
+            "(1, −16)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Tepe Noktası Biçimi",
+          "metin": "a ≠ 0 olmak üzere {koyu:g(x) = a · {us:(x − r)|2} + k} biçimindeki karesel fonksiyonun grafiği, tepe noktası {koyu:T(r, k)} ve simetri ekseni {koyu:x = r} olan bir paraboldür. a'nın işareti kolların yönünü, {uzunluk:a} açıklığı belirler."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Nokta Takibiyle Kontrol",
+          "metin": "Referans parabolün (±1, 1) ve (±2, 4) noktalarını alın; apsise r ekleyin, ordinatı a ile çarpıp k ekleyin. g(x) = 2{us:(x − 1)|2} − 8 için (1, 1) → (2, 2 · 1 − 8) = (2, −6) olur. Gerçekten g(2) = 2 · 1 − 8 = −6'dır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 310' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='310' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='16' y='12' width='728' height='36' rx='10' fill='#1e293b'/><text x='380' y='36' text-anchor='middle' font-size='16' font-weight='700' fill='#ffffff'>Referans Parabolden Adım Adım Yeni Parabole</text><text x='30' y='74' font-size='12' font-weight='700' fill='#1d4ed8'>Örnek 1: g(x) = 2(x − 1)² − 8</text><rect x='30' y='82' width='140' height='80' rx='12' fill='#ffffff' stroke='#2563eb' stroke-width='2'/><text x='100' y='108' text-anchor='middle' font-size='14' font-weight='700' fill='#1e293b'>x²</text><text x='100' y='130' text-anchor='middle' font-size='12' fill='#334155'>Referans</text><text x='100' y='150' text-anchor='middle' font-size='12' fill='#1d4ed8'>Tepe (0, 0)</text><rect x='220' y='82' width='140' height='80' rx='12' fill='#ffffff' stroke='#2563eb' stroke-width='2'/><text x='290' y='108' text-anchor='middle' font-size='14' font-weight='700' fill='#1e293b'>(x − 1)²</text><text x='290' y='130' text-anchor='middle' font-size='12' fill='#334155'>1 birim sağa</text><text x='290' y='150' text-anchor='middle' font-size='12' fill='#1d4ed8'>Tepe (1, 0)</text><rect x='410' y='82' width='140' height='80' rx='12' fill='#ffffff' stroke='#2563eb' stroke-width='2'/><text x='480' y='108' text-anchor='middle' font-size='14' font-weight='700' fill='#1e293b'>2(x − 1)²</text><text x='480' y='130' text-anchor='middle' font-size='12' fill='#334155'>2 kat dikey uzama</text><text x='480' y='150' text-anchor='middle' font-size='12' fill='#1d4ed8'>Tepe (1, 0)</text><rect x='600' y='82' width='140' height='80' rx='12' fill='#dbeafe' stroke='#1d4ed8' stroke-width='2'/><text x='670' y='108' text-anchor='middle' font-size='14' font-weight='700' fill='#1e293b'>2(x − 1)² − 8</text><text x='670' y='130' text-anchor='middle' font-size='12' fill='#334155'>8 birim aşağı</text><text x='670' y='150' text-anchor='middle' font-size='12' font-weight='700' fill='#1d4ed8'>Tepe (1, −8)</text><line x1='172' y1='122' x2='210' y2='122' stroke='#64748b' stroke-width='2'/><polygon points='218,122 208,117 208,127' fill='#64748b'/><line x1='362' y1='122' x2='400' y2='122' stroke='#64748b' stroke-width='2'/><polygon points='408,122 398,117 398,127' fill='#64748b'/><line x1='552' y1='122' x2='590' y2='122' stroke='#64748b' stroke-width='2'/><polygon points='598,122 588,117 588,127' fill='#64748b'/><text x='30' y='188' font-size='12' font-weight='700' fill='#b91c1c'>Örnek 2: h(x) = −(x + 2)² + 9</text><rect x='30' y='196' width='140' height='80' rx='12' fill='#ffffff' stroke='#dc2626' stroke-width='2'/><text x='100' y='222' text-anchor='middle' font-size='14' font-weight='700' fill='#1e293b'>x²</text><text x='100' y='244' text-anchor='middle' font-size='12' fill='#334155'>Referans</text><text x='100' y='264' text-anchor='middle' font-size='12' fill='#b91c1c'>Tepe (0, 0)</text><rect x='220' y='196' width='140' height='80' rx='12' fill='#ffffff' stroke='#dc2626' stroke-width='2'/><text x='290' y='222' text-anchor='middle' font-size='14' font-weight='700' fill='#1e293b'>(x + 2)²</text><text x='290' y='244' text-anchor='middle' font-size='12' fill='#334155'>2 birim sola</text><text x='290' y='264' text-anchor='middle' font-size='12' fill='#b91c1c'>Tepe (−2, 0)</text><rect x='410' y='196' width='140' height='80' rx='12' fill='#ffffff' stroke='#dc2626' stroke-width='2'/><text x='480' y='222' text-anchor='middle' font-size='14' font-weight='700' fill='#1e293b'>−(x + 2)²</text><text x='480' y='244' text-anchor='middle' font-size='11' fill='#334155'>x eksenine göre yansıma</text><text x='480' y='264' text-anchor='middle' font-size='12' fill='#b91c1c'>Tepe (−2, 0)</text><rect x='600' y='196' width='140' height='80' rx='12' fill='#fee2e2' stroke='#b91c1c' stroke-width='2'/><text x='670' y='222' text-anchor='middle' font-size='14' font-weight='700' fill='#1e293b'>−(x + 2)² + 9</text><text x='670' y='244' text-anchor='middle' font-size='12' fill='#334155'>9 birim yukarı</text><text x='670' y='264' text-anchor='middle' font-size='12' font-weight='700' fill='#b91c1c'>Tepe (−2, 9) maks.</text><line x1='172' y1='236' x2='210' y2='236' stroke='#64748b' stroke-width='2'/><polygon points='218,236 208,231 208,241' fill='#64748b'/><line x1='362' y1='236' x2='400' y2='236' stroke='#64748b' stroke-width='2'/><polygon points='408,236 398,231 398,241' fill='#64748b'/><line x1='552' y1='236' x2='590' y2='236' stroke='#64748b' stroke-width='2'/><polygon points='598,236 588,231 588,241' fill='#64748b'/><text x='380' y='298' text-anchor='middle' font-size='12' fill='#334155'>Nokta takibi (Örnek 1): (2, 4) → (3, 4) → (3, 8) → (3, 0) ve bu nokta bir sıfırdır. Kural: önce çarp, sonra ekle.</text></svg>"
+    },
+    {
+      "baslik": "Tepe Noktası Biçimindeki Fonksiyonların Nitel Özelliklerini Genelleme ve İspat",
+      "metin": [
+        "Referans fonksiyonun özelliklerinden hareketle bir {koyu:varsayım} kuralım: Dönüşümler yalnız konum, açıklık ve yön değiştirdiğine göre g(x) = a · {us:(x − r)|2} + k fonksiyonunun da tanım kümesi ℝ olmalı, ekstremumu tepe noktasında oluşmalı ve görüntü kümesi k sayısından başlamalıdır. Bunu doğrulayalım: Her x için {us:(x − r)|2} ≥ 0'dır ve eşitlik yalnız x = r iken sağlanır. a > 0 ise a · {us:(x − r)|2} ≥ 0, dolayısıyla {koyu:g(x) ≥ k} olur; en küçük değer x = r'de alınır. a < 0 ise a · {us:(x − r)|2} ≤ 0, dolayısıyla {koyu:g(x) ≤ k} olur; en büyük değer x = r'de alınır. Her y ≥ k (a > 0) değeri için {us:(x − r)|2} = {kesir:y − k|a} denklemi çözülebildiğinden görüntü kümesi a > 0 iken {koyu:[k, ∞)}, a < 0 iken {koyu:(−∞, k]} olur.",
+        "{koyu:Artanlık-azalanlık} için geçen hafta kullandığımız iki kare farkı yöntemini genelleyelim: g({alt:x|2}) − g({alt:x|1}) = a · [{us:({alt:x|2} − r)|2} − {us:({alt:x|1} − r)|2}] = a · ({alt:x|2} − {alt:x|1}) · ({alt:x|1} + {alt:x|2} − 2r). r ≤ {alt:x|1} < {alt:x|2} ise son iki çarpan pozitiftir; a > 0 iken fark pozitif olur ve g {koyu:[r, ∞) aralığında artandır}. {alt:x|1} < {alt:x|2} ≤ r ise son çarpan negatif olur ve a > 0 iken g {koyu:(−∞, r] aralığında azalandır}. a < 0 olduğunda başa gelen negatif çarpan her sonucu tersine çevirir: (−∞, r] aralığında artan, [r, ∞) aralığında azalan olur. Böylece varsayımımız {koyu:cebirsel olarak ispatlanmış} olur.",
+        "{koyu:Sıfırlar} için g(x) = 0 denklemi {us:(x − r)|2} = −{kesir:k|a} biçimine gelir. Sağ taraf pozitifse, yani {koyu:a ile k zıt işaretliyse} iki sıfır vardır: x = r ± {kok:−{kesir:k|a}}; k = 0 ise tek sıfır x = r'dir; a ile k aynı işaretliyse sıfır yoktur. Bu sonuç grafikle de uyumludur: Kollar yukarı bakarken tepe x ekseninin altındaysa grafik ekseni iki kez keser. İki sıfırın r'ye uzaklığı eşit olduğundan {koyu:sıfırların ortalaması r'dir}. a > 0 iken fonksiyon sıfırlar arasında negatif, dışında pozitif; a < 0 iken tam tersidir. Son olarak {koyu:teklik-çiftlik}: g(−x) = g(x) eşitliği her x için ancak r = 0 iken sağlanır. g hiçbir zaman tek olamaz, çünkü g(x) + g(−x) = 2a{us:x|2} + 2a{us:r|2} + 2k ifadesi a ≠ 0 iken her x için sıfır olamaz. Fonksiyon ℝ → ℝ olarak bire bir de örten de değildir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Nitel Özellik",
+          "a > 0 (kollar yukarı)",
+          "a < 0 (kollar aşağı)"
+        ],
+        "satirlar": [
+          [
+            "Tanım kümesi",
+            "ℝ",
+            "ℝ"
+          ],
+          [
+            "Görüntü kümesi",
+            "[k, ∞)",
+            "(−∞, k]"
+          ],
+          [
+            "Ekstremum",
+            "Minimum noktası T(r, k), minimum değer k",
+            "Maksimum noktası T(r, k), maksimum değer k"
+          ],
+          [
+            "Azalan aralık",
+            "(−∞, r]",
+            "[r, ∞)"
+          ],
+          [
+            "Artan aralık",
+            "[r, ∞)",
+            "(−∞, r]"
+          ],
+          [
+            "Simetri ekseni",
+            "x = r",
+            "x = r"
+          ],
+          [
+            "Sıfır sayısı",
+            "k < 0 ise 2, k = 0 ise 1, k > 0 ise 0",
+            "k > 0 ise 2, k = 0 ise 1, k < 0 ise 0"
+          ],
+          [
+            "İşaret (iki sıfır varsa)",
+            "Sıfırlar arasında negatif, dışında pozitif",
+            "Sıfırlar arasında pozitif, dışında negatif"
+          ],
+          [
+            "Teklik-çiftlik",
+            "r = 0 ise çift; r ≠ 0 ise ne tek ne çift",
+            "r = 0 ise çift; r ≠ 0 ise ne tek ne çift"
+          ],
+          [
+            "Bire birlik / örtenlik (ℝ → ℝ)",
+            "Bire bir değil, örten değil",
+            "Bire bir değil, örten değil"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Sıfır Sayısı İçin a ile k'nın İşaretleri",
+          "metin": "{koyu:a · k < 0} ise iki sıfır, {koyu:k = 0} ise tek sıfır (parabol x eksenine teğet), {koyu:a · k > 0} ise sıfır yoktur. Sıfırların sayısı r'ye bağlı değildir; çünkü yatay öteleme grafiği x eksenine yaklaştırmaz ya da uzaklaştırmaz."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Karesel Fonksiyon Tek Olamaz",
+          "metin": "Tek fonksiyonun grafiği orijine göre simetriktir; bir kolu yukarı bakan parabolün orijine göre simetriği kolları aşağı bakan bir parabol olur. Bu yüzden hiçbir karesel fonksiyon tek değildir. Çiftlik ise yalnız tepe noktası y ekseni üzerindeyken (r = 0) mümkündür."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 345' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='345' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='16' y='12' width='728' height='36' rx='10' fill='#1e293b'/><text x='380' y='36' text-anchor='middle' font-size='16' font-weight='700' fill='#ffffff'>a &gt; 0 ve a &lt; 0 İçin Nitel Özellikler Grafikte</text><rect x='20' y='58' width='355' height='250' rx='12' fill='#ffffff' stroke='#93c5fd' stroke-width='2'/><line x1='30' y1='190' x2='365' y2='190' stroke='#64748b' stroke-width='1.5'/><line x1='150' y1='66' x2='150' y2='300' stroke='#64748b' stroke-width='1.5'/><text x='356' y='183' font-size='11' fill='#64748b'>x</text><text x='155' y='76' font-size='11' fill='#64748b'>y</text><line x1='190' y1='92' x2='190' y2='296' stroke='#f59e0b' stroke-width='1.5' stroke-dasharray='5 4'/><text x='196' y='106' font-size='11' fill='#b45309'>x = 1</text><path d='M70,90 Q190,450 310,90' fill='none' stroke='#2563eb' stroke-width='3'/><circle cx='110' cy='190' r='5' fill='#dc2626'/><circle cx='270' cy='190' r='5' fill='#dc2626'/><text x='100' y='208' text-anchor='middle' font-size='11' fill='#dc2626'>−1</text><text x='280' y='208' text-anchor='middle' font-size='11' fill='#dc2626'>3</text><circle cx='190' cy='270' r='6' fill='#1d4ed8'/><text x='198' y='288' font-size='11' font-weight='700' fill='#1d4ed8'>T(1, −8) minimum</text><text x='34' y='140' font-size='11' fill='#475569'>azalan</text><text x='312' y='140' font-size='11' fill='#475569'>artan</text><text x='197' y='70' text-anchor='middle' font-size='12' font-weight='700' fill='#1d4ed8'>g(x) = 2(x − 1)² − 8</text><text x='197' y='326' text-anchor='middle' font-size='12' fill='#334155'>Görüntü [−8, ∞) · Negatif aralık (−1, 3)</text><rect x='385' y='58' width='355' height='250' rx='12' fill='#ffffff' stroke='#fca5a5' stroke-width='2'/><line x1='395' y1='190' x2='735' y2='190' stroke='#64748b' stroke-width='1.5'/><line x1='640' y1='66' x2='640' y2='300' stroke='#64748b' stroke-width='1.5'/><text x='726' y='183' font-size='11' fill='#64748b'>x</text><text x='645' y='76' font-size='11' fill='#64748b'>y</text><line x1='560' y1='102' x2='560' y2='296' stroke='#f59e0b' stroke-width='1.5' stroke-dasharray='5 4'/><text x='566' y='284' font-size='11' fill='#b45309'>x = −2</text><path d='M400,260 Q560,-60 720,260' fill='none' stroke='#dc2626' stroke-width='3'/><circle cx='440' cy='190' r='5' fill='#1d4ed8'/><circle cx='680' cy='190' r='5' fill='#1d4ed8'/><text x='430' y='208' text-anchor='middle' font-size='11' fill='#1d4ed8'>−5</text><text x='690' y='208' text-anchor='middle' font-size='11' fill='#1d4ed8'>1</text><circle cx='560' cy='100' r='6' fill='#b91c1c'/><text x='560' y='90' text-anchor='middle' font-size='11' font-weight='700' fill='#b91c1c'>T(−2, 9) maksimum</text><text x='420' y='140' font-size='11' fill='#475569'>artan</text><text x='650' y='140' font-size='11' fill='#475569'>azalan</text><text x='562' y='70' text-anchor='middle' font-size='12' font-weight='700' fill='#b91c1c'>h(x) = −(x + 2)² + 9</text><text x='562' y='326' text-anchor='middle' font-size='12' fill='#334155'>Görüntü (−∞, 9] · Pozitif aralık (−5, 1)</text></svg>"
+    },
+    {
+      "baslik": "Grafikten veya Verilen Bilgilerden Karesel Fonksiyonun Kuralını Yazma",
+      "metin": [
+        "Temsiller arasındaki ilişkiyi ters yönde de kullanabiliriz: Grafiği ya da bazı özellikleri verilen bir parabolün {koyu:cebirsel kuralını} yazmak. Tepe noktası biçiminde r ve k doğrudan tepe noktasından okunur; geriye yalnız a kalır ve onu bulmak için grafikteki {koyu:bir nokta daha} yeter. Örneğin tepe noktası T(3, −2) olan ve A(1, 6) noktasından geçen parabol için g(x) = a · {us:(x − 3)|2} − 2 yazarız. x = 1 için 6 = a · {us:(1 − 3)|2} − 2, yani 6 = 4a − 2 ve {koyu:a = 2} bulunur. Kural g(x) = 2{us:(x − 3)|2} − 2'dir. Simetri sayesinde A noktasının x = 3 doğrusuna göre simetriği olan B(5, 6) noktası da grafiktedir; g(5) = 2 · 4 − 2 = 6 hesabı bu sonucu doğrular.",
+        "Bazen tepe noktası doğrudan verilmez, {koyu:sıfırlar ve ekstremum değeri} verilir. Sıfırlar x = r doğrusuna göre simetrik olduğundan tepe apsisi sıfırların ortalamasıdır. Sıfırları −1 ve 5, maksimum değeri 9 olan parabolde r = {kesir:−1 + 5|2} = 2, k = 9 ve g(x) = a · {us:(x − 2)|2} + 9 olur. g(5) = 0 koşulu 9a + 9 = 0, yani {koyu:a = −1} verir: g(x) = −{us:(x − 2)|2} + 9. Kontrol: g(−1) = −9 + 9 = 0. ✓ Aynı fikir daha genel bir önermeye dönüşür: {koyu:g(p) = g(q) ve p ≠ q ise tepe apsisi r = {kesir:p + q|2} olur.} İspat: a{us:(p − r)|2} = a{us:(q − r)|2} eşitliğinden (p − q)(p + q − 2r) = 0 elde edilir; p ≠ q olduğundan p + q = 2r'dir.",
+        "Bir karesel fonksiyon bize {koyu:açık biçimde}, yani a{us:x|2} + bx + c olarak da verilebilir. Tepe noktası biçimini açınca bu biçime ulaşırız: −{us:(x − 2)|2} + 9 = −{us:x|2} + 4x + 5. Açık biçimin bir avantajı, c sayısının grafiğin {koyu:y eksenini kestiği noktayı} doğrudan vermesidir: g(0) = 5. Tersine, açık biçimden tepe noktası biçimine {koyu:tam kareye tamamlama} ile geçilir: {us:x|2} − 6x + 5 = ({us:x|2} − 6x + 9) − 9 + 5 = {us:(x − 3)|2} − 4. Böylece bu fonksiyonun referans parabolün 3 birim sağa ve 4 birim aşağı ötelenmişi olduğunu, tepe noktasının (3, −4) ve sıfırlarının 1 ile 5 olduğunu görürüz. İki cebirsel temsil aynı fonksiyonu anlatır; hangi özellik aranıyorsa ona uygun olan seçilir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Verilen Bilgi",
+          "Kullanılan Fikir",
+          "Sonuç"
+        ],
+        "satirlar": [
+          [
+            "Tepe T(3, −2), A(1, 6) noktası",
+            "a(x − r)² + k biçimine noktayı yaz",
+            "g(x) = 2{us:(x − 3)|2} − 2"
+          ],
+          [
+            "Sıfırlar −1 ve 5, maksimum değer 9",
+            "r = sıfırların ortalaması = 2",
+            "g(x) = −{us:(x − 2)|2} + 9"
+          ],
+          [
+            "g(1) = g(7), minimum değer −3, g(4) = 6",
+            "r = {kesir:1 + 7|2} = 4, a · 0 + k = 6? Hayır: g(4) tepe değeri",
+            "Tepe (4, −3) ile g(4) = 6 çelişir; böyle bir fonksiyon yoktur"
+          ],
+          [
+            "Açık biçim {us:x|2} − 6x + 5",
+            "Tam kareye tamamlama",
+            "{us:(x − 3)|2} − 4, tepe (3, −4)"
+          ],
+          [
+            "Tepe (0, 4), (2, 0) noktası",
+            "r = 0, a · 4 + 4 = 0",
+            "g(x) = −{us:x|2} + 4"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Simetrik Noktalar Tepe Apsisini Verir",
+          "metin": "Aynı yükseklikte bulunan iki noktanın apsislerinin ortalaması tepe noktasının apsisidir. g(−1) = g(7) ise r = 3'tür; sıfırlar 2 ve 10 ise r = 6'dır. Bu bilgi, kuralı bilmeden simetri eksenini bulmayı sağlar."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Açık Biçim ile Tepe Noktası Biçimi",
+          "metin": "{koyu:a{us:(x − r)|2} + k} biçimi tepe noktasını, ekstremumu ve görüntü kümesini; {koyu:a{us:x|2} + bx + c} biçimi y eksenini kestiği (0, c) noktasını hemen gösterir. Her iki biçimde de a katsayısı aynıdır ve kolların yönünü belirler."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='16' y='12' width='728' height='36' rx='10' fill='#1e293b'/><text x='380' y='36' text-anchor='middle' font-size='16' font-weight='700' fill='#ffffff'>Grafikten Kurala: Tepe Noktası ve Bir Nokta Yeter</text><rect x='20' y='58' width='330' height='250' rx='12' fill='#ffffff' stroke='#93c5fd' stroke-width='2'/><line x1='30' y1='240' x2='340' y2='240' stroke='#64748b' stroke-width='1.5'/><line x1='80' y1='66' x2='80' y2='300' stroke='#64748b' stroke-width='1.5'/><text x='332' y='233' font-size='11' fill='#64748b'>x</text><text x='85' y='76' font-size='11' fill='#64748b'>y</text><line x1='200' y1='90' x2='200' y2='298' stroke='#f59e0b' stroke-width='1.5' stroke-dasharray='5 4'/><text x='206' y='100' font-size='11' fill='#b45309'>x = 3</text><line x1='120' y1='120' x2='280' y2='120' stroke='#94a3b8' stroke-width='1.5' stroke-dasharray='4 4'/><path d='M120,120 Q200,440 280,120' fill='none' stroke='#2563eb' stroke-width='3'/><circle cx='120' cy='120' r='5' fill='#7c3aed'/><text x='114' y='114' text-anchor='end' font-size='11' font-weight='700' fill='#6d28d9'>A(1, 6)</text><circle cx='280' cy='120' r='5' fill='#7c3aed'/><text x='288' y='114' font-size='11' font-weight='700' fill='#6d28d9'>B(5, 6)</text><circle cx='200' cy='280' r='6' fill='#dc2626'/><text x='208' y='296' font-size='11' font-weight='700' fill='#dc2626'>T(3, −2)</text><circle cx='160' cy='240' r='4' fill='#059669'/><circle cx='240' cy='240' r='4' fill='#059669'/><text x='154' y='256' text-anchor='middle' font-size='11' fill='#047857'>2</text><text x='248' y='256' text-anchor='middle' font-size='11' fill='#047857'>4</text><rect x='370' y='58' width='370' height='250' rx='12' fill='#eff6ff' stroke='#2563eb' stroke-width='2'/><rect x='370' y='58' width='370' height='32' rx='10' fill='#2563eb'/><text x='555' y='79' text-anchor='middle' font-size='14' font-weight='700' fill='#ffffff'>Çözüm Adımları</text><text x='386' y='114' font-size='12' fill='#1e293b'>1. Tepe noktası biçimi: g(x) = a(x − 3)² − 2</text><text x='386' y='140' font-size='12' fill='#1e293b'>2. A(1, 6) yerine yazılır: 6 = a · (1 − 3)² − 2</text><text x='386' y='166' font-size='12' fill='#1e293b'>3. 6 = 4a − 2 → 4a = 8 → a = 2</text><text x='386' y='192' font-size='13' font-weight='700' fill='#1d4ed8'>4. Kural: g(x) = 2(x − 3)² − 2</text><rect x='384' y='206' width='342' height='88' rx='10' fill='#ffffff' stroke='#93c5fd'/><text x='398' y='228' font-size='12' fill='#334155'>Kontrol: g(5) = 2 · 4 − 2 = 6 (B noktası, simetrik)</text><text x='398' y='250' font-size='12' fill='#334155'>Sıfırlar: (x − 3)² = 1 → x = 2 veya x = 4</text><text x='398' y='272' font-size='12' fill='#334155'>Sıfırların ortalaması (2 + 4) ÷ 2 = 3 = r</text><text x='398' y='288' font-size='11' fill='#64748b'>Grafik ve cebir aynı sonucu verir.</text></svg>"
+    },
+    {
+      "baslik": "Kısıtlanmış Tanım Kümelerinde Görüntü Kümesi, Bire Birlik ve Örtenlik",
+      "metin": [
+        "Geçen hafta f(x) = {us:x|2} fonksiyonunu kapalı aralıklarda incelerken tepe apsisi olan 0'ın aralıkta olup olmadığına bakmıştık. Aynı fikri şimdi her karesel fonksiyona {koyu:genelleyelim}: g(x) = a{us:(x − r)|2} + k fonksiyonu [m, n] aralığında tanımlıysa önce {koyu:r ∈ [m, n] olup olmadığı} kontrol edilir. Örneğin g: [0, 5] → ℝ, g(x) = {us:(x − 2)|2} − 1 fonksiyonunda r = 2 aralığın içindedir. Kollar yukarı baktığından en küçük değer tepe noktasında alınır: g(2) = −1. En büyük değer ise uçlardan {koyu:r'ye daha uzak olanın} görüntüsüdür: 5, 2'ye 3 birim; 0 ise 2 birim uzaklıkta olduğundan g(5) = 8 en büyük değerdir (g(0) = 3). Görüntü kümesi {koyu:[−1, 8]} olur. Yalnız uçlara bakan biri [3, 8] gibi yanlış bir sonuca ulaşırdı.",
+        "Tepe apsisi aralığın dışında kalıyorsa fonksiyon o aralıkta {koyu:yalnız artan ya da yalnız azalan} olur ve görüntü kümesi doğrudan uç değerlerden bulunur. Aynı g için [3, 6] aralığı r = 2'nin sağında kalır; fonksiyon burada artandır ve görüntü kümesi [g(3), g(6)] = {koyu:[0, 15]} aralığıdır. Kolları aşağı bakan bir örnek de inceleyelim: h: [−4, 1] → ℝ, h(x) = −{us:(x + 2)|2} + 9 için r = −2 aralıktadır, bu kez tepe noktası en büyük değeri verir: h(−2) = 9. Uçlarda h(−4) = 5 ve h(1) = 0 olduğundan en küçük değer, −2'ye daha uzak olan 1'in görüntüsü olan 0'dır. Görüntü kümesi {koyu:[0, 9]} olur.",
+        "Kısıtlama, {koyu:bire bir ve örten} karesel fonksiyonlar elde etmenin de yoludur. Bir karesel fonksiyon bir aralıkta bire birse o aralıkta yön değiştirmemelidir; yani aralık tamamen (−∞, r] içinde ya da tamamen [r, ∞) içinde kalmalıdır. Tepe apsisi aralığın iç noktasıysa r'nin iki yanında aynı uzaklıktaki noktalar aynı görüntüye gider: [0, 5] aralığında g(1) = g(3) = 0 olduğundan g bire bir değildir. Buna karşılık a > 0 için {koyu:g: [r, ∞) → [k, ∞)} ve {koyu:g: (−∞, r] → [k, ∞)} fonksiyonları hem bire bir hem örtendir. Örneğin g: [2, ∞) → [−1, ∞), g(x) = {us:(x − 2)|2} − 1 bire bir ve örtendir. Bu sonuç ilerleyen konularda bir fonksiyonun tersini tartışırken bize önemli bir hazırlık olacaktır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Fonksiyon ve Tanım Kümesi",
+          "r Aralıkta mı?",
+          "Görüntü Kümesi",
+          "Bire Bir mi?"
+        ],
+        "satirlar": [
+          [
+            "{us:(x − 2)|2} − 1, [0, 5]",
+            "Evet (r = 2, iç nokta)",
+            "[−1, 8]",
+            "Hayır: g(1) = g(3)"
+          ],
+          [
+            "{us:(x − 2)|2} − 1, [3, 6]",
+            "Hayır",
+            "[0, 15]",
+            "Evet (artan)"
+          ],
+          [
+            "{us:(x − 2)|2} − 1, [2, ∞)",
+            "Evet (uç nokta)",
+            "[−1, ∞)",
+            "Evet (artan)"
+          ],
+          [
+            "−{us:(x + 2)|2} + 9, [−4, 1]",
+            "Evet (r = −2, iç nokta)",
+            "[0, 9]",
+            "Hayır: h(−4) = h(0) = 5"
+          ],
+          [
+            "−{us:(x + 2)|2} + 9, [−6, −3]",
+            "Hayır",
+            "[−7, 8]",
+            "Evet (artan)"
+          ],
+          [
+            "2{us:(x + 1)|2}, (−∞, −1]",
+            "Evet (uç nokta)",
+            "[0, ∞)",
+            "Evet (azalan)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Uç Değerler Yetmez",
+          "metin": "Kapalı aralıkta görüntü kümesi bulunurken {koyu:üç değere} bakın: iki uç nokta ve aralığın içindeyse tepe noktası. Tepe noktası aralığın içindeyse ekstremumlardan biri mutlaka k'dır; diğeri r'ye daha uzak olan ucun görüntüsüdür."
+        },
+        {
+          "tur": "kural",
+          "baslik": "Bire Bir ve Örten Olacak Biçimde Kısıtlama",
+          "metin": "a > 0 ise g: [r, ∞) → [k, ∞) veya g: (−∞, r] → [k, ∞); a < 0 ise g: [r, ∞) → (−∞, k] veya g: (−∞, r] → (−∞, k] seçildiğinde g(x) = a{us:(x − r)|2} + k fonksiyonu bire bir ve örten olur."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 330' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='330' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='16' y='12' width='728' height='36' rx='10' fill='#1e293b'/><text x='380' y='36' text-anchor='middle' font-size='16' font-weight='700' fill='#ffffff'>Kapalı Aralıkta Görüntü Kümesi: Önce Tepe Apsisine Bak</text><rect x='20' y='58' width='330' height='260' rx='12' fill='#ffffff' stroke='#93c5fd' stroke-width='2'/><line x1='30' y1='230' x2='340' y2='230' stroke='#64748b' stroke-width='1.5'/><line x1='70' y1='64' x2='70' y2='270' stroke='#64748b' stroke-width='1.5'/><text x='332' y='223' font-size='11' fill='#64748b'>x</text><text x='76' y='74' font-size='11' fill='#64748b'>y</text><line x1='50' y1='70' x2='270' y2='70' stroke='#f59e0b' stroke-width='1' stroke-dasharray='4 4'/><line x1='50' y1='250' x2='150' y2='250' stroke='#f59e0b' stroke-width='1' stroke-dasharray='4 4'/><line x1='50' y1='70' x2='50' y2='250' stroke='#ea580c' stroke-width='5' stroke-linecap='round'/><text x='44' y='74' text-anchor='end' font-size='11' fill='#c2410c'>8</text><text x='44' y='254' text-anchor='end' font-size='11' fill='#c2410c'>−1</text><path d='M70,170 Q170,370 270,70' fill='none' stroke='#dc2626' stroke-width='3'/><circle cx='70' cy='170' r='5' fill='#1d4ed8'/><text x='78' y='164' font-size='11' fill='#1d4ed8'>g(0) = 3</text><circle cx='270' cy='70' r='5' fill='#1d4ed8'/><text x='262' y='90' text-anchor='end' font-size='11' fill='#1d4ed8'>g(5) = 8</text><circle cx='150' cy='250' r='6' fill='#c2410c'/><text x='160' y='266' font-size='11' font-weight='700' fill='#c2410c'>min: g(2) = −1</text><circle cx='110' cy='230' r='3.5' fill='#475569'/><circle cx='190' cy='230' r='3.5' fill='#475569'/><text x='190' y='222' text-anchor='middle' font-size='10' fill='#475569'>3</text><text x='110' y='222' text-anchor='middle' font-size='10' fill='#475569'>1</text><text x='94' y='110' font-size='12' font-weight='700' fill='#c2410c'>Görüntü: [−1, 8]</text><line x1='70' y1='286' x2='270' y2='286' stroke='#2563eb' stroke-width='5' stroke-linecap='round'/><text x='170' y='306' text-anchor='middle' font-size='12' font-weight='700' fill='#1d4ed8'>Tanım: [0, 5] · g(x) = (x − 2)² − 1</text><rect x='420' y='64' width='270' height='36' rx='10' fill='#1e293b'/><text x='555' y='87' text-anchor='middle' font-size='13' font-weight='700' fill='#ffffff'>Tanım aralığı [m, n] verildi</text><line x1='555' y1='100' x2='555' y2='114' stroke='#64748b' stroke-width='2'/><polygon points='555,122 550,112 560,112' fill='#64748b'/><rect x='420' y='122' width='270' height='40' rx='10' fill='#fef3c7' stroke='#f59e0b' stroke-width='2'/><text x='555' y='147' text-anchor='middle' font-size='13' font-weight='700' fill='#92400e'>Tepe apsisi r, [m, n] içinde mi?</text><line x1='480' y1='162' x2='465' y2='182' stroke='#059669' stroke-width='2'/><polygon points='461,190 459,178 469,182' fill='#059669'/><line x1='630' y1='162' x2='645' y2='182' stroke='#dc2626' stroke-width='2'/><polygon points='649,190 641,182 651,178' fill='#dc2626'/><rect x='375' y='192' width='175' height='118' rx='12' fill='#ecfdf5' stroke='#059669' stroke-width='2'/><text x='462' y='212' text-anchor='middle' font-size='13' font-weight='700' fill='#047857'>EVET</text><text x='462' y='232' text-anchor='middle' font-size='12' fill='#1e293b'>Bir ekstremum: k</text><text x='462' y='250' text-anchor='middle' font-size='12' fill='#1e293b'>Diğeri: r'ye uzak</text><text x='462' y='268' text-anchor='middle' font-size='12' fill='#1e293b'>ucun görüntüsü</text><text x='462' y='290' text-anchor='middle' font-size='11' fill='#047857'>[0, 5] → [−1, 8]</text><rect x='562' y='192' width='175' height='118' rx='12' fill='#fef2f2' stroke='#dc2626' stroke-width='2'/><text x='649' y='212' text-anchor='middle' font-size='13' font-weight='700' fill='#b91c1c'>HAYIR</text><text x='649' y='232' text-anchor='middle' font-size='12' fill='#1e293b'>Yalnız artan ya da</text><text x='649' y='250' text-anchor='middle' font-size='12' fill='#1e293b'>yalnız azalan: bire bir</text><text x='649' y='268' text-anchor='middle' font-size='12' fill='#1e293b'>Görüntü uç değerlerden</text><text x='649' y='290' text-anchor='middle' font-size='11' fill='#b91c1c'>[3, 6] → [0, 15]</text></svg>"
+    },
+    {
+      "baslik": "Genellemeleri Doğrulama, İspat ve Gerçek Yaşam Modelleri",
+      "metin": [
+        "Bu hafta pek çok {koyu:önerme} ürettik. Bir önermeyi sınamanın üç yolu vardır: {koyu:grafiksel doğrulama}, {koyu:cebirsel ispat} ve yanlışsa {koyu:karşı örnek}. Örneğin “a · k < 0 ise parabol x eksenini iki noktada keser” önermesini birkaç grafik çizerek doğrulayabiliriz; ancak her durum için kesinlik, {us:(x − r)|2} = −{kesir:k|a} > 0 denkleminin iki çözümü olduğunu göstermekle sağlanır. Buna karşılık “Parabol y eksenini her zaman (0, k) noktasında keser.” önermesi çekici görünse de {koyu:yanlıştır}: g(x) = {us:(x − 2)|2} için k = 0 iken g(0) = 4'tür. Doğru önerme, y ekseniyle kesişimin {koyu:(0, a{us:r|2} + k)} noktası olduğudur; bu nokta yalnız r = 0 iken (0, k) olur. Tek bir karşı örnek, genel bir önermeyi çürütmeye yeter; ama hiçbir sayıda örnek genel bir önermeyi kanıtlamaz.",
+        "Karesel fonksiyonlar gerçek yaşamda sıkça karşımıza çıkar. Yerden dikey olarak atılan bir topun t saniye sonraki yüksekliği h(t) = −5{us:(t − 2)|2} + 20 (metre) ile modellenmiş olsun. Tepe noktası biçimi bize hesap yapmadan şunu söyler: Top {koyu:t = 2 saniyede en yüksek noktaya, 20 m'ye} ulaşır. h(t) = 0 denkleminden {us:(t − 2)|2} = 4, yani t = 0 ya da t = 4 bulunur; top 4. saniyede yere düşer. Bu bağlamda fonksiyonun anlamlı {koyu:tanım kümesi [0, 4]}, görüntü kümesi [0, 20] olur; negatif zaman ya da yerin altındaki yükseklik anlamsızdır. Ayrıca h(1) = h(3) = 15 olması, topun 15 m yüksekliğe çıkarken ve inerken iki kez ulaştığını, yani simetrinin fiziksel anlamını gösterir.",
+        "İkinci bağlam bir {koyu:en büyük alan} problemidir. Çevresi 40 m olan dikdörtgen biçiminde bir bahçenin bir kenarına x dersek diğer kenarı 20 − x olur ve alan A(x) = x(20 − x) = −{us:x|2} + 20x olur. Tam kareye tamamlarsak A(x) = −({us:x|2} − 20x + 100) + 100 = −{us:(x − 10)|2} + 100 elde ederiz. a < 0 olduğundan tepe noktası maksimumdur: {koyu:x = 10 m iken alan en büyük değeri 100 m²'ye ulaşır}; yani en geniş bahçe karedir. Bu iki örnek, tepe noktası biçiminin gerçek yaşamda ‘en yüksek’, ‘en büyük’, ‘en az’ sorularını yanıtlamakta ne kadar {koyu:kullanışlı} olduğunu gösterir. Grafiksel yöntem hızlı bir tahmin ve sezgi sağlar, cebirsel yöntem ise kesin değeri ve her durumda geçerli olmayı garanti eder; iyi bir matematikçi ikisini birlikte kullanır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Önerme",
+          "Sınama Yolu",
+          "Sonuç"
+        ],
+        "satirlar": [
+          [
+            "a · k < 0 ise iki sıfır vardır.",
+            "Cebirsel ispat: {us:(x − r)|2} = −{kesir:k|a} > 0",
+            "Doğru"
+          ],
+          [
+            "İki sıfırın ortalaması r'dir.",
+            "Sıfırlar r ± d biçiminde; ortalama r",
+            "Doğru"
+          ],
+          [
+            "Grafik y eksenini (0, k) noktasında keser.",
+            "Karşı örnek: {us:(x − 2)|2}, g(0) = 4",
+            "Yanlış; doğrusu (0, a{us:r|2} + k)"
+          ],
+          [
+            "Yatay öteleme sıfır sayısını değiştirmez.",
+            "Sıfır sayısı yalnız a ve k'nın işaretine bağlı",
+            "Doğru"
+          ],
+          [
+            "Her karesel fonksiyon bir aralıkta bire birdir.",
+            "[r, ∞) aralığında yalnız artan ya da yalnız azalan",
+            "Doğru"
+          ],
+          [
+            "r ≠ 0 olan karesel fonksiyon tek olabilir.",
+            "g(x) + g(−x) = 2a{us:x|2} + 2a{us:r|2} + 2k ≠ 0",
+            "Yanlış; hiçbir karesel fonksiyon tek değildir"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Bağlamda Tanım Kümesi",
+          "metin": "Matematiksel model ℝ'de tanımlı olsa bile gerçek durum tanım kümesini kısıtlar. Top modelinde t ∈ [0, 4], bahçe modelinde x ∈ (0, 20) alınır. Görüntü kümesi de bu kısıtlanmış aralığa göre yeniden bulunur."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Hangi Yöntem Ne Zaman?",
+          "metin": "Bir varsayım üretmek ve yön bulmak için {koyu:grafik}; kesin değer ve genel geçerlilik için {koyu:cebirsel ispat}; bir genellemenin yanlış olduğundan şüpheleniyorsanız {koyu:karşı örnek} arayın. Gerçek yaşam problemlerinde sonucu mutlaka bağlama göre yorumlayın."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='16' y='12' width='728' height='36' rx='10' fill='#1e293b'/><text x='380' y='36' text-anchor='middle' font-size='16' font-weight='700' fill='#ffffff'>Gerçek Yaşamda Tepe Noktası: En Yüksek ve En Büyük</text><rect x='20' y='58' width='360' height='250' rx='12' fill='#ffffff' stroke='#93c5fd' stroke-width='2'/><line x1='40' y1='280' x2='340' y2='280' stroke='#64748b' stroke-width='1.5'/><line x1='60' y1='66' x2='60' y2='290' stroke='#64748b' stroke-width='1.5'/><text x='330' y='273' font-size='11' fill='#64748b'>t (s)</text><text x='66' y='96' font-size='11' fill='#64748b'>h (m)</text><line x1='60' y1='80' x2='180' y2='80' stroke='#94a3b8' stroke-width='1' stroke-dasharray='4 4'/><line x1='60' y1='130' x2='240' y2='130' stroke='#f59e0b' stroke-width='1.5' stroke-dasharray='5 4'/><text x='54' y='84' text-anchor='end' font-size='11' fill='#334155'>20</text><text x='54' y='134' text-anchor='end' font-size='11' fill='#b45309'>15</text><path d='M60,280 Q180,-120 300,280' fill='none' stroke='#2563eb' stroke-width='3'/><circle cx='180' cy='80' r='6' fill='#dc2626'/><text x='180' y='72' text-anchor='middle' font-size='11' font-weight='700' fill='#dc2626'>En yüksek: 20 m (t = 2)</text><circle cx='120' cy='130' r='4.5' fill='#b45309'/><circle cx='240' cy='130' r='4.5' fill='#b45309'/><circle cx='300' cy='280' r='5' fill='#059669'/><text x='296' y='266' text-anchor='end' font-size='11' fill='#047857'>yere iner</text><text x='120' y='296' text-anchor='middle' font-size='11' fill='#334155'>1</text><text x='180' y='296' text-anchor='middle' font-size='11' fill='#334155'>2</text><text x='240' y='296' text-anchor='middle' font-size='11' fill='#334155'>3</text><text x='300' y='296' text-anchor='middle' font-size='11' fill='#334155'>4</text><text x='200' y='196' text-anchor='middle' font-size='12' font-weight='700' fill='#1d4ed8'>h(t) = −5(t − 2)² + 20</text><text x='200' y='214' text-anchor='middle' font-size='11' fill='#334155'>Bağlamda tanım [0, 4], görüntü [0, 20]</text><rect x='400' y='58' width='340' height='250' rx='12' fill='#ecfdf5' stroke='#059669' stroke-width='2'/><text x='570' y='80' text-anchor='middle' font-size='13' font-weight='700' fill='#047857'>Çevresi 40 m Olan Dikdörtgen Bahçe</text><text x='570' y='102' text-anchor='middle' font-size='12' fill='#1e293b'>A(x) = x(20 − x) = −(x − 10)² + 100</text><text x='570' y='124' text-anchor='middle' font-size='12' font-weight='700' fill='#b91c1c'>En büyük alan 100 m² (x = 10, kare)</text><rect x='430' y='190' width='36' height='90' rx='4' fill='#86efac'/><rect x='490' y='165' width='36' height='115' rx='4' fill='#4ade80'/><rect x='550' y='160' width='36' height='120' rx='4' fill='#16a34a'/><rect x='610' y='165' width='36' height='115' rx='4' fill='#4ade80'/><rect x='670' y='190' width='36' height='90' rx='4' fill='#86efac'/><line x1='420' y1='280' x2='720' y2='280' stroke='#64748b' stroke-width='1.5'/><text x='448' y='184' text-anchor='middle' font-size='11' fill='#1e293b'>75</text><text x='508' y='159' text-anchor='middle' font-size='11' fill='#1e293b'>96</text><text x='568' y='154' text-anchor='middle' font-size='11' font-weight='700' fill='#b91c1c'>100</text><text x='628' y='159' text-anchor='middle' font-size='11' fill='#1e293b'>96</text><text x='688' y='184' text-anchor='middle' font-size='11' fill='#1e293b'>75</text><text x='448' y='296' text-anchor='middle' font-size='11' fill='#334155'>x = 5</text><text x='508' y='296' text-anchor='middle' font-size='11' fill='#334155'>x = 8</text><text x='568' y='296' text-anchor='middle' font-size='11' fill='#334155'>x = 10</text><text x='628' y='296' text-anchor='middle' font-size='11' fill='#334155'>x = 12</text><text x='688' y='296' text-anchor='middle' font-size='11' fill='#334155'>x = 15</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "g: ℝ → ℝ, g(x) = {us:(x + 4)|2} − 1 fonksiyonunun referans fonksiyondan nasıl elde edildiğini açıklayınız; tepe noktasını, görüntü kümesini, sıfırlarını, işaretini, artanlık-azalanlık aralıklarını ve teklik-çiftlik durumunu belirleyiniz.",
+      "cevap": "{koyu:1. adım (dönüşüm):} x + 4 = x − (−4) olduğundan r = −4, a = 1, k = −1'dir. Referans parabol 4 birim sola ve 1 birim aşağı ötelenmiştir.\n{koyu:2. adım (tepe ve görüntü):} Tepe noktası T(−4, −1). a = 1 > 0 olduğundan bu bir minimum noktasıdır; minimum değer −1, görüntü kümesi [−1, ∞).\n{koyu:3. adım (sıfırlar):} {us:(x + 4)|2} = 1 → x + 4 = 1 veya x + 4 = −1 → x = −3 veya x = −5. Sıfırların ortalaması −4 = r. ✓\n{koyu:4. adım (işaret):} a > 0 olduğundan sıfırlar arasında negatif: x ∈ (−5, −3) için g(x) < 0; x < −5 veya x > −3 için g(x) > 0.\n{koyu:5. adım (monotonluk):} (−∞, −4] aralığında azalan, [−4, ∞) aralığında artan.\n{koyu:6. adım (teklik-çiftlik):} g(1) = 25 − 1 = 24, g(−1) = 9 − 1 = 8 olduğundan g(−1) ≠ g(1): çift değil. g(0) = 15 ≠ 0 olduğundan tek de değil. Grafik x = −4 doğrusuna göre simetriktir.",
+      "ipucu": "Parantezin içini sıfır yapan x değeri tepe apsisidir: x + 4 = 0 → x = −4."
+    },
+    {
+      "soru": "g(x) = −3{us:(x − 1)|2} + 12 fonksiyonunun grafiğini referans parabolden elde etmek için yapılması gereken dönüşümleri sırasıyla yazınız. Grafiğin eksenleri kestiği noktaları ve görüntü kümesini bulunuz.",
+      "cevap": "{koyu:1. adım (dönüşümler):} {us:x|2} → {us:(x − 1)|2}: 1 birim sağa öteleme. → 3{us:(x − 1)|2}: 3 kat dikey uzama (daralma). → −3{us:(x − 1)|2}: x eksenine göre yansıma. → −3{us:(x − 1)|2} + 12: 12 birim yukarı öteleme.\n{koyu:2. adım (tepe):} T(1, 12); a = −3 < 0 olduğundan maksimum noktasıdır. Görüntü kümesi (−∞, 12].\n{koyu:3. adım (x eksenini kestiği noktalar):} −3{us:(x − 1)|2} + 12 = 0 → {us:(x − 1)|2} = 4 → x − 1 = ±2 → x = −1 veya x = 3. Noktalar (−1, 0) ve (3, 0).\n{koyu:4. adım (y eksenini kestiği nokta):} g(0) = −3 · 1 + 12 = 9. Nokta (0, 9).\n{koyu:Kontrol:} a ile k zıt işaretli (a < 0, k > 0) olduğundan iki sıfır beklenir. ✓ (0, 9) noktasının x = 1 doğrusuna göre simetriği (2, 9)'dur: g(2) = −3 + 12 = 9. ✓",
+      "ipucu": "Önce yatay öteleme, sonra a ile çarpma, en son k ekleme sırasını izleyin."
+    },
+    {
+      "soru": "Tepe noktası T(−1, 4) olan bir parabol (1, 0) noktasından geçmektedir. Bu parabolün belirttiği karesel fonksiyonun kuralını bulunuz; diğer sıfırını ve fonksiyonun artan olduğu aralığı yazınız.",
+      "cevap": "{koyu:1. adım:} r = −1, k = 4 olduğundan g(x) = a · {us:(x + 1)|2} + 4 yazılır.\n{koyu:2. adım:} (1, 0) noktası grafikte olduğundan 0 = a · {us:(1 + 1)|2} + 4 → 4a = −4 → {koyu:a = −1}. Kural: g(x) = −{us:(x + 1)|2} + 4.\n{koyu:3. adım (diğer sıfır):} Sıfırlar x = −1 doğrusuna göre simetriktir. 1 sayısı −1'e 2 birim uzaktır; diğer sıfır −1 − 2 = {koyu:−3}. Kontrol: g(−3) = −4 + 4 = 0. ✓\n{koyu:4. adım (artanlık):} a < 0 olduğundan fonksiyon (−∞, −1] aralığında artan, [−1, ∞) aralığında azalandır.\n{koyu:Ek bilgi:} Açık biçim −{us:x|2} − 2x + 3 olup y eksenini (0, 3) noktasında keser.",
+      "ipucu": "Tepe noktasını kurala yerleştirin; a'yı verilen noktadan bulun. Diğer sıfır için simetriyi kullanın."
+    },
+    {
+      "soru": "g: [−1, 4] → ℝ, g(x) = 2{us:(x − 1)|2} − 3 fonksiyonunun görüntü kümesini bulunuz. Fonksiyon bire bir midir? Bire bir değilse, tanım kümesini bire bir ve örten bir fonksiyon elde edilecek biçimde kısıtlayınız.",
+      "cevap": "{koyu:1. adım:} Tepe apsisi r = 1, [−1, 4] aralığının içindedir. a = 2 > 0 olduğundan en küçük değer g(1) = −3'tür.\n{koyu:2. adım:} Uç değerler: g(−1) = 2 · 4 − 3 = 5, g(4) = 2 · 9 − 3 = 15. 4, 1'e daha uzak olduğundan en büyük değer 15'tir.\n{koyu:3. adım:} Görüntü kümesi {koyu:[−3, 15]}.\n{koyu:4. adım (bire birlik):} g(0) = 2 − 3 = −1 ve g(2) = 2 − 3 = −1 olduğundan iki farklı eleman aynı görüntüye gider; fonksiyon {koyu:bire bir değildir}.\n{koyu:5. adım (kısıtlama):} Tanım kümesi tepe apsisinin bir yanında kalmalıdır. g: [1, 4] → [−3, 15] seçilirse fonksiyon bu aralıkta artan olduğundan bire bir, görüntü kümesi değer kümesine eşit olduğundan örtendir. (Alternatif: g: [−1, 1] → [−3, 5].)",
+      "ipucu": "Uç noktalara bakmadan önce r = 1'in aralığın içinde olup olmadığını kontrol edin."
+    },
+    {
+      "soru": "a) g(x) = a{us:(x − r)|2} + k fonksiyonu için her d gerçek sayısında g(r − d) = g(r + d) olduğunu ispatlayınız. b) g(x) = {us:(x − 3)|2} + c fonksiyonunda g(−1) = g(m) ve m ≠ −1 ise m kaçtır? c) Sıfırları 2 ve 10, minimum değeri −16 olan karesel fonksiyonu yazınız.",
+      "cevap": "{koyu:a)} g(r − d) = a · {us:(r − d − r)|2} + k = a · {us:(−d)|2} + k = a{us:d|2} + k. g(r + d) = a · {us:(r + d − r)|2} + k = a{us:d|2} + k. İki ifade eşit olduğundan g(r − d) = g(r + d). ∎ Bu, grafiğin x = r doğrusuna göre simetrik olduğunun cebirsel ispatıdır.\n{koyu:b)} r = 3 olduğundan aynı görüntüye sahip iki farklı noktanın ortalaması 3 olmalıdır: {kesir:−1 + m|2} = 3 → m = {koyu:7}. Kontrol: g(−1) = 16 + c, g(7) = 16 + c. ✓\n{koyu:c)} r = {kesir:2 + 10|2} = 6, minimum değer k = −16 olduğundan g(x) = a{us:(x − 6)|2} − 16. g(2) = 0 → 16a − 16 = 0 → a = 1. Fonksiyon g(x) = {us:(x − 6)|2} − 16. Kontrol: g(10) = 16 − 16 = 0. ✓ a = 1 > 0 olduğu için −16 gerçekten minimum değerdir.",
+      "ipucu": "Simetri önermesini b ve c şıklarında hazır bir araç olarak kullanın: aynı yükseklikteki noktaların ortası tepe apsisidir."
+    },
+    {
+      "soru": "Yerden dikey olarak atılan bir topun t saniye sonraki yüksekliği h(t) = −5{us:(t − 2)|2} + 20 metredir. a) Top en fazla kaç metre yükselir ve bu yüksekliğe kaçıncı saniyede ulaşır? b) Top kaçıncı saniyede yere düşer? c) Top hangi anlarda 15 m yüksekliktedir? d) Bu bağlamda fonksiyonun tanım ve görüntü kümesi nedir?",
+      "cevap": "{koyu:a)} a = −5 < 0 olduğundan tepe noktası T(2, 20) maksimumdur. Top {koyu:t = 2 s'de 20 m'ye} ulaşır.\n{koyu:b)} h(t) = 0 → 5{us:(t − 2)|2} = 20 → {us:(t − 2)|2} = 4 → t − 2 = ±2 → t = 0 veya t = 4. t = 0 atış anıdır; top {koyu:4. saniyede} yere düşer.\n{koyu:c)} −5{us:(t − 2)|2} + 20 = 15 → {us:(t − 2)|2} = 1 → t = 1 veya t = 3. Top 15 m'ye çıkarken {koyu:1. saniyede}, inerken {koyu:3. saniyede} ulaşır; iki anın ortalaması 2'dir (simetri).\n{koyu:d)} Zaman negatif olamaz ve top yerin altına inmez: tanım kümesi {koyu:[0, 4]}, görüntü kümesi {koyu:[0, 20]}. Bu aralıkta fonksiyon [0, 2] aralığında artan (top yükselir), [2, 4] aralığında azalandır (top düşer).",
+      "ipucu": "Tepe noktası biçimi en yüksek noktayı doğrudan verir; yere düşme anı için h(t) = 0 denklemini çözün."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "g(x) = {us:(x − 5)|2} + 2 fonksiyonunun grafiğinin tepe noktası aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "(−5, 2)",
+        "(5, 2)",
+        "(2, 5)",
+        "(5, −2)"
+      ],
+      "dogru": 1,
+      "aciklama": "Parantezin içini sıfır yapan değer x = 5'tir; bu tepe apsisidir. Tepe ordinatı k = 2'dir. Tepe noktası T(5, 2) olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "f(x) = {us:x|2} fonksiyonunun grafiği 3 birim sola ve 4 birim aşağı ötelenirse elde edilen grafik hangi fonksiyona aittir?",
+      "secenekler": [
+        "g(x) = {us:(x − 3)|2} − 4",
+        "g(x) = {us:(x + 3)|2} + 4",
+        "g(x) = {us:(x + 3)|2} − 4",
+        "g(x) = {us:(x − 4)|2} + 3"
+      ],
+      "dogru": 2,
+      "aciklama": "Sola öteleme f(x + 3), aşağı öteleme sonuca −4 eklemektir: g(x) = {us:(x + 3)|2} − 4. Tepe noktası (−3, −4) olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "g: ℝ → ℝ, g(x) = −2{us:(x + 1)|2} + 8 fonksiyonu ile ilgili aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Görüntü kümesi [8, ∞) aralığıdır.",
+        "[−1, ∞) aralığında azalandır.",
+        "Sıfırları −1 ve 1'dir.",
+        "Çift fonksiyondur."
+      ],
+      "dogru": 1,
+      "aciklama": "a = −2 < 0 olduğundan fonksiyon tepe apsisi −1'in solunda artan, sağında yani [−1, ∞) aralığında azalandır. Görüntü kümesi (−∞, 8] olduğundan A yanlış; {us:(x + 1)|2} = 4 denkleminden sıfırlar 1 ve −3 olduğundan C yanlış; r = −1 ≠ 0 olduğundan fonksiyon çift değildir, D yanlış."
+    },
+    {
+      "tur": "coktan",
+      "soru": "g(x) = a · {us:(x − r)|2} + k fonksiyonunun sıfırları 1 ve 7, minimum değeri −18 ise a kaçtır?",
+      "secenekler": [
+        "−2",
+        "1",
+        "3",
+        "2"
+      ],
+      "dogru": 3,
+      "aciklama": "Tepe apsisi sıfırların ortalamasıdır: r = {kesir:1 + 7|2} = 4. Minimum değer k = −18. g(7) = 0 koşulundan a · {us:3|2} − 18 = 0 → 9a = 18 → a = 2. Minimum değer olduğu için a > 0 olmalıdır; bu da sonuçla uyumludur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "g(x) = {us:(x + 5)|2} fonksiyonunun grafiği, referans parabolün 5 birim sağa ötelenmesiyle elde edilir.",
+          "dogru": false,
+          "aciklama": "x + 5 = 0 için x = −5 olduğundan tepe noktası (−5, 0)'dır; grafik 5 birim sola ötelenmiştir."
+        },
+        {
+          "metin": "g(x) = 3{us:(x − 2)|2} − 7 fonksiyonunun görüntü kümesi [−7, ∞) aralığıdır.",
+          "dogru": true,
+          "aciklama": "a = 3 > 0 olduğundan tepe noktası (2, −7) minimum noktasıdır; görüntü kümesi [−7, ∞) olur."
+        },
+        {
+          "metin": "g(x) = {us:(x − 1)|2} fonksiyonu çift fonksiyondur.",
+          "dogru": false,
+          "aciklama": "g(−1) = 4, g(1) = 0 olduğundan g(−x) = g(x) sağlanmaz. Grafik y eksenine değil x = 1 doğrusuna göre simetriktir."
+        },
+        {
+          "metin": "g(x) = −{us:(x − 3)|2} + 2 fonksiyonu (−∞, 3] aralığında artandır.",
+          "dogru": true,
+          "aciklama": "a < 0 olduğundan kollar aşağı bakar; fonksiyon tepe apsisi 3'e kadar artar, sonra azalır."
+        },
+        {
+          "metin": "g(x) = 2{us:(x − 4)|2} + 5 fonksiyonunun grafiği y eksenini (0, 5) noktasında keser.",
+          "dogru": false,
+          "aciklama": "g(0) = 2 · 16 + 5 = 37 olduğundan kesişim noktası (0, 37)'dir. (0, k) yalnız r = 0 iken geçerlidir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki karesel fonksiyonları nitel özellikleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "g(x) = {us:(x − 4)|2}",
+          "Tepe noktası (4, 0), [4, ∞) aralığında artan"
+        ],
+        [
+          "g(x) = {us:(x + 4)|2}",
+          "Referans parabolün 4 birim sola ötelenmişi, tepe noktası (−4, 0)"
+        ],
+        [
+          "g(x) = {us:(x − 1)|2} − 4",
+          "Sıfırları −1 ve 3, minimum değeri −4"
+        ],
+        [
+          "g(x) = −{us:(x − 1)|2} + 4",
+          "Sıfırları −1 ve 3, maksimum değeri 4"
+        ],
+        [
+          "g(x) = 2{us:(x + 1)|2} + 3",
+          "Sıfırı yok, görüntü kümesi [3, ∞)"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "g(x) = {us:(x + 4)|2} fonksiyonunun grafiği, referans parabolün 4 birim ___ ötelenmesiyle elde edilir.",
+          "cevap": "sola"
+        },
+        {
+          "metin": "g(x) = a{us:(x − r)|2} + k fonksiyonunun grafiğinde simetri ekseni x = r doğrusudur; r, tepe noktasının ___ olur.",
+          "cevap": "apsisi"
+        },
+        {
+          "metin": "g(x) = a{us:(x − r)|2} + k fonksiyonunda a < 0 ise tepe noktası bir ___ noktasıdır.",
+          "cevap": "maksimum"
+        },
+        {
+          "metin": "r ≠ 0 ise g(x) = {us:(x − r)|2} fonksiyonu ne tek ne de ___ fonksiyondur.",
+          "cevap": "çift"
+        },
+        {
+          "metin": "Tepe noktası x ekseninin altında olan ve kolları yukarı bakan bir parabolün ___ sıfırı vardır.",
+          "cevap": "iki"
+        }
+      ],
+      "kelimeler": [
+        "sola",
+        "apsisi",
+        "maksimum",
+        "çift",
+        "iki"
+      ],
+      "fazla": [
+        "sağa",
+        "minimum"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "g: ℝ → ℝ, g(x) = 2{us:(x − 3)|2} − 8 fonksiyonunun referans fonksiyondan nasıl elde edildiğini açıklayınız; tepe noktasını, görüntü kümesini, eksenleri kestiği noktaları, işaretini, artanlık-azalanlık aralıklarını ve teklik-çiftlik durumunu belirleyiniz. Son olarak fonksiyonun tanım ve değer kümesini, bire bir ve örten olacak biçimde kısıtlayınız.",
+      "ipuclari": [
+        "1. adım: Fonksiyonu a · f(x − r) + k biçiminde düşünüp a, r ve k değerlerini belirleyin; dönüşümleri sırasıyla (yatay öteleme, çarpma, dikey öteleme) yazın.",
+        "2. adım: Tepe noktasını T(r, k) olarak yazın; a'nın işaretinden ekstremumun türünü ve görüntü kümesini bulun.",
+        "3. adım: g(x) = 0 denklemini çözerek sıfırları, g(0) değerini hesaplayarak y eksenini kestiği noktayı bulun; a'nın işaretine göre işaret aralıklarını yazın.",
+        "4. adım: g(1) ile g(−1) değerlerini karşılaştırarak çiftliği, g(0) değerine bakarak tekliği kontrol edin; bire birlik için tanım kümesini tepe apsisinin bir yanına kısıtlayın."
+      ],
+      "cevap": "{koyu:Dönüşüm:} a = 2, r = 3, k = −8. Referans parabol 3 birim sağa ötelenir, görüntüler 2 ile çarpılarak daraltılır, ardından 8 birim aşağı ötelenir.\n{koyu:Tepe ve görüntü:} T(3, −8); a > 0 olduğundan minimum noktasıdır. Minimum değer −8, maksimum yok. Görüntü kümesi [−8, ∞).\n{koyu:Eksenleri kestiği noktalar:} 2{us:(x − 3)|2} = 8 → {us:(x − 3)|2} = 4 → x = 1 veya x = 5; noktalar (1, 0) ve (5, 0). Sıfırların ortalaması 3 = r. ✓ g(0) = 2 · 9 − 8 = 10; y eksenini (0, 10) noktasında keser.\n{koyu:İşaret:} x ∈ (1, 5) için g(x) < 0; x < 1 veya x > 5 için g(x) > 0. Kontrol: g(3) = −8 < 0, g(6) = 10 > 0.\n{koyu:Artanlık-azalanlık:} (−∞, 3] aralığında azalan, [3, ∞) aralığında artan.\n{koyu:Teklik-çiftlik:} g(1) = 0, g(−1) = 2 · 16 − 8 = 24 olduğundan g(−1) ≠ g(1): çift değil. g(0) = 10 ≠ 0 olduğundan tek değil. Grafik x = 3 doğrusuna göre simetriktir.\n{koyu:Bire birlik ve örtenlik:} ℝ → ℝ olarak g(1) = g(5) = 0 olduğundan bire bir değil, −8'den küçük sayılar görüntü kümesinde olmadığından örten değildir. g: [3, ∞) → [−8, ∞) (ya da g: (−∞, 3] → [−8, ∞)) seçilirse fonksiyon bu aralıkta yalnız artan (ya da yalnız azalan) olduğundan bire bir, görüntü kümesi değer kümesine eşit olduğundan örten olur."
+    }
+  ]
+}

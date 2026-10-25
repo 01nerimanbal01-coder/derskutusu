@@ -1,0 +1,608 @@
+{
+  "ad": "9-kimya-16",
+  "sinif": 9,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 16,
+  "tarih": "4-8 Ocak 2027",
+  "yayin_tarihi": "2027-01-04",
+  "unite": "2. TEMA: ÇEŞİTLİLİK",
+  "konu": "Kovalent Bağ: Gözlemlenmemiş Durumlara İlişkin Tahminler, Elektronegatiflik, Polar ve Apolar Kovalent Bağ ve Tahminlerin Geçerliliğinin Sorgulanması",
+  "ciktilar": [
+    "KİM.9.2.3. Kovalent bağ oluşumunu bilimsel gözleme dayalı tahmin edebilme.",
+    "KİM.9.2.3.ç. Ametal atomları arasındaki etkileşimler ile ilgili gözlemlenmemiş durumlara ilişkin tahminde bulunur.",
+    "KİM.9.2.3.d. Tahminlerinin geçerliliğini sorgular."
+  ],
+  "giris": "Geçen hafta ölçülmüş verilerden yola çıkarak bir maddedeki bağ türünü tahmin etmeyi öğrendik. Bu hafta bir adım daha ileri gidiyoruz: {koyu:Hiç ölçmediğimiz} bir kovalent bağın uzunluğunu ve sağlamlığını, bilinen verilerdeki örüntülerden öngörmeye çalışacağız. Tahminlerimizin bazen şaşırtıcı biçimde tuttuğunu, bazen de belirgin biçimde saptığını göreceğiz. İşte bu sapmalar bizi {koyu:elektronegatiflik}, {koyu:polar ve apolar kovalent bağ} kavramlarına götürecek. Son olarak bir bilim insanı gibi davranıp kendi tahminlerimizin {koyu:geçerliliğini sorgulayacak}, aykırı verilerin bilimsel bilgiyi nasıl geliştirdiğini inceleyeceğiz.",
+  "ozet": [
+    "{koyu:Gözlemlenmemiş duruma tahmin:} Ölçülmüş bağ verilerindeki örüntüler kullanılarak henüz ölçülmemiş bir bağın uzunluğu ve enerjisi öngörülebilir; örneğin Br–Cl bağ uzunluğu, Cl–Cl ve Br–Br bağlarının yarılarının toplamından yaklaşık 214 pm olarak tahmin edilir.",
+    "{koyu:Elektronegatiflik:} Bir atomun kovalent bağdaki ortak elektron çiftini kendine çekme yeteneğidir; Pauling ölçeğinde en büyük değer flora (4,0) aittir.",
+    "{koyu:Apolar ve polar bağ:} Özdeş atomlar arasında ortak çift eşit paylaşılır ve bağ apolardır; farklı ametaller arasında ortak çift daha elektronegatif atoma kayar, atomlarda kısmi yükler (δ+ ve δ−) oluşur ve bağ polardır.",
+    "{koyu:Elektronegatiflik farkı:} ΔEN büyüdükçe bağın polarlığı artar; polar bağlar, basit ortalamayla tahmin edilenden daha kısa ve daha sağlamdır (HF, HCl, HBr, HI verileri bu örüntüyü gösterir).",
+    "{koyu:Tahmin–sınama döngüsü:} Bilimsel tahmin gerekçeli ve sınanabilir olmalıdır; gözlem → örüntü → hipotez → tahmin → sınama → karar adımlarıyla ilerlenir.",
+    "{koyu:Geçerliliği sorgulama:} F–F bağının beklenenden zayıf olması ya da grafitin elektriği iletmesi gibi aykırı veriler, genellemelerin sınırlarını gösterir ve tahminlerin düzeltilmesini sağlar."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Bilinen Verilerden Gözlemlenmemiş Bağlara Tahmin: Toplanabilirlik Yaklaşımı",
+      "metin": [
+        "Bilimin en güçlü yanlarından biri, yalnızca gördüğünü açıklamakla kalmayıp {koyu:henüz gözlemlenmemiş durumlar} hakkında öngörüde bulunabilmesidir. Geçen hafta H–H, Cl–Cl, Br–Br ve I–I gibi bağların ölçülmüş uzunluklarını ve enerjilerini inceledik. Peki hiç ölçmediğimiz, örneğin bromla klor arasında oluşan Br–Cl bağının uzunluğu ne kadardır? Bu soruya laboratuvara girmeden mantıklı bir cevap verebilmek için önce bilinen verilerdeki düzeni fark etmemiz gerekir. Aynı iki atomdan oluşan bir molekülde bağ uzunluğunun yarısı, o atomun {koyu:kovalent yarıçapı} olarak kabul edilir. H–H bağı yaklaşık 74 pm olduğundan hidrojenin kovalent yarıçapı yaklaşık 37 pm, Cl–Cl bağı 199 pm olduğundan klorun kovalent yarıçapı yaklaşık 99,5 pm'dir.",
+        "Buradan basit bir {koyu:hipotez} kurabiliriz: İki farklı atom arasındaki bağın uzunluğu, iki atomun kovalent yarıçaplarının toplamına yaklaşık eşittir. Buna {koyu:toplanabilirlik yaklaşımı} diyelim. Br–Br bağı 228 pm olduğundan bromun yarıçapı 114 pm'dir; o hâlde Br–Cl bağı için tahminimiz 114 + 99,5 = 213,5 pm olur. Ölçülen değer yaklaşık 214 pm'dir; tahmin şaşırtıcı derecede tutmuştur. Aynı düşünceyi bağ enerjisine de uygulayabiliriz: Br–Cl bağının enerjisi, Cl–Cl (242 kJ/mol) ve Br–Br (193 kJ/mol) bağ enerjilerinin ortalamasına, yani yaklaşık 217,5 kJ/mol'e yakın olmalıdır. Ölçülen değer yaklaşık 218 kJ/mol'dür. I–Cl bağında da uzunluk tahmini (66,5 + 99,5... yani 133 + 99,5 = 232,5 pm) ölçülen 232 pm ile neredeyse aynıdır.",
+        "Ancak aynı yöntemi H–Cl bağına uyguladığımızda durum değişir. Tahmini uzunluk 37 + 99,5 ≈ 137 pm iken ölçülen uzunluk yaklaşık 127 pm'dir. Tahmini bağ enerjisi (436 + 242) ÷ 2 = 339 kJ/mol iken ölçülen değer yaklaşık 431 kJ/mol'dür. H–F bağında sapma daha da büyüktür. Bu noktada iyi bir bilim insanı ne yapar? Verileri görmezden gelmez; {koyu:tahminin neden tutmadığını sorgular}. Br–Cl ve I–Cl bağlarında iki atom birbirine oldukça benzerken H–Cl ve H–F bağlarında atomlar ortak elektronları çok farklı güçte çekiyor olabilir. Bu yeni fikir, bir sonraki bölümde inceleyeceğimiz {koyu:elektronegatiflik} kavramına kapı açar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Bağ",
+          "Tahmini Uzunluk (pm)",
+          "Ölçülen Uzunluk (pm)",
+          "Tahmini Enerji (kJ/mol)",
+          "Ölçülen Enerji (kJ/mol)",
+          "Değerlendirme"
+        ],
+        "satirlar": [
+          [
+            "Br–Cl",
+            "213,5",
+            "≈214",
+            "217,5",
+            "≈218",
+            "Tahmin tuttu"
+          ],
+          [
+            "I–Cl",
+            "232,5",
+            "≈232",
+            "196,5",
+            "≈208",
+            "Uzunluk tuttu, enerji biraz büyük"
+          ],
+          [
+            "H–Br",
+            "151",
+            "≈141",
+            "314,5",
+            "≈366",
+            "Belirgin sapma"
+          ],
+          [
+            "H–Cl",
+            "≈137",
+            "≈127",
+            "339",
+            "≈431",
+            "Belirgin sapma"
+          ],
+          [
+            "H–F",
+            "108",
+            "≈92",
+            "297",
+            "≈567",
+            "Çok büyük sapma"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Kovalent Yarıçap",
+          "metin": "Aynı iki atom arasındaki kovalent bağ uzunluğunun yarısıdır. Örneğin Cl–Cl bağı yaklaşık 199 pm olduğundan klorun kovalent yarıçapı yaklaşık 99,5 pm'dir. İki farklı atom arasındaki bağ uzunluğu, ilk tahmin olarak iki yarıçapın toplamıyla bulunur."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Ortalama ile Hızlı Tahmin",
+          "metin": "A–B bağının enerjisini tahmin etmek için A–A ve B–B bağ enerjilerinin ortalamasını alabilirsin: {kesir:E(A–A) + E(B–B)|2}. Bu yalnızca bir başlangıç tahminidir; sonucu mutlaka ölçülmüş veriyle karşılaştır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='36' rx='8' fill='#1d4ed8'/><text x='380' y='38' text-anchor='middle' fill='#ffffff' font-size='15' font-weight='bold'>TOPLANABİLİRLİK TAHMİNİ: BAĞ UZUNLUĞU (pm)</text><line x1='40' y1='270' x2='580' y2='270' stroke='#475569' stroke-width='2'/><rect x='60' y='99' width='40' height='171' rx='4' fill='#93c5fd'/><rect x='104' y='99' width='40' height='171' rx='4' fill='#1d4ed8'/><text x='80' y='93' text-anchor='middle' font-size='11' fill='#1e293b'>213,5</text><text x='124' y='93' text-anchor='middle' font-size='11' fill='#1e293b'>214</text><text x='102' y='290' text-anchor='middle' font-size='13' font-weight='bold' fill='#0f172a'>Br–Cl</text><text x='102' y='306' text-anchor='middle' font-size='11' fill='#15803d'>Tahmin tuttu</text><rect x='200' y='84' width='40' height='186' rx='4' fill='#93c5fd'/><rect x='244' y='84' width='40' height='186' rx='4' fill='#1d4ed8'/><text x='220' y='78' text-anchor='middle' font-size='11' fill='#1e293b'>232,5</text><text x='264' y='78' text-anchor='middle' font-size='11' fill='#1e293b'>232</text><text x='242' y='290' text-anchor='middle' font-size='13' font-weight='bold' fill='#0f172a'>I–Cl</text><text x='242' y='306' text-anchor='middle' font-size='11' fill='#15803d'>Tahmin tuttu</text><rect x='340' y='160' width='40' height='110' rx='4' fill='#93c5fd'/><rect x='384' y='168' width='40' height='102' rx='4' fill='#1d4ed8'/><text x='360' y='154' text-anchor='middle' font-size='11' fill='#1e293b'>137</text><text x='404' y='162' text-anchor='middle' font-size='11' fill='#1e293b'>127</text><text x='382' y='290' text-anchor='middle' font-size='13' font-weight='bold' fill='#0f172a'>H–Cl</text><text x='382' y='306' text-anchor='middle' font-size='11' fill='#b91c1c'>Ölçülen daha kısa</text><rect x='480' y='184' width='40' height='86' rx='4' fill='#93c5fd'/><rect x='524' y='196' width='40' height='74' rx='4' fill='#1d4ed8'/><text x='500' y='178' text-anchor='middle' font-size='11' fill='#1e293b'>108</text><text x='544' y='190' text-anchor='middle' font-size='11' fill='#1e293b'>92</text><text x='522' y='290' text-anchor='middle' font-size='13' font-weight='bold' fill='#0f172a'>H–F</text><text x='522' y='306' text-anchor='middle' font-size='11' fill='#b91c1c'>Ölçülen daha kısa</text><rect x='596' y='64' width='148' height='222' rx='10' fill='#eff6ff' stroke='#2563eb' stroke-width='1.5'/><rect x='610' y='80' width='18' height='14' rx='3' fill='#93c5fd'/><text x='634' y='92' font-size='12' fill='#1e293b'>Tahmin</text><rect x='610' y='102' width='18' height='14' rx='3' fill='#1d4ed8'/><text x='634' y='114' font-size='12' fill='#1e293b'>Ölçülen</text><text x='606' y='142' font-size='12' font-weight='bold' fill='#1e3a8a'>Tahmin = r(A) + r(B)</text><text x='606' y='164' font-size='11' fill='#1e293b'>H: 37   F: 71</text><text x='606' y='182' font-size='11' fill='#1e293b'>Cl: 99,5   Br: 114</text><text x='606' y='200' font-size='11' fill='#1e293b'>I: 133 (pm)</text><text x='606' y='232' font-size='11' fill='#b91c1c'>Farklı EN'li atomlarda</text><text x='606' y='250' font-size='11' fill='#b91c1c'>bağ beklenenden kısa</text><text x='606' y='268' font-size='11' fill='#b91c1c'>ve daha sağlamdır.</text></svg>"
+    },
+    {
+      "baslik": "Elektronegatiflik ve Ortak Elektron Çiftinin Paylaşımı: Polar ve Apolar Kovalent Bağ",
+      "metin": [
+        "Bir atomun kovalent bağdaki {koyu:ortak elektron çiftini kendine çekme yeteneğine} {koyu:elektronegatiflik} denir. Amerikalı kimyager Linus Pauling, 1932 yılında bağ enerjisi verilerindeki sapmalardan yola çıkarak elektronegatiflik ölçeğini geliştirmiştir; yani bu kavram tam da bizim bir önceki bölümde yaşadığımız “tahmin tutmadı, neden?” sorusundan doğmuştur. Pauling ölçeğinde en elektronegatif element flordur (4,0); onu oksijen (3,5), azot ve klor (3,0) izler. Periyodik sistemde genel olarak aynı periyotta soldan sağa gidildikçe elektronegatiflik {koyu:artar}, aynı grupta yukarıdan aşağıya inildikçe {koyu:azalır}. Elektronegatiflik doğrudan ölçülen bir büyüklük değildir; ölçülen bağ enerjileri gibi verilerden türetilmiş, karşılaştırma yapmaya yarayan bir değerdir.",
+        "Bağ yapan iki atom {koyu:aynı elementin} atomlarıysa (H–H, Cl–Cl, O=O, N≡N) ortak çifti eşit güçte çekerler. Elektronlar iki çekirdek arasında simetrik olarak dağılır; molekülün bir ucu diğerinden daha negatif olmaz. Bu tür bağa {koyu:apolar kovalent bağ} denir. Bağ yapan atomlar {koyu:farklı ametallerse} (H–Cl, O–H, N–H, C–O) daha elektronegatif olan atom ortak çifti kendine doğru çeker. Elektron yoğunluğu bu atomun çevresinde artar ve atom {koyu:kısmi negatif yük} (δ−) kazanır; diğer atomun çevresinde elektron yoğunluğu azalır ve o atom {koyu:kısmi pozitif yük} (δ+) taşır. Bu tür bağa {koyu:polar kovalent bağ} denir. Örneğin H–Cl bağında klor (3,0) hidrojenden (2,1) daha elektronegatif olduğu için gösterim {us:H|δ+}–{us:Cl|δ−} şeklindedir.",
+        "Kısmi yükler, iyonik bağdaki tam yüklerden farklıdır. NaCl'de sodyum bir elektronunu tamamen vererek {us:Na|+} iyonu olur; H–Cl'de ise hidrojen elektronunu tamamen kaybetmez, ortak çift yalnızca klora daha yakın bulunur. Pauling'in açıklamasına göre polar bağda δ+ ve δ− yüklü uçlar arasında {koyu:ek bir elektrostatik çekim} oluşur. Bu ek çekim atomları birbirine biraz daha yaklaştırır ve bağı kırmayı zorlaştırır. Böylece birinci bölümdeki şaşırtıcı veriler açıklanmış olur: H–Cl bağının toplanabilirlik tahmininden {koyu:daha kısa} ve {koyu:daha sağlam} çıkması, bağın polar olmasıyla ilişkilidir. Br–Cl gibi elektronegatiflikleri birbirine yakın atomlarda bu ek etki çok küçük olduğundan basit tahmin iyi sonuç verir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Element",
+          "Elektronegatiflik (Pauling, yaklaşık)",
+          "Periyodik Sistemdeki Yeri",
+          "Bağlarında Genellikle Taşıdığı Kısmi Yük"
+        ],
+        "satirlar": [
+          [
+            "F",
+            "4,0",
+            "2. periyot, 17. grup",
+            "Her zaman δ−"
+          ],
+          [
+            "O",
+            "3,5",
+            "2. periyot, 16. grup",
+            "F dışındaki atomlarla δ−"
+          ],
+          [
+            "N",
+            "3,0",
+            "2. periyot, 15. grup",
+            "H ve C ile δ−"
+          ],
+          [
+            "Cl",
+            "3,0",
+            "3. periyot, 17. grup",
+            "H, C, Br, I ile δ−"
+          ],
+          [
+            "Br",
+            "2,8",
+            "4. periyot, 17. grup",
+            "H ile δ−, Cl ile δ+"
+          ],
+          [
+            "C / S / I",
+            "2,5",
+            "14. / 16. / 17. grup",
+            "H ile δ−, O ve N ile δ+"
+          ],
+          [
+            "H / P",
+            "2,1",
+            "1. / 15. grup",
+            "Çoğu ametalle δ+"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Elektronegatiflik",
+          "metin": "Bir atomun kovalent bağdaki ortak elektron çiftini kendine çekme yeteneğidir. Birimi yoktur; atomları karşılaştırmak için kullanılan göreceli bir değerdir. Elektron ilgisiyle karıştırılmamalıdır: Elektron ilgisi tek başına bir atomun elektron kazanırken enerji değişimidir, elektronegatiflik ise bağ içindeki davranışı anlatır."
+        },
+        {
+          "tur": "kural",
+          "baslik": "Polar mı Apolar mı?",
+          "metin": "Aynı tür iki ametal atomu arasındaki bağ → {koyu:apolar kovalent} (ΔEN = 0). Farklı tür iki ametal atomu arasındaki bağ → {koyu:polar kovalent} (ΔEN &gt; 0); ortak çift daha elektronegatif atoma yakındır ve bu atom δ− yüklenir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='36' rx='8' fill='#0f766e'/><text x='380' y='38' text-anchor='middle' fill='#ffffff' font-size='15' font-weight='bold'>ORTAK ELEKTRON ÇİFTİNİN PAYLAŞIMI: APOLAR VE POLAR BAĞ</text><rect x='30' y='62' width='340' height='220' rx='12' fill='#ecfdf5' stroke='#059669' stroke-width='2'/><text x='200' y='86' text-anchor='middle' fill='#064e3b' font-size='14' font-weight='bold'>Apolar kovalent bağ: Cl–Cl</text><circle cx='150' cy='172' r='52' fill='#bbf7d0' fill-opacity='0.85' stroke='#15803d' stroke-width='1.5'/><circle cx='250' cy='172' r='52' fill='#bbf7d0' fill-opacity='0.85' stroke='#15803d' stroke-width='1.5'/><text x='135' y='178' text-anchor='middle' fill='#14532d' font-size='16' font-weight='bold'>Cl</text><text x='265' y='178' text-anchor='middle' fill='#14532d' font-size='16' font-weight='bold'>Cl</text><circle cx='200' cy='162' r='6' fill='#dc2626'/><circle cx='200' cy='182' r='6' fill='#dc2626'/><ellipse cx='200' cy='172' rx='14' ry='24' fill='none' stroke='#d97706' stroke-width='2' stroke-dasharray='4 3'/><text x='150' y='244' text-anchor='middle' fill='#1e293b' font-size='12'>EN = 3,0</text><text x='250' y='244' text-anchor='middle' fill='#1e293b' font-size='12'>EN = 3,0</text><text x='200' y='268' text-anchor='middle' fill='#065f46' font-size='12' font-weight='bold'>ΔEN = 0 → çift ortada, eşit paylaşım</text><rect x='390' y='62' width='340' height='220' rx='12' fill='#fff7ed' stroke='#ea580c' stroke-width='2'/><text x='560' y='86' text-anchor='middle' fill='#7c2d12' font-size='14' font-weight='bold'>Polar kovalent bağ: H–Cl</text><circle cx='485' cy='172' r='40' fill='#fde68a' fill-opacity='0.9' stroke='#b45309' stroke-width='1.5'/><circle cx='575' cy='172' r='56' fill='#fecaca' fill-opacity='0.85' stroke='#b91c1c' stroke-width='1.5'/><text x='478' y='178' text-anchor='middle' fill='#78350f' font-size='16' font-weight='bold'>H</text><text x='592' y='178' text-anchor='middle' fill='#7f1d1d' font-size='16' font-weight='bold'>Cl</text><circle cx='545' cy='162' r='6' fill='#dc2626'/><circle cx='545' cy='182' r='6' fill='#dc2626'/><ellipse cx='545' cy='172' rx='14' ry='24' fill='none' stroke='#d97706' stroke-width='2' stroke-dasharray='4 3'/><text x='485' y='124' text-anchor='middle' fill='#b45309' font-size='16' font-weight='bold'>δ+</text><text x='600' y='112' text-anchor='middle' fill='#b91c1c' font-size='16' font-weight='bold'>δ−</text><text x='485' y='244' text-anchor='middle' fill='#1e293b' font-size='12'>EN = 2,1</text><text x='590' y='244' text-anchor='middle' fill='#1e293b' font-size='12'>EN = 3,0</text><text x='560' y='268' text-anchor='middle' fill='#9a3412' font-size='12' font-weight='bold'>ΔEN = 0,9 → çift klora daha yakın</text></svg>"
+    },
+    {
+      "baslik": "Elektronegatiflik Farkından Bağ Polarlığı ve Bağ Türü Tahmini",
+      "metin": [
+        "Elektronegatiflik değerleri, hiç incelemediğimiz bir bağ hakkında hızlı tahmin yapmamızı sağlar. Bağ yapan iki atomun elektronegatiflik farkı {koyu:ΔEN} ile gösterilir ve her zaman büyük değerden küçük değer çıkarılarak bulunur. ΔEN = 0 ise bağ apolardır; ΔEN büyüdükçe ortak çift daha elektronegatif atoma daha çok kayar ve bağın {koyu:polarlığı artar}. Örneğin hidrojenin farklı ametallerle yaptığı bağlarda ΔEN değerleri C–H için 0,4; N–H için 0,9; O–H için 1,4 ve F–H için 1,9'dur. Bu bağların hiçbirinin polarlığını doğrudan görmeden, yalnızca elektronegatiflik tablosundan polarlığın H–C &lt; H–N &lt; H–O &lt; H–F sırasıyla arttığını tahmin edebiliriz.",
+        "ΔEN çok büyük olduğunda ortak çift neredeyse tamamen bir atoma geçer ve bağ iyonik karakter kazanır. Na (0,9) ile Cl (3,0) arasında ΔEN = 2,1; K (0,8) ile F (4,0) arasında ΔEN = 3,2'dir ve bu bileşikler iyoniktir. Bu yüzden bağ türleri keskin kutular değil, bir {koyu:süreklilik} olarak düşünülmelidir: Bir uçta apolar kovalent bağ, ortada farklı derecelerde polar kovalent bağlar, diğer uçta iyonik bağ bulunur. Sıklıkla kullanılan bir yaklaşıma göre ΔEN yaklaşık 1,7'nin altındaysa bağ polar kovalent, üzerindeyse ağırlıklı olarak iyonik kabul edilir. Ancak bu sınır bir {koyu:kural değil, eğilimdir}; sonraki bölümlerde bu sınırın yanıldığı durumları da göreceğiz.",
+        "Şimdi Pauling'in fikrini verilerle sınayalım. Eğer polar bağlardaki ek çekim gerçekten bağı güçlendiriyorsa, ΔEN büyüdükçe ölçülen bağ enerjisi ile basit ortalama tahmini arasındaki fark da büyümelidir. Hidrojen halojenürler bu hipotezi test etmek için uygundur: H–I bağında (ΔEN = 0,4) fark yalnızca yaklaşık 5,5 kJ/mol; H–Br'de (ΔEN = 0,7) yaklaşık 51,5 kJ/mol; H–Cl'de (ΔEN = 0,9) yaklaşık 92 kJ/mol; H–F'de (ΔEN = 1,9) ise yaklaşık 270 kJ/mol'dür. Fark, ΔEN ile birlikte düzenli olarak artmaktadır. Böylece önce tutmayan bir tahmin, {koyu:yeni ve daha güçlü bir hipotezin} doğmasına yol açmış; bu hipotez de bağımsız verilerle desteklenmiştir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Bağ",
+          "ΔEN",
+          "Ortalama Tahmini (kJ/mol)",
+          "Ölçülen Bağ Enerjisi (kJ/mol)",
+          "Fark (kJ/mol)"
+        ],
+        "satirlar": [
+          [
+            "H–I",
+            "0,4",
+            "(436 + 151) ÷ 2 = 293,5",
+            "≈299",
+            "≈5,5"
+          ],
+          [
+            "H–Br",
+            "0,7",
+            "(436 + 193) ÷ 2 = 314,5",
+            "≈366",
+            "≈51,5"
+          ],
+          [
+            "H–Cl",
+            "0,9",
+            "(436 + 242) ÷ 2 = 339",
+            "≈431",
+            "≈92"
+          ],
+          [
+            "H–F",
+            "1,9",
+            "(436 + 158) ÷ 2 = 297",
+            "≈567",
+            "≈270"
+          ],
+          [
+            "Br–Cl",
+            "0,2",
+            "(242 + 193) ÷ 2 = 217,5",
+            "≈218",
+            "≈0,5"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "1,7 Sınırı Kesin Değildir",
+          "metin": "ΔEN = 1,7 değeri bağ türü için yalnızca kaba bir yol göstericidir. H–F bağında ΔEN = 1,9 olmasına rağmen hidrojen florür iyonik kristal değil, yaklaşık 20 °C'de kaynayan moleküler bir maddedir. Bağ türüne karar verirken ΔEN'i gözlem verileriyle birlikte değerlendir."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Kavram Verilerden Doğdu",
+          "metin": "Pauling, farklı atomlar arasındaki bağ enerjilerinin ortalama tahminlerden sistemli biçimde büyük çıktığını fark etmiş ve bu farkları kullanarak elementlere elektronegatiflik değerleri atamıştır. Yani elektronegatiflik, tutmayan bir tahminin sorgulanmasından doğan bilimsel bir modeldir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='36' rx='8' fill='#7c3aed'/><text x='380' y='38' text-anchor='middle' fill='#ffffff' font-size='15' font-weight='bold'>ELEKTRONEGATİFLİK FARKI VE BAĞ TÜRÜ SÜREKLİLİĞİ</text><rect x='60' y='120' width='340' height='40' rx='6' fill='#fde68a'/><rect x='400' y='120' width='300' height='40' rx='6' fill='#fecaca'/><rect x='54' y='112' width='10' height='56' rx='3' fill='#16a34a'/><text x='240' y='145' text-anchor='middle' fill='#78350f' font-size='12' font-weight='bold'>Polar kovalent (yaklaşık 0–1,7)</text><text x='560' y='145' text-anchor='middle' fill='#7f1d1d' font-size='12' font-weight='bold'>Ağırlıkla iyonik (≈1,7 ve üzeri)</text><line x1='400' y1='112' x2='400' y2='168' stroke='#475569' stroke-width='2' stroke-dasharray='5 4'/><text x='60' y='180' text-anchor='middle' fill='#334155' font-size='12'>0</text><text x='260' y='180' text-anchor='middle' fill='#334155' font-size='12'>1</text><text x='460' y='180' text-anchor='middle' fill='#334155' font-size='12'>2</text><text x='660' y='180' text-anchor='middle' fill='#334155' font-size='12'>3</text><text x='722' y='180' text-anchor='middle' fill='#334155' font-size='12' font-weight='bold'>ΔEN</text><circle cx='60' cy='140' r='6' fill='#1e293b'/><line x1='60' y1='134' x2='60' y2='106' stroke='#1e293b' stroke-width='1.5'/><text x='62' y='100' text-anchor='middle' fill='#065f46' font-size='12' font-weight='bold'>Cl–Cl: 0</text><text x='62' y='84' text-anchor='middle' fill='#065f46' font-size='11'>apolar</text><circle cx='140' cy='140' r='6' fill='#1e293b'/><line x1='140' y1='146' x2='140' y2='200' stroke='#1e293b' stroke-width='1.5'/><text x='140' y='216' text-anchor='middle' fill='#1e293b' font-size='12' font-weight='bold'>C–H: 0,4</text><text x='140' y='232' text-anchor='middle' fill='#475569' font-size='11'>az polar</text><circle cx='240' cy='140' r='6' fill='#1e293b'/><line x1='240' y1='134' x2='240' y2='106' stroke='#1e293b' stroke-width='1.5'/><text x='240' y='100' text-anchor='middle' fill='#1e293b' font-size='12' font-weight='bold'>H–Cl: 0,9</text><text x='240' y='84' text-anchor='middle' fill='#475569' font-size='11'>polar</text><circle cx='340' cy='140' r='6' fill='#1e293b'/><line x1='340' y1='146' x2='340' y2='200' stroke='#1e293b' stroke-width='1.5'/><text x='340' y='216' text-anchor='middle' fill='#1e293b' font-size='12' font-weight='bold'>O–H: 1,4</text><text x='340' y='232' text-anchor='middle' fill='#475569' font-size='11'>polar</text><circle cx='440' cy='140' r='6' fill='#1e293b'/><line x1='440' y1='134' x2='440' y2='106' stroke='#1e293b' stroke-width='1.5'/><text x='440' y='100' text-anchor='middle' fill='#1e293b' font-size='12' font-weight='bold'>H–F: 1,9</text><text x='440' y='84' text-anchor='middle' fill='#b91c1c' font-size='11'>yine de moleküler!</text><circle cx='480' cy='140' r='6' fill='#1e293b'/><line x1='480' y1='146' x2='480' y2='200' stroke='#1e293b' stroke-width='1.5'/><text x='480' y='216' text-anchor='middle' fill='#1e293b' font-size='12' font-weight='bold'>NaCl: 2,1</text><text x='480' y='232' text-anchor='middle' fill='#475569' font-size='11'>iyonik</text><circle cx='700' cy='140' r='6' fill='#1e293b'/><line x1='700' y1='134' x2='700' y2='106' stroke='#1e293b' stroke-width='1.5'/><text x='700' y='100' text-anchor='middle' fill='#1e293b' font-size='12' font-weight='bold'>KF: 3,2</text><text x='700' y='84' text-anchor='middle' fill='#475569' font-size='11'>iyonik</text><text x='380' y='274' text-anchor='middle' fill='#0f172a' font-size='13'>Sınır değerler kesin değildir; tahmin, gözlem verileriyle sınanmalıdır.</text></svg>"
+    },
+    {
+      "baslik": "Tahmin–Sınama Döngüsü: Gözlemlenmemiş Maddelerin Özelliklerini Öngörme",
+      "metin": [
+        "Bilimsel bir tahmin, rastgele bir “bence” değildir. İyi bir tahminin üç özelliği vardır: {koyu:Gerekçelidir} (bilinen verilere ve örüntülere dayanır), {koyu:sınanabilirdir} (bir deney ya da ölçümle kontrol edilebilir) ve {koyu:yanlışlanabilirdir} (hangi sonucun tahmini çürüteceği önceden bellidir). Bilimsel düşünme genellikle bir döngü hâlinde ilerler: Önce gözlemler ve veriler toplanır, bu verilerde bir örüntü aranır, örüntüyü açıklayan bir hipotez kurulur, hipotezden yola çıkarak henüz gözlemlenmemiş bir durum için tahmin yapılır, tahmin deney veya güvenilir verilerle sınanır ve son olarak hipotezin desteklenip desteklenmediğine karar verilir. Sonuç beklenmedikse döngü yeni verilerle yeniden başlar.",
+        "Bu döngüyü hiç incelemediğimiz maddelere uygulayalım. Karbon disülfür (C{alt:S|2}), fosfor triklorür (PC{alt:l|3}) ve karbon tetraklorür (CC{alt:l|4}) yalnızca ametal atomlarından oluşur. Geçen haftaki gözlemlerden ve bu haftaki elektronegatiflik bilgisinden hareketle şu tahmini yapabiliriz: Bu maddelerin atomları kovalent bağlarla bağlıdır, maddeler yüksüz moleküllerden oluşur; bu yüzden erime ve kaynama noktaları düşük olmalı, saf hâlde elektriği iletmemelidir. P–Cl bağında ΔEN = 0,9 olduğundan bu bağ polar olmalı, klor δ− yüklenmelidir. Kayıtlı veriler bu tahminleri destekler: C{alt:S|2} yaklaşık 46 °C'de, PC{alt:l|3} yaklaşık 76 °C'de, CC{alt:l|4} yaklaşık 77 °C'de kaynayan, oda koşullarında sıvı ve elektriği iletmeyen maddelerdir.",
+        "Aynı yöntemle silisyum dioksit ({alt:SiO|2}, kuvars) için “Ametal ve yarı metal atomlarından oluştuğuna göre düşük sıcaklıkta eriyen moleküler bir maddedir.” tahminini yapan bir öğrenci, erime noktasının yaklaşık 1700 °C olduğunu görünce tahmininin çürüdüğünü fark eder. Burada bağ türü tahmini (kovalent) doğrudur; yanlış olan, yapının moleküler olacağı varsayımıdır. {alt:SiO|2} tıpkı elmas gibi dev bir {koyu:ağ örgülü kovalent} yapıdadır. Bu örnek, sınama aşamasının neden vazgeçilmez olduğunu gösterir. Bir tahmini deneyle sınarken {koyu:bağımsız değişken} (incelenen madde), {koyu:bağımlı değişken} (ampulün yanıp yanmaması veya ölçülen sıcaklık) ve {koyu:kontrol edilen değişkenler} (aynı pil, aynı elektrotlar, aynı madde miktarı, aynı sıcaklık) önceden belirlenmelidir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Madde",
+          "Bileşen Atomlar",
+          "Yapılan Tahmin",
+          "Kayıtlı Veri (1 atm, yaklaşık)",
+          "Karar"
+        ],
+        "satirlar": [
+          [
+            "C{alt:S|2}",
+            "C ve S (ametal)",
+            "Moleküler kovalent, düşük kaynama noktası, iletmez",
+            "Sıvı, kaynama ≈46 °C, iletmez",
+            "Tahmin destekleniyor"
+          ],
+          [
+            "PC{alt:l|3}",
+            "P ve Cl (ametal)",
+            "Moleküler kovalent, polar P–Cl bağları",
+            "Sıvı, kaynama ≈76 °C, iletmez",
+            "Tahmin destekleniyor"
+          ],
+          [
+            "CC{alt:l|4}",
+            "C ve Cl (ametal)",
+            "Moleküler kovalent, iletmez",
+            "Sıvı, kaynama ≈77 °C, iletmez",
+            "Tahmin destekleniyor"
+          ],
+          [
+            "{alt:SiO|2}",
+            "Si (yarı metal) ve O",
+            "Moleküler kovalent, düşük erime noktası",
+            "Katı, erime ≈1700 °C, iletmez",
+            "Tahmin düzeltilir: ağ örgülü kovalent"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "İyi Bir Bilimsel Tahminin Özellikleri",
+          "metin": "1) {koyu:Gerekçeli:} Bilinen verilere ve örüntülere dayanır. 2) {koyu:Sınanabilir:} Ölçüm ya da deneyle kontrol edilebilir. 3) {koyu:Yanlışlanabilir:} Hangi sonucun tahmini çürüteceği önceden söylenebilir. “Bu sıvı, iletkenlik düzeneğinde ampulü yakarsa moleküler olduğu tahminim zayıflar.” gibi."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Her Tahmin Okul Laboratuvarında Sınanmaz",
+          "metin": "Karbon disülfür zehirli ve çok kolay alev alan bir sıvıdır; fosfor triklorür ise suyla şiddetli tepkimeye girer. Bu tür maddelerle ilgili tahminler deneyle değil, güvenilir veri tablolarıyla sınanır. Güvenlik her zaman bilimsel meraktan önce gelir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='36' rx='8' fill='#047857'/><text x='380' y='38' text-anchor='middle' fill='#ffffff' font-size='15' font-weight='bold'>TAHMİN–SINAMA DÖNGÜSÜ</text><rect x='30' y='66' width='200' height='70' rx='12' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/><text x='130' y='94' text-anchor='middle' fill='#1e3a8a' font-size='14' font-weight='bold'>1. Gözlem ve veri</text><text x='130' y='116' text-anchor='middle' fill='#1e293b' font-size='12'>Ölçülen bağ uzunlukları</text><rect x='280' y='66' width='200' height='70' rx='12' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/><text x='380' y='94' text-anchor='middle' fill='#1e3a8a' font-size='14' font-weight='bold'>2. Örüntü bulma</text><text x='380' y='116' text-anchor='middle' fill='#1e293b' font-size='12'>r(A) + r(B) ilişkisi</text><rect x='530' y='66' width='200' height='70' rx='12' fill='#ede9fe' stroke='#7c3aed' stroke-width='2'/><text x='630' y='94' text-anchor='middle' fill='#4c1d95' font-size='14' font-weight='bold'>3. Hipotez kurma</text><text x='630' y='116' text-anchor='middle' fill='#1e293b' font-size='12'>Gerekçeli geçici açıklama</text><rect x='530' y='196' width='200' height='70' rx='12' fill='#fef3c7' stroke='#d97706' stroke-width='2'/><text x='630' y='224' text-anchor='middle' fill='#78350f' font-size='14' font-weight='bold'>4. Tahmin</text><text x='630' y='246' text-anchor='middle' fill='#1e293b' font-size='12'>Ölçülmemiş Br–Cl ≈ 214 pm</text><rect x='280' y='196' width='200' height='70' rx='12' fill='#fef3c7' stroke='#d97706' stroke-width='2'/><text x='380' y='224' text-anchor='middle' fill='#78350f' font-size='14' font-weight='bold'>5. Sınama</text><text x='380' y='246' text-anchor='middle' fill='#1e293b' font-size='12'>Deney veya veri tablosu</text><rect x='30' y='196' width='200' height='70' rx='12' fill='#dcfce7' stroke='#16a34a' stroke-width='2'/><text x='130' y='224' text-anchor='middle' fill='#14532d' font-size='14' font-weight='bold'>6. Karar ve düzeltme</text><text x='130' y='246' text-anchor='middle' fill='#1e293b' font-size='12'>Destek mi, çürütme mi?</text><line x1='232' y1='101' x2='270' y2='101' stroke='#475569' stroke-width='3'/><polygon points='270,94 280,101 270,108' fill='#475569'/><line x1='482' y1='101' x2='520' y2='101' stroke='#475569' stroke-width='3'/><polygon points='520,94 530,101 520,108' fill='#475569'/><line x1='630' y1='138' x2='630' y2='186' stroke='#475569' stroke-width='3'/><polygon points='623,186 630,196 637,186' fill='#475569'/><line x1='528' y1='231' x2='490' y2='231' stroke='#475569' stroke-width='3'/><polygon points='490,224 480,231 490,238' fill='#475569'/><line x1='278' y1='231' x2='240' y2='231' stroke='#475569' stroke-width='3'/><polygon points='240,224 230,231 240,238' fill='#475569'/><line x1='130' y1='194' x2='130' y2='146' stroke='#16a34a' stroke-width='3' stroke-dasharray='6 4'/><polygon points='123,146 130,136 137,146' fill='#16a34a'/><text x='140' y='172' fill='#15803d' font-size='12' font-weight='bold'>yeni veri</text><text x='380' y='296' text-anchor='middle' fill='#0f172a' font-size='13'>Tahmin tutmazsa hipotez düzeltilir; bilimsel bilgi böyle gelişir.</text></svg>"
+    },
+    {
+      "baslik": "Tahminlerin Geçerliliğini Sorgulama: Aykırı Veriler ve Genellemelerin Sınırları",
+      "metin": [
+        "Bir tahminin birkaç kez tutması, onun her durumda geçerli olduğunu kanıtlamaz. Halojen moleküllerine bakalım: Cl–Cl (242 kJ/mol), Br–Br (193 kJ/mol) ve I–I (151 kJ/mol) verilerinden “Grupta yukarı çıktıkça atom küçülür, bağ kısalır ve bağ enerjisi artar.” örüntüsünü çıkarırız. Bu örüntüye göre F–F bağının enerjisi 242 kJ/mol'den büyük olmalıdır. Oysa ölçülen değer yalnızca yaklaşık {koyu:158 kJ/mol}'dür; F–F bağı (142 pm) en kısa halojen bağı olduğu hâlde Cl–Cl ve Br–Br bağlarından zayıftır. Tahmin, açıkça yanlışlanmıştır. Bilim insanları bu aykırı veriyi şöyle açıklar: Flor atomu çok küçük olduğundan iki atomun {koyu:ortaklanmamış elektron çiftleri} birbirine çok yaklaşır ve aralarındaki itme bağı zayıflatır. Bu açıklama, basit örüntünün göz ardı ettiği yeni bir etkiyi hesaba katar.",
+        "Benzer bir durum maddelerin özelliklerine ilişkin genellemelerde de karşımıza çıkar. Geçen hafta metan, su, iyot ve şeker gibi kovalent maddelerin elektriği iletmediğini gördük; elmas da elektriği iletmez. Buradan “Kovalent bağlı katılar elektriği iletmez.” genellemesine ulaşmak kolaydır. Ancak yalnızca karbon atomlarından oluşan {koyu:grafit} elektriği iletir; kurşun kalem uçlarının elektrot olarak kullanılabilmesi bundandır. Grafitte her karbon atomu üç komşu karbonla bağ yapar ve dördüncü değerlik elektronu katman boyunca hareket edebilir. Yine “Polar kovalent maddeler suda çözündüğünde iletken olmaz.” düşüncesi HCl için geçersizdir: Saf HCl iletmez, ama sudaki çözeltisi iyonlar oluştuğu için elektriği iletir. Tek bir güvenilir aykırı gözlem, bir genellemenin {koyu:sorgulanması} için yeterlidir.",
+        "Tahminlerimizin geçerliliğini sorgularken kendimize bazı sorular sormalıyız: Kullandığım veri sayısı yeterli mi, yoksa yalnızca üç örnekten mi genelleme yaptım? Karşılaştırdığım veriler aynı koşullarda (aynı basınç, gaz hâli gibi) mi ölçüldü? Örüntü tüm örneklere uyuyor mu, yoksa aykırı veriler var mı? Aykırı veri için başka bir açıklama yapılabilir mi? Sonuç başka kişilerce tekrarlanabilir mi? Bu soruların sonunda tahmin ya {koyu:desteklenir}, ya {koyu:sınırlandırılır} (“Cl, Br ve I için geçerlidir.”) ya da {koyu:düzeltilir}. Aykırı verilerden korkmamak gerekir; elektronegatiflik kavramı da F–F anomalisinin açıklaması da aykırı verilerin dikkatle incelenmesinden doğmuştur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "İlk Genelleme",
+          "Uyan Örnekler",
+          "Aykırı Veri",
+          "Düzeltilmiş İfade"
+        ],
+        "satirlar": [
+          [
+            "Grupta yukarı çıktıkça X–X bağ enerjisi artar.",
+            "I–I &lt; Br–Br &lt; Cl–Cl",
+            "F–F ≈158 kJ/mol, Cl–Cl'den zayıf",
+            "Cl, Br, I için geçerli; flor, ortaklanmamış çiftlerin itmesi nedeniyle aykırıdır."
+          ],
+          [
+            "Kovalent bağlı katılar elektriği iletmez.",
+            "İyot, şeker, elmas",
+            "Grafit elektriği iletir",
+            "Çoğu kovalent katı iletmez; grafit gibi hareketli elektronu olan yapılar istisnadır."
+          ],
+          [
+            "ΔEN &gt; 1,7 ise madde iyoniktir.",
+            "NaCl, KF, MgO",
+            "HF moleküler, kaynama ≈20 °C",
+            "ΔEN bir eğilim gösterir; bağ türü gözlem verileriyle doğrulanmalıdır."
+          ],
+          [
+            "Moleküler maddelerin sulu çözeltisi iletmez.",
+            "Şeker, etil alkol",
+            "HCl çözeltisi iletir",
+            "Bazı moleküler maddeler suda iyonlaşır; saf hâldeki iletkenlik ayrıca incelenmelidir."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Tahmini Sorgulamak İçin Altı Soru",
+          "metin": "Veri sayısı yeterli mi? Ölçüm koşulları aynı mı? Örüntü tüm örneklere uyuyor mu? Aykırı veri için başka açıklama var mı? Sonuç tekrarlanabilir mi? Tahmini çürütecek sonuç önceden belli mi? Bu soruları yanıtlamadan bir tahmini “kesin” sayma."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Destekleme ve Kanıtlama Farkı",
+          "metin": "Birçok gözlem bir genellemeyi {koyu:destekler}, ama hiçbir zaman kesin olarak kanıtlamaz; çünkü yeni bir gözlem her an aykırı çıkabilir. Buna karşılık tek bir güvenilir aykırı gözlem, genellemenin düzeltilmesini gerektirebilir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='36' rx='8' fill='#b45309'/><text x='380' y='38' text-anchor='middle' fill='#ffffff' font-size='15' font-weight='bold'>AYKIRI VERİ: HALOJENLERDE X–X BAĞ ENERJİSİ (kJ/mol)</text><line x1='40' y1='270' x2='376' y2='270' stroke='#475569' stroke-width='2'/><rect x='60' y='67' width='56' height='203' rx='4' fill='none' stroke='#dc2626' stroke-width='2' stroke-dasharray='6 4'/><text x='88' y='62' text-anchor='middle' fill='#b91c1c' font-size='11' font-weight='bold'>Beklenen (&gt; 242)</text><rect x='60' y='159' width='56' height='111' rx='4' fill='#f97316'/><text x='88' y='153' text-anchor='middle' fill='#1e293b' font-size='12' font-weight='bold'>158</text><rect x='140' y='101' width='56' height='169' rx='4' fill='#0ea5e9'/><text x='168' y='95' text-anchor='middle' fill='#1e293b' font-size='12' font-weight='bold'>242</text><rect x='220' y='135' width='56' height='135' rx='4' fill='#0ea5e9'/><text x='248' y='129' text-anchor='middle' fill='#1e293b' font-size='12' font-weight='bold'>193</text><rect x='300' y='164' width='56' height='106' rx='4' fill='#0ea5e9'/><text x='328' y='158' text-anchor='middle' fill='#1e293b' font-size='12' font-weight='bold'>151</text><text x='88' y='288' text-anchor='middle' fill='#0f172a' font-size='13' font-weight='bold'>F–F</text><text x='168' y='288' text-anchor='middle' fill='#0f172a' font-size='13' font-weight='bold'>Cl–Cl</text><text x='248' y='288' text-anchor='middle' fill='#0f172a' font-size='13' font-weight='bold'>Br–Br</text><text x='328' y='288' text-anchor='middle' fill='#0f172a' font-size='13' font-weight='bold'>I–I</text><text x='88' y='304' text-anchor='middle' fill='#475569' font-size='11'>142 pm</text><text x='168' y='304' text-anchor='middle' fill='#475569' font-size='11'>199 pm</text><text x='248' y='304' text-anchor='middle' fill='#475569' font-size='11'>228 pm</text><text x='328' y='304' text-anchor='middle' fill='#475569' font-size='11'>266 pm</text><rect x='396' y='64' width='344' height='236' rx='12' fill='#fff7ed' stroke='#ea580c' stroke-width='2'/><text x='568' y='88' text-anchor='middle' fill='#7c2d12' font-size='14' font-weight='bold'>Tahmini sorgulama soruları</text><text x='412' y='116' fill='#1e293b' font-size='13'>• Veri sayısı yeterli mi?</text><text x='412' y='140' fill='#1e293b' font-size='13'>• Ölçüm koşulları aynı mı?</text><text x='412' y='164' fill='#1e293b' font-size='13'>• Örüntü tüm örneklere uyuyor mu?</text><text x='412' y='188' fill='#1e293b' font-size='13'>• Aykırı veri için başka açıklama var mı?</text><text x='412' y='212' fill='#1e293b' font-size='13'>• Sonuç tekrarlanabilir mi?</text><text x='412' y='236' fill='#1e293b' font-size='13'>• Tahmin yanlışlanabilir mi?</text><text x='412' y='268' fill='#9a3412' font-size='12' font-weight='bold'>F atomu çok küçük: ortaklanmamış</text><text x='412' y='286' fill='#9a3412' font-size='12' font-weight='bold'>çiftler birbirini güçlü iter, bağ zayıflar.</text></svg>"
+    },
+    {
+      "baslik": "Bağ Enerjisi Tahminleriyle Günlük Hayattaki Olayları Yorumlama",
+      "metin": [
+        "Kovalent bağlar hakkında yaptığımız tahminler yalnızca sınıfta kalmaz; çevremizdeki pek çok olayı açıklamamıza yardım eder. Genel bir eğilim olarak bir molekül ısı veya ışıkla enerji aldığında {koyu:en zayıf bağ genellikle önce kırılır}. Örneğin hidrojen peroksitteki ({alt:H|2}{alt:O|2}) O–O tekli bağının enerjisi yaklaşık 146 kJ/mol'dür ve O–H bağından (yaklaşık 463 kJ/mol) çok daha zayıftır. Bu yüzden hidrojen peroksit ışık ve ısı etkisiyle kolayca bozunur; bu nedenle koyu renkli şişelerde saklanır. Klor gazı ({alt:Cl|2}, 242 kJ/mol) da güneş ışığı etkisiyle atomlarına ayrışabilir ve bu tepkimeleri başlatır.",
+        "Tersine, çok sağlam bağlar içeren maddeler kolay kolay tepkimeye girmez. Azot molekülündeki üçlü bağın enerjisinin yaklaşık 945 kJ/mol olması, azot gazının neden bu kadar “isteksiz” olduğunu açıklar. Bu özellik sayesinde azot gazı, cips paketlerinde yiyeceklerin oksijenle bozulmasını önlemek için koruyucu gaz olarak kullanılır. Karbon monoksitteki (CO) karbon–oksijen üçlü bağı yaklaşık 1072 kJ/mol ile bilinen en sağlam kovalent bağlardan biridir. Yapışmaz tava kaplamalarında kullanılan teflonun ısıya ve kimyasallara dayanıklılığı da güçlü C–F bağlarıyla (yaklaşık 485 kJ/mol) ilişkilendirilir.",
+        "Bağ enerjisi verileri çevre sorunlarını anlamamıza da katkı verir. Bir zamanlar soğutucularda ve spreylerde kullanılan kloroflorokarbonlar (CFC'ler) atmosferin alt katmanlarında oldukça kararlıdır. Ancak stratosfere ulaştıklarında güçlü morötesi ışınlar, bu moleküllerdeki görece zayıf {koyu:C–Cl bağlarını} (yaklaşık 330 kJ/mol) kırar ve açığa çıkan klor atomları ozon moleküllerinin bozunmasına yol açar. Yine de dikkatli olmalıyız: Bağ enerjisi bir maddenin ne kadar kararlı olduğu hakkında güçlü bir {koyu:ipucu} verir, ama bir tepkimenin gerçekleşip gerçekleşmeyeceğini veya ne kadar hızlı olacağını tek başına belirlemez. Ortam koşulları, sıcaklık ve diğer maddeler de etkilidir. Bu, tahminlerimizin sınırlarını bilmenin bir başka örneğidir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Bağ",
+          "Bağ Enerjisi (kJ/mol, yaklaşık)",
+          "Günlük Hayattaki Bağlantı",
+          "Tahmin"
+        ],
+        "satirlar": [
+          [
+            "O–O (H₂O₂ içinde)",
+            "146",
+            "Hidrojen peroksit koyu şişede saklanır",
+            "Işıkla kolay kırılır, madde bozunur"
+          ],
+          [
+            "Cl–Cl",
+            "242",
+            "Klor gazı ışıkla tepkimeleri başlatır",
+            "Görece zayıf, ışıkla ayrışabilir"
+          ],
+          [
+            "C–Cl",
+            "330",
+            "CFC'lerin ozon tabakasına zararı",
+            "Morötesi ışınla kırılır"
+          ],
+          [
+            "C–F",
+            "485",
+            "Teflon kaplamaların dayanıklılığı",
+            "Kırılması zor, madde kararlı"
+          ],
+          [
+            "N≡N",
+            "945",
+            "Paketlemede koruyucu azot gazı",
+            "Tepkimeye çok isteksiz"
+          ],
+          [
+            "C≡O",
+            "1072",
+            "Karbon monoksit molekülü",
+            "Çok sağlam üçlü bağ"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Neden Azot Gazıyla Paketleme?",
+          "metin": "Cips gibi yağlı yiyecekler oksijenle temas edince bozulur. Paketin içi azotla doldurulduğunda N≡N bağı çok sağlam olduğu için azot yiyecekle tepkimeye girmez; hem bozulma yavaşlar hem de paket şişkin kalarak ürünün ezilmesi önlenir."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Bağ Enerjisi Tek Başına Her Şeyi Söylemez",
+          "metin": "Zayıf bir bağ içeren madde her koşulda hemen tepkimeye girmez; sağlam bağlı bir madde de uygun koşullarda tepkime verebilir. Bağ enerjisi verisi bir {koyu:eğilim} gösterir; kesin karar için deney ve gözlem gerekir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 330' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='330' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='36' rx='8' fill='#991b1b'/><text x='380' y='38' text-anchor='middle' fill='#ffffff' font-size='15' font-weight='bold'>BAĞ ENERJİSİ VE KARARLILIK TAHMİNİ (kJ/mol)</text><line x1='150' y1='62' x2='150' y2='292' stroke='#475569' stroke-width='2'/><text x='140' y='87' text-anchor='end' fill='#0f172a' font-size='13' font-weight='bold'>C–Cl</text><rect x='150' y='70' width='132' height='24' rx='4' fill='#fca5a5'/><text x='290' y='87' fill='#1e293b' font-size='11'>330 · morötesi ışınla kırılır (CFC)</text><text x='140' y='125' text-anchor='end' fill='#0f172a' font-size='13' font-weight='bold'>C–H</text><rect x='150' y='108' width='165' height='24' rx='4' fill='#fdba74'/><text x='323' y='125' fill='#1e293b' font-size='11'>413 · yakıtların temel bağı</text><text x='140' y='163' text-anchor='end' fill='#0f172a' font-size='13' font-weight='bold'>C–F</text><rect x='150' y='146' width='194' height='24' rx='4' fill='#fcd34d'/><text x='352' y='163' fill='#1e293b' font-size='11'>485 · teflon çok kararlı</text><text x='140' y='201' text-anchor='end' fill='#0f172a' font-size='13' font-weight='bold'>C=O</text><rect x='150' y='184' width='320' height='24' rx='4' fill='#86efac'/><text x='478' y='201' fill='#1e293b' font-size='11'>799 · CO₂ molekülü</text><text x='140' y='239' text-anchor='end' fill='#0f172a' font-size='13' font-weight='bold'>N≡N</text><rect x='150' y='222' width='378' height='24' rx='4' fill='#5eead4'/><text x='536' y='239' fill='#1e293b' font-size='11'>945 · N₂ tepkimeye isteksiz</text><text x='140' y='277' text-anchor='end' fill='#0f172a' font-size='13' font-weight='bold'>C≡O</text><rect x='150' y='260' width='429' height='24' rx='4' fill='#60a5fa'/><text x='587' y='277' fill='#1e293b' font-size='11'>1072 · karbon monoksit</text><text x='380' y='314' text-anchor='middle' fill='#0f172a' font-size='12'>Değerler yaklaşık ortalama bağ enerjileridir. En zayıf bağ genellikle ilk kırılır.</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Cl–Cl bağının uzunluğu yaklaşık 199 pm ve enerjisi 242 kJ/mol; Br–Br bağının uzunluğu yaklaşık 228 pm ve enerjisi 193 kJ/mol'dür. Toplanabilirlik yaklaşımıyla Br–Cl bağının uzunluğunu ve enerjisini tahmin ediniz. Ölçülen değerler yaklaşık 214 pm ve 218 kJ/mol olduğuna göre tahmininizi değerlendiriniz. (EN: Cl = 3,0; Br = 2,8)",
+      "cevap": "1. adım: Kovalent yarıçaplar bulunur: r(Cl) = 199 ÷ 2 = 99,5 pm; r(Br) = 228 ÷ 2 = 114 pm.\n2. adım: Bağ uzunluğu tahmini: 99,5 + 114 = 213,5 pm.\n3. adım: Bağ enerjisi tahmini: {kesir:242 + 193|2} = {kesir:435|2} = 217,5 kJ/mol.\n4. adım: Karşılaştırma: 213,5 pm ≈ 214 pm ve 217,5 kJ/mol ≈ 218 kJ/mol. Farklar çok küçüktür.\n5. adım: Gerekçe: ΔEN = 3,0 − 2,8 = 0,2 olduğundan bağ çok az polardır; kısmi yükler arasındaki ek çekim ihmal edilecek kadar küçüktür.\nSonuç: Tahmin ölçülen verilerle desteklenmiştir; toplanabilirlik yaklaşımı elektronegatiflikleri yakın atomlar için geçerli bir yöntemdir.",
+      "ipucu": "Önce her atomun kovalent yarıçapını (homonükleer bağ uzunluğunun yarısı) bulun, sonra toplayın."
+    },
+    {
+      "soru": "H–H bağ enerjisi 436 kJ/mol, Br–Br bağ enerjisi 193 kJ/mol, I–I bağ enerjisi 151 kJ/mol'dür. Ölçülen H–Br bağ enerjisi yaklaşık 366, H–I bağ enerjisi yaklaşık 299 kJ/mol'dür. Her iki bağ için ortalama tahminini bulup ölçülen değerle farkını hesaplayınız ve farkların büyüklüğünü elektronegatiflik farkıyla ilişkilendiriniz. (EN: H = 2,1; Br = 2,8; I = 2,5)",
+      "cevap": "1. adım (H–Br): Tahmin = {kesir:436 + 193|2} = 314,5 kJ/mol. Fark = 366 − 314,5 = 51,5 kJ/mol.\n2. adım (H–I): Tahmin = {kesir:436 + 151|2} = 293,5 kJ/mol. Fark = 299 − 293,5 = 5,5 kJ/mol.\n3. adım: ΔEN değerleri: H–Br için 2,8 − 2,1 = 0,7; H–I için 2,5 − 2,1 = 0,4.\n4. adım: ΔEN'i büyük olan H–Br bağında fark yaklaşık on kat daha büyüktür.\nSonuç: Elektronegatiflik farkı arttıkça bağ daha polar olur, δ+ ve δ− uçlar arasındaki ek çekim artar ve ölçülen bağ enerjisi basit ortalamanın üzerine çıkar. Basit ortalama yöntemi, ΔEN küçük olan H–I için geçerli, H–Br için yetersizdir.",
+      "ipucu": "Fark = ölçülen − tahmin. Farkları ΔEN değerleriyle yan yana yazıp karşılaştırın."
+    },
+    {
+      "soru": "N–H, C–Cl, O–F ve Br–Br bağlarını polar ya da apolar olarak sınıflandırınız; polar olanlarda hangi atomun kısmi negatif (δ−) yük taşıdığını belirtiniz. (EN: H = 2,1; C = 2,5; N = 3,0; O = 3,5; F = 4,0; Cl = 3,0; Br = 2,8)",
+      "cevap": "1. adım (N–H): ΔEN = 3,0 − 2,1 = 0,9 → polar kovalent. Ortak çift azota yakın: N δ−, H δ+.\n2. adım (C–Cl): ΔEN = 3,0 − 2,5 = 0,5 → polar kovalent. Cl δ−, C δ+.\n3. adım (O–F): ΔEN = 4,0 − 3,5 = 0,5 → polar kovalent. Flor daha elektronegatif olduğu için F δ−, O δ+. Oksijenin çoğu bağda δ− olmasına rağmen burada δ+ olduğuna dikkat edin.\n4. adım (Br–Br): Aynı tür atomlar, ΔEN = 0 → apolar kovalent; kısmi yük oluşmaz.\nSonuç: N–H, C–Cl ve O–F polar; Br–Br apolardır. En polar bağ ΔEN'i en büyük olan N–H bağıdır.",
+      "ipucu": "δ− yük her zaman elektronegatifliği büyük olan atoma yazılır; bir atomun kısmi yükü bağ yaptığı partnere göre değişebilir."
+    },
+    {
+      "soru": "Hidrojenin C, N, O ve F ile yaptığı bağları polarlıklarına göre küçükten büyüğe sıralayınız. Ardından henüz incelemediğimiz H–S bağının (EN: S = 2,5) bu sıralamada nereye yerleşeceğini tahmin ediniz ve tahmininizi nasıl sınayabileceğinizi belirtiniz. (EN: H = 2,1; C = 2,5; N = 3,0; O = 3,5; F = 4,0)",
+      "cevap": "1. adım: ΔEN değerleri: H–C = 0,4; H–N = 0,9; H–O = 1,4; H–F = 1,9.\n2. adım: Sıralama: H–C &lt; H–N &lt; H–O &lt; H–F.\n3. adım: H–S için ΔEN = 2,5 − 2,1 = 0,4. Bu değer H–C ile aynıdır.\n4. adım: Tahmin: H–S bağı az polardır ve sıralamada H–C ile birlikte en başta yer alır; kükürt δ−, hidrojen δ+ yüklenir.\n5. adım: Sınama: Bu tahmin, ölçülmüş bağ enerjisi verilerinde ortalama tahmininden sapmanın H–O bağına göre çok daha küçük olup olmadığına bakılarak kontrol edilebilir.\nSonuç: H–S ≈ H–C &lt; H–N &lt; H–O &lt; H–F. Elektronegatiflik değerleri yaklaşık olduğu için H–S ile H–C'nin polarlığı arasındaki küçük farkları bu yöntemle kesin olarak ayırt edemeyiz; bu, tahminimizin sınırıdır.",
+      "ipucu": "Polarlığı ΔEN belirler; aynı ΔEN değerine sahip bağlar bu yöntemle birbirinden ayırt edilemez."
+    },
+    {
+      "soru": "Fosfor triklorür (PC{alt:l|3}) hakkında hiçbir veriye bakmadan bağ türü, oda koşullarındaki hâli ve saf hâldeki iletkenliği konusunda bir tahmin yapınız. Daha sonra PC{alt:l|3}'ün yaklaşık 76 °C'de kaynayan, saf hâlde elektriği iletmeyen bir sıvı olduğu bilgisiyle tahmininizi değerlendiriniz. Bir öğrenci “PC{alt:l|3}'ü suya ekleyip çözeltinin iletkenliğine bakarak bağ türünü kanıtlarım.” diyor; bu yöntemin geçerliliğini sorgulayınız. (EN: P = 2,1; Cl = 3,0)",
+      "cevap": "1. adım: P ve Cl ametaldir → atomlar elektron ortaklaşmasıyla kovalent bağ yapar. ΔEN = 0,9 → P–Cl bağları polar, Cl δ−.\n2. adım: Tahmin: Madde yüksüz moleküllerden oluşur; moleküller arası çekim zayıf olduğundan kaynama noktası düşüktür, saf hâlde elektriği iletmez.\n3. adım: Değerlendirme: Kayıtlı veriler (sıvı, kaynama ≈76 °C, iletmez) tahminle uyumludur → tahmin desteklenir.\n4. adım: Öğrencinin yöntemi: PC{alt:l|3} suyla tepkimeye girerek iyonlaşabilen yeni maddeler (HCl gibi) oluşturur. Çözelti iletken çıksa bile bu, PC{alt:l|3}'ün iyonik olduğunu göstermez; ölçülen şey artık başka maddelerin özelliğidir.\nSonuç: PC{alt:l|3} moleküler kovalent bir maddedir. Bağ türünü sınamak için saf maddenin iletkenliği ve erime-kaynama noktası kullanılmalıdır; sulu çözelti testi bu madde için yanıltıcıdır (ayrıca madde suyla şiddetli tepkime verdiğinden tehlikelidir).",
+      "ipucu": "Bir testin geçerli olması için ölçtüğün şeyin gerçekten incelediğin madde olduğundan emin olmalısın."
+    },
+    {
+      "soru": "Bir öğrenci şu iki genellemeyi yapmıştır: I. “Kovalent bağlı katılar elektriği iletmez; çünkü iyot, şeker ve elmas iletmez.” II. “Halojen grubunda yukarı çıktıkça X–X bağ enerjisi artar; çünkü I–I = 151, Br–Br = 193, Cl–Cl = 242 kJ/mol'dür.” Her iki genellemenin geçerliliğini sorgulayınız ve gerekiyorsa düzeltiniz. (F–F ≈ 158 kJ/mol)",
+      "cevap": "1. adım (I): Genelleme yalnızca üç örneğe dayanmaktadır; veri sayısı sınırlıdır.\n2. adım: Aykırı veri aranır: Grafit yalnızca karbon atomlarından oluşan kovalent bir katıdır ve elektriği iletir. Bu tek güvenilir gözlem genellemeyi çürütür.\n3. adım: Düzeltme: “Kovalent bağlı katıların çoğu elektriği iletmez; grafit gibi hareketli elektronları bulunan yapılar istisnadır.”\n4. adım (II): Cl, Br, I verileri örüntüye uyar; ancak grubun en üstündeki flor için tahmin 242 kJ/mol'den büyük olmalıyken ölçülen değer ≈158 kJ/mol'dür → aykırı veri.\n5. adım: Olası açıklama: Flor atomu çok küçük olduğundan ortaklanmamış elektron çiftleri birbirini güçlü iter ve bağ zayıflar.\n6. adım: Düzeltme: “Cl, Br ve I için grupta yukarı çıktıkça bağ enerjisi artar; flor bu eğilime uymaz.”\nSonuç: Her iki genelleme de sınırlandırılmalıdır. Az sayıda örnekten yapılan genellemeler, aykırı verilerle sınanmadan kesin kabul edilmemelidir.",
+      "ipucu": "Genellemeye uymayan tek bir güvenilir örnek bulmaya çalışın; bulursanız genellemeyi sınırlandırın."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Elektronegatiflik değerleri H: 2,1; F: 4,0; Cl: 3,0; Br: 2,8; I: 2,5 olduğuna göre aşağıdaki bağlardan hangisi en polardır?",
+      "secenekler": [
+        "H–I",
+        "H–Br",
+        "H–F",
+        "H–Cl"
+      ],
+      "dogru": 2,
+      "aciklama": "Bağın polarlığı ΔEN ile artar. ΔEN değerleri: H–I = 0,4; H–Br = 0,7; H–Cl = 0,9; H–F = 1,9. En büyük fark H–F bağındadır; bu bağda ortak çift flora çok yakındır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Cl–Cl bağının uzunluğu yaklaşık 199 pm, Br–Br bağının uzunluğu yaklaşık 228 pm'dir. Toplanabilirlik yaklaşımına göre Br–Cl bağının uzunluğu için en uygun tahmin hangisidir?",
+      "secenekler": [
+        "199 pm",
+        "214 pm",
+        "228 pm",
+        "427 pm"
+      ],
+      "dogru": 1,
+      "aciklama": "Kovalent yarıçaplar 99,5 pm (Cl) ve 114 pm (Br)'dir. Toplamları yaklaşık 213,5 pm'dir; ölçülen değer de yaklaşık 214 pm'dir. 427 pm, iki bağ uzunluğunun doğrudan toplanmasıyla yapılan yanlış bir hesaptır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "“Kovalent bağlı katılar elektriği iletmez.” genellemesinin sorgulanmasını gerektiren gözlem aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "İyot katısı elektriği iletmez.",
+        "Şeker kristali elektriği iletmez.",
+        "Elmas elektriği iletmez.",
+        "Grafit elektriği iletir."
+      ],
+      "dogru": 3,
+      "aciklama": "İlk üç gözlem genellemeyi destekler. Grafit yalnızca karbon atomlarından oluşan kovalent bir katı olduğu hâlde elektriği iletir; bu aykırı gözlem genellemenin sınırlandırılmasını gerektirir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "O–F bağıyla ilgili aşağıdaki ifadelerden hangisi doğrudur? (EN: O = 3,5; F = 4,0)",
+      "secenekler": [
+        "Ortak elektron çifti flora daha yakındır; oksijen kısmi pozitif yüklenir.",
+        "Bağ apolardır; çünkü iki atom da ametaldir.",
+        "Oksijen kısmi negatif, flor kısmi pozitif yüklenir.",
+        "Oksijen bir elektronunu tamamen flora vererek iyon oluşturur."
+      ],
+      "dogru": 0,
+      "aciklama": "ΔEN = 0,5 olduğundan bağ polar kovalenttir. Daha elektronegatif olan flor ortak çifti kendine çeker ve δ− yüklenir; oksijen δ+ olur. Elektron tamamen aktarılmaz; iki ametal arasında iyon oluşmaz."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Aynı tür iki ametal atomu arasında oluşan kovalent bağ apolardır.",
+          "dogru": true,
+          "aciklama": "Özdeş atomların elektronegatiflikleri eşittir (ΔEN = 0); ortak çift eşit paylaşılır."
+        },
+        {
+          "metin": "Polar kovalent bağda ortak elektron çifti, elektronegatifliği küçük olan atoma daha yakındır.",
+          "dogru": false,
+          "aciklama": "Ortak çift elektronegatifliği büyük olan atoma yakındır; bu atom δ− yük taşır."
+        },
+        {
+          "metin": "Toplanabilirlik yaklaşımıyla yapılan bağ uzunluğu tahmini, Br–Cl bağı için ölçülen değere çok yakındır.",
+          "dogru": true,
+          "aciklama": "Tahmin 213,5 pm, ölçülen değer yaklaşık 214 pm'dir; elektronegatiflikleri yakın atomlarda yöntem iyi çalışır."
+        },
+        {
+          "metin": "Bir genellemeye uymayan tek bir güvenilir gözlem, o genellemenin sorgulanması için yeterlidir.",
+          "dogru": true,
+          "aciklama": "Örneğin grafitin iletkenliği, “kovalent katılar iletmez” genellemesini sınırlandırmaya yeter."
+        },
+        {
+          "metin": "H–F bağında elektronegatiflik farkı 1,7'den büyük olduğu için hidrojen florür oda koşullarında katı iyonik bir bileşiktir.",
+          "dogru": false,
+          "aciklama": "Hidrojen florür yaklaşık 20 °C'de kaynayan moleküler bir maddedir; 1,7 sınırı yalnızca bir eğilimdir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Elektronegatiflik",
+          "Bir atomun bağdaki ortak elektron çiftini kendine çekme yeteneği"
+        ],
+        [
+          "Apolar kovalent bağ",
+          "Ortak elektron çiftinin iki atom arasında eşit paylaşıldığı bağ"
+        ],
+        [
+          "Polar kovalent bağ",
+          "Ortak çiftin daha elektronegatif atoma kaydığı bağ"
+        ],
+        [
+          "Kısmi yük (δ)",
+          "Polar bağdaki atomlarda oluşan, tam iyon yükünden küçük yük"
+        ],
+        [
+          "Kovalent yarıçap",
+          "Aynı iki atom arasındaki bağ uzunluğunun yarısı"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir atomun kovalent bağdaki ortak elektronları kendine çekme yeteneğine ___ denir.",
+          "cevap": "elektronegatiflik"
+        },
+        {
+          "metin": "İki özdeş atom arasında oluşan ve ortak çiftin eşit paylaşıldığı bağa ___ kovalent bağ denir.",
+          "cevap": "apolar"
+        },
+        {
+          "metin": "H–Cl bağında ortak çift klora daha yakın olduğu için bu bağ ___ kovalent bağdır.",
+          "cevap": "polar"
+        },
+        {
+          "metin": "Aynı iki atom arasındaki bağ uzunluğunun yarısına kovalent ___ denir.",
+          "cevap": "yarıçap"
+        },
+        {
+          "metin": "Gözlemlere dayanan, sınanabilir ve gerekçeli geçici açıklamaya ___ denir.",
+          "cevap": "hipotez"
+        }
+      ],
+      "kelimeler": [
+        "elektronegatiflik",
+        "apolar",
+        "polar",
+        "yarıçap",
+        "hipotez"
+      ],
+      "fazla": [
+        "iyonik",
+        "metalik"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Ölçülmüş veriler: F–F bağı yaklaşık 142 pm ve 158 kJ/mol; Cl–Cl bağı yaklaşık 199 pm ve 242 kJ/mol. Elektronegatiflikler: F = 4,0; Cl = 3,0. (a) Toplanabilirlik yaklaşımıyla Cl–F bağının uzunluğunu ve enerjisini tahmin ediniz. (b) Bağın polarlığını ve kısmi yükleri belirleyerek ölçülen değerlerin tahminden hangi yönde sapmasını beklediğinizi gerekçesiyle yazınız. (c) Cl–F bağı için ölçülen değerler yaklaşık 163 pm ve 250 kJ/mol'dür. Hem basit tahmininizin hem de (b)'deki beklentinizin geçerliliğini değerlendiriniz.",
+      "ipuclari": [
+        "1. adım: Kovalent yarıçapları bulun (142 ÷ 2 ve 199 ÷ 2), toplayın; bağ enerjileri için ortalama alın.",
+        "2. adım: ΔEN'i hesaplayın; δ− yükün hangi atomda olduğunu ve δ+ ile δ− uçlar arasındaki ek çekimin bağ uzunluğuna ve enerjisine etkisini düşünün.",
+        "3. adım: Ölçülen değerleri hem (a)'daki sayısal tahminle hem de (b)'deki yön beklentisiyle karşılaştırın; hangisinin tuttuğunu ayrı ayrı yazın."
+      ],
+      "cevap": "(a) r(F) = 142 ÷ 2 = 71 pm; r(Cl) = 199 ÷ 2 = 99,5 pm. Uzunluk tahmini: 71 + 99,5 = 170,5 pm. Enerji tahmini: {kesir:158 + 242|2} = 200 kJ/mol.\n(b) ΔEN = 4,0 − 3,0 = 1,0 → bağ polar kovalenttir; ortak çift flora yakındır, F δ−, Cl δ+ yüklenir. Kısmi yükler arasındaki ek elektrostatik çekim nedeniyle bağın tahminden daha kısa (170,5 pm'den küçük) ve daha sağlam (200 kJ/mol'den büyük) olması beklenir. ΔEN = 1,0, H–Cl'deki 0,9'a yakın olduğundan sapmanın belirgin olması öngörülür.\n(c) Ölçülen uzunluk 163 pm &lt; 170,5 pm ve ölçülen enerji 250 kJ/mol &gt; 200 kJ/mol'dür. Basit toplanabilirlik tahmini sayısal olarak tutmamıştır (enerjide yaklaşık 50 kJ/mol sapma vardır); bu yöntem polar bağlar için yetersizdir. Buna karşılık polarlığa dayanan beklenti (daha kısa ve daha sağlam bağ) verilerle desteklenmiştir. Böylece tutmayan basit tahmin, elektronegatiflik farkını hesaba katan daha geçerli bir tahminle düzeltilmiş olur; bu da tahmin–sınama döngüsünün tam bir uygulamasıdır."
+    }
+  ]
+}

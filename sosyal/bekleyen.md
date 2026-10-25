@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 1044 gönderi.
+Toplam 1069 gönderi.
 
 ## bilgi-7-turkce-7
 Sıra: 2026-11-19 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-turkce-7.png
@@ -10447,4 +10447,254 @@ Bunu biliyor muydunuz? İbadet: Sözlükte boyun eğmek, itaat etmek, saygı gö
 Faydalı bulduysanız arkadaşınızı etiketleyin.
 📘 9. sınıf Din Kültürü ve Ahlak Bilgisi 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-din-kulturu-ve-ahlak-bilgisi-hafta-16
 #derskutusu #dinkültürü #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-biyoloji-16
+Sıra: 2027-02-22 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-biyoloji-16.png
+
+```
+Bunu biliyor muydunuz? Ölçüm: Besinlerin enerji değeri kalorimetre ile ölçülür ve Q = m · c · ΔT bağıntısıyla hesaplanır; 1 gram karbonhidrat ve protein yaklaşık 4 kcal, 1 gram yağ ise yaklaşık 9 kcal enerji verir. Metabolizma: Canlıdaki tüm kimyasal tepkimelerin toplamı olan metabolizma, enerji açığa çıkaran katabolizma ve enerji harcayan anabolizmadan oluşur; bu iki süreç ATP-ADP döngüsüyle birbirine bağlanır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Biyoloji 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-biyoloji-hafta-16
+#derskutusu #biyoloji #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-cografya-16
+Sıra: 2027-02-22 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-cografya-16.png
+
+```
+Bunu biliyor muydunuz? Büyüme kademeleri: Göç, ulaşım bağlantısı ve yatırımlar sayesinde bir yerleşme mezra ve köyden kasabaya, kente, metropole ve 10 milyonu aşan megakente doğru büyüyebilir; birbirine bitişen kentler konurbasyon oluşturur. Büyüme yönü: Düz arazi, ulaşım koridorları ve uygun arazi fiyatı kentin büyümesini kolaylaştırır; deniz, göl, dik yamaç, koruma alanı, taşkın sahası ve fay hattı ise büyümeyi sınırlar.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Coğrafya 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-cografya-hafta-16
+#derskutusu #coğrafya #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-din-kulturu-16
+Sıra: 2027-02-23 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-din-kulturu-16.png
+
+```
+Bunu biliyor muydunuz? Tevhit: Allah’ın zatında, sıfatlarında ve fiillerinde bir ve tek olduğuna, eşi, benzeri ve ortağı bulunmadığına inanmak ve yalnız O’na kulluk etmektir. Kelime-i tevhit: «Lâ ilâhe illallah» cümlesi önce bütün sahte ilahları reddeder (nefiy), sonra yalnız Allah’ın ilah olduğunu kabul eder (isbat).
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Din Kültürü ve Ahlak Bilgisi 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-din-kulturu-ve-ahlak-bilgisi-hafta-16
+#derskutusu #dinkültürü #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-fikih-16
+Sıra: 2027-02-23 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fikih-16.png
+
+```
+Bunu biliyor muydunuz? Anlam ve hüküm: Oruç (savm), tan yerinin ağarmasından güneşin batışına kadar Allah rızası için yemek, içmek ve eşler arası ilişkiden uzak durmaktır. Ramazan orucu Bakara suresi 183-185. ayetlerle hicretin 2. yılında farz kılınmıştır. Çeşitleri: Ramazan orucu, kazası ve kefaret orucu farz; adak orucu ve bozulan nafile orucun kazası vaciptir. Şevval, Muharrem, eyyâm-ı bîd, pazartesi-perşembe ve arefe oruçları nafiledir; bayram günlerinde oruç tutmak haramdır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Fıkıh 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fikih-hafta-16
+#derskutusu #fıkıh #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-fizik-16
+Sıra: 2027-02-23 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-fizik-16.png
+
+```
+Bunu biliyor muydunuz? Basit elektrik devresi: Üreteç (pil), iletken tel, anahtar ve alıcının (ampul, direnç, motor) kesintisiz bir kapalı yol oluşturacak biçimde bağlanmasıyla kurulur; yol kesilirse devre çalışmaz. Su tesisatı analojisi: Pompa pile, borular iletken tellere, vana anahtara, su çarkı ampule, dar boru dirence, su sayacı ampermetreye, basınç ölçer voltmetreye karşılık gelir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Fizik 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-fizik-hafta-16
+#derskutusu #fizik #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-ingilizce-16
+Sıra: 2027-02-23 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-ingilizce-16.png
+
+```
+Bunu biliyor muydunuz? Gelecek zaman seçimi: Önceden kararlaştırılmış planlar be going to, bileti ve saati belli düzenlemeler Present Continuous, konuşma anındaki kararlar ve teklifler will, tarifeler ise Simple Present ile anlatılır: “The ferry leaves at 7.45.” Zaman yan cümleleri: when, as soon as, before, after, until, if ile başlayan gelecek anlamlı yan cümlelerde will değil Simple Present kullanılır: “As soon as we arrive, we'll call you.”
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf İngilizce 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-ingilizce-hafta-16
+#derskutusu #ingilizce #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-kimya-16
+Sıra: 2027-02-23 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kimya-16.png
+
+```
+Bunu biliyor muydunuz? Difüzyon: Gaz taneciklerinin rastgele hareketleri sonucunda bir gazın başka bir gaz (ya da sıvı) içinde kendiliğinden ve homojen olarak dağılmasıdır; örneğin parfüm kokusunun odaya yayılması. Efüzyon: Bir gazın, tanecik boyutuna yakın küçüklükteki bir delikten boşluğa (düşük basınçlı ortama) sızmasıdır; örneğin helyum balonunun zamanla sönmesi.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Kimya 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kimya-hafta-16
+#derskutusu #kimya #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-temel-dini-bilgiler-16
+Sıra: 2027-02-23 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-temel-dini-bilgiler-16.png
+
+```
+Bunu biliyor muydunuz? Esmâ-i hüsnâ: Allah'ın Kur'an-ı Kerim'de ve hadislerde bildirilen güzel isimlerine esmâ-i hüsnâ denir; Yüce Allah 'En güzel isimler Allah'ındır. O hâlde O'na o güzel isimlerle dua edin.' (A'râf suresi, 180. ayet) buyurur. Rakîb: Allah'ın her şeyi her an gözeten, koruyan ve kontrol altında tutan olduğunu bildiren isimdir; bu ismi bilen mümin yalnız kaldığında da sorumluluk bilinciyle davranır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Temel Dinî Bilgiler 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-temel-dini-bilgiler-hafta-16
+#derskutusu #temeldinibilgiler #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-ingilizce-16
+Sıra: 2027-02-24 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-ingilizce-16.png
+
+```
+Bunu biliyor muydunuz? Family TV Routines: Başkalarının alışkanlıkları Simple Present ile anlatılır ve sorulur: How often does your dad watch the news? — He always watches it at 8 p.m.; genel sorularda Do you ever watch...? kullanılır. Comparing Programs: Tercihlerin sebebi karşılaştırma sıfatlarıyla verilir: Sitcoms are funnier than soap operas., Documentaries are more educational than reality shows., the best / the most exciting program.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf İngilizce 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-ingilizce-hafta-16
+#derskutusu #ingilizce #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-din-kulturu-16
+Sıra: 2027-02-24 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-din-kulturu-16.png
+
+```
+Bunu biliyor muydunuz? Sosyal varlık olarak insan: İnsan tek başına yaşayamaz; din, bireyi aileden insanlığa kadar uzanan bir ilişkiler ağı içinde sorumlu ve duyarlı bir kişi olarak yetiştirir. Aile: Aile, dinî ve ahlaki değerlerin ilk öğrenildiği yerdir; İslam aileyi sevgi ve merhamet temeline oturtur, anne babaya iyiliği ve çocukların güzel yetiştirilmesini emreder.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Din Kültürü ve Ahlak Bilgisi 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-din-kulturu-ve-ahlak-bilgisi-hafta-16
+#derskutusu #dinkültürü #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-edebiyat-16
+Sıra: 2027-02-24 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-edebiyat-16.png
+
+```
+Bunu biliyor muydunuz? Ön bilgiyle bağlantı: Yunus Emre, su dolabı, halk şiiri ve Mevlânâ'nın ney benzetmesi hakkındaki ön bilgiler, dolabın aslından koparılmış insanı simgelediğini fark etmeyi kolaylaştırır. Bağlamdan anlam tahmini: 'Çalap', 'Mevlâ', 'yalap yalap', 'fani' gibi sözcüklerin anlamı, çevresindeki dizelerden ve görsel ipuçlarından hareketle tahmin edilir, ardından sözlükle doğrulanır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Türk Dili ve Edebiyatı 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-turk-dili-ve-edebiyati-hafta-16
+#derskutusu #edebiyat #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-fizik-16
+Sıra: 2027-02-24 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-fizik-16.png
+
+```
+Bunu biliyor muydunuz? Hareket izleri: Eşit zaman aralıklarıyla alınan izler arasındaki uzaklıklar eşitse hareket sabit hızlıdır; uzaklıklar artıyorsa cisim hızlanıyor, azalıyorsa yavaşlıyordur. Uzaklık farkları sabitse hareket sabit ivmelidir. Grafikler: Konum-zaman grafiğinde eğim hızı, hız-zaman grafiğinde eğim ivmeyi verir. Aynı eğik doğru x-t grafiğinde sabit hızı, v-t grafiğinde sabit ivmeyi gösterir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Fizik 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-fizik-hafta-16
+#derskutusu #fizik #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-ingilizce-16
+Sıra: 2027-02-24 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-ingilizce-16.png
+
+```
+Bunu biliyor muydunuz? Moving House: Taşınma sürecini 'packed, carried, took, drove, unpacked' gibi Past Simple fiilleriyle ve 'first, then, after that, finally' sıralama sözcükleriyle anlatırız. Too and Enough: 'too + sıfat' gereğinden fazlalığı ve sorunu (too small), 'sıfat + enough' yeterliliği (big enough), 'enough + isim' ise yeterli miktarı (enough rooms) anlatır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf İngilizce 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-ingilizce-hafta-16
+#derskutusu #ingilizce #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-kimya-16
+Sıra: 2027-02-24 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-kimya-16.png
+
+```
+Bunu biliyor muydunuz? Elektronegatiflik: Bir atomun kovalent bağdaki ortak elektron çiftini kendine çekme yeteneğidir; Pauling ölçeğinde en büyük değer flora (4,0) aittir. Apolar ve polar bağ: Özdeş atomlar arasında ortak çift eşit paylaşılır ve bağ apolardır; farklı ametaller arasında ortak çift daha elektronegatif atoma kayar, atomlarda kısmi yükler (δ+ ve δ−) oluşur ve bağ polardır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Kimya 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-kimya-hafta-16
+#derskutusu #kimya #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-kuran-i-kerim-16
+Sıra: 2027-02-25 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-kuran-i-kerim-16.png
+
+```
+Bunu biliyor muydunuz? Vakıf şekilleri: İskan her harekede, ravm yalnız ötre ve esrede, işmam yalnız ötrede yapılır; iskan ve işmamda Medd-i Arız 1, 2 veya 4 elif, ravmda ise yalnız 1 elif uzatılır. Sure uygulamaları: Kafirun Suresi'nde yedi Medd-i Munfasıl eşit ölçüde okunur; Felak Suresi'nin ayet sonlarında hiç med yoktur; Kureyş Suresi'nin dört ayeti de Medd-i Lin ile, Fil ve Maun surelerinin ayetleri Medd-i Arız ile biter.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Kur’an-ı Kerim 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-kuran-i-kerim-hafta-16
+#derskutusu #kuranıkerim #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-matematik-16
+Sıra: 2027-02-25 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-matematik-16.png
+
+```
+Bunu biliyor muydunuz? Doğruların görüntüsü: İzometriler doğrusallığı ve orta noktayı korur; öteleme ve 180° dönme bir doğruyu kendisine paralel bir doğruya, 90° dönme ise kendisine dik bir doğruya götürür. Herhangi bir merkez: M(a, b) noktasına göre yansımada görüntü (2a − x, 2b − y) olur; M etrafında pozitif yönde 90° dönmede (x, y) → (a − (y − b), b + (x − a)) kuralı kullanılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Matematik 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-matematik-hafta-16
+#derskutusu #matematik #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-peygamberimizin-hayati-16
+Sıra: 2027-02-25 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-peygamberimizin-hayati-16.png
+
+```
+Bunu biliyor muydunuz? Kararın sebebi: Hz. Hatice, Hz. Muhammed’i serveti için değil; akrabalığı, emanete bağlılığı, güzel ahlakı ve doğru sözlülüğü sebebiyle eş olarak tercih etmiştir. Nezaketli teklif: Rivayetlere göre teklif, Hz. Hatice’nin güvendiği arkadaşı Nefîse bint Münye aracılığıyla iletilmiş; Hz. Muhammed evlenmesine engel olarak maddi imkânsızlığını göstermiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Peygamberimizin Hayatı 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-peygamberimizin-hayati-hafta-16
+#derskutusu #peygamberimizinhayatı #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-temel-dini-bilgiler-16
+Sıra: 2027-02-25 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-temel-dini-bilgiler-16.png
+
+```
+Bunu biliyor muydunuz? Derinleşen merak: İyi bir inceleme yalnız “ne oldu?” diye sormakla kalmaz; “neden”, “hangi değerle” ve “bugün bana ne söylüyor” sorularını da sorar. Kültür ve medeniyet: Aliya İzzetbegoviç'e göre medeniyet insanın dış dünyaya hâkim olmasıyla, kültür ise insanın iç dünyasını, ahlakını ve inancını geliştirmesiyle ilgilidir; teknik ilerleme ahlakla birleşmedikçe insanı iyileştirmez.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Temel Dinî Bilgiler 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-temel-dini-bilgiler-hafta-16
+#derskutusu #temeldinibilgiler #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-felsefe-16
+Sıra: 2027-02-25 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-felsefe-16.png
+
+```
+Bunu biliyor muydunuz? Argüman değerlendirme: Bir felsefi argüman öncüller ve sonuçtan oluşur; öncüller doğruyken sonucun yanlış olamadığı argüman geçerli, hem geçerli hem de öncülleri doğru olan argüman sağlam sayılır. Antik şüphecilik: Protagoras bilgiyi bireye göre görecelileştirmiş, Gorgias bilginin imkânını üç basamakta reddetmiş, Pyrrhon ise eşit güçteki karşıt görüşler karşısında yargıyı askıya almayı (epokhe) önermiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Felsefe 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-felsefe-hafta-16
+#derskutusu #felsefe #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-hadis-16
+Sıra: 2027-02-25 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-hadis-16.png
+
+```
+Bunu biliyor muydunuz? Dağınık bölümler: İman esaslarıyla ilgili hadisler yalnız Kitâbü'l-Îmân'da değil; melekler için Bed'ü'l-halk, peygamberler için Enbiyâ, ahiret için Rikâk ve Zühd, kader için Kitâbü'l-Kader bölümlerinde de toplanmıştır. İki atıf sistemi: Bir hadis “Müslim, Zühd, 64” gibi bölüm-sıra sistemiyle ya da “Müslim, No. 2999” gibi genel numarayla gösterilebilir; ikisi aynı rivayeti işaret eder.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Hadis 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-hadis-hafta-16
+#derskutusu #hadis #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-kuran-i-kerim-16
+Sıra: 2027-02-26 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kuran-i-kerim-16.png
+
+```
+Bunu biliyor muydunuz? Okuma mertebeleri: Tahkik ağır ve titiz, tedvir orta hızlı, hadr hızlı okuyuştur; hangisi seçilirse seçilsin tecvit korunur ve seçilen med-gunne ölçüsü okuma boyunca değiştirilmez. Değerlendirme: Mahreç-sıfat, tecvit, vakıf-ibtidâ, akıcılık ve ölçü tutarlılığı ölçütleriyle yapılan dereceli puanlama, tilavetteki güçlü ve geliştirilecek yönleri somut biçimde gösterir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Kur’an-ı Kerim 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kuran-i-kerim-hafta-16
+#derskutusu #kuranıkerim #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-matematik-16
+Sıra: 2027-02-26 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-matematik-16.png
+
+```
+Bunu biliyor muydunuz? Yatay öteleme: g(x) = f(x − r) = (x − r)² fonksiyonunun grafiği, r > 0 ise referans parabolün r birim sağa, g(x) = (x + r)² ise r birim sola ötelenmişidir; parantezin içini sıfır yapan x değeri tepe noktasının apsisidir. Tepe noktası biçimi: g(x) = a · (x − r)² + k fonksiyonunda referans parabolün her (x, y) noktası (x + r, a · y + k) noktasına gider; tepe noktası T(r, k), simetri ekseni x = r doğrusudur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Matematik 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-matematik-hafta-16
+#derskutusu #matematik #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-peygamberimizin-hayati-16
+Sıra: 2027-02-26 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-peygamberimizin-hayati-16.png
+
+```
+Bunu biliyor muydunuz? Güvene dayalı davet: Kureyş’in sevilen, danışılan ve nesep bilgisiyle tanınan bu tüccarın daveti; Osman b. Affân, Zübeyr b. Avvâm, Abdurrahman b. Avf, Sa’d b. Ebî Vakkās ve Talha b. Ubeydullah’ın İslam’a girmesine vesile olmuştur. İnfak ve özgürlük: İşkence gören Bilâl-i Habeşî, Âmir b. Füheyre ve Zinnîre gibi Müslümanları satın alıp azat etmiştir. Tefsirlerde Leyl suresinin 17-21. ayetlerinin onun bu ihlaslı infakıyla ilişkilendirildiği rivayet edilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Peygamberimizin Hayatı 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-peygamberimizin-hayati-hafta-16
+#derskutusu #peygamberimizinhayatı #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-siyer-16
+Sıra: 2027-02-26 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-siyer-16.png
+
+```
+Bunu biliyor muydunuz? Arka plan: Boykotun hemen ardından gelen ve Ebû Tâlib ile Hz. Hatice'nin vefat ettiği yıl, Hüzün Yılı olarak anılır; Hz. Peygamber hem en büyük koruyucusunu hem de en yakın destekçisini kaybetmiştir. Yolculuğun amacı: Mekke'de himayenin zayıflaması ve baskının artması üzerine Hz. Peygamber, nübüvvetin onuncu yılı Şevval ayında Zeyd b. Hârise ile birlikte Tâif'e giderek Sakîf kabilesini İslam'a ve davete destek vermeye çağırmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Siyer 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-siyer-hafta-16
+#derskutusu #siyer #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-tarih-16
+Sıra: 2027-02-26 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-tarih-16.png
+
+```
+Bunu biliyor muydunuz? Devletleşme: Osmanlı'nın aşiret düzeninden kurumsal devlete geçişi; hanedan, para, divan, düzenli ordu, kadılık teşkilatı ve toprak düzeninin birbirini tamamlayarak ortaya çıkmasıyla gerçekleşmiştir. Kapıkulu ve eyalet askerleri: Merkezde padişaha doğrudan bağlı, maaşlı ve sürekli kapıkulu askerleri; taşrada tımar geliriyle geçinen sipahiler ve sınır boylarında akıncılar bulunuyordu.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Tarih 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-tarih-hafta-16
+#derskutusu #tarih #10sınıf #bunubiliyormuydunuz #maarifmodeli
 ```

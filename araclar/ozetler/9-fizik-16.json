@@ -1,0 +1,579 @@
+{
+  "ad": "9-fizik-16",
+  "sinif": 9,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 16,
+  "tarih": "4-8 Ocak 2027",
+  "yayin_tarihi": "2027-01-04",
+  "unite": "2. TEMA: KUVVET VE HAREKET",
+  "konu": "Hareket ve Hareket Türleri: Hareket İzleri, Grafikler, Hız-İvme Yönü ve Boyut Sayısına Göre Sınıflandırma, Hareket Dönüşümleri ve Sınıflandırma Anahtarı",
+  "ciktilar": [
+    "FİZ.9.2.7. Hareket türlerini sınıflandırabilme.",
+    "FİZ.9.2.7.a. Hareket türlerinin niteliklerini belirler.",
+    "FİZ.9.2.7.b-c. Hareket türlerini ortak özelliklerine göre ayrıştırır ve gruplandırır.",
+    "FİZ.9.2.7.ç. Hareket türlerine göre oluşturduğu grupları adlandırır."
+  ],
+  "giris": "Geçen hafta hareketleri yörünge, hız değişimi, tekrarlanma ve cismin noktalarının davranışı ölçütleriyle sınıflandırdık. Bu hafta sınıflandırma becerimizi yeni araçlarla güçlendiriyoruz. Hareketin bıraktığı {koyu:nokta izlerini} ve çizdiği {koyu:grafikleri} okuyarak nitelik belirleyecek, {koyu:hız ile ivmenin yönünü} karşılaştırarak hızlanan, yavaşlayan ve yön değiştiren hareketleri ayrıştıracak, hareketleri {koyu:boyut sayısına} göre gruplandıracağız. Ardından makinelerde bir hareket türünün başka bir türe nasıl dönüştüğünü inceleyecek ve her hareketi adım adım adlandırmamızı sağlayan bir {koyu:sınıflandırma anahtarı} kuracağız.",
+  "ozet": [
+    "{koyu:Hareket izleri:} Eşit zaman aralıklarıyla alınan izler arasındaki uzaklıklar eşitse hareket sabit hızlıdır; uzaklıklar artıyorsa cisim hızlanıyor, azalıyorsa yavaşlıyordur. Uzaklık farkları sabitse hareket sabit ivmelidir.",
+    "{koyu:Grafikler:} Konum-zaman grafiğinde eğim hızı, hız-zaman grafiğinde eğim ivmeyi verir. Aynı eğik doğru x-t grafiğinde sabit hızı, v-t grafiğinde sabit ivmeyi gösterir.",
+    "{koyu:Hız ve ivmenin yönü:} Hız ile ivme aynı yönlüyse cisim hızlanır, zıt yönlüyse yavaşlar. Hızın bir an sıfır olduğu yerde ivme sıfırdan farklıysa cisim yön değiştirir.",
+    "{koyu:Boyut sayısı:} Konumu tek koordinatla verilen hareketler bir boyutludur; iki koordinat gerekiyorsa hareket iki boyutlu, üç koordinat gerekiyorsa üç boyutludur.",
+    "{koyu:Hareket dönüşümleri:} Krank-biyel düzeneği ötelemeyi dönmeye, dişli çark ve kremayer dönmeyi ötelemeye çevirir. Vida ise dönme ile ötelemeyi birlikte yaparak bileşik hareket oluşturur.",
+    "{koyu:Sınıflandırma anahtarı:} Yörünge, hız durumu, tekrarlanma ve tür soruları sırayla yanıtlanır. Yanıtlar birleştirilerek grup adı konur; örneğin düzgün yavaşlayan doğrusal öteleme hareketi."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Hareket İzlerinden Nitelik Belirleme: Nokta Zamanlayıcı ve Çoklu Pozlama",
+      "metin": [
+        "Bir hareketin niteliklerini belirlemenin en güvenilir yolu, hareketi eşit zaman aralıklarında 'durdurup' kaydetmektir. Laboratuvarda bu iş için {koyu:nokta zamanlayıcı} (şerit zamanlayıcı) kullanılır. Cisme bağlanan kâğıt şerit düzeneğin içinden geçerken üzerine eşit zaman aralıklarıyla birer nokta vurulur. Aynı fikir fotoğrafçılıkta {koyu:çoklu pozlama} (stroboskobik fotoğraf) olarak karşımıza çıkar. Karanlık ortamda belirli aralıklarla yanıp sönen bir ışık, hareket eden cismin farklı anlardaki konumlarını tek bir karede toplar. İki yöntemde de ardışık iki iz arasında geçen süre aynıdır. Bu yüzden izler arasındaki uzaklık, o aralıktaki hızın büyüklüğünü doğrudan gösterir.",
+        "İzleri okumak için önce ardışık uzaklıklara bakarız. Uzaklıklar hep eşitse cisim eşit sürelerde eşit yollar almıştır ve hareket {koyu:sabit hızlı (ivmesiz)} gruptadır. Uzaklıklar giderek artıyorsa cisim {koyu:hızlanıyor}, giderek azalıyorsa {koyu:yavaşlıyor} demektir. Bir adım daha ileri gidebiliriz: Ardışık uzaklıkların farkı her seferinde aynıysa (örneğin 2 cm, 4 cm, 6 cm, 8 cm), hız her aralıkta eşit miktarda değişiyordur. Bu durumda hareket {koyu:sabit ivmeli} gruba girer. Her aralığın ortalama hızı v = {kesir:Δx|Δt} bağıntısıyla bulunur. Ardışık ortalama hızların farkı aralık süresine bölünerek ivme hesaplanır.",
+        "İzler yalnız hızı değil {koyu:yörüngeyi} de gösterir. Çoklu pozlama fotoğrafında izler düz bir çizgi üzerinde sıralanıyorsa hareket doğrusal, bir eğri boyunca diziliyorsa eğrisel, bir çember üzerinde yer alıyorsa çemberseldir. Örneğin yatay atılan bir topun fotoğrafında izler yatayda eşit aralıklı kalır, düşeyde ise aralıklar giderek açılır. Bu, topun yatayda sabit hızla ilerlerken düşeyde hızlandığını gösterir. Böylece tek bir görüntüden hem yörüngeye hem hız değişimine göre sınıflandırma yapabiliriz. İzlerin sayısı ve konumu hareketin bir veri kaydıdır; fizikte nitelik belirleme her zaman böyle ölçülebilir kanıtlara dayanır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "İz Görünümü",
+          "Hız Niteliği",
+          "Grup Adı"
+        ],
+        "satirlar": [
+          [
+            "Aralıklar eşit (2, 2, 2, 2 cm)",
+            "Hız sabit",
+            "İvmesiz (düzgün doğrusal) hareket"
+          ],
+          [
+            "Aralıklar eşit miktarda artıyor (2, 4, 6, 8 cm)",
+            "Hız eşit oranda artıyor",
+            "Düzgün hızlanan hareket"
+          ],
+          [
+            "Aralıklar eşit miktarda azalıyor (8, 6, 4, 2 cm)",
+            "Hız eşit oranda azalıyor",
+            "Düzgün yavaşlayan hareket"
+          ],
+          [
+            "Aralıklar düzensiz artıp azalıyor",
+            "Hız değişken",
+            "İvmesi değişken hareket"
+          ],
+          [
+            "İzler bir eğri boyunca diziliyor",
+            "Hızın yönü değişiyor",
+            "Eğrisel (ivmeli) hareket"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Şerit Okumanın Kısa Yolu",
+          "metin": "Önce hareketin başladığı ucu bul. Oradan itibaren aralıklar {koyu:açılıyorsa} hızlanma, {koyu:sıklaşıyorsa} yavaşlama, {koyu:eşitse} sabit hız vardır."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Neden Eşit Zaman Aralığı?",
+          "metin": "Zaman aralıkları eşit olmasaydı uzaklıkları karşılaştırmak hız hakkında bilgi vermezdi. Aralıklar eşit olduğunda izler arasındaki uzaklık doğrudan hızla orantılı olur."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='38' rx='8' fill='#0e7490'/><text x='380' y='39' text-anchor='middle' fill='#ffffff' font-size='16' font-weight='bold'>NOKTA İZLERİNDEN HIZ NİTELİĞİNİ OKUMA (eşit zaman aralıkları)</text><rect x='20' y='66' width='720' height='66' rx='10' fill='#ecfeff' stroke='#0891b2' stroke-width='2'/><text x='36' y='94' fill='#155e75' font-size='14' font-weight='bold'>Eşit aralık</text><text x='36' y='114' fill='#0f172a' font-size='12'>Sabit hız (ivmesiz)</text><circle cx='210' cy='99' r='6' fill='#155e75'/><circle cx='265' cy='99' r='6' fill='#155e75'/><circle cx='320' cy='99' r='6' fill='#155e75'/><circle cx='375' cy='99' r='6' fill='#155e75'/><circle cx='430' cy='99' r='6' fill='#155e75'/><circle cx='485' cy='99' r='6' fill='#155e75'/><circle cx='540' cy='99' r='6' fill='#155e75'/><text x='570' y='94' fill='#0f172a' font-size='12'>Aralık hep aynı</text><text x='570' y='114' fill='#155e75' font-size='13' font-weight='bold'>Düzgün doğrusal</text><rect x='20' y='142' width='720' height='66' rx='10' fill='#f0fdf4' stroke='#16a34a' stroke-width='2'/><text x='36' y='170' fill='#166534' font-size='14' font-weight='bold'>Açılan aralık</text><text x='36' y='190' fill='#0f172a' font-size='12'>Hız artıyor</text><circle cx='210' cy='175' r='6' fill='#166534'/><circle cx='222' cy='175' r='6' fill='#166534'/><circle cx='246' cy='175' r='6' fill='#166534'/><circle cx='282' cy='175' r='6' fill='#166534'/><circle cx='330' cy='175' r='6' fill='#166534'/><circle cx='390' cy='175' r='6' fill='#166534'/><circle cx='462' cy='175' r='6' fill='#166534'/><text x='570' y='170' fill='#0f172a' font-size='12'>Aralık düzenli artıyor</text><text x='570' y='190' fill='#166534' font-size='13' font-weight='bold'>Düzgün hızlanan</text><rect x='20' y='218' width='720' height='66' rx='10' fill='#fef2f2' stroke='#dc2626' stroke-width='2'/><text x='36' y='246' fill='#991b1b' font-size='14' font-weight='bold'>Sıklaşan aralık</text><text x='36' y='266' fill='#0f172a' font-size='12'>Hız azalıyor</text><circle cx='210' cy='251' r='6' fill='#991b1b'/><circle cx='282' cy='251' r='6' fill='#991b1b'/><circle cx='342' cy='251' r='6' fill='#991b1b'/><circle cx='390' cy='251' r='6' fill='#991b1b'/><circle cx='426' cy='251' r='6' fill='#991b1b'/><circle cx='450' cy='251' r='6' fill='#991b1b'/><circle cx='462' cy='251' r='6' fill='#991b1b'/><text x='570' y='246' fill='#0f172a' font-size='12'>Aralık düzenli azalıyor</text><text x='570' y='266' fill='#991b1b' font-size='13' font-weight='bold'>Düzgün yavaşlayan</text></svg>"
+    },
+    {
+      "baslik": "Grafik Okuyarak Hareketleri Gruplandırma",
+      "metin": [
+        "Hareketleri sınıflandırmanın ikinci güçlü aracı {koyu:grafiklerdir}. Konum-zaman (x-t) grafiğinde eğrinin {koyu:eğimi hızı} verir. Grafik zaman eksenine paralel yatay bir doğruysa konum değişmiyordur, yani cisim durmaktadır. Grafik eğik bir doğruysa eğim, dolayısıyla hız sabittir ve hareket {koyu:ivmesiz} gruptadır. Grafik giderek dikleşen ya da yatıklaşan bir eğriyse (parabol gibi), eğim yani hız değişiyordur ve hareket {koyu:ivmelidir}. Dikleşen eğri hızlanmayı, yatıklaşan eğri yavaşlamayı gösterir.",
+        "Hız-zaman (v-t) grafiğinde ise eğim {koyu:ivmeyi}, grafik ile zaman ekseni arasındaki alan {koyu:yer değiştirmeyi} verir. Yatay doğru sabit hızı (a = 0), eğik doğru sabit ivmeyi gösterir. Grafik zaman ekseninden uzaklaşıyorsa hızın büyüklüğü artıyordur (hızlanma); eksene yaklaşıyorsa hızın büyüklüğü azalıyordur (yavaşlama). Grafik zaman eksenini kesip öbür tarafa geçiyorsa hızın işareti değişmiştir; cisim o anda bir an durup {koyu:yön değiştirmiştir}. İvme-zaman (a-t) grafiğinde a = 0 doğrusu ivmesiz hareketi, sıfırdan farklı yatay doğru ise sabit ivmeli hareketi temsil eder.",
+        "Bir hareket birden fazla bölümden oluşuyorsa grafik {koyu:aralıklara} bölünür ve her aralık ayrı ayrı sınıflandırılır. Örneğin trafik ışığında bekleyen bir otobüs önce düzgün hızlanır, sonra sabit hızla gider, durağa yaklaşırken de düzgün yavaşlar. Bu hareketin v-t grafiği yükselen eğik bir doğru, yatay bir doğru ve alçalan eğik bir doğrudan oluşur. Grafik okurken en sık yapılan hata x-t ve v-t grafiklerini birbirine karıştırmaktır. Aynı biçimdeki eğik doğru x-t grafiğinde sabit hız, v-t grafiğinde ise sabit ivme anlamına gelir. Bu yüzden önce eksenlerin neyi gösterdiğine bakmak gerekir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Grafik",
+          "Görünüm",
+          "Hareketin Niteliği",
+          "Grup Adı"
+        ],
+        "satirlar": [
+          [
+            "x-t",
+            "Yatay doğru",
+            "Konum değişmiyor (v = 0)",
+            "Durgunluk"
+          ],
+          [
+            "x-t",
+            "Eğik doğru",
+            "Eğim sabit, hız sabit",
+            "İvmesiz hareket"
+          ],
+          [
+            "x-t",
+            "Dikleşen eğri",
+            "Eğim artıyor, hız artıyor",
+            "Hızlanan (ivmeli) hareket"
+          ],
+          [
+            "v-t",
+            "Yatay doğru (v ≠ 0)",
+            "Hız sabit, a = 0",
+            "Düzgün doğrusal hareket"
+          ],
+          [
+            "v-t",
+            "Eksenden uzaklaşan eğik doğru",
+            "Hızın büyüklüğü eşit oranda artıyor",
+            "Düzgün hızlanan hareket"
+          ],
+          [
+            "v-t",
+            "Eksene yaklaşan eğik doğru",
+            "Hızın büyüklüğü eşit oranda azalıyor",
+            "Düzgün yavaşlayan hareket"
+          ],
+          [
+            "a-t",
+            "Sıfırdan farklı yatay doğru",
+            "İvme sabit",
+            "Sabit ivmeli hareket"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Önce Eksenlere Bak",
+          "metin": "Eğik bir doğru gördüğünde hemen karar verme. Dikey eksen {koyu:konum} ise hareket sabit hızlıdır; dikey eksen {koyu:hız} ise hareket sabit ivmelidir."
+        },
+        {
+          "tur": "kural",
+          "baslik": "Grafikten Sınıflandırma Sırası",
+          "metin": "1) Eksenleri oku. 2) Grafiği eğimi değişmeyen aralıklara böl. 3) Her aralıkta eğimin anlamını yaz (x-t grafiğinde hız, v-t grafiğinde ivme). 4) Her aralığa bir grup adı ver."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='38' rx='8' fill='#4338ca'/><text x='380' y='39' text-anchor='middle' fill='#ffffff' font-size='16' font-weight='bold'>GRAFİĞİN BİÇİMİNDEN HAREKETİN GRUBUNA</text><rect x='20' y='64' width='165' height='222' rx='10' fill='#eef2ff' stroke='#4f46e5' stroke-width='2'/><text x='102' y='84' text-anchor='middle' fill='#312e81' font-size='13' font-weight='bold'>Konum-zaman</text><line x1='48' y1='220' x2='48' y2='96' stroke='#334155' stroke-width='2'/><line x1='48' y1='220' x2='170' y2='220' stroke='#334155' stroke-width='2'/><text x='36' y='104' fill='#334155' font-size='12'>x</text><text x='166' y='236' fill='#334155' font-size='12'>t</text><line x1='48' y1='220' x2='160' y2='110' stroke='#4f46e5' stroke-width='3'/><text x='102' y='256' text-anchor='middle' fill='#0f172a' font-size='12'>Eğik doğru</text><text x='102' y='274' text-anchor='middle' fill='#312e81' font-size='13' font-weight='bold'>Sabit hız</text><rect x='205' y='64' width='165' height='222' rx='10' fill='#ecfdf5' stroke='#059669' stroke-width='2'/><text x='287' y='84' text-anchor='middle' fill='#065f46' font-size='13' font-weight='bold'>Hız-zaman</text><line x1='233' y1='220' x2='233' y2='96' stroke='#334155' stroke-width='2'/><line x1='233' y1='220' x2='355' y2='220' stroke='#334155' stroke-width='2'/><text x='221' y='104' fill='#334155' font-size='12'>v</text><text x='351' y='236' fill='#334155' font-size='12'>t</text><line x1='233' y1='160' x2='345' y2='160' stroke='#059669' stroke-width='3'/><text x='287' y='256' text-anchor='middle' fill='#0f172a' font-size='12'>Yatay doğru</text><text x='287' y='274' text-anchor='middle' fill='#065f46' font-size='13' font-weight='bold'>Sabit hız (a = 0)</text><rect x='390' y='64' width='165' height='222' rx='10' fill='#fff7ed' stroke='#ea580c' stroke-width='2'/><text x='472' y='84' text-anchor='middle' fill='#9a3412' font-size='13' font-weight='bold'>Hız-zaman</text><line x1='418' y1='220' x2='418' y2='96' stroke='#334155' stroke-width='2'/><line x1='418' y1='220' x2='540' y2='220' stroke='#334155' stroke-width='2'/><text x='406' y='104' fill='#334155' font-size='12'>v</text><text x='536' y='236' fill='#334155' font-size='12'>t</text><line x1='418' y1='205' x2='530' y2='110' stroke='#ea580c' stroke-width='3'/><text x='472' y='256' text-anchor='middle' fill='#0f172a' font-size='12'>Eğik doğru</text><text x='472' y='274' text-anchor='middle' fill='#9a3412' font-size='13' font-weight='bold'>Sabit ivmeli</text><rect x='575' y='64' width='165' height='222' rx='10' fill='#fdf2f8' stroke='#db2777' stroke-width='2'/><text x='657' y='84' text-anchor='middle' fill='#9d174d' font-size='13' font-weight='bold'>Konum-zaman</text><line x1='603' y1='220' x2='603' y2='96' stroke='#334155' stroke-width='2'/><line x1='603' y1='220' x2='725' y2='220' stroke='#334155' stroke-width='2'/><text x='591' y='104' fill='#334155' font-size='12'>x</text><text x='721' y='236' fill='#334155' font-size='12'>t</text><path d='M603 220 Q 663 220 715 108' fill='none' stroke='#db2777' stroke-width='3'/><text x='657' y='256' text-anchor='middle' fill='#0f172a' font-size='12'>Dikleşen eğri</text><text x='657' y='274' text-anchor='middle' fill='#9d174d' font-size='13' font-weight='bold'>İvmeli (hızlanan)</text></svg>"
+    },
+    {
+      "baslik": "Hız ve İvmenin Yönüne Göre: Hızlanan, Yavaşlayan ve Yön Değiştiren Hareketler",
+      "metin": [
+        "Geçen hafta hız değişimine göre ivmesiz ve ivmeli hareketleri birbirinden ayırmıştık. Bu hafta ivmeli doğrusal hareketleri daha ince bir ölçütle ayrıştırıyoruz: {koyu:hız ile ivmenin yönleri}. İvme, hızdaki değişimin yönünü gösteren vektörel bir büyüklüktür. Hız ile ivme {koyu:aynı yönlüyse} hızın büyüklüğü artar ve cisim {koyu:hızlanır}. Hız ile ivme {koyu:zıt yönlüyse} hızın büyüklüğü azalır ve cisim {koyu:yavaşlar}. Doğrusal harekette bir yönü pozitif seçtiğimizde bu kural işaretlerle de ifade edilebilir: v ile a aynı işaretliyse hızlanma, zıt işaretliyse yavaşlama vardır.",
+        "Havasız ortamda düşey yukarı atılan bir top bu ölçüt için çok öğretici bir örnektir. Top çıkarken hızı yukarı, ivmesi (yer çekimi ivmesi g) aşağı yönlüdür; yönler zıt olduğu için top {koyu:yavaşlar}. En yüksek noktada hız bir an için sıfır olur. Ancak ivme sıfır değildir; hâlâ g büyüklüğünde ve aşağı yönlüdür. Bu ivme sayesinde top tepe noktasında kalmaz ve hareket yönünü değiştirir. İnişte hız da ivme de aşağı yönlü olduğundan top {koyu:hızlanır}. Tüm hareket boyunca ivme değişmediği için hareketin bütünü sabit ivmeli doğrusal harekettir. Yalnız çıkış aşaması yavaşlayan, iniş aşaması hızlanan hareket grubuna girer.",
+        "Buradan üçüncü bir alt grup çıkar: {koyu:yön değiştiren doğrusal hareketler}. Rampaya doğru yuvarlanıp bir an duran ve geri dönen top, yukarı atılıp geri düşen taş ya da ileri gittikten sonra geri vitese takılan araç bu gruptadır. Bu hareketlerde hızın sıfır olduğu anda ivme sıfırdan farklıdır ve cisim geri döner; v-t grafiği zaman eksenini keser. Unutulmaması gereken bir nokta daha var: {koyu:Eksi işaret} kendi başına yavaşlama anlamına gelmez. Örneğin v = −8 m/s ve a = −2 m/{us:s|2} olan bir cismin hızı ile ivmesi aynı işaretlidir. Bu nedenle cisim negatif yönde hızlanmaktadır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Hızın Yönü",
+          "İvmenin Yönü",
+          "Sonuç",
+          "Örnek"
+        ],
+        "satirlar": [
+          [
+            "İleri (+)",
+            "İleri (+)",
+            "Hızlanır",
+            "Yeşil ışıkta kalkan araç"
+          ],
+          [
+            "İleri (+)",
+            "Geri (−)",
+            "Yavaşlar",
+            "Fren yapan ama hâlâ ilerleyen araç"
+          ],
+          [
+            "Yukarı",
+            "Aşağı (g)",
+            "Yavaşlar",
+            "Yukarı atılıp yükselen top"
+          ],
+          [
+            "Sıfır (anlık)",
+            "Aşağı (g)",
+            "Yön değiştirir",
+            "Tepe noktasındaki top"
+          ],
+          [
+            "Aşağı",
+            "Aşağı (g)",
+            "Hızlanır",
+            "Tepe noktasından sonra düşen top"
+          ],
+          [
+            "Geri (−)",
+            "Geri (−)",
+            "Hızlanır",
+            "Geri geri giderken hızlanan araç"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Hız Sıfırsa İvme Sıfır Olmak Zorunda Değil",
+          "metin": "Yukarı atılan topun tepe noktasında v = 0 olur, ama a = g = 10 m/{us:s|2} ve aşağı yönlüdür. Hız ile ivme {koyu:farklı büyüklüklerdir}; birinin sıfır olması diğerinin de sıfır olmasını gerektirmez."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Eksi İvme Her Zaman Yavaşlama Değildir",
+          "metin": "Cismin hızlanıp yavaşlaması ivmenin işaretine tek başına bağlı değildir. Belirleyici olan, hızın ve ivmenin {koyu:işaretlerinin karşılaştırılmasıdır}."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='38' rx='8' fill='#15803d'/><text x='380' y='39' text-anchor='middle' fill='#ffffff' font-size='16' font-weight='bold'>YUKARI ATILAN TOP: HIZ VE İVMENİN YÖNÜ</text><rect x='20' y='62' width='160' height='222' rx='10' fill='#ecfdf5' stroke='#16a34a' stroke-width='2'/><circle cx='100' cy='165' r='12' fill='#f59e0b'/><line x1='86' y1='152' x2='86' y2='108' stroke='#16a34a' stroke-width='3'/><polygon points='80,110 86,98 92,110' fill='#16a34a'/><text x='70' y='128' fill='#16a34a' font-size='14' font-weight='bold'>v</text><line x1='114' y1='178' x2='114' y2='220' stroke='#dc2626' stroke-width='3'/><polygon points='108,218 114,230 120,218' fill='#dc2626'/><text x='124' y='206' fill='#dc2626' font-size='14' font-weight='bold'>a</text><text x='100' y='252' text-anchor='middle' fill='#0f172a' font-size='11'>Çıkış: v yukarı, a aşağı</text><text x='100' y='272' text-anchor='middle' fill='#166534' font-size='13' font-weight='bold'>Yavaşlıyor</text><rect x='196' y='62' width='160' height='222' rx='10' fill='#fefce8' stroke='#ca8a04' stroke-width='2'/><circle cx='276' cy='110' r='12' fill='#f59e0b'/><text x='296' y='114' fill='#0f172a' font-size='12' font-weight='bold'>v = 0</text><line x1='276' y1='124' x2='276' y2='204' stroke='#dc2626' stroke-width='3'/><polygon points='270,202 276,214 282,202' fill='#dc2626'/><text x='288' y='170' fill='#dc2626' font-size='13' font-weight='bold'>a = g</text><text x='276' y='252' text-anchor='middle' fill='#0f172a' font-size='11'>Tepe: v = 0, a = g aşağı</text><text x='276' y='272' text-anchor='middle' fill='#854d0e' font-size='12' font-weight='bold'>Anlık durur, ivme sürer</text><rect x='372' y='62' width='160' height='222' rx='10' fill='#fef2f2' stroke='#dc2626' stroke-width='2'/><circle cx='452' cy='120' r='12' fill='#f59e0b'/><line x1='438' y1='134' x2='438' y2='196' stroke='#16a34a' stroke-width='3'/><polygon points='432,194 438,206 444,194' fill='#16a34a'/><text x='420' y='170' fill='#16a34a' font-size='14' font-weight='bold'>v</text><line x1='466' y1='134' x2='466' y2='196' stroke='#dc2626' stroke-width='3'/><polygon points='460,194 466,206 472,194' fill='#dc2626'/><text x='476' y='170' fill='#dc2626' font-size='14' font-weight='bold'>a</text><text x='452' y='252' text-anchor='middle' fill='#0f172a' font-size='11'>İniş: v ve a aşağı</text><text x='452' y='272' text-anchor='middle' fill='#991b1b' font-size='13' font-weight='bold'>Hızlanıyor</text><rect x='548' y='62' width='192' height='222' rx='10' fill='#ffffff' stroke='#94a3b8' stroke-width='1.5'/><text x='644' y='90' text-anchor='middle' fill='#0f172a' font-size='14' font-weight='bold'>YÖN KURALI</text><text x='644' y='124' text-anchor='middle' fill='#0f172a' font-size='12'>v ile a aynı yönlü</text><text x='644' y='144' text-anchor='middle' fill='#15803d' font-size='13' font-weight='bold'>→ hızlanır</text><text x='644' y='178' text-anchor='middle' fill='#0f172a' font-size='12'>v ile a zıt yönlü</text><text x='644' y='198' text-anchor='middle' fill='#b91c1c' font-size='13' font-weight='bold'>→ yavaşlar</text><text x='644' y='232' text-anchor='middle' fill='#0f172a' font-size='12'>v = 0 iken a ≠ 0</text><text x='644' y='252' text-anchor='middle' fill='#854d0e' font-size='13' font-weight='bold'>→ yön değiştirir</text></svg>"
+    },
+    {
+      "baslik": "Hareketin Boyutuna Göre: Bir, İki ve Üç Boyutlu Hareketler",
+      "metin": [
+        "Hareketleri sınıflandırmak için kullanabileceğimiz bir başka ölçüt, cismin konumunu belirtmek için kaç sayıya (koordinata) ihtiyaç duyduğumuzdur. Buna hareketin {koyu:boyutu} denir. Konumu bir sayı ekseni üzerinde tek bir sayıyla (x) verilebilen hareketler {koyu:bir boyutlu} (1B) hareketlerdir. Asansörün katlar arasında gidip gelmesi, düz rayda giden tren ve havasız ortamda serbest düşen ya da düşey yukarı atılan top bu gruptadır. Bir boyutlu harekette cisim yön değiştirebilir, fakat bu değişim yalnız ileri-geri ya da yukarı-aşağı biçimindedir.",
+        "Konumu bir düzlem üzerinde iki sayıyla (x, y) verilebilen hareketler {koyu:iki boyutlu} (2B) hareketlerdir. Bilardo masasında bantlara çarparak ilerleyen top, yatay atılan basketbol topu, yelkovanın ucu ve salınan sarkacın topu düzlemsel bir yol çizer. Konumu belirtmek için üç sayı (x, y, z) gereken hareketler ise {koyu:üç boyutlu} (3B) hareketlerdir. Çiçekten çiçeğe uçan arı, havada manevra yapan bir dron, helezon (spiral) kaydıraktan kayan çocuk ve sıkılan bir vidanın kenarındaki nokta uzayda yön değiştirerek ilerler.",
+        "Boyut ölçütü de yörünge gibi bir {koyu:modelleme} kararıdır. Uzun bir otoyolda giden araç aslında yokuşlardan ve virajlardan geçer. Ancak yalnız yol boyunca aldığı mesafeyi incelediğimizde aracın hareketini bir boyutlu kabul edebiliriz. Benzer şekilde bilardo topunun yerden yüksekliği değişmediği için üçüncü boyutu ihmal ederiz. Fizikte bir hareketi incelerken amaca uygun en basit modeli seçmek önemlidir; boyut sayısı azaldıkça çözüm kolaylaşır. Bu sınıflandırma, ileride öğreneceğiniz iki boyutlu hareketlerin (atışlar, çembersel hareket) bir boyutlu hareketlerin birleşimi olarak incelenebileceğini anlamanın da ilk adımıdır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Boyut",
+          "Gereken Koordinat",
+          "Olası Yörünge",
+          "Örnekler"
+        ],
+        "satirlar": [
+          [
+            "Bir boyut (1B)",
+            "x",
+            "Doğru (ileri-geri ya da yukarı-aşağı)",
+            "Asansör, serbest düşen taş, düz rayda tren"
+          ],
+          [
+            "İki boyut (2B)",
+            "x, y",
+            "Düzlemde eğri, çember, kırık çizgi",
+            "Bilardo topu, yatay atış, yelkovan ucu, sarkaç topu"
+          ],
+          [
+            "Üç boyut (3B)",
+            "x, y, z",
+            "Uzayda eğri, helezon",
+            "Uçan arı, dron, helezon kaydırak, vida kenarındaki nokta"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Hareketin Boyutu",
+          "metin": "Bir cismin konumunu seçilen referans noktasına göre tam olarak belirtmek için gereken {koyu:en az koordinat sayısıdır}."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Doğrusal mı, Bir Boyutlu mu?",
+          "metin": "Yön değiştirse bile tek bir doğru üzerinde kalan her hareket bir boyutludur. Yörüngesi bir düzlem içinde kalan eğrisel hareketler ise iki boyutludur."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='38' rx='8' fill='#7c3aed'/><text x='380' y='39' text-anchor='middle' fill='#ffffff' font-size='16' font-weight='bold'>HAREKETİN BOYUTU: KAÇ KOORDİNAT GEREKİR?</text><rect x='20' y='62' width='228' height='222' rx='10' fill='#f5f3ff' stroke='#7c3aed' stroke-width='2'/><text x='134' y='86' text-anchor='middle' fill='#5b21b6' font-size='14' font-weight='bold'>Bir boyut (1B)</text><line x1='40' y1='160' x2='220' y2='160' stroke='#334155' stroke-width='2'/><polygon points='220,154 232,160 220,166' fill='#334155'/><line x1='70' y1='154' x2='70' y2='166' stroke='#334155' stroke-width='2'/><line x1='110' y1='154' x2='110' y2='166' stroke='#334155' stroke-width='2'/><line x1='150' y1='154' x2='150' y2='166' stroke='#334155' stroke-width='2'/><line x1='190' y1='154' x2='190' y2='166' stroke='#334155' stroke-width='2'/><text x='70' y='184' text-anchor='middle' fill='#334155' font-size='11'>0</text><text x='224' y='184' fill='#334155' font-size='12'>x</text><circle cx='150' cy='160' r='8' fill='#7c3aed'/><text x='150' y='142' text-anchor='middle' fill='#5b21b6' font-size='12' font-weight='bold'>K</text><text x='134' y='258' text-anchor='middle' fill='#0f172a' font-size='12'>Konum: tek sayı (x)</text><text x='134' y='276' text-anchor='middle' fill='#5b21b6' font-size='12' font-weight='bold'>Asansör, düşen taş</text><rect x='266' y='62' width='228' height='222' rx='10' fill='#eff6ff' stroke='#2563eb' stroke-width='2'/><text x='380' y='86' text-anchor='middle' fill='#1e3a8a' font-size='14' font-weight='bold'>İki boyut (2B)</text><line x1='300' y1='210' x2='470' y2='210' stroke='#334155' stroke-width='2'/><line x1='300' y1='210' x2='300' y2='100' stroke='#334155' stroke-width='2'/><text x='472' y='226' fill='#334155' font-size='12'>x</text><text x='288' y='108' fill='#334155' font-size='12'>y</text><path d='M305 200 Q 360 90 455 185' fill='none' stroke='#2563eb' stroke-width='3' stroke-dasharray='7,4'/><circle cx='372' cy='143' r='8' fill='#1e40af'/><text x='380' y='258' text-anchor='middle' fill='#0f172a' font-size='12'>Konum: (x, y)</text><text x='380' y='276' text-anchor='middle' fill='#1e3a8a' font-size='12' font-weight='bold'>Bilardo topu, yatay atış</text><rect x='512' y='62' width='228' height='222' rx='10' fill='#fff7ed' stroke='#ea580c' stroke-width='2'/><text x='626' y='86' text-anchor='middle' fill='#9a3412' font-size='14' font-weight='bold'>Üç boyut (3B)</text><line x1='600' y1='200' x2='720' y2='200' stroke='#334155' stroke-width='2'/><line x1='600' y1='200' x2='600' y2='100' stroke='#334155' stroke-width='2'/><line x1='600' y1='200' x2='550' y2='236' stroke='#334155' stroke-width='2'/><text x='722' y='214' fill='#334155' font-size='12'>x</text><text x='588' y='108' fill='#334155' font-size='12'>y</text><text x='536' y='238' fill='#334155' font-size='12'>z</text><path d='M620 210 Q 700 190 640 168 Q 580 146 660 126 Q 716 110 690 98' fill='none' stroke='#ea580c' stroke-width='3'/><circle cx='690' cy='98' r='7' fill='#9a3412'/><text x='626' y='258' text-anchor='middle' fill='#0f172a' font-size='12'>Konum: (x, y, z)</text><text x='626' y='276' text-anchor='middle' fill='#9a3412' font-size='12' font-weight='bold'>Arı, dron, helezon kaydırak</text></svg>"
+    },
+    {
+      "baslik": "Makinelerde ve Doğada Hareket Türlerinin Dönüşümü ve Birlikteliği",
+      "metin": [
+        "Makineler çoğu zaman bir hareket türünü başka bir türe {koyu:dönüştürmek} için tasarlanır. Taşıt motorlarında yakıtın yanmasıyla itilen {koyu:piston}, silindir içinde iki uç arasında gidip gelir. Pistonun bütün noktaları eşit yer değiştirdiği için bu bir öteleme hareketidir; düzenli tekrarlandığı için de periyodiktir. Pistona bağlı biyel kolu bu hareketi {koyu:krank miline} aktararak milin dönmesini sağlar. Bu düzeneğe {koyu:krank-biyel düzeneği} denir ve öteleme hareketini dönme hareketine çevirir. Dönen mil de aktarma parçaları aracılığıyla sonunda tekerlekleri döndürür.",
+        "Tersi yönde dönüşüm de mümkündür. Dişli bir çark düz bir dişli çubuğa ({koyu:kremayer}) geçirildiğinde çarkın dönme hareketi çubuğun öteleme hareketine dönüşür. Birçok aracın direksiyon sisteminde direksiyon simidinin dönmesi bu yolla tekerlekleri yönlendiren çubuğun ötelemesine çevrilir. {koyu:Vida} ise dönme ile ötelemeyi aynı anda yapar: Her tam turda dişleri arasındaki uzaklık kadar (vida adımı) ilerler. Bu yüzden vidanın hareketi bir {koyu:bileşik hareket}tir. Bisiklette pedalın dönmesi zinciri öteler, zincir arka dişliyi ve tekerleği döndürür, tekerleklerin yuvarlanması da bisikleti öteler; böylece bir dönüşüm zinciri oluşur.",
+        "Doğada da hareket türleri iç içedir. Dünya kendi ekseni etrafında dönerken Güneş etrafında dolanır. Ay da Dünya etrafında dolanırken kendi ekseni etrafında döner; bu iki hareketin süreleri eşit olduğu için Dünya'dan Ay'ın hep aynı yüzü görülür. Canlılarda kalbin atışı ve akciğerlerin şişip inmesi yaklaşık periyodik hareketlerdir; dinlenme hâlindeki bir yetişkinin kalbi dakikada yaklaşık 60-100 kez atar. Kuşların kanat çırpması bir denge konumu etrafında gidip gelme olduğundan titreşime benzeyen periyodik bir harekettir; bu sırada kuşun gövdesi havada üç boyutlu bir öteleme yapar. Bu örnekler, sınıflandırma ölçütlerinin laboratuvar dışında da işe yaradığını gösterir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Düzenek",
+          "Giriş Hareketi",
+          "Çıkış Hareketi",
+          "Kullanım Alanı"
+        ],
+        "satirlar": [
+          [
+            "Krank-biyel",
+            "Öteleme (pistonun gidip gelmesi)",
+            "Dönme (krank mili)",
+            "Taşıt motorları"
+          ],
+          [
+            "Dişli çark ve kremayer",
+            "Dönme (dişli çark)",
+            "Öteleme (kremayer)",
+            "Direksiyon sistemi"
+          ],
+          [
+            "Vida",
+            "Dönme (tornavidayla)",
+            "Dönme + öteleme (bileşik)",
+            "Ahşap ve metal parçaları birleştirme"
+          ],
+          [
+            "Bisiklet (pedal-zincir-tekerlek)",
+            "Dönme (pedal)",
+            "Öteleme (bisikletin ilerlemesi)",
+            "Ulaşım"
+          ],
+          [
+            "Kapı kolu ve kilit dili",
+            "Dönme (kol)",
+            "Öteleme (kilit dilinin içeri çekilmesi)",
+            "Kapı kilidi"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Ay'ın Hep Aynı Yüzü",
+          "metin": "Ay, kendi ekseni etrafındaki bir dönüşünü Dünya etrafındaki bir dolanımıyla {koyu:aynı sürede} tamamlar. Bu nedenle Dünya'dan bakıldığında Ay'ın hep aynı yüzü görülür; bu durum iki periyodik hareketin eşleşmesine güzel bir örnektir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Dönüşümü Bulmanın Yolu",
+          "metin": "Düzeneğe hareketi veren parçayı ({koyu:giriş}) ve işi yapan parçayı ({koyu:çıkış}) belirle. Sonra her parçaya iki nokta testini ayrı ayrı uygula."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='38' rx='8' fill='#b45309'/><text x='380' y='39' text-anchor='middle' fill='#ffffff' font-size='16' font-weight='bold'>MAKİNELERDE HAREKET DÖNÜŞÜMLERİ</text><rect x='20' y='62' width='228' height='222' rx='10' fill='#f1f5f9' stroke='#475569' stroke-width='2'/><text x='134' y='86' text-anchor='middle' fill='#1e293b' font-size='14' font-weight='bold'>Krank-biyel</text><path d='M40 125 L150 125 M40 175 L150 175 M40 125 L40 175' fill='none' stroke='#334155' stroke-width='3'/><rect x='95' y='129' width='32' height='42' rx='3' fill='#94a3b8' stroke='#334155' stroke-width='1.5'/><line x1='127' y1='150' x2='205' y2='118' stroke='#475569' stroke-width='5'/><circle cx='205' cy='150' r='32' fill='none' stroke='#334155' stroke-width='3'/><circle cx='205' cy='118' r='5' fill='#1e293b'/><circle cx='205' cy='150' r='4' fill='#1e293b'/><line x1='80' y1='192' x2='140' y2='192' stroke='#2563eb' stroke-width='2.5'/><polygon points='80,186 70,192 80,198' fill='#2563eb'/><polygon points='140,186 150,192 140,198' fill='#2563eb'/><path d='M240 150 A35 35 0 0 1 205 185' fill='none' stroke='#dc2626' stroke-width='2.5'/><polygon points='211,179 199,185 211,191' fill='#dc2626'/><text x='134' y='232' text-anchor='middle' fill='#1d4ed8' font-size='11'>Piston: öteleme (gidip gelme)</text><text x='134' y='250' text-anchor='middle' fill='#b91c1c' font-size='11'>Krank mili: dönme</text><text x='134' y='272' text-anchor='middle' fill='#1e293b' font-size='12' font-weight='bold'>Taşıt motorları</text><rect x='266' y='62' width='228' height='222' rx='10' fill='#fffbeb' stroke='#d97706' stroke-width='2'/><text x='380' y='86' text-anchor='middle' fill='#92400e' font-size='14' font-weight='bold'>Dişli çark ve kremayer</text><circle cx='380' cy='128' r='28' fill='#fde68a' stroke='#b45309' stroke-width='8' stroke-dasharray='6,6'/><circle cx='380' cy='128' r='7' fill='#92400e'/><path d='M338 128 A42 42 0 0 1 380 86' fill='none' stroke='#dc2626' stroke-width='2.5'/><polygon points='375,80 387,86 375,92' fill='#dc2626'/><rect x='290' y='166' width='180' height='14' rx='2' fill='#fcd34d' stroke='#b45309' stroke-width='1.5'/><line x1='290' y1='162' x2='470' y2='162' stroke='#b45309' stroke-width='6' stroke-dasharray='6,6'/><line x1='330' y1='198' x2='430' y2='198' stroke='#2563eb' stroke-width='2.5'/><polygon points='430,192 442,198 430,204' fill='#2563eb'/><text x='380' y='232' text-anchor='middle' fill='#b91c1c' font-size='11'>Dişli çark: dönme</text><text x='380' y='250' text-anchor='middle' fill='#1d4ed8' font-size='11'>Kremayer: öteleme</text><text x='380' y='272' text-anchor='middle' fill='#92400e' font-size='12' font-weight='bold'>Direksiyon sistemi</text><rect x='512' y='62' width='228' height='222' rx='10' fill='#f0fdf4' stroke='#16a34a' stroke-width='2'/><text x='626' y='86' text-anchor='middle' fill='#166534' font-size='14' font-weight='bold'>Vida</text><rect x='540' y='110' width='24' height='50' rx='4' fill='#64748b'/><rect x='564' y='124' width='130' height='22' fill='#cbd5e1' stroke='#475569' stroke-width='1.5'/><line x1='574' y1='124' x2='582' y2='146' stroke='#475569' stroke-width='2'/><line x1='588' y1='124' x2='596' y2='146' stroke='#475569' stroke-width='2'/><line x1='602' y1='124' x2='610' y2='146' stroke='#475569' stroke-width='2'/><line x1='616' y1='124' x2='624' y2='146' stroke='#475569' stroke-width='2'/><line x1='630' y1='124' x2='638' y2='146' stroke='#475569' stroke-width='2'/><line x1='644' y1='124' x2='652' y2='146' stroke='#475569' stroke-width='2'/><line x1='658' y1='124' x2='666' y2='146' stroke='#475569' stroke-width='2'/><line x1='672' y1='124' x2='680' y2='146' stroke='#475569' stroke-width='2'/><polygon points='694,124 716,135 694,146' fill='#94a3b8' stroke='#475569' stroke-width='1.5'/><path d='M532 104 Q 516 135 532 166' fill='none' stroke='#dc2626' stroke-width='2.5'/><polygon points='526,161 534,172 539,159' fill='#dc2626'/><line x1='580' y1='176' x2='690' y2='176' stroke='#2563eb' stroke-width='2.5'/><polygon points='690,170 702,176 690,182' fill='#2563eb'/><text x='626' y='232' text-anchor='middle' fill='#0f172a' font-size='11'>Dönme + ilerleme birlikte</text><text x='626' y='250' text-anchor='middle' fill='#166534' font-size='11'>Bileşik hareket</text><text x='626' y='272' text-anchor='middle' fill='#166534' font-size='12' font-weight='bold'>Her turda bir adım ilerler</text></svg>"
+    },
+    {
+      "baslik": "Sınıflandırma Anahtarı ile Hareketleri Adlandırma ve Kavram Yanılgıları",
+      "metin": [
+        "Bilim insanları canlıları ya da kayaçları tanımlarken sıralı sorulardan oluşan {koyu:sınıflandırma anahtarları} kullanır. Hareketler için de böyle bir anahtar kurabiliriz. Anahtarımız dört sorudan oluşur: 1) Yörüngenin şekli ne? 2) Hız (büyüklük ya da yön bakımından) değişiyor mu; değişiyorsa hız ile ivme aynı yönlü mü? 3) Hareket eşit sürelerde kendini tekrarlıyor mu? 4) İki nokta testine göre cisim öteleme mi, dönme mi, titreşim mi yapıyor? Her soru bir ölçüte karşılık gelir. Soruları sırayla yanıtlayan her öğrenci aynı hareket için aynı sonuca ulaşır. Bu, iyi bir sınıflandırmanın en önemli özelliğidir: {koyu:tekrarlanabilirlik}.",
+        "Anahtarın sonunda elde edilen yanıtlar birleştirilerek {koyu:grup adı} oluşturulur. Örneğin kırmızı ışığa yaklaşırken sabit frenle yavaşlayan bir aracın gövdesi için yanıtlar şunlardır: 'doğrusal', 'hız ile ivme zıt yönlü, hız eşit oranda azalıyor', 'periyodik değil' ve 'öteleme'. Bu hareketin adı {koyu:düzgün yavaşlayan doğrusal öteleme hareketi}dir. Sabit devirle dönen bir CD'nin kenarındaki nokta için yanıtlar 'çembersel', 'sürat sabit ama yön değişiyor', 'periyodik' ve 'dönme' olur; bu hareketin adı {koyu:düzgün çembersel hareket}tir. Gerektiğinde boyut bilgisi de eklenebilir: Birinci hareket bir boyutlu, ikincisi iki boyutludur.",
+        "Sınıflandırma yaparken bazı yaygın {koyu:kavram yanılgılarından} kaçınmak gerekir. Şu düşünceler yanlıştır: Hızı sıfır olan cismin ivmesi de sıfırdır; eksi ivme her zaman yavaşlama anlamına gelir; dönen her cisim periyodik hareket yapar; öteleme yalnız doğru boyunca olur. Havasız ortamda ağır cisimlerin hafif cisimlerden daha hızlı düştüğü düşüncesi de bir yanılgıdır. Hava direnci yoksa bütün cisimler aynı g ivmesiyle düşer ve aynı gruba girer. Aşağıdaki tablo bu yanılgıları doğrularıyla birlikte göstermektedir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Yanılgı",
+          "Doğrusu",
+          "Örnek"
+        ],
+        "satirlar": [
+          [
+            "Hız sıfırsa ivme de sıfırdır.",
+            "Hız bir an sıfırken ivme sıfırdan farklı olabilir.",
+            "Yukarı atılan topun tepe noktası"
+          ],
+          [
+            "Eksi ivme her zaman yavaşlatır.",
+            "Hız da eksi yönlüyse cisim hızlanır.",
+            "v = −8 m/s, a = −2 m/{us:s|2} olan araç"
+          ],
+          [
+            "Dönen her cisim periyodiktir.",
+            "Tur süreleri eşit değilse hareket periyodik değildir.",
+            "Giderek yavaşlayıp duran topaç"
+          ],
+          [
+            "Öteleme yalnız doğrusal yörüngede olur.",
+            "Yörünge eğri olsa da tüm noktalar eşit yer değiştiriyorsa öteleme vardır.",
+            "Dönme dolap kabini"
+          ],
+          [
+            "Sabit süratli hareket ivmesizdir.",
+            "Hızın yönü değişiyorsa hareket ivmelidir.",
+            "Düzgün çembersel hareket"
+          ],
+          [
+            "Havasız ortamda ağır cisim daha hızlı düşer.",
+            "Hava direnci yoksa bütün cisimler aynı ivmeyle düşer.",
+            "Ay yüzeyinde yapılan tüy ve çekiç deneyi"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Sınıflandırma Anahtarının Altın Kuralı",
+          "metin": "Soruları {koyu:her zaman aynı sırayla} sor ve her soruda yalnız bir ölçüte bak. Gözlemciyi baştan belirt; adın her kelimesinin bir soruya karşılık geldiğini kontrol et."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Adlandırmada Kelime Sırası",
+          "metin": "Grup adı genellikle {koyu:hız durumu + yörünge + tür} sırasıyla kurulur: düzgün (hız) + doğrusal (yörünge) + öteleme (tür). Hareket periyodikse bu bilgi de ada eklenebilir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 360' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='360' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='38' rx='8' fill='#be123c'/><text x='380' y='39' text-anchor='middle' fill='#ffffff' font-size='16' font-weight='bold'>HAREKETLER İÇİN DÖRT SORULUK SINIFLANDIRMA ANAHTARI</text><rect x='20' y='64' width='220' height='54' rx='10' fill='#ffe4e6' stroke='#e11d48' stroke-width='2'/><text x='130' y='96' text-anchor='middle' fill='#881337' font-size='13' font-weight='bold'>1. Yörüngenin şekli ne?</text><rect x='260' y='74' width='110' height='34' rx='17' fill='#ffffff' stroke='#e11d48' stroke-width='1.5'/><text x='315' y='96' text-anchor='middle' fill='#0f172a' font-size='12'>Doğrusal</text><rect x='380' y='74' width='110' height='34' rx='17' fill='#ffffff' stroke='#e11d48' stroke-width='1.5'/><text x='435' y='96' text-anchor='middle' fill='#0f172a' font-size='12'>Çembersel</text><rect x='500' y='74' width='110' height='34' rx='17' fill='#ffffff' stroke='#e11d48' stroke-width='1.5'/><text x='555' y='96' text-anchor='middle' fill='#0f172a' font-size='12'>Eğrisel</text><rect x='620' y='74' width='110' height='34' rx='17' fill='#ffffff' stroke='#e11d48' stroke-width='1.5'/><text x='675' y='96' text-anchor='middle' fill='#0f172a' font-size='12'>Düzensiz</text><polygon points='124,119 136,119 130,127' fill='#475569'/><rect x='20' y='128' width='220' height='54' rx='10' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/><text x='130' y='160' text-anchor='middle' fill='#1e3a8a' font-size='13' font-weight='bold'>2. Hız değişiyor mu?</text><rect x='260' y='138' width='170' height='34' rx='17' fill='#ffffff' stroke='#2563eb' stroke-width='1.5'/><text x='345' y='160' text-anchor='middle' fill='#0f172a' font-size='12'>Hayır: ivmesiz</text><rect x='440' y='138' width='290' height='34' rx='17' fill='#ffffff' stroke='#2563eb' stroke-width='1.5'/><text x='585' y='160' text-anchor='middle' fill='#0f172a' font-size='12'>Evet: hızlanan / yavaşlayan / yön değiştiren</text><polygon points='124,183 136,183 130,191' fill='#475569'/><rect x='20' y='192' width='220' height='54' rx='10' fill='#fef3c7' stroke='#d97706' stroke-width='2'/><text x='130' y='224' text-anchor='middle' fill='#92400e' font-size='13' font-weight='bold'>3. Eşit sürede tekrar var mı?</text><rect x='260' y='202' width='230' height='34' rx='17' fill='#ffffff' stroke='#d97706' stroke-width='1.5'/><text x='375' y='224' text-anchor='middle' fill='#0f172a' font-size='12'>Evet: periyodik</text><rect x='500' y='202' width='230' height='34' rx='17' fill='#ffffff' stroke='#d97706' stroke-width='1.5'/><text x='615' y='224' text-anchor='middle' fill='#0f172a' font-size='12'>Hayır: periyodik değil</text><polygon points='124,247 136,247 130,255' fill='#475569'/><rect x='20' y='256' width='220' height='54' rx='10' fill='#dcfce7' stroke='#16a34a' stroke-width='2'/><text x='130' y='288' text-anchor='middle' fill='#166534' font-size='13' font-weight='bold'>4. İki nokta testi sonucu?</text><rect x='260' y='266' width='110' height='34' rx='17' fill='#ffffff' stroke='#16a34a' stroke-width='1.5'/><text x='315' y='288' text-anchor='middle' fill='#0f172a' font-size='12'>Öteleme</text><rect x='380' y='266' width='110' height='34' rx='17' fill='#ffffff' stroke='#16a34a' stroke-width='1.5'/><text x='435' y='288' text-anchor='middle' fill='#0f172a' font-size='12'>Dönme</text><rect x='500' y='266' width='110' height='34' rx='17' fill='#ffffff' stroke='#16a34a' stroke-width='1.5'/><text x='555' y='288' text-anchor='middle' fill='#0f172a' font-size='12'>Titreşim</text><rect x='620' y='266' width='110' height='34' rx='17' fill='#ffffff' stroke='#16a34a' stroke-width='1.5'/><text x='675' y='288' text-anchor='middle' fill='#0f172a' font-size='12'>Bileşik</text><rect x='20' y='318' width='720' height='32' rx='8' fill='#1e293b'/><text x='380' y='339' text-anchor='middle' fill='#ffffff' font-size='12'>Ad = hız durumu + yörünge + tür (+ periyodik)   Örnek: düzgün yavaşlayan doğrusal öteleme hareketi</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Düz bir masada hareket eden oyuncak bir arabanın 0,1 saniye aralıklarla çoklu pozlama fotoğrafı çekiliyor. Ardışık görüntüler arasındaki uzaklıklar sırasıyla 2 cm, 4 cm, 6 cm ve 8 cm ölçülüyor. a) Her aralıktaki ortalama hızı bulunuz. b) Hızın nasıl değiştiğini belirleyip ivmeyi hesaplayınız. c) Hareketi yörünge ve hız durumuna göre adlandırınız.",
+      "cevap": "a) Her aralık için v = {kesir:Δx|Δt} uygulanır: {kesir:2 cm|0,1 s} = 20 cm/s; {kesir:4 cm|0,1 s} = 40 cm/s; {kesir:6 cm|0,1 s} = 60 cm/s; {kesir:8 cm|0,1 s} = 80 cm/s. b) Ortalama hız her 0,1 saniyede 20 cm/s artmaktadır. Artış miktarı her seferinde aynı olduğu için ivme sabittir: a = {kesir:20 cm/s|0,1 s} = 200 cm/{us:s|2} = 2 m/{us:s|2}. Ardışık uzaklıkların farkının hep 2 cm olması da ivmenin sabit olduğunu doğrular. c) İzler düz bir çizgi üzerinde olduğundan yörünge {koyu:doğrusaldır}; hız eşit oranda arttığından hareket {koyu:düzgün hızlanan doğrusal hareket} grubundadır.",
+      "ipucu": "Önce aralık uzaklıklarını süreye bölerek hızları bulunuz, sonra ardışık hızların farkına bakınız."
+    },
+    {
+      "soru": "Doğrusal yolda giden bir aracın hız-zaman grafiği üç bölümden oluşuyor: 0-4 s arasında hız 0'dan 20 m/s'ye düzgün olarak artıyor, 4-10 s arasında 20 m/s'de sabit kalıyor, 10-14 s arasında 20 m/s'den 0'a düzgün olarak azalıyor. a) Her bölümün ivmesini bulup bölümü sınıflandırınız. b) Aracın 14 saniyede aldığı yolu bulunuz.",
+      "cevap": "a) 1. bölüm: a = {kesir:20 − 0|4} = 5 m/{us:s|2}. Hız ile ivme aynı yönlü olduğundan bu bölüm {koyu:düzgün hızlanan} harekettir. 2. bölüm: Hız değişmediği için a = 0; bu bölüm {koyu:düzgün doğrusal (ivmesiz)} harekettir. 3. bölüm: a = {kesir:0 − 20|4} = −5 m/{us:s|2}. Hız pozitif, ivme negatif olduğundan bu bölüm {koyu:düzgün yavaşlayan} harekettir. b) Yol, v-t grafiğinin altındaki alana eşittir. 1. bölüm (üçgen): {kesir:4 · 20|2} = 40 m. 2. bölüm (dikdörtgen): 6 · 20 = 120 m. 3. bölüm (üçgen): {kesir:4 · 20|2} = 40 m. Toplam yol 40 + 120 + 40 = 200 m bulunur. Araç yön değiştirmediği için yer değiştirmesi de 200 m'dir.",
+      "ipucu": "v-t grafiğinde eğim ivmeyi, grafiğin altındaki alan alınan yolu verir."
+    },
+    {
+      "soru": "Havasız ortamda bir top 30 m/s hızla düşey yukarı atılıyor (g = 10 m/{us:s|2}). a) Top kaç saniyede en yüksek noktaya çıkar? b) En yüksek noktada topun hızı ve ivmesi nedir? c) Topun çıkabileceği en büyük yüksekliği bulunuz. d) Çıkış ve iniş aşamalarını hız-ivme yönüne göre sınıflandırınız; hareketin bütününü adlandırınız.",
+      "cevap": "a) Çıkarken hız her saniye 10 m/s azalır. 30 m/s'lik hızın sıfıra inmesi için gereken süre t = {kesir:30|10} = 3 s'dir. b) En yüksek noktada hız bir an için {koyu:sıfırdır}; ivme ise değişmez, {koyu:10 m/{us:s|2} ve aşağı yönlüdür}. c) Çıkış süresince hız düzgün değiştiği için ortalama hız {kesir:30 + 0|2} = 15 m/s olur. Yükseklik h = 15 · 3 = 45 m bulunur. d) Çıkışta hız yukarı, ivme aşağı yönlüdür; yönler zıt olduğu için top {koyu:yavaşlar}. İnişte hız ve ivme aşağı yönlüdür; yönler aynı olduğu için top {koyu:hızlanır}. Top 3 s'de çıkar, 3 s'de iner ve 6. saniyede atıldığı noktaya 30 m/s hızla aşağı doğru döner. Hareketin bütünü doğrusal, bir boyutlu, sabit ivmeli, yön değiştiren, periyodik olmayan bir öteleme hareketidir.",
+      "ipucu": "Tepe noktasında hız sıfırdır ama ivme sıfır değildir; ivme tüm hareket boyunca g'dir."
+    },
+    {
+      "soru": "Aşağıdaki hareketleri boyut sayısına göre gruplandırınız: I. Düz rayda giden tren, II. Bilardo masasında bantlara çarparak ilerleyen top, III. Çiçekten çiçeğe uçan arı, IV. Sabit devirle dönen pikap plağı üzerindeki bir nokta, V. Helezon kaydıraktan kayan çocuk, VI. Havasız ortamda yukarı atılıp geri düşen top.",
+      "cevap": "1. adım (nitelik belirleme): Her hareket için konumu belirtmeye kaç koordinat gerektiğine bakılır. Tren ve yukarı atılan top tek bir doğru üzerinde kalır; bilardo topu ve plak noktası bir düzlem içinde hareket eder; arı ve kaydıraktaki çocuk ise hem yatayda hem düşeyde yön değiştirir. 2. adım (gruplandırma ve adlandırma): {koyu:Bir boyutlu hareketler:} I ve VI (VI'da top yön değiştirse de aynı doğru üzerinde kalır). {koyu:İki boyutlu hareketler:} II ve IV (plaktaki nokta çember çizer; çember bir düzlemdedir). {koyu:Üç boyutlu hareketler:} III ve V (konum için x, y ve z gerekir).",
+      "ipucu": "Cismin konumunu bir arkadaşınıza tarif etmek için kaç sayı söylemeniz gerektiğini düşününüz."
+    },
+    {
+      "soru": "Adımı 2 mm olan bir vida (her tam turda 2 mm ilerler) tornavidayla tahtaya sıkılıyor. Tornavida her tam turu 0,5 saniyede tamamlıyor. a) Vidanın 3 cm gömülmesi için kaç tur atılmalıdır? b) Bu işlem kaç saniye sürer? c) Vidanın dönme periyodunu, frekansını ve ortalama ilerleme hızını bulunuz. d) Vidanın hareketini sınıflandırınız.",
+      "cevap": "a) 3 cm = 30 mm'dir. Tur sayısı = {kesir:30 mm|2 mm} = 15 turdur. b) Süre = 15 · 0,5 = 7,5 s. c) Bir tam tur 0,5 s sürdüğünden periyot T = 0,5 s, frekans f = {kesir:1|T} = {kesir:1|0,5} = 2 Hz olur. Ortalama ilerleme hızı v = {kesir:30 mm|7,5 s} = 4 mm/s'dir. d) Vida kendi ekseni etrafında dönerken aynı anda ekseni boyunca ilerler. Dönme ve öteleme birlikte görüldüğü için vidanın hareketi bir {koyu:bileşik hareket}tir. Tur süreleri eşit olduğu sürece dönme periyodiktir. Vidanın kenarındaki bir nokta helezon çizdiğinden bu noktanın hareketi {koyu:üç boyutludur}.",
+      "ipucu": "Önce cm'yi mm'ye çeviriniz; toplam ilerlemeyi bir turdaki ilerlemeye bölünüz."
+    },
+    {
+      "soru": "Sınıflandırma anahtarındaki dört soruyu kullanarak aşağıdaki hareketleri adlandırınız ve boyutlarını yazınız: a) Kalkıştan sonra düz pistte düzgün hızlanan bir uçağın gövdesi, b) Sabit devirle dönen müzik kutusunun döner tablası üzerindeki bir nokta, c) Ucuna kütle asılmış, sürtünmesiz ortamda düşey doğrultuda aşağı yukarı salınan bir yay.",
+      "cevap": "a) 1. soru: yörünge doğrusal. 2. soru: hız artıyor ve hız ile ivme aynı yönlü; hız eşit oranda değiştiği için düzgün hızlanan. 3. soru: kendini tekrarlamıyor, periyodik değil. 4. soru: gövdenin tüm noktaları eşit yer değiştiriyor, öteleme. Adı: {koyu:düzgün hızlanan doğrusal öteleme hareketi}; bir boyutlu. b) 1. soru: çembersel. 2. soru: sürat sabit ama yön sürekli değişiyor, ivmeli. 3. soru: her turda aynı hareketi yineliyor, periyodik. 4. soru: noktalar bir eksen etrafında çember çiziyor, dönme. Adı: {koyu:düzgün çembersel hareket}; iki boyutlu. c) 1. soru: kütle düşey bir doğru üzerinde gidip geliyor, doğrusal. 2. soru: uçlarda bir an duruyor, denge konumundan en hızlı geçiyor; hız sürekli değiştiği için ivmeli ve yön değiştiren. 3. soru: eşit sürelerde tekrarlıyor, periyodik. 4. soru: denge konumu etrafında iki uç arasında gidip geliyor, titreşim. Adı: {koyu:periyodik titreşim hareketi}; bir boyutlu.",
+      "ipucu": "Soruları her hareket için aynı sırayla yanıtlayınız; adı oluştururken her yanıttan bir kelime alınız."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Doğrusal yolda giden bir aracın hız-zaman grafiği, zaman eksenine paralel ve sıfırdan farklı bir doğrudur. Bu araç için aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Araç durmaktadır.",
+        "Araç sabit hızla hareket etmektedir ve ivmesi sıfırdır.",
+        "Araç düzgün hızlanmaktadır.",
+        "Araç sürekli yön değiştirmektedir."
+      ],
+      "dogru": 1,
+      "aciklama": "v-t grafiğinin eğimi ivmeyi verir. Yatay doğrunun eğimi sıfır olduğundan a = 0'dır; hız sıfırdan farklı ve sabit olduğu için araç düzgün doğrusal hareket yapar."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Havasız ortamda düşey yukarı atılan bir top en yüksek noktadayken aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Hızı da ivmesi de sıfırdır.",
+        "Hızı sıfır, ivmesi yukarı yönlüdür.",
+        "Hızı sıfır, ivmesi aşağı yönlü ve g büyüklüğündedir.",
+        "Hızı en büyük değerinde, ivmesi sıfırdır."
+      ],
+      "dogru": 2,
+      "aciklama": "Tepe noktasında hız bir an sıfır olur; fakat yer çekimi etkisini sürdürdüğü için ivme g büyüklüğünde ve aşağı yönlüdür. Bu ivme sayesinde top yön değiştirip geri düşer."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir nokta zamanlayıcı şeridinde, hareketin başladığı uçtan itibaren ardışık noktalar arasındaki uzaklıklar giderek azalmaktadır. Bu şeride bağlı cismin hareketi için ne söylenebilir?",
+      "secenekler": [
+        "Cisim sabit hızla hareket etmiştir.",
+        "Cisim hızlanmıştır.",
+        "Cisim periyodik hareket yapmıştır.",
+        "Cisim yavaşlamıştır."
+      ],
+      "dogru": 3,
+      "aciklama": "Noktalar eşit zaman aralıklarıyla vurulur. Eşit sürelerde alınan yolun giderek azalması hızın azaldığını, yani cismin yavaşladığını gösterir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir taşıt motorunda pistonun silindir içindeki gidip gelme (öteleme) hareketini krank milinin dönme hareketine çeviren düzenek hangisidir?",
+      "secenekler": [
+        "Krank-biyel düzeneği",
+        "Vida",
+        "Kapı kolu ve kilit dili",
+        "Bilardo masası"
+      ],
+      "dogru": 0,
+      "aciklama": "Krank-biyel düzeneğinde biyel kolu pistonun ötelemesini krank miline aktarır ve onu döndürür. Vida dönmeyi ilerlemeye çevirir; kapı kolu dönmeyi kilit dilinin ötelemesine çevirir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Hız-zaman grafiği eğik bir doğru olan hareket sabit ivmelidir.",
+          "dogru": true,
+          "aciklama": "v-t grafiğinin eğimi ivmeyi verir; eğik doğrunun eğimi her yerde aynı olduğundan ivme sabittir."
+        },
+        {
+          "metin": "Hızı sıfır olan bir cismin ivmesi de her zaman sıfırdır.",
+          "dogru": false,
+          "aciklama": "Yukarı atılan topun tepe noktasında hız sıfırdır, ama ivme g büyüklüğünde ve aşağı yönlüdür."
+        },
+        {
+          "metin": "İvmesi negatif olan bir cisim her zaman yavaşlar.",
+          "dogru": false,
+          "aciklama": "Hız da negatifse hız ile ivme aynı yönlüdür ve cisim negatif yönde hızlanır."
+        },
+        {
+          "metin": "Düzgün çembersel hareket iki boyutlu bir harekettir.",
+          "dogru": true,
+          "aciklama": "Çember bir düzlem içinde kalır; noktanın konumunu belirtmek için iki koordinat yeterlidir."
+        },
+        {
+          "metin": "Sıkılan bir vida hem döner hem ilerler; bu nedenle vidanın hareketi bir bileşik harekettir.",
+          "dogru": true,
+          "aciklama": "Vida dönme ile ötelemeyi aynı anda yapar; iki hareket türünün birlikte görüldüğü hareketlere bileşik hareket denir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavram ve durumları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Nokta aralıkları eşit olan şerit",
+          "Sabit hızlı (ivmesiz) hareketin kaydı"
+        ],
+        [
+          "Konum-zaman grafiğinde dikleşen eğri",
+          "Hızı artan, yani ivmeli bir hareket"
+        ],
+        [
+          "Hız ve ivmenin zıt yönlü olması",
+          "Cismin yavaşladığı hareket; örneğin fren yapan araç"
+        ],
+        [
+          "Üç boyutlu hareket",
+          "Konumu belirtmek için x, y ve z koordinatlarının gerektiği hareket; örneğin uçan arı"
+        ],
+        [
+          "Dişli çark ve kremayer",
+          "Dönme hareketini öteleme hareketine çeviren düzenek; örneğin direksiyon sistemi"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Konum-zaman grafiğinin eğimi cismin ___ değerini verir.",
+          "cevap": "hız"
+        },
+        {
+          "metin": "Hız ile ivme aynı yönlü olduğunda cisim ___.",
+          "cevap": "hızlanır"
+        },
+        {
+          "metin": "Konumu tek bir sayı ekseni üzerinde tek bir sayıyla verilebilen hareketlere ___ boyutlu hareket denir.",
+          "cevap": "bir"
+        },
+        {
+          "metin": "Krank-biyel düzeneği pistonun öteleme hareketini krank milinin ___ hareketine dönüştürür.",
+          "cevap": "dönme"
+        },
+        {
+          "metin": "Yukarı atılan bir cismin tepe noktasında hızı sıfır olsa da ___ sıfır değildir.",
+          "cevap": "ivmesi"
+        }
+      ],
+      "kelimeler": [
+        "hız",
+        "hızlanır",
+        "bir",
+        "dönme",
+        "ivmesi"
+      ],
+      "fazla": [
+        "periyot",
+        "titreşim"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Düz bir yolda hareket eden oyuncak bir arabanın hızı 1 saniye aralıklarla ölçülüyor. t = 0, 1, 2, 3, 4, 5, 6, 7, 8 s anlarındaki hızlar sırasıyla 0, 2, 4, 6, 6, 6, 4, 2, 0 m/s'dir. Hareketi bölümlere ayırıp her bölümün ivmesini bulunuz ve bölümleri hız-ivme yönüne göre sınıflandırınız. Ardından toplam yolu ve ortalama sürati hesaplayınız, hız-zaman grafiğinin biçimini ve 1 saniye aralıklı nokta izlerinin görünümünü tahmin ediniz. Son olarak hareketin bütününü boyut, tekrarlanma ve tür ölçütlerine göre adlandırınız.",
+      "ipuclari": [
+        "1. adım: Ardışık hız farklarına bakarak hızın arttığı, sabit kaldığı ve azaldığı zaman aralıklarını belirleyiniz; her aralığın ivmesini a = {kesir:Δv|Δt} ile hesaplayınız.",
+        "2. adım: Her aralıkta hız ile ivmenin işaretlerini karşılaştırarak hızlanma ve yavaşlama gruplarını belirleyiniz; v-t grafiğinin altındaki alanı üçgen ve dikdörtgen parçalarına bölerek yolu bulunuz.",
+        "3. adım: Her saniyede alınan yolları hesaplayıp nokta izlerinin aralıklarını tahmin ediniz; sonra sınıflandırma anahtarının dört sorusunu hareketin bütününe uygulayınız."
+      ],
+      "cevap": "Bölümler: 0-3 s: Hız her saniye 2 m/s artıyor; a = {kesir:6 − 0|3} = 2 m/{us:s|2}. Hız ile ivme aynı işaretli olduğu için bu bölüm {koyu:düzgün hızlanan} harekettir. 3-5 s: Hız 6 m/s'de sabit, a = 0; bu bölüm {koyu:düzgün doğrusal (ivmesiz)} harekettir. 5-8 s: Hız her saniye 2 m/s azalıyor; a = {kesir:0 − 6|3} = −2 m/{us:s|2}. Hız pozitif, ivme negatif olduğu için bu bölüm {koyu:düzgün yavaşlayan} harekettir. Yol: 1. bölüm (üçgen) {kesir:3 · 6|2} = 9 m; 2. bölüm (dikdörtgen) 2 · 6 = 12 m; 3. bölüm (üçgen) {kesir:3 · 6|2} = 9 m. Toplam yol 9 + 12 + 9 = 30 m'dir. Araba yön değiştirmediği için yer değiştirme de 30 m'dir. Ortalama sürat {kesir:30 m|8 s} = 3,75 m/s bulunur. Grafik: v-t grafiği yükselen eğik doğru, yatay doğru ve alçalan eğik doğrudan oluşan bir yamuk biçimindedir. Nokta izleri: Her saniyede alınan yollar 1, 3, 5, 6, 6, 5, 3, 1 m'dir. Bu yüzden izler önce düzenli açılır, sonra eşit aralıklı olur, en sonunda düzenli sıklaşır. Bütünün adı: Yörünge doğrusal ve bir boyutlu; hareket kendini tekrarlamadığı için periyodik değil; arabanın gövdesi öteleme yapıyor. Hareket sırasıyla düzgün hızlanan, düzgün doğrusal ve düzgün yavaşlayan bölümlerden oluşan, {koyu:bir boyutlu doğrusal öteleme hareketidir}."
+    }
+  ]
+}

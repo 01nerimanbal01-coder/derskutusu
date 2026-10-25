@@ -1,0 +1,627 @@
+{
+  "ad": "10-fizik-16",
+  "sinif": 10,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 16,
+  "tarih": "4-8 Ocak 2027",
+  "yayin_tarihi": "2027-01-04",
+  "unite": "3. Tema: Elektrik",
+  "konu": "Basit Elektrik Devreleri: Su Tesisatı Analojisiyle Potansiyel Fark, Elektrik Akımı ve Direnç",
+  "ciktilar": [
+    "FİZ.10.3.1. Basit elektrik devresinde potansiyel fark, elektrik akımı ve direnç kavramlarının tanımına ilişkin analojik akıl yürütebilme",
+    "a) Basit elektrik devresi ile su tesisatının bileşenlerini gözlemler.",
+    "b) Basit elektrik devresi ile su tesisatının bileşenleri arasındaki benzerlikleri ve farklılıkları tespit eder.",
+    "c) Benzerliklere dayalı olarak basit elektrik devresindeki potansiyel fark, elektrik akımı ve direncin tanımı hakkında çıkarım yapar."
+  ],
+  "giris": "Enerji temasında elektriğin bir kaynak değil, kaynaklardan üretilen bir {koyu:enerji taşıyıcısı} olduğunu görmüştük. Bu hafta yeni temamız {koyu:Elektrik}'e başlıyoruz ve o taşıyıcının evimize, el fenerimize, telefonumuza nasıl ulaştığını en basit hâliyle, bir {koyu:basit elektrik devresiyle} inceliyoruz. Gözle göremediğimiz elektriği anlamak için gözle görebildiğimiz bir sistemden, {koyu:su tesisatından} yardım alacağız: pompayı pile, boruyu tele, dar boruyu dirence benzeterek {koyu:potansiyel fark}, {koyu:elektrik akımı} ve {koyu:direnç} kavramlarına ulaşacak; benzetmenin nerede işe yarayıp nerede yanıltabileceğini de tartışacağız.",
+  "ozet": [
+    "{koyu:Basit elektrik devresi:} Üreteç (pil), iletken tel, anahtar ve alıcının (ampul, direnç, motor) kesintisiz bir kapalı yol oluşturacak biçimde bağlanmasıyla kurulur; yol kesilirse devre çalışmaz.",
+    "{koyu:Su tesisatı analojisi:} Pompa pile, borular iletken tellere, vana anahtara, su çarkı ampule, dar boru dirence, su sayacı ampermetreye, basınç ölçer voltmetreye karşılık gelir.",
+    "{koyu:Potansiyel fark:} Pompanın oluşturduğu basınç farkı suyu nasıl akıtıyorsa pilin uçları arasındaki potansiyel fark da elektrik yüklerini harekete geçirir; birimi volttur (V) ve voltmetre ölçülecek iki nokta arasına paralel bağlanarak ölçülür.",
+    "{koyu:Elektrik akımı:} Borunun bir kesitinden birim zamanda geçen su miktarına (debi) benzer şekilde, iletkenin bir kesitinden birim zamanda geçen elektrik yükü miktarıdır; birimi amperdir (A), ampermetre devreye seri bağlanır ve seri bir kolun her noktasında akım aynıdır.",
+    "{koyu:Direnç:} Dar, uzun ya da pürüzlü bir borunun akışı zorlaştırması gibi, bir iletkenin akıma karşı gösterdiği zorluktur; birimi ohmdur (Ω), uzunluk ve maddenin cinsine bağlı olarak artar, kesit alanı büyüdükçe azalır.",
+    "{koyu:Analojinin sınırları:} Su tesisatı yararlı bir modeldir ama aynısı değildir; açık anahtar akımı keserken açık vana akışı başlatır, kopan telden yük dışarı dökülmez ve elektrik akımı ancak kapalı devrede oluşur."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Basit Elektrik Devresi ve Bileşenleri",
+      "metin": [
+        "El fenerinin düğmesine bastığında ampulün hemen yanması, aslında bir {koyu:elektrik devresinin} tamamlanmasıdır. Bir enerji kaynağından çıkan elektriğin bir alıcıya ulaşıp yeniden kaynağa dönebildiği kesintisiz yola {koyu:elektrik devresi} denir. En az sayıda bileşenle kurulan, tek bir üreteç ve tek ya da birkaç alıcı içeren devreye ise {koyu:basit elektrik devresi} diyoruz. Basit bir devrede dört temel bileşen bulunur: {koyu:üreteç} (pil, akü veya güç kaynağı), {koyu:iletken tel}, {koyu:anahtar} ve {koyu:alıcı} (ampul, direnç, elektrik motoru, zil gibi).",
+        "{koyu:Üreteç}, devrenin enerji kaynağıdır; pil ve akülerde kimyasal enerji elektrik enerjisine dönüşür. Pilin iki ucu vardır: {koyu:pozitif (+) kutup} ve {koyu:negatif (−) kutup}. {koyu:İletken teller} genellikle bakırdan yapılır ve plastik bir yalıtkanla kaplanır; görevleri elektriği bileşenler arasında taşımaktır. {koyu:Anahtar}, devreyi istediğimiz anda açıp kapatmamızı sağlar. {koyu:Alıcı} ise elektrik enerjisini başka bir enerji türüne dönüştüren bileşendir: Ampul ışık ve ısıya, motor harekete, zil sese dönüştürür. Devredeki büyüklükleri ölçmek için {koyu:ampermetre} ve {koyu:voltmetre} gibi ölçü aletleri de devreye eklenebilir.",
+        "Devreleri her seferinde resim olarak çizmek zor olduğu için bilim insanları ve mühendisler ortak {koyu:devre sembolleri} kullanır. Sembollerle çizilmiş devre resmine {koyu:devre şeması} denir. Anahtar kapalıyken yol kesintisizdir ve buna {koyu:kapalı devre} denir; ampul yanar. Anahtar açıldığında ya da bir tel koptuğunda yol kesilir ve {koyu:açık devre} oluşur; ampul söner. Bu hafta boyunca bu bileşenlerin her birinin su tesisatında bir karşılığı olduğunu göreceğiz; böylece devrede neler olup bittiğini gözümüzde canlandırmamız kolaylaşacak."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Bileşen",
+          "Görevi",
+          "Devre şemasındaki sembolü",
+          "Günlük yaşamdan örnek"
+        ],
+        "satirlar": [
+          [
+            "Üreteç (pil, akü)",
+            "Devrede potansiyel fark oluşturarak enerji sağlar",
+            "Uzun ince çizgi (+) ve kısa kalın çizgi (−)",
+            "Kalem pil, araba aküsü, telefon bataryası"
+          ],
+          [
+            "İletken tel",
+            "Elektriği bileşenler arasında taşır",
+            "Düz çizgi",
+            "Bakır kablolar, uzatma kablosu"
+          ],
+          [
+            "Anahtar",
+            "Devreyi açar veya kapatır",
+            "İki nokta arasında açılıp kapanan kol",
+            "Lamba düğmesi, el feneri butonu"
+          ],
+          [
+            "Ampul (alıcı)",
+            "Elektrik enerjisini ışık ve ısıya dönüştürür",
+            "İçinde çarpı işareti olan daire",
+            "Masa lambası, el feneri ampulü"
+          ],
+          [
+            "Direnç (alıcı)",
+            "Akımı sınırlar, enerjiyi ısıya dönüştürür",
+            "Dikdörtgen (veya zikzak çizgi)",
+            "Elektrikli ısıtıcı teli, elektronik kartlardaki dirençler"
+          ],
+          [
+            "Ampermetre",
+            "Akımı ölçer, devreye seri bağlanır",
+            "İçinde A harfi olan daire",
+            "Multimetrenin akım kademesi"
+          ],
+          [
+            "Voltmetre",
+            "Potansiyel farkı ölçer, paralel bağlanır",
+            "İçinde V harfi olan daire",
+            "Multimetrenin gerilim kademesi"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Basit Elektrik Devresi",
+          "metin": "Bir üreteç, iletken teller, bir anahtar ve en az bir alıcının, elektriğin üreteçten çıkıp alıcıdan geçerek yeniden üretece dönebileceği {koyu:kesintisiz bir kapalı yol} oluşturacak biçimde bağlanmasıyla kurulan devredir."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Yol kesintisiz olmalı",
+          "metin": "Pilin yalnızca bir ucunu ampule bağlamak ampulü yakmaz. Elektriğin pilin bir kutbundan çıkıp ampulden geçerek {koyu:diğer kutba geri dönebilmesi} gerekir. Devrenin herhangi bir yerindeki kopukluk bütün devreyi durdurur."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='14' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>Basit Elektrik Devresi ve Devre Sembolleri</text><rect x='20' y='46' width='390' height='236' rx='12' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><polyline points='70,160 70,80 190,80' fill='none' stroke='#1e293b' stroke-width='3'/><polyline points='250,80 370,80 370,150' fill='none' stroke='#1e293b' stroke-width='3'/><polyline points='370,190 370,260 70,260 70,180' fill='none' stroke='#1e293b' stroke-width='3'/><line x1='48' y1='160' x2='92' y2='160' stroke='#1e293b' stroke-width='3'/><line x1='58' y1='180' x2='82' y2='180' stroke='#1e293b' stroke-width='6'/><text x='96' y='158' font-size='14' font-weight='700' fill='#b91c1c'>+</text><text x='96' y='190' font-size='14' font-weight='700' fill='#1d4ed8'>−</text><text x='112' y='175' font-size='12' fill='#334155'>Pil (üreteç)</text><circle cx='190' cy='80' r='4' fill='#1e293b'/><circle cx='250' cy='80' r='4' fill='#1e293b'/><line x1='190' y1='80' x2='250' y2='80' stroke='#1e293b' stroke-width='3'/><text x='220' y='66' text-anchor='middle' font-size='12' fill='#334155'>Anahtar (kapalı)</text><circle cx='370' cy='170' r='20' fill='#fef9c3' stroke='#1e293b' stroke-width='3'/><line x1='356' y1='156' x2='384' y2='184' stroke='#1e293b' stroke-width='2'/><line x1='384' y1='156' x2='356' y2='184' stroke='#1e293b' stroke-width='2'/><text x='342' y='174' text-anchor='end' font-size='12' fill='#334155'>Ampul (alıcı)</text><polygon points='138,80 128,74 128,86' fill='#b91c1c'/><text x='130' y='100' text-anchor='middle' font-size='11' fill='#b91c1c'>akım yönü</text><polygon points='292,260 302,254 302,266' fill='#b91c1c'/><text x='220' y='250' text-anchor='middle' font-size='12' fill='#334155'>İletken tel</text><text x='215' y='277' text-anchor='middle' font-size='11' fill='#475569'>Akım dış devrede + uçtan − uca doğru gösterilir</text><rect x='425' y='46' width='315' height='236' rx='12' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><text x='582' y='68' text-anchor='middle' font-size='14' font-weight='700' fill='#0f172a'>Devre sembolleri</text><line x1='450' y1='92' x2='470' y2='92' stroke='#1e293b' stroke-width='2'/><line x1='470' y1='82' x2='470' y2='102' stroke='#1e293b' stroke-width='3'/><line x1='484' y1='86' x2='484' y2='98' stroke='#1e293b' stroke-width='5'/><line x1='484' y1='92' x2='505' y2='92' stroke='#1e293b' stroke-width='2'/><text x='520' y='96' font-size='12' fill='#1e293b'>Pil: potansiyel fark oluşturur</text><line x1='450' y1='124' x2='468' y2='124' stroke='#1e293b' stroke-width='2'/><circle cx='478' cy='124' r='10' fill='#fef9c3' stroke='#1e293b' stroke-width='2'/><line x1='471' y1='117' x2='485' y2='131' stroke='#1e293b' stroke-width='1.5'/><line x1='485' y1='117' x2='471' y2='131' stroke='#1e293b' stroke-width='1.5'/><line x1='488' y1='124' x2='505' y2='124' stroke='#1e293b' stroke-width='2'/><text x='520' y='128' font-size='12' fill='#1e293b'>Ampul: ışık ve ısı verir</text><line x1='450' y1='156' x2='462' y2='156' stroke='#1e293b' stroke-width='2'/><circle cx='464' cy='156' r='3' fill='#1e293b'/><line x1='464' y1='156' x2='492' y2='144' stroke='#1e293b' stroke-width='2'/><circle cx='494' cy='156' r='3' fill='#1e293b'/><line x1='496' y1='156' x2='505' y2='156' stroke='#1e293b' stroke-width='2'/><text x='520' y='160' font-size='12' fill='#1e293b'>Anahtar: devreyi açar, kapatır</text><line x1='450' y1='188' x2='462' y2='188' stroke='#1e293b' stroke-width='2'/><rect x='462' y='181' width='32' height='14' fill='#ffffff' stroke='#1e293b' stroke-width='2'/><line x1='494' y1='188' x2='505' y2='188' stroke='#1e293b' stroke-width='2'/><text x='520' y='192' font-size='12' fill='#1e293b'>Direnç: akımı sınırlar</text><line x1='450' y1='220' x2='467' y2='220' stroke='#1e293b' stroke-width='2'/><circle cx='478' cy='220' r='11' fill='#ffffff' stroke='#1e293b' stroke-width='2'/><text x='478' y='225' text-anchor='middle' font-size='13' font-weight='700' fill='#1e293b'>A</text><line x1='489' y1='220' x2='505' y2='220' stroke='#1e293b' stroke-width='2'/><text x='520' y='224' font-size='12' fill='#1e293b'>Ampermetre: akımı ölçer</text><line x1='450' y1='252' x2='467' y2='252' stroke='#1e293b' stroke-width='2'/><circle cx='478' cy='252' r='11' fill='#ffffff' stroke='#1e293b' stroke-width='2'/><text x='478' y='257' text-anchor='middle' font-size='13' font-weight='700' fill='#1e293b'>V</text><line x1='489' y1='252' x2='505' y2='252' stroke='#1e293b' stroke-width='2'/><text x='520' y='256' font-size='12' fill='#1e293b'>Voltmetre: potansiyel farkı ölçer</text><rect x='20' y='290' width='720' height='22' rx='8' fill='#e2e8f0'/><text x='380' y='305' text-anchor='middle' font-size='12' font-weight='600' fill='#0f172a'>Kapalı devre: üreteç, iletken tel, anahtar ve alıcı kesintisiz bir yol oluşturur</text></svg>"
+    },
+    {
+      "baslik": "Su Tesisatı: Gözle Görülebilen Kapalı Bir Akış Sistemi",
+      "metin": [
+        "Elektrik devresinde yüklerin hareketini doğrudan göremeyiz; ama suyun borularda akışını gözümüzün önüne getirmek kolaydır. Bilinen bir sistemin özelliklerinden yola çıkarak bilinmeyen bir sistem hakkında çıkarım yapmaya {koyu:analojik akıl yürütme} denir. Bu hafta kullanacağımız benzetme, suyun bir pompayla kapalı bir boru hattında dolaştırıldığı {koyu:kapalı su tesisatıdır}. Evlerdeki kombili kalorifer sistemi buna iyi bir örnektir: Kombideki pompa, borularla peteklere giden suyu sürekli dolaştırır; su tesisattan dışarı çıkmaz, aynı su tekrar tekrar döner.",
+        "Böyle bir tesisatın bileşenlerini dikkatle gözlemleyelim. {koyu:Pompa}, suyun bir tarafında yüksek, diğer tarafında düşük basınç oluşturur; yani bir {koyu:basınç farkı} yaratır. Pompa su üretmez; tesisatın içinde zaten bulunan suyu iter. {koyu:Borular} suyun yolunu oluşturur ve tesisat çalışmaya başlamadan önce de su ile doludur. {koyu:Vana}, akışı başlatıp durdurmaya yarar. {koyu:Su çarkı (türbin)}, akan suyun enerjisini bir işe dönüştürür; değirmen taşını döndürmek gibi. {koyu:Dar boru} bölümleri akışı zorlaştırır ve suyun geçişini kısıtlar. {koyu:Su sayacı} belli bir sürede borudan geçen su miktarını, {koyu:basınç ölçer (manometre)} ise iki nokta arasındaki basınç farkını gösterir.",
+        "Gözlemlerden önemli sonuçlar çıkar: Su her zaman {koyu:yüksek basınçlı bölgeden düşük basınçlı bölgeye} akar; pompa durursa basınç farkı ortadan kalkar ve akış biter. Vana kapatılırsa basınç farkı olsa bile su akamaz. Tesisatta su sızmadığı sürece, tek bir boru hattının hangi noktasına su sayacı takarsak takalım {koyu:aynı debiyi} okuruz; su çarkından geçen su azalmaz, yalnızca enerjisinin bir kısmını çarka verir. Dar ve uzun borular eklendikçe aynı pompayla geçen su miktarı azalır. Bu gözlemlerin her biri, birazdan elektrik devresinde bir karşılık bulacak."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Su tesisatı bileşeni",
+          "Tesisattaki görevi",
+          "Elektrik devresindeki karşılığı"
+        ],
+        "satirlar": [
+          [
+            "Pompa",
+            "Basınç farkı oluşturarak suyu dolaştırır",
+            "Pil (üreteç)"
+          ],
+          [
+            "Su",
+            "Borularda akan, hareket eden şey",
+            "Elektrik yükleri"
+          ],
+          [
+            "Boru",
+            "Suyun akacağı yolu oluşturur",
+            "İletken tel"
+          ],
+          [
+            "Vana",
+            "Akışı başlatır veya durdurur",
+            "Anahtar"
+          ],
+          [
+            "Su çarkı (türbin)",
+            "Akan suyun enerjisini işe dönüştürür",
+            "Ampul, motor gibi alıcılar"
+          ],
+          [
+            "Dar boru",
+            "Akışı zorlaştırır, debiyi azaltır",
+            "Direnç"
+          ],
+          [
+            "Su sayacı (debimetre)",
+            "Birim zamanda geçen su miktarını ölçer",
+            "Ampermetre"
+          ],
+          [
+            "Basınç ölçer (manometre)",
+            "İki nokta arasındaki basınç farkını ölçer",
+            "Voltmetre"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Kalorifer tesisatı gerçek bir kapalı devredir",
+          "metin": "Kombili ısıtma sisteminde su tesisattan dışarı çıkmadan döner: Pompa suyu iter, su peteklerde ısısını odaya verir ve soğuyarak geri döner. Elektrik devresinde de yükler devreden çıkmaz; pil onları dolaştırır, alıcıda {koyu:enerji} aktarılır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Gözlem yaparken sor",
+          "metin": "Her bileşen için üç soru sor: {koyu:1)} Bu parça akışı başlatıyor mu, taşıyor mu, kısıtlıyor mu, ölçüyor mu? {koyu:2)} Parça çıkarılırsa ne olur? {koyu:3)} Elektrik devresinde aynı görevi yapan parça hangisi?"
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='14' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>Kapalı Su Tesisatı Modeli ve Elektrikteki Karşılıkları</text><rect x='70' y='80' width='450' height='180' fill='none' stroke='#60a5fa' stroke-width='14'/><line x1='330' y1='80' x2='410' y2='80' stroke='#f8fafc' stroke-width='16'/><line x1='326' y1='80' x2='414' y2='80' stroke='#60a5fa' stroke-width='5'/><text x='370' y='64' text-anchor='middle' font-size='12' fill='#334155'>Dar boru (direnç)</text><polygon points='185,68 215,92 215,68 185,92' fill='#f59e0b' stroke='#92400e' stroke-width='1.5'/><text x='200' y='58' text-anchor='middle' font-size='12' fill='#334155'>Vana (anahtar)</text><circle cx='70' cy='170' r='30' fill='#1d4ed8' stroke='#1e3a8a' stroke-width='2'/><text x='70' y='175' text-anchor='middle' font-size='12' font-weight='700' fill='#ffffff'>Pompa</text><circle cx='520' cy='170' r='30' fill='#ecfdf5' stroke='#047857' stroke-width='3'/><line x1='520' y1='142' x2='520' y2='198' stroke='#047857' stroke-width='2'/><line x1='492' y1='170' x2='548' y2='170' stroke='#047857' stroke-width='2'/><line x1='500' y1='150' x2='540' y2='190' stroke='#047857' stroke-width='2'/><line x1='540' y1='150' x2='500' y2='190' stroke='#047857' stroke-width='2'/><text x='482' y='175' text-anchor='end' font-size='12' fill='#065f46'>Su çarkı (alıcı)</text><rect x='270' y='246' width='60' height='28' rx='6' fill='#ffffff' stroke='#334155' stroke-width='1.5'/><text x='300' y='265' text-anchor='middle' font-size='12' font-weight='700' fill='#334155'>L/s</text><text x='300' y='236' text-anchor='middle' font-size='12' fill='#334155'>Su sayacı (debi)</text><polygon points='278,80 268,74 268,86' fill='#1e3a8a'/><polygon points='520,128 514,118 526,118' fill='#1e3a8a'/><polygon points='420,260 430,254 430,266' fill='#1e3a8a'/><polygon points='70,104 64,114 76,114' fill='#1e3a8a'/><text x='92' y='112' font-size='11' fill='#b91c1c'>Yüksek basınç</text><text x='92' y='240' font-size='11' fill='#1d4ed8'>Düşük basınç</text><text x='300' y='170' text-anchor='middle' font-size='12' fill='#475569'>Su dışarı çıkmaz, aynı su döner</text><rect x='560' y='50' width='185' height='250' rx='10' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><text x='652' y='72' text-anchor='middle' font-size='13' font-weight='700' fill='#0f172a'>Karşılıklar</text><text x='572' y='98' font-size='12' fill='#1e293b'>Pompa → Pil</text><text x='572' y='126' font-size='12' fill='#1e293b'>Su → Elektrik yükleri</text><text x='572' y='154' font-size='12' fill='#1e293b'>Boru → İletken tel</text><text x='572' y='182' font-size='12' fill='#1e293b'>Vana → Anahtar</text><text x='572' y='210' font-size='12' fill='#1e293b'>Su çarkı → Ampul</text><text x='572' y='238' font-size='12' fill='#1e293b'>Dar boru → Direnç</text><text x='572' y='266' font-size='11' fill='#1e293b'>Su sayacı → Ampermetre</text><text x='572' y='290' font-size='11' fill='#1e293b'>Basınç ölçer → Voltmetre</text></svg>"
+    },
+    {
+      "baslik": "Potansiyel Fark: Elektriksel Basınç Farkı",
+      "metin": [
+        "Aynı yükseklikte duran ve alttan bir boruyla birbirine bağlanmış iki su kabı düşün: Su seviyeleri eşitse borudan hiç su akmaz. Kaplardan birini yükseltirsek su, yüksek seviyeli kaptan alçak seviyeliye akmaya başlar. Demek ki akış için {koyu:bir fark} gerekir. Su tesisatında bu farkı sürekli sağlayan pompadır: Pompa çalıştığı sürece bir ucunda yüksek, diğer ucunda düşük basınç oluşturur. Elektrik devresinde aynı görevi {koyu:pil} üstlenir. Pilin {koyu:+} ve {koyu:−} kutupları arasında bir elektriksel fark bulunur; bu farka {koyu:potansiyel fark} ya da günlük dilde {koyu:gerilim (voltaj)} denir. Potansiyel fark, yüklerin devrede hareket etmesini sağlayan etkendir.",
+        "Potansiyel fark {koyu:ΔV} ya da kısaca {koyu:V} ile gösterilir; birimi İtalyan bilim insanı Alessandro Volta'nın onuruna {koyu:volt (V)} olarak adlandırılmıştır. Bir kalem pilin uçları arasında 1,5 V, dikdörtgen pillerde 9 V, araba aküsünde yaklaşık 12 V, evlerimizdeki prizlerde ise 220-230 V civarında potansiyel fark vardır. Pompanın gücü arttıkça basınç farkı büyür ve aynı tesisatta daha fazla su akar; benzer biçimde aynı alıcıya daha büyük potansiyel fark uygulandığında devreden daha büyük akım geçer, ampul daha parlak yanar. Potansiyel fark her zaman {koyu:iki nokta arasında} tanımlanır; tek bir noktanın gerilimi değil, iki nokta arasındaki gerilim ölçülür. Bu yüzden {koyu:voltmetre}, tıpkı borunun iki ucuna bağlanan basınç ölçer gibi, ölçülecek bileşenin {koyu:iki ucuna paralel} bağlanır.",
+        "Basınç farkını bir {koyu:yükseklik farkı} gibi de düşünebiliriz. Pompa suyu 12 m yükseğe çıkarsın; su iki su çarkından geçerek tekrar zemine insin. Birinci çarkta 8 m, ikincisinde 4 m alçalıyorsa toplam alçalma, pompanın kazandırdığı 12 m'ye eşittir; düz borularda neredeyse hiç alçalma olmaz. Elektrik devresinde de pil yükleri adeta {koyu:elektriksel bir yüksekliğe} çıkarır. 12 V'luk pile seri bağlı iki ampulden birinin uçları arasında 8 V ölçülüyorsa diğerinin uçları arasında 4 V ölçülür. Bağlantı tellerinde ise potansiyel düşüşü yok denecek kadar azdır. Kısacası {koyu:pilin kazandırdığı potansiyel fark, seri bağlı alıcılar üzerindeki düşüşlerin toplamına eşittir}. Geçen haftaların yer çekimi potansiyel enerjisi bilgisi burada da işimize yarıyor: Yükselen su enerji kazanır, alçalırken bu enerjiyi çarka verir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Özellik",
+          "Su tesisatında basınç farkı",
+          "Elektrik devresinde potansiyel fark"
+        ],
+        "satirlar": [
+          [
+            "Kaynağı",
+            "Pompa",
+            "Pil, akü, güç kaynağı"
+          ],
+          [
+            "Etkisi",
+            "Suyun akmasını sağlar",
+            "Elektrik yüklerinin hareket etmesini sağlar"
+          ],
+          [
+            "Fark yoksa",
+            "Su akmaz",
+            "Akım oluşmaz"
+          ],
+          [
+            "Fark artarsa (aynı tesisatta)",
+            "Debi artar",
+            "Akım artar, ampul daha parlak yanar"
+          ],
+          [
+            "Ölçü aleti",
+            "Basınç ölçer, iki uca bağlanır",
+            "Voltmetre, iki uca paralel bağlanır"
+          ],
+          [
+            "Birim",
+            "Pascal (Pa)",
+            "Volt (V)"
+          ],
+          [
+            "Seri alıcılarda",
+            "Çarklardaki alçalmaların toplamı pompanın yükseltmesine eşit",
+            "Alıcılardaki potansiyel düşüşlerinin toplamı pilin potansiyel farkına eşit"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Akış için fark gerekir",
+          "metin": "Su, basıncın {koyu:yüksek} olduğu yerden {koyu:düşük} olduğu yere akar. Elektrik devresinde de yüklerin hareketi için iki nokta arasında {koyu:potansiyel fark} bulunmalıdır. Pil bitince (potansiyel farkı sağlayamayınca) ampul söner; tıpkı pompa durunca suyun durması gibi."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Seri alıcılarda gerilim paylaşılır",
+          "metin": "Seri bağlı alıcıların uçlarındaki potansiyel farkları toplanınca üretecin potansiyel farkı bulunur. {koyu:Özdeş} alıcılarda pay eşittir: 9 V'luk pile seri bağlı 3 özdeş ampulün her birinin uçları arasında 9 ÷ 3 = {koyu:3 V} vardır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='14' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>Yükseklik Benzetmesi: Basınç Düzeyi ve Potansiyel Düzeyi</text><rect x='20' y='46' width='350' height='232' rx='12' fill='#ffffff' stroke='#1d4ed8' stroke-width='1.5'/><text x='195' y='68' text-anchor='middle' font-size='13' font-weight='700' fill='#1e3a8a'>Su tesisatı: yükseklik (basınç) düzeyi</text><line x1='50' y1='90' x2='50' y2='250' stroke='#64748b' stroke-width='1.5'/><line x1='50' y1='250' x2='350' y2='250' stroke='#64748b' stroke-width='1.5'/><text x='44' y='104' text-anchor='end' font-size='11' fill='#475569'>12</text><text x='44' y='204' text-anchor='end' font-size='11' fill='#475569'>4</text><text x='44' y='254' text-anchor='end' font-size='11' fill='#475569'>0</text><polyline points='70,250 70,100 160,100 190,200 250,200 280,250 340,250' fill='none' stroke='#1d4ed8' stroke-width='4'/><text x='76' y='92' font-size='12' font-weight='700' fill='#1e3a8a'>Pompa: +12 m</text><text x='115' y='118' text-anchor='middle' font-size='10' fill='#475569'>boru: kayıp yok</text><text x='196' y='150' font-size='12' fill='#b91c1c'>Çark 1: −8 m</text><text x='262' y='222' font-size='12' fill='#b91c1c'>Çark 2: −4 m</text><text x='200' y='268' text-anchor='middle' font-size='11' fill='#475569'>tesisat boyunca ilerleme</text><rect x='390' y='46' width='350' height='232' rx='12' fill='#ffffff' stroke='#b45309' stroke-width='1.5'/><text x='565' y='68' text-anchor='middle' font-size='13' font-weight='700' fill='#78350f'>Elektrik devresi: potansiyel düzeyi</text><line x1='420' y1='90' x2='420' y2='250' stroke='#64748b' stroke-width='1.5'/><line x1='420' y1='250' x2='720' y2='250' stroke='#64748b' stroke-width='1.5'/><text x='414' y='104' text-anchor='end' font-size='11' fill='#475569'>12</text><text x='414' y='204' text-anchor='end' font-size='11' fill='#475569'>4</text><text x='414' y='254' text-anchor='end' font-size='11' fill='#475569'>0</text><polyline points='440,250 440,100 530,100 560,200 620,200 650,250 710,250' fill='none' stroke='#b45309' stroke-width='4'/><text x='446' y='92' font-size='12' font-weight='700' fill='#78350f'>Pil: +12 V</text><text x='485' y='118' text-anchor='middle' font-size='10' fill='#475569'>tel: düşüş yok</text><text x='566' y='150' font-size='12' fill='#b91c1c'>Ampul 1: 8 V düşüş</text><text x='632' y='222' font-size='12' fill='#b91c1c'>Ampul 2: 4 V</text><text x='570' y='268' text-anchor='middle' font-size='11' fill='#475569'>devre boyunca ilerleme</text><rect x='20' y='288' width='720' height='24' rx='8' fill='#e2e8f0'/><text x='380' y='305' text-anchor='middle' font-size='12' font-weight='600' fill='#0f172a'>Kaynağın kazandırdığı fark = alıcılardaki düşüşlerin toplamı (12 = 8 + 4)</text></svg>"
+    },
+    {
+      "baslik": "Elektrik Akımı: Su Akışının Elektrikteki Karşılığı",
+      "metin": [
+        "Su tesisatında akışın ne kadar güçlü olduğunu {koyu:debi} ile ifade ederiz: Borunun herhangi bir kesitinden {koyu:birim zamanda geçen su miktarı}. Örneğin bir musluktan saniyede 0,2 litre su akıyorsa debi 0,2 L/s'dir. Elektrik devresinde suyun yerini {koyu:elektrik yükleri} alır. Pilin oluşturduğu potansiyel fark, iletkendeki yükleri hareket ettirir ve iletkenin bir kesitinden birim zamanda belli miktarda yük geçer. Bu yük akışına {koyu:elektrik akımı} denir; {koyu:I} harfiyle gösterilir ve birimi Fransız fizikçi André-Marie Ampère'in onuruna {koyu:amper (A)} olarak adlandırılmıştır. Akımın yük hareketi üzerinden ayrıntılı çözümlemesini önümüzdeki hafta yapacağız; bu hafta su akışı benzetmesiyle tanımına ulaşıyoruz.",
+        "Benzetmenin en öğretici sonucu şudur: {koyu:Akım alıcıda harcanmaz.} Su çarkından geçen su azalmaz; çarka giren ve çarktan çıkan debi aynıdır, su yalnızca enerjisinin bir kısmını çarka verir. Aynı şekilde ampulün önündeki ve arkasındaki akım eşittir; ampulde tüketilen şey akım değil, elektrik {koyu:enerjisidir} ve bu enerji ışık ile ısıya dönüşür. Bu nedenle {koyu:seri} bağlı (tek yollu) bir devrenin hangi noktasına {koyu:ampermetre} bağlarsak bağlayalım aynı değeri okuruz. Ampermetre, akımın içinden geçmesi gerektiği için tıpkı borunun arasına takılan su sayacı gibi devreye {koyu:seri} bağlanır. Boru hattı iki kola ayrılırsa ana borudaki debi kollara paylaştırılır; kollardaki debilerin toplamı ana debiye eşittir. Elektrikte de kollara ayrılan akımların toplamı ana koldaki akıma eşittir: {koyu:giren akım = çıkan akım}.",
+        "Bir soru daha: Anahtarı kapattığımız anda uzaktaki ampul nasıl hemen yanıyor? Su tesisatında borular {koyu:baştan suyla doludur}; pompa çalışır çalışmaz bütün boru hattında su aynı anda hareket etmeye başlar, pompadan çıkan suyun çarka ulaşmasını beklemek gerekmez. İletken teller de hareket edebilen yüklerle doludur; potansiyel fark uygulandığı anda bütün devredeki yükler hareket etmeye başlar ve ampul neredeyse anında yanar. Devre şemalarında akımın yönü, geleneksel olarak dış devrede pilin {koyu:+} kutbundan {koyu:−} kutbuna doğru gösterilir; bu yön seçiminin yük hareketiyle ilişkisini de gelecek hafta inceleyeceğiz."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Nicelik",
+          "Su tesisatı",
+          "Elektrik devresi"
+        ],
+        "satirlar": [
+          [
+            "Akan şey",
+            "Su",
+            "Elektrik yükleri"
+          ],
+          [
+            "Akışın ölçüsü",
+            "Debi: birim zamanda geçen su miktarı",
+            "Akım: birim zamanda geçen yük miktarı"
+          ],
+          [
+            "Birim",
+            "Litre/saniye (L/s)",
+            "Amper (A)"
+          ],
+          [
+            "Ölçü aleti ve bağlanışı",
+            "Su sayacı, borunun arasına (seri)",
+            "Ampermetre, devreye seri"
+          ],
+          [
+            "Tek yollu hatta",
+            "Her noktada debi aynı",
+            "Her noktada akım aynı"
+          ],
+          [
+            "Kollara ayrılmada",
+            "Kol debilerinin toplamı = ana debi",
+            "Kol akımlarının toplamı = ana akım"
+          ],
+          [
+            "Alıcıda ne olur?",
+            "Su azalmaz, enerjisini çarka verir",
+            "Akım azalmaz, enerji ışık ve ısıya dönüşür"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Ampul akımı harcamaz, enerjiyi dönüştürür",
+          "metin": "Yaygın bir yanılgı, akımın ampulde 'kullanılıp azaldığıdır'. Oysa seri bir devrede ampulden önce ve sonra ölçülen akım {koyu:aynıdır}. Ampulde azalan, yüklerin taşıdığı {koyu:enerjidir}; bu da kendini ampul üzerindeki {koyu:potansiyel düşüşü} olarak gösterir."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Ölçü aletlerinin bağlanışı",
+          "metin": "{koyu:Ampermetre} akımı ölçer ve devreye {koyu:seri} bağlanır (su sayacı gibi akış içinden geçer). {koyu:Voltmetre} potansiyel farkı ölçer ve bileşenin iki ucuna {koyu:paralel} bağlanır (basınç ölçer gibi iki noktayı karşılaştırır)."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='14' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>Elektrik Akımı ve Su Akışı</text><rect x='20' y='46' width='360' height='232' rx='12' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><text x='200' y='68' text-anchor='middle' font-size='13' font-weight='700' fill='#0f172a'>Seri devrede akım her noktada aynıdır</text><rect x='60' y='95' width='280' height='155' fill='none' stroke='#1e293b' stroke-width='3'/><rect x='52' y='161' width='16' height='18' fill='#ffffff'/><line x1='44' y1='161' x2='76' y2='161' stroke='#1e293b' stroke-width='3'/><line x1='52' y1='179' x2='68' y2='179' stroke='#1e293b' stroke-width='6'/><text x='82' y='160' font-size='12' font-weight='700' fill='#b91c1c'>+</text><text x='82' y='190' font-size='12' font-weight='700' fill='#1d4ed8'>−</text><circle cx='200' cy='95' r='16' fill='#fef9c3' stroke='#1e293b' stroke-width='2.5'/><line x1='189' y1='84' x2='211' y2='106' stroke='#1e293b' stroke-width='2'/><line x1='211' y1='84' x2='189' y2='106' stroke='#1e293b' stroke-width='2'/><text x='200' y='130' text-anchor='middle' font-size='12' fill='#334155'>Ampul</text><circle cx='120' cy='95' r='13' fill='#ffffff' stroke='#1e293b' stroke-width='2'/><text x='120' y='100' text-anchor='middle' font-size='13' font-weight='700' fill='#1e293b'>A</text><text x='120' y='82' text-anchor='middle' font-size='12' font-weight='700' fill='#b91c1c'>0,4 A</text><circle cx='340' cy='172' r='13' fill='#ffffff' stroke='#1e293b' stroke-width='2'/><text x='340' y='177' text-anchor='middle' font-size='13' font-weight='700' fill='#1e293b'>A</text><text x='324' y='150' text-anchor='end' font-size='12' font-weight='700' fill='#b91c1c'>0,4 A</text><circle cx='200' cy='250' r='13' fill='#ffffff' stroke='#1e293b' stroke-width='2'/><text x='200' y='255' text-anchor='middle' font-size='13' font-weight='700' fill='#1e293b'>A</text><text x='200' y='232' text-anchor='middle' font-size='12' font-weight='700' fill='#b91c1c'>0,4 A</text><polygon points='290,95 280,89 280,101' fill='#b91c1c'/><rect x='400' y='46' width='340' height='232' rx='12' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><text x='570' y='68' text-anchor='middle' font-size='13' font-weight='700' fill='#0f172a'>Kollara ayrılmada giren = çıkan</text><line x1='420' y1='160' x2='490' y2='160' stroke='#60a5fa' stroke-width='10'/><polyline points='490,160 520,115 620,115 650,160' fill='none' stroke='#60a5fa' stroke-width='8'/><polyline points='490,160 520,205 620,205 650,160' fill='none' stroke='#93c5fd' stroke-width='5'/><line x1='650' y1='160' x2='720' y2='160' stroke='#60a5fa' stroke-width='10'/><text x='455' y='146' text-anchor='middle' font-size='12' font-weight='700' fill='#1e3a8a'>6 L/s</text><text x='570' y='104' text-anchor='middle' font-size='12' font-weight='700' fill='#1e3a8a'>4 L/s</text><text x='570' y='226' text-anchor='middle' font-size='12' font-weight='700' fill='#1e3a8a'>2 L/s</text><text x='686' y='146' text-anchor='middle' font-size='12' font-weight='700' fill='#1e3a8a'>6 L/s</text><polygon points='575,160 563,153 563,167' fill='#1e3a8a'/><text x='570' y='256' text-anchor='middle' font-size='12' font-weight='700' fill='#b45309'>Elektrikte: 0,6 A = 0,4 A + 0,2 A</text><rect x='20' y='288' width='720' height='24' rx='8' fill='#e2e8f0'/><text x='380' y='305' text-anchor='middle' font-size='12' font-weight='600' fill='#0f172a'>Ampul akımı tüketmez: yükler devreyi dolaşır, ampulde enerji ışık ve ısıya dönüşür</text></svg>"
+    },
+    {
+      "baslik": "Direnç: Akışı Zorlaştıran Etkenler",
+      "metin": [
+        "Aynı pompayı önce kısa ve kalın bir boruya, sonra uzun ve ince bir boruya bağladığımızı düşünelim. İkinci durumda su borunun çeperlerine daha çok sürtünür, geçebileceği alan daralır ve birim zamanda geçen su miktarı azalır. Borunun akışa karşı gösterdiği bu zorluğun elektrikteki karşılığı {koyu:dirençtir}. Bir iletkenin, içinden geçen elektrik akımına karşı gösterdiği zorluğa {koyu:elektriksel direnç} denir; {koyu:R} harfiyle gösterilir ve birimi Alman fizikçi Georg Simon Ohm'un onuruna {koyu:ohm (Ω)} olarak adlandırılmıştır. Ampul, ısıtıcı teli ve elektronik devrelerdeki direnç parçaları devrede direnç oluşturan başlıca bileşenlerdir.",
+        "Su borusu benzetmesi, direncin nelere bağlı olduğunu tahmin etmemizi sağlar. {koyu:Uzunluk:} Boru uzadıkça su daha uzun yol boyunca sürtünür; iletken tel uzadıkça direnci {koyu:artar}. {koyu:Kesit alanı:} Boru kalınlaştıkça su rahat akar; telin kesit alanı büyüdükçe direnci {koyu:azalır}. {koyu:Maddenin cinsi:} İç yüzeyi pürüzlü bir boru, pürüzsüz boruya göre akışı daha çok zorlaştırır; aynı boyutlardaki bakır ve nikrom tellerden nikromun direnci çok daha büyüktür. Metallerde sıcaklık arttıkça direncin de arttığını ileride göreceğiz. Bu etkenlerin nicel ilişkisini sonraki konularda inceleyeceğiz; şimdilik benzetmeden çıkan nitel sonuçlar yeterlidir.",
+        "Direnç ile akım arasındaki ilişki de benzetmeden çıkar: {koyu:Aynı potansiyel fark altında direnç büyüdükçe akım küçülür.} Aynı pompaya daha dar bir boru bağlanınca debi azaldığı gibi, aynı pile daha büyük dirençli bir alıcı bağlanınca devreden daha küçük akım geçer ve ampul daha sönük yanar. Evdeki ışık ayar düğmeleri ve eski radyolardaki ses ayarları, direnci değiştirilebilen {koyu:reosta} benzeri düzeneklerle çalışır; bu düzenek su tesisatındaki {koyu:kısma vanasına} benzer. Ayrıca direnç, elektrik enerjisinin ısıya dönüştüğü yerdir: Ampulün ince ve uzun tungsten teli (filaman) yüksek dirençlidir, bu yüzden çok ısınır ve akkor hâle gelerek ışık verir; bağlantı telleri ise kalın bakırdan yapıldığı için direnci küçüktür ve fazla ısınmaz."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Etken",
+          "Su borusunda",
+          "İletken telde",
+          "Sonuç"
+        ],
+        "satirlar": [
+          [
+            "Uzunluk artarsa",
+            "Su daha uzun yol boyunca sürtünür",
+            "Yükler daha uzun yol boyunca engellenir",
+            "Direnç artar"
+          ],
+          [
+            "Kesit alanı artarsa",
+            "Suyun geçeceği alan genişler",
+            "Yüklerin geçeceği alan genişler",
+            "Direnç azalır"
+          ],
+          [
+            "Madde değişirse",
+            "Pürüzlü iç yüzey akışı zorlaştırır",
+            "Nikrom bakırdan çok daha dirençlidir",
+            "Direnç maddeye bağlıdır"
+          ],
+          [
+            "Aynı fark altında direnç artarsa",
+            "Debi azalır",
+            "Akım azalır, ampul sönükleşir",
+            "Direnç ve akım ters yönde değişir"
+          ],
+          [
+            "Ayarlanabilir eleman",
+            "Kısma vanası",
+            "Reosta (ayarlı direnç)",
+            "Akış ve akım ayarlanır"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Direnci etkileyen üç etken",
+          "metin": "Bir iletkenin direnci {koyu:uzunluğu} arttıkça artar, {koyu:kesit alanı} arttıkça azalır ve iletkenin yapıldığı {koyu:maddenin cinsine} bağlıdır. En büyük direnç uzun ve ince tellerde, en küçük direnç kısa ve kalın tellerde görülür (aynı madde için)."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Neden bakır tel, tungsten filaman?",
+          "metin": "Bağlantı tellerinde enerjinin boşa ısıya dönüşmemesi istenir; bu yüzden direnci küçük {koyu:bakır} kullanılır. Ampul filamanında ise ısınma istenir; yüksek sıcaklığa dayanıklı {koyu:tungsten} ince ve uzun tel hâlinde kullanılarak direnç büyütülür."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='14' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>Direnci Etkileyen Etkenler: Boru ve Tel Benzetmesi</text><text x='32' y='60' font-size='12' font-weight='700' fill='#334155'>Durum</text><text x='270' y='60' text-anchor='middle' font-size='12' font-weight='700' fill='#1e3a8a'>Su borusu</text><text x='470' y='60' text-anchor='middle' font-size='12' font-weight='700' fill='#78350f'>İletken tel</text><text x='655' y='60' text-anchor='middle' font-size='12' font-weight='700' fill='#334155'>Sonuç</text><rect x='20' y='70' width='720' height='44' rx='8' fill='#ffffff' stroke='#e2e8f0'/><text x='32' y='96' font-size='12' fill='#1e293b'>Kısa ve kalın</text><rect x='210' y='80' width='120' height='24' rx='4' fill='#93c5fd' stroke='#1d4ed8'/><rect x='410' y='86' width='120' height='12' rx='3' fill='#c2410c'/><text x='655' y='96' text-anchor='middle' font-size='12' font-weight='700' fill='#047857'>Direnç küçük, akış kolay</text><rect x='20' y='120' width='720' height='44' rx='8' fill='#f1f5f9' stroke='#e2e8f0'/><text x='32' y='146' font-size='12' fill='#1e293b'>Uzun (aynı kalınlık)</text><rect x='180' y='130' width='180' height='24' rx='4' fill='#93c5fd' stroke='#1d4ed8'/><rect x='380' y='136' width='180' height='12' rx='3' fill='#c2410c'/><text x='655' y='146' text-anchor='middle' font-size='12' font-weight='700' fill='#b91c1c'>Uzunluk artınca direnç artar</text><rect x='20' y='170' width='720' height='44' rx='8' fill='#ffffff' stroke='#e2e8f0'/><text x='32' y='196' font-size='12' fill='#1e293b'>İnce (aynı uzunluk)</text><rect x='210' y='187' width='120' height='10' rx='3' fill='#93c5fd' stroke='#1d4ed8'/><rect x='410' y='190' width='120' height='5' rx='2' fill='#c2410c'/><text x='655' y='196' text-anchor='middle' font-size='12' font-weight='700' fill='#b91c1c'>Kesit azalınca direnç artar</text><rect x='20' y='220' width='720' height='44' rx='8' fill='#f1f5f9' stroke='#e2e8f0'/><text x='32' y='240' font-size='12' fill='#1e293b'>Farklı madde</text><text x='32' y='256' font-size='10' fill='#475569'>pürüzlü boru, nikrom tel</text><rect x='210' y='230' width='120' height='24' rx='4' fill='#93c5fd' stroke='#1d4ed8'/><line x1='220' y1='232' x2='226' y2='240' stroke='#1e3a8a' stroke-width='2'/><line x1='245' y1='252' x2='251' y2='244' stroke='#1e3a8a' stroke-width='2'/><line x1='270' y1='232' x2='276' y2='240' stroke='#1e3a8a' stroke-width='2'/><line x1='295' y1='252' x2='301' y2='244' stroke='#1e3a8a' stroke-width='2'/><line x1='318' y1='232' x2='324' y2='240' stroke='#1e3a8a' stroke-width='2'/><rect x='410' y='236' width='120' height='12' rx='3' fill='#64748b'/><text x='655' y='246' text-anchor='middle' font-size='12' font-weight='700' fill='#b91c1c'>Madde cinsi direnci değiştirir</text><rect x='20' y='276' width='720' height='30' rx='8' fill='#e2e8f0'/><text x='380' y='296' text-anchor='middle' font-size='12' font-weight='600' fill='#0f172a'>Aynı potansiyel farkta direnç büyüdükçe akım küçülür (dar boruda debi azalır)</text></svg>"
+    },
+    {
+      "baslik": "Analojinin Gücü ve Sınırları: Benzerlikler, Farklılıklar ve Devre Durumları",
+      "metin": [
+        "Su tesisatı benzetmesi bize devre hakkında doğru tahminler yaptırdı: Akış için kaynak ve fark gerekir; tek yollu hatta akış her yerde aynıdır; dar ve uzun yollar akışı azaltır; alıcıda azalan şey akış değil enerjidir. Bu {koyu:benzerlikler} sayesinde potansiyel farkı 'elektriksel basınç farkı', akımı 'yük akışının debisi', direnci de 'akışı zorlaştıran daralma' olarak tanımlayabildik. Benzetmeyi devre durumlarına da uygulayabiliriz. Anahtar kapalı ve yol kesintisizse {koyu:kapalı devre} oluşur, ampul yanar. Anahtar açılırsa {koyu:açık devre} oluşur ve akım durur. Ampulün iki ucu dirençsiz bir telle doğrudan birleştirilirse akım ampulü atlayıp bu kolay yolu seçer; buna {koyu:kısa devre} denir. Su tesisatında çarkın yanına geniş bir boru açmak gibidir: Su çarkı döndürmeden bu yoldan akar, debi aşırı büyür, pompa zorlanır. Elektrikte de kısa devrede çok büyük akım geçer, teller aşırı ısınır ve yangın tehlikesi doğar; evlerdeki {koyu:sigortalar} bu durumda devreyi keserek bizi korur.",
+        "Ancak her model gibi su tesisatı da gerçeğin kendisi değildir ve bazı {koyu:farklılıklar} benzetmeyi körü körüne kullanırsak bizi yanıltabilir. En dikkat çekici fark adlandırmadadır: {koyu:Açık vana} suyun akması, {koyu:açık anahtar} ise akımın durması demektir. Su borusu kesilirse su dışarı fışkırır; oysa kopan bir telin ucundan yükler havaya dökülmez, yalnızca akım durur. Su, açık uçlu bir hortumdan da akabilir; elektrik akımı ise kalıcı olarak ancak {koyu:kapalı devrede} oluşur. Suyun akışını yer çekimi doğrudan etkiler; teldeki yüklerin hareketinde yer çekiminin etkisi önemsizdir. Su çarkı enerjiyi hareket enerjisine çevirirken ampul ışık ve ısıya çevirir; ayrıca devredeki yüklerin hareketini gözle göremeyiz, ancak etkilerini ve ölçü aletlerini gözlemleriz.",
+        "{koyu:Analojik akıl yürütme} bilimde güçlü bir araçtır; ama doğru kullanımı üç adım ister: önce iki sistemin bileşenlerini {koyu:gözlemlemek}, sonra benzerlik ve farklılıkları {koyu:tespit etmek}, en sonunda yalnızca sağlam benzerliklere dayanarak {koyu:çıkarım yapmak} ve bu çıkarımı deneyle sınamak. Örneğin 'boru uzarsa debi azalır, o hâlde tel uzarsa akım azalır' çıkarımı deneyle doğrulanır. 'Boru kesilince su dökülür, o hâlde tel kopunca elektrik dökülür' çıkarımı ise farklılık bölümüne denk geldiği için yanlıştır. Bilim insanları da ışığı dalgaya, atomu güneş sistemine benzetirken aynı yolu izlemiş, benzetmenin işe yaradığı ve yaramadığı yerleri deneyle ayırt etmiştir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Özellik",
+          "Su tesisatı",
+          "Elektrik devresi",
+          "Benzer mi?"
+        ],
+        "satirlar": [
+          [
+            "Akışın kaynağı",
+            "Pompa basınç farkı oluşturur",
+            "Pil potansiyel fark oluşturur",
+            "Benzer"
+          ],
+          [
+            "Tek yollu hatta akış",
+            "Her noktada debi aynı",
+            "Her noktada akım aynı",
+            "Benzer"
+          ],
+          [
+            "Uzun, ince yol",
+            "Debi azalır",
+            "Akım azalır",
+            "Benzer"
+          ],
+          [
+            "Akışı durdurmak için",
+            "Vana kapatılır",
+            "Anahtar açılır",
+            "Farklı (adlandırma ters)"
+          ],
+          [
+            "Yol kesilirse",
+            "Su dışarı dökülür",
+            "Yükler dökülmez, akım durur",
+            "Farklı"
+          ],
+          [
+            "Kapalı yol gereği",
+            "Açık uçlu hortumdan da akabilir",
+            "Akım için kapalı devre gerekir",
+            "Farklı"
+          ],
+          [
+            "Yer çekimi etkisi",
+            "Akışı belirgin biçimde etkiler",
+            "Önemsizdir",
+            "Farklı"
+          ],
+          [
+            "Gözlenebilirlik",
+            "Akış gözle görülür",
+            "Yük hareketi görülmez, etkileri ölçülür",
+            "Farklı"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Açık anahtar, kapalı vana gibidir",
+          "metin": "Günlük dilde 'musluğu aç' su akıtmak demektir; elektrikte ise {koyu:anahtarı açmak} devreyi {koyu:kesmek} demektir. Açık anahtar = açık devre = akım yok. Kapalı anahtar = kapalı devre = akım var. Benzetme kurarken bu ters adlandırmayı unutma."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Analojik akıl yürütmede üç adım",
+          "metin": "{koyu:1) Gözlemle:} İki sistemin bileşenlerini ve görevlerini listele. {koyu:2) Karşılaştır:} Benzerlikleri ve farklılıkları ayır. {koyu:3) Çıkarım yap:} Yalnızca benzerliklere dayanarak tahmin yürüt ve tahmini bir deneyle ya da ölçümle sına."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='14' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>Kapalı Devre, Açık Devre ve Kısa Devre</text><rect x='20' y='46' width='230' height='210' rx='12' fill='#ffffff' stroke='#047857' stroke-width='1.5'/><text x='135' y='68' text-anchor='middle' font-size='14' font-weight='700' fill='#065f46'>Kapalı devre</text><rect x='50' y='90' width='170' height='100' fill='none' stroke='#1e293b' stroke-width='3'/><rect x='42' y='131' width='16' height='18' fill='#ffffff'/><line x1='34' y1='131' x2='66' y2='131' stroke='#1e293b' stroke-width='3'/><line x1='42' y1='149' x2='58' y2='149' stroke='#1e293b' stroke-width='6'/><circle cx='135' cy='90' r='13' fill='#fde047' stroke='#1e293b' stroke-width='2'/><line x1='126' y1='81' x2='144' y2='99' stroke='#1e293b' stroke-width='1.5'/><line x1='144' y1='81' x2='126' y2='99' stroke='#1e293b' stroke-width='1.5'/><circle cx='115' cy='190' r='3.5' fill='#1e293b'/><circle cx='155' cy='190' r='3.5' fill='#1e293b'/><text x='135' y='218' text-anchor='middle' font-size='12' font-weight='700' fill='#1e293b'>Ampul yanar, akım var</text><text x='135' y='238' text-anchor='middle' font-size='11' fill='#1d4ed8'>Su: vana açık, çark döner</text><rect x='265' y='46' width='230' height='210' rx='12' fill='#ffffff' stroke='#b45309' stroke-width='1.5'/><text x='380' y='68' text-anchor='middle' font-size='14' font-weight='700' fill='#78350f'>Açık devre</text><rect x='295' y='90' width='170' height='100' fill='none' stroke='#1e293b' stroke-width='3'/><rect x='287' y='131' width='16' height='18' fill='#ffffff'/><line x1='279' y1='131' x2='311' y2='131' stroke='#1e293b' stroke-width='3'/><line x1='287' y1='149' x2='303' y2='149' stroke='#1e293b' stroke-width='6'/><circle cx='380' cy='90' r='13' fill='#ffffff' stroke='#1e293b' stroke-width='2'/><line x1='371' y1='81' x2='389' y2='99' stroke='#1e293b' stroke-width='1.5'/><line x1='389' y1='81' x2='371' y2='99' stroke='#1e293b' stroke-width='1.5'/><rect x='362' y='184' width='36' height='12' fill='#ffffff'/><circle cx='360' cy='190' r='3.5' fill='#1e293b'/><circle cx='400' cy='190' r='3.5' fill='#1e293b'/><line x1='360' y1='190' x2='395' y2='170' stroke='#1e293b' stroke-width='3'/><text x='380' y='218' text-anchor='middle' font-size='12' font-weight='700' fill='#1e293b'>Anahtar açık: akım yok</text><text x='380' y='238' text-anchor='middle' font-size='11' fill='#1d4ed8'>Su: vana kapalı, akış durur</text><rect x='510' y='46' width='230' height='210' rx='12' fill='#ffffff' stroke='#b91c1c' stroke-width='1.5'/><text x='625' y='68' text-anchor='middle' font-size='14' font-weight='700' fill='#991b1b'>Kısa devre</text><rect x='540' y='90' width='170' height='100' fill='none' stroke='#1e293b' stroke-width='3'/><rect x='532' y='131' width='16' height='18' fill='#ffffff'/><line x1='524' y1='131' x2='556' y2='131' stroke='#1e293b' stroke-width='3'/><line x1='532' y1='149' x2='548' y2='149' stroke='#1e293b' stroke-width='6'/><circle cx='625' cy='90' r='13' fill='#ffffff' stroke='#1e293b' stroke-width='2'/><line x1='616' y1='81' x2='634' y2='99' stroke='#1e293b' stroke-width='1.5'/><line x1='634' y1='81' x2='616' y2='99' stroke='#1e293b' stroke-width='1.5'/><polyline points='590,90 590,115 660,115 660,90' fill='none' stroke='#dc2626' stroke-width='3'/><text x='625' y='132' text-anchor='middle' font-size='10' fill='#dc2626'>dirençsiz tel</text><circle cx='605' cy='190' r='3.5' fill='#1e293b'/><circle cx='645' cy='190' r='3.5' fill='#1e293b'/><text x='625' y='218' text-anchor='middle' font-size='12' font-weight='700' fill='#1e293b'>Ampul söner, akım çok büyür</text><text x='625' y='238' text-anchor='middle' font-size='11' fill='#1d4ed8'>Su: çark atlanır, pompa zorlanır</text><rect x='20' y='266' width='720' height='44' rx='8' fill='#e2e8f0'/><text x='380' y='284' text-anchor='middle' font-size='12' font-weight='600' fill='#0f172a'>Analoji bir düşünme aracıdır: benzerlikler tahmin yapmamızı sağlar,</text><text x='380' y='301' text-anchor='middle' font-size='12' font-weight='600' fill='#0f172a'>farklılıklar ise modelin sınırlarını gösterir.</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir kalorifer tesisatında pompa, borular, bir vana, bir petek ve bir su sayacı bulunmaktadır. Bu tesisatın bileşenlerini bir el feneri devresinin bileşenleriyle eşleştiriniz ve her eşleştirmenin gerekçesini yazınız.",
+      "cevap": "{koyu:1. adım (görevleri belirle):} Pompa suyu iter; borular suyu taşır; vana akışı başlatır ya da durdurur; petek suyun enerjisini (ısısını) odaya verir; su sayacı akış miktarını ölçer.\n{koyu:2. adım (aynı görevi yapan devre elemanını bul):} Pompa → {koyu:pil}, çünkü ikisi de akışı sağlayan farkı (basınç farkı / potansiyel fark) oluşturur. Borular → {koyu:iletken teller}, çünkü ikisi de akışın yolunu oluşturur. Vana → {koyu:anahtar}, çünkü ikisi de akışı denetler. Petek → {koyu:ampul}, çünkü ikisi de taşınan enerjiyi başka bir biçimde (ısı, ışık) çevreye aktarır. Su sayacı → {koyu:ampermetre}, çünkü ikisi de birim zamanda geçen akış miktarını ölçer.\n{koyu:3. adım (sonuç):} Her eşleştirme, bileşenin {koyu:biçimine değil görevine} dayanır; analoji kurarken ölçüt budur.",
+      "ipucu": "Bileşenlerin neye benzediğine değil, sistemde hangi görevi yaptığına bak."
+    },
+    {
+      "soru": "12 V'luk bir aküye üç özdeş ampul seri bağlanmıştır. Her ampulün uçları arasındaki potansiyel fark kaç volttur? Ampullerden biri farklı ve uçları arasında 6 V ölçülseydi, diğer iki özdeş ampulün her birinin uçları arasında kaç volt olurdu? Su tesisatı benzetmesiyle açıklayınız.",
+      "cevap": "{koyu:1. adım (kural):} Seri bağlı alıcılar üzerindeki potansiyel düşüşlerinin toplamı, üretecin potansiyel farkına eşittir. Su benzetmesinde pompanın suyu çıkardığı yükseklik, sudan geçtiği çarklardaki alçalmaların toplamına eşittir.\n{koyu:2. adım (özdeş ampuller):} Ampuller özdeş olduğu için gerilim eşit paylaşılır: 12 V ÷ 3 = {koyu:4 V}. Pompa suyu 12 m yükseltmiş, su üç özdeş çarkın her birinde 4 m alçalmıştır.\n{koyu:3. adım (farklı ampul):} Bir ampulde 6 V düşüş varsa kalan 12 − 6 = 6 V, iki özdeş ampul arasında eşit paylaşılır: 6 ÷ 2 = {koyu:3 V}.\n{koyu:Kontrol:} 6 + 3 + 3 = 12 V; düşüşlerin toplamı akünün gerilimine eşittir.",
+      "ipucu": "Pompanın kazandırdığı 'yüksekliği' çarklar arasında paylaştır."
+    },
+    {
+      "soru": "Bir pil, bir anahtar ve bir ampulden oluşan seri devrede ampulden önceye bağlanan ampermetre 0,3 A göstermektedir. Ampulden sonraya bağlanan ikinci bir ampermetre kaç amper gösterir? Bir öğrenci 'Ampul akımın bir kısmını harcadığı için ikinci ampermetre daha küçük değer gösterir.' diyor. Bu düşünceyi su tesisatı benzetmesiyle değerlendiriniz.",
+      "cevap": "{koyu:1. adım (seri devrede akım):} Seri (tek yollu) devrede yüklerin izleyebileceği tek bir yol vardır; ampule giren yük miktarı, ampulden çıkan yük miktarına eşittir. Bu yüzden ikinci ampermetre de {koyu:0,3 A} gösterir.\n{koyu:2. adım (benzetme):} Su çarkından önce ve sonra borulara takılan iki su sayacı aynı debiyi gösterir; çünkü çark suyu yok etmez, yalnızca suyun enerjisinin bir kısmını alır.\n{koyu:3. adım (değerlendirme):} Öğrencinin düşüncesi {koyu:yanlıştır}. Ampulde azalan şey akım değil {koyu:enerjidir}; elektrik enerjisi ışık ve ısıya dönüşür. Bu enerji aktarımı, ampulün uçları arasındaki potansiyel düşüşü olarak ölçülür.",
+      "ipucu": "Çarkın önündeki ve arkasındaki su sayaçlarını düşün: Su kaybolur mu?"
+    },
+    {
+      "soru": "Aynı maddeden yapılmış dört tel vardır: K (uzunluğu L, kesiti kalın), M (uzunluğu 2L, kesiti kalın), N (uzunluğu L, kesiti ince), P (uzunluğu 2L, kesiti ince). Bu telleri dirençleri küçükten büyüğe doğru sıralayınız. Tellerin her biri sırayla aynı pile bağlanırsa hangisinde en büyük akım oluşur?",
+      "cevap": "{koyu:1. adım (etkenleri hatırla):} Aynı madde için direnç, uzunluk arttıkça artar, kesit alanı arttıkça azalır. Boru benzetmesinde kısa ve kalın boru suyu en rahat, uzun ve ince boru en zor geçirir.\n{koyu:2. adım (uç durumlar):} En küçük direnç kısa ve kalın olan {koyu:K}, en büyük direnç uzun ve ince olan {koyu:P} telindedir.\n{koyu:3. adım (ara durumlar):} M, K'den uzun olduğu için K'den büyük; N, K'den ince olduğu için K'den büyük dirençlidir. M ile N'nin hangisinin büyük olduğu, uzunluğun ve kesitin ne kadar değiştiğine bağlıdır; verilen bilgilerle kesin sıralanamaz. Her ikisi de P'den küçük dirençlidir çünkü P hem uzun hem incedir.\n{koyu:Sonuç:} K en küçük, P en büyüktür; M ve N bu ikisinin arasındadır. Aynı potansiyel farkta en küçük dirençli tel en büyük akımı geçirir: en büyük akım {koyu:K} telindedir.",
+      "ipucu": "Önce iki etkenin de aynı yönde etkilediği uç durumları bul, sonra arada kalanları düşün."
+    },
+    {
+      "soru": "Bir su tesisatında pompanın oluşturduğu basınç farkı iki katına çıkarılıyor, borular ve çark değiştirilmiyor. Ardından başka bir denemede pompa eski hâline getirilip çarkın girişine dar bir boru ekleniyor. Her iki denemenin elektrik devresindeki karşılığını yazınız ve ampulün parlaklığının nasıl değişeceğini tahmin ediniz.",
+      "cevap": "{koyu:1. deneme (su):} Aynı tesisatta basınç farkı artarsa su daha güçlü itilir, debi artar ve çark daha hızlı döner.\n{koyu:1. deneme (elektrik karşılığı):} Pompanın basınç farkını artırmak, devredeki pilin {koyu:potansiyel farkını artırmaya} (örneğin tek pil yerine aynı yönde iki pili seri bağlamaya) karşılık gelir. Aynı ampulden daha büyük akım geçer; ampul {koyu:daha parlak} yanar.\n{koyu:2. deneme (su):} Dar boru akışı zorlaştırır; aynı pompayla debi azalır, çark yavaşlar.\n{koyu:2. deneme (elektrik karşılığı):} Dar boru eklemek, devreye ampulle {koyu:seri bir direnç} eklemeye karşılık gelir. Toplam direnç arttığı için aynı potansiyel farkta akım azalır; ampul {koyu:daha sönük} yanar.\n{koyu:Sonuç:} Potansiyel fark akımı artırma, direnç ise akımı azaltma yönünde etki eder.",
+      "ipucu": "Pompa ↔ pil, dar boru ↔ direnç eşleştirmesini kullan; debinin değişimini akımın değişimine çevir."
+    },
+    {
+      "soru": "Bir öğrenci su tesisatı benzetmesinden şu iki çıkarımı yapıyor: (I) 'Boru kesilince su dışarı döküldüğüne göre, priz deliğinden ya da kopan bir telin ucundan elektrik dışarı dökülür.' (II) 'Boru uzayınca debi azaldığına göre, aynı pile daha uzun bir telle bağlanan ampul biraz daha sönük yanar.' Hangi çıkarım doğrudur? Gerekçesini analojinin sınırlarına göre açıklayınız.",
+      "cevap": "{koyu:1. adım (I. çıkarımı incele):} Bu çıkarım, analojinin {koyu:farklılık} gösterdiği bir noktaya dayanır. Su kütlesi olan ve dışarı akabilen bir maddedir; teldeki yükler ise devrenin dışına havaya dökülmez. Kopan telde yalnızca yol kesilir, açık devre oluşur ve akım durur. Bu yüzden I. çıkarım {koyu:yanlıştır} (prizin tehlikesi elektriğin 'dökülmesi' değil, ona dokunan kişinin vücudunun devreyi tamamlamasıdır).\n{koyu:2. adım (II. çıkarımı incele):} Boru uzunluğu ile tel uzunluğu arasındaki ilişki sağlam bir {koyu:benzerliktir}: İletken tel uzadıkça direnci artar. Toplam direnç artınca aynı potansiyel farkta akım azalır ve ampul biraz daha sönük yanar. II. çıkarım {koyu:doğrudur}; ancak bağlantı telleri bakırdan yapıldığı için bu etki genellikle çok küçüktür.\n{koyu:3. adım (sonuç):} Analojik çıkarım yalnızca benzerliklere dayandığında güvenilirdir ve deneyle sınanmalıdır.",
+      "ipucu": "Önce çıkarımın dayandığı özelliğin iki sistemde gerçekten benzer olup olmadığını kontrol et."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Su tesisatı ile basit elektrik devresi arasında kurulan analojide pompanın elektrik devresindeki karşılığı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "İletken tel",
+        "Anahtar",
+        "Pil (üreteç)",
+        "Ampul"
+      ],
+      "dogru": 2,
+      "aciklama": "Pompa tesisatta basınç farkı oluşturarak suyu dolaştırır; pil de devrede potansiyel fark oluşturarak yükleri harekete geçirir. İletken tel boruya, anahtar vanaya, ampul su çarkına karşılık gelir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Su tesisatında bir borunun kesitinden birim zamanda geçen su miktarı (debi), elektrik devresinde hangi niceliğe karşılık gelir?",
+      "secenekler": [
+        "Potansiyel fark",
+        "Elektrik akımı",
+        "Direnç",
+        "Pilin kutup sayısı"
+      ],
+      "dogru": 1,
+      "aciklama": "Debi birim zamanda geçen su miktarıdır; elektrik akımı da iletkenin kesitinden birim zamanda geçen yük miktarıdır. Potansiyel fark basınç farkına, direnç ise akışı zorlaştıran daralmaya karşılık gelir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aynı maddeden yapılmış aşağıdaki tellerden hangisinin elektriksel direnci en büyüktür?",
+      "secenekler": [
+        "Kısa ve kalın tel",
+        "Kısa ve ince tel",
+        "Uzun ve kalın tel",
+        "Uzun ve ince tel"
+      ],
+      "dogru": 3,
+      "aciklama": "Direnç uzunlukla artar, kesit alanıyla azalır. Hem uzun hem ince olan tel, iki etkenin de direnci artırdığı durumdur; tıpkı uzun ve dar bir borunun akışı en çok zorlaştırması gibi."
+    },
+    {
+      "tur": "coktan",
+      "soru": "9 V'luk bir pile üç özdeş ampul seri bağlanmıştır. Ampullerden birinin uçlarına bağlanan voltmetre kaç volt gösterir?",
+      "secenekler": [
+        "1 V",
+        "3 V",
+        "9 V",
+        "27 V"
+      ],
+      "dogru": 1,
+      "aciklama": "Seri bağlı alıcılardaki potansiyel düşüşlerinin toplamı pilin potansiyel farkına eşittir. Ampuller özdeş olduğu için 9 V eşit paylaşılır: 9 ÷ 3 = 3 V."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Seri bağlı bir devrede ampulden geçen akım, ampulden sonra azalır.",
+          "dogru": false,
+          "aciklama": "Seri devrede akım her noktada aynıdır. Ampulde azalan akım değil, yüklerin taşıdığı enerjidir; su çarkından geçen suyun miktarı azalmadığı gibi."
+        },
+        {
+          "metin": "Potansiyel fark, su tesisatında pompanın oluşturduğu basınç farkına benzetilebilir.",
+          "dogru": true,
+          "aciklama": "Basınç farkı suyu akıttığı gibi potansiyel fark da elektrik yüklerini harekete geçirir; fark yoksa akış da yoktur."
+        },
+        {
+          "metin": "Elektrik devresinde anahtarın açık olması, su tesisatında vananın açık olmasına karşılık gelir ve akım geçer.",
+          "dogru": false,
+          "aciklama": "Adlandırma terstir: Açık anahtar devreyi keser ve akım geçmez; bu durum kapalı vanaya karşılık gelir."
+        },
+        {
+          "metin": "Ampermetre devreye seri, voltmetre ise ölçüm yapılacak bileşenin uçlarına paralel bağlanır.",
+          "dogru": true,
+          "aciklama": "Ampermetre, su sayacı gibi akışın içinden geçtiği yere; voltmetre ise basınç ölçer gibi iki nokta arasındaki farkı ölçmek için iki uca bağlanır."
+        },
+        {
+          "metin": "Aynı potansiyel fark altında devrenin direnci artırılırsa devreden geçen akım azalır.",
+          "dogru": true,
+          "aciklama": "Aynı pompaya dar boru eklendiğinde debi azaldığı gibi, aynı pile daha büyük direnç bağlandığında akım azalır ve ampul sönükleşir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Su tesisatındaki bileşenleri elektrik devresindeki karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Pompa",
+          "Pil: devrede potansiyel fark oluşturarak yükleri harekete geçirir"
+        ],
+        [
+          "Boru",
+          "İletken tel: yüklerin hareket edeceği yolu oluşturur"
+        ],
+        [
+          "Vana",
+          "Anahtar: devreyi açıp kapatarak akımı denetler"
+        ],
+        [
+          "Dar boru",
+          "Direnç: akıma karşı zorluk göstererek akımı sınırlar"
+        ],
+        [
+          "Su sayacı",
+          "Ampermetre: birim zamanda geçen yük miktarını ölçer, seri bağlanır"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Pil, devrede yüklerin hareket etmesini sağlayan ___ farkı oluşturur.",
+          "cevap": "potansiyel"
+        },
+        {
+          "metin": "Bir iletkenin kesitinden birim zamanda geçen elektrik yükü miktarına ___ denir.",
+          "cevap": "akım"
+        },
+        {
+          "metin": "Dar bir borunun su akışını zorlaştırması gibi, bir iletkenin akıma karşı gösterdiği zorluğa ___ denir.",
+          "cevap": "direnç"
+        },
+        {
+          "metin": "Elektrik akımının birimi ___ olup A ile gösterilir.",
+          "cevap": "amper"
+        },
+        {
+          "metin": "Ampermetre, akımı ölçebilmek için devreye ___ bağlanır.",
+          "cevap": "seri"
+        }
+      ],
+      "kelimeler": [
+        "potansiyel",
+        "akım",
+        "direnç",
+        "amper",
+        "seri"
+      ],
+      "fazla": [
+        "volt",
+        "paralel"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "12 V'luk bir pil, bir anahtar ve seri bağlı iki ampulden (L1 ve L2) oluşan bir devre kuruluyor. Anahtar kapalıyken L1'in uçlarına bağlanan voltmetre 8 V, L1'den önceye bağlanan ampermetre 0,5 A gösteriyor. a) L2'nin uçları arasındaki potansiyel farkı ve L2'den sonraya bağlanan bir ampermetrenin göstereceği değeri bulunuz. b) Hangi ampulün direnci daha büyüktür? c) Anahtar açılırsa ne olur? d) Anahtar kapalıyken L2'nin iki ucu dirençsiz bir telle birleştirilirse L1 ve L2'de ne gözlenir? Her durumu su tesisatı benzetmesiyle açıklayınız.",
+      "ipuclari": [
+        "1. adım: Seri devrede pilin potansiyel farkının alıcılar arasında paylaşıldığını ve akımın her noktada aynı olduğunu kullan.",
+        "2. adım: Aynı akım geçen iki alıcıdan hangisinde daha büyük potansiyel düşüşü olduğuna bak; su benzetmesinde aynı debide daha büyük basınç kaybı oluşturan, akışı daha çok zorlaştıran bölümdür.",
+        "3. adım: Anahtarın açılmasını kapalı vanaya, dirençsiz teli çarkın yanına açılan geniş boruya benzeterek akımın hangi yolu seçeceğini düşün."
+      ],
+      "cevap": "a) Seri devrede potansiyel düşüşlerinin toplamı pilin potansiyel farkına eşittir: {alt:V|2} = 12 − 8 = {koyu:4 V}. Seri devrede akım her noktada aynı olduğundan L2'den sonraki ampermetre de {koyu:0,5 A} gösterir. Su benzetmesi: Pompa suyu 12 m yükseltmiş, su birinci çarkta 8 m, ikincisinde 4 m alçalmıştır; iki çarktan da aynı debi geçer.\nb) İki ampulden aynı akım geçmesine rağmen L1 üzerindeki potansiyel düşüşü (8 V), L2'dekinden (4 V) büyüktür. Aynı debide daha büyük basınç kaybı, akışı daha çok zorlaştıran bölümde oluşur; bu yüzden {koyu:L1'in direnci daha büyüktür}.\nc) Anahtar açılınca yol kesilir ve {koyu:açık devre} oluşur: Akım sıfıra iner, iki ampul de söner. Su benzetmesinde vana kapatılmıştır; pompa çalışsa bile su akmaz. Bu sırada pilin uçları arasındaki potansiyel fark ortadan kalkmaz; yalnızca akış için yol yoktur.\nd) Dirençsiz tel L2 için {koyu:kısa devre} oluşturur: Akım, L2'nin filamanı yerine direnci çok küçük olan teli seçer ve {koyu:L2 söner}. Pilin 12 V'unun tamamı artık L1'in uçlarına düşer; devrenin toplam direnci azaldığı için akım büyür ve {koyu:L1 daha parlak} yanar. Su benzetmesinde ikinci çarkın yanına geniş bir boru açılmıştır: Su çarkı döndürmeden bu yoldan geçer, birinci çark daha hızlı döner. Kısa devre yalnızca pilin iki ucu arasında yapılsaydı akım çok büyür, teller ve pil aşırı ısınırdı; bu tehlikeli bir durumdur."
+    }
+  ]
+}
