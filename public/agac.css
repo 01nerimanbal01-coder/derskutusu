@@ -297,7 +297,7 @@
 .bh-git, .bh-tamam { margin-top: 6px; display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 750; color: var(--kart-ana); }
 .bh-git svg, .bh-tamam svg { width: 15px; height: 15px; transition: transform .15s; }
 .bh-kart:hover .bh-git svg { transform: translateX(3px); }
-.bh-tamam { color: var(--yesil, #12a150); }
+.bh-tamam { color: #146b40; }   /* küçük yazı: açık zeminde 4,5:1 üstü (koyu tema aşağıda) */
 .bh-alt-baslik { font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--soluk); margin: 26px 0 12px; }
 .bh-alt { margin-top: 20px; }
 .bh-tumu { display: inline-flex; align-items: center; gap: 8px; font-weight: 750; font-size: 14.5px; }
@@ -320,7 +320,9 @@
 .devam-govde strong { font-size: 15px; line-height: 1.35; font-weight: 750; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .devam-alt { display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 12.5px; color: var(--soluk); }
 .devam-ilerleme { font-weight: 700; color: var(--kart-ana); }
-.devam-ilerleme.tamam { color: var(--yesil, #12a150); }
+.devam-ilerleme.tamam { color: #146b40; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) :is(.bh-tamam, .devam-ilerleme.tamam) { color: #7fe0a7; } }
+:root[data-theme="dark"] :is(.bh-tamam, .devam-ilerleme.tamam) { color: #7fe0a7; }
 .devam-ok { flex: none; color: var(--kart-ana); }
 .devam-ok svg { width: 20px; height: 20px; }
 
@@ -333,14 +335,15 @@
 .sss-oge[open] { border-color: color-mix(in srgb, var(--vurgu) 40%, var(--cizgi)); box-shadow: 0 8px 22px rgb(15 23 42 / .05); }
 .sss-oge summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 20px; font-weight: 750; font-size: 16px; line-height: 1.4; }
 .sss-oge summary::-webkit-details-marker { display: none; }
-.sss-oge summary::after { content: '+'; flex: none; display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--vurgu-acik); color: var(--vurgu); font-size: 20px; font-weight: 700; transition: transform .2s; }
+.sss-oge summary::after { content: '+'; content: '+' / ''; flex: none; display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--vurgu-acik); color: var(--vurgu); font-size: 20px; font-weight: 700; transition: transform .2s; }
 .sss-oge[open] summary::after { transform: rotate(45deg); }
 .sss-oge summary:focus-visible { outline: 3px solid var(--vurgu); outline-offset: 2px; border-radius: 16px; }
 .sss-oge p { margin: 0; padding: 0 20px 18px; color: var(--soluk); line-height: 1.7; font-size: 15px; }
 
 @media (max-width: 760px) {
   .bh-gecis { width: 100%; } .bh-ok { flex: 1; justify-content: center; }
-  .bh-siniflar { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 6px; margin-inline: -4px; padding-inline: 4px; scrollbar-width: thin; }
+  /* yana kayan satır: odak halkası ve seçili gölge kesilmesin diye çevrede boşluk */
+  .bh-siniflar { flex-wrap: nowrap; overflow-x: auto; padding: 6px 6px 12px; margin: -6px -6px 8px; scrollbar-width: thin; }
   .bh-siniflar > :is(a, button) { flex: none; }
   .bh-kartlar, .bh-kartlar.kucuk, .devam-kartlar { grid-template-columns: minmax(0, 1fr); gap: 10px; }
   .bh-kart { padding: 12px 14px; gap: 12px; } .bh-simge { width: 40px; height: 40px; border-radius: 12px; }

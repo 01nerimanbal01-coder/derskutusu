@@ -135,6 +135,8 @@ const haftaBul = (haftalar, gun = new Date()) => {
   if (bugun > yerelTarih(bitis)) return { ...son, durum: 'tatil' };   // ara tatil: son işlenen hafta
   return { ...son, durum: haftaSonu && son.hafta.bas > bugun ? 'haftasonu' : 'hafta' };
 };
+// Hafta durumlarının ortak etiketi (ana sayfa ve ders ağacı aynı sözcüğü kullanır)
+const HAFTA_ETIKET = { hafta: 'Bu hafta', haftasonu: 'Yeni hafta', tatil: 'Son işlenen hafta', once: 'Okul açılışı', sonra: 'Yılın son haftası' };
 // Konu özetinin etkinlik ilerlemesi (etkinlik.js "dk_ozet_<sınıf>-<ders>-<hafta>"): { dogru, toplam, tamam } ya da null
 const ozetIlerleme = (kimlik) => { try { return JSON.parse(localStorage.getItem(`dk_ozet_${kimlik}`) || 'null'); } catch { return null; } };
 
@@ -142,7 +144,7 @@ const ozetIlerleme = (kimlik) => { try { return JSON.parse(localStorage.getItem(
 // hiçbir yere gönderilmez; ana sayfada ve öğrenci sayfasında kart olarak görünür, "Listeyi temizle" ile silinir.
 const sonBakilan = (() => {
   const ANAHTAR = 'dk-son-bakilan', EN_COK = 8;
-  const oku = () => { try { const l = JSON.parse(localStorage.getItem(ANAHTAR) || '[]'); return Array.isArray(l) ? l.filter((k) => k && /^\/ozet\/[\w-]+\.html$/.test(k.a)) : []; } catch { return []; } };
+  const oku = () => { try { const l = JSON.parse(localStorage.getItem(ANAHTAR) || '[]'); return Array.isArray(l) ? l.filter((k) => k && /^\/ozet\/[\w-]+\.html$/.test(k.a) && typeof k.b === 'string' && Number.isFinite(k.t)) : []; } catch { return []; } };
   const yaz = (l) => { try { l.length ? localStorage.setItem(ANAHTAR, JSON.stringify(l.slice(0, EN_COK))) : localStorage.removeItem(ANAHTAR); } catch {} };
   const m = /^\/ozet\/((\d+)-([a-z-]+)-hafta-(\d+))\.html$/.exec(location.pathname);
   const baslik = $('.ozet-bas h1')?.textContent.trim();

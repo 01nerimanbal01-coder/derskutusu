@@ -65,7 +65,9 @@
     const b = typeof haftaBul === 'function' ? haftaBul(haftalar) : null;
     return b && b.durum !== 'sonra' ? b : null;
   };
-  const buHaftaEtiket = (b) => ({ haftasonu: 'Pazartesi başlıyor', tatil: 'Son işlenen hafta', once: 'İlk hafta' }[b.durum] || 'Bu hafta');
+  // Etiket ortak.js HAFTA_ETIKET'ten; "Bu hafta" dışındaki durumlarda hafta numarası da yazılır (ör. "Yeni hafta · 7. hafta")
+  const buHaftaEtiket = (b) => (typeof HAFTA_ETIKET === 'object' && HAFTA_ETIKET[b.durum]) || 'Bu hafta';
+  const buHaftaRozet = (b) => (b.durum === 'hafta' ? 'Bu hafta' : `${buHaftaEtiket(b)} · ${b.no}. hafta`);
   const haftaMetni = (h) => {
     if (!h?.length) return '';
     const s = [...h].sort((a, b) => a - b);
@@ -266,7 +268,7 @@
     const { konular, disarida } = konuyaBagla(agac, haftalik);
     const buH = buHafta(agac.haftalar);
     const simdi = buH?.no ?? null;
-    if (konuKodu) return ogrenciKonu({ dersler }, n, d, ad, renk, agac, konular, konuKodu, dersYol, sinifYol, dersDuzeyi, simdi, yz);
+    if (konuKodu) return ogrenciKonu({ dersler }, n, d, ad, renk, agac, konular, konuKodu, dersYol, sinifYol, dersDuzeyi, simdi, yz, buH);
     document.title = `${n}. Sınıf ${ad}: Üniteler ve Konular · Ders Kutusu`;
     const icerikSay = konular.reduce((t, k) => t + k.icerik.length, 0) + disarida.length;
     const kaynaklar = dersDuzeyi.map((i) => el('a', { sinif: 'agac-kaynak', href: yol(i.goruntule || i.dosya || i.baglanti || '#'), 'data-renk': K().category(i.tur).color },
@@ -280,7 +282,7 @@
         el('span', { sinif: 'agac-konu-govde' }, el('strong', {}, ayni ? 'Ünitenin konuları' : k.ad),
           el('small', {}, [haftaMetni(k.haftalar), tarihMetni(k.haftalar, agac.haftalar)].filter(Boolean).join(' · '))),
         el('span', { sinif: 'agac-konu-turler' },
-          buKonu === k ? el('span', { sinif: 'agac-rozet bu-hafta' }, buHaftaEtiket(buH)) : null,
+          buKonu === k ? el('span', { sinif: 'agac-rozet bu-hafta' }, buHaftaRozet(buH)) : null,
           turler.length ? turler.map((t) => el('span', { sinif: 'agac-rozet', 'data-renk': K().category(t).color }, t)) : el('span', { sinif: 'agac-rozet soluk' }, 'Yakında')),
         el('span', { sinif: 'agac-ok', 'aria-hidden': 'true' }, '›')));
     };
@@ -309,7 +311,7 @@
       disarida.length ? bolum('koyu-zemin', baslikSatiri('Diğer içerikler'), kartlar(disarida, dersler, { dersGoster: false })) : null);
   }
 
-  function ogrenciKonu({ dersler }, n, d, ad, renk, agac, konular, kod, dersYol, sinifYol, dersDuzeyi, simdi, yz) {
+  function ogrenciKonu({ dersler }, n, d, ad, renk, agac, konular, kod, dersYol, sinifYol, dersDuzeyi, simdi, yz, buH) {
     const ix = konular.findIndex((k) => k.kod === kod);
     if (ix < 0) { location.replace(adres({ sinif: n, ders: d })); return; }
     const k = konular[ix];
@@ -334,7 +336,7 @@
         el('p', { sinif: 'agac-ust' }, `${n}. Sınıf · ${ad} · ${k.ui + 1}. ünite: ${k.unite}`),
         el('h1', {}, baslik),
         el('div', { sinif: 'agac-cipler' }, el('span', {}, haftaMetni(k.haftalar)), tarihMetni(k.haftalar, agac.haftalar) ? el('span', {}, tarihMetni(k.haftalar, agac.haftalar)) : null,
-          simdi && k.haftalar.includes(simdi) ? el('span', { sinif: 'agac-rozet bu-hafta' }, 'Bu hafta') : null))),
+          simdi && buH && k.haftalar.includes(simdi) ? el('span', { sinif: 'agac-rozet bu-hafta' }, buHaftaRozet(buH)) : null))),
       bolum('', k.icerik.length ? el('div', {}, sekmeler, liste)
         : bos('Bu konunun içerikleri hazırlanıyor', 'Konu anlatımı ve çalışma kâğıdı yıllık plan sırasıyla ekleniyor. Bu arada ders kitabından çalışabilirsin.',
           ...dersDuzeyi.filter((i) => i.tur === 'Ders kitabı').flatMap((i) => [el('a', { sinif: 'dugme ana', href: yol(i.goruntule || i.baglanti) }, 'Ders kitabını aç', simge('ok')),
