@@ -1,0 +1,577 @@
+{
+  "ad": "8-matematik-15",
+  "sinif": 8,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 15,
+  "tarih": "28 Aralık 2026-1 Ocak 2027",
+  "yayin_tarihi": "2026-12-28",
+  "unite": "Olasılık / Cebir",
+  "konu": "Basit Olayların Olma Olasılığı (Uygulama ve Pekiştirme) ve Cebirsel İfadelere Giriş: Değişken, Terim, Katsayı ve Sabit Terim",
+  "ciktilar": [
+    "M.8.5.1.4. Olasılık değerinin 0 ile 1 arasında (0 ve 1 dâhil) olduğunu anlar.",
+    "M.8.5.1.5. Basit bir olayın olma olasılığını hesaplar.",
+    "M.8.2.1.1. Basit cebirsel ifadeleri anlar ve farklı biçimlerde yazar."
+  ],
+  "giris": "Yeni yılı karşıladığımız bu haftada iki konuyu işleyeceğiz. İlk bölümde {koyu:olasılık} konusunu zar, para ve çark deneyleri, olma ve olmama olasılığıyla eksik sayı bulma ve olasılık ölçeği üzerinde yorum yapma ile tamamlıyoruz. İkinci bölümde {koyu:cebir} konusuna adım atıyor; {koyu:değişken, terim, katsayı ve sabit terim} kavramlarını tanıyor, x + 5, 3x, {us:x|2}, −6{us:y|2}, {us:a|2}·b ve 2a + 2b gibi temel ifadeleri inceliyor ve bir ifadeyi sözel, modelli ve sade biçimlerde yazmayı öğreniyoruz.",
+  "ozet": [
+    "{koyu:Basit olay:} Tek bir deneyde tek bir koşulun olasılığı, koşulu sağlayan çıktı sayısının tüm çıktı sayısına bölünmesiyle bulunur; örneğin zarda tek sayı gelme olasılığı {kesir:3|6} = {kesir:1|2} olur.",
+    "{koyu:Olma ve olmama:} Bir olayın olma olasılığı ile olmama olasılığının toplamı 1 olduğundan biri bilindiğinde diğeri 1'den çıkarılarak bulunur ve bu bilgiyle torbadaki eksik nesne sayıları hesaplanabilir.",
+    "{koyu:Olasılık ölçeği:} Olasılık değeri kesir, ondalık veya yüzde olarak yazılabilir; 0 imkânsız olayı, 1 kesin olayı gösterir ve değer 1'e yaklaştıkça olay daha olası hâle gelir.",
+    "{koyu:Cebirsel ifade:} İçinde en az bir değişken (harf) ve işlem bulunan ifadelere cebirsel ifade denir; + ve − işaretleriyle ayrılan her parça bir terimdir.",
+    "{koyu:Katsayı ve sabit terim:} Değişkenin önündeki sayısal çarpan katsayıdır; değişken içermeyen terim sabit terimdir ve sabit terim de bir katsayıdır.",
+    "{koyu:Farklı biçimler:} x + x + x = 3x, a·a·b = {us:a|2}·b ve a + b + a + b = 2a + 2b örneklerinde görüldüğü gibi aynı nicelik sözel, tekrarlı toplam, çarpım veya sade cebirsel biçimde yazılabilir."
+  ],
+  "bolumler": [
+    {
+      "baslik": "1. Zar, Para ve Çark Deneylerinde Basit Olayların Olasılığı",
+      "metin": [
+        "Bir deneyde {koyu:tek bir koşula} bağlı olarak tanımlanan olaya {koyu:basit olay} denir. Örneğin hilesiz bir zar atıldığında 'üst yüze tek sayı gelmesi' bir basit olaydır. Bu olayın olasılığını bulmak için önce tüm olası durumlar yazılır: 1, 2, 3, 4, 5 ve 6 olmak üzere {koyu:6 olası durum} vardır. Ardından koşulu sağlayan çıktılar seçilir: 1, 3 ve 5 olmak üzere {koyu:3 istenen durum} vardır. Böylece {koyu:P(tek sayı) = {kesir:3|6} = {kesir:1|2}} bulunur.",
+        "Olay tanımında kullanılan sözcükler çıktı listesini doğrudan değiştirir. '4'ten büyük' denildiğinde 4 dâhil edilmez (5 ve 6), 'en az 4' denildiğinde 4 de dâhildir (4, 5 ve 6). 'En çok 2' ise 1 ve 2 çıktılarını kapsar. Aynı yöntem madeni para ve çark deneylerinde de kullanılır: hilesiz bir paranın tura gelme olasılığı {kesir:1|2}, 1'den 10'a kadar numaralanmış 10 eş dilimli bir çarkta okun asal sayı gösterme olasılığı (2, 3, 5, 7) {kesir:4|10} = {kesir:2|5} olur.",
+        "Bu kazanım kapsamında yalnızca {koyu:tek bir deney ve tek bir olay} incelenir. İki zarın birlikte atılması, art arda iki top çekilmesi ya da iki olayın birlikte gerçekleşmesi gibi birden fazla olayın olasılığı 8. sınıf düzeyinde ele alınmaz. Bu nedenle sorularda her zaman tek bir örnek uzay ve tek bir koşul aranır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Zar Atma Deneyinde Olay",
+          "İstenen Çıktılar",
+          "Olasılık"
+        ],
+        "satirlar": [
+          [
+            "Tek sayı gelmesi",
+            "1, 3, 5",
+            "{kesir:3|6} = {kesir:1|2}"
+          ],
+          [
+            "Çift sayı gelmesi",
+            "2, 4, 6",
+            "{kesir:3|6} = {kesir:1|2}"
+          ],
+          [
+            "Asal sayı gelmesi",
+            "2, 3, 5",
+            "{kesir:3|6} = {kesir:1|2}"
+          ],
+          [
+            "En az 5 gelmesi",
+            "5, 6",
+            "{kesir:2|6} = {kesir:1|3}"
+          ],
+          [
+            "3'ün katı gelmesi",
+            "3, 6",
+            "{kesir:2|6} = {kesir:1|3}"
+          ],
+          [
+            "6'nın böleni gelmesi",
+            "1, 2, 3, 6",
+            "{kesir:4|6} = {kesir:2|3}"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Büyük, En Az ve En Çok İfadeleri",
+          "metin": "'4'ten büyük' ifadesi 5 ve 6'yı, 'en az 4' ifadesi 4, 5 ve 6'yı, 'en çok 2' ifadesi ise 1 ve 2'yi kapsar. Sınır sayının dâhil olup olmadığını her zaman kontrol ediniz."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Önce Örnek Uzayı Yaz",
+          "metin": "Çıktıları kafadan saymak yerine tüm olası durumları sırayla yazıp koşulu sağlayanların altını çizmek, hem unutulan hem de iki kez sayılan çıktı hatasını önler."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" fill=\"#f8fafc\" rx=\"12\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">HİLESİZ ZAR DENEYİNDE BASİT OLAYLAR</text><rect x=\"40\" y=\"52\" width=\"50\" height=\"50\" rx=\"8\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"65\" y=\"83\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e3a8a\">1</text><rect x=\"102\" y=\"52\" width=\"50\" height=\"50\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"127\" y=\"83\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#475569\">2</text><rect x=\"164\" y=\"52\" width=\"50\" height=\"50\" rx=\"8\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"189\" y=\"83\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e3a8a\">3</text><rect x=\"226\" y=\"52\" width=\"50\" height=\"50\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"251\" y=\"83\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#475569\">4</text><rect x=\"288\" y=\"52\" width=\"50\" height=\"50\" rx=\"8\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"313\" y=\"83\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e3a8a\">5</text><rect x=\"350\" y=\"52\" width=\"50\" height=\"50\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"375\" y=\"83\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#475569\">6</text><text x=\"220\" y=\"125\" text-anchor=\"middle\" font-size=\"13\" fill=\"#334155\">Örnek uzay: 1, 2, 3, 4, 5, 6 (6 olası durum)</text><text x=\"220\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1d4ed8\">Mavi kutular: tek sayı olayının çıktıları</text><rect x=\"430\" y=\"48\" width=\"310\" height=\"100\" rx=\"10\" fill=\"#fef9c3\" stroke=\"#eab308\" stroke-width=\"1.5\"/><text x=\"585\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#854d0e\">Basit Olayın Olasılığı</text><text x=\"585\" y=\"96\" text-anchor=\"middle\" font-size=\"12\" fill=\"#713f12\">P(A) = istenen çıktı sayısı / tüm çıktı sayısı</text><text x=\"585\" y=\"122\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#a16207\">Tek sayı gelmesi: 3/6 = 1/2</text><rect x=\"30\" y=\"165\" width=\"214\" height=\"115\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"137\" y=\"192\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Olay: Asal sayı gelmesi</text><text x=\"137\" y=\"220\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e3a8a\">İstenen çıktılar: 2, 3, 5</text><text x=\"137\" y=\"252\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1d4ed8\">P = 3/6 = 1/2</text><rect x=\"273\" y=\"165\" width=\"214\" height=\"115\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"1.5\"/><text x=\"380\" y=\"192\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Olay: 6'nın böleni gelmesi</text><text x=\"380\" y=\"220\" text-anchor=\"middle\" font-size=\"12\" fill=\"#166534\">İstenen çıktılar: 1, 2, 3, 6</text><text x=\"380\" y=\"252\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">P = 4/6 = 2/3</text><rect x=\"516\" y=\"165\" width=\"214\" height=\"115\" rx=\"10\" fill=\"#fdf2f8\" stroke=\"#db2777\" stroke-width=\"1.5\"/><text x=\"623\" y=\"192\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#be185d\">Olay: 4'ten büyük gelmesi</text><text x=\"623\" y=\"220\" text-anchor=\"middle\" font-size=\"12\" fill=\"#9d174d\">İstenen çıktılar: 5, 6</text><text x=\"623\" y=\"252\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#be185d\">P = 2/6 = 1/3</text></svg>"
+    },
+    {
+      "baslik": "2. Olma ve Olmama Olasılığıyla Eksik Sayıyı Bulma",
+      "metin": [
+        "Bir A olayının olma olasılığı P(A), olmama olasılığı P(A') ile gösterildiğinde her zaman {koyu:P(A) + P(A') = 1} olur. Bunun nedeni basittir: Deneyin her çıktısı ya olayı sağlar ya da sağlamaz; iki grubun çıktıları birlikte örnek uzayın tamamını oluşturur. İçinde 3 kırmızı ve 5 mavi top bulunan bir torbada kırmızı gelme olasılığı {kesir:3|8}, kırmızı gelmeme olasılığı {kesir:5|8} olup toplamları {kesir:8|8} = 1'dir.",
+        "Bu bağıntı, torbadaki ya da gruptaki {koyu:bilinmeyen sayıları bulmak} için güçlü bir araçtır. Örneğin bir torbadaki 6 kırmızı topun çekilme olasılığı {kesir:2|5} ise kesrin {koyu:2 parçası 6 topa} karşılık gelir; 1 parça 3 top olur. Tüm toplar 5 parça olduğundan toplam 5 · 3 = {koyu:15} top vardır. Kırmızı olmayan topların olasılığı 1 − {kesir:2|5} = {kesir:3|5} olup bu da 3 · 3 = {koyu:9} topa karşılık gelir.",
+        "Torbaya top eklendiğinde veya torbadan top çıkarıldığında {koyu:yalnızca pay değil payda da değişir}. 3 kırmızı ve 5 mavi topun bulunduğu torbada kırmızı gelme olasılığını {kesir:2|3} yapmak için kaç kırmızı top eklenmesi gerektiğini düşünelim. Kırmızı olasılığı {kesir:2|3} olunca mavi olasılığı {kesir:1|3} olur; yani kırmızı top sayısı mavinin 2 katı olmalıdır. Mavi top sayısı değişmediği için kırmızı 2 · 5 = 10 olmalı ve {koyu:10 − 3 = 7} kırmızı top eklenmelidir. Kontrol: {kesir:10|15} = {kesir:2|3}."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Olma Olasılığı P(A)",
+          "Olmama Olasılığı P(A')",
+          "Kontrol"
+        ],
+        "satirlar": [
+          [
+            "{kesir:1|4}",
+            "{kesir:3|4}",
+            "{kesir:1|4} + {kesir:3|4} = 1"
+          ],
+          [
+            "{kesir:7|12}",
+            "{kesir:5|12}",
+            "{kesir:7|12} + {kesir:5|12} = 1"
+          ],
+          [
+            "0,3",
+            "0,7",
+            "0,3 + 0,7 = 1"
+          ],
+          [
+            "%15",
+            "%85",
+            "%15 + %85 = %100"
+          ],
+          [
+            "0 (imkânsız olay)",
+            "1 (kesin olay)",
+            "0 + 1 = 1"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Parça Yöntemi",
+          "metin": "Olasılık {kesir:a|b} ve istenen nesne sayısı k ise 1 parça = k ÷ a olur; toplam nesne sayısı b · (k ÷ a), istenmeyen nesne sayısı ise (b − a) · (k ÷ a) bulunur."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Ekleme ve Çıkarmada Payda Değişir",
+          "metin": "Torbaya eklenen veya torbadan çıkarılan her nesne toplam sayıyı, yani paydayı da değiştirir. Sabit kalan rengi esas alarak oran kurmak işlemi kolaylaştırır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" fill=\"#f8fafc\" rx=\"12\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">OLMA VE OLMAMA OLASILIĞI: TOPLAM HER ZAMAN 1</text><text x=\"380\" y=\"56\" text-anchor=\"middle\" font-size=\"13\" fill=\"#334155\">Torbada özdeş 3 kırmızı ve 5 mavi top var (toplam 8 top)</text><rect x=\"60\" y=\"70\" width=\"240\" height=\"44\" fill=\"#fecaca\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><rect x=\"300\" y=\"70\" width=\"400\" height=\"44\" fill=\"#bfdbfe\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><line x1=\"140\" y1=\"70\" x2=\"140\" y2=\"114\" stroke=\"#dc2626\"/><line x1=\"220\" y1=\"70\" x2=\"220\" y2=\"114\" stroke=\"#dc2626\"/><line x1=\"380\" y1=\"70\" x2=\"380\" y2=\"114\" stroke=\"#2563eb\"/><line x1=\"460\" y1=\"70\" x2=\"460\" y2=\"114\" stroke=\"#2563eb\"/><line x1=\"540\" y1=\"70\" x2=\"540\" y2=\"114\" stroke=\"#2563eb\"/><line x1=\"620\" y1=\"70\" x2=\"620\" y2=\"114\" stroke=\"#2563eb\"/><text x=\"180\" y=\"97\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#991b1b\">P(kırmızı) = 3/8</text><text x=\"500\" y=\"97\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\">P(kırmızı olmaması) = 5/8</text><text x=\"380\" y=\"140\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">3/8 + 5/8 = 8/8 = 1</text><rect x=\"30\" y=\"165\" width=\"200\" height=\"105\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#f97316\" stroke-width=\"1.5\"/><text x=\"130\" y=\"190\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#c2410c\">1. Adım</text><text x=\"130\" y=\"214\" text-anchor=\"middle\" font-size=\"12\" fill=\"#7c2d12\">Olasılığı kesir olarak yaz</text><text x=\"130\" y=\"244\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#c2410c\">P(kırmızı) = 2/5</text><line x1=\"232\" y1=\"217\" x2=\"272\" y2=\"217\" stroke=\"#64748b\" stroke-width=\"2\"/><polygon points=\"278,217 268,211 268,223\" fill=\"#64748b\"/><rect x=\"280\" y=\"165\" width=\"200\" height=\"105\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#f97316\" stroke-width=\"1.5\"/><text x=\"380\" y=\"190\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#c2410c\">2. Adım</text><text x=\"380\" y=\"214\" text-anchor=\"middle\" font-size=\"12\" fill=\"#7c2d12\">Payı verilen sayıya eşitle</text><text x=\"380\" y=\"244\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#c2410c\">2 parça = 6 top, 1 parça = 3</text><line x1=\"482\" y1=\"217\" x2=\"522\" y2=\"217\" stroke=\"#64748b\" stroke-width=\"2\"/><polygon points=\"528,217 518,211 518,223\" fill=\"#64748b\"/><rect x=\"530\" y=\"165\" width=\"200\" height=\"105\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#f97316\" stroke-width=\"1.5\"/><text x=\"630\" y=\"190\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#c2410c\">3. Adım</text><text x=\"630\" y=\"214\" text-anchor=\"middle\" font-size=\"12\" fill=\"#7c2d12\">Toplamı ve kalanı bul</text><text x=\"630\" y=\"244\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#c2410c\">Toplam 5·3 = 15, mavi 9</text></svg>"
+    },
+    {
+      "baslik": "3. Olasılık Ölçeğinde Yorum: Kesir, Ondalık ve Yüzde Gösterimleri",
+      "metin": [
+        "Bir olasılık değeri {koyu:kesir}, {koyu:ondalık gösterim} veya {koyu:yüzde} biçiminde yazılabilir: {kesir:1|4} = 0,25 = %25. Bu değerlerin tamamı 0 ile 1 arasındaki bir {koyu:olasılık ölçeğine} yerleştirilebilir. Ölçeğin sol ucundaki {koyu:0} hiçbir zaman gerçekleşmeyen {koyu:imkânsız olayı}, sağ ucundaki {koyu:1} her durumda gerçekleşen {koyu:kesin olayı} gösterir. Hilesiz zarda 7 gelmesi 0, 7'den küçük bir sayı gelmesi 1 noktasındadır; aradaki tüm olaylar bu iki uç arasında yer alır.",
+        "Farklı biçimlerde verilen olasılıkları karşılaştırırken önce {koyu:hepsini aynı biçime çevirmek} gerekir. Örneğin {kesir:3|5}, 0,58 ve %62 değerlerini karşılaştıralım: {kesir:3|5} = 0,60 ve %62 = 0,62 olduğundan sıralama 0,58 &lt; 0,60 &lt; 0,62 olur. Buna göre olasılığı %62 olan olay en olası, olasılığı 0,58 olan olay en az olası olaydır.\".replace(\"&lt;",
+        "<\"), \"Günlük hayatta olasılık sıklıkla yüzde ile ifade edilir. Hava durumu raporunda 'yarın yağmur yağma olasılığı %80' deniyorsa yağmur yağmama olasılığı %100 − %80 = {koyu:%20} olur. Bu değer yağmurun {koyu:çok olası} olduğunu gösterir ancak yağmuru garanti etmez. Bir olayın gerçekleşmesi yalnızca olasılık değeri tam olarak 1 olduğunda kesindir; 0,99 bile kesinlik anlamına gelmez."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Kesir",
+          "Ondalık",
+          "Yüzde",
+          "Yorum"
+        ],
+        "satirlar": [
+          [
+            "0",
+            "0",
+            "%0",
+            "İmkânsız olay"
+          ],
+          [
+            "{kesir:1|10}",
+            "0,1",
+            "%10",
+            "Çok az olası"
+          ],
+          [
+            "{kesir:1|4}",
+            "0,25",
+            "%25",
+            "Az olası"
+          ],
+          [
+            "{kesir:1|2}",
+            "0,5",
+            "%50",
+            "Yarı yarıya (olması ile olmaması eşit)"
+          ],
+          [
+            "{kesir:4|5}",
+            "0,8",
+            "%80",
+            "Çok olası"
+          ],
+          [
+            "1",
+            "1",
+            "%100",
+            "Kesin olay"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Yüksek Olasılık Kesinlik Değildir",
+          "metin": "Olasılığı 0,95 olan bir olay çok olasıdır ama gerçekleşmeyebilir. Yalnızca olasılığı 1 olan olay kesin, olasılığı 0 olan olay imkânsızdır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Karşılaştırmada Ortak Biçim",
+          "metin": "Kesirleri paydası 100 olacak şekilde genişletmek (örneğin {kesir:3|5} = {kesir:60|100} = %60) kesir, ondalık ve yüzdeyi aynı anda karşılaştırmanın en kısa yoludur."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" fill=\"#f8fafc\" rx=\"12\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">OLASILIK ÖLÇEĞİ: 0 (İMKÂNSIZ) İLE 1 (KESİN) ARASI</text><rect x=\"60\" y=\"140\" width=\"320\" height=\"12\" fill=\"#fca5a5\"/><rect x=\"380\" y=\"140\" width=\"320\" height=\"12\" fill=\"#86efac\"/><line x1=\"60\" y1=\"132\" x2=\"60\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"220\" y1=\"134\" x2=\"220\" y2=\"158\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"380\" y1=\"132\" x2=\"380\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"540\" y1=\"134\" x2=\"540\" y2=\"158\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"700\" y1=\"132\" x2=\"700\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"60\" y=\"177\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">0</text><text x=\"220\" y=\"177\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">1/4</text><text x=\"380\" y=\"177\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">1/2</text><text x=\"540\" y=\"177\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">3/4</text><text x=\"700\" y=\"177\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">1</text><text x=\"60\" y=\"194\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">0</text><text x=\"220\" y=\"194\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">0,25</text><text x=\"380\" y=\"194\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">0,5</text><text x=\"540\" y=\"194\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">0,75</text><text x=\"700\" y=\"194\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">1</text><text x=\"60\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">%0</text><text x=\"220\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">%25</text><text x=\"380\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">%50</text><text x=\"540\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">%75</text><text x=\"700\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">%100</text><circle cx=\"60\" cy=\"146\" r=\"7\" fill=\"#dc2626\"/><circle cx=\"167\" cy=\"146\" r=\"7\" fill=\"#ea580c\"/><circle cx=\"380\" cy=\"146\" r=\"7\" fill=\"#ca8a04\"/><circle cx=\"593\" cy=\"146\" r=\"7\" fill=\"#16a34a\"/><circle cx=\"700\" cy=\"146\" r=\"7\" fill=\"#15803d\"/><line x1=\"60\" y1=\"96\" x2=\"60\" y2=\"138\" stroke=\"#dc2626\" stroke-dasharray=\"3,3\"/><text x=\"40\" y=\"90\" font-size=\"12\" fill=\"#991b1b\">Zara 7 gelmesi: 0</text><line x1=\"167\" y1=\"66\" x2=\"167\" y2=\"138\" stroke=\"#ea580c\" stroke-dasharray=\"3,3\"/><text x=\"167\" y=\"60\" text-anchor=\"middle\" font-size=\"12\" fill=\"#9a3412\">Zara 6 gelmesi: 1/6</text><line x1=\"380\" y1=\"96\" x2=\"380\" y2=\"138\" stroke=\"#ca8a04\" stroke-dasharray=\"3,3\"/><text x=\"380\" y=\"90\" text-anchor=\"middle\" font-size=\"12\" fill=\"#854d0e\">Parada yazı gelmesi: 1/2</text><line x1=\"593\" y1=\"66\" x2=\"593\" y2=\"138\" stroke=\"#16a34a\" stroke-dasharray=\"3,3\"/><text x=\"593\" y=\"60\" text-anchor=\"middle\" font-size=\"12\" fill=\"#166534\">Zara 1'den büyük gelmesi: 5/6</text><line x1=\"700\" y1=\"96\" x2=\"700\" y2=\"138\" stroke=\"#15803d\" stroke-dasharray=\"3,3\"/><text x=\"730\" y=\"90\" text-anchor=\"end\" font-size=\"12\" fill=\"#14532d\">Zara 7'den küçük gelmesi: 1</text><rect x=\"60\" y=\"232\" width=\"300\" height=\"44\" rx=\"10\" fill=\"#fee2e2\" stroke=\"#ef4444\"/><text x=\"210\" y=\"259\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#991b1b\">0'a yaklaştıkça olay daha az olası</text><rect x=\"400\" y=\"232\" width=\"300\" height=\"44\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#22c55e\"/><text x=\"550\" y=\"259\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">1'e yaklaştıkça olay daha olası</text></svg>"
+    },
+    {
+      "baslik": "4. Cebirsel İfadenin Yapı Taşları: Değişken, Terim, Katsayı ve Sabit Terim",
+      "metin": [
+        "Matematikte değeri bilinmeyen ya da farklı durumlarda farklı değerler alabilen nicelikleri {koyu:harflerle} gösteririz; bu harflere {koyu:değişken} denir. Örneğin bir öğrencinin yaşı x, bir kalemin fiyatı a ile gösterilebilir. İçinde en az bir değişken ve işlem bulunan ifadelere {koyu:cebirsel ifade} adı verilir. 3{us:x|2} − 7x + 4, a + b, 5y gibi ifadelerin her biri bir cebirsel ifadedir.",
+        "Bir cebirsel ifadede {koyu:+ ve − işaretleriyle birbirinden ayrılan her parçaya terim} denir ve terimin önündeki işaret o terime aittir. 3{us:x|2} − 7x + 4 ifadesi 3{us:x|2}, −7x ve +4 olmak üzere {koyu:3 terimlidir}. Bir terimde değişkenin önündeki sayısal çarpana {koyu:katsayı} denir: 3{us:x|2} teriminin katsayısı 3, −7x teriminin katsayısı {koyu:−7}'dir. İçinde değişken bulunmayan +4 terimine ise {koyu:sabit terim} denir. Sabit terim de ifadedeki sayısal katsayılardan biridir; bu nedenle ifadenin katsayıları 3, −7 ve 4 olarak sayılır.",
+        "Bazı terimlerde katsayı yazılmaz ama vardır: x teriminin katsayısı {koyu:1}, −y teriminin katsayısı {koyu:−1}'dir. Çünkü x = 1 · x ve −y = −1 · y biçiminde düşünülür. Aynı şekilde {us:a|2}·b teriminin katsayısı 1'dir. Terimdeki harfin sağ üstündeki küçük sayı ise {koyu:üs} olup harfin kaç kez kendisiyle çarpıldığını gösterir; üs ile katsayıyı karıştırmamak gerekir: 3{us:x|2} teriminde 3 katsayı, 2 üstür."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Kavram",
+          "Anlamı",
+          "3x² − 7x + 4 İfadesindeki Karşılığı"
+        ],
+        "satirlar": [
+          [
+            "Değişken",
+            "Farklı değerler alabilen, harfle gösterilen nicelik",
+            "x"
+          ],
+          [
+            "Terim",
+            "+ ve − işaretleriyle ayrılan her parça",
+            "3{us:x|2}, −7x, +4 (3 terim)"
+          ],
+          [
+            "Katsayı",
+            "Değişkenin önündeki sayısal çarpan",
+            "3 ve −7"
+          ],
+          [
+            "Sabit terim",
+            "Değişken içermeyen terim (aynı zamanda katsayı)",
+            "4"
+          ],
+          [
+            "Üs",
+            "Değişkenin kendisiyle kaç kez çarpıldığı",
+            "3{us:x|2} teriminde 2"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Cebirsel İfade",
+          "metin": "Bir veya daha fazla değişken, sayı ve işlem içeren ifadeye {koyu:cebirsel ifade} denir. Örneğin 2a + 5, {us:x|2} − 1 ve 4mn birer cebirsel ifadedir."
+        },
+        {
+          "tur": "kural",
+          "baslik": "Sabit Terim de Bir Katsayıdır",
+          "metin": "x + 5 ifadesinde 5 değişken içermediği için {koyu:sabit terimdir}; aynı zamanda ifadenin katsayılarından biridir. Bu ifadenin katsayıları 1 ve 5'tir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" fill=\"#f8fafc\" rx=\"12\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">CEBİRSEL İFADENİN YAPI TAŞLARI</text><text x=\"250\" y=\"84\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">1. terim</text><text x=\"380\" y=\"84\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">2. terim</text><text x=\"510\" y=\"84\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">3. terim</text><rect x=\"200\" y=\"92\" width=\"100\" height=\"46\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"250\" y=\"121\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e3a8a\">3x²</text><rect x=\"330\" y=\"92\" width=\"100\" height=\"46\" rx=\"10\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"380\" y=\"121\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#991b1b\">−7x</text><rect x=\"460\" y=\"92\" width=\"100\" height=\"46\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"510\" y=\"121\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#166534\">+4</text><text x=\"660\" y=\"120\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#334155\">3 terimli ifade</text><text x=\"380\" y=\"164\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">İşaret, önündeki terime aittir: −7x teriminin katsayısı −7'dir.</text><rect x=\"25\" y=\"185\" width=\"170\" height=\"85\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/><text x=\"110\" y=\"210\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Katsayı</text><text x=\"110\" y=\"234\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">3x² teriminde 3</text><text x=\"110\" y=\"252\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">−7x teriminde −7</text><rect x=\"210\" y=\"185\" width=\"170\" height=\"85\" rx=\"10\" fill=\"#fefce8\" stroke=\"#ca8a04\"/><text x=\"295\" y=\"210\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#a16207\">Değişken</text><text x=\"295\" y=\"234\" text-anchor=\"middle\" font-size=\"11\" fill=\"#713f12\">x harfi</text><text x=\"295\" y=\"252\" text-anchor=\"middle\" font-size=\"11\" fill=\"#713f12\">farklı değerler alabilir</text><rect x=\"395\" y=\"185\" width=\"170\" height=\"85\" rx=\"10\" fill=\"#f5f3ff\" stroke=\"#7c3aed\"/><text x=\"480\" y=\"210\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#6d28d9\">Üs</text><text x=\"480\" y=\"234\" text-anchor=\"middle\" font-size=\"11\" fill=\"#4c1d95\">x² teriminde 2</text><text x=\"480\" y=\"252\" text-anchor=\"middle\" font-size=\"11\" fill=\"#4c1d95\">x² = x · x</text><rect x=\"580\" y=\"185\" width=\"155\" height=\"85\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\"/><text x=\"657\" y=\"210\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Sabit terim</text><text x=\"657\" y=\"234\" text-anchor=\"middle\" font-size=\"11\" fill=\"#166534\">4 (değişken yok)</text><text x=\"657\" y=\"252\" text-anchor=\"middle\" font-size=\"11\" fill=\"#166534\">aynı zamanda katsayı</text></svg>"
+    },
+    {
+      "baslik": "5. Temel Cebirsel İfadeleri İnceleme: x + 5, 3x, x², −6y², a²·b, 2a + 2b",
+      "metin": [
+        "Temel cebirsel ifadelerin her biri bir nicelik anlatır. {koyu:x + 5} 'bir sayının 5 fazlası' demektir ve x ile 5 olmak üzere iki terimlidir. {koyu:3x} 'bir sayının 3 katı' anlamına gelir; sayı ile harf arasındaki çarpma işareti yazılmaz, 3 · x kısaca 3x olarak gösterilir. {koyu:{us:x|2}} ifadesi x · x yani 'bir sayının karesi'dir ve katsayısı 1'dir. {koyu:−6{us:y|2}} ifadesi y'nin karesinin −6 katıdır; buradaki üs yalnızca y'ye aittir, −6 sayısının karesi alınmaz.",
+        "{koyu:{us:a|2}·b} ifadesinde iki farklı değişken vardır: a'nın karesi ile b çarpılmıştır. Çarpma işaretiyle bağlanan çarpanlar ayrı terim oluşturmaz; bu yüzden {us:a|2}·b {koyu:tek terimlidir} ve katsayısı 1'dir. {koyu:2a + 2b} ifadesinde ise toplama işareti 2a ve 2b'yi ayırır; ifade iki terimlidir, her iki terimin katsayısı da 2'dir. Kısacası terim sayısını çarpma değil, {koyu:toplama ve çıkarma işaretleri} belirler.",
+        "Değişkene bir sayı değeri verildiğinde cebirsel ifade bir sayıya dönüşür. x = 3 için x + 5 = 8, 3x = 9 ve {us:x|2} = 9 olur. Negatif değerlerde parantez kullanmak hatayı önler: y = −1 için −6{us:y|2} = −6 · {us:(−1)|2} = −6 · 1 = {koyu:−6} bulunur. a = 2 ve b = 5 için {us:a|2}·b = 4 · 5 = 20, 2a + 2b = 4 + 10 = 14 olur. Bu hesaplamalar ifadenin bir nicelik anlattığını görmemizi sağlar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "İfade",
+          "Terim Sayısı",
+          "Terimler",
+          "Katsayılar",
+          "Değişken(ler)"
+        ],
+        "satirlar": [
+          [
+            "x + 5",
+            "2",
+            "x ; +5",
+            "1 ve 5 (5 sabit terim)",
+            "x"
+          ],
+          [
+            "3x",
+            "1",
+            "3x",
+            "3",
+            "x"
+          ],
+          [
+            "{us:x|2}",
+            "1",
+            "{us:x|2}",
+            "1",
+            "x"
+          ],
+          [
+            "−6{us:y|2}",
+            "1",
+            "−6{us:y|2}",
+            "−6",
+            "y"
+          ],
+          [
+            "{us:a|2}·b",
+            "1",
+            "{us:a|2}·b",
+            "1",
+            "a ve b"
+          ],
+          [
+            "2a + 2b",
+            "2",
+            "2a ; +2b",
+            "2 ve 2",
+            "a ve b"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Üs Yalnızca Harfe Aittir",
+          "metin": "−6{us:y|2} teriminde kare yalnızca y'ye uygulanır: y = 2 için −6 · 4 = −24 bulunur. −6 sayısının karesi (36) alınmaz."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Görünmeyen Katsayı 1",
+          "metin": "x, {us:x|2} ve {us:a|2}·b gibi önünde sayı yazmayan terimlerin katsayısı 1'dir; önünde yalnızca eksi işareti olan −x teriminin katsayısı ise −1'dir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" fill=\"#f8fafc\" rx=\"12\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">TEMEL CEBİRSEL İFADELER</text><rect x=\"25\" y=\"45\" width=\"225\" height=\"105\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/><text x=\"137\" y=\"70\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1d4ed8\">x + 5</text><text x=\"137\" y=\"94\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e3a8a\">Terim sayısı: 2</text><text x=\"137\" y=\"113\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e3a8a\">Katsayılar: 1 ve 5</text><text x=\"137\" y=\"132\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e3a8a\">Sabit terim: 5</text><rect x=\"268\" y=\"45\" width=\"225\" height=\"105\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#22c55e\"/><text x=\"380\" y=\"70\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#15803d\">3x</text><text x=\"380\" y=\"94\" text-anchor=\"middle\" font-size=\"12\" fill=\"#166534\">Terim sayısı: 1</text><text x=\"380\" y=\"113\" text-anchor=\"middle\" font-size=\"12\" fill=\"#166534\">Katsayı: 3</text><text x=\"380\" y=\"132\" text-anchor=\"middle\" font-size=\"12\" fill=\"#166534\">Anlamı: bir sayının 3 katı</text><rect x=\"511\" y=\"45\" width=\"225\" height=\"105\" rx=\"10\" fill=\"#fefce8\" stroke=\"#ca8a04\"/><text x=\"623\" y=\"70\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#a16207\">x²</text><text x=\"623\" y=\"94\" text-anchor=\"middle\" font-size=\"12\" fill=\"#713f12\">Terim sayısı: 1</text><text x=\"623\" y=\"113\" text-anchor=\"middle\" font-size=\"12\" fill=\"#713f12\">Katsayı: 1</text><text x=\"623\" y=\"132\" text-anchor=\"middle\" font-size=\"12\" fill=\"#713f12\">Anlamı: x · x (karesi)</text><rect x=\"25\" y=\"165\" width=\"225\" height=\"105\" rx=\"10\" fill=\"#fdf2f8\" stroke=\"#db2777\"/><text x=\"137\" y=\"190\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#be185d\">−6y²</text><text x=\"137\" y=\"214\" text-anchor=\"middle\" font-size=\"12\" fill=\"#9d174d\">Terim sayısı: 1</text><text x=\"137\" y=\"233\" text-anchor=\"middle\" font-size=\"12\" fill=\"#9d174d\">Katsayı: −6</text><text x=\"137\" y=\"252\" text-anchor=\"middle\" font-size=\"12\" fill=\"#9d174d\">Üs yalnızca y'ye ait</text><rect x=\"268\" y=\"165\" width=\"225\" height=\"105\" rx=\"10\" fill=\"#f5f3ff\" stroke=\"#7c3aed\"/><text x=\"380\" y=\"190\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#6d28d9\">a² · b</text><text x=\"380\" y=\"214\" text-anchor=\"middle\" font-size=\"12\" fill=\"#4c1d95\">Terim sayısı: 1</text><text x=\"380\" y=\"233\" text-anchor=\"middle\" font-size=\"12\" fill=\"#4c1d95\">Katsayı: 1</text><text x=\"380\" y=\"252\" text-anchor=\"middle\" font-size=\"12\" fill=\"#4c1d95\">Değişkenler: a ve b</text><rect x=\"511\" y=\"165\" width=\"225\" height=\"105\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0891b2\"/><text x=\"623\" y=\"190\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#0e7490\">2a + 2b</text><text x=\"623\" y=\"214\" text-anchor=\"middle\" font-size=\"12\" fill=\"#155e75\">Terim sayısı: 2</text><text x=\"623\" y=\"233\" text-anchor=\"middle\" font-size=\"12\" fill=\"#155e75\">Katsayılar: 2 ve 2</text><text x=\"623\" y=\"252\" text-anchor=\"middle\" font-size=\"12\" fill=\"#155e75\">Değişkenler: a ve b</text><text x=\"380\" y=\"290\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">Çarpımla bağlı çarpanlar tek terim oluşturur; + ve − işaretleri terimleri ayırır.</text></svg>"
+    },
+    {
+      "baslik": "6. Cebirsel İfadeleri Farklı Biçimlerde Yazma",
+      "metin": [
+        "Bir durumu cebirsel ifadeyle anlatmak için sözel ifadedeki {koyu:anahtar sözcükler} işlemlere çevrilir: 'fazlası' toplama, 'eksiği' çıkarma, 'katı' çarpma, 'yarısı' ikiye bölme, 'karesi' ikinci kuvvet anlamına gelir. Bilinmeyen sayıya x dersek 'bir sayının 3 katının 5 eksiği' {koyu:3x − 5}, 'bir sayının yarısının 4 fazlası' {koyu:{kesir:x|2} + 4}, 'bir sayının karesinin 2 katı' {koyu:2{us:x|2}} olarak yazılır. Sıraya dikkat edilmelidir: 'bir sayının 5 eksiği' x − 5 iken '5'in bir sayı kadar eksiği' 5 − x'tir.",
+        "Aynı ifade {koyu:tekrarlı toplam} veya {koyu:tekrarlı çarpım} biçiminde de yazılabilir. x + x + x toplamı kısaca {koyu:3x}, a · a çarpımı {koyu:{us:a|2}}, a · a · b çarpımı {koyu:{us:a|2}·b} olarak gösterilir. Değişkenleri ve üsleri aynı olan terimlere {koyu:benzer terimler} denir; benzer terimlerin katsayıları toplanarak ifade sade biçimde yazılır: 2a + 3a = 5a, {us:x|2} + 4{us:x|2} = 5{us:x|2}. Buna karşılık x ile {us:x|2} veya a ile b benzer değildir; 3x + 2{us:x|2} ifadesi daha fazla sadeleşmez.",
+        "Geometrik {koyu:modeller} cebirsel ifadeleri somutlaştırır. Kenar uzunlukları a ve b olan bir dikdörtgenin çevresi kenarlar tek tek toplanarak a + b + a + b biçiminde yazılır; benzer terimler bir araya getirildiğinde bu ifade {koyu:2a + 2b} olur. Bir kenarı x olan karenin alanı x · x = {koyu:{us:x|2}}, tabanı kenarı a olan kare, yüksekliği b olan kare prizmanın hacmi a · a · b = {koyu:{us:a|2}·b} olarak ifade edilir. Böylece aynı nicelik sözel, modelli ve sembolik biçimlerde yazılabilir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Sözel İfade",
+          "Cebirsel İfade"
+        ],
+        "satirlar": [
+          [
+            "Bir sayının 5 fazlası",
+            "x + 5"
+          ],
+          [
+            "Bir sayının 3 katının 5 eksiği",
+            "3x − 5"
+          ],
+          [
+            "Bir sayının yarısının 4 fazlası",
+            "{kesir:x|2} + 4"
+          ],
+          [
+            "Bir sayının karesinin 2 katı",
+            "2{us:x|2}"
+          ],
+          [
+            "a'nın karesi ile b'nin çarpımı",
+            "{us:a|2}·b"
+          ],
+          [
+            "a ve b sayılarının ikişer katlarının toplamı",
+            "2a + 2b"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Anahtar Sözcük Sözlüğü",
+          "metin": "fazlası: + | eksiği: − | katı: · | yarısı: ÷ 2 | karesi: üs 2. Sözel ifadeyi soldan sağa okuyup her sözcüğü sırayla işleme çevirmek doğru ifadeyi kurmayı kolaylaştırır."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Benzer Olmayan Terimler Birleşmez",
+          "metin": "3x + 2{us:x|2} ifadesini 5{us:x|2} ya da 5x yapmak yanlıştır; değişkenler aynı olsa bile üsler farklı olduğundan bu terimler benzer değildir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" fill=\"#f8fafc\" rx=\"12\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">BİR İFADEYİ FARKLI BİÇİMLERDE YAZMA</text><rect x=\"20\" y=\"45\" width=\"230\" height=\"240\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#3b82f6\"/><text x=\"135\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Tekrarlı Toplam</text><rect x=\"55\" y=\"82\" width=\"40\" height=\"70\" rx=\"5\" fill=\"#93c5fd\" stroke=\"#1d4ed8\"/><text x=\"75\" y=\"122\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e3a8a\">x</text><rect x=\"115\" y=\"82\" width=\"40\" height=\"70\" rx=\"5\" fill=\"#93c5fd\" stroke=\"#1d4ed8\"/><text x=\"135\" y=\"122\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e3a8a\">x</text><rect x=\"175\" y=\"82\" width=\"40\" height=\"70\" rx=\"5\" fill=\"#93c5fd\" stroke=\"#1d4ed8\"/><text x=\"195\" y=\"122\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e3a8a\">x</text><text x=\"135\" y=\"185\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1d4ed8\">x + x + x = 3x</text><text x=\"135\" y=\"212\" text-anchor=\"middle\" font-size=\"13\" fill=\"#1e3a8a\">y + y = 2y</text><text x=\"135\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" fill=\"#1e3a8a\">2a + 3a = 5a</text><text x=\"135\" y=\"264\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">(benzer terimler toplanır)</text><rect x=\"265\" y=\"45\" width=\"230\" height=\"240\" rx=\"10\" fill=\"#fefce8\" stroke=\"#ca8a04\"/><text x=\"380\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#a16207\">Tekrarlı Çarpım ve Alan</text><rect x=\"335\" y=\"85\" width=\"90\" height=\"90\" fill=\"#fde68a\" stroke=\"#a16207\" stroke-width=\"1.5\"/><text x=\"380\" y=\"80\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#713f12\">x</text><text x=\"322\" y=\"134\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#713f12\">x</text><text x=\"380\" y=\"135\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#713f12\">x · x = x²</text><text x=\"380\" y=\"210\" text-anchor=\"middle\" font-size=\"13\" fill=\"#713f12\">Karenin alanı = x²</text><text x=\"380\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" fill=\"#713f12\">a · a = a²</text><text x=\"380\" y=\"264\" text-anchor=\"middle\" font-size=\"13\" fill=\"#713f12\">a · a · b = a² · b</text><rect x=\"510\" y=\"45\" width=\"230\" height=\"240\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\"/><text x=\"625\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Çevre Modeli</text><rect x=\"555\" y=\"92\" width=\"140\" height=\"70\" fill=\"#bbf7d0\" stroke=\"#15803d\" stroke-width=\"1.5\"/><text x=\"625\" y=\"87\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#14532d\">a</text><text x=\"625\" y=\"178\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#14532d\">a</text><text x=\"543\" y=\"132\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#14532d\">b</text><text x=\"708\" y=\"132\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#14532d\">b</text><text x=\"625\" y=\"208\" text-anchor=\"middle\" font-size=\"13\" fill=\"#166534\">Çevre = a + b + a + b</text><text x=\"625\" y=\"236\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">= 2a + 2b</text><text x=\"625\" y=\"264\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">(iki terimli ifade)</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Hilesiz bir zar atılıyor. a) Üst yüze tek sayı gelme olasılığını, b) üst yüze gelen sayının 6'nın böleni olmama olasılığını bulunuz.",
+      "cevap": "Tüm olası durumlar 1, 2, 3, 4, 5, 6 olmak üzere 6 tanedir.\na) Tek sayılar 1, 3 ve 5'tir (3 durum). P(tek) = {kesir:3|6} = {kesir:1|2} olur.\nb) 6'nın bölenleri 1, 2, 3 ve 6'dır (4 durum). P(bölen) = {kesir:4|6} = {kesir:2|3} olur. Olmama olasılığı 1 − {kesir:2|3} = {kesir:1|3} bulunur. Kontrol: Bölen olmayan sayılar 4 ve 5'tir; {kesir:2|6} = {kesir:1|3} olup sonuç doğrudur.",
+      "ipucu": "Olmama olasılığını bulmak için ya olma olasılığını 1'den çıkarın ya da koşulu sağlamayan çıktıları doğrudan sayın; iki yol aynı sonucu vermelidir."
+    },
+    {
+      "soru": "Bir torbada özdeş kırmızı ve mavi toplar vardır. Torbadan rastgele çekilen bir topun kırmızı olma olasılığı {kesir:2|5}'tir. Torbada 6 kırmızı top olduğuna göre a) torbada kaç mavi top vardır? b) Torbaya en az kaç kırmızı top eklenirse kırmızı ve mavi gelme olasılıkları eşit olur?",
+      "cevap": "a) {kesir:2|5} kesrinde 2 parça 6 topa karşılık gelir; 1 parça 6 ÷ 2 = 3 toptur. Toplam top sayısı 5 · 3 = 15'tir. Mavi top sayısı 15 − 6 = {koyu:9} olur (ya da mavi olasılığı {kesir:3|5} olduğundan 3 · 3 = 9).\nb) Olasılıkların eşit olması için kırmızı ve mavi top sayıları eşit olmalıdır. Mavi top sayısı 9 olarak kalacağından kırmızı top sayısı da 9 olmalıdır. Eklenecek kırmızı top sayısı 9 − 6 = {koyu:3} olur. Kontrol: Toplam 18 top içinde P(kırmızı) = {kesir:9|18} = {kesir:1|2}.",
+      "ipucu": "Kesrin payı kırmızı toplara karşılık gelir; payı 6'ya eşitleyecek çarpanı bulun ve paydayı da aynı sayıyla çarpın."
+    },
+    {
+      "soru": "OLASILIK kelimesinin harfleri özdeş kartlara tek tek yazılarak bir torbaya atılıyor. Torbadan rastgele çekilen bir kartta a) L harfi yazma olasılığı, b) sesli harf yazma olasılığı, c) K harfi yazmama olasılığı kaçtır?",
+      "cevap": "Kelimenin harfleri O, L, A, S, I, L, I, K olmak üzere 8 tanedir; tüm olası durumların sayısı 8'dir.\na) L harfi 2 kez geçer: P(L) = {kesir:2|8} = {kesir:1|4}.\nb) Sesli harfler O, A, I, I olmak üzere 4 tanedir: P(sesli) = {kesir:4|8} = {kesir:1|2}.\nc) K harfi 1 kez geçer, P(K) = {kesir:1|8}. K yazmama olasılığı 1 − {kesir:1|8} = {kesir:7|8} olur.",
+      "ipucu": "Tekrar eden harfleri ayrı kartlar olarak sayın: toplam durum sayısı farklı harf sayısı değil, kelimedeki tüm harflerin sayısıdır."
+    },
+    {
+      "soru": "5{us:m|2} − m + 8 − 3n cebirsel ifadesinin terimlerini, terim sayısını, katsayılarını, değişkenlerini ve sabit terimini belirleyiniz.",
+      "cevap": "1. adım: + ve − işaretlerinden ayırarak terimleri yazalım: 5{us:m|2}, −m, +8 ve −3n. İfade {koyu:4 terimlidir}.\n2. adım: Katsayılar: 5{us:m|2} teriminde 5; −m teriminde görünmeyen katsayı {koyu:−1}; −3n teriminde −3; sabit terim 8 de bir katsayıdır. Katsayılar 5, −1, 8 ve −3'tür.\n3. adım: Değişkenler m ve n'dir.\n4. adım: Değişken içermeyen terim +8 olduğundan sabit terim {koyu:8}'dir.",
+      "ipucu": "Önünde sayı yazmayan −m teriminin katsayısını unutmayın; −m = −1 · m biçiminde düşünülür."
+    },
+    {
+      "soru": "Aşağıdaki sözel ifadeleri, bilinmeyen sayıyı x alarak cebirsel ifadeye çeviriniz: a) Bir sayının 4 katının 9 eksiği, b) Bir sayının karesinin 3 fazlası, c) 10'un bir sayı kadar eksiği, d) Bir sayının yarısı ile 7'nin toplamı.",
+      "cevap": "a) 'Bir sayının 4 katı' 4x, '9 eksiği' − 9 demektir: {koyu:4x − 9}.\nb) 'Bir sayının karesi' {us:x|2}, '3 fazlası' + 3: {koyu:{us:x|2} + 3}.\nc) 10'dan x çıkarılır: {koyu:10 − x} (x − 10 yazmak yanlıştır).\nd) 'Bir sayının yarısı' {kesir:x|2}, '7 ile toplamı' + 7: {koyu:{kesir:x|2} + 7}.",
+      "ipucu": "'Neyin eksiği' sorusunu sorun: eksilen ifade başa, çıkarılan ifade sona yazılır."
+    },
+    {
+      "soru": "a) Kenar uzunlukları 2x cm ve y cm olan bir dikdörtgenin çevresini en sade cebirsel ifadeyle yazınız. b) Taban kenarı a cm olan kare, yüksekliği b cm olan kare prizmanın hacmini cebirsel ifadeyle yazınız ve a = 3, b = 5 için hacmi hesaplayınız.",
+      "cevap": "a) Çevre tüm kenarların toplamıdır: 2x + y + 2x + y. Benzer terimleri bir araya getirelim: 2x + 2x = 4x ve y + y = 2y. Çevre {koyu:4x + 2y} cm olur; ifade iki terimlidir.\nb) Hacim = taban alanı · yükseklik = a · a · b. Tekrarlı çarpım kısaca {koyu:{us:a|2}·b} yazılır; ifade tek terimli ve katsayısı 1'dir. a = 3, b = 5 için {us:3|2} · 5 = 9 · 5 = {koyu:45} santimetreküp bulunur.",
+      "ipucu": "Çevrede kenarlar toplanır, hacimde boyutlar çarpılır; toplamada benzer terimleri birleştirin, çarpmada aynı harfi üslü yazın."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir olayın olma olasılığı 0,35 olduğuna göre bu olayın olmama olasılığı yüzde kaçtır?",
+      "secenekler": [
+        "%35",
+        "%55",
+        "%65",
+        "%75"
+      ],
+      "dogru": 2,
+      "aciklama": "Olma ve olmama olasılıklarının toplamı 1'dir: 1 − 0,35 = 0,65. Bu değer yüzde olarak %65'tir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir torbada özdeş 4 sarı, 6 yeşil ve 10 mor top vardır. Torbadan rastgele bir top çekildiğinde aşağıdaki olaylardan hangisi imkânsız olaydır?",
+      "secenekler": [
+        "Mavi top gelmesi",
+        "Mor olmayan bir top gelmesi",
+        "Sarı veya yeşil top gelmesi",
+        "Sarı, yeşil ya da mor top gelmesi"
+      ],
+      "dogru": 0,
+      "aciklama": "Torbada hiç mavi top olmadığından mavi top gelme olasılığı {kesir:0|20} = 0'dır ve bu olay imkânsızdır. Mor olmayan top {kesir:10|20}, sarı veya yeşil top {kesir:10|20} olasılıklıdır; sarı, yeşil ya da mor top gelmesi ise kesin olaydır (olasılığı 1)."
+    },
+    {
+      "tur": "coktan",
+      "soru": "−6{us:y|2} + 4y − 9 cebirsel ifadesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
+      "secenekler": [
+        "İfade 3 terimlidir.",
+        "{us:y|2} li terimin katsayısı 6'dır.",
+        "Sabit terimi −9'dur.",
+        "İfadenin değişkeni y'dir."
+      ],
+      "dogru": 1,
+      "aciklama": "Terimin önündeki işaret o terime aittir; bu yüzden −6{us:y|2} teriminin katsayısı 6 değil −6'dır. İfade −6{us:y|2}, +4y ve −9 olmak üzere 3 terimlidir, sabit terimi −9 ve değişkeni y'dir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "'Bir sayının karesinin 4 katından 7 eksiği' ifadesinin cebirsel karşılığı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "4x − 7",
+        "{us:(4x)|2} − 7",
+        "7 − 4{us:x|2}",
+        "4{us:x|2} − 7"
+      ],
+      "dogru": 3,
+      "aciklama": "Önce sayının karesi alınır ({us:x|2}), sonra 4 katı bulunur (4{us:x|2}) ve 7 çıkarılır: 4{us:x|2} − 7. {us:(4x)|2} ifadesinde 4 katının karesi alınmış olur; bu farklı bir niceliktir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Hilesiz bir zar atıldığında üst yüze tek sayı gelme olasılığı ile çift sayı gelme olasılığı birbirine eşittir.",
+          "dogru": true,
+          "aciklama": "Doğrudur; tek sayılar (1, 3, 5) ve çift sayılar (2, 4, 6) üçer tanedir, her iki olasılık da {kesir:1|2}'dir."
+        },
+        {
+          "metin": "Bir olayın olma olasılığı {kesir:3|8} ise olmama olasılığı da {kesir:3|8}'dir.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; olmama olasılığı 1 − {kesir:3|8} = {kesir:5|8} olur."
+        },
+        {
+          "metin": "{us:x|2} ve 2x terimleri benzer terimlerdir.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; değişkenler aynı olsa da üsler farklı (2 ve 1) olduğu için bu terimler benzer değildir."
+        },
+        {
+          "metin": "{us:a|2}·b ifadesi tek terimlidir ve katsayısı 1'dir.",
+          "dogru": true,
+          "aciklama": "Doğrudur; çarpımla bağlı çarpanlar tek terim oluşturur ve önünde sayı yazmadığı için katsayı 1'dir."
+        },
+        {
+          "metin": "x + 5 ifadesinde 5 sabit terimdir ve aynı zamanda ifadenin katsayılarından biridir.",
+          "dogru": true,
+          "aciklama": "Doğrudur; değişken içermeyen 5 sabit terimdir ve sabit terim de bir katsayıdır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki cebir kavramlarını doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Değişken",
+          "Farklı değerler alabilen, harfle gösterilen nicelik"
+        ],
+        [
+          "Terim",
+          "Cebirsel ifadede + ve − işaretleriyle ayrılan her bir parça"
+        ],
+        [
+          "Katsayı",
+          "Bir terimde değişkenin önündeki sayısal çarpan"
+        ],
+        [
+          "Sabit terim",
+          "İçinde değişken bulunmayan terim"
+        ],
+        [
+          "Benzer terimler",
+          "Değişkenleri ve üsleri aynı olan terimler"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir olayın olma olasılığı ile ___ olasılığının toplamı 1'dir.",
+          "cevap": "olmama"
+        },
+        {
+          "metin": "3x ifadesindeki x harfine ___ denir.",
+          "cevap": "değişken"
+        },
+        {
+          "metin": "−6{us:y|2} teriminde −6 sayısına terimin ___ denir.",
+          "cevap": "katsayısı"
+        },
+        {
+          "metin": "Değişken içermeyen terime ___ terim adı verilir.",
+          "cevap": "sabit"
+        },
+        {
+          "metin": "2a + 2b ifadesinde 2a ve 2b parçalarının her birine ___ denir.",
+          "cevap": "terim"
+        }
+      ],
+      "kelimeler": [
+        "olmama",
+        "değişken",
+        "katsayısı",
+        "sabit",
+        "terim"
+      ],
+      "fazla": [
+        "kesin",
+        "üs"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "5{us:a|2} − 3a + 4b − 2 + a cebirsel ifadesinin her terimi özdeş kartlara ayrı ayrı yazılarak bir torbaya atılıyor. a) İfadenin terimlerini ve katsayılarını yazınız. b) Sabit terimi belirleyiniz. c) Torbadan rastgele çekilen bir kartta katsayısı negatif olan bir terim yazma olasılığını bulunuz. d) Benzer terimleri birleştirerek ifadeyi en sade biçimde yazınız.",
+      "ipuclari": [
+        "1. adım: İfadeyi + ve − işaretlerinden ayırarak terimleri işaretleriyle birlikte yazın; kart sayısı terim sayısına eşittir.",
+        "2. adım: Her terimin katsayısını belirleyin; önünde sayı olmayan a teriminin katsayısının 1, sabit terimin de bir katsayı olduğunu unutmayın.",
+        "3. adım: Negatif katsayılı kartları sayıp tüm kart sayısına bölün; ardından değişkeni ve üssü aynı olan terimleri bularak katsayılarını toplayın."
+      ],
+      "cevap": "a) Terimler: 5{us:a|2}, −3a, +4b, −2 ve +a olmak üzere 5 tanedir. Katsayılar sırasıyla 5, −3, 4, −2 ve 1'dir.\nb) Değişken içermeyen terim −2 olduğundan sabit terim −2'dir.\nc) Torbada 5 kart vardır. Katsayısı negatif olan terimler −3a ve −2 olmak üzere 2 tanedir. Olasılık {kesir:2|5} olur (olmama olasılığı ise {kesir:3|5}).\nd) Benzer terimler −3a ve +a'dır: −3a + a = −2a. 5{us:a|2} ve 4b'nin benzeri yoktur. En sade biçim: 5{us:a|2} − 2a + 4b − 2 (4 terimli)."
+    }
+  ]
+}

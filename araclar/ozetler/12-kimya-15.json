@@ -1,0 +1,593 @@
+{
+  "ad": "12-kimya-15",
+  "sinif": 12,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 15,
+  "tarih": "28 Aralık 2026-1 Ocak 2027",
+  "yayin_tarihi": "2026-12-28",
+  "unite": "2. ÜNİTE: KARBON KİMYASINA GİRİŞ",
+  "konu": "Doğada Karbon: Allotroplarda Yapı-Özellik İlişkisinin Derinleştirilmesi, Geometri ve Bağ Hesapları ile Karbon Nanomalzemelerinin Önemi",
+  "ciktilar": [
+    "12.2.3.1. Karbon allotroplarının özelliklerini yapılarıyla ilişkilendirir.",
+    "12.2.3.1.b. Elmas ve grafitin incelenmesi sağlanarak fulleren, nanotüp ve grafenin yapıları ve önemleri üzerinde durulur."
+  ],
+  "giris": "Önceki haftalarda karbonun beş allotropunu tanıdık ve temel özelliklerini karşılaştırdık. Bu hafta işi bir adım ileri taşıyoruz: {koyu:yapı-özellik ilişkisini sayılarla} inceliyor, elmasın neden kararlı göründüğünü enerji diyagramıyla açıklıyor, grafitin yöne göre değişen özelliklerini keşfediyor, fullerenlerin geometrisini {koyu:Euler bağıntısı} ile hesaplıyor ve nanotüplerin sarılma biçiminin elektriksel davranışı nasıl değiştirdiğini görüyoruz. Haftayı, grafen ve nanotüp gibi {koyu:karbon nanomalzemelerinin} enerji, elektronik, sağlık ve çevre alanındaki önemini ve olası risklerini tartışarak tamamlıyoruz.",
+  "ozet": [
+    "{koyu:Boyutluluk:} Fulleren 0 boyutlu, karbon nanotüp 1 boyutlu, grafen 2 boyutlu nanoyapılardır; elmas ve grafit ise 3 boyutlu kristallerdir.",
+    "{koyu:Bağ sayısı:} Bir yapıdaki C–C bağ sayısı (atom sayısı × komşu sayısı) ÷ 2 ile bulunur; elmasta karbon başına 2, {us:sp|2} yapılı allotroplarda ise 1,5 bağ düşer.",
+    "{koyu:Termodinamik kararlılık:} Standart koşullarda grafit elmastan daha kararlıdır; grafitin elmasa dönüşümü yaklaşık +1,9 kJ/mol entalpili endotermik bir süreçtir, elmas ise kinetik olarak kararlıdır.",
+    "{koyu:Anizotropi:} Grafit, tabaka düzleminde elektriği iyi, tabakalara dik yönde ise çok zayıf iletir; grafen bu tabakalardan yalnız birinin ayrılmasıyla elde edilir.",
+    "{koyu:Fulleren geometrisi:} Yalnız beşgen ve altıgenlerden oluşan her {alt:C|n} fullereninde 12 beşgen, ({kesir:n|2} − 10) altıgen ve {kesir:3n|2} C–C bağı bulunur.",
+    "{koyu:Nanotüp ve önem:} Karbon nanotüplerin elektriksel davranışı grafen levhanın sarılma yönüne ve çapına bağlıdır; karbon nanomalzemeleri enerji, elektronik ve sağlıkta büyük fırsatlar sunarken güvenli üretim ve kullanım sorumluluğu da gerektirir."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Yapıdan Sayıya: Allotroplarda Boyutluluk ve Karbon Başına Bağ Sayısı",
+      "metin": [
+        "Karbon allotroplarını ezberlemek yerine iki temel soruyla sınıflandırmak çok daha kalıcı bir öğrenme sağlar. Birinci soru şudur: Yapı birimi {koyu:sonsuz bir kovalent ağ} mı, yoksa belirli sayıda atom içeren {koyu:bir molekül} mü? Elmas ve grafit dev kovalent ağ yapılardır; belirli bir molekülleri yoktur ve yalnızca C sembolüyle gösterilirler. Fullerenler ise {alt:C|60}, {alt:C|70} gibi belirli atom sayılı moleküllerdir. Moleküller arasında yalnız zayıf van der Waals etkileşimleri bulunduğu için fullerenler toluen gibi apolar çözücülerde çözünebilir; elmas ve grafit ise hiçbir çözücüde çözünmez, çünkü onları dağıtmak için güçlü kovalent bağların kırılması gerekir.",
+        "İkinci soru {koyu:boyutluluktur}: Yapı nanometre ölçeğinin dışına kaç yönde uzanır? Fulleren üç yönde de nanometre boyutunda kaldığı için {koyu:0 boyutlu (0B)}, karbon nanotüp yalnız boyu yönünde uzadığı için {koyu:1 boyutlu (1B)}, grafen bir düzlem boyunca yayıldığı için {koyu:2 boyutlu (2B)} kabul edilir. Elmas her yönde uzanan bir kristal ağ, grafit ise 2B tabakaların üst üste yığılmasıyla oluşan bir kristal olduğundan her ikisi de {koyu:3 boyutlu (3B)} katılardır. Nanoyapıların bu kadar ilgi çekmesinin nedeni, boyut küçüldükçe yüzeydeki atom oranının artması ve elektronların hareketinin belirli yönlere sınırlanmasıdır.",
+        "Yapıyı sayıya dökmenin en pratik yolu {koyu:karbon başına bağ sayısını} bulmaktır. Her C–C bağı iki karbon atomu tarafından paylaşıldığından bağ sayısı = (atom sayısı × komşu sayısı) ÷ 2 olur. Elmasta her karbonun 4 komşusu vardır: {kesir:4|2} = 2 bağ/C. Grafit, grafen, nanotüp ve fullerende her karbon 3 komşuya σ bağıyla bağlıdır: {kesir:3|2} = 1,5 bağ/C. Örneğin {alt:C|60} molekülünde 60 × 3 ÷ 2 = {koyu:90 C–C bağı} vardır. Mol hesabına geçildiğinde 24 g elmas (2 mol C) içinde 4 mol, 24 g grafit içinde ise 3 mol C–C σ bağı bulunur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Allotrop",
+          "Yapı Türü",
+          "Boyutluluk",
+          "Komşu C Sayısı",
+          "C Başına σ Bağı"
+        ],
+        "satirlar": [
+          [
+            "Elmas",
+            "Kovalent ağ kristal",
+            "3B",
+            "4",
+            "2"
+          ],
+          [
+            "Grafit",
+            "Tabakalı kovalent ağ",
+            "3B (tabakalar 2B)",
+            "3",
+            "1,5"
+          ],
+          [
+            "Grafen",
+            "Tek atom kalınlığında levha",
+            "2B",
+            "3",
+            "1,5"
+          ],
+          [
+            "Karbon nanotüp",
+            "Sarılmış grafen silindiri",
+            "1B",
+            "3",
+            "yaklaşık 1,5"
+          ],
+          [
+            "Fulleren ({alt:C|60})",
+            "Kapalı kafes molekül",
+            "0B",
+            "3",
+            "1,5 (90 bağ ÷ 60 C)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Bağ Sayısı Bağıntısı",
+          "metin": "Bir karbon yapısındaki C–C bağ sayısı = (karbon atomu sayısı × her atomun komşu sayısı) ÷ 2. Bölme işlemi, her bağın iki atom arasında paylaşıldığı için yapılır; bunu unutmak sonucu iki kat büyük bulmaya yol açar."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Mol Bazında Hızlı Hesap",
+          "metin": "Önce kütleyi karbonun mol kütlesine (12 g/mol) bölerek mol C bulun, sonra elmas için 2 ile, {us:sp|2} yapılı allotroplar için 1,5 ile çarpın. Tanecik sayısı isteniyorsa sonucu 6,02·{us:10|23} ile çarpın."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">Karbon Allotroplarında Boyutluluk ve Karbon Başına Bağ Sayısı</text><rect x=\"20\" y=\"48\" width=\"165\" height=\"190\" rx=\"12\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"2\"/><rect x=\"20\" y=\"48\" width=\"165\" height=\"30\" rx=\"12\" fill=\"#7c3aed\"/><text x=\"102\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">0B – Fulleren (C₆₀)</text><circle cx=\"102\" cy=\"125\" r=\"32\" fill=\"#ede9fe\" stroke=\"#6d28d9\" stroke-width=\"2\"/><polygon points=\"102,113 113.4,121.3 109.1,134.7 94.9,134.7 90.6,121.3\" fill=\"#c4b5fd\" stroke=\"#5b21b6\" stroke-width=\"1.5\"/><line x1=\"102\" y1=\"113\" x2=\"102\" y2=\"94\" stroke=\"#5b21b6\" stroke-width=\"1.2\"/><line x1=\"113.4\" y1=\"121.3\" x2=\"132\" y2=\"116\" stroke=\"#5b21b6\" stroke-width=\"1.2\"/><line x1=\"109.1\" y1=\"134.7\" x2=\"120\" y2=\"151\" stroke=\"#5b21b6\" stroke-width=\"1.2\"/><line x1=\"94.9\" y1=\"134.7\" x2=\"84\" y2=\"151\" stroke=\"#5b21b6\" stroke-width=\"1.2\"/><line x1=\"90.6\" y1=\"121.3\" x2=\"72\" y2=\"116\" stroke=\"#5b21b6\" stroke-width=\"1.2\"/><text x=\"102\" y=\"182\" text-anchor=\"middle\" font-size=\"11\" fill=\"#4c1d95\">Kapalı kafes molekül</text><text x=\"102\" y=\"200\" text-anchor=\"middle\" font-size=\"11\" fill=\"#4c1d95\">3 komşu · 1,5 bağ/C</text><text x=\"102\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#4c1d95\">60 C · 90 bağ</text><rect x=\"205\" y=\"48\" width=\"165\" height=\"190\" rx=\"12\" fill=\"#ffffff\" stroke=\"#0284c7\" stroke-width=\"2\"/><rect x=\"205\" y=\"48\" width=\"165\" height=\"30\" rx=\"12\" fill=\"#0284c7\"/><text x=\"287\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">1B – Karbon Nanotüp</text><rect x=\"240\" y=\"108\" width=\"95\" height=\"34\" fill=\"#e0f2fe\" stroke=\"#0369a1\" stroke-width=\"2\"/><ellipse cx=\"240\" cy=\"125\" rx=\"9\" ry=\"17\" fill=\"#bae6fd\" stroke=\"#0369a1\" stroke-width=\"2\"/><ellipse cx=\"335\" cy=\"125\" rx=\"9\" ry=\"17\" fill=\"#e0f2fe\" stroke=\"#0369a1\" stroke-width=\"2\"/><line x1=\"262\" y1=\"108\" x2=\"262\" y2=\"142\" stroke=\"#0369a1\" stroke-width=\"1\"/><line x1=\"287\" y1=\"108\" x2=\"287\" y2=\"142\" stroke=\"#0369a1\" stroke-width=\"1\"/><line x1=\"312\" y1=\"108\" x2=\"312\" y2=\"142\" stroke=\"#0369a1\" stroke-width=\"1\"/><text x=\"287\" y=\"182\" text-anchor=\"middle\" font-size=\"11\" fill=\"#075985\">Sarılmış grafen silindiri</text><text x=\"287\" y=\"200\" text-anchor=\"middle\" font-size=\"11\" fill=\"#075985\">3 komşu · yaklaşık 1,5 bağ/C</text><text x=\"287\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#075985\">Boyu yönünde uzar</text><rect x=\"390\" y=\"48\" width=\"165\" height=\"190\" rx=\"12\" fill=\"#ffffff\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"390\" y=\"48\" width=\"165\" height=\"30\" rx=\"12\" fill=\"#059669\"/><text x=\"472\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">2B – Grafen</text><polygon points=\"448,101 460.1,108 460.1,122 448,129 435.9,122 435.9,108\" fill=\"#d1fae5\" stroke=\"#047857\" stroke-width=\"1.5\"/><polygon points=\"472.2,101 484.3,108 484.3,122 472.2,129 460.1,122 460.1,108\" fill=\"#d1fae5\" stroke=\"#047857\" stroke-width=\"1.5\"/><polygon points=\"496.4,101 508.5,108 508.5,122 496.4,129 484.3,122 484.3,108\" fill=\"#d1fae5\" stroke=\"#047857\" stroke-width=\"1.5\"/><polygon points=\"460.1,122 472.2,129 472.2,143 460.1,150 448,143 448,129\" fill=\"#d1fae5\" stroke=\"#047857\" stroke-width=\"1.5\"/><polygon points=\"484.3,122 496.4,129 496.4,143 484.3,150 472.2,143 472.2,129\" fill=\"#d1fae5\" stroke=\"#047857\" stroke-width=\"1.5\"/><text x=\"472\" y=\"182\" text-anchor=\"middle\" font-size=\"11\" fill=\"#065f46\">Tek atom kalınlığında levha</text><text x=\"472\" y=\"200\" text-anchor=\"middle\" font-size=\"11\" fill=\"#065f46\">3 komşu · 1,5 bağ/C</text><text x=\"472\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#065f46\">Bir düzlem boyunca yayılır</text><rect x=\"575\" y=\"48\" width=\"165\" height=\"190\" rx=\"12\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"575\" y=\"48\" width=\"165\" height=\"30\" rx=\"12\" fill=\"#d97706\"/><text x=\"657\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">3B – Elmas ve Grafit</text><line x1=\"657\" y1=\"125\" x2=\"657\" y2=\"94\" stroke=\"#92400e\" stroke-width=\"2\"/><line x1=\"657\" y1=\"125\" x2=\"628\" y2=\"142\" stroke=\"#92400e\" stroke-width=\"2\"/><line x1=\"657\" y1=\"125\" x2=\"686\" y2=\"142\" stroke=\"#92400e\" stroke-width=\"2\"/><line x1=\"657\" y1=\"125\" x2=\"668\" y2=\"156\" stroke=\"#92400e\" stroke-width=\"2\" stroke-dasharray=\"3,2\"/><circle cx=\"657\" cy=\"125\" r=\"8\" fill=\"#b45309\"/><circle cx=\"657\" cy=\"94\" r=\"6\" fill=\"#fbbf24\"/><circle cx=\"628\" cy=\"142\" r=\"6\" fill=\"#fbbf24\"/><circle cx=\"686\" cy=\"142\" r=\"6\" fill=\"#fbbf24\"/><circle cx=\"668\" cy=\"156\" r=\"6\" fill=\"#fde68a\"/><text x=\"657\" y=\"182\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">Elmas: 4 komşu · 2 bağ/C</text><text x=\"657\" y=\"200\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">Grafit: 3 komşu · 1,5 bağ/C</text><text x=\"657\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#78350f\">Her yönde kristal</text><rect x=\"60\" y=\"252\" width=\"640\" height=\"34\" rx=\"10\" fill=\"#1e293b\"/><text x=\"380\" y=\"274\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#ffffff\">C–C bağ sayısı = (atom sayısı × komşu sayısı) ÷ 2</text></svg>"
+    },
+    {
+      "baslik": "Elmasın Kristal Yapısı, Termodinamik Kararlılık ve Yapay Elmas Üretimi",
+      "metin": [
+        "Elmasın olağanüstü özellikleri sayısal verilerle incelendiğinde yapı-özellik ilişkisi çok netleşir. Elmasta her karbon atomu {us:sp|3} hibritleşmesiyle dört komşusuna {koyu:154 pm} uzunluğunda tekli bağlarla bağlanır ve bağlar arasındaki açı {koyu:109,5°} olur. Bütün bağlar eşdeğer ve her yöne dağılmış olduğu için kristalde zayıf bir düzlem yoktur; bu nedenle elmas {koyu:Mohs ölçeğinde 10} sertlikle doğal maddeler arasında en serttir. Atomlar sıkı paketlendiği için yoğunluğu yaklaşık {koyu:3,5 g/c{us:m|3}} değeriyle grafitinkinden (yaklaşık 2,2 g/c{us:m|3}) belirgin biçimde büyüktür. Rijit örgü, atom titreşimlerini kristal boyunca çok hızlı taşıdığından elmas ısıyı bakırdan birkaç kat daha iyi iletir; ama hareketli elektronu olmadığından elektriksel yalıtkandır. Yüksek kırılma indisi de ışığı içeride defalarca yansıtarak elmasa parıltısını kazandırır.",
+        "Bu kadar sağlam görünen elmas, standart koşullarda karbonun {koyu:en kararlı hâli değildir}. Bunu yanma entalpileriyle gösterebiliriz: Grafitin yanma entalpisi −393,5 kJ/mol, elmasınki ise −395,4 kJ/mol'dür. Aynı ürün ({alt:CO|2}) oluştuğu hâlde elmas yandığında daha fazla ısı açığa çıkıyorsa elmasın enerjisi daha yüksektir. Hess yasasına göre C(grafit) → C(elmas) dönüşümünün entalpi değişimi −393,5 − (−395,4) = {koyu:+1,9 kJ/mol} bulunur; yani grafitin elmasa dönüşümü {koyu:endotermiktir}. Bu yüzden karbonun standart hâli grafit kabul edilir ve grafitin standart oluşum entalpisi sıfır, elmasınki yaklaşık +1,9 kJ/mol'dür.",
+        "Peki elmas neden kendiliğinden grafite dönüşmüyor? Çünkü dönüşüm için elmastaki çok sayıda güçlü C–C bağının kırılıp yeniden düzenlenmesi gerekir; bu, oda sıcaklığında aşılamayacak kadar yüksek bir {koyu:aktifleşme enerjisi} demektir. Elmas termodinamik olarak kararsız fakat {koyu:kinetik olarak kararlıdır}. Ters yöndeki dönüşüm, yani grafitten {koyu:yapay elmas} üretimi, 1950'lerin ortasında yüksek basınç ve yüksek sıcaklık (HPHT) yöntemiyle başarıldı: Yaklaşık 5-6 GPa basınç ve 1300-1600 °C sıcaklıkta, metal katalizör eşliğinde grafit elmasa dönüştürülür. Günümüzde ayrıca {koyu:kimyasal buhar biriktirme (CVD)} yöntemiyle metan ve hidrojen gazı karışımından düşük basınçta ince elmas tabakaları büyütülmektedir. Yapay elmas; kesici ve aşındırıcı uçlarda, elektronik devrelerde ısı dağıtıcı olarak ve dayanıklı optik pencerelerde kullanılır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Elmasın Özelliği",
+          "Sayısal Değer / Durum",
+          "Yapısal Nedeni"
+        ],
+        "satirlar": [
+          [
+            "C–C bağ uzunluğu ve açısı",
+            "154 pm; 109,5°",
+            "{us:sp|3} hibritleşmesi, düzgün dörtyüzlü geometri"
+          ],
+          [
+            "Sertlik",
+            "Mohs ölçeğinde 10",
+            "Her yönde eşdeğer güçlü kovalent bağlar, zayıf düzlem yok"
+          ],
+          [
+            "Yoğunluk",
+            "Yaklaşık 3,5 g/c{us:m|3}",
+            "Atomların boşluksuz, sıkı ağ örgüde dizilmesi"
+          ],
+          [
+            "Isı iletkenliği",
+            "Bakırdan birkaç kat yüksek",
+            "Rijit örgünün titreşimleri hızla iletmesi"
+          ],
+          [
+            "Elektrik iletkenliği",
+            "Yalıtkan",
+            "Bütün değerlik elektronları σ bağlarında, hareketli elektron yok"
+          ],
+          [
+            "Grafite göre enerji",
+            "Yaklaşık 1,9 kJ/mol daha yüksek",
+            "Standart koşulda grafit daha kararlı; elmas kinetik kararlı"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Sert Olan Daha Kararlı Değildir",
+          "metin": "Sertlik mekanik bir özellik, kararlılık ise enerjiyle ilgili bir kavramdır. Standart koşullarda daha düşük enerjili olan grafittir; bu yüzden elementlerin standart hâli sorulduğunda karbon için grafit yazılır ve oluşum entalpisi sıfır alınır."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Kinetik Kararlılık",
+          "metin": "Bir dönüşümün termodinamik olarak istemli olması hızlı gerçekleşeceği anlamına gelmez. Elmasın grafite dönüşümü için gereken aktifleşme enerjisi çok yüksek olduğundan elmas insan ömrü ölçeğinde değişmeden kalır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#b45309\" stroke-width=\"2\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#78350f\">Elmas: Enerji Diyagramı ve Kimlik Kartı</text><rect x=\"20\" y=\"44\" width=\"360\" height=\"242\" rx=\"12\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"200\" y=\"64\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#92400e\">Hess Yasası ile Elmas – Grafit Karşılaştırması</text><text x=\"34\" y=\"84\" font-size=\"10\" fill=\"#64748b\">Entalpi ↑</text><line x1=\"50\" y1=\"100\" x2=\"170\" y2=\"100\" stroke=\"#b91c1c\" stroke-width=\"3\"/><text x=\"110\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#b91c1c\">C(elmas) + O₂</text><line x1=\"210\" y1=\"122\" x2=\"340\" y2=\"122\" stroke=\"#1d4ed8\" stroke-width=\"3\"/><text x=\"275\" y=\"116\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1d4ed8\">C(grafit) + O₂</text><line x1=\"170\" y1=\"100\" x2=\"210\" y2=\"122\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"190\" y=\"142\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\">fark 1,9 kJ</text><line x1=\"50\" y1=\"252\" x2=\"340\" y2=\"252\" stroke=\"#0f172a\" stroke-width=\"3\"/><text x=\"195\" y=\"272\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">CO₂(g)</text><line x1=\"110\" y1=\"103\" x2=\"110\" y2=\"240\" stroke=\"#b91c1c\" stroke-width=\"2\"/><polygon points=\"104,240 116,240 110,250\" fill=\"#b91c1c\"/><text x=\"118\" y=\"185\" font-size=\"11\" fill=\"#b91c1c\">ΔH = −395,4 kJ</text><line x1=\"275\" y1=\"125\" x2=\"275\" y2=\"240\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><polygon points=\"269,240 281,240 275,250\" fill=\"#1d4ed8\"/><text x=\"230\" y=\"200\" font-size=\"11\" fill=\"#1d4ed8\">ΔH = −393,5 kJ</text><rect x=\"400\" y=\"44\" width=\"340\" height=\"150\" rx=\"12\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"400\" y=\"44\" width=\"340\" height=\"28\" rx=\"12\" fill=\"#d97706\"/><text x=\"570\" y=\"63\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">Elmas Kimlik Kartı</text><text x=\"416\" y=\"92\" font-size=\"11.5\" fill=\"#78350f\">• C–C bağ uzunluğu: 154 pm</text><text x=\"416\" y=\"112\" font-size=\"11.5\" fill=\"#78350f\">• Bağ açısı: 109,5° (düzgün dörtyüzlü, sp³)</text><text x=\"416\" y=\"132\" font-size=\"11.5\" fill=\"#78350f\">• Yoğunluk: yaklaşık 3,5 g/cm³</text><text x=\"416\" y=\"152\" font-size=\"11.5\" fill=\"#78350f\">• Sertlik: Mohs ölçeğinde 10</text><text x=\"416\" y=\"172\" font-size=\"11.5\" fill=\"#78350f\">• Isıyı çok iyi iletir, elektriği iletmez</text><rect x=\"400\" y=\"204\" width=\"340\" height=\"82\" rx=\"12\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.5\"/><text x=\"570\" y=\"224\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#92400e\">Yapay Elmas Üretimi</text><text x=\"414\" y=\"246\" font-size=\"11\" fill=\"#78350f\">HPHT: yaklaşık 5-6 GPa, 1300-1600 °C, katalizör</text><text x=\"414\" y=\"266\" font-size=\"11\" fill=\"#78350f\">CVD: CH₄ + H₂ gazından düşük basınçta büyütme</text></svg>"
+    },
+    {
+      "baslik": "Grafitin Tabakalı Yapısı, Yöne Bağlı Özellikleri ve Grafitten Grafene Geçiş",
+      "metin": [
+        "Grafitte her karbon atomu {us:sp|2} hibritleşmesiyle aynı düzlemdeki üç komşusuna {koyu:120°} açıyla bağlanır. Tabaka içindeki C–C bağ uzunluğu yaklaşık {koyu:142 pm}'dir; bu değer elmastaki tekli bağdan (154 pm) kısadır, çünkü her karbonun hibritleşmeye katılmayan p orbitalindeki elektron, bütün tabakaya yayılmış {koyu:delokalize π bulutuna} katılır ve bağlara kısmi ikili bağ karakteri kazandırır. Tabakalar arasındaki uzaklık ise yaklaşık {koyu:335 pm}'dir. Bu büyük boşluk, tabakaların yalnız zayıf van der Waals etkileşimleriyle bir arada tutulduğunu gösterir ve grafitin yoğunluğunun elmastan düşük olmasını açıklar.",
+        "Grafitin en öğretici özelliği {koyu:anizotropidir}: Özellikleri ölçüldüğü yöne göre değişir. Delokalize π elektronları tabaka düzlemi içinde serbestçe hareket ettiği için grafit {koyu:tabakalara paralel yönde elektriği iyi iletir}; tabakalara dik yönde ise elektronların bir tabakadan diğerine geçmesi zor olduğundan iletkenlik çok daha düşüktür. Mekanik özellikler de yöne bağlıdır: Tabaka içindeki kovalent bağlar çok güçlüdür, ancak tabakalar birbiri üzerinde kolayca kayar. Bir ametal olduğu hâlde elektriği iletmesi, grafiti kimyada istisnaların yapıyla nasıl açıklandığını gösteren güzel bir örnek yapar.",
+        "Grafitin tek bir tabakası ayrıldığında {koyu:grafen} elde edilir. 2004 yılında Andre Geim ve Konstantin Novoselov, grafit parçasını {koyu:yapışkan bantla} defalarca soyarak tek atom kalınlığında grafen katmanlarını ayırmayı ve özelliklerini ölçmeyi başardılar; bu çalışma 2010 Nobel Fizik Ödülü'yle ödüllendirildi. Aslında kurşun kalemle kâğıda çizdiğimiz her çizgi, birkaç katmanlı ve çok katmanlı grafit pulları içerir. Tek katman grafen görünür ışığın yalnızca yaklaşık %2,3'ünü soğurduğu için neredeyse saydamdır; her iki yüzü de açıkta olduğundan 1 gramının kuramsal yüzey alanı yaklaşık 2600 {us:m|2} düzeyindedir. Bu geniş yüzey, grafeni algılayıcılar (sensörler) ve enerji depolama için çok değerli kılar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Özellik",
+          "Grafit",
+          "Grafen"
+        ],
+        "satirlar": [
+          [
+            "Katman sayısı",
+            "Çok sayıda üst üste tabaka",
+            "Tek katman (tek atom kalınlığı)"
+          ],
+          [
+            "Tabaka içi C–C bağı",
+            "Yaklaşık 142 pm, 120°",
+            "Yaklaşık 142 pm, 120°"
+          ],
+          [
+            "Tabakalar arası etkileşim",
+            "Van der Waals, yaklaşık 335 pm aralık",
+            "Yok (tek tabaka)"
+          ],
+          [
+            "Elektrik iletimi",
+            "Düzleme paralel iyi, dik yönde zayıf (anizotrop)",
+            "Düzlem içinde çok yüksek elektron hareketliliği"
+          ],
+          [
+            "Görünüm",
+            "Siyah-gri, opak",
+            "Neredeyse saydam (ışığın yaklaşık %2,3'ünü soğurur)"
+          ],
+          [
+            "Öne çıkan kullanım",
+            "Kalem ucu, kuru yağlayıcı, elektrot",
+            "Sensör, esnek ekran, süperkapasitör"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Anizotropi",
+          "metin": "Bir maddenin elektrik iletkenliği, ısı iletkenliği veya mekanik dayanım gibi özelliklerinin ölçüldüğü yöne göre farklı değerler almasıdır. Grafit anizotrop, elmas ise her yönde benzer davrandığı için izotropa yakın bir kristaldir."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Bağ Uzunluğu Karşılaştırması",
+          "metin": "Grafitteki tabaka içi bağ (142 pm), delokalize π elektronlarının katkısıyla elmastaki tekli bağdan (154 pm) kısadır. Tabakalar arası 335 pm'lik uzaklık ise bir kovalent bağ değil, zayıf etkileşim mesafesidir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">Grafitte Yöne Bağlı Özellikler ve Grafitten Grafene</text><rect x=\"20\" y=\"44\" width=\"400\" height=\"242\" rx=\"12\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"2\"/><polygon points=\"50,80 280,80 330,105 100,105\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.5\"/><polygon points=\"50,140 280,140 330,165 100,165\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.5\"/><polygon points=\"50,200 280,200 330,225 100,225\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.5\"/><circle cx=\"110\" cy=\"92\" r=\"3\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"92\" r=\"3\" fill=\"#0f172a\"/><circle cx=\"190\" cy=\"92\" r=\"3\" fill=\"#0f172a\"/><circle cx=\"230\" cy=\"92\" r=\"3\" fill=\"#0f172a\"/><circle cx=\"270\" cy=\"92\" r=\"3\" fill=\"#0f172a\"/><circle cx=\"110\" cy=\"152\" r=\"3\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"152\" r=\"3\" fill=\"#0f172a\"/><circle cx=\"190\" cy=\"152\" r=\"3\" fill=\"#0f172a\"/><circle cx=\"230\" cy=\"152\" r=\"3\" fill=\"#0f172a\"/><circle cx=\"270\" cy=\"152\" r=\"3\" fill=\"#0f172a\"/><circle cx=\"110\" cy=\"212\" r=\"3\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"212\" r=\"3\" fill=\"#0f172a\"/><circle cx=\"190\" cy=\"212\" r=\"3\" fill=\"#0f172a\"/><circle cx=\"230\" cy=\"212\" r=\"3\" fill=\"#0f172a\"/><circle cx=\"270\" cy=\"212\" r=\"3\" fill=\"#0f172a\"/><line x1=\"350\" y1=\"105\" x2=\"350\" y2=\"140\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><text x=\"358\" y=\"120\" font-size=\"10.5\" font-weight=\"700\" fill=\"#dc2626\">335 pm</text><text x=\"358\" y=\"134\" font-size=\"10\" fill=\"#dc2626\">van der Waals</text><line x1=\"80\" y1=\"250\" x2=\"300\" y2=\"250\" stroke=\"#059669\" stroke-width=\"3\"/><polygon points=\"300,244 312,250 300,256\" fill=\"#059669\"/><text x=\"190\" y=\"272\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#047857\">Düzleme paralel: iletkenlik yüksek</text><line x1=\"36\" y1=\"90\" x2=\"36\" y2=\"220\" stroke=\"#9ca3af\" stroke-width=\"3\"/><polygon points=\"30,220 42,220 36,232\" fill=\"#9ca3af\"/><text x=\"44\" y=\"240\" font-size=\"10\" font-weight=\"700\" fill=\"#6b7280\">Dik yön: zayıf</text><text x=\"190\" y=\"62\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Tabaka içi C–C: 142 pm, 120°, delokalize π</text><rect x=\"440\" y=\"44\" width=\"300\" height=\"242\" rx=\"12\" fill=\"#ffffff\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"590\" y=\"66\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#065f46\">Grafitten Grafene (2004)</text><rect x=\"470\" y=\"80\" width=\"240\" height=\"34\" rx=\"10\" fill=\"#e2e8f0\" stroke=\"#475569\"/><text x=\"590\" y=\"102\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#0f172a\">Grafit parçası (çok tabaka)</text><polygon points=\"584,118 596,118 590,128\" fill=\"#059669\"/><rect x=\"470\" y=\"132\" width=\"240\" height=\"34\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\"/><text x=\"590\" y=\"154\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#065f46\">Yapışkan bantla tekrar tekrar soyma</text><polygon points=\"584,170 596,170 590,180\" fill=\"#059669\"/><rect x=\"470\" y=\"184\" width=\"240\" height=\"34\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\"/><text x=\"590\" y=\"206\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#065f46\">Birkaç katmanlı pullar</text><polygon points=\"584,222 596,222 590,232\" fill=\"#059669\"/><rect x=\"470\" y=\"236\" width=\"240\" height=\"36\" rx=\"10\" fill=\"#059669\"/><text x=\"590\" y=\"259\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">Tek katman GRAFEN</text></svg>"
+    },
+    {
+      "baslik": "Fullerenlerin Geometrisi: Euler Bağıntısı ve Kafes Hesapları",
+      "metin": [
+        "Fullerenler 1985 yılında Harold Kroto, Robert Curl ve Richard Smalley'nin grafiti lazerle buharlaştırdığı deneylerde keşfedildi ve bu buluş 1996 Nobel Kimya Ödülü'ne layık görüldü. Molekülün adı, benzer kafes biçimli jeodezik kubbeler tasarlayan mimar {koyu:Buckminster Fuller}'dan gelir. Fullerenler laboratuvarda üretilen yapay allotroplar olarak sınıflandırılsa da sonraki yıllarda kurumda, bazı kayaçlarda ve uzayda eser miktarda bulundukları da belirlenmiştir. En ünlü üye olan {alt:C|60} yaklaşık 0,7 nm çaplı bir kafestir; 60 köşesi (karbon atomu), 90 kenarı (C–C bağı) ve 32 yüzü (12 beşgen + 20 altıgen) vardır.",
+        "Fullerenlerin geometrisi matematikteki {koyu:Euler çokyüzlü bağıntısıyla} hesaplanabilir: {koyu:Köşe − Kenar + Yüz = 2}. Bir {alt:C|n} fullereninde köşe sayısı n'dir; her karbon 3 komşuya bağlı olduğundan kenar sayısı {kesir:3n|2} olur. Euler bağıntısından yüz sayısı {kesir:n|2} + 2 bulunur. Yüzler yalnız beşgen (b) ve altıgenlerden (h) oluşuyorsa her kenar iki yüz tarafından paylaşıldığı için 5b + 6h = 2 × {kesir:3n|2} = 3n yazılır. Bu iki eşitlik birlikte çözüldüğünde n değerinden bağımsız olarak {koyu:b = 12} çıkar: Böyle her fullerende tam 12 beşgen vardır. Altıgen sayısı ise h = {kesir:n|2} − 10 bağıntısıyla bulunur. Örneğin rugby topuna benzeyen {alt:C|70} molekülünde 25 altıgen ve 105 C–C bağı vardır.",
+        "Beşgenler düzlemsel bir levhayı kıvırarak kapalı bir kafes oluşmasını sağlayan yapı elemanlarıdır; altıgenler tek başına yalnızca düz bir yüzey (grafen) oluşturur. Kararlı fullerenlerde beşgenlerin birbirine komşu olmaması ({koyu:izole beşgen kuralı}) gerekir; bu koşulu sağlayan en küçük fulleren {alt:C|60}'tır ve bu durum onun kararlılığını açıklar. {alt:C|60}'taki 90 bağın 60'ı beşgen ile altıgenin ortak kenarında, 30'u ise iki altıgenin ortak kenarında yer alır; bu ikinci tür bağlar daha kısadır ve ikili bağ karakteri taşır. Fullerenlerin önemi bu kafes yapıdan doğar: İç boşluğuna metal atomları hapsedilebilir, apolar çözücülerde çözünebildikleri için kimyasal olarak işlenebilirler, elektron kabul etme yetenekleri sayesinde organik güneş pillerinde ve serbest radikalleri yakalayabildikleri için antioksidan araştırmalarında kullanılırlar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Fulleren",
+          "Köşe (C atomu)",
+          "Kenar (C–C bağı)",
+          "Yüz",
+          "Beşgen",
+          "Altıgen"
+        ],
+        "satirlar": [
+          [
+            "{alt:C|20}",
+            "20",
+            "30",
+            "12",
+            "12",
+            "0"
+          ],
+          [
+            "{alt:C|60}",
+            "60",
+            "90",
+            "32",
+            "12",
+            "20"
+          ],
+          [
+            "{alt:C|70}",
+            "70",
+            "105",
+            "37",
+            "12",
+            "25"
+          ],
+          [
+            "{alt:C|80}",
+            "80",
+            "120",
+            "42",
+            "12",
+            "30"
+          ],
+          [
+            "{alt:C|n} (genel)",
+            "n",
+            "{kesir:3n|2}",
+            "{kesir:n|2} + 2",
+            "12",
+            "{kesir:n|2} − 10"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Fulleren Hesap Bağıntıları",
+          "metin": "{alt:C|n} fullereni için: bağ (kenar) sayısı = {kesir:3n|2}, yüz sayısı = {kesir:n|2} + 2, beşgen sayısı = 12, altıgen sayısı = {kesir:n|2} − 10. Bulduğunuz sonuçları Köşe − Kenar + Yüz = 2 ile mutlaka kontrol edin."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "İzole Beşgen Kuralı",
+          "metin": "İki beşgen yan yana geldiğinde kafeste gerilme artar ve molekül kararsızlaşır. Bütün beşgenlerin altıgenlerle çevrildiği en küçük fulleren {alt:C|60}'tır; futbol topu görünümü de bu düzenden kaynaklanır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#7c3aed\" stroke-width=\"2\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#4c1d95\">Fullerenlerde Euler Bağıntısı ve Kafes Hesapları</text><rect x=\"20\" y=\"44\" width=\"300\" height=\"242\" rx=\"12\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"2\"/><circle cx=\"170\" cy=\"112\" r=\"48\" fill=\"#ede9fe\" stroke=\"#6d28d9\" stroke-width=\"2\"/><polygon points=\"170,96 185.2,107.1 179.4,124.9 160.6,124.9 154.8,107.1\" fill=\"#7c3aed\" stroke=\"#4c1d95\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"96\" x2=\"170\" y2=\"70\" stroke=\"#4c1d95\" stroke-width=\"1.3\"/><line x1=\"185.2\" y1=\"107.1\" x2=\"212\" y2=\"100\" stroke=\"#4c1d95\" stroke-width=\"1.3\"/><line x1=\"179.4\" y1=\"124.9\" x2=\"196\" y2=\"150\" stroke=\"#4c1d95\" stroke-width=\"1.3\"/><line x1=\"160.6\" y1=\"124.9\" x2=\"144\" y2=\"150\" stroke=\"#4c1d95\" stroke-width=\"1.3\"/><line x1=\"154.8\" y1=\"107.1\" x2=\"128\" y2=\"100\" stroke=\"#4c1d95\" stroke-width=\"1.3\"/><text x=\"170\" y=\"182\" text-anchor=\"middle\" font-size=\"11\" fill=\"#5b21b6\">Her beşgen altıgenlerle çevrili</text><rect x=\"40\" y=\"196\" width=\"260\" height=\"78\" rx=\"10\" fill=\"#7c3aed\"/><text x=\"170\" y=\"218\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#ffffff\">Köşe − Kenar + Yüz = 2</text><text x=\"170\" y=\"240\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#ede9fe\">Kenar = 3n/2   ·   Yüz = n/2 + 2</text><text x=\"170\" y=\"261\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#ede9fe\">Beşgen = 12   ·   Altıgen = n/2 − 10</text><rect x=\"340\" y=\"44\" width=\"400\" height=\"242\" rx=\"12\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"2\"/><rect x=\"340\" y=\"44\" width=\"400\" height=\"32\" rx=\"12\" fill=\"#6d28d9\"/><text x=\"390\" y=\"65\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#ffffff\">Fulleren</text><text x=\"460\" y=\"65\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#ffffff\">Bağ</text><text x=\"530\" y=\"65\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#ffffff\">Yüz</text><text x=\"600\" y=\"65\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#ffffff\">Beşgen</text><text x=\"680\" y=\"65\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#ffffff\">Altıgen</text><text x=\"390\" y=\"104\" text-anchor=\"middle\" font-size=\"12\" fill=\"#4c1d95\">C₂₀</text><text x=\"460\" y=\"104\" text-anchor=\"middle\" font-size=\"12\" fill=\"#4c1d95\">30</text><text x=\"530\" y=\"104\" text-anchor=\"middle\" font-size=\"12\" fill=\"#4c1d95\">12</text><text x=\"600\" y=\"104\" text-anchor=\"middle\" font-size=\"12\" fill=\"#4c1d95\">12</text><text x=\"680\" y=\"104\" text-anchor=\"middle\" font-size=\"12\" fill=\"#4c1d95\">0</text><rect x=\"350\" y=\"120\" width=\"380\" height=\"30\" rx=\"6\" fill=\"#ede9fe\"/><text x=\"390\" y=\"140\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#4c1d95\">C₆₀</text><text x=\"460\" y=\"140\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#4c1d95\">90</text><text x=\"530\" y=\"140\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#4c1d95\">32</text><text x=\"600\" y=\"140\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#4c1d95\">12</text><text x=\"680\" y=\"140\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#4c1d95\">20</text><text x=\"390\" y=\"176\" text-anchor=\"middle\" font-size=\"12\" fill=\"#4c1d95\">C₇₀</text><text x=\"460\" y=\"176\" text-anchor=\"middle\" font-size=\"12\" fill=\"#4c1d95\">105</text><text x=\"530\" y=\"176\" text-anchor=\"middle\" font-size=\"12\" fill=\"#4c1d95\">37</text><text x=\"600\" y=\"176\" text-anchor=\"middle\" font-size=\"12\" fill=\"#4c1d95\">12</text><text x=\"680\" y=\"176\" text-anchor=\"middle\" font-size=\"12\" fill=\"#4c1d95\">25</text><text x=\"390\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" fill=\"#4c1d95\">C₈₀</text><text x=\"460\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" fill=\"#4c1d95\">120</text><text x=\"530\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" fill=\"#4c1d95\">42</text><text x=\"600\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" fill=\"#4c1d95\">12</text><text x=\"680\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" fill=\"#4c1d95\">30</text><line x1=\"350\" y1=\"228\" x2=\"730\" y2=\"228\" stroke=\"#c4b5fd\" stroke-width=\"1.5\"/><text x=\"540\" y=\"252\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#6d28d9\">Beşgen sayısı her fullerende 12'dir;</text><text x=\"540\" y=\"272\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#6d28d9\">karbon sayısı arttıkça yalnız altıgen sayısı artar.</text></svg>"
+    },
+    {
+      "baslik": "Karbon Nanotüplerin Sarılma Biçimi, Türleri ve Önemi",
+      "metin": [
+        "Karbon nanotüpler 1991 yılında Japon bilim insanı Sumio Iijima'nın elektron mikroskobu çalışmalarıyla geniş ilgi gördü. Bir nanotüp, grafen levhasının kenarlarının birleşecek biçimde sarılmasıyla oluşan bir silindir olarak düşünülebilir. {koyu:Tek duvarlı nanotüplerin} çapı yaklaşık 1 nm düzeyindedir; boyları ise mikrometrelerden milimetrelere kadar uzayabilir. Bu nedenle boyunun çapına oranı (en-boy oranı) son derece büyüktür. {koyu:Çok duvarlı nanotüplerde} iç içe geçmiş eş merkezli silindirler bulunur ve silindirler arasındaki uzaklık grafit tabakaları arasındaki mesafeye yakındır (yaklaşık 0,34 nm). Kapalı nanotüplerin uçları, beşgen halkalar içeren {koyu:yarım fulleren kapaklarıyla} örtülüdür; yani nanotüp, grafen ile fulleren arasında yapısal bir köprüdür.",
+        "Nanotüplerin en dikkat çekici özelliği, grafen levhanın {koyu:hangi yönde sarıldığının} elektriksel davranışı belirlemesidir. Bu sarılma yönüne {koyu:kiralite} denir. Altıgenlerin tüp eksenine göre dizilişine bakılarak üç tür ayırt edilir: {koyu:koltuk (armchair)}, {koyu:zikzak} ve {koyu:kiral} nanotüpler. Koltuk tipi nanotüpler her zaman {koyu:metalik} davranır; zikzak ve kiral nanotüpler ise sarılma biçimine ve çapa bağlı olarak metalik ya da {koyu:yarı iletken} olabilir. Aynı element, aynı {us:sp|2} bağları ve aynı altıgen halkalar yalnızca farklı sarılma ile farklı elektronik özellik ortaya çıkarır: Bu, yapı-özellik ilişkisinin nanometre ölçeğindeki en çarpıcı kanıtlarından biridir.",
+        "Nanotüplerin önemi; çok yüksek çekme dayanımı, düşük yoğunluk, esneklik, yüksek ısıl ve elektriksel iletkenlik özelliklerinin bir arada bulunmasından gelir. Polimerlerle karıştırılarak hafif ve dayanıklı {koyu:kompozit malzemeler} (bisiklet gövdesi, spor raketleri, uçak ve uydu parçaları) üretilir; yarı iletken türleri nanometre boyutlu {koyu:transistörlerde}, metalik türleri iletken mürekkeplerde ve lityum iyon pillerde elektrot katkısı olarak değerlendirilir. Geniş yüzeyleri gaz moleküllerini tutabildiği için {koyu:gaz sensörlerinde} ve su arıtma filtrelerinde de araştırılmaktadır. Bununla birlikte uzun ve ince nanotüp liflerinin solunduğunda asbest liflerine benzer etkiler oluşturabileceği endişesi, üretim ve atık süreçlerinde koruyucu önlemler alınmasını gerekli kılar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Nanotüp Türü",
+          "Yapısal Özellik",
+          "Elektriksel Davranış",
+          "Örnek Kullanım"
+        ],
+        "satirlar": [
+          [
+            "Koltuk (armchair)",
+            "Altıgen kenarları tüp çevresi boyunca koltuk biçiminde dizilir",
+            "Her zaman metalik",
+            "İletken teller, iletken mürekkepler"
+          ],
+          [
+            "Zikzak",
+            "Altıgen kenarları çevre boyunca zikzak çizer",
+            "Çapa göre metalik veya yarı iletken",
+            "Nanoelektronik araştırmaları"
+          ],
+          [
+            "Kiral",
+            "Altıgen sıraları tüp ekseni etrafında sarmal oluşturur",
+            "Çapa ve sarılma açısına göre metalik veya yarı iletken",
+            "Transistörler, sensörler"
+          ],
+          [
+            "Tek duvarlı",
+            "Tek grafen silindiri, çap yaklaşık 1 nm",
+            "Kiraliteye bağlı",
+            "Nanotransistör, biyosensör"
+          ],
+          [
+            "Çok duvarlı",
+            "İç içe eş merkezli silindirler, aralık yaklaşık 0,34 nm",
+            "Çoğunlukla metalik benzeri iletim",
+            "Kompozit malzemeler, pil elektrotları"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Kiralite (Sarılma Yönü)",
+          "metin": "Grafen levhanın nanotüp oluşturmak üzere hangi doğrultuda sarıldığını ifade eden yapısal özelliktir. Kiralite ve çap birlikte, nanotüpün metalik mi yoksa yarı iletken mi davranacağını belirler."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Hibritleşme Değişmez",
+          "metin": "Nanotüpün metalik ya da yarı iletken olması karbonun hibritleşmesinin değişmesinden kaynaklanmaz; bütün türlerde karbonlar {us:sp|2} yapıdadır. Fark yalnızca altıgenlerin tüp eksenine göre diziliş biçimindendir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#0284c7\" stroke-width=\"2\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#0c4a6e\">Grafen Levhadan Karbon Nanotüpe: Sarılma ve Türler</text><rect x=\"30\" y=\"52\" width=\"170\" height=\"100\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/><line x1=\"30\" y1=\"77\" x2=\"200\" y2=\"77\" stroke=\"#6ee7b7\" stroke-width=\"1\"/><line x1=\"30\" y1=\"102\" x2=\"200\" y2=\"102\" stroke=\"#6ee7b7\" stroke-width=\"1\"/><line x1=\"30\" y1=\"127\" x2=\"200\" y2=\"127\" stroke=\"#6ee7b7\" stroke-width=\"1\"/><line x1=\"72\" y1=\"52\" x2=\"72\" y2=\"152\" stroke=\"#6ee7b7\" stroke-width=\"1\"/><line x1=\"115\" y1=\"52\" x2=\"115\" y2=\"152\" stroke=\"#6ee7b7\" stroke-width=\"1\"/><line x1=\"158\" y1=\"52\" x2=\"158\" y2=\"152\" stroke=\"#6ee7b7\" stroke-width=\"1\"/><text x=\"115\" y=\"172\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#065f46\">Grafen levha (2B)</text><line x1=\"215\" y1=\"102\" x2=\"275\" y2=\"102\" stroke=\"#0284c7\" stroke-width=\"3\"/><polygon points=\"275,95 288,102 275,109\" fill=\"#0284c7\"/><text x=\"250\" y=\"92\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">sarma</text><rect x=\"320\" y=\"80\" width=\"150\" height=\"44\" fill=\"#e0f2fe\" stroke=\"#0369a1\" stroke-width=\"2\"/><ellipse cx=\"320\" cy=\"102\" rx=\"11\" ry=\"22\" fill=\"#bae6fd\" stroke=\"#0369a1\" stroke-width=\"2\"/><path d=\"M470 80 A14 22 0 0 1 470 124\" fill=\"#c4b5fd\" stroke=\"#6d28d9\" stroke-width=\"2\"/><line x1=\"350\" y1=\"80\" x2=\"350\" y2=\"124\" stroke=\"#0369a1\" stroke-width=\"1\"/><line x1=\"385\" y1=\"80\" x2=\"385\" y2=\"124\" stroke=\"#0369a1\" stroke-width=\"1\"/><line x1=\"420\" y1=\"80\" x2=\"420\" y2=\"124\" stroke=\"#0369a1\" stroke-width=\"1\"/><text x=\"400\" y=\"148\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#075985\">Nanotüp (1B), çap yaklaşık 1 nm</text><text x=\"400\" y=\"166\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#6d28d9\">Uç: yarım fulleren kapağı</text><rect x=\"520\" y=\"48\" width=\"220\" height=\"124\" rx=\"12\" fill=\"#ffffff\" stroke=\"#0284c7\" stroke-width=\"2\"/><circle cx=\"575\" cy=\"104\" r=\"22\" fill=\"#e0f2fe\" stroke=\"#0369a1\" stroke-width=\"2\"/><text x=\"575\" y=\"150\" text-anchor=\"middle\" font-size=\"11\" fill=\"#075985\">Tek duvarlı</text><circle cx=\"682\" cy=\"104\" r=\"34\" fill=\"#e0f2fe\" stroke=\"#0369a1\" stroke-width=\"2\"/><circle cx=\"682\" cy=\"104\" r=\"24\" fill=\"#f0f9ff\" stroke=\"#0369a1\" stroke-width=\"2\"/><circle cx=\"682\" cy=\"104\" r=\"14\" fill=\"#ffffff\" stroke=\"#0369a1\" stroke-width=\"2\"/><text x=\"682\" y=\"158\" text-anchor=\"middle\" font-size=\"11\" fill=\"#075985\">Çok duvarlı</text><rect x=\"30\" y=\"192\" width=\"220\" height=\"90\" rx=\"12\" fill=\"#0284c7\"/><text x=\"140\" y=\"218\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#ffffff\">Koltuk (armchair)</text><text x=\"140\" y=\"242\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#e0f2fe\">Her zaman metalik</text><text x=\"140\" y=\"264\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#e0f2fe\">İletken tel ve mürekkepler</text><rect x=\"270\" y=\"192\" width=\"220\" height=\"90\" rx=\"12\" fill=\"#0e7490\"/><text x=\"380\" y=\"218\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#ffffff\">Zikzak</text><text x=\"380\" y=\"242\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#cffafe\">Metalik veya yarı iletken</text><text x=\"380\" y=\"264\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#cffafe\">Çapa bağlı davranış</text><rect x=\"510\" y=\"192\" width=\"230\" height=\"90\" rx=\"12\" fill=\"#4338ca\"/><text x=\"625\" y=\"218\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#ffffff\">Kiral (sarmal)</text><text x=\"625\" y=\"242\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#e0e7ff\">Metalik veya yarı iletken</text><text x=\"625\" y=\"264\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#e0e7ff\">Transistör ve sensörler</text></svg>"
+    },
+    {
+      "baslik": "Karbon Nanomalzemelerinin Önemi: Enerji, Elektronik, Sağlık ve Çevre",
+      "metin": [
+        "Fulleren, grafen ve nanotüplerin bilim ve teknolojideki önemini anlamak için önce onları özel kılan ortak noktaları görmek gerekir: {koyu:Çok büyük yüzey alanı}, {koyu:düşük yoğunluk}, {us:sp|2} bağlarından gelen {koyu:yüksek mekanik dayanım} ve delokalize π elektronlarından kaynaklanan {koyu:yüksek elektriksel iletkenlik}. Bu özellikler tek bir malzemede nadiren bir arada bulunur. Örneğin metaller iletkendir ama ağırdır; polimerler hafiftir ama genellikle yalıtkandır. Karbon nanomalzemeleri bu iki dünyanın üstünlüklerini birleştirebildiği için {koyu:malzeme biliminin yapı taşları} hâline gelmiştir.",
+        "Bir uygulamada hangi allotropun seçileceği, istenen özellikten geriye doğru düşünülerek bulunur: {koyu:İstenen özellik → bu özelliği sağlayan yapı → o yapıya sahip allotrop}. Enerji depolamada iyonların ve yüklerin tutunacağı geniş yüzey gerektiği için grafen ve nanotüpler süperkapasitör ve pil elektrotlarında öne çıkar. Saydam ve esnek bir iletken gerektiren dokunmatik ve katlanabilir ekranlarda grafen, elektron kabul eden bir molekül gerektiren organik güneş pillerinde fulleren türevleri tercih edilir. Tıpta, kafes yapısı içine molekül taşıyabilen fullerenler ve yüzeyi değiştirilebilen nanotüpler {koyu:hedefe yönelik ilaç taşıma} ve görüntüleme amaçlı araştırılmaktadır. Çevre alanında grafen oksit membranlar suyu tuzdan ve kirleticilerden ayırmak için, nanotüp tabanlı sensörler ise havadaki zararlı gazları düşük derişimlerde algılamak için geliştirilmektedir.",
+        "Bu fırsatların yanında {koyu:bilimsel sorumluluk} da vardır. Nanometre boyutundaki tanecikler hücre zarlarından geçebildiği için canlılar üzerindeki etkileri ({koyu:nanotoksisite}) dikkatle incelenmelidir. Üretimin yüksek enerji gerektirmesi, atıkların doğada nasıl davrandığı ve geri kazanımın nasıl yapılacağı da sürdürülebilirlik açısından önemli sorulardır. Fullerenlerin keşfinin yıldızlararası karbon zincirlerini anlamaya yönelik bir merakla, grafenin ayrılmasının ise basit bir yapışkan bantla başlaması, bilimsel keşiflerin merak, sabır ve dikkatli gözlemle ilerlediğini gösterir. Karbonun bu hikâyesi, aynı atomların farklı dizilişleriyle insanlığın en önemli teknolojik sorunlarına çözüm üretilebileceğini ortaya koyar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Uygulama Alanı",
+          "Tercih Edilen Allotrop",
+          "Yararlanılan Yapısal Özellik"
+        ],
+        "satirlar": [
+          [
+            "Süperkapasitör ve pil elektrotları",
+            "Grafen, karbon nanotüp",
+            "Geniş yüzey alanı ve yüksek elektriksel iletkenlik"
+          ],
+          [
+            "Katlanabilir dokunmatik ekran",
+            "Grafen",
+            "Tek atom kalınlığı: saydamlık, esneklik, iletkenlik"
+          ],
+          [
+            "Organik güneş pilleri",
+            "Fulleren türevleri",
+            "Kafes yapının elektron kabul etme yeteneği"
+          ],
+          [
+            "Hafif ve dayanıklı kompozitler",
+            "Karbon nanotüp",
+            "Yüksek çekme dayanımı ve düşük yoğunluk"
+          ],
+          [
+            "İlaç taşıma ve görüntüleme",
+            "Fulleren, karbon nanotüp",
+            "İç boşluk ve yüzeyin kimyasal olarak değiştirilebilmesi"
+          ],
+          [
+            "Su arıtma ve gaz sensörleri",
+            "Grafen oksit, karbon nanotüp",
+            "Seçici gözenekli yüzey ve gaz tutma yeteneği"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Allotrop Seçme Stratejisi",
+          "metin": "Uygulama sorularında önce istenen özelliği (sertlik, iletkenlik, saydamlık, esneklik, geniş yüzey, çözünürlük) belirleyin; sonra bu özelliği doğuran yapıyı (3B ağ, delokalize π, tek katman, kapalı kafes) bulun; en son bu yapıya sahip allotropu seçin."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Nanotoksisite",
+          "metin": "Malzemelerin nanometre boyutunda canlılar üzerinde oluşturabileceği zararlı etkileri inceleyen alandır. Karbon nanomalzemeleriyle çalışılan laboratuvarlarda solunumun önlenmesi, uygun koruyucu ekipman ve kontrollü atık yönetimi temel güvenlik kurallarıdır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">Karbon Nanomalzemelerinin Önemi: Özellik, Yapı ve Uygulama</text><line x1=\"380\" y1=\"135\" x2=\"130\" y2=\"78\" stroke=\"#94a3b8\" stroke-width=\"2\"/><line x1=\"380\" y1=\"135\" x2=\"630\" y2=\"78\" stroke=\"#94a3b8\" stroke-width=\"2\"/><line x1=\"380\" y1=\"135\" x2=\"130\" y2=\"190\" stroke=\"#94a3b8\" stroke-width=\"2\"/><line x1=\"380\" y1=\"135\" x2=\"630\" y2=\"190\" stroke=\"#94a3b8\" stroke-width=\"2\"/><rect x=\"290\" y=\"105\" width=\"180\" height=\"60\" rx=\"30\" fill=\"#1e293b\"/><text x=\"380\" y=\"130\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#ffffff\">Karbon</text><text x=\"380\" y=\"150\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#ffffff\">Nanomalzemeleri</text><rect x=\"30\" y=\"50\" width=\"220\" height=\"60\" rx=\"12\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"140\" y=\"72\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#b45309\">Enerji</text><text x=\"140\" y=\"92\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#78350f\">Pil, süperkapasitör, güneş pili</text><rect x=\"510\" y=\"50\" width=\"220\" height=\"60\" rx=\"12\" fill=\"#ffffff\" stroke=\"#0284c7\" stroke-width=\"2\"/><text x=\"620\" y=\"72\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0369a1\">Elektronik</text><text x=\"620\" y=\"92\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#075985\">Esnek ekran, transistör, sensör</text><rect x=\"30\" y=\"162\" width=\"220\" height=\"60\" rx=\"12\" fill=\"#ffffff\" stroke=\"#db2777\" stroke-width=\"2\"/><text x=\"140\" y=\"184\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#be185d\">Sağlık</text><text x=\"140\" y=\"204\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#831843\">İlaç taşıma, görüntüleme</text><rect x=\"510\" y=\"162\" width=\"220\" height=\"60\" rx=\"12\" fill=\"#ffffff\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"620\" y=\"184\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#047857\">Çevre ve Malzeme</text><text x=\"620\" y=\"204\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#065f46\">Su arıtma, hafif kompozitler</text><rect x=\"290\" y=\"180\" width=\"180\" height=\"44\" rx=\"10\" fill=\"#e2e8f0\" stroke=\"#475569\"/><text x=\"380\" y=\"198\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#0f172a\">Geniş yüzey · hafiflik</text><text x=\"380\" y=\"214\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#0f172a\">dayanım · iletkenlik</text><rect x=\"30\" y=\"240\" width=\"700\" height=\"46\" rx=\"12\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"380\" y=\"260\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#b91c1c\">Sorumluluk: nanotoksisite, enerji maliyeti, atık ve geri kazanım</text><text x=\"380\" y=\"278\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#7f1d1d\">Güvenli üretim, koruyucu ekipman ve kontrollü atık yönetimi gerekir</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "36 g elmas örneğinde kaç mol ve kaç tane C–C kovalent bağı bulunur? (C: 12 g/mol, Avogadro sayısı: 6,02·{us:10|23})",
+      "cevap": "1. adım: Karbonun mol sayısı bulunur: n = {kesir:36|12} = 3 mol C.\n2. adım: Elmasta her karbon 4 komşuya bağlıdır ve her bağ iki atom arasında paylaşılır; karbon başına {kesir:4|2} = 2 bağ düşer.\n3. adım: Bağ mol sayısı = 3 × 2 = 6 mol C–C bağı.\n4. adım: Bağ sayısı = 6 × 6,02·{us:10|23} = 3,612·{us:10|24} tane.\nSonuç: 36 g elmasta 6 mol, yani 3,612·{us:10|24} tane C–C bağı vardır.",
+      "ipucu": "Bağ sayısını bulurken 4 komşuyu doğrudan çarpmayın; her bağ iki karbon tarafından paylaşıldığı için 2'ye bölmeyi unutmayın."
+    },
+    {
+      "soru": "C(grafit) + {alt:O|2}(g) → {alt:CO|2}(g)  ΔH = −393,5 kJ ve C(elmas) + {alt:O|2}(g) → {alt:CO|2}(g)  ΔH = −395,4 kJ olduğuna göre: a) C(grafit) → C(elmas) dönüşümünün ΔH değerini bulunuz. b) Hangi allotrop daha kararlıdır? c) 24 g elmas grafite dönüştürülürse kaç kJ ısı alınır ya da verilir?",
+      "cevap": "a) Grafitin yanma tepkimesi aynen yazılır, elmasınki ters çevrilir (işaret değişir):\nC(grafit) + {alt:O|2} → {alt:CO|2}  ΔH = −393,5 kJ\n{alt:CO|2} → C(elmas) + {alt:O|2}  ΔH = +395,4 kJ\nToplam: C(grafit) → C(elmas)  ΔH = +1,9 kJ (endotermik).\nb) Elmasın enerjisi grafitten 1,9 kJ/mol daha yüksektir; düşük enerjili olan grafit daha kararlıdır.\nc) 24 g elmas = {kesir:24|12} = 2 mol. Elmas → grafit dönüşümü ters yönde olduğundan ΔH = −1,9 kJ/mol'dür. 2 × 1,9 = 3,8 kJ ısı açığa çıkar (verilir).",
+      "ipucu": "Hess yasasında bir tepkimeyi ters çevirdiğinizde ΔH'nin işaretini değiştirin; enerjisi düşük olan hâl daha kararlıdır."
+    },
+    {
+      "soru": "Yalnızca beşgen ve altıgen halkalardan oluşan {alt:C|84} fullerenindeki C–C bağı, yüz, beşgen ve altıgen sayılarını bulunuz ve sonucu Euler bağıntısıyla doğrulayınız.",
+      "cevap": "1. adım: Köşe sayısı = 84 (karbon atomu sayısı).\n2. adım: Bağ (kenar) sayısı = {kesir:3 × 84|2} = 126.\n3. adım: Yüz sayısı = {kesir:84|2} + 2 = 44.\n4. adım: Beşgen sayısı her zaman 12; altıgen sayısı = {kesir:84|2} − 10 = 32. Kontrol: 12 + 32 = 44 yüz ✓.\n5. adım: Euler: Köşe − Kenar + Yüz = 84 − 126 + 44 = 2 ✓.\nEk kontrol: 5 × 12 + 6 × 32 = 60 + 192 = 252 = 2 × 126 ✓ (her kenar iki yüzde sayılır).\nSonuç: 126 bağ, 44 yüz, 12 beşgen, 32 altıgen.",
+      "ipucu": "Önce bağ sayısını 3n ÷ 2 ile, sonra yüz sayısını Euler bağıntısından bulun; beşgen sayısının 12 olduğunu unutmayın."
+    },
+    {
+      "soru": "7,2 g {alt:C|60} örneği için: a) Kaç tane {alt:C|60} molekülü vardır? b) Kaç tane karbon atomu vardır? c) Kaç mol C–C bağı vardır? (C: 12 g/mol, Avogadro sayısı: 6,02·{us:10|23})",
+      "cevap": "1. adım: {alt:C|60}'ın mol kütlesi = 60 × 12 = 720 g/mol.\n2. adım: Molekül mol sayısı = {kesir:7,2|720} = 0,01 mol.\na) Molekül sayısı = 0,01 × 6,02·{us:10|23} = 6,02·{us:10|21} tane.\nb) Her molekülde 60 C bulunduğundan C atomu mol sayısı = 0,01 × 60 = 0,6 mol; atom sayısı = 0,6 × 6,02·{us:10|23} = 3,612·{us:10|23} tane.\nc) Bir {alt:C|60} molekülünde {kesir:60 × 3|2} = 90 bağ vardır; bağ mol sayısı = 0,01 × 90 = 0,9 mol.\nKontrol: 0,6 mol C × 1,5 bağ/C = 0,9 mol ✓.",
+      "ipucu": "Fullerenler molekül olduğu için önce molekül mol sayısını bulun, sonra her molekülün içerdiği atom ve bağ sayısıyla çarpın."
+    },
+    {
+      "soru": "Bir öğrenci, grafit tabletin iki yüzeyine elektrot bağladığında (akım tabakalara dik yönde) zayıf, tabletin iki yan kenarına bağladığında (akım tabakalara paralel yönde) güçlü iletkenlik ölçüyor. Bu sonucu ve grafitin elmastan daha düşük yoğunlukta olmasını yapısıyla açıklayınız.",
+      "cevap": "1. adım (yapı): Grafitte karbonlar {us:sp|2} hibritleşmesiyle düzlemsel altıgen tabakalar oluşturur; her karbonun dördüncü elektronu tabaka boyunca yayılmış delokalize π bulutuna katılır.\n2. adım (paralel yön): π elektronları tabaka düzlemi içinde serbestçe hareket edebildiği için akım tabakalara paralel uygulandığında iletkenlik yüksektir.\n3. adım (dik yön): Tabakalar yaklaşık 335 pm uzaklıkta ve yalnızca zayıf van der Waals etkileşimleriyle bağlıdır; elektronların tabakadan tabakaya geçişi zor olduğundan dik yönde iletkenlik düşüktür. Bu yöne bağlı davranışa anizotropi denir.\n4. adım (yoğunluk): Tabakalar arasındaki büyük boşluklar birim hacimdeki atom sayısını azaltır; bu yüzden grafitin yoğunluğu (yaklaşık 2,2 g/c{us:m|3}) sıkı paketli elmasınkinden (yaklaşık 3,5 g/c{us:m|3}) küçüktür.",
+      "ipucu": "Delokalize π elektronlarının hangi düzlemde hareket ettiğini ve tabakalar arası uzaklığın büyüklüğünü düşünün."
+    },
+    {
+      "soru": "Çok geniş bir grafen levhası 1 mol karbon atomu içermektedir. Kenar etkileri ihmal edildiğinde bu levhada kaç mol altıgen halka ve kaç mol C–C bağı bulunur?",
+      "cevap": "1. adım: Grafende her karbon atomu 3 altıgen halkanın ortak köşesidir.\n2. adım: Bir altıgenin 6 köşesi olduğundan altıgen başına düşen karbon = {kesir:6|3} = 2 C.\n3. adım: Altıgen mol sayısı = {kesir:1|2} = 0,5 mol (yaklaşık 3,01·{us:10|23} tane).\n4. adım: Her karbonun 3 komşusu vardır; bağ sayısı = {kesir:1 × 3|2} = 1,5 mol C–C bağı.\nKontrol: Her altıgende 6 kenar vardır ve her kenar 2 altıgen tarafından paylaşılır; altıgen başına 3 bağ düşer: 0,5 × 3 = 1,5 mol ✓.",
+      "ipucu": "Paylaşım mantığını kullanın: Bir köşe kaç altıgene, bir kenar kaç altıgene ortaktır?"
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Yalnızca beşgen ve altıgen halkalardan oluşan {alt:C|70} fullereninde kaç altıgen halka bulunur?",
+      "secenekler": [
+        "20",
+        "25",
+        "35",
+        "12"
+      ],
+      "dogru": 1,
+      "aciklama": "Altıgen sayısı = {kesir:n|2} − 10 = 35 − 10 = 25'tir. 12 beşgen sayısıdır; 35 ise karbon sayısının yarısıdır. Toplam yüz 12 + 25 = 37 olur ve Euler bağıntısı 70 − 105 + 37 = 2 ile sağlanır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Grafitin yanma entalpisi −393,5 kJ/mol, elmasın yanma entalpisi −395,4 kJ/mol'dür. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
+      "secenekler": [
+        "Standart koşullarda elmas grafitten daha kararlıdır.",
+        "Elmas ve grafitin yanma tepkimelerinde farklı ürünler oluşur.",
+        "Elmas, aktifleşme enerjisi çok düşük olduğu için oda koşullarında hızla grafite dönüşür.",
+        "Grafitin elmasa dönüşümü yaklaşık 1,9 kJ/mol ısı alan (endotermik) bir süreçtir."
+      ],
+      "dogru": 3,
+      "aciklama": "Hess yasasına göre C(grafit) → C(elmas) için ΔH = −393,5 − (−395,4) = +1,9 kJ/mol'dür. Grafit daha düşük enerjili ve kararlıdır; iki allotrop da yalnız {alt:CO|2} oluşturur; elmasın dönüşmemesi aktifleşme enerjisinin çok yüksek olmasındandır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Karbon nanotüplerin metalik ya da yarı iletken davranmasını belirleyen temel etken aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Grafen levhanın sarılma yönü (kiralitesi) ve tüpün çapı",
+        "Karbon atomlarının {us:sp|3} hibritleşmesine geçmesi",
+        "Tüpün yapısına bağlanan hidrojen atomu sayısı",
+        "Tüpün uç kapaklarındaki altıgen halkaların sayısı"
+      ],
+      "dogru": 0,
+      "aciklama": "Bütün nanotüplerde karbonlar {us:sp|2} yapıdadır ve hidrojen içermez. Elektriksel davranışı altıgenlerin tüp eksenine göre diziliş biçimi (kiralite) ile çap belirler: Koltuk tipi her zaman metalik, zikzak ve kiral tipler metalik ya da yarı iletken olabilir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "18 g grafit örneğinde kaç mol C–C σ bağı bulunur? (C: 12 g/mol)",
+      "secenekler": [
+        "1,5",
+        "3",
+        "2,25",
+        "4,5"
+      ],
+      "dogru": 2,
+      "aciklama": "18 ÷ 12 = 1,5 mol C. Grafitte her karbon 3 komşuya bağlıdır; karbon başına 3 ÷ 2 = 1,5 σ bağı düşer. 1,5 × 1,5 = 2,25 mol bağ. 3 mol, elmas gibi düşünülerek (karbon başına 2) bulunan yanlış sonuçtur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Yalnızca beşgen ve altıgenlerden oluşan bütün fullerenlerde beşgen sayısı 12'dir.",
+          "dogru": true,
+          "aciklama": "Euler bağıntısı (Köşe − Kenar + Yüz = 2) ile kenar ilişkisi (5b + 6h = 3n) birlikte çözüldüğünde n'den bağımsız olarak b = 12 bulunur."
+        },
+        {
+          "metin": "Grafitteki tabaka içi C–C bağı, elmastaki C–C bağından daha uzundur.",
+          "dogru": false,
+          "aciklama": "Tersine, grafitteki tabaka içi bağ (yaklaşık 142 pm) delokalize π katkısıyla kısmi ikili bağ karakteri taşır ve elmastaki tekli bağdan (154 pm) kısadır."
+        },
+        {
+          "metin": "Elmas termodinamik olarak grafitten daha kararsız olduğu hâlde, yüksek aktifleşme enerjisi nedeniyle oda koşullarında grafite dönüşmez.",
+          "dogru": true,
+          "aciklama": "Elmas kinetik olarak kararlıdır; dönüşüm için güçlü C–C bağlarının kırılması gerekir."
+        },
+        {
+          "metin": "Grafit, tabakalara paralel ve dik yönlerde elektriği eşit derecede iletir.",
+          "dogru": false,
+          "aciklama": "Grafit anizotroptur; delokalize π elektronları tabaka düzleminde hareket ettiği için paralel yönde iletkenlik yüksek, dik yönde çok düşüktür."
+        },
+        {
+          "metin": "Fullerenler molekül yapılı olduğundan toluen gibi apolar çözücülerde çözünebilir; elmas ve grafit ise çözünmez.",
+          "dogru": true,
+          "aciklama": "Fulleren molekülleri arasında yalnız zayıf etkileşimler vardır; elmas ve grafit ise dev kovalent ağ yapılardır ve çözünmeleri için kovalent bağların kırılması gerekir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Euler bağıntısı",
+          "Köşe − Kenar + Yüz = 2 eşitliğiyle fulleren kafeslerinin geometrisini hesaplamayı sağlayan bağıntı"
+        ],
+        [
+          "Anizotropi",
+          "Grafitin elektrik iletkenliğinin tabakalara paralel ve dik yönlerde farklı olması"
+        ],
+        [
+          "Kiralite",
+          "Grafen levhanın nanotüp oluşturmak üzere sarılma yönü; tüpün metalik ya da yarı iletken olmasını belirler"
+        ],
+        [
+          "Kimyasal buhar biriktirme (CVD)",
+          "Metan ve hidrojen gazı karışımından düşük basınçta ince elmas tabakaları büyütme yöntemi"
+        ],
+        [
+          "Kinetik kararlılık",
+          "Elmasın, yüksek aktifleşme enerjisi nedeniyle termodinamik olarak istemli olan grafite dönüşümü gerçekleştirmemesi"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Yalnızca beşgen ve altıgen halkalardan oluşan her fullerende beşgen halka sayısı ___ olur.",
+          "cevap": "12"
+        },
+        {
+          "metin": "Bir maddenin özelliklerinin ölçüldüğü yöne göre değişmesine ___ denir.",
+          "cevap": "anizotropi"
+        },
+        {
+          "metin": "Standart koşullarda karbonun en kararlı allotropu ___ olduğundan standart oluşum entalpisi sıfır kabul edilir.",
+          "cevap": "grafit"
+        },
+        {
+          "metin": "Her zaman metalik davranan karbon nanotüp türü ___ tipi nanotüptür.",
+          "cevap": "koltuk"
+        },
+        {
+          "metin": "Grafitin elmasa dönüşümü, yaklaşık 1,9 kJ/mol ısı alındığı için ___ bir süreçtir.",
+          "cevap": "endotermik"
+        }
+      ],
+      "kelimeler": [
+        "12",
+        "anizotropi",
+        "grafit",
+        "koltuk",
+        "endotermik"
+      ],
+      "fazla": [
+        "ekzotermik",
+        "izotropi"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Organik güneş pili geliştiren bir laboratuvarda 1,44 g {alt:C|60} kullanılmaktadır. a) Örnekteki {alt:C|60} molekülünün mol sayısını, b) örnekteki toplam altıgen halka mol sayısını, c) örnekteki toplam C–C bağı mol sayısını, d) örnek yeterli oksijenle tamamen yakılırsa oluşacak {alt:CO|2} kütlesini bulunuz. (C: 12, O: 16 g/mol)",
+      "ipuclari": [
+        "1. adım: {alt:C|60}'ın mol kütlesini (60 × 12) hesaplayıp verilen kütleyi bu değere bölerek molekül mol sayısını bulun.",
+        "2. adım: Bir {alt:C|60} molekülündeki altıgen sayısını ({kesir:n|2} − 10) ve bağ sayısını ({kesir:3n|2}) bulup molekül mol sayısıyla çarpın.",
+        "3. adım: Toplam karbon mol sayısını bulun; her C atomu bir {alt:CO|2} oluşturur, {alt:CO|2}'nin mol kütlesini (44 g/mol) kullanarak kütleye geçin."
+      ],
+      "cevap": "a) M({alt:C|60}) = 60 × 12 = 720 g/mol; n = {kesir:1,44|720} = 0,002 mol {alt:C|60}.\nb) Bir molekülde altıgen sayısı = {kesir:60|2} − 10 = 20; toplam altıgen = 0,002 × 20 = 0,04 mol.\nc) Bir molekülde bağ sayısı = {kesir:3 × 60|2} = 90; toplam bağ = 0,002 × 90 = 0,18 mol. Kontrol: Karbon mol sayısı 0,002 × 60 = 0,12 mol; 0,12 × 1,5 = 0,18 mol ✓.\nd) {alt:C|60} + 60 {alt:O|2} → 60 {alt:CO|2}; oluşan {alt:CO|2} = 0,12 mol. M({alt:CO|2}) = 12 + 2 × 16 = 44 g/mol; kütle = 0,12 × 44 = 5,28 g.\nSonuç: 0,002 mol molekül, 0,04 mol altıgen, 0,18 mol C–C bağı ve 5,28 g {alt:CO|2}. Yanma ürünü, bütün karbon allotroplarında olduğu gibi yalnızca {alt:CO|2}'dir."
+    }
+  ]
+}

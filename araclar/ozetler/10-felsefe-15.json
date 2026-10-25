@@ -1,0 +1,519 @@
+{
+  "ad": "10-felsefe-15",
+  "sinif": 10,
+  "ders": "felsefe",
+  "ders_adi": "Felsefe",
+  "hafta": 15,
+  "tarih": "28 Aralık 2026-1 Ocak 2027",
+  "yayin_tarihi": "2026-12-28",
+  "unite": "4. Ünite: Bilgi Felsefesi",
+  "konu": "Bilgi Felsefesinin Temel Problemlerinin Derinleştirilmesi: Bilginin Tanımı, Şüpheden Kesinliğe Yöntemler, Deneyciliğin Sorgulamaları, Kant'ın Yargı Ayrımı ve Doğruluk Kuramlarının Değerlendirilmesi",
+  "ciktilar": [
+    "FEL.10.4.1. Bilgi felsefesinin konusunu, kavramlarını ve problemlerini muhakeme edebilme",
+    "FEL.10.4.1.b) Bilgi felsefesinin temel problemlerini açıklar.",
+    "Bilginin imkânı, kaynağı ve doğruluk ölçütleri problemlerine verilen yanıtları filozofların düşünce deneyleri ve örnekleri üzerinden karşılaştırır.",
+    "Gündelik hayatta karşılaştığı bir iddiayı imkân, kaynak ve doğruluk ölçütü soruları ile epistemolojik açıdan çözümler."
+  ],
+  "giris": "Geçen hafta bilgi felsefesinin üç büyük sorusunu ve bu sorulara verilen temel yanıtları tanıdık. Bu hafta o yanıtların {koyu:içine giriyoruz}: Bilgiyi sanıdan ayıran nedir? Descartes ve Gazâlî şüpheden kesinliğe nasıl ulaştı? Deneyciler deneyden yola çıkıp neden giderek daha şüpheci oldu? Kant'ın {koyu:sentetik apriori} yargıları neden bu kadar önemlidir? Haftayı, öğrendiklerimizi {koyu:gerçek bir iddiayı çözümlemek} için kullanarak tamamlayacağız.",
+  "ozet": [
+    "{koyu:Bilginin tanımı:} Platon'dan bu yana bilgi, sanıdan (doksa) farklı olarak {koyu:gerekçelendirilmiş doğru inanç} diye tanımlanır; Edmund Gettier 1963'te bu tanımın şans eseri doğru çıkan inançlar karşısında yetersiz kalabileceğini göstermiştir.",
+    "{koyu:Şüpheden kesinliğe:} Descartes duyu yanılgıları, rüya ve kötü cin varsayımıyla her şeyden şüphe edip {koyu:cogito} ilkesine; Gazâlî ise duyu ve akla yönelttiği şüpheden Allah'ın kalbe attığı nur ile kesinliğe ulaştığını anlatmıştır.",
+    "{koyu:Deneyciliğin gelişimi:} Locke bilgiyi duyum ve düşünümden gelen basit ve karmaşık idelerle açıklamış, Berkeley {koyu:“Var olmak algılanmaktır.”} demiş, Hume ise nedenselliğin gözlenemeyen bir {koyu:alışkanlık} olduğunu ileri sürerek tümevarım problemini ortaya koymuştur.",
+    "{koyu:Kant'ın yargı ayrımı:} Analitik yargılar bilgimizi genişletmez; sentetik aposteriori yargılar deneye dayanır; {koyu:sentetik apriori} yargılar ise (7 + 5 = 12 gibi) hem bilgimizi genişletir hem de zorunlu ve evrenseldir.",
+    "{koyu:Doğruluk kuramlarının sınanması:} Uygunluk, tutarlılık, apaçıklık, fayda ve tümel uzlaşım ölçütlerinin her birinin güçlü ve zayıf yönleri vardır; bu nedenle ölçütler bilginin alanına göre birlikte kullanılır.",
+    "{koyu:Uygulama:} Bir iddia; imkân (kesin bilgi mümkün mü?), kaynak (neye dayanıyor?) ve ölçüt (nasıl sınanır?) soruları ile çözümlenir; dogmatik kabul ile aşırı şüphe arasında {koyu:ılımlı ve eleştirel şüphe} en sağlıklı tutumdur."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Bilgi Nedir? Sanı, İnanç ve Gerekçelendirme Tartışması",
+      "metin": [
+        "Bilginin imkânı tartışmasının arkasında daha temel bir soru yatar: {koyu:Bilgi tam olarak nedir?} Gündelik dilde “biliyorum”, “sanıyorum” ve “inanıyorum” ifadelerini çoğu zaman birbirinin yerine kullanırız. Felsefede ise bu kavramlar titizlikle ayrılır. {koyu:Sanı (doksa)}, yeterli gerekçesi olmayan, doğru da yanlış da çıkabilen kanaattir. {koyu:İnanç}, bir önermeyi doğru kabul etme tutumudur. {koyu:Bilgi} ise inancın ötesine geçer: Doğru olmalı ve sağlam bir gerekçeye dayanmalıdır. Platon, Devlet adlı eserinde bu ayrımı {koyu:bölünmüş çizgi benzetmesiyle} anlatır. Çizginin görünür dünyaya ait alt kısmında gölge ve yansımalara ilişkin {koyu:eikasia (tahmin)} ile somut nesnelere ilişkin {koyu:pistis (inanç)} yer alır; bu ikisi birlikte doksayı oluşturur. Düşünülür dünyaya ait üst kısımda ise matematik nesnelerine ilişkin {koyu:dianoia (düşünme)} ve idealara ilişkin {koyu:noesis (akılla kavrama)} bulunur; bunlar gerçek bilgiyi yani {koyu:episteme}yi oluşturur.",
+        "Platon'un Theaitetos diyaloğunda “Bilgi algıdır.” görüşü eleştirilir, ardından bilginin “açıklamayla (logos) desteklenmiş doğru sanı” olabileceği tartışılır. Bu tartışmadan doğan {koyu:klasik bilgi tanımı} üç koşula dayanır: Önerme doğru olmalı, kişi ona inanmalı ve inancın yeterli gerekçesi bulunmalıdır. Bu tanım yüzyıllarca kabul gördü; ancak 1963'te {koyu:Edmund Gettier} yalnızca birkaç sayfalık bir makalede, üç koşulu da sağladığı hâlde bilgi saymakta zorlandığımız durumlar olduğunu gösterdi. Bu tür durumlara {koyu:Gettier durumları} denir. Bertrand Russell'ın daha önce verdiği {koyu:durmuş saat} örneği bu duruma çok benzer: Biri, her zaman doğru çalışan bir saate bakıp saatin 14.00 olduğuna inanır ve gerçekten saat 14.00'tür; fakat saat tam bir gün önce 14.00'te durmuştur. İnanç doğrudur, gerekçe de makul görünür; ama doğruluk {koyu:şansa} bağlıdır.",
+        "Bu tartışma doğru bilginin imkânı problemine yeni bir boyut kazandırır. Septik düşünür, bilginin koşullarının (özellikle sağlam gerekçenin) hiçbir zaman tam olarak sağlanamayacağını söyler. Dogmatik düşünür ise bu koşulların sağlanabildiği alanlar bulunduğunu savunur. Gettier'den sonra filozoflar tanıma dördüncü bir koşul eklemeye ya da “gerekçe” kavramını daha sıkı tanımlamaya çalıştılar. Bizim için önemli sonuç şudur: {koyu:Doğru bir tahmin, bilgi ile aynı şey değildir}; bilgi, doğruluğun tesadüfe değil sağlam bir temellendirmeye dayanmasını gerektirir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Kavram",
+          "Kısa Tanım",
+          "Örnek"
+        ],
+        "satirlar": [
+          [
+            "Sanı (Doksa)",
+            "Gerekçesi yetersiz, doğru da yanlış da çıkabilen kanaat",
+            "“Bence yarın kar yağacak.”"
+          ],
+          [
+            "İnanç",
+            "Bir önermeyi doğru kabul etme tutumu",
+            "“Arkadaşımın bana doğruyu söylediğine inanıyorum.”"
+          ],
+          [
+            "Bilgi (Episteme)",
+            "Gerekçelendirilmiş doğru inanç",
+            "“Su, hidrojen ve oksijenden oluşur.” (deneylerle temellendirilmiş)"
+          ],
+          [
+            "Gettier durumu",
+            "Üç koşulu sağladığı hâlde doğruluğu şansa bağlı inanç",
+            "Durmuş saate bakarak saati doğru söylemek"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Klasik Bilgi Tanımının Üç Koşulu",
+          "metin": "Bir kişinin bir önermeyi bildiğini söyleyebilmek için: {koyu:1)} önerme doğru olmalı, {koyu:2)} kişi o önermeye inanmalı, {koyu:3)} kişinin bu inanç için yeterli gerekçesi bulunmalıdır. Bu tanım kısaca {koyu:gerekçelendirilmiş doğru inanç} diye anılır."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Doğru Sanı Bilgi Değildir",
+          "metin": "Sınavda bilmediği bir soruda rastgele işaretleme yapıp doğru cevabı bulan öğrencinin inancı doğrudur ama {koyu:gerekçesi yoktur}. Bu nedenle felsefi anlamda o öğrenci cevabı {koyu:bilmiş} değil, {koyu:tahmin etmiş} olur."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 800 340\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"800\" height=\"340\" rx=\"16\" fill=\"#f8fafc\"/><text x=\"400\" y=\"32\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">Platon'un Bölünmüş Çizgi Benzetmesi: Sanıdan Bilgiye</text><rect x=\"40\" y=\"50\" width=\"340\" height=\"36\" rx=\"10\" fill=\"#b91c1c\"/><text x=\"210\" y=\"73\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\">Görünür Dünya → DOKSA (Sanı)</text><rect x=\"420\" y=\"50\" width=\"340\" height=\"36\" rx=\"10\" fill=\"#1d4ed8\"/><text x=\"590\" y=\"73\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\">Düşünülür Dünya → EPİSTEME (Bilgi)</text><rect x=\"40\" y=\"100\" width=\"160\" height=\"115\" rx=\"12\" fill=\"#fef2f2\" stroke=\"#b91c1c\" stroke-width=\"2\"/><text x=\"120\" y=\"126\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#7f1d1d\">Eikasia</text><text x=\"120\" y=\"148\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Tahmin, sanı</text><text x=\"120\" y=\"172\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">Nesne: gölgeler,</text><text x=\"120\" y=\"190\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">yansımalar</text><rect x=\"220\" y=\"100\" width=\"160\" height=\"115\" rx=\"12\" fill=\"#fef2f2\" stroke=\"#b91c1c\" stroke-width=\"2\"/><text x=\"300\" y=\"126\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#7f1d1d\">Pistis</text><text x=\"300\" y=\"148\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">İnanç</text><text x=\"300\" y=\"172\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">Nesne: somut eşyalar,</text><text x=\"300\" y=\"190\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">canlılar</text><rect x=\"420\" y=\"100\" width=\"160\" height=\"115\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"500\" y=\"126\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e3a8a\">Dianoia</text><text x=\"500\" y=\"148\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Düşünme</text><text x=\"500\" y=\"172\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">Nesne: matematik ve</text><text x=\"500\" y=\"190\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">geometri kavramları</text><rect x=\"600\" y=\"100\" width=\"160\" height=\"115\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"680\" y=\"126\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e3a8a\">Noesis</text><text x=\"680\" y=\"148\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Akılla kavrama</text><text x=\"680\" y=\"172\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">Nesne: idealar,</text><text x=\"680\" y=\"190\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">İyi ideası</text><text x=\"400\" y=\"238\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#334155\">Kesinlik ve doğruluk derecesi artar</text><line x1=\"50\" y1=\"248\" x2=\"735\" y2=\"248\" stroke=\"#475569\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"748,248 734,241 734,255\" fill=\"#475569\"/><rect x=\"40\" y=\"264\" width=\"720\" height=\"60\" rx=\"10\" fill=\"#e2e8f0\"/><text x=\"400\" y=\"288\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">Klasik tanım: Bilgi = Doğru + İnanılan + Gerekçelendirilmiş önerme</text><text x=\"400\" y=\"310\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">Gettier (1963): Doğruluğu şansa bağlı olan gerekçeli inanç gerçekten bilgi midir?</text></svg>"
+    },
+    {
+      "baslik": "Şüpheden Kesinliğe: Descartes, Gazâlî ve İbn Sînâ",
+      "metin": [
+        "Septisizm yalnızca bir karşı görüş değil, aynı zamanda dogmatik filozofların aşmak zorunda olduğu bir {koyu:sınav}dır. Bu sınavı en sistemli biçimde veren düşünürlerden biri {koyu:René Descartes}'tır. Descartes, 1641'de yayımladığı Meditasyonlar adlı eserinde bilgilerini sağlam bir temele oturtmak için en ufak şüphe taşıyan her şeyi geçici olarak bir kenara bırakır. Önce {koyu:duyuların} bizi zaman zaman yanılttığını hatırlatır: Uzaktaki kare bir kule yuvarlak görünebilir. Ardından {koyu:rüya kanıtını} ileri sürer: Rüyadayken de her şeyi gerçek sanırız; şu an uyanık olduğumuzdan nasıl emin olabiliriz? En sonunda {koyu:kötü cin varsayımı} ile matematik bilgilerimizin bile bizi aldatan güçlü bir varlık tarafından zihnimize yerleştirilmiş olabileceğini düşünür. Ancak bu kadar şüphenin ortasında şüphe edemeyeceği bir şey kalır: Şüphe eden kendisinin var olması. Böylece ilk kesin bilgi olan {koyu:cogito}ya ({koyu:“Düşünüyorum, öyleyse varım.”}) ulaşır ve bunu açık ve seçik bilginin ölçütü olarak kullanır.",
+        "Descartes'tan yaklaşık beş yüz yıl önce {koyu:Gazâlî}, el-Munkız mine'd-Dalâl (Yanılgıdan Kurtaran) adlı eserinde benzer bir iç yolculuğu anlatır. Gazâlî önce {koyu:duyulara} yönelir: Gölge duruyor gibi görünür ama zamanla yer değiştirdiği anlaşılır; yıldız bir para kadar küçük görünür ama hesaplar onun yeryüzünden büyük olduğunu gösterir. Duyuların hükmünü aklın düzelttiğini görünce bu kez {koyu:aklın} güvenilirliğini sorgular: Rüyada gördüklerimize inanırız, uyanınca yanıldığımızı anlarız; belki akıl hükümlerinin de ötesinde onları düzeltecek bir hâl vardır. Gazâlî bu şüphe döneminin {koyu:yaklaşık iki ay} sürdüğünü anlatır ve bu dönemden kanıt dizerek değil, {koyu:Allah'ın kalbe attığı bir nur} sayesinde çıktığını, zorunlu akıl ilkelerine güveninin böylece geri geldiğini söyler. Bu nedenle Gazâlî'nin şüphesi de Descartes'ınki gibi bir amaç değil, hakikate giden yolda bir {koyu:arınma aşamasıdır}.",
+        "İslam düşüncesinde benliğin kesinliğine ilişkin bir başka ünlü örnek {koyu:İbn Sînâ}'nın {koyu:askıdaki (uçan) insan} düşünce deneyidir. İbn Sînâ, yetkin bir aklla birden yaratılmış, gözleri kapalı, boşlukta asılı duran, organları birbirine değmeyen ve hiçbir duyum almayan bir insan düşünmemizi ister. Bu insan dış dünyaya, hatta kendi bedenine dair hiçbir şey algılamaz; yine de {koyu:kendi varlığının farkında olur}. İbn Sînâ buradan, benliğin (nefsin) bilgisinin duyu deneyimine bağlı olmadığı sonucunu çıkarır. Bu düşünce deneyi, akla ve doğrudan farkındalığa dayanan bilginin imkânını savunması bakımından rasyonalist çizgiye yakın durur ve Descartes'ın cogitosuyla sıkça karşılaştırılır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Düşünür",
+          "Şüphenin Hedefi",
+          "Ulaşılan Kesinlik",
+          "Bilgi Kuramındaki Yeri"
+        ],
+        "satirlar": [
+          [
+            "Descartes",
+            "Duyular, rüya-uyanıklık ayrımı, matematik bilgisi (kötü cin)",
+            "Cogito: Düşünüyorum, öyleyse varım.",
+            "Rasyonalizm; ölçüt olarak apaçıklık"
+          ],
+          [
+            "Gazâlî",
+            "Duyuların ve aklın hükümleri",
+            "Kalbe atılan ilahi nur ile zorunlu ilkelere güven",
+            "Sezgiye ve kalbe önem veren yaklaşım"
+          ],
+          [
+            "İbn Sînâ",
+            "Benliğin bilgisinin duyulara bağlı olup olmadığı",
+            "Duyusuz insan da kendi varlığının farkındadır.",
+            "Akla ve doğrudan farkındalığa dayanan yaklaşım"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Descartes'ın Dört Yöntem Kuralı",
+          "metin": "Descartes, 1637'de yayımlanan Yöntem Üzerine Konuşma adlı eserinde dört kural önerir: {koyu:1) Apaçıklık:} Açık ve seçik olmayan hiçbir şeyi doğru kabul etme. {koyu:2) Çözümleme:} Her güçlüğü olabildiğince çok parçaya ayır. {koyu:3) Sıralama:} En basitten en karmaşığa doğru düzenli düşün. {koyu:4) Sayma ve gözden geçirme:} Hiçbir şeyi atlamadığından emin ol."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Soru Çözerken Şüphenin Türünü Belirle",
+          "metin": "Bir metinde şüphe “sonunda kesinliğe ulaşmak için” kullanılıyorsa {koyu:yöntemsel şüphe} (Descartes, Gazâlî); “hiçbir yargıda bulunmamak ve ruh dinginliğine ulaşmak için” kullanılıyorsa {koyu:septik şüphe} (Pyrrhon) söz konusudur."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 800 340\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"800\" height=\"340\" rx=\"16\" fill=\"#f8fafc\"/><text x=\"400\" y=\"32\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">Şüpheden Kesinliğe: İki Düşünürün Yolculuğu</text><rect x=\"20\" y=\"55\" width=\"120\" height=\"105\" rx=\"12\" fill=\"#1e3a8a\"/><text x=\"80\" y=\"104\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#ffffff\">Descartes</text><text x=\"80\" y=\"124\" text-anchor=\"middle\" font-size=\"11\" fill=\"#dbeafe\">(1596-1650)</text><rect x=\"160\" y=\"55\" width=\"135\" height=\"105\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"227\" y=\"98\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\">1. Duyular</text><text x=\"227\" y=\"118\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">bazen yanıltır</text><rect x=\"315\" y=\"55\" width=\"135\" height=\"105\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"382\" y=\"98\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\">2. Rüya kanıtı</text><text x=\"382\" y=\"118\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Uyanık mıyım?</text><rect x=\"470\" y=\"55\" width=\"135\" height=\"105\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"537\" y=\"98\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\">3. Kötü cin</text><text x=\"537\" y=\"118\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Matematik de mi?</text><rect x=\"625\" y=\"55\" width=\"155\" height=\"105\" rx=\"12\" fill=\"#1d4ed8\"/><text x=\"702\" y=\"92\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\">4. Cogito</text><text x=\"702\" y=\"114\" text-anchor=\"middle\" font-size=\"12\" fill=\"#ffffff\">Düşünüyorum,</text><text x=\"702\" y=\"132\" text-anchor=\"middle\" font-size=\"12\" fill=\"#ffffff\">öyleyse varım</text><polygon points=\"158,107 146,101 146,113\" fill=\"#1d4ed8\"/><polygon points=\"313,107 301,101 301,113\" fill=\"#1d4ed8\"/><polygon points=\"468,107 456,101 456,113\" fill=\"#1d4ed8\"/><polygon points=\"623,107 611,101 611,113\" fill=\"#1d4ed8\"/><rect x=\"20\" y=\"180\" width=\"120\" height=\"105\" rx=\"12\" fill=\"#065f46\"/><text x=\"80\" y=\"229\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#ffffff\">Gazâlî</text><text x=\"80\" y=\"249\" text-anchor=\"middle\" font-size=\"11\" fill=\"#d1fae5\">(1058-1111)</text><rect x=\"160\" y=\"180\" width=\"135\" height=\"105\" rx=\"12\" fill=\"#ecfdf5\" stroke=\"#047857\" stroke-width=\"2\"/><text x=\"227\" y=\"215\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#065f46\">1. Duyulardan</text><text x=\"227\" y=\"235\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">şüphe: gölge,</text><text x=\"227\" y=\"253\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">yıldız örneği</text><rect x=\"315\" y=\"180\" width=\"135\" height=\"105\" rx=\"12\" fill=\"#ecfdf5\" stroke=\"#047857\" stroke-width=\"2\"/><text x=\"382\" y=\"223\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#065f46\">2. Akıldan</text><text x=\"382\" y=\"243\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">şüphe: rüya örneği</text><rect x=\"470\" y=\"180\" width=\"135\" height=\"105\" rx=\"12\" fill=\"#ecfdf5\" stroke=\"#047857\" stroke-width=\"2\"/><text x=\"537\" y=\"215\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#065f46\">3. Yaklaşık</text><text x=\"537\" y=\"235\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">iki ay süren</text><text x=\"537\" y=\"253\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">kuşku dönemi</text><rect x=\"625\" y=\"180\" width=\"155\" height=\"105\" rx=\"12\" fill=\"#047857\"/><text x=\"702\" y=\"215\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\">4. Kalbe atılan</text><text x=\"702\" y=\"235\" text-anchor=\"middle\" font-size=\"12\" fill=\"#ffffff\">ilahi nur ile</text><text x=\"702\" y=\"253\" text-anchor=\"middle\" font-size=\"12\" fill=\"#ffffff\">kesinlik</text><polygon points=\"158,232 146,226 146,238\" fill=\"#047857\"/><polygon points=\"313,232 301,226 301,238\" fill=\"#047857\"/><polygon points=\"468,232 456,226 456,238\" fill=\"#047857\"/><polygon points=\"623,232 611,226 611,238\" fill=\"#047857\"/><rect x=\"20\" y=\"298\" width=\"760\" height=\"32\" rx=\"8\" fill=\"#e2e8f0\"/><text x=\"400\" y=\"319\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">Ortak nokta: Şüphe bir amaç değil, kesin bilgiye götüren bir araçtır.</text></svg>"
+    },
+    {
+      "baslik": "Deneyden Bilgiye: Locke, Berkeley ve Hume'un Sorgulamaları",
+      "metin": [
+        "Empirizmin “zihin doğuştan boş bir levhadır” düşüncesi, bilginin nasıl oluştuğunu da açıklamak zorundaydı. {koyu:John Locke}, 1690'da yayımlanan İnsan Anlığı Üzerine Bir Deneme adlı eserinde bütün idelerimizin iki kaynaktan geldiğini söyler: Dış dünyadan gelen {koyu:duyum} ve zihnin kendi işleyişini fark etmesi olan {koyu:düşünüm}. Bu kaynaklardan önce {koyu:basit ideler} (sarı, sıcak, sert gibi) gelir; zihin bunları birleştirerek {koyu:karmaşık ideleri} (elma, ordu, adalet gibi) oluşturur. Locke ayrıca nesnelerin niteliklerini ikiye ayırır: Şekil, hacim, katılık, hareket ve sayı gibi nesnenin kendisinde bulunan {koyu:birincil nitelikler}; renk, ses, tat ve koku gibi nesnenin bizde uyandırdığı etkiler olan {koyu:ikincil nitelikler}.",
+        "{koyu:George Berkeley}, Locke'un bu ayrımını sorgular. Ona göre şekil ve hacim de tıpkı renk gibi algıya bağlıdır; bir nesnenin büyüklüğünü de rengini de ancak algıladığımız ölçüde biliriz. Öyleyse algılanmayan, kendi başına var olan bir maddeden söz etmek anlamsızdır. Berkeley bu görüşünü {koyu:“Var olmak algılanmaktır.”} sözüyle özetler. Ona göre odadan çıktığımızda masa yok olmaz; çünkü her şeyi her an algılayan Tanrı'dır. Böylece Berkeley, deneyden yola çıkarak maddenin algıdan bağımsız varlığını reddeden bir sonuca ulaşır.",
+        "Deneyciliği en uç noktaya taşıyan {koyu:David Hume} olmuştur. Hume, zihnin içeriklerini canlı ve güçlü algılar olan {koyu:izlenimler} ile bunların soluk kopyaları olan {koyu:ideler} diye ayırır. Bir idenin anlamlı olması için onu bir izlenime kadar izleyebilmemiz gerekir. Hume bu ölçütü {koyu:nedensellik} ilkesine uygular: Bir bilardo topunun diğerine çarptığını ve ikincisinin hareket ettiğini görürüz; ama aradaki {koyu:zorunlu bağı} hiçbir zaman görmeyiz. Gördüğümüz yalnızca iki olayın sürekli art arda gelmesidir; zorunluluk fikri ise zihnimizin {koyu:alışkanlık} sonucu oluşturduğu bir beklentidir. Buradan ünlü {koyu:tümevarım problemi} doğar: Güneşin bugüne kadar her sabah doğmuş olması, yarın da doğacağını mantıksal olarak kanıtlamaz. Kant, Hume'un bu sorgulamasının kendisini {koyu:“dogmatik uykusundan uyandırdığını”} söyleyecektir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Düşünür",
+          "Temel Kavramlar",
+          "Ulaştığı Sonuç"
+        ],
+        "satirlar": [
+          [
+            "John Locke",
+            "Duyum ve düşünüm; basit ve karmaşık ideler; birincil ve ikincil nitelikler",
+            "Bütün bilgi deneyden gelir; ama nesnelerin birincil nitelikleri gerçekten vardır."
+          ],
+          [
+            "George Berkeley",
+            "Algı; “Var olmak algılanmaktır.”",
+            "Algıdan bağımsız madde yoktur; var olan algılayan zihinler ve onların algılarıdır."
+          ],
+          [
+            "David Hume",
+            "İzlenim ve ide; nedensellik; alışkanlık; tümevarım",
+            "Nedensellik ve doğa yasalarının zorunluluğu deneyle kanıtlanamaz; ılımlı bir şüpheciliğe varılır."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Aynı Kaynak, Farklı Sonuçlar",
+          "metin": "Locke, Berkeley ve Hume'un üçü de {koyu:bilginin kaynağının deney olduğunu} kabul eder; bu yüzden üçü de empiristtir. Ancak deneyin sınırlarını ciddiye aldıkça sonuçları giderek daha şüpheci olur. Bir soruda Hume'un adı geçiyorsa hem {koyu:empirizm} hem de {koyu:ılımlı şüphecilik} düşünülmelidir."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Birincil ve İkincil Nitelik",
+          "metin": "Bir elmanın {koyu:yuvarlaklığı, büyüklüğü ve ağırlığı} Locke'a göre birincil niteliklerdir (nesnede vardır). Elmanın {koyu:kırmızılığı, ekşi tadı ve kokusu} ise ikincil niteliklerdir (algılayanda oluşan etkilerdir)."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 800 340\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"800\" height=\"340\" rx=\"16\" fill=\"#f8fafc\"/><text x=\"400\" y=\"32\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">Empirizmin Üç Durağı: Deneyden Şüpheye</text><rect x=\"25\" y=\"50\" width=\"240\" height=\"235\" rx=\"12\" fill=\"#ecfdf5\" stroke=\"#047857\" stroke-width=\"2\"/><rect x=\"25\" y=\"50\" width=\"240\" height=\"34\" rx=\"10\" fill=\"#047857\"/><text x=\"145\" y=\"72\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\">John Locke</text><text x=\"145\" y=\"106\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Duyum + Düşünüm</text><text x=\"145\" y=\"126\" text-anchor=\"middle\" font-size=\"13\" fill=\"#047857\">↓</text><text x=\"145\" y=\"144\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\">Basit ideler</text><text x=\"145\" y=\"164\" text-anchor=\"middle\" font-size=\"11\" fill=\"#047857\">↓ birleştirme</text><text x=\"145\" y=\"184\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\">Karmaşık ideler</text><text x=\"145\" y=\"222\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Birincil: şekil, hacim, hareket</text><text x=\"145\" y=\"244\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">İkincil: renk, tat, koku, ses</text><rect x=\"280\" y=\"50\" width=\"240\" height=\"235\" rx=\"12\" fill=\"#fffbeb\" stroke=\"#b45309\" stroke-width=\"2\"/><rect x=\"280\" y=\"50\" width=\"240\" height=\"34\" rx=\"10\" fill=\"#b45309\"/><text x=\"400\" y=\"72\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\">George Berkeley</text><text x=\"400\" y=\"112\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Şekil ve hacim de</text><text x=\"400\" y=\"132\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">algıya bağlıdır</text><text x=\"400\" y=\"170\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#92400e\">“Var olmak</text><text x=\"400\" y=\"190\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#92400e\">algılanmaktır.”</text><text x=\"400\" y=\"228\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Algıdan bağımsız madde</text><text x=\"400\" y=\"246\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">fikri reddedilir</text><rect x=\"535\" y=\"50\" width=\"240\" height=\"235\" rx=\"12\" fill=\"#fef2f2\" stroke=\"#b91c1c\" stroke-width=\"2\"/><rect x=\"535\" y=\"50\" width=\"240\" height=\"34\" rx=\"10\" fill=\"#b91c1c\"/><text x=\"655\" y=\"72\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\">David Hume</text><text x=\"655\" y=\"108\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">İzlenim: canlı, güçlü algı</text><text x=\"655\" y=\"128\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">İde: izlenimin soluk kopyası</text><text x=\"655\" y=\"164\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#7f1d1d\">Nedensellik: zorunlu bağ</text><text x=\"655\" y=\"184\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">gözlenmez, alışkanlıktır</text><text x=\"655\" y=\"222\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#7f1d1d\">Tümevarım problemi:</text><text x=\"655\" y=\"242\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Güneş yarın doğacak mı?</text><rect x=\"25\" y=\"298\" width=\"750\" height=\"32\" rx=\"8\" fill=\"#e2e8f0\"/><text x=\"400\" y=\"319\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">Üçü de deneyden yola çıkar; ancak vardıkları sonuçlar giderek daha şüphecidir.</text></svg>"
+    },
+    {
+      "baslik": "Kant'ın Yargı Ayrımı ve Sentetik Apriori Bilgi",
+      "metin": [
+        "Hume'un nedenselliği alışkanlığa indirgemesi, doğa bilimlerinin zorunlu yasalarını tehlikeye sokuyordu. {koyu:Immanuel Kant}, 1781'de yayımlanan Saf Aklın Eleştirisi adlı eserinde bu sorunu çözmek için yargıları iki ölçüte göre sınıflandırdı. Birinci ölçüt yargının içeriğidir: Yüklemin anlamı öznenin içinde zaten bulunuyorsa yargı {koyu:analitik}tir; Kant'ın örneğiyle {koyu:“Bütün cisimler yer kaplar.”} Cisim kavramını düşündüğümüzde yer kaplamayı da düşünürüz; bu yargı bilgimizi genişletmez, yalnızca açıklar. Yüklem özneye yeni bir bilgi ekliyorsa yargı {koyu:sentetik}tir: {koyu:“Bütün cisimler ağırdır.”} Ağırlık, cisim kavramının içinde bulunmaz; onu deneyle öğreniriz.",
+        "İkinci ölçüt yargının bilinme yoludur: Deneyden bağımsız bilinen yargılar {koyu:apriori}, deneyle bilinenler {koyu:aposteriori}dir. Analitik yargılar her zaman apriori, gündelik gözlem yargıları ise sentetik aposterioridir. Kant'ın asıl buluşu üçüncü bir türün varlığını göstermesidir: {koyu:Sentetik apriori yargılar}. Kant'a göre {koyu:“7 + 5 = 12”} yargısında 12 kavramı 7 ile 5'in toplanması kavramında doğrudan saklı değildir; bu yüzden yargı bilgimizi genişletir, yani sentetiktir. Ama aynı zamanda deneyden bağımsız, zorunlu ve evrenseldir, yani aprioridir. “İki nokta arasındaki en kısa yol doğrudur.” ve {koyu:“Her olayın bir nedeni vardır.”} yargıları da bu türdendir. Böylece Kant, Hume'a karşı matematiğin ve doğa biliminin temel ilkelerinin zorunluluğunu savunmuş olur.",
+        "Peki deneyden bağımsız ama bilgimizi genişleten yargılar nasıl mümkündür? Kant'ın yanıtı, zihnin bilgiyi biçimlendiren yapılarındadır. Duyarlılık yetimiz her şeyi {koyu:uzay ve zaman} içinde algılar; Kant bunlara {koyu:görü formları} der. Anlama yetimiz ise duyu verilerini {koyu:on iki kategori} (birlik, çokluk, nedensellik gibi) aracılığıyla düzenler. Nedensellik dış dünyadan öğrenilmez; zihin onu deneyime kendisi getirir. Bu nedenle bütün deneyimlerimizde nedenselliğin geçerli olacağından eminizdir. Ancak bu kesinlik yalnızca deneyimlenebilen {koyu:fenomenler} için geçerlidir; Kant'ın eleştiriciliği, bilginin imkânını onaylarken sınırını da çizmiş olur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Yargı Türü",
+          "Özelliği",
+          "Örnek"
+        ],
+        "satirlar": [
+          [
+            "Analitik apriori",
+            "Yüklem öznede saklıdır; bilgiyi genişletmez; zorunludur.",
+            "Bütün cisimler yer kaplar. / Bütün bekârlar evli değildir."
+          ],
+          [
+            "Sentetik aposteriori",
+            "Yüklem yeni bilgi ekler; deneyle bilinir; zorunlu değildir.",
+            "Bütün cisimler ağırdır. / Bu masa kahverengidir."
+          ],
+          [
+            "Sentetik apriori",
+            "Yüklem yeni bilgi ekler; ama deneyden bağımsız, zorunlu ve evrenseldir.",
+            "7 + 5 = 12 / Her olayın bir nedeni vardır."
+          ],
+          [
+            "Analitik aposteriori",
+            "Kant'a göre böyle bir yargı türü olamaz.",
+            "—"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Analitik mi Sentetik mi? Hızlı Test",
+          "metin": "Kendine şunu sor: {koyu:Öznenin tanımını bilen biri, yüklemi deneye bakmadan çıkarabilir mi?} Evet ise yargı analitiktir (“Üçgenin üç açısı vardır.”). Hayır, yüklemi öğrenmek için ek bir bilgiye ihtiyaç varsa yargı sentetiktir (“Bu sınıftaki öğrenciler 28 kişidir.”)."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Uzay ve Zaman Kategori Değildir",
+          "metin": "Kant'ta {koyu:uzay ve zaman} duyarlılığın görü formlarıdır; {koyu:kategoriler} (nedensellik, birlik, çokluk vb.) ise anlama yetisine aittir. İkisi birlikte, duyudan gelen malzemeyi bilgiye dönüştürür."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 800 340\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"800\" height=\"340\" rx=\"16\" fill=\"#f8fafc\"/><text x=\"400\" y=\"32\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">Kant'ın Yargı Tablosu ve Bilginin Oluşumu</text><rect x=\"140\" y=\"50\" width=\"170\" height=\"36\" rx=\"8\" fill=\"#1e3a8a\"/><text x=\"225\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#ffffff\">Apriori (deneyden önce)</text><rect x=\"320\" y=\"50\" width=\"170\" height=\"36\" rx=\"8\" fill=\"#1e3a8a\"/><text x=\"405\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#ffffff\">Aposteriori (deneyle)</text><rect x=\"30\" y=\"96\" width=\"100\" height=\"80\" rx=\"8\" fill=\"#334155\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\">Analitik</text><rect x=\"30\" y=\"186\" width=\"100\" height=\"80\" rx=\"8\" fill=\"#334155\"/><text x=\"80\" y=\"231\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\">Sentetik</text><rect x=\"140\" y=\"96\" width=\"170\" height=\"80\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"225\" y=\"124\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Bütün cisimler</text><text x=\"225\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">yer kaplar.</text><text x=\"225\" y=\"162\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">(bilgi genişlemez)</text><rect x=\"320\" y=\"96\" width=\"170\" height=\"80\" rx=\"8\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"405\" y=\"130\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">Kant'a göre</text><text x=\"405\" y=\"148\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">böyle yargı olmaz</text><rect x=\"140\" y=\"186\" width=\"170\" height=\"80\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"225\" y=\"210\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#92400e\">7 + 5 = 12</text><text x=\"225\" y=\"230\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">Her olayın bir</text><text x=\"225\" y=\"246\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">nedeni vardır.</text><rect x=\"320\" y=\"186\" width=\"170\" height=\"80\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#047857\" stroke-width=\"2\"/><text x=\"405\" y=\"220\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Bütün cisimler</text><text x=\"405\" y=\"238\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">ağırdır.</text><rect x=\"530\" y=\"50\" width=\"240\" height=\"70\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#047857\" stroke-width=\"2\"/><text x=\"650\" y=\"74\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#065f46\">Duyarlılık</text><text x=\"650\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">Görü formları: uzay ve zaman</text><text x=\"650\" y=\"110\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">(duyu verisini alır)</text><text x=\"650\" y=\"142\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#334155\">+</text><rect x=\"530\" y=\"150\" width=\"240\" height=\"70\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"650\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\">Anlama Yetisi</text><text x=\"650\" y=\"194\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">12 kategori: nedensellik,</text><text x=\"650\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">birlik, çokluk...</text><text x=\"650\" y=\"236\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#334155\">↓</text><rect x=\"530\" y=\"242\" width=\"240\" height=\"36\" rx=\"10\" fill=\"#b45309\"/><text x=\"650\" y=\"265\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\">BİLGİ (fenomenler dünyası)</text><rect x=\"30\" y=\"294\" width=\"740\" height=\"34\" rx=\"8\" fill=\"#e2e8f0\"/><text x=\"400\" y=\"316\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">Sentetik apriori yargılar hem bilgimizi genişletir hem de zorunlu ve evrenseldir.</text></svg>"
+    },
+    {
+      "baslik": "Doğruluk Kuramlarının Güçlü ve Zayıf Yönleri",
+      "metin": [
+        "Geçen hafta beş doğruluk ölçütünü tanıdık. Felsefe ise bir ölçütü öğrenmekle yetinmez, onu {koyu:sınar}. En eski ve en yaygın görüş olan {koyu:uygunluk (karşılık) kuramının} klasik ifadesini Aristoteles verir: {koyu:“Olana olmadığını ya da olmayana olduğunu söylemek yanlıştır; olana olduğunu ve olmayana olmadığını söylemek doğrudur.”} Bu kuram sağduyumuza çok yakındır ve doğa bilimlerinde gözlem ve deneyle işler. Ancak eleştirmenler şunu sorar: Bir önermeyi olguyla karşılaştırmak için olguya {koyu:zihnimizden bağımsız} nasıl ulaşacağız? Üstelik “7 + 5 = 12” ya da “Haksızlık yapmak kötüdür” gibi önermelerin dış dünyada hangi olguya karşılık geldiğini göstermek kolay değildir.",
+        "{koyu:Tutarlılık kuramı}, bu güçlüğü önermeleri olgularla değil, birbirleriyle karşılaştırarak aşmaya çalışır; matematik ve mantık gibi alanlarda çok güçlüdür. Zayıf yanı ise kendi içinde hiç çelişki taşımayan ama gerçekle hiçbir ilgisi olmayan bir sistemin de kurulabilmesidir: İyi kurgulanmış bir fantastik roman evreni tutarlı olabilir ama doğru değildir. {koyu:Apaçıklık ölçütü} (Descartes) bilgiye sağlam bir başlangıç noktası sunar; fakat “açık ve seçik” olanın kişiden kişiye değişebileceği, yani {koyu:öznel} kalabileceği eleştirisine açıktır. Tarihte pek çok insana apaçık görünen görüşler sonradan yanlış çıkmıştır.",
+        "{koyu:Fayda ölçütü}, William James ve John Dewey gibi pragmatistlerce savunulmuştur. James, bir düşüncenin doğruluğunu onun deneyimdeki {koyu:“nakit değeri”}ne, yani pratik sonuçlarına bağlar. Bu yaklaşım bilgiyi hayatla buluşturması bakımından değerlidir; ama yanlış bir inancın da geçici olarak fayda sağlayabileceği (örneğin yanlış bir teselli) unutulmamalıdır. {koyu:Tümel uzlaşım} ise bilim topluluğunun ortak kabullerine dayanır ve bilginin kamusal denetimini sağlar; ancak çoğunluğun da yanılabileceği açıktır: Yüzyıllarca neredeyse herkes Dünya'nın evrenin merkezinde olduğunu kabul etmişti. Bu nedenle çağdaş felsefede ölçütler birbirine rakip değil, {koyu:tamamlayıcı} olarak görülür: Bilimsel bir iddia hem olgulara uygun hem kabul görmüş bilgilerle tutarlı olmalı, hem de bilim topluluğunun denetiminden geçmelidir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Ölçüt",
+          "Sorduğu Soru",
+          "Güçlü Yönü",
+          "Zayıf Yönü"
+        ],
+        "satirlar": [
+          [
+            "Uygunluk",
+            "Önerme olguyla örtüşüyor mu?",
+            "Sağduyuya yakın; doğa bilimlerinde sınanabilir",
+            "Olguya zihinden bağımsız ulaşmak tartışmalı; matematik ve değer önermelerinde zorlanır"
+          ],
+          [
+            "Tutarlılık",
+            "Önerme sistemle çelişiyor mu?",
+            "Matematik ve mantıkta güçlü",
+            "Tutarlı ama gerçekle ilgisiz sistemler kurulabilir"
+          ],
+          [
+            "Apaçıklık",
+            "Önerme açık ve seçik mi?",
+            "Şüpheye kapalı bir başlangıç noktası sunar",
+            "Kime göre açık olduğu belirsiz; öznel kalabilir"
+          ],
+          [
+            "Fayda",
+            "Önerme işe yarıyor mu?",
+            "Bilgiyi pratik hayatla ilişkilendirir",
+            "Yanlış inanç da geçici fayda sağlayabilir"
+          ],
+          [
+            "Tümel uzlaşım",
+            "Uzmanlar ve herkes kabul ediyor mu?",
+            "Bilginin kamusal denetimini sağlar",
+            "Çoğunluk da yanılabilir"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Soru Kökünden Ölçütü Yakalama",
+          "metin": "{koyu:“gözlem, deney, olgu, gerçekle örtüşme”} → uygunluk; {koyu:“çelişmeme, sistem, aksiyom”} → tutarlılık; {koyu:“açık ve seçik, kuşku duyulamaz”} → apaçıklık; {koyu:“işe yarama, sonuç, çözüm”} → fayda; {koyu:“herkesin, uzmanların kabulü”} → tümel uzlaşım."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Ölçütler Birlikte Çalışır",
+          "metin": "Bir mahkemede hâkim; tanık ifadelerinin birbiriyle {koyu:tutarlılığına}, delillerin olaylara {koyu:uygunluğuna} ve bilirkişilerin ortak görüşüne ({koyu:uzlaşım}) birlikte bakar. Tek bir ölçüte dayanan karar daha kolay yanılır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 800 340\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"800\" height=\"340\" rx=\"16\" fill=\"#f8fafc\"/><text x=\"400\" y=\"32\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">Beş Doğruluk Ölçütü: Soru ve Zayıf Yön</text><rect x=\"20\" y=\"50\" width=\"144\" height=\"230\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><rect x=\"20\" y=\"50\" width=\"144\" height=\"32\" rx=\"10\" fill=\"#1d4ed8\"/><text x=\"92\" y=\"71\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\">Uygunluk</text><text x=\"92\" y=\"104\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">Olguyla örtüşüyor</text><text x=\"92\" y=\"120\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">mu?</text><text x=\"92\" y=\"146\" text-anchor=\"middle\" font-size=\"11\" font-style=\"italic\" fill=\"#475569\">Aristoteles</text><text x=\"92\" y=\"184\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Zayıf yön:</text><text x=\"92\" y=\"202\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">Olguya zihinden</text><text x=\"92\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">bağımsız nasıl</text><text x=\"92\" y=\"234\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">ulaşırız?</text><rect x=\"174\" y=\"50\" width=\"144\" height=\"230\" rx=\"12\" fill=\"#ecfdf5\" stroke=\"#047857\" stroke-width=\"2\"/><rect x=\"174\" y=\"50\" width=\"144\" height=\"32\" rx=\"10\" fill=\"#047857\"/><text x=\"246\" y=\"71\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\">Tutarlılık</text><text x=\"246\" y=\"104\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">Sistemle çelişiyor</text><text x=\"246\" y=\"120\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">mu?</text><text x=\"246\" y=\"146\" text-anchor=\"middle\" font-size=\"11\" font-style=\"italic\" fill=\"#475569\">Matematik, mantık</text><text x=\"246\" y=\"184\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Zayıf yön:</text><text x=\"246\" y=\"202\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">Tutarlı bir masal</text><text x=\"246\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">da kurulabilir.</text><rect x=\"328\" y=\"50\" width=\"144\" height=\"230\" rx=\"12\" fill=\"#f5f3ff\" stroke=\"#6d28d9\" stroke-width=\"2\"/><rect x=\"328\" y=\"50\" width=\"144\" height=\"32\" rx=\"10\" fill=\"#6d28d9\"/><text x=\"400\" y=\"71\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\">Apaçıklık</text><text x=\"400\" y=\"104\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">Açık ve seçik mi?</text><text x=\"400\" y=\"146\" text-anchor=\"middle\" font-size=\"11\" font-style=\"italic\" fill=\"#475569\">Descartes</text><text x=\"400\" y=\"184\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Zayıf yön:</text><text x=\"400\" y=\"202\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">Kime göre açık?</text><text x=\"400\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">Öznel kalabilir.</text><rect x=\"482\" y=\"50\" width=\"144\" height=\"230\" rx=\"12\" fill=\"#fffbeb\" stroke=\"#b45309\" stroke-width=\"2\"/><rect x=\"482\" y=\"50\" width=\"144\" height=\"32\" rx=\"10\" fill=\"#b45309\"/><text x=\"554\" y=\"71\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\">Fayda</text><text x=\"554\" y=\"104\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">İşe yarıyor mu?</text><text x=\"554\" y=\"146\" text-anchor=\"middle\" font-size=\"11\" font-style=\"italic\" fill=\"#475569\">W. James, J. Dewey</text><text x=\"554\" y=\"184\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Zayıf yön:</text><text x=\"554\" y=\"202\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">Yanlış inanç da</text><text x=\"554\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">geçici fayda</text><text x=\"554\" y=\"234\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">sağlayabilir.</text><rect x=\"636\" y=\"50\" width=\"144\" height=\"230\" rx=\"12\" fill=\"#fef2f2\" stroke=\"#b91c1c\" stroke-width=\"2\"/><rect x=\"636\" y=\"50\" width=\"144\" height=\"32\" rx=\"10\" fill=\"#b91c1c\"/><text x=\"708\" y=\"71\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\">Tümel Uzlaşım</text><text x=\"708\" y=\"104\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">Uzmanlar kabul</text><text x=\"708\" y=\"120\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">ediyor mu?</text><text x=\"708\" y=\"146\" text-anchor=\"middle\" font-size=\"11\" font-style=\"italic\" fill=\"#475569\">Bilim topluluğu</text><text x=\"708\" y=\"184\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Zayıf yön:</text><text x=\"708\" y=\"202\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">Çoğunluk da</text><text x=\"708\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">yanılabilir.</text><rect x=\"20\" y=\"294\" width=\"760\" height=\"34\" rx=\"8\" fill=\"#e2e8f0\"/><text x=\"400\" y=\"316\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">Tek ölçüt her bilgi türüne yetmez; ölçütler alanına göre birlikte kullanılır.</text></svg>"
+    },
+    {
+      "baslik": "Bilgi Problemlerini Bir İddia Üzerinde Uygulamak",
+      "metin": [
+        "Bilgi felsefesinin problemleri yalnızca filozofların tartışma konusu değildir; her gün karşılaştığımız haberlerde, reklamlarda, sosyal medya paylaşımlarında ve hatta yapay zekâ araçlarının verdiği cevaplarda karşımıza çıkar. Bir iddiayı epistemolojik olarak çözümlemek için üç temel problemi {koyu:sırayla sorulara dönüştürebiliriz}. Önce {koyu:imkân sorusu}: Bu konuda kesin bilgiye ulaşmak mümkün mü, yoksa yalnızca olasılıklardan mı söz edebiliriz? Sonra {koyu:kaynak sorusu}: İddia neye dayanıyor; deneye mi, akıl yürütmeye mi, kişisel bir sezgiye mi, yoksa yalnızca bir otoritenin ya da söylentinin aktarımına mı? Son olarak {koyu:ölçüt sorusu}: Bu iddiayı hangi doğruluk ölçütüyle sınayabiliriz?",
+        "Bir örnek üzerinde düşünelim: Sosyal medyada {koyu:“Günde üç bardak X çayı içmek hafızayı yüzde elli güçlendirir.”} paylaşımı yayılıyor. İmkân açısından bakınca bu, ilke olarak deneyle sınanabilecek bir iddiadır; kesin değilse bile güçlü biçimde temellendirilebilir. Kaynak açısından paylaşımda bir deney adı, araştırmacı ya da veri yoktur; yani iddia deneye dayanıyormuş gibi görünse de gerçekte {koyu:söylentiye} dayanmaktadır. Ölçüt açısından {koyu:uygunluk} için kontrollü deneylere, {koyu:tutarlılık} için beyin ve beslenme hakkındaki yerleşik bilgilere, {koyu:tümel uzlaşım} için ise uzman kuruluşların görüşlerine bakmak gerekir. Hume'un uyarısı da burada işe yarar: Birinin çay içtikten sonra sınavda başarılı olması, çayın başarıya {koyu:neden} olduğunu göstermez; art arda gelmek nedensellik değildir.",
+        "Bu çözümleme bizi iki tuzağa karşı korur. Birincisi her duyduğunu sorgulamadan kabul eden {koyu:saf (dogmatik) kabul} tuzağıdır. İkincisi, hiçbir bilgiye güvenmeyip “Zaten kimse hiçbir şeyi bilemez.” diyerek düşünmeyi bırakan {koyu:aşırı şüphe} tuzağıdır. Descartes ve Gazâlî'nin örnekleri, şüphenin ancak doğruya ulaşmak için kullanıldığında değerli olduğunu gösterir. Bilgi felsefesinin bize kazandırdığı tutum, kanıt gelinceye kadar yargıyı askıya alan ama kanıt geldiğinde onu kabul etmeye hazır olan {koyu:ılımlı ve eleştirel şüphedir}. Bu tutum hem bilimsel düşünmenin hem de bilinçli yurttaşlığın temelidir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Adım",
+          "Sorulacak Soru",
+          "X Çayı İddiasına Uygulama"
+        ],
+        "satirlar": [
+          [
+            "1. İmkân",
+            "Bu konuda kesin bilgi mümkün mü?",
+            "Deneyle sınanabilir bir iddia; olasılık düzeyinde güçlü bilgi elde edilebilir."
+          ],
+          [
+            "2. Kaynak",
+            "İddia neye dayanıyor?",
+            "Deney görünümlü ama veri yok; dayanağı söylenti."
+          ],
+          [
+            "3. Ölçüt",
+            "Hangi ölçütle sınanmalı?",
+            "Uygunluk (kontrollü deney), tutarlılık (yerleşik bilgi), uzlaşım (uzman görüşü)."
+          ],
+          [
+            "4. Karar",
+            "Kabul mü, ret mi, askı mı?",
+            "Kanıt bulununcaya kadar yargı askıya alınır; abartılı sayı şüpheyi artırır."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "hatirla",
+          "baslik": "Üç Problem, Üç Soru",
+          "metin": "{koyu:İmkân:} Bilinebilir mi? {koyu:Kaynak:} Nereden biliyoruz? {koyu:Ölçüt:} Doğru olduğunu nasıl anlarız? Bu üç soruyu sırayla sormak, her iddiayı epistemolojik olarak çözümlemenin en kısa yoludur."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Yapay Zekâ Cevaplarını Değerlendirirken",
+          "metin": "Bir yapay zekâ aracının akıcı ve emin bir dille cevap vermesi {koyu:apaçıklık} izlenimi yaratabilir; ama bu, cevabın doğru olduğunu göstermez. Cevabı güvenilir kaynaklarla karşılaştırmak {koyu:uygunluk} ve {koyu:tutarlılık} ölçütlerini kullanmaktır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 860 340\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"860\" height=\"340\" rx=\"16\" fill=\"#f8fafc\"/><text x=\"430\" y=\"32\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">Bir İddiayı Epistemolojik Olarak Çözümleme</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"100\" rx=\"12\" fill=\"#334155\"/><text x=\"80\" y=\"90\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\">İDDİA</text><text x=\"80\" y=\"112\" text-anchor=\"middle\" font-size=\"11\" fill=\"#e2e8f0\">“X çayı hafızayı</text><text x=\"80\" y=\"128\" text-anchor=\"middle\" font-size=\"11\" fill=\"#e2e8f0\">%50 güçlendirir.”</text><rect x=\"165\" y=\"60\" width=\"150\" height=\"100\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"240\" y=\"90\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\">1. İmkân</text><text x=\"240\" y=\"112\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">Bu konuda kesin</text><text x=\"240\" y=\"128\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">bilgi mümkün mü?</text><rect x=\"340\" y=\"60\" width=\"150\" height=\"100\" rx=\"12\" fill=\"#ecfdf5\" stroke=\"#047857\" stroke-width=\"2\"/><text x=\"415\" y=\"90\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#065f46\">2. Kaynak</text><text x=\"415\" y=\"112\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">Deney mi, akıl mı,</text><text x=\"415\" y=\"128\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">söylenti mi?</text><rect x=\"515\" y=\"60\" width=\"150\" height=\"100\" rx=\"12\" fill=\"#fffbeb\" stroke=\"#b45309\" stroke-width=\"2\"/><text x=\"590\" y=\"90\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#92400e\">3. Ölçüt</text><text x=\"590\" y=\"112\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">Uygunluk, tutarlılık,</text><text x=\"590\" y=\"128\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">uzlaşım ile sına</text><rect x=\"690\" y=\"60\" width=\"150\" height=\"100\" rx=\"12\" fill=\"#1d4ed8\"/><text x=\"765\" y=\"90\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\">KARAR</text><text x=\"765\" y=\"112\" text-anchor=\"middle\" font-size=\"11\" fill=\"#ffffff\">Temellendirilmiş</text><text x=\"765\" y=\"128\" text-anchor=\"middle\" font-size=\"11\" fill=\"#ffffff\">kabul / ret / askı</text><polygon points=\"162,110 148,103 148,117\" fill=\"#475569\"/><polygon points=\"337,110 323,103 323,117\" fill=\"#475569\"/><polygon points=\"512,110 498,103 498,117\" fill=\"#475569\"/><polygon points=\"687,110 673,103 673,117\" fill=\"#475569\"/><rect x=\"40\" y=\"190\" width=\"360\" height=\"70\" rx=\"12\" fill=\"#fef2f2\" stroke=\"#b91c1c\" stroke-width=\"2\"/><text x=\"220\" y=\"218\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#7f1d1d\">Tuzak 1: Saf (dogmatik) kabul</text><text x=\"220\" y=\"240\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Her duyduğuna sorgulamadan inanmak</text><rect x=\"460\" y=\"190\" width=\"360\" height=\"70\" rx=\"12\" fill=\"#fef2f2\" stroke=\"#b91c1c\" stroke-width=\"2\"/><text x=\"640\" y=\"218\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#7f1d1d\">Tuzak 2: Aşırı şüphe</text><text x=\"640\" y=\"240\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Hiçbir bilgiye güvenmeyip düşünmeyi bırakmak</text><rect x=\"160\" y=\"280\" width=\"540\" height=\"44\" rx=\"12\" fill=\"#047857\"/><text x=\"430\" y=\"308\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\">Dengeli tutum: Ilımlı ve eleştirel şüphe</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Selin, her gün okul koridorunda doğru çalışan saate bakarak saati öğrenir. Bir gün saate bakar ve saatin 10.15 olduğuna inanır; gerçekten de saat 10.15'tir. Ancak saat bir gün önce tam 10.15'te durmuştur. Selin'in inancı klasik bilgi tanımının koşullarını sağlıyor mu? Bu inanç bilgi sayılabilir mi?",
+      "cevap": "{koyu:1. adım – Doğruluk:} Saat gerçekten 10.15'tir; önerme doğrudur.\n{koyu:2. adım – İnanç:} Selin saatin 10.15 olduğuna inanmaktadır.\n{koyu:3. adım – Gerekçe:} Selin'in, her zaman doğru çalışan bir saate bakmak gibi makul bir gerekçesi vardır.\n{koyu:4. adım – Değerlendirme:} Üç koşul da sağlanmış görünür; ancak Selin'in doğru sonuca ulaşması tamamen {koyu:şansa} bağlıdır. Saat bir dakika sonra da 10.15'i gösterecektir.\n{koyu:Sonuç:} Bu bir {koyu:Gettier durumudur}. Çoğu filozofa göre Selin saati {koyu:bilmemekte}, yalnızca doğru bir inanca sahip olmaktadır; bu örnek, gerekçelendirilmiş doğru inanç tanımının tek başına yetmeyebileceğini gösterir.",
+      "ipucu": "Klasik tanımın üç koşulunu tek tek kontrol ettikten sonra doğruluğun şansa bağlı olup olmadığına bak."
+    },
+    {
+      "soru": "Bir çocuk havuzdaki ağacın yansımasına bakarak ağacın eğri olduğunu düşünüyor. Bir bahçıvan ağacın kendisini inceleyerek ağacın dik olduğunu söylüyor. Bir mimar ise kâğıda kusursuz bir daire çizip dairenin özelliklerini hesaplıyor. Bu kişilerin bilgi durumları Platon'un bölünmüş çizgi benzetmesinde hangi basamaklara karşılık gelir?",
+      "cevap": "{koyu:1. adım:} Çocuk bir {koyu:yansımaya} bakmaktadır; yansıma ve gölgelere ilişkin kanaat {koyu:eikasia (tahmin)} basamağıdır.\n{koyu:2. adım:} Bahçıvan {koyu:somut nesnenin} kendisine bakmaktadır; görünür nesnelere ilişkin kanaat {koyu:pistis (inanç)} basamağıdır. Eikasia ve pistis birlikte {koyu:doksa (sanı)} alanını oluşturur.\n{koyu:3. adım:} Mimar {koyu:matematiksel bir nesne} üzerinde akıl yürütmektedir; bu {koyu:dianoia (düşünme)} basamağıdır ve düşünülür dünyaya, yani episteme alanına aittir.\n{koyu:Sonuç:} Çocuktan mimara doğru gidildikçe kesinlik derecesi artar; en üst basamak olan {koyu:noesis} ise doğrudan idealara yönelen akılla kavramadır.",
+      "ipucu": "Kişinin neye baktığını belirle: yansıma mı, somut nesne mi, matematiksel kavram mı?"
+    },
+    {
+      "soru": "Descartes ile Gazâlî'nin şüphe süreçlerini karşılaştırınız. Hangi yönden benzer, hangi yönden farklıdırlar?",
+      "cevap": "{koyu:1. adım – Benzerlik (başlangıç):} İkisi de işe {koyu:duyuların yanıltıcılığını} göstererek başlar (Descartes: uzaktaki kule; Gazâlî: gölge ve yıldız örnekleri).\n{koyu:2. adım – Benzerlik (derinleşme):} İkisi de {koyu:rüya örneğiyle} aklın ve uyanıklığın güvenilirliğini sorgular.\n{koyu:3. adım – Benzerlik (amaç):} İkisinde de şüphe amaç değil, kesin bilgiye götüren bir {koyu:araçtır}; bu yüzden ikisi de septik sayılmaz.\n{koyu:4. adım – Farklılık (çıkış yolu):} Descartes şüpheden {koyu:akıl yoluyla}, şüphe eden düşünen benliğin varlığını fark ederek (cogito) çıkar. Gazâlî ise kanıt dizerek değil, {koyu:Allah'ın kalbe attığı nur} ile şüpheden kurtulduğunu söyler.\n{koyu:Sonuç:} Yöntem benzer, çıkış noktası farklıdır: Descartes'ta akıl ve apaçıklık, Gazâlî'de kalp ve sezgi öne çıkar.",
+      "ipucu": "Önce şüphenin hedeflerini, sonra şüpheden çıkış yolunu karşılaştır."
+    },
+    {
+      "soru": "Önünüzde kırmızı, yuvarlak, ekşi tatlı ve 150 gram ağırlığında bir elma var. Locke'a göre bu özelliklerden hangileri birincil, hangileri ikincil niteliktir? Berkeley bu ayrıma nasıl itiraz eder?",
+      "cevap": "{koyu:1. adım – Birincil nitelikler:} Nesnenin kendisinde bulunan, algılayandan bağımsız özellikler: {koyu:yuvarlaklık (şekil)} ve {koyu:150 gram ağırlık (katılık, kütle)}.\n{koyu:2. adım – İkincil nitelikler:} Nesnenin algılayanda uyandırdığı etkiler: {koyu:kırmızılık (renk)} ve {koyu:ekşi tat}.\n{koyu:3. adım – Berkeley'in itirazı:} Berkeley'e göre elmanın yuvarlaklığını da ağırlığını da ancak {koyu:algıladığımız ölçüde} biliriz; şekil ve büyüklük de bakış açısına göre değişir. Öyleyse birincil nitelikler de algıya bağlıdır.\n{koyu:Sonuç:} Berkeley bu nedenle algıdan bağımsız bir madde fikrini reddeder ve {koyu:“Var olmak algılanmaktır.”} der.",
+      "ipucu": "Kişiden kişiye ve duruma göre değişebilen özellikleri ayır; Berkeley'in bu değişkenliği bütün niteliklere genişlettiğini hatırla."
+    },
+    {
+      "soru": "Aşağıdaki yargıları Kant'ın ayrımına göre sınıflandırınız: I. “Üçgenin üç kenarı vardır.” II. “Bu kalemin mürekkebi mavidir.” III. “İki nokta arasındaki en kısa yol doğrudur.”",
+      "cevap": "{koyu:I. yargı:} Üç kenarlı olmak, üçgen kavramının tanımında zaten vardır. Yüklem öznede saklıdır ve deneye gerek yoktur → {koyu:analitik apriori}.\n{koyu:II. yargı:} “Mavi mürekkep” kalem kavramından çıkarılamaz; bunu ancak kaleme bakarak (deneyle) öğreniriz → {koyu:sentetik aposteriori}.\n{koyu:III. yargı:} “En kısa yol” kavramı “doğru” kavramının içinde saklı değildir; yargı bilgimizi genişletir, yani sentetiktir. Ancak deneyden bağımsız olarak zorunlu ve evrensel biçimde bilinir, yani aprioridir → {koyu:sentetik apriori} (Kant'ın kendi örneklerinden biridir).\n{koyu:Sonuç:} I analitik apriori, II sentetik aposteriori, III sentetik aprioridir.",
+      "ipucu": "Önce “yüklem öznenin tanımında var mı?” sorusunu, sonra “bunu bilmek için deneye ihtiyaç var mı?” sorusunu sor."
+    },
+    {
+      "soru": "Bir çiftlikteki tavuk, her sabah çiftçinin gelip kendisine yem verdiğini görür ve “Çiftçi geldiğinde yem gelir.” genellemesine ulaşır. Bir sabah çiftçi yem yerine tavuğu pazara götürmek için gelir. Bu örnek Hume'un hangi problemine işaret eder? Kant bu problemi nasıl yanıtlamaya çalışmıştır?",
+      "cevap": "{koyu:1. adım – Gözlem:} Tavuk, iki olayın (çiftçinin gelişi ve yem) defalarca {koyu:art arda geldiğini} gözlemlemiştir.\n{koyu:2. adım – Genelleme:} Geçmiş gözlemlerden geleceğe dair zorunlu bir sonuç çıkarmıştır; bu {koyu:tümevarımdır}.\n{koyu:3. adım – Hume'un tespiti:} Sınırlı sayıda gözlem, genellemenin her zaman doğru olacağını mantıksal olarak kanıtlamaz; aradaki zorunlu bağ gözlenmez, beklenti {koyu:alışkanlıktan} doğar. Bu {koyu:tümevarım problemidir}.\n{koyu:4. adım – Kant'ın yanıtı:} Kant, nedensellik ilkesinin deneyden öğrenilmediğini, zihnin deneyimi düzenleyen {koyu:kategorilerinden} biri olduğunu savunur. Böylece “Her olayın bir nedeni vardır.” yargısı {koyu:sentetik apriori} hâle gelir.\n{koyu:Sonuç:} Kant, nedenselliğin zorunluluğunu kurtarır; ama tavuğun hangi olayın hangi nedene bağlı olduğuna dair özel genellemesinin yanılabilir olduğunu kabul eder.",
+      "ipucu": "“Art arda gelmek” ile “neden olmak” arasındaki farkı düşün."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Platon'un bölünmüş çizgi benzetmesine göre bir öğrencinin geometri dersinde üçgenin iç açıları hakkında akıl yürütmesi hangi bilgi basamağına karşılık gelir?",
+      "secenekler": [
+        "Eikasia (tahmin)",
+        "Pistis (inanç)",
+        "Dianoia (düşünme)",
+        "Doksa (sanı)"
+      ],
+      "dogru": 2,
+      "aciklama": "Matematik ve geometri nesnelerine ilişkin akıl yürütme, düşünülür dünyaya ait dianoia basamağıdır. Eikasia ve pistis görünür dünyaya aittir ve birlikte doksayı oluşturur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kant'a göre “Bütün cisimler yer kaplar.” yargısı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Analitik apriori",
+        "Sentetik aposteriori",
+        "Sentetik apriori",
+        "Analitik aposteriori"
+      ],
+      "dogru": 0,
+      "aciklama": "Yer kaplamak, cisim kavramının içinde zaten bulunur; yargı bilgimizi genişletmez ve deneye ihtiyaç duymaz. Bu nedenle analitik apriori bir yargıdır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kibritin her çakıldığında alevlendiğini gören biri, bir sonraki çakışta da alev çıkacağından emindir. David Hume'a göre bu kesinlik duygusunun kaynağı nedir?",
+      "secenekler": [
+        "Zihinde doğuştan bulunan akıl ilkeleri",
+        "Tekrarlanan deneyimlerin yarattığı alışkanlık",
+        "Kalbe doğan ilahi bir sezgi",
+        "Hiçbir şüpheye yer bırakmayan apaçıklık"
+      ],
+      "dogru": 1,
+      "aciklama": "Hume'a göre nedenler ile sonuçlar arasındaki zorunlu bağ gözlenmez; olayların sürekli art arda gelmesi zihinde bir alışkanlık ve beklenti oluşturur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "“Var olmak algılanmaktır.” diyen George Berkeley bu sözüyle aşağıdakilerden hangisini savunur?",
+      "secenekler": [
+        "Bilgi yalnızca akılla, doğuştan elde edilir.",
+        "Duyular güvenilmezdir; hakikat sezgiyle kavranır.",
+        "Nesneler algıdan bağımsız birer madde olarak vardır.",
+        "Nesnelerin varlığı algılanmalarından ayrı düşünülemez."
+      ],
+      "dogru": 3,
+      "aciklama": "Berkeley, birincil nitelikler dâhil bütün niteliklerin algıya bağlı olduğunu söyleyerek algıdan bağımsız madde fikrini reddeder; nesnelerin varlığı algılanmalarıyla bir aradadır."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Platon'a göre doksa, görünür dünyaya ilişkin ve kesinlik taşımayan kanaatleri ifade eder.",
+          "dogru": true,
+          "aciklama": "Doksa, bölünmüş çizginin görünür dünyaya ait olan eikasia ve pistis basamaklarından oluşur."
+        },
+        {
+          "metin": "Edmund Gettier, gerekçelendirilmiş doğru inancın her durumda bilgi olduğunu kanıtlamıştır.",
+          "dogru": false,
+          "aciklama": "Gettier tam tersini göstermiştir: Üç koşul sağlandığı hâlde doğruluğu şansa bağlı olan inançlar bilgi sayılmayabilir."
+        },
+        {
+          "metin": "Locke'a göre renk, tat ve koku ikincil niteliklerdir.",
+          "dogru": true,
+          "aciklama": "Locke'a göre ikincil nitelikler nesnenin algılayanda uyandırdığı etkilerdir; şekil, hacim ve hareket ise birincil niteliklerdir."
+        },
+        {
+          "metin": "Hume'a göre nedensellik bağını duyularımızla doğrudan gözlemleriz.",
+          "dogru": false,
+          "aciklama": "Hume'a göre yalnızca olayların art arda geldiğini gözlemleriz; zorunlu bağ gözlenmez, alışkanlıktan doğan bir beklentidir."
+        },
+        {
+          "metin": "Kant'a göre “7 + 5 = 12” yargısı sentetik apriori bir yargıdır.",
+          "dogru": true,
+          "aciklama": "Bu yargı bilgimizi genişletir (sentetik) ama deneyden bağımsız, zorunlu ve evrenseldir (apriori)."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Doksa",
+          "Görünür dünyaya ilişkin, kesinlik taşımayan sanı"
+        ],
+        [
+          "Cogito",
+          "Descartes'ın şüphe edilemeyen ilk kesin bilgisi: Düşünüyorum, öyleyse varım."
+        ],
+        [
+          "Askıdaki insan",
+          "İbn Sînâ'nın, duyular olmadan da benliğin farkında olunabileceğini gösteren düşünce deneyi"
+        ],
+        [
+          "Birincil nitelik",
+          "Locke'a göre nesnenin kendisine ait şekil, hacim ve hareket gibi özellikler"
+        ],
+        [
+          "Sentetik apriori",
+          "Bilgimizi genişleten ama deneyden bağımsız, zorunlu ve evrensel olan yargı"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Platon'a göre görünür dünyaya ilişkin, kesinlik taşımayan kanaatlere ___ denir.",
+          "cevap": "doksa"
+        },
+        {
+          "metin": "Descartes'ın her şeyden şüphe ettikten sonra ulaştığı “Düşünüyorum, öyleyse varım.” ilkesine ___ denir.",
+          "cevap": "cogito"
+        },
+        {
+          "metin": "Hume'a göre ideler, canlı ve güçlü algılar olan ___ soluk kopyalarıdır.",
+          "cevap": "izlenimlerin"
+        },
+        {
+          "metin": "Kant'a göre yüklemi öznenin içinde bulunmayan ve bilgimizi genişleten yargılara ___ yargı denir.",
+          "cevap": "sentetik"
+        },
+        {
+          "metin": "William James'e göre bir düşüncenin doğruluğu pratik hayatta sağladığı ___ ile ölçülür.",
+          "cevap": "fayda"
+        }
+      ],
+      "kelimeler": [
+        "doksa",
+        "cogito",
+        "izlenimlerin",
+        "sentetik",
+        "fayda"
+      ],
+      "fazla": [
+        "analitik",
+        "epokhe"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Deniz şöyle diyor: “Kara kedi gören kişinin o gün başına mutlaka kötü bir şey gelir. Bunu dedem söyledi; üstelik geçen hafta kara kedi gördüğüm gün telefonum düştü ve ekranı kırıldı.” Bu iddiayı bilgi felsefesinin imkân, kaynak ve doğruluk ölçütü problemleri açısından adım adım çözümleyiniz ve bir sonuca varınız.",
+      "ipuclari": [
+        "1. adım: İmkân sorusunu sor. İddia gözlem ve deneyle sınanabilecek türden bir iddia mı? Kesin bilgi mümkün değilse bile güçlü bir temellendirme yapılabilir mi?",
+        "2. adım: Kaynak sorusunu sor. Deniz'in iki dayanağı nedir? Bir otoritenin aktarımı ve tek bir kişisel deneyim bilimsel bir temellendirme için yeterli midir? Hume'un art ardalık ile nedensellik ayrımını hatırla.",
+        "3. adım: Ölçüt sorusunu sor. Uygunluk (sistematik gözlem), tutarlılık (doğa hakkındaki yerleşik bilgiler) ve tümel uzlaşım (bilim insanlarının görüşü) ölçütleriyle iddiayı sına; sonra kabul, ret ya da askı kararını gerekçelendir."
+      ],
+      "cevap": "{koyu:1. İmkân:} İddia, “kara kedi görmek kötü olaylara neden olur” biçiminde bir nedensellik iddiasıdır. Bu tür bir iddia ilke olarak {koyu:sınanabilir}: Kara kedi gören ve görmeyen çok sayıda kişinin başına gelen olaylar karşılaştırılabilir. Yani bu konuda güçlü bir temellendirmeye ulaşmak mümkündür.\n{koyu:2. Kaynak:} Deniz'in birinci dayanağı dedesinin sözüdür; bu bir {koyu:otorite ve gelenek aktarımıdır}, kendi başına kanıt değildir. İkinci dayanağı {koyu:tek bir kişisel deneyimdir}. Hume'un uyarısına göre iki olayın art arda gelmesi, birinin diğerine neden olduğunu göstermez. Üstelik insanlar inançlarını doğrulayan olayları hatırlayıp kara kedi görüp hiçbir şey olmayan günleri unutma eğilimindedir.\n{koyu:3. Ölçüt:} {koyu:Uygunluk} açısından iddiayı destekleyen sistematik bir gözlem yoktur. {koyu:Tutarlılık} açısından bir hayvanın görülmesinin telefonun düşmesine yol açacak fiziksel bir mekanizma, doğa hakkındaki yerleşik bilgilerimizle bağdaşmaz. {koyu:Tümel uzlaşım} açısından bu inanç bilim topluluğunca kabul görmez; yalnızca bazı kültürlerde yaygın bir batıl inançtır. Çoğu insanın bir şeye inanması da tek başına doğruluk göstermez.\n{koyu:Sonuç:} İddia gerekçelendirilmiş doğru inanç koşullarını sağlamaz; en fazla bir {koyu:sanı (doksa)} düzeyindedir. Eleştirel düşünen biri bu iddiayı {koyu:temellendirilmemiş} olarak değerlendirir ve reddeder; ama Deniz'i küçümsemek yerine ona art ardalık ile nedensellik arasındaki farkı açıklayarak ılımlı ve eleştirel şüpheyi örnek gösterir."
+    }
+  ]
+}

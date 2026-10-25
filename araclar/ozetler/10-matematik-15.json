@@ -1,0 +1,647 @@
+{
+  "ad": "10-matematik-15",
+  "sinif": 10,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 15,
+  "tarih": "28 Aralık 2026-1 Ocak 2027",
+  "yayin_tarihi": "2026-12-28",
+  "unite": "Nicelikler ve Değişimler",
+  "konu": "Gerçek Sayılarda Fonksiyonların Temsillerini Karşılaştırma ve Karesel Referans Fonksiyon f(x) = x² ile Nitel Özellikleri",
+  "ciktilar": [
+    "MAT.10.4.1. Gerçek sayılarda fonksiyon olma şartları ile gerçek sayılarda tanımlı fonksiyonların nitel özelliklerini matematiksel temsillerle değerlendirebilme (grafik ve cebirsel temsilleri karşılaştırma ve yargıda bulunma)",
+    "MAT.10.4.2. Gerçek sayılarda f(x) = x² şeklinde tanımlı karesel referans fonksiyonun nitel özellikleri ile bu fonksiyondan türetilen karesel fonksiyonların nitel özelliklerine ilişkin matematiksel muhakeme yapabilme",
+    "Karesel referans fonksiyonun nitel özelliklerini tablo, grafik ve cebirsel temsiller arasında ilişkilendirir; örüntüleri genelleyip cebirsel olarak ispatlar.",
+    "Referans fonksiyonu g(x) = a · f(x) ve g(x) = f(x) + k biçimindeki işlemlerle yeni karesel fonksiyonlara dönüştürür ve nitel özelliklerdeki değişimi yorumlar."
+  ],
+  "giris": "Geçen hafta bir fonksiyonun sıfırlarını, işaretini, artanlığını, bire birliğini, örtenliğini ve tek-çiftliğini tek tek incelemiştik. Bu hafta önce bu özellikleri {koyu:farklı fonksiyonlar arasında karşılaştırıp} sağlam yargılara ulaşıyoruz. Ardından matematiğin en önemli eğrilerinden biriyle, {koyu:karesel referans fonksiyon} f(x) = {us:x|2} ve onun grafiği olan {koyu:parabol} ile tanışıyoruz. Haftanın sonunda bu parabolü yukarı-aşağı kaydırarak, daraltıp genişleterek ve ters çevirerek yeni karesel fonksiyonlar türetecek ve özelliklerinin nasıl değiştiğini muhakeme edeceğiz.",
+  "ozet": [
+    "{koyu:Karşılaştırma:} Fonksiyonların nitel özellikleri grafikten hızlıca gözlenir, cebirsel kuralla kesin olarak kanıtlanır; bir aralığın tamamında artan ya da azalan olan fonksiyon o aralıkta bire birdir, ancak her tek fonksiyon bire bir değildir.",
+    "{koyu:Referans fonksiyon:} f: ℝ → ℝ, f(x) = {us:x|2} fonksiyonunun grafiği tepe noktası T(0, 0) olan, kolları yukarı bakan ve y eksenine göre simetrik bir paraboldür.",
+    "{koyu:Nitel özellikler:} f(x) = {us:x|2} için tanım kümesi ℝ, görüntü kümesi [0, ∞), tek sıfırı x = 0, (−∞, 0] aralığında azalan, [0, ∞) aralığında artan, minimum değeri 0 olan, çift, bire bir ve örten olmayan bir fonksiyondur.",
+    "{koyu:Kısıtlama:} Tanım kümesi [0, ∞) ya da (−∞, 0], değer kümesi [0, ∞) alınırsa f(x) = {us:x|2} fonksiyonu bire bir ve örten olur.",
+    "{koyu:Dikey öteleme:} g(x) = {us:x|2} + k fonksiyonunun grafiği referans parabolün k birim dikey ötelenmişidir; tepe noktası (0, k), görüntü kümesi [k, ∞) olur ve k < 0 ise iki sıfırı vardır.",
+    "{koyu:a katsayısı:} g(x) = a · {us:x|2} fonksiyonunda {uzunluk:a} > 1 ise parabol daralır, 0 < {uzunluk:a} < 1 ise genişler; a < 0 ise kollar aşağı döner, minimum yerine maksimum oluşur."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Fonksiyon Temsillerini Karşılaştırma ve Nitel Özellikler Hakkında Yargıda Bulunma",
+      "metin": [
+        "Bir fonksiyonu tanımak, onun yalnız kuralını bilmek değildir; aynı fonksiyonun {koyu:cebirsel temsili} (kuralı), {koyu:grafik temsili} ve {koyu:tablo temsili} aynı nitel özellikleri farklı biçimlerde anlatır. Örneğin f(x) = 2x − 4 kuralında x yerine 2 yazınca 0 elde etmemiz cebirsel olarak sıfırı verir; grafikte ise doğrunun x eksenini (2, 0) noktasında kesmesi aynı bilgiyi görsel olarak sunar. Bu hafta üç farklı fonksiyonu yan yana koyup tanım kümesi, görüntü kümesi, işaret, artanlık-azalanlık, ekstremum, sıfır, bire birlik, tek-çiftlik ve örtenlik bakımından {koyu:karşılaştırıyoruz}.",
+        "Karşılaştırma tablosuna bakınca bazı örüntüler hemen göze çarpar. Tüm tanım kümesinde {koyu:artan} olan f(x) = 2x − 4 ve h(x) = {us:x|3} fonksiyonları {koyu:bire birdir}; çünkü x büyüdükçe görüntü de büyüdüğünden iki farklı x aynı görüntüye gidemez. Buna karşılık g(x) = {uzunluk:x} fonksiyonu önce azalıp sonra arttığı için bir minimum noktasına sahiptir ve g(−1) = g(1) = 1 olduğundan bire bir değildir. Buradan şu {koyu:yargıya} varırız: Bir fonksiyonun grafiği bir aralıkta yön değiştiriyorsa (tepe ya da çukur oluşuyorsa) fonksiyon o aralıkta bire bir olamaz.",
+        "Grafikten yapılan gözlemler hızlı ve sezgiseldir, ancak {koyu:kesin bir yargı için cebirsel doğrulama} gerekir. Örneğin h(x) = {us:x|3} grafiğinin orijine göre simetrik göründüğünü fark ederiz; bunu h(−x) = {us:(−x)|3} = −{us:x|3} = −h(x) eşitliğiyle ispatladığımızda yargımız kesinleşir. Aynı şekilde g(−x) = {uzunluk:−x} = {uzunluk:x} = g(x) olduğundan g çift fonksiyondur. Bu bölümde edindiğimiz karşılaştırma alışkanlığı, haftanın devamında karesel fonksiyonları incelerken temel aracımız olacak."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Nitel Özellik",
+          "f(x) = 2x − 4",
+          "g(x) = |x|",
+          "h(x) = x³"
+        ],
+        "satirlar": [
+          [
+            "Tanım kümesi",
+            "ℝ",
+            "ℝ",
+            "ℝ"
+          ],
+          [
+            "Görüntü kümesi",
+            "ℝ",
+            "[0, ∞)",
+            "ℝ"
+          ],
+          [
+            "Sıfırları",
+            "x = 2",
+            "x = 0",
+            "x = 0"
+          ],
+          [
+            "İşareti",
+            "x < 2 iken negatif, x > 2 iken pozitif",
+            "x ≠ 0 iken pozitif, hiç negatif değil",
+            "x < 0 iken negatif, x > 0 iken pozitif"
+          ],
+          [
+            "Artanlık-azalanlık",
+            "ℝ'de artan",
+            "(−∞, 0] azalan, [0, ∞) artan",
+            "ℝ'de artan"
+          ],
+          [
+            "Maksimum-minimum",
+            "Yok",
+            "Minimum noktası (0, 0)",
+            "Yok"
+          ],
+          [
+            "Bire birlik",
+            "Bire bir",
+            "Bire bir değil: g(−1) = g(1)",
+            "Bire bir"
+          ],
+          [
+            "Teklik-çiftlik",
+            "Ne tek ne çift",
+            "Çift",
+            "Tek"
+          ],
+          [
+            "Örtenlik (ℝ → ℝ)",
+            "Örten",
+            "Örten değil (içine)",
+            "Örten"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Grafik Gözlemi ve Cebirsel Kanıt",
+          "metin": "Grafik bir özelliği {koyu:önerir}, cebir ise {koyu:kanıtlar}. Simetri için f(−x) hesaplanır; bire birlik için f(a) = f(b) eşitliğinden a = b sonucuna ulaşılıp ulaşılamadığına bakılır; artanlık için {alt:x|1} < {alt:x|2} iken f({alt:x|1}) ile f({alt:x|2}) karşılaştırılır."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Sık Yapılan Yanlış Genellemeler",
+          "metin": "\"Bire bir fonksiyon artandır\" yargısı yanlıştır: f(x) = −x azalandır ama bire birdir. \"Her tek fonksiyon bire birdir\" yargısı da yanlıştır: f(x) = {us:x|3} − x tektir ancak f(−1) = f(0) = f(1) = 0 olduğundan bire bir değildir. Doğru yargı: Tanım kümesinin tamamında yalnız artan ya da yalnız azalan olan fonksiyon bire birdir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 330\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"330\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"16\" y=\"12\" width=\"728\" height=\"36\" rx=\"10\" fill=\"#1e293b\"/><text x=\"380\" y=\"36\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#ffffff\">Üç Fonksiyon, Üç Farklı Nitel Özellik Profili</text><rect x=\"20\" y=\"60\" width=\"220\" height=\"220\" rx=\"12\" fill=\"#ffffff\" stroke=\"#93c5fd\" stroke-width=\"2\"/><line x1=\"30\" y1=\"170\" x2=\"230\" y2=\"170\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"130\" y1=\"70\" x2=\"130\" y2=\"270\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"222\" y=\"162\" font-size=\"11\" fill=\"#64748b\">x</text><text x=\"136\" y=\"80\" font-size=\"11\" fill=\"#64748b\">y</text><line x1=\"130\" y1=\"250\" x2=\"215\" y2=\"80\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"170\" cy=\"170\" r=\"5\" fill=\"#dc2626\"/><text x=\"176\" y=\"188\" font-size=\"11\" fill=\"#dc2626\">sıfır: x = 2</text><text x=\"130\" y=\"300\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4ed8\">f(x) = 2x − 4</text><text x=\"130\" y=\"319\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">Artan · bire bir · örten</text><rect x=\"270\" y=\"60\" width=\"220\" height=\"220\" rx=\"12\" fill=\"#ffffff\" stroke=\"#86efac\" stroke-width=\"2\"/><line x1=\"280\" y1=\"170\" x2=\"480\" y2=\"170\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"380\" y1=\"70\" x2=\"380\" y2=\"270\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"472\" y=\"162\" font-size=\"11\" fill=\"#64748b\">x</text><text x=\"386\" y=\"80\" font-size=\"11\" fill=\"#64748b\">y</text><polyline points=\"300,90 380,170 460,90\" fill=\"none\" stroke=\"#059669\" stroke-width=\"3\" stroke-linejoin=\"round\"/><circle cx=\"380\" cy=\"170\" r=\"5\" fill=\"#dc2626\"/><text x=\"388\" y=\"190\" font-size=\"11\" fill=\"#dc2626\">minimum (0, 0)</text><text x=\"380\" y=\"300\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#047857\">g(x) = |x|</text><text x=\"380\" y=\"319\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">Çift · bire bir değil · içine</text><rect x=\"520\" y=\"60\" width=\"220\" height=\"220\" rx=\"12\" fill=\"#ffffff\" stroke=\"#c4b5fd\" stroke-width=\"2\"/><line x1=\"530\" y1=\"170\" x2=\"730\" y2=\"170\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"630\" y1=\"70\" x2=\"630\" y2=\"270\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"722\" y=\"162\" font-size=\"11\" fill=\"#64748b\">x</text><text x=\"636\" y=\"80\" font-size=\"11\" fill=\"#64748b\">y</text><polyline points=\"566,251.9 582,204.6 598,180.2 614,171.3 630,170 646,168.7 662,159.8 678,135.4 694,88.1\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\" stroke-linejoin=\"round\"/><circle cx=\"630\" cy=\"170\" r=\"5\" fill=\"#dc2626\"/><text x=\"640\" y=\"192\" font-size=\"11\" fill=\"#dc2626\">simetri merkezi O</text><text x=\"532\" y=\"272\" font-size=\"10\" fill=\"#64748b\">x ölçeği 2 kat büyütüldü</text><text x=\"630\" y=\"300\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#6d28d9\">h(x) = x³</text><text x=\"630\" y=\"319\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">Tek · artan · bire bir · örten</text></svg>"
+    },
+    {
+      "baslik": "Karesel Referans Fonksiyon: Değer Tablosu, Parabol ve Örüntüler",
+      "metin": [
+        "Gerçek sayılarda her sayıyı karesine götüren {koyu:f: ℝ → ℝ}, f(x) = {us:x|2} fonksiyonuna {koyu:karesel referans fonksiyon} denir. \"Referans\" denmesinin sebebi, ilerleyen haftalarda göreceğimiz bütün karesel fonksiyonların bu fonksiyonun grafiği üzerinde yapılan kaydırma, uzatma ve yansıtma işlemleriyle elde edilmesidir. Değer tablosunu oluşturalım: f(−3) = 9, f(−2) = 4, f(−1) = 1, f(0) = 0, f(1) = 1, f(2) = 4, f(3) = 9. Bu noktaları koordinat düzleminde işaretleyip birleştirdiğimizde ortaya çıkan, U harfine benzeyen düzgün eğriye {koyu:parabol} denir.",
+        "Tablodaki ilk dikkat çekici durum, {koyu:zıt işaretli sayıların aynı görüntüye} sahip olmasıdır: (−2, 4) ile (2, 4), (−3, 9) ile (3, 9) noktaları y eksenine göre birbirinin simetriğidir. Bu nedenle y ekseni (x = 0 doğrusu) parabolün {koyu:simetri eksenidir}. Parabolün simetri ekseni üzerindeki en alt noktası olan {koyu:T(0, 0)} noktasına {koyu:tepe noktası} denir. İkinci gözlem ise 0 ile 1 arasındaki sayılarda karşımıza çıkar: f({kesir:1|2}) = {kesir:1|4} olduğundan bu aralıkta bir sayının karesi kendisinden küçüktür; bu yüzden parabol orijin yakınında x eksenine çok yaklaşarak yassılaşır, 1'den sonra ise hızla dikleşir.",
+        "Bir {koyu:sayısal örüntü} daha arayalım: Ardışık doğal sayıların kareleri 0, 1, 4, 9, 16, 25 olup aralarındaki farklar 1, 3, 5, 7, 9 şeklinde {koyu:ardışık tek sayılardır}. Bu gözlemi genelleyelim ve cebirsel olarak ispatlayalım: f(n + 1) − f(n) = {us:(n + 1)|2} − {us:n|2} = {us:n|2} + 2n + 1 − {us:n|2} = {koyu:2n + 1}. Farkların sürekli 2'şer artması, x büyüdükçe grafiğin giderek dikleştiğini, yani fonksiyonun artış hızının da arttığını gösterir. Bu genelleme, grafikte gördüğümüz \"dikleşme\" gözleminin cebirsel doğrulamasıdır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "x",
+          "f(x) = x²",
+          "Grafikteki Nokta",
+          "y Eksenine Göre Simetrik Nokta"
+        ],
+        "satirlar": [
+          [
+            "−3",
+            "9",
+            "(−3, 9)",
+            "(3, 9)"
+          ],
+          [
+            "−2",
+            "4",
+            "(−2, 4)",
+            "(2, 4)"
+          ],
+          [
+            "−1",
+            "1",
+            "(−1, 1)",
+            "(1, 1)"
+          ],
+          [
+            "{kesir:1|2}",
+            "{kesir:1|4}",
+            "({kesir:1|2}, {kesir:1|4})",
+            "(−{kesir:1|2}, {kesir:1|4})"
+          ],
+          [
+            "0",
+            "0",
+            "(0, 0)",
+            "Kendisi (tepe noktası)"
+          ],
+          [
+            "4",
+            "16",
+            "(4, 16)",
+            "(−4, 16)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Parabol ve Tepe Noktası",
+          "metin": "f(x) = {us:x|2} fonksiyonunun grafiğine {koyu:parabol} denir. Parabolün simetri ekseni ile kesiştiği noktaya {koyu:tepe noktası} denir; referans parabolde tepe noktası T(0, 0), simetri ekseni x = 0 (y ekseni) doğrusudur."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Ardışık Kareler Örüntüsü",
+          "metin": "{us:n|2} değerini bilen bir öğrenci {us:(n + 1)|2} değerini hemen bulabilir: {us:(n + 1)|2} = {us:n|2} + 2n + 1. Örneğin {us:30|2} = 900 ise {us:31|2} = 900 + 61 = 961 olur."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 340\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"340\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"16\" y=\"12\" width=\"728\" height=\"36\" rx=\"10\" fill=\"#1e293b\"/><text x=\"380\" y=\"36\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#ffffff\">Referans Parabol: f(x) = x²</text><line x1=\"70\" y1=\"300\" x2=\"380\" y2=\"300\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"220\" y1=\"58\" x2=\"220\" y2=\"322\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"372\" y=\"292\" font-size=\"12\" fill=\"#64748b\">x</text><text x=\"206\" y=\"66\" font-size=\"12\" fill=\"#64748b\">y</text><path d=\"M100,66 Q220,534 340,66\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><circle cx=\"100\" cy=\"66\" r=\"4\" fill=\"#1e40af\"/><circle cx=\"140\" cy=\"196\" r=\"4\" fill=\"#1e40af\"/><circle cx=\"180\" cy=\"274\" r=\"4\" fill=\"#1e40af\"/><circle cx=\"220\" cy=\"300\" r=\"6\" fill=\"#dc2626\"/><circle cx=\"260\" cy=\"274\" r=\"4\" fill=\"#1e40af\"/><circle cx=\"300\" cy=\"196\" r=\"4\" fill=\"#1e40af\"/><circle cx=\"340\" cy=\"66\" r=\"4\" fill=\"#1e40af\"/><line x1=\"140\" y1=\"196\" x2=\"300\" y2=\"196\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><text x=\"104\" y=\"190\" font-size=\"11\" fill=\"#b45309\">(−2, 4)</text><text x=\"306\" y=\"190\" font-size=\"11\" fill=\"#b45309\">(2, 4)</text><text x=\"62\" y=\"82\" font-size=\"11\" fill=\"#1e40af\">(−3, 9)</text><text x=\"346\" y=\"82\" font-size=\"11\" fill=\"#1e40af\">(3, 9)</text><text x=\"228\" y=\"318\" font-size=\"12\" font-weight=\"700\" fill=\"#dc2626\">Tepe T(0, 0)</text><text x=\"228\" y=\"100\" font-size=\"12\" fill=\"#334155\" display=\"none\"></text><text x=\"228\" y=\"110\" font-size=\"12\" fill=\"#334155\">Simetri ekseni:</text><text x=\"228\" y=\"126\" font-size=\"12\" fill=\"#334155\">x = 0 (y ekseni)</text><rect x=\"420\" y=\"62\" width=\"320\" height=\"262\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/><rect x=\"420\" y=\"62\" width=\"320\" height=\"32\" rx=\"10\" fill=\"#2563eb\"/><text x=\"580\" y=\"83\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#ffffff\">Değer Tablosu ve Ardışık Farklar</text><text x=\"440\" y=\"122\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">x :</text><text x=\"500\" y=\"122\" font-size=\"13\" fill=\"#1e293b\">0      1      2      3      4      5</text><text x=\"440\" y=\"148\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">x² :</text><text x=\"500\" y=\"148\" font-size=\"13\" fill=\"#1e293b\">0      1      4      9     16    25</text><text x=\"440\" y=\"174\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">Fark :</text><text x=\"516\" y=\"174\" font-size=\"13\" fill=\"#b45309\">1      3      5      7      9</text><rect x=\"436\" y=\"192\" width=\"288\" height=\"58\" rx=\"10\" fill=\"#ffffff\" stroke=\"#93c5fd\"/><text x=\"580\" y=\"215\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">Genelleme: (n + 1)² − n² = 2n + 1</text><text x=\"580\" y=\"237\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">Ardışık karelerin farkı ardışık tek sayılardır.</text><text x=\"580\" y=\"275\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">Farklar büyüdükçe grafik dikleşir:</text><text x=\"580\" y=\"295\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">artış hızı da artmaktadır.</text></svg>"
+    },
+    {
+      "baslik": "Karesel Referans Fonksiyonun Nitel Özellikleri ve İspatları",
+      "metin": [
+        "Geçen hafta öğrendiğimiz nitel özellik listesini şimdi f(x) = {us:x|2} fonksiyonuna uygulayalım. {koyu:Tanım kümesi} ℝ'dir, çünkü her gerçek sayının karesi alınabilir. Hiçbir gerçek sayının karesi negatif olmadığı ve her negatif olmayan y sayısı için {us:x|2} = y eşitliğini sağlayan x = {kok:y} bulunduğu için {koyu:görüntü kümesi [0, ∞)} aralığıdır. Buna bağlı olarak fonksiyonun {koyu:işareti}: x ≠ 0 için f(x) > 0, x = 0 için f(x) = 0'dır; grafik hiçbir zaman x ekseninin altına inmez. f(x) = 0 denkleminin tek çözümü x = 0 olduğundan fonksiyonun {koyu:tek sıfırı} 0'dır ve parabol x eksenine orijinde {koyu:teğettir}.",
+        "{koyu:Artanlık-azalanlık} için cebirsel bir ispat yapalım. 0 ≤ {alt:x|1} < {alt:x|2} olsun. Bu durumda f({alt:x|2}) − f({alt:x|1}) = {us:x|2}₂ yerine açık yazarsak ({alt:x|2} − {alt:x|1}) · ({alt:x|2} + {alt:x|1}) çarpımına eşittir. İlk çarpan pozitif ({alt:x|2} > {alt:x|1}), ikinci çarpan pozitiftir ({alt:x|2} > 0, {alt:x|1} ≥ 0). Çarpım pozitif olduğundan f({alt:x|1}) < f({alt:x|2}) olur; yani fonksiyon {koyu:[0, ∞) aralığında artandır}. {alt:x|1} < {alt:x|2} ≤ 0 alındığında ikinci çarpan negatif olacağından fonksiyon {koyu:(−∞, 0] aralığında azalandır}. Azalanlıktan artanlığa geçiş x = 0'da gerçekleştiği için {koyu:minimum noktası T(0, 0)}, {koyu:minimum değeri 0}'dır; kollar sınırsız yükseldiğinden maksimum değer yoktur.",
+        "Son olarak eşleme özelliklerine bakalım. f(−x) = {us:(−x)|2} = {us:x|2} = f(x) olduğundan fonksiyon {koyu:çifttir}, grafiği y eksenine göre simetriktir. Bu simetrinin doğal sonucu olarak f(−2) = f(2) = 4 gibi farklı elemanlar aynı görüntüye gider; dolayısıyla f {koyu:bire bir değildir} (y = 4 yatay doğrusu grafiği iki noktada keser). Değer kümesi ℝ alındığında negatif sayılar açıkta kaldığından f: ℝ → ℝ {koyu:örten değildir, içine fonksiyondur}. Bu sonuçları cebirsel temsil (kural), grafik temsil (parabol) ve tablo temsili üzerinde aynı anda doğrulayabiliyor olmamız, nitel özelliklerle temsiller arasındaki güçlü ilişkiyi gösterir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Nitel Özellik",
+          "f(x) = x² İçin Sonuç",
+          "Gerekçe"
+        ],
+        "satirlar": [
+          [
+            "Tanım kümesi",
+            "ℝ",
+            "Her gerçek sayının karesi alınabilir."
+          ],
+          [
+            "Görüntü kümesi",
+            "[0, ∞)",
+            "Kare negatif olamaz; her y ≥ 0 için x = {kok:y} vardır."
+          ],
+          [
+            "İşareti",
+            "x ≠ 0 iken pozitif, x = 0 iken sıfır",
+            "Grafik x ekseninin altına inmez."
+          ],
+          [
+            "Sıfırları",
+            "Yalnız x = 0",
+            "{us:x|2} = 0 ise x = 0; parabol x eksenine teğettir."
+          ],
+          [
+            "Artanlık-azalanlık",
+            "(−∞, 0] azalan, [0, ∞) artan",
+            "({alt:x|2} − {alt:x|1})({alt:x|2} + {alt:x|1}) çarpımının işareti"
+          ],
+          [
+            "Maksimum-minimum",
+            "Minimum noktası (0, 0), maksimum yok",
+            "Azalandan artana geçiş x = 0'da olur."
+          ],
+          [
+            "Bire birlik",
+            "Bire bir değil",
+            "f(−a) = f(a); yatay doğru iki noktada keser."
+          ],
+          [
+            "Teklik-çiftlik",
+            "Çift",
+            "f(−x) = {us:(−x)|2} = {us:x|2} = f(x)"
+          ],
+          [
+            "Örtenlik (ℝ → ℝ)",
+            "Örten değil (içine)",
+            "Negatif sayılar görüntü kümesinde yer almaz."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "İki Kare Farkı ile Artanlık İspatı",
+          "metin": "f({alt:x|2}) − f({alt:x|1}) = ({alt:x|2} − {alt:x|1}) · ({alt:x|2} + {alt:x|1}) özdeşliği, karesel fonksiyonların hangi aralıkta arttığını göstermenin en kısa yoludur. {alt:x|1} < {alt:x|2} iken ikinci çarpan pozitifse fonksiyon artar, negatifse azalır."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Minimum Noktası ile Minimum Değer Farkı",
+          "metin": "Minimum {koyu:noktası} bir sıralı ikilidir: T(0, 0). Minimum {koyu:değeri} ise bu noktanın ordinatıdır: 0. Sorularda hangisinin istendiğine dikkat ediniz."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 340\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"340\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"16\" y=\"12\" width=\"728\" height=\"36\" rx=\"10\" fill=\"#1e293b\"/><text x=\"380\" y=\"36\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#ffffff\">f(x) = x² Fonksiyonunun Nitel Özellik Kartı</text><rect x=\"20\" y=\"60\" width=\"232\" height=\"82\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"136\" y=\"88\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4ed8\">Tanım Kümesi</text><text x=\"136\" y=\"116\" text-anchor=\"middle\" font-size=\"14\" fill=\"#1e293b\">ℝ (tüm gerçek sayılar)</text><rect x=\"264\" y=\"60\" width=\"232\" height=\"82\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"380\" y=\"88\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4ed8\">Görüntü Kümesi</text><text x=\"380\" y=\"116\" text-anchor=\"middle\" font-size=\"14\" fill=\"#1e293b\">[0, ∞)</text><rect x=\"508\" y=\"60\" width=\"232\" height=\"82\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"624\" y=\"88\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4ed8\">İşareti</text><text x=\"624\" y=\"116\" text-anchor=\"middle\" font-size=\"13\" fill=\"#1e293b\">f(x) ≥ 0, hiç negatif değil</text><rect x=\"20\" y=\"150\" width=\"232\" height=\"82\" rx=\"12\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"136\" y=\"178\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#047857\">Artan / Azalan</text><text x=\"136\" y=\"206\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">(−∞, 0] azalan, [0, ∞) artan</text><rect x=\"264\" y=\"150\" width=\"232\" height=\"82\" rx=\"12\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"380\" y=\"178\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#047857\">Ekstremum</text><text x=\"380\" y=\"206\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Minimum T(0, 0), maksimum yok</text><rect x=\"508\" y=\"150\" width=\"232\" height=\"82\" rx=\"12\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"624\" y=\"178\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#047857\">Sıfırı</text><text x=\"624\" y=\"206\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Yalnız x = 0 (eksene teğet)</text><rect x=\"20\" y=\"240\" width=\"232\" height=\"82\" rx=\"12\" fill=\"#fffbeb\" stroke=\"#b45309\" stroke-width=\"2\"/><text x=\"136\" y=\"268\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#b45309\">Bire Birlik</text><text x=\"136\" y=\"296\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Değil: f(−2) = f(2) = 4</text><rect x=\"264\" y=\"240\" width=\"232\" height=\"82\" rx=\"12\" fill=\"#fffbeb\" stroke=\"#b45309\" stroke-width=\"2\"/><text x=\"380\" y=\"268\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#b45309\">Teklik - Çiftlik</text><text x=\"380\" y=\"296\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Çift: f(−x) = f(x)</text><rect x=\"508\" y=\"240\" width=\"232\" height=\"82\" rx=\"12\" fill=\"#fffbeb\" stroke=\"#b45309\" stroke-width=\"2\"/><text x=\"624\" y=\"268\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#b45309\">Örtenlik (ℝ → ℝ)</text><text x=\"624\" y=\"296\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Değil: içine fonksiyon</text></svg>"
+    },
+    {
+      "baslik": "Tanım ve Değer Kümesini Kısıtlayarak Bire Bir ve Örten Karesel Fonksiyon Elde Etme",
+      "metin": [
+        "Bir fonksiyonun nitel özellikleri yalnız kuralına değil, {koyu:tanım ve değer kümesinin nasıl seçildiğine} de bağlıdır. Aynı f(x) = {us:x|2} kuralı farklı kümelerde farklı davranır. f: ℝ → ℝ için fonksiyon ne bire bir ne örtendir. Değer kümesini görüntü kümesine eşit, yani [0, ∞) seçersek f: ℝ → [0, ∞) fonksiyonu {koyu:örten} olur; ancak −2 ve 2 hâlâ aynı görüntüye gittiği için bire bir değildir. Tanım kümesini parabolün yalnız sağ koluna, [0, ∞) aralığına daraltırsak bu kez fonksiyon bu aralıkta sürekli arttığından {koyu:bire bir} olur.",
+        "Bu iki kısıtlamayı birleştirdiğimizde f: [0, ∞) → [0, ∞), f(x) = {us:x|2} fonksiyonu hem {koyu:bire bir hem örten} olur. Aynı sonuç sol kol için de geçerlidir: f: (−∞, 0] → [0, ∞) fonksiyonu bu aralıkta sürekli azalan olduğundan bire bir, görüntü kümesi [0, ∞) olduğundan örtendir. Bu yargıyı grafik üzerinde {koyu:yatay doğru testiyle} doğrulayabiliriz: Parabolün yalnız bir kolunu bıraktığımızda y = c (c > 0) doğruları grafiği tam bir noktada keser.",
+        "Kapalı aralıkta tanımlı karesel fonksiyonların görüntü kümesi bulunurken yalnız uç noktaların görüntüsüne bakmak {koyu:yanlış sonuç} verebilir. Örneğin f: [−2, 3] → ℝ, f(x) = {us:x|2} için f(−2) = 4 ve f(3) = 9'dur; fakat tanım aralığı tepe noktasının apsisi olan 0'ı içerdiğinden fonksiyon 0 değerini de alır. Doğru görüntü kümesi [4, 9] değil {koyu:[0, 9]} aralığıdır. Tanım aralığı 0'ı içermiyorsa (örneğin [1, 3]) fonksiyon o aralıkta artan olduğundan görüntü kümesi doğrudan uç değerlerle [1, 9] olarak bulunur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Fonksiyonun Tanımı (kural: x²)",
+          "Bire Bir mi?",
+          "Örten mi?",
+          "Açıklama"
+        ],
+        "satirlar": [
+          [
+            "f: ℝ → ℝ",
+            "Hayır",
+            "Hayır",
+            "f(−1) = f(1); negatif sayılar açıkta kalır."
+          ],
+          [
+            "f: ℝ → [0, ∞)",
+            "Hayır",
+            "Evet",
+            "Değer kümesi görüntü kümesine eşittir."
+          ],
+          [
+            "f: [0, ∞) → [0, ∞)",
+            "Evet",
+            "Evet",
+            "Sağ kol: sürekli artan."
+          ],
+          [
+            "f: (−∞, 0] → [0, ∞)",
+            "Evet",
+            "Evet",
+            "Sol kol: sürekli azalan."
+          ],
+          [
+            "f: [−2, 3] → [0, 9]",
+            "Hayır",
+            "Evet",
+            "f(−1) = f(1); görüntü kümesi [0, 9]."
+          ],
+          [
+            "f: [1, 3] → ℝ",
+            "Evet",
+            "Hayır",
+            "Görüntü kümesi [1, 9] ≠ ℝ."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Tepe Noktası Aralığın İçindeyse",
+          "metin": "Kapalı bir aralıkta {us:x|2} fonksiyonunun en küçük değeri, aralık 0'ı içeriyorsa {koyu:0}'dır; en büyük değeri ise uç noktalardan {koyu:0'a uzaklığı büyük olanın} görüntüsüdür. [−2, 3] aralığında 3, −2'den 0'a daha uzak olduğundan maksimum değer f(3) = 9'dur."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Teklik-Çiftlik İçin Simetrik Tanım Kümesi",
+          "metin": "Bir fonksiyonun tek ya da çift olduğundan söz edebilmek için tanım kümesinin 0'a göre simetrik olması gerekir. f: [−2, 3] → ℝ, f(x) = {us:x|2} için f(3) tanımlı ama f(−3) tanımlı olmadığından bu fonksiyon çift fonksiyon olarak nitelendirilemez."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 340\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"340\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"16\" y=\"12\" width=\"728\" height=\"36\" rx=\"10\" fill=\"#1e293b\"/><text x=\"380\" y=\"36\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#ffffff\">Parabolün Kollarını Ayırmak: Bire Bir ve Örten Kısıtlamalar</text><line x1=\"50\" y1=\"300\" x2=\"360\" y2=\"300\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"200\" y1=\"58\" x2=\"200\" y2=\"322\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"352\" y=\"292\" font-size=\"12\" fill=\"#64748b\">x</text><text x=\"186\" y=\"66\" font-size=\"12\" fill=\"#64748b\">y</text><path d=\"M80,66 Q140,300 200,300\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\"/><path d=\"M200,300 Q260,300 320,66\" fill=\"none\" stroke=\"#059669\" stroke-width=\"4\"/><line x1=\"60\" y1=\"196\" x2=\"345\" y2=\"196\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><circle cx=\"120\" cy=\"196\" r=\"5\" fill=\"#dc2626\"/><circle cx=\"280\" cy=\"196\" r=\"5\" fill=\"#dc2626\"/><text x=\"62\" y=\"188\" font-size=\"11\" fill=\"#dc2626\">y = 4</text><text x=\"98\" y=\"216\" font-size=\"11\" fill=\"#dc2626\">x = −2</text><text x=\"286\" y=\"216\" font-size=\"11\" fill=\"#dc2626\">x = 2</text><circle cx=\"200\" cy=\"300\" r=\"5\" fill=\"#1e293b\"/><text x=\"206\" y=\"318\" font-size=\"11\" fill=\"#1e293b\">O(0, 0)</text><text x=\"86\" y=\"110\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">sol kol</text><text x=\"272\" y=\"110\" font-size=\"12\" font-weight=\"700\" fill=\"#047857\">sağ kol</text><rect x=\"390\" y=\"62\" width=\"350\" height=\"76\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"565\" y=\"86\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4ed8\">f: (−∞, 0] → [0, ∞)</text><text x=\"565\" y=\"108\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Sürekli azalan: yatay doğrular 1 noktada keser</text><text x=\"565\" y=\"126\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Bire bir ve örten</text><rect x=\"390\" y=\"148\" width=\"350\" height=\"76\" rx=\"12\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"565\" y=\"172\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#047857\">f: [0, ∞) → [0, ∞)</text><text x=\"565\" y=\"194\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Sürekli artan: yatay doğrular 1 noktada keser</text><text x=\"565\" y=\"212\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Bire bir ve örten</text><rect x=\"390\" y=\"234\" width=\"350\" height=\"88\" rx=\"12\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"565\" y=\"258\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#b91c1c\">f: ℝ → ℝ (iki kol birlikte)</text><text x=\"565\" y=\"280\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">y = 4 doğrusu iki noktada keser: bire bir değil</text><text x=\"565\" y=\"300\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Negatif y değerleri açıkta: örten değil</text></svg>"
+    },
+    {
+      "baslik": "Dikey Öteleme: g(x) = x² + k Fonksiyonları",
+      "metin": [
+        "Referans fonksiyonun her görüntüsüne aynı k sayısını eklersek {koyu:g(x) = f(x) + k = {us:x|2} + k} fonksiyonunu elde ederiz. Tabloda bu işlem her y değerini k kadar değiştirir; grafikte ise parabolün her noktası (x, y) konumundan (x, y + k) konumuna taşınır. Bu dönüşüme {koyu:dikey öteleme} denir: k > 0 ise parabol k birim {koyu:yukarı}, k < 0 ise {uzunluk:k} birim {koyu:aşağı} kayar. Parabolün şekli, genişliği ve kollarının yönü değişmez; yalnız konumu değişir.",
+        "Öteleme sonrasında hangi özelliklerin korunduğunu, hangilerinin değiştiğini ayırt etmek önemlidir. Tanım kümesi (ℝ), simetri ekseni (x = 0), artanlık-azalanlık aralıkları ve çiftlik {koyu:korunur}; çünkü g(−x) = {us:(−x)|2} + k = {us:x|2} + k = g(x) olduğundan g de çift fonksiyondur. Buna karşılık tepe noktası (0, 0)'dan {koyu:(0, k)} noktasına, minimum değer 0'dan {koyu:k}'ya, görüntü kümesi [0, ∞)'dan {koyu:[k, ∞)} aralığına geçer.",
+        "En çok değişen özellik {koyu:sıfırlardır}. g(x) = 0 için {us:x|2} = −k denklemini çözeriz. k < 0 ise −k pozitiftir ve iki sıfır vardır: x = −{kok:−k} ve x = {kok:−k}. Örneğin g(x) = {us:x|2} − 3 fonksiyonunun sıfırları −{kok:3} ve {kok:3}'tür; fonksiyon bu iki sayı arasında negatif, dışında pozitiftir. k = 0 ise tek sıfır x = 0'dır. k > 0 ise {us:x|2} = −k denkleminin gerçek çözümü olmadığından fonksiyonun {koyu:sıfırı yoktur}; grafik x eksenini hiç kesmez ve fonksiyon her yerde pozitiftir. Bu genellemeyi grafikle doğrulamak kolaydır: Tepe noktası x ekseninin altındaysa yukarı bakan kollar ekseni mutlaka iki kez keser."
+      ],
+      "tablo": {
+        "basliklar": [
+          "k Durumu",
+          "Örnek",
+          "Tepe Noktası",
+          "Görüntü Kümesi",
+          "Sıfırları",
+          "İşareti"
+        ],
+        "satirlar": [
+          [
+            "k > 0",
+            "g(x) = {us:x|2} + 2",
+            "(0, 2)",
+            "[2, ∞)",
+            "Yok",
+            "Her x için pozitif"
+          ],
+          [
+            "k = 0",
+            "f(x) = {us:x|2}",
+            "(0, 0)",
+            "[0, ∞)",
+            "x = 0",
+            "x ≠ 0 iken pozitif"
+          ],
+          [
+            "k < 0",
+            "g(x) = {us:x|2} − 3",
+            "(0, −3)",
+            "[−3, ∞)",
+            "−{kok:3} ve {kok:3}",
+            "(−{kok:3}, {kok:3}) aralığında negatif, dışında pozitif"
+          ],
+          [
+            "k < 0",
+            "g(x) = {us:x|2} − 9",
+            "(0, −9)",
+            "[−9, ∞)",
+            "−3 ve 3",
+            "(−3, 3) aralığında negatif, dışında pozitif"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Dikey Ötelemede Değişen ve Korunanlar",
+          "metin": "{koyu:Korunanlar:} tanım kümesi, simetri ekseni x = 0, (−∞, 0] azalan - [0, ∞) artan yapısı, çiftlik, bire bir olmama.\n{koyu:Değişenler:} tepe noktası (0, k), minimum değer k, görüntü kümesi [k, ∞), sıfırların sayısı ve işaret aralıkları."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Sıfır Sayısını Tepe Noktasından Okuyun",
+          "metin": "Kolları yukarı bakan bir parabolde tepe noktası x ekseninin altındaysa 2, üzerindeyse 1, üstündeyse 0 sıfır vardır. Denklemi çözmeden önce bu tahmini yapmak sonucunuzu kontrol etmenizi sağlar."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 340\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"340\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"16\" y=\"12\" width=\"728\" height=\"36\" rx=\"10\" fill=\"#1e293b\"/><text x=\"380\" y=\"36\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#ffffff\">Dikey Öteleme: g(x) = x² + k</text><line x1=\"80\" y1=\"240\" x2=\"370\" y2=\"240\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"220\" y1=\"58\" x2=\"220\" y2=\"325\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"362\" y=\"232\" font-size=\"12\" fill=\"#64748b\">x</text><text x=\"206\" y=\"66\" font-size=\"12\" fill=\"#64748b\">y</text><path d=\"M120,75 Q220,325 320,75\" fill=\"none\" stroke=\"#059669\" stroke-width=\"3\"/><path d=\"M120,115 Q220,365 320,115\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-dasharray=\"7 4\"/><path d=\"M120,175 Q220,425 320,175\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"220\" cy=\"200\" r=\"5\" fill=\"#059669\"/><circle cx=\"220\" cy=\"240\" r=\"5\" fill=\"#2563eb\"/><circle cx=\"220\" cy=\"300\" r=\"5\" fill=\"#dc2626\"/><circle cx=\"150.7\" cy=\"240\" r=\"5\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"2\"/><circle cx=\"289.3\" cy=\"240\" r=\"5\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"326\" y=\"80\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\">x² + 2</text><text x=\"326\" y=\"120\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">x²</text><text x=\"326\" y=\"180\" font-size=\"12\" font-weight=\"700\" fill=\"#dc2626\">x² − 3</text><text x=\"228\" y=\"196\" font-size=\"11\" fill=\"#059669\">(0, 2)</text><text x=\"228\" y=\"318\" font-size=\"11\" fill=\"#dc2626\">(0, −3)</text><text x=\"92\" y=\"258\" font-size=\"10\" fill=\"#dc2626\">−karekök(3)</text><text x=\"292\" y=\"258\" font-size=\"10\" fill=\"#dc2626\">karekök(3)</text><rect x=\"400\" y=\"62\" width=\"340\" height=\"260\" rx=\"12\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"570\" y=\"88\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">Nokta dönüşümü: (x, y) → (x, y + k)</text><rect x=\"416\" y=\"102\" width=\"308\" height=\"58\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\"/><text x=\"570\" y=\"125\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">k &gt; 0: yukarı öteleme</text><text x=\"570\" y=\"146\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Tepe (0, k) eksenin üstünde, sıfır yok</text><rect x=\"416\" y=\"168\" width=\"308\" height=\"58\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\"/><text x=\"570\" y=\"191\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">k = 0: referans parabol</text><text x=\"570\" y=\"212\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Tepe (0, 0), tek sıfır x = 0</text><rect x=\"416\" y=\"234\" width=\"308\" height=\"74\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#dc2626\"/><text x=\"570\" y=\"257\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#b91c1c\">k küçük 0: aşağı öteleme</text><text x=\"570\" y=\"278\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Tepe eksenin altında, iki sıfır:</text><text x=\"570\" y=\"297\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">x = −karekök(−k) ve x = karekök(−k)</text></svg>"
+    },
+    {
+      "baslik": "Dikey Uzama, Daralma ve Yansıma: g(x) = a·x² ve g(x) = a·x² + k",
+      "metin": [
+        "Referans fonksiyonun görüntülerini sıfırdan farklı bir a sayısıyla çarparsak {koyu:g(x) = a · f(x) = a · {us:x|2}} fonksiyonunu elde ederiz. Grafikte her nokta (x, y) konumundan (x, a · y) konumuna gider. {uzunluk:a} > 1 ise görüntüler büyür ve parabol y eksenine yaklaşarak {koyu:daralır} (dikleşir); 0 < {uzunluk:a} < 1 ise görüntüler küçülür ve parabol {koyu:genişler} (yassılaşır). Örneğin x = 2 için {us:x|2} = 4 iken 2{us:x|2} = 8 ve {kesir:1|2}{us:x|2} = 2'dir. Tepe noktası her durumda (0, 0) noktasında kalır, çünkü a · 0 = 0'dır.",
+        "a < 0 olduğunda ise tüm pozitif görüntüler negatif olur; parabol x eksenine göre {koyu:yansır} ve kolları {koyu:aşağı} bakar. Bu durumda nitel özellikler tersine döner: görüntü kümesi {koyu:(−∞, 0]} olur, tepe noktası (0, 0) artık bir {koyu:maksimum noktasıdır}, maksimum değer 0'dır ve minimum değer yoktur. Artanlık-azalanlık da yer değiştirir: g(x) = −{us:x|2} fonksiyonu (−∞, 0] aralığında {koyu:artan}, [0, ∞) aralığında {koyu:azalandır}. Bunu ispatlamak için g({alt:x|2}) − g({alt:x|1}) = −({alt:x|2} − {alt:x|1})({alt:x|2} + {alt:x|1}) eşitliğinde başa gelen eksi işaretinin sonucu ters çevirdiğini görmek yeterlidir. Hangi a seçilirse seçilsin g(−x) = a · {us:(−x)|2} = g(x) olduğundan fonksiyon {koyu:çift} kalır.",
+        "İki dönüşümü birleştirebiliriz: önce a ile çarpıp sonra k ekleyerek {koyu:g(x) = a · {us:x|2} + k} elde ederiz. Örneğin g(x) = −2{us:x|2} + 8 fonksiyonunda referans parabol önce 2 kat daralıp ters çevrilir, sonra 8 birim yukarı ötelenir. Tepe noktası (0, 8) maksimum noktası, görüntü kümesi (−∞, 8] olur; −2{us:x|2} + 8 = 0 denkleminden {us:x|2} = 4, yani sıfırlar −2 ve 2 bulunur. Bu tür fonksiyonlar kemer, köprü ayağı ya da yukarı atılan bir topun yolu gibi {koyu:gerçek yaşam bağlamlarında} çok kullanışlıdır. Tepe noktasının yatay olarak kaydırıldığı g(x) = a · {us:(x − r)|2} + k biçimini ise gelecek hafta inceleyeceğiz."
+      ],
+      "tablo": {
+        "basliklar": [
+          "a Durumu",
+          "Örnek",
+          "Kolların Yönü",
+          "Görünüm",
+          "Ekstremum",
+          "Görüntü Kümesi"
+        ],
+        "satirlar": [
+          [
+            "a > 1",
+            "2{us:x|2}",
+            "Yukarı",
+            "Daralır (dikleşir)",
+            "Minimum 0",
+            "[0, ∞)"
+          ],
+          [
+            "0 < a < 1",
+            "{kesir:1|2}{us:x|2}",
+            "Yukarı",
+            "Genişler (yassılaşır)",
+            "Minimum 0",
+            "[0, ∞)"
+          ],
+          [
+            "a = −1",
+            "−{us:x|2}",
+            "Aşağı",
+            "x eksenine göre yansıma",
+            "Maksimum 0",
+            "(−∞, 0]"
+          ],
+          [
+            "a < −1",
+            "−3{us:x|2}",
+            "Aşağı",
+            "Yansıma ve daralma",
+            "Maksimum 0",
+            "(−∞, 0]"
+          ],
+          [
+            "a < 0, k > 0",
+            "−2{us:x|2} + 8",
+            "Aşağı",
+            "Yansıma, daralma, 8 birim yukarı",
+            "Maksimum 8",
+            "(−∞, 8]"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "a Katsayısının Etkisi",
+          "metin": "{koyu:a'nın işareti} kolların yönünü belirler: a > 0 ise yukarı (minimum var), a < 0 ise aşağı (maksimum var). {koyu:a'nın mutlak değeri} açıklığı belirler: {uzunluk:a} büyüdükçe parabol daralır, küçüldükçe genişler."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Nokta Dönüşümleriyle Hızlı Çizim",
+          "metin": "Referans parabolün (±1, 1), (±2, 4) noktalarını alıp ordinatları a ile çarpar, ardından k eklerseniz yeni parabolün noktalarını bulursunuz. g(x) = −2{us:x|2} + 8 için (2, 4) → (2, −8) → (2, 0) olur; bu nokta fonksiyonun sıfırıdır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 340\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"340\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"16\" y=\"12\" width=\"728\" height=\"36\" rx=\"10\" fill=\"#1e293b\"/><text x=\"380\" y=\"36\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#ffffff\">g(x) = a · x²: Daralma, Genişleme ve Yansıma</text><line x1=\"80\" y1=\"190\" x2=\"370\" y2=\"190\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"220\" y1=\"55\" x2=\"220\" y2=\"322\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"362\" y=\"182\" font-size=\"12\" fill=\"#64748b\">x</text><text x=\"206\" y=\"64\" font-size=\"12\" fill=\"#64748b\">y</text><path d=\"M150.7,70 Q220,310 289.3,70\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M124,74.8 Q220,305.2 316,74.8\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-dasharray=\"7 4\"/><path d=\"M100,100 Q220,280 340,100\" fill=\"none\" stroke=\"#059669\" stroke-width=\"3\"/><path d=\"M140,270 Q220,110 300,270\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><circle cx=\"220\" cy=\"190\" r=\"5\" fill=\"#1e293b\"/><text x=\"228\" y=\"208\" font-size=\"11\" fill=\"#1e293b\">T(0, 0)</text><rect x=\"400\" y=\"62\" width=\"340\" height=\"260\" rx=\"12\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"570\" y=\"88\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">Nokta dönüşümü: (x, y) → (x, a · y)</text><line x1=\"420\" y1=\"112\" x2=\"456\" y2=\"112\" stroke=\"#dc2626\" stroke-width=\"4\"/><text x=\"466\" y=\"117\" font-size=\"13\" fill=\"#1e293b\">2x²  (a = 2): daralma</text><line x1=\"420\" y1=\"140\" x2=\"456\" y2=\"140\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-dasharray=\"7 4\"/><text x=\"466\" y=\"145\" font-size=\"13\" fill=\"#1e293b\">x²  (a = 1): referans parabol</text><line x1=\"420\" y1=\"168\" x2=\"456\" y2=\"168\" stroke=\"#059669\" stroke-width=\"4\"/><text x=\"466\" y=\"173\" font-size=\"13\" fill=\"#1e293b\">0,5x²  (a = 0,5): genişleme</text><line x1=\"420\" y1=\"196\" x2=\"456\" y2=\"196\" stroke=\"#7c3aed\" stroke-width=\"4\"/><text x=\"466\" y=\"201\" font-size=\"13\" fill=\"#1e293b\">−x²  (a = −1): x eksenine göre yansıma</text><rect x=\"416\" y=\"220\" width=\"308\" height=\"88\" rx=\"10\" fill=\"#f5f3ff\" stroke=\"#7c3aed\"/><text x=\"570\" y=\"243\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#6d28d9\">a küçük 0 ise özellikler tersine döner</text><text x=\"570\" y=\"264\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Kollar aşağı, tepe noktası maksimum</text><text x=\"570\" y=\"284\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">(−∞, 0] artan, [0, ∞) azalan</text><text x=\"570\" y=\"302\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Görüntü kümesi (−∞, 0]</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "f: ℝ → ℝ, f(x) = −3x + 6 ve g: ℝ → ℝ, g(x) = {us:x|2} fonksiyonlarını sıfırları, artanlık-azalanlık, bire birlik ve teklik-çiftlik bakımından karşılaştırınız. Her iki fonksiyonun da pozitif değer aldığı x değerlerini bulunuz.",
+      "cevap": "{koyu:1. adım (f'nin özellikleri):} −3x + 6 = 0 → x = 2 tek sıfırdır. x'in katsayısı negatif olduğundan f ℝ'de azalandır; bu nedenle bire birdir. f(−x) = 3x + 6 ifadesi ne f(x)'e ne −f(x)'e eşit olduğundan f ne tek ne çifttir. İşaret: x < 2 iken f(x) > 0, x > 2 iken f(x) < 0.\n{koyu:2. adım (g'nin özellikleri):} {us:x|2} = 0 → x = 0 tek sıfırdır. g (−∞, 0] aralığında azalan, [0, ∞) aralığında artandır; g(−1) = g(1) olduğundan bire bir değildir. g(−x) = g(x) olduğundan çifttir. İşaret: x ≠ 0 iken g(x) > 0.\n{koyu:3. adım (ortak pozitiflik):} f için x < 2, g için x ≠ 0 olmalıdır. İki koşulu birlikte sağlayan değerler (−∞, 0) ∪ (0, 2) kümesidir.\n{koyu:Sonuç:} Her ikisinin tanım kümesi ℝ olsa da f doğrusal ve bire bir, g ise simetrik ve bire bir olmayan bir fonksiyondur.",
+      "ipucu": "Önce her fonksiyonun işaret tablosunu ayrı ayrı çıkarın, sonra koşulların kesişimini alın."
+    },
+    {
+      "soru": "f: [−2, 3] → ℝ, f(x) = {us:x|2} fonksiyonunun görüntü kümesini, maksimum ve minimum değerlerini bulunuz. Bu fonksiyon bire bir midir, çift midir?",
+      "cevap": "{koyu:1. adım:} Tanım aralığı [−2, 3] tepe noktasının apsisi olan 0'ı içerir. Fonksiyon [−2, 0] aralığında azalır: f(−2) = 4'ten f(0) = 0'a iner.\n{koyu:2. adım:} [0, 3] aralığında artar: f(0) = 0'dan f(3) = 9'a çıkar.\n{koyu:3. adım:} En küçük değer {koyu:0} (x = 0'da), en büyük değer {koyu:9} (x = 3'te) olur. Görüntü kümesi {koyu:[0, 9]} aralığıdır.\n{koyu:4. adım:} f(−1) = f(1) = 1 olduğundan fonksiyon bire bir değildir. Tanım kümesi 0'a göre simetrik olmadığı için (3 var, −3 yok) fonksiyon çift olarak nitelendirilemez.",
+      "ipucu": "Uç noktalara bakmadan önce aralığın tepe noktasını (x = 0) içerip içermediğini kontrol edin."
+    },
+    {
+      "soru": "f(x) = {us:x|2} için a) f(n + 1) − f(n) farkını genelleyerek f(50) − f(49) değerini bulunuz. b) f(m) = f(m + 6) eşitliğini sağlayan m sayısını bulunuz.",
+      "cevap": "{koyu:a)} f(n + 1) − f(n) = {us:(n + 1)|2} − {us:n|2} = {us:n|2} + 2n + 1 − {us:n|2} = 2n + 1 genellemesine ulaşılır. n = 49 için f(50) − f(49) = 2 · 49 + 1 = {koyu:99}. Kontrol: 2500 − 2401 = 99. ✓\n{koyu:b)} {us:m|2} = {us:(m + 6)|2} → {us:m|2} = {us:m|2} + 12m + 36 → 12m = −36 → {koyu:m = −3}.\nKontrol: f(−3) = 9 ve f(3) = 9. ✓ Bu sonuç, farklı iki sayının aynı görüntüye sahip olması için toplamlarının 0 olması gerektiğini (−3 + 3 = 0) doğrular; çünkü f(a) = f(b) ise (a − b)(a + b) = 0'dır.",
+      "ipucu": "İki kare farkı özdeşliğini kullanın: {us:a|2} − {us:b|2} = (a − b)(a + b)."
+    },
+    {
+      "soru": "g: ℝ → ℝ, g(x) = {us:x|2} − 9 fonksiyonunun tepe noktasını, görüntü kümesini, sıfırlarını ve işaretini inceleyiniz.",
+      "cevap": "{koyu:1. adım:} g(x) = f(x) + k biçiminde olup k = −9'dur. Referans parabol 9 birim aşağı ötelenmiştir; tepe noktası {koyu:T(0, −9)}.\n{koyu:2. adım:} Kollar yukarı baktığından minimum değer −9, görüntü kümesi {koyu:[−9, ∞)}.\n{koyu:3. adım:} g(x) = 0 → {us:x|2} = 9 → x = −3 veya x = 3. Sıfırlar {koyu:−3 ve 3}.\n{koyu:4. adım (işaret):} Tepe noktası eksenin altında olduğundan iki sıfır arasında grafik eksenin altındadır: x ∈ (−3, 3) için g(x) < 0; x < −3 veya x > 3 için g(x) > 0. Kontrol: g(0) = −9 < 0, g(4) = 7 > 0. ✓",
+      "ipucu": "Önce k değerinden tepe noktasını yazın; sıfırlar için {us:x|2} = 9 denklemini çözün."
+    },
+    {
+      "soru": "g(x) = a · {us:x|2} fonksiyonunun grafiği A(2, −12) noktasından geçmektedir. a sayısını bulup fonksiyonun nitel özelliklerini yazınız.",
+      "cevap": "{koyu:1. adım:} Nokta grafikte olduğundan g(2) = −12'dir: a · 4 = −12 → {koyu:a = −3}. g(x) = −3{us:x|2}.\n{koyu:2. adım:} a < 0 olduğundan kollar aşağı bakar; {uzunluk:a} = 3 > 1 olduğundan referans parabole göre daralmıştır.\n{koyu:3. adım:} Tepe noktası T(0, 0) bir {koyu:maksimum noktasıdır}; maksimum değer 0, minimum yoktur. Görüntü kümesi {koyu:(−∞, 0]}.\n{koyu:4. adım:} (−∞, 0] aralığında artan, [0, ∞) aralığında azalandır. Tek sıfırı x = 0'dır; x ≠ 0 için g(x) < 0'dır. g(−x) = g(x) olduğundan çifttir, bire bir değildir. Kontrol: g(−2) = −12 = g(2). ✓",
+      "ipucu": "Noktanın koordinatlarını kurala yerleştirip a'yı bulun; a'nın işareti kolların yönünü söyler."
+    },
+    {
+      "soru": "Bir parkın girişindeki kemerin iç kenarı, zemin x ekseni ve kemerin orta noktası y ekseni olacak şekilde h(x) = −{kesir:1|2}{us:x|2} + 8 (metre) fonksiyonuyla modellenmiştir. a) Kemerin en yüksek noktası kaç metredir? b) Kemerin zemindeki genişliği kaç metredir? c) 3 m genişliğinde ve 6 m yüksekliğindeki bir araç kemerin tam ortasından geçebilir mi?",
+      "cevap": "{koyu:a)} a = −{kesir:1|2} < 0 olduğundan tepe noktası maksimumdur: T(0, 8). En yüksek nokta {koyu:8 m}.\n{koyu:b)} h(x) = 0 → {kesir:1|2}{us:x|2} = 8 → {us:x|2} = 16 → x = −4 veya x = 4. Kemer zemine x = −4 ve x = 4'te değer; genişlik 4 − (−4) = {koyu:8 m}.\n{koyu:c)} Araç ortadan geçerken kenarları x = −1,5 ve x = 1,5'tedir. Fonksiyon çift olduğundan iki kenarda yükseklik aynıdır: h(1,5) = −{kesir:1|2} · 2,25 + 8 = −1,125 + 8 = 6,875 m. 6,875 > 6 olduğundan araç {koyu:geçebilir}; aracın en kritik noktaları kenarlarıdır ve orada bile yaklaşık 0,875 m boşluk kalır.",
+      "ipucu": "Genişlik için sıfırları, aracın geçişi için aracın kenarlarındaki (x = ±1,5) kemer yüksekliğini hesaplayın."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "f: ℝ → ℝ, f(x) = {us:x|2} fonksiyonu ile ilgili aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Görüntü kümesi ℝ'dir.",
+        "(−∞, 0] aralığında azalandır.",
+        "Grafiği orijine göre simetrik olduğundan tek fonksiyondur.",
+        "Farklı elemanların görüntüleri farklı olduğundan bire birdir."
+      ],
+      "dogru": 1,
+      "aciklama": "x negatif sayılardan 0'a doğru büyürken {us:x|2} küçülür (örneğin f(−3) = 9, f(−1) = 1), bu yüzden fonksiyon (−∞, 0] aralığında azalandır. Görüntü kümesi [0, ∞) olduğundan A yanlış; fonksiyon çifttir, C yanlış; f(−1) = f(1) olduğundan D yanlıştır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "g: ℝ → ℝ, g(x) = {us:x|2} + k fonksiyonunun grafiği x eksenini hiç kesmiyorsa k aşağıdakilerden hangisi olabilir?",
+      "secenekler": [
+        "−4",
+        "0",
+        "−1",
+        "5"
+      ],
+      "dogru": 3,
+      "aciklama": "Grafiğin x eksenini kesmemesi için {us:x|2} = −k denkleminin gerçek çözümü olmamalı, yani −k < 0, k > 0 olmalıdır. Seçeneklerden yalnız 5 pozitiftir. k = 0 ise grafik eksene teğet olur; k < 0 ise eksen iki noktada kesilir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "g: ℝ → ℝ, g(x) = −2{us:x|2} + 18 fonksiyonunun görüntü kümesi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "[18, ∞)",
+        "(−∞, 18]",
+        "[−18, ∞)",
+        "(−∞, −2]"
+      ],
+      "dogru": 1,
+      "aciklama": "a = −2 < 0 olduğundan kollar aşağı bakar ve tepe noktası T(0, 18) maksimum noktasıdır. Fonksiyon en çok 18 değerini alır, aşağı doğru sınırsız iner; görüntü kümesi (−∞, 18] aralığıdır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kuralı f(x) = {us:x|2} olan aşağıdaki fonksiyonlardan hangisi hem bire bir hem örtendir?",
+      "secenekler": [
+        "f: ℝ → ℝ",
+        "f: [0, ∞) → [0, ∞)",
+        "f: ℝ → [0, ∞)",
+        "f: [−1, ∞) → [0, ∞)"
+      ],
+      "dogru": 1,
+      "aciklama": "[0, ∞) aralığında fonksiyon sürekli artan olduğundan bire birdir ve görüntü kümesi [0, ∞) değer kümesine eşit olduğundan örtendir. A ve C'de f(−1) = f(1); D'de de −1 ve 1 tanım kümesinde olduğundan f(−1) = f(1) = 1 olur ve fonksiyon bire bir değildir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "f(x) = {us:x|2} fonksiyonunun görüntü kümesi [0, ∞) aralığıdır.",
+          "dogru": true,
+          "aciklama": "Hiçbir gerçek sayının karesi negatif değildir ve her negatif olmayan sayı bir sayının karesidir."
+        },
+        {
+          "metin": "g(x) = {us:x|2} + 5 fonksiyonunun iki farklı sıfırı vardır.",
+          "dogru": false,
+          "aciklama": "{us:x|2} = −5 denkleminin gerçek çözümü yoktur; tepe noktası (0, 5) eksenin üstünde olduğundan grafik x eksenini kesmez."
+        },
+        {
+          "metin": "g(x) = −4{us:x|2} fonksiyonunun grafiği kolları aşağı bakan bir paraboldür ve maksimum değeri 0'dır.",
+          "dogru": true,
+          "aciklama": "a = −4 < 0 olduğundan kollar aşağı bakar; tepe noktası T(0, 0) maksimum noktasıdır."
+        },
+        {
+          "metin": "f: [0, ∞) → [0, ∞), f(x) = {us:x|2} fonksiyonu bire bir ve örtendir.",
+          "dogru": true,
+          "aciklama": "Bu aralıkta fonksiyon sürekli artandır (bire bir) ve görüntü kümesi değer kümesine eşittir (örten)."
+        },
+        {
+          "metin": "Tek fonksiyonların hepsi bire birdir.",
+          "dogru": false,
+          "aciklama": "f(x) = {us:x|3} − x tek fonksiyondur ama f(−1) = f(0) = f(1) = 0 olduğundan bire bir değildir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki karesel fonksiyonları nitel özellikleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "g(x) = {us:x|2} + 3",
+          "Tepe noktası (0, 3), sıfırı yok, görüntü kümesi [3, ∞)"
+        ],
+        [
+          "g(x) = {us:x|2} − 4",
+          "Sıfırları −2 ve 2, minimum değeri −4"
+        ],
+        [
+          "g(x) = 3{us:x|2}",
+          "Referans parabole göre daralmış, minimum değeri 0"
+        ],
+        [
+          "g(x) = −{us:x|2}",
+          "Kolları aşağı bakan, maksimum değeri 0, görüntü kümesi (−∞, 0]"
+        ],
+        [
+          "g(x) = {kesir:1|2}{us:x|2}",
+          "Referans parabole göre genişlemiş, kolları yukarı bakan"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "f(x) = {us:x|2} fonksiyonunun grafiğine ___ denir.",
+          "cevap": "parabol"
+        },
+        {
+          "metin": "Parabolün simetri ekseni üzerindeki en alt ya da en üst noktasına ___ noktası denir.",
+          "cevap": "tepe"
+        },
+        {
+          "metin": "f(x) = {us:x|2} fonksiyonu f(−x) = f(x) eşitliğini sağladığı için ___ fonksiyondur.",
+          "cevap": "çift"
+        },
+        {
+          "metin": "g(x) = {us:x|2} + k fonksiyonunda k > 0 ise grafik, referans parabolün k birim ___ ötelenmiş hâlidir.",
+          "cevap": "yukarı"
+        },
+        {
+          "metin": "g(x) = a · {us:x|2} fonksiyonunda a < 0 ise fonksiyonun ___ değeri 0'dır.",
+          "cevap": "maksimum"
+        }
+      ],
+      "kelimeler": [
+        "parabol",
+        "tepe",
+        "çift",
+        "yukarı",
+        "maksimum"
+      ],
+      "fazla": [
+        "tek",
+        "minimum"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "g: ℝ → ℝ, g(x) = −{us:x|2} + 4 fonksiyonunun referans fonksiyondan nasıl elde edildiğini açıklayınız; tepe noktasını, görüntü kümesini, sıfırlarını, işaretini, artanlık-azalanlık aralıklarını ve bire birlik, çiftlik, örtenlik durumunu belirleyiniz.",
+      "ipuclari": [
+        "1. adım: Fonksiyonu a · f(x) + k biçiminde düşünün; a ve k değerlerini belirleyip grafikte hangi dönüşümlerin yapıldığını yazın.",
+        "2. adım: a'nın işaretinden kolların yönünü ve ekstremumun türünü, k'dan tepe noktasını ve görüntü kümesini bulun.",
+        "3. adım: g(x) = 0 denklemini çözerek sıfırları bulun; tepe noktasının eksene göre konumunu kullanarak işaret aralıklarını yazın.",
+        "4. adım: g(−x) hesaplayarak çiftliği kontrol edin; bire birlik ve örtenlik için sıfırlara ve görüntü kümesine bakın."
+      ],
+      "cevap": "{koyu:Dönüşüm:} a = −1, k = 4. Referans parabol x eksenine göre yansıtılır (kollar aşağı döner), sonra 4 birim yukarı ötelenir.\n{koyu:Tepe ve görüntü:} Tepe noktası T(0, 4) maksimum noktasıdır; maksimum değer 4, minimum yoktur. Görüntü kümesi (−∞, 4].\n{koyu:Sıfırlar:} −{us:x|2} + 4 = 0 → {us:x|2} = 4 → x = −2 veya x = 2.\n{koyu:İşaret:} Tepe eksenin üstünde ve kollar aşağı baktığından x ∈ (−2, 2) için g(x) > 0; x < −2 veya x > 2 için g(x) < 0. Kontrol: g(0) = 4 > 0, g(3) = −5 < 0.\n{koyu:Artanlık-azalanlık:} a < 0 olduğundan (−∞, 0] aralığında artan, [0, ∞) aralığında azalandır.\n{koyu:Eşleme özellikleri:} g(−x) = −{us:(−x)|2} + 4 = g(x) olduğundan çifttir; grafiği y eksenine göre simetriktir. g(−2) = g(2) = 0 olduğundan bire bir değildir. 4'ten büyük sayılar görüntü kümesinde olmadığından ℝ → ℝ olarak örten değildir (içine fonksiyondur)."
+    }
+  ]
+}

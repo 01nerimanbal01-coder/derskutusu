@@ -1,0 +1,578 @@
+{
+  "ad": "11-fizik-15",
+  "sinif": 11,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 15,
+  "tarih": "28 Aralık 2026-1 Ocak 2027",
+  "yayin_tarihi": "2026-12-28",
+  "unite": "Elektrik ve Manyetizma",
+  "konu": "Elektriksel Kuvvet ve Elektriksel Alan: Matematiksel Modelin Kurulması, Genellemeler ve Bileşke Alan",
+  "ciktilar": [
+    "FİZ.11.2.1. Elektrik yükleri arasındaki elektriksel kuvvetin matematiksel modeline yönelik tümevarımsal akıl yürütebilme.",
+    "FİZ.11.2.1.a-b. Elektriksel kuvvetin bağlı olduğu değişkenler arasındaki ilişkiyi ölçüm verilerinden yola çıkarak matematiksel olarak modeller ve bu model üzerinden genellemeler yapar.",
+    "FİZ.11.2.2. Elektriksel alanın matematiksel modeline yönelik tümevarımsal akıl yürütebilme.",
+    "FİZ.11.2.2.a-b. Elektrik yüklerinin oluşturduğu elektriksel alana ilişkin etmenler arasındaki ilişkiyi matematiksel olarak modeller ve birden fazla yük için genellemeler yapar."
+  ],
+  "giris": "Geçen hafta Coulomb Yasası'nı ve elektrik alan kavramını tanımıştık. Bu hafta işi bir adım öteye taşıyoruz: Elektriksel kuvvetin {koyu:matematiksel modelini} ölçüm verilerinden kendimiz kuracak, bu modeli grafikler, oranlar ve kütle çekim yasasıyla karşılaştırmalar üzerinden {koyu:genelleyeceğiz}. Ardından düzlemde dağılmış yüklerin bileşke kuvvetini bileşenlerle hesaplayacak, birden fazla yükün oluşturduğu {koyu:bileşke elektrik alanı} inceleyecek ve elektrik alana bırakılan yüklü parçacıkların nasıl ivmelendiğini keşfedeceğiz.",
+  "ozet": [
+    "{koyu:Tümevarım:} Değişken kontrolüyle yapılan ölçümler F ∝ q1, F ∝ q2 ve F ∝ {kesir:1|{us:d|2}} örüntülerini verir; bunlar birleşerek F = k·{kesir:{uzunluk:q1}·{uzunluk:q2}|{us:d|2}} modeline dönüşür.",
+    "{koyu:Orantı ve grafik:} {kesir:F'|F} = {kesir:q1'·q2'|q1·q2}·{kesir:{us:d|2}|{us:d'|2}} oranıyla k kullanmadan hesap yapılır; F–{kesir:1|{us:d|2}} grafiği eğimi k·q1·q2 olan bir doğrudur.",
+    "{koyu:Kütle çekimiyle karşılaştırma:} İki kuvvet de ters karedir; ancak elektriksel kuvvet itme de yapabilir, ortama bağlıdır ve hidrojen atomunda kütle çekiminden yaklaşık 2,3·{us:10|39} kat büyüktür.",
+    "{koyu:Bileşenler ve simetri:} Düzlemdeki kuvvetler x ve y bileşenlerine ayrılıp toplanır; düzgün çokgenin köşelerindeki eşit yükler merkezde sıfır bileşke kuvvet ve sıfır alan oluşturur.",
+    "{koyu:Bileşke alan:} Bir noktadaki elektrik alan her yükün alanının vektörel toplamıdır ve oraya konulan deneme yükünden bağımsızdır.",
+    "{koyu:Kuvvet ve ivme:} Alandaki yüke F = q·E kuvveti etki eder ve a = {kesir:q·E|m} ivmesi oluşur; yüklü damla q·E = m·g olduğunda dengede kalır."
+  ],
+  "bolumler": [
+    {
+      "baslik": "1. Ölçüm Verilerinden Coulomb Modeline: Tümevarımsal Akıl Yürütme",
+      "metin": [
+        "Fizikte bir yasaya çoğu zaman tek bir ölçümle değil, birbirine benzeyen çok sayıda gözlemden ortak bir örüntü çıkararak ulaşılır. Tek tek deney sonuçlarından genel bir kurala varan bu düşünme biçimine {koyu:tümevarımsal akıl yürütme} denir. Geçen hafta Coulomb Yasası'nı hazır bir bağıntı olarak tanımıştık; bu hafta aynı bağıntının ölçüm verilerinden adım adım nasıl kurulabileceğini, yani elektriksel kuvvetin {koyu:matematiksel modelini} kendimiz inşa etmeyi deneyeceğiz.",
+        "Elektriksel kuvveti etkileyebilecek değişkenler yüklerin büyüklükleri (q1, q2), yükler arası uzaklık (d) ve yüklerin bulunduğu ortamdır. Sağlıklı bir model için {koyu:değişken kontrolü} şarttır: Her deneyde yalnız bir değişken değiştirilir, diğerleri sabit tutulur. Uzaklık sabitken q1 iki katına çıkarıldığında kuvvet de iki katına çıkıyorsa F ile q1 arasında {koyu:doğru orantı} vardır; aynı durum q2 için de gözlenir. Yükler sabitken uzaklık iki katına çıkınca kuvvet dörtte bire, üç katına çıkınca dokuzda bire iniyorsa kuvvet uzaklığın karesiyle {koyu:ters orantılıdır}.",
+        "Bu üç ilişki birleştirildiğinde F ∝ {kesir:q1·q2|{us:d|2}} sonucuna ulaşılır. Orantıyı eşitliğe çevirmek için bir sabit gerekir: Her deneyde F·{us:d|2} çarpımı q1·q2 çarpımına bölündüğünde hep aynı sayı elde ediliyorsa bu sayı orantı sabitidir. Havada yapılan ölçümlerde bu sabit yaklaşık 9·{us:10|9} N·{us:m|2}/{us:C|2} çıkar ve {koyu:Coulomb sabiti (k)} olarak adlandırılır. Böylece model F = k·{kesir:{uzunluk:q1}·{uzunluk:q2}|{us:d|2}} biçimini alır. Aşağıdaki tabloda hava ortamında yapılmış beş ölçümün bu sürece nasıl yol gösterdiği görülmektedir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Deney",
+          "q1 (μC)",
+          "q2 (μC)",
+          "d (m)",
+          "Ölçülen F (N)",
+          "Çıkarım"
+        ],
+        "satirlar": [
+          [
+            "1",
+            "1",
+            "1",
+            "0,1",
+            "0,9",
+            "Başlangıç (referans) ölçümü"
+          ],
+          [
+            "2",
+            "2",
+            "1",
+            "0,1",
+            "1,8",
+            "q1 iki katı → F iki katı: F ∝ q1"
+          ],
+          [
+            "3",
+            "2",
+            "3",
+            "0,1",
+            "5,4",
+            "q2 üç katı (2. deneye göre) → F üç katı: F ∝ q2"
+          ],
+          [
+            "4",
+            "1",
+            "1",
+            "0,2",
+            "0,225",
+            "d iki katı → F dörtte bir: F ∝ {kesir:1|{us:d|2}}"
+          ],
+          [
+            "5",
+            "1",
+            "1",
+            "0,3",
+            "0,1",
+            "d üç katı → F dokuzda bir: ters kare ilişkisi doğrulanır"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Tümevarımsal Akıl Yürütme",
+          "metin": "Özel gözlemlerden (bu deneyde, şu deneyde...) her durumda geçerli olduğu düşünülen genel bir sonuca ulaşma yoludur. Coulomb modeli, sınırlı sayıda ölçümden yola çıkıp bütün noktasal yükler için geçerli bir genellemeye varmanın klasik örneğidir. Ancak tümevarımla elde edilen her genelleme yeni deneylerle sınanmaya her zaman açıktır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Sabiti Kontrol Etme Yöntemi",
+          "metin": "Bir veri tablosunun ters kare modeline uyup uymadığını anlamak için her satırda {kesir:F·{us:d|2}|q1·q2} oranını hesaplayın. Örneğin 1. deneyde {kesir:0,9·0,01|{us:10|-12}} = 9·{us:10|9} çıkar. Bütün satırlarda oran aynıysa veri modele uyuyordur; tablodaki beş deneyin beşinde de oran 9·{us:10|9} N·{us:m|2}/{us:C|2} dir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><defs><marker id=\"ok1\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#475569\"/></marker></defs><rect x=\"0\" y=\"0\" width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"32\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\">Tümevarım: Ölçümlerden Coulomb Modeline</text><rect x=\"20\" y=\"55\" width=\"160\" height=\"125\" rx=\"10\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/><text x=\"100\" y=\"82\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#075985\">1. Gözlem</text><text x=\"100\" y=\"110\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0c4a6e\">d sabit, q1 iki katı</text><text x=\"100\" y=\"130\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0c4a6e\">F de iki katı</text><text x=\"100\" y=\"155\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0369a1\">(0,9 N → 1,8 N)</text><rect x=\"205\" y=\"55\" width=\"160\" height=\"125\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"285\" y=\"82\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#92400e\">2. Gözlem</text><text x=\"285\" y=\"110\" text-anchor=\"middle\" font-size=\"12\" fill=\"#78350f\">q sabit, d iki katı</text><text x=\"285\" y=\"130\" text-anchor=\"middle\" font-size=\"12\" fill=\"#78350f\">F dörtte bir</text><text x=\"285\" y=\"155\" text-anchor=\"middle\" font-size=\"11\" fill=\"#b45309\">(0,9 N → 0,225 N)</text><rect x=\"390\" y=\"55\" width=\"160\" height=\"125\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"470\" y=\"82\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#166534\">3. Orantı</text><text x=\"470\" y=\"110\" text-anchor=\"middle\" font-size=\"12\" fill=\"#14532d\">F ∝ q1 · q2</text><text x=\"470\" y=\"130\" text-anchor=\"middle\" font-size=\"12\" fill=\"#14532d\">F ∝ 1 / d²</text><text x=\"470\" y=\"155\" text-anchor=\"middle\" font-size=\"11\" fill=\"#15803d\">(değişken kontrolü)</text><rect x=\"575\" y=\"55\" width=\"165\" height=\"125\" rx=\"10\" fill=\"#ede9fe\" stroke=\"#7c3aed\" stroke-width=\"2\"/><text x=\"657\" y=\"82\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#5b21b6\">4. Model</text><text x=\"657\" y=\"110\" text-anchor=\"middle\" font-size=\"12\" fill=\"#4c1d95\">F = k · q1 · q2 / d²</text><text x=\"657\" y=\"130\" text-anchor=\"middle\" font-size=\"12\" fill=\"#4c1d95\">k = 9·10⁹ N·m²/C²</text><text x=\"657\" y=\"155\" text-anchor=\"middle\" font-size=\"11\" fill=\"#6d28d9\">(hava ortamı)</text><line x1=\"182\" y1=\"117\" x2=\"202\" y2=\"117\" stroke=\"#475569\" stroke-width=\"2\" marker-end=\"url(#ok1)\"/><line x1=\"367\" y1=\"117\" x2=\"387\" y2=\"117\" stroke=\"#475569\" stroke-width=\"2\" marker-end=\"url(#ok1)\"/><line x1=\"552\" y1=\"117\" x2=\"572\" y2=\"117\" stroke=\"#475569\" stroke-width=\"2\" marker-end=\"url(#ok1)\"/><rect x=\"20\" y=\"200\" width=\"720\" height=\"80\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"380\" y=\"230\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">Genelleme sınaması: Her deney için F · d² / (q1 · q2) oranı hesaplanır.</text><text x=\"380\" y=\"256\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">Beş ölçümün beşinde de oran 9·10⁹ çıkıyorsa model veriye uyar; yeni deneylerle sınanmaya açıktır.</text></svg>"
+    },
+    {
+      "baslik": "2. Orantı Yöntemiyle Hesap ve Kuvvet Grafiklerinden Genelleme",
+      "metin": [
+        "Birçok soruda yüklerin ve uzaklıkların gerçek değerleri verilmez; yalnız 'iki katına çıkarılırsa', 'yarıya indirilirse' gibi değişiklikler söylenir. Bu durumda k sabitini hiç kullanmadan {koyu:orantı yöntemiyle} sonuca ulaşılır: {kesir:F'|F} = {kesir:q1'·q2'|q1·q2} · {kesir:{us:d|2}|{us:d'|2}} yazılır. Örneğin yüklerden biri üç katına çıkarılıp uzaklık da üç katına çıkarılırsa kuvvet 3 · {kesir:1|9} = {kesir:1|3} katına, yani {kesir:F|3} değerine iner. Bu yöntem modelin gücünü gösterir: Sabit ne olursa olsun değişkenler arasındaki ilişki korunur.",
+        "Modeli grafiklerle de genelleyebiliriz. Uzaklık sabitken {koyu:F–q grafiği} orijinden geçen bir doğrudur; bu doğrusal görünüm doğru orantının işaretidir. Yükler sabitken {koyu:F–d grafiği} ise uzaklık arttıkça hızla azalan bir eğri verir: d iki katına çıktığında kuvvet dörtte bire iner, eğri yatay eksene yaklaşır ama onu hiçbir zaman kesmez. Eğri biçimindeki bir grafikten orantının türünü doğrudan okumak zor olduğundan yatay eksene d yerine {kesir:1|{us:d|2}} yazılır; bu kez grafik yeniden orijinden geçen bir doğruya dönüşür. Bu doğrunun {koyu:eğimi} k·q1·q2 çarpımına eşittir; yani eğimden yükler veya Coulomb sabiti hesaplanabilir.",
+        "Modelden çıkarılabilecek genellemeler şunlardır: (1) Aynı yük çifti için F·{us:d|2} çarpımı sabittir. (2) Kuvvet hiçbir sonlu uzaklıkta tam olarak sıfır olmaz; yalnız ihmal edilebilecek kadar küçülür. (3) Model {koyu:noktasal yükler} için kurulmuştur; düzgün yüklü küreler birbirinden yeterince uzaksa uzaklık merkezler arasından ölçülerek aynı bağıntı kullanılabilir. (4) Kuvvetler etki-tepki çifti olduğundan yüklerden yalnız biri değiştirilse bile iki yüke etki eden kuvvetin büyüklüğü birlikte ve eşit olarak değişir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Yapılan Değişiklik",
+          "Kuvvet Çarpanı",
+          "Yeni Kuvvet"
+        ],
+        "satirlar": [
+          [
+            "q1 iki katına çıkarılır",
+            "2",
+            "2F"
+          ],
+          [
+            "q1 ve q2 iki katına çıkarılır",
+            "2 · 2 = 4",
+            "4F"
+          ],
+          [
+            "d iki katına çıkarılır",
+            "{kesir:1|4}",
+            "{kesir:F|4}"
+          ],
+          [
+            "d yarıya indirilir",
+            "4",
+            "4F"
+          ],
+          [
+            "q1 üç katı, d üç katı yapılır",
+            "3 · {kesir:1|9} = {kesir:1|3}",
+            "{kesir:F|3}"
+          ],
+          [
+            "q1 ve q2 iki katı, d iki katı yapılır",
+            "4 · {kesir:1|4} = 1",
+            "F (değişmez)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Orantı Yöntemi",
+          "metin": "Yeni kuvvet = eski kuvvet × (yük çarpanlarının çarpımı) × (uzaklık çarpanının karesinin tersi). Uzaklık n katına çıkarsa kuvvet {kesir:1|{us:n|2}} katına iner; uzaklık {kesir:1|n} katına inerse kuvvet {us:n|2} katına çıkar."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Grafiğin Biçimi Orantıyı Kanıtlamaz",
+          "metin": "F–d grafiğinin azalan bir eğri olması ters kare ilişkisini tek başına kanıtlamaz; F ∝ {kesir:1|d} ilişkisi de azalan bir eğri verirdi. Ters kare ilişkisini ayırt etmek için F–{kesir:1|{us:d|2}} grafiğinin orijinden geçen bir doğru olduğu gösterilmelidir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><defs><marker id=\"ok2\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#334155\"/></marker></defs><rect x=\"0\" y=\"0\" width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"32\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\">Elektriksel Kuvvet Modelinin Grafiklerle Genellenmesi</text><rect x=\"15\" y=\"48\" width=\"235\" height=\"240\" rx=\"10\" fill=\"#ffffff\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/><text x=\"132\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\">F – q (d sabit)</text><line x1=\"55\" y1=\"240\" x2=\"55\" y2=\"85\" stroke=\"#334155\" stroke-width=\"1.5\" marker-end=\"url(#ok2)\"/><line x1=\"55\" y1=\"240\" x2=\"235\" y2=\"240\" stroke=\"#334155\" stroke-width=\"1.5\" marker-end=\"url(#ok2)\"/><line x1=\"55\" y1=\"240\" x2=\"215\" y2=\"100\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"40\" y=\"95\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">F</text><text x=\"228\" y=\"257\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">q</text><text x=\"132\" y=\"278\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e40af\">Doğru orantı: orijinden geçen doğru</text><rect x=\"262\" y=\"48\" width=\"235\" height=\"240\" rx=\"10\" fill=\"#ffffff\" stroke=\"#fca5a5\" stroke-width=\"1.5\"/><text x=\"380\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#991b1b\">F – d (q sabit)</text><line x1=\"302\" y1=\"240\" x2=\"302\" y2=\"85\" stroke=\"#334155\" stroke-width=\"1.5\" marker-end=\"url(#ok2)\"/><line x1=\"302\" y1=\"240\" x2=\"482\" y2=\"240\" stroke=\"#334155\" stroke-width=\"1.5\" marker-end=\"url(#ok2)\"/><polyline points=\"342,100 352,150 362,178 382,205 402,218 422,224 462,231 478,233\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"342\" cy=\"100\" r=\"4\" fill=\"#991b1b\"/><circle cx=\"382\" cy=\"205\" r=\"4\" fill=\"#991b1b\"/><text x=\"350\" y=\"96\" font-size=\"11\" fill=\"#991b1b\">d → F</text><text x=\"390\" y=\"198\" font-size=\"11\" fill=\"#991b1b\">2d → F/4</text><text x=\"287\" y=\"95\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">F</text><text x=\"475\" y=\"257\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">d</text><text x=\"380\" y=\"278\" text-anchor=\"middle\" font-size=\"11\" fill=\"#b91c1c\">Ters kare: hızla azalan eğri</text><rect x=\"509\" y=\"48\" width=\"236\" height=\"240\" rx=\"10\" fill=\"#ffffff\" stroke=\"#86efac\" stroke-width=\"1.5\"/><text x=\"627\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#166534\">F – 1/d² (q sabit)</text><line x1=\"549\" y1=\"240\" x2=\"549\" y2=\"85\" stroke=\"#334155\" stroke-width=\"1.5\" marker-end=\"url(#ok2)\"/><line x1=\"549\" y1=\"240\" x2=\"729\" y2=\"240\" stroke=\"#334155\" stroke-width=\"1.5\" marker-end=\"url(#ok2)\"/><line x1=\"549\" y1=\"240\" x2=\"709\" y2=\"100\" stroke=\"#16a34a\" stroke-width=\"3\"/><text x=\"534\" y=\"95\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">F</text><text x=\"700\" y=\"257\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">1/d²</text><text x=\"627\" y=\"278\" text-anchor=\"middle\" font-size=\"11\" fill=\"#15803d\">Doğrusal: eğim = k · q1 · q2</text></svg>"
+    },
+    {
+      "baslik": "3. Elektriksel Kuvvet ile Kütle Çekim Kuvvetinin Karşılaştırılması",
+      "metin": [
+        "Coulomb modelini kurduktan sonra onu daha önce tanıdığımız Newton'un evrensel kütle çekim yasasıyla (F = G·{kesir:m1·m2|{us:d|2}}) karşılaştırmak güçlü bir genellemeye kapı açar. İki model de {koyu:ters kare} biçimindedir: Kuvvet uzaklığın karesiyle ters orantılıdır, iki cismi birleştiren doğru boyunca etki eder ve birbirine eşit büyüklükte, zıt yönlü bir {koyu:etki-tepki çifti} oluşturur. Bu benzerlik, doğadaki uzaktan etkili kuvvetlerin ortak bir matematiksel dili olduğunu düşündürür.",
+        "İki model arasında önemli farklar da vardır. Kütle çekim kuvvetinin kaynağı kütle, elektriksel kuvvetin kaynağı elektrik yüküdür. Kütle hep pozitif olduğundan kütle çekimi {koyu:yalnız çekme} yapar; elektrik yükü ise pozitif ya da negatif olabildiğinden elektriksel kuvvet {koyu:itme veya çekme} şeklinde ortaya çıkar. Ayrıca Coulomb sabiti yüklerin bulunduğu ortama bağlıdır; kütle çekim sabiti G = 6,67·{us:10|-11} N·{us:m|2}/{us:kg|2} ise ortamdan etkilenmez.",
+        "Büyüklük farkı ise şaşırtıcıdır. Hidrojen atomunda proton ile elektron arasındaki elektriksel kuvvet, aralarındaki kütle çekim kuvvetinin yaklaşık 2,3·{us:10|39} katıdır. Peki günlük hayatta neden çoğunlukla kütle çekimini hissederiz? Çünkü madde büyük ölçüde {koyu:elektrikçe nötrdür}: Pozitif ve negatif yükler etkilerini neredeyse tamamen birbirine götürür. Kütle ise negatif olamadığından kütle çekimi büyük cisimlerde birikerek gezegen ölçeğinde baskın hâle gelir. Buna karşılık atomları ve molekülleri bir arada tutan, sürtünmeyi, yüzeylerin tepki kuvvetini ve ipteki gerilmeyi oluşturan etkilerin kökeni elektrikseldir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Özellik",
+          "Elektriksel Kuvvet",
+          "Kütle Çekim Kuvveti"
+        ],
+        "satirlar": [
+          [
+            "Bağıntı",
+            "F = k·{kesir:{uzunluk:q1}·{uzunluk:q2}|{us:d|2}}",
+            "F = G·{kesir:m1·m2|{us:d|2}}"
+          ],
+          [
+            "Kaynağı",
+            "Elektrik yükü",
+            "Kütle"
+          ],
+          [
+            "Türü",
+            "İtme veya çekme",
+            "Yalnız çekme"
+          ],
+          [
+            "Sabit",
+            "k = 9·{us:10|9} N·{us:m|2}/{us:C|2} (hava)",
+            "G = 6,67·{us:10|-11} N·{us:m|2}/{us:kg|2}"
+          ],
+          [
+            "Ortama bağlılık",
+            "Bağlıdır; ortam değişince k değişir",
+            "Bağlı değildir"
+          ],
+          [
+            "Uzaklıkla değişim",
+            "Ters kare ({kesir:1|{us:d|2}})",
+            "Ters kare ({kesir:1|{us:d|2}})"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Hidrojen Atomunda Kuvvet Oranı",
+          "metin": "Proton ve elektronun yükleri e = 1,6·{us:10|-19} C, kütleleri {alt:m|p} = 1,67·{us:10|-27} kg ve {alt:m|e} = 9,1·{us:10|-31} kg alınırsa {kesir:{alt:F|e}|{alt:F|g}} = {kesir:k·{us:e|2}|G·{alt:m|e}·{alt:m|p}} ≈ {kesir:2,3·{us:10|-28}|1,0·{us:10|-67}} ≈ 2,3·{us:10|39} bulunur. Oranda d sadeleşir; yani sonuç uzaklıktan bağımsızdır."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Ortamın Etkisi",
+          "metin": "Coulomb sabitinin 9·{us:10|9} N·{us:m|2}/{us:C|2} değeri boşluk ve hava içindir. Su gibi bir ortamda yükler arasındaki kuvvet havadakine göre yaklaşık 80 kat küçülür. Tuz gibi iyonik maddelerin suda kolayca çözünmesinin nedenlerinden biri, suyun iyonlar arasındaki çekim kuvvetini bu şekilde zayıflatmasıdır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"32\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\">Elektriksel Kuvvet ve Kütle Çekim Kuvveti</text><rect x=\"20\" y=\"55\" width=\"280\" height=\"170\" rx=\"10\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"160\" y=\"82\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#991b1b\">Elektriksel Kuvvet</text><text x=\"40\" y=\"110\" font-size=\"12\" fill=\"#7f1d1d\">F = k · q1 · q2 / d²</text><text x=\"40\" y=\"134\" font-size=\"12\" fill=\"#7f1d1d\">Kaynak: elektrik yükü</text><text x=\"40\" y=\"158\" font-size=\"12\" fill=\"#7f1d1d\">Türü: itme veya çekme</text><text x=\"40\" y=\"182\" font-size=\"12\" fill=\"#7f1d1d\">k = 9·10⁹ N·m²/C²</text><text x=\"40\" y=\"206\" font-size=\"12\" fill=\"#7f1d1d\">Ortama bağlıdır</text><rect x=\"460\" y=\"55\" width=\"280\" height=\"170\" rx=\"10\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/><text x=\"600\" y=\"82\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#075985\">Kütle Çekim Kuvveti</text><text x=\"480\" y=\"110\" font-size=\"12\" fill=\"#0c4a6e\">F = G · m1 · m2 / d²</text><text x=\"480\" y=\"134\" font-size=\"12\" fill=\"#0c4a6e\">Kaynak: kütle</text><text x=\"480\" y=\"158\" font-size=\"12\" fill=\"#0c4a6e\">Türü: yalnız çekme</text><text x=\"480\" y=\"182\" font-size=\"12\" fill=\"#0c4a6e\">G = 6,67·10⁻¹¹ N·m²/kg²</text><text x=\"480\" y=\"206\" font-size=\"12\" fill=\"#0c4a6e\">Ortamdan bağımsızdır</text><circle cx=\"380\" cy=\"120\" r=\"55\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><circle cx=\"380\" cy=\"120\" r=\"14\" fill=\"#dc2626\"/><text x=\"380\" y=\"125\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#ffffff\">+</text><circle cx=\"435\" cy=\"120\" r=\"8\" fill=\"#2563eb\"/><text x=\"435\" y=\"124\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#ffffff\">−</text><text x=\"380\" y=\"196\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">Ortak: ters kare</text><text x=\"380\" y=\"214\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">2d → F dörtte bir</text><rect x=\"20\" y=\"240\" width=\"720\" height=\"45\" rx=\"10\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/><text x=\"380\" y=\"268\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#713f12\">Hidrojen atomunda: F(elektrik) / F(kütle çekim) ≈ 2,3·10³⁹ (uzaklıktan bağımsız)</text></svg>"
+    },
+    {
+      "baslik": "4. Düzlemde Dağılmış Yüklerde Bileşenlerle Bileşke Kuvvet ve Simetri",
+      "metin": [
+        "Geçen hafta bileşke kuvveti paralelkenar yöntemiyle ve 60°, 90°, 120° gibi özel açılar için pratik kurallarla bulmuştuk. Yükler düzlemde gelişigüzel dağıldığında en güvenilir yol {koyu:bileşenlere ayırma} yöntemidir. Önce her kuvvetin yönü itme-çekme kuralına göre belirlenir ve büyüklüğü Coulomb modeliyle hesaplanır. Sonra her kuvvet vektörü yatay (x) ve düşey (y) bileşenlerine ayrılır: x eksenine θ açısı yapan bir kuvvet için {alt:F|x} = F·cos θ ve {alt:F|y} = F·sin θ olur. Son olarak aynı eksendeki bileşenler, eksenin pozitif ve negatif yönleri dikkate alınarak toplanır.",
+        "Toplam bileşenler bulunduğunda bileşke kuvvetin büyüklüğü {alt:F|net} = {kok:{us:(Σ{alt:F|x})|2} + {us:(Σ{alt:F|y})|2}} bağıntısıyla, yönü ise tan α = {kesir:Σ{alt:F|y}|Σ{alt:F|x}} bağıntısıyla bulunur. Fizik problemlerinde sık karşılaşılan 3-4-5 dik üçgeninde sin 37° = 0,6 ve cos 37° = 0,8 alınır. Yükler bir dik üçgenin köşelerinde bulunduğunda dik kenarlar boyunca etki eden iki kuvvet zaten birbirine diktir; bu durumda bileşke doğrudan Pisagor bağıntısıyla hesaplanır.",
+        "{koyu:Simetri}, modelden yapılabilecek en güçlü genellemelerden biridir. Bir karenin dört köşesine eşit büyüklükte ve aynı işaretli yükler konduğunda merkezdeki deneme yüküne etki eden kuvvetler karşılıklı olarak birbirini götürür ve bileşke kuvvet sıfır olur. Aynı sonuç eşkenar üçgenin, düzgün altıgenin ya da herhangi bir düzgün çokgenin köşelerindeki eşit yükler için de geçerlidir. Çünkü bu düzenlerde her kuvvetin, merkeze göre simetrik konumdaki yüklerden gelen kuvvetlerle dengelenen bir karşılığı vardır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Adım",
+          "Yapılan İşlem",
+          "Dikkat Edilecek Nokta"
+        ],
+        "satirlar": [
+          [
+            "1",
+            "Her yükün incelenen yüke uyguladığı kuvvetin yönünü çiz",
+            "Aynı cins yükler iter, zıt cins yükler çeker"
+          ],
+          [
+            "2",
+            "Büyüklükleri F = k·{kesir:{uzunluk:q1}·{uzunluk:q2}|{us:d|2}} ile hesapla",
+            "Formüle yüklerin mutlak değeri yazılır"
+          ],
+          [
+            "3",
+            "Kuvvetleri x ve y bileşenlerine ayır",
+            "{alt:F|x} = F·cos θ, {alt:F|y} = F·sin θ"
+          ],
+          [
+            "4",
+            "Aynı eksendeki bileşenleri topla",
+            "Ters yönlü bileşenler çıkarılır"
+          ],
+          [
+            "5",
+            "{alt:F|net} = {kok:{us:(Σ{alt:F|x})|2} + {us:(Σ{alt:F|y})|2}} hesapla",
+            "Yön için tan α = {kesir:Σ{alt:F|y}|Σ{alt:F|x}}"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Eksik Yük Yöntemi",
+          "metin": "Düzgün bir çokgenin köşelerine eşit yükler konulduğunda merkezdeki bileşke kuvvet sıfırdır. Köşelerden birindeki yük kaldırılırsa merkezdeki bileşke kuvvet, kaldırılan yükün tek başına oluşturacağı kuvvete eşit büyüklükte ve ona zıt yönlü olur. Böylece uzun vektör toplamlarına girmeden sonuç bulunur."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "İşaret ile Yönü Karıştırmayın",
+          "metin": "Coulomb bağıntısına yüklerin işareti yazılmaz; işaret yalnız kuvvetin itme mi çekme mi olduğunu belirler. Bileşen toplarken kullanılan + ve − işaretleri ise yükün işareti değil, kuvvet bileşeninin koordinat eksenindeki yönüdür."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><defs><marker id=\"kr4\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#dc2626\"/></marker><marker id=\"mv4\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#2563eb\"/></marker><marker id=\"ys4\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#16a34a\"/></marker></defs><rect x=\"0\" y=\"0\" width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\">Bileşenlerle Bileşke Kuvvet: Dik Konumlu İki Yük</text><line x1=\"180\" y1=\"230\" x2=\"530\" y2=\"230\" stroke=\"#cbd5e1\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/><line x1=\"380\" y1=\"275\" x2=\"380\" y2=\"50\" stroke=\"#cbd5e1\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/><circle cx=\"260\" cy=\"230\" r=\"16\" fill=\"#dc2626\"/><text x=\"260\" y=\"235\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#ffffff\">+</text><text x=\"260\" y=\"264\" text-anchor=\"middle\" font-size=\"12\" fill=\"#991b1b\">q1 = +3 μC</text><circle cx=\"380\" cy=\"230\" r=\"14\" fill=\"#f97316\"/><text x=\"380\" y=\"235\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\">+</text><text x=\"380\" y=\"264\" text-anchor=\"middle\" font-size=\"12\" fill=\"#9a3412\">q0 = +2 μC</text><circle cx=\"380\" cy=\"70\" r=\"16\" fill=\"#2563eb\"/><text x=\"380\" y=\"75\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#ffffff\">−</text><text x=\"402\" y=\"66\" font-size=\"12\" fill=\"#1e3a8a\">q2 = −4 μC</text><text x=\"320\" y=\"220\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">0,3 m</text><text x=\"370\" y=\"110\" text-anchor=\"end\" font-size=\"11\" fill=\"#475569\">0,4 m</text><line x1=\"500\" y1=\"230\" x2=\"500\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\"/><line x1=\"380\" y1=\"140\" x2=\"500\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\"/><line x1=\"394\" y1=\"230\" x2=\"498\" y2=\"230\" stroke=\"#dc2626\" stroke-width=\"3\" marker-end=\"url(#kr4)\"/><text x=\"460\" y=\"218\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">F1 = 0,6 N</text><line x1=\"380\" y1=\"216\" x2=\"380\" y2=\"143\" stroke=\"#2563eb\" stroke-width=\"3\" marker-end=\"url(#mv4)\"/><text x=\"388\" y=\"175\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563eb\">F2 = 0,45 N</text><line x1=\"390\" y1=\"222\" x2=\"497\" y2=\"142\" stroke=\"#16a34a\" stroke-width=\"3\" marker-end=\"url(#ys4)\"/><text x=\"470\" y=\"130\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">Fnet = 0,75 N</text><text x=\"418\" y=\"224\" font-size=\"12\" fill=\"#15803d\">θ</text><rect x=\"545\" y=\"60\" width=\"200\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"645\" y=\"84\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">Çözüm Adımları</text><text x=\"557\" y=\"110\" font-size=\"12\" fill=\"#991b1b\">F1 = 0,6 N (+x yönü)</text><text x=\"557\" y=\"134\" font-size=\"12\" fill=\"#1e3a8a\">F2 = 0,45 N (+y yönü)</text><text x=\"557\" y=\"158\" font-size=\"12\" fill=\"#334155\">ΣFx = 0,6 N</text><text x=\"557\" y=\"182\" font-size=\"12\" fill=\"#334155\">ΣFy = 0,45 N</text><text x=\"557\" y=\"206\" font-size=\"11\" fill=\"#334155\">Fnet = karekök(0,6² + 0,45²)</text><text x=\"557\" y=\"230\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">Fnet = 0,75 N</text><text x=\"557\" y=\"254\" font-size=\"12\" fill=\"#334155\">tan θ = 0,75 → θ = 37°</text></svg>"
+    },
+    {
+      "baslik": "5. Birden Fazla Yükün Bir Noktada Oluşturduğu Bileşke Elektrik Alan",
+      "metin": [
+        "Elektrik alan, E = {kesir:F|q0} tanımı gereği birim pozitif yüke düşen kuvvettir. Coulomb modelinde F, deneme yükü q0 ile doğru orantılı olduğundan bu oranda q0 sadeleşir ve noktasal yük için E = k·{kesir:{uzunluk:q}|{us:d|2}} kalır. Buradan çok önemli bir genelleme çıkar: Bir noktadaki elektrik alan, oraya konulan {koyu:deneme yükünden bağımsızdır}; yalnız alanı oluşturan kaynak yüke ve o yükten uzaklığa bağlıdır. Deneme yükü iki katına çıkarılırsa ona etki eden kuvvet iki katına çıkar, ama oran yani alan değişmez.",
+        "Ortamda birden fazla yük varsa bir noktadaki {koyu:bileşke elektrik alan}, her yükün o noktada tek başına oluşturduğu alan vektörlerinin vektörel toplamıdır ({koyu:süperpozisyon ilkesi}). Her alanın yönü, o noktaya +1 C konulmuş gibi düşünülerek bulunur: Pozitif yükün alanı yükten dışarı, negatif yükün alanı yüke doğrudur. Örneğin aralarında d uzaklık bulunan eşit +q ve +q yüklerinin tam orta noktasında iki alan eşit büyüklükte ve zıt yönlü olduğundan bileşke alan sıfırdır. Aynı noktada yüklerden biri −q olsaydı iki alan da −q yüküne doğru yönelir ve toplanırdı: Her biri k·{kesir:q|{us:(d/2)|2}} = {kesir:4k·q|{us:d|2}} olduğundan bileşke alan {kesir:8k·q|{us:d|2}} olur.",
+        "Bu örneklerden genellemeler çıkarabiliriz. Eşit ve aynı işaretli iki yükün orta dikmesi üzerindeki her noktada alan, dikme doğrultusunda yönelir; çünkü yükleri birleştiren doğrultudaki bileşenler birbirini götürür. Eşit ve zıt işaretli iki yükün orta dikmesi üzerinde ise alan, yükleri birleştiren doğruya paralel ve negatif yüke doğrudur. Bileşke alan bir kez bulunduğunda o noktaya konulacak her yükün kuvveti ayrı ayrı hesap yapmadan F = q·E ile bulunur; elektrik alan modelinin asıl kolaylığı buradadır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Yük Düzeni",
+          "İncelenen Nokta",
+          "Bileşke Elektrik Alan"
+        ],
+        "satirlar": [
+          [
+            "+q ve +q (aralarında d)",
+            "Orta nokta",
+            "0"
+          ],
+          [
+            "+q ve −q (aralarında d)",
+            "Orta nokta",
+            "{kesir:8k·q|{us:d|2}}, −q yükü yönünde"
+          ],
+          [
+            "+q ve +4q (aralarında d)",
+            "Orta nokta",
+            "{kesir:12k·q|{us:d|2}}, +q yüküne doğru"
+          ],
+          [
+            "Karenin köşelerinde dört eşit +q",
+            "Karenin merkezi",
+            "0"
+          ],
+          [
+            "Eşkenar üçgenin köşelerinde üç eşit +q",
+            "Üçgenin ağırlık merkezi",
+            "0"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Alan Deneme Yükünden Bağımsızdır",
+          "metin": "E = {kesir:F|q0} oranında q0 sadeleştiği için elektrik alan yalnız kaynak yüklere ve konuma bağlıdır. Deneme yükü değiştirilince değişen alan değil, o yüke etki eden F = q0·E kuvvetidir."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Kuvvetle Alanın Yönü Farkı",
+          "metin": "Bileşke alanı bulurken yön daima +1 C deneme yüküne göre belirlenir. Bulunan noktaya pozitif bir yük konursa kuvvet alanla aynı yönlü, negatif bir yük konursa alana zıt yönlü olur."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><defs><marker id=\"kr5\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#dc2626\"/></marker><marker id=\"mv5\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#2563eb\"/></marker></defs><rect x=\"0\" y=\"0\" width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\">Bileşke Elektrik Alan: Orta Noktada İki Durum</text><rect x=\"15\" y=\"50\" width=\"355\" height=\"235\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">Zıt işaretli eşit yükler</text><line x1=\"83\" y1=\"150\" x2=\"302\" y2=\"150\" stroke=\"#cbd5e1\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/><circle cx=\"65\" cy=\"150\" r=\"18\" fill=\"#dc2626\"/><text x=\"65\" y=\"156\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#ffffff\">+q</text><circle cx=\"320\" cy=\"150\" r=\"18\" fill=\"#2563eb\"/><text x=\"320\" y=\"156\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#ffffff\">−q</text><circle cx=\"192\" cy=\"150\" r=\"5\" fill=\"#0f172a\"/><text x=\"192\" y=\"138\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">P</text><text x=\"128\" y=\"140\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">d/2</text><text x=\"256\" y=\"140\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">d/2</text><line x1=\"192\" y1=\"175\" x2=\"262\" y2=\"175\" stroke=\"#dc2626\" stroke-width=\"3\" marker-end=\"url(#kr5)\"/><text x=\"272\" y=\"179\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">E1</text><line x1=\"192\" y1=\"198\" x2=\"262\" y2=\"198\" stroke=\"#2563eb\" stroke-width=\"3\" marker-end=\"url(#mv5)\"/><text x=\"272\" y=\"202\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">E2</text><text x=\"192\" y=\"240\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">Her biri: E = 4·k·q / d²</text><text x=\"192\" y=\"264\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\">E(P) = 8·k·q / d² (−q yönünde)</text><rect x=\"390\" y=\"50\" width=\"355\" height=\"235\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"567\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">Aynı işaretli eşit yükler</text><line x1=\"458\" y1=\"150\" x2=\"677\" y2=\"150\" stroke=\"#cbd5e1\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/><circle cx=\"440\" cy=\"150\" r=\"18\" fill=\"#dc2626\"/><text x=\"440\" y=\"156\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#ffffff\">+q</text><circle cx=\"695\" cy=\"150\" r=\"18\" fill=\"#dc2626\"/><text x=\"695\" y=\"156\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#ffffff\">+q</text><circle cx=\"567\" cy=\"150\" r=\"5\" fill=\"#0f172a\"/><text x=\"567\" y=\"138\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">P</text><line x1=\"567\" y1=\"175\" x2=\"637\" y2=\"175\" stroke=\"#dc2626\" stroke-width=\"3\" marker-end=\"url(#kr5)\"/><text x=\"647\" y=\"179\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">E1</text><line x1=\"567\" y1=\"198\" x2=\"497\" y2=\"198\" stroke=\"#dc2626\" stroke-width=\"3\" marker-end=\"url(#kr5)\"/><text x=\"487\" y=\"202\" text-anchor=\"end\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">E2</text><text x=\"567\" y=\"240\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">E1 = E2 ve zıt yönlü</text><text x=\"567\" y=\"264\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#991b1b\">E(P) = 0 (alan sıfır)</text></svg>"
+    },
+    {
+      "baslik": "6. Elektrik Alan Modelinden Genellemeler: Yüklü Parçacığın Kuvveti, İvmesi ve Dengesi",
+      "metin": [
+        "Noktasal yükün alan modeli E = k·{kesir:{uzunluk:q}|{us:d|2}} de tıpkı kuvvet modeli gibi tümevarımla genellenebilir: Uzaklık sabitken alan, kaynak yükle {koyu:doğru orantılıdır}; kaynak yük sabitken alan uzaklığın karesiyle {koyu:ters orantılıdır}. Dolayısıyla aynı yük için E·{us:d|2} çarpımı sabittir; uzaklık iki katına çıkınca alan dörtte bire, yarıya inince dört katına çıkar. E–d grafiği F–d grafiği gibi hızla azalan bir eğri, E–{kesir:1|{us:d|2}} grafiği ise eğimi k·{uzunluk:q} olan bir doğrudur.",
+        "Alanın bilindiği bir bölgeye q yüklü ve m kütleli bir parçacık bırakıldığında ona F = {uzunluk:q}·E büyüklüğünde kuvvet etki eder. Newton'un ikinci yasasından parçacığın ivmesi a = {kesir:{uzunluk:q}·E|m} bulunur. Büyüklüğü ve yönü her noktada aynı olan alana {koyu:düzgün elektrik alan} denir; böyle bir alanda kuvvet sabit olduğundan parçacık sabit ivmeli hareket yapar. Aynı düzgün alana bırakılan proton ve elektronun yük büyüklükleri eşit olduğundan kuvvetleri de eşit büyüklüktedir; ancak proton alan yönünde, elektron alana zıt yönde itilir. Elektronun kütlesi protonunkinin yaklaşık 1836'da biri olduğundan elektronun ivmesi yaklaşık 1836 kat büyüktür.",
+        "Yüklü bir parçacığa elektriksel kuvvetin yanında ağırlığı da etki eder. Küçük yüklü bir yağ damlası, düşey bir elektrik alanda elektriksel kuvvet yukarı yönlü ve büyüklüğü ağırlığa eşit olacak şekilde ayarlanırsa havada asılı kalır: {koyu:{uzunluk:q}·E = m·g}. Bu denge koşulundan damlanın yükü q = {kesir:m·g|E} olarak hesaplanır. 20. yüzyılın başında Robert Millikan bu düşünceye dayanan deneylerle ölçtüğü bütün yüklerin {koyu:temel yük} e = 1,6·{us:10|-19} C'nin tam katları olduğunu göstermiştir: q = n·e (n tam sayı). Bu sonuç, elektrik yükünün parçalı (kuantumlu) olduğuna dair güçlü bir genellemedir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Parçacık",
+          "Yük",
+          "Kütle",
+          "Kuvvetin Yönü",
+          "İvme Büyüklüğü"
+        ],
+        "satirlar": [
+          [
+            "Proton",
+            "+1,6·{us:10|-19} C",
+            "1,67·{us:10|-27} kg",
+            "Elektrik alanla aynı yönde",
+            "{kesir:e·E|{alt:m|p}}"
+          ],
+          [
+            "Elektron",
+            "−1,6·{us:10|-19} C",
+            "9,1·{us:10|-31} kg",
+            "Elektrik alana zıt yönde",
+            "{kesir:e·E|{alt:m|e}} (protonunkinin yaklaşık 1836 katı)"
+          ],
+          [
+            "Alfa parçacığı",
+            "+3,2·{us:10|-19} C",
+            "≈ 6,64·{us:10|-27} kg",
+            "Elektrik alanla aynı yönde",
+            "Protonunkinin yaklaşık yarısı"
+          ],
+          [
+            "Nötron",
+            "0",
+            "≈ 1,67·{us:10|-27} kg",
+            "Elektriksel kuvvet yok",
+            "0"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Yağ Damlası Deneyi",
+          "metin": "Millikan, iki yatay metal levha arasında oluşturduğu düşey elektrik alanda çok küçük yağ damlalarını gözlemledi. Damlayı asılı tutan alan değerinden yükü hesapladı ve tüm sonuçların yaklaşık 1,6·{us:10|-19} C'nin tam katları olduğunu buldu. Bu deney temel yükün değerini ilk kez duyarlı biçimde ortaya koymuştur."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Ağırlık Ne Zaman İhmal Edilir?",
+          "metin": "Elektron ve proton gibi parçacıklarda ağırlık, elektriksel kuvvetin yanında çok küçük kalır. Örneğin E = 1000 N/C alanda protona etki eden elektriksel kuvvet 1,6·{us:10|-16} N iken ağırlığı yaklaşık 1,67·{us:10|-26} N'dur; bu yüzden ağırlık ihmal edilir. Yağ damlası gibi görece büyük kütleli cisimlerde ise ağırlık mutlaka hesaba katılır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><defs><marker id=\"gr6\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#94a3b8\"/></marker><marker id=\"kr6\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#dc2626\"/></marker><marker id=\"mv6\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#2563eb\"/></marker><marker id=\"ys6\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#16a34a\"/></marker><marker id=\"sy6\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#0f172a\"/></marker></defs><rect x=\"0\" y=\"0\" width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\">Düzgün Elektrik Alanda Yüklü Parçacıklar</text><rect x=\"15\" y=\"50\" width=\"455\" height=\"235\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><text x=\"242\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">Düzgün E (sağa doğru)</text><line x1=\"40\" y1=\"85\" x2=\"445\" y2=\"85\" stroke=\"#94a3b8\" stroke-width=\"1.5\" marker-end=\"url(#gr6)\"/><line x1=\"40\" y1=\"125\" x2=\"445\" y2=\"125\" stroke=\"#94a3b8\" stroke-width=\"1.5\" marker-end=\"url(#gr6)\"/><line x1=\"40\" y1=\"165\" x2=\"445\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"1.5\" marker-end=\"url(#gr6)\"/><line x1=\"40\" y1=\"205\" x2=\"445\" y2=\"205\" stroke=\"#94a3b8\" stroke-width=\"1.5\" marker-end=\"url(#gr6)\"/><circle cx=\"150\" cy=\"145\" r=\"12\" fill=\"#dc2626\"/><text x=\"150\" y=\"150\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\">+</text><line x1=\"164\" y1=\"145\" x2=\"250\" y2=\"145\" stroke=\"#dc2626\" stroke-width=\"3\" marker-end=\"url(#kr6)\"/><text x=\"258\" y=\"149\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">F = e·E (proton)</text><circle cx=\"330\" cy=\"185\" r=\"9\" fill=\"#2563eb\"/><text x=\"330\" y=\"189\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#ffffff\">−</text><line x1=\"319\" y1=\"185\" x2=\"240\" y2=\"185\" stroke=\"#2563eb\" stroke-width=\"3\" marker-end=\"url(#mv6)\"/><text x=\"232\" y=\"189\" text-anchor=\"end\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563eb\">(elektron) F = e·E</text><text x=\"242\" y=\"245\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e3a8a\">Kuvvetler eşit büyüklükte, zıt yönlü: a = q·E / m</text><text x=\"242\" y=\"268\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">Elektronun ivmesi protonunkinin yaklaşık 1836 katı</text><rect x=\"485\" y=\"50\" width=\"260\" height=\"235\" rx=\"10\" fill=\"#fefce8\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/><text x=\"615\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#713f12\">Yüklü Damlanın Dengesi</text><line x1=\"510\" y1=\"90\" x2=\"510\" y2=\"230\" stroke=\"#94a3b8\" stroke-width=\"1.5\" marker-end=\"url(#gr6)\"/><line x1=\"720\" y1=\"90\" x2=\"720\" y2=\"230\" stroke=\"#94a3b8\" stroke-width=\"1.5\" marker-end=\"url(#gr6)\"/><text x=\"528\" y=\"100\" font-size=\"11\" fill=\"#475569\">E (aşağı)</text><circle cx=\"615\" cy=\"160\" r=\"14\" fill=\"#2563eb\"/><text x=\"615\" y=\"165\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#ffffff\">−</text><line x1=\"615\" y1=\"145\" x2=\"615\" y2=\"98\" stroke=\"#16a34a\" stroke-width=\"3\" marker-end=\"url(#ys6)\"/><text x=\"628\" y=\"118\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">q·E</text><line x1=\"615\" y1=\"175\" x2=\"615\" y2=\"222\" stroke=\"#0f172a\" stroke-width=\"3\" marker-end=\"url(#sy6)\"/><text x=\"628\" y=\"212\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">m·g</text><text x=\"615\" y=\"252\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#713f12\">Denge: q · E = m · g</text><text x=\"615\" y=\"273\" text-anchor=\"middle\" font-size=\"12\" fill=\"#854d0e\">q = n · e (n tam sayı)</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Aralarında d uzaklığı bulunan iki noktasal yük birbirine 8 N büyüklüğünde elektriksel kuvvet uygulamaktadır. Yüklerden biri 2 katına, diğeri 3 katına çıkarılır ve aralarındaki uzaklık da 2 katına çıkarılırsa yeni kuvvet kaç N olur?",
+      "cevap": "1. adım: Orantı yöntemini yazalım: {kesir:F'|F} = {kesir:q1'·q2'|q1·q2} · {kesir:{us:d|2}|{us:d'|2}}.\n2. adım: Yük çarpanlarının çarpımı 2 · 3 = 6'dır.\n3. adım: Uzaklık 2 katına çıktığından uzaklık çarpanı {kesir:{us:d|2}|{us:(2d)|2}} = {kesir:1|4} olur.\n4. adım: {kesir:F'|F} = 6 · {kesir:1|4} = {kesir:3|2} → F' = {kesir:3|2} · 8 = 12 N bulunur.",
+      "ipucu": "k sabitine ve gerçek yük değerlerine gerek yoktur; yalnız çarpanları kullanın ve uzaklık çarpanının karesini almayı unutmayın."
+    },
+    {
+      "soru": "Hidrojen atomunda proton ile elektron arasındaki ortalama uzaklık yaklaşık d = 5,3·{us:10|-11} m'dir. Bu iki parçacık arasındaki elektriksel çekim kuvvetinin büyüklüğü yaklaşık kaç N'dur? (e = 1,6·{us:10|-19} C, k = 9·{us:10|9} N·{us:m|2}/{us:C|2})",
+      "cevap": "1. adım: Coulomb modeli F = k·{kesir:{us:e|2}|{us:d|2}} biçimindedir; çünkü iki yükün de büyüklüğü e'dir.\n2. adım: {us:e|2} = (1,6·{us:10|-19}) · (1,6·{us:10|-19}) = 2,56·{us:10|-38} {us:C|2}. k·{us:e|2} = 9·{us:10|9} · 2,56·{us:10|-38} = 2,304·{us:10|-28} N·{us:m|2}.\n3. adım: {us:d|2} = (5,3·{us:10|-11}) · (5,3·{us:10|-11}) = 28,09·{us:10|-22} = 2,809·{us:10|-21} {us:m|2}.\n4. adım: F = {kesir:2,304·{us:10|-28}|2,809·{us:10|-21}} ≈ 0,82·{us:10|-7} = 8,2·{us:10|-8} N bulunur. Yükler zıt işaretli olduğundan kuvvet çekme kuvvetidir.",
+      "ipucu": "Önce payı (k·{us:e|2}) ve paydayı ({us:d|2}) ayrı ayrı hesaplayın; üslü sayıları bölerken üsleri çıkarın."
+    },
+    {
+      "soru": "Koordinat sisteminin orijinindeki q0 = +2 μC yükünün 0,3 m solunda (x ekseni üzerinde) q1 = +3 μC, 0,4 m yukarısında (y ekseni üzerinde) q2 = −4 μC yükü sabitlenmiştir. q0 yüküne etki eden bileşke elektriksel kuvvetin büyüklüğünü ve yönünü bulunuz. (k = 9·{us:10|9} N·{us:m|2}/{us:C|2})",
+      "cevap": "1. adım (F1): q1 ve q0 aynı işaretli olduğundan q1, q0'ı iter; kuvvet +x yönündedir. F1 = 9·{us:10|9} · {kesir:3·{us:10|-6} · 2·{us:10|-6}|0,09} = {kesir:54·{us:10|-3}|0,09} = 0,6 N.\n2. adım (F2): q2 negatif, q0 pozitif olduğundan q2, q0'ı kendine çeker; kuvvet +y yönündedir. F2 = 9·{us:10|9} · {kesir:4·{us:10|-6} · 2·{us:10|-6}|0,16} = {kesir:72·{us:10|-3}|0,16} = 0,45 N.\n3. adım: Kuvvetler birbirine dik olduğundan {alt:F|net} = {kok:{us:0,6|2} + {us:0,45|2}} = {kok:0,36 + 0,2025} = {kok:0,5625} = 0,75 N.\n4. adım: tan θ = {kesir:0,45|0,6} = 0,75 olduğundan θ = 37°; bileşke kuvvet +x ekseniyle 37° açı yapacak biçimde sağa ve yukarı doğrudur.",
+      "ipucu": "Önce her kuvvetin yönünü itme-çekme kuralıyla çizin; kuvvetler dik çıkıyorsa Pisagor bağıntısını kullanın."
+    },
+    {
+      "soru": "Aralarında 0,6 m uzaklık bulunan q1 = +4·{us:10|-9} C ve q2 = −4·{us:10|-9} C noktasal yüklerini birleştiren doğru parçasının tam orta noktası P'deki bileşke elektrik alanın büyüklüğünü ve yönünü bulunuz. (k = 9·{us:10|9} N·{us:m|2}/{us:C|2})",
+      "cevap": "1. adım: P noktası her iki yükten 0,3 m uzaktadır; {us:d|2} = 0,09 {us:m|2}.\n2. adım: q1'in alanı: {alt:E|1} = 9·{us:10|9} · {kesir:4·{us:10|-9}|0,09} = {kesir:36|0,09} = 400 N/C. Pozitif yük olduğundan yön q1'den dışarı, yani q2'ye doğrudur.\n3. adım: q2'nin alanı da aynı büyüklükte, {alt:E|2} = 400 N/C'dur. Negatif yük olduğundan yön q2'ye doğrudur.\n4. adım: İki alan aynı yönlü olduğundan toplanır: {alt:E|P} = 400 + 400 = 800 N/C; yönü negatif yük q2'ye doğrudur.",
+      "ipucu": "P noktasına +1 C konduğunu düşünün: Pozitif yük onu iter, negatif yük çeker; ikisi de aynı yöne işaret eder."
+    },
+    {
+      "soru": "Bir P noktasının 0,3 m batısında q1 = +3·{us:10|-9} C, 0,3 m güneyinde q2 = +4·{us:10|-9} C noktasal yükleri bulunmaktadır. P noktasındaki bileşke elektrik alanın büyüklüğü kaç N/C'dur? (k = 9·{us:10|9} N·{us:m|2}/{us:C|2})",
+      "cevap": "1. adım: {alt:E|1} = 9·{us:10|9} · {kesir:3·{us:10|-9}|0,09} = {kesir:27|0,09} = 300 N/C. q1 pozitif ve batıda olduğundan alan doğuya doğrudur.\n2. adım: {alt:E|2} = 9·{us:10|9} · {kesir:4·{us:10|-9}|0,09} = {kesir:36|0,09} = 400 N/C. q2 pozitif ve güneyde olduğundan alan kuzeye doğrudur.\n3. adım: Alanlar birbirine diktir: {alt:E|P} = {kok:{us:300|2} + {us:400|2}} = {kok:90000 + 160000} = {kok:250000} = 500 N/C.\n4. adım: Yön: tan α = {kesir:400|300} = {kesir:4|3} olduğundan alan doğu yönüyle 53° açı yaparak kuzeydoğuya doğrudur.",
+      "ipucu": "300-400-500 üçlüsü 3-4-5 dik üçgeninin 100 katıdır; bu, karekök hesabını kolaylaştırır."
+    },
+    {
+      "soru": "Kütlesi m = 4,8·{us:10|-15} kg olan negatif yüklü bir yağ damlası, büyüklüğü E = 5·{us:10|4} N/C ve yönü aşağı doğru olan düzgün elektrik alanda havada asılı durmaktadır. Damlanın yükünü ve fazladan taşıdığı elektron sayısını bulunuz. (g = 10 m/{us:s|2}, e = 1,6·{us:10|-19} C)",
+      "cevap": "1. adım: Damla negatif yüklü olduğundan elektriksel kuvvet alana zıt, yani yukarı doğrudur; ağırlık aşağı doğrudur.\n2. adım: Denge koşulu {uzunluk:q}·E = m·g yazılır: {uzunluk:q} = {kesir:m·g|E} = {kesir:4,8·{us:10|-15} · 10|5·{us:10|4}} = {kesir:4,8·{us:10|-14}|5·{us:10|4}} = 0,96·{us:10|-18} = 9,6·{us:10|-19} C.\n3. adım: Elektron sayısı n = {kesir:{uzunluk:q}|e} = {kesir:9,6·{us:10|-19}|1,6·{us:10|-19}} = 6 bulunur.\n4. adım: Damlanın yükü q = −9,6·{us:10|-19} C'dur; damla 6 fazla elektron taşımaktadır.",
+      "ipucu": "Asılı durmak net kuvvetin sıfır olması demektir; elektriksel kuvveti ağırlığa eşitleyin."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Aralarında d uzaklığı bulunan +q ve +q noktasal yükleri birbirine F büyüklüğünde kuvvet uygulamaktadır. Yüklerin her biri 2q yapılıp aralarındaki uzaklık 4d'ye çıkarılırsa yeni kuvvetin büyüklüğü kaç F olur?",
+      "secenekler": [
+        "{kesir:F|4}",
+        "{kesir:F|2}",
+        "F",
+        "4F"
+      ],
+      "dogru": 0,
+      "aciklama": "Yük çarpanlarının çarpımı 2·2 = 4, uzaklık çarpanı {kesir:1|{us:4|2}} = {kesir:1|16} olduğundan yeni kuvvet 4·{kesir:1|16}·F = {kesir:F|4} olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "İki noktasal yükün büyüklükleri sabit tutularak aralarındaki uzaklık değiştiriliyor ve kuvvet ölçülüyor. Elektriksel kuvvet (F) aşağıdaki niceliklerden hangisine karşı grafiğe geçirilirse orijinden geçen bir doğru elde edilir?",
+      "secenekler": [
+        "d",
+        "{us:d|2}",
+        "{kesir:1|d}",
+        "{kesir:1|{us:d|2}}"
+      ],
+      "dogru": 3,
+      "aciklama": "F = k·{kesir:{uzunluk:q1}·{uzunluk:q2}|{us:d|2}} olduğundan F ile {kesir:1|{us:d|2}} doğru orantılıdır; bu grafik eğimi k·q1·q2 olan, orijinden geçen bir doğrudur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir proton ve bir elektron aynı düzgün elektrik alana ayrı ayrı bırakılıyor. Bu parçacıklarla ilgili aşağıdakilerden hangisi doğrudur? (Ağırlıklar ihmal edilecektir.)",
+      "secenekler": [
+        "Kuvvetleri ve ivmeleri eşit büyüklüktedir.",
+        "Kuvvetleri eşit büyüklükte ve zıt yönlüdür; elektronun ivmesi daha büyüktür.",
+        "Protona etki eden kuvvet daha büyüktür; ivmeleri eşittir.",
+        "Her ikisi de elektrik alanla aynı yönde ivmelenir."
+      ],
+      "dogru": 1,
+      "aciklama": "Yük büyüklükleri eşit olduğundan F = e·E kuvvetleri eşittir; proton alan yönünde, elektron alana zıt yönde itilir. a = {kesir:F|m} olduğundan kütlesi çok küçük olan elektronun ivmesi daha büyüktür."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aralarında 2d uzaklık bulunan +q ve −q noktasal yüklerini birleştiren doğru parçasının orta noktası K'deki bileşke elektrik alanın büyüklüğü aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "0",
+        "{kesir:k·q|{us:d|2}}",
+        "{kesir:2k·q|{us:d|2}}",
+        "{kesir:4k·q|{us:d|2}}"
+      ],
+      "dogru": 2,
+      "aciklama": "K noktası her iki yükten d uzaktadır; her yükün alanı {kesir:k·q|{us:d|2}} büyüklüğündedir ve ikisi de −q yüküne doğru yöneldiğinden toplanır: {alt:E|K} = {kesir:2k·q|{us:d|2}}."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Yükler arası uzaklık sabitken elektriksel kuvvet–yük (F–q) grafiği orijinden geçen bir doğrudur.",
+          "dogru": true,
+          "aciklama": "Doğrudur; uzaklık sabitken F ile q doğru orantılıdır."
+        },
+        {
+          "metin": "F–d grafiğinin azalan bir eğri olması, kuvvetin uzaklığın karesiyle ters orantılı olduğunu tek başına kanıtlar.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; F ∝ {kesir:1|d} ilişkisi de azalan bir eğri verir. Ters kare ilişkisi F–{kesir:1|{us:d|2}} grafiğinin doğrusal olmasıyla gösterilir."
+        },
+        {
+          "metin": "Proton ile elektron arasındaki elektriksel kuvvet, aralarındaki kütle çekim kuvvetinden çok daha büyüktür.",
+          "dogru": true,
+          "aciklama": "Doğrudur; oran yaklaşık 2,3·{us:10|39} kadardır."
+        },
+        {
+          "metin": "Bir noktadaki elektrik alan, oraya konulan deneme yükü iki katına çıkarılınca iki katına çıkar.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; iki katına çıkan deneme yüküne etki eden kuvvettir. Elektrik alan deneme yükünden bağımsızdır."
+        },
+        {
+          "metin": "Bir karenin dört köşesinde eşit büyüklükte ve aynı işaretli yükler varsa karenin merkezindeki bileşke elektrik alan sıfırdır.",
+          "dogru": true,
+          "aciklama": "Doğrudur; karşılıklı köşelerdeki yüklerin alanları eşit büyüklükte ve zıt yönlü olduğundan birbirini götürür."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Soldaki kavram veya durumları sağdaki uygun açıklamalarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Tümevarımsal akıl yürütme",
+          "Tek tek ölçümlerden genel bir kurala ulaşma"
+        ],
+        [
+          "F–{kesir:1|{us:d|2}} grafiğinin eğimi",
+          "k·q1·q2"
+        ],
+        [
+          "Elektriksel kuvvetin kütle çekiminden farkı",
+          "İtme de yapabilmesi ve ortama bağlı olması"
+        ],
+        [
+          "Süperpozisyon ilkesi",
+          "Bileşke alan, her yükün alanının vektörel toplamıdır"
+        ],
+        [
+          "Elektrik alanda asılı duran yüklü damla",
+          "{uzunluk:q}·E = m·g"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Tek tek deney sonuçlarından genel bir kurala ulaşan akıl yürütmeye ___ akıl yürütme denir.",
+          "cevap": "tümevarımsal"
+        },
+        {
+          "metin": "Yükler sabitken F–{kesir:1|{us:d|2}} grafiği orijinden geçen bir ___ olur.",
+          "cevap": "doğru"
+        },
+        {
+          "metin": "Bir noktadaki elektrik alan, oraya konulan deneme yükünün büyüklüğünden ___.",
+          "cevap": "bağımsızdır"
+        },
+        {
+          "metin": "Aynı düzgün elektrik alana bırakılan proton ve elektrondan ivmesi daha büyük olan parçacık ___ olur.",
+          "cevap": "elektron"
+        },
+        {
+          "metin": "Eşit büyüklükte ve aynı işaretli iki noktasal yükün tam orta noktasında bileşke elektrik alan ___ olur.",
+          "cevap": "sıfır"
+        }
+      ],
+      "kelimeler": [
+        "tümevarımsal",
+        "doğru",
+        "bağımsızdır",
+        "elektron",
+        "sıfır"
+      ],
+      "fazla": [
+        "tümdengelimsel",
+        "proton"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Kenar uzunluğu a = 0,3 m olan bir ABCD karesinin A, B ve C köşelerinde +1·{us:10|-9} C, D köşesinde −1·{us:10|-9} C noktasal yükleri bulunmaktadır. Karenin merkezi O'daki bileşke elektrik alanın büyüklüğünü ve yönünü adım adım bulunuz. (k = 9·{us:10|9} N·{us:m|2}/{us:C|2})",
+      "ipuclari": [
+        "1. adım: Her köşenin merkeze uzaklığı köşegenin yarısıdır; bu uzaklığın karesini {us:a|2} cinsinden yazın.",
+        "2. adım: Bir köşedeki yükün merkezde oluşturduğu alanın büyüklüğünü hesaplayın; dört yükün alanları eşit büyüklüktedir.",
+        "3. adım: Karşılıklı köşe çiftlerini (A-C ve B-D) ayrı ayrı inceleyin: Hangi çiftin alanları birbirini götürür, hangisininki toplanır?",
+        "4. adım: Kalan alanları toplayarak bileşke alanın büyüklüğünü ve yönünü belirleyin."
+      ],
+      "cevap": "1. adım: Köşegen a·{kok:2} olduğundan her köşenin merkeze uzaklığı {kesir:a·{kok:2}|2}, bu uzaklığın karesi ise {kesir:{us:a|2}|2} = {kesir:0,09|2} = 0,045 {us:m|2} olur.\n2. adım: Bir yükün merkezdeki alanı {alt:E|0} = 9·{us:10|9} · {kesir:1·{us:10|-9}|0,045} = {kesir:9|0,045} = 200 N/C'dur.\n3. adım: A ve C köşelerindeki eşit pozitif yüklerin alanları eşit büyüklükte ve zıt yönlü olduğundan birbirini götürür. B'deki +q yükünün alanı B'den uzaklaşacak biçimde, yani D'ye doğrudur; D'deki −q yükünün alanı da D'ye doğrudur. Bu iki alan aynı yönlüdür.\n4. adım: {alt:E|O} = 200 + 200 = 400 N/C bulunur; yönü merkezden D köşesine doğrudur. Bu sonuç {kesir:4k·q|{us:a|2}} genel ifadesiyle de uyumludur: 4 · 9·{us:10|9} · {kesir:{us:10|-9}|0,09} = 400 N/C."
+    }
+  ]
+}
