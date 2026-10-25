@@ -49,7 +49,10 @@
         !i.hazirla && !i.dosya && !i.goruntule && i.baglanti ? el('a', { sinif: 'dugme ana', href: i.baglanti, target: '_blank', rel: 'noopener' }, 'Aç', simge('ok')) : null));
   };
   const kartlar = (liste, dersler, secenek) => el('div', { sinif: 'agac-kartlar' }, liste.map((i) => kart(i, dersler, secenek)));
-  const yeniler = (liste) => [...liste].sort((a, b) => String(b.tarih || '').localeCompare(String(a.tarih || '')));
+  // Haftası gelmemiş (gelecek tarihli) kayıtlar "son eklenenler"de haftası gelince görünür (ortak.js yayinda)
+  const yeniler = (liste) => liste.filter((i) => typeof yayinda !== 'function' || yayinda(i)).sort((a, b) => String(b.tarih || '').localeCompare(String(a.tarih || '')));
+  // Ders simgesi (kesif.js); eski önbellekte yoksa baş harf
+  const dersSimgesi = (d, ad, buyuk) => el('span', { sinif: `agac-ders-harf${buyuk ? ' buyuk' : ''}`, 'aria-hidden': 'true' }, K().subjectIcon ? K().subjectIcon(d) : ilkHarf(ad));
 
   // Kitle süzgeci: çalışma kâğıdı iki dalda da (dersler.json "turler" eşlemesi)
   const kitleUyar = (dersler) => {
@@ -57,13 +60,14 @@
     return (i) => (i.kitle || 'ogrenci') === KITLE || turKitle[i.tur] === KITLE;
   };
 
-  // Bu haftanın numarası (planın hafta başlangıç tarihlerinden)
+  // Bu haftanın numarası (planın hafta başlangıç tarihlerinden; ortak.js haftaBul: yerel saat, hafta sonu gelecek hafta)
   const buHafta = (haftalar) => {
-    const bugun = new Date().toISOString().slice(0, 10);
-    let no = null;
-    for (const [n, h] of Object.entries(haftalar || {})) if (h.bas && h.bas <= bugun && (no == null || Number(n) > no)) no = Number(n);
-    return no;
+    const b = typeof haftaBul === 'function' ? haftaBul(haftalar) : null;
+    return b && b.durum !== 'sonra' ? b : null;
   };
+  // Etiket ortak.js HAFTA_ETIKET'ten; "Bu hafta" dışındaki durumlarda hafta numarası da yazılır (ör. "Yeni hafta · 7. hafta")
+  const buHaftaEtiket = (b) => (typeof HAFTA_ETIKET === 'object' && HAFTA_ETIKET[b.durum]) || 'Bu hafta';
+  const buHaftaRozet = (b) => (b.durum === 'hafta' ? 'Bu hafta' : `${buHaftaEtiket(b)} · ${b.no}. hafta`);
   const haftaMetni = (h) => {
     if (!h?.length) return '';
     const s = [...h].sort((a, b) => a - b);
@@ -207,6 +211,7 @@
       el('button', { sinif: 'dugme ana', type: 'submit' }, simge('mercek'), 'Ara'));
     yerles(
       basBolum([{ ad: 'Öğrenci' }], 'Öğrenci', 'Merhaba! Hangi sınıftasın?', 'Sınıfını seç; derslerine, ünitelere ve haftanın konu anlatımlarına ulaş.', arama),
+      typeof sonBakilan === 'object' ? sonBakilan.bolum() : null,
       bolum('', ...sinifIzgarasi(dersler, (n) => adres({ sinif: n }), (n) => {
         const d = [...dersler.siniflar[n], ...(dersler.secmeli?.[n] || [])];
         const c = ogr.filter((i) => Number(i.sinif) === n).length;
@@ -227,7 +232,7 @@
       const say = (t) => ic.filter((i) => i.tur === t).length;
       const ozet = [say('Konu anlatımı') && sayiYaz(say('Konu anlatımı'), 'konu anlatımı'), say('Çalışma kâğıdı') && sayiYaz(say('Çalışma kâğıdı'), 'çalışma kâğıdı'), say('Ders kitabı') && 'ders kitabı'].filter(Boolean);
       return el('a', { sinif: 'agac-ders', href: adres({ sinif: n, ders: d }), 'data-renk': K().subjectColor(d) },
-        el('span', { sinif: 'agac-ders-harf', 'aria-hidden': 'true' }, ilkHarf(ad)),
+        dersSimgesi(d, ad),
         el('span', { sinif: 'agac-ders-govde' }, el('strong', {}, ad),
           el('small', {}, ag ? `${ag.unite} ünite · ${ag.konu} konu` : 'Konular hazırlanıyor'),
           el('span', { sinif: 'agac-ders-icerik' }, ozet.length ? ozet.join(' · ') : 'İçerikler hazırlanıyor')),
@@ -261,8 +266,9 @@
       return;
     }
     const { konular, disarida } = konuyaBagla(agac, haftalik);
-    const simdi = buHafta(agac.haftalar);
-    if (konuKodu) return ogrenciKonu({ dersler }, n, d, ad, renk, agac, konular, konuKodu, dersYol, sinifYol, dersDuzeyi, simdi, yz);
+    const buH = buHafta(agac.haftalar);
+    const simdi = buH?.no ?? null;
+    if (konuKodu) return ogrenciKonu({ dersler }, n, d, ad, renk, agac, konular, konuKodu, dersYol, sinifYol, dersDuzeyi, simdi, yz, buH);
     document.title = `${n}. Sınıf ${ad}: Üniteler ve Konular · Ders Kutusu`;
     const icerikSay = konular.reduce((t, k) => t + k.icerik.length, 0) + disarida.length;
     const kaynaklar = dersDuzeyi.map((i) => el('a', { sinif: 'agac-kaynak', href: yol(i.goruntule || i.dosya || i.baglanti || '#'), 'data-renk': K().category(i.tur).color },
@@ -276,7 +282,7 @@
         el('span', { sinif: 'agac-konu-govde' }, el('strong', {}, ayni ? 'Ünitenin konuları' : k.ad),
           el('small', {}, [haftaMetni(k.haftalar), tarihMetni(k.haftalar, agac.haftalar)].filter(Boolean).join(' · '))),
         el('span', { sinif: 'agac-konu-turler' },
-          buKonu === k ? el('span', { sinif: 'agac-rozet bu-hafta' }, 'Bu hafta') : null,
+          buKonu === k ? el('span', { sinif: 'agac-rozet bu-hafta' }, buHaftaRozet(buH)) : null,
           turler.length ? turler.map((t) => el('span', { sinif: 'agac-rozet', 'data-renk': K().category(t).color }, t)) : el('span', { sinif: 'agac-rozet soluk' }, 'Yakında')),
         el('span', { sinif: 'agac-ok', 'aria-hidden': 'true' }, '›')));
     };
@@ -294,18 +300,18 @@
       el('section', { sinif: 'agac-bas agac-ders-bas', 'data-renk': renk }, el('div', { sinif: 'kap' },
         konum(KOK_YOL, DAL_YOL, sinifYol, { ad }),
         el('div', { sinif: 'agac-ders-kart' },
-          el('span', { sinif: 'agac-ders-harf buyuk', 'aria-hidden': 'true' }, ilkHarf(ad)),
+          dersSimgesi(d, ad, true),
           el('div', {}, el('p', { sinif: 'agac-ust' }, `${n}. Sınıf`), el('h1', {}, ad),
             el('div', { sinif: 'agac-cipler' }, el('span', {}, `${agac.uniteler.length} ünite`), el('span', {}, `${konular.length} konu`), el('span', {}, icerikSay ? sayiYaz(icerikSay, 'içerik') : 'İçerikler hazırlanıyor')))),
         buKonu ? el('a', { sinif: 'agac-bu-hafta', href: adres({ sinif: n, ders: d, konu: buKonu.kod }) },
-          el('span', { sinif: 'agac-rozet bu-hafta' }, `Bu hafta · ${simdi}. hafta`), el('strong', {}, buKonu.ad === buKonu.unite ? buKonu.unite : buKonu.ad), el('span', { 'aria-hidden': 'true' }, '→')) : null)),
+          el('span', { sinif: 'agac-rozet bu-hafta' }, `${buHaftaEtiket(buH)} · ${simdi}. hafta`), el('strong', {}, buKonu.ad === buKonu.unite ? buKonu.unite : buKonu.ad), el('span', { 'aria-hidden': 'true' }, '→')) : null)),
       kaynaklar.length ? bolum('agac-ince', el('div', { sinif: 'agac-kaynaklar' }, kaynaklar)) : null,
       bolum('', baslikSatiri('Üniteler ve konular', 'Konuya dokun; konu anlatımı, etkinlikler ve çalışma kâğıdı açılır.'), el('div', { sinif: 'agac-uniteler' }, uniteler)),
       yaziliBolum(yz, n, d, konular),
       disarida.length ? bolum('koyu-zemin', baslikSatiri('Diğer içerikler'), kartlar(disarida, dersler, { dersGoster: false })) : null);
   }
 
-  function ogrenciKonu({ dersler }, n, d, ad, renk, agac, konular, kod, dersYol, sinifYol, dersDuzeyi, simdi, yz) {
+  function ogrenciKonu({ dersler }, n, d, ad, renk, agac, konular, kod, dersYol, sinifYol, dersDuzeyi, simdi, yz, buH) {
     const ix = konular.findIndex((k) => k.kod === kod);
     if (ix < 0) { location.replace(adres({ sinif: n, ders: d })); return; }
     const k = konular[ix];
@@ -330,7 +336,7 @@
         el('p', { sinif: 'agac-ust' }, `${n}. Sınıf · ${ad} · ${k.ui + 1}. ünite: ${k.unite}`),
         el('h1', {}, baslik),
         el('div', { sinif: 'agac-cipler' }, el('span', {}, haftaMetni(k.haftalar)), tarihMetni(k.haftalar, agac.haftalar) ? el('span', {}, tarihMetni(k.haftalar, agac.haftalar)) : null,
-          simdi && k.haftalar.includes(simdi) ? el('span', { sinif: 'agac-rozet bu-hafta' }, 'Bu hafta') : null))),
+          simdi && buH && k.haftalar.includes(simdi) ? el('span', { sinif: 'agac-rozet bu-hafta' }, buHaftaRozet(buH)) : null))),
       bolum('', k.icerik.length ? el('div', {}, sekmeler, liste)
         : bos('Bu konunun içerikleri hazırlanıyor', 'Konu anlatımı ve çalışma kâğıdı yıllık plan sırasıyla ekleniyor. Bu arada ders kitabından çalışabilirsin.',
           ...dersDuzeyi.filter((i) => i.tur === 'Ders kitabı').flatMap((i) => [el('a', { sinif: 'dugme ana', href: yol(i.goruntule || i.baglanti) }, 'Ders kitabını aç', simge('ok')),

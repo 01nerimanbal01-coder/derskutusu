@@ -2,7 +2,7 @@
 import re
 
 CSS = '<link rel="stylesheet" href="/kesif.css?v=20261017-1">'
-JS = '<script src="/kesif.js?v=20261004-duzen1"></script>'
+JS = '<script src="/kesif.js?v=20261025-1"></script>'
 RENK_CSS = '<link rel="stylesheet" href="/renkler.css?v=20261017-1" media="screen">'
 
 

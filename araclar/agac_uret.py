@@ -8,8 +8,10 @@ Bir haftada iki ünite ya da iki konu varsa (geçiş haftası) satırlara bölü
 Türkçe planlarındaki "Metin: …" satırı konu adı olur; "İçerik çerçevesi", örnek cümle ve madde satırları atlanır.
 Çalıştırma: python3 araclar/agac_uret.py   (plan dosyaları değişince; site sayfalarına dokunmaz)
 """
+import datetime
 import json
 import re
+from collections import Counter
 from pathlib import Path
 
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
@@ -182,13 +184,49 @@ def alanlar(h):
     return d
 
 
+AYLAR = 'Ocak Şubat Mart Nisan Mayıs Haziran Temmuz Ağustos Eylül Ekim Kasım Aralık'.split()
+HAFTA_ADI = re.compile(r'^(\d{1,2})(?: (' + '|'.join(AYLAR) + r'))?-(\d{1,2}) (' + '|'.join(AYLAR) + r')$')
+
+
+def hafta_adi(ad, bas):
+    """Hafta etiketi ("14-18 Eylül", "28 Eylül-2 Ekim"). Plandaki yazım bozuksa ya da başlangıç gününe uymuyorsa
+    (ör. "29-Mart-2 Nisan", "21-25 Eylü", "5 9 Ekim", yıl eki) etiket başlangıç tarihinden (pazartesi-cuma) yeniden yazılır.
+    Kısa haftalar ("28-31 Aralık", "20-21 Mayıs") geçerli yazımda olduğu için korunur."""
+    ad = re.sub(r'\s*-\s*', '-', re.sub(r'\s+\d{4}$', '', str(ad or '').strip().strip('"')))
+    try:
+        b = datetime.date.fromisoformat(bas)
+    except (TypeError, ValueError):
+        return ad
+    m = HAFTA_ADI.match(ad)
+    if m and int(m.group(1)) == b.day and (m.group(2) or m.group(4)) == AYLAR[b.month - 1]:
+        return ad
+    c = b + datetime.timedelta(days=4)
+    return f'{b.day}-{c.day} {AYLAR[c.month - 1]}' if b.month == c.month else f'{b.day} {AYLAR[b.month - 1]}-{c.day} {AYLAR[c.month - 1]}'
+
+
+def ortak_takvim(takvimler):
+    """Hafta no → {bas, ad}: planların çoğunluğundaki başlangıç tarihi (hafta numarası farklı sayılan planlar,
+    ör. ara tatili hafta sayan Arapça planları, planı olmayan derslerin takvimini kaydırmasın diye)."""
+    oylar = {}
+    for t in takvimler:
+        for no, h in t.items():
+            if h.get('bas'):
+                oylar.setdefault(no, Counter())[h['bas']] += 1
+    sonuc = {}
+    for no in sorted(oylar, key=int):
+        bas = oylar[no].most_common(1)[0][0]
+        adlar = Counter(h['ad'] for t in takvimler for n, h in t.items() if n == no and h.get('bas') == bas)
+        sonuc[no] = {'bas': bas, 'ad': adlar.most_common(1)[0][0]}
+    return sonuc
+
+
 def agac(plan_json, ders=''):
     uniteler, sira_u, haftalar, onceki_u = {}, [], {}, None
     for h in plan_json['haftalar']:
         no = h['no']
         a = alanlar(h)
         ad = re.sub(r'^\d+\.\s*Hafta:\s*', '', h.get('hafta', '')).strip()
-        haftalar[str(no)] = {'bas': h.get('tarih', ''), 'ad': ad}
+        haftalar[str(no)] = {'bas': h.get('tarih', ''), 'ad': hafta_adi(ad, h.get('tarih', ''))}
         U = [u for u in (unite_temiz(u, ders == 'ingilizce') for u in satirlar(a.get('Ünite / Tema', ''))) if u]
         K = konu_satirlari(a.get('Konu (içerik çerçevesi)') or a.get('Konu') or '', ders)
         if U and all(OZEL.search(u) for u in U):
@@ -250,7 +288,8 @@ def ozetlerden_agac(sinif, ders, referans_haftalar):
         o = json.loads(p.read_text(encoding='utf-8'))
         no = int(o['hafta'])
         ref = referans_haftalar.get(str(no), {})
-        haftalar[str(no)] = {'bas': ref.get('bas', ''), 'ad': o.get('tarih') or ref.get('ad', f'{no}. Hafta')}
+        # Etiket ortak takvimden; özetteki tarih yazısı yalnız takvimde o hafta yoksa kullanılır
+        haftalar[str(no)] = {'bas': ref.get('bas', ''), 'ad': ref.get('ad') or hafta_adi(o.get('tarih') or f'{no}. Hafta', ref.get('bas', ''))}
         u_ham = o.get('unite') or 'Genel'
         u = unite_temiz(u_ham, ders == 'ingilizce') or u_ham
         k = (o.get('konu') or u).strip()
@@ -285,7 +324,7 @@ def main():
             gruplar.setdefault((s, p['ders']), []).append(p)
     CIKTI.mkdir(parents=True, exist_ok=True)
     dizin, yazilan = {}, set()
-    referans_haftalar = {}
+    takvimler = []
     for (s, d), adaylar in sorted(gruplar.items()):
         if d not in dersler['dersler']:
             continue
@@ -295,8 +334,8 @@ def main():
             print('PLAN YOK:', yol.name)
             continue
         haftalar, uniteler = agac(json.loads(yol.read_text(encoding='utf-8')), d)
-        if not referans_haftalar and haftalar:
-            referans_haftalar = haftalar
+        if haftalar:
+            takvimler.append(haftalar)
         ad = f'{s}-{d}'
         o = {'sinif': s, 'ders': d, 'plan': p['ad'], 'haftalar': haftalar, 'uniteler': uniteler}
         metin = json.dumps(o, ensure_ascii=False, separators=(',', ':')) + '\n'
@@ -306,6 +345,7 @@ def main():
         yazilan.add(hedef.name)
         dizin[ad] = {'unite': len(uniteler), 'konu': sum(len(u['konular']) for u in uniteler)}
 
+    referans_haftalar = ortak_takvim(takvimler)
     # Günlük planı olmayan ama dersler.json ve araclar/ozetler içinde bulunan dersler (ör. 9-12 İngilizce)
     for s_str, d_list in sorted(dersler.get('siniflar', {}).items(), key=lambda x: int(x[0])):
         s = int(s_str)
